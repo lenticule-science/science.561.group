@@ -3,7 +3,7 @@ title: "Coordination Obstruction as Mirror Descent: Acyclicity by Admission and 
 description: "Unifies greedy admission control and the Physarum adaptive-network solver as two points on one mirror-descent family over the cover nerve's cycle rank, differing only in Bregman potential."
 date-created: 2026-07-25
 kind: research-note
-in-service-of: lib/emsenn/services/561-group/services/lenticule-science
+in-service-of: lib/emsenn/services/561-group/services/science-services-section
 tags:
   - mirror-descent
   - graphic-matroid

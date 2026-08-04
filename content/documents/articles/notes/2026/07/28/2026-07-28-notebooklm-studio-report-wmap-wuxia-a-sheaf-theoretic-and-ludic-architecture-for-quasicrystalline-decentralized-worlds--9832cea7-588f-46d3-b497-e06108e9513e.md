@@ -3,7 +3,7 @@ title: "WMAP-Wuxia: A Sheaf-Theoretic and Ludic Architecture for Quasicrystallin
 description: "Verbatim NotebookLM Studio report import. Provider-generated source-grounded analysis; it carries no execution, governance, publication, or truth authority."
 date-created: 2026-07-28
 kind: research-note
-in-service-of: lib/emsenn/services/561-group/services/lenticule-science
+in-service-of: lib/emsenn/services/561-group/services/science-services-section
 tags:
   - notebooklm
   - notebooklm-studio

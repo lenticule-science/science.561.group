@@ -3,7 +3,7 @@ title: "Naming Structures, Not Phenomena: Five Vocabulary Refinements and the Pr
 description: "Five vocabulary refinements (rigidity subscripts, Deborah number, conductor/insulator retirement, unit-word registers, genet) and the diagnostic behind them; tests zeolitization against its own discipline."
 date-created: 2026-07-25
 kind: research-note
-in-service-of: lib/emsenn/services/561-group/services/lenticule-science
+in-service-of: lib/emsenn/services/561-group/services/science-services-section
 tags:
   - vocabulary
   - rigidity-percolation

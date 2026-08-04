@@ -3,7 +3,7 @@ title: "The Structure of Game Foam"
 description: "Gives a foam-geometric reading of Girard's ludics: the Belnap FOUR order parameter as a foam phase, drying/incarnation as an exact idealization, and constraint counting on strategies."
 date-created: 2026-07-25
 kind: research-note
-in-service-of: lib/emsenn/services/561-group/services/lenticule-science
+in-service-of: lib/emsenn/services/561-group/services/science-services-section
 tags:
   - game-foam
   - ludics

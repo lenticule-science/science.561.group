@@ -3,7 +3,7 @@ title: "Basics of Agentic Orchestration Platforms"
 date-created: 2026-07-24
 date-modified: 2026-07-26
 kind: research-note
-in-service-of: lib/emsenn/services/561-group/services/lenticule-science
+in-service-of: lib/emsenn/services/561-group/services/science-services-section
 tags:
   - agentic-orchestration
   - verification

@@ -3,7 +3,7 @@ title: "Rank Density as a Diagnostic: Which Matroid Is Your Instrument Counting?
 description: "Introduces rank density as a one-parameter unification of matroid rank across graphic, planar-rigidity, and central-force matroids, and corrects two units errors in prior atom-level constraint counting."
 date-created: 2026-07-25
 kind: research-note
-in-service-of: lib/emsenn/services/561-group/services/lenticule-science
+in-service-of: lib/emsenn/services/561-group/services/science-services-section
 tags:
   - matroids
   - rank-density

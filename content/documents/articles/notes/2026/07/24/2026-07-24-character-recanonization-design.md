@@ -14,7 +14,7 @@ declared-by: leader-movement-team/realize-fulfilled-work-products
 
 ## Demand
 
-Compose a draft design note for re-canonizing rich legacy personas as lawful character records without flattening: compare the legacy prose records at lib/emsenn/services/561-group/services/rsc-quiescent/lib/characters/cassia-lorne/persona/cassia-lorne.md and lib/emsenn/services/561-group/services/red-cup-engineering/src/content/assets/legacy/2026-07-05-561-group/working/performing/library/sigmund-vexler/sigmund-vexler.md against the canonized instance lib/emsenn/services/561-group/services/rsc-quiescent/services/agrodao/lib/agency/characters/sigmund-vexler/sigmund-vexler.json, list exactly which fields the prior canonization dropped (voice principles, may/must/must-not deontic prose, publishing cadence, relationships), and propose the structured fields a character schema would need to preserve them, following the classes-vs-instances law in lib/emsenn/services/561-group/services/board-of-directors/services/executive-office/CLAUDE.md. State which settlement owns each proposed change. Mark DRAFT-FOR-LEADER-REVIEW.
+Compose a draft design note for re-canonizing rich legacy personas as lawful character records without flattening: compare the legacy prose records at lib/emsenn/services/561-group/services/rsc-quiescent/lib/characters/cassia-lorne/persona/cassia-lorne.md and lib/emsenn/services/561-group/services/engineering-services-section/src/content/assets/legacy/2026-07-05-561-group/working/performing/library/sigmund-vexler/sigmund-vexler.md against the canonized instance lib/emsenn/services/561-group/services/rsc-quiescent/services/agrodao/lib/agency/characters/sigmund-vexler/sigmund-vexler.json, list exactly which fields the prior canonization dropped (voice principles, may/must/must-not deontic prose, publishing cadence, relationships), and propose the structured fields a character schema would need to preserve them, following the classes-vs-instances law in lib/emsenn/services/561-group/services/board-of-directors/services/executive-office/CLAUDE.md. State which settlement owns each proposed change. Mark DRAFT-FOR-LEADER-REVIEW.
 
 ## Fulfillment
 
@@ -36,7 +36,7 @@ DRAFT-FOR-LEADER-REVIEW
 Two rich legacy persona records exist in the repository:
 
 - **Cassia Lorne** — prose at `lib/emsenn/services/561-group/services/rsc-quiescent/lib/characters/cassia-lorne/persona/cassia-lorne.md`
-- **Sigmund Vexler** — prose at `lib/emsenn/services/561-group/services/red-cup-engineering/src/content/assets/legacy/2026-07-05-561-group/working/performing/library/sigmund-vexler/sigmund-vexler.md`
+- **Sigmund Vexler** — prose at `lib/emsenn/services/561-group/services/engineering-services-section/src/content/assets/legacy/2026-07-05-561-group/working/performing/library/sigmund-vexler/sigmund-vexler.md`
 
 One prior canonization exists: `lib/emsenn/services/561-group/services/rsc-quiescent/services/agrodao/lib/agency/characters/sigmund-vexler/sigmund-vexler.json`
 

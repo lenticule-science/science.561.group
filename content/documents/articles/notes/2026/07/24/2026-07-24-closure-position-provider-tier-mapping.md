@@ -1,6 +1,6 @@
 ---
 title: "2026 07 24 Closure Position Provider Tier Mapping"
-description: "Compose a draft design note mapping skill closure-positions to inference-provider tiers for the leader-movement-team hiring route: using the quartet in lib/emsenn/services/561-group/services/red-cup-engineering/src/content/assets/legacy/2026-06-27-agential-relationality/playing/src/skill.mts (inquir"
+description: "Compose a draft design note mapping skill closure-positions to inference-provider tiers for the leader-movement-team hiring route: using the quartet in lib/emsenn/services/561-group/services/engineering-services-section/src/content/assets/legacy/2026-06-27-agential-relationality/playing/src/skill.mts (inquir"
 date-created: 2026-07-24
 kind: realized-work-order
 in-service-of: lib/emsenn/services/561-group/services/board-of-directors/services/executive-office/services/leader-movement-team
@@ -14,7 +14,7 @@ declared-by: leader-movement-team/realize-fulfilled-work-products
 
 ## Demand
 
-Compose a draft design note mapping skill closure-positions to inference-provider tiers for the leader-movement-team hiring route: using the quartet in lib/emsenn/services/561-group/services/red-cup-engineering/src/content/assets/legacy/2026-06-27-agential-relationality/playing/src/skill.mts (inquiry/procedure/derivation/process; sigma vs delta nucleus), the existing manual precedent in lib/emsenn/services/561-group/services/rsc-quiescent/services/agrodao/CLAUDE.md (NIM for atomics, Opus-class for synthesis), and the roster in lib/emsenn/services/561-group/services/board-of-directors/services/executive-office/services/leader-movement-team/content/circuits/inference-provider-hiring.json, propose which work-order classes and demand shapes belong to which admitted provider teams and why, as a candidate amendment to that route record's policy. State this is a proposal requiring Leader acceptance before the route changes. Mark DRAFT-FOR-LEADER-REVIEW.
+Compose a draft design note mapping skill closure-positions to inference-provider tiers for the leader-movement-team hiring route: using the quartet in lib/emsenn/services/561-group/services/engineering-services-section/src/content/assets/legacy/2026-06-27-agential-relationality/playing/src/skill.mts (inquiry/procedure/derivation/process; sigma vs delta nucleus), the existing manual precedent in lib/emsenn/services/561-group/services/rsc-quiescent/services/agrodao/CLAUDE.md (NIM for atomics, Opus-class for synthesis), and the roster in lib/emsenn/services/561-group/services/board-of-directors/services/executive-office/services/leader-movement-team/content/circuits/inference-provider-hiring.json, propose which work-order classes and demand shapes belong to which admitted provider teams and why, as a candidate amendment to that route record's policy. State this is a proposal requiring Leader acceptance before the route changes. Mark DRAFT-FOR-LEADER-REVIEW.
 
 ## Fulfillment
 

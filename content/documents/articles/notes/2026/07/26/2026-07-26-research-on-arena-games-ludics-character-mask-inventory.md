@@ -3,7 +3,7 @@ title: "Arena Games, Ludics, and Character-as-Mask: An Asset Inventory"
 description: "Full-corpus inventory of assets tied to game-semantic arenas, Girard's ludics, and the character/mask apparatus built on both."
 date-created: 2026-07-26
 kind: research-note
-in-service-of: lib/emsenn/services/561-group/services/lenticule-science
+in-service-of: lib/emsenn/services/561-group/services/science-services-section
 tags:
   - arena-games
   - ludics

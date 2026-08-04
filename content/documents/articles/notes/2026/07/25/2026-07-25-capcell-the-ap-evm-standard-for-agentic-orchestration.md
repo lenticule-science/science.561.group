@@ -290,7 +290,7 @@ invocation path anyone has used.
 
 ## 6. What is already real on disk — not design, verified
 
-`lib/emsenn/services/561-group/services/red-cup-engineering/services/web-services-section/services/capability-marketplace-services-section/services/federated-capability-offer-discovery-cell/content/agent-cards/federated-capability-offer-discovery-cell.json`
+`lib/emsenn/services/561-group/services/engineering-services-section/services/web-services-section/services/capability-marketplace-services-section/services/federated-capability-offer-discovery-cell/content/agent-cards/federated-capability-offer-discovery-cell.json`
 instantiates §3's identity ladder with real values, verified by direct read today:
 
 - `sku`: `ni:///sha-256;1tbycZv3ecewPXqUE0ksFEGHK9jmOIujeZz9IhO3hxI`

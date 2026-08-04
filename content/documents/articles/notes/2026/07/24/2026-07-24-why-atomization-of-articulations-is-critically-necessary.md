@@ -464,10 +464,10 @@ Internal (all paths relative to `/home/emsenn/info`):
 - `.../leader-movement-team/content/documents/articles/notes/2026/07/18/2026-07-18-gyrobifastigial-chu-hoare-territory-audit.md` and the sibling dervish note (2026-07-19)
 - `.../leader-movement-team/content/documents/articles/notes/2026/07/23/2026-07-23-eda-as-diagenetic-zeolitization-of-digital-information.md`
 - `.../leader-movement-team/content/documents/articles/notes/2026/07/18/2026-07-18-sell-certified-tightness-the-union-trade-doctrine.md`
-- `lib/emsenn/services/561-group/services/lenticule-science/services/obsmetrological-services-section/src/services/obsmetrologia/Obsmetrologia/Cohomology/{CoordinationCohomology,LandauerEntropy}.lean`
+- `lib/emsenn/services/561-group/services/science-services-section/services/obsmetrological-services-section/src/services/obsmetrologia/Obsmetrologia/Cohomology/{CoordinationCohomology,LandauerEntropy}.lean`
 - `.../Obsmetrologia/Dynamics/Flow/ChromaticTileGap.lean`, `.../Obsmetrologia/AperiodicOrder/Defect.lean`
-- `lib/emsenn/services/561-group/services/lenticule-science/content/documents/articles/notes/2026/07/13/2026-07-13-research-on-landauer-bit.md`
-- `lib/emsenn/services/561-group/services/lenticule-science/content/documents/articles/notes/2026/07/11/2026-07-11-research-on-burgers-vector.md`
+- `lib/emsenn/services/561-group/services/science-services-section/content/documents/articles/notes/2026/07/13/2026-07-13-research-on-landauer-bit.md`
+- `lib/emsenn/services/561-group/services/science-services-section/content/documents/articles/notes/2026/07/11/2026-07-11-research-on-burgers-vector.md`
 - `lib/emsenn/services/561-group/services/board-of-directors/services/executive-office/services/working-services-section/services/inference-work-lot-service/` (agent card, contract, README, RWIL receipts)
 - `lib/emsenn/services/561-group/services/board-of-directors/services/executive-office/services/leader-movement-team/src/{inference-procurement,watch-capability-registry}.mjs`, `content/circuits/inference-provider-hiring.json`
 - `lib/emsenn/services/561-group/services/board-of-directors/services/executive-office/services/finance-and-market-services-section/` (`content/documents/union-treasury-protocol.md`, `union-monetary-and-financial-statistics-guide.md`, `content/schemas/sku.schema.json`, `services/border-price-quote-formation-service/`)

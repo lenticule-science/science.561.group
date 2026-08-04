@@ -3,7 +3,7 @@ title: "FOAM: A Field of Actor Models, and Why the Phase Depends on Who's Watchi
 description: "Defines FOAM (Field of Actor Models): a four-valued order-parameter field over autonomous message-driven actors (ActivityPub actors, EVM accounts, Capability Cells, ludic designs) that separates into foam-like cells and walls; states the permanent/exchangeable/pinned wall chemistry against real vitrimer thioether/disulfide chemistry; states phase as a function of the chosen observer set (operational, organizational, ludic); and names MetroFOAM as Red Cup Engineering's AP+EVM implementation of FOAM. Every claim carries its formula and a worked numeric example."
 date-created: 2026-07-26
 kind: research-note
-in-service-of: lib/emsenn/services/561-group/services/lenticule-science
+in-service-of: lib/emsenn/services/561-group/services/science-services-section
 tags:
   - foam-physics
   - field-theory

@@ -3,7 +3,7 @@ title: "Capability Attack Surface via Drying and Placement"
 description: "Applies game foam's drying/incarnation operator and the rigidity matroid's hereditary-redundancy caveat to define agentic-software capability attack surface."
 date-created: 2026-07-25
 kind: research-note
-in-service-of: lib/emsenn/services/561-group/services/lenticule-science
+in-service-of: lib/emsenn/services/561-group/services/science-services-section
 tags:
   - game-foam
   - ludics
