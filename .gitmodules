@@ -1,0 +1,28 @@
+[submodule "services/divination-services-section"]
+	path = services/divination-services-section
+	url = https://github.com/emsenn/divination.git
+[submodule "lib/legacy"]
+	path = lib/legacy
+	url = https://github.com/lenticule-science/lenticule-science-legacy.git
+[submodule "services/math-services-section"]
+	path = services/math-services-section
+	url = https://github.com/lenticule-science/math-services-section.git
+[submodule "services/materials-services-section"]
+	path = services/materials-services-section
+	url = https://github.com/lenticule-science/materials-services-section.git
+[submodule "services/social-services-section"]
+	path = services/social-services-section
+	url = https://github.com/lenticule-science/social-services-section.git
+[submodule "services/media-services-section"]
+	path = services/media-services-section
+	url = https://github.com/lenticule-science/media-services-section.git
+[submodule "services/communicating-services-section"]
+	path = services/communicating-services-section
+	url = https://github.com/lenticule-science/communicating-services-section.git
+[submodule "services/games-services-section"]
+	path = services/games-services-section
+	url = https://github.com/lenticule-science/games-services-section.git
+[submodule "services/knowledge-services-section"]
+	path = services/knowledge-services-section
+	url = https://github.com/lenticule-science/knowledge-services-section.git
+	branch = main

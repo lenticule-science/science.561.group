@@ -1,0 +1,9 @@
+{
+  "id": "union-officer-academy-character-corps",
+  "provider": "union-officer-academy",
+  "consumer": "lenticule-science",
+  "projectionRoots": ["lib/characters/karen-wiener", "lib/characters/lauren-becker", "lib/characters/melvin-ginsberg", "services/obsmetrological-services-section/src/lib/agency/characters/calder-underhill"],
+  "status": "compatibility-projection",
+  "canonicalRoot": "../union-officer-academy/content/characters",
+  "consumerAuthority": "Lenticule Science retains its specialist offices, protected corpora, appointments, and grants; character identity, chronicles, and cohort formation are supplied by the Academy."
+}
