@@ -1,6 +1,3 @@
-[submodule "services/divination-services-section"]
-	path = services/divination-services-section
-	url = https://github.com/emsenn/divination.git
 [submodule "lib/legacy"]
 	path = lib/legacy
 	url = https://github.com/lenticule-science/lenticule-science-legacy.git
