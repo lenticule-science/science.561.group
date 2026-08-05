@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Lenticule Science enterprise branding",
+  "allOf": [
+    {
+      "$ref": "../../../../operations-services-section/services/enterprise-services-section/services/enterprise-marketing-services-section/services/enterprise-branding-services-section/lib/schema/enterprise-branding.schema.json"
+    },
+    {
+      "properties": {
+        "name": {
+          "const": "Lenticule Science"
+        }
+      }
+    }
+  ]
+}
