@@ -23,3 +23,6 @@
 	path = services/knowledge-services-section
 	url = https://github.com/lenticule-science/knowledge-services-section.git
 	branch = main
+[submodule "services/computer-science-services-section"]
+	path = services/computer-science-services-section
+	url = https://github.com/lenticule-science/computer-science-services-section.git
