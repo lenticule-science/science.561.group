@@ -26,3 +26,6 @@
 [submodule "services/computer-science-services-section"]
 	path = services/computer-science-services-section
 	url = https://github.com/lenticule-science/computer-science-services-section.git
+[submodule "services/ecological-science-services-section"]
+	path = services/ecological-science-services-section
+	url = https://github.com/lenticule-science/ecological-science-services-section.git
