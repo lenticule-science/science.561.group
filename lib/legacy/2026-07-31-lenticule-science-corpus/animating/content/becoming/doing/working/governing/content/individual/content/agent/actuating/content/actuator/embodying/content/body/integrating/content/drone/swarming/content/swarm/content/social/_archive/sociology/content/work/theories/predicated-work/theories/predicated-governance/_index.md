@@ -1,0 +1,65 @@
+---
+derives-methods-from-theory: [predicated-work, governance]
+---
+
+# Predicated Governance
+
+A subtheory of [predicated-work](../../_index.md).
+Studies the *normative* substructure of work: jural relations, offices, normative systems, charters, the Hohfeldian eightfold, and the operations that modify normative state (installation, delegation, assignment, novation, waiver, revocation, etc.).
+
+The library treats governance as a sub-domain of work — `library/.../sociology/work/theories/governance/`.
+This subtheory mirrors that placement: governance is the *normative-structure* slice of work-as-relational-substrate, not a separate domain.
+
+## What is governance
+
+Per the library's [governance index](../../../../../../../../../../humanities/theories/sociology/theories/work/theories/governance/_index.md): the structures, processes, and principles through which collectives make decisions, exercise authority, and maintain accountability.
+Mathematically: the operations on the operations-settling that modify which closure rules fire, who has standing to invoke them, and how authority propagates through the substrate.
+
+## Why a subtheory rather than a sibling theory
+
+Three reasons:
+
+1. **Library structure.** Governance is treated as a sub-domain of work in the library, not a peer; this subtheory mirrors that.
+2. **Substrate inheritance.** The predicated-governance program inherits predicated-work's [operations-base](../../objects/operations-base.md), [operations-settling](../../objects/operations-settling.md), [witness-as-increment](../../morphisms/witness-as-increment.md), and the regime-classification machinery.
+  It does not need to re-derive these.
+3. **Co-content.** The Hohfeldian apparatus (jural relations, offices, delegation, etc.) presupposes a working substrate of agents-doing-things; without that substrate, the normative structure has nothing to modify.
+  The subtheory shape captures this dependency.
+
+## Convention
+
+Following the [spatiotemporal-knowledge convention](../../../../../../../../../../humanities/theories/math/theories/categories/theories/predication-categories/_index.md).
+Same frontmatter, same status markers, same relation set.
+The subtheory's notes depend on predicated-work's main objects/morphisms in addition to the math program's.
+
+## Layout
+
+- `concepts/` — semantic anchors: [authority-gate](concepts/authority-gate.md), [deontic-modality](concepts/deontic-modality.md), [governance-pattern](concepts/governance-pattern.md), [score-governed-authority-gate](concepts/score-governed-authority-gate.md), [norm-conflict](concepts/norm-conflict.md).
+- `objects/` — formal structures: jural-relation, office-as-double-settlement, normative-system, norm, polity, jurisdiction, plus the non-Hohfeldian pattern objects [consensus-closure](objects/consensus-closure.md), [rotational-authority](objects/rotational-authority.md), [restorative-accountability](objects/restorative-accountability.md), [governing-by-kinship](objects/governing-by-kinship.md), [conduct-teachings-as-evaluation-predicates](objects/conduct-teachings-as-evaluation-predicates.md), [leitourgia](objects/leitourgia.md), [ayni-reciprocity](objects/ayni-reciprocity.md), [black-radical-refusal](objects/black-radical-refusal.md).
+- `morphisms/` — Hohfeldian operations: correlate-of, installation, delegation, plus assignment, [novation](morphisms/novation.md), [waiver](morphisms/waiver.md), [revocation](morphisms/revocation.md), [ratification](morphisms/ratification.md), [succession](morphisms/succession.md), [estoppel](morphisms/estoppel.md), appeal, relief (forthcoming).
+  [succession-as-handoff-cobordism](morphisms/succession-as-handoff-cobordism.md) lifts the closure-rule presentation of succession into the cobordism formalism inherited from predicated-work.
+  Jurisdictional operations: [jurisdictional-invocation](morphisms/jurisdictional-invocation.md), [jurisdictional-declination](morphisms/jurisdictional-declination.md), [jurisdictional-submission](morphisms/jurisdictional-submission.md), [jurisdictional-excess](morphisms/jurisdictional-excess.md), [jurisdictional-vires](morphisms/jurisdictional-vires.md).
+- `theorems/` — claims about the normative substructure: [charter-as-closure-system](theorems/charter-as-closure-system.md), [office-formalism-equivalence](theorems/office-formalism-equivalence.md), [delegation-as-authority-residuation](theorems/delegation-as-authority-residuation.md), [delegation-transport-via-beck-chevalley](theorems/delegation-transport-via-beck-chevalley.md), [recognition-as-bigraded-common-knowledge](theorems/recognition-as-bigraded-common-knowledge.md), [correlative-pair-as-modal-dual](theorems/correlative-pair-as-modal-dual.md), [tradition-pluralism-as-fragment-coproduct](theorems/tradition-pluralism-as-fragment-coproduct.md), [cohomological-signature-of-traditions](theorems/cohomological-signature-of-traditions.md), [jurisdiction-as-base-change](theorems/jurisdiction-as-base-change.md), [military-command-chain-as-modal-composition](theorems/military-command-chain-as-modal-composition.md), [charter-amendment-as-visible-automorphism](theorems/charter-amendment-as-visible-automorphism.md), [office-merger-as-beck-chevalley-square](theorems/office-merger-as-beck-chevalley-square.md), [quorum-as-colimit-of-voter-fibers](theorems/quorum-as-colimit-of-voter-fibers.md), [federation-cohomology-as-mayer-vietoris](theorems/federation-cohomology-as-mayer-vietoris.md), [conflict-of-laws-as-beck-chevalley-failure](theorems/conflict-of-laws-as-beck-chevalley-failure.md), [norm-revision-as-cocompletion](theorems/norm-revision-as-cocompletion.md), [estoppel-as-monotone-coalgebra-fixed-point](theorems/estoppel-as-monotone-coalgebra-fixed-point.md), [leitourgia-discharge-as-bigraded-settlement](theorems/leitourgia-discharge-as-bigraded-settlement.md), [community-constitution-as-sheaf-descent](theorems/community-constitution-as-sheaf-descent.md), [norm-conflict-as-top-valued-cell](theorems/norm-conflict-as-top-valued-cell.md), [consensus-settlement-as-authority-gate-update](theorems/consensus-settlement-as-authority-gate-update.md), [restorative-retributive-norm-conflict](theorems/restorative-retributive-norm-conflict.md), [teachings-loss-as-authority-gate-revision](theorems/teachings-loss-as-authority-gate-revision.md).
+- `questions/` — open questions specific to governance: [deontic-hyperdoctrine](questions/deontic-hyperdoctrine.md), [ordinal-society-as-governance-pattern](questions/ordinal-society-as-governance-pattern.md), [removal-from-office](questions/removal-from-office.md).
+- `narratives/` — synthesis essays including [non-hohfeldian-governance-traditions](narratives/non-hohfeldian-governance-traditions.md).
+- `references/` — annotated bibliography.
+
+## What this subtheory commits to
+
+- **Governance is plural; patterns are first-class.** A polity's normative substructure is a [governance-pattern](concepts/governance-pattern.md) coproduct — Hohfeldian, consensus, rotational, restorative, kinship-based, conduct-teachings-based, military-command, jurisdictional-federation, Black-radical-refusal, and others — each a closure-rule fragment plus witness language plus recognition discipline.
+  No pattern is the substrate's default.
+  Compatibility between coexisting patterns is a cohomological condition: see [tradition-pluralism-as-fragment-coproduct](theorems/tradition-pluralism-as-fragment-coproduct.md).
+- **The Hohfeldian pattern is one pattern among many.** The full Hohfeldian eightfold (both quartets) is the structural vocabulary for *Hohfeldian-pattern* relations between agents on the substrate.
+  The eightfold is the orbit of a single bilattice modal generator under the Klein-four × $\mathbb{Z}/2$ action — see [correlative-pair-as-modal-dual](theorems/correlative-pair-as-modal-dual.md).
+  It is excellent at what it does and not the only pattern.
+- **Each pattern has a structural signature.** Patterns differ measurably in cohomology — see [cohomological-signature-of-traditions](theorems/cohomological-signature-of-traditions.md).
+  The math program's regime classification and bigraded cohomology distinguish patterns; the [non-hohfeldian-governance-traditions narrative](narratives/non-hohfeldian-governance-traditions.md) supplies the lived-tradition content each pattern carries.
+- **Offices are double-settlement substrate entities.** Two required predicates (recognition, induction), forced by the bilattice's bigraded common-knowledge structure, not stipulated — see [recognition-as-bigraded-common-knowledge](theorems/recognition-as-bigraded-common-knowledge.md).
+- **Authority operations share the authority-gate pattern.** Charters are closure-rule subsystems; installation, delegation, jurisdiction, and the other authority-modifying operations all instantiate the [authority-gate](concepts/authority-gate.md) residuation pattern.
+  Delegation is made precise in [delegation-as-authority-residuation](theorems/delegation-as-authority-residuation.md); jurisdiction in [jurisdiction-as-base-change](theorems/jurisdiction-as-base-change.md); chain-of-command in [military-command-chain-as-modal-composition](theorems/military-command-chain-as-modal-composition.md).
+  The coupling of delegation with base-change — how a delegated grant transports under jurisdictional restriction, succession of the principal, novation of the source, or scope amendment — is [delegation-transport-via-beck-chevalley](theorems/delegation-transport-via-beck-chevalley.md), which uses the predication-categories [Beck–Chevalley commutation](../../../../../../../../../../humanities/theories/math/theories/categories/theories/predication-categories/theorems/beck-chevalley-commutation-on-predication-bilattices.md) result as the substrate-algebraic guarantee that "delegate then re-base" agrees with "re-base then delegate" up to canonical iso.
+
+## Status
+
+Active.
+The Hohfeldian-pattern apparatus is built out (jural-relations, offices, delegation, deontic-modality, charter, recognition); the non-Hohfeldian pattern objects exist and the unifying [governance-pattern](concepts/governance-pattern.md) framework — pattern-coproduct, cohomological signature, jurisdiction as base-change, command as modal composition — is in place.
+Each pattern's full cohomological computation, and continued importation from the [governance sub-domain](../../../../../../../../../../humanities/theories/sociology/theories/work/theories/governance/), are downstream work.

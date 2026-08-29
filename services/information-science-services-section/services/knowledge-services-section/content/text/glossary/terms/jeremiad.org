@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       79eaabde-bc19-4cad-bba5-d6128004538c
+:END:
+#+title: jeremiad
+#+date: [2025-09-28 Sun 18:52]
+

@@ -1,0 +1,9 @@
+{
+  "name": "@561-group/glossary-services-section",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Communicating-services section accountable for glossary services.",
+  "scripts": {
+    "verify": "npm --prefix services/term-services/services/drafting-a-term run check && npm --prefix services/term-services/services/term-writer-service run verify"
+  }
+}

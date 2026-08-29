@@ -1,0 +1,44 @@
+---
+title: "Guanzi (管子)"
+description: "Chinese double-reed pipe instrument"
+defines: guanzi
+aliases: ["Chinese pipe", "oboe-like instrument", "管子"]
+date-created: 2026-05-12
+---
+
+# Guanzi (管子)
+
+The guanzi is a traditional Chinese double-reed instrument with a cylindrical bore, similar to a Western oboe but with a softer, more mellow timbre.
+
+## Physical Characteristics
+
+- **Material**: Wood (typically hardwood like rosewood or ebony)
+- **Structure**: Cylindrical bore pipe with double reed at the top end
+- **Reed**: Double reed similar to oboe but often shorter and wider
+- **Finger Holes**: Typically seven front holes and one thumb hole
+- **Length**: Varies from ~25cm to over 40cm depending on register
+
+## Musical Properties
+
+- **Sound Production**: Double reed vibration (two reeds beating against each other)
+- **Timbre**: Soft, mellow, reedy, less piercing than suona
+- **Range**: Approximately 2.5 octaves
+- **Techniques**: Finger sliding, tonguing, vibrato, circular breathing, pitch bending, overblowing for harmonics
+
+## Musical Role
+
+- **Ensemble**: Melody instrument in classical and folk ensembles
+- **Solo**: Expressive solo repertoire, often used for lyrical passages
+- **Genres**: Classical, folk, opera, religious music
+
+## Predication Theory Perspective
+
+From a predication theory viewpoint:
+- **Subject**: The guanzi instrument
+- **Predicate**: "produces sound with double reed vibration in cylindrical bore"
+- **Object**: Musical tone with specific timbral qualities (soft, mellow, reedy)
+- **Fiber**: All guanzi tones sharing the double-reed cylindrical bore predicate form a fiber
+- **Modulation**: Finger position, breath pressure, reed tension, and embouchure create predication space
+- **Contrast with Suona**: Cylindrical vs. conical bore produces different timbral characteristics and harmonic series
+
+See also: [dizi](./dizi.md), [xiao](./xiao.md), [sheng](./sheng.md), [suona](./suona.md), [bawu](./bawu.md), [hulusi](./hulusi.md)

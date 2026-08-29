@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       f4907edc-6e92-4e78-bd7b-b7a3705e43d8
+:END:
+#+title: theoretical ecology
+#+date: [2025-10-16 Thu 11:17]
+

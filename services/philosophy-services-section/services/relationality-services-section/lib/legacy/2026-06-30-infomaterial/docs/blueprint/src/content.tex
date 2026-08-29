@@ -1,0 +1,57 @@
+% Infomaterial blueprint -- main content (index).
+%
+% This file is shared by both the web build (src/web.tex) and the print build
+% (src/print.tex). It is a thin index: each chapter is its own file under
+% chapters/, included in spine order below. Author chapters in those files; each
+% formal claim links to its Infomaterial declaration with \lean{...}; mark it \leanok
+% once that declaration is built and green (GREEN in the dependency graph; RED
+% means stated-but-unproven).
+%
+% Carrier law for this blueprint:
+%   The Blueprint is the incidence carrier over Infomaterial claim-sites. It is not
+%   a second API index and not a second exposition book. Lean/API owns declaration
+%   inventory. Verso owns teaching exposition. Blueprint owns claim topology:
+%   stable labels, proof/frontier status, Lean witnesses, and dependency edges.
+%
+% Conventions for this blueprint:
+%   \lean{Infomaterial.Foo}   names the intended formal declaration
+%   \leanok              this claim-site is settled by the named Lean declaration
+%   \uses{lbl}           this claim-site depends on the node \label{lbl}
+%   \notready            this claim-site is a stated-but-unsettled frontier obligation
+%
+% Invariants:
+%   * The only root claim-sites are primitive generators.
+%   * Every non-root claim-site must have at least one upstream \uses{} edge.
+%   * Every non-external claim-site must have a path back to the primitive base.
+%   * A Lean `def` does not automatically become a Blueprint definition box.
+%     Boxes are for primitive/generator claim-sites; derived constructions are
+%     ordinary claim nodes with API witnesses.
+%   * Long teaching prose belongs in Verso. Blueprint statements stay compact.
+%
+% The chapter spine is the reader-facing projection of the decorated proof
+% object.  Infomaterial.lean gives the import barrels; the \uses{} graph below gives
+% the formal dependency order.
+
+\input{chapters/01-introduction}
+
+\part{Generators and local rules}
+\input{chapters/02-two-primitives}
+\input{chapters/03-articulation-predication}
+\input{chapters/04-value-four-bilattice}
+\input{chapters/06-quantifiers-hyperdoctrine}
+\input{chapters/08-recurring-four}
+
+\part{Closure, settling, and sheaves}
+\input{chapters/05-settling}
+\input{chapters/07-sheaf-cohomology}
+
+\part{Aperiodic order and phase invariants}
+\input{chapters/09-aperiodic-classification}
+\input{chapters/10-dynamics-geometry-reals-frontier}
+\input{chapters/11-collatz}
+
+\part{Information projection}
+\input{chapters/12-textile-infotiles}
+
+\part{Boundary phase sectors}
+\input{chapters/13-relational-physics-contextuality}

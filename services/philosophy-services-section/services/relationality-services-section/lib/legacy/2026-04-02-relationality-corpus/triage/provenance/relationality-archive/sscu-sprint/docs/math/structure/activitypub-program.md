@@ -1,0 +1,43 @@
+---
+name: activitypub-program
+role: structure
+derived_from:
+- computer/type/documentation-interpreter
+proof_refs: []
+introduces: structure
+part-of: relational-computer
+computer-system-type: primitive
+---
+
+
+
+Program-level sketch to expose the relational computer through ActivityPub:
+map internal knowledge/runbooks to ActivityStreams activities and actors while
+keeping all storage as earned recognitions.
+
+## Behaviour
+- Translate ActivityStreams JSON to internal recognitions and runbooks via
+  [Recognition](../../../computer/function/recognition.md) and
+  [Recognize Spec](../../library/operator/recognize-spec.md); apply
+  policy/topology constraints.
+- Build/execute wiring plans for inbox/outbox handling via
+  [Plan Runbook](../../library/operator/plan-runbook.md),
+  [Evaluate Step](../../../computer/function/evaluate-step.md),
+  [Detect Plan Conflicts](../../library/operator/detect-plan-conflicts.md), and
+  [Stabilize Plan](../../library/operator/stabilize-plan.md).
+- Publish posts/resources as ActivityStreams objects; map to internal
+  [Program Command](../../library/structure/program-command.md) and
+  [Program Wiring Plan](../../library/structure/program-wiring-plan.md).
+- Snapshot ActivityPub state via [Snapshot Plan](../../library/operator/snapshot-plan.md) using
+  [Program Snapshot](../../library/structure/program-snapshot.md) and
+  [Program Transcript](../../library/structure/program-transcript.md).
+- Do not introduce new storage; reuse the knowledge graph and traceability.
+
+## Goals
+- Federate site/knowledge content via ActivityPub.
+- Maintain semantic alignment with the internal knowledge graph and RDF/OWL
+  correspondences.
+
+## Proof
+- Derived from: [Documentation Interpreter](../../../computer/type/documentation-interpreter.md).
+- Shows that: this program instantiates the documentation interpreter to realise the described behaviour without extending machine semantics.

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       761608dd-b921-4cb7-9f8d-e4003a7acd6c
+:END:
+#+title: Aragorn!
+#+date: [2025-08-26 Tue 10:25]
+

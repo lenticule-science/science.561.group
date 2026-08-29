@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       bfddfbb8-0fb2-42a7-92f6-e9ab5064749f
+:public:   true
+:END:
+#+title: digital garden
+#+date: [2025-08-22 Fri 09:08]
+

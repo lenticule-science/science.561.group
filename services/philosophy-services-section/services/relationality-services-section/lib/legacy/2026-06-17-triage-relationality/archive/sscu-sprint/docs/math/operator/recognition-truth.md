@@ -1,0 +1,28 @@
+---
+title: Recognition Truth
+role: operator
+inputs:
+- id: recognition
+  alias: predicate
+outputs:
+- id: recognition
+  alias: predicate
+transformation:
+- return
+  - predicate
+proof_refs:
+- recognition
+- recognition
+introduces: operator
+part-of: relational-computer
+computer-system-type: primitive
+---
+
+
+Determines whether a recognition predicate is top (true) or bottom (false) and
+returns a recognition suitable for branching.
+
+## Proof
+- Uses: ordering on the recognition lattice.
+- Shows that: truth detection is available as a primitive observation of
+  recognitions.

@@ -1,0 +1,10 @@
+bundles:
+  - git-basics
+  - community
+  - changelog
+  - todo
+  - license
+  - github-health
+  - github-meta
+  - hooks
+

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       a3c24866-d2fa-4dbe-ac28-e0f6809ba76d
+:END:
+#+title: functorial semantics
+#+date: [2025-10-15 Wed 18:09]
+

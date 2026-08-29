@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       557d79c0-1e0f-45fb-b248-468f23654cc1
+:END:
+#+title: creation date
+#+date: [2025-10-03 Fri 09:13]
+

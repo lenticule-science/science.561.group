@@ -1,0 +1,39 @@
+---
+title: "Elevon"
+date-created: 2026-03-06T00:00:00
+type: term
+aliases:
+  - "Elevon"
+  - "elevon"
+  - "elevons"
+defines:
+  - "elevon"
+authors:
+  - emsenn
+  - claude-opus-4-6
+keywords:
+  - Aerodynamics
+  - ControlSystems
+description: "A combined elevator/aileron control surface on the trailing edge of a tailless or delta wing, providing both pitch and roll control."
+---
+
+An elevon is a [control surface](./control-surface.md) on the trailing edge of a tailless aircraft — a delta wing, flying wing, or blended wing body — that combines the functions of [ailerons](./aileron.md) (roll) and [elevator](./elevator.md) (pitch) in a single pair of surfaces.
+
+**Mixing logic:** The [flight controller](./flight-controller.md) mixes pitch and roll commands to drive the two elevons: - **Pitch up:** Both elevons deflect trailing-edge-up (symmetric). - **Pitch down:** Both deflect trailing-edge-down (symmetric). - **Roll left:** Left elevon up, right elevon down (differential). - **Combined:** Superposition of pitch and roll commands.
+A simultaneous pitch-up and roll-left command deflects the left elevon further up while the right elevon is near neutral.
+
+Elevons are the standard control system for delta-winged expendable drones (Shahed-136, [LUCAS](./lucas.md), and derivatives), flying-wing stealth UAVs (RQ-170, nEUROn), and many hobbyist flying-wing designs.
+They reduce part count to just two [servos](./servo.md) — the minimum for controlled fixed-wing flight.
+
+The limitation of elevons is coupling: a large pitch command reduces the roll authority available (the elevons are already near full deflection for pitch), and vice versa.
+This limits the total control authority compared to a conventional layout with independent surfaces.
+For most UAV flight envelopes, this limitation is not operationally significant — the [flight controller](./flight-controller.md) manages the mixing and saturates gracefully.
+
+**Split elevons** (each elevon divided into upper and lower halves that can deflect independently) provide rudder-equivalent yaw control through differential drag — opening one split elevon like an airbrake while the other remains closed.
+This adds two more servos but provides three-axis control without a vertical tail.
+
+## Related terms
+
+- [Aileron](./aileron.md) — the dedicated roll surface on conventional aircraft
+- [Elevator](./elevator.md) — the dedicated pitch surface on conventional aircraft
+- [Control Surface](./control-surface.md) — the general category

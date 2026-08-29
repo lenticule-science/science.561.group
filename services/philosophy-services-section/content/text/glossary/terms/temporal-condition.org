@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       7b30d751-76c9-4cfe-819f-376e2cbe5e6b
+:END:
+#+title: temporal condition
+#+date: [2025-09-28 Sun 08:29]
+

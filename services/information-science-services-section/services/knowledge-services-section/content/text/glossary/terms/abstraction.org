@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       dccd106a-5450-4e41-863a-d02b17fd9468
+:END:
+#+title: abstraction
+#+date: [2025-08-28 Thu 13:45]
+

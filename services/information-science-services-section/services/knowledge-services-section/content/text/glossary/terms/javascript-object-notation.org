@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       a29ab62c-7089-46a9-8013-346630de83d9
+:END:
+#+title: JavaScript Object Notation
+#+date: [2025-10-16 Thu 16:45]
+

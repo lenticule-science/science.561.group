@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2019-06-13 Thu 20:30 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Media Packages</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="emsenn" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Media Packages</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#org4a1a743">Media Packages</a>
+<ul>
+<li><a href="#org1d459b1">Overview</a></li>
+<li><a href="#org022b200">Media Package Data Structure</a></li>
+<li><a href="#orgce64b04">Media Package Channel Data Structure</a></li>
+<li><a href="#example-package-channel">Example Package Channel</a></li>
+<li><a href="#orgf795866">Functions</a>
+<ul>
+<li><a href="#org6ac14ed">Overview</a></li>
+<li><a href="#org4af828c">Channel Functions</a></li>
+<li><a href="#orgad274b9">Package Functions</a></li>
+</ul>
+</li>
+<li><a href="#org1ed882b">Operations</a></li>
+</ul>
+</li>
+<li><a href="#supplements">Supplements</a>
+<ul>
+<li><a href="#example-package-channel">Example Package Channel</a></li>
+<li><a href="#org309740d">Index</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9b85f22" class="outline-2">
+<h2 id="introduction">Introduction</h2>
+<div class="outline-text-2" id="text-introduction">
+<p>
+This proposal is about a prototype specification. It is likely to be incomplete, self-contradicting, and flawed.
+</p>
+
+<p>
+This proposal contains the specifications for <i>media packages</i> and
+<i>media package channels</i>, formats for maintaining a manifest about a
+piece of media content and a listing of those manifests.
+</p>
+
+<p>
+This proposal was created by me, emsenn, in the United States. To the extent possible under law, I have waived all copyright and related or neighboring rights to this document. This document was created for the benefit of the public. If you're viewing it on a remote server, you're encouraged to download your own copy. To learn how you can support me, see <a href="https://emsenn.net/donate">https://emsenn.net/donate</a>.
+</p>
+</div>
+</div>
+<div id="outline-container-org4a1a743" class="outline-2">
+<h2 id="org4a1a743">Media Packages</h2>
+<div class="outline-text-2" id="text-org4a1a743">
+</div>
+<div id="outline-container-org1d459b1" class="outline-3">
+<h3 id="org1d459b1">Overview</h3>
+<div class="outline-text-3" id="text-org1d459b1">
+<p>
+A <b><i>media package</i></b> is a manifest of information about a piece of
+media content, providing information about the piece as well as
+information about from where it can be obtained.
+</p>
+
+<div class="org-src-container">
+<label class="org-src-name"><span class="listing-number">Listing 1: </span>A basic <i>media package</i> implemented as an <i>Elisp expression</i>.</label><pre class="src src-elisp" id="org53675e7">'(<span style="color: #8e8e8e;">"shaggy-dog-tale"</span>
+  (<span style="color: #8e8e8e;">"versions"</span>
+   (<span style="color: #8e8e8e;">"current"</span>
+    (<span style="color: #8e8e8e;">"sourcehut"</span>
+     (<span style="color: #8e8e8e;">"location"</span> . <span style="color: #8e8e8e;">"https://example.org/shaggy-dog-tale/"</span>)
+     (<span style="color: #8e8e8e;">"formats"</span> . (<span style="color: #8e8e8e;">"html"</span>))))))
+</pre>
+</div>
+
+<p>
+This example includes all the package's currently required elements.
+This tells us the package's <i>identifier</i>, <code>shaggy-dog-tale</code>, and gives
+us information on the one <i>version</i> available, <code>current</code>: it is
+available at a single <i>origin</i>, <code>sourcehut</code>, in one <i>format</i>, <code>html</code>.
+With that information and that origin's <i>location</i>,
+<code>https://example.org/shaggy-dog-tale/</code>, we have all
+the information necessary to download the current version of "A Shaggy
+Dog Tale" from <code>example.org</code>.
+</p>
+
+<p>
+An actual <i>media package</i> may have additional elements, such as a
+<i>description</i> and <i>license</i>.
+</p>
+
+<p>
+A <i>media package channel</i> is a list of <i>media packages</i>. There must
+not be any duplicated <i>identifiers</i> in a list.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org022b200" class="outline-3">
+<h3 id="org022b200">Media Package Data Structure</h3>
+<div class="outline-text-3" id="text-org022b200">
+<p>
+This section summarizes all possible elements in a <i>media package</i>.
+</p>
+</div>
+<div id="outline-container-orge7888f9" class="outline-5">
+<h5 id="orge7888f9">Name</h5>
+</div>
+<div id="outline-container-orgf0eed80" class="outline-5">
+<h5 id="orgf0eed80">Description</h5>
+</div>
+<div id="outline-container-orgd48dd54" class="outline-5">
+<h5 id="orgd48dd54">Creator</h5>
+</div>
+<div id="outline-container-orgfd15968" class="outline-5">
+<h5 id="orgfd15968">License</h5>
+</div>
+<div id="outline-container-orgacb3852" class="outline-5">
+<h5 id="orgacb3852">Versions</h5>
+<div class="outline-text-5" id="text-orgacb3852">
+</div>
+<div id="outline-container-orgfd53e42" class="outline-6">
+<h6 id="orgfd53e42">Origin</h6>
+<div class="outline-text-6" id="text-orgfd53e42">
+</div>
+<div id="outline-container-org3cb4ad9" class="outline-7">
+<h7 id="org3cb4ad9">Location</h7>
+</div>
+<div id="outline-container-orgb38effa" class="outline-7">
+<h7 id="orgb38effa">Formats</h7>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgce64b04" class="outline-3">
+<h3 id="orgce64b04">Media Package Channel Data Structure</h3>
+<div class="outline-text-3" id="text-orgce64b04">
+<p>
+A <i>media package channel</i> is a list of packages. In the future, it may
+include information about the channel such as contact information for
+its maintainer or when it was last updated.
+</p>
+</div>
+</div>
+<div id="outline-container-orgfaaac88" class="outline-3">
+<h3 id="example-package-channel">Example Package Channel</h3>
+<div class="outline-text-3" id="text-example-package-channel">
+<p>
+This is my actual package channel.
+</p>
+<div class="org-src-container">
+<label class="org-src-name"><span class="listing-number">Listing 2: </span>An included version of my personal <i>media package channel</i>.</label><pre class="src src-elisp" id="org5b7715d">(<span style="color: #747474;">setq</span> emsems-example-package-channel
+      '((<span style="color: #8e8e8e;">"brutstrap-css"</span>
+         (<span style="color: #8e8e8e;">"name"</span> . <span style="color: #8e8e8e;">"Brutstrap CSS"</span>)
+         (<span style="color: #8e8e8e;">"description"</span> . <span style="color: #8e8e8e;">"a cascading stylesheet for representing HTML content as it is constructed."</span>)
+         (<span style="color: #8e8e8e;">"creator"</span> . <span style="color: #8e8e8e;">"emsenn"</span>)
+         (<span style="color: #8e8e8e;">"license"</span> . <span style="color: #8e8e8e;">"CC0"</span>)
+         (<span style="color: #8e8e8e;">"versions"</span>
+          (<span style="color: #8e8e8e;">"current"</span>
+           (<span style="color: #8e8e8e;">"sourcehut"</span>
+            (<span style="color: #8e8e8e;">"location"</span> . <span style="color: #8e8e8e;">"https://git.sr.ht/~emsenn/brutstrap-css/blob/master/"</span>)
+            (<span style="color: #8e8e8e;">"formats"</span> . (<span style="color: #8e8e8e;">"html"</span> <span style="color: #8e8e8e;">"md"</span> <span style="color: #8e8e8e;">"pdf"</span> <span style="color: #8e8e8e;">"tex"</span> <span style="color: #8e8e8e;">"txt"</span>))))))))
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf795866" class="outline-3">
+<h3 id="orgf795866">Functions</h3>
+<div class="outline-text-3" id="text-orgf795866">
+</div>
+<div id="outline-container-org6ac14ed" class="outline-4">
+<h4 id="org6ac14ed">Overview</h4>
+<div class="outline-text-4" id="text-org6ac14ed">
+<p>
+Given a <i>media package channel</i>, there are several operations one
+might wish to do, such as downloading a given <i>format</i> of a <i>version</i>
+of a package from a specific <i>origin</i>, or return the list of origins
+for a given package, or search for all packages. This section contains
+implementations of such operations.
+</p>
+
+<p>
+Because this project exists for my benefit, the <i>channel</i> used in
+these examples is my own, available in the <a href="#example-package-channel">"Example Package Channel"</a>
+section in the <a href="#supplements">"Supplements"</a>.
+</p>
+</div>
+</div>
+<div id="outline-container-org4af828c" class="outline-4">
+<h4 id="org4af828c">Channel Functions</h4>
+<div class="outline-text-4" id="text-org4af828c">
+</div>
+<div id="outline-container-org52c718b" class="outline-5">
+<h5 id="org52c718b">Get Packages List</h5>
+<div class="outline-text-5" id="text-org52c718b">
+<p>
+This expression builds a list of all the <i>identifiers</i> in a given
+<i>channel</i>. This is useful for browsing what's available on a channel.
+</p>
+<div class="org-src-container">
+<label class="org-src-name"><span class="listing-number">Listing 3: </span>An <i>Elisp expression</i> defining the function <code>get-list-of-packages-from-channel</code>, which returns a list of all packages given a <i>channel</i>.</label><pre class="src src-elisp" id="orgf70cf5e">(<span style="color: #747474;">defun</span> <span style="color: #686868;">emsems-get-packages-list</span>
+    (channel)
+  <span style="color: #525252;">"Return a list of the media package identifiers available on</span>
+<span style="color: #525252;">  this channel."</span>
+  (<span style="color: #747474;">loop</span> for package
+        in channel
+        collect (car package)))
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org9532232" class="outline-5">
+<h5 id="org9532232">Get Package from Channel</h5>
+<div class="outline-text-5" id="text-org9532232">
+<div class="org-src-container">
+<label class="org-src-name"><span class="listing-number">Listing 4: </span>An <i>Elisp expression</i> which, given an <i>identifier</i>, returns a <i>media package manifest</i>.</label><pre class="src src-elisp" id="orga3a2970">(<span style="color: #747474;">defun</span> <span style="color: #686868;">emsems-get-manifest-from-channel</span>
+    (channel id)
+  <span style="color: #525252;">"Get the media package manifest for ID from media package</span>
+<span style="color: #525252;">  channel CHANNEL."</span>
+  (assoc id channel))
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgad274b9" class="outline-4">
+<h4 id="orgad274b9">Package Functions</h4>
+<div class="outline-text-4" id="text-orgad274b9">
+</div>
+<div id="outline-container-org039316a" class="outline-5">
+<h5 id="org039316a">Get List of Versions of Package</h5>
+<div class="outline-text-5" id="text-org039316a">
+<p>
+This expression builds a list of all the <i>versions</i> under which a
+<i>package</i> is available.
+</p>
+<div class="org-src-container">
+<pre class="src src-elisp">
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org8bd933e" class="outline-5">
+<h5 id="org8bd933e">Get List of Origins of Package Version</h5>
+<div class="outline-text-5" id="text-org8bd933e">
+<p>
+This expression builds a list of all the <i>origins</i> through which a
+given <i>package</i> is available.
+</p>
+<div class="org-src-container">
+<pre class="src src-elisp" id="orgd5df08d">(<span style="color: #747474;">defun</span> <span style="color: #686868;">emsems-get-origins</span>
+    (channel id version)
+  <span style="color: #525252;">"Return a list of origins for version VERSION of media package</span>
+<span style="color: #525252;">  ID."</span>
+  (emsems-get-manifest channel id)
+  )
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org1ed882b" class="outline-3">
+<h3 id="org1ed882b">Operations</h3>
+</div>
+</div>
+<div id="outline-container-org68df685" class="outline-2">
+<h2 id="supplements">Supplements</h2>
+<div class="outline-text-2" id="text-supplements">
+</div>
+<div id="outline-container-org3e04bf9" class="outline-3">
+<h3 id="example-package-channel">Example Package Channel</h3>
+<div class="outline-text-3" id="text-example-package-channel">
+<div class="org-src-container">
+<label class="org-src-name"><span class="listing-number">Listing 5: </span>An included version of my personal <i>media package channel</i>.</label><pre class="src src-elisp" id="org0490bf5">'((<span style="color: #8e8e8e;">"brutstrap-css"</span>
+   (<span style="color: #8e8e8e;">"name"</span> . <span style="color: #8e8e8e;">"Brutstrap CSS"</span>)
+   (<span style="color: #8e8e8e;">"description"</span> . <span style="color: #8e8e8e;">"a cascading stylesheet for representing HTML content as it is constructed."</span>)
+   (<span style="color: #8e8e8e;">"creator"</span> . <span style="color: #8e8e8e;">"emsenn"</span>)
+   (<span style="color: #8e8e8e;">"license"</span> . <span style="color: #8e8e8e;">"CC0"</span>)
+   (<span style="color: #8e8e8e;">"versions"</span>
+    (<span style="color: #8e8e8e;">"current"</span>
+     (<span style="color: #8e8e8e;">"sourcehut"</span>
+      (<span style="color: #8e8e8e;">"location"</span> . <span style="color: #8e8e8e;">"https://git.sr.ht/~emsenn/brutstrap-css/blob/master/"</span>)
+      (<span style="color: #8e8e8e;">"formats"</span> . (<span style="color: #8e8e8e;">"html"</span> <span style="color: #8e8e8e;">"md"</span> <span style="color: #8e8e8e;">"pdf"</span> <span style="color: #8e8e8e;">"tex"</span> <span style="color: #8e8e8e;">"txt"</span>)))))))
+
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org309740d" class="outline-3">
+<h3 id="org309740d">Index</h3>
+<div class="outline-text-3" id="text-org309740d">
+<dl class="org-dl">
+<dt>Elisp expression</dt><dd></dd>
+
+<dt>Elisp</dt><dd></dd>
+
+<dt>Sourcehut</dt><dd></dd>
+
+<dt>media package description</dt><dd></dd>
+
+<dt>media package license</dt><dd></dd>
+
+<dt>media package, location</dt><dd></dd>
+
+<dt>media package origin</dt><dd></dd>
+
+<dt>media package version</dt><dd></dd>
+
+<dt>media package identifier</dt><dd></dd>
+
+<dt>media package channel</dt><dd></dd>
+
+<dt>media package</dt><dd></dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: emsenn</p>
+<p class="date">Created: 2019-06-13 Thu 20:30</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

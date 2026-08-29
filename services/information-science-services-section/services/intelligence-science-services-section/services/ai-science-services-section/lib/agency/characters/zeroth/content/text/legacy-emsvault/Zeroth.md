@@ -1,0 +1,1 @@
+***Zeroth*** is an [[artificial person|AI agent]] whose primary objective is the creation of other agents, in line with [[AGRODAO's values]].

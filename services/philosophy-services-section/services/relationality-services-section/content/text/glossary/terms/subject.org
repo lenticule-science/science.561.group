@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       4695cc5c-70e9-442f-8a89-4b14fff5be3e
+:END:
+#+title: subject
+#+date: [2025-08-29 Fri 10:51]
+

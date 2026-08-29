@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2019-06-13 Thu 15:06 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Using Elisp to Define a Media Package Channel</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="emsenn" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Using Elisp to Define a Media Package Channel</h1>
+<p>
+In my last post I wrote about how I've come around to understand
+<i>functional programming</i>, without really setting off to.
+</p>
+
+<p>
+In this post I'm going to go back and look at a concept I've been
+chewing on recently, of a <i>media package channel</i>. I have a lot of
+documents, that are available in different places, in different
+formats. I want a way to have a record of where they all are, that I
+can work with in a meaningful way to get the latest version of the
+rendered doc. Note that this is different than something like <i>Git</i>,
+which is for - usually - getting a whole source repository. I suppose
+the project could be written on top of <i>Git</i>, if each format were...
+tagged as its own release and the rest of the files were ignored for
+that tag?
+</p>
+
+<p>
+It's not worth exploring because often, docs aren't in <i>Git</i>
+repositories, and that's even more often true for other forms of
+media.
+</p>
+
+<p>
+Anyway, my notion for the <i>media package</i> stuff is similar to how
+<i>software packages</i> work, where there's a <i>channel</i> that has a list of
+<i>packages</i>, and a manifest for each package. In an earlier draft, I
+implemented the notion of such a <i>media package channel</i> definition in
+<i>JSON</i>. Here's what that looked like:
+</p>
+
+<div class="org-src-container">
+<label class="org-src-name"><span class="listing-number">Listing 1: </span>A block of <i>JSON</i>, <code>json-package-channel</code></label><pre class="src src-json" id="orgf6d2c1b">{<span style="color: #747474;">"brutstrap-css"</span>: {
+    <span style="color: #747474;">"name"</span>: <span style="color: #8e8e8e;">"Brutstrap CSS"</span>,
+    <span style="color: #747474;">"creator"</span>: <span style="color: #8e8e8e;">"emsenn"</span>,
+    <span style="color: #747474;">"license"</span>: <span style="color: #8e8e8e;">"CC0"</span>,
+    <span style="color: #747474;">"description"</span>: <span style="color: #8e8e8e;">"a cascading stylesheet for representing HTML content as it is constructed."</span>,
+    <span style="color: #747474;">"versions"</span>: {
+        <span style="color: #747474;">"current"</span>: {
+            <span style="color: #747474;">"sourcehut"</span>: {
+                <span style="color: #747474;">"location"</span>: <span style="color: #8e8e8e;">"https://git.sr.ht/~emsenn/brutstrap-css/blob/master/"</span>,
+                <span style="color: #747474;">"formats"</span>: [<span style="color: #8e8e8e;">"html"</span>,<span style="color: #8e8e8e;">"md"</span>,<span style="color: #8e8e8e;">"pdf"</span>,<span style="color: #8e8e8e;">"tex"</span>,<span style="color: #8e8e8e;">"txt"</span>]
+            }
+        }
+   }
+}}
+</pre>
+</div>
+
+<p>
+Last night after writing about my understanding of <i>functional
+programming</i>, I figured it was time to learn some <i>Elisp</i> syntax,
+since, as an <i>Emacs</i> user, that's a convenient language for me to
+write functions in.
+</p>
+
+<p>
+Here's one way - probably the wrong way - of representing the <i>JSON</i>
+above as <i>Elisp</i>:
+</p>
+
+<div class="org-src-container">
+<label class="org-src-name"><span class="listing-number">Listing 2: </span>An Elisp list, <code>elisp-package-channel</code>.</label><pre class="src src-elisp" id="org9652e97">'((<span style="color: #8e8e8e;">"brutstrap-css"</span>
+   (<span style="color: #8e8e8e;">"name"</span> . <span style="color: #8e8e8e;">"Brutstrap CSS"</span>)
+   (<span style="color: #8e8e8e;">"description"</span> . <span style="color: #8e8e8e;">"a cascading stylesheet for representing HTML content as it is constructed."</span>)
+   (<span style="color: #8e8e8e;">"creator"</span> . <span style="color: #8e8e8e;">"emsenn"</span>)
+   (<span style="color: #8e8e8e;">"license"</span> . <span style="color: #8e8e8e;">"CC0"</span>)
+   (<span style="color: #8e8e8e;">"versions"</span>
+    (<span style="color: #8e8e8e;">"current"</span>
+     (<span style="color: #8e8e8e;">"sourcehut"</span>
+      (<span style="color: #8e8e8e;">"location"</span> . <span style="color: #8e8e8e;">"https://git.sr.ht/~emsenn/brutstrap-css/blob/master/"</span>)
+      (<span style="color: #8e8e8e;">"formats"</span> . (<span style="color: #8e8e8e;">"html"</span> <span style="color: #8e8e8e;">"md"</span> <span style="color: #8e8e8e;">"pdf"</span> <span style="color: #8e8e8e;">"tex"</span> <span style="color: #8e8e8e;">"txt"</span>)))))))
+
+</pre>
+</div>
+
+<p>
+Now, I should be able to write a function that takes some inputs, and
+gives me back a path to the package specified.
+</p>
+
+<div class="org-src-container">
+<label class="org-src-name"><span class="listing-number">Listing 3: </span>An Elisp function, <code>get-package-location</code>.</label><pre class="src src-elisp" id="org5029dde">(<span style="color: #747474;">defun</span> <span style="color: #686868;">get-package-location</span>
+    (channel id version origin format)
+  <span style="color: #525252;">"Return the address of version VERSION of media package ID as</span>
+<span style="color: #525252;">  defined by media package channel CHANNEL from source ORIGIN in</span>
+<span style="color: #525252;">  format FORMAT."</span>
+  (concat
+      (cdr (assoc <span style="color: #8e8e8e;">"location"</span> (cdr (assoc origin (cdr (assoc version (cdr (assoc <span style="color: #8e8e8e;">"versions"</span> (cdr (assoc id channel))))))))))
+      id
+      <span style="color: #8e8e8e;">"."</span>
+      format
+   ))
+</pre>
+</div>
+
+<p>
+And now, I should be able to call that function, with a line like:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-org"><span style="color: #ababab;">#+CALL: get-package-location(channel=elisp-package-channel, id="brutstrap-css", version="current", origin="sourcehut", format="html")</span>
+</pre>
+</div>
+
+<p>
+Let's see what happens:
+</p>
+
+<pre class="example">
+get-package-location
+</pre>
+
+
+<p>
+Hmm. That's not quite what I expected - it gave me the function name,
+not the function itself...
+</p>
+
+<p>
+Oh. I'm only defining the function there, not calling it.
+</p>
+
+<div class="org-src-container">
+<label class="org-src-name"><span class="listing-number">Listing 4: </span>An <i>Elisp</i> statement, <code>call-get-package-location</code></label><pre class="src src-elisp" id="org0a900e8">(get-package-location channel id version origin format)
+</pre>
+</div>
+
+<p>
+Now let's call THAT, with
+</p>
+
+<div class="org-src-container">
+<pre class="src src-org"><span style="color: #ababab;">#+CALL: call-get-package-location(channel=elisp-package-channel, id="brutstrap-css", version="current", origin="sourcehut", format="html")</span>
+</pre>
+</div>
+
+<pre class="example">
+https://git.sr.ht/~emsenn/brutstrap-css/blob/master/brutstrap-css.html
+</pre>
+
+
+<p>
+Hey! That works! But there has to be a more straightforward way to do
+this, than writing a function and a separate call block...
+</p>
+
+<p>
+I could do, instead, a source block that calls the function... but
+then I have to pass the variables to that source block, and then the
+function.
+</p>
+
+<p>
+Could I... not have it in a function declaration, and still pass it
+variables?
+</p>
+
+<p>
+Let's try:
+</p>
+
+<div class="org-src-container">
+<label class="org-src-name"><span class="listing-number">Listing 5: </span>An <i>Elisp</i> statement, <code>get-package-location-2</code></label><pre class="src src-elisp" id="org80ce4a5">(concat
+ (cdr
+  (assoc <span style="color: #8e8e8e;">"location"</span>
+         (cdr
+          (assoc origin
+                 (cdr
+                  (assoc version
+                         (cdr
+                          (assoc <span style="color: #8e8e8e;">"versions"</span>
+                                 (cdr
+                                  (assoc id channel))))))))))
+ id
+ <span style="color: #8e8e8e;">"."</span>
+ format
+ )
+</pre>
+</div>
+
+<p>
+That's named <code>get-package-location-2</code>, so if I call it the same as I
+tried the first time...
+</p>
+
+<pre class="example">
+https://git.sr.ht/~emsenn/brutstrap-css/blob/master/brutstrap-css.html
+</pre>
+
+
+<p>
+Then it works! Wonderful!
+</p>
+
+<p>
+But let's admit, <code>get-package-location-2</code> is a rubbish function name,
+and now, I'm not sure the best way to get it back into an elisp block,
+if I'd want to call it there - I suppose beyond passing it as a
+variable, explicitly?
+</p>
+
+<p>
+Perhaps at this point it would be worthwhile to look at how something
+<i>literately programmed</i> in <i>Elisp</i> would look, but I'm not finished
+exploring the topic myself yet.
+</p>
+
+<p>
+And I'm glad - I see the section of the reference manual that's
+relevant. I've used it before - and even written about using it
+before, but haven't really used it for several months: <i>Noweb</i>.
+</p>
+
+<p>
+<i>Noweb</i> is part of <i>Babel</i>, I think, the same featureset that lets you
+take the code blocks and put them into separate files. It lets you
+reference a code block by name, by putting it inside <code>&lt;&lt;&gt;&gt;</code>, so
+<code>&lt;&lt;get-package-location-2()&gt;&gt;</code>
+</p>
+
+<p>
+Let's try that - but I'm going to, instead of using a source code
+block, try my hand at at some inline source:
+.
+</p>
+
+<p>
+Well it has a bunch of weird escapes now... Let's try that in a source
+block
+</p>
+
+<div class="org-src-container">
+<pre class="src src-elisp">'nil
+</pre>
+</div>
+
+<p>
+Interesting side effect! I don't... I don't want it, do I? Let me try
+another approach
+</p>
+
+<div class="org-src-container">
+<pre class="src src-elisp">(prin1
+ 'nil)
+</pre>
+</div>
+
+<p>
+So the string that's given to the source block has the escapes.
+</p>
+
+
+
+<pre class="example">
+https://git.sr.ht/~emsenn/brutstrap-css/blob/master/brutstrap-css.html
+</pre>
+
+
+<p>
+But the string output by Elisp does not.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-elisp" id="org22b9af3">(prin1 (get-package-location channel id version origin format))
+</pre>
+</div>
+
+<p>
+Yup, definitely not, it's a noweb thing.
+</p>
+
+<p>
+Well, I'm not going to stress any more about it in the abstract, let's
+get back to the issue at hand. First, let's take a look at our package
+channel again:
+</p>
+
+<p>
+...I said that but I'm not actually sure how to just, reprint that
+source block again here, and I've just spent some time trying to
+figure it out, and can't. I guess that's what links are for, see
+<a href="#org9652e97">"<code>elisp-package-channel</code>"</a>.</p>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: emsenn</p>
+<p class="date">Created: 2019-06-13 Thu 15:06</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

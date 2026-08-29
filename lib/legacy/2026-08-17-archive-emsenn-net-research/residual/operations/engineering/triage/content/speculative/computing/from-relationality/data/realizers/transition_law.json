@@ -1,0 +1,9 @@
+{
+  "id": "transition_law",
+  "act": "TransitionLaw",
+  "module": "relationality.realizers.transition_law",
+  "callable": "realize_transition_law",
+  "input_kind": "PhaseSpace",
+  "output_kind": "PhaseSpace",
+  "description": "Embed transition law structure into phase space."
+}

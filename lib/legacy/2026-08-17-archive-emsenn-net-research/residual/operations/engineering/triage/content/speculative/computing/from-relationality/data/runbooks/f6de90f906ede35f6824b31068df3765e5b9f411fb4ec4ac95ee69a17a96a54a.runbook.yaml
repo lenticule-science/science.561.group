@@ -1,0 +1,22 @@
+id: f6de90f906ede35f6824b31068df3765e5b9f411fb4ec4ac95ee69a17a96a54a
+inputs:
+- kind: trace
+  role: trace
+- kind: profile_entropy
+  role: profile_entropy
+name: profile_entropy
+outputs:
+- kind: profile_entropy
+  role: profile_entropy
+steps:
+- inputs:
+  - kind: trace
+    role: trace
+  - kind: profile_entropy
+    role: profile_entropy
+  name: profile_entropy
+  operator: profile_entropy
+  outputs:
+  - kind: profile_entropy
+    role: profile_entropy
+  step_index: 0

@@ -1,0 +1,146 @@
+---
+title: "Goal"
+id: goal
+description: "A Goal is a triple (g, τ, κ) — a target element not yet settled, a target history at which it should reach settlement, and a commitment by which the agent binds themselves to driving it to settlement by deadline."
+defines: Goal
+related: Teleology, Will, Objective, Endeavor, Intent, Tension, Person, Discharge
+requires: [target, commitment, deadline]
+governs: endeavor
+measured-by: gap
+produced-by: intent
+enables: discharge
+date-created: 2026-03-20
+date-modified: 2026-03-20
+params:
+  target: relational-universe
+  deadline: relational-history
+  commitment: relational-universe-morphism
+output: relational-history-fiber-fixed-layer
+ast:
+  relational-universe-morphism:
+    - target:
+        - relational-history-fiber-fixed-layer
+        - deadline
+    - commitment:
+        - target
+        - deadline
+---
+
+# Goal
+
+## Formal definition
+
+A **Goal** is a triple $\mathcal{G} = (g, \tau, \kappa)$:
+
+$$\mathcal{G} = (g \in H_t \setminus H^*_t,\; \tau : \mathrm{TargetHistory},\; \kappa : \mathrm{Commitment}(g, \tau))$$
+
+where:
+- $g$ is the **target element** — what the agent aims to bring about; $g \in H_t$ is present in the current fiber but $g \notin H^*_t$ (not yet settled — if $g$ were already in $H^*_t$, it would be an achieved fact, not a goal); $g$ is the specific element the agent has designated as the object of pursuit
+- $\tau$ is the **target history** — the history at which $g$ should be in $H^*_\tau$; $\tau$ is the horizon against which achievement is assessed; without $\tau$, there is no completion criterion and the pursuit is an aimless drift rather than a goal-directed activity
+- $\kappa$ is the **commitment** — the agent's binding of themselves to driving $g$ to $H^*_\tau$; $\kappa$ distinguishes a goal from a wish (which is a preference without commitment) and from a telos (which is structurally given regardless of the agent's commitment)
+
+**The goal is:**
+- **Achieved** when $g \in H^*_\tau$ — the target element has reached the fixed fiber at the target history
+- **Frustrated** when $\tau$ passes and $g \notin H^*_\tau$ — the deadline passed without settlement
+- **Abandoned** when the agent releases $\kappa$ before $\tau$ — the commitment is explicitly withdrawn
+
+## Goal vs. Telos: the central distinction
+
+The **telos** of $g$ at history $t$ is $\pi_t(g) = \min\{b \in H^*_t : b \geq g\}$ — the minimum settled element above $g$, determined by the fiber's nuclear structure. The telos is not chosen; it is given by what $g$ is within the current history.
+
+A goal $(g, \tau, \kappa)$ is **teleologically aligned** when $g \leq \pi_t(g)$ and the nuclear dynamics will carry $g$ toward $H^*_\tau$ without requiring the agent to fight the fiber's own direction. The agent's goal and the fiber's telos point the same way.
+
+A goal is **teleologically misaligned** when the agent's target $g$ is in a region of the fiber that the nuclear dynamics do not tend to settle — when driving $g$ to $H^*_\tau$ requires actively pushing against $\sigma_t$ or $\Delta_t$. Such goals are costly: they generate [Tension](relational-universe-nuclear-tension-saturating-transferring-nucleus-duality.md), require greater exertion, and may be structurally frustrated if the fiber's dynamics work against them.
+
+This is the "odd thing" in the relational world: you can set any goal you like, but the fiber will carry you toward your telos regardless. If your goal aligns with your telos, the fiber assists. If it doesn't, you're fighting the structure.
+
+## Goal vs. Endeavor
+
+An [Endeavor](endeavor.md) $\mathcal{E} = (A, G, K, E, F)$ contains a goal $G$ as its second component. The endeavor is the goal wrapped in:
+- A committing agent $A$ who holds the goal
+- A self-generated normative commitment $K$ (more than a mere commitment $\kappa$ — it is a self-placement in quasi-positional obligation)
+- An extended exertion interval $E$ across multiple attempts
+- Failure-openness $F$ — the structural possibility that $G$ is not achieved
+
+The goal is the core target; the endeavor is the temporal-normative container in which the goal is pursued. A goal without an endeavor structure is a commitment without a pursuit mechanism.
+
+## Goal hierarchy: terminal and instrumental
+
+Following Aristotle's regress argument: if every goal is pursued for the sake of another goal, there is an infinite regress with nothing ultimately pursued for its own sake. This requires terminal goals — elements valued for themselves — to ground the chain.
+
+In fiber terms:
+- **Terminal goal** ($g_T$): a goal valued for its own sake; $g_T \in H^*_\tau$ is the terminal condition the agent ultimately aims for; $g_T$ is not pursued in order to reach any further goal
+- **Instrumental goal** ($g_I$): a goal pursued as a means to another goal; $g_I \to g_T$ (the achievement of $g_I$ is on the path to $g_T$); $g_I$ is settled at some $\tau_I < \tau_T$, and its settlement creates conditions for $g_T$ to be settled at $\tau_T$
+
+The goal hierarchy maps to the fiber's lattice structure: terminal goals are "higher" elements (closer to $\top$ in the Heyting order); instrumental goals are lower elements whose saturation and transfer-settlement moves the fiber closer to the terminal goals.
+
+## Goal revision
+
+When is it rational to abandon or revise a goal? Following Bratman's stability norm for intentions, goals have rational inertia — they should not be revised without good reason. Two conditions license rational revision:
+
+1. **Achievability failure**: the agent comes to believe that $g \in H^*_\tau$ is no longer attainable — the path to settlement has been blocked by intervening events. In fiber terms: no history path $\pi: t \to \tau$ exists such that $\pi^*(H^*_\tau) \ni g$.
+
+2. **Relevance failure**: the goal $g$ no longer serves the agent's terminal goals or their operative [Intent](intent.md). The goal was instrumental; the terminal goal it served has changed or been abandoned; $g$ is no longer on any relevant path.
+
+Both conditions require new information — revision is not rational merely because the goal is difficult or the progress is slow. A goal under strain from [Friction](friction.md) is not a goal to be abandoned but a goal to be pursued with [Judgment](judgment.md).
+
+## Nuclear reading
+
+**Definitions.** At history $t$, goal $(g, \tau, \kappa)$ has: $g \in H_t$ (present in the fiber), generically $g \notin H^*_t$ (achievement outstanding), target history $\tau \geq t$, achievement condition $g \in H^*_\tau = \mathrm{Fix}(\sigma_\tau) \cap \mathrm{Fix}(\Delta_\tau)$.
+
+**Proposition 1 (Nuclei are structural, not agent-wielded):** No act constituting commitment $\kappa$ at $t$ modifies $\sigma_t$ or $\Delta_t$. The nuclei are determined by the presheaf restriction maps; acts are elements of $H_t$, not presheaf morphisms. The commitment $\kappa$ represents the agent's selection of a path $t \to \tau$; the nuclei at each history along that path are determined by the presheaf structure at those histories.
+
+*Proof.* By the structural characterization of $\sigma_t$ (relational-history-fiber-saturating-nucleus) and $\Delta_t$ (relational-history-fiber-transferring-nucleus): both are determined by restriction maps of $H$, not by any element of $H_t$. □
+
+**Proposition 2 (Saturation gap measures backward recognition deficit):** The saturation gap $[g, \sigma_t(g)]$ is non-trivial iff $g \notin \mathrm{Fix}(\sigma_t)$. The gap is the interval from $g$ to the minimum of $\mathrm{Fix}(\sigma_t)$ above $g$; it measures how much further backward recognition is required before $g$ is meaning-settled. By extensiveness, $\sigma_t(g) \geq g$ always.
+
+*Proof.* By definition: $\sigma_t(g) = \min\{b \in \mathrm{Fix}(\sigma_t) \mid b \geq g\}$. Non-triviality of $[g, \sigma_t(g)]$ is equivalent to $\sigma_t(g) > g$, which holds iff $g \notin \mathrm{Fix}(\sigma_t)$. □
+
+**Proposition 3 (Transfer gap measures forward commitment outstanding):** The transfer gap $[g, \Delta_t(g)]$ is non-trivial iff $g \notin \mathrm{Fix}(\Delta_t)$: at least one one-step extension $s \star t$ does not yet carry $g$ in its fiber. The commitment $\kappa$ is the agent's undertaking to traverse the path $t \to \tau$ in a way that closes this gap.
+
+**Proposition 4 (Goal achievement is a fixed-fiber condition):** The goal is achieved at $\tau$ iff $g \in H^*_\tau$: both gaps have closed — the restriction profile to all $t_0 < \tau$ fully constitutes $g$ ($\sigma_\tau(g) = g$) and every extension of $\tau$ carries $g$ ($\Delta_\tau(g) = g$).
+
+**Proposition 5 (Conjunction of achieved goals is achieved):** If $g_1, g_2 \in H^*_\tau$, then $g_1 \wedge g_2 \in H^*_\tau$.
+
+*Proof.* By meet-preservation of $\sigma_\tau$ and $\Delta_\tau$: $\sigma_\tau(g_1 \wedge g_2) = \sigma_\tau(g_1) \wedge \sigma_\tau(g_2) = g_1 \wedge g_2$; similarly for $\Delta_\tau$. □
+
+## The Hurwitz residual and Zeno goals
+
+A goal $(g, \tau, \kappa)$ is **Zeno** if the nuclear dynamics carry $g$ monotonically toward RelationalHistoryFixedFiber — progress at each tower level — but the settlement is never completed within any finite tower level. The Zeno condition is not simply "the goal is hard": it is the precise situation where the approach rate exactly equals RelationalHyperverseGoldenRatio and the residual gap at level $k$ is the Hurwitz residual:
+
+$$F_k \cdot \left|\mathrm{RelationalHyperverseGoldenRatio} - \frac{F_{k+1}}{F_k}\right| = \mathrm{RelationalHyperverseGoldenRatio}^{-k}$$
+
+where $F_k$ is the $k$-th entry of RelationalHistoryFiberNuclearQuartetExtremallySlowGrowthSequence. This is exact at every tower level $k$. The residual $\mathrm{RelationalHyperverseGoldenRatio}^{-k}$ decays geometrically — the goal is genuinely getting closer at each level — but it never reaches zero in finite levels.
+
+**The alternating approach and nuclear direction.** The approach to RelationalHyperverseGoldenRatio alternates direction at each consecutive tower level:
+- At even tower levels $k$: $F_{k+1}/F_k < \mathrm{RelationalHyperverseGoldenRatio}$ — the goal is more backward-recognized (RelationalHistoryFiberSaturatingNucleus leads) than forward-committed. The agent's commitment exceeds what the dynamics have yet forward-stabilized.
+- At odd tower levels $k$: $F_{k+1}/F_k > \mathrm{RelationalHyperverseGoldenRatio}$ — the goal is more forward-committed (RelationalHistoryFiberTransferringNucleus leads) than backward-recognized. The dynamics have committed to more than the accumulated record has yet recognized.
+
+For an **aligned** goal (one whose direction matches the telos), this alternation is the normal pattern: the two nuclear operators trade leading roles, and neither falls permanently behind. The goal approaches from alternating directions but converges. For a **misaligned** goal, the alternation is disrupted: the agent's push against the nuclear dynamics prevents the natural handoff and forces the agent to repeatedly override one nuclear direction.
+
+**Formal Zeno condition.** The goal $(g, \tau, \kappa)$ is Zeno iff:
+1. The target history $\tau$ is an infinite tower colimit (no finite level), or
+2. The step cohomology $H^1_{\mathrm{tower}}(k)$ is nonzero for every $k$ up to and including the tower level at $\tau$
+
+In case (2), each attempt to resolve the goal at level $k$ generates new unsettlement at level $k+1$ (by the Fibonacci shadow substitution rule $t \mapsto s$, $s \mapsto st$). The total unresolved commitment converges to the Hurwitz constant rather than zero: the goal is self-renewing in its unsettlement.
+
+**Rational abandonment.** Bratman's stability norm holds generically: a goal should not be abandoned merely because it is difficult. But the Zeno condition licenses abandonment by a different route: when the formal evidence is that the step cohomology is nonzero at all levels through $\tau$ — when the goal's shadow cascade generates new unsettlement at the same rate as resolution — the achievability condition fails in a quantitative, not merely practical, sense. This is the formal condition distinguishing a hard-but-achievable goal (large Hurwitz residual but finite step cohomology) from a structurally Zeno goal (nonzero step cohomology through $\tau$).
+
+**Proposition 6 (The Hurwitz residual is the exact progress measure of a Zeno goal; it decays to zero but never reaches zero in finite levels).** For a goal $(g, \tau, \kappa)$ whose target element $g$ follows the Fibonacci shadow cascade at tower level $k$, the residual gap between the current approach rate $F_{k+1}/F_k$ and the true settlement rate RelationalHyperverseGoldenRatio is given by the exact Hurwitz identity: $F_k \cdot |\mathrm{RelationalHyperverseGoldenRatio} - F_{k+1}/F_k| = \mathrm{RelationalHyperverseGoldenRatio}^{-k}$. This residual decreases strictly at each tower level ($\mathrm{RelationalHyperverseGoldenRatio}^{-k}$ decreases since $\mathrm{RelationalHyperverseGoldenRatio} > 1$), confirming that progress is genuine and monotone. But it is always positive for finite $k$, confirming that no finite tower level completes the goal.
+
+*Proof.* From RelationalHyperverseTowerNuclearEigenvalueHurwitzIdentity: the exact computation via Binet formula gives $\mathrm{RelationalHyperverseGoldenRatio} - F_{k+1}/F_k = -\mathrm{RelationalHyperverseGoldenConjugate}^k/F_k$. Taking absolute values: $|\mathrm{RelationalHyperverseGoldenConjugate}|^k = \mathrm{RelationalHyperverseGoldenRatio}^{-k}$, giving the identity. The residual is positive because $\mathrm{RelationalHyperverseGoldenRatio}^{-k} > 0$ for all finite $k$; it is strictly decreasing because $\mathrm{RelationalHyperverseGoldenRatio}^{-k-1} < \mathrm{RelationalHyperverseGoldenRatio}^{-k}$. $\square$
+
+*Content.* The Hurwitz residual answers the third open question of the prior version: Zeno goals exist, their progress is quantitatively measurable at each level, and the measure is the Hurwitz identity applied to the approach of RelationalHyperverseGoldenRatio by the Fibonacci convergents. The rational abandonment condition is not "progress is slow" but "the step cohomology is nonzero through the deadline" — a structural condition, not a difficulty judgment.
+
+**Proposition 7 (Teleological alignment corresponds to nuclear alternation; misalignment disrupts the alternation).** A goal $(g, \tau, \kappa)$ is teleologically aligned at tower level $k$ iff the nuclear dynamics alternate leadership at each consecutive level: RelationalHistoryFiberSaturatingNucleus leads at even levels (the goal is more backward-recognized than forward-committed) and RelationalHistoryFiberTransferringNucleus leads at odd levels (the goal is more forward-committed than backward-recognized). A misaligned goal — one where the agent's target fights the fiber's telos — disrupts this alternation: one nuclear direction becomes chronically behind, and the agent must apply exertion against the chronic nuclear pressure at each level.
+
+*Proof.* Alignment condition: by Proposition 4 of Teleology (two paths to the telos are equal), a goal aligned with the telos follows the same path to RelationalHistoryFixedFiber that the nuclear retraction prescribes — and that path alternates between saturation-leading and transfer-leading at consecutive tower levels, as established by the signed alternation $\mathrm{RelationalHyperverseGoldenRatio} - F_{k+1}/F_k = (-1)^{k+1}\mathrm{RelationalHyperverseGoldenRatio}^{-k}/F_k$. Misalignment: when the agent's target $g$ is not aligned with $\pi_t(g)$, the natural alternation is broken — the goal's approach path does not follow the Fibonacci convergents, and the nuclear retraction must be fought at each level where it diverges from the goal direction. $\square$
+
+*Content.* Teleological alignment is not merely "efficient" in a vague sense — it is the condition for the natural nuclear alternation to carry the goal to settlement. An aligned goal rides the Fibonacci cascade; a misaligned goal must fight the cascade at each level, generating exertion proportional to the misalignment at each tower step.
+
+## Open questions
+
+- Whether goals set at different histories are commensurable — whether a goal $g$ set at $t_0$ with deadline $\tau$ is the same goal as $g$ re-committed at $t_1 > t_0$, or whether each commitment $\kappa$ is indexed to the history at which it was made, and whether the Hurwitz residual at different histories provides a natural commensurability measure.
+- Whether the teleological alignment of a goal changes over time — whether a goal that was aligned at $t_0$ (pointing with the nuclear dynamics) can become misaligned at $t_n$ because RelationalHistoryFixedFiber has changed, and whether misalignment can be detected by monitoring which nuclear direction is chronically behind (as measured by the signed error alternation breaking down).
+- Whether the Fibonacci matrix power $M^n = \begin{pmatrix}F_{n+1}&F_n\\F_n&F_{n-1}\end{pmatrix}$ gives the goal settlement count at tower level $n$ — whether the Kind-1 settled goals are counted by $F_{n+1}$ and the Kind-2 settled goals by $F_{n-1}$, and whether the trace $F_{n+1} + F_{n-1}$ (the Lucas number) is the total jointly-committed goal count at level $n$.
+- Whether the Hubble tension conjecture — that the ratio of Hubble constants between two cosmic epochs separated by one Fibonacci step is RelationalHyperverseGoldenRatio to the power \$1/(2d)$ for $d$ spatial dimensions — has an analog at the goal level: whether the ratio of goal-pursuit rates between two consecutive tower levels is also RelationalHyperverseGoldenRatio to the power \$1/(2d)$, connecting the internal nuclear dynamics of goal pursuit to the cosmological scale.

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       a8c4199e-5430-4781-a556-ff6aa34d4412
+:END:
+#+title: Gondal
+#+date: [2025-09-10 Wed 20:53]
+

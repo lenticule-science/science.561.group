@@ -1,0 +1,14 @@
+<section class="personal-summary">
+  <p>
+    {{ partial "personal-whatido-span.html" . }}
+    {{ partial "personal-recent-actions-span.html" . }}
+  </p>
+  <p>
+    {{ partial "personal-current-plans-span.html" . }}
+    {{ partial "personal-soon-plans-span.html" . }}
+  </p>
+  {{ if (eq $.Site.Params.showHCard true) }}
+    {{ partial "h-card-paragraph.html" . }}
+  {{ end }}
+
+</section>

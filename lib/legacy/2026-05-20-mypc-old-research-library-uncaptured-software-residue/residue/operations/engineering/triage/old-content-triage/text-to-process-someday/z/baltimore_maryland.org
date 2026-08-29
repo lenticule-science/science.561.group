@@ -1,0 +1,19 @@
+#+title: Baltimore, Maryland
+#+begin_head
+#+ghe_schema: record-0.1.3
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-24 Thu 11:53]
+#+end_head
+
+#+name: definition
+*/Baltimore, Maryland, U.S.A./* is a [[file:settler_colonialism.org][settler-colonialism]] city.
+#toc: headlines 2
+* Intrododuction
+* Baltimore, Maryland
+* Supplements
+** Record history
+   :LOGBOOK:
+   - Note taken on [2020-12-24 Thu 11:53] \\
+     Created
+   :END:

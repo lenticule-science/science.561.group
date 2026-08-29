@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       31eeb2c2-7bdf-4be8-9050-3b595513d6f1
+:END:
+#+title: genre
+#+date: [2025-09-03 Wed 11:50]
+

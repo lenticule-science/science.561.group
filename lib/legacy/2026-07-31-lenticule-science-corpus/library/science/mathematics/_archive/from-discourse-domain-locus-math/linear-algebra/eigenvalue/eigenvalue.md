@@ -1,0 +1,28 @@
+---
+
+title: "Eigenvalue"
+description: "Most [linear maps](../morphisms/linear-map.md) scramble directions — they stretch space one way, compress it another, and rotate things sideways. But along certain special directions, a linear map does something simple: it just scales. An eigenvalue is the scaling factor along one of these special directions, and the direction itself is called an eigenvector."
+aliases:
+  - "eigenvalue"
+  - "eigenvalues"
+  - "eigenvector"
+  - "eigenvectors"
+date-created: 2026-03-05
+tags: []
+defines:
+  - "Eigenvalue"
+  - "eigenvalue"
+  - "eigenvector"
+---
+
+Most [linear maps](../morphisms/linear-map.md) scramble directions — they stretch space one way, compress it another, and rotate things sideways. But along certain special directions, a linear map does something simple: it just scales. An eigenvalue is the scaling factor along one of these special directions, and the direction itself is called an eigenvector.
+
+Formally, if $T: V \to V$ is a linear map on a [vector space](../objects/vector-space.md) $V$, then a scalar $\lambda$ is an eigenvalue of $T$ if there exists a nonzero [vector](../objects/vector.md) $\mathbf{v}$ such that $T(\mathbf{v}) = \lambda \mathbf{v}$. The vector $\mathbf{v}$ is an eigenvector corresponding to $\lambda$. The equation says that $T$ acts on $\mathbf{v}$ by pure scaling — it sends $\mathbf{v}$ to $\lambda$ times itself, without changing its direction. When $\lambda > 1$, the map stretches along that direction. When $0 < \lambda < 1$, it compresses. When $\lambda < 0$, it reverses direction (and scales). When $\lambda = 0$, the map collapses that direction entirely.
+
+Consider a concrete example. A $2 \times 2$ [matrix](../objects/matrix.md) represents a linear map on $\mathbb{R}^2$. The matrix $\begin{pmatrix} 2 & 1 \\ 0 & 3 \end{pmatrix}$ has eigenvalues 2 and 3. Along the eigenvector $(1, 0)$, it stretches by a factor of 2. Along the eigenvector $(1, 1)$, it stretches by a factor of 3. Every other vector gets both stretched and rotated — but these two directions are the "grain" of the transformation, the natural axes along which it acts simply.
+
+To find eigenvalues, you solve the characteristic [polynomial](../../algebra/objects/polynomial.md) $\det(A - \lambda I) = 0$, where $A$ is the matrix of the linear map and $I$ is the identity matrix. This is a polynomial of degree $n$ (where $n$ is the [dimension](./dimension.md) of the space), so there are at most $n$ eigenvalues counted with multiplicity. The characteristic polynomial connects eigenvalues to the [determinant](../morphisms/determinant.md) — the determinant of $A$ is the product of all eigenvalues, and the trace (sum of diagonal entries) is their sum.
+
+The concept traces to Joseph-Louis Lagrange's analysis of rigid body rotation in *Mécanique Analytique* (1788) and Augustin-Louis Cauchy's work on quadratic forms in the 1820s. The term "Eigenwert" (own value, characteristic value) was coined by David Hilbert in *Grundzüge einer allgemeinen Theorie der linearen Integralgleichungen* (1904–1910), where he studied the spectral properties of integral operators. John William Strutt, 3rd Baron Rayleigh, connected eigenvalues to physical vibrating systems in *The Theory of Sound* (1877) — the natural frequencies of a vibrating string or drumhead are eigenvalues of a differential operator.
+
+This physical connection is why eigenvalues matter far beyond pure mathematics. In quantum mechanics, the observable values of a physical quantity are eigenvalues of the corresponding operator. In data science, principal component analysis finds the eigenvectors of a covariance matrix to identify the directions of greatest variation. In engineering, the eigenvalues of a system matrix determine whether the system is stable, oscillatory, or divergent. The eigenvectors are the natural coordinates of the system, and the eigenvalues tell you what happens along each one.

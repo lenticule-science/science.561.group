@@ -1,0 +1,72 @@
+:PROPERTIES:
+:ID:       70da4a1e-b8f5-4e6d-b8b6-229ba2d72ae1
+:date-created: [2025-08-07 Thu]
+:ROAM_ALIASES: "emsenn's blog" "my blog" "emsenn's babbles" "emsean babbles"
+:public:   true
+:instantiates: [[id:9c606291-7654-428d-8f3f-13f97cbcb41f][catalog]]
+:field:    [[id:f0c26b81-a602-4ce3-8e2e-43919e4c58b0][emsean thought]]
+:date-modified: [2025-09-20 Sat 10:52]
+:END:
+#+title: My Blog
+#+date: {{{property(date-created)}}}
+
+This is my [[id:31c422d2-632c-4fba-b79d-12cb387f1d19][blog]], which here stands for "babble catalog": a [[id:9c606291-7654-428d-8f3f-13f97cbcb41f][catalog]] of [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babbles]].
+
+This blog may be considered one of the most informal, yet still public, parts of [[id:f0c26b81-a602-4ce3-8e2e-43919e4c58b0][emsean thought]].
+
+* My Babbles
+#+begin_src elisp :results value raw :exports results :eval yes
+  (defun get-node-properties (node)
+    (nth 9 node))
+  (defun get-node-property (node prop)
+    (cdr (assoc prop (get-node-properties node))))
+  (let* ((nodes
+          (org-roam-db-query
+           [:select [*]
+            :from nodes
+            :where (and
+                    (like properties '"%instantiates%[[id:d542e8d2-3512-47a0-adbb-4a393e161ecb%")
+	  (like properties '"%author%[[id:40cbaad9-af3c-4573-b356-ae116687e483%")
+                    (like properties '"%public%true%"))]))
+         (sorted-nodes
+          (sort nodes
+                (lambda (a b)
+	(let ((date-a (get-node-property a "DATE-CREATED"))
+	      (date-b (get-node-property b "DATE-CREATED")))
+	  (string-lessp date-a date-b))))))
+    (mapconcat
+     (lambda (node)
+       (format "%s" node)
+       (format "- %s :: [[id:%s][%s]]" (get-node-property node "DATE-CREATED") (car node) (nth 8 node)))
+     (reverse sorted-nodes)
+     "\n"))
+#+end_src
+
+#+RESULTS:
+- [2025-09-29 Mon 22:40] :: [[id:dbe2a349-8d7c-481d-908e-11cb39ef6f89][Poking at stats for my research notes]]
+- [2025-09-29 Mon 17:40] :: [[id:f1f98b9a-0fc0-4710-8ece-628dcb415b4a][Conjecturing affect and libidinal economies as complementary postliberal complexes]]
+- [2025-09-28 Sun 23:56] :: [[id:38b3c08e-8846-486f-9d46-69f307c89f12][On the Fediverse as an industrial complex producing subcultural commons]]
+- [2025-09-28 Sun 08:26] :: [[id:ea911986-e71d-4a65-8795-75777d0b29c5][On American translation of post- to anti-]]
+- [2025-09-27 Sat 00:16] :: [[id:c81f19bc-7142-47f6-a593-1cf9a8c84e98][Installing Guix on my Omnibook X]]
+- [2025-09-26 Fri 22:05] :: [[id:cf67c091-6332-4fd9-ae40-678d1b5411bb][Submission to Cindy Milstein zine, message to liberals]]
+- [2025-09-21 Sun 07:21] :: [[id:7b5581e4-9d06-4f64-8a99-8fde57fb9514][On epistemics, economies, and didactics of encyclopedia, wiki, and digital gardens.]]
+- [2025-08-28 Thu 08:53] :: [[id:9cbbeef0-0b01-4d86-900b-5c6c7623fbf7][Adding Org-cite to GnoponEmacs]]
+- [2025-08-21 Thu 13:59] :: [[id:32d5e9f3-d254-4dd3-beed-18563f87d50c][Relaunching emsenn.net]]
+- [2025-07-25 Fri 07:51] :: [[id:17d85aa2-9bf9-4fec-9fb6-2a6ed68ffd5a][Reflecting on personal experiences with solidarity in North Carolina]]
+- [2025-07-24 Thu 22:23] :: [[id:fe8bb93f-adbd-4336-9d55-d01c6591e407][Remarking that Dwarf Fortress' modding uses Lua]]
+- [2025-07-24 Thu 20:00] :: [[id:1214df7e-adca-4828-84ba-1892f02e765c][On encoding relational dynamics in GnoPonEmacs]]
+- [2025-07-24 Thu 10:26] :: [[id:76d3a0f2-b113-45eb-bc30-41d444e2c7c1][Thinking how to handle multiple cosmos in GnoponEmacs]]
+- [2025-07-23 Wed 21:35] :: [[id:adb03cf1-9c42-43f1-bcb3-88d572adf713][Thinking on privacy within my research notes]]
+- [2025-07-23 Wed 16:44] :: [[id:e66f4700-dcf0-4e33-bb59-4846bce261b8][Planning my GTAO Empire]]
+- [2025-07-22 Tue 11:15] :: [[id:0a5af0a3-fecb-4748-b333-edb37bb008d7][Attempting to install TAB]]
+- [2025-07-22 Tue 09:14] :: [[id:d113b3e7-ae97-467a-b1e9-41660c818117][Making progress with GnoponEmacs]]
+- [2025-07-21 Mon 09:59] :: [[id:e431c5ec-09ef-4c8f-a7e4-94931adbc195][Recording my media consumption in GnoponEmacs]]
+- [2025-07-21 Mon 09:40] :: [[id:cac9b8ac-1545-43c9-8458-593ca46ee602][Thinking about organizing my research notes by domain]]
+- [2025-07-20 Sun 23:08] :: [[id:44630da5-814e-43e7-b236-31678b3e4b22][On connecting Teraum to the Okagan paracosm]]
+- [2025-07-20 Sun 17:17] :: [[id:dc582064-65be-4eba-a4b4-f42c3c91cbf3][Testing GnoponEmacs' babble capture template]]
+- [2025-07-20 Sun 09:48] :: [[id:43c20cee-7e04-4037-8d43-d16c7b227ea2][On Fediverse narrating contradictions into aesthetic cruel optimism]]
+- [2025-07-19 Sat 10:08] :: [[id:754c4d33-ae12-4ee3-a6ef-cb81b8e0bf7c][Complaining about nearby construction noise]]
+- [2025-07-18 Fri 10:42] :: [[id:a4a762ee-0601-462e-8543-2b5c4264a983][Considering Luanti instead of Minecraft]]
+- [2025-07-18 Fri 09:33] :: [[id:672ab7a1-d632-48be-b18d-08a54472bb8c][Returning to Emacs with GnoponEmacs]]
+- [2025-07-12 Sat 11:35] :: [[id:1a218fef-004e-45c3-98fc-135b33a64b21][Complaining about wildfire smoke]]
+- [2023-12-09 Sat 16:20] :: [[id:b2499858-b4a4-4ba3-8e8d-642e0ac43bbc][On hospicing humanity as a mechanism of total liberation]]

@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       0fe531f1-1e47-4653-8fca-4c36d872b48f
+:public:   true
+:instantiates: [[id:4a53867b-afa3-437b-b979-385597e0e616][process]]
+:field:    [[id:09fd88b6-87be-4af3-835f-daf4514553ff][communication]]
+:END:
+#+title: self-identification
+#+date: [2025-09-03 Wed 21:31]
+#+index: communication!autocommunication!self-identification

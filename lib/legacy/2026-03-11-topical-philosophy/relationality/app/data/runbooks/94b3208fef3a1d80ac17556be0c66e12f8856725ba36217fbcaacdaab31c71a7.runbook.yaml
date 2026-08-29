@@ -1,0 +1,23 @@
+id: 94b3208fef3a1d80ac17556be0c66e12f8856725ba36217fbcaacdaab31c71a7
+name: mixing
+inputs:
+  - role: profile_topos
+    kind: profile_topos
+  - role: fixed_kernel
+    kind: fixed_kernel
+outputs:
+  - role: mixing_evidence
+    kind: mixing_evidence
+steps:
+  - name: mixing
+    operator: mixing
+    step_index: 0
+    inputs:
+      - role: profile_topos
+        kind: profile_topos
+      - role: fixed_kernel
+        kind: fixed_kernel
+    outputs:
+      - role: mixing_evidence
+        kind: mixing_evidence
+

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       c10f50a0-08bd-419b-a334-2c2f6e925dc4
+:END:
+#+title: marking
+#+date: [2025-08-29 Fri 16:55]
+

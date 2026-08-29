@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       e0b0eb19-59ef-46a2-82ad-8112a68529cd
+:END:
+#+title: theorem
+#+date: [2025-10-11 Sat 16:15]
+

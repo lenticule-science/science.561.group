@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       d7dd4232-8aae-43e5-bc8c-ca4e4c9412f7
+:END:
+#+title: proleptic Gregorian calendar
+#+date: [2025-10-04 Sat 23:52]
+

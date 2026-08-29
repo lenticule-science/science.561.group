@@ -1,0 +1,25 @@
+#+title: edaphologiculture
+#+begin_head
+#+ghe_schema: term-0.1.3
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-26 Sat 12:11]
+#+roam_tags: term
+#+end_head
+
+#+name: definition
+*/[[file:edaphologiculture.org][Edaphologiculture]]/* is the engineering of [[file:soil.org][soil]] to support [[file:life.org][life]].
+#+toc: headlines 2
+* Introduction
+* edaphologiculture
+* Supplements
+** Record history
+   :PROPERTIES:
+   :CUSTOM_ID: record-history
+   :END:
+   :LOGBOOK:
+   - Note taken on [2020-12-26 Sat 12:11] \\
+      Created from [[file:~/org/s/p/cottenboro_gaz.org][definition]]
+
+      
+   :END:

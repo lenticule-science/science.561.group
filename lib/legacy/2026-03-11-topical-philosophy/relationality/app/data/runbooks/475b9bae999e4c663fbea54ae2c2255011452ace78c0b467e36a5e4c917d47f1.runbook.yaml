@@ -1,0 +1,18 @@
+name: judgment_equivalence_check
+inputs:
+- role: judgment_equivalence
+  kind: judgment_equivalence
+outputs:
+- role: judgment_equivalence_evidence
+  kind: judgment_equivalence_evidence
+steps:
+- name: judgment_equivalence_check
+  operator: judgment_equivalence_check
+  step_index: 0
+  inputs:
+  - role: judgment_equivalence
+    kind: judgment_equivalence
+  outputs:
+  - role: judgment_equivalence_evidence
+    kind: judgment_equivalence_evidence
+id: 475b9bae999e4c663fbea54ae2c2255011452ace78c0b467e36a5e4c917d47f1

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       130901da-561e-4823-a0a2-44fa95e54c1f
+:END:
+#+title: The Outer Worlds
+#+date: [2025-07-21 Mon]
+#+author: emsenn
+
+The Outer Worlds is a [[id:8178d7b5-4c78-4780-8718-8c15e9bb87f0][video game]].

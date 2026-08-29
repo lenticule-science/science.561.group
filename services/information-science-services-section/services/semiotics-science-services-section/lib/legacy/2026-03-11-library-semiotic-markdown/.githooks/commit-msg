@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+msg_file="${1:-}"
+if [[ -z "${msg_file}" || ! -f "${msg_file}" ]]; then
+  exit 0
+fi
+
+if ! grep -qE "[^[:space:]]" "${msg_file}"; then
+  printf '%s\n' "Empty commit message is not allowed." >&2
+  exit 1
+fi
+
+subject="$(head -n 1 "${msg_file}" | tr -d '\r')"
+
+if [[ "${subject}" =~ ^Merge[[:space:]] ]] || [[ "${subject}" =~ ^Revert[[:space:]] ]] || [[ "${subject}" =~ ^(fixup!|squash!)[[:space:]] ]]; then
+  exit 0
+fi
+
+if ! printf '%s' "${subject}" | grep -qE '^(feat|fix|docs|style|refactor|perf|test|build|ci|chore|revert)(\([a-z0-9._/-]+\))?(!)?:[[:space:]].+'; then
+  printf '%s\n' "Commit message must follow Conventional Commits." >&2
+  printf '%s\n' "Expected: type(scope)!: subject" >&2
+  printf '%s\n' "Allowed types: feat fix docs style refactor perf test build ci chore revert" >&2
+  exit 1
+fi
+
+type="$(printf '%s' "${subject}" | sed -E 's/^([a-z]+).*/\1/')"
+
+# Enforce changelog updates for user-visible changes when a changelog exists.
+if [[ -f "CHANGELOG.md" ]] && [[ "${type}" =~ ^(feat|fix|perf)$ ]]; then
+  if grep -qiE "skip changelog|changelog: *skip" "${msg_file}"; then
+    exit 0
+  fi
+  if ! git diff --cached --name-only --diff-filter=ACMR | grep -qx "CHANGELOG.md"; then
+    printf '%s\n' "This commit looks user-visible (${type}) but does not update CHANGELOG.md." >&2
+    printf '%s\n' "Update CHANGELOG.md (Keep a Changelog), or add '[skip changelog]' to the commit message." >&2
+    exit 1
+  fi
+fi
+

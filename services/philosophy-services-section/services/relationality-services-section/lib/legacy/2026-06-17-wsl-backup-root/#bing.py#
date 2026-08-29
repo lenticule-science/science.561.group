@@ -1,0 +1,38 @@
+#!/usr/bin/env python3
+"""
+ritopos_primary_ribbon_field.py
+Render the complete Relational ∞-Topos as a ribbon field:
+- background: all id→id relations (thin, translucent blue)
+- overlay: primary :node-relations: (thick, red, curved, stronger "gravity")
+"""
+
+import re, sys, numpy as np, matplotlib.pyplot as plt
+import networkx as nx
+from matplotlib.patches import FancyArrowPatch
+
+# --- utility ---------------------------------------------------------------
+def log(msg): print(f"\033[1;34m{msg}\033[0m")
+
+def parse_edges(text):
+    """Return all (src_id, tgt_id) pairs found anywhere."""
+    pairs = re.findall(r"id:([0-9a-f-]{6,}).*?id:([0-9a-f-]{6,})", text, flags=re.I)
+    return [(a,b) for a,b in pairs if a!=b]
+
+
+def parse_primary_relations(text):
+    """
+    Extract :node-relations: dotted pairs even when they are all on one line.
+    Works for patterns like:
+    :node-relations: (([[id:SRC][SRC_LABEL]] . [[id:TGT][TGT_LABEL]]) ...)
+    Returns list of (src_id, src_label, tgt_id, tgt_label).
+    """
+    matches = []
+    # grab everything from :node-relations: up to the :END: that follows
+    for block in re.findall(r":node-relations:\s*(.+?):END:", text, flags=re.S|re.I):
+        pattern = (
+            r"\[\[id:([0-9a-f-]+)\]\]\[([^\]]+)\]\]"  # source
+            r"\s*\.\s*"
+            r"\[\[id:([0-9a-f-]+)\]\]\[([^\]]+)\]\]"  # target
+        )
+        matches.extend(re.findall(pattern, block, flags=re.I))
+    return matches

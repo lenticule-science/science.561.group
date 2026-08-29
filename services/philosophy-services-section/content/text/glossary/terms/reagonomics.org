@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       a97d8132-fb42-4135-9566-f7b1ed304587
+:END:
+#+title: Reagonomics
+#+date: [2025-09-05 Fri 22:12]
+

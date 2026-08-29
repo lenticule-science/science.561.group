@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       eca9d892-9471-47bb-a3b7-d0d8b6957ddc
+:END:
+#+title: Mathematics Subject Classification
+#+date: [2025-10-19 Sun 20:16]
+

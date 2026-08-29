@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       248a20b9-8f25-40bb-a274-2db8fb5545d9
+:END:
+#+title: text post
+#+date: [2025-09-19 Fri 20:20]
+
+* [[id:ed3a99f2-07af-4424-8cfa-4d1ce69d1b0e][code]]
+
+** [[id:686d4e72-eb77-4ac7-b37a-2c7a7e0c0dc6][Org-roam capture template]]
+
+#+begin_src elisp :tangle ./src/gpe/org-roam-capture-templates/tp.el
+  ("tp" "text post")
+#+end_src

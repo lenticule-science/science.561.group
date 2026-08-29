@@ -1,0 +1,20 @@
+#+title: soil
+#+begin_head
+#+ghe_schema: reference-0.1.2
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-23 Wed 22:55]
+#+roam_tags: term
+#+end_head
+
+#+name: definition
+*/Soil/* is a mix of hummus and grit.
+#toc: headlines 2
+* Intrododuction
+* soil
+* Supplements
+** Record history
+   :LOGBOOK:
+   - Note taken on [2020-12-23 Wed 22:55] \\
+     Created
+   :END:

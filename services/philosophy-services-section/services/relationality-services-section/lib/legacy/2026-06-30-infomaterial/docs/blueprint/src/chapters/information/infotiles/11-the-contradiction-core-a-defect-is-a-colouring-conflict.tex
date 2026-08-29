@@ -1,0 +1,65 @@
+\section{The contradiction core: a defect is a colouring conflict}
+
+This subgraph identifies two fibers over the same claim-site: bilattice
+inconsistency, carried by held $\top$ (\texttt{Charge.isInconsistency}), and
+graph conflict, carried by a monochromatic edge.  A proper colouring is the
+consistent regime; a clash lands in $\top$ by knowledge-join.  The first three
+nodes are green in the \texttt{WeaveDraft} carrier.
+
+\begin{theorem}[A mis-crossing is inconsistent]\label{thm:miscrossing-inconsistency}\lean{Infomaterial.Persistence.Aperiodic.miscrossing_isInconsistency}\leanok\uses{thm:miscrossing-top, thm:defect-is-inconsistency-sheaf}
+A mis-crossing's charge $\top_k$ satisfies \texttt{Charge.isInconsistency}: it is a
+\emph{monochromatic edge} of the crossing graph --- the knowledge-join $\vee_k$ of the two
+clashing over-demands lands on $\top$ --- hence a section of the inconsistency sheaf, the
+conflict the FOUR holds without explosion. Proved (\texttt{miscrossing\_isInconsistency}).
+\end{theorem}
+
+\begin{theorem}[A defect-free crossing is consistent]\label{thm:defectfree-consistent}\lean{Infomaterial.Persistence.Aperiodic.defectFree_consistent}\leanok\uses{thm:charge-coloured-sofic}
+Exactly one strand over gives a definite truth value with \texttt{isInconsistency} false: a
+sound fabric is the \emph{consistent regime}, a proper FOUR-colouring of its crossing graph
+whose inconsistency sheaf vanishes (\texttt{section\_zero\_of\_consistent}). Proved
+(\texttt{defectFree\_consistent}).
+\end{theorem}
+
+\begin{theorem}[The mirror is the bilattice gauge]\label{thm:mirror-is-gauge}\lean{Infomaterial.Persistence.Aperiodic.overUnder_swap_fixes_defect}\leanok\uses{thm:overunder-negate, thm:miscrossing-inconsistency}
+The over/under flip (Belnap negation $\sim$) leaves the contradiction content fixed
+(\texttt{Charge.isInconsistency\_negate}), so the defect locus is gauge-invariant --- the
+mirror's fixed $\top$-seam. This is the textile face of \texttt{gauge\_fixes\_inconsistency}:
+the recto/verso mirror swaps $t \leftrightarrow f$ but never creates or erases a $\top$.
+Proved (\texttt{overUnder\_swap\_fixes\_defect}).
+\end{theorem}
+
+\begin{theorem}[A draft's defect census is $H^0$ of the inconsistency sheaf]\label{thm:defect-count-is-h0top}\lean{Infomaterial.InconSheaf.h0top_is_inconsistency_count}\leanok\uses{thm:miscrossing-inconsistency, thm:unweaving-is-landauer}
+The number of mis-crossings in a draft is
+the degree-zero inconsistency cohomology $H^0_{\top}$ --- \texttt{InconSheaf.h0top\_is\_inconsistency\_count}
+counts exactly the $\top$-valued cells --- so a textile defect census is a cohomological
+invariant of the cloth, not a surface artefact. A defect-free fabric has $H^0_{\top}=0$; the
+count moves only by topology-changing surgery (dropped stitch, mis-cross), tying the defect
+census to the un-weaving Landauer cost (\cref{thm:unweaving-is-landauer}).
+\end{theorem}
+
+\begin{theorem}[A defect-free draft is consistent (the truth-only regime)]\label{thm:proper-colouring-is-defectfree}\lean{Infomaterial.Persistence.Aperiodic.defectFree_consistent}\leanok\uses{thm:defectfree-consistent, thm:charge-coloured-sofic, thm:four-colour-palette-is-four}
+A defect-free charge-coloured draft assigns every crossing a definite (non-$\top$) charge --- the
+consistent regime, its inconsistency sheaf zero (\texttt{defectFree\_consistent}). Weaving is
+colouring and the over/under alphabet is the 4-colour palette. The residue is only the
+\emph{proper}-colouring strengthening --- a graph homomorphism into the complete graph on the
+charges (\texttt{Combinatorics.fourColouring} / \texttt{properColoring\_iff\_hom}) --- which needs
+the crossing-adjacency graph as a carrier.
+\end{theorem}
+
+\begin{theorem}[A chromatic obstruction is a defect that cannot be combed away]\label{thm:chromatic-obstruction-structural-defect}\notready\uses{thm:proper-colouring-is-defectfree, thm:odd-cycle-obstructs-two-colouring, thm:k4-requires-four-charges, thm:mobius-band-holonomy}
+\emph{(Open frontier --- stated, not formalized.)} When the crossing graph carries an odd
+closed walk --- chromatic number $\ge 3$, \texttt{not\_bipartite\_of\_odd\_closed\_walk} --- no
+proper FOUR-colouring avoids a $\top$: the fabric is forced to hold a structural defect that no
+local repair removes, the $\top$-seam of \cref{thm:mobius-band-holonomy}. The colouring
+obstruction \emph{is} the irremovable textile defect; the chromatic number lower-bounds the
+held contradiction a draft must carry.
+\end{theorem}
+
+\begin{theorem}[Recto, cloth, and $\top$-seam: the bilattice SES]\label{thm:recto-verso-ses}\lean{Infomaterial.InconSheaf.inconsistency_sheaf_is_cokernel}\leanok\uses{thm:mirror-is-gauge, thm:cloth-faces-negation-mirror}
+The bilattice short exact sequence
+$0 \to F^{(t)} \to F^{(k)} \to F^{(\top)} \to 0$ (\texttt{InconSheaf.inconsistency\_sheaf\_is\_cokernel}:
+the inconsistency sheaf is the cokernel) is the cloth's decomposition into its truth face
+(recto), its whole-cloth knowledge section, and its $\top$-seam (the defect cokernel). The
+negation mirror (\cref{thm:mirror-is-gauge}) exchanges the truth sheaf with its $f$-dual while
+fixing the cokernel --- recto and verso over one held seam.
+\end{theorem}

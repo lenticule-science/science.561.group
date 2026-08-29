@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       c18e4f56-75b8-49f6-8867-c8957283037f
+:END:
+#+title: music album
+#+date: [2025-07-21 Mon]
+#+author: emsenn

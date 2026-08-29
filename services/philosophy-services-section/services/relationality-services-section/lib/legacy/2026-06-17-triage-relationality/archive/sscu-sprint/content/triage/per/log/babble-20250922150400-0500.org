@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       38319f0a-515d-488e-9bbd-6de59a81ad0d
+:form:     [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]
+:END:
+#+title: Babble, [2025-09-22 Mon 15:04]
+#+date: [2025-09-22 Mon 15:04]
+#+author: emsenn
+
+I have nothing meaningful to say on it now, but sometimes I think about how I tend to do more [[id:cbeb602e-373e-479a-9a50-286633be900f][political analysis]] and [[id:dd86c998-b748-472b-ad0d-96025da1fcce][sociological analysis]] in the [[id:8bbb445f-087c-4f32-bb5b-7542de0a9e6c][morning]], and then do my [[id:858d7dea-f66e-4222-b91c-f00cc037c736][mathematics]] and [[id:cbe766e8-cc0f-461a-a1d1-552d72bbc2ea][theorizing]] at night.

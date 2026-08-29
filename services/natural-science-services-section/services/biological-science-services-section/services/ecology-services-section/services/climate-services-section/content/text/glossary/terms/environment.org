@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       5030c027-88ba-45a4-8ddb-a09af57b93c5
+:END:
+#+title: environment
+#+date: [2025-08-26 Tue 17:13]
+

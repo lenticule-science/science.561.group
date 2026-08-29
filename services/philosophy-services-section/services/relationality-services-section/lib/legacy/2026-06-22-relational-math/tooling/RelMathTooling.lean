@@ -1,0 +1,11 @@
+-- Import-root for the tooling sidecar.
+--
+-- This single module pulls in the ENTIRE RelMath library (RelMath.lean imports
+-- every module in dependency order). Its only purpose is to give workspace-level
+-- tools a root to load the whole environment from — in particular `checkdecls`,
+-- which imports the root package's lean_lib roots and then verifies that every
+-- declaration named in `../blueprint/lean_decls` actually exists.
+--
+-- It lives in the sidecar so RelMath's own lakefile stays dependency-pure: the
+-- arrow points tooling -> RelMath, never the reverse.
+import RelMath

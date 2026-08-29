@@ -1,0 +1,37 @@
+---
+title: Permission Operator
+role: operator
+inputs: []
+outputs: []
+transformation:
+- return
+- value
+proof_refs: []
+introduces: operator
+part-of: relational-computer
+computer-system-type: primitive
+---
+
+
+
+Recognises the actions/recognitions allowed under a norm regime.
+
+## Definition
+- Inputs: [Norm Regime](../structure/norm-regime.md) and a recognition.
+- Output: recognition collecting admissible refinements compatible with the
+  regime’s discipline/filter.
+- Behaviour: project the input onto the admissible region of the norm regime.
+
+## Invariants
+- Soundness: outputs are always compliant.
+- Maximality: yields the largest admissible recognition below or compatible
+  with the input.
+- Monotonicity: stronger regimes yield smaller permissions.
+
+## Proof
+- Uses: [Norm Regime](../structure/norm-regime.md) and
+  [Recognition Carrier](../structure/recognition.md).
+- Produces: [Recognition Carrier](../structure/recognition.md) element
+  denoting permission.
+- Shows that: permissions are expressible as projections in the recognition
+  lattice under the norm regime.

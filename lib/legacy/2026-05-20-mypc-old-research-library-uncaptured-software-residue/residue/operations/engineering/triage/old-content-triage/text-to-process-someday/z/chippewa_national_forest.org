@@ -1,0 +1,20 @@
+#+title: Chippewa National Forest
+#+begin_head
+#+ghe_schema: record-0.1.3
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-24 Thu 15:36]
+#+end_head
+
+#+name: definition
+The */Chippewa National Forest/* is located west of [[file:lake_superior.org][Lake Superior]].
+
+#toc: headlines 2
+* Intrododuction
+* Chippewa National Forest
+* Supplements
+** Record history
+   :LOGBOOK:
+   - Note taken on [2020-12-24 Thu 15:36] \\
+     Created
+   :END:

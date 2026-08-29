@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/system/library/operating-system/library/computer-operating-system/library/script/script.schema.json",
+  "title": "Script",
+  "description": "JSON Schema for a script instance: a POSIX executable regular-file realizing a $\\mathcal{P}$-morphism's body. Carries the path, interpreter, parameters shape (input), message shape (output), exit-code discipline, realization discipline, and the skill it realizes.",
+  "type": "object",
+  "required": ["has-path", "has-interpreter", "has-realization-discipline"],
+  "additionalProperties": true,
+  "properties": {
+    "has-path": {
+      "type": "string",
+      "description": "Repo-relative or absolute POSIX path to the script file."
+    },
+    "has-interpreter": {
+      "type": "string",
+      "description": "Interpreter slug — typically 'node' for .mjs ESM scripts in the 561 OS."
+    },
+    "has-parameters-shape": {
+      "type": "string",
+      "description": "Reference to the parameters shape the script consumes — either a kebab-case structure-slug or an https://561.group/...schema.json IRI resolving to a JSON Schema 2020-12 file. The morphism's domain.",
+      "anyOf": [
+        {"pattern": "^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$"},
+        {"pattern": "^https://561\\.group/library/.*\\.schema\\.json$"}
+      ]
+    },
+    "produces-message-shape": {
+      "type": "string",
+      "description": "Reference to the message shape the script produces — either a kebab-case structure-slug or an https://561.group/...schema.json IRI resolving to a JSON Schema 2020-12 file. The morphism's codomain.",
+      "anyOf": [
+        {"pattern": "^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$"},
+        {"pattern": "^https://561\\.group/library/.*\\.schema\\.json$"}
+      ]
+    },
+    "has-exit-code-discipline": {
+      "type": "string",
+      "description": "Description of what each exit code means."
+    },
+    "has-realization-discipline": {
+      "type": "string",
+      "enum": [
+        "pure-function-on-json",
+        "state-mutating-procedure",
+        "wire-sending",
+        "wire-receiving",
+        "runtime-service",
+        "hook-handler"
+      ],
+      "description": "The byte-level discipline this script realizes the morphism's body under. 'pure-function-on-json' is the realization the categorical theorem forces for $\\mathcal{P}$-morphisms whose action is fully data — default-exported pure function from Json(domain) to Json(codomain), no side effects. The other values name distinct realization classes whose by-side-effect content is essential (state-mutating-procedure mutates filesystem-resident records; wire-sending writes a message to a wire-protocol endpoint; wire-receiving reads one from such an endpoint; runtime-service is a long-running process maintaining state across invocations; hook-handler executes in a POSIX-process spawned by an external event source like a git hook or a Claude Code hook). Audit conformance is mechanical for 'pure-function-on-json' and best-effort for the rest."
+    },
+    "realizes-body-of": {
+      "type": "string",
+      "pattern": "^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$",
+      "description": "Skill slug whose body this script realizes."
+    }
+  }
+}

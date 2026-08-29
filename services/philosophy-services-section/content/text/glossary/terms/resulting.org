@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       455ea21f-b9e3-4299-a294-5709f8195e05
+:END:
+#+title: resulting
+#+date: [2025-08-29 Fri 11:11]
+

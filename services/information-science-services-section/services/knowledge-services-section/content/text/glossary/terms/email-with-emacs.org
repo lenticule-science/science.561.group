@@ -1,0 +1,15 @@
+#+SETUPFILE: ~/org/templates/setupfile0.org
+#+TITLE: Email with Emacs
+#+EXPORT_FILE_NAME: ../pub/email-with-emacs.org
+* Introduction
+In this file I'll write about my process for learning how to use Emacs
+for reading and sending email.
+#+INCLUDE: "./eli.org::#draft"
+#+INCLUDE: "./eli.org::#eli"
+#+INCLUDE: "./eli.org::#literate-programming"
+* Email with Emacs
+  :PROPERTIES:
+  :CUSTOM_ID: contents
+  :END:
+* Supplements
+#+INCLUDE: "./mit-license.org::#license"

@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       8cb0972b-2e1e-46df-9a41-459354448e14
+:form:     [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]
+:END:
+#+title: Babble, [2024-04-29 Mon 08:00]
+#+date: [2024-04-29 Mon 08:00]
+#+author: emsenn
+
+Spent most of the day [[id:6058a04d-2258-4ba7-80b7-26a5a4dd9d47][planning]] an [[id:0fba2b39-a9eb-4af8-b617-779fcf887e8f][itinerary]], mostly oriented toward [[id:b2ea87e8-71e1-4c95-b3d3-2ddfae363c07][Terran's diet]].
+
+Also, [[id:a6483689-bc33-48ff-aa2d-1a2ce165cd4b][discussed]] the upcoming [[id:11a38a46-0b44-4e7d-94b1-f29e63ee2ad8][National Stop the Bleed Day]] sale from [[id:91d0456e-23d5-4a97-9119-11b8e00bf23f][North American Rescue]].

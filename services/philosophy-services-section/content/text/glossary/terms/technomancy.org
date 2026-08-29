@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       f74fbf0e-ae8c-46d9-8fce-29609747e0cc
+:END:
+#+title: technomancy
+#+date: [2025-09-29 Mon 17:02]
+

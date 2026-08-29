@@ -1,0 +1,26 @@
+:PROPERTIES:
+:ID:       cf67c091-6332-4fd9-ae40-678d1b5411bb
+:form:     [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]
+:author:   [[id:40cbaad9-af3c-4573-b356-ae116687e483][emsenn]]
+:instantiates: [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]
+:public:   true
+:date-created: [2025-09-26 Fri 22:05]
+:END:
+#+title: Submission to Cindy Milstein zine, message to liberals
+#+date: [2025-09-26 Fri 22:05]
+#+author: emsenn
+
+I submitted the following to [[id:cee1cfab-60ef-421d-aabe-3fadda490b6e][Cindy Milstein]] for one of their [[id:fb179423-029a-4506-83c3-9bad6793e1ab][zines]].
+
+It's about [[id:5a898ac0-0046-4074-b0d5-ed6b60aac677][liberalism]] and [[id:1e80fcb8-eef6-4917-9344-b148c79a9fdc][anarchism]], but actually [[id:d1c28fc1-d29c-4f5a-ade2-412d2b2cc7f6][liberal feedback loops]] and [[id:5fd154b5-9358-438e-9b93-8f19590bbe97][imagination]].
+
+
+#+begin_quote
+Life in liberalism rehearses a loop about change: a crisis is named a “problem,” responsibility is delegated upward (to laws, elections, courts), and we live with the crisis. That loop never completes, and the harms it asks us to endure become the next crisis.
+
+Why does this keep happening? Because delegating responsibility delegates imagination. When imagination moves to institutions, our role becomes watching and arguing over what shape that imagination should take. The present turns into collateral: care is abandoned, and we learn, grumpily, that our best tool is patience and debate. But there are different ways to handle change. Imagine, yourself, your everyday relationships (neighbors, coworkers, ecology) as the space where change is living.
+
+Imagine your own ways to act that might make things better. And go do it.
+
+When you act directly in that space, even in small ways, you get immediate feedback: what helped, what didn't: how to do it better next time. In this anarchist way of living with change, the loop completes the circle, and each circle builds capacity and trust.
+#+end_quote

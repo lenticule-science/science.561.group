@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       63521327-43c5-4660-8a88-8c7619a77991
+:END:
+#+title: moment
+#+date: [2025-09-06 Sat 07:41]
+

@@ -1,0 +1,39 @@
+---
+title: "Graph theory"
+description: "The mathematics of vertices and edges. Graph theory studies discrete relational structures: undirected graphs encode symmetric relations, directed graphs encode asymmetric ones, and the rest of the theory is what these two structures support — paths, cycles, trees, DAGs, planarity, colouring, and the operators that move between them."
+component-of: math
+---
+
+# Graph theory
+
+Graph theory is the mathematics of vertices and edges — the formal language of discrete-object networks. Founded by Euler's 1736 analysis of the [seven bridges of Königsberg](examples/seven-bridges-of-konigsberg.md), it is the substrate underneath [partial orders](../order/objects/partial-order.md), [categories](../categories/theories/ordinary-categories/objects/category.md), state machines, and [dependency systems](objects/dag.md). This directory carries graph theory as a working library, not a textbook: a disciplined population of typed notes that earns the theory's load-bearing claim by being explicitly cited from the corpus's predication-substrate spec for the typed-DAG `class:` relation.
+
+## Position relative to math
+
+Graph theory sits *under* [order](../order/) and [categories](../categories/) — every poset and every category is, structurally, a graph with extra equations — and *alongside* [topology](../topology/) and [algebra](../algebra/) as a peer math theory. It supplies discrete combinatorial objects the rest of mathematics builds on: a partial order is a transitive acyclic digraph; a small category is a directed graph closed under composition; a state machine is a directed graph with labelled transitions; a [predication fibration](../categories/theories/predication-categories/objects/predication-fibration.md) reindexes along a directed graph of predicate generators.
+
+## Layout
+
+- `concepts/` — the *roles* graph theory uses: [vertex](concepts/vertex.md), [edge](concepts/edge.md), [incidence](concepts/incidence.md), [adjacency](concepts/adjacency.md), [path](concepts/path.md), [cycle](concepts/cycle.md), [connectivity](concepts/connectivity.md), [degree](concepts/degree.md), [traversal](concepts/traversal.md), [acyclicity](concepts/acyclicity.md), [reachability](concepts/reachability.md), [bipartition](concepts/bipartition.md).
+- `objects/` — the *structures* the theory commits to: [graph](objects/graph.md), [directed-graph](objects/directed-graph.md), [simple-graph](objects/simple-graph.md), [multigraph](objects/multigraph.md), [weighted-graph](objects/weighted-graph.md), [labelled-graph](objects/labelled-graph.md), [tree](objects/tree.md), [forest](objects/forest.md), [bipartite-graph](objects/bipartite-graph.md), [dag](objects/dag.md), [quiver](objects/quiver.md), [subgraph](objects/subgraph.md), [complete-graph](objects/complete-graph.md), [planar-graph](objects/planar-graph.md).
+- `morphisms/` — the *operators*: [graph-homomorphism](morphisms/graph-homomorphism.md), [graph-isomorphism](morphisms/graph-isomorphism.md), [subgraph-inclusion](morphisms/subgraph-inclusion.md), [quotient-graph](morphisms/quotient-graph.md), [line-graph](morphisms/line-graph.md), [transitive-closure](morphisms/transitive-closure.md), [reverse-orientation](morphisms/reverse-orientation.md), [topological-sort](morphisms/topological-sort.md).
+- `theorems/` — the *claims*, each with honest `status:`: [handshake-lemma](theorems/handshake-lemma.md) (proved), [eulerian-circuit-criterion](theorems/eulerian-circuit-criterion.md) (proved), [tree-equivalences](theorems/tree-equivalences.md) (proved), [dag-topological-sort](theorems/dag-topological-sort.md) (proved), [bipartite-iff-no-odd-cycle](theorems/bipartite-iff-no-odd-cycle.md) (proved), [dependency-soundness-iff-dag](theorems/dependency-soundness-iff-dag.md) (proved), [four-colour](theorems/four-colour.md) (sketch — proof deferred to citation), [kuratowski](theorems/kuratowski.md) (sketch — proof deferred to citation).
+- `questions/` — typed open work: [weighted-graph-generality](questions/weighted-graph-generality.md), [quiver-vs-digraph](questions/quiver-vs-digraph.md), [fars-dependency-graph-binding](questions/fars-dependency-graph-binding.md), [multigraph-first-class](questions/multigraph-first-class.md), [lean-binding](questions/lean-binding.md).
+- `narratives/` — ordering / rhetorical: [from-konigsberg-to-networks](narratives/from-konigsberg-to-networks.md), [graphs-underneath-categories-and-orders](narratives/graphs-underneath-categories-and-orders.md), [directed-graphs-and-the-predication-substrate](narratives/directed-graphs-and-the-predication-substrate.md).
+- `examples/` — concrete instances: [seven-bridges-of-konigsberg](examples/seven-bridges-of-konigsberg.md), [petersen-graph](examples/petersen-graph.md), [complete-graph-k5](examples/complete-graph-k5.md), [dependency-graph-of-this-corpus](examples/dependency-graph-of-this-corpus.md), [state-machine-as-labelled-digraph](examples/state-machine-as-labelled-digraph.md), [partial-order-as-transitive-acyclic-digraph](examples/partial-order-as-transitive-acyclic-digraph.md).
+- `references/` — primary sources: [Diestel 2017](references/diestel2017.md), [Bondy & Murty 2008](references/bondy-murty2008.md), [Bollobás 1998](references/bollobas1998.md), [Harary 1969](references/harary1969.md), [Tutte 2001](references/tutte2001.md), [Euler 1736](references/euler1736.md), [Appel & Haken 1977](references/appel-haken1977.md), [Robertson–Sanders–Seymour–Thomas 1997](references/robertson-sanders-seymour-thomas1997.md), [Kuratowski 1930](references/kuratowski1930.md).
+
+## Load-bearing role
+
+Graph theory is cited explicitly by the predicated-markdown-vault-knowledge-system's [frontmatter-relations spec](../../../../../science/theories/information/theories/knowledge-systems/theories/markdown-vault-knowledge-system/theories/predicated-markdown-vault-knowledge-system/specifications/frontmatter-relations.md), whose typed-DAG `class:` relation rests on the corpus being a [DAG](objects/dag.md) under `depends-on:`, and by the [predication-fibration](../categories/theories/predication-categories/objects/predication-fibration.md) object, whose four-generator reindexing acts along a [directed graph](objects/directed-graph.md) of predicate morphisms. The [dependency-soundness-iff-dag](theorems/dependency-soundness-iff-dag.md) theorem makes the load-bearing claim explicit: a `depends-on:` set produces a sound topological reading order iff its underlying graph is a DAG. The [partial-order](../order/objects/partial-order.md) object now carries an explicit `depends-on: [directed-graph]` edge, replacing the prior silent coupling.
+
+## Deferred sub-areas
+
+The following sub-areas of graph theory are *named-as-deferred*: they are recognized as part of the textbook external theory but are not written here, and SHOULD become child theories under `graph-theory/theories/` when the corpus needs them.
+
+- **Algorithmic graph theory** — BFS, DFS, shortest paths, max-flow, matching algorithms. Belongs under `engineering/theories/tech/theories/computing/` or a dedicated `algorithms` theory; cited via `see-also:` here, not authored.
+- **Spectral graph theory** — eigenvalues of adjacency and Laplacian matrices, expander graphs.
+- **Random graphs** — Erdős–Rényi, configuration models, threshold phenomena.
+- **Extremal graph theory** — Turán-type results, Ramsey theory.
+- **Hypergraphs** — graphs with edges of arbitrary arity. Distinct enough from ordinary graphs to merit a separate theory.
+- **Lean formalisation** — graph theory has live mathlib coverage; five proved theorems in this directory now carry initial `lean:` frontmatter bindings against mathlib's `SimpleGraph` and `Quiver` namespaces. Verification against a pinned mathlib commit, plus the remaining bindings, is tracked in [questions/lean-binding](questions/lean-binding.md).

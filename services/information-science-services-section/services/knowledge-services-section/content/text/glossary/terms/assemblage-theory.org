@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       be40436f-58a9-4758-8ca4-d24b9da320f7
+:END:
+#+title: assemblage theory
+#+date: [2025-09-19 Fri 22:33]
+

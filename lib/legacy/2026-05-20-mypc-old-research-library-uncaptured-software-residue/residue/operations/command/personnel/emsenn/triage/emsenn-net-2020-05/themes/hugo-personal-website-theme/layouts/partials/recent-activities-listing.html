@@ -1,0 +1,25 @@
+{{ $scratch := newScratch }}
+    {{ with .Site.Data.personalData.activities }}
+      <h2>My Recent Activites</h2>
+      <ul>
+        {{ range $date, $report := . }}
+          {{ $scratch.Add "activityDates" (slice $date) }}
+        {{ end }}
+        {{ range ($scratch.Get "activityDates") }}
+            <li>
+              {{ (printf "**%s**" (dateFormat "January 2, 2006" .)) | markdownify -}}
+              {{- with (index $.Site.Data.personalData.activities .) -}}
+                {{- if (eq (len .) 1) -}}
+                  {{- (printf ": %s" (markdownify (index . 0)) | safeHTML) -}}
+                {{- else -}}
+                  <ul>
+                    {{ range . }}
+                      <li>{{ . | safeHTML | markdownify }}</li>
+                    {{ end }}
+                  </ul>
+                {{ end }}
+              {{ end }}
+            </li>
+        {{ end }}
+      </ul>
+    {{ end }}

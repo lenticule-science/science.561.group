@@ -1,0 +1,29 @@
+---
+title: "Induction"
+aliases:
+  - "induction"
+  - "mathematical induction"
+  - "proof by induction"
+date-created: 2025-12-26
+introduces: definition
+tags: []
+part-of:
+  - "Peano arithmetic"
+requires:
+  - ./natural-numbers.md
+  - ./zero.md
+  - ./successor.md
+  - ./peano-axioms.md
+defines:
+  - "Induction"
+  - "mathematical induction"
+  - "proof by induction"
+type: term
+term-kind: definition
+---
+
+Mathematical induction is a proof principle for [natural numbers](./natural-numbers.md): if a property P holds for [zero](./zero.md) (the base case) and holding for n implies holding for the [successor](./successor.md) S(n) (the inductive step), then P holds for all natural numbers. Induction is the fifth of the [Peano axioms](./peano-axioms.md) and is what ensures that the natural numbers contain nothing beyond what zero and successor generate.
+
+Strong induction is a variant where the inductive step assumes P holds for all numbers less than n, not just for the predecessor. Strong induction and ordinary induction are equivalent over the natural numbers — either can prove whatever the other can. Structural induction generalizes the principle to any inductively defined structure (lists, trees, formulas): prove the property for base cases and show it is preserved by each constructor.
+
+Induction is dual to [recursion](./recursion.md): induction proves that a property holds for all elements, while recursion defines a [function](./function.md) on all elements. Both work by specifying behavior at the base case and at the successor step, and both depend on the well-foundedness of the natural numbers — the fact that every descending chain reaches zero in finitely many steps.

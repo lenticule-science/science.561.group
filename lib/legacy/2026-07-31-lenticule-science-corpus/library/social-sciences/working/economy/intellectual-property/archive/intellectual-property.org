@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       b717709d-14d2-439d-acfe-8b8d93f8d33c
+:NODE-RELATIONS: (([[id:dc11994b-719e-4140-9abb-78765aa3f779][property]] . [[id:fd6ecbed-9bdf-4570-b4b2-5ff7744c0a96][concept]]) ([[id:d888a007-edb6-4a23-bb07-59c34ecdd4c7][context]] . [[id:d3d19fbe-9269-49c1-95cd-4983d11021f8][economics]]) ([[id:d888a007-edb6-4a23-bb07-59c34ecdd4c7][context]] . [[id:ef1c8528-d850-4bf9-9f06-539b09962c54][intellectualism]]))
+:END:
+#+title: intellectual property
+#+date: [2025-09-06 Sat 09:44]
+

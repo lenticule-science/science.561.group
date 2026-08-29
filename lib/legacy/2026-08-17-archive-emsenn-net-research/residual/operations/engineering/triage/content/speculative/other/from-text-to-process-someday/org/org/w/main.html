@@ -1,0 +1,2136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2021-02-05 Fri 22:18 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>emsenn's worlds</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="emsenn" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">emsenn's worlds</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgfb21ab5">Market moves</a>
+<ul>
+<li><a href="#org5410714">2021</a>
+<ul>
+<li><a href="#orge9ec6e6">2021-02 February</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org638de2e">Accounts</a></li>
+<li><a href="#orgfb0aa1d">Journals</a>
+<ul>
+<li><a href="#org4d6798f">2021</a>
+<ul>
+<li><a href="#org74e49bc">2021-01 January</a></li>
+<li><a href="#orga556861">2021-02 February</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgd9e898b">Prices</a>
+<ul>
+<li><a href="#org73f5714">Cryptocurrencies</a>
+<ul>
+<li><a href="#orgd1487d8">BTC</a></li>
+<li><a href="#orgd5ae6dc">ETH</a></li>
+</ul>
+</li>
+<li><a href="#org0e56209">NYSE</a>
+<ul>
+<li><a href="#org0afd9fb">AMC</a></li>
+<li><a href="#orgff81e87">ARKG</a></li>
+<li><a href="#org50cecf4">CNBS</a></li>
+<li><a href="#org7277ac1">EWW</a></li>
+<li><a href="#org416be22">GME</a></li>
+<li><a href="#orgad53095">ICLN</a></li>
+<li><a href="#org4bdee97">IFRA</a></li>
+<li><a href="#org2192946">KBE</a></li>
+<li><a href="#org097a4dc">SIMO</a></li>
+<li><a href="#orgcdf4c9e">SPY</a></li>
+<li><a href="#org4b39602">VCLO</a></li>
+<li><a href="#orgaaa7f89">XLV</a></li>
+<li><a href="#org6d26d36">YOLO</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org288acee">Books</a>
+<ul>
+<li><a href="#orgc5052d9">Main</a></li>
+</ul>
+</li>
+<li><a href="#org83f4536">Reports</a></li>
+<li><a href="#org515a063">Work</a>
+<ul>
+<li><a href="#orgc386775">Personal</a>
+<ul>
+<li><a href="#org7fba7f1">Heutagogy</a></li>
+</ul>
+</li>
+<li><a href="#orge24b310">Home</a>
+<ul>
+<li><a href="#orgc4751b7">Domestic labor</a></li>
+<li><a href="#orgd97e874">Gardening</a></li>
+<li><a href="#org437ea1d">Bookkeeping</a></li>
+</ul>
+</li>
+<li><a href="#org8040401">Communities</a>
+<ul>
+<li><a href="#orgdb4b203">Western communities</a></li>
+<li><a href="#org3412f62">Western Anarchist communities</a></li>
+<li><a href="#org5641eb7">Anarchist</a></li>
+<li><a href="#org0eb430a">Indigenous</a></li>
+</ul>
+</li>
+<li><a href="#org381a709">Societies</a>
+<ul>
+<li><a href="#org5be1218">Western</a></li>
+<li><a href="#orge498edc">Indigenous</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgfb21ab5" class="outline-2">
+<h2 id="orgfb21ab5">Market moves</h2>
+<div class="outline-text-2" id="text-orgfb21ab5">
+</div>
+<div id="outline-container-org5410714" class="outline-3">
+<h3 id="org5410714">2021</h3>
+<div class="outline-text-3" id="text-org5410714">
+</div>
+<div id="outline-container-orge9ec6e6" class="outline-4">
+<h4 id="orge9ec6e6">2021-02 February</h4>
+<div class="outline-text-4" id="text-orge9ec6e6">
+</div>
+<ul class="org-ul">
+<li><a id="org4c5b7f0"></a>2021-02-04<br />
+<ul class="org-ul">
+<li><a id="org84e7c37"></a>After-market research<br />
+<div class="outline-text-6" id="text-org84e7c37">
+<p>
+So, I don't know what I'm doing, yet. But I know I want to diversify my holdings within Esther's IRA, ASAP, and without selling the Gamestop I shouldn't have, the only way to do that is to add more to the fund. (Not through transfers, but in the books: increase my liability to Esther.)
+</p>
+
+<p>
+The only thing I had time to do any research on was Silicon Motion Technology: their earning report<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup> came out earlier today, so I decided to take a look. Despite supply issues, they did better than expected. So, I'm going to take a small equity position in them.
+</p>
+
+<p>
+That will move me from exclusively a single consumer staple (if you can consider video games a staple? Apparently the "markets" do&#x2026;) to also a chip manufacturer. Obviously, I'm highly ambivalent about the morality of participation in this at all, but I use computers, I think they're useful, and if I'm required to hold capital or be slowly killed by my environment, I'll try and choose to put it toward what I think is good. (Or, if I am putting it toward something I think is bad, I need to invest more heavily - substantially more heavily - against it, and work toward future divestment.<sup><a id="fnr.2" class="footref" href="#fn.2">2</a></sup>)
+</p>
+
+<p>
+In addition, I've decided to take small positions in YOLO and CNBS, two cannabis-focused equity trust funds, one focused on Turtle Island, and the other all of the Earth.
+</p>
+
+<p>
+XLV, is an equity trust fund representing the healthcare sector that I've bought into, and ARKG is focused on genetics research. This is probably my least ethical holding I'm planning to buy into. My excuse is that I don't plan on holding it for very long, I just want to put more into health care beside XLV, which has been underperforming and likely will continue to for a while. (All the money in the healthcare market is tied up in COVID research and other cutting-edge things. I'd really prefer to keep my healthcare holdings, long-term, in XLV and then try and find small companies whose medical approach I agree with and diversify across them.)
+</p>
+
+<p>
+There's also ICLN, a "clean energy" ETF, that I'll use to represent my energy holdings until I can figure out something better. IFRA is an infrastructure ETF, and under the Biden administration I can assume that'll grow, possibly quite well.
+</p>
+
+<p>
+VCLO is an ETF focused on "market disruptors" in electric cars, cybersecurity, and cloud technology. Definitely an iffy place to put money, but spreads me into domestic IT. Not something to hold onto though, if I can help it.
+</p>
+
+<p>
+KBE is an investment in banks, and that brings me across quite a few domestic sectors, with a small bit of global touch.
+</p>
+
+<p>
+To go further globally, I'm going to take a small position in EWW, which (simplified) represents the Mexican market. Mexico is probably the country whose politics I understand the most right now, though through the lens of the Zapatistas, so&#x2026; why not.
+</p>
+
+<p>
+In other parts of the market, I've seen continued talk of institutional investors continuing their migration into cryptocurrencies, with Bitcoin serving as the launchpad. For example, Massachusetts Mutual Life Insurance took a $100 million position in BTC last December.<sup><a id="fnr.3" class="footref" href="#fn.3">3</a></sup>
+</p>
+
+<p>
+With the new Biden administration, Bitcoin is likely to see government interest as well, after being left relatively un-observed during the 2017 crypto bubble. In addition, Ethereum serves as an application platform, and has become one of the largest other crypto platforms.
+</p>
+
+<p>
+In addition to crypto, there's the world of decentralized finance (DeFi). I'm not familiar with that, and currently don't have a way to buy into it: the services that would let me require a state ID.
+</p>
+</div>
+</li>
+</ul>
+</li>
+
+<li><a id="org79d3eda"></a>2021-02-05<br />
+<div class="outline-text-5" id="text-org79d3eda">
+<p>
+NOTE: This closure doesn't contain my buy of Gamestop as a meme stock, as that distorts the numbers and shouldn't be considered a part of my trading portfolio.
+</p>
+</div>
+
+<ul class="org-ul">
+<li><a id="org423e5d1"></a>Position<br />
+<div class="outline-text-6" id="text-org423e5d1">
+<div class="org-src-container">
+<pre class="src src-ledger" id="org294d4b6">2021/02/05 Position disclosure
+    Assets:Esther:IRA:ARKG                     0.184 ARKG @ $108.59
+    Assets:Esther:IRA:CNSB                         1 CNBS @ $29.20
+    Assets:Esther:IRA:EWW                      0.473 EWW @ $42.28
+    Assets:Esther:IRA:ICLN                         2 ICLN @ $31.18
+    Assets:Esther:IRA:IFRA                         1 IFRA @ $31.31
+    Assets:Esther:IRA:KBE                          1 KBE @ $45.96
+    Assets:Esther:IRA:SIMO                         1 SIMO @ $57.00
+    Assets:Esther:IRA:SPY                      0.309 SPY @ $386.86
+    Assets:Esther:IRA:VCLO                         3 VCLO @ $12.90
+    Assets:Esther:IRA:XLV                      0.432 XLV @ $49.92
+    Assets:Esther:IRA:YOLO                         1 YOLO @ $26.15
+    Assets:BTC                            0.00934579 BTC @@ $348.86
+    Assets:ETH                            0.11918743 ETH @@ $185
+    Equity:Holdings
+
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="org381a46c"></a>Investment<br />
+<div class="outline-text-6" id="text-org381a46c">
+<pre class="example">
+$1006  Assets
+</pre>
+</div>
+</li>
+
+<li><a id="orgd95164f"></a>Unrealized change<br />
+<div class="outline-text-6" id="text-orgd95164f">
+<pre class="example">
+21-Feb-05 Position disclosure   &lt;Total&gt;                         $55          $55
+</pre>
+</div>
+</li>
+
+
+
+
+
+
+
+<li><a id="org561c5cc"></a>After-market research<br />
+<div class="outline-text-6" id="text-org561c5cc">
+<ul class="org-ul">
+<li><a href="https://www.reddit.com/r/investing/comments/ldfz1w/poww_ammo_company_with_uptrend_potential_and/">https://www.reddit.com/r/investing/comments/ldfz1w/poww_ammo_company_with_uptrend_potential_and/</a>
+<ul class="org-ul">
+<li>Alternatively, Vista: bought the Remington name</li>
+</ul></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org638de2e" class="outline-2">
+<h2 id="org638de2e">Accounts</h2>
+<div class="outline-text-2" id="text-org638de2e">
+<div class="org-src-container">
+<pre class="src src-ledger" id="orgd1c742d">account Assets:Petty
+account Assets:CashApp
+account Assets:PayPal:Business
+account Assets:PayPal:Personal
+account Assets:NCSECU:CHK0099
+account Assets:NCSECU:SAV1208
+account Assets:Esther:IRA
+account Assets:CashApp
+account Assets:NCSECU:CHK0099
+account Liabilities:Esther
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgfb0aa1d" class="outline-2">
+<h2 id="orgfb0aa1d">Journals</h2>
+<div class="outline-text-2" id="text-orgfb0aa1d">
+</div>
+
+<div id="outline-container-org4d6798f" class="outline-3">
+<h3 id="org4d6798f">2021</h3>
+<div class="outline-text-3" id="text-org4d6798f">
+</div>
+<div id="outline-container-org74e49bc" class="outline-4">
+<h4 id="org74e49bc">2021-01 January</h4>
+<div class="outline-text-4" id="text-org74e49bc">
+</div>
+<ul class="org-ul">
+<li><a id="orgaaf32dd"></a>2021-01-01 Friday<br />
+<div class="outline-text-5" id="text-orgaaf32dd">
+<div class="org-src-container">
+<pre class="src src-ledger" id="org14e26c4">2021/01/01 00:00:00 * Initial balances
+    Assets:NCSECU:CHK0099                    $123.04
+    Assets:NCSECU:SAV1208                     $25.84
+    Assets:Coinbase                           $81.55
+    Assets:PayPal:Personal                  $79.93
+    Assets:PayPal:Business                      $93.81
+    Assets:Petty                            $1853.25
+    Equity:Opening Balance
+
+2021/01/01 11:37:00 * New Substack subscriber
+    Income:Commission:Substack              -$182.00
+    Expenses:Finance:Pay Processing:Substack  $18.20
+    Expenses:Finance:Pay Processing:Stripe     $5.58
+    Assets:NCSECU:CHK0099
+</pre>
+</div>
+</div>
+</li>
+<li><a id="orgac46e5c"></a>2021-01-03 Sunday<br />
+<div class="outline-text-5" id="text-orgac46e5c">
+<div class="org-src-container">
+<pre class="src src-ledger" id="org7046821">2021/01/03 12:15:00 * Ko-fi gift
+    Income:Gift:Ko-fi                        -$25.00
+    Expenses:Finance:Pay Processing:Stripe     $1.03
+    Assets:NCSECU:CHK0099
+</pre>
+</div>
+</div>
+</li>
+<li><a id="orgc51d42c"></a>2021-01-04 Monday<br />
+<div class="outline-text-5" id="text-orgc51d42c">
+<div class="org-src-container">
+<pre class="src src-ledger" id="org9bfc114">2021/01/04 * Ordered food
+    Assets:NCSECU:CHK0099                    -$10.21
+    Expenses:Food:Restaurant        
+</pre>
+</div>
+</div>
+</li>
+<li><a id="org2c03b20"></a>2021-01-05 Tuesday<br />
+<div class="outline-text-5" id="text-org2c03b20">
+<div class="org-src-container">
+<pre class="src src-ledger" id="orgd8a8f23">2021/01/05 * Transfer PayPal to Checking
+    Assets:PayPal:Personal                 -$90.00
+    Expenses:Finance:Transfer Fee:NCSECU   $0.90
+    Assets:NCSECU:CHK0099
+
+2021/01/05 * Ko-fi gift
+    Income:Gift:Ko-fi                         -$5.00
+    Expenses:Finance:Transfer Fee:PayPal    $0.45
+    Assets:PayPal:Business      
+
+2021/01/05 * Delivery food
+    Expenses:Food:Restaurant                 -$35.18
+    Assets:PayPal:Personal
+</pre>
+</div>
+</div>
+</li>
+<li><a id="org09607b5"></a>2021-01-06 Wednesday<br />
+<div class="outline-text-5" id="text-org09607b5">
+<div class="org-src-container">
+<pre class="src src-ledger" id="org3c6410b">2021/01/06 * Delivery food
+    Expenses:Food:Restaurant                  $41.00
+    Assets:NCSECU:CHK0099
+
+2021/01/06 * PayPal transfer
+    Assets:PayPal:Business                     -$98.36
+    Assets:PayPal:Personal
+
+2021/01/06 * Gift from Ecosteader
+    Income:Gift:PayPal:Personal            -$35.00
+    Assets:PayPal:Personal
+</pre>
+</div>
+</div>
+</li>
+<li><a id="org39c0921"></a>2020-01-07 Thursday<br />
+<div class="outline-text-5" id="text-org39c0921">
+<div class="org-src-container">
+<pre class="src src-ledger" id="orgb06f58e">2021/01/07 * Gift
+    Income:Gift:PayPal:Personal              -$100
+    Assets:PayPal:Personal
+
+2021/01/07 * Give gift
+    Expenses:Gift                              -$110
+    Assets:PayPal:Personal
+</pre>
+</div>
+</div>
+</li>
+<li><a id="org21a6a4c"></a>2021-01-11 Monday<br />
+<div class="outline-text-5" id="text-org21a6a4c">
+<div class="org-src-container">
+<pre class="src src-ledger" id="org45926e2">2021/01/11 * Pay Fastmail
+    Expenses:Professional Services:Email         $10
+    Expenses:Finance:Pay Processing:NCSECU     $0.10
+    Assets:NCSECU:CHK0099
+</pre>
+</div>
+</div>
+</li>
+<li><a id="org25b0749"></a>2021-01-13 Wednesday<br />
+<div class="outline-text-5" id="text-org25b0749">
+<div class="org-src-container">
+<pre class="src src-ledger" id="org3d661ab">2021/01/13 * Liberapay Gift
+    Income:Gift:LiberaPay                       -$60
+    Expenses:Finance:Transfer Fee:PayPal   $2.04
+    Assets:PayPal:Personal
+
+2021/01/15 * Give gift
+    Expenses:Gift                               $290
+    Assets:PayPal:Personal
+</pre>
+</div>
+</div>
+</li>
+<li><a id="orgb7e35d1"></a>2021-01-15 Friday<br />
+<div class="outline-text-5" id="text-orgb7e35d1">
+<div class="org-src-container">
+<pre class="src src-ledger" id="orgf012901">2021/01/15 * Delivery food
+    Expenses:Food:Restaurant                  $29.04
+    Assets:NCSECU:CHK0099
+
+2021/01/15 * VPS payment
+    Expenses:Professional Services:Web hosting  $21.18
+    Assets:NCSECU:CHK0099
+
+2021/01/15 * Buy videogame on Steam
+    Expenses:Recreation:Computer game         $13.96
+    Assets:PayPal:Personal
+</pre>
+</div>
+</div>
+</li>
+<li><a id="org29959cc"></a>2021-01-16 Saturday<br />
+<div class="outline-text-5" id="text-org29959cc">
+<div class="org-src-container">
+<pre class="src src-ledger" id="orge0e2158">2021/01/16 * Buy videogame on Steam
+    Expenses:Recreation:Computer game         $21.49
+    Assets:PayPal:Personal
+</pre>
+</div>
+</div>
+</li>
+<li><a id="orga9b350d"></a>2021-01-17 Sunday<br />
+<div class="outline-text-5" id="text-orga9b350d">
+<div class="org-src-container">
+<pre class="src src-ledger" id="orge0dfb10">2021/01/17 * Delivery food
+    Expenses:Food:Restaurant                  $23.00
+    Assets:PayPal:Personal
+</pre>
+</div>
+</div>
+</li>
+<li><a id="org2d403e6"></a>2021-01-18 Monday<br />
+<div class="outline-text-5" id="text-org2d403e6">
+<div class="org-src-container">
+<pre class="src src-ledger" id="org3f42cfc">2021/01/18 * Liberapay gift
+    Income:Gift:Liberapay                    -$68.25
+    Assets:PayPal:Personal
+</pre>
+</div>
+</div>
+</li>
+<li><a id="org6252a5d"></a>2021-01-21 Thursday<br />
+<div class="outline-text-5" id="text-org6252a5d">
+<div class="org-src-container">
+<pre class="src src-ledger" id="org280cf34">2021/01/21 * Delivery food
+    Expenses:Food:Restaurant                  $23.09
+    Assets:NCSECU:CHK0099
+
+2021/01/21 * Delivery food
+    Expenses:Food:Restaurant                  $28.00
+    Assets:NCSECU:CHK0099
+</pre>
+</div>
+</div>
+</li>
+<li><a id="orgd0e0015"></a>2021-01-25 Monday<br />
+<div class="outline-text-5" id="text-orgd0e0015">
+<div class="org-src-container">
+<pre class="src src-ledger" id="orgf692982">2021/01/25 * Delivery food
+    Expenses:Food:Restaurant                  $41.00
+    Assets:NCSECU:CHK0099
+
+2021/01/25 * Ko-fi gift
+    Income:Gift:Ko-fi                        -$10.00
+    Expenses:Finance:Transfer Fee:PayPal       $0.74
+    Assets:PayPal:Business
+
+2021/01/25 * Give gift
+    Expenses:Gift                                $90
+    Assets:PayPal:Personal
+</pre>
+</div>
+</div>
+</li>
+<li><a id="orgd4f0d12"></a>2021-01-27 Wednesday<br />
+<div class="outline-text-5" id="text-orgd4f0d12">
+<div class="org-src-container">
+<pre class="src src-ledger" id="orgff806e6">2021/01/27 11:16:00 * Substack subscription
+    Income:Commission:Substack                -$8.00
+    Expenses:Finance:Pay Processing:Stripe     $1.33
+    Assets:NCSECU:CHK0099
+</pre>
+</div>
+</div>
+</li>
+<li><a id="orgc427eab"></a>2021-01-29 Friday<br />
+<div class="outline-text-5" id="text-orgc427eab">
+<div class="org-src-container">
+<pre class="src src-ledger" id="orge7af8b0">2021/01/29 09:30:21 * Buy AMC due to reddit hype
+    Assets:Esther:IRA:AMC              15 AMC @ $14.74
+    Liabilities:Esther
+
+2021/01/29 09:39:00 * Ko-fi gift
+    Income:Gift:Ko-fi                        -$11.00
+    Expenses:Finance:Pay Processing:Stripe     $0.62
+    Assets:NCSECU:CHK0099
+
+2021/01/29 10:03:00 * Buy AMC to lower cost basis
+    Assets:Esther:IRA:AMC               8 AMC @ $12.8975
+    Liabilities:Esther
+
+2021/01/29 21:46:00 * Transfer to Cashapp
+    Assets:NCSECU:CHK0099                       -$25
+    Assets:CashApp
+
+2021/01/29 21:52:00 * Buy BTC with CashApp
+    Assets:CashApp                      -$25
+    Assets:CashApp:BTC            0.00071912 BTC @ $33972.08
+    Expenses:Finance:Transfer Fee:CashApp:Crypto  $0.57
+
+2021/01/29 * NCSECU:SAV1208 Interest Payment
+    Assets:NCSECU:SAV1208                      $0.01
+    Income:Interest:NCSECU:SAV1208
+
+2021/01/29 * NCSECU:CHK0099 Interest Payment
+    Expenses:Finance:Banking Fee:NCSECU        $1.00
+    Income:Interest                           -$0.02
+    Assets:NCSECU:CHK0099
+
+2021/01/29 * Month of Ko-fi Gold
+    Expenses:Professional Services:Ko-fi Gold  $6.00
+    Assets:PayPal:Personal
+</pre>
+</div>
+</div>
+</li>
+<li><a id="org8c4e3d6"></a>2021-01-30 Saturday<br />
+<div class="outline-text-5" id="text-org8c4e3d6">
+<div class="org-src-container">
+<pre class="src src-ledger" id="orgf244cce">2021/01/30 18:44:00 * Gift from Jeremy Friesen
+    Income:Gift:PayPal:Personal              -$300
+    Assets:PayPal:Personal
+
+2021/01/30 20:44:00 Loan to Jay
+    Loan:Jay                                     $50
+    Assets:Petty
+</pre>
+</div>
+</div>
+</li>
+<li><a id="org79f5fcb"></a>2021-01-31 Sunday<br />
+<div class="outline-text-5" id="text-org79f5fcb">
+<div class="org-src-container">
+<pre class="src src-ledger" id="org5f65f48">2021/01/31 11:01:00 * Ko-fi gift
+    Income:Gift:Ko-fi                         -$6.00
+    Expenses:Finance:Pay Processing:Stripe     $0.47
+    Assets:NCSECU:CHK0099
+
+2021/01/31 20:25:00 Clear out Coinbase
+    Assets:Coinbase                          -$81.55
+    Assets:NCSECU:CHK0099
+</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+
+<div id="outline-container-orga556861" class="outline-4">
+<h4 id="orga556861">2021-02 February</h4>
+<div class="outline-text-4" id="text-orga556861">
+</div>
+<ul class="org-ul">
+<li><a id="org9d0868c"></a>2021-02-01 Monday<br />
+<div class="outline-text-5" id="text-org9d0868c">
+<div class="org-src-container">
+<pre class="src src-ledger" id="orga0dfefb">2021/02/01 07:01:32 Pre-market buy on GME
+    Assets:Esther:IRA:GME               3 GME @ $320.00
+    Liabilities:Esther
+
+2021/02/01 09:15:00 Buy BTC on CashApp
+    Assets:CashApp                      -$25
+    Assets:CashApp:BTC            0.00073095 BTC @ $33422.26
+    Expenses:Finance:Transfer Fee:CashApp:Crypto  $0.57
+
+2021/02/01 09:33:31 Opening sell off AMC
+    Assets:Esther:IRA:AMC                        -23 AMC @ $15.92
+    Liabilities:Esther                       $324.28
+    Income:Capital Gains:Trading             -$41.88
+    Liabilities:Esther
+
+2021/02/01 09:34:16 Opening buy on GME
+    Assets:Esther:IRA:GME               1 GME @ $289.98
+    Liabilities:Esther
+
+2021/02/01 10:03:07 Dip buy on GME
+    Assets:Esther:IRA:GME               1 GME @ $276.51
+    Liabilities:Esther
+
+2021/02/01 10:03:07 Dip buy on GME
+    Assets:Esther:IRA:GME               1 GME @ $239.65
+    Liabilities:Esther
+
+2021/02/01 11:04:00 Pay for Vultr VPS
+    Expenses:Professional Services:VPS         $9.22
+    Assets:NCSECU:CHK0099
+
+2021/02/01 15:57:27 Pre-closing surge buy on GME
+    Assets:Esther:IRA:GME           0.223 GME @ $223.30
+    Liabilities:Esther
+
+2021/02/01 15:57:27 Post-closing surge sell off GME
+    Assets:Esther:IRA:GME          -0.223 GME @ $226.01
+    Liabilities:Esther
+
+2021/02/01 16:53:00 Gift to Quarters-guy
+    Assets:Petty                                 -$4
+    Expenses:Gift
+
+2021/02/01 17:38:10 After-market dip buy on GME
+    Assets:Esther:IRA:GME               1 GME @ $188.99
+    Liabilities:Esther
+
+2021/02/01 17:44:00 Patreon transfer
+    Income:Gift:Patreon                     -$176.36
+    Assets:PayPal:Personal
+
+2021/02/01 21:46:00 Donation to CashApp
+    Assets:CashApp                       $25
+    Income:Gift
+
+2021/02/01 22:07:04 PayPal donation
+    Income:Gift:Liberapay                       -$30
+    Expenses:Finance:Transfer Fee:PayPal   $1.27
+    Assets:PayPal:Personal
+
+2021/02/01 * Pay for emsenn.net domain &amp; hosting
+    Expenses:Professional Services:Web hosting   $40
+    Assets:NCSECU:CHK0099
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="orgf1e12ab"></a>2021-02-02 Tuesday<br />
+<div class="outline-text-5" id="text-orgf1e12ab">
+<div class="org-src-container">
+<pre class="src src-ledger" id="org53376de">2021/02/02 07:30:57 Buy pre-market dip on GME
+    Assets:Esther:IRA:GME               1 GME
+    Liabilities:Esther                      -$160.39
+
+2021/02/02 09:09:53 Buy pre-market dip on GME
+    Assets:Esther:IRA:GME               1 GME
+    Liabilities:Esther                       -$133.00
+
+2021/02/02 16:53:00 Gift to Quarters-guy
+   Assets:Petty                                 -$4
+   Expenses:Gift
+
+2021/02/02 18:51:00 Sherose
+    Assets:Petty                                $700
+    Income:Gift
+
+2021/02/02 22:29:00 Buy some Ethereum
+    Expenses:Finance:Forex:PayPal              $0.50
+    Assets:PayPal:Personal:ETH       0.01293543 ETH @@ $20.00
+    Assets:PayPal:Personal
+
+2021/02/02 22:37:00 Buy some Ethereum
+    Expenses:Finance:Forex:PayPal              $1.96
+    Assets:PayPal:Personal:ETH            0.05489882 ETH @@ $85.00
+    Assets:PayPal:Personal    
+
+2021/02/02 23:55:00 Buy some Ethereum
+    Expenses:Finance:Forex:PayPal              $1.84
+    Assets:PayPal:Personal:ETH            0.05135318 ETH @@ $80.00
+    Assets:PayPal:Personal    
+
+
+2021/02/02 * Pay for VPS
+    Expenses:Professional Services:Web hosting  $9.22
+    Assets:NCSECU:CHK0099
+</pre>
+</div>
+</div>
+</li>
+<li><a id="org1746eda"></a>2021-02-03 Wednesday<br />
+<div class="outline-text-5" id="text-org1746eda">
+<div class="org-src-container">
+<pre class="src src-ledger" id="orgb63b95d">2021/02/03 12:16:00 * Ko-fi gift
+    Income:Gift:Ko-fi                        -$25.00
+    Expenses:Finance:Pay Processing:Stripe     $1.03
+    Assets:NCSECU:CHK0099
+
+2021/02/03 14:14:00 * Buy SPY
+    Assets:Esther:IRA:SPY           0.052 SPY @ $382.73
+    Liabilities:Esther
+
+2021/02/03 17:01:00 * Buy BTC
+    Expenses:Finance:Forex:PayPal              $2.30
+    Assets:PayPal:Personal:BTC          0.00260517 BTC @@ $100
+    Assets:PayPal:Personal
+
+2021/02/03 19:01:00 * Buy BTC
+    Expenses:Finance:Forex:PayPal              $1.15
+    Assets:PayPal:Personal:BTC          0.00131023 BTC @@ $50
+    Assets:PayPal:Personal
+</pre>
+</div>
+</div>
+</li>
+<li><a id="orgc57cd56"></a>2021-02-04 Thursday<br />
+<div class="outline-text-5" id="text-orgc57cd56">
+<div class="org-src-container">
+<pre class="src src-ledger" id="org4c87c24">2021/02/04 09:44:00 * Buy more Bitcoin
+    Expenses:Finance:Forex:PayPal              $1.15
+    Assets:PayPal:Personal:BTC          0.00135163 BTC @@ $50
+    Assets:PayPal:Personal
+
+2021/02/04 12:02:00 * Gift to Quarters-guy
+    Expenses:Gift                                 $5
+    Assets:Petty
+
+2021/02/04 14:00:00 * Gift of food from settlerfolk
+    Income:Gift                                  -94lb @ $2
+    Assets:Inventory:Larder:beans:split yellow peas
+
+2021/02/04 14:00:00 * Gift of food from settlerfolk
+    Income:Gift                                  -24lb @ $2
+    Assets:Inventory:Larder:beans:split green peas
+
+2021/02/04 14:00:00 * Gift of food from settlerfolk
+    Income:Gift                                  -4lb @ $2
+    Assets:Inventory:Larder:beans:lentils
+
+2021/02/04 14:00:00 * Gift of food from settlerfolk
+    Income:Gift                                  -20lb @ $2
+    Assets:Inventory:Larder:beans:garbonzo
+
+</pre>
+</div>
+</div>
+</li>
+<li><a id="org4ee03c0"></a>2021-02-05 Friday<br />
+<div class="outline-text-5" id="text-org4ee03c0">
+<div class="org-src-container">
+<pre class="src src-ledger" id="org543c9b0">2021/02/05 07:03:31 Ko-fi gift
+    Income:Gift:Ko-fi                            -$5
+    Expenses:Finance:Transfer Fee:PayPal   $0.45
+    Assets:PayPal:Business
+
+2021/02/05 12:02:00 * Gift to Quarters-guy
+    Expenses:Gift                                 $4
+    Assets:Petty
+
+2021/02/05 09:52:23 * Buy SIMO
+    Assets:Esther:IRA:SIMO              1 SIMO @ $57
+    Liabilities:Esther
+
+2021/02/05 09:53:23 * Buy SPY
+    Assets:Esther:IRA:SPY               0.257 SPY @ $387.72
+    Liabilities:Esther
+
+2021/02/05 13:11:00 * Buy BTC
+    Expenses:Finance:Forex                     $2.30
+    Assets:PayPal:Personal:BTC          0.00262869 BTC @ $38041.77
+    Assets:PayPal:Personal
+
+2021/02/05 13:14:46 * Buy VCLO
+    Assets:Esther:IRA:VCLO              3 VCLO @ $12.90
+    Liabilities:Esther
+
+2021/02/05 13:16:42 * Buy KBE
+    Assets:Esther:IRA:KBE               1 KBE @ $45.96
+    Liabilities:Esther
+
+2021/02/05 04:27:51 * Buy XLV
+    Assets:Esther:IRA:XLV           0.432 XLV @@ $50
+    Liabilities:Esther
+
+2021/02/05 14:39:51 * Buy ICLN
+    Assets:Esther:IRA:ICLN              2 ICLN @ $31.179
+    Liabilities:Esther
+
+2021/02/05 14:41:45 * Buy YOLO
+    Assets:Esther:IRA:YOLO              1 YOLO @ $26.1688
+    Liabilities:Esther
+
+2021/02/05 14:42:03 * Buy CNBS
+    Assets:Esther:IRA:CNBS              1 CNBS @ $29.1986
+    Liabilities:Esther
+
+2021/02/05 14:43:07 * Buy IFRA
+    Assets:Esther:IRA:IFRA              1 IFRA @ $31.305
+    Liabilities:Esther
+
+2021/02/05 14:50:46 * Buy EWW
+    Assets:Esther:IRA:EWW           0.473 EWW @@ $20
+    Liabilities:Esther
+
+2021/02/05 09:58:00 * Buy FNILX
+    Assets:Esther:IRA:FNILX         7.174 FNILX @@ $100
+    Liabilities:Esther
+
+2021/02/05 17:50:00 * Sell ETH
+    Expenses:Finance:Forex:PayPal              $3.94
+    Assets:PayPal:Personal:ETH           -0.11918743 ETH @@ $196.98
+    Assets:PayPal                               $185
+    Income:Capital Gains:Trading             -$11.98
+    Assets:PayPal
+
+2021/02/05 17:54:00 * Buy ETH
+    Expenses:Finance:Forex:PayPal              $3.00
+    Assets:PayPal:Personal:ETH            0.08926915 ETH @@ $150
+    Assets:PayPal
+</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd9e898b" class="outline-2">
+<h2 id="orgd9e898b">Prices</h2>
+<div class="outline-text-2" id="text-orgd9e898b">
+</div>
+<div id="outline-container-org73f5714" class="outline-3">
+<h3 id="org73f5714">Cryptocurrencies</h3>
+<div class="outline-text-3" id="text-org73f5714">
+<p>
+<b><i>Note:</i></b> Cryptocurrency exchanges are always open, so these prices correspond with the price at my time of logging, not necessarily any exchange's official "close" prices.
+</p>
+</div>
+<div id="outline-container-orgd1487d8" class="outline-4">
+<h4 id="orgd1487d8">BTC</h4>
+<div class="outline-text-4" id="text-orgd1487d8">
+<div class="org-src-container">
+<pre class="src src-ledger" id="orgca42022">P 2021/01/01 BTC $32203.64
+P 2021/01/02 BTC $33063.48
+P 2021/01/03 BTC $32030.55
+P 2021/01/04 BTC $34038.29
+P 2021/01/05 BTC $36849.86
+P 2021/01/06 BTC $39479.41
+P 2021/01/07 BTC $40636.24
+P 2021/01/08 BTC $40236.66
+P 2021/01/09 BTC $38202.08
+P 2021/01/10 BTC $35496.03
+P 2021/01/11 BTC $34058.40
+P 2021/01/12 BTC $37380.85
+P 2021/01/13 BTC $39155.58
+P 2021/01/14 BTC $36790.17
+P 2021/01/15 BTC $36025.26
+P 2021/01/16 BTC $35839.51
+P 2021/01/17 BTC $36623.04
+P 2021/01/18 BTC $35932.79
+P 2021/01/19 BTC $35501.38
+P 2021/01/20 BTC $30840.30
+P 2021/01/21 BTC $33008.02
+P 2021/01/22 BTC $32107.29
+P 2021/01/23 BTC $32283.66
+P 2021/01/24 BTC $32275.27
+P 2021/01/25 BTC $32516.52
+P 2021/01/26 BTC $30423.05
+P 2021/01/27 BTC $33443.87
+P 2021/01/28 BTC $34252.08
+P 2021/01/29 BTC $34317.82
+P 2021/01/30 BTC $33143.22
+P 2021/01/31 BTC $33535.94
+P 2021/02/01 BTC $35524.43
+P 2021/02/02 BTC $36179.39
+P 2021/02/03 BTC $37773.65
+P 2021/02/04 BTC $36847.36
+P 2021/02/05 BTC $37733.15  
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd5ae6dc" class="outline-4">
+<h4 id="orgd5ae6dc">ETH</h4>
+<div class="outline-text-4" id="text-orgd5ae6dc">
+<div class="org-src-container">
+<pre class="src src-ledger" id="org750a2d1">P 2021/01/01 ETH $774.90 
+P 2021/01/02 ETH $978.69
+P 2021/01/03 ETH $1043.16
+P 2021/01/04 ETH $1103.19
+P 2021/01/05 ETH $1210.59
+P 2021/01/06 ETH $1225.50
+P 2021/01/07 ETH $1216.98
+P 2021/01/08 ETH $1279.96
+P 2021/01/09 ETH $1255.72
+P 2021/01/10 ETH $1088.37
+P 2021/01/11 ETH $1050.04
+P 2021/01/12 ETH $1129.84
+P 2021/01/13 ETH $1232.11
+P 2021/01/14 ETH $1169.06
+P 2021/01/15 ETH $1228.52
+P 2021/01/16 ETH $1233.73
+P 2021/01/17 ETH $1258.31
+P 2021/01/18 ETH $1367.65
+P 2021/01/19 ETH $1377.75
+P 2021/01/20 ETH $1111.49
+P 2021/01/21 ETH $1234.56
+P 2021/01/22 ETH $1234.10
+P 2021/01/23 ETH $1392.45
+P 2021/01/24 ETH $1318.47
+P 2021/01/25 ETH $1368.22
+P 2021/01/26 ETH $1241.51
+P 2021/01/27 ETH $1330.78
+P 2021/01/28 ETH $1379.13
+P 2021/01/29 ETH $1379.35
+P 2021/01/30 ETH $1314.18
+P 2021/01/31 ETH $1374.57
+P 2021/02/01 ETH $1513.90
+P 2021/02/02 ETH $1519.52
+P 2021/02/03 ETH $1587.85
+P 2021/02/04 ETH $1629.23
+P 2021/02/05 ETH $1718.00
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org0e56209" class="outline-3">
+<h3 id="org0e56209">NYSE</h3>
+<div class="outline-text-3" id="text-org0e56209">
+</div>
+<div id="outline-container-org0afd9fb" class="outline-4">
+<h4 id="org0afd9fb">AMC</h4>
+<div class="outline-text-4" id="text-org0afd9fb">
+<div class="org-src-container">
+<pre class="src src-ledger" id="orgec062ea">P 2021/01/29 AMC $13.26
+P 2021/02/01 AMC $13.30
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgff81e87" class="outline-4">
+<h4 id="orgff81e87">ARKG</h4>
+<div class="outline-text-4" id="text-orgff81e87">
+<div class="org-src-container">
+<pre class="src src-ledger" id="org56fb8ac">P 2021/02/05 ARKG $108.905
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org50cecf4" class="outline-4">
+<h4 id="org50cecf4">CNBS</h4>
+<div class="outline-text-4" id="text-org50cecf4">
+<div class="org-src-container">
+<pre class="src src-ledger" id="orgdf7b6a2">P 2021/02/05 CNBS $29.19
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org7277ac1" class="outline-4">
+<h4 id="org7277ac1">EWW</h4>
+<div class="outline-text-4" id="text-org7277ac1">
+<div class="org-src-container">
+<pre class="src src-ledger" id="orga63a6ea">P 2021/02/05 EWW $42.10
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org416be22" class="outline-4">
+<h4 id="org416be22">GME</h4>
+<div class="outline-text-4" id="text-org416be22">
+<div class="org-src-container">
+<pre class="src src-ledger" id="org00ac231">P 2021/01/29 GME $325.00
+P 2021/02/01 GME $224.00
+P 2021/02/02 GME $90.00
+P 2021/02/03 GME $92.41
+P 2021/02/04 GME $53.50
+P 2021/02/05 GME $63.77
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgad53095" class="outline-4">
+<h4 id="orgad53095">ICLN</h4>
+<div class="outline-text-4" id="text-orgad53095">
+<div class="org-src-container">
+<pre class="src src-ledger" id="org8766501">P 2021/02/05 ICLN $31.18
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org4bdee97" class="outline-4">
+<h4 id="org4bdee97">IFRA</h4>
+<div class="outline-text-4" id="text-org4bdee97">
+<div class="org-src-container">
+<pre class="src src-ledger" id="org9fbe819">P 2021/02/05 IFRA $31.32
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org2192946" class="outline-4">
+<h4 id="org2192946">KBE</h4>
+<div class="outline-text-4" id="text-org2192946">
+<div class="org-src-container">
+<pre class="src src-ledger" id="org964ba83">P 2021/02/05 KBE $46.04
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org097a4dc" class="outline-4">
+<h4 id="org097a4dc">SIMO</h4>
+<div class="outline-text-4" id="text-org097a4dc">
+<div class="org-src-container">
+<pre class="src src-ledger" id="orgf9f741f">P 2021/02/05 SIMO $59.59
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgcdf4c9e" class="outline-4">
+<h4 id="orgcdf4c9e">SPY</h4>
+<div class="outline-text-4" id="text-orgcdf4c9e">
+<div class="org-src-container">
+<pre class="src src-ledger" id="orgb24601c">P 2021/01/29 SPY $370.07
+P 2021/02/01 SPY $376.23
+P 2021/02/02 SPY $381.55
+P 2021/02/03 SPY $381.85
+P 2021/02/04 SPY $386.19
+P 2021/02/05 SPY $387.71
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org4b39602" class="outline-4">
+<h4 id="org4b39602">VCLO</h4>
+<div class="outline-text-4" id="text-org4b39602">
+<div class="org-src-container">
+<pre class="src src-ledger" id="org65a3722">P 2021/02/05 VCLO $12.9348
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgaaa7f89" class="outline-4">
+<h4 id="orgaaa7f89">XLV</h4>
+<div class="outline-text-4" id="text-orgaaa7f89">
+<div class="org-src-container">
+<pre class="src src-ledger" id="org5f6d6e9">P 2021/02/05 XLV $115.67
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org6d26d36" class="outline-4">
+<h4 id="org6d26d36">YOLO</h4>
+<div class="outline-text-4" id="text-org6d26d36">
+<div class="org-src-container">
+<pre class="src src-ledger" id="org8331791">P 2021/02/05 YOLO $26.05
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org288acee" class="outline-2">
+<h2 id="org288acee">Books</h2>
+<div class="outline-text-2" id="text-org288acee">
+</div>
+
+<div id="outline-container-orgc5052d9" class="outline-3">
+<h3 id="orgc5052d9">Main</h3>
+<div class="outline-text-3" id="text-orgc5052d9">
+<div class="org-src-container">
+<pre class="src src-ledger" id="orgba7d892">account Assets:Petty
+account Assets:CashApp
+account Assets:PayPal:Business
+account Assets:PayPal:Personal
+account Assets:NCSECU:CHK0099
+account Assets:NCSECU:SAV1208
+account Assets:Esther:IRA
+account Assets:CashApp
+account Assets:NCSECU:CHK0099
+account Liabilities:Esther
+
+P 2021/01/01 BTC $32203.64
+P 2021/01/02 BTC $33063.48
+P 2021/01/03 BTC $32030.55
+P 2021/01/04 BTC $34038.29
+P 2021/01/05 BTC $36849.86
+P 2021/01/06 BTC $39479.41
+P 2021/01/07 BTC $40636.24
+P 2021/01/08 BTC $40236.66
+P 2021/01/09 BTC $38202.08
+P 2021/01/10 BTC $35496.03
+P 2021/01/11 BTC $34058.40
+P 2021/01/12 BTC $37380.85
+P 2021/01/13 BTC $39155.58
+P 2021/01/14 BTC $36790.17
+P 2021/01/15 BTC $36025.26
+P 2021/01/16 BTC $35839.51
+P 2021/01/17 BTC $36623.04
+P 2021/01/18 BTC $35932.79
+P 2021/01/19 BTC $35501.38
+P 2021/01/20 BTC $30840.30
+P 2021/01/21 BTC $33008.02
+P 2021/01/22 BTC $32107.29
+P 2021/01/23 BTC $32283.66
+P 2021/01/24 BTC $32275.27
+P 2021/01/25 BTC $32516.52
+P 2021/01/26 BTC $30423.05
+P 2021/01/27 BTC $33443.87
+P 2021/01/28 BTC $34252.08
+P 2021/01/29 BTC $34317.82
+P 2021/01/30 BTC $33143.22
+P 2021/01/31 BTC $33535.94
+P 2021/02/01 BTC $35524.43
+P 2021/02/02 BTC $36179.39
+P 2021/02/03 BTC $37773.65
+P 2021/02/04 BTC $36847.36
+P 2021/02/05 BTC $37733.15  
+P 2021/01/01 ETH $774.90 
+P 2021/01/02 ETH $978.69
+P 2021/01/03 ETH $1043.16
+P 2021/01/04 ETH $1103.19
+P 2021/01/05 ETH $1210.59
+P 2021/01/06 ETH $1225.50
+P 2021/01/07 ETH $1216.98
+P 2021/01/08 ETH $1279.96
+P 2021/01/09 ETH $1255.72
+P 2021/01/10 ETH $1088.37
+P 2021/01/11 ETH $1050.04
+P 2021/01/12 ETH $1129.84
+P 2021/01/13 ETH $1232.11
+P 2021/01/14 ETH $1169.06
+P 2021/01/15 ETH $1228.52
+P 2021/01/16 ETH $1233.73
+P 2021/01/17 ETH $1258.31
+P 2021/01/18 ETH $1367.65
+P 2021/01/19 ETH $1377.75
+P 2021/01/20 ETH $1111.49
+P 2021/01/21 ETH $1234.56
+P 2021/01/22 ETH $1234.10
+P 2021/01/23 ETH $1392.45
+P 2021/01/24 ETH $1318.47
+P 2021/01/25 ETH $1368.22
+P 2021/01/26 ETH $1241.51
+P 2021/01/27 ETH $1330.78
+P 2021/01/28 ETH $1379.13
+P 2021/01/29 ETH $1379.35
+P 2021/01/30 ETH $1314.18
+P 2021/01/31 ETH $1374.57
+P 2021/02/01 ETH $1513.90
+P 2021/02/02 ETH $1519.52
+P 2021/02/03 ETH $1587.85
+P 2021/02/04 ETH $1629.23
+P 2021/02/05 ETH $1718.00
+
+P 2021/01/29 AMC $13.26
+P 2021/02/01 AMC $13.30
+P 2021/02/05 ARKG $108.905
+P 2021/02/05 CNBS $29.19
+P 2021/02/05 EWW $42.10
+P 2021/01/29 GME $325.00
+P 2021/02/01 GME $224.00
+P 2021/02/02 GME $90.00
+P 2021/02/03 GME $92.41
+P 2021/02/04 GME $53.50
+P 2021/02/05 GME $63.77
+P 2021/02/05 ICLN $31.18
+P 2021/02/05 IFRA $31.32
+P 2021/02/05 KBE $46.04
+P 2021/02/05 SIMO $59.59
+P 2021/01/29 SPY $370.07
+P 2021/02/01 SPY $376.23
+P 2021/02/02 SPY $381.55
+P 2021/02/03 SPY $381.85
+P 2021/02/04 SPY $386.19
+P 2021/02/05 SPY $387.71
+P 2021/02/05 VCLO $12.9348
+P 2021/02/05 XLV $115.67
+P 2021/02/05 YOLO $26.05
+
+2021/01/01 00:00:00 * Initial balances
+    Assets:NCSECU:CHK0099                    $123.04
+    Assets:NCSECU:SAV1208                     $25.84
+    Assets:Coinbase                           $81.55
+    Assets:PayPal:Personal                  $79.93
+    Assets:PayPal:Business                      $93.81
+    Assets:Petty                            $1853.25
+    Equity:Opening Balance
+
+2021/01/01 11:37:00 * New Substack subscriber
+    Income:Commission:Substack              -$182.00
+    Expenses:Finance:Pay Processing:Substack  $18.20
+    Expenses:Finance:Pay Processing:Stripe     $5.58
+    Assets:NCSECU:CHK0099
+
+2021/01/03 12:15:00 * Ko-fi gift
+    Income:Gift:Ko-fi                        -$25.00
+    Expenses:Finance:Pay Processing:Stripe     $1.03
+    Assets:NCSECU:CHK0099
+2021/01/04 * Ordered food
+    Assets:NCSECU:CHK0099                    -$10.21
+    Expenses:Food:Restaurant        
+2021/01/05 * Transfer PayPal to Checking
+    Assets:PayPal:Personal                 -$90.00
+    Expenses:Finance:Transfer Fee:NCSECU   $0.90
+    Assets:NCSECU:CHK0099
+
+2021/01/05 * Ko-fi gift
+    Income:Gift:Ko-fi                         -$5.00
+    Expenses:Finance:Transfer Fee:PayPal    $0.45
+    Assets:PayPal:Business      
+
+2021/01/05 * Delivery food
+    Expenses:Food:Restaurant                 -$35.18
+    Assets:PayPal:Personal
+2021/01/06 * Delivery food
+    Expenses:Food:Restaurant                  $41.00
+    Assets:NCSECU:CHK0099
+
+2021/01/06 * PayPal transfer
+    Assets:PayPal:Business                     -$98.36
+    Assets:PayPal:Personal
+
+2021/01/06 * Gift from Ecosteader
+    Income:Gift:PayPal:Personal            -$35.00
+    Assets:PayPal:Personal
+2021/01/07 * Gift
+    Income:Gift:PayPal:Personal              -$100
+    Assets:PayPal:Personal
+
+2021/01/07 * Give gift
+    Expenses:Gift                              -$110
+    Assets:PayPal:Personal
+
+
+
+2021/01/11 * Pay Fastmail
+    Expenses:Professional Services:Email         $10
+    Expenses:Finance:Pay Processing:NCSECU     $0.10
+    Assets:NCSECU:CHK0099
+
+2021/01/13 * Liberapay Gift
+    Income:Gift:LiberaPay                       -$60
+    Expenses:Finance:Transfer Fee:PayPal   $2.04
+    Assets:PayPal:Personal
+
+2021/01/15 * Give gift
+    Expenses:Gift                               $290
+    Assets:PayPal:Personal
+
+2021/01/15 * Delivery food
+    Expenses:Food:Restaurant                  $29.04
+    Assets:NCSECU:CHK0099
+
+2021/01/15 * VPS payment
+    Expenses:Professional Services:Web hosting  $21.18
+    Assets:NCSECU:CHK0099
+
+2021/01/15 * Buy videogame on Steam
+    Expenses:Recreation:Computer game         $13.96
+    Assets:PayPal:Personal
+2021/01/16 * Buy videogame on Steam
+    Expenses:Recreation:Computer game         $21.49
+    Assets:PayPal:Personal
+2021/01/17 * Delivery food
+    Expenses:Food:Restaurant                  $23.00
+    Assets:PayPal:Personal
+2021/01/18 * Liberapay gift
+    Income:Gift:Liberapay                    -$68.25
+    Assets:PayPal:Personal
+
+
+2021/01/21 * Delivery food
+    Expenses:Food:Restaurant                  $23.09
+    Assets:NCSECU:CHK0099
+
+2021/01/21 * Delivery food
+    Expenses:Food:Restaurant                  $28.00
+    Assets:NCSECU:CHK0099
+
+
+
+2021/01/25 * Delivery food
+    Expenses:Food:Restaurant                  $41.00
+    Assets:NCSECU:CHK0099
+
+2021/01/25 * Ko-fi gift
+    Income:Gift:Ko-fi                        -$10.00
+    Expenses:Finance:Transfer Fee:PayPal       $0.74
+    Assets:PayPal:Business
+
+2021/01/25 * Give gift
+    Expenses:Gift                                $90
+    Assets:PayPal:Personal
+
+2021/01/27 11:16:00 * Substack subscription
+    Income:Commission:Substack                -$8.00
+    Expenses:Finance:Pay Processing:Stripe     $1.33
+    Assets:NCSECU:CHK0099
+
+2021/01/29 09:30:21 * Buy AMC due to reddit hype
+    Assets:Esther:IRA:AMC              15 AMC @ $14.74
+    Liabilities:Esther
+
+2021/01/29 09:39:00 * Ko-fi gift
+    Income:Gift:Ko-fi                        -$11.00
+    Expenses:Finance:Pay Processing:Stripe     $0.62
+    Assets:NCSECU:CHK0099
+
+2021/01/29 10:03:00 * Buy AMC to lower cost basis
+    Assets:Esther:IRA:AMC               8 AMC @ $12.8975
+    Liabilities:Esther
+
+2021/01/29 21:46:00 * Transfer to Cashapp
+    Assets:NCSECU:CHK0099                       -$25
+    Assets:CashApp
+
+2021/01/29 21:52:00 * Buy BTC with CashApp
+    Assets:CashApp                      -$25
+    Assets:CashApp:BTC            0.00071912 BTC @ $33972.08
+    Expenses:Finance:Transfer Fee:CashApp:Crypto  $0.57
+
+2021/01/29 * NCSECU:SAV1208 Interest Payment
+    Assets:NCSECU:SAV1208                      $0.01
+    Income:Interest:NCSECU:SAV1208
+
+2021/01/29 * NCSECU:CHK0099 Interest Payment
+    Expenses:Finance:Banking Fee:NCSECU        $1.00
+    Income:Interest                           -$0.02
+    Assets:NCSECU:CHK0099
+
+2021/01/29 * Month of Ko-fi Gold
+    Expenses:Professional Services:Ko-fi Gold  $6.00
+    Assets:PayPal:Personal
+2021/01/30 18:44:00 * Gift from Jeremy Friesen
+    Income:Gift:PayPal:Personal              -$300
+    Assets:PayPal:Personal
+
+2021/01/30 20:44:00 Loan to Jay
+    Loan:Jay                                     $50
+    Assets:Petty
+2021/01/31 11:01:00 * Ko-fi gift
+    Income:Gift:Ko-fi                         -$6.00
+    Expenses:Finance:Pay Processing:Stripe     $0.47
+    Assets:NCSECU:CHK0099
+
+2021/01/31 20:25:00 Clear out Coinbase
+    Assets:Coinbase                          -$81.55
+    Assets:NCSECU:CHK0099
+2021/02/01 07:01:32 Pre-market buy on GME
+    Assets:Esther:IRA:GME               3 GME @ $320.00
+    Liabilities:Esther
+
+2021/02/01 09:15:00 Buy BTC on CashApp
+    Assets:CashApp                      -$25
+    Assets:CashApp:BTC            0.00073095 BTC @ $33422.26
+    Expenses:Finance:Transfer Fee:CashApp:Crypto  $0.57
+
+2021/02/01 09:33:31 Opening sell off AMC
+    Assets:Esther:IRA:AMC                        -23 AMC @ $15.92
+    Liabilities:Esther                       $324.28
+    Income:Capital Gains:Trading             -$41.88
+    Liabilities:Esther
+
+2021/02/01 09:34:16 Opening buy on GME
+    Assets:Esther:IRA:GME               1 GME @ $289.98
+    Liabilities:Esther
+
+2021/02/01 10:03:07 Dip buy on GME
+    Assets:Esther:IRA:GME               1 GME @ $276.51
+    Liabilities:Esther
+
+2021/02/01 10:03:07 Dip buy on GME
+    Assets:Esther:IRA:GME               1 GME @ $239.65
+    Liabilities:Esther
+
+2021/02/01 11:04:00 Pay for Vultr VPS
+    Expenses:Professional Services:VPS         $9.22
+    Assets:NCSECU:CHK0099
+
+2021/02/01 15:57:27 Pre-closing surge buy on GME
+    Assets:Esther:IRA:GME           0.223 GME @ $223.30
+    Liabilities:Esther
+
+2021/02/01 15:57:27 Post-closing surge sell off GME
+    Assets:Esther:IRA:GME          -0.223 GME @ $226.01
+    Liabilities:Esther
+
+2021/02/01 16:53:00 Gift to Quarters-guy
+    Assets:Petty                                 -$4
+    Expenses:Gift
+
+2021/02/01 17:38:10 After-market dip buy on GME
+    Assets:Esther:IRA:GME               1 GME @ $188.99
+    Liabilities:Esther
+
+2021/02/01 17:44:00 Patreon transfer
+    Income:Gift:Patreon                     -$176.36
+    Assets:PayPal:Personal
+
+2021/02/01 21:46:00 Donation to CashApp
+    Assets:CashApp                       $25
+    Income:Gift
+
+2021/02/01 22:07:04 PayPal donation
+    Income:Gift:Liberapay                       -$30
+    Expenses:Finance:Transfer Fee:PayPal   $1.27
+    Assets:PayPal:Personal
+
+2021/02/01 * Pay for emsenn.net domain &amp; hosting
+    Expenses:Professional Services:Web hosting   $40
+    Assets:NCSECU:CHK0099
+2021/02/02 07:30:57 Buy pre-market dip on GME
+    Assets:Esther:IRA:GME               1 GME
+    Liabilities:Esther                      -$160.39
+
+2021/02/02 09:09:53 Buy pre-market dip on GME
+    Assets:Esther:IRA:GME               1 GME
+    Liabilities:Esther                       -$133.00
+
+2021/02/02 16:53:00 Gift to Quarters-guy
+   Assets:Petty                                 -$4
+   Expenses:Gift
+
+2021/02/02 18:51:00 Sherose
+    Assets:Petty                                $700
+    Income:Gift
+
+2021/02/02 22:29:00 Buy some Ethereum
+    Expenses:Finance:Forex:PayPal              $0.50
+    Assets:PayPal:Personal:ETH       0.01293543 ETH @@ $20.00
+    Assets:PayPal:Personal
+
+2021/02/02 22:37:00 Buy some Ethereum
+    Expenses:Finance:Forex:PayPal              $1.96
+    Assets:PayPal:Personal:ETH            0.05489882 ETH @@ $85.00
+    Assets:PayPal:Personal    
+
+2021/02/02 23:55:00 Buy some Ethereum
+    Expenses:Finance:Forex:PayPal              $1.84
+    Assets:PayPal:Personal:ETH            0.05135318 ETH @@ $80.00
+    Assets:PayPal:Personal    
+
+
+2021/02/02 * Pay for VPS
+    Expenses:Professional Services:Web hosting  $9.22
+    Assets:NCSECU:CHK0099
+2021/02/03 12:16:00 * Ko-fi gift
+    Income:Gift:Ko-fi                        -$25.00
+    Expenses:Finance:Pay Processing:Stripe     $1.03
+    Assets:NCSECU:CHK0099
+
+2021/02/03 14:14:00 * Buy SPY
+    Assets:Esther:IRA:SPY           0.052 SPY @ $382.73
+    Liabilities:Esther
+
+2021/02/03 17:01:00 * Buy BTC
+    Expenses:Finance:Forex:PayPal              $2.30
+    Assets:PayPal:Personal:BTC          0.00260517 BTC @@ $100
+    Assets:PayPal:Personal
+
+2021/02/03 19:01:00 * Buy BTC
+    Expenses:Finance:Forex:PayPal              $1.15
+    Assets:PayPal:Personal:BTC          0.00131023 BTC @@ $50
+    Assets:PayPal:Personal
+2021/02/04 09:44:00 * Buy more Bitcoin
+    Expenses:Finance:Forex:PayPal              $1.15
+    Assets:PayPal:Personal:BTC          0.00135163 BTC @@ $50
+    Assets:PayPal:Personal
+
+2021/02/04 12:02:00 * Gift to Quarters-guy
+    Expenses:Gift                                 $5
+    Assets:Petty
+
+2021/02/04 14:00:00 * Gift of food from settlerfolk
+    Income:Gift                                  -94lb @ $2
+    Assets:Inventory:Larder:beans:split yellow peas
+
+2021/02/04 14:00:00 * Gift of food from settlerfolk
+    Income:Gift                                  -24lb @ $2
+    Assets:Inventory:Larder:beans:split green peas
+
+2021/02/04 14:00:00 * Gift of food from settlerfolk
+    Income:Gift                                  -4lb @ $2
+    Assets:Inventory:Larder:beans:lentils
+
+2021/02/04 14:00:00 * Gift of food from settlerfolk
+    Income:Gift                                  -20lb @ $2
+    Assets:Inventory:Larder:beans:garbonzo
+
+2021/02/05 07:03:31 Ko-fi gift
+    Income:Gift:Ko-fi                            -$5
+    Expenses:Finance:Transfer Fee:PayPal   $0.45
+    Assets:PayPal:Business
+
+2021/02/05 12:02:00 * Gift to Quarters-guy
+    Expenses:Gift                                 $4
+    Assets:Petty
+
+2021/02/05 09:52:23 * Buy SIMO
+    Assets:Esther:IRA:SIMO              1 SIMO @ $57
+    Liabilities:Esther
+
+2021/02/05 09:53:23 * Buy SPY
+    Assets:Esther:IRA:SPY               0.257 SPY @ $387.72
+    Liabilities:Esther
+
+2021/02/05 13:11:00 * Buy BTC
+    Expenses:Finance:Forex                     $2.30
+    Assets:PayPal:Personal:BTC          0.00262869 BTC @ $38041.77
+    Assets:PayPal:Personal
+
+2021/02/05 13:14:46 * Buy VCLO
+    Assets:Esther:IRA:VCLO              3 VCLO @ $12.90
+    Liabilities:Esther
+
+2021/02/05 13:16:42 * Buy KBE
+    Assets:Esther:IRA:KBE               1 KBE @ $45.96
+    Liabilities:Esther
+
+2021/02/05 04:27:51 * Buy XLV
+    Assets:Esther:IRA:XLV           0.432 XLV @@ $50
+    Liabilities:Esther
+
+2021/02/05 14:39:51 * Buy ICLN
+    Assets:Esther:IRA:ICLN              2 ICLN @ $31.179
+    Liabilities:Esther
+
+2021/02/05 14:41:45 * Buy YOLO
+    Assets:Esther:IRA:YOLO              1 YOLO @ $26.1688
+    Liabilities:Esther
+
+2021/02/05 14:42:03 * Buy CNBS
+    Assets:Esther:IRA:CNBS              1 CNBS @ $29.1986
+    Liabilities:Esther
+
+2021/02/05 14:43:07 * Buy IFRA
+    Assets:Esther:IRA:IFRA              1 IFRA @ $31.305
+    Liabilities:Esther
+
+2021/02/05 14:50:46 * Buy EWW
+    Assets:Esther:IRA:EWW           0.473 EWW @@ $20
+    Liabilities:Esther
+
+2021/02/05 09:58:00 * Buy FNILX
+    Assets:Esther:IRA:FNILX         7.174 FNILX @@ $100
+    Liabilities:Esther
+
+2021/02/05 17:50:00 * Sell ETH
+    Expenses:Finance:Forex:PayPal              $3.94
+    Assets:PayPal:Personal:ETH           -0.11918743 ETH @@ $196.98
+    Assets:PayPal                               $185
+    Income:Capital Gains:Trading             -$11.98
+    Assets:PayPal
+
+2021/02/05 17:54:00 * Buy ETH
+    Expenses:Finance:Forex:PayPal              $3.00
+    Assets:PayPal:Personal:ETH            0.08926915 ETH @@ $150
+    Assets:PayPal
+
+
+
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org83f4536" class="outline-2">
+<h2 id="org83f4536">Reports</h2>
+<div class="outline-text-2" id="text-org83f4536">
+</div>
+</div>
+<div id="outline-container-org515a063" class="outline-2">
+<h2 id="org515a063">Work</h2>
+<div class="outline-text-2" id="text-org515a063">
+</div>
+<div id="outline-container-orgc386775" class="outline-3">
+<h3 id="orgc386775">Personal</h3>
+<div class="outline-text-3" id="text-orgc386775">
+</div>
+<div id="outline-container-org7fba7f1" class="outline-4">
+<h4 id="org7fba7f1">Heutagogy</h4>
+<div class="outline-text-4" id="text-org7fba7f1">
+</div>
+<ul class="org-ul">
+<li><a id="org0694d11"></a>Personal<br /></li>
+<li><a id="orgf294659"></a>Society<br />
+<ul class="org-ul">
+<li><a id="org5f46bae"></a>Asset management<br />
+<ul class="org-ul">
+<li><a id="org568f2a2"></a>Cheatsheets<br />
+<ul class="org-ul">
+<li><a id="orga250890"></a>Western<br />
+<div class="outline-text-8" id="text-orga250890">
+<ul class="org-ul">
+<li>Don't defer taxes</li>
+</ul>
+</div>
+</li>
+
+<li><a id="org9805eea"></a>Westish<br /></li>
+<li><a id="org95b238e"></a>Anarchist<br /></li>
+<li><a id="org2bb51de"></a>Indigenous<br /></li>
+</ul>
+</li>
+
+<li><a id="org44b7e4e"></a>Learn where to invest existing capital<br />
+<div class="outline-text-7" id="text-org44b7e4e">
+</div>
+<ul class="org-ul">
+<li><a id="org997fb4b"></a>List of resources<br />
+<ul class="org-ul">
+<li><a id="org75e9963"></a>Investopedia simulator<br /></li>
+</ul>
+</li>
+
+
+<li><a id="org137c724"></a><span class="todo TODO">TODO</span> Put together a curriculum<br />
+<div class="outline-text-8" id="text-org137c724">
+<p>
+In order to learn where to invest my existing capital, I need to put together a curriculum.
+</p>
+</div>
+</li>
+
+<li><a id="org3e26296"></a><span class="todo TODO">TODO</span> Decide on asset classes<br />
+<div class="outline-text-8" id="text-org3e26296">
+<ul class="org-ul">
+<li>Western
+<ul class="org-ul">
+<li><b><i>Roth IRA?</i></b>
+<ul class="org-ul">
+<li>Pros
+<ul class="org-ul">
+<li>Taxes will probably go up.
+<ul class="org-ul">
+<li>Pay them now (Roth IRA), tax-free later.</li>
+</ul></li>
+<li>Insured</li>
+</ul></li>
+<li>Cons
+<ul class="org-ul">
+<li>Will the West last another 30 years?
+<ul class="org-ul">
+<li>That's when I'd be able to start using an IRA.</li>
+</ul></li>
+<li>Esther has one and will get employer matching.</li>
+<li>I won't have employer matching.</li>
+<li>10% vig if withdrawn before age 60</li>
+</ul></li>
+</ul></li>
+<li><b>Brokerage</b>
+<ul class="org-ul">
+<li>Facts
+<ul class="org-ul">
+<li>Regulated</li>
+<li>Insured</li>
+</ul></li>
+<li>Pros
+<ul class="org-ul">
+<li>Access to market gains</li>
+</ul></li>
+<li>Cons
+<ul class="org-ul">
+<li>Risk of market crashes</li>
+</ul></li>
+</ul></li>
+<li><b><i>Bank?</i></b>
+<ul class="org-ul">
+<li>Facts
+<ul class="org-ul">
+<li>Insured</li>
+<li>Regulated</li>
+</ul></li>
+<li>Pros
+<ul class="org-ul">
+<li>Stable within West</li>
+</ul></li>
+<li>Cons
+<ul class="org-ul">
+<li>Depreciating</li>
+<li>Esther has them</li>
+</ul></li>
+</ul></li>
+<li><b><i>Real estate</i></b>
+<ul class="org-ul">
+<li>Facts
+<ul class="org-ul">
+<li>Insured</li>
+<li>Regulated</li>
+</ul></li>
+<li>Pros
+<ul class="org-ul">
+<li>West-protected land access</li>
+</ul></li>
+<li>Cons
+<ul class="org-ul">
+<li>Part of genocide</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>Westish
+<ul class="org-ul">
+<li><b>Crypto</b>
+<ul class="org-ul">
+<li>Facts
+<ul class="org-ul">
+<li>Unregulated</li>
+</ul></li>
+<li>Pros</li>
+<li>Cons
+<ul class="org-ul">
+<li>Uninsured</li>
+</ul></li>
+</ul></li>
+<li><b><i>DeFi?</i></b>
+<ul class="org-ul">
+<li>Facts
+<ul class="org-ul">
+<li>Unregulated</li>
+</ul></li>
+<li>Pros</li>
+<li>Cons
+<ul class="org-ul">
+<li>Uninsured</li>
+<li>I don't understand it yet</li>
+</ul></li>
+</ul></li>
+<li><b>Cash</b>
+<ul class="org-ul">
+<li>Pros
+<ul class="org-ul">
+<li>Highly liquid</li>
+</ul></li>
+<li>Cons
+<ul class="org-ul">
+<li>Flammable</li>
+<li>Uninsured</li>
+<li>Depreciating</li>
+</ul></li>
+</ul></li>
+<li><b>Land access</b>
+<ul class="org-ul">
+<li>Facts
+<ul class="org-ul">
+<li>Unregulated</li>
+<li>Uninsured</li>
+</ul></li>
+<li>Pros
+<ul class="org-ul">
+<li>Immediately useful</li>
+</ul></li>
+<li>Cons
+<ul class="org-ul">
+<li>Potential big liability risk?</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>Anarchist</li>
+<li>Indigenous
+<ul class="org-ul">
+<li><b>Seed</b></li>
+<li><b>Stories</b></li>
+</ul></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge24b310" class="outline-3">
+<h3 id="orge24b310">Home</h3>
+<div class="outline-text-3" id="text-orge24b310">
+</div>
+<div id="outline-container-orgc4751b7" class="outline-4">
+<h4 id="orgc4751b7">Domestic labor</h4>
+<div class="outline-text-4" id="text-orgc4751b7">
+</div>
+<ul class="org-ul">
+<li><a id="org718b904"></a>Maintenance<br />
+<ul class="org-ul">
+<li><a id="orge140d26"></a>Water plants<br /></li>
+</ul>
+</li>
+<li><a id="org027d660"></a>Cleaning<br />
+<ul class="org-ul">
+<li><a id="orgdf11b90"></a>Wash dishes<br />
+<ul class="org-ul">
+<li><a id="org7f59106"></a>Wash breakfast dishes<br />
+<div class="outline-text-7" id="text-org7f59106">
+</div>
+</li>
+<li><a id="orge731ed6"></a>Wash dinner dishes<br />
+<div class="outline-text-7" id="text-orge731ed6">
+</div>
+</li>
+<li><a id="orgd0f408c"></a>Wash supper dishes<br />
+<div class="outline-text-7" id="text-orgd0f408c">
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="org142a1a5"></a>Inventory<br />
+<div class="outline-text-5" id="text-org142a1a5">
+</div>
+</li>
+<li><a id="org3761ae4"></a>Resets<br />
+<div class="outline-text-5" id="text-org3761ae4">
+</div>
+</li>
+</ul>
+</div>
+
+<div id="outline-container-orgd97e874" class="outline-4">
+<h4 id="orgd97e874">Gardening</h4>
+</div>
+<div id="outline-container-org437ea1d" class="outline-4">
+<h4 id="org437ea1d">Bookkeeping</h4>
+<div class="outline-text-4" id="text-org437ea1d">
+</div>
+
+<ul class="org-ul">
+<li><a id="orge2271a2"></a>Worldbook<br />
+<div class="outline-text-5" id="text-orge2271a2">
+</div>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org8040401" class="outline-3">
+<h3 id="org8040401">Communities</h3>
+<div class="outline-text-3" id="text-org8040401">
+</div>
+<div id="outline-container-orgdb4b203" class="outline-4">
+<h4 id="orgdb4b203">Western communities</h4>
+</div>
+
+<div id="outline-container-org3412f62" class="outline-4">
+<h4 id="org3412f62">Western Anarchist communities</h4>
+<div class="outline-text-4" id="text-org3412f62">
+</div>
+<ul class="org-ul">
+<li><a id="orgb2aab2b"></a>Chapelboro anarchists<br />
+<ul class="org-ul">
+<li><a id="org79d2d11"></a>Really Really Free Market<br /></li>
+</ul>
+</li>
+
+<li><a id="org876fec5"></a>Food Not Bombs 919<br />
+<ul class="org-ul">
+<li><a id="org4f21119"></a>Weekly FNB919 meal distro<br /></li>
+</ul>
+</li>
+
+<li><a id="orgb547136"></a>Mutual Aid Disaster Relief<br /></li>
+</ul>
+</div>
+
+<div id="outline-container-org5641eb7" class="outline-4">
+<h4 id="org5641eb7">Anarchist</h4>
+<div class="outline-text-4" id="text-org5641eb7">
+</div>
+<ul class="org-ul">
+<li><a id="org2daa404"></a>GAZes<br />
+<ul class="org-ul">
+<li><a id="org672d3a2"></a>Cottenboro GAZ<br />
+<ul class="org-ul">
+<li><a id="org7131477"></a>Really Really Free Market<br /></li>
+</ul>
+</li>
+<li><a id="orgf2b2f2f"></a>WebGAZ<br />
+<ul class="org-ul">
+<li><a id="orgc7933e3"></a>Weekly office hours<br /></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="outline-container-org0eb430a" class="outline-4">
+<h4 id="org0eb430a">Indigenous</h4>
+</div>
+</div>
+
+<div id="outline-container-org381a709" class="outline-3">
+<h3 id="org381a709">Societies</h3>
+<div class="outline-text-3" id="text-org381a709">
+</div>
+<div id="outline-container-org5be1218" class="outline-4">
+<h4 id="org5be1218">Western</h4>
+<div class="outline-text-4" id="text-org5be1218">
+</div>
+<ul class="org-ul">
+<li><a id="org0bf4e9a"></a>Writing<br /></li>
+
+<li><a id="org06fcd90"></a>Asset management<br /></li>
+</ul>
+</div>
+<div id="outline-container-orge498edc" class="outline-4">
+<h4 id="orge498edc">Indigenous</h4>
+<div class="outline-text-4" id="text-orge498edc">
+</div>
+<ul class="org-ul">
+<li><a id="org3861149"></a>Lakota<br />
+<ul class="org-ul">
+<li><a id="orgb2cc7fd"></a>Itažípčo<br /></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara"><p class="footpara"><a href="https://www.fool.com/earnings/call-transcripts/2021/02/04/silicon-motion-technology-corp-simo-q4-2020-earnin/">https://www.fool.com/earnings/call-transcripts/2021/02/04/silicon-motion-technology-corp-simo-q4-2020-earnin/</a></p></div></div>
+
+<div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2">2</a></sup> <div class="footpara"><p class="footpara">That is, my unethical holdings should only be short, informed by qualitative and social research or technical analysis, not fundamentals.</p></div></div>
+
+<div class="footdef"><sup><a id="fn.3" class="footnum" href="#fnr.3">3</a></sup> <div class="footpara"><p class="footpara"><a href="https://www.wsj.com/articles/massmutual-joins-the-bitcoin-club-with-100-million-purchase-11607626800">https://www.wsj.com/articles/massmutual-joins-the-bitcoin-club-with-100-million-purchase-11607626800</a></p></div></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+<p class="date">Date: 2021-02-05 Fri 11:09</p>
+<p class="author">Author: emsenn</p>
+<p class="date">Created: 2021-02-05 Fri 22:18</p>
+</div>
+</body>
+</html>

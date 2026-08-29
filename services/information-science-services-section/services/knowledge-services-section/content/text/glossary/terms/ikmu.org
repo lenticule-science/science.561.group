@@ -1,0 +1,23 @@
+#+SETUPFILE: ./default-setup.inc
+#+TITLE: Ikmu
+#+EXPORT_FILE_NAME: ../pub/ikmu
+#+MACRO: document-type webpage
+#+TOC: headlines 1
+* Introduction
+#+INCLUDE: "./plates.inc::draft"
+Ikmuwiyula is my kitty.
+#+INCLUDE: "./plates.inc::eli-default"
+* Ikmu
+* Supplements
+** Contribute
+   :PROPERTIES:
+   :CUSTOM_ID: supplements-contribute
+   :END:
+#+INCLUDE: "./plates.inc::personal-contribute"
+** Gallery
+
+** License
+   :PROPERTIES:
+   :CUSTOM_ID: supplements-license
+   :END:
+#+INCLUDE: "./plates.inc::mit-license"

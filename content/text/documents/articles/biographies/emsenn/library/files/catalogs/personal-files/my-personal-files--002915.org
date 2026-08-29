@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       b24d919b-b039-4a5f-b652-acc361c71d74
+:ROAM_ALIASES: "my personal files"
+:END:
+#+title: emsenn's personal files
+
+These are the personal files of [[id:40cbaad9-af3c-4573-b356-ae116687e483][emsenn]]
+
+- [[id:9c4c0810-7aa6-42d7-8ef8-37e7b54a0d9e][emsenn's Gaming Log]]
+- [[id:8fe09255-271e-43c9-ac83-eb9ae1f6b4ed][emsenn's Music Log]]
+- [[id:a1f8a9d7-8321-4fbd-878f-9fbad9ce1eaf][emsenn's Television Log]]

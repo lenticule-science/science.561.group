@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/system/library/operating-system/library/computer-operating-system/library/posix-computer-operating-system-function-implemented-in-esm-node/posix-computer-operating-system-function-implemented-in-esm-node.schema.json",
+  "title": "posix-computer-operating-system-function-implemented-in-esm-node",
+  "description": "Audit object for a POSIX-addressable computer-operating-system function implemented as an ESM Node module. The transformer being realized supplies the math contract; this schema records the POSIX/Node realization facts.",
+  "type": "object",
+  "required": ["path", "module-system", "runtime", "observations", "effects", "conforms", "violations"],
+  "additionalProperties": false,
+  "properties": {
+    "path": {
+      "type": "string",
+      "minLength": 1
+    },
+    "module-system": {
+      "const": "esm"
+    },
+    "runtime": {
+      "const": "node"
+    },
+    "posix-file-kind": {
+      "type": "string",
+      "enum": ["regular-file", "unknown"]
+    },
+    "mode": {
+      "description": "POSIX mode bits rendered in octal when the caller supplied stat data.",
+      "type": "string",
+      "pattern": "^0[0-7]{3,4}$"
+    },
+    "declared-role": {
+      "type": "string",
+      "enum": ["transformer-body", "cli-wrapper", "helper", "runtime-service", "hook-handler", "wire-adapter", "unknown"]
+    },
+    "declared-capabilities": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["argv", "stdio", "cwd", "env", "filesystem-read", "filesystem-write", "subprocess", "network", "clock", "schema-validation", "dynamic-import"]
+      },
+      "uniqueItems": true
+    },
+    "observations": {
+      "type": "object",
+      "required": ["has-default-export", "has-cli-entrypoint", "uses-module-relative-resolution", "uses-repo-root-constant"],
+      "additionalProperties": false,
+      "properties": {
+        "has-default-export": {"type": "boolean"},
+        "has-cli-entrypoint": {"type": "boolean"},
+        "uses-module-relative-resolution": {"type": "boolean"},
+        "uses-repo-root-constant": {"type": "boolean"},
+        "imports-ajv": {"type": "boolean"},
+        "mentions-schema-json": {"type": "boolean"}
+      }
+    },
+    "effects": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["argv", "stdin", "stdout", "stderr", "cwd", "env", "filesystem-read", "filesystem-write", "subprocess", "network", "clock", "dynamic-import"]
+      },
+      "uniqueItems": true
+    },
+    "conforms": {
+      "type": "boolean"
+    },
+    "violations": {
+      "type": "array",
+      "items": {"type": "string"}
+    }
+  }
+}

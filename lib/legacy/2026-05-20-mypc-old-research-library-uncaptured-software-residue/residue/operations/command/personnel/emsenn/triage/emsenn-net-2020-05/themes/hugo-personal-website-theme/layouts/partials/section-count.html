@@ -1,0 +1,2 @@
+{{- $sectionCount := (len (where .Site.RegularPages "Type" .Section)) -}}
+{{- $sectionCount }} <a href="{{ .Section }}/">{{- if (eq $sectionCount 1) -}}{{- .Section | humanize | lower | singularize -}}{{- else -}}{{- .Section | humanize | lower -}}{{- end -}}</a>{{- printf "" -}}

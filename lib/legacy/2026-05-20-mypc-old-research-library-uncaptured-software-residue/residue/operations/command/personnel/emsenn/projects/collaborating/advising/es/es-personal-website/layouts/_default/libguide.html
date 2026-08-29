@@ -1,0 +1,71 @@
+{{ define "content" }}
+  {{ partial "section-content.html" . }}
+
+  <!-- playing with stuff -->
+
+  {{ range $section, $listings := $.Site.Data.libguide }}
+    <h3>{{ $section }}</h3>
+      <section class="annotation" id="{{ urlize $section }}">
+      {{ range $listings }}
+        {{ $listing := . }}
+        {{ if .ISBN13 }}
+          {{ $listingData := getJSON "http://openlibrary.org/api/books?bibkeys=ISBN:" .ISBN13 "&jscmd=details&format=json" }}
+          {{ range $isbn, $data := $listingData }}
+            {{ if $data.details.title }}
+              <a style="font-size: 1.8em;" href="https://openlibrary.org{{ $data.details.key }}">
+                {{ $data.details.title }}
+              </a>
+              <p>
+                by
+                {{ if $data.details.by_statement }}
+                  {{ $data.details.by_statement }}
+                {{ else if $data.details.authors }}
+                  {{ range $data.details.authors }}
+                    <a href="https://openlibrary.org{{ .key }}">{{ .name }}</a>
+                  {{ end }}
+                {{ else if $listing.author }}
+                  {{ $listing.author }}
+                {{ else }}
+                  <span style="color: red">Remote data is missing by_statement and author, please set "author" within this record.</span>
+                {{ end }}
+            {{ else }}
+              <span style="color: red">Missing title; check ISBN!</span>
+            {{ end }}
+            </p>
+          {{ end }}
+        {{ else if .URL }}
+          <a style="font-size: 1.8em;" href="{{ .URL }}">{{ .title }}</a>
+          <p>
+          {{ if .author }}
+            by
+            {{ if .author_URL }}
+              <a href="{{ .author_URL }}">
+            {{ end }}
+            {{ .author }}
+            {{ if .author_URL }}
+              </a>
+            {{ end }}
+          {{ else if .interviewer }}
+            hosted by {{ .interviewer }}
+            {{ if .interviewee }}
+              interviewing {{ .interviewee }}
+            {{ end }}
+          {{ end }}
+        {{ else }}
+          <span style="color: red">{{ .title }} is unsourced!</span>
+        {{ end }}
+        </p>
+        {{ with .annotation }}
+          <p>{{ . | markdownify }}</p>
+        {{ end }}
+      {{ end }}
+    </section>
+  {{ end }}
+  </ul>
+
+  <!-- looking up isbn -->
+  <!-- reading data file -->
+  <!-- combine isbn w/ data entries -->
+  <!-- render toc -->
+  <!-- render entries -->
+{{ end }}

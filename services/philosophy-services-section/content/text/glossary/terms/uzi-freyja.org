@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       7e591672-1914-4cf6-a9e6-a7689a16ff4a
+:END:
+#+title: Uzi Freyja
+#+date: [2025-07-21 Mon 17:21]
+#+index: Uzi Freyja
+Uzi Freyja is a [[id:de595b66-d89d-41d6-87fc-724482ec16ec][music artist]].
+* Tracks
+** "Don't Disturb Me"
+:PROPERTIES:
+:ID:       aafc0bcc-ca83-4a55-86ca-ac23c57b3bea
+:END:
+[[id:3e4481fd-c3f3-499b-8c74-9fec05bcc8c4][music track]], [[id:2d282dfa-7ba3-4d3b-91e7-26b146ff93d1][hip-hop]], [[id:53132310-edf7-4f34-afdc-67c0470eda04][punk]]
+https://www.youtube.com/watch?v=vhg1XDvqOwM

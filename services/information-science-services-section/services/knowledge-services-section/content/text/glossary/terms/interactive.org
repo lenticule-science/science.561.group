@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       b77b529f-0a9e-45b0-a9cd-16e5f90b98ad
+:END:
+#+title: interactive
+#+date: [2025-10-04 Sat 09:27]
+

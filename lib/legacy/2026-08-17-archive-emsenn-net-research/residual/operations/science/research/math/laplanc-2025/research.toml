@@ -1,0 +1,18 @@
+[program]
+title = "Laplanc-2025"
+subtitle = "Laplacianizability as a moduli problem"
+
+[corpus]
+lib_dirs = [
+    "concepts", "objects", "morphisms", "theorems",
+    "examples", "narratives", "questions", "references",
+]
+bib = "references.bib"
+
+[validate]
+min_body_chars = 200
+# No Lean side yet.
+lean_dir = ""
+
+[compose]
+output = "publications/monograph.md"

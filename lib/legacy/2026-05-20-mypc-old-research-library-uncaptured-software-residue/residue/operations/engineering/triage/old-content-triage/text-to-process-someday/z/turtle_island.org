@@ -1,0 +1,20 @@
+#+title: Turtle Island
+#+begin_head
+#+ghe_schema: record-0.1.3
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-24 Thu 15:30]
+#+end_head
+
+#+name: definition
+*/Turtle Island/*, or North and Central America, is one of the continents of [[file:earth.org][Earth]].
+
+#toc: headlines 2
+* Intrododuction
+* Turtle Island
+* Supplements
+** Record history
+   :LOGBOOK:
+   - Note taken on [2020-12-24 Thu 15:30] \\
+     Created
+   :END:

@@ -1,0 +1,64 @@
+---
+title: "Consensus"
+date-created: 2026-03-06
+aliases:
+  - "consensus"
+  - "consensus decision-making"
+tags: []
+description: "A decision-making process in which a group works toward a proposal everyone can accept — not unanimity or voting, but a commitment to hearing all concerns and modifying proposals until no one is compelled to comply with a decision they find unacceptable."
+defines:
+  - "Consensus"
+  - "consensus decision-making"
+---
+
+Consensus is a decision-making process in which a group works toward a proposal that everyone can accept. It is not the same as unanimity (everyone enthusiastically agrees) or voting (the majority decides and the minority complies). Consensus means that every person affected by a decision has the opportunity to raise concerns, propose modifications, and — if a proposal is truly unacceptable to them — block it. The process is not complete until either the proposal is modified to address all serious concerns or those with concerns agree to stand aside (accept a decision they would not have chosen but can live with).
+
+This process is central to [anarchist](../_index.md) organization because it embodies the principle that no one should be compelled to obey a decision they had no meaningful role in making. Voting, even democratic voting, produces a minority that is bound by a decision it opposed. Consensus refuses this: if you cannot persuade everyone affected, you do not have the right to impose the decision. This makes consensus slow — sometimes very slow — and that slowness is a feature, not a deficiency. [Temporal autonomy](./temporal-autonomy.md) — the capacity to take the time a decision requires — is the condition that makes consensus possible. [Speed](./speed.md) selects for hierarchy because only [authority](./authority.md) can override disagreement quickly.
+
+Consensus has several practical mechanisms. A *proposal* is offered for the group's consideration. *Discussion* surfaces concerns, questions, and modifications. *Amended proposals* incorporate what the discussion revealed. *Stand-asides* allow individuals to register disagreement without blocking — they disagree but do not consider the proposal intolerable. *Blocks* indicate that a proposal is fundamentally unacceptable to someone and cannot proceed without further modification. The threshold for blocking varies by group — some require that blocks be grounded in the group's shared principles rather than individual preference.
+
+The standard objection is that consensus doesn't scale and can be paralyzed by a single obstructionist. Anarchist practice responds in several ways. [Affinity groups](./affinity-group.md) keep the decision-making unit small enough for genuine consensus. [Federation](./federation.md) coordinates across groups through delegates who carry mandates from their home assemblies — the delegate conveys the assembly's decision, not their own opinion. And the right to block carries the responsibility of engaging seriously: a block without a stated reason or a willingness to work toward resolution is a failure of the process, not a feature of it.
+
+Many Indigenous governance systems practiced consensus for centuries before European [anarchism](../_index.md) gave it a theoretical framework. Haudenosaunee (Iroquois) confederacy governance, for instance, required consensus among nations — and included mechanisms for extended deliberation, recusal, and the separation of decisions that affect different groups. These are not primitive precursors but sophisticated systems from which anarchist practice has much to learn.
+
+
+---
+
+<!-- source: content/critical-theory/domains/anarchism/terms/consensus.md -->
+
+## Imported source: content/critical-theory/domains/anarchism/terms/consensus.md
+
+---
+title: "Consensus"
+date-created: 2026-03-06
+type: term
+aliases:
+  - "consensus"
+  - "consensus decision-making"
+tags: []
+description: "A decision-making process in which a group works toward a proposal everyone can accept — not unanimity or voting, but a commitment to hearing all concerns and modifying proposals until no one is compelled to comply with a decision they find unacceptable."
+defines:
+  - "Consensus"
+  - "consensus decision-making"
+---
+
+Consensus is a decision-making process in which a group works toward a proposal that everyone can accept. It is not the same as unanimity (everyone enthusiastically agrees) or voting (the majority decides and the minority complies). Consensus means that every person affected by a decision has the opportunity to raise concerns, propose modifications, and — if a proposal is truly unacceptable to them — block it. The process is not complete until either the proposal is modified to address all serious concerns or those with concerns agree to stand aside (accept a decision they would not have chosen but can live with).
+
+This process is central to [anarchist](../index.md) organization because it embodies the principle that no one should be compelled to obey a decision they had no meaningful role in making. Voting, even democratic voting, produces a minority that is bound by a decision it opposed. Consensus refuses this: if you cannot persuade everyone affected, you do not have the right to impose the decision. This makes consensus slow — sometimes very slow — and that slowness is a feature, not a deficiency. [Temporal autonomy](./temporal-autonomy.md) — the capacity to take the time a decision requires — is the condition that makes consensus possible. [Speed](./speed.md) selects for hierarchy because only [authority](./authority.md) can override disagreement quickly.
+
+Consensus has several practical mechanisms. A *proposal* is offered for the group's consideration. *Discussion* surfaces concerns, questions, and modifications. *Amended proposals* incorporate what the discussion revealed. *Stand-asides* allow individuals to register disagreement without blocking — they disagree but do not consider the proposal intolerable. *Blocks* indicate that a proposal is fundamentally unacceptable to someone and cannot proceed without further modification. The threshold for blocking varies by group — some require that blocks be grounded in the group's shared principles rather than individual preference.
+
+The standard objection is that consensus doesn't scale and can be paralyzed by a single obstructionist. Anarchist practice responds in several ways. [Affinity groups](./affinity-group.md) keep the decision-making unit small enough for genuine consensus. [Federation](./federation.md) coordinates across groups through delegates who carry mandates from their home assemblies — the delegate conveys the assembly's decision, not their own opinion. And the right to block carries the responsibility of engaging seriously: a block without a stated reason or a willingness to work toward resolution is a failure of the process, not a feature of it.
+
+Many Indigenous governance systems practiced consensus for centuries before European [anarchism](../index.md) gave it a theoretical framework. Haudenosaunee (Iroquois) confederacy governance, for instance, required consensus among nations — and included mechanisms for extended deliberation, recusal, and the separation of decisions that affect different groups. These are not primitive precursors but sophisticated systems from which anarchist practice has much to learn.
+
+## Related terms
+
+- [Hierarchy](./hierarchy.md) — the structure consensus replaces
+- [Authority](./authority.md) — the command consensus refuses
+- [Temporal autonomy](./temporal-autonomy.md) — the condition consensus requires
+- [Speed](./speed.md) — the pressure that undermines consensus
+- [Affinity group](./affinity-group.md) — the scale at which consensus works most directly
+- [Federation](./federation.md) — how consensus scales across groups
+- [Self-organization](./self-organization.md) — the capacity consensus expresses
+- [Freedom](./freedom.md) — the condition in which no one is bound by decisions they did not help make

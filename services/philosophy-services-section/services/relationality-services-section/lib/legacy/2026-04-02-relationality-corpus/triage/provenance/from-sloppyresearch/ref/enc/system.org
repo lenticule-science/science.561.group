@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       0cfd72af-ade5-49a3-a367-ebf9fcdcf0da
+:END:
+#+title: system
+#+date [2025-08-11 Mon 23:03]
+

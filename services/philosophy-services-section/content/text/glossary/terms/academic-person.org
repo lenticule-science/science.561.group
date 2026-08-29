@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       13e446c0-c09b-4e9c-930a-2a95b7a45fdc
+:instantiates: [[id:9fee0f36-1b36-43c7-b896-14b6700c7738][person]]
+:field:    [[id:d2053605-bc09-4bd4-88d4-2e4f6c52941f][academics]]
+:END:
+#+title: academic person
+#+date: [2025-09-01 Mon 08:32]
+#+index: academics!academic person

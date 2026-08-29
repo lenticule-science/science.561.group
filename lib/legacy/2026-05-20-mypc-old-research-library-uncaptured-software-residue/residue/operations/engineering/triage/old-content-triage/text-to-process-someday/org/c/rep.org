@@ -1,0 +1,140 @@
+#+BEGIN: clocktable :scope agenda-with-archives :skipstep0 t :fileskip0 t :wstart 0 :step day :maxlevel 3 :block thisweek
+
+Daily report: [2021-10-10 Sun]
+| File       | Headline                            | Time   |      |      |
+|------------+-------------------------------------+--------+------+------|
+|            | ALL *Total time*                    | *0:35* |      |      |
+|------------+-------------------------------------+--------+------+------|
+| emsenn.org | *File time*                         | *0:35* |      |      |
+|            | Journal                             | 0:32   |      |      |
+|            | \_  2021-W41                        |        | 0:32 |      |
+|            | \_    [2021-10-10 Sun 08:47]        |        |      | 0:31 |
+|            | \_    [2021-10-10 Sun 12:39]        |        |      | 0:01 |
+|            | Compositions                        | 0:03   |      |      |
+|            | \_  Manuals                         |        | 0:03 |      |
+|            | \_    Personal Recordkeeping Manual |        |      | 0:03 |
+
+Daily report: [2021-10-11 Mon]
+| File       | Headline                            |   Time |      |      |
+|------------+-------------------------------------+--------+------+------|
+|            | ALL *Total time*                    | *4:30* |      |      |
+|------------+-------------------------------------+--------+------+------|
+| ops.org    | *File time*                         | *0:32* |      |      |
+|            | Routine                             |   0:32 |      |      |
+|            | \_  Everyday                        |        | 0:19 |      |
+|            | \_    Wash the dishes               |        |      | 0:19 |
+|            | \_  Anyday                          |        | 0:13 |      |
+|            | \_    Meals                         |        |      | 0:13 |
+|------------+-------------------------------------+--------+------+------|
+| bib.org    | *File time*                         | *3:00* |      |      |
+|            | Ways of Life 1: Original Affluence  |   0:01 |      |      |
+|            | Ways of Life 2: Another Perspective |   0:01 |      |      |
+|            | Pollution is Colonialism            |   1:37 |      |      |
+|            | Charcoal Making at Home             |   1:21 |      |      |
+|------------+-------------------------------------+--------+------+------|
+| emsenn.org | *File time*                         | *0:58* |      |      |
+|            | Journal                             |   0:37 |      |      |
+|            | \_  2021-W41                        |        | 0:37 |      |
+|            | \_    [2021-10-11 Mon 09:09]        |        |      | 0:03 |
+|            | \_    [2021-10-11 Mon 11:34]        |        |      | 0:15 |
+|            | \_    [2021-10-11 Mon 14:26]        |        |      | 0:19 |
+|            | Compositions                        |   0:21 |      |      |
+|            | \_  Manuals                         |        | 0:02 |      |
+|            | \_    Personal Recordkeeping Manual |        |      | 0:02 |
+|            | \_  Bibliographies                  |        | 0:19 |      |
+|            | \_    Web Resources                 |        |      | 0:01 |
+|            | \_    Decolonial Bibliography       |        |      | 0:18 |
+
+Daily report: [2021-10-12 Tue]
+| File       | Headline                     |   Time |      |      |
+|------------+------------------------------+--------+------+------|
+|            | ALL *Total time*             | *5:13* |      |      |
+|------------+------------------------------+--------+------+------|
+| ops.org    | *File time*                  | *3:22* |      |      |
+|            | Routine                      |   3:22 |      |      |
+|            | \_  Everyday                 |        | 1:58 |      |
+|            | \_    Tidy the porch         |        |      | 1:58 |
+|            | \_  Anyday                   |        | 1:24 |      |
+|            | \_    Gardening              |        |      | 1:24 |
+|------------+------------------------------+--------+------+------|
+| bib.org    | *File time*                  | *0:09* |      |      |
+|            | Pollution is Colonialism     |   0:09 |      |      |
+|------------+------------------------------+--------+------+------|
+| emsenn.org | *File time*                  | *1:42* |      |      |
+|            | Journal                      |   0:02 |      |      |
+|            | \_  2021-W41                 |        | 0:02 |      |
+|            | \_    [2021-10-12 Tue 08:45] |        |      | 0:02 |
+|            | Ramblings                    |   1:34 |      |      |
+|            | \_  2021-W41                 |        | 1:34 |      |
+|            | \_    Chat: Discord          |        |      | 0:31 |
+|            | \_    Chat: Discord          |        |      | 1:03 |
+|            | Compositions                 |   0:06 |      |      |
+|            | \_  Misc                     |        | 0:06 |      |
+|            | \_    On Collapse            |        |      | 0:06 |
+
+Daily report: [2021-10-13 Wed]
+| File       | Headline                     | Time   |      |      |
+|------------+------------------------------+--------+------+------|
+|            | ALL *Total time*             | *2:26* |      |      |
+|------------+------------------------------+--------+------+------|
+| ops.org    | *File time*                  | *2:23* |      |      |
+|            | Routine                      | 2:23   |      |      |
+|            | \_  Everyday                 |        | 0:40 |      |
+|            | \_    Tidy the porch         |        |      | 0:40 |
+|            | \_  Anyday                   |        | 1:43 |      |
+|            | \_    Recordkeeping          |        |      | 0:12 |
+|            | \_    Gardening              |        |      | 1:31 |
+|------------+------------------------------+--------+------+------|
+| emsenn.org | *File time*                  | *0:03* |      |      |
+|            | Journal                      | 0:02   |      |      |
+|            | \_  2021-W41                 |        | 0:02 |      |
+|            | \_    [2021-10-13 Wed 08:58] |        |      | 0:02 |
+|            | Compositions                 | 0:01   |      |      |
+|            | \_  Software                 |        | 0:01 |      |
+|            | \_    Emacsen                |        |      | 0:01 |
+
+Daily report: [2021-10-14 Thu]
+| File       | Headline                            | Time   |      |      |
+|------------+-------------------------------------+--------+------+------|
+|            | ALL *Total time*                    | *7:13* |      |      |
+|------------+-------------------------------------+--------+------+------|
+| ops.org    | *File time*                         | *7:02* |      |      |
+|            | Routine                             | 7:02   |      |      |
+|            | \_  Everyday                        |        | 2:31 |      |
+|            | \_    Tidy downstairs               |        |      | 0:19 |
+|            | \_    Wash the dishes               |        |      | 0:42 |
+|            | \_    Tidy downstairs               |        |      | 1:30 |
+|            | \_  Anyday                          |        | 4:31 |      |
+|            | \_    Recordkeeping                 |        |      | 0:16 |
+|            | \_    Gardening                     |        |      | 4:15 |
+|------------+-------------------------------------+--------+------+------|
+| emsenn.org | *File time*                         | *0:11* |      |      |
+|            | Journal                             | 0:10   |      |      |
+|            | \_  2021-W41                        |        | 0:10 |      |
+|            | \_    [2021-10-14 Thu 20:37]        |        |      | 0:10 |
+|            | Compositions                        | 0:01   |      |      |
+|            | \_  Manuals                         |        | 0:01 |      |
+|            | \_    Personal Recordkeeping Manual |        |      | 0:01 |
+
+Daily report: [2021-10-15 Fri]
+| File    | Headline         | Time   |      |      |
+|---------+------------------+--------+------+------|
+|         | ALL *Total time* | *3:05* |      |      |
+|---------+------------------+--------+------+------|
+| ops.org | *File time*      | *3:05* |      |      |
+|         | Routine          | 3:05   |      |      |
+|         | \_  Anyday       |        | 3:05 |      |
+|         | \_    Gardening  |        |      | 3:05 |
+
+Daily report: [2021-10-16 Sat]
+| File    | Headline            | Time   |      |      |
+|---------+---------------------+--------+------+------|
+|         | ALL *Total time*    | *7:38* |      |      |
+|---------+---------------------+--------+------+------|
+| ops.org | *File time*         | *7:38* |      |      |
+|         | Routine             | 7:38   |      |      |
+|         | \_  Anyday          |        | 7:38 |      |
+|         | \_    Recordkeeping |        |      | 5:58 |
+|         | \_    Chilling      |        |      | 1:06 |
+|         | \_    Meals         |        |      | 0:34 |
+#+END:

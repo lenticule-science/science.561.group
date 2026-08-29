@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       e8f57622-69c7-431c-be56-612a79491f05
+:END:
+#+title: boundary
+#+date: [2025-08-28 Thu 13:50]
+

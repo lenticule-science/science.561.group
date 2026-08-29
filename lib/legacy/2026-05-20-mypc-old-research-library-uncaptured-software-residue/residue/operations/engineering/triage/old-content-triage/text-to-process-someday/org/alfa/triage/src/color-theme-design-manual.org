@@ -1,0 +1,246 @@
+#+SETUPFILE: ~/org/templates/setupfile0.org
+#+TITLE: Procedure for Styling a Document with a Color Theme
+#+INDEX: manual!graphic design!"Procedure for Styling a Document with a Color Theme"
+#+INDEX: manual!document design!"Procedure for Styling a Document with a Color Theme"
+#+INDEX: manual!web design!"Procedure for Styling a Document with a Color Theme"
+#+INDEX: web design!manual!"Procedure for Styling a Document with a Color Theme"
+* Introduction
+#+INCLUDE: "~/org/templates/eli.org::#eli"
+* DRAFTING Procedure for Styling a Document with a Color Theme
+    :PROPERTIES:
+    :EXPORT_FILE_NAME: procedure-for-styling-a-document-with-a-color-theme
+    :END:
+This section is an explanation of how to build a /color styling/ for a
+document by using /color attribute parameters/ consisting of at least
+a /primary hue/, but optionally /saturation/, /light/, and a
+/secondary/ set of /color parameters/. (This grouping of /color
+attribute parameters/ is referred to as a /color theme/.)
+
+The first section below, */[Themes](#themes)/*, further specifies that definition of a /color
+theme/.
+
+The second section below, */[Color Definitions](#color-definitions)/*, documents how the
+specific colors to be used in the /color styling/ are generated from the /color theme/.
+The specific colors are:
+- */[Primary Color](#primary-color)/*, which is used in patterns and lines in the
+  document.
+- */[Secondary Color](#secondary-color)/*, which is used to fill white space.
+- */[Background Color](#background-color)/*, which is used behind text.
+- */[Font Color](#font-color)/*, which is used to color the text.
+- */[Background Contrast Color](#background-contrast-color)/*, which is used to highlight
+  text against the background.
+- */[Font Contrast Color](#font-contrast-color)/*, which is used to color text within an
+  element using the /background contrast color/.
+
+The third section below, */[Elements](#elements)/*, specifies which colors should be applied
+to which parts of a document.  The colored elements are:
+- */[Primary Pattern Fill](#primary-pattern-fill)/*, the line color of the background
+  pattern in HTML documents
+- */[Background](#background)/*, the color of the document's margins
+- */[Content Background](#content-background)/*, the color of the background of the
+  document's content.
+* Themes
+A */color theme/* is a set of parameters representing up to two sets of */color attribute parameters/*: a set of
+hue, saturation, and light.  /(It may be useful to read the [Wikipedia article on the HSL
+color model](https://en.wikipedia.org/wiki/HSL_and_HSV).)/
+
+The only required parameter is /primary hue/ (~primaryHue~): this defines where the
+primary color value is in a circular red-green-blue color space.  That is, a hue of 0 or
+360 is red, 120 is green, and 240 is blue.
+
+The /primary saturation/ parameter defines the colorfulness of the primary color parameter,
+and is a measure of percent.  The /primary light/ parameter defines the tint or shade of
+the primary color value, and is a measure of percent with 0 being shaded pure black and
+100 being tinted pure white.
+
+The [Color Definitions](#color-definitions) below come with conditions for assuming any
+missing parameters.
+* Color Definitions
+** Primary Color
+The */primary color/* is used in the /[primary pattern fill](#primary pattern-fill)/ element.
+*** Primary Color Hue
+The */primary color hue/* is defined by the color theme's /primary hue/.  If that is not
+set, 200, a blue, is used as the default.
+#+BEGIN_SRC
+if primaryHue:
+  Hue = primaryHue
+else:
+  Hue = 200
+#+END_SRC
+*** Primary Color Saturation
+The */primary color saturation/* is defined by the color theme's /primary saturation/.  If
+that is not set but /secondary saturation/ is and is greater than 60%, the /primary color
+saturation/ is defined as ~80%~.  Otherwise, it is defined as ~60%~.
+#+BEGIN_SRC
+if primarySaturation:
+  Saturation = primarySaturation
+else if secondarySaturation:
+  if secondarySaturation > 60:
+    Saturation = 80
+else:
+  Saturation = 60
+#+END_SRC
+*** Primary Color Light
+The */primary color light/* is defined by the color theme's /primary light/.  If that is not
+set, but the /secondary light/ is, /primary color light/ is defined as the difference
+between 100 and it.  Otherwise, /primary color light/ is defined as 20.
+#+BEGIN_SRC
+if primaryLight:
+  Light = primaryLight
+else if secondaryLight:
+  Light = (100 - secondaryLight)
+else:
+  Light = 20
+#+END_SRC
+** Secondary Color
+The */secondary color/* is used in the /[background](#background)/ element.
+*** Secondary Color Hue
+The */secondary color hue/* is defined by the theme's /secondary hue/.  If that is not
+set, but /primary hue/ is, it is used instead.  Otherwise, a default hue of 200, a blue,
+is used.
+#+BEGIN_SRC
+if secondaryHue:
+  Hue = secondaryHue
+else if primaryHue:
+  Hue = primaryHue
+else:
+  Hue = 200
+#+END_SRC
+*** Secondary Color Saturation
+The */secondary color saturation/* is defined by the theme's /secondary saturation/.  If
+that is not set, but /primary saturation/ is, that value is used unless it is greater than 50 in
+which case the difference between it and 50 is subtracted from 50 and used.  Otherwise, a
+value of 20 is used.
+#+BEGIN_SRC
+if secondarySaturation:
+  Saturation = secondarySaturation
+else if primarySaturation:
+  if primarySaturation > 50:
+    Saturation = (50 - (primarySaturation - 50))
+  else:
+    Saturation = primarySaturation
+else:
+  Saturation = 20
+#+END_SRC
+*** Secondary Color Light
+The */secondary color light/* is defined by the theme's /secondary light/.  If that is not
+set, but /primary light/ is, the /secondary color light/ is defined as the difference
+between 100 and it.  Otherwise, a value of 20 is used.
+#+BEGIN_SRC
+if secondaryLight:
+  Light = secondaryLight
+else if primaryLight:
+  Light = (100 - primaryLight)
+else:
+  Light = 80
+#+END_SRC
+** Background Color
+The */background color/* is used for the /[content background](#content-background)/ element.
+*** Background Color Hue
+The */background color hue/* is defined by the theme's /secondary hue/.  If that is not
+provided, but /primary hue/ is, that is used.  Otherwise, a value of 200 is used.
+#+BEGIN_SRC python
+if secondaryHue:
+  Hue = secondaryHue
+else if primaryHue:
+  Hue = primaryHue
+else:
+  Hue = 200
+#+END_SRC
+*** Background Color Saturation
+The */background color saturation/* is defined by the theme's /secondary saturation/.  If
+that is not provided, but the /primary saturation/ is, that is used.  Otherwise, a value
+of 20 is used.
+#+BEGIN_SRC python
+if secondarySaturation:
+  Saturation = secondarySaturation
+else if primarySaturation:
+  Saturation = primarySaturation
+else:
+  Saturation = 20
+#+END_SRC
+*** Background Color Light
+The */background color light/* is defined as the theme's /secondary light/ divided by 10
+added to 90.  If the /secondary light/ is not provided, the /primary light/ is used
+instead.  Otherwise, a value of 98 is used.
+#+BEGIN_SRC python
+if secondaryLight:
+  Light = ((secondaryLight / 10) + 90)
+else if primaryLight:
+  Light = ((primaryLight / 10) + 90)
+else:
+  Light = 90
+#+END_SRC
+** DRAFTING Font Color
+The */font color/* is used for the /[content text](#content-text)/ element.
+*** DRAFTING Font Color Hue
+The */font color hue/* is defined by the theme's /primary hue/.  If that is not provided,
+a default of 200 is used.
+#+BEGIN_SRC python
+if primaryHue:
+  Hue = primaryHue
+else:
+  Hue = 200
+#+END_SRC
+*** DRAFTING Font Color Saturation
+The */font color saturation/* is defined as the theme's /primary saturation/ divided by 5
+added to 20.  If that is not provided, a default of 24 is used.
+#+BEGIN_SRC python
+if primarySaturation:
+  Saturation = ((primarySaturation / 5) + 20)
+else:
+  Saturation = 24
+#+END_SRC
+*** DRAFTING Font Color Light
+The */font color light/* is defined as the theme's /primary light/ divided by 10 added
+to 15.  If that is not provided, a default of 18 is used.
+#+BEGIN_SRC python
+if primaryLight:
+  Light = ((primaryLight / 10) + 15)
+else:
+  Light = 18
+#+END_SRC
+** DRAFTING Background Contrast Color
+The */background contrast color/* is used for the /[selection](#selection)/ and
+/[focused](#focused)/ elements.
+*** DRAFTING Background Contrast Hue
+The */background contrast hue/* is defined by the theme's /primary hue/.  If that is not
+provided, a default of 200 is used.
+#+BEGIN_SRC python
+if primaryHue:
+  Hue = primaryHue
+else:
+  Hue = 200
+#+END_SRC
+*** DRAFTING Background Contrast Saturation
+The */background contrast saturation/* is defined as the theme's /primary saturation/,
+unless that parameter is less than fifty, in which case the parameter is added to 50 and
+used.  If /primary saturation/ is not set, a default value of 70 is used.
+#+BEGIN_SRC python
+if primarySaturation:
+  if primarySaturation < 50:
+    Saturation = (primarySaturation + 50)
+else:
+  Saturation = 70
+#+END_SRC
+*** DRAFTING Background Contrast Light
+The */background contrast light/* is defined as the theme's...
+** Element Coloring
+*** Primary Pattern Fill
+The */primary pattern fill/* is defined as the /[primary color](#primary-color)/, and is
+used to color the lines in the pattern used in the document's background.
+*** Page Background
+The */page background/* is defined as the /[secondary color](#secondary-color)/.
+
+In HTML documents, it is used as the color for the ~background-color~ rule in the ~<body>~
+tag.
+*** Content Background
+The */content background/* is defined as the /[background color](#background-color)/.
+
+In HTML documents, it is used as the color for the ~background-color~ rule in the
+~<header>~, ~<main>~, and ~<footer>~ tags.
+*** Content Text
+*** Selection
+*** Focused
+* Supplements
+#+INCLUDE: "./mit-license.org::#license"

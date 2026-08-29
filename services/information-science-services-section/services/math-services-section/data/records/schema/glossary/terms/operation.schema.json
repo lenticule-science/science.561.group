@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "glossary/terms/operation",
+  "title": "operation",
+  "description": "An n-ary endofunction on a carrier, ω : A^n → A — internal (maps a carrier within itself), as opposed to a function/operator that maps between structures. The GENERAL operation; binary-operation is the arity-2 case and a 0-ary operation is a constant (a unit). The 'binary-operation' magma is built from is this object restricted to arity 2.",
+  "type": "object",
+  "required": [
+    "carrier",
+    "arity"
+  ],
+  "properties": {
+    "carrier": {
+      "description": "the carrier A the operation acts within",
+      "$ref": "./carrier.schema.json"
+    },
+    "arity": {
+      "description": "n ≥ 0; n=0 constant/unit, n=1 unary (closure/endomorphism), n=2 binary-operation",
+      "type": "integer",
+      "minimum": 0
+    }
+  }
+}

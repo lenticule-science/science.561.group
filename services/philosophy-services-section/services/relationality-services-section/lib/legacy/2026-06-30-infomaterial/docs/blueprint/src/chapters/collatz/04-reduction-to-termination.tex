@@ -1,0 +1,28 @@
+\section{Reduction to termination}
+
+\begin{theorem}[Crossing words are first-passage]
+  \label{thm:collatz-crossing-firstpassage}
+  \lean{Infomaterial.Closure.Collatz.firstCoeffCrossing_word_is_firstPassage}
+  \leanok
+  \uses{thm:collatz-firstpassage-iff}
+  The first coefficient crossing of a seed --- first contracting prefix length, all shorter
+  parity words noncontracting --- yields a first-passage word.
+\end{theorem}
+\begin{theorem}[Descent below self reduces to termination]
+  \label{thm:collatz-reduction}
+  \lean{Infomaterial.Closure.Collatz.reachesTerminal_of_all_fall_below}
+  \leanok
+  \uses{thm:collatz-descent-iff}
+  If every seed above the terminal cycle eventually drops below itself, every positive seed
+  reaches the terminal cycle (strong induction, orbit splicing). This is the proven half of the
+  strict-finite reduction.
+\end{theorem}
+\begin{theorem}[Conditional Collatz termination]
+  \label{thm:collatz-conditional}
+  \lean{Infomaterial.Closure.Collatz.collatz_from_parentBarrierGap_and_crossing}
+  \leanok
+  \uses{thm:collatz-all-firstpassage-descent, thm:collatz-crossing-firstpassage, thm:collatz-reduction}
+  The gap together with the crossing hypothesis imply accelerated Collatz termination. This
+  conditional is fully proved and axiom-clean; the unconditional statement
+  (\cref{thm:collatz-accelerated}) rests on exactly the two frontier holes.
+\end{theorem}

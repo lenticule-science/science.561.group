@@ -1,0 +1,14 @@
+{{ define "header" }}
+  <h1>My name is emsenn</h1>
+  This is my website
+{{ end }}
+{{ define "main" }}
+  {{ with .Content }}
+    <section>
+      {{ . }}
+    </section>
+  {{ else }}
+    {{ partial "personal-summary-section.html" . }}
+    {{ partial "site-overview-section.html" . }}
+ {{ end }}
+{{ end }}

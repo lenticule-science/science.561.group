@@ -1,0 +1,5 @@
+#+title: home directory
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-18 Fri 10:39]
+On most [[file:computer.org][computer]] systems, there is at least one [[file:computer_user.org][computer user]], each of which usually has a */home directory/*, where they're encouraged to keep their personal files. On many multi-user systems, like [[file:computer_server.org][computer servers]], users might only have [[file:permission.org][permission]] to perform actions within their home directory.

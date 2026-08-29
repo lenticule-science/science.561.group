@@ -1,0 +1,10 @@
+#+title: text encoding
+#+begin_head
+#+ghe_schema: record-0.1.1
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-21 Mon 21:24]
+#+roam_tags: term
+#+end_head
+
+A */text encoding/* is a way of digitizing written characters so they're able to be stored and manipulated by a computer.

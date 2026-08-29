@@ -1,0 +1,10 @@
+{
+  "name": "@lenticule-science/weiqi-services-section",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Red Cup Science service section for weiqi.",
+  "license": "UNLICENSED",
+  "scripts": {
+    "check-links": "node scripts/check-links.mts"
+  }
+}

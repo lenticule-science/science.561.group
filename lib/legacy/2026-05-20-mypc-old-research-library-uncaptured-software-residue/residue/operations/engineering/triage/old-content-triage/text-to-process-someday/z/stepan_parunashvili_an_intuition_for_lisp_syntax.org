@@ -1,0 +1,27 @@
+#+title: Stepan Parunashvili: "An Intuition for Lisp Syntax"
+#+begin_head
+#+ghe_schema: term-0.1.3
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-30 Wed 09:40]
+#+roam_tags: term
+#+roam_key: https://stopa.io/post/265
+#+end_head
+
+#+name: definition
+*/[[https://stopa.io/post/265]["An Intuition for Lisp Syntax"]]/* by [[file:stepan_parunashvili.org][Stepan Parunashvili]] is an explanation of the [[file:lisp.org][LISP]] family of [[file:programming_languages.org][programming languages]] by "discovering" it through changing a [[file:json.org][JSON]] [[file:api.org][API]].
+
+#+toc: headlines 2
+* Introduction
+* Stepan Parunashvili: "An Intuition for Lisp Syntax"
+* Supplements
+** Record history
+   :PROPERTIES:
+   :CUSTOM_ID: record-history
+   :END:
+   :LOGBOOK:
+   - Note taken on [2020-12-30 Wed 09:40] \\
+      Created from [[file:~/org/s/p/d/2020-12-30.org][Looking at structure editing and movement in Org-mode]]
+
+      
+   :END:

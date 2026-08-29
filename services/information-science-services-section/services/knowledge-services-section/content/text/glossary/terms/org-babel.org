@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       913eecab-9248-41d2-9dfa-20b518fb848b
+:END:
+#+title: Org-babel
+#+date: [2025-09-15 Mon 09:23]
+

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       ffd1560b-129d-411f-ac65-dae00a0d4ce8
+:END:
+#+title: food
+#+date: [2025-08-25 Mon 19:46]
+

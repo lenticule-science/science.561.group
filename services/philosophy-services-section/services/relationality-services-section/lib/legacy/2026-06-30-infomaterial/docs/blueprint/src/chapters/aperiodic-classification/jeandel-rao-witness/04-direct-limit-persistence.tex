@@ -1,0 +1,25 @@
+\subsection{Direct-limit persistence}
+
+\begin{theorem}[Jeandel--Rao substitution tower --- $b_3$ persists to a nonzero direct-limit class]\label{thm:jeandel-rao-substitution-tower}\lean{Infomaterial.Persistence.Aperiodic.Witness.jr_substitution_tower}\leanok\uses{thm:jeandel-rao-substitution}
+The marker-domino rung is closed into an iterable endomorphism by a
+recognizability return $\mathrm{recPull}$. The return sends the decorated
+witness back to the core, $\mathrm{recPull}\,\varphi=b_3$. Hence the composite
+$\sigma\,\psi=\mathrm{recPull}(\mathrm{subPull}\,\psi)$ is a substitution
+endomorphism of the marker-ring complex. It preserves cocycles, fixes the core
+class $\sigma b_3=b_3$, and therefore every iterate fixes it,
+$\sigma^n b_3=b_3$. No iterate is a coboundary, so $b_3$ is nonzero in the
+direct limit of the constant directed system
+$H^1 \xrightarrow{\sigma^\ast} H^1 \xrightarrow{\sigma^\ast}\cdots$. The
+mechanism required by the persistence frontier is now built: a chain map per
+stage, class compatibility, and nonzero-ness in the colimit.
+\end{theorem}
+
+\begin{theorem}[Persistence of the Jeandel--Rao witness to a cl-inv class]\label{thm:jeandel-rao-persistence}\notready\uses{thm:jeandel-rao-substitution-tower, thm:aperiodic-mld-classification}
+\emph{Open frontier: the persistence mechanism is built; one identification
+remains.} The finite witness $[\varphi]$ extends through a directed system of
+marker/desubstitution chain maps to a nonzero direct-limit class. What keeps
+this node red is the remaining identification that $\sigma$ is the literal
+Labb\'e recognizable substitution matrix of the Jeandel--Rao shift, rather
+than only a faithful recognizable substitution fixing the transcribed class.
+The mechanism, colimit, and nonzero-ness are no longer the gap.
+\end{theorem}

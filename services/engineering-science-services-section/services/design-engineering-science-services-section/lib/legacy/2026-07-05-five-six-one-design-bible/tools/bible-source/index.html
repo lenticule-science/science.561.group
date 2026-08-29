@@ -1,0 +1,1508 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>561 Group — Design Bible v.0.3</title>
+<link rel="stylesheet" href="bible-v2.css">
+</head>
+<body>
+
+<!-- ======================== MASTHEAD ======================== -->
+<div class="page">
+  <div class="masthead">
+    <div class="m1">561 / Design Bible</div>
+    <div class="m2">v.0.3 — Living Document</div>
+    <div class="m3">Field Manual</div>
+    <div class="m4">FOLIO 001</div>
+  </div>
+</div>
+
+<!-- ======================== HERO ============================ -->
+<header class="hero" data-screen-label="00 Hero">
+<div class="page">
+  <div class="hero-grid">
+    <div class="mark-wrap">
+      <!-- PRIMARY MARK — vertical wordmark with one horizontal rule.
+           No seal. No tagline. No co-brand. -->
+      <div style="border-top:8px solid var(--ink);padding-top:18px">
+        <div style="font-family:var(--sans);font-weight:700;font-size:140px;line-height:.85;letter-spacing:-.06em;color:var(--ink)">561</div>
+        <div style="font-family:var(--sans);font-weight:500;font-size:28px;letter-spacing:.18em;text-transform:uppercase;margin-top:8px">Group</div>
+      </div>
+    </div>
+
+    <div class="title-wrap">
+      <div class="eyebrow" style="margin-bottom:24px">A field manual for designers and content-makers building 561 materials</div>
+      <h1>
+        <span class="stack">Design</span>
+        <span class="stack">Bible.</span>
+      </h1>
+      <p class="lede" style="margin-top:32px">A working visual language for an autonomous confederacy in pursuit of black liberation and indigenous sovereignty. Built to be used. Not finished. Edits welcome.</p>
+      <div style="margin-top:32px;display:grid;grid-template-columns:repeat(4,1fr);gap:14px;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase">
+        <div><div style="color:var(--ink-soft)">Edition</div><div style="font-weight:700">v.0.3</div></div>
+        <div><div style="color:var(--ink-soft)">Status</div><div style="font-weight:700">Living</div></div>
+        <div><div style="color:var(--ink-soft)">Audience</div><div style="font-weight:700">Internal</div></div>
+        <div><div style="color:var(--ink-soft)">Method</div><div style="font-weight:700">Visual Eng.</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+<!-- ======================== TOC / NOTE ====================== -->
+<section id="s00" class="no-rule" data-screen-label="00 Note">
+<div class="page">
+  <div class="folio">FOLIO 002</div>
+  <div class="grid12">
+    <div style="grid-column:1/6">
+      <div class="eyebrow" style="margin-bottom:18px">§ 00 · A NOTE ON THIS DOCUMENT</div>
+      <p class="body" style="font-size:16px">
+        <strong>This is a working manual.</strong> It holds the visual constraints — color, type, grid, mark — and the rules of restraint that keep them from drifting. Use it. Where you find it weak, edit it.
+      </p>
+      <p class="body" style="font-size:16px;margin-top:14px">
+        <strong>561 stands on its own.</strong> Don't pair it with EFA in lockups, mastheads, or chrome — the meaning gets thinner each time you spell it out. Once per document, in body copy, is plenty. The cipher is the joke; jokes don't need a footnote on every page.
+      </p>
+    </div>
+
+    <div style="grid-column:7/13">
+      <div class="eyebrow" style="margin-bottom:18px">CONTENTS · 11 SECTIONS</div>
+      <ul class="toc">
+        <li><a href="#s01"><span class="t-num">01</span><span class="t-name">Mission &amp; Slogan</span><span class="t-page">003</span></a></li>
+        <li><a href="#s02"><span class="t-num">02</span><span class="t-name">The Mark</span><span class="t-page">005</span></a></li>
+        <li><a href="#s03"><span class="t-num">03</span><span class="t-name">Color</span><span class="t-page">008</span></a></li>
+        <li><a href="#s04"><span class="t-num">04</span><span class="t-name">Typography</span><span class="t-page">011</span></a></li>
+        <li><a href="#s05"><span class="t-num">05</span><span class="t-name">Grid</span><span class="t-page">014</span></a></li>
+        <li><a href="#s06"><span class="t-num">06</span><span class="t-name">Voice</span><span class="t-page">016</span></a></li>
+        <li><a href="#s07"><span class="t-num">07</span><span class="t-name">Imagery</span><span class="t-page">018</span></a></li>
+        <li><a href="#s08"><span class="t-num">08</span><span class="t-name">Print &amp; Digital Templates</span><span class="t-page">020</span></a></li>
+        <li><a href="#s09"><span class="t-num">09</span><span class="t-name">Refusals</span><span class="t-page">024</span></a></li>
+        <li><a href="#s10"><span class="t-num">10</span><span class="t-name">Lineage</span><span class="t-page">026</span></a></li>
+        <li><a href="#s11"><span class="t-num">11</span><span class="t-name">Colophon</span><span class="t-page">028</span></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ======================== 01 MISSION ====================== -->
+<section id="s01" data-screen-label="01 Mission">
+<div class="page">
+  <div class="folio">FOLIO 003</div>
+  <div class="section-head">
+    <div class="num">§ 01<br>SLOGAN</div>
+    <div class="title">Land. Water. Language. Culture.</div>
+  </div>
+
+  <!-- Specimen -->
+  <div class="grid12">
+    <div style="grid-column:1/8">
+      <div style="border-top:8px solid var(--ink);border-bottom:8px solid var(--ink);padding:32px 0">
+        <div style="font-family:var(--sans);font-weight:700;font-size:clamp(56px,9vw,128px);line-height:.85;letter-spacing:-.04em;text-transform:uppercase">
+          <div>Land.</div>
+          <div>Water.</div>
+          <div style="color:var(--red)">Language.</div>
+          <div>Culture.</div>
+        </div>
+      </div>
+      <div class="mono" style="margin-top:8px;color:var(--ink-soft)">FIG 01.1 — Stacked, alarm-marked variant. Set at <code style="background:var(--bone-deep);padding:1px 6px;border:1px solid var(--bone-edge)">--ems-type-d1 / --ems-lh-d1 / --ems-tr-d1</code>.</div>
+    </div>
+    <aside style="grid-column:9/13;border-left:1px solid var(--ink);padding-left:24px">
+      <div class="h4" style="margin-bottom:14px">SLOGAN ID</div>
+      <table class="spec" style="margin-top:0">
+        <tr><td>Token</td><td><code style="font-family:var(--mono);font-size:11px;background:var(--bone-deep);padding:1px 6px">--ems-slogan</code></td></tr>
+        <tr><td>Words</td><td>4 — fixed, in fixed order</td></tr>
+        <tr><td>Family</td><td>Space Grotesk 700</td></tr>
+        <tr><td>Case</td><td>UPPERCASE</td></tr>
+        <tr><td>Punctuation</td><td>Period after each word. No serial comma.</td></tr>
+        <tr><td>Line break</td><td>One word per line (stacked) <em>or</em> single line (inline)</td></tr>
+        <tr><td>Variants</td><td>plain · alarm-marked · inline · contracted</td></tr>
+      </table>
+    </aside>
+  </div>
+
+  <!-- §01.1 SET RULES -->
+  <div class="spec-block">
+    <div class="spec-id">§ 01.1</div>
+    <div class="spec-title">Set rules — stacked variant (default)</div>
+    <div class="clause">
+      <div class="c-label">When required</div>
+      <div class="c-body">Every page-level masthead. Every poster, banner, and pamphlet cover. The first folio of every printed long-form artifact (≥ 4 pages).</div>
+    </div>
+    <div class="clause">
+      <div class="c-label">When permitted</div>
+      <div class="c-body">Once per page-level artifact in the masthead position. A second instance of the slogan on the same artifact is a defect, with the single exception of the colophon citation, which uses the inline variant (§ 01.3).</div>
+    </div>
+    <div class="clause">
+      <div class="c-label">Geometry</div>
+      <div class="c-body">
+        <p>Size <code>--ems-type-d1</code> (128 px screen / 96 pt print) at the artifact's primary scale; step down to <code>--ems-type-d2</code> (76 px / 54 pt) only when artifact width &lt; 480 px / 100 mm.</p>
+        <p>Leading <code>--ems-lh-d1</code> (0.85). Tracking <code>--ems-tr-d1</code> (−0.04 em). Word baseline interval = cap-height + (cap-height × 0.05). At 128 px, that is 96 px between baselines, ±1 px.</p>
+        <p>Optical alignment: left edge of every word flush to a single vertical line. The word "Water." typically requires +1 px optical pull-left to compensate for the round W counter. Verify on output.</p>
+        <p>Bracketing rules <code>--ems-rule-bar</code> (8 px / 2 mm) above the first word and below the last, full slogan width, color <code>--ems-color-ink</code>. Top rule offset <code>--ems-u4</code> above the first word's cap-line. Bottom rule offset <code>--ems-u4</code> below the last word's baseline.</p>
+      </div>
+    </div>
+    <div class="clause">
+      <div class="c-label">Color</div>
+      <div class="c-body">
+        <p><code>--ems-color-ink</code> on <code>--ems-color-paper</code>, or <code>--ems-color-paper</code> on <code>--ems-color-ink</code>. No third ground.</p>
+        <p>One word may be set in <code>--ems-color-alarm</code> when that word is the artifact's specific subject — e.g., a poster about language sovereignty sets "Language." in alarm. The alarm word must change weight and color but not size; same <code>--ems-type-d1</code>, same <code>--ems-tr-d1</code>.</p>
+        <p>Never two alarm words in the same instance. Never alarm in the colophon variant.</p>
+      </div>
+    </div>
+    <div class="clause conflict">
+      <div class="c-label">Conflicts</div>
+      <div class="c-body">
+        <p>If the slogan would render within <code>--ems-u5</code> (48 px / 12 mm) of the mark (§ 02), the mark suppresses; only the slogan renders. The mark recurs in the colophon.</p>
+        <p>If a photograph or woodcut would overlap the slogan's bracketing rules, the imagery crops to clear them. Imagery never crosses an <code>--ems-rule-bar</code>.</p>
+      </div>
+    </div>
+    <div class="clause test">
+      <div class="c-label">Check</div>
+      <div class="c-body">At <code>--ems-type-d1</code> on a 30 cm reading distance, the alarm word must visibly differ from the ink words. If it does not, the alarm ink is under-saturated — reject the proof.</div>
+    </div>
+  </div>
+
+  <!-- §01.2 ORDERING -->
+  <div class="spec-block">
+    <div class="spec-id">§ 01.2</div>
+    <div class="spec-title">Word order is load-bearing</div>
+    <div class="clause">
+      <div class="c-label">Rule</div>
+      <div class="c-body">The order is <strong>Land · Water · Language · Culture</strong>. It is not a list; it is a sequence of dependencies. Reordering changes the argument. Reordering is forbidden in any artifact bearing the 561 mark.</div>
+    </div>
+    <div class="clause">
+      <div class="c-label">Translation</div>
+      <div class="c-body">Translation is permitted into any language a 561 contributor reads or speaks. The translator's name and language pair must appear in the colophon (FIG 11.x). Translations preserve word order even when target-language syntax would prefer otherwise; if syntax cannot bear it, the translation is set as four separate sentences.</div>
+    </div>
+    <div class="clause">
+      <div class="c-label">Abbreviation</div>
+      <div class="c-body">No abbreviation, no acronym, no initialism. "L.W.L.C.", "LWLC", and "Land/Water/Lang/Cult" are all defects.</div>
+    </div>
+  </div>
+
+  <!-- §01.3 INLINE & CONTRACTED VARIANTS -->
+  <div class="spec-block">
+    <div class="spec-id">§ 01.3</div>
+    <div class="spec-title">Inline &amp; contracted variants</div>
+    <div class="clause">
+      <div class="c-label">Inline</div>
+      <div class="c-body">
+        <p>Set as a single line: <span style="font-family:var(--sans);font-weight:700;letter-spacing:-.02em;text-transform:uppercase">Land. Water. Language. Culture.</span> Family Space Grotesk 700, size <code>--ems-type-d3</code> (48 px / 36 pt) or smaller down to <code>--ems-type-b1</code> (16 px / 10.5 pt). Tracking <code>--ems-tr-d3</code>.</p>
+        <p>Permitted in: colophons, sign-offs, footers, file metadata, body prose. Forbidden in mastheads.</p>
+      </div>
+    </div>
+    <div class="clause">
+      <div class="c-label">Contracted</div>
+      <div class="c-body">
+        <p>Permitted only at sticker/stamp scale (≤ 50 mm trim). Set as four periods on a baseline: <span style="font-family:var(--sans);font-weight:700;letter-spacing:.4em">. . . .</span> One period per word, in original order. The mark (§ 02) must accompany; readers infer the slogan from the dot count.</p>
+        <p>Forbidden above sticker scale.</p>
+      </div>
+    </div>
+    <div class="clause">
+      <div class="c-label">Forbidden variants</div>
+      <div class="c-body">Centered set. Italicized set. Mixed-case set ("Land. Water. Language. Culture."). Any set without periods. Any set in a serif. Any set in alarm without a specific subject. Any rotation other than 0°.</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ======================== 02 MARK ========================= -->
+<section id="s02" class="dark" data-screen-label="02 Mark">
+<div class="page">
+  <div class="folio">FOLIO 005</div>
+  <div class="section-head">
+    <div class="num">§ 02<br>MARK</div>
+    <div class="title">561.</div>
+  </div>
+
+  <!-- Primary mark specimen -->
+  <div class="grid12">
+    <div style="grid-column:1/6">
+      <p class="lede" style="color:var(--bone)">The mark is the numeral <strong>561</strong> set in Space Grotesk 700, with a single 8-px rule above it. A logo that is just a number resists franchising and stencils with cardboard. The wordmark "GROUP" is a permitted lockup, not part of the mark.</p>
+      <table class="spec" style="margin-top:24px">
+        <tr><td style="color:var(--bone)">Token</td><td><code style="font-family:var(--mono);font-size:11px;background:#1a1714;padding:1px 6px;border:1px solid var(--bone-edge);color:var(--bone)">--ems-mark</code></td></tr>
+        <tr><td style="color:var(--bone)">Glyphs</td><td style="color:var(--bone)">5 6 1 — three numerals, no letters</td></tr>
+        <tr><td style="color:var(--bone)">Family</td><td style="color:var(--bone)">Space Grotesk 700, lining figures, tabular off</td></tr>
+        <tr><td style="color:var(--bone)">Tracking</td><td style="color:var(--bone)">−0.06 em (tighter than display body)</td></tr>
+        <tr><td style="color:var(--bone)">Bracket</td><td style="color:var(--bone)"><code style="font-family:var(--mono);font-size:11px;background:#1a1714;padding:1px 6px;border:1px solid var(--bone-edge);color:var(--bone)">--ems-rule-bar</code> above only</td></tr>
+      </table>
+    </div>
+    <div style="grid-column:7/13">
+      <div style="background:#1a1714;border:1px solid var(--bone);padding:48px;display:flex;align-items:center;justify-content:center;min-height:340px">
+        <div>
+          <div style="border-top:6px solid var(--bone);padding-top:14px;width:100%">
+            <div style="font-family:var(--sans);font-weight:700;font-size:200px;line-height:.85;letter-spacing:-.06em;color:var(--bone)">561</div>
+          </div>
+          <div style="font-family:var(--sans);font-weight:500;font-size:36px;letter-spacing:.22em;text-transform:uppercase;color:var(--bone);margin-top:8px;text-align:right">Group</div>
+        </div>
+      </div>
+      <div class="mono" style="margin-top:8px;color:var(--bone-edge)">FIG 02.1 — Primary mark, vertical lockup. Numeral cap-height = H. Bracket = <code style="background:#1a1714;padding:1px 6px;border:1px solid var(--bone-edge)">--ems-rule-bar</code> above. "GROUP" wordmark optional (§ 02.2).</div>
+    </div>
+  </div>
+
+  <!-- §02.1 PRIMARY MARK -->
+  <div class="spec-block">
+    <div class="spec-id" style="color:var(--bone-edge)">§ 02.1</div>
+    <div class="spec-title" style="color:var(--bone)">Primary mark — geometry &amp; clearspace</div>
+
+    <div class="clause">
+      <div class="c-label">When required</div>
+      <div class="c-body">Every artifact 561 publishes. Letterhead, posters, pamphlets, the bible itself, the website, every public surface. Signage where 561 holds physical space.</div>
+    </div>
+
+    <div class="clause">
+      <div class="c-label">When permitted</div>
+      <div class="c-body">
+        <p>Once per page-level surface. Multiple instances on a single artifact are forbidden except in colophons (§ 11) where a small inline lockup may repeat.</p>
+        <p>The mark is not used to credit individuals. Individual contributors are credited by name in the colophon, not by the mark.</p>
+      </div>
+    </div>
+
+    <div class="clause">
+      <div class="c-label">Geometry</div>
+      <div class="c-body">
+        <p>Cap-height of the "5" defines unit <var>H</var>. All other measurements derive from <var>H</var>.</p>
+        <p>Numeral baseline-to-cap-line: <var>H</var>. Numeral-to-numeral interval: 0.06 <var>H</var> (negative tracking, optical not metric). Bracket rule offset: <code>--ems-u2</code> (8 px / 2 mm) above the cap-line. Bracket rule weight: <code>--ems-rule-bar</code> (8 px / 2 mm). Bracket rule width: equals numeral block width, ±1 px.</p>
+        <p>Optical adjustments: the "1" sits 0.04 <var>H</var> right of metric center to balance the 6's overhang. Verify on every output medium; do not bake into the SVG source.</p>
+      </div>
+    </div>
+
+    <div class="clause">
+      <div class="c-label">Clearspace</div>
+      <div class="c-body">
+        <p>Minimum clearspace on all four sides: <var>H</var> (one cap-height of the numeral).</p>
+        <p>No type, no rule, no figure, no other mark may enter the clearspace box. The bracket rule above the numeral counts as part of the mark, not a violation of clearspace.</p>
+        <p>Trim or fold lines may pass through clearspace; nothing inked.</p>
+      </div>
+    </div>
+
+    <div class="clause">
+      <div class="c-label">Color</div>
+      <div class="c-body">
+        <p>Three permitted color states:</p>
+        <p><code>--ems-color-ink</code> on <code>--ems-color-paper</code> (default, 95 % of usage).<br><code>--ems-color-paper</code> on <code>--ems-color-ink</code> (dark surfaces, signage, second-color print runs).<br><code>--ems-color-alarm</code> on <code>--ems-color-paper</code> (stamp variant only — § 02.3).</p>
+        <p>Forbidden: alarm on ink, witness on anything, the mark on a witness ground, the mark in any tint or screen of ink (no 50 % gray "subtle" mark).</p>
+      </div>
+    </div>
+
+    <div class="clause">
+      <div class="c-label">Minimum size</div>
+      <div class="c-body">
+        <p>Screen: <var>H</var> ≥ 32 px (numeral cap-height). Below 32 px the bracket rule disappears below sub-pixel rendering — use the contracted variant (§ 02.4).</p>
+        <p>Print: <var>H</var> ≥ 8 mm. Below 8 mm at 100 % scale, switch to the contracted variant or scale up the artifact.</p>
+        <p>Embroidery, debossing, fabrication: <var>H</var> ≥ 24 mm; bracket rule weight floors at 1.5 mm regardless of <code>--ems-rule-bar</code> spec.</p>
+      </div>
+    </div>
+
+    <div class="clause conflict">
+      <div class="c-label">Conflicts</div>
+      <div class="c-body">
+        <p>The mark and the slogan (§ 01) never share a horizontal axis at masthead scale. If they would, the mark drops to the artifact's foot. The slogan owns the masthead.</p>
+        <p>If a photographic figure must occupy the same column as the mark, the mark moves to the opposite column or the foot. The mark never sits over a photo.</p>
+        <p>If the artifact carries a co-organizing partner's logo (e.g., a coalition pamphlet), the partner logo sits in the foot at <code>--ems-u4</code> (24 px / 6 mm) right of the 561 mark, separated by an <code>--ems-rule-hair</code> vertical. Equal cap-heights.</p>
+      </div>
+    </div>
+
+    <div class="clause test">
+      <div class="c-label">Check</div>
+      <div class="c-body">Photocopy at default settings. The mark must remain legible after one generation; the bracket rule must not break.</div>
+    </div>
+  </div>
+
+  <!-- §02.2 LOCKUPS -->
+  <div class="spec-block">
+    <div class="spec-id" style="color:var(--bone-edge)">§ 02.2</div>
+    <div class="spec-title" style="color:var(--bone)">Lockups — vertical, inline, foot</div>
+
+    <div style="margin-top:24px">
+      <div class="grid3">
+        <div>
+          <div style="border:1px solid var(--bone);background:#1a1714;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;padding:32px">
+            <div>
+              <div style="border-top:4px solid var(--bone);padding-top:8px">
+                <div style="font-family:var(--sans);font-weight:700;font-size:96px;line-height:.85;letter-spacing:-.05em;color:var(--bone)">561</div>
+              </div>
+              <div style="font-family:var(--sans);font-weight:500;font-size:18px;letter-spacing:.22em;text-transform:uppercase;color:var(--bone);margin-top:6px;text-align:right">Group</div>
+            </div>
+          </div>
+          <div class="mono" style="margin-top:8px;color:var(--bone-edge)">A · VERTICAL — primary lockup.</div>
+        </div>
+        <div>
+          <div style="border:1px solid var(--bone);background:#1a1714;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;padding:32px">
+            <div style="display:flex;align-items:baseline;gap:14px">
+              <div style="font-family:var(--sans);font-weight:700;font-size:84px;line-height:.85;letter-spacing:-.05em;color:var(--bone)">561</div>
+              <div style="height:64px;width:2px;background:var(--bone)"></div>
+              <div style="font-family:var(--sans);font-weight:500;font-size:18px;letter-spacing:.2em;text-transform:uppercase;color:var(--bone)">Group</div>
+            </div>
+          </div>
+          <div class="mono" style="margin-top:8px;color:var(--bone-edge)">B · INLINE — letterheads, footers, sign-offs.</div>
+        </div>
+        <div>
+          <div style="border:1px solid var(--bone);background:#1a1714;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;padding:32px">
+            <div style="font-family:var(--sans);font-weight:500;font-size:42px;letter-spacing:.16em;color:var(--bone)">561 · GROUP</div>
+          </div>
+          <div class="mono" style="margin-top:8px;color:var(--bone-edge)">C · FOOT — single-line, monoweight, in artifact feet only.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="clause" style="margin-top:32px">
+      <div class="c-label">Vertical (A)</div>
+      <div class="c-body">
+        <p>Numeral at <var>H</var>; "GROUP" beneath, right-aligned to the numeral's right edge. "GROUP" cap-height = 0.18 <var>H</var>. "GROUP" tracking +0.22 em. Vertical interval between numeral baseline and "GROUP" cap-line: 0.08 <var>H</var>.</p>
+        <p>Use as the primary lockup for all artifacts where the mark needs to assert authorship.</p>
+      </div>
+    </div>
+
+    <div class="clause">
+      <div class="c-label">Inline (B)</div>
+      <div class="c-body">
+        <p>Numeral and "GROUP" share a baseline. Separator: a vertical rule of weight <code>--ems-rule-hair</code> (1 px / 0.25 mm) at height equal to numeral cap-height, offset <code>--ems-u3</code> (14 px / 3.5 mm) from each side. "GROUP" cap-height = 0.21 <var>H</var>, tracking +0.20 em.</p>
+        <p>Use in letterheads, document footers, web headers below 96 px tall, and sign-offs at the close of long-form text.</p>
+      </div>
+    </div>
+
+    <div class="clause">
+      <div class="c-label">Foot (C)</div>
+      <div class="c-body">
+        <p>Single line: <code>561 · GROUP</code>. Family Space Grotesk 500 (not 700), tracking +0.16 em, separator middle-dot (U+00B7) padded by single space on each side. No bracket rule.</p>
+        <p>Use only in artifact feet, page-numbered colophons, and on objects where the vertical lockup will not survive the medium (single-color stamps, single-line signage, embroidered labels).</p>
+      </div>
+    </div>
+
+    <div class="clause">
+      <div class="c-label">Wordmark "GROUP"</div>
+      <div class="c-body">
+        <p>"GROUP" is not part of the primary mark; it is a permitted lockup partner. The mark may appear without "GROUP" (banners, stencils, stamps). "GROUP" never appears without the mark.</p>
+        <p>Translation of "GROUP" is permitted in the inline and foot lockups; the vertical lockup retains the English wordmark to keep the geometric block consistent. Translated wordmarks: "GRUPO" (es), "GWOUP" (ht), "GROUPE" (fr) at the same metrics.</p>
+      </div>
+    </div>
+
+    <div class="clause test">
+      <div class="c-label">Check</div>
+      <div class="c-body">See the inline lockup in this bible's masthead (folio 001) and footer for canonical setting.</div>
+    </div>
+  </div>
+
+  <!-- §02.3 STAMP VARIANT -->
+  <div class="spec-block">
+    <div class="spec-id" style="color:var(--bone-edge)">§ 02.3</div>
+    <div class="spec-title" style="color:var(--bone)">Stamp variant — alarm, single-color</div>
+
+    <div style="margin-top:24px;display:flex;gap:24px;align-items:flex-start">
+      <div style="border:1px solid var(--bone);background:#1a1714;width:240px;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;padding:32px;flex-shrink:0">
+        <svg viewBox="0 0 200 200" width="78%">
+          <rect x="10" y="10" width="180" height="180" fill="none" stroke="#FF4530" stroke-width="4"/>
+          <rect x="20" y="20" width="160" height="160" fill="none" stroke="#FF4530" stroke-width="1"/>
+          <text x="100" y="118" font-family="Space Grotesk" font-weight="700" font-size="84" letter-spacing="-3" text-anchor="middle" fill="#FF4530">561</text>
+          <line x1="40" y1="138" x2="160" y2="138" stroke="#FF4530" stroke-width="1"/>
+          <text x="100" y="158" font-family="Space Grotesk" font-weight="500" font-size="14" letter-spacing="6" text-anchor="middle" fill="#FF4530">GROUP</text>
+        </svg>
+      </div>
+      <div class="mono" style="color:var(--bone-edge);font-size:12px;line-height:1.6;padding-top:8px">FIG 02.2 — Stamp variant. Outer frame: 4 pt rule. Inner frame: 1 pt rule, offset 5 mm. Numeral centered, separator rule between numeral and wordmark.</div>
+    </div>
+
+    <div class="clause" style="margin-top:32px">
+      <div class="c-label">When required</div>
+      <div class="c-body">Physical objects 561 produces or processes: shipped crates, supply boxes, distributed pamphlet covers, hand-stamped envelopes, doors of held space. The stamp asserts physical authorship.</div>
+    </div>
+
+    <div class="clause">
+      <div class="c-label">When permitted</div>
+      <div class="c-body">
+        <p>Only on physical objects, only as a single-color print or hand-stamp impression, only in <code>--ems-color-alarm</code>.</p>
+        <p>Forbidden in digital surfaces. Forbidden on certificates of any kind, including ones we make ourselves. Forbidden as a "verified by 561" mark — 561 does not certify.</p>
+      </div>
+    </div>
+
+    <div class="clause">
+      <div class="c-label">Geometry</div>
+      <div class="c-body">
+        <p>Square, side length <var>S</var>. Outer frame: <code>--ems-rule-beam</code> (3 px / 0.75 mm) inset <code>--ems-u1</code> (4 px / 1 mm) from trim. Inner frame: <code>--ems-rule-hair</code> inset <code>--ems-u2</code> (8 px / 2 mm) from outer frame.</p>
+        <p>Numeral cap-height: 0.42 <var>S</var>. Numeral baseline at vertical center of the inner frame. Separator rule: <code>--ems-rule-hair</code>, full inner-frame width, 0.10 <var>S</var> below numeral baseline. Wordmark "GROUP": cap-height 0.07 <var>S</var>, tracking +0.30 em, baseline 0.10 <var>S</var> below separator rule.</p>
+      </div>
+    </div>
+
+    <div class="clause">
+      <div class="c-label">Color</div>
+      <div class="c-body">
+        <p><code>--ems-color-alarm</code> only. Single-color impression. Misregistration is a property of the medium and is not a defect at this scale.</p>
+        <p>If alarm ink is unavailable (e.g., field conditions), defer the stamp; do not substitute black.</p>
+      </div>
+    </div>
+
+    <div class="clause test">
+      <div class="c-label">Check</div>
+      <div class="c-body">Hand-stamp on uncoated kraft at <var>S</var> = 50 mm. Mark must remain legible after five sequential re-inkings without re-charging the die.</div>
+    </div>
+  </div>
+
+  <!-- §02.4 CONTRACTED -->
+  <div class="spec-block">
+    <div class="spec-id" style="color:var(--bone-edge)">§ 02.4</div>
+    <div class="spec-title" style="color:var(--bone)">Contracted — sub-minimum scale</div>
+
+    <div class="clause">
+      <div class="c-label">When permitted</div>
+      <div class="c-body">When the artifact's available mark area is below the minimum (§ 02.1, <var>H</var> &lt; 32 px screen / 8 mm print) and scaling up the artifact is not possible — favicons, app icons, embroidered tags, stamped hardware.</div>
+    </div>
+
+    <div class="clause">
+      <div class="c-label">Form</div>
+      <div class="c-body">
+        <p>Numeral only, no bracket rule, no wordmark. Family unchanged (Space Grotesk 700). Tracking opens to −0.02 em (less tight than primary, to keep glyphs distinct at small size).</p>
+        <p>Favicon: 32 × 32 px, numeral cap-height 22 px, optically centered. App icon: 1024 × 1024 px source, numeral cap-height 580 px, optically centered, on <code>--ems-color-paper</code> ground with no border.</p>
+      </div>
+    </div>
+
+    <div class="clause">
+      <div class="c-label">Forbidden at contracted scale</div>
+      <div class="c-body">Any rendering of the bracket rule, any rendering of "GROUP", any background other than ink or paper, any rounded-corner mask other than what the host OS imposes.</div>
+    </div>
+  </div>
+
+  <!-- §02.5 FORBIDDEN -->
+  <div class="spec-block">
+    <div class="spec-id" style="color:var(--bone-edge)">§ 02.5</div>
+    <div class="spec-title" style="color:var(--bone)">Forbidden uses</div>
+    <div class="clause">
+      <div class="c-label">Form</div>
+      <div class="c-body">No outlines around the numeral. No drop shadows. No embossing, debossing simulation, foil simulation, or 3-D extrusion. No italics. No condensed or expanded variants. No alternate weights (Space Grotesk 500 numerals are not the mark). No script overlays.</div>
+    </div>
+    <div class="clause">
+      <div class="c-label">Composition</div>
+      <div class="c-body">No co-marks beside the numeral (<code>561 / EFA</code>, <code>561 · xyz</code>). No taglines beneath the wordmark. No "EST. 2024" or other date stamps. No registered trademark or copyright symbols adjacent to the mark.</div>
+    </div>
+    <div class="clause">
+      <div class="c-label">Surface</div>
+      <div class="c-body">The mark is not applied to: corporate sponsor materials of any kind, fundraising "thermometer" graphics, certificates, awards, merchandise sold for profit, promotional swag distributed by non-561 organizations.</div>
+    </div>
+    <div class="clause test">
+      <div class="c-label">Check</div>
+      <div class="c-body">If the mark photographs as "polished" rather than as a number written down, it is set wrong.</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ======================== 03 COLOR ======================== -->
+<section id="s03" data-screen-label="03 Color">
+<div class="page">
+  <div class="folio">FOLIO 008</div>
+  <div class="section-head">
+    <div class="num">§ 03<br>COLOR</div>
+    <div class="title">Two Inks. One Surface.</div>
+  </div>
+
+  <div class="grid12">
+    <div style="grid-column:1/6">
+      <p class="lede">Four colors. Two are structural (ink, bone), two are functional (red, blue). The functional pair is rationed, not styled — each has one job and one job only.</p>
+      <p class="body" style="margin-top:18px"><strong>Red flags hazard or urgency.</strong> Use it for: deadlines, refusals (the strikethrough in §06), the single word in the slogan that is currently most at stake. Don't use it for emphasis, for headers, for "look here," for ornament, or for more than one word in any block of text.</p>
+      <p class="body" style="margin-top:14px"><strong>Blue flags evidence.</strong> Use it for: figure callouts (FIG 03.x), data quantities, source links, dates of record. Don't use it as a body link color, as a fill, or anywhere a sentence isn't pointing at a fact.</p>
+      <p class="body" style="margin-top:14px"><strong>Ink and bone are not interchangeable.</strong> Bone is paper; ink is mark. Don't tint either, don't add a third neutral, don't introduce gray. If you need recessive type, use ink at 60% (token <code class="mono" style="font-size:12px;background:var(--bone-deep);padding:1px 6px">--ink-soft</code>). Once.</p>
+    </div>
+    <div style="grid-column:7/13">
+      <table class="spec">
+        <tr><th>Token</th><th>Hex</th><th>RGB</th><th>CMYK (uncoated)</th><th>Pantone</th></tr>
+        <tr><td>--ink</td><td>#0A0A0A</td><td>10·10·10</td><td>0·0·0·100 (rich black: 40·30·30·100)</td><td>Black 6 U</td></tr>
+        <tr><td>--bone</td><td>#F2EAD8</td><td>242·234·216</td><td>2·5·15·0</td><td>Warm Gray 1 U / paper</td></tr>
+        <tr><td>--red</td><td>#FF4530</td><td>255·69·48</td><td>0·85·85·0</td><td>805 U (fluorescent)</td></tr>
+        <tr><td>--blue</td><td>#3D5588</td><td>61·85·136</td><td>85·65·15·25</td><td>534 U</td></tr>
+        <tr><td>--ink-soft</td><td>#5A5A5A</td><td>—</td><td>derived: ink at 60%</td><td>—</td></tr>
+        <tr><td>--bone-deep</td><td>#E8DEC4</td><td>—</td><td>derived: bone at 90%</td><td>—</td></tr>
+      </table>
+
+      <div style="margin-top:18px;border:1px solid var(--ink);padding:16px;background:var(--bone)">
+        <div class="h4" style="margin-bottom:10px">INK BUDGET (per page or per spread)</div>
+        <table class="spec" style="margin-top:0">
+          <tr><th>Color</th><th>Max coverage</th><th>How to measure</th></tr>
+          <tr><td>Red</td><td>≤ 6% of inked area</td><td>Sum bounding boxes of red marks ÷ trim area. If unsure, halve it.</td></tr>
+          <tr><td>Blue</td><td>≤ 3% of inked area</td><td>Same method. Captions and callouts only.</td></tr>
+          <tr><td>Ink</td><td>No cap</td><td>—</td></tr>
+        </table>
+      </div>
+
+      <div style="margin-top:18px;border:1px solid var(--ink);padding:16px;background:var(--bone)">
+        <div class="h4" style="margin-bottom:10px">CONTRAST &amp; ACCESSIBILITY</div>
+        <table class="spec" style="margin-top:0">
+          <tr><th>Pair</th><th>Ratio</th><th>WCAG</th><th>Use</th></tr>
+          <tr><td>Ink on bone</td><td>16.8 : 1</td><td>AAA all sizes</td><td>All body, all marks</td></tr>
+          <tr><td>Bone on ink</td><td>16.8 : 1</td><td>AAA all sizes</td><td>Reverse type, dark sections</td></tr>
+          <tr><td>Red on bone</td><td>4.1 : 1</td><td>AA large only (≥18pt / 14pt bold)</td><td>Display only — never body</td></tr>
+          <tr><td>Blue on bone</td><td>7.6 : 1</td><td>AAA</td><td>Body-size callouts permitted</td></tr>
+          <tr><td>Red on ink</td><td>4.1 : 1</td><td>AA large only</td><td>Display only</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid4" style="margin-top:48px">
+    <div class="swatch"><div class="chip" style="background:var(--ink)"></div><div class="meta"><div class="name">Ink</div><div class="row"><span>HEX</span><span>#0A0A0A</span></div><div class="row"><span>USE</span><span>All type, all rules</span></div></div></div>
+    <div class="swatch"><div class="chip" style="background:var(--bone);border-bottom:1px solid var(--ink)"></div><div class="meta"><div class="name">Bone</div><div class="row"><span>HEX</span><span>#F2EAD8</span></div><div class="row"><span>USE</span><span>Paper, ground</span></div></div></div>
+    <div class="swatch"><div class="chip" style="background:var(--red)"></div><div class="meta"><div class="name">Red</div><div class="row"><span>HEX</span><span>#FF4530</span></div><div class="row"><span>USE</span><span>Hazard / urgency · 1 word</span></div></div></div>
+    <div class="swatch"><div class="chip" style="background:var(--blue)"></div><div class="meta"><div class="name">Blue</div><div class="row"><span>HEX</span><span>#3D5588</span></div><div class="row"><span>USE</span><span>Evidence callouts only</span></div></div></div>
+  </div>
+
+  <div style="margin-top:48px;border:1px solid var(--ink);padding:24px;background:var(--bone-deep)">
+    <div class="h4" style="margin-bottom:14px">PRINT NOTES</div>
+    <ul class="body" style="font-size:14px;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:14px 32px">
+      <li>— <strong>Riso:</strong> Fluorescent Pink (F) gets you closest to <code class="mono" style="font-size:12px">--red</code>. Federal Blue is the closest stock to <code class="mono" style="font-size:12px">--blue</code>. Print red second so it sits on top.</li>
+      <li>— <strong>Misregistration up to 1.5mm</strong> on riso/screen is acceptable; treat it as evidence of process, not error. Above 1.5mm reprint.</li>
+      <li>— <strong>Newsprint:</strong> bone is the paper itself. Don't print bone as ink; use uncoated newsprint stock and let it be the ground.</li>
+      <li>— <strong>Screen print:</strong> two-screen jobs only unless you have a documented reason for three. Document it on the colophon.</li>
+      <li>— <strong>Digital surfaces:</strong> use sRGB hex values directly. No P3, no gradients, no glows.</li>
+      <li>— <strong>Photocopy:</strong> red drops out on most B&amp;W copiers; design so the page still reads without it.</li>
+    </ul>
+  </div>
+</div>
+</section>
+
+<!-- ======================== 04 TYPE ========================= -->
+<section id="s04" data-screen-label="04 Type">
+<div class="page">
+  <div class="folio">FOLIO 011</div>
+  <div class="section-head">
+    <div class="num">§ 04<br>TYPE</div>
+    <div class="title">Sans &amp; Slab.</div>
+  </div>
+
+  <div class="grid12">
+    <div style="grid-column:1/6">
+      <p class="lede">Three families, each with one job. <strong>Space Grotesk</strong> sets all display, the mark, and UI labels. <strong>Roboto Slab</strong> sets all body copy and the slogan. <strong>JetBrains Mono</strong> sets all metadata — folios, captions, dates, filenames, tabular numerics.</p>
+      <p class="body" style="margin-top:18px">The slab does the body because the body of the work should read with weight, not flow. Slab feet brake the eye — useful when sentences are short and you want each one to land. Don't substitute a humanist serif; the page reads as editorial, which is the wrong register.</p>
+      <p class="body" style="margin-top:14px"><strong>Never mix weights within a family on the same line.</strong> Use weight to mark hierarchy, not emphasis. For emphasis inside body, use the slab's italic — sparingly. Bold inside body is a smell.</p>
+    </div>
+    <div style="grid-column:7/13">
+      <table class="spec">
+        <tr><th>Family</th><th>Role</th><th>Weights</th><th>Fallback stack</th></tr>
+        <tr><td>Space Grotesk</td><td>Display, mark, UI</td><td>500, 700</td><td>"Helvetica Neue", Arial, sans-serif</td></tr>
+        <tr><td>Roboto Slab</td><td>Body, slogan</td><td>400, 700, 400 italic</td><td>Georgia, "Times New Roman", serif</td></tr>
+        <tr><td>JetBrains Mono</td><td>Meta, captions</td><td>400, 500, 700</td><td>"SF Mono", Menlo, Consolas, monospace</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- TYPE SCALE -->
+  <div style="margin-top:48px">
+    <div class="h4" style="margin-bottom:14px">TYPE SCALE — SCREEN (px) / PRINT (pt)</div>
+    <table class="spec">
+      <tr><th>Token</th><th>Family · Weight</th><th>Screen</th><th>Print</th><th>Leading</th><th>Tracking</th><th>Use</th></tr>
+      <tr><td>D1</td><td>Sans 700</td><td>128 px</td><td>96 pt</td><td>0.85</td><td>−4%</td><td>Slogan, hero numerals</td></tr>
+      <tr><td>D2</td><td>Sans 700</td><td>76 px</td><td>54 pt</td><td>0.88</td><td>−4%</td><td>Section heads</td></tr>
+      <tr><td>D3</td><td>Sans 700</td><td>48 px</td><td>36 pt</td><td>0.95</td><td>−2%</td><td>Poster titles, sub-heads</td></tr>
+      <tr><td>D4</td><td>Sans 700</td><td>28 px</td><td>20 pt</td><td>1.05</td><td>−1%</td><td>Card titles, eyebrow heads</td></tr>
+      <tr><td>L1 (lede)</td><td>Slab 400</td><td>22 px</td><td>14 pt</td><td>1.4</td><td>0</td><td>Opening paragraph of a section</td></tr>
+      <tr><td>B1 (body)</td><td>Slab 400</td><td>16 px</td><td>10.5 pt</td><td>1.5</td><td>0</td><td>Default body</td></tr>
+      <tr><td>B2 (small)</td><td>Slab 400</td><td>14 px</td><td>9 pt</td><td>1.45</td><td>0</td><td>Sidebars, list items</td></tr>
+      <tr><td>M1 (meta)</td><td>Mono 500</td><td>13 px</td><td>8 pt</td><td>1.3</td><td>+5%</td><td>Captions, FIG labels</td></tr>
+      <tr><td>M2 (micro)</td><td>Mono 500 caps</td><td>11 px</td><td>7 pt</td><td>1.4</td><td>+18%</td><td>Folios, table headers, eyebrows</td></tr>
+    </table>
+    <p class="body" style="margin-top:14px;font-size:14px">Tracking is in CSS-style percentages (em ÷ 100). Leading is unitless multiplier. <strong>Display sizes get tighter leading</strong> so stacked lines (Land. / Water. / Language. / Culture.) lock to a single block; body sizes get looser leading because the slab's x-height runs hot. <strong>Caps get positive tracking</strong> (M2 at +18%) because mono caps without it read as a stamped serial number, not a label.</p>
+  </div>
+
+  <!-- USAGE RULES -->
+  <div class="grid2" style="margin-top:48px">
+    <div style="border:1px solid var(--ink);padding:20px;background:var(--bone)">
+      <div class="h4" style="margin-bottom:10px">SETTING THE SLOGAN</div>
+      <ul class="body" style="font-size:14px;list-style:none">
+        <li style="padding:6px 0;border-bottom:1px dashed var(--ink)">— Sans 700, all caps, period after each word.</li>
+        <li style="padding:6px 0;border-bottom:1px dashed var(--ink)">— Stacked one word per line. Never inline.</li>
+        <li style="padding:6px 0;border-bottom:1px dashed var(--ink)">— Leading 0.85–0.92 depending on size. Tighter at larger sizes.</li>
+        <li style="padding:6px 0;border-bottom:1px dashed var(--ink)">— Optical kerning on. Tracking −4% baseline.</li>
+        <li style="padding:6px 0">— One word may be set in red. Same weight, same size; red is a color change, not a weight change.</li>
+      </ul>
+    </div>
+    <div style="border:1px solid var(--ink);padding:20px;background:var(--bone)">
+      <div class="h4" style="margin-bottom:10px">SETTING BODY</div>
+      <ul class="body" style="font-size:14px;list-style:none">
+        <li style="padding:6px 0;border-bottom:1px dashed var(--ink)">— Measure: 50–70 characters per line. Hard cap 75. If a column is wider, split into two.</li>
+        <li style="padding:6px 0;border-bottom:1px dashed var(--ink)">— Leading 1.5 at 16px screen / 1.45 at 10.5pt print.</li>
+        <li style="padding:6px 0;border-bottom:1px dashed var(--ink)">— No first-line indent. Paragraphs separated by 14px (one space-step) or by an em-rule.</li>
+        <li style="padding:6px 0;border-bottom:1px dashed var(--ink)">— Hyphenation off in display, on in body for justified columns only.</li>
+        <li style="padding:6px 0">— Numerals in body: tabular figures, lining (not old-style).</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid3" style="margin-top:48px">
+    <div class="specimen">
+      <div class="label"><span>SPACE GROTESK / 700</span><span>D1 / 128 px / lh .85 / tr −4%</span></div>
+      <div style="font-family:var(--sans);font-weight:700;font-size:88px;line-height:.85;letter-spacing:-.04em;text-transform:uppercase">561<br>AaBb</div>
+      <div class="mono" style="margin-top:14px;color:var(--ink-soft)">ABCDEFGHIJKLM<br>0123456789 / · — &amp;</div>
+    </div>
+    <div class="specimen">
+      <div class="label"><span>ROBOTO SLAB / 400</span><span>B1 / 16 px / lh 1.5</span></div>
+      <div style="font-family:var(--slab);font-size:22px;line-height:1.4">Land. Water. Language. Culture. The order is the argument.</div>
+      <div class="mono" style="margin-top:14px;color:var(--ink-soft);font-size:11px">measure: 50–70ch · no indent · lining figures</div>
+    </div>
+    <div class="specimen">
+      <div class="label"><span>JETBRAINS MONO / 500</span><span>M1–M2 / 11–13 px / tr +18%</span></div>
+      <div style="font-family:var(--mono);font-size:20px;line-height:1.3">FOLIO 011<br>v.0.3<br>2026·05·01</div>
+      <div class="mono" style="margin-top:14px;color:var(--ink-soft);font-size:11px">caps only · meta only · never body</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ======================== 05 GRID ========================= -->
+<section id="s05" data-screen-label="05 Grid">
+<div class="page">
+  <div class="folio">FOLIO 014</div>
+  <div class="section-head">
+    <div class="num">§ 05<br>GRID</div>
+    <div class="title">Twelve Columns.</div>
+  </div>
+
+  <div class="grid12">
+    <div style="grid-column:1/7">
+      <p class="lede">A different grid for each surface. The shared rule is the spacing scale; the column counts and gutters change because a tabloid is not a phone.</p>
+      <p class="body" style="margin-top:18px"><strong>Spacing scale (units of 4):</strong> 4, 8, 14, 24, 48, 80, 120 px (or pt). Use these and only these. Anything between them is improvisation, and improvisation gets noted in the colophon.</p>
+      <p class="body" style="margin-top:14px"><strong>Rule weights:</strong> hairline 1px (default), structural 3px (paragraph dividers, section heads), heavy 8px (the slogan band, mastheads). Don't introduce 2px or 4px.</p>
+      <p class="body" style="margin-top:14px"><strong>Why a 12-column digital and an 8-column tabloid?</strong> 12 divides cleanly into 1/2/3/4/6 — useful for web. Tabloid newsprint reads at arm's length and 8 columns at 22pc each gives 50–60ch measure, which is what newsprint body has been since the 1920s. Don't fight the medium.</p>
+    </div>
+    <div style="grid-column:7/13">
+      <div style="border:1px solid var(--ink);background:var(--bone);padding:20px">
+        <div class="mono" style="font-size:10px;color:var(--ink-soft);margin-bottom:14px;display:flex;justify-content:space-between"><span>WEB / BIBLE GRID</span><span>12 COL · 24 PX GUTTER</span></div>
+        <!-- column ruler -->
+        <div style="display:grid;grid-template-columns:repeat(12,1fr);gap:6px;margin-bottom:6px">
+          <div class="mono" style="font-size:9px;text-align:center;color:var(--ink-soft)">1</div>
+          <div class="mono" style="font-size:9px;text-align:center;color:var(--ink-soft)">2</div>
+          <div class="mono" style="font-size:9px;text-align:center;color:var(--ink-soft)">3</div>
+          <div class="mono" style="font-size:9px;text-align:center;color:var(--ink-soft)">4</div>
+          <div class="mono" style="font-size:9px;text-align:center;color:var(--ink-soft)">5</div>
+          <div class="mono" style="font-size:9px;text-align:center;color:var(--ink-soft)">6</div>
+          <div class="mono" style="font-size:9px;text-align:center;color:var(--ink-soft)">7</div>
+          <div class="mono" style="font-size:9px;text-align:center;color:var(--ink-soft)">8</div>
+          <div class="mono" style="font-size:9px;text-align:center;color:var(--ink-soft)">9</div>
+          <div class="mono" style="font-size:9px;text-align:center;color:var(--ink-soft)">10</div>
+          <div class="mono" style="font-size:9px;text-align:center;color:var(--ink-soft)">11</div>
+          <div class="mono" style="font-size:9px;text-align:center;color:var(--ink-soft)">12</div>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(12,1fr);gap:6px;grid-auto-rows:minmax(28px,auto)">
+          <div style="grid-column:1/13;border:1px solid var(--ink);padding:8px 10px;font-family:var(--mono);font-size:10px;display:flex;justify-content:space-between"><span>FOLIO BAR</span><span style="color:var(--ink-soft)">cols 1–12</span></div>
+          <div style="grid-column:1/3;border:1px solid var(--ink);padding:8px 10px;font-family:var(--mono);font-size:10px">§ NUM</div>
+          <div style="grid-column:3/13;border:1px solid var(--ink);padding:8px 10px;font-family:var(--mono);font-size:10px">SECTION TITLE</div>
+          <div style="grid-column:1/8;border:1px solid var(--ink);padding:14px 10px;font-family:var(--mono);font-size:10px;min-height:120px;display:flex;flex-direction:column;justify-content:space-between">
+            <span>PRIMARY COLUMN</span>
+            <span style="color:var(--ink-soft)">cols 1–7 · body · 56–66 ch</span>
+          </div>
+          <div style="grid-column:8/9;border:1px dashed var(--ink-soft);padding:8px 4px;font-family:var(--mono);font-size:9px;writing-mode:vertical-rl;text-align:center;color:var(--ink-soft);min-height:120px">GAP</div>
+          <div style="grid-column:9/13;border:1px solid var(--ink);padding:14px 10px;font-family:var(--mono);font-size:10px;min-height:120px;display:flex;flex-direction:column;justify-content:space-between">
+            <span>MARGINALIA</span>
+            <span style="color:var(--ink-soft)">cols 9–12 · figs, notes, refs</span>
+          </div>
+        </div>
+      </div>
+      <div class="mono" style="margin-top:10px;color:var(--ink-soft);font-size:10px">FIG 05.1 — Web / bible grid. Primary column reads 1–7. Column 8 is a structural gap. Marginalia rides 9–12.</div>
+    </div>
+  </div>
+
+  <!-- GRIDS PER SURFACE -->
+  <div style="margin-top:48px">
+    <div class="h4" style="margin-bottom:14px">GRIDS BY SURFACE</div>
+    <table class="spec">
+      <tr><th>Surface</th><th>Trim</th><th>Margins (T R B L)</th><th>Cols</th><th>Gutter</th><th>Baseline</th><th>Body measure</th></tr>
+      <tr><td>Web (this bible)</td><td>≤ 1320 px</td><td>40 / 24 / 80 / 24</td><td>12</td><td>24 px</td><td>8 px</td><td>56–66 ch</td></tr>
+      <tr><td>Mobile web</td><td>≤ 720 px</td><td>24 / 16 / 48 / 16</td><td>4</td><td>14 px</td><td>4 px</td><td>40–60 ch</td></tr>
+      <tr><td>Poster, slogan</td><td>18 × 24 in</td><td>0.75 / 0.75 / 1.0 / 0.75 in</td><td>—</td><td>—</td><td>0.25 in</td><td>n/a, display only</td></tr>
+      <tr><td>Poster, manual</td><td>18 × 24 in</td><td>0.75 in all</td><td>4</td><td>0.25 in</td><td>0.125 in</td><td>50–60 ch</td></tr>
+      <tr><td>Pamphlet, tri-fold</td><td>11 × 8.5 in (3 panels of 3.67)</td><td>0.5 in all, +0.25 fold gutter</td><td>1 per panel</td><td>—</td><td>4 pt</td><td>40–48 ch</td></tr>
+      <tr><td>Newspaper / tabloid</td><td>11 × 17 in</td><td>0.5 in all</td><td>8</td><td>1 pc (12 pt)</td><td>11 pt</td><td>50–60 ch</td></tr>
+      <tr><td>Zine, half-letter</td><td>5.5 × 8.5 in</td><td>0.4 in all</td><td>2</td><td>0.2 in</td><td>11 pt</td><td>40–55 ch</td></tr>
+      <tr><td>Sticker / stamp</td><td>2 × 2 in</td><td>0.125 in</td><td>—</td><td>—</td><td>—</td><td>n/a</td></tr>
+    </table>
+    <p class="body" style="margin-top:14px;font-size:14px"><em>Baseline</em> is the document baseline grid (everything text-bearing snaps to a multiple). On web that's 8px; in print it's pt-based and matches the body leading. Don't snap photos to baseline; do snap captions.</p>
+  </div>
+
+  <!-- COMMON LAYOUTS -->
+  <div class="grid2" style="margin-top:48px">
+    <div style="border:1px solid var(--ink);padding:20px;background:var(--bone)">
+      <div class="h4" style="margin-bottom:10px">COLUMN RATIOS — 12-COL WEB</div>
+      <ul class="body" style="font-size:14px;list-style:none;font-family:var(--mono)">
+        <li style="padding:6px 0;border-bottom:1px dashed var(--ink)">5 / 7 — text + figure (default)</li>
+        <li style="padding:6px 0;border-bottom:1px dashed var(--ink)">7 / 4 — primary + marginalia (1 col blank between)</li>
+        <li style="padding:6px 0;border-bottom:1px dashed var(--ink)">6 / 6 — symmetric, comparison only</li>
+        <li style="padding:6px 0;border-bottom:1px dashed var(--ink)">8 / 4 — long-form text + sidebar</li>
+        <li style="padding:6px 0">12 — full bleed, slogan only</li>
+      </ul>
+    </div>
+    <div style="border:1px solid var(--ink);padding:20px;background:var(--bone)">
+      <div class="h4" style="margin-bottom:10px">SECTION-HEAD POSITIONING</div>
+      <ul class="body" style="font-size:14px;list-style:none">
+        <li style="padding:6px 0;border-bottom:1px dashed var(--ink)">— Folio bar: cols 1–12, dashed underline, 11px mono caps, right-aligned.</li>
+        <li style="padding:6px 0;border-bottom:1px dashed var(--ink)">— § number: cols 1–2, 13px mono, 8px ink rule above.</li>
+        <li style="padding:6px 0;border-bottom:1px dashed var(--ink)">— Section title: cols 3–12 (10 cols), D2 sans 700, max 4 words.</li>
+        <li style="padding:6px 0;border-bottom:1px dashed var(--ink)">— 48px below the section-head before content.</li>
+        <li style="padding:6px 0">— Section bottom margin: 80px (one space-step up from default).</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- THE EXCEPTION -->
+  <div style="margin-top:48px;border-left:8px solid var(--red);padding:18px 24px;background:var(--bone-deep)">
+    <div class="h4" style="margin-bottom:8px;color:var(--red)">WHEN TO BREAK THE GRID</div>
+    <p class="body" style="font-size:14px">Once per document, maximum. To mark a refusal, a death, or an act of state that the grid cannot contain. Document the break in the colophon: page, reason, who approved.</p>
+  </div>
+</div>
+</section>
+
+<!-- ======================== 06 VOICE ======================== -->
+<section id="s06" data-screen-label="06 Voice">
+<div class="page">
+  <div class="folio">FOLIO 016</div>
+  <div class="section-head">
+    <div class="num">§ 06<br>VOICE</div>
+    <div class="title">Plain. Specific.</div>
+  </div>
+
+  <div class="grid12">
+    <div style="grid-column:1/7">
+      <p class="lede">Three rules carry most of the weight. <strong>Be specific.</strong> Three acres beats &ldquo;our region.&rdquo; <strong>Use verbs.</strong> &ldquo;We grow,&rdquo; not &ldquo;we are growers.&rdquo; <strong>Refuse the philanthropic register</strong> — no impact, no mission, no stakeholders, no community.</p>
+      <p class="body" style="margin-top:18px">Sentences are short because readers are tired. Numbers are exact because vague numbers read as marketing. Names are real because anonymous &ldquo;kin&rdquo; reads like a stock photo. If you don't have a real number or a real name yet, leave the slot empty rather than filling it with mood.</p>
+    </div>
+
+    <div style="grid-column:8/13">
+      <div class="h4" style="margin-bottom:14px">DON'T WRITE LIKE A NONPROFIT</div>
+      <div style="border:1px solid var(--ink);background:var(--bone)">
+        <div style="display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--ink)">
+          <div style="padding:14px 16px;background:var(--bone-deep)">
+            <div class="mono" style="color:var(--red);font-size:10px;letter-spacing:.18em">DON'T</div>
+            <div style="font-family:var(--slab);font-size:15px;margin-top:4px;text-decoration:line-through;text-decoration-color:var(--red);text-decoration-thickness:2px">empowering communities</div>
+          </div>
+          <div style="padding:14px 16px;border-left:1px solid var(--ink)">
+            <div class="mono" style="color:var(--ink-soft);font-size:10px;letter-spacing:.18em">INSTEAD</div>
+            <div style="font-family:var(--slab);font-weight:700;font-size:15px;margin-top:4px">name who, doing what</div>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--ink)">
+          <div style="padding:14px 16px;background:var(--bone-deep)">
+            <div class="mono" style="color:var(--red);font-size:10px;letter-spacing:.18em">DON'T</div>
+            <div style="font-family:var(--slab);font-size:15px;margin-top:4px;text-decoration:line-through;text-decoration-color:var(--red);text-decoration-thickness:2px">our impact this year</div>
+          </div>
+          <div style="padding:14px 16px;border-left:1px solid var(--ink)">
+            <div class="mono" style="color:var(--ink-soft);font-size:10px;letter-spacing:.18em">INSTEAD</div>
+            <div style="font-family:var(--slab);font-weight:700;font-size:15px;margin-top:4px">a number, a date, a place</div>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--ink)">
+          <div style="padding:14px 16px;background:var(--bone-deep)">
+            <div class="mono" style="color:var(--red);font-size:10px;letter-spacing:.18em">DON'T</div>
+            <div style="font-family:var(--slab);font-size:15px;margin-top:4px;text-decoration:line-through;text-decoration-color:var(--red);text-decoration-thickness:2px">stakeholders, beneficiaries</div>
+          </div>
+          <div style="padding:14px 16px;border-left:1px solid var(--ink)">
+            <div class="mono" style="color:var(--ink-soft);font-size:10px;letter-spacing:.18em">INSTEAD</div>
+            <div style="font-family:var(--slab);font-weight:700;font-size:15px;margin-top:4px">people. by name when you can.</div>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--ink)">
+          <div style="padding:14px 16px;background:var(--bone-deep)">
+            <div class="mono" style="color:var(--red);font-size:10px;letter-spacing:.18em">DON'T</div>
+            <div style="font-family:var(--slab);font-size:15px;margin-top:4px;text-decoration:line-through;text-decoration-color:var(--red);text-decoration-thickness:2px">we are committed to</div>
+          </div>
+          <div style="padding:14px 16px;border-left:1px solid var(--ink)">
+            <div class="mono" style="color:var(--ink-soft);font-size:10px;letter-spacing:.18em">INSTEAD</div>
+            <div style="font-family:var(--slab);font-weight:700;font-size:15px;margin-top:4px">we did. we will. we won't.</div>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr">
+          <div style="padding:14px 16px;background:var(--bone-deep)">
+            <div class="mono" style="color:var(--red);font-size:10px;letter-spacing:.18em">DON'T</div>
+            <div style="font-family:var(--slab);font-size:15px;margin-top:4px;text-decoration:line-through;text-decoration-color:var(--red);text-decoration-thickness:2px">solutions, ecosystems, journeys</div>
+          </div>
+          <div style="padding:14px 16px;border-left:1px solid var(--ink)">
+            <div class="mono" style="color:var(--ink-soft);font-size:10px;letter-spacing:.18em">INSTEAD</div>
+            <div style="font-family:var(--slab);font-weight:700;font-size:15px;margin-top:4px">use the actual word</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ======================== 07 IMAGERY ====================== -->
+<section id="s07" data-screen-label="07 Imagery">
+<div class="page">
+  <div class="folio">FOLIO 018</div>
+  <div class="section-head">
+    <div class="num">§ 07<br>IMAGERY</div>
+    <div class="title">Two Registers.</div>
+  </div>
+
+  <div class="grid12">
+    <div style="grid-column:1/8">
+      <p class="lede">Two registers, no third. <strong>Commissioned artwork</strong> for the human register; <strong>photography</strong>, treated as evidence, for the documentary register. The bible governs only how each is reproduced — not who, when, or whether. Sourcing, rights, and consent are organizational concerns, not visual ones.</p>
+    </div>
+  </div>
+
+  <!-- §07.1 COMMISSIONED ARTWORK — REPRODUCTION -->
+  <div class="spec-block">
+    <div class="spec-id">§ 07.1</div>
+    <div class="spec-title">Commissioned artwork — reproduction</div>
+
+    <div class="clause">
+      <div class="c-label">Form</div>
+      <div class="c-body">Hand-cut or hand-drawn. Visible tool marks are the medium speaking and are not corrected. Reproduced at no more than two inks (§ 04). Permitted ink combinations: ink + paper, ink + alarm, ink + witness. Three-ink artwork is rejected at proofing.</div>
+    </div>
+
+    <div class="clause">
+      <div class="c-label">Source files</div>
+      <div class="c-body">Retain the artist's full-resolution scan or vector. Reproduction artifacts (halftone, line-screen) are applied at layout time, not baked into the source.</div>
+    </div>
+  </div>
+
+  <!-- §07.2 PHOTOGRAPHY — REPRODUCTION TREATMENT -->
+  <div class="spec-block">
+    <div class="spec-id">§ 07.2</div>
+    <div class="spec-title">Photography — reproduction treatment</div>
+
+    <div class="clause">
+      <div class="c-label">Treatment A — Duotone</div>
+      <div class="c-body">Two inks, ground in paper. Ink + witness for documentary subjects; ink + alarm permitted only when alarm reading is part of the argument. Halftone screen 65 lpi for newsprint, 100 lpi for offset, 133 lpi for fine offset. Compress tonal range to the medium; do not chase shadow detail the press cannot hold.</div>
+    </div>
+
+    <div class="clause">
+      <div class="c-label">Treatment B — Line-screen</div>
+      <div class="c-body">Single ink, horizontal or vertical line screen, 25–45 lines per inch. Use for newsprint at small scale and for any photograph reproduced in alarm (alarm halftones become illegible).</div>
+    </div>
+
+    <div class="clause">
+      <div class="c-label">Treatment C — Dot-screen</div>
+      <div class="c-body">Single ink, coarse dot screen, 20–35 lines per inch. Use at poster scale where the dot itself is part of the read at distance.</div>
+    </div>
+
+    <div class="clause">
+      <div class="c-label">Forbidden</div>
+      <div class="c-body">Four-color process. Any color cast outside the system inks (§ 04). Filters, "instant" presets, simulated film grain. Vignettes. Burned or dodged edges beyond the photographer's print. Cropping that changes meaning.</div>
+    </div>
+
+    <div class="clause">
+      <div class="c-label">Frame</div>
+      <div class="c-body">The grid (§ 06) governs the frame. Photographs crop to grid columns.</div>
+    </div>
+  </div>
+
+  <!-- §07.3 CAPTION SETTING -->
+  <div class="spec-block">
+    <div class="spec-id">§ 07.3</div>
+    <div class="spec-title">Caption — setting</div>
+
+    <div class="clause">
+      <div class="c-label">Form</div>
+      <div class="c-body"><code>FIG ##.#</code> — [what]. [who]. [where]. [when]. [source / rights].<br>Periods between fields. Empty fields drop.</div>
+    </div>
+
+    <div class="clause">
+      <div class="c-label">Type</div>
+      <div class="c-body">Roboto Slab 11/14, color <code>--ems-color-ink-soft</code>. <code>FIG ##.#</code> set in the same family at the same size, weight 700. Left-aligned to the figure's left edge; max width equals the figure's width. See any figure caption in this bible (e.g. <code>FIG 03.1</code>, folio 008) for the canonical setting.</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ======================== 08 TEMPLATES ==================== -->
+<section id="s08" class="dark" data-screen-label="08 Templates">
+<div class="page">
+  <div class="folio">FOLIO 020</div>
+  <div class="section-head">
+    <div class="num">§ 08<br>TEMPLATES</div>
+    <div class="title">Five Starting Files.</div>
+  </div>
+
+  <div class="grid12">
+    <div style="grid-column:1/7">
+      <p class="lede" style="color:var(--bone)">Five starting files. Each is a structure, not a finished piece. Copy is left as <code style="font-family:var(--mono);font-size:13px;background:#1a1714;padding:1px 6px;border:1px solid var(--bone-edge);color:var(--bone)">[placeholder]</code>; fill before printing or publishing. Each template specifies trim, bleed, fold, paper, ink, and source file location.</p>
+    </div>
+    <div style="grid-column:8/13">
+      <p class="body" style="font-size:13px;color:var(--bone-edge)">Templates are the floor, not the ceiling. The bible mandates the spec; the editor of an artifact decides whether to follow this template, fork it, or write a new one. New templates earn a § 08.N entry only after the council has approved a third use.</p>
+    </div>
+  </div>
+
+  <!-- §08.1 SLOGAN POSTER -->
+  <div class="spec-block" style="border-top-color:var(--bone)">
+    <div class="spec-id" style="color:var(--bone-edge)">§ 08.1</div>
+    <div class="spec-title" style="color:var(--bone)">Slogan poster</div>
+
+    <div style="margin-top:24px;display:grid;grid-template-columns:300px 1fr;gap:32px;align-items:flex-start">
+      <div>
+        <div class="poster" style="aspect-ratio:18/24">
+          <div class="p-label">A · SLOGAN POSTER</div>
+          <div style="position:absolute;inset:24px;display:flex;flex-direction:column;justify-content:space-between">
+            <div style="border-top:6px solid var(--ink);padding-top:8px;display:flex;justify-content:space-between" class="mono"><span style="font-size:9px;letter-spacing:.18em">561 GROUP</span><span style="font-size:9px;letter-spacing:.18em">v.0.3</span></div>
+            <div style="font-family:var(--sans);font-weight:700;font-size:60px;line-height:.85;letter-spacing:-.04em;text-transform:uppercase">
+              <div>Land.</div><div>Water.</div><div style="color:var(--red)">Language.</div><div>Culture.</div>
+            </div>
+            <div class="mono" style="font-size:9px;letter-spacing:.18em">[date · place · printer]</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <table class="spec" style="margin-top:0">
+          <tr><th style="color:var(--bone)">Field</th><th style="color:var(--bone)">Value</th></tr>
+          <tr><td style="color:var(--bone)">Trim</td><td style="color:var(--bone)">18 × 24 in (457 × 610 mm)</td></tr>
+          <tr><td style="color:var(--bone)">Bleed</td><td style="color:var(--bone)">3 mm all sides</td></tr>
+          <tr><td style="color:var(--bone)">Margin</td><td style="color:var(--bone)">25 mm all sides — slogan never bleeds</td></tr>
+          <tr><td style="color:var(--bone)">Fold</td><td style="color:var(--bone)">None</td></tr>
+          <tr><td style="color:var(--bone)">Paper</td><td style="color:var(--bone)">Uncoated 100 gsm cream offset; or newsprint 55 gsm for street runs</td></tr>
+          <tr><td style="color:var(--bone)">Ink</td><td style="color:var(--bone)">Two-color: ink + alarm. Alarm reserved for one slogan line.</td></tr>
+          <tr><td style="color:var(--bone)">File</td><td style="color:var(--bone)"><code style="background:#1a1714;border:1px solid var(--bone-edge);padding:1px 6px;color:var(--bone)">templates/poster-slogan.indd</code></td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="clause">
+      <div class="c-label" style="color:var(--bone-edge)">When required</div>
+      <div class="c-body" style="color:var(--bone)">For declarative public-address artifacts where 561 names a position. Wheatpaste, gallery, demonstration, window.</div>
+    </div>
+
+    <div class="clause">
+      <div class="c-label" style="color:var(--bone-edge)">Form</div>
+      <div class="c-body" style="color:var(--bone)">
+        <p>Slogan set in Space Grotesk 700, four lines, one word per line, baseline-to-baseline 0.85 of cap-height. Line three (or the load-bearing line) carries alarm; all other lines carry ink. Mast: a single rule (<code>--ems-rule-bar</code>) at the top, with foot mark and version stamp in mono caption type.</p>
+        <p>The foot carries date, place of issue, and printer's name in JetBrains Mono 9 pt, tracking +0.18 em.</p>
+      </div>
+    </div>
+
+    <div class="clause test">
+      <div class="c-label" style="color:var(--bone-edge)">Test</div>
+      <div class="c-body" style="color:var(--bone)">Read the four slogan lines aloud at three meters in a hallway. Each line must read as one word, not as fragments. If any line breaks visually mid-word at that distance, the leading is too tight or the cap-height too small — increase by one step on the scale and retest.</div>
+    </div>
+  </div>
+
+  <!-- §08.2 ASSEMBLY POSTER -->
+  <div class="spec-block" style="border-top-color:var(--bone)">
+    <div class="spec-id" style="color:var(--bone-edge)">§ 08.2</div>
+    <div class="spec-title" style="color:var(--bone)">Assembly call</div>
+
+    <div style="margin-top:24px;display:grid;grid-template-columns:300px 1fr;gap:32px;align-items:flex-start">
+      <div>
+        <div class="poster" style="background:var(--ink);color:var(--bone);aspect-ratio:18/24">
+          <div class="p-label" style="color:var(--bone)">B · ASSEMBLY</div>
+          <div style="position:absolute;inset:24px;display:flex;flex-direction:column;justify-content:space-between">
+            <div class="mono" style="font-size:9px;letter-spacing:.18em;color:var(--bone-edge);border-top:6px solid var(--bone);padding-top:8px">CALL TO ASSEMBLY</div>
+            <div>
+              <div class="mono" style="font-size:11px;color:var(--red);letter-spacing:.18em;margin-bottom:14px">[date · time]</div>
+              <div style="font-family:var(--sans);font-weight:700;font-size:42px;line-height:.95;letter-spacing:-.02em;text-transform:uppercase;color:var(--bone)">[Meeting<br>Title]</div>
+              <div style="height:1px;background:var(--bone);margin:18px 0 12px"></div>
+              <div style="font-family:var(--slab);font-size:13px;line-height:1.4;color:var(--bone)">[Body. Who. Where. What for.]</div>
+            </div>
+            <div class="mono" style="font-size:9px;letter-spacing:.18em;color:var(--bone-edge)">561 GROUP</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <table class="spec" style="margin-top:0">
+          <tr><th style="color:var(--bone)">Field</th><th style="color:var(--bone)">Value</th></tr>
+          <tr><td style="color:var(--bone)">Trim</td><td style="color:var(--bone)">11 × 17 in (279 × 432 mm)</td></tr>
+          <tr><td style="color:var(--bone)">Bleed</td><td style="color:var(--bone)">3 mm all sides</td></tr>
+          <tr><td style="color:var(--bone)">Margin</td><td style="color:var(--bone)">18 mm all sides</td></tr>
+          <tr><td style="color:var(--bone)">Fold</td><td style="color:var(--bone)">None</td></tr>
+          <tr><td style="color:var(--bone)">Paper</td><td style="color:var(--bone)">Uncoated 80–100 gsm; black-ground requires uncoated cover stock 160 gsm to prevent show-through</td></tr>
+          <tr><td style="color:var(--bone)">Ink</td><td style="color:var(--bone)">Two-color: ink (full ground) + paper (reverse type) + alarm (date/time only)</td></tr>
+          <tr><td style="color:var(--bone)">File</td><td style="color:var(--bone)"><code style="background:#1a1714;border:1px solid var(--bone-edge);padding:1px 6px;color:var(--bone)">templates/poster-assembly.indd</code></td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="clause">
+      <div class="c-label" style="color:var(--bone-edge)">When required</div>
+      <div class="c-body" style="color:var(--bone)">For meetings, hearings, gatherings, and assemblies that 561 calls. Date, location, and purpose must be present. If any of the three is unknown, the call is not yet ready to print.</div>
+    </div>
+
+    <div class="clause">
+      <div class="c-label" style="color:var(--bone-edge)">Form</div>
+      <div class="c-body" style="color:var(--bone)">Black ground (ink full coverage). Date and time at the top in alarm. Title in Space Grotesk 700 reverse, two-line maximum. Body in Roboto Slab 13 pt reverse, four-line maximum. Foot stamp in mono caption.</div>
+    </div>
+
+    <div class="clause test">
+      <div class="c-label" style="color:var(--bone-edge)">Test</div>
+      <div class="c-body" style="color:var(--bone)">A reader at six meters must be able to answer: when, what, where, called by whom. If any answer requires walking closer, the hierarchy has failed — the date is too small or the title too long.</div>
+    </div>
+  </div>
+
+  <!-- §08.3 NUMERAL BANNER -->
+  <div class="spec-block" style="border-top-color:var(--bone)">
+    <div class="spec-id" style="color:var(--bone-edge)">§ 08.3</div>
+    <div class="spec-title" style="color:var(--bone)">Numeral banner</div>
+
+    <div style="margin-top:24px;display:grid;grid-template-columns:300px 1fr;gap:32px;align-items:flex-start">
+      <div>
+        <div class="poster" style="aspect-ratio:18/24">
+          <div class="p-label">C · NUMERAL</div>
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center">
+            <div style="font-family:var(--sans);font-weight:700;font-size:280px;line-height:.85;letter-spacing:-.06em;color:var(--ink)">561</div>
+          </div>
+          <div style="position:absolute;bottom:24px;left:24px;right:24px;display:flex;justify-content:space-between;align-items:end" class="mono">
+            <span style="font-size:10px;letter-spacing:.18em">561 GROUP</span>
+            <span style="font-size:9px">v.0.3</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <table class="spec" style="margin-top:0">
+          <tr><th style="color:var(--bone)">Field</th><th style="color:var(--bone)">Value</th></tr>
+          <tr><td style="color:var(--bone)">Trim</td><td style="color:var(--bone)">18 × 24 in (poster) or 36 × 48 in (banner)</td></tr>
+          <tr><td style="color:var(--bone)">Bleed</td><td style="color:var(--bone)">3 mm poster · 10 mm banner</td></tr>
+          <tr><td style="color:var(--bone)">Margin</td><td style="color:var(--bone)">25 mm poster · 50 mm banner</td></tr>
+          <tr><td style="color:var(--bone)">Fold</td><td style="color:var(--bone)">None</td></tr>
+          <tr><td style="color:var(--bone)">Paper</td><td style="color:var(--bone)">Newsprint 55 gsm (poster) or 13 oz vinyl (banner)</td></tr>
+          <tr><td style="color:var(--bone)">Ink</td><td style="color:var(--bone)">One-color: ink only</td></tr>
+          <tr><td style="color:var(--bone)">File</td><td style="color:var(--bone)"><code style="background:#1a1714;border:1px solid var(--bone-edge);padding:1px 6px;color:var(--bone)">templates/banner-numeral.indd</code></td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="clause">
+      <div class="c-label" style="color:var(--bone-edge)">When required</div>
+      <div class="c-body" style="color:var(--bone)">For wheatpaste runs, march banners, and presence-claims where the numeral itself is the message. Used when 561 marks territory without further argument.</div>
+    </div>
+
+    <div class="clause">
+      <div class="c-label" style="color:var(--bone-edge)">Form</div>
+      <div class="c-body" style="color:var(--bone)">Numeral fills the optical center, cap-height 0.65 of the trim's shorter dimension. No bracket rule. Foot stamp in mono caption with edition marker. The numeral may run in alarm at banner scale only.</div>
+    </div>
+
+    <div class="clause test">
+      <div class="c-label" style="color:var(--bone-edge)">Test</div>
+      <div class="c-body" style="color:var(--bone)">Photograph the printed banner from twenty meters under a phone camera. The numeral must read; the foot stamp may not. If both read at twenty meters, the foot is over-scaled.</div>
+    </div>
+  </div>
+
+  <!-- §08.4 FIELD MANUAL PAMPHLET -->
+  <div class="spec-block" style="border-top-color:var(--bone)">
+    <div class="spec-id" style="color:var(--bone-edge)">§ 08.4</div>
+    <div class="spec-title" style="color:var(--bone)">Field-instruction pamphlet</div>
+
+    <div style="margin-top:24px;display:grid;grid-template-columns:300px 1fr;gap:32px;align-items:flex-start">
+      <div>
+        <div class="poster" style="aspect-ratio:18/24">
+          <div class="p-label">D · MANUAL</div>
+          <div style="position:absolute;inset:24px;display:flex;flex-direction:column;gap:14px">
+            <div class="mono" style="font-size:9px;letter-spacing:.18em;border-bottom:1px solid var(--ink);padding-bottom:8px">FIELD INSTRUCTION №[N]</div>
+            <div style="font-family:var(--sans);font-weight:700;font-size:26px;line-height:.95;letter-spacing:-.02em;text-transform:uppercase">[Title<br>Of Manual]</div>
+            <ol style="list-style:none;font-family:var(--slab);font-size:13px;line-height:1.45;flex:1">
+              <li style="padding:8px 0;border-bottom:1px dashed var(--ink);position:relative;padding-left:28px"><span class="mono" style="position:absolute;left:0;color:var(--red);font-weight:700">01</span>[Step.]</li>
+              <li style="padding:8px 0;border-bottom:1px dashed var(--ink);position:relative;padding-left:28px"><span class="mono" style="position:absolute;left:0;color:var(--red);font-weight:700">02</span>[Step.]</li>
+              <li style="padding:8px 0;border-bottom:1px dashed var(--ink);position:relative;padding-left:28px"><span class="mono" style="position:absolute;left:0;color:var(--red);font-weight:700">03</span>[Step.]</li>
+              <li style="padding:8px 0;border-bottom:1px dashed var(--ink);position:relative;padding-left:28px"><span class="mono" style="position:absolute;left:0;color:var(--red);font-weight:700">04</span>[Step.]</li>
+              <li style="padding:8px 0;position:relative;padding-left:28px"><span class="mono" style="position:absolute;left:0;color:var(--red);font-weight:700">05</span>[Step.]</li>
+            </ol>
+            <div class="mono" style="font-size:9px;letter-spacing:.18em">561 GROUP · MANUAL SERIES</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <table class="spec" style="margin-top:0">
+          <tr><th style="color:var(--bone)">Field</th><th style="color:var(--bone)">Value</th></tr>
+          <tr><td style="color:var(--bone)">Trim</td><td style="color:var(--bone)">8.5 × 11 in flat → 8.5 × 3.67 in folded (US tri-fold)</td></tr>
+          <tr><td style="color:var(--bone)">Bleed</td><td style="color:var(--bone)">3 mm all sides</td></tr>
+          <tr><td style="color:var(--bone)">Margin</td><td style="color:var(--bone)">12 mm outer; 8 mm fold-edge</td></tr>
+          <tr><td style="color:var(--bone)">Fold</td><td style="color:var(--bone)">Letter-fold (Z or roll, both supported); panels of equal width</td></tr>
+          <tr><td style="color:var(--bone)">Paper</td><td style="color:var(--bone)">Uncoated 100 gsm cream; folded score required at 80 gsm and above</td></tr>
+          <tr><td style="color:var(--bone)">Ink</td><td style="color:var(--bone)">Two-color: ink + alarm. Alarm reserved for step numerals.</td></tr>
+          <tr><td style="color:var(--bone)">File</td><td style="color:var(--bone)"><code style="background:#1a1714;border:1px solid var(--bone-edge);padding:1px 6px;color:var(--bone)">templates/pamphlet-tri-fold.indd</code></td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="clause">
+      <div class="c-label" style="color:var(--bone-edge)">When required</div>
+      <div class="c-body" style="color:var(--bone)">For instruction-bearing artifacts: how to do a thing, in steps. Knowing your rights, running a meeting, filing a request, planting a seed bank.</div>
+    </div>
+
+    <div class="clause">
+      <div class="c-label" style="color:var(--bone-edge)">Form</div>
+      <div class="c-body" style="color:var(--bone)">Cover panel: section title in Space Grotesk 700, instruction number in mono caption, no body copy. Inside spread: numbered ordered list, step numerals in alarm, step text in Roboto Slab 13/18. Maximum five to nine steps; if more, split into a follow-up pamphlet.</div>
+    </div>
+
+    <div class="clause test">
+      <div class="c-label" style="color:var(--bone-edge)">Test</div>
+      <div class="c-body" style="color:var(--bone)">Hand the printed pamphlet to a reader who has no context. They must be able to perform step one without asking what step one means. If they ask, the step is too abstract — rewrite as a concrete action (verb + object) and retest.</div>
+    </div>
+  </div>
+
+  <!-- §08.5 WEB -->
+  <div class="spec-block" style="border-top-color:var(--bone)">
+    <div class="spec-id" style="color:var(--bone-edge)">§ 08.5</div>
+    <div class="spec-title" style="color:var(--bone)">Web — static, offline-capable</div>
+
+    <div style="margin-top:24px">
+      <div class="template" style="aspect-ratio:16/9;max-height:540px">
+        <div class="tpl-label">DESKTOP / 1320</div>
+        <div style="display:flex;flex-direction:column;height:100%">
+          <div style="background:var(--ink);color:var(--bone);padding:14px 24px;display:flex;justify-content:space-between;align-items:center;border-bottom:6px solid var(--red)">
+            <div style="display:flex;align-items:center;gap:18px">
+              <div style="font-family:var(--sans);font-weight:700;font-size:24px;letter-spacing:-.03em">561</div>
+              <div class="mono" style="font-size:11px;letter-spacing:.18em">GROUP</div>
+            </div>
+            <div style="display:flex;gap:24px;font-family:var(--mono);font-size:11px;letter-spacing:.18em">
+              <span>WORK</span><span>RECORDS</span><span>JOIN</span>
+            </div>
+          </div>
+          <div style="flex:1;background:var(--bone);padding:36px 32px;display:grid;grid-template-columns:repeat(12,1fr);gap:14px;color:var(--ink)">
+            <div style="grid-column:1/2;font-family:var(--mono);font-size:9px;letter-spacing:.18em;border-top:4px solid var(--ink);padding-top:6px">§ 00</div>
+            <div style="grid-column:2/9">
+              <div style="font-family:var(--sans);font-weight:700;font-size:48px;line-height:.85;letter-spacing:-.04em;text-transform:uppercase">
+                <div>Land.</div><div>Water.</div><div style="color:var(--red)">Language.</div><div>Culture.</div>
+              </div>
+              <div style="font-family:var(--slab);font-size:13px;margin-top:18px;line-height:1.45;max-width:50ch">[Mission paragraph. One sentence per line.]</div>
+            </div>
+            <div style="grid-column:10/13;border-left:1px solid var(--ink);padding-left:14px">
+              <div style="font-family:var(--mono);font-size:9px;letter-spacing:.18em;color:var(--ink-soft)">[CURRENT WORK]</div>
+              <div style="font-family:var(--mono);font-size:11px;margin-top:8px;line-height:1.6">► [item]<br>► [item]<br>► [item]</div>
+            </div>
+          </div>
+          <div style="background:var(--ink);color:var(--bone-edge);padding:12px 24px;font-family:var(--mono);font-size:10px;letter-spacing:.18em;display:flex;justify-content:space-between">
+            <span>NO TRACKERS · NO ADS · STATIC</span><span>v.0.3</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:32px">
+      <table class="spec">
+        <tr><th style="color:var(--bone)">Field</th><th style="color:var(--bone)">Value</th></tr>
+        <tr><td style="color:var(--bone)">Layout</td><td style="color:var(--bone)">12-column grid, 1320 px container, 14 px gutter; collapses to 6 / 4 / 2 columns at 960 / 640 / 380 px</td></tr>
+        <tr><td style="color:var(--bone)">Stack</td><td style="color:var(--bone)">Static HTML, no framework, no build step. CSS grid + system fonts as fallback for self-hosted Space Grotesk / Roboto Slab / JetBrains Mono.</td></tr>
+        <tr><td style="color:var(--bone)">Forbidden</td><td style="color:var(--bone)">Trackers, analytics, third-party fonts, third-party CDNs, ad networks, social embeds, cookie banners (none should be necessary), JavaScript frameworks for content pages</td></tr>
+        <tr><td style="color:var(--bone)">Performance</td><td style="color:var(--bone)">First contentful paint &lt; 800 ms on 3G. Total page weight &lt; 200 KB including fonts. JS optional and progressive.</td></tr>
+        <tr><td style="color:var(--bone)">Accessibility</td><td style="color:var(--bone)">WCAG AA minimum. Semantic HTML. Skip-to-content link. Reading order matches DOM order. Functions without JavaScript.</td></tr>
+        <tr><td style="color:var(--bone)">File</td><td style="color:var(--bone)"><code style="background:#1a1714;border:1px solid var(--bone-edge);padding:1px 6px;color:var(--bone)">templates/web/</code> (static site source)</td></tr>
+      </table>
+    </div>
+
+    <div class="clause">
+      <div class="c-label" style="color:var(--bone-edge)">Test</div>
+      <div class="c-body" style="color:var(--bone)">View the site with JavaScript disabled. All content must be present, all navigation must work, all forms must submit. The site must remain useful in plain HTML — JavaScript adds, never gates.</div>
+    </div>
+  </div>
+
+  <!-- Hide old grid4 — closed below -->
+  <div style="display:none">
+    <!-- POSTER A: SLOGAN -->
+    <div>
+      <div class="poster">
+        <div class="p-label">A · SLOGAN POSTER</div>
+        <div style="position:absolute;inset:24px;display:flex;flex-direction:column;justify-content:space-between">
+          <div style="border-top:6px solid var(--ink);padding-top:8px;display:flex;justify-content:space-between" class="mono"><span style="font-size:9px;letter-spacing:.18em">561 GROUP</span><span style="font-size:9px;letter-spacing:.18em">v.0.3</span></div>
+          <div style="font-family:var(--sans);font-weight:700;font-size:60px;line-height:.85;letter-spacing:-.04em;text-transform:uppercase">
+            <div>Land.</div><div>Water.</div><div style="color:var(--red)">Language.</div><div>Culture.</div>
+          </div>
+          <div class="mono" style="font-size:9px;letter-spacing:.18em">[date · place · printer]</div>
+        </div>
+      </div>
+      <div class="mono" style="margin-top:8px;color:var(--bone-edge)">A · SLOGAN — 18×24 in, 2 inks.</div>
+    </div>
+
+    <!-- POSTER B: ASSEMBLY -->
+    <div>
+      <div class="poster" style="background:var(--ink);color:var(--bone)">
+        <div class="p-label" style="color:var(--bone)">B · ASSEMBLY</div>
+        <div style="position:absolute;inset:24px;display:flex;flex-direction:column;justify-content:space-between">
+          <div class="mono" style="font-size:9px;letter-spacing:.18em;color:var(--bone-edge);border-top:6px solid var(--bone);padding-top:8px">CALL TO ASSEMBLY</div>
+          <div>
+            <div class="mono" style="font-size:11px;color:var(--red);letter-spacing:.18em;margin-bottom:14px">[date · time]</div>
+            <div style="font-family:var(--sans);font-weight:700;font-size:42px;line-height:.95;letter-spacing:-.02em;text-transform:uppercase;color:var(--bone)">[Meeting<br>Title]</div>
+            <div style="height:1px;background:var(--bone);margin:18px 0 12px"></div>
+            <div style="font-family:var(--slab);font-size:13px;line-height:1.4;color:var(--bone)">[Body. Who. Where. What for.]</div>
+          </div>
+          <div class="mono" style="font-size:9px;letter-spacing:.18em;color:var(--bone-edge)">561 GROUP</div>
+        </div>
+      </div>
+      <div class="mono" style="margin-top:8px;color:var(--bone-edge)">B · ASSEMBLY — call to meeting.</div>
+    </div>
+
+    <!-- POSTER C: NUMERAL -->
+    <div>
+      <div class="poster">
+        <div class="p-label">C · NUMERAL</div>
+        <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center">
+          <div style="font-family:var(--sans);font-weight:700;font-size:280px;line-height:.85;letter-spacing:-.06em;color:var(--ink)">561</div>
+        </div>
+        <div style="position:absolute;bottom:24px;left:24px;right:24px;display:flex;justify-content:space-between;align-items:end" class="mono">
+          <span style="font-size:10px;letter-spacing:.18em">561 GROUP</span>
+          <span style="font-size:9px">v.0.3</span>
+        </div>
+      </div>
+      <div class="mono" style="margin-top:8px;color:var(--bone-edge)">C · NUMERAL — wheatpaste, banner.</div>
+    </div>
+
+    <!-- POSTER D: MANUAL -->
+    <div>
+      <div class="poster">
+        <div class="p-label">D · MANUAL</div>
+        <div style="position:absolute;inset:24px;display:flex;flex-direction:column;gap:14px">
+          <div class="mono" style="font-size:9px;letter-spacing:.18em;border-bottom:1px solid var(--ink);padding-bottom:8px">FIELD INSTRUCTION №[N]</div>
+          <div style="font-family:var(--sans);font-weight:700;font-size:26px;line-height:.95;letter-spacing:-.02em;text-transform:uppercase">[Title<br>Of Manual]</div>
+          <ol style="list-style:none;font-family:var(--slab);font-size:13px;line-height:1.45;flex:1">
+            <li style="padding:8px 0;border-bottom:1px dashed var(--ink);position:relative;padding-left:28px"><span class="mono" style="position:absolute;left:0;color:var(--red);font-weight:700">01</span>[Step.]</li>
+            <li style="padding:8px 0;border-bottom:1px dashed var(--ink);position:relative;padding-left:28px"><span class="mono" style="position:absolute;left:0;color:var(--red);font-weight:700">02</span>[Step.]</li>
+            <li style="padding:8px 0;border-bottom:1px dashed var(--ink);position:relative;padding-left:28px"><span class="mono" style="position:absolute;left:0;color:var(--red);font-weight:700">03</span>[Step.]</li>
+            <li style="padding:8px 0;border-bottom:1px dashed var(--ink);position:relative;padding-left:28px"><span class="mono" style="position:absolute;left:0;color:var(--red);font-weight:700">04</span>[Step.]</li>
+            <li style="padding:8px 0;position:relative;padding-left:28px"><span class="mono" style="position:absolute;left:0;color:var(--red);font-weight:700">05</span>[Step.]</li>
+          </ol>
+          <div class="mono" style="font-size:9px;letter-spacing:.18em">561 GROUP · MANUAL SERIES</div>
+        </div>
+      </div>
+      <div class="mono" style="margin-top:8px;color:var(--bone-edge)">D · MANUAL — tri-fold pamphlet.</div>
+    </div>
+  </div>
+
+  <!-- Web template -->
+  <div style="margin-top:64px">
+    <div class="h4" style="margin-bottom:14px;color:var(--bone)">FIG 08.1 · WEB — STATIC, OFFLINE-CAPABLE</div>
+    <div class="template" style="aspect-ratio:16/9;max-height:540px">
+      <div class="tpl-label">DESKTOP / 1320</div>
+      <div style="display:flex;flex-direction:column;height:100%">
+        <div style="background:var(--ink);color:var(--bone);padding:14px 24px;display:flex;justify-content:space-between;align-items:center;border-bottom:6px solid var(--red)">
+          <div style="display:flex;align-items:center;gap:18px">
+            <div style="font-family:var(--sans);font-weight:700;font-size:24px;letter-spacing:-.03em">561</div>
+            <div class="mono" style="font-size:11px;letter-spacing:.18em">GROUP</div>
+          </div>
+          <div style="display:flex;gap:24px;font-family:var(--mono);font-size:11px;letter-spacing:.18em">
+            <span>WORK</span><span>RECORDS</span><span>JOIN</span>
+          </div>
+        </div>
+        <div style="flex:1;background:var(--bone);padding:36px 32px;display:grid;grid-template-columns:repeat(12,1fr);gap:14px;color:var(--ink)">
+          <div style="grid-column:1/2;font-family:var(--mono);font-size:9px;letter-spacing:.18em;border-top:4px solid var(--ink);padding-top:6px">§ 00</div>
+          <div style="grid-column:2/9">
+            <div style="font-family:var(--sans);font-weight:700;font-size:48px;line-height:.85;letter-spacing:-.04em;text-transform:uppercase">
+              <div>Land.</div><div>Water.</div><div style="color:var(--red)">Language.</div><div>Culture.</div>
+            </div>
+            <div style="font-family:var(--slab);font-size:13px;margin-top:18px;line-height:1.45;max-width:50ch">[Mission paragraph. One sentence per line.]</div>
+          </div>
+          <div style="grid-column:10/13;border-left:1px solid var(--ink);padding-left:14px">
+            <div style="font-family:var(--mono);font-size:9px;letter-spacing:.18em;color:var(--ink-soft)">[CURRENT WORK]</div>
+            <div style="font-family:var(--mono);font-size:11px;margin-top:8px;line-height:1.6">► [item]<br>► [item]<br>► [item]</div>
+          </div>
+        </div>
+        <div style="background:var(--ink);color:var(--bone-edge);padding:12px 24px;font-family:var(--mono);font-size:10px;letter-spacing:.18em;display:flex;justify-content:space-between">
+          <span>NO TRACKERS · NO ADS · STATIC</span><span>v.0.2</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ======================== 09 REFUSALS ===================== -->
+<section id="s09" data-screen-label="09 Refusals">
+<div class="page">
+  <div class="folio">FOLIO 024</div>
+  <div class="section-head">
+    <div class="num">§ 09<br>REFUSALS</div>
+    <div class="title">Visual Moves We Don't Make.</div>
+  </div>
+
+  <div class="grid12">
+    <div style="grid-column:1/8">
+      <p class="lede">Refusals about visual moves the bible can detect — not policy. Each carries a check the artifact can fail before it prints. Org-level refusals (clients, vocabulary, sourcing) live in 561's operating documents, not here.</p>
+    </div>
+  </div>
+
+  <div class="spec-block">
+    <div class="spec-id">§ 09.1</div>
+    <div class="spec-title">No philanthropic visual language</div>
+    <div class="clause">
+      <div class="c-label">Refusal</div>
+      <div class="c-body">Soft-focus subjects looking grateful or in need. White display type set over a tinted photograph. Mission-statement copy paired with smiling-face composition. The visual grammar of the donor appeal is forbidden.</div>
+    </div>
+    <div class="clause test">
+      <div class="c-label">Check</div>
+      <div class="c-body">Cover the artifact's text. If what remains looks like a fundraising mailer, reset the photograph to evidentiary register (§ 07.2) or remove imagery.</div>
+    </div>
+  </div>
+
+  <div class="spec-block">
+    <div class="spec-id">§ 09.2</div>
+    <div class="spec-title">No agritech minimalism</div>
+    <div class="clause">
+      <div class="c-label">Refusal</div>
+      <div class="c-body">Thin geometric sans on green gradient. Aerial drone footage of fields. The visual grammar of the agriculture-tech pitch deck is forbidden.</div>
+    </div>
+    <div class="clause test">
+      <div class="c-label">Check</div>
+      <div class="c-body">If the palette and type would be at home on a Series A landing page for a vertical-farming startup, return to the system palette (§ 04) and verify the type stack (§ 05).</div>
+    </div>
+  </div>
+
+  <div class="spec-block">
+    <div class="spec-id">§ 09.3</div>
+    <div class="spec-title">No type set over photography</div>
+    <div class="clause">
+      <div class="c-label">Refusal</div>
+      <div class="c-body">Photographs do not serve as backgrounds for display type. A caption beneath a photograph is permitted; a headline over a photograph is not.</div>
+    </div>
+    <div class="clause test">
+      <div class="c-label">Check</div>
+      <div class="c-body">Confirm no display-scale type (above 18 pt) overlaps any photograph's bounding box.</div>
+    </div>
+  </div>
+
+  <div class="spec-block">
+    <div class="spec-id">§ 09.4</div>
+    <div class="spec-title">No AI-generated imagery</div>
+    <div class="clause">
+      <div class="c-label">Refusal</div>
+      <div class="c-body">No diffusion-model imagery, no GAN-generated portraiture, no AI-assisted illustration that produces final pixels without a credited artist's hand. Generative-AI tools used for sketching or reference are permitted; their output is not.</div>
+    </div>
+    <div class="clause test">
+      <div class="c-label">Check</div>
+      <div class="c-body">For every figure, name the human author and the medium. If the answer is a model name, pull the figure.</div>
+    </div>
+  </div>
+
+  <div class="spec-block">
+    <div class="spec-id">§ 09.5</div>
+    <div class="spec-title">No co-marks beside the numeral</div>
+    <div class="clause">
+      <div class="c-label">Refusal</div>
+      <div class="c-body">No <code>561 / EFA</code>, <code>561 · [partner]</code>, certification badges, or funder lockups beside the mark. Partner credits live in the colophon (§ 11) at body weight.</div>
+    </div>
+    <div class="clause test">
+      <div class="c-label">Check</div>
+      <div class="c-body">Apply § 02.1 clearspace. If any other mark falls inside that box, move it to the colophon.</div>
+    </div>
+  </div>
+
+  <div class="spec-block">
+    <div class="spec-id">§ 09.6</div>
+    <div class="spec-title">No metallic, foil, emboss, or simulated 3-D finishes</div>
+    <div class="clause">
+      <div class="c-label">Refusal</div>
+      <div class="c-body">The mark and any 561 artifact is never metallic, foil-stamped, embossed, debossed, varnished, or 3-D rendered. The grammar of the bank, the diploma, and the corporate annual report is exactly what the bible refuses.</div>
+    </div>
+    <div class="clause test">
+      <div class="c-label">Check</div>
+      <div class="c-body">Photocopy the artifact in single-color B&amp;W. If information is lost (foil, emboss, gradient, drop shadow), the artifact has failed.</div>
+    </div>
+  </div>
+
+  <div class="spec-block">
+    <div class="spec-id">§ 09.7</div>
+    <div class="spec-title">No third-party requests on web surfaces</div>
+    <div class="clause">
+      <div class="c-label">Refusal</div>
+      <div class="c-body">No analytics scripts, tracking pixels, third-party fonts that phone home, third-party embeds, or advertising on any 561 web surface.</div>
+    </div>
+    <div class="clause test">
+      <div class="c-label">Check</div>
+      <div class="c-body">Load the page with developer tools open. Network must show requests to one origin only — the 561 domain. Storage must show no cookies set.</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ======================== 10 LINEAGE ====================== -->
+<section id="s10" data-screen-label="10 Lineage">
+<div class="page">
+  <div class="folio">FOLIO 026</div>
+  <div class="section-head">
+    <div class="num">§ 10<br>LINEAGE</div>
+    <div class="title">Two Practices. Cited.</div>
+  </div>
+
+  <p class="lede" style="max-width:80ch">This bible follows the framework of <strong>visual engineering</strong> as articulated by emsenn — design that orients before it interprets. The visual language draws on two design lineages.</p>
+
+  <div class="grid2" style="margin-top:48px">
+    <div style="border:1px solid var(--ink);padding:24px;background:var(--bone)">
+      <div class="h4" style="color:var(--red);margin-bottom:14px">LEAD · BRUTALISM</div>
+      <p class="body">Anti-ornament, hard hierarchy, exposed structure. Visible in the masthead, the section heads, the rule weights, the refusal of decoration. The page tells you it is a page.</p>
+    </div>
+    <div style="border:1px solid var(--ink);padding:24px;background:var(--bone)">
+      <div class="h4" style="color:var(--blue);margin-bottom:14px">LEAD · TUFTE</div>
+      <p class="body">Evidence-first, attention budget honored, micro/macro reading. Visible in the caption convention, the table of color-budget rules, and the forensic register applied to records.</p>
+    </div>
+  </div>
+
+  <div style="margin-top:48px">
+    <div class="h4" style="margin-bottom:14px">ALSO IN THE ROOM</div>
+    <div class="grid2">
+      <div>
+        <p class="body"><strong>Constructivist agitprop</strong> — El Lissitzky, Rodchenko, Stepanova. Diagonal hierarchy, type-as-construction, photomontage as argument. We use the methods, not the motifs.</p>
+      </div>
+      <div>
+        <p class="body"><strong>Black radical print culture</strong> — Emory Douglas in the <em>Black Panther</em>, the broadsheets of the Liberation News Service, the mimeo and xerox lineage of movement printing. Cheap to make, fast to distribute, hard to misread.</p>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top:48px;border:1px solid var(--ink);padding:24px;background:var(--bone)">
+    <div class="h4" style="margin-bottom:14px">PRIMARY METHODOLOGICAL SOURCE</div>
+    <div class="mono" style="font-size:13px;line-height:1.6">
+      emsenn — <em>Visual Engineering Practices</em>.<br>
+      emsenn.net / library / engineering / design / visual-engineering<br>
+      <span style="color:var(--ink-soft)">Cited as the methodological frame for this bible.</span>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ======================== 11 COLOPHON ===================== -->
+<section id="s11" data-screen-label="11 Colophon">
+<div class="page">
+  <div class="folio">FOLIO 028</div>
+  <div class="section-head">
+    <div class="num">§ 11<br>COLOPHON</div>
+    <div class="title">Edits Welcome.</div>
+  </div>
+
+  <div class="grid12">
+    <div style="grid-column:1/7">
+      <p class="lede"><strong>v.0.3</strong> — drafted May 2026. Living document. Edits welcome; bring them with examples of what failed.</p>
+      <p class="body" style="margin-top:18px">If you're making something for 561, follow the bible. Where it fails you, propose an edit. Where it contradicts the work, the work wins — then come fix the bible so it stops failing the next person.</p>
+      <p class="body" style="margin-top:14px">Reproduction is open to anyone working with us. Resale is forbidden. Translation is encouraged; simplification is not.</p>
+    </div>
+    <div style="grid-column:8/13">
+      <table class="spec">
+        <tr><th>Field</th><th>Value</th></tr>
+        <tr><td>Edition</td><td>v.0.3 — Living</td></tr>
+        <tr><td>Drafted</td><td>2026 · 05 · 01</td></tr>
+        <tr><td>Method</td><td>Visual Engineering (emsenn)</td></tr>
+        <tr><td>Type</td><td>Space Grotesk · Roboto Slab · JetBrains Mono</td></tr>
+        <tr><td>Inks</td><td>Ink · Bone · Alarm · Witness</td></tr>
+        <tr><td>License</td><td>Cooperative · members</td></tr>
+        <tr><td>Next review</td><td>When something it says fails</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div style="margin-top:64px;border-top:8px solid var(--ink);padding-top:48px">
+    <div style="font-family:var(--sans);font-weight:700;font-size:clamp(48px,8vw,128px);line-height:.85;letter-spacing:-.04em;text-transform:uppercase">
+      <div>Land.</div>
+      <div>Water.</div>
+      <div style="color:var(--red)">Language.</div>
+      <div>Culture.</div>
+    </div>
+    <div class="mono" style="font-size:11px;letter-spacing:.18em;color:var(--ink-soft);margin-top:32px">— END · v.0.3 —</div>
+  </div>
+</div>
+</section>
+
+<footer class="colophon">
+  <div class="page">
+    <div class="grid12">
+      <div style="grid-column:1/5">
+        <div style="border-top:4px solid var(--bone);padding-top:8px">
+          <div style="font-family:var(--sans);font-weight:700;font-size:64px;line-height:.85;letter-spacing:-.05em;color:var(--bone)">561</div>
+        </div>
+        <div style="font-family:var(--sans);font-weight:500;font-size:14px;letter-spacing:.22em;text-transform:uppercase;color:var(--bone);margin-top:6px">Group</div>
+      </div>
+      <div style="grid-column:5/9" class="mono" style="font-size:11px;color:var(--bone-edge);line-height:1.7">
+        <div style="color:var(--bone);font-weight:700">DESIGN BIBLE</div>
+        v.0.3 · Living document<br>
+        Drafted 2026·05·01<br>
+        Edits welcome
+      </div>
+      <div style="grid-column:9/13;text-align:right" class="mono" style="font-size:11px;color:var(--bone-edge);line-height:1.7">
+        <div style="color:var(--bone);font-weight:700">METHOD</div>
+        Visual Engineering<br>
+        — emsenn, 2024<br>
+        Brutalism · Tufte
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

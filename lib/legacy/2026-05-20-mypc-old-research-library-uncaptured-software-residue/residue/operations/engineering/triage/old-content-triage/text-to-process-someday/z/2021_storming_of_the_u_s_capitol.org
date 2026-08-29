@@ -1,0 +1,25 @@
+#+title: 2021 Storming of the U.S. Capitol
+#+begin_head
+#+ghe_schema: event-0.1.0
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2021-01-07 Thu 09:15]
+#+roam_tags: event
+#+end_head
+
+#+name: definition
+The */[[file:2021_storming_of_the_u_s_capitol.org][2021 Storming of the U.S. Capitol]]/* was an event on [[file:d/2021-01-06.org][January 6th, 2021]], when supporters of President [[file:donald_j_trump.org][Donald Trump]] [[file:storm.org][stormed]] the [[file:u_s_capitol.org][U.S. Capitol]] while the [[file:u_s_congress.org][Congress]] was in the process of certifying the [[file:electoral_college.org][Electoral College]] to affirm the results of the [[file:2020_u_s_presidential_election.org][2020 U.S. presidential election]].
+
+#+toc: headlines 2
+
+* Supplements
+** Record history
+   :PROPERTIES:
+   :CUSTOM_ID: record-history
+   :END:
+   :LOGBOOK:
+   - Note taken on [2021-01-07 Thu 09:15] \\
+      Created from [[file:~/org/s/p/d/2021-01-07.org::*My perspective on yesterday's protests in the U.S.][My perspective on yesterday's protests in the U.S.]]
+
+      
+   :END:

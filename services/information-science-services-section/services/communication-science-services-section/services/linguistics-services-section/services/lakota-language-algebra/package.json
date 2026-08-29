@@ -1,0 +1,47 @@
+{
+  "name": "@lenticule-science/lakota-language-algebra",
+  "version": "0.1.4",
+  "type": "module",
+  "description": "lakota-language-algebra: Lakȟótiyapi (Lakota) as a language fiber — its lexicon, curated verb-stem morphology, reference, attachment and segmentation tables — presented as a live, discoverable, directly contractable micro-enterprise (a die) of linguistics-services-section.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emsenn/lakota-language.git"
+  },
+  "engines": {
+    "node": ">=22.18"
+  },
+  "bin": {
+    "solicit-service": "./src/lakota-die.mjs",
+    "invoke-service": "./src/lakota-die.mjs"
+  },
+  "scripts": {
+    "check": "for f in src/*.mjs test/*.mjs; do node --check \"$f\" || exit 1; done && tsc -p tsconfig.json",
+    "build": "tsc -p tsconfig.build.json",
+    "test": "node --test test/*.test.mjs src/*.test.mts",
+    "prepack": "npm run verify"
+  },
+  "main": "./src/bundle.mjs",
+  "exports": {
+    ".": "./src/bundle.mjs",
+    "./bundle": "./src/bundle.mjs",
+    "./tag": "./src/tag.mjs",
+    "./package.json": "./package.json"
+  },
+  "dependencies": {
+    "@lenticule-science/communicating": "0.0.4",
+    "@red-cup-engineering/semantic-content-identify-service": "0.2.7"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.1",
+    "typescript": "5.9.3"
+  },
+  "files": [
+    "content",
+    "src/bundle.mjs",
+    "src/lakota-die.mjs",
+    "src/semantic-identity.mjs",
+    "src/tag.mjs"
+  ],
+  "sideEffects": false,
+  "license": "UNLICENSED"
+}

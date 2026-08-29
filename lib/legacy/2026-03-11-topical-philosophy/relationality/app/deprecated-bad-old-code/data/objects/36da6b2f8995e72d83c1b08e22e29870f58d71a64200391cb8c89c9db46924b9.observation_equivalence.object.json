@@ -1,0 +1,39 @@
+{
+  "act_version": "v1",
+  "equivalence_classes": [
+    [
+      "resting"
+    ],
+    [
+      "surveying"
+    ],
+    [
+      "traveling"
+    ],
+    [
+      "fighting"
+    ],
+    [
+      "command_any"
+    ]
+  ],
+  "equivalence_table": {
+    "command_any": "command_any",
+    "fighting": "fighting",
+    "resting": "resting",
+    "surveying": "surveying",
+    "traveling": "traveling"
+  },
+  "id": "36da6b2f8995e72d83c1b08e22e29870f58d71a64200391cb8c89c9db46924b9",
+  "kind": "observation_equivalence",
+  "observation_ids": [
+    "resting",
+    "surveying",
+    "traveling",
+    "fighting",
+    "command_any"
+  ],
+  "witness_ids": [
+    "e0d0080310c13f3402fb8659f99b768f7b838507158c3e2d102afcdd23ace142"
+  ]
+}

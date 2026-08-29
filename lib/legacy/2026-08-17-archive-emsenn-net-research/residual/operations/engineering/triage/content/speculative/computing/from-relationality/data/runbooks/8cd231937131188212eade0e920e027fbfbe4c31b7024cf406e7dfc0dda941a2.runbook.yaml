@@ -1,0 +1,22 @@
+name: calculate_profile_syntax
+inputs:
+- role: profile_topos
+  kind: profile_topos
+- role: profile_semantics
+  kind: profile_semantics
+outputs:
+- role: profile_syntax
+  kind: profile_syntax
+steps:
+- name: calculate_profile_syntax
+  operator: calculate_profile_syntax
+  step_index: 0
+  inputs:
+  - role: profile_topos
+    kind: profile_topos
+  - role: profile_semantics
+    kind: profile_semantics
+  outputs:
+  - role: profile_syntax
+    kind: profile_syntax
+id: 8cd231937131188212eade0e920e027fbfbe4c31b7024cf406e7dfc0dda941a2

@@ -1,0 +1,43 @@
+---
+title: "Alfredo Bonanno"
+aliases:
+  - "Alfredo Bonanno"
+  - "Bonanno"
+  - "Alfredo M. Bonanno"
+date-created: 2026-03-06
+type: person
+keywords:
+  - Anarchism
+description: "Alfredo Bonanno (1937–2023) was an Italian anarchist theorist and practitioner who developed insurrectionary anarchism as a distinct current, emphasizing informal organization, the immediacy of attack, and the inseparability of freedom from the struggle for it."
+---
+
+Alfredo Bonanno (1937–2023) was an Italian anarchist whose theoretical and practical work defined [insurrectionary anarchism](../../../glossary/terms/insurrectionary-anarchism.md) as a distinct current. His central argument was organizational: permanent structures — parties, unions, federations with fixed membership — reproduce [hierarchy](../../../glossary/terms/hierarchy.md) and [bureaucracy](../../../glossary/terms/bureaucracy.md) regardless of their stated purpose. The alternative is [informal organization](../../../glossary/terms/informal-organization.md): temporary, task-specific coordination among [affinity groups](../../../glossary/terms/affinity-group.md) that dissolves when its purpose is achieved.
+
+## Core ideas
+
+- **Armed joy**: Bonanno's most influential concept. The experience of [freedom](../../../glossary/terms/freedom.md) in the act of resistance — intensity, joy, the dissolution of the boundary between political action and lived experience — is not a byproduct of struggle but its purpose. A revolution that demands sacrifice and deferred gratification reproduces the logic of [domination](../../../glossary/terms/domination.md) it claims to oppose. Freedom must be practiced now, in the present, or it is not freedom.
+
+- **[Informal organization](../../../glossary/terms/informal-organization.md)**: The structural alternative to both formal organization (which accumulates hierarchy) and individualism (which cannot coordinate). Affinity groups form around shared projects, coordinate through direct relationship and trust, act, and dissolve. No permanent membership, no officers, no treasury, no program. The form is the content.
+
+- **The insurrectionary project**: Not a plan for revolution but a stance toward existing [authority](../../../glossary/terms/authority.md): permanent hostility, [refusal](../../../glossary/terms/refusal.md) of negotiation, [direct action](../../../glossary/terms/direct-action.md) against structures of domination. The goal is not to build a counter-power but to create ruptures — moments of ungovernable freedom — that demonstrate the fragility of the existing order and the possibility of living otherwise.
+
+- **Critique of the movement**: Bonanno was sharply critical of anarchism-as-identity — the subculture, the organizations, the conferences, the bookfairs. These, he argued, become comfortable substitutes for actual resistance. The anarchist movement can become its own form of [recuperation](../../../glossary/terms/recuperation.md): radical aesthetics without radical practice.
+
+## Significance for this research
+
+Bonanno's work poses the organizational question that underlies this school's analysis: does any permanent structure inevitably reproduce [hierarchy](../../../glossary/terms/hierarchy.md)? His answer — yes, and therefore organize informally — is contested within anarchism (particularly by [anarcho-syndicalists](../../../glossary/terms/anarcho-syndicalism.md) who insist durable organization is necessary). But the question itself is indispensable. It forces every anarchist organizational form to justify itself against the charge that it reproduces what it opposes.
+
+## Key texts
+
+- *The Armed Joy* (1977)
+- *From Riot to Insurrection* (1988)
+- *The Insurrectional Project* (1999)
+- *Let's Destroy Work, Let's Destroy the Economy* (1995)
+
+## Related
+
+- [insurrectionary anarchism](../../../glossary/terms/insurrectionary-anarchism.md) — the current he defined
+- [informal organization](../../../glossary/terms/informal-organization.md) — the organizational principle
+- [affinity group](../../../glossary/terms/affinity-group.md) — the basic organizational unit
+- [refusal](../../../glossary/terms/refusal.md) — the stance toward existing authority
+- [Errico Malatesta](./errico-malatesta.md) — earlier insurrectionary theorist, differed on organization

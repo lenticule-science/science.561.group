@@ -1,0 +1,6 @@
+#+title: Org-mode application
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-19 Sat 13:48]
+#+roam_tags: term
+The */Org-mode application/* is the [[file:software.org][software]] for [[file:emacs.org][Emacs]] that works with files using the  [[file:org_mode_format.org][Org-mode format]].

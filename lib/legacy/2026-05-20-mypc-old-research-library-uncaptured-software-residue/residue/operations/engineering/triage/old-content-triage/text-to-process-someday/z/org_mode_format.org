@@ -1,0 +1,5 @@
+#+title: Org-mode format
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-17 Thu 22:06]
+The */Org-mode format/* is the [[file:text_formatting.org][text-formatting]] syntax used by the [[file:org_mode.org][Org-mode]] application.

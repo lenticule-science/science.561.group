@@ -1,0 +1,5 @@
+{{ if (eq .Type "log") }}
+  {{ partial "span-log-brief.html" . }}
+{{ else }}
+  {{ partial "span-page-brief.html" . }}
+{{ end }}

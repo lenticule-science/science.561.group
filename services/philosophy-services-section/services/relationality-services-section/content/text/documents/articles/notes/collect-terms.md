@@ -1,0 +1,24 @@
+---
+title: Cataloging Terms
+act: CollectTerms
+slug: collect-terms
+top: ConstructTerms
+bottom: ConstructTerms
+summary: '*Construct Terms* enumerates every syntactic term. We explicitly name that enumeration as ***Collect Terms*** (`CollectTerms`).'
+tags:
+- act
+layer: act
+status: plan
+---
+# Cataloging Terms
+
+## Interpretation
+
+*Construct Terms* enumerates every syntactic term.  We explicitly name that enumeration as ***Collect Terms*** ([CollectTerms](./collect-terms.md)).
+
+Again we alias the constructor’s output so later statements can refer to the entire syntactic collection.
+
+
+{{ act_info(page.meta) }}
+
+{{ act_nav(page.meta) }}

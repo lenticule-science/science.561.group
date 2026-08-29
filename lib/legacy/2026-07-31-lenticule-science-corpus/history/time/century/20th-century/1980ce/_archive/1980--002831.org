@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       260e0955-4d67-45c5-9094-154790d1425a
+:public:   true
+:resource-description: (([[id:edaef069-c68d-46aa-a970-d3cb7fe3165c][resource type]] . [[id:d150eaba-d55f-401c-8487-6f2f84d16ace][year]]))
+:END:
+#+title: 1980
+#+date: [2025-08-24 Sun 08:55]
+#+index: Chronology!Common Era!20th Century!1980s!1980
+

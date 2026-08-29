@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://561.group/swarm-intelligence/transfinite-predication-category/deriving-relevance-frontier/deriving-relevance-frontier.schema.json",
+  "title": "Deriving-relevance-frontier (predicating-regime fiber selection morphism; ω < κ < ω₁)",
+  "description": "Regime: transfinite-predication-category (predicating morphism). Maps (user-prompt, knowledge-region) → relevance-frontier object. Per emsenn 2026-05-28 reframe (substrate-as-AI): this morphism IS the AI's recall act — the LLM here functions as a dictionary/pattern-matcher we consult to identify which known entities the user is asking about. Mechanism: (1) extract known entity slugs from the knowledge-region cells (subjects of settled predications). (2) render a permissive HTML prompt presenting the entity list and the user-prompt, asking the LLM to identify matches. (3) call inferring; treat the response as untrusted text. (4) extract matches by substring-checking known entity slugs against the LLM's text response (we don't trust the LLM's structure; we extract what's in our known set). (5) build the relevance-frontier with matched entities + their neighborhood predications + missingKnowledge signal. Variance: restriction. The fiber slice IS predicating; the LLM call inside is delegated articulating but does not change this morphism's regime.",
+  "kind": "morphism",
+  "domain": "(user-prompt, knowledge-region, options)",
+  "codomain": "#schema/relevance-frontier",
+  "variance": "restriction",
+  "monotone": true,
+  "type": "object",
+  "required": ["userPrompt", "knowledgeRegion", "output", "evidence"],
+  "additionalProperties": false,
+  "properties": {
+    "userPrompt": {
+      "type": "object",
+      "required": ["utterance"],
+      "additionalProperties": true
+    },
+    "knowledgeRegion": {
+      "type": "array",
+      "items": { "type": "object" }
+    },
+    "options": { "type": "object" },
+    "output": { "type": "object" },
+    "evidence": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  }
+}

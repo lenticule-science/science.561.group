@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       ccfa42b1-16cc-448e-9f09-5577b91b6464
+:END:
+#+title: genring
+#+date: [2025-08-29 Fri 10:44]
+

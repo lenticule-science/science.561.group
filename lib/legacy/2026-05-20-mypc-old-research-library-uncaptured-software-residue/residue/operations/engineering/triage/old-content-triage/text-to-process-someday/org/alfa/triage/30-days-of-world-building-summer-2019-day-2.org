@@ -1,0 +1,15 @@
+#+TITLE: 30 Days of World Building, Summer 2019: Day 2
+#+AUTHOR: emsenn
+#+MACRO: emsenn emsenn
+#+OPTIONS: toc:nil num:nil -:nil
+* Introduction
+This post is my second for /30 Days of World Building/ during the
+summer of 2019. During the series, I'll be fleshing out my fantasy
+setting, /Teraum/.
+
+{{{document-eli}}}
+
+* Supplements
+** Index
+- Teraum :: {{{ref(teraum)}}}
+- 30 Days of World Building :: {{{ref(thirty-days-of-world-building)}}}

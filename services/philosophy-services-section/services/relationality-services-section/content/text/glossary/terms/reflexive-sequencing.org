@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       f1b628aa-faad-41cd-9c86-8d1fe6f73d56
+:END:
+#+title: reflexive sequencing
+#+date: [2025-08-26 Tue 12:11]
+

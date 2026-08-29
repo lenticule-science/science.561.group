@@ -1,0 +1,18 @@
+{{ with .GetPage (string (delimit (slice (substr .RelPermalink 0 -1) "/logs") "")) }}
+  {{ if .Pages }}
+    <section class="pages-listing" id="recent-logs">
+      <h2>{{ if gt (len .Pages) 5}}Recent{{ end }} Logs</h2>
+      <ul>
+        {{ range first 5 .Pages.ByPublishDate.Reverse }}
+          <li>
+            {{ partial "span-log-brief.html" . }}
+          </li>
+        {{ end }}
+      </ul>
+      An <a href="{{ (string (delimit (slice .RelPermalink "index.xml") "")) }}" id="recent-logs-rss">RSS feed</a> of these logs is available.</a>
+      {{ if gt (len .Pages) 5 }}
+        A <a href="{{- printf "%s%s/" .Site.BaseURL (substr .RelPermalink 0 -1) -}}">complete list of logs</a> is also available.</a>
+      {{ end }}
+    </section>
+  {{ end }}
+{{ end }}

@@ -1,0 +1,9 @@
+{
+  "id": "normalize_observation",
+  "act": "NormalizeObservation",
+  "module": "relationality.realizers.normalize_observation",
+  "callable": "realize_normalize_observation",
+  "input_kind": "MeasurementOutcome",
+  "output_kind": "NormalizedObservation",
+  "description": "Normalize measurement into observational equivalence."
+}

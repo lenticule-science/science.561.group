@@ -1,0 +1,4 @@
+Cleaned up. The misplaced files are gone. All research is consolidated in:
+
+- **Deliverable**: `library/domains/engineering/domains/tech/domains/computing/texts/small-model-fine-tuning-for-agents-2026.md`
+- **Supporting research**: `operations/engineering/records/research/` (cost analysis, dataset guide, BFCL benchmarks, extended survey)

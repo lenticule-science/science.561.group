@@ -1,0 +1,42 @@
+:PROPERTIES:
+:ID:       856456dd-1a2c-4c11-9406-02ade9d20fe0
+:form:     [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]
+:public:   true
+:END:
+#+title: Babble, [2025-09-19 Fri 10:20], On improving GnoponEmacs with semiotics
+#+date: [2025-09-19 Fri 10:20]
+#+author: emsenn
+
+So I've been [[id:fa2a8bee-008a-4dfa-88f3-9c267b122782][using]] [[id:edc48bf0-336b-4b63-8505-a3730b328c9d][GnoponEmacs]] for a bit now and if I'm [[id:c88e9b16-aa72-45f4-86df-a1de9fef9433][comparing]] [[id:ec37f74a-9934-48ed-af65-314301bac94c][my research method]] from before, when I was using [[id:e9d865b0-8765-436e-8623-1a63be562113][Obsidian]], to now, the method is so much better that it's hard to even compare.
+
+So, great. I'm doing a lot better than I was, and in a way that shows a trajectory toward improving. I'm saying just because it can be easy, when taking a stance of criticism, critique, in order to improve, to feel that position: cultivated negativity that's necessary for positivity.
+
+To counter that, I'm explicitly saying, that by my own ethics, I'm doing good, and should feel good about it. If I don't, it's probably some subjectivation that means I can put the feelings aside for now. If they keep coming back up, and they aren't explainable by the critical position, then I'll give them some more thought.
+
+Anyway, I've realized a simple enough shortcoming or issue with using [[id:59181fb6-bc78-4d87-8384-c9f52f5c505e][Org-roam]], or Obsidian, or any other system I've come up with so far: links don't have any information on what kind of link they are. It's all just... links.
+
+So I can link this babble to Org-roam, but I can't define that link as a "mention" versus an "explanation."
+
+I think wanting this, but for semiotics, might be why I keep looking toward [[id:cf29271b-9d29-4689-934f-223710dce476][homotopy-type theory]] out of the corner of my eye.
+
+I can see a few hacky ways to approach this: in a few notes, for example, I've written /Unary conditions/ sections, that list out the paths to some structure, showing, this thing is that thing, or for this thing, that thing is true. I can't think of an example right now, but this post might have unary conditions of "a babble" and "written by emsenn" - expressions that I'm saying, this piece should test true for.
+
+But that quickly gets very messy, and beside, doesn't make these paths available as any sort of first-class concept in my notes, and it does feel like they might be worth that, over time.
+
+And often, if not always, I think things do something on their way to linking a path. If this babble could link to "a babble" with "self-identify" or whatever, it means that this babble should be able to try and do what a babble can do.
+
+If I try and think about this stuff more abstractly, not in the constraints of Org-roam, but still about my research notes... it very quickly gets too confusing for my head to hold, at least right now.
+
+But basically I see there being a, perhaps limited, set of paths between various relations - this is in fact central to my [[id:7031b7c2-7bfd-410e-8ed7-fbfc81dc3afc][relational dynamics]]. I want to be able to not just link two concepts, but specify what link of link is happening: am I saying this is a part of that? That that is a part of this? That this, explicitly, is not a part of that? (Inclusion and exclusion from sets.)
+
+There's inclusion and exclusion from sets, there's instantiation of unit: that's what saying this babble is a babble is, as a link: a babble is instantiated as this babble.
+
+There's... differentiation, which is probably the most complex path - and I'm being very loose about this when I have derivations that estabilsh this more formally, but feeling things out can be useful.
+
+Differentiation needs to be able to say ~X is different from Y~, and ~different~ is... a table of differences: what parts of X are different from what parts of Y, which would be, I think, a bunch of inclusion and exclusion statements.
+
+And this reminds me of the thoughts I was having drifting off to bed last night, about doing something like my poorly formed [[id:20c6e9e1-ee11-48c7-8a55-9a98e90480b4][Fennel library for semiotics]], but where... ah! Where one path is ~X senses Y~ and contains which attributes of Y can be sensed (and, I guess, how they are sensed.)
+
+Then when Y changes, it broadcasts what has changed to everything that can sense that change.
+
+I was thinking about this in terms of deltas, and basically having a webby mess of things that have some way of letting their changes be known by other things, but only if those things have paths that would let it be known.

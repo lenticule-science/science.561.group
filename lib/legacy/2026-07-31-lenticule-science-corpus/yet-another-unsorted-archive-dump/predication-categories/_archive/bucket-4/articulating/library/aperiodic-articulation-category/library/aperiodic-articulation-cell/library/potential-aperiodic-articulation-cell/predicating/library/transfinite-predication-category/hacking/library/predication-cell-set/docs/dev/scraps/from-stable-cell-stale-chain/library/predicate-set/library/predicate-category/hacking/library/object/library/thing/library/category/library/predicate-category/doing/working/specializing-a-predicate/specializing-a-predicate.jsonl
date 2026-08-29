@@ -1,0 +1,3 @@
+{"e":"specializing-a-predicate","a":"describing","v":"Return the targets of all specialization-class morphisms out of a source predicate in a predicate category. One of the four canonical generator classes.","t":"2026-05-19T23:00:00Z"}
+{"e":"specializing-a-predicate","a":"querying-class","v":"specialization","t":"2026-05-19T23:00:00Z"}
+{"e":"specializing-a-predicate","a":"consuming","v":"predicate-category","t":"2026-05-19T23:00:00Z"}

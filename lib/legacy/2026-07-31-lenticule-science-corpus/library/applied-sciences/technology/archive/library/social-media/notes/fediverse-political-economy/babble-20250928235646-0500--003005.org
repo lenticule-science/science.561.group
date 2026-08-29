@@ -1,0 +1,67 @@
+:PROPERTIES:
+:ID:       38b3c08e-8846-486f-9d46-69f307c89f12
+:public:   true
+:instantiates: [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]
+:author:   [[id:40cbaad9-af3c-4573-b356-ae116687e483][emsenn]]
+:date-created: 
+:resource-description: (([[id:edaef069-c68d-46aa-a970-d3cb7fe3165c][resource type]] . [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]) ([[id:a8bc7e3a-cdf7-4cfa-8e4d-a1a5f7eb2931][author]] . [[id:40cbaad9-af3c-4573-b356-ae116687e483][emsenn]]) ([[id:557d79c0-1e0f-45fb-b248-468f23654cc1][creation date]] . [2025-09-28 Sun 23:56]))
+:END:
+#+title: On the Fediverse as an industrial complex producing subcultural commons
+#+date: [2025-09-28 Sun 23:56]
+#+author: emsenn
+
+Considering the role the [[id:e61736a1-36c3-4efb-af9c-6ee79ba81f73][Fediverse]] has and what role its [[id:512d840c-4cff-46dc-b6b3-5a558129cd1b][Fediverse user]] have, if I look at [[id:c544a883-fa72-4441-acff-c5b01e71d698][social media]] as one mode in which society processes information into commodity forms.
+
+Like looking at the [[id:99fb144d-f3ba-4290-92eb-3a93e6a7e8c2][political economy]], informed by [[id:824bbd7a-f858-45c0-9d1b-1a66c85e7328][Marxist analysis]] and [[id:e8e471d5-910b-47b7-9924-34d6f5c6f8f6][critical media studies]], [[id:609e5bb9-dac4-4f0a-9544-956d0484c525][Twitter]] is a centralized factory in whicch user speech is commodified directly as surplus data: ads, engagement, AI training. Users are pieceworkers, surplus value is realized by the platform.
+
+Fediverse, users still perform labor - more kinds of labor, in fact, posting and moderating - but outputs circulate as commons... but are formatted to be expropriated into the same economies in which Twitter's surplus value exists.
+
+- [[id:351a2c17-813a-4586-a52e-4e1005ad1af9][sociology of culture]], [[id:0a48b26d-4481-4cad-8483-d58fe082f7c1][critical theory of communication]]
+  - Twitter
+    - participation is framed as broadcasting into a mass public governed by algorithmic visibility. Users are subject to platform [[id:ce2909ae-4c94-4999-8321-cda057bc60d8][feeling rules]] of virality and engagement
+  - Fediverse
+    - participation is framed as community and authenticity, but these are also feeling rules:
+      - cultural grammars for making users ongoing labor feel like value capture (into the collective commons) even though it is structrually open to expropriation
+    - users join the Fediverse not for safety or ideology but beccause it offers better symbolic returns (recognition, beloning) which are narrativized through discourses of decentralization and care.
+- [[id:b8b277b8-fdbf-4c7d-9fd4-7b7b3d3c1d91][labor studies]]
+  - Twitter
+    - posting = [[id:0c79a528-f092-4178-825a-259ab8282d92][alienated labor]]
+      - appropriated direclty into commodity circulation
+    - moderation = corporate governance of labor
+  - Fediverse
+    - posting and moderation = [[id:f4af0cf3-d4c2-4069-a21a-b09e0221c474][unpaid reproductive labor]]
+    - safety and usability are produced through users' own efforts
+  - Fediverse redistributes moderation-labor from corporate employees onto unpaid volunteers, often marginalized, so that the posting labor can be expropriated into the same systems.
+- [[id:c4b9c7a5-326a-4755-8619-6f6fd045addd][feminist political economy]]
+  - "empowerment" (local moderation, blocklists, self-development of software) is in practice the outsourcing of reproductive labor onto those least able to erefuse it.
+- [[id:ae7e4665-bc7e-4a92-936e-d579c1a7a1d4][science and technology studies]], [[id:6d4c033f-a9be-4c52-8a56-fcea94323aa2][infrastructure studies]]
+  - Twitter
+    - tightly enclosed sociotechnical system with infrastructural opacity
+    - acceptability boundaries are aligned by advertising imperatives
+  - Fediverse
+    - open federated infrastructure that allows advertiser-unacceptable content
+    - but only by designating the establishment and maintenance of boundaries as a local infrastructural problem
+    - this structure induces the formation of commons and expropriability
+- [[id:42fa89c7-5eb0-4b66-b795-297e777b5818][critical theory of affect]]
+  - Twitter
+    - feeling rules = visibilty, virality, engagement
+  - Fediverse
+    - feeling rules = community, authenticity, ethicity
+    - users narrate their partiicpation as ethically situated
+    - produces an affect of value capture (they're doing something to keep more of their labor (its ethical prefiguration)
+    - the real product of the Fediverse participation is this affective experience of retaining value, not material retention of value
+    - different ways to feel about this == different fediverse subcultures
+- [[id:cb60f98b-f3ab-48d0-858b-87f4851ef1cf][critical theory of expropriation]]
+  - Fediverse is commons factory without walls:
+    - generates commons by processing inputs that are not acceptable as private property
+    - but its ability to do this (decentralization) also makes it participate in expropriation.
+    - illusion of protected commons (ethics!) but structurally commensurate with private property /after/ user labor.
+- [[id:41fb0a77-ab5f-4eb5-8cf1-5d6c70d34409][disability justice]]
+  - [[id:4a6922ab-b3b2-419a-a209-40e1bfa9d811][Ten Principles of Disability Justice]]
+    - [[id:32915348-007e-4c06-9dad-09a7fe366b14][collective liberation]]: Fediverse fragments responsibility
+    - [[id:e7ecd72c-0142-4e9c-b81f-d9cf8387ce14][leadership by the most impacted]]: those most impacted by Fediverse structuring (those who /cannot/ use commercial platforms, not those who choose not to) are not guiding development
+    - [[id:0ec43266-5835-471f-a53b-fbe596d83164][sustainability]]: constant defensive moderation leads to burnout and, my opinion, worse and worse moderation standards across the Fediverse
+    - [[id:5217b80f-565f-465b-b898-eab5e40b49b4][cross-movement solidarity]]: Fediverse actively makes this harder by making fragmentation the easiest option.
+
+
+I think the best idea here is that the Fedivers eis an industrial complex of producing subcultural commons, and we can look at like, the love of open-source as why the commons part, and the love of... not [[id:0a2b0c89-3ce0-42d1-b855-98b94a2a1526][alterity]] in any genuine sense, but the sort of, "I'm not that" that comes from the [[id:1d3fb9fb-55d3-4e89-b37d-18dc74a26da2][American drift to dualism]] that I was babbling about in "[[id:ea911986-e71d-4a65-8795-75777d0b29c5][The translation of post- to anti- within American idioms]]."

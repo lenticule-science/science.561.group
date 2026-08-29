@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       ef70461a-2686-4bb4-b625-188496c0c944
+:END:
+#+title: structuration
+#+date: [2025-09-03 Wed 21:19]
+

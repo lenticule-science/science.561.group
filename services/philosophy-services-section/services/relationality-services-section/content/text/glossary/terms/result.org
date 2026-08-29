@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       d8ccc143-1871-4e16-aa67-14045a01945f
+:public:   true
+:form:     [[id:e5248432-6d1e-436e-9bdc-50fe0fcd3fe6][thing]]
+:END:
+#+title: result
+#+date: [2025-08-29 Fri 11:14]
+#+index: result
+
+A */result/* is the [[id:e5248432-6d1e-436e-9bdc-50fe0fcd3fe6][thing]] [[id:fe5f19f5-4966-42c0-bc11-f5b5f7031238][created]] or [[id:fde2d52c-548e-4520-9e82-b29206b37ade][referenced]] with [[id:455ea21f-b9e3-4299-a294-5709f8195e05][resulting]].

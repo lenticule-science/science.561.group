@@ -1,0 +1,5 @@
+#+title: Org-roam database
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-17 Thu 09:48]
+An */Org-roam database/* is a [[file:sqlite.org][SQLite]] [[file:database.org][database]] that tracks the [[file:note.org][notes]] captured by [[file:org_roam.org][Org-roam]].

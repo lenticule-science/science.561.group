@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       a22d8457-7cf2-4783-9fe2-6822edd09edb
+:END:
+#+title: Web algorithm
+#+date: [2025-09-04 Thu 20:05]
+

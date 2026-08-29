@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       9b56dbd9-dbe8-4c38-a2e1-886e4a7ca250
+:END:
+#+title: private
+#+date: [2025-09-01 Mon 08:30]
+

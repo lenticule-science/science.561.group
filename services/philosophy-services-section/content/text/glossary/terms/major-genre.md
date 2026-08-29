@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       d09ae5e5-6a8a-48f4-98d9-3273ca3a5fdb
+:node-relations: (([[id:d888a007-edb6-4a23-bb07-59c34ecdd4c7][context]] . [[id:b68b42cc-c4c8-41c8-8e03-c1aecf071752][genre theory]]))
+:END:
+#+title: major genre
+#+date: [2025-08-23 Sat 10:32]

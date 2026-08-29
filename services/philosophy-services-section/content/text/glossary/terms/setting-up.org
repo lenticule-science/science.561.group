@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       22dd0849-14db-46ae-84ba-63d3e5ae0d5f
+:ROAM_ALIASES: setup
+:END:
+#+title: setting up
+#+date: [2025-08-26 Tue 08:32]
+

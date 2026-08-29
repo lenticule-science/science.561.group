@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       d7f2df4f-2bce-4780-8814-2d2b692c0118
+:END:
+#+title: formal
+#+date: [2025-09-01 Mon 11:44]
+

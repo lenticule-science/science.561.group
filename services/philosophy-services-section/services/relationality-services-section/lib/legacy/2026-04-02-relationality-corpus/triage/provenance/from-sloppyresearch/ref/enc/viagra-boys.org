@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       896fed52-817a-433f-8018-1a3bda457d8d
+:END:
+#+title: Viagra Boys
+#+date: [2025-07-22 Tue 08:33]
+#+index: Viagra Boys
+Viagra Boys is a [[id:de595b66-d89d-41d6-87fc-724482ec16ec][music artist]].
+* Tracks
+** "Man Made of Meat"
+:PROPERTIES:
+:ID:       5bc292e1-98ae-4fe1-ae8a-d438a368b462
+:END:
+[[id:3e4481fd-c3f3-499b-8c74-9fec05bcc8c4][music track]], [[id:93916799-f120-49c4-a255-19bc2ff66432][rock]]
+** 

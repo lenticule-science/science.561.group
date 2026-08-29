@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       b80125d4-20bf-4c62-9cc3-de19fdfa6f73
+:END:
+#+title: interacting
+#+date: [2025-08-29 Fri 20:43]
+

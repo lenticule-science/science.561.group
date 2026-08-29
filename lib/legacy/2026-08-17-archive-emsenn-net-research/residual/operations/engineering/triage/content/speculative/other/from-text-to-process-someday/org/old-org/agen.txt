@@ -1,0 +1,41 @@
+Day-agenda (W27):
+Sunday      5 July 2020
+  tasks:       6:15...... Scheduled:  todo water sprouts                      :Home::
+  tasks:       6:30...... Scheduled:  todo water Makȟa Ša garden            :MakȟaŠa:
+  tasks:       6:30...... Deadline:   todo water sprouts                      :Home::
+  tasks:       7:00...... Scheduled:  place signage        :GroundhogAutonomousZone::
+  tasks:       7:30...... Scheduled:  todo refill Makȟa Ša irrigation       :MakȟaŠa:
+  tasks:       7:30...... Scheduled:  set up tables        :GroundhogAutonomousZone::
+  tasks:       7:30...... Deadline:   todo water Makȟa Ša garden            :MakȟaŠa:
+  tasks:       7:45...... Scheduled:  display gifts        :GroundhogAutonomousZone::
+  tasks:       7:45...... Deadline:   place signage        :GroundhogAutonomousZone::
+  tasks:       8:00...... Scheduled:  todo weed Bowbar pathing             :MakȟaŠa::
+  tasks:       8:00...... Scheduled:  todo weed Cut Above pathing          :MakȟaŠa::
+  tasks:       8:00...... Scheduled:  todo cut Cut Above grass             :MakȟaŠa::
+  tasks:       8:00...... Deadline:   set up tables        :GroundhogAutonomousZone::
+               8:00...... ----------------
+  tasks:       8:30...... Deadline:   display gifts        :GroundhogAutonomousZone::
+              10:00...... ----------------
+              11:29...... now - - - - - - - - - - - - - - - - - - - - - - - - -
+              12:00...... ----------------
+  tasks:      12:20...... Deadline:   todo pickup from Weaver St
+              14:00...... ----------------
+              16:00...... ----------------
+              18:00...... ----------------
+  tasks:      18:30...... Deadline:   todo refill Makȟa Ša irrigation       :MakȟaŠa:
+              20:00...... ----------------
+  tasks:      20:30...... Scheduled:  todo empty household compost             :Home:
+  tasks:      21:00...... Deadline:   todo empty household compost             :Home:
+  tasks:      Scheduled:  todo water household plants                          :Home:
+  tasks:      Scheduled:  todo process sprouts                                :Home::
+  tasks:      Scheduled:  todo check household smoke detector                  :Home:
+  tasks:      Scheduled:  todo check building fire extinguishes            :BrickBox:
+  tasks:      Deadline:   todo water household plants                          :Home:
+  tasks:      Deadline:   todo process sprouts                                :Home::
+  tasks:      Deadline:   todo weed Bowbar pathing                         :MakȟaŠa::
+  tasks:      Deadline:   todo weed Cut Above pathing                      :MakȟaŠa::
+  tasks:      Deadline:   todo cut Cut Above grass                         :MakȟaŠa::
+  tasks:      In   3 d.:  todo pickup from Carrboro Farmer's Market
+  tasks:      In   4 d.:  todo set out milk cooler
+  tasks:      In   7 d.:  todo check household smoke detector                  :Home:
+  tasks:      In   7 d.:  todo check building fire extinguishes            :BrickBox:

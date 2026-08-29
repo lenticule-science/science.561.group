@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       ee62589d-0883-437f-b22e-2dc334c4fb6c
+:public:   true
+:END:
+#+title: social media bias
+#+date: [2025-09-02 Tue 09:13]
+#+index: social media!social media bias

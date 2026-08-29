@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       62a0eb02-1ddd-4fc2-8b2e-eb18ab41eefb
+:END:
+#+title: call to act
+#+date: [2025-08-27 Wed 15:21]
+

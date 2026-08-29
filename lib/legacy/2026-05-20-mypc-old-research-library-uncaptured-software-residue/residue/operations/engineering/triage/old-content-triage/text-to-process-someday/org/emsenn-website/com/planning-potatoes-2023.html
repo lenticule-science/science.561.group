@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2023-01-14 Sat 15:02 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Planning potatoes, 2023</title>
+<meta name="generator" content="Org Mode" />
+<style>
+  	   @charset "UTF-8";
+  
+  	   :root {	
+  	       --body-font: sans-serif;
+  	       --header-font: sans-serif;
+  	       --code-font: monospace;
+  	       --primary-color: #ffe;
+  	       --primary-dim-color: #eed;
+  	       --secondary-color: #312;
+  	       --secondary-dim-color: #756;
+  	       --link-color: #880;
+  	       --link-hover-color: #aa2;
+  	       --link-visited-color: #934;
+  	       --link-visited-hover-color: #b56;
+  	       --external-link-color: #008;
+  	       --external-link-hover-color: #60b;
+  	       --external-link-visited-color: #172;
+  	       --external-link-visited-hover-color: #394;
+  	   }
+  	   @media(prefers-color-scheme:dark){
+  	       :root {
+  		  --body-font: sans-serif;
+  		  --header-font: sans-serif;
+  		  --code-font: monospace;
+  		  --primary-color: #756;
+  		  --primary-dim-color: #312;
+  		  --secondary-color: #eed;
+  		  --secondary-dim-color: #ffe;
+  		  --link-color: #880;
+  		  --link-hover-color: #aa2;
+  		  --link-visited-color: #934;
+  		  --link-visited-hover-color: #b56;
+  	       }}
+  	   body {
+  	       position: relative;
+  	       min-height: 100%;
+  	       background-color: var(--primary-color);
+  	       color: var(--secondary-color);
+  	       margin: 0 auto;
+  	       font-family: sans-serif;
+  	   }
+  	   main, #content {
+  	       background-color: var(--primary-dim-color);
+  	       border-left: 1.5em dotted var(--primary-color);
+  	       padding: 1em;
+  	   }
+  	   header {
+  	       border-bottom: 0.8em dotted var(--secondary-dim-color);
+  	   }
+  	   h1 { font-size: 2em; margin-bottom: 0; }
+  	   h2 {
+  	       border-bottom: 0.3em dotted var(--secondary-dim-color);
+  	   }
+  	   h2, h3, h4, h5, h6, p, table, ul, ol, .org-src-container {
+  	       width: 60%;
+  	   }
+  	   aside {
+  	       float: right;
+  	       width: 35%;
+  	   }
+  	   aside p { width: 100%; }
+  	   @media screen and (max-width:760px) {
+  	       h2, h3, h4, h5, h6, p, table, ul, ol, .org-src-container {
+  		  width: 90%;
+  	       }
+  	       aside {
+  		  float: inherit;
+  		  width: 90%;
+  		  border-top: 0.2em dotted var(--secondary-dim-color);
+  		  border-bottom: 0.2em dotted VAR(--secondary-dim-color);
+  		  font-size: 0.8em;
+  		    }
+  	   }
+  
+  	   footer, #postamble, #preamble {
+  	       padding: 0.5em;
+  	   }
+  	   table {
+  	       border-collapse: collapse;
+  	       border-spacing: 0;
+  	       empty-cells: show;
+  	       border: 0.1em solid #444;
+  	   }
+  	   thead { font-family: sans-serif; }
+  	   th, td {
+  	       padding: 0 0.3em;
+  	       border: 0.01em solid #444;
+  	   }
+  	   img {
+  	       max-width: 80vw;
+  	       vertical-align: middle;
+  	   }
+  	   pre, .src {
+  	       padding: 0.5em;
+  	       border: 0.1em solid #444;
+  	       white-space: pre-wrap;
+  	       overflow-x: scroll;
+  	       text-overflow: clip;
+  	       scrollbar-width: none;
+  	   }
+  	   pre::-webkit-scrollbar, .src::-webkit-scrollbar {
+  	       display: none;
+  	   }
+  
+  
+  	   dt {
+  	       font-weight: normal;
+  	       display: inline-block;
+  	       border-bottom: 0.1rem dotted #444;
+  	   }
+  	   #text-index dt { border-bottom: none; }
+  	   h2, h3, h4, h5, h6, h7, h8, h9, h10 {
+  	       display: block;
+  	       font-family: sans-serif;
+  	       margin: 0.2em auto 0.5em 0;
+  	   }
+  	   a, .link {
+  	       text-decoration: none;
+  	       color: #880;
+  	       display: inline;
+  	       position: relative;
+  	       border-bottom: 0.1rem dotted;
+  	       line-height: 1.2;
+  	       transition: border 0.3s;
+  	   }
+  	   a:hover {
+  	       color: #aa2;
+  	       outline-style: none;
+  	       border-bottom: 0.1rem solid;
+  	   }
+  	   a:visited, .visited-link { color: #934; }
+  	   a:visited:hover { color: #b56; }
+  	   a:focus {
+  	       outline-style: none;
+  	       border-bottom: 0.1rem solid;
+  	   }
+  	   ::selection { background-color: #777; color: #eee; }
+  	   a::selection { background-color: #ccc; }
+  	   .org-todo {
+  	       background-color: #ddd;
+  	       color: #333;
+  	       font-size: .8rem;
+  	       float: right;
+  	   }
+  	   .org-src-container + .example {
+  	       margin-left: 8em;
+  	   }
+  	   a[href^="https://"]:not([href*="emsenn.net"]):after, a[href^="https://"]:not([href*="emsenn.net"]):visited:after, .external-link:after, .visited-external-link:after { 
+  	       content: "^";
+  	       font-size: 0.5em;
+  	       vertical-align: super;
+  	   }
+  	   a[href^="https://"]:not([href*="emsenn.net"]), .external-link {
+  	       color: var(--external-link-color);
+  	   }
+  	   a[href^="https://"]:not([href*="emsenn.net"]):hover{ 
+  	       color: var(--external-link-hover-color);
+  	   }
+  	   a[href^="https://"]:not([href*="emsenn.net"]):visited, .visited-external-link { 
+  	       color: var(--external-link-visited-color);
+  	   }
+  	   a[href^="https://"]:not([href*="emsenn.net"]):visited:hover{ 
+  	       color: var(--external-link-visited-hover-color);
+  	   }
+  	   blockquote {
+  	       border: 0.1em dashed var(--secondary-dim-color);
+  	       padding-left: 0.2em;
+  	   }
+  	   label.org-src-name {
+  	       margin: 0 0 0 3em;
+  	       font-family: sans-serif;
+  	       font-size: 1rem;
+  	       line-height: 0;
+  	   }
+  	   .skip-to-content {
+  	       opacity: 0;
+  	       position: absolute;
+  	       left: 0.2em;
+  	   }
+  	   .skip-to-content:focus{
+  	       opacity: 1;
+  	       background-color: var(--secondary-dim-color);
+  	       color: var(--primary-color);
+  	   }
+  	   ul { max-width: 85%; }
+      .footpara { display: inline; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+<section id="preamble" class="status">
+<a href="#content" class="skip-to-content">skip to content</a><section class="nav"><strong>emsenn.net:</strong> <a href="../index.html">Homepage</a> | <a href="../bul/index.html">Bulletins</a> | <a href="../mainindex.html">Main Index</a><p>This Website was cultivated as a public asset with <a href="https://ko-fi.com/emsenn">support</a> from people like you. <strong><em>Thank you!</em></strong></p>
+  	      <details>
+  	        <summary>Click this sentence for information about my Website.</summary>
+  	        <p>Click each sentence below for more info:</p>
+  	          <ul>
+  	            <li><details>
+  	      	<summary>This website was created by Emacs and Org-mode</summary>
+  	      	<p>See <a href="https://emsenn.net/src/infoponemacs.html">my Emacs configuration</a> to learn how.</p>
+  	            </details></li>
+  	            <li><details>
+  	              <summary>Its content was written by hand.</summary>
+  	              <p>This means there might be mistakes! 
+  	            </details></li>
+  	            <li><details>
+  	      	<summary>It uses style to add information to the pages.</summary>
+  	      	<ul>
+  	      	  <li><details>
+  	      	  <summary>Click this sentence to see how links are styled:</summary>
+  	      	  <table>
+  	      	    <thead><tr>
+  	      	      <th scope="col">Color</th>
+  	      	      <th scope="col">Link type</th>
+  	      	    </tr></thead>
+  	      	    <tbody>
+  	      	      <tr><td class="link">Sample</td>
+  	      		<td>Unvisited local resource</td></tr>
+  	      	      <tr><td class="visited-link">Sample</td>
+  	      		<td>Visited local resource</td></tr>
+  	      	      <tr><td class="external-link">Sample</td>
+  	      		<td>Unvisited external resource</td></tr>
+  	      	      <tr><td class="visited-external-link">Sample</td>
+  	      		<td>Visited external resource</td></tr>
+  	      	    </tbody>
+  	      	  </table>
+  	      	</details></li>
+  	            </ul>
+  	          </details></li>
+  	        </ul>
+  	      </details>
+  	      </section>
+</section>
+<main id="content" class="content">
+<header>
+<h1 class="title">Planning potatoes, 2023</h1>
+</header><p>
+<a href="../def/fifth-season-gardening-co.html">Fifth Season Gardening Co.</a> sent out an email letting folk know that their pre-orders for <a href="../def/solanum-tuberosum.html">potatoes</a> are available, and this seems like a good opportunity to try and use my <a href="../def/digital-garden.html">digital garden</a> for stewarding the available information into a good decision.
+</p>
+
+<p>
+This communication is going to be a journal of how I'm doing that. This is going to be exceptionally interesting - or boring - because of how new this digital garden is; I don't have a precedent for doing something like this.
+</p>
+
+<p>
+The garden is so new in fact that I don't actually have definitions for <i>Fifth Season Gardening Co.</i> or <i>potatoes</i>, which reminds me that I should write a capture template for inserting blank definitions - so I'll go add that to my plans for <a href="../src/infoponemacs.html">InfoPonEmacs</a>&#x2026;
+</p>
+
+<p>
+An important facet of this is actually setting up the plan. I've got a file for information about the <a href="../pro/561-garden/index.html">garden</a> - like other projects, it has sections for <i>routine</i> and <i>special operations</i>. Puchasing potatoes is actually a routine operation; it's done every spring.
+</p>
+
+<p>
+Sketching out the purchase operation - given that January 15th is the deadline for best availability - gets me:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-org">***** TODO [0/4] Purchase potatoes
+DEADLINE: &lt;2023-01-15 Sun ++1y&gt;
+****** TODO Decide how much space potatoes will get
+DEADLINE: &lt;2022-12-15 Fri ++1y&gt;
+****** TODO Decide which cultivars to get.
+DEADLINE: &lt;2022-12-20 Wed ++1y&gt;
+Here's the list to choose from: https://sowtrueseed.com/collections/potatoes/
+****** TODO Budget for potato order
+DEADLINE: &lt;2022-12-20 Wed ++1y&gt;
+****** TODO Place potato order
+DEADLINE: &lt;2023-01-03 Wed ++1y&gt;
+
+</pre>
+</div>
+
+<p>
+You can see the real plan <a href="../pro/561-garden/index.org#spring-potato-purchase">in the project file</a>. Unfortunately, that timing gives me this in my agenda:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-text">index:      22 d. ago:  TODO Decide how much space potatoes will get
+index:      17 d. ago:  TODO Decide which cultivars to get.
+index:      17 d. ago:  TODO Budget for potato order
+index:       3 d. ago:  TODO Place potato order
+</pre>
+</div>
+
+<p>
+What that means is that I'm a couple weeks behind in picking which potatoes to get, budgeting for them, and placing the order. Whoops! On the plus side, now I've got a rudimentary operation throw together for the purchase, so will be able to plan it on time for next year. <i>(Y'know, assuming society hasn't fully collapsed by then.)</i>
+</p>
+
+<p>
+Next up is planning where in the garden potatoes will go, and which potatoes to get.
+</p>
+
+<p>
+Like I mentioned, both of these will be bigger tasks than they might otherwise be, since I need to do some prep work, but then in the future such things should be a little easier.
+</p>
+
+<p>
+One thing that gives me pause is, I know I will be wanting to use <a href="../def/beancount.html">Beancount</a> in the future, and I'm not sure how that'll look, integrated into the digital garden as a whole.
+</p>
+
+<hr>
+
+<p>
+In planning which potatoes to get, I've expanded my note on <a href="../def/solanum-tuberosum.html">potatoes</a>, adding this table of cultivars - well, the cultivars currently avaialble for preorder from <i>Fifth Season</i>.
+</p>
+
+<p>
+I'll include the table, as it exists now, here:
+</p>
+
+<div class="cultivar-table" id="org67ed142">
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-right">
+
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Name</th>
+<th scope="col" class="org-right">DtM</th>
+<th scope="col" class="org-left">Storage</th>
+<th scope="col" class="org-left">Flavor</th>
+<th scope="col" class="org-left">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Dark Red Norland</td>
+<td class="org-right">60-80</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Excellent</td>
+<td class="org-left">Good resistance to potato viruses</td>
+</tr>
+
+<tr>
+<td class="org-left">Red Gold</td>
+<td class="org-right">60-80</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Excellent</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Superior</td>
+<td class="org-right">60-80</td>
+<td class="org-left">Well</td>
+<td class="org-left">Nice</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Yukon Gold</td>
+<td class="org-right">60-80</td>
+<td class="org-left">Well</td>
+<td class="org-left">Rich, buttery</td>
+<td class="org-left">Sprout-resistant</td>
+</tr>
+
+<tr>
+<td class="org-left">Red Prairie</td>
+<td class="org-right">70-100</td>
+<td class="org-left">Superior</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Good yield</td>
+</tr>
+
+<tr>
+<td class="org-left">Adirondack Blue</td>
+<td class="org-right">80-110</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Great</td>
+<td class="org-left">Dark blue flesh maintains after color after cooking, susceptible to bruising</td>
+</tr>
+
+<tr>
+<td class="org-left">Adirondack Red</td>
+<td class="org-right">80-110</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Flavorful &amp; moist</td>
+<td class="org-left">High yield</td>
+</tr>
+
+<tr>
+<td class="org-left">Goldrush Russet</td>
+<td class="org-right">80-110</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Good</td>
+<td class="org-left">HIgh yields, scab, wilt, drought resistant</td>
+</tr>
+
+<tr>
+<td class="org-left">Kennebec</td>
+<td class="org-right">80-110</td>
+<td class="org-left">Well</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Peter Wilcox</td>
+<td class="org-right">80-110</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Exceptional</td>
+<td class="org-left">high in vitamin C</td>
+</tr>
+
+<tr>
+<td class="org-left">Austrian Crescent</td>
+<td class="org-right">80-110</td>
+<td class="org-left">Well</td>
+<td class="org-left">Delicious</td>
+<td class="org-left">Prolific yield</td>
+</tr>
+
+<tr>
+<td class="org-left">French Fingerling</td>
+<td class="org-right">80-110</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Gourmet</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Carola</td>
+<td class="org-right">85-115</td>
+<td class="org-left">Well</td>
+<td class="org-left">Good</td>
+<td class="org-left">High yield</td>
+</tr>
+
+<tr>
+<td class="org-left">German Butterball</td>
+<td class="org-right">85-115</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Sublime</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Oneida</td>
+<td class="org-right">90-120</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Good</td>
+<td class="org-left">High yield, scab and hollow heart resistant</td>
+</tr>
+
+<tr>
+<td class="org-left">Red Endeavor</td>
+<td class="org-right">90-120</td>
+<td class="org-left">Excellent</td>
+<td class="org-left">Delicious</td>
+<td class="org-left">High yield</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+<p>
+The recommendation is to grow a few cultivars, that'll be ready at different parts of the year.
+</p>
+
+<p>
+I organized the table above by how long things take to come to maturity, so can basically pick one from each third segment of the table:
+</p>
+
+<ul class="org-ul">
+<li>Early
+<dl class="org-dl">
+<dt>Dark Red Norland</dt><dd>Good resistance to potato viruses, but that might not be important since we haven't been growing nightshades here except last year in one spot?</dd>
+<dt>Red Gold</dt><dd>Nothing to note.</dd>
+<dt>Superior</dt><dd>Stores well, that's a mark in its favour.</dd>
+<dt>Yukon Gold</dt><dd>Stores well and is sprout-resistant - that's useful for us since lots of folk have poor storage conditions in their kitchens. <b>This is probably the choice</b></dd>
+</dl></li>
+<li>Mid
+<dl class="org-dl">
+<dt>Red Prairie</dt><dd>Superior storage, good yields. Maybe?</dd>
+<dt>Adirondack Blue</dt><dd>Susceptible to bruising. <i>Probably not this one.</i></dd>
+<dt>Adirondack Red</dt><dd>High yield, but that's not enough with this many options.</dd>
+<dt>Goldrush Russet</dt><dd>A classic. Also what we get at the grocery, so&#x2026;</dd>
+<dt>Kennebec</dt><dd>Stores well. Okay?</dd>
+<dt>Peter Wilcox</dt><dd>Exceptional taste and high in vitamin C, which is unusual for a potato.</dd>
+<dt>Austrian Crescent</dt><dd>Stores well, delicious taste, prolific yield. Is prolific more than high? Either way: <b>this is probably the choice</b></dd>
+<dt>French Fingerling</dt><dd>Gourmet flavour. I've had 'em, it's true. But, we've got herbs for flavor.</dd>
+</dl></li>
+<li>Late
+<dl class="org-dl">
+<dt>Carola</dt><dd>Stores well, high yield. That's pretty good.</dd>
+<dt>German Butterball</dt><dd>Sublime flavor. But again, that's not our focus.</dd>
+<dt>Oneida</dt><dd>High yield, scab and hollow heart resistance. Resistance is cool, but I think storability matters more.</dd>
+<dt>Red Endeavor</dt><dd>Excellent storage, high yield, and delicious? <b>This is the one</b>.</dd>
+</dl></li>
+</ul>
+
+<p>
+So, that leaves us with three types of potato I wanna get: Yukon Gold, Austrian Crescent, and Red Endeavor.
+</p>
+
+<p>
+The last step is figuring out how much of each one I need, which will mean actually measuring the garden beds, something I haven't actually done yet!
+</p>
+
+<p>
+&#x2026;In getting started looking at that, I've learned there are two types of potato cultivar: determinate and indeterminate, which may affect the above choices. My early- and mid- choices should be determinate, and my late-season chioce indeterminate&#x2026; or&#x2026; hmm.
+</p>
+
+<p>
+I think I might need to entirely reconsider how I'm making this choice, with this information; a task for the next time I sit down to plan this.
+</p>
+
+<p>
+Skimming Wikipedia further, I wanna be careful about the glycoalkaloid content of the cultivars I choose, as well&#x2026;
+</p>
+
+<hr>
+
+<p>
+Alright so coming back to this question again, I think my orientation should be&#x2026; wait; first a note: I'm going to start talking about <i>groundnuts</i> as I go on, now, because they grow in similar spots to potatoes.
+</p>
+
+<aside id="org48d44a8">
+<p>
+<b><a href="../def/apios-americana.html">Apios americana</a></b>, commonly known as the <i>groundnut</i>, is a perennial vining legume cultivated for its large edible tubers.
+</p>
+</aside>
+
+
+<p>
+Coming back to this, I think my orientation should be:
+</p>
+
+<ul class="org-ul">
+<li>I'll be growing potatoes in containers, and in the ground</li>
+<li>In the ground?
+<ul class="org-ul">
+<li>Determinate or indeterminate?
+<ul class="org-ul">
+<li>If indeterminate, I can stack up material from the carbon heap around them to get higher yields.</li>
+<li>But, might take longer before they start to form tubers, and our spring cool weather is getting shorter&#x2026; So that's something to look up.</li>
+<li>I don't want them to get in the way of being able to plant summer stuff in these beds.</li>
+</ul></li>
+</ul></li>
+<li>In containers?
+<ul class="org-ul">
+<li>Determinate or indeterminate?
+<ul class="org-ul">
+<li>In most containers, can't pile on more dirt, but in the bins I might be able to; depends on how deep the dirt needs to be for the first layer, I suppose? So that's another question</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p>
+So that's two questions to look up:
+</p>
+
+<ol class="org-ol">
+<li>Do indeterminate potatoes take longer to start to form tubers?
+<ul class="org-ul">
+<li>The answer seems to be yes.</li>
+</ul></li>
+<li>How deep does the soil under potatoes, in containers, have to be?
+<ul class="org-ul">
+<li>Instructions online seem to advise six to ten inches (or more) of soil under the potato when growing it in containers. So</li>
+<li>Indeterminate potatoes can grow tubers up to a foot above where they were planted, so if we have ~14 inches of head above the base, that's enough to fully crop indeterminates! <i>(The bins we use as planters are about two feet deep.)</i></li>
+<li>So! It looks like we can grow indeterminate potatoes in a lot of our containers, too!</li>
+</ul></li>
+</ol>
+
+<p>
+So, I think I can do indeterminate in the bin-containers, and determinate in the beds.
+</p>
+
+<p>
+That doesn't give me an answer to how much, but it does let me go back to the "what sort" question and boil it down to two, instead of three cultivars. The three I originally picked were <i>Yukon Gold</i>, <i>Austrian Crescent</i>, and <i>Red Endeavor</i>. Looking up their determinate&#x2026;ness&#x2026; determination?
+</p>
+
+<dl class="org-dl">
+<dt>Yukon Gold</dt><dd>Determinate</dd>
+<dt>Austrian Crescent</dt><dd>Unknown, but I'm <i>guessing</i> indeterminate from the longer days-to-maturity and "prolific yield" notes</dd>
+<dt>Red Endeavor</dt><dd>Unknown, but also guessing indeterminate.</dd>
+</dl>
+
+<p>
+<i>(One thing I read - and its confirmed above - is that whether a potato cultivar is determinate or indeterminate is rarely recorded.)</i>
+</p>
+
+<p>
+Obviously <i>Yukon Gold</i> is the choice for planting out in the lawn, but as for containers&#x2026; I'm not sure!
+</p>
+
+<p>
+I lean toward <i>Austrian Crescent</i> and <i>groundnuts</i>&#x2026; are groundnuts determinate or not? I can't find any information advocating they be grown mounded like potatoes are, but also there's not that much information about cultivating them, at all. I don't <i>they</i> they'd do the same trick as indeterminate potatoes; my plan is to grow them with sorghum in containers, so they wouldn't be getting mounded anyway.
+</p>
+
+<p>
+So, that's the choices: Yukon Gold, Austrian Crescent, and groundnuts.
+</p>
+
+<p>
+Next is figuring out amounts, which relies on knowing how much space - which will have to wait, because it's currently dark and rainy.
+</p>
+
+<hr>
+
+<p>
+I thought about it over night, and I'm actually not <b>sure</b> if I want to plant much in the way of potatoes out in the garden proper, outside of containers - the soil is still clay, even if its starting to have some life in it. So maybe it might be best to focus on getting <i>Austrian Crescents</i> and <i>groundnuts</i>.
+</p>
+
+<p>
+<i>Groundnuts</i> prefer riparian conditions, sandy, dappled shade, and so on, so in terms of planting them in containers, they can go up against the east side of the Burrow, while the potatoes can go up against the fenceline.
+</p>
+
+<p>
+That's 6 bins for groundnuts, and I can do 8 or 24 bins for Austrian Crescent; each bin taking 3 seed potato chunks - given the Crescents are fingerlings, let's say that I need 2 or 3 per bin, they weigh 4-7 ounces each, so that's <code>(/ (* 3 4 24) 16)</code>; 18 pounds of Austrian Crescent. Here's what that looks like at different suppliers:
+</p>
+
+<dl class="org-dl">
+<dt>Sow True Seed</dt><dd><code>(* (/ 18 3) 24.95)</code>; $149.70</dd>
+</dl>
+
+<p>
+&#x2026;I was going to check more sources but quick glances shows that it is about the same price everywhere, and I've gotten <i>groundnuts</i> from <i>Sow True Seed</i> before, so I guess I'll just go there.
+</p>
+
+<p>
+Speaking of <i>groundnuts</i>, they come in a one-ounce package that was $12.95. Last year I used half an ounce per bin, <code>(* 0.5 6)</code>; 3 ounces total, <code>(/ 3 1)</code> 3 packets, <code>(* 3 12.95)</code>; $38.85
+</p>
+
+<p>
+Giving us a total tuber tabulation of <code>(+ 149.70 38.85)</code>; $188.55, <code>(* 188.55 0.08)</code>; $15.08 for tax, $8.30 for shipping, <code>(+ 188.55 15.08 8.30)</code>; $211.93 total.
+</p>
+
+<p>
+Alright - I think I'm done planning! I'm glad I decided to focus on containers since that already brought us up above $200 for the project.
+</p>
+
+<p>
+The next step is taking what I've done and incorporating the information into the spring potato planting project.
+</p>
+
+<p>
+If I look at this document's meta information, I'll find I've taken more than <i>eight hours</i> working on these plans - which seems like a lot, but also I've learned a lot about potatoes and made some headway in bringing that information into this digital garden.
+</p>
+</main>
+<section id="postamble" class="status">
+<p class="date">Created: 2023-01-14 Sat 15:02</p>
+</section>
+</body>
+</html>

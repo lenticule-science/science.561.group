@@ -1,0 +1,345 @@
+#+title: Groundhog Autonomous Zone
+* Directives
+** The Groundhog Autonomous Zone ("GAZ") is an unincorporated association operating under these directives ("GAZ Directives").  
+** The GAZ centers Black liberation and Indigenous sovereignty ("purpose of the GAZ", "GAZ's purpose").
+*** The GAZ does [de|anti]colonial land stewardship.
+*** The GAZ educates about colonialsm and how to act against it.
+*** The GAZ provides ways of living that are not supportive of colonialism.
+*** The GAZ holds these things and the acts and artifacts they cause and create as having value ("GAZ Values").
+   :PROPERTIES:
+   :CUSTOM_ID: gaz-values
+   :END:
+** People are identified with one or more labels based on their relationship with the GAZ and/or colonialism
+*** Members of the GAZ are called Groundhogs.
+
+**** The Documentation Department maintains a list of members ("GAZ Membership List")
+
+***** The GAZ Membership List is maintained as an Org-mode file ("GAZ Membership List file," =gaz-members.org=) controlled by a Git repository ("GAZ Membership List repository", =members.git=), and hosted on a Git forge ("GAZ Membership List forge", [[https://source.gaz.community/gaz/members]]).
+
+***** The GAZ Membership List contains each members':
+
+****** Name
+
+****** Discord username
+
+****** xDai address
+
+****** Email
+
+****** Hive username
+
+**** The Accounting Department maintains accounts in the GAZ ledger corresponding to the GAZ Membership List
+
+***** Members are recorded under the =Assets:Governance:Members= account, under the =Active= and =Inactive= subaccounts.
+
+****** Each member is recorded as a new commodity type.
+**** The Warp Department maintains the =Burrow= channel category on the GAZ Discord.
+***** Only Groundhogs are allowed to join channels in the Burrow.
+***** The Warp Department maintains the =#den= channel in the =Burrow=.
+****** The =#den= is for general congregation of Groundhogs.
+****** Everything said in the =#den= is private to that space.
+***** The Warp Department maintains the =#announcements= channel in the =Burrow=.
+***** Any Groundhog may privately message emsenn to resolve an immediate conduct problem in the =Burrow=.
+*** Groundhogs may nominate a Duckling as a Gopher.
+**** A nominated Gopher must receive no objection from all Groundhogs before being approved.
+**** An approved Gopher may be nominated to work in a specific capacity.
+**** Groundhogs may be paid in GAZ by groundhogs for their work.
+**** Groundhogs will not be paid directly from the GAZ Colony or any GAZ Colony Team.
+*** Groundhogs recognize the "Black, Indigenous, Person of Color" ("BIPOC") label.
+** Groundhogs maintain the GAZ Directives.
+*** The GAZ Directives are maintained as an Org-mode file ("GAZ Directives file", =gaz-directives.org=) controlled by a Git repository ("GAZ Directives repository", =directives.git=), and hosted on a Git forge ("GAZ Directives forge", [[https://source.gaz.community/gaz/directives]]).
+
+*** The GAZ Directives support the GAZ's purpose
+
+*** The GAZ Directives are versioned ("GAZ Directive versioning"):
+
+**** Given a version number MAJOR.MINOR.PATCH
+    
+***** Increment the MAJOR version when the decision-making model is changed.
+
+***** Increment the MINOR version when a decision is made.
+
+***** Increment the PATCH version when a typographical error is fixed.
+     
+**** The GAZ Directive versioning is recorded as annotations on the GAZ Directives repository.
+
+***** TODO Step-by-step??
+
+**** The GAZ Directives use some specific vocabulary and grammar.
+
+***** Present-tense for things that have operations in-place, future/passive for things that don't or are on-going obligations to revisit?
+
+**** GAZ Directives are changed through a consent-based decision-making model.
+
+*** The GAZ Directives are private to Groundhogs.
+
+**** Groundhogs may share GAZ Directives with Gophers if it is deemed necessary.
+
+***** TODO Any share of the Directives must be recorded. Where, how?
+
+*** The GAZ Directives can be changed.
+
+**** Any Groundhog can propose new directives, changes to existing directives, or to remove existing directives.
+
+**** A change to the GAZ directives require consent of all Groundhogs.
+
+
+    Changing the GAZ Directives requires the consent of all Groundhogs.
+
+***** Consent here means that no Groundhog objects to the change.
+
+**** Changes to the GAZ Directives m
+** Groundhogs maintain tools that enable the fulfillment of the GAZ Directives. ("GAZ Tools")
+** Groundhogs divide the decisions and acts of the GAZ into different GAZ Workgroups (GAZWGs).
+*** GAZ Workgroups may request access to certain GAZ assets by default:
+**** GAZ Workgroups may request a Team in the GAZ Colony.
+
+**** GAZ Workgroups may request channels and channel categories in the GAZ Discord.
+*** GAZ Workgroups may propose a transition to alternative terms, language, decision-making, etc.
+**** GAZ Workgroups operations must continue to produce compatible records.
+**** GAZ Workgroups must continue to follow the GAZ Directives.
+**** GAZ Workgroups can decide to separate from the GAZ, but will lose access to GAZ Tools.
+*** GAZ Workgroups are organized through Directives
+**** Each GAZ Workgroup must have Directives specifying the following:
+***** Decision-making model
+***** Membership
+***** Purpose
+***** Assets
+***** Obligations?
+**** GAZ Workgroups can organize as multiple Workgroups.
+** Groundhogs maintain the following Workgroups
+*** Groundhogs organize a Bookkeeping Workgroup
+**** The Bookkeeping Workgroup handles the contemporary record-keeping of the GAZ.
+***** The Bookkeeping Workgroup keeps records that recognize the [[#gaz-values][GAZ Values]].
+****** The Bookkeeping Workgroup organizes the Groundhog Emacs Workgroup.
+******* The Groundhog Emacs workgroup is responsible for creating and maintianing an Emacs configuration which is capable of creating, modifying, and processing the records required by the Bookkeeping Workgroup. ("Groundhog Emacs")
+******* The Warp Department maintains a =#gemacs= channel in the Prairie category of the GAZ Discord.
+******** emsenn moderates the =#gemacs= channel.
+******* The following people are members of the Groundhog Emacs Workgroup:
+******** emsenn
+******** KemoNine
+******* Decisions in the Groundhog Emacs Workgroup are made by emsenn.
+**** The Bookkeeping Workgroup organizes the Accounting Department
+
+***** The Accounting Department maintains a record of the transactions that affect the GAZ's value ("GAZ Ledger").
+
+****** The GAZ ledger is maintained as an Org-mode/Beancount file ("GAZ Ledger file", =gaz-ledger.org=) controlled by a Git repository ("GAZ Ledger repository", =members.git=), and hosted on a Git forge ("GAZ Ledger forge", [[https://source.gaz.community/gaz/ledger]])
+
+****** The Accounting Department uses Beancount and Fava for recording the GAZ ledger.
+
+***** The GAZ Ledger is divided into five basic accounts:
+
+****** =Assets=
+
+****** =Expenses=
+
+****** =Equity=
+
+****** =Liabilities=
+
+****** =Revenue=
+
+***** The following people coordinate the Accounting Department
+
+****** emsenn
+
+**** The Bookkeeping Workgroup organizes the Documentation Department
+
+*** Groundhogs organize a Web Workgroup
+
+**** The Web Workgroup organizes a Warp Department
+
+***** The Warp Department maintains the computer services which allow for non-local communication, decision-making, and action.
+
+****** The Warp Department maintains a Discord server ("GAZ Discord").
+
+****** The Warp Department maintains a Wiki ("GAZ Wiki").
+
+****** The Warp Department maintains a credentials management service ("GAZ Bitwarden").
+
+**** The Web Workgroup organizes a Weft Department
+
+***** The Weft Department stewards the GAZ Wiki.
+
+****** The GAZ Wiki is an encyclopedia of information about colonialism.
+
+****** The GAZ Wiki is publicly accessible.
+
+*** Groundhogs organize teaching people living inside colonialism about it and how they can act against it ("Duckpond").
+
+**** The Duckpond teaches people living inside colonialism about colonialism and how they can act against it.
+
+**** The Warp Department maintains the =Duckpond= channel category on the GAZ Discord=
+
+***** Any person may join the =Duckpond=.
+
+***** Any person who joins the =Duckpond= may ask a Groundhog to become a Duckling.
+
+****** A Duckling is a person who has chosen to learn about colonialism from the Duckpond.
+
+****** The Documentation Department maintains a list of Ducklings ("Duckling List")
+
+******* The Duckling list is maintained as an Org-mode file ("Duckling List file", =ducklings.org=), controlled by a Git repository ("Duckling List repository", =ducklings.git=), and hosted on a Git forge ("Duckling list forge", [[https://source.gaz.community/duckpond/ducklings]]).
+
+******* The Duckling List contains each ducklings:
+       
+******** Discord name
+
+******** Email
+
+******** xDai address
+
+***** The Warp Department maintains the =#wading-pool= channel in the =Duckpond=.
+
+****** The =#wading-pool= is the general purpose chat channel for Ducklings.
+
+***** The Warp Department maintains the =#learn= channel in the =Duckpond=.
+
+***** The Warp Department maintains the =#act= channel in the =Duckpond=.
+
+***** The Warp Department maintains the =#question= channel in the =Duckpond=.
+
+**** The Warp department maintains the =Fens= channel category on the GAZ Discord
+
+***** The =Fens= channels are for any Duckling who holds more than 100 GAZ Tokens.
+
+**** The following people coordinate the Duckpond
+
+***** emsenn
+
+*** Groundhogs organize a blockchain-based fund & governance protocol ("GAZ Colony").
+**** The GAZ Colony is on the Web at https://xdai.colony.io/colony/gaz
+**** The GAZ Colony is managed by emsenn
+**** The GAZ Colony is at =0xA235373212d843A98B05e883C4ce43504692A0C1= on the xDai mainnet ("GAZ Colony Wallet").
+
+***** The GAZ Colony Wallet is tracked by account =Assets:Colony:Root=.
+**** The Accounting Department tracks the GAZ Colony in the GAZ Ledger.
+*** Groundhogs organize a blockchain currency ("GAZ token")
+
+**** The GAZ token is at =0x0B9F6889B01BC8Ea674E6f9a0a53b07Cd0EE4867= on the xDai mainnet.
+
+**** The Accounting Department maintains the GAZ Token Mint through the GAZ Colony.
+
+**** The GAZ token was created on March 24th, 2021
+    
+    #+begin_src beancount
+      2021-03-24 commodity GAZ
+         name: "Groundhog Autonomous Zone Token"
+         asset-class: "xDai token"
+    #+end_src
+
+**** The Accounting Department tracks the GAZ Token Mint in the GAZ Ledger.
+
+***** Minting GAZ Tokens is balanced against =Equity:Mint:GAZ=.
+
+***** Minted GAZ Tokens go into the GAZ Colony Wallet.
+
+     This is automatically determined by how Colony works.
+
+**** GAZ Tokens may only be minted with affirmative consent from all Groundhogs.
+
+*** Groundhogs organize a Bootstrapping Workgroup for creating the GAZ
+
+**** The Bootstrapping Workgroup may make decisions for the GAZ until it is closed.
+
+***** This overrides all other decision-making processes specified in the GAZ Directives.
+
+***** Only emsenn may make decisions.
+
+**** The Bootstrapping Workgroup is operated by emsenn
+
+**** The Bootstrapping Workgroup maintains relationships with Gophers:
+
+***** KemoNine is helping draft the directives, and is also operating much of the Warp Department so has a hand in lots of things through this Bootstrapping period.
+*** Groundhogs organize Makha Sa Garden.
+**** Makha Sa Garden is located at the corner of N. Merritt Mill Rd. and Rosemary St., in the colonial settlement of Chapel Hill in state of North Carolina.
+**** Makha Sa Garden exists on the unceded traditional territory of the Shakori-Eno peoples, and in relationship to the Indigenous people who live here today, as well as people brought to this place through diaspora, displacement, and settler-colonization.
+**** Any Duckling, Gopher, or Groundhog may work with Makha Sa Garden ("Stewards of Makha Sa Garden").
+**** Stewards of Makha Sa Garden center [de|anti]colonial land stewardshp.
+***** Stewards of Makha Sa Garden work to improve the local soil.
+***** Stewards of Makha Sa Garden cultivate native plants.
+***** Stewards of Makha Sa Garden cultivate xeric plants.
+***** Stewards of Makha Sa Garden cultivate medicine plants.
+***** Stewards of Makha Sa Garden propagate plants.
+***** Stewards of Makha Sa Garden save seed.
+***** Stewards of Makha Sa Garden give away propagated plants to BIPOC.
+**** Stewards of Makha Sa Garden steward plants and animals at Makha Sa Garden
+***** Stewards of Makha Sa Garden steward the rosemary bush under the lamppost by the western stairs of Brick Box Apartments ("Hoey's Rosemary").
+****** Stewards of Makha Sa Garden will prune Hoey's Rosemary after it blooms, every spring.
+******* Stewards of Makha Sa Garden will attempt to propagate cuttings from pruning Hoey's Rosemary.
+***** Stewards of Makha Sa Garden steward the red sorrel by the rock dam behind Meineke ("Makha Sa Sorrel").
+****** Stewards of Makha Sa Garden will prune the Makha Sa Catchment Trees to let the Makha Sa Sorrel get sunlight.
+****** Stewards of Makha Sa Garden will try and save the seed from the Makha Sa Sorrel after it blooms.
+
+      Late May?
+***** Stewards of Makha Sa Garden steward the decorative trees in the water catchment ("Makha Sa Catchment Trees").
+*** Groundhogs organize the Ferguson garden.
+
+** The GAZ operates the Beadworking Group (GAZ-BED)
+
+*** GAZ-BED produces beadwork for GAZ members.
+* Musings?
+** On Roles
+A person's role is determined by the involved Workgroups and people, not an abstract label within the GAZ. For example, that someone is an officer in the Records workgroup does not matter should they show up to crew a Fibercraft operation, but whether or not they are a Groundhog or a Gopher might matter.
+** On Workgroups
+Each workgroup is meant to be really automonous, to the point where if they say no one affiliated with a specific other workgroup is allowed to crew any of their operations. That sort of autonomy is seen by emsenn as a mechanism against bureaucratic power accruing in the GAZ itself, which should only exist enough to allow "TELNET-style negotiations" between Workgroups.
+
+#+begin_quote
+"...[I]ts not explicit anywhere but workgroups can create sub-workgroups as many layers deep as wanted.) I guess that idea is important: its like russian nesting dolls, where the main group can create a smaller group that is, at start, indistinguishable from the big group except that it has no purpose and no members, but then through having a purpose and members, and acting out over time, it distinguishes itself." - emsenn
+*** On relations between workgroups
+Q: So the relationships and actions aren't fully predefined, they're being...instantiated?
+
+A: they're derived from whatever the parent workgroup is, unless the workgroup was cretaed with a directive that otherwise specified
+
+A workgroup can change anything about itself within its scope - in interaction with other workgroups (its parent, grandparent, aunt, cousin, etc.) - it is expected to stick to its parents' rules.
+
+so the GAZ represents the great-grandmam workgroup, that sets up the traditional/default governance of workgroups, decides to have kids, etc.
+
+Important: child workgroups are functionally officers in their parent, but their parent is not an officer in them
+
+so that is to say, as officers in the records workgroup, we can collectively have a say in GAZ decisions, but the GAZ can only make suggestions/requests of us, they have no say in how we respond.
+
+that is: the Records Workgroup has a say in GAZ decisions, you personally do not, except as much as you have a say in the Records Workgroup.
+
+I am, effectively, an officer in every workgroup that currently exists.
+
+I think there's some directive that all the groundhogs agreed to that basically gives me the ability to act as an officer, individually, in every workgroup, which further... skews the power of things toward me, until I give it up.
+
+(The directive was created when I was taking VERBOSE notes on the goings-ons, and there was a lot going on, and so it didnt make sense to need to propose things to the GAZ from the bootstrapping workgroup so that the gaz could propose them to another WG who could then decide on it, when I am... all of those people at once
+
+a lot of WGs are pretty.. custodial/boring, like DOMestic and RECords
+
+#+end_quote
+** On TCUTT
+When discussing how to do something, it's easy to get bogged down in theory. Therefore, it's encouraged to, in response to a question, ask back: "TCUTT?"
+
+The Colonial Urge To Theorize
+
+"Is this quesiton related to making us capable of taking the action-at-hand, or is it just asking questions out of colonial habit?"
+
+For example, if the action-at-hand is "write up some documentation about workgroups," asking a question about workgroup theory is good. But if the action is "copy notes from the =#praxis= chat channel into the records, and asking about workgroup theory is just to imagine some possible innovation that makes the work more efficient, well, that's not the action-at-hand. (But, it might be good to make a note to explore that as an action to take, at another time!)
+
+Responses to "TCUTT?" might be:
+
+- You're right; let's ignore the question and move on.
+- I think the question relates to the action-at-hand [because ...]. (You don't have to express your reasoning for beleiving there's a relationship, but it might help folk answer the question.)
+- The question is related to <another action>, but I see that action as related to this one [because...].
+- I think knowing the answer will help motivate me to do the action-at-hand [because...].
+- I think knowing the answer will help orient me properly around the action-at-hand [because...].
+* Workgroups
+- [[dom.org][Domestic]] [DOM] :: Handles keeping the Burrow nice.
+- [[sor.org][Sourcing]] [SOR] :: Handles bringing materials into the GAZ.
+- [[dip.org][Diplomacy]] [DIP] :: Forms relationships with other communities and societies.
+- [[rec.org][Records]] [REC] :: Makes records (ledgers, documents, etc.) as needed, for other Workgroups.
+- [[lib.org][Library]] [LIB] :: Handles the material cultural artifacts the GAZ holds.
+- [[lan.org][Landwork]] [LAN] :: Forms relationships with Land near the Burrow.
+- [[med.org][Medicine]] [MED] :: Makes medicine (including food). 
+- [[fib.org][Fibercrafts]] [FIB] :: Makes fabric, textiles, blankets, clothing, etc.
+* Proposals
+** Soon
+*** Solar water-heater.
+What's the best - in terms of energy - way to heat up some water for washing dishes, laundry, our selves?
+** Later
+** Someday
+*** Tree-weight batteries?
+*** Soil-batteries

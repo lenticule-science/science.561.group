@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       009d3047-5db5-4bde-8a9e-a9e8a2282360
+:END:
+#+title: administrating
+#+date: [2025-09-27 Sat 09:50]
+

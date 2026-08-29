@@ -1,0 +1,5 @@
+#+title: Kanban card
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-18 Fri 13:58]
+A */Kanban card/* is a record used in the [[file:kanban.org][Kanban]] system.

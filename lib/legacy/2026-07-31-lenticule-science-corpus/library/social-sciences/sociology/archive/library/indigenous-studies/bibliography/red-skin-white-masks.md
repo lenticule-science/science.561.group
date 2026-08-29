@@ -1,0 +1,18 @@
+---
+title: "Red Skin, White Masks"
+date-created: 2026-03-02
+aliases:
+  - "Red Skin, White Masks"
+  - "Red Skin White Masks"
+keywords:
+  - SettlerColonialism
+cites:
+  - "Black Skin, White Masks"
+  - "Red Skin, White Masks: Rejecting the Colonial Politics of Recognition"
+---
+
+*Red Skin, White Masks: Rejecting the Colonial Politics of Recognition* [cite:@coulthard_RedSkinWhiteMasks_2014] is a 2014 book by [Glen Coulthard](/general/people/glen-coulthard.md) (Yellowknives Dene). The title inverts [Frantz Fanon](../people/frantz-fanon.md)'s *Black Skin, White Masks* [cite:@fanon_BlackSkinWhiteMasks_1952] to situate the analysis in the context of [settler colonialism](../../sociology/topics/settler-colonialism/index.md) in northern Turtle Island (Canada).
+
+[Coulthard](../people/glen-coulthard.md) argues that the politics of recognition — the demand that the [settler-colonial](../../sociology/topics/settler-colonialism/index.md) state acknowledge Indigenous rights, title, and identity — has become a mechanism of colonial governance rather than a path to liberation. Recognition, when granted by the colonizer on the colonizer's terms, reproduces the colonial relationship by making Indigenous freedom dependent on settler approval. [Coulthard](../people/glen-coulthard.md) proposes [grounded normativity](/sociology/terms/grounded-normativity.md) as an alternative: ethical and political frameworks rooted in Indigenous relationships to specific lands and practices, rather than in the terms the colonial state offers.
+
+The book is central to contemporary debates on [settler colonialism](/sociology/terms/settler-colonialism.md), [Indigenous resurgence](/sociology/terms/indigenous-resurgence.md), and the [refusal](/sociology/terms/refusal.md) of liberal recognition frameworks.

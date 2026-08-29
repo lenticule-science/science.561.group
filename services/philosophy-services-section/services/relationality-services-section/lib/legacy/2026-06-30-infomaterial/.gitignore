@@ -1,0 +1,28 @@
+.DS_Store
+Thumbs.db
+*.tmp
+*.tmp.*
+*.swp
+*~
+
+.lake/
+**/.lake/
+*.olean
+*.ilean
+*-imports.dot
+*-redundant.dot
+
+# generated documentation surfaces
+docs/blueprint/web/
+docs/verso/_rendered/
+sites/docs/
+
+dist/
+node_modules/
+.tmp/
+__pycache__/
+*.pyc
+
+# agent session metadata & local recovery backups — never track
+.claude/
+*.sonnet-bak

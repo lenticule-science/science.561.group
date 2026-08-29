@@ -1,0 +1,38 @@
+#+BEGIN: clocktable :scope ("rou.org" "gaz.org" "gar.org" "hom.org") :maxlevel 5
+#+CAPTION: Clock summary at [2021-10-22 Fri 16:00]
+| File    | Headline                          | Time       |          |         |
+|---------+-----------------------------------+------------+----------+---------|
+|         | ALL *Total time*                  | *1d 23:24* |          |         |
+|---------+-----------------------------------+------------+----------+---------|
+| rou.org | *File time*                       | *1d 21:12* |          |         |
+|         | Monthly                           | 0:15       |          |         |
+|         | \_  Maintenance                   |            |     0:15 |         |
+|         | \_    Cutting board maintenance   |            |          |    0:15 |
+|         | Weekly                            | 3:52       |          |         |
+|         | \_  Sunday                        |            |     1:26 |         |
+|         | \_    Prepare last week's records |            |          |    1:26 |
+|         | \_  Wednesday                     |            |     1:49 |         |
+|         | \_    Tidy the porch              |            |          |    0:06 |
+|         | \_    Inspect the garden          |            |          |    0:18 |
+|         | \_    Sharpen garden tools        |            |          |    1:25 |
+|         | \_  Thursday                      |            |     0:30 |         |
+|         | \_    Sharpen pocketknife         |            |          |    0:30 |
+|         | \_  Friday                        |            |     0:07 |         |
+|         | \_    Sweep the porch             |            |          |    0:07 |
+|         | Anytime                           | 1d 17:05   |          |         |
+|         | \_  Recordkeeping                 |            |     1:45 |         |
+|         | \_  Personal                      |            | 1d 10:15 |         |
+|         | \_    Chilling                    |            |          | 1d 8:57 |
+|         | \_    Eating                      |            |          |    1:18 |
+|         | \_  Garden                        |            |     5:05 |         |
+|         | \_    Weeding                     |            |          |    3:00 |
+|         | \_    Soilwork                    |            |          |    0:03 |
+|         | \_    Planting                    |            |          |    2:02 |
+|---------+-----------------------------------+------------+----------+---------|
+| gaz.org | *File time*                       | *2:12*     |          |         |
+|         | \_  Make grass saw                |            |     2:12 |         |
+|---------+-----------------------------------+------------+----------+---------|
+| gar.org | *File time*                       | *0:00*     |          |         |
+|---------+-----------------------------------+------------+----------+---------|
+| hom.org | *File time*                       | *0:00*     |          |         |
+#+END:

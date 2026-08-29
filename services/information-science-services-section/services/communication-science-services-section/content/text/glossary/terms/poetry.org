@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       16bfee43-24f0-415c-82fb-12bd3dd47738
+:END:
+#+title: poetry
+#+date: [2025-08-29 Fri 22:51]
+

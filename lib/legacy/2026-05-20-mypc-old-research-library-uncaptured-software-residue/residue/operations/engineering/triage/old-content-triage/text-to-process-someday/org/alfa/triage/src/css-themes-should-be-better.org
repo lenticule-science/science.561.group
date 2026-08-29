@@ -1,0 +1,65 @@
+#+SETUPFILE: ./default-setup.inc
+#+TITLE: CSS Themes Should Be Better
+#+EXPORT_FILE_NAME: ../pub/css-themes-should-be-better
+#+MACRO: document-type essay
+#+INDEX: essay!by type!opinion!"CSS Themes Should Be Better"
+#+INDEX: essay!by topic!web design!"CSS Themes Should Be Better"
+#+INDEX: web design!"CSS Themes Should Be Better"
+#+DATE: 2018-07-14
+#+TOC: headlines 1
+* Introduction
+#+INCLUDE: "./plates.inc::default-eli"
+* CSS Themes Should Be Better
+    :PROPERTIES:
+    :EXPORT_FILE_NAME: css-themes-should-be-better
+    :EXPORT_DATE: 2018-07-13
+    :END:
+I've just begun teaching myself about website development, but I'm
+already beginning to form opinions:
+
+If you're going to release your CSS stylesheet(s) as a */theme/*,
+intended for use on more than a single website, you should prioritize
+following industry standards and guidelines. I understand, for a
+single site that might get a hundred visitors, make things pretty
+however works.
+
+But if you intend to distribute the theme, or use it on a site of any
+popularity, you need to think about how that amplifies any shortcut or
+oversight you've made.
+
+I started thinking about this when learning to use the [Gutenberg
+static site generator](https://getgutenberg.io) and looking at the
+themes available for it. (And later, for Hugo and Jekyll.)
+
+A lot of them are really bad in this regard. Many don't use semantic
+tags like ~<header>~ and ~<section>~
+
+Frankly, I don't see the excuse. It's trivial to type
+id="{{page.slug}}" or add in conditionals for ograph data. Just... do
+it. I'm a novice, and I am.
+
+I'm on a rant now so just ignore me if you want, but for real, no one
+with their priorities straight gives a shit if your website builds in
+200ms or 2 seconds. They don't even really know what "build" means.
+They'll give you the inch of agreeing to use markdown to write their
+pages. They'll even learn to do weird {{ shortcodes }}. But then you
+have to make sure their images and descriptions show up right on
+Facebook shares, and they can drop in their SaaSy widgets.
+
+This is why I'm so in love with Netlify at the moment - I haven't been
+using them long enough and I'm too ignorant to know about the tech,
+but their marketing really does a good job of hitting the market's
+pain points and resolving them. And what they're offering isn't much
+different than what a bunch of other folk offer. But it's different
+enough that they just fit into the market better.
+* Supplements
+** Contribute
+   :PROPERTIES:
+   :CUSTOM_ID: supplements-contribute
+   :END:
+#+INCLUDE: "./plates.inc::personal-contribute"
+** License
+   :PROPERTIES:
+   :CUSTOM_ID: supplements-license
+   :END:
+#+INCLUDE: "./plates.inc::mit-license"

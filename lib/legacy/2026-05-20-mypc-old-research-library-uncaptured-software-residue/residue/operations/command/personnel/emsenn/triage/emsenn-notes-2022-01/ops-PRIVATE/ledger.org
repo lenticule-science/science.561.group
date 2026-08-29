@@ -1,0 +1,129 @@
+option "operating_currency" "USD"
+option "booking_method" "FIFO"
+2021-12-31 open Equity:OpeningBalance
+2021-12-31 open Income:Labor
+* 2021
+** 2021-12 December
+*** 2021-12-31 Friday
+2021-12-31 open Assets:Inventory:Beads:Seed:Eleven:Rocaille:TransAB:Emerald
+2021-12-31 open Assets:Inventory:Beads:Seed:Eleven:Toho:Matte:Olive
+2021-12-31 open Assets:Inventory:Beads:Seed:Eleven:Rocaille:TransLuster:PaleGreen
+2021-12-31 open Assets:Inventory:Beads:Seed:Eleven:Rocaille:Translucent:SilverLinedLimeGreen
+2021-12-31 open Assets:Inventory:Beads:Seed:Eleven:Rocaille:Translucent:Green
+2021-12-31 open Assets:Inventory:Beads:Seed:Eleven:Rocaille:Translucent:PaleGreen
+2021-12-31 open Assets:Inventory:Beads:Seed:Eleven:Toho:Translucent:SilverLinedGreen
+2021-12-31 open Assets:Inventory:Beads:Seed:Eleven:Rocaille:OpaqueAurora:Olive
+2021-12-31 open Assets:Inventory:Beads:Seed:Eleven:Rocaille:Opaque:Periodot
+2021-12-31 open Assets:Inventory:Beads:Seed:Eleven:Rocaille:TransLuster:Lime
+2021-12-31 open Assets:Inventory:Beads:Seed:Eleven:Toho:Translucent:DarkBlueGreen
+2021-12-31 open Assets:Inventory:Beads:Seed:Eleven:Rocaille:Translucent:WhiteLinedPaleGreen
+2021-12-31 open Assets:Inventory:Beads:Seed:Eleven:Rocaille:TransMatteAurora:LightGreen
+2021-12-31 open Assets:Inventory:Beads:Seed:Eleven:Toho:Translucent:LightGreen
+2021-12-31 open Assets:Inventory:Beads:Seed:Eleven:Rocaille:TransAurora:LightGreen
+2021-12-31 open Assets:Inventory:Beads:Seed:Eleven:Toho:MatteAurora:DarkBlueGreen
+2021-12-31 open Assets:Inventory:Beads:Seed:Eleven:Toho:TransLuster:Green
+2021-12-31 open Assets:Inventory:Beads:Seed:Eleven:Toho:Translucent:MediumGreen
+2021-12-31 open Assets:Inventory:Beads:Seed:Eleven:Toho:Translucent:SilverLinedMediumGreen
+2021-12-31 open Assets:Inventory:Beads:Seed:Eleven:Toho:TransLuster:LightGreen
+2021-12-31 open Assets:Inventory:Beads:Seed:Eleven:Rocaille:Translucent:SilverLinedGreen
+2021-12-31 open Assets:Inventory:Beads:Seed:Eleven:Rocaille:Translucent:DarkGreen
+2021-12-31 open Assets:Inventory:Beads:Seed:Eleven:Rocaille:Opaque:TravertineGreenTurquoise
+2021-12-31 open Assets:Inventory:Beads:Seed:Eleven:Rocaille:Opaque:Green
+
+2021-12-31 * "Inventory: size 11/0 seed beads"
+  Assets:Inventory:Beads:Seed:Eleven:Rocaille:TransAB:Emerald   69 GRAM {0.12 USD}
+  Assets:Inventory:Beads:Seed:Eleven:Toho:Matte:Olive  7.6 GRAM {0.15 USD}
+  Assets:Inventory:Beads:Seed:Eleven:Rocaille:TransLuster:PaleGreen  38.5 GRAM {0.12 USD}
+  Assets:Inventory:Beads:Seed:Eleven:Rocaille:Translucent:SilverLinedLimeGreen  18.5 GRAM {0.12 USD}
+  Assets:Inventory:Beads:Seed:Eleven:Rocaille:Translucent:Green  4 GRAM {0.12 USD}
+  Assets:Inventory:Beads:Seed:Eleven:Rocaille:Translucent:PaleGreen  36.6 GRAM {0.12 USD}
+  Assets:Inventory:Beads:Seed:Eleven:Toho:Translucent:SilverLinedGreen  20.4 GRAM {0.10 USD}
+  Assets:Inventory:Beads:Seed:Eleven:Rocaille:OpaqueAurora:Olive  69.8 GRAM {{7.80 USD}}
+  Assets:Inventory:Beads:Seed:Eleven:Rocaille:Opaque:Periodot  40 GRAM {{3.90 USD}}
+  Assets:Inventory:Beads:Seed:Eleven:Rocaille:TransLuster:Lime  36.3 GRAM {{3.90 USD}}
+  Assets:Inventory:Beads:Seed:Eleven:Toho:Translucent:DarkBlueGreen  1.1 GRAM {0.10 USD}
+  Assets:Inventory:Beads:Seed:Eleven:Rocaille:Translucent:WhiteLinedPaleGreen  36.1 GRAM {{3.90 USD}}
+  Assets:Inventory:Beads:Seed:Eleven:Rocaille:TransMatteAurora:LightGreen  35.2 GRAM {{3.90 USD}}
+  Assets:Inventory:Beads:Seed:Eleven:Toho:Translucent:LightGreen  12.2 GRAM {0.10 USD}
+  Assets:Inventory:Beads:Seed:Eleven:Rocaille:TransAurora:LightGreen  34.3 GRAM {{3.90 USD}}
+  Assets:Inventory:Beads:Seed:Eleven:Toho:MatteAurora:DarkBlueGreen  30.9 GRAM {0.10 USD}
+  Assets:Inventory:Beads:Seed:Eleven:Toho:TransLuster:Green  3.4 GRAM {0.10 USD}
+  Assets:Inventory:Beads:Seed:Eleven:Toho:Translucent:MediumGreen  9.3 GRAM {0.10 USD}
+  Assets:Inventory:Beads:Seed:Eleven:Toho:Translucent:SilverLinedMediumGreen  17.4 GRAM {0.10 USD}
+  Assets:Inventory:Beads:Seed:Eleven:Toho:TransLuster:LightGreen  14.9 GRAM {0.10 USD}
+  Assets:Inventory:Beads:Seed:Eleven:Rocaille:Translucent:SilverLinedGreen  42.2 GRAM {{3.90 USD}}
+  Assets:Inventory:Beads:Seed:Eleven:Rocaille:Opaque:Green  36.2 GRAM {{3.90 USD}}
+  Assets:Inventory:Beads:Seed:Eleven:Rocaille:Opaque:TravertineGreenTurquoise  35.6 GRAM {{3.90 USD}}
+  Assets:Inventory:Beads:Seed:Eleven:Rocaille:Translucent:DarkGreen  34.9 GRAM {{3.90 USD}}
+  Equity:OpeningBalance
+
+* 2022
+
+** 2022-01 January
+
+*** 2022-01-01 Saturday
+2022-01-01 open Assets:Inventory:Beads:Seed:Eleven:Rocaille:Translucent:DarkSmokeTopaz
+2022-01-01 open Assets:Inventory:Beads:Seed:Eleven:Rocaille:TransMatteAurora:DustyOrange
+2022-01-01 open Assets:Inventory:Beads:Seed:Eleven:Rocaille:TransLuster:DarkSmokeTopaz
+2022-01-01 open Assets:Inventory:Beads:Seed:Eleven:Rocaille:Opaque:RustBrown
+2022-01-01 open Assets:Inventory:Beads:Seed:Eleven:Rocaille:TransMatte:DarkTopaz
+2022-01-01 open Assets:Inventory:Beads:Seed:Eleven:Rocaille:Opaque:Orange
+2022-01-01 open Assets:Inventory:Beads:Seed:Eleven:Rocaille:Translucent:Orange
+2022-01-01 open Assets:Inventory:Beads:Seed:Eleven:Rocaille:TransMatteAurora:Rye
+2022-01-01 open Assets:Inventory:Beads:Seed:Eleven:Toho:Translucent:SilverLinedOrange
+2022-01-01 open Assets:Inventory:Beads:Seed:Eleven:Rocaille:Opaque:RedStripedGoldenYellow
+2022-01-01 open Assets:Inventory:Beads:Seed:Eleven:Toho:Translucent:SilverLinedDarkOrange
+2022-01-01 open Assets:Inventory:Beads:Seed:Eleven:Toho:Matte:Moss
+2022-01-01 * "Purchase: size Eleven Toho seed bead in Matte Moss"
+2022-01-01 open Assets:Inventory:Beads:Seed:Eleven:Rocaille:Opaque:Brown
+2022-01-01 open Assets:Inventory:Beads:Seed:Eleven:Rocaille:Translucent:OrangeLinedCrystal
+2022-01-01 open Assets:Inventory:Beads:Seed:Eleven:Rocaille:OpaqueLuster:LightOrange
+2022-01-01 open Assets:Inventory:Beads:Seed:Eleven:Rocaille:TransMatteAurora:Topaz
+2022-01-01 open Assets:Inventory:Beads:Seed:Eleven:Rocaille:Translucent:SilverLinedRootBeer
+2022-01-01 * "Inventory: size 11/0 seed beads"
+  Assets:Inventory:Beads:Seed:Eleven:Rocaille:Translucent:DarkSmokeTopaz  35.2 GRAM {0.12 USD}
+  Assets:Inventory:Beads:Seed:Eleven:Rocaille:TransMatteAurora:DustyOrange  75.2 GRAM {{7.80 USD}}
+  Assets:Inventory:Beads:Seed:Eleven:Rocaille:TransLuster:DarkSmokeTopaz  37.2 GRAM {{3.90 USD}}
+  Assets:Inventory:Beads:Seed:Eleven:Rocaille:Opaque:RustBrown  73.7 GRAM {{7.80 USD}}
+  Assets:Inventory:Beads:Seed:Eleven:Rocaille:TransMatte:DarkTopaz  32.2 GRAM {{3.90 USD}}
+  Assets:Inventory:Beads:Seed:Eleven:Rocaille:Opaque:Orange  22.4 GRAM {0.10 USD}
+  Assets:Inventory:Beads:Seed:Eleven:Rocaille:Translucent:Orange  33.4 GRAM {{3.90 USD}}
+  Assets:Inventory:Beads:Seed:Eleven:Rocaille:TransMatteAurora:Rye  7.4 GRAM {0.10 USD}
+  Assets:Inventory:Beads:Seed:Eleven:Toho:Translucent:SilverLinedOrange  10.2 GRAM {0.10 USD}
+  Assets:Inventory:Beads:Seed:Eleven:Rocaille:Opaque:RedStripedGoldenYellow  38.2 GRAM {{3.90 USD}}
+  Assets:Inventory:Beads:Seed:Eleven:Toho:Translucent:SilverLinedDarkOrange  9.8 GRAM {0.10 USD}
+  Assets:Inventory:Beads:Seed:Eleven:Toho:Matte:Moss  31.9 GRAM {0.10 USD}
+  Assets:Inventory:Beads:Seed:Eleven:Rocaille:Opaque:Brown  23.1 GRAM {0.10 USD}
+  Assets:Inventory:Beads:Seed:Eleven:Rocaille:Translucent:OrangeLinedCrystal  35.7 GRAM {{3.90 USD}}
+  Assets:Inventory:Beads:Seed:Eleven:Rocaille:OpaqueLuster:LightOrange  38.2 GRAM {{3.90 USD}}
+  Assets:Inventory:Beads:Seed:Eleven:Rocaille:TransMatteAurora:Topaz  33.0 GRAM {{3.90 USD}}
+  Assets:Inventory:Beads:Seed:Eleven:Rocaille:Translucent:SilverLinedRootBeer  6.0 GRAM {0.10 USD}
+  Equity:OpeningBalance
+2022-01-01 open Assets:Inventory:Findings:Earrings:Studs:Rounds
+2022-01-01 open Assets:Inventory:Findings:Earrings:Backings:Studs
+2022-01-01 open Assets:Inventory:Thread:Beading:NylonD
+2022-01-01 * "Inventory: Beading stuff"
+  Assets:Inventory:Findings:Earrings:Studs:Rounds   24 STUD {0.12 USD}
+  Assets:Inventory:Findings:Earrings:Backings:Studs 24 BACKING {0.12 USD}
+  Assets:Inventory:Thread:Beading:NylonD      100 METER {0.05 USD}
+  Equity:OpeningBalance
+2022-01-01 open Assets:Inventory:Beadwork:Projects:Earrings:Studs:First
+2022-01-01 * "Requisition: seed bead for Alpha stud earrings"
+  Assets:Inventory:Beads:Seed:Eleven:Rocaille:Translucent:PaleGreen  -2 GRAM {}
+  Assets:Inventory:Beads:Seed:Eleven:Rocaille:TransMatte:DarkTopaz   -2 GRAM {}
+  Assets:Inventory:Findings:Earrings:Studs:Rounds   -2 STUD {}
+  Assets:Inventory:Findings:Earrings:Backings:Studs -2 BACKING {}
+  Assets:Inventory:Thread:Beading:NylonD      -2 METER {}
+  Assets:Inventory:Beadwork:Projects:Earrings:Studs:First
+2022-01-01 * "Craft: First stud earrings"
+  Income:Labor    -1.5 HOUR {15 USD}
+  Assets:Inventory:Beadwork:Projects:Earrings:Studs:First
+2022-01-01 * "Deposit: leftover beads from Alpha stud earrings"
+  Assets:Inventory:Beads:Seed:Eleven:Rocaille:TransMatte:DarkTopaz  1.43 GRAM {0.12 USD}
+  Assets:Inventory:Beads:Seed:Eleven:Rocaille:TransMatte:DarkTopaz  1.90 GRAM {0.12 USD}
+  Assets:Inventory:Beadwork:Projects:Earrings:Studs:First
+2022-01-01 open Assets:Inventory:Beadwork:Earrings:Studs
+2022-01-01 * "Craft: complete First stud earrings"
+  Assets:Inventory:Beadwork:Earrings:Studs   1 BDWK-ERR-STD-FIRST {23.16 USD}
+  Assets:Inventory:Beadwork:Projects:Earrings:Studs:First
+2022-01-01 price BDWK-ERR-STD-FIRST 30 USD

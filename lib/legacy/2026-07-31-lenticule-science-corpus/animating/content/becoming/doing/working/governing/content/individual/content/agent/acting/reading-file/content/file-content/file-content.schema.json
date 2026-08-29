@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://561.group/swarm-intelligence/file-content/file-content.schema.json",
+  "title": "File content (aperiodic-articulation-cell variant, codomain of reading-file)",
+  "description": "Cell produced by reading-file. Carries the filesystem path, encoding, decoded content, read transaction time, and byte count.",
+  "kind": "object",
+  "type": "object",
+  "required": ["path", "encoding", "content", "readAt", "bytes"],
+  "additionalProperties": false,
+  "properties": {
+    "path": { "type": "string", "minLength": 1 },
+    "encoding": { "type": "string", "minLength": 1 },
+    "content": { "type": "string" },
+    "readAt": { "type": "string", "minLength": 1 },
+    "bytes": { "type": "integer", "minimum": 0 }
+  }
+}

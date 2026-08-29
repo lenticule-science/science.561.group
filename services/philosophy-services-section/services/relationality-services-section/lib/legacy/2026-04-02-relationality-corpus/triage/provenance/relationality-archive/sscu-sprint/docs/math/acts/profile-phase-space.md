@@ -1,0 +1,24 @@
+---
+
+name: profile-phase-space
+act: ProfilePhaseSpace
+slug: profile-phase-space
+top: ProfileInvariant
+bottom: RecognizeContext
+summary: Declare the profile-invariant recognitions as the phase space by composing `ProfileInvariant` with `RecognizeContext`.
+tags:
+- act
+layer: act
+part-of: relational-computer
+computer-system-type: primitive
+---
+
+A dynamical system begins with a phase space of states.  For a given profile we
+compose the invariants with the context recognitions:
+`(ProfileInvariant RecognizeContext)` earns
+***ProfilePhaseSpace***.
+
+
+{{ act_info(page.meta) }}
+
+{{ act_nav(page.meta) }}

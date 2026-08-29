@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2020-05-20 Wed 08:50 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>racket hacking</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="emsenn" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/styles/bigblow/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/styles/bigblow/css/bigblow.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/styles/bigblow/css/hideshow.css"/>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/styles/bigblow/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/styles/bigblow/js/jquery-ui-1.10.2.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/styles/bigblow/js/jquery.localscroll-min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/styles/bigblow/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/styles/bigblow/js/jquery.zclip.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/styles/bigblow/js/bigblow.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/styles/bigblow/js/hideshow.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/styles/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">racket hacking</h1>
+<p>
+code for handling stuff
+</p>
+
+<p>
+inspired by computer games
+</p>
+
+<p>
+<b><i>events</i></b> change the <b><i>qualities</i></b> of <b><i>things</i></b>
+</p>
+<div id="outline-container-org9a09681" class="outline-2">
+<h2 id="org9a09681"><span class="section-number-2">1</span> functions</h2>
+<div class="outline-text-2" id="text-1">
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgec51627">1.1. module header</a></li>
+<li><a href="#org3554077">1.2. creation procedures</a></li>
+<li><a href="#org45ef4c6">1.3. event procedures</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgec51627" class="outline-3">
+<h3 id="orgec51627"><span class="section-number-3">1.1</span> module header</h3>
+<div class="outline-text-3" id="text-1-1">
+<div class="org-src-container">
+<pre class="src src-racket"><span style="color: #ffdd33; font-weight: bold;">#lang</span> <span style="color: #f4f4ff;">racket</span>
+
+(<span style="color: #ffdd33; font-weight: bold;">provide</span> make-location
+         give
+         receive
+         receive-multiple-items
+         set-inventory)
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org3554077" class="outline-3">
+<h3 id="org3554077"><span class="section-number-3">1.2</span> creation procedures</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+all <i>things</i> are <b>hash-tables</b>: <i>qualities</i> stored as <b>keys</b> and <b>values</b>
+</p>
+
+<p>
+different creation procedures create <i>things</i> with different <i>qualities</i>
+</p>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org7ada7d0">1.2.1. <span class="todo plan">plan</span> <code>make-location</code> procedure</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org7ada7d0" class="outline-4">
+<h4 id="org7ada7d0"><span class="section-number-4">1.2.1</span> <span class="todo plan">plan</span> <code>make-location</code> procedure</h4>
+<div class="outline-text-4" id="text-1-2-1">
+<div class="org-src-container">
+<pre class="src src-racket">(<span style="color: #ffdd33; font-weight: bold;">define</span> (<span style="color: #96a6c8;">make-location</span>) (<span style="color: #ffdd33;">make-hash</span> (<span style="color: #ffdd33;">list</span> (<span style="color: #ffdd33;">cons</span> <span style="color: #2e8b57;">'contents</span> (<span style="color: #ffdd33;">list</span>)))))
+</pre>
+</div>
+<ul class="org-ul">
+<li><code>contents</code> <i>(list)</i>
+<ul class="org-ul">
+<li>The things that are in the location</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org45ef4c6" class="outline-3">
+<h3 id="org45ef4c6"><span class="section-number-3">1.3</span> event procedures</h3>
+<div class="outline-text-3" id="text-1-3">
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgd01d915">1.3.1. <span class="todo plan">plan</span> <code>give</code> procedure</a></li>
+<li><a href="#orge3a778b">1.3.2. <span class="todo plan">plan</span> <code>receive</code> procedure</a></li>
+<li><a href="#orga6a3f1d">1.3.3. <span class="todo plan">plan</span> <code>receive-multiple-items</code> procedure</a></li>
+<li><a href="#org523b1b6">1.3.4. <span class="todo plan">plan</span> <code>give-multiple-items</code> procedure</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgd01d915" class="outline-4">
+<h4 id="orgd01d915"><span class="section-number-4">1.3.1</span> <span class="todo plan">plan</span> <code>give</code> procedure</h4>
+<div class="outline-text-4" id="text-1-3-1">
+<p>
+this <b>procedure</b> gives <code>quantity</code> of <code>item</code> to <code>recipient</code> from <code>location</code> - assuming all are valid
+</p>
+
+<p>
+(though a new <i>thing</i> will be created for the <code>recipient</code> if necessary)
+</p>
+<div class="org-src-container">
+<pre class="src src-racket">(<span style="color: #ffdd33; font-weight: bold;">define</span> (<span style="color: #96a6c8;">give</span> <span style="color: #cd5c5c;">#:date</span> [<span style="color: #ffdd33; font-weight: bold;">date</span> <span style="color: #2e8b57;">#f</span>]
+              <span style="color: #cd5c5c;">#:item</span> [item <span style="color: #2e8b57;">#f</span>]
+              <span style="color: #cd5c5c;">#:quantity</span> [quantity <span style="color: #2e8b57;">#f</span>]
+              <span style="color: #cd5c5c;">#:location</span> [location <span style="color: #2e8b57;">#f</span>]
+              <span style="color: #cd5c5c;">#:recipient</span> [recipient <span style="color: #2e8b57;">#f</span>])
+  (<span style="color: #ffdd33; font-weight: bold;">if</span> location
+      (<span style="color: #ffdd33; font-weight: bold;">if</span> (<span style="color: #ffdd33;">hash-has-key?</span> location item)
+          (<span style="color: #ffdd33;">hash-set!</span> location item (<span style="color: #ffdd33;">-</span> (<span style="color: #ffdd33;">hash-ref</span> location item) quantity))
+          (<span style="color: #ffdd33; font-weight: bold;">log-error</span> <span style="color: #73c936;">"Tried to give something from somewhere it doesn't exist"</span>))
+      (<span style="color: #ffdd33; font-weight: bold;">log-error</span> <span style="color: #73c936;">"No location specified"</span>)))
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orge3a778b" class="outline-4">
+<h4 id="orge3a778b"><span class="section-number-4">1.3.2</span> <span class="todo plan">plan</span> <code>receive</code> procedure</h4>
+<div class="outline-text-4" id="text-1-3-2">
+<div class="org-src-container">
+<pre class="src src-racket">(<span style="color: #ffdd33; font-weight: bold;">define</span> (<span style="color: #96a6c8;">receive</span> <span style="color: #cd5c5c;">#:date</span> [<span style="color: #ffdd33; font-weight: bold;">date</span> <span style="color: #2e8b57;">#f</span>]
+                 <span style="color: #cd5c5c;">#:item</span> [item <span style="color: #2e8b57;">#f</span>]
+                 <span style="color: #cd5c5c;">#:quantity</span> [quantity <span style="color: #2e8b57;">#f</span>]
+                 <span style="color: #cd5c5c;">#:location</span> [location <span style="color: #2e8b57;">#f</span>]
+                 <span style="color: #cd5c5c;">#:giver</span> [giver <span style="color: #2e8b57;">#f</span>])
+  (<span style="color: #ffdd33; font-weight: bold;">if</span> location
+      (<span style="color: #ffdd33; font-weight: bold;">if</span> (<span style="color: #ffdd33;">hash-has-key?</span> location item)
+          (<span style="color: #ffdd33;">hash-set!</span> location item (<span style="color: #ffdd33;">+</span> (<span style="color: #ffdd33;">hash-ref</span> location item) quantity))
+          (<span style="color: #ffdd33;">hash-set!</span> location item quantity))
+      (<span style="color: #ffdd33;">display</span> <span style="color: #73c936;">"No location specified.\n"</span>)))
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orga6a3f1d" class="outline-4">
+<h4 id="orga6a3f1d"><span class="section-number-4">1.3.3</span> <span class="todo plan">plan</span> <code>receive-multiple-items</code> procedure</h4>
+<div class="outline-text-4" id="text-1-3-3">
+<div class="org-src-container">
+<pre class="src src-racket">(<span style="color: #ffdd33; font-weight: bold;">define</span> (<span style="color: #96a6c8;">receive-multiple-items</span> <span style="color: #cd5c5c;">#:date</span> [<span style="color: #ffdd33; font-weight: bold;">date</span> <span style="color: #2e8b57;">#f</span>]
+                                <span style="color: #cd5c5c;">#:location</span> [location <span style="color: #2e8b57;">#f</span>]
+                                <span style="color: #cd5c5c;">#:giver</span> [giver <span style="color: #2e8b57;">#f</span>]
+                                <span style="color: #cd5c5c;">#:items</span> [items <span style="color: #2e8b57;">#f</span>])
+  (<span style="color: #ffdd33; font-weight: bold;">if</span> items
+      (<span style="color: #ffdd33;">map</span> (<span style="color: #ffdd33; font-weight: bold;">lambda</span> (item)
+             (receive <span style="color: #cd5c5c;">#:date</span> <span style="color: #ffdd33; font-weight: bold;">date</span>
+                      <span style="color: #cd5c5c;">#:location</span> location
+                      <span style="color: #cd5c5c;">#:giver</span> giver
+                      <span style="color: #cd5c5c;">#:item</span> (<span style="color: #ffdd33;">car</span> item)
+                      <span style="color: #cd5c5c;">#:quantity</span> (<span style="color: #ffdd33;">cdr</span> item)))
+           items)
+      (<span style="color: #ffdd33;">display</span> <span style="color: #73c936;">"No items specified.\n"</span>)))
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org523b1b6" class="outline-4">
+<h4 id="org523b1b6"><span class="section-number-4">1.3.4</span> <span class="todo plan">plan</span> <code>give-multiple-items</code> procedure</h4>
+<div class="outline-text-4" id="text-1-3-4">
+<div class="org-src-container">
+<pre class="src src-racket">(<span style="color: #ffdd33; font-weight: bold;">define</span> (<span style="color: #96a6c8;">give-multiple-items</span> <span style="color: #cd5c5c;">#:date</span> [<span style="color: #ffdd33; font-weight: bold;">date</span> <span style="color: #2e8b57;">#f</span>]
+                             <span style="color: #cd5c5c;">#:location</span> [location <span style="color: #2e8b57;">#f</span>]
+                             <span style="color: #cd5c5c;">#:recipient</span> [recipient <span style="color: #2e8b57;">#f</span>]
+                             <span style="color: #cd5c5c;">#:items</span> [items <span style="color: #2e8b57;">#f</span>])
+  (<span style="color: #ffdd33; font-weight: bold;">if</span> items
+      (<span style="color: #ffdd33;">map</span> (<span style="color: #ffdd33; font-weight: bold;">lambda</span> (item)
+             (give <span style="color: #cd5c5c;">#:date</span> <span style="color: #ffdd33; font-weight: bold;">date</span>
+                   <span style="color: #cd5c5c;">#:location</span> location
+                   <span style="color: #cd5c5c;">#:recipient</span> recipient
+                   <span style="color: #cd5c5c;">#:item</span> (<span style="color: #ffdd33;">car</span> item)
+                   <span style="color: #cd5c5c;">#:quantity</span> (<span style="color: #ffdd33;">cdr</span> item)))
+           items)
+      (<span style="color: #ffdd33;">display</span> <span style="color: #73c936;">"No items specified.\n"</span>)))
+</pre>
+</div>
+<div class="org-src-container">
+<pre class="src src-racket">(<span style="color: #ffdd33; font-weight: bold;">define</span> (<span style="color: #96a6c8;">set-inventory</span> <span style="color: #cd5c5c;">#:location</span> [location <span style="color: #2e8b57;">#f</span>]
+                       <span style="color: #cd5c5c;">#:items</span> [items <span style="color: #2e8b57;">#f</span>])
+  (<span style="color: #ffdd33; font-weight: bold;">if</span> items
+      ((<span style="color: #ffdd33; font-weight: bold;">lambda</span> ()
+        (<span style="color: #ffdd33;">print</span> <span style="color: #73c936;">"AHOIHFIU!\n"</span>)
+        (<span style="color: #ffdd33; font-weight: bold;">set!</span> location (make-location))
+        (<span style="color: #ffdd33;">map</span> (<span style="color: #ffdd33; font-weight: bold;">lambda</span> (item)
+               (<span style="color: #ffdd33;">hash-set!</span> location (<span style="color: #ffdd33;">car</span> item) (<span style="color: #ffdd33;">cdr</span> item)))
+             items)))
+      (<span style="color: #ffdd33;">display</span> <span style="color: #73c936;">"No items specified.\n"</span>)))
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgbc8c24a" class="outline-2">
+<h2 id="orgbc8c24a"><span class="section-number-2">2</span> data</h2>
+<div class="outline-text-2" id="text-2">
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org943a587">2.1. module header</a></li>
+<li><a href="#org85615a0">2.2. <code>idate</code> struct</a></li>
+<li><a href="#org691e2b3">2.3. locations</a></li>
+<li><a href="#orgee507c4">2.4. events</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org943a587" class="outline-3">
+<h3 id="org943a587"><span class="section-number-3">2.1</span> module header</h3>
+<div class="outline-text-3" id="text-2-1">
+<div class="org-src-container">
+<pre class="src src-racket"><span style="color: #ffdd33; font-weight: bold;">#lang</span> <span style="color: #f4f4ff;">racket</span>
+
+(<span style="color: #ffdd33; font-weight: bold;">require</span> <span style="color: #73c936;">"functions.rkt"</span>)
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org85615a0" class="outline-3">
+<h3 id="org85615a0"><span class="section-number-3">2.2</span> <code>idate</code> struct</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+the <code>idate</code> struct, short of "indigenous date" is a way for dating things based on a more arbitary dating system, where all that's assumed is that it has years, months, days, hours, and minutes.
+</p>
+<div class="org-src-container">
+<pre class="src src-racket">(<span style="color: #ffdd33; font-weight: bold;">struct</span> idate (year month day hour minute))
+</pre>
+</div>
+</div>
+<div id="outline-container-org95d92da" class="outline-4">
+<h4 id="org95d92da"><span class="section-number-4">2.2.1</span> <span class="todo plan">plan</span> add optional seconds</h4>
+</div>
+</div>
+<div id="outline-container-org691e2b3" class="outline-3">
+<h3 id="org691e2b3"><span class="section-number-3">2.3</span> locations</h3>
+<div class="outline-text-3" id="text-2-3">
+</div>
+<div id="outline-container-orgda2e87f" class="outline-4">
+<h4 id="orgda2e87f"><span class="section-number-4">2.3.1</span> <span class="todo broken">broken</span> brick box community room</h4>
+<div class="outline-text-4" id="text-2-3-1">
+<div class="org-src-container">
+<pre class="src src-racket">(<span style="color: #ffdd33; font-weight: bold;">define</span> <span style="color: #f4f4ff;">brick-box-community-room</span> (make-location))
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgee507c4" class="outline-3">
+<h3 id="orgee507c4"><span class="section-number-3">2.4</span> events</h3>
+<div class="outline-text-3" id="text-2-4">
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org94a244e">2.4.1. 2020</a>
+<ul>
+<li><a href="#orgb5fe95c">2.4.1.1. 2020-05 May</a>
+<ul>
+<li><a href="#org4d7f23f">2.4.1.1.1. <span class="done valid">valid</span> 2020-05-19 Tuesday</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org94a244e" class="outline-4">
+<h4 id="org94a244e"><span class="section-number-4">2.4.1</span> 2020</h4>
+<div class="outline-text-4" id="text-2-4-1">
+</div>
+<div id="outline-container-orgb5fe95c" class="outline-5">
+<h5 id="orgb5fe95c"><span class="section-number-5">2.4.1.1</span> 2020-05 May</h5>
+<div class="outline-text-5" id="text-2-4-1-1">
+</div>
+<div id="outline-container-org4d7f23f" class="outline-6">
+<h6 id="org4d7f23f"><span class="section-number-6">2.4.1.1.1</span> <span class="done valid">valid</span> 2020-05-19 Tuesday</h6>
+<div class="outline-text-6" id="text-2-4-1-1-1">
+<div class="org-src-container">
+<pre class="src src-racket">(receive <span style="color: #cd5c5c;">#:date</span> (idate <span style="color: #2e8b57;">30</span> <span style="color: #2e8b57;">3</span> <span style="color: #2e8b57;">27</span> <span style="color: #2e8b57;">12</span> <span style="color: #2e8b57;">30</span>)
+         <span style="color: #cd5c5c;">#:giver</span> <span style="color: #73c936;">"Weaver St Market, Carrboro"</span>
+         <span style="color: #cd5c5c;">#:item</span> <span style="color: #73c936;">"muffins, sweet potato, 4pk"</span>
+         <span style="color: #cd5c5c;">#:quantity</span> <span style="color: #2e8b57;">4</span>
+         <span style="color: #cd5c5c;">#:location</span> brick-box-community-room)
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: emsenn</p>
+<p class="date">Created: 2020-05-20 Wed 08:50</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

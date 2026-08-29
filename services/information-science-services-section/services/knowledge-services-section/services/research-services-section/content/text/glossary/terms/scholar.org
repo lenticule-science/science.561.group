@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       46da18e6-40db-4ee5-9d9c-f0d2f90142af
+:END:
+#+title: scholar
+#+date: [2025-08-29 Fri 19:33]
+

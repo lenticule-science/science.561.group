@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       4545a422-246c-4657-8dae-3605b956193f
+:END:
+#+title: process goal
+#+date: [2025-10-04 Sat 22:14]
+

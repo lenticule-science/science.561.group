@@ -1,0 +1,7 @@
+#+title: Org-roam tag
+#+roam_alias: "Org-roam tags"
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-19 Sat 20:15]
+#+roam_tags: term
+An */Org-roam tag/* is a piece of [[file:meta_data.org][meta-data]] associated with an [[file:org_roam_records.org][Org-roam record]], describing its relationship to the record's [[file:org_roam_database.org][Org-roam database]].

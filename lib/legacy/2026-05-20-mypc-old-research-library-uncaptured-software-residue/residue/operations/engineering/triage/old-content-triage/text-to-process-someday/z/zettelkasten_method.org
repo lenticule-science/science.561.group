@@ -1,0 +1,9 @@
+#+title: Zettelkasten method
+#+date: [2020-12-15 Tue 15:41]
+The */Zettelkasten method/* is a [[file:note_taking.org][note-taking]] [[file:tool.org][tool]].
+
+** Thoughts
+   :LOGBOOK:
+   - Note taken on [2020-12-25 Fri 20:42] \\
+     I think, like [[file:literate_programming.org][literate programming]], a lot of people mistake a certain formating with the mechanics. Zettelkasten isn't [[file:hypertext.org][hypertext]] [[file:note_taking.org][note-taking]], it's about capturing thoughts as notes and dealing with them as pieces later.
+   :END:

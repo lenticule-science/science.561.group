@@ -1,0 +1,54 @@
+---
+title: "Civic and open science: resources and practices"
+date-created: 2026-03-04T00:00:00
+---
+# Civic and open science: resources and practices
+
+Citizen science is part of a broader civic and open science ecosystem that values transparency, shared governance, and reproducible methods. These practices strengthen trust and make your observations more usable.
+
+## Open science practices that help data quality
+
+- **Transparent methods:** describe observation intent, effort, and filtering so others can interpret your data.
+- **Open licensing:** use licenses that allow reuse when appropriate, and be explicit about restrictions when needed.
+- **Reproducible workflows:** keep notes on queries, filters, and analysis steps so results can be verified.
+- **Open peer review:** invite correction and maintain public audit trails in comments.
+
+## Civic science commitments
+
+- **Accountability to place:** observations should respect local stewardship and governance.
+- **Shared benefit:** when data are used for decisions, local communities should have access to results.
+- **Feedback loops:** prioritize comment and identification practices that improve the public record.
+- **Equitable participation:** recognize that access and safety shape who can observe and contribute.
+
+## Resource list
+
+- CARE Principles for Indigenous Data Governance: <https://www.gida-global.org/care>
+- OCAP® (First Nations data governance): <https://fnigc.ca/ocap-training/>
+- Open Knowledge Foundation Open Definition: <https://opendefinition.org/>
+- FORCE11 FAIR principles: <https://www.force11.org/group/fairgroup/fairprinciples>
+- The Biodiversity Information Standards (TDWG): <https://www.tdwg.org/>
+- GBIF data quality guidance: <https://www.gbif.org/document/82642>
+- OpenAIRE Guidelines for FAIR data management: <https://www.openaire.eu/for-researchers/openaire-guidelines>
+- UNESCO Recommendation on Open Science: <https://unesdoc.unesco.org/ark:/48223/pf0000379949>
+
+## What goes wrong if you ignore this
+
+Poor licensing, undocumented methods, or extractive practices reduce trust and make data unusable for governance or research. Open science is not just a moral posture; it is a practical requirement for scientific reliability.
+
+## Reproducibility checklist
+
+- Keep a record of export queries, filters, and dates.
+- Preserve original evidence links alongside analysis outputs.
+- Publish analysis code or workflows when possible.
+
+## Civic feedback loops
+
+- Share results back to local communities or projects.
+- Document corrections or retractions when errors are found.
+- Encourage discussion on observations that affect policy or management.
+
+## See also
+
+- [Practitioner model](practitioner-model.md)
+- [Ethics and harm: extractive observing](ethics-and-harm/extractive-observing.md)
+- [Glossary](glossary.md)

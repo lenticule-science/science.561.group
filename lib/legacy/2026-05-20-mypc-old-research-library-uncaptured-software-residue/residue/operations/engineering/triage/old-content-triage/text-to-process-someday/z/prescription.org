@@ -1,0 +1,22 @@
+#+title: prescription
+#+begin_head
+#+ghe_schema: record-0.1.3
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-24 Thu 14:12]
+#+end_head
+
+#+name: definition
+A */prescription/* is a pre-[[file:decision.org][decision]] action to take in response to its specified situation.
+
+(I don't like that definition!)
+
+#toc: headlines 2
+* Intrododuction
+* prescription
+* Supplements
+** Record history
+   :LOGBOOK:
+   - Note taken on [2020-12-24 Thu 14:12] \\
+     Created
+   :END:

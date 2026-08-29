@@ -1,0 +1,9 @@
+{
+  "$id": "https://research-notes.561.group/hacking/library/archive-from-bare-cedar-fog/engineering/archive/relationality/persistent/schemas/fixed-invariants.schema.json",
+  "title": "Fixed Invariants Payload",
+  "type": "object",
+  "properties": {
+    "stable_modes": {"type": "array"}
+  },
+  "additionalProperties": true
+}

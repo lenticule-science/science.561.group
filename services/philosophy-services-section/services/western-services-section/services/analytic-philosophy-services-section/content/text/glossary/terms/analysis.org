@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       6f9aac44-c72c-4ac5-84ef-9dc5cec6177c
+:END:
+#+title: analysis
+#+date: [2025-08-28 Thu 13:38]
+

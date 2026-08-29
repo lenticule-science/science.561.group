@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       9346c9a7-4515-4b87-900d-8e8e5d810834
+:END:
+#+title: commodify
+#+date: [2025-09-08 Mon 23:06]
+

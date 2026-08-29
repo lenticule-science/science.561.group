@@ -1,0 +1,7 @@
+{{ if .IsHome }}
+  <h1 itemprop="title">{{ .Site.Title }}</h1>
+{{ else }}
+  {{ with .Title }}
+    <h1 itemprop="title">{{ . }}</h1>
+  {{ end }}
+{{ end }}

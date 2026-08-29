@@ -1,0 +1,10 @@
+#+title: Aaron Rabinowitz
+#+begin_head
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2021-01-08 Fri 19:22]
+#+roam_tags: term
+#+end_head
+
+#+name: aaron-rabinowitz-definition
+*/[[file:aaron-rabinowitz][Aaron Rabinowitz]]/* is a [[file:person.org][person]] who, among other things, writes for [[file:the-skeptic.org][The Skeptic]].

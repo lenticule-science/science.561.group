@@ -1,0 +1,25 @@
+#+title: Ashli Babbitt
+#+begin_head
+#+ghe_schema: person-0.1.2
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2021-01-07 Thu 09:22]
+#+roam_tags: person
+#+end_head
+
+#+name: ashli-babbitt-definition
+*/[[file:ashli_babbitt.org][Ashli Babbitt]]/* was a participant in the [[file:2021_storming_of_the_u_s_capitol.org][2021 Storming of the U.S. Capitol]] who was shot by [[file:u_s_capitol_police.org][U.S. Capitol Police]].
+
+#+toc: headlines 2
+
+* Ashli Babbitt
+** Shooting & death
+
+   - Was shot trying to enter a hallway where Congresspeople, the Vice President, and Vice President-elect were being sheltered during the storming.
+
+* Supplements
+** Record history
+   :LOGBOOK:
+   - Note taken on [2021-01-07 Thu 09:22] \\
+     Created
+   :END:

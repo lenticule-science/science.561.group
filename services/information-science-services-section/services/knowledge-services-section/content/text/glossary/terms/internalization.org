@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       f488097a-2b4f-4e79-b53c-40a9a0721c4e
+:END:
+#+title: internalization
+#+date: [2025-09-03 Wed 20:54]
+

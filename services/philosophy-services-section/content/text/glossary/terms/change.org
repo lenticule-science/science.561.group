@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       6026937d-a66d-4f73-9d51-09cd69fd0df9
+:END:
+#+title: change
+#+date: [2025-08-30 Sat 05:06]
+

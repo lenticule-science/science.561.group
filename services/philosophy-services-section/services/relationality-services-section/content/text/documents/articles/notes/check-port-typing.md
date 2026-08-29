@@ -1,0 +1,31 @@
+---
+title: Check Port Typing
+id: check-port-typing
+role: operator
+status: plan
+inputs:
+- id: port-set
+  alias: ports
+outputs:
+- id: recognition
+  alias: predicate
+transformation:
+- call
+  - port-type-check
+  - ports
+proof_refs:
+- port-set
+- recognition
+- port-type-check
+---
+
+# Check Port Typing
+
+Validates that each port’s carrier and direction match the inducing operator
+signature in the [Port Set](./port-set.md). Returns a predicate
+recognition witnessing well-typedness.
+
+## Proof
+- Uses: operator signatures associated with ports to check carrier/direction
+  assignments via the port type check.
+- Shows that: ports are individually well-typed before edge wiring proceeds.

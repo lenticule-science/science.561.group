@@ -1,0 +1,193 @@
+#+title: 2020-12-30
+#+ghe_schema: daily-record-0.1.1
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-30 Wed 09:37]
+#+roam_tags: daily-record
+
+#+name: definition
+This is some of what I (emsenn) experienced and wrote on on [2020-12-30 Wed].
+
+#+toc: headlines 2
+
+* Activity Log                                                     :noexport:
+
+* Journal                                                          :noexport:
+** [2020-12-30 Wed 14:47]
+
+   So I think maybe I've had a good notion of what the [[file:../exposition_arc.org][exposition arc]] to my new [[file:../teraum.org][Teraum]] [[file:../role_playing_game_campaign.org][role-playing game campaign]] should be. The [[file:../red_union.org][Red Union]], in the next phase of their transition into de facto human government, wants to make propaganda, to convince the outlands to join them.
+
+   To do it, they want to create a hub of culture-work, and they're going to do it in the marshes of [[file:../teraum/arathel_county.org][Arathel County]]. All the players have responded to a request to work in this town: everything from construction workers to actors to medics are necessary to build this bold [[file:../hollywood.org][Hollywood]] parody.
+
+   Woo! That'll keep everyone inside the GAME.
+   
+* Weather observations
+
+* Postings
+** Looking at structure editing and movement in Org-mode
+   :PROPERTIES:
+   :EXPORT_DATE: [2020-12-30 Wed 09:37]
+   :END:
+
+   #+index: Text editing!Methods!Structure editing!"Looking at structure editing and movement in Org-mode"
+   #+index: Org-mode!General use!"Looking at structure editing and movement in Org-mode"
+   
+   [[file:../phil_hagelberg.org][Phil Hagelberg]] announced the currently-scheduled speakers for this year's [[file:../fennelconf.org][FennelConf]], and the thing he's going to be talking about is [[file:../structure_editing.org][structure editing]]. It's something I've been thinking about, ever since reading through [[file:../stepan_parunashvili.org][Stepan Parunashvili]]'s [[file:../stepan_parunashvili_an_intuition_for_lisp_syntax.org]["An Intuition for Lisp Syntax"]], where at the end they talk about how [[file:../programming_languages.org][programming languages]] in the [[file:../lisp.org][LISP]] family easily facilitate working with the code as a structure. (I also saw, somewhere on the [[file:../fediverse.org][Fediverse]], someone post a demonstration video of an [[file:../ide.org][IDE]] they're developing that /only/ allows for structure editing.
+
+   It's gotten me thinking that I'm not that familiar with /structure editing/ and movement within [[file:../org_mode.org][Org-mode]]. /(I also, at present, don't have any sort of structure stuff set up in [[file:../groundhog_emacs.org][Groundhog Emacs]] for working with/ LISP /code either, but I'm also not really working intensively with any/ LISPs /right now, either.)/
+
+   So, while I wait on things this morning, I figured I'd take a look at the the Org-mode manual's [[https://orgmode.org/manual/Document-Structure.html#Document-Structure][chapter on document structure]]. 
+
+   One thing I've learned just now is there's a setting to help catch "invisible edits." From the documentation on =org-catch-invisible-edits=: "Check if in invisible region before inserting or deleting a character."
+
+   I've set it to =show-and-error= for now, since that seems to be a good way to learn where the feature will speak up, but I'll probably toggle it it just "show" later; I tend to be pretty aware when I'm at my keyboard.
+
+   The next section in the chapter is about structure movement, an important step in structure editing. In order to help learn the Org-mode structure movement keystrokes, I'm writing a table in the new [[file:../org_mode_structure_editing.org][Org-mode structure editing]] record I've created.
+
+   /(Why am I duplicating material in a manual I have locally? It's not just for the memorization aid of re-writing it, but that's a part! It's also because then this catalog slowly grows into documentation not of Emacs as a tool, but of my relationship with Emacs. Only the keystrokes I use myself tend to get documented here, so it's less of a reference for Emacs users and more a reference for people who want to understand/ my /use of Emacs.)/
+
+
+   #+include: "../org_mode_structure_editing.org::org-mode-structure-movement-key-sequences-table"
+
+   So, looking at that table, and using my own language around this information management, I would say that the above keystrokes are for performing movement between entries in a record. That leaves a big part of structure movement unaccounted for: movement between records. For that, I use Org-roam... which looking at it, I pretty much just use one keystroke there.
+
+   #+include: "../org_roam_structure_editing.org::org-roam-structure-movement-key-sequences-table"
+
+   Which means there's a part of my structure movement I'm not yet addressing, and I can tell what it is: hyperlinks. /(I'm not sure if this is strictly "structure" movement at this point; is moving to the definition of a function by hotkey structure movement?)/
+
+   #+include: "../org_mode_link.org::org-mode-links-structure-movement-key-sequences-table"
+
+   Hmm. In looking at the manual's [[https://orgmode.org/manual/Handling-Links.html][chapter on handling links]], I'm realizing that I'm actually using /yet another/ Org subsystem here, which seems to be called "Org-mark." Org-mark seems to be used to save locations within different Org-mode files, and move between them. It's what the link handling system uses to handle a lot of its movement, so I guess I'll make up a little record for it.
+
+   #+include: "../org_mark.org::org-mark-structure-movement-key-sequences-table"
+
+   Let me put these together and see what I'm missing, if anything.
+
+   #+begin_aside
+
+   Here's how I merged the tables: First, I wrote a list of all the table's names:
+   
+   #+name: structure-movement-tables
+   - org-roam-structure-movement-key-sequences-table
+   - org-mode-structure-movement-key-sequences-table
+   - org-mode-links-structure-movement-key-sequences-table
+   - org-mark-structure-movement-key-sequences-table
+     
+
+   And now a little Elisp to merge the tables, followed by the tables:
+
+   #+begin_src elisp :eval yes :var tables=structure-movement-tables :exports code
+     (mapcan #'org-babel-ref-resolve (mapcar (lambda (item) (car item)) tables))
+   #+end_src
+
+
+   
+   #+end_aside
+
+   #+name: table-merging-elisp
+   #+begin_src elisp :eval yes :var tables=structure-movement-tables :exports results
+     (mapcan #'org-babel-ref-resolve (mapcar (lambda (item) (car item)) tables))
+   #+end_src
+
+   That's actually a pretty comprehensive look at how I move around the structure of my records. Next, I'll look at how I edit that structure, and then take a look at /structure linking/, and /structure inclusion/, two other things I do often that aren't (I think) strictly under "editing."
+
+   So, to talk about structure editing, I need to lay out my understanding and vocabulary around the structure of my records. (I say "my records" rather than "Org-mode files" because my records use a combination of Org-mode, Org-roam, my own code, and all of it comes from my way of thinking about recordkeeping.
+
+   Each record, a file on the disk, contains quite a bit: some meta-data that comes at the beginning of the files, and then one or more entries, each of which might contain many elements, from lists to code blocks to paragraphs.
+
+   Here's the table for generalized structure editing:
+
+   #+include: "../org_mode_structure_editing.org::org-mode-structure-editing-key-sequences-table"
+
+   But there's also quite a bit for working with elements within entries, such as lists:
+
+   #+include: "../org_mode_structure_editing.org::org-lists-structure-editing-key-sequences-table"
+
+   There's also [[file:../org_mode_drawer.org][Org-mode drawers]], which I don't use too much right now.
+
+   #+include: "../org_mode_drawer.org::org-mode-drawers-structure-editing-key-sequences-table"
+
+   There's one part of structure editing I won't cover here, which is my use of [[file:../org_mode_capture_template.org][Org-mode capture template]] to insert [[file:../org_mode_blocks.org][Org-mode blocks]]. Those templates change often; I'll wait until I can write the code to have that system self-document.
+
+   I mentioned links earlier, but now I realize I only use two keystrokes to work with them. Still worth recording:
+
+   #+include: "../org_mode_link.org::org-mode-links-structure-editing-key-sequences-table"
+
+   Another important tool in my structure editing method is [[file:../org_mode_inclusion.org][Org-mode inclusion]]. At the moment I type these out by hand, but I plan on adding some capture templates to make it a little easier. The Org-mode manual's [[https://orgmode.org/manual/Include-Files.html][chapter on inclusion]] is worth reading. All the tables in this posting actually exist in the records for the various concepts, e.g. the links table above comes from the [[file:../org_mode_link.org][Org-mode link]] record.
+
+
+   #+begin_aside
+
+   Here's another list of table names, this time the ones used in structure editing:
+
+   #+name: structure-editing-tables
+   - org-mode-structure-editing-key-sequences-table
+   - org-lists-structure-editing-key-sequences-table
+   - org-mode-drawers-structure-editing-key-sequences-table
+   - org-mode-links-structure-editing-key-sequences-table
+
+   I'll run it through the same Elisp as above to generate a new merged table
+   
+   #+end_aside
+   
+   #+call: table-merging-elisp(tables=structure-editing-tables)
+
+   I went into this feeling like I didn't really do much structure editing and had a very manual approach to making Org-mode files, when I knew there's a /lot/ of possibility for [[file:../automating.org][automation]]. I realize now, I just have been doing some things with keystrokes without even realizing that I was doing it, because (for the most part) the keystrokes are easier than the thing, and it's not any more difficult to remember "alt-enter" than "a new line with the same number of asterisks as the previous one." By viewing both as just a means to a headline (and the headline, ultimately, as just a means to titling an entry, in my own conception of the information,) I guess I don't always view things as automatic forms of manual actions, but just a different means to an end. 
+** Planning my next Teraum role-playing campaign
+
+   The last [[file:../role_playing_game_campaign.org][role-playing game campaign]] I set in the [[file:../world.org][world]] of [[file:../teraum.org][Teraum]] was called /Brave Old World/. (Now that name is used for a [[file:../brave_old_world.org][gaming system]].) In it, there were two player groups, the /Red Team/ and the /Blue Team/. The Red Team all had migrated to Ack, the largest city, from across the biggest ocean, and found themselves through a series of mishaps working with the Red Union, the largest government. The other /Blue Team/ was part of a secret society trying to figure figure out if the Red Union was using magic, which was supposed to have vanished in an apocalypse 80 years prior.
+
+   I've recently decided I'd like to start a new campaign, with more of a /West Marches/ vibe: I'd like to start with a big group of players, and then just, whoever is available when I'm available to narrate a session, that's who plays.
+
+   To accommodate this, it's common to have all the players work out of some sort of hub for adventure. I've been stuck on how to accomplish this. I had a few other criteria in mind. I wanted to set the campaign the spring after the previous campaign. Over the winter, the Red Union would have firmed up their presence across the area they're called the /Greater Ack Metropolitan Enclave/, or /GAME/. New neighborhoods would be showing up around the existing towns, and new towns would be showing up too, to provide housing for the people displaced by the /Ack Fire/, that spring.
+
+   With high aspirations, the /Red Union/ wants to keep convincing more communities to start working with them. One way they're exploring that, beyond taking advantage of displacements caused by their own disasters, is through propaganda. To facilitate the creation of that propaganda, they're building a settlement in the southern part of /Arathel County/, that they're calling /Rosebanks/. There, artists will be able to share backdrops for painting portraits, screenwriters can coordinate their plays so they aren't competing to tell the same contemporary events, and so on.
+
+   This town is where the people who will become our adventurers will come, from all around the /GAME/, looking for work to do.
+
+   I'm not sure what adventures will come from this, but I like this as the idea for the setting!
+
+   
+
+* Media log
+
+* News log
+** Cherokee Nation pledges to build domestic PPE production
+   :LOGBOOK:
+   - Note taken on [2021-01-03 Sun 13:39] \\
+     The [[file:../cherokee_nation.org][Cherokee Nation]] has pledged to expand domestic production of [[file:../healthcare.org][healthcare]] [[file:../ppe.org][PPE]], after feeling they were "at the mercy" of the [[file:../united-states-of-america.org][U.S.A.]].
+   :END:
+   - Source :: https://www.nativebusinessmag.com/cherokee-nation-views-covid-as-impetus-to-increase-domestic-production/
+** Silver Stallion Bike Shop builds cycling community in Navajo Nation
+   :LOGBOOK:
+   - Note taken on [2020-12-30 Wed 14:19] \\
+     The [[file:../silver_stallion_bike_shop.org][Silver Stallion Bike Shop]] out of [[file:../gallup_new_mexico_u_s_a.org][Gallup, New Mexico, U.S.A.]], is doing multiple things to expand [[file:../bicycle.org][bicycle]] access within the [[file:../dine.org][Diné]].
+   :END:
+
+   - Source :: https://www.bicycling.com/culture/a35050033/silver-stallion-bike-shop-navajo-nation-cycling-community/
+
+** Opinions on Deb Haaland's nomination for Secretary of the Interior
+   :LOGBOOK:
+   - Note taken on [2020-12-30 Wed 13:42] \\
+     [[https://www.nytimes.com/2020/12/29/opinion/deb-haaland-interior.html][This piece]] by [[file:../claudia_lawrence.org][Claudia Lawrence]] for the [[file:../new_york_times.org][New York Times]] about [[file:../deb_haaland.org][Deb Haaland]]'s recent nomination for the [[file:../secretary_of_the_interior.org][Secretary of the Interior]] is a good rendition of the opinion I hold, and a lot of other [[file:../native_american.org][Native]] folk I talk to. And [[file:../nick_estes.org][Nick Estes]] wrote [[https://theintercept.com/2020/12/29/deb-haaland-interior-native/][a different piece]] that provides a lot more historical context.
+
+     
+   :END:
+   
+   - Source :: https://www.nytimes.com/2020/12/29/opinion/deb-haaland-interior.html
+   - Source :: https://theintercept.com/2020/12/29/deb-haaland-interior-native/
+
+** Indigenous Podcast discusses colonial labels for people
+   :LOGBOOK:
+   - Note taken on [2021-01-03 Sun 13:41] \\
+     A discussion between a [[file:../guachichil.org][Guachichil]] [[file:../person.org][person]] and an [[file:../indigenous2.org][indigenous]] person from [[file:../peru.org][Peru]] about [[file:../colonialism.org][colonial]] labels for people, and how to reclaim and identify with your [[file:../indigenous.org][Indigenous]] heritage if you want.
+   :END:
+   - Source :: https://www.youtube.com/watch?v=HlABwFNSaGM
+** Mexican federal government seeks Armed Forces administration of some transportation
+   :LOGBOOK:
+   - Note taken on [2021-01-03 Sun 13:44] \\
+     From the [[file:../chiapas_support_commitee.org][Chiapas Support Committee]], news that the [[file:../mexico.org][Mexico]] federal government wants to place their Armed Forces in charge of a federally-organized company that will perform adminstration and operations for three sections of the [[file:../maya_train.org][Maya Train]], as well as the airports in [[file:../chetumal.org][Chetumal]], [[file:../palenque.org][Palenque]], and [[file:../tulum.org][Tulum]], as well as the [[file:../felipe_angeles_international_airport.org][Felipe Angeles International Airport]].
+   :END:
+   - Source :: https://chiapas-support.org/2020/12/30/lopez-obrador-wants-the-armed-forces-to-operate-the-maya-train/
+* Reposts
+* Supplements

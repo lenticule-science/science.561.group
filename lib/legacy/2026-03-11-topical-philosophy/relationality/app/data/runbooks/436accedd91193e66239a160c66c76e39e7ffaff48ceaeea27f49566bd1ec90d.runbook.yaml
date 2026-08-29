@@ -1,0 +1,23 @@
+name: sheafification_evidence
+inputs:
+- role: presheaf_site
+  kind: presheaf_site
+- role: presheaf
+  kind: presheaf
+outputs:
+- role: sheafification_evidence
+  kind: sheafification_evidence
+steps:
+- name: sheafification_evidence
+  operator: sheafification_evidence
+  step_index: 0
+  inputs:
+  - role: presheaf_site
+    kind: presheaf_site
+  - role: presheaf
+    kind: presheaf
+  outputs:
+  - role: sheafification_evidence
+    kind: sheafification_evidence
+id: 436accedd91193e66239a160c66c76e39e7ffaff48ceaeea27f49566bd1ec90d
+

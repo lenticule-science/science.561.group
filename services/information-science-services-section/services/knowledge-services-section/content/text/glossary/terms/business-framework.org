@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       d0340d44-4584-4e50-8f04-dc1ace59890f
+:END:
+#+title: business framework
+#+date: [2025-09-27 Sat 09:58]
+

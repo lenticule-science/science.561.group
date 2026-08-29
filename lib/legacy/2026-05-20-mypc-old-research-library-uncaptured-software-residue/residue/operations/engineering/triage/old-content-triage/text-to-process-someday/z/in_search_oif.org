@@ -1,0 +1,36 @@
+#+title: In Search Of
+#+begin_head
+#+ghe_schema: record-0.1.2
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-22 Tue 21:06]
+#+roam_alias: ISO
+#+end_head
+
+This record is a directory of gifts I’m currently looking for: gifts of stuff, labor, and information. I appreciate any consideration you give to this list. To coordinate an exchange, please e-mail me at emsenn@emsenn.net.
+
+        Labor
+        Materials
+
+Labor
+Digital
+
+    MUD developer(s): I am interested in collaborating with friends on a text-based online service I am creating.
+
+Physical
+
+    Soil cultivation: When it hasn’t rained for a few days, there’s usually compost here to be moved around.\
+    Basket weaving: I have extra splints. If you want them, please explain how they’d be used and I’ll consider it.
+
+Materials
+
+    Beads, limit: none. Making and decorating things. Commercial objects with beads are also accepted and recycled.
+    Blankets, limit: 20. Distribution to local community.
+    Cotton pads. For medical hygiene.
+    Fabric, limit: 500yd. Making apparel.
+    Ferro rods, limit 1000. Distributing for firestarting.
+    Money, limit: none. Securing necessities not provided through gifts. Online donations may be made through my Ko-fi profile.
+    Scale, limit: one. I’d like a scale to be able to let folk at the Cottenboro GAZ get themselves weighed as part of wellness checks.
+    Toilet paper rolls, limit: 120. To be distribution to the local community.
+    Toilet paper tubes, limit: 1800. Germinating and sprouting plants with taproots before planting out.
+    Yarn, limit: 8000yd. Making textiles and apparel.

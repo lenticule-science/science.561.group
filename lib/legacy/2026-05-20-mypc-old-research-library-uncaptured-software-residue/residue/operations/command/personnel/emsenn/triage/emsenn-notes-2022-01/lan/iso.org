@@ -1,0 +1,32 @@
+#+title: In Search Of
+
+This page is an incomplete listing of things I'm looking for. If you've got something not on this list you think I might be interested in, reach out!
+
+The list is divided into three sections:
+
+- [[#urgent][Urgent]] :: Things I need rather promptly: If I don't get these things soon, I'll have to try and buy them. Gross!
+- [[#needed][Needed]] :: Things I need, but not with any urgency.
+- [[#wishlist][Wishlist]] :: Things that would be cool to have, but I don't need.
+
+#+toc: headline 1 local
+
+* Urgent
+:PROPERTIES:
+:CUSTOM_ID: urgent
+:END:
+* Needed
+:PROPERTIES:
+:CUSTOM_ID: needed
+:END:
+- Mirrors :: For building solar concentrators.
+- Toilet and paper towel paper tubes :: Just the cardstock inner tube; for using as starter pots in gardening.
+- Adhesives :: Masking tape, wood glue, epoxy; if it sticks stuff together, I probably need it.
+- Caulk :: Any sort, but esp. heat-resistant silicon caulk.
+- Metal mesh :: Hardware cloth, chickenwire, whatever
+- Sealable plastic bags :: Sandwich bags, quart-sized, gallon-sized.
+* Wishlist
+:PROPERTIES:
+:CUSTOM_ID: wishlist
+:END:
+- Non-electric coffee machine :: French press, filterless pour-over, whatever.
+- Oil press/extruder :: For crushing nuts and seeds into oil,

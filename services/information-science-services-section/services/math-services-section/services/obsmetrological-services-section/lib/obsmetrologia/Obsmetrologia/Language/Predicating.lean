@@ -1,0 +1,16 @@
+import Obsmetrologia.Language.Predicating.Cell
+import Obsmetrologia.Language.Predicating.CellPartition
+import Obsmetrologia.Language.Predicating.Claim
+import Obsmetrologia.Language.Predicating.CurryHowardLambek
+import Obsmetrologia.Language.Predicating.Equality
+import Obsmetrologia.Language.Predicating.Fibration
+import Obsmetrologia.Language.Predicating.Guarded
+import Obsmetrologia.Language.Predicating.Hyperdoctrine
+import Obsmetrologia.Language.Predicating.HyperdoctrineDual
+import Obsmetrologia.Language.Predicating.Morphism
+import Obsmetrologia.Language.Predicating.Quantifying
+import Obsmetrologia.Language.Predicating.SiblingSeed
+import Obsmetrologia.Language.Predicating.Syntax
+import Obsmetrologia.Language.Predicating.Temporal
+import Obsmetrologia.Language.Predicating.TheoryRelativeIdeal
+import Obsmetrologia.Language.Predicating.YonedaArrowsFirst

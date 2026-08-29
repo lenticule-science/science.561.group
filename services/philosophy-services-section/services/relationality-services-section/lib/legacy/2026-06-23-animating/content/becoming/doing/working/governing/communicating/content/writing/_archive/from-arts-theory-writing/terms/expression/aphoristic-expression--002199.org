@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       d1049516-49bb-4e61-940f-18c744936b8f
+:public:   true
+:resource-description: (([[id:edaef069-c68d-46aa-a970-d3cb7fe3165c][resource type]] . [[id:fcbd45c3-0100-4891-b1b1-fe45a8bdf829][expression]]) ([[id:2d79d4ba-8d36-4714-869c-081e8d40d24f][field]] . [[id:39354b6f-8fa5-4715-a628-1a1e9c5f1caf][aphorism]]))
+:END:
+#+title: aphoristic expression
+#+date: [2025-09-03 Wed 21:30]
+#+index: aphorism!aphoristic expression

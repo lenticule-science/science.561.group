@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2019-06-08 Sat 12:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Looking at How I Organize a Document</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="emsenn" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Looking at How I Organize a Document</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgac06d1f">Introduction</a>
+<ul>
+<li><a href="#looking-at-how-i-organize-a-document">Looking at How I Organize a Document</a>
+<ul>
+<li><a href="#org21868ac">Overview</a></li>
+<li><a href="#org8aee35d">Document Project Layout</a></li>
+<li><a href="#org726bca9">The Source File</a>
+<ul>
+<li><a href="#org8d5fdab">Front Matter</a></li>
+<li><a href="#orgd3894ba">Introduction Section</a></li>
+<li><a href="#orgaea8713">Document Contents</a></li>
+<li><a href="#orgecc1381">Supplements Section</a></li>
+</ul>
+</li>
+<li><a href="#org6462b8b">Conclusion</a></li>
+<li><a href="#org1134a85">Index</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgac06d1f" class="outline-2">
+<h2 id="orgac06d1f">Introduction</h2>
+<div class="outline-text-2" id="text-orgac06d1f">
+<p>
+This document was created by me, emsenn, in the United States. To the extent possible under law, I have waived all copyright and related or neighboring rights to this document. This document was created for the benefit of the public. If you're viewing it on a remote server, you're encouraged to download your own copy. To learn how you can support me, see <a href="https://emsenn.net/donate">https://emsenn.net/donate</a>.
+</p>
+</div>
+<div id="outline-container-org729f594" class="outline-3">
+<h3 id="looking-at-how-i-organize-a-document">Looking at How I Organize a Document</h3>
+<div class="outline-text-3" id="text-looking-at-how-i-organize-a-document">
+</div>
+<div id="outline-container-org21868ac" class="outline-4">
+<h4 id="org21868ac">Overview</h4>
+<div class="outline-text-4" id="text-org21868ac">
+<p>
+In this document I'm going to explain how I'm organizing my documents
+these days. By documents, I mean written texts - stories, essays,
+posts like this one, but also, software. Software might not seem like
+a document, but I use the <i>literate programming</i> paradigm when I work
+with a computer, so I write my software as snippets of code inside
+longer essays.
+</p>
+
+<p>
+I'll use my <i>Brutstrap</i> project as an example in this document. It's
+a relatively simple <i>CSS</i> theme I made, so should be an opportunity to
+demonstrate a lot of things without its content getting in the way.
+</p>
+</div>
+</div>
+<div id="outline-container-org8aee35d" class="outline-4">
+<h4 id="org8aee35d">Document Project Layout</h4>
+<div class="outline-text-4" id="text-org8aee35d">
+<p>
+Each document exists in its own directory on my computer, under the
+<code>~/org/projects/</code> directory. It's called <code>projects</code> because within
+<i>Org-mode</i>, the name for collections of files published together is a
+"project," so each document exists as a "document project."
+Brutstrap's "identifier" is <code>brutstrap-css</code> - that means it's at
+<code>~/org/projects/brutstrap-css/</code>.
+</p>
+
+<p>
+The root of that directory contains the document in various formats
+(<i>HTML</i>, plain-text, <i>Markdown</i>, and others), as well as a <code>README.md</code>
+and a <code>media-package.json</code>.
+</p>
+
+<p>
+There's also a subdirectory, <code>src/</code>, which contains an <code>index.org</code> and
+subsubdirectory, <code>build/</code> which has in it an <code>index.html</code> and
+<code>brutstrap.css</code>.
+</p>
+
+<p>
+The only file I edit by hand is <code>src/index.org</code>, which is an
+<i>Org-mode</i> text file. All the other files are created by using
+<i>Org-mode</i> features on that file.
+</p>
+</div>
+</div>
+<div id="outline-container-org726bca9" class="outline-4">
+<h4 id="org726bca9">The Source File</h4>
+<div class="outline-text-4" id="text-org726bca9">
+<p>
+Here's a walkthrough of what's in that file. I'll break it up into the
+front-matter, introduction, document contents, and supplements.
+</p>
+</div>
+<div id="outline-container-org8d5fdab" class="outline-5">
+<h5 id="org8d5fdab">Front Matter</h5>
+<div class="outline-text-5" id="text-org8d5fdab">
+<div class="org-src-container">
+<pre class="src src-org"><span style="color: #8e8e8e;">#+TITLE:</span> <span style="color: #999999; font-size: 144%; font-weight: bold;">Brutstrap</span>
+<span style="color: #8e8e8e;">#+AUTHOR:</span> <span style="color: #868686;">emsenn</span>
+<span style="color: #ababab;">#+EXPORT_FILE_NAME: ../brutstrap</span>
+<span style="color: #ababab;">#+MACRO: document-type CSS theme</span>
+<span style="color: #ababab;">#+HTML_HEAD: &lt;link rel="stylesheet" type="text/css" href="./src/build/brutstrap.css"&gt;</span>
+<span style="color: #8b4513;">{{{document-brief}}}</span>
+<span style="color: #ababab;">#+TOC: headlines local 4</span>
+</pre>
+</div>
+
+<p>
+Let's look at this line by line:
+</p>
+
+<ul class="org-ul">
+<li><code>#+TITLE: Brutstrap</code>
+<ul class="org-ul">
+<li>This sets the document's title. Fairly self-evident. It's used
+when exporting the document, and also available as a <i>macro</i>:
+<code>{{{title}}}</code>. I use <i>Org-mode macros</i> a fair amount, they're a
+way to quickly insert pre-assigned text.</li>
+</ul></li>
+<li><code>#+AUTHOR: emsenn</code>
+<ul class="org-ul">
+<li>This set's the document's author. Works similar to title.</li>
+</ul></li>
+<li><code>#+EXPORT_FILE_NAME: ../brutstrap</code>
+<ul class="org-ul">
+<li>This tells <i>Org-mode</i> where to put exported copies of the file.
+When I tell <i>Org-mode</i> to export <code>./src/index.org</code> as <i>HTML</i>,
+it'll export to <code>./brutstrap.html</code>.</li>
+</ul></li>
+<li><code>#+MACRO: document-type CSS theme</code>
+<ul class="org-ul">
+<li>This sets the <code>document-type</code> macro, which is used by some other
+macros to say what sort of document this is - in this example,
+it's a "CSS theme". Due to how it's used, the document-type is
+assumed to be a singular noun.</li>
+</ul></li>
+<li><code>#+HTML_HEAD: &lt;link /&gt;</code>
+<ul class="org-ul">
+<li>I cut out the specifics, but this line tells <i>Org-mode</i>: when
+exporting as an HTML file, link to <code>./src/build/brutstrap.css</code> as
+a stylesheet.</li>
+</ul></li>
+<li><code>{{{document-brief}}}</code>
+<ul class="org-ul">
+<li><p>
+This is a macro I've defined in my <i>Org-mode</i> configuration, so
+it's available in all my <i>Org-mode</i> files. Here's what it's
+defined as:
+</p>
+<div class="org-src-container">
+<pre class="src src-org">"<span style="color: #8b4513;">{{{title}}}</span>" is a <span style="color: #8b4513;">{{{document-type}}}</span> created by <span style="color: #8b4513;">{{{author}}}</span>.
+</pre>
+</div>
+<p>
+As you can see, it makes use of the macros defined above.
+</p></li>
+</ul></li>
+<li><code>#+TOC: headlines local 4</code>
+<ul class="org-ul">
+<li>This generates a table of contents linking to sections and through
+three depths of subsections. (1+3=4)</li>
+</ul></li>
+</ul>
+
+<p>
+Past here, the document is divided into three sections: an
+"Introduction," the document contents itself (here, "Brutstrap,") and
+"Supplements."
+</p>
+</div>
+</div>
+<div id="outline-container-orgd3894ba" class="outline-5">
+<h5 id="orgd3894ba">Introduction Section</h5>
+<div class="outline-text-5" id="text-orgd3894ba">
+<p>
+Here's the Introduction:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-org"><span style="color: #686868;">* Introduction</span>
+<span style="color: #999999;">  :PROPERTIES:</span>
+  <span style="color: #999999;">:CUSTOM_ID:</span> introduction
+<span style="color: #999999;">  :END:</span>
+<span style="color: #8b4513;">{{{document-is-draft}}}</span>
+
+In this document I explain...
+
+<span style="color: #8b4513;">{{{document-eli}}}</span>
+</pre>
+</div>
+
+<p>
+Again, line by line:
+</p>
+
+<ul class="org-ul">
+<li><code>* Introduction</code> declares the start of what <i>Org-mode</i> calls a
+<i>subtree</i>, but what normal people would call a "section". How many
+asterisks lead determine the depth of the section - <code>**** Pumpkin</code>
+means that "Pumpkin" is a subsubsubsection.</li>
+<li><code>:PROPERTIES:</code> declares the start of what <i>Org-mode</i> calls a
+<i>drawer</i>, which is container for data associated with an element of
+the document - in this case, the Introduction section.</li>
+<li><code>:CUSTOM_ID:</code> declares what the identifier for this section should
+be, when it's exported. It's a part of the <code>PROPERTIES</code> drawer that
+was just opened. This is the name that anchor links in an <i>HTML</i>
+export will point to, for example. If this isn't set, <i>Org-mode</i>
+will generate an identifier automatically, something like
+<code>org3507c8b</code>.</li>
+<li><code>:END:</code> declares the close of the <code>PROPERTIES</code> drawer.</li>
+<li><p>
+<code>{{{document-is-draft}}}</code> is another macro from my <i>Org-mode</i>
+configuration:
+</p>
+<div class="org-src-container">
+<pre class="src src-org">This <span style="color: #8b4513;">{{{document-type}}}</span> is a <span style="font-style: italic;">/draft/</span>: it is unfinished and that
+should be considered when reading it. Special attention should be paid
+to text marked DRAFT, EDIT, or TK.
+</pre>
+</div></li>
+<li><code>In this document I explain...</code> is an abridged version of the
+paragraph that's actually there, that explains the broad strokes of
+what <i>Brutstrap</i> is, how it's meant to look, and so on.</li>
+<li><p>
+=This document was created by me, emsenn, in the United States. To the extent possible under law, I have waived all copyright and related or neighboring rights to this document. This document was created for the benefit of the public. If you're viewing it on a remote server, you're encouraged to download your own copy. To learn how you can support me, see <a href="https://emsenn.net/donate">https://emsenn.net/donate</a>. is yet another macro from my <i>Org-mode</i>
+configuration. This one is a bit unusual, it's set to
+<code>{{{document-eli-$1}}}</code>. <i>Org-mode</i> passes text after the macro
+name, between paratheses, as arguments, separated by commas. So,
+<code>{{{document-eli(default)}}}</code> translates to
+<code>{{{document-eli-default}}}</code>. Why don't I just do
+<code>{{{document-eli-default}}}</code> in the source file then? This way I can
+change how macro is rendered across all files, just by updating the
+<code>document-eli</code> macro. So, what does <code>document-eli-default</code> expand
+out to?
+</p>
+<div class="org-src-container">
+<pre class="src src-org">This <span style="color: #8b4513;">{{{document-type}}}</span> was created by me, emsenn, in the United
+States. To the extent possible under law, I have waived all copyright
+and related or neighboring rights to this document. This document was
+created for the benefit of the public. If you're viewing it on a
+remote server, you're encouraged to download your own copy. To learn
+how you can support me, see
+<span style="color: #686868;"><a href="https://emsenn.net/donate">https://emsenn.net/donate</a></span>.
+</pre>
+</div>
+<p>
+Oh - it might help to say what "eli" is short for: <i>editorial and
+licensing information</i>: a declaration of the author and the rights
+assocated with the document. I assume I'm the author, and that the
+rights are "released into the public domain."
+</p></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgaea8713" class="outline-5">
+<h5 id="orgaea8713">Document Contents</h5>
+<div class="outline-text-5" id="text-orgaea8713">
+<p>
+That's it for the "Introduction". The "Brutstrap" section contains the
+<i>Brutstrap</i> theme itself - explaining how I <i>literately program</i> CSS
+is beyond the scope of this document. In short, using <i>Babel</i>, I'm
+able to write short blocks of CSS, and extract them out to
+<code>./src/build/brutstrap.css</code>.
+</p>
+</div>
+</div>
+<div id="outline-container-orgecc1381" class="outline-5">
+<h5 id="orgecc1381">Supplements Section</h5>
+<div class="outline-text-5" id="text-orgecc1381">
+<p>
+The "Supplements" section contains four subsections:
+</p>
+<ul class="org-ul">
+<li>"Example Texts"
+This section contains two subsections:
+<ul class="org-ul">
+<li>"Complete Stylesheet," uses <i>Org-mode's</i> inclusion feature to pull
+in <code>./src/build/brustrap.css</code> - which is itself extracted from the
+"Brutstrap" section above.</li>
+<li>"Demonstration HTML," is a source block that, again using <i>Babel</i>,
+is written to <code>./src/build/index.html</code></li>
+</ul></li>
+<li>"Index"
+<ul class="org-ul">
+<li><p>
+This section uses <i>Org-mode's</i> dictionary list feature to present
+a list of proper terms mentioned in the document. Here's an
+excerpt from <i>Brutstrap's</i> index:
+</p>
+<div class="org-src-container">
+<pre class="src src-org">- <span style="font-weight: bold;">brutalism ::</span> <span style="color: #8b4513;">{{{ref(brutalism)}}}</span>
+- <span style="font-weight: bold;">Brutstrap ::</span> <span style="color: #8b4513;">{{{ref(brutstrap)}}}</span>
+- <span style="font-weight: bold;">CSS ::</span> <span style="color: #8b4513;">{{{ref(css)}}}</span>
+- <span style="font-weight: bold;">HTML ::</span> <span style="color: #8b4513;">{{{ref(html)}}}</span>
+</pre>
+</div>
+<p>
+This introduces a new macro: <code>ref</code>. This is, like the others,
+defined in my <i>Org-mode</i> configuration, and is: <code>{{{define($1)}}}
+    {{{source($1)}}}</code>. <code>define</code> is defined as <code>{{{$1-definition}}}</code>
+and <code>source</code> is defined as <code>{{{$1-source}}}.</code>. For each term, then,
+I have two macros, for example for Brutalism I have
+<code>brutalism-definition</code> and <code>brutalism-source</code>. The definition is
+simple a sentence defining the term, and the source is... a call
+to yet another macro:
+<code>{{{source-link(https://en.wikipedia.org/wiki/Brutalist_architecture)}}}</code>.
+</p>
+
+<p>
+<code>source-link</code> is defined as <code>See [[$1][$1]]</code> which is <i>Org-mode</i>
+formatting for a link whose anchor text is the URI it directs to.
+</p>
+
+<p>
+So, the final entry for <i>brutalism</i> would be:
+</p>
+<div class="org-src-container">
+<pre class="src src-org">- <span style="font-weight: bold;">Brutalism ::</span> A style exaggerating the pragmatic functionality
+               present in modernist design. See
+               <span style="color: #686868;"><a href="https://en.wikipedia.org/wiki/Brutalist_architecture">https://en.wikipedia.org/wiki/Brutalist_architecture</a></span>.
+</pre>
+</div></li>
+</ul></li>
+<li>"Media Package"</li>
+</ul>
+<p>
+This section contains a <i>JSON</i> source block which implements a
+specification I'm developing for what I'm calling a <i>media package</i>,
+which is a manifest of information about a piece of media content.
+</p>
+
+<p>
+Explaining that is beyond the scope of this document, in part because
+it's in development, so I'll just show the <i>JSON</i> here:
+</p>
+<div class="org-src-container">
+<pre class="src src-json"><span style="color: #747474;">"brutstrap-css"</span>: {
+    name: <span style="color: #8e8e8e;">"Brutstrap"</span>,
+    creator: <span style="color: #8e8e8e;">"emsenn"</span>,
+    license: <span style="color: #8e8e8e;">"CC0"</span>,
+    languages: [<span style="color: #8e8e8e;">"en_US"</span>,<span style="color: #8e8e8e;">"CSS"</span>,<span style="color: #8e8e8e;">"HTML"</span>],
+    versions: {
+        <span style="color: #747474;">"current"</span>: {
+            <span style="color: #747474;">"sourcehut"</span>: {
+                <span style="color: #747474;">"location"</span>: <span style="color: #8e8e8e;">"https://git.sr.ht/~emsenn/brutstrap-css/blob/master/"</span>,
+                <span style="color: #747474;">"formats"</span>: [<span style="color: #8e8e8e;">"html"</span>,<span style="color: #8e8e8e;">"md"</span>,<span style="color: #8e8e8e;">"pdf"</span>,<span style="color: #8e8e8e;">"tex"</span>,<span style="color: #8e8e8e;">"txt"</span>]
+            }
+        }
+    }
+}
+</pre>
+</div>
+<ul class="org-ul">
+<li><p>
+"README"
+</p>
+<ul class="org-ul">
+<li><p>
+The "README" section is used to generate a <code>README.md</code> at the root
+of the project, as that file is often used by <i>Git forges</i> to
+generate the project's "homepage" on the forge. It contains three
+thing:
+</p>
+<ul class="org-ul">
+<li>It sets the <code>PROPERTY</code> of <code>EXPORT_FILE_NAME</code> to</li>
+</ul>
+<p>
+<code>../README</code>, so that when this section is exported, as say
+<i>Markdown</i>, it will be exported to <code>./README.md</code>.
+</p>
+<ul class="org-ul">
+<li>Then, it has the line <code>*** {{{title}}}</code> which creates a
+subsection under itself using the document's title.</li>
+<li>Then, it includes the "Introduction" section from
+<code>./src/index.org</code> - itself - but only the contents, not the
+title.</li>
+</ul></li>
+</ul>
+<p>
+Here's what the section looks like in the source file:
+</p>
+<div class="org-src-container">
+<pre class="src src-org"><span style="color: #747474;">*** README</span>
+<span style="color: #999999;">    :PROPERTIES:</span>
+    <span style="color: #999999;">:EXPORT_FILE_NAME:</span> ../README
+    <span style="color: #999999;">:CUSTOM_ID:</span> readme
+<span style="color: #999999;">    :END:</span>
+<span style="color: #ababab;">**** </span><span style="color: #8b4513;">{{{title}}}</span>
+<span style="color: #ababab;">#+INCLUDE: "./index.org::#introduction" :only-contents t</span>
+</pre>
+</div>
+
+<p>
+And here's what <code>./README.md</code> looks like - with the paragraphs cut
+down.
+</p>
+<div class="org-src-container">
+<pre class="src src-markdown"><span style="color: #ababab;"># </span><span style="color: #686868; font-weight: bold;">Brutstrap</span>
+
+This CSS theme is a <span style="color: #ababab;">*</span><span style="font-style: italic;">draft</span><span style="color: #ababab;">*</span>...
+
+In this document I explain...
+
+This CSS theme was created by...
+</pre>
+</div></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org6462b8b" class="outline-4">
+<h4 id="org6462b8b">Conclusion</h4>
+<div class="outline-text-4" id="text-org6462b8b">
+<p>
+And so that's it, how I manage a document as a project, exporting it
+to various different formats, maintaining a README, and so on, by just
+editing one file for each document, one at <code>./src/index.org</code>.
+</p>
+</div>
+</div>
+<div id="outline-container-org1134a85" class="outline-4">
+<h4 id="org1134a85">Index</h4>
+<div class="outline-text-4" id="text-org1134a85">
+<dl class="org-dl">
+<dt>brutalism</dt><dd>A style exaggerating the pragmatic functionality present in modernist design. See <a href="https://en.wikipedia.org/wiki/Brutalist_architecture">https://en.wikipedia.org/wiki/Brutalist_architecture</a></dd>
+<dt>Brutstrap</dt><dd></dd>
+
+<dt>CSS</dt><dd></dd>
+
+<dt>JSON</dt><dd>A human-readable data format. See <a href="https://json.org/">https://json.org/</a>.</dd>
+<dt>literate programming</dt><dd></dd>
+
+<dt>Markdown</dt><dd>A way of adding style notation to plain text. <a href="https://daringfireball.net/projects/markdown/">https://daringfireball.net/projects/markdown/</a></dd>
+<dt>Org-mode Babel</dt><dd>A software tool for using code integrated into <i>Org-mode</i> documents. See <a href="https://orgmode.org/worg/org-contrib/babel/intro.html">https://orgmode.org/worg/org-contrib/babel/intro.html</a></dd>
+<dt>Org-mode macros</dt><dd>A way to replace text in a source document when it is exported to a rendered document. See <a href="https://orgmode.org/manual/Macro-replacement.html">https://orgmode.org/manual/Macro-replacement.html</a></dd>
+<dt>Org-mode</dt><dd>A way of formatting plain data inside text documents. See <a href="https://orgmode.org/">https://orgmode.org/</a>  or #OrgMode.</dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: emsenn</p>
+<p class="date">Created: 2019-06-08 Sat 12:40</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

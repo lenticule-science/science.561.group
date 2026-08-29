@@ -1,0 +1,22 @@
+#+title: Emacsen
+#+description: emsenn's personal emacsen.
+
+* Configuration
+** User
+*** Email
+    #+name: email
+    #+begin_src elisp
+      (setq user-mail-address "emsenn@emsenn.net")
+    #+end_src
+** Emacs
+*** Save Behavior
+*** Startup Behavior
+*** Interface Behavior
+** Org-mode
+*** Org-mode Capture Templates
+**** Ledger Capture Templates
+**** Operations Capture Templates
+*** Org-mode Projects
+** Org-roam
+*** Org-roam Capture Templates
+* Components

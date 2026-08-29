@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       7de2a6e1-000d-4392-a356-7ba8091f411a
+:END:
+#+title: worker
+#+date: [2025-09-02 Tue 09:23]
+

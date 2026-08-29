@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       99e714e9-d17f-4bf6-8eef-2929f8cacd6d
+:public:   true
+:form:     [[id:32e00173-c695-4bb6-b0d2-9dc17fec128b][act]]
+:END:
+#+title: standardizing
+#+date: [2025-08-25 Mon 08:42]
+

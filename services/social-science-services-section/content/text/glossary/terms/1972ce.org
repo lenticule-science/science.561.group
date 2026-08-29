@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       b6dacaae-629a-40e6-93d5-76f70a6f4ae7
+:ROAM_ALIASES: 1972
+:public:   true
+:form:     [[id:d150eaba-d55f-401c-8487-6f2f84d16ace][year]]
+:END:
+#+title: 1972ce
+#+date: [2025-08-25 Mon 09:14]
+

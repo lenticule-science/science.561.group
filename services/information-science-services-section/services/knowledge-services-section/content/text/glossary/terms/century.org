@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       4f9f64d1-9b2f-4de9-b4ab-c42b67c0dcc8
+:END:
+#+title: century
+#+date: [2025-08-29 Fri 22:01]
+

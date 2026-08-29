@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       c6b98315-c6d6-4c4e-a1f9-4166e06a6f03
+:END:
+#+title: 18N60
+#+date: [2025-10-09 Thu 12:31]
+

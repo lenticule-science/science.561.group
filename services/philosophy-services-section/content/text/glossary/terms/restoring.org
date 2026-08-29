@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       171c38fc-8e40-40ea-a2b1-b0ad866385a6
+:END:
+#+title: restoring
+#+date: [2025-08-31 Sun 08:10]
+

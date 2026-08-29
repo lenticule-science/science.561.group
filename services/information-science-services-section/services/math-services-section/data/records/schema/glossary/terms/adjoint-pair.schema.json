@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "glossary/terms/adjoint-pair",
+  "title": "adjoint-pair",
+  "description": "A pair of functors F : C → D (left) and G : D → C (right) with a natural bijection Hom_D(F a, b) ≅ Hom_C(a, G b), equivalently a unit and counit natural transformation satisfying the triangle identities. The left adjoint is free/extending, the right adjoint forgetful/restricting. Instances: ∃ ⊣ ∀ (Lawvere), free ⊣ forgetful, ⊗ ⊣ ⊸, Galois connections, residuation.",
+  "type": "object",
+  "required": [
+    "left-adjoint",
+    "right-adjoint",
+    "unit",
+    "counit",
+    "hom-bijection"
+  ],
+  "properties": {
+    "left-adjoint": {
+      "description": "the free/extending functor F : C → D",
+      "$ref": "./functor.schema.json"
+    },
+    "right-adjoint": {
+      "description": "the forgetful/restricting functor G : D → C",
+      "$ref": "./functor.schema.json"
+    },
+    "unit": {
+      "description": "η : 1_C ⇒ G ∘ F",
+      "$ref": "./natural-transformation.schema.json"
+    },
+    "counit": {
+      "description": "ε : F ∘ G ⇒ 1_D",
+      "$ref": "./natural-transformation.schema.json"
+    },
+    "hom-bijection": {
+      "description": "Hom_D(F a, b) ≅ Hom_C(a, G b), natural in a and b",
+      "const": true
+    }
+  }
+}

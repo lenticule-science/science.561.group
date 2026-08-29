@@ -1,0 +1,20 @@
+#+title: Black Yield Institute
+#+begin_head
+#+ghe_schema: record-0.1.3
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-24 Thu 11:53]
+#+end_head
+
+#+name: definition
+The */Black Yield Institute/* is a group in [[file:baltimore_maryland.org][Baltimore, Maryland]].
+
+#toc: headlines 2
+* Intrododuction
+* Black Yield Institute
+* Supplements
+** Record history
+   :LOGBOOK:
+   - Note taken on [2020-12-24 Thu 11:53] \\
+     Created
+   :END:

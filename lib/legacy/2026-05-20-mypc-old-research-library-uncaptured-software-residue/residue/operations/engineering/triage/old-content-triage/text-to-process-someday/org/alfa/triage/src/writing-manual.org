@@ -1,0 +1,256 @@
+#+SETUPFILE: ./default-setup.inc
+#+title: Writing Manual
+#+EXPORT_FILE_NAME: ../pub/writing-manual
+#+MACRO: document-type manual
+#+MACRO: define-boilerplate pieces of text inserted into other documents
+#+MACRO: define-larder-inventory a record of the foods and other supplies in my kitchen.
+#+INDEX: manual!writing!"Writing Manual"
+#+INDEX: writing!"Writing Manual"
+#+TOC: headlines 1 local
+* Introduction
+  :PROPERTIES:
+  :CUSTOM_ID: document-introduction
+  :END:
+#+INCLUDE: "./plates.inc::draft"
+This document is a technical explanation of the mechanical procedures
+I use to accomplish the task of */writing/*: arranging words to
+communicate a specific meaning. It is, in some ways, a prequel to my
+[[file:./publishing-manual.org][/Publishing Manual/]], and a companion to my [[file:./style-manual.org][/Style Manual/]].
+#+INCLUDE: "./plates.inc::default-eli"
+* Writing Manual
+  :PROPERTIES:
+  :EXPORT_OPTIONS: document-contents
+  :END:
+#+TOC: headlines 2 local
+** Requirements
+*** List of Software
+#+TOC: headlines 1 local
+**** Emacs
+**** Org-mode
+**** Flyspell
+**** Whatever that  thing is I was using to check for vague words and stuff.
+** Anatomy of a Document
+*** Document Types
+    :PROPERTIES:
+    :CUSTOM_ID: document-types
+    :END:
+** Operations
+*** System Setup and Maintenance
+#+TOC: headlines 1 local
+**** Installing Emacs and Org-Mode
+
+*** Document Creation
+#+TOC: headlines 1 local
+**** Create a Basic Document
+     :PROPERTIES:
+     :ALT_TITLE: Basic Document
+     :END:
+**** Create a Larder Inventory
+     :PROPERTIES:
+     :CUSTOM_ID: create-a-larder-inventory
+     :ALT_TITLE: Larder Inventory
+     :END:
+This procedure explains how to create a */larder inventory/*: {{{define-larder-inventory}}}
+*** Document Maintenance
+#+TOC: headlines 1 local
+**** Maintain a Larder Inventory
+     :PROPERTIES:
+     :CUSTOM_ID: maintain-a-larder-inventory
+     :ALT_TITLE: Larder Inventory
+     :END:
+***** Introduction
+This procedure explains how to maintain an */larder inventory/*:
+{{{define-larder-inventory}}}. It assumes you have created a larder
+inventory: see [[file:./style-manual::#create-a-larder-inventory]["Create a Larder Inventory"]].
+** Resources
+*** Boilerplate
+    :PROPERTIES:
+    :header-args: :tangle ./plates.inc
+    :END:
+*/Boilerplate/* are {{{define-boilerplate}}}.
+
+I save my boilerplate in a file named =plates.inc= that lives at the
+project's root. To use a piece of =boilerplate=, I add the line
+=#+INCLUDE: "./plates.inc::boilerplate"=, where =boilerplate= the name
+of the plate, which follows =#+BEGIN:=
+
+Some pieces of boilerplate rely on macros
+#+TOC: headlines 1 local
+**** Abandonware
+#+BEGIN_SRC org
+  ,#+BEGIN: abandonware
+  This document represents something that is /abandoned/: no longer
+  being maintained. If you would like to take ownership of the project,
+  please send emsenn an [[mailto:emsenn@emsenn.net][email]].
+  ,#+END
+#+END_SRC
+**** Acknowledgements
+#+BEGIN_SRC org
+  ,#+BEGIN: acknowledgements
+  This {{{document-type}}} was directly inspired or supported by the
+  work of others. Please see the [[#supplements-acknowledgements]["Acknowledgements"]] section.
+  ,#+END:
+#+END_SRC
+**** Assumes Knowledge
+#+BEGIN_SRC org
+  ,#+BEGIN: assumes-knowledge
+  This {{{document-type}}} assumes the reader is knows
+  {{{assumed-knowledge}}}.
+  ,#+END
+#+END_SRC
+**** Contemporary
+#+BEGIN_SRC org
+  ,#+BEGIN: contemporary
+  This {{{document-type}}} was written when the events it discusses were
+  contemporary. Information in it may now be incorrect, and opinions
+  presented may be out of date.
+  ,#+END
+#+END_SRC
+**** Correspondence
+#+BEGIN_SRC org
+  ,#+BEGIN: correspondence
+  This document was written as a piece of correspondence to a certain
+  person or community, and should be read in that light.
+  ,#+END
+#+END_SRC
+**** Credits
+#+BEGIN_SRC org
+  ,#+BEGIN: credits
+  This {{{document-type}}} was the work of more than one person; please
+  see the[[#supplements-credits][ "Credits"]] supplement.
+  ,#+END
+#+END_SRC
+**** Editorial and License Information
+#+BEGIN_SRC org
+  ,#+BEGIN: default-eli
+  This {{{document-type}}} was written by me, [[https://emsenn.net][emsenn]], and is released
+  for the benefit of the public under the terms included in the
+  [[#supplements-license]["License"]] supplement. It was made possible with financial
+  [[#supplements-contribute][contributions]] from humans like you. Please direct comments to my
+  [[https://lists.sr.ht/~emsenn/public-inbox/][public inbox]] or, if necessary, my [[mailto:emsenn@emsenn.net][personal email]].
+  ,#+END
+#+END_SRC
+**** Difficult Subject
+#+BEGIN_SRC org
+  ,#+BEGIN: difficult-subject
+  This {{{document-type}}} tackles a subject which is */difficult/*: the
+  language used to approach may have flaws, and may not accurately
+  convey my intentions. It is suggested you assume I wrote the piece
+  honestly and with sincere intentions.
+  ,#+END
+#+END_SRC
+**** Draft
+#+BEGIN_SRC org
+  ,#+BEGIN: draft
+  This {{{document-type}}} is a /draft/: it is considered incomplete and
+  there are plans to add or change information contained in it.
+  ,#+END
+#+END_SRC
+**** Literate Programming
+#+BEGIN_SRC org
+  ,#+BEGIN: literate-programming
+  This {{{document-type}}} is implemented using the /literate programming/
+  paradigm. The "software" being presented is included as sections of
+  code, within a longer piece of prose which explains the code's purpose
+  and usage. For a more complete explanation of my implementation of the
+  paradigm, see [[file:./style-manual.org::#literate-programming]["Literate Programming"]] in my [[file:./style-manual.org][/Style Manual/]].
+  ,#+END
+#+END_SRC
+**** Living Document
+#+BEGIN_SRC org
+  ,#+BEGIN: living-document
+  This {{{document-type}}} is a */living/* /document/: it is subject to continued
+  change and amendment.
+  ,#+END
+#+END_SRC
+**** MIT License
+#+BEGIN_SRC org
+  ,#+BEGIN: mit-license
+  Copyright {{{time(%Y)}}} {{{author}}}
+
+  Permission is hereby granted, free of charge, to any person obtaining
+  a copy of this document and associated media files (the
+  "Document"), to deal in the Doftware without restriction, including
+  without limitation the rights to use, copy, modify, merge, publish,
+  distribute, sublicense, and/or sell copies of the Doftware, and to
+  permit persons to whom the Doftware is furnished to do so, subject to
+  the following conditions:
+
+  The above copyright notice and this permission notice shall be
+  included in all copies or substantial portions of the Software.
+
+  ,#+HTML: <strong>
+  The Document is provided "as is," without warranty of any kind,
+  express or implied, including but not limited to the warranties of
+  merchantability, fitness for a particular purpose, or
+  noninfringement. In no event shall the authors or copyright holders
+  be liable for any claim, damages or other liability, whether in an
+  action of contract, tort, or otherwise, arising from, out of or in
+  connection with the Document or the use or other dealings in the
+  Document.
+  ,#+HTML: </strong>
+  ,#+END
+#+END_SRC
+**** Personal Contribute
+#+BEGIN_SRC org
+  ,#+BEGIN: personal-contribute
+  This document was made possible with contributions from humans like
+  you. Thank you! I currently accept contributions through the following
+  platforms:
+
+  -   One-time through...
+      -   [[https://www.paypal.me/emsenn][Paypal]]
+      -   [[https://ko-fi.com/emsenn][Ko-fi]]
+  -   Recurring through...
+      -   [[https://liberapay.com/emsenn/donate][Liberapay]]
+
+  If there is another service through which you'd like to contribute,
+  please [[mailto:emsenn@emsenn.net][send an email.]] */Please note/* that in accordance with my
+  [[file:./personal-directives.org::#003][personal directives #003]] and [[file:./personal-directives.org::#018][#018]], I release all useful information I
+  create for free, so financial contributions do not entitle you to
+  access to any "exclusive content."
+  ,#+END
+#+END_SRC
+**** Personal Marketing
+#+BEGIN_SRC org
+  ,#+BEGIN: personal-marketing
+  This {{{document-type}}} was written to persuade people to purchase
+  something from {{{author}}}. It certainly contains a bias as a result
+  of that, which readers should maintain an awareness of.
+  ,#+END
+#+END_SRC
+**** Personal Reference
+#+BEGIN_SRC org
+  ,#+BEGIN: personal-reference
+  This document was written primarily as a /personal reference/ for the
+  author. It may assume an uncommon familiarity with the topics and
+  context being discussed. If you are trying to use this document and
+  find a part unhelpful, please submit an email to the author's
+  {{{public-inbox}}}.
+  ,#+END
+#+END_SRC
+**** Use Org
+#+BEGIN_SRC org
+  ,#+BEGIN: use-org
+  ,#+END
+#+END_SRC
+**** Voluntary
+#+BEGIN_SRC org
+  ,#+BEGIN: voluntary
+  This document was written voluntary for the benefit of the public. It
+  was made possible with [[#supplements-contribute][contributions]] from humans like you. Thank you.
+  ,#+END
+#+END_SRC
+*** Setup Files
+* Supplements
+#+TOC: headlines local 1
+** Contribute
+   :PROPERTIES:
+   :CUSTOM_ID: supplements-contribute
+   :END:
+#+INCLUDE: "./plates.inc::personal-contribute"
+** License
+   :PROPERTIES:
+   :CUSTOM_ID: supplements-license
+   :END:
+#+INCLUDE: "./plates.inc::mit-license"

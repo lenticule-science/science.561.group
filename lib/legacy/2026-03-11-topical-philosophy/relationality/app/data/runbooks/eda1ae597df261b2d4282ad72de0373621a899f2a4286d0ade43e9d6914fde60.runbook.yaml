@@ -1,0 +1,68 @@
+id: eda1ae597df261b2d4282ad72de0373621a899f2a4286d0ade43e9d6914fde60
+name: system_interaction
+steps:
+- input_kinds:
+  - observation_carrier
+  - trace
+  operator: observe
+  output_kinds:
+  - trace
+  step_index: 0
+- input_kinds:
+  - profile
+  - measurement_frame
+  - regime
+  - phase_space
+  operator: nucleate_profile
+  output_kinds:
+  - profile
+  step_index: 1
+- input_kinds:
+  - profile
+  - regime
+  - phase_space
+  operator: flow_profile
+  output_kinds:
+  - profile
+  step_index: 2
+- input_kinds:
+  - observation_carrier
+  - measurement_frame
+  - phase_space
+  - regime
+  - trace
+  operator: flow_measure_step
+  output_kinds:
+  - observation_carrier
+  - observation_equivalence_evidence
+  step_index: 3
+- input_kinds:
+  - observation_carrier
+  - measurement_frame
+  operator: normalize_observation
+  output_kinds:
+  - observation_carrier
+  - observation_equivalence_evidence
+  step_index: 4
+- input_kinds:
+  - observation_carrier
+  - measurement_frame
+  operator: stabilize_observation
+  output_kinds:
+  - observation_carrier
+  - observation_equivalence_evidence
+  step_index: 5
+- input_kinds:
+  - profile
+  - phase_space
+  - regime
+  - trace
+  operator: fix_flow_nucleus
+  output_kinds:
+  - fixed_invariants
+  - judgment_laws_evidence
+  - flow_laws_evidence
+  - nucleus_laws_evidence
+  - commutation_evidence
+  - trace_evidence
+  step_index: 6

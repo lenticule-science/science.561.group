@@ -1,0 +1,44 @@
+---
+title: "Bawu (巴乌)"
+description: "Chinese free-reed instrument with horizontal playing position"
+defines: bawu
+aliases: ["Chinese free reed flute", "横笛", "巴乌"]
+date-created: 2026-05-12
+---
+
+# Bawu (巴乌)
+
+The bawu is a traditional Chinese free-reed instrument played horizontally, producing a clarinet-like timbre.
+
+## Physical Characteristics
+
+- **Material**: Bamboo or wood
+- **Structure**: Vertical pipe played horizontally (similar to clarinet holding position) with metal reed
+- **Reed**: Single metal free reed (similar to harmonica reed) mounted laterally
+- **Finger Holes**: Typically six finger holes and sometimes thumb hole
+- **Length**: Varies from ~30cm to over 60cm depending on register
+
+## Musical Properties
+
+- **Sound Production**: Free reed vibration (air flowing through reed causes it to vibrate)
+- **Timbre**: Clarinet-like, mellow, expressive, capable of bending notes
+- **Range**: Approximately 2 octaves
+- **Techniques**: Finger sliding, tonguing, vibrato, circular breathing, pitch bending, growling, flutter tonguing
+
+## Musical Role
+
+- **Ensemble**: Melody or color instrument in folk ensembles and contemporary compositions
+- **Solo**: Expressive solo repertoire, often used for lyrical, vocal-like melodies
+- **Genres**: Folk, contemporary, world music fusion, film scores
+
+## Predication Theory Perspective
+
+From a predication theory viewpoint:
+- **Subject**: The bawu instrument
+- **Predicate**: "produces sound with free reed vibration in horizontal position"
+- **Object**: Musical tone with specific timbral qualities (clarinet-like, expressive)
+- **Fiber**: All bawu tones sharing the free-reed horizontal predicate form a fiber
+- **Modulation**: Finger position, breath pressure, embouchure, and vocal tract shaping create predication space
+- **Expressive Capacity**: Particularly known for vocal-like expression and pitch bending capabilities similar to human voice
+
+See also: [dizi](./dizi.md), [xiao](./xiao.md), [sheng](./sheng.md), [suona](./suona.md), [guanzi](./guanzi.md), [hulusi](./hulusi.md)

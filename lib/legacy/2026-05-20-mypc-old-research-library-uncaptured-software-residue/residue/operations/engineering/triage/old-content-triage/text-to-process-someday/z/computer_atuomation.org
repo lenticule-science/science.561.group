@@ -1,0 +1,6 @@
+#+title: computer automation
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-19 Sat 20:13]
+#+roam_tags: term
+A */computer automation/* is a way of [[file:automating.org][automating]] an action with a [[file:computer.org][computer]].

@@ -1,0 +1,39 @@
+---
+title: Normalize Time
+id: normalize-time
+role: operator
+status: someday
+derived_from: computer/function/evaluate-step
+inputs:
+- computer/library/type/calendar-event
+- computer/library/type/timezone-profile
+outputs:
+- computer/library/type/calendar-event
+- computer/type/computer-failure
+transformation:
+- return
+- value
+proof_refs: []
+---
+
+
+# Normalize Time
+
+Applies timezone/offset rules to calendar events, yielding normalized instants.
+
+## Definition
+- Inputs: [Calendar Event](../../../triage/triage/ideas-for-concept-computers/productivity/structure/calendar-event.md),
+  [Timezone Profile](../../../triage/triage/ideas-for-concept-computers/productivity/structure/timezone-profile.md).
+- Outputs: normalised [Calendar Event](../../../triage/triage/ideas-for-concept-computers/productivity/structure/calendar-event.md) or
+  [Computer Failure](./computer-failure.md).
+- Behaviour: rewrites event instants/durations using timezone rules; fails on
+  invalid/ambiguous transitions.
+
+## Invariants
+- Deterministic normalization for given rules; no ambiguous offsets accepted.
+- No state mutation on failure.
+
+## Proof
+- Derived from: [Computer Evaluate Step](./evaluate-step.md).
+- Shows that: applying timezone rules via computer evaluation yields normalized
+  events or failures without bypassing kernel semantics.

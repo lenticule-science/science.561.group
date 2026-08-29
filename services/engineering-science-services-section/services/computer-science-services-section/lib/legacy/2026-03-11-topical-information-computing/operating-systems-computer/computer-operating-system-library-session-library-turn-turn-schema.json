@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/system/library/operating-system/library/computer-operating-system/library/session/library/turn/turn.schema.json",
+  "title": "Turn",
+  "description": "JSON Schema for a turn — one round of inference in a session. Captures the user message, the assistant response, the tool calls between, model identity, timings, token counts, and stop reason. Specializes thing via allOf; identity is the turn-id (a kebab-case name).",
+  "allOf": [{ "$ref": "https://research-notes.561.group/hacking/library/predication-notes/object/library/thing/thing.schema.json" }],
+  "type": "object",
+  "required": ["name", "session", "inference-model", "started-at"],
+  "properties": {
+    "session": {
+      "description": "The session-id this turn belongs to.",
+      "$dynamicRef": "#name-shape"
+    },
+    "inference-model": {
+      "description": "The model identifier (e.g., claude-opus-4-7, claude-sonnet-4-6).",
+      "type": "string",
+      "minLength": 1
+    },
+    "started-at": {
+      "description": "ISO-8601 timestamp when the turn opened (user message received).",
+      "type": "string",
+      "format": "date-time"
+    },
+    "ended-at": {
+      "description": "ISO-8601 timestamp when the turn closed (assistant response complete).",
+      "type": "string",
+      "format": "date-time"
+    },
+    "user-message": {
+      "description": "The user's input for this turn. Full text or content-address.",
+      "type": ["string", "object"]
+    },
+    "assistant-message": {
+      "description": "The assistant's response for this turn. Full text or content-address.",
+      "type": ["string", "object"]
+    },
+    "tool-calls": {
+      "description": "Ordered list of tool calls the assistant made during this turn.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["tool", "started-at"],
+        "properties": {
+          "tool": { "type": "string", "minLength": 1 },
+          "input": {},
+          "output": {},
+          "started-at": { "type": "string", "format": "date-time" },
+          "ended-at": { "type": "string", "format": "date-time" },
+          "duration-ms": { "type": "integer", "minimum": 0 },
+          "ok": { "type": "boolean" },
+          "error": { "type": "string" }
+        }
+      }
+    },
+    "input-tokens": {
+      "description": "Input token count for the assistant response, if reported by the inference-model.",
+      "type": "integer",
+      "minimum": 0
+    },
+    "output-tokens": {
+      "description": "Output token count for the assistant response, if reported.",
+      "type": "integer",
+      "minimum": 0
+    },
+    "cache-read-tokens": {
+      "description": "Cache-read token count, if reported.",
+      "type": "integer",
+      "minimum": 0
+    },
+    "cache-creation-tokens": {
+      "description": "Cache-creation token count, if reported.",
+      "type": "integer",
+      "minimum": 0
+    },
+    "stop-reason": {
+      "description": "The reason the inference-model stopped: end_turn, max_tokens, stop_sequence, tool_use, refusal, etc.",
+      "type": "string"
+    }
+  }
+}

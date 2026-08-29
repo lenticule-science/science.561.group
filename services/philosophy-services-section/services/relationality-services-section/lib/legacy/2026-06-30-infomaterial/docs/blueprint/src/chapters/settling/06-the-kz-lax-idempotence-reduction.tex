@@ -1,0 +1,52 @@
+\section{The KZ / lax-idempotence projection}
+
+This section records claim nodes and dependency edges.
+
+\begin{theorem}[KZ $\Leftrightarrow$ strict, on a poset]\label{thm:kz-iff-strict}\lean{Infomaterial.Charge.kz_iff_strict}\leanok\uses{thm:kle-refl, thm:kle-antisymm, thm:iter-step-le}
+For a monotone-inflationary $f$, the Kock--Z\"oberlein inequality
+$f(f\,a) \le_k f\,a$ (lax-idempotence) is \emph{equivalent} to strict
+idempotence $f(f\,a) = f\,a$, because $\le_k$ is antisymmetric. This is the
+order-theoretic reduction of ``lax-idempotence $+$ Scott-continuity $\Rightarrow$
+strict idempotence'': collapse happens exactly where the order is thin.
+\end{theorem}
+\begin{theorem}[The orbit is monotone in its index]\label{thm:iter-le-add}\lean{Infomaterial.Charge.iter_le_add}\leanok\uses{thm:kle-refl, thm:iter-step-le, thm:kle-trans}
+$\texttt{iter}\,f\,m\,v \le_k \texttt{iter}\,f\,(m+d)\,v$ for every $d$: later
+iterates dominate earlier ones in the knowledge order, by induction on $d$
+through transitivity.
+\end{theorem}
+\begin{theorem}[No non-trivial periodic orbits]\label{thm:no-periodic-orbits}\lean{Infomaterial.Charge.no_periodic_orbits}\leanok\uses{thm:closure-operator, thm:iter-le-add, thm:kle-antisymm}
+A closure has only period-$1$ orbits: if $\texttt{iter}\,c.\texttt{op}\,k\,v = v$
+for some $k \ge 1$, then $c.\texttt{op}\,v = v$ already. The orbit ascends and
+cannot cycle --- the dynamical face of lax-idempotence.
+\end{theorem}
+\begin{proposition}[The settling-endofunctor $F_U = \mathrm{Cl} \vee_k u$]\label{thm:settle-step}\lean{Infomaterial.Charge.settleStep}\leanok\uses{thm:closure-operator, thm:le-joink}
+$\texttt{settleStep}\,c\,u\,v = c.\texttt{op}\,v \vee_k u$: one settling step
+saturates under the closure (the inferential engine), then knowledge-joins the
+external increment $u$ (the input). This is $F_U(v) = \mathrm{Cl}(v) \vee_k
+u_\tau$ of the module docstring.
+\end{proposition}
+\begin{theorem}[The settling step is inflationary]\label{thm:settle-step-infl}\lean{Infomaterial.Charge.settleStep_infl}\leanok\uses{thm:settle-step, thm:kle-trans}
+$v \le_k \texttt{settleStep}\,c\,u\,v$: each step only adds knowledge, by
+composing the closure's inflation with the join's upper bound.
+\end{theorem}
+\begin{theorem}[Settling terminates]\label{thm:settle-step-settles}\lean{Infomaterial.Charge.settleStep_settles}\leanok\uses{thm:settle-step-infl, thm:settles-by-three}
+The settling-endofunctor reaches its fixed point in $\le 3$ steps:
+$\texttt{iter}\,(\texttt{settleStep}\,c\,u)\,3\,v =
+\texttt{iter}\,(\texttt{settleStep}\,c\,u)\,4\,v$ --- the strict-finite regime
+applied to the full engine, closure plus increment.
+\end{theorem}
+\begin{theorem}[The KZ unit $\eta$]\label{thm:kz-unit}\lean{Infomaterial.Charge.unit}\leanok\uses{thm:closure-operator}
+The unit of the closure monad is inclusion into closure: $v \le_k c.\texttt{op}\,v$,
+i.e.\ inflation. This is $\eta$ of the KZ $2$-monad.
+\end{theorem}
+\begin{theorem}[The KZ multiplication $\mu$]\label{thm:kz-mult}\lean{Infomaterial.Charge.mult}\leanok\uses{thm:closure-operator, thm:op-fixed}
+The multiplication is nested-closure collapse, $c.\texttt{op}(c.\texttt{op}\,v) =
+c.\texttt{op}\,v$ --- idempotence as the strict $\mu$.
+\end{theorem}
+\begin{theorem}[The Kelly--Lack K1 counit triangle]\label{thm:counit-triangle}\lean{Infomaterial.Charge.counit_triangle}\leanok\uses{thm:kz-unit, thm:kz-mult}
+The K1 counit triangle $\mu \cdot \eta_{\mathrm{Cl}} = 1_{\mathrm{Cl}}$ holds: at
+$c\,v$ the composite $c\,v \xrightarrow{\eta} c(c\,v) \xrightarrow{\mu} c\,v$ is
+the identity, which is exactly idempotence at $c\,v$. This is the property
+witnessing that $\mathrm{Cl}$-algebra structure is a property, not data ---
+settling's lax-idempotence, made strict by the thinness of $\le_k$.
+\end{theorem}

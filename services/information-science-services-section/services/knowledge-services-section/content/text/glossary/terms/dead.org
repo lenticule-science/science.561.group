@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       0591c1b8-3a0e-493b-9263-483c9144899d
+:END:
+#+title: dead
+#+date: [2025-09-01 Mon 08:57]
+

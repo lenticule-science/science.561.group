@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       e453e190-ddbe-4ba1-89e8-e7511e4467d8
+:END:
+#+title: exegesis
+#+date: [2025-08-27 Wed 07:54]
+

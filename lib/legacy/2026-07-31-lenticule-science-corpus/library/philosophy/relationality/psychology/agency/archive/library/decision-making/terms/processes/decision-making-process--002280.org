@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       65769a82-2ae8-4736-837d-2c923d1d17a1
+:node-relations: (([[id:4a53867b-afa3-437b-b979-385597e0e616][process]] . [[id:0d814a71-662a-4a31-b9ee-c9a47f2a4861][descision-making]]))
+:END:
+#+title: decision-making process
+#+date: [2025-08-31 Sun 17:18]
+

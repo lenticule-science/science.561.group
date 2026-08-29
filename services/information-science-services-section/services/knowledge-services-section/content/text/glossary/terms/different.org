@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       fb02ced9-96f4-4143-91e9-5030b27bb02a
+:END:
+#+title: different
+#+date: [2025-08-30 Sat 05:24]
+

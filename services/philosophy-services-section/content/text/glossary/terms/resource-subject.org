@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       4c49de98-ca61-465c-8fbd-752d8eea6173
+:END:
+#+title: resource subject
+#+date: [2025-10-04 Sat 21:31]
+

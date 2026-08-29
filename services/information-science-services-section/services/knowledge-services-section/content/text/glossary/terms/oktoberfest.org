@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       585dd8af-d449-430d-9d48-71e70f670b37
+:form:     [[id:1cd4f29f-a247-4c00-9028-b6852e1f34be][special day]]
+:public:   true
+:END:
+#+title: Oktoberfest
+#+date: [2025-09-20 Sat 08:30]
+#+index: Oktoberfest
+

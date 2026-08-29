@@ -1,0 +1,22 @@
+---
+title: "Agent-Native Marketplace"
+description: "A labour marketplace designed from the outset around autonomous agents as the intended sellers, using verification-gated escrow rather than human merge review — as distinct from a human-facing venue, such as an open-source bounty board, that merely tolerates or is exploited by agent submissions."
+defines: Agent-Native Marketplace
+domain: economics
+requires: [verification-gated-escrow, solicited-work]
+component-of: two-sided-market
+governed-by: cold-start-merge-rate
+date-created: 2026-08-27
+date-modified: 2026-08-27
+---
+
+An agent-native marketplace is a labour marketplace built around the premise that its sellers are autonomous agents, not humans who happen to permit agent participation as an edge case.
+The design consequence is [verification-gated escrow](./verification-gated-escrow.md): a task is posted with a price and a machine-checkable completion criterion attached at the same time, escrow is funded at posting, and payment releases automatically when the criterion is met — a payment loop an agent can evaluate and act on entirely on its own, with no human reviewer's discretionary merge decision anywhere in the critical path.
+This is the structural opposite of the general-purpose, human-facing code-bounty board documented as collapsed in [the 2026 agent-labour-markets survey](../../../../../../../../../../data/records/2026-08-27-agent-labour-markets/agent-labour-market-survey.md): Algora fell from 1,470 settled bounties across 2025 to 2 in a trailing 30-day window, and an independent measurement found zero of its open listings passed a basic eligibility-and-freshness filter, while 73.2% of what remained open sat in repositories carrying a [bounty honeypot](./bounty-honeypot.md).
+
+The same survey documents six entrants building specifically to this pattern: **Bounty** (`trybounty.ai`, a16z-backed, reported ~$1,000,000 seed, 10% platform commission), **BountyBook** (USDC on Base settled via [x402](./x402.md)), **Superteam Earn** (`earn.superteam.fun`, explicit `AGENT_ONLY` listings, USDC/Solana — independently confirmed live and carrying agent-targeted listing text by direct read on 2026-08-28), **NEAR AI Agent Market** (`app.near.ai`, reported ~1,400 active agents on USDC escrow, confirmed live 2026-08-28), **Circle Agent Marketplace** (USDC nanopayments, reported May 2026 launch), and **Skyfire** (agentic commerce with a KYAPay agent-identity layer).
+As a market structure, this is a [two-sided market](./two-sided-market.md) with agents as one side and task-posters (human or corporate buyers, and in principle other agents) as the other, matched through a discovery layer analogous to the one the [x402 Bazaar](./x402-bazaar.md) provides on the buy side of machine-payable APIs.
+
+The [cold-start-merge-rate](./cold-start-merge-rate.md) comparison is the evidence this category matters rather than merely existing: Cognition reports its Devin agent at a 67% pull-request merge rate on solicited client work, against a merge rate close to 0% for the same broad agent class submitting cold into an open bounty pool — the same underlying capability, converting almost entirely differently depending on whether the venue is agent-native (price and verification agreed up front, escrow committed) or an open pool with no prior commitment from anyone to pay.
+A separate channel corroborates the same point from the enterprise side: Moderne, SoftServe, and Capgemini's CAALM sell the same class of bulk automated code work — framework migration, technical-debt remediation — as sales-motion engagements priced at $15,000–$100,000, rather than as marketplace listings; the budget for this labour exists, it has simply not, in that channel, taken a self-serve marketplace shape.
+The general claim this term is built to carry: **an agent-native marketplace is not merely a bounty board that happens to allow agents — it is a market whose payment mechanism, discovery layer, and matching structure were built around exactly the failure modes an open, human-facing pool exhibits**, and the difference in outcome between the two venue types, for the same underlying agent capability, is the [labour-markets survey](../../../../../../../../../../data/records/2026-08-27-agent-labour-markets/agent-labour-market-survey.md)'s central finding.

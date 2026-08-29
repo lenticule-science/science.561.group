@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       7c01d90e-ea3d-497c-aa75-48be408b8ed4
+:END:
+#+title: student
+#+date: [2025-10-07 Tue 00:05]
+

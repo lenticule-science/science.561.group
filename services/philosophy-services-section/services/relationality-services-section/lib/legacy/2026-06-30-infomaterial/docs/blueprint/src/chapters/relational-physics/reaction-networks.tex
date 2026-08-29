@@ -1,0 +1,77 @@
+\section{Reaction networks}
+
+The reaction-network fiber records the counted, consumable regime above
+monotone closure.  Its organizing projection is not a new primitive: a reaction
+state is a finite resource state, firing is the nonmonotone counted step,
+Datalog is the support projection obtained by forgetting counts, and the
+thermodynamic/rate results are projections of that same carrier.
+
+\begin{proposition}[Reaction networks are counted resource systems]\label{thm:reaction-network-carrier}\lean{Infomaterial.Relational.Reaction.Network}\leanok\uses{thm:closure-rule-lfp, thm:lambek-biresiduation}
+A reaction network is a finite roster of counted states and consumable
+reactions.  It sits above monotone closure: counts can be spent, so the
+resource carrier is not itself an inflationary closure system.
+\end{proposition}
+
+\begin{theorem}[Balanced firing conserves mass]\label{thm:reaction-mass-conserved}\lean{Infomaterial.Relational.Reaction.mass_conserved}\leanok\uses{thm:reaction-network-carrier}
+For a balanced reaction, one enabled firing preserves the total count over the
+chosen finite roster.
+\end{theorem}
+
+\begin{theorem}[Reaction firing is not monotone]\label{thm:reaction-fire-not-monotone}\lean{Infomaterial.Relational.Reaction.fire_not_monotone}\leanok\uses{thm:reaction-network-carrier, thm:closure-rule-lfp}
+Reaction firing can consume a resource.  This is the formal obstruction to
+identifying counted reaction dynamics with an inflationary Datalog closure.
+\end{theorem}
+
+\begin{theorem}[Catalysis is fixed under firing]\label{thm:reaction-catalyst-fixed}\lean{Infomaterial.Relational.Reaction.catalyst_is_fixed}\leanok\uses{thm:reaction-network-carrier}
+A catalyst that appears with the same count on the reactant and product sides
+is unchanged by the firing it enables.
+\end{theorem}
+
+\begin{theorem}[Datalog is the affine support projection]\label{thm:reaction-support-projection}\lean{Infomaterial.Relational.Reaction.support_fire_le_datalog}\leanok\uses{thm:reaction-fire-not-monotone, thm:closure-rule-lfp}
+After forgetting counts to supports, an enabled reaction lands below the
+monotone Datalog immediate-consequence step.  The missing support is exactly
+the consumption the affine support projection cannot record.
+\end{theorem}
+
+\begin{theorem}[Reachability is the settled trajectory relation]\label{thm:reaction-reachability}\lean{Infomaterial.Relational.Reaction.reach_trans}\leanok\uses{thm:reaction-network-carrier}
+The reaction reachability relation is closed under composition of firing
+steps, giving the incidence carrier for trajectories through the counted
+resource system.
+\end{theorem}
+
+\begin{theorem}[Mass is invariant along balanced reachability]\label{thm:reaction-reach-conserves-mass}\lean{Infomaterial.Relational.Reaction.reach_conserves_mass}\leanok\uses{thm:reaction-reachability, thm:reaction-mass-conserved}
+If every reaction in the network is balanced, total mass is preserved along
+every reachable trajectory.
+\end{theorem}
+
+\begin{theorem}[Catabolic trajectories descend in free energy]\label{thm:reaction-catabolic-descent}\lean{Infomaterial.Relational.Reaction.catabolic_descent}\leanok\uses{thm:reaction-reachability, thm:reaction-fire-not-monotone}
+For a catabolic network, step-counted reachability carries a natural-valued
+Lyapunov bound: each firing spends at least one unit of total count.
+\end{theorem}
+
+\begin{theorem}[Mass-action propensities are nonnegative]\label{thm:reaction-propensity-nonnegative}\lean{Infomaterial.Relational.Reaction.propensity_nonneg}\leanok\uses{thm:euler-e-internal-real, thm:reaction-network-carrier}
+With nonnegative concentrations and rate constants, a mass-action propensity is
+nonnegative in the internal real carrier.
+\end{theorem}
+
+\begin{theorem}[Equilibria are Euler fixed points]\label{thm:reaction-mass-action-equilibrium}\lean{Infomaterial.Relational.Reaction.equilibrium_is_fixed}\leanok\uses{thm:reaction-propensity-nonnegative, thm:real-stochastic-interval-value-category}
+A concentration at which the rate field vanishes is fixed by every discrete
+Euler step of that field.
+\end{theorem}
+
+\begin{theorem}[Detailed balance is zero net flux]\label{thm:reaction-detailed-balance}\lean{Infomaterial.Relational.Reaction.detailedBalance_iff_netFlux_zero}\leanok\uses{thm:reaction-mass-action-equilibrium}
+For a reversible reaction pair, equality of forward and backward propensities
+is equivalent to zero net flux.
+\end{theorem}
+
+\begin{theorem}[Reaction entropy relaxes under balancing]\label{thm:reaction-entropy-relaxes}\lean{Infomaterial.Relational.Reaction.entropyH_le_of_relaxes}\leanok\uses{thm:finite-boltzmann-collision-lfp, thm:reaction-reach-conserves-mass}
+When the occupation multiset of a firing trajectory relaxes by finite
+Boltzmann exchanges, the reaction-state \(H\) functional does not increase.
+\end{theorem}
+
+\begin{theorem}[Continuum reaction chemistry frontier]\label{thm:reaction-continuum-frontier}\notready\uses{thm:reaction-support-projection, thm:reaction-catabolic-descent, thm:reaction-detailed-balance, thm:reaction-entropy-relaxes}
+The formalized reaction sector is still finite and discrete.  The continuum
+reaction-chemistry frontier needs measure, stochastic-process, smooth ODE/PDE,
+and analytic convergence layers before these finite projections become a full
+chemical kinetics theory.
+\end{theorem}

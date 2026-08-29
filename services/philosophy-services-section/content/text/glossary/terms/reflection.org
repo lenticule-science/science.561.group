@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       5d60878e-172c-4213-82a3-1d00f6dfd04a
+:END:
+#+title: reflection
+#+date: [2025-08-29 Fri 11:08]
+

@@ -1,0 +1,32 @@
+.DS_Store
+Thumbs.db
+
+# Python caches and virtualenvs
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+
+# Nested git repos (absorbed via subtree — excluded from initial commit)
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.nox/
+.tox/
+*.egg-info/
+.eggs/
+
+# SQLite runtime files
+*.db
+*.db-shm
+*.db-wal
+
+# MkDocs output
+
+# Node / Astro output
+node_modules/
+.tooling/
+
+.tmp.driveupload/

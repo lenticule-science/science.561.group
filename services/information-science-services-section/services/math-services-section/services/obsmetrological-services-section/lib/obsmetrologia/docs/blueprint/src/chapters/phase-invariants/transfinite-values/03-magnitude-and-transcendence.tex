@@ -1,0 +1,52 @@
+\subsection{Magnitude, metallization, and transcendence}
+
+\begin{theorem}[Support is the Maslov dequantization; magnitude is what it forgets]\label{thm:support-dequantization}\lean{Obsmetrologia.Probability.Dequantization.countingDequantization}\leanok\uses{thm:value-category, thm:real-stochastic-interval-value-category, thm:measure-is-valuation}
+The support map $\mathrm{supp}(n)=[n>0]$ is an exact semiring homomorphism from the counting semiring
+$(\mathbb N,+,\times)$ to the Boolean semiring $(\mathbb B,\vee,\wedge)$ ($+\mapsto\vee$,
+$\times\mapsto\wedge$): the discrete $\hbar\to0$ / $p\to\infty$ Maslov dequantization. It forgets
+magnitude and keeps existence/order --- the $p=\infty$ face where curvature's \emph{structure} lives
+(\cref{thm:residual-coincidence-iff-commutative}), against the $p=1$ face where its \emph{magnitude}
+(\cref{thm:sym-trace-is-ricci-scalar}) does.
+\end{theorem}
+
+\begin{theorem}[The non-divisibility witness, and the unification conjecture]\label{thm:divisibility-witness-unification}\notready\uses{thm:support-dequantization, thm:sym-mobius-trace-two-action, thm:collatz-residue-gap}
+\emph{(Open frontier --- conjecture, not formalized; one half is near-tautological.)} The support map
+is blind to divisibility (\texttt{supp\_blind\_to\_dvd}, green), so ``$D\nmid C$'' is $p=1$ data it
+discards. The \emph{green} ``curvature $\neq 0 \iff$ the witness fires'' is, at the boundary values
+$\pm1,0$, essentially the tautology $D\nmid 1$ (always) / $D\mid 0$ (always) --- it should not be read
+as deep. The \textbf{conjecture}: the curvature non-vanishing witness, a settling's descent depth, and
+the numerical-semigroup residue gap (\cref{thm:collatz-residue-gap}) are \emph{one} $p=1$ invariant. Each
+instance is provable; their \emph{identity} is unproven and, on present evidence, may be only a shared
+shape (a non-vanishing/non-divisibility obstruction) rather than a single object. Red --- and a
+candidate to \emph{demote further} rather than promote.
+\end{theorem}
+
+\begin{theorem}[Metallic power expansion and the algebraic/transcendental dichotomy]\label{thm:metallic-power-dichotomy}\lean{Obsmetrologia.AperiodicOrder.Tiling.metallization_dichotomy}\leanok\uses{thm:stepn-growth-degree}
+Real \emph{algebraic} powers re-enter magnitude in finite, graded form: for the metallic double
+$z=n+\sqrt{n^2+4}$ ($z^2=2nz+4$), $z^k = P_k z + Q_k$ with integer $(P_k,Q_k)$
+(\texttt{metallic\_power\_expansion}), the unimodular Cassini $\pm1$ its witness. The dichotomy bundles
+the three regime signatures: metallic finite expansion ($\kappa<\omega$) versus the non-idempotent
+chromatic step and the summable-but-never-finite exponential series ($\kappa=\omega$). The
+``can't-be-metallized'' cut is the algebraic/transcendental cut.
+\end{theorem}
+
+\begin{theorem}[Euler's number as an internal real]\label{thm:euler-e-internal-real}\lean{Obsmetrologia.Real.Internal.expSeq_summable}\leanok\uses{thm:metallic-power-dichotomy, thm:internal-real-completeness}
+The transcendental discharge: $e=\sum 1/n!$ is a genuine constructive real. The factorial halving
+$2\cdot\mathrm{term}(i{+}1)\le\mathrm{term}(i)$ ($\Leftrightarrow 2\cdot i! \le (i{+}1)!$) telescopes to
+the summable tail $\sum_{n=N}^{N+M-1}1/n! \le 2/N!$ (\texttt{expSeq\_summable}), giving the explicit
+Cauchy modulus $2(k{+}1)$ from which $e:\texttt{RReal}$ is assembled (\texttt{Real.Internal.e}),
+axiom-clean. A single transcendental \emph{point} at $\kappa=\omega$.
+\end{theorem}
+
+\begin{theorem}[The continuous real exponent and the power-mean deformation]\label{thm:continuous-exponent-deformation}\notready\uses{thm:euler-e-internal-real, thm:metallic-power-dichotomy}
+\emph{(Open frontier --- stated, not formalized.)} The remaining magnitude frontier: a general real
+power $a^p$ for \emph{real} exponent $p$ (equivalently $\exp$ as a function, not $e$ as a value), and
+with it the continuous power-mean / $L^p$ deformation interpolating the $p=\infty$ Boolean face and the
+$p=1$ counting face as one map. The metallic lens gives algebraic powers at discrete bases and integer
+grades; $e$ gives one transcendental point; the \emph{continuum of exponents} --- which needs $\exp$ /
+real power series as a total function, absent from the core --- is missing. Red until a constructive
+real-exponentiation layer is built. This is where the Ricci magnitude of
+\cref{thm:sym-trace-is-ricci-scalar} is recovered, if anywhere.
+\end{theorem}
+
+% --- The intrinsic geometry: proper time (longest chain), order+number=geometry ---

@@ -1,0 +1,38 @@
+:PROPERTIES:
+:ID:       e66f4700-dcf0-4e33-bb59-4846bce261b8
+:date-created: [2025-07-23 Wed 16:44]
+:instantiates: [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]
+:author:   [[id:40cbaad9-af3c-4573-b356-ae116687e483][emsenn]]
+:public:   true
+:END:
+#+title: Planning my GTAO Empire
+#+date: [2025-07-23 Wed 16:44]
+
+I learned today that I could migrate my old [[id:fc4e513a-a49f-44fc-a580-e3bb32342dea][GTAO]] account over, so I have. That's pretty exciting, because it means that I have access to all the vehicles and properties that I used to have.
+
+But, this also means that I should figure out the gameplay loop of these things - something I didn't *really* do when I was acquiring them, and it's changed a lot anyway.
+
+Querying [[id:13b2da4a-182b-4535-bad6-df7d3716dbb8][ChatGPT]], about an income flow that I can do solo, it suggested that I:
+
+- [[id:314d8eff-9d02-4405-ada1-339c94f7ab5a][Promote nightclub]]
+- [[id:e1817357-8f9c-42c8-9ef5-2660bd2ca9d7][Restock club bar]]
+- [[id:1b353e52-4fa6-4931-9c00-b01063892208][Sell from nightclub warehouse]]
+
+There might be other things within the stuff I already have access to, but those are the big ones it could tell me. It also informed me of the following opportunities:
+
+- [[id:1ed5e4b4-3e8a-42a4-b5b4-cc79b053e196][Buy the arcade]]
+- [[id:46885d6a-967d-4d12-b5af-b26282f146ea][Upgrade the motorcycle club to repair motorcyles]]
+- [[id:33db0a04-b406-40dc-97c1-baad7de0f0c8][Buy the auto shop]]
+
+
+These will enable other forms of passive income.
+
+After some playtime, promoting the nightclub is way easier (and more profitable) than the motorcycle club, and selling goods out of the nightclub seems like it'll be easier than other active missions.
+
+I also checked out a few other properties and vehicles. I can retrieve cars for, and sell cars from, my vehicle warehouse, but that trigggers NPC assailants, so isn't as just drive-y as some the nightclub promotion has seemed to be. (And the selling goods for the nightclub seems more survivable.)
+
+I'm feeling like there's a trend that the older content is a lot harder than some of the nwer content, even though the rewards seem pretty balanced.
+
+My game loop might center around the nightclub for now, though, supplemented by doing maybe taxi missions or similar. (The taxi missions, once you've done 10 in a row, pay out about $4.5k each, which is a reasonable reward for something with no inherent risk.)
+
+I'll keep poking at other things - the arcade, motorcycle repair, and auto shop, all seem like promising passive incomes, and a lot of what's difficult for me now, with regards to combat, would get a lot easier if I got better guns for my character.

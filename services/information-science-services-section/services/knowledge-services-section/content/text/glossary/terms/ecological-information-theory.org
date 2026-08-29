@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       a94cdab2-e518-4bd2-8802-a96a2c249886
+:END:
+#+title: ecological information theory
+#+date: [2025-10-05 Sun 07:59]
+

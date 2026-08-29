@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       b1589c18-c3e3-47ca-82d8-fe0d89a20456
+:END:
+#+title: conceptual element
+#+date: [2025-09-13 Sat 09:33]
+

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2019-06-09 Sun 20:35 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Implementing a Personal Website with Hugo, Netlify, Org-mode, and Ox-Hugo</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="emsenn" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Implementing a Personal Website with Hugo, Netlify, Org-mode, and Ox-Hugo</h1>
+<p>
+I've been reworking my online presence recently, and part of that has
+been to change how I handle the website at <code>emsenn.net</code>.
+</p>
+
+<p>
+I've put a fair bit of thought into the generalities of how I want to
+handle it, but not the specifics. But first, let's look at the parts
+of my online identity I have set up right now, that I don't have any
+plans to change:
+</p>
+
+<ul class="org-ul">
+<li>I conduct <i>email</i> through <a href="mailto:emsenn@emsenn.net">emsenn@emsenn.net</a>.</li>
+<li>I post publicly at <a href="https://posts.emsenn.net">https://posts.emsenn.net</a>. Those posts are also
+available through an <i>email list</i>, at
+<a href="https://posts.emsenn.net/#subscribe">https://posts.emsenn.net/#subscribe</a>. They're also available as an
+<i>RSS</i> feed at <a href="https://posts.emsenn.net/feed/">https://posts.emsenn.net/feed/</a> and through the
+<i>ActivityPub</i> protocol at <code>@emsenn@posts.emsenn.net</code>.</li>
+<li>I do two-way communication through <i>ActivityPub</i> at
+<code>@emsenn@tenforward.social</code>. You can view the public posts
+associated with that account at <a href="https://tenforward.social/@emsenn">https://tenforward.social/@emsenn</a>.</li>
+<li>My primary <i>Git forge</i> is <i>Sourcehut</i>, at <a href="https://git.sr.ht/~emsenn">https://git.sr.ht/~emsenn</a>.
+I like its approach to using existing tools properly, rather than
+adding on new tools, when it comes to stuff like bug-tracking. (Even
+though I don't use those features.
+<ul class="org-ul">
+<li>I use <i>Gitlab</i> to mirror my projects on <i>Sourcehut</i>, at
+<a href="https://gitlab.com/emsenn">https://gitlab.com/emsenn</a>.</li>
+<li>I also mirror them on <i>Github</i> at <a href="https://github.com/emsenn">https://github.com/emsenn</a>.</li>
+</ul></li>
+</ul>
+
+<p>
+I'm not sure what the full scope of <code>emsenn.net</code> will be, but I don't
+plan on it being a <i>dynamic website</i> - nothing I do happens so rapidly
+that I need to run something like that: I can serve up <i>static</i>
+resources like HTML and JSON files, that are compiled well in advance
+of the request.
+</p>
+
+<p>
+I like <i>Hugo</i> as my <i>static site generator</i> - it's powerful enough to
+meet my needs without being so powerful I get bogged down in different
+ways to do things.
+</p>
+
+<p>
+So, I know that's one part of my <i>software stack</i>: the layers of
+software used to accomplish a task.
+</p>
+
+<p>
+I also like <i>Netlify</i> as a <i>webhost</i> for <i>static websites</i> - they have
+an incredible amount of features, that don't get in the way until you
+want them there. That's one end of the <i>stack</i>: publishing on
+<i>Netlify</i>.
+</p>
+
+<p>
+Netlify can source its sites from three <i>Git forges</i>: <i>Gitlab</i>,
+<i>Github</i>, and <i>Bitbucket</i>. I prefer <i>Gitlab</i> to <i>Github</i>, since
+<i>Gitlab</i> is funded by users rather than owned by <i>Microsoft</i>, so I'll
+use <i>Gitlab</i> as the source for <i>Netlify</i>. And since the <i>Gitlab</i> repo
+is simply a mirror of the <i>Sourcehut</i> <i>Git forge</i>, which is in turn
+just a presentation of my local <i>Git repository</i>, that gives me four
+sequenced tools in the <i>stack</i>: <i>Git</i> to <i>Sourcehut</i> to <i>Gitlab</i> to
+<i>Netlify</i>.
+</p>
+
+<p>
+That still leaves what is in the <i>Git repo</i> unsorted, as well as how
+it gets built by <i>Hugo</i>. It's been a bit since I've worked with
+<i>Netlify</i> and <i>Hugo</i> and all this, and I was never that experienced
+with it when I was, so at this point,  I'll need to start setting
+things up before fleshing out that part of the <i>stack</i>.
+</p>
+
+<p>
+So let's look at instead what I'm working with as the <i>source code</i>
+for the website. It's organized like any of my other projects, under
+the <code>~/org/projects/</code> directory on my server. Here's what the
+<code>emsenn-website</code> directory under that looks like:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-txt">./
+ | README.md
+ | emsenn-website.html
+ | emsenn-website.org
+ | emsenn-website.pdf
+ | emsenn-website.tex
+ | src/
+      | emsenn-website.org
+      | build/
+	     | content/
+	     |        | &lt;site pages go here&gt;
+	     | data/
+	     |     | &lt;site data goes here&gt;
+	     | themes/
+	     |       | hugo-personal-website-theme/
+	     | config.toml
+</pre>
+</div>
+
+
+
+<div id="outline-container-orgbb115c5" class="outline-2">
+<h2 id="orgbb115c5">Index</h2>
+<div class="outline-text-2" id="text-orgbb115c5">
+<dl class="org-dl">
+<dt>ActivityPub</dt><dd></dd>
+
+<dt>Bitbucket</dt><dd></dd>
+
+<dt>email</dt><dd></dd>
+
+<dt>email list</dt><dd></dd>
+
+<dt>Git</dt><dd></dd>
+
+<dt>Git repository</dt><dd></dd>
+
+<dt>Git forge</dt><dd></dd>
+
+<dt>Github</dt><dd></dd>
+
+<dt>Gitlab</dt><dd></dd>
+
+<dt>Hugo</dt><dd></dd>
+
+<dt>Microsoft</dt><dd></dd>
+
+<dt>Netlify</dt><dd></dd>
+
+<dt>Org-mode</dt><dd></dd>
+
+<dt>Ox-Hugo</dt><dd></dd>
+
+<dt>RSS</dt><dd></dd>
+
+<dt>software stack</dt><dd></dd>
+
+<dt>Sourcehut</dt><dd></dd>
+
+<dt>website, dynamic</dt><dd></dd>
+
+<dt>website, static</dt><dd></dd>
+</dl>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: emsenn</p>
+<p class="date">Created: 2019-06-09 Sun 20:35</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

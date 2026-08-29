@@ -1,0 +1,7 @@
+kind: book
+
+book:
+  source: index.md
+
+publish:
+  slug: semiotic-emacs

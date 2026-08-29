@@ -1,0 +1,1 @@
+Written to `operations/engineering/fars/docs/mash-architecture.md`. 230 lines covering all 8 sections: what MASH is, the four components (561d, EAVT store, MCP server, data flow), daemon behavior (heartbeat + world tick), session lifecycle with the shell wrapper pattern, double-entry accounting, stage handoffs, and the full MCP API inventory.

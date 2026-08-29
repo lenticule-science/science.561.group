@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       a51c233e-d799-495e-82a0-72e42d01d865
+:END:
+#+title: information theory interpretation
+#+date: [2025-10-21 Tue 13:09]
+

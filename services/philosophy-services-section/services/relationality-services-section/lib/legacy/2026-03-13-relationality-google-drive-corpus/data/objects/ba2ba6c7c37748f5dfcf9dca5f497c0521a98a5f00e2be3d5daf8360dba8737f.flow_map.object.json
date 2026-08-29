@@ -1,0 +1,14 @@
+{
+  "act_version": "v1",
+  "carrier_id": "2feb603a8668efa2d1e81fce7c31109a4a43163f9fc0a020627ade724c138661",
+  "elements": [
+    "a",
+    "b"
+  ],
+  "flow_table": {
+    "a": "a",
+    "b": "b"
+  },
+  "id": "ba2ba6c7c37748f5dfcf9dca5f497c0521a98a5f00e2be3d5daf8360dba8737f",
+  "kind": "flow_map"
+}

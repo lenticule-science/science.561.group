@@ -1,0 +1,11 @@
+#+title: 2020-11-21
+#+ghe_schema: daily-record-0.1.1
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-11-21 Sat 12:18]
+#+roam_tags: daily-record
+
+#+name: definition
+This is some of what I (emsenn) experienced and wrote on on [2020-11-21 Sat].
+
+#+toc: headlines 2

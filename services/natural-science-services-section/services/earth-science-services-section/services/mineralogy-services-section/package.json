@@ -1,0 +1,7 @@
+{
+  "name": "@lenticule-science/mineralogy-services-section",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Red Cup Science service section for mineralogy: mineral composition, crystal structure, and the physical behavior of rocks.",
+  "license": "UNLICENSED"
+}

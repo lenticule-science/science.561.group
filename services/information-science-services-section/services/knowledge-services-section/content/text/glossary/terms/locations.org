@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       32be7c92-912e-419d-ad36-bf187fcbbdd7
+:END:
+#+title: Locations
+
+This is a list of [[id:79790f4c-8cf3-43a0-9bfe-a35a164c622f][locations]], a part of my [[id:708f5536-237b-4c74-b115-af39f358b303][my encyclopedia]].
+
+- [[id:156d0bfd-7f39-456b-ab38-1f2d0b4a99ef][Turtle Island, United States, North Carolina, Durham County, Durham, South]]
+- [[id:bc05b077-f9f9-4adb-afab-d1cd2716f44a][Turtle Island, United States, North Carolina, Piedmont]]

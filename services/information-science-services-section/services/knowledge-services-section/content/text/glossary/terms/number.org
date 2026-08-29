@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       dd58b9e9-dee6-45d4-99aa-035d8d1d191b
+:END:
+#+title: number
+#+date: [2025-09-01 Mon 19:21]
+

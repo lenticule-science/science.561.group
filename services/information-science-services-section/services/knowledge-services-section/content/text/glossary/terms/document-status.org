@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       c937689c-2dc7-40bc-890c-29ecbfc4350a
+:END:
+#+title: document status
+#+date: [2025-10-04 Sat 10:57]
+

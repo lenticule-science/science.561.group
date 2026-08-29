@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       f7cc4bac-8a9d-43a2-a76f-4e014ae70405
+:ROAM_ALIASES: authors authored
+:public:   true
+:resource-description: (([[id:edaef069-c68d-46aa-a970-d3cb7fe3165c][resource type]] . [[id:fe5f19f5-4966-42c0-bc11-f5b5f7031238][creating]]) ([[id:e4b0236c-a1e8-4f5c-8921-164b1651e302][producing]] . [[id:abf8b020-c1e2-42a0-a765-fa2660a52148][media piece]]))
+:END:
+#+title: authoring
+#+date: [2025-08-24 Sun 08:54]
+#+index: creating!authoring

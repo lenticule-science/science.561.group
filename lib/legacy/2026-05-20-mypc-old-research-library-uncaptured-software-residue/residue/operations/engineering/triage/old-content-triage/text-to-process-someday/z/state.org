@@ -1,0 +1,25 @@
+#+title: state
+#+begin_head
+#+ghe_schema: reference-0.1.2
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-26 Sat 11:33]
+#+roam_tags: term
+#+end_head
+
+#+name: definition
+A */[[file:state.org][state]]/* is [[file:political_organization.org][political organization]] that views its [[file:kyriarchy.org][kyriarchism]] as legitimate.
+#+toc: headlines 2
+
+
+* Supplements
+** Record history
+   :PROPERTIES:
+   :CUSTOM_ID: record-history
+   :END:
+   :LOGBOOK:
+   - Note taken on [2020-12-26 Sat 11:33] \\
+      Created from 
+
+     
+   :END:

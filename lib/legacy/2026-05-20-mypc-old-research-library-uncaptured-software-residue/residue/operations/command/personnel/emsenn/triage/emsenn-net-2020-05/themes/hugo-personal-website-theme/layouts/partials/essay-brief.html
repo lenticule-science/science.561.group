@@ -1,0 +1,3 @@
+<a href="{{- .Permalink -}}">{{- .Title -}}</a> is a {{ .FuzzyWordCount -}}-word essay
+{{- with .Date }} released on {{ (dateFormat "January 2, 2006" .) -}}{{- end -}}
+{{- with .Params.tags }} about {{ range . -}}{{- . | humanize | lower -}}{{- end -}}{{- end -}}.

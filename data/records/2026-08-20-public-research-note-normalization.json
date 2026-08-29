@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "science-corpus-normalization/v1",
+  "observedAt": "2026-08-20",
+  "source": "services/public-services-section/**/content/text/documents/articles/notes",
+  "selection": "active Markdown research notes whose filename explicitly marks theory, epistemology, ontology, semiotics, knowledge, concept, meaning, model, framework, methodology, taxonomy, topology, cognition, sensemaking, worldview, or paradigm",
+  "sourceCount": 37,
+  "dispositions": {
+    "uniqueNoteMoved": 36,
+    "redundantSourceRemovedAfterBodyComparison": 1,
+    "remaining": 0
+  },
+  "destinations": {
+    "agents-services-section": 1,
+    "artificial-intelligence-science-services-section": 2,
+    "computer-science-services-section": 7,
+    "critical-theory-services-section": 2,
+    "economics-services-section": 1,
+    "epistemology-services-section": 2,
+    "game-science-services-section": 4,
+    "knowledge-organization-services-section": 1,
+    "knowledge-systems-services-section": 2,
+    "media-science-services-section": 1,
+    "number-theory-services-section": 1,
+    "ontology-services-section": 2,
+    "proof-services-section": 1,
+    "sociology-services-section": 3,
+    "topology-services-section": 2,
+    "type-theory-services-section": 1,
+    "work-services-section": 3
+  },
+  "integrity": {
+    "uniqueBodiesDiscarded": 0,
+    "publicationFormsMoved": 0,
+    "noteVersusPublicationDistinction": "Essays, letters, posts, fiction, transcripts, references, and bibliographies retain their public form ownership even when their subject is theoretical."
+  }
+}

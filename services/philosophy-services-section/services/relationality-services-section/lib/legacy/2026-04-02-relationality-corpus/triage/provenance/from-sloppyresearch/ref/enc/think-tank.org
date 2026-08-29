@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       487cf66a-0f75-40c0-99e6-844936fd5d57
+:public:   true
+:END:
+#+title: think tank
+#+date: [2025-09-05 Fri 22:14]
+#+index: think tank
+
+A */think tank/* is an [[id:291f9264-5b97-4f48-acfc-53dc7ac77301][organization]] for [[id:4501a3b7-861e-4f0f-b820-58f4e5e38690][researching]] and [[id:00144e3e-bc47-4b1c-9204-5b6cfeca200c][advising]] another organization or [[id:9fee0f36-1b36-43c7-b896-14b6700c7738][person]].

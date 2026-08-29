@@ -1,0 +1,28 @@
+\section{The Vershik successor: the serial yarn order}
+
+The third Bratteli--Vershik piece is the adic successor --- the serial yarn order, the dyadic
+odometer, green in \texttt{Infomaterial.Persistence.Aperiodic.PortVershik}. With it the Bratteli--Vershik system of a
+self-similar textile is complete in-tree: edges (\cref{thm:port-growth}), levels-as-time
+(\cref{thm:weaving-advances-time}), and the serial successor.
+
+\begin{proposition}[The Vershik adic successor]\label{thm:vershik}\lean{Infomaterial.Persistence.Aperiodic.vershik}\leanok\uses{thm:port-growth}
+The next path in the serial order, the little-endian ``$+1$ with carry'' odometer: a not-yet-maximal
+edge advances and stops; a maximal edge resets and carries up a level. The serial yarn order ---
+finish the stitch, carry to the next row.
+\end{proposition}
+
+\begin{theorem}[The successor is the serial $+1$]\label{thm:vershik-succ}\lean{Infomaterial.Persistence.Aperiodic.vershik_succ}\leanok\uses{thm:vershik}
+On any path not yet maximal, the adic successor increments the serial index:
+$\texttt{toNat}(\texttt{vershik}\,p) = \texttt{toNat}\,p + 1$. The serial yarn order is the integer
+successor until a row maxes out.
+\end{theorem}
+
+\begin{theorem}[The maximal path wraps to the minimal]\label{thm:vershik-wrap}\lean{Infomaterial.Persistence.Aperiodic.vershik_replicate_true}\leanok\uses{thm:vershik}
+The all-maximal path of any height carries past the top and returns to the all-minimal path --- the
+adic map's one discontinuity, where the serial order closes into a cycle.
+\end{theorem}
+
+\begin{theorem}[On two levels the successor is a 4-cycle]\label{thm:vershik-cycle}\lean{Infomaterial.Persistence.Aperiodic.vershik_two_cycle}\leanok\uses{thm:vershik-succ, thm:vershik-wrap}
+Iterating \texttt{vershik} four times returns any two-level path to itself: the minimal dyadic
+odometer, every path reached --- the Bratteli--Vershik minimality of the two-row self-similar tower.
+\end{theorem}

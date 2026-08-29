@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/category/library/infinity-category/library/complete-segal-space/complete-segal-space.schema.json",
+  "title": "complete-segal-space",
+  "description": "A simplicial space (bisimplicial set) satisfying the Segal condition and the completeness condition. Rezk's model of (∞,1)-categories.",
+  "type": "object",
+  "properties": {
+    "name": { "type": "string", "const": "complete-segal-space" }
+  },
+  "required": ["name"]
+}

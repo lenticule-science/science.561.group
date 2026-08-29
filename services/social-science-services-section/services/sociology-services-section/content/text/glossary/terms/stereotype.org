@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       36f6ebba-a411-40b8-aa9b-e90c1752b85c
+:END:
+#+title: stereotype
+#+date: [2025-09-20 Sat 10:06]
+

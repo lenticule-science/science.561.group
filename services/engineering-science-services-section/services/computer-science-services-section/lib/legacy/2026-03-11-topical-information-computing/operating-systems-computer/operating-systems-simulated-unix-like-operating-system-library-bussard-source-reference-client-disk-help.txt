@@ -1,0 +1,152 @@
+# Operating manual for Kosaga Shipyards Bussard-class spacecraft
+
+Congratulations on the purchase of your spacecraft. Your ship is
+equipped with state of the art components as well as the capacity to
+dynamically reconfigure to add new capabilities.
+
+Please review this manual to ensure you have a complete understanding
+of your ship's operation, and you will enjoy many safe travels on board.
+
+You can scroll thru this document with the arrow keys or pageup/pagedown.
+
+## Display
+
+The first thing you'll see when you launch your ship is its
+heads-up-display.  A targeting indicator will point from your ship in
+the direction of your current target, which can be changed by pressing
+[ and ].  Holding the shift key will center the display on your target.
+
+The = and - keys will zoom the display in and out respectively.
+
+## Computer
+
+The heart of your ship is its onboard computer. The Bussard-class spacecraft
+is equipped with a LuaJIT-based control unit, offering a high degree of
+flexibility and customization without sacrificing performance.
+
+Pressing F5 switches to the ship computer's repl. While it is active,
+the piloting controls for your ship will be unavailable until you go
+back to flight mode with the F2 key. While in the repl, enter Fennel
+code to have it evaluated and the result shown. See the API section
+below to learn how to control your ship from code.
+
+When your ship starts, it will load its configuration file (called
+"init.fnl") in order to create key bindings, define helper functions,
+and perform any other setup. This file also loads other files (like
+"edit-mode.fnl" or "help-mode.fnl") which define other specialized
+modes of interaction.
+
+### Editor
+
+You can make changes to your configuration files using the onboard
+editor. Press `ctrl-o` to open a file; start with "repl.fnl". You can
+see where the flight mode is defined and how the flight controls and
+other commands are bound to keystrokes. The bind function can attach
+any function to a keystroke.
+
+Once you're done with your edits, press esc to go back to flight mode
+and load your changes with `ctrl-r`. You can edit other files anywhere in
+your ship, but by default only files in the "ship.src" and "ship.docs"
+tables will stay after your ship is restarted. You can configure it to
+save other tables by adding their names to the "ship.persist" table.
+
+You can open as many files in the editor as you need with `ctrl-o`. Use
+`ctrl-pageup` and `ctrl-pagedown` to cycle through them. Use `ctrl-w` to
+close the current buffer.
+
+### Communication system
+
+When you are in range of a planet or space station with an active
+computer, you can initiate a login session using your ship's
+communication system. This will allow you to access any of the station's
+services, including refueling, cargo transactions, purchasing upgrades,
+downloading new code, renting cargo storage, and communicating with
+others.
+
+Your targeting indicator will turn light green when you are within
+range of a station that allows logins.
+
+Sessions are initiated using `ctrl-s`, which will prompt for a username
+and password and log you into the currently-targeted planet or station
+if you are within communications range. While you are logged in and stay
+within range, the port can send automated loaders to your ship to
+transfer cargo and passengers.
+
+Most stations allow limited access via a "guest" account with an empty
+password, which is the default if no username and password are
+provided. Files on guest accounts are wiped upon logging out. Once you
+are logged in as a guest, you may have the option to purchase an account
+on that station or planet's computer system, which will grant you access
+to the rest of the services as well as persistent file storage. Please
+note that attempting to access accounts of others is strictly forbidden
+by interstellar law.
+
+Services offered on stations vary by location, but most stations at
+least offer to buy and sell cargo. The cargo program takes list,
+buy, and sell subcommands; see its online help ("cargo --help")
+for usage details. You can run "ls /bin" to see a list of built-in
+programs on most computer systems.
+
+While your login session is active, you will not be able to enter any
+code into your ship's computer, and the console prompt will change to
+`$`. Enter `logout` to terminate your session and return to your
+ship's computer.
+
+For non-interactive sessions, you can use the `ssh_connect` function,
+which takes a username and password and returns a function that takes a
+command to run and returns its output.  This can be useful for writing
+programs to automate common tasks. Call the resulting function with
+"logout" to terminate the connection.
+
+### API list
+
+In your onboard computer, `ship` is a table representing the data and
+functionality that can be accessed by code you write.
+
+In the console you can use the tab key to autocomplete fields under your
+`ship` table as well as any global variables.
+
+### Mail
+
+Your ship also comes with a mail client allowing you to read and respond to
+messages you receive. Press `f3` to activate it. You'll be shown a list of
+folders, each with an unread/total message count. Pressing enter on a folder
+opens it up and shows the date, sender, and subject of each message.
+
+If a message offers a mission or makes some request of you, you can
+indicate your acceptance or acknowledgment by pressing
+`alt-enter`. Pressing `alt-a` will move the message to the "archive" folder.
+
+### Keymaps and Modes
+
+The currently active mode and its keymaps will dictate how your ship
+will react to keys on your helm keyboard. Once a mode is defined, you
+can add key bindings to it like so: `keymap.define("flight", "ctrl-k",
+function() print(ship.status.dx, ship.status.dy) end)`. The first
+argument is the name of the mode you're adding the key binding to, the
+second argument is a string describing the key to bind, and the third
+argument is the function to call when the key is pressed.
+
+By default your ship has a "flight" mode active normally and a "console"
+mode for entering code directly. There is also an "edit" mode where the
+editor key bindings are defined. The "ssh" mode is active when
+connecting to station or planet computers, and the "mail" mode is active
+when reading your messages. You can check the current mode with
+`ship:mode()`.
+
+See the `keycodes` manual page for a detailed listing of available key
+names. You can run `man("keycodes")` to view it.
+
+Take a look at the default config code that came with your ship for an
+example of how to create modes and bind new keys in them; it will come
+in very handy to add in new keys when operating your ship; in particular
+when you purchase an upgrade that adds new capabilities.  You can also
+define new modes that are based on existing modes; see "src.ssh", which
+shows that the "ssh" mode has a parent mode of "console".
+
+## Footer
+
+Copyright © 2365-2372 Kosaga Shipyards, All Rights Reserved.
+
+If you are viewing this manual in your ship's onboard computer, press
+the pageup key a few times to scroll to the top and begin reading there.

@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       a4a762ee-0601-462e-8543-2b5c4264a983
+:instantiates: [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]
+:author:   [[id:40cbaad9-af3c-4573-b356-ae116687e483][emsenn]]
+:date-created: [2025-07-18 Fri 10:42]
+:public:   true
+:END:
+#+title: Considering Luanti instead of Minecraft
+#+author: emsenn
+#+date: [2025-07-18 Fri 10:42]
+
+I realized that if I'm not playing with anyone who's already playing, and given how... werid [[id:b233c3d3-4e34-47a9-8930-f4cb5fc45617][Minecraft]] has gotten, in terms of the [[id:6990a07e-d3e9-45fa-8a2a-feca3c57542e][worlding]], there's no reason for me not to take a serious look at the [[id:b133a178-46b4-494a-b513-873bfe4a9e56][open-source voxel games]] out there. I just looked at it, and Minetest has rebranded to [[id:68e61a9e-2bfa-480c-8083-985fcccfe62a][Luanti]], and after playing one of the recommended game modes, it seems like it'd definitely meet my needs for Minecraft, if not be a little more suitable - and definitely more in line with the types of [[id:34735362-9551-4b26-bc80-00d1918ea9d1][ethics]] and values that I at least [[id:a9d46eba-eedc-4753-a9cd-55376cb3b468][used to hold]] the last time I was really operating from that place.
+

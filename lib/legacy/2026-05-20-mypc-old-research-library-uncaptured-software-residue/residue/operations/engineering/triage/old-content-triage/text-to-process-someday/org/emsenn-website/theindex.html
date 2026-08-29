@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2023-01-14 Sat 15:02 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Index</title>
+<meta name="generator" content="Org Mode" />
+<style>
+  	   @charset "UTF-8";
+  
+  	   :root {	
+  	       --body-font: sans-serif;
+  	       --header-font: sans-serif;
+  	       --code-font: monospace;
+  	       --primary-color: #ffe;
+  	       --primary-dim-color: #eed;
+  	       --secondary-color: #312;
+  	       --secondary-dim-color: #756;
+  	       --link-color: #880;
+  	       --link-hover-color: #aa2;
+  	       --link-visited-color: #934;
+  	       --link-visited-hover-color: #b56;
+  	       --external-link-color: #008;
+  	       --external-link-hover-color: #60b;
+  	       --external-link-visited-color: #172;
+  	       --external-link-visited-hover-color: #394;
+  	   }
+  	   @media(prefers-color-scheme:dark){
+  	       :root {
+  		  --body-font: sans-serif;
+  		  --header-font: sans-serif;
+  		  --code-font: monospace;
+  		  --primary-color: #756;
+  		  --primary-dim-color: #312;
+  		  --secondary-color: #eed;
+  		  --secondary-dim-color: #ffe;
+  		  --link-color: #880;
+  		  --link-hover-color: #aa2;
+  		  --link-visited-color: #934;
+  		  --link-visited-hover-color: #b56;
+  	       }}
+  	   body {
+  	       position: relative;
+  	       min-height: 100%;
+  	       background-color: var(--primary-color);
+  	       color: var(--secondary-color);
+  	       margin: 0 auto;
+  	       font-family: sans-serif;
+  	   }
+  	   main, #content {
+  	       background-color: var(--primary-dim-color);
+  	       border-left: 1.5em dotted var(--primary-color);
+  	       padding: 1em;
+  	   }
+  	   header {
+  	       border-bottom: 0.8em dotted var(--secondary-dim-color);
+  	   }
+  	   h1 { font-size: 2em; margin-bottom: 0; }
+  	   h2 {
+  	       border-bottom: 0.3em dotted var(--secondary-dim-color);
+  	   }
+  	   h2, h3, h4, h5, h6, p, table, ul, ol, .org-src-container {
+  	       width: 60%;
+  	   }
+  	   aside {
+  	       float: right;
+  	       width: 35%;
+  	   }
+  	   aside p { width: 100%; }
+  	   @media screen and (max-width:760px) {
+  	       h2, h3, h4, h5, h6, p, table, ul, ol, .org-src-container {
+  		  width: 90%;
+  	       }
+  	       aside {
+  		  float: inherit;
+  		  width: 90%;
+  		  border-top: 0.2em dotted var(--secondary-dim-color);
+  		  border-bottom: 0.2em dotted VAR(--secondary-dim-color);
+  		  font-size: 0.8em;
+  		    }
+  	   }
+  
+  	   footer, #postamble, #preamble {
+  	       padding: 0.5em;
+  	   }
+  	   table {
+  	       border-collapse: collapse;
+  	       border-spacing: 0;
+  	       empty-cells: show;
+  	       border: 0.1em solid #444;
+  	   }
+  	   thead { font-family: sans-serif; }
+  	   th, td {
+  	       padding: 0 0.3em;
+  	       border: 0.01em solid #444;
+  	   }
+  	   img {
+  	       max-width: 80vw;
+  	       vertical-align: middle;
+  	   }
+  	   pre, .src {
+  	       padding: 0.5em;
+  	       border: 0.1em solid #444;
+  	       white-space: pre-wrap;
+  	       overflow-x: scroll;
+  	       text-overflow: clip;
+  	       scrollbar-width: none;
+  	   }
+  	   pre::-webkit-scrollbar, .src::-webkit-scrollbar {
+  	       display: none;
+  	   }
+  
+  
+  	   dt {
+  	       font-weight: normal;
+  	       display: inline-block;
+  	       border-bottom: 0.1rem dotted #444;
+  	   }
+  	   #text-index dt { border-bottom: none; }
+  	   h2, h3, h4, h5, h6, h7, h8, h9, h10 {
+  	       display: block;
+  	       font-family: sans-serif;
+  	       margin: 0.2em auto 0.5em 0;
+  	   }
+  	   a, .link {
+  	       text-decoration: none;
+  	       color: #880;
+  	       display: inline;
+  	       position: relative;
+  	       border-bottom: 0.1rem dotted;
+  	       line-height: 1.2;
+  	       transition: border 0.3s;
+  	   }
+  	   a:hover {
+  	       color: #aa2;
+  	       outline-style: none;
+  	       border-bottom: 0.1rem solid;
+  	   }
+  	   a:visited, .visited-link { color: #934; }
+  	   a:visited:hover { color: #b56; }
+  	   a:focus {
+  	       outline-style: none;
+  	       border-bottom: 0.1rem solid;
+  	   }
+  	   ::selection { background-color: #777; color: #eee; }
+  	   a::selection { background-color: #ccc; }
+  	   .org-todo {
+  	       background-color: #ddd;
+  	       color: #333;
+  	       font-size: .8rem;
+  	       float: right;
+  	   }
+  	   .org-src-container + .example {
+  	       margin-left: 8em;
+  	   }
+  	   a[href^="https://"]:not([href*="emsenn.net"]):after, a[href^="https://"]:not([href*="emsenn.net"]):visited:after, .external-link:after, .visited-external-link:after { 
+  	       content: "^";
+  	       font-size: 0.5em;
+  	       vertical-align: super;
+  	   }
+  	   a[href^="https://"]:not([href*="emsenn.net"]), .external-link {
+  	       color: var(--external-link-color);
+  	   }
+  	   a[href^="https://"]:not([href*="emsenn.net"]):hover{ 
+  	       color: var(--external-link-hover-color);
+  	   }
+  	   a[href^="https://"]:not([href*="emsenn.net"]):visited, .visited-external-link { 
+  	       color: var(--external-link-visited-color);
+  	   }
+  	   a[href^="https://"]:not([href*="emsenn.net"]):visited:hover{ 
+  	       color: var(--external-link-visited-hover-color);
+  	   }
+  	   blockquote {
+  	       border: 0.1em dashed var(--secondary-dim-color);
+  	       padding-left: 0.2em;
+  	   }
+  	   label.org-src-name {
+  	       margin: 0 0 0 3em;
+  	       font-family: sans-serif;
+  	       font-size: 1rem;
+  	       line-height: 0;
+  	   }
+  	   .skip-to-content {
+  	       opacity: 0;
+  	       position: absolute;
+  	       left: 0.2em;
+  	   }
+  	   .skip-to-content:focus{
+  	       opacity: 1;
+  	       background-color: var(--secondary-dim-color);
+  	       color: var(--primary-color);
+  	   }
+  	   ul { max-width: 85%; }
+      .footpara { display: inline; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+<section id="preamble" class="status">
+<a href="#content" class="skip-to-content">skip to content</a><section class="nav"><strong>emsenn.net:</strong> <a href="./index.html">Homepage</a> | <a href="./bul/index.html">Bulletins</a> | <a href="./mainindex.html">Main Index</a><p>This Website was cultivated as a public asset with <a href="https://ko-fi.com/emsenn">support</a> from people like you. <strong><em>Thank you!</em></strong></p>
+  	 <details>
+  	   <summary>Click this sentence for information about my Website.</summary>
+  	   <p>Click each sentence below for more info:</p>
+  	     <ul>
+  	       <li><details>
+  	 	<summary>This website was created by Emacs and Org-mode</summary>
+  	 	<p>See <a href="https://emsenn.net/src/infoponemacs.html">my Emacs configuration</a> to learn how.</p>
+  	       </details></li>
+  	       <li><details>
+  	         <summary>Its content was written by hand.</summary>
+  	         <p>This means there might be mistakes! 
+  	       </details></li>
+  	       <li><details>
+  	 	<summary>It uses style to add information to the pages.</summary>
+  	 	<ul>
+  	 	  <li><details>
+  	 	  <summary>Click this sentence to see how links are styled:</summary>
+  	 	  <table>
+  	 	    <thead><tr>
+  	 	      <th scope="col">Color</th>
+  	 	      <th scope="col">Link type</th>
+  	 	    </tr></thead>
+  	 	    <tbody>
+  	 	      <tr><td class="link">Sample</td>
+  	 		<td>Unvisited local resource</td></tr>
+  	 	      <tr><td class="visited-link">Sample</td>
+  	 		<td>Visited local resource</td></tr>
+  	 	      <tr><td class="external-link">Sample</td>
+  	 		<td>Unvisited external resource</td></tr>
+  	 	      <tr><td class="visited-external-link">Sample</td>
+  	 		<td>Visited external resource</td></tr>
+  	 	    </tbody>
+  	 	  </table>
+  	 	</details></li>
+  	       </ul>
+  	     </details></li>
+  	   </ul>
+  	 </details>
+  	 </section>
+</section>
+<main id="content" class="content">
+<header>
+<h1 class="title">Index</h1>
+</header>
+<section id="outline-container-orgf719598" class="outline-2">
+<h2 id="orgf719598">A</h2>
+<div class="outline-text-2" id="text-orgf719598">
+<ul class="org-ul">
+<li><a href="def/ability.html">ability</a></li>
+<li><a href="def/act.html">act</a></li>
+<li>Aleppo
+<ul class="org-ul">
+<li><a href="timeline.html#org5ef3009">962, Byzantines sacked Aleppo</a></li>
+</ul></li>
+<li><a href="def/algae.html">algae</a>
+<ul class="org-ul">
+<li><a href="def/filamentous-algae.html">filamentous algae</a></li>
+</ul></li>
+<li><a href="def/allium.html">Allium</a>
+<ul class="org-ul">
+<li><a href="def/allium-cepa.html">Allium cepa</a></li>
+<li><a href="def/allium-fistulosum.html">Allium fistulosum</a></li>
+<li><a href="def/allium-sativum.html">Allium sativum</a></li>
+<li><a href="def/allium-x-proliferum.html">Allium x proliferum</a></li>
+</ul></li>
+<li>America
+<ul class="org-ul">
+<li>American colonialism
+<ul class="org-ul">
+<li><a href="timeline.html#mayflower-landed-at-plymouth-rock">1620, Mayflower landed at Plymouth Rock</a></li>
+</ul></li>
+</ul></li>
+<li><a href="def/amylopectin.html">amylopectin</a></li>
+<li><a href="def/amylose.html">amylose</a></li>
+<li><a href="def/ancestor.html">ancestor</a>
+<ul class="org-ul">
+<li><a href="def/common-ancestor.html">common ancestor</a></li>
+</ul></li>
+<li><a href="def/animal.html">animal</a>
+<ul class="org-ul">
+<li><a href="def/aquatic-animal.html">aquatic animal</a></li>
+<li><a href="def/invertebrate-animal.html">invertebrate animal</a></li>
+</ul></li>
+<li>Apios
+<ul class="org-ul">
+<li><a href="def/apios-americana.html">Apios Americana</a></li>
+</ul></li>
+<li><a href="def/aquaculture.html">aquaculture</a></li>
+<li><a href="def/aquaponics.html">aquaponics</a></li>
+<li><a href="def/aquarium.html">aquarium</a>
+<ul class="org-ul">
+<li><a href="def/aquarium-substrate.html">aquarium substrate</a></li>
+</ul></li>
+<li><a href="def/arthropod.html">arthropod</a></li>
+<li><a href="def/atlanta-forest.html">Atlanta Forest</a></li>
+<li>Atlanta
+<ul class="org-ul">
+<li><a href="def/atlanta-forest.html">Atlanta Forest</a></li>
+</ul></li>
+<li><a href="def/atom.html">atom</a>
+<ul class="org-ul">
+<li><a href="def/atomic-nucleus.html">nucleus</a></li>
+</ul></li>
+<li><a href="def/autonomous-movement.html">autonomous movement</a></li>
+<li><a href="def/autonomy.html">autonomy</a>
+<ul class="org-ul">
+<li><a href="def/autonomous-movement.html">autonomous movmeent</a></li>
+<li><a href="def/food-autonomy.html">food autonomy</a></li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="outline-container-org267935a" class="outline-2">
+<h2 id="org267935a">B</h2>
+<div class="outline-text-2" id="text-org267935a">
+<ul class="org-ul">
+<li><a href="def/bacteria.html">bacteria</a></li>
+<li><a href="def/bait.html">bait</a></li>
+<li><a href="def/bait-fish.html">bait fish</a></li>
+<li>bait
+<ul class="org-ul">
+<li><a href="def/fishing-bait.html">fishing bait</a></li>
+</ul></li>
+<li><a href="def/belief.html">belief</a></li>
+<li><a href="def/biological-process.html">biological process</a></li>
+<li><a href="def/biological-taxon.html">biological taxon</a>
+<ul class="org-ul">
+<li><a href="def/biological-class.html">class</a></li>
+<li><a href="def/biological-domain.html">domain</a></li>
+<li><a href="def/biological-family.html">family</a></li>
+<li><a href="def/biological-phylum.html">kingdom</a></li>
+<li><a href="def/biological-kingdom.html">kingdom</a></li>
+<li><a href="def/biological-suborder.html">suborder</a></li>
+<li><a href="def/biological-infraorder.html">suborder</a></li>
+<li><a href="def/biological-subphylum.html">subphylum</a></li>
+</ul></li>
+<li>biology
+<ul class="org-ul">
+<li><a href="def/biological-process.html">biological process</a></li>
+</ul></li>
+<li><a href="def/botanical-branch.html">branch (botany)</a></li>
+<li>Byzantine
+<ul class="org-ul">
+<li><a href="timeline.html#org5ef3009">962, Byzantines sacked Aleppo</a></li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="outline-container-orga6061c1" class="outline-2">
+<h2 id="orga6061c1">C</h2>
+<div class="outline-text-2" id="text-orga6061c1">
+<ul class="org-ul">
+<li><a href="def/calcium-grit.html">calcium grit</a></li>
+<li><a href="def/capacity.html">capacity</a></li>
+<li><a href="def/carbohydrate.html">carbohydrate</a></li>
+<li><a href="def/carbon.html">carbon</a></li>
+<li><a href="def/caridea.html">caridea</a></li>
+<li>cell
+<ul class="org-ul">
+<li><a href="def/biological-cell.html">biological cell</a>
+<ul class="org-ul">
+<li><a href="def/cell-nucleus.html">cell nucleus</a></li>
+<li><a href="def/cellular-organelle.html">cellular organelle</a></li>
+</ul></li>
+</ul></li>
+<li><a href="def/cellulose.html">cellulose</a></li>
+<li><a href="def/change.html">change</a></li>
+<li><a href="def/chemical-bond.html">chemical bond</a>
+<ul class="org-ul">
+<li><a href="def/covalent-bond.html">covalent bond</a></li>
+</ul></li>
+<li>chemistry
+<ul class="org-ul">
+<li><a href="def/chemical-solution.html">solution</a></li>
+</ul></li>
+<li><a href="def/child.html">child</a></li>
+<li><a href="def/chloramine.html">chloramine</a></li>
+<li><a href="def/choice.html">choice</a></li>
+<li><a href="def/city.html">city</a>
+<ul class="org-ul">
+<li><a href="def/settler-city.html">settler city</a></li>
+</ul></li>
+<li><a href="def/civilization.html">civilization</a></li>
+<li><a href="def/biological-class.html">class</a></li>
+<li><a href="def/coercion.html">coercion</a></li>
+<li><a href="def/colonialism.html">colonialism</a>
+<ul class="org-ul">
+<li>American colonialism
+<ul class="org-ul">
+<li><a href="timeline.html#mayflower-landed-at-plymouth-rock">1620, Mayflower landed at Plymouth Rock</a></li>
+</ul></li>
+<li><a href="def/colonial-campaign.html">colonial campaign</a></li>
+</ul></li>
+<li><a href="def/common-ancestor.html">common ancestor</a></li>
+<li><a href="def/communication.html">communication</a></li>
+<li><a href="def/complex-object.html">complex object</a></li>
+<li><a href="def/complex-system.html">complex system</a></li>
+<li><a href="def/component.html">component</a></li>
+<li><a href="def/contemporary-kyriarchy.html">contemporary kyriarchy</a></li>
+<li><a href="def/continent.html">continent</a></li>
+<li>cottage industry
+<ul class="org-ul">
+<li>industrious cottages
+<ul class="org-ul">
+<li><a href="pro/bur/index.html">561 Burrow</a></li>
+</ul></li>
+</ul></li>
+<li>Cotton, John
+<ul class="org-ul">
+<li><a href="timeline.html#org66483f0">1652, John Cotton died</a></li>
+</ul></li>
+<li><a href="def/covalent-bond.html">covalent bond</a></li>
+<li><a href="def/crustacea.html">crustacea</a></li>
+<li><a href="def/culture.html">culture</a></li>
+</ul>
+</div>
+</section>
+<section id="outline-container-org4ee2683" class="outline-2">
+<h2 id="org4ee2683">D</h2>
+<div class="outline-text-2" id="text-org4ee2683">
+<ul class="org-ul">
+<li><a href="def/decapoda.html">decapoda</a></li>
+<li><a href="def/decision-making.html">decision making</a></li>
+<li><a href="def/defend-the-atlanta-forest.html">Defend the Atlanta Forest</a></li>
+<li><a href="def/degrowth.html">degrowth</a></li>
+<li><a href="def/dendrobranchiata.html">dendrobranchiata</a></li>
+<li><a href="def/deoxyribonucleic-acid.html">deoxyribonucleic acid</a></li>
+<li><a href="def/desire.html">desire</a></li>
+<li><a href="def/destruction.html">destruction</a></li>
+<li><a href="def/diatomic-molecule.html">diatomic molecule</a></li>
+<li><a href="def/digital-garden.html">digital garden</a>
+<ul class="org-ul">
+<li>communications
+<ul class="org-ul">
+<li><a href="com/rebuilding-my-digital-garden.html">Rebuilding my digital garden</a></li>
+</ul></li>
+<li>digital gardening software
+<ul class="org-ul">
+<li><a href="src/infoponemacs.html">InfoPonEmacs</a></li>
+</ul></li>
+</ul></li>
+<li><a href="def/dimension.html">dimension</a></li>
+<li><a href="def/disaccharide.html">disaccharide</a></li>
+<li><a href="def/dissolved-nutrient.html">dissolved nutrient</a></li>
+<li><a href="def/biological-domain.html">domain</a></li>
+<li><a href="def/doomer.html">doomer</a>
+<ul class="org-ul">
+<li>references
+<ul class="org-ul">
+<li><a href="ref/soft-white-underbelly.html#orgc54fbdd">"Soft White Underbelly: Sam the Doomer"</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="outline-container-org8af19b3" class="outline-2">
+<h2 id="org8af19b3">E</h2>
+<div class="outline-text-2" id="text-org8af19b3">
+<ul class="org-ul">
+<li><a href="def/earth.html">Earth</a></li>
+<li><a href="def/economic-value.html">economic value</a></li>
+<li><a href="def/economy.html">economy</a>
+<ul class="org-ul">
+<li><a href="def/economic-value.html">economic value</a></li>
+</ul></li>
+<li><a href="def/electric-charge.html">electric charge</a></li>
+<li>electricity
+<ul class="org-ul">
+<li><a href="def/electric-charge.html">electric charge</a></li>
+</ul></li>
+<li><a href="def/electron.html">electron</a></li>
+<li><a href="def/emacsen.html">Emacsen</a>
+<ul class="org-ul">
+<li><a href="src/infoponemacs.html">InfoPonEmacs</a></li>
+</ul></li>
+<li>emsenn.net
+<ul class="org-ul">
+<li><a href="com/new-year-new-flow.html">"New year, new flow"</a></li>
+<li><a href="com/resettling-emsenn-net.html">"Resettling emsenn.net"</a></li>
+<li>communications
+<ul class="org-ul">
+<li><a href="com/rebuilding-my-digital-garden.html">Rebuilding my digital garden</a></li>
+</ul></li>
+</ul></li>
+<li><a href="def/energy.html">energy</a></li>
+<li><a href="def/energy-storage.html">energy storage</a></li>
+<li>energy
+<ul class="org-ul">
+<li><a href="def/energy-storage.html">energy storage</a></li>
+</ul></li>
+<li><a href="def/environment.html">environment</a>
+<ul class="org-ul">
+<li><a href="def/natural-environment.html">natural environment</a></li>
+</ul></li>
+<li><a href="def/eukaryote.html">eukaryote</a></li>
+<li><a href="def/multicellular-eukaryote.html">eukaryote</a>
+<ul class="org-ul">
+<li><a href="def/multicellular-eukaryote.html">multicellular eukaryote</a></li>
+</ul></li>
+<li><a href="def/event.html">event</a></li>
+<li><a href="def/export.html">export</a></li>
+<li><a href="def/extractivism.html">extractivism</a>
+<ul class="org-ul">
+<li><a href="def/green-extractivism.html">green extractivism</a></li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="outline-container-orgaf23595" class="outline-2">
+<h2 id="orgaf23595">F</h2>
+<div class="outline-text-2" id="text-orgaf23595">
+<ul class="org-ul">
+<li><a href="def/biological-family.html">family (biology)</a></li>
+<li><a href="def/feeder-fish.html">feeder fish</a></li>
+<li><a href="def/filament.html">filament</a></li>
+<li><a href="def/filamentous-algae.html">filamentous algae</a></li>
+<li><a href="def/fish.html">fish</a>
+<ul class="org-ul">
+<li><a href="def/bait-fish.html">bait fish</a></li>
+<li><a href="def/feeder-fish.html">feeder fish</a></li>
+<li><a href="def/fishing.html">fishing</a></li>
+</ul></li>
+<li><a href="def/fishing.html">fishing</a></li>
+<li><a href="def/fishing-bait.html">fishing bait</a></li>
+<li>fishing
+<ul class="org-ul">
+<li><a href="def/fishing-bait.html">fishing bait</a></li>
+</ul></li>
+<li><a href="def/food.html">food</a></li>
+<li><a href="def/food-autonomy.html">food autonomy</a></li>
+<li>food
+<ul class="org-ul">
+<li><a href="def/food-autonomy.html">food autonomy</a></li>
+</ul></li>
+<li><a href="def/force.html">force</a></li>
+<li><a href="def/forest.html">forest</a>
+<ul class="org-ul">
+<li><a href="def/atlanta-forest.html">Atlanta Forest</a></li>
+</ul></li>
+<li><a href="def/fun.html">fun</a></li>
+</ul>
+</div>
+</section>
+<section id="outline-container-org51eec73" class="outline-2">
+<h2 id="org51eec73">G</h2>
+<div class="outline-text-2" id="text-org51eec73">
+<ul class="org-ul">
+<li>garden
+<ul class="org-ul">
+<li>gardening store
+<ul class="org-ul">
+<li><a href="def/fifth-season-gardening-co.html">Fifth Season Gardeing Co.</a></li>
+</ul></li>
+</ul></li>
+<li><a href="def/gas.html">gas</a></li>
+<li><a href="def/gastropoda.html">gastropoda</a></li>
+<li><a href="def/goal.html">goal</a></li>
+<li><a href="def/governing-organization.html">governing organization</a></li>
+<li>government
+<ul class="org-ul">
+<li><a href="def/governing-organization.html">governing organization</a></li>
+</ul></li>
+<li><a href="def/grandparent.html">grandparent</a></li>
+<li><a href="def/greenwashing.html">greenwashing</a>
+<ul class="org-ul">
+<li><a href="def/green-extractivism.html">green extractivism</a></li>
+</ul></li>
+<li><a href="def/group.html">group</a></li>
+<li><a href="def/group-movement.html">group movement</a>
+<ul class="org-ul">
+<li><a href="def/autonomous-movement.html">autonomous movement</a></li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="outline-container-orgade221e" class="outline-2">
+<h2 id="orgade221e">H</h2>
+<div class="outline-text-2" id="text-orgade221e">
+<ul class="org-ul">
+<li><a href="def/habit.html">habit</a></li>
+<li><a href="def/hannah-kass.html">Hannah Kass</a></li>
+<li><a href="def/hearing.html">hearing</a></li>
+<li><a href="def/homonuclear-diatomic-molecule.html">homonuclear diatomic molecule</a></li>
+<li><a href="def/hydrogen.html">hydrogen</a></li>
+<li><a href="def/hydroponics.html">hydroponics</a></li>
+</ul>
+</div>
+</section>
+<section id="outline-container-org534e3ca" class="outline-2">
+<h2 id="org534e3ca">I</h2>
+<div class="outline-text-2" id="text-org534e3ca">
+<ul class="org-ul">
+<li>Indigeneity
+<ul class="org-ul">
+<li><a href="def/indigenous-people.html">Indigenous people</a></li>
+</ul></li>
+<li><a href="def/indigenous-people.html">Indigeneous people</a></li>
+<li><a href="def/individual.html">individual</a></li>
+<li><a href="def/industry.html">industry</a></li>
+<li><a href="src/infoponemacs.html">InfoPonEmacs</a></li>
+<li><a href="def/information.html">information</a></li>
+<li><a href="def/ion.html">ion</a></li>
+<li><a href="def/ionization.html">ionization</a></li>
+<li><a href="def/isotope.html">isotope</a></li>
+</ul>
+</div>
+</section>
+<section id="outline-container-org10f25c2" class="outline-2">
+<h2 id="org10f25c2">K</h2>
+<div class="outline-text-2" id="text-org10f25c2">
+<ul class="org-ul">
+<li><a href="def/biological-kingdom.html">kingdom</a></li>
+<li><a href="def/kyriarchy.html">kyriarchy</a>
+<ul class="org-ul">
+<li><a href="def/contemporary-kyriarchy.html">contemporary kyriarchy</a></li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="outline-container-org97bdcbb" class="outline-2">
+<h2 id="org97bdcbb">L</h2>
+<div class="outline-text-2" id="text-org97bdcbb">
+<ul class="org-ul">
+<li><a href="def/land.html">land</a></li>
+<li><a href="def/language.html">language</a></li>
+<li><a href="def/leaf.html">leaf</a></li>
+<li><a href="def/life.html">life</a></li>
+<li><a href="def/light.html">light</a></li>
+<li><a href="def/lignin.html">lignin</a></li>
+</ul>
+</div>
+</section>
+<section id="outline-container-org28f7e34" class="outline-2">
+<h2 id="org28f7e34">M</h2>
+<div class="outline-text-2" id="text-org28f7e34">
+<ul class="org-ul">
+<li><a href="def/macromolecule.html">macromolecule</a></li>
+<li><a href="def/matter.html">matter</a></li>
+<li>Maya
+<ul class="org-ul">
+<li>timeline
+<ul class="org-ul">
+<li><a href="timeline.html#org24f8bbe">583, Yohl Ik'nal crowned Queen of Palenque</a></li>
+</ul></li>
+</ul></li>
+<li><a href="def/molecule.html">molecule</a>
+<ul class="org-ul">
+<li><a href="def/diatomic-molecule.html">diatomic molecule</a></li>
+</ul></li>
+<li><a href="def/mollusca.html">mollusk</a></li>
+<li><a href="def/monomer.html">monomer</a>
+<ul class="org-ul">
+<li><a href="def/organic-monomer.html">organic monomer</a></li>
+</ul></li>
+<li><a href="def/monosaccharide.html">monosaccharide</a></li>
+<li><a href="def/morality.html">morality</a></li>
+</ul>
+</div>
+</section>
+<section id="outline-container-orge9aed83" class="outline-2">
+<h2 id="orge9aed83">N</h2>
+<div class="outline-text-2" id="text-orge9aed83">
+<ul class="org-ul">
+<li><a href="def/natural-environment.html">natural environment</a></li>
+<li><a href="def/natural-resource.html">natural resource</a></li>
+<li>nature
+<ul class="org-ul">
+<li><a href="def/natural-environment.html">natural environment</a></li>
+</ul></li>
+<li><a href="def/neutron.html">neutron</a></li>
+<li><a href="def/nutrient.html">nutrient</a>
+<ul class="org-ul">
+<li><a href="def/dissolved-nutrient.html">dissolved nutrient</a></li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="outline-container-orge46e53a" class="outline-2">
+<h2 id="orge46e53a">O</h2>
+<div class="outline-text-2" id="text-orge46e53a">
+<ul class="org-ul">
+<li>object
+<ul class="org-ul">
+<li><a href="def/complex-object.html">complex object</a></li>
+</ul></li>
+<li><a href="ref/ok-doomer.html">OK Doomer</a></li>
+<li><a href="def/oligosaccharide.html">oligosaccharide</a></li>
+<li><a href="def/organic-monomer.html">organic monomer</a></li>
+<li><a href="def/organic-polymer.html">organic polymer</a></li>
+<li><a href="def/organic-tissue.html">organic tissue</a></li>
+<li><a href="def/organism.html">organism</a>
+<ul class="org-ul">
+<li><a href="def/unicellular-organism.html">unicellular organism</a></li>
+</ul></li>
+<li><a href="def/organization.html">organization</a>
+<ul class="org-ul">
+<li><a href="def/governing-organization.html">governing organization</a></li>
+</ul></li>
+<li><a href="def/oxygen.html">oxygen</a></li>
+</ul>
+</div>
+</section>
+<section id="outline-container-org144a041" class="outline-2">
+<h2 id="org144a041">P</h2>
+<div class="outline-text-2" id="text-org144a041">
+<ul class="org-ul">
+<li>Palaemonetes
+<ul class="org-ul">
+<li><a href="def/palaemonetes-paludosus.html">Palaemontes paludosus</a></li>
+</ul></li>
+<li>Palenque
+<ul class="org-ul">
+<li>timeline
+<ul class="org-ul">
+<li><a href="timeline.html#org24f8bbe">583, Yohl Ik'nal crowned Queen of Palenque</a></li>
+</ul></li>
+</ul></li>
+<li><a href="def/parent.html">parent</a></li>
+<li><a href="def/people.html">people</a></li>
+<li><a href="def/phloem.html">phloem</a></li>
+<li><a href="def/photosynthesis.html">photosynthesis</a></li>
+<li><a href="def/biological-phylum.html">phylum</a></li>
+<li><a href="def/physidae.html">Physidae</a></li>
+<li>Pimephales
+<ul class="org-ul">
+<li><a href="def/pimephales-promelas.html">Pimephales promelas</a>
+<ul class="org-ul">
+<li><a href="def/pimephales-promelas-rosy-red.html">Pimephales promelas 'Rosy Red'</a></li>
+</ul></li>
+</ul></li>
+<li>Pistia
+<ul class="org-ul">
+<li><a href="def/pistia-stratiotes.html">Pistia stratiotes</a></li>
+</ul></li>
+<li><a href="def/planet.html">planet</a></li>
+<li><a href="def/plant.html">plant</a>
+<ul class="org-ul">
+<li><a href="def/aquatic-plant.html">aquatic plant</a></li>
+</ul></li>
+<li><a href="def/plasma.html">plasma</a></li>
+<li><a href="def/pleocyemata.html">pleocyemata</a></li>
+<li><a href="def/political-movement.html">political movement</a></li>
+<li>politics
+<ul class="org-ul">
+<li><a href="def/political-control.html">political control</a></li>
+<li><a href="def/political-state.html">state</a></li>
+</ul></li>
+<li><a href="def/polymer.html">polymer</a>
+<ul class="org-ul">
+<li><a href="def/organic-polymer.html">organic polymer</a></li>
+</ul></li>
+<li><a href="def/polysaccharide.html">polysaccharide</a></li>
+<li>poultry
+<ul class="org-ul">
+<li>poultry supplies
+<ul class="org-ul">
+<li>supplemental feed
+<ul class="org-ul">
+<li><a href="def/calcium-grit.html">calcium grit</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="def/social-power.html">power (social)</a></li>
+<li><a href="def/prey.html">prey</a></li>
+<li><a href="def/process.html">process</a>
+<ul class="org-ul">
+<li><a href="def/biological-process.html">biological process</a></li>
+</ul></li>
+<li><a href="def/project.html">project</a></li>
+<li><a href="def/project-management.html">project management</a></li>
+<li><a href="def/prokaryote.html">prokaryote</a></li>
+<li><a href="def/proton.html">proton</a></li>
+</ul>
+</div>
+</section>
+<section id="outline-container-org3af983c" class="outline-2">
+<h2 id="org3af983c">R</h2>
+<div class="outline-text-2" id="text-org3af983c">
+<ul class="org-ul">
+<li><a href="def/renewable-energy-revolution.html">Renewable Energy Revolution</a></li>
+<li><a href="def/resource.html">resource</a>
+<ul class="org-ul">
+<li><a href="def/natural-resource.html">natural resource</a></li>
+</ul></li>
+<li><a href="def/botanical-root.html">root (botany)</a></li>
+</ul>
+</div>
+</section>
+<section id="outline-container-org0debe6d" class="outline-2">
+<h2 id="org0debe6d">S</h2>
+<div class="outline-text-2" id="text-org0debe6d">
+<ul class="org-ul">
+<li><a href="def/saccharide.html">saccharide</a>
+<ul class="org-ul">
+<li><a href="def/disaccharide.html">disaccharide</a></li>
+<li><a href="def/oligosaccharide.html">oligosaccharide</a></li>
+<li><a href="def/polysaccharide.html">polysaccharide</a></li>
+</ul></li>
+<li><a href="def/seashell.html">seashell</a></li>
+<li>seed
+<ul class="org-ul">
+<li><a href="def/seed-seller.html">seed seller</a>
+<ul class="org-ul">
+<li><a href="def/sow-true-seed.html">Sow True Seed</a></li>
+</ul></li>
+</ul></li>
+<li><a href="def/sense.html">sense</a></li>
+<li><a href="def/settler.html">settler</a></li>
+<li><a href="def/settler-city.html">settler city</a></li>
+<li>settlerism
+<ul class="org-ul">
+<li><a href="def/settler-city.html">settler city</a></li>
+</ul></li>
+<li><a href="def/shrimp.html">shrimp</a></li>
+<li>slavery
+<ul class="org-ul">
+<li>slave uprisings
+<ul class="org-ul">
+<li><a href="timeline.html#org0b46f48">1521, La Espanola slave revolt began</a></li>
+</ul></li>
+</ul></li>
+<li><a href="def/social-value.html">social value</a></li>
+<li><a href="def/society.html">society</a>
+<ul class="org-ul">
+<li><a href="def/social-power.html">power</a></li>
+<li><a href="def/social-mechanism.html">social mechanism</a>
+<ul class="org-ul">
+<li><a href="def/social-erasure.html">social erasure</a></li>
+</ul></li>
+<li><a href="def/social-order.html">social order</a></li>
+<li><a href="def/social-phenomenon.html">social phenomenon</a>
+<ul class="org-ul">
+<li><a href="def/social-erasure.html">social erasure</a></li>
+</ul></li>
+<li><a href="def/social-value.html">social value</a></li>
+</ul></li>
+<li>Solanum
+<ul class="org-ul">
+<li><a href="def/solanum-tuberosum.html">Solanum tuberosum</a>
+<ul class="org-ul">
+<li><a href="def/solanum-tuberosum-austrian-crescent.html">Austrian Crescent</a></li>
+<li><a href="com/planning-potatoes-2023.html">Planning potatoes, 2023</a></li>
+</ul></li>
+</ul></li>
+<li><a href="def/chemical-solution.html">solution (chemistry)</a></li>
+<li><a href="def/sound.html">sound</a></li>
+<li><a href="def/sow-true-seed.html">Sow True Seed</a></li>
+<li><a href="def/space.html">space</a></li>
+<li><a href="def/star.html">star</a></li>
+<li><a href="def/starch.html">starch</a></li>
+<li><a href="def/political-state.html">state (politics)</a></li>
+<li><a href="def/botanical-stem.html">stem</a></li>
+<li><a href="def/structure.html">structure</a></li>
+<li><a href="def/biological-suborder.html">suborder</a></li>
+<li><a href="def/biological-infraorder.html">suborder</a></li>
+<li><a href="def/biological-subphylum.html">subphylum</a></li>
+<li><a href="def/substrate.html">substrate</a>
+<ul class="org-ul">
+<li><a href="def/aquarium-substrate.html">aquarium substrate</a></li>
+</ul></li>
+<li><a href="def/sugar.html">sugar</a></li>
+<li><a href="def/sun.html">Sun</a></li>
+<li><a href="def/sustainability.html">sustainability</a></li>
+<li><a href="def/symbol.html">symbol</a></li>
+<li><a href="def/system.html">system</a>
+<ul class="org-ul">
+<li><a href="def/complex-system.html">complex system</a></li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="outline-container-org2b345ec" class="outline-2">
+<h2 id="org2b345ec">T</h2>
+<div class="outline-text-2" id="text-org2b345ec">
+<ul class="org-ul">
+<li><a href="def/task.html">task</a></li>
+<li><a href="def/time.html">time</a></li>
+<li>tissue
+<ul class="org-ul">
+<li><a href="def/vascular-tissue.html">vascular tissue</a></li>
+</ul></li>
+<li><a href="def/tracheophyta.html">tracheophyta</a></li>
+<li><a href="def/trade.html">trade</a></li>
+<li><a href="def/tree.html">tree</a></li>
+<li><a href="def/truth.html">truth</a></li>
+</ul>
+</div>
+</section>
+<section id="outline-container-org7801eec" class="outline-2">
+<h2 id="org7801eec">U</h2>
+<div class="outline-text-2" id="text-org7801eec">
+<ul class="org-ul">
+<li><a href="def/universe.html">universe</a></li>
+<li>uprisings
+<ul class="org-ul">
+<li>slave uprisings
+<ul class="org-ul">
+<li><a href="timeline.html#org0b46f48">1521, La Espanola slave revolt began</a></li>
+</ul></li>
+</ul></li>
+<li><a href="def/utility.html">utility</a></li>
+</ul>
+</div>
+</section>
+<section id="outline-container-org7dee65c" class="outline-2">
+<h2 id="org7dee65c">V</h2>
+<div class="outline-text-2" id="text-org7dee65c">
+<ul class="org-ul">
+<li><a href="def/value.html">value</a>
+<ul class="org-ul">
+<li><a href="def/economic-value.html">economic value</a></li>
+</ul></li>
+<li><a href="def/vascular-tissue.html">vascular tissue</a></li>
+<li>vascular
+<ul class="org-ul">
+<li><a href="def/vascular-tissue.html">vascular tissue</a></li>
+</ul></li>
+<li><a href="def/vibration.html">vibration</a></li>
+<li><a href="def/violence.html">violence</a></li>
+<li><a href="def/vivarium.html">vivarium</a></li>
+<li><a href="def/aquarium.html">vivarium</a></li>
+</ul>
+</div>
+</section>
+<section id="outline-container-org082a191" class="outline-2">
+<h2 id="org082a191">W</h2>
+<div class="outline-text-2" id="text-org082a191">
+<ul class="org-ul">
+<li>Wales
+<ul class="org-ul">
+<li><a href="timeline.html#llywelyn-ap-gruffudd-defeated">1282, Llywelyn ap Gruffudd, last sovereign Prince of Wales, was defeated in battle</a></li>
+</ul></li>
+<li><a href="def/water.html">water</a></li>
+<li><a href="def/will.html">will</a></li>
+</ul>
+</div>
+</section>
+<section id="outline-container-org08aaa47" class="outline-2">
+<h2 id="org08aaa47">X</h2>
+<div class="outline-text-2" id="text-org08aaa47">
+<ul class="org-ul">
+<li><a href="def/xylem.html">xylem</a></li>
+</ul>
+</div>
+</section>
+</main>
+<section id="postamble" class="status">
+<p class="date">Created: 2023-01-14 Sat 15:02</p>
+</section>
+</body>
+</html>

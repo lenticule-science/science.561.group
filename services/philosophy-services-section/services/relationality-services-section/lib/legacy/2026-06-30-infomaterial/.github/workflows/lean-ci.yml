@@ -1,0 +1,37 @@
+name: Lean CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: lean-ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: Build and local gates
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Build with Lake
+        uses: leanprover/lean-action@v1
+        with:
+          auto-config: false
+          lake-package-directory: .
+          use-mathlib-cache: false
+
+      - name: Run local verification contract
+        run: make check
+
+      - name: Run packaging audit
+        run: node scripts/audit-infomaterial-packaging.mjs --fail

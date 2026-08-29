@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mark/content/claim",
+  "title": "claim",
+  "description": "A mark carried on the right hand - the second side of an utterance. One of the two kinds of mark.",
+  "type": "object",
+  "required": [
+    "hand",
+    "mark"
+  ],
+  "properties": {
+    "hand": {
+      "const": "right",
+      "description": "the claim side of the utterance pair"
+    },
+    "mark": {
+      "$ref": "mark",
+      "description": "the mark this claim carries"
+    }
+  }
+}

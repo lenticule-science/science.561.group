@@ -1,0 +1,31 @@
+#+title: 2020-12-19
+#+begin_head
+#+ghe_schema: daily-record-0.1.0
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-19 Sat 10:37]
+#+roam_tags: daily-record
+#+end_head
+#+name: summary-text
+#+begin_summary
+This is [[file:../emsenn.org][emsenn]]'s [[file:../daily_record.org][daily record]] for [2020-12-19 Sat]. If you are viewing this record outside of its original environment, please be aware it maybe be heavily redacted.
+#+end_summary
+* Journal                                                          :noexport:
+** [2020-12-19 Sat 10:37]
+ Today I want to work on a few things. I slept poorly again last night and am super-sore again today.
+
+- Work on the [[file:../css.org][CSS]] written for [[file:../groundhog_emacs.org][Groundhog Emacs]].
+- Figure out "quality-of-life" improvements for Groundhog Emacs, too, specially around searching through [[file:../org_roam_records.org][Org-roam records]] and maybe giving it a better... look.
+- Continue organizing the Groundhog Emacs file.
+- Based on some reading and thinking last night as I went to bed, I also want to start drafting specific [[file:../schema.org][schema]] for types of [[file:../record.org][records]], and then clearly lay out my [[file:../org_roam_capture_template.org][Org-roam capture templates]] to correspond with these schema, and have them encode what version of the capture template is used.
+** [2020-12-19 Sat 21:06]
+   The [[file:../language.org][language]] we use to describe [[file:../food.org][food]] is fascinating. To most folk I know, [[file:../pudding.org][pudding]] is a sweet thick custard, but today I got gifted a pound of [[file:../gurty_pudding.org][gurty pudding]].
+* Activity Log                                                     :noexport:
+** [2020-12-19 Sat 11:14]
+ So to get started with, I'm going to first clean up the Groundhog Emacs file!
+** [2020-12-19 Sat 18:06]
+ Wow, I've been so sore and useless today! I haven't gotten nearly as much as done as I wanted to. I have kind of organized the GHE record, and touched on defining records, but that's about it!
+** [2020-12-19 Sat 20:11]
+ Okay, I pulled the config out of the record and worked with it straight and got it working and much cleaner. And, added [[file:../ivy.org][Ivy]] to the configuration, which fixes my ability to use [[file:../org_roam_tags.org][Org-roam tags]].
+** [2020-12-19 Sat 22:24]
+ I wanted to write the variables used in GHE in tables and then parse that to Elisp and GOSH I think i got confused lol!

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "biology/atom/scripts/bonding/content/molecule/scripts/assembling/content/cell/scripts/integrating/content/organism/scripts/relating/content/ecology/scripts/systematizing/content/ecosystem/scripts/interacting/content/niche-construction",
+  "title": "niche-construction",
+  "description": "Organisms modifying their own selective environment, creating feedback between evolution and ecology: the agent does not merely adapt to its niche but builds it, and the built niche then selects. A reading of ecological interaction.",
+  "type": "object",
+  "required": ["modifies-environment", "feedback"],
+  "properties": {
+    "modifies-environment": { "description": "the organism alters the conditions it and others experience", "const": true },
+    "feedback": { "description": "the modified environment becomes a selective pressure — evolution↔ecology loop", "const": true }
+  }
+}

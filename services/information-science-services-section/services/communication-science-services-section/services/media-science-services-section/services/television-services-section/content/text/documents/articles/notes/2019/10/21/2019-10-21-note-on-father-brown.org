@@ -1,0 +1,12 @@
+#+TITLE: Criticising BBC's Merlin
+#+AUTHOR: emsenn
+#+DATE: 2019-10-21
+#+HUGO_BASE_DIR: ~/dev/personal-website/
+#+HUGO_SECTION: media-criticisms
+#+EXPORT_FILE_NAME: father-brown
+#+HUGO_TAGS: "Father Brown"
+#+HUGO_CUSTOM_FRONT_MATTER: :predecolonial true
+#+MACRO: author emsenn
+I wrote less than I meant to yesterday, instead spending most of the day sleeping and watching /Father Brown/, a /BBC/ mystery drama with a touch of levity that often lands, but sometimes seems to be erasing some of the sins of the /Catholic Church/.
+
+Which is shame because I appreciate how it does touch on some issues like post-War classism in England.

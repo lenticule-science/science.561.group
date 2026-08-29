@@ -1,0 +1,18 @@
+name: rehead_trace
+inputs:
+- role: trace
+  kind: trace
+outputs:
+- role: rehead_trace_evidence
+  kind: rehead_trace_evidence
+steps:
+- name: rehead_trace
+  operator: rehead_trace
+  step_index: 0
+  inputs:
+  - role: trace
+    kind: trace
+  outputs:
+  - role: rehead_trace_evidence
+    kind: rehead_trace_evidence
+id: 625096af0d7e914150ca7d94848c79b7db2b4f6d886fb142dcdf7f64b5895d7d

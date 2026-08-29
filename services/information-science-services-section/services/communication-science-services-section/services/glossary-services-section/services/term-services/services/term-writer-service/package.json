@@ -1,0 +1,17 @@
+{
+  "name": "@lenticule-science/term-writer-service",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Writes source-bounded glossary term records as canonical Markdown files.",
+  "bin": {
+    "write-a-term": "./scripts/write-a-term.mjs"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "@red-cup-engineering/create-markdown-document-service": "0.1.2",
+    "@red-cup-engineering/write-markdown-file-service": "0.2.2"
+  },
+  "license": "UNLICENSED"
+}

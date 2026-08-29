@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       fdbcce87-9dae-4410-a1b6-edcbce16ecaf
+:END:
+#+title: financial tool
+#+date: [2025-08-29 Fri 12:19]
+

@@ -1,0 +1,9 @@
+Done. The `/week-plan` command now:
+
+- **Computes velocity** from events.jsonl (7/14/30-day rolling averages, uses 14-day as primary signal)
+- **Calculates weekly capacity** (velocity × 5 work days = 40 tasks at current rate)
+- **Scores plans** by composite of momentum (% complete), urgency (due dates), criticality (unblocks other work), and ready ratio
+- **Allocates capacity proportionally** across plans by score, capped by ready task count
+- **Selects specific tasks** per plan (overdue first, then by due date)
+- **Shows expected progress** (e.g., "29/41 → 33/41 after this week")
+- Supports `--capacity N` override, `--json` output, `--last-week` context

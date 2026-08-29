@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       fdfdd953-fd40-447a-8ce7-5028ff98dabf
+:END:
+#+title: vault
+#+date: [2025-09-06 Sat 09:51]
+

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       db8590b9-15ac-4f98-9570-dd94edc4565a
+:END:
+#+title: finitude
+#+date: [2025-09-04 Thu 09:30]
+

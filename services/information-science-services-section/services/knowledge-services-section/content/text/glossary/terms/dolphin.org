@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       3f2cad7c-e730-4eb2-8df9-18079c265eaa
+:END:
+#+title: dolphin
+#+date: [2025-10-05 Sun 08:21]
+

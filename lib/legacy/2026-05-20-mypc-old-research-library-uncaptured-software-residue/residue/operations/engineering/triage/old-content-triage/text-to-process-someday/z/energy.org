@@ -1,0 +1,20 @@
+#+title: energy
+#+begin_head
+#+ghe_schema: record-0.1.3
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-24 Thu 11:27]
+#+end_head
+
+#+name: definition
+*/Energy/* is what makes things go. Or maybe, it's what makes things change over time? I'm really unqualified to define energy!
+
+#toc: headlines 2
+* Intrododuction
+* energy
+* Supplements
+** Record history
+   :LOGBOOK:
+   - Note taken on [2020-12-24 Thu 11:27] \\
+     Created
+   :END:

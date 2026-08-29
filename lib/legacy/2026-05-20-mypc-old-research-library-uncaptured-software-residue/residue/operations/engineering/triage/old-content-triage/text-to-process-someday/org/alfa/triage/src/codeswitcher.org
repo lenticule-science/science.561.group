@@ -1,0 +1,25 @@
+#+SETUPFILE: ./default-setup.inc
+#+TITLE: Codeswitcher
+#+EXPORT_FILE_NAME: ../pub/codeswitcher
+#+MACRO: document-type novel
+#+INDEX: fiction!/Codeswitcher/
+#+DESCRIPTION: A tale told by an idiot; angry sounds signifying nothing
+#+TOC: headlines 1
+* Introduction
+#+INCLUDE: "./plates.inc::draft"
+#+INCLUDE: "./plates.inc::default-eli"
+* Codeswitcher
+/Instead of writing this, I should have read Tolstoy/
+
+*/A neomodernist stone soup/*
+* Supplements
+** Contribute
+   :PROPERTIES:
+   :CUSTOM_ID: supplements-contribute
+   :END:
+#+INCLUDE: "./plates.inc::personal-contribute"
+** License
+   :PROPERTIES:
+   :CUSTOM_ID: supplements-license
+   :END:
+#+INCLUDE: "./plates.inc::mit-license"

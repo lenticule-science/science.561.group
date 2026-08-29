@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/active-predication-cell",
+  "title": "potential-predication-cell",
+  "description": "The potential corner of the predication cell's four-point slot-presence partition - positive, one side committed. A refinement of the predication cell reached by the predication category's internal morphisms, sharing its four-point form with the articulation cell and the bilattice charge.",
+  "allOf": [
+    { "$ref": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell" }
+  ],
+  "type": "object",
+  "required": ["slot-presence", "active"],
+  "properties": {
+    "slot-presence": { "const": "active", "description": "this corner of the recurring slot-presence partition; positive" },
+    "active": { "const": true, "description": "one side is committed - the cell is positive" }
+  }
+}

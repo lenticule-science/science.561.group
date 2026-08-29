@@ -1,0 +1,308 @@
+#+TITLE: Trustee Corner Apartments
+#+AUTHOR: FJC Trust, 101 Harkness Court, Durham NC 27706
+#+TODO: TODO | DONE(!)
+#+TODO: INVALID
+#+TODO: Walk | Walked
+#+TODO: Check | Checked
+#+TODO: Sweep | Swept
+#+TODO: Clean | Cleaned
+#+TODO: Collate | Collated
+#+TODO: Conduct | Conducteed
+#+TODO: Prop | Propped
+#+TODO: Close | Closed
+#+TODO: Sort | Sorted
+#+TODO: Deposit | Deposited
+#+TODO: Account | Accounted
+#+TODO: Roll | Rolled
+* Documents
+*** Application
+
+*** Building Guidelines & Services
+**** Stairways & Hallways
+**** Parking Lot
+**** Laundry Room
+**** Trash & Recycling
+**** Services
+***** Laundry Supplies
+- Quarters
+- Laundry Detergent
+***** Printing, Copying, Scanning
+Black and white printing/copying only.  10 cents a page.
+*** Lease
+*** Military Service Disclosure
+*** Notice of Intent to Terminate Agreement
+* Inventory
+* Ledgers
+** Monthly Deposits
+*** 2018
+**** November 2018
+  #+BEGIN_SRC ledger :exports both :cmdline reg "Trustee Corner Income"
+  2018/11/01 * Trustee Corner Deposit
+    Unit 101:Andromeda Training  -$2364.54 ; Chk# 7885 2018-11-01
+    Unit 103:Fernando Cruiz       -$425.00 ; Chk# 1501 2018-11-05
+    Unit 105:Crooks Corner        -$450.00 ; Chk# 22183 2018-11-01
+    Unit 201:Nicholas Teder       -$650.00 ; Chk# 162 2018-10-29
+    Unit 202:Esther Davis         -$650.00 ; Chk# 208 2018-11-01
+    Unit 203:Danner Morrison      -$650.00 ; Chk# 2002 2018-11-04
+    Unit 204:Amanda Barr          -$650.00 ; Chk# 104 2018-11-05
+    Unit 205:Colin Thomson        -$650.00 ; Chk# 104 2018-11-05
+    Unit 206:Michele Natale       -$650.00 ; Chk# 328 2018-11-05
+    Unit 207:Jason Hoey           -$650.00 ; Chk# 1087 2018-11-04
+    Unit 208:John Joseph          -$650.00 ; Chk# 1292 2018-11-01
+    Unit 301:Katie Costa          -$650.00 ; Chk# 1393 2018-11-05
+    Unit 302:Joey Watson          -$650.00 ; Chk# 1138 2018-11-04
+    Unit 303:Olivia Neal          -$650.00 ; Chk# 106 2018-11-05
+    Unit 304:Saeed Blake          -$650.00 ; MO# 25120126350 2018-11-01
+    Unit 305:Lilah Poor           -$650.00 ; cash
+    Unit 307:R. Mercandante       -$650.00 ; MO# 237718 2018-11-5
+    Unit 308:Harry Ewell          -$325.00 ; Chk# 207 2018-11-02
+                                           ; (half month's rent)
+    Trustee Corner Income
+  #+END_SRC
+  #+RESULTS:
+  : 18-Nov-01 Trustee Corner Depo.. Trustee Corner Income     $12664.54    $12664.54
+  See [[file:assets/bba-november-2018-checks.pdf][assets/bba-november-2018-checks.pdf]] for additional records.
+**** December 2018
+  #+BEGIN_SRC ledger
+  2018/12/01 * Trustee Corner Deposit
+    Unit 101:Andromeda Training      -$2362.54 ; Chk# 7890 2018-11-28
+    Unit 103:Fernando Cruz            -$425.00 ; Chk# 1504 2018-12-04
+    Unit 105:Crooks Corner            -$450.00 ; Chk# 22377 2018-12-05
+    Unit 201:Nicholas Teder           -$650.00 ; Chk# 163 2018-11-30
+    Unit 202:Esther Davis             -$325.00 ; Chk# 209 2018-12-01
+    Unit 203:Danner Morrison          -$650.00 ; Chk# 2006 2018-04-18
+    Unit 204:Amanda Barr              -$650.00 ; Chk# 3240 2018-12-01
+    Unit 205:Colin Thomson            -$685.00 ; Chk# 107 2018-12-04
+    Unit 206:Michele Natale           -$650.00 ; Chk# 341 2018-12-05
+    Unit 207:Jason Hoey               -$650.00 ; Chk# 1089 2018-12-02
+    Unit 208:John Joseph              -$650.00 ; Chk# 1296 2018-12-05
+    Unit 301:Katie Costa              -$650.00 ; Chk# 1300 2018-12-03
+    Unit 302:Joey Watson              -$650.00 ; Chk# 1139 2018-12-02
+    Unit 303:Olivia Neal              -$650.00 ; CHk# 107 2018-12-05
+    Unit 304:Saeed Blake              -$650.00 ; MO# 25120143382 2018-12-01
+    Unit 306:Gregory Ryan Ross        -$475.00 ; MO# 17-842984843 2018-12-05
+    Unit 306:Gregory Ryan Ross        -$200.00 ; MO# 17-842985042
+                                               ; November rent & late fee
+    Unit 308:Christopher David Allen  -$975.00 ; MO# 5400107454 2018-11-13
+                                               ; $650 deposit, $325 half-November
+    Unit 308:Christopher David Allen  -$500.00 ; MO# 5300377654
+                                               ; discounted cleaning
+    Trustee Corner Income
+  #+END_SRC
+  #+RESULTS:
+  : 18-Dec-01 Trustee Corner Depo.. Trustee Corner Income     $12897.54    $12897.54
+*** 2019
+**** January 2019
+  #+BEGIN_SRC ledger :exports both :cmdline reg "Trustee Corner Income"
+  2019/01/01 * Trustee Corner Deposit
+    Unit 101:Andromeda Training      -$2362.54 ; Chk# 7895 2018-12-27
+    Unit 103:Fernando Cruz              -$0.00
+    Unit 105:Crooks Corner              -$0.00
+    Unit 201:Nicholas Teder           -$650.00 ; Chk# 164 2019-01-01
+    Unit 202:Esther Davis               -$0.00
+    Unit 203:Danner Morrison            -$0.00
+    Unit 204:Amanda Barr                -$0.00
+    Unit 205:Colin Thomson              -$0.00
+    Unit 206:Michele Natale             -$0.00
+    Unit 207:Jason Hoey               -$650.00 ; Chk# 1095 2019-01-01
+    Unit 208:Antonio Currie           -$500.00 ; MO# 17-860061769
+    Unit 208:Antonio Currie           -$500.00 ; MO# 17-860061770
+    Unit 208:Antonio Currie           -$370.00 ; MO# 17-860061771
+    Unit 301:Katie Costa                -$0.00
+    Unit 302:Joey Watson                -$0.00
+    Unit 303:Olivia Neal                -$0.00
+    Unit 304:Saeed Blake                -$0.00
+    Unit 306:Gregory Ryan Ross        -$400.00 ; MO# 17-868152326
+    Unit 307:Robert Mercadante        -$650.00 ; Chk# 0000242506 2018-12-06
+    Unit 308:Christopher David Allen    -$0.00
+    Trustee Corner Income
+  #+END_SRC
+
+  #+RESULTS:
+  : 19-Jan-01 Trustee Corner Depo.. Trustee Corner Income      $6082.54     $6082.54
+* Logs
+* Routine
+** Clocktable
+ #+BEGIN: clocktable :maxlevel 4 :scope file
+ #+CAPTION: Clock summary at [2018-10-27 Sat 16:21]
+ | Headline                               |   Time |      |      |
+ |----------------------------------------+--------+------+------|
+ | *Total time*                           | *1:59* |      |      |
+ |----------------------------------------+--------+------+------|
+ | Daily                                  |   0:37 |      |      |
+ | \emsp Morning survey                   |        | 0:37 |      |
+ | \emsp\emsp TODO Walk the property      |        |      | 0:28 |
+ | \emsp\emsp TODO Check the bathrooms    |        |      | 0:09 |
+ | Weekly                                 |   0:54 |      |      |
+ | \emsp Sweeping                         |        | 0:54 |      |
+ | \emsp\emsp TODO Sweep Merritt sidewalk |        |      | 0:07 |
+ | \emsp\emsp TODO Sweep stairs           |        |      | 0:47 |
+ | Annual                                 |   0:28 |      |      |
+ | \emsp TODO Fire extinguisher servicing |        | 0:28 |      |
+ #+END:
+** Daily
+** Weekly
+*** Sweeping
+**** Sweep Rosemary sidewalk
+     SCHEDULED: <2018-11-01 Thu 09:20 .+1w>
+     - State "DONE"       from "TODO"       [2018-10-25 Thu 16:20]
+     :PROPERTIES:
+     :LAST_REPEAT: [2018-10-25 Thu 16:20]
+     :Effort:   0:20
+     :END:
+     :LOGBOOK:
+     CLOCK: [2018-10-25 Thu 15:57]--[2018-10-25 Thu 16:20] =>  0:23
+     :END:
+**** Sweep Merritt sidewalk
+     SCHEDULED: <2018-11-01 Thu 09:20 .+1w>
+     - State "DONE"       from "TODO"       [2018-10-25 Thu 16:14]
+     :LOGBOOK:
+     CLOCK: [2018-10-25 Thu 16:07]--[2018-10-25 Thu 16:14] =>  0:07
+     :END:
+     :PROPERTIES:
+     :LAST_REPEAT: [2018-10-25 Thu 16:14]
+     :Effort:   0:40
+     :END:
+**** Sweep parking lot
+     SCHEDULED: <2018-11-03 Sat 09:20 .+1w>
+     - State "DONE"       from "TODO"       [2018-10-27 Sat 15:18]
+     :PROPERTIES:
+     :LAST_REPEAT: [2018-10-27 Sat 15:18]
+     :Effort:   0:50
+     :END:
+     :LOGBOOK:
+     CLOCK: [2018-10-27 Sat 15:13]--[2018-10-27 Sat 15:28] =>  0:15
+     :END:
+**** Sweep stairs
+     - State "DONE"       from "TODO"       [2018-10-27 Sat 16:14]
+     :LOGBOOK:
+     CLOCK: [2018-10-27 Sat 15:26]--[2018-10-27 Sat 16:13] =>  0:47
+     :END:
+     SCHEDULED: <2018-11-03 Sat 09:20 .+1w>
+     :PROPERTIES:
+     :LAST_REPEAT: [2018-10-27 Sat 16:14]
+     :Effort:   0:50
+     :END:
+**** Sweep lobby
+     SCHEDULED: <2018-11-04 Sun 09:20 .+1w>
+     - State "Swept"      from "Sweep"      [2018-10-28 Sun 10:10]
+     CLOCK: [2018-10-28 Sun 09:59]--[2018-10-28 Sun 10:10] =>  0:11
+     :PROPERTIES:
+     :Effort:   0:20
+     :LAST_REPEAT: [2018-10-28 Sun 10:10]
+     :END:
+*** Bathrooms
+**** Clean west bathroom
+     SCHEDULED: <2018-11-01 Thu 09:20 .+3d>
+     - State "Cleaned"    from "Clean"      [2018-10-29 Mon 12:01]
+     :PROPERTIES:
+     :Effort:   15
+     :LAST_REPEAT: [2018-10-29 Mon 12:01]
+     :END:
+**** Clean east bathroom
+     SCHEDULED: <2018-10-31 Wed 09:20 .+3d>
+     - State "Cleaned"    from "Clean"      [2018-10-28 Sun 10:11]
+     - State "DONE"       from "TODO"       [2018-10-25 Thu 16:19]
+     :PROPERTIES:
+     :LAST_REPEAT: [2018-10-28 Sun 10:11]
+     :Effort:   0:15
+     :END:
+     :LOGBOOK:
+     CLOCK: [2018-10-28 Sun 10:10]--[2018-10-28 Sun 10:10] =>  0:00
+     :END:
+*** Clean laundry room
+    SCHEDULED: <2018-10-31 Wed 10:00 .+3d>
+    - State "Cleaned"    from "Clean"      [2018-10-28 Sun 15:18]
+    - State "DONE"       from "TODO"       [2018-10-25 Thu 16:20]
+    :PROPERTIES:
+    :LAST_REPEAT: [2018-10-28 Sun 15:18]
+    :Effort:   0:20
+    :END:
+*** Garbage
+**** Prop open dumpster
+     SCHEDULED: <2018-10-31 Wed 19:30 ++1w>
+     - State "DONE"       from "TODO"       [2018-10-25 Thu 14:57]
+     :PROPERTIES:
+     :LAST_REPEAT: [2018-10-25 Thu 14:57]
+     :Effort:   3
+     :END:
+**** Close dumpster
+     SCHEDULED: <2018-11-01 Thu 08:50 .+1w>
+     - State "DONE"       from "TODO"       [2018-10-25 Thu 16:19]
+     :PROPERTIES:
+     :LAST_REPEAT: [2018-10-25 Thu 16:19]
+     :Effort:   0:03
+     :END:
+ Make sure the dumpster has been emptied.
+**** Sort recycling
+     SCHEDULED: <2018-10-30 Tue 10:00 .+3d>
+     - State "DONE"       from "TODO"       [2018-10-27 Sat 12:35]
+     :PROPERTIES:
+     :LAST_REPEAT: [2018-10-27 Sat 12:35]
+     :Effort:   5
+     :END:
+*** Plant care
+**** Water lobby plants
+**** Water laundry room plants
+*** Seasonal
+**** Spring
+**** Summer
+***** INVALID Water outdoor plants
+      - State "DONE"       from "TODO"       [2018-10-27 Sat 16:23]
+***** INVALID Weedeat
+**** Fall
+**** Winter
+***** INVALID Salt the walkways
+** Monthly
+*** Handle rent
+**** Collate rent payments
+     SCHEDULED: <2018-11-05 Mon 08:10 +1m>
+     :PROPERTIES:
+     :Effort:   1:00
+     :END:
+**** Deposit rent payments
+     SCHEDULED: <2018-11-06 Tue 11:00 +1m>
+     :PROPERTIES:
+     :Effort:   1:30
+     :END:
+*** Account laundry
+    SCHEDULED: <2018-11-03 Sat +1m>
+    :PROPERTIES:
+    :Effort:   40
+    :END:
+*** Roll quarters
+    SCHEDULED: <2018-11-03 Sat +1m>
+    :PROPERTIES:
+    :Effort:   40
+    :END:
+** Quarterly
+**** Conduct unit exams
+     :PROPERTIES:
+     :Effort:   8:00
+     :END:
+ air conditioner, hot water heater, under sinks, bathtub, toilet, windows,
+**** Conduct inventory
+** Annual
+*** Seasonal
+**** Conduct spring routine changeover
+     SCHEDULED: <2019-03-15 Fri +1y>
+**** Conduct summer routine changeover
+     SCHEDULED: <2019-06-15 Sat +1y>
+**** Conduct Setup fall routine changeover
+     SCHEDULED: <2019-09-15 Sun +1y>
+**** Conduct Setup winter routine changeover
+     SCHEDULED: <2019-12-15 Sun +1y>
+*** Conduct Fire extinguisher servicing
+    SCHEDULED: <2019-10-24 Thu 10:00 +1y>
+    - State "DONE"       from "TODO"       [2018-10-24 Wed 11:32]
+    :PROPERTIES:
+    :LAST_REPEAT: [2018-10-24 Wed 21:43]
+    :Effort:   1:30
+    :END:
+    :LOGBOOK:
+    CLOCK: [2018-10-24 Wed 10:54]--[2018-10-24 Wed 11:22] =>  0:28
+    :END:
+
+* REFERENCES
+** Lockbox on Parking Lot Lobby Door
+4589

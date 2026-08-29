@@ -1,0 +1,58 @@
+#+TITLE: Plans: January 20, 2019
+#+OPTIONS: toc:nil
+* Introduction
+Today my partner is working in the evening, so I'd like to take the
+time to stream something [[https://twitch.tv/emsenn][on my Twitch]] profile during that time.
+(Around 2000h to 0200h UTC tomorrow, probably, - 3pm to 9pm east coast
+US.)
+
+I'm not sure what I'll be working on, though.
+* The Choices
+** Option 1: MUD Engine
+Maybe I'll get to looking at my MUD engine again - code for running a
+text-based multiplayer online role-playing game. I wanna do it
+literately programmed, because the goal of the project has always been
+as an educational tool.
+
+(I think, because it's a running application, I should detangle the
+source from the docs, rather than use :noweb. But I'm probably still
+wrong.)
+** Option 2: Literate Static Site Generator
+Another Org-mode project, this one would involve lots of watching me
+read and mumble as I learn about how I would approach writing a static
+site generator with org-mode. Right now, [[https://git.sr.ht/~emsenn/emsenn][git.sr.ht/~emsenn/emsenn]] is a
+literately programmed static site, but it's not generative - all the
+content is hardcoded into the file. I'd like to make it so that one
+could have an Org-mode file with builder functions, component
+templates, document templates, and content, that when detangled, would
+build out appropriate documents from its contained source.
+
+This one is WAY over my head with my current skills; I'd have to learn
+elisp too, but I'm real interested in doing it - I see Org-mode and
+making HTML documents featuring heavily into my future, and so
+familiarizing myself with the software is important.
+** Option 3: Learn to Make Custom Latex Classes
+This one is the one I know the least about: how to make custom latex
+classes. I've looked at it a little bit but tbh I wasn't even sure
+what directory they were in. Might be too difficult to stream, but if
+someone who's an expert tunes in and wants to help, I'd love to get
+this accomplished.
+** Option 4: Look at Literately Programming with R
+R is the... programming language...? academicfolk use to do...
+stuff... with lots and lots of data.
+
+I have something that I think could be best represented as "lots and
+lots of data:" a fantasy setting that I've used for stories and
+role-playing sessions. It's got lots of places, people, things, and
+stats.
+
+I'd love to program it in some way that the world history
+automatically updates the relevant sections in the atlas, for
+example - marking that a family of 8 moved from one town to another
+properly adjusts their populations.
+** Option 5: Sort Old Content
+I have a really large backlog of content - at last rough count, it was
+something like 700,000 words of essays, fiction, and poems.
+
+I'm slowly working on how I manage those pieces (each its own git
+repo), and it might be interesting to some of y'all

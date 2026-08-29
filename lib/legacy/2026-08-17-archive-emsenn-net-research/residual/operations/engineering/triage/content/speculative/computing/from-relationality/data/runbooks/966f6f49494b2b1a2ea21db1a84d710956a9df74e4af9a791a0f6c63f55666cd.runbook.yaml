@@ -1,0 +1,19 @@
+id: 966f6f49494b2b1a2ea21db1a84d710956a9df74e4af9a791a0f6c63f55666cd
+inputs:
+- kind: trace
+  role: trace
+name: trace_head
+outputs:
+- kind: head_trace_evidence
+  role: head_trace_evidence
+steps:
+- inputs:
+  - kind: trace
+    role: trace
+  name: head_trace
+  operator: head_trace
+  outputs:
+  - kind: head_trace_evidence
+    role: head_trace_evidence
+  step_index: 0
+

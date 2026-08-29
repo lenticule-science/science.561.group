@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       84c30965-a952-424d-a75b-aa1b903e45fe
+:node-relations: (([[id:bb02d1c8-34ba-44fa-8975-521b5ec337f8][negating]] . [[id:165b52e7-608b-40da-8a6d-4b14c8bf58ce][teleological]]))
+:END:
+#+title: non-teleological
+#+date: [2025-09-06 Sat 08:44]

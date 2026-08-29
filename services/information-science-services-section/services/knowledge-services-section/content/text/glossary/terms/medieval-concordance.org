@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       ef4069df-8de0-4b7f-b7f5-6644bd8712af
+:END:
+#+title: medieval concordance
+#+date: [2025-10-05 Sun 08:44]
+

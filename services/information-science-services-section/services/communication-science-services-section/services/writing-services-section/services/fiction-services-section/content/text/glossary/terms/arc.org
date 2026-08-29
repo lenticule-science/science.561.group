@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       f6b3e7c9-ff20-4a7b-8c3f-9710e8d52fac
+:END:
+#+title: arc
+#+date: [2025-09-05 Fri 22:16]
+

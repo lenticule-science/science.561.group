@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       0d70ce15-b766-4982-ac59-aba581c4a19f
+:END:
+#+title: optimism
+#+date: [2025-08-31 Sun 13:08]
+

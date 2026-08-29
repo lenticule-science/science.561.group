@@ -1,0 +1,166 @@
+#+title: 2021-01-08
+#+ghe_schema: daily-record-0.1.1
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2021-01-08 Fri 12:18]
+#+roam_tags: daily-record
+
+#+name: definition
+This is some of what I (emsenn) experienced and wrote on on [2021-01-08 Fri].
+
+#+toc: headlines 2
+
+* Activity Log                                                     :noexport:
+** [2021-01-08 Fri 14:21]
+   Cleaning up [[file:../groundhog_emacs.org][Groundhog Emacs]] so that I can turn it into "Essiemacs," [[file:../esther_davis.org][Esther]]'s [[file:../emacsen.org][Emacsen]].
+** [2021-01-08 Fri 19:03]
+   Just now sitting down to record what I saw in the news and discussed today. Spent most of the day tinkering with [[file:../groundhog_emacs.org][Groundhog Emacs]], or preparing to help [[file:../esther_davis.org][Esther]] take [[file:../note.org][notes]], which as I mentioned went better than expecte.d
+* Journal                                                          :noexport:
+** [2021-01-08 Fri 14:31]
+
+   My current workflow with [[file:../groundhog_emacs.org][GHE]] is that most of the time I'm using it on my desktop, but sometimes I'm on my laptop, ssh'd into my desktop. I wanted to make sure I didn't "compete" with any unsaved buffers on the desktop just now when switching to the laptop, and so looked onthe [[file:../web.org][Web]] and found the command =same-some-buffers=.
+** [2021-01-08 Fri 15:47]
+   
+   I'm currently getting to watch over [[file:../esther_davis.org][Esther]]'s shoulder as they do research for... I'm actually not sure which project of theirs this is for, come to think of it!
+
+   But, relevant to me is that they're using an [[file:../emacsen.org][Emacsen]] I set up for them, and so I'm really curious to watch them do their research.
+
+   One thing is that they're currently putting in ="= marks what might be better suited to a =#+begin_quote= block... but is that easy enough for them to insert... Let me test it real quick here. The hotkey is =C-c C-,=… or so I thought. That prompts me to set a priority? Hrmm... 
+
+   The underlying command is =org-insert-structure-template=, but what key is being triggered by =C-c C-,= right now? According to =C-h l=, (=view-lossage=), =org-priority=, which I don't need to be changing that quickly... hrmph. Well wait, no according to the lossage log, I'm inputting =C-c ,=... 
+
+   Oh, I wonder if this is becuase I'm coming in through a terminal and ssh and all that, and my =C-,= somehow gets turned into a =,=. 
+
+   [2021-01-08 Fri 16:01] Whatever it was, the hotkey works fine for them and they've already convert the quotes already extracted.
+
+
+* Weather observations
+
+* Posts
+** "Cheap talk" skepticism is an innocent repainting of systemic genocide, and, White identity cannot imagine its own decentering
+   
+   Today one of the first conversations I had was with [[file:../woozle.org][@Woozle]], in response to a post I saw them share in from their [[file:../fediverse.org][Fediverse]] [[file:../microblog.org][microblog]], [[https://freethoughtblogs.com/pharyngula/2021/01/08/cheap-talk-skepticism/]["'Cheap Talk' skepticism"]] from [[file:../paul-myers.org][Paul Myers]], who was himself sharing a [[file:../blog.org][blog]] post from [[file:../aaron-rabinowitz.org][Aaron Rabinowitz]], [[https://www.skeptic.org.uk/2021/01/cheap-talk-skepticism-why-we-need-to-push-back-against-those-who-are-just-asking-questions/]["Cheap talk skepticism: why we need to push back against those who are 'just asking questions'"]].
+
+   I was initially curious because the excerpt that Myers took from Rabinowitz's piece mentioned [[file:../sam-harris.org][Sam Harris]], whose [[file:../rhetoric.org][rhetoric]] I think is intended to manipulate the [[file:../american.org][American]] [[file:../overton-window.org][Overton window]] toward a [[file:../neo-liberal.org][neo-liberal]] [[file:../futurist.org][future]].
+
+   To sum up Rabinowitz's piece, basically, people that were previously viewed maverick intellectuals have now begun to, under the guise of "just asking questions," support dangerous conspiracy theories. Rabinowitz calls these sort of [[file:../skeptic.org][skeptics]] "cheap talk skeptics." I agree with Myers, the term is good. Here's some quotes from Rabinowitz's post, that offer a definition:
+
+   #+begin_quote
+   Cheap talk skepticism occurs when someone expresses skepticism in a way that comes at little cost to them, though it frequently comes at a significant cost to others. For example, if I express glib doubt about the personhood of another group of sentient beings, when my personhood is highly unlikely to be questioned, that would be cheap talk skepticism. Furthermore, if I received praise and positive reinforcement for my skeptical signaling, we could see that skepticism as effectively free of cost.
+   #+end_quote
+
+   As I said, this is a good concept. As an [[file:../indigenous.org][Indigenous]] person [[file:../web_performance.org][performing on the Web]], I often run into these "cheap talk skeptics" who literally will try and debate my personhood.
+
+   But, that definition isn't what drew me in. It was mentioning Sam Harris. So, I went further into the blog post.
+
+   #+begin_quote
+   Skepticism… has traditionally come at substantial personal cost… Skeptics are seen as risking social instability with their skepticism about deeply held community beliefs… For many, skeptics are most charitably seen as busy bodies who should really stay quiet during family meals.
+   #+end_quote
+
+   This definitely sounds like the perspective of skeptics' role in society that a skeptic would have, but I'm including it to situate where Rabinowitz is coming from. The next paragraph is where it gets interesting:
+
+   #+begin_quote
+   In the age of the internet though, there’s an audience for mass produced skepticism, and the cost for producing that skepticism has dropped to almost nothing. At first glance, that could seem like a good thing. One might argue that the goal of Mill style liberalism, the sort that’s highly valued by free speech advocates, is to create a space where speech in general comes with little to no cost, since that will promote the greatest free exchange of ideas. While I sympathise with this principle in theory, the unfortunate reality is that talk is rarely free – it’s more a question of how much the cost is externalised or carried by the speaker… The same rising distrust of institutions that is making space for more secularism is also making space for more anti-vaxxers, more Q-anoners, and as always more anti-Semites.
+   #+end_quote
+
+   It's actually pretty interesting watching someone from a fairly [[file:../conservative.org][conservative]] perspective come around to this idea that questioning things for the sake of it can be disruptive and harmful. But of course, skepticism, questioning the world, is useful.
+
+   #+begin_quote
+   It’s not easy to do quality skepticism and still produce hot takes across a wide range of topics, which is something that public intellectuals are unfortunately pressured to do in order to stay relevant. Properly justified belief lags behind misinformation in the best of times. Cheap talk skepticism widens that gap by forcing skeptics to correct this sort of internal misinformation alongside all the other forms of cheap talk out there.
+   #+end_quote
+
+   This is a problem I can actually relate to. For example, I want to be able to write and think critically about what I write, but that makes it take a long time and by the time I've finished it, the general [[file:../web.org][Web]] has moved on.
+
+   In this reading, I saw mention of "Monster Island." It was referencing another blog post from Rabinowitz, written back in October, [[https://www.skeptic.org.uk/2020/10/monster-island-free-speech-experiment/]["The Curse of Monster Island: a four year experiemtn in unmoderated free speech"]].
+
+   In this, Rabinowitz talks about, for /four years/, running a forum (a [[file:../facebook.org][Facebook]] group) that was specifically intended to lower the cost of speech. He points out that at least one member of the group went on to commit acts of terrorism.
+
+   No where in Rabinowitz's worry about the harms of the cheap talk skeptic does he think to mention that he cultivated them, actively, to feed his own intellectual curiosity. No where in either piece is there anything close to an apology.
+
+   As I said to Woozle:
+
+   #+begin_quote
+   From my perspective, it's not the "cheap talk skeptics" that are so harmful, but the people that act as though it's just "cheap talk," not an organized culture of genocide that they're a part of.
+
+   [Rabinowitz] provided a safe space for bigots to organize violence so that [he] could learn more about bigots. Then saying "these bigots feel too safe, that's the problem!" is just... insulting. Yes, they do feel too safe. I bet [Rabinowtiz] platforming them and debating them for years didn't make them feel less safe!
+
+   Giving a place for bigots to call for violence against people like me so kyriarchists can learn more about kyriarchism is a /way/ bigger issue to me. Reframing those organized calls to violence as people indulging their ability to talk without consequence is a /way/ bigger issue to me.
+
+   No shit white people say horrible shit when they think they're alone. I really don't think it's because people aren't calling out their faulty logic. I mean, I try and do that, and white folk who have opted into relationships and ASKED ME to do that walk away and mute me.
+
+   TBH it seems to fall back to the default operating mode of the kyriarchist: "If only I had a little more resources, things would be perfect."
+
+   If only the bigots knew what they said, they wouldn't be bigoted!
+   
+   ...What? Come on, that's a silly notion.
+   #+end_quote
+
+   I really liked Woozle's [[https://toot.cat/@woozle/105520982030627452][response at this point]], especially when they related it to [[file:../wiki.org][wiki]], which I was just reading about [[file:2021-01-07.org::*The world of wikis that wasn't][last night]]!
+
+   I directed Woozle to that post I wrote yesterday, and then the conversation took a pivot, when they said:
+
+   #+begin_quote
+   If you're dissing the idea of focusing on computing as part of a sustainable social solution, I strongly disagree -- as long as we're dealing with a highly technological society, and even if we wanted that to go away (I don't) I don't think we could make that happen short of massive genocide.
+   #+end_quote
+
+   This is a pretty common response to me suggesting that a given individual not focus their [[file:../labor.org][labor]] on improving contemporary [[file:../computer.org][computer]] efficiency.
+
+   In fact, just last [[file:2021-01-02.org][Saturday]] I lost an ally because they couldn't understand that me telling them to de-center their [[file:../relationships.org][relationship]] with computers wasn't the same thing as saying "everyone should throw their computers in the trash," or something. I've noticed folk seem to have a [[file:../habit.org][habit]] of projecting [[file:../anarcho-primitivism.org][anarcho-primitivism]] onto [[file:../native_american.org][Native]] [[file:../radical.org][radicals]].
+
+   It, to me, shows the baseline of supremacy that most [[file:../whiteness.org][White]] people hold, even if they don't realize it. If /they/ aren't the ones doing something, it simply cannot be done. On an individual level. Here's what I (snarkily) said about this last week:
+
+   #+begin_quote
+   Frankly, it is amazing how how clever white people are; I don't know a single one who had to change their life's work when they began to decolonize. And just, wow! I can't imagine how great it feels to know the thing you decided you wanted to be as a privileged youth just happens to be the best thing any person could possibly do to dismantle kyriarchism.
+
+   But it seems like that's just, every white person's story!
+
+   "I grew up wanting to be a computer programmer. Then, I learned [[file:../colonialism.org][colonialism]] is bad. Conveniently, the best way to fix it is with programming!"
+
+   Or they grew up wanting to be a journalist. Or lawyer.
+
+   It's just [[file:../white-saviorism.org][white saviorism]] run through the [[file:../assimilation.org][assimilation]] of [[file:../radicalism.org][radicalism]] instead of the broadcast of [[file:../christianity.org][Christianity]], but it's the same effect for me.
+   #+end_quote
+
+   Here's some of what I said about it today:
+
+   #+begin_quote
+   I criticize a white techperson's pursuit of their own technical projects as their primary [[file:../praxis.org][praxis]] toward emancipating humanity, and they go "if you don't want me making new blogging software, you must want the world to burn and everyone to fight with sticks and stones!"
+
+   When no... I'd love if they used their skill to help people accultured outside [[file:../kyriarchy.org][kyriarchism]] communicate, with themselves or with other kyriarchists. I'd love if they did things that ensured we didn't lose "blogs" as a concept within a generation, like used their technical skills to help do analysis on soil management projects in their area, or something.
+
+   But "white person learns from world outside whiteness to build tools for themselves that benefit the world" is like... [[file:../white-culture.org][white culture]]'s whole [[file:../hero.org][hero]] schtick since before the rennaissance. It's literally just [[file:../gilgamesh.org][Gilgamesh]] saying "I need to take this cedar, so that my palace doesn't collapse, then others can move into it!," however many centuries later.
+   #+end_quote
+
+   #+begin_quote
+   If I had a dollar for every time someone said "You don't think white people should be leading the change of our society, so you're an anarcho-primitivist" I would hire a plane to write "People who aren't white do exist, you know." up in the sky where everyone could see.
+   #+end_quote
+
+   #+begin_quote
+   I don't dismiss focusing on computing as part of a sustainable social solution. I dismiss white people doing more than acting as accomplices in that focus.
+
+That I say "white folk can't lead here" and white folk hear "no one can go there" is an indicator of internalized supremacy, and perhaps a reliance on the myth of the "[[file:../noble-savage.org][noble savage]]" Indian.
+   #+end_quote
+
+   #+begin_quote
+   A lot of folk just do computer work because it's what it's always done and don't consider that like, no matter how clever a [[file:../hacker.org][hacker]] they are, maybe it'd be more useful for them to help mend clothes at the local community center…
+
+   I know maybe it sounds irrelevant but to me it's almost the most important thing people understand before they read my posts here:
+
+   I'm only here because of <environmental reasons, in this case it is cold and rainy>. If those weren't inhibiting me, I would be making and distributing [[file:../soil.org][soil]], [[file:../plant.org][plants]], and [[file:../food.org][food]].
+   #+end_quote
+
+   Anyway, all that to say: white people frequently find it impossible to [[file:../imagination.org][imagine]] a future where they aren't leading the way, and it's literally the same quest for [[file:../immortality.org][immortality]] they've been hung up on for so so many generations.
+
+   My display name in the [[file:../fediverse.org][Fediverse]] has been =emsenn says end food apartheid= for like two years now. I've said it before, but I think too few people take it as a directive. I think the world would be made a much better place if each person decided to center ending [[file:../food_apartheid.org][food apartheid]] with their labor. We'll [[file:../craft.org][craft]] computers as we need to, as we do that, just like humans have always crafted [[file:../tool.org][tools]] to do what they need to do. Pursuing computer technology for its own right, or to solve the social problems of kyriarchists, seems as silly as making a social media network for the citizens of [[file:../pompei.org][Pompei]]. The [[file:../ways_of_living.org][way of life]] of the [[file:../person.org][people]] of the [[file:../contemporary_kyriarchy.org][contemporary settler-colonial kyriarchy]] is [[file:../extinct.org][extinct]] already. Move on.
+
+
+* News Log
+
+** Two arrested for protesting Keystone oil pipeline
+   :LOGBOOK:
+   - Note taken on [2021-01-09 Sat 10:24] \\
+     [[file:../jasilyn-charger.org][Jasilyn Charger]] and [[file:../oscar-high-elk.org][Oscar High Elk]] have been arrested for their protest actions against the [[file:../keystone_xl.org][Keystone XL]] [[file:../oil_pipeline.org][oil pipeline]].
+     
+     “This is on my people's land, and I have the right to protect it for my future generations,” Charger said. “Our people will not be bullied, and we're not criminals for protecting our water. What they forget to realize is that we have been occupying and living on this land for generations. And this just goes to show that we need to keep showing up as a people. We need to keep up the resistance."
+   :END:
+   - Source :: https://indiancountrytoday.com/the-press-pool/two-native-americans-arrested-over-keystone-xl-protests-zN3nD18Nik2hHITAHg9-ew

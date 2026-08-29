@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID:       f8877003-48b0-4974-b3c8-7e59229a60a7
+:public:   true
+:form:     [[id:556a02e4-457c-4225-a00b-397f111ad908][ontology]]
+:END:
+#+title: my ontology
+#+date: [2025-08-24 Sun 08:46]
+#+index: emsenn!emsenn's ontology
+
+*/My ontology/*, that is, the [[id:556a02e4-457c-4225-a00b-397f111ad908][ontology]] of [[id:40cbaad9-af3c-4573-b356-ae116687e483][emsenn]], is a [[id:522b576f-e675-4d2a-92e6-405eff81e47e][hybrid]] of [[id:6aa7192c-394a-4b11-93e6-cf6e0de22227][Lakota]] and [[id:471d8a41-8979-4980-b5e7-02df020dafa9][Taoist ontologies]], [[id:2cd70576-6b0d-4435-b429-3b438155b7ca][formalized]] with [[id:ddca63e0-1d58-46f1-b305-f9052108325a][liberal epistemology]].
+
+- my ontology isn't a [[id:9c6b813b-d3fb-4656-8eea-5a477dc16b0d][taxonomy]] but a [[id:24d9a29e-2b39-4837-897a-bb7331df911e][map]] of [[id:2fca3c4f-a223-41bc-92c0-cd93bef46c4d][derivatives]]
+  - not "what is being" but "what must necessarily derive from being"
+- [[id:bee4430c-bf1c-4691-ab81-a681997e3928][dynamic]] and [[id:a42b546c-b03c-4693-bbe9-419214325d9e][procedural]]
+  - [[id:bdffbe80-08e1-4e95-ad98-81cea8cf68a1][existing]] [[id:c8ba8cf5-2718-43e7-9f27-126319bdfe40][induces]] [[id:26e1c8ea-a0d9-4a57-8e70-44c7daa1705e][changing]], [[id:b7f76c64-87cc-4f32-b553-7405dc694c1e][necessitating]] more existing
+- [[id:d7f2df4f-2bce-4780-8814-2d2b692c0118][formal]]
+- [[id:6781da78-add6-489f-826d-4c086f7a51ef][relational]]
+  - the [[id:686e1d13-daa3-4d9e-9382-65d461eb2975][fundamental unit]] is not [[id:17ec58c8-6c58-418c-9302-621462ba4517][substance]] but a [[id:81791140-d846-43cc-88b0-f66f951b3576][relation]]
+- [[id:ff8d19bc-9538-464e-b11f-d9867049ede9][differential]]
+  - see derivatives
+- [[id:79a3181d-cedb-49f5-b466-b9aa9f04197d][recursive]]
+- [[id:d574f2ae-86a9-4c04-bf5e-a3e0cc04554f][reflexive]]
+- [[id:8f47c0c8-924b-4d8d-8d28-6d69b20ebaa3][aporiatic]]
+  - a la [[id:a75f5cc6-6b64-4d63-a050-d75d19de3f24][deconstructionism]], there is no resolving the fundamental claims
+- [[id:9d9713b1-abc2-4f65-9e05-28a13e7d5924][paraconsistent]] or [[id:9295d17b-7ac9-4046-a2f2-93d7b858c02e][inconsistent]]
+  - influenced by [[id:e7980e32-ea0b-4a49-9795-5118f3de5354][dialetheism]]
+- [[id:f085c670-95bc-4d1e-a6cd-d358ab649d60][semantic deflationism]]
+- [[id:64ff90ba-8e82-42c1-ad00-c678e4bf7eeb][negative ontology]]
+- [[id:f14433b2-0bed-438b-839c-bfa5003d7064][abyssal ontology]]
+- [[id:c66fe75f-fdce-4c8d-95cf-9609c359f880][process ontology]]
+- [[id:4fd6dd63-bef8-41a8-a12a-60427c9e729b][haecceity]]

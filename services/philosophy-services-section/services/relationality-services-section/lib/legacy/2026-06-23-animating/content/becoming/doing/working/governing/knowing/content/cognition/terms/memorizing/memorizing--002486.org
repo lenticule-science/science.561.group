@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       11197a28-85e5-4bbd-9c04-f11684bec02c
+:public:   true
+:resource-description: (([[id:edaef069-c68d-46aa-a970-d3cb7fe3165c][resource type]] . [[id:125874ab-1d68-4d20-b1b4-02025292ad89][thinking]]))
+:END:
+#+title: memorizing
+#+date: [2025-09-03 Wed 21:33]
+

@@ -1,0 +1,20 @@
+#+title: 2020-12-13
+#+begin_head
+#+ghe_schema: daily-record-0.1.0
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: 2020-12-13
+#+roam_tags: daily-record
+#+select_tags: export
+#+end_head
+
+#+name: summary-text
+#+begin_summary
+This is [[file:../emsenn.org][emsenn]]'s [[file:../daily_record.org][daily record]] for [2020-12-13 Sun]. If you are viewing this record outside of its original environment, please be aware it maybe be heavily redacted.
+#+end_summary
+
+* Journal                                                          :noexport:
+** [2020-12-13 Sun 08:50]
+   Made it through the night without too many interruptions to my sleep. Plan is to continue cleaning up inside the apartment. Can't work out in the garden much since it's drizzling and has been all night.
+
+    I wanna tinker more with my [[file:../emacs.org][Emacs]] config, specifically my [[file:../org_mode_website.org][Org-mode Website]]; I'd love to be able to say "Download Emacs and [[file:../git.org][Git]], do these commands, and start writing content, and then you'll have blahblah.github.com as a website for yourself.

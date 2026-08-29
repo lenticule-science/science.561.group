@@ -1,0 +1,124 @@
+---
+title: "Refusal"
+date-created: 2026-03-06
+aliases:
+  - "refusal"
+tags: []
+description: "The practice of declining to participate in systems of domination — withdrawing compliance, cooperation, labor, or recognition from structures that require your obedience to function."
+defines:
+  - "Refusal (anarchist)"
+---
+
+Refusal is the practice of declining to participate in systems of [domination](./domination.md). It is not passive — it is an act, often the most basic [anarchist](../_index.md) act available. Where [obedience](./obedience.md) sustains [hierarchy](./hierarchy.md), refusal withdraws the cooperation that hierarchy depends on.
+
+Refusal takes many forms. A worker who calls in sick rather than accept abusive conditions is refusing. A community that ignores a law it considers unjust is refusing. A person who declines to answer police questions is refusing. Students who walk out of school are refusing. Indigenous nations that reject colonial [authority](./authority.md) over their governance are refusing. In each case, the person or group is declining to participate in a relationship of [domination](./domination.md) — withdrawing the [obedience](./obedience.md), labor, recognition, or compliance that the dominant structure requires.
+
+What makes refusal political rather than merely personal is the structural insight behind it: [hierarchy](./hierarchy.md) requires participation to function. [The state](./the-state.md) cannot govern people who refuse to be governed. An employer cannot extract value from workers who refuse to work. A colonial regime cannot administer people who refuse its categories. [Coercion](./coercion.md) exists precisely to punish refusal — but coercion is expensive, unstable, and ultimately limited. If enough people refuse at once, no amount of coercion can sustain the system. This is why [the general strike](./the-general-strike.md) is powerful: it is refusal coordinated at scale.
+
+Refusal is not the same as reform. Reform asks the system to change itself while continuing to participate in it. Refusal withdraws from the system altogether — or from specific aspects of it. It does not negotiate, petition, or appeal to [authority](./authority.md). It simply declines to cooperate. This makes it a form of [direct action](./direct-action.md): the refusal itself is the act; it does not depend on anyone else to take effect.
+
+Refusal is also generative. By declining to participate in structures of domination, refusal creates space for alternatives. When workers refuse exploitative conditions, they create space for [self-organization](./self-organization.md). When communities refuse state governance, they create space for [autonomy](./autonomy.md). When Indigenous peoples refuse colonial categories, they create space for their own governance systems to operate on their own terms. Refusal clears the ground; [mutual aid](./mutual-aid.md), [solidarity](./solidarity.md), and [prefigurative politics](./prefigurative-politics.md) build on it.
+
+
+---
+
+<!-- source: archive/library/critical-theory/theories/anarchism/theories/strategy/terms/refusal.md -->
+
+## Imported source: archive/library/critical-theory/theories/anarchism/theories/strategy/terms/refusal.md
+
+---
+title: "Refusal"
+date-created: 2026-03-02
+aliases:
+  - "refusal"
+  - "politics of refusal"
+tags:
+  - settler-colonialism
+description: "The practice of declining to participate in settler-colonial structures of recognition, research, and governance — a political act, not mere withdrawal."
+defines:
+  - "Refusal"
+  - "politics of refusal"
+date-modified: 2026-03-09
+---
+
+Refusal is the practice of declining to participate in structures that require the colonized to make themselves legible to the colonizer on the colonizer's terms. It is a political act, not mere withdrawal or silence. [Audra Simpson](../../../../../../../../../../references/people/audra-simpson.md) (Mohawk, Kahnawake) develops the concept in *Mohawk Interruptus* (2014), documenting how Mohawk people refuse the categories of Canadian and American citizenship, border regimes, and state-defined "Indian" identity — not because they are unaware of these structures but because participation in them would confirm the sovereignty they contest.
+
+Refusal operates at multiple scales. It can be individual (declining to answer a census question, refusing to carry a state-issued passport) or collective (a nation refusing to participate in a treaty process it considers illegitimate). In research contexts, refusal means Indigenous communities declining to be studied, declining to share knowledge that will be extracted and recontextualized, declining to produce the "data" that settler institutions demand. [Eve Tuck](../../../../../../../../../../references/people/eve-tuck.md)'s "Suspending Damage: A Letter to Communities" (2009) argues that research on Indigenous and marginalized communities has overwhelmingly served the researcher's career and the colonizer's knowledge apparatus, and that refusal of this extraction is itself a form of [sovereignty](../../../../povinellian/theories/settler-colonialism/terms/indigenous-resurgence.md).
+
+Refusal is generative, not merely negative. By refusing settler categories, Indigenous peoples create space for their own governance, knowledge, and practice to operate without being filtered through colonial frameworks. This connects to [Indigenous resurgence](../../../../povinellian/theories/settler-colonialism/terms/indigenous-resurgence.md): refusal clears space; resurgence fills it.
+
+
+---
+
+<!-- source: content/critical-theory/domains/anarchism/domains/strategy/terms/refusal.md -->
+
+## Imported source: content/critical-theory/domains/anarchism/domains/strategy/terms/refusal.md
+
+---
+title: "Refusal"
+date-created: 2026-03-02
+type: term
+aliases:
+  - "refusal"
+  - "politics of refusal"
+tags:
+  - SettlerColonialism
+description: "The practice of declining to participate in settler-colonial structures of recognition, research, and governance — a political act, not mere withdrawal."
+defines:
+  - "Refusal"
+  - "politics of refusal"
+date-updated: 2026-03-09
+part-of: sociology/schools/anarchism/topics/strategy/terms
+---
+
+Refusal is the practice of declining to participate in structures that require the colonized to make themselves legible to the colonizer on the colonizer's terms. It is a political act, not mere withdrawal or silence. [Audra Simpson](/general/people/audra-simpson.md) (Mohawk, Kahnawake) develops the concept in *Mohawk Interruptus* (2014), documenting how Mohawk people refuse the categories of Canadian and American citizenship, border regimes, and state-defined "Indian" identity — not because they are unaware of these structures but because participation in them would confirm the sovereignty they contest.
+
+Refusal operates at multiple scales. It can be individual (declining to answer a census question, refusing to carry a state-issued passport) or collective (a nation refusing to participate in a treaty process it considers illegitimate). In research contexts, refusal means Indigenous communities declining to be studied, declining to share knowledge that will be extracted and recontextualized, declining to produce the "data" that settler institutions demand. [Eve Tuck](../../general/people/eve-tuck.md)'s "Suspending Damage: A Letter to Communities" (2009) argues that research on Indigenous and marginalized communities has overwhelmingly served the researcher's career and the colonizer's knowledge apparatus, and that refusal of this extraction is itself a form of [sovereignty](/sociology/terms/indigenous-resurgence.md).
+
+Refusal is generative, not merely negative. By refusing settler categories, Indigenous peoples create space for their own governance, knowledge, and practice to operate without being filtered through colonial frameworks. This connects to [Indigenous resurgence](/sociology/terms/indigenous-resurgence.md): refusal clears space; resurgence fills it.
+
+## Related terms
+
+- [Indigenous resurgence](/sociology/terms/indigenous-resurgence.md)
+- [Settler colonialism](/sociology/terms/settler-colonialism.md)
+- [Decolonization](/sociology/terms/decolonization.md)
+- [Audra Simpson](/general/people/audra-simpson.md)
+
+
+---
+
+<!-- source: content/critical-theory/domains/anarchism/terms/refusal.md -->
+
+## Imported source: content/critical-theory/domains/anarchism/terms/refusal.md
+
+---
+title: "Refusal"
+date-created: 2026-03-06
+type: term
+aliases:
+  - "refusal"
+tags: []
+description: "The practice of declining to participate in systems of domination — withdrawing compliance, cooperation, labor, or recognition from structures that require your obedience to function."
+defines:
+  - "Refusal (anarchist)"
+---
+
+Refusal is the practice of declining to participate in systems of [domination](./domination.md). It is not passive — it is an act, often the most basic [anarchist](../index.md) act available. Where [obedience](./obedience.md) sustains [hierarchy](./hierarchy.md), refusal withdraws the cooperation that hierarchy depends on.
+
+Refusal takes many forms. A worker who calls in sick rather than accept abusive conditions is refusing. A community that ignores a law it considers unjust is refusing. A person who declines to answer police questions is refusing. Students who walk out of school are refusing. Indigenous nations that reject colonial [authority](./authority.md) over their governance are refusing. In each case, the person or group is declining to participate in a relationship of [domination](./domination.md) — withdrawing the [obedience](./obedience.md), labor, recognition, or compliance that the dominant structure requires.
+
+What makes refusal political rather than merely personal is the structural insight behind it: [hierarchy](./hierarchy.md) requires participation to function. [The state](./the-state.md) cannot govern people who refuse to be governed. An employer cannot extract value from workers who refuse to work. A colonial regime cannot administer people who refuse its categories. [Coercion](./coercion.md) exists precisely to punish refusal — but coercion is expensive, unstable, and ultimately limited. If enough people refuse at once, no amount of coercion can sustain the system. This is why [the general strike](./the-general-strike.md) is powerful: it is refusal coordinated at scale.
+
+Refusal is not the same as reform. Reform asks the system to change itself while continuing to participate in it. Refusal withdraws from the system altogether — or from specific aspects of it. It does not negotiate, petition, or appeal to [authority](./authority.md). It simply declines to cooperate. This makes it a form of [direct action](./direct-action.md): the refusal itself is the act; it does not depend on anyone else to take effect.
+
+Refusal is also generative. By declining to participate in structures of domination, refusal creates space for alternatives. When workers refuse exploitative conditions, they create space for [self-organization](./self-organization.md). When communities refuse state governance, they create space for [autonomy](./autonomy.md). When Indigenous peoples refuse colonial categories, they create space for their own governance systems to operate on their own terms. Refusal clears the ground; [mutual aid](./mutual-aid.md), [solidarity](./solidarity.md), and [prefigurative politics](./prefigurative-politics.md) build on it.
+
+## Related terms
+
+- [Obedience](./obedience.md) — the compliance refusal withdraws
+- [Direct action](./direct-action.md) — refusal as action
+- [The general strike](./the-general-strike.md) — refusal coordinated at economic scale
+- [Self-organization](./self-organization.md) — what becomes possible when refusal clears space
+- [Autonomy](./autonomy.md) — the self-governance refusal makes room for
+- [Coercion](./coercion.md) — the response to refusal from hierarchical systems
+- [Freedom](./freedom.md) — the condition refusal works toward

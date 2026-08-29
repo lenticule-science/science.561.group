@@ -1,0 +1,26 @@
+#+title: leftist
+#+begin_head
+#+ghe_schema: term-0.1.3
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2021-01-07 Thu 09:23]
+#+roam_tags: term
+#+roam_alias: "leftists"
+#+end_head
+
+#+name: definition
+A */[[file:leftist.org][leftist]]/* is a person who identifies largely with the [[file:left.org][Left]], the political contingent in their area that pursues [[file:social_equality.org][social equality]] and [[file:egalitarianism.org][egalitarianism]].
+
+#+toc: headlines 2
+
+* Supplements
+** Record history
+   :PROPERTIES:
+   :CUSTOM_ID: record-history
+   :END:
+   :LOGBOOK:
+   - Note taken on [2021-01-07 Thu 09:23] \\
+      Created from [[file:~/org/s/p/d/2021-01-07.org::*My perspective on yesterday's protests in the U.S.][My perspective on yesterday's protests in the U.S.]]
+
+      
+   :END:

@@ -1,0 +1,35 @@
+---
+
+title: "Fruit"
+date-created: 2026-04-02
+aliases:
+  - "Fruit"
+  - "fruit"
+  - "fruits"
+keywords:
+  - botany
+  - plant-reproduction
+  - plant-anatomy
+defines:
+  - "Fruit"
+  - "fruit"
+  - "fruits"
+  - "pericarp"
+  - "simple fruit"
+  - "aggregate fruit"
+  - "multiple fruit"
+---
+
+Fruit: the mature ovary (and associated structures) of a flowering plant, typically enclosing and protecting seeds, and serving as a vector for seed dispersal. In botanical terms, fruits are the reproductive structure specific to [angiosperms](./angiosperm.md) and arise following pollination and fertilization. Fruits develop from the ovary wall (the pericarp), which often thickens and undergoes dramatic changes in color, texture, and chemical composition — transformations that signal ripeness and attract animal dispersers.
+
+Fruits are classified by their structural origin and morphology. **Simple fruits** develop from a single ovary of one flower and are subdivided by structure: (1) **berries** have a fleshy pericarp throughout (e.g., tomatoes, grapes, peppers, bananas); (2) **drupes** have a hard inner layer (the endocarp or pit) surrounding a seed, with fleshy mesocarp surrounding it (e.g., peaches, plums, cherries, olives); (3) **legumes** are dry pods that split open along specific seams (e.g., beans, peas, peanuts); (4) **capsules** are dry fruits with a hard wall that releases seeds through specific pores or fracture lines (e.g., poppies, lilies, snapdragons); (5) **nuts** are single-seeded fruits with a hard, woody pericarp (e.g., acorns, walnuts, hazelnuts).
+
+**Aggregate fruits** develop from multiple ovaries of a single flower, each producing a small fruit (drupelet or fruitlet) that remains attached to a common receptacle. Examples include raspberries and blackberries (aggregate drupes) and strawberries (aggregate of achenes sitting on a fleshy receptacle — botanically, the red flesh is receptacle tissue, not ovary tissue).
+
+**Multiple fruits** (or composite fruits) develop from the fused ovaries of multiple flowers (an inflorescence). A pineapple results from the fusion of dozens of florets; a fig is the hollow receptacle of hundreds of flowers developing inside it.
+
+The pericarp itself consists of three layers (where present): the **exocarp** (outer skin), the **mesocarp** (flesh), and the **endocarp** (inner layer, often hardened into a pit or shell). This architecture protects the seed while in development and during dispersal. Upon ripening, the mesocarp often becomes sweet and attractive to animals, while the seed coat hardens — a strategy ensuring that animals consume the flesh and disperse the seed.
+
+Fruits enable diverse dispersal strategies: fleshy fruits attract vertebrates (birds, mammals, reptiles) that consume the fruit and deposit seeds far from the parent plant; winged fruits (samaras) and pappose fruits (with hair-like structures) exploit wind dispersal; burrs and other adhesive fruits attach to animal fur; some fruits are buoyant and drift on water. This diversity of dispersal mechanisms is a major factor in angiosperm ecological success, enabling colonization of distant habitats and the genetic exchange across landscapes that maintains genetic diversity.
+
+See also: [angiosperm](./angiosperm.md), [seed](./seed.md), [flower](./flower.md), [plant-reproduction](./plant-reproduction.md)

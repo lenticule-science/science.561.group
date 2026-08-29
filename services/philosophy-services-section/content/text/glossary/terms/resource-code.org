@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       0638898a-ad87-4dcc-aaa7-1a0634d080e3
+:END:
+#+title: resource code
+#+date: [2025-10-04 Sat 11:49]
+

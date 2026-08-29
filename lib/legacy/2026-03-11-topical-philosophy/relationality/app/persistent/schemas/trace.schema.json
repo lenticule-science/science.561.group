@@ -1,0 +1,9 @@
+{
+  "$id": "https://research-notes.561.group/hacking/library/archive-from-bare-cedar-fog/engineering/archive/relationality/persistent/schemas/trace.schema.json",
+  "title": "Trace Payload",
+  "type": "object",
+  "properties": {
+    "entries": {"type": "array"}
+  },
+  "additionalProperties": true
+}

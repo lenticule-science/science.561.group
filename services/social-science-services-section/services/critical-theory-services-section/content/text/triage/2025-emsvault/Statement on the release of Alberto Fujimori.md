@@ -1,0 +1,4 @@
+---
+dg-publish: true
+---
+Hearing of former [[Peru|Peruvian]] President [[Alberto Fujimori]]'s release from [[prison]] on a [[medical pardon]] before completing his [[life sentence]] for authorizing [[death squads]], I am confronted with the intricacies of seeking [[justice]]. My commitment to opposing all forms of [[domination]] aligns with calls for [[prison abolition|abolishing carceral systems]]; yet, acknowledging the deep wounds inflicted upon countless families during Fujimori's regime demands accountability—a form we often expect these flawed penal institutions to deliver. True justice for those harmed by Fujimori cannot be found within prison walls, nor in his premature freedom. It lies beyond our current structures, in future societies founded on more compassionate practices of [[care]] and [[healing]].

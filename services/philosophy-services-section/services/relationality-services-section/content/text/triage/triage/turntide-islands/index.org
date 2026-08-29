@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       6ecd3044-8c62-426c-89eb-18be40cd5cf9
+:END:
+#+title: Turntide Islands
+#+date: [2025-08-14 Thu 08:00]
+#+TODO: SOMEDAY LATER SOON PLAN MAKE TEST DOC RLSE | DONE
+
+* Documentation
+** README
+*/Turntide Islands/* is a digital community focused on cultivating ways of responding to climate breakdown...
+* Plans
+** SOON Create Turntide Islands Github Repo
+** SOON Create Turntide Islands website
+Probably on NeoCities

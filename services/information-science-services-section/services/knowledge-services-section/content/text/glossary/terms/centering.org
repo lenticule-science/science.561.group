@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       3ef2cb98-2126-4090-a627-183cd99a35fc
+:END:
+#+title: centering
+#+date: [2025-09-04 Thu 20:26]
+

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predicate-category/content/predicatory-comparison/content/predicatory-commutation",
+  "title": "predicatory-commutation",
+  "description": "The predicatory comparison asserting that two predication-categorical operations yield the same valuation when composed in either order (F . G = G . F); a commuting-diagram check whose equality is equality of resulting valuations, refining predicatory-comparison.",
+  "allOf": [
+    { "$ref": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predicate-category/content/predicatory-comparison" }
+  ],
+  "type": "object",
+  "required": ["firstComposite", "secondComposite", "commutes"],
+  "properties": {
+    "firstComposite": { "const": "predication-categorical-operation", "description": "F . G, one of the two composites with common source and target" },
+    "secondComposite": { "const": "predication-categorical-operation", "description": "G . F, the other composite with the same source and target" },
+    "commutes": { "type": "boolean", "description": "whether the square commutes strictly: F . G = G . F as equality of resulting valuations" },
+    "commutationDefect": { "description": "when commutation is relaxed rather than strict, a bilattice-valued profile of where the two composites disagree" }
+  }
+}

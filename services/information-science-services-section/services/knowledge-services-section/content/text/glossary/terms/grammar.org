@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       55671733-3978-4109-bced-9bb23565980a
+:END:
+#+title: grammar
+#+date: [2025-09-08 Mon 23:10]
+

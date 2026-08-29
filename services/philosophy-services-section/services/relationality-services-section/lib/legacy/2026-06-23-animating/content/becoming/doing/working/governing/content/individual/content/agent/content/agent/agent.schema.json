@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/code/structures/library/agent/agent.schema.json",
+  "title": "agent-form",
+  "description": "Cell-shape of the agent form — the predications an entity carries when it bears the agent role. The agent form is NOT a record-class on disk; there are no agent resource files. The shape is reusable: a character record at doing/governing/characters/<name>/<name>.md bears the agent form by carrying these cells, and a future derivation might project an agent observation out of any record that satisfies the shape. The shape lives at the top of this schema so other schemas can $ref it as $ref: \"https://research-notes.561.group/hacking/library/code/structures/library/agent/agent.schema.json\". Per the agent spec, required identity cells are name, description, agent-kind, governance-regime; required capability cell is skills (the generator set).",
+  "type": "object",
+  "required": ["name", "description", "agent-kind", "governance-regime", "skills"],
+  "properties": {
+    "name": { "type": "string", "minLength": 1 },
+    "description": { "type": "string", "minLength": 1 },
+    "agent-kind": {
+      "type": "string",
+      "enum": ["human", "ai-model", "automated-process", "composed-multi-agent"]
+    },
+    "governance-regime": {
+      "type": "string",
+      "enum": ["kin-relational", "kyriarchical", "dual-context"]
+    },
+    "skills": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)+$"
+          },
+          {
+            "type": "object",
+            "required": ["skill"],
+            "additionalProperties": false,
+            "properties": {
+              "skill": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)+$"
+              },
+              "defaults": { "type": "object" }
+            }
+          }
+        ]
+      }
+    },
+    "identity-key": { "type": "string" },
+    "provenance": {},
+    "work-types": {
+      "type": "array",
+      "items": { "enum": ["process", "procedure", "derivation", "inquiry"] }
+    },
+    "jurisdiction": {
+      "type": "object",
+      "properties": {
+        "read": { "type": "array", "items": { "type": "string" } },
+        "write": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "formality-layer": { "enum": ["F0", "F1", "F2", "F3"] },
+    "member-of": { "type": "array", "items": { "type": "string" } },
+    "individual-powers": { "type": "array" },
+    "individual-duties": { "type": "array" },
+    "individual-privileges": { "type": "array" },
+    "individual-immunities": { "type": "array" }
+  }
+}

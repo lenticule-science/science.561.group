@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/system/library/operating-system/library/computer-operating-system/library/tool-use/tool-use.schema.json",
+  "title": "Tool use",
+  "description": "JSON Schema for a tool-use row: the MCP-boundary witness of one tool call. One row per line in code/logs/tool-uses/YYYY-MM-DD.jsonl.",
+  "type": "object",
+  "required": ["t", "tool", "character"],
+  "additionalProperties": true,
+  "properties": {
+    "t": {"type": "string", "format": "date-time"},
+    "tool": {
+      "type": "string",
+      "pattern": "^[a-z0-9_](?:[a-z0-9_-]*[a-z0-9_])?$"
+    },
+    "character": {
+      "type": "string",
+      "pattern": "^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$"
+    },
+    "request": {"description": "JSON-RPC request envelope or content-addressed reference."},
+    "response": {"description": "JSON-RPC response envelope or content-addressed reference."},
+    "signature": {"type": "string", "description": "Identity-key signature over the row's content-address."}
+  }
+}

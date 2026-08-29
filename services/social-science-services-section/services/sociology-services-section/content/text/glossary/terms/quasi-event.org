@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       2def3366-6a36-48a8-bed7-50dd50288165
+:END:
+#+title: quasi-event
+#+date: [2025-09-24 Wed 18:46]
+

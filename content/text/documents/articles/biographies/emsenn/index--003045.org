@@ -1,0 +1,45 @@
+:PROPERTIES:
+:ID:       40cbaad9-af3c-4573-b356-ae116687e483
+:public:   true
+:ROAM_ALIASES: https://orcid.org/0009-0009-1364-6429 https://emsenn.net
+:NODE-RELATIONS: (([[id:fe5f19f5-4966-42c0-bc11-f5b5f7031238][created]] . [[id:e12123c1-2796-4058-affd-b786753be972][Relational Infinity-Topos Modality]]) ([[id:d13beb9d-3360-4889-be32-36ba4254c07c][philosopher]] . [[id:a48dbfa8-e338-4cab-9259-8467271c95f6][Lakotaean metaphysics]]) ([[id:92dfcfab-ba8f-407d-a2a6-121a76dbe7a3][theorist]] . [[id:496f5eec-d900-4baa-897a-7f16d9f542f8][postliberal cybernetics]]))
+:END:
+#+title: emsenn
+#+todo: SOMEDAY LATER SOON PLAN MAKE TEST DOC RELS | DONE
+
+* Documentation
+** README
+** External Docs
+** Internal Docs
+* Tasks
+** Plans
+*** MAKE Init brand project
+*** SOON Plan professionalization
+**** SOON choose credential path
+**** SOON pick case studies
+**** SOON update CV
+**** SOON update personal branding
+**** SOON peer check
+**** SOON join networks
+**** SOON develop deliverables
+**** SOON peer check
+**** SOON launch
+** Routines
+*** Marketing
+**** Social Media Posting
+***** Kolektiva
+****** SOON Develop authorial voice for @emsenn@kolektiva.social
+***** Substack
+****** SOON Develop authorial voice for emsenn.substack.com
+***** Facebook
+****** SOON Develop authorial voice for emsenn@Facebook
+***** LinkedIn
+****** SOON Develop authorial voice for emsenn@LinkedIn
+***** Twitter
+****** SOON Develop authorial voice for emsenn@Twitter
+* Data
+** Contacts
+*** People
+*** Groups
+** Services
+** Copy

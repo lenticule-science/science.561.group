@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       bacca436-1a6c-4641-9a43-18e82df8b31e
+:form:     [[id:62a0eb02-1ddd-4fc2-8b2e-eb18ab41eefb][call to act]]
+:public:   true
+:END:
+#+title: Call To Act: Commission @vileheartdesign
+#+date: [2025-08-27 Wed 15:21]
+
+[[id:04e86955-cb3a-414f-b2a1-fc8bf63cd91e][@vileheartdesign]] is available for art commissions! They have various forms of [[id:74e9346e-5ebb-4e2b-93a2-0fb2233473db][character art]] available.
+
+They've said:
+
+#+begin_quote
+Fiancee and I are still struggling really hard after our apartment got flooded earlier this year, and we've fallen behind on bills + have a veritable mountain of debt since insurance couldn't cover the almost two-month hotel stay.
+#+end_quote
+
+
+Donations can be made to [[https://ko-fi.com/vileheartdesigns][their Ko-Fi]] without commissioning anything, if you're able.

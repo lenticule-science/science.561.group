@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       b286e17d-4dce-4877-9139-afea6f56eaf1
+:END:
+#+title: care
+#+date: [2025-08-31 Sun 08:07]
+

@@ -1,0 +1,15 @@
+#+title: Phil Hagelberg
+#+begin_head
+#+ghe_schema: person-0.1.0
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-21 Mon 21:34]
+#+roam_alias: "@technomancy"
+#+roam_tags: person
+#+end_head
+
+#+name: phil-hagelberg-definition-text
+#+begin_quote
+*/Phil Hagelberg/*, or =@technomancy=, is, in relation to me, another [[file:lisp.org][LISP]] [[file:hacker.org][hacker]].
+#+end_quote
+

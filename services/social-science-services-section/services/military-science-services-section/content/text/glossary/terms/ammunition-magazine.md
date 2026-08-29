@@ -1,0 +1,17 @@
+---
+date: "\\[2025-09-06 Sat 23:27\\]"
+id: 6fe4e87e-5961-4639-bf87-a4a0b480a351
+public: true
+resource-description: "((\\[\\[id:edaef069-c68d-46aa-a970-d3cb7fe3165c\\]\\[resource
+  type\\]\\] . \\[\\[id:a1f46fb1-c2f1-46d7-86db-57b7eaae59f0\\]\\[firearm
+  component\\]\\])
+  (\\[\\[id:2c58f742-5d02-480b-94f9-0098ddb0e3b0\\]\\[membership
+  criteria\\]\\] .
+  (\\[\\[id:edaef069-c68d-46aa-a970-d3cb7fe3165c\\]\\[resource type\\]\\] .
+  \\[\\[id:f01ec9ce-c302-4e92-9835-97172480183c\\]\\[ammunition\\]\\])))"
+title: ammunition magazine
+type: term
+date-created: 2025-09-06
+index:
+  - "firearm!ammunition!ammunition magazine"
+---

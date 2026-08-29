@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       fd807957-f450-4d5f-b7f9-691b792fc39d
+:public:   true
+:instantiates: [[id:a68f194d-54d8-46ac-bb80-bbd29ea90059][operating system]]
+:field:    [[id:dd810340-ed05-4579-8c36-49995e5cc0e3][computing]]
+:END:
+#+title: Guix
+#+date: [2025-09-16 Tue 18:37]
+#+index: computing!operating system!Guix

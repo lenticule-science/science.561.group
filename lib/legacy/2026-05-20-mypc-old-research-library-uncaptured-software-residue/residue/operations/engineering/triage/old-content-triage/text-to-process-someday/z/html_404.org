@@ -1,0 +1,12 @@
+#+title: HTML 404
+#+begin_head
+#+ghe_schema: reference-0.1.1
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-22 Tue 15:57]
+#+roam_tags: term
+#+end_head
+#+name: 404-definition-text
+#+begin_quote
+*/404/* is the response code sent by a [[file:http_server.org][HTTP server]] when the requested resource is not found.
+#+end_quote

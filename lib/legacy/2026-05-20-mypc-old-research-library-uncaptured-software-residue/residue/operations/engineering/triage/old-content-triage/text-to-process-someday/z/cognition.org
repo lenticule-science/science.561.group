@@ -1,0 +1,6 @@
+#+title: cognition
+#+date: [2020-12-16 Wed 10:17]
+
+
+#+name: cognition-definition
+*/[[file:cognition.org][Cognition]]/* is the process of [[file:learning.org][learning]] and understanding [[file:information.org][information]].

@@ -1,0 +1,39 @@
+{
+  "type": "LSpaceCloudTopologyDecision",
+  "version": 1,
+  "date": "2026-08-21",
+  "status": "deployed-projection-native-garden-awaiting-operator-visual-verification",
+  "origin": "https://science.561.group",
+  "deployment": {
+    "cloudflareWorkerVersion": "5dd0bc59-df5a-4c4b-9805-9835a2ad0432",
+    "compiledRelease": "f22af2a70a1a0490aad4325093157213e9ea29849b96861f7828db56dcf80351",
+    "health": "verified-200",
+    "unauthenticatedApiBeforeAccess": "verified-401",
+    "unauthenticatedEdgeAfterAccess": "verified-302-to-cloudflare-access",
+    "authenticatedOperatorResult": "policy-accepted; origin-identity-contract-corrected; retest-pending",
+    "originIdentityContracts": ["workers-ctx-access/v1", "cloudflare-access-jwt/v1"],
+    "interface": "projection-native-digital-garden/v2",
+    "rendering": ["canonical-markdown-html/v1", "tufte.projection", "deterministic-catalogue-atlas/v1"],
+    "accessTeamDomain": "icy-thunder-e8a0.cloudflareaccess.com",
+    "accessPolicyInspection": "dashboard-configured; unreadable through Wrangler OAuth authority"
+  },
+  "authorities": {
+    "canonicalCorpus": "github:emsenn/bare-cedar-fog",
+    "compiledRelease": "cloudflare-workers-static-assets",
+    "authentication": "cloudflare-access",
+    "learnerState": "cloudflare-d1"
+  },
+  "constraints": [
+    "The compiler is read-only over the canonical corpus.",
+    "Compiled releases are immutable projections, not authoring authorities.",
+    "Learner state is private to a pseudonymous authenticated subject.",
+    "OAuth and OIDC secrets remain in the identity provider and deployment platform.",
+    "CMS writes become reviewed source commits before compilation."
+  ],
+  "deferredInterfaces": [
+    "Typed semantic-neighborhood and multi-projection TUFTE explorer",
+    "VaultMaze quiz presentation and scheduling UI",
+    "GitHub-backed rich CMS editor",
+    "Familiar retrieval economy policy"
+  ]
+}

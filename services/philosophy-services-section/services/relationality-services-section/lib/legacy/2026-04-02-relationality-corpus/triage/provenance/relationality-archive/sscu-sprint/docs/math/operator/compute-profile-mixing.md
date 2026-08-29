@@ -1,0 +1,34 @@
+---
+name: compute-profile-mixing
+role: operator
+derived_from:
+- acts/profile-mixing
+inputs: []
+outputs: []
+transformation:
+- return
+- value
+proof_refs: []
+introduces: operator
+part-of: relational-computer
+computer-system-type: primitive
+---
+
+
+
+The **Compute Profile Mixing** operator applies the profile mixing act to push
+entropy forward along a profile kernel chain until stationarity.
+
+## Definition
+- Input: a [Profile Kernel Chain](docs/math/structure/profile-kernel-chain.md).
+- Output: an updated chain reflecting mixing towards stationarity.
+- Behaviour: composes profile dynamics and profile entropy per
+  [`acts/profile-mixing`](docs/math/acts/profile-mixing.md).
+
+## Invariants
+- Entropy increases until a stationary profile is reached.
+- Chain remains within the earned carrier.
+
+## Proof
+Direct application of `acts/profile-mixing`; inherits mixing properties and
+preserves the chain carrier.

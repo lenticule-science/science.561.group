@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       0cbc7a59-2f26-4a87-b953-d7b695f1224f
+:END:
+#+title: climate model
+#+date: [2025-09-06 Sat 09:09]
+

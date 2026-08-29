@@ -1,0 +1,58 @@
+#+SETUPFILE: ./default-setup.inc
+#+TITLE: Dream Computer
+#+EXPORT_FILE_NAME: ../pub/dream-computer
+#+DATE: 2017-12-17
+#+INDEX: personal computing!"Dream Computer"
+#+TOC: headlines 1
+* Introduction
+#+INCLUDE: "./plates.inc::draft"
+#+INCLUDE: "./plates.inc::default-eli"
+#+INCLUDE: "./plates.inc::contemporary"
+* Dream Computer
+** Introduction
+*** Background
+Like most people who use computers with regularity, I've come to have
+a personal definition of what my "perfect" computer would be. This
+document is an attempt to outline that specification, so when it comes
+time to buy a new device, I know exactly what I want.
+
+It is a *work-in-progress*.
+*** Overview
+A clamshell convertible laptop which can unfold 360 degrees to become
+a tablet, with a roughly seven inch screen.
+** Specifications
+*** Internals
+**** Battery
+No clue
+**** Processor
+Something that doesn't really use power if not in use - so like ARM
+maybe? I don't know.
+**** Radios
+***** Accelerometer
+NOPE.
+***** WiFi
+As long as it has a hardware off-switch. Something that allows
+hotspotting/peer sharing.
+*** Externals
+*** Screen
+E-ink touchscreen, nearly no bezel on the long face with thick
+short-face bezels (for gripping in tablet)
+*** Keyboard
+Programmer's dvorak layout
+*** Ports
+USB
+*** Camera
+A camera in the bezel, so paper can be leaned between the keyboard and
+screen and be photographed at a fixed distance.
+* Supplements
+#+TOC: headlines local 1
+** Contribute
+   :PROPERTIES:
+   :CUSTOM_ID: supplements-contribute
+   :END:
+#+INCLUDE: "./plates.inc::personal-contribute"
+** License
+   :PROPERTIES:
+   :CUSTOM_ID: supplements-license
+   :END:
+#+INCLUDE: "./plates.inc::mit-license"

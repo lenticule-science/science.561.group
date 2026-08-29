@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       b1d585c8-fb34-4eec-b19a-bb90e4eb834c
+:END:
+#+title: revealing
+#+date: [2025-09-04 Thu 09:30]
+

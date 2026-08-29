@@ -1,0 +1,32 @@
+#+BEGIN: brer
+- brer (noun) :: A contraction of "brother," more commonly used to
+                 reference non-familial associates than its source.
+#+END
+#+BEGIN: include/emacs
+#+END
+#+BEGIN: document
+#+END
+#+BEGIN: pallet
+- pallet (noun) :: A place to sleep, usually simple such as a mat and
+                   pillow on a floor.
+#+END
+#+BEGIN: post-n
+- post (noun) :: A /post/ is an informal, possibly temporary, piece of
+  communication that is usually directed at a group of /followers/,
+  rather than the /public/ - though posts are often available
+  publicly.
+#+END
+#+BEGIN: post-v
+- post (verb) ::
+#+END
+#+BEGIN: license
+- license :: A text specifying the legal guidelines for the use and
+             distribution of a document.
+#+END
+#+BEGIN: publish
+#+END
+#+BEGIN: publication-n
+#+END
+#+BEGIN: triage
+- triage :: A place where incoming documents and assets are placed to be sorted.
+#+END

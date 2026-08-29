@@ -1,0 +1,23 @@
+---
+title: Expression
+date-created: "2026-03-04T00:00:00"
+type: "[condition](../../../../../../relationality-2/human-draft-7/system/conditions/condition.md)"
+date-introduced: "[2025-04-30](2025-04-30)"
+derived-in: "[Deriving Reflexive Relational Composition](Deriving Reflexive Relational Composition)"
+---
+
+
+- [summary](summary):: **Ordered** is the condition in which the components of a [relational structure](relational structure) maintain fixed positional relations to one another within a composite.
+
+The condition of ordered ensures that each component within a composite structure is uniquely identifiable by its position, enabling reliable positional access and structured differentiation.
+
+## Expression
+
+ordered(p, [x(1), x(2), ..., x(p)]):
+→ for all `i ≠ j`, `x(i)` occupies a distinct, fixed position relative to `x(j)`
+
+## Properties
+
+- Position-fixed: each component holds a stable relational position
+- Identity-preserving: ordering preserves the [../../../../../../../../../slop/relationality/human-draft-7/system/conditions/difference](../../../../../../../../../slop/relationality/human-draft-7/system/conditions/difference) between components
+- Required by: [reflexive relational tuple](reflexive relational tuple) to maintain structural integrity

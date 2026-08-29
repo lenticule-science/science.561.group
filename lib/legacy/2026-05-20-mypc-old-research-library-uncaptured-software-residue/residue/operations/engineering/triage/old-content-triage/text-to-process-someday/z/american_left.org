@@ -1,0 +1,25 @@
+#+title: American Left
+#+begin_head
+#+ghe_schema: term-0.1.3
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2021-01-06 Wed 15:06]
+#+roam_tags: term
+#+end_head
+
+#+name: definition
+The */[[file:american_left.org][American Left]]/* is a contingent of the [[file:united-states-of-america.org][American]] [[file:person.org][people]] who pursue the implementation of leftism within American [[file:culture.org][culture]], through both [[file:reform.org][reform]] and [[file:radical.org][radical]] methods.
+
+#+toc: headlines 2
+
+* Supplements
+** Record history
+   :PROPERTIES:
+   :CUSTOM_ID: record-history
+   :END:
+   :LOGBOOK:
+   - Note taken on [2021-01-06 Wed 15:06] \\
+      Created from 
+
+      
+   :END:

@@ -1,0 +1,11 @@
+id: analytic-entropy
+name: Analytic Entropy
+input_kind: PhaseSpace
+output_kind: EntropyMeasurement
+description: Compute entropy measurement placeholder from PhaseSpace.
+steps:
+  - operator: EntropyMeasure
+    realizer: entropy_measure
+    input_kind: PhaseSpace
+    output_kind: EntropyMeasurement
+    acts: ["EntropyMeasure", "ProfileEntropy"]

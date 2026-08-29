@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/code/transformers/https://research-notes.561.group/hacking/library/doing/working/hacking/doing/working/dispatching/dispatching.schema.json",
+  "title": "dispatching",
+  "description": "Transformer schema for the dispatching family. Per code/transformers/dispatching.md, the transformer takes a (workitem, receiver-pool, match-rule) tuple and returns a response cell plus a dispatch-witness. Every dispatching-* skill inherits this contract at MCP-registration time via the harness's contract composer (skill.md §158, _compose-skill-contract.mjs §69-79). The composer extracts `input` and `output` as top-level cells on this schema; they become the per-skill input and output validators.",
+  "input": {
+    "type": "object",
+    "required": ["workItem"],
+    "properties": {
+      "workItem": {
+        "$ref": "https://research-notes.561.group/hacking/library/code/structures/library/planning/workitem.schema.json"
+      }
+    }
+  },
+  "output": {
+    "type": "object",
+    "description": "Response cell from the receiver plus the dispatched-as cell. The shape of the response cell itself is receiver-specific; this schema pins only the dispatched-as and witness cells the dispatch chain itself contributes.",
+    "properties": {
+      "dispatched-as": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)+$",
+        "description": "Slug of the dispatch layer that handled the workitem."
+      },
+      "model": { "type": "string" },
+      "provider": { "type": "string" },
+      "text": { "type": "string" },
+      "response-text": { "type": "string" },
+      "sent-at": { "type": "string" },
+      "received-at": { "type": "string" },
+      "matched-skill": { "type": "string" },
+      "attempts": {
+        "type": "array",
+        "items": { "type": "object" }
+      },
+      "target": { "type": ["string", "null"] }
+    }
+  }
+}

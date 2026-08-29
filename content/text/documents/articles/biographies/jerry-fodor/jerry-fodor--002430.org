@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       7fdfcf20-30f8-4a88-9ba4-92af67eeaf78
+:NODE-RELATIONS: (([[id:d13beb9d-3360-4889-be32-36ba4254c07c][philosopher]] . [[id:7db203d3-57e3-4b1d-8d60-a85b9eb142e1][cognition]]) ([[id:d13beb9d-3360-4889-be32-36ba4254c07c][philosopher]] . [[id:e8bfbd06-21f6-4e9a-a42b-27a93d5c7b21][language]]) ([[id:5950d59a-8d30-47e6-939c-171327e23b44][creator]] . [[id:a1e28b24-ac85-4026-9abc-0cb785ff15bb][modularity of mind]]) ([[id:5950d59a-8d30-47e6-939c-171327e23b44][creator]] . [[id:f15a818b-661f-4138-9dff-b316b7330f31][language of thought]]))
+:END:
+#+title: Jerry Fodor
+#+date: [2025-09-17 Wed 09:22]
+

@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       87043656-c674-42fc-a71f-bfae34c5251a
+:node-relations: (([[id:fa8f070d-11f1-4396-af95-d8e0ac7bf0f3][ambiguiating]] . [[id:2d79d4ba-8d36-4714-869c-081e8d40d24f][field]]))
+:END:
+#+title: ambiguous field
+#+date: [2025-09-29 Mon 13:23]
+

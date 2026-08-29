@@ -1,0 +1,31 @@
+/**
+ * hunkapi — huŋkápi, the making-of-relatives, the most-formal wótakuye.
+ *
+ * lakotaTerm: huŋkápi — "the making of relatives", the most-formal form of wótakuye. The
+ * ceremony INSTALLS new kin-cells in the substrate: after huŋkápi the parties ARE kin in
+ * the same structural way descent-kin are. Ceremony is constitutive, not decorative. The
+ * two installed tȟakúye cells (a kin-of b, b kin-of a) enter at t (Wí, "potential") —
+ * bound.
+ *
+ * The corpus node is content/_archive/existence/lakota/discharging/library/predicating/.
+ * huŋkápi builds tȟakúye cells, so it imports takuye/TakuyeCell from ./takuye.mjs. The
+ * charge convention is the LIVE @emsenn/relating one: absurd=⊥, potential=t, active=f,
+ * stable=⊤.
+ */
+import { type TakuyeCell } from "./takuye.mjs";
+/**
+ * A huŋkápi reading — the making-of-relatives, the most-formal wótakuye. The ceremony
+ * INSTALLS new kin-cells in the substrate: after huŋkápi the parties ARE kin in the same
+ * structural way descent-kin are. Ceremony is constitutive, not decorative. The two
+ * installed tȟakúye cells (a kin-of b, b kin-of a) enter at t (Wí, "potential") — bound.
+ */
+export interface Hunkapi {
+    readonly kind: "organizing-as-lakota.hunkapi";
+    /** The two new kin-cells the ceremony installs, held at t. */
+    readonly installed: readonly TakuyeCell[];
+    /** It is the most-formal form of wótakuye. */
+    readonly mostFormalWotakuye: true;
+}
+/** Enact huŋkápi between two parties — install the reciprocal kin-cells. */
+export declare function hunkapi(a: string, b: string): Hunkapi;
+//# sourceMappingURL=hunkapi.d.mts.map

@@ -1,0 +1,54 @@
+\subsection{Bigraded splitting and local constancy}
+
+\begin{theorem}[Bigraded two-row mapping cone (cochain level)]\label{thm:bigraded-two-row}\lean{Infomaterial.Bigraded.bigraded_two_row_mapping_cone}\leanok\uses{thm:settling-cohomology-h1-vanishes, thm:vanishing-h1-crdt, thm:designated-short-exact-sequence, thm:valuation}
+The bigraded settling bicomplex $C^{m,n}_{k,t}$ has only the two rows $m=0$ (truth sheaf
+$F_U^{(t)}$) and $m=1$ (inconsistency sheaf $F_U^{(\top)}$); rows $m\ge 2$ vanish. The vertical
+differential $d_v = \pi\circ\iota$ is the zero map (the truth/inconsistency supports $d_T$,
+$d_{\top}$ are disjoint), and the designated SES $0\to F_U\to F_U^{(k)}\to F_U^{(\top)}\to 0$ is
+split-exact. All three are established at the \emph{cochain} level
+(\texttt{bigraded\_two\_row\_mapping\_cone}).
+\end{theorem}
+
+\begin{theorem}[Truth--knowledge long exact sequence]\label{thm:bigraded-truth-knowledge-les}\lean{Infomaterial.Bigraded.truth_knowledge_graded_decomposition}\leanok\uses{thm:bigraded-two-row, thm:bigraded-truth-knowledge-decomposition, thm:settling-cohomology-h1-vanishes, thm:cech1}
+The induced long exact sequence of the two-row mapping cone \emph{degenerates} to the direct-sum
+decomposition $H^n(F_U^{(k)}) \cong H^n(F_U^{(t)}) \oplus H^n(F_U^{(\top)})$, the two bigrading axes
+of $H^{m,n}_{k,t}$ --- now proved, because all graded content is concentrated in degree 0. There
+(\cref{thm:bigraded-truth-knowledge-decomposition}) the knowledge sections are the genuine direct sum
+of the truth and $\top$ sections, with \texttt{split}/\texttt{merge} the mutually-inverse induced
+maps on real cohomology objects (not the placeholder $\texttt{Hn}:=\texttt{Unit}$); in degree 1 the
+settling cohomology $H^1$ vanishes for every \v{C}ech datum (every cocycle is a coboundary); and in
+every degree $n\ge 2$ the cohomology is the zero group. So the connecting maps all vanish and the
+only nondegenerate piece is the genuine $H^0$ direct sum --- the degenerate LES. (A non-degenerate
+graded $H^n$ for the aperiodic regime, where higher cohomology need not vanish, remains the deeper
+frontier.)
+\end{theorem}
+
+\begin{theorem}[Truth--knowledge decomposition (degree 0)]\label{thm:bigraded-truth-knowledge-decomposition}\lean{Infomaterial.Bigraded.truth_knowledge_section_decomposition}\leanok\uses{thm:bigraded-two-row}
+The degree-0 / global-sections case of the degenerate truth--knowledge LES, with \emph{genuine}
+objects rather than the placeholder $\texttt{Hn}:=\texttt{Unit}$. The designated sections
+$H^0(F_U^{(k)}) = \{c \mid \texttt{Vanishes}\,(dK\,v)\,c\}$ (cochains supported on the knowledge mask)
+decompose as a \textbf{direct sum} of the truth sections $H^0(F_U^{(t)})$ and the $\top$ sections
+$H^0(F_U^{(\top)})$: the maps $\texttt{split}$ (project to the $dT$- and $dTop$-parts) and
+$\texttt{merge}$ (recombine by addition) are mutually inverse, since the masks are disjoint and
+$dK = dT \sqcup dTop$. This is the $d_v=0$ splitting $F_U^{(k)} \cong F_U^{(t)} \oplus F_U^{(\top)}$
+realized on real cohomology objects; the higher-degree LES remains
+\cref{thm:bigraded-truth-knowledge-les}.
+\end{theorem}
+
+\begin{theorem}[Local-constancy vanishing model (strict/Scott)]\label{thm:local-constancy-model}\lean{Infomaterial.LocalConstancy.vanishing_regime_local_constancy_model}\leanok\uses{thm:settling-cohomology-h1-vanishes, thm:regime-cohomology-vanishes-iff, thm:closure-regime-carrier, thm:cech1, thm:cocycle, thm:coboundary}
+In the strict/Scott regime ($\texttt{cohomologyVanishes}\,r=\texttt{true}\iff r\in\{\text{strict},\text{scott}\}$),
+settling cohomology $H^1$ vanishes --- every \v{C}ech agreeing family glues to a unique global
+section --- and a predicate-locally-constant sheaf has KZ-coherent section maps. In this
+Nat-indexed, proof-irrelevant-settling model these vanishings hold \emph{unconditionally}; the
+regime hypothesis gates only the classification, not a dichotomy
+(\texttt{vanishing\_regime\_local\_constancy\_model}).
+\end{theorem}
+
+\begin{theorem}[Aperiodic failure of local constancy]\label{thm:aperiodic-local-constancy-failure}\notready\uses{thm:local-constancy-model, thm:husainov-cech-derived}
+\emph{(Open frontier --- stated, not formalized.)} In the aperiodic regime ($\kappa\ge\omega_1$),
+local constancy and $H^1$-vanishing \emph{fail}: the settling does not stabilize at any countable
+$\tau_0$, so $F_U$ is not predicate-locally-constant and its cohomology is a genuine \emph{direct
+limit} over the transfinite stabilization tower. The finite/Nat-indexed model cannot witness the
+non-vanishing side (it makes every cover acyclic, cf.\ \cref{thm:husainov-cech-derived}). Red until
+a model with genuine aperiodic non-vanishing and the direct-limit construction is built.
+\end{theorem}

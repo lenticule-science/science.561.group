@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       b59c6255-b760-4a18-9ee2-f548c2e9c11a
+:public:   true
+:ROAM_ALIASES: "my computer" "my laptop" "my Omnibook"
+:END:
+#+title: emsenn's Omnibook
+#+date [2025-08-11 Mon 18:44]
+

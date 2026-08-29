@@ -1,0 +1,40 @@
+---
+name: evaluate-step
+kind: operator
+layer: machine
+derived_from:
+  - system/operator/task-precedence
+uses:
+  - machine/structure/evaluation-state
+  - machine/structure/failure-carrier
+produces:
+  - machine/structure/evaluation-state
+  - machine/structure/failure-carrier
+---
+
+Performs a single machine-level evaluation step over
+[EvaluationState](docs/machine/structure/evaluation-state.md). In addition to
+its normal result, it may emit a
+[`FailureCarrier`](docs/machine/structure/failure-carrier.md) when the primitive
+reduction or normalisation obligations are not met.
+
+## Failure mode
+
+- **EvaluationFailure** — reduction undefined for the current state, or
+  normalisation preconditions violated, emitted as
+  [`FailureCarrier`](docs/machine/structure/failure-carrier.md).
+
+## Behaviour
+
+- On success: advance [EvaluationState](docs/machine/structure/evaluation-state.md)
+  (details to be derived from the system task/evaluation operators).
+- On failure: emit [`FailureCarrier`](docs/machine/structure/failure-carrier.md)
+  with origin, arguments, and diagnostics; halt dependent runbook tasks.
+
+## Proof
+
+Sketch: refine `system/operator/task-precedence` into the machine evaluation
+step by restricting to earned machine carriers and showing that for every
+admissible system step, the machine step either advances consistently or
+returns `FailureCarrier` when preconditions (earned invariants/normalisation
+obligations) are violated.

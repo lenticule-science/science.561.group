@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       31a76363-c7de-4508-a6a8-dc134755c272
+:END:
+#+title: modal commution
+#+date: [2025-10-17 Fri 12:18]
+

@@ -1,0 +1,49 @@
+\subsection{Residue-gap arithmetic}
+
+\begin{theorem}[B\'ezout / modular inverse]
+  \label{thm:collatz-bezout}
+  \lean{Infomaterial.Closure.Collatz.bezout}
+  \leanok
+  \uses{thm:collatz-nondescent-iff}
+  B\'ezout's identity over $\mathbb{Z}$ by the extended Euclidean recursion
+  (\texttt{Nat.gcd.induction}): $a x + b y = \gcd(a,b)$ for integer
+  coefficients. For coprime $D,M$ this gives a modular inverse
+  $M \mid D x - 1$ (\texttt{mod\_inverse\_exists}), hence the least residue
+  $r<M$ with $D\cdot r\equiv C\pmod M$ (\texttt{exists\_residue}).
+  $\mathsf{Classical}$-free.
+\end{theorem}
+
+\begin{theorem}[Residue-gap refinement]
+  \label{thm:collatz-residue-gap}
+  \lean{Infomaterial.Closure.Collatz.residue_characterization}
+  \leanok
+  \uses{thm:collatz-nondescent-iff, thm:collatz-bezout}
+  Since $\gcd(D,M)=1$ ($D$ odd, $M$ a power of two), semigroup membership is a
+  pure residue/size condition: there is a least residue $r<M$ (constructed via
+  the modular inverse, \cref{thm:collatz-bezout}) with
+  $D\cdot r\equiv C\pmod M$ and
+  \[
+    C\in\langle D,M\rangle \iff D\cdot r\le C,
+  \]
+  so non-membership is the modular inequality $C<D\cdot r$ (the gap
+  $D\cdot r-C$). Built from a coprime-cancellation lemma and the
+  $\mathrm{mod}\leftrightarrow\mathrm{dvd}$ bridges over the local congruence
+  $a\bmod M=b\bmod M$; $\mathsf{Classical}$-free. The remaining open part is
+  purely the gap conjecture $D\cdot r-C\ge M$ for every nontrivial parent
+  barrier (\cref{thm:collatz-gap-holds}).
+\end{theorem}
+
+\begin{theorem}[Gap reduces to the residue inequality]
+  \label{thm:collatz-residue-gap-reduces}
+  \lean{Infomaterial.Closure.Collatz.parentBarrierResidueGap_implies_parentBarrierGap}
+  \leanok
+  \uses{thm:collatz-residue-gap, thm:collatz-gap-holds}
+  For a parent barrier, $D=2B-A$ is odd and $M=2B=2^{|p|+1}$ a power of two,
+  hence coprime (\texttt{parentD\_coprime\_parentM}); so the residue
+  characterization applies pointwise. The sharp residue form
+  \texttt{ParentBarrierResidueGap} --- for every nontrivial parent barrier the
+  residue satisfies $C<D\cdot r$ --- implies \texttt{ParentBarrierGap}
+  (\cref{thm:collatz-gap-holds}). The semigroup-nonmembership conjecture is
+  thus reduced, in proved Lean, to a concrete modular inequality per barrier;
+  that inequality is all that remains open.
+\end{theorem}

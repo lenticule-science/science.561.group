@@ -1,0 +1,39 @@
+---
+title: Strong Normalization
+id: strong-normalization
+role: operator
+status: plan
+derived_from: acts/normalize-strongly
+inputs: []
+outputs: []
+transformation:
+- return
+- value
+proof_refs: []
+---
+
+
+# Strong Normalization
+
+## Statement
+
+The earned acts [`normalization`](../acts/normalization.md),
+[`step-trace`](../acts/step-trace.md), and
+[`normalize-strongly`](../acts/normalize-strongly.md) jointly earn that every
+well-founded reduction trace collapses to normal form.
+
+## Proof sketch
+
+`Normalization` applied to `StepTrace` collapses any infinite tail; the act
+`NormalizeStrongly` records that collapse explicitly, so every admissible
+reduction terminates.
+
+## Uniqueness
+
+Because the normalization acts fix the reduction relation and its collapse,
+this strong-normalization property is unique in the earned sense.
+
+## Proof
+- Derived from: [Normalize Strongly](../acts/normalize-strongly.md).
+- Inputs: stabilization of reduction traces via [Trace Renewal](trace-renewal.md).
+- Shows that: every admissible reduction trace collapses to normal form.

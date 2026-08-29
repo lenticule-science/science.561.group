@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       0807b10e-c279-441e-997c-1fcee89f3b52
+:END:
+#+title: Relational Infinity-Topos Modality coKleisli comandic functor
+#+date: [2025-10-15 Wed 18:21]
+

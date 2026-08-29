@@ -1,0 +1,61 @@
+#+title: 2020-12-17
+#+begin_head
+#+ghe_schema: daily-record-0.1.0
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-17 Thu 09:03]
+#+roam_tags: daily-record
+#+end_head
+#+name: summary-text
+#+begin_summary
+This is [[file:../emsenn.org][emsenn]]'s [[file:../daily_record.org][daily record]] for [2020-12-17 Thu]. If you are viewing this record outside of its original environment, please be aware it maybe be heavily redacted.
+#+end_summary
+
+* Journal                                                          :noexport:
+** [2020-12-17 Thu 09:03]
+   I went to bed late last night and [[file:../ikmu.org][Ikmu]] woke me up earlier, so I'm getting a late start to my day. The big plan for the day is to get [[file:../esther_davis.org][Esther Davis]] set up with [[file:../emacs.org][Emacs]], [[file:../org_mode.org][Org-mode]], and  so they can start generating content for [[file:../bindinggenerations_net.org][BindingGenerations.net]].
+** [2020-12-17 Thu 09:13]
+ I noticed right when I started to use [[file:../org_roam_dailies.org][Org-roam dailies]] today that the directory-local variables to configure [[file:../org_roam.org][Org-roam]] weren't working right. In the short-term I deleted both of them, since my personal [[file:../org_roam_directory.org][Org-roam directory]] is configured by my [[file:../emacsen.org][Emacsen]].
+** [2020-12-17 Thu 09:15]
+ One thing I'd like to change today is set up my [[file:../org_roam_dailies.org][Org-roam dailies]] to, when run through [[file:../org_publish.org][Org-publish]], generate a sitemap of just the dailies, so that there can be some page that's just about those files.
+** [2020-12-17 Thu 09:24]
+ Tweaked my [[file:../org_roam_dailies.org][Org-roam dailies]] templates to include more meta-data at the head of daily files.
+** [2020-12-17 Thu 09:41]
+ I'm getting together resources to set up making [[file:../bindinggenerations_net.org][BindingGenerations.net]] on [[file:../esther_davis.org][Esther Davis]]' [[file:../computer.org][computer]], which runs [[file:../windows_10.org][Windows-10]]. There's [[https://org-roam.discourse.group/t/zero-to-emacs-and-org-roam-a-step-by-step-guide-on-windows-10/400][this series]] of tutorials on the [[file:../org_roam_discourse.org][Org-roam Discourse]], which probably will be a good guideline, but since I'm trying to get Esther set up with [[file:../groundhog_emacs.org][Groundhog Emacs]] I'll probably have to incorporate parts from this guide into that information. Unrelated, but I've just noticed in the bottom of my [[file:../emacsen.org][Emacsen]] that I currently have 97 notes in my [[file:../org_roam_database.org][Org-roam database]], which feels pretty cool! When I'm not working on BN.net, I'll probably be working on expanding my own database, first with the content on emsenn.net, then emsenn.neocities.org, and then from a flash drive I have that has a few small records.
+
+ Last night I talked a lot with [[file:../benjamin_slade.org][Benjamin Slade]] about [[file:../org_roam.org][Org-roam]] and 
+[[file:../information_management.org][information management]] and [[file:../culture_building.org][culture-building]], and while the specifics aren't important to record here, it has left me feeling rather high-energy about the sort of work I'm engaged in right now. Oh, and before I forget, if I do finish BN.net enough for it to work, today, and have time, I really want to re-design my old [[file:../org_mode_capture_template.org][Org-mode capture template]], if I can find them, as [[file:../org_roam_capture_template.org][Org-roam capture templates]], specifically the ones that had to do with creating new [[file:../ledger_cli.org][Ledger-CLI]] source blocks, /especially/ the ones that had to do with handling my kitchen inventory. /(Oh, the new notes created to back the links in the above paragraph put me at 101 notes in my Org-roam database.)/
+** [2020-12-17 Thu 10:25]
+ Everything was going fine setting up Esther's Emacsen... until I tried to navigate between folders. Windows' home directories are so mess! Emacs thinks =~= is =C:\Users\edavi\AppData\Roaming\=, and I legit can't find like, the =Documents= folder I've been working with in the [[file:../gui.org][GUI]] this whole time!
+** [2020-12-17 Thu 11:10]
+ Alright, I'm just accepting =AppData/Roaming= as Esther's home directory. I'm now copying over content from the existing site. Not looking forward to trying to teach them to use this >_<
+** [2020-12-17 Thu 12:06]
+ Okay, I think I have the basics of what Esther needs to start making entries for their Website ready for them: they can start Emacs, do =C-c n f= to create a note or =F5= to write a new journal entry, and go from there. Gonna add a little cheatsheet to [[file:../groundhog_emacs.org][Groundhog Emacs]].
+** [2020-12-17 Thu 15:26]
+ Onboarding Esther with their Groundhog Emacs went a lot smoother than expected, given it was my first time, the [[file:../tool.org][tool]] is new, and Esther isn't familiar with Emacs or any other part of it previously! I'm still watching them as they add links to their existing content, but it's going smoother than anticipated!
+** [2020-12-17 Thu 20:45]
+ After using [[file:../org_roam.org][Org-roam]] for two days and [[file:../org_roam_dailies.org][Org-roam dailies]] for a day now, I'm starting to see where the gaps are in my understanding in [[file:../note_taking.org][note-taking]].
+
+ I'm not sure yet how to say, do anything with [[file:../bibtex.org][BibTex]], and that seems like it'd be useful for building a repository of non-local (or extra-[[file:../org_roam_database.org][Org-roam database]]) information, that's then associated with a in-database record.
+
+ And I also want to work on what my [[file:../org_roam_dailies.org][Org-roam dailies]] will look like - what I'm going to start calling, to de-associate it from Org-roam, my [[file:../daily_record.org][daily record]].
+
+ Right now I've made [[file:../org_roam_daily_capture_templates.org][Org-roam daily capture templates]] for capturing into two headings inside each daily record: "Personal Log" and "Weather"
+
+ I think I want a heading for an activity log - notes about what I'm working on, another for a journal, and I still like the idea of a weather log, though I haven't used it yet! Oh, another heading for observations might be nice.
+
+ I can assume that the activity log and the journal will be private, for me, but the weather logs could be shared.
+
+ Might be helpful to at this point firm up my language. For example, I've been saying [[file:../note.org][note]] a lot recently when I write, but I think the more appropriate word might be [[file:../record.org][record]], which I've just written a new record to define as, "a piece of [[file:../information.org][information]] that's been serialized in some way."
+
+ So, I'm talking about creating a "daily record," which will contain a variety of data. Have to stop for now, but when I'm back I wanna talk about what sort of data goes in a daily record.
+
+* News log
+** Opportunity to add names to shawl memorialziing MMIWG2s
+   :LOGBOOK:
+   - Note taken on [2021-01-03 Sun 13:00] \\
+     The [[file:../administration_for_native_americans.org][Administration for Native Americans]], a part of the [[file:../health_and_human_services.org][Health and Human Services]]' [[file:../administration_for_children_and_families.org][Administration for Children and Families]], has announced "the opportunity to virtually submit names to be written on the ANA's Missing and Murdered Native Americans Memorial Shawl."
+     
+     I guess recognition is better than absolute [[file:../erasure.org][erasure]], but this does seem to treat the tragedy as just a natural event, not a consequence of choices by the [[file:../contemporary_kyriarchy.org][contemporary settler-colonial kyriarchy]].
+   :END:
+   

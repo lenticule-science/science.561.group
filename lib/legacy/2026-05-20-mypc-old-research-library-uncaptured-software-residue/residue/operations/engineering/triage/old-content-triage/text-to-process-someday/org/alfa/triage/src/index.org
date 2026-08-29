@@ -1,0 +1,32 @@
+#+SETUPFILE: ./default-setup.inc
+#+TITLE: emsenn's Documents and Resources
+#+EXPORT_FILE_NAME: ../pub/index
+#+MACRO: document-type website
+#+INDEX: index!"emsenn's Documents and Resources"
+#+TOC: headlines 1
+* Introduction
+My name is */emsenn/* and I'm a writer and developer. This website is
+a repository of my work.
+
+#+INCLUDE: "./plates.inc::default-eli"
+
+If you are a representative of a public office or government agency,
+please see my [[file:./legal-information.org][legal information]].
+
+Below is a alphabetical list of pages and subdirectories, followed by
+an index of terms.
+* Sitemap
+#+INCLUDE: "./sitemap.org" :only-contents t
+* Index
+#+INCLUDE: "./theindex.inc"
+* Supplements
+** Contribute
+   :PROPERTIES:
+   :CUSTOM_ID: supplements-contribute
+   :END:
+#+INCLUDE: "./plates.inc::personal-contribute"
+** License
+   :PROPERTIES:
+   :CUSTOM_ID: supplements-license
+   :END:
+#+INCLUDE: "./plates.inc::mit-license"

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       dc11994b-719e-4140-9abb-78765aa3f779
+:END:
+#+title: property
+#+date: [2025-10-17 Fri 12:04]
+

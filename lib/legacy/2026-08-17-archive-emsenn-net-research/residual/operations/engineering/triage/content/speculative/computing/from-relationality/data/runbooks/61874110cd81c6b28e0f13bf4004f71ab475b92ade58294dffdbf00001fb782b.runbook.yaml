@@ -1,0 +1,26 @@
+name: profile_observe
+inputs:
+- role: observation_carrier
+  kind: observation_carrier
+- role: profile_topos
+  kind: profile_topos
+- role: measurement_frame
+  kind: measurement_frame
+outputs:
+- role: profile_observe_evidence
+  kind: profile_observe_evidence
+steps:
+- name: profile_observe
+  operator: profile_observe
+  step_index: 0
+  inputs:
+  - role: observation_carrier
+    kind: observation_carrier
+  - role: profile_topos
+    kind: profile_topos
+  - role: measurement_frame
+    kind: measurement_frame
+  outputs:
+  - role: profile_observe_evidence
+    kind: profile_observe_evidence
+id: 61874110cd81c6b28e0f13bf4004f71ab475b92ade58294dffdbf00001fb782b

@@ -1,0 +1,20 @@
+\section{Order, generated as a partial order on charges}
+\begin{proposition}[The knowledge order $\le_k$]\label{thm:kle}\lean{Infomaterial.Charge.KLE}\leanok\uses{thm:four-bilattice}
+\texttt{KLE a b} is the proposition that the decidable knowledge comparison
+$\texttt{leK}\,a\,b$ holds, i.e.\ that charge $a$ carries no more knowledge than
+$b$. It is declared reducible so the underlying boolean is visible to
+\texttt{decide}. This is the relation settling generates and climbs.
+\end{proposition}
+\begin{theorem}[$\le_k$ is reflexive]\label{thm:kle-refl}\lean{Infomaterial.Charge.kle_refl}\leanok\uses{thm:kle}
+Every charge stands in the knowledge order to itself: $\texttt{KLE}\,a\,a$.
+\end{theorem}
+\begin{theorem}[$\le_k$ is transitive]\label{thm:kle-trans}\lean{Infomaterial.Charge.kle_trans}\leanok\uses{thm:kle}
+If $a \le_k b$ and $b \le_k c$ then $a \le_k c$; proven by exhausting the
+finite charge lattice with \texttt{decide}.
+\end{theorem}
+\begin{theorem}[$\le_k$ is antisymmetric]\label{thm:kle-antisymm}\lean{Infomaterial.Charge.kle_antisymm}\leanok\uses{thm:kle}
+If $a \le_k b$ and $b \le_k a$ then $a = b$. Together with reflexivity and
+transitivity this makes $\le_k$ a genuine \emph{partial order}, not merely a
+preorder --- the antisymmetry is exactly the thinness that later forces
+lax-idempotence to collapse to strict idempotence.
+\end{theorem}

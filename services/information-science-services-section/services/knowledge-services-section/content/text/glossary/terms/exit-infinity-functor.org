@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       fd7da46d-cbd4-473b-802a-5fc3e21be5f9
+:END:
+#+title: exit infinity-functor
+#+date: [2025-10-09 Thu 19:21]
+

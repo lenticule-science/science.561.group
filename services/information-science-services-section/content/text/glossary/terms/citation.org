@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       12e8f72c-0e76-4dbe-948d-39f671623a98
+:END:
+#+title: citation
+#+date: [2025-08-28 Thu 08:59]
+

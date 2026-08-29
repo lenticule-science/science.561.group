@@ -1,0 +1,6 @@
+#+title: prose
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-19 Sat 18:31]
+#+roam_tags: term
+*/Prose/* is a type of [[file:writing.org][writing]]

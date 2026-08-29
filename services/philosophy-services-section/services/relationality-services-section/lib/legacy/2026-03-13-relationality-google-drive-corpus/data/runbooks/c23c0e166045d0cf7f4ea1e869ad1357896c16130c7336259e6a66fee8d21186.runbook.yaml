@@ -1,0 +1,15 @@
+id: c23c0e166045d0cf7f4ea1e869ad1357896c16130c7336259e6a66fee8d21186
+inputs: &id001
+- kind: observation_equivalence
+  role: observation_equivalence
+name: normalize_observation_equivalence
+outputs: &id002
+- kind: observation_equivalence_evidence
+  role: observation_equivalence_evidence
+steps:
+- inputs: *id001
+  name: normalize_observation_equivalence
+  operator: normalize_observation_equivalence
+  outputs: *id002
+  step_index: 0
+

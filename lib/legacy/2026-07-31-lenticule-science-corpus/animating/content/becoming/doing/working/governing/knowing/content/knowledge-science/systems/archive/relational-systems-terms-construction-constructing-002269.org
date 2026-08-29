@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       fae94410-21d4-4f17-9123-0588e7d6afb5
+:public:   true
+:ROAM_ALIASES: constructs constructed
+:form:     [[id:32e00173-c695-4bb6-b0d2-9dc17fec128b][act]]
+:END:
+#+title: constructing
+#+date: [2025-08-25 Mon 08:57]
+

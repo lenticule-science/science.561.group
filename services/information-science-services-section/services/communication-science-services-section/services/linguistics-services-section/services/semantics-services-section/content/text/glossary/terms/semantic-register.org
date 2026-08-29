@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       3f9f028d-bd99-4ac6-b7d3-b0427a3368ee
+:END:
+#+title: semantic register
+#+date: [2025-09-03 Wed 20:50]
+

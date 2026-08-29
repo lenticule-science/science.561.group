@@ -1,0 +1,15 @@
+\section{The plain weave as a shift of finite type}
+
+\begin{proposition}[Plain-weave warp rule]\label{thm:weave-draft}\lean{Infomaterial.Persistence.Aperiodic.warpAlt}\leanok\uses{thm:status-correspondence, thm:bool-colouring-bipartite}
+The over/under alternation rule \texttt{warpAlt} on the crossing alphabet $\texttt{Bool}$
+($\texttt{true}=$ warp-over, $\texttt{false}=$ weft-over): a crossing may be followed only
+by its opposite. Its directed walks are the admissible plain weaves --- a shift of finite
+type, equal to the two-colour complete graph (plain weave $=$ a proper $2$-colouring; the
+bipartite reading), with single local rule the no-float law (\texttt{warpAlt\_forbids\_float}).
+\end{proposition}
+
+\begin{theorem}[A weave draft is sofic]\label{thm:weave-draft-sofic}\lean{Infomaterial.Persistence.Aperiodic.warp_sofic}\leanok\uses{thm:weave-draft}
+Every admissible plain-weave warp word is its own $1$-block image: drafts are sofic shifts
+(the \texttt{sft\_is\_sofic} direction). The entry point to reading textiles as the
+Tiles substrate.
+\end{theorem}

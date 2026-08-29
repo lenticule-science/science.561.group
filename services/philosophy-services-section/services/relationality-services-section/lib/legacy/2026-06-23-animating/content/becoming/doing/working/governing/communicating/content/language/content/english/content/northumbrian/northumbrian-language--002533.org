@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       be293ceb-3786-446d-8b95-a510faec1e29
+:public:   true
+:instantiates: [[id:e8bfbd06-21f6-4e9a-a42b-27a93d5c7b21][language]]
+:field:    [[id:db339338-6c1f-4a78-8a5e-213f3d462e14][Northumbria]]
+:END:
+#+title: Northumbrian language
+#+date: [2025-08-25 Mon 08:01]
+#+index: Northumbria!Northumbrian language

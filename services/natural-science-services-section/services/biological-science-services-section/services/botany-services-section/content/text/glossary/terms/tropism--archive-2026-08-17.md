@@ -1,0 +1,27 @@
+---
+
+title: "Tropism"
+description: "A tropism is a directional growth or movement response of an organism to an environmental stimulus. The term derives from the Greek *tropos* (turning). Phototropism is growth toward or away from light; gravitropism is growth in response to gravity; thigmotropism is growth in response to touch; chemotropism is growth in response to chemical gradients."
+date-created: 2026-03-06T00:00:00
+aliases:
+  - "tropism"
+  - "tropisms"
+  - "phototropism"
+  - "gravitropism"
+keywords:
+  - biology
+  - plant-biology
+defines:
+  - "Tropism"
+  - "tropisms"
+date-modified: 2026-03-09
+part-of: biology/disciplines/botany/terms
+---
+
+A tropism is a directional growth or movement response of an organism to an environmental stimulus. The term derives from the Greek *tropos* (turning). Phototropism is growth toward or away from light; gravitropism is growth in response to gravity; thigmotropism is growth in response to touch; chemotropism is growth in response to chemical gradients.
+
+In plants, tropisms are mediated by differential distribution of the hormone auxin. When light strikes a plant stem from one side, auxin migrates to the shaded side, promoting cell elongation there and bending the stem toward the light. The response is not a decision; it is a structural consequence of the interaction between the plant's biochemistry and the environmental gradient. But neither is it a simple reflex — the response is modulated by concentration, duration, developmental stage, and the presence of other signals.
+
+Tropisms are biologically significant for the [Umwelt](../../ethology/umwelt.md) concept: they demonstrate that even organisms without nervous systems engage in sign-mediated behavior. The plant does not "see" light in any subjective sense, but it responds to light as a [sign](../../../../linguistics/domains/semiotics/terms/sign.md) — a perturbation that triggers an organized response. In [biosemiotic](../../../../linguistics/domains/semiotics/texts/biosemiotics.md) terms, the photon is a *Merkzeichen* (perception sign) and the auxin redistribution initiates a *Wirkzeichen* (action sign), completing a functional cycle. Tropisms extend semiosis below the threshold of neural activity.
+
+For the relational framework, tropisms illustrate that biological behavior is relational through and through. The plant's form — its curvature, its branching pattern, its orientation — is not an expression of an internal program read out in isolation. It is the ongoing product of the relation between the organism and its environment. The shape of the plant *is* the history of its tropistic responses.

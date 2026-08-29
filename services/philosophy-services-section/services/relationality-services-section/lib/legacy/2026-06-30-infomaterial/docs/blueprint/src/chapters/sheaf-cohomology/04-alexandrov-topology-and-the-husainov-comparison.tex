@@ -1,0 +1,43 @@
+\section{Alexandrov topology and the Husainov comparison}
+
+\begin{theorem}[The Alexandrov topology recovers the poset]\label{thm:alexandrov-recovers-poset}\lean{Infomaterial.Alexandrov.alexandrov_specialization_recovers_poset}\leanok\uses{thm:kle}
+For the Alexandrov topology of a poset $(P,\le)$ --- opens are the up-sets --- the opens are
+closed under \emph{arbitrary} intersection and union (the defining Alexandrov property), the
+specialization order recovers $\le$ exactly ($x \rightsquigarrow y \iff x \le y$, as predicates
+$\rightsquigarrow\ =\ \le$), and a map is continuous iff it is monotone. This is the classical
+equivalence \emph{Alexandrov spaces $\cong$ preorders}, proved over the derived poset
+infrastructure ($\texttt{alexandrov\_specialization\_recovers\_poset}$).
+\end{theorem}
+\begin{theorem}[\v{C}ech cohomology vanishes on the bounded sub-sites]\label{thm:husainov-cech-acyclic}\lean{Infomaterial.Alexandrov.husainov_cech_acyclic_on_bounded_sites}\leanok\uses{thm:h1-zero-iff-confluent, thm:alexandrov-recovers-poset}
+On the bounded sub-sites --- the strict ($\kappa<\omega$) / Scott ($\kappa=\omega$) regime --- the
+\v{C}ech $H^1$ of every cover vanishes ($\texttt{CechAcyclic}$, reusing
+\cref{thm:h1-zero-iff-confluent}) and \v{C}ech cohomology is trivial above degree one. This is a
+statement about the \v{C}ech computation \emph{alone}; it makes no comparison with the derived
+functor. In this model the \v{C}ech vanishing is in fact unconditional --- every cover glues ---
+so the regime here gates only the general dichotomy, where $H^1$ may be nonzero in the non-Scott
+regimes.
+\end{theorem}
+\begin{theorem}[Husainov: \v{C}ech $=$ derived-functor cohomology]\label{thm:husainov-cech-derived}\notready\uses{thm:husainov-cech-acyclic, thm:alexandrov-recovers-poset}
+\emph{(Open frontier --- stated, not formalized.)} On an Alexandrov poset, \v{C}ech cohomology
+agrees with the \emph{derived-functor} sheaf cohomology of the sheafification,
+$\check{H}^n(F_U) \cong R^n\Gamma(F_U)$, exactly when the poset's Dedekind--MacNeille cuts are
+acyclic --- a necessary-and-sufficient condition, algorithmically computable for finite posets
+([@husainov2026]). The load-bearing content is the comparison itself, and it requires
+\emph{derived-functor} cohomology $R^n\Gamma$ --- the right-derived functors of global sections,
+built from an injective or flasque resolution of $F_U$. That resolution machinery is not
+available in the dependency-free core, and without it there is no honest non-trivial Lean
+statement of the comparison: defining $R\Gamma := \check{H}$ makes it a tautology (the exact
+defect this pass removed), while conditioning it on an unconstrained abstract $R\Gamma$ makes it
+refutable. This node therefore stays \textbf{red} until the resolution machinery is formalized;
+it is the genuine frontier this corner of the library reaches, recorded here at full strength
+rather than faked in Lean. \cref{thm:husainov-cech-acyclic} supplies the \v{C}ech half it will
+build on.
+\end{theorem}
+
+\begin{theorem}[Tarski sheaf closure identifies the harmonic kernel with $H^0$]\label{thm:tarski-sheaf-closure}\lean{Infomaterial.Tarski.harmonic_kernel_h0_iso}\leanok\uses{thm:closure-operator, thm:op-least, thm:settling-hodge-iso}
+For a directed cell complex valued in a complete lattice, the Tarski drive has a
+least fixed point by the closure/fixed-point spine. Its harmonic kernel and its
+degree-zero settled-section object are equivalent. This is the shared closure
+carrier used later by keratin contacts, liquid short-range order, and graph
+screening.
+\end{theorem}

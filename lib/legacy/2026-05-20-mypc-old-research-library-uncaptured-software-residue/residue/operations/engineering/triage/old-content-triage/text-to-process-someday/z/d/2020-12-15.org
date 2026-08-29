@@ -1,0 +1,25 @@
+#+title: 2020-12-15
+#+begin_head
+#+ghe_schema: daily-record-0.1.0
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-15 Tue]
+#+roam_tags: daily-record
+#+select_tags: export
+#+end_head
+
+#+name: summary-text
+#+begin_summary
+This is [[file:../emsenn.org][emsenn]]'s [[file:../daily_record.org][daily record]] for [2020-12-15 Tue]. If you are viewing this record outside of its original environment, please be aware it maybe be heavily redacted.
+#+end_summary
+* Journal                                                          :noexport:
+** [2020-12-15 Tue 15:59]
+So I'm considering using [[file:../org_roam.org][Org-roam]] and [[file:../org_mode.org][Org-mode]]'s publishing to try and generate a [[file:../website.org][Website]]. (See [[file:../org_roam_website.org][Org-roam Website]].)
+
+Org-roam didn't exist the last time I was using Org-mode heavily, and so I'm curious if it's going to be appropriate for what I want right now.
+
+So, in a lot of ways my computer use can be seen as [[file:../storytelling.org][storytelling]] to myself, and its effect is [[file:../culture_building.org][culture-building]]. [[file:../jethro_kuan_how_to_take_smart_notes_with_org_mode.org][Jethro Kuan: "How To Take Smart Notes with Org-mode"]] asks, “In what context do I want to see this note again?” and I think the context I want to see /all/ my notes is when I'm using the to tell myself a story, or prepare a story for the [[file:../web.org][Web]].
+
+I've liked the [[file:../zettelkasten_method.org][Zettelkasten method]] since I heard of it, but didn't find any interface for it that I really liked - except [[file:../roam_research.org][Roam Research]].
+
+[[file:../org_roam.org][Org-roam]] seems like a good enough way of recording the notes: within [[file:../emacs.org][Emacs]] itself it seems more than easy enough to use. The question is if there's going to be a good way to export these notes to a Website, without losing my ability to keep most of them private!

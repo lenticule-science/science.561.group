@@ -1,0 +1,43 @@
+{
+  "name": "@lenticule-science/l-space",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "L-Space: the Lenticule Science knowledge garden at l-space.561.group, composed from the reusable 561 Group knowledge-vault contract.",
+  "engines": {
+    "node": ">=24"
+  },
+  "dependencies": {
+    "@561-group/knowledge-vault": "file:../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-knowledge-systems-services-section/services/knowledge-vault-computer-system-services-section/apps/knowledge-vault",
+    "@561-group/vault-compiler": "file:../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-knowledge-systems-services-section/services/knowledge-vault-computer-system-services-section/services/vault-compiler",
+    "@red-cup-engineering/exchange-google-callback-service": "file:../../../engineering-services-section/services/computer-engineering-services-section/services/computer-networking-services-section/services/oauth-services-section/services/google-oauth-services-section/services/exchange-google-callback-service",
+    "@red-cup-engineering/judge-principal-admission-service": "file:../../../engineering-services-section/services/computer-engineering-services-section/services/computer-networking-services-section/services/oauth-services-section/services/judge-principal-admission-service",
+    "@red-cup-engineering/lantern-561-group": "file:../../../public-services-section/services/public-computer-services-section/services/public-computer-games-services-section/services/lantern-service",
+    "@red-cup-engineering/oauth-services-section": "file:../../../engineering-services-section/services/computer-engineering-services-section/services/computer-networking-services-section/services/oauth-services-section",
+    "@red-cup-engineering/project-web-feed-artifacts-service": "file:../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/web-services-section/services/web-data-services-section/services/project-web-feed-artifacts-service",
+    "@red-cup-engineering/relay-to-google-consent-service": "file:../../../engineering-services-section/services/computer-engineering-services-section/services/computer-networking-services-section/services/oauth-services-section/services/google-oauth-services-section/services/relay-to-google-consent-service",
+    "@red-cup-engineering/render-markdown-block-html-service": "file:../../../engineering-services-section/services/computer-engineering-services-section/services/computer-data-services-section/services/computer-data-type-services-section/services/computer-text-data-services-section/services/markdown-services-section/services/markdown-rendering-services-section/services/render-markdown-block-html-service",
+    "@red-cup-engineering/render-markdown-inline-html-service": "file:../../../engineering-services-section/services/computer-engineering-services-section/services/computer-data-services-section/services/computer-data-type-services-section/services/computer-text-data-services-section/services/markdown-services-section/services/markdown-inline-html-services-section/services/render-markdown-inline-html-service",
+    "@red-cup-engineering/discord-rest-transport-service": "file:../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/web-services-section/services/web-platform-services-section/services/web2-platform-services-section/services/web2-social-platform-services-section/services/discord-services-section/services/discord-rest-transport-service",
+    "@red-cup-engineering/web-tufte-gui-services-section": "file:../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/web-services-section/services/web-interface-services-section/services/web-tufte-gui-services-section",
+    "jose": "^6.2.9"
+  },
+  "exports": {
+    ".": "./src/index.mjs",
+    "./config": "./src/config.mjs"
+  },
+  "scripts": {
+    "build:cloud": "npm run build:engine && node --stack-size=65500 --import tsx scripts/build-cloud-release.mjs",
+    "build:vps": "npm run build:cloud && esbuild lib/vps/authoring-entry.mjs --bundle --platform=node --format=esm --outfile=dist/vps-authoring.mjs",
+    "build:engine": "node scripts/build-browser-engine.mjs",
+    "cloudflare:config": "node scripts/configure-cloudflare.mjs",
+    "cloudflare:deploy": "npm run build:cloud && npm run cloudflare:config && wrangler d1 migrations apply lenticule-science-vaultmaze --remote --config lib/cloudflare/wrangler.generated.jsonc && wrangler deploy --config lib/cloudflare/wrangler.generated.jsonc",
+    "vps:start": "node lib/vps/server.mjs",
+    "test:vps": "node --test lib/vps/test/*.test.mjs",
+    "test": "node --import tsx --test test/*.test.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "tsx": "^4.23.12",
+    "wrangler": "4.123.0"
+  }
+}

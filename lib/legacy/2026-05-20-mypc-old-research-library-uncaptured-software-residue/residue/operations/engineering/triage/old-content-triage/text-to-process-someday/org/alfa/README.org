@@ -1,0 +1,38 @@
+#+TITLE: emsenn's Org Directory
+#+DESCRIPTION: A description and catalog of the contents of emsenn's ~/org/ directory.
+#+BEGIN: Introduction
+Since discovering it in the early summer of 2018, I've begun using
+Org-mode more and more. At this point, nearly all of my original work
+is under the ~org/~ folder in my home directory.
+
+This README is primarily for my use - in fact as I'm writing this I'm
+unsure what situation would cause someone else to read it - so it
+doesn't have a lot of the stuff I would normally put in such a
+text.
+
+Instead, it is a directory map of my ~org/~ directory, which contains
+my various work organized as */projects/*, collections of files
+oriented toward the same topic or goal. This directory map includes
+literately-programmed configurations for each project, which my Emacs
+session uses to enable me to /publish/ these projects. (This directory
+map is meant for use elsewhere, so unlike the README as a document, is
+not meant just for me... except the parts that are.)
+#+END
+* Directory Map
+This directory map is an overview of my ~org/~ directory, which is
+typically located in my home directory.
+
+** [[file:./src/][=src/=]]
+The =src/= directory contains my /source files/, which are typically
+/exported/, /tangled/, or /published/ to the =build/= directory.
+*** [[file:./src/emacs-stuff.org][=emacs-stuff.org=]]
+*Emacs Stuff* is a collection of my configuration and resources for
+Emacs.
+*** [[file:./src/org-stuff.org][=org-stuff.org=]]
+*Org Stuff* is a collection of my configuration and resources for
+Org-mode, the Emacs major mode.
+*** [[file:./src/personal-website.org][=personal-website.org=]]
+My *personal website* is the website that has information about me, as
+an individual, and a collection of my writing and other projects.
+** [[file:./build/][=build/=]]
+*** [[file:./build/hugo-md/][=hugo-md/=]]

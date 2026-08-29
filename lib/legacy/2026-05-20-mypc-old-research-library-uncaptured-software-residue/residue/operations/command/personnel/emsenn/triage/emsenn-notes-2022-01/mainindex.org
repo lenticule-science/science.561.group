@@ -1,0 +1,3 @@
+#+title: main index
+
+#+include: "theindex.inc"

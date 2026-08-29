@@ -1,0 +1,5 @@
+#+title: fantasy
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-18 Fri 21:27]
+A */fantasy/* is a fiction that is known to be a fiction; usually because its difference from [[file:reality.org][reality]] is so noticable.

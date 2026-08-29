@@ -1,0 +1,45 @@
+#+title: 2020-12-20
+#+begin_head
+#+ghe_schema: daily-record-0.1.0
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-20 Sun 09:38]
+#+TODO: DISCOVERED(!) | (REGISTERED(@)
+#+roam_tags: daily-record
+#+end_head
+#+name: summary-text
+#+begin_summary
+This is [[file:../emsenn.org][emsenn]]'s [[file:../daily_record.org][daily record]] for [2020-12-20 Sun]. If you are viewing this record outside of its original environment, please be aware it maybe be heavily redacted.
+#+end_summary
+* Journal                                                          :noexport:
+** [2020-12-20 Sun 09:38]
+ I think I have an idea. My [[file:../org_roam_records.org][Org-roam records]] contain the [[file:../information.org][information]] I've captured about something. I wonder if I could have those records then create a virtual representation of the thing, the way my MUD engine creates virtual things.
+
+ So like, part of a very-well developed term card for a species of bean is a section on its photoperiodism, and the table with that information can be read by Org-babel to create the recipe for "make a fake bean plant" in some virtual environment.
+
+ There's reality, and then there's my personal world I live in, and then there's my records, and then there could be a virtual world based on those records!
+
+ This would let me like, literally test my knowledge of things: does the way I understand a bean plant's relationship with the sun /actually/ work? Virtualize both and test!
+** [2020-12-20 Sun 21:40]
+ I spent most of today mucking with the [[file:../groundhog_emacs.org][Groundhog Emacs]] configuration, which meant I spent most of the day with my [[file:../emacsen.org][Emacsen]] broken, and so I haven't had my [[file:../org_roam_capture_template.org][Org-roam capture templates]] available, and so haven't been [[file:../note_taking.org][taking notes]] like I was the past few days. Which is fine; I don't think it's like previous times when I'm fallen off my writing habits because I just fell off them. With [[file:../org_roam.org][Org-roam]], I really do think the friction between all the different parts of my [[file:../computer.org][computer]] use is low enough that I'll probably actually stick with it!
+
+ I'll definitely have to refamiliarize myself with [[file:../elisp.org][Elisp]], but I'm also hoping that by structuring the configuration, largely, as a resource of the [[file:../webgaz.org][WebGAZ]], other folk will be able to benefit from it and so add onto it in ways that help me use it better, too.
+
+ I think this means I'm /finally/ ready to start planning copying from my personal Org-roam database into a website database...
+** [2020-12-20 Sun 23:12]
+ So now that I have my [[file:../emacsen.org][Emacsen]] functioning, I'm left trying to think about how to move forward with... cultivating my [[file:../digital_garden.org][digital garden]]. I think stuff will probably tend to start in my [[file:../daily_record.org][daily record]], and then migrate into the more "formal" records as necessary
+
+ I also want to make sure I have a way for this information to get into my [[file:../website.org][Website]] in a meaningful way. I was talking with [[file:../benjamin_slade.org][Benjamin Slade]] about my plans and I think it might work to export my personal records as Org-mode files, and then use that export directory as the source directory for building the Website. So then I just export a file and republish my website, to share something.
+
+ This'll require adding in tags to prevent exporting on the relevant headlines, to make sure there's not any personal information leaking. Though perhaps it'd be better to tag which headlines /do/ get exported, and leave the rest private...
+
+ Another concern will be links: what'll happen when I link from a public record to a private one?
+* Media Log
+** DISCOVERED Genevieve Bell: "Pandemic Passages"
+   :LOGBOOK:
+   - Note taken on [2020-12-20 Sun 15:12] \\
+   Discovered through [[file:../r_antrhopology.org][r/Anthropology]]
+   :END:
+ - Source :: https://www.berghahnjournals.com/view/journals/aia/28/1/aia280115.xml
+ - Source :: https://doi.org/10.3167/aia.2021.280115
+* Activity Log                                                     

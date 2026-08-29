@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       d0e3bee2-f4b5-46db-9956-b4b6d59e2fb6
+:public:   true
+:END:
+#+title: life
+#+date: [2025-09-06 Sat 07:40]
+#+index: life

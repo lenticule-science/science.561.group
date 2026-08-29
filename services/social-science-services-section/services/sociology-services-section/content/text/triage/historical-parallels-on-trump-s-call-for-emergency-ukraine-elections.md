@@ -1,0 +1,103 @@
+:PROPERTIES:
+:ID:       55de111c-37b7-49b3-8e75-fd9754899841
+:public:   true
+:ROAM_REFS: https://emsenn.substack.com/p/historical-parallels-on-trumps-call
+:instantiates: [[id:5aac60de-42f7-457f-90e5-f05ca31680b4][letter to the Web]]
+:author:   [[id:40cbaad9-af3c-4573-b356-ae116687e483][emsenn]]
+:date-created: [2025-03-07 Fri]
+:END:
+#+title: Historical Parallels on Trump's Call for Emergency Ukraine Elections
+#+date: [2025-03-07 Fri]
+
+The [[id:22064405-cb92-47c1-85d9-bafc5d188112][Trump administration]] has called for emergency elections in [[id:759f0942-7f72-4c05-9bc9-b6435ef8052b][Ukraine]], after a series of events distancing themselves from the nation currently partially occupied by [[id:833af7ba-1be6-4445-97e6-615702c8c151][Russia]].
+
+The move has many historical parallels - to keep it simple and non-speculative, let's look at the parallels within a government who this administration has explicitly credited as an inspiration: the [[id:af4cb5f4-2375-49ac-9d46-27d5d4fb0d37][Third Reich]].
+
+* Parallels
+
+- [[id:d604d97c-375d-4e81-b1fd-41118e959299][Austria]] ([[id:6b17e45f-f180-4f93-86fa-5bb5bf569361][1938ce]]): the forced election that never happened
+  - Austrian Chancellor [[id:4c34b846-a229-40dc-a996-2354ca2d6211][Kurt Schuschnigg]] planned a referendum on independence.
+  - [[id:c515f603-8205-433c-9b1c-6d9816f68fb4][Adolf Hitler]] forced him to cancel it under military threats.
+- Trump allies push for elections in Ukraine while supporting Russian aggression, similar to how Hitler demanded political changes while preparing to invade.
+  - Austria was annexed before the people could vote, and Germany held a rigged plebiscite after occupation.
+- The [[id:40a4aee6-e6a4-4021-be90-deb064c78635][Sudetenland Crisis]] (1938)
+  - Germany supported ethnic German Nazis in the Sudetenland, encouraging them to demand autonomy.
+  - Trump’s team suggests Ukraine needs elections while occupied territories remain under Russian control, echoing Germany’s manipulation of border politics.
+  - The Munich Agreement forced [[id:fb4c185f-3247-4fa1-b510-3bea7cbdd8aa][Czechoslovakia]] to cede the Sudetenland, undermining its sovereignty without an immediate war.
+- Slovak Independence ([[id:f51369db-7be8-4a45-93b6-ae1519c285dd][1939ce]])
+  - After annexing the Sudetenland, Germany pressured [[id:a786c29b-b0f2-4454-a018-20ea4a38bc37][Slovakia]] (then part of Czechoslovakia) into declaring independence.
+  - A forced "election" was held under Nazi influence, creating a puppet state rather than true sovereignty.
+  - Trump’s push for elections in Ukraine, while Russian-occupied areas remain under Kremlin control, mirrors how Germany used manipulated votes to justify breaking apart nations.
+- [[id:b9b54e56-1473-4c64-ada8-2a304c7228ff][Vichy France]] ([[id:8471a694-8048-4b36-9f5b-69cc0c3d9140][1940ce]])
+  - After France fell in WWII, the Nazis backed a collaborationist government in Vichy, presenting it as legitimate.
+  - Russia has staged fake elections in occupied Ukraine, and Trump’s push for "emergency elections" could be a way to install a Kremlin-friendly leader.
+  - Vichy France lost credibility and became a Nazi puppet.
+
+* Strategy
+
+- "Democratic processes" were used to justify authoritarian control.
+- Nazis (and now Russia, with potential Trump backing) used elections to:
+  - Destabilize governments under siege.
+  - Create legitimacy for foreign influence.
+  - Pressure leaders into resignation or concessions.
+
+This is a modern adaptation of an old playbook: first, withholding support, then demanding fradulent elections, and finally using the resulting chaos to justify further aggression.
+
+
+---
+
+<!-- source: content/politics/archive/library/international-relations/references/essays/ukraine-elections/Historical Parallels on Trump's Call for Emergency Ukraine Elections--001764.md -->
+
+## Imported source: content/politics/archive/library/international-relations/references/essays/ukraine-elections/Historical Parallels on Trump's Call for Emergency Ukraine Elections--001764.md
+
+The Trump administration has called for emergency elections in Ukraine, after a series of events distancing themselves from the nation currently partially occupied by Russia.
+
+The move has many historical parallels - to keep it simple and non-speculative, let's look at the parallels within a government who this administration has explicitly credited as an inspiration: Germany's Third Reich.
+
+## Austria (1938) – The Forced Election That Never Happened
+
+- Austrian Chancellor Kurt Schuschnigg planned a referendum on independence.
+
+- Hitler forced him to cancel it under military threats.
+
+- Trump allies push for elections in Ukraine while supporting Russian aggression, similar to how Hitler demanded political changes while preparing to invade.
+
+- Austria was annexed before the people could vote, and Germany held a rigged plebiscite after occupation.
+
+## The Sudetenland Crisis (Czechoslovakia, 1938)
+
+- Germany supported ethnic German Nazis in the Sudetenland, encouraging them to demand autonomy.
+
+- Trump’s team suggests Ukraine needs elections while occupied territories remain under Russian control, echoing Germany’s manipulation of border politics.
+
+- The Munich Agreement forced Czechoslovakia to cede the Sudetenland, undermining its sovereignty without an immediate war.
+
+## Slovak Independence (1939) – A Vote Under Duress
+
+- After annexing the Sudetenland, Germany pressured Slovakia (then part of Czechoslovakia) into declaring independence.
+
+- A forced "election" was held under Nazi influence, creating a puppet state rather than true sovereignty.
+
+- Trump’s push for elections in Ukraine, while Russian-occupied areas remain under Kremlin control, mirrors how Germany used manipulated votes to justify breaking apart nations.
+
+## Vichy France (1940) – Puppet Governments via "Elections"
+
+- After France fell in WWII, the Nazis backed a collaborationist government in Vichy, presenting it as legitimate.
+
+- Russia has staged fake elections in occupied Ukraine, and Trump’s push for "emergency elections" could be a way to install a Kremlin-friendly leader.
+
+- Vichy France lost credibility and became a Nazi puppet.
+
+## The Strategy: Elections as a Tool of Coercion
+
+- "Democratic processes" were used to justify authoritarian control.
+
+- Nazis (and now Russia, with potential Trump backing) used elections to:
+
+- Destabilize governments under siege.
+
+- Create legitimacy for foreign influence.
+
+- Pressure leaders into resignation or concessions.
+
+This is a modern adaptation of an old playbook—first withholding support, then demanding elections, and finally using the resulting chaos to justify further aggression.

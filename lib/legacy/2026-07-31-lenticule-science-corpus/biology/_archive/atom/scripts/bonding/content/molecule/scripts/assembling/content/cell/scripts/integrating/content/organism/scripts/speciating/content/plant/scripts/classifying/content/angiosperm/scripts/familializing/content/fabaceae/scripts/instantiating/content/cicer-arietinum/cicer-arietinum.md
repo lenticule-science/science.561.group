@@ -1,0 +1,49 @@
+---
+
+title: Chickpea
+description: Annual legume domesticated in the Fertile Crescent, one of the oldest cultivated crops with high protein content
+date-created: 2026-04-02
+aliases:
+  - Cicer arietinum
+  - garbanzo
+  - garbanzo bean
+  - chickpea
+  - Bengal gram
+  - gram
+  - chana
+defines: Cicer arietinum
+---
+
+## Chickpea (Cicer arietinum)
+
+*Cicer arietinum* is an erect annual legume domesticated during the First Agricultural Revolution in the Fertile Crescent approximately 10,000 years ago, making it among the earliest legume crops alongside wheat and barley. The species remains the world's second most consumed legume, with global production exceeding 26 million metric tons annually, concentrated in India, which supplies 75% of global output.
+
+## Taxonomy and Evolutionary History
+
+*Cicer arietinum* belongs to the genus *Cicer*, a small group restricted to the Mediterranean and western Asia. The wild progenitor *Cicer reticulatum* occurs in a restricted region of southeastern Turkey and northern Syria. Domestication from wild *C. reticulatum* involved selection for larger seeds, loss of seed dormancy, reduced pod dehiscence, and upright plant habit. Archaeological evidence from sites including Tell Abu Hureyra in Syria documents chickpea cultivation from the 8th millennium BCE.
+
+## Morphology and Development
+
+Chickpea plants typically reach 40–50 cm height with pubescent stems bearing odd-pinnate compound leaves composed of 7–11 small leaflets. The root system is deep-penetrating, reaching 60–100 cm, which provides drought tolerance. Flowers are small (8–10 mm), white, pink, or purple, producing single-seeded pods containing hard, angular seeds 6–8 mm in diameter.
+
+Two major morphotypes are recognized: Kabuli type produces large (>8 mm), light-colored, ram's-head shaped seeds (the name *arietinum* derives from Latin *arietis*, ram), while Desi type produces smaller, darker, more angular seeds with higher tannin content.
+
+## Biochemistry and Nutritional Value
+
+Seeds contain 19–23% protein and 40–50% carbohydrate with substantial mineral content including iron, zinc, and magnesium. Polyphenols and saponins provide bioactive properties. Compared to common beans, chickpeas exhibit lower lectin content and simpler cooking requirements. Sprouted seeds show increased micronutrient bioavailability.
+
+## Nitrogen Fixation
+
+Chickpeas establish rhizobial associations primarily with *Rhizobium* species, fixing atmospheric nitrogen at rates of 80–200 kg N/ha depending on soil conditions, moisture availability, and nodulation efficiency. The crop typically derives 60–80% of its nitrogen from biological fixation, substantially reducing fertilizer requirements and contributing to soil nitrogen pools.
+
+## Agronomy and Stress Tolerance
+
+Unlike most legumes, chickpeas tolerate cool soils and can germinate at 4–5°C, allowing early-season sowing. The species exhibits superior drought tolerance compared to beans, withstanding seasonal moisture stress. Cool-season growing in Mediterranean and temperate climates contrasts with warm-season production in India and sub-Saharan Africa, where both rainy-season and post-monsoon cultivations occur.
+
+## Genetic Diversity and Breeding
+
+Modern chickpea germplasm shows reduced genetic diversity compared to wild relatives, reflecting historical bottlenecks. Plant breeders have selected for disease resistance (particularly to fusarium wilt), early maturity (80–95 days for fresh harvest, 95–110 days for dry grain), and improved seed quality. Kabuli types command premium prices in Western markets while Desi types dominate South Asian cuisines.
+
+---
+
+See also: [Chickpea gardening](../../../../../../engineering/theories/domesticity/theories/production/gardening/terms/chickpea.md), [Legume domestication](../botany/texts/legume-domestication-history.md)

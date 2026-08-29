@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       4ebd1e19-d32b-4c5e-aa69-447ec3983a7a
+:END:
+#+title: role-playing game
+#+date: [2025-08-23 Sat 10:33]
+

@@ -1,0 +1,55 @@
+:PROPERTIES:
+:ID:       d5e839c7-6bec-43e1-857e-3c38056d7241
+:NODE-RELATIONS: (([[id:bee496e1-139b-4a7f-8a24-d4c14e6084c6][instantiates]] . [[id:f691f203-1b49-49ae-b665-0f65c915c822][agent]]))
+:END:
+#+title: Narrator Agent
+
+*
+
+
+---
+
+<!-- source: psychology/agency/archive/library/autonomous-zones/references/groundhog-autonomous-zone/index--003086.org -->
+
+## Imported source: psychology/agency/archive/library/autonomous-zones/references/groundhog-autonomous-zone/index--003086.org
+
+:PROPERTIES:
+:ID:       edfcde9a-3442-45e7-b7b3-521918705557
+:END:
+#+title: Groundhog Autonomous Zone
+#+author: emsenn
+#+date: [2025-08-26 Tue 10:18]
+#+TODO: SOMEDAY LATER SOON PLAN MAKE TEST DOC RLSE | DONE
+
+The */Groundhog Autonomous Zone/* is an confederated imaginary territory, originally established in 2019 in Carrboro, North Carolina.
+
+*/Pax Barbaria/*
+* Documentation
+** README
+** Guiding Words
+
+The following quotes were selected when the GAZ was founded, to help direct its efforts:
+
+- "Decolonization is accountable to Indigenous sovereignty and futurity."
+  - [[Decolonization is not a Metaphor]] by Eve Tuck and K. Wayne Yang
+- "Decolonization, which sets out to change the order of the world, is, obviously, a program of complete disorder. But it cannot come as a result of magical practices, nor of a natural shock, nor of a friendly understanding. Decolonization, as we know, is a historical process: that is to say it cannot be understood, it cannot become intelligible nor clear to itself except in the exact measure that we can discern the movements which give it historical form and content."
+  - [[https://search.worldcat.org/title/11787563][The Wretched of the Earth]] by Frantz Fanon
+- "[H]istory is full of evidence that people can overthrow their oppressors without replacing them. To do so, they need reference to an egalitarian culture, or explicitly anti-authoritarian aims, structures, and means, and an egalitarian ethos. A revolutionary movement must reject all possible governments and reforms, so as not to be recuperated[.]"
+  - [[https://theanarchistlibrary.org/library/peter-gelderloos-anarchy-works][Anarchy Works]] by Peter Gelderloos
+- "The present social organisation is not just delaying, it is also preventing and corrupting any practice of freedom. The only way to learn what freedom is, is to experiment it, and to do so you must have the necessary time and space."
+  - [[https://theanarchistlibrary.org/library/anonymous-at-daggers-drawn-with-the-existent-its-defenders-and-its-false-critics][At Daggers Drawn with the Existent, its Defenders, and its False Critics]]
+- "[U]nderstand the existing order of today as without potential for a positive agenda. Whatever we build within its bounds will be co-opted, destroyed, or turned against us[.]"
+  - [[https://theanarchistlibrary.org/library/serafinski-blessed-is-the-flame][Blessed is the Flame]] by Serafinski
+- "[I]t is not useful to talk about the society you ‘hold in your stomach’, the things you would do ‘if only you got power’, or the vision that you believe that we all share. What is useful is the negation of the existing world."
+  - [[https://theanarchistlibrary.org/library/aragorn-nihilism-anarchy-and-the-21st-century][Nihilism, Anarchy, and the 21st Century]] by Aragorn!
+- "Neither victory nor defeat is important, but only the beautiful shining of our eyes in combat."
+  - [[https://archive.org/details/untorelli_2015_conversation][A Conversation Between Anarchists]]
+** History
+
+- Established at the intersection of E. Merritt Mill Rd. and Rosemary St, at the Carrboro/Chapel Hill boundary
+  - Two parts: the Garden, where gardening and distroism happened, and the Burrow, where meetings and crafting happened.
+- Moved to headwaters of Crooked Creek, in Durham, NC, in Fall 2021
+- Moved to Pine Ridge Indian Reservation in Spring 2023  
+- Moved to a secret location in Winter 2023.
+* Plans
+** SOMEDAY Setup a GAZ MUD

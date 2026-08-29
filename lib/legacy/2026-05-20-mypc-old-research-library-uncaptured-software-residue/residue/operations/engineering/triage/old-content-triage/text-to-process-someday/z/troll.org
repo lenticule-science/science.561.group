@@ -1,0 +1,10 @@
+#+title: troll
+#+begin_head
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2021-01-08 Fri 19:32]
+#+roam_tags: concept
+#+end_head
+
+#+name: troll-definition
+A */[[file:troll][troll]]/* is a [[file:person.org][person]] who will use [[file:rhetoric.org][rhetoric]] to exhaust another person or group's [[file:resources.org][resources]], such as [[file:time.org][time]] or [[file:emotional-energy.org][emotional energy]].

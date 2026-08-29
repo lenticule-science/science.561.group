@@ -1,0 +1,33 @@
++++
+title = "Appreciating Mars in Opposition"
+author = ["emsenn"]
+date = 2016-05-22
+tags = ["astronomy"]
+draft = false
++++
+
+(This was written because that evening Mars would be in opposition and so brighter than normal.)
+
+Here's some more astronomy info for y'all, building to relevant info about the state of Mars tonight:
+
+Apsis refers to the extreme points of orbit. There's apoapsis, which is the furthest away from the thing it orbits an object is, and periapsis, the nearest it gets.
+
+There's special words for things that directly orbit a solar body - aphelion and perihelion (helion like Helios, the personification of the sun in Greek mythology.)
+
+Earth's aphelion and perihelion are remarkably similar - that is, our orbit is almost circular, having a different of just about 5 million kilometers.
+
+Mars has a more eccentric orbit - meaning it's less circular. The difference of its aphelion and perihelion is a bit over 43 million kilometers!
+
+This has a few effects for Mars. Temperatures vary more through the year, not just regionally but for the planet as a whole. (In fact, regionally, the planet's temperature is more uniform, but that's another discussion.)
+
+So, because of these differences, as well as the the ap/perihelion of Mars both being much greater than the ap/perihelion of Earth (that's why it's further away from the Sun than us), Mars and Earth are aligned in opposition every 765 to 800 days, despite a Martian year only being 687 days long.
+
+Aligned in opposition means that the Sun and Mars are on opposite sides of the earth - if you drew a straight line from the Sun to Mars, it'd have to pass through Earth. Some people think this means something in astrology, but in practical terms, it just means that Mars seems brighter. Mars' angle to opposition also helps us figure out when to launch vessels toward it, to reduce the velocity necessary to transfer orbit from around Earth to around Mars.
+
+Right now, as in tonight, as in you can go look out right now at it, Mars is in opposition. (If you're in North America, this means it'll be to the right by about 12 degrees and up by about 5 (I'm eyeballing this) from the moon)) This is the closest Mars has been in about a decade!
+
+What's even cooler is **next** year, in July, [2017,] Mars will almost be at its periapsis, or more specifically, perihelion position, when it's in opposition. This happens roughly every 15-17 years, and while that might seem like just some meaningless space mumbo-jumbo, what this means in practicality is that when we start going to Mars, routinely, we'll send our biggest payloads in ~16 year cycles, because that's when it'll be the shortest distance between Earth and Mars.
+
+For normal stuff using Hoffner ships (like in The Martian, where a ship that never leaves orbit just bounces between the two,) we can just rely on it being in opposition, which means every ~800 days, when Mars is at its brightest, you can look up at the sky and know that another ship of materiels and people is heading out to expand our presence in the universe.
+
+Space is crazy cool, and you all should be more excited for it.

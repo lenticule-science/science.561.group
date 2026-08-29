@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       76d3a0f2-b113-45eb-bc30-41d444e2c7c1
+:date-created: [2025-07-24 Thu 10:26]
+:instantiates: [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]
+:author:   [[id:40cbaad9-af3c-4573-b356-ae116687e483][emsenn]]
+:public:   true
+:END:
+#+title: Thinking how to handle multiple cosmos in GnoponEmacs
+#+date: [2025-07-24 Thu 10:26]
+
+In my [[id:e66f4700-dcf0-4e33-bb59-4846bce261b8][last babble]], I posed the question to myself, how would I organize [[id:3ffa600c-f831-428f-bd11-a4e6583ff5ad][my files]] if they were themselves the "[[id:d13b868b-e48f-4d5a-8697-a5f3b3a6b17b][dimension]]" part of a [[id:14cc5094-e5c2-4d53-828b-0da7d5684793][MUD]] - that is, the library, in the classic engine/library split.
+
+But the difference is that we might have data files that are Org-mode at their core, but tangle out [[id:1fb9a34e-749d-450c-b116-5f4ccd76a583][Python]] and [[id:1637757f-155b-4cd5-be40-d338324855d4][LISP]]...
+
+...I'm actually being distracted by my family as I try and write this - which isn't a complaint! But it's making it hard to build the sequence of thoughts I'm trying to convey to myself.
+
+Note for when I can focus, I wonder about using the [[id:fa819266-f410-44cd-be2c-5f50088b02fe][Org-roam ID]] as the [[id:074d6f57-3e8b-45a2-8ba3-2a1e315cd2bb][filename]] so that I don't have to worry about categorizing or overlap. Slate as the material in teraum can be in 451.org and Slate as the Earth stone can be in 928.org or whatever.
+
+But brings me to, I'm not sure what to work on if I can't trust I won't be interrupted, while family is up and about in the house, which brings me to playing games... which ironically everyone is more considerate about not interrupting me during - I think owing to a desire for me to rest and relax and wanting to facilitate that, whereas maybe working is just seen as the normal or default thing and so interruptable.
+
+I know that might read back like complaining, but in this moment, emotionally, I am not feeling like i am complaining.

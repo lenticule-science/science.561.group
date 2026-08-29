@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       b220e522-8504-4e08-ba42-dcc530e83a8b
+:public:   true
+:END:
+#+title: interface
+#+date: [2025-08-25 Mon 08:57]
+

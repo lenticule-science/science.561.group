@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       34355157-6f8f-4a47-9286-bb5dfdec44e0
+:END:
+#+title: true
+#+date: [2025-08-28 Thu 13:49]
+

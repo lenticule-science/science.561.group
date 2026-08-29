@@ -1,0 +1,43 @@
+#+SETUPFILE: ./default-setup.inc
+#+TITLE: An Honest Acknowledgement of the Gray Zone
+#+EXPORT_FILE_NAME: ../pub/an-honest-acknowledgement-of-the-gray-zone
+#+DATE: 2015-11-16
+#+MACRO: document-type essay
+#+INDEX: essay!by type!opinion!"An Honest Acknowledgement of the Gray Zone"
+#+INDEX: essay!by topic!Islam!"An Honest Acknowledgement of the Gray Zone"
+#+INDEX: Islam!"An Honest Acknowledgement of the Gray Zone"
+#+TOC: headlines 1
+* Introduction
+In this essay I briefly argue that it is important to acknowledge the
+belief in a "gray zone" within the Muslim world.
+#+INCLUDE: "./plates.inc::default-eli"
+#+INCLUDE: "./plates.inc::contemporary"
+#+INCLUDE: "./plates.inc::difficult-subject"
+* An Honest Aknowledgement of the Gray Zone
+ISIS has made it clear they intend to go after those Muslims they
+consider "false." According to ISIS, these "gray zone" Muslims are
+more harmful to their goals than Westerners. The refugees approaching
+the United States from Syria are not fleeing Syria, they are fleeing
+ISIS, and ISIS has said they will follow those refugees.
+
+Ignoring the stated goals of ISIS to claim there is no risk to
+accepting these refugees into our country is not honest.
+
+Acknowledging that you are willing to take in the sheep from the wolf,
+and acknowledging the threat the wolf poses to you, is honest and
+brave.
+
+I hope the United States accepts more refugees. I hope it doesn't
+bring us harm, but I acknowledge that risk.
+* Supplements
+#+TOC: headlines local 1
+** Contribute
+   :PROPERTIES:
+   :CUSTOM_ID: supplements-contribute
+   :END:
+#+INCLUDE: "./plates.inc::personal-contribute"
+** License
+   :PROPERTIES:
+   :CUSTOM_ID: supplements-license
+   :END:
+#+INCLUDE: "./plates.inc::mit-license"

@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       59bdaa1b-63a4-4d0a-8546-b01746e684dc
+:form:     [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]
+:public:   true
+:END:
+#+title: Babble, [2025-09-02 Tue 20:05], On linguistic pragmatics and "ludimatics"
+#+date: [2025-09-02 Tue 20:05]
+#+author: emsenn
+
+Thinking about the [[id:e19a0c84-c1e6-4195-ae01-8495d6bff458][influence]] that [[id:bb6a7511-0051-47f1-998f-081b94eec3cb][Terry Pratchett]] has had on [[id:f7eb4bb0-9eb1-4daa-8fdf-7ea19c56248e][my writing]], specifically [[id:12207c4e-9b37-42fc-a8c5-f32a6ea76661][my writing style]], and how every sentence can probably be written to be a little fun.
+
+And it made me think about how, in [[id:8af2ceb1-d891-4bdb-b9ac-dc1f409a24f8][linguistics]], there's the idea of [[id:652cca0d-316b-47ba-8f7f-f82923019f46][pragmatics]], the parts of speech that make it sound human, or whatever. And it makes me wonder about the idea of "ludimatics" or whatever the proper formation would be: the parts of speech that make it feel fun.

@@ -1,0 +1,28 @@
+---
+title: "Imagery"
+aliases:
+  - "Imagery"
+  - "imagery"
+  - "image"
+date-created: 2026-03-06
+tags: []
+type: term
+defines:
+  - "Imagery"
+---
+
+***Imagery*** is language that appeals to the senses — sight, sound, smell, taste, touch, temperature, pressure, motion. Imagery makes writing concrete. Instead of telling the reader that a character is nervous, imagery shows the sweat on their palms, the tightness in their jaw, the way their foot won't stop tapping.
+
+The principle behind imagery is that the human mind processes sensory language differently from abstract language. Concrete, specific detail activates perceptual simulation — the reader doesn't just understand that the room is cold; they feel the chill. This is why craft advice consistently says "specific over general": "a grackle" is more vivid than "a bird," and "a black grackle with an oily sheen picking at a cigarette butt" is more vivid still.
+
+Imagery works through selection, not accumulation. Three sharp details establish a scene more effectively than twenty generic ones. The writer's job is to choose the details that do the most work — that establish [setting](../../../../services/fiction-services-section/content/text/glossary/terms/setting.md), reveal [character](../../../../services/fiction-services-section/content/text/glossary/terms/character.md), create [tone](../../../../services/rhetoric-and-composition-services-section/content/text/glossary/terms/tone.md), and advance meaning simultaneously.
+
+In poetry, imagery carries even more weight. A poem often builds its entire argument through images rather than explicit statement — what Ezra Pound called "an intellectual and emotional complex in an instant of time." The image does the thinking.
+
+## Related terms
+
+- [show don't tell](../../../../services/fiction-services-section/content/text/glossary/terms/show-dont-tell.md) — imagery is the primary technique for showing
+- [diction](../../../../services/rhetoric-and-composition-services-section/content/text/glossary/terms/diction.md) — specific, concrete word choice is what makes imagery vivid
+- [setting](../../../../services/fiction-services-section/content/text/glossary/terms/setting.md) — established through imagery
+- [tone](../../../../services/rhetoric-and-composition-services-section/content/text/glossary/terms/tone.md) — the selection and quality of images establishes tone
+- [subtext](../../../../services/rhetoric-and-composition-services-section/content/text/glossary/terms/subtext.md) — imagery can carry meaning the text doesn't state explicitly

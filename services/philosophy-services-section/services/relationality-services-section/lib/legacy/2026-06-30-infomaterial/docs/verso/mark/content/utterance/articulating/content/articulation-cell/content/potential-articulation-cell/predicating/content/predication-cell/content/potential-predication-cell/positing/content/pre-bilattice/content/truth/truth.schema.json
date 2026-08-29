@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/pre-bilattice/content/truth",
+  "title": "truth",
+  "description": "The role a pre-bilattice value bears as an answer to which way the evidence points, independent of how much evidence there is - realized as an order ranking values by how supportive they are of the assertion. It is the first of the pre-bilattice's two lattice orders.",
+  "type": "object",
+  "required": ["truth-order", "negatable", "transverse-to-knowledge"],
+  "properties": {
+    "truth-order": {
+      "$ref": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/pre-bilattice/content/truth-order",
+      "description": "the order <=_t ranking values by how much they favor the assertion; supplies the meet wedge_t and join vee_t of the first lattice"
+    },
+    "negatable": {
+      "const": true,
+      "description": "every value a has a counterpart ~a of opposite truth-position; negation is antitone in <=_t"
+    },
+    "transverse-to-knowledge": {
+      "const": true,
+      "description": "two values of equal evidence (one all-for, one all-against) are incomparable in knowledge but ordered in truth; the truth role is independent of and orthogonal to the knowledge role"
+    },
+    "extremes": {
+      "type": "object",
+      "description": "when the truth lattice is bounded, its two named ends",
+      "properties": {
+        "f": { "const": "f", "description": "maximally against the assertion (truth-bottom)" },
+        "t": { "const": "t", "description": "maximally for the assertion (truth-top)" }
+      }
+    },
+    "designated": {
+      "type": "array",
+      "description": "optional marked subset counting as truth-asserted; the standard Belnap choice {t, top} is the natural up-set in <=_t"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+---
+type: reference
+authors: [Gray, John W.]
+year: 1966
+title: "Fibred and Cofibred Categories"
+venue: "Proceedings of the Conference on Categorical Algebra (La Jolla 1965), Springer"
+---
+
+## Full citation
+
+J. W. Gray. "Fibred and Cofibred Categories." In *Proceedings of the Conference on Categorical Algebra (La Jolla 1965)*, eds. S. Eilenberg, D. K. Harrison, S. MacLane, H. Röhrl. Springer, 1966.
+
+## Status
+
+Pending direct access. Cited via secondary literature.
+
+## Annotation
+
+Gray's foundational paper on fibred categories, recasting Grothendieck's fibration theory in 2-categorical language. With [@street1974], identifies the colax-idempotent 2-monad $\mathbb{M}$ on $\mathbf{Cat}/\mathcal{C}$ whose pseudo-algebras are cloven Grothendieck fibrations. For the program, this is one half of the [Gray–Street fibration 2-monad](../theorems/gray-street-fibration-monad.md), used in the framing of the [predication fibration](../objects/predication-fibration.md) as a 2-categorical structure.
+
+## Where used
+
+- [Gray–Street fibration 2-monad](../theorems/gray-street-fibration-monad.md)

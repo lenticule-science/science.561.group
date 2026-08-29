@@ -1,0 +1,30 @@
+#+title: Joel Hooks
+#+ghe_schema: term-0.1.3
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-28 Mon 20:28]
+#+roam_key: https://joelhooks.com/
+#+roam_tags: term
+
+#+name: definition
+*/[[file:joel_hooks.org][Joel Hooks]]/* is a one of the [[file:person.org][people]] who helped popularize the term /[[file:digital_garden.org][digital garden]]/ in 2020.
+
+#+toc: headlines 2
+
+* Introduction
+
+* Joel Hooks
+
+  #+include: "joel_hooks.org::definition"
+  
+* Supplements
+** Record history
+   :PROPERTIES:
+   :CUSTOM_ID: record-history
+   :END:
+   :LOGBOOK:
+   - Note taken on [2020-12-28 Mon 20:28] \\
+      Created from [[file:~/org/s/p/d/2020-12-28.org][A descriptive look at my current tech stack]]
+
+      
+   :END:

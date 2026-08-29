@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       af521294-7677-49bd-b347-dbe5c4b5ee4b
+:END:
+#+title: Collatz conjecture
+#+date: [2025-10-17 Fri 12:16]
+

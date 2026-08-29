@@ -1,0 +1,7 @@
+#+title: @theruran
+#+begin_head
+#+ghe_schema: record-0.1.0#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-21 Mon 13:07]
+#+end_head
+James Wheaton

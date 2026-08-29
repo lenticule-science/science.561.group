@@ -1,0 +1,32 @@
+---
+
+name: research-reading-program
+layer: program
+derived_from:
+- computer/structure/computer-kernel
+uses:
+- system/structure/recognition-carrier
+- system/structure/trace-carrier
+produces: []
+---
+
+This program structures research reading as recognitions so sources, notes, and
+insights are traceable.
+
+## Behaviour
+
+- Represent papers, notes, questions, and syntheses as recognitions with
+  provenance.
+- Link readings to projects, hypotheses, and experiments.
+- Measure coverage, recall, and influence on downstream work.
+
+## Intended operators
+
+- Plan and track reading lists; capture notes and summaries.
+- Connect readings to experiments or designs; surface gaps.
+- Share syntheses with traceable links to sources.
+
+## Proof
+- Derived from: [Computer Kernel](../../../computer/structure/computer-kernel.md).
+- Shows that: this program instantiates the computer kernel to realise the described behaviour without extending machine semantics.
+

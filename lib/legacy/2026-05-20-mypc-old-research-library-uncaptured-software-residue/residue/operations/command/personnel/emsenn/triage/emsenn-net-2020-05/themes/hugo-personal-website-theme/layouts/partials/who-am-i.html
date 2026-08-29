@@ -1,0 +1,6 @@
+{{- with $.Site.Params.givenName -}}
+{{- (printf "<span class=\"given-name\">%s</span>" .) | safeHTML -}}
+{{- end -}}
+{{- with $.Site.Params.familyName -}}
+{{- (printf "<span class=\"family-name\">%s</span>" .) | safeHTML -}}
+{{- end -}}

@@ -1,0 +1,16 @@
+#+title: note-taking systems
+#+begin_head
+#+ghe_schema: record-0.1.1
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-22 Tue 10:27]
+#+export_file_name: ../../e/20201222102739-note_taking_systems
+#+roam_tags: term
+#+end_head
+#+name: note-taking-system-definition-text
+#+begin_quote
+A */note-taking system/* is an [[file:information_management_system.org][information management tool]] for recording and managing personal, usually new, information.
+#+end_quote
+* Implementations
+  - [[file:org_roam.org][Org-roam]]
+  - [[file:roam_research.org][Roam Research]]

@@ -1,0 +1,22 @@
+id: 68d6577b3ec489df36af1e4567434d81b59566247f79cb911ed77755829fdf4c
+inputs:
+- kind: profile_topos
+  role: profile_topos
+- kind: profile_semantics
+  role: profile_semantics
+name: profile_context_build
+outputs:
+- kind: profile_context
+  role: profile_context
+steps:
+- inputs:
+  - kind: profile_topos
+    role: profile_topos
+  - kind: profile_semantics
+    role: profile_semantics
+  name: profile_context_build
+  operator: profile_context_build
+  outputs:
+  - kind: profile_context
+    role: profile_context
+  step_index: 0

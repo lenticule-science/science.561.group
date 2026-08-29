@@ -1,0 +1,22 @@
+name: trace_observation_equivalence
+inputs:
+- role: trace
+  kind: trace
+- role: observation_equivalence
+  kind: observation_equivalence
+outputs:
+- role: trace_observation_equivalence
+  kind: trace_observation_equivalence
+steps:
+- name: trace_observation_equivalence
+  operator: trace_observation_equivalence
+  step_index: 0
+  inputs:
+  - role: trace
+    kind: trace
+  - role: observation_equivalence
+    kind: observation_equivalence
+  outputs:
+  - role: trace_observation_equivalence
+    kind: trace_observation_equivalence
+id: 2607a696aad6eed3f07d2c49eb9716ac7e5b4166af5f4914075c35cf2ab5e5eb

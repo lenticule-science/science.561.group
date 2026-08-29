@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       c7f7cecf-a729-4d50-99bb-1daa816999cc
+:END:
+#+title: recursive publics
+#+date: [2025-10-05 Sun 07:58]
+

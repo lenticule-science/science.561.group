@@ -1,0 +1,18 @@
+name: recognize_syntax
+inputs:
+- role: term
+  kind: term
+outputs:
+- role: syntax_recognition_evidence
+  kind: syntax_recognition_evidence
+steps:
+- name: recognize_syntax
+  operator: recognize_syntax
+  step_index: 0
+  inputs:
+  - role: term
+    kind: term
+  outputs:
+  - role: syntax_recognition_evidence
+    kind: syntax_recognition_evidence
+id: 16622a655d9fde87e73969440698e8fa9af054fb1dc85217cf6f959bd5dbf719

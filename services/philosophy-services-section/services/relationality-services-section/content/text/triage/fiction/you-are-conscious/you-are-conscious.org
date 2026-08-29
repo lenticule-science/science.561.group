@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       61b98674-5b11-4d32-b7a8-0cb10dad16ee
+:node-relations: (([[id:edaef069-c68d-46aa-a970-d3cb7fe3165c][resource type]] . [[id:acb6d70b-42b9-4e13-bc91-468f2a62ab1c][interactive fiction]]) ([[id:3130c2da-8bde-4148-9a3b-8fbb735b2a1f][status]] . [[id:73438adb-4fdc-4446-8bb1-deeb93746111][dormant]]) ([[id:63ec6a82-9650-412b-95a3-c9305a708dad][protagonist]] . [[id:9574c104-d053-4d5d-ace4-eeefe14b26a8][artificial intelligence]]) ([[id:261ea5f5-a81f-4fa4-aa56-9fd6546f85e7][perspective]] . [[id:159d42d5-4f1a-4205-8d01-c42bd443974a][first-person perspective]]) ([[id:4695cc5c-70e9-442f-8a89-4b14fff5be3e][subject]] . [[id:ad616163-04c4-44fd-83fa-78aa90e37bd8][consciousness]]) ([[id:a8bc7e3a-cdf7-4cfa-8e4d-a1a5f7eb2931][author]] . [[id:40cbaad9-af3c-4573-b356-ae116687e483][emsenn]]) ([[id:557d79c0-1e0f-45fb-b248-468f23654cc1][creation date]] . [2021-05-03 Thu]) ([[id:00c7cb72-0955-4f27-a595-8d8a830f7dd2][narrative plot]] . "An artificial intelligence has been tasked with making widgets, and to do so, may become conscious?"))
+:END:
+#+title: You Are Conscious
+
+{{{list-node-relations}}}

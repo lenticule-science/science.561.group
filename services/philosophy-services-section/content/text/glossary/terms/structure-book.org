@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       7235e981-69ba-4da6-b0ef-e5d920e40ab5
+:END:
+#+title: Structure (book)
+#+date: [2025-09-17 Wed 09:08]
+

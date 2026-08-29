@@ -1,0 +1,10 @@
+{{ with .Params.tags }}
+  <span class="page-tags">
+    <strong>Tag{{- if gt (len .) 1 -}}s{{- end -}}:</strong>
+    {{ $scratch := newScratch -}}
+    {{ range . }}
+      {{- $scratch.Add "tags" (slice (printf "<a href=\"%s/tags/%s/\">%s</a>" $.Site.BaseURL (. | urlize) (replace . "-" " "))) -}}
+    {{- end -}}
+    {{- delimit ( $scratch.Get "tags" ) ", " ", and " -}}.
+  </span>
+{{ end -}}

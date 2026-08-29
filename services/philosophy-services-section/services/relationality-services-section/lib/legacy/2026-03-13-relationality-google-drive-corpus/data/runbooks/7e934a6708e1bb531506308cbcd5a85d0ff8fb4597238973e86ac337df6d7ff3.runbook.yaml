@@ -1,0 +1,18 @@
+name: fixed_kernel
+inputs:
+- role: observation_kernel
+  kind: observation_kernel
+outputs:
+- role: fixed_kernel
+  kind: fixed_kernel
+steps:
+- name: fixed_kernel
+  operator: fixed_kernel
+  step_index: 0
+  inputs:
+  - role: observation_kernel
+    kind: observation_kernel
+  outputs:
+  - role: fixed_kernel
+    kind: fixed_kernel
+id: 7e934a6708e1bb531506308cbcd5a85d0ff8fb4597238973e86ac337df6d7ff3

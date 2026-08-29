@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       945a74ca-faa1-4ce4-8865-9906de553bc5
+:resource-description: (([[id:edaef069-c68d-46aa-a970-d3cb7fe3165c][resource type]] . [[id:fd6ecbed-9bdf-4570-b4b2-5ff7744c0a96][concept]]))
+:public:   true
+:END:
+#+title: influencer audience member
+#+date: [2025-09-01 Mon 21:11]
+

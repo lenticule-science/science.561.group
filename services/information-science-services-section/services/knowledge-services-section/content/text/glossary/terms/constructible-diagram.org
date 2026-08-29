@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       0d6ef0b2-137a-4951-84b2-c28a87f1ed5e
+:END:
+#+title: constructible diagram
+#+date: [2025-10-09 Thu 19:23]
+

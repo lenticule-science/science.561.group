@@ -1,0 +1,26 @@
+#+title: Dennis Schep: "Freeing space: building worlds outside of state and capital"
+#+begin_head
+#+ghe_schema: reference-0.1.2
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-27 Sun 10:04]
+#+roam_tags: record
+#+end_head
+
+#+name: definition
+*/[[file:freeing_space.org][Freeing space: building worlds outside of state and capital]]/* is an article written by [[file:dennis_schep.org][Dennis Schep]].
+#+toc: headlines 2
+* Introduction
+   This record is some of what I (emsenn) know about */Freeing space/*. You may use it without limits or promises.
+* Dennis Schep: "Freeing Space: building worlds outside of state and capital"
+* Supplements
+** Record history
+   :PROPERTIES:
+   :CUSTOM_ID: record-history
+   :END:
+   :LOGBOOK:
+   - Note taken on [2020-12-27 Sun 10:04] \\
+      Created from [[file:~/org/s/p/d/2020-12-27.org][[2020-12-27 Sun 10:03]​]]
+
+     
+   :END:

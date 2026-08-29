@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       d0dbceba-0ddf-486e-8da3-1432b36c2622
+:node-relations: (([[id:bee496e1-139b-4a7f-8a24-d4c14e6084c6][instantiates]] . [[id:a2d76451-f086-4603-ae27-e5f96afd3e85][construct]]) ([[id:d888a007-edb6-4a23-bb07-59c34ecdd4c7][context]] . [[id:7ae321f2-73ff-44a7-8d3b-b470fda0fee8][industrialism]]))
+:END:
+#+title: industrial construct
+#+date: [2025-09-02 Tue 09:08]
+

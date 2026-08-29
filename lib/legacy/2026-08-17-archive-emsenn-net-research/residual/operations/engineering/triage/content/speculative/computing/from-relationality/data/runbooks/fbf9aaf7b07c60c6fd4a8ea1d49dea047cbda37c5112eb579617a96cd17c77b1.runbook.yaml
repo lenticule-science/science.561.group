@@ -1,0 +1,18 @@
+name: judgment_laws_check
+inputs:
+- role: carrier
+  kind: fixed_invariants
+outputs:
+- role: judgment_laws_evidence
+  kind: judgment_laws_evidence
+steps:
+- name: judgment_laws_check
+  operator: judgment_laws_check
+  step_index: 0
+  inputs:
+  - role: carrier
+    kind: fixed_invariants
+  outputs:
+  - role: judgment_laws_evidence
+    kind: judgment_laws_evidence
+id: fbf9aaf7b07c60c6fd4a8ea1d49dea047cbda37c5112eb579617a96cd17c77b1

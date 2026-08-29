@@ -1,0 +1,12 @@
+#+title: meta-data
+#+begin_head
+#+ghe_schema: term-0.1.0
+#+roam_alias: "meta-datum"
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-21 Mon 15:06]
+#+roam_tags: ILS term
+#+end_head
+#+begin_summary
+*/Meta-data/* is the "context" of [[file:information.org][information]], as contrasted to [[file:data.org][data]], which can be seen as the information's "content."
+#+end_summary

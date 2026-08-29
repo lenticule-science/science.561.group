@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       36e0a2ff-bf9d-46b7-96f8-94d42f5f135a
+:END:
+#+title: Leaffall
+#+date: [2025-09-05 Fri 20:41]
+

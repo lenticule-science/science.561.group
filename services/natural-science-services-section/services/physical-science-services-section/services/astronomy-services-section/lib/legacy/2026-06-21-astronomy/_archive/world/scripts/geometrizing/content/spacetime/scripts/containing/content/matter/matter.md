@@ -1,0 +1,7 @@
+---
+title: "Matter"
+date-created: 2026-03-04T00:00:00
+---
+Matter is the substance of [object|objects](object|objects): [thing|things](thing|things) with [mass](mass) and [volume](volume).
+
+It includes [solid|solids](solid|solids), [liquid|liquids](liquid|liquids), [gas|gases](gas|gases), and [plasma](plasma): states that are perceptible to our [human senses|senses](human senses|senses) or detectable with [tool|tools](tool|tools). Composed of [atom|atoms](atom|atoms) and [molecule|molecules](molecule|molecules) bound by [force|forces](force|forces) at various scales, physical matter forms the building blocks of [planet|planets](planet|planets), [organism|organisms](organism|organisms), and everyday objects. It is characterized by occupying [space](space) and responding to fundamental forces such as [gravity](gravity) and [electromagnetism](electromagnetism). Physical matter is a key component of the [material universe](material universe) we [../../../../slop/relationality/ai-generated-relationality/relationality-slop-2026-03-03/terms/relating|relate](../../../../slop/relationality/ai-generated-relationality/relationality-slop-2026-03-03/terms/relating|relate) with through [life](life).

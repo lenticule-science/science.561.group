@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       d89eff05-198a-48f7-9ffc-1bf242b1852e
+:END:
+#+title: First Things
+#+date: [2025-08-31 Sun 08:28]
+

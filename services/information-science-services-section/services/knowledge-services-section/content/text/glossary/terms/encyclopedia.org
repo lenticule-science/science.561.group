@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       164dbdb6-075e-4573-9bc5-4cb9691cd289
+:END:
+#+title: encyclopedia
+#+date: [2025-09-21 Sun 07:22]
+

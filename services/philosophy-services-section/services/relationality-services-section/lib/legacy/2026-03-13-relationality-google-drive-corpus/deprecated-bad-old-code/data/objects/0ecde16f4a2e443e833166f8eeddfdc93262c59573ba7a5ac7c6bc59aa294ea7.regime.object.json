@@ -1,0 +1,20 @@
+{
+  "allowed_operators": [
+    "observe",
+    "nucleate_profile",
+    "flow_profile",
+    "flow_measure_step",
+    "normalize_observation",
+    "stabilize_observation",
+    "fix_flow_nucleus",
+    "start_trace",
+    "advance_trace",
+    "complete_trace",
+    "shuffle_trace",
+    "flow_nucleus_commutation"
+  ],
+  "id": "0ecde16f4a2e443e833166f8eeddfdc93262c59573ba7a5ac7c6bc59aa294ea7",
+  "invariant_constraints": {},
+  "kind": "regime",
+  "suppressed_operators": []
+}

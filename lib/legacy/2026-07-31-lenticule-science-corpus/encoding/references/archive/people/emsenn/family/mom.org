@@ -1,0 +1,6 @@
+#+title: emsenn's mom
+#+author: emsenn
+#+date: [2021-01-27 Wed 11:12]
+#+index: emsenn's mom
+#+name: emsenn-s-mom-definition
+*/[[file:emsenn-s-mom.org][emsenn's mom]]/* is [[file:emsenn.org][emsenn]]'s [[file:mother.org][mother]]

@@ -1,0 +1,42 @@
+#+SETUPFILE: ./default-setup.inc
+#+TITLE: Why emsenn is Lowercase
+#+EXPORT_FILE_NAME: ../pub/why-emsenn-is-lowercase
+#+DATE: 2018-11-05
+#+INDEX: essay!by type!informative!"Why emsenn is Lowercase"
+#+INDEX: essay!by topic!emsenn!"Why emsenn is Lowercase"
+#+INDEX: emsenn!"Why emsenn is Lowercase"
+* Introduction
+In this very short essay, I explain why I choose to write my name in
+lowercase.
+#+INCLUDE: "./plates.inc::default-eli"
+* Why emsenn is Lowercase
+** "msenn"
+When I was 12 I joined a server where everyone's name was their first
+initial and the first four letters of their last name. So my username
+was "msenn."
+** "emsenn"
+After a while we migrated systems and the rule was relaxed, and many
+original members changed their names to be more phonetic - I added an
+e to the start of mine, to become "emsenn."
+
+Because my name originated as a username, I always write it in
+lowercase: a nod to my "heritage."
+
+/(And yes, everyone calls me emsenn, even in real life.)/
+
+# Local Variables:
+# writefreely-post-id: "349o5thda7"
+# writefreely-post-token: nil
+# End:
+* Supplements
+#+TOC: headlines local 1
+** Contribute
+   :PROPERTIES:
+   :CUSTOM_ID: supplements-contribute
+   :END:
+#+INCLUDE: "./plates.inc::personal-contribute"
+** License
+   :PROPERTIES:
+   :CUSTOM_ID: supplements-license
+   :END:
+#+INCLUDE: "./plates.inc::mit-license"

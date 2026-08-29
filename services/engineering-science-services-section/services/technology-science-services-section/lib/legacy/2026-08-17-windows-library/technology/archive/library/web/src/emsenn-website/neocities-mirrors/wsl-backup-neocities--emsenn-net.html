@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2025-10-05 Sun 17:39 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>emsenn.net</title>
+<meta name="generator" content="Org Mode" />
+<style>
+/* [[file:../../emsenn-net.org::emsenn-net-css][emsenn-net-css]] */
+@charset "UTF-8";
+
+:root {
+  --body-font: sans-serif;
+  --header-font: sans-serif;
+  --code-font: monospace;
+  --primary-color: #ffe;
+  --primary-dim-color: #eed;
+  --secondary-color: #312;
+  --secondary-dim-color: #756;
+  --link-color: #880;
+  --link-hover-color: #aa2;
+  --link-visited-color: #934;
+  --link-visited-hover-color: #b56;
+  --external-link-color: #008;
+  --external-link-hover-color: #60b;
+  --external-link-visited-color: #172;
+  --external-link-visited-hover-color: #394;
+}
+@media(prefers-color-scheme:light){
+  :root {
+     --body-font: sans-serif;
+     --header-font: sans-serif;
+     --code-font: monospace;
+     --primary-color: #756;
+     --primary-dim-color: #312;
+     --secondary-color: #eed;
+     --secondary-dim-color: #ffe;
+     --link-color: #880;
+     --link-hover-color: #aa2;
+     --link-visited-color: #934;
+     --link-visited-hover-color: #b56;
+  }}
+body {
+  position: relative;
+  min-height: 100%;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+main, #content {
+  background-color: var(--primary-dim-color);
+  border-left: 1.5em dotted var(--primary-color);
+  padding: 1em;
+}
+header {
+  border-bottom: 0.8em dotted var(--secondary-dim-color);
+}
+h1 { font-size: 2em; margin-bottom: 0; }
+h2 {
+  border-bottom: 0.3em dotted var(--secondary-dim-color);
+}
+h2, h3, h4, h5, h6, p, table, ul, ol, .org-src-container {
+  width: 60%;
+}
+aside {
+  float: right;
+  width: 35%;
+}
+aside p { width: 100%; }
+@media screen and (max-width:760px) {
+  h2, h3, h4, h5, h6, p, table, ul, ol, .org-src-container {
+     width: 90%;
+  }
+  aside {
+     float: inherit;
+     width: 90%;
+     border-top: 0.2em dotted var(--secondary-dim-color);
+     border-bottom: 0.2em dotted VAR(--secondary-dim-color);
+     font-size: 0.8em;
+	 }
+}
+
+footer, #postamble, #preamble {
+  padding: 0.5em;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
+  border: 0.1em solid #444;
+}
+thead { font-family: sans-serif; }
+th, td {
+  padding: 0 0.3em;
+  border: 0.01em solid #444;
+}
+img {
+  max-width: 80vw;
+  vertical-align: middle;
+}
+pre, .src {
+  padding: 0.5em;
+  border: 0.1em solid #444;
+  white-space: pre-wrap;
+  overflow-x: scroll;
+  text-overflow: clip;
+  scrollbar-width: none;
+}
+pre::-webkit-scrollbar, .src::-webkit-scrollbar {
+  display: none;
+}
+
+
+dt {
+  font-weight: normal;
+  display: inline-block;
+  border-bottom: 0.1rem dotted #444;
+}
+#text-index dt { border-bottom: none; }
+h2, h3, h4, h5, h6, h7, h8, h9, h10 {
+  display: block;
+  font-family: sans-serif;
+  margin: 0.2em auto 0.5em 0;
+}
+a, .link {
+  text-decoration: none;
+  color: #880;
+  display: inline;
+  position: relative;
+  border-bottom: 0.1rem dotted;
+  line-height: 1.2;
+  transition: border 0.3s;
+}
+a:hover {
+  color: #aa2;
+  outline-style: none;
+  border-bottom: 0.1rem solid;
+}
+a:visited, .visited-link { color: #934; }
+a:visited:hover { color: #b56; }
+a:focus {
+  outline-style: none;
+  border-bottom: 0.1rem solid;
+}
+::selection { background-color: #777; color: #eee; }
+a::selection { background-color: #ccc; }
+.org-todo {
+  background-color: #ddd;
+  color: #333;
+  font-size: .8rem;
+  float: right;
+}
+.org-src-container + .example {
+  margin-left: 8em;
+}
+a[href^="https://"]:not([href*="emsenn.net"]):after, a[href^="https://"]:not([href*="emsenn.net"]):visited:after, .external-link:after, .visited-external-link:after {
+  content: "^";
+  font-size: 0.5em;
+  vertical-align: super;
+}
+a[href^="https://"]:not([href*="emsenn.net"]), .external-link {
+  color: var(--external-link-color);
+}
+a[href^="https://"]:not([href*="emsenn.net"]):hover{
+  color: var(--external-link-hover-color);
+}
+a[href^="https://"]:not([href*="emsenn.net"]):visited, .visited-external-link {
+  color: var(--external-link-visited-color);
+}
+a[href^="https://"]:not([href*="emsenn.net"]):visited:hover{
+  color: var(--external-link-visited-hover-color);
+}
+blockquote {
+  border: 0.1em dashed var(--secondary-dim-color);
+  padding-left: 0.2em;
+}
+label.org-src-name {
+  margin: 0 0 0 3em;
+  font-family: sans-serif;
+  font-size: 1rem;
+  line-height: 0;
+}
+.skip-to-content {
+  opacity: 0;
+  position: absolute;
+  left: 0.2em;
+}
+.skip-to-content:focus{
+  opacity: 1;
+  background-color: var(--secondary-dim-color);
+  color: var(--primary-color);
+}
+ul { max-width: 85%; }
+.footpara { display: inline; font-size: 0.8rem; }
+/* emsenn-net-css ends here */
+
+</style>
+</head>
+<body>
+<section id="preamble" class="status">
+<!-- [[file:../../emsenn-net.org::emsenn-net-preamble][emsenn-net-preamble]] -->
+<a href="#content" class="skip-to-content">skip to content</a>
+<section class="nav"><strong>emsenn's digital garden</strong> 
+  <a href="./index.html">
+    Homepage</a> | 
+  <a href="./theindex.html">
+    Index</a>
+  <p>This Website was cultivated as a public asset with <a href="https://ko-fi.com/emsenn">support</a> from people like you. <strong><em>Thank you!</em></strong></p>
+  <details>
+    <summary>Click this sentence for information about my Website.</summary>
+    <p>Click each sentence below for more info:</p>
+    <ul>
+      <li><details>
+  	  <summary>This website was created by Emacs and Org-mode</summary>
+  	  <p>See <a href="https://emsenn.net/gnoponemacs.html">my Emacs configuration</a> to learn how.</p>
+      </details></li>
+      <li><details>
+  	  <summary>Its content was written by hand.</summary>
+  	  <p>This means there might be mistakes! 
+      </details></li>
+      <li><details>
+  	  <summary>It uses style to add information to the pages.</summary>
+  	  <ul>
+  	    <li><details>
+  	   	<summary>Click this sentence to see how links are styled:</summary>
+  	   	<table>
+  	   	  <thead><tr>
+  	   	      <th scope="col">Color</th>
+  	   	      <th scope="col">Link type</th>
+  	   	  </tr></thead>
+  	   	  <tbody>
+  	   	    <tr><td class="link">Sample</td>
+  	   	      <td>Unvisited local resource</td></tr>
+  	   	    <tr><td class="visited-link">Sample</td>
+  	   	      <td>Visited local resource</td></tr>
+  	   	    <tr><td class="external-link">Sample</td>
+  	   	      <td>Unvisited external resource</td></tr>
+  	   	    <tr><td class="visited-external-link">Sample</td>
+  	   	      <td>Visited external resource</td></tr>
+  	   	  </tbody>
+  	   	</table>
+  	    </details></li>
+  	  </ul>
+      </details></li>
+    </ul>
+  </details>
+</section>
+<!-- emsenn-net-preamble ends here -->
+</section>
+<main id="content" class="content">
+<header>
+<h1 class="title">emsenn.net</h1>
+</header><div class="peritaph" id="orgc5af444">
+<p>
+here lives one whose life is writ in ions
+</p>
+
+</div>
+
+<p>
+This file contains the <a href="website-source-code.html#ID-39d17256-0e28-495f-afcb-745cfe68557d">Website source code</a> and <a href="plan.html#ID-7801aaee-b673-4a41-8299-9c45859d8fc0">plans</a> I have for emsenn.net, my <a href="personal-website.html#ID-9976df5b-a5f5-4190-8e1f-52346b1c9b75">personal website</a>.
+</p>
+
+<p>
+If you're looking for the homepage, check <a href="index.html#ID-3ffa600c-f831-428f-bd11-a4e6583ff5ad">my files</a>
+</p>
+<section id="outline-container-org637c891" class="outline-2">
+<h2 id="org637c891">Source Code</h2>
+<div class="outline-text-2" id="text-org637c891">
+</div>
+<div id="outline-container-orgddeafe9" class="outline-3">
+<h3 id="orgddeafe9">CSS</h3>
+<div class="outline-text-3" id="text-orgddeafe9">
+<div class="org-src-container">
+<pre class="src src-css" id="orgc14fe75"><code>@charset "UTF-8";
+
+:root {
+  --body-font: sans-serif;
+  --header-font: sans-serif;
+  --code-font: monospace;
+  --primary-color: #ffe;
+  --primary-dim-color: #eed;
+  --secondary-color: #312;
+  --secondary-dim-color: #756;
+  --link-color: #880;
+  --link-hover-color: #aa2;
+  --link-visited-color: #934;
+  --link-visited-hover-color: #b56;
+  --external-link-color: #008;
+  --external-link-hover-color: #60b;
+  --external-link-visited-color: #172;
+  --external-link-visited-hover-color: #394;
+}
+@media(prefers-color-scheme:light){
+  :root {
+     --body-font: sans-serif;
+     --header-font: sans-serif;
+     --code-font: monospace;
+     --primary-color: #756;
+     --primary-dim-color: #312;
+     --secondary-color: #eed;
+     --secondary-dim-color: #ffe;
+     --link-color: #880;
+     --link-hover-color: #aa2;
+     --link-visited-color: #934;
+     --link-visited-hover-color: #b56;
+  }}
+body {
+  position: relative;
+  min-height: 100%;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+main, #content {
+  background-color: var(--primary-dim-color);
+  border-left: 1.5em dotted var(--primary-color);
+  padding: 1em;
+}
+header {
+  border-bottom: 0.8em dotted var(--secondary-dim-color);
+}
+h1 { font-size: 2em; margin-bottom: 0; }
+h2 {
+  border-bottom: 0.3em dotted var(--secondary-dim-color);
+}
+h2, h3, h4, h5, h6, p, table, ul, ol, .org-src-container {
+  width: 60%;
+}
+aside {
+  float: right;
+  width: 35%;
+}
+aside p { width: 100%; }
+@media screen and (max-width:760px) {
+  h2, h3, h4, h5, h6, p, table, ul, ol, .org-src-container {
+     width: 90%;
+  }
+  aside {
+     float: inherit;
+     width: 90%;
+     border-top: 0.2em dotted var(--secondary-dim-color);
+     border-bottom: 0.2em dotted VAR(--secondary-dim-color);
+     font-size: 0.8em;
+         }
+}
+
+footer, #postamble, #preamble {
+  padding: 0.5em;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
+  border: 0.1em solid #444;
+}
+thead { font-family: sans-serif; }
+th, td {
+  padding: 0 0.3em;
+  border: 0.01em solid #444;
+}
+img {
+  max-width: 80vw;
+  vertical-align: middle;
+}
+pre, .src {
+  padding: 0.5em;
+  border: 0.1em solid #444;
+  white-space: pre-wrap;
+  overflow-x: scroll;
+  text-overflow: clip;
+  scrollbar-width: none;
+}
+pre::-webkit-scrollbar, .src::-webkit-scrollbar {
+  display: none;
+}
+
+
+dt {
+  font-weight: normal;
+  display: inline-block;
+  border-bottom: 0.1rem dotted #444;
+}
+#text-index dt { border-bottom: none; }
+h2, h3, h4, h5, h6, h7, h8, h9, h10 {
+  display: block;
+  font-family: sans-serif;
+  margin: 0.2em auto 0.5em 0;
+}
+a, .link {
+  text-decoration: none;
+  color: #880;
+  display: inline;
+  position: relative;
+  border-bottom: 0.1rem dotted;
+  line-height: 1.2;
+  transition: border 0.3s;
+}
+a:hover {
+  color: #aa2;
+  outline-style: none;
+  border-bottom: 0.1rem solid;
+}
+a:visited, .visited-link { color: #934; }
+a:visited:hover { color: #b56; }
+a:focus {
+  outline-style: none;
+  border-bottom: 0.1rem solid;
+}
+::selection { background-color: #777; color: #eee; }
+a::selection { background-color: #ccc; }
+.org-todo {
+  background-color: #ddd;
+  color: #333;
+  font-size: .8rem;
+  float: right;
+}
+.org-src-container + .example {
+  margin-left: 8em;
+}
+a[href^="https://"]:not([href*="emsenn.net"]):after, a[href^="https://"]:not([href*="emsenn.net"]):visited:after, .external-link:after, .visited-external-link:after {
+  content: "^";
+  font-size: 0.5em;
+  vertical-align: super;
+}
+a[href^="https://"]:not([href*="emsenn.net"]), .external-link {
+  color: var(--external-link-color);
+}
+a[href^="https://"]:not([href*="emsenn.net"]):hover{
+  color: var(--external-link-hover-color);
+}
+a[href^="https://"]:not([href*="emsenn.net"]):visited, .visited-external-link {
+  color: var(--external-link-visited-color);
+}
+a[href^="https://"]:not([href*="emsenn.net"]):visited:hover{
+  color: var(--external-link-visited-hover-color);
+}
+blockquote {
+  border: 0.1em dashed var(--secondary-dim-color);
+  padding-left: 0.2em;
+}
+label.org-src-name {
+  margin: 0 0 0 3em;
+  font-family: sans-serif;
+  font-size: 1rem;
+  line-height: 0;
+}
+.skip-to-content {
+  opacity: 0;
+  position: absolute;
+  left: 0.2em;
+}
+.skip-to-content:focus{
+  opacity: 1;
+  background-color: var(--secondary-dim-color);
+  color: var(--primary-color);
+}
+ul { max-width: 85%; }
+.footpara { display: inline; font-size: 0.8rem; }
+
+</code></pre>
+</div>
+</div>
+<div id="outline-container-orgcdb14d1" class="outline-4">
+<h4 id="orgcdb14d1">Issues</h4>
+<div class="outline-text-4" id="text-orgcdb14d1">
+</div>
+<div id="outline-container-org4f6b612" class="outline-5">
+<h5 id="org4f6b612">Dark mode by default</h5>
+</div>
+<div id="outline-container-org00dda0d" class="outline-5">
+<h5 id="org00dda0d">Dark mode is ugly</h5>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf936a89" class="outline-3">
+<h3 id="orgf936a89">HTML</h3>
+<div class="outline-text-3" id="text-orgf936a89">
+<div class="org-src-container">
+<pre class="src src-html" id="orgcc52676"><code>&lt;a href="#content" class="skip-to-content"&gt;skip to content&lt;/a&gt;
+&lt;section class="nav"&gt;&lt;strong&gt;emsenn's digital garden&lt;/strong&gt; 
+  &lt;a href="./index.html"&gt;
+    Homepage&lt;/a&gt; | 
+  &lt;a href="./theindex.html"&gt;
+    Index&lt;/a&gt;
+  &lt;p&gt;This Website was cultivated as a public asset with &lt;a href="https://ko-fi.com/emsenn"&gt;support&lt;/a&gt; from people like you. &lt;strong&gt;&lt;em&gt;Thank you!&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+  &lt;details&gt;
+    &lt;summary&gt;Click this sentence for information about my Website.&lt;/summary&gt;
+    &lt;p&gt;Click each sentence below for more info:&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;details&gt;
+          &lt;summary&gt;This website was created by Emacs and Org-mode&lt;/summary&gt;
+          &lt;p&gt;See &lt;a href="https://emsenn.net/gnoponemacs.html"&gt;my Emacs configuration&lt;/a&gt; to learn how.&lt;/p&gt;
+      &lt;/details&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;details&gt;
+          &lt;summary&gt;Its content was written by hand.&lt;/summary&gt;
+          &lt;p&gt;This means there might be mistakes! 
+      &lt;/details&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;details&gt;
+          &lt;summary&gt;It uses style to add information to the pages.&lt;/summary&gt;
+          &lt;ul&gt;
+            &lt;li&gt;&lt;details&gt;
+                &lt;summary&gt;Click this sentence to see how links are styled:&lt;/summary&gt;
+                &lt;table&gt;
+                  &lt;thead&gt;&lt;tr&gt;
+                      &lt;th scope="col"&gt;Color&lt;/th&gt;
+                      &lt;th scope="col"&gt;Link type&lt;/th&gt;
+                  &lt;/tr&gt;&lt;/thead&gt;
+                  &lt;tbody&gt;
+                    &lt;tr&gt;&lt;td class="link"&gt;Sample&lt;/td&gt;
+                      &lt;td&gt;Unvisited local resource&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td class="visited-link"&gt;Sample&lt;/td&gt;
+                      &lt;td&gt;Visited local resource&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td class="external-link"&gt;Sample&lt;/td&gt;
+                      &lt;td&gt;Unvisited external resource&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td class="visited-external-link"&gt;Sample&lt;/td&gt;
+                      &lt;td&gt;Visited external resource&lt;/td&gt;&lt;/tr&gt;
+                  &lt;/tbody&gt;
+                &lt;/table&gt;
+            &lt;/details&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+      &lt;/details&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/details&gt;
+&lt;/section&gt;
+</code></pre>
+</div>
+</div>
+<div id="outline-container-org09f6e11" class="outline-4">
+<h4 id="org09f6e11">Issues</h4>
+<div class="outline-text-4" id="text-org09f6e11">
+</div>
+<div id="outline-container-org1ff405a" class="outline-5">
+<h5 id="org1ff405a">Needs copyright</h5>
+</div>
+<div id="outline-container-org0d6b493" class="outline-5">
+<h5 id="org0d6b493">More contact info?</h5>
+</div>
+</div>
+</div>
+</section>
+<section id="outline-container-orgc4a29f6" class="outline-2">
+<h2 id="orgc4a29f6">Ideas and Plans</h2>
+<div class="outline-text-2" id="text-orgc4a29f6">
+</div>
+<div id="outline-container-org2b46d7c" class="outline-3">
+<h3 id="org2b46d7c">IDEA My Blog = My Babbling Log</h3>
+<div class="outline-text-3" id="text-org2b46d7c">
+<p>
+I could perhaps use `#+include` statements (or maybe something else) to set up a directory on emsenn.net that is any babbles I want to make public. Or, I could do a single page, that's a rolling log of the 20 most recent babbles (that I'm comfortable sharing). But perhaps it would be better to keep babblings as assumed private, and anything useful from them that I want to share, I can render some other way, like rewriting them as part of the "routine bulleitns" I want to resume publishing.
+</p>
+</div>
+</div>
+</section>
+<section id="outline-container-org3900927" class="outline-2">
+<h2 id="org3900927">Backlinks</h2>
+<div class="outline-text-2" id="text-org3900927">
+<ul class="org-ul">
+<li><a href="babble-20250904195737-0500.html#ID-c76c79ac-0fd5-4bb4-baaf-75a0318cde0a">Babble, [2025-09-04 Thu 19:57], On influencer authenticity, aestheticity, authority, and availability</a></li>
+<li><a href="babble-20250821135932-0500.html#ID-32d5e9f3-d254-4dd3-beed-18563f87d50c">Relaunching emsenn.net</a></li>
+<li><a href="babble-20250921072126-0500.html#ID-7b5581e4-9d06-4f64-8a99-8fde57fb9514">On epistemics, economies, and didactics of encyclopedia, wiki, and digital gardens.</a></li>
+<li><a href="about-emsenn.html#ID-1c8beae7-705a-4751-b682-3c517b36435e">About emsenn</a></li>
+<li><a href="post-emsenn-kolektiva-social-20250825081900-0500.html#ID-9bf0833f-c072-4d7b-9075-e5b1c7503d80">Post to @emsenn@kolektiva.social, 2025-08-25</a></li>
+<li><a href="babble-20250828085353-0500.html#ID-9cbbeef0-0b01-4d86-900b-5c6c7623fbf7">Adding Org-cite to GnoponEmacs</a></li>
+<li><a href="post-emsenn-kolektiva-social-20250826081200-0500.html#ID-91687610-f54e-40dd-88f6-0da558e09bb6">Post to @emsenn@kolektiva.social, 2025-08-26 0812h</a></li>
+<li><a href="post-emsenn-kolektiva-social-20250908101100-0500.html#ID-40d82828-1c24-4823-984e-e523011aaeb4">Post to @emsenn@kolektiva.social, 2025-09-08 10:11h, On using Substack</a></li>
+<li><a href="my-ko-fi.html#ID-586f1109-a99c-432e-b191-b9e11a21d50d">my Ko-Fi</a></li>
+<li><a href="babble-20250723213554-0500.html#ID-adb03cf1-9c42-43f1-bcb3-88d572adf713">Thinking on privacy within my research notes</a></li>
+<li><a href="babble-20250911085500-0500.html#ID-34a6180c-ce51-4693-a6f0-2a3e9ed3f9b4">Babble, [2025-09-11 Thu 08:55], Installing TAB on my Omnibook</a></li>
+<li><a href="babble-20250722091452-0500.html#ID-d113b3e7-ae97-467a-b1e9-41660c818117">Making progress with GnoponEmacs</a></li>
+<li><a href="babble-20250825004921-0500.html#ID-3b564925-5102-424c-8e05-b5bf5e0b2804">Babble, [2025-08-25 Mon 00:49</a>]</li>
+<li><a href="index.html#ID-3ffa600c-f831-428f-bd11-a4e6583ff5ad">emsenn's files</a></li>
+</ul>
+</div>
+</section>
+</main>
+<section id="postamble" class="status">
+<p class="date">Created: 2025-10-05 Sun 17:39</p>
+</section>
+</body>
+</html>

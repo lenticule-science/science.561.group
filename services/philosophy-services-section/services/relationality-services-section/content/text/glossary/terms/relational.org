@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       6781da78-add6-489f-826d-4c086f7a51ef
+:END:
+#+title: relational
+#+date: [2025-09-01 Mon 11:44]
+

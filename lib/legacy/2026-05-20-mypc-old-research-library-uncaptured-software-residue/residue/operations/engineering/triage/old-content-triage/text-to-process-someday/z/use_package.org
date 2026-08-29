@@ -1,0 +1,30 @@
+#+title: use-package
+#+ghe_schema: term-0.1.3
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-29 Tue 10:57]
+#+roam_tags: term
+
+#+name: definition
+*/[[file:use_package.org][use-package]]/* is a [[file:emacs_package.org][Emacs package]] for handling the installation and configuration of other Emacs packages.
+
+#+toc: headlines 2
+* Introduction
+* use-package
+
+  #+name: install-use-package-with-straight-el-elisp
+  #+caption: An /Elisp/ declaration to install /use-package/ with /straight.el/
+  #+begin_src elisp 
+    (straight-use-package 'use-package)
+  #+end_src
+* Supplements
+** Record history
+   :PROPERTIES:
+   :CUSTOM_ID: record-history
+   :END:
+   :LOGBOOK:
+   - Note taken on [2020-12-29 Tue 10:57] \\
+      Created from [[file:~/org/s/p/d/2020-12-29.org][[2020-12-29 Tue 10:49]​]]
+
+      
+   :END:

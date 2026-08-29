@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       b284f80c-5f97-4f70-af72-3dfd1297b4f4
+:END:
+#+title: power
+#+date: [2025-09-01 Mon 20:49]
+

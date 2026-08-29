@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://561.group/swarm-intelligence/agentic-orchestration-platform/memory/mutation/mutation.schema.json",
+  "title": "Mutation morphism record (recall-record creation/removal)",
+  "description": "Morphism: (memory, mutation-spec) → memory'. Creates new recall-records or removes them (the latter via relevance→bottom rather than physical deletion, preserving substrate monotonicity). Per lab/.../memory/mutation/.",
+  "kind": "morphism",
+  "domain": "(memory, mutationSpec)",
+  "codomain": "memory",
+  "variance": "extension",
+  "monotone": true,
+  "type": "object",
+  "required": ["inputMemory", "mutationSpec", "outputMemory", "evidence"],
+  "additionalProperties": false,
+  "properties": {
+    "inputMemory": { "type": "object" },
+    "mutationSpec": {
+      "type": "object",
+      "required": ["kind", "entity"],
+      "additionalProperties": false,
+      "properties": {
+        "kind": { "enum": ["create", "remove"] },
+        "entity": { "type": "string", "minLength": 1 },
+        "relevance": { "$ref": "https://561.group/swarm-intelligence/articulating/library/aperiodic-articulation-category/library/aperiodic-articulation-cell/library/potential-aperiodic-articulation-cell/predicating/library/transfinite-predication-category/library/transfinite-predication-cell/library/potential-transfinite-predication-cell/positing/library/scott-continuous-posit-category/library/bilattice/library/bilattice-value/bilattice-value.schema.json" },
+        "at": { "type": "string", "minLength": 1 }
+      }
+    },
+    "outputMemory": { "type": "object" },
+    "evidence": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  }
+}

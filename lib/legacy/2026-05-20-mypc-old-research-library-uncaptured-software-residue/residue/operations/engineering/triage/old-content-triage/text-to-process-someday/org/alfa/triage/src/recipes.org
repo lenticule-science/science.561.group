@@ -1,0 +1,86 @@
+#+SETUPFILE: ./default-setup.inc
+#+TITLE: Domestic Manual
+#+EXPORT_FILE_NAME: ../pub/domestic-manual
+#+TOC: headlines 1
+* Introduction
+#+INCLUDE: "./plates.inc::draft"
+#+INCLUDE: "./plates.inc::eli-default"
+* Domestic Manual
+** Recipes
+*** Baking
+**** Biscuits
+***** Materials
+| Ingredient    | Quantity |
+|---------------+----------|
+| soft flour    | 1 cup    |
+| white sugar   | 1 tsp    |
+| baking powder | 2 tsp    |
+| salt          | 1/2 tsp  |
+| shortening    | 1/2 cup  |
+| milk          | 2/5 cup  |
+***** [0/8] Steps
+- [ ] Preheat oven to 450f
+- [ ] Combine dry ingreidents
+- [ ] Cut in shortening until mix is crumby.
+- [ ] Add milk while stirring until dough lifts from bowl. Should
+  still be sticky and soft.
+- [ ] Lightly squarefold-knead mix on floured surface until springy,
+  then string to 2 inch tall roll.
+- [ ] Let rest 2 minutes.
+- [ ] Cut into 1 inch slices, lay sideways on baking sheet 1 inch apart.
+- [ ] Bake 10-12 minutes on center rack.
+***** Notes
+- For more traditional texture, skip kneading, but let dough rise on
+  floured surface. Cover in flour after rising then fold over, gently,
+  once, and tear off small chunks.
+- Butter is preferred shortening.
+- Substitute or supplement buttermilk for milk.[fn:buttermilk-substitution]
+
+*** Beverages
+**** Coffee
+***** Preparation Methods
+****** Drip
+| Water   | Coffee       |
+|---------+--------------|
+| 30ml    | 1g           |
+| 4 "cup" | 1 tablespoon |
+***** Mixes
+| Method, Amount | Ingredients... |             |
+|----------------+----------------+-------------|
+| Drip, 180ml    | 20ml milk      |             |
+| Drip, 180ml    | 30ml milk      | 6g Ovaltine |
+**** Juices
+***** Mulberry Juice
+Mulberries start to ripen early in May through the month, and are a
+tart watery berry.
+
+Making juice with them is easy. You'll need two bowls capable of
+containing all the berries and a cheesecloth.
+****** [0/7] Steps
+1) [ ] Bring the berries to around 30c and mash them gently.
+2) [ ] Place a cheesecloth in a bowl and pour the mash into it.
+3) [ ] Gather the corners and lift out of the bowl, holding any
+   openings pinched shut.
+4) [ ] Begin to massage the mash dry, slowly twisting the closed ends
+   to keep it secure.
+5) [ ] Continue until you run out of patience, then discard the dry mash.
+6) [ ] Discard the dry mash.
+7) [ ] Pasteurize the juice.
+****** Results
+This is a record of my results with this recipe.
+
+| Date             | Input  | Output | Comments                      |
+|------------------+--------+--------+-------------------------------|
+| <2019-05-13 Mon> | 3.5 lb | 1.2 qt | Bit tart to drink on its own. |
+*** Cheesemaking
+**** Fresh Cheeses
+***** Queso Seco
+#+INDEX: cheese!by type!fresh!"Queso Seco" in /emsenn's Recipes/
+*/Queso seco/* is a {{{queso-seco-definition}}}.
+* Footnotes
+[fn:buttermilk-substitution] When substituting buttermilk in recipes
+that use baking powder, you should remove 2 tsp baking powder and add
+1 tsp baking soda for every 1 cup of milk you are replacing with
+buttermilk.
+* Supplements
+#+INCLUDE: "./mit-license.org::#license"

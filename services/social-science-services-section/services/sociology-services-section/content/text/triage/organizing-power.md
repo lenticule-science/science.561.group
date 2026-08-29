@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       8fb99d72-211f-46a2-a080-58d04dce1331
+:public:   true
+:resource-description: (([[id:edaef069-c68d-46aa-a970-d3cb7fe3165c][resource type]] . ([[id:2dd648f9-bca7-4a8e-9793-d87b5eef33ad][organizing]])) ([[id:4695cc5c-70e9-442f-8a89-4b14fff5be3e][subject]] . [[id:b284f80c-5f97-4f70-af72-3dfd1297b4f4][power]]))
+:END:
+#+title: organizing power
+#+date: [2025-09-20 Sat 21:46]

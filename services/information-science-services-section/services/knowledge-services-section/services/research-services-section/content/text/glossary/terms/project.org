@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       64bda4ac-df83-4285-a709-e82a2d2ad37e
+:END:
+#+title: project
+#+date: [2025-08-25 Mon 08:05]
+

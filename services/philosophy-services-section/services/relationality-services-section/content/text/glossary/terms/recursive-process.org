@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       bbf97e7c-41b5-4fd8-83a6-b29820f7529b
+:END:
+#+title: recursive process
+#+date: [2025-08-29 Fri 10:50]
+

@@ -1,0 +1,17 @@
+\subsection{Invariant and strict dual}
+
+\begin{theorem}[The \texttt{cl-inv} regime dichotomy]\label{thm:clinv-dichotomy}\lean{Obsmetrologia.AperiodicOrder.Tiling.clinv_dichotomy}\leanok\uses{thm:h1-zero-iff-confluent}
+The classifying invariant is derived from an \texttt{H1Carrier}: it is $0$ in
+the strict/Scott regimes and can be nonzero in the aperiodic regime.  The
+nonzero fiber is witnessed by \texttt{aperiodicWitness}; the flat fiber reads
+$0$ off the trivial carrier and the aperiodic fiber reads $[\varphi]\neq0$ off
+the Jeandel--Rao cocycle (\cref{thm:jeandel-rao-witness}).
+\end{theorem}
+
+\begin{theorem}[The strict-Boolean co-classifying model]\label{thm:coclinv-strict-boolean}\lean{Obsmetrologia.AperiodicOrder.Tiling.co_classifying_strict_boolean_model}\leanok\uses{thm:clinv-dichotomy}
+The cosheaf-homology dual is modeled strictly: $H_1$ is a coordinate-isomorphic
+copy of $H^1$ and the spatial Verdier map is coordinate identity.  Thus
+$\check{\mathrm{cl}}\text{-}\mathrm{inv} =
+\mathbb{D}_{\mathrm{sp}}(\mathrm{cl\text{-}inv})$ by construction.  This is an
+identification carrier, not genuine cosheaf homology.
+\end{theorem}

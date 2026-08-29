@@ -1,0 +1,61 @@
+\subsection{Charged and paraconsistent support}
+
+\begin{theorem}[Genuine lax slack needs a non-thin carrier]\label{thm:pre-value-category}\lean{Infomaterial.Positing.Value.genuine_lax_cone_needs_non_thin_carrier}\leanok\uses{thm:value-category, thm:four-bilattice}
+The value-layer generalization behind paraconsistent cones. \texttt{LaxSlackDiagnosis} shows that on
+an antisymmetric (thin) carrier the KZ inequality collapses to strict idempotence, so a thin
+\texttt{ValueCategory} carries \emph{no} genuine lax slack. A \texttt{PreValueCategory} drops
+antisymmetry (a preorder with seed), with a lax closure satisfying $op(op\,v)\le op\,v$ instead of
+idempotence. The structural theorem: if such a closure has real slack at any value
+($op(op\,v)\le op\,v$ but $op(op\,v)\neq op\,v$), the carrier is non-thin --- there exist distinct,
+mutually-$\le$ values. On an antisymmetric carrier the lax closure is idempotent, recovering the
+thin case. This is added alongside, not replacing, \texttt{ValueCategory}.
+\end{theorem}
+
+\begin{theorem}[Paraconsistent causal reports]\label{thm:paraconsistent-cone}\lean{Infomaterial.Relational.Spacetime.Causal.ParaconsistentCone.paraconsistent_cone_reports}\leanok\uses{thm:cone-field-geometry, thm:pre-value-category}
+Causal \emph{knowledge}, not physical spacetime, can be paraconsistent: a report assigns a
+\texttt{Charge} to each ordered event pair, asserting reachability ($t$), its negation, both
+(inconsistent $\top$), or neither (unknown $\bot$). Reports merge commutatively under the knowledge
+join, and merging accumulates knowledge --- each cell climbs the knowledge order. A Boolean causal
+relation embeds as a \emph{consistent} report (never $\top$) whose reachability verdict is exactly
+the Boolean relation. Paraconsistency lives strictly in the report/observation layer --- the
+substrate for contradictory light observations, agent traces, and conflicting causal
+reconstructions; the non-thin value layer it requires is \cref{thm:pre-value-category}.
+\end{theorem}
+
+\begin{theorem}[Charged microsupport --- the cone valued in the FOUR]\label{thm:charged-microsupport}\lean{Infomaterial.Relational.Spacetime.Support.Charged.charged_microsupport}\leanok\uses{thm:paraconsistent-cone, thm:causal-microsupport}
+The cross-faculty theorem the light-cone slate was built toward: the cone (\texttt{Lorentzian}) and
+the FOUR (\texttt{Positing}) are \emph{one} structure. \cref{thm:causal-microsupport} propagated a
+two-valued section; here the microsupport itself is lifted to the bilattice. A charged source at $a$
+\textbf{emits} its charge into its causal future (the settled Boolean indicator $\mathrm{le}$) and
+$\bot_k$ elsewhere, and two sources merge by the knowledge join. Then: (i) \textbf{spacelike /
+acausal $\Rightarrow \bot$} --- a source emits the under-determined $\bot_k$ to every event outside
+its cone, so spacelike-separated regions are knowledge-independent (told nothing); (ii)
+\textbf{causal collision of contradiction $\Rightarrow \top$} --- when two influences carrying
+\emph{contradictory} charges $t$ (affirm) and $f$ (deny) meet in a \textbf{common future event} (the
+tip of a causal diamond), their join is the over-determined $\top_k$: the paraconsistent conflict
+arises \emph{geometrically}, from causal convergence, and is \textbf{held} without explosion; (iii)
+\textbf{agreement $\Rightarrow$ reinforcement} --- same-charge influences merge consistently, no
+spurious conflict; (iv) merging \textbf{climbs $\leq_k$}. Spacelike incomparability is $\bot$, causal
+order is $t$/$f$, held contradiction is $\top$: the light cone is the FOUR met as
+causal admissibility. Axiom-free.
+\end{theorem}
+
+\begin{theorem}[Causal polarization --- the symplectic split as a proper colouring]\label{thm:causal-polarization}\lean{Infomaterial.Relational.Spacetime.Support.Polarization.causal_polarization}\leanok\uses{thm:causal-cochain-complex, thm:charged-microsupport, thm:colourings-pull-back, thm:four-colour-palette-is-four, thm:odd-cycle-obstructs-two-colouring}
+The symplectic structure viewed through the colouring lens, with MLD as mediator --- the
+polarization layer of \cref{thm:cotangent-symplectic-flow}. A symplectic structure needs a
+\textbf{polarization} (a split into conjugate position/momentum directions), the antisymmetric sign
+the bare directed-acyclic causal edges lack. The colouring supplies it: the polarization 1-form of a
+colouring $c$ is its coboundary $\delta^0 c(a,b) = c(b) - c(a)$, and it is \textbf{nondegenerate}
+(nonzero on every causal edge) \emph{exactly when} $c$ is a \textbf{proper colouring}
+(\texttt{nondegenerate\_iff\_proper}) --- a degenerate causal direction is an edge whose endpoints
+share a colour. At four colours the palette is the FOUR (\texttt{GraphColoring.fourColouring}), so the
+conjugate split is valued in the Belnap bilattice, its two directions the two orders $\leq_k$,
+$\leq_t$. The mediator: an \textbf{MLD} is a \textbf{factor map} (a graph homomorphism / sliding-block
+code), and colourings \textbf{pull back along it} (\texttt{ProperColoring.comp}), so a factor map
+carries a nondegenerate polarization (\texttt{mld\_preserves\_polarization}) --- MLD is the discrete
+\textbf{canonical transformation}. And the \textbf{obstruction} to a global (Bool) polarization is
+exactly \textbf{non-bipartiteness} --- an odd causal cycle: the chromatic $H^1$-class, the
+MLD-invariant symplectic-curvature obstruction. This is the polarization layer and its obstruction;
+together with the Liouville form it is the full discrete symplectic structure --- exact, not a
+nondegenerate 2-class --- assembled in \cref{thm:cotangent-symplectic-flow}.
+\end{theorem}

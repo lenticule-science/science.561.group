@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       9b364840-65a9-4443-929b-c717ce29d0ba
+:END:
+#+title: resource description format
+#+date: [2025-10-06 Mon 18:04]
+

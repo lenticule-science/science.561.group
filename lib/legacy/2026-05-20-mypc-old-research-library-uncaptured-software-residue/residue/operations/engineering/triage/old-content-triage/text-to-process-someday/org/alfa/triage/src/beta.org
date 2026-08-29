@@ -1,0 +1,2 @@
+#+INCLUDE: ./alpha.org
+The author is {{{author}}}

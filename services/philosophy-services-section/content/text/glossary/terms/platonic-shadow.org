@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       f4f40524-3988-494f-bfef-00bb00d3fb37
+:instantiates: [[id:fd6ecbed-9bdf-4570-b4b2-5ff7744c0a96][concept]]
+:field:    [[id:1665c791-e957-4794-88ce-a3ad8518b9fe][Platonic philosophy]]
+:END:
+#+title: Platonic shadow
+#+date: [2025-08-29 Fri 09:09]
+

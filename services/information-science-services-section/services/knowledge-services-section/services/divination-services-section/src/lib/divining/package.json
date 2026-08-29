@@ -1,0 +1,75 @@
+{
+  "name": "@lenticule-science/divining",
+  "version": "0.2.1",
+  "type": "module",
+  "description": "Sign-reading practice producers -- astrology, tarot, numerology, the computus, the lectionary, geomancy, the I Ching, Ifa, runes, the Numogram, and Lakota star knowledge -- as dependency-free domain mathematics, live and source-available at Divination. Ships without the legacy settled-Reading core (panelConsensus over the bilattice FOUR), which depended on the dead agential-relationality archive; see content/documents/sign-reading-as-settling.md.",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "check": "tsc --noEmit",
+    "build": "tsc -p tsconfig.build.json",
+    "prepack": "npm run rebuild",
+    "rebuild": "npm run clean && npm run build",
+    "verify": "npm run check && npm pack --dry-run"
+  },
+  "main": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "files": ["dist", "package.json"],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs"
+    },
+    "./astrology": {
+      "types": "./dist/astrology/index.d.mts",
+      "import": "./dist/astrology/index.mjs"
+    },
+    "./divination": {
+      "types": "./dist/divination/index.d.mts",
+      "import": "./dist/divination/index.mjs"
+    },
+    "./divination/codecs": {
+      "types": "./dist/divination/codecs/index.d.mts",
+      "import": "./dist/divination/codecs/index.mjs"
+    },
+    "./calendar": {
+      "types": "./dist/calendar/index.d.mts",
+      "import": "./dist/calendar/index.mjs"
+    },
+    "./liturgy": {
+      "types": "./dist/liturgy/index.d.mts",
+      "import": "./dist/liturgy/index.mjs"
+    },
+    "./geomancy": {
+      "types": "./dist/geomancy/index.d.mts",
+      "import": "./dist/geomancy/index.mjs"
+    },
+    "./iching": {
+      "types": "./dist/iching/index.d.mts",
+      "import": "./dist/iching/index.mjs"
+    },
+    "./ifa": {
+      "types": "./dist/ifa/index.d.mts",
+      "import": "./dist/ifa/index.mjs"
+    },
+    "./runes": {
+      "types": "./dist/runes/index.d.mts",
+      "import": "./dist/runes/index.mjs"
+    },
+    "./numogram": {
+      "types": "./dist/numogram/index.d.mts",
+      "import": "./dist/numogram/index.mjs"
+    },
+    "./starknowledge": {
+      "types": "./dist/starknowledge/index.d.mts",
+      "import": "./dist/starknowledge/index.mjs"
+    },
+    "./package.json": "./package.json",
+    "./dist/astrology/index.mjs": "./dist/astrology/index.mjs",
+    "./dist/liturgy/index.mjs": "./dist/liturgy/index.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.1",
+    "typescript": "5.9.3"
+  },
+  "sideEffects": false
+}

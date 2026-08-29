@@ -1,0 +1,46 @@
+#+title: Kayla Gibson: "Information Check: Studying the Information-Seeking Behaviors of Dungeons & Dragons Players"
+#+begin_head
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2021-01-09 Sat 14:34]
+#+roam_tags: reference
+#+roam_key: https://cdr.lib.unc.edu/concern/masters_papers/0c483q72c
+#+end_head
+
+#+index: Games!Gaming culture & theory!Kayla Gibson: "Information Check: Studying the Information-Seeking Behaviors of Dungeons & Dragons Players"
+
+#+name: kayla-gisbon-information-check-studying-the-information-seeking-behaviors-of-dungeons-and-dragons-players-definition
+*/[[file:kayla-gibson-information-check-studying-the-information-seeking-behaviors-of-dungeons-dragons-players.org]["Information Check: Studying the Information-Seeking Behaviors of Dungeons & Dragons Players"]]/* by [[file:kayla-gibson.org][Kayla Gibson]] for [[file:unc_ch.org][UNC-CH]]'s [[file:university-of-north-carolina-at-chapel-hill-school-of-information-and-library-science.org][School of Information and Library Science]] (June 2020) "explores how, how often, and where players of the [[file:tabletop_role_playing_games.org][tabletop game]] [[file:dungeons-dragons.org][Dungeons & Dragons]] [[file:information-seeking.org][search]] for [[file:information.org][information]]."
+
+The piece contextualizes itself within [[file:everyday-life-information-seeking.org][everyday life information-seeking]], [[file:leisure.org][leisure]] - specifically [[file:hobby.org][hobbies]], information-seeking in [[file:game.org][games]].
+
+* Abstract
+  This study explores how, how often, and where players of the tabletop game Dungeons & Dragons search for information. Over 2,500 participants were surveyed about what information they sought, what resources they used, and why. While participants’ purposeful information seeking was fairly similar to habits described in other studies of everyday life information seeking, participants had strong opinions about what resources were missing from the realm of existing D&D resources and what was most important to them when selecting a resource for use. Among the most common concerns were ease of access, cost of access (both temporal and monetary), validity of information, consolidation of information, and the feel of the resource. 
+
+
+
+* My notes
+
+  - [[file:game_host.org][Dungeon masters]] identify as male more often than players.
+  - Spells are the most-often sought kind of information, followed by rules and then class abilities.
+  - When preparing for a session, people look on the [[file:web.org][Web]] first, and then physical books, and then digital books.
+  - But when /playing/ a session, people use their dungeon master first, followed by physical books, and then the Web.
+    - But where does the DM go? Physical book, or nearly-evenly digital books, the [[file:web.org][Web]], or "Dungeon Master," presumably themselves. /(Does this mean they make it up?)/
+    - Low cost of access, a component of means of access, is the most-cited reason for why people chose the resource they did.
+      - But for why people picked books? "Feel."
+    - When discussing resources in a "perfect world with no barriers to access," people referenced "consolidation" in why they choose a resource: whether it has all the information they are likely to need in a situation in one place. Examples:
+      - “customized PH[B]that had only information I commonly need to look up (classes, equipment, combat, conditions) and one specifically for spells.”
+      - "I would love a huge, thick, hard textbook of every different religion and cult, and have clear, detailed explanations for rituals, prayers, and lore about deities. Complete with hierarchy of clerics and paladins, information about different sects of the religion, specific spells or roles for each deity, information about the deities weapon of choice, their wardrobe, how to move up the ranks in a temple. How to contact and communicate with your deity, how you know they sent you a sign, properly worshipping, expected duties of worshippers. There is so much potential"
+      - /(So it sounds like not just consolidated information, but a greater depth of information.)/
+      - "a consolidation of character creation and class information in one handbook, rather than scattered across several books”
+      - /(The author of the paper even suggests that players seem to desire a [[file:memex.org][Memex]])/
+    - There were also concerns expressed about information validity. Many players are okay using the referencing the [[file:microblog.org][microblog]] of [[file:jeremy-crawford.org][Jeremy Crawford]], the Lead Rules Designer for [[file:wizards-of-the-coast.org][Wizards of the Coast]], if it is more specific or contemporary than a printed rule-book: "many participants are more concerned not with the format of the resouce but of who is behind the information accessed within it."
+    - The author concludes with some implications from an [[file:ils.org][Information and Library Sciences]] perspective:
+      - "[T]he lack of an overall resource… shows just how complex and dynamic resource selection can be."
+      - "[S]erious hobbyists are an excellent source of study given their resource requirements and expectations."
+	- /(This hits the rim of a drum I've been beating for years: let's perform [[file:anthropology.org][anthropology]] on long-lived [[file:mud.org][MUDs]].)/
+      - "The[ suggestions for a Memex-like [[file:database.org][database]]]… could be used as a basis for a D&D database design, even with participatory elements, that is widely available to players both veterans and novices."
+	- /(This sounds like a [[file:wiki.org][wiki]] with harder quantification within a record, to me.)/
+      - "[T]he fact that so many of [participants' implications-related suggestions] touched on concepts from the ILS field… shows how much more there is to learn and explore from hobbyist communities."
+      - The author ends by saying futher research "could also look more closely at other tabletop games, female-dominated games, or what groups are excluded from games due to resource and/or information needs."
+      

@@ -1,0 +1,8 @@
+Pages on this website are sometimes given tags to indicate their topic(s). There are
+{{ $scratch := newScratch }}
+{{ range .Site.Taxonomies.tags }}
+{{ $scratch.Add "tags" (slice (printf "%s page(s) tagged \"<a href=\"%s\">%s</a>\"" (string .Count) .Page.Permalink (.Page.Title | humanize) )) }}
+{{ end }}
+<ul><li>
+{{ delimit ($scratch.Get "tags") ",</li><li>" ", and</li><li>" }}
+</li></ul>

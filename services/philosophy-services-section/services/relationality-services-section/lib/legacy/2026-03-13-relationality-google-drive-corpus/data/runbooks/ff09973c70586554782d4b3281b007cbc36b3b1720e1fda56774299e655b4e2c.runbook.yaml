@@ -1,0 +1,22 @@
+name: modal_truncation
+inputs:
+- role: trace
+  kind: trace
+- role: temporal_modality
+  kind: temporal_modality
+outputs:
+- role: trace
+  kind: trace
+steps:
+- name: modal_truncation
+  operator: modal_truncation
+  step_index: 0
+  inputs:
+  - role: trace
+    kind: trace
+  - role: temporal_modality
+    kind: temporal_modality
+  outputs:
+  - role: trace
+    kind: trace
+id: ff09973c70586554782d4b3281b007cbc36b3b1720e1fda56774299e655b4e2c

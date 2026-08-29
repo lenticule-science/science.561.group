@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/category/library/production-system/library/grammar/grammar.schema.json",
+  "title": "Grammar",
+  "description": "JSON Schema for a grammar — specializes production-system (Chomsky 1959) by adding optional resolution-conformance rules attached to terminal classes. Inherits the four-tuple structure (variables, terminals, productions, start) from production-system via allOf. The unevaluatedProperties: false on this leaf schema locks the surface to exactly production-system's fields plus resolution-rules.",
+  "allOf": [{ "$ref": "https://research-notes.561.group/hacking/library/predication-notes/object/library/thing/library/category/library/production-system/production-system.schema.json" }],
+  "type": "object",
+  "properties": {
+    "resolution-rules": {
+      "type": "array",
+      "description": "Optional resolution-rule list: for each terminal class, the predicate a parsed component must satisfy beyond its lexical shape (e.g., a parsed gerund must resolve to an existing transformer record on the filesystem).",
+      "items": {
+        "type": "object",
+        "required": ["terminal", "predicate"],
+        "properties": {
+          "terminal": {
+            "type": "string",
+            "minLength": 1,
+            "description": "The terminal class to which the rule applies."
+          },
+          "predicate": {
+            "type": "string",
+            "minLength": 1,
+            "description": "A predicate name that a parsed component classified under this terminal must satisfy."
+          }
+        },
+        "unevaluatedProperties": false
+      },
+      "uniqueItems": true
+    }
+  },
+  "unevaluatedProperties": false
+}

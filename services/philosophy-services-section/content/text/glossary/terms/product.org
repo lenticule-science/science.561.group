@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       17cbcfa4-bc49-4321-ac1e-1a5b5fd45941
+:node-relations: (([[id:bee496e1-139b-4a7f-8a24-d4c14e6084c6][instantiates]] . [[id:e5248432-6d1e-436e-9bdc-50fe0fcd3fe6][thing]]) ([[id:d888a007-edb6-4a23-bb07-59c34ecdd4c7][context]] . [[id:1cb088ba-65b2-490e-9bca-ec2a3037e4fe][economic system]]))
+:END:
+#+title: product
+#+date: [2025-09-03 Wed 21:30]
+

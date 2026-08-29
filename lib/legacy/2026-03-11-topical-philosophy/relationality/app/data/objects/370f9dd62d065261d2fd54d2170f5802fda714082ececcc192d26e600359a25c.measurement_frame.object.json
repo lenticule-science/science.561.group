@@ -1,0 +1,18 @@
+{
+  "act_version": "v1",
+  "admissible_observations": [
+    "a",
+    "b"
+  ],
+  "constraints": {
+    "judgment_id": "b7b22754ea15fd4b6ecb65f25ac177f57381823992c55c6262a5045522a5a40c",
+    "term_id": "2523cf8b97edc0cd32a40f0cf5752695b16b8433e323bb36c3cf01cff8a8fa94"
+  },
+  "id": "370f9dd62d065261d2fd54d2170f5802fda714082ececcc192d26e600359a25c",
+  "kernel_params": {
+    "carrier_to_element": {
+      "25bf90d79b1bedf69ef92750e9326b1b50a7ef52ecc0ae072b2814f4b2555e47": "a"
+    }
+  },
+  "kind": "measurement_frame"
+}

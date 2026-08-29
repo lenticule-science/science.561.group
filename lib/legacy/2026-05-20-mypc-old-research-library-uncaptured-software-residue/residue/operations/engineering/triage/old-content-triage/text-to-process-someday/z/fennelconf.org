@@ -1,0 +1,27 @@
+#+title: FennelConf
+#+begin_head
+#+ghe_schema: term-0.1.3
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-30 Wed 09:38]
+#+roam_tags: term
+#+end_head
+
+#+name: definition
+*/[[file:fennelconf.org][FennelConf]]/* is an annual meeting of people who use [[file:fennel.org][Fennel]], a [[file:lisp.org][LISP]]-syntax [[file:programming_languages.org][programming language]] built on top of [[file:lua.org][Lua]].
+
+#+toc: headlines 2
+* Introduction
+* FennelConf
+
+* Supplements
+** Record history
+   :PROPERTIES:
+   :CUSTOM_ID: record-history
+   :END:
+   :LOGBOOK:
+   - Note taken on [2020-12-30 Wed 09:38] \\
+      Created from [[file:~/org/s/p/d/2020-12-30.org::*Looking at structure editing and movement in Org-mode][Looking at structure editing and movement in Org-mode]]
+
+      
+   :END:

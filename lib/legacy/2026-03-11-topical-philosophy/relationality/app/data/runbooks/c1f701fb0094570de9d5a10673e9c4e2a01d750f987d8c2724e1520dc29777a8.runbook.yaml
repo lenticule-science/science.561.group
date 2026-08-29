@@ -1,0 +1,20 @@
+name: always_modality
+inputs: &id001
+- role: flow_map
+  kind: flow_map
+- role: nucleus_map
+  kind: nucleus_map
+- role: fixed_invariants
+  kind: fixed_invariants
+outputs: &id002
+- role: temporal_modality
+  kind: temporal_modality
+- role: temporal_modality_evidence
+  kind: temporal_modality_evidence
+steps:
+- name: always_modality
+  operator: always_modality
+  step_index: 0
+  inputs: *id001
+  outputs: *id002
+id: c1f701fb0094570de9d5a10673e9c4e2a01d750f987d8c2724e1520dc29777a8

@@ -1,0 +1,32 @@
+\section{The pixelization closure and the corner observable}
+
+This section records claim nodes and dependency edges.
+
+\begin{theorem}[The pixelization closure]\label{thm:pixelization-closure}\lean{Obsmetrologia.Valuation.samplingCl, Obsmetrologia.Valuation.samplingCl_infl, Obsmetrologia.Valuation.samplingCl_mono, Obsmetrologia.Valuation.samplingCl_idem}\notready\uses{thm:pixelize-adjoint-triple, thm:sample-reconstruct-id, thm:closure-operator}
+\emph{(Open frontier --- stated, not formalized.)} $\texttt{samplingCl} :=
+\texttt{boxReconstruct} \circ \texttt{pixelize}$ is a closure in the sense of
+\cref{thm:closure-operator}: inflationary directly from the adjunction unit of
+\cref{thm:pixelize-adjoint-triple}, monotone by composition, idempotent by
+\cref{thm:sample-reconstruct-id}. Its fixed points are exactly the fiber-locally-constant
+valuations. This is the Haralick--Zhuang--Lin--Lee (1989) morphological closing rebuilt
+from the library's own adjunction, with no new free data.
+\end{theorem}
+
+\begin{proposition}[The pixel-corner observable]\label{thm:pixel-corner-observable}\lean{Obsmetrologia.Valuation.pixelCorner}\notready\uses{thm:pixelization-closure, thm:corner-status, thm:cell-fourcorner}
+\emph{(Open frontier --- stated, not formalized.)} Pixelizability is measured, not
+asserted: per domain point, the status pair (on-grid, agrees-with-own-reconstruction)
+is a $\texttt{Bool} \times \texttt{Bool}$, hence an $\texttt{Articulating.Corner}$
+through \cref{thm:corner-status}. $\texttt{pixelCorner}\,F\,v : \texttt{Domain} \to
+\texttt{Corner}$ is the derived field --- no $\texttt{Prop}$ carrier anywhere. The four
+corners are realized: off-grid-and-disagreeing (\texttt{absurd}), on-grid-only
+(\texttt{potential}), agreeing-only (\texttt{active}), on-grid-and-agreeing
+(\texttt{stable}); the first FOUR-valued reading of pixel data on record.
+\end{proposition}
+
+\begin{theorem}[Pixelizability as an $H^{0}$-style count]\label{thm:pixelizable-count}\lean{Obsmetrologia.Valuation.pixelizableCount, Obsmetrologia.Valuation.pixelizable_iff_count_full}\notready\uses{thm:pixel-corner-observable, thm:h0-count}
+\emph{(Open frontier --- stated, not formalized.)} Global pixelizability is the
+\texttt{countP} of \texttt{stable}-cornered points, in the register of
+\cref{thm:h0-count}; ``$v$ is pixelizable at $F$'' is the decidable Boolean ``the count
+is full,'' and $\texttt{samplingCl}\,F\,v = v$ is proved \emph{equivalent to} that
+observable --- a theorem about the field, never a postulated predicate.
+\end{theorem}

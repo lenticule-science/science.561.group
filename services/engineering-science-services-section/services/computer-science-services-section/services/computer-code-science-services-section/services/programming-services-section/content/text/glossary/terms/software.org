@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       74574b7a-6a88-4ae7-8c9a-55cb139557e4
+:END:
+#+title: software
+#+date: [2025-08-26 Tue 09:26]
+

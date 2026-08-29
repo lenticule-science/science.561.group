@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       32a63946-d92e-4b5a-989b-e0706d062427
+:END:
+#+title: force
+#+date: [2025-09-19 Fri 20:05]
+

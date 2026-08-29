@@ -1,0 +1,12 @@
+{
+  "fixed_invariants_id": "3d6441e914e3585333edbb900ad36052ee05d885f81cb35a9320e1ae0c36ae38",
+  "flow_map_id": "5e55cd365f40fd43047c4297c20bedbfb85c970373b7957be876dae75ad2a2fb",
+  "id": "88921addf4b12295a748db37d9dce690be0be5abaa73325745bfcc410eb049ae",
+  "kind": "system",
+  "measurement_frame_id": "b0d9ce1809d760938a063fa5855cdac31bc59d86cdcc0c78533c7460268e4eb4",
+  "nucleus_map_id": "a1c7f84ee01b6f537ff7e4c719d830dd6cf0de253405ec067b856eab4486cf23",
+  "phase_space_id": "eb8935b359994e151f4b50c3afd6e94c334dd6f6835323c24ca2ce511bb76668",
+  "profile_topos_id": "520d8ae0ce9f0cbb89e368d60c63f8b1e5ee86c73de4518b3a70273c7851ee1f",
+  "regime_id": "0ecde16f4a2e443e833166f8eeddfdc93262c59573ba7a5ac7c6bc59aa294ea7",
+  "trace_id": "40f5a9006efdedad34faa184100cec1d5b6589ddbf67f45261aa91507132a3fe"
+}

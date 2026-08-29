@@ -1,0 +1,65 @@
++++
+title = "Facebook Users, It's Your Fault"
+author = ["emsenn"]
+tags = ["politics", "technology", "communication"]
+draft = false
++++
+
+We're **this** close to an Internet as revolutionary to itself as the Internet was to the
+world, but we can't get there because you lot are content with using services that fail to
+do what they claim.  <!-- more --> Humans are storytellers - it's how we relate to the
+world around us, and relate our selves to each other. And so much of our lives are telling
+stories - "today I ran into becky at the grocery and omg her roots were a mile long" - and
+building our own oral tradition, that we cultivate and share with those around us.
+
+Social media was our chance to merge that wonderful ability we all have with the written
+word, and oh my gods - the magic that is possible from that; taking our ability to relate
+to others and spreading it so it can exist regardless of chronological or geographical
+impediments.
+
+---
+
+But, that's not we have. We have walled gardens - well-featured ecosystems of products
+existing to take our oral-turned-written histories, and shuffling them, displaying them
+disjointed, cut together with advertisements, to make the advertisements better.
+
+So we cultivate our posts, to make them more in line with what they need to be to compete
+with our own digital avatars, and to fit with our corporate sponsors. In doing so, we've
+lost the agency in how we tell our own stories - we've lost the agency in doing one fo the
+things that helps members of our species define themselves.
+
+We were promised a way to bring one of the best parts of being human - relating to one
+another - into more parts of our lives, and instead, we got conned out of being able to
+hold an identity that isn't subject to corporate audit & revision.
+
+---
+
+"So leave."
+
+That's as silly as suggesting I not talk about my day vocally. Online text is the language of the day.
+
+"They need to do it to make money."
+
+Each of us carries around a computer powerful enough to run a small web server. Fifteen
+years ago, I'd've agreed, we need centralized web services. Today, it's simply not true.
+
+"This post made me feel sad and like I"m being a bad person by using Facebook."
+
+Online text is the language of the day. Do what you gotta - rather have an identity warped
+by opaque corporate sponsorship than no identity at all, right? But also, you should give
+some serious thought to supporting the next stage of the Internet's development. There are
+many decentralized platforms out there to meet any need that Facebook (or another social
+media site) fills. The main players to look at are mastodon for social media, matrix for
+instant communication, and steem for forums and content repositories.
+
+
+## Editorial Information {#editorial-information}
+
+
+### Change Log {#change-log}
+
+
+#### <span class="timestamp-wrapper"><span class="timestamp">&lt;2018-03-03 Sat&gt;</span></span>: Created as a Facebook post {#created-as-a-facebook-post}
+
+
+#### <span class="timestamp-wrapper"><span class="timestamp">&lt;2018-11-05 Mon&gt;</span></span>: Added to Personal Record {#added-to-personal-record}

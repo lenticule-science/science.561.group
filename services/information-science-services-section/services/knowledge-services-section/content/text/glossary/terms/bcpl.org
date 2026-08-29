@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       43fb3490-e396-45da-9195-0a406dead36a
+:END:
+#+title: BCPL
+#+date: [2025-08-29 Fri 20:53]
+

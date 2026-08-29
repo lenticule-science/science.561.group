@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://561.group/swarm-intelligence/agentic-orchestration-platform/tick/tick.schema.json",
+  "title": "Tick morphism record (one closure-step on one entity)",
+  "description": "Morphism: (entity, closure-rules) → entity'. Per lab/.../predicated-agentic-orchestration-platform/tick/ and platform-opener: 'Tick is one closure-step on one entity'. Applies the active closure rules to the entity's local predications, producing the next state. Variance: restriction of sigma-pass to per-entity scope.",
+  "kind": "morphism",
+  "domain": "(entity, closure-rules)",
+  "codomain": "entity",
+  "variance": "restriction",
+  "monotone": true,
+  "type": "object",
+  "required": ["inputEntity", "closureRules", "outputEntity", "evidence"],
+  "additionalProperties": false,
+  "properties": {
+    "inputEntity": { "type": "object" },
+    "closureRules": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "outputEntity": { "type": "object" },
+    "ruleFired": { "type": "string" },
+    "fixedPoint": { "type": "boolean" },
+    "evidence": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  }
+}

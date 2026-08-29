@@ -1,0 +1,19 @@
+2019/01/03 * Blinds for Unit 208
+  Inventory:Supplies:blinds                 -1
+  Expenses:Maintenance:Unit 208
+
+2019/01/07 * Bank Trip
+  Expenses:Mileage                         16.9  mi   @  $0.545
+  Accounts Payable:Esther Davis
+
+2019/01/10 * Harris Teeter
+  Inventory:Materials:paper towels           6         @@ $6.49
+  Inventory:Materials:toilet paper          12         @@ $6.49
+  Expenses:Mileage                           0.6  mi   @@ $0.545
+  Accounts Payable:Esther Davis
+
+2019/01/12 * Walmart
+  Inventory:Tools:snow shovel                1         @  ($17.83*1.0675)
+  Inventory:Materials:road salt              4    bags @  ($4.84*1.0675)
+  Expenses:Mileage                           8.2  mi   @@ $0.545
+  Accounts Payable:Esther Davis

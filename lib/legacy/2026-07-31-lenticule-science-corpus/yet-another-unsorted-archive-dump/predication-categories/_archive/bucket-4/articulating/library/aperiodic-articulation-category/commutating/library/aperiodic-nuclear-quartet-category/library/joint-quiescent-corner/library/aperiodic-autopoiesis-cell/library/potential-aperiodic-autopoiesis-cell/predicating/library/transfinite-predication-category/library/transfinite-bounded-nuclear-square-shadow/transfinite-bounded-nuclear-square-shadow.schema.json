@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://active.development.561.group/articulating/library/aperiodic-articulation-category/commutating/library/aperiodic-nuclear-quartet-category/library/joint-quiescent-corner/library/aperiodic-autopoiesis-cell/library/potential-aperiodic-autopoiesis-cell/predicating/library/transfinite-predication-category/library/transfinite-bounded-nuclear-square-shadow/transfinite-bounded-nuclear-square-shadow.schema.json",
+  "title": "transfinite-bounded-nuclear-square-shadow",
+  "description": "The transfinite-bounded shadow of aperiodic-autopoiesis-cell: the commutative nuclear square (A, σ, Δ) structure survives at this regime, but fiberwise variation is bounded below ω_1. The Axiom of History Separation weakens: only countably many histories can be faithfully distinguished by the nuclear pair. Constructed from the aperiodic-autopoiesis-cell upstairs via regime-collapse.",
+  "type": "object",
+  "properties": {
+    "name": { "type": "string", "const": "transfinite-bounded-nuclear-square-shadow" }
+  },
+  "required": ["name"]
+}

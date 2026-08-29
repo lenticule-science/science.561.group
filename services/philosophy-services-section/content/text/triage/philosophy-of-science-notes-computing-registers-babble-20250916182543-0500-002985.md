@@ -1,0 +1,178 @@
+:PROPERTIES:
+:ID:       a4ca1768-2382-4eb1-b4da-12116df827bf
+:form:     [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]
+:public:   true
+:END:
+#+title: Babble, [2025-09-16 Tue 18:25]
+#+date: [2025-09-16 Tue 18:25]
+#+author: emsenn
+
+I've been tinkering with [[id:53db0e23-0bba-4756-be38-d8aa0522e0f7][computer programming]] again recently.
+
+And it got me to realizing that, in much the same way I've come to view my participation in other systems as interaction between different subsystems of myself and them, and so being able to more cleanly maintain different attitudes toward the thing, I can probably do that with computing.
+
+Like, to interact with most parts of reality I have to make some compromises. (Which sounds more moral or judgemental than I mean it; I also view my existence as essentially a certain set of compromises reality has made with itself.
+
+I'm thinking that if I can map out the compromises, in some way, and create different environments where different levels of compromise are at play, it'll allow me a more full range of expression, which seems more necessary toward expressing, than having access to perfectly high-fidelity expression, which isn't precluded by temporary compromises anyway.
+
+Putting it in any sort of concrete terms: My idea computer is probably something running [[id:fd807957-f450-4d5f-b7f9-691b792fc39d][Guix]], with, probably, [[id:9a4a0fef-53f9-4fba-b853-28c356633252][Racket]] as the most complex interpreter I've got going, and everything in my stack is limited to what those things can do. (Which is more than plenty, but the structuration to do it smoothly and interoperably with other systems like the Web isn't there.)
+
+And in practice, I'm using [[id:82e21c3a-fd3b-4522-95d9-86d2b65a7fcc][Windows 11]] as the main operating system on [[id:b59c6255-b760-4a18-9ee2-f548c2e9c11a][my laptop]], which is about as far from a Guix system as one can get. (Though one can go nerdier than Guix: I want to brag I used to run [[id:57ddc0ba-1f1f-476f-8cdd-3f1a1fa868de][Plan 9 from Bell Labs]] as my daily driver.)
+
+I keep stepping away to do chores during this babble but a thought is that things should be able to flow from less-nerdy systems into the nerdier ones, but the nerdier ones don't necessarily need to communicate with the less-nerdy ones.
+
+That is, I need Windows 11 to be able to talk to Ubuntu, to talk to Emacs, but I don't *really* need [[id:6a3fc30f-fd91-4d01-b5bb-ef4f001d934a][Emacs]] to talk to Windows 11 (beyond things like sharing my copy/paste clipboard.)
+
+Or, to use another example: I would like to be able to interface with Discord servers with my [[id:de5cda39-6fa8-4f17-a11e-3c6aca2b66e8][MUD engine]], and represent [[id:c313f797-2508-4086-aaca-45c172c3d354][Discord]]-concepts as MUD-concepts. But I don't need to be able to translate MUD-concepts into Discord-grammar.
+
+That last clause there got me close to the idea i wanted: registers of computing as grammars that exist in their own relationship to each other.
+
+This maps with how [[id:0d50b865-57b3-4d6d-aadf-1925457396a4][my research]] is becoming organized, though I'm realizing that I've arrived at an impasse of sorts, as recognizing this structuration forming is what motivated me to look back toward computer programming.
+
+So back in the [[id:97be6d8d-43cc-4ff2-8e40-5b01d27255d2][1830s]], [[id:e958974b-82df-4eae-9aa9-f756108a74cb][Auguste Comte]], a [[id:1289b514-bffe-4134-87bb-36afbbc153a6][French philosopher]], proposed a [[id:5eb39260-efe0-4570-904f-a06b9a097977][hierarchy of the sciences]]. This was part of a wider idea of his, [[id:9373e508-8a19-496d-8bb7-4016a3ded6d6][positivism]], which suggested that [[id:98957740-9c3a-40dc-b33e-034de3159379][human knowledge]] progressed from [[id:bcaffeff-edb2-4e64-ad41-c5831dbda827][theological]] to [[id:58a3c510-9ead-4440-8c3f-345a27cdf2c1][metaphysical]] to [[id:642dc56d-f11f-42b6-8776-11de2b1131af][physical]]. In other terms, from [[id:67ad7279-36ba-4fa3-acf3-bc0d0377d106][abstract]] to [[id:8842b8bd-04e0-4c60-9102-107ecd60e721][concrete]]. Thus, [[id:858d7dea-f66e-4222-b91c-f00cc037c736][mathematics]] was the foundation, with [[id:20ce7d03-4d97-4012-a9ee-48e3e7a94fa4][astronomy]] coming next, then [[id:3c56dc55-149f-4baa-ba38-e478f176a931][physics]], then [[id:3d0bf9e1-8858-4255-9d23-aea49d385ae4][chemistry]], [[id:b82a8ebf-816d-49e1-be38-8fde4b32c1dd][biology]], and finally [[id:bad397e9-7897-48b7-9046-5cc298419fea][sociology]], a term Comte [[id:6f2fa75a-9118-470d-8d4c-fc6bcef30c55][coined]] himself.[fn:: Notably, astronomy was foundational to physics, because in Comte's day, physical phenomena were generally believed to be terrestrial manifestations of the laws that governed the movement of astronomical bodies, which were believed to be manifestations of pure mathematics. That last part might be true, but I'm trying to express that today, our models of the mathematics are significantly more complex.][fn:: Also of note, Comte didn't believe in [[id:2782b41b-9dc9-408c-9174-06c60af1640c][psychology]], splitting it between biology and sociology. This is out-of-step with the ideas of [[id:33310308-574a-4442-accb-a4503e0add74][psychoanalysis]], but in-line with [[id:d588916c-e345-4c84-bc2e-73c80a1ee013][schizoanalysis]]]
+
+Comte called sociology the "queen of sciences," if I remember, because it was the "crown" on top of all of them, that brought humans, the doers of science, into alignment with mathematics, the foundations of science.
+
+In the nearly-200 years since Comte's work, there's been a lot of thought on how to frame sciences. Comte's [[id:9373e508-8a19-496d-8bb7-4016a3ded6d6][positivism]] and [[id:c52d619c-9d72-47ce-a1b3-af1fdc150eba][reductionism]] hasn't ever left, but the way it's been handled don't (usually) operate from the same ecclesiastical position, so have in their own way refuted the central claim, that sciences are cleanly founded upon each other.
+
+By the late [[id:18a265df-ee39-4fdb-983a-daaf9b7cd151][19th Century]], [[id:9421e5da-bcfb-416e-874d-2089a285d2b6][knowledge production]] had [[id:14551ec1-7261-4edc-a532-5e8c1382f1d4][professionalized]], with [[id:df00bebb-1eeb-432a-862b-e28c2ca29d24][universities]] and [[id:c972abec-bb0c-4918-ad1a-29aa757665c2][academic journals]], which grouped sciences based on what they studied: [[id:11b46718-600d-44f2-8c0d-50a241775622][formal]], [[id:c2c10b4d-50cf-43d3-a8fd-8ac8ee6317e3][natural]], or [[id:aa666404-2c52-4ac3-907a-3cabe91bbd31][social]]. In [[id:6b17e45f-f180-4f93-86fa-5bb5bf569361][1938ce]], the [[id:fbbc7e81-82de-45ee-b764-8b3cc52ba425][International Encyclopedia of Unified Science]] was published, and by [[id:52c6d78b-a54f-47fa-a7cb-6c87d9435833][1948ce]], the [[id:931d3883-d425-41bb-9415-d941f17e0926][Hempel-Oppenheim model]] attempted to codify the relations between sciences.
+
+In [[id:a602bd3c-988a-4a8e-9657-a96e2dee6377][1961ce]], [[id:7d3b568f-e159-45cc-a0cd-1cad5574a78f][Ernest Nagel]] published [[id:a3c173fb-1f2f-4069-bd06-2aa12b6983f6][The Structure of Science]], which further solidified the idea of [[id:30c71347-8d64-4ae8-86c7-0e650ce6a768][intertheoretic reduction]] via [[id:a30743b8-71e1-4c34-adbe-d5e17b004662][intertheoretic bridge laws]].
+
+Then, the [[id:32d9b7c1-a7ed-4da3-bff7-82c64a42b1a0][next year]], [[id:1f677937-517b-4054-95ad-3bc08e5e1d19][Herbert Simon]] [[id:88b03db0-4fed-4ace-8ef6-02ea9f2182e2][published]] [[id:987fc4eb-53d0-4b06-b2de-f0dfa62dcc54][The Architecture of Complexity]], which used [[id:666ee276-f0e9-4c41-b584-e4c664b8226c][cybernetics]] to soften the claim, pointing to different levels of complexity having different [[id:09871008-e878-4c03-b4ac-f3f9d4811e0b][principles]].
+
+The same year, [[id:69c76ae2-2b57-4886-8e36-99817756e893][Thomas Kuhn]], with [[id:7235e981-69ba-4da6-b0ef-e5d920e40ab5][Structure]], further undercut the idea of a unified hierarchy of sciences, looking at how some sciences had [[id:2c57a10c-9ed0-4096-a5e5-e1702ecf7c2a][incommmensurable paradigms]]. And in [[id:3a4f2848-f225-40c8-a027-851e688e3953][1970ce]], [[id:f2cd329b-9429-426b-b622-c2a77d1b8cac][Donald Davidson]], with [[id:6993b232-13a1-4f5a-8978-7fda826ce523][Mental Events]], proposed [[id:ec1cc14e-b83f-4c7d-b6cb-f62baf17c3eb][anomalous monism]]: [[id:fee54813-8157-4c67-a69e-5b8995ee8709][mental events]] [[id:062f6e88-fe55-4bcc-92b9-91dfa04f2c57][supervene]] on physical events, but are not reducible themselves to [[id:9a31788f-a90e-4735-8b6d-3d9f25f26c10][physical laws]].
+
+Then in [[id:b6dacaae-629a-40e6-93d5-76f70a6f4ae7][1972ce]], [[id:d884a8c0-7eb2-470a-8222-6740a25a781c][Philip Anderson]] used physics itself to change intertheoretic reduction, by highlighting [[id:a358902d-ebec-4719-9049-a4cb8262cb22][emergence]] that produces novel [[id:fd6ecbed-9bdf-4570-b4b2-5ff7744c0a96][concepts]] and [[id:5deb67ee-b177-4081-8b17-194402e79092][laws]] at higher levels that cannot be derived from [[id:d9632a1a-461b-4804-b343-050f006325de][microphysical laws]].
+
+[[id:7fdfcf20-30f8-4a88-9ba4-92af67eeaf78][Jerry Fodor]] generalized this non-reductionist stance in [[id:3d2d60c1-7ab9-49ab-b852-d943a49abe45][1974ce]] with [[id:39048997-b157-46fc-8c15-48e89a20c5ab][Special Sciences]], claiming [[id:085b1d18-aa3c-4e68-96dd-fbbe37514ec6][multiple realizability]] precludes reducting "special sciences" lilke [[id:2782b41b-9dc9-408c-9174-06c60af1640c][psychology]] and [[id:bad397e9-7897-48b7-9046-5cc298419fea][sociology]] to [[id:3c56dc55-149f-4baa-ba38-e478f176a931][physics]].
+
+[[id:99b2cf00-260e-420e-918a-12966c19168d][Paul Feyerabend]], the [[id:46c96c2d-92b5-4ff9-a10d-e19afb18fb8b][next year]], in [[id:ef7f8de4-1c13-4452-8d97-7c667e3903e0][Against Method]], argues fro [[id:b9f4ca1e-0d1c-4287-8971-f0c10788f702][methodological pluralism]], establishing what [[id:fc0e1ae2-5fec-484c-a146-cbc4788b4bf7][non-reductionist scientific practice]] might look like.
+
+[[id:45ce6ec4-08f1-4154-a56a-729e448d6bc9][Jaegwon Kim]] took these ideas and voiced a necessary concern, the [[id:1aba3b57-be7f-4d11-b24f-e1dd44888312][causal exclusion problem]]: if higher-level sciencees aren't reducible, are they causally impotent?
+
+This is an idea I want to slow down on, recognizing that this babble has moved into a rough history of the hierarchy of sciences, when it started as an attempt to consider what software to use where and how. But, this will be, I think, important on this stuff: the compromises I discussed earlier have causes, and given the relationship between [[id:aa700898-32d6-4e4d-9ea3-f711a246aeea][attributing]] and [[id:281ba07c-012c-4a4d-88bf-d52da7d31181][affect]], and what i know from [[id:cebb2e3f-e279-4b4b-8692-6259098ed955][attribution theory]] and [[id:29c0984f-d1a0-42d7-8a09-47582d36a11e][affect theory]], combined with my own ideas: being able to attribute the cause of why I'm using a specific software will help me hold the right [[id:fe4ba37b-aa41-495b-8e45-8042fd11df9f][mood]] for that software.
+
+So, causal exclusion. Imagine we're working with two levels of properties, the physical (neurons firing, molecules colliding, etc.) and mental (beliefs, desires, etc.)
+
+Davidson and Fodor said that mental supervenes on physical - no mental change without physical change. But... they also claimed that mental changes are causal. For example, seeing rain outside is physical. But it's your belief that it's raining that makes you grab a jacket.
+
+The physical stuff has proper "[[id:343603ce-0219-498b-823b-d9f107d7935d][causal closure]]," and mental stuff depends on the physical. This leads to an issue of [[id:9de94234-09e8-43ce-a50c-2457f2a52073][overdetermination]]: under Davidson/Fodor modeling, deciding to grab an umbrella has two full and independent causes, physical and mental.
+
+Which would mean the mental isn't actually doing any causal work - it's [[id:8c29c3cd-9c18-4394-aa12-1f7590f81d22][epiphenomenal]]: along for the ride, but not making anything happen.
+
+This issue creates an impasse within [[id:44cae394-6f84-4dab-b464-cf6679642fae][irreductive physicalism]]: mental causes are real but not reducible, which is unstable: either the mental can be reduced to the physical (so it has real causal power) or the mental is a impotent byproduct.
+
+Essentially, higher-level causes seem excluded by the sufficiency of their physical bases. Put another way, the causality described by things like sociology or psychology is excluded by that causality's own supervenience on physical causality.
+
+Or, put another way, irreducible supervenience causes epiphenomenalism. It forces philosophers to choose reduction or explain away supervenience.
+
+This critique sparked a few directions. Reductionism accepts Kim's critique as a conclusion: higher-level causes are nothing over and above physical causes.
+
+[[id:c0acebf5-47d3-499b-9cf2-98621ced8ebb][Emergentism]] argues that higher levels can have novel cause powers that are irreducible and not supervenient.
+
+[[id:6bca77a9-7bac-4e35-bafe-165ec7de2fcf][Interventionism]] argues that causation should be understood as an explanatory practice. That is, higher-level causes are real because they allow us to track regularities that may be, themselves, manipulable, even if they are underpinned physically.
+
+And [[id:05638775-85bf-42a3-8255-1c0c8b53471d][pluralism]] says causality is a context-dependent story, so the exclusion problem is precluded.
+
+These views were explored through the second-half of the [[id:8310212d-81cf-47f1-ac66-77dcbbc5d2c9][20th Century]]: [[id:190fe07b-fed6-4e18-990a-9d27d6e7e56c][Bruno Latour]] intorduced [[id:2bb5d318-28d4-4c69-8e41-488044b50151][actor-network theory]], [[id:28e9a8f7-965a-42f6-ad13-bdcea7dd8ba4][John Dupré]] advanced [[id:35e36728-fcf9-4d7a-8d96-4b12faf60f65][promiscuous realism]], and [[id:3aafef01-7a41-4f9e-8d56-243a37a164a0][Nancy Cartwright]] wrote [[id:74534ad8-c505-4348-aa8c-9b911019794c][The Dappled World]], which framed the [[id:e8a7d4a9-8efe-4972-93a8-7dd56a0cf52b][cosmos]] as a mosiac of local orders, not governed by universal laws.
+
+Early in the [[id:fc5d18cc-bc87-48b4-a706-604b67801219][21st Century]], the understanding of sciences took a [[id:2f504fda-9c79-4f78-9571-03c51451136d][mechanistic turn]]. The philosophizing of this probably peaked in [[id:5fbdddb4-7845-4598-a0ca-1c832eff4a1f][2007ce]], with [[id:08f4f9cd-f89f-45a4-99b9-74e2566b0b78][Carl Craver]] writing [[id:350c64e5-3f9b-49b5-a666-bad9b85a3017][Explaining the Brain]], and [[id:b17e5a10-1cc2-48d1-afd5-ed1bfe2c359d][Every Thing Must Go]] from [[id:eb64be31-d7ee-4278-81bf-6deb4af421e5][James Ladyman]] and [[id:06923f70-ae13-449f-9ac0-4c1be4a2fba9][Don Ross]].
+
+Basically, the understanding became that the sciences were unified not through a hierarchy of causality, but at the level of mathematical structure, which was manifest in the mechanisms present in each field.
+
+I've been focusing on theory pretty abstractly here, and I reach a point where I cannot tell the history further without backing up and pointing out that since Kim's critiques, computers were becoming more and more a part of life, often developing near the same academic contexts that were producing these ideas. I would like to, at some point, go back over this history and compare it to the history of concepts in computer science. It seems like there might be an overlap between the concepts of science and hierarchy affecting early computing, and the speed of computation rapidly demonstrating the limits of those concepts, and allowing us to explore other ideas.
+
+But for now I'll just say that in the contemporary day, with multi-scale modeling (climate science, systems biology, neuroscience), hybrid fields (biophysics, econophysics, computational social sciencce), the functional understanding of sciecne is as a network of partially autonomous, partially integrated models. It isn't Comte's strict ladder, nor is it a dappled patchwork, but a web of mechanisms, models, and concepts.
+
+Notably, there is still a [[id:5eeaf94b-ff53-49d4-8ffb-6789d10c4cac][universalism]] inherit to this formation of science, even as it often refers to itself as pluralistic: mathematical modeling is assumed to be functionally accurate, which itself makes some assumptions about a coherent world. This is an assumption that I've apparently explored too poorly in my research, because I can't figure out what to link to. [[id:ebc8a13c-2891-44eb-a4b7-46f9b48a0e58][Ordo universi]], the [[id:9e03e706-ee1b-4c8f-b32b-5f27c3e875b7][ecclesiastical expression]] of the idea, didn't even exist until I just linked it. Maybe in the future it'll have more information pointing back to it. Unfortunately, critiquing this assumption is beyond the scope of this babble, I think, especially as accepting that assumption is one of the compromises I make to use computers (and more generally).
+
+I in fact want to, in this movement of this babble, consider what it would look like to lean into this emergent (yet not really formalized) principles of science. I was planning to do so by attempting to build a shared scientific grammar rooted in [[id:cf29271b-9d29-4689-934f-223710dce476][homotopy type theory]] and [[id:fbe8ccac-b47b-4c28-88ad-6740bd65da10][lambda calculus]]...
+
+...and then as I was writing this babble, I saw that [[id:2adc84ae-aea8-49e2-a01c-9ba0ced30a02][Stephen Wolfram]] released [[https://writings.stephenwolfram.com/2025/09/the-ruliology-of-lambdas/][The Ruliology of Lambdas]]. It's a wonderful demonstration of how even in abstract mathematical systems, behaviors quickly become irreducible, unpredictable, and indeterminable.
+
+[[id:2c1a7b75-c324-4d92-a57f-c2198d89ec36][Ruliology]], established by Wolfram, "examines how simple computational rules can generate complex behaviors." Which is to say, it's the [[id:12552015-a7d2-41c6-9292-03e83d05abf1][-ology]] of the [[id:91be8b8f-817a-40d1-9323-9596c44f4483][rules]] that [[id:6723bd1a-4347-447f-9d89-7d47c200c184][scientific fields]] are believed to share, under this conception of the sciences. Notably, ruliology does not approach this belief as a belief, to be tested, but as an assumed law of the systems it studies. That makes it a maximalist claim, and I'm generally more interested in minimalist approaches.
+
+So, backing up, I want to do something specific: reckon a set of minimal claims that must be committed to, in order to practice what is, today, called "science."[fn:: I'd like to then ask if there is any functional distinction between this "science" and field-specific derivatives like "[[id:d673808f-0682-4cac-ba9f-b0398331db1a][decolonial science]]," or whether those terms are grounded in a form of science that's obsolete.]
+
+Contemporary science simply doesn't rest on the claims it was built on: there's no hierarchy, there's no reduction, there's no universal law, and no single-method positivism.
+
+So what commitments must be made to do something that counts as science?
+
+- Order
+  - In order for observation and modeling to exist, order must exist.
+- Epistemic optimism
+  - Through doing science, this order can be known
+- Representational optimism
+  - Knowing the order lets us represent it
+- Relational optimism
+  - Representing the order lets us communicate it as part of other orders
+
+
+Or put another way, the cosmos is patterned, those patterns can be tracked, represented, and integrated.
+
+I'm struggling to express that last point, but basically: a claim of science today is that heterogeneous methods and models can be used together, if they share... points of articulation? Heterogenous models are usable together if they can be articulated together, which requires common condition, structure, or function.
+
+Which pretty neatly brings me toward the language I've been using in my own [[id:7031b7c2-7bfd-410e-8ed7-fbfc81dc3afc][relational dynamics]], which is... almost a segue back toward what this babble started on, which is finding a way to allow the different registers of my research and theory to communicate more easily.
+
+The walk-through of hierarchy-to-web science history is useful because in some ways, computers have embedded hierarchies, and in others, they have a web, and in others, they're on the [[id:9127f744-2fb8-4604-af04-566b946a6eb4][Web]].
+
+I feel like I have one part of this thing I'm trying to do... on its way to being developed, with my conceptions of how condition, structure, and function interact.
+
+But I also am certain that within computer science, there are tests of the edges of these concepts that I should be looking at.
+
+Which is my non-segue to saying, I suspect it might be good scientific practice to find how to express things in some variant of lambda calculus, and I /suspect/ it may be something like [[id:33fbee1b-2f8b-43f6-93a5-c6d7a704cbfc][Scheme]], [[id:7905d1f5-ac25-4ae8-bc75-be6a20875f3d][Guile]], or [[id:9a4a0fef-53f9-4fba-b853-28c356633252][Racket]], when I am trying to form an agnostic, aphoristic expression of field-specific concepts.
+
+But let me try and move this back toward the pragmatic: deciding how I'll do the various things I want to do through computers. I must note, this is only one mode of deciding, and like an overworked scientist trying their best, I'll try and use a few applicable methods to test my plans.
+
+I said that I want "registers of computing as grammars that exist in their own relationship to each other," which sounds a lot like how the sciences exist.
+
+Which makes me realize that what I've done so far in this babble is look at what conditions to use to give "science" it shape or structure, as a [[id:fd6ecbed-9bdf-4570-b4b2-5ff7744c0a96][concept]]. What I haven't done is describe what the shape or structure is.
+
+If a science is articulable representations of detectable patterns - which is, I must say, a pretty wonderfully broad description of the concept - then the "shape" of a science is the set of those representations. Representations here are symbolic, which means that our description of science, formed from looking at the conditions that give it its structure, is that a science is a grammar of signs, which means we should look at science through the lens of semiotics. But if we call it a grammar of reductions, we get lambda calculus, if we say grammar of morphisms we get category theory, and if we say grammar of paths, we get homotopy-type theory. Grammar of syntax gets us linguistics. I could probably do other ways but those are the most relevant to computationability, I reckon.
+
+It was crammed in that list but homotopy-type theory is the one I suspect I will use as my most universal grammar, as it's what I've found most able to express relational dynamics.
+
+Also, this is not directly connected to anything, but I want to say that I might see the "ruliology" of a thing being a [[id:24d9a29e-2b39-4837-897a-bb7331df911e][map]] of all possible rules within a system, and the "[[id:3f0d714d-5c21-4cae-8e86-0fe57da4c88d][semiosphere]]" is a map of those rules which are used within a system. But that's not a very clear distinction, written like that, so I'll move on.
+
+...But move on to where? This babble is perhaps the babbliest in a while.
+
+Might be best to just, move on? Let me think about what I've done in this babble.
+
+I started with talking about different forms of computing involving different forms of compromise. I talked about these shapes being about moods, not just epistemics.
+
+From there, I kind of jumped based on my own assumptions equivalencies in the shape of computing and the shape of science, which had to do with, though I didn't say it quite this way, grammars that formed out of the constraints of the ruliology of each type of computing and science, and finding commensurate points of articulation between them creates the general field of computing, or science.
+
+Then I talked about the causal exclusion problem, and how, from that, science moved toward this webby structure. I'm wondering if I want to go back and examine: does the webby structure address Kim's critique?
+
+I'm also wondering about... how this concept relates to computers as cause-effect machines, which is one way of looking at input-output. And I'm wondering how that relates to boundaries and translations.
+
+But, looking at webby sciences brought me to a set of claims about what makes "a science" these days - useful because a lot of my research is in the boundaries between fields, or how those fields boundary with my own ideas.
+
+And, then I talked about how there's a few sciences for looking at webby things, and semiotics seems the most relevant for starting with, when describing the shape of a science, and science.
+
+It feels like I'm kind of dancing around the issue here... I guess maybe I should ask myself, what is the minimum condition, structure, and functionality, that a semiosphere requires? That'll give me the minimum structure that... any thing that can communicate with other things?... must have, I reckon.
+
+I think a facet of this may be too, identifying which elements of a semiosphere are involved in articulation/translation, and which are internal.
+
+So, a semiosphere, has the following terms that are helpful to define it:
+
+- object
+- sign
+  - index
+  - icon
+  - symbol
+- semiosphere
+- core
+  - periphery
+- boundary
+- translation
+- text
+- memory
+- autocommunicating
+- code
+
+The question is which of these are necessary: if we were to construct a digital object that represents a semiosphere, what attributes and methods would it minimally require? (I'm seeing how this question relates to, generally, "how do I represent a MUD in the most agnostic way, but we'll get back to that.)
+
+
+...I think I need to be better about making new babbles, because it's actually now [2025-09-17 Wed 23:03], more than a day after I started this, and there's been a lot of moves. But I also can see how I'm VERY close to being able to name which specific thing is happening that warrants a new babble, so I'm going to not worry too much about it now, but instead just move to a new babble.

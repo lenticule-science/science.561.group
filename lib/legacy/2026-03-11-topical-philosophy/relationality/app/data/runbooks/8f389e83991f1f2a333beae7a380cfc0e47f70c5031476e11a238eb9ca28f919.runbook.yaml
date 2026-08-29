@@ -1,0 +1,22 @@
+name: complete_trace
+inputs:
+- role: trace
+  kind: trace
+outputs:
+- role: trace
+  kind: trace
+- role: complete_trace_evidence
+  kind: complete_trace_evidence
+steps:
+- name: complete_trace
+  operator: complete_trace
+  step_index: 0
+  inputs:
+  - role: trace
+    kind: trace
+  outputs:
+  - role: trace
+    kind: trace
+  - role: complete_trace_evidence
+    kind: complete_trace_evidence
+id: 8f389e83991f1f2a333beae7a380cfc0e47f70c5031476e11a238eb9ca28f919

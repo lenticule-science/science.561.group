@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       6eee0a82-2648-43c3-b9cd-618882983baa
+:END:
+#+title: town
+#+date: [2025-09-01 Mon 10:42]
+

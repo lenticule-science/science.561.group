@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       78d17d43-2a5a-40a0-b0c7-6846b303d8b4
+:END:
+#+title: stone
+#+date: [2025-09-20 Sat 12:05]
+

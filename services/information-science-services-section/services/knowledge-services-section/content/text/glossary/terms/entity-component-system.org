@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       7b2ea6f9-f386-4261-a29b-8684c71feb87
+:END:
+#+title: entity-component system
+#+date: [2025-09-15 Mon 15:13]
+

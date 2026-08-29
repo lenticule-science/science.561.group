@@ -1,0 +1,29 @@
+:PROPERTIES:
+:ID:       91687610-f54e-40dd-88f6-0da558e09bb6
+:public:   true
+:form:     [[id:a299fe51-7629-4b6e-afa0-7c7717371cc7][post to @emsenn@kolektiva.social]]
+:ROAM_REFS: https://kolektiva.social/@emsenn/115095236173975859
+:END:
+#+title: Post to @emsenn@kolektiva.social, 2025-08-26 0812h
+
+Good morning, [[id:e61736a1-36c3-4efb-af9c-6ee79ba81f73][Fediverse]] and [[id:bf3efdb0-9def-4a09-a025-b35429f681ba][followers]]! In case you missed it, I've finally been getting [[id:cc253409-9a82-4c5d-a4cd-8013f4e350c6][my website]] back together - https://emsenn.net
+
+There's a lot of slow work to import in old notes, but! I'm chugging my way through that, and so should, at some point, be able to start linking to some previously-unpublished [[id:495f274d-80ec-47a2-93dc-733355ef9b9c][essays]]. (Like one I personally like, that looks at the kids show [[id:d274295f-0fa1-44bf-af83-7d62c4a68b7a][Phineas and Ferb]] as a [[id:8e0cb937-a2c5-4e73-aded-32024881d4ea][counter-anarcho-nihilism]] work.) I also have a *crapton* of [[id:ac56108c-cadc-4cb3-a362-ce29e5bd8492][tabletop role-playing game source material]] to upload.
+
+Rebuilding this website is kind of step one of rebuilding things - materially and like, psychospiritually - after the very bad events of the past few years: literally got run out of two towns by two different armed gangs, since [[id:3bfd9dde-2784-4cf2-9794-b1b8129824de][2021]], and that's just the stuff not-too-bad to document publicly!
+
+In personal news, I continue to chip away at [[id:80f3d2fe-e341-4101-a865-2fa6707feb11][my debt]] I built up during those activities. I'm finally to where my monthly income is more than the minimum owed, but I'm excited to keep bumping that number down. Anything that goes to [[id:586f1109-a99c-432e-b191-b9e11a21d50d][my Ko-Fi]] https://ko-fi.com/emsenn goes straight toward that, so please consider contributing.
+
+(And if you're a long time contributor, or contributed in the past and never got thanked: thank you! The folk who've been doing that are why I've been able to not slip completely out of the world.)
+
+---
+
+I'm trying to do more, just, hanging out on "the [[id:9127f744-2fb8-4604-af04-566b946a6eb4][Web]]", the way I used to, but a lot of the communities I hung out in have shut down. I have my own [[id:6ecd3044-8c62-426c-89eb-18be40cd5cf9][Turntide Islands]] (DM for an invite) but if there's any others y'all think I might enjoy you can invite me to, please make the offer! (Same for [[id:0eb7c8f9-b164-4d3d-9b3e-08f21cab6cf3][IRC]] or [[id:5e0b71f1-6c6d-4d59-a88e-0f799e460802][Matrix]]) or whatever other servers, I'm pretty flexible.)
+
+For my part, I continue to have my eyes on developing a [[id:de5cda39-6fa8-4f17-a11e-3c6aca2b66e8][MUD engine]]: a software for running a virtual text-based environment... which brings me to kind of a particular question.
+
+When I was younger, and explaining MUDs, I'd say "It's a text-based [[id:446eeda2-1110-40c8-bcce-eaf49d1e5003][MMORPG]]: like [[id:b02097d8-1ad7-4c8f-84b0-979b8dd16937][Everquest]], but you type commands and get text explaining what happens."
+
+Then I got older and started saying "[[id:5fa8921f-fcbf-4bc4-bf71-27e6abae0a91][World of Warcraft]]" instead of "Everquest"
+
+My question is: What's the flagship of contemporary MMORPGs, that even non-gaming folk know the name and genre of?

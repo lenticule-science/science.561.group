@@ -1,0 +1,54 @@
+<section class="vcard h-card">
+<details><summary>Naming</summary>
+  Proper Name: <span class="p-name">{{ $.Site.Params.properName }}</span>
+  {{ if (or $.Site.Params.givenName $.Site.Params.familyName) }}
+  <table>
+    <thead><tr>
+      {{ with $.Site.Params.honorificPrefix }}<th>Honorific</th>{{ end }}
+      {{ with $.Site.Params.givenName }}<th>Given Name</th>{{ end }}
+      {{ with $.Site.Params.familyName }}<th>Family Name</th>{{ end }}
+    </tr></thead>
+    <tbody><tr>
+      {{ with $.Site.Params.honorificPrefix }}<td>{{ . }}</td>{{ end }}
+      {{ with $.Site.Params.givenName }}<td>{{ . }}</td>{{ end }}
+      {{ with $.Site.Params.familyName }}<td>{{ . }}</td>{{ end }}
+    </tr></tbody>
+  </table>
+  {{ end }}
+</details>
+<details><summary>Images</summary>
+  {{ with $.Site.Params.logo }}
+    <dt>Logo</dt>
+    <dd><img style="max-width: 3em;" class="u-logo" src="{{ . }}"
+          {{ with $.Site.Params.logoAlt }}
+            alt="{{ . }}"
+          {{ end }}></dd>
+  {{ end }}
+  {{ with $.Site.Params.photo }}
+    <dt>Photo</dt>
+    <dd><img style="max-width: 4em;" class="u-photo" src="{{ . }}"
+          {{ with $.Site.Params.photoAlt }}
+            alt="{{ . }}"
+          {{ end }}></dd>
+  {{ end }}
+</details>
+{{ if (or $.Site.Params.canonicalURL $.Site.Params.phoneNumber) }}
+<details><summary>Contact Methods</summary>
+<dl>
+{{ with $.Site.Params.canonicalURL }}
+<dt>Homepage</dt><dd><a class="u-url u-uid" rel="me" href="{{ .}}">{{ . }}</a></dd>
+{{ end }}
+{{ with $.Site.Params.email }}
+<dt>Email</dt><dd><a class="u-email" href="mailto:{{ .}}">{{ . }}</a></dd>
+{{ end }}
+</dl>
+</details>
+{{ end }}
+<details class="adr">
+<summary>Physical Location</summary>
+	<span class="locality">Chapel Hill</span>,
+	<span class="region">North Carolina</span>,
+	<span class="country-name">United States of America</span>
+      </details>
+      </p>
+  </section>

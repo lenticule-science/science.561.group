@@ -1,0 +1,21 @@
+#+title: 2022W01RB: Routine Bulletin: 2021, Week 1: 1/2-1/8
+
+This is a /routine bulletin/ produced by [[https://emsenn.net][emsenn]] for the Web; syndication elsewhere is permitted.
+
+#+toc: headlines 2 local
+
+* Personal Updates
+- Tided up around the home a bunch.
+* Local Updates
+- The weather last week was in the mid 50s, trending warmer.
+* World Updates
+** Upcoming Events
+- January 3rd :: The /Poor Proles Almanac/, a podcast about collapse praxis, is hosting a kimchi-making skillshare on [[https://www.twitch.tv/poorprolesalmanac][their Twitch]].
+** This Week in History
+#+include: "../ref/timeline/index.org::ds-01-02"
+#+include: "../ref/timeline/index.org::ds-01-03"
+#+include: "../ref/timeline/index.org::ds-01-04"
+#+include: "../ref/timeline/index.org::ds-01-05"
+#+include: "../ref/timeline/index.org::ds-01-06"
+#+include: "../ref/timeline/index.org::ds-01-07"
+#+include: "../ref/timeline/index.org::ds-01-08"

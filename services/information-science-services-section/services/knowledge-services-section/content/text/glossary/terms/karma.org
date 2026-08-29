@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       72c801ce-6f54-42f5-b146-d17e847c9fbb
+:END:
+#+title: karma
+#+date: [2025-09-29 Mon 14:03]
+

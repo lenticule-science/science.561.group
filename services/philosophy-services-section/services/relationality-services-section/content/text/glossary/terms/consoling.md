@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       f2355c12-b08c-4847-8b05-d286444dd11a
+:node-relations: (([[id:428c2f61-8c85-48b8-a191-1187c2a5f2ae][extends]] . [[id:26a13bc9-d4f5-4d0c-9da0-1bbaaa45288d][comforting]]) ([[id:df612405-d995-4a30-b597-fe7c0afe0850][regreting]] . [[id:06c21fde-b05a-4118-9f15-262eb3375b31][loss]]) ([[id:e78f958d-6f12-4bd0-a324-822252c23661][feeling]] . [[id:8f50a200-920f-42b7-a816-a6858f77935a][hope]]))
+:END:
+#+title: consoling
+#+date: [2025-10-07 Tue 00:15]

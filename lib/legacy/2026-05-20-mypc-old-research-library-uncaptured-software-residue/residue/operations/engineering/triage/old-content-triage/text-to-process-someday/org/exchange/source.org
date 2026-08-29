@@ -1,0 +1,24 @@
+#+TITLE: Exchange
+#+EXPORT_FILE_NAME: exchange
+#+HUGO_BASE_DIR: ~/dev/personal-website/
+#+HUGO_SECTION: .
+#+HUGO_DRAFT: true
+* Exchange
+*/NOTE:/* Anything marked "TODO" means that I need to write a more specific definition, and that thing isn't actually up for trade yet.
+#+TOC: headlines 2 local
+** Things I Have
+*** Herbs
+**** Rosemary
+14 ounces, dried.
+**** Sweet Basil
+Growing, may can provide 1-2 ounces fresh upon request.
+**** Stevia
+Growing, may can provide quarter to half ounce fresh upon request.
+** Things I Want
+*** Local Knowledge
+I'll trade for information about any local plants
+*** Local Plants and Animals
+*/NOTE:/* At the moment I am only interested in prepared cuttings; those that had root conditioner applied immediately after harvest. Others just aren't viable enough for me to trade on. However I'll trade on information about where the plant is, so I can go get such a cutting myself.
+**** TODO Earthworms
+**** TODO Ferns
+**** TODO Mosses

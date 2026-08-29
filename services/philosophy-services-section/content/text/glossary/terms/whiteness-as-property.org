@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       9917d10c-63b0-4b0c-a918-187e8a7053e9
+:public:   true
+:author:   [[id:4c4a6840-56ea-482b-864d-14f8b15f9ba0][Cheryl I. Harris]]
+:publisher: [[id:79f2d4bf-30b7-4f44-9b63-53d5251dd00a][Harvard Law Review]]
+:publication-year: [[id:dc16e39d-f43c-4dbc-b5ad-8cac84a7b59e][1993]]
+:END:
+#+title: Whiteness as Property
+#+date: [2025-09-25 Thu 11:18]
+
+* [[id:42f66990-2e7d-4081-8f0e-7eb67b23e1fb][BibTex entry]]
+#+begin_src bibtex :canonical yes
+  @article{WhitenessAsProperty,
+  author  = {Cheryl I. Harris},
+  title   = {Whiteness as Property},
+  journal = {Harvard Law Review},
+  volume  = {106},
+  number  = {8},
+  pages   = {1707--1791},
+  year    = {1993}
+}
+#+end_src 

@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       d073bcbe-33f7-487e-ab2d-bd1562dd576a
+:END:
+#+title: emsenn's Elisp Source Code
+
+- [[id:8c38dc06-1913-49ec-a5a2-ca8e9f0de287][InfoPonEmacs]] :: My [[id:f16d1067-1b13-405b-ac9b-d5deba34d09d][Emacs configuration]]
+

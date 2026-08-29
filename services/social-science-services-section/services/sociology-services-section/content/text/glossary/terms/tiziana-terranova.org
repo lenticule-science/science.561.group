@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       23b2509f-2e7b-4108-9efa-02104fd9335d
+:public:   true
+:instantiates: [[id:6882cc6d-049d-4c68-866a-67bc57fce725][Homo sapiens]]
+:END:
+#+title: Tiziana Terranova
+#+date: [2025-09-04 Thu 20:15]
+#+index: Tiziana Terranova

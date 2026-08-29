@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       0b36d24d-3603-4535-96ad-a9fdbeed1632
+:END:
+#+title: Org-mode source block
+#+date: [2025-09-25 Thu 10:59]
+

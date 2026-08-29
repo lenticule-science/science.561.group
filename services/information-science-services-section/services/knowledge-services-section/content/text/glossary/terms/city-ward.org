@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       6c8d1513-f1b0-401b-9805-84b228ea9efd
+:END:
+#+title: city ward
+#+date: [2025-09-19 Fri 09:22]
+

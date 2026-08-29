@@ -1,0 +1,18 @@
+{
+  "equivalence_classes": [
+    [
+      "25bf90d79b1bedf69ef92750e9326b1b50a7ef52ecc0ae072b2814f4b2555e47"
+    ]
+  ],
+  "equivalence_table": {
+    "25bf90d79b1bedf69ef92750e9326b1b50a7ef52ecc0ae072b2814f4b2555e47": "25bf90d79b1bedf69ef92750e9326b1b50a7ef52ecc0ae072b2814f4b2555e47"
+  },
+  "id": "f30e9adbe827d7b372418a7c84694a99b96965981159f012c70e40cbcdf7548d",
+  "kind": "observation_equivalence",
+  "observation_ids": [
+    "25bf90d79b1bedf69ef92750e9326b1b50a7ef52ecc0ae072b2814f4b2555e47"
+  ],
+  "witness_ids": [
+    "0000000000000000000000000000000000000000000000000000000000000000"
+  ]
+}

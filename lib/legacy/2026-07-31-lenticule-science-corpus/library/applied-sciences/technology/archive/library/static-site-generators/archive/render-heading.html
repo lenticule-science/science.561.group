@@ -1,0 +1,8 @@
+{{- $level := .Level -}}
+{{- $anchor := .Anchor -}}
+<h{{ $level }} id="{{ $anchor }}">
+  {{- if and (ge $level 2) (le $level 3) -}}
+    <a href="#{{ $anchor }}" class="heading-anchor" aria-label="Link to this section">¶</a>
+  {{- end -}}
+  {{ .Text | safeHTML }}
+</h{{ $level }}>

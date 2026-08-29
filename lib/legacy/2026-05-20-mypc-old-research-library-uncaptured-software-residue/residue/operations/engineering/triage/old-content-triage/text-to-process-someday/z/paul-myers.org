@@ -1,0 +1,10 @@
+#+title: Paul Myers
+#+begin_head
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2021-01-08 Fri 19:18]
+#+roam_tags: term
+#+end_head
+
+#+name: paul-myers-definition
+*/[[file:paul-myers][Paul Myers]]/* is an associate professor of developmental and neurobiology at [[file:university-of-minnesota-morris.org][University of Minnesota Morris]]. He also writes a [[file:blog.org][blog]], [[https://freethoughtblogs.com/pharyngula/][https://freethoughtblogs.com/pharyngula/]], which I sometimes see people share posts from.

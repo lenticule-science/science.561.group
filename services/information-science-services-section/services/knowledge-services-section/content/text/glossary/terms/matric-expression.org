@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       30ed30fe-44fb-43d2-970f-a917b5ce8cde
+:END:
+#+title: matric expression
+#+date: [2025-09-04 Thu 20:27]
+

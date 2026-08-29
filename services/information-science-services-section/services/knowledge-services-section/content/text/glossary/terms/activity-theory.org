@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       4eb359be-4bd9-4f73-a1bb-4aeeaf52f869
+:END:
+#+title: activity theory
+#+date: [2025-10-05 Sun 08:17]
+

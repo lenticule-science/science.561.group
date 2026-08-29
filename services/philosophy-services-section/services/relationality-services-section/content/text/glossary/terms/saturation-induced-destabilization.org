@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       8358eb5b-49c2-441f-bc37-dd2a2eb27af7
+:END:
+#+title: saturation-induced destabilization
+#+date: [2025-08-29 Fri 19:26]
+

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       769843a6-fac2-48ba-99ef-38f1fdff2069
+:node-relations: (([[id:5aadf0ed-d381-4984-bd67-c11ec9c48777][postliberal cybernetic circuit]] . [[id:cd581eb8-8b90-4ba4-b603-bb4825c885b4][Transatlantic]]))
+:END:
+#+title: Transatlantic cybernetic circuit
+#+date: [2025-09-28 Sun 14:24]
+
+{{{list-node-relations}}}

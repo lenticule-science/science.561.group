@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       0fba2b39-a9eb-4af8-b617-779fcf887e8f
+:END:
+#+title: itinerary
+#+date: [2025-08-26 Tue 09:17]
+

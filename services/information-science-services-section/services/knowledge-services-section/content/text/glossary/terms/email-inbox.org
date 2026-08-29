@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       41555eea-e577-4059-8324-0732c1b64ed5
+:END:
+#+title: email inbox
+#+date: [2025-09-29 Mon 20:27]
+

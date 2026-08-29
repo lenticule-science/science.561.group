@@ -1,0 +1,3 @@
+{{ $scratch := newScratch }}
+{{ range $.Site.Pages }}{{ $scratch.Add "totalWordCount" .FuzzyWordCount }}{{ end }}
+{{ $scratch.Get "totalWordCount" }}

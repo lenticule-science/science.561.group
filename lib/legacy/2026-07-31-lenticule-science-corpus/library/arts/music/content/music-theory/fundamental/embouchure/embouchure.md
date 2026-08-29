@@ -1,0 +1,23 @@
+---
+title: "Embouchure"
+description: "The configuration of the player's lips, mouth, and breath-direction by which the player engages the sound-producing edge of an end-blown aerophone."
+defines: embouchure
+aliases:
+  - "lip configuration"
+  - "mouthpiece engagement"
+date-created: 2026-05-17
+---
+
+# Embouchure
+
+Embouchure is the configuration of the player's lips, jaw, mouth cavity, and breath-direction by which the player engages the sound-producing edge of an end-blown aerophone. On instruments that lack a fixed [duct-flute](./duct-flute.md) wind way — the [eagle-wing-bone-whistle](./eagle-wing-bone-whistle.md), [crane-bone-whistle](./crane-bone-whistle.md), [elk-whistle](./elk-whistle.md), and other Plains bone whistles, as well as the [grass-dance-whistle](./grass-dance-whistle.md) — the embouchure is the structure that does the work the duct mechanism would otherwise do: directing the breath against the splitting edge at the angle and pressure required to excite the [bore](./bore.md) into stable vibration.
+
+The embouchure of a Lakotaean bone whistle in standard playing is a *focused-airstream* embouchure: the lips are formed into a small oval aperture, the airstream is directed downward and forward across the bone's edge (at an angle of roughly 30–45° to the bone's long axis, varying by instrument), and the jaw position controls the airstream's distance from the edge. Small changes in any of these parameters change the instrument's response. A wider aperture produces a softer attack and a less focused tone; a tighter aperture produces a sharper attack and a clearer tone but reduces breath endurance. A steeper airstream angle drives the [fundamental](./fundamental.md) more reliably but limits the player's access to [overblowing](./overblowing.md); a shallower angle produces a thinner tone but admits cleaner [harmonic](./harmonic.md) access.
+
+The [cedar-flute](./cedar-flute.md), as a [duct-flute](./duct-flute.md), does *not* require an embouchure in the bone-whistle sense — the duct supplies the breath-direction work, and the player engages the instrument simply by closing the lips around the breath-opening and exhaling. This is part of what makes the cedar flute easier to begin playing than the bone whistles. However, even the cedar flute admits some embouchure-like fine control. Slight variations in lip pressure and breath shape change the cedar flute's tone color, attack character, and pitch stability, and skilled players exploit this control for expressive purposes. The cedar flute embouchure is not the structural element of the instrument's sound production that the bone-whistle embouchure is, but it is not absent from cedar-flute playing.
+
+The embouchure has direct consequences for the available music-theoretic content of the bone whistles. Three are most important. First, *attack control*: the embouchure determines how sharply or rolledly the tone begins, which is the principal axis of timbral-envelope variation on a single-pitch instrument (see [whistle-envelope-grammar](../learning/claims/whistle-envelope-grammar.md)). Second, *sustain shape*: the embouchure determines how the tone evolves over its duration, including whether the sustain is steady, swelling, or breath-pulsed. Third, *terminal articulation*: the embouchure determines whether the tone ends cleanly, with a fade, with a [warble](./warble.md) decay, or with a sharp cutoff. Each of these is part of the whistle's musical vocabulary, and each is controlled principally by the embouchure.
+
+The acquisition of embouchure technique is the principal pedagogical challenge for the bone-whistle aerophones, far more so than for the cedar flute. A bone whistle does not sound a stable fundamental without a competent embouchure, and the range of embouchure configurations that produce a usable tone is narrower than the range that produces *some* tone. This is part of why the bone whistles have a smaller player base than the cedar flute in living tradition, and part of why their music-theoretic content tends to be transmitted within specific ceremonial-pedagogical lineages rather than being available as a general musical study object.
+
+See also: [eagle-wing-bone-whistle](./eagle-wing-bone-whistle.md), [duct-flute](./duct-flute.md), [breath-pulse](./breath-pulse.md), [warble](./warble.md), [overblowing](./overblowing.md).

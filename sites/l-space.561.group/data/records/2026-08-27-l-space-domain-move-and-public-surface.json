@@ -1,0 +1,117 @@
+{
+  "type": "LSpaceDomainMoveAndPublicSurfaceDecision",
+  "version": 1,
+  "date": "2026-08-27",
+  "supersedes": "2026-08-21-l-space-cloud-topology.json",
+  "status": "built-tested-and-locally-served-awaiting-deploy-and-access-reconfiguration",
+  "origin": "https://l-space.561.group",
+  "retires": "https://science.561.group",
+  "decisions": [
+    {
+      "decision": "L-Space moves from apps/lenticule-science-knowledge-vault to sites/l-space.561.group.",
+      "reason": "It is the thing a domain names, not an application parameterized for a host. The estate already distinguishes apps/ (composed by something else) from sites/ (deployed at an address).",
+      "packageRenamedFrom": "@lenticule-science/knowledge-vault",
+      "packageRenamedTo": "@lenticule-science/l-space",
+      "workerScriptNameRetained": "lenticule-science-knowledge-vault",
+      "workerScriptNameReason": "Retaining the script name moves the existing Worker and its D1 binding to the new hostname. Renaming would create a second Worker and orphan the first along with its learner state."
+    },
+    {
+      "decision": "The anonymous surface is an allowlist of routes over a separate asset tree, not a conditional over the whole corpus.",
+      "reason": "L-Space compiles the entire live science forest with only path-segment filtering. A prefix rule or a per-request visibility check is how a public front door becomes a disclosure.",
+      "defaultRoomVisibility": "authenticated",
+      "publicOptIn": "visibility: public in a room's own frontmatter",
+      "publicAssetRoot": "/vault/public",
+      "publicRoomsAtDecisionTime": 0
+    }
+  ],
+  "buildEvidence": {
+    "rooms": 10361,
+    "publicRooms": 0,
+    "doors": 17752,
+    "halls": 475,
+    "stableHalls": 24,
+    "cards": 29677,
+    "warnings": 21799,
+    "release": "891120d42602cfcc9446cb0bdd280957b729a8bb33163b0047d1325f24d4f61a",
+    "releaseReproducible": "verified \u2014 two consecutive builds produced byte-identical index.json and the same release hash",
+    "tests": "31 passing",
+    "localRuntimeVerification": {
+      "method": "wrangler dev --local, the real Worker against the real compiled release",
+      "publicRoutesServed200": [
+        "/",
+        "/styles.css",
+        "/app.js",
+        "/js/srs.mjs",
+        "/js/lightcone.mjs",
+        "/js/stability.mjs",
+        "/api/v1/surface",
+        "/api/v1/public/index",
+        "/feed.xml",
+        "/feed.atom",
+        "/feed.json",
+        "/healthz"
+      ],
+      "authenticatedRoutesRefused401": [
+        "/api/v1/me",
+        "/api/v1/vault/index",
+        "/api/v1/vault/halls",
+        "/api/v1/reviews",
+        "/vault/index.json",
+        "/vault/rooms/<key>.json",
+        "/vault/public/index.json",
+        "/js/../vault/index.json",
+        "/JS/srs.mjs"
+      ],
+      "defectFound": "The front door answered `/` by requesting `/index.html`, which the static asset server canonicalises back to `/` - an infinite redirect loop. Every unit test passed through it because they mock the asset server. Fixed by passing the path through unchanged; the worker test's mock now canonicalises so the loop cannot return.",
+      "secondDefectFound": "compatibility_date had been raised to 2026-08-27, past the installed workerd's maximum of 2026-08-18, which prevented the Worker from starting locally at all. Lowered to 2026-08-18."
+    }
+  },
+  "upstreamCapabilityConnected": [
+    {
+      "capability": "Formal Concept Analysis halls",
+      "package": "@561-group/vault-compiler",
+      "priorState": "computed on every build, projected nowhere",
+      "nowServedAt": "/api/v1/vault/halls"
+    },
+    {
+      "capability": "FSRS-lite scheduling and light-cone stage",
+      "package": "@red-cup-engineering/lantern-561-group",
+      "priorState": "declared as a dependency; only recallProbability was imported, and lightcone was never imported at all",
+      "nowServedAt": "/js/srs.mjs and /js/lightcone.mjs, type-stripped from upstream at build time"
+    },
+    {
+      "capability": "deterministic release bytes and world validation",
+      "package": "@561-group/vault-compiler",
+      "priorState": "canonicalStringify and validateWorld unused",
+      "nowServedAt": "every written artifact; the world is validated before any file is written"
+    },
+    {
+      "capability": "RSS 2.0, Atom 1.0, and JSON Feed 1.1",
+      "package": "@red-cup-engineering/project-web-feed-artifacts-service",
+      "priorState": "not a dependency",
+      "nowServedAt": "/feed.xml, /feed.atom, /feed.json over the public surface"
+    }
+  ],
+  "upstreamCapabilityDeclined": [
+    {
+      "package": "@red-cup-engineering/web-theming-service",
+      "reason": "No built dist/ in-tree, requires a tsc build, carries three runtime dependencies, and its own test documents its seed colours failing WCAG AA in light mode. Deferred rather than adopted under time pressure."
+    },
+    {
+      "package": "@red-cup-engineering/project-public-site-search-artifacts-service",
+      "reason": "Indexes HTML pages. The L-Space corpus is content-addressed JSON rooms, so the shapes do not meet. Client-side search over the compiled index is the fitting tool."
+    }
+  ],
+  "operatorActionsRequired": [
+    "Create or repoint a Cloudflare Access application at l-space.561.group/* with the intended allow policy.",
+    "Confirm ACCESS_TEAM_DOMAIN and ACCESS_AUD in wrangler.template.jsonc match that application; the checked-in values are science.561.group's and hold only if the same application is repointed.",
+    "Exempt the anonymous routes from the Access policy, or Access will intercept them before the Worker runs and the public door will never open.",
+    "Remove the science.561.group DNS record and its Access application once l-space.561.group is verified."
+  ],
+  "deferredInterfaces": [
+    "Typed semantic-neighborhood and multi-projection TUFTE explorer",
+    "GitHub-backed rich CMS editor",
+    "Familiar retrieval economy policy",
+    "Per-room capability and permission model beyond the binary public/authenticated opt-in"
+  ]
+}

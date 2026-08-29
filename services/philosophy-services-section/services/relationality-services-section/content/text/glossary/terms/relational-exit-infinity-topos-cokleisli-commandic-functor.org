@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       a239f18c-005c-4d81-aece-993364eb19c3
+:END:
+#+title: Relational Exit-Infinity Topos coKleisli commandic functor
+#+date: [2025-10-15 Wed 18:36]
+

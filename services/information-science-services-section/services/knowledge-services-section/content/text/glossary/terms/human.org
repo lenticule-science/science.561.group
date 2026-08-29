@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       9a73bab3-a9ea-4e96-afdb-adbc0e15fc8d
+:END:
+#+title: human                     
+#+date: [2025-10-18 Sat 12:42]
+

@@ -1,0 +1,420 @@
+account Assets:Petty
+account Assets:emsenn0@CashApp
+account Assets:emsenn@PayPal
+account Assets:sennhauser@PayPal
+account Assets:CHK0099@NCSECU
+account Assets:SAV1208@NCSECU
+account Assets:Esther's IRA@Fidelity
+account Assets:CashApp
+account Assets:NCSECU:CHK0099
+account Liabilities:Esther
+
+P 2021/01/01 BTC $32203.64
+P 2021/01/02 BTC $33063.48
+P 2021/01/03 BTC $32030.55
+P 2021/01/04 BTC $34038.29
+P 2021/01/05 BTC $36849.86
+P 2021/01/06 BTC $39479.41
+P 2021/01/07 BTC $40636.24
+P 2021/01/08 BTC $40236.66
+P 2021/01/09 BTC $38202.08
+P 2021/01/10 BTC $35496.03
+P 2021/01/11 BTC $34058.40
+P 2021/01/12 BTC $37380.85
+P 2021/01/13 BTC $39155.58
+P 2021/01/14 BTC $36790.17
+P 2021/01/15 BTC $36025.26
+P 2021/01/16 BTC $35839.51
+P 2021/01/17 BTC $36623.04
+P 2021/01/18 BTC $35932.79
+P 2021/01/19 BTC $35501.38
+P 2021/01/20 BTC $30840.30
+P 2021/01/21 BTC $33008.02
+P 2021/01/22 BTC $32107.29
+P 2021/01/23 BTC $32283.66
+P 2021/01/24 BTC $32275.27
+P 2021/01/25 BTC $32516.52
+P 2021/01/26 BTC $30423.05
+P 2021/01/27 BTC $33443.87
+P 2021/01/28 BTC $34252.08
+P 2021/01/29 BTC $34317.82
+P 2021/01/30 BTC $33143.22
+P 2021/01/31 BTC $33535.94
+P 2021/02/01 BTC $35524.43
+P 2021/02/02 BTC $36179.39
+P 2021/02/03 BTC $37773.65
+p 2021/02/04 BTC $26847.36
+P 2021/01/01 ETH $774.90 
+P 2021/01/02 ETH $978.69
+P 2021/01/03 ETH $1043.16
+P 2021/01/04 ETH $1103.19
+P 2021/01/05 ETH $1210.59
+P 2021/01/06 ETH $1225.50
+P 2021/01/07 ETH $1216.98
+P 2021/01/08 ETH $1279.96
+P 2021/01/09 ETH $1255.72
+P 2021/01/10 ETH $1088.37
+P 2021/01/11 ETH $1050.04
+P 2021/01/12 ETH $1129.84
+P 2021/01/13 ETH $1232.11
+P 2021/01/14 ETH $1169.06
+P 2021/01/15 ETH $1228.52
+P 2021/01/16 ETH $1233.73
+P 2021/01/17 ETH $1258.31
+P 2021/01/18 ETH $1367.65
+P 2021/01/19 ETH $1377.75
+P 2021/01/20 ETH $1111.49
+P 2021/01/21 ETH $1234.56
+P 2021/01/22 ETH $1234.10
+P 2021/01/23 ETH $1392.45
+P 2021/01/24 ETH $1318.47
+P 2021/01/25 ETH $1368.22
+P 2021/01/26 ETH $1241.51
+P 2021/01/27 ETH $1330.78
+P 2021/01/28 ETH $1379.13
+P 2021/01/29 ETH $1379.35
+P 2021/01/30 ETH $1314.18
+P 2021/01/31 ETH $1374.57
+P 2021/02/01 ETH $1513.90
+P 2021/02/02 ETH $1519.52
+P 2021/02/03 ETH $1587.85
+P 2021/02/04 ETH $1629.23
+
+P 2021/01/29 AMC $13.26
+P 2021/02/01 AMC $13.30
+P 2021/01/29 GME $325.00
+P 2021/02/01 GME $224.00
+P 2021/02/02 GME $90.00
+P 2021/02/03 GME $92.41
+P 2021/02/04 GME $53.50
+P 2021/01/29 SPY $370.07
+P 2021/02/01 SPY $376.23
+P 2021/02/02 SPY $381.55
+P 2021/02/03 SPY $381.85
+P 2021/02/04 SPY $386.19
+
+
+2021/01/01 00:00:00 * Initial balances
+    Assets:CHK0099@NCSECU                    $123.04
+    Assets:SAV1208@NCSECU                     $25.84
+    Assets:Coinbase                           $81.55
+    Assets:sennhauser@PayPal                 $120.18
+    Assets:emsenn@PayPal                      $93.81
+    Assets:Petty                            $1853.25
+    Equity:Opening Balance
+
+2021/01/01 11:37:00 * New Substack subscriber
+    Income:Commission:Substack              -$182.00
+    Expenses:Finance:Pay Processing:Substack  $18.20
+    Expenses:Finance:Pay Processing:Stripe     $5.58
+    Assets:CHK0099@NCSECU
+
+2021/01/03 12:15:00 * Ko-fi gift
+    Income:Gift:Ko-fi                        -$25.00
+    Expenses:Finance:Pay Processing:Stripe     $1.03
+    Assets:CHK0099@NCSECU
+2021/01/04 * Ordered food
+    Assets:CHK0099@NCSECU                    -$10.21
+    Expenses:Food:Restaurant        
+2021/01/05 * Transfer PayPal to Checking
+    Assets:sennhauser@PayPal                 -$90.00
+    Expenses:Finance:Transfer Fee:NCSECU   $0.90
+    Assets:CHK0099@NCSECU
+
+2021/01/05 * Ko-fi gift
+    Income:Gift:Ko-fi                         -$5.00
+    Expenses:Finance:Transfer Fee:PayPal    $0.45
+    Assets:emsenn@PayPal      
+
+2021/01/05 * Delivery food
+    Expenses:Food:Restaurant                 -$35.18
+    Assets:sennhauser@PayPal
+2021/01/06 * Delivery food
+    Expenses:Food:Restaurant                  $41.00
+    Assets:CHK0099@NCSECU
+
+2021/01/06 * PayPal transfer
+    Assets:emsenn@PayPal                     -$98.36
+    Assets:sennhauser@PayPal
+
+2021/01/06 * Gift from Ecosteader
+    Income:Gift:sennhauser@PayPal            -$35.00
+    Assets:sennhauser@PayPal
+2021/01/07 * Gift
+    Income:Gift:sennhauser@PayPal              -$100
+    Assets:sennhauser@PayPal
+
+2021/01/07 * Give gift
+    Expenses:Gift                              -$110
+    Assets:sennhauser@PayPal
+
+
+
+2021/01/11 * Pay Fastmail
+    Expenses:Professional Services:Email         $10
+    Expenses:Finance:Pay Processing:NCSECU     $0.10
+    Assets:CHK0099@NCSECU
+
+2021/01/13 * Liberapay Gift
+    Income:Gift:LiberaPay                       -$60
+    Expenses:Finance:Transfer Fee:PayPal   $2.04
+    Assets:sennhauser@PayPal
+
+2021/01/15 * Give gift
+    Expenses:Gift                               $290
+    Assets:sennhauser@PayPal
+
+2021/01/15 * Delivery food
+    Expenses:Food:Restaurant                  $29.04
+    Assets:CHK0099@NCSECU
+
+2021/01/15 * VPS payment
+    Expenses:Professional Services:Web hosting  $21.18
+    Assets:CHK0099@NCSECU
+
+2021/01/15 * Buy videogame on Steam
+    Expenses:Recreation:Computer game         $13.96
+    Assets:sennhauser@PayPal
+2021/01/16 * Buy videogame on Steam
+    Expenses:Recreation:Computer game         $21.49
+    Assets:sennhauser@PayPal
+2021/01/17 * Delivery food
+    Expenses:Food:Restaurant                  $23.00
+    Assets:sennhauser@PayPal
+2021/01/18 * Liberapay gift
+    Income:Gift:Liberapay                    -$68.25
+    Assets:sennhauser@PayPal
+
+
+2021/01/21 * Delivery food
+    Expenses:Food:Restaurant                  $23.09
+    Assets:CHK0099@NCSECU
+
+2021/01/21 * Delivery food
+    Expenses:Food:Restaurant                  $28.00
+    Assets:CHK0099@NCSECU
+
+
+
+2021/01/25 * Delivery food
+    Expenses:Food:Restaurant                  $41.00
+    Assets:CHK0099@NCSECU
+
+2021/01/25 * Ko-fi gift
+    Income:Gift:Ko-fi                        -$10.00
+    Expenses:Finance:Transfer Fee:PayPal       $0.74
+    Assets:emsenn@PayPal
+
+2021/01/25 * Give gift
+    Expenses:Gift                                $90
+    Assets:sennhauser@PayPal
+
+2021/01/27 11:16:00 * Substack subscription
+    Income:Commission:Substack                -$8.00
+    Expenses:Finance:Pay Processing:Stripe     $1.33
+    Assets:CHK0099@NCSECU
+
+2021/01/29 09:30:21 * Buy AMC due to reddit hype
+    Assets:Esther's IRA@Fidelity:AMC              15 AMC @ $14.74
+    Liabilities:Esther
+
+2021/01/29 09:39:00 * Ko-fi gift
+    Income:Gift:Ko-fi                        -$11.00
+    Expenses:Finance:Pay Processing:Stripe     $0.62
+    Assets:CHK0099@NCSECU
+
+2021/01/29 10:03:00 * Buy AMC to lower cost basis
+    Assets:Esther's IRA@Fidelity:AMC               8 AMC @ $12.8975
+    Liabilities:Esther
+
+2021/01/29 21:46:00 * Transfer to Cashapp
+    Assets:CHK0099@NCSECU                       -$25
+    Assets:emsenn0@CashApp
+
+2021/01/29 21:52:00 * Buy BTC with CashApp
+    Assets:emsenn0@CashApp                      -$25
+    Assets:emsenn0@CashApp:BTC            0.00071912 BTC @ $33972.08
+    Expenses:Finance:Transfer Fee:CashApp:Crypto  $0.57
+
+2021/01/29 * SAV1208@NCSECU Interest Payment
+    Assets:SAV1208@NCSECU                      $0.01
+    Income:Interest:SAV1208@NCSECU
+
+2021/01/29 * CHK0099@NCSECU Interest Payment
+    Expenses:Finance:Banking Fee:NCSECU        $1.00
+    Income:Interest                           -$0.02
+    Assets:CHK0099@NCSECU
+
+2021/01/29 * Month of Ko-fi Gold
+    Expenses:Professional Services:Ko-fi Gold  $6.00
+    Assets:sennhauser@PayPal
+2021/01/30 18:44:00 * Gift from Jeremy Friesen
+    Income:Gift:sennhauser@PayPal              -$300
+    Assets:sennhauser@PayPal
+
+2021/01/30 20:44:00 Loan to Jay
+    Loan:Jay                                     $50
+    Assets:Petty
+2021/01/31 11:01:00 * Ko-fi gift
+    Income:Gift:Ko-fi                         -$6.00
+    Expenses:Finance:Pay Processing:Stripe     $0.47
+    Assets:CHK0099@NCSECU
+
+2021/01/31 20:25:00 Clear out Coinbase
+    Assets:Coinbase                          -$81.55
+    Assets:CHK0099@NCSECU
+2021/02/01 07:01:32 Pre-market buy on GME
+    Assets:Esther's IRA@Fidelity:GME               3 GME @ $320.00
+    Liabilities:Esther
+
+2021/02/01 09:15:00 Buy BTC on CashApp
+    Assets:emsenn0@CashApp                      -$25
+    Assets:emsenn0@CashApp:BTC            0.00073095 BTC @ $33422.26
+    Expenses:Finance:Transfer Fee:CashApp:Crypto  $0.57
+
+2021/02/01 09:33:31 Opening sell off AMC
+    Assets:Esther's IRA@Fidelity:AMC             -23 AMC @ $15.92
+    Liabilities:Esther
+
+2021/02/01 09:34:16 Opening buy on GME
+    Assets:Esther's IRA@Fidelity:GME               1 GME @ $289.98
+    Liabilities:Esther
+
+2021/02/01 10:03:07 Dip buy on GME
+    Assets:Esther's IRA@Fidelity:GME               1 GME @ $276.51
+    Liabilities:Esther
+
+2021/02/01 10:03:07 Dip buy on GME
+    Assets:Esther's IRA@Fidelity:GME               1 GME @ $239.65
+    Liabilities:Esther
+
+2021/02/01 11:04:00 Pay for Vultr VPS
+    Expenses:Professional Services:VPS         $9.22
+    Assets:CHK0099@NCSECU
+
+2021/02/01 15:57:27 Pre-closing surge buy on GME
+    Assets:Esther's IRA@Fidelity:GME           0.223 GME @ $223.30
+    Liabilities:Esther
+
+2021/02/01 15:57:27 Post-closing surge sell off GME
+    Assets:Esther's IRA@Fidelity:GME          -0.223 GME @ $226.01
+    Liabilities:Esther
+
+2021/02/01 16:53:00 Gift to Quarters-guy
+    Assets:Petty                                 -$4
+    Expenses:Gift
+
+2021/02/01 17:38:10 After-market dip buy on GME
+    Assets:Esther's IRA@Fidelity:GME               1 GME @ $188.99
+    Liabilities:Esther
+
+2021/02/01 17:44:00 Patreon transfer
+    Income:Gift:Patreon                     -$176.36
+    Assets:sennhauser@PayPal
+
+2021/02/01 21:46:00 Donation to CashApp
+    Assets:emsenn0@CashApp                       $25
+    Income:Gift
+
+2021/02/01 22:07:04 PayPal donation
+    Income:Gift:Liberapay                       -$30
+    Expenses:Finance:Transfer Fee:PayPal   $1.27
+    Assets:sennhauser@PayPal
+
+2021/02/01 * Pay for emsenn.net domain & hosting
+    Expenses:Professional Services:Web hosting   $40
+    Assets:CHK0099@NCSECU
+2021/02/02 07:30:57 Buy pre-market dip on GME
+    Assets:Esther's IRA@Fidelity:GME               1 GME
+    Liabilities:Esther                      -$160.39
+
+2021/02/02 09:09:53 Buy pre-market dip on GME
+    Assets:Esther's IRA@Fidelity:GME               1 GME
+    Liabilities:Esther                       -$133.00
+
+2021/02/01 16:53:00 Gift to Quarters-guy
+   Assets:Petty                                 -$4
+   Expenses:Gift
+
+2021/02/02 18:51:00 Sherose
+    Assets:Petty                                $700
+    Income:Gift
+
+2021/02/02 22:29:00 Buy some Ethereum
+    Expenses:Finance:Forex:PayPal              $0.50
+    Assets:sennhauser@PayPal:ETH       0.01293543 ETH @@ $20.00
+    Assets:sennhauser@PayPal
+
+2021/02/02 22:37:00 Buy some Ethereum
+    Expenses:Finance:Forex:PayPal              $1.96
+    Assets:sennhauser@PayPal:ETH   0.05489882 ETH @@ $85.00
+    Assets:sennhauser@PayPal    
+
+2021/02/02 22:37:00 Buy some Ethereum
+    Expenses:Finance:Forex:PayPal              $1.84
+    Assets:sennhauser@PayPal:ETH   0.05135318 ETH @@ $80.00
+    Assets:sennhauser@PayPal    
+
+
+2021/02/02 * Pay for VPS
+    Expenses:Professional Services:Web hosting  $9.22
+    Assets:CHK0099@NCSECU
+2021/02/03 12:16:00 * Ko-fi gift
+    Income:Gift:Ko-fi                        -$25.00
+    Expenses:Finance:Pay Processing:Stripe     $1.03
+    Assets:CHK0099@NCSECU
+
+2021/02/03 14:14:00 * Buy SPY
+    Assets:Esther's IRA@Fidelity:SPY           0.052 SPY @ $382.73
+    Liabilities:Esther
+
+2021/02/03 17:01:00 * Buy BTC
+    Expenses:Finance:Forex:PayPal              $2.30
+    Assets:sennhauser@PayPal:BTC          0.00260517 BTC @@ $100
+    Assets:sennhauser@PayPal
+
+2021/02/03 19:01:00 * Buy BTC
+    Expenses:Finance:Forex:PayPal              $1.15
+    Assets:sennhauser@PayPal:BTC          0.00131023 BTC @@ $50
+    Assets:sennhauser@PayPal
+2021/02/04 09:44:00 * Buy more Bitcoin
+    Expenses:Finance:Forex:PayPal              $1.15
+    Assets:sennhauser@PayPal:BTC          0.00135163 BTC @@ $50
+    Assets:sennhauser@PayPal
+
+2021/02/04 12:02:00 * Gift to Quarters-guy
+    Expenses:Gift                                 $5
+    Assets:Petty
+
+2021/02/04 14:00:00 * Gift of food from settlerfolk
+    Income:Gift                                  -94lb @ $2
+    Assets:Inventory:Larder:beans:split yellow peas
+
+2021/02/04 14:00:00 * Gift of food from settlerfolk
+    Income:Gift                                  -24lb @ $2
+    Assets:Inventory:Larder:beans:split green peas
+
+2021/02/04 14:00:00 * Gift of food from settlerfolk
+    Income:Gift                                  -4lb @ $2
+    Assets:Inventory:Larder:beans:lentils
+
+2021/02/04 14:00:00 * Gift of food from settlerfolk
+    Income:Gift                                  -20lb @ $2
+    Assets:Inventory:Larder:beans:garbonzo
+
+2021/02/05 07:03:31 Ko-fi gift
+    Income:Gift:Ko-fi                            -$5
+    Expenses:Finance:Transfer Fee:PayPal   $0.45
+    Assets:emsenn@PayPal
+
+2021/02/05 12:02:00 * Gift to Quarters-guy
+    Expenses:Gift                                 $4
+    Assets:Petty
+
+2021/02/05 09:52:23 * Buy SIMO
+    Assets:Esther's IRA@Fidelity:SIMO              1 SIMO @ $57
+    Liabilities:Esther
+
+2021/02/05 09:53:23 * Buy SPY
+    Assets:Esther's IRA@Fidelity:SPY               0.257 SPY @ $387.72
+    Liabilities:Esther

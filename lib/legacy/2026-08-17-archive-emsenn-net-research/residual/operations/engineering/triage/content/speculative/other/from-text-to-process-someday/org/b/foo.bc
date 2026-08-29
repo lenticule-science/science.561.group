@@ -1,0 +1,10 @@
+*** Test
+:LOGBOOK:
+CLOCK: [2021-10-16 Sat 15:47]--[2021-10-16 Sat 15:47] =>  0:00
+CLOCK: [2021-10-16 Sat 15:47]--[2021-10-16 Sat 15:47] =>  0:00
+:END:
+2021-10-15 open Assets:Blah
+2021-10-15 open Equity:OpeningBalance
+2021-10-16 * "Blah!"
+  Assets:Blah 10 USD
+  Equity:OpeningBalance

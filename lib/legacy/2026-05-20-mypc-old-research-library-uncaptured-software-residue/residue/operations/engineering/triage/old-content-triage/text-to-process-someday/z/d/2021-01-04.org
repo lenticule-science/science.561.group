@@ -1,0 +1,45 @@
+#+title: 2021-01-04
+#+ghe_schema: daily-record-0.1.1
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2021-01-04 Mon 10:38]
+#+roam_tags: daily-record
+
+#+name: definition
+This is some of what I (emsenn) experienced and wrote on on [2021-01-04 Mon].
+
+#+toc: headlines 2
+
+* News log
+** Instagram may be deleting Indigenous beaders' accounts
+   :LOGBOOK:
+   - Note taken on [2021-01-06 Wed 13:20] \\
+     [[file:../instagram.org][Instagram]] is apparently deleting the accounts of several users who may have violated the site's guidelines. However, the users claim to have only done what is common (e.g. giveaways) and point to other accounts which continue to perform such actions without restriction or deletion.
+   :END:
+   - Source :: https://www.reddit.com/r/IndianCountry/comments/kqc5aj/instagram_deleting_beaders/
+** Movement grows to recognize traditional Indigenous place names
+   :LOGBOOK:
+   - Note taken on [2021-01-06 Wed 13:21] \\
+     A look at the growing trend to acknowledge the [[file:../traditional_territory.org][traditional territory]] of a place, focused on the [[file:../indigenous.org][Indigenous]] [[file:../person.org][people]] who live(d) there, and their names for the places.
+   :END:
+   - Source :: https://theostracon.net/bulbancha-indigenous-naming-jeffery-darensbourg/
+** Georgene Louis announces candidacy to replace Deb Haaland
+   :LOGBOOK:
+   - Note taken on [2021-01-06 Wed 13:24] \\
+     [[file:../georgene_louis.org][Georgene Louis]] of [[file:../acoma_pueblo.org][Acoma Pueblo]], Representative  of the [[file:../26th_district_of_new_mexico.org][26th District of New Mexico]], has announced her candidacy as a [[file:../democratic_party.org][Democrat]] to run as the representative for the state's [[file:../1st_congressional_district_of_new_mexico.org][1st Congressional District]], should [[file:../deb_haaland.org][Deb Haaland]] be confirmed by the [[file:../senate.org][Senate]] as the next [[file:../secretary_of_the_interior.org][Secretary of the Interior]].
+   :END:
+   - Source :: https://indiancountrytoday.com/news/georgene-louis-continuing-deb-haaland-s-momentum-qbsW04ZDxEqFjVsk-iYpSQ
+** Judge throws out case against law enforcement for excess force at Standing Rock protests
+   - Source :: https://bismarcktribune.com/news/local/tribal-news/judge-dismisses-lawsuit-alleging-excessive-force-rights-violation-at-dapl-protest-site/article_f54be16b-ee20-5a69-bd8a-2c8b8f7a865e.html
+** Collecting opinions on anthropology's "Grandmother Hypothesis"
+   :LOGBOOK:
+   - Note taken on [2021-01-06 Wed 13:09] \\
+     Writing for [[file:../smithsonian_magazine.org][Smithsonian Magazine]], [[file:../elizabeth_landau.org][Elizabeth Landau]] has collected some contemporary opinions on the [[file:../grandmother_hypothesis.org][Grandmother Hypothesis]], "the idea that [[[file:../human.org][human]]] [[file:../grandmother.org][grandmothers]] step in to feed young [[file:../child.org][children]] and perform other motherly duties so that [[file:../mother.org][mothers]] can focus their own energy and resources on having more chidlren at shorter intervals."
+   :END:
+   - Source :: https://www.smithsonianmag.com/science-nature/how-much-did-grandmothers-influence-human-evolution-180976665/
+** India targets Indigenous rights activists as "terrorists"
+   :LOGBOOK:
+   - Note taken on [2021-01-06 Wed 12:07] \\
+     In [[file:../india.org][India]], federal authorities are using new anti-[[file:../terrorism.org][terrorism]] laws to target [[file:../political_dissident.org][political dissidents]], especially [[file:../adivasis.org][Adivasis]] ([[file:../indigenous.org][Indigenous]] [[file:../person.org][people]]) and [[file:../dalits.org][Dalits]] (members of [[file:../oppression.org][oppressed]] [[file:../caste.org][castes]]).
+   :END:
+   - Source :: https://www.scientificamerican.com/article/india-is-targeting-defenders-of-indigenous-rights-as-terrorists/

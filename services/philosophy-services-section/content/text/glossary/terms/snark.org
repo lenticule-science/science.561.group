@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       563cecb4-a9ac-42b1-88a0-2501ce523a39
+:END:
+#+title: snark
+#+date: [2025-09-04 Thu 20:02]
+

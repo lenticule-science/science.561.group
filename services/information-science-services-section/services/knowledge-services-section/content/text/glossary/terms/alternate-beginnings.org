@@ -1,0 +1,29 @@
+#+SETUPFILE: ../default-setup.inc
+#+TITLE: Alternate Beginnings
+#+EXPORT_FILE_NAME: ../../pub/poems/alternate-beginnings
+#+TOC: headlines 1 local
+* Introduction
+#+INCLUDE: "../../plates.inc::draft"
+#+INCLUDE: "../../plates.inc::default-eli"
+* Alternate Beginnings
+#+BEGIN_VERSE
+(In The Beginning there first was the word
+& the Poet is a Wizard when magic's absurd
+AND in The Beginning there was a dream that
+everything you see might be what it seems)
+OR In the beginning, God was singular
+and incomplete.  Not beautiful or stoned,
+but omega come first.  wrong.
+#+END_VERSE
+* Supplements
+#+TOC: headlines local 1
+** Contribute
+   :PROPERTIES:
+   :CUSTOM_ID: supplements-contribute
+   :END:
+#+INCLUDE: "../../plates.inc::personal-contribute"
+** License
+   :PROPERTIES:
+   :CUSTOM_ID: supplements-license
+   :END:
+#+INCLUDE: "../../plates.inc::mit-license"

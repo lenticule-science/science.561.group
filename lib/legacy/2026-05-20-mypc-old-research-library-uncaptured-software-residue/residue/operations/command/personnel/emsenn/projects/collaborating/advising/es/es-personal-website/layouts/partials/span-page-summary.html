@@ -1,0 +1,5 @@
+{{ with .Plain }}
+  <span class="page-summary">
+    {{ . | safeHTML | truncate 80 }}
+  </span>
+{{ end }}

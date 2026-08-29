@@ -1,0 +1,25 @@
+#+title: colonization
+#+begin_head
+#+ghe_schema: term-0.1.3
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-26 Sat 12:09]
+#+roam_tags: term
+#+end_head
+
+#+name: definition
+*/[[file:colonization.org][Colonization]]/* is the act of establishing [[file:colonialism.org][colonialism]] as a social order in an area.
+#+toc: headlines 2
+* Introduction
+* colonization
+* Supplements
+** Record history
+   :PROPERTIES:
+   :CUSTOM_ID: record-history
+   :END:
+   :LOGBOOK:
+   - Note taken on [2020-12-26 Sat 12:09] \\
+      Created from [[file:~/org/s/p/shakori_eno.org::definition][definition]]
+
+      
+   :END:

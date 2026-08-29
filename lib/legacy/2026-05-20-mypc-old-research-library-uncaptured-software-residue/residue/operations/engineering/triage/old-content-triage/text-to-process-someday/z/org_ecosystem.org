@@ -1,0 +1,6 @@
+#+title: Org ecosystem
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-19 Sat 13:48]
+#+roam_tags: term
+The */Org ecosystem/* is the total available [[file:software.org][software]] that in some way extends the [[file:org_mode_application.org][Org-mode application]].

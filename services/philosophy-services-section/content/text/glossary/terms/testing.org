@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       eead71f0-0228-4da1-8c82-5591dfbeed1f
+:END:
+#+title: testing
+#+date: [2025-08-31 Sun 08:12]
+

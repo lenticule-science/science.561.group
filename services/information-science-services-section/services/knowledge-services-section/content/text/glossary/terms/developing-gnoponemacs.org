@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       7185c333-a173-42d1-bcc0-aad983e8c8b9
+:END:
+#+title: developing GnoponEmacs
+#+date: [2025-09-19 Fri 22:44]
+

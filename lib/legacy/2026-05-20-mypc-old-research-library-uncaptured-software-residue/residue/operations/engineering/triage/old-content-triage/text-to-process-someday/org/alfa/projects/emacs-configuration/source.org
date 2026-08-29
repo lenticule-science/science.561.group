@@ -1,0 +1,493 @@
+#+TITLE: emsenn's Emacs Configuration
+#+EXPORT_FILE_NAME: ./emacs-configuration
+#+TOC: headlines 5
+* Introduction
+* Emacs Configuration
+  :PROPERTIES:
+  :header-args: :tangle ./init.el :padlines no
+  :END:
+** Package Management Configuration
+#+begin_src elisp
+(package-initialize)
+(require 'package)
+(add-to-list 'package-archives
+	     '("melpa" . "http://melpa.org/packages/") t)
+(add-to-list 'package-archives '("org" . "https://orgmode.org/elpa/") t)
+(eval-when-compile
+  (add-to-list 'load-path "~/.emacs.d/elpa")
+  (add-to-list 'load-path "~/.emacs.d/git")
+  (require 'use-package))
+(use-package auto-package-update
+	     :ensure t
+	     :config
+	     (setq auto-package-update-delete-old-versions t)
+	     (setq auto-package-update-hide-results t)
+	     (auto-package-update-maybe))
+#+end_src
+** Client Configuration
+fdafdsf
+#+begin_src elisp
+  (setq auto-save-mode nil)
+  (setq backup-directory-alist
+        `(("." . ,(concat user-emacs-directory "backups"))))
+  (setq inhibit-startup-message t)
+  (setq initial-scratch-message nil)
+  (setq initial-major-mode 'org-mode)
+  (setq ring-bell-function 'ignore)
+  (set-face-attribute 'default nil :family "Fira Code" :height 124)
+  (set-face-attribute 'variable-pitch nil :family "Inria Serif")
+  (set-face-attribute 'fixed-pitch nil :family "Fira Code")
+  (setq-default line-spacing 1)
+  ;; (menu-bar-mode -1)
+  ;; (tool-bar-mode -1)
+  (setq show-paren-delay 0)
+  (show-paren-mode 1)
+  (setq echo-keystrokes 0.1)
+  (setq fill-column 68)
+  (setq mouse-wheel-scroll-amount '(1 ((shift) .1)))
+  (setq line-number-mode t)
+  (setq column-number-mode t)
+  (setq-default truncate-lines t)
+  (setq sentence-end-double-space nil)
+  (add-hook 'before-save-hook 'delete-trailing-whitespace)
+  (setenv "PATH" (concat (getenv "PATH") ":~/.local/bin"))
+  (defadvice load-theme (before theme-dont-propagate activate)
+    (mapc #'disable-theme custom-enabled-themes))
+#+end_src
+** Packages
+*** Pretty Mode
+#+begin_src elisp
+  (use-package pretty-mode
+    :ensure pretty-mode
+    :config
+    (progn
+      (global-pretty-mode t)
+      (global-prettify-symbols-mode 1)
+      (pretty-deactivate-groups
+       '(:equality :ordering :order-double :ordering-triple :arrows
+                   :arrows-twoheaded :punctuation :logic :sets))
+      (pretty-activate-groups
+       '(:sub-and-superscripts :greek :arithmetic-nary))))
+#+end_src
+*** Poet Theme
+#+begin_src elisp
+(use-package poet-theme
+	   :ensure t
+	   :after org
+	   :config
+	   (load-theme 'poet-monochrome t))
+#+end_src
+*** HTMLize
+#+begin_src elisp
+(use-package htmlize
+	     :ensure t)
+#+end_src
+*** Magit
+#+begin_src elisp
+(use-package magit
+	     :ensure t)
+#+end_src
+*** Ob-Crystal
+#+begin_src elisp
+(use-package ob-crystal
+	     :ensure t)
+#+end_src
+*** Org-mode
+#+begin_src elisp
+(use-package org
+  :mode (("\\.org$" . org-mode) ("\\.inc$" . org-mode))
+  :ensure org-plus-contrib
+#+end_src
+**** Keybindings
+#+begin_src elisp
+  :bind (("C-c l" . org-store-link)
+	 ("C-c c" . org-capture)
+	 ("C-c a" . org-agenda)
+	 ("C-c b" . org-iswitchb)
+	 ("C-c C-w" . org-refile)
+	 ("C-c j" . org-clock-goto)
+	 ("C-c C-x C-o" . org-clock-out))
+#+end_src
+**** Agenda Configuration
+#+begin_src elisp
+  :config
+  (progn
+    (setq org-log-done t)
+    (setq org-log-into-drawer "LOGBOOK")
+    (setq org-image-actual-width nil)
+    (setq org-hide-emphasis-markers t)
+    (setq org-startup-indented t)
+    (setq org-ellipsis "→")
+    (set-face-attribute 'org-level-1 nil :height 240 :family "Sans")
+    (set-face-attribute 'org-level-2 nil :height 200 :family "Sans")
+    (set-face-attribute 'org-level-3 nil :height 180 :family "Sans")
+    (set-face-attribute 'org-level-4 nil :height 160 :family "Sans")
+    (set-face-attribute 'org-level-5 nil :height 160 :family "Sans")
+    (set-face-attribute 'org-level-6 nil :height 140 :family "Sans")
+    (set-face-attribute 'org-level-7 nil :height 140 :family "Sans")
+    (set-face-attribute 'org-level-8 nil :height 140 :family "Sans")
+    (set-face-attribute 'org-document-title nil :height 320 :family "Sans")
+    (add-hook 'text-mode-hook
+              (lambda ()
+                (variable-pitch-mode 1)))
+    (add-hook 'org-mode-hook
+    'visual-line-mode)
+    (setq org-agenda-custom-commands
+          '(("A" "Agenda and TODO"
+             ((agenda "" )
+              (alltodo "" )))))
+    (setq org-agenda-todo-ignore-scheduled 'all)
+    (setq org-agenda-files '("~/org/personal/src/index.org"))
+#+end_src
+**** Link Abbreviations
+#+begin_src elisp
+    (setq org-link-abbrev-alist '(
+                                  ("ems-domestic-manual" . "file:~/org/src/domestic-manual.org::#%s")))
+#+end_src
+**** Export Settings
+#+begin_src elisp
+    (setq org-export-allow-bind-keywords t)
+    (setq org-export-with-sub-superscripts nil)
+    (setq org-export-with-special-strings nil)
+    (setq org-export-with-smart-quotes nil)
+    (setq org-export-with-section-numbers nil)
+    (setq org-export-with-toc nil)
+    (setq org-export-with-todo-keywords nil)
+    (setq org-export-headline-levels 10)
+    (setq org-html-style-default nil)
+#+end_src
+**** TODO Settings
+#+begin_src elisp
+    (setq org-todo-keywords
+    '((sequence "DRAFT" "EDIT" "|" "DONE")
+      (sequence "|" "CANCELED")))
+#+end_src
+**** Capture Templates
+#+begin_src elisp
+    (setq org-capture-templates
+	  '(("s" "New Source File" plain (file "~/org/triage/source-capture.org")
+	     "#+SETUPFILE: ~/org/templates/setupfile0.org\n#+TITLE: %^{TITLE}\n#+EXPORT_FILE_NAME: ../pub/%^{SLUG}\n* Introduction\n%?\n#+INCLUDE: \"./eli.org::#draft\"\n#+INCLUDE: \"./eli.org::#eli\"\n* %\\1\n  :PROPERTIES:\n  :CUSTOM_ID: contents\n  :END:\n* Supplements\n#+INCLUDE: \"./mit-license.org::#license\"")
+	    ("l" "New Log Entry" entry (file+olp+datetime "~/org/personal.org" ["Logs"])
+	     ""
+	     )
+	    ("a" "Activity" item (file+datetree "~/org/projects/personal-data/activities.org")
+	     "%U :: %?")
+            ("b" "Bibliography" entry (file+olp "~/org/projects/emacs-configuration/source.org" "Emacs Configuration" "Packages" "Org-mode" "Macros" "Bibliography Macros")
+             "* %^{TITLE}\n#+begin_src elisp\n(\"%^{SLUG}-title\" . \"%\\1\")\n(\"%\\2-author\" . \"%^{AUTHOR}\")\n(\"%\\2-source\" . \"%^{SOURCE}\")\n(\"%\\2-opinion\" . \"%^{OPINION}\")\n#+end_src")))
+#+end_src
+**** Projects
+#+begin_src elisp
+  (setq org-publish-project-alist
+        '(
+          ("state-of-iranian-communication"
+           :base-directory "~/org/projects/state-of-iranian-communication/src/"
+           :base-extension "org"
+           :publishing-directory "~/org/projects/state-of-iranian-communication/"
+           :publishing-function (org-html-publish-to-html org-latex-export-to-pdf org-org-export-to-org)
+           )
+          ("personal-dictionary"
+           :base-directory "~/org/projects/personal-dictionary/"
+           :base-extension ""
+           :include "source.org"
+           :makeindex t
+           :publishing-directory "~/org/projects/personal-dictionary/"
+           :publishing-function (org-html-publish-to-html)
+           )
+          ("30-days-of-world-building-summer-2019"
+           :base-directory "~/org/projects/30-days-of-world-building-summer-2019/src/"
+           :base-extension "org"
+           :publishing-directory "~/org/projects/30-days-of-world-building-summer-2019/"
+           :publishing-function org-html-publish-to-html)
+          ))
+#+end_src
+**** Macros
+#+begin_src elisp
+    (setq org-export-global-macros
+	  '(("ref" . "{{{define($1)}}} {{{source($1)}}}")
+	    ("define" . "{{{$1-definition}}}")
+	    ("source" . "{{{$1-source}}}")
+	    ("contact" . "{{{$1-contact}}}")
+	    ("read" . "Read \"{{{$1-title}}},\" by {{{$1-author}}}. {{{source($1)}}} {{{$1-opinion}}}")
+	    ("source-link" . "See [[$1][$1]]")
+	    ("hashtag-link" . " or #$1")
+#+end_src
+***** Document Macros
+#+begin_src elisp
+            ("document-type" . "document")
+	    ("doc" . "{{{document-type}}}")
+	    ("document-eli" . "{{{document-eli-$1}}}")
+	    ("document-eli-default" . "This {{{document-type}}} was created by me, emsenn, in the United States. To the extent possible under law, I have waived all copyright and related or neighboring rights to this document. This document was created for the benefit of the public. If you're viewing it on a remote server, you're encouraged to download your own copy. To learn how you can support me, see [[https://emsenn.net/donate][https://emsenn.net/donate]].")
+	    ("document-eli-default-with-elisp" . "This {{{document-type}}} was created by me, emsenn, in the United States. With the exception of /Emacs Lisp/ code contained within, to the extent possible under law, I have waived all copyright and related or neighboring rights to this {{{document-type}}}. This {{{document-type}}} was created for the benefit of the public. Sections of this {{{document-type}}} written in /Emacs Lisp/ (\"these sections\") are free software: you can redistribute them freely and/or modify them under the terms of version 3 of the /GNU General Public License/ as published by the /Free Software Foundation/. These sections are distributed in the hope that they will be useful, but *without any warranty*; without even the implied warranty of *merchantability* or *fitness for a particular purpose*. See the /GNU General Public License/ for more details. You should have received a copy of the /GNU General Public License/ with this {{{document-type}}} under the [[#gnu-gpl][\"GNU General Public License\"]] section under the [[#supplements][\"Supplements\"]] section. If not, see [[http://www.gnu.org/licenses/][http://www.gnu.org/licenses/]].")
+	    ("document-is-draft" . "This {{{document-type}}} is a /draft/: it is unfinished and that should be considered when reading it. Special attention should be paid to text marked DRAFT, EDIT, or TK.")
+	    ("document-has-project" . "This {{{document-type}}} is part of a larger project, {{{project-name}}}. {{{project-logline}}} {{{project-brief}}} For more information, see {{{project-homepage}}}")
+	    ("document-brief" . "\"{{{title}}}\" is a {{{document-type}}} created by {{{author}}}.")
+	    ("document-implements-literate-programming" . "This {{{document-type}}} implements its content using the /literate programming/ paradigm. The \"software\" being presented is included as sections of code, within a longer piece of prose which explains the codes' purpose and usage. {{{source(literate-programming)}}}")
+	    ("document-is-software-prototype" . "This {{{document-type}}} is about a software prototype. It is likely to be inaccurate.")
+	    ("document-is-prototype" . "This {{{document-type}}} is about a prototype $1. It is likely to be incomplete, self-contradicting, and flawed.")
+	    ("document-can-tangle" . "This /Org-mode/ source file contains code which can be extracted. See [[https://orgmode.org/manual/Working-with-source-code.html][https://orgmode.org/manual/Working-with-source-code.html]].")
+#+end_src
+***** Project Macros
+#+begin_src elisp
+	    ("project-brief" . "{{{project-name}}} is a {{{project-type}}} in {{{project-development-stage}}} being created by {{{project-author}}}.")
+	    ("project-eli" . "This {{{project-type}}} is maintained by {{{author}}} and is released for the benefit of the public under the terms in the {{{project-license-link(\"Project License\" section)}}}. It was made possible with {{{project-support-link(support)}}} from humans like you. Thank you. Please direct comments to the {{{author}}} through their {{{project-public-inbox}}} or, if appropriate, their {{{project-private-inbox}}}.")
+#+end_src
+***** Dictionary Macros
+#+begin_src elisp
+  ("activitypub-definition" . "A decentralized communication protocol for uploading, broadcasting, and subscribing to content.")
+  ("activitypub-source" . "See {{{source-link(https://activitypub.rocks/)}}} or #ActivityPub.")
+  ("bitbucket-definition" . "$1")
+  ("bitbucket-source" . "$1")
+  ("broadcast-definition" . "To send a piece of information to /subscribers/ or into a public area.")
+  ("broadcast-source" . "$1")
+  ("brutalism-definition" . "A style exaggerating the pragmatic functionality present in modernist design.")
+  ("brutalism-source" . "{{{source-link(https://en.wikipedia.org/wiki/Brutalist_architecture)}}}")
+  ("brutstrap-css-definition" . "$1")
+  ("brutstrap-css-source" . "$1")
+  ("bryant-stephanie-definition" . "Creator of the /30 Days of World Building/ challenge, and an Agile and SCRUM coach.")
+  ("bryant-stephanie-source" . "{{{source-link(http://www.mortaine.com/)}}}")
+  ("dictionary-definition" . "A pairing of keys to the values that define them.")
+  ("css-definition" . "$1")
+  ("css-source" . "$1")
+  ("domain-name-definition" . "A string (group of letters) defining the name of an area of the Internet.")
+  ("domain-name-source" . "See {{{source-link(https://en.wikipedia.org/wiki/Domain_name)}}}.")
+  ("elisp-definition" . "A dialect of the /Lisp/ programming language used by /Emacs/.")
+  ("elisp-source" . "{{{source-link(https://en.wikipedia.org/wiki/Emacs_Lisp)}}}")
+  ("emacs-definition" . "A software, a programming interpretter focused around being a text-editor.")
+  ("emacs-source" . "{{{source-link(https://www.gnu.org/software/emacs/)}}} or #Emacs.")
+  ("emacs-buffer-definition" . "An /Emacs/ object for holding a quantity of text.")
+  ("emacs-buffer-source" . "{{{source-link(https://www.gnu.org/software/emacs/manual/html_node/emacs/Buffers.html)}}}")
+  ("emacs-configuration-personal-definition" . "Not available.")
+  ("emacs-configuration-personal-source" . "$1")
+  ("emacs-package-definition" . "A collection of /Emacs Lisp/ declarations that add additional features.")
+  ("emacs-package-source" . "{{{source-link(https://www.gnu.org/software/emacs/manual/html_node/emacs/Packages.html)}}}")
+  ("email-definition" . "A collection of protocols for exchanging text messages between clients on servers.")
+  ("email-source" . "See {{{source-link(https://en.wikipedia.org/wiki/Email)}}}.")
+  ("email-list-definition" . "$1")
+  ("email-list-source" . "$1")
+  ("emsenn-definition" . "A writer and developer focused on how words affect our thinking.")
+  ("emsenn-source" . "{{{source-link(https://emsenn.net/)}}}")
+  ("emsenn-contact" . "Send an email to [[mailto:emsenn@emsenn.net][emsenn.net]].")
+  ("emsenn-net-definition" . "A web service where I broadcast my writing.")
+  ("emsenn-net-source" . "See {{{source-link(https://emsenn.net)}}}.")
+  ("fediverse-definition" . "The conglomeration of federated communication platforms, or its culture.")
+  ("fediverse-source" . "See {{{source-link(https://en.wikipedia.org/wiki/Fediverse)}}} or #Fediverse.")
+  ("gfm-definition" . "A specialization of the /Markdown/ formatting for styling text documents.")
+  ("gfm-source" . "See {{{source-link(https://github.github.com/gfm/)}}}.")
+  ("git-definition" . "A software tool for tracking and coordinating changes in computer files.")
+  ("git-source" . "{{{source-link(https://git-scm.com/)}}}{{{hashtag-link(Git)}}}.")
+  ("git-forge-definition" . "A web service providing an interface to and extending a /Git/ repository.")
+  ("git-forge-source" . "$1")
+  ("git-repository-definition" . "$1")
+  ("git-repository-source" . "$1")
+  ("git-submodule-definition" . "$1")
+  ("git-submodule-source" . "$1")
+  ("github-definition" . "$1")
+  ("github-source" . "$1")
+  ("gitlab-definition" . "$1")
+  ("gitlab-source" . "$1")
+  ("golang-definition" . "A computer programming language.")
+  ("golang-source" . "See {{{source-link(https://golang.org)}}}.")
+  ("guix-definition" . "A software tool for managing a computer system's software packages.")
+  ("guix-source" . "{{{source-link(https://www.gnu.org/software/guix/)}}}.")
+  ("html-definition" . "A way of adding layout, formatting, and media to text documents.")
+  ("html-source" . "{{{source-link(https://en.wikipedia.org/wiki/HTML)}}}.")
+  ("hugo-definition" . "A software tool for creating rendered documents from formatted text files.")
+  ("hugo-source" . "{{{source-link(https://gohugo.io/)}}}")
+  ("hugo-config-source" . "{{{source-link(https://gohugo.io/getting-started/configuration/)}}}")
+  ("hugo-configuration-definition" . "$1")
+  ("hugo-configuration-source" . "$1")
+  ("hugo-content-type-definition" . "The classification of a piece based on what form of media it is.")
+  ("hugo-content-type-source" . "{{{source-link(https://gohugo.io/content-management/types/)}}}")
+  ("hugo-front-matter-definition" . "A collection of data associated with a content piece.")
+  ("hugo-front-matter-source" . "{{{source-link(https://gohugo.io/content-management/front-matter/)}}}.")
+  ("hugo-templates-definition" . "The framework which determines what is in a rendered document and how it appears.")
+  ("hugo-templates-source" . "{{{source-link(https://gohugo.io/templates/lookup-order/)}}}")
+  ("hugo-lookup-order-definition" . "The order in which /Hugo/ looks up which layout(s) to apply to a page.")
+  ("hugo-lookup-order-source" . "{{{source-link(https://gohugo.io/templates/lookup-order/#readout)}}}.")
+  ("hugo-partial-templates-definition" . "$1")
+  ("hugo-partial-templates-source" . "{{{source-link(https://gohugo.io/templates/partials/)}}}")
+  ("hugo-themes-definition" . "Collections of layouts for use by the /Hugo/ static site generator.")
+  ("hugo-themes-source" . "https://gohugo.io/themes/")
+  ("hugo-media-package-channel-theme-definition" . "A /Hugo theme/ for creating a media package channel.")
+  ("hugo-media-package-channel-theme-source" . "$1")
+  ("indieweb-definition" . "A set of data specifications and software utilities for coordinating the serialization of social data.")
+  ("indieweb-source" . "{{{source-link(https://indieweb.org/)}}}.")
+  ("javascript-definition" . "An interpretted programming language used frequently in Web development.")
+  ("javascript-source" . "{{{source-link(https://en.wikipedia.org/wiki/JavaScript)}}}.")
+  ("json-definition" . "A human-readable data format.")
+  ("json-source" . "{{{source-link(https://json.org/)}}}.")
+  ("lisp-definition" . "A family of computer programming languages influenced by lambda calculus.")
+  ("lisp-source" . "{{{source-link(https://en.wikipedia.org/wiki/Lisp_(programming_language))}}}")
+  ("literate-programming-definition" . "A programming paradigm in which information is presented in natural language with traditional source code implemented as figures within that text.")
+  ("literate-programming-source" . "{{{source-link(https://en.wikipedia.org/wiki/Literate_programming)}}}")
+  ("markdown-definition" . "A way of adding style notation to plain text.")
+  ("markdown-source" . "https://daringfireball.net/projects/markdown/")
+  ("mastodon-definition" . "A platform for broadcasting and receiving short text messages between users on different servers and viewing aggregate feeds of servers or tagged posts.")
+  ("mastodon-source" . "See {{{source-link(https://joinmastodon.org/)}}} {{{tag-link(Mastodon)}}}")
+  ("media-package-definition" . "A manifest of metadata about a piece of media content.")
+  ("media-package-source" . "$1")
+  ("media-package-channel-definition" . "A listing of /media packages/.")
+  ("media-package-channel-source" . "$1")
+  ("media-package-channel-generator-definition" . "A software that turns /media packages/ into a /media package channel/.")
+  ("media-package-channel-generator-source" . "$1")
+  ("microsoft-definition" . "$1")
+  ("microsoft-source" . "$1")
+  ("microblog-definition" . "$1")
+  ("microblog-source" . "$1")
+  ("microblog-federated-definition" . "$1")
+  ("microblog-federated-source" . "$1")
+  ("netlify-definition" . "$1")
+  ("netlify-source" . "$1")
+  ("org-mode-definition" . "A way of formatting plain data inside text documents.")
+  ("org-mode-source" . "{{{source-link(https://orgmode.org/)}}} {{{hashtag-link(OrgMode)}}}.")
+  ("org-mode-babel-definition" . "A software tool for using code integrated into /Org-mode/ documents.")
+  ("org-mode-babel-source" . "{{{source-link(https://orgmode.org/worg/org-contrib/babel/intro.html)}}}")
+  ("org-mode-babel-tangle-definition" . "$1")
+  ("org-mode-babel-tangle-source" . "$1")
+  ("org-mode-macros-definition" . "A way to replace text in a source document when it is exported to a rendered document.")
+  ("org-mode-macros-source" . "{{{source-link(https://orgmode.org/manual/Macro-replacement.html)}}}")
+  ("org-mode-refile-definition" . "A way to move text from one part a document to another, or into another document entirely.")
+  ("org-mode-refile-source" . "{{{source-link(https://orgmode.org/manual/Refile-and-Copy.html#Refile-and-Copy)}}}")
+  ("ox-gfm-definition" . "A software tool for exporting /Org-mode/ files to /Github-Flavored Markdown/.")
+  ("ox-gfm-source" . "See {{{source-link(https://github.com/larstvei/ox-gfm)}}}.")
+  ("ox-hugo-definition" . "A software tool for exporting /Org-mode/ files to /Hugo/-compatible /Markdown/.")
+  ("ox-hugo-source" . "{{{source-link(https://ox-hugo.scripter.co/)}}}.")
+  ("plate-tectonics-definition" . "A theory describing the movement of rock segments under a plates surface leading to the formation of geographic features.")
+  ("plate-tectonics-source" . "{{{source-link(https://en.wikipedia.org/wiki/Plate_tectonics)}}}.")
+  ("programming-functional-definition" . "A style of writing computer programs as a composition of mathematical functions.")
+  ("programming-functional-source" . "{{{source-link(https://en.wikipedia.org/wiki/Functional_programming)}}}")
+  ("programming-object-oriented-definition" . "A style of writing computer programs as objects who changes through interaction.")
+  ("programming-object-oriented-source" . "{{{source-link(https://en.wikipedia.org/wiki/Object-oriented_programming)}}}")
+  ("python-definition" . "An interpreted dynamically typed and garbage collected computer programming language.")
+  ("python-source" . "{{{source-link(https://en.wikipedia.org/wiki/Python_(programming_language))}}}")
+  ("rss-definition" . "A file format for sharing a feed of a website's content; usually recently added pages.")
+  ("rss-source" . "See {{{source-link(https://en.wikipedia.org/wiki/RSS)}}}.")
+  ("software-stack-definition" . "$1")
+  ("software-stack-source" . "$1")
+  ("sourcehut-definition" . "$1")
+  ("sourcehut-source" . "$1")
+  ("subscribe-definition" . "To choose to receive communication from a source.")
+  ("subscribe-source" . "$1")
+  ("teraum-definition" . "A tragically funny fantasy setting.")
+  ("teraum-source" . "See {{{source-link(https://emsenn.net/teraum/)}}} {{{hashtag-link(Teraum)}}}.")
+  ("teraum-arathel-definition" . "A sleepy, worn-down town.")
+  ("teraum-arathel-source" . "$1")
+  ("teraum-arathel-county-definition" . "A swampy and sandy county.")
+  ("teraum-arathel-county-source" . "$1")
+  ("teraum-central-plains-definition" . "A large agricultural region, full of towns and castles.")
+  ("teraum-central-plains-source" . "$1")
+  ("teraum-falling-coast-definition" . "A massive cliff dividing a vast desert from the rest of the world.")
+  ("teraum-falling-coast-source" . "$1")
+  ("teraum-green-delta-definition" . "A hospitable and well-settled region of the world.")
+  ("teraum-green-delta-source" . "$1")
+  ("teraum-green-river-definition" . "A slow wide river, cutting through the world.")
+  ("teraum-green-river-source" . "$1")
+  ("teraum-kaiper-river-definition" . "A silty excuse for a river.")
+  ("teraum-kaiper-river-source" . "$1")
+  ("teraum-old-world-definition" . "The large continent where most of history happened.")
+  ("teraum-old-world-source" . "$1")
+  ("teraum-optic-ocean-definition" . "A large desert separating one part of the world from the other.")
+  ("teraum-optic-ocean-source" . "$1")
+  ("teraum-unseen-sea-definition" . "A desert so large it was first mistaken for a seabed.")
+  ("teraum-unseen-sea-source" . "$1")
+  ("teraum-worldkeepers-definition" . "A range of large mountains.")
+  ("teraum-worldkeepers-source" . "$1")
+  ("teraum-worldkeep-definition" . "A vast complex housing an unbelievable variety of magic lifeforms.")
+  ("teraum-worldkeep-source" . "$1")
+  ("thirty-days-of-world-building-definition" . "A series of prompts for building a fictional world.")
+  ("thirty-days-of-world-building-source" . "See {{{source-link(http://www.web-writer.net/fantasy/days/)}}} or #30DaysOfWorldBuilding.")
+  ("toml-definition" . "A human-readable data format.")
+  ("toml-source" . "{{{source-link(https://github.com/toml-lang/toml)}}}.")
+  ("use-package-definition" . "An /Emacs/ macro for isolating package configurations.")
+  ("use-package-source" . "{{{source-link(https://github.com/jwiegley/use-package)}}}")
+  ("web-browser-definition" . "A software tool for viewing and interacting with information on remote servers, usually rich documents.")
+  ("web-browser-source" . "{{{source-link(https://en.wikipedia.org/wiki/Web_browser)}}}")
+  ("website-dynamic-definition" . "$1")
+  ("website-dynamic-source" . "$1")
+  ("website-personal-definition" . "$1")
+  ("website-personal-source" . "$1")
+  ("website-static-definition" . "$1")
+  ("website-static-source" . "$1")
+  ("write-as-definition" . "A web service providing /WriteFreely/ hosting.")
+  ("write-as-source" . "See {{{source-link(https://write.as/)}}} or #WriteAs")
+  ("writefreely-el-definition" . "A script for uploading /Org-mode/ text to a /WriteFreely/ instance.")
+  ("writefreely-el-source" . "See {{{source-link(https://github.com/dangom/writefreely.el)}}}.")
+  ("writefreely-definition" . "A software service for broadcasting long text documents.")
+  ("writefreely-source" . "See {{{source-link(https://writefreely.org/)}}} or #WriteFreely.")
+#+end_src
+***** Bibliography Macros
+#+TOC: headlines 1 local
+****** A Shaggy Dog Tale
+     #+begin_src elisp
+     ("shaggy-dog-tale-title" . "A Shaggy Dog Tale")
+     ("shaggy-dog-tale-author" . "emsenn")
+     ("shaggy-dog-tale-source" . "{{{source-link(unavailable)}}}")
+     ("shaggy-dog-tale-opinion" . "A well-written story that doesn't go anywhere.")
+     #+end_src
+***** Close Macro Block
+#+begin_src elisp
+))
+#+end_src
+**** Babel
+#+begin_src elisp
+    (org-babel-do-load-languages
+     'org-babel-load-languages
+     '((crystal . t)
+       (ledger . t)
+       (shell . t)))))
+#+end_src
+*** Ox-GFM
+#+begin_src elisp
+(use-package ox-gfm
+  :after org
+  :ensure t)
+#+end_src
+*** Org-Bullets
+#+begin_src elisp
+  (use-package org-bullets
+    :ensure t
+    :after org
+    :config
+    (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1))))
+#+end_src
+*** Webpaste
+#+begin_src elisp
+(use-package webpaste
+  :ensure t
+  :bind (("C-c C-p C-b" . webpaste-paste-buffer)
+         ("C-c C-p C-r" . webpaste-paste-region))
+  :config
+  (progn
+    (setq webpaste-provider-priority '("ptpb.pw"))))
+#+end_src
+*** Writegood
+#+begin_src elisp
+(use-package writegood-mode
+  :ensure t
+  :bind (("\C-c\C-gg" . writegood-grade-level)
+	 ("\C-c\C-ge" . writegood-reading-ease))
+  :init
+  (progn
+    (writegood-mode 1))
+  :config
+  (progn
+    (setq ispell-program-name "aspell")
+    (setq ispell-list-command "--list") ;; run flyspell with aspell, not ispell
+  ))
+#+end_src
+*** Flyspell
+#+begin_src elisp
+(use-package flyspell
+  :ensure t
+  :init
+  (progn
+    (writegood-mode 1))
+)
+#+end_src
+*** Writefreely
+#+begin_src elisp
+(use-package writefreely
+  :after org
+  :ensure t
+  :config (setq writefreely-auth-token "1349cd28-8c69-4d42-7674-d8ce43f33822"))
+#+end_src

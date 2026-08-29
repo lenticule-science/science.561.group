@@ -1,0 +1,490 @@
+#+BEGIN: basic-setup
+#+SETUPFILE: ./default-setup.inc
+#+OPTIONS: todo:todo
+#+TITLE: qtMUD
+#+EXPORT_FILE_NAME: ../pub/qtmud
+#+MACRO: document-type game engine
+#+END
+#+BEGIN: advanced-setup
+#+MACRO: devlog-warning */NOTE:/* This essay was written as a /development log/, which means that, among other issues, code blocks and examples may be incomplete, missing, or wrong.
+#+END
+#+BEGIN: qtmud-macros
+#+MACRO: qtmud-elevator-pitch qtMUD is focused on being a non-programmer's introduction to concepts like software development and game development.
+#+MACRO: qtmud-sublink [[#$1]["$2"]]
+#+END
+#+BEGIN: definition-macros
+#+MACRO: event-definition a function which handles something within the qtMUD engine
+#+MACRO: game-loop-definition a repeating function that processes /events/
+#+END
+#+TOC: headlines 1 local
+* Introduction
+#+INCLUDE: "./plates.inc::draft-software"
+*/qtMUD/* is {{{qtmud-definition}}}. A MUD is {{{mud-definition}}}.
+
+{{{qtmud-elevator-pitch}}}
+
+qtMUD is currently in */early alpha:/* {{{early-alpha-definition}}}.
+#+INCLUDE: "./plates.inc::eli-default"
+#+INCLUDE: "./plates.inc::literate-programming"
+* qtMUD
+#+BEGIN: qtmud-introduction
+MUDs are a form of multiplayer computer game where players receive
+verbose text descriptions of their environments and the activity
+around them, and interact by inputting commands for what they wish to
+do, like =survey planet= or =fight dragon=.
+
+{{{qtmud-elevator-pitch}}}
+
+*/NOTE:/* qtMUD is just the core server for running a MUD, and is
+ meant to be used with a MUD library, like [[file:./fyreside.org][*Fyreside*]].
+#+END
+#+TOC: headlines 2 local
+
+** Operations
+   :PROPERTIES:
+   :CUSTOM_ID: operations
+   :END:
+#+TOC: headlines 1 local
+*** Install
+    :PROPERTIES:
+    :CUSTOM_ID: install
+    :END:
+#+TOC: headlines 1 local
+**** Install from Org-mode
+     :PROPERTIES:
+     :CUSTOM_ID: install-from-org-mode
+     :END:
+***** Prepare Build Environment
+#+BEGIN_SRC sh
+rm -r ./build/qtmud/
+mkdir -p ./build/qtmud/{spec,src}
+#+END_SRC
+
+#+RESULTS:
+
+*** Configure
+    :PROPERTIES:
+    :header-args: :tangle ./build/qtmud/shard.yml :padline no
+    :CUSTOM_ID: configure
+    :END:
+#+BEGIN_SRC yaml
+name: qtmud
+description: A MUD engine; run text-based online role-playing games.
+version: 0.1.0
+
+authors:
+  - emsenn <emsenn@emsenn.net>
+
+crystal: 0.28.0
+
+license: MIT
+#+END_SRC
+
+*** Test
+    :PROPERTIES:
+    :CUSTOM_ID: test
+    :END:
+#+TOC: headlines 1 local
+**** Test All
+     :PROPERTIES:
+     :CUSTOM_ID: test-all
+     :END:
+#+NAME: test-all-script
+#+BEGIN_SRC sh :results value verbatim :exports both
+cd ./build/qtmud
+crystal spec --no-color > test_results.tmp
+cat test_results.tmp
+rm test_results.tmp
+#+END_SRC
+
+** Specifications
+   :PROPERTIES:
+   :header-args: :tangle ./build/qtmud/spec/qtmud_spec.cr
+   :CUSTOM_ID: specifications
+   :END:
+This section contains the */specifications/* of qtMUD. The
+specifications are written long-form, as paragraphs and sentences, and
+where applicable, as tests written in Crystal.
+#+TOC: headlines 1 local
+*** DRAFT Overview
+*** DRAFT Design
+    :PROPERTIES:
+    :CUSTOM_ID: design
+    :END:
+**** DRAFT Assumptions
+     :PROPERTIES:
+     :CUSTOM_ID: assumptions
+     :END:
+- Users can read and write.
+**** DRAFT Objectives
+     :PROPERTIES:
+     :CUSTOM_ID: objectives
+     :END:
+- Provide a MUD engine that is easy for non-developers to use.
+**** DRAFT Development Operations
+     :PROPERTIES:
+     :CUSTOM_ID: development-operations
+     :END:
+- Keep a devlog!
+*** DRAFT Architecture
+    :PROPERTIES:
+    :CUSTOM_ID: architecture
+    :END:
+qtMUD is a MUD engine, which means it is a software service for
+running a /multi-user dimension/.
+
+*/Multi-user/* means that it has features related to user-accounts,
+such as persistent profiles.
+
+*/Dimension/* is a bit more abstract, but it's the simulated "world"
+that qtMUD runs.
+
+The "running a dimension" part is a bit more critical to the core of
+the engine, as the "multi-user" part just describes how interaction
+with that dimension is handled, in the broadest sense.
+
+To "simulate" a dimension,
+
+
+**** Game Loop
+     :PROPERTIES:
+     :CUSTOM_ID: game-loop
+     :END:
+qtMUD's
+#+BEGIN_SRC crystal
+require "spec"
+require "../src/qtmud"
+
+describe Qtmud do
+  # TODO: Write tests
+
+  it "works" do
+    false.should eq(true)
+  end
+end
+#+END_SRC
+** qtMUD Source
+   :PROPERTIES:
+   :header-args: :tangle ./build/qtmud/src/qtmud.cr
+   :CUSTOM_ID: qtmud-source
+   :ALT_TITLE: Source
+   :END:
+#+BEGIN_SRC crystal
+# TODO: Write documentation for `Qtmud`
+module Qtmud
+  VERSION = "0.1.0"
+
+  # TODO: Put your code here
+end
+#+END_SRC
+* Supplements
+#+TOC: headlines local 1
+** Content Listing
+#+TOC: headlines 8
+** Contribute
+   :PROPERTIES:
+   :CUSTOM_ID: supplements-contribute
+   :END:
+#+INCLUDE: "./plates.inc::personal-contribute"
+** Dictionary
+- dimension :: The "game world"
+- MUD :: A multi-user dimension, or dungeon. A more historic term for
+         MMORPG, MUDs were some of the earliest multiplayer computer
+         games. [[https://en.wikipedia.org/wiki/MUD][Wikipedia]] has a comprehensive article on the topic.
+- MUD library :: Also called a /mudlib/, the MUD library is a
+                 collection of information about a MUD's /dimension/
+                 and the features required to make use of that
+                 information. For qtMUD, a MUD library is a Python
+                 module that qtMUD uses to supplement its
+                 /subscriptions/ and /services/.
+- MUD client :: A piece of software used to interact with a
+                /MUD server/.
+- MUD server :: A piece of software which "runs" a /MUD/: it accepts
+                and outputs information about MUD's /dimension/.
+** Essays
+#+TOC: headlines 1 local
+*** Developer Logs
+#+TOC: headlines 1 local
+**** emsenn
+#+TOC: headlines 1 local
+***** #1: Coming Back to qtMUD, Spring 2019
+      :PROPERTIES:
+      :CUSTOM_ID: devlog-emsenn-1
+      :DATE: 2019-05-06
+      :END:
+{{{devlog-warning}}}
+
+It's been a while since I've touched my MUD engine: two and a half
+years, I think.
+
+In the meantime, I haven't done any computer programming, but I feel
+like I've learned a lot about computer programming. One thing I've
+learned is that there exists a way of writing software called
+/literate programming/, which is a way of writing a piece of software
+by writing documentation for people first, with chunks of code
+embedded in. (Most code has some documentation inside it, but with
+lots living in another place.) Check out
+{{{literate-programming-wiki-link}}} for more information.
+
+This seemed like it would be useful thing for qtMUD, which I intend to
+"be the non-programmer's introduction to creating and running a MUD."
+
+Since implementing the paradigm for the project would require a
+rewrite, I figured I would use the opportunity to take stock of the
+rest of my implementation - down to the language I was using. Python
+has, I think, never been in practice what I hoped it would be in
+theory, especially when it comes to being easy for non-developers to
+work with. (Without ending up in "dependency hell.")
+
+I'm not interested in explaining, right now, why I made the choice,
+because I feel it would invite unwanted bickering, but I've decided to
+use {{{crystal-lang-link}}} as qtMUD's main programming language.
+Crystal is {{{crystal-lang-definition}}} - different in a lot of ways
+from Python, but I feel it's quite similar in the ways that matter.
+Ahh, nope, I said I wouldn't explain it.
+
+Moving on.
+
+It might sound like re-implementing a game engine, even one for
+something a simple as a MUD, is a big undertaking. Luckily, I've never
+made it very far in implementing my vision for qtMUD, so what I have
+isn't that well-developed.
+
+Right now, qtMUD establishes a few features and ways of doing things -
+enough that I was able to make a functional multiplayer persistent
+card game with it. Here's a brief rundown:
+
+#+BEGIN_QUOTE
+qtMUD has /services/, /subscriptions/, and /things/. When the game is
+running, it /ticks/ every /service/, and parses any /events/ that were
+/subscribed/ to be executed that tick. The game world is made up of
+/things/, which have /qualities/ that represent their in-game
+attributes, such as a room's contents or a player-character's
+experience.
+#+END_QUOTE
+
+If you're familiar with game engines, you'll recognize most of that as
+pretty standard, even if I don't use the common terminology. So
+there's no confusion, though, I'm going to break that down into a bit
+more detail, by talking about how the engine starts and runs, and what
+happens when a player logs in.
+
+When the Admin starts their qtMUD server, it goes through three
+stages: /loading/, /starting/, and /running/.
+
+When the server is */loading/*, it looks what optional features are
+set to be enabled, what MUD libraries to load, and what services to
+load.
+
+qtMUD is meant to let you just use what you need, so a lot of basic
+features are "optional," like colored text output (useless if you're
+converting your engine's output to audio, for example, and at least in
+Python, required a dependency.)
+
+MUD libraries are collections of new features, usually representing
+complete game worlds. For example, Fyreside was a test MUD library I
+wrote for the Python qtMUD.
+
+Services are what some programmers might call "daemons," they're
+persistent objects that handle persistent engine information. The
+talker - the thing that handles in-game communication between
+players - is one service. The socket server that users connect to is
+another.
+
+After the MUD engine has looked at all those, it begins the process of
+loading them:
+
+1) For each MUD library,
+   1) add its services to the list it has already prepared
+   2) and add its enabled optional features to the list it has already
+      prepared.
+2) Once that's done, it tries to load each service:
+   1) Most services have /subscribers/, which are functions that will
+      be triggered when a matching /event/ is /scheduled/. (More on
+      that shortly.) These subscribers are added to a list.
+   2) Some services have their own /tick/ function, which is added to
+      a list. (More on that shortly, as well.)
+   3) Services often have their own variables and stuff to configure;
+      that's usually done at this point, too.
+3) Once the services are loaded, the enabled optional services are.
+   What this means depends on the service, but it might mean replacing
+   a subscription with a different one.
+
+So, at the end of the loading process, the MUD engine has a list of
+services that need to be /ticked/, and a list of /subscribers/ that
+will trigger when a relevant /event/ is /scheduled/. Past this point,
+the optional features aren't dealt with anymore.
+
+The next step of the engine's get-going process is to */start/*, which
+sends a call to services that will /tick/. This often does different
+things - in the case of the MUD socket service, it binds the ports and
+sets up the server.
+
+The final step of the process is to */run/*, which does two things:
+- It maintains the game */tick/*, which is a loop that, over and over
+  until its told to stop, calls the =tick()= function in every loaded
+  service, and calls every /subscription/ for which there is an
+  /event/ scheduled. */Subscriptions/* are functions that "happen" the
+  tick after an */event/* related to them are */scheduled/*. For
+  example, a user sending a message through the talker service causes
+  an event to be scheduled, that says basically, "for everyone
+  listening to that channel, show them the message." The next tick,
+  everyone gets shown the message.
+
+The game engine ticks until it's told to stop, at which point it
+shutdowns the services and exits.
+
+From a user perspective, when you connect to the socket server with a
+MUD client, the game asks you some questions to suss out if you have
+an existing user account, and creates a new */thing/*, a collection of
+*/qualities/* and their states. For example, all user things have an
+account ID quality.
+
+The qualities of a thing define how different services and events will
+affect it. Some things are very simple, like a basic user account, but
+on a server with a large MUD library loaded, user accounts might have
+dozens of qualities.
+
+Developers of MUD libraries will mostly fall into two tiers: those who
+create */content/* for the library, creating new things with sets of
+qualities, like a collection of Room things that make up a small
+village, and those who make new types of things, new qualities, and
+the services and subscriptions that rely on them.
+
+But that division is meant to occur because of one's interests, not
+necessarily technical difficulty.
+
+Knowing that background, I'll explain what stuff the qtMUD engine had
+as implemented in Python:
+- a MUD socket service that was how users could connect
+- a Talker service that let users talk to each other, or showed server
+  messages to all users.
+- a "colored output" optional feature.
+- a Client thing with qualities relating to the MUD socket service and
+  Talker service.
+
+There might have been other features, but that's what I can remember
+offhand, and what was well-tested.
+
+Which honestly, shouldn't be that hard to reimplement in any language.
+What's going to be trickier is organizing it in a way that makes more
+sense for a literate programming paradigm.
+***** DONE #2: Bootstrapping a Crystal Project with Org-mode
+      CLOSED: [2019-05-11 Sat 18:59]
+      :PROPERTIES:
+      :CUSTOM_ID: devlog-emsenn-2
+      :DATE: 2019-05-07
+      :END:
+{{{devlog-warning}}}
+
+Last time I wrote [[#devlog-emsenn-1][about how I was planning to re-write qtMUD]] from
+Python3 to Crystal, and then I explained how the engine had worked. I
+pointedly didn't explain why I'm switching to Crystal, specifically,
+and I also glossed over the fact I don't really know Crystal. At all.
+And I haven't really touched a programming language in 3 years, since
+the last time I tinkered with qtMUD.
+
+After I wrote that devlog, I went off and read the
+{{{crystal-lang-docs-link}}}, pretty much from beginning to end. I
+skimmed past stuff that I could tell might be useful down the line,
+but wouldn't be necessary to get started, because it was nothing I
+used in Python, even though I knew the features existed.
+
+I'm pretty sure I want to design qtMUD to work as what Crystal calls a
+/shard/, or "{{{crystal-lang-shard-definition}}}." See
+{{{crystal-lang-docs-sublink(guides/writing_shards,Writing Shards)}}}
+for more information.
+
+That documentation says I need a working installation of Crystal,
+which I have, a working installation of Git, which I have, and a
+GitHub account, which I have but would prefer not to use - I've been
+preferring {{{drew-devault-link}}}'s {{{sourcehut-link}}} set of
+services, so would want to use a repo hosted at {{{emsenn-git-link}}}.
+
+The instructions, past the requirements, begin with creating a
+project. Crystal has a command for initializing one, but since I'm
+doing this program literately, I'm going to instead create sections in
+my main qtMUD document (probably what this devlog entry is a part of,)
+and write source code blocks to be /tangled/ out - extracted.
+
+Here's what I know I need:
+
+- =shard.yml=, which defines the project for when I'm ready to
+  distribute it. It is in the {{{qtmud-sublink(configure,Configure)}}}
+  subsection of the {{{qtmud-sublink(operations,Operations)}}} section.
+- =src/qtmud.cr=, which will be the implementation of qtMUD in the
+  Crystal programming language. It is in the
+  {{{qtmud-sublink(qtmud-source,qtMUD Source)}}} section.
+- =spec/qtmud_spec.cr=, which will be the specification of qtMUD,
+  against which the implementation is written, and is also written in
+  Crystal. It is in the {{{qtmud-sublink(specifications,Specifications)}}} section.
+
+There's two other sections I've made to accompany those:
+
+- {{{qtmud-sublink(install-from-org-mode,Install from Org-mode)}}},
+  under {{{qtmud-sublink(install,Install)}}} in the
+  {{{qtmud-sublink(operations,Operations)}}} section. It has a shell
+  script for deleting the currently build directory and remaking the
+  layout. Simple, but effective. Then I run =org-babel-tangle= to
+  re-/tangle/ the source code.
+- {{{qtmud-sublink(test-all,Test All)}}}, under
+  {{{qtmud-sublink(test,Test)}}}, also under
+  {{{qtmud-sublink(operations,Operations)}}}. This is another
+  shell script, that runs =crystal spec= (and runs it through a
+  temporary file, because just running the command didn't get me the
+  output in my Org-mode file. Hacky, but effective.
+
+This gives me a development flow that could definitely be better if I
+was better at Org-mode, but:
+
+1) Run (=Ctrl-c, Ctrl-c= in Emacs) the script in
+   {{{qtmud-sublink(install-from-org-mode,Install from Org-mode)}}} to
+   delete the old version and make the necessary new directories.
+2) Do =org-babel-tangle= in Emacs anywhere in the qtMUD file.
+3) Run the script in {{{qtmud-sublink(test-all,Test All)}}}.
+
+This lets me know what specifications, if any, I've failed to
+implement.
+
+Which gives me a pretty good base for starting to write the
+specifications and assertions! (Turns out I don't need Git installed
+or a GitHub account yet, at all.)
+***** DRAFT #3
+      :PROPERTIES:
+      :CUSTOM_ID: devlog-emsenn-3
+      :END:
+{{{devlog-warning}}}
+
+Last time I wrote about [[#devlog-emsenn-2][bootstrapping a Crystal project with Org-mode]],
+which got me to the point where I'm ready to start laying out the
+engine specifications I laid out in my [[#devlog-emsenn-1][first devlog]].
+
+I'm honestly not sure where to start - it's been years since I've
+dealt with a document of this type, and never for a tiny game engine,
+so I started by laying out some headlines under the
+{{{qtmud-sublink(specifications,Specifications)}}} section:
+
+- Under {{{qtmud-sublink(design,Design)}}}, I made:
+  - {{{qtmud-sublink(assumptions,Assumptions)}}}, which declares
+    assumptions I'll make about the hardware running qtMUD, users, and
+    so on.
+  - {{{qtmud-sublink(objectives,Objectives)}}}, which declares the
+    project's goals.
+  - {{{qtmud-sublink(development-operations,Development
+    Operations)}}}, which has guidelines for how to contribute to the
+    project: the style guide and such.
+
+Right now these sections each just contain a short list of things, but
+over time I expect them to grow into their own long explanations.
+
+After the Design section, I've created an
+{{{qtmud-sublink(architecture,Architecture)}}} section, under which
+I've made a section for the {{{qtmud-sublink(game-loop,Game Loop)}}},
+which seems like a good place to start explaining the architecture.
+
+
+** License
+   :PROPERTIES:
+   :CUSTOM_ID: supplements-license
+   :END:
+#+INCLUDE: "./plates.inc::mit-license"

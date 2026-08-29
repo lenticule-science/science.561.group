@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       000fe862-1b86-4d95-a485-70f70601f1b9
+:END:
+#+title: printing press
+#+date: [2025-09-05 Fri 21:11]
+

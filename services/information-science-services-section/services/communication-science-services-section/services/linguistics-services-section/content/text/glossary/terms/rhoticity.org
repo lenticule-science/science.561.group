@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       7c99d4eb-6b48-474c-a9b8-ff8ce5f75675
+:public:   true
+:END:
+#+title: rhoticity
+#+date [2025-08-12 Tue 05:41]
+#+index: rhoticity

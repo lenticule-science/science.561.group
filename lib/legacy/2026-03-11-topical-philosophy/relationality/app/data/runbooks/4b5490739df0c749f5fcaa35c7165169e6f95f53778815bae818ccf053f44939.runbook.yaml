@@ -1,0 +1,26 @@
+name: flow_measure_consistency_check
+inputs:
+- role: phase_space
+  kind: phase_space
+- role: measurement_frame
+  kind: measurement_frame
+- role: flow_measure_step
+  kind: observation
+outputs:
+- role: flow_measure_consistency_evidence
+  kind: flow_measure_consistency_evidence
+steps:
+- name: flow_measure_consistency_check
+  operator: flow_measure_consistency_check
+  step_index: 0
+  inputs:
+  - role: phase_space
+    kind: phase_space
+  - role: measurement_frame
+    kind: measurement_frame
+  - role: flow_measure_step
+    kind: observation
+  outputs:
+  - role: flow_measure_consistency_evidence
+    kind: flow_measure_consistency_evidence
+id: 4b5490739df0c749f5fcaa35c7165169e6f95f53778815bae818ccf053f44939

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       c535c71c-ebe4-42f5-a39c-a924a51c978d
+:END:
+#+title: boolean matrix transform
+#+date: [2025-10-17 Fri 12:19]
+

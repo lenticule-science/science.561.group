@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       cbf90606-c58e-45d8-89dc-096d3d624e52
+:END:
+#+title: LaTeX bibliography
+#+date: [2025-08-28 Thu 09:00]
+

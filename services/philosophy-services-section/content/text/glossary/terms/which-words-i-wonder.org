@@ -1,0 +1,26 @@
+#+SETUPFILE: ../default-setup.inc
+#+TITLE: Which Words I Wonder
+#+EXPORT_FILE_NAME: ../../pub/poems/which-words-i-wonder
+#+TOC: headlines 1 local
+* Introduction
+#+INCLUDE: "../../plates.inc::draft"
+#+INCLUDE: "../../plates.inc::default-eli"
+* Which Words I Wonder
+#+BEGIN_VERSE
+I walk wondering what would be written when next I write.
+Will it be witty or wistful? Riling or relaxed?
+Whatever words recorded, I have no worries regarding
+wrong words representing the right references.
+#+END_VERSE
+* Supplements
+#+TOC: headlines local 1
+** Contribute
+   :PROPERTIES:
+   :CUSTOM_ID: supplements-contribute
+   :END:
+#+INCLUDE: "../../plates.inc::personal-contribute"
+** License
+   :PROPERTIES:
+   :CUSTOM_ID: supplements-license
+   :END:
+#+INCLUDE: "../../plates.inc::mit-license"

@@ -1,0 +1,6 @@
+#+title: pudding
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-19 Sat 21:08]
+#+roam_tags: term
+*/Pudding/* is a type of [[file:food.org][food]] that is hard to describe.

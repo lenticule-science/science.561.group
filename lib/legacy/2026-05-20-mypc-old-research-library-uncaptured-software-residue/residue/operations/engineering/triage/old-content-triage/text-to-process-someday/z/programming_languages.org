@@ -1,0 +1,21 @@
+#+title: programming language
+#+begin_head
+#+ghe_schema: record-0.1.3
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-24 Thu 14:11]
+#+roam_alias: "programming languages"
+#+end_head
+
+#+name: definition
+A */programming language/* is a [[file:formal_language.org][formal language]] that is used to [[file:automating.org][automating]] the use of a [[file:computer.org][computer]].
+
+#toc: headlines 2
+* Intrododuction
+* programming languages
+* Supplements
+** Record history
+   :LOGBOOK:
+   - Note taken on [2020-12-24 Thu 14:11] \\
+     Created
+   :END:

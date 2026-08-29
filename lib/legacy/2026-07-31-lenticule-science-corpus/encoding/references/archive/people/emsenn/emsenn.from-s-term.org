@@ -1,0 +1,6 @@
+#+title: emsenn
+#+author: emsenn
+#+date: [2021-01-26 Tue 14:00]
+#+index: emsenn
+#+name: emsenn-definition
+*/[[file:emsenn.org][emsenn]]/* is me, the person who ...

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       a36a11d7-bd0d-45ef-a4af-c95a432f766a
+:END:
+#+title: Portable Batch System
+#+date: [2025-10-16 Thu 17:00]
+

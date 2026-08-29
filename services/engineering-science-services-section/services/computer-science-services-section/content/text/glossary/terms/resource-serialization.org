@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       fca371e3-3cfd-4ed4-9d1c-8925f58a8172
+:END:
+#+title: resource serialization
+#+date: [2025-10-04 Sat 11:49]
+

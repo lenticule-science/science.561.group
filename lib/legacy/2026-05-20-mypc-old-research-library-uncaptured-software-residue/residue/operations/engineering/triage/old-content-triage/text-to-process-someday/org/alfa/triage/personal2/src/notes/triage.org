@@ -1,0 +1,581 @@
+#+OPTIONS: broken-links:mark
+* Notes
+** Notes on Setting Up Nginx on GuixSD
+I've just set up a fresh /Guix/ install on my desktop and installed
+some of the packages I know I need - like emacs. I've previously read
+through first part of the /Guix Reference Manual/, see [[*Notes on "Guix Reference Manual," Sections 1-3][Notes on "Guix
+Reference Manual," Sections 1-3]].
+
+My first goal with this system is to get a federated communication
+platform set up - something like /Mastodon/, though probably not
+/Mastodon/. The first step to doing that is getting some services
+running - probably a web server of some sort, and probably also a
+database.
+
+I'm going to skip ahead now to Section 8.8.16, "Web Services,"
+...which makes absolutely no sense to me. It's jumped straight into
+saying how to configure the services - which is something I can
+understand, I think, but I don't yet know where this configuration
+goes, or how to update it, or stuff like that.
+
+I remember from reading the first few sections that the configuration
+file is a Scheme file, and it's, I think, at =/etc/config.scm=. So
+I've opened that file in another view, and it definitely looks like a
+system configuration file - I mean, it starts with a comment saying
+"[t]his is an operating system configuration," I didn't deduce it.
+
+Anyway let's back up to the start of Section 8, and see if that
+doesn't give enough context.
+
+It does. It says that the /Guix System/ - that's the name for "/Guix
+as your operating system, not just package manager" - supports a
+"whole-system" configuration, where "services, timezone..., user
+accounts - are declared in a single place."
+
+So, /Guix/ offers a /system configuration mechanism/. And that's what
+this section'll be about.
+
+It says you write a configuration, and then use the =guix system=
+command to instantiate it - make it take effect. Then it provides a
+demo configuration. It's in Scheme, I guess - I don't know any of the
+paranthes-heavy languages so they all look like Lisp to me.
+
+Comparing the example to what is at =/etc/config.scm=, they look
+pretty similar - my configuration has my username and partitioning,
+and MATE desktop stuff, but otherwise pretty- closely matches the
+default.
+
+The documetnation goes on to explain the "most important" fields in
+that file - fields here being "things that go inside the
+=(operating-system)= paranthesis. (Statement? Again, I don't know
+Scheme.)
+
+The first one it explains is the "Bootloader". My computer boots, so I'm
+not touching that one.
+
+The next section is "Globally Visible Packages". Before I get into
+this, I know this is going to be something I need to learn - there are
+packages I want my system to have, system-wide, not just for an
+individual user. (Maybe? I guess with how /Guix/ does packaging,
+system-wide packages are less important?)
+
+Looking, I see that my configuration adds "nss-certs" to my list of
+=%base-packages=. I'll leave it alone for now - I think I understand
+how it works enough to add packages to it if I need to. Moving on.
+
+The next system is "System Services." Getting closer to setting up an
+HTTP server, it sounds like. System services, it says, are to be made
+available when the system starts. That might not be where the HTTP
+server goes... though it gives OpenSSH as an example service here.
+
+Okay - looking, it seems like my configuration has "%desktop-services"
+while this says "%base-services"... some of the time. Others it says
+desktop-services; maybe the two are synonyms or... determine when in
+the startup they get called? Let me just search the /Manual/ for
+="desktop-services"=. I don't think this matters, but it might.
+
+Okay - the same way %base-services is a collection of basic services
+for a system, at all, desktop-services is for a GUI desktop system.
+
+Okay - I think... I'm ready to try adding the /Nginx/ service to my
+configuration? Back to Section 8.8.16, "Web Services."
+
+Okay so it says "The =(gnu services web)= moduel provides the Apache
+HTTP Server, the nginx web server, and also a fastcgi wrapper daemon.
+
+So I think that means I go to this line in my =config.scm=:
+
+#+BEGIN_SRC scheme
+(use-service-modules desktop networking ssh web xorg)
+#+END_SRC
+
+And add =web= - the list seems to be in alphabetical order, so I'll
+stick with that.
+
+And now to near the end of the configuration - inside the
+=(operating-system)= declaration, there's the =(services)=
+declaration.
+
+Right now, it looks like this:
+
+#+begin_src scheme
+    (services
+      (append
+	(list (service mate-desktop-service-type)
+	      (service openssh-service-type)
+	      (set-xorg-configuration
+		(xorg-configuration
+		  (keyboard-layout keyboard-layout))))
+	%desktop-services))
+#+end_src
+
+According to the documentation, I can set up a basic nginx server by
+changing that to this:
+
+#+begin_src scheme
+  (services
+    (append
+      (list (service mate-desktop-service-type)
+	    (service openssh-service-type)
+	    (service nginx-service-type
+		     (nginx-configuration
+		      (server-blocks
+		       (list (nginx-server-configuration
+			      (server-name '("emsenn.net"))
+			      (root "/srv/http/emsenn.net"))))))
+	    (set-xorg-configuration
+	      (xorg-configuration
+		(keyboard-layout keyboard-layout))))
+      %desktop-services))
+#+end_src
+
+You can see I added that bit about the =nginx-service-type=. I'm being
+optimistic and hoping I can get my home website running on this
+machine stable before too long, so going ahead with setting it up.
+
+I... don't understand, really, any of what I just added. Also, the
+scattered parantheses of Lisp-y languages still looks ridiculous to
+me. I get why it's clever, but gosh. If it were any other character I
+think I'd have less of a problem with it, but my grammar-nerd just
+rankles at that many nested clauses.
+
+I understand the =server-name= and =root= parts - I'm inferring
+=server-blocks= is what each... oh I don't remember what the parts of
+an nginx configuration are called; I suppose it might be "blocks"
+there too. But like, each discrete... not "server" because that's what
+nginx is. Set of server-names and file locations and security
+certificates and so on.
+
+So I guess... let's see if =guix system reconfigure= works with that
+config file, eh?
+
+It did not:
+
+#+begin_src text
+guix system: error: exception caught while executing 'start' on service 'nginx':
+Throw to key `srfi-34' with args `("#<condition &invoke-error [program: \"/gnu/store/byd116qs89b0am4zwjf4vjai7qlskvaw-nginx-1.17.0/sbin/nginx\" arguments: (\"-c\" \"/gnu/store/4d6mc3ja9q530w6ghp0ab8y0hp0lh121-nginx.conf\" \"-p\" \"/var/run/nginx\") exit-status: 1 term-signal: #f stop-signal: #f] 192f640>")'.
+#+end_src
+
+Parsing that out, I think =srfi-34= is the error code... and the error
+is something to do with nginx not loading its config properly? I don't
+know more than that.
+
+I tried the lines in the /Reference Manual/ for setting up an Apache
+server, pointing at the same place, and it worked just fine, so the
+issue might be something with /Nginx's/ package. I just don't know
+enough to know!
+
+(Actually, looking at it more closely, it looks like the nginx config
+is in a different "store" than Nginx itself - and if I run the =nginx=
+command I get an error saying it can't find the log file/directory -
+same for the config file.)
+
+
+-----
+
+I went away to sleep for the night and came back and I think I can see
+what the problem is:
+
+When Nginx is installing itself, it outputs this during =guix system
+reconfigure=:
+
+#+begin_src text
+creating nginx log directory '/var/log/nginx'
+creating nginx run directory '/var/run/nginx'
+creating nginx temp directories '/var/run/nginx/{client_body,proxy,fastcgi,uwsgi,scgi}_temp'
+nginx: [alert] could not open error log file: open() "/gnu/store/byd116qs89b0am4zwjf4vjai7qlskvaw-nginx-1.17.0/logs/error.log" failed (2: No such file or directory)
+#+end_src
+
+So it looks like it's making the directores for /Nginx/ under
+=/var/run/nginx/=, which is where the documentation under Section
+8.8.16 says it will be.
+
+However, it then looks like it's looking to write the log file under
+the GNU store directory...
+
+Maybe that's not /the/ problem though. The next line in the output log
+is:
+
+#+begin_src text
+2019/06/03 00:17:50 [emerg] 10065#0: no "ssl_certificate" is defined for the "listen ... ssl" directive in /gnu/store/4d6mc3ja9q530w6ghp0ab8y0hp0lh121-nginx.conf:13
+nginx: configuration file /gnu/store/4d6mc3ja9q530w6ghp0ab8y0hp0lh121-nginx.conf test failed
+#+end_src
+
+Maybe I need to say "don't use SSL?" I think I read about how to do
+that in the /Manual/...
+
+...I think how to do that is... by adding these lines into the
+=nginx-server-configuration= list, that is inside the =server-blocks=
+declaration, that's inside =nginx-configuration=, that's inside
+=nginx-service-type=, that's inside the list of services to be
+appended to =%desktop-services=.
+
+#+begin_src scheme
+(ssl-certificate #f)
+(ssl-certificate-key #f)
+#+end_src
+
+Let's try that, by again running =guix system reconfigure config.scm=
+
+Nope - same exact error. Let me look at the file it's looking at -
+=/gnu/store/4d6...-nginx.conf=... I see the server block declaration:
+
+#+begin_src text
+server {
+  listen 80;
+  listen 443 ssl;
+  server_name emsenn.net ;
+  root /srv/http/emsenn.net;
+  index index.html ;
+  sever_tokens off;
+#+end_src
+
+First off, it's weird how some of them have a space before the =;= and
+others don't. But also - I see: it has ssl on by default? Which seems
+silly since that needs a certificate; maybe it assumes you're setting
+it up all at once, not bit-by-bit? And I will want SSL set up - but
+for now, I want to know how to turn it off, even if the next step for
+me is going to be ssl certificates.
+
+Back to the /Reference Manual/.  Here we go - the
+=nginx-server-configuration= data type (aha! "data type" is the term
+here) has the parameter (aha! another term!) =listen=, which defaults
+to ='("80" "443 ssl")=
+
+I think that means I need to add the following line to the
+=nginx-server-configuration= data type:
+
+#+begin_src scheme
+(listen '("80"))
+#+end_src
+
+Let's try this now, then!
+
+Oh! Oh!
+
+#+begin_src text
+shepherd: Service nginx has been started.
+#+end_src
+
+That's progress, right there! Looking back up, I see there was no
+longer the SSL error with the service - there's still an error about
+logging, but the /Manual/ explains how that's due to /Nginx's/
+bootstrapping process, so that's fine.
+
+Okay so... now to bring up =https://localhost= in my browser. I've put
+a file that says =<html><body>Hi!</body></html>= at
+=/srv/http/emsenn.net/index.html=, so I expect to see that when I go
+there.
+
+And I do!
+
+Wonderful. I'm going to wrap up this note here - I have a functional
+/Nginx/ server on my desktop. Next step will be setting up my
+registrar to point to this new server, and then after that, setting up
+those security certificates I danced around this time.
+
+** Notes on Setting up Writefreely on a Guix System
+Before lunch I successfully got /Nginx/ to run on my desktop computer,
+which is running the /GuixSD/ operating system. See [[*Notes on Setting Up Nginx on GuixSD][Notes on Setting
+Up Nginx on GuixSD]].
+
+My goal is still getting a federated communication platform up, though
+the more I give consideration to it, the more I think this might be
+the opportunity and excuse I need to stop microblogging: maybe email
+should be my federated communication platform of choice. Or,
+letter-writing, which I think is probably still best implemented
+through email.
+
+That said, I would like to host my documents through a /WriteFreely/
+instance, so I can be followed via /ActivityPub/, so I'm going to get on
+with that, rather than shift gears from /Nginx/ to email.
+
+So... I hate to say it but, I want to do this right, and I think that
+means creating a /Guix/ package for Writefreely.
+
+Dang. Back to the /Guix Reference Manual/, this time Section 14:
+"Contributing," since it has a subsection on packaging.
+
+This section starts with some instructions for setting up the "Perfect
+Setup," which looks like it'd be really useful... if I knew more about
+Emacs and such.
+
+So I'm going to skip to 14.4, "Packaging Guidelines."
+
+And... realize I'm way in over my head. Happenstance, I've just
+received a message from [[https://framapiaf.org/@roptat][@roptat@framapiaf.org]] about my progress with
+learning /Guix/, so I'm going to ask them if making a package is the
+right way to go, before I sink my teeth into this. They've answered:
+
+#+begin_quote
+I don't know this software, so I can't be sure. I think you will need
+to create a package for it first, and then a service. They are two
+separate things. The service-type simply uses the package defined in
+guix.
+
+For writting your first package, I suggest reading
+https://www.gnu.org/software/guix/blog/2018/a-packaging-tutorial-for-guix/
+
+Then you'll probably have to look at actual package definitions for go
+packages that are a bit different from gnu packages. See
+go-build-system in the manual
+#+end_quote
+
+I asked them to explain what they meant by "[t]he service-type simply
+uses the package defined in /[G]uix/," and they said:
+
+#+begin_quote
+A service-type like =nginx-service-type= is a declaration. When the
+manual says it's from =(gnu services web)= it actually means it's a
+scheme variable that was created in a file called
+=gnu/services/web.scm=, in the Guix repo. It's much more messy than a
+package definition though… So you'll have to create the package first,
+then your service definition will make use of it.
+#+end_quote
+
+I didn't really understand that answer, completely, but what I did
+understand is: Yes, writing a package definition is the right place to
+start.
+
+Before I do that though, I'm going to just try and run it plainly -
+download the latest binary, config, and run, following the
+instructions here: https://writefreely.org/start
+
+Which... when I try to run the binary inside that, gets me =bash:
+./writefreely: No such file or directory=. The file is executable, so
+this - in the past - has meant it's for 32bit and I'm on 64bit, or
+vice-versa.
+
+Running =uname -a= I see I'm on =x86_64=, and the binary is for
+=amd64=. I think those are different platforms, so I guess it's time
+to build the package! I was going to do that as the next step even if
+the binary worked.
+
+Writefreely's documentation on this is a bit terse:
+https://writefreely.org/docs/latest/developer/setup.md
+
+I need Go 1.10 or higher, and Node.js
+
+Let's... this sounds like a good opportunity to learn how to do an
+environment with /Guix/.
+
+But, so I don't get confused later, I'm going to write down the
+process ahead - I'll probably have to take a break soon, and don't
+want to lose my stride:
+
+- First, I want to build and run WriteFreely, however I can get it to
+  work, so I can learn how to do that.
+  - Learn how to make a Guix environment for tinkering in
+  - Learn how to build Writefreely
+  - Learn how to configure and run it.
+- Then, I want to write a package definition for it.
+- Then, I want to define a service for it.
+- Then, I want to... run it! I'll be running my own writefreely
+  instance! That's cool!
+
+Okay so uh... I /think/ I can just do... =guix environment= to make a
+little spot to muck around it.
+
+And then =guix install go= and =guix install node= to install those
+two packages...
+
+Hmm well even if I exit that environment I still have go installed so
+clearly I did that wrong. But I don't think it really matters.
+
+Writefreely's docs tell me to run this command:
+
+#+begin_src sh
+go get -d github.com/writeas/writefreely/cmd/writefreely
+#+end_src
+
+Which holy crap fetches a lot of dependencies. Modern software is
+crazy complex stacks, huh?
+
+But then... I'm in an empty folder? But now my home directory has a
+=go/= folder, which has =pkg/= and =src/= subdirectories.
+
+Searching online got me to this:
+https://fedi.dev/gytis/build-writefreely-from-source
+
+Which tells me to go to =~/src/github.com/writeas/writefreely/= and =make
+build=.
+
+One problem: I don't have =make= installed as a command. I recall
+reading that the =gnu-build-system= provided such tools, which would
+probably inform how I accomplish the Writefreely package. But for now?
+Hmm. I mean, let's try =guix install make=. It's a package, will it be
+the right one?
+
+Seems to be. I needed to also do =GOPATH=~/go= and ~export
+PATH="$PATH:$GOPATH/bin"~
+
+=make build= gets me an error - apparently I don't have =as=, whatever
+that is. Poking around online hints me toward installing the
+=gcc-toolchain= package - I got to this issue whose t
+itle mimics my
+error, and then searched the /Guix Reference Manual/ for "gcc":
+https://github.com/tensorflow/tensorflow/issues/4984
+I get a new error now:
+
+#+begin_src text
+In file included from /gnu/store/h90vnqw0nwd0hhm1l5dgxsdrigddfmq4-glibc-2.28/include/errno.h:28:0,
+                 from cgo-gcc-prolog:29:
+/gnu/store/h90vnqw0nwd0hhm1l5dgxsdrigddfmq4-glibc-2.28/include/bits/errno.h:26:26: fatal error: linux/errno.h: No such file or directory
+#+end_src
+
+Well. Sounds like maybe installing =glibc= was the wrong package?
+
+But I'm at a loss as to... what package would be the right one. I
+don't understand enough of the various compilation toolkits to be
+doing more than taking guesses.
+
+So, let's paste error messages into search engines and see what comes
+up. This thread:
+https://lists.gnu.org/archive/html/bug-guix/2013-02/msg00024.html
+
+It says to install =linux-libre-headers=. Which tells me to remove
+=glibc=. I do, and then install =linux-libre-headers= without issue.
+
+Let's try =make build= again? Damn! Same error: =linux/errno.h: No
+such file or directory=. That thread was the only result for ="guix"
+"linux/errno.h: No such file or directory"= so now I'm truly at a
+loss.
+
+Well, it does sill look like it's looking in the store for glibc. Is
+that perhaps the problem? Let me try garbage collecting, can't hurt.
+Didn't help, though.
+
+Omg. I'm an idiot. A skim-reading, half-illiterate idiot. So I
+uninstalled linux-libre-headers and reinstalled glibc and at the end,
+it says this:
+
+#+begin_src text
+export CPATH="/home/emsenn/.guix-profile/include${CPATH:+:}$CPATH"
+export LIBRARY_PATH="/home/emsenn/.guix-profile/lib${LIBRARY_PATH:+:}$LIBRARY_PATH"
+#+end_src
+
+So I did that and then did =make build= and, it worked.
+
+I'm learning: read slower. It's been a big help so far in doing all
+this, but gosh. It's hard - there's so much I can't understand, it's
+hard to read every line.
+
+Okay. Well, a lesson to anyone who reads this: I said I was at a loss
+and kept plugging at it, and got it to work.
+
+Moving on!
+
+I'm using this still:
+https://fedi.dev/gytis/build-writefreely-from-source
+
+It says to run this command: =./cmd/writefreely/writefreely --config=
+
+That works, takes me through the configuration process. Now, =make
+run= should get me an instance running at the configured address -
+=http://localhost:8080= for now.
+
+It works! There's no stylesheet - whoops, I missed a step- =make ui=.
+
+Which, of course, errors. I'm going to read this error. Slowly.
+
+So I input =make ui=, and it tells me it's entering the directory
+=./less/=. It then says shows me the output of the =which= command,
+telling me there's no =lessc= found. That message repeats several
+times.
+
+Then it says something I can't interpret so well:
+
+#+begin_src text
+node_modules/.bin/lessc app.less --clean-css="--s1 --advanced" ../static/css/write.css
+/gnu/store/q19l04vd2za80mk1845pz7r8cz29qk43-bash-minimal-4.4.23/bin/sh: node_modules/.bin/lessc: No such file or directory
+#+end_src
+
+I install =node=, then do =cd less && npm install less
+less-plugin-clean-css=.
+
+I cd back into the writefreely directory and then do =make ui=. It
+fails - =lessc= complains it can't find =env=. I do =which env= to see
+where it is, then edit =lessc= to match.
+
+I =make ui= again, and no errors. I =make run= and go back to
+=http://localhost:8080= and... it's there and has CSS. Wonderful.
+
+This is what my goal product is.
+
+Except... it's complaining that it can't store cookies. Whoops - I
+missed a step, between all the hopping between manuals - runnign
+=writefreely --gen-keys= from within the =./writefreely= source
+directory.
+
+So. Cool! I have a functional writefreely instance.
+
+Now I have to learn how to do that again, but... as a package.
+** Notes on Making a Writefreely Package for Guix
+Okay. I've installed Guix on my system, I've installed Writefreely.
+It's time to try and write a package.
+
+I'm using this tutorial, mostly:
+https://www.gnu.org/software/guix/blog/2018/a-packaging-tutorial-for-guix/
+
+And here's what I have so far:
+
+#+begin_src scheme
+(define-module (writefreely)
+  #:use-module (guix packages)
+  #:use-module (guix download)
+  #:use-module (guix build-system gnu)
+  #:use-module (guix licenses)
+  #:use-module (guix git-download))
+
+(define-public writefreely
+  (package
+   (name "writefreely")
+   (version "0.9.1")
+   (source (origin
+	    (method git-fetch)
+	    (uri (git-reference
+		  (url "https://github.com/writeas/writefreely/")
+		  (commit "fdbefa806fd05ea5f61cf1a0fc75900c2a1dd24e")))
+	    (sha256
+	     (base32
+	      "0zp9d6n1mp0nfcpfxl3pyjy235q386h84skz97yhd348zjnmq7ki"))))
+   (native-inputs `(("go" ,go)
+		    ("node" ,node)))
+   (build-system gnu-build-system)
+   (arguments
+    `(#:phases (modify-phases %standard-phases (delete 'configure))))
+   (synopsis "A simple, federated blogging platform.")
+   (description "WriteFreely is a blogging platform that can publish to
+the 'Fediverse' via ActivityPub.")
+   (home-page "https://writefreely.org/")
+   (license agpl3)))
+#+end_src
+
+It has =writefreely= on the line by itself at the end, so I can do
+~guix package --install-from-file=writefreely.scm~.
+
+But that errors, saying that =go= is an =unbound variable=. Makes
+sense, I don't define it. I think I need to do that by adding another
+=#:use-module= line, but I don't know the name of the go... module?
+
+Oh. It's golang. So I've added this to the first bit of that package
+definition:
+
+#+begin_src scheme
+  #:use-module (gnu packages golang)
+  #:use-module (gnu packages node)
+#+end_src
+
+Now, it's giving me this error when I run it:
+
+#+begin_src scheme
+go: disabling cache (/homeless-shelter/.cache/go-build) due to initialization failure: mkdir /homeless-shelter: permission denied
+#+end_src
+
+I've been looking online for a solution to this one, and it looks like
+maybe it's because go tries to use =$HOME=?
+
+Looking further, it's because =$GOPATH= includes my home directory, I
+think.
+
+Well, I'm stuck.

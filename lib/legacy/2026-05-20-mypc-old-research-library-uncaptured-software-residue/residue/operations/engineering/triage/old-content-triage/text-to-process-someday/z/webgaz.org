@@ -1,0 +1,88 @@
+#+title: WebGAZ
+#+ghe_schema: term-0.1.4
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-28 Mon 14:27]
+#+roam_tags: community
+
+
+#+name: definition
+The */WebGAZ/* is a [[file:community.org][community]] on the [[file:web.org][Web]], a [[file:groundhog_autonomous_zone.org][Groundhog Autonomous Zone]].
+
+* Introduction
+
+    This record is some of what I (emsenn) know about the */WebGAZ/*. You may use it without limits or promises.
+
+* WebGAZ
+
+** History
+
+   - Came into being in late November, 2020.
+   - Set up a Mobilizon instance early December, 2020.
+   - Moved into a Github group late December, 2020.
+
+** Public Documents
+
+*** Introducing the WebGAZ
+    :PROPERTIES:
+    :EXPORT_DATE: [2020-12-07 Mon 11:38]
+    :END:
+
+   The Groundhog Autonomous Zone (GAZ) is a non-contiguous confederacy of human people acting as mutualists toward the goal of extracting and resources from the contemporary colonial kyriarchist hegemony for the development of non-kyriarchal assets.
+
+   It was created by me, in recognition of my existence within and dependence on colonialism, and a desire to work toward ending both of those states, for all human people.
+
+   To explain the GAZ as a whole, let me explain one area of the Zone, the Cottenboro GAZ.
+
+   The Cottenboro GAZ is located within the colonial settlements of Chapel Hill and Carrboro, in North Carolina territory; on the traditional and unceded land of the Shakori-Eno. It doesn’t have firm borders, but is centered around the head of the “Lloyd” branch of the “Bolin” Creek watershed.
+
+   The heart of the area holds a Free Market, curated by several local mutualists. The Market consists of several tables and bins, available almost all the time, stocked with food and household supplies. The goods come from the waste of local commercial grocers, the farms and gardens of neighbors, and occasionally other groups in the area. Importantly, there is no requirement to present an ID, register any paperwork, or even interact with another person: people can simply come to the area, find the Market, and fill up their bags with whatever they’d like.
+
+   Surrounding the Free Market is an ethnobotanical and ethnopedological workshop that I operate, called Makȟá Šá (red clay) after the ultisol soil that dominates the area. There are active experiments in urban edaphology, using reclaimed shipping materials as agritectural materials, including vermiculture. These experiments support the growing of plants for seeds and division to be gifted to the community, as well as a variety of medicines which are also gifted. (Increasing the amount of medicine produced on-site has been a priority of the Cottenboro GAZ this year, due to COVID-19.)
+
+   I picture the area as an attempt to step into the future: people bring back the land to this hub, and here we shape it into something different than what colonialism has represented it as. In a real way, this helps provide medicine to the community, and gives everyone involved a little… breathing room, letting them, if they want, reconsider their relationship with colonialism.
+
+   The Cottenboro GAZ, as I said, is just one area of the Zone: there are others, I’m just focusing on this one because it was the first, and is the one I know the best.
+
+   Uniting these areas are the stories that those who “work” in them tell each other.
+
+   Prior to today, those stories were told privately, between the folk in the Zone, and it has been hard to coordinate, especially as the project has grown.
+
+   Now, there is a Web service which is intended to serve as a forum for all people who labor for the GAZ. It is run using Mobilizon, which provides mechanisms for holding online groups and organizing events.
+
+   I consider this the first step in expanding the project beyond meeting some immediate survival needs, and I am excited to have taken it!
+   
+   To those of you who are participants in the GAZ, please watch your inboxes for an invitation to the platform. Once you’re in, please remember, this is a mutualist effort: please don’t think you need permission to make new groups or events.
+   
+** Internal Documents
+   
+** Government
+*** Decisions
+
+*** Procedures
+**** Member management
+
+***** Member nomination
+
+      - Potential new members of the WebGAZ must be nominated by an existing member.
+
+***** Member acceptance
+
+      - Nominated potential members of the WebGAZ must be approved by emsenn.
+
+***** Member onboarding
+
+     1) After a potential member is accepted, an active member of the WebGAZ must volunteer as their onboarding buddy.
+     2) The buddy will reach out to the new member to ask for their Github username, or walk them through creating an account.
+     3) The buddy will invite the new member to the Github WebGAZ organization and verify that the new member has access.
+     4) The buddy will tag the new member in the [[https://github.com/webgaz/governance/issues/4][Introductions thread]], asking them to introduce themselves
+     5) The buddy will introduce themselves!
+
+   
+* Supplements
+
+** Record history
+   :LOGBOOK:
+   - Note taken on [2020-12-28 Mon 14:31] \\
+     Started to add details to this record.
+   :END:

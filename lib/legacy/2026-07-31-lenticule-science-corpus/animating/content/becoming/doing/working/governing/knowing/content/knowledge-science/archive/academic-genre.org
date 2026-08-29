@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       5dcab411-2668-4b0e-97ab-3c4d3aa4736c
+:resource-description: (([[id:edaef069-c68d-46aa-a970-d3cb7fe3165c][resource type]] . [[id:31eeb2c2-7bdf-4be8-9050-3b595513d6f1][genre]]) ([[id:2d79d4ba-8d36-4714-869c-081e8d40d24f][field]] . [[id:d2053605-bc09-4bd4-88d4-2e4f6c52941f][academics]]))
+:public:   true
+:END:
+#+title: academic genre
+#+date: [2025-09-25 Thu 09:54]
+

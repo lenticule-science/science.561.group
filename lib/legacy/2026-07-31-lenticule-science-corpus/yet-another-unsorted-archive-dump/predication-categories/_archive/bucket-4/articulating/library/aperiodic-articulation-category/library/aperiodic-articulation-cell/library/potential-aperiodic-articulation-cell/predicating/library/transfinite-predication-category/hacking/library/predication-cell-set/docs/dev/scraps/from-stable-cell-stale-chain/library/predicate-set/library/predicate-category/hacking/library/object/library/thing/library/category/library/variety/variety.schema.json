@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/category/library/variety/variety.schema.json",
+  "title": "Variety",
+  "description": "A variety of universal algebras as data: a signature (a finite list of operation symbols with arities) and a set of equations defining the variety. The category Var's objects each conform to this shape; individual algebras (objects of a given variety) conform to that variety's own schema (e.g., bilattice.schema.json).",
+  "type": "object",
+  "required": ["signature", "equations"],
+  "additionalProperties": false,
+  "properties": {
+    "signature": {
+      "description": "The variety's signature: each entry names an operation symbol and its arity.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "arity"],
+        "additionalProperties": false,
+        "properties": {
+          "name":  {"type": "string"},
+          "arity": {"type": "integer", "minimum": 0}
+        }
+      }
+    },
+    "equations": {
+      "description": "The variety's defining equations as pairs of terms over the signature. Term-encoding is implementation-defined and out of JSON Schema's reach; the consuming verifier checks term well-formedness and equational closure.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["lhs", "rhs"],
+        "additionalProperties": false,
+        "properties": {
+          "lhs": {},
+          "rhs": {}
+        }
+      }
+    }
+  }
+}

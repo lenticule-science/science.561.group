@@ -1,0 +1,37 @@
+{
+  "arrows": [
+    "id_U"
+  ],
+  "commutation_checks": {
+    "composition": true,
+    "identity": true
+  },
+  "covers": [
+    {
+      "arrows": [
+        "id_U"
+      ],
+      "object": "U"
+    }
+  ],
+  "id": "b11d8b57ff259be47caa2eede2691f5ba412895983d4c558b197e03bc6b8debf",
+  "kind": "presheaf",
+  "objects": [
+    "U"
+  ],
+  "restrictions": {
+    "id_U": {
+      "from": "U",
+      "map": {
+        "id_U": "id_U"
+      },
+      "to": "U"
+    }
+  },
+  "sections": {
+    "U": [
+      "id_U"
+    ]
+  },
+  "site_id": "6b08dfac382eb6124b8ac332a8d3b379a35af40bd1fc87ed49ffaf719719e222"
+}

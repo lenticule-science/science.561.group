@@ -1,0 +1,18 @@
+{{ define "main" }}
+  <p>
+    {{ partial "site-main-pages-span.html" .}}
+  </p>
+  <p>
+    {{ partial "recentest-page-span.html" . }}
+  </p>
+  <p>
+
+    in total, this website has around {{ (partial "total-fuzzy-word-count.html" .) | humanize }} words
+  </p>
+  <p>
+    {{ partial "site-main-sections-listing.html" . }}
+  </p>
+  <p>
+    {{ partial "site-tags-listing.html" . }}
+  </p>
+{{ end }}

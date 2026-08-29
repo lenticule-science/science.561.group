@@ -1,0 +1,36 @@
+---
+title: "Counterinsurgency"
+date-created: 2026-03-02
+type: term
+aliases:
+  - "counterinsurgency"
+  - "counter-insurgency"
+  - "COIN"
+tags: []
+description: "The set of practices by which states suppress, disrupt, and preempt organized resistance to their authority."
+defines:
+  - "Counterinsurgency"
+  - "counter-insurgency"
+  - "COIN"
+date-updated: 2026-03-09
+part-of: sociology/topics/state-repression/terms
+---
+
+Counterinsurgency is the set of practices by which states suppress, disrupt, and preempt organized resistance.
+It encompasses military operations, intelligence gathering, [surveillance](/sociology/terms/surveillance.md), infiltration, legal prosecution, propaganda, and the manipulation of social conditions — all directed at preventing effective challenges to state authority.
+
+Counterinsurgency doctrine distinguishes itself from conventional warfare by treating the population as the terrain of conflict.
+The goal is not to defeat an opposing army but to separate a resistance movement from the social base that sustains it.
+This is accomplished through a combination of coercion (arrests, raids, targeted killings) and co-optation (development programs, civic engagement, negotiated settlements) — the "hearts and minds" framework that has organized counterinsurgency thought since the British campaigns in Malaya and the French campaigns in Algeria.
+
+Domestically, counterinsurgency operates through programs like [COINTELPRO](/sociology/terms/cointelpro.md), which applied counterinsurgency logic to domestic political movements: infiltrate, divide, discredit, prosecute.
+The [evidentiary structuration of state repression technologies](/sociology/topics/politics/describing-the-lineage-of-evidentiary-structuration-of-state-repression-technologies.md) documented in this library traces how these techniques evolve and are transmitted across agencies and eras.
+Contemporary counterinsurgency against social movements uses grand jury investigations, conspiracy charges, material support prosecutions, and digital [surveillance](/sociology/terms/surveillance.md) to achieve the same disruption that COINTELPRO achieved through cruder means.
+
+## Related terms
+
+- [COINTELPRO](/sociology/terms/cointelpro.md)
+- [Surveillance](/sociology/terms/surveillance.md)
+- [Snitch-jacketing](/sociology/terms/snitch-jacketing.md)
+- [Intelligence](/militarism/disciplines/intelligence/index.md) — the military discipline that treats counterinsurgency intelligence as an operational function
+- [HUMINT](/militarism/disciplines/intelligence/terms/humint.md) — the collection discipline counterinsurgency relies on most heavily for infiltration and informant operations

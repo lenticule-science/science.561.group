@@ -1,0 +1,6 @@
+#+title: Emacs theme
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-19 Sat 18:28]
+#+roam_tags: term
+An */Emacs theme/* is an [[file:emacs_package.org][Emacs package]] for styling the [[file:user_interface.org][user interface]].

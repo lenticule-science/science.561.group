@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       129fc563-2c24-4b8a-b259-868e0b4672e2
+:public:   true
+:resource-description: (([[id:edaef069-c68d-46aa-a970-d3cb7fe3165c][resource type]] . [[id:221785e0-0be3-4de9-afbe-0dd5807d8461][critical theory concept]]) ([[id:5950d59a-8d30-47e6-939c-171327e23b44][creator]] . [[id:c979ca4d-1cfa-43bf-b079-f9c416f58ddd][Walter Benjamin]]) ([[id:ab72ac89-1245-4674-8dd5-c3088a981504][provincial derivation]] . [[id:03b050b0-adaa-4a1e-b2c4-90ad41ade884][Über den Begriff der Geschichte]]))
+:ROAM_ALIASES: "schwache messianische Kraft"
+:END:
+#+title: weak messianic power
+#+date: [2025-09-03 Wed 21:14]
+

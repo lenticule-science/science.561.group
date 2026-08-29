@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       90775299-0211-4e62-a14d-253dacc81df5
+:END:
+#+title: JavaScript Object Notation for Linked Data
+#+date: [2025-10-16 Thu 16:48]
+

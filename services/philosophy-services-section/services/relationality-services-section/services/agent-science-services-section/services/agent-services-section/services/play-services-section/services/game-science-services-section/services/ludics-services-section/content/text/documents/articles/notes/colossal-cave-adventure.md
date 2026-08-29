@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       3e52ce0f-a250-4744-9a1b-a1738f523510
+:node-relations: (([[id:bee496e1-139b-4a7f-8a24-d4c14e6084c6][instantiates]] . [[id:5c223bca-823a-4c2a-9c59-fb1c32f7c8aa][computer game]]) ([[id:5950d59a-8d30-47e6-939c-171327e23b44][creator]] . [[id:5a9b0814-7906-47c1-9779-c720b15ba3e1][Will Crowther]]) ([[id:6a4d2a88-04a3-4007-8555-5fe16d965831][publication date]] . [[id:465553ac-f715-4198-96a1-b12140c42bb0][1975]]))
+:END:
+#+title: Colossal Cave Adventure
+#+date: [2025-08-29 Fri 20:50]

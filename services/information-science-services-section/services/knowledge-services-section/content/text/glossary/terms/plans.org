@@ -1,0 +1,60 @@
+** TODO Figure out the layout of the house's plumbing 
+:PROPERTIES:
+:EFFORT:   2:00
+:END:
+Then I can know which faucets specifically to open in the winter.
+** TODO [#A] [0/2] Plant garlic
+*** TODO [#A] Scythe the intended area low
+:PROPERTIES:
+:EFFORT:   1:30
+:END:
+*** TODO [#A] Plant the garlic
+:PROPERTIES:
+:EFFORT:   2:00
+:END:
+** TODO [#B] [0/5] Plant radish bed
+*** TODO Scythe the intended area low
+:PROPERTIES:
+:EFFORT:   1:30
+:END:
+*** TODO Till the area
+:PROPERTIES:
+:EFFORT:   1:30
+:END:
+*** TODO Mix in compost
+:PROPERTIES:
+:EFFORT:   1:00
+:END:
+*** TODO Plough the area
+:PROPERTIES:
+:EFFORT:   1:00
+:END:
+*** TODO Plant the radishes
+:PROPERTIES:
+:EFFORT:   1:00
+:END:
+** TODO [#C] [0/2] Plant greens
+*** TODO Rake the intended area
+:PROPERTIES:
+:EFFORT:   1:30
+:END:
+*** TODO Scatter seed
+:PROPERTIES:
+:EFFORT:   1:00
+:END:
+** TODO [#B] Figure out the houseplant situation
+General criteria:
+- Nontoxic to pets
+- Easy to propagate
+*** Figure out houseplants for the south window
+*** Figure out houseplants for the north window
+*** Figure out houseplants for other places
+**** Kitchen lamp
+Probably just pothos, maybe tiny parlour palms?
+**** Bedfoot table
+Succulents are there right now?
+** TODO Consider AK Press subscription
+https://www.akpress.org/friends-combo.html
+** TODO Prepare seeds for Raven
+*** TODO pick out the seeds
+*** TODO Learn how to mail a package of seeds

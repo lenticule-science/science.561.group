@@ -1,0 +1,7 @@
+#+title: Shalabh Chaturvedi: "Systems, not Programs"
+#+roam_key: https://shalabh.com/programmable-systems/systems-not-programs.html
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-18 Fri 13:43]
+*/Systems, not Programs/* is an article written by [[file:shalabh_chaturvedi.org][Shalabh-Chaturvedi]] discussing [[file:computer.org][computers]] and our relationship to them as [[file:programming.org][programmable]] [[file:tool.org][tools]].
+

@@ -1,0 +1,7 @@
+#+title: food
+#+roam_alias: "culinary" "cooking" "cook"
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-19 Sat 21:06]
+#+roam_tags: term
+*/Food/* is a type of [[file:medicine.org][medicine]].

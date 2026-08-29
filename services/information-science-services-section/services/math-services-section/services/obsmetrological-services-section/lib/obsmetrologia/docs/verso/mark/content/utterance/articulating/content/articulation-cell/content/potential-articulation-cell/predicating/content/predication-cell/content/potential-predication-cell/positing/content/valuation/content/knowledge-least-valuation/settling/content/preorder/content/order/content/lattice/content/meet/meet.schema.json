@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/preorder/content/order/content/lattice/content/meet",
+  "title": "meet",
+  "description": "The greatest lower bound of two elements of a lattice, a ∧ b — the largest element below both. Conjunction in logic, intersection in sets; unique by the order's antisymmetry; right-adjoined by the Heyting implication.",
+  "type": "object",
+  "required": [
+    "operation",
+    "greatest-lower-bound"
+  ],
+  "properties": {
+    "operation": {
+      "description": "a binary operation ∧ : carrier × carrier → carrier",
+      "const": "binary-operation"
+    },
+    "greatest-lower-bound": {
+      "description": "a ∧ b is a lower bound of {a,b} and the greatest such — its universal property",
+      "const": true
+    }
+  }
+}

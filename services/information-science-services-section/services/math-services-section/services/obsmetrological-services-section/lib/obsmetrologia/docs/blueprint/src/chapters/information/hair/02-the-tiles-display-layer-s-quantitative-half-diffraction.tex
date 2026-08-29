@@ -1,0 +1,109 @@
+\section{The Tiles display layer's quantitative half: diffraction}
+
+\Cref{thm:weave-tiles-entropy} requires a quantitative fiber over the
+charge-coloured carrier.  This subgraph names that fiber: autocorrelation and its
+Fourier transform, the diffraction spectrum.
+
+\begin{theorem}[Finite autocorrelation is measured over displacements]\label{thm:finite-diffraction-mass}\lean{Obsmetrologia.AperiodicOrder.Tiling.finiteDiffractionMass}\leanok\uses{thm:finite-probability-measure-carrier, thm:measure-is-valuation}
+For a Boolean pattern on the finite cyclic carrier \(\operatorname{Fin}(n+1)\),
+the pair-correlation function can be pushed through the existing counting
+measure on the finite displacement sample space.  The result is a finite
+intensity-event mass: not a Fourier transform, but a measured boundary residue
+whose empty, total, and monotonicity laws are inherited from the finite
+probability-measure carrier.
+\end{theorem}
+
+\begin{theorem}[Full finite displacement support is Delone]\label{thm:finite-displacement-delone}\lean{Obsmetrologia.AperiodicOrder.Tiling.finiteDisplacementDelone_of_full}\leanok\uses{thm:finite-diffraction-mass}
+On the finite displacement carrier \(\operatorname{Fin}(n+1)\), a full Boolean
+support is Delone in the finite sense available to \texttt{Diffraction.lean}:
+local finiteness and separation are automatic, and relative density is witnessed
+inside the listed finite displacement sample space.  This is a finite carrier
+predicate, not an analytic Delone theorem in a locally compact metric group.
+\end{theorem}
+
+\begin{theorem}[Homometry preserves finite diffraction mass]\label{thm:homometric-finite-diffraction-mass}\lean{Obsmetrologia.AperiodicOrder.Tiling.homometric_finiteDiffractionMass_eq}\leanok\uses{thm:finite-diffraction-mass}
+Homometric finite patterns have the same finite diffraction mass for every
+intensity event.  This proves the boundary-observational direction available in
+the finite core: equal pair-correlation gives equal measured residue.  The
+converse and the analytic inversion problem are not claimed here.
+\end{theorem}
+
+\begin{theorem}[Finite diffraction mass splits into three component counts]\label{thm:finite-diffraction-decomposition-mass}\lean{Obsmetrologia.AperiodicOrder.Tiling.finiteDiffractionDecomposition_mass}\leanok\uses{thm:finite-diffraction-mass}
+Every finite classifier into pure-point, singular-continuous, and
+absolutely-continuous component faces induces three disjoint events covering the
+sample space.  The existing finite measure laws then give
+\(\mu(\Omega)=\mu_{\mathrm{pp}}+\mu_{\mathrm{sc}}+\mu_{\mathrm{ac}}\) as a
+counting identity.
+\end{theorem}
+
+\begin{theorem}[The finite diffraction classifier agrees with charge, regime, and \(H^1\)]\label{thm:finite-diffraction-classifier-agreement}\lean{Obsmetrologia.AperiodicOrder.Tiling.finite_diffraction_classifier_agreement}\leanok\uses{thm:finite-diffraction-decomposition-mass, thm:salem-pisot-regime-split, thm:clinv-dichotomy}
+The finite component labels read the same proved split through the existing
+faces: charge-regime trichotomy, closure regime, the Pisot/Salem StepN split,
+and the exhibited nonzero aperiodic \(H^1\) witness.  This is the measured
+finite classifier; the finite Fourier-side readout is promoted separately in
+\cref{thm:salem-color-line-fourier-atom}.
+\end{theorem}
+
+\begin{theorem}[Finite predictor phase readings share one phase map]\label{thm:finite-predictor-phase-type}\lean{Obsmetrologia.AperiodicOrder.Tiling.phaseType_evidence}\leanok\uses{thm:finite-diffraction-classifier-agreement, thm:finite-diffraction-mass, thm:salem-pisot-regime-split, thm:metallic-power-dichotomy}
+On the finite predictor-level carrier already present in Lean, there is a
+single map \(\texttt{phaseType}\) whose diffraction-component, bigraded-charge,
+Pisot/Salem scaling, and closure-regime readings agree on the nose
+(\(\texttt{phaseType\_readings\_agree}\)).  The evidence bundle also records the
+nontrivial bigraded trichotomy, the Salem/Pisot regime split, the metallization
+dichotomy, and the finite total-mass law inherited from the measure layer.  This
+is the proved finite/predictor interface, not the analytic primitive-substitution
+spectral theorem.
+\end{theorem}
+
+\begin{theorem}[Finite Pisot readout is a pure-point quasicrystal surrogate]\label{thm:finite-pure-point-quasicrystal}\lean{Obsmetrologia.AperiodicOrder.Tiling.finitePurePointQuasicrystal_of_full_pisot}\leanok\uses{thm:finite-displacement-delone, thm:finite-predictor-phase-type, thm:salem-color-line-fourier-atom}
+If the finite displacement support is full and the StepN side is Pisot, Lean
+packages the support as a finite pure-point quasicrystal surrogate: Delone in
+the finite displacement carrier, with finite Fourier-side component
+pure-point and positive atom mass equal to the total finite diffraction mass.
+This is the corpus's finite quasicrystal carrier; the analytic diffraction
+measure theorem remains separate.
+\end{theorem}
+
+\begin{theorem}[Primitive substitution phase type]\label{thm:primitive-substitution-phase-type}\notready\uses{thm:finite-predictor-phase-type, thm:draft-diffraction-spectrum, thm:weave-diffraction-pisot, thm:weave-is-metallic}
+\emph{(Open frontier --- stated, not formalized.)} The full theorem would
+construct a substitution-indexed map
+\(\texttt{phaseType} : \texttt{Substitution} \to \texttt{Regime}\) such that for
+every primitive substitution \(s\), the four readings agree:
+\[
+  \texttt{lebesgueType}(\texttt{finiteDiffractionMass}\,s)
+  = \texttt{regimeOf}(\texttt{truthContent}\,s)(\texttt{inconsistencyContent}\,s)
+  = \texttt{pisotSalemClass}(\texttt{scaling}\,s)
+  = \texttt{closureRegime}\,s.
+\]
+The current library does not yet have the general substitution carrier,
+one-argument diffraction mass, analytic Lebesgue decomposition, Fourier-side
+measure, or textile-to-substitution identification needed for this statement.
+\end{theorem}
+
+\begin{theorem}[The charge autocorrelation of a draft]\label{thm:draft-autocorrelation-measure}\notready\uses{thm:thickened-torus-z2-carrier, thm:charge-coloured-sofic}
+\emph{(Open frontier --- stated, not formalized.)} A charge-coloured draft
+(\cref{thm:charge-coloured-sofic}) carries an autocorrelation: the shift-averaged
+coincidence measure $\gamma(t)=\lim_{R}\frac{1}{|B_R|}\sum_{v}\langle c(v),c(v+t)\rangle$ of
+its charge field over the $\mathbb{Z}^2$ carrier (\cref{thm:thickened-torus-z2-carrier}).
+The pairing $\langle\cdot,\cdot\rangle$ is the knowledge-order ($\leq_k$) coincidence on
+\texttt{Charge}, so the autocorrelation measures how far apart two cells must lie before
+their charges decorrelate. Plain weave's one-bit collapse
+(\cref{thm:weave-entropy-collapse}) is the degenerate periodic autocorrelation. Requires an
+averaging measure on the torus carrier.
+\end{theorem}
+
+\begin{theorem}[The diffraction spectrum is the measured entropy]\label{thm:draft-diffraction-spectrum}\notready\uses{thm:homometric-finite-diffraction-mass, thm:salem-color-line-fourier-atom, thm:draft-autocorrelation-measure, thm:weave-tiles-entropy, thm:weave-is-metallic, thm:diamond-spectral-portrait}
+\emph{(Open frontier --- stated, not formalized.)} The diffraction spectrum is
+the Fourier transform $\widehat{\gamma}$ of the charge autocorrelation
+(\cref{thm:draft-autocorrelation-measure}): a periodic isonemal draft has pure-point
+(Bragg) diffraction, a quasiperiodic weave has a pure-point spectrum on a rank-$>2$ module
+(the Sturmian/Ammann cases), and a positive-entropy float-twill has a singular-continuous
+or absolutely-continuous component. The bit-measured entropy of
+\cref{thm:weave-tiles-entropy} is the entropy of this spectral measure.  The
+spectrum type is determined by the Pisot/Salem character of the metallic
+inflation (\cref{thm:weave-is-metallic}), whose finite readout is now green in
+\cref{thm:salem-color-line-fourier-atom}, and the causal-spectral portrait
+(\cref{thm:diamond-spectral-portrait}).  The residue is the explicit
+Bombieri--Taylor diffraction measure and the analytic Fourier transform, not
+the finite readout carrier.
+\end{theorem}

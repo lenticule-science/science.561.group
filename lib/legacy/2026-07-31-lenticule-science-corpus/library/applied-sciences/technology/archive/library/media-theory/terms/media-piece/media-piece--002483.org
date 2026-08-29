@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       abf8b020-c1e2-42a0-a765-fa2660a52148
+:node-relations: (([[id:bee496e1-139b-4a7f-8a24-d4c14e6084c6][instantiates]] . [[id:0cded482-111c-4abb-ab25-5ed884738566][unit]]) ([[id:2d79d4ba-8d36-4714-869c-081e8d40d24f][field]] . [[id:dbc2dd5a-0168-4c28-9647-1ef2d35f1a88][media theory]]))
+:END:
+#+title: media piece
+#+date: [2025-08-29 Fri 21:50]
+

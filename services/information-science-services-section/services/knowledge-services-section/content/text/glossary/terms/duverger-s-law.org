@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       7398aaa0-f9ba-429d-bec5-799bfc4e54ca
+:END:
+#+title: Duverger's Law
+#+date: [2025-09-28 Sun 20:54]
+

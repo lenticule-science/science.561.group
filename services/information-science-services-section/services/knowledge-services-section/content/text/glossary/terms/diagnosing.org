@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       a36115d1-ffc8-400b-8e73-2d4416bcbba7
+:END:
+#+title: diagnosing
+#+date: [2025-09-21 Sun 07:13]
+

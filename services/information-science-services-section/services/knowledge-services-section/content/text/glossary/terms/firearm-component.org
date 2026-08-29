@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       a1f46fb1-c2f1-46d7-86db-57b7eaae59f0
+:END:
+#+title: firearm component
+#+date: [2025-10-04 Sat 23:48]
+

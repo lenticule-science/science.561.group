@@ -1,0 +1,6 @@
+{{ $mentions := getJSON (add "https://webmention.io/api/mentions.jf2?target=" .Permalink) }}
+{{ $mentions.name | default "Webmentionssss" }}
+{{ with $mentions.children }}
+<ul>{{ range . }}
+<li>{{ . }}</li>
+{{ end }}{{ end }}

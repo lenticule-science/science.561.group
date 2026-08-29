@@ -1,0 +1,32 @@
+---
+type: concept
+symbol: "φ"
+depends-on: [entity, predicate, predication-cell-set]
+see-also: [subject, object, predicate, predication-valuation, predication-fiber-algebra, evidence, adjudication]
+---
+
+# Predication cell
+
+The role of an *assertion-position* — the location at which a [predication valuation](../objects/predication-valuation.md) records evidence about a predicate's instantiation on a pair of entities. Concretely, a predication cell is an ordered triple $\phi = (s, p, o)$ whose first coordinate is an [entity](entity.md) (the [subject](subject.md)), second is a [predicate](predicate.md), and third is an entity (the [object](object.md)); but the role's content lies in the *orientation* the triple carries, not in its tuple structure.
+
+## The asymmetry of the role
+
+The predication cell is not a generic relational triple. It is *oriented from subject to object through the predicate*: the cell $(s, p, o)$ asserts something *of $s$ in relation to $o$*, not symmetrically about the pair $\{s, o\}$. Three structural consequences of this orientation distinguish the role from a flat $(\text{node}, \text{label}, \text{node})$ triple of an RDF or property-graph framework:
+
+- **Subject and object positions are not interchangeable.** The cell $(s, p, o)$ and the cell $(o, p, s)$ are *distinct* assertion-positions, with independent values. Their relationship is mediated by the [predicate converse](../morphisms/predicate-converse.md) generator, not by any symmetry on the cell index.
+- **The predicate is a typed coordinate, not a label.** Predicates live in a small category $\mathcal{C}$ — the [predicate category](../objects/predicate-category.md) — with morphisms in four classes ([specialization](../morphisms/predicate-specialization.md), [converse](../morphisms/predicate-converse.md), [subject-projection](../morphisms/predicate-subject-projection.md), [object-projection](../morphisms/predicate-object-projection.md)). The predicate coordinate of a cell carries the typing that licenses reindexing along these morphisms; "label" is too thin a word for the role.
+- **The entity-pair index is the diagonal of two transversal projections.** Cells of the form $(s, p, s)$ — same entity in both positions — are the fixed points of both projection generators, and the projection morphisms collapse $E \times E$ along the two distinct diagonals. This asymmetry is what makes [n-ary predication](../objects/n-ary-predication.md) decompose into binary cells with explicit orientation rather than into a symmetric set-of-relations.
+
+This is the orientation that the [cohomology layer](prose/teaching/explanations/cohomology-relations-to-prior-work.md) calls "the s→o-oriented predication cell." Stripping the orientation off — treating cells as elements of a generic simplicial complex, or values as held at unoriented vertices — loses exactly the content the program's theorems are about.
+
+## Where values live
+
+A predication cell is *the location at which* a value is held; the value itself lives in the [predication fiber algebra](../objects/predication-fiber-algebra.md) $A_p = \mathbf{L}^{\bowtie\, E \times E}$ at the cell's predicate coordinate. A [predication valuation](../objects/predication-valuation.md) $v$ assigns each predicate $p$ an element $v(p) \in A_p$, which evaluates at the entity-pair $(s, o)$ to give the cell's value $v(p)(s, o) \in \mathbf{L}^\bowtie$ — a bilattice value tracking [evidence](evidence.md) for and against the predication. The cell is therefore the *carrier* of the role, not the value: many cells share a fiber algebra (every cell with predicate $p$ draws its value from $A_p$), and many valuations can be defined on the same cell.
+
+## As an element of the cell set
+
+Set-theoretically, a predication cell is an element of the [predication cell set](../objects/predication-cell-set.md) $\Phi = E \times \Pi \times E$ — the Cartesian product of an [entity set](../objects/entity-set.md), a [predicate set](../objects/predicate-set.md), and the entity set. The predication cell set is the discrete index over which valuations range; the predicate category $\mathcal{C}$ is the *typed* index that licenses reindexing. The two indices are compatible: a morphism $f : q \to p$ in $\mathcal{C}$ acts on values in $A_p$ to produce values in $A_q$, and at the cell level this is the reindexing that aligns $(s, q, o)$-cells with $(s, p, o)$-cells through the typing on the second coordinate.
+
+## Under settling and adjudication
+
+Across a [predication settling](../objects/predication-settling.md), each cell carries a *trajectory* in $\mathbf{L}^\bowtie$ — the sequence of values $(v_\tau(p)(s, o))_{\tau < \lambda}$ as the settling unfolds. [Settling monotonicity](settling-monotonicity.md) makes the trajectory $\leq_k$-monotone cellwise, and [closure-drivenness](closure-drivenness.md) determines its successor steps from the increment sequence and the closure operator. Cells are therefore the granularity at which [adjudication](adjudication.md) happens: every assertion-position in the system has its own evidence-trajectory, its own current state, and its own contribution to the [settling-associated sheaf](../objects/settling-associated-sheaf.md). The framework's compositional structure — fibers indexed by predicates, reindexing by the four generators, monotone evolution under closure, and merge across replicas — is what licenses treating each cell as locally adjudicated while the global structure remains coherent.

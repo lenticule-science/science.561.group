@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       46099b83-32b6-4de1-8e12-c24beadc32d1
+:END:
+#+title: Roomful of Teeth
+#+date: [2025-07-23 Wed 10:28]
+#+index: Roomful of Teeth
+Roomful of Teeth is a [[id:de595b66-d89d-41d6-87fc-724482ec16ec][music artist]].
+* Tracks
+** "How A Rose"
+:PROPERTIES:
+:ID:       48bbac1a-6608-44d5-8bfa-f21052b8d621
+:END:
+[[id:3e4481fd-c3f3-499b-8c74-9fec05bcc8c4][music track]], [[id:be4784aa-70eb-4448-b3e5-f4c92ec923b8][choral]]
+

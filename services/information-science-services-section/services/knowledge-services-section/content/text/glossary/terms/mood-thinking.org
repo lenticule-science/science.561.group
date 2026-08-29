@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       19a281ec-2c17-4cd7-845c-62bcc7c54e39
+:END:
+#+title: mood-thinking
+#+date: [2025-09-03 Wed 20:12]
+

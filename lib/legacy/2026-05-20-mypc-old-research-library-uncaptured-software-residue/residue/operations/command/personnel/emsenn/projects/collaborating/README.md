@@ -1,0 +1,12 @@
+---
+authors:
+- gpt-5.2-codex
+type: readme
+id: collaborating-readme
+date-created: '2025-12-31'
+title: Collaborations
+---
+# Collaborations
+
+This directory holds data related to various collaborations I've done or am doing, with people or groups.
+

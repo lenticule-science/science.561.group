@@ -1,0 +1,296 @@
+#+SETUPFILE: ./default-setup.inc
+#+TITLE: emsenn's Emacs Stuff
+#+EXPORT_FILE_NAME: ../pub/emacs-stuff
+#+DESCRIPTION: A literately-programmed Emacs configuration, mostly for using Org-mode.
+#+INDEX: Emacs!/emsenn's Emacs Stuff/
+#+TOC: headlines 1
+* Introduction
+*/Emacs/* is the text-editor I use to interact with most documents
+when on a computer, and I use it for accomplishing a few other tasks
+as well. This document outlines my configuration.
+
+Most of the time, I'm using Emacs to work with Org-mode - even when
+I'm writing in other languages, I use literate programming, so write
+essays (like this one) that include code blocks that can be /tangled/
+out to the usable code.
+#+INCLUDE: "./plates.inc::draft"
+#+INCLUDE: "./plates.inc::default-eli"
+#+INCLUDE: "./plates.inc::contemporary"
+* =init.el= [0/8]
+  :PROPERTIES:
+  :CUSTOM_ID: init-el
+  :header-args: :tangle ~/.emacs.d/init.el :results none :comments no :padline no
+  :END:
+The =init.el= file, kept under =~/.emacs.d/=, is where I keep all my
+Emacs configuration. I'm sure at some point I'll want to divide it up,
+but I haven't had a need to, yet.
+#+TOC: headlines local 2
+** Package Manager Initialization
+*** Set Up =use-package=
+#+NAME: init-el-setup-use-package
+#+BEGIN_SRC elisp
+  (package-initialize)
+  (require 'package)
+  (add-to-list 'package-archives
+	       '("melpa" . "http://melpa.org/packages/") t)
+  (add-to-list 'package-archives '("org" . "https://orgmode.org/elpa/") t)
+  (eval-when-compile
+    (add-to-list 'load-path "~/.emacs.d/elpa")
+    (add-to-list 'load-path "~/.emacs.d/git")
+    (require 'use-package))
+#+END_SRC
+I use John Wiegley's =use-package= package to manage my packages.
+(It's amazing how gibberish some sentences about computers sound,
+isn't it?)
+
+I'm pretty sure for this to work, you have to manually install
+use-package yourself, but I'm not sure.
+
+Oh, this also adds MELPA and Org-mode's repositories as package
+sources - as well as the local =elpa/= and =git/= folders, under the
+=~/.emacs.d/= directory.
+*** Configure Auto-Update
+#+BEGIN_SRC elisp
+  (use-package auto-package-update
+	       :ensure t
+	       :config
+	       (setq auto-package-update-delete-old-versions t)
+	       (setq auto-package-update-hide-results t)
+	       (auto-package-update-maybe))
+#+END_SRC
+TBH I copied this from somewhere and I don't recall where, nor what it
+does.
+
+** Save & Backup Configuration
+#+begin_src elisp
+  (setq auto-save-mode nil)
+  (setq backup-directory-alist
+	`(("." . ,(concat user-emacs-directory "backups"))))
+#+end_src
+** Basic Client Configuration
+#+begin_src elisp
+  (setq inhibit-startup-message t)
+  (setq initial-scratch-message nil)
+  (setq initial-major-mode 'org-mode)
+  (setq ring-bell-function 'ignore)
+  (set-face-attribute 'default nil :height 148)
+  (menu-bar-mode -1)
+  (tool-bar-mode -1)
+  (setq show-paren-delay 0)
+  (show-paren-mode 1)
+  (setq echo-keystrokes 0.1)
+  (setq fill-column 68)
+  (setq mouse-wheel-scroll-amount '(1 ((shift) .1)))
+  (setq line-number-mode t)
+  (setq column-number-mode t)
+  (setq-default truncate-lines t)
+  (setq sentence-end-double-space nil)
+  (add-hook 'before-save-hook 'delete-trailing-whitespace)
+  (setenv "PATH" (concat (getenv "PATH") ":~/.local/bin"))
+#+end_src
+** GUI Configuration
+** Theme Configuration
+#+begin_src elisp
+  (defadvice load-theme (before theme-dont-propagate activate)
+    (mapc #'disable-theme custom-enabled-themes))
+  (use-package base16-theme
+	     :ensure t
+	     :config
+	     (load-theme 'base16-grayscale-light t))
+#+end_src
+** Packages [1/6]
+#+TOC: headlines local 2
+*** DONE HTMLize
+    CLOSED: [2019-04-22 Mon 17:11]
+[[https://www.emacswiki.org/emacs/Htmlize][htmlize.el]] is "a package for exporting the contents of an Emacs buffer
+as HTML while respecting display properties such as colors, fonts,
+underlining, invisibility, etc."
+
+It's used by several parts of [[#org][Org]].
+#+NAME: init-el-use-htmlize
+#+BEGIN_SRC elisp
+  (use-package htmlize
+	       :ensure t)
+#+END_SRC
+
+*** Magit
+#+begin_src elisp
+  (use-package magit
+	       :ensure t)
+#+end_src
+*** Ob-crystal
+#+BEGIN_SRC elisp
+  (use-package ob-crystal
+	       :ensure t)
+#+END_SRC
+*** Org
+    :PROPERTIES:
+    :CUSTOM_ID: org
+    :END:
+#+BEGIN_SRC elisp
+  (use-package org
+    :mode (("\\.org$" . org-mode) ("\\.inc$" . org-mode))
+    :ensure org-plus-contrib
+    :bind (("C-c l" . org-store-link)
+	   ("C-c c" . org-capture)
+	   ("C-c a" . org-agenda)
+	   ("C-c b" . org-iswitchb)
+	   ("C-c C-w" . org-refile)
+	   ("C-c j" . org-clock-goto)
+	   ("C-c C-x C-o" . org-clock-out))
+    :config
+    (progn
+      (setq org-log-done t)
+      (setq org-image-actual-width nil)
+      (setq org-agenda-custom-commands
+	    '(("A" "Agenda and TODO"
+	       ((agenda "" )
+		(alltodo "" )))))
+      (setq org-agenda-todo-ignore-scheduled 'all)
+      (setq org-agenda-files '("~/org/personal/src/index.org"))
+      (setq org-link-abbrev-alist '(
+                                    ("ems-domestic-manual" . "file:~/org/src/domestic-manual.org::#%s")))
+      (setq org-export-allow-bind-keywords t)
+      (setq org-todo-keywords
+      '((sequence "DRAFT" "EDIT" "|" "DONE")
+	(sequence "|" "CANCELED")))
+      (setq org-capture-templates
+	    '(("s" "New Source File" plain (file "~/org/triage/source-capture.org")
+	       "#+SETUPFILE: ~/org/templates/setupfile0.org\n#+TITLE: %^{TITLE}\n#+EXPORT_FILE_NAME: ../pub/%^{SLUG}\n* Introduction\n%?\n#+INCLUDE: \"./eli.org::#draft\"\n#+INCLUDE: \"./eli.org::#eli\"\n* %\\1\n  :PROPERTIES:\n  :CUSTOM_ID: contents\n  :END:\n* Supplements\n#+INCLUDE: \"./mit-license.org::#license\"")
+	      ("l" "New Log Entry" entry (file+olp+datetime "~/org/personal.org" ["Logs"])
+	       ""
+	       )))))
+#+END_SRC
+*** Org-babel
+#+BEGIN_SRC elisp
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '(
+   (crystal . t)
+   (ledger . t)
+   (shell . t)))
+#+END_SRC
+*** Ox-Publish
+The */Ox-Publish/* package handles the */publishing/* of Org-mode
+*/projects/*, collections of Org-mode files and associated resources.
+#+BEGIN_SRC elisp
+  (require 'ox-publish)
+  (setq org-publish-project-alist
+	'(
+#+END_SRC
+
+#+TOC: headlines 1 local
+**** Essays
+#+BEGIN_SRC elisp
+	  ("essays"
+	   :base-directory "~/org/src/essays/"
+	   :base-extension "org"
+	   :publishing-directory "~/org/pub/essays/"
+	   :auto-sitemap t
+	   :sitemap-title ""
+	   :makeindex t
+	   :publishing-function org-html-publish-to-html
+	   :auto-preamble t
+	   )
+#+END_SRC
+**** Teraum
+#+BEGIN_SRC elisp
+	  ("teraum"
+	   :base-directory "~/org/projects/teraum/src/"
+           :base-extension "org"
+	   :publishing-directory "~/org/projects/teraum/pub/"
+	   :recursive t
+	   :auto-sitemap t
+	   :sitemap-title ""
+	   :makeindex t
+	   :publishing-function org-html-publish-to-html
+	   :auto-preamble t
+	   )
+#+END_SRC
+**** Personal Records
+#+BEGIN_SRC elisp
+	("personal-records"
+	 :base-directory "~/org/personal/src/"
+	 :base-extension "org"
+	 :publishing-directory "~/org/personal/pub/"
+	 :auto-sitemap t
+	 :sitemap-title ""
+	 :makeindex t
+	 :publishing-function org-html-publish-to-html
+	 :auto-preamble t
+	 )
+#+END_SRC
+**** Recordkeeping Manual
+#+BEGIN_SRC elisp
+	("recordkeeping-manual"
+	 :base-directory "~/org/src/recordkeeping-manual/"
+	 :base-extension "org"
+	 :publishing-directory "~/org/pub/recordkeeping-manual/"
+	 :auto-sitemap t
+	 :sitemap-title ""
+	 :makeindex t
+	 :publishing-function org-html-publish-to-html
+	 :auto-preamble t
+	 )
+#+END_SRC
+**** Writing Manual
+#+BEGIN_SRC elisp
+	("writing-manual"
+	 :base-directory "~/org/src/writing-manual/"
+	 :base-extension "org"
+	 :publishing-directory "~/org/pub/writing-manual/"
+	 :auto-sitemap t
+	 :sitemap-title ""
+	 :makeindex t
+	 :publishing-function org-html-publish-to-html
+	 :auto-preamble t
+	 )))
+#+END_SRC
+*** Webpaste
+#+begin_src elisp
+(use-package webpaste
+  :ensure t
+  :bind (("C-c C-p C-b" . webpaste-paste-buffer)
+         ("C-c C-p C-r" . webpaste-paste-region))
+  :config
+  (progn
+    (setq webpaste-provider-priority '("ptpb.pw"))))
+#+end_src
+
+*** Writegood-mode
+#+BEGIN_SRC elisp
+  (use-package writegood-mode
+    :ensure t
+    :bind (("\C-c\C-gg" . writegood-grade-level)
+	   ("\C-c\C-ge" . writegood-reading-ease))
+    :init
+    (progn
+      (writegood-mode 1))
+    :config
+    (progn
+      (setq ispell-program-name "aspell")
+      (setq ispell-list-command "--list") ;; run flyspell with aspell, not ispell
+    ))
+#+END_SRC
+*** Flyspell-mode
+#+BEGIN_SRC elisp
+  (use-package flyspell
+    :ensure t
+    :init
+    (progn
+      (writegood-mode 1))
+  )
+#+END_SRC
+** Elisp Functions
+* Supplements
+#+TOC: headlines local 1
+** Contribute
+   :PROPERTIES:
+   :CUSTOM_ID: supplements-contribute
+   :END:
+#+INCLUDE: "./plates.inc::personal-contribute"
+** License
+   :PROPERTIES:
+   :CUSTOM_ID: supplements-license
+   :END:
+#+INCLUDE: "./plates.inc::mit-license"

@@ -1,0 +1,29 @@
+# Obsmetrologia Verso docs: type-checked prose over the Obsmetrologia library.
+#
+# The manual package builds against the Obsmetrologia source tree. Obsmetrologia never
+# depends on the manual. The proof-tree markdown under docs/verso/mark is mounted into
+# the manual appendix by the docs assembly script.
+
+name = "obsmetrologia-verso-docs"
+defaultTargets = ["obsmetrologia-docs"]
+
+[leanOptions]
+autoImplicit = false
+relaxedAutoImplicit = false
+pp.unicode.fun = true
+
+[[require]]
+name = "verso"
+git = "https://github.com/leanprover/verso.git"
+rev = "v4.31.0"
+
+[[lean_lib]]
+name = "Obsmetrologia"
+srcDir = "../.."
+
+[[lean_lib]]
+name = "ObsmetrologiaManual"
+
+[[lean_exe]]
+name = "obsmetrologia-docs"
+root = "Main"

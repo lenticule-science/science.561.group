@@ -1,0 +1,59 @@
+---
+type: morphism
+class: data-access-operation
+realizes: [inconsistency-sheaf, settling-cohomology]
+depends-on: [inconsistency-sheaf-record, query, cost-discipline-reads-free, audit-content-via-inconsistency-sheaf-cohomology, paraconsistent-equality, four-bilattice]
+see-also: [query, repair-as-top-cell-resolution, federation-trust-bilattice-graded]
+---
+
+# Query inconsistency cohomology
+
+The substrate operation that *executes a cohomological audit query* against an [inconsistency-sheaf record](../objects/inconsistency-sheaf-record.md), returning the $H^0$ count of $\top$-cells in a region, the $H^1$ classes connecting distant contradictions, or a derived audit predicate (presence of a particular attack signature, federation-conflict aggregation, etc.).
+
+Per [audit-content-via-inconsistency-sheaf-cohomology](../theorems/audit-content-via-inconsistency-sheaf-cohomology.md), the substrate's audit content lives in the cohomology of $\mathcal{F}_U^{(\top)}$. This morphism is the substrate-side primitive that *computes* that cohomology — converting the structural theorem into an operator the engineering can invoke.
+
+## Signature
+
+`query-inconsistency-cohomology(audit-expression, region?, degree?) → (cohomology-result, query-witness)`
+
+Inputs:
+
+- **`audit-expression`** — an audit query: $H^0$-count, $H^1$-class enumeration, attack-pattern match, federation-conflict aggregation, repair-history trace, or a composition of these. Expressible in the substrate's [query-language](teaching/explanations/query-language.md), extended with the cohomology vocabulary.
+- **`region`** — optional restriction to a particular pairwise-Stone clopen $U$ (per the math definition, $\mathcal{F}_U^{(\top)}(q, \tau, U) = \mathbb{Z}^{\Delta^{+, *, \top}_\tau(q) \cap U}$). When omitted, defaults to the active scope's full region.
+- **`degree`** — `0` for $H^0$ (count of $\top$-cells), `1` for $H^1$ (gluing-failure classes), or `0..1` for both. Per [audit-content-via-inconsistency-sheaf-cohomology](../theorems/audit-content-via-inconsistency-sheaf-cohomology.md), higher degrees vanish above 1 in the regimes the substrate supports for audit (per [settling-cohomology vanishes above degree 1](../../../../../../../humanities/theories/math/theories/categories/theories/predication-categories/theorems/settling-cohomology-vanishes-above-degree-1.md)).
+
+Outputs:
+
+- **`cohomology-result`** — the queried cohomological content. For $H^0$: an integer count, plus the cell-set if requested. For $H^1$: a list of $H^1$-class generators (per [transfinite-bounded $H^1$ generators](../../../../../../../humanities/theories/math/theories/categories/theories/predication-categories/theorems/transfinite-bounded-regime-h1-generators.md), one per non-Scott-continuous firing ordinal at which a $\top$-cell entered the record), with each generator carrying its source classification and witness citations.
+- **`query-witness`** — records the audit query: the audit expression, the inconsistency-sheaf record version queried against, the region, the degree, and the result hash. Per [cost-discipline-reads-free](../theorems/cost-discipline-reads-free.md), the witness is informational; the query did not advance substrate state.
+
+## Operational semantics
+
+1. *Parse and validate.* Verify the audit expression is well-formed in the substrate's audit-extended query language.
+2. *Resolve target.* Identify the active [inconsistency-sheaf record](../objects/inconsistency-sheaf-record.md) for the cited region's scope. If multiple inconsistency-sheaf records cover the region (per [closure-conditions-composability](../theorems/closure-conditions-composability.md)'s nesting / intersection), the operator merges their $\top$-cell catalogues per the scope-composition discipline.
+3. *Cohomology evaluation.* Per the regime declared in the [regime-record](../objects/regime-record.md):
+   - **Strict / Scott-continuous regime.** Per [strict-regime-cohomology-vanishing](../../../../../../../humanities/theories/math/theories/categories/theories/predication-categories/theorems/strict-regime-cohomology-vanishing.md) and [Scott-continuous-regime-cohomology-vanishing](../../../../../../../humanities/theories/math/theories/categories/theories/predication-categories/theorems/scott-continuous-regime-cohomology-vanishing.md), $H^1 = 0$. Cohomology queries reduce to $H^0$-counts on the cached $\top$-cell catalogue. Cost is polynomial in the catalogue size.
+   - **Transfinite-bounded regime.** Per [transfinite-bounded-regime-h1-generators](../../../../../../../humanities/theories/math/theories/categories/theories/predication-categories/theorems/transfinite-bounded-regime-h1-generators.md), $H^1 \cong \bigoplus_{\mu \in L_{\mathrm{ns}}} \mathbb{Z}$ with one generator per non-Scott-continuous firing ordinal at which a $\top$-cell entered. The operator enumerates the generators by traversing the inconsistency-sheaf record's `top-cells` indexed by step ordinal, picking out the $L_{\mathrm{ns}}$ subset.
+   - **Aperiodic regime.** Per [aperiodic-regime-cohomology-via-direct-limit](../../../../../../../humanities/theories/math/theories/categories/theories/predication-categories/theorems/aperiodic-regime-cohomology-via-direct-limit.md), $H^1$ is the direct limit over countable truncations. The operator either enumerates up to the regime record's `audit-cohomology-bound` and summarizes the rest by firing-ordinal pattern, or returns the bounded enumeration with a `cohomology-bound-truncated` flag.
+4. *Cache update.* If the operator computed a cohomology degree not in the inconsistency-sheaf record's `cohomology-cache`, the cache is updated with the result and the record's current version hash.
+5. *Witness emit.* The query-witness is appended to the [event log](../objects/event-log.md) per the audit policy (per [cost-discipline-reads-free](../theorems/cost-discipline-reads-free.md), reads are free but audit-of-reads policies may emit witnesses).
+
+## Engineering invariants
+
+- **Reads-free.** Per [cost-discipline-reads-free](../theorems/cost-discipline-reads-free.md), this operator does not advance substrate state. The cohomology computation is a structural derivation from existing content. The two written side effects above (cache update, query-witness emission) are *audit-side*, not *substrate-state-advancing*: the cohomology cache is a memoization of a deterministic function of the existing inconsistency-sheaf record (the cached value is what the recomputation would yield, with no new content), and the query-witness is an audit-log entry recording that a read happened (per the substrate's audit-of-reads policy, when enabled). Neither side effect changes the substrate's settled content, the inconsistency-sheaf record's $\top$-cell set, or the closure operator's fixed point. Replaying the substrate from any prior snapshot reproduces the same cohomology results regardless of cache state, and replaying with audit-of-reads disabled produces no query-witnesses without changing any settled content. The reads-free invariant holds in the strict sense: substrate state — the content the closure operator settles to — is unchanged.
+- **Result-deterministic.** Per [settlement-determinism](../theorems/settlement-determinism.md), the same query against the same inconsistency-sheaf record version produces the same cohomology result. Two auditors querying the same record produce byte-identical results; replay reproduces the historical result.
+- **Regime-compatible cost.** The operator's cost is regime-determined: polynomial in stabilizing regimes, polynomial in the bounded $L_{\mathrm{ns}}$ range for transfinite-bounded, polynomial up to the declared bound for aperiodic. A query whose cost would exceed the regime record's `audit-cohomology-bound` is truncated with the flag.
+- **Cohomology-cache-aware.** When the inconsistency-sheaf record's cache is valid (matching version hash), the operator returns from the cache. When invalid, the operator recomputes and updates the cache.
+- **Paraconsistency-respecting.** Per [paraconsistent-equality](../../../../../../../humanities/theories/math/theories/categories/theories/predication-categories/objects/paraconsistent-equality.md), the operator does not crash on contradictions; it operates *on* the contradictions. The cohomology is well-defined regardless of how many $\top$-cells the record contains.
+
+## Failure modes
+
+- **Cohomology-bound exceeded.** A query that would require enumerating more $H^1$-generators than the regime record's `audit-cohomology-bound` permits returns a truncated result with the `cohomology-bound-truncated` flag. The auditor decides whether to raise the bound (a regime-record edit) or to accept the summary.
+- **Inconsistency-sheaf record stale.** If the record's `cohomology-cache` has a version mismatch, the operator triggers recomputation. If recomputation cannot complete within the substrate's audit-fuel budget, the operator returns the cached (potentially stale) value with a `cache-stale` flag, and the auditor decides whether to retry with more fuel.
+- **Region out-of-scope.** A query citing a region not covered by any inconsistency-sheaf record returns an empty result with an `unsupported-region` flag, signaling the auditor to declare the region's inconsistency-sheaf-record before re-querying.
+
+## Position in the substrate
+
+This morphism is the substrate's *audit-cohomology primitive*: the operator that converts the structural inconsistency-sheaf-cohomology theorem into a callable engineering operation. Per [audit-content-via-inconsistency-sheaf-cohomology](../theorems/audit-content-via-inconsistency-sheaf-cohomology.md), audit content *lives* in the cohomology of $\mathcal{F}_U^{(\top)}$; this morphism is how the substrate's audit machinery *queries* that content.
+
+The morphism composes with [query](query.md) (the substrate's general-purpose data-access primitive, of which this is the cohomology-extended variant), with [inconsistency-sheaf-record](../objects/inconsistency-sheaf-record.md) (the target object), with [regime-record](../objects/regime-record.md) (which determines cost discipline), and with the substrate's [audit stack](teaching/explanations/substrate-as-stack-composition.md) (whose audit operations invoke this primitive).

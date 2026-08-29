@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       31917d0a-959b-4d0c-bb7a-005d1f184f2d
+:END:
+#+title: user experience
+#+date: [2025-08-23 Sat 07:29]
+

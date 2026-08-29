@@ -1,0 +1,22 @@
+id: 67d929fc7a4970fadf1095794b467ef42bf5924c09c935eb773548dbd42245e1
+inputs: &id001
+- kind: flow_map
+  role: flow_map
+- kind: nucleus_map
+  role: nucleus_map
+- kind: phase_space
+  role: phase_space
+name: fix_flow_nucleus
+outputs: &id002
+- kind: phase_space
+  role: phase_space
+- kind: fix_flow_nucleus_iteration_evidence
+  role: fix_flow_nucleus_iteration_evidence
+- kind: commutation_evidence
+  role: commutation_evidence
+steps:
+- inputs: *id001
+  name: fix_flow_nucleus
+  operator: fix_flow_nucleus
+  outputs: *id002
+  step_index: 0

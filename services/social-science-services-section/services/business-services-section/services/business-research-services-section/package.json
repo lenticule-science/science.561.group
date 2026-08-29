@@ -1,0 +1,22 @@
+{
+  "name": "@emsenn/modern-business-research-enterprise",
+  "version": "0.1.5",
+  "type": "module",
+  "exports": "./src/research.mjs",
+  "scripts": {
+    "check": "node --check src/research.mjs",
+    "test": "node --test test/research.test.mjs",
+    "verify": "npm run check && npm test"
+  },
+  "dependencies": {
+    "@red-cup-engineering/semantic-content-identify-service": "0.2.7",
+    "@red-cup-engineering/semantic-record-journal-service": "0.1.6"
+  },
+  "files": [
+    "src/",
+    "content/",
+    "test/",
+    "package.json"
+  ],
+  "license": "UNLICENSED"
+}

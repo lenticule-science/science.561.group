@@ -1,0 +1,132 @@
+{{ define "main" }}
+{{- $type := or .Params.type (index .Params "locates") (index .Params "introduces") "section" -}}
+{{- $domain := or (index .Params "component-of") (index .Params "part-of") "" -}}
+{{ partial "breadcrumbs.html" . }}
+<h1 class="p-name" data-pagefind-meta="type:{{ $type }}{{ with $domain }}, domain:{{ . }}{{ end }}{{ with .Section }}, section:{{ . }}{{ end }}">{{ .Title }}</h1>
+<div class="h-feed">
+
+{{/* Lead — body content (user prose), with [@key] → ref-link substitution */}}
+{{- $content := .Content -}}
+{{- with .Params.references -}}
+  {{- if reflect.IsMap . -}}
+    {{- range $key, $ref := . -}}
+      {{- if reflect.IsMap $ref -}}
+        {{- $pattern := printf `\[@%s\]` $key -}}
+        {{- $link := printf `<a href="#ref-%s" class="citation">[%s]</a>` $key $key -}}
+        {{- $content = $content | replaceRE $pattern $link -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end }}
+{{ $content | safeHTML }}
+
+{{/* Domain panel: teleology + method (always-open, primary content) */}}
+{{ $teleology := .Params.teleology }}
+{{ $method := .Params.method }}
+{{ if or $teleology $method }}
+<dl class="domain-panel">
+  {{ with $teleology }}<dt>Teleology</dt><dd>{{ . | markdownify }}</dd>{{ end }}
+  {{ with $method }}<dt>Method</dt><dd>{{ . | markdownify }}</dd>{{ end }}
+</dl>
+{{ end }}
+
+{{/* School panel: central thesis (always-open) */}}
+{{ $thesis := index .Params "central-thesis" }}
+{{ with $thesis }}
+<section class="central-thesis">
+  <h2>Central thesis</h2>
+  {{ . | markdownify }}
+</section>
+{{ end }}
+
+{{ $terms := .GetPage "terms" }}
+{{ $texts := .GetPage "texts" }}
+{{ $domains := where (where .Sections.ByTitle ".File.ContentBaseName" "ne" "terms") ".File.ContentBaseName" "ne" "texts" }}
+{{ $featuredTexts := index .Params "featured-texts" }}
+
+{{/* Featured texts — inlined with descriptions */}}
+{{ with $featuredTexts }}
+<section class="featured-texts">
+  <h2>Featured texts</h2>
+  <dl>
+    {{ range . }}
+    {{ $page := $.GetPage (printf "texts/%s" .) }}
+    {{ if $page }}
+      <dt><a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a></dt>
+      <dd>{{ with $page.Description }}{{ . }}{{ else }}{{ truncate 200 $page.Plain }}{{ end }}</dd>
+    {{ else }}
+      <dt>{{ . }}</dt>
+      <dd><em>missing page: texts/{{ . }}</em></dd>
+    {{ end }}
+    {{ end }}
+  </dl>
+</section>
+{{ end }}
+
+{{/* Subdomains — listed with descriptions */}}
+{{ with $domains }}
+<section class="subdomains">
+  <h2>Subdomains</h2>
+  <dl>
+    {{ range . }}
+    <dt><a href="{{ .RelPermalink }}">{{ or .Title (.File.ContentBaseName | humanize) }}</a></dt>
+    {{ with .Description }}<dd>{{ . }}</dd>{{ end }}
+    {{ end }}
+  </dl>
+</section>
+{{ end }}
+
+{{/* Terms / Texts linked headers — always when subsection exists */}}
+{{ with $terms }}
+  {{ with .Pages }}
+  <p class="section-link"><a href="{{ $terms.RelPermalink }}">Terms ({{ len . }}) &rsaquo;</a></p>
+  {{ end }}
+{{ end }}
+{{ with $texts }}
+  {{ with .Pages }}
+  <p class="section-link"><a href="{{ $texts.RelPermalink }}">Texts ({{ len . }}) &rsaquo;</a></p>
+  {{ end }}
+{{ end }}
+
+{{/* No-curation fallback: list .Pages alphabetically when nothing structured exists */}}
+{{ if not (or $terms $texts $domains $featuredTexts) }}
+  {{ with .Pages.ByTitle }}
+  <ul class="pages">
+    {{ range . }}
+    <li><a href="{{ .RelPermalink }}">{{ or .Title (.File.ContentBaseName | humanize) }}</a>{{ with .Date }} <span class="meta">{{ .Format "2006-01-02" }}</span>{{ end }}</li>
+    {{ end }}
+  </ul>
+  {{ end }}
+{{ end }}
+
+{{/* See also */}}
+{{ $seeAlso := index .Params "see-also" }}
+{{ with $seeAlso }}
+<section class="see-also">
+  <h2>See also</h2>
+  <dl>
+    {{ range . }}
+    {{ $p := or ($.GetPage .) (site.GetPage .) }}
+    {{ if $p }}
+      <dt><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></dt>
+      {{ with $p.Description }}<dd>{{ . }}</dd>{{ end }}
+    {{ else }}
+      <dt>{{ . }}</dt>
+    {{ end }}
+    {{ end }}
+  </dl>
+</section>
+{{ end }}
+
+{{ with .Lastmod }}
+<p class="last-reviewed">Last reviewed <time class="dt-updated" datetime="{{ .Format "2006-01-02" }}">{{ .Format "January 2, 2006" }}</time>.</p>
+{{ end }}
+
+{{/* References bibliography */}}
+{{ partial "bibliography.html" . }}
+
+</div>
+
+{{/* Relations + backlinks — collapsed by default; secondary metadata */}}
+{{ partial "frontmatter-graph.html" . }}
+{{ end }}

@@ -1,0 +1,7 @@
+2020/05/19 * Receive gifts from Weaver St Market
+  Inventory:Laundry-Room:bread        4    bags @@ $0.00
+  Donor:WeaverStMarket-Carrboro
+
+2020/05/19 * Receive gifts from Weaver St Market
+  Inventory:Laundry-Room:bread       -4    bags @@ $0.00
+  GiftRecipient:FNB919

@@ -1,0 +1,9 @@
+#+title: permanent note
+#+begin_head
+#+ghe_schema: record-0.1.1
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-22 Tue 10:27]
+#+roam_tags: term
+#+end_head
+A */permanent note/* is a type of [[file:note.org][note]] used in several [[file:note_taking_system.org][note-taking systems]].

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       f234c325-94c4-4337-86cf-8126e0d7b521
+:public:   true
+:instantiates: [[id:8d72909c-35b0-45c9-b9fc-513ca70c7945][month]]
+:END:
+#+title: September
+#+date: [2025-09-05 Fri 20:38]
+#+index: September

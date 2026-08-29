@@ -1,0 +1,50 @@
+---
+title: "Liaison Officer"
+date-created: 2026-03-08T00:00:00
+authors:
+  - claude
+type: term
+aliases:
+  - "liaison officer"
+  - "LNO"
+keywords:
+  - MilitaryCommand
+  - Communication
+  - JointOperations
+  - CommandAndControl
+description: "An officer or representative who connects headquarters and units so they can coordinate with shared context and fewer misunderstandings."
+defines:
+  - "liaison officer"
+  - "LNO"
+cites:
+  - jp3_33
+references:
+  - id: jp3_33
+    type: document
+    title: Joint Task Force Headquarters
+    author:
+      - literal: Joint Chiefs of Staff
+    container-title: Joint Publication 3-33
+    issued:
+      - year: 2018
+    URL: https://www.jcs.mil/Portals/36/Documents/Doctrine/pubs/jp3_33.pdf
+---
+
+A liaison officer is a representative placed with another headquarters
+or organization to improve coordination, communication, and mutual
+understanding [@jp3_33].
+
+The role matters because command rarely occurs inside a single closed
+organization. Joint, coalition, interagency, and adjacent-unit action
+all create seams where information can slow, distort, or lose context.
+A liaison officer reduces that friction by carrying priorities,
+constraints, and interpretive context across those seams.
+
+A liaison officer is therefore not only a messenger. The role is part of
+[command and control](./command-and-control.md) infrastructure. It helps
+a force coordinate without pretending that every headquarters shares the
+same assumptions by default.
+
+## Sources
+
+- [Joint Publication 3-33: *Joint Task Force Headquarters*](https://www.jcs.mil/Portals/36/Documents/Doctrine/pubs/jp3_33.pdf)

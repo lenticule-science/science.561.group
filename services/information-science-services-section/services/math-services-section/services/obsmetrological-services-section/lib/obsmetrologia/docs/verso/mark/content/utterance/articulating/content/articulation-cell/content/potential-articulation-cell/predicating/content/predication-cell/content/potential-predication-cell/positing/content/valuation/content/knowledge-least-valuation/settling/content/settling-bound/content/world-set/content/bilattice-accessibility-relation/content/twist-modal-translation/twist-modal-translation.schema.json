@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/settling-bound/content/world-set/content/bilattice-accessibility-relation/content/twist-modal-translation",
+  "title": "twist-modal-translation",
+  "description": "The translation nu sending each modal formula over the twist-product bilattice to a pair of classical-bimodal formulas, generated over the bilattice accessibility relation by splitting positive and negative evidence into two classical modal operators.",
+  "type": "object",
+  "required": ["symbol", "positiveComponent", "negativeComponent", "boxPositive", "boxNegative", "modalRecursion"],
+  "properties": {
+    "symbol": { "const": "nu", "description": "the translation, nu(phi) = (nu_1(phi), nu_2(phi))" },
+    "positiveComponent": { "description": "nu_1: extracts the positive-evidence component of a formula as a classical-bimodal formula", "const": "nu_1" },
+    "negativeComponent": { "description": "nu_2: extracts the negative-evidence component of a formula as a classical-bimodal formula", "const": "nu_2" },
+    "boxPositive": { "const": "box_+", "description": "classical modal operator for the positive component of the accessibility relation R" },
+    "boxNegative": { "const": "box_-", "description": "classical modal operator for the negative component of the accessibility relation R" },
+    "modalRecursion": { "const": true, "description": "nu_1(Box phi) := box_+ nu_1(phi) AND box_- ~nu_2(phi); nu_2(Box phi) := ~box_+ ~nu_2(phi); non-modal cases follow the standard twist-product translation" }
+  }
+}

@@ -1,0 +1,22 @@
+#+title: 2022W02RB: Routine Bulletin: 2021, Week 2: 1/9-1/15
+
+This is a /routine bulletin/ produced by [[https://emsenn.net][emsenn]] for the Web; syndication elsewhere is permitted.
+
+#+toc: headlines 2 local
+
+* Personal Updates
+* Local Updates
+** Recent Weather
+#+include: "../log/weather.org::#2022w01"
+* World Updates
+** Commercial Opportunities
+** In The News
+** Upcoming Events
+** This Week in History
+#+include: "../ref/timeline/index.org::ds-01-09"
+#+include: "../ref/timeline/index.org::ds-01-10"
+#+include: "../ref/timeline/index.org::ds-01-11"
+#+include: "../ref/timeline/index.org::ds-01-12"
+#+include: "../ref/timeline/index.org::ds-01-13"
+#+include: "../ref/timeline/index.org::ds-01-14"
+#+include: "../ref/timeline/index.org::ds-01-15"

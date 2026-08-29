@@ -1,0 +1,6 @@
+#+title: gurty pudding
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-19 Sat 21:15]
+#+roam_tags: term
+*/Gurty pudding/* is a type of [[file:pudding.org][pudding]] made with [[file:pork.org][pork]] [[file:offal.org][offal]] and [[file:oats.org][oats]], originally developed by the [[file:cornish.org][Cornish]] [[file:person.org][people]].

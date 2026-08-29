@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       7a9296fd-afbd-4015-a563-c46164ad8326
+:END:
+#+title: discrete arithmetic system
+#+date: [2025-10-17 Fri 12:18]
+

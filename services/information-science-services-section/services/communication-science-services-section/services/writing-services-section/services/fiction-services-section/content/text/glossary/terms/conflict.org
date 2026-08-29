@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       c712ade9-b8c0-49e2-8eed-e2238ca833ea
+:END:
+#+title: conflict
+#+date: [2025-09-28 Sun 19:58]
+

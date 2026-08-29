@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       85256d99-d860-4169-8768-868db057ef49
+:END:
+#+title: me
+#+date: [2025-09-01 Mon 18:16]
+

@@ -1,0 +1,320 @@
+* Events
+** TODO [#A] Attend the powwow in Raleigh
+SCHEDULED: <2021-10-30 Sat>
+** TODO [#A] Hand out candy for Halloween
+SCHEDULED: <2021-10-31 Sun>
+* Plans 
+** TODO Figure out the layout of the house's plumbing 
+:PROPERTIES:
+:EFFORT:   2:00
+:END:
+Then I can know which faucets specifically to open in the winter.
+** TODO [#A] [0/2] Plant garlic
+*** TODO [#A] Scythe the intended area low
+:PROPERTIES:
+:EFFORT:   1:30
+:END:
+*** TODO [#A] Plant the garlic
+:PROPERTIES:
+:EFFORT:   2:00
+:END:
+** TODO [#B] [0/5] Plant radish bed
+*** TODO Scythe the intended area low
+:PROPERTIES:
+:EFFORT:   1:30
+:END:
+*** TODO Till the area
+:PROPERTIES:
+:EFFORT:   1:30
+:END:
+*** TODO Mix in compost
+:PROPERTIES:
+:EFFORT:   1:00
+:END:
+*** TODO Plough the area
+:PROPERTIES:
+:EFFORT:   1:00
+:END:
+*** TODO Plant the radishes
+:PROPERTIES:
+:EFFORT:   1:00
+:END:
+** TODO [#C] [0/2] Plant greens
+*** TODO Rake the intended area
+:PROPERTIES:
+:EFFORT:   1:30
+:END:
+*** TODO Scatter seed
+:PROPERTIES:
+:EFFORT:   1:00
+:END:
+** TODO [#B] Figure out the houseplant situation
+General criteria:
+- Nontoxic to pets
+- Easy to propagate
+*** Figure out houseplants for the south window
+*** Figure out houseplants for the north window
+*** Figure out houseplants for other places
+**** Kitchen lamp
+Probably just pothos, maybe tiny parlour palms?
+**** Bedfoot table
+Succulents are there right now?
+** TODO Consider AK Press subscription
+https://www.akpress.org/friends-combo.html
+* Routine
+** Conditionally
+*** Deep freeze
+**** [#A] Open faucets 
+:PROPERTIES:
+:EFFORT:   0:15
+:END:
+** Annually
+*** [#B] Prep taxes 
+:PROPERTIES:
+:EFFORT:   10:00
+:END:
+** Quarterly
+*** [#B] Check smoke alarms 
+:PROPERTIES:
+:EFFORT:   0:30
+:END:
+** Monthly
+** Weekly
+*** TODO [#C] Prepare last week's records 
+SCHEDULED: <2021-10-17 Sun +1w>
+:PROPERTIES:
+:EFFORT:   2:00
+:CAPTURE_TEMPLATE: orwrl
+:END:
+*** TODO [#C] Laundry 
+SCHEDULED: <2021-10-17 Sun +1w>
+:PROPERTIES:
+:EFFORT:   3:00
+:END:
+*** TODO [#A] Water the houseplants
+:LOGBOOK:
+CLOCK: [2021-10-17 Sun 09:41]--[2021-10-17 Sun 09:48] =>  0:07
+:END:
+*** TODO [#C] Sweep upstairs, first 
+SCHEDULED: <2021-10-18 Mon +1w>
+:PROPERTIES:
+:EFFORT:   0:30
+:END:
+*** TODO [#C] Dust downstairs 
+SCHEDULED: <2021-10-19 Tue +1w>
+:PROPERTIES:
+:EFFORT:   0:15
+:END:
+*** TODO [#C] Dust upstairs 
+SCHEDULED: <2021-10-20 Wed +1w>
+:PROPERTIES:
+:EFFORT:   0:30
+:END:
+*** TODO [#C] Go to grocery 
+DEADLINE: <2021-10-21 Thu 09:30> SCHEDULED: <2021-10-21 Thu 08:00>
+:PROPERTIES:
+:EFFORT:   1:30
+:END:
+*** TODO [#C] Sweep upstairs, second 
+SCHEDULED: <2021-10-21 Thu +1w>
+:PROPERTIES:
+:EFFORT:   0:30
+:END:
+*** TODO [#C] Go thrifting 
+DEADLINE: <2021-10-22 Fri 11:00>
+:PROPERTIES:
+:EFFORT:   1:30
+:END:
+*** TODO [#C] Inventory purchases 
+SCHEDULED: <2021-10-23 Sat>
+:PROPERTIES:
+:EFFORT:   1:30
+:END:
+*** TODO [#C] Prepare next week's records 
+SCHEDULED: <2021-10-23 Sat +1w>
+:PROPERTIES:
+:EFFORT:   1:00
+:END:
+** Everyday
+*** TODO [#C] Check on the water containers 
+SCHEDULED: <2021-10-18 Mon 07:00 +1d>
+:PROPERTIES:
+:EFFORT:   0:15
+:LAST_REPEAT: [2021-10-17 Sun 08:19]
+:END:
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2021-10-17 Sun 08:19]
+:END:
+*** TODO [#C] Sweep the porch 
+SCHEDULED: <2021-10-18 Mon 07:15 +1d>
+:PROPERTIES:
+:EFFORT:   0:15
+:LAST_REPEAT: [2021-10-17 Sun 11:43]
+:END:
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2021-10-17 Sun 11:43]
+- State "DONE"       from "TODO"       [2021-10-17 Sun 11:42]
+- State "DONE"       from "TODO"       [2021-10-17 Sun 11:42]
+:END:
+*** TODO [#C] Tidy downstairs 
+SCHEDULED: <2021-10-18 Mon 07:30 +1d>
+:PROPERTIES:
+:EFFORT:   0:15
+:LAST_REPEAT: [2021-10-17 Sun 11:42]
+:END:
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2021-10-17 Sun 11:42]
+CLOCK: [2021-10-17 Sun 09:48]--[2021-10-17 Sun 10:07] =>  0:19
+CLOCK: [2021-10-17 Sun 09:07]--[2021-10-17 Sun 09:22] =>  0:15
+CLOCK: [2021-10-17 Sun 08:18]--[2021-10-17 Sun 08:34] =>  0:16
+CLOCK: [2021-10-14 Thu 10:12]--[2021-10-14 Thu 10:16] =>  0:04
+CLOCK: [2021-10-14 Thu 09:56]--[2021-10-14 Thu 10:11] =>  0:15
+:END:
+*** TODO [#C] Tidy the porch 
+SCHEDULED: <2021-10-18 Mon 10:30 +1d>
+:PROPERTIES:
+:EFFORT:   0:15
+:LAST_REPEAT: [2021-10-17 Sun 17:59]
+:END:
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2021-10-17 Sun 17:59]
+CLOCK: [2021-10-17 Sun 17:37]--[2021-10-17 Sun 17:59] =>  0:22
+CLOCK: [2021-10-13 Wed 09:28]--[2021-10-13 Wed 10:08] =>  0:40
+CLOCK: [2021-10-12 Tue 10:05]--[2021-10-12 Tue 12:03] =>  1:58
+:END:
+*** TODO [#C] Wash the dishes 
+SCHEDULED: <2021-10-17 Sun 10:45 +1d>
+:PROPERTIES:
+:EFFORT:   0:45
+:END:
+:LOGBOOK:
+- Note taken on [2021-10-19 Tue 10:54] \\
+  Gonna try using the hand-pumped mister for rinsing.
+CLOCK: [2021-10-19 Tue 10:54]--[2021-10-19 Tue 11:28] =>  0:34
+CLOCK: [2021-10-17 Sun 10:13]--[2021-10-17 Sun 10:17] =>  0:04
+CLOCK: [2021-10-14 Thu 10:16]--[2021-10-14 Thu 10:40] =>  0:24
+CLOCK: [2021-10-14 Thu 09:38]--[2021-10-14 Thu 09:56] =>  0:18
+CLOCK: [2021-10-11 Mon 13:29]--[2021-10-11 Mon 13:48] =>  0:19
+:END:
+*** TODO [#C] Sweep downstairs 
+SCHEDULED: <2021-10-17 Sun 20:00 +1d>
+:PROPERTIES:
+:EFFORT:   0:15
+:END:
+*** TODO [#C] Tidy downstairs 
+SCHEDULED: <2021-10-17 Sun 20:15 +1d>
+:PROPERTIES:
+:EFFORT:   0:15
+:END:
+:LOGBOOK:
+CLOCK: [2021-10-14 Thu 17:00]--[2021-10-14 Thu 18:30] =>  0:04
+:END:
+** Anyday
+*** Recordkeeping 
+:LOGBOOK:
+CLOCK: [2021-10-17 Sun 13:40]--[2021-10-17 Sun 14:03] =>  0:23
+- Note taken on [2021-10-17 Sun 12:56] \\
+  Looking at how to handle the ledger, among other things.
+CLOCK: [2021-10-17 Sun 12:56]--[2021-10-17 Sun 13:31] =>  0:35
+CLOCK: [2021-10-17 Sun 11:25]--[2021-10-17 Sun 11:40] =>  0:15
+CLOCK: [2021-10-17 Sun 11:10]--[2021-10-17 Sun 11:12] =>  0:02
+CLOCK: [2021-10-16 Sat 21:41]--[2021-10-16 Sat 22:15] =>  0:08
+CLOCK: [2021-10-16 Sat 18:55]--[2021-10-16 Sat 20:14] =>  1:12
+CLOCK: [2021-10-16 Sat 16:01]--[2021-10-16 Sat 18:24] =>  2:23
+CLOCK: [2021-10-16 Sat 14:52]--[2021-10-16 Sat 15:47] =>  0:55
+- Note taken on [2021-10-16 Sat 13:58] \\
+  Creating the foundation of records for the new GAZ.
+CLOCK: [2021-10-16 Sat 13:58]--[2021-10-16 Sat 14:52] =>  0:54
+CLOCK: [2021-10-14 Thu 20:43]--[2021-10-14 Thu 20:51] =>  0:08
+CLOCK: [2021-10-14 Thu 20:35]--[2021-10-14 Thu 20:37] =>  0:02
+CLOCK: [2021-10-14 Thu 20:29]--[2021-10-14 Thu 20:35] =>  0:06
+CLOCK: [2021-10-13 Wed 08:41]--[2021-10-13 Wed 08:53] =>  0:12
+CLOCK: [2021-10-09 Sat 19:25]--[2021-10-09 Sat 19:28] =>  0:03
+:END:
+*** Chilling
+:LOGBOOK:
+CLOCK: [2021-10-19 Tue 18:39]--[2021-10-19 Tue 20:44] =>  2:05
+CLOCK: [2021-10-19 Tue 16:56]--[2021-10-19 Tue 17:06] =>  0:10
+CLOCK: [2021-10-19 Tue 16:52]--[2021-10-19 Tue 16:56] =>  0:04
+CLOCK: [2021-10-19 Tue 14:54]--[2021-10-19 Tue 16:02] =>  1:08
+CLOCK: [2021-10-19 Tue 11:43]--[2021-10-19 Tue 12:05] =>  0:22
+CLOCK: [2021-10-19 Tue 10:39]--[2021-10-19 Tue 10:54] =>  0:15
+CLOCK: [2021-10-17 Sun 18:00]--[2021-10-17 Sun 18:15] =>  0:15
+CLOCK: [2021-10-17 Sun 14:03]--[2021-10-17 Sun 17:37] =>  3:34
+CLOCK: [2021-10-17 Sun 13:31]--[2021-10-17 Sun 13:40] =>  0:09
+CLOCK: [2021-10-17 Sun 12:27]--[2021-10-17 Sun 12:56] =>  0:29
+CLOCK: [2021-10-17 Sun 11:40]--[2021-10-17 Sun 12:27] =>  0:47
+- Note taken on [2021-10-17 Sun 10:52] \\
+  w/ esther
+CLOCK: [2021-10-17 Sun 10:52]--[2021-10-17 Sun 11:10] =>  0:18
+CLOCK: [2021-10-17 Sun 09:40]--[2021-10-17 Sun 09:41] =>  0:01
+CLOCK: [2021-10-17 Sun 08:34]--[2021-10-17 Sun 09:07] =>  0:33
+CLOCK: [2021-10-16 Sat 20:45]--[2021-10-16 Sat 21:09] =>  0:24
+CLOCK: [2021-10-16 Sat 20:25]--[2021-10-16 Sat 20:25] =>  0:00
+CLOCK: [2021-10-16 Sat 20:14]--[2021-10-16 Sat 20:25] =>  0:11
+CLOCK: [2021-10-16 Sat 18:24]--[2021-10-16 Sat 18:55] =>  0:31
+:END:
+*** Socializing
+*** Meals
+**** Cooking
+:LOGBOOK:
+CLOCK: [2021-10-18 Mon 07:55]--[2021-10-18 Mon 08:12] =>  0:17
+CLOCK: [2021-10-17 Sun 10:17]--[2021-10-17 Sun 10:36] =>  0:19
+CLOCK: [2021-10-17 Sun 10:07]--[2021-10-17 Sun 10:13] =>  0:06
+CLOCK: [2021-10-11 Mon 13:49]--[2021-10-11 Mon 14:02] =>  0:13
+:END:
+**** Eating
+:LOGBOOK:
+CLOCK: [2021-10-17 Sun 18:15]--[2021-10-17 Sun 18:35] =>  0:20
+CLOCK: [2021-10-17 Sun 12:19]--[2021-10-17 Sun 12:27] =>  0:08
+CLOCK: [2021-10-17 Sun 10:36]--[2021-10-17 Sun 10:52] =>  0:16
+CLOCK: [2021-10-16 Sat 21:09]--[2021-10-16 Sat 21:43] =>  0:34
+:END:
+*** Gardening
+**** Tidying
+:LOGBOOK:
+CLOCK: [2021-10-19 Tue 16:02]--[2021-10-19 Tue 16:52] =>  0:50
+CLOCK: [2021-10-14 Thu 11:52]--[2021-10-14 Thu 13:13] =>  1:21
+:END:
+**** Weeding 
+:LOGBOOK:
+CLOCK: [2021-10-14 Thu 08:44]--[2021-10-14 Thu 09:37] =>  0:53
+:END:
+**** Soilwork
+:LOGBOOK:
+CLOCK: [2021-10-14 Thu 14:00]--[2021-10-14 Thu 16:01] =>  2:01
+CLOCK: [2021-10-13 Wed 14:00]--[2021-10-13 Wed 14:23] =>  0:23
+CLOCK: [2021-10-13 Wed 10:08]--[2021-10-13 Wed 10:19] =>  0:11
+CLOCK: [2021-10-12 Tue 12:03]--[2021-10-12 Tue 12:56] =>  0:53
+:END:
+**** Raking
+:LOGBOOK:
+- Note taken on [2021-10-19 Tue 12:05] \\
+  Raking out front. The recent cold night made a bunch drop the past couple nights, since.
+CLOCK: [2021-10-19 Tue 12:05]--[2021-10-19 Tue 14:54] =>  2:49
+CLOCK: [2021-10-15 Fri 13:12]--[2021-10-15 Fri 14:44] =>  1:32
+CLOCK: [2021-10-15 Fri 10:50]--[2021-10-15 Fri 12:23] =>  1:33
+CLOCK: [2021-10-13 Wed 10:19]--[2021-10-13 Wed 10:57] =>  0:38
+:END:
+**** Planting
+:LOGBOOK:
+- Note taken on [2021-10-12 Tue 12:56] \\
+  Repotting the plants on the patio and moving them inside for the winter.
+CLOCK: [2021-10-12 Tue 12:56]--[2021-10-12 Tue 13:27] =>  0:31
+:END:
+**** Scything
+:LOGBOOK:
+CLOCK: [2021-10-13 Wed 13:41]--[2021-10-13 Wed 14:00] =>  0:19
+:END:
+**** Harvesting
+*** Maintenance
+**** Cutting board maintenance
+:LOGBOOK:
+CLOCK: [2021-10-19 Tue 11:28]--[2021-10-19 Tue 11:43] =>  0:15
+:END:
+*** Personal
+**** Sleep
+:LOGBOOK:
+CLOCK: [2021-10-19 Tue 17:06]--[2021-10-19 Tue 18:39] =>  1:33
+CLOCK: [2021-10-19 Tue 16:56]--[2021-10-19 Tue 16:56] =>  0:00
+:END:

@@ -1,0 +1,18 @@
+name: close_temporally_check
+inputs: &id001
+- role: flow_map
+  kind: flow_map
+- role: nucleus_map
+  kind: nucleus_map
+- role: fixed_invariants
+  kind: fixed_invariants
+outputs: &id002
+- role: temporal_modality_evidence
+  kind: temporal_modality_evidence
+steps:
+- name: close_temporally_check
+  operator: close_temporally_check
+  step_index: 0
+  inputs: *id001
+  outputs: *id002
+id: 8f4a772b05f87d4b29ebef2d25a902365611cc2e16bde916aac2413b1a92ab45

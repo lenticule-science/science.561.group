@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       8669c57a-f67e-4325-bb8f-90d9fddadcb4
+:END:
+#+title: Fisher-Rao manifold
+#+date: [2025-10-11 Sat 16:11]
+

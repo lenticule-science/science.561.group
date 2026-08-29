@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       de595b66-d89d-41d6-87fc-724482ec16ec
+:END:
+#+title: music artist
+#+date: 2025-07-21
+#+author: emsenn

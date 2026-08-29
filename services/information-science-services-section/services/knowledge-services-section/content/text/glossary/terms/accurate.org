@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       bf72d7bd-5666-49c8-b31e-efb489aa9b0f
+:END:
+#+title: accurate
+#+date: [2025-09-02 Tue 09:24]
+

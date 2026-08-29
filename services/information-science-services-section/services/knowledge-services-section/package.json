@@ -1,0 +1,9 @@
+{
+  "name": "@561-group/knowledge-services-section",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "EO section accountable for knowledge-representation services.",
+  "scripts": {
+    "verify": "npm --prefix services/corpus-formation-lead-courier run check && npm --prefix services/corpus-formation-lead-courier run test && npm --prefix services/corpus-management-team run check && npm --prefix services/corpus-management-team run test && npm --prefix services/glossary-services-section run verify && npm --prefix services/identifier-services-section run verify"
+  }
+}

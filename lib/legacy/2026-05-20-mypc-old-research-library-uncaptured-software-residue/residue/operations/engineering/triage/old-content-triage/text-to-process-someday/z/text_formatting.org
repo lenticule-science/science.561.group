@@ -1,0 +1,5 @@
+#+title: text-formatting
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-17 Thu 22:06]
+*/Text-formatting/* is a way of adding additional information to text, beyond what's conveyed in the writing.

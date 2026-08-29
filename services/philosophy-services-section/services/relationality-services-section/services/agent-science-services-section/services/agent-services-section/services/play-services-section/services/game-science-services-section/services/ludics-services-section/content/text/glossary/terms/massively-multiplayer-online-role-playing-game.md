@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       446eeda2-1110-40c8-bcce-eaf49d1e5003
+:ROAM_ALIASES: MMORPGS MMORPG
+:END:
+#+title: massively-multiplayer online role-playing game
+#+date: [2025-08-26 Tue 08:21]

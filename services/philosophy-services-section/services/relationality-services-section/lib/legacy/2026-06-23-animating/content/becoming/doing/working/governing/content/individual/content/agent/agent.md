@@ -1,0 +1,38 @@
+---
+
+description: "An entity that perceives its environment and acts on it to achieve goals — the basic unit of autonomous action in both artificial intelligence and organizational theory."
+defines: agent
+aliases: [agents]
+made-of: [perception, action, goal]
+distinguished-from: [tool, script, service]
+uses: [skill, tool, rule]
+governed-by: [office, duty, delegation]
+instances: [human-agent, software-agent, subagent]
+introduced-by: russell-norvig-1995
+date-created: 2026-04-01
+---
+
+An agent is an entity that perceives its environment and acts on it to achieve goals.
+Stuart Jonathan Russell and Peter Norvig defined this in *Artificial Intelligence: A Modern Approach* (1995): an agent is anything that can be viewed as perceiving its environment through sensors and acting upon it through actuators.
+A thermostat is an agent — it perceives temperature and acts by switching a heater.
+A person is an agent.
+A software process that reads files, makes decisions, and writes output is an agent.
+
+What distinguishes an agent from a [tool](../../../humanities/theories/philosophy/terms/tool.md) is autonomy.
+A tool does nothing until a user wields it.
+An agent acts on its own judgment within its scope.
+A hammer waits in a drawer.
+A [captain](../../../humanities/theories/sociology/theories/work/terms/captain.md) makes decisions.
+The boundary between tool and agent is not sharp — a thermostat has minimal autonomy, a human has maximal — but the distinction matters because agents bear responsibility for their actions in a way tools do not.
+
+In organizational theory, an agent is a person who acts on behalf of a principal.
+The principal-agent relationship (Stephen Alan Ross, "The Economic Theory of Agency," *American Economic Review*, 1973) is defined by [delegation](../../../humanities/theories/sociology/theories/work/terms/delegation.md): the principal grants the agent authority to act within a scope, and the agent incurs [duties](../../../humanities/theories/sociology/theories/work/theories/governance/terms/duty.md) to the principal — loyalty, care, and accountability.
+The agent's [office](../../../humanities/theories/sociology/theories/work/terms/office.md) specifies what powers, duties, privileges, and immunities the agent holds within the delegated scope.
+
+In agentic software systems like Claude Code, an agent is a process that receives a task, reasons about how to accomplish it, uses [tools](../../../humanities/theories/philosophy/terms/tool.md) and [skills](./skill.md) to do work, and returns a result.
+Agents operate under [rules](./rule.md) that constrain their behavior and may be organized into hierarchies where a parent agent delegates subtasks to child agents.
+Each agent has a defined scope — the [commands](./command.md) it can run, the files it can access, the tools it can use — analogous to the jurisdictional limits of an [office](../../../humanities/theories/sociology/theories/work/terms/office.md) in an institution.
+
+The convergence between organizational agents and software agents is not metaphorical.
+Both are entities that act within delegated scope, bear duties to a principal, and are governed by rules they did not write.
+The same formal structure — principal, agent, scope, duty, accountability — applies to a naval [first officer](../../../humanities/theories/sociology/theories/work/theories/governance/theories/military-command/terms/first-officer.md) acting under a captain's authority and to a software subagent acting under a parent agent's delegation.

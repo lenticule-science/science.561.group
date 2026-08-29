@@ -1,0 +1,5 @@
+#+title: emsenn's Local Area Network
+
+These resources are intended for use by folk who happen to live close to me, around the headwaters of what most folk call the Haw River, in the Piedmont of Turtle Island.
+
+- [[file:iso.org][In Search Of]] :: A listing of things I'm looking for. If you're local and want to help me out, check this list, then check your garage/basement/closets.

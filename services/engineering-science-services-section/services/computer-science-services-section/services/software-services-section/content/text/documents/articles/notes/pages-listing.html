@@ -1,0 +1,13 @@
+{{ with .Pages }}
+    <ul>
+      {{ range . }}
+        <li>
+          <a href="{{ .Permalink}}"><strong>
+            {{- if (eq .Kind "taxonomy") -}}
+              {{- .Title | pluralize -}}
+        {{- else -}}{{- .Title -}}{{- end -}}
+        </strong></a><br/>
+      </li>
+    {{ end }}
+  </ul>
+{{ end }}

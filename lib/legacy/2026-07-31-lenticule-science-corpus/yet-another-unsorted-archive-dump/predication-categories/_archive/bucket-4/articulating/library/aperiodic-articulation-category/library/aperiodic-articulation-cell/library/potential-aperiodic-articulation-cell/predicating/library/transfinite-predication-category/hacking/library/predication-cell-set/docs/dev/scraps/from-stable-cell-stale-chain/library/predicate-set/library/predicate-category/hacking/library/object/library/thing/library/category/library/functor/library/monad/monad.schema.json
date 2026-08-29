@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/category/library/functor/library/monad/monad.schema.json",
+  "title": "Monad",
+  "description": "JSON Schema for a monad on a category C — an endofunctor T : C → C equipped with a unit natural transformation η : Id_C ⇒ T and a multiplication natural transformation μ : T² ⇒ T satisfying associativity and unit laws (Mac Lane 1971 Ch. VI; Eilenberg & Moore 1965). Specializes functor by adding the unit and multiplication cells. unevaluatedProperties: false locks the leaf surface.",
+  "allOf": [{ "$ref": "https://research-notes.561.group/hacking/library/predication-notes/object/library/thing/library/category/library/functor/functor.schema.json" }],
+  "type": "object",
+  "required": ["endofunctor", "unit", "multiplication"],
+  "properties": {
+    "endofunctor": {
+      "$dynamicRef": "#name-shape",
+      "description": "The endofunctor T : C → C that this monad is structured on. Source-category and target-category of the endofunctor are equal."
+    },
+    "unit": {
+      "$dynamicRef": "#name-shape",
+      "description": "The unit natural transformation η : Id_C ⇒ T."
+    },
+    "multiplication": {
+      "$dynamicRef": "#name-shape",
+      "description": "The multiplication natural transformation μ : T² ⇒ T."
+    }
+  },
+  "unevaluatedProperties": false
+}

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       ffe77382-1ddc-47ae-a757-b1bac88b4fc6
+:END:
+#+title: object
+#+date: [2025-08-29 Fri 10:51]
+

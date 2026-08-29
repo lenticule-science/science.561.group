@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       b2499858-b4a4-4ba3-8e8d-642e0ac43bbc
+:date-created: [2023-12-09 Sat 16:20]
+:form:     [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]
+:public:   true
+:instantiates: [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]
+:author:   [[id:40cbaad9-af3c-4573-b356-ae116687e483][emsenn]]
+:END:
+#+title: On hospicing humanity as a mechanism of total liberation
+#+date: [2023-12-09 Sat 16:20]
+#+author: emsenn
+
+An aspect of our approach to [[id:51ed750b-2e4e-4634-89bc-00f602c748a3][total liberation]] is that we may be [[id:8edceb3d-4717-4e40-8c99-418879134cb5][hospicing humanity]].

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       666ee276-f0e9-4c41-b584-e4c664b8226c
+:END:
+#+title: cybernetics
+#+date: [2025-09-17 Wed 09:10]
+

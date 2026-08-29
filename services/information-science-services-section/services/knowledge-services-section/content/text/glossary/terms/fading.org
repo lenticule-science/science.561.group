@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       4ac34974-a66e-43a1-be8f-55493b357562
+:END:
+#+title: Fading
+#+date: [2025-09-05 Fri 20:38]
+

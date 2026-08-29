@@ -1,0 +1,547 @@
+#+COLUMNS: %40ITEM(Task) %17Effort(Estimated Effort){:} %CLOCKSUM
+#+TODO: ROUT | DONE
+* Annual
+*** ROUT [#B] Prep taxes 
+DEADLINE: <2022-03-20 Sun> SCHEDULED: <2022-01-01 Sat>
+:PROPERTIES:
+:EFFORT:   10:00
+:END:
+* Monthly
+** Inspection
+*** ROUT [#B] Check smoke alarms 
+SCHEDULED: <2021-10-23 Sat>
+:PROPERTIES:
+:EFFORT:   0:30
+:END:
+** Maintenance
+*** ROUT [#B] Cutting board maintenance
+SCHEDULED: <2021-11-02 Tue ++2w>
+:PROPERTIES:
+:EFFORT:   0:20
+:LAST_REPEAT: [2021-10-19 Tue 12:15]
+:END:
+:LOGBOOK:
+- State "DONE"       from "ROUT"       [2021-10-19 Tue 12:15]
+CLOCK: [2021-10-19 Tue 11:28]--[2021-10-19 Tue 11:43] =>  0:15
+:END:
+* Weekly
+** Sunday
+*** ROUT [#A] Water the houseplants
+SCHEDULED: <2021-10-25 Mon>
+:PROPERTIES:
+:EFFORT:   0:30
+:END:
+*** ROUT [#B] Check the water containers
+SCHEDULED: <2021-10-24 Sun 07:00 ++1w>
+:PROPERTIES:
+:Effort:   0:10
+:END:
+
+*** ROUT [#C] Tidy downstairs 
+SCHEDULED: <2021-10-24 Sun 07:30 ++1w>
+:PROPERTIES:
+:EFFORT:   0:15
+:END:
+*** ROUT [#C] Tidy downstairs 
+SCHEDULED: <2021-10-24 Sun 20:00 ++1w>
+:PROPERTIES:
+:EFFORT:   0:15
+:END:
+*** ROUT [#C] Sweep downstairs 
+SCHEDULED: <2021-10-24 Sun 20:00 ++1w>
+:PROPERTIES:
+:EFFORT:   0:15
+:END:
+*** ROUT [#C] Sweep the porch 
+SCHEDULED: <2021-10-24 Sun 07:15 ++1w>
+:PROPERTIES:
+:EFFORT:   0:15
+:LAST_REPEAT: [2021-10-17 Sun 11:43]
+:END:
+*** ROUT [#C] Tidy the porch 
+SCHEDULED: <2021-10-24 Sun 10:30 ++1w>
+:PROPERTIES:
+:EFFORT:   0:15
+:LAST_REPEAT: [2021-10-17 Sun 17:59]
+:END:
+*** ROUT [#C] Laundry 
+SCHEDULED: <2021-10-24 Sun ++1w>
+:PROPERTIES:
+:EFFORT:   3:00
+:LAST_REPEAT: [2021-10-19 Tue 21:36]
+:END:
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2021-10-19 Tue 21:36]
+:END:
+*** ROUT [#C] Wash the dishes 
+SCHEDULED: <2021-10-24 Sun 10:45 ++1w>
+:PROPERTIES:
+:EFFORT:   0:30
+:END:
+
+*** ROUT [#C] Prepare last week's records 
+SCHEDULED: <2021-10-24 Sun ++1w>
+:PROPERTIES:
+:EFFORT:   2:00
+:CAPTURE_TEMPLATE: orwrl
+:LAST_REPEAT: [2021-10-21 Thu 14:08]
+:END:
+:LOGBOOK:
+- State "DONE"       from "ROUT"       [2021-10-21 Thu 14:08]
+CLOCK: [2021-10-21 Thu 13:49]--[2021-10-21 Thu 14:08] =>  0:19
+CLOCK: [2021-10-20 Wed 18:13]--[2021-10-20 Wed 18:51] =>  0:38
+CLOCK: [2021-10-20 Wed 15:05]--[2021-10-20 Wed 15:34] =>  0:29
+:END:
+
+*** ROUT [#B] Inspect the garden
+SCHEDULED: <2021-10-24 Sun 07:30 ++1w>
+:PROPERTIES:
+:EFFORT:   0:20
+:END:
+** Monday
+*** ROUT [#C] Tidy downstairs 
+SCHEDULED: <2021-10-25 Mon 07:30 ++1w>
+:PROPERTIES:
+:EFFORT:   0:15
+:END:
+*** ROUT [#C] Tidy downstairs 
+SCHEDULED: <2021-10-25 Mon 20:00 ++1w>
+:PROPERTIES:
+:EFFORT:   0:15
+:END:
+*** ROUT [#C] Sweep downstairs 
+SCHEDULED: <2021-10-25 Mon 20:00 ++1w>
+:PROPERTIES:
+:EFFORT:   0:15
+:END:
+*** ROUT [#C] Sweep upstairs, first 
+SCHEDULED: <2021-10-25 Mon ++1w>
+:PROPERTIES:
+:EFFORT:   0:30
+:END:
+*** ROUT [#C] Sweep the porch 
+SCHEDULED: <2021-10-25 Mon 07:15 ++1w>
+:PROPERTIES:
+:EFFORT:   0:15
+:LAST_REPEAT: [2021-10-17 Sun 11:43]
+:END:
+*** ROUT [#C] Tidy the porch 
+SCHEDULED: <2021-10-25 Mon 10:30 ++1w>
+:PROPERTIES:
+:EFFORT:   0:15
+:LAST_REPEAT: [2021-10-17 Sun 17:59]
+:END:
+
+*** ROUT [#C] Wash the dishes 
+SCHEDULED: <2021-10-25 Mon 10:45 ++1w>
+:PROPERTIES:
+:EFFORT:   0:30
+:END:
+
+*** ROUT [#B] Check the water containers
+SCHEDULED: <2021-10-25 Mon 07:00 ++1w>
+:PROPERTIES:
+:Effort:   0:10
+:END:
+
+
+*** ROUT [#B] Inspect the garden
+SCHEDULED: <2021-10-25 Mon 07:30 ++1w>
+:PROPERTIES:
+:EFFORT:   0:20
+:END:
+
+** Tuesday
+*** ROUT [#C] Tidy downstairs 
+SCHEDULED: <2021-10-26 Tue 07:30 ++1w>
+:PROPERTIES:
+:EFFORT:   0:15
+:LAST_REPEAT: [2021-10-20 Wed 11:20]
+:END:
+:LOGBOOK:
+- State "DONE"       from "ROUT"       [2021-10-20 Wed 11:20]
+- State "DONE"       from "ROUT"       [2021-10-20 Wed 11:20]
+- State "DONE"       from "ROUT"       [2021-10-20 Wed 11:20]
+- State "DONE"       from "ROUT"       [2021-10-20 Wed 11:20]
+- State "DONE"       from "ROUT"       [2021-10-20 Wed 11:20]
+- State "DONE"       from "ROUT"       [2021-10-20 Wed 11:20]
+:END:
+*** ROUT [#C] Tidy downstairs 
+SCHEDULED: <2021-10-26 Tue 20:00 ++1w>
+:PROPERTIES:
+:EFFORT:   0:15
+:LAST_REPEAT: [2021-10-20 Wed 11:20]
+:END:
+:LOGBOOK:
+- State "DONE"       from "ROUT"       [2021-10-20 Wed 11:20]
+:END:
+*** ROUT [#C] Dust downstairs 
+SCHEDULED: <2021-10-26 Tue ++1w>
+:PROPERTIES:
+:EFFORT:   0:15
+:LAST_REPEAT: [2021-10-20 Wed 11:21]
+:END:
+:LOGBOOK:
+- State "DONE"       from "ROUT"       [2021-10-20 Wed 11:21]
+:END:
+*** ROUT [#C] Sweep downstairs 
+SCHEDULED: <2021-10-26 Tue 20:00 ++1w>
+:PROPERTIES:
+:EFFORT:   0:15
+:END:
+*** ROUT [#C] Sweep the porch 
+SCHEDULED: <2021-10-26 Tue 07:15 ++1w>
+:PROPERTIES:
+:EFFORT:   0:15
+:LAST_REPEAT: [2021-10-17 Sun 11:43]
+:END:
+*** ROUT [#C] Tidy the porch 
+SCHEDULED: <2021-10-26 Tue 10:30 ++1w>
+:PROPERTIES:
+:EFFORT:   0:15
+:LAST_REPEAT: [2021-10-17 Sun 17:59]
+:END:
+*** ROUT [#C] Wash the dishes 
+SCHEDULED: <2021-10-26 Tue 10:45 ++1w>
+:PROPERTIES:
+:EFFORT:   0:30
+:END:
+
+
+*** ROUT [#B] Check the water containers
+SCHEDULED: <2021-10-26 Tue 07:00 ++1w>
+:PROPERTIES:
+:Effort:   0:10
+:END:
+
+
+*** ROUT [#B] Inspect the garden
+SCHEDULED: <2021-10-26 Tue 07:30 ++1w>
+:PROPERTIES:
+:EFFORT:   0:20
+:END:
+
+** Wednesday
+*** ROUT [#C] Tidy downstairs 
+SCHEDULED: <2021-10-27 Wed 07:30 ++1w>
+:PROPERTIES:
+:EFFORT:   0:15
+:LAST_REPEAT: [2021-10-20 Wed 11:21]
+:END:
+:LOGBOOK:
+- State "DONE"       from "ROUT"       [2021-10-20 Wed 11:21]
+:END:
+*** ROUT [#C] Tidy downstairs 
+SCHEDULED: <2021-10-20 Wed 20:00 ++1w>
+:PROPERTIES:
+:EFFORT:   0:15
+:END:
+*** ROUT [#C] Sweep downstairs 
+SCHEDULED: <2021-10-20 Wed 20:00 ++1w>
+:PROPERTIES:
+:EFFORT:   0:15
+:END:
+*** ROUT [#C] Dust upstairs 
+SCHEDULED: <2021-10-20 Wed ++1w>
+:PROPERTIES:
+:EFFORT:   0:30
+:END:
+*** ROUT [#C] Sweep the porch 
+SCHEDULED: <2021-10-27 Wed 07:15 ++1w>
+:PROPERTIES:
+:EFFORT:   0:15
+:LAST_REPEAT: [2021-10-20 Wed 12:23]
+:END:
+:LOGBOOK:
+- State "DONE"       from "ROUT"       [2021-10-20 Wed 12:23]
+:END:
+*** ROUT [#C] Tidy the porch 
+SCHEDULED: <2021-10-27 Wed 10:30 ++1w>
+:PROPERTIES:
+:EFFORT:   0:15
+:LAST_REPEAT: [2021-10-21 Thu 14:35]
+:END:
+:LOGBOOK:
+- State "DONE"       from "ROUT"       [2021-10-21 Thu 14:35]
+CLOCK: [2021-10-21 Thu 14:29]--[2021-10-21 Thu 14:35] =>  0:06
+:END:
+*** ROUT [#C] Wash the dishes 
+SCHEDULED: <2021-10-20 Wed 10:45 ++1w>
+:PROPERTIES:
+:EFFORT:   0:30
+:END:
+
+*** ROUT [#B] Check the water containers
+SCHEDULED: <2021-10-20 Wed 07:00 ++1w>
+:PROPERTIES:
+:Effort:   0:10
+:END:
+
+*** ROUT [#B] Inspect the garden
+SCHEDULED: <2021-10-27 Wed 07:30 ++1w>
+:PROPERTIES:
+:EFFORT:   0:20
+:LAST_REPEAT: [2021-10-21 Thu 14:26]
+:END:
+:LOGBOOK:
+- State "DONE"       from "ROUT"       [2021-10-21 Thu 14:26]
+CLOCK: [2021-10-21 Thu 14:08]--[2021-10-21 Thu 14:26] =>  0:18
+:END:
+
+*** ROUT [#C] Sharpen garden tools
+SCHEDULED: <2021-10-27 Wed>
+:PROPERTIES:
+:Effort:   0:40
+:END:
+:LOGBOOK:
+CLOCK: [2021-10-21 Thu 11:30]--[2021-10-21 Thu 12:55] =>  1:25
+:END:
+** Thursday
+*** ROUT [#C] Tidy downstairs 
+SCHEDULED: <2021-10-21 Thu 07:30 ++1w>
+:PROPERTIES:
+:EFFORT:   0:15
+:END:
+*** ROUT [#C] Tidy downstairs 
+SCHEDULED: <2021-10-21 Thu 20:00 ++1w>
+:PROPERTIES:
+:EFFORT:   0:15
+:END:
+*** ROUT [#C] Sweep downstairs 
+SCHEDULED: <2021-10-21 Thu 20:00 ++1w>
+:PROPERTIES:
+:EFFORT:   0:15
+:END:
+*** ROUT [#C] Sweep upstairs, second 
+SCHEDULED: <2021-10-21 Thu ++1w>
+:PROPERTIES:
+:EFFORT:   0:30
+:END:
+*** ROUT [#C] Sweep the porch 
+SCHEDULED: <2021-10-28 Thu 07:15 ++1w>
+:PROPERTIES:
+:EFFORT:   0:15
+:LAST_REPEAT: [2021-10-21 Thu 14:38]
+:END:
+:LOGBOOK:
+- State "DONE"       from "ROUT"       [2021-10-21 Thu 14:38]
+:END:
+*** ROUT [#C] Tidy the porch 
+SCHEDULED: <2021-10-28 Thu 10:30 ++1w>
+:PROPERTIES:
+:EFFORT:   0:15
+:LAST_REPEAT: [2021-10-21 Thu 14:38]
+:END:
+:LOGBOOK:
+- State "DONE"       from "ROUT"       [2021-10-21 Thu 14:38]
+:END:
+
+*** ROUT [#C] Wash the dishes 
+SCHEDULED: <2021-10-21 Thu 10:45 ++1w>
+:PROPERTIES:
+:EFFORT:   0:30
+:END:
+
+*** ROUT [#B] Check the water containers
+SCHEDULED: <2021-10-21 Thu 07:00 ++1w>
+:PROPERTIES:
+:Effort:   0:10
+:END:
+
+*** ROUT [#C] Sharpen pocketknife
+SCHEDULED: <2021-10-28 Thu>
+:PROPERTIES:
+:Effort:   0:20
+:END:
+:LOGBOOK:
+CLOCK: [2021-10-21 Thu 10:52]--[2021-10-21 Thu 11:22] =>  0:30
+:END:
+*** ROUT [#B] Inspect the garden
+SCHEDULED: <2021-10-28 Thu 07:30 ++1w>
+:PROPERTIES:
+:EFFORT:   0:20
+:LAST_REPEAT: [2021-10-21 Thu 14:38]
+:END:
+:LOGBOOK:
+- State "DONE"       from "ROUT"       [2021-10-21 Thu 14:38]
+:END:
+
+** Friday
+*** ROUT [#B] Go to grocery 
+SCHEDULED: <2021-10-29 Fri 08:00 ++1w>
+:PROPERTIES:
+:EFFORT:   1:30
+:END:
+*** ROUT [#C] Tidy downstairs 
+SCHEDULED: <2021-10-22 Fri 07:30 ++1w>
+:PROPERTIES:
+:EFFORT:   0:15
+:END:
+*** ROUT [#C] Tidy downstairs 
+SCHEDULED: <2021-10-22 Fri 20:00 ++1w>
+:PROPERTIES:
+:EFFORT:   0:15
+:END:
+*** ROUT [#C] Sweep downstairs 
+SCHEDULED: <2021-10-22 Fri 20:00 ++1w>
+:PROPERTIES:
+:EFFORT:   0:15
+:END:
+*** ROUT [#C] Sweep the porch 
+SCHEDULED: <2021-10-29 Fri 07:15 ++1w>
+:PROPERTIES:
+:EFFORT:   0:15
+:LAST_REPEAT: [2021-10-22 Fri 11:57]
+:END:
+:LOGBOOK:
+- State "DONE"       from "ROUT"       [2021-10-22 Fri 11:57]
+CLOCK: [2021-10-22 Fri 11:25]--[2021-10-22 Fri 11:32] =>  0:07
+:END:
+
+*** ROUT [#C] Tidy the porch 
+SCHEDULED: <2021-10-22 Fri 10:30 ++1w>
+:PROPERTIES:
+:EFFORT:   0:15
+:LAST_REPEAT: [2021-10-17 Sun 17:59]
+:END:
+*** ROUT [#C] Wash the dishes 
+SCHEDULED: <2021-10-22 Fri 10:45 ++1w>
+:PROPERTIES:
+:EFFORT:   0:30
+:END:
+
+*** ROUT [#B] Check the water containers
+SCHEDULED: <2021-10-22 Fri 07:00 ++1w>
+:PROPERTIES:
+:Effort:   0:10
+:END:
+
+
+*** ROUT [#B] Inspect the garden
+SCHEDULED: <2021-10-22 Fri 07:30 ++1w>
+:PROPERTIES:
+:EFFORT:   0:20
+:END:
+
+** Saturday
+*** ROUT [#B] Go thrifting 
+SCHEDULED: <2021-10-23 Sat 11:00>
+:PROPERTIES:
+:EFFORT:   1:30
+:END:
+
+*** ROUT [#C] Sweep downstairs 
+SCHEDULED: <2021-10-23 Sat 20:00 ++1w>
+:PROPERTIES:
+:EFFORT:   0:15
+:END:
+*** ROUT [#C] Sweep the porch 
+SCHEDULED: <2021-10-23 Sat 07:15 ++1w>
+:PROPERTIES:
+:EFFORT:   0:15
+:LAST_REPEAT: [2021-10-17 Sun 11:43]
+:END:
+
+*** ROUT [#C] Tidy the porch 
+SCHEDULED: <2021-10-23 Sat 10:30 ++1w>
+:PROPERTIES:
+:EFFORT:   0:15
+:LAST_REPEAT: [2021-10-17 Sun 17:59]
+:END:
+
+*** ROUT [#C] Wash the dishes 
+SCHEDULED: <2021-10-23 Sat 10:45 ++1w>
+:PROPERTIES:
+:EFFORT:   0:30
+:END:
+
+
+*** ROUT [#B] Check the water containers
+SCHEDULED: <2021-10-23 Sat 07:00 ++1w>
+:PROPERTIES:
+:Effort:   0:10
+:END:
+
+
+*** ROUT [#C] Inventory purchases 
+SCHEDULED: <2021-10-23 Sat>
+:PROPERTIES:
+:EFFORT:   1:30
+:END:
+*** ROUT [#C] Prepare next week's records 
+SCHEDULED: <2021-10-23 Sat ++1w>
+:PROPERTIES:
+:EFFORT:   1:00
+:END:
+
+*** ROUT [#B] Inspect the garden
+SCHEDULED: <2021-10-23 Sat 07:30 ++1w>
+:PROPERTIES:
+:EFFORT:   0:20
+:END:
+
+
+* Anytime
+** ROUT Recordkeeping
+:LOGBOOK:
+CLOCK: [2021-10-21 Thu 12:55]--[2021-10-21 Thu 13:38] =>  0:43
+CLOCK: [2021-10-20 Wed 18:08]--[2021-10-20 Wed 18:12] =>  0:04
+CLOCK: [2021-10-20 Wed 14:55]--[2021-10-20 Wed 15:05] =>  0:10
+CLOCK: [2021-10-20 Wed 14:32]--[2021-10-20 Wed 14:33] =>  0:01
+CLOCK: [2021-10-20 Wed 11:37]--[2021-10-20 Wed 12:24] =>  0:47
+:END:
+** House
+*** ROUT Tidy downstairs
+*** ROUT Tidy the porch
+*** ROUT Tidy the garden
+** Personal
+*** ROUT Chilling
+:LOGBOOK:
+CLOCK: [2021-10-20 Wed 18:51]--[2021-10-21 Thu 12:52] => 18:01
+CLOCK: [2021-10-20 Wed 15:34]--[2021-10-20 Wed 18:08] =>  2:34
+CLOCK: [2021-10-20 Wed 14:33]--[2021-10-20 Wed 14:55] =>  0:22
+CLOCK: [2021-10-20 Wed 13:48]--[2021-10-20 Wed 14:32] =>  0:44
+CLOCK: [2021-10-19 Tue 18:39]--[2021-10-19 Tue 20:44] =>  2:05
+CLOCK: [2021-10-19 Tue 16:56]--[2021-10-19 Tue 17:06] =>  0:10
+CLOCK: [2021-10-19 Tue 16:52]--[2021-10-19 Tue 16:56] =>  0:04
+CLOCK: [2021-10-19 Tue 14:54]--[2021-10-19 Tue 16:02] =>  1:08
+CLOCK: [2021-10-19 Tue 11:43]--[2021-10-19 Tue 12:05] =>  0:22
+CLOCK: [2021-10-19 Tue 10:39]--[2021-10-19 Tue 10:54] =>  0:15
+CLOCK: [2021-10-17 Sun 18:00]--[2021-10-17 Sun 18:15] =>  0:15
+CLOCK: [2021-10-17 Sun 14:03]--[2021-10-17 Sun 17:37] =>  3:34
+CLOCK: [2021-10-17 Sun 13:31]--[2021-10-17 Sun 13:40] =>  0:09
+CLOCK: [2021-10-17 Sun 12:27]--[2021-10-17 Sun 12:56] =>  0:29
+CLOCK: [2021-10-17 Sun 11:40]--[2021-10-17 Sun 12:27] =>  0:47
+- Note taken on [2021-10-17 Sun 10:52] \\
+  w/ esther
+CLOCK: [2021-10-17 Sun 10:52]--[2021-10-17 Sun 11:10] =>  0:18
+CLOCK: [2021-10-17 Sun 09:40]--[2021-10-17 Sun 09:41] =>  0:01
+CLOCK: [2021-10-17 Sun 08:34]--[2021-10-17 Sun 09:07] =>  0:33
+CLOCK: [2021-10-16 Sat 20:45]--[2021-10-16 Sat 21:09] =>  0:24
+CLOCK: [2021-10-16 Sat 20:25]--[2021-10-16 Sat 20:25] =>  0:00
+CLOCK: [2021-10-16 Sat 20:14]--[2021-10-16 Sat 20:25] =>  0:11
+CLOCK: [2021-10-16 Sat 18:24]--[2021-10-16 Sat 18:55] =>  0:31
+:END:
+*** ROUT Eating
+:LOGBOOK:
+CLOCK: [2021-10-17 Sun 18:15]--[2021-10-17 Sun 18:35] =>  0:20
+CLOCK: [2021-10-17 Sun 12:19]--[2021-10-17 Sun 12:27] =>  0:08
+CLOCK: [2021-10-17 Sun 10:36]--[2021-10-17 Sun 10:52] =>  0:16
+CLOCK: [2021-10-16 Sat 21:09]--[2021-10-16 Sat 21:43] =>  0:34
+:END:
+** Garden
+*** Weeding
+:LOGBOOK:
+CLOCK: [2021-10-22 Fri 11:35]--[2021-10-22 Fri 13:44] =>  2:09
+- Note taken on [2021-10-22 Fri 10:31] \\
+  prepping around the furance for peas and radishes
+CLOCK: [2021-10-22 Fri 10:31]--[2021-10-22 Fri 11:22] =>  0:51
+:END:
+*** Soilwork
+:LOGBOOK:
+CLOCK: [2021-10-22 Fri 11:22]--[2021-10-22 Fri 11:25] =>  0:03
+:END:
+*** Planting
+:LOGBOOK:
+CLOCK: [2021-10-22 Fri 13:54]--[2021-10-22 Fri 15:56] =>  2:02
+:END:

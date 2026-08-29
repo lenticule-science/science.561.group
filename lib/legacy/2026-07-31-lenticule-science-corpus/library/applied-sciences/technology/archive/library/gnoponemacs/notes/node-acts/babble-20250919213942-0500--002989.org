@@ -1,0 +1,71 @@
+:PROPERTIES:
+:ID:       85a9a3a8-4c2a-4d2c-8121-d83e64eff8a7
+:form:     [[id:0f290d0b-247e-4f7b-a0d4-ddbca3c97326][babble by emsenn]]
+:subject:  [[id:7185c333-a173-42d1-bcc0-aad983e8c8b9][developing GnoponEmacs]], [[id:dc21a3aa-a339-4106-8a19-cbaba0a0ded4][describing]]
+:public:   true
+:END:
+#+title: Babble, [2025-09-19 Fri 21:39], On describing GnoponEmacs nodes
+#+date: [2025-09-19 Fri 21:39]
+#+author: emsenn
+
+I'd love to be able to just say ~(describe)~ in a [[id:bc7c9861-6f01-4f8e-ac8f-feb6c9cc0706][node]] and have it [[id:dc21a3aa-a339-4106-8a19-cbaba0a0ded4][describe]] it.
+
+I think the closest I'll be able to get (in-text, I can probably shortcode it somehow) is ~src_elisp((gpe/describe))~, which is... still pretty tight.
+
+But the question is how to get there. I feel like perhaps I can do something like what I've done with my [[id:686d4e72-eb77-4ac7-b37a-2c7a7e0c0dc6][Org-roam capture templates]]: have functions in files, in a folder, and load that folder into some namespace (probably ~gpe/node~, now that I think about it.)
+
+So first let me whip up something that describes a node, and I'll put it in [[id:dc21a3aa-a339-4106-8a19-cbaba0a0ded4][describing]]'s file.
+
+Nothing real:
+
+#+begin_src elisp
+  (defun describe ()
+    "TBD"
+    "Doesn't work")
+#+end_src
+
+But I need some file there to test loading a directory of single-function files into a namespace.
+
+#+begin_src elisp
+  (defun gpe/load-node-acts ()
+    "Load all node act files and alias their functions under the `gpe/node/` namespace."
+    (interactive)
+    (dolist (file (directory-files "~/ems/org/src/gpe/node-acts/"
+  				 t "\\.el$"))
+      (let* ((name (file-name-base file))
+             (sym  (intern name))
+  	   (nsym (intern (format "gpe/node/%s" name))))
+        (load-file file)
+        (when (fboundp sym)
+          (defalias nsym sym)))))
+#+end_src
+
+With that, I should be able to do ~src_elisp(gpe/node/describe)~ and it parse:
+
+src_elisp[:results value raw]{(gpe/node/describe)}
+
+Yup!
+
+Great. Next step is rewriting the describe function to actually try and describe the node it's at. I could easily see this getting very complex, but for now I'll (try) and keep it simple.
+
+#+begin_src elisp
+  (defun describe (&optional insert)
+    "Describes the node"
+    (let* ((title (or (org-entry-get (point) "name")
+  		    (org-collect-keywords '("TITLE"))
+  		    '("This")))
+  	 (title (if (listp title) (cadr (assoc "TITLE" title))
+  		  title))
+  	 (form (or (org-entry-get (point) "form" t)
+  		   "[[id:cb43263c-7d3d-44df-8236-588b3d9ed55a][undescribed node]]"))
+  	 (description (format "%s is (a|an|the) %s" title form)))
+      (if insert (insert description) description)))
+#+end_src
+
+This now lets me do ~(gpe/node/describe t)~ to insert a node's description at point: Babble, [2025-09-19 Fri 21:39], On describing GnoponEmacs nodes is (a|an|the) [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]
+
+Or, even easier, ~C-u M-x gpe/node/describe~
+
+Great! Realizing maybe it should include the link to the node, and also let me pick a node beside the one I'm at, so I can use it to create descriptions for other nodes, without it having to be hardcoded into the node like I remember doing in old versions of my Emacs stuff.
+
+But for now this feels like a good amount of improving to have done! I've set a precedent for having acts that nodes can do, to improve themselves, as long as I give them the information.

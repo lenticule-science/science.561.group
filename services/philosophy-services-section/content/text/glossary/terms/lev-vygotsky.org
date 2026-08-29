@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       88d5a8d2-09bd-4bd6-af8a-689a18d228a6
+:form:     [[id:9fee0f36-1b36-43c7-b896-14b6700c7738][person]]
+:END:
+#+title: Lev Vygotsky
+#+date: [2025-09-10 Wed 20:43]

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       5e9b77a8-9f77-41b4-a865-94fd9cc1ced3
+:END:
+#+title: The Future of Futures
+#+date: [2025-10-05 Sun 08:21]
+

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       04bb8f02-8fed-4180-9e80-5a745a4e465d
+:public:   true
+:resource-description: (([[id:edaef069-c68d-46aa-a970-d3cb7fe3165c][resource type]] . [[id:925dbd57-db01-4837-84f2-a87bb201dc45][knowledge-working]]) ([[id:d8ccc143-1871-4e16-aa67-14045a01945f][result]] . [[id:2945fa33-0393-46f0-84cc-f5c161a95de5][Website]]))
+:END:
+#+title: digital gardening
+#+date: [2025-08-28 Thu 08:57]
+

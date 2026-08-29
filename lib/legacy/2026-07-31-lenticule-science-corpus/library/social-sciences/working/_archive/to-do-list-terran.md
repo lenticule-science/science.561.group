@@ -1,0 +1,32 @@
+
+- [x] #Clean sleeping pad of mildew ⏫ ➕ 2023-12-07 🛫 2023-12-07 📅 2023-12-10 ✅ 2023-12-09
+- [ ] #Wash the dishes 
+- [ ] #Sell dishwasher
+- [ ] #Attend therapy⏳ 2023-12-07 🔁 every other week
+- [x] #Pay comcast equipemnt bill 🔼 📅 2023-12-11 ✅ 2023-12-09
+- [ ] #Learn and #document breathing exercises
+- [ ] #Sort clothes
+- [ ] #Organize bins
+- [x] #Find satin lined beanie  [completion:: 2023-12-28]
+- [x] #Wash laundry🔼  [completion:: 2023-12-28]
+- [x] #Find shikaki powder ✅ 2023-12-12
+- [x] #Brew shikaki tea  [completion:: 2023-12-28]
+- [x] #Wash hair  [completion:: 2023-12-28]
+- [x] #Text Micheal about how to pay down the priciple on my student loan ⏫ ✅ 2023-12-10
+- [ ] #Pay student loan bill📅 2024-01-04⏫ 🔁 every month 
+- [x] #Watch Collapse video from Michael ✅ 2023-12-12
+- [ ] #Text Micheal about collapse video and mouse and visitors📅 2023-12-12 
+- [ ] #Email Micheal about student loan payments
+- [x] #Explain to Micheal housing and moving situation  [completion:: 2023-12-28]
+- [x] #set-up cooking space ⏫  [completion:: 2023-12-28]
+- [x] #rake and #tidy, #steward soilworks/base camp  [completion:: 2023-12-28]
+- [ ] #Research each of the farms and gardens from Mary Oxendean's list
+- [ ] #Observe and #report climatic responses of ultralocal nonhuman kin 
+- [ ] #Make budget
+- [x] #Tidy tent  [completion:: 2023-12-28]
+- [ ] #Read the fight for turtle island
+- [ ] #Clean car
+- [ ] #Remind emsenn to connect Mo with STB learners
+- [ ] #Remind emsenn to #philosophize library management software with AI
+- [ ] #Set-up social media (reddit, mastodon, maybe X and instagram)
+- [ ] #Set-up calendar in Obsidian

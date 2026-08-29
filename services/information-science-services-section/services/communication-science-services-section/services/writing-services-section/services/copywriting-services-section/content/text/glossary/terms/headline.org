@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       17cd1512-8d8f-42ca-abf8-3ed79d7418a5
+:END:
+#+title: headline
+#+date: [2025-08-25 Mon 19:45]
+

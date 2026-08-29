@@ -1,0 +1,6 @@
+session-id: 0b6830b7
+task-prompt-preview: Heartbeat check: Stale Plans
+
+Query plans with no task activity in >7 days.
+files-changed: []
+timestamp: 2026-04-05T10:11:57.499783713+00:00

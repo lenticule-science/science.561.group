@@ -1,0 +1,5 @@
+#+title: SQLite
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-17 Thu 09:48]
+SQLite is a type of [[file:computer.org][computer]] [[file:database.org][database]].

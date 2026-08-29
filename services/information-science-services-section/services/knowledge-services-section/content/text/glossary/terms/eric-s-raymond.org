@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       0efde708-6895-4d49-890b-5793268e025c
+:END:
+#+title: Eric S. Raymond
+#+date: [2025-08-28 Thu 14:05]
+

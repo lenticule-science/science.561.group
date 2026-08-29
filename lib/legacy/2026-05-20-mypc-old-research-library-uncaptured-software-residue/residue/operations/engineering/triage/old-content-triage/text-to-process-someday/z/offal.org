@@ -1,0 +1,6 @@
+#+title: offal
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-19 Sat 21:15]
+#+roam_tags: term
+*/Offal/* is the liver, spleen, and sometimes other internal organs of an animal, in a [[file:food.org][culinary]] context.

@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       81791140-d846-43cc-88b0-f66f951b3576
+:public:   true
+:END:
+#+title: relation
+#+date: [2025-08-30 Sat 10:21]
+#+index: relation
+
+A */relation/* is a [[id:e5248432-6d1e-436e-9bdc-50fe0fcd3fe6][thing]] that does any [[id:0bf0b37a-1181-4a1f-a036-93d7b397eb52][relating]] to another thing.
+
+* Descriptions
+** In [[id:7031b7c2-7bfd-410e-8ed7-fbfc81dc3afc][relational dynamics]]
+A [[id:e5248432-6d1e-436e-9bdc-50fe0fcd3fe6][thing]] is a relation of another if it is [[id:0bf0b37a-1181-4a1f-a036-93d7b397eb52][relating]] to that thing.

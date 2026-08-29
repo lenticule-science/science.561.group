@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       1c8beae7-705a-4751-b682-3c517b36435e
+:public:   true
+:instantiates: [[id:30e9d786-8ec9-49b3-b03c-cabf24c49ce1][Webpage]]
+:field:    [[id:cc253409-9a82-4c5d-a4cd-8013f4e350c6][emsenn.net]]
+:END:
+#+title: About emsenn
+#+date: [2025-10-01 Wed 06:47]
+
+My name is */emsenn/*, and I research and analysis relational dynamics
+
+To understand what exactly that means, it can help to know a bit about me.
+
+My current focus is on research and writing, but this draws on a long experience of practice in the fields I now write about.
+
+Unfortunately, it's easier to say that than explain those experiences in any coherent way. If you're a brand consultant and want to help, [[mailto:emsenn@emsenn.net][reach out]], please.

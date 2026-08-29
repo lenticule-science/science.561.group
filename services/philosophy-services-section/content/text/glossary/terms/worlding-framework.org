@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       6fe9ae52-7ee0-487d-bcd5-fb585985baab
+:END:
+#+title: worlding framework
+#+date: [2025-09-27 Sat 09:02]
+

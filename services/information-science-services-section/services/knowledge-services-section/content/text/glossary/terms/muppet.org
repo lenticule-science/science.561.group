@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       e174604a-c769-4848-872c-8757312e8976
+:END:
+#+title: muppet
+#+date: [2025-09-05 Fri 20:20]
+

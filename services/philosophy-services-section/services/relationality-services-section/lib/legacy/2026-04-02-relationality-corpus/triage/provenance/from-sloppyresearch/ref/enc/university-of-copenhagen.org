@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID:       338bd4ab-90a3-44ed-9099-c078bfd2399f
+:public:   true
+:END:
+#+title: University of Copenhagen
+#+date: [2025-08-29 Fri 21:03]
+#+university!University of Copenhagen
+
+The */University of Copenhagen/* ([[id:2e3649c7-2f8e-403d-94e6-871b83e4d467][Danish]]: Københavns Universitet) is a [[id:fc90311c-e83b-40bc-b5f4-e741c6226cba][Danish university]], the largest in [[id:59f25e31-0f1a-485e-ac49-84f770ef5dc3][Denmark]].
+
+It's a [[id:9f4f24b4-8cec-4995-80b4-68ff6c3271ac][research university]].
+
+* Motto
+*Coelestem adspicit lucem*
+/It beholds the celestial light/
+
+* Notable Alumni
+The following [[id:db34ae6d-4344-48ad-9a83-186545b73143][people]] are [[id:656a4c2c-5328-42f3-a08c-7eb8c726fd0d][alumni]] of the University of Copenhagen:
+
+- [[id:de2808f3-b5a6-4fe8-84f0-a73ed41f8558][Niels Bohr]]
+- [[id:0a78c790-3abb-4d49-a28c-cfe6db89e872][Søren Kierkegaard]]
+- [[id:c0bfb8cb-0786-4c12-afeb-55e3149e8ef4][Tycho Brahe]]
+- [[id:0e08f3c9-dc40-4047-b526-d6f149a9fa8d][Inge Lehmann]]

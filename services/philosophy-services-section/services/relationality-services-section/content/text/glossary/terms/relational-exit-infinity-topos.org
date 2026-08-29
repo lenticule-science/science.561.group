@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       362a9789-6bcd-41d4-bc72-d72b1abd33f9
+:END:
+#+title: Relational Exit-Infinity Topos
+#+date: [2025-10-15 Wed 18:21]
+

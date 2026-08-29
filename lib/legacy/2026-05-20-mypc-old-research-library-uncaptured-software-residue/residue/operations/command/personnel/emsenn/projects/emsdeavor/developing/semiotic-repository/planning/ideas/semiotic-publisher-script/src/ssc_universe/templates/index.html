@@ -1,0 +1,245 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Published concepts</h1>
+<p class="provenance">Browse all canonical constants emitted for this projection.</p>
+<nav class="toc" aria-label="Page sections">
+  <h2>Page sections</h2>
+    <ul>
+      {% if build_info %}<li><a href="#build-info">Build metadata</a></li>{% endif %}
+      <li><a href="#concept-search">Search</a></li>
+      <li><a href="#concept-list">Concepts</a></li>
+      {% if equivalence_classes %}<li><a href="#equivalence-classes">Equivalence classes</a></li>{% endif %}
+      {% if reference_graph %}<li><a href="#reference-graph">Reference graph</a></li>{% endif %}
+      {% if delta %}<li><a href="#delta-summary">Delta summary</a></li>{% endif %}
+      {% if diagnostics %}<li><a href="#diagnostics-panel">Diagnostics</a></li>{% endif %}
+  </ul>
+</nav>
+{% if build_info %}
+<section class="panel" role="region" aria-labelledby="build-info">
+  <h2 id="build-info">Build metadata</h2>
+  <div class="status-grid">
+    <div class="status-item"><span class="status-label">Projection</span><span class="status-value">{{ build_info.projection }}</span></div>
+    <div class="status-item"><span class="status-label">Mode</span><span class="status-value">{{ build_info.mode }}</span></div>
+    <div class="status-item"><span class="status-label">Cache</span><span class="status-value">{{ build_info.cache_status }}</span></div>
+    <div class="status-item"><span class="status-label">Config hash</span><span class="status-value">{{ build_info.config_hash }}</span></div>
+    <div class="status-item"><span class="status-label">Repo fingerprint</span><span class="status-value">{{ build_info.repo_fingerprint }}</span></div>
+    <div class="status-item"><span class="status-label">Sanitize HTML</span><span class="status-value">{{ build_info.sanitize_html }}</span></div>
+    <div class="status-item"><span class="status-label">Lang</span><span class="status-value">{{ build_info.html_lang }}</span></div>
+    <div class="status-item"><span class="status-label">Assets inline</span><span class="status-value">{{ build_info.assets_inline }}</span></div>
+    <div class="status-item"><span class="status-label">Assets minify</span><span class="status-value">{{ build_info.assets_minify }}</span></div>
+    <div class="status-item"><span class="status-label">Manifest</span><span class="status-value"><a href="{{ manifest_href }}">manifest.json</a></span></div>
+    <div class="status-item"><span class="status-label">Sitemap</span><span class="status-value"><a href="{{ build_info.sitemap_href }}">sitemap.xml</a></span></div>
+  </div>
+</section>
+{% endif %}
+<section aria-labelledby="concept-search" class="panel" role="region">
+  <h2 id="concept-search">Search</h2>
+  <p class="provenance">Search canonical constants, tags, annotations, and equivalents.</p>
+  <input type="search" id="search-box" aria-describedby="search-help" placeholder="Search concepts" data-index="{{ relroot }}{{ search_href }}">
+  <div class="search-controls" aria-label="Search filters">
+    <label for="search-status-filter">Status
+      <select id="search-status-filter">
+        <option value="">All statuses</option>
+      </select>
+    </label>
+    <label for="search-target-filter">Publish target
+      <select id="search-target-filter">
+        <option value="">All targets</option>
+      </select>
+    </label>
+  </div>
+  <p id="search-help" class="provenance">Results update as you type. Filtering is case-insensitive.</p>
+  <p id="search-status" class="provenance" aria-live="polite">Loading search index…</p>
+  <div id="search-results" role="list" aria-label="Search results"></div>
+</section>
+<section aria-labelledby="concept-list" class="panel" role="region">
+  <h2 id="concept-list">Concepts</h2>
+  <ul>
+  {% for concept in concepts %}
+    <li>
+      <a href="{{ relroot }}{{ concept.anchor }}.html">{{ concept.title }}</a>
+      <span class="provenance">({{ concept.const }})</span>
+      {% if concept.aliases %}
+      <span class="provenance">aliases: {{ concept.aliases | join(', ') }}</span>
+      {% endif %}
+      {% if concept.ann_terms %}
+      <div class="concept-ann" aria-label="Ann_X(k) terms for {{ concept.const }}">Ann_X(k): {{ concept.ann_terms | join(', ') }}</div>
+      {% endif %}
+      <div class="concept-metrics" aria-label="Inferred structure for {{ concept.const }}">
+        <span class="concept-chip">T generators: {{ concept.generator_count }}</span>
+        <span class="concept-chip">F elements: {{ concept.fragment_size }}</span>
+        {% if concept.is_failure %}<span class="concept-chip failure" aria-label="Failure fragment for {{ concept.const }}">⊥_fail</span>{% endif %}
+      </div>
+    </li>
+  {% endfor %}
+  </ul>
+</section>
+{% if equivalence_classes %}
+<section class="panel" role="region" aria-labelledby="equivalence-classes">
+  <h2 id="equivalence-classes">Equivalence classes</h2>
+  <p class="provenance">Canonical constants and their declared equivalents.</p>
+  <ul>
+    {% for entry in equivalence_classes %}
+    <li>
+      <a href="{{ relroot }}{{ entry.anchor }}.html#content-{{ entry.anchor }}" aria-label="Jump to {{ entry.title }}">{{ entry.title }}</a>
+      <span class="provenance">({{ entry.const }})</span>
+      {% if entry.aliases %}
+      <ul aria-label="Aliases for {{ entry.const }}">{% for alias in entry.aliases %}<li>{{ alias }}</li>{% endfor %}</ul>
+      {% else %}<p>No aliases</p>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+{% if reference_graph %}
+<section class="panel" role="region" aria-labelledby="reference-graph">
+  <h2 id="reference-graph">Reference graph</h2>
+  <p class="provenance">Resolved and incoming references per canonical constant.</p>
+  <ul>
+  {% for entry in reference_graph %}
+    <li>
+      <a href="{{ relroot }}{{ entry.anchor }}.html#resolved-{{ entry.anchor }}" aria-label="Jump to resolved references for {{ entry.title }}">{{ entry.title }}</a>
+      <span class="provenance">({{ entry.const }})</span>
+      <div class="concept-metrics" aria-label="Reference graph metrics for {{ entry.const }}">
+        <span class="concept-chip">Resolved: {{ entry.resolved|length }}</span>
+        <span class="concept-chip">Backlinks: {{ entry.backlinks|length }}</span>
+      </div>
+      <div class="panel" role="region" aria-labelledby="resolved-refs-{{ entry.anchor }}">
+        <h3 id="resolved-refs-{{ entry.anchor }}">Resolved references</h3>
+        {% if entry.resolved %}
+        <ul aria-label="Resolved references declared by {{ entry.anchor }}">{% for ref in entry.resolved %}<li><a href="{{ relroot }}{{ ref }}.html#content-{{ ref }}">{{ ref }}</a></li>{% endfor %}</ul>
+        {% else %}<p>None</p>{% endif %}
+      </div>
+      <div class="panel" role="region" aria-labelledby="backlinks-{{ entry.anchor }}">
+        <h3 id="backlinks-{{ entry.anchor }}">Incoming backlinks</h3>
+        {% if entry.backlinks %}
+        <ul aria-label="Backlinks pointing to {{ entry.anchor }}">{% for ref in entry.backlinks %}<li><a href="{{ relroot }}{{ ref }}.html#backlinks-{{ ref }}">{{ ref }}</a></li>{% endfor %}</ul>
+        {% else %}<p>None</p>{% endif %}
+      </div>
+    </li>
+  {% endfor %}
+  </ul>
+</section>
+{% endif %}
+{% if delta %}
+<section class="panel" role="region" aria-labelledby="delta-summary">
+  <h2 id="delta-summary">Delta summary</h2>
+  <div class="status-grid">
+    <div class="status-item"><span class="status-label">Baseline present</span><span class="status-value">{{ 'yes' if delta.baseline_present else 'no' }}</span></div>
+    <div class="status-item"><span class="status-label">Failures added</span><span class="status-value">{{ delta.failures.added|length if delta.failures is defined else 0 }}</span></div>
+    <div class="status-item"><span class="status-label">Failures removed</span><span class="status-value">{{ delta.failures.removed|length if delta.failures is defined else 0 }}</span></div>
+    <div class="status-item"><span class="status-label">Unresolved added</span><span class="status-value">{{ delta.unresolved.added|length if delta.unresolved is defined else 0 }}</span></div>
+    <div class="status-item"><span class="status-label">Unresolved removed</span><span class="status-value">{{ delta.unresolved.removed|length if delta.unresolved is defined else 0 }}</span></div>
+  </div>
+
+  <h3>Annotation changes</h3>
+  {% if delta.ann_changes %}
+  <ul>
+    {% for entry in delta.ann_changes %}
+    <li>
+      {% if entry.anchor %}
+        <a href="{{ relroot }}{{ entry.anchor }}.html#math-object-{{ entry.anchor }}" aria-label="Jump to math object for {{ entry.title }}">{{ entry.title }}</a>
+      {% else %}{{ entry.const }}{% endif %}: {{ entry.status }}
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}<p>None</p>{% endif %}
+
+  <h3>Reference changes</h3>
+  {% if delta.reference_changes %}
+  <ul>
+    {% for entry in delta.reference_changes %}
+    <li>
+      {% if entry.anchor %}
+        <a href="{{ relroot }}{{ entry.anchor }}.html#backlinks-{{ entry.anchor }}" aria-label="Jump to backlinks for {{ entry.title }}">{{ entry.title }}</a>
+      {% else %}{{ entry.const }}{% endif %}: {{ entry.status }}
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}<p>None</p>{% endif %}
+</section>
+{% endif %}
+{% if diagnostics %}
+<section class="panel diagnostics" role="region" aria-labelledby="diagnostics-panel">
+  <h2 id="diagnostics-panel">Diagnostics</h2>
+  <div class="status-grid">
+    <div class="status-item"><span class="status-label">Unresolved</span><span class="status-value">{{ diagnostics.unresolved_count }}</span></div>
+    <div class="status-item"><span class="status-label">Failure fragments</span><span class="status-value">{{ diagnostics.failure_fragments|length }}</span></div>
+    <div class="status-item"><span class="status-label">Failure values</span><span class="status-value">{{ diagnostics.failures_count }}</span></div>
+  </div>
+
+  <h3 id="diagnostics-unresolved">Unresolved references</h3>
+  {% if diagnostics.unresolved_by_source %}
+    <ul aria-labelledby="diagnostics-unresolved">
+      {% for entry in diagnostics.unresolved_by_source %}
+      <li>
+        <a href="{{ relroot }}{{ entry.anchor }}.html#unresolved-{{ entry.anchor }}" aria-label="Jump to unresolved references for {{ entry.title }}">{{ entry.title }}</a>
+        <ul aria-label="Unresolved references declared by {{ entry.title }}">{% for target in entry.targets %}<li class="broken">{{ target }}</li>{% endfor %}</ul>
+      </li>
+      {% endfor %}
+    </ul>
+  {% else %}<p>None</p>{% endif %}
+
+  <h3 id="diagnostics-failure-fragments">Failure fragments</h3>
+  {% if diagnostics.failure_fragments %}
+    <ul aria-labelledby="diagnostics-failure-fragments">
+      {% for entry in diagnostics.failure_fragments %}
+      <li><a href="{{ relroot }}{{ entry.anchor }}.html#math-object-{{ entry.anchor }}" aria-label="Jump to math object for {{ entry.title }}">{{ entry.title }}</a></li>
+      {% endfor %}
+    </ul>
+  {% else %}<p>None</p>{% endif %}
+
+  <h3 id="diagnostics-failure-values">Failure values</h3>
+  {% if diagnostics.failures %}
+    <ul aria-labelledby="diagnostics-failure-values">{% for failure in diagnostics.failures %}<li><code>{{ failure }}</code></li>{% endfor %}</ul>
+  {% else %}<p>None</p>{% endif %}
+</section>
+{% endif %}
+<p class="back-to-top"><a href="#top" aria-label="Back to the top of this page">Back to top</a></p>
+<script>
+const searchInput=document.getElementById('search-box');
+const results=document.getElementById('search-results');
+const status=document.getElementById('search-status');
+const statusFilter=document.getElementById('search-status-filter');
+const targetFilter=document.getElementById('search-target-filter');
+let searchData=[];
+function populateFilters(data){
+  if(statusFilter){
+    const statuses=Array.from(new Set(data.map(entry=>entry.status).filter(Boolean))).sort();
+    statuses.forEach(val=>{const opt=document.createElement('option');opt.value=val;opt.textContent=val;statusFilter.appendChild(opt);});
+  }
+  if(targetFilter){
+    const targets=new Set();
+    data.forEach(entry=>{(entry.publish_to||[]).forEach(val=>targets.add(val));});
+    Array.from(targets).sort().forEach(val=>{const opt=document.createElement('option');opt.value=val;opt.textContent=val;targetFilter.appendChild(opt);});
+  }
+}
+function setStatus(count,total,query){
+  if(!status)return;
+  const parts=[];
+  if(query){parts.push(`query "${query}"`);}
+  if(statusFilter&&statusFilter.value){parts.push(`status ${statusFilter.value}`);}
+  if(targetFilter&&targetFilter.value){parts.push(`target ${targetFilter.value}`);}
+  const base=`${count} result${count===1?'':'s'} shown of ${total}`;
+  status.textContent=parts.length?`${base} for ${parts.join(', ')}`:base;
+}
+function matchesFilters(entry,q){
+  const statusVal=statusFilter?statusFilter.value:'';
+  const targetVal=targetFilter?targetFilter.value:'';
+  if(statusVal && (entry.status||'')!==statusVal){return false;}
+  if(targetVal && !(entry.publish_to||[]).includes(targetVal)){return false;}
+  if(!q){return true;}
+  return entry.title.toLowerCase().includes(q)||entry.const.toLowerCase().includes(q)||entry.aliases.some(a=>a.toLowerCase().includes(q))||entry.tags.some(t=>t.toLowerCase().includes(q))||entry.ann_terms.some(a=>a.toLowerCase().includes(q));
+}
+function renderResults(query){
+  const q=query.trim().toLowerCase();
+  const filtered=(q||(statusFilter&&statusFilter.value)||(targetFilter&&targetFilter.value)?searchData.filter(entry=>matchesFilters(entry,q)):searchData).slice(0,50);
+  results.innerHTML=filtered.map(entry=>`<div role='listitem' class='search-hit'><a href='${entry.anchor}.html#content-${entry.anchor}' aria-label='Jump to ${entry.title}'>${entry.title}</a> <span class='provenance'>(${entry.const})</span>${entry.aliases.length?` <span class='provenance'>aliases: ${entry.aliases.join(', ')}</span>`:''}<div class='concept-metrics'><span class='concept-chip'>T generators: ${entry.generator_count}</span><span class='concept-chip'>F elements: ${entry.fragment_size}</span>${entry.failure?"<span class='concept-chip failure'>&#8869;_fail</span>":""}</div></div>`).join('')||"<p>No matches</p>";
+  setStatus(filtered.length,searchData.length,q);
+}
+fetch(searchInput.dataset.index).then(r=>r.json()).then(data=>{searchData=data;populateFilters(searchData);renderResults(searchInput.value||'');}).catch(()=>{if(status){status.textContent='Search index unavailable';}});
+searchInput.addEventListener('input',e=>renderResults(e.target.value));
+if(statusFilter){statusFilter.addEventListener('change',()=>renderResults(searchInput.value||''));}
+if(targetFilter){targetFilter.addEventListener('change',()=>renderResults(searchInput.value||''));}
+</script>
+{% endblock %}

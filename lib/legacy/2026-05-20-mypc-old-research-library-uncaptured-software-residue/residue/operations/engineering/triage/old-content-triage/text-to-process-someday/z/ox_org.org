@@ -1,0 +1,47 @@
+#+title: Ox-org
+#+begin_head
+#+ghe_schema: term-0.1.5
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-31 Thu 09:43]
+#+roam_tags: term
+#+end_head
+
+#+name: ox-org-definition
+*/[[file:ox_org.org][Ox-org]]/* is a built-in part of the [[file:org_ecosystem.org][Org ecosystem]] that allows for the export of [[file:org_mode_format.org][Org-mode format]] files into Org-mode, itself.
+
+#+toc: headlines 2
+* Introduction
+* Ox-org
+
+  #+include: "ox_org.org::definition"
+** Use
+
+   To have your [[file:emacsen.org][Emacsen]] enable Org-mode export, use the following declaration:
+   
+   #+name: ox-org-use-package-declaration-elisp
+   #+caption: An Elisp declaration for setting up /Ox-org/ using /use-package/.
+   #+begin_src elisp
+     (use-package ox-org)
+   #+end_src
+
+   #+name: ox-org-key-sequences-table
+   #+caption: A table of /key sequences/ used to operate /Ox-org/.
+   | Key sequence      | Command                 | Description                                    |
+   |-------------------+-------------------------+------------------------------------------------|
+   | =C-c C-e S-o o=   | =(org-export-dispatch)= | Export the current buffer as an Org-mode file. |
+   | =C-c C-e S-o S-o= | =(org-export-dispatch)= | Export the current buffer as an Org-mode buffer. |
+   
+* Supplements
+** Record history
+   :PROPERTIES:
+   :CUSTOM_ID: record-history
+   :END:
+   :LOGBOOK:
+   - Note taken on [2020-12-31 Thu 09:53] \\
+     Moved Ox-org configuration from [[file:groundhog_emacs.org][Groundhog Emacs]] into this record, with the goal of using [[file:org_mode_inclusion.org][Org-mode inclusions]] to re-assemble GHE.
+   - Note taken on [2020-12-31 Thu 09:43] \\
+      Created from [[file:~/org/s/p/groundhog_emacs.org][Groundhog Emacs]]
+
+      
+   :END:

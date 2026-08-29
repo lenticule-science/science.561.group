@@ -1,0 +1,59 @@
+.DS_Store
+Thumbs.db
+
+# Generated graphs and indexes (runtime state, rebuilt by generate.js)
+knowledge-graph.json
+knowledge-graph.ttl
+entity-index.json
+value-index.json
+operations/engineering/records/operations-graph.json
+
+# Python caches and virtualenvs
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+
+# Nested git repos (absorbed via subtree — excluded from initial commit)
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.nox/
+.tox/
+*.egg-info/
+.eggs/
+
+# Rust build artifacts
+**/target/
+
+# SQLite runtime files
+*.db
+*.db-shm
+*.db-wal
+
+# MkDocs output
+
+# Node dependencies
+node_modules/
+.tooling/
+
+.tmp.driveupload/
+
+# Cloned reference repos (not submodules)
+operations/engineering/fars/src/everything-claude-code/
+operations/engineering/fars/src/cline/
+operations/engineering/fars/src/openclaw/
+operations/engineering/fars/src/fluffos/
+operations/engineering/fars/src/discworld-mudlib/
+operations/engineering/triage/software/pam-js/
+operations/engineering/triage/software/pam-ts/
+
+# Continuous learning observation logs (high-volume, machine-generated)
+operations/command/records/observations/observations.jsonl
+operations/command/records/observations/archive/.claude/worktrees/
+package.json
+package-lock.json
+.fars-cache/
+.fars-store/

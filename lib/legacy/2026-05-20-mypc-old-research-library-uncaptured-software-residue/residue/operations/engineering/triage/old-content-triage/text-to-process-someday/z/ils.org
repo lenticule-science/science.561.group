@@ -1,0 +1,11 @@
+#+title: Information and Library Sciences
+#+begin_head
+#+ghe_schema: term-0.1.0
+#+roam_alias: "ILS"
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-20 Sun 22:43]
+#+roam_tags: ILS term
+#+end_head
+
+*/Information and Library Sciences/* is the domain of studying the [[file:tool.org][tools]] of [[file:information_management.org][information management]].

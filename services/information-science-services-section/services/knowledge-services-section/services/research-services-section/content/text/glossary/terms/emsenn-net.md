@@ -1,0 +1,35 @@
+---
+title: Emsenn.Net
+date-created: "2026-03-04T00:00:00"
+type: definition
+dg-publish: true
+---
+
+[emsenn.net](https://emsenn.net) is the [top-level Internet domain](top-level Internet domain) I've used for my [personal website](personal website). As of [2023-12-24](2023-12-24), it is used to host [Groundhog Autonomous Zone|my Webplace](Groundhog Autonomous Zone|my Webplace).
+
+During [Arab Spring](Arab Spring), ***emsenn.net*** was used for [syndicating](syndicating) the [writing](../../../../../../../communication-science-services-section/services/writing-services-section/content/text/glossary/topics/writing.md) of [anarchist|anarchists](anarchist|anarchists) in the [Middle East and North Africa](Middle East and North Africa) region, specializing in [Kurd|Kurdish](Kurd|Kurdish) perspectives.
+
+
+---
+
+## Consolidated triage formulation
+
+<!-- CONSOLIDATED-TRIAGE-SOURCE: emsenn-net.md SHA256 637c48695d08e36599caf5598aa7a4694fa4d48a21f36827e3aeea789117e9a2 -->
+
+This historical formulation was consolidated from `lib/emsenn/services/561-group/services/public-services-section/services/personal-services-section/emsenn-services-section/content/text/triage/emsenn-net.md`. It is retained where its wording, links, provenance, or uncertainty differs from the active entry.
+
+<details>
+<summary>Recorded source metadata</summary>
+
+```yaml
+dg-publish: true
+type: "[[definition]]"
+```
+
+</details>
+
+### Retained formulation
+
+[emsenn.net](https://emsenn.net) is the [[top-level Internet domain]] I've used for my [[personal website]]. As of [[2023-12-24]], it is used to host [[Groundhog Autonomous Zone|my Webplace]].
+
+During [[Arab Spring]], ***emsenn.net*** was used for [[syndicating]] the [[writing]] of [[anarchist|anarchists]] in the [[Middle East and North Africa]] region, specializing in [[Kurd|Kurdish]] perspectives.

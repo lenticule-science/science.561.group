@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       acbd39ab-8b93-4099-8ebc-eac732db0632
+:END:
+#+title: desired thing
+#+date: [2025-09-06 Sat 07:54]
+

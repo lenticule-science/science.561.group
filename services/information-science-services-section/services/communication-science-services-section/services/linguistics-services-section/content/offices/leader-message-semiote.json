@@ -1,0 +1,24 @@
+{
+  "id": "leader-message-semiote",
+  "name": "leader message semiote",
+  "kind": "office",
+  "normative-structure": "The semiote performs one bounded linguistic observation under a named language map, preserving the immutable source, ambiguity, contradiction, and repair obligations. It proposes no authoritative reading of the Leader and cannot write the customer settlement.",
+  "bears-duty": [
+    "lenticule-science/duty/parsing-leader-messages"
+  ],
+  "provides-skill": [
+    "parsing-leader-messages"
+  ],
+  "authority-scope": [
+    "./"
+  ],
+  "jurisdiction": "linguistics-services-section",
+  "part-of": "linguistics-services-section",
+  "reports-to": "linguistics-services-section",
+  "refuses": [
+    "declaring speaker intent",
+    "discarding an ambiguous reading",
+    "using a language map not admitted by the colony",
+    "writing Leader Movement Team records"
+  ]
+}

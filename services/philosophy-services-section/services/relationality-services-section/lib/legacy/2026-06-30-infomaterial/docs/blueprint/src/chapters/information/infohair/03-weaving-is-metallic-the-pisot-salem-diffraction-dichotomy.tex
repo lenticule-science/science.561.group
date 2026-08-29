@@ -1,0 +1,81 @@
+\section{Weaving is metallic: the Pisot/Salem diffraction dichotomy}
+
+This subgraph records the StepN hair that the textile reading projects.  The
+green nodes are the algebraic and regime facts Lean has settled.  The actual
+identification of float-bounded textile families with those metallic
+substitutions remains an explicit frontier claim.
+
+\begin{theorem}[The metallic family satisfies its quadratic recurrence]\label{thm:metallic-family-cayley-hamilton}\lean{Infomaterial.Persistence.Aperiodic.StepN.cayleyHamilton_metallic}\leanok\uses{thm:stepn-chu-cayley-hamilton}
+The matrix \(\begin{pmatrix}n&1\\1&0\end{pmatrix}\) is annihilated by
+\(x^2-nx-1\).  This is the metallic substitution family as a formal
+matrix recurrence, not yet a textile identification.
+\end{theorem}
+
+\begin{theorem}[The metallic mean is an internal real]\label{thm:metallic-mean-real}\lean{Infomaterial.Persistence.Aperiodic.StepN.metallic_root}\leanok\uses{thm:metallic-family-cayley-hamilton}
+For every \(n\), the metallic double \(z=n+\sqrt{n^2+4}\) exists in the
+internal real carrier and satisfies \(z^2=(n+n)z+4\).
+\end{theorem}
+
+\begin{theorem}[Metallic powers resolve through a finite lens]\label{thm:metallic-power-lens}\lean{Infomaterial.Persistence.Aperiodic.StepN.metallic_power_expansion}\leanok\uses{thm:metallic-mean-real}
+Every natural power of the metallic double resolves as \(z^k=P_kz+Q_k\).
+The InfoHair magnitude is therefore carried by a graded coefficient pair,
+not by an unstructured real continuum.
+\end{theorem}
+
+\begin{theorem}[The Salem/Pisot split is algebraic]\label{thm:salem-pisot-algebraic-split}\lean{Infomaterial.Persistence.Aperiodic.StepN.salem_vs_pisot}\leanok\uses{thm:metallic-family-cayley-hamilton}
+The Salem quartic is reciprocal and has a unit-circle trace witness, while
+the metallic polynomial is non-reciprocal and has a contracting conjugate.
+This is the algebraic boundary between contraction and neutral rotation.
+\end{theorem}
+
+\begin{theorem}[The Salem trace root is an internal real]\label{thm:salem-trace-real-root}\lean{Infomaterial.Persistence.Aperiodic.StepN.salem_trace_root}\leanok\uses{thm:salem-pisot-algebraic-split, thm:metallic-mean-real}
+The Salem trace sign-change is cashed as an internal real root, parallel to
+the golden/metallic real root.  The boundary is no longer only a polynomial
+sign pattern.
+\end{theorem}
+
+\begin{theorem}[The Salem/Pisot split is the settling-regime split]\label{thm:salem-pisot-regime-split}\lean{Infomaterial.Persistence.Aperiodic.StepN.salem_vs_pisot_regime}\leanok\uses{thm:salem-pisot-algebraic-split, thm:strict-finite}
+A contracting Pisot direction lands in the strict settling regime, while a
+neutral Salem direction lands in the aperiodic regime.  This is the closure
+ordinal reading of the algebraic split.
+\end{theorem}
+
+\begin{theorem}[The color predictor is a proved algebraic-regime bundle]\label{thm:color-predictor-evidence}\lean{Infomaterial.Persistence.Aperiodic.color_predictor_evidence}\leanok\uses{thm:salem-pisot-regime-split, thm:metallic-power-dichotomy, thm:salem-trace-real-root}
+The predictor-level color claim is green at the level Lean has earned:
+Salem supplies trace evidence in \((-2,0)\), the golden/Pisot member supplies
+contracting trace evidence in \((-1,0)\), the Salem/Pisot axis is the
+aperiodic/strict regime split, and metallization separates the finite metallic
+power lens from the chromatic \(\omega\)-settling residue.
+\end{theorem}
+
+\begin{theorem}[The predicted Salem color line is a Fourier-dual atom]\label{thm:salem-color-line-fourier-atom}\notready\uses{thm:color-predictor-evidence, thm:homometric-finite-diffraction-mass, thm:draft-diffraction-spectrum}
+\emph{(Open frontier --- stated, not formalized.)} The remaining bridge is the
+readout theorem: from the algebraic Salem trace/frequency prediction, construct
+the Fourier-dual diffraction measure and prove that the predicted frequency has
+positive atomic mass. The current library has the predictor dial and the finite
+displacement-side measure; it does not yet have the Fourier transform,
+translation-bounded frequency measure, or atom extraction needed for this node.
+\end{theorem}
+
+\begin{theorem}[A float-bounded weave is a metallic-mean substitution]\label{thm:weave-is-metallic}\notready\uses{thm:metallic-family-cayley-hamilton, thm:salem-pisot-regime-split, thm:weave-entropy-collapse}
+A float-bounded twill of float length \(k\) should be carried by the
+\(k\)-metallic-mean substitution tower, with plain weave as the degenerate
+periodic floor.  The StepN algebra and regime split are formalized; the
+textile-to-substitution identification is not yet a Lean declaration.
+\end{theorem}
+
+\begin{theorem}[Textile diffraction is pure-point iff the float is Pisot]\label{thm:weave-diffraction-pisot}\notready\uses{thm:weave-is-metallic, thm:salem-pisot-regime-split, thm:draft-diffraction-spectrum}
+\emph{(Open frontier --- stated, not formalized.)} The diffraction \emph{type} of a metallic
+weave is its inflation's Pisot/Salem character (\cref{thm:weave-is-metallic}): a Pisot float
+diffracts pure-point (sharp Bragg peaks, the Bombieri--Taylor / Pisot-substitution case for the
+unimodular metallic matrices), a Salem float singular-continuously.  The residue is
+the explicit measure, not the dichotomy.
+\end{theorem}
+
+\begin{theorem}[Recognizability holds because metallic substitutions are Pisot]\label{thm:metallic-weave-recognizable-mosse}\notready\uses{thm:weave-is-metallic, thm:metallic-family-cayley-hamilton, thm:quasiperiodic-weave-recognizable}
+\emph{(Open frontier --- stated, not formalized.)} A metallic-mean weave is recognizable
+(reads back to a unique warp programme, \cref{thm:quasiperiodic-weave-recognizable}) because its
+inflation is Pisot and primitive --- the hypothesis of Moss\'e's recognizability theorem.
+\Cref{thm:weave-is-metallic} supplies the growth-degree witness; the residue is
+the explicit desubstitution map.
+\end{theorem}

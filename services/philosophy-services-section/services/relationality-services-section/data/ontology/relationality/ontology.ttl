@@ -1,0 +1,1696 @@
+@prefix rel:    <https://emsenn.net/relationality/ontology#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+# =============================================================
+# Relationality Ontology — Schema
+# =============================================================
+#
+# This ontology encodes the concepts of emsenn's relational
+# framework. It is derived from the concordance analysis of
+# 13 human drafts. Its purpose is to pin down WHAT each
+# concept is, HOW concepts relate, and WHAT derives from what,
+# so that all subsequent writing can reference a single
+# consistent set of definitions.
+#
+# =============================================================
+
+rel:Ontology a owl:Ontology ;
+    dcterms:title "Relationality Ontology" ;
+    dcterms:creator "emsenn" ;
+    dcterms:description """Formal encoding of the concepts of relationality:
+a metaphysical framework grounded in Lakota epistemologies that treats
+relations as ontologically prior to entities.""" .
+
+# =============================================================
+# CLASSES — The Triadic Kinds
+# =============================================================
+#
+# The relational framework has its own type system. Every
+# relational concept is primarily one of three kinds. These
+# are not categories imposed from outside — they are the
+# three aspects of any relational activity:
+#
+#   Act:       ongoing activity that brings about conditions
+#   Condition: what an act holds open; transient until stabilized
+#   Structure: what stabilizes a condition durably
+#
+# Some concepts participate in more than one kind (e.g., Closing
+# is both an act and an operator). The triadic kinds are not
+# exclusive but indicate the PRIMARY character of a concept.
+
+rel:RelationalConcept a owl:Class ;
+    rdfs:label "Relational Concept" ;
+    rdfs:comment "Any concept within the relational framework." .
+
+rel:Act a owl:Class ;
+    rdfs:subClassOf rel:RelationalConcept ;
+    rdfs:label "Act" ;
+    rdfs:comment """Ongoing activity that brings about conditions or structures.
+An act is not a discrete event — it is continuous. Including is not
+performed once; it is ongoing. Acts require other acts to sustain them.
+'The thing by which a thing brings about any condition or structure.'
+(draft 7)""" .
+
+rel:Condition a owl:Class ;
+    rdfs:subClassOf rel:RelationalConcept ;
+    rdfs:label "Condition" ;
+    rdfs:comment """What an act holds open. A condition is the immediate
+outcome of an act — what is held open transiently. Conditions are not
+states (static) but situations (requiring ongoing maintenance).
+Inclusion is a condition: something is included only as long as
+including continues. (draft 7)""" .
+
+rel:Structure a owl:Class ;
+    rdfs:subClassOf rel:RelationalConcept ;
+    rdfs:label "Structure" ;
+    rdfs:comment """What stabilizes a condition durably. A structure holds a
+condition open without requiring moment-to-moment maintenance of the
+originating act. The relative is the first structure: it holds relation
+open durably. (draft 7)""" .
+
+rel:Operator a owl:Class ;
+    rdfs:subClassOf rel:RelationalConcept ;
+    rdfs:label "Operator" ;
+    rdfs:comment """A formal operation on recognitions. Operators are the
+algebraic encoding of acts — they describe what acts DO to recognitions
+in terms of the ordering (Includes/Excludes). Every operator is also
+an act, but 'operator' emphasizes the algebraic character.""" .
+
+rel:Phenomenon a owl:Class ;
+    rdfs:subClassOf rel:RelationalConcept ;
+    rdfs:label "Phenomenon" ;
+    rdfs:comment """A cross-cutting pattern that operates at every level of
+the framework. Phenomena are not localized to a single phase of the
+derivation but recur throughout. Examples: incitement, coherence,
+the triadic engine.""" .
+
+rel:Seed a owl:Class ;
+    rdfs:subClassOf rel:RelationalConcept ;
+    rdfs:label "Seed" ;
+    rdfs:comment """A starting point of the derivation. Neither act, condition,
+nor structure — the seed is the generative void from which the first
+act arises through self-contradiction.""" .
+
+# =============================================================
+# MOVEMENTS — Phases of the Derivation
+# =============================================================
+#
+# The derivation unfolds through five movements, each earning a
+# kind of coherence whose incompleteness incites the next.
+# Movements are not Western philosophical categories re-labeled
+# — they are phases of one continuous argument. A concept may
+# appear in more than one movement if it bridges phases.
+
+rel:Movement a owl:Class ;
+    rdfs:label "Movement" ;
+    rdfs:comment "A phase of the relational derivation." .
+
+rel:Genesis a rel:Movement ;
+    rdfs:label "Genesis" ;
+    skos:definition """The origin: Relationlessness self-contradicts, producing
+Reflexing and Differentiating. Precedes the five movements proper.""" ;
+    rel:derivationStep 0 .
+
+rel:MovementI a rel:Movement ;
+    rdfs:label "Movement I — Logical Origination" ;
+    skos:definition """Coherent distinction earns the full logical core:
+Including, Excluding, Together, Either, Inducing, Negating, Iterating.
+Corresponds to a complete Heyting algebra.""" ;
+    rel:derivationStep 1 .
+
+rel:MovementII a rel:Movement ;
+    rdfs:label "Movement II — Structural Stabilization" ;
+    skos:definition """Self-application earns persistence: Closing, Opening,
+Balancing, Necessitating, Possibilizing. Corresponds to modal logic (S4)
+and closure/interior operators.""" ;
+    rel:derivationStep 2 .
+
+rel:MovementIII a rel:Movement ;
+    rdfs:label "Movement III — Directed Dynamics" ;
+    skos:definition """The boundary between closed and open is itself related,
+earning directed motion: Flowing, Dynamic Residuation. Corresponds to
+KZ-lax idempotent comonads.""" ;
+    rel:derivationStep 3 .
+
+rel:MovementIV a rel:Movement ;
+    rdfs:label "Movement IV — Geometric Cohesion" ;
+    skos:definition """Multiple relational units require an architecture
+connecting local and global: the Cohesive Chain (Shaping, Flatting,
+Sharping, Crisping). Corresponds to cohesive toposes.""" ;
+    rel:derivationStep 4 .
+
+rel:MovementV a rel:Movement ;
+    rdfs:label "Movement V — Emergent Containment" ;
+    skos:definition """The field's structures are read as physical
+descriptions: Stating, Observing, Conserving. Corresponds to spectral
+theory and Noether-like conservation.""" ;
+    rel:derivationStep 5 .
+
+# =============================================================
+# PROPERTIES — Derivational Relations
+# =============================================================
+
+# --- Core derivation ---
+
+rel:derivesFrom a owl:ObjectProperty ;
+    rdfs:label "derives from" ;
+    rdfs:domain rel:RelationalConcept ;
+    rdfs:range rel:RelationalConcept ;
+    rdfs:comment """X derives from Y: Y's coherence compels X. This is the
+'it cannot not derive' relation. X is EARNED from Y, not assumed.""" .
+
+rel:produces a owl:ObjectProperty ;
+    rdfs:label "produces" ;
+    rdfs:domain rel:RelationalConcept ;
+    rdfs:range rel:RelationalConcept ;
+    rdfs:comment "X produces Y: the activity of X generates Y as output." ;
+    owl:inverseOf rel:producedBy .
+
+rel:producedBy a owl:ObjectProperty ;
+    rdfs:label "produced by" ;
+    rdfs:domain rel:RelationalConcept ;
+    rdfs:range rel:RelationalConcept ;
+    owl:inverseOf rel:produces .
+
+rel:requires a owl:ObjectProperty ;
+    rdfs:label "requires" ;
+    rdfs:domain rel:RelationalConcept ;
+    rdfs:range rel:RelationalConcept ;
+    rdfs:comment """X requires Y: X cannot be coherent without Y. Unlike
+derivesFrom (which is directional: Y compels X), requires indicates
+co-dependence or precondition.""" .
+
+rel:incites a owl:ObjectProperty ;
+    rdfs:label "incites" ;
+    rdfs:domain rel:RelationalConcept ;
+    rdfs:range rel:RelationalConcept ;
+    rdfs:comment """X incites Y: the incompleteness of X compels Y. This is
+derivesFrom viewed from the perspective of what is LEFT UNDETERMINED.
+X achieves coherence but leaves something unresolved; that unresolved
+remainder is Y.""" .
+
+# --- Triadic relations ---
+
+rel:sustains a owl:ObjectProperty ;
+    rdfs:label "sustains" ;
+    rdfs:domain rel:Act ;
+    rdfs:range rel:Condition ;
+    rdfs:comment "Act X sustains Condition Y: X's ongoing activity holds Y open." .
+
+rel:stabilizes a owl:ObjectProperty ;
+    rdfs:label "stabilizes" ;
+    rdfs:domain rel:Structure ;
+    rdfs:range rel:Condition ;
+    rdfs:comment "Structure X stabilizes Condition Y: X holds Y open durably." .
+
+# --- Algebraic relations ---
+
+rel:dualOf a owl:ObjectProperty, owl:SymmetricProperty ;
+    rdfs:label "dual of" ;
+    rdfs:domain rel:RelationalConcept ;
+    rdfs:range rel:RelationalConcept ;
+    rdfs:comment "X and Y are duals: complementary operations or concepts." .
+
+rel:definedAs a owl:DatatypeProperty ;
+    rdfs:label "defined as" ;
+    rdfs:domain rel:Operator ;
+    rdfs:range xsd:string ;
+    rdfs:comment """The algebraic definition of an operator in terms of other
+operators and the ordering relation. E.g., Negating is defined as
+Inducing(a, Relationlessness).""" .
+
+rel:signatureArity a owl:DatatypeProperty ;
+    rdfs:label "signature arity" ;
+    rdfs:domain rel:Operator ;
+    rdfs:range xsd:integer ;
+    rdfs:comment "Number of arguments the operator takes." .
+
+rel:leftAdjointOf a owl:ObjectProperty ;
+    rdfs:label "left adjoint of" ;
+    rdfs:domain rel:Operator ;
+    rdfs:range rel:Operator ;
+    rdfs:comment "X is left adjoint to Y in an adjunction X ⊣ Y." .
+
+# --- Correspondence relations ---
+
+rel:correspondsTo a owl:ObjectProperty ;
+    rdfs:label "corresponds to" ;
+    rdfs:domain rel:RelationalConcept ;
+    rdfs:range rdfs:Resource ;
+    rdfs:comment """X corresponds to Y: X (a relational concept) has a formal
+correspondence to Y (a mathematical structure, computational pattern,
+or concept from another tradition). The correspondence validates but
+is not identical — Y is not what X IS but what X ALIGNS WITH.""" .
+
+rel:mathematicalCorrespondence a owl:DatatypeProperty ;
+    rdfs:label "mathematical correspondence" ;
+    rdfs:domain rel:RelationalConcept ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Brief statement of the mathematical structure this concept corresponds to." .
+
+# --- Movement membership ---
+
+rel:inMovement a owl:ObjectProperty ;
+    rdfs:label "in movement" ;
+    rdfs:domain rel:RelationalConcept ;
+    rdfs:range rel:Movement ;
+    rdfs:comment """Which movement(s) this concept belongs to. A concept may
+participate in more than one movement if it bridges phases.""" .
+
+rel:derivationStep a owl:DatatypeProperty ;
+    rdfs:label "derivation step" ;
+    rdfs:range xsd:integer ;
+    rdfs:comment """Ordinal position in the derivation sequence. Genesis = 0-9,
+Movement I = 100-199, Movement II = 200-299, Movement III = 300-399,
+Movement IV = 400-499, Movement V = 500-599. Used for sorting.""" .
+
+# --- Source tracking ---
+
+rel:attestedIn a owl:DatatypeProperty ;
+    rdfs:label "attested in" ;
+    rdfs:domain rel:RelationalConcept ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Draft(s) in which this concept appears, with the name used there." .
+
+rel:nameInDraft a owl:DatatypeProperty ;
+    rdfs:label "name in draft" ;
+    rdfs:domain rel:RelationalConcept ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The name used for this concept in a specific draft." .
+
+# --- Structural hierarchy ---
+
+rel:constrains a owl:ObjectProperty ;
+    rdfs:label "constrains" ;
+    rdfs:domain rel:RelationalConcept ;
+    rdfs:range rel:RelationalConcept ;
+    rdfs:comment """X constrains Y: X limits or filters Y while respecting its
+structure. Used for Discipline/Regime/Filter/Profile hierarchy.""" .
+
+rel:fixedPointsOf a owl:ObjectProperty ;
+    rdfs:label "fixed points of" ;
+    rdfs:domain rel:RelationalConcept ;
+    rdfs:range rel:RelationalConcept ;
+    rdfs:comment """X is the fixed-point set of Y: what remains stable under Y.
+Regime = fixed points of Discipline, Profile = fixed points of Filter.""" .
+
+rel:prefigures a owl:ObjectProperty ;
+    rdfs:label "prefigures" ;
+    rdfs:domain rel:RelationalConcept ;
+    rdfs:range rel:RelationalConcept ;
+    rdfs:comment """X prefigures Y: X is an early form of what later appears
+more fully as Y. Differs from derivesFrom — prefiguring is suggestive,
+not necessitating.""" .
+
+rel:formalizes a owl:ObjectProperty ;
+    rdfs:label "formalizes" ;
+    rdfs:domain rel:RelationalConcept ;
+    rdfs:range rel:RelationalConcept ;
+    rdfs:comment """X formalizes Y: X is the algorithmic or structural expression
+of what Y names philosophically. Both describe the same phenomenon at
+different registers.""" .
+
+rel:commutesWith a owl:ObjectProperty, owl:SymmetricProperty ;
+    rdfs:label "commutes with" ;
+    rdfs:domain rel:Operator ;
+    rdfs:range rel:Operator ;
+    rdfs:comment """X commutes with Y: applying X then Y gives the same result
+as applying Y then X. Central to the Discipline hierarchy.""" .
+
+# =============================================================
+# ALGEBRAIC PROPERTIES — Formal Operator Characteristics
+# =============================================================
+#
+# These properties encode the actual mathematical character of
+# operators. They are not commentary — they are the formal
+# content that SHACL validates. An operator tagged as monotone
+# and inflationary is CLAIMING those properties; the Lean
+# formalization proves them; the SHACL shapes verify the tags
+# are present and consistent.
+
+rel:AlgebraicProperty a owl:Class ;
+    rdfs:label "Algebraic Property" ;
+    rdfs:comment """A formal property that an operator may have. These are
+the building blocks of algebraic characterization.""" .
+
+rel:hasAlgebraicProperty a owl:ObjectProperty ;
+    rdfs:label "has algebraic property" ;
+    rdfs:domain rel:Operator ;
+    rdfs:range rel:AlgebraicProperty ;
+    rdfs:comment "Tags an operator with a formal algebraic property." .
+
+rel:residualOf a owl:ObjectProperty ;
+    rdfs:label "residual of" ;
+    rdfs:domain rel:Operator ;
+    rdfs:range rel:Operator ;
+    rdfs:comment """X is the residual (right adjoint in the internal hom sense)
+of Y: the adjunction Y(a, -) ⊣ X(a, -) holds. Inducing is the
+residual of Togethering.""" .
+
+rel:hasIdentityElement a owl:ObjectProperty ;
+    rdfs:label "has identity element" ;
+    rdfs:domain rel:Operator ;
+    rdfs:range rel:RelationalConcept ;
+    rdfs:comment """The identity element of a binary operator: op(a, e) = a.""" .
+
+rel:hasAnnihilator a owl:ObjectProperty ;
+    rdfs:label "has annihilator" ;
+    rdfs:domain rel:Operator ;
+    rdfs:range rel:RelationalConcept ;
+    rdfs:comment """The annihilating element: op(a, z) = z for all a.""" .
+
+rel:preservesOperator a owl:ObjectProperty ;
+    rdfs:label "preserves" ;
+    rdfs:domain rel:Operator ;
+    rdfs:range rel:Operator ;
+    rdfs:comment """X preserves Y: applying X commutes with or respects Y's
+action. E.g., Flow preserves Closing means Closing(Flow(a)) ≤ Flow(Closing(a)).""" .
+
+rel:composedFrom a owl:ObjectProperty ;
+    rdfs:label "composed from" ;
+    rdfs:domain rel:Operator ;
+    rdfs:range rel:Operator ;
+    rdfs:comment """X is defined as a composition of Y and Z. E.g., Negating
+is composed from Inducing (with Bottom as second argument).""" .
+
+# --- Algebraic property instances ---
+
+rel:Monotone a rel:AlgebraicProperty ;
+    rdfs:label "Monotone" ;
+    skos:definition "Preserves order: if a ≤ b then op(a) ≤ op(b)." .
+
+rel:Antimonotone a rel:AlgebraicProperty ;
+    rdfs:label "Antimonotone" ;
+    skos:definition "Reverses order: if a ≤ b then op(b) ≤ op(a)." .
+
+rel:Inflationary a rel:AlgebraicProperty ;
+    rdfs:label "Inflationary" ;
+    skos:definition "Expands: a ≤ op(a) for all a." .
+
+rel:Deflationary a rel:AlgebraicProperty ;
+    rdfs:label "Deflationary" ;
+    skos:definition "Contracts: op(a) ≤ a for all a." .
+
+rel:Idempotent a rel:AlgebraicProperty ;
+    rdfs:label "Idempotent" ;
+    skos:definition "Applying twice equals applying once: op(op(a)) = op(a)." .
+
+rel:SelfLimiting a rel:AlgebraicProperty ;
+    rdfs:label "Self-Limiting" ;
+    skos:definition "Contracts under repetition: op(op(a)) ≤ op(a). Combined with Inflationary, yields Idempotent." .
+
+rel:Commutative a rel:AlgebraicProperty ;
+    rdfs:label "Commutative" ;
+    skos:definition "Order of arguments is irrelevant: op(a, b) = op(b, a)." .
+
+rel:Associative a rel:AlgebraicProperty ;
+    rdfs:label "Associative" ;
+    skos:definition "Grouping is irrelevant: op(op(a, b), c) = op(a, op(b, c))." .
+
+rel:Absorptive a rel:AlgebraicProperty ;
+    rdfs:label "Absorptive" ;
+    skos:definition "Absorption law holds with its dual: op1(a, op2(a, b)) = a." .
+
+rel:FullyFaithful a rel:AlgebraicProperty ;
+    rdfs:label "Fully Faithful" ;
+    skos:definition "The embedding is injective on morphisms: the unit is an isomorphism." .
+
+rel:SelfAdjoint a rel:AlgebraicProperty ;
+    rdfs:label "Self-Adjoint" ;
+    skos:definition "op(a) ≤ b if and only if a ≤ op(b)." .
+
+# =============================================================
+# LAWS — Inter-operator Constraints
+# =============================================================
+#
+# Laws encode the structural relationships BETWEEN operators.
+# These are the claims that the framework makes and the Lean
+# formalization proves. Each law names the operators it involves
+# and states its formal content.
+
+rel:Law a owl:Class ;
+    rdfs:label "Law" ;
+    rdfs:comment """An inter-operator structural constraint. Laws are the
+central formal content of the framework — they assert that specific
+relationships hold between operators.""" .
+
+rel:satisfiesLaw a owl:ObjectProperty ;
+    rdfs:label "satisfies law" ;
+    rdfs:domain rel:Operator ;
+    rdfs:range rel:Law ;
+    rdfs:comment "This operator participates in this law." .
+
+rel:involves a owl:ObjectProperty ;
+    rdfs:label "involves" ;
+    rdfs:domain rel:Law ;
+    rdfs:range rel:Operator ;
+    rdfs:comment "This law constrains this operator." .
+
+rel:formalStatement a owl:DatatypeProperty ;
+    rdfs:label "formal statement" ;
+    rdfs:domain rel:Law ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The symbolic statement of the law." .
+
+rel:leanTheorem a owl:DatatypeProperty ;
+    rdfs:label "Lean theorem" ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Name of the Lean theorem that proves this law." .
+
+# --- Law instances ---
+
+rel:ResidualAdjunction a rel:Law ;
+    rdfs:label "Residual Adjunction" ;
+    skos:definition """Togethering and Inducing form a residuated pair: for all
+a, b, c in the recognition field, Together(a, b) ≤ c if and only if
+a ≤ Inducing(b, c). This is the central law connecting combination
+with conditionality.""" ;
+    rel:involves rel:Togethering, rel:Inducing ;
+    rel:formalStatement "∀ a b c, Together(a, b) ≤ c ↔ a ≤ Inducing(b, c)" ;
+    rel:leanTheorem "MovementI.residuation" .
+
+rel:Distributivity a rel:Law ;
+    rdfs:label "Distributivity" ;
+    skos:definition """Togethering distributes over Eithering: combining a
+recognition with a choice is equivalent to choosing between the
+combinations. Together(a, Either(b, c)) = Either(Together(a, b),
+Together(a, c)).""" ;
+    rel:involves rel:Togethering, rel:Eithering ;
+    rel:formalStatement "∀ a b c, Together(a, Either(b, c)) = Either(Together(a, b), Together(a, c))" ;
+    rel:leanTheorem "MovementI.distributivity" .
+
+rel:DoubleNegationInequality a rel:Law ;
+    rdfs:label "Double Negation Inequality" ;
+    skos:definition """Double negation exceeds the original: a ≤ Negate(Negate(a))
+but not necessarily equal. The gap between a and its double negation
+IS the space of genuine indeterminacy — matters not yet resolved by
+the relational field.""" ;
+    rel:involves rel:Negating ;
+    rel:formalStatement "∀ a, a ≤ Negate(Negate(a))" ;
+    rel:leanTheorem "MovementI.double_negate_le" .
+
+rel:FrobeniusLaw a rel:Law ;
+    rdfs:label "Frobenius Law" ;
+    skos:definition """Closing and Opening are compatible: what is opened within
+a closure equals the closure of what is opened. This prevents
+inward consolidation and outward release from contradicting
+each other.""" ;
+    rel:involves rel:Closing, rel:Opening, rel:Togethering ;
+    rel:formalStatement "∀ a b, Opening(Together(a, Closing(b))) = Together(Opening(a), Closing(b))" ;
+    rel:leanTheorem "MovementII.frobenius_compat" .
+
+rel:KZCondition a rel:Law ;
+    rdfs:label "KZ Condition" ;
+    skos:definition """Flow comparison reduces to single-step comparison:
+Flow(a) ≤ Flow(b) if and only if a ≤ Flow(b). You do not need to
+flow both sides to compare — flowing once suffices.""" ;
+    rel:involves rel:Flowing ;
+    rel:formalStatement "∀ a b, Flow(a) ≤ Flow(b) ↔ a ≤ Flow(b)" ;
+    rel:leanTheorem "MovementIII.kz_condition" .
+
+rel:DynamicResidualLaw a rel:Law ;
+    rdfs:label "Dynamic Residuation Law" ;
+    skos:definition """Acting-then-reasoning equals reasoning-about-acting:
+Flow(Together(a, b)) ≤ c if and only if a ≤ Flow(Inducing(b, c)).
+There is no gap between theory and practice within the relational
+field.""" ;
+    rel:involves rel:Flowing, rel:Togethering, rel:Inducing ;
+    rel:formalStatement "∀ a b c, Flow(Together(a, b)) ≤ c ↔ a ≤ Flow(Inducing(b, c))" ;
+    rel:leanTheorem "MovementIII.dynamic_residuation" .
+
+rel:PreservesCoreLaw a rel:Law ;
+    rdfs:label "Preserves Core" ;
+    skos:definition """Flow preserves what must be: what is necessary after flowing
+is at least as strong as flowing what is necessary. Motion does not
+destroy modal stability.""" ;
+    rel:involves rel:Flowing, rel:Closing ;
+    rel:formalStatement "∀ a, Closing(Flow(a)) ≤ Flow(Closing(a))" ;
+    rel:leanTheorem "MovementIII.preserves_core" .
+
+rel:BeckChevalleyLaw a rel:Law ;
+    rdfs:label "Beck-Chevalley Law" ;
+    skos:definition """The cohesive chain satisfies Beck-Chevalley: extracting
+shape from the combination of a local recognition with a global
+embedding equals combining the shape with the embedding. The
+local-global translation respects combination.""" ;
+    rel:involves rel:Shaping, rel:Sharping, rel:Togethering ;
+    rel:formalStatement "∀ a b, Shaping(Together(a, Sharping(b))) = Together(Shaping(a), Sharping(b))" .
+
+rel:ConservationFactorizationLaw a rel:Law ;
+    rdfs:label "Conservation Factorization" ;
+    skos:definition """Every conserved observable factors through the stable
+envelope: if an observable is preserved under flow, it can be
+measured entirely within the bandwidth of stable variation.""" ;
+    rel:involves rel:Observing, rel:StableEnvelope, rel:Flowing ;
+    rel:formalStatement "∀ obs, IsConserved(obs) → ∃ obs', obs = obs' ∘ Envelope" .
+
+rel:AmbidexterityLaw a rel:Law ;
+    rdfs:label "Ambidexterity" ;
+    skos:definition """For constructible diagrams, building from parts (homotopy
+colimit) and verifying from observations (homotopy limit) yield the
+same result. Construction and verification are dual operations that
+agree.""" ;
+    rel:involves rel:Stratifying ;
+    rel:formalStatement "Constructible(F) → hcolim(F) ≃ hlim(F)" .
+
+# =============================================================
+# INSTANCES — The Relational Concepts
+# =============================================================
+
+# --- Seed ---
+
+rel:Relationlessness a rel:Seed ;
+    rdfs:label "Relationlessness" ;
+    skos:definition """The absence of relation. Not a thing, not a structure,
+not an operation — an absence. To describe this absence is to effect an
+exclusion between 'relation' and 'this field,' and exclusion is
+relational. Relationlessness self-contradicts, producing the first act.""" ;
+    rel:inMovement rel:Genesis ;
+    rel:derivationStep 0 ;
+    rel:produces rel:Reflexing ;
+    rel:mathematicalCorrespondence "Bottom (⊥) of the Heyting algebra" ;
+    rel:attestedIn "draft 3 treatise (Relationlessness), PRE (Bottom), draft 4 (Relationlessness), draft 11 (Relationlessness)" .
+
+# --- Genesis acts ---
+
+rel:Reflexing a rel:Act ;
+    rdfs:label "Reflexing" ;
+    skos:definition """The primitive act: turning back upon itself. Arises from
+Relationlessness's self-contradiction — the void relating to the void.
+Not chosen but compelled. Reflexing is the ENGINE; Differentiating names
+its PRODUCT. reflex(S) = relating(S, S).""" ;
+    rel:inMovement rel:Genesis ;
+    rel:derivationStep 1 ;
+    rel:derivesFrom rel:Relationlessness ;
+    rel:produces rel:Differentiating ;
+    rel:mathematicalCorrespondence "Self-application; fixed-point combinator" ;
+    rel:attestedIn "draft 3 treatise (Reflex), draft 4 (Reflex), draft 7 (reflex)" .
+
+rel:Differentiating a rel:Act, rel:Operator ;
+    rdfs:label "Differentiating" ;
+    skos:definition """The first recognition: something has been distinguished
+from something else. The PRODUCT of Reflexing. Differentiating divides
+existence into marked and unmarked — it is the boundary with two sides.
+Signature: (Entity, Entity) → Recognition.""" ;
+    rel:inMovement rel:Genesis, rel:MovementI ;
+    rel:derivationStep 2 ;
+    rel:producedBy rel:Reflexing ;
+    rel:produces rel:Including, rel:Excluding, rel:Recognition ;
+    rel:signatureArity 2 ;
+    rel:mathematicalCorrespondence "Subobject classifier in a topos; generation of the recognition preorder" ;
+    rel:attestedIn "PRE (Differentiate), draft 12 (Differentiate), draft 4 (Differentiate as product of Reflex)" .
+
+# --- The field of recognition ---
+
+rel:Recognition a rel:Condition ;
+    rdfs:label "Recognition" ;
+    skos:definition """The stable content of distinction. What remains when
+something has been differentiated. A recognition is not a thing but
+what has been carved from the act of differentiating — the residue
+of a boundary. The full collection of recognitions forms the
+'recognition field' (Rel), ordered by Including.""" ;
+    rel:inMovement rel:MovementI ;
+    rel:derivationStep 99 ;
+    rel:producedBy rel:Differentiating ;
+    rel:mathematicalCorrespondence "Elements of the subobject lattice; the recognition field Rel" ;
+    rel:attestedIn "PRE (Recognition), draft 12 (Recognition), draft 11 (Recognition)" .
+
+rel:Top a rel:Structure ;
+    rdfs:label "Top" ;
+    skos:definition """The maximal recognition: everything is included. The
+upper bound of the recognition field. Dual of Relationlessness (Bottom).
+Not a thing but the condition of total inclusion.""" ;
+    rel:inMovement rel:MovementI ;
+    rel:derivationStep 98 ;
+    rel:derivesFrom rel:Including ;
+    rel:dualOf rel:Relationlessness ;
+    rel:mathematicalCorrespondence "Top (⊤) of the Heyting algebra" ;
+    rel:attestedIn "PRE (Top), draft 12 (⊤)" .
+
+# --- Phenomenological layer (Movement I early) ---
+
+rel:Including a rel:Act ;
+    rdfs:label "Including" ;
+    skos:definition """Holding something within what it is. Ongoing — not
+performed once but continuously maintained. Something is included only
+as long as including continues. Including actively establishes presence.
+Co-requires Excluding: you cannot include without excluding.""" ;
+    rel:inMovement rel:MovementI ;
+    rel:derivationStep 100 ;
+    rel:derivesFrom rel:Differentiating ;
+    rel:requires rel:Excluding ;
+    rel:sustains rel:Inclusion ;
+    rel:mathematicalCorrespondence "Partial order (a ≤ b) on the recognition field" ;
+    rel:attestedIn "draft 1 (including), draft 7 (include), PRE (Includes)" .
+
+rel:Excluding a rel:Act ;
+    rdfs:label "Excluding" ;
+    skos:definition """Holding something out of what it is not. Ongoing — the
+boundary is continuously maintained. Excluding actively establishes
+absence — not a mere lack but an actively maintained separation.
+Co-requires Including.""" ;
+    rel:inMovement rel:MovementI ;
+    rel:derivationStep 101 ;
+    rel:derivesFrom rel:Differentiating ;
+    rel:requires rel:Including ;
+    rel:sustains rel:Exclusion ;
+    rel:mathematicalCorrespondence "Incompatibility relation (a ∧ b = ⊥) on the recognition field" ;
+    rel:attestedIn "draft 1 (excluding), draft 7 (exclude), PRE (Excludes)" .
+
+rel:Inclusion a rel:Condition ;
+    rdfs:label "Inclusion" ;
+    skos:definition """The condition of being held within what something is.
+Not a state but a situation requiring ongoing maintenance. Something
+is in a condition of inclusion only while including continues.""" ;
+    rel:inMovement rel:MovementI ;
+    rel:derivationStep 102 ;
+    rel:producedBy rel:Including ;
+    rel:attestedIn "draft 7 (inclusion), PRE (Includes — as ordering relation)" .
+
+rel:Exclusion a rel:Condition ;
+    rdfs:label "Exclusion" ;
+    skos:definition """The condition of being held out of what something is not.
+Actively maintained absence. Not a mere lack but an ongoing situation.""" ;
+    rel:inMovement rel:MovementI ;
+    rel:derivationStep 103 ;
+    rel:producedBy rel:Excluding ;
+    rel:attestedIn "draft 7 (exclusion), PRE (Excludes — as incompatibility)" .
+
+rel:Tension a rel:Condition ;
+    rdfs:label "Tension" ;
+    skos:definition """The condition of mutual opposition between including and
+excluding. Arises when both operate together (as they must). Neither
+can win — the victory of either destroys the distinction both serve.
+Tension is productive, not pathological: it is what makes being possible.
+The non-Boolean gap in the Heyting algebra (a ∧ ¬a ≠ ⊥ in general)
+IS this tension formally.""" ;
+    rel:inMovement rel:MovementI ;
+    rel:derivationStep 104 ;
+    rel:derivesFrom rel:Including, rel:Excluding ;
+    rel:produces rel:Difference ;
+    rel:mathematicalCorrespondence "Non-Boolean gap: Together(a, Negate(a)) need not equal Bottom" ;
+    rel:attestedIn "draft 7 (tension), draft 0 (structural tension)" .
+
+rel:Difference a rel:Condition ;
+    rdfs:label "Difference" ;
+    skos:definition """The condition of being set apart. Not a thing but what
+arises within and through sustained tension. Induced BY tension, not
+directly by including or excluding. The first CONTENT of the relational
+field: the recognition that something has been distinguished.""" ;
+    rel:inMovement rel:MovementI ;
+    rel:derivationStep 105 ;
+    rel:producedBy rel:Tension ;
+    rel:attestedIn "draft 7 (difference)" .
+
+rel:Relating a rel:Act ;
+    rdfs:label "Relating" ;
+    skos:definition """The act of holding including and excluding in productive
+opposition. Sustains tension, preventing collapse. Distinct from both
+including (which puts in) and excluding (which keeps out). Relating
+holds the putting-in and keeping-out TOGETHER. Produces the condition
+of relation and the first structure (the relative).""" ;
+    rel:inMovement rel:MovementI ;
+    rel:derivationStep 106 ;
+    rel:sustains rel:Tension ;
+    rel:produces rel:Relation, rel:Relative ;
+    rel:derivesFrom rel:Tension ;
+    rel:attestedIn "draft 7 (relating), draft 0 (relating as primitive)" .
+
+rel:Unrelating a rel:Act ;
+    rdfs:label "Unrelating" ;
+    skos:definition """The complement of relating: the minimal act of exclusion.
+The primitive pair is relating/unrelating. The ternary structure is
+{relating, unrelating, relating(relating, unrelating)}.""" ;
+    rel:inMovement rel:MovementI ;
+    rel:derivationStep 107 ;
+    rel:derivesFrom rel:Excluding ;
+    rel:dualOf rel:Relating ;
+    rel:attestedIn "draft 0 (unrelating), draft 7 (unrelate)" .
+
+rel:Relation a rel:Condition ;
+    rdfs:label "Relation" ;
+    skos:definition """The stabilized condition in which inclusion and exclusion
+are coherently maintained. Relation is not the act (that is relating)
+but the condition — the binding of a thing to its ongoing existing.
+Enables persistence: before relation, everything is transient.""" ;
+    rel:inMovement rel:MovementI ;
+    rel:derivationStep 108 ;
+    rel:producedBy rel:Relating ;
+    rel:mathematicalCorrespondence "Elements of the recognition field (Rel)" ;
+    rel:attestedIn "draft 7 (relation)" .
+
+rel:Relative a rel:Structure ;
+    rdfs:label "Relative" ;
+    skos:definition """The first structure. The minimal entity that holds
+relation open durably. Not a substance — a stabilized pattern of
+relating. Exists only through the ongoing acts that constitute it.
+'Every thing that is said to exist must, at minimum, be stabilized
+as a relative.' (draft 7)""" ;
+    rel:inMovement rel:MovementI ;
+    rel:derivationStep 109 ;
+    rel:stabilizes rel:Relation ;
+    rel:producedBy rel:Relating ;
+    rel:mathematicalCorrespondence "Stable element of the recognition field" ;
+    rel:attestedIn "draft 7 (relative)" .
+
+rel:Coherence a rel:Condition, rel:Phenomenon ;
+    rdfs:label "Coherence" ;
+    skos:definition """Self-sufficient holding-together. The condition in which
+acts, conditions, and structures hold together as a unified whole
+without external support. Achieved at each level of the derivation.
+Its INCOMPLETENESS at each level incites the next. Coherence is the
+goal and the engine: achieved coherence drives further derivation
+because it is always coherent in some respect but not every respect.""" ;
+    rel:inMovement rel:MovementI ;
+    rel:derivationStep 110 ;
+    rel:derivesFrom rel:Relative ;
+    rel:attestedIn "draft 7 (coherence), draft 1 (named at each phase)" .
+
+# --- Logical operators (Movement I formal) ---
+
+rel:Togethering a rel:Act, rel:Operator ;
+    rdfs:label "Togethering" ;
+    skos:definition """Joint recognition of both operands. If you can recognize
+A and B separately, togethering(A,B) is what you recognize when you
+recognize BOTH at once. Required by the coherence of multiple
+distinctions. Standard symbol: ∧.""" ;
+    rel:inMovement rel:MovementI ;
+    rel:derivationStep 120 ;
+    rel:derivesFrom rel:Including, rel:Excluding ;
+    rel:leftAdjointOf rel:Inducing ;
+    rel:signatureArity 2 ;
+    rel:definedAs "Greatest lower bound in the recognition ordering" ;
+    rel:mathematicalCorrespondence "Meet (∧) in a Heyting algebra" ;
+    rel:attestedIn "PRE (Together), draft 12 (∧), draft 11 (MeetRecognition)" .
+
+rel:Eithering a rel:Act, rel:Operator ;
+    rdfs:label "Eithering" ;
+    skos:definition """Recognition of at least one operand. If you can recognize
+A or B, eithering(A,B) is what you recognize when at least one holds.
+Standard symbol: ∨.""" ;
+    rel:inMovement rel:MovementI ;
+    rel:derivationStep 121 ;
+    rel:derivesFrom rel:Including, rel:Excluding ;
+    rel:dualOf rel:Togethering ;
+    rel:signatureArity 2 ;
+    rel:definedAs "Least upper bound in the recognition ordering" ;
+    rel:mathematicalCorrespondence "Join (∨) in a Heyting algebra" ;
+    rel:attestedIn "PRE (Either), draft 12 (∨), draft 11 (JoinRecognition)" .
+
+rel:Inducing a rel:Act, rel:Operator ;
+    rdfs:label "Inducing" ;
+    skos:definition """What must be added to one recognition for another to be
+recognized. NOT 'if A then B' propositionally, but: the GREATEST
+recognition C such that togethering(A, C) includes B. Measures
+sufficiency — what is ENOUGH, when added to A, to get B. The answer
+is a recognition, not a truth value. Standard symbol: ⇒.""" ;
+    rel:inMovement rel:MovementI ;
+    rel:derivationStep 130 ;
+    rel:derivesFrom rel:Togethering ;
+    rel:requires rel:Including ;
+    rel:signatureArity 2 ;
+    rel:definedAs "Inducing(a,b) = max{c | Together(a,c) ≤ b}" ;
+    rel:mathematicalCorrespondence "Heyting implication (residual of meet)" ;
+    rel:attestedIn "PRE (Induces), draft 12 (Induce), draft 11 (ImplyRecognition)" .
+
+rel:Negating a rel:Act, rel:Operator ;
+    rdfs:label "Negating" ;
+    skos:definition """Total exclusion. The maximum of what is incompatible
+with a recognition. Negating(a) = inducing(a, Relationlessness): the
+most you can combine with a and get nothing. CRUCIALLY:
+negating(negating(a)) ≥ a but not necessarily = a. Double negation
+may exceed the original. This is genuine indeterminacy, not
+ignorance. Standard symbol: ¬.""" ;
+    rel:inMovement rel:MovementI ;
+    rel:derivationStep 131 ;
+    rel:derivesFrom rel:Inducing ;
+    rel:signatureArity 1 ;
+    rel:definedAs "Negating(a) = Inducing(a, Bottom)" ;
+    rel:mathematicalCorrespondence "Heyting pseudocomplement" ;
+    rel:attestedIn "PRE (Negate), draft 12 (¬)" .
+
+rel:Iterating a rel:Act, rel:Operator ;
+    rdfs:label "Iterating" ;
+    skos:definition """Self-application: a recognition combined with its own
+sufficiency for everything. Iterating(a) = togethering(a, inducing(a,
+Relation)). A self-confirmation: the recognition that affirms itself
+by combining itself with its own capacity. Produces self-confirming
+recognitions, but self-confirmation is NOT persistence — that requires
+Closing.""" ;
+    rel:inMovement rel:MovementI ;
+    rel:derivationStep 140 ;
+    rel:derivesFrom rel:Inducing, rel:Togethering ;
+    rel:incites rel:Closing ;
+    rel:signatureArity 1 ;
+    rel:definedAs "Iterating(a) = Together(a, Inducing(a, Top))" ;
+    rel:mathematicalCorrespondence "Self-application within the Heyting algebra" ;
+    rel:attestedIn "PRE (Iterate), draft 12 (Iterate)" .
+
+# --- Stability operators (Movement II) ---
+
+rel:Closing a rel:Act, rel:Operator ;
+    rdfs:label "Closing" ;
+    skos:definition """Pushing a recognition through all its self-applications
+until it cannot change further. Closing(a) = the join of iterating^n(a)
+for all n. What survives is what PERSISTS — not merely self-confirming
+once but stable under ALL iteration. Inflationary (a ≤ closing(a)),
+idempotent (closing(closing(a)) = closing(a)), monotone. The first
+act of PERSISTENCE.""" ;
+    rel:inMovement rel:MovementII ;
+    rel:derivationStep 200 ;
+    rel:derivesFrom rel:Iterating ;
+    rel:dualOf rel:Opening ;
+    rel:produces rel:Necessitating ;
+    rel:signatureArity 1 ;
+    rel:definedAs "Closing(a) = ⋁{Iterating^n(a) | n ∈ ℕ}" ;
+    rel:mathematicalCorrespondence "Closure operator (nucleus) on a Heyting algebra" ;
+    rel:attestedIn "PRE (Close), draft 12 (Closure), draft 1 (coherence)" .
+
+rel:Opening a rel:Act, rel:Operator ;
+    rdfs:label "Opening" ;
+    skos:definition """Looking WITHIN a recognition rather than beyond it.
+Opening(a) = the greatest recognition contained in a that is itself
+stable under interior examination. If closing is pressing outward to
+stability, opening is looking inward to coherence. The dual of
+closing.""" ;
+    rel:inMovement rel:MovementII ;
+    rel:derivationStep 201 ;
+    rel:derivesFrom rel:Iterating ;
+    rel:dualOf rel:Closing ;
+    rel:produces rel:Possibilizing ;
+    rel:signatureArity 1 ;
+    rel:mathematicalCorrespondence "Interior operator (dual of closure)" ;
+    rel:attestedIn "PRE (Open), draft 12 (Interior)" .
+
+rel:Balancing a rel:Condition, rel:Operator ;
+    rdfs:label "Balancing" ;
+    skos:definition """The compatibility between closing and opening, and the
+operator that combines them. The Frobenius law requires:
+opening(a ∧ closing(b)) = opening(a) ∧ closing(b). The Balance
+operator is B(a) = opening(a) ∧ closing(a) — the largest recognition
+that is both open and closed relative to a. B is idempotent
+(B(B(a)) = B(a)) and self-adjoint (B(a) ≤ b ↔ a ≤ B(b)). Its
+fixed locus L_B consists of recognitions where opening(x) = x = closing(x).""" ;
+    rel:inMovement rel:MovementII ;
+    rel:derivationStep 210 ;
+    rel:derivesFrom rel:Closing, rel:Opening ;
+    rel:signatureArity 1 ;
+    rel:definedAs "B(a) = Opening(a) ∧ Closing(a); Frobenius: Opening(a ∧ Closing(b)) = Opening(a) ∧ Closing(b)" ;
+    rel:mathematicalCorrespondence "Frobenius compatibility; modal idempotent; self-adjoint operator" ;
+    rel:attestedIn "PRE (Balance), draft 12 (Balance, Definition 6, Lemma 9)" .
+
+rel:Necessitating a rel:Operator ;
+    rdfs:label "Necessitating" ;
+    skos:definition """What must be. A recognition that survives all closure.
+What cannot be dislodged by any amount of self-application.
+Necessitating = Closing applied objectwise.""" ;
+    rel:inMovement rel:MovementII ;
+    rel:derivationStep 220 ;
+    rel:derivesFrom rel:Closing ;
+    rel:dualOf rel:Possibilizing ;
+    rel:signatureArity 1 ;
+    rel:definedAs "Necessitating(a) = Closing(a)" ;
+    rel:mathematicalCorrespondence "Box modality (□) in S4 modal logic" ;
+    rel:attestedIn "PRE (Necessary), draft 12 (Necessity / □)" .
+
+rel:Possibilizing a rel:Operator ;
+    rdfs:label "Possibilizing" ;
+    skos:definition """What may be. A recognition reachable by opening — available
+when you look within. What is possible is what you can find by interior
+examination.""" ;
+    rel:inMovement rel:MovementII ;
+    rel:derivationStep 221 ;
+    rel:derivesFrom rel:Opening ;
+    rel:dualOf rel:Necessitating ;
+    rel:signatureArity 1 ;
+    rel:definedAs "Possibilizing(a) = Opening(a)" ;
+    rel:mathematicalCorrespondence "Diamond modality (◇) in S4 modal logic" ;
+    rel:attestedIn "PRE (Possible), draft 12 (Possibility / ◇)" .
+
+# --- Directed dynamics (Movement III) ---
+
+rel:Flowing a rel:Act, rel:Operator ;
+    rdfs:label "Flowing" ;
+    skos:definition """Directed motion through the relational field. How
+relational effects propagate — how a change in one recognition affects
+what it includes, conditions, etc. SELF-LIMITING:
+flowing(flowing(a)) ≤ flowing(a). Motion contracts under repetition.
+PRESERVES the modal core: necessitating(flowing(a)) ≥
+flowing(necessitating(a)). What must be stays stable under motion.
+Earned when the boundary between closed and open is itself related.""" ;
+    rel:inMovement rel:MovementIII ;
+    rel:derivationStep 300 ;
+    rel:derivesFrom rel:Closing, rel:Opening ;
+    rel:signatureArity 1 ;
+    rel:definedAs "Monotone, inflationary, self-limiting endomap: a ≤ Flow(a), Flow(Flow(a)) ≤ Flow(a)" ;
+    rel:mathematicalCorrespondence "KZ-lax idempotent monad (not comonad); earlier drafts use comonadic language but draft 12 establishes monadic structure" ;
+    rel:attestedIn "PRE (Flow), draft 12 (Movement III), draft 1 (relating at Movement III level)" .
+
+rel:DynamicResiduation a rel:Phenomenon ;
+    rdfs:label "Dynamic Residuation" ;
+    skos:definition """The equivalence between acting-then-reasoning and
+reasoning-about-acting: flowing(togethering(a,b)) ≤ c iff
+a ≤ flowing(inducing(b,c)). There is no gap between theory and
+practice. What you can reason about doing, you can do and then reason
+about, and the results coincide.""" ;
+    rel:inMovement rel:MovementIII ;
+    rel:derivationStep 310 ;
+    rel:derivesFrom rel:Flowing, rel:Inducing ;
+    rel:definedAs "Flow(a ∧ b) ≤ c ⟺ a ≤ Flow(b ⇒ c)" ;
+    rel:mathematicalCorrespondence "Galois connection between flow and implication" ;
+    rel:attestedIn "draft 3 treatise (Dynamic Residuation), draft 10 (explicit law)" .
+
+# --- Constraint hierarchy (Movement III–IV) ---
+
+rel:Disciplining a rel:Operator ;
+    rdfs:label "Disciplining" ;
+    skos:definition """A constraint on the relational field that respects all
+earned structure. An endomap d: Rel → Rel that commutes with every
+closure operator and with Flow. A Discipline does not disrupt what has
+been earned — it selects within it. The most general well-behaved
+filter on the field.""" ;
+    rel:inMovement rel:MovementIII, rel:MovementIV ;
+    rel:derivationStep 320 ;
+    rel:requires rel:Closing, rel:Flowing ;
+    rel:commutesWith rel:Closing, rel:Flowing ;
+    rel:produces rel:Regime ;
+    rel:signatureArity 1 ;
+    rel:attestedIn "draft 3 treatise (Discipline), draft 4 (Discipline)" .
+
+rel:Regime a rel:Structure ;
+    rdfs:label "Regime" ;
+    skos:definition """The fixed-point set of a Discipline: what remains stable
+under the constraint. A Regime inherits the full relational structure
+(Heyting algebra, modal operators, etc.) restricted to its fixed points.
+Regimes are what a Discipline leaves unchanged.""" ;
+    rel:inMovement rel:MovementIII, rel:MovementIV ;
+    rel:derivationStep 321 ;
+    rel:fixedPointsOf rel:Disciplining ;
+    rel:attestedIn "draft 3 treatise (Regime), draft 4 (Regime)" .
+
+rel:Filtering a rel:Operator ;
+    rdfs:label "Filtering" ;
+    skos:definition """A Discipline applied to a relational geometry: a
+constraint that additionally commutes with the cohesive adjunctions
+(Shaping/Flatting/Sharping/Crisping). A Filter respects logic,
+dynamics, AND spatial coherence.""" ;
+    rel:inMovement rel:MovementIV ;
+    rel:derivationStep 430 ;
+    rel:requires rel:Disciplining, rel:CohesiveChain ;
+    rel:commutesWith rel:Closing, rel:Flowing, rel:Shaping, rel:Flatting, rel:Sharping, rel:Crisping ;
+    rel:produces rel:Profile ;
+    rel:signatureArity 1 ;
+    rel:attestedIn "draft 3 treatise (Filter), draft 4 (Filter)" .
+
+rel:Profile a rel:Structure ;
+    rdfs:label "Profile" ;
+    skos:definition """The fixed points of a Filter. A self-contained relational
+subsystem carrying the complete Heyting algebra, modal operators,
+Flow, and cohesive geometry — restricted to what survives the Filter.
+A Profile is a viewpoint: a perspective on the relational field that
+carries all the structure needed for relational dynamics within it.""" ;
+    rel:inMovement rel:MovementIV ;
+    rel:derivationStep 431 ;
+    rel:fixedPointsOf rel:Filtering ;
+    rel:attestedIn "draft 3 treatise (Profile), draft 4 (Profile)" .
+
+# --- Spatial structure (Movement IV) ---
+
+rel:Shaping a rel:Operator ;
+    rdfs:label "Shaping" ;
+    skos:definition """Extracting the outline: what local structure looks like
+from a distance. Discards local detail, preserves connective skeleton.
+Left adjoint to Flatting.""" ;
+    rel:inMovement rel:MovementIV ;
+    rel:derivationStep 400 ;
+    rel:leftAdjointOf rel:Flatting ;
+    rel:signatureArity 1 ;
+    rel:mathematicalCorrespondence "Shape functor (Π→) in cohesive topos; left adjoint" ;
+    rel:attestedIn "PRE (Shape), draft 5 (Π→)" .
+
+rel:Flatting a rel:Operator ;
+    rdfs:label "Flatting" ;
+    skos:definition """Purely local perspective. Every element isolated — no
+global connections. The discrete view. Right adjoint to Shaping, left
+adjoint to Sharping.""" ;
+    rel:inMovement rel:MovementIV ;
+    rel:derivationStep 401 ;
+    rel:leftAdjointOf rel:Sharping ;
+    rel:signatureArity 1 ;
+    rel:mathematicalCorrespondence "Flat/Discrete functor (□) in cohesive topos" ;
+    rel:attestedIn "PRE (Discrete), draft 5 (□r)" .
+
+rel:Sharping a rel:Operator ;
+    rdfs:label "Sharping" ;
+    skos:definition """Purely global perspective. No local distinctions —
+everything connected. The codiscrete view. Right adjoint to Flatting,
+left adjoint to Crisping.""" ;
+    rel:inMovement rel:MovementIV ;
+    rel:derivationStep 402 ;
+    rel:leftAdjointOf rel:Crisping ;
+    rel:signatureArity 1 ;
+    rel:mathematicalCorrespondence "Sharp/Codiscrete functor (◇) in cohesive topos" ;
+    rel:attestedIn "PRE (Codiscrete), draft 5 (◇l)" .
+
+rel:Crisping a rel:Operator ;
+    rdfs:label "Crisping" ;
+    skos:definition """Fully integrated perspective: both local and global
+cohere. Right adjoint to Sharping.""" ;
+    rel:inMovement rel:MovementIV ;
+    rel:derivationStep 403 ;
+    rel:signatureArity 1 ;
+    rel:mathematicalCorrespondence "Crisp/Global functor (∇←) in cohesive topos" ;
+    rel:attestedIn "PRE (Global), draft 5 (∇←)" .
+
+rel:CohesiveChain a rel:Structure ;
+    rdfs:label "Cohesive Chain" ;
+    skos:definition """The four-fold adjunction connecting local and global
+perspectives: Shape ⊣ Flat ⊣ Sharp ⊣ Crisp (draft 12 vocabulary).
+Shape and Crisp are idempotent (projection-like); Flat and Sharp are
+fully faithful (inclusion-like). Beck-Chevalley and Frobenius laws
+hold: Shape(a ∧ Sharp(b)) = Shape(a) ∧ Sharp(b). Flow commutes with
+each operator on finite limits and colimits. Each adjacent pair forms
+a Galois connection producing unit/counit and absorption properties.""" ;
+    rel:inMovement rel:MovementIV ;
+    rel:derivationStep 410 ;
+    rel:derivesFrom rel:Flowing ;
+    rel:definedAs "Shape ⊣ Flat ⊣ Sharp ⊣ Crisp; Shape/Crisp idempotent, Flat/Sharp fully faithful" ;
+    rel:mathematicalCorrespondence "Adjoint quadruple in a cohesive topos (Lawvere)" ;
+    rel:attestedIn "PRE Part IV, draft 12 movement-4 (Definition 11), draft 5 (posetal prototype)" .
+
+# --- Physical reading (Movement V) ---
+
+rel:Stating a rel:Act ;
+    rdfs:label "Stating" ;
+    skos:definition """Reading a recognition as a physical configuration. Not a
+new kind of entity — a reinterpretation of what recognitions already
+are. The field's structures, read as descriptions of physical reality.""" ;
+    rel:inMovement rel:MovementV ;
+    rel:derivationStep 500 ;
+    rel:derivesFrom rel:CohesiveChain ;
+    rel:mathematicalCorrespondence "Elements of a spectral presheaf" ;
+    rel:attestedIn "PRE Part V, draft 12 movement-5" .
+
+rel:Observing a rel:Act, rel:Operator ;
+    rdfs:label "Observing" ;
+    skos:definition """Extracting measurable content from a state. An observable
+is a morphism from a state to the subobject classifier Ω (draft 12,
+Definition 15): it measures the truth or presence of a recognition
+within the state. An observable is conserved if it commutes with flow:
+obs(flow(a)) = flow(obs(a)). The formalization currently uses monotone
+endofunctions as a weaker approximation.""" ;
+    rel:inMovement rel:MovementV ;
+    rel:derivationStep 510 ;
+    rel:derivesFrom rel:Stating, rel:Closing ;
+    rel:signatureArity 1 ;
+    rel:definedAs "Observable: morphism ρ: a → Ω (source); monotone endofunction (formalization)" ;
+    rel:mathematicalCorrespondence "Morphism to subobject classifier; spectral decomposition" ;
+    rel:attestedIn "PRE Part V, draft 12 movement-5 (Definition 15)" .
+
+rel:Conserving a rel:Phenomenon ;
+    rdfs:label "Conserving" ;
+    skos:definition """Every consistency in the relational logic finds expression
+as a measurable invariant. What is stable under the logic is conserved
+under the physics. Relational analogue of Noether's theorem, but earned
+from the derivation rather than assumed from physics.""" ;
+    rel:inMovement rel:MovementV ;
+    rel:derivationStep 520 ;
+    rel:derivesFrom rel:Observing, rel:Flowing ;
+    rel:mathematicalCorrespondence "Noether-like conservation; invariants under flow" ;
+    rel:attestedIn "draft 12 movement-5, draft 10 (meta-level)" .
+
+rel:StableEnvelope a rel:Operator ;
+    rdfs:label "Stable Envelope" ;
+    skos:definition """The bandwidth of stable variation:
+Envelope(a) = Necessitating(Flowing(a)) ∧ Possibilizing(Flowing(a)).
+The range within which a state can vary under flow while remaining
+measurably the same.""" ;
+    rel:inMovement rel:MovementV ;
+    rel:derivationStep 530 ;
+    rel:signatureArity 1 ;
+    rel:derivesFrom rel:Necessitating, rel:Possibilizing, rel:Flowing ;
+    rel:definedAs "Envelope(a) = Necessary(Flow(a)) ∧ Possible(Flow(a))" ;
+    rel:attestedIn "draft 10 (Stable Envelope)" .
+
+# --- Cross-cutting phenomena ---
+# These recur at every level of the derivation and are not
+# localized to a single movement.
+
+rel:Incitement a rel:Phenomenon ;
+    rdfs:label "Incitement" ;
+    skos:definition """What incomplete coherence compels. The engine of the
+derivation. Not external motivation but internal structural necessity:
+the achieved structure ITSELF requires further determination. The gap
+is not a flaw but the engine. Formally: the non-Boolean gap
+(¬¬a ≥ a but ≠ a) is the space in which incitement operates.""" ;
+    rel:dualOf rel:Induction ;
+    rel:attestedIn "draft 1 ('it cannot not derive'), draft 9 ('determines X but cannot determine Y'), draft 12 (incitement)" .
+
+rel:Induction a rel:Phenomenon ;
+    rdfs:label "Induction" ;
+    skos:definition """What completed structure produces. The dual of incitement.
+Where incitement drives forward (the gap, the incompleteness), induction
+stabilizes (the achievement, the completion). Together they describe
+the oscillation: achieve → incite → achieve → incite.""" ;
+    rel:dualOf rel:Incitement ;
+    rel:attestedIn "draft 12, published framework" .
+
+rel:TriadicEngine a rel:Phenomenon ;
+    rdfs:label "Triadic Engine" ;
+    skos:definition """The pattern by which every relational situation
+decomposes: act → condition → structure → incitement of next act. Not
+a principle imposed on things but what things ARE: three aspects of
+any relational activity. The structure resolves the current
+indeterminacy but exposes a new one.""" ;
+    rel:attestedIn "draft 1 (nine phases), draft 7 (Act → Condition → Structure → Unit)" .
+
+rel:SelfGrounding a rel:Phenomenon ;
+    rdfs:label "Self-Grounding" ;
+    skos:definition """The field produces the tools it uses to produce itself.
+The constructors (togethering, eithering, etc.) are themselves
+recognitions within the field. Demonstrated three ways: (1) generative
+closure fixed point A_∞ contains its generators, (2) RITM
+self-stabilization, (3) Filter-Induced Reflexive Reconstruction.""" ;
+    rel:attestedIn "draft 4 (RITM), draft 11 (generative closure), draft 3 treatise (Filter-Induced Reconstruction)" .
+
+rel:IrreducibleAsymmetry a rel:Phenomenon ;
+    rdfs:label "Irreducible Asymmetry" ;
+    skos:definition """Every act of inclusion introduces further exclusion, and
+every act of exclusion introduces further inclusion. This asymmetry
+cannot be resolved — it is recursive. Attempting to close it generates
+new instances at deeper reflexive levels. Prevents the field from
+reaching a final static state.""" ;
+    rel:attestedIn "draft 0 (irreducible asymmetry)" .
+
+# --- Language and computation ---
+
+rel:RelationalLanguage a rel:Structure ;
+    rdfs:label "Relational Language (λ_R)" ;
+    skos:definition """The typed lambda calculus internal to the relational
+field. Variables (recognitions), functions (conditional relations),
+application (performing a conditioning), fixed points (stable
+configurations under self-application). NOT imported — earned because
+the field's operations require internal expression. Cross-cutting:
+every well-behaved sub-field gets its own version. Three independent
+derivation paths converge on the same language.""" ;
+    rel:inMovement rel:MovementI, rel:MovementII ;
+    rel:derivesFrom rel:Inducing, rel:Iterating ;
+    rel:mathematicalCorrespondence "Internal language of a topos; simply typed lambda calculus with fixed points" ;
+    rel:attestedIn "draft 3 treatise (RelationalLanguage), draft 9 (constructive derivation), draft 2 (computational derivation)" .
+
+# --- Draft 9's opening sequence (Witnessing) ---
+
+rel:Witnessing a rel:Act ;
+    rdfs:label "Witnessing" ;
+    skos:definition """The first observation. The product of reflexing that
+records the tension between unrelating and relating. Witnessing
+determines that both coexist but cannot determine which carries
+the act. This unresolved indeterminacy compels the next step.
+Defined in draft 9 as Witness = (NotRelating Relating).""" ;
+    rel:inMovement rel:Genesis ;
+    rel:derivationStep 3 ;
+    rel:derivesFrom rel:Reflexing ;
+    rel:producedBy rel:Reflexing ;
+    rel:prefigures rel:Observing ;
+    rel:attestedIn "draft 9 (Witness = (NotRelating Relating))" .
+
+# --- Referring, Naming, Abstracting (meta-relational ascent) ---
+
+rel:Referring a rel:Act ;
+    rdfs:label "Referring" ;
+    skos:definition """The capacity to point at one's own internal structure.
+Connecting extended structure to its fixed origin. Earned from the
+system's need to relate to its own completed closure. Step 58 in the
+granular derivation: Refer(n) = (Relate Extend(n) Fix(n)).""" ;
+    rel:inMovement rel:MovementI, rel:MovementIII ;
+    rel:derivesFrom rel:SelfGrounding ;
+    rel:produces rel:Naming ;
+    rel:attestedIn "draft 1 Relational Derivatives (Refer)" .
+
+rel:Naming a rel:Act ;
+    rdfs:label "Naming" ;
+    skos:definition """Deriving identifiable reference to relational action.
+The capacity to label what one does. Earned from referring. Step 59:
+Name(n) = (Relate Refer(n) Relate).""" ;
+    rel:inMovement rel:MovementI, rel:MovementIII ;
+    rel:derivesFrom rel:Referring ;
+    rel:produces rel:Abstracting ;
+    rel:attestedIn "draft 1 Relational Derivatives (Name)" .
+
+rel:Abstracting a rel:Act ;
+    rdfs:label "Abstracting" ;
+    skos:definition """Extracting behavior from identity. The capacity to
+generalize from particular instances to patterns. Earned from naming.
+Step 60: Abstract(n) = (Relate Name(n) Refer(n)).""" ;
+    rel:inMovement rel:MovementI, rel:MovementIII ;
+    rel:derivesFrom rel:Naming ;
+    rel:attestedIn "draft 1 Relational Derivatives (Abstract)" .
+
+# --- Four-part architecture (cross-cutting, draft 3+) ---
+
+rel:RelationalStructure a rel:Structure ;
+    rdfs:label "Relational Structure" ;
+    skos:definition """The first layer of the four-part architecture: the
+Heyting algebra with modal operators. What Movements I–II earn.
+The logical-algebraic substrate on which everything else is built.""" ;
+    rel:inMovement rel:MovementI, rel:MovementII ;
+    rel:requires rel:Togethering, rel:Eithering, rel:Inducing, rel:Negating,
+        rel:Closing, rel:Opening ;
+    rel:mathematicalCorrespondence "Heyting algebra with S4 modalities" ;
+    rel:attestedIn "draft 3 treatise (RelationalStructure), draft 4 (RS)" .
+
+rel:RelationalGeometry a rel:Structure ;
+    rdfs:label "Relational Geometry" ;
+    skos:definition """The third layer of the four-part architecture: the
+cohesive structure connecting local and global. What Movement IV earns.
+Built on top of RelationalStructure and RelationalLanguage.""" ;
+    rel:inMovement rel:MovementIV ;
+    rel:requires rel:CohesiveChain, rel:RelationalLanguage ;
+    rel:mathematicalCorrespondence "Cohesive topos" ;
+    rel:attestedIn "draft 3 treatise (RelationalGeometry), draft 4 (RG)" .
+
+rel:RelationalPhysics a rel:Structure ;
+    rdfs:label "Relational Physics" ;
+    skos:definition """The fourth layer of the four-part architecture: the
+physical reading of relational structure. What Movement V earns.
+States, observables, conservation — all read from the relational logic.""" ;
+    rel:inMovement rel:MovementV ;
+    rel:requires rel:RelationalGeometry, rel:Stating, rel:Observing ;
+    rel:mathematicalCorrespondence "Spectral theory on the relational geometry" ;
+    rel:attestedIn "draft 3 treatise (RelationalPhysics), draft 4 (RP)" .
+
+# --- RITM (Relational Internal Triple/Module, draft 4) ---
+
+rel:RITM a rel:Structure ;
+    rdfs:label "RITM" ;
+    skos:definition """Relational Internal Triple/Module. The quadruple adjunction
+Π→ ⊣ □r ⊣ ◇l ⊣ ∇← that internalizes the cohesive chain. Decomposes
+Flow into RD (□-stable endofunctors, 'Relational Dynamics') and RT
+(◇-stable endofunctors, 'Relational Topology'). The self-stabilizing
+property: every RITM contains the structure to reconstruct itself.
+Constructive model: PSh({0→1}), the 'relational cell.'""" ;
+    rel:inMovement rel:MovementIV ;
+    rel:derivationStep 420 ;
+    rel:derivesFrom rel:CohesiveChain ;
+    rel:requires rel:Flowing ;
+    rel:mathematicalCorrespondence "Quadruple adjunction; PSh({0→1}) as constructive model" ;
+    rel:attestedIn "draft 4 (RITM), draft 5 (posetal prototype)" .
+
+# =============================================================
+# ADDITIONAL CONCEPTS — Concordance Remainder
+# =============================================================
+#
+# These eight concepts complete the concordance encoding.
+# Each was identified as present in the concordance analysis
+# but missing from the initial TTL encoding.
+#
+# =============================================================
+
+# --- Predictive Determination (cross-cutting principle) ---
+
+rel:PredictiveDetermination a rel:Phenomenon ;
+    rdfs:label "Predictive Determination" ;
+    skos:definition """The principle by which the closure of one relational
+domain predicts the necessary shape of the next. Formalizes the 'it
+cannot not derive' engine as an algorithmic process: scan for implicit
+dynamics at closure, classify them (acts/conditions/structures),
+verify type-homogeneity, and output the predicted shape of the next
+domain. Where Incitement names the philosophical force, Predictive
+Determination names the method by which that force is cashed out
+structurally. The algorithm: Input(Domain Dn, its closure) → identify
+implicit dynamics → classify → formalize → verify type-homogeneity/
+reflexivity → Output(predicted shape of Dn+1).""" ;
+    rel:formalizes rel:Incitement ;
+    rel:requires rel:Closing ;
+    rel:attestedIn "draft 0 (PDP — explicit algorithm), draft 7 (Statement of Novelty)" .
+
+# --- Reflexive Equilibrium (Movement II condition) ---
+
+rel:ReflexiveEquilibrium a rel:Condition ;
+    rdfs:label "Reflexive Equilibrium" ;
+    skos:definition """The condition achieved when a relational structure
+maintains the same form across infinite reflexive layers. When a
+recognition is iterated through self-application — a, S(a), S²(a),
+S³(a), ... — reflexive equilibrium is convergence: the point at which
+further self-application produces no new structure. This is the
+relational concept underlying the formal notion of a fixed point:
+Close(a) = a means a has achieved reflexive equilibrium. Criteria
+include asymptotic equilibrium (the form approaches a limit),
+uniqueness (the stable form is unique if it exists, following from
+monotonicity of iteration), and total reflexive closure (every
+substructure has equilibrium with every other).""" ;
+    rel:inMovement rel:MovementII ;
+    rel:derivationStep 215 ;
+    rel:producedBy rel:Closing ;
+    rel:derivesFrom rel:Iterating ;
+    rel:mathematicalCorrespondence "Fixed-point convergence of closure towers; transfinite closure" ;
+    rel:attestedIn "draft 0 (ReflexiveEquilibrium, asymptotic equilibrium), draft 1 (phase 4: sustained coherence), draft 4 (RITM self-stabilizing property), draft 5 (transfinite closure tower), draft 7 (coherence)" .
+
+# --- Domain Emergence (cross-cutting phenomenon) ---
+
+rel:DomainEmergence a rel:Phenomenon ;
+    rdfs:label "Domain Emergence" ;
+    skos:definition """The process by which the closure of one relational
+domain produces a new domain with qualitatively different structure.
+When all operations within a domain reach their fixed point, the fixed
+point itself exhibits properties not present in the original domain —
+properties that constitute a new domain of relational activity. This
+is the mechanism underlying the five-movement structure: each movement's
+coherence, once complete, exhibits features requiring new operations.
+Draft 0 traces Domain 1 (Relating: minimal ternary structure) →
+Domain 2 (Propagation and Trace) → Domain 3 (Alignment and Meta-
+Reflexivity) → Domain 4 (Cross-Dynamics). Each domain emerges because
+the previous domain's closure produces recognitions that its operations
+cannot handle. The result is a hierarchical lattice of relational
+domains: hierarchical (each builds on the previous), open-ended (no
+final domain), and self-similar (each level mirrors the whole).""" ;
+    rel:derivesFrom rel:Closing ;
+    rel:requires rel:IrreducibleAsymmetry ;
+    rel:attestedIn "draft 0 (domain emergence, hierarchical lattice, Domain 1→2→3→4), draft 1 (nine phases), draft 3 treatise (Discipline/Regime/Filter/Profile)" .
+
+# --- Aligning (Act, Movement II–IV) ---
+
+rel:Aligning a rel:Act ;
+    rdfs:label "Aligning" ;
+    skos:definition """Deepening shallower relational structures to match the
+reflexive depth of deeper ones. When structures at different reflexive
+levels must relate, the shallower structure must be lifted to the depth
+of the deeper one. Draft 0 (Domain 3) introduces the AlignmentOperator:
+takes a structure at depth n and maps it to depth m > n, preserving
+relational content while embedding in the deeper reflexive context.
+Draft 1 formalizes as Align(n) = (Relate (Relate Project(n) Project(n))
+Project(n-1)). In the mature framework, alignment is implicit in
+several constructions: Iterating (self-application chains), Closing
+(alignment completed to its limit), and the cohesive chain (adjunctions
+translating between local/global perspectives). Alignment does not
+correspond to a single named operator — it is a structural operation
+that the framework performs through its existing tools.""" ;
+    rel:inMovement rel:MovementII, rel:MovementIV ;
+    rel:derivesFrom rel:Iterating ;
+    rel:produces rel:ReflexiveEquilibrium ;
+    rel:prefigures rel:CohesiveChain ;
+    rel:attestedIn "draft 0 (AlignmentOperator, Domain 3), draft 1 (Align(n) in S-expression derivation), draft 5 (transfinite closure tower)" .
+
+# --- Propagation and Trace (Movement III precursor) ---
+
+rel:PropagatingAndTracing a rel:Phenomenon ;
+    rdfs:label "Propagation and Trace" ;
+    skos:definition """How relational effects move through the field: the
+precursor to Flow. Propagation is the movement of relational effects
+from one recognition to another. Trace is the record of a propagation —
+the path an effect follows. Draft 0 provides the most detailed
+treatment, defining PropagationEvent (triple: Source, Target, Operation),
+PropagationTrace (sequence of events with TraceMap and Closure
+condition), and four Propagation Classes: Linear (single chain),
+Branched (splits at nodes), Cyclic (returns to visited node), and
+Localized (bounded region). Three modes of directionality: Forward
+(Source→Target), Backward (Target→Source), and Mutual (both). This
+introduces trace-level asymmetry within a reflexively symmetric system.
+The compression from propagation to Flow: propagation names the
+MECHANICS (events, traces, directions, invariants), while Flow names
+the STRUCTURE (a single operator with algebraic properties encoding
+all propagation mechanics). Draft 9 and draft 11 trace constructors
+(TraceStart, TraceAdvance, etc.) are the same phenomenon at different
+registers — physical, computational, algorithmic.""" ;
+    rel:prefigures rel:Flowing ;
+    rel:derivesFrom rel:Including, rel:Excluding ;
+    rel:attestedIn "draft 0 (PropagationEvent, PropagationTrace, Directionality), draft 9 (TraceStart, TraceAdvance), draft 11 (StartTrace, AdvanceTrace constructors)" .
+
+# --- Existence-Observation Duality (Movement V) ---
+
+rel:ExistenceObservationDuality a rel:Phenomenon ;
+    rdfs:label "Existence-Observation Duality" ;
+    skos:definition """The ambidextrous equivalence between construction and
+verification. Draft 6 (SDIG) formulates this as the Ambidexterity
+Theorem: hcolim F ≃ hlim S. For every coherent configuration, the
+constructive realization (homotopy colimit of a constructible diagram)
+is equivalent to the observational verification (homotopy limit of the
+dual sheaf of observations). This means: to construct something and to
+observe something are homotopy-dual operations. Being and knowing are
+not separate but two modal directions through the same relational field.
+Consequences: an entity exists iff its dual observational sheaf is
+coherent; the duality is an involution. The duality extends to dynamic
+processes: left Kan extensions propagate potentiality forward
+(actualization), right Kan extensions reconstruct necessary conditions
+backward (verification). The Field of Existence (ℱ) satisfies
+hlim ℱ ≃ hcolim ℱ — the global equilibrium between potential and
+realized existence IS the fixed-point condition.""" ;
+    rel:inMovement rel:MovementV ;
+    rel:derivationStep 540 ;
+    rel:derivesFrom rel:Observing, rel:Stating ;
+    rel:requires rel:Coherence ;
+    rel:mathematicalCorrespondence "Ambidexterity theorem; hcolim F ≃ hlim S; ∞-topos of existence" ;
+    rel:attestedIn "draft 6 SDIG (§6, Ambidexterity Theorem), draft 3 treatise (Filter-Induced Reflexive Reconstruction), draft 10 (Stable Envelope)" .
+
+# --- Four-Part Framework (cross-cutting architecture) ---
+
+rel:FourPartFramework a rel:Structure ;
+    rdfs:label "Four-Part Framework" ;
+    skos:definition """The treatise's organization of the relational framework
+into four progressive layers: (1) RelationalStructure — the Heyting
+algebra with modal operators, what Movements I–II earn, the capacity
+to RECOGNIZE; (2) RelationalLanguage — a typed lambda calculus internal
+to RelationalStructure, proven sound and complete, the capacity to
+COMPUTE; (3) RelationalGeometry — nuclei, flow, and cohesion, what
+Movements III–IV earn, the capacity to MOVE AND ORGANIZE;
+(4) RelationalPhysics — states, observables, conservation, what
+Movement V earns, the capacity to DESCRIBE ITSELF AS PHYSICAL.
+Each layer presupposes the previous. The deepest property is the
+Filter-Induced Reflexive Reconstruction theorem: every well-behaved
+constraint (Filter) produces a sub-field (Profile) that reproduces ALL
+FOUR PARTS internally. Any perspective on the field, if sufficiently
+coherent, reproduces the entire architecture. The number four is not
+arbitrary but corresponds to four qualitatively distinct capabilities
+that the relational axioms produce.""" ;
+    rel:inMovement rel:MovementI, rel:MovementII, rel:MovementIII, rel:MovementIV, rel:MovementV ;
+    rel:requires rel:RelationalStructure, rel:RelationalLanguage,
+        rel:RelationalGeometry, rel:RelationalPhysics ;
+    rel:attestedIn "draft 3 treatise (four layers), draft 3 PRE (five Parts), draft 4 (RITM as carrier), draft 12 (five movements)" .
+
+# --- Filter-Induced Reflexive Reconstruction (property of framework) ---
+
+rel:FilterInducedReconstruction a rel:Phenomenon ;
+    rdfs:label "Filter-Induced Reflexive Reconstruction" ;
+    skos:definition """The theorem that every well-behaved constraint (Filter)
+produces a sub-field (Profile) that reproduces the ENTIRE four-part
+architecture internally: ProfileStructure (a Heyting algebra),
+ProfileLanguage (a typed lambda calculus), ProfileGeometry (nuclei +
+flow), ProfilePhysics (states + observables + conservation). This means
+observation does not destroy structure — it specializes it into a
+complete world. One of three demonstrations of self-grounding (alongside
+generative closure fixed point and RITM self-stabilization).""" ;
+    rel:derivesFrom rel:Filtering, rel:Profile ;
+    rel:requires rel:FourPartFramework ;
+    rel:attestedIn "draft 3 treatise (Filter-Induced Reflexive Reconstruction theorem)" .
+
+# --- Articulation Theorem (Genesis) ---
+
+rel:ArticulationTheorem a rel:Phenomenon ;
+    rdfs:label "Articulation Theorem" ;
+    skos:definition """Why Relationlessness self-contradicts and the derivation
+begins. To describe 'without relation' is to effect an exclusion between
+'relation' and 'this field.' Exclusion is relational in form, hence it
+constitutes a recognition. The self-contradiction is structural, not
+speech-act: (1) Relationlessness is defined as the absence of relation,
+(2) 'Absence' requires distinguishing what is absent from what is
+present, (3) Distinguishing IS relating — it places Relationlessness
+and Relation in opposition, (4) therefore Relationlessness produces the
+first relational act. The self-contradiction is not a flaw but the
+mechanism that generates everything. The PRE formalizes the consequence
+as the Reflex Emergence Lemma: from the inconsistency of Relationlessness,
+derive Reflex. Draft 4 clarifies: Reflex is the engine (the act of
+self-application), Differentiate names its product (the first
+recognition). The theorem settles what is 'assumed': nothing.
+Relationlessness is the absence of assumption, and its impossibility
+produces the first act.""" ;
+    rel:inMovement rel:Genesis ;
+    rel:derivationStep 1 ;
+    rel:derivesFrom rel:Relationlessness ;
+    rel:produces rel:Reflexing ;
+    rel:attestedIn "draft 3 treatise (Articulation Theorem), draft 3 PRE (Reflex Emergence Lemma), draft 4 (Reflex/Differentiate distinction), draft 7 (reflex as minimal act), draft 1 (phase 1), draft 11 (generative closure seed)" .
+
+# =============================================================
+# ADDITIONAL CONCEPTS — From source drafts beyond concordance
+# =============================================================
+#
+# These concepts are named in the source drafts and canonical
+# naming convention but were not surfaced as separate concordance
+# entries. They complete the operator inventory.
+#
+# =============================================================
+
+# --- Phenomenological acts (draft 7) ---
+
+rel:Existing a rel:Act ;
+    rdfs:label "Existing" ;
+    skos:definition """The first philosophical act: claiming that something is.
+To claim something exists is to claim it is not what it is not — to
+draw a distinction. Existing is not a state but an ongoing act: a thing
+does not exist once and persist, it is continuously held in existence
+through the acts that distinguish it. Existing earns including and
+excluding as its two aspects — neither can operate without the other.
+The phenomenological sequence begins here: existing → including/
+excluding → tension → difference → relating → relation → relative →
+coherence. This is what the formal operators (Differentiating, Including,
+Excluding) axiomatize.""" ;
+    rel:inMovement rel:Genesis ;
+    rel:derivationStep 2 ;
+    rel:derivesFrom rel:Reflexing ;
+    rel:produces rel:Including, rel:Excluding ;
+    rel:attestedIn "draft 7 (acts/exist.md), draft 1 (phase 1: existence and inclusion)" .
+
+rel:Reflecting a rel:Act ;
+    rdfs:label "Reflecting" ;
+    skos:definition """The ongoing maintenance of reflexivity over time — distinct
+from Reflexing, which is the instantaneous act of self-application.
+Where reflex(S) = relating(S, S) is a single self-application,
+reflecting holds open the reflexive relation over time, ensuring
+stability of the reflexive sequence R(0):=S, R(n+1):=reflex(R(n)).
+This parallels the general pattern: including (instantaneous) vs.
+inclusion (sustained), excluding vs. exclusion. Reflecting produces
+reflexive sequences; reflexing produces a single step. The distinction
+is crucial for understanding how iteration and closure work: closing
+requires sustained reflecting, not just repeated reflexing.""" ;
+    rel:inMovement rel:MovementI, rel:MovementII ;
+    rel:derivesFrom rel:Reflexing ;
+    rel:sustains rel:Coherence ;
+    rel:attestedIn "draft 7 (acts/reflect.md), draft 7 (structures/reflexive relational sequence)" .
+
+# --- Movement III additional operators ---
+
+rel:Residuating a rel:Operator ;
+    rdfs:label "Residuating" ;
+    skos:definition """Logic along flow. The operator form of Dynamic
+Residuation: the flow-indexed implication. Residuating(a, b) is the
+greatest c such that Flowing(Togethering(a, c)) ≤ b. This is the
+Galois connection between flow and implication: the equivalence
+between acting-then-reasoning and reasoning-about-acting.""" ;
+    rel:inMovement rel:MovementIII ;
+    rel:derivationStep 311 ;
+    rel:derivesFrom rel:Flowing, rel:Inducing ;
+    rel:signatureArity 2 ;
+    rel:definedAs "Residuating(a, b) = max{c | Flow(a ∧ c) ≤ b}" ;
+    rel:formalizes rel:DynamicResiduation ;
+    rel:mathematicalCorrespondence "Flow-indexed Heyting implication; Galois connection" ;
+    rel:attestedIn "draft 3 treatise (FlowIndexedImplication), draft 10 (Dynamic Residuation), draft 12 (⇒_F)" .
+
+# --- Movement IV additional operators ---
+
+rel:Stratifying a rel:Operator ;
+    rdfs:label "Stratifying" ;
+    skos:definition """Organizing diagrams by directional degree. The operation
+that partitions the relational field into layers based on how many
+directions of motion are active at each point. PRE Part IV's primary
+construction: given the flow structure, stratifying separates the
+field into strata where each stratum is characterized by its degree
+of directed connectivity. The stratification provides the raw material
+from which the cohesive chain (Shaping ⊣ Flatting ⊣ Sharping ⊣
+Crisping) is built — the adjunctions connect the strata.""" ;
+    rel:inMovement rel:MovementIV ;
+    rel:derivationStep 405 ;
+    rel:derivesFrom rel:Flowing ;
+    rel:produces rel:CohesiveChain ;
+    rel:signatureArity 1 ;
+    rel:mathematicalCorrespondence "Grothendieck site structure; stratification by directional degree" ;
+    rel:attestedIn "PRE Part IV (Stratify), draft 6 SDIG (stratified directed structure)" .
+
+rel:Constructing a rel:Condition ;
+    rdfs:label "Constructing" ;
+    skos:definition """The well-formedness condition on stratified objects. A
+recognition is constructible if it can be assembled from the stratified
+structure in a coherent way — if its parts cohere across strata. This
+is the condition that constructible diagrams must satisfy: each stage
+is compatible with the next, and the limit of the assembly exists.
+Draft 6 (SDIG) makes constructibility foundational: only constructible
+configurations admit the ambidextrous equivalence (hcolim F ≃ hlim S).
+Constructibility is what separates well-formed relational objects from
+arbitrary collections.""" ;
+    rel:inMovement rel:MovementIV ;
+    rel:derivationStep 406 ;
+    rel:producedBy rel:Stratifying ;
+    rel:requires rel:CohesiveChain ;
+    rel:mathematicalCorrespondence "Constructible diagrams in an ∞-topos; sheaf condition" ;
+    rel:attestedIn "PRE Part IV (Constructible), draft 6 SDIG (constructible diagrams)" .
+
+# --- Generative Closure (cross-cutting, draft 11) ---
+
+rel:GenerativeClosure a rel:Phenomenon ;
+    rdfs:label "Generative Closure" ;
+    skos:definition """The process by which ALL acts are derived from a single
+seed (Relationlessness). A formally specified algorithm whose fixed
+point is the complete universe of relational acts A_∞. Each cycle:
+(1) enumerate all ordered pairs of existing acts, (2) for each
+constructor, attempt to apply it, (3) validate candidates against
+coherence conditions, (4) promote valid candidates, (5) repeat.
+The seed is Relationlessness. Constructors are earned at each stage
+from coherence requirements. The fixed point satisfies G(A_∞) = A_∞
+and is the smallest such set. Crucially, A_∞ contains its generators:
+the constructors (togethering, eithering, etc.) are themselves acts
+in A_∞. This is the self-grounding property. The five movements are
+the structure that the generative closure naturally exhibits — its
+first cycles produce Movement I acts, middle cycles produce Movement
+II-III acts, later cycles produce Movement IV-V acts. Draft 11:
+'generative closure G maps to Iterate/Close' — G IS Movement I-II's
+iterating/closing applied at the meta level to the entire universe.""" ;
+    rel:derivesFrom rel:Iterating, rel:Closing ;
+    rel:requires rel:ArticulationTheorem ;
+    rel:attestedIn "draft 11 (acts-induction-spec.md, generative closure specification), draft 9 (detailed S-expression traversal), draft 3 PRE (formal operators)" .
+
+# --- Flow arithmetic (Movement III) ---
+
+rel:Adding a rel:Operator ;
+    rdfs:label "Adding" ;
+    skos:definition """Combining flows: Adding(a, b) = Flowing(Togethering(a, b)).
+The flow-indexed combination of two recognitions. How two processes
+combine when they occur within the same directed motion. This is
+additive composition: both contributions are present simultaneously,
+and their combined effect is stabilized by flow.""" ;
+    rel:inMovement rel:MovementIII ;
+    rel:derivationStep 312 ;
+    rel:derivesFrom rel:Flowing, rel:Togethering ;
+    rel:signatureArity 2 ;
+    rel:definedAs "Adding(a, b) = Flow(a ∧ b)" ;
+    rel:mathematicalCorrespondence "Flow-indexed meet; +_F" ;
+    rel:attestedIn "PRE (Add), draft 12 (Add_F)" .
+
+rel:Multiplying a rel:Operator ;
+    rdfs:label "Multiplying" ;
+    skos:definition """Composing flows: Multiplying(a, b) = Togethering(
+Flowing(a), Flowing(b)). The sequential composition of two directed
+processes. Unlike Adding (which combines within a single flow),
+Multiplying flows each recognition independently and then combines
+the results. This captures the difference between simultaneous and
+sequential process composition.""" ;
+    rel:inMovement rel:MovementIII ;
+    rel:derivationStep 313 ;
+    rel:derivesFrom rel:Flowing, rel:Togethering ;
+    rel:signatureArity 2 ;
+    rel:definedAs "Multiplying(a, b) = Flow(a) ∧ Flow(b)" ;
+    rel:mathematicalCorrespondence "Flow-indexed join; ×_F" ;
+    rel:attestedIn "PRE (Multiply), draft 12 (Mul_F)" .
+
+# --- MinimalCohesion (draft 7, HIT formalization) ---
+
+rel:MinimalCohesion a rel:Structure ;
+    rdfs:label "Minimal Cohesion" ;
+    skos:definition """A Higher Inductive Type (HIT) formalizing the minimal
+coherent relational unit. Has three constructors: a base point (the
+recognition), a 1-dimensional path (inclusion as continuous identification),
+and a 2-dimensional coherence path (coherence as a higher-dimensional
+condition on inclusions). Demonstrates that coherence adds genuine
+higher-dimensional structure — not just holding things together but
+creating nontrivial topology. Draft 7's Cubical Agda formalization
+extends this through a recursive hierarchy: MinimalCohesion →
+RelationalUnit → RelationalClosure → RelationalBoundary, each adding
+constructors at increasing dimensional levels.""" ;
+    rel:inMovement rel:Genesis ;
+    rel:derivationStep 3 ;
+    rel:derivesFrom rel:Differentiating ;
+    rel:requires rel:Including ;
+    rel:correspondsTo rel:Coherence ;
+    rel:mathematicalCorrespondence "Higher Inductive Type in Cubical Agda / HoTT; nontrivial 2-cell topology" ;
+    rel:attestedIn "draft 7 (system/units/minimal coherence.md, Relational Dynamic Cubical Agba Formalism.md)" .

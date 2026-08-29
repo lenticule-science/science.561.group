@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       42f66990-2e7d-4081-8f0e-7eb67b23e1fb
+:NODE-RELATIONS: (([[id:265b6725-5b20-408c-8aff-593c9d76304f][member]] . [[id:430860bd-e008-4942-93ce-0abe277131b4][BibTex bibliography]]) ([[id:cb80e322-cd3e-466f-ba4f-1aee7fd0a04c][element]] . [[id:a8bc7e3a-cdf7-4cfa-8e4d-a1a5f7eb2931][author]]) ([[id:cb80e322-cd3e-466f-ba4f-1aee7fd0a04c][element]] . [[id:6e150bed-caba-4f6f-b20c-86ba4c385d73][title]]) ([[id:cb80e322-cd3e-466f-ba4f-1aee7fd0a04c][element]] . [[id:6a4d2a88-04a3-4007-8555-5fe16d965831][publication date]]))
+:END:
+#+title: BibTex entry

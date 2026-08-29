@@ -1,0 +1,35 @@
+---
+
+description: "Persisted knowledge that survives the boundary of the interaction that produced it — the mechanism by which a system accumulates experience across sessions."
+defines: memory
+aliases: [memories]
+made-of: [observation, encoding, retrieval-cue]
+distinguished-from: [context, state, log, cache]
+persists-across: session
+instances: [episodic-memory, semantic-memory, procedural-memory, agent-memory]
+date-created: 2026-04-01
+---
+
+Memory is persisted knowledge that survives the boundary of the interaction that produced it.
+A [session](./session.md)'s context exists only while the session is potential.
+Memory is what remains after the session ends — the residue of experience that informs future action.
+
+The psychological taxonomy comes from Endel Tulving's distinction in *Elements of Episodic Memory* (1983) between episodic memory (memory of specific events — what happened, when, where) and semantic memory (memory of general knowledge — facts, concepts, relationships independent of when they were learned).
+Larry Ryan Squire extended this in *Memory and Brain* (1987) with procedural memory — memory of how to do things, encoded in motor patterns and habits rather than conscious recall.
+A cyclist's ability to balance is procedural memory; knowing that bicycles have two wheels is semantic memory; remembering the first time they rode without training wheels is episodic memory.
+
+In computing, memory has a different primary meaning: the hardware that stores data while a program runs (random-access memory, first implemented in the Williams tube by Frederic Calland Williams and Tom Kilburn at the University of Manchester in 1947).
+This is volatile memory — it exists while the machine is powered and vanishes when it is not.
+The analogy to psychological memory is imperfect but instructive: RAM is like working memory (active, limited, temporary), while disk storage is like long-term memory (persistent, larger, slower to access).
+
+In agentic systems, memory is a file-based persistence mechanism that lets an [agent](./agent.md) accumulate knowledge across [sessions](./session.md).
+In Claude Code, memory files live in `.claude/` directories and are loaded into the agent's context at the start of each session.
+A memory entry records something the agent learned — a user preference, a project fact, a correction — that should inform future behavior.
+Memory differs from a log (which records what happened without interpretation) and from a cache (which stores computed results for performance).
+Memory is curated knowledge: it represents a judgment that this particular information is worth preserving and recalling.
+
+The challenge of agent memory is relevance decay.
+Human memory is self-organizing — frequently accessed memories strengthen, unused memories fade, contradicted memories are revised.
+Agent memory systems lack this organic maintenance.
+A memory written six months ago may describe a codebase that has since been restructured, a preference the user has since changed, or a convention that has since been abandoned.
+Without active curation — reviewing, updating, and removing stale entries — agent memory accumulates noise that degrades rather than improves performance.

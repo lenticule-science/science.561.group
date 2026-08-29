@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       fc097cc8-0fdf-4731-8b5d-6d6f04330629
+:END:
+#+title: forging
+#+date: [2025-09-06 Sat 07:33]
+

@@ -1,0 +1,11 @@
+{
+  "name": "@lenticule-science/weiqi-kernel",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Pure, dependency-free weiqi rules kernel: position model, rulesets, scoring, SGF, and the semantic event layer that annotates play with glossary-vocabulary events. The engine is the executable form of the glossary.",
+  "license": "UNLICENSED",
+  "main": "src/index.mts",
+  "scripts": {
+    "test": "node --test 'test/*.test.mts'"
+  }
+}

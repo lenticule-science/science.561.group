@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       26ed6bb2-fdc3-4fdf-996f-4ba9e894e563
+:END:
+#+title: multilayer perceptron
+#+date: [2025-10-05 Sun 22:19]
+

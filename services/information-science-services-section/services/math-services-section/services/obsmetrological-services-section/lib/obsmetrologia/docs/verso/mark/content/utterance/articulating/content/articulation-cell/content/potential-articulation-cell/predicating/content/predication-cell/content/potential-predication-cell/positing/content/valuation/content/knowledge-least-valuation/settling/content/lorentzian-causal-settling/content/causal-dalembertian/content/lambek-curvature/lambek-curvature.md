@@ -1,0 +1,95 @@
+---
+type: theorem
+status: stable
+class: structural-bridge
+symbol: "\\kappa_{\\backslash/}"
+depends-on: [causal-dalembertian, einstein-hilbert-action, lambek-calculus]
+see-also: [sprinkling-average, residuated-lattice, formal-concept-analysis]
+---
+
+# Curvature as the Lambek residual defect
+
+Curvature, in geometry, is a **commutator**: the failure of transport to commute, $[\nabla_\mu,
+\nabla_\nu]$. The intuition this node settles is that **curvature comes from the Lambek calculus** —
+because the Lambek calculus is exactly the algebra in which non-commutativity is *visible*, as the gap
+between its two residuals.
+
+## The algebraic statement: flat ⟺ residuals coincide
+
+The [Lambek calculus](../../../../../../../../../../../order/lambek-calculus/lambek-calculus.md) is the
+logic of a (possibly non-commutative) residuated monoid: a product $\cdot$ with **two** residuals, a
+left $a\backslash c$ and a right $c/a$, joined by the bi-residuation $a\cdot b \le c \iff b \le
+a\backslash c \iff a \le c/b$. The corpus already proves that **commutativity collapses the two into
+one** ($a\backslash c = c/a$). The converse completes it into a biconditional:
+
+> **`residuals_coincide_iff_commutative`** (`Obsmetrologia.Lorentzian.LambekCurvature`, axiom-free):
+> the two residuals coincide *iff* the product commutes.
+
+The proof of the new direction is pure bi-residuation: $a\cdot b$ is the least $c$ with $b \le
+a\backslash c$; if $a\backslash c = c/a$ that least $c$ is also the least with $b\cdot a \le c$, namely
+$b\cdot a$. So **the residual defect $a\backslash c$ vs $c/a$ IS the non-commutativity** — the
+algebraic commutator that curvature is, vanishing exactly in the flat (commutative) regime.
+
+## The geometric instance: retarded vs advanced Möbius action
+
+On the causal order's incidence algebra the defect takes a concrete form. The discrete action has a
+**left** reading — the column Möbius sum $\sum_{y\preceq x}\mu(y,x)$, *retarded*, reaching into the
+past ([`localCurvature`](../../einstein-hilbert-action/einstein-hilbert-action.md)) — and a dual
+**right** reading, the row Möbius sum $\sum_{x\preceq y}\mu(x,y)$, *advanced*, reaching into the
+future (`rowCurvature`). Their pointwise gap
+
+$$\kappa_{\backslash/}(x) \;=\; \text{localCurvature}(x) - \text{rowCurvature}(x)$$
+
+is the left/right defect — the Lambek residual defect read on the order (`curvatureDefect`). It is
+**boundary-localized**: at the diamond it is $+1$ at the minimal (past-boundary) event, $-1$ at the
+maximal (future-boundary) event, and $0$ in the interior (`diamond_curvatureDefect`), echoing
+`localCurvature`'s past-boundary profile $(1,0,0,0)$ and `rowCurvature`'s future-boundary $(0,0,0,1)$.
+
+## The discrete Bianchi identity
+
+The defect **integrates to zero**:
+
+> **`total_curvature_defect_zero`** — $\sum_x \text{localCurvature}(x) = \sum_x \text{rowCurvature}(x)$;
+> hence **`total_defect_eq_zero`** — $\sum_x \kappa_{\backslash/}(x) = 0$.
+
+Both totals are the two orders of *one* double sum of $\mu(y,x)$ over causal pairs $y\preceq x$;
+rectangular Fubini (`foldr_rect_swap`) swaps them. This is a discrete Bianchi / Gauss–Bonnet statement:
+the curvature defect is concentrated on the causal boundary and cancels globally — exactly the
+behaviour the contracted Bianchi identity $\nabla^\mu G_{\mu\nu}=0$ enforces in the continuum, here
+proved on the bare order.
+
+## The direction-resolved tensor
+
+The scalar defect $\kappa_{\backslash/}(x)$ is a **trace** — it collapses a two-index object. Resolving
+the left/right residual defect along a *direction event* $y$ gives the curvature **tensor**
+(`Obsmetrologia.Lorentzian.LambekRicci`):
+
+$$T(x,y) \;=\; \mu(y,x) - \mu(x,y),$$
+
+the retarded weight ($y$ in the past cone) minus the advanced weight ($y$ in the future cone). Off the
+cone of $x$ both vanish (`mobius_zero_of_not_above`), so $T$ is supported exactly on $x$'s past ∪
+future — the discrete tangent directions of [`ConeField`](../../cone-field/cone-field.md). It is:
+
+- **antisymmetric** — $T(x,y) = -T(y,x)$ (`curvatureTensor_antisymm`), the hallmark of a curvature
+  2-form, with vanishing diagonal;
+- **trace = scalar** — $\sum_y T(x,y) = \kappa_{\backslash/}(x)$ (`tensor_row_trace`): the scalar
+  curvature is the trace of the directional tensor, exactly as the Ricci scalar $R$ is the metric trace
+  of $\mathrm{Ric}$;
+- **conserved** — $\sum_{x,y} T(x,y) = 0$ (`tensor_total_zero`), antisymmetry forced through
+  rectangular Fubini; a sharper conservation law than the scalar Bianchi identity, which is its
+  row-traced projection.
+
+The symmetric companion $\mathrm{Sym}(x,y) = \mu(y,x)+\mu(x,y)$ is the Ricci-*type* part; the metric
+contraction that turns it into the Ricci scalar $R$ proper is the analytic frontier (research-grade —
+it needs the continuum scaling, below). What is green is the **tensor/trace structure**: curvature is
+a two-index residual defect, the scalar is its trace, antisymmetry is its conservation.
+
+## Position
+
+The bridge is generated by the causal d'Alembertian (the Möbius action must exist) and the Lambek
+calculus (the residuation that makes non-commutativity legible). The **algebraic** half — flat ⟺
+residuals coincide — is the rigorous bullseye: Ricci-flatness is the coincidence of the two Lambek
+residuals. The **geometric** half — retarded/advanced Möbius defect, boundary-localized, Bianchi-null
+— is its instance on the causal order. What stays roadmap is the continuum scaling that turns the
+defect's *density* into the Ricci scalar $R$ proper (see [sprinkling-average](../sprinkling-average/sprinkling-average.md));
+the commutator structure that *is* curvature is here and green.

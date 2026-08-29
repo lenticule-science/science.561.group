@@ -1,0 +1,12 @@
+{
+  "name": "@lenticule-science/ilinx-research",
+  "version": "0.1.0",
+  "description": "Ilinx Research — Lenticule Science's game-sciences program: ludics (Caillois and Girard), regime taxonomy, market teardowns, and the theory bindings every game cites. Named for the play-category of vertigo, the H1-nonzero regime this house studies.",
+  "type": "module",
+  "keywords": [
+    "brand:ilinx-research",
+    "game-science",
+    "ludics",
+    "lenticule-science"
+  ]
+}

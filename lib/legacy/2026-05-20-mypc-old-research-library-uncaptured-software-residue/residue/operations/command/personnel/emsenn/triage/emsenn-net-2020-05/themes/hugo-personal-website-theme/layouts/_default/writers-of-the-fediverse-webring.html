@@ -1,0 +1,11 @@
+{{- define "main" -}}
+  {{ with .Content }}
+    {{ . }}
+  {{ end }}
+  {{ $ring := getJSON "http://ring.acdw.net/members" }}
+  {{ with $ring }}<ul>{{ range $ring }}
+    <li><a href="{{ .href }}">{{ .name }}</a>: {{ .desc }}
+      {{ with .fedi }}
+        Follow them at <a href="{{ . }}">{{ . }}</a>.
+      {{ end }}</li>{{ end }}</ul>{{ end }}
+{{- end -}}

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       63ec6a82-9650-412b-95a3-c9305a708dad
+:END:
+#+title: protagonist
+#+date: [2025-10-03 Fri 23:38]
+

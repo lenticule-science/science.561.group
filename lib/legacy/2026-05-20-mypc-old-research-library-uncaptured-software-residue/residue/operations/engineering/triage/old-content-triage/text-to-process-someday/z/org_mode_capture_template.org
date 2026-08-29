@@ -1,0 +1,71 @@
+#+title: Org-mode capture template
+#+begin_head
+#+ghe_schema: term-0.1.5
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-31 Thu 13:07]
+#+roam_alias: "Org-mode capture templates" "capture template" "capture templates"
+#+roam_tags: term
+#+end_head
+
+#+name: org-mode-capture-template-definition
+An */Org-mode capture template/* is a [[file:template.org][template]] for [[file:text_input_automation.org][text input automation]] within [[file:emacs.org][Emacs]].
+
+* Introduction
+
+  This /record/ is some of what I (emsenn) know about /Org-mode capture templates/.
+  
+* Org-mode capture templates
+** Org-mode capture template functions
+*** Capture at point
+#+name: defun-ghe-org-capture-capture-at-point-elisp
+#+caption: Capture at the current point
+#+begin_src elisp 
+ (defun ghe-org-capture-capture-at-point ()
+    "Insert an org capture template at point."
+    (interactive)
+    (org-capture 0))
+#+end_src
+** Org-mode capture template configuration
+*** Global bindings
+
+    #+name: org-mode-capture-templates-global-bindings-elisp
+    #+caption: The /Emacs bindings/ I add for handling /Org-mode capture templates/.
+    #+begin_src
+      ("C-c c" . org-capture)
+      ("<f8>" . ghe-org-capture-capture-at-point)
+    #+end_src
+** Common capture templates
+*** Capture source code block
+#+name: org-capture-source-block-template-elisp
+#+caption: The capture template for capturing source blocks
+#+begin_src elisp 
+("s" "Capture source code block")
+#+end_src
+**** Capture Elisp source block
+#+name: org-capture-elisp-source-block-template-elisp
+#+caption: Capture an Elisp code block
+#+begin_src elisp 
+("se" "Elisp code block"
+	     plain (clock)
+	     ,(concat "#+name: %^{NAME}-elisp\n"
+		      "#+caption: %^{CAPTION}\n"
+		    "#+begin_src elisp %^{HEADER-ARGS}\n"
+		    "%?\n"
+		    "#+end_src\n"))
+#+end_src
+*** Capture inclusion
+#+name: org-capture-inclusion-template-elisp
+#+caption: The capture template for capturing source blocks
+#+begin_src elisp 
+("i" "Capture inclusion")
+#+end_src
+**** Capture Org-mode inclusion
+#+name: org-capture-org-mode-inclusion-template-elisp
+#+caption: Capture an Elisp code block
+#+begin_src elisp 
+  ("io" "Org-mode inclusion"
+   plain (clock)
+   "#+include: \"%^{INCLUSION}\" %^{OPTIONS}")
+#+end_src
+

@@ -1,0 +1,54 @@
+---
+title: "Subject"
+description: "The relatum of an act of relating that the relating's predicate is asserted *of* — the side from which the directed relating proceeds. In the relationality framework, not a substantive thing-with-properties but a position constituted by the directed triadic relating that produces it."
+defines:
+  - subject
+contrasts-with: substance-subject
+related:
+  - object
+  - relating
+  - predication-cell (voidmath)
+date-created: 2026-04-28
+---
+
+In the [relationality](../_index.md) framework, **subject** names a position in a directed act of [relating](relating.md): the relatum *of which* the predicate is asserted.
+The subject and the [object](object.md) are the two sides of any directed relating; what makes them subject and object — rather than two interchangeable poles — is the directionality of the relating itself.
+
+The subject is not a substance, a thing-with-properties, or an agent in the philosophy-of-mind sense.
+A subject in this framework is constituted by the relating in which it stands — it is what the predicate is asserted *of*, and it would not be that subject (or any subject at all) outside the relating.
+There is no Cartesian *res cogitans* underneath, no grammatical-subject as a property the world has independently of being read; the subject is a *position*, and the position is constituted by the directed relating that gives it content.
+
+## Subject and object are not symmetric
+
+In substance metaphysics, the subject is the bearer of properties; the object is what is acted upon.
+In relational ontology, the directionality is more austere: subject and object are the two coordinates of a directed [predication cell](../../../../math/theories/voidmath/terms/predication-cell.md), structurally distinct, with the predicate running *from* the subject *toward* the object.
+Swapping the two does not give the same relating with the poles relabeled; it gives a different relating, related to the original by [predicate converse](../../../../math/theories/voidmath/terms/predicate-category.md).
+
+This asymmetry is what allows relating to constitute its terms in the first place.
+A symmetric primitive could not produce two distinct positions; the directed primitive does, and the *subject* position is one of the two positions it produces.
+
+## Distinction from grammatical and Cartesian subject
+
+Three readings of *subject* should be kept apart:
+
+- **Grammatical subject** — the noun phrase in subject position of a sentence.
+  A surface feature of language, not the ontological category the framework names.
+- **Cartesian subject** — the *res cogitans*, the thinking thing as substrate of mental properties.
+  Substance-metaphysical; the relationality framework refuses the substrate while keeping the term *subject* for the position.
+- **Relationality subject** — a position in a directed relating, constituted by the relating itself. *This* reading.
+
+The three coincide in particular cases (a sentence whose grammatical subject names a Cartesian subject who is occupying a relationality subject position) but the framework's term means the third.
+
+## Subjects are entities
+
+A subject is always a [relational entity](relational-entity.md) — a stable pattern occupying the subject coordinate of one or more predication cells.
+The same entity can occupy the subject position of one relating and the object position of another; *being a subject* is not a property of the entity but of the position the entity is in within a particular relating.
+The framework has no inherent subjects, only entities that are subjects within specified relatings.
+
+## See also
+
+- [Object](object.md) — the corresponding position; the other relatum of the directed relating.
+- [Relating](relating.md) — the activity that constitutes both positions.
+- [Relational entity](relational-entity.md) — what occupies subject and object positions.
+- [Predication cell](../../../../math/theories/voidmath/terms/predication-cell.md) — the math articulation; the subject is the first coordinate of the cell.
+- [Relational ontology](../../western/theories/metaphysics/theories/ontology/terms/relational-ontology.md) — the framework's commitment to relations as ontologically prior.

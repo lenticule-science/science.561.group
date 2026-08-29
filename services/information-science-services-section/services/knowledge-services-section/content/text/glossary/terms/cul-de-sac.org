@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       b1e292ea-0899-4ac1-af2f-6a58ec2a07ab
+:END:
+#+title: cul-de-sac
+#+date: [2025-09-02 Tue 18:17]
+

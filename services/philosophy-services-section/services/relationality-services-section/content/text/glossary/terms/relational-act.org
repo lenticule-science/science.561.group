@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       02558c8c-ed20-48ea-8adb-07b63b24209b
+:END:
+#+title: relational act
+#+date: [2025-09-02 Tue 08:20]
+

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/lattice/library/sigma-algebra/library/measurable-space/library/measure-space/library/probability-space/probability-space.schema.json",
+  "title": "probability-space",
+  "description": "A measure space (Ω, 𝓕, P) with the additional constraint P(Ω) = 1. The basic object of probability theory.",
+  "type": "object",
+  "properties": {
+    "name": { "type": "string", "const": "probability-space" }
+  },
+  "required": ["name"]
+}

@@ -1,0 +1,45 @@
+\subsection{Value category and stochastic internal reals}
+
+\begin{proposition}[The value category]\label{thm:value-category}\lean{Infomaterial.Positing.Value.ValueCategory}\leanok\uses{thm:four-bilattice, thm:strict-finite}
+A \texttt{ValueCategory}: a carrier with a reflexive, transitive, antisymmetric order and a bottom element --- the value layer that Markov-kernel stochastic settling runs over.
+\end{proposition}
+
+\begin{theorem}[The real stochastic interval is a value category]\label{thm:real-stochastic-interval-value-category}\lean{Infomaterial.Probability.RealStochastic.realUnitInterval_is_value_category}\leanok\uses{thm:value-category, thm:reals-close-value-settling-hub}
+\texttt{Probability/Stochastic.lean} was abstract because it predated internal reals: only a
+\texttt{StochSemiring} and a \texttt{Nat} witness, no genuine $[0,1]$. With the internally derived
+constructive reals (\texttt{Real.Internal}) present, the unit interval is built: \texttt{UnitReal},
+the subtype $\{x:\mathbb{R} \mid 0\le x\le 1\}$, is a genuine \texttt{ValueCategory} --- reflexive,
+transitive, and antisymmetric under the real order (antisymmetry from the reals' antisymmetry plus
+proof irrelevance on the bounds), with seed $0$. This is the value layer for stochastic settling
+over real probabilities, replacing the abstract semiring. A further refinement (red) instantiates the
+actual Markov-kernel stochastic settling over it and proves the probability-normalization laws.
+\end{theorem}
+
+\begin{theorem}[Finite thermodynamic transition production]\label{thm:finite-thermodynamic-transition-production}\lean{Infomaterial.Thermodynamics.Temperature.LiftedThermoTransition.produces_creation_landauer_and_discharge}\leanok\uses{thm:real-stochastic-interval-value-category, thm:stochastic-is-value-settling, thm:measure-is-valuation}
+A lifted thermodynamic transition retaining its witnesses carries positive
+held-\(\top\) creation, balanced stochastic flux, positive Landauer cost, and
+positive hard-flow discharge.  This is the finite churn package; it does not yet
+construct a real-valued free-energy functional.
+\end{theorem}
+
+\begin{theorem}[Positive-temperature settling free energy]\label{thm:positive-temperature-free-energy-flow}\notready\uses{thm:finite-thermodynamic-transition-production, thm:real-stochastic-interval-value-category, thm:stochastic-is-value-settling, thm:conditioning-is-reindex}
+\emph{(Open frontier --- stated, not formalized.)} \texttt{FreeEnergyLyapunov} is intentionally
+\texttt{Nat}-valued (the $T=0$ hard-closure endpoint) and flags the positive-temperature/stochastic
+extension as open without measures. With internal reals present this is a precise target: a
+real-valued positive-temperature free energy whose $T\to 0$ limit is the existing hard-closure
+Lyapunov theorem, and whose stochastic closure flow decreases expected free energy toward
+stationary settling equilibria. Missing bridge: a measure/expectation layer over internal reals
+plus a stochastic closure operator compatible with the settling order. (Target:
+\texttt{Infomaterial.Flow.positiveTemperatureFreeEnergy}.)
+\end{theorem}
+
+\begin{theorem}[Internal Myrheim--Meyer dimension]\label{thm:myrheim-meyer-dimension-internal-reals}\notready\uses{thm:myrheim-meyer-dimension}
+\emph{(Open frontier --- stated, not formalized.)} \texttt{OrderingFraction.lean} formalizes only the
+rational ordering fraction $r(v)$ and scopes out $d_{MM}=f^{-1}(r)$ because real/$\Gamma$ machinery
+was absent. With internal
+reals now present, the target is to lift $r(v)$ to an internally real-valued Myrheim--Meyer
+dimension estimator $d_{MM}(v)$, with the diamond, chain, and antichain witnesses retaining
+geometry/topology independence after the lift. Missing bridge: internal real special
+functions/inversion, or a deliberately weaker monotone calibration avoiding full $\Gamma$.
+(Target: \texttt{Infomaterial.Relational.Spacetime.Dimension.OrderingFraction.internalDimension}.)
+\end{theorem}

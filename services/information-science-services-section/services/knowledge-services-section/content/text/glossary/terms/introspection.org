@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       e0cba64e-5fd1-495e-98ef-19669aede5a8
+:END:
+#+title: introspection
+#+date: [2025-08-29 Fri 22:50]
+

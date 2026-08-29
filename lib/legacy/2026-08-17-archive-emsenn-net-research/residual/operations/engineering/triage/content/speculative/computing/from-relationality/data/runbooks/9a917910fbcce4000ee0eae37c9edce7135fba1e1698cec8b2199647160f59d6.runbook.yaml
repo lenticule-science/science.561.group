@@ -1,0 +1,27 @@
+id: 9a917910fbcce4000ee0eae37c9edce7135fba1e1698cec8b2199647160f59d6
+name: ergodicity
+inputs:
+  - role: fixed_kernel
+    kind: fixed_kernel
+  - role: mixing_evidence
+    kind: mixing_evidence
+  - role: trace
+    kind: trace
+outputs:
+  - role: ergodicity_evidence
+    kind: ergodicity_evidence
+steps:
+  - name: ergodicity
+    operator: ergodicity
+    step_index: 0
+    inputs:
+      - role: fixed_kernel
+        kind: fixed_kernel
+      - role: mixing_evidence
+        kind: mixing_evidence
+      - role: trace
+        kind: trace
+    outputs:
+      - role: ergodicity_evidence
+        kind: ergodicity_evidence
+

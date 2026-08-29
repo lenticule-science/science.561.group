@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       94a4c5dd-b1e9-4ca7-9684-3d04befb9631
+:END:
+#+title: financial option
+#+date: [2025-08-29 Fri 12:20]
+

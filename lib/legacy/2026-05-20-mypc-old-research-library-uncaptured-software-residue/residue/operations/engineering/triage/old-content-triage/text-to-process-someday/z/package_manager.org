@@ -1,0 +1,7 @@
+#+title: package manager
+#+roam_alias: "package managers"
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-19 Sat 11:30]
+#+roam_tags: term
+A */package manager/* is a [[file:software.org][software]] for handling the installation, updating, and removal of other software.

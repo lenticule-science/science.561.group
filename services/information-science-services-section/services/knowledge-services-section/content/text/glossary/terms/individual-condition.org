@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       36b74684-683f-4057-a229-68fadd9852d2
+:END:
+#+title: individual condition
+#+date: [2025-09-07 Sun 08:42]
+

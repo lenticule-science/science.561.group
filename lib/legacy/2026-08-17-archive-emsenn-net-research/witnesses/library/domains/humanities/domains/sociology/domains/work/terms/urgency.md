@@ -1,0 +1,45 @@
+---
+title: "Urgency"
+description: "The temporal pressure on action — the quality that makes something need to happen now rather than later, created by approaching deadlines, decaying opportunities, or accumulating consequences."
+defines: urgency
+date-created: 2026-04-04
+instance-of: quality
+applies-to: [task, decision, dispatch]
+part-of-stage: dispatch
+contrasts-with: [importance, priority]
+requires: [deadline]
+enables: [dispatch, cost-of-delay]
+extends: [deadline]
+references:
+  reinertsen2009:
+    authors: ["Donald G. Reinertsen"]
+    title: "The Principles of Product Development Flow"
+    publication: "Celeritas Publishing"
+    year: 2009
+  covey1989:
+    authors: ["Stephen R. Covey"]
+    title: "The 7 Habits of Highly Effective People"
+    publication: "Free Press"
+    year: 1989
+  virilio1977:
+    authors: ["Paul Virilio"]
+    title: "Speed and Politics"
+    publication: "Semiotext(e)"
+    year: 1977
+---
+
+Urgency is the temporal pressure on action — the quality that makes something need to happen now rather than later. A task is not urgent until its [deadline](./deadline.md) is near; as the deadline approaches, urgency increases. Urgency is time-dependent: a high-priority task due six months from now has zero urgency today. A low-priority task due tomorrow has high urgency. This is why a [deadline](./deadline.md) is not just a constraint — it is the engine that converts abstract importance into concrete time-pressure.
+
+Urgency is distinct from importance. Importance is the value or consequence of the outcome; urgency is the time-sensitivity of action. Stephen Covey (1989) formalized this cross in the Eisenhower matrix: do first (urgent + important), schedule (important + not-urgent), delegate (urgent + not-important), drop (neither). The failure mode is treating urgency as a proxy for importance — doing whatever screams loudest, whether or not it matters. A fire alarm is urgent; a house with poor insulation in winter is important. A well-organized dispatch system must separate the two.
+
+Donald Reinertsen (2009) quantifies urgency as cost of delay: the economic cost per unit of time that a task remains incomplete. A task with $1,000 per day cost of delay is more urgent than one with $100 per day, regardless of total importance. Cost of delay makes urgency commensurable — it answers "which of these equally-important tasks should I do first?" by comparing the rate at which value deteriorates. Urgency is the derivative of value with respect to time.
+
+Urgency can be created by four mechanisms: (1) approaching deadlines — the most common. As the deadline nears, the cost of further delay increases exponentially. (2) Decaying opportunities — some options close if not acted on. A seasonal window closes. A negotiation expires. A market moves. (3) Accumulating consequences — problems that worsen over time. Untreated illness becomes critical. Technical debt compounds. Organizational drift hardens. (4) External pressure — imposed urgency from others' timelines. A customer's deadline. A regulator's enforcement action. A political opponent's announcement.
+
+The politics of urgency matter. Paul Virilio (1977) and the anarchist analysis of [speed](../../critical-theory/domains/anarchism/terms/speed.md) show that urgency is not neutral. Imposed urgency compresses deliberation time, which selects for hierarchical decision-making and against consensus-based or democratic processes. Speed is a political structure. When a manager declares "this is urgent," they are not describing a fact — they are imposing a temporal constraint that favors their authority. The ability to resist imposed urgency — to say "this needs more time" — is [temporal autonomy](../../critical-theory/domains/anarchism/terms/temporal-autonomy.md). Legitimate urgency emerges from real constraints; coerced urgency is a tool of control.
+
+Urgency and [cadence](./cadence.md) interact. Periodic [cadences](./cadence.md) — sprints, weekly reviews, quarterly planning cycles — create artificial urgency through deadline effects. This is healthy when it prevents drift and forces periodic closure; pathological when it forces premature decisions before sufficient information exists. A weekly review deadline concentrates attention; a sprint deadline that forbids mid-sprint planning changes forces decisions before scope is clear. The question is whether the artificial urgency serves the work or serves the system's need for predictability.
+
+Urgency is often computed as the inverse of days-to-deadline. The dispatch stage uses it to break priority ties — among equally important tasks, the one with the nearest deadline goes first. But urgency should never override the importance distinction: a medium-urgency, high-importance task should not be dispatched before a high-urgency, low-importance task unless the organization has explicitly decided to optimize for deadline-adherence over value-delivery.
+
+See also: [deadline](./deadline.md), [cost of delay](../texts/planning-and-scheduling-survey.md), [speed](../../critical-theory/domains/anarchism/terms/speed.md), [temporal autonomy](../../critical-theory/domains/anarchism/terms/temporal-autonomy.md), [cadence](./cadence.md).

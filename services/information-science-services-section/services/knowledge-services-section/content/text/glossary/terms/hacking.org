@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       1fe90527-1b1b-45bf-a1b3-31610e671a9b
+:END:
+#+title: hacking
+#+date: [2025-09-19 Fri 21:00]
+

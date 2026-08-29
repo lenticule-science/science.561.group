@@ -1,0 +1,73 @@
+#+title: 2020-12-28
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-28 Mon 14:20]
+#+roam_tags: daily-record
+
+#+name: definition
+This is some of what I (emsenn) experienced and wrote on [2020-12-28 Mon].
+
+#+toc: headlines 2
+
+* Journal                                                          :noexport:
+** [2020-12-28 Mon 14:20]
+
+   Good afternoon! [[file:../esther_davis.org][Esther]] has the day off today, so I've mostly been tidying around the [[file:../house.org][house]] and off my [[file:../computer.org][computer]]. But now I'd like to come back and do some more work cultivating my [[file:../digital_garden.org][digital garden]], for a little bit. One thing I want to do is figure out a way/place to organize the various [[file:../projects.org][projects]] I'm working on.
+
+   The reasonable thing is to turn each [[file:../record.org][record]] for the thing into a... well I don't want to use the word project, since that's used by [[file:../org_publish.org][Org-publish]]... But, adding tasks to certain entries.
+
+   So, what are my current projects?
+
+   - [[file:../groundhog_emacs.org][Groundhog Emacs]], my record-keeping and writing tool.
+   - [[file:../cottenboro_gaz.org][Cottenboro GAZ]], the mutualist space near my home.
+   - [[file:../makha_sa.org][Makȟá Šá]], the garden I cultivate around my home.
+   - [[file:../phahiyapi.org][Pȟahíyapi]], a software for letting people communicate in a way that preserves understanding.
+   - [[file:../webgaz.org][WebGAZ]], a virtual mutualist space.
+   - [[file:../teraum.org][Teraum]], my fantasy world.
+
+   Probably more, but the WebGAZ one is giving me the most frustration, so maybe I'll work on that record first...
+   
+* Activity Log                                                     :noexport:
+* Postings
+** A descriptive look at my current tech stack
+   :PROPERTIES:
+   :CUSTOM_ID: descriptive-look-at-my-tech-stack
+   :END:
+
+   #+index: Information!Management!With computers!"A descriptive look at my current tech stack"
+   
+   Howdy folks! Welcome to [[file:../winter.org][winter]]! Now that it's gotten cold outside, I've been spending more time inside, working on my [[file:../computer.org][computer]]. At the start of the month, I changed up my [[file:../tech_stack.org][tech stack]] again. I'm back to [[file:../emacs.org][Emacs]] and [[file:../org_mode.org][Org-mode]]. It's been about a year since I used either software, and there's been one notable addition to the [[file:../org_ecosystem.org][ecosystem]] since I last looked: [[file:../org_roam.org][Org-roam]].
+
+   I've been using these [[file:../tool.org][tools]] to build, well, pick your phrasing:
+
+   - Precisely, it's an /[[file:../ontological_databse.org][ontological databse]]/.
+   - In common language, it's a collection of information describing my knowledge of and relationship to things. I call it a /[[file:../records_catalog.org][records catalog]]/ for short.
+   - Through a metaphor, it's a /[[file:../digital_garden.org][digital garden]]/, where knowledge is grown over [[file:../time.org][time]], input, and [[file:../labor.org][labor]].
+
+   Y'all might have heard the term "digital garden," if you keep up with [[file:../web_development_trend.org][Web development trend]]. If you haven't, [[file:../joel_hooks.org][Joel Hooks]] has this piece, [[https://joelhooks.com/digital-garden]["My blog is a digital garden, not a blog,"]] that I actually hadn't read until looking for something to link here to explain digital gardens. But it does a pretty solid idea of explaining it.
+
+   One assumption in Joel's piece is that a digital garden be on the [[file:../web.org][Web]], and I don't necessarily agree. I view my [[file:../emacsen.org][Emacsen]], my [[file:../text_editor.org][text editor]] I'm typing into, as the primary "plot" of my digital garden, and the email or Webpage y'all are reading as a "clone" that I "transplanted." (Or perhaps saplings of fruit from the primary plot?)
+
+   But other than that, the piece gives a good-enough definition for my own digital garden, until I've written my own. But while many other digital gardens come from a Website background, mine actually has its background elsewhere. I have a [[file:../fantasy_world.org][fantasy world]] I've created, [[file:../teraum.org][Teraum]], that I've used for a few purposes - from a [[file:../role_playing_live_play_podcast.org][role-playing live-play podcast]] to a [[file:../mud.org][MUD]] to the setting of quite a few [[file:../narrative.org][stories]]. In order to make handling the information of the world easier, I started to make a /sourcebook/, the [[file:../tabletop_role_playing_games.org][tabletop role-playing games]] term for a book that can serve as a source of information for a [[file:../role_playing_game_play_session.org][play session]].
+
+   Eventually that became too large, and that's what initially motivated me to take a look at Org-mode, a text-formatting syntax and companion application, that works inside the Emacs text editor, which I started customizing to make it easier to produce [[file:../role_playing_game_session_primer.org][session primers]] and other resources.
+
+   That's the origins of my approach to my digital garden, which you can view at https://emsenn.github.io for now. (I'm still moving content off my main Website, but soon this records catalog will be my main website.)
+
+   Instead of session notes, there are "[[file:../daily_record.org][daily record]]," which contain things like this posting, links to other things on the Web I found note-worthy (literally), and an increasing amount of other information.
+
+   But the main bulk of the catalog is an encyclopedia-esque directory of terms, covering things from abstract concepts like decolonization to places like the town I live in. (There's also a section of the catalog that is for records about Teraum.)
+
+   A lot of these records are currently very sparse: I'm only just starting to develop the system, while having many opinions about how it should work. I'm hoping to be more consistent, going forward from tonight, about recording my thinking about the catalog's development as posts. But here, I'd like to talk a little bit about the tools that go into making my digital garden. If you're not a computer nerd, you can stop reading here.
+
+   So, first, every record exists on my disk as an Org-mode format file. I use Emacs as my interface for reading and writing those files. My Emacs has [[file:../ivy.org][Ivy]], Org-mode and [[file:../org_roam.org][Org-roam]] installed. (And other things, but that's what's relevant.)
+   
+   Ivy is just there for assisting with the auto-completion when searching for records.
+
+   Org-mode is what handles interacting with an individual record, automatically formatting the addition of notes into entries, changing the state of [[file:../tasks.org][tasks]], and other stuff. It also handles publishing (select sections) of records into [[file:../html.org][HTML]], which get uploaded as my Website.
+
+   Org-roam is what handles the interaction between records, automating a lot of cross-referencing stuff.
+
+   I'm organizing my Emacs configurations under the name "[[file:../groundhog_emacs.org][Groundhog Emacs]]," in reference to the family of [[file:../groundhog.org][Groundhog]] projects I'm involved in.
+
+   Like I said, it's all very new, but I wanted to write a brief explanation, to point folk to for the next little bit until I have more in my digital garden for y'all to learn about!

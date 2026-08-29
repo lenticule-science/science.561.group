@@ -1,0 +1,10 @@
+#+TITLE: Trustee Corner Property Manager Repository Readme
+#+FILETAGS: trusteeCorner
+* Directory Overview
+** [[file:./README.org][README.org]]
+** dev/
+*** [[file:./dev/log.org][log.org]]
+** src/
+*** [[file:./src/routine.org][routine.org]]
+*** [[file:./src/tasks.org][tasks.org]]
+*** [[file:./src/log.org][log.org]]

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       eb64be31-d7ee-4278-81bf-6deb4af421e5
+:public:   true
+:instantiates: [[id:6882cc6d-049d-4c68-866a-67bc57fce725][Homo sapiens]]
+:END:
+#+title: James Ladyman
+#+date: [2025-09-17 Wed 10:00]
+#+index: James Ladyman

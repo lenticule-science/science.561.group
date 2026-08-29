@@ -1,0 +1,59 @@
+id: triage-inbox
+description: "Process all unread Messages in a department's INBOX. FixNeeded → WorkItem in PLANS. GapFound/Discovery → Idea in IDEAS. Other → declined. Deterministic, no LLM."
+skill-closure-kind: process
+
+inputs:
+  - name: department
+    type: str
+
+outputs:
+  - name: promoted
+    from: "{{promote-messages.result}}"
+
+steps:
+  - id: load-unread
+    type: query
+    kind: Message
+    department: "{{inputs.department}}"
+    where:
+      status: unread
+
+  - id: promote-messages
+    type: for-each
+    over: "{{load-unread.result}}"
+    do:
+      - id: write-work-item
+        type: write
+        condition: "{{item.msg_type == 'FixNeeded'}}"
+        kind: WorkItem
+        department: "{{inputs.department}}"
+        flush: false
+        content:
+          identifier: "{{item.subject | slugify | truncate:60}}"
+          added: "{{today}}"
+          status: open
+          action: "{{item.subject}}"
+          why: "{{item.body}}"
+          why_blocked: ""
+
+      - id: write-idea
+        type: write
+        condition: "{{item.msg_type == 'GapFound' or item.msg_type == 'Discovery'}}"
+        kind: Idea
+        department: "{{inputs.department}}"
+        flush: false
+        content:
+          text: "{{item.subject}}\n{{item.body}}"
+          done: false
+          output_file: ""
+
+      - id: ack-message
+        type: update
+        unit_id: "{{item.id}}"
+        flush: false
+        fields:
+          status: "{{item.msg_type == 'FixNeeded' and 'acknowledged' or (item.msg_type in ['GapFound', 'Discovery']) and 'deferred' or 'declined'}}"
+
+  - id: flush
+    type: script
+    cmd: "python3 -c \"from src.engine.serializer import flush_departments; flush_departments({'{{inputs.department}}'})\""

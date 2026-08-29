@@ -1,0 +1,37 @@
+---
+title: Pop Evaluation Context
+role: operator
+inputs:
+- id: evaluation-state
+  alias: state
+outputs:
+- id: evaluation-state
+  alias: updated
+transformation:
+- let
+  - stack
+    - state
+      - context_stack
+  - updated_stack
+    - pop
+      - stack
+  - return
+    - state
+      - context_stack
+        - updated_stack
+proof_refs:
+- evaluation-state
+- evaluation-context
+- evaluation-context-stack
+introduces: operator
+part-of: relational-computer
+computer-system-type: primitive
+---
+
+
+Removes the top evaluation frame from the context stack inside an
+[Evaluation State](../structure/evaluation-state.md), returning the updated state.
+
+## Invariants
+- Removes exactly one frame from the head of the context stack.
+- Stack remains well-formed; no mutation beyond dropping the head.

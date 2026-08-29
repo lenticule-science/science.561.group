@@ -1,0 +1,25 @@
+#+title: banana
+#+begin_head
+#+ghe_schema: record-0.1.3
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-24 Thu 17:48]
+#+end_head
+
+#+name: definition
+A */banana/* is the fruit of a banana plant.
+
+#+toc: headlines 2
+* Introduction
+  This record is some of what I (emsenn) know about */bananas/*. You may use it without limits or promises.
+
+
+  
+* Record
+* Banana
+* Supplements
+** Record history
+   :LOGBOOK:
+   - Note taken on [2020-12-24 Thu 17:48] \\
+     Created to reduce confusion in requesting boilerplate feedback.
+   :END:
