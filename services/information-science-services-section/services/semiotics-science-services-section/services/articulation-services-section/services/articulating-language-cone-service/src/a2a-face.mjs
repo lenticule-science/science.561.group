@@ -1,4 +1,4 @@
-import { AgentCard } from "@a2a-js/sdk";
+import { createSignedAgentCard } from "@red-cup-engineering/a2a-contracted-agent-service/signed-agent-card";
 import { executeRelationalOperationMessage } from "@red-cup-engineering/a2a-sovereign-operation-boundary-service";
 import {
   ARTICULATE_OPERATION,
@@ -17,7 +17,7 @@ export async function projectSignedArticulatingAgentCard({ baseUrl, signing }) {
     throw new TypeError("Agent Card projection requires an injected ephemeral signing configuration");
   }
   const root = origin.href.replace(/\/$/u, "");
-  const unsigned = AgentCard.toJSON(AgentCard.fromJSON({
+  const unsigned = {
     name: "Obsmetrologia Articulating",
     description: "Canonical RMN articulation of one admitted token/claim utterance.",
     supportedInterfaces: [{ url: `${root}/a2a/jsonrpc`, protocolBinding: "JSONRPC", tenant: "", protocolVersion: "1.0" }],
@@ -39,13 +39,13 @@ export async function projectSignedArticulatingAgentCard({ baseUrl, signing }) {
       securityRequirements: [],
     }],
     signatures: [],
-  }));
-  const signed = await signing.agentCardSignatureGenerator(unsigned);
+  };
+  const { card, jwks } = await createSignedAgentCard(unsigned, signing);
   return Object.freeze({
     path: "/.well-known/agent-card.json",
-    card: AgentCard.toJSON(AgentCard.fromJSON(signed)),
+    card,
     jwksPath: "/.well-known/jwks.json",
-    jwks: signing.agentCardJwks,
+    jwks,
   });
 }
 

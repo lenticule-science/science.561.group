@@ -71,4 +71,4 @@ It also predicts that the pattern should reproduce in a session that has been to
 ## Related
 
 - The estate's standing instructions on refusal-by-caveat and on enforcement belonging in tooling rather than prose exhortation, in `CLAUDE.md`.
-- The same-day treasury finding that an unreachable chain was reported as an empty wallet, in the [asset register's recording standard](../../../../../../../../../../../../../../../../../561-group-services-section/services/561-group-financial-services-section/content/assets/README.md) — a different failure with the same shape, where an absence of information was rendered as a confident negative.
+- The same-day treasury finding that an unreachable chain was reported as an empty wallet, in the [canonical ledger's preserved asset-register recording standard](../../../../../../../../../../../../../../../../../561-group-services-section/data/logs/ledgers/561-group-main-ledger.beancount) — a different failure with the same shape, where an absence of information was rendered as a confident negative.
