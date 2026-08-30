@@ -9,6 +9,8 @@ sources: https://semver.org/; npm-workspace-publication-service
 
 # Development release identity and promotion
 
+Related term: [Semantic version](../../../glossary/terms/semantic-version.md).
+
 The repository previously had two facts that did not compose: dependency law
 already admitted exact SemVer prereleases, while release-wave planning could
 create only stable patch versions and publishing relied on npm's default tag.
