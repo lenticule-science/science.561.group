@@ -1,6 +1,6 @@
 // SMOKE TEST — the descent runs through its own cell scripts.
 //
-// Every rung re-exports its morphism from the stable @561-group/math/bilattice (mark=articulate,
+// Every rung re-exports its morphism from the stable @lenticule-science/metrologic/bilattice (mark=articulate,
 // realize=saturate, forget=transfer, condense=predicate, cohere, collapse=posit, balance=commutate,
 // spread=possibilizeKnowledge, constrain=necessitateKnowledge, thermalize=settle). This drives the
 // real pipeline through those re-exports, proving they resolve AND compose — not just import.

@@ -1,9 +1,9 @@
-// Exchangeability, grounded in the stable @561-group/math morphisms. Condensing emits the cell-set
+// Exchangeability, grounded in the stable @lenticule-science/metrologic morphisms. Condensing emits the cell-set
 // Φ = E × Π × E; collapsing (posit) builds the cells by ranging over the entity-set as a SET. So the
 // quantum cell-set is invariant under permuting the entities — they enter unordered. That is de
 // Finetti's exchangeability, read off the real morphism rather than asserted.
 
-import { posit } from "@561-group/math/bilattice/descent";
+import { posit } from "@lenticule-science/metrologic/bilattice/descent";
 
 const S = JSON.stringify;
 

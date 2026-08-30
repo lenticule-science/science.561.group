@@ -6,7 +6,7 @@
 //
 // Run:  node proof.mjs       (exits 0 iff every claim holds)
 
-import { saturate, transfer } from "@561-group/math/bilattice/void";
+import { saturate, transfer } from "@lenticule-science/metrologic/bilattice/void";
 import { composableCone, isNonInjective, bitsErased, erasedSequences } from "./erasure.mjs";
 import { shannonBits, erasureEntropyBits } from "./entropy.mjs";
 import { landauerJoules, landauerEV } from "./landauer.mjs";
