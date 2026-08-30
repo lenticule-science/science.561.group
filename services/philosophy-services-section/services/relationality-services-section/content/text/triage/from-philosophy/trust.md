@@ -106,7 +106,7 @@ The Lewis framework is insufficient for the strongest cases of trust (fiduciary 
 
 ## Fiduciary trust and the legal superstructure
 
-When trust is institutionally recognized and formalized, it generates [Fiduciary](../../../../../../../social-science-services-section/services/market-services-section/services/finance-services-section/content/text/glossary/terms/fiduciary.md) obligations. The fiduciary relation is the strongest legal form of the trust triple:
+When trust is institutionally recognized and formalized, it generates [Fiduciary](../../../../../../../social-science-services-section/services/economics-and-business-science-services-section/services/finance-science-services-section/content/text/glossary/terms/fiduciary.md) obligations. The fiduciary relation is the strongest legal form of the trust triple:
 
 - $T$ (the principal or beneficiary) entrusts $E$ (the fiduciary) with a critical resource
 - The trust domain $D$ = the scope of the fiduciary's discretion over the resource

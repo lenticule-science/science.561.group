@@ -31,9 +31,9 @@ bell hooks (1952–2021) was an American scholar, cultural critic, and educator.
 ## Related
 
 - [Paulo Freire](./paulo-freire.md) — her primary intellectual predecessor in pedagogy
-- [engaged pedagogy](../../../../../../../../../../social-science-services-section/services/education-services-section/services/pedagogy-services-section/content/text/glossary/terms/engaged-pedagogy.md) — her distinct framework for teaching as a practice of freedom
-- [dialogic education](../../../../../../../../../../social-science-services-section/services/education-services-section/services/pedagogy-services-section/content/text/glossary/terms/dialogic-education.md) — the Freirean tradition she extended and transformed
+- [engaged pedagogy](../../../../../../../../../../social-science-services-section/services/education-science-services-section/services/pedagogy-services-section/content/text/glossary/terms/engaged-pedagogy.md) — her distinct framework for teaching as a practice of freedom
+- [dialogic education](../../../../../../../../../../social-science-services-section/services/education-science-services-section/services/pedagogy-services-section/content/text/glossary/terms/dialogic-education.md) — the Freirean tradition she extended and transformed
 - [Black radical pedagogies](../../education/disciplines/pedagogy/schools/black-radical-pedagogies/index.md) — the tradition her work belongs to alongside critical pedagogy
-- [dialogic education](../../../../../../../../../../social-science-services-section/services/education-services-section/services/pedagogy-services-section/content/text/glossary/terms/dialogic-education.md) — the tradition she extended
+- [dialogic education](../../../../../../../../../../social-science-services-section/services/education-science-services-section/services/pedagogy-services-section/content/text/glossary/terms/dialogic-education.md) — the tradition she extended
 - [Feminist queer theory](../../sociology/schools/queer/schools/feminist/index.md) — hooks's insistence that feminism address race, class, and sexuality together anticipates this current
 - [Queer-of-color critique](../../sociology/schools/queer/schools/queer-of-color/index.md) — hooks's "margin to center" framework parallels this critique's insistence on centering race

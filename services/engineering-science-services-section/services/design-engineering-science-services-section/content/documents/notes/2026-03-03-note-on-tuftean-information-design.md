@@ -26,7 +26,7 @@ references:
     title: The Visual Display of Quantitative Information
 ---
 
-Edward Tufte's information design, as drawn on by [visual engineering practices](../../../services/visual-engineering-services-section/README.md), functions as an ethics-and-clarity pillar rather than an aesthetic one. It prevents the composite from drifting into "poster style" that sacrifices integrity for affect. The objective is evidence-first [legibility](../../../../../../science-services-section/services/social-science-services-section/services/critical-theory-services-section/services/abolition-services-section/services/state-repression-services-section/content/glossary/terms/legibility.md) and micro/macro coherence.
+Edward Tufte's information design, as drawn on by [visual engineering practices](../../../services/visual-engineering-services-section/README.md), functions as an ethics-and-clarity pillar rather than an aesthetic one. It prevents the composite from drifting into "poster style" that sacrifices integrity for affect. The objective is evidence-first [legibility](../../../../../../philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/glossary/terms/legibility.md) and micro/macro coherence.
 
 ## Methods and approach
 

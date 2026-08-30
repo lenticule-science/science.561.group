@@ -78,7 +78,7 @@ An *insincere* assertion satisfies the surface form without the conditions — i
 |---|---|---|
 | **Assertion** | $p \in H_t$ | $S$ is committed to $p$'s truth; $A$ is invited to update |
 | **[Commitment](./commitment.md)** | $\varphi \in H^*_t$ | $S$ is obligated to perform $\varphi$; already execution-settled |
-| **Declaration** ([StatusFunctionDeclaration](../../../../../../../social-science-services-section/services/work-services-section/services/governance-services-section/content/text/glossary/terms/status-function-declaration.md)) | institutional fact | $p$ is constituted as true by the act of saying so |
+| **Declaration** ([StatusFunctionDeclaration](../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/status-function-declaration.md)) | institutional fact | $p$ is constituted as true by the act of saying so |
 | **[Report](../../../../../../../information-science-services-section/content/text/glossary/terms/report.md)** | findings differential | author is accountable for accuracy; recipient is the designated uptake |
 
 The key distinction: an assertion claims truth; a declaration *creates* truth (within an institutional context).
@@ -89,7 +89,7 @@ The key distinction: an assertion claims truth; a declaration *creates* truth (w
 
 An assertion that enters the [Record](../../../../../../../information-science-services-section/content/text/glossary/terms/record.md) acquires a stronger status: it becomes a committed fact, anchored to a history marker.
 The record assertion is evidence — it can be cited, relied on, and holds even if the speaker retracts.
-The [Clerk](../../../../../../../social-science-services-section/services/business-services-section/content/text/glossary/terms/clerk.md)'s act of recording is what transitions an assertion from a speaker-committed proposition to an institution-committed one.
+The [Clerk](../../../../../../../social-science-services-section/services/economics-and-business-science-services-section/services/business-science-services-section/content/text/glossary/terms/clerk.md)'s act of recording is what transitions an assertion from a speaker-committed proposition to an institution-committed one.
 
 ## Speech act structure
 

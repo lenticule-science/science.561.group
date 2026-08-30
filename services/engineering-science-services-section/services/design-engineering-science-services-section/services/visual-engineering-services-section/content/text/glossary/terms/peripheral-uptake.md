@@ -26,4 +26,4 @@ The concept connects to research on perceptual organization — grouping and fig
 
 - [Glance-Direction](./glance-direction.md) — the fast orientation that peripheral uptake enables
 - [Felt Weight](./felt-weight.md) — the perceptual mass detectable in the peripheral field
-- [Non-Linear Reading](./non-linear-reading.md) — the navigation supported by field-level [legibility](../../../../../../../../../science-services-section/services/social-science-services-section/services/critical-theory-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md)
+- [Non-Linear Reading](./non-linear-reading.md) — the navigation supported by field-level [legibility](../../../../../../../../../philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md)

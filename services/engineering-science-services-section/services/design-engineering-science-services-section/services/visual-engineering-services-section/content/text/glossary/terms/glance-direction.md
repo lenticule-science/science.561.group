@@ -25,5 +25,5 @@ The concept can be related to empirical findings on attentional deployment: atte
 ## Related terms
 
 - [Felt Weight](./felt-weight.md) — perceptual mass that signals structural priority
-- [Peripheral Uptake](./peripheral-uptake.md) — field-based [legibility](../../../../../../../../../science-services-section/services/social-science-services-section/services/critical-theory-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md) that supports glance-direction from peripheral vision
+- [Peripheral Uptake](./peripheral-uptake.md) — field-based [legibility](../../../../../../../../../philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md) that supports glance-direction from peripheral vision
 - [Non-Linear Reading](./non-linear-reading.md) — the routing that follows initial orientation

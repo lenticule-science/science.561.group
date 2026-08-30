@@ -65,13 +65,13 @@ But it also echoes Indigenous teachings that long treated water as kin: an entit
 
 Lakota, Anishinaabe, Māori, and other philosophies describe water as a being with memory: an understanding Western science is beginning to verify through data.
 
-The reflexive model is where physics and [kinship](../../../../../../../../../../social-science-services-section/services/sociology-services-section/content/text/glossary/terms/kinship.md) meet.
+The reflexive model is where physics and [kinship](../../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/kinship.md) meet.
 
 ## What Reflexivity Asks of Us
 
 Seeing the water system as reflexive doesn’t just change how we model it—it changes how we live with it.
 
-It invites a civic ethic of [reciprocity](../../../../../../../../../../social-science-services-section/services/critical-theory-services-section/services/marxism-services-section/services/political-economy-services-section/content/text/glossary/terms/reciprocity.md):
+It invites a civic ethic of [reciprocity](../../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/marxism-services-section/services/political-economy-services-section/content/text/glossary/terms/reciprocity.md):
 
 - Notice the feedback. After a storm, where does the water go? What does it carry?
 - Slow the flow. Every raindrop that lingers nourishes more life.

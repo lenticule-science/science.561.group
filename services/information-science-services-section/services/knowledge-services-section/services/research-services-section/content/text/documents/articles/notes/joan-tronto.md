@@ -37,5 +37,5 @@ Tronto's analysis of how care is split across social positions — those with po
 - [Tronto school](../../philosophy/concepts/care-ethics/schools/tronto/index.md) — her school within care ethics
 - [Carol Gilligan](./carol-gilligan.md) — whose work Tronto expanded
 - [Virginia Held](./virginia-held.md) — fellow political care ethicist
-- [Care work](../../../../../../../../../../social-science-services-section/services/critical-theory-services-section/services/marxism-services-section/services/autonomism-services-section/content/text/glossary/terms/care-work.md) — the labor Tronto theorizes
+- [Care work](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/marxism-services-section/services/autonomism-services-section/content/text/glossary/terms/care-work.md) — the labor Tronto theorizes
 - [Elizabeth Povinelli](./elizabeth-povinelli.md) — whose analysis of abandonment complements Tronto's

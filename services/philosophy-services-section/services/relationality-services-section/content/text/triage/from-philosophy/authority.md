@@ -54,7 +54,7 @@ It must be acknowledged by the relevant parties — subjects, institutions, or c
 Self-declared authority without recognition is not authority but pretension.
 Contested authority (where $R$ is disputed) is real authority whose legitimacy is in question, not the absence of authority.
 
-4. **Authority generates obligations**: when $Q$ issues a directive within $S$ and $R$ holds, subjects acquire a duty to comply ([Duty](../../../../../../../social-science-services-section/services/work-services-section/services/governance-services-section/content/text/glossary/terms/duty.md)).
+4. **Authority generates obligations**: when $Q$ issues a directive within $S$ and $R$ holds, subjects acquire a duty to comply ([Duty](../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/duty.md)).
 This duty is Hohfeldian: it is a three-place relation $\mathbf{D}(\text{subject}, \varphi_{\text{directive}}, Q)$.
 The correlative is $Q$'s claim-right that subjects comply.
 Authority is the second-quartet position (power) that constitutes these first-quartet relations when exercised.
@@ -92,7 +92,7 @@ Features: explicit scope ($S$ defined by statute or charter); formal procedures 
 The bureaucratic organization is the purest form.
 
 Instances: constitutional law (legislative authority derives from formal democratic process); corporate governance (the board's authority derives from the articles of incorporation); military command (the officer's authority derives from commission and chain of command).
-The [Principal](../../../../../../../social-science-services-section/services/work-services-section/services/governance-services-section/content/text/glossary/terms/principal.md) in the relational system holds rational-legal authority: its source is formal recognition within the institutional framework, its scope is chartered, and its legitimacy derives from the charter.
+The [Principal](../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/principal.md) in the relational system holds rational-legal authority: its source is formal recognition within the institutional framework, its scope is chartered, and its legitimacy derives from the charter.
 
 ### Traditional authority
 

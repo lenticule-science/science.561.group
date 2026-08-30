@@ -28,4 +28,4 @@ In the [Write-for-a-Month: Zombie Novel](../../../../../../../../../relationalit
 
 - [individuation](./individuation.md) — the process by which metastable potential resolves into individuated form
 - [ontology](../../../../../ontology-services-section/content/text/glossary/terms/ontology.md) — metastability raises questions about what kind of being precedes the individual
-- [bare life](../../../../../../../../../../../social-science-services-section/services/critical-theory-services-section/services/biopolitics-services-section/services/agambenian-services-section/content/text/glossary/terms/bare-life.md) — biological existence reduced to a metastable state without political resolution
+- [bare life](../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/biopolitics-services-section/services/agambenian-services-section/content/text/glossary/terms/bare-life.md) — biological existence reduced to a metastable state without political resolution

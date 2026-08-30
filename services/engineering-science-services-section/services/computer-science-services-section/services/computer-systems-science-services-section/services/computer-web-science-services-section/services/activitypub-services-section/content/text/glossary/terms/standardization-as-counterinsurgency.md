@@ -15,9 +15,9 @@ aliases:
   - "SaC"
 ---
 
-Standardization as counterinsurgency (SaC) is a framework emsenn develops to describe how standards bodies interact with [insurgent infrastructures](./insurgent-infrastructure.md) — technical systems that originate as challenges to the dominant platform order. The framework draws on [James C. Scott](../../../../../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/james-c-scott.md)'s work on [legibility](../../../../../../../../../../../../../social-science-services-section/services/critical-theory-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md) and state-building, and on analyses of protocol as a form of soft power.
+Standardization as counterinsurgency (SaC) is a framework emsenn develops to describe how standards bodies interact with [insurgent infrastructures](./insurgent-infrastructure.md) — technical systems that originate as challenges to the dominant platform order. The framework draws on [James C. Scott](../../../../../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/james-c-scott.md)'s work on [legibility](../../../../../../../../../../../../../philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md) and state-building, and on analyses of protocol as a form of soft power.
 
-The central claim: when a standards body engages with an insurgent infrastructure, the institutional logic of standardization — consensus-seeking, scope management, stakeholder alignment — tends to transform the infrastructure in ways that increase its [legibility](../../../../../../../../../../../../../social-science-services-section/services/critical-theory-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md) to dominant institutions while eroding its generativity, autonomy support, and movement value. This isn't necessarily intentional. It's a structural effect of the incentives and constraints that shape standards processes.
+The central claim: when a standards body engages with an insurgent infrastructure, the institutional logic of standardization — consensus-seeking, scope management, stakeholder alignment — tends to transform the infrastructure in ways that increase its [legibility](../../../../../../../../../../../../../philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md) to dominant institutions while eroding its generativity, autonomy support, and movement value. This isn't necessarily intentional. It's a structural effect of the incentives and constraints that shape standards processes.
 
 ## The five-stage pipeline
 
@@ -25,7 +25,7 @@ SaC identifies five stages in how standards bodies process insurgent infrastruct
 
 1. **Emergence.** The infrastructure exists outside the standards body. Communities develop and deploy it in pursuit of their own aims.
 
-2. **Recognition.** The standards body acknowledges the infrastructure as relevant — visible in charters, working groups, and deliverable schedules. The infrastructure becomes a "named object" in institutional [discourse](../../../../../../../../../../../../../social-science-services-section/services/critical-theory-services-section/services/foucauldian-services-section/content/text/glossary/terms/discourse.md).
+2. **Recognition.** The standards body acknowledges the infrastructure as relevant — visible in charters, working groups, and deliverable schedules. The infrastructure becomes a "named object" in institutional [discourse](../../../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/foucauldian-services-section/content/text/glossary/terms/discourse.md).
 
 3. **Translation.** The political and social aims associated with the infrastructure are translated into "technical" problems. Concerns about governance, power asymmetry, and economic models are bracketed as "out of scope." What remains are message formats, endpoints, and error semantics.
 
@@ -33,7 +33,7 @@ SaC identifies five stages in how standards bodies process insurgent infrastruct
 
 5. **Deployment.** The standardized version is adopted. Reference implementations anchor interpretation. Corporate actors selectively implement parts that align with their strategies.
 
-At each stage, the infrastructure's attributes shift: [legibility](../../../../../../../../../../../../../social-science-services-section/services/critical-theory-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md) increases, generativity decreases, movement value declines. The infrastructure isn't outlawed — it's *normalized*.
+At each stage, the infrastructure's attributes shift: [legibility](../../../../../../../../../../../../../philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md) increases, generativity decreases, movement value declines. The infrastructure isn't outlawed — it's *normalized*.
 
 ## The analogy to counterinsurgency
 
@@ -53,7 +53,7 @@ Any infrastructure can be characterized along five dimensions:
 | **Movement value** | The functional, symbolic, and affective value for the communities that created it |
 | **Corporate extractable value** | How much large firms can derive from integrating it |
 
-An insurgent infrastructure scores high on generativity, autonomy support, and movement value, while its [legibility](../../../../../../../../../../../../../social-science-services-section/services/critical-theory-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md) and corporate extractable value are low. Standardization shifts these scores: [legibility](../../../../../../../../../../../../../social-science-services-section/services/critical-theory-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md) up, generativity and movement value down.
+An insurgent infrastructure scores high on generativity, autonomy support, and movement value, while its [legibility](../../../../../../../../../../../../../philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md) and corporate extractable value are low. Standardization shifts these scores: [legibility](../../../../../../../../../../../../../philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md) up, generativity and movement value down.
 
 ## Case study
 

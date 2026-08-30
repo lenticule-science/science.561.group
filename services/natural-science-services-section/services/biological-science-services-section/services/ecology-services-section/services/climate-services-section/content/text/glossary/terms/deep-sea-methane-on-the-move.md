@@ -24,7 +24,7 @@ Here's what we've learned:
 2. Climate weirding is setting off a chain reaction that could liberate vast amounts of this potent gas.
 3. The risk extends far beyond previous estimates! Deep-sea reserves are migrating and venting into our oceans.
 
-This revelation isn't just alarming—it's a call to action for degrowth and [decolonization](../../../../../../../../../social-science-services-section/services/critical-theory-services-section/services/povinellian-services-section/services/settler-colonialism-services-section/content/text/glossary/terms/decolonization.md). We must dismantle systems of exploitation and rethink our relationship with Earth’s resources.
+This revelation isn't just alarming—it's a call to action for degrowth and [decolonization](../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/povinellian-services-section/services/settler-colonialism-services-section/content/text/glossary/terms/decolonization.md). We must dismantle systems of exploitation and rethink our relationship with Earth’s resources.
 
 What actions can we take?
 

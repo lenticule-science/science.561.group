@@ -25,9 +25,9 @@ where:
 
 **Restriction.** For $s \leq t$, the restriction map $H(s \leq t) : H_t \to H_s$ sends the resource at $t$ to its restriction at $s$. A resource at $t$ is visible at all earlier histories via restriction — content accumulates monotonically.
 
-**Contrast with Observation.** A [Resource](./resource.md) is an element of $H_t$ that makes claims. An [Observation](observation.md) is a local section of an [Accord](../../../../../social-science-services-section/services/work-services-section/services/governance-services-section/content/text/glossary/terms/accord.md) $F(t)$ — raw evidence. Resources are built from Observations: when nucleus evaluation settles $\mathrm{claims}$, the resource's content becomes a stable part of $H^*_t$.
+**Contrast with Observation.** A [Resource](./resource.md) is an element of $H_t$ that makes claims. An [Observation](observation.md) is a local section of an [Accord](../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/accord.md) $F(t)$ — raw evidence. Resources are built from Observations: when nucleus evaluation settles $\mathrm{claims}$, the resource's content becomes a stable part of $H^*_t$.
 
-**Contrast with Skill.** A [Skill](../../../../../social-science-services-section/services/business-services-section/content/text/glossary/terms/skills.md) is a morphism $f : A \to B$ — it transforms. A Resource is a named element — it is read.
+**Contrast with Skill.** A [Skill](../../../../../social-science-services-section/services/economics-and-business-science-services-section/services/business-science-services-section/content/text/glossary/terms/skills.md) is a morphism $f : A \to B$ — it transforms. A Resource is a named element — it is read.
 
 ## What this is
 
@@ -43,7 +43,7 @@ The linear logic sense of "resource" (consumed exactly once) does not apply: Res
 
 In this system, a Resource is an [Entity](../../../../../philosophy-services-section/services/relationality-services-section/content/text/triage/from-philosophy/entity.md) whose content makes claims about something — defining a type or concept, stating what is true of it, or characterizing its structure.
 A Resource is read to understand a domain.
-It does not execute, sequence, or implement; those roles belong to [Skills](../../../../../social-science-services-section/services/business-services-section/content/text/glossary/terms/skills.md), [Runbooks](../../../../../social-science-services-section/services/business-services-section/content/text/glossary/terms/runbook.md), and [Scripts](../../../../../engineering-science-services-section/services/technology-science-services-section/content/text/glossary/terms/script.md).
+It does not execute, sequence, or implement; those roles belong to [Skills](../../../../../social-science-services-section/services/economics-and-business-science-services-section/services/business-science-services-section/content/text/glossary/terms/skills.md), [Runbooks](../../../../../social-science-services-section/services/economics-and-business-science-services-section/services/business-science-services-section/content/text/glossary/terms/runbook.md), and [Scripts](../../../../../engineering-science-services-section/services/technology-science-services-section/content/text/glossary/terms/script.md).
 A Resource MUST carry content that makes claims — a Resource with no claims content is not a Resource.
 It CANNOT execute operations or produce side effects.
 

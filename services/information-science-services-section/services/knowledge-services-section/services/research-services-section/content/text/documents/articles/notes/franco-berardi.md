@@ -32,7 +32,7 @@ Franco "Bifo" Berardi (born 1949) is an Italian autonomist philosopher, media th
 ## Related
 
 - [Operaismo](../../sociology/terms/operaismo.md) — the autonomist tradition Berardi emerged from
-- [Refusal of work](../../../../../../../../../../social-science-services-section/services/critical-theory-services-section/services/marxism-services-section/services/autonomism-services-section/content/text/glossary/terms/refusal-of-work.md) — the autonomist concept Berardi extends into cognitive [labor](../../sociology/terms/labor.md)
+- [Refusal of work](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/marxism-services-section/services/autonomism-services-section/content/text/glossary/terms/refusal-of-work.md) — the autonomist concept Berardi extends into cognitive [labor](../../sociology/terms/labor.md)
 - [Anti-work](../../../glossary/terms/anti-work.md) — the broader framework
 - [Mario Tronti](./mario-tronti.md) — earlier autonomist theorist
 - [Silvia Federici](./silvia-federici.md) — fellow autonomist, feminist trajectory

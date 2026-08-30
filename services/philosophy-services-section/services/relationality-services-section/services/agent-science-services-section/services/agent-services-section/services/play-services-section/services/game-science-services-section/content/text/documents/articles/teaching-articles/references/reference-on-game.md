@@ -19,7 +19,7 @@ Learning goal: distinguish games from other structured activities and identify t
 
 Two children draw a line in the dirt and take turns tossing stones at it. Whoever lands closest wins. There is a rule (take turns, throw from behind a line), an objective (land closest), uncertainty (throwing is imprecise), and voluntariness (they chose to play). This is a game.
 
-Now consider an assembly line. There are rules (follow the procedure), an objective (produce the product), and uncertainty (machines may malfunction). But voluntariness is absent in the relevant sense — the worker doesn't choose to participate as a form of [play](../../../../glossary/terms/play.md); they participate because the alternative is losing their income. This is [labor](../../../../../../../../../../../social-science-services-section/services/sociology-services-section/content/text/glossary/terms/labor.md), not a game.
+Now consider an assembly line. There are rules (follow the procedure), an objective (produce the product), and uncertainty (machines may malfunction). But voluntariness is absent in the relevant sense — the worker doesn't choose to participate as a form of [play](../../../../glossary/terms/play.md); they participate because the alternative is losing their income. This is [labor](../../../../../../../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/labor.md), not a game.
 
 The boundary isn't always clean, and this lesson doesn't try to draw a sharp line. Instead, it identifies four features that recur across activities widely recognized as games, from children's throwing games to professional chess to [Brave Old World](./reference-on-brave-old-world.md).
 

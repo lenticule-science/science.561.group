@@ -69,7 +69,7 @@ These are not the same concept but they are not competing theories — they are 
 | Individual (occupant, incumbent) | $I$ | The individual persists through role changes |
 | Person (both) | $(I, N, R, \Phi)$ | The identified individual holding a recognized normative position |
 
-An office without a current holder is the $(N, R, \Phi)$ structure with $I$ vacant. An individual without any normative recognition has $I$ but lacks operative $(N, R, \Phi)$. A person is the conjunction of both in a recognized, identity-tracked node. This is exactly what [Incumbent](../../../../../../../social-science-services-section/services/business-services-section/content/text/glossary/terms/incumbent.md) captures: the two-body doctrine maps onto the mask/individual split — the body politic is $(N, R, \Phi)$ and the body natural is $I$.
+An office without a current holder is the $(N, R, \Phi)$ structure with $I$ vacant. An individual without any normative recognition has $I$ but lacks operative $(N, R, \Phi)$. A person is the conjunction of both in a recognized, identity-tracked node. This is exactly what [Incumbent](../../../../../../../social-science-services-section/services/economics-and-business-science-services-section/services/business-science-services-section/content/text/glossary/terms/incumbent.md) captures: the two-body doctrine maps onto the mask/individual split — the body politic is $(N, R, \Phi)$ and the body natural is $I$.
 
 ## Roman origins: *persona*
 

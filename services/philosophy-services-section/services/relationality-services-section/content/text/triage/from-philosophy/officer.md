@@ -32,7 +32,7 @@ An **Officer** is a triple $(O,\, a,\, \iota)$:
 $$\mathrm{Off} = (O,\; a \in H_t,\; \iota)$$
 
 where:
-- $O = (H_t, \sigma_t, \Delta_t)$ is an [Office](../../../../../../../social-science-services-section/services/business-services-section/content/text/glossary/terms/office.md) — a pair of commuting nuclei on fiber $H_t$
+- $O = (H_t, \sigma_t, \Delta_t)$ is an [Office](../../../../../../../social-science-services-section/services/economics-and-business-science-services-section/services/business-science-services-section/content/text/glossary/terms/office.md) — a pair of commuting nuclei on fiber $H_t$
 - $a \in H_t$ is the **occupant** — the element currently submitted to $O$'s obligations
 - $\iota$ is the **installation** — the constitutive act that binds $a$ to $O$ (not a mathematical term; a normative event)
 
@@ -88,13 +88,13 @@ An Office is a normative profile: it specifies not just capability but obligatio
 
 Officer is one concept in a gradient of agent-position structures. See also:
 
-- [Role](../../../../../../../social-science-services-section/services/work-services-section/services/governance-services-section/content/text/glossary/terms/role.md) — capability specification only; filling a role is providing a capability witness, not deontic binding
-- [Office](../../../../../../../social-science-services-section/services/business-services-section/content/text/glossary/terms/office.md) — the normative position itself: the Hohfeldian profile $D_O$ that persists independent of holders
-- [Fiduciary](../../../../../../../social-science-services-section/services/market-services-section/services/finance-services-section/content/text/glossary/terms/fiduciary.md) — strongest form of acting-for-another: duty of loyalty, no undisclosed benefit, discretion oriented solely toward the principal's account
-- [Steward](../../../../../../../social-science-services-section/services/business-services-section/content/text/glossary/terms/steward.md) — *oikonomos*: delegated authority over another's domain, bounded by the account-rendering obligation
-- [Incumbent](../../../../../../../social-science-services-section/services/business-services-section/content/text/glossary/terms/incumbent.md) — the current holder in temporal possession of a pre-existing position; the natural person wearing the body politic
+- [Role](../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/role.md) — capability specification only; filling a role is providing a capability witness, not deontic binding
+- [Office](../../../../../../../social-science-services-section/services/economics-and-business-science-services-section/services/business-science-services-section/content/text/glossary/terms/office.md) — the normative position itself: the Hohfeldian profile $D_O$ that persists independent of holders
+- [Fiduciary](../../../../../../../social-science-services-section/services/economics-and-business-science-services-section/services/finance-science-services-section/content/text/glossary/terms/fiduciary.md) — strongest form of acting-for-another: duty of loyalty, no undisclosed benefit, discretion oriented solely toward the principal's account
+- [Steward](../../../../../../../social-science-services-section/services/economics-and-business-science-services-section/services/business-science-services-section/content/text/glossary/terms/steward.md) — *oikonomos*: delegated authority over another's domain, bounded by the account-rendering obligation
+- [Incumbent](../../../../../../../social-science-services-section/services/economics-and-business-science-services-section/services/business-science-services-section/content/text/glossary/terms/incumbent.md) — the current holder in temporal possession of a pre-existing position; the natural person wearing the body politic
 
 ## Open questions
 
 - Whether an office can be jointly held (two agents simultaneously bound to the same D_O), and what the formal structure of joint deontic binding is.
-- How the Hohfeldian profile D_O relates to nuclear structures in formal systems — see [office.md](../../../../../../../social-science-services-section/services/business-services-section/content/text/glossary/terms/office.md) for the nuclear connection between $(\sigma_t, \Delta_t)$ and the two-obligation structure of an office.
+- How the Hohfeldian profile D_O relates to nuclear structures in formal systems — see [office.md](../../../../../../../social-science-services-section/services/economics-and-business-science-services-section/services/business-science-services-section/content/text/glossary/terms/office.md) for the nuclear connection between $(\sigma_t, \Delta_t)$ and the two-obligation structure of an office.

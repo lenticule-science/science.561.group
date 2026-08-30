@@ -31,5 +31,5 @@ Wendy Hui Kyong Chun is a media theorist and scholar whose work examines the pol
 
 - [Cybernetics](../../information/terms/cybernetics.md) — the feedback logic Chun's work critiques
 - [Second-order cybernetics](../../../../../../../../cybernetics-services-section/content/text/glossary/terms/second-order-cybernetics.md) — the reflexive turn her media theory parallels
-- [Legibility](../../../../../../../../../../social-science-services-section/services/critical-theory-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md) — state simplification as a parallel to algorithmic sorting
+- [Legibility](../../../../../../../../../../philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md) — state simplification as a parallel to algorithmic sorting
 - [Linguistic extraction](../../../../../../../../communication-science-services-section/services/linguistics-services-section/content/text/glossary/terms/linguistic-extraction.md) — extraction of forms from relational contexts

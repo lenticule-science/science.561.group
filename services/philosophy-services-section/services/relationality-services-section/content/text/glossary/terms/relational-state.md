@@ -64,7 +64,7 @@ It is the entire indexed family — all fibers simultaneously present, connected
 ## Sections and fibers
 
 A **section** of the RelationalState at history $t$ is $H_t$ — the fiber Heyting algebra at that history.
-$H_t$ is what the RelationalMachine holds "in focus" at history $t$ — formally, a [Focus](../../../../../../../social-science-services-section/services/business-services-section/content/text/glossary/terms/focus.md) $(H, t)$.
+$H_t$ is what the RelationalMachine holds "in focus" at history $t$ — formally, a [Focus](../../../../../../../social-science-services-section/services/economics-and-business-science-services-section/services/business-science-services-section/content/text/glossary/terms/focus.md) $(H, t)$.
 
 The **settled sub-state** at $t$ is $H^*_t = \mathrm{Fix}(\sigma_t) \cap \mathrm{Fix}(\Delta_t)$ — the image of the composite retraction $\pi_t = \sigma_t \circ \Delta_t$.
 $H^*_t$ is the portion of $H_t$ with stable truth values under both nuclei.
@@ -72,10 +72,10 @@ $H^*_t$ is the portion of $H_t$ with stable truth values under both nuclei.
 ## Mathematical grounding
 
 The fiber Heyting algebra structure is established in the math entitys for the relational machine.
-The presheaf axioms (identity and composition of restriction maps) are part of the accord condition — [accord](../../../../../../../social-science-services-section/services/work-services-section/services/governance-services-section/content/text/glossary/terms/accord.md).
+The presheaf axioms (identity and composition of restriction maps) are part of the accord condition — [accord](../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/accord.md).
 The two commuting nuclei $\sigma_t$ and $\Delta_t$ are established in [nucleus](../math/nucleus.md) and the fiber algebra math entitys.
 A RelationalState MUST be a presheaf over $M(\Sigma, I)^{op}$ valued in Heyting algebras with nuclei.
-Its restriction maps MUST be Heyting algebra homomorphisms — [accord](../../../../../../../social-science-services-section/services/work-services-section/services/governance-services-section/content/text/glossary/terms/accord.md).
+Its restriction maps MUST be Heyting algebra homomorphisms — [accord](../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/accord.md).
 Each fiber MUST carry two commuting nuclei $\sigma_t$, $\Delta_t$ — [nucleus](../math/nucleus.md).
 $\sigma_t \circ \Delta_t = \Delta_t \circ \sigma_t$ MUST hold — commutativity, proved in the math layer.
 
@@ -88,7 +88,7 @@ The flat-set projection of a RelationalState is just the carrier set of the curr
 ## Open questions
 
 - Whether the RelationalState must be a sheaf (not just a presheaf) — the sheaf condition corresponds to the accord/gluing condition and is what makes global sections well-defined.
-  Currently treated as a sheaf; the exact statement is in [accord](../../../../../../../social-science-services-section/services/work-services-section/services/governance-services-section/content/text/glossary/terms/accord.md).
+  Currently treated as a sheaf; the exact statement is in [accord](../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/accord.md).
 
 
 ---

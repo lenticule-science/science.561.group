@@ -16,7 +16,7 @@ defines:
   - "mathematical universe"
 ---
 
-A mathematical universe is a formal structure within which mathematical objects, relations, and operations are defined: the domain of [discourse](../../../../../../../../../social-science-services-section/services/critical-theory-services-section/services/foucauldian-services-section/content/text/glossary/terms/discourse.md) for a given mathematical system. It specifies what exists (which objects), how those objects relate, and what operations can be performed on them.
+A mathematical universe is a formal structure within which mathematical objects, relations, and operations are defined: the domain of [discourse](../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/foucauldian-services-section/content/text/glossary/terms/discourse.md) for a given mathematical system. It specifies what exists (which objects), how those objects relate, and what operations can be performed on them.
 
 The concept plays a role analogous to what [set theory](../../mathematics/concepts/set-theory/index.md) plays for standard mathematics — it provides the foundational context that gives meaning to all subsequent statements. A mathematical statement is not true or false in isolation but true or false within a given mathematical universe.
 

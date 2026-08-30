@@ -33,4 +33,4 @@ Hannah Arendt (1906–1975) was a German-American political theorist. A student 
 - [Antonio Gramsci](./antonio-gramsci.md) — fellow political theorist of how power operates beyond state force
 - [Walter Benjamin](./walter-benjamin.md) — fellow German-Jewish thinker of history and political crisis
 - [Lauren Berlant](./lauren-berlant.md) — extends political affect theory into the present
-- [Hegemony](../../../../../../../../../../social-science-services-section/services/critical-theory-services-section/services/marxism-services-section/services/gramscian-services-section/content/text/glossary/terms/hegemony.md) — the cultural domination her work on totalitarianism examines
+- [Hegemony](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/marxism-services-section/services/gramscian-services-section/content/text/glossary/terms/hegemony.md) — the cultural domination her work on totalitarianism examines

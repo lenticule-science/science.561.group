@@ -44,7 +44,7 @@ The confederacy is the flag state for ships it charters. In admiralty, the flag 
 
 When a confederacy charters a ship, it confers identity. The ship sails under the confederacy's flag. The confederacy's directives are the highest authority the ship recognizes. The ship's charter may not contradict the confederacy's directives — a charter that does is structurally invalid, not merely overridden. This is the same relationship as a bylaw to a constitution: the lower instrument operates within the higher one's bounds.
 
-The confederacy retains certain powers over every ship it charters: the power to relieve the captain, the power to amend or revoke the charter, and the power to decommission the ship. These powers are not delegated to the ship — they are retained by the [commissioning](../../../services/work-services-section/services/governance-services-section/content/glossary/terms/commissioning.md) authority. The captain commands the ship; the confederacy commands whether there is a ship.
+The confederacy retains certain powers over every ship it charters: the power to relieve the captain, the power to amend or revoke the charter, and the power to decommission the ship. These powers are not delegated to the ship — they are retained by the [commissioning](../../../services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/glossary/terms/commissioning.md) authority. The captain commands the ship; the confederacy commands whether there is a ship.
 
 ## Directive-charter hierarchy
 

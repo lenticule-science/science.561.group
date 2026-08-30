@@ -25,5 +25,5 @@ Daniel Wildcat is a Yuchi member of the Muscogee Nation and a professor at Haske
 ## Related
 
 - [Indigenous pedagogies](../../education/disciplines/pedagogy/schools/indigenous-pedagogies/index.md) — the tradition his work belongs to
-- [land-based education](../../../../../../../../../../social-science-services-section/services/education-services-section/services/pedagogy-services-section/content/text/glossary/terms/land-based-education.md) — the framework his work informs
+- [land-based education](../../../../../../../../../../social-science-services-section/services/education-science-services-section/services/pedagogy-services-section/content/text/glossary/terms/land-based-education.md) — the framework his work informs
 - [Vine Deloria Jr.](./vine-deloria-jr.md) — a collaborator

@@ -21,7 +21,7 @@ Félix Guattari (1930–1992) was a French psychoanalyst, philosopher, and polit
 
 ## Related theories
 
-- [Libidinal investment](../../../../../../../../../../social-science-services-section/services/critical-theory-services-section/services/affect-theory-services-section/content/text/glossary/terms/libidinal-investment.md)
+- [Libidinal investment](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/affect-theory-services-section/content/text/glossary/terms/libidinal-investment.md)
 
 ## Notable works
 

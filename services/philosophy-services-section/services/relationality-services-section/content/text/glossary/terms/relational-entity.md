@@ -75,9 +75,9 @@ A RelationalEntity grows by satisfying the next unsatisfied closure condition.
 Named stages:
 
 - With [id](../../../../../../../information-science-services-section/content/text/glossary/terms/id.md) and [description](../../../../../../../information-science-services-section/content/text/glossary/terms/description.md): satisfies condition 2 — canonical identity
-- With named operations as first-class objects in the graph: satisfies condition 4 — exponential closure — the entity is an [Outpost](../../../../../../../social-science-services-section/services/military-science-services-section/content/text/glossary/terms/outpost.md)
+- With named operations as first-class objects in the graph: satisfies condition 4 — exponential closure — the entity is an [Outpost](../../../../../../../social-science-services-section/services/political-science-services-section/services/military-science-services-section/content/text/glossary/terms/outpost.md)
 - With shapes governing its operations and structural procedures defined on it: satisfies conditions 5 and 6 — subobject classification and structural operations — the entity is a [Blueprint](../../../../../../../../../engineering-services-section/content/text/glossary/terms/blueprint.md)
-- With a declared covering structure (agent community and operational policies): equipped with a Grothendieck topology on its scope — the entity is a [Charter](../../../../../../../social-science-services-section/services/work-services-section/services/governance-services-section/content/text/glossary/terms/charter.md)
+- With a declared covering structure (agent community and operational policies): equipped with a Grothendieck topology on its scope — the entity is a [Charter](../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/charter.md)
 - Live, receiving and accumulating: satisfies condition 7 — sheaf gluing — the entity is a [Locale](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/locale.md)
 
 An entity that has completed all conditions is a **locale** — a scope-local, self-similar, fully-saturated instance of the relational system.

@@ -46,7 +46,7 @@ The **section interpretation**: a Situation is a section $s : D \to H$ of the fi
 
 ## What this is
 
-A Situation is the officer's current assessment of state — the totality of what they can observe and read at their position. It is the input to [Judgment](../../../../../../../social-science-services-section/services/work-services-section/services/governance-services-section/content/text/glossary/terms/judgment.md) (the $f$ component of the 4-tuple $(Z, I, f, \alpha)$) and the context against which [Intent](./intent.md) applies its reconstruction function.
+A Situation is the officer's current assessment of state — the totality of what they can observe and read at their position. It is the input to [Judgment](../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/judgment.md) (the $f$ component of the 4-tuple $(Z, I, f, \alpha)$) and the context against which [Intent](./intent.md) applies its reconstruction function.
 
 **Situation is not world-state.** $H_t$ is the full fiber — all propositions at $t$. A situation $(a, D)$ is the officer's *read* of a fragment $a \in H_t(D)$: a section over their accessible scope. Officers can have incorrect or incomplete situations — $a$ may not accurately represent $H_t(D)$.
 
@@ -90,7 +90,7 @@ The saturation nucleus gives Level 2: it inflates $a$ to the largest element con
 
 ## Situation and judgment
 
-The [Judgment](../../../../../../../social-science-services-section/services/work-services-section/services/governance-services-section/content/text/glossary/terms/judgment.md) 4-tuple $(Z, I, f, \alpha)$ uses the situation $f = (a, D)$ as the third component: the assessed facts against which the officer applies discretion within zone $Z$ toward intent $I$. The situation is the epistemic input; $Z$ and $I$ are the normative inputs; $\alpha$ is the output.
+The [Judgment](../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/judgment.md) 4-tuple $(Z, I, f, \alpha)$ uses the situation $f = (a, D)$ as the third component: the assessed facts against which the officer applies discretion within zone $Z$ toward intent $I$. The situation is the epistemic input; $Z$ and $I$ are the normative inputs; $\alpha$ is the output.
 
 A poor situation — one where $a$ is far from $H^*_t$ — is not a failure of authority or intent. It is a failure of the epistemic input. The officer may have full authority and clear intent but act wrongly because their situation is inaccurate. Situation quality is the epistemic pre-condition for judgment quality.
 

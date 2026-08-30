@@ -8,7 +8,7 @@ aliases:
 tags: []
 ---
 
-Fritz Heider (1896–1988) was an Austrian-born American psychologist who founded [attribution theory](../../../../../../../../../../social-science-services-section/services/sociology-services-section/content/text/glossary/terms/attribution-theory.md) — the study of how people explain the causes of behavior and events. His work laid the groundwork for social cognition research and remains central to social psychology.
+Fritz Heider (1896–1988) was an Austrian-born American psychologist who founded [attribution theory](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/attribution-theory.md) — the study of how people explain the causes of behavior and events. His work laid the groundwork for social cognition research and remains central to social psychology.
 
 ## Core ideas
 
@@ -18,7 +18,7 @@ Fritz Heider (1896–1988) was an Austrian-born American psychologist who founde
 
 ## Related theories
 
-- [Attribution theory](../../../../../../../../../../social-science-services-section/services/sociology-services-section/content/text/glossary/terms/attribution-theory.md)
+- [Attribution theory](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/attribution-theory.md)
 - [Edward E. Jones](./edward-e-jones.md)
 
 ## Notable works

@@ -81,7 +81,7 @@ AI systems are better at indexing content when pages declare their type. A page 
 
 ### Welcome agents rather than blocking them
 
-The default posture of an ASR is openness. The repository exists to contribute knowledge to the [commons](../../../../../../../../../../social-science-services-section/services/critical-theory-services-section/services/marxism-services-section/services/political-economy-services-section/content/text/glossary/terms/commons.md). Blocking crawlers contradicts this purpose. If specific content should not be crawled (private notes, drafts), it should be excluded from publication rather than published and then blocked.
+The default posture of an ASR is openness. The repository exists to contribute knowledge to the [commons](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/marxism-services-section/services/political-economy-services-section/content/text/glossary/terms/commons.md). Blocking crawlers contradicts this purpose. If specific content should not be crawled (private notes, drafts), it should be excluded from publication rather than published and then blocked.
 
 ### Let structure do the work
 

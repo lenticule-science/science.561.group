@@ -26,6 +26,6 @@ John Biggs is an Australian educational psychologist whose work on constructive 
 
 ## Related
 
-- [designing effective lessons](../../../../../../../../../../social-science-services-section/services/education-services-section/services/pedagogy-services-section/content/text/documents/articles/notes/designing-effective-lessons.md) — the vault's lesson design draws on constructive alignment
+- [designing effective lessons](../../../../../../../../../../social-science-services-section/services/education-science-services-section/services/pedagogy-services-section/content/text/documents/articles/notes/designing-effective-lessons.md) — the vault's lesson design draws on constructive alignment
 - [Grant Wiggins](./grant-wiggins.md) — backward design and constructive alignment are complementary frameworks
 - [Paulo Freire](./paulo-freire.md) — Biggs's deep/surface distinction resonates with Freire's banking model critique

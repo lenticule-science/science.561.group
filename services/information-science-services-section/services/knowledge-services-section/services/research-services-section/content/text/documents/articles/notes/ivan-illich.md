@@ -29,5 +29,5 @@ Ivan Illich (1926–2002) was an Austrian-born priest, philosopher, and social c
 ## Related
 
 - [anarchist pedagogies](../../education/disciplines/pedagogy/schools/anarchist-pedagogies/index.md) — the tradition his deschooling proposals belong to
-- [banking model](../../../../../../../../../../social-science-services-section/services/education-services-section/services/pedagogy-services-section/content/text/glossary/terms/banking-model.md) — the pedagogical model his critique parallels
-- [prefigurative education](../../../../../../../../../../social-science-services-section/services/education-services-section/services/pedagogy-services-section/content/text/glossary/terms/prefigurative-education.md) — the principle underlying his learning webs proposal
+- [banking model](../../../../../../../../../../social-science-services-section/services/education-science-services-section/services/pedagogy-services-section/content/text/glossary/terms/banking-model.md) — the pedagogical model his critique parallels
+- [prefigurative education](../../../../../../../../../../social-science-services-section/services/education-science-services-section/services/pedagogy-services-section/content/text/glossary/terms/prefigurative-education.md) — the principle underlying his learning webs proposal

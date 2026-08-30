@@ -3,7 +3,7 @@ title: "The Physiology of Threat, Care, and Holding"
 description: "An external literature audit of four physiological claims (C1-C4) drawn from the critical-theory program's attention-economic account of threat, care, and holding, testing each against allostasis/stress physiology, burnout and caregiving science, and social-buffering/natural-experiment evidence. Verdicts: C1 (chronic threat as a standing tax) supported-with-revision; C2 (unpriced care terminates in burnout) supported-with-revision, bordering contradicted as literally stated, because burnout lacks discriminant validity from depression and modern caregiving-mortality studies mostly find caregivers outlive non-caregivers; C3 (standing-conferrals alter the affective economy without a sentiment campaign) supported-with-revision; C4 (holding is the precondition of exploration and play) supported."
 date-created: 2026-08-26
 type: research-note
-in-service-of: lib/emsenn/services/561-group/services/science-services-section/services/philosophy-services-section/services/relationality-services-section/services/agent-science-services-section/services/social-science-services-section/services/critical-theory-services-section
+in-service-of: lib/emsenn/services/561-group/services/science-services-section/services/philosophy-services-section/services/relationality-services-section/services/agent-science-services-section/services/social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section
 name: note-on-the-physiology-of-threat-care-and-holding
 keywords:
   - physiology

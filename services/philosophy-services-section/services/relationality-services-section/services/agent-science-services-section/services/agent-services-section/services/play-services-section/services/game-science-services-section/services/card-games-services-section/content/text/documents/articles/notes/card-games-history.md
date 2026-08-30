@@ -43,7 +43,7 @@ cultures, where "correct" play was negotiated rather than fixed.
 
 In the twentieth and twenty-first centuries, mass publishing and digital media
 accelerated cross-pollination. Rulebooks, magazines, video guides, and online
-platforms made strategy [discourse](../../../../../../../../../../../../social-science-services-section/services/critical-theory-services-section/services/foucauldian-services-section/content/text/glossary/terms/discourse.md) public and searchable. Modern collectible and
+platforms made strategy [discourse](../../../../../../../../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/foucauldian-services-section/content/text/glossary/terms/discourse.md) public and searchable. Modern collectible and
 digital card games extended older card logics with new systems: asymmetrical
 card pools, deck construction economies, matchmaking infrastructure, and live
 balance updates.

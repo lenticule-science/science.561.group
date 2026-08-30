@@ -3,7 +3,7 @@ title: "Valenced Prospection and the Attention Budget"
 description: "A frontier-literature audit (2019–2026) of the attention-economic substrate and the hope/fear rivalry theses in the 2026-08-23 note 'Hope, Care, and Fear; Attention, Grace, and Abandonment.' Verdicts: the finite-consumed-stock claim (A1) is supported only after splitting into moment-to-moment selection rivalry and a separate, slower metabolic depletion process; the shared-substrate rivalry between hope and fear (Thesis 1) is well supported by default-mode-network prospection research; and fear's resolution condition and its political extraction as compulsory threat-simulation (§4.2–4.3) both hold with a named revision to the resolving mechanism."
 date-created: 2026-08-26
 type: research-note
-in-service-of: lib/emsenn/services/561-group/services/science-services-section/services/philosophy-services-section/services/relationality-services-section/services/agent-science-services-section/services/social-science-services-section/services/critical-theory-services-section
+in-service-of: lib/emsenn/services/561-group/services/science-services-section/services/philosophy-services-section/services/relationality-services-section/services/agent-science-services-section/services/social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section
 name: note-on-valenced-prospection-and-the-attention-budget
 keywords:
   - neuroscience

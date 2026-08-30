@@ -50,19 +50,19 @@ An **Evaluation** is the act of applying a [Quality](./quality.md) to a subject 
 
 Every quality assessment in the system is an evaluation:
 - Is this element in $H^*_t$? → Evaluation on the fixed-fiber membership quality $\chi_{H^*}$
-- How large is this element's gap? → Evaluation on the [Gap](../../../../../../../social-science-services-section/services/business-services-section/content/text/glossary/terms/gap.md) quality $\mathrm{Gap}_t$
+- How large is this element's gap? → Evaluation on the [Gap](../../../../../../../social-science-services-section/services/economics-and-business-science-services-section/services/business-science-services-section/content/text/glossary/terms/gap.md) quality $\mathrm{Gap}_t$
 - Does this agent satisfy the role's capability requirements? → Evaluation on [Fitness](../../../../../../../biological-science-services-section/services/ecology-services-section/content/text/documents/articles/notes/fitness.md) quality
 - Is this report accurate? → Evaluation on accuracy quality
 
 ## Evaluation and judgment
 
-[Judgment](../../../../../../../social-science-services-section/services/work-services-section/services/governance-services-section/content/text/glossary/terms/judgment.md) is a special case of evaluation: the judgment $(Z, I, f, \alpha)$ evaluates the situation $f$ against the intent $I$ within zone $Z$, producing the act-choice $\alpha$. The "quality" in judgment is the prudential quality — how well each candidate action serves the intent within the zone. Judgment's result $\alpha$ is the action assigned the highest prudential quality score.
+[Judgment](../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/judgment.md) is a special case of evaluation: the judgment $(Z, I, f, \alpha)$ evaluates the situation $f$ against the intent $I$ within zone $Z$, producing the act-choice $\alpha$. The "quality" in judgment is the prudential quality — how well each candidate action serves the intent within the zone. Judgment's result $\alpha$ is the action assigned the highest prudential quality score.
 
 The quality of judgment (phronesis) is itself a meta-quality: how well the evaluator (the officer making the judgment) performs the evaluation. A good judge consistently produces accurate prudential evaluations — their quality assignments track the genuine prudential ordering of candidate actions.
 
 ## Evaluation and the gap
 
-The [Gap](../../../../../../../social-science-services-section/services/business-services-section/content/text/glossary/terms/gap.md) evaluation is fundamental: $\mathrm{Gap}_t : H_t \to H_t \times H_t$ assigns to each fiber element $a$ the pair $(\sigma_t(a), \Delta_t(a))$. This is the most basic quality evaluation in the system — it measures incompleteness. Every element can be evaluated on this quality at any history; the result tells you how far the element is from $H^*_t$.
+The [Gap](../../../../../../../social-science-services-section/services/economics-and-business-science-services-section/services/business-science-services-section/content/text/glossary/terms/gap.md) evaluation is fundamental: $\mathrm{Gap}_t : H_t \to H_t \times H_t$ assigns to each fiber element $a$ the pair $(\sigma_t(a), \Delta_t(a))$. This is the most basic quality evaluation in the system — it measures incompleteness. Every element can be evaluated on this quality at any history; the result tells you how far the element is from $H^*_t$.
 
 The gap evaluation is performed automatically by the nucleus operators. It does not require a human evaluator $E$ — it is the system's intrinsic quality assessment machinery.
 

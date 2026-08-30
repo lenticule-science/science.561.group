@@ -26,6 +26,6 @@ Grant Wiggins (1950–2015) was an American educator and assessment researcher w
 
 ## Related
 
-- [designing effective lessons](../../../../../../../../../../social-science-services-section/services/education-services-section/services/pedagogy-services-section/content/text/documents/articles/notes/designing-effective-lessons.md) — the vault's lesson design applies backward design
-- [designing curricula](../../../../../../../../../../social-science-services-section/services/education-services-section/services/pedagogy-services-section/content/text/documents/articles/notes/designing-curricula.md) — the vault's curriculum design draws on Wiggins and McTighe
+- [designing effective lessons](../../../../../../../../../../social-science-services-section/services/education-science-services-section/services/pedagogy-services-section/content/text/documents/articles/notes/designing-effective-lessons.md) — the vault's lesson design applies backward design
+- [designing curricula](../../../../../../../../../../social-science-services-section/services/education-science-services-section/services/pedagogy-services-section/content/text/documents/articles/notes/designing-curricula.md) — the vault's curriculum design draws on Wiggins and McTighe
 - [Paulo Freire](./paulo-freire.md) — Wiggins's emphasis on understanding over recall resonates with Freire's critique of the banking model

@@ -26,7 +26,7 @@ references:
     title: The New Brutalism
 ---
 
-Brutalism, as drawn on by [visual engineering practices](../../../services/visual-engineering-services-section/README.md), is treated not as a historical architectural style but as a constraint-set and ethic: [legibility](../../../../../../science-services-section/services/social-science-services-section/services/critical-theory-services-section/services/abolition-services-section/services/state-repression-services-section/content/glossary/terms/legibility.md) of structure, [refusal](../../../../../lib/legacy/2026-06-17-archive-emsenn-net/content/emsenn-archive-org/gibwodgit/archive/flowif/library/theories/humanities/theories/sociology/theories/critical-theory/theories/anarchism/terms/refusal.md) of ornamental deception, and an insistence that what is there is there for a reason. It does not equate to "utilitarianism" or mere minimalism.
+Brutalism, as drawn on by [visual engineering practices](../../../services/visual-engineering-services-section/README.md), is treated not as a historical architectural style but as a constraint-set and ethic: [legibility](../../../../../../philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/glossary/terms/legibility.md) of structure, [refusal](../../../../../lib/legacy/2026-06-17-archive-emsenn-net/content/emsenn-archive-org/gibwodgit/archive/flowif/library/theories/humanities/theories/sociology/theories/critical-theory/theories/anarchism/terms/refusal.md) of ornamental deception, and an insistence that what is there is there for a reason. It does not equate to "utilitarianism" or mere minimalism.
 
 ## Methods and approach
 
@@ -38,7 +38,7 @@ In graphic design, brutalism translates architectural principles into perceptual
 
 1. **Anti-ornament as attentional hygiene** — ornament creates [premature closure](../../../services/visual-engineering-services-section/content/glossary/terms/premature-closure.md) by offering aesthetic satisfaction that substitutes for structural reading. Stripping it keeps the reader in orientation mode longer.
 
-2. **Material bluntness** — show structure as structure. Resist illustrative metaphor that replaces structural [legibility](../../../../../../science-services-section/services/social-science-services-section/services/critical-theory-services-section/services/abolition-services-section/services/state-repression-services-section/content/glossary/terms/legibility.md) with narrative framing. Declare the scaffolding (grids, blocks, rules, alignments).
+2. **Material bluntness** — show structure as structure. Resist illustrative metaphor that replaces structural [legibility](../../../../../../philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/glossary/terms/legibility.md) with narrative framing. Declare the scaffolding (grids, blocks, rules, alignments).
 
 3. **Hard hierarchy when needed** — assertive typographic contrast and block structure to allocate attention quickly. Large contrast ratios, clear blocks, unambiguous segmentation.
 

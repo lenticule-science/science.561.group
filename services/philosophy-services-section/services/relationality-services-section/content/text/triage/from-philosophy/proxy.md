@@ -107,5 +107,5 @@ This is why proxy authority expires automatically at RelationalHistoryStepFinal 
 ## Open questions
 
 - Whether the power of attorney (general or specific) is a proxy with $\varphi = \mathrm{Acts}(Q)$ — the full act-class — or whether a general power of attorney is a distinct concept that breaks the act-class-specificity invariant.
-- Whether proxy and [Incumbent](../../../../../../../social-science-services-section/services/business-services-section/content/text/glossary/terms/incumbent.md) are formally dual: the incumbent holds the office over time; the proxy holds the identity for a specific act. Both involve a kind of substitution, but along different axes (temporal vs. act-class).
+- Whether proxy and [Incumbent](../../../../../../../social-science-services-section/services/economics-and-business-science-services-section/services/business-science-services-section/content/text/glossary/terms/incumbent.md) are formally dual: the incumbent holds the office over time; the proxy holds the identity for a specific act. Both involve a kind of substitution, but along different axes (temporal vs. act-class).
 - Whether the non-subdelegability default is a structural necessity (the proxy's authority is borrowed identity, which is not transferable) or merely a default rule that the principal can waive.

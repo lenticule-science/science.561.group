@@ -27,6 +27,6 @@ Victor Klemperer (1881–1960) was a German philologist and diarist of Jewish de
 ## Related
 
 - [Linguistic extraction](../../../../../../../../communication-science-services-section/services/linguistics-services-section/content/text/glossary/terms/linguistic-extraction.md) — the process Klemperer documents at the level of a regime
-- [Hegemony](../../../../../../../../../../social-science-services-section/services/critical-theory-services-section/services/marxism-services-section/services/gramscian-services-section/content/text/glossary/terms/hegemony.md) — cultural domination through consent, which linguistic manipulation serves
+- [Hegemony](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/marxism-services-section/services/gramscian-services-section/content/text/glossary/terms/hegemony.md) — cultural domination through consent, which linguistic manipulation serves
 - [Opacity](../../../../../../../../../../philosophy-services-section/services/caribbean-services-section/services/creolization-services-section/content/text/glossary/terms/opacity.md) — the right to not be made transparent, which totalitarian language denies
 - [Lauren Berlant](./lauren-berlant.md) — affective infrastructure as a parallel to linguistic infrastructure

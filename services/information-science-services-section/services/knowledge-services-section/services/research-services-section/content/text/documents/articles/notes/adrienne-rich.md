@@ -15,7 +15,7 @@ Adrienne Rich (1929–2012) was an American poet and feminist theorist whose ess
 
 ## Core ideas
 
-- **[Compulsory heterosexuality](../../../../../../../../../../social-science-services-section/services/critical-theory-services-section/services/queer-services-section/content/text/glossary/terms/compulsory-heterosexuality.md)**: Rich argued that heterosexuality is not the default or natural state of women's desire but an institution enforced through specific mechanisms — control of women's labor, denial of female sexuality, idealization of heterosexual romance, and violence against women who refuse. The question is not why some women are lesbians but through what forces all women are channeled into heterosexuality.
+- **[Compulsory heterosexuality](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/queer-services-section/content/text/glossary/terms/compulsory-heterosexuality.md)**: Rich argued that heterosexuality is not the default or natural state of women's desire but an institution enforced through specific mechanisms — control of women's labor, denial of female sexuality, idealization of heterosexual romance, and violence against women who refuse. The question is not why some women are lesbians but through what forces all women are channeled into heterosexuality.
 - **Lesbian continuum**: Rich proposed a continuum of woman-identified experience that includes but is not limited to genital sexual experience — encompassing all forms of primary intensity between women, from friendship and solidarity to erotic love. This expanded the political scope of lesbian analysis beyond sexual identity.
 
 ## Notable works
@@ -26,7 +26,7 @@ Adrienne Rich (1929–2012) was an American poet and feminist theorist whose ess
 
 ## Related
 
-- [Compulsory heterosexuality](../../../../../../../../../../social-science-services-section/services/critical-theory-services-section/services/queer-services-section/content/text/glossary/terms/compulsory-heterosexuality.md) — the concept she develops
+- [Compulsory heterosexuality](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/queer-services-section/content/text/glossary/terms/compulsory-heterosexuality.md) — the concept she develops
 - [Feminist queer theory](../../sociology/schools/queer/schools/feminist/index.md) — the tradition her work grounds
-- [Heteronormativity](../../../../../../../../../../social-science-services-section/services/critical-theory-services-section/services/queer-services-section/content/text/glossary/terms/heteronormativity.md) — the broader normative framework her concept anticipates
+- [Heteronormativity](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/queer-services-section/content/text/glossary/terms/heteronormativity.md) — the broader normative framework her concept anticipates
 - [Social reproduction](../../sociology/terms/social-reproduction.md) — the labor organized through compulsory heterosexuality

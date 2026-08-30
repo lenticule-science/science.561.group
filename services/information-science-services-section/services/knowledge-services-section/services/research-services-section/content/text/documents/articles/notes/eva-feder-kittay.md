@@ -16,7 +16,7 @@ Eva Feder Kittay is an American philosopher whose work on [dependency](../../../
 ## Core ideas
 
 - **Nested dependencies**: the caregiver who tends a dependent person is themselves made dependent by that work — dependent on resources, support, and recognition that are often withheld. Care creates chains of dependency that political theory must address.
-- **Dependency critique of liberalism**: the "independent" subject of contract theory is an ideological fiction sustained by invisible [care work](../../../../../../../../../../social-science-services-section/services/critical-theory-services-section/services/marxism-services-section/services/autonomism-services-section/content/text/glossary/terms/care-work.md). Political theory built on this fiction cannot adequately represent those it claims to include.
+- **Dependency critique of liberalism**: the "independent" subject of contract theory is an ideological fiction sustained by invisible [care work](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/marxism-services-section/services/autonomism-services-section/content/text/glossary/terms/care-work.md). Political theory built on this fiction cannot adequately represent those it claims to include.
 - **Doulia**: the principle that anyone who provides care for a dependent person is owed support in turn — that the labor of care creates obligations that extend beyond the immediate caring relationship.
 - **Disability and justice**: Kittay's work, informed by her experience as the mother of a daughter with severe cognitive disabilities, insists that political theory must account for persons who will never achieve the "independence" that liberalism presupposes.
 
@@ -31,4 +31,4 @@ Eva Feder Kittay is an American philosopher whose work on [dependency](../../../
 - [Virginia Held](./virginia-held.md) — fellow care ethicist
 - [Joan Tronto](./joan-tronto.md) — fellow political care ethicist
 - [Dependency](../../../../../../../../../../philosophy-services-section/services/western-services-section/services/ethics-services-section/services/care-ethics-services-section/content/text/glossary/terms/dependency.md) — the concept she develops
-- [Care work](../../../../../../../../../../social-science-services-section/services/critical-theory-services-section/services/marxism-services-section/services/autonomism-services-section/content/text/glossary/terms/care-work.md) — the labor she theorizes
+- [Care work](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/marxism-services-section/services/autonomism-services-section/content/text/glossary/terms/care-work.md) — the labor she theorizes

@@ -116,7 +116,7 @@ Fictive kinship mechanisms:
 - **Blood brotherhood**: a ritual pact that creates a kinship bond between two persons from different tribes or lineages; used to formalize alliances and enable cross-tribal cooperation
 - **Marriage alliance**: marriage into a lineage does not make the spouse a member of the lineage (typically) but creates an alliance relation that is quasi-kinship in its obligations and privileges; the children of the marriage may be full members
 
-Fictive kinship shows that $B_{\mathrm{kin}}$ is not purely biological but normatively constituted: the tribe decides who counts as kin. This is the [StatusFunctionDeclaration](../../../../../../../social-science-services-section/services/work-services-section/services/governance-services-section/content/text/glossary/terms/status-function-declaration.md) dimension of tribal membership: "X counts as a member of lineage $\sigma_i$" by formal adoption, not by genealogical fact alone.
+Fictive kinship shows that $B_{\mathrm{kin}}$ is not purely biological but normatively constituted: the tribe decides who counts as kin. This is the [StatusFunctionDeclaration](../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/status-function-declaration.md) dimension of tribal membership: "X counts as a member of lineage $\sigma_i$" by formal adoption, not by genealogical fact alone.
 
 ## Biological tribe: the taxonomic rank
 

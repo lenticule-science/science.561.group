@@ -29,10 +29,10 @@ $$\mathrm{Fit}_t(x, R) = \bigwedge_{Q_i \in \Sigma_R} [Q_{i,t}(x) \geq q_i^{\min
 
 where:
 - $x$ is the **subject** — the entity being evaluated for fitness; $x \in X(t)$ for some object-type $X$ at history $t$
-- $R$ is the **role** — the [Role](../../../../../../../../social-science-services-section/services/work-services-section/services/governance-services-section/content/text/glossary/terms/role.md) specifying the capability-signature $\Sigma_R$: a set of required qualities $\{Q_i\}$ with their minimum thresholds $\{q_i^{\min}\}$
+- $R$ is the **role** — the [Role](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/role.md) specifying the capability-signature $\Sigma_R$: a set of required qualities $\{Q_i\}$ with their minimum thresholds $\{q_i^{\min}\}$
 - $f = \mathrm{Fit}_t(x, R) \in \Omega_t$ is the **fitness value** — the meet of all per-quality satisfaction conditions; $f = 1$ (true) iff $x$ meets every threshold; $f = 0$ (false) iff $x$ fails at least one threshold
 
-**Role-filling condition.** $x$ **fills role $R$** iff $\mathrm{Fit}_t(x, R) = 1$: for every quality $Q_i$ in $R$'s signature, $Q_{i,t}(x) \geq q_i^{\min}$. This is the precise formalization of role-filling from [Role](../../../../../../../../social-science-services-section/services/work-services-section/services/governance-services-section/content/text/glossary/terms/role.md): providing a term of the role's record type — a witness that supplies each required field at or above the minimum level.
+**Role-filling condition.** $x$ **fills role $R$** iff $\mathrm{Fit}_t(x, R) = 1$: for every quality $Q_i$ in $R$'s signature, $Q_{i,t}(x) \geq q_i^{\min}$. This is the precise formalization of role-filling from [Role](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/role.md): providing a term of the role's record type — a witness that supplies each required field at or above the minimum level.
 
 **Partial fitness.** $\mathrm{Fit}_t(x, R)$ need not be binary. If the value-presheaves $V_i$ are lattice-ordered, the fitness value is the meet of the per-quality ratios $Q_{i,t}(x) / q_i^{\min}$ — how far each quality is above (positive) or below (negative) threshold. A partially fit entity has some qualities meeting threshold and others falling short.
 
@@ -44,7 +44,7 @@ Fitness is history-indexed: $\mathrm{Fit}_t(x, R)$ depends on $t$ because both t
 
 ## Fitness and the gap
 
-Fitness and [Gap](../../../../../../../../social-science-services-section/services/business-services-section/content/text/glossary/terms/gap.md) measure complementary things:
+Fitness and [Gap](../../../../../../../../../../social-science-services-section/services/economics-and-business-science-services-section/services/business-science-services-section/content/text/glossary/terms/gap.md) measure complementary things:
 
 - **Gap** measures how far a fiber element is from $H^*_t$ — how much the nuclei still demand
 - **Fitness** measures how far a subject is from satisfying a role's quality thresholds — how much more it needs to provide
@@ -53,7 +53,7 @@ Both are distance-to-threshold measures, but in different dimensions. Gap is nuc
 
 ## Fitness and office
 
-[Office](../../../../../../../../social-science-services-section/services/business-services-section/content/text/glossary/terms/office.md) adds a deontic layer to fitness: an office specifies not just which qualities are required but which Hohfeldian positions attach to meeting or failing them. The officer's fitness determines whether their outputs reach $H^*_t$ under the office's nuclear structure. An unfit officer — one whose quality profile does not meet the office's requirements — produces outputs with persistent positive gap; the office's nuclei demand more than the officer can provide.
+[Office](../../../../../../../../../../social-science-services-section/services/economics-and-business-science-services-section/services/business-science-services-section/content/text/glossary/terms/office.md) adds a deontic layer to fitness: an office specifies not just which qualities are required but which Hohfeldian positions attach to meeting or failing them. The officer's fitness determines whether their outputs reach $H^*_t$ under the office's nuclear structure. An unfit officer — one whose quality profile does not meet the office's requirements — produces outputs with persistent positive gap; the office's nuclei demand more than the officer can provide.
 
 ## Fitness over time
 
@@ -64,7 +64,7 @@ Fitness is not static. The dynamic view:
 - $\mathrm{Fit}_t(x, R) = 1$ at $t_1$ → the entity now fills the role; can be installed
 - $\mathrm{Fit}_t(x, R) < 1$ at $t_2 > t_1$ → the entity has degraded; is no longer fit for the role
 
-The trajectory of fitness is the entity's *development profile* with respect to $R$. An [Investiture](../../../../../../../../social-science-services-section/services/work-services-section/services/governance-services-section/content/text/glossary/terms/investiture.md) requires $\mathrm{Fit}_{t_0}(x, R) = 1$ at the moment of installation; subsequent fitness changes are the entity's ongoing responsibility to maintain.
+The trajectory of fitness is the entity's *development profile* with respect to $R$. An [Investiture](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/investiture.md) requires $\mathrm{Fit}_{t_0}(x, R) = 1$ at the moment of installation; subsequent fitness changes are the entity's ongoing responsibility to maintain.
 
 ## Spectral thermodynamics of fitness development
 

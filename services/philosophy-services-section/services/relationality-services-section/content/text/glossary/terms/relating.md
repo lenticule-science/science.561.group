@@ -60,7 +60,7 @@ In the [Interactive Semioverse](../../mathematics/objects/universes/interactive-
 - [Recognition](./recognition.md) — the base operation within relating
 - [Coherence](./coherence.md) — what sustained relating produces
 - [Relational ontology](../../../../../western-services-section/services/metaphysics-services-section/services/ontology-services-section/content/text/glossary/terms/relational-ontology.md) — the philosophical position grounding this concept
-- [Care work](../../../../../../../social-science-services-section/services/critical-theory-services-section/services/marxism-services-section/services/autonomism-services-section/content/text/glossary/terms/care-work.md) — a form of relating that maintains social life
+- [Care work](../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/marxism-services-section/services/autonomism-services-section/content/text/glossary/terms/care-work.md) — a form of relating that maintains social life
 
 
 ---

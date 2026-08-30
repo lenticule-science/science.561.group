@@ -26,5 +26,5 @@ Ralph W. Tyler (1902–1994) was an American educator whose *Basic Principles of
 ## Related
 
 - [Grant Wiggins](./grant-wiggins.md) — backward design extends Tyler's objectives-first approach with the concept of "understanding" as transferable learning
-- [designing curricula](../../../../../../../../../../social-science-services-section/services/education-services-section/services/pedagogy-services-section/content/text/documents/articles/notes/designing-curricula.md) — the vault's curriculum design begins with Tyler's question about objectives
+- [designing curricula](../../../../../../../../../../social-science-services-section/services/education-science-services-section/services/pedagogy-services-section/content/text/documents/articles/notes/designing-curricula.md) — the vault's curriculum design begins with Tyler's question about objectives
 - [Paulo Freire](./paulo-freire.md) — Freire's critique of the banking model can be read as a critique of how Tyler's framework is often implemented, reducing education to pre-specified behavioral objectives

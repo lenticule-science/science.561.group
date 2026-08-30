@@ -89,7 +89,7 @@ The nucleus (enzyme) is preserved — it is available to catalyze the same react
 
 ## Patient and MicroFocus
 
-A [MicroFocus](../../../../../../../social-science-services-section/services/business-services-section/content/text/glossary/terms/microfocus.md) is a pair $(H_{t^*}, a^*)$ — a designated fiber and a designated element within it. The MicroFocus designates which element is currently being processed. When a nuclear operation $\varphi$ is applied to the MicroFocus element $a^*$, the result is the Patient:
+A [MicroFocus](../../../../../../../social-science-services-section/services/economics-and-business-science-services-section/services/business-science-services-section/content/text/glossary/terms/microfocus.md) is a pair $(H_{t^*}, a^*)$ — a designated fiber and a designated element within it. The MicroFocus designates which element is currently being processed. When a nuclear operation $\varphi$ is applied to the MicroFocus element $a^*$, the result is the Patient:
 
 $$(H_{t^*}, a^*) \xrightarrow{\varphi} (H_{t^*}, \varphi(a^*))$$
 
@@ -112,7 +112,7 @@ where $a^*$ is the doubly-settled form of $a$. Every element has a canonical set
 | [Base](../../../../../../../../../engineering-services-section/content/text/glossary/terms/base-substrate.md) | Mode-1 substrate: preserved, not transformed; Patient is Mode-3: transformed |
 | [Foundation](./foundation.md) | Mode-2 substrate: preserved, enables sheaf condition; Patient is Mode-3: individual element |
 | [Substrate](../../../../../../../biological-science-services-section/services/mycology-services-section/content/text/glossary/terms/substrate.md) | General concept; Patient is one of three modes |
-| [MicroFocus](../../../../../../../social-science-services-section/services/business-services-section/content/text/glossary/terms/microfocus.md) | Selects the patient element; Patient formalizes what the nucleus does to it |
+| [MicroFocus](../../../../../../../social-science-services-section/services/economics-and-business-science-services-section/services/business-science-services-section/content/text/glossary/terms/microfocus.md) | Selects the patient element; Patient formalizes what the nucleus does to it |
 | Nucleus | The nuclear operation is the agent that transforms the patient; the patient is what gets acted on |
 | Fixed fiber $H^*_t$ | Fixed points are invariant patients; elements outside $H^*_t$ are non-trivial patients |
 

@@ -20,7 +20,7 @@ A dead zone is a term emsenn introduces within the [standardization as counterin
 
 A dead zone infrastructure exhibits four properties simultaneously:
 
-1. **High [legibility](../../../../../../../../../../../../../social-science-services-section/services/critical-theory-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md).** It's documented, standardized, and incorporated into reference architectures and regulatory frameworks. Institutions can "see" it.
+1. **High [legibility](../../../../../../../../../../../../../philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md).** It's documented, standardized, and incorporated into reference architectures and regulatory frameworks. Institutions can "see" it.
 
 2. **Low generativity.** Few new practices or applications emerge around it. Innovation, where it occurs, happens elsewhere.
 
@@ -37,7 +37,7 @@ Traffic still flows. Some systems depend on them. Standards bodies still maintai
 Dead zones aren't accidents. They arise when three conditions converge:
 
 1. [Insurgent infrastructures](./insurgent-infrastructure.md) are drawn into standards bodies
-2. [Domestication](./domestication-paradox.md) processes prioritize [legibility](../../../../../../../../../../../../../social-science-services-section/services/critical-theory-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md) and compatibility over generativity and autonomy
+2. [Domestication](./domestication-paradox.md) processes prioritize [legibility](../../../../../../../../../../../../../philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md) and compatibility over generativity and autonomy
 3. Corporate actors adopt the resulting standards in ways that are cautious, selective, and strategically defensive
 
 In this configuration, both sides get less than they hoped. Movements lose a vehicle for experimentation; platforms gain a modest PR benefit and some interoperability tools, but not a new engine of growth. The result is mutual exhaustion rather than clear victory for either side.

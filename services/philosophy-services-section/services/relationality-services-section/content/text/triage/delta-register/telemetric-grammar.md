@@ -13,7 +13,7 @@ method:
 ---
 
 
-A ***telemetric grammar*** is the expressive logic of a [telemetric paradigm](telemetric paradigm)—a structure for composing, casting, and recording semantic behavior in recursive systems. It is not an abstract syntax nor a symbolic system. It is a ***metabolic schema***: a means by which [interpretation](interpretation) is conducted as [role](../../../../../../../social-science-services-section/services/work-services-section/services/governance-services-section/content/text/glossary/terms/role.md), not [assertion](../from-philosophy/assertion.md).
+A ***telemetric grammar*** is the expressive logic of a [telemetric paradigm](telemetric paradigm)—a structure for composing, casting, and recording semantic behavior in recursive systems. It is not an abstract syntax nor a symbolic system. It is a ***metabolic schema***: a means by which [interpretation](interpretation) is conducted as [role](../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/role.md), not [assertion](../from-philosophy/assertion.md).
 
 Telemetric grammar defines a casting as the alignment of a [telemetric signal|signal](telemetric signal|signal) with a [telemetric method|method](telemetric method|method) inside a [telemetric field|field](telemetric field|field), producing a [telemetric yield|yield](telemetric yield|yield). This relation is recorded in a [record](../../../../../../../information-science-services-section/content/text/glossary/terms/record.md), not to stabilize knowledge, but to make the trace legible for re-casting.
 

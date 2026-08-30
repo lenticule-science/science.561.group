@@ -1617,7 +1617,7 @@ Beck–Chevalley for Π ⊣ Disc and Codisc ⊣ Γ:
 Disc∘f\* = f\*∘Disc
 Codisc∘f\* = f\*∘Codisc
 
-Frobenius [reciprocity](../../../../../../../../../../social-science-services-section/services/critical-theory-services-section/services/marxism-services-section/services/political-economy-services-section/content/text/glossary/terms/reciprocity.md) (middle adjoints):
+Frobenius [reciprocity](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/marxism-services-section/services/political-economy-services-section/content/text/glossary/terms/reciprocity.md) (middle adjoints):
 
 Disc(A Together<sub>E</sub> B) ≃ Disc(A) Together<sub>S</sub> Disc(B)
 Codisc(A Either<sub>E</sub> B) ≃ Codisc(A) Either<sub>S</sub> Codisc(B)

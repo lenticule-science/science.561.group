@@ -29,4 +29,4 @@ C. Riley Snorton is a scholar of English, gender, and sexuality studies at the U
 - [Queer-of-color critique](../../sociology/schools/queer/schools/queer-of-color/index.md) — the tradition his work extends
 - [Hortense Spillers](./hortense-spillers.md) — whose analysis of the flesh and the body in slavery informs Snorton's work
 - [Dean Spade](./dean-spade.md) — fellow trans studies scholar
-- [Racial capitalism](../../../../../../../../../../social-science-services-section/services/critical-theory-services-section/services/black-radical-tradition-services-section/content/text/glossary/terms/racial-capitalism.md) — the system that produces the entanglement of race and gender
+- [Racial capitalism](../../../../../../../../../../philosophy-services-section/services/black-philosophy-services-section/services/black-radical-tradition-services-section/content/text/glossary/terms/racial-capitalism.md) — the system that produces the entanglement of race and gender

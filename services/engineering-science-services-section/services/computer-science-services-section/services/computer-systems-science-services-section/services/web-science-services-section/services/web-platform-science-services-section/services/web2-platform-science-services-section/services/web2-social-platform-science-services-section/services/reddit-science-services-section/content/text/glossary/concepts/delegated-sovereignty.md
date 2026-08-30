@@ -31,7 +31,7 @@ Delegated sovereignty has three defining features:
 
 ## Case study
 
-Reddit's subreddit moderators exercised extensive, largely unsupervised authority for close to two decades before that authority's revocable substrate became visible in practice. See [the full analysis](../../../../../../../../../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agent-science-services-section/services/social-science-services-section/services/sociology-services-section/content/text/documents/articles/notes/reddit-structureless-oligarchy-and-the-revocable-commons.md).
+Reddit's subreddit moderators exercised extensive, largely unsupervised authority for close to two decades before that authority's revocable substrate became visible in practice. See [the full analysis](../../../../../../../../../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/documents/articles/notes/reddit-structureless-oligarchy-and-the-revocable-commons.md).
 
 ## Related concepts
 

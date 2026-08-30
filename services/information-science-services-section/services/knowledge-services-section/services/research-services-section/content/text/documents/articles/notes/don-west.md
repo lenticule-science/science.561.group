@@ -13,7 +13,7 @@ Don West (1906–1992) was an American poet, educator, labor organizer, and mini
 ## Core ideas
 
 - **Education and labor solidarity**: West understood education as inseparable from the labor movement. He organized mining communities in Appalachia and used education as a tool for building collective power among workers.
-- **Cultural work as pedagogy**: As a poet and folklorist, West used cultural production — poetry, storytelling, folk traditions — as a form of education and political organizing. This connects to the broader tradition of [oral transmission](../../../../../../../../../../social-science-services-section/services/education-services-section/services/knowledge-transmission-services-section/content/text/glossary/terms/oral-transmission.md) as a mode of carrying knowledge that serves community self-determination.
+- **Cultural work as pedagogy**: As a poet and folklorist, West used cultural production — poetry, storytelling, folk traditions — as a form of education and political organizing. This connects to the broader tradition of [oral transmission](../../../../../../../../../../social-science-services-section/services/education-science-services-section/services/knowledge-transmission-services-section/content/text/glossary/terms/oral-transmission.md) as a mode of carrying knowledge that serves community self-determination.
 
 ## Notable works
 
@@ -23,4 +23,4 @@ Don West (1906–1992) was an American poet, educator, labor organizer, and mini
 ## Related
 
 - [Myles Horton](./myles-horton.md) — co-founded Highlander Folk School
-- [popular education](../../../../../../../../../../social-science-services-section/services/education-services-section/services/pedagogy-services-section/content/text/glossary/terms/popular-education.md) — the tradition Highlander helped establish in the United States
+- [popular education](../../../../../../../../../../social-science-services-section/services/education-science-services-section/services/pedagogy-services-section/content/text/glossary/terms/popular-education.md) — the tradition Highlander helped establish in the United States

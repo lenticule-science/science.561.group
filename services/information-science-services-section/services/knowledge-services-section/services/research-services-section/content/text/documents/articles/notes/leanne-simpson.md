@@ -16,7 +16,7 @@ Leanne Betasamosake Simpson is a Michi Saagiig Nishnaabeg scholar, writer, and m
 
 ## Core ideas
 
-- **[land-based education](../../../../../../../../../../social-science-services-section/services/education-services-section/services/pedagogy-services-section/content/text/glossary/terms/land-based-education.md)**: education rooted in relationship with land, water, and the more-than-human world. Land is not a backdrop for learning but a co-teacher and source of theory [@simpson_AsWeHaveAlwaysDone_2017].
+- **[land-based education](../../../../../../../../../../social-science-services-section/services/education-science-services-section/services/pedagogy-services-section/content/text/glossary/terms/land-based-education.md)**: education rooted in relationship with land, water, and the more-than-human world. Land is not a backdrop for learning but a co-teacher and source of theory [@simpson_AsWeHaveAlwaysDone_2017].
 - **Resurgence**: Indigenous freedom comes through the regeneration of Indigenous practices, governance, and relationships — not through recognition by colonial institutions.
 - **Intelligence as relational**: knowledge arises from and is accountable to networks of relationships — with land, with community, with ancestors, with other-than-human beings.
 - **Refusal of extraction**: [settler colonialism](../../sociology/topics/settler-colonialism/index.md) extracts resources, [labor](../../sociology/terms/labor.md), and knowledge. Indigenous resurgence involves refusing extractive logics, including in scholarship and education.
@@ -30,7 +30,7 @@ Leanne Betasamosake Simpson is a Michi Saagiig Nishnaabeg scholar, writer, and m
 ## Related
 
 - [Linda Tuhiwai Smith](./linda-tuhiwai-smith.md) — also works on decolonizing knowledge systems
-- [land-based education](../../../../../../../../../../social-science-services-section/services/education-services-section/services/pedagogy-services-section/content/text/glossary/terms/land-based-education.md) — the pedagogical practice she theorizes
-- [Indigenous resurgence](../../../../../../../../../../social-science-services-section/services/critical-theory-services-section/services/povinellian-services-section/services/settler-colonialism-services-section/content/text/glossary/terms/indigenous-resurgence.md) — the political framework she develops
-- [Glen Coulthard](./glen-coulthard.md) — fellow theorist of resurgence and [grounded normativity](../../../../../../../../../../social-science-services-section/services/critical-theory-services-section/services/povinellian-services-section/services/settler-colonialism-services-section/content/text/glossary/terms/grounded-normativity.md)
+- [land-based education](../../../../../../../../../../social-science-services-section/services/education-science-services-section/services/pedagogy-services-section/content/text/glossary/terms/land-based-education.md) — the pedagogical practice she theorizes
+- [Indigenous resurgence](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/povinellian-services-section/services/settler-colonialism-services-section/content/text/glossary/terms/indigenous-resurgence.md) — the political framework she develops
+- [Glen Coulthard](./glen-coulthard.md) — fellow theorist of resurgence and [grounded normativity](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/povinellian-services-section/services/settler-colonialism-services-section/content/text/glossary/terms/grounded-normativity.md)
 - [Refusal](/sociology/terms/refusal.md) — the practice of declining extractive logics

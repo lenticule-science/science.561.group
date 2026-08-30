@@ -38,9 +38,9 @@ Five properties make something an endeavor:
 
 ## The charter as endeavor specification
 
-The [charter](../../../../../../../../../social-science-services-section/services/work-services-section/services/governance-services-section/content/text/glossary/terms/charter.md) of a [vessel](./vessel.md) defines the endeavor it pursues. The charter names the aim and constitutes the collective commitment. The [captain](../../../../../../../../../social-science-services-section/services/military-science-services-section/content/text/glossary/terms/captain.md) and [crew](../../../../../../../../../social-science-services-section/services/military-science-services-section/content/text/glossary/terms/crew.md) become the unified committing agent of the chartered vessel. When a vessel's charter defines its endeavor, it performs two acts: naming what the ship is striving toward, and installing the commitment in the ship's people.
+The [charter](../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/charter.md) of a [vessel](./vessel.md) defines the endeavor it pursues. The charter names the aim and constitutes the collective commitment. The [captain](../../../../../../../../../social-science-services-section/services/political-science-services-section/services/military-science-services-section/content/text/glossary/terms/captain.md) and [crew](../../../../../../../../../social-science-services-section/services/political-science-services-section/services/military-science-services-section/content/text/glossary/terms/crew.md) become the unified committing agent of the chartered vessel. When a vessel's charter defines its endeavor, it performs two acts: naming what the ship is striving toward, and installing the commitment in the ship's people.
 
-A vessel without a charter is a container. A vessel with a charter is a [ship](../../../../../../../../../social-science-services-section/services/military-science-services-section/content/text/glossary/terms/ship.md). A ship is a vessel endeavoring.
+A vessel without a charter is a container. A vessel with a charter is a [ship](../../../../../../../../../social-science-services-section/services/political-science-services-section/services/military-science-services-section/content/text/glossary/terms/ship.md). A ship is a vessel endeavoring.
 
 ## Adjacent concepts
 
@@ -54,4 +54,4 @@ A vessel without a charter is a container. A vessel with a charter is a [ship](.
 | Venture | Yes | Risk-weighted | Variable | Variable | Yes | Yes |
 | Duty | No — positional | External, categorical | Position-duration | Yes | No | No |
 
-See [Philosophy of Endeavor](../../../../../../../../../social-science-services-section/services/sociology-services-section/content/text/documents/articles/notes/philosophy-of-endeavor.md) for the grounding in Chisholm, Hornsby, and O'Shaughnessy.
+See [Philosophy of Endeavor](../../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/documents/articles/notes/philosophy-of-endeavor.md) for the grounding in Chisholm, Hornsby, and O'Shaughnessy.

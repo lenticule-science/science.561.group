@@ -28,4 +28,4 @@ In the [Write-for-a-Month: Zombie Novel](../../../../../../../../../relationalit
 
 - [metastability](./metastability.md) — the charged pre-individual state from which individuation occurs
 - [ontology](../../../../../ontology-services-section/content/text/glossary/terms/ontology.md) — individuation is an ontological event: it changes what exists
-- [auto-immunity](../../../../../../../../../../../social-science-services-section/services/critical-theory-services-section/services/biopolitics-services-section/services/espositoan-services-section/content/text/glossary/terms/auto-immunity.md) — when the individuated system attacks its own conditions of existence
+- [auto-immunity](../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/biopolitics-services-section/services/espositoan-services-section/content/text/glossary/terms/auto-immunity.md) — when the individuated system attacks its own conditions of existence

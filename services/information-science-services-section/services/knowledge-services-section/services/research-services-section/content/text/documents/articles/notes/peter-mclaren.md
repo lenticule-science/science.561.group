@@ -9,13 +9,13 @@ keywords:
   - CriticalPedagogy
 ---
 
-Peter McLaren (1948–) is a Canadian-born scholar who connected [critical pedagogy](../../education/disciplines/pedagogy/schools/critical-pedagogy/index.md) to anti-capitalist and anti-[imperialist](../../../../../../../../../../social-science-services-section/services/critical-theory-services-section/services/marxism-services-section/services/political-economy-services-section/content/text/glossary/terms/imperialism.md) politics, arguing that education must be understood within the global structures of [capitalism](../../sociology/terms/capitalism.md) and [colonialism](../../sociology/terms/colonialism.md).
+Peter McLaren (1948–) is a Canadian-born scholar who connected [critical pedagogy](../../education/disciplines/pedagogy/schools/critical-pedagogy/index.md) to anti-capitalist and anti-[imperialist](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/marxism-services-section/services/political-economy-services-section/content/text/glossary/terms/imperialism.md) politics, arguing that education must be understood within the global structures of [capitalism](../../sociology/terms/capitalism.md) and [colonialism](../../sociology/terms/colonialism.md).
 
 ## Core ideas
 
 - **Revolutionary critical pedagogy**: McLaren extended [Paulo Freire](./paulo-freire.md)'s work by grounding it in an explicit Marxist and anti-imperialist framework, arguing that educational reform without structural economic transformation reproduces the conditions it claims to address.
 - **Education and global capitalism**: McLaren analyzed how educational institutions serve the reproduction of capitalist social relations — producing compliant workers and consumers rather than critical, self-determining people.
-- **Solidarity across struggles**: McLaren argued that educational struggles must be connected to broader movements against [imperialism](../../../../../../../../../../social-science-services-section/services/critical-theory-services-section/services/marxism-services-section/services/political-economy-services-section/content/text/glossary/terms/imperialism.md), [racism](../../sociology/terms/racism.md), and economic exploitation.
+- **Solidarity across struggles**: McLaren argued that educational struggles must be connected to broader movements against [imperialism](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/marxism-services-section/services/political-economy-services-section/content/text/glossary/terms/imperialism.md), [racism](../../sociology/terms/racism.md), and economic exploitation.
 
 ## Notable works
 

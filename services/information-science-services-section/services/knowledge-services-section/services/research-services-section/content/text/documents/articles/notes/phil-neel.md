@@ -11,7 +11,7 @@ keywords:
 description: "American communist writer and geographer whose work analyzes how capitalist crisis reshapes the physical landscape, producing hinterlands, logistics corridors, and zones of abandonment."
 ---
 
-Phil Neel is an American [communist](../../../../../../../../../../social-science-services-section/services/critical-theory-services-section/services/marxism-services-section/content/text/glossary/terms/communism.md) writer and geographer whose work analyzes the relationship between capitalist crisis, geography, and political possibility. His writing connects economic restructuring to the spatial forms it produces — hinterlands, logistics corridors, and zones of abandonment — grounding abstract categories of political economy in the material landscapes people actually inhabit.
+Phil Neel is an American [communist](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/marxism-services-section/content/text/glossary/terms/communism.md) writer and geographer whose work analyzes the relationship between capitalist crisis, geography, and political possibility. His writing connects economic restructuring to the spatial forms it produces — hinterlands, logistics corridors, and zones of abandonment — grounding abstract categories of political economy in the material landscapes people actually inhabit.
 
 ## Core ideas
 
@@ -32,6 +32,6 @@ Neel's work provides the geographic and material grounding for concepts that mig
 
 - [Ruth Wilson Gilmore](./ruth-wilson-gilmore.md) — fellow theorist of organized abandonment and geographic racism
 - [Organized abandonment](../../sociology/terms/organized-abandonment.md) — the political-economic process Neel gives geographic form
-- [Racial capitalism](../../../../../../../../../../social-science-services-section/services/critical-theory-services-section/services/black-radical-tradition-services-section/content/text/glossary/terms/racial-capitalism.md) — the system whose spatial effects Neel analyzes
+- [Racial capitalism](../../../../../../../../../../philosophy-services-section/services/black-philosophy-services-section/services/black-radical-tradition-services-section/content/text/glossary/terms/racial-capitalism.md) — the system whose spatial effects Neel analyzes
 - [Late liberalism](../../sociology/terms/late-liberalism.md) — the political order that produces hinterlands
 - [Economies of abandonment](../../sociology/terms/economies-of-abandonment.md) — [Povinelli](./elizabeth-povinelli.md)'s parallel concept of structural neglect

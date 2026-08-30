@@ -28,5 +28,5 @@ Gayle Rubin is an American anthropologist and cultural theorist whose two major 
 
 - [Feminist queer theory](../../sociology/schools/queer/schools/feminist/index.md) — the tradition her work grounds
 - [Judith Butler](./judith-butler.md) — who extends and contests Rubin's sex/gender distinction
-- [Compulsory heterosexuality](../../../../../../../../../../social-science-services-section/services/critical-theory-services-section/services/queer-services-section/content/text/glossary/terms/compulsory-heterosexuality.md) — a related feminist analysis of sexual regulation
+- [Compulsory heterosexuality](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/queer-services-section/content/text/glossary/terms/compulsory-heterosexuality.md) — a related feminist analysis of sexual regulation
 - [Social reproduction](../../sociology/terms/social-reproduction.md) — the labor organized through the sex/gender system

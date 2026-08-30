@@ -1185,7 +1185,7 @@ g = 1 − V(Together(a, b)) / V(Either(a, b))
 
 where V is a measure on the observable space. g = 0 means full sufficiency; g = 1 means the structures are disjoint. Values between 0 and 1 indicate partial residuation — partial mutual intelligibility.
 
-This measure appears across the framework's applications: as the [reflexive calibration](../../mathematics/terms/reflexive-calibration.md) index in measurement theory, as the [reflexive disequilibrium](../../../reflexive-disequilibrium.md) order parameter in cosmology, and as the diagnostic for [informational malfunction](../../../../../../../../../social-science-services-section/services/sociology-services-section/services/cybernetic-postliberalism-services-section/content/text/glossary/terms/informational-malfunction.md) in sociology.
+This measure appears across the framework's applications: as the [reflexive calibration](../../mathematics/terms/reflexive-calibration.md) index in measurement theory, as the [reflexive disequilibrium](../../../reflexive-disequilibrium.md) order parameter in cosmology, and as the diagnostic for [informational malfunction](../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/cybernetic-postliberalism-services-section/content/text/glossary/terms/informational-malfunction.md) in sociology.
 
 ---
 

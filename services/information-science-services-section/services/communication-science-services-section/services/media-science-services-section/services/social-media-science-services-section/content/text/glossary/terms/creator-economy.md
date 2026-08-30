@@ -32,7 +32,7 @@ The lived experience of working inside this economy is analyzed by [influencer](
 ## Boundary with market science
 
 This term describes the creator economy as a media-industry formation and labour system.
-Its marketing-effectiveness dimension — how brands should value and deploy influencer partnerships — is owned by [market-science-services-section](/home/emsenn/info/lib/emsenn/services/561-group/services/science-services-section/services/philosophy-services-section/services/relationality-services-section/services/agent-science-services-section/services/social-science-services-section/services/market-science-services-section).
+Its marketing-effectiveness dimension — how brands should value and deploy influencer partnerships — is owned by [market-science-services-section](/home/emsenn/info/lib/emsenn/services/561-group/services/science-services-section/services/philosophy-services-section/services/relationality-services-section/services/agent-science-services-section/services/social-science-services-section/services/economics-and-business-science-services-section/services/business-science-services-section/services/marketing-science-services-section).
 See the companion study note, [Study of Influencer and Creator Science](../../documents/articles/notes/2026/08/22/2026-08-22-note-on-the-study-of-influencer-and-creator-science.md), §5, §7, and §8, for the fuller discussion, and its "Gaps carried forward" section for the unresolved sizing-figure verification.
 
 ## Sources

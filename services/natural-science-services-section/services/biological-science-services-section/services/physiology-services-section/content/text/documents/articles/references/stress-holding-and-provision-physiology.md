@@ -3,7 +3,7 @@ title: "Stress, Holding, and Provision: An Annotated Physiology Bibliography"
 description: "Annotated bibliography of every citation behind the 2026-08-26 research note auditing the critical-theory program's claims about chronic threat, unpriced care, and structural holding against current stress physiology, occupational-health science, and social-buffering/natural-experiment literature — flagging contested and non-replicating items explicitly."
 date-created: 2026-08-26
 type: reference-guide
-in-service-of: lib/emsenn/services/561-group/services/science-services-section/services/philosophy-services-section/services/relationality-services-section/services/agent-science-services-section/services/social-science-services-section/services/critical-theory-services-section
+in-service-of: lib/emsenn/services/561-group/services/science-services-section/services/philosophy-services-section/services/relationality-services-section/services/agent-science-services-section/services/social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section
 name: stress-holding-and-provision-physiology
 keywords:
   - physiology

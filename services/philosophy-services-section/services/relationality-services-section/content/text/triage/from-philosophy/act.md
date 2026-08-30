@@ -42,7 +42,7 @@ where:
 
 **Authorship.** The act $(A, \alpha, t, \varphi)$ attributes $\varphi$ to $A$. This is the normative significance of authorship: $A$ is accountable for $\varphi$'s properties — its gap, its effects on other fiber elements, its consistency with prior acts. An element $\varphi \in H_t$ without an author is an ungrounded proposition; an act makes it an authored claim.
 
-**Success condition.** An act $(A, \alpha, t, \varphi)$ **succeeds** iff $\varphi \in H^*_t$ — the output is fully settled. A failed act produces $\varphi \notin H^*_t$: the output is submitted to the fiber but has positive [gap](../../../../../../../social-science-services-section/services/business-services-section/content/text/glossary/terms/gap.md). Most acts produce non-settled outputs ($\varphi \notin H^*_t$); settlement is achieved through subsequent nuclear processing.
+**Success condition.** An act $(A, \alpha, t, \varphi)$ **succeeds** iff $\varphi \in H^*_t$ — the output is fully settled. A failed act produces $\varphi \notin H^*_t$: the output is submitted to the fiber but has positive [gap](../../../../../../../social-science-services-section/services/economics-and-business-science-services-section/services/business-science-services-section/content/text/glossary/terms/gap.md). Most acts produce non-settled outputs ($\varphi \notin H^*_t$); settlement is achieved through subsequent nuclear processing.
 
 ## What this is
 
@@ -75,11 +75,11 @@ Acts partition by act-type $\alpha$. The principal act-types in this system, cla
 
 **Deontic acts** (world-to-word fit) — acts whose output binds future behavior:
 - [Commitment](./commitment.md) ($\alpha = \mathrm{commit}$): $A$ submits $\varphi$ as a forward-stable obligation — output lands in $\mathrm{TrShadow}_t \cup H^*_t$; the act constrains future states to be compatible with $\varphi$
-- Authorization ($\alpha = \mathrm{authorize}$): $A$ exercises a [HohfeldianPosition](../../../../../../../social-science-services-section/services/work-services-section/services/governance-services-section/services/hohfeldian-services-section/content/text/glossary/terms/hohfeldian-position.md) Power to alter another's normative position
+- Authorization ($\alpha = \mathrm{authorize}$): $A$ exercises a [HohfeldianPosition](../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/services/hohfeldian-services-section/content/text/glossary/terms/hohfeldian-position.md) Power to alter another's normative position
 
 **Constitutive acts** (double direction of fit) — acts whose output both represents and creates an institutional fact:
 - Declaration ($\alpha = \mathrm{declare}$): $A$ performs a StatusFunctionDeclaration; $\varphi$ is an institutional fact created by the act itself; the act's performance constitutes $\varphi \in H^*_t$
-- [Investiture](../../../../../../../social-science-services-section/services/work-services-section/services/governance-services-section/content/text/glossary/terms/investiture.md) ($\alpha = \mathrm{invest}^+$): $A$ assumes a role, binding themselves to a deontic profile; the investiture record $\iota(A, O, t) \in H^*_t$ is produced directly
+- [Investiture](../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/investiture.md) ($\alpha = \mathrm{invest}^+$): $A$ assumes a role, binding themselves to a deontic profile; the investiture record $\iota(A, O, t) \in H^*_t$ is produced directly
 
 **Operational acts** (procedural fit) — acts in the FARS agent loop:
 - Read ($\alpha = \mathrm{read}$): $A$ reads a resource, producing $\varphi$ as the resource's content representation
@@ -89,11 +89,11 @@ Acts partition by act-type $\alpha$. The principal act-types in this system, cla
 
 ## Acts and duties
 
-A [Duty](../../../../../../../social-science-services-section/services/work-services-section/services/governance-services-section/content/text/glossary/terms/duty.md) $D(A, p, N, \varphi, C)$ is the normative condition that $A$ must perform act $(A, \alpha, t, \varphi)$ for some appropriate $\alpha$ by some deadline. The duty specifies WHAT must be produced ($\varphi$) and FOR WHOM ($C$); the act is the event of producing it. Duty and act are on different levels: duty is the normative constraint; act is the event. [Discharge](../../../../../../../social-science-services-section/services/work-services-section/services/governance-services-section/content/text/glossary/terms/discharge.md) is the event where the act's output reaches zero gap — the duty is satisfied.
+A [Duty](../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/duty.md) $D(A, p, N, \varphi, C)$ is the normative condition that $A$ must perform act $(A, \alpha, t, \varphi)$ for some appropriate $\alpha$ by some deadline. The duty specifies WHAT must be produced ($\varphi$) and FOR WHOM ($C$); the act is the event of producing it. Duty and act are on different levels: duty is the normative constraint; act is the event. [Discharge](../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/discharge.md) is the event where the act's output reaches zero gap — the duty is satisfied.
 
 ## Acts and judgment
 
-[Judgment](../../../../../../../social-science-services-section/services/work-services-section/services/governance-services-section/content/text/glossary/terms/judgment.md) selects which act to perform: given zone $Z$, intent $I$, and situation $f$, judgment produces $\alpha$ (the chosen act-type). The act is then the execution of that judgment: $(A, \alpha, t, \varphi)$ where $\varphi$ is the output of acting under $\alpha$ at the current history.
+[Judgment](../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/judgment.md) selects which act to perform: given zone $Z$, intent $I$, and situation $f$, judgment produces $\alpha$ (the chosen act-type). The act is then the execution of that judgment: $(A, \alpha, t, \varphi)$ where $\varphi$ is the output of acting under $\alpha$ at the current history.
 
 ## Nuclear reading
 
@@ -132,7 +132,7 @@ A [Duty](../../../../../../../social-science-services-section/services/work-serv
 
 **Proposition 5 (Constitutive acts produce output in $H^*_t$ by the institution's constitutive rules).** For a declaration act $(A, \mathrm{declare}, t, \varphi)$: if the institution's constitutive rule $r_{\mathrm{declare}}$ is in $H^*_t$ (the rule is doubly stable), and the constitutive rule function $R_{CR}$ commutes with restriction maps (it is a natural transformation), then $R_{CR}(A, \mathrm{declare}, \varphi, t) \in H^*_t$ — the act produces doubly-settled output directly.
 
-*Proof.* By [Accountability](../../../../../../../social-science-services-section/services/work-services-section/services/governance-services-section/content/text/glossary/terms/accountability.md) Proposition 1 structure: if $r_{\mathrm{declare}} \in H^*_t$ and $R_{CR}$ commutes with restriction maps, then for any $a_B = R_{CR}(a_Q)$: $\sigma_t(a_B) = \sigma_t(R_{CR}(a_Q)) = R_{CR}(\sigma_t(a_Q)) = R_{CR}(a_Q) = a_B$ (since $a_Q \in H^*_t$). Same for $\Delta_t$. Therefore $a_B \in H^*_t$. $\square$
+*Proof.* By [Accountability](../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/accountability.md) Proposition 1 structure: if $r_{\mathrm{declare}} \in H^*_t$ and $R_{CR}$ commutes with restriction maps, then for any $a_B = R_{CR}(a_Q)$: $\sigma_t(a_B) = \sigma_t(R_{CR}(a_Q)) = R_{CR}(\sigma_t(a_Q)) = R_{CR}(a_Q) = a_B$ (since $a_Q \in H^*_t$). Same for $\Delta_t$. Therefore $a_B \in H^*_t$. $\square$
 
 *Content.* This formalizes Searle's "double direction of fit" for declarations. A declaration does not merely *represent* an institutional fact — it *constitutes* it. The nuclear reading: the act's constitutive force is the naturality of $R_{CR}$ — the constitutive rule commutes with the history's structure, so using the rule to constitute a fact at $t$ yields a doubly-stable result immediately, without nuclear processing. Felicity of the declaration = $r_{\mathrm{declare}} \in H^*_t$ (the constitutive rule is itself settled).
 

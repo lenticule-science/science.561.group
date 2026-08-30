@@ -17,7 +17,7 @@ contrasts-with: [clinical-guidelines, formal-medical-education]
 enables: clinical-learning
 ---
 
-Free Open-Access Medicine (FOAM) is an open clinical-learning [commons](../../../../../../../../../agent-science-services-section/services/social-science-services-section/services/critical-theory-services-section/services/marxism-services-section/services/political-economy-services-section/content/text/glossary/terms/commons.md). It is a way to circulate practical knowledge quickly across geography, hierarchy, and specialty boundaries.
+Free Open-Access Medicine (FOAM) is an open clinical-learning [commons](../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/marxism-services-section/services/political-economy-services-section/content/text/glossary/terms/commons.md). It is a way to circulate practical knowledge quickly across geography, hierarchy, and specialty boundaries.
 
 ## What FOAM is
 

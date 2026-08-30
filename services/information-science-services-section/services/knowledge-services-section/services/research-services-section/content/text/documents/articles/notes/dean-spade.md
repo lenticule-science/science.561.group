@@ -28,4 +28,4 @@ Dean Spade is a legal scholar, writer, and organizer. His work examines how admi
 - [Feminist queer theory](../../sociology/schools/queer/schools/feminist/index.md) — centers Spade's critique of administrative gender enforcement
 - [Mutual aid](../../sociology/terms/mutual-aid.md) — the practice he theorizes
 - [Susan Stryker](./susan-stryker.md) — fellow trans studies scholar
-- [Homonormativity](../../../../../../../../../../social-science-services-section/services/critical-theory-services-section/services/queer-services-section/content/text/glossary/terms/homonormativity.md) — the assimilationist politics Spade's work refuses
+- [Homonormativity](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/queer-services-section/content/text/glossary/terms/homonormativity.md) — the assimilationist politics Spade's work refuses

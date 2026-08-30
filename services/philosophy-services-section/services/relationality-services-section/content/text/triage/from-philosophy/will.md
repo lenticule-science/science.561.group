@@ -74,7 +74,7 @@ In fiber terms: second-order volition is the act of applying $\sigma_t$ with the
 
 ## The free will of officers
 
-For an officer in a pursuing vessel, will is the faculty that bridges intent and action. [Judgment](../../../../../../../social-science-services-section/services/work-services-section/services/governance-services-section/content/text/glossary/terms/judgment.md) identifies the right $\alpha \in Z \cap R(f)$; will is what moves the officer to actually select and execute $\alpha$ rather than being deflected by competing first-order desires (fear, convenience, short-term incentive).
+For an officer in a pursuing vessel, will is the faculty that bridges intent and action. [Judgment](../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/judgment.md) identifies the right $\alpha \in Z \cap R(f)$; will is what moves the officer to actually select and execute $\alpha$ rather than being deflected by competing first-order desires (fear, convenience, short-term incentive).
 
 An officer with good will: $\sigma_t(\alpha) = \alpha$ (endorsed the right action given the intent) and $\Delta_t(\alpha) = \alpha$ (will transfer-settles into execution — the officer acts).
 

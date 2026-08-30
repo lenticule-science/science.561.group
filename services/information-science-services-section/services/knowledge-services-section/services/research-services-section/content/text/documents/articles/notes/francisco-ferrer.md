@@ -10,7 +10,7 @@ keywords:
   - Anarchism
 ---
 
-Francisco Ferrer i Guàrdia (1859–1909) was a Catalan anarchist educator who founded the Escuela Moderna (Modern School) in Barcelona in 1901. Ferrer developed a model of [prefigurative education](../../../../../../../../../../social-science-services-section/services/education-services-section/services/pedagogy-services-section/content/text/glossary/terms/prefigurative-education.md) that rejected religious and state authority over learning.
+Francisco Ferrer i Guàrdia (1859–1909) was a Catalan anarchist educator who founded the Escuela Moderna (Modern School) in Barcelona in 1901. Ferrer developed a model of [prefigurative education](../../../../../../../../../../social-science-services-section/services/education-science-services-section/services/pedagogy-services-section/content/text/glossary/terms/prefigurative-education.md) that rejected religious and state authority over learning.
 
 ## Core ideas
 
@@ -29,5 +29,5 @@ Ferrer was executed by the Spanish state in 1909 on charges widely considered po
 ## Related
 
 - [anarchist pedagogies](../../education/disciplines/pedagogy/schools/anarchist-pedagogies/index.md) — the tradition he helped found
-- [prefigurative education](../../../../../../../../../../social-science-services-section/services/education-services-section/services/pedagogy-services-section/content/text/glossary/terms/prefigurative-education.md) — the approach his schools embodied
+- [prefigurative education](../../../../../../../../../../social-science-services-section/services/education-science-services-section/services/pedagogy-services-section/content/text/glossary/terms/prefigurative-education.md) — the approach his schools embodied
 - [Emma Goldman](./emma-goldman.md) — an ally who advanced the Modern School movement in the United States

@@ -26,4 +26,4 @@ From a [settler-colonial](../../sociology/topics/settler-colonialism/index.md) p
 - [Anarchism](/sociology/terms/anarchism.md)
 - [Green anarchism](/sociology/terms/green-anarchism.md)
 - [Mutual aid](/sociology/terms/mutual-aid.md)
-- [Land back](../../../../../../../../../social-science-services-section/services/critical-theory-services-section/services/povinellian-services-section/services/settler-colonialism-services-section/content/text/glossary/terms/land-back.md)
+- [Land back](../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/povinellian-services-section/services/settler-colonialism-services-section/content/text/glossary/terms/land-back.md)

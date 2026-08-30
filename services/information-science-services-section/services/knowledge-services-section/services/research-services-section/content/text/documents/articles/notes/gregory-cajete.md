@@ -15,7 +15,7 @@ Gregory Cajete is a Tewa educator and scholar whose work describes Indigenous ed
 
 - **Indigenous education as ecology**: in *Look to the Mountain: An Ecology of Indigenous Education* (1994), Cajete described Indigenous education as a process of learning through sustained relationship with the land, with community, and with the natural world. Education is not confined to institutions; it occurs through observation, participation, ceremony, and the transmission of knowledge across generations.
 - **Holistic learning**: Cajete emphasized that Indigenous education engages the whole person — intellectual, emotional, physical, spiritual — in contrast to Western models that isolate cognition from embodied experience.
-- **Place-based knowledge**: knowledge is understood as tied to specific places and the relationships those places sustain. This aligns with [land-based education](../../../../../../../../../../social-science-services-section/services/education-services-section/services/pedagogy-services-section/content/text/glossary/terms/land-based-education.md) as articulated by other Indigenous scholars.
+- **Place-based knowledge**: knowledge is understood as tied to specific places and the relationships those places sustain. This aligns with [land-based education](../../../../../../../../../../social-science-services-section/services/education-science-services-section/services/pedagogy-services-section/content/text/glossary/terms/land-based-education.md) as articulated by other Indigenous scholars.
 
 ## Notable works
 
@@ -26,4 +26,4 @@ Gregory Cajete is a Tewa educator and scholar whose work describes Indigenous ed
 ## Related
 
 - [Indigenous pedagogies](../../education/disciplines/pedagogy/schools/indigenous-pedagogies/index.md) — the tradition his work belongs to
-- [land-based education](../../../../../../../../../../social-science-services-section/services/education-services-section/services/pedagogy-services-section/content/text/glossary/terms/land-based-education.md) — the framework his work develops
+- [land-based education](../../../../../../../../../../social-science-services-section/services/education-science-services-section/services/pedagogy-services-section/content/text/glossary/terms/land-based-education.md) — the framework his work develops

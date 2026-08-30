@@ -82,7 +82,7 @@ When is it rational to abandon or revise a goal? Following Bratman's stability n
 
 2. **Relevance failure**: the goal $g$ no longer serves the agent's terminal goals or their operative [Intent](./intent.md). The goal was instrumental; the terminal goal it served has changed or been abandoned; $g$ is no longer on any relevant path.
 
-Both conditions require new information — revision is not rational merely because the goal is difficult or the progress is slow. A goal under strain from [Friction](./friction.md) is not a goal to be abandoned but a goal to be pursued with [Judgment](../../../../../../../social-science-services-section/services/work-services-section/services/governance-services-section/content/text/glossary/terms/judgment.md).
+Both conditions require new information — revision is not rational merely because the goal is difficult or the progress is slow. A goal under strain from [Friction](./friction.md) is not a goal to be abandoned but a goal to be pursued with [Judgment](../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/judgment.md).
 
 ## Nuclear reading
 

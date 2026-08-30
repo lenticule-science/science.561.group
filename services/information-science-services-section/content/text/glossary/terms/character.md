@@ -71,7 +71,7 @@ $\sigma$ and $\Delta$ are determined by the relational universe's axioms — the
 
 ## Character vs. role
 
-A [Role](../../../../../social-science-services-section/services/work-services-section/services/governance-services-section/content/text/glossary/terms/role.md) is an interface type: a named capability-signature specifying the minimum operations a role-holder must provide. A character is a nucleus specifying how an agent characteristically *performs* those operations.
+A [Role](../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/role.md) is an interface type: a named capability-signature specifying the minimum operations a role-holder must provide. A character is a nucleus specifying how an agent characteristically *performs* those operations.
 
 | | Role | Character |
 |---|---|---|

@@ -8,7 +8,7 @@ aliases:
 tags: []
 ---
 
-Mario Tronti (24 July 1931 – 7 August 2023) was an Italian political theorist and a founding figure of [operaismo](../../sociology/terms/operaismo.md) (Italian workerism). His "Strategy of Refusal" (1966) and *Operai e capitale* (*Workers and Capital*, 1966) established the theoretical framework that would develop into [autonomism](../../sociology/schools/autonomism/index.md): the claim that working-[class struggle](../../../../../../../../../../social-science-services-section/services/critical-theory-services-section/services/marxism-services-section/content/text/glossary/terms/class-struggle.md) is the driving force of capitalist development, and that the most radical form of that struggle is the [refusal of work](../../../../../../../../../../social-science-services-section/services/critical-theory-services-section/services/marxism-services-section/services/autonomism-services-section/content/text/glossary/terms/refusal-of-work.md) itself.
+Mario Tronti (24 July 1931 – 7 August 2023) was an Italian political theorist and a founding figure of [operaismo](../../sociology/terms/operaismo.md) (Italian workerism). His "Strategy of Refusal" (1966) and *Operai e capitale* (*Workers and Capital*, 1966) established the theoretical framework that would develop into [autonomism](../../sociology/schools/autonomism/index.md): the claim that working-[class struggle](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/marxism-services-section/content/text/glossary/terms/class-struggle.md) is the driving force of capitalist development, and that the most radical form of that struggle is the [refusal of work](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/marxism-services-section/services/autonomism-services-section/content/text/glossary/terms/refusal-of-work.md) itself.
 
 ## Core ideas
 
@@ -30,6 +30,6 @@ Tronti's inversion — treating [labor](../../sociology/terms/labor.md)'s [refus
 
 - [Operaismo](../../sociology/terms/operaismo.md) — the tendency he co-founded
 - [Autonomism](../../sociology/schools/autonomism/index.md) — the movement his work generated
-- [Refusal of work](../../../../../../../../../../social-science-services-section/services/critical-theory-services-section/services/marxism-services-section/services/autonomism-services-section/content/text/glossary/terms/refusal-of-work.md) — the practice he theorized
+- [Refusal of work](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/marxism-services-section/services/autonomism-services-section/content/text/glossary/terms/refusal-of-work.md) — the practice he theorized
 - [Alfredo Bonanno](./alfredo-bonanno.md) — [anarchist](../../sociology/schools/anarchism/index.md) theorist influenced by autonomist thought
 - [Anti-work](../../../glossary/terms/anti-work.md) — the broader tradition

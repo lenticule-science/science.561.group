@@ -9,7 +9,7 @@ aliases:
 tags: []
 ---
 
-Edward E. Jones (1927–1993) was an American social psychologist who, together with [Fritz Heider](./fritz-heider.md), shaped the development of [attribution theory](../../../../../../../../../../social-science-services-section/services/sociology-services-section/content/text/glossary/terms/attribution-theory.md). His work focused on how people infer others' dispositions from observed behavior and on the systematic biases that distort these inferences.
+Edward E. Jones (1927–1993) was an American social psychologist who, together with [Fritz Heider](./fritz-heider.md), shaped the development of [attribution theory](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/attribution-theory.md). His work focused on how people infer others' dispositions from observed behavior and on the systematic biases that distort these inferences.
 
 ## Core ideas
 
@@ -19,7 +19,7 @@ Edward E. Jones (1927–1993) was an American social psychologist who, together 
 
 ## Related theories
 
-- [Attribution theory](../../../../../../../../../../social-science-services-section/services/sociology-services-section/content/text/glossary/terms/attribution-theory.md)
+- [Attribution theory](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/attribution-theory.md)
 - [Fritz Heider](./fritz-heider.md)
 
 ## Notable works

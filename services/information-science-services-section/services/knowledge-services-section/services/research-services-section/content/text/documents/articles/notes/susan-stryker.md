@@ -26,7 +26,7 @@ Susan Stryker is an American historian and theorist whose work established trans
 
 ## Related
 
-- [Judith Butler](./judith-butler.md) — whose work on [performativity](../../../../../../../../../../social-science-services-section/services/critical-theory-services-section/services/queer-services-section/content/text/glossary/terms/performativity.md) Stryker both draws on and challenges
+- [Judith Butler](./judith-butler.md) — whose work on [performativity](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/queer-services-section/content/text/glossary/terms/performativity.md) Stryker both draws on and challenges
 - [Dean Spade](./dean-spade.md) — fellow trans studies scholar focused on administrative violence
 - [C. Riley Snorton](./c-riley-snorton.md) — whose work on trans history centers race
 - [Feminist queer theory](../../sociology/schools/queer/schools/feminist/index.md) — the tradition her work engages

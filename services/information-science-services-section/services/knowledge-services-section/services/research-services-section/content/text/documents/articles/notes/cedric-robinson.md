@@ -14,7 +14,7 @@ Cedric J. Robinson (1940–2016) was an American political theorist and professo
 
 ## Core ideas
 
-- **[Racial capitalism](../../../../../../../../../../social-science-services-section/services/critical-theory-services-section/services/black-radical-tradition-services-section/content/text/glossary/terms/racial-capitalism.md)**: Robinson argued that [capitalism](../../sociology/terms/capitalism.md) did not create racial difference but inherited and extended it from feudal European civilization. Capital accumulation has always proceeded through racialized dispossession — slavery, [colonialism](../../sociology/terms/colonialism.md), apartheid, and their afterlives are not aberrations but constitutive features of the capitalist system.
+- **[Racial capitalism](../../../../../../../../../../philosophy-services-section/services/black-philosophy-services-section/services/black-radical-tradition-services-section/content/text/glossary/terms/racial-capitalism.md)**: Robinson argued that [capitalism](../../sociology/terms/capitalism.md) did not create racial difference but inherited and extended it from feudal European civilization. Capital accumulation has always proceeded through racialized dispossession — slavery, [colonialism](../../sociology/terms/colonialism.md), apartheid, and their afterlives are not aberrations but constitutive features of the capitalist system.
 - **Black radical tradition**: in *Black Marxism* (1983), Robinson traced a tradition of Black resistance that precedes and exceeds Marxist categories, rooted in African epistemologies and communal practices rather than European revolutionary theory.
 
 ## Notable works

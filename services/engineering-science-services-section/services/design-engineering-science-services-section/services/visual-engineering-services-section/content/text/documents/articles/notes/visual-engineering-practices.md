@@ -34,7 +34,7 @@ cites:
 
 ## Abstract
 
-This paper defines "Visual Engineering Practices" as a composite discipline assembled from four lineages — [Bauhaus pedagogy](../../../../../../../content/text/documents/articles/notes/bauhaus-pedagogy.md), [Brutalism](../../../../../../../content/text/documents/articles/notes/brutalism.md) (as ethic and constraint-set), [Cubism](../../../../../../../content/text/documents/articles/notes/cubism.md) (as anti-closure tactics), and [Edward Tufte's information design](../../../../../../../content/text/documents/articles/notes/tuftean-information-design.md) (as integrity under constraint). The project is not to produce an eclectic style, but to enumerate portable constraints in their native terms and show how, in combination, they yield specific outcomes: [glance-direction](../../../glossary/terms/glance-direction.md) (rapid orienting), [non-linear reading](../../../glossary/terms/non-linear-reading.md) (designed routing rather than smooth consumption), [felt weight](../../../glossary/terms/felt-weight.md) (perceptual mass and structural emphasis), [peripheral uptake](../../../glossary/terms/peripheral-uptake.md) (pre-attentive and field-based [legibility](../../../../../../../../../../science-services-section/services/social-science-services-section/services/critical-theory-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md)), and [memetic repeatability](../../../glossary/terms/memetic-repeatability.md) (a learnable kit that travels). The paper proceeds in two passes: (1) a lineage catalog that states each inherited "move" and why it matters for the target outcomes; and (2) a synthesis that treats the composite as a system whose shared target is [orientation before interpretation](../../../glossary/terms/orientation-before-interpretation.md) and whose shared enemy is [premature closure](../../../glossary/terms/premature-closure.md). The final sections translate the constraints into repeatable layout "recipes," provide worked readings of three representative artifacts (as analytic templates), and name refusals necessary to keep the composite coherent.
+This paper defines "Visual Engineering Practices" as a composite discipline assembled from four lineages — [Bauhaus pedagogy](../../../../../../../content/text/documents/articles/notes/bauhaus-pedagogy.md), [Brutalism](../../../../../../../content/text/documents/articles/notes/brutalism.md) (as ethic and constraint-set), [Cubism](../../../../../../../content/text/documents/articles/notes/cubism.md) (as anti-closure tactics), and [Edward Tufte's information design](../../../../../../../content/text/documents/articles/notes/tuftean-information-design.md) (as integrity under constraint). The project is not to produce an eclectic style, but to enumerate portable constraints in their native terms and show how, in combination, they yield specific outcomes: [glance-direction](../../../glossary/terms/glance-direction.md) (rapid orienting), [non-linear reading](../../../glossary/terms/non-linear-reading.md) (designed routing rather than smooth consumption), [felt weight](../../../glossary/terms/felt-weight.md) (perceptual mass and structural emphasis), [peripheral uptake](../../../glossary/terms/peripheral-uptake.md) (pre-attentive and field-based [legibility](../../../../../../../../../../philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md)), and [memetic repeatability](../../../glossary/terms/memetic-repeatability.md) (a learnable kit that travels). The paper proceeds in two passes: (1) a lineage catalog that states each inherited "move" and why it matters for the target outcomes; and (2) a synthesis that treats the composite as a system whose shared target is [orientation before interpretation](../../../glossary/terms/orientation-before-interpretation.md) and whose shared enemy is [premature closure](../../../glossary/terms/premature-closure.md). The final sections translate the constraints into repeatable layout "recipes," provide worked readings of three representative artifacts (as analytic templates), and name refusals necessary to keep the composite coherent.
 
 **Keywords:** visual attention, perceptual organization, Bauhaus, Brutalism, Cubism, information design, typography, Gestalt, salience, micro/macro reading
 
@@ -108,7 +108,7 @@ Perceptual plausibility: scanning behavior is shaped by expectations and task de
 
 ### 2.4 Figure–ground discipline
 
-A key Bauhaus-adjacent discipline is to treat "background" as an active structural element rather than leftover emptiness. Figure/ground is not cosmetic; it is a primary mechanism of [legibility](../../../../../../../../../../science-services-section/services/social-science-services-section/services/critical-theory-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md). Negative space is used to carry alignment, segmentation, and emphasis.
+A key Bauhaus-adjacent discipline is to treat "background" as an active structural element rather than leftover emptiness. Figure/ground is not cosmetic; it is a primary mechanism of [legibility](../../../../../../../../../../philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md). Negative space is used to carry alignment, segmentation, and emphasis.
 
 Why it matters: figure/ground discipline directly supports [peripheral uptake](../../../glossary/terms/peripheral-uptake.md). In the periphery, fine detail is reduced; what remains are edges, masses, and separations. If ground is structured, the composition remains legible even when the reader is not inspecting small type.
 
@@ -126,7 +126,7 @@ Perceptual plausibility: the visual system can use coarse structure to guide sub
 
 ## 3. Brutalism: what we take, specifically
 
-This section does not equate [Brutalism](../../../../../../../content/text/documents/articles/notes/brutalism.md) with "utilitarianism" or mere minimalism. It treats Brutalism as a constraint-set and ethic: [legibility](../../../../../../../../../../science-services-section/services/social-science-services-section/services/critical-theory-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md) of structure, [refusal](../../../../sociology/terms/refusal.md) of ornamental deception, and an insistence that what is there is there for a reason.
+This section does not equate [Brutalism](../../../../../../../content/text/documents/articles/notes/brutalism.md) with "utilitarianism" or mere minimalism. It treats Brutalism as a constraint-set and ethic: [legibility](../../../../../../../../../../philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md) of structure, [refusal](../../../../sociology/terms/refusal.md) of ornamental deception, and an insistence that what is there is there for a reason.
 
 ### 3.1 Anti-ornament as attentional hygiene
 
@@ -138,7 +138,7 @@ Perceptual plausibility: attention can be captured by salient but non-informativ
 
 ### 3.2 Material bluntness
 
-A brutalist constraint is literalness: show structure as structure [@banham1955]. In graphic terms, this becomes a resistance to illustrative metaphor that replaces structural [legibility](../../../../../../../../../../science-services-section/services/social-science-services-section/services/critical-theory-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md) with narrative framing. The design declares its scaffolding (grids, blocks, rules, alignments) rather than hiding it under pictorial "atmosphere."
+A brutalist constraint is literalness: show structure as structure [@banham1955]. In graphic terms, this becomes a resistance to illustrative metaphor that replaces structural [legibility](../../../../../../../../../../philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md) with narrative framing. The design declares its scaffolding (grids, blocks, rules, alignments) rather than hiding it under pictorial "atmosphere."
 
 Why it matters: literal structure supports [glance-direction](../../../glossary/terms/glance-direction.md). If the artifact is structurally legible, the reader can immediately infer what is primary, secondary, and optional — before interpreting rhetorical content.
 
@@ -210,7 +210,7 @@ Why it matters: engineered jumps are central to [glance-direction](../../../glos
 
 ## 5. Edward Tufte and information design: what we take, specifically
 
-This pillar is ethics + clarity under constraints, not an aesthetic pillar. It prevents the composite from drifting into "poster style" that sacrifices integrity for affect. The objective is evidence-first [legibility](../../../../../../../../../../science-services-section/services/social-science-services-section/services/critical-theory-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md) and micro/macro coherence.
+This pillar is ethics + clarity under constraints, not an aesthetic pillar. It prevents the composite from drifting into "poster style" that sacrifices integrity for affect. The objective is evidence-first [legibility](../../../../../../../../../../philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md) and micro/macro coherence.
 
 ### 5.1 Data–ink discipline reframed as attention-budget discipline
 
@@ -224,7 +224,7 @@ Perceptual plausibility: attention is limited; reducing non-informative marks im
 
 Tufte's critique of chartjunk [@tufte1983] can be generalized: decorative salience that competes with structure is a form of theft. It steals perceptual bandwidth from relations that matter.
 
-Why it matters: salience theft undermines [orientation before interpretation](../../../glossary/terms/orientation-before-interpretation.md) by pulling attention toward rhetoric. Avoiding it supports honesty and structural [legibility](../../../../../../../../../../science-services-section/services/social-science-services-section/services/critical-theory-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md).
+Why it matters: salience theft undermines [orientation before interpretation](../../../glossary/terms/orientation-before-interpretation.md) by pulling attention toward rhetoric. Avoiding it supports honesty and structural [legibility](../../../../../../../../../../philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md).
 
 ### 5.3 Micro/macro reading
 
@@ -456,9 +456,9 @@ The composite is defined as much by refusals as by borrowings. Refusals are not 
 
 1. **Expressive ornament as a substitute for structure.** Ornament is not banned categorically, but it is disallowed when it creates closure without improving orientation.
 
-2. **Illusionism and scene-making** that converts structure into pictorial narrative. Depth tricks are refused when they undermine planar [legibility](../../../../../../../../../../science-services-section/services/social-science-services-section/services/critical-theory-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md) and routing control.
+2. **Illusionism and scene-making** that converts structure into pictorial narrative. Depth tricks are refused when they undermine planar [legibility](../../../../../../../../../../philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md) and routing control.
 
-3. **Narrative illustration** used to "explain" relations instead of constructing them. The composite prefers relational [legibility](../../../../../../../../../../science-services-section/services/social-science-services-section/services/critical-theory-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md) over storytelling.
+3. **Narrative illustration** used to "explain" relations instead of constructing them. The composite prefers relational [legibility](../../../../../../../../../../philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md) over storytelling.
 
 4. **Persuasive sleight-of-hand**: visual force that implies certainty, importance, or evidence beyond what the structure supports. Emphasis must match structural or evidential priority.
 
@@ -483,7 +483,7 @@ A kit spreads because it is learnable and re-performable. This is analogous to c
 
 ### 10.2 Memetic propagation reframed
 
-In popular [discourse](../../../../../../../../../../science-services-section/services/social-science-services-section/services/critical-theory-services-section/services/foucauldian-services-section/content/text/glossary/terms/discourse.md), "memes" are often treated as content that goes viral. This practice reframes propagation: a design kit propagates when others can reproduce the constraints in their own contexts. The artifact's content may change; the constraint system remains.
+In popular [discourse](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/foucauldian-services-section/content/text/glossary/terms/discourse.md), "memes" are often treated as content that goes viral. This practice reframes propagation: a design kit propagates when others can reproduce the constraints in their own contexts. The artifact's content may change; the constraint system remains.
 
 This helps explain why certain visual grammars recur across communities: they are not only aesthetically appealing; they reduce the cost of making legible artifacts under attention scarcity. The kit is selected for because it performs.
 
@@ -495,7 +495,7 @@ A constraint-led practice can be used for clarity or manipulation. The Tufte pil
 
 ## Appendix A: Minimal evaluation heuristics
 
-1. **Blur test** (macro [legibility](../../../../../../../../../../science-services-section/services/social-science-services-section/services/critical-theory-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md)): If you blur the artifact, can you still identify hierarchy and route?
+1. **Blur test** (macro [legibility](../../../../../../../../../../philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md)): If you blur the artifact, can you still identify hierarchy and route?
 2. **Scarcity test**: Count distinct devices (typefaces, weights, colors, mark types). Is each necessary?
 3. **Micro/macro test**: Does the overview truthfully summarize the detail?
 4. **Closure test**: Does the artifact reward decorative completion before structural reading?

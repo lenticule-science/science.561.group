@@ -40,11 +40,11 @@ The connection between closure operators and learning is the strongest of the cl
 
 Gold's identification in the limit (1967) defines learning as convergence: a learner receives data and produces hypotheses; it has *learned* when its hypothesis stabilizes — when further data produces no change. This is idempotence. Angluin (1980) sharpened this by characterizing which language classes are learnable from positive data, using "telltale" sets that function as generators — finite subsets from which the closure (the full language) can be recovered.
 
-The structural parallel is exact. A learner in Gold's framework applies a hypothesis-update operator to its current state plus new data. The operator is extensive (the learner never forgets data it has seen), monotone (more data yields a hypothesis at least as refined), and the learned state is the fixed point where the operator is idempotent. This is the same structure described in [training as closure](../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agent-science-services-section/services/social-science-services-section/services/education-services-section/content/documents/notes/2026-04-04-note-on-training-as-closure.md).
+The structural parallel is exact. A learner in Gold's framework applies a hypothesis-update operator to its current state plus new data. The operator is extensive (the learner never forgets data it has seen), monotone (more data yields a hypothesis at least as refined), and the learned state is the fixed point where the operator is idempotent. This is the same structure described in [training as closure](../../../../../../../../../social-science-services-section/services/education-science-services-section/content/documents/notes/2026-04-04-note-on-training-as-closure.md).
 
 ### Mastery learning
 
-Bloom's mastery learning (1968) describes empirical convergence: under mastery conditions, most learners reach the same performance standard given sufficient iterations. The bell curve of achievement under time-limited instruction reflects incomplete closure, not differences in capacity. The [training-as-closure](../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agent-science-services-section/services/social-science-services-section/services/education-services-section/content/documents/notes/2026-04-04-note-on-training-as-closure.md) text develops this connection in detail.
+Bloom's mastery learning (1968) describes empirical convergence: under mastery conditions, most learners reach the same performance standard given sufficient iterations. The bell curve of achievement under time-limited instruction reflects incomplete closure, not differences in capacity. The [training-as-closure](../../../../../../../../../social-science-services-section/services/education-science-services-section/content/documents/notes/2026-04-04-note-on-training-as-closure.md) text develops this connection in detail.
 
 ### Neural network training
 
@@ -169,7 +169,7 @@ The speculative extensions — topological persistence for behavior analysis, th
 
 ## See also
 
-- [Training as Closure](../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agent-science-services-section/services/social-science-services-section/services/education-services-section/content/documents/notes/2026-04-04-note-on-training-as-closure.md) — the educational theory
+- [Training as Closure](../../../../../../../../../social-science-services-section/services/education-science-services-section/content/documents/notes/2026-04-04-note-on-training-as-closure.md) — the educational theory
 - Model Training as Algebraic Closure — the computational theory
 - Nucleus — the algebraic mechanism for composed closures
 - Non-LLM Computation for Agent Duties — where deterministic computation replaces inference

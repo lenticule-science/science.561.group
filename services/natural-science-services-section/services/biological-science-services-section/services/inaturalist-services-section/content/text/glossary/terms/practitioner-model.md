@@ -45,7 +45,7 @@ Practice is not just technical. It involves accountability to the communities an
 
 ## Open science posture
 
-Practitioners are part of a public knowledge [commons](../../../../../../../social-science-services-section/services/critical-theory-services-section/services/marxism-services-section/services/political-economy-services-section/content/text/glossary/terms/commons.md). Favor documentation, reproducible methods, and clear licensing so others can responsibly reuse data without erasing context or uncertainty.
+Practitioners are part of a public knowledge [commons](../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/marxism-services-section/services/political-economy-services-section/content/text/glossary/terms/commons.md). Favor documentation, reproducible methods, and clear licensing so others can responsibly reuse data without erasing context or uncertainty.
 
 ## What goes wrong if you do this poorly
 

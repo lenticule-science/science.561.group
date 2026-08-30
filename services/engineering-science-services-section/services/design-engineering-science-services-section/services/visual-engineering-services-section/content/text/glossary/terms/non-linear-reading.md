@@ -24,5 +24,5 @@ The concept draws support from eye-movement research showing that scanning behav
 ## Related terms
 
 - [Glance-Direction](./glance-direction.md) — the initial orientation that precedes non-linear navigation
-- [Peripheral Uptake](./peripheral-uptake.md) — the field-level [legibility](../../../../../../../../../science-services-section/services/social-science-services-section/services/critical-theory-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md) that supports jump decisions
+- [Peripheral Uptake](./peripheral-uptake.md) — the field-level [legibility](../../../../../../../../../philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md) that supports jump decisions
 - [Memetic Repeatability](./memetic-repeatability.md) — the teachability of routing tactics

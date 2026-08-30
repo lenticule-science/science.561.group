@@ -24,5 +24,5 @@ emsenn invokes natality as the [anarchist](../../sociology/schools/anarchism/ind
 
 - [Prefigurative politics](../../sociology/terms/prefigurative-politics.md) — politics that enacts its goals in the present rather than deferring them
 - [Reproductive futurism](../../../../../queer-theory-services-section/content/text/glossary/terms/reproductive-futurism.md) — the logic natality opposes: politics as securing the future through reproduction
-- [Fascist grammar](../../../../../../../../../../../social-science-services-section/services/sociology-services-section/services/cybernetic-postliberalism-services-section/content/text/glossary/terms/fascist-grammar.md) — the rhetorical structure of inevitability that natality interrupts
+- [Fascist grammar](../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/cybernetic-postliberalism-services-section/content/text/glossary/terms/fascist-grammar.md) — the rhetorical structure of inevitability that natality interrupts
 - [Care ethics](../concepts/care-ethics/index.md) — Held connects natality to the relational conditions that make new beginnings possible

@@ -56,7 +56,7 @@ The category of models is denoted $ \mathbf{Mod}(S) $.
 <div class="remark">
 
 In narratology, $ \mathcal{C}_S $ represents the **fabula** (story logic),
-$ M $ a specific **sjužet** ([discourse](../../../../../../../../../../../../social-science-services-section/services/critical-theory-services-section/services/foucauldian-services-section/content/text/glossary/terms/discourse.md) realization),
+$ M $ a specific **sjužet** ([discourse](../../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/foucauldian-services-section/content/text/glossary/terms/discourse.md) realization),
 and $\Box_i$ modalities of viewpoint or epistemic framing.
 
 </div>

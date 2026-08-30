@@ -51,7 +51,7 @@ where:
 
 ## What this is
 
-An **Observation** is a witnessed fact — a local section $F(t)$ of an [Accord](../../../../../../../social-science-services-section/services/work-services-section/services/governance-services-section/content/text/glossary/terms/accord.md) type $F$ at some history $t$.
+An **Observation** is a witnessed fact — a local section $F(t)$ of an [Accord](../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/accord.md) type $F$ at some history $t$.
 
 An Observation is not a claim about what is true.
 It is evidence: something that was witnessed, measured, or recorded — something that grounds a [Proposition](relational-history-fiber-proposition-element-heyting-algebra-nucleus-input.md) by providing backing in the actual structure of the system.

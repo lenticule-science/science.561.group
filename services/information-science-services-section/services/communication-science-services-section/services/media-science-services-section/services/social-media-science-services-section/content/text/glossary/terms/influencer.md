@@ -30,7 +30,7 @@ The industry these creators work within is analyzed at scale by Stuart Cunningha
 ## Boundary with market science
 
 This term and its literature describe influencers as a media-science object: the practice, the labour, the platform mechanics.
-Influencer-*marketing* effectiveness and disclosure — brand lift, sponsored-content compliance and effects — is owned by [market-science-services-section](/home/emsenn/info/lib/emsenn/services/561-group/services/science-services-section/services/philosophy-services-section/services/relationality-services-section/services/agent-science-services-section/services/social-science-services-section/services/market-science-services-section), which this section cross-links at that boundary.
+Influencer-*marketing* effectiveness and disclosure — brand lift, sponsored-content compliance and effects — is owned by [market-science-services-section](/home/emsenn/info/lib/emsenn/services/561-group/services/science-services-section/services/philosophy-services-section/services/relationality-services-section/services/agent-science-services-section/services/social-science-services-section/services/economics-and-business-science-services-section/services/business-science-services-section/services/marketing-science-services-section), which this section cross-links at that boundary.
 See the companion study note, [Study of Influencer and Creator Science](../../documents/articles/notes/2026/08/22/2026-08-22-note-on-the-study-of-influencer-and-creator-science.md), §3–4 and §8, for the fuller discussion.
 
 ## Sources

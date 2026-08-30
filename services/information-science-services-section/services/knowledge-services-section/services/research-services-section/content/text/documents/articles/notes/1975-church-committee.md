@@ -7,7 +7,7 @@ aliases:
   - "Senate Select Committee to Study Governmental Operations with Respect to Intelligence Activities"
 ---
 
-The Church Committee (formally the United States Senate Select Committee to Study Governmental Operations with Respect to Intelligence Activities) was a Senate committee chaired by Frank Church that investigated abuses by the CIA, NSA, FBI, and IRS from 1975 to 1976. Its findings documented systematic violations of civil liberties by US intelligence agencies, including domestic [surveillance](../../../../../../../../../../social-science-services-section/services/critical-theory-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/surveillance.md), political harassment, and assassination plots.
+The Church Committee (formally the United States Senate Select Committee to Study Governmental Operations with Respect to Intelligence Activities) was a Senate committee chaired by Frank Church that investigated abuses by the CIA, NSA, FBI, and IRS from 1975 to 1976. Its findings documented systematic violations of civil liberties by US intelligence agencies, including domestic [surveillance](../../../../../../../../../../philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/surveillance.md), political harassment, and assassination plots.
 
 The committee's investigations revealed, among other things: the FBI's COINTELPRO program, which targeted civil rights leaders, anti-war activists, and political organizations through infiltration, disinformation, and harassment; CIA involvement in assassination plots against foreign leaders (Fidel Castro, Patrice Lumumba, and others); the NSA's Project SHAMROCK, which intercepted international telegrams of US citizens; and CIA programs of mind control experimentation (MKULTRA).
 
@@ -15,8 +15,8 @@ The Church Committee's final reports led to the creation of the Foreign Intellig
 
 ## Related
 
-- [COINTELPRO](../../../../../../../../../../social-science-services-section/services/critical-theory-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/cointelpro.md)
-- [Surveillance](../../../../../../../../../../social-science-services-section/services/critical-theory-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/surveillance.md)
+- [COINTELPRO](../../../../../../../../../../philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/cointelpro.md)
+- [Surveillance](../../../../../../../../../../philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/surveillance.md)
 - [COINTELPRO begins (1956)](./1956-cointelpro-begins.md)
 - [James Angleton](./james-angleton.md) — CIA counterintelligence chief whose forced resignation was connected to the Church Committee investigations
 - [Intelligence](/militarism/disciplines/intelligence/index.md) — the military discipline whose U.S. institutional history the Church Committee investigated
