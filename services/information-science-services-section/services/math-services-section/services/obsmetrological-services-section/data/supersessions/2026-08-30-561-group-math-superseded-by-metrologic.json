@@ -1,0 +1,220 @@
+{
+  "observedAt": "2026-08-30T00:00:00Z",
+  "ghost": {
+    "name": "@561-group/math",
+    "versions": ["0.0.1", "0.1.0"],
+    "publishedAt": {
+      "0.0.1": "2026-08-15T03:17:53.545Z",
+      "0.1.0": "2026-08-19T14:37:49.073Z"
+    },
+    "distTag": { "latest": "0.1.0" },
+    "claimedRepositoryDirectory": "lib/emsenn/services/561-group/services/science-services-section/services/math-services-section/services/voidmath-services-section/services/math-core",
+    "claimedRepositoryDirectoryExists": false,
+    "actualLineage": "lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/semiotic-computer-system-services-section/lib/legacy/2026-06-17-math-substrate/math-core"
+  },
+  "liveHome": {
+    "name": "@lenticule-science/metrologic",
+    "version": "0.1.1",
+    "path": "lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/math-services-section/services/obsmetrological-services-section/apps/metrologic",
+    "modules": [
+      "bilattice", "chu", "closure", "dframe", "dgen", "equality",
+      "hyperdoctrine", "number", "obstruction", "readout", "spectral",
+      "type-theory", "verdier"
+    ]
+  },
+  "coverage": [
+    { "module": "bilattice", "verdict": "covered", "detail": "barrel exports identical (36 names); bilattice/charge subpath exports identical (11 names). Diffs are only @561-group/math -> @lenticule-science/metrologic string renames in comments." },
+    { "module": "chu", "verdict": "covered", "detail": "barrel exports identical (28 names, incl. FOUR)." },
+    { "module": "hyperdoctrine", "verdict": "covered", "detail": "barrel exports identical (16 names)." },
+    { "module": "readout", "verdict": "covered", "detail": "barrel exports identical (7 names)." },
+    { "module": "type-theory", "verdict": "covered", "detail": "both sides are the identical intentional empty scaffold (`export {}`); no morphisms implemented on either side." },
+    { "module": "obstruction", "verdict": "covered", "detail": "barrel exports identical (17 names)." },
+    { "module": "number", "verdict": "covered", "detail": "barrel exports identical (natural/integer/rational/matrix namespaces); leaf modules identical." },
+    { "module": "spectral", "verdict": "covered", "detail": "barrel exports identical (inversion/location namespaces)." },
+    {
+      "module": "verdier",
+      "verdict": "metrologic-missing-exports",
+      "missingExportNames": ["FOUR"],
+      "detail": "ghost's verdier barrel exports a `FOUR` constant ([F.BOT, F.T, F.F, F.TOP]); metrologic renamed the identical array to `GAUGE_ORDER` (to avoid colliding with chu's own differently-shaped `FOUR`). Same value, different export name -- a ghost consumer importing `{ FOUR }` from verdier gets `undefined` from metrologic and must import `GAUGE_ORDER` instead. All other verdier exports (GAUGE, abelianize, charPoly, colimStructure, determinant, firingPatternSelfDual, fixedPointClosure, fixedSet, inducedPermutation, isPisot, isPrimitive, iterate, matEqual, matmul, orbit, perronConvergent, perronPoly, rank, smithNormalForm, stepNInvariant, substitute, substitutionRuleSelfDual, transpose, verdierDual, verdierHolds) are identical, both name and (per code diff) semantics."
+    },
+    {
+      "module": "closure",
+      "verdict": "diverged-semantics",
+      "function": "closureOrdinal",
+      "detail": "export name and the other exports (regimeOfOrdinal, leastFixedPoint, OMEGA, OMEGA_SQ, etc.) are unchanged, but metrologic's closureOrdinal return object gained a `least: boolean` field that the ghost's version does not have. Metrologic tracks whether a search block was exhausted without finding a fixed point (`skippedGap`); if a later ordinal is found fixed after such a gap, it reports `least: false` because that gap could hide the true least fixed point, whereas the ghost always implicitly claims leastness. This is an additive, non-breaking correctness enrichment (existing `{kappa,value,regime}` consumers, e.g. `leastFixedPoint` which only reads `.value`, are unaffected), but it is a real behavioral divergence for any ghost consumer that inspects the full closureOrdinal() return shape."
+    },
+    { "module": "dframe", "verdict": "covered", "detail": "barrel exports identical (6 names)." },
+    { "module": "dgen", "verdict": "covered", "detail": "barrel exports identical (6 names)." }
+  ],
+  "metrologicOnlyModules": [
+    {
+      "module": "equality",
+      "note": "not present in the ghost at all (newer work, added after the ghost's 0.1.0 publish). Exports: classicalEquality, diagonalMorphism, equalityAlongDiagonal, equalityAt, pairKey, pairKeys, paraconsistentEquality. Ported from Obsmetrologia/Language/Predicating/Equality.lean; derives equality from hyperdoctrine's existsAlong/orderOps rather than postulating it."
+    }
+  ],
+  "revivalBacklog": [
+    {
+      "consumer": "TAB (current)",
+      "packageJson": "lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-mud-engineering-services-section/lib/legacy/tab/package.json",
+      "packageName": "@561-group/tab",
+      "declaredDependency": "workspace:*",
+      "importedSubpaths": ["bilattice/charge"]
+    },
+    {
+      "consumer": "TAB (2026-06-17-archive-emsenn-net copy)",
+      "packageJson": "lib/emsenn/services/561-group/services/engineering-services-section/lib/legacy/2026-06-17-archive-emsenn-net/dev/ref/src/from-content-source/apps/tools/tab/package.json",
+      "packageName": "@561-group/tab",
+      "declaredDependency": "0.0.1",
+      "importedSubpaths": ["bilattice/charge"]
+    },
+    {
+      "consumer": "SWARM (current)",
+      "packageJson": "lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/services/agent-computer-platform-system-engineering-services-section/services/multi-agent-computer-platform-system-engineering-services-section/lib/legacy/SWARM/package.json",
+      "packageName": "@561-group/swarm",
+      "declaredDependency": "workspace:*",
+      "importedSubpaths": ["bilattice/charge", "bilattice/descent", "chu", "chu/four", "chu/transform"]
+    },
+    {
+      "consumer": "SWARM (2026-06-17-archive-emsenn-net copy)",
+      "packageJson": "lib/emsenn/services/561-group/services/engineering-services-section/lib/legacy/2026-06-17-archive-emsenn-net/dev/ref/src/from-content-source/apps/tools/swarm/package.json",
+      "packageName": "@561-group/swarm",
+      "declaredDependency": "0.0.1",
+      "importedSubpaths": ["bilattice/charge", "bilattice/descent", "chu", "chu/four", "chu/transform"]
+    },
+    {
+      "consumer": "shell",
+      "packageJson": "lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-interface-system-services-section/lib/legacy/shell/package.json",
+      "packageName": "@561-group/shell",
+      "declaredDependency": "workspace:*",
+      "importedSubpaths": ["chu/four"]
+    },
+    {
+      "consumer": "settling-shell",
+      "packageJson": "lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/semiotic-computer-system-services-section/lib/legacy/2026-06-17-settling-shell/package.json",
+      "packageName": "@561-group/shell",
+      "declaredDependency": "0.0.1",
+      "importedSubpaths": ["chu/four"]
+    },
+    {
+      "consumer": "aletheon archive",
+      "packageJson": "lib/emsenn/services/561-group/services/public-services-section/services/public-computer-services-section/services/public-web-services-section/services/public-web-game-services-section/services/aletheon-services-section/lib/legacy/2026-08-17-windows-561-group-apps-games-aletheon/package.json",
+      "packageName": "@561-group/aletheon",
+      "declaredDependency": "workspace:*",
+      "importedSubpaths": ["bilattice/charge", "bilattice/descent"],
+      "importSite": "server/world/kernel.mjs"
+    },
+    {
+      "consumer": "2026-06-17 computer kernel/vfs tree ('computer/' snapshot)",
+      "note": "18 micro-packages, one package.json each, sharing one lib/legacy/computer/ tree",
+      "subpackages": [
+        { "path": "computer/boot", "importedSubpaths": ["chu"] },
+        { "path": "computer/kernel/scheduler", "importedSubpaths": ["chu", "closure"] },
+        { "path": "computer/kernel/syscall", "importedSubpaths": ["chu", "chu/four"] },
+        { "path": "computer/kernel/process", "importedSubpaths": ["chu"] },
+        { "path": "computer/lib/shp", "importedSubpaths": ["chu"] },
+        { "path": "computer/vfs/io", "importedSubpaths": ["chu"] },
+        { "path": "computer/vfs/mount", "importedSubpaths": ["chu"] },
+        { "path": "computer/vfs/name", "importedSubpaths": ["chu"] },
+        { "path": "computer/vfs/descriptor", "importedSubpaths": ["chu"] },
+        { "path": "computer/vfs/fd-typing", "importedSubpaths": ["chu/four"] },
+        { "path": "computer/vfs/store", "importedSubpaths": ["chu"] },
+        { "path": "computer/mm/shared-memory", "importedSubpaths": ["chu"] },
+        { "path": "computer/mm/term-memory", "importedSubpaths": [], "note": "declares workspace:* dependency, no code import found" },
+        { "path": "computer/abi/posix/libc/stdio", "importedSubpaths": ["chu"] },
+        { "path": "computer/abi/posix/libc/fd", "importedSubpaths": [], "note": "declares workspace:* devDependency, no code import found" },
+        { "path": "computer/abi/posix/errno", "importedSubpaths": ["bilattice/charge", "chu/four"] },
+        { "path": "computer/abi/posix/sys/file", "importedSubpaths": [], "note": "declares workspace:* dependency, no code import found" },
+        { "path": "computer/plat/host-js", "importedSubpaths": ["chu"] }
+      ],
+      "packageJsonPrefix": "lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/semiotic-computer-system-services-section/lib/legacy/computer/"
+    },
+    {
+      "consumer": "2026-06-17 computer kernel/vfs tree ('2026-06-17-computer/' dated snapshot)",
+      "note": "same 18 micro-packages, frozen dated duplicate of the tree above, pinned to exact version 0.0.1 instead of workspace:*; identical import subpaths per subpackage",
+      "packageJsonPrefix": "lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/semiotic-computer-system-services-section/lib/legacy/2026-06-17-computer/"
+    },
+    {
+      "consumer": "astronomy archive (2026-06-21-astronomy)",
+      "packageJson": null,
+      "note": "orphaned script tree under _archive/; no package.json anywhere above these files declares @561-group/math as a dependency -- bare ESM specifier imports with no dependency manifest to repoint",
+      "importedSubpaths": ["bilattice/descent", "bilattice/void"],
+      "root": "lib/emsenn/services/561-group/services/science-services-section/services/natural-science-services-section/services/physical-science-services-section/services/astronomy-services-section/lib/legacy/2026-06-21-astronomy"
+    },
+    {
+      "consumer": "astronomy archive (2026-07-31-lenticule-science-corpus copy)",
+      "packageJson": null,
+      "note": "duplicate copy of the astronomy archive script tree under a different legacy snapshot; same orphaned-import situation",
+      "importedSubpaths": ["bilattice/descent", "bilattice/void"],
+      "root": "lib/emsenn/services/561-group/services/science-services-section/lib/legacy/2026-07-31-lenticule-science-corpus/astronomy"
+    },
+    {
+      "consumer": "claude-code (legacy)",
+      "packageJson": "lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-inference-system-services-section/services/llm-services-section/services/anthropic-services-section/services/claude-services-section/services/claude-code-services-section/lib/legacy/claude-code/package.json",
+      "packageName": "@561-group/claude-code",
+      "declaredDependency": "workspace:*",
+      "importedSubpaths": [],
+      "note": "dependency declared, no code import of @561-group/math found anywhere in the tree"
+    },
+    {
+      "consumer": "2026-06-17-claude-code-interface",
+      "packageJson": "lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-inference-system-services-section/services/agent-services-section/lib/legacy/2026-06-17-claude-code-interface/package.json",
+      "packageName": "@561-group/claude-code",
+      "declaredDependency": "0.0.1",
+      "importedSubpaths": [],
+      "note": "dependency declared, no code import of @561-group/math found anywhere in the tree"
+    },
+    {
+      "consumer": "2026-06-17-archive-emsenn-net apps facade",
+      "packageJson": "lib/emsenn/services/561-group/services/engineering-services-section/lib/legacy/2026-06-17-archive-emsenn-net/dev/ref/src/from-content-source/apps/package.json",
+      "packageName": "@561-group/apps",
+      "declaredDependency": "0.0.1",
+      "importedSubpaths": [],
+      "note": "workspace facade package; declares the dependency but only re-exports its language/ tools, not math directly -- actual usage lives in the swarm/tab subpackages already listed"
+    },
+    {
+      "consumer": "migrated-package-shells/theories",
+      "packageJson": "lib/emsenn/services/561-group/services/engineering-services-section/lib/legacy/2026-06-17-archive-emsenn-net/dev/ref/src/from-content-source/migrated-package-shells/theories/package.json",
+      "packageName": "@561-group/theories",
+      "declaredDependency": "0.0.1",
+      "importedSubpaths": [],
+      "note": "documentation-only package (theorem/concept markdown, no runnable code); README references @561-group/math as the conceptual substrate it stands on"
+    },
+    {
+      "consumer": "migrated-package-shells/theories/spacetime",
+      "packageJson": "lib/emsenn/services/561-group/services/engineering-services-section/lib/legacy/2026-06-17-archive-emsenn-net/dev/ref/src/from-content-source/migrated-package-shells/theories/spacetime/package.json",
+      "packageName": "@561-group/theory-of-spacetime",
+      "declaredDependency": "0.0.1",
+      "importedSubpaths": [],
+      "note": "documentation-only package (markdown only, no source files at all)"
+    }
+  ],
+  "outOfScopeFindings": [
+    {
+      "kind": "vendored inline copy, not an npm dependency",
+      "path": "lib/emsenn/services/561-group/services/public-services-section/services/public-computer-services-section/services/public-computer-games-services-section/services/education-platform-service/web/js/vendor/math/",
+      "note": "copies of bilattice/index.mjs and obstruction/cochain.mjs pasted directly into a vendor/ directory (header comments still say @561-group/math). No package.json declares @561-group/math here, so it is not part of the package-dependency revival backlog above, but it is stale source that should eventually be replaced by vendoring @lenticule-science/metrologic instead."
+    },
+    {
+      "kind": "stale package-lock.json entries only, package.json already migrated",
+      "paths": [
+        "lib/emsenn/services/561-group/services/public-services-section/services/public-computer-services-section/services/public-web-services-section/services/public-web-game-services-section/services/farstone-services-section/apps/terminal-client/package-lock.json",
+        "lib/emsenn/services/561-group/services/public-services-section/services/public-computer-services-section/services/public-web-services-section/services/public-web-game-services-section/services/tidepool-services-section/sites/tidepool.emsenn.net/package-lock.json"
+      ],
+      "note": "these sites' package.json no longer declares @561-group/math; only the lockfile still mentions it. Not active consumers, excluded from the revival backlog."
+    },
+    {
+      "kind": "comment-only text mention, not an import",
+      "path": "lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/services/memetic-computer-services-section/services/561-group-proof-pathing/src/ascend.ts",
+      "note": "mentions the string \"@561-group/math\" inside a code comment about a hoped-for future upstreaming; not an actual import, excluded from the backlog"
+    }
+  ],
+  "ruling": "consumers use @lenticule-science/metrologic; ghost retained pending legacy revival",
+  "limits": [
+    "Coverage is NOT fully 'covered': verdier has a renamed export (FOUR -> GAUGE_ORDER, same value) and closure's closureOrdinal has a diverged return shape (metrologic adds a `least: boolean` field). Per instructions, the deprecation signpost (npm deprecate) was therefore SKIPPED -- coverage is incomplete, not clean equality plus purely-additive modules.",
+    "Registry reachability was checked as an informational aside only (curl -s http://127.0.0.1:4873/-/ping returned {} -- registry is up), but the deprecation command itself was not run because of the coverage gap above, not because of registry/auth availability.",
+    "Export-name comparison was done via a regex-based static extractor (export {..}/export function/export const/export * as) run against both trees' source files, not via a live import/runtime introspection; template-literal or computed export patterns, if any existed, would not be caught (none were observed in either tree).",
+    "'diverged-semantics' scope was limited to a textual diff of every shared .mjs/.d.ts file after stripping @561-group/math <-> @lenticule-science/metrologic string substitutions; only closure/src/closure.mjs and verdier/src/{index,gauge}.mjs had non-cosmetic diffs. All other shared files diffed as identical apart from the package-name string.",
+    "The revival backlog was scoped to files actually importing an @561-group/math subpath (or declaring it as a package.json dependency); package-lock-only or comment-only mentions were excluded and logged separately under outOfScopeFindings. The vendored inline copy under education-platform-service/web/js/vendor/math/ has no package.json and so is not part of the package-repoint backlog, only listed for awareness.",
+    "The two 'computer' kernel/vfs snapshots (lib/legacy/computer/ and lib/legacy/2026-06-17-computer/) are near-identical duplicate trees of 18 micro-packages each; only the dated snapshot's package.json pins an exact ghost version (0.0.1) where the undated one uses workspace:*. Per-subpackage import usage was checked once against the undated tree and assumed identical for the dated snapshot (spot confirmed by diff -rq showing only package.json version-string differences and missing AGENTS.md files, no source divergence)."
+  ]
+}
