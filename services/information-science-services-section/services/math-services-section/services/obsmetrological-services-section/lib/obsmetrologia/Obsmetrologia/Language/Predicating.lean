@@ -4,6 +4,7 @@ import Obsmetrologia.Language.Predicating.Claim
 import Obsmetrologia.Language.Predicating.CurryHowardLambek
 import Obsmetrologia.Language.Predicating.Equality
 import Obsmetrologia.Language.Predicating.Fibration
+import Obsmetrologia.Language.Predicating.FregeanFourChu
 import Obsmetrologia.Language.Predicating.Guarded
 import Obsmetrologia.Language.Predicating.Hyperdoctrine
 import Obsmetrologia.Language.Predicating.HyperdoctrineDual

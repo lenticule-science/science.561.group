@@ -1,6 +1,6 @@
 ---
 name: why predication is not simply fregean
-description: Classical (Fregean / Boolean / two-valued) logic is not an alternative to predication category theory; it is a strict projection of the predication-hyperdoctrine onto the $\leq_t$-classical fragment of one of its two parallel adjoint systems. The projection is *derivable*, not postulated — a theorem with a precise statement in the current refereed literature on bilattice-valued first-order logic, and a fact graduate students of categorical logic are expected to know.
+description: Classical Boolean logic is a collapsed projection of the richer predication fiber. The standard ingredients have separate literatures; the forced Fregean-predication to FOUR to Chu composition is a result of this research lab.
 status: draft
 ---
 
@@ -8,7 +8,9 @@ There is a recurring confusion when someone first meets predication category the
 
 Classical / Fregean / Boolean two-valued logic is not an alternative to predication. **It is a projection** — one fragment of the predication-hyperdoctrine, recoverable by restricting to a specific sub-poset of fiber values and using one of the hyperdoctrine's two parallel adjoint systems. The recovery is a theorem, not an axiom. PCT does not postulate classical logic; classical logic falls out.
 
-This is what current graduate students of bilattice-valued categorical logic are expected to know — and what causes most confusion when someone newer to the area carries Fregean priors into reading PCT records.
+This projection claim belongs to the lab's predication program. It must not be
+misattributed to a generic curriculum or to the separate literatures on Fregean
+predication, bilattices, or categorical logic.
 
 ## The two-axis structure of fiber values
 
@@ -74,9 +76,15 @@ Two consequences for anyone authoring or reading records:
 
 The Fregean intuition that "frontmatter records facts" is approximately right but loses the bilattice-value structure. The more precise statement: frontmatter records the *existence and codomain of categorical morphisms*; the valuation that assigns bilattice values to cells is a separate apparatus (defined by the closure-rule system and the settling-evolution).
 
-## Where this lives in the literature
+## Provenance and novelty boundary
 
-The two-adjoint-system structure of the predication-hyperdoctrine, the derivation of classical equality from the $\leq_t$-Lawvere image, and the paraconsistent-equality dual are recent published results. The relevant references:
+The references below supply important ingredients and comparisons. They do not
+state the lab's full forced chain from Fregean predication through independent
+evidence and FOUR to the canonical Chu evaluation space. That composition is a
+561 Group / Lenticule Science result, now carried formally by
+`fregean_predication_forces_four_and_chu` and taught by the corresponding Verso
+chapter. Claims about the stronger two-adjoint-system projection must be judged
+against the lab's own Lean declarations rather than borrowed prestige.
 
 - **Belnap, N. D.** (1977). "A useful four-valued logic." In Dunn & Epstein (eds.), *Modern Uses of Multiple-Valued Logic*, 5–37. Dordrecht: Reidel. The original $\mathbf{FOUR}$ — establishes the bilattice value structure and the epistemic interpretation $\mathbf{t}, \mathbf{f}, \bot, \top$.
 - **Fitting, M.** (1991). "Bilattices and the semantics of logic programming." *Journal of Logic Programming* 11(2), 91–116. Introduces the conflation involution and bilattice-valued logic programming.
@@ -87,7 +95,10 @@ The two-adjoint-system structure of the predication-hyperdoctrine, the derivatio
 - **Běhounek, L., Daňková, M., Dvořák, A.** (2020+). Bilattice-valued first-order logics with extended truth machinery.
 - **Mac Lane, S.** (1971). *Categories for the Working Mathematician*. Graduate Texts in Mathematics 5. New York: Springer. Foundational category theory for hyperdoctrines.
 
-That classical equality is derivable rather than postulated — and that the same diagonal specialization produces paraconsistent equality via the $\leq_k$-Lawvere image — is the structural content of the predication-hyperdoctrine that distinguishes it from postulating-classical-equality bilattice first-order logics. Graduate students in bilattice-valued categorical logic are expected to know this distinction.
+That classical equality is derivable rather than postulated — and that the same
+diagonal specialization produces the paraconsistent dual through the knowledge
+order — is a claim of this predication-hyperdoctrine development. Its exact
+settled scope is whatever the linked Lean declarations prove.
 
 ## See also
 

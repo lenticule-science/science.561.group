@@ -1,5 +1,6 @@
 import { DEFAULT_TARGET_RETENTION, recallProbability, reviewCard } from "./js/srs.mjs";
 import { classifyStage } from "./js/lightcone.mjs";
+import { searchImmutableRoomIndex } from "./js/room-index-search.mjs";
 const view = document.querySelector("#view");
 const loading = document.querySelector("#loading");
 const search = document.querySelector("#search");
@@ -235,18 +236,17 @@ function showHall(rawId) {
   const rooms = hall.rooms.map((entry) => state.byKey.get(entry.key)).filter(Boolean);
   view.append(eyebrow, title, rigid, tags, sectionHead(`${rooms.length.toLocaleString()} rooms`, "Members of this concept hall"), roomList(rooms));
 }
-function searchRooms(query) {
-  const terms = query.toLocaleLowerCase().trim().split(/\s+/).filter(Boolean);
-  return state.index.rooms.filter((room) => {
-    const haystack = `${room.title} ${room.id} ${room.kind} ${(room.space.semanticPosition.tags ?? []).join(" ")}`.toLocaleLowerCase();
-    return terms.every((term) => haystack.includes(term));
-  }).sort((a, b) => (a.title.toLocaleLowerCase() === query.toLocaleLowerCase() ? -1 : 0) - (b.title.toLocaleLowerCase() === query.toLocaleLowerCase() ? -1 : 0) || a.title.localeCompare(b.title));
+function searchRooms(query, filters = {}) {
+  return searchImmutableRoomIndex(state.index.rooms, { query, ...filters }).results.map(({ room, exactTitle, score, reasons, evidence }) => ({
+    ...room,
+    searchMatch: { exactTitle, score, reasons, evidence },
+  }));
 }
 function showSearch(query) {
   const rooms = searchRooms(query); document.title = `${query} · Search · L-Space`; view.replaceChildren();
   const eyebrow = document.createElement("p"); eyebrow.className = "eyebrow"; eyebrow.textContent = "Search the vault";
   const title = document.createElement("h1"); title.className = "page-title"; title.textContent = query;
-  view.append(eyebrow, title, sectionHead(`${rooms.length.toLocaleString()} matching rooms`, "Titles, paths, kinds, and tags"), roomList(rooms));
+  view.append(eyebrow, title, sectionHead(`${rooms.length.toLocaleString()} matching rooms`, "Ranked by exact title, title text, semantic tokens, path, and summary"), roomList(rooms));
 }
 function showAnonymousHome() {
   document.title = "L-Space · Lenticule Science"; view.replaceChildren();

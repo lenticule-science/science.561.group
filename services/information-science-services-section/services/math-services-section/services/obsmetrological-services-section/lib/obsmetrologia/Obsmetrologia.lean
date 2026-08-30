@@ -20,6 +20,9 @@ introduces an `axiom`, `opaque`, or `constant`.
                                category and its object φ = (s, p, o). Category theory.
 * `Obsmetrologia.Positing`         — admits value: the FOUR bilattice of charges (= the four
                                phases met as value), the valuation, the ⊥ₖ seed.
+* `Obsmetrologia.FregeanFourChu`   — the restored keystone theorem: independent
+                               evidence on an oriented predication forces FOUR,
+                               and claim/valuation evaluation presents its Chu space.
 * `Obsmetrologia.Settling`         — the closure ◇∘□ to its fixed point; **generates order**:
                                `≤ₖ` proven a partial order, `∨ₖ`/`∧ₖ` its lub/glb,
                                Knaster–Tarski least fixed point.

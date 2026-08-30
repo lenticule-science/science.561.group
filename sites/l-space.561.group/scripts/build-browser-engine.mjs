@@ -17,6 +17,17 @@ const require = createRequire(import.meta.url);
 
 /** The import closure of `lightcone`, in dependency order. */
 export const ENGINE_MODULES = Object.freeze(["types", "srs", "stability", "lightcone"]);
+export const KNOWLEDGE_VAULT_BROWSER_MODULE = "room-index-search";
+
+export async function knowledgeVaultSearchSourcePath() {
+  const siteRoot = resolve(import.meta.dirname, "..");
+  const packageJson = JSON.parse(await readFile(resolve(siteRoot, "package.json"), "utf8"));
+  const dependency = packageJson.dependencies?.["@red-cup-engineering/knowledge-vault"];
+  if (typeof dependency !== "string" || dependency !== "0.1.2") {
+    throw new Error("L-Space must pin its immutable knowledge-vault release");
+  }
+  return require.resolve("@red-cup-engineering/knowledge-vault/room-index-search");
+}
 
 function lanternSourceRoot() {
   return dirname(require.resolve("@red-cup-engineering/lantern-561-group/srs"));
@@ -38,6 +49,10 @@ export async function buildBrowserEngine(outputRoot) {
     await writeFile(path, stripped);
     written.push({ name, path, bytes: stripped.length });
   }
+  const searchSource = await readFile(await knowledgeVaultSearchSourcePath(), "utf8");
+  const searchPath = resolve(outputRoot, `${KNOWLEDGE_VAULT_BROWSER_MODULE}.mjs`);
+  await writeFile(searchPath, searchSource);
+  written.push({ name: KNOWLEDGE_VAULT_BROWSER_MODULE, path: searchPath, bytes: searchSource.length });
   return written;
 }
 

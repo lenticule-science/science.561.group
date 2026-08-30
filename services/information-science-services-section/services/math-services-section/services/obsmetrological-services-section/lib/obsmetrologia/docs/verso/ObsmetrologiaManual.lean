@@ -7,6 +7,7 @@ import ObsmetrologiaManual.BookI.ReadingObsmetrologia
 import ObsmetrologiaManual.BookII.GenesisBoundary
 import ObsmetrologiaManual.BookIII.PredicationSite
 import ObsmetrologiaManual.BookIII.ChargeValue
+import ObsmetrologiaManual.BookIII.FregeanFourChu
 import ObsmetrologiaManual.BookIII.PositingSymmetryTower
 import ObsmetrologiaManual.BookIII.PredicationAdjointsEquality
 import ObsmetrologiaManual.BookIV.ClosureOperator
@@ -248,6 +249,8 @@ has generated the sites on which they can act.
 {include 1 ObsmetrologiaManual.BookIII.PredicationSite}
 
 {include 1 ObsmetrologiaManual.BookIII.ChargeValue}
+
+{include 1 ObsmetrologiaManual.BookIII.FregeanFourChu}
 
 {include 1 ObsmetrologiaManual.BookIII.PositingSymmetryTower}
 

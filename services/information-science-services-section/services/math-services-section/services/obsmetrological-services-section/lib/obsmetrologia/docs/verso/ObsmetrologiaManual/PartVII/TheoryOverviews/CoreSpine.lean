@@ -86,12 +86,18 @@ example : Articulating.Corner.all.length = 4 :=
 
 The corner of a cell is read by {name Obsmetrologia.Articulating.Cell.corner}`corner`, and
 the initial (neither-side-articulated) cell
-{name Obsmetrologia.Articulating.Cell.initial}`initial` sits at the `potential` corner — the
-start of the descent:
+{name Obsmetrologia.Articulating.Cell.initial}`initial` sits at the `absurd` corner — the
+knowledge-least start of the descent.  The separately typed
+{name Obsmetrologia.Articulating.PotentialCell}`PotentialCell` sits at `potential`
+and is the source from which predicating proceeds:
 
 ```lean
 example (u : Utterance) :
     (Articulating.Cell.initial u).corner
+      = Articulating.Corner.absurd := rfl
+
+example (u : Utterance) :
+    (Articulating.PotentialCell.initial u).toCell.corner
       = Articulating.Corner.potential := rfl
 ```
 
@@ -128,7 +134,29 @@ example (c : Articulating.Corner) : (c : Charge) = c :=
   rfl
 ```
 
-## 7. Settling: closure to a fixed regime
+## 7. Predication forces FOUR and presents Chu
+
+The oriented claim has no intrinsic value coordinate.  A
+{name Obsmetrologia.Valuation}`Valuation` supplies standing while preserving
+evidence for and evidence against independently.  The two coordinates round-trip
+losslessly through FOUR by
+{name Obsmetrologia.independentEvidenceCharge_slots}`independentEvidenceCharge_slots`
+and
+{name Obsmetrologia.independentEvidenceCharge_exhaustive}`independentEvidenceCharge_exhaustive`.
+
+The canonical evaluation matrix
+{name Obsmetrologia.predicationChu}`predicationChu` has claims as points,
+valuations as states, and `r claim valuation = valuation claim`.  Thus the same
+FOUR-valued standing of the same predication is already a Chu matrix.  The
+compact theorem restoring this once-diffused claim is
+{name Obsmetrologia.fregean_predication_forces_four_and_chu}`fregean_predication_forces_four_and_chu`:
+
+```lean
+example : FregeanPredicationForcesFourAndChu :=
+  fregean_predication_forces_four_and_chu
+```
+
+## 8. Settling: closure to a fixed regime
 
 Settling turns evidence and closure into a fixed regime. The knowledge order becomes a
 partial order {name Obsmetrologia.Charge.KLE}`KLE` — reflexive, transitive, and antisymmetric
@@ -138,7 +166,7 @@ partial order {name Obsmetrologia.Charge.KLE}`KLE` — reflexive, transitive, an
 _least_ fixed point above the seed ({name Obsmetrologia.Charge.settle_least}`settle_least`) —
 the regime the seed settles into.
 
-## 8. The recurring four, identified as one object
+## 9. The recurring four, identified as one object
 
 {name Obsmetrologia.Articulating.FourCorner}`FourCorner` is the canonical status pair `Bool × Bool` that
 every later quartet is an instance of.
@@ -155,7 +183,8 @@ and the four-point value positing admits are _one object_ — is
 
 ```lean
 example (c : Articulating.Cell) :
-    Articulating.FourCorner.toCorner c.fourCorner = c.corner :=
+    Articulating.FourCorner.toCorner c.fourCorner
+      = c.corner :=
   articulation_phase_is_charge c
 ```
 
@@ -173,6 +202,6 @@ example (u : Utterance) :
 The spine must not be read as "ordinary category theory plus some vocabulary."
 Category-like structure appears — but it appears _downstream_ of predication
 (§5), and the four-point value is _the same object_ as the articulation phase (§6,
-§8), not a separate semantic gadget bolted on. Every later recovered theory in the
+§9), not a separate semantic gadget bolted on. Every later recovered theory in the
 library is a re-meeting of this one cell at a greater depth; that is the claim the
 keystone (Part III) makes precise.

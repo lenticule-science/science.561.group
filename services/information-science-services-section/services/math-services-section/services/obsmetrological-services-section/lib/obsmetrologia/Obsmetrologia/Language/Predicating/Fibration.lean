@@ -1,6 +1,7 @@
 import Obsmetrologia.Language.Predicating.Cell
 import Obsmetrologia.Language.Predicating.Hyperdoctrine
 import Obsmetrologia.Language.Positing.Valuation
+import Obsmetrologia.Calculus.Logic.TwistProductResiduation
 
 /-!
 # PredicationFibration — the cloven Grothendieck fibration of valuation fibers
@@ -56,9 +57,9 @@ open Obsmetrologia.Valuation
 The fiber `Valuation = Claim → Charge` carries the **pointwise** lift of each
 bilattice-residuated operation on `Charge`. `meetK` (from `Hyperdoctrine`) and `joinK`
 (from `Positing`) already exist; we add the truth meet/join, negation, fusion `⊙`, and
-the right residual `⇒`. Fusion is the integral commutative residuated `⊗`, realized on
-the truth order as `meetT` (the integral fusion of the bilattice's truth lattice); the
-right residual `⇒` is the truth-order Heyting implication adjoint to it. -/
+the right residual `⇒`. Fusion and residual are the actual non-integral twist-product
+operations transported from `Carrier Two` to `Charge`; truth meet remains a distinct
+additive operation. In particular the fusion unit is `(1,1) = kTop`, not truth-top. -/
 
 /-- Pointwise truth-meet `∧ₜ` of valuations. -/
 def meetT (v w : Valuation) : Valuation := fun φ => Charge.meetT (v φ) (w φ)
@@ -69,14 +70,21 @@ def joinT (v w : Valuation) : Valuation := fun φ => Charge.joinT (v φ) (w φ)
 /-- Pointwise negation `∼` of valuations — swap the two charge slots. -/
 def negate (v : Valuation) : Valuation := fun φ => Charge.negate (v φ)
 
-/-- The **twist-product fusion** `⊙` on the fiber: the integral commutative fusion,
-realized as the truth-order meet `∧ₜ` (the integral `⊗` of the truth lattice). -/
-def fusion (v w : Valuation) : Valuation := fun φ => Charge.meetT (v φ) (w φ)
+/-- The **twist-product fusion** `⊙` on the fiber, transported from
+`TwistProduct.fuse` over `Two` and lifted pointwise. This is not truth meet. -/
+def fusion (v w : Valuation) : Valuation := fun φ =>
+  Order.FOUR.toCharge
+    (Order.TwistProduct.fuse
+      (Order.FOUR.ofCharge (v φ))
+      (Order.FOUR.ofCharge (w φ)))
 
-/-- The **right residual** `⇒` on the fiber: the truth-order Heyting implication
-adjoint to fusion, `a ⇒ c = ofSlots ((¬aₚ)∨cₚ) ((¬aₙ)∧cₙ)`, lifted pointwise. -/
-def residual (v w : Valuation) : Valuation :=
-  fun φ => Charge.ofSlots ((! (v φ).pos) || (w φ).pos) ((! (v φ).neg) && (w φ).neg)
+/-- The **right residual** `⇒` on the fiber, transported from
+`TwistProduct.imp` over `Two` and lifted pointwise. -/
+def residual (v w : Valuation) : Valuation := fun φ =>
+  Order.FOUR.toCharge
+    (Order.TwistProduct.imp
+      (Order.FOUR.ofCharge (v φ))
+      (Order.FOUR.ofCharge (w φ)))
 
 /-! ## 1. The `Fibration` structure — total-space/fiber data with cleavage
 

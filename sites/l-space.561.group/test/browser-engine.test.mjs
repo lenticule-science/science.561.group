@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
 import { resolve } from "node:path";
-import { ENGINE_MODULES, retargetSpecifiers } from "../scripts/build-browser-engine.mjs";
+import { ENGINE_MODULES, KNOWLEDGE_VAULT_BROWSER_MODULE, knowledgeVaultSearchSourcePath, retargetSpecifiers } from "../scripts/build-browser-engine.mjs";
 
 const engineRoot = resolve(import.meta.dirname, "..", "public", "js");
 const browser = await Promise.all(
@@ -60,6 +60,17 @@ test("the projected light cone agrees with the upstream package", async () => {
   assert.deepEqual([...mine.states.entries()], [...theirs.states.entries()]);
   assert.deepEqual([...mine.reachable], [...theirs.reachable]);
   assert.deepEqual([...browser.lightcone.rootRooms(rooms, doors)], [...upstream.rootRooms(rooms, doors)]);
+});
+
+test("the browser uses the knowledge-vault room-index search unchanged", async () => {
+  const projectedSource = await readFile(resolve(engineRoot, `${KNOWLEDGE_VAULT_BROWSER_MODULE}.mjs`), "utf8");
+  const upstreamPath = await knowledgeVaultSearchSourcePath();
+  const upstreamSource = await readFile(upstreamPath, "utf8");
+  assert.equal(projectedSource, upstreamSource);
+  const projected = await import(resolve(engineRoot, `${KNOWLEDGE_VAULT_BROWSER_MODULE}.mjs`));
+  const upstream = await import(upstreamPath);
+  const rooms = [{ id: "science/project.md", title: "Project", summary: "A mission", kind: "guide", collection: "science", space: { semanticPosition: { tags: ["task"] } } }];
+  assert.deepEqual(projected.searchImmutableRoomIndex(rooms, { query: "project task" }), upstream.searchImmutableRoomIndex(rooms, { query: "project task" }));
 });
 
 test("specifier retargeting rewrites only relative engine imports", () => {

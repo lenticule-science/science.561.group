@@ -1,6 +1,6 @@
-import { composeKnowledgeVault } from "@561-group/knowledge-vault/compose";
-import { validateKnowledgeVaultConfig } from "@561-group/knowledge-vault/config";
-import { evaluateVaultMazePassage } from "@561-group/knowledge-vault/passage";
+import { composeKnowledgeVault } from "@red-cup-engineering/knowledge-vault/compose";
+import { validateKnowledgeVaultConfig } from "@red-cup-engineering/knowledge-vault/config";
+import { evaluateVaultMazePassage } from "@red-cup-engineering/knowledge-vault/passage";
 import { compileVault } from "@561-group/vault-compiler/compile";
 import { recallProbability } from "@red-cup-engineering/lantern-561-group/srs";
 import { lSpaceConfig, lSpaceSurfacePolicy, roomVisibility } from "./config.mjs";
