@@ -16,9 +16,9 @@ governing where and how gathering may occur.
 
 ## Seating derivation
 
-Per `science-services-section`'s ownership rule, a note has one canonical
+Per `science-services-section`'s ownership rule, a note has one
 owner at its most specific defensible service section, and cross-disciplinary
-relevance is represented by relations rather than duplicate canonical
+relevance is represented by relations rather than duplicate
 copies. A library inventory of the biological-science forest
 (`biological-science-services-section`) found no dedicated foraging, wild-food,
 or ethnobotany section anywhere under `science-services-section`: genuine
@@ -36,23 +36,23 @@ sibling to `agricultural-science-services-section`, `botany-services-section`,
 
 ## Relations to existing content (not moved)
 
-Per the ownership rule, existing content stays at its current canonical
+Per the ownership rule, existing content stays at its current
 home; this section relates to it rather than duplicating or relocating it:
 
 - [`botany-services-section`](../botany-services-section/content/text/glossary/terms/allium-tricoccum.md)'s
   `allium-tricoccum.md` — the botanical/taxonomic/conservation-status record
-  for ramps remains canonical in botany; this section's `sustainable-harvest.md`
+  for ramps remains in botany; this section's `sustainable-harvest.md`
   and any future ramp-foraging content relate to it rather than re-deriving
   its taxonomy.
 - [`botany-services-section`](../botany-services-section/content/text/glossary/terms/japanese-knotweed.md)'s
   `japanese-knotweed.md` — the botanical/invasive-species record for
   knotweed, including its edibility and *itadori* culinary use, remains
-  canonical in botany.
+  in botany.
 - [`agricultural-science-services-section`'s `gardening-services-section`](../agricultural-science-services-section/services/gardening-services-section/content/text/glossary/terms/wild-garlic-ramps.md)'s
   `wild-garlic-ramps.md` — the most complete existing foraging-ethics
   document in the library, covering the "10 percent once a decade"
   sustainable-harvest guideline and Indigenous-appropriation concerns, but
-  scoped to garden cultivation. It remains canonical there; this section's
+  scoped to garden cultivation. It remains there; this section's
   `sustainable-harvest.md` term relates to it as the pre-existing applied
   precedent for the harvest-threshold science this section documents at the
   discipline level.

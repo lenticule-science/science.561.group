@@ -7,7 +7,7 @@
     "node": ">=24"
   },
   "dependencies": {
-    "@561-group/knowledge-vault": "file:../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-knowledge-systems-services-section/services/knowledge-vault-computer-system-services-section/apps/knowledge-vault",
+    "@red-cup-engineering/knowledge-vault": "0.1.2",
     "@561-group/vault-compiler": "file:../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-knowledge-systems-services-section/services/knowledge-vault-computer-system-services-section/services/vault-compiler",
     "@red-cup-engineering/exchange-google-callback-service": "file:../../../engineering-services-section/services/computer-engineering-services-section/services/computer-networking-services-section/services/oauth-services-section/services/google-oauth-services-section/services/exchange-google-callback-service",
     "@red-cup-engineering/judge-principal-admission-service": "file:../../../engineering-services-section/services/computer-engineering-services-section/services/computer-networking-services-section/services/oauth-services-section/services/judge-principal-admission-service",
@@ -23,7 +23,8 @@
   },
   "exports": {
     ".": "./src/index.mjs",
-    "./config": "./src/config.mjs"
+    "./config": "./src/config.mjs",
+    "./release-observation": "./src/release-observation.mjs"
   },
   "scripts": {
     "build:cloud": "npm run build:engine && node --stack-size=65500 --import tsx scripts/build-cloud-release.mjs",
@@ -32,6 +33,7 @@
     "cloudflare:config": "node scripts/configure-cloudflare.mjs",
     "cloudflare:deploy": "npm run build:cloud && npm run cloudflare:config && wrangler d1 migrations apply lenticule-science-vaultmaze --remote --config lib/cloudflare/wrangler.generated.jsonc && wrangler deploy --config lib/cloudflare/wrangler.generated.jsonc",
     "vps:start": "node lib/vps/server.mjs",
+    "mcp:start": "node scripts/serve-mcp.mjs",
     "test:vps": "node --test lib/vps/test/*.test.mjs",
     "test": "node --import tsx --test test/*.test.mjs"
   },

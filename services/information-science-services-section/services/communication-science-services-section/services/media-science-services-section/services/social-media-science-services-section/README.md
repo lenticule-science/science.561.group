@@ -8,7 +8,7 @@ because its object is a media form and its production/circulation system, even t
 
 ## Seating derivation
 
-Per `science-services-section`'s ownership rule, a note has one canonical owner at its most specific defensible service section.
+Per `science-services-section`'s ownership rule, a note has one owner at its most specific defensible service section.
 A library survey (2026-08-22) found no social-media, platform-studies, or influencer science anywhere under `science-services-section`.
 What exists nearby:
 

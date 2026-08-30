@@ -1,6 +1,6 @@
 # @lenticule-science/articulating-language-cone-service
 
-This package projects the one `articulate-utterance` operation through canonical
+This package projects the one `articulate-utterance` operation through
 RMN, signed A2A, ActivityPub, and MCP faces. All faces share the immutable apex
 identity derived from the established SCIS v2 object-kind/value/witness-root law.
 

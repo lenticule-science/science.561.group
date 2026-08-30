@@ -12,7 +12,7 @@ engineering section at
 
 Provider-generated reports and historical archives should retain their
 provenance and advisory status when they are indexed here; they do not become
-canonical engineering requirements merely by informing this research.
+engineering requirements merely by informing this research.
 
 See [the holdings index](HOLDINGS.md) for the classified dated notes, retained
 provenance, adjacent reports, and curated legacy research roots.

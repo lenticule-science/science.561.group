@@ -14,7 +14,7 @@ The direct children of this section follow the OECD *Fields of Research and
 Development* (FORD) classification in the *Frascati Manual 2015*, table 2.2.
 That standard defines nine second-level social-science fields:
 
-| FORD | Canonical field | Repository section |
+| FORD | field | Repository section |
 | --- | --- | --- |
 | 5.1 | Psychology and cognitive sciences | Not instantiated here; psychology presently remains with medical science pending a broader science-tree review. |
 | 5.2 | Economics and business | `economics-and-business-science-services-section` |
@@ -23,7 +23,7 @@ That standard defines nine second-level social-science fields:
 | 5.5 | Law | `law-science-services-section` |
 | 5.6 | Political science | `political-science-services-section` |
 | 5.7 | Social and economic geography | `social-and-economic-geography-science-services-section` |
-| 5.8 | Media and communications | Not instantiated until it has canonical material. |
+| 5.8 | Media and communications | Not instantiated until it has material. |
 | 5.9 | Other social sciences | `other-social-science-services-section` |
 
 Every direct child is therefore a recognized research field and uses the
@@ -38,7 +38,7 @@ R&D definitions. Do not use ISIC for this tree: ISIC classifies economic
 activities, not fields of knowledge. Do not use ISCED-F unless the thing being
 classified is an education programme or qualification.
 
-Cross-disciplinary material gets one canonical owner according to its main
+Cross-disciplinary material gets one owner according to its main
 research question and may link to other fields. A cross-cutting topic is not a
 reason to invent another top-level bucket.
 

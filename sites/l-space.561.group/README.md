@@ -54,7 +54,7 @@ Nothing here is a hand-transliterated port that can drift from the package it cl
 
 The deployed system separates four authorities which are too often placed in one excitingly flammable database:
 
-1. GitHub is the canonical, versioned corpus and current authoring surface.
+1. GitHub is the, versioned corpus and current authoring surface.
 2. `npm run build:cloud` deterministically compiles that checkout into an immutable, sharded L-Space release. A compact index discovers rooms; each room is a content-address-shaped static asset.
 3. The same Worker fetch module runs in Cloudflare and through the Node 22 adapter in `lib/vps`. Public TLS for `l-space.561.group` terminates at the rootless Caddy service on `cold-red-gate`, which currently routes to that local adapter because a legacy zone-level Cloudflare Access application also intercepts the account's `workers.dev` hostnames.
 4. The active VPS runtime stores per-reader VaultMaze state and opaque Discord sessions in persistent SQLite through the same narrow D1 interface used in Cloudflare. Review rows use a SHA-256 pseudonym of the provider-qualified subject. Discord access and refresh tokens are encrypted with `SESSION_SECRET`; the database stores only a hash of the browser session bearer. Google addresses and Discord user IDs never enter review rows.

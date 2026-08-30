@@ -1,6 +1,6 @@
 # Economics and Business Science Services Section
 
-This is the canonical home for OECD FORD 5.2, economics and business.
+This is the home for OECD FORD 5.2, economics and business.
 
 Economics, finance, monetary economics, business, and marketing are narrower
 fields below this section. A market is an object of economic and business

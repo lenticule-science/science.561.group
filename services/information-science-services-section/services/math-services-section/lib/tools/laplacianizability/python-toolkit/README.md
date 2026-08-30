@@ -24,7 +24,7 @@ Key functions:
 - `hodge_laplacian(d_maps, Qs, n)` — compute $\Delta_n = d_n^* d_n + d_{n+1} d_{n+1}^*$ as a sympy matrix.
 - `hodge_eigenvalues(d_maps, Qs, n)` — eigenvalues of $\Delta_n$.
 - `spectrum_signature(d_maps, Qs)` — identify the bipartite multipartition.
-- Canonical examples: `example_2_2_iso()`, `example_2_1_chain()`, `example_partial_delta_2()`, `example_partial_delta_3()`.
+- examples: `example_2_2_iso()`, `example_2_1_chain()`, `example_partial_delta_2()`, `example_partial_delta_3()`.
 
 ### `stratification_ii.py`
 Pataki product stratification + chain-complex Schubert refinement of $\overline{\mathcal H}$.
@@ -109,7 +109,7 @@ Cellular sheaves with stalkwise-diagonal Hilbert structure. Provides:
 - `pencil_polynomial` — generalized eigenvalue pencil $\det(d_n^T Q_{n-1} d_n - \lambda Q_n)$ as a polynomial in $\lambda$ with weight coefficients.
 - `realize_any_multiplicity` — does the pencil discriminant vanish for some positive weights? (Tests for *any* within-degree multiplicity > 1.)
 - `realize_full_degeneracy` — can all nonzero eigenvalues be made equal? (Tests for full $(d)$ multiplicity using $d-1$ algebraic relations.)
-- Canonical examples: `path_P(n)`, `cycle_C(n)`, `star_K(n)`, `complete_K(n)`, `boundary_simplex(k)`.
+- examples: `path_P(n)`, `cycle_C(n)`, `star_K(n)`, `complete_K(n)`, `boundary_simplex(k)`.
 
 Verified results in `scripts/iep_g_full_vs_any.py`:
 

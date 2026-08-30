@@ -8,11 +8,11 @@ alongside the section's existing cognitive-systems and neuroreflexivity material
 ## Seating derivation
 
 This section existed before this README as a bare seat holding agent character definitions under `lib/agency/` and triage
-(LLM experiments, collected references) with no canonical content and no README.
+(LLM experiments, collected references) with no content and no README.
 The group's entire working practice runs on LLM agents,
 and the 2026-08-22 research program depends on them at every gate,
 yet the library held almost no explicit, cited AI science — implicit operational knowledge far outran documented knowledge.
-The 2026-08-22 study batch corrects this, seating the foundation-model, interpretability-and-alignment, and evaluation literatures here as the section's first canonical content.
+The 2026-08-22 study batch corrects this, seating the foundation-model, interpretability-and-alignment, and evaluation literatures here as the section's first content.
 
 ## Relations to existing content (not moved)
 

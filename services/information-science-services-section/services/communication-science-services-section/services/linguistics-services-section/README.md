@@ -9,7 +9,7 @@ Leader Movement Team. The service preserves the source, exposes ambiguity and
 repair obligations, and returns candidate linguistic readings for admission by
 the customer-side office.
 
-Five recovered canonical RMN blobs remain immutable local evidence under
+Five recovered RMN blobs remain immutable local evidence under
 `data/rmn/sha-256`. They are deliberately excluded from the published tarball.
 `legacy-linguistics-relational-wire/v1` may validate and admit one of those
 payloads through the relational-value-graph provider, then records a new

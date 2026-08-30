@@ -22,7 +22,7 @@ run directly against a user.
   sign-panel settles to.
 - `lib/` — this node's own classes and instruments, per the mesh-scope rule.
 - `content/contracts/settle-rmn-daily-reading.rml` — the service law. One
-  canonical RMN effect bundle binds the date and tradition; the provider
+  RMN effect bundle binds the date and tradition; the provider
   returns one fully typed RMN reading or refusal, one FOUR-cover WIT, CBOR
   objects, and WitnessJournal N-Quads. JSON is only the ActivityStreams wire carrier.
 - `src/contract-daily-reading.mjs` — the sole executable boundary. There is

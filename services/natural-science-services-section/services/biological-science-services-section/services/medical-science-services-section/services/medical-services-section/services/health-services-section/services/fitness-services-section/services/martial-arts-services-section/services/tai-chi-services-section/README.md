@@ -15,10 +15,10 @@ services section rather than in this shared scientific section.
 skeletal-trace manifest, each NDJSON frame, and a practitioner-local practice
 session. The manifest declares the estimator provenance, controlled joint-set
 profile, coordinate-space profile, sensitivity, and an affirmative absence of
-raw images, video, audio, segmentation masks, and appearance embeddings. Frames contain only normalized canonical-vocabulary joint
+raw images, video, audio, segmentation masks, and appearance embeddings. Frames contain only normalized vocabulary joint
 observations with confidence; missing joints are omitted rather than invented.
 
-`lib/verify-skeletal-trace-bundle.mjs` uses the canonical
+`lib/verify-skeletal-trace-bundle.mjs` uses the
 `@red-cup-engineering/json-schema-services-section` for all structural
 validation, then checks the cross-record relationships JSON Schema cannot
 express: manifest/frame trace identity, strict elapsed-time monotonicity,

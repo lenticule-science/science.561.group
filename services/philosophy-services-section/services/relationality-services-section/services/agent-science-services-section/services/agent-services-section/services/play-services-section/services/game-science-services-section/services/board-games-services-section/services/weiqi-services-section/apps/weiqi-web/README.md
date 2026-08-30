@@ -92,7 +92,7 @@ apps/weiqi-web/
                               board's animation keyframes, magnifier, concept-toast, ladder, and
                               tsumego-trainer styling -- game-owned craft per house doctrine
       shelf-chrome.css        vendored verbatim from sites/play.561.group/chrome/shelf-chrome.css
-                              (byte-identical body, diffed against the canonical source this build);
+                              (byte-identical body, diffed against the source this build);
                               this build also corrected the shelf-mark SVG markup in all five pages'
                               header+footer (index/play/tsumego/learn/glossary.html), which still
                               carried a stale pre-Cowrie glyph (a rounded-rect "PB" shape) instead

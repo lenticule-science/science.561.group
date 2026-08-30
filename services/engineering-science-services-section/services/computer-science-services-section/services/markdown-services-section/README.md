@@ -1,6 +1,6 @@
 # Markdown science
 
-This section is the canonical science home for research and explanatory material about Markdown files, frontmatter, and Markdown vaults.
+This section is the science home for research and explanatory material about Markdown files, frontmatter, and Markdown vaults.
 
 Its active corpus is organized under `content/text/`:
 
