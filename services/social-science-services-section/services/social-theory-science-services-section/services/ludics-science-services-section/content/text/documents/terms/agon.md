@@ -48,3 +48,9 @@ two as answers to the same problem — the desire to have one's merit or
 fortune recognized — approached from opposite directions: agon proves
 merit by removing chance as an excuse; alea removes merit as a factor so
 that fortune alone is on display.
+
+The fuller cultural-theory treatment of this category, with its links into
+the games vocabulary, is the play-theory glossary's
+[agon](../../../../services/game-ludics-services-section/content/text/glossary/terms/agon.md)
+entry; this entry exists to ground the Girard–Caillois correspondence note
+beside its proof-theoretic counterparts.

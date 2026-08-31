@@ -45,7 +45,7 @@ cites:
   - "Privilege, Power, and Dungeons & Dragons"
 ---
 
-This text records the source base behind the current [tabletop role-playing games](./tabletop-role-playing-games.md) module so future revisions can start from a stable corpus instead of repeating web searches. It is a working research map, not a finished essay.
+This text records the source base behind the current [tabletop role-playing games](../../../glossary/topics/tabletop-role-playing-games.md) module so future revisions can start from a stable corpus instead of repeating web searches. It is a working research map, not a finished essay.
 
 ## Foundational academic sources
 

@@ -8,6 +8,13 @@ type: term
 tags: []
 defines:
   - "mechanic"
+references:
+  sicart2008:
+    authors: ["Miguel Sicart"]
+    title: "Defining Game Mechanics"
+    publication: "Game Studies"
+    year: 2008
+    note: "Game Studies 8(2). Defines mechanics as methods invoked by agents, designed for interaction with the game state — the standard formal treatment."
 ---
 
 A mechanic is a discrete system within a game's [rules](./rules.md) that governs how a specific kind of action or interaction works. Drawing cards is a mechanic. Rolling dice to resolve uncertainty is a mechanic. Bidding, auctioning, drafting, tile placement, and resource trading are all mechanics.

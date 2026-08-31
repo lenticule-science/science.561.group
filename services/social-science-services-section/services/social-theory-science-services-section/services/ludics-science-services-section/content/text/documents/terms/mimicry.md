@@ -47,3 +47,9 @@ ilinx rather than agon or alea: where ilinx pursues the destabilization
 of ordinary perception through vertiginous physical sensation, mimicry
 pursues it through the fictional displacement of identity — both
 categories offer an escape from the ordinary self, by different routes.
+
+The fuller cultural-theory treatment of this category, with its links into
+the games vocabulary, is the play-theory glossary's
+[mimicry](../../../../services/game-ludics-services-section/content/text/glossary/terms/mimicry.md)
+entry; this entry exists to ground the Girard–Caillois correspondence note
+beside its proof-theoretic counterparts.

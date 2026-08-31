@@ -10,7 +10,7 @@ teaches:
   - "History of Tabletop Role-Playing Games"
 ---
 
-Tabletop role-playing games emerged in the early 1970s from the overlap of miniatures wargaming, fantasy fandom, and referee-led hobby play. Early Dungeons & Dragons made that synthesis durable: it combined campaign play, character-centered decision-making, and a referee who could interpret or change rules as needed. For a sourced overview of that formation, see [Tabletop Role-Playing Games](./tabletop-role-playing-games.md).
+Tabletop role-playing games emerged in the early 1970s from the overlap of miniatures wargaming, fantasy fandom, and referee-led hobby play. Early Dungeons & Dragons made that synthesis durable: it combined campaign play, character-centered decision-making, and a referee who could interpret or change rules as needed. For a sourced overview of that formation, see [Tabletop Role-Playing Games](../../../glossary/topics/tabletop-role-playing-games.md).
 
 The first phase of TTRPG history is best understood as hobby consolidation. Conventions, hobby shops, club play, and zines gave the form places to circulate. Designers quickly built alternatives to D&D, but they usually inherited the same basic table structure: players controlled characters, a referee managed the world, and the rules operated as a flexible framework rather than as closed code.
 

@@ -47,3 +47,9 @@ tends toward paidia (tumultuous, unstructured exuberance) rather than
 ludus (disciplined, rule-bound structure), since the pursuit of
 disorientation resists the kind of stable rule-following that
 converts raw play into a formal game.
+
+The fuller cultural-theory treatment of this category, with its links into
+the games vocabulary, is the play-theory glossary's
+[ilinx](../../../../services/game-ludics-services-section/content/text/glossary/terms/ilinx.md)
+entry; this entry exists to ground the Girard–Caillois correspondence note
+beside its proof-theoretic counterparts.

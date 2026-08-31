@@ -9,6 +9,13 @@ tags: []
 type: term
 defines:
   - "game state"
+references:
+  osborne-rubinstein1994:
+    authors: ["Martin J. Osborne", "Ariel Rubinstein"]
+    title: "A Course in Game Theory"
+    publication: "MIT Press"
+    year: 1994
+    note: "The canonical formal treatment of the perfect/imperfect-information distinction the body paragraph uses."
 ---
 
 The game state is the complete set of information that describes the current situation of a game at any moment: whose [turn](./turn.md) it is, what resources each [player](./player.md) holds, what has happened so far, and what actions are available. If you could freeze a game and hand it to a stranger, the game state is everything they would need to continue playing correctly.

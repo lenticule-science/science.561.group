@@ -11,7 +11,7 @@ tags: []
 
 # Provenance Policy
 
-Scope: this document governs provenance and superseded-content practice for everything under `game-science-services-section/` (the games corpus) — glossary terms, articles, lessons, and any content type added later.
+Scope: this document governs provenance and superseded-content practice for everything under `gaming-services-section/` (the games corpus; seated as `game-science-services-section/` until the 2026-08-30 reseat under playing) — glossary terms, articles, lessons, and any content type added later.
 
 ## The problem
 
@@ -34,7 +34,7 @@ None of these records who changed what and when as well as git already does. Con
 
 4. **No new inline append blocks.** Do not append an "Imported source" section, or any equivalent, to a live document. If a document is genuinely built from external source material, put that material in `recovered-research/` and link to it; do not paste it into the bottom of the live file.
 
-5. **Existing variants stay in place.** Files already on disk in any of the four conventions are historical artifacts of a period before this policy. They are not to be deleted, merged, or migrated as a result of this document; they are described below so a reader can tell what they are without guessing. A future, separate decision may choose to migrate or retire them — this document does not make that call.
+5. **Pre-policy variants are retired.** Files in the last three conventions below were historical artifacts of a period before this policy; this document originally left them in place pending a separate decision. That decision was made 2026-08-30, in the owner-ordered normalization of the playing/gaming corpus: the `--archive-*` and `--preexisting-*` siblings and the inline append blocks were merged into their live files where they carried anything the live file lacked, and deleted. Their content remains recoverable through git history, per rule 1. `recovered-research/` directories, being genuinely external material, stay.
 
 ## The four conventions, mapped
 
@@ -47,7 +47,7 @@ None of these records who changed what and when as well as git already does. Con
 
 ## Reading old content
 
-When you find a file matching one of the last three rows above, treat the plain, un-suffixed file at the same location as the live, authoritative copy. The suffixed or appended sibling is context, not a competing source of truth: read it if you need the history, do not cite it as current, and do not edit it.
+The last three rows above describe conventions retired 2026-08-30; the table stays so a reader of git history can tell what those files were. Should a straggler surface, treat the plain, un-suffixed file at the same location as the live, authoritative copy, and retire the straggler the same way: fold in anything the live file lacks, delete, commit.
 
 ## Section-local documents
 

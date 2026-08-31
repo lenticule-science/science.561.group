@@ -1,0 +1,24 @@
+{
+  "type": "ModelConformanceRecord",
+  "recordedAt": "2026-08-30",
+  "model": "561-group-science-services-section/content/text/documents/articles/specifications/2026-08-30-science-topic-section-model.md",
+  "scope": "playing-services-section and gaming-services-section (relationality chain), ludics-science-services-section and its game-ludics subsection (social-theory chain)",
+  "state": {
+    "seat": "philosophy > relationality > agency > being > doing > playing > gaming, per the owner's 2026-08-30 reseat (game-science -> gaming; its ludics child -> game-ludics under ludics-science)",
+    "glossary": "playing carries play, playing, lusory-attitude + topic; gaming carries 22 terms (game and gaming added; the 2026-08-22 persistent-world cluster of 8 seated from philosophy triage) + topic with contains:",
+    "schemas": "7 paired term schemas at data/records/schema/glossary/terms/: play, playing (playing section); game, gaming, player, game-state, rules (gaming section); all parse, cross-refs resolve",
+    "references": "structured references: maps on play, playing, lusory-attitude, game, gaming, rules, mechanic, player, game-state, the 8 cluster terms, and the magic-circle-critics note",
+    "bibliographies": "5 argued carriers: suits1978, huizinga1938, caillois1958 (playing); salen-zimmerman2004, juul2005 (gaming); sources/ holds ghani2016.pdf and hernandez2026.pdf (open-access arXiv)",
+    "ontology": "gaming data/ontology/games reduced to one ontology.ttl + shapes.ttl pair (4 byte-identical suffixed duplicates deleted)",
+    "deduplication": "25 --archive/--preexisting variant files deleted, 10 Imported-source append blocks stripped, 8 identical Caillois triage duplicates deleted, magic-circle-debate merged into the critics note, card/rpg note triples merged to dated canonical seats, 13 flat lessons reseated under teaching-articles (12 tutorials, 1 guide), provenance policy updated to record the retirement",
+    "links": "audit of both subtrees: 454 broken relative links at session start, 7 at close - 2 deliberate weiqi-lsp SPEC fixtures, 5 in game-ludics untriaged paracosm bucket (filed as findings)"
+  },
+  "openDebts": [
+    "game-ludics content/text/triage/ bucket awaits a triage pass (paracosm material routes to teraum custody)",
+    "role-playing-games top-level curriculum files are tutorial-shaped but were left in place (only the ttrpg child was in scope)",
+    "5 paracosm/worldbuilding files under role-playing-games articles/notes belong to paracosm custody (finding filed in gaming data/records)",
+    "knowledge-services playing.org is an empty stub seat (finding filed)",
+    "griefing.md still in philosophy triage; god-problem and virtual-property link to it there"
+  ],
+  "limits": "Counts measured by the session's audit script (scratchpad audit-links.mjs) and verbatim agent reports; schemas validated by JSON.parse and existsSync on refs, not by a SHACL/schema validator."
+}

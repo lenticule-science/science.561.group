@@ -1,0 +1,52 @@
+{
+  "type": "card-rpg-normalization-findings",
+  "recordedAt": "2026-08-30",
+  "findings": [
+    {
+      "path": "gaming-services-section/services/role-playing-games-services-section/content/text/documents/articles/notes/hevi-mala.md",
+      "what": "Paracosm/storyworld material (the hevi-mala setting) filed as an RPG note. Content duplicates or derives from material already held by paracosm-science-services-section and the personal emsenn-services-section, not RPG-domain content.",
+      "whereItBelongs": "science-services-section/services/information-science-services-section/services/communication-science-services-section/services/media-science-services-section/services/paracosm-science-services-section, and/or public-services-section/services/personal-services-section/emsenn-services-section (which already holds content/text/glossary/terms/hevi-mala.md and content/text/documents/articles/essays/hevi-mala.md)"
+    },
+    {
+      "path": "gaming-services-section/services/role-playing-games-services-section/content/text/documents/articles/notes/hevi-mala-storyworld-guide.md",
+      "what": "Paracosm/storyworld guide material filed as an RPG note; not RPG-domain content.",
+      "whereItBelongs": "science-services-section/services/information-science-services-section/services/communication-science-services-section/services/media-science-services-section/services/paracosm-science-services-section"
+    },
+    {
+      "path": "gaming-services-section/services/role-playing-games-services-section/content/text/documents/articles/notes/praxonic-hevi-mala.md",
+      "what": "Paracosm/storyworld material filed as an RPG note; not RPG-domain content.",
+      "whereItBelongs": "science-services-section/services/information-science-services-section/services/communication-science-services-section/services/media-science-services-section/services/paracosm-science-services-section"
+    },
+    {
+      "path": "gaming-services-section/services/role-playing-games-services-section/content/text/documents/articles/notes/praxonic-worldbuilding-guide.md",
+      "what": "Worldbuilding guide duplicating (or a variant of) paracosm-science-services-section's own content/text/documents/articles/guides/praxonic-worldbuilding-guide.md; filed as an RPG note.",
+      "whereItBelongs": "science-services-section/services/information-science-services-section/services/communication-science-services-section/services/media-science-services-section/services/paracosm-science-services-section/content/text/documents/articles/guides/praxonic-worldbuilding-guide.md (existing canonical location)"
+    },
+    {
+      "path": "gaming-services-section/services/role-playing-games-services-section/content/text/documents/articles/notes/relational-worlding-grammar.md",
+      "what": "Worldbuilding-grammar material duplicating (or a variant of) paracosm-science-services-section's own content/text/documents/articles/guides/relational-worlding-grammar.md; filed as an RPG note.",
+      "whereItBelongs": "science-services-section/services/information-science-services-section/services/communication-science-services-section/services/media-science-services-section/services/paracosm-science-services-section/content/text/documents/articles/guides/relational-worlding-grammar.md (existing canonical location)"
+    },
+    {
+      "path": "gaming-services-section/content/text/glossary/terms/house-rule.md",
+      "what": "This term (owned by gaming-services-section, the parent of card-games-services-section and outside this pass's scope) links to card-games-services-section/content/text/documents/articles/notes/variants-rulesets-and-house-rules.md, a flat undated location. That file was moved, as part of this normalization pass, to content/text/documents/articles/teaching-articles/tutorials/variants-rulesets-and-house-rules.md (it is curriculum/tutorial-shaped, not a dated note). The link in house-rule.md ('See also [variants, rulesets, and house rules](../../../../services/card-games-services-section/content/text/documents/articles/notes/variants-rulesets-and-house-rules.md) in the card games curriculum.') is now broken. Left unfixed because gaming-services-section is outside this pass's authorized scope (card-games-services-section and role-playing-games-services-section only).",
+      "whereItBelongs": "gaming-services-section (fix the link to point at content/text/documents/articles/teaching-articles/tutorials/variants-rulesets-and-house-rules.md under card-games-services-section)"
+    },
+    {
+      "path": "public-services-section/services/personal-services-section/emsenn-services-section/content/text/glossary/terms/house-rule.md",
+      "what": "Pre-existing (not caused by this pass) broken/stale link using a legacy path form: 'See also [variants, rulesets, and house rules](../theories/card-games/texts/variants-rulesets-and-house-rules.md) in the card games curriculum.' That path never resolved against the current tree layout.",
+      "whereItBelongs": "public-services-section/services/personal-services-section/emsenn-services-section (link should be updated to the canonical card-games-services-section seat, or removed if no longer relevant)"
+    },
+    {
+      "path": "gaming-services-section/services/gambling-services-section/services/poker-services-section/content/text/documents/articles/notes/poker-overview.md and .../blackjack-services-section/content/text/documents/articles/notes/blackjack-overview.md",
+      "what": "Pre-existing (not caused by this pass), non-functional 'requires:' frontmatter entries using a stale absolute-style path ('/games/topics/card-games/curricula/card-games-overview.md') that never resolves on disk. Not a markdown link (audit tooling does not check frontmatter), so not caught by the link audit; noted here for completeness since it references the card-games curriculum by the same stale addressing scheme found (and cleaned) inside card-games-services-section and role-playing-games-services-section's own curriculum files during this pass.",
+      "whereItBelongs": "gambling-services-section (poker-services-section and blackjack-services-section); this is their frontmatter to clean up, or leave as known-stale migration residue"
+    }
+  ],
+  "limits": [
+    "Scope was exactly card-games-services-section and role-playing-games-services-section (including its tabletop-role-playing-games-services-section child), per the assigning session's instruction. No other section's files were edited; the finding rows above name the cross-section breakage this pass caused (house-rule.md in gaming-services-section) and pre-existing breakage/duplication this pass observed but did not touch.",
+    "Task 1a (RPG-subject files allegedly misfiled under card-games-services-section: role-playing-games.md, rpg-genealogy.md, rpg-history.md, rpg-overview.md, run-session-zero.md, safety-and-consent.md, scenes-and-choices.md, character-creation.md) described a state that did not exist on disk: none of these files were found under card-games-services-section. They already live at their correct seat, role-playing-games-services-section/content/text/documents/articles/notes/, with no card-games-side duplicate to compare against or delete. No action was taken or needed for 1a.",
+    "The same 8 files (role-playing-games.md, rpg-genealogy.md, rpg-history.md, rpg-overview.md, run-session-zero.md, safety-and-consent.md, scenes-and-choices.md, character-creation.md) at role-playing-games-services-section's own (parent, non-ttrpg-child) articles/notes/ are curriculum/tutorial-shaped, structurally identical to the tabletop-role-playing-games-services-section lesson files this pass moved into teaching-articles/tutorials/. They were left in place because the assigning task's explicit teaching-article-migration instruction (task 2) named only the ttrpg child's flat files, not this parent level. Flagged here as a candidate for a consistent follow-up pass, not acted on to avoid unauthorized scope expansion.",
+    "The audit-links.mjs tool only checks inline markdown [text](target) links; it does not check YAML frontmatter fields (e.g. 'requires:', 'dependencies:'), several of which carry stale absolute-style paths ('/games/topics/...') left over from an earlier addressing scheme. These were left untouched throughout (in scope and out of scope) since they are not functioning links in the current carrier format and touching them was outside the task's brief."
+  ]
+}

@@ -46,3 +46,9 @@ of chance and probability that grew up describing it, but Caillois's
 own interest is sociological and phenomenological — what it means for
 a culture to build activities around voluntary submission to fortune —
 rather than a claim about the underlying mechanism of randomness itself.
+
+The fuller cultural-theory treatment of this category, with its links into
+the games vocabulary, is the play-theory glossary's
+[alea](../../../../services/game-ludics-services-section/content/text/glossary/terms/alea.md)
+entry; this entry exists to ground the Girard–Caillois correspondence note
+beside its proof-theoretic counterparts.

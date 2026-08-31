@@ -25,7 +25,7 @@ Rendering weiqi instruction — a board, interactive lessons, a tsumego player, 
 
 ## Generative parent
 
-`weiqi-platform-services-section` (`lib/emsenn/services/561-group/services/science-services-section/services/agent-services-section/services/play-services-section/services/game-science-services-section/services/board-games-services-section/services/weiqi-services-section/services/weiqi-platform/`, per the materialization decision below).
+`weiqi-platform-services-section` (`lib/emsenn/services/561-group/services/science-services-section/services/philosophy-services-section/services/relationality-services-section/services/agency-services-section/services/being-services-section/services/doing-services-section/services/playing-services-section/services/gaming-services-section/services/board-games-services-section/services/weiqi-services-section/services/weiqi-platform/`, per the materialization decision below).
 
 The 2026-08-11 derivation's Clause 3.3 requires containment to match generation. The platform constitution names the Learn service as the first member of its own declared cover (§"Cover, overlaps, and stratum") and states outright that this section, not `weiqi-services-section` directly, is what "admits" it. Containment therefore runs: `weiqi-services-section` generates `weiqi-platform-services-section` (per that constitution's own "Generative parent"), which in turn generates `weiqi-platform-learn-service` as a declared cover member. No other section generates it, and this record does not re-derive what the platform constitution already settled about the section's own generative parent — it only extends the chain one level.
 
