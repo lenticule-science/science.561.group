@@ -81,10 +81,24 @@ const lSpaceGraphTools = Object.freeze([
 
 export const tools = Object.freeze([
   Object.freeze({
+    name: "search_l_space",
+    description: "Search the L-Space research corpus with ordinary words and return ranked document summaries.",
+    inputSchema: Object.freeze({ type: "object", required: Object.freeze(["query"]), properties: Object.freeze({
+      query: Object.freeze({ type: "string", minLength: 1 }),
+      match: Object.freeze({ enum: Object.freeze(["any", "all"]), default: "any" }),
+      collectionPrefix: Object.freeze({ type: "string" }),
+      pathPrefix: Object.freeze({ type: "string" }),
+      kind: Object.freeze({ type: "string", minLength: 1 }),
+      kinds: Object.freeze({ type: "array", minItems: 1, maxItems: 32, items: Object.freeze({ type: "string", minLength: 1 }) }),
+      limit: Object.freeze({ type: "integer", minimum: 1, maximum: 100, default: 20 }),
+    }), additionalProperties: false }),
+  }),
+  Object.freeze({
     name: "observe_l_space_release",
-    description: "Search the immutable L-Space release and return bounded room summaries.",
+    description: "Search the immutable L-Space release and return ranked document summaries.",
     inputSchema: Object.freeze({ type: "object", properties: Object.freeze({
       query: Object.freeze({ type: "string" }),
+      match: Object.freeze({ enum: Object.freeze(["any", "all"]), default: "any" }),
       collectionPrefix: Object.freeze({ type: "string" }),
       pathPrefix: Object.freeze({ type: "string" }),
       kind: Object.freeze({ type: "string", minLength: 1 }),
@@ -122,6 +136,7 @@ function sparqlPatterns(values) {
 }
 
 export async function callTool(name, input = {}) {
+  if (name === "search_l_space") return observeLSpaceRelease(input);
   if (name === "observe_l_space_release") return observeLSpaceRelease(input);
   if (name === "traverse_l_space_room") return traverseLSpaceRoom(input);
   const authoring = await graphAuthoring();

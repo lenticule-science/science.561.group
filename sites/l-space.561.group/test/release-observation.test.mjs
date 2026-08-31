@@ -11,6 +11,13 @@ test("L-Space owns its immutable release observation", () => {
   assert.match(observed.release, /^[0-9a-f]{64}$/u);
 });
 
+test("L-Space searches ordinary multi-word questions without requiring every word", () => {
+  const observed = observeLSpaceRelease({ query: "knowledge graph RDF SPARQL MCP", limit: 8 });
+  assert.ok(observed.returned > 0);
+  assert.equal(observed.filters.match, "any");
+  assert.ok(observed.rooms.every(({ search }) => search.evidence.length > 0));
+});
+
 test("L-Space traverses an indexed room through its own release", () => {
   const observed = observeLSpaceRelease({ query: "absurd", limit: 1 });
   assert.equal(observed.returned, 1);
@@ -23,6 +30,7 @@ test("L-Space traverses an indexed room through its own release", () => {
 test("the direct L-Space MCP face advertises release, concept, graph, and bounded SPARQL reading", async () => {
   const listed = await handleMcpRequest({ method: "tools/list" });
   assert.deepEqual(listed.tools.map(({ name }) => name), [
+    "search_l_space",
     "observe_l_space_release",
     "traverse_l_space_room",
     "query_l_space_concept",

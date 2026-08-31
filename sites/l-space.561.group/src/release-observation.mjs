@@ -78,11 +78,12 @@ function roomSummary(room) {
   });
 }
 
-export function observeLSpaceRelease({ releaseRoot, query = "", limit, collectionPrefix, pathPrefix, kind, kinds } = {}) {
+export function observeLSpaceRelease({ releaseRoot, query = "", match = "any", limit, collectionPrefix, pathPrefix, kind, kinds } = {}) {
   if (typeof query !== "string") throw new TypeError("query must be a string");
   const snapshot = releaseSnapshot(releaseRoot);
   const reading = searchImmutableRoomIndex(snapshot.index.rooms, {
     query,
+    match,
     limit: positiveBound(limit, 20, 100, "limit"),
     collectionPrefix,
     pathPrefix,
