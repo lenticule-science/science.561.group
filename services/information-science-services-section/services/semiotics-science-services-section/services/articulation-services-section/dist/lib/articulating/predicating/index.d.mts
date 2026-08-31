@@ -51,4 +51,6 @@ export type { FiniteValuation, PredicatingFiniteFibration, PredicatingQuantifyin
 export * as positing from "./positing/index.mjs";
 export * as typedTheory from "./typed-theory/index.mjs";
 export * as geometry from "./geometry/index.mjs";
+export { REIFIED_PREFIX, reify, isReified, INDEPENDENT_EVIDENCE_WITNESS_KIND, jcs, rowId, independentEvidenceRow, independentEvidenceSide, foldIndependentEvidence, sectionSpace, } from "./independent-evidence.mjs";
+export type { EavtRow, IndependentEvidenceSideName, IndependentEvidenceWitness, IndependentEvidenceRowInput, IndependentEvidenceRow, PredicationClaim, FoldedCell, FoldedSection, FoldIndependentEvidenceOptions, SectionSpaceOptions, SectionSpaceCell, SectionSpaceResult, } from "./independent-evidence.mjs";
 //# sourceMappingURL=index.d.mts.map
