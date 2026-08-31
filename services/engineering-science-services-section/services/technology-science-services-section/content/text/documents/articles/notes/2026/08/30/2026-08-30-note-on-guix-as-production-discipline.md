@@ -91,6 +91,23 @@ by commit hash, and any past deployment is reconstructible with
 `time-machine` at that hash. Hosts that do run Guix get atomic
 upgrade/rollback through profile generations instead of image swaps.
 
+## Derivations as judgments
+
+The deepest property Guix carries is easy to miss under the packaging
+vocabulary: a derivation is a judgment. Its inputs are premises named by
+content address, its builder is the inference rule, and its output's
+identity is a function of the derivation that produced it — so the store
+is a proof archive, provenance chains are proof terms, reproducibility
+checking is proof checking by re-derivation, and substitute servers are
+trusted provers whose signatures seal accepted proofs. Locality holds by
+construction: nothing can influence a build except through its declared
+inputs, which makes an item's dependency closure exactly its causal
+past. What derivations do NOT carry is time: a Guix proof has no
+observation window, no residence cost, no price on verification. Systems
+that need those kinetics must add them above the store (in-house, that
+layering is the qtOps engine's job; the mathematics is Obsmetrologia's —
+see the glass-sponge note of 2026-08-01, §7 and §16).
+
 ## The boundary with language ecosystems
 
 Guix packages the machine layer — interpreters, compilers, CLIs,
