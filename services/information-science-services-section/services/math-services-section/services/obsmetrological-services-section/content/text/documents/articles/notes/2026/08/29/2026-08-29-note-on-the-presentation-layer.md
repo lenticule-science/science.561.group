@@ -395,7 +395,7 @@ concurrent-games and event-structure line the unclosed-arena note cites.
 In-corpus:
 
 - `lib/emsenn/.../obsmetrological-services-section/content/text/documents/articles/notes/2026/08/22/2026-08-22-note-on-persistent-worlds-and-the-unclosed-arena.md` (§3, §7 — the obligation)
-- `lib/emsenn/.../semiotic-computer-system-services-section/content/text/documents/articles/programs/settlement-substrate.md`
+- `lib/emsenn/.../semiotic-computer-system-services-section/content/text/documents/articles/notes/2026/08/22/2026-08-22-note-on-settlement-substrate.md`
 - `lib/emsenn/.../semiotic-computer-system-services-section/content/text/documents/articles/guides/settlement-substrate-guide.md` (§4 — the only place the object is named)
 - `lib/emsenn/.../obsmetrological-services-section/lib/obsmetrologia/Obsmetrologia/Language/Settling.lean`
 - `lib/emsenn/.../obsmetrological-services-section/lib/obsmetrologia/Obsmetrologia/Cohomology/SettlingCohomologyH1.lean`
