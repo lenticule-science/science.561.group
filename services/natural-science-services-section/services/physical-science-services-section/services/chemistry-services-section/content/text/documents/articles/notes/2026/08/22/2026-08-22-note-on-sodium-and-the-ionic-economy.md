@@ -67,7 +67,7 @@ Every thought is, at the physical layer, salt moving through gated pores.
 
 Peter Mitchell's chemiosmotic theory (Nobel 1978) holds that life's energy store is not a chemical intermediate but an electrochemical gradient across a membrane.
 Nick Lane and collaborators argue this coupling is as conserved as the genetic code and originated at alkaline hydrothermal vents, where natural proton gradients across thin mineral walls preceded cells (Nobel Prize press release, 1978, chemiosmotic theory; Lane N, "Proton gradients at the origin of life," *BioEssays* 2017, PubMed 28503790 — verification verdict: **confirmed** — [the hydrogen note](2026-08-22-note-on-hydrogen-alone.md) treats this fully).
-The sodium economy of animal nerves and the proton economy of [VENT](../../../../../../../../../../../../../../../561-group-services-section/content/text/glossary/terms/vacuous-entanglement-normalizing-topos.md) are the same physical principle — charge-plus-concentration difference across a membrane, spent to do work — implemented with different ions in different eras of life.
+The sodium economy of animal nerves and the proton economy of [VENT](../../../../../../../../../../../../../../../engineering-services-section/content/text/glossary/terms/vacuous-entanglement-normalizing-topos.md) are the same physical principle — charge-plus-concentration difference across a membrane, spent to do work — implemented with different ions in different eras of life.
 Sodium is the proton's successor currency in the tissues that think fast.
 
 ## 5. Living at saturation: the two halophile strategies
@@ -91,7 +91,7 @@ Three readings, stated as readings.
 First: **salt is not the enemy of the fresh — it is the charge carrier.**
 Water with no ions carries no signal; the same sodium the grove's water must exclude is what every nervous system computes with.
 Second: the SEA is salty because **salt is what water remembers** — the dissolved, conservative, 55-to-260-million-year memory of every continent it has weathered — which is why desalination, wherever it happens, is an act of erasure and must be paid for ([the estuary note](../../../../../../../../../../../earth-science-services-section/services/hydrology-science-services-section/content/text/documents/articles/notes/2026/08/22/2026-08-22-note-on-the-estuary-and-the-salt-to-fresh-gradient.md) prices it).
-Third: the corpus's own attention-thermodynamics note already reserved the niche this chemistry fills — [BRINE](../../../../../../../../../../../../../../../561-group-services-section/content/text/glossary/terms/bilattice-residuated-ion-normalizing-extremum.md) — and the coining is made this session, on the saturation biology of §5 and the evaporite record of §1.
+Third: the corpus's own attention-thermodynamics note already reserved the niche this chemistry fills — [BRINE](../../../../../../../../../../../../../../../engineering-services-section/content/text/glossary/terms/bilattice-residuated-ion-normalizing-extremum.md) — and the coining is made this session, on the saturation biology of §5 and the evaporite record of §1.
 
 ## Sources and records
 

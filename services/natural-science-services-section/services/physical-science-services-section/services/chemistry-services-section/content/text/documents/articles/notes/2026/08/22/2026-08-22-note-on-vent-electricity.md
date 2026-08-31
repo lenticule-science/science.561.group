@@ -25,7 +25,7 @@ keywords:
 Deep-sea hydrothermal vents run a continuously measured electrochemical circuit that requires no light: a natural battery between the hot, reduced fluid inside a chimney and the cold, oxygenated seawater outside, conducted through the chimney's own sulfide minerals.
 This is settled, quantitative, and independent of any origin-of-life proposal — though it has become load-bearing for one of the estate's own, the [dark-compass hypothesis note](2026-08-22-note-on-the-dark-compass-hypothesis.md).
 The circuit is one of three vent energy channels this session mapped; the mineral substrate it runs through is covered in the [vent magnetization note](../../../../../../../../../../../earth-science-services-section/services/mineralogy-services-section/content/text/documents/articles/notes/2026/08/22/2026-08-22-note-on-vent-magnetization-and-host-rock.md), and the vent's photon budget — a much weaker channel — in the [vent light note](../../../../../../../../../../../biological-science-services-section/services/ecology-services-section/content/text/documents/articles/notes/2026/08/22/2026-08-22-note-on-vent-light-and-vent-photobiology.md).
-The [Vacuous Entanglement-Normalizing Topos](../../../../../../../../../../../../../../../561-group-services-section/content/text/glossary/terms/vacuous-entanglement-normalizing-topos.md) (**VENT**) term names the real hydrothermal vent this circuit runs in.
+The [Vacuous Entanglement-Normalizing Topos](../../../../../../../../../../../../../../../engineering-services-section/content/text/glossary/terms/vacuous-entanglement-normalizing-topos.md) (**VENT**) term names the real hydrothermal vent this circuit runs in.
 
 ## 1. The demonstration chain
 

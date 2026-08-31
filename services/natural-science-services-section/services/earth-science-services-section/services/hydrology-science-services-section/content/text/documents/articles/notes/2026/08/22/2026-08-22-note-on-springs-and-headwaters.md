@@ -23,7 +23,7 @@ keywords:
 
 ## 0. The valley's missing end
 
-The [estuary note](2026-08-22-note-on-the-estuary-and-the-salt-to-fresh-gradient.md) closed the river's mouth; this note closes its source — the end the [tao synthesis note](../../../../../../../../../../../../../engineering-science-services-section/services/computer-science-services-section/services/natural-computing-science-services-section/content/text/documents/articles/notes/2026/08/22/2026-08-22-note-on-the-world-of-the-tao-and-the-hydrological-circuit.md) left as the named unfinished arc, and the science behind the [SPRING](../../../../../../../../../../../../../../../561-group-services-section/content/text/glossary/terms/settled-percolation-regime-instantiating-neighborhood-germs.md) coining made this same day.
+The [estuary note](2026-08-22-note-on-the-estuary-and-the-salt-to-fresh-gradient.md) closed the river's mouth; this note closes its source — the end the [tao synthesis note](../../../../../../../../../../../../../engineering-science-services-section/services/computer-science-services-section/services/natural-computing-science-services-section/content/text/documents/articles/notes/2026/08/22/2026-08-22-note-on-the-world-of-the-tao-and-the-hydrological-circuit.md) left as the named unfinished arc, and the science behind the [SPRING](../../../../../../../../../../../../../../../engineering-services-section/content/text/glossary/terms/settled-percolation-regime-instantiating-neighborhood-germs.md) coining made this same day.
 Source material: workflow-4's `spring` sweep in the [session records](../../../../../../../../../../../../../../data/records/2026-08-22-natural-computing-world-session/workflow-4-research-queue-round.json), with access statuses per claim; three key primaries (Peterson 2001, Alexander 2007, Meyer 2007) were paywalled and their figures are carried at search-synthesis confidence, flagged in place.
 
 ## 1. What a spring is, and its one defining property
@@ -67,7 +67,7 @@ Meyer et al. (2007) on headwater importance is likewise paywalled and pending.
 
 The circuit's source end now has its science, and the reading writes itself against the corpus: the aquifer is the **settled store** — rain that fell and settled out of the weather into the slow, dark, thermally flat regime — and baseflow is the settled majority quietly sustaining every visible river, exactly as the estate's archives sustain its visible work.
 The spring is where that regime instantiates at a point, at the regime's own temperature; the endemic springsnail is what grows on a local section that never merges with its neighbors; and the hyporheic zone is the WEDGE's freshwater cousin — an exchange interface where two waters interpenetrate and the chemistry happens in the overlap.
-The [SPRING coining](../../../../../../../../../../../../../../../561-group-services-section/content/text/glossary/terms/settled-percolation-regime-instantiating-neighborhood-germs.md) resolves the definitional fork this note's material presents (place versus regime) in the regime's favor, with the place-sense as its expression — see the term for the resolution.
+The [SPRING coining](../../../../../../../../../../../../../../../engineering-services-section/content/text/glossary/terms/settled-percolation-regime-instantiating-neighborhood-germs.md) resolves the definitional fork this note's material presents (place versus regime) in the regime's favor, with the place-sense as its expression — see the term for the resolution.
 
 ## Sources and records
 

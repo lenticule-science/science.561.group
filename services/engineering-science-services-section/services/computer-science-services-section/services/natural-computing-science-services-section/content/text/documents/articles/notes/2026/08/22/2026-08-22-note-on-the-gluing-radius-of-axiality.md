@@ -48,7 +48,7 @@ Every branch is the conjecture; the measurement discriminates the branches.
 
 In estate terms: handedness is a **section of an orientation sheaf**, and the origin mechanism determines **the size of the cover the section glues over** — the gluing radius.
 Nebular breaking yields a global section; planetary breaking a per-world section; grain-scale breaking yields local sections whose mismatches on overlaps are a genuine H¹, later repaired by amplification and competition until one global section survives.
-Orientation-as-content is already load-bearing house doctrine — the predication cell's (s,p,o) orientation, and [OPAL](../../../../../../../../../../../../../../../561-group-services-section/content/text/glossary/terms/oriented-player-affine-locale.md)'s local order without global registration is precisely the grain-scale rung of this ladder rendered in stone.
+Orientation-as-content is already load-bearing house doctrine — the predication cell's (s,p,o) orientation, and [OPAL](../../../../../../../../../../../../../../../engineering-services-section/content/text/glossary/terms/oriented-player-affine-locale.md)'s local order without global registration is precisely the grain-scale rung of this ladder rendered in stone.
 So the conjecture in one line: **axiality is orientation's gluing radius, and the gluing radius is a fossil of where you came from.**
 
 ## 3. The competition branch

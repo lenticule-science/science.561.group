@@ -24,9 +24,9 @@ keywords:
 
 Is the crust at a hydrothermal vent magnetized?
 The honest answer is that the question is underspecified: the relationship between hydrothermal activity and magnetization **inverts by host-rock lithology**.
-A blanket claim in either direction is wrong — this note exists to replace the estate's earlier blanket framing with the sourced, site-by-site picture (§4).
+A blanket claim in either direction is wrong — this note exists to replace the vault's earlier blanket framing with the sourced, site-by-site picture (§4).
 Its companions are the [vent electricity note](../../../../../../../../../../../physical-science-services-section/services/chemistry-services-section/content/text/documents/articles/notes/2026/08/22/2026-08-22-note-on-vent-electricity.md) and the [vent light note](../../../../../../../../../../../biological-science-services-section/services/ecology-services-section/content/text/documents/articles/notes/2026/08/22/2026-08-22-note-on-vent-light-and-vent-photobiology.md), which cover the vent's other two energy channels, and the [dark-compass hypothesis note](../../../../../../../../../../../physical-science-services-section/services/chemistry-services-section/content/text/documents/articles/notes/2026/08/22/2026-08-22-note-on-the-dark-compass-hypothesis.md), which is the reason magnetization matters to the estate at all.
-A [Vacuous Entanglement-Normalizing Topos](../../../../../../../../../../../../../../../561-group-services-section/content/text/glossary/terms/vacuous-entanglement-normalizing-topos.md) (**VENT**) is the estate's term for the real hydrothermal vent as terrain; this note is one physical layer of that terrain.
+A [Vacuous Entanglement-Normalizing Topos](../../../../../../../../../../../../../../../engineering-services-section/content/text/glossary/terms/vacuous-entanglement-normalizing-topos.md) (**VENT**) is the estate's term for the real hydrothermal vent as terrain; this note is one physical layer of that terrain.
 
 ## 1. Basalt-hosted fields: burn holes
 

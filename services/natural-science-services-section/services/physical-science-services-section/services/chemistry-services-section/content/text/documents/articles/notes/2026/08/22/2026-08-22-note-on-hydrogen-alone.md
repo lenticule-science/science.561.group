@@ -24,7 +24,7 @@ keywords:
 
 ## 0. The first element, the first fuel
 
-The estate's [VENT](../../../../../../../../../../../../../../../561-group-services-section/content/text/glossary/terms/vacuous-entanglement-normalizing-topos.md) term already gestures at proton gradients across mineral membranes.
+The estate's [VENT](../../../../../../../../../../../../../../../engineering-services-section/content/text/glossary/terms/vacuous-entanglement-normalizing-topos.md) term already gestures at proton gradients across mineral membranes.
 This note supplies the element underneath the gesture.
 Hydrogen's case splits in two: hydrogen the geochemical fuel (what the vents make and what the first life ate), and hydrogen the bond (what makes water anomalous and what carries the fastest signal in it).
 
@@ -90,7 +90,7 @@ This session's verification corrected the magnitude upward by six orders: the ci
 Graded **citation corrected**: the verifier fetched PMC1303673, "What Really Prevents Proton Transport through Aquaporin?", directly and found "the paper's own calculated ratio of proton-to-water penetration times is ~10⁹... roughly a billion-fold difference, not 'roughly 1000-fold.' The claim understates the magnitude found in its own cited source by about six orders of magnitude."
 The channel defeats the fastest signal in water while passing the water itself, at near-billion-fold fidelity.
 
-The estate connection is direct, not thematic: [BAMBOO](../../../../../../../../../../../../../../../561-group-services-section/content/text/glossary/terms/bilattice-articulation-model-belief-orienting-operation.md)'s Lsi1 silicon channel is a NIP-clade aquaporin, and the NIP clade's silicon/boron permeability is a documented retuning of the ar/R selectivity filter of this same architecture (verification verdict: **confirmed** — "NIP aquaporin ar/R selectivity filter sets Si/B/As specificity; Lsi1 silicon permeability [confirmed]").
+The estate connection is direct, not thematic: [BAMBOO](../../../../../../../../../../../../../../../engineering-services-section/content/text/glossary/terms/bilattice-articulation-model-belief-orienting-operation.md)'s Lsi1 silicon channel is a NIP-clade aquaporin, and the NIP clade's silicon/boron permeability is a documented retuning of the ar/R selectivity filter of this same architecture (verification verdict: **confirmed** — "NIP aquaporin ar/R selectivity filter sets Si/B/As specificity; Lsi1 silicon permeability [confirmed]").
 The channel that blocks the proton computation and passes the silicon is one protein family, read twice by the estate — once in the desalination story ([the estuary note](../../../../../../../../../../../earth-science-services-section/services/hydrology-science-services-section/content/text/documents/articles/notes/2026/08/22/2026-08-22-note-on-the-estuary-and-the-salt-to-fresh-gradient.md)), once in the silica story (BAMBOO).
 
 ## 8. What this gives the estate
