@@ -17,7 +17,7 @@ The 2026-08-22 study batch corrects this, seating the foundation-model, interpre
 ## Relations to existing content (not moved)
 
 - The parent's triage memo on the relational dynamics of in-context learning remains where it is; the foundation-model study supplies the citable literature behind that topic.
-- `artificial-agent-science-services-section` (agent-science forest) owns agents *as agents* — architectures, tool use, multi-agent coordination; this section owns the underlying models and their measurement.
+- `artificial-agent-science-services-section` (agency forest) owns agents *as agents* — architectures, tool use, multi-agent coordination; this section owns the underlying models and their measurement.
 - The character definitions under `lib/agency/` are operational artifacts, not science; they stay as found.
 - `news-media-science-services-section`'s accountable-agentic-newsrooms memo consumes this section's evaluation science for its gate designs.
 

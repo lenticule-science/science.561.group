@@ -32,7 +32,7 @@ synthesis — did not originate here. It is the **market-teardown**
 pattern established by Lenticule Science's game-sciences program (Ilinx
 Research) for its own board- and video-game competitive research, most
 fully worked out in the
-[Weiqi Market Teardown](../../../../../agent-services-section/services/play-services-section/services/game-science-services-section/services/board-games-services-section/services/weiqi-services-section/content/text/documents/articles/notes/weiqi-market-teardown.md),
+[Weiqi Market Teardown](../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/services/being-services-section/services/doing-services-section/services/playing-services-section/services/gaming-services-section/services/board-games-services-section/services/weiqi-services-section/content/text/documents/articles/notes/weiqi-market-teardown.md),
 which built per-app profiles (play/bots/tsumego/lessons/review/
 monetization dimensions, documented complaints with cited forum-thread
 URLs, direct App Store/Google Play/review-aggregator links) into a
@@ -152,4 +152,4 @@ document this section produces:
 
 ## Sources
 
-- [Weiqi Market Teardown](../../../../../agent-services-section/services/play-services-section/services/game-science-services-section/services/board-games-services-section/services/weiqi-services-section/content/text/documents/articles/notes/weiqi-market-teardown.md) — the pattern this section's document shape is modeled on.
+- [Weiqi Market Teardown](../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/services/being-services-section/services/doing-services-section/services/playing-services-section/services/gaming-services-section/services/board-games-services-section/services/weiqi-services-section/content/text/documents/articles/notes/weiqi-market-teardown.md) — the pattern this section's document shape is modeled on.

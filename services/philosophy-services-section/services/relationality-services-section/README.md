@@ -42,7 +42,7 @@ to the section's holdings generally: breadth here reflects an accumulation of
 research passes, not a finished, deduplicated corpus.
 
 `services/` holds further subsections building on relationality:
-`agent-science-services-section/`, `allovonic-services-section/`,
+`agency-services-section/`, `allovonic-services-section/`,
 `interactive-semioverse-services-section/`,
 `quasicrystalline-hypertensor-topos-services-section/`, and
 `tekodynamics-services-section/`.

@@ -29,7 +29,7 @@ than one agent's harness boundary.
 
 - `../../../../../../../../../../../operations-services-section/services/union-services-section/services/metroplat-services-section/content/text/documents/articles/notes/2026/06/30/2026-06-30-survey-of-the-codex-vscode-cockpit-and-metroplat-capabilities.md` — canonical MetroPlat operations survey; retained there after removing its exact personal duplicate.
 - `../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-inference-system-services-section/services/gemini-services-section/services/gemini-notebook-services-section/services/notebooklm-services-section/content/config/notebooklm-mapek-design-corpus.json` — provider-specific NotebookLM/Gemini design corpus; advisory engineering input, not harness science.
-- `../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agent-science-services-section/` — adjacent relational agent-science holdings, including multi-agent and world/play studies; intentionally not consolidated here.
+- `../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/` — adjacent relational agency holdings, including multi-agent and world/play studies; intentionally not consolidated here.
 
 ## Curated legacy research
 
