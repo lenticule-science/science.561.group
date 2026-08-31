@@ -1,7 +1,7 @@
 import { existsSync, readFileSync, statSync } from "node:fs";
 import { join, resolve } from "node:path";
 
-import { searchImmutableRoomIndex } from "@red-cup-engineering/knowledge-vault/room-index-search";
+import { searchImmutableRoomIndex } from "@red-cup-engineering/cairn/room-index-search";
 
 const ROOM_KEY = /^[0-9a-f]{64}$/u;
 const RELEASE_ID = /^[0-9a-f]{64}$/u;

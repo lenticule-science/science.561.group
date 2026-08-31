@@ -317,7 +317,7 @@ function renderedArticle(detail) {
 function authoringCard(room) {
   const card = document.createElement("section"); card.className = "aside-card authoring-card";
   const heading = document.createElement("h2"); heading.textContent = "VaultMaze authoring";
-  const introduction = document.createElement("p"); introduction.textContent = "Edit this admitted Markdown source with revision-safe Opal writes.";
+  const introduction = document.createElement("p"); introduction.textContent = "Edit this admitted Markdown source with revision-safe GEODE writes.";
   const open = document.createElement("button"); open.type = "button"; open.className = "authoring-open"; open.textContent = "Edit source";
   card.append(heading, introduction, open);
   open.addEventListener("click", async () => {

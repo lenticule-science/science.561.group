@@ -71,7 +71,7 @@ export async function startServer({ env = process.env, port = Number(env.PORT ??
       .then((source) => JSON.parse(source)?.victor ?? null)
       .catch(() => null);
     import(authoringModule)
-      .then(async ({ createVaultMazeAuthoring }) => createVaultMazeAuthoring({
+      .then(async ({ createGeodeAuthoring }) => createGeodeAuthoring({
         root: resolve(env.VAULTMAZE_AUTHORING_ROOT),
         region: env.VAULTMAZE_AUTHORING_REGION ?? "",
         excludes: String(env.VAULTMAZE_AUTHORING_EXCLUDES ?? "legacy,triage,private,dev,test,fixtures,dist")
@@ -79,10 +79,10 @@ export async function startServer({ env = process.env, port = Number(env.PORT ??
         victorRelease: await victorRelease,
       }))
       .then((authoring) => {
-        bindings.VAULTMAZE_AUTHORING = authoring;
-        console.info(`VaultMaze authoring admitted ${authoring.snapshot.documents.length} Markdown documents`);
+        bindings.GEODE_APPLICATION = authoring;
+        console.info(`GEODE admitted ${authoring.snapshot.documents.length} CAIRN Markdown resources`);
       })
-      .catch((error) => console.error("VaultMaze authoring stayed unavailable", error instanceof Error ? error.message : "unknown error"));
+      .catch((error) => console.error("GEODE stayed unavailable", error instanceof Error ? error.message : "unknown error"));
   }
   const server = createServer(async (request, result) => {
     try { await responseToNode(await worker.fetch(requestFromNode(request), bindings), result); }

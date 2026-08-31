@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { authoringResponse } from "../lib/cloudflare/src/worker.mjs";
+import { applicationSurfaceForSession, authoringResponse } from "../lib/cloudflare/src/worker.mjs";
 
 const AUTHOR_EMAIL = "morgan.sennhauser@gmail.com";
 const origin = "https://l-space.561.group";
@@ -33,29 +33,35 @@ function session(email = AUTHOR_EMAIL, provider = "google") {
   return { provider, email, subjectHash: "sha256:subject" };
 }
 
-test("VaultMaze authoring is Google-only for Morgan and separate from reader admission", async () => {
-  const env = { LSPACE_EDITOR_DISCORD_USER_IDS: "681333902740160598", VAULTMAZE_AUTHORING: binding() };
+test("L-Space selects GEODE for its admitted authority and VaultMaze for other readers", async () => {
+  assert.equal((await applicationSurfaceForSession(session())).application, "geode");
+  assert.equal((await applicationSurfaceForSession(session("reader@example.test"))).application, "vaultmaze");
+  assert.equal((await applicationSurfaceForSession(session(undefined, "discord"))).application, "vaultmaze");
+});
+
+test("GEODE is Google-only for Morgan and separate from VaultMaze reader admission", async () => {
+  const env = { LSPACE_EDITOR_DISCORD_USER_IDS: "681333902740160598", GEODE_APPLICATION: binding() };
   for (const reader of [session(undefined, "discord"), session("someone.else@gmail.com"), session("morgan.sennhauser@gmail.com", "discord")]) {
-    const response = await authoringResponse(request("/api/v1/vaultmaze/editor/search?q=Example"), env, new URL(`${origin}/api/v1/vaultmaze/editor/search?q=Example`), reader);
+    const response = await authoringResponse(request("/api/v1/geode/search?q=Example"), env, new URL(`${origin}/api/v1/geode/search?q=Example`), reader);
     assert.equal(response.status, 403);
     assert.deepEqual(await response.json(), { error: "authoring-authority-required" });
   }
 });
 
 test("an admitted curator can search, open the TUFTE projection, and replace one current revision", async () => {
-  const env = { VAULTMAZE_AUTHORING: binding() };
+  const env = { GEODE_APPLICATION: binding() };
   const identity = session("  Morgan.Sennhauser@GMAIL.com  ");
-  const searched = await authoringResponse(request("/api/v1/vaultmaze/editor/search?q=Example"), env, new URL(`${origin}/api/v1/vaultmaze/editor/search?q=Example`), identity);
+  const searched = await authoringResponse(request("/api/v1/geode/search?q=Example"), env, new URL(`${origin}/api/v1/geode/search?q=Example`), identity);
   assert.equal(searched.status, 200);
   assert.equal((await searched.json()).documents[0].path, "notes/example.md");
-  const opened = await authoringResponse(request("/api/v1/vaultmaze/editor/note?path=notes%2Fexample.md"), env, new URL(`${origin}/api/v1/vaultmaze/editor/note?path=notes%2Fexample.md`), identity);
+  const opened = await authoringResponse(request("/api/v1/geode/note?path=notes%2Fexample.md"), env, new URL(`${origin}/api/v1/geode/note?path=notes%2Fexample.md`), identity);
   const opening = await opened.json();
   assert.equal(opening.document.revision, "sha256:old");
   assert.equal(opening.editorDocument.schemaVersion, "vaultmaze-editor-document/v1");
-  const saved = await authoringResponse(request("/api/v1/vaultmaze/editor/action", {
+  const saved = await authoringResponse(request("/api/v1/geode/action", {
     method: "POST", headers: { origin, "content-type": "application/json" },
-    body: JSON.stringify({ action: "vaultmaze:replace-document/v1", path: "notes/example.md", markdown: "# Changed\n", revision: "sha256:old" }),
-  }), env, new URL(`${origin}/api/v1/vaultmaze/editor/action`), identity);
+    body: JSON.stringify({ action: "geode:replace-document/v1", path: "notes/example.md", markdown: "# Changed\n", revision: "sha256:old" }),
+  }), env, new URL(`${origin}/api/v1/geode/action`), identity);
   assert.equal(saved.status, 200);
   assert.equal((await saved.json()).receipt.revision, "sha256:new");
   const stale = await authoringResponse(request("/api/v1/vaultmaze/editor/action", {

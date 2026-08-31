@@ -20,7 +20,22 @@ test("L-Space traverses an indexed room through its own release", () => {
   assert.ok(traversed.returnedDoorCount <= 2);
 });
 
-test("the direct L-Space MCP face advertises only L-Space reading", () => {
-  const listed = handleMcpRequest({ method: "tools/list" });
-  assert.deepEqual(listed.tools.map(({ name }) => name), ["observe_l_space_release", "traverse_l_space_room"]);
+test("the direct L-Space MCP face advertises release, concept, graph, and bounded SPARQL reading", async () => {
+  const listed = await handleMcpRequest({ method: "tools/list" });
+  assert.deepEqual(listed.tools.map(({ name }) => name), [
+    "observe_l_space_release",
+    "traverse_l_space_room",
+    "query_l_space_concept",
+    "query_l_space_sparql_bgp",
+    "observe_l_space_fae_graph",
+    "query_l_space_fae_relations",
+    "query_l_space_fae_entity",
+    "observe_l_space_fae_diagnostics",
+    "drew_catalog",
+    "drew_relations",
+    "drew_entity",
+    "drew_project",
+    "drew_explain",
+    "drew_diagnostics",
+  ]);
 });

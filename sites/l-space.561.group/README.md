@@ -4,11 +4,24 @@ The Lenticule Science knowledge garden, at `https://l-space.561.group`.
 
 - **L-Space** means **Lenticule Space**.
 - **SPACE** means **Semantic Position Arranging Conceptual Elements**.
-- **TUFTE** means **Tiling User Frontend Topology Engine**.
+- **TUFTE** means **Tiling User Form Topology Engine**.
 
 This package is both the site and its deployment carrier.
 It compiles the active science-service forest into an immutable release and serves that release as one authenticated wing with a small anonymous front door.
 It excludes legacy custody, triage, private material, development artifacts, tests, fixtures, and build output by segment name; the vault compiler additionally excludes `node_modules` and `.git` unconditionally.
+
+L-Space is not itself a fourth knowledge application. It is the situated site
+and admission boundary for three composed applications:
+
+- CAIRN admits, reads, queries, and revision-safely changes content archives.
+- VaultMaze is the default navigational-learning experience.
+- GEODE is the graphical entity/ontology workbench selected for the currently
+  admitted curator authority.
+
+VICTOR owns website formation and serving. TUFTE owns the user forms and
+topology used by the graphical applications. The authenticated
+`/api/v1/application` response and `application` field on `/api/v1/me`
+make the selection explicit; rendering does not grant authority.
 
 TUFTE uses a deterministic 96-column tiling grid.
 The inherited force-directed layout remains available to smaller parameterizations, but is not an honest default for L-Space's active rooms.
@@ -213,7 +226,7 @@ npm run cloudflare:deploy
 
 VaultMaze source editing is intentionally narrower than either reader entrance.
 Only a verified Google session for `morgan.sennhauser@gmail.com` may receive the
-editor projection or submit a revision-safe Opal write. Discord islanders,
+editor projection or submit a revision-safe GEODE write. Discord islanders,
 including a Discord account belonging to Morgan, are readers only; Discord IDs
 and deployment environment variables cannot grant authoring authority.
 
@@ -237,7 +250,7 @@ whose rootless Caddy service uses the checked-in `lib/vps/Caddyfile` fragment. T
 `lib/vps/l-space.service` runs the bundled Worker module through the Node
 adapter on `127.0.0.1:18848`. Its runtime environment file is mode `0600`, and
 its SQLite state directory and the dedicated sparse source checkout are its only
-writable paths. The checkout is rooted at the active science section; Opal
+writable paths. The checkout is rooted at the active science section; GEODE
 admits Markdown from that boundary and never writes the compiled `dist` tree.
 The server opens the immutable reading surface before scanning the authoring
 checkout, so an editor can briefly return 503 after restart without taking the

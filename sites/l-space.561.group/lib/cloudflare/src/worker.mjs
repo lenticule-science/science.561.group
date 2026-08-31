@@ -136,23 +136,120 @@ async function mayAuthor(session) {
     && session.email.trim().toLowerCase() === LSPACE_AUTHOR_EMAIL;
 }
 
+export async function applicationSurfaceForSession(session) {
+  return Object.freeze({
+    schemaVersion: "l-space-application-surface/v1",
+    application: (await mayAuthor(session)) ? "geode" : "vaultmaze",
+  });
+}
+
 function authoringBinding(env) {
-  const offered = env?.VAULTMAZE_AUTHORING;
+  const offered = env?.GEODE_APPLICATION ?? env?.VAULTMAZE_AUTHORING;
   return offered && typeof offered.read === "function" && typeof offered.search === "function"
     && typeof offered.replace === "function" ? offered : null;
 }
 
+const DREW_READ_TOOLS = new Set(["drew_catalog", "drew_relations", "drew_entity", "drew_project", "drew_explain", "drew_diagnostics"]);
+
+function graphBinding(env) {
+  const offered = authoringBinding(env);
+  return offered && typeof offered.concept === "function" && typeof offered.callGraphTool === "function" && typeof offered.sparql === "function"
+    ? offered : null;
+}
+
+function faeBinding(env) {
+  const offered = graphBinding(env);
+  return offered && typeof offered.faeSummary === "function" && typeof offered.faeRelations === "function"
+    && typeof offered.faeEntity === "function" && typeof offered.faeDiagnostics === "function" ? offered : null;
+}
+
+function sparqlTerm(value) {
+  return typeof value === "string" && /^\?[A-Za-z][A-Za-z0-9_]*$/u.test(value)
+    ? Object.freeze({ kind: "knowing.sparql.variable", name: value.slice(1) })
+    : value;
+}
+
+function sparqlPatterns(values) {
+  if (!Array.isArray(values) || values.length < 1 || values.length > 4) throw new TypeError("where and construct must contain from one through four triple patterns");
+  return Object.freeze(values.map((pattern) => {
+    if (!pattern || typeof pattern !== "object" || Array.isArray(pattern) || !("s" in pattern) || !("p" in pattern) || !("o" in pattern)) {
+      throw new TypeError("each triple pattern requires s, p, and o");
+    }
+    return Object.freeze({ s: sparqlTerm(pattern.s), p: sparqlTerm(pattern.p), o: sparqlTerm(pattern.o) });
+  }));
+}
+
+async function jsonObject(request) {
+  let value;
+  try { value = await request.json(); } catch { throw new TypeError("request body must be JSON"); }
+  if (!value || typeof value !== "object" || Array.isArray(value)) throw new TypeError("request body must be a JSON object");
+  return value;
+}
+
+export async function graphResponse(request, env, url) {
+  if (!url.pathname.startsWith("/api/v1/graph/")) return null;
+  const graph = graphBinding(env);
+  if (graph === null) return responseJson({ error: "graph-unavailable" }, 503);
+  try {
+    if (url.pathname === "/api/v1/graph/concept" && request.method === "GET") {
+      const name = url.searchParams.get("name");
+      if (!name) return responseJson({ error: "concept-name-required" }, 400);
+      return responseJson(await graph.concept(name));
+    }
+    if (url.pathname === "/api/v1/graph/query" && request.method === "POST") {
+      const offered = await jsonObject(request);
+      if (!DREW_READ_TOOLS.has(offered.tool)) return responseJson({ error: "unknown-graph-tool" }, 400);
+      const reading = await graph.callGraphTool(offered.tool, offered.arguments ?? {});
+      return responseJson(reading.structuredContent);
+    }
+    if (url.pathname === "/api/v1/graph/sparql" && request.method === "POST") {
+      const offered = await jsonObject(request);
+      if (!["select", "ask", "construct"].includes(offered.type)) return responseJson({ error: "invalid-sparql-query" }, 400);
+      const query = Object.freeze({
+        kind: "knowing.sparql.query",
+        type: offered.type,
+        ...(offered.select === undefined ? {} : { select: Object.freeze([...offered.select]) }),
+        where: sparqlPatterns(offered.where),
+        ...(offered.construct === undefined ? {} : { construct: sparqlPatterns(offered.construct) }),
+      });
+      return responseJson(await graph.sparql(query, { limit: offered.limit ?? 100 }));
+    }
+    if (url.pathname === "/api/v1/graph/fae" && request.method === "POST") {
+      const fae = faeBinding(env);
+      if (fae === null) return responseJson({ error: "fae-unavailable" }, 503);
+      const offered = await jsonObject(request);
+      if (offered.operation === "summary") return responseJson(await fae.faeSummary());
+      if (offered.operation === "relations") {
+        return responseJson(await fae.faeRelations(offered.pattern ?? {}, { limit: offered.limit ?? 100 }));
+      }
+      if (offered.operation === "entity") {
+        if (typeof offered.term !== "string" || offered.term === "") return responseJson({ error: "fae-term-required" }, 400);
+        return responseJson(await fae.faeEntity(offered.term, { predicate: offered.predicate, direction: offered.direction ?? "both", limit: offered.limit ?? 100 }));
+      }
+      if (offered.operation === "diagnostics") return responseJson(await fae.faeDiagnostics({ limit: offered.limit ?? 100 }));
+      return responseJson({ error: "unknown-fae-operation" }, 400);
+    }
+    return responseJson({ error: "not-found" }, 404);
+  } catch (error) {
+    if (error instanceof TypeError || error instanceof RangeError) return responseJson({ error: "invalid-graph-request", message: error.message }, 400);
+    throw error;
+  }
+}
+
 export async function authoringResponse(request, env, url, session) {
-  if (!url.pathname.startsWith("/api/v1/vaultmaze/editor/")) return null;
+  const geodePath = url.pathname.startsWith("/api/v1/geode/")
+    ? url.pathname
+    : url.pathname.replace(/^\/api\/v1\/vaultmaze\/editor\//u, "/api/v1/geode/");
+  if (!geodePath.startsWith("/api/v1/geode/")) return null;
   if (!(await mayAuthor(session))) return responseJson({ error: "authoring-authority-required" }, 403);
   const authoring = authoringBinding(env);
   if (authoring === null) return responseJson({ error: "authoring-unavailable" }, 503);
   try {
-    if (url.pathname === "/api/v1/vaultmaze/editor/search" && request.method === "GET") {
+    if (geodePath === "/api/v1/geode/search" && request.method === "GET") {
       const query = url.searchParams.get("q") ?? "";
       return responseJson({ documents: await authoring.search(query, { limit: 100 }) });
     }
-    if (url.pathname === "/api/v1/vaultmaze/editor/note" && request.method === "GET") {
+    if (geodePath === "/api/v1/geode/note" && request.method === "GET") {
       const path = url.searchParams.get("path");
       if (typeof path !== "string" || path === "") return responseJson({ error: "invalid-note-path" }, 400);
       const document = await authoring.read(path);
@@ -161,11 +258,11 @@ export async function authoringResponse(request, env, url, session) {
         : null;
       return responseJson({ document, ...(editorDocument === null ? {} : { editorDocument }) });
     }
-    if (url.pathname === "/api/v1/vaultmaze/editor/action" && request.method === "POST") {
+    if (geodePath === "/api/v1/geode/action" && request.method === "POST") {
       if (request.headers.get("origin") !== url.origin) return responseJson({ error: "authoring-origin-required" }, 403);
       let offered;
       try { offered = await request.json(); } catch { return responseJson({ error: "invalid-json" }, 400); }
-      if (offered?.action !== "vaultmaze:replace-document/v1" || typeof offered.path !== "string"
+      if (!["geode:replace-document/v1", "vaultmaze:replace-document/v1"].includes(offered?.action) || typeof offered.path !== "string"
         || typeof offered.markdown !== "string" || typeof offered.revision !== "string") {
         return responseJson({ error: "invalid-authoring-action" }, 400);
       }
@@ -268,15 +365,22 @@ export default {
     }
 
     if (url.pathname === "/api/v1/me" && request.method === "GET") {
+      const surface = await applicationSurfaceForSession(session);
       return responseJson({
         provider: session.provider,
         label: session.label,
         ...(session.email === undefined ? {} : { email: session.email }),
         ...((await mayAuthor(session)) ? { canAuthor: true } : {}),
+        application: surface.application,
       });
+    }
+    if (url.pathname === "/api/v1/application" && request.method === "GET") {
+      return responseJson(await applicationSurfaceForSession(session));
     }
     const authoring = await authoringResponse(request, env, url, session);
     if (authoring) return authoring;
+    const graph = await graphResponse(request, env, url);
+    if (graph) return graph;
     if (url.pathname === "/api/v1/vault/manifest" && request.method === "GET") {
       return serveAsset(request, env, "/vault/manifest.json");
     }

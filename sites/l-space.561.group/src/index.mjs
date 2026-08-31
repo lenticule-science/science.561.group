@@ -1,12 +1,13 @@
-import { composeKnowledgeVault } from "@red-cup-engineering/knowledge-vault/compose";
-import { validateKnowledgeVaultConfig } from "@red-cup-engineering/knowledge-vault/config";
-import { evaluateVaultMazePassage } from "@red-cup-engineering/knowledge-vault/passage";
+import { composeVaultMaze } from "@red-cup-engineering/vaultmaze/compose";
+import { validateVaultMazeConfig } from "@red-cup-engineering/vaultmaze/config";
+import { evaluateVaultMazePassage } from "@red-cup-engineering/vaultmaze/passage";
 import { compileVault } from "@561-group/vault-compiler/compile";
 import { recallProbability } from "@red-cup-engineering/lantern-561-group/srs";
 import { lSpaceConfig, lSpaceSurfacePolicy, roomVisibility } from "./config.mjs";
 
 export {
   lSpaceAdmissionPolicy,
+  lSpaceApplicationPolicy,
   lSpaceConfig,
   lSpaceSurfacePolicy,
   roomVisibility,
@@ -19,11 +20,11 @@ export {
  * slow place to discover a typo in a claim name.
  */
 export function validateLSpaceConfig() {
-  return validateKnowledgeVaultConfig(lSpaceConfig);
+  return validateVaultMazeConfig(lSpaceConfig);
 }
 
 export function compileLSpace() {
-  return composeKnowledgeVault(lSpaceConfig, { compileVault });
+  return composeVaultMaze(lSpaceConfig, { compileVault });
 }
 
 export function evaluateLSpacePassage(offered) {

@@ -22,11 +22,13 @@ export const KNOWLEDGE_VAULT_BROWSER_MODULE = "room-index-search";
 export async function knowledgeVaultSearchSourcePath() {
   const siteRoot = resolve(import.meta.dirname, "..");
   const packageJson = JSON.parse(await readFile(resolve(siteRoot, "package.json"), "utf8"));
-  const dependency = packageJson.dependencies?.["@red-cup-engineering/knowledge-vault"];
-  if (typeof dependency !== "string" || dependency !== "0.1.2") {
-    throw new Error("L-Space must pin its immutable knowledge-vault release");
+  const dependency = packageJson.dependencies?.["@red-cup-engineering/cairn"];
+  const workspaceSource = typeof dependency === "string" && dependency.startsWith("file:")
+    && dependency.endsWith("/knowledge-vault");
+  if (dependency !== "0.1.0" && !workspaceSource) {
+    throw new Error("L-Space must select the current workspace CAIRN source or a pinned CAIRN release");
   }
-  return require.resolve("@red-cup-engineering/knowledge-vault/room-index-search");
+  return require.resolve("@red-cup-engineering/cairn/room-index-search");
 }
 
 function lanternSourceRoot() {

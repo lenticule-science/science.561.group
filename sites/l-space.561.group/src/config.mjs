@@ -76,6 +76,14 @@ export const lSpaceAdmissionPolicy = Object.freeze({
   ]),
 });
 
+export const lSpaceApplicationPolicy = Object.freeze({
+  schemaVersion: "l-space-application-selection/v1",
+  defaultApplication: "vaultmaze",
+  authorityApplication: "geode",
+  authority: "the same currently re-judged Google principal admitted for revision-safe authoring",
+  userConfigMaySelect: Object.freeze(["vaultmaze"]),
+});
+
 export const lSpaceConfig = Object.freeze({
   schemaVersion: "knowledge-vault-config/v1",
   id: "l-space",

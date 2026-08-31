@@ -6,7 +6,7 @@ import { projectWebFeedArtifacts } from "@red-cup-engineering/project-web-feed-a
 import { renderMarkdownBlockHtml } from "@red-cup-engineering/render-markdown-block-html-service";
 import { normalizeTufteModel } from "@red-cup-engineering/web-tufte-gui-services-section";
 import { compileLSpace, lSpaceSurfacePolicy, roomVisibility, validateLSpaceConfig } from "../src/index.mjs";
-import { createVaultMazeVictorReleaseFromResources } from "../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-knowledge-systems-services-section/services/knowledge-vault-computer-system-services-section/apps/knowledge-vault/src/victor-release.mjs";
+import { createVaultMazeVictorReleaseFromResources } from "@red-cup-engineering/geode/victor-release";
 
 const appRoot = resolve(import.meta.dirname, "..");
 const outputRoot = resolve(appRoot, "dist");

@@ -52,7 +52,7 @@ test("the vault requires a session, and says where to get one", async () => {
 
 test("a signed-in reader sees their own address and nothing else", async () => {
   const response = await worker.fetch(await signedIn("/api/v1/me"), environment());
-  assert.deepEqual(await response.json(), { provider: "google", label: READER, email: READER });
+  assert.deepEqual(await response.json(), { provider: "google", label: READER, email: READER, application: "vaultmaze" });
 });
 
 test("a reader whose address is not allowlisted has no session at all", async () => {
@@ -80,6 +80,45 @@ test("the normalized TUFTE garden projection is served through the authenticated
   const response = await worker.fetch(await signedIn("/api/v1/vault/garden"), environment());
   assert.equal(response.status, 200);
   assert.equal(await response.text(), "/vault/views/garden.json");
+});
+
+test("authenticated graph reads share GEODE's DREW and bounded SPARQL capabilities", async () => {
+  const env = {
+    ...environment(),
+    VAULTMAZE_AUTHORING: {
+      async read() {}, async search() {}, async replace() {},
+      async concept(name) { return { type: "OpalConceptReading", name, known: true }; },
+      async callGraphTool(name, args) { return { structuredContent: { name, args, source: "drew" } }; },
+      async sparql(query, options) { return { type: query.type, where: query.where, limit: options.limit }; },
+      async faeSummary() { return { type: "OpalFaeWorkspaceGraphSummary", providers: ["opal"] }; },
+      async faeRelations(pattern, options) { return { type: "OpalFaeRelationQuery", pattern, limit: options.limit }; },
+      async faeEntity(term, options) { return { type: "OpalFaeEntityReading", term, direction: options.direction }; },
+      async faeDiagnostics(options) { return { type: "OpalFaeDiagnostics", limit: options.limit }; },
+    },
+  };
+  const concept = await worker.fetch(await signedIn("/api/v1/graph/concept?name=order"), env);
+  assert.deepEqual(await concept.json(), { type: "OpalConceptReading", name: "order", known: true });
+
+  const graph = await worker.fetch(await signedIn("/api/v1/graph/query", {
+    method: "POST", headers: { "content-type": "application/json" },
+    body: JSON.stringify({ tool: "drew_relations", arguments: { predicate: "defines" } }),
+  }), env);
+  assert.deepEqual(await graph.json(), { name: "drew_relations", args: { predicate: "defines" }, source: "drew" });
+
+  const sparql = await worker.fetch(await signedIn("/api/v1/graph/sparql", {
+    method: "POST", headers: { "content-type": "application/json" },
+    body: JSON.stringify({ type: "select", select: ["document"], where: [{ s: "?document", p: "defines", o: "order" }], limit: 12 }),
+  }), env);
+  const result = await sparql.json();
+  assert.equal(result.type, "select");
+  assert.equal(result.limit, 12);
+  assert.deepEqual(result.where[0].s, { kind: "knowing.sparql.variable", name: "document" });
+
+  const fae = await worker.fetch(await signedIn("/api/v1/graph/fae", {
+    method: "POST", headers: { "content-type": "application/json" },
+    body: JSON.stringify({ operation: "relations", pattern: { predicate: "wikilink" }, limit: 7 }),
+  }), env);
+  assert.deepEqual(await fae.json(), { type: "OpalFaeRelationQuery", pattern: { predicate: "wikilink" }, limit: 7 });
 });
 
 test("VaultMaze reviews are validated and stored under a pseudonymous subject", async () => {
