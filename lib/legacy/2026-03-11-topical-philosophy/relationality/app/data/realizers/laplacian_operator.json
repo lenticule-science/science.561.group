@@ -1,9 +1,0 @@
-{
-  "id": "laplacian_operator",
-  "act": "Laplacian",
-  "module": "relationality.realizers.laplacian_operator",
-  "callable": "realize_laplacian_operator",
-  "input_kind": "PhaseSpace",
-  "output_kind": "SpectralGeometry",
-  "description": "Compute Laplacian spectrum for a deterministic line graph seeded by phase space."
-}

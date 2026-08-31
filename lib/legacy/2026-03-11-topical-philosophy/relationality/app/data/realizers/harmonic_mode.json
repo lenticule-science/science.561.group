@@ -1,9 +1,0 @@
-{
-  "id": "harmonic_mode",
-  "act": "HarmonicMode",
-  "module": "relationality.realizers.harmonic_mode",
-  "callable": "realize_harmonic_mode",
-  "input_kind": "SpectralGeometry",
-  "output_kind": "FixedInvariant",
-  "description": "Extract harmonic mode fixed invariant placeholder."
-}

@@ -1,9 +1,0 @@
-{
-  "act_ref": "EquateJudgmentObservationFixture",
-  "carrier_id": "2417541c7a188c089d83e8ba4b1d65d0ac964641f2a508f6438b8e23d38daa6f",
-  "element": "b",
-  "id": "5cdeda7b8826b0b3b394454a4be8dc87117f712b151a0e3cabc72279d6d09ce3",
-  "judgment_id": "b7b22754ea15fd4b6ecb65f25ac177f57381823992c55c6262a5045522a5a40c",
-  "kind": "observation",
-  "measurement_frame_id": "370f9dd62d065261d2fd54d2170f5802fda714082ececcc192d26e600359a25c"
-}

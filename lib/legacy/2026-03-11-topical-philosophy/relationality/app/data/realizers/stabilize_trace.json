@@ -1,9 +1,0 @@
-{
-  "id": "stabilize_trace",
-  "act": "StabilizeTrace",
-  "module": "relationality.realizers.stabilize_trace",
-  "callable": "realize_stabilize_trace",
-  "input_kind": "Trace",
-  "output_kind": "Trace",
-  "description": "Mark the trace as stabilized after an append."
-}

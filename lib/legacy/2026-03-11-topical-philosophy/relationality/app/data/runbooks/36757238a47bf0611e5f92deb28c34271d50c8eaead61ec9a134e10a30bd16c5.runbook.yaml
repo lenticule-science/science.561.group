@@ -1,9 +1,0 @@
-id: 36757238a47bf0611e5f92deb28c34271d50c8eaead61ec9a134e10a30bd16c5
-name: fix_flow_only
-steps:
-- input_kinds:
-  - profile
-  operator: fix_flow
-  output_kinds:
-  - flow_laws_evidence
-  step_index: 0

@@ -1,9 +1,0 @@
-id: cbfd6b9b3b6091175df8cb7d8b4e494235a28e3c97f73f853b6cc9c9f06221b4
-name: fix_nucleus_only
-steps:
-- input_kinds:
-  - profile
-  operator: fix_nucleus
-  output_kinds:
-  - nucleus_laws_evidence
-  step_index: 0

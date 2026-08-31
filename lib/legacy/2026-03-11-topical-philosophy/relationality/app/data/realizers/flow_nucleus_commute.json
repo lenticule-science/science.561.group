@@ -1,9 +1,0 @@
-{
-  "id": "flow_nucleus_commute",
-  "act": "FixFlowNucleus",
-  "module": "relationality.realizers.flow_nucleus_commute",
-  "callable": "realize_flow_nucleus_commute",
-  "input_kind": "StabilizedObservation",
-  "output_kind": "FixedInvariant",
-  "description": "Compute commutation evidence for Flow vs Nucleus paths."
-}

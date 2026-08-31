@@ -1,9 +1,0 @@
-{
-  "id": "entropy_measure",
-  "act": "EntropyMeasure",
-  "module": "relationality.realizers.entropy_measure",
-  "callable": "realize_entropy_measure",
-  "input_kind": "PhaseSpace",
-  "output_kind": "EntropyMeasurement",
-  "description": "Compute placeholder entropy measurement from PhaseSpace carrier."
-}

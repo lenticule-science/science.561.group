@@ -1,9 +1,0 @@
-{
-  "id": "start_trace",
-  "act": "StartTrace",
-  "module": "relationality.realizers.start_trace",
-  "callable": "realize_start_trace",
-  "input_kind": "Trace",
-  "output_kind": "Trace",
-  "description": "Initialize trace entries if absent."
-}
