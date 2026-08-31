@@ -15,7 +15,7 @@ function binding() {
     async search(query) { return [{ path: "notes/example.md", title: query || "Example" }]; },
     async read(path) {
       if (path !== "notes/example.md") throw new RangeError("unknown document");
-      return { type: "OpalDocumentReading", path, title: "Example", markdown: "# Example\n", revision, html: "<h1>Example</h1>" };
+      return { type: "GeodeDocumentReading", path, title: "Example", markdown: "# Example\n", revision, html: "<h1>Example</h1>" };
     },
     async editorDocument(path) { return { schemaVersion: "vaultmaze-editor-document/v1", title: path }; },
     async replace({ path, markdown, expectedRevision }) {
@@ -24,7 +24,7 @@ function binding() {
         const error = new Error("stale"); error.name = "MarkdownFileRevisionConflict"; error.currentRevision = revision; throw error;
       }
       revision = "sha256:new";
-      return { type: "OpalMarkdownWriteReceipt", path, revision, changed: markdown !== "# Example\n" };
+      return { type: "GeodeMarkdownWriteReceipt", path, revision, changed: markdown !== "# Example\n" };
     },
   };
 }

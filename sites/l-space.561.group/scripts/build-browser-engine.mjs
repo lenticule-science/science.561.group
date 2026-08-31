@@ -17,14 +17,14 @@ const require = createRequire(import.meta.url);
 
 /** The import closure of `lightcone`, in dependency order. */
 export const ENGINE_MODULES = Object.freeze(["types", "srs", "stability", "lightcone"]);
-export const KNOWLEDGE_VAULT_BROWSER_MODULE = "room-index-search";
+export const CAIRN_BROWSER_MODULE = "room-index-search";
 
-export async function knowledgeVaultSearchSourcePath() {
+export async function cairnSearchSourcePath() {
   const siteRoot = resolve(import.meta.dirname, "..");
   const packageJson = JSON.parse(await readFile(resolve(siteRoot, "package.json"), "utf8"));
   const dependency = packageJson.dependencies?.["@red-cup-engineering/cairn"];
   const workspaceSource = typeof dependency === "string" && dependency.startsWith("file:")
-    && dependency.endsWith("/knowledge-vault");
+    && dependency.endsWith("/cairn");
   if (dependency !== "0.1.0" && !workspaceSource) {
     throw new Error("L-Space must select the current workspace CAIRN source or a pinned CAIRN release");
   }
@@ -51,10 +51,10 @@ export async function buildBrowserEngine(outputRoot) {
     await writeFile(path, stripped);
     written.push({ name, path, bytes: stripped.length });
   }
-  const searchSource = await readFile(await knowledgeVaultSearchSourcePath(), "utf8");
-  const searchPath = resolve(outputRoot, `${KNOWLEDGE_VAULT_BROWSER_MODULE}.mjs`);
+  const searchSource = await readFile(await cairnSearchSourcePath(), "utf8");
+  const searchPath = resolve(outputRoot, `${CAIRN_BROWSER_MODULE}.mjs`);
   await writeFile(searchPath, searchSource);
-  written.push({ name: KNOWLEDGE_VAULT_BROWSER_MODULE, path: searchPath, bytes: searchSource.length });
+  written.push({ name: CAIRN_BROWSER_MODULE, path: searchPath, bytes: searchSource.length });
   return written;
 }
 

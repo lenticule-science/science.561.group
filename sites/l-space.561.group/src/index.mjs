@@ -11,12 +11,11 @@ export {
   lSpaceConfig,
   lSpaceSurfacePolicy,
   roomVisibility,
-  lSpaceConfig as lenticuleScienceKnowledgeVaultConfig,
 } from "./config.mjs";
 
 /**
  * Validate the situated configuration on its own, before any corpus walk.
- * `composeKnowledgeVault` validates too, but a ten-thousand-room compile is a
+ * `composeVaultMaze` validates too, but a ten-thousand-room compile is a
  * slow place to discover a typo in a claim name.
  */
 export function validateLSpaceConfig() {
@@ -31,5 +30,4 @@ export function evaluateLSpacePassage(offered) {
   return evaluateVaultMazePassage({ ...offered, recallProbability });
 }
 
-export { compileLSpace as compileLenticuleScienceKnowledgeVault };
 export { evaluateLSpacePassage as evaluateLenticuleSciencePassage };

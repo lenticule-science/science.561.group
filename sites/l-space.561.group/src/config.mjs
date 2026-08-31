@@ -85,15 +85,15 @@ export const lSpaceApplicationPolicy = Object.freeze({
 });
 
 export const lSpaceConfig = Object.freeze({
-  schemaVersion: "knowledge-vault-config/v1",
+  schemaVersion: "vaultmaze-config/v1",
   id: "l-space",
   title: "L-Space",
   baseUrl: "https://l-space.561.group",
   auth: Object.freeze({
     mode: "oauth",
-    // Backward-compatible canonical issuer fields required by the reusable
-    // knowledge-vault configuration contract. The Worker composes the full
-    // provider list below; Google remains the established operator issuer.
+    // Canonical issuer fields required by the reusable VaultMaze configuration
+    // contract. The Worker composes the full provider list below; Google remains
+    // the established operator issuer.
     issuer: "https://accounts.google.com",
     clientIdEnvironmentVariable: "GOOGLE_CLIENT_ID",
     clientSecretEnvironmentVariable: "GOOGLE_CLIENT_SECRET",
@@ -157,5 +157,3 @@ export function roomVisibility(room, wingVisibility = lSpaceSurfacePolicy.defaul
     ? "public"
     : wingVisibility;
 }
-
-export { lSpaceConfig as lenticuleScienceKnowledgeVaultConfig };

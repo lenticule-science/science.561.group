@@ -1,11 +1,11 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { composeKnowledgeVault } from "@red-cup-engineering/vaultmaze/compose";
-import { validateKnowledgeVaultConfig } from "@red-cup-engineering/vaultmaze/config";
+import { composeVaultMaze } from "@red-cup-engineering/vaultmaze/compose";
+import { validateVaultMazeConfig } from "@red-cup-engineering/vaultmaze/config";
 import { evaluateVaultMazePassage } from "@red-cup-engineering/vaultmaze/passage";
 
 const config = {
-  schemaVersion: "knowledge-vault-config/v1",
+  schemaVersion: "vaultmaze-config/v1",
   id: "test-vault",
   title: "Test Vault",
   baseUrl: "https://example.test",
@@ -24,14 +24,14 @@ const config = {
 };
 
 test("configuration names environment variables but contains no OAuth secret", () => {
-  const actual = validateKnowledgeVaultConfig(config);
+  const actual = validateVaultMazeConfig(config);
   assert.equal(actual.auth.mode, "oauth");
   assert.equal("clientSecret" in actual.auth, false);
   assert.equal(actual.auth.clientSecretEnvironmentVariable, "TEST_OAUTH_CLIENT_SECRET");
 });
 
 test("configuration admits a deployment-verified identity proxy without OAuth secrets", () => {
-  const actual = validateKnowledgeVaultConfig({
+  const actual = validateVaultMazeConfig({
     ...config,
     auth: {
       mode: "identity-proxy",
@@ -68,7 +68,7 @@ test("composition keeps semantic SPACE separate from visual TUFTE", async () => 
       return { wingId: "science", positions: { "note.md": { x: 3, y: 5 } } };
     },
   };
-  const actual = await composeKnowledgeVault(config, compiler);
+  const actual = await composeVaultMaze(config, compiler);
   assert.equal(actual.vocabulary.SPACE, "Semantic Position Arranging Conceptual Elements");
   assert.equal(actual.vocabulary.TUFTE, "Tiling User Form Topology Engine");
   assert.equal(actual.wings[0].space[0].semanticPosition.scienceOwner, "knowledge-systems-services-section");
@@ -80,7 +80,7 @@ test("composition keeps semantic SPACE separate from visual TUFTE", async () => 
 
 test("duplicate wing ids are rejected", () => {
   assert.throws(
-    () => validateKnowledgeVaultConfig({ ...config, wings: [...config.wings, ...config.wings] }),
+    () => validateVaultMazeConfig({ ...config, wings: [...config.wings, ...config.wings] }),
     /duplicate wing id/,
   );
 });

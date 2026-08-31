@@ -100,7 +100,7 @@ export function observeLSpaceRelease({ releaseRoot, query = "", limit, collectio
     generatedAt: snapshot.manifest.generatedAt,
     baseUrl: snapshot.manifest.baseUrl,
     counts: snapshot.manifest.counts,
-    knowledgeVault: Object.freeze({
+    vaultMaze: Object.freeze({
       schemaVersion: snapshot.manifest.vaultSchemaVersion,
       participation: snapshot.index.participation,
       vocabulary: snapshot.index.vocabulary,

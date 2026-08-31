@@ -87,17 +87,17 @@ test("authenticated graph reads share GEODE's DREW and bounded SPARQL capabiliti
     ...environment(),
     VAULTMAZE_AUTHORING: {
       async read() {}, async search() {}, async replace() {},
-      async concept(name) { return { type: "OpalConceptReading", name, known: true }; },
+      async concept(name) { return { type: "GeodeConceptReading", name, known: true }; },
       async callGraphTool(name, args) { return { structuredContent: { name, args, source: "drew" } }; },
       async sparql(query, options) { return { type: query.type, where: query.where, limit: options.limit }; },
-      async faeSummary() { return { type: "OpalFaeWorkspaceGraphSummary", providers: ["opal"] }; },
-      async faeRelations(pattern, options) { return { type: "OpalFaeRelationQuery", pattern, limit: options.limit }; },
-      async faeEntity(term, options) { return { type: "OpalFaeEntityReading", term, direction: options.direction }; },
-      async faeDiagnostics(options) { return { type: "OpalFaeDiagnostics", limit: options.limit }; },
+      async faeSummary() { return { type: "GeodeFaeWorkspaceGraphSummary", providers: ["geode"] }; },
+      async faeRelations(pattern, options) { return { type: "GeodeFaeRelationQuery", pattern, limit: options.limit }; },
+      async faeEntity(term, options) { return { type: "GeodeFaeEntityReading", term, direction: options.direction }; },
+      async faeDiagnostics(options) { return { type: "GeodeFaeDiagnostics", limit: options.limit }; },
     },
   };
   const concept = await worker.fetch(await signedIn("/api/v1/graph/concept?name=order"), env);
-  assert.deepEqual(await concept.json(), { type: "OpalConceptReading", name: "order", known: true });
+  assert.deepEqual(await concept.json(), { type: "GeodeConceptReading", name: "order", known: true });
 
   const graph = await worker.fetch(await signedIn("/api/v1/graph/query", {
     method: "POST", headers: { "content-type": "application/json" },
@@ -118,7 +118,7 @@ test("authenticated graph reads share GEODE's DREW and bounded SPARQL capabiliti
     method: "POST", headers: { "content-type": "application/json" },
     body: JSON.stringify({ operation: "relations", pattern: { predicate: "wikilink" }, limit: 7 }),
   }), env);
-  assert.deepEqual(await fae.json(), { type: "OpalFaeRelationQuery", pattern: { predicate: "wikilink" }, limit: 7 });
+  assert.deepEqual(await fae.json(), { type: "GeodeFaeRelationQuery", pattern: { predicate: "wikilink" }, limit: 7 });
 });
 
 test("VaultMaze reviews are validated and stored under a pseudonymous subject", async () => {
