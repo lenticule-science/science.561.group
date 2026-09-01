@@ -6,7 +6,7 @@ import { join, resolve } from "node:path";
 import test from "node:test";
 import { DurableA2aTaskStore } from "@red-cup-engineering/a2a-contracted-agent-service/durable-task-store";
 import { DurablePushNotificationStore } from "@red-cup-engineering/a2a-contracted-agent-service/durable-push-notifications";
-import { localA2aMembrane } from "../src/local-a2a-membrane.mjs";
+import { createFilesystemContractedAgentSources } from "@red-cup-engineering/a2a-contracted-agent-service/filesystem-state-sources";
 import {
   a2aResultParts,
   sendRmnTask,
@@ -288,7 +288,7 @@ test("the signed A2A face binds the canonical request and exact packet", async (
 });
 test("production A2A membrane satisfies the durable 2.1 task and coordination contracts", async (t) => {
   const root = mkdtempSync(join(tmpdir(), "relational-a2a-membrane-")); t.after(() => rmSync(root, { recursive: true, force: true }));
-  const membrane = localA2aMembrane(root, "research-delivery"), tasks = new DurableA2aTaskStore(membrane.taskSource), pushes = new DurablePushNotificationStore(membrane.coordinationSource);
+  const membrane = createFilesystemContractedAgentSources({ stateRoot: join(root, "a2a-state"), provider: "research-delivery" }), tasks = new DurableA2aTaskStore(membrane.taskSource), pushes = new DurablePushNotificationStore(membrane.coordinationSource);
   const task = { id: "task-1", contextId: "context-1", status: { state: "TASK_STATE_WORKING", timestamp: NOW }, artifacts: [], history: [], metadata: {} };
   await tasks.save(task); assert.equal((await tasks.load(task.id)).id, task.id);
   await pushes.save(task.id, {}, { id: "push-1", url: "https://customer.example/callback" }); assert.equal((await pushes.load(task.id, {}))[0].id, "push-1");

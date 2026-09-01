@@ -2,7 +2,7 @@
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { serveContractedAgent } from "@red-cup-engineering/a2a-contracted-agent-service";
-import { localA2aMembrane } from "./local-a2a-membrane.mjs";
+import { createFilesystemContractedAgentSources } from "@red-cup-engineering/a2a-contracted-agent-service/filesystem-state-sources";
 const root = resolve(import.meta.dirname, ".."),
   activation = JSON.parse(
     readFileSync(
@@ -25,7 +25,7 @@ serveContractedAgent({
   executor: process.execPath,
   executorArgs: [resolve(root, "src/a2a-live-research-executor.mjs")],
   timeoutMs: activation.timeoutMs,
-  ...localA2aMembrane(process.env.RELATIONAL_RESEARCH_DATA_ROOT ?? resolve(root, "data"), "live-research"),
+  ...createFilesystemContractedAgentSources({ stateRoot: resolve(process.env.RELATIONAL_RESEARCH_DATA_ROOT ?? resolve(root, "data"), "a2a-state"), provider: "live-research" }),
 })
   .then(({ server, baseUrl }) => {
     process.stdout.write(`${baseUrl}\n`);

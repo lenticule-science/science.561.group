@@ -12,7 +12,7 @@
     "access": "public"
   },
   "scripts": {
-    "check": "node --check src/local-a2a-membrane.mjs && node --check src/desk.mjs && node --check src/delivery.mjs && node --check src/research-market-client.mjs && node --check src/source-evidence-client.mjs && node --check src/assignment-admission-client.mjs && node --check src/live-research.mjs && node --check src/a2a-live-research-executor.mjs && node --check src/serve-live-research-a2a.mjs && node --check src/a2a-delivery-executor.mjs && node --check src/serve-delivery-a2a.mjs && node --check test/desk.test.mjs && node --check test/delivery.test.mjs && node --check test/research-market-client.test.mjs && node --check test/source-evidence-client.test.mjs",
+    "check": "node --check src/desk.mjs && node --check src/delivery.mjs && node --check src/research-market-client.mjs && node --check src/source-evidence-client.mjs && node --check src/assignment-admission-client.mjs && node --check src/live-research.mjs && node --check src/a2a-live-research-executor.mjs && node --check src/serve-live-research-a2a.mjs && node --check src/a2a-delivery-executor.mjs && node --check src/serve-delivery-a2a.mjs && node --check test/desk.test.mjs && node --check test/delivery.test.mjs && node --check test/research-market-client.test.mjs && node --check test/source-evidence-client.test.mjs",
     "serve-research-delivery": "node src/serve-delivery-a2a.mjs",
     "serve-live-research": "node src/serve-live-research-a2a.mjs",
     "test": "node --test test/desk.test.mjs test/delivery.test.mjs test/research-market-client.test.mjs test/source-evidence-client.test.mjs"
@@ -23,7 +23,7 @@
   "dependencies": {
     "@red-cup-engineering/a2a-agent-card-discovery-service": "1.0.9",
     "@red-cup-engineering/a2a-agent-card-key-service": "1.0.5",
-    "@red-cup-engineering/a2a-contracted-agent-service": "2.1.1",
+    "@red-cup-engineering/a2a-contracted-agent-service": "2.1.5",
     "@red-cup-engineering/a2a-rmn-part-service": "1.0.4",
     "@red-cup-engineering/a2a-rmn-task-client-service": "1.1.7",
     "@red-cup-engineering/semantic-content-identify-service": "0.2.7",
