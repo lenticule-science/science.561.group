@@ -1,24 +1,16 @@
 ---
-name: "OpenClaw DM Policy"
-date-created: 2026-03-09T00:00:00
-authors:
-  - claude
-date-updated: 2026-03-09T00:00:00
 aliases:
-  - "OpenClaw DM Policy"
-  - "openclaw dm policy"
-  - "dm policy (openclaw)"
-keywords:
-  - OpenClaw
-  - MessagingPlatforms
-  - AccessControl
-  - SecurityModel
-description: "The configuration that determines how OpenClaw handles inbound direct messages before they reach an agent."
-cites:
-  - "OpenClaw README"
-  - "OpenClaw Security"
+  - dm policy (openclaw)
+description: The configuration that determines how OpenClaw handles inbound direct messages before they reach an agent.
+identity: openclaw-dm-policy
+name: OpenClaw DM Policy
+provenance:
+  date-created: 2026-03-09
+  date-modified: 2026-03-09
+  sources:
+    - OpenClaw README
+    - OpenClaw Security
 ---
-
 The OpenClaw DM policy is the configuration that determines how
 OpenClaw handles inbound direct messages before they reach an agent.
 It is a channel-level gate on message processing, not only a cosmetic

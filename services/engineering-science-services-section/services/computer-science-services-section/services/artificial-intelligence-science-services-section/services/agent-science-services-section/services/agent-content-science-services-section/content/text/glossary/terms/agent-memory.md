@@ -1,16 +1,19 @@
 ---
-id: agent-memory
-description: "The mechanisms by which an agentic system persists information across interactions — satisfying the persistent-state condition."
-aliases: [memory]
-satisfies: persistent-state
-types: conversation-history, session-checkpoint, vector-memory, structured-knowledge, file-based-memory
-bounded-by: context-window
-retrieval-via: embedding, retrieval-augmented-generation
-accessed-through: tool-use
-date-created: 2026-03-29
-date-updated: 2026-03-29
+aliases:
+  - memory
+description: The mechanisms by which an agentic system persists information across interactions — satisfying the persistent-state condition.
+identity: agent-memory
+name: agent-memory
+provenance:
+  date-created: 2026-03-29
+  date-modified: 2026-03-29
+relations:
+  satisfies: persistent-state
+  types: conversation-history, session-checkpoint, vector-memory, structured-knowledge, file-based-memory
+  bounded-by: context-window
+  retrieval-via: embedding, retrieval-augmented-generation
+  accessed-through: tool-use
 ---
-
 Agent memory is the set of mechanisms by which an [agentic system](../../../../../../content/text/glossary/terms/agentic-system.md) persists information across interactions. Persistent state is one of the three conditions defining an agentic system; agent memory is how that condition is satisfied in practice.
 
 ### Memory types

@@ -1,16 +1,20 @@
 ---
-id: prompt-chaining
-description: "The simplest orchestration pattern — a fixed sequence of LLM calls where each call's output becomes the next call's input."
-aliases: [prompt chain, chain]
-pattern-of: agent-orchestration
-uses: structured-output
-autonomy: none
-control-flow: developer-specified
-contrasts-with: multi-agent-system, agentic-system
-date-created: 2026-03-29
-date-updated: 2026-03-29
+aliases:
+  - prompt chain
+  - chain
+description: The simplest orchestration pattern — a fixed sequence of LLM calls where each call's output becomes the next call's input.
+identity: prompt-chaining
+name: prompt-chaining
+provenance:
+  date-created: 2026-03-29
+  date-modified: 2026-03-29
+relations:
+  pattern-of: agent-orchestration
+  uses: structured-output
+  autonomy: none
+  control-flow: developer-specified
+  contrasts-with: multi-agent-system, agentic-system
 ---
-
 Prompt chaining is the simplest [agent orchestration](../../../../../../content/text/glossary/terms/agent-orchestration.md) pattern: a fixed sequence of LLM calls where each call's output becomes the next call's input. Between steps, the application may transform the output, validate it against a schema, call a tool, or inject additional context. The sequence is predefined by the developer; the LLM controls the content of each step but not the execution path.
 
 Anthropic's "Building Effective Agents" (December 2024) places prompt chaining at the low-autonomy end of the orchestration spectrum:

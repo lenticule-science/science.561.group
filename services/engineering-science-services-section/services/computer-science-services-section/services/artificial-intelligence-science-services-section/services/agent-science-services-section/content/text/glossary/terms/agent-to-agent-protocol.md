@@ -1,15 +1,16 @@
 ---
-name: "Agent-to-Agent Protocol"
-description: "An open, vendor-neutral protocol (A2A) enabling communication and interoperability between opaque agentic systems — the inter-agent complement to MCP, donated by Google to the Linux Foundation in June 2025."
-domain: agents
-dual-of: model-context-protocol
-enables: multi-agent-system
-requires: json-schema
-acts-on: agentic-system
-date-created: 2026-03-29
-date-updated: 2026-03-29
+description: An open, vendor-neutral protocol (A2A) enabling communication and interoperability between opaque agentic systems — the inter-agent complement to MCP, donated by Google to the Linux Foundation in June 2025.
+identity: agent-to-agent-protocol
+name: Agent-to-Agent Protocol
+provenance:
+  date-created: 2026-03-29
+  date-modified: 2026-03-29
+relations:
+  dual-of: model-context-protocol
+  enables: multi-agent-system
+  requires: json-schema
+  acts-on: agentic-system
 ---
-
 The Agent-to-Agent protocol (A2A) is an open, vendor-neutral protocol enabling communication and interoperability between opaque [agentic systems](./agentic-system.md). It is the inter-agent complement to [MCP](../../../../services/model-context-protocol-science-services-section/content/text/glossary/terms/model-context-protocol.md): MCP standardizes how an agent connects to tools; A2A standardizes how agents connect to each other.
 
 A2A was announced by **Google Cloud** at Google Cloud Next on **April 9, 2025**, with 50+ technology partners at launch. Google donated the protocol to the **Linux Foundation** on **June 24, 2025** under the Apache 2.0 license. The Linux Foundation formally established the Agent2Agent Protocol Project on **February 27, 2026**, with AWS, Cisco, Google, Microsoft, Salesforce, SAP, and ServiceNow as founding contributors. **Version 1.0** — the first stable, production-ready release — shipped in early 2026, with 150+ supporting organizations.

@@ -1,24 +1,16 @@
 ---
-name: "OpenClaw SOUL.md"
-date-created: 2026-03-09T00:00:00
-authors:
-  - claude
-date-updated: 2026-03-09T00:00:00
 aliases:
-  - "OpenClaw SOUL.md"
-  - "openclaw soul.md"
-  - "soul.md (openclaw)"
-keywords:
-  - OpenClaw
-  - AssistantConfiguration
-  - IdentityDesign
-  - AgentInfrastructure
-description: "A workspace file in OpenClaw that defines assistant identity, style, and behavioral boundaries."
-cites:
-  - "OpenClaw Agent Bootstrapping"
-  - "Learn OpenClaw: Your First 24 Hours with OpenClaw"
+  - soul.md (openclaw)
+description: A workspace file in OpenClaw that defines assistant identity, style, and behavioral boundaries.
+identity: openclaw-soul-md
+name: OpenClaw SOUL.md
+provenance:
+  date-created: 2026-03-09
+  date-modified: 2026-03-09
+  sources:
+    - OpenClaw Agent Bootstrapping
+    - "Learn OpenClaw: Your First 24 Hours with OpenClaw"
 ---
-
 OpenClaw SOUL.md is a workspace file that defines the assistant's
 identity, style, values, and behavioral boundaries. In practice it is
 the main place where an operator specifies how the assistant should

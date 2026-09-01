@@ -1,19 +1,22 @@
 ---
-id: agent-orchestration
-description: "The coordination layer that determines which steps an agentic system executes in what order, under what conditions, and with what state."
-aliases: [orchestration]
-coordinates: agentic-system
-built-from: tool-use
-decisions: state-management, control-flow, communication, observability
-patterns: prompt-chaining, routing, parallelization, orchestrator-workers
-controlled-by: human-in-the-loop
-assessed-by: agent-evaluation, agent-observability
-frameworks: langgraph, pydantic-ai
-protocols: model-context-protocol, agent-to-agent-protocol
-date-created: 2026-03-29
-date-updated: 2026-08-29
+aliases:
+  - orchestration
+description: The coordination layer that determines which steps an agentic system executes in what order, under what conditions, and with what state.
+identity: agent-orchestration
+name: agent-orchestration
+provenance:
+  date-created: 2026-03-29
+  date-modified: 2026-08-29
+relations:
+  coordinates: agentic-system
+  built-from: tool-use
+  decisions: state-management, control-flow, communication, observability
+  patterns: prompt-chaining, routing, parallelization, orchestrator-workers
+  controlled-by: human-in-the-loop
+  assessed-by: agent-evaluation, agent-observability
+  frameworks: langgraph, pydantic-ai
+  protocols: model-context-protocol, agent-to-agent-protocol
 ---
-
 Agent orchestration is the coordination of one or more [agentic systems](./agentic-system.md) through a defined execution topology. The topology determines which steps execute in what order, under what conditions, and with what state. Orchestration sits between the raw [tool use](./tool-use.md) primitive and the goal the system is pursuing.
 
 The simplest orchestration is a linear chain: call tool A, feed the result to tool B, return. The most complex involve graph-structured workflows with conditional branching, parallel execution, checkpointing, rollback, [human-in-the-loop](./human-in-the-loop.md) pauses, and dynamic subgraph composition.

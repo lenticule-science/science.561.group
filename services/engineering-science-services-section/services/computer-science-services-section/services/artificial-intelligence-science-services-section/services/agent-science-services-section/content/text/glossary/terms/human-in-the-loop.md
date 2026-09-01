@@ -1,15 +1,18 @@
 ---
-id: human-in-the-loop
-description: "An orchestration pattern where execution pauses at designated points for human review before continuing — the primary mechanism for maintaining human control over agentic systems."
-aliases: [HITL]
-pattern-of: agent-orchestration
-controls: agentic-system
-patterns: pre-action-review, checkpoint-review, exception-escalation, output-review
-tradeoff: autonomy, control
-date-created: 2026-03-29
-date-updated: 2026-03-29
+aliases:
+  - HITL
+description: An orchestration pattern where execution pauses at designated points for human review before continuing — the primary mechanism for maintaining human control over agentic systems.
+identity: human-in-the-loop
+name: human-in-the-loop
+provenance:
+  date-created: 2026-03-29
+  date-modified: 2026-03-29
+relations:
+  pattern-of: agent-orchestration
+  controls: agentic-system
+  patterns: pre-action-review, checkpoint-review, exception-escalation, output-review
+  tradeoff: autonomy, control
 ---
-
 Human-in-the-loop (HITL) is an [agent orchestration](./agent-orchestration.md) pattern where execution pauses at designated points for human review, approval, or modification before the agent continues. The human inspects the agent's proposed action, the current state, or an intermediate result, then approves, edits, or rejects it. Execution resumes with the human's decision incorporated.
 
 HITL serves two functions. First, it catches errors — [hallucinated](../../../../../../content/text/glossary/terms/hallucination.md) tool calls, incorrect plans, unsafe actions — before they take effect. Second, it provides a control mechanism: the human retains decision authority over actions that are irreversible, high-stakes, or outside the agent's competence.

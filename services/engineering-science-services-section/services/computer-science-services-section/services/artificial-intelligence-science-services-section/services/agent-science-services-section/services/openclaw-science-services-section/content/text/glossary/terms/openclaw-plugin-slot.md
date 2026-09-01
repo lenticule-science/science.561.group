@@ -1,24 +1,16 @@
 ---
-name: "OpenClaw Plugin Slot"
-date-created: 2026-03-09T00:00:00
-authors:
-  - claude
-date-updated: 2026-03-09T00:00:00
 aliases:
-  - "OpenClaw Plugin Slot"
-  - "openclaw plugin slot"
-  - "plugin slot (openclaw)"
-keywords:
-  - OpenClaw
-  - PluginSystems
-  - Extensibility
-  - AgentInfrastructure
-description: "An exclusive plugin category in OpenClaw where only one plugin can own a given runtime role."
-cites:
-  - "OpenClaw Plugins"
-  - "OpenClaw Vision"
+  - plugin slot (openclaw)
+description: An exclusive plugin category in OpenClaw where only one plugin can own a given runtime role.
+identity: openclaw-plugin-slot
+name: OpenClaw Plugin Slot
+provenance:
+  date-created: 2026-03-09
+  date-modified: 2026-03-09
+  sources:
+    - OpenClaw Plugins
+    - OpenClaw Vision
 ---
-
 An OpenClaw plugin slot is an exclusive plugin category where only one
 plugin can own a given runtime role at a time. Slots let OpenClaw keep
 its core lean while making selected extension points explicit and

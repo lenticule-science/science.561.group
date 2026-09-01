@@ -1,15 +1,16 @@
 ---
-name: "Agent Observability"
-description: "The practice of instrumenting agentic systems to make their decisions, tool calls, state transitions, and failure modes inspectable — tracing the causal chain from input to action."
-domain: agents
-measures: agentic-system
-requires: agent-orchestration
-enables: agent-evaluation, agent-self-improvement
-delivered-via: langgraph, pydantic-ai
-date-created: 2026-03-29
-date-modified: 2026-03-29
+description: The practice of instrumenting agentic systems to make their decisions, tool calls, state transitions, and failure modes inspectable — tracing the causal chain from input to action.
+identity: agent-observability
+name: Agent Observability
+provenance:
+  date-created: 2026-03-29
+  date-modified: 2026-03-29
+relations:
+  measures: agentic-system
+  requires: agent-orchestration
+  enables: agent-evaluation, agent-self-improvement
+  delivered-via: langgraph, pydantic-ai
 ---
-
 Agent observability is the practice of instrumenting [agentic systems](./agentic-system.md) to make their decisions, [tool calls](./tool-use.md), state transitions, and failure modes inspectable. In traditional software, observability means logs, metrics, and traces. In agentic systems, observability must additionally capture *why* the model made each decision — what context it saw, what alternatives it considered, and what state it was operating on.
 
 Observability matters more in agentic systems than in conversational LLM use because agents are stateful and errors compound. Anthropic's engineering blog on their production multi-agent research system states this directly: "minor failures cascade into entirely different trajectories." A wrong tool call in step 3 changes the state that step 4 operates on, which changes step 5's plan, which produces an output unrelated to the original goal. Without tracing, diagnosing the root cause requires manually reconstructing the agent's reasoning across every step.

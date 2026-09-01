@@ -1,24 +1,16 @@
 ---
-name: "OpenClaw Gateway"
-date-created: 2026-03-09T00:00:00
-authors:
-  - claude
-date-updated: 2026-03-09T00:00:00
 aliases:
-  - "OpenClaw Gateway"
-  - "openclaw gateway"
-  - "gateway (openclaw)"
-keywords:
-  - OpenClaw
-  - ControlPlane
-  - AgentInfrastructure
-  - SelfHosting
-description: "The long-running control-plane process in an OpenClaw deployment."
-cites:
-  - "OpenClaw README"
-  - "OpenClaw Security"
+  - gateway (openclaw)
+description: The long-running control-plane process in an OpenClaw deployment.
+identity: openclaw-gateway
+name: OpenClaw Gateway
+provenance:
+  date-created: 2026-03-09
+  date-modified: 2026-03-09
+  sources:
+    - OpenClaw README
+    - OpenClaw Security
 ---
-
 The OpenClaw Gateway is the long-running control-plane process in an
 OpenClaw deployment. It coordinates sessions, channels, tools,
 configuration, routing, and web interfaces while the assistant remains

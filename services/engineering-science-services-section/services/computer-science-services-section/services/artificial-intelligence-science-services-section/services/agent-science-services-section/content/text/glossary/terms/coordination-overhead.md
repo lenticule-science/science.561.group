@@ -1,15 +1,17 @@
 ---
-id: coordination-overhead
-description: "The token cost, latency, and error amplification incurred when multiple agents communicate and synchronize."
-cost-of: multi-agent-system
-components: token-cost, latency, error-amplification
-saturation-threshold: approximately-4-agents
-baseline-cost: 15x-single-turn
-contrasts-with: prompt-chaining
-date-created: 2026-03-29
-date-modified: 2026-03-29
+description: The token cost, latency, and error amplification incurred when multiple agents communicate and synchronize.
+identity: coordination-overhead
+name: coordination-overhead
+provenance:
+  date-created: 2026-03-29
+  date-modified: 2026-03-29
+relations:
+  cost-of: multi-agent-system
+  components: token-cost, latency, error-amplification
+  saturation-threshold: approximately-4-agents
+  baseline-cost: 15x-single-turn
+  contrasts-with: prompt-chaining
 ---
-
 Coordination overhead is the token cost, latency, and error amplification incurred when multiple agents communicate and synchronize. Every message between agents consumes tokens. Every synchronization point adds latency. Every handoff introduces an opportunity for misinterpretation. Coordination overhead is the tax on [multi-agent systems](./multi-agent-system.md) that single-agent systems avoid.
 
 The overhead has three components. Token cost: agents communicate through natural language, which is expensive per unit of information transferred. Latency: coordination points require agents to wait for each other, and this grows approximately quadratically with the number of agents. Error amplification: each handoff between agents is an opportunity for misinterpretation, and errors cascade — one agent's mistake becomes the next agent's input.

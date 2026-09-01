@@ -1,23 +1,14 @@
 ---
-name: "OpenClaw Memory"
-date-created: 2026-03-09T00:00:00
-authors:
-  - claude
-date-updated: 2026-03-09T00:00:00
-aliases:
-  - "OpenClaw Memory"
-  - "openclaw memory"
-keywords:
-  - OpenClaw
-  - MemorySystems
-  - Markdown
-  - AgentInfrastructure
-description: "The Markdown-based memory layer in OpenClaw, consisting of durable workspace files plus plugin-backed search."
-cites:
-  - "OpenClaw Memory"
-  - "Learn OpenClaw: Memory System"
+description: The Markdown-based memory layer in OpenClaw, consisting of durable workspace files plus plugin-backed search.
+identity: openclaw-memory
+name: OpenClaw Memory
+provenance:
+  date-created: 2026-03-09
+  date-modified: 2026-03-09
+  sources:
+    - OpenClaw Memory
+    - "Learn OpenClaw: Memory System"
 ---
-
 OpenClaw memory is the Markdown-based memory layer in an OpenClaw
 workspace. Its source of truth is written files on disk rather than
 session-local model state.

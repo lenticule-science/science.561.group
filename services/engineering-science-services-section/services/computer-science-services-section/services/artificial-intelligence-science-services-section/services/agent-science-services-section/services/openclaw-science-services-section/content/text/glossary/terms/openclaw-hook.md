@@ -1,22 +1,13 @@
 ---
-name: "OpenClaw Hook"
-date-created: 2026-03-09T00:00:00
-authors:
-  - claude
-date-updated: 2026-03-09T00:00:00
-aliases:
-  - "OpenClaw Hook"
-  - "openclaw hook"
-keywords:
-  - OpenClaw
-  - Automation
-  - Extensibility
-  - AgentInfrastructure
-description: "A directory-discovered event handler in OpenClaw that runs when command or lifecycle events fire."
-cites:
-  - "OpenClaw Hooks"
+description: A directory-discovered event handler in OpenClaw that runs when command or lifecycle events fire.
+identity: openclaw-hook
+name: OpenClaw Hook
+provenance:
+  date-created: 2026-03-09
+  date-modified: 2026-03-09
+  sources:
+    - OpenClaw Hooks
 ---
-
 An OpenClaw hook is a directory-discovered event handler that runs when
 command or lifecycle events fire inside the Gateway. Hooks are the
 event-driven automation layer of OpenClaw.

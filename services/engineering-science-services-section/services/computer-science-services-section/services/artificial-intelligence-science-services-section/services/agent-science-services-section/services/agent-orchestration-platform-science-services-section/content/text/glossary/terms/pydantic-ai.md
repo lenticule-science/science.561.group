@@ -1,17 +1,18 @@
 ---
-name: "PydanticAI"
-description: "A Python agent framework by the Pydantic team emphasizing type safety, structured outputs, and model-agnostic design — validation errors are fed back to the LLM for self-correction."
-domain: agents
-instance-of: agent-orchestration
-requires: type-safety
-enables: structured-output, durable-execution
-delivered-via: model-context-protocol, agent-to-agent-protocol
-optimizes: structured-output
-contrasts-with: langgraph
-date-created: 2026-03-29
-date-updated: 2026-03-29
+description: A Python agent framework by the Pydantic team emphasizing type safety, structured outputs, and model-agnostic design — validation errors are fed back to the LLM for self-correction.
+identity: pydantic-ai
+name: PydanticAI
+provenance:
+  date-created: 2026-03-29
+  date-modified: 2026-03-29
+relations:
+  instance-of: agent-orchestration
+  requires: type-safety
+  enables: structured-output, durable-execution
+  delivered-via: model-context-protocol, agent-to-agent-protocol
+  optimizes: structured-output
+  contrasts-with: langgraph
 ---
-
 PydanticAI is a Python framework for building [agentic systems](../../../../../../content/text/glossary/terms/agentic-system.md) with type safety, structured outputs, and model-agnostic design. It is created and maintained by Samuel Colvin and the Pydantic team — the same team behind Pydantic, Python's dominant data validation library. The framework applies Pydantic's philosophy (define the shape of your data, let the library enforce it) to AI agent development.
 
 PydanticAI was publicly announced on December 2, 2024. **Version 1.0 was released on September 4, 2025**, after nine months of iteration and 15 million downloads. The current version as of March 2026 is 1.73.0, with Production/Stable status on PyPI. MIT license.

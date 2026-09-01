@@ -1,24 +1,26 @@
 ---
-name: "Agent Self-Improvement"
-description: "The capability of an agentic system to improve its own prompts, tools, or workflows based on evaluated performance — a feedback loop from execution to instruction."
-domain: agents
-requires: agent-evaluation
-optimizes: context-engineering, system-prompt
-acts-on: system-prompt
-governed-by: human-in-the-loop
-contrasts-with: fine-tuning, rlhf
-date-created: 2026-03-29
-date-modified: 2026-03-29
+description: The capability of an agentic system to improve its own prompts, tools, or workflows based on evaluated performance — a feedback loop from execution to instruction.
+identity: agent-self-improvement
+name: Agent Self-Improvement
+provenance:
+  date-created: 2026-03-29
+  date-modified: 2026-03-29
+  sources:
+    - icml2025metacog
 references:
-  icml2025metacog:
-    authors: ["Various"]
+  icmlmetacog2025:
+    authors:
+      - Various
     title: "Position: Truly Self-Improving Agents Require Intrinsic Metacognitive Learning"
-    publication: "ICML 2025"
+    publication: ICML 2025
     year: 2025
-cites:
-  - icml2025metacog
+relations:
+  requires: agent-evaluation
+  optimizes: context-engineering, system-prompt
+  acts-on: system-prompt
+  governed-by: human-in-the-loop
+  contrasts-with: fine-tuning, rlhf
 ---
-
 Agent self-improvement is the capability of an [agentic system](./agentic-system.md) to modify its own prompts, tools, or workflows based on [evaluated](./agent-evaluation.md) performance. The agent executes a task, a grading system scores the output, and the scores feed back into the agent's instructions or configuration for the next iteration. The loop runs: execute → evaluate → revise → execute.
 
 ### The practical pattern

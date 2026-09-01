@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "glossary/terms/term",
+  "title": "Glossary term record",
+  "description": "A record that documents a community's designation for a concept without identifying the designation, concept, carrier, or formal-language term with one another.",
+  "type": "object",
+  "required": ["identity", "name", "body"],
+  "additionalProperties": false,
+  "properties": {
+    "identity": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "description": "Stable carrier identity, normally equal to the Markdown filename stem."
+    },
+    "name": {"type": "string", "minLength": 1, "description": "Primary designation displayed to readers."},
+    "body": {"type": "string", "minLength": 1, "description": "Definition and distinctions carried for readers."},
+    "description": {"type": "string", "minLength": 1, "description": "Concise independent summary of the concept."},
+    "aliases": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1},
+      "description": "Other designations admitted for this concept in the same glossary scope."
+    },
+    "keywords": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+      "description": "Retrieval or compound-composition keys; they are not aliases by default."
+    },
+    "relations": {
+      "type": "object",
+      "propertyNames": {"pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+      "additionalProperties": {
+        "oneOf": [
+          {"type": "string", "minLength": 1},
+          {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}}
+        ]
+      },
+      "description": "Semantic assertions about identified subjects; provenance and citations do not belong here."
+    },
+    "references": {
+      "type": "object",
+      "propertyNames": {"pattern": "^[a-z][a-z0-9-]*[0-9]{4}[a-z]?$"},
+      "additionalProperties": {
+        "type": "object",
+        "required": ["authors", "title", "year"],
+        "additionalProperties": false,
+        "properties": {
+          "authors": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+          "title": {"type": "string", "minLength": 1},
+          "year": {"type": "integer", "minimum": 1},
+          "publication": {"type": "string", "minLength": 1},
+          "publisher": {"type": "string", "minLength": 1},
+          "url": {"type": "string", "format": "uri"},
+          "doi": {"type": "string", "minLength": 1},
+          "note": {"type": "string", "minLength": 1},
+          "eprint": {"type": "string", "minLength": 1}
+        }
+      },
+      "description": "Published evidence keyed by citekey, separate from semantic relations."
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "date-created": {"type": "string", "format": "date"},
+        "date-modified": {"type": "string", "format": "date"},
+        "sources": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}}
+      },
+      "description": "Custody and dates for the record, separate from its semantic assertions."
+    }
+  }
+}

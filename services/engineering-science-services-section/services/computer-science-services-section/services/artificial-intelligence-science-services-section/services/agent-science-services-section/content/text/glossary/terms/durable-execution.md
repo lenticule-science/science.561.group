@@ -1,16 +1,19 @@
 ---
-id: durable-execution
-description: "An execution model where workflow state is persisted at every step so that an interrupted process resumes from its last completed step rather than restarting."
-aliases: [resumable execution]
-property-of: agent-orchestration
-enables: human-in-the-loop, time-travel-debugging
-distinction: resumable, restartable
-constraint: state-serialization
-origins: azure-durable-functions, aws-step-functions, temporal
-date-created: 2026-03-29
-date-modified: 2026-03-29
+aliases:
+  - resumable execution
+description: An execution model where workflow state is persisted at every step so that an interrupted process resumes from its last completed step rather than restarting.
+identity: durable-execution
+name: durable-execution
+provenance:
+  date-created: 2026-03-29
+  date-modified: 2026-03-29
+relations:
+  property-of: agent-orchestration
+  enables: human-in-the-loop, time-travel-debugging
+  distinction: resumable, restartable
+  constraint: state-serialization
+  origins: azure-durable-functions, aws-step-functions, temporal
 ---
-
 Durable execution is an execution model where workflow state is persisted at every step so that a process interrupted by crashes, network failures, or restarts resumes from its last completed step. The workflow function looks like ordinary sequential code, but the runtime automatically checkpoints state after each step and replays completed steps on recovery without re-executing their side effects.
 
 The concept originates in workflow orchestration systems: Azure Durable Functions, AWS Step Functions, and Temporal all implement durable execution for distributed systems. In [agentic systems](./agentic-system.md), durable execution solves a specific problem: agent workflows involve expensive LLM calls and irreversible tool actions (file writes, API calls, database mutations). Re-executing a failed workflow from the beginning wastes tokens on completed work, may produce different results (LLM output is stochastic), and may duplicate side effects.

@@ -1,15 +1,16 @@
 ---
-name: "AGENTS.md"
-description: "A file convention for providing AI coding agents with project-specific instructions — a README for agents, stewarded by the Linux Foundation's Agentic AI Foundation since December 2025."
-domain: agents
-instance-of: context-engineering
-governs: agentic-system
-delivered-via: system-prompt
-contrasts-with: soul-md
-date-created: 2026-03-29
-date-updated: 2026-03-29
+description: A file convention for providing AI coding agents with project-specific instructions — a README for agents, stewarded by the Linux Foundation's Agentic AI Foundation since December 2025.
+identity: agents-md
+name: AGENTS.md
+provenance:
+  date-created: 2026-03-29
+  date-modified: 2026-03-29
+relations:
+  instance-of: context-engineering
+  governs: agentic-system
+  delivered-via: system-prompt
+  contrasts-with: soul-md
 ---
-
 AGENTS.md is a file convention for providing AI coding agents with project-specific instructions. It is a Markdown file placed in a project's root directory (or subdirectories in monorepos) that functions as a README for agents — a dedicated, predictable location for context that would clutter a human-oriented README: build commands, test procedures, code style rules, git workflow conventions, and security boundaries.
 
 The convention emerged from a collaboration across the AI development ecosystem. OpenAI introduced it alongside the Codex research preview (May 2025) and released the format publicly in **August 2025**. Collaborators included OpenAI (Codex), Google (Jules), Cursor, Factory, and Amp. On **December 9, 2025**, the Linux Foundation announced the **Agentic AI Foundation (AAIF)**, with AGENTS.md as one of its three founding project contributions alongside Anthropic's [MCP](../../../../../../../model-context-protocol-science-services-section/content/text/glossary/terms/model-context-protocol.md) and Block's goose.

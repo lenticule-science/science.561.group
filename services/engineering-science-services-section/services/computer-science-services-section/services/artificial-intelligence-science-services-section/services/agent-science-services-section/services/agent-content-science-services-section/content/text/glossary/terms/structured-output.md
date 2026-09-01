@@ -1,16 +1,19 @@
 ---
-id: structured-output
-description: "Output from a language model that conforms to a predefined schema — JSON, typed records, or other machine-parseable formats — rather than free-form text."
-aliases: [structured outputs]
-produced-by: language-model
-schema-format: json-schema
-enables: tool-use
-enforcement: schema-guided-decoding, post-hoc-validation, fine-tuning
-validated-by: pydantic-ai
-date-created: 2026-03-29
-date-updated: 2026-03-29
+aliases:
+  - structured outputs
+description: Output from a language model that conforms to a predefined schema — JSON, typed records, or other machine-parseable formats — rather than free-form text.
+identity: structured-output
+name: structured-output
+provenance:
+  date-created: 2026-03-29
+  date-modified: 2026-03-29
+relations:
+  produced-by: language-model
+  schema-format: json-schema
+  enables: tool-use
+  enforcement: schema-guided-decoding, post-hoc-validation, fine-tuning
+  validated-by: pydantic-ai
 ---
-
 Structured output is output from a [large language model](../../../../../../../../../on-device-inference-services-section/content/text/glossary/terms/large-language-model.md) that conforms to a predefined schema — a [JSON Schema](../../../../../../../../../../content/text/glossary/terms/json-schema.md), a typed record, or another machine-parseable format — rather than free-form text. The model generates text that happens to be valid JSON (or XML, or YAML) because it has been [fine-tuned](../../../../../../../../content/text/glossary/terms/fine-tuning.md) on examples of schema-conformant output and, in some implementations, because the decoding process constrains token selection to only those tokens that maintain schema validity.
 
 Structured output is what makes [tool use](../../../../../../content/text/glossary/terms/tool-use.md) work. When a model calls a tool, it produces a JSON object specifying the function name and arguments. That object must conform to the tool's input schema — correct field names, correct types, required fields present. If the output is malformed, the tool call fails. Structured output turns a text generator into a system that can interface with typed APIs.

@@ -1,24 +1,16 @@
 ---
-name: "OpenClaw HEARTBEAT.md"
-date-created: 2026-03-09T00:00:00
-authors:
-  - claude
-date-updated: 2026-03-09T00:00:00
 aliases:
-  - "OpenClaw HEARTBEAT.md"
-  - "openclaw heartbeat.md"
-  - "heartbeat.md (openclaw)"
-keywords:
-  - OpenClaw
-  - Automation
-  - Proactivity
-  - AssistantConfiguration
-description: "An optional workspace file that defines OpenClaw's low-frequency proactive behavior."
-cites:
-  - "OpenClaw Heartbeat"
-  - "Learn OpenClaw: Automation"
+  - heartbeat.md (openclaw)
+description: An optional workspace file that defines OpenClaw's low-frequency proactive behavior.
+identity: openclaw-heartbeat
+name: OpenClaw HEARTBEAT.md
+provenance:
+  date-created: 2026-03-09
+  date-modified: 2026-03-09
+  sources:
+    - OpenClaw Heartbeat
+    - "Learn OpenClaw: Automation"
 ---
-
 OpenClaw HEARTBEAT.md is an optional workspace file that defines what
 the assistant should check or notice when it is idle. It is the main
 configuration surface for low-frequency proactive behavior.

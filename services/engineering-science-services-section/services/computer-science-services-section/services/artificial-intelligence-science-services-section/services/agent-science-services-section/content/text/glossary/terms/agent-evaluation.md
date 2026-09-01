@@ -1,38 +1,48 @@
 ---
-name: "Agent Evaluation"
-description: "The practice of measuring agentic system performance through benchmarks, metrics, and grading criteria — determining whether an agent setup produces value or wastes tokens."
-domain: agents
-measures: agentic-system
-requires: agent-observability
-enables: agent-self-improvement
-acts-on: agentic-system
-date-created: 2026-03-29
-date-modified: 2026-03-29
+description: The practice of measuring agentic system performance through benchmarks, metrics, and grading criteria — determining whether an agent setup produces value or wastes tokens.
+identity: agent-evaluation
+name: Agent Evaluation
+provenance:
+  date-created: 2026-03-29
+  date-modified: 2026-03-29
+  sources:
+    - swebench2024
+    - masft2025
+    - enterpriseeval2025
 references:
   swebench2024:
-    authors: ["C. E. Jimenez", "J. Yang", "A. Wettig", "S. Yao", "K. Pei", "O. Press", "K. Narasimhan"]
+    authors:
+      - C. E. Jimenez
+      - J. Yang
+      - A. Wettig
+      - S. Yao
+      - K. Pei
+      - O. Press
+      - K. Narasimhan
     title: "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?"
-    publication: "ICLR 2024"
+    publication: ICLR 2024
     year: 2024
-    url: "https://arxiv.org/abs/2310.06770"
+    url: https://arxiv.org/abs/2310.06770
   masft2025:
-    authors: ["Various"]
-    title: "Why Do Multi-Agent LLM Systems Fail?"
-    publication: "arXiv"
+    authors:
+      - Various
+    title: Why Do Multi-Agent LLM Systems Fail?
+    publication: arXiv
     year: 2025
-    url: "https://arxiv.org/abs/2503.13657"
+    url: https://arxiv.org/abs/2503.13657
   enterpriseeval2025:
-    authors: ["Various"]
+    authors:
+      - Various
     title: "Beyond Accuracy: A Multi-Dimensional Framework for Evaluating AI Agents"
-    publication: "arXiv"
+    publication: arXiv
     year: 2025
-    url: "https://arxiv.org/abs/2511.14136"
-cites:
-  - swebench2024
-  - masft2025
-  - enterpriseeval2025
+    url: https://arxiv.org/abs/2511.14136
+relations:
+  measures: agentic-system
+  requires: agent-observability
+  enables: agent-self-improvement
+  acts-on: agentic-system
 ---
-
 Agent evaluation is the practice of measuring [agentic system](./agentic-system.md) performance. The core question is whether an agent setup produces value — completing tasks correctly, reliably, and at acceptable cost — or wastes [tokens](../../../../../../content/text/glossary/terms/token.md) on coordination overhead, hallucinated actions, and cascading errors.
 
 ### Benchmarks

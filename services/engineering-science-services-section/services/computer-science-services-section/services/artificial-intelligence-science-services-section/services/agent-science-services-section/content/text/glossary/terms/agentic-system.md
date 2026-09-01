@@ -1,18 +1,22 @@
 ---
-id: agentic-system
-description: "A computational system that acts on its environment through tool use, pursues goals through multi-step planning, and maintains state across interactions."
-aliases: [agent, agentic systems]
-conditions: environmental-action, goal-directed-planning, persistent-state
-acts-through: tool-use
-state-kept-by: agent-memory
-coordinated-by: agent-orchestration
-controlled-by: human-in-the-loop
-assessed-by: agent-evaluation
-workflow-variant: prompt-chaining
-date-created: 2026-03-29
-date-updated: 2026-03-29
+aliases:
+  - agent
+  - agentic systems
+description: A computational system that acts on its environment through tool use, pursues goals through multi-step planning, and maintains state across interactions.
+identity: agentic-system
+name: agentic-system
+provenance:
+  date-created: 2026-03-29
+  date-modified: 2026-03-29
+relations:
+  conditions: environmental-action, goal-directed-planning, persistent-state
+  acts-through: tool-use
+  state-kept-by: agent-memory
+  coordinated-by: agent-orchestration
+  controlled-by: human-in-the-loop
+  assessed-by: agent-evaluation
+  workflow-variant: prompt-chaining
 ---
-
 An agentic system is a computational system that meets three conditions. It acts on its environment through [tool use](./tool-use.md) — it writes files, calls APIs, modifies databases. It pursues goals through multi-step planning — it decomposes objectives into sequences of actions and selects among alternatives. It maintains state that persists across interactions — it remembers what it has done and can resume after interruption.
 
 All three conditions are necessary. A chatbot generates text but does not act on its environment. A script calls APIs but follows a fixed path — it does not plan. A stateless tool-calling system acts and may plan but forgets between invocations. Each satisfies at most two conditions. An agentic system satisfies all three.

@@ -1,24 +1,16 @@
 ---
-name: "OpenClaw Node"
-date-created: 2026-03-09T00:00:00
-authors:
-  - claude
-date-updated: 2026-03-09T00:00:00
 aliases:
-  - "OpenClaw Node"
-  - "openclaw node"
-  - "paired node (openclaw)"
-keywords:
-  - OpenClaw
-  - DeviceIntegration
-  - AgentInfrastructure
-  - SelfHosting
-description: "A paired device surface that exposes host-local capabilities to an OpenClaw Gateway."
-cites:
-  - "OpenClaw README"
-  - "OpenClaw Security"
+  - paired node (openclaw)
+description: A paired device surface that exposes host-local capabilities to an OpenClaw Gateway.
+identity: openclaw-node
+name: OpenClaw Node
+provenance:
+  date-created: 2026-03-09
+  date-modified: 2026-03-09
+  sources:
+    - OpenClaw README
+    - OpenClaw Security
 ---
-
 An OpenClaw node is a paired device surface that exposes host-local
 capabilities to an OpenClaw Gateway. Nodes let the assistant act
 through device-specific interfaces such as voice, camera, screen

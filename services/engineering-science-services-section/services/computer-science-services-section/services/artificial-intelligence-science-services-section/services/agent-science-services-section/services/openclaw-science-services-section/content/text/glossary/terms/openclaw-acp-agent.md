@@ -1,23 +1,15 @@
 ---
-name: "OpenClaw ACP Agent"
-date-created: 2026-03-09T00:00:00
-authors:
-  - claude
-date-updated: 2026-03-09T00:00:00
 aliases:
-  - "OpenClaw ACP Agent"
-  - "openclaw acp agent"
-  - "acp agent (openclaw)"
-keywords:
-  - OpenClaw
-  - AgentCoordination
-  - CodingAgents
-  - Extensibility
-description: "An external harness runtime that OpenClaw can run through an ACP backend plugin."
-cites:
-  - "OpenClaw ACP Agents"
+  - acp agent (openclaw)
+description: An external harness runtime that OpenClaw can run through an ACP backend plugin.
+identity: openclaw-acp-agent
+name: OpenClaw ACP Agent
+provenance:
+  date-created: 2026-03-09
+  date-modified: 2026-03-09
+  sources:
+    - OpenClaw ACP Agents
 ---
-
 An OpenClaw ACP agent is an external harness runtime that OpenClaw can
 run through an ACP backend plugin. ACP agents let OpenClaw delegate
 work to tools such as Codex, Claude Code, OpenCode, Gemini CLI, or Pi

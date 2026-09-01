@@ -1,22 +1,13 @@
 ---
-name: "QMD"
-date-created: 2026-03-09T00:00:00
-authors:
-  - claude
-date-updated: 2026-03-09T00:00:00
-aliases:
-  - "QMD"
-  - "qmd"
-keywords:
-  - OpenClaw
-  - MemorySystems
-  - Retrieval
-  - LocalFirst
-description: "A local-first search sidecar that OpenClaw can use as an experimental memory backend."
-cites:
-  - "OpenClaw Memory"
+description: A local-first search sidecar that OpenClaw can use as an experimental memory backend.
+identity: qmd
+name: QMD
+provenance:
+  date-created: 2026-03-09
+  date-modified: 2026-03-09
+  sources:
+    - OpenClaw Memory
 ---
-
 QMD is a local-first search sidecar that OpenClaw can use as an
 experimental memory backend. In this mode, Markdown remains the source
 of truth while OpenClaw shells out to QMD for retrieval.

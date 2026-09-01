@@ -1,32 +1,35 @@
 ---
-name: "Model Context Protocol"
-description: "An open protocol standardizing how language models connect to external tools and data sources — the agent-to-tool complement to A2A's agent-to-agent communication."
-domain: agents
-dual-of: agent-to-agent-protocol
-enables: tool-use
-requires: json-schema
-delivers: tool-use
-acts-on: agentic-system
-date-created: 2026-03-29
-date-updated: 2026-03-29
+description: An open protocol standardizing how language models connect to external tools and data sources — the agent-to-tool complement to A2A's agent-to-agent communication.
+identity: model-context-protocol
+name: Model Context Protocol
+provenance:
+  date-created: 2026-03-29
+  date-modified: 2026-03-29
+  sources:
+    - anthropic-mcp-2024
+    - aaif-2025
 references:
   anthropic-mcp-2024:
-    authors: ["Anthropic"]
-    title: "Introducing the Model Context Protocol"
-    publication: "Anthropic Blog"
+    authors:
+      - Anthropic
+    title: Introducing the Model Context Protocol
+    publication: Anthropic Blog
     year: 2024
-    url: "https://www.anthropic.com/news/model-context-protocol"
+    url: https://www.anthropic.com/news/model-context-protocol
   aaif-2025:
-    authors: ["Linux Foundation"]
-    title: "Linux Foundation Announces the Formation of the Agentic AI Foundation"
-    publication: "Linux Foundation"
+    authors:
+      - Linux Foundation
+    title: Linux Foundation Announces the Formation of the Agentic AI Foundation
+    publication: Linux Foundation
     year: 2025
-    url: "https://www.linuxfoundation.org/press/linux-foundation-announces-the-formation-of-the-agentic-ai-foundation"
-cites:
-  - anthropic-mcp-2024
-  - aaif-2025
+    url: https://www.linuxfoundation.org/press/linux-foundation-announces-the-formation-of-the-agentic-ai-foundation
+relations:
+  dual-of: agent-to-agent-protocol
+  enables: tool-use
+  requires: json-schema
+  delivers: tool-use
+  acts-on: agentic-system
 ---
-
 The Model Context Protocol (MCP) is an open protocol standardizing how [agentic systems](../../../../../../content/text/glossary/terms/agentic-system.md) connect to external tools and data sources. Anthropic released MCP in **November 2024**. On **December 9, 2025**, it became a founding project of the Linux Foundation's Agentic AI Foundation (AAIF), alongside [AGENTS.md](../../../../../agent-content-science-services-section/services/agent-markdown-file-science-services-section/content/text/glossary/terms/agents-md.md) and Block's goose. As of early 2026, the ecosystem includes 5,800+ servers, 300+ clients, and 97M+ monthly SDK downloads. OpenAI, Google, Microsoft, and all major IDEs have adopted it.
 
 MCP follows a client-server architecture. The **MCP server** exposes capabilities — tools, resources, and prompts — through a standardized interface. The **MCP client** (embedded in the agent runtime) discovers and invokes those capabilities. The protocol uses JSON-RPC 2.0 for message exchange, with transport over stdio (for local processes) or HTTP with Server-Sent Events (for remote servers).

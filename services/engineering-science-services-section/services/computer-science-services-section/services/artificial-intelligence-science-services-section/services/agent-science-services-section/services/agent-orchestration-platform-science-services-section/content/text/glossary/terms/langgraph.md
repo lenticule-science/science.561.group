@@ -1,15 +1,16 @@
 ---
-name: "LangGraph"
-description: "A graph-based agent orchestration framework by LangChain for building stateful, multi-step AI agent workflows with checkpoint persistence, time-travel debugging, and human-in-the-loop support."
-domain: agents
-instance-of: agent-orchestration
-requires: directed-graph
-enables: durable-execution, human-in-the-loop
-contrasts-with: pydantic-ai
-date-created: 2026-03-29
-date-updated: 2026-03-29
+description: A graph-based agent orchestration framework by LangChain for building stateful, multi-step AI agent workflows with checkpoint persistence, time-travel debugging, and human-in-the-loop support.
+identity: langgraph
+name: LangGraph
+provenance:
+  date-created: 2026-03-29
+  date-modified: 2026-03-29
+relations:
+  instance-of: agent-orchestration
+  requires: directed-graph
+  enables: durable-execution, human-in-the-loop
+  contrasts-with: pydantic-ai
 ---
-
 LangGraph is a graph-based [agent orchestration](../../../../../../content/text/glossary/terms/agent-orchestration.md) framework for building stateful, multi-step AI agent workflows. It is developed by the LangChain team (Harrison Chase et al.) and released under the MIT license. Development began in summer 2023, with an initial release in January 2024 and a **v1.0 stable release on October 22, 2025**, committing to no breaking changes until v2.0. The current version as of March 2026 is 1.1.0.
 
 LangGraph's core abstraction is a [directed graph](../../../../../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/directed-graph.md) where **nodes** are processing steps (Python functions or LangChain runnables), **edges** define transitions between them (static or conditional based on state), and **state** is a typed object (TypedDict or Pydantic model) that persists across the graph's execution. Every node receives the current state as input and returns state updates as output. The graph structure is the control flow; the state object is the data flow.

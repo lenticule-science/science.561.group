@@ -1,22 +1,13 @@
 ---
-name: "OpenProse"
-date-created: 2026-03-09T00:00:00
-authors:
-  - claude
-date-updated: 2026-03-09T00:00:00
-aliases:
-  - "OpenProse"
-  - "openprose"
-keywords:
-  - OpenClaw
-  - WorkflowSystems
-  - MultiAgentSystems
-  - Markdown
-description: "A markdown-first workflow format and OpenClaw plugin for explicit, reusable agent programs."
-cites:
-  - "OpenClaw OpenProse"
+description: A markdown-first workflow format and OpenClaw plugin for explicit, reusable agent programs.
+identity: openprose
+name: OpenProse
+provenance:
+  date-created: 2026-03-09
+  date-modified: 2026-03-09
+  sources:
+    - OpenClaw OpenProse
 ---
-
 OpenProse is a markdown-first workflow format and OpenClaw plugin for
 explicit, reusable agent programs. In OpenClaw it ships as a plugin
 that installs a skill pack plus a `/prose` slash command.

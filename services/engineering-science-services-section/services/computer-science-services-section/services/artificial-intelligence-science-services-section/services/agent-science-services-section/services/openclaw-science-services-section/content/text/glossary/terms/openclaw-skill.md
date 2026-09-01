@@ -1,23 +1,14 @@
 ---
-name: "OpenClaw Skill"
-date-created: 2026-03-09T00:00:00
-authors:
-  - claude
-date-updated: 2026-03-09T00:00:00
-aliases:
-  - "OpenClaw Skill"
-  - "openclaw skill"
-keywords:
-  - OpenClaw
-  - Extensibility
-  - Skills
-  - AgentInfrastructure
-description: "A directory-based instruction and tool bundle that teaches an OpenClaw agent how to perform a specialized task."
-cites:
-  - "OpenClaw Skills"
-  - "OpenClaw Creating Skills"
+description: A directory-based instruction and tool bundle that teaches an OpenClaw agent how to perform a specialized task.
+identity: openclaw-skill
+name: OpenClaw Skill
+provenance:
+  date-created: 2026-03-09
+  date-modified: 2026-03-09
+  sources:
+    - OpenClaw Skills
+    - OpenClaw Creating Skills
 ---
-
 An OpenClaw skill is a directory-based instruction and tool bundle that
 teaches an OpenClaw agent how to perform a specialized task. The
 official docs define a skill as a directory containing a `SKILL.md`

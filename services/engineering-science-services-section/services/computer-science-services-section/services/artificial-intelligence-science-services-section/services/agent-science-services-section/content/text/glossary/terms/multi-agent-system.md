@@ -1,17 +1,21 @@
 ---
-id: multi-agent-system
-description: "An architecture where two or more agentic systems coordinate to accomplish a shared goal, each with its own tools, state, and reasoning."
-aliases: [multi-agent systems, agentic AI]
-composed-of: agentic-system
-coordinated-by: agent-orchestration
-communication-via: agent-to-agent-protocol
-patterns: orchestrator-workers, peer-to-peer, pipeline, debate
-cost: coordination-overhead
-controlled-by: human-in-the-loop
-date-created: 2026-03-29
-date-updated: 2026-03-29
+aliases:
+  - multi-agent systems
+  - agentic AI
+description: An architecture where two or more agentic systems coordinate to accomplish a shared goal, each with its own tools, state, and reasoning.
+identity: multi-agent-system
+name: multi-agent-system
+provenance:
+  date-created: 2026-03-29
+  date-modified: 2026-03-29
+relations:
+  composed-of: agentic-system
+  coordinated-by: agent-orchestration
+  communication-via: agent-to-agent-protocol
+  patterns: orchestrator-workers, peer-to-peer, pipeline, debate
+  cost: coordination-overhead
+  controlled-by: human-in-the-loop
 ---
-
 A multi-agent system is an architecture where two or more [agentic systems](./agentic-system.md) coordinate to accomplish a shared goal. Each agent has its own tools, state, and reasoning process. The agents communicate through defined protocols — shared state, message passing, or inter-agent protocols like A2A — and their joint behavior produces outcomes no single agent achieves alone.
 
 Four coordination patterns cover most multi-agent architectures:

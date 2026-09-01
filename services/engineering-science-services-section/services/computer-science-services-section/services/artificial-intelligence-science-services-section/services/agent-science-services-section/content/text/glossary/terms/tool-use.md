@@ -1,16 +1,20 @@
 ---
-name: "Tool Use"
-description: "The mechanism by which a language model invokes external functions during a conversation, producing structured output that a host application executes."
-aliases: [function-calling, tool-calling]
-caller: language-model
-executor: host-application
-contract: function-schema
-output-format: json
-protocol: model-context-protocol
-date-created: 2026-03-29
-date-updated: 2026-03-29
+aliases:
+  - function-calling
+  - tool-calling
+description: The mechanism by which a language model invokes external functions during a conversation, producing structured output that a host application executes.
+identity: tool-use
+name: Tool Use
+provenance:
+  date-created: 2026-03-29
+  date-modified: 2026-03-29
+relations:
+  caller: language-model
+  executor: host-application
+  contract: function-schema
+  output-format: json
+  protocol: model-context-protocol
 ---
-
 Tool use is the mechanism by which a language model acts on its environment. The model produces structured output — a JSON object specifying a function name and arguments — and a host application executes the function. The result comes back to the model in the next conversation turn. The model decides what to call and with what arguments. The host application decides whether to execute. Neither has access to the other's internals.
 
 Three parties are involved. The developer provides function schemas — name, description, parameter types — as part of the API request. The model, trained on examples of when and how to invoke functions, decides whether a call is appropriate given the conversation so far. The host application receives the structured output, runs the function, and returns the result.
