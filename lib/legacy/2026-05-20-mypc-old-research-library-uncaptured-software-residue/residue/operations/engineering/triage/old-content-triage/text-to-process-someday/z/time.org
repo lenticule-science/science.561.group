@@ -1,0 +1,25 @@
+#+title: time
+#+begin_head
+#+ghe_schema: term-0.1.3
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-28 Mon 20:27]
+#+roam_tags: term
+#+end_head
+
+#+name: definition
+*/[[file:time.org][Time]]/* is the [[file:space.org][space]] across which [[file:change.org][change]] occurs.
+#+toc: headlines 2
+* Introduction
+* time
+* Supplements
+** Record history
+   :PROPERTIES:
+   :CUSTOM_ID: record-history
+   :END:
+   :LOGBOOK:
+   - Note taken on [2020-12-28 Mon 20:27] \\
+      Created from [[file:~/org/s/p/d/2020-12-28.org][A descriptive look at my current tech stack]]
+
+      
+   :END:

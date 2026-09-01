@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       28c69369-1fe8-47dc-8327-b4641791b914
+:END:
+#+title: active
+#+date: [2025-09-27 Sat 09:03]
+

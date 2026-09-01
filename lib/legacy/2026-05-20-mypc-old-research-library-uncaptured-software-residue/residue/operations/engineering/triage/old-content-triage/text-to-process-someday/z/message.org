@@ -1,0 +1,10 @@
+#+title: message
+#+begin_head
+#+ghe_schema: record-0.1.1
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-22 Tue 10:38]
+#+export_file_name: ../../e/20201222103831-message
+#+roam_tags: term
+#+end_head
+A */message/* is a [[file:record.org][record]] intended to be given to a different [[file:person.org][person]] than the one who created it.

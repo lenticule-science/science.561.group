@@ -1,0 +1,18 @@
+{{- $scratch := newScratch -}}
+{{- range where $.Site.RegularPages ".File.TranslationBaseName" "in" $.Site.Params.mainPages -}}
+  {{- $scratch.Add "mainPagePhrases" (slice (printf "<a href=\"%s\">%s</a>" .Permalink .Params.mainPhrase)) -}}
+{{- end -}}
+{{- $mPP := ($scratch.Get "mainPagePhrases") -}}
+
+{{- if (eq (len $mPP) 0) -}}
+{{- else -}}
+This website has pages to
+{{- if (eq (len $mPP) 1) }}
+{{ (index $mPP 0) }}
+{{- else if (eq (len $mPP) 2) }}
+{{ delimit $mPP " and " }}
+{{- else }}
+{{ delimit $mPP ", " ", and " }}
+{{- end -}}
+.
+{{- end -}}

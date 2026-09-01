@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       2fd42ec0-4cae-4e5b-8c7e-19f6266c5ccd
+:END:
+#+title: calendar
+#+date: [2025-09-05 Fri 20:26]
+

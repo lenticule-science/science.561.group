@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       6bc819fa-dfb5-4da9-903a-72a541bcb0e0
+:END:
+#+title: mathematical treatise
+#+date: [2025-10-09 Thu 13:54]
+

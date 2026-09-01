@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       767c6525-8538-400f-bbec-da12240da12a
+:END:
+#+title: autonomous zone
+#+date: [2025-08-26 Tue 10:20]
+

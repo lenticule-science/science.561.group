@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       2f32f23e-bff5-4a84-86c7-7c6961b82b69
+:resource-description: (([[id:edaef069-c68d-46aa-a970-d3cb7fe3165c][resource type]] . [[id:6882cc6d-049d-4c68-866a-67bc57fce725][Homo sapiens]]))
+:public:   true
+:END:
+#+title: Carl Schmitt
+#+date: [2025-08-31 Sun 09:36]
+

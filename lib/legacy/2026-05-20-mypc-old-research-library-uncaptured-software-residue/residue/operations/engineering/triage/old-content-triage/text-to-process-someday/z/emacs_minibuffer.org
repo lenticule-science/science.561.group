@@ -1,0 +1,6 @@
+#+title: Emacs minibuffer
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-19 Sat 20:14]
+#+roam_tags: Emacs term
+The */Emacs minibuffer/* is the input bar at the very bottom of the display, that serves as the primary [[file:user_interface.org][user interface]], outside of [[file:emacs_buffer.org][Emacs buffers]].

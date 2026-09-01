@@ -1,0 +1,53 @@
+\section{Dynamics on rule generators}
+
+This section records the second-order closure layer: the closure-rule system is
+itself a carrier of dynamics, not merely a fixed parameter beneath valuation
+settling.
+
+\begin{proposition}[Rule dynamics]\label{thm:rule-dynamics}\lean{Infomaterial.ClosureRule.RuleDynamics}\leanok\uses{thm:closure-rule-lfp}
+A \texttt{RuleDynamics} is an endomap on \texttt{RuleSystem}. It is the formal
+carrier for dynamics on the generator of a closure operator: meta-time updates
+rewrite the rules before first-order valuation closure is read under the settled
+generator.
+\end{proposition}
+
+\begin{proposition}[Rule-generator orbit]\label{thm:rule-dynamics-orbit}\lean{Infomaterial.ClosureRule.RuleDynamics.orbit}\leanok\uses{thm:rule-dynamics}
+The orbit of a rule generator iterates the second-order update:
+\texttt{orbit D seed 0 = seed} and
+\texttt{orbit D seed (n+1) = D.step (orbit D seed n)}.
+\end{proposition}
+
+\begin{theorem}[Fixed generators have no future rule drift]\label{thm:fixed-rule-orbit-add}\lean{Infomaterial.ClosureRule.RuleDynamics.fixedAt_orbit_add}\leanok\uses{thm:rule-dynamics-orbit}
+If the rule generator at meta-time $n$ is fixed by the second-order dynamic, then
+all later meta-time states agree with it:
+\[
+  \texttt{orbit D seed (n+k)} = \texttt{orbit D seed n}.
+\]
+This is the earned form of rule-level settling.
+\end{theorem}
+
+\begin{theorem}[Rule residue is non-fixedness]\label{thm:rule-residue-iff-not-fixed}\lean{Infomaterial.ClosureRule.RuleDynamics.ruleResidue_iff_not_fixed}\leanok\uses{thm:rule-dynamics}
+Rule-level residue is exactly failure of the generator to be fixed:
+\texttt{RuleResidue D S <-> not (FixedRules D S)}. The theorem does not identify
+an energy, gauge, or learning principle; it pins the formal residue site to the
+settling predicate on the rule carrier.
+\end{theorem}
+
+\begin{theorem}[Settled rules recover first-order closure]\label{thm:settled-rules-closure-lfp}\lean{Infomaterial.ClosureRule.RuleDynamics.settled_rules_closure_lfp}\leanok\uses{thm:closure-rule-lfp, thm:fixed-rule-orbit-add}
+At a fixed rule generator, the first-order valuation closure is the ordinary
+immediate-consequence least fixed point for that settled generator. Second-order
+settling therefore changes which closure operator is used; it does not replace
+the first-order least-fixed-point theorem.
+\end{theorem}
+
+\begin{theorem}[One-step rule rewrite settles]\label{thm:rewrite-to-fixed-at-one}\lean{Infomaterial.ClosureRule.RuleDynamics.rewriteTo_fixedAt_one}\leanok\uses{thm:rule-dynamics}
+The replacement dynamic \texttt{rewriteTo target} reaches a fixed rule generator
+after one meta-step. This is the minimal non-vacuous example where the rule
+carrier changes before settling.
+\end{theorem}
+
+\begin{theorem}[Closure after a settled rewrite]\label{thm:rewrite-to-closure-lfp}\lean{Infomaterial.ClosureRule.RuleDynamics.rewriteTo_closure_lfp}\leanok\uses{thm:rewrite-to-fixed-at-one, thm:settled-rules-closure-lfp}
+After \texttt{rewriteTo target} settles the rule generator, closure under the
+resulting rules is the least fixed point of \texttt{Tstep target} above the
+valuation seed, provided the generated closure has reached a fixed point.
+\end{theorem}

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       ff8d19bc-9538-464e-b11f-d9867049ede9
+:END:
+#+title: differential
+#+date: [2025-09-01 Mon 11:45]
+

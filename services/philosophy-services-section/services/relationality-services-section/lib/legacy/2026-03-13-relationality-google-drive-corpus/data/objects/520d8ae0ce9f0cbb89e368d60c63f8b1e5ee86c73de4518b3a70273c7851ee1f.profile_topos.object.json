@@ -1,0 +1,165 @@
+{
+  "bottom": "resting",
+  "elements": [
+    "resting",
+    "surveying",
+    "traveling",
+    "fighting",
+    "command_any"
+  ],
+  "finite_limits": {
+    "terminal": "command_any"
+  },
+  "id": "520d8ae0ce9f0cbb89e368d60c63f8b1e5ee86c73de4518b3a70273c7851ee1f",
+  "imply_table": {
+    "command_any": {
+      "command_any": "command_any",
+      "fighting": "fighting",
+      "resting": "resting",
+      "surveying": "surveying",
+      "traveling": "traveling"
+    },
+    "fighting": {
+      "command_any": "command_any",
+      "fighting": "command_any",
+      "resting": "resting",
+      "surveying": "surveying",
+      "traveling": "traveling"
+    },
+    "resting": {
+      "command_any": "command_any",
+      "fighting": "command_any",
+      "resting": "command_any",
+      "surveying": "command_any",
+      "traveling": "command_any"
+    },
+    "surveying": {
+      "command_any": "command_any",
+      "fighting": "command_any",
+      "resting": "resting",
+      "surveying": "command_any",
+      "traveling": "command_any"
+    },
+    "traveling": {
+      "command_any": "command_any",
+      "fighting": "command_any",
+      "resting": "resting",
+      "surveying": "surveying",
+      "traveling": "command_any"
+    }
+  },
+  "join_table": {
+    "command_any": {
+      "command_any": "command_any",
+      "fighting": "command_any",
+      "resting": "command_any",
+      "surveying": "command_any",
+      "traveling": "command_any"
+    },
+    "fighting": {
+      "command_any": "command_any",
+      "fighting": "fighting",
+      "resting": "fighting",
+      "surveying": "fighting",
+      "traveling": "fighting"
+    },
+    "resting": {
+      "command_any": "command_any",
+      "fighting": "fighting",
+      "resting": "resting",
+      "surveying": "surveying",
+      "traveling": "traveling"
+    },
+    "surveying": {
+      "command_any": "command_any",
+      "fighting": "fighting",
+      "resting": "surveying",
+      "surveying": "surveying",
+      "traveling": "traveling"
+    },
+    "traveling": {
+      "command_any": "command_any",
+      "fighting": "fighting",
+      "resting": "traveling",
+      "surveying": "traveling",
+      "traveling": "traveling"
+    }
+  },
+  "kind": "profile_topos",
+  "meet_table": {
+    "command_any": {
+      "command_any": "command_any",
+      "fighting": "fighting",
+      "resting": "resting",
+      "surveying": "surveying",
+      "traveling": "traveling"
+    },
+    "fighting": {
+      "command_any": "fighting",
+      "fighting": "fighting",
+      "resting": "resting",
+      "surveying": "surveying",
+      "traveling": "traveling"
+    },
+    "resting": {
+      "command_any": "resting",
+      "fighting": "resting",
+      "resting": "resting",
+      "surveying": "resting",
+      "traveling": "resting"
+    },
+    "surveying": {
+      "command_any": "surveying",
+      "fighting": "surveying",
+      "resting": "resting",
+      "surveying": "surveying",
+      "traveling": "surveying"
+    },
+    "traveling": {
+      "command_any": "traveling",
+      "fighting": "traveling",
+      "resting": "resting",
+      "surveying": "surveying",
+      "traveling": "traveling"
+    }
+  },
+  "negate_map": {
+    "command_any": "resting",
+    "fighting": "resting",
+    "resting": "command_any",
+    "surveying": "resting",
+    "traveling": "resting"
+  },
+  "order": {
+    "command_any": [
+      "command_any"
+    ],
+    "fighting": [
+      "fighting",
+      "command_any"
+    ],
+    "resting": [
+      "resting",
+      "surveying",
+      "traveling",
+      "fighting",
+      "command_any"
+    ],
+    "surveying": [
+      "surveying",
+      "traveling",
+      "fighting",
+      "command_any"
+    ],
+    "traveling": [
+      "traveling",
+      "fighting",
+      "command_any"
+    ]
+  },
+  "subobject_classifier": {
+    "falsehood": "resting",
+    "truth": "command_any"
+  },
+  "top": "command_any"
+}

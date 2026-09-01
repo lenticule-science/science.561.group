@@ -1,0 +1,23 @@
+\section{Beadwork: the lenticular condensate carrier}
+
+Beadwork's rigid bead is a \emph{lenticule}: the Bose condensate of the relational hull, the site
+where many thread-relations pile into one mode. The minimal port-typed carrier is green in
+\texttt{Infomaterial.Persistence.Aperiodic.PortGraph}.
+
+\begin{theorem}[A lenticule's hole is a weave crossing]\label{thm:lenticule-hole}\lean{Infomaterial.Persistence.Aperiodic.holeTransition_eq_warpAlt}\leanok\uses{thm:weave-draft}
+A single-hole bead routes the thread exactly when in- and out-ports differ --- the same
+\texttt{warpAlt} SFT as a weave crossing. Beadwork and weaving share one local rule; a bead is a
+crossing mounted on a rigid body.
+\end{theorem}
+
+\begin{theorem}[Over-occupation is the Bose condensate $\top$]\label{thm:condensate-is-top}\lean{Infomaterial.Persistence.Aperiodic.over_occupation_inconsistency}\leanok\uses{thm:miscrossing-inconsistency}
+A lenticule the thread passes two or more times is inconsistent: its condensate charge is $\top_k$.
+Bose condensation --- macroscopic occupation of one mode --- is the held $\top$, jammed not
+exploded (superjamming). Over-occupation \emph{is} the coherent contradiction.
+\end{theorem}
+
+\begin{theorem}[The condensate settles out of the mirror]\label{thm:condensate-from-mirror}\lean{Infomaterial.Persistence.Aperiodic.mirror_fixes_condensate_pole}\leanok\uses{thm:mirror-is-gauge}
+Negation fixes the over-occupied $\top$ (and the empty $\bot$): the condensate sits at the mirror's
+fixed locus. The lenticule is not the mirror but what \emph{settles out of} it --- the rigid residue
+the over/under oscillation leaves behind.
+\end{theorem}

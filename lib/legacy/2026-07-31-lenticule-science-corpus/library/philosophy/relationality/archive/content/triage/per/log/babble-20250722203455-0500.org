@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       8c5d727b-7659-4152-85ce-d3ae61ef3557
+:public:   true
+:END:
+#+title: Babble, [2025-07-22 Tue 20:34]
+#+date: [2025-07-22 Tue 20:34]
+#+index: starting a story!Babble, [2025-07-22 Tue 20:34]
+
+I just had the idea that a good, or at least cool, way of [[id:893f4488-619e-4d32-972c-d0fe6a0f5f3c][starting a story]] might be "Otherwise, this might have happened."
+
+It like, neatly implies [[id:10fa7996-6883-4bc4-9549-6d83bef2c5cf][fiction]], [[id:a21bff3c-81cb-4065-b40b-cd227a4ed9d0][speculation]], [[id:e651afd7-937f-4d63-916d-a89c9a6f0a17][bounding]]...

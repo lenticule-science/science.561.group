@@ -1,0 +1,59 @@
+:PROPERTIES:
+:ID:       1abdc5ad-2bb7-448d-af49-3e257c915685
+:node-relations: (([[id:bee496e1-139b-4a7f-8a24-d4c14e6084c6][instantiates]] . [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]) ([[id:a8bc7e3a-cdf7-4cfa-8e4d-a1a5f7eb2931][author]] . [[id:40cbaad9-af3c-4573-b356-ae116687e483][emsenn]]) ([[id:557d79c0-1e0f-45fb-b248-468f23654cc1][creation date]] . [[id:d33b6ecf-1d50-45f3-b818-f5edcbdf47b7][2025-03-28]]))
+:END:
+#+title: Planning March 28th, 2025
+#+date: [2025-03-28 Fri 08:00]
+#+author: emsenn
+
+[[id:7801aaee-b673-4a41-8299-9c45859d8fc0][Plans]] for [[id:d33b6ecf-1d50-45f3-b818-f5edcbdf47b7][2025-03-28]]:
+- [[id:368af976-4e0b-4b6b-8319-a7e696c358eb][post to @michael-marmot@HIVE]] about [[id:8ced5bc6-b772-4316-8b69-4274067a820f][birds]] [[id:737d825b-1160-4296-a6b3-16a2bc3afcac][soaking]] their [[id:e39aa64b-046b-482e-a4ec-348d4092ff04][bread]] in the [[id:80912539-7d7d-4771-91a2-0fc15805dde4][creek]].
+- Remake [[id:baa3a01f-9384-435d-83df-18ddcb400cc5][Sigmund Vexler]]'s [[id:143c2343-29da-435e-af97-142c5b307bbc][HIVE account]]
+  - Make ~sigmund@561.group~ email
+  - Register via [[id:6b27e848-4c82-423e-9add-8bc37c727508][Ecency]], using [[id:e81f9b97-6d6d-4253-bc5c-45eee6ec0f29][Michael Marmot]]'s [[id:00d83683-5c4f-4de6-be1a-a04f01a2a886][referral link]]
+  - [[id:54213c5a-a48a-4976-acff-cc89ebf673c0][write]] a new [[id:b4a8f77e-7a42-4631-af35-8f7e4fdea989][introduction post]]
+- [[id:22dd0849-14db-46ae-84ba-63d3e5ae0d5f][Setup]] [[id:5805a0c9-c6d2-490d-a53a-66e55910e6a6][Sigmund's Sat Stacker]]
+  - Swap [[id:6cfea63c-9809-410d-a39e-b79d30ccad32][Bitcoin Lightning]] for [[id:8180535e-ecd2-4934-a011-95c7e32dabb0][Base Ethereum]] via [[id:10b16df6-a5d2-4832-a757-5886294b76ae][SwapSpace]] to [[id:09c6b3fc-dd4f-495f-8542-95791a6d2384][Sigmund Vexler's Ethereum wallet]]
+  - Setup Sat Stacker [[id:b63358cf-e102-4c88-b0ab-2e85874bead5][vault]] on [[id:c250aadb-becf-4d0a-babe-73b161e92df4][DexFi]].
+- Transfer emsenn's spare liquidity into the Sat Stacker Vault
+  - from emsenn's Based DeFi Vault
+- Setup Sigmund's Liquid Vault on Hive
+  - Register via Ecency, using Sigmund's referral link
+  - Transfer in liquidity from michael561, essiebee, marshian
+  - Allocate into liquidity pools
+
+** About the birds
+:PROPERTIES:
+:form:     [[id:7c0b5dc8-bd3c-4358-bef0-ec793a7a93c8][AI slop]]
+:END:
+
+There’s a little creek behind the apartment. Not much to look at—runs between some chainlink and a parking lot, mostly hidden unless you know to listen for it. I didn’t move here for the view. Moved here for family reasons, and figured I’d be closer to pavement than water for the foreseeable future.
+
+But that creek is there, doing its thing, and the crows have found it.
+
+Most mornings lately, I’ve been seeing them carry bread—sometimes whole slices, sometimes torn hunks—and they drop down to the edge of the creek and dunk it. Not a splash. Just a slow, practiced dip. A few seconds in the water, then they eat.
+
+First time I saw it, I thought maybe it was a one-off. Weird crow behavior. But then I saw it again. And again. So I looked it up.
+
+Turns out, it’s not just a fluke. Crows are known to soak dry or hard food—especially bread—to soften it up. Makes it easier to swallow and digest. Sometimes, it’s even a way of storing food: wet it, wedge it somewhere, come back later. But in this case, it seems like the soaking makes it safer to eat. Bread can swell in a bird’s gut and cause real problems. So this isn’t just clever—it’s adaptive. A behavior learned over time, shared between birds. A practical tradition.
+
+I didn’t expect to live next to a creek again. Growing up, I had creeks nearby in both North Carolina and South Dakota—very different creeks, but both had that mix of quiet and life, of movement just out of sight. I spent hours in and around those waters as a kid. Didn’t think I’d be hearing one from my window again. Certainly not in Duluth.
+
+So here we are. Me, unexpectedly creekside. And the crows, doing what they’ve figured out works.
+
+There’s a lot to admire in that. Crows are sharp, but more than that—they’re socially intelligent. They learn from one another. They remember faces. They respond to changes in their environment, sometimes better than we do. This bread-soaking trick isn’t something every crow just knows. It spreads. It’s culture, in a sense. Crow knowledge, passed down.
+
+That feels meaningful. Not just “neat,” but grounded in something larger. Especially right now.
+
+Because the world is shifting. Climate, sure, but also housing, health, stability—whatever sense we used to have that things moved slowly and predictably. Most folks I talk to are feeling it. And a lot of us are trying to figure out how to keep moving without choking on what we’re handed.
+
+So to see these birds, making do in a changed world—adapting not with panic but with practice—it sticks with me.
+
+They say animals are adjusting just like we are. Guess it’s true.
+
+Nature’s not somewhere else. It’s not just the big parks or deep woods. It’s in the alley behind the apartment. It’s in the birds figuring out how to make dry bread edible, again and again, by running it under the same little stream I walk past on the way to take out the trash.
+
+The crows don’t make a big deal out of it. They just do what works. And if someone’s watching—maybe they learn, too.
+
+Hope they’re not stealing from the bakery.
+Though I wouldn’t blame ’em.

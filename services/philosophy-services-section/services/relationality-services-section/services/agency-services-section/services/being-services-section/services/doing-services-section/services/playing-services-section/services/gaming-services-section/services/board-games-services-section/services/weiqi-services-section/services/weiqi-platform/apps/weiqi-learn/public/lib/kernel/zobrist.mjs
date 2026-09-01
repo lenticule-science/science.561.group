@@ -1,0 +1,53 @@
+// Deterministic Zobrist hashing.
+//
+// Keys are generated once, at module load, from a fixed seed via a
+// splitmix64-style generator (zero-dep, no crypto). Determinism matters
+// here: the same board arrangement must hash identically across runs and
+// across processes so hashes can be asserted against in tests and, later,
+// compared across a client and server.
+
+import { BLACK, WHITE,            } from "./board.mjs";
+
+const MASK64 = (1n << 64n) - 1n;
+
+function splitmix64(seed        )               {
+  let state = seed & MASK64;
+  return () => {
+    state = (state + 0x9e3779b97f4a7c15n) & MASK64;
+    let z = state;
+    z = ((z ^ (z >> 30n)) * 0xbf58476d1ce4e5b9n) & MASK64;
+    z = ((z ^ (z >> 27n)) * 0x94d049bb133111ebn) & MASK64;
+    z = z ^ (z >> 31n);
+    return z & MASK64;
+  };
+}
+
+// Largest board this kernel supports is 19x19.
+const MAX_POINTS = 19 * 19;
+
+const rng = splitmix64(0x5eed_5eed_5eed_5eedn);
+const BLACK_KEYS           = new Array(MAX_POINTS);
+const WHITE_KEYS           = new Array(MAX_POINTS);
+for (let i = 0; i < MAX_POINTS; i++) {
+  BLACK_KEYS[i] = rng();
+  WHITE_KEYS[i] = rng();
+}
+const WHITE_TO_MOVE_KEY = rng();
+
+/** Hash of the stone arrangement alone (positional identity, ignores whose turn it is). */
+export function boardHash(board            )         {
+  let h = 0n;
+  for (let i = 0; i < board.length; i++) {
+    const c = board[i];
+    if (c === BLACK) h ^= BLACK_KEYS[i];
+    else if (c === WHITE) h ^= WHITE_KEYS[i];
+  }
+  return h;
+}
+
+/** Hash of (stone arrangement, player to move) — the unit situational superko forbids repeating. */
+export function situationalHash(board            , toMove       )         {
+  let h = boardHash(board);
+  if (toMove === WHITE) h ^= WHITE_TO_MOVE_KEY;
+  return h;
+}

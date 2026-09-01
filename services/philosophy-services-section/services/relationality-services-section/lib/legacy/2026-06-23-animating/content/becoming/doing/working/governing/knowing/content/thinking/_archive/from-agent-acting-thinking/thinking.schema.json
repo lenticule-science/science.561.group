@@ -1,0 +1,10 @@
+{ "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://561.group/swarm-intelligence/articulating/library/aperiodic-articulation-category/thinking/thinking.schema.json",
+  "title":"Thinking (one descent of the meaning tower: aperiodic → finite)",
+  "description":"Composed morphism: articulating (aperiodic, open the utterance) → predicating (transfinite, fiber into a predication-cell) → positing+settling (scott→finite, charge and fold the settling orbit to the Knaster–Tarski apex). The arrow of time. All real-cell; the legacy string composition is retired. Output is settling-orbit's settled valuation + regime.",
+  "kind":"morphism","variance":"restriction","type":"object","required":["input","output"],"additionalProperties":false,
+  "properties":{
+    "input":{"type":"object","required":["utterance","decomposition","posit"],"additionalProperties":false,"properties":{
+      "utterance":{"$ref":"https://561.group/swarm-intelligence/library/utterance/utterance.schema.json"},
+      "decomposition":{"type":"object"},"posit":{"$ref":"https://561.group/swarm-intelligence/articulating/library/aperiodic-articulation-category/library/aperiodic-articulation-cell/library/potential-aperiodic-articulation-cell/predicating/library/transfinite-predication-category/library/transfinite-predication-cell/library/potential-transfinite-predication-cell/positing/library/scott-continuous-posit-category/library/bilattice/library/bilattice-value/bilattice-value.schema.json"}}},
+    "output":{"type":"object","required":["settledValuation","regime"]}}}

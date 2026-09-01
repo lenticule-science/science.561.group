@@ -1,0 +1,24 @@
+#+title: way of life
+#+begin_head
+#+ghe_schema: reference-0.1.1
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-22 Tue 17:05]
+#+roam_alias: "ways of living"
+#+roam_tags: term
+#+end_head
+#+name: way-of-life-definition-text
+#+begin_quote
+A */way of life/* is how a [[file:person.org][person]]'s [[file:culture.org][culture]] expresses itself.
+#+end_quote
+* Introduction
+  This record is some of what I (emsenn) know about /ways of living/.
+* Way of life
+  #+include: "ways_of_living.org::way-of-life-definition-text"
+* Supplements
+** Record history
+   :LOGBOOK:
+   - Note taken on [2020-12-22 Tue 17:08] \\
+     Created this record while tagging up my [[file:daily_record.org][daily record]] from [[file:d/2020-12-10.org][2020-12-10]].
+   :END:
+   

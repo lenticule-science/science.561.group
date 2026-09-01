@@ -1,0 +1,18 @@
+id: 25f30a5643f795cfcade607219fb1b012dc6302d53705287ec76cbb1e9a0ac82
+name: trace_stabilize
+inputs:
+  - role: trace
+    kind: trace
+outputs:
+  - role: trace
+    kind: trace
+steps:
+  - name: stabilize_trace
+    operator: stabilize_trace
+    step_index: 0
+    inputs:
+      - role: trace
+        kind: trace
+    outputs:
+      - role: trace
+        kind: trace

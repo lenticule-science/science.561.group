@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       712aad3e-7db6-4ca7-838a-5411b3ba7cb9
+:END:
+#+title: theme
+#+date: [2025-08-29 Fri 21:52]
+

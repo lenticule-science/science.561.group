@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       361631ea-175e-4607-8ddc-af2f8b4d5944
+:END:
+#+title: teacher
+#+date: [2025-10-07 Tue 00:05]
+

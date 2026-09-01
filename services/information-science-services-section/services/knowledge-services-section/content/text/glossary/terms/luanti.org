@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       68e61a9e-2bfa-480c-8083-985fcccfe62a
+:END:
+#+title: Luanti
+#+date: [2025-09-29 Mon 11:25]
+

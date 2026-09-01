@@ -1,0 +1,30 @@
+---
+name: hypertensor-stochastic-evolution
+role: structure
+derived_from:
+- acts/stochastic-dynamics
+proof_refs: []
+introduces: structure
+part-of: relational-computer
+computer-system-type: primitive
+---
+
+
+
+The **Hypertensor Stochastic Evolution** assembles Stochastic-type dynamics on finite
+windows of the hypertensor sheaf, consistent with tower/modal structure.
+
+## Definition
+- For each finite window, a Stochastic kernel on the finite-dimensional state space
+  of sections over that window.
+- Induced dynamics on towers/slices agree with compositions of hypertensor
+  endomorphisms.
+
+## Invariants
+- Stationary distributions and detailed balance correspond to fixed points of
+  composed endomorphisms.
+- Evolutions respect tower/modal structure on each window.
+
+## Proof
+Derived from `acts/stochastic-dynamics` over the hypertensor sheaf and tower
+structures, aligning Stochastic kernels with sheaf endomorphism compositions.

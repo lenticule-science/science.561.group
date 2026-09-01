@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       c5e4c79c-2098-4b97-b97c-02bf49c09f21
+:END:
+#+title: geontopower
+#+date: [2025-09-20 Sat 21:49]
+

@@ -1,0 +1,6 @@
+#+title: text completion
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-19 Sat 20:12]
+#+roam_tags: term
+*/Text completion/* is a [[file:computer_atuomation.org][computer automation]] that auto-inputs text, to save a user typing.

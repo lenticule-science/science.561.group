@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       a349da6e-0016-4b87-8b6d-342bafea0e84
+:END:
+#+title: attribution
+#+date: [2025-09-19 Fri 20:37]
+

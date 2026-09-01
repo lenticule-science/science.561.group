@@ -1,0 +1,429 @@
+#+TITLE: Eco-Industrialism Curriculum
+#+AUTHOR: emsenn
+#+DATE: 2019-10-21
+#+HUGO_BASE_DIR: ~/dev/personal-website/
+#+HUGO_SECTION: curriculums
+#+EXPORT_FILE_NAME: eco-industrialism
+#+HUGO_TAGS: sustainability education botany
+#+TODO: PLANNED TESTING | COMPLETE
+#+TODO: IN-PROGRESS | COMPLETE
+#+TODO: HELD | UNQUALIFIED
+* Introduction
+This document contains the complete curriculum for studying "eco-industrialism," a philosophy of agriculture and industry which emphasizes democracy and sustainability.
+
+The curriculum is being created by me, [[https://emsenn.net][emsenn]], for myself, to learn about these topics outside of a formal education institution.
+
+*/Please note/* that this whole thing is in early development. If you have any input, especially recommended things to learn and things to learn them from, please let me know!
+* Eco-Industrialism Curriculum
+** Using This Curriculum
+*** Course-by-Course
+*** Completing Drills
+** Courses
+*** PLANNED Ag-1: Intro to Agriculture
+Requires: Intro to Plant Bio, Intro to Nutritional Science
+*** PLANNED Ag-2: Intersection of Ag and Econ
+Requires: Intro to Ag, History of the Labor Class: Neocolonialism
+*** PLANNED Bio-1: Introductory Biology
+    :PROPERTIES:
+    :CUSTOM_ID: bio-1
+    :END:
+This course is a basic coverage of biology. It is required for [[#introductory-plant-biology][Introductory Plant Biology]] and [[#introductory-animal-biology][Introductory Animal Biology]].
+
+This course is based in part on the public notes for the [[https://ocw.mit.edu/courses/biology/7-013-introductory-biology-spring-2018/index.htm][Introductory Biology]] course taught at MIT in Spring 2018 by Prof. Angelika Amon, Prof. Hazel Sive, and Dr. Diviya Ray
+**** Lessons
+***** Bio-1-A: Cellular Anatomy
+- Cells: plasma membrane, cytoplasm, and a concentration of DNA
+- Eukaryotes and Prokaryotes: nucleated and not cells.
+- Eukaryotic organelles
+  - nucleus
+  - endoplasmic reticiculum
+  - golgi apparatus
+  - mitochondria
+***** Basic Mechanisms of Life: Growth and Reproduction
+***** Cellular Biochemistry
+*** PLANNED Bio-2: Introductory Plant Biology
+    :PROPERTIES:
+    :CUSTOM_ID: introductory-plant-biology
+    :END:
+This course is a basic coverage of plant biology. It requires [[#bio-1][Introductory Biology]].
+**** Lessons
+***** Mechanisms of a Plant: How They Grow
+***** Biochemistry of a Plant
+- Polyphenols
+*** PLANNED Bio-3: Introductory Animal Biology
+    :PROPERTIES:
+    :CUSTOM_ID: introductory-animal-biology
+    :END:
+This course is a basic coverage of animal biology. It requires [[#bio-1][Introductory Biology]].
+*** PLANNED Bio-4: Intro to Natural Ecology
+Requires: Intro to Plant Bio, Intro to Animal Bio
+*** PLANNED Bio-5: Intro to Nutritional Science
+Requires: Intro to Animal Bio
+*** PLANNED Comm-1: Scientific Latin
+This course is a basic coverage of the Latin terms common in scientific and medical texts. An understanding of the construction of these terms and their component terms helps one deduce a term's meaning.
+**** Lessons
+***** PLANNED Com-1-A: Parts of a Latin phrase
+***** PLANNED Com-1-B: Rote Memorization of Latin Terms
+- endo, exo
+- pro, eu
+*** PLANNED Comm-2: Personal Recordkeeping & Communication
+*** PLANNED Eng-1: Intro to Engineering
+*** PLANNED Eng-2: Land Surveying
+Requires: Applied Trigonometry
+*** PLANNED Eng-3: Intro to Mechanical Engineering
+Requires: Intro to Engineering
+*** PLANNED Eng-4: Basic Architecture
+Requires: Intro to Mechanical Engineering, Drafting and Design
+*** PLANNED Eng-5: Fluid Engineering
+Requires: Intro to Mechanical Engineering
+*** PLANNED Eng-6: Thermal Engineering
+Requires: Fluid Engineering
+*** PLANNED Eng-7: Electrical Engineering
+Requires: Thermal Engineering
+*** PLANNED Eng-8: Plumbing
+Requires: Fluid Engineering
+*** PLANNED Eng-9: Drafting and Design
+Requires: Intro to Engineering, Personal Recordkeeping & Communication
+*** PLANNED Geo-1: Basics of Geography
+*** PLANNED Geo-2: Basics of Climate Science
+*** PLANNED Geo-3: Study of Anthropogenic Climate Change
+Requires: Basics of Climate Science
+*** PLANNED Hist-1: History of Labor: Ancient to The American Revolution
+- Early Production through Trade
+- Bronze Age Collapse: Reasons and Adaptation
+*** PLANNED Hist-2: History of Labor: American Reconstruction to Gilted Age
+Requires: History of Labor: Ancient to American Revolution
+*** PLANNED Hist-3: History of Labor: Neocolonialism
+Requires: History of Labor: American Reconstruction to Gilted Age
+*** PLANNED Hist-4: Study of the IWW Constitution Through Its History
+Requires: History of Labor: American Reconstruction to Gilted Age
+*** PLANNED Hist-5: Study of Contemporary Class War: Means and Ends
+Requires: Study of the IWW Constitution Through Its History, History of the Labor Class: Neocolonialism
+*** PLANNED Hist-6: Comparative Symbology of the Kyriarchy and Labor
+*** PLANNED Math-1: Applied Trigonometry
+*** PLANNED Org-1: Methods of Democratic Organization
+Requires: Personal Recordkeeping & Communication
+*** Tech-1: Designing a Program
+**** Lessons
+***** Tech-1-A: Function Design Recipe
+Reading: [[#how-to-design-programs][/How to Design Programs/]], "Preface," "Systematic Program Design"
+***** Tech-1-B: How to Program, Arithmetic
+Reading: [[#how-to-design-programs][/How to Design Programs/]], "Prologue: How to Program," "Arithmetic and Arithmetic"
+** Texts
+This section contains a brief description of the texts used in this curriculum.
+*** Earth Care Manual, The: A Permaculture Handbook for Britain and Other Temperate Climates
+By Patrick Whitefield
+Used in Land Surveying
+*** How to Design Programs
+    :PROPERTIES:
+    :CUSTOM_ID: how-to-design-programs
+    :END:
+https://htdp.org/
+** Worksheets
+*** Curriculum Tracker
+(This section will have a way for tracking my progress through the courses.)
+** Drills
+This section contains questions, meant for use with Org-drill.
+*** Bio-1
+**** Bio-1-A
+***** Bio-1-A-1                                                       :drill:
+      SCHEDULED: <2019-11-06 Wed>
+      :PROPERTIES:
+      :ID:       79d4656e-8ce4-43d6-a78c-1b485aa31102
+      :DRILL_LAST_INTERVAL: 11.1407
+      :DRILL_REPEATS_SINCE_FAIL: 3
+      :DRILL_TOTAL_REPEATS: 2
+      :DRILL_FAILURE_COUNT: 0
+      :DRILL_AVERAGE_QUALITY: 5.0
+      :DRILL_EASE: 2.7
+      :DRILL_LAST_QUALITY: 5
+      :DRILL_LAST_REVIEWED: [2019-10-26 Sat 13:20]
+      :END:
+Do prokaryotic cells have nuclei?
+****** Answer
+No
+***** Bio-1-A-2                                                       :drill:
+      SCHEDULED: <2019-11-06 Wed>
+      :PROPERTIES:
+      :ID:       b4b73c15-54ef-4a06-9550-7c9784dc7598
+      :DRILL_LAST_INTERVAL: 11.1407
+      :DRILL_REPEATS_SINCE_FAIL: 3
+      :DRILL_TOTAL_REPEATS: 2
+      :DRILL_FAILURE_COUNT: 0
+      :DRILL_AVERAGE_QUALITY: 5.0
+      :DRILL_EASE: 2.7
+      :DRILL_LAST_QUALITY: 5
+      :DRILL_LAST_REVIEWED: [2019-10-26 Sat 13:21]
+      :END:
+Do eukaryotic cells have nuclei?
+****** Answer
+Yes
+*** Tech-1
+**** Tech-1-A
+***** Tech-1-A-1                                                      :drill:
+      SCHEDULED: <2019-10-30 Wed>
+      :PROPERTIES:
+      :ID:       1705dea2-6c67-4102-95c8-d0f7f78ec0d8
+      :DRILL_LAST_INTERVAL: 4.0
+      :DRILL_REPEATS_SINCE_FAIL: 2
+      :DRILL_TOTAL_REPEATS: 1
+      :DRILL_FAILURE_COUNT: 0
+      :DRILL_AVERAGE_QUALITY: 4.0
+      :DRILL_EASE: 2.5
+      :DRILL_LAST_QUALITY: 4
+      :DRILL_LAST_REVIEWED: [2019-10-26 Sat 13:21]
+      :END:
+What is the first step in the function design recipe?
+****** Answer
+State the problem while planning data definitions.
+***** Tech-1-A-2                                                      :drill:
+      SCHEDULED: <2019-10-30 Wed>
+      :PROPERTIES:
+      :ID:       fffece80-14f7-4d14-80e8-fa6a8b2d4162
+      :DRILL_LAST_INTERVAL: 4.14
+      :DRILL_REPEATS_SINCE_FAIL: 2
+      :DRILL_TOTAL_REPEATS: 1
+      :DRILL_FAILURE_COUNT: 0
+      :DRILL_AVERAGE_QUALITY: 5.0
+      :DRILL_EASE: 2.6
+      :DRILL_LAST_QUALITY: 5
+      :DRILL_LAST_REVIEWED: [2019-10-26 Sat 13:22]
+      :END:
+What is the second step in the function design recipe, after stating the problem and data definitions?
+****** Answer
+State what data the function will consume and produce.
+***** Tech-1-A-3                                                      :drill:
+      SCHEDULED: <2019-10-30 Wed>
+      :PROPERTIES:
+      :ID:       9d7a6bfe-f53a-4973-a899-b04c8baf8648
+      :DRILL_LAST_INTERVAL: 4.14
+      :DRILL_REPEATS_SINCE_FAIL: 2
+      :DRILL_TOTAL_REPEATS: 1
+      :DRILL_FAILURE_COUNT: 0
+      :DRILL_AVERAGE_QUALITY: 5.0
+      :DRILL_EASE: 2.6
+      :DRILL_LAST_QUALITY: 5
+      :DRILL_LAST_REVIEWED: [2019-10-26 Sat 13:21]
+      :END:
+What is the third step in the function design recipe, after stating what data the function will consume and produce?
+****** Answer
+Create example data and what results would be expected if input to the formula.
+***** Tech-1-A-4                                                      :drill:
+      SCHEDULED: <2019-10-30 Wed>
+      :PROPERTIES:
+      :ID:       d7054c7a-f47e-472d-b210-5805ed8a6095
+      :DRILL_LAST_INTERVAL: 4.14
+      :DRILL_REPEATS_SINCE_FAIL: 2
+      :DRILL_TOTAL_REPEATS: 1
+      :DRILL_FAILURE_COUNT: 0
+      :DRILL_AVERAGE_QUALITY: 5.0
+      :DRILL_EASE: 2.6
+      :DRILL_LAST_QUALITY: 5
+      :DRILL_LAST_REVIEWED: [2019-10-26 Sat 13:21]
+      :END:
+What is the fourth step of the function design recipe, after creating example data and results?
+****** Answer
+Create a template of the function based on the data definitions.
+***** Tech-1-A-5                                                      :drill:
+      SCHEDULED: <2019-10-30 Wed>
+      :PROPERTIES:
+      :ID:       70bf2f80-a9e4-41a0-ba66-212c5902df37
+      :DRILL_LAST_INTERVAL: 4.14
+      :DRILL_REPEATS_SINCE_FAIL: 2
+      :DRILL_TOTAL_REPEATS: 1
+      :DRILL_FAILURE_COUNT: 0
+      :DRILL_AVERAGE_QUALITY: 5.0
+      :DRILL_EASE: 2.6
+      :DRILL_LAST_QUALITY: 5
+      :DRILL_LAST_REVIEWED: [2019-10-26 Sat 13:21]
+      :END:
+What is the fifth step of the function design recipe, after creating a function template?
+****** Answer
+Program the function: fill in the gaps of the template.
+***** Tech-1-A-6                                                      :drill:
+      SCHEDULED: <2019-10-30 Wed>
+      :PROPERTIES:
+      :ID:       c22418ae-3afa-40e5-853f-4671aadf7c6b
+      :DRILL_LAST_INTERVAL: 4.14
+      :DRILL_REPEATS_SINCE_FAIL: 2
+      :DRILL_TOTAL_REPEATS: 1
+      :DRILL_FAILURE_COUNT: 0
+      :DRILL_AVERAGE_QUALITY: 5.0
+      :DRILL_EASE: 2.6
+      :DRILL_LAST_QUALITY: 5
+      :DRILL_LAST_REVIEWED: [2019-10-26 Sat 13:22]
+      :END:
+What is the sixth step of the function design recipe, after programming the function?
+****** Answer
+Create tests of the function based on the example data created in step #3.
+***** Tech-1-A-7                                                      :drill:
+      SCHEDULED: <2019-10-30 Wed>
+      :PROPERTIES:
+      :ID:       29ce032f-26d7-433a-8b2d-2884dd8d6fc1
+      :DRILL_LAST_INTERVAL: 4.14
+      :DRILL_REPEATS_SINCE_FAIL: 2
+      :DRILL_TOTAL_REPEATS: 1
+      :DRILL_FAILURE_COUNT: 0
+      :DRILL_AVERAGE_QUALITY: 5.0
+      :DRILL_EASE: 2.6
+      :DRILL_LAST_QUALITY: 5
+      :DRILL_LAST_REVIEWED: [2019-10-26 Sat 13:21]
+      :END:
+Which step of the functional design recipe is "Write the problem while planning data definitions"?
+****** Answer
+The first step.
+***** Tech-1-A-8                                                      :drill:
+      SCHEDULED: <2019-10-30 Wed>
+      :PROPERTIES:
+      :ID:       4bd1a98f-039e-4714-8036-600c45ef6a5b
+      :DRILL_LAST_INTERVAL: 4.14
+      :DRILL_REPEATS_SINCE_FAIL: 2
+      :DRILL_TOTAL_REPEATS: 1
+      :DRILL_FAILURE_COUNT: 0
+      :DRILL_AVERAGE_QUALITY: 5.0
+      :DRILL_EASE: 2.6
+      :DRILL_LAST_QUALITY: 5
+      :DRILL_LAST_REVIEWED: [2019-10-26 Sat 13:22]
+      :END:
+Which step of the functional design recipe is "State what data the function will produce and consume?"
+****** Answer
+The second step.
+***** Tech-1-A-9                                                      :drill:
+      SCHEDULED: <2019-10-30 Wed>
+      :PROPERTIES:
+      :ID:       f0a48dbe-ade0-40a5-b770-e22a482c5d2b
+      :DRILL_LAST_INTERVAL: 4.14
+      :DRILL_REPEATS_SINCE_FAIL: 2
+      :DRILL_TOTAL_REPEATS: 1
+      :DRILL_FAILURE_COUNT: 0
+      :DRILL_AVERAGE_QUALITY: 5.0
+      :DRILL_EASE: 2.6
+      :DRILL_LAST_QUALITY: 5
+      :DRILL_LAST_REVIEWED: [2019-10-26 Sat 13:22]
+      :END:
+Which step of the function design recipe is "Create example data and results"?
+****** Answer
+The third step
+***** Tech-1-A-10                                                     :drill:
+      SCHEDULED: <2019-10-30 Wed>
+      :PROPERTIES:
+      :ID:       9711e32a-9ed2-4ffa-bc76-57fd7e36bdfb
+      :DRILL_LAST_INTERVAL: 4.0
+      :DRILL_REPEATS_SINCE_FAIL: 2
+      :DRILL_TOTAL_REPEATS: 1
+      :DRILL_FAILURE_COUNT: 0
+      :DRILL_AVERAGE_QUALITY: 4.0
+      :DRILL_EASE: 2.5
+      :DRILL_LAST_QUALITY: 4
+      :DRILL_LAST_REVIEWED: [2019-10-26 Sat 13:21]
+      :END:
+Which step of the function design recipe is "Create a function template"?
+****** Answer
+The fourth step.
+***** Tech-1-A-11                                                     :drill:
+      SCHEDULED: <2019-10-30 Wed>
+      :PROPERTIES:
+      :ID:       858c7bea-e333-4c02-81e2-9e7f6bfd7fe9
+      :DRILL_LAST_INTERVAL: 4.14
+      :DRILL_REPEATS_SINCE_FAIL: 2
+      :DRILL_TOTAL_REPEATS: 1
+      :DRILL_FAILURE_COUNT: 0
+      :DRILL_AVERAGE_QUALITY: 5.0
+      :DRILL_EASE: 2.6
+      :DRILL_LAST_QUALITY: 5
+      :DRILL_LAST_REVIEWED: [2019-10-26 Sat 13:21]
+      :END:
+Which step of the function design recipe is "Program the function"?
+****** Answer
+The fifth step.
+***** Tech-1-A-12                                                     :drill:
+      SCHEDULED: <2019-10-30 Wed>
+      :PROPERTIES:
+      :ID:       60c092fa-7a8a-47cf-b5e0-71c05edb7c59
+      :DRILL_LAST_INTERVAL: 4.14
+      :DRILL_REPEATS_SINCE_FAIL: 2
+      :DRILL_TOTAL_REPEATS: 1
+      :DRILL_FAILURE_COUNT: 0
+      :DRILL_AVERAGE_QUALITY: 5.0
+      :DRILL_EASE: 2.6
+      :DRILL_LAST_QUALITY: 5
+      :DRILL_LAST_REVIEWED: [2019-10-26 Sat 13:22]
+      :END:
+Which step of the function design recipe is "Write tests of the function"?
+****** Answer
+The sixth (final) step.
+**** Tech-1-B
+***** Tech-1-B-1                                                      :drill:
+In /Beginner Student Language/, predict the result of =(- (/ 6 2) 2)=
+****** Answer
+=1=
+***** Tech-1-B-2                                                      :drill:
+In /Beginner Student Language/, predict the result of =(/ (+ (string-length "four") (string->number "6")) 2)=
+****** Answer
+=5=
+***** Tech-1-B-3                                                      :drill:
+In /Beginner Student Language/, predict the result of:
+
+#+begin_src lisp
+(and (or (= (string-length "hello world")
+            (string->number "11"))
+         (string=? "hello world" "good morning"))
+     (>= (+ (string-length "hello world") 60) 80))
+#+end_src
+****** Answer
+=#false=
+** Notes
+*** Tech-1
+**** Notes on "How to Design Programs"
+***** Preface
+#+begin_quote
+program design—but not programming—deserves the same role in a liberal-arts education as mathematics and language skills.
+#+end_quote
+
+That's quite a claim. I'd counter-argue that program design should be a fundamental part of a mathematics education, and separating it elevates it.
+
+---
+
+The text instructs I copy this for memory. It's a "function design recipe," that is, it is the steps to be followed when creating a new function or program:
+#+begin_quote
+  1) From Problem Analysis to Data Definitions
+    - Identify the information that must be represented and how it is represented in the chosen programming language. Formulate data definitions and illustrate them with examples.
+  2) Signature, Purpose Statement, Header
+    - State what kind of data the desired function consumes and produces. Formulate a concise answer to the question what the function computes. Define a stub that lives up to the signature.
+  3) Functional Examples
+    - Work through examples that illustrate the function’s purpose.
+  4) Function Template
+    - Translate the data definitions into an outline of the function.
+  5) Function Definition
+    - Fill in the gaps in the function template. Exploit the purpose statement and the examples.
+  6) Testing
+    - Articulate the examples as tests and ensure that the function passes all. Doing so discovers mistakes. Tests also supplement examples in that they help others read and understand the definition when the need arises—and it will arise for any serious program.
+#+end_quote
+
+Later on in the section - after talking about the scope of the book, it abbreviates these points:
+
+#+begin_quote
+1) analyze a problem statement, typically stated as a word problem;
+2) extract and express its essence, abstractly;
+3) illustrate the essence with examples;
+4) make outlines and plans based on this analysis;
+5) evaluate results with respect to expected outcomes; and
+6) revise the product in light of failed checks and tests.
+#+end_quote
+
+Let's put that in my own words now.
+
+When designing a new program or function:
+- First, I should write the problem to be solved as a word problem, breaking the problem down into the data that's being worked with.
+- Second, I should write down what what data the function takes and what it returns.
+- Third, I should write down some examples of what data would go into the function, and what would be returned.
+- Fourth, I should write a template of what the function does - what maths or whatever happen, to take the data and get to the result.
+- Fifth, I should fill in the gaps of the template, writing the function properly.
+- Sixth, I should re-write the examples from step #3 as tests of the function, to make sure that it's actually working right.
+
+(Seventh, go back and take another swing at steps #4 and #5, because pobody's nerfect.)
+
+The rest of the preface talks about the organization of the book, what order it should be read in for what purpose, and so on. To sum up, I'm going to read it beginning to end. At the end of each section, I'll try and come up with some flashcards for myself. As it's all theory-heavy, I'll probably learn the material through relating keywords to the concepts; keywords emphasized by the flashcards.
+
+That's the end of the preface. Off to make cards!
+***** Prologue: How to Program

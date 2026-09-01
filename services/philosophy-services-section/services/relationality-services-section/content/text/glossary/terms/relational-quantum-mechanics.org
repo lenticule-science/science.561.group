@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       52374e60-6659-4872-9767-4f08fc131614
+:END:
+#+title: relational quantum mechanics
+#+date: [2025-10-05 Sun 07:57]
+

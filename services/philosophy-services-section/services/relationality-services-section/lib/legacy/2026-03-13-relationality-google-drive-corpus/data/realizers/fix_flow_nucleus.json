@@ -1,0 +1,9 @@
+{
+  "id": "fix_flow_nucleus",
+  "act": "FixFlowNucleus",
+  "module": "relationality.realizers.fix_flow_nucleus",
+  "callable": "realize_fix_flow_nucleus",
+  "input_kind": "StabilizedObservation",
+  "output_kind": "FixedInvariant",
+  "description": "Extract FixedInvariant by enforcing aperiodic Flow–Nucleus commutation."
+}

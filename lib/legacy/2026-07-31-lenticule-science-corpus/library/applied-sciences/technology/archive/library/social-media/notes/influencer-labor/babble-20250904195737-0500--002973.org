@@ -1,0 +1,58 @@
+:PROPERTIES:
+:form:     [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]
+:public:   true
+:ID:       c76c79ac-0fd5-4bb4-baaf-75a0318cde0a
+:END:
+#+title: Babble, [2025-09-04 Thu 19:57], On influencer authenticity, aestheticity, authority, and availability
+#+date: [2025-09-04 Thu 19:57]
+#+author: emsenn
+
+Been [[id:125874ab-1d68-4d20-b1b4-02025292ad89][thinking]] more about the [[id:ab3c5258-7e01-4c5f-be18-bc2f6fe21cd6][neurotic platformal intellectual]] (of which I am one, though I'm thinking we might all be in some regard.)
+
+But specifically I was thinking about certain ways of shaping the corporate person that emerges from this, and like, the [[id:6769d415-a993-422e-8ee2-7abf82260e79][feeling rules]] of the different places on the [[id:9127f744-2fb8-4604-af04-566b946a6eb4][Web]] I am, and how those relate to what kind of [[id:281ba07c-012c-4a4d-88bf-d52da7d31181][affect]] can be a [[id:3ecf31e2-67b6-46c4-923d-2e412aa7d908][commodity]] there.
+
+This is all related to [[id:1ff9d4b3-94f6-4c8a-9769-9eaf5dc216bc][my public image]] and [[id:0b7fde06-19bf-4a59-b5a6-a32b0cec9e04][my corporate person]], and all of that relates to being an [[id:23efaf4f-f79d-4992-b7bd-26044aaabb73][influencer]] and thus [[id:6e8d9ea7-1277-4637-8f66-d7c5f421f488][authenticity]].
+
+I'm on the [[id:e61736a1-36c3-4efb-af9c-6ee79ba81f73][Fediverse]], I have [[id:cc253409-9a82-4c5d-a4cd-8013f4e350c6][my website]], I have [[id:d580b5a6-d111-4100-bcb8-9f7175468870][my Substack]], and I'm in [[id:6ecd3044-8c62-426c-89eb-18be40cd5cf9][Turntide Islands]], a [[id:60266440-8326-42e6-9c58-7e6393818ffe][Discord server]]. (And a few other places, like [[id:586f1109-a99c-432e-b191-b9e11a21d50d][my Ko-Fi]], but I don't really use those at present. (Though I'm realizing I might want to participate in [[id:18634de8-8286-4d4f-8ae0-9df788cf9395][2025 Ko-Fi Share-tember Challenge]].))
+
+The Fediverse likes [[id:5302ef32-3b47-47b7-9674-8acf5ea4f5d8][shitposts]]: [[id:56d477d7-0fc7-446a-b16f-abac1a0dea31][anger]], [[id:563cecb4-a9ac-42b1-88a0-2501ce523a39][snark]], and [[id:9f381254-4760-4b2f-a3ce-6c6814d0f8ec][brevity]] are favored (even if folk like to think they like the thoughtful pieces). This is [[id:1e8c06ec-0546-46cf-82a3-8662643b4659][aestheticity]].
+
+My website is a huge part of [[id:f272bb5e-0ce8-402a-a9fa-02185c74a389][my authority]], in ways that are difficult to explain when it comes to [[id:6882cc6d-049d-4c68-866a-67bc57fce725][humans]], but are a bit easier to point to with [[id:a22d8457-7cf2-4783-9fe2-6822edd09edb][Web algorithms]]: the permanence, the density, the depth, are all things that [[id:5e47c66d-b324-4918-bed9-c5951fd6a96b][search engines]] love, and as [[id:9574c104-d053-4d5d-ace4-eeefe14b26a8][artificial intelligence]] becomes a larger portion of the [[id:0ee87af0-4c37-448e-b8c9-fce357ad6716][Web user]] demographic, the [[id:d82bec51-50a9-4a85-869a-6f45aa1d7577][semantic density]] lets me develop authority for [[id:e6ddeda1-cb7f-4db2-b279-eb89b3de9441][long-tail terms]].
+
+My Substack, where I [[id:588b08dd-7574-4d5d-97e0-e364cb03f0ea][syndicate]] [[id:981370b8-e3d7-4be9-81c0-8c19ffcf08cf][my Letters to the Web]], people there like [[id:6e8d9ea7-1277-4637-8f66-d7c5f421f488][authenticity]], in the standard [[id:23efaf4f-f79d-4992-b7bd-26044aaabb73][influencer]] sense.
+
+And the Discord lets me do [[id:2fb51def-e2be-4e5d-aeca-14fb2216d0f7][availability]], another component of [[id:622b54b0-012c-4460-929a-964563dba2dc][influencer commodity]] stuff.
+
+Lemme ground that in the theory, for future reference:
+
+- [[id:d1a9d842-0364-4d7f-84dd-613bfe52fb79][Emily Hund]] in [[id:449240a1-5c73-48c3-ac1e-9b1f6b94c19f][The Influencer Industry: The Quest for Authenticity on Social Media]], talks about [[id:6e8d9ea7-1277-4637-8f66-d7c5f421f488][authenticity]] as a [[id:a30a92d4-89a4-40e2-b1a2-4a0e0ccc2687][currency]] of [[id:d307c637-b820-4682-a1d5-38e240c9b644][influencer labor]].
+  - [[id:a6051522-fe0b-4256-9c2a-b1636e973000][Arlie Russell Hochschild]]'s [[id:6769d415-a993-422e-8ee2-7abf82260e79][feeling rules]] explains why: authenticity meets all the feeling rules of social media.
+- [[id:2db4cd9d-4cb3-4c4f-8ea9-658edd579a25][Grant Bollmer]] and [[id:4b6a7f6d-735e-4fdc-a09e-8844a611ee50][Katherine Guinness]], [[id:aa3a94c8-4008-46e7-bab0-20b654499ef1][The Influencer Factory: A Marxist Theory of Corporate Personhood on YouTube]], talk about how [[id:eb709671-2000-42a6-a5e6-2b1e97f1c566][influencer brands]] function as [[id:89db194d-c5a2-4a24-a2ff-7a35a723bf4d][corporate persons]], operating on [[id:be095971-c665-40c0-87d1-d12681f1e55e][authority]]
+  - Dunno who to cite, but for [[id:13e446c0-c09b-4e9c-930a-2a95b7a45fdc][academic persons]], authority is [[id:8a21182f-e7c3-4a9c-aedc-97d583f5913e][H-index]], which is a [[id:5ffbef71-c793-467f-a477-1ca62773b7f1][measure]] of how many papers published divided by citations.
+- [[id:56286764-a3d7-41e7-88f3-45cfc85f23e9][Loes van Driel]] and [[id:58b766ac-9c5f-4c3b-b178-bcb7a634a742][Delia Dumitrica]] highlight the [[id:1e8c06ec-0546-46cf-82a3-8662643b4659][aestheticity]] of authenticity
+- [[id:4cb913ed-9220-4150-bbe1-63dd84bf7c32][Taina Bucher]] ([[id:be805bb6-eb3e-4025-97be-bcf93c528a0a][If...Then]]), platforms [[id:0c45a2b5-f4fd-4a08-b99e-5b617ec7378e][incite]] [[id:69f27ae4-baff-4f30-8430-d0a7cd84fed4][expectation]] of [[id:2fb51def-e2be-4e5d-aeca-14fb2216d0f7][availability]]
+  - [[id:389c2f61-5921-40f8-8bae-7a182573f96c][Theresa Senft]] and [[id:760544f1-1776-4c72-86ce-773cb5a49f8d][Alice Marwick]] also talk about availability related to [[id:45d269a6-5bc0-4e29-8241-9ebff11974cc][microcelebrity]] and [[id:ef488934-a3c5-4575-9d37-29d271d4ea87][parasociality]]
+- [[id:23b2509f-2e7b-4108-9efa-02104fd9335d][Tiziana Terranova]] also talks about the [[id:69c863a9-4e26-4454-974d-1419d74239a6][commodification]] of [[id:ac44545d-f681-474b-a410-7a8089cb4cfe][producing knowledge]] under [[id:edf1be04-b41e-40ff-8959-d0e61f477e29][digital labor]] conditions.
+- [[id:11c6481c-789f-41b7-bffd-045a0ecab75b][Richard Dyer]] back in [[id:db24c5d1-9882-4431-926d-07e491d0162e][1998]] with [[id:642aa149-0d21-4d0e-b584-12b9b865318f][star theory]] and [[id:789dc61c-1278-49ad-b1d7-1d82840edea3][aesthetic persona]]
+
+So these things, authenticity, authority, aestheticity, and availability, are normally all available from an influencer brand.
+
+What I'm talking about, thinking about, is in order to approach this currently-unavoidable neuroses with [[id:1dc5c641-63c2-4003-aeab-3a57f6847561][jouissance]], I'm going to intentionally produce content along with these feeling rules, to [[id:7b10c91e-af4a-45a7-a363-c857aed63995][gamify]] the process for me, in a way.
+
+So, I'll do my good work on my files. This'll overflow into my Website. It'll also lead to things I feel like I need to say to others, that'll be my Letters to the Web. And it'll also lead to things that could be [[id:7849c222-b1f6-452e-871f-bc8f743357f8][aestheticized]].
+
+On that note I'm thinking about how I recently was thinking about [[id:39354b6f-8fa5-4715-a628-1a1e9c5f1caf][aphorisms]], in the context of [[id:ef1c8528-d850-4bf9-9f06-539b09962c54][intellectualism]] and [[id:f8877003-48b0-4974-b3c8-7e59229a60a7][my ontology]], and how I work to [[id:fae94410-21d4-4f17-9123-0588e7d6afb5][construct]] [[id:d1049516-49bb-4e61-940f-18c744936b8f][aphoristic expressions]] of the [[id:345c3503-ef04-471c-8045-1284f86d6815][terms]] I use.
+
+And I'd already had the thought that there is probably also an [[id:9e03e706-ee1b-4c8f-b32b-5f27c3e875b7][ecclesiastical expression]] for them, as well (if by explaining their [[id:1c44409a-d129-496e-aef3-bbb7d04b4433][heresy]]), and a bunch of other [[id:e71f9d3e-0df3-402b-9be1-e07a11020e19][form of expression]] - but, notably the aphoristic and ecclesiastical expressions are quasi-determinate, or quasi-formal, or something: they are derivable from other information, in a way that you'll get a similar result every time, unlike other forms of expression, like visual art, where you might get something very different trying to express "love."
+
+But, going back, it makes me realize I could probably, when crafting another expression of a term, craft an aestheticized expression of it, and that could be material for the [[id:e4ddac0c-3d82-4c17-8df7-b379643896fa][Fediverse posts]].
+
+Thinking on this further, I'm realizing that it may be [[id:4a2382fb-f933-4018-be6a-98cbaa01a961][good]], in an [[id:530ef209-a748-46a2-aba4-d94dfe295d46][intellectually ethical]] way, to [[id:3ef2cb98-2126-4090-a627-183cd99a35fc][center]] the aphoristic expressions: include them in aestheticized expressions, if feasible, and within the letters.
+
+This would be similar to [[id:9bbd19ff-9564-48be-aeb5-ace10cfcad7f][Byung-Chul Han]]'s [[id:30ed30fe-44fb-43d2-970f-a917b5ce8cde][matric expression]] of some ideas, but where the mantra are [[id:e2227dd9-25ff-4873-958b-ff08f182c752][hyperlinks]] and themselves broken down: aphorisms where every meaningful word is explained with another aphorism...
+
+...Until you get to more core vocabulary like [[id:d2dd4008-f6be-48cc-a53e-cd64854f2afc][including]] which have more formal expressions.
+
+And the justification for the aphorism - not the meaning of the terms in it but the logicalness of the aphorism itself - is what's generally [[id:86256a15-65df-44af-8c8c-71b03312eb05][cited]].
+
+I think that's all the [[id:f2829f05-2e51-461e-bcaa-c62c396b7cd7][babbling]] I have on this for now. I like the four-part definition of authentic I've built here, and think it'll be useful for [[id:41657b52-c185-4a3e-b299-d30342612950][producing my brand]].

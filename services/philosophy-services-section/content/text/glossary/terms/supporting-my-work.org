@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       eda9b0d9-9307-4b84-8009-b87dd1d6f3f9
+:public:   true
+:form:     [[id:73ba49a2-d9fd-4d79-b9e4-8d2e7750fb16][supporting]]
+:END:
+#+title: supporting my work
+#+date: [2025-08-31 Sun 22:08]
+#+index: emsenn!emsenn's work!supporting emsenn's work
+
+*/Supporting my work/* is [[id:73ba49a2-d9fd-4d79-b9e4-8d2e7750fb16][supporting]] [[id:b3fd50b7-4d4c-493b-92f4-959a0925a86d][my work]].

@@ -1,0 +1,124 @@
+\section{The differential bypass}
+
+This section records the claim nodes proved by the Lean carrier
+\texttt{Obsmetrologia.Cohomology.DifferentialBypass}.  The bypass does not yet
+assert a general initial-algebra/final-coalgebra theorem.  It proves the
+current local form: a closure-algebra witness collapses the zero-increment
+settling coalgebra target, the closure ordinal routes to the regime classifier,
+and the non-vanishing obstruction side is exactly the transfinite-bounded or
+aperiodic side of the regime table.
+
+\begin{proposition}[The $\mu/\nu$ agreement and differential predicates]\label{thm:munu-agreement-differential}\lean{Obsmetrologia.Cohomology.MuNuAgreement}\leanok\uses{thm:settle-step, thm:kz-mult}
+\texttt{MuNuAgreement M E} names the zero-increment agreement
+\(F_U(E)=E\), where \(F_U(E)=\mathrm{Cl}(E)\) at the knowledge-least
+increment.  \texttt{MuNuDifferential M E} is its negation: the local
+algebra/coalgebra differential remains nonzero.
+\end{proposition}
+
+\begin{theorem}[Algebra/coalgebra duality for settling orbits]\label{thm:coalgebra-dual-of-algebra}\lean{Obsmetrologia.Coalgebra.coalgebra_dual_of_algebra}\leanok\uses{thm:munu-agreement-differential, thm:settle-step}
+Every local closure-algebra witness \(\mathrm{Cl}(E)\leq E\) collapses the
+settling coalgebra target back to \(E\).  This is the finite algebra side read
+as the coalgebraic observation map: once the closure fold has reached a fixed
+point, the unfold step contributes no new valuation.
+\end{theorem}
+
+\begin{proposition}[Differential bypass certificate]\label{thm:differential-bypass}\lean{Obsmetrologia.Cohomology.DifferentialBypass}\leanok\uses{thm:munu-agreement-differential, thm:four-regime-dichotomy}
+A differential bypass certificate carries two proved pieces of data: a
+\(\mathrm{Cl}\)-algebra witness on the valuation \(E\), and an alignment of the
+real closure ordinal \(\kappa\)'s finiteness with the finite-base coordinate of
+the regime data.  This is the formal version of routing the algebra/coalgebra
+gap through \(\kappa\).
+\end{proposition}
+
+\begin{theorem}[Bypass collapses the $\mu/\nu$ gap]\label{thm:differential-bypass-agreement}\lean{Obsmetrologia.Cohomology.differential_bypass_agreement}\leanok\uses{thm:differential-bypass, thm:kz-mult}
+Any differential bypass certificate proves \texttt{MuNuAgreement}: the
+zero-increment coalgebra target \(F_U(E)\) is equal to \(E\).  Equivalently, a
+remaining \texttt{MuNuDifferential} rules out such a certificate
+(\texttt{mu\_nu\_differential\_no\_bypass}).
+\end{theorem}
+
+\begin{theorem}[Bypass routes $\kappa$ to the regime classifier]\label{thm:differential-bypass-regime}\lean{Obsmetrologia.Cohomology.differential_bypass_regime}\leanok\uses{thm:differential-bypass, thm:four-regime-dichotomy}
+The ordinal side of a bypass is not decorative: \texttt{Ord.regimeOfOrd} of the
+chosen \(\kappa\), with the same Scott-continuity and cofinality witnesses,
+equals the regime classifier \texttt{classify}.  The old Boolean classifier is
+therefore recovered as the projection of the ordinal route.
+\end{theorem}
+
+\begin{theorem}[Charged obstruction regimes]\label{thm:obstruction-charged-iff}\lean{Obsmetrologia.Cohomology.obstruction_charged_iff}\leanok\uses{thm:regime-cohomology-vanishes-iff}
+\(H^1\)-non-vanishing in the regime table is exactly the
+transfinite-bounded or aperiodic side:
+\[
+  \texttt{cohomologyVanishes r = false}
+  \iff
+  r=\texttt{transfiniteBounded}\ \vee\ r=\texttt{aperiodic}.
+\]
+This is the precise charged side of the bypass, not a new cohomology theory.
+\end{theorem}
+
+\begin{theorem}[Bypass soundness]\label{thm:differential-bypass-sound}\lean{Obsmetrologia.Cohomology.differential_bypass_sound}\leanok\uses{thm:differential-bypass-agreement, thm:differential-bypass-regime, thm:obstruction-charged-iff}
+The headline theorem bundles the three settled facts: \(\mu/\nu\) agreement,
+\(\kappa\)-regime routing, and the exact charged-obstruction table.  This is
+the formal carrier for the differential bypass.
+\end{theorem}
+
+\begin{theorem}[Bypass inherits $H^1$ vanishing in strict/Scott regimes]\label{thm:differential-bypass-h1-vanishes}\lean{Obsmetrologia.Cohomology.differential_bypass_h1_vanishes}\leanok\uses{thm:differential-bypass-sound, thm:h1-zero-iff-confluent}
+When the bypass lands in a vanishing regime, it reuses the existing \(H^1\)
+gluing theorem: every agreeing \v{C}ech datum glues to a unique global cochain,
+and higher cohomology remains degenerate above degree one.  The theorem is a
+transport through the bypass, not a stronger contextuality theorem.
+\end{theorem}
+
+\begin{theorem}[The Scott face is the $\kappa=\omega$ vanishing bridge]\label{thm:scott-face-omega-bridge}\lean{Obsmetrologia.Cohomology.ScottFace.closureOrdinal_lub_of_finite_approximations, Obsmetrologia.Cohomology.ScottFace.finite_antecedent_closure_scott_continuous, Obsmetrologia.Cohomology.ScottFace.h1_vanishes, Obsmetrologia.Cohomology.ScottFace.differential_bypass_h1_vanishes}\leanok\uses{thm:differential-bypass-h1-vanishes, thm:h1-zero-iff-confluent, thm:regime-cohomology-vanishes-iff}
+The Scott face packages the honest \(\omega\)-indexed corner: the base has no
+last finite stage, the closure-ordinal coordinate is exactly
+\(\omega=\mathrm{limit}\ \texttt{ofNat}\), and \(\omega\) is the least upper
+bound of its finite approximations.  Finite-antecedent firing remains
+Scott-continuous, so the face classifies as \texttt{scott}; consequently its
+settling \(H^1\) vanishes, and any differential bypass routed through this
+face inherits the same vanishing theorem.
+\end{theorem}
+
+\begin{theorem}[The $\kappa$-stratification interface is wired]\label{thm:kappa-stratification-interface}\lean{Obsmetrologia.AperiodicOrder.Tiling.KappaStratification.Interface, Obsmetrologia.AperiodicOrder.Tiling.KappaStratification.landauer_cost_is_h1, Obsmetrologia.AperiodicOrder.Tiling.KappaStratification.scott_face_is_vanishing_bridge, Obsmetrologia.AperiodicOrder.Tiling.KappaStratification.collatz_cylinder_lift_kappa_package, Obsmetrologia.AperiodicOrder.Tiling.KappaStratification.zeta_star_residual_interface, Obsmetrologia.AperiodicOrder.Tiling.KappaStratification.interface, Obsmetrologia.AperiodicOrder.MaterialSectors.KappaSectorCharges.MaterialSectorReadout, Obsmetrologia.AperiodicOrder.MaterialSectors.KappaSectorCharges.MaterialSharedKappaCarrier, Obsmetrologia.AperiodicOrder.MaterialSectors.KappaSectorCharges.material_nerve_antiLandauer_compat, Obsmetrologia.AperiodicOrder.MaterialSectors.KappaSectorCharges.material_nerve_h0_compat, Obsmetrologia.AperiodicOrder.MaterialSectors.KappaSectorCharges.material_nerve_matter_antimatter_ledger, Obsmetrologia.AperiodicOrder.MaterialSectors.KappaSectorCharges.FullSharedKappaCarrier, Obsmetrologia.AperiodicOrder.MaterialSectors.KappaSectorCharges.twoAdic_cylinderLiftGap, Obsmetrologia.AperiodicOrder.MaterialSectors.KappaSectorCharges.full_shared_kappa_carrier_iff_noPositiveInfiniteBarrierStream, Obsmetrologia.AperiodicOrder.MaterialSectors.KappaSectorCharges.AntimatterBarrierBoundary, Obsmetrologia.AperiodicOrder.MaterialSectors.KappaSectorCharges.antimatter_barrier_boundary_iff_cylinderLiftContracts, Obsmetrologia.AperiodicOrder.MaterialSectors.KappaSectorCharges.full_shared_kappa_carrier_iff_antimatter_barrier_boundary, Obsmetrologia.AperiodicOrder.MaterialSectors.KappaSectorCharges.full_shared_kappa_carrier_iff_frontierInputs, Obsmetrologia.AperiodicOrder.MaterialSectors.KappaSectorCharges.SectorInterface, Obsmetrologia.AperiodicOrder.MaterialSectors.KappaSectorCharges.material_kappa_sector_charges, Obsmetrologia.AperiodicOrder.MaterialSectors.KappaSectorCharges.sector_interface}\leanok\uses{thm:scott-face-omega-bridge, thm:collatz-two-adic-cylinder-lift-gap, thm:matter-antimatter-balance}
+The current interface packages the ports of the proposed
+\(\kappa\)-stratification: Landauer cost as cover-nerve \(H^1\), the
+\(\kappa=\omega\) Scott face as a vanishing bridge, the Collatz two-adic
+cylinder-lift face as an already constructed projection from the two-adic
+carry gap, and the strict finite \(\kappa\)-package under one-lock; and
+Zeta-star as the observed coalgebraic residual interface.  The material sector
+is also wired: a rational glass basin bridge consumes that interface while
+exposing the \(H^1\)/Landauer matter ledger, the \(H^0\)/anti-Landauer
+anti-matter ledger, load-bearing iff positive \(H^1\), balanced flux, and
+positive discharge.  The material basin nerve is now the explicit local
+matter/anti-matter index carrier: Landauer is \(H^1\), anti-Landauer is
+\(H^0\), and anti-matter minus matter is the basin Euler ledger.  The full
+shared-carrier boundary is named: inhabiting it is equivalent to no positive
+infinite barrier stream, equivalently to the current Collatz frontier-input
+package.  The same boundary has a ledger-facing form
+\texttt{AntimatterBarrierBoundary}: the material anti-matter ledger is present,
+and the remaining Collatz content is exactly that the constructed two-adic
+cylinder-lift face forces eventual coefficient contraction.  This is a checked
+bundle of ports, sector charges, and the exact remaining carrier obligation.
+\end{theorem}
+
+\begin{theorem}[Landauer--Collatz--Zeta $\kappa$-stratified synthesis]\label{thm:landauer-collatz-zeta-kappa-synthesis}\notready\uses{thm:kappa-stratification-interface, thm:differential-bypass-sound, thm:obstruction-charged-iff}
+\emph{(Open frontier.)} The proved Scott face gives the missing
+\(\kappa=\omega\) bridge between finite inductive algebra and transfinite
+coalgebra, with \(H^1\) vanishing on the reversible side; the material sector
+now carries both \(H^1\)/Landauer matter and \(H^0\)/anti-Landauer anti-matter
+charges against that interface.  The remaining red part is narrower still:
+for the explicit full-carrier structure now in Lean, the two-adic cylinder-lift
+side is already built from the carry gap, and the gap is exactly no positive
+infinite barrier stream; equivalently, it is the cylinder-lift-implies-
+eventual-contraction implication named by \texttt{AntimatterBarrierBoundary}.
+Proving that condition without hypotheses would inhabit the carrier; stronger
+semantic identifications beyond this carrier structure remain a later
+refinement, not the current obstruction.
+\end{theorem}
+
+\begin{theorem}[Contextual obstruction as differential bypass consumer]\label{thm:contextual-obstruction-differential-bypass}\notready\uses{thm:differential-bypass-sound, thm:obstruction-charged-iff}
+\emph{(Open frontier.)} Relational contextuality, held-\(\top\), and the
+hole reading should be connected to the same non-vanishing charged side by
+a common obstruction carrier.  The current Lean proves the bypass itself and
+the regime/H\(^1\) table; it does not yet prove that every contextual
+obstruction is exactly this \(\mu/\nu\) differential.
+\end{theorem}

@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       c9f143e8-28f9-4cde-baed-6d2d4e044167
+:node-relations: (([[id:428c2f61-8c85-48b8-a191-1187c2a5f2ae][extends]] . [[id:6640fcb5-cb3c-420e-a9c3-d45e17bb6d6b][communicating]]) ([[id:2d79d4ba-8d36-4714-869c-081e8d40d24f][field]] . [[id:7f0cd5ff-62b5-488f-800f-4e63248a9275][pedagogy]]) ([[id:50711a63-93b5-4213-b768-165d10e8821c][actor]] . [[id:361631ea-175e-4607-8ddc-af2f8b4d5944][teacher]]) ([[id:6b5c2dcd-d286-4eaa-9905-6032d94538b5][recipient]] . [[id:7c01d90e-ea3d-497c-aa75-48be408b8ed4][student]]) ([[id:ab477596-70c8-467c-8d61-83756e6bb443][publication]] . [[id:cc253409-9a82-4c5d-a4cd-8013f4e350c6][emsenn.net]]))
+:END:
+#+title: teaching
+#+date: [2025-09-03 Wed 21:33]
+

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       839fb73c-158c-42fa-8d66-aad074ab7fe5
+:END:
+#+title: birth date
+#+date: [2025-10-16 Thu 11:18]
+

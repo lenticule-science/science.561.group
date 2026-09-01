@@ -1,0 +1,26 @@
+#+title: Org-mode TODO item
+#+ghe_schema: term-0.1.4
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-18 Fri 13:55]
+#+roam_alias: "Org-mode TODO items"
+
+#+name: definition
+An */[[file:org_mode_todo_item.org][Org-mode TODO item]]/* is an [[file:org_mode_subtree.org][Org-mode subtree]] which has been recorded as a future task by having a [[file:org_mode_todo_keyword.org][keyword]] prefixed to its headline.
+
+* Introduction
+
+  This record is some of what I (emsenn) know about */Org-mode TODO items/*. You may use it without limits or promises.
+
+
+* Org-mode TODO Item
+** State
+
+   Each /Org-mode TODO item/ comes with a */state/*, which declares where in its action process it is.
+
+* Supplements
+** Record history
+   :LOGBOOK:
+   - Note taken on [2020-12-27 Sun 15:22] \\
+     Started filling it out with the intent of learning how to use TODO items alongside the other ways I'm using the [[file:org_ecosystem.org][Org ecosystem]].
+   :END:

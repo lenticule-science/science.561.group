@@ -1,0 +1,33 @@
+#+SETUPFILE: ~/org/templates/setupfile0.org
+#+TITLE: Personal Website
+#+INDEX: manual!software!"Personal Website"
+* Introduction
+This document describes how I generate my personal website using Emacs
+and Org-mode: turning =org= files into =HTML=.
+
+The actual configuration and code from this document can be extracted
+by /tangling/ the source file using the command =org-babel-tangle=.
+
+#+BEGIN_SRC
+~/org/
+     |src/
+     .   |emacs-stuff.org
+     .   |README.org
+     .   |personal-website.org
+     |build/
+     .     |personal-website/
+     .                      |base.css
+     .                      |html_head.html
+     .                      |html_preamble.html
+     .                      |html_postamble.html
+     |pub/
+         |personal-website/
+                          |index.html
+                          |theindex.html
+                          |sitemap.org
+#+END_SRC
+
+The finished website is located under =~/org/pub/personal-website/=,
+built from a combination of org source files in =~/org/src/= and
+=~org/build/personal-website/=, which is populated from the source
+extracted from this document.

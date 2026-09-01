@@ -1,0 +1,20 @@
+---
+title: "Index"
+---
+
+# External Correspondence
+
+- [Indexed Categories](indexed-categories.md)
+- [Parametric Semantics](parametric-semantics.md)
+- [Relational Directed Homotopy](relational-directed-homotopy.md)
+- [Relational Directed Stratified Infinity-Sites](relational-directed-stratified-infinity-sites.md)
+- [Relational Free and Quotient Acts](relational-free-and-quotient-acts.md)
+- [Relational Heyting Algebra](relational-heyting-algebra.md)
+- [Relational Simply-Typed Lambda Calculus](relational-simply-typed-lambda-calculus.md)
+- [Relational Modal Logic](relational-modal-logic.md)
+- [Relational Markov Dynamics](relational-markov-dynamics.md)
+- [Relational Measurement Semantics](relational-measurement-semantics.md)
+- [Relational Sheaf Topos](relational-sheaf-topos.md)
+- [Quasicrystalline Relational Hypertensors](quasicrystalline-relational-hypertensors.md)
+- [Spectral Theorem](spectral-theorem.md)
+- [Topos Structure](topos.md)

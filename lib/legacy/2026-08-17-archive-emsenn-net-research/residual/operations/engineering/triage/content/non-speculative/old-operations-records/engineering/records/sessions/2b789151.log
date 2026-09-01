@@ -1,0 +1,4 @@
+0.10 + 0.20 = 0.30 exactly, no IEEE 754 drift. Both review issues resolved:
+
+1. **Exit code**: `verify` errors now exit 2 (not 1)
+2. **Floating-point**: All accumulations go through `round2()` — cents-precision rounding at every addition

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       16d19419-f394-4ba0-98e9-e8a66d8f37f8
+:END:
+#+title: world
+#+date: [2025-08-29 Fri 12:16]
+

@@ -1,0 +1,26 @@
+#+title: Washington, D.C., U.S.A.
+#+begin_head
+#+ghe_schema: term-0.1.3
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2021-01-06 Wed 15:15]
+#+roam_tags: term
+#+roam_alias: "D.C."
+#+end_head
+
+#+name: definition
+*/[[file:washington_d_c_u_s_a.org][Washington, D.C., U.S.A.]]/* is the capital city of the [[file:united-states-of-america.org][U.S.A.]], located between [[file:maryland_u_s_a.org][Maryland]] and [[file:virginia_u_s_a.org][Virginia, U.S.A.]], on the [[file:potomac_river.org][Potomac River]]. 
+
+#+toc: headlines 2
+
+* Supplements
+** Record history
+   :PROPERTIES:
+   :CUSTOM_ID: record-history
+   :END:
+   :LOGBOOK:
+   - Note taken on [2021-01-06 Wed 15:15] \\
+      Created from 
+
+      
+   :END:

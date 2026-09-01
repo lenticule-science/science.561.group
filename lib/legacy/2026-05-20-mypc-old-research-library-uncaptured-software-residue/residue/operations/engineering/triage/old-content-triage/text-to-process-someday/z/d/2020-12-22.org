@@ -1,0 +1,116 @@
+#+title: 2020-12-22
+#+begin_head
+#+ghe_schema: daily-record-0.1.0
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-22 Tue 09:50]
+#+roam_tags: daily-record
+#+end_head
+#+begin_summary
+#+name: 2020-12-22-summary
+This is my personal record for [2020-12-22 Tue]. If you are viewing this record outside of its original environment, please be aware it maybe be heavily redacted.
+#+end_summary
+#+toc: headlines 2
+* Activity Log                                                     :noexport:
+** [2020-12-22 Tue 19:36]
+ Hacking on [[file:../groundhog_emacs.org][Groundhog Emacs]]
+** [2020-12-22 Tue 13:47]
+ I'm fixing the [[file:../org_roam_daily_capture_templates.org][Org-roam daily capture templates]] in [[file:../groundhog_emacs.org][Groundhog Emacs]].
+* Postings
+** [2020-12-22 Tue 10:21]
+
+   I know I've said this like, five days in a row, but I think I'm finally coming out of the weeds, with regards to transitioning back to the [[file:../emacs.org][Emacs]] and [[file:../org_ecosystem.org][Org ecosystem]] for my [[file:../information_management.org][information management]] and [[file:../web_performance.org][Web performance]]. I've got [[file:../org_roam_capture_template.org][Org-roam capture templates]] and [[file:../org_roam_daily_capture_templates.org][Org-roam daily capture templates]] set up for easily creating both [[file:../permanent_note.org][permanent]] and [[file:../fleeting_note.org][fleeting notes]] as [[file:../record.org][records]], and a way to (simply, and with a lot of lost [[file:../meta_data.org][context]]) publish those records as a [[file:../website.org][Website]].
+
+   #+begin_aside
+   #+include: "../emacs.org::definition"
+   #+include: "../org_mode.org::definition"
+   #+end_aside
+
+   I've been heavily inspired by seeing [[file:../jeremy_friesen.org][Jeremy Friesen]]'s own Website, [[https://takeonrules.com/][takeonrules.com]]. While the [[file:../tool.org][tools]] he uses to build the site are not entirely the tools I plan to use, there's a lot of overlap, and the presentation of his site /is/ very close to the presentation I'd like mine to have.
+
+   I've also been using [[file:../neil_mather.org][Neil Mather]]'s Website as a bit of a reference - and just now noticed, actually, that Neil and I follow each other in the [[file:../fediverse.org][Fediverse]] and have been talking a bit about me preparing my own Website! Small [[file:../world.org][world]].
+
+   Hopefully, all this means that I'm far enough along that I can start using my Website to broadcast [[file:../posting.org][postings]] again, like I was doing briefly with my [[file:../wordpress.org][Wordpress]], starting today. As I go I'll develop the other records that'll be stored on the [[https://emsenn.net][emsenn.net]].
+
+   I haven't written too much about it, but I see this [[file:../digital_garden.org][digital garden]] as having potential as a tool for facilitating [[file:../cross_cultural_communication.org][cross-cultural communication]], and perhaps even having a role in me [[file:../live_streaming.org][live-streaming]], especially when such streams inevitably turn to the topic of [[file:../decolonization.org][decolonization]].
+** [2020-12-22 Tue 13:13]
+   I saw someone link to the [[file:../open_infrastructure_map.org][Open Infrastructure Map]] today and I clicked through and realized: there's no electricity in [[file:../chapel_hill_north_carolina.org][Chapel Hill]], according to this map! There's no listing of the [[file:../manning_drive_power_plant.org][Manning Drive Power Plant]] and so the town whole downtown of Chapel Hill seems to lack electricity!
+
+   It's "funny," how erased the existence of that power plant is. People in town don't know it's there, even though the coal train blocks traffic flowing through [[file:../carrboro_north_carolina.org][Carrboro]] every day or so, sometimes twice! And I say erased on purpose; the [[file:../unc_ch.org][University]] is being sued about the power plant, and does everything they can to pretend it, and the [[file:../environmental_racism_lawsuit_against_unc_ch.org][environmental racism lawsuit against UNC-CH]], doesn't exist.
+** [2020-12-22 Tue 14:27]
+   A friend made me 14 of the same of the same red [[file:../mask.org][mask]] early on in the [[file:../covid_19.org][COVID-19]] pandemic, and so I've been able to wear the same style mask every day, to be friendly to folk who have [[file:../trouble_recognizing_faces.org][trouble recognizing faces]]. I've been wearing a mask every day since [[file:2020-03-03.org][2020-03-03]], 294 days now. And yet in the past few days, I've had people, who have seen me many days since then, say that they like my [[file:../christmas.org][Christmas]] mask. Just an odd little thing.
+** [2020-12-22 Tue 19:43]
+ So I want to post this here because every time someone seems me do it, they go =:O=
+
+ In the [[file:../org_mode.org][Org-mode]] manual it's well documented that you can name source blocks with a line starting with =#+name:= above them:
+
+ 
+ #+name: org-block-1
+ #+begin_src org
+   ,#+name: demonstration-code-block-1
+   ,#+begin_src elisp
+   (print "practice gratitude")
+   ,#+end_src
+ #+end_src
+
+ (see [[https://orgmode.org/manual/Structure-of-Code-Blocks.html#Structure-of-Code-Blocks][15.2 Structure of Code Blocks]] in the manual.)
+
+ You can also name tables, I found that documented in [[https://orgmode.org/manual/Environment-of-a-Code-Block.html][15.4 Environment of a Code Block]], and lists.
+
+ #+name: alpha-paragraph
+ What I didn't find documented anyplace is that you can name quote blocks, and also just /ordinary paragraphs/.
+
+ I named that paragraph =alpha-paragraph=, now I'll work with it in Elisp:
+
+ #+name: working-with-alpha 
+ #+begin_src elisp :var alpha=alpha-paragraph :results raw :wrap quote
+   (print alpha)
+ #+end_src
+
+ That, behind the scenes, looks like this:
+
+ #+name: org-block-2
+ #+begin_src org :noweb yes
+   ,#+name: working-with-alpha 
+   ,#+begin_src elisp :var alpha=alpha-paragraph :results raw :wrap quote
+     (print alpha)
+   ,#+end_src
+ #+end_src
+ 
+ Evaluating that results in the following output:
+
+ #+RESULTS: working-with-alpha
+ #+begin_quote
+  What I didn't find documented anyplace is that you can name quote blocks, and also just /ordinary paragraphs/.
+ #+end_quote
+
+ Conveniently, this also means I can use Org-mode's inclusion system to bring in paragraphs from other documents. The definition of [[file:../groundhog_emacs.org][Groundhog Emacs]] should be pulled in below:
+ #+begin_quote
+ #+include: "../groundhog_emacs.org::definition"
+ #+end_quote
+ That appears to work, at least at the time of writing. You can also use Org-modes link-handling system to easily link to a specific paragraph this way. Hope y'all find this useful info!
+
+ As requested by [[file:../benjamin_slade.org][Benjamin Slade]], here's the Org-mode all together:
+
+#+begin_src org :noweb yes
+  ,#+name: alpha-paragraph
+    What I didn't find documented anyplace is that you can name quote blocks, and also just /ordinary paragraphs/.
+
+  <<org-block-1>>
+
+  <<org-block-2>>
+#+end_src
+
+   Put this in an empty Org-mode buffer and press =C-c C-c= over the last block and you should get the following:
+
+   #+begin_src org
+     #+RESULTS: working-with-alpha
+     #+begin_quote
+       What I didn't find documented anyplace is that you can name quote blocks, and also just /ordinary paragraphs/.
+     #+end_quote
+ #+end_src
+ 
+ 
+* Journal                                                          :noexport:
+* Supplements
+

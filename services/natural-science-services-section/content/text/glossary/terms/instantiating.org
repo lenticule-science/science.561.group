@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       bee496e1-139b-4a7f-8a24-d4c14e6084c6
+:ROAM_ALIASES: instantiated instantiates
+:NODE-RELATIONS: (([[id:8b8b0529-39fa-4290-8beb-12c1567e0fbf][function]] . [[id:a239f18c-005c-4d81-aece-993364eb19c3][Relational Exit-Infinity Topos coKleisli commandic functor]]) ([[id:42cca9f1-8cae-4295-b494-f39329aa78b8][domain]] . [[id:362a9789-6bcd-41d4-bc72-d72b1abd33f9][Relational Exit-Infinity Topos]]) ([[id:80b886a8-ae8f-4816-b683-fd404daa728a][codomain]] . [[id:362a9789-6bcd-41d4-bc72-d72b1abd33f9][Relational Exit-Infinity Topos]]))
+:END:
+#+title: instantiating
+#+date: [2025-09-20 Sat 10:51]
+

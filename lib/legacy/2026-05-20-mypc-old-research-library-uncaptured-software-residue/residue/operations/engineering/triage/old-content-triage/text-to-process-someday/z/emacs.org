@@ -1,0 +1,10 @@
+#+title: Emacs
+#+roam_key: https://www.gnu.org/software/emacs/
+#+name: definition
+*/Emacs/* is a [[file:text_editor.org][text editor]] that allows for a lot of customization.
+
+* Useful commands
+
+  There are obviously a lot of useful commands in Emacs, but these are the ones I've "found" after using it for a while, and wanted to make sure I didn't forget in a few days.
+
+  - =save-some-buffers= asks about saving the currently unsaved but changed buffers - it's the same prompt, I think, that gets triggered when you try and quit Emacs.

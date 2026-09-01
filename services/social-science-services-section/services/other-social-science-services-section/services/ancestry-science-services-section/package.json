@@ -1,0 +1,7 @@
+{
+  "name": "@lenticule-science/ancestry-science-services-section",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Red Cup Science service section for ancestry and kinship-memory science.",
+  "license": "UNLICENSED"
+}

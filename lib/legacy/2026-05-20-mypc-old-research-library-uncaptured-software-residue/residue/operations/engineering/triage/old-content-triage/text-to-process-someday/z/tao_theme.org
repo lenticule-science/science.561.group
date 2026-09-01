@@ -1,0 +1,33 @@
+#+title: Tao theme
+#+begin_head
+#+ghe_schema: term-0.1.3
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-31 Thu 11:17]
+#+roam_tags: term
+#+end_head
+
+#+name: tao-theme-definition
+The */[[file:tao_theme.org][Tao theme]]/* is an [[file:emacs_theme.org][Emacs theme]] that provides two [[file:grayscale.org][grayscale]] themes, one light and one dark.
+#+toc: headlines 2
+* Introduction
+* Tao theme
+
+ #+name: tao-theme-straight-use-package-elisp
+ #+caption: Configure the /Tao/ theme for /Emacs/ using /use-package/ and /straight.el/.
+ #+begin_src elisp 
+   (use-package tao-theme :straight t
+     :config (load-theme 'tao-yin t))
+ #+end_src
+  
+* Supplements
+** Record history
+   :PROPERTIES:
+   :CUSTOM_ID: record-history
+   :END:
+   :LOGBOOK:
+   - Note taken on [2020-12-31 Thu 11:17] \\
+      Created from [[file:~/org/s/p/groundhog_emacs.org::*Tao theme][Tao theme]]
+
+      
+   :END:

@@ -1,0 +1,18 @@
+name: restep_trace
+inputs:
+- role: trace
+  kind: trace
+outputs:
+- role: restep_trace_evidence
+  kind: restep_trace_evidence
+steps:
+- name: restep_trace
+  operator: restep_trace
+  step_index: 0
+  inputs:
+  - role: trace
+    kind: trace
+  outputs:
+  - role: restep_trace_evidence
+    kind: restep_trace_evidence
+id: 688495996d315633321d50175e5dfbccb90cc214d70b47cd64941d7ba096d651

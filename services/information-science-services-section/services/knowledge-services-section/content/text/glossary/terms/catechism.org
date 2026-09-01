@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       f8a85ed2-42b9-454c-a30e-abce69a4bddf
+:END:
+#+title: catechism
+#+date: [2025-09-28 Sun 14:32]
+

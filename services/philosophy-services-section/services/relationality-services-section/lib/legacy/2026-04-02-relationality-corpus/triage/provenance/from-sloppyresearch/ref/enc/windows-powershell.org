@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       cd0126e0-3150-4036-b3c8-5c426e217a0f
+:END:
+#+title: Windows Powershell
+#+date [2025-08-11 Mon 23:04]
+

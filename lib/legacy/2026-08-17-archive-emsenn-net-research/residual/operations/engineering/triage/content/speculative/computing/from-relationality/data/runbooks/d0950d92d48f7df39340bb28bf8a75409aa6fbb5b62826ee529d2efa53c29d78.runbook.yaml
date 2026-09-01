@@ -1,0 +1,19 @@
+name: shuffle_equivalence_check
+inputs:
+- role: trace
+  kind: trace
+outputs:
+- role: shuffle_equivalence_evidence
+  kind: shuffle_equivalence_evidence
+steps:
+- name: shuffle_equivalence_check
+  operator: shuffle_equivalence_check
+  step_index: 0
+  inputs:
+  - role: trace
+    kind: trace
+  outputs:
+  - role: shuffle_equivalence_evidence
+    kind: shuffle_equivalence_evidence
+id: d0950d92d48f7df39340bb28bf8a75409aa6fbb5b62826ee529d2efa53c29d78
+

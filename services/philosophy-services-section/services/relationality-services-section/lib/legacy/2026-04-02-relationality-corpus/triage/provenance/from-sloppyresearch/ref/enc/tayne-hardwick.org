@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       65cc7c54-11c8-4c08-a3bd-aca85f088cee
+:public:   true
+:END:
+#+title: Tayne Hardwick
+#+date: [2025-08-27 Wed 22:40]
+#+index: Tayne Hardwick
+#+index: Hardwick!Tayne Hardwick
+
+*/Tayne Hardwick/* was a [[id:4020e332-87d9-4347-939e-7b2813ad5641][human]] that lived in [[id:5ccc63d5-eab8-48bf-aba4-038a5781a610][Ack]] during the [[id:0ffa6737-cc3e-404a-8ccb-7b30ca34440f][Magic Revolution]]. He was [[id:e2104ed8-5626-4c32-b64a-bf515ff62def][employed]] by the [[id:bf101c99-5a5f-4281-82eb-7f7b564aa187][Chandlers Guild]]. Notably, he was in charge of the [[id:1907d96e-ea4a-4b4d-93ae-217593f370aa][operation]] to [[id:b9b6a37b-367c-4aa1-8b54-df220fa8e441][discredit]] [[id:5fa78411-bb01-4f78-8ede-85b2a606d050][Aldous Sendvogue]] after Sendvogue [[id:d3015072-baac-4470-b4e0-883e81ca33d6][invented]] the [[id:19f104f2-ddba-4bc7-a1e3-cf69adf8e57a][lightbulb]].

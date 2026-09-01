@@ -1,0 +1,83 @@
+#+TITLE: Planning My Online Presence
+#+OPTIONS: toc:nil
+* Introduction
+I created my [[https://mastodon.social/@emsenn][first account]] in the Fediverse about a year ago, and now
+I'm planning how I'm going to contine my presence in the Fediverse,
+and online, now that I've pulled back from nearly every other
+platform.
+
+The next section is a breakdown of the accounts I plan to have, and
+afterward, a section of /Considerations/, musings and caveats about
+the accounts listed above.
+
+Note, I'm currently looking for help finding a few places, search this
+document for "TODO" to see what still needs work.
+** Editorial and Licensing Information
+This essay is released under the MIT License and maintained at
+[[https://git.sr.ht/~emsenn/planning-my-online-presence]].
+* Accounts
+** Federated
+| Location                 | Purpose                                                        |
+|--------------------------+----------------------------------------------------------------|
+| [[https://mastodon.social/@emsenn][@emsenn@mastodon.social]]  | General socializing                                            |
+| [[https://wordsmith.social/emsenn][@emsenn@wordsmith.social]] | Syndication of in-progress and uncategorized writing           |
+| [[https://tabletop.social/@emsenn][@emsenn@tabletop.social]]  | Discussion of tabletop role-playing game design and playing.   |
+| [[https://tabletop.press/emsenn][@emsenn@tabletop.press]]   | Syndication of tabletop role-playing game rules and adventures |
+| TODO                     | Discussion of MUD development and writing.                     |
+| TODO                     | Discussion of nerd stuff: Emacs, Org-mode, OpenBSD, web design |
+** Legacy Social Media
+| Location               | Purpose                                         |
+|------------------------+-------------------------------------------------|
+| [[https://linkedin.com/in/emsenn][linkedin.com/in/emsenn]] | Syndication of business and technology writing. |
+** Normal Web
+| Location             | Purpose                                |
+|----------------------+----------------------------------------|
+| [[https://emsenn.net][emsenn.net]]           | Homepage.                              |
+| [[https://emsenn.neocities.org][emsenn.neocities.org]] | Landing page.                          |
+| [[https://git.sr.ht/~emsenn][git.sr.ht/~emsenn]]    | Project and document repositories.     |
+| [[https://todo.sr.ht/~emsenn][todo.sr.ht/~emsenn]]   | Personal and project ticketing system. |
+| [[https://lists.sr.ht/~emsenn][lists.sr.ht/~emsenn]]  | Mailing lists.                         |
+* Considerations
+** Audiences
+Like a lot of folk who post online prolifically[fn:1], I have a few
+different "audiences," with some overlap between members. In my
+reckoning, the audiences I probably have are:
+*** MUD Developers
+Folk interested in the development of MUD engines. All in this group
+probably are in MUD Players and Writers.
+*** MUD Players and Writers
+Folk interested in playing MUDs, or being MUD creators:
+content-writers. Some overlap with MUD developers.
+*** Writers
+Folk interested in the craft of writing, specifically probably grammar
+and folk linguistics.
+*** Emacs and Org-mode Users
+Folk interested in the Emacs text editor and its Org-mode... mode.
+Probably some overlap with Writers.
+*** Web Designers
+Folk interested in designing webpages - though I would post more
+generally about documents.
+** Linking
+I link between my stuff a lot, so being able to hand-write the links
+to stuff is important. I don't care so much about being able to
+hand-link federated or legacy social media posts, but hand-linking
+to source repos is important.
+** Using git.sr.ht instead of a dedicated website
+Same motivation - that I haven't previously explained - as for why I
+don't mind there being a bit of Org-mode showing in my published
+documents: it's a platform used so extensively through my works that a
+passing familiarity, gained through osmosis, is a useful tool for my
+audience to develop, if they don't have it already.
+** Community
+Rather than have a bunch of stuff at emsenn.net, I think I'd rather
+use a bunch of FOSSy services. I have my desktop set up well enough
+and have home backups so as long as I never make it so that it's ONLY
+on the SaaS, I'll be good.
+* Footnotes
+
+[fn:1] Prolific Online Posters, or POPs?
+
+# Local Variables:
+# writefreely-post-id: "8biuyeh3t1"
+# writefreely-post-token: nil
+# End:

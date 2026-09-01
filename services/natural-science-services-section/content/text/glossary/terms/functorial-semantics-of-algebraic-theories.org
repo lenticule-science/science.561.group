@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       75df420e-7dec-4d0f-85b7-22b67cdf3ab1
+:node-relations: (([[id:a8bc7e3a-cdf7-4cfa-8e4d-a1a5f7eb2931][author]] . [[id:4c279e1c-6e83-4734-a812-c9474b30100d][F.W. Lawvere]]) ([[id:6a4d2a88-04a3-4007-8555-5fe16d965831][publication date]] . [[id:ae822700-55dc-409e-8ba2-4ab6dca1d86d][1963]]) ([[id:bee496e1-139b-4a7f-8a24-d4c14e6084c6][instantiates]] . [[id:19c5fd8a-3764-40a3-9787-97bcc856d68c][article]]) ([[id:a0619eb6-8e1a-49b9-9eab-9909c1d59db1][journal]] . [[id:34fef614-aa30-4e49-ae7b-7215abeeed07][Proeedings of the National Academy of Sciences]]) ([[id:4695cc5c-70e9-442f-8a89-4b14fff5be3e][subject]] . [[id:44d2a15c-6492-4e13-bbd4-20e9ed6ab495][category theory]]) ([[id:4695cc5c-70e9-442f-8a89-4b14fff5be3e][subject]] . [[id:de4044cf-ebc8-460d-a26e-78679a0b62e4][universal algebra]]) ([[id:6fd5661b-9d66-4297-bd85-45fc1ab1ef72][defines]] . [[id:a3c24866-d2fa-4dbe-ac28-e0f6809ba76d][functorial semantics]]) ([[id:23f5665f-3eed-4229-92ed-25b5a0a51e7a][algebraic equation]] . [[id:c5554fba-c1fd-4a18-9063-01c078bd9da3][product-preserving category functor]]))
+:END:
+#+title: Functorial Semantics of Algebraic Theories
+#+date: [2025-10-15 Wed 18:06]
+

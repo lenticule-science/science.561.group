@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       8edb40c2-4b30-4995-aaf8-692ac758cb1b
+:END:
+#+title: Gregorian calendar date
+#+date: [2025-09-07 Sun 23:42]
+

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       3e7b15f3-f689-457e-a293-a56c74ebbfce
+:END:
+#+title: microblog post
+#+date: [2025-10-04 Sat 00:34]
+

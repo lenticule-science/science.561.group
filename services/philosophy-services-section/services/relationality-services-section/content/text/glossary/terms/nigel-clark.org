@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       9e37e60c-eade-4d29-b6e5-6c68875fb438
+:NODE-RELATIONS: (([[id:0200d0de-368d-4919-865a-00f7a55b778a][professor]] . [[id:5bf62543-5ab8-4944-b4e3-906a5752e57f][Lancaster Environment Centre]]) ([[id:f7cc4bac-8a9d-43a2-a76f-4e014ae70405][authored]] . [[id:c7b7b459-63ab-48a9-b349-a792b1b41fc5][What can a planet do?]])))
+:END:
+#+title: Nigel Clark
+#+date: [2025-10-05 Sun 08:07]

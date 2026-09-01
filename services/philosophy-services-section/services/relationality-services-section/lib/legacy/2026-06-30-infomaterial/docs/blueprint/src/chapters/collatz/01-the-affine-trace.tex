@@ -1,0 +1,32 @@
+\section{The affine trace}
+
+\begin{theorem}[Affine trace of an orbit]
+  \label{thm:collatz-affine-trace}
+  \lean{Infomaterial.Closure.Collatz.affine_trace_parityWord}
+  \leanok
+  \uses{thm:collatz-settlement-realised}
+  For the accelerated map $T(n)=n/2$ ($n$ even), $(3n+1)/2$ ($n$ odd), once the length-$k$
+  parity word $w$ of the orbit of $n$ is fixed, the iterate is affine in the seed:
+  $B_w\cdot T^k(n)=A_w\cdot n+C_w$, where the trace $(A_w,B_w,C_w)$ is accumulated letter by
+  letter. Fixing the parity word linearises the branching dynamics --- the first lawful finite
+  probe of the orbit.
+\end{theorem}
+\begin{lemma}[Trace coefficients are powers]
+  \label{lem:collatz-trace-powers}
+  \lean{Infomaterial.Closure.Collatz.trace_A_eq_three_pow_oddCount}
+  \leanok
+  \uses{thm:collatz-affine-trace}
+  The trace coefficients are closed forms in the word: $A_w=3^{\,\mathrm{oddCount}\,w}$ and
+  $B_w=2^{\,|w|}$ (\texttt{trace\_B\_eq\_two\_pow\_length}). Both are positive.
+\end{lemma}
+\begin{theorem}[Descent is coefficient surplus]
+  \label{thm:collatz-descent-iff}
+  \lean{Infomaterial.Closure.Collatz.descent_iff_coeff}
+  \leanok
+  \uses{thm:collatz-affine-trace, lem:collatz-trace-powers}
+  The orbit descends over $k$ steps exactly when the affine surplus is negative:
+  $T^k(n)<n \iff A_w\cdot n+C_w<B_w\cdot n$. A coefficient-noncontracting word
+  ($B_w\le A_w$) can never descend, since $C_w\ge 0$
+  (\texttt{noncontracting\_no\_descent}); a cycle pins the seed to its trace
+  (\texttt{cycle\_word\_necessary}).
+\end{theorem}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "category-theory/category/scripts/functoring/content/functor/scripts/transforming/content/natural-transformation/scripts/adjoining/content/adjoint-pair/scripts/invertibilizing/content/equivalence",
+  "title": "equivalence",
+  "description": "An adjoint pair F ⊣ G whose unit η : 1 ⇒ GF and counit ε : FG ⇒ 1 are natural isomorphisms — an adjoint equivalence of categories. Round trips return naturally-isomorphic, not equal, objects: the right notion of sameness for categories, and the seed of the weaker ∞-equivalences that replace strict isomorphism higher up. An adjunction refined by invertible unit and counit.",
+  "allOf": [
+    {
+      "$ref": "category-theory/category/scripts/functoring/content/functor/scripts/transforming/content/natural-transformation/scripts/adjoining/content/adjoint-pair"
+    }
+  ],
+  "type": "object",
+  "required": [
+    "unit-counit-iso"
+  ],
+  "properties": {
+    "unit-counit-iso": {
+      "description": "the unit η and counit ε are natural isomorphisms (GF ≅ 1 and FG ≅ 1)",
+      "const": true
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/predication-cell-set/teaching/referencing/referencing.schema.json",
+  "title": "referencing",
+  "description": "Result schema for referencing the predication-cell-set. The projection-kind selects which morphism from $\\Phi = E \\times \\Pi \\times E$ produces the result: subject-projection ($\\pi_E^{(1)}: \\Phi \\to E$), predicate-projection ($\\pi_\\Pi: \\Phi \\to \\Pi$), object-projection ($\\pi_E^{(2)}: \\Phi \\to E$), coordinate-swap ($\\sigma: \\Phi \\to \\Phi$ on the two E-coordinates), or identity (returns the cells unchanged).",
+  "type": "object",
+  "required": ["projection-kind", "result"],
+  "additionalProperties": false,
+  "properties": {
+    "projection-kind": {
+      "type": "string",
+      "enum": ["subject-projection", "predicate-projection", "object-projection", "coordinate-swap", "identity"]
+    },
+    "result": {
+      "description": "The projected output. Type depends on projection-kind: entity-slugs for subject/object projections; predicate-slugs for predicate-projection; predication-cells for coordinate-swap and identity.",
+      "oneOf": [
+        {
+          "type": "array",
+          "items": {"type": "string", "pattern": "^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$"}
+        },
+        {
+          "type": "array",
+          "items": {"$ref": "https://research-notes.561.group/hacking/library/predication-notes/predication-cell-set/library/predication-cell/predication-cell.schema.json"}
+        }
+      ]
+    },
+    "source-cardinality": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "The number of cells from the source predication-cell-set that the projection ranged over."
+    },
+    "result-cardinality": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "The number of distinct results yielded by the projection."
+    },
+    "deduplicated": {
+      "type": "boolean",
+      "description": "Whether the result has had duplicate values collapsed (the morphism's set-image rather than multiset-image)."
+    }
+  }
+}

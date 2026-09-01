@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       0d10611a-01bc-4e65-916a-fd8901486816
+:NODE-RELATIONS: (([[id:8b9161ac-be68-4282-836e-f1cf140a9b16][religion]] . [[id:ed4e1b4a-f008-47fe-9da3-c0f9b845001d][Jesus Christ]]))
+:END:
+#+title: Christian religion
+#+date: [2025-09-13 Sat 12:23]
+

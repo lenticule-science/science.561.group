@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       be5cefca-5949-46a2-981e-ba327be4363e
+:END:
+#+title: calendar year
+#+date: [2025-10-15 Wed 22:52]
+

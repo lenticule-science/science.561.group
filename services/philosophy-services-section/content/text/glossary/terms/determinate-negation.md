@@ -1,0 +1,47 @@
+---
+name: Determinate Negation
+date-created: 2026-04-02 00:00:00
+authors:
+- claude
+tags:
+- hegelian-philosophy
+- dialectics
+- logic
+references:
+  - id: hegel-dialectics-sep-2019
+    type: document
+    title: Hegel's Dialectics
+    author:
+      - literal: Robert Stern
+    container-title: Stanford Encyclopedia of Philosophy
+    issued:
+      - year: 2019
+    URL: https://plato.stanford.edu/archives/fall2019/entries/hegel-dialectics/
+description: "A Hegelian operation in which negation is specific to a form's own content, producing a transition that both cancels and preserves that form."
+---
+
+Determinate negation is negation with content. A form is not merely
+rejected; it is transformed according to its own internal limits,
+producing a successor form that preserves certain determinations while
+reconfiguring their role [@hegel-dialectics-sep-2019].
+
+This distinguishes determinate negation from abstract negation:
+
+- **Abstract negation**: simple opposition (`not-X`).
+- **Determinate negation**: structured transition (`X` becomes
+  re-specified through its contradiction).
+
+The concept explains how dialectical development can involve real
+rupture without becoming arbitrary. What follows is constrained by what
+is negated.
+
+## Related terms
+
+- [Dialectics](./dialectics.md)
+- [Mediation](./mediation.md)
+- [Immanence](../../metaphysics/terms/immanence.md)
+- [Materialism](../../metaphysics/terms/materialism.md)
+
+## Sources
+
+- [Hegel's Dialectics (Stanford Encyclopedia of Philosophy, Fall 2019)](https://plato.stanford.edu/archives/fall2019/entries/hegel-dialectics/)

@@ -1,0 +1,13 @@
+{{ with $.Site.GetPage (string (delimit (slice (substr .RelPermalink 0 -1) "/procedures") "")) }}
+  {{ if .Pages }}
+    <section>
+      <h2>Procedures</h2>
+      <p>{{ partial "span-procedures-count.html" . }}</p>
+      <ul>
+        {{ range .Pages }}
+	  <li>{{ partial "span-page-brief.html" . }}</li>
+	{{ end }}
+      </ul>
+    </section>
+  {{ end }}
+{{ end }}

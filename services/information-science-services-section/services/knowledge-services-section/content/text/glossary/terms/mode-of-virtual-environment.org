@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       7d4b42d4-fe3e-4fcb-bd30-97385276d7fe
+:END:
+#+title: mode of virtual environment
+#+date: [2025-09-01 Mon 07:50]
+

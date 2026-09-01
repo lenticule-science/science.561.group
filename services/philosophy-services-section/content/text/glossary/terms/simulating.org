@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       ac8da040-dd86-4c10-8ca0-c610bea44bca
+:END:
+#+title: simulating  
+#+date: [2025-10-16 Thu 21:38]
+

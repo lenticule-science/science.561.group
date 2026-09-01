@@ -1,0 +1,25 @@
+#+title: Shakori-Eno
+#+begin_head
+#+ghe_schema: term-0.1.3
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-26 Sat 12:07]
+#+roam_tags: term
+#+end_head
+
+#+name: definition
+The */[[file:shakori_eno.org][Shakori-Eno]]/* people were a group of [[file:human.org][humans]] who lived around the [[file:eno_river.org][Eno River]] prior to European [[file:colonization.org][colonization]].
+#+toc: headlines 2
+* Introduction
+* Shakori-Eno
+* Supplements
+** Record history
+   :PROPERTIES:
+   :CUSTOM_ID: record-history
+   :END:
+   :LOGBOOK:
+   - Note taken on [2020-12-26 Sat 12:07] \\
+      Created from [[file:~/org/s/p/cottenboro_gaz.org][definition]]
+
+      
+   :END:

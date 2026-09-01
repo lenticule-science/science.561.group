@@ -1,0 +1,48 @@
+{{- define "main" -}}
+  {{- $scratch := newScratch -}}
+  {{- range $version,$versionDetails := .Params.v -}}
+    {{- $scratch.Add "versions" (slice $version) -}}
+  {{- end -}}
+  {{- $scratch.Set "versions" (sort ($scratch.Get "versions") "value" "desc") }}
+      <ul>
+        {{- range ($scratch.Get "versions") -}}
+          {{- $scratch.Set "currentVersion" . -}}
+          {{- range $versionOrigin, $originDetails := (index $.Params.v .) -}}
+            {{- $scratch.Add "versionOrigins" (slice $versionOrigin) -}}
+          {{- end -}}
+          {{- $scratch.Set "versionOrigins" (sort ($scratch.Get "versionOrigins") "value" "asc") }}
+        <li><strong>{{ . }}</strong>:<ul>
+                {{- range ($scratch.Get "versionOrigins") -}}
+                  {{- $scratch.Set "currentOrigin" . -}}
+                  {{- $scratch.Set "currentLocation" (index (index (index $.Params.v ($scratch.Get "currentVersion")) ($scratch.Get "currentOrigin")) "location") }}
+          <li><em>{{- . -}}</em>:<ul>
+                    {{- range (index (index (index $.Params.v ($scratch.Get "currentVersion")) ($scratch.Get "currentOrigin")) "formats") }}
+            <li>
+              <a href="
+                    {{- if (eq ($scratch.Get "currentOrigin") "local") -}}
+                              {{- $.Site.BaseURL -}}
+                            {{- end -}}
+                            {{- $scratch.Get "currentLocation" -}}
+	                    .
+                            {{- . -}}
+                          ">
+                          {{- . -}}
+              </a>
+            </li>
+                      {{- end }}
+          </ul></li>
+              {{- end -}}
+              {{- $scratch.Delete "versionOrigins" }}
+        </ul></li>
+      {{- end -}}
+      {{- $scratch.Delete "currentVersion" }}
+      </ul>
+{{- end -}}
+
+## Additional material from the Google Drive library
+
+{{- define "main" -}}
+  {{ with .Content }}
+    {{ . }}
+  {{ end }}
+{{- end -}}

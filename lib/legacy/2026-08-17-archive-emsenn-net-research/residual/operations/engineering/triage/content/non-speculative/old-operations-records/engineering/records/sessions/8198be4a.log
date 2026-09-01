@@ -1,0 +1,13 @@
+Done. Created `operations/engineering/fars/agentic/tools/finance-report.js` (196 lines, CommonJS, no deps).
+
+**What it does:**
+- Reads `events.jsonl` for transactions with `sourceAccount`/`destinationAccount`/`quantity` fields
+- Computes running balances per account per commodity
+- Groups accounts by type (assets, budget, active, library, operations, income, expenses, liabilities, waste, equity)
+- Shows top expense accounts and budget utilization percentages
+- `--period today|week|month` filters by time window
+- `--format text|json` for human or machine output
+- `--commodity <name>` filters by commodity
+- Color-coded: waste in red, growing liabilities in yellow
+
+Tested against live data — 11 transactions render correctly in both text and JSON modes. Task updated to `in-progress` with remaining command wiring items tracked.

@@ -1,0 +1,20 @@
+#+title: life
+#+begin_head
+#+ghe_schema: record-0.1.3
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-25 Fri 11:09]
+#+end_head
+
+#+name: definition
+*/Life/* is a sense of the [[file:energy.org][energy]] in a thing.
+
+#toc: headlines 2
+* Intrododuction
+* life
+* Supplements
+** Record history
+   :LOGBOOK:
+   - Note taken on [2020-12-25 Fri 11:09] \\
+     Created
+   :END:

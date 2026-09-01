@@ -1,0 +1,18 @@
+#+PROPERTY: Effort_ALL 0 0:10 0:30 1:00 2:00 3:00 4:00 5:00 6:00 7:00
+#+COLUMNS: %40ITEM(Task) %17Effort(Estimated Effort){:} %CLOCKSUM
+* One-time
+* Annual
+* Quarterly
+* Monthly
+* Weekly
+** TODO [#C] Go to the grocery
+SCHEDULED: <2021-10-22 Fri 08:00>
+:PROPERTIES:
+:EFFORT:   1:30
+:END:
+** TODO [#C] Go thrifting
+SCHEDULED: <2021-10-23 Sat 11:00>
+:PROPERTIES:
+:EFFORT:   1:30
+:END:
+* Daily

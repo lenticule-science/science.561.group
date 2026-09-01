@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+{{- with .Site.Language.Lang }} xml:lang="{{- . -}}" lang="{{- . -}}"
+{{- end }}>
+<head>
+{{ partial "head-meta.html" . }}
+{{ partial "head-links.html" . }}
+{{ partial "head-title.html" . }}
+      <style>
+      {{ partial "basic-css.css" . | safeCSS }}
+      </style>
+    </head>
+    <body>
+      <a class="skipToContentLink" href="#content">Skip to Content</a>
+      <article
+        {{ with .Params.itemType }}
+          itemscope
+          itemtype="{{ . }}"
+        {{ end }}
+        class="h-entry">
+        <header>
+          {{- block "header" . -}}
+	    {{ partial "header-title" . }}
+            {{ if (eq .Kind "page") }}
+              {{ partial "page-description" . }}
+            {{ else if (eq .Layout "section") }}
+              {{ with .Content }}
+                {{ . }}
+              {{ end }}
+            {{ end }}
+           {{- end -}}
+        </header>
+        <main>
+          {{- block "main" . -}}
+            <!-- -->
+          {{- end }}
+        </main>
+        <footer>
+          {{- block "footer" . -}}
+            {{ if (eq .Kind "page") }}
+              {{ partial "license-span.html" . }}
+              {{ partial "download-prompt-span.html" . }}
+            {{ end }}
+            {{ partial "solicitation-span.html" . }}
+          {{- end }}
+        </footer>
+      </article>
+    </body>
+  </html>

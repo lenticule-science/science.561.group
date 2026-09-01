@@ -1,0 +1,20 @@
+#+title: mound
+#+begin_head
+#+ghe_schema: reference-0.1.2
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-23 Wed 22:54]
+#+roam_tags: term
+#+end_head
+
+#+name: definition
+A */mound/* is a type of earthwork where a great deal of [[file:soil.org][soil]] has been piled up in a shape, usually a circle, sometimes a line.
+#toc: headlines 2
+* Intrododuction
+* mound
+* Supplements
+** Record history
+   :LOGBOOK:
+   - Note taken on [2020-12-23 Wed 22:54] \\
+     Created
+   :END:

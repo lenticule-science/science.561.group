@@ -1,0 +1,43 @@
+\section{Mass is entrenched failure; the fundamental cycle is its load-bearing loop}
+
+This subgraph records the condensate-matter carrier.  \texttt{rigidity} counts
+Bose-condensed ($\top$) lenticules; \texttt{mass} is monotone in entrenched
+failures; and the load-bearing cycle is the order-$4$ rotation of FOUR.  The
+green witnesses live in
+\texttt{Infomaterial.Persistence.Aperiodic.CondensateMatter} and \texttt{Percolation}.
+
+\begin{theorem}[Each entrenched failure is one rest-mass quantum]\label{thm:mass-quantum}\lean{Infomaterial.Persistence.Aperiodic.mass_strict_of_entrench}\leanok\uses{thm:condensate-is-top}
+Driving one more lenticule into the condensed regime adds one unit of mass
+(\texttt{mass\_quantum\_condensed}); a floppy site adds none
+(\texttt{mass\_quantum\_floppy}); and adding material never sheds mass
+(\texttt{mass\_mono\_sublist}).
+\end{theorem}
+
+\begin{theorem}[The fundamental cycle is the local model of the load-bearing cycle]\label{thm:fundamental-cycle-local-h1}\lean{Infomaterial.Persistence.Aperiodic.fundamental_cycle_is_local_h1}\leanok\uses{thm:four-object, thm:mass-quantum, thm:percolation-threshold-law}
+FOUR carries the order-$4$ rotation \texttt{negSwap}, exchanging the two orders
+$\le_k,\le_t$ (\texttt{spin\_exchanges\_orders}).  One turn cycles
+$\bot \to t \to \top \to f \to \bot$
+(\texttt{spin\_four}, \texttt{fundamentalCycle\_complete}), entrenches one
+held-$\top$ (\texttt{one\_failure\_per\_cycle}), and gives a single
+load-bearing $\check H^1$ generator (\texttt{fundamentalNerve\_h1} $=1$).
+\end{theorem}
+
+\begin{theorem}[Mass is Landauer entropy: the informational Higgs quantum is one bit]\label{thm:mass-is-landauer}\lean{Infomaterial.Persistence.Aperiodic.fundamental_cycle_one_bit}\leanok\uses{thm:fundamental-cycle-local-h1}
+The cycle rank of load-bearing loops is Landauer entropy
+($\texttt{landauerBits}=\check H^1$).  One entrenched failure, one load-bearing
+cycle, and one Landauer bit coincide by
+\texttt{loadBearing\_iff\_landauer}, \texttt{landauer\_eq\_excess}, and
+\texttt{fundamental\_cycle\_one\_bit}.
+\end{theorem}
+
+\begin{theorem}[Continuum Ricci of an infobead --- a colimit in the hull]\label{thm:infobead-ricci}\notready\uses{thm:mass-is-landauer, thm:discrete-ricci-scalar}
+\emph{(Open frontier --- metric magnitude only.)} The bead's Landauer bits source
+the discrete curvature $\Box 1$; the discrete Ricci scalar is green
+(\cref{thm:discrete-ricci-scalar}: $\sum_x\mathtt{ricciScalar}\,x =
+2\,\mathtt{bdAction}$).  The continuum carrier is the tiling hull
+\texttt{InverseHull}, a Scott-continuous directed-join colimit
+(\texttt{ContinuumColimit}); \texttt{ricci\_continuum\_attained} gives the
+colimit interchange for the Ricci functional.  The residue is the metric
+magnitude: the $-\tfrac14\sqrt g$ Benincasa--Dowker weighting and the hull's
+frequency measure.
+\end{theorem}

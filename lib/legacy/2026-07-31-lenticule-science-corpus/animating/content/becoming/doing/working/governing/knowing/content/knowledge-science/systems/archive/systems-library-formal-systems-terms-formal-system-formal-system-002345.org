@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       3cb36663-8e9d-41a3-acaa-ea7eefc49673
+:NODE-RELATIONS: (([[id:0cfd72af-ade5-49a3-a367-ebf9fcdcf0da][system]] . [[id:ca7fc9c5-9820-4bf2-ba1f-6b90f323d7f4][formalism]]) ([[id:d7f2df4f-2bce-4780-8814-2d2b692c0118][formal]] . [[id:0cfd72af-ade5-49a3-a367-ebf9fcdcf0da][system]]) ([[id:0cfd72af-ade5-49a3-a367-ebf9fcdcf0da][system]] . [[id:d7f2df4f-2bce-4780-8814-2d2b692c0118][formal]]))
+:END:
+#+title: formal system
+#+date: [2025-08-29 Fri 19:30]
+

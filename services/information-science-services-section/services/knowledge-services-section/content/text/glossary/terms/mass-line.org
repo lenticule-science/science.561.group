@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       fa4169e7-41d1-4f0f-962f-3f3008e00ba9
+:END:
+#+title: mass line
+#+date: [2025-09-08 Mon 23:07]
+

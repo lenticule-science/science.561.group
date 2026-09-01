@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       12febee0-48ed-4191-a940-5b099b4fa293
+:END:
+#+title: behavior
+#+date: [2025-09-10 Wed 01:07]
+

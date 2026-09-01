@@ -1,0 +1,792 @@
+#+TITLE: Trustee Corner Records
+#+AUTHOR: emsenn
+#+TODO: TODO EXEC | DONE
+#+OPTIONS: c:t p:t d:t toc:nil num:nil
+#+DATE:
+#+LATEX_CLASS: log
+* Tenants
+** Unit 201
+*** Nicholas Teder
+   :PROPERTIES:
+   :LEASE_START_DATE: [2018-08-16 Thu]
+   :LEASE_END_DATE: [2019-08-15 Thu]
+   :DEPOSIT:  $650
+   :RENT:     $650
+   :END:
+** Unit 202
+** Unit 203
+*** Danner Morrison
+   :PROPERTIES:
+   :LEASE_START_DATE: [2017-08-01 Tue]
+   :LEASE_END_DATE: [2018-07-31 Tue]
+   :DEPOSIT:  $650
+   :RENT:     $685
+   :END:
+** Unit 204
+*** Amanda Barr
+   :PROPERTIES:
+   :LEASE_START_DATE: [2010-03-01 Mon]
+   :LEASE_END_DATE: [2011-02-28 Mon]
+   :DEPOSIT:  $500
+   :RENT:     $685
+   :END:
+** Unit 205
+*** Colin Thomson
+   :PROPERTIES:
+   :LEASE_START_DATE: [2014-06-15 Sun]
+   :LEASE_END_DATE: [2015-06-15 Mon]
+   :DEPOSIT:  $575
+   :RENT:     $685
+   :END:
+** Unit 206
+*** Evelyn Michele Richards Natale
+   :PROPERTIES:
+   :LEASE_START_DATE: [2018-10-01 Mon]
+   :LEASE_END_DATE: [2019-10-01 Tue]
+   :DEPOSIT:  $650
+   :RENT:     $650
+   :END:
+** Unit 207
+*** Jason Hoey
+   :PROPERTIES:
+   :LEASE_START_DATE: [2018-08-01 Wed]
+   :LEASE_END_DATE: [2019-08-01 Thu]
+   :DEPOSIT:  $650
+   :RENT:     $650
+   :END:
+** Unit 208
+*** Antonio La'Mont Currie
+   :PROPERTIES:
+   :LEASE_START_DATE: [2019-01-01 Tue]
+   :LEASE_END_DATE: [2019-12-31 Tue]
+   :DEPOSIT:  $685
+   :RENT:     $685
+   :END:
+** Unit 301
+*** Katie Costa
+   :PROPERTIES:
+   :LEASE_START_DATE: [2013-03-01 Fri]
+   :LEASE_END_DATE: [2014-02-28 Fri]
+   :DEPOSIT:  $575
+   :RENT:     $685
+   :END:
+** Unit 302
+*** Joey Watson
+   :PROPERTIES:
+   :LEASE_START_DATE: [2017-09-01 Fri]
+   :LEASE_END_DATE: [2018-09-01 Sat]
+   :DEPOSIT:  $650
+   :RENT:     $685
+   :END:
+** Unit 303
+*** Olivia Neal
+   :PROPERTIES:
+   :LEASE_START_DATE: [2018-08-01 Wed]
+   :LEASE_END_DATE: [2019-08-01 Thu]
+   :DEPOSIT:  $650
+   :RENT:     $650
+   :END:
+** Unit 304
+*** Saeed Blake
+   :PROPERTIES:
+   :LEASE_START_DATE: [2017-09-11 Mon]
+   :LEASE_END_DATE: [2018-09-11 Tue]
+   :DEPOSIT:  $650
+   :RENT:     $685
+   :END:
+** Unit 305
+** Unit 306
+*** Gregory Ryan Ross
+   :PROPERTIES:
+   :LEASE_START_DATE: [2018-08-01 Wed]
+   :LEASE_END_DATE: [2019-07-31 Wed]
+   :DEPOSIT:  $650
+   :RENT:     $650
+   :END:
+** Unit 307
+*** Robert Mercadante
+   :PROPERTIES:
+   :LEASE_START_DATE: [2016-05-16 Mon]
+   :LEASE_END_DATE: [2017-05-15 Mon]
+   :DEPOSIT:  $625
+   :RENT:     $685
+   :END:
+** Unit 308
+*** Christopher David Allen
+   :PROPERTIES:
+   :LEASE_START_DATE: [2018-11-14 Wed]
+   :LEASE_END_DATE: [2019-11-14 Thu]
+   :DEPOSIT:  $650
+   :RENT:     $650
+   :END:
+
+* Logs
+** 2018
+*** 2018-11 November
+**** 2018-11-01 Thursday
+#+BEGIN_SRC ledger :exports both :noweb yes :ledger yes
+2018/11/01 * Trustee Corner Deposit
+  Unit 101:Andromeda Training  -$2364.54 ; Chk# 7885 2018-11-01
+  Unit 103:Fernando Cruiz       -$425.00 ; Chk# 1501 2018-11-05
+  Unit 105:Crooks Corner        -$450.00 ; Chk# 22183 2018-11-01
+  Unit 201:Nicholas Teder       -$650.00 ; Chk# 162 2018-10-29
+  Unit 202:Esther Davis         -$650.00 ; Chk# 208 2018-11-01
+  Unit 203:Danner Morrison      -$650.00 ; Chk# 2002 2018-11-04
+  Unit 204:Amanda Barr          -$650.00 ; Chk# 104 2018-11-05
+  Unit 205:Colin Thomson        -$650.00 ; Chk# 104 2018-11-05
+  Unit 206:Michele Natale       -$650.00 ; Chk# 328 2018-11-05
+  Unit 207:Jason Hoey           -$650.00 ; Chk# 1087 2018-11-04
+  Unit 208:John Joseph          -$650.00 ; Chk# 1292 2018-11-01
+  Unit 301:Katie Costa          -$650.00 ; Chk# 1393 2018-11-05
+  Unit 302:Joey Watson          -$650.00 ; Chk# 1138 2018-11-04
+  Unit 303:Olivia Neal          -$650.00 ; Chk# 106 2018-11-05
+  Unit 304:Saeed Blake          -$650.00 ; MO# 25120126350 2018-11-01
+  Unit 305:Lilah Poor           -$650.00 ; cash
+  Unit 307:R. Mercandante       -$650.00 ; MO# 237718 2018-11-5
+  Unit 308:Harry Ewell          -$325.00 ; Chk# 207 2018-11-02
+                                           ; (half month's rent)
+  Trustee Corner Income
+#+END_SRC
+*** 2018-12 December
+**** 2018-12-01 Saturday
+#+BEGIN_SRC ledger
+2018/12/01 * Trustee Corner Deposit
+  Unit 101:Andromeda Training      -$2362.54 ; Chk# 7890 2018-11-28
+  Unit 103:Fernando Cruz            -$425.00 ; Chk# 1504 2018-12-04
+  Unit 105:Crooks Corner            -$450.00 ; Chk# 22377 2018-12-05
+  Unit 201:Nicholas Teder           -$650.00 ; Chk# 163 2018-11-30
+  Unit 202:Esther Davis             -$325.00 ; Chk# 209 2018-12-01
+  Unit 203:Danner Morrison          -$650.00 ; Chk# 2006 2018-04-18
+  Unit 204:Amanda Barr              -$650.00 ; Chk# 3240 2018-12-01
+  Unit 205:Colin Thomson            -$685.00 ; Chk# 107 2018-12-04
+  Unit 206:Michele Natale           -$650.00 ; Chk# 341 2018-12-05
+  Unit 207:Jason Hoey               -$650.00 ; Chk# 1089 2018-12-02
+  Unit 208:John Joseph              -$650.00 ; Chk# 1296 2018-12-05
+  Unit 301:Katie Costa              -$650.00 ; Chk# 1300 2018-12-03
+  Unit 302:Joey Watson              -$650.00 ; Chk# 1139 2018-12-02
+  Unit 303:Olivia Neal              -$650.00 ; CHk# 107 2018-12-05
+  Unit 304:Saeed Blake              -$650.00 ; MO# 25120143382 2018-12-01
+  Unit 306:Gregory Ryan Ross        -$475.00 ; MO# 17-842984843 2018-12-05
+  Unit 306:Gregory Ryan Ross        -$200.00 ; MO# 17-842985042
+                                             ; November rent & late fee
+  Unit 308:Christopher David Allen  -$975.00 ; MO# 5400107454 2018-11-13
+                                             ; $650 deposit, $325 half-November
+  Unit 308:Christopher David Allen  -$500.00 ; MO# 5300377654
+                                             ; discounted cleaning
+  Trustee Corner Income
+#+END_SRC
+
+#+RESULTS:
+#+begin_example
+           $12897.54  Trustee Corner Income
+           $-2362.54  Unit 101:Andromeda Training
+            $-425.00  Unit 103:Fernando Cruz
+            $-450.00  Unit 105:Crooks Corner
+            $-650.00  Unit 201:Nicholas Teder
+            $-325.00  Unit 202:Esther Davis
+            $-650.00  Unit 203:Danner Morrison
+            $-650.00  Unit 204:Amanda Barr
+            $-685.00  Unit 205:Colin Thomson
+            $-650.00  Unit 206:Michele Natale
+            $-650.00  Unit 207:Jason Hoey
+            $-650.00  Unit 208:John Joseph
+            $-650.00  Unit 301:Katie Costa
+            $-650.00  Unit 302:Joey Watson
+            $-650.00  Unit 303:Olivia Neal
+            $-650.00  Unit 304:Saeed Blake
+            $-675.00  Unit 306:Gregory Ryan Ross
+           $-1475.00  Unit 308:Christopher David Allen
+--------------------
+                   0
+#+end_example
+
+**** 2018-12-31 Monday
+***** Communication
+| Time                   | Person(s)                 | Topic(s)                |
+|------------------------+---------------------------+-------------------------|
+| <2018-12-31 Mon 07:30> | Amanda Barr, Olivia Blake | Saeed Blake noise[fn:1] |
+** 2019
+*** 2019-01 January
+**** 2019-01-01 Tuesday
+***** Communication
+| Time                   | Person(s)            | Topic(s)                                        |
+|------------------------+----------------------+-------------------------------------------------|
+| <2019-01-01 Tue 06:00> | Saeed Blake, written | Posted Notice of Intent to Terminate in 30 days |
+**** 2019-01-02 Wednesday
+| Time | Person(s)                   | Method    | Topic(s)                                                      |
+|------+-----------------------------+-----------+---------------------------------------------------------------|
+| 1100 | Saeed Blake, phone          | Phone     | Explained that he's expected to move by Jan 30                |
+| 1420 | Saeed Blake, Antonio Currie | in-person | Overheard Saeed call either Amanda Barr or me a "white bitch" |
+**** 2019-01-03 Thursday
+***** Maintenance
+| Time                    | Unit     | Task       |
+|-------------------------+----------+------------|
+| <2019-01-03 Thu 13:12>  | Unit 208 | New blinds |
+#+BEGIN_SRC ledger :noweb :tangle yes
+2019/01/03 * Blinds for Unit 208
+  Inventory:Supplies:blinds                 -1
+  Expenses:Maintenance:Unit 208
+#+END_SRC
+**** 2019-01-05 Saturday
+***** Communication
+| Time                   | Person(s)      | Topic(s)                      |
+|------------------------+----------------+-------------------------------|
+| <2019-01-05 Sat 11:30> | Michele Natale | Gregory Ryan Ross noise[fn:2] |
+| <2019-01-05 Sat 13:20> | Saeed Blake    | Rent payment[fn:3]            |
+***** References
+****** transcript-2018-01-05-saeed-blake-texts
+#+BEGIN_EXAMPLE
+EMSENN: This is emsenn. Remember, today's the last day to get in rent
+without a late fee.
+
+SAEED: Remember what you out on my door
+
+SAEED: Stop harassing me, I told you I'm dealing with the Chen's
+period
+
+SAEED: I've spoken with his wife already, do not contact me again
+
+EMSENN: I haven't heard from the Chan's about communicating with you
+directly. I need to be able to communicate with you to do the job
+they've hired me to do, and you need to communicate with me as a
+tenant in this building.
+
+As I understand it, the rental agreement ends at the end of January,
+but that does not affect the rent due for this month. If the Chan's
+instruct me otherwise, that can change, but they have not.
+
+SAEED: That's fine I have
+
+SAEED: Now it's the weekend, so again leave me alone
+
+EMSENN: Apologies for texting again, but I've spoken with the Chans,
+who said they haven't spoken with you, but offered to call you if you
+need them to explain that I am the property manager and that your
+communications regarding your rental agreements need to be with me.
+
+Please deposit your rent for January 2019, $685, into the metal box
+adjacent to Unit 104 by 5:30pm today, to avoid a late fee of $25 being
+added to the amount due.
+
+SAEED: Until I speak to them again expect nothing. I showed my papers
+to a lawyer and because of the termination of contract on the first, I
+owe nothing if expected to leave on the 30th. You still owe me
+security deposit because it is unrelated to the reason for my
+dismissal. I will sue you and the bar for discrimination. There is no
+crime committed. You have not witness any illegal activities, you have
+called the police and not acted like a manager. Giving due process,
+you are wrong.
+
+SAEED: I have more resources than you realize.
+
+EMSENN: You're correct that you're owed a security deposit after you
+vacate the premises, however you are still required to pay rent for
+this month.
+
+SAEED: You don't speak legalese. What you put on my door is a
+termination of contract. If I go to court I'll be granted the premises
+until March. Again be careful
+
+EMSENN: As I conveyed in our phone conversation, the agreement allows
+termination with 30 days written notice without cause. I have not
+claimed to have witnessed any illegal activities.
+
+As it says, the notice is to inform you of an intent to end the
+contract in 30 days, which is allowed under the agreement, under the
+section, "Lease Expiration." I can provide you with another copy if
+your lease if needed.
+
+I'm not sure what you mean by "be careful."
+
+SAEED: You will lose that is what be careful means. We are done here,
+have my money by the 29th. Badger me no more and you won't be dragged
+through another month.
+
+EMSENN: I'm sorry you consider this badgering, but I need to do my
+part to make it clear that you are required to pay your rent for this
+month, and will be expected to be moved out by the 30th, at which
+point you will receive your security deposit, less any fee for damages
+to the premises, as explained in the rental agreement you made with
+FJC Trust.
+
+SAEED: Good bye speak to me no further
+#+END_EXAMPLE
+**** 2019-01-06 Sunday
+***** Communication
+| Time                   | Person(s)      | Topic(s) |
+|------------------------+----------------+----------|
+| <2019-01-06 Sun 13:00> | Michele Natale | Gregory Ryan Ross noise[fn:4] |
+**** 2019-01-07 Monday
+***** Bookkeeping
+#+BEGIN_SRC ledger :tangle trustee-corner.ledger :cmdline bal "Trustee Corner Income"
+2019/02/06 * Trustee Corner Deposit
+  Unit 101:Andromeda Training  -$2364.54
+  Unit 103:Fernando Cruz        -$425.00
+  Unit 105:Crooks Corner        -$450.00
+  Unit 201:Nicholas Teder       -$650.00
+  Unit 203:Danner Morrison      -$650.00 ; Owes $35
+  Unit 204:Amanda Barr          -$650.00
+  Unit 205:Colin Thomson        -$685.00
+  Unit 206:Michele Natale       -$650.00
+  Unit 207:Jason Hoey           -$650.00
+  Unit 208:Antonio Curie        -$342.50
+  Unit 301:Katie Costa          -$685.00
+  Unit 302:Joey Watson          -$650.00
+  Unit 303:Olivia Neal          -$650.00
+  Unit 307:R. Mercandante       -$650.00
+  Unit 307:R. Mercandante       -$650.00
+  Trustee Corner Income
+#+END_SRC
+
+#+RESULTS:
+:            $10802.04  Trustee Corner Income
+
+****** Bank Trip
+
+ #+BEGIN_SRC ledger :noweb yes :tangle yes
+ 2019/01/07 * Bank Trip
+   Expenses:Mileage                         16.9  mi   @  $0.545
+   Accounts Payable:Esther Davis
+ #+END_SRC
+***** Communication
+| Time                   | Person(s)         | Topic(s) |
+|------------------------+-------------------+----------|
+| <2019-01-07 Mon 09:15> | Gregory Ryan Ross | Michele Natale confrontation[fn:5] |
+**** 2019-01-09 Wednesday
+***** Bookkeeping
+****** Maintain Log
+       :LOGBOOK:
+       CLOCK: [2019-01-10 Thu 15:28]--[2019-01-10 Thu 17:35] =>  2:07
+       :END:
+***** Communication
+****** Received Voicemail from Francis Chan
+       :PROPERTIES:
+       :END:
+   :LOGBOOK:
+   CLOCK: [2019-01-09 Wed 13:43]--[2019-01-09 Wed 13:44] =>  0:01
+   :END:
+ Received a call from Francis Chan saying Andromeda was upset about the
+ leak. He said to call him back to set up when he could come visit
+ about that and talk to them about raising their rent.
+****** Received Text from Gregory Ryan Ross
+Gregory Ryan Ross texted asking to reschedule for ~1830h, I confirmed.
+****** Called Francis Chan
+Called Francis Chan back about Petra's ceiling.
+****** Received Text from Gregory Ryan Ross
+Gregory Ryan Ross rescheduled our appointment saying he'd text in the
+morning to reschedule.
+***** Repairs
+****** DONE Fixed Unit 204's Leaky Toilet
+       :PROPERTIES:
+       :END:
+      :LOGBOOK:
+      CLOCK: [2019-01-09 Wed 16:25]--[2019-01-09 Wed 17:30] =>  1:05
+      :END:
+Reseated the toilet in Unit 204 on a new, even taller and fatter wax ring.
+**** 2019-01-10 Thursday
+***** Shopping
+      :LOGBOOK:
+      CLOCK: [2019-01-10 Thu 12:20]--[2019-01-10 Thu 13:18] =>  0:58
+      :END:
+#+BEGIN_SRC ledger :noweb yes :tangle yes
+2019/01/10 * Harris Teeter
+  Inventory:Materials:paper towels           6         @@ $6.49
+  Inventory:Materials:toilet paper          12         @@ $6.49
+  Expenses:Mileage                           0.6  mi   @@ $0.545
+  Accounts Payable:Esther Davis
+#+END_SRC
+***** Routine Maintenance
+      :LOGBOOK:
+      CLOCK: [2019-01-10 Thu 11:21]--[2019-01-10 Thu 11:31] =>  0:10
+      CLOCK: [2019-01-10 Thu 10:12]--[2019-01-10 Thu 10:28] =>  0:16
+      :END:
+****** Clean Lobby Restrooms
+       :LOGBOOK:
+       CLOCK: [2019-01-10 Thu 10:28]--[2019-01-10 Thu 11:19] =>  0:51
+       :END:
+**** 2019-01-10 Friday
+***** Communications
+      :LOGBOOK:
+      CLOCK: [2019-01-11 Fri 11:52]--[2019-01-11 Fri 11:55] =>  0:03
+      :END:
+| Time                   | Person(s)     | Reason         |
+|------------------------+---------------+----------------|
+| <2019-01-11 Fri 11:51> | Fernando Cruz | Just saying hi |
+**** 2019-01-12 Saturday
+***** Bookkeeping
+****** Log Maintenance
+       :LOGBOOK:
+       CLOCK: [2019-01-12 Sat 18:54]--[2019-01-12 Sat 19:30] =>  0:36
+       :END:
+***** Communication
+      :LOGBOOK:
+      CLOCK: [2019-01-12 Sat 22:34]--[2019-01-12 Sat 22:56] =>  0:22
+      :END:
+| Time                   | Tenant/Unit              | Topic                                                                                               |
+|------------------------+--------------------------+-----------------------------------------------------------------------------------------------------|
+| <2019-01-12 Sat 13:40> | Fernando Cruz, Unit 103  | Loiterers by recycling last night, burnt out lightbulbs above it.                                   |
+| <2019-01-12 Sat 22:31> | Fernando Cruz, Unit 103  | Received thank you note about putting in new lights                                                 |
+| <2019-01-12 Sat 22:55> | Michele Natale, Unit 206 | Received a noise complaint about Unit 306, but then saw Gregory Ryan Ross getting home so who knows |
+***** Maintenance
+      :LOGBOOK:
+      CLOCK: [2019-01-12 Sat 18:21]--[2019-01-12 Sat 18:44] =>  0:23
+      :END:
+| Time                   | Task                                   |
+|------------------------+----------------------------------------|
+| <2019-01-12 Sat 18:44> | Replace lightbulbs in walkway overhang |
+***** Shopping
+      :LOGBOOK:
+      CLOCK: [2019-01-12 Sat 16:14]--[2019-01-12 Sat 18:12] =>  1:58
+      :END:
+#+BEGIN_SRC ledger :noweb yes :tangle yes
+2019/01/12 * Walmart
+  Inventory:Tools:snow shovel                1         @  ($17.83*1.0675)
+  Inventory:Materials:road salt              4    bags @  ($4.84*1.0675)
+  Expenses:Mileage                           8.2  mi   @@ $0.545
+  Accounts Payable:Esther Davis
+#+END_SRC
+***** Tenant Services
+      :LOGBOOK:
+      CLOCK: [2019-01-12 Sat 05:39]--[2019-01-12 Sat 05:48] =>  0:09
+      :END:
+| Time                   | Tenant/Unit       | Service     |
+| <2019-01-12 Sat 05:48> | Antonio, Unit 208 | Door unlock |
+**** 2019-01-13 Sunday
+***** Bookkeeping
+****** Conduct Inventory
+#+BEGIN_SRC ledger :noweb yes :ledger yes
+2019/01/13 * Inventory
+  Inventory:Keys:lobby lockbox              1 ; Code: 4589
+#+END_SRC
+***** Communication
+| Time                   | Person(s)         | Topic(s) |
+|------------------------+-------------------+----------|
+| <2019-01-13 Sun 14:21> | Gregory Ryan Ross | Noise/Michele[fn:6] |
+**** 2019-01-16 Wednesday
+***** Fire Alarm System Inspection
+      :LOGBOOK:
+      CLOCK: [2019-01-16 Wed 10:58]--[2019-01-16 Wed 12:34] =>  1:36
+      :END:
+**** 2019-01-30 Wednesday
+***** Communication
+| Time | Person(s)    | Method    | Topic                        |
+|------+--------------+-----------+------------------------------|
+| 1000 | Saeed Blake  | In-person | Saeed's move-out[fn:8]       |
+| 1200 | Francis Chan | Phone     | Saeed Blake's move-out[fn:9] |
+- Note, Saeed left before coming to talk to me again.
+**** 2019-01-31 Thursday
+***** Communication
+| Time | Person(s)   | Method    | Topic                   |
+|------+-------------+-----------+-------------------------|
+| 1100 | Saeed Blake | In-person | Saeed's move-out[fn:10] |
+- Note, Saeed left before coming to talk to me again.
+*** 2019-02 February
+**** 2019-02-01 Friday
+***** Communication
+| Time | Person(s)                        | Method | Topic                  |
+|------+----------------------------------+--------+------------------------|
+| 1230 | Marcia Quick (Saaed Blake's mom) | Phone  | Saeed's move out[fn:7] |
+***** Maintenance
+      :LOGBOOK:
+      CLOCK: [2019-02-01 Wed 11:52]--[2019-02-01 Wed 14:34] =>  2:42
+      :END:
+- Cleaned up lots of Unit 304 (Saeed's) with Esther's help.
+**** 2019-02-02 Saturday
+***** Communication
+
+**** 2019-02-04 Monday
+***** Communication
+| Time | Person(s)   | Method    | Topic                         |
+|------+-------------+-----------+-------------------------------|
+| 1230 | Saaed Blake | Voicemail | Requested for mailing address |
+**** 2019-02-06 Wednesday
+***** Bookkeeping
+#+BEGIN_SRC ledger :tangle trustee-corner.ledger :cmdline bal "Trustee Corner Income"
+2019/02/06 * Trustee Corner Deposit
+  Unit 101:Andromeda Training  -$2364.54 ; Chk# 7902 2019-01-31
+  Unit 103:Fernando Cruz        -$425.00 ; Chk# 1514 2018-11-26
+                                         ; February Rent
+  Unit 103:Fernando Cruz        -$425.00 ; Chk# 1521 2019-02-06
+                                         ; March Rent
+  Unit 105:Crooks Corner        -$450.00 ; Chk# 1123 2019-02-02
+  Unit 201:Nicholas Teder       -$650.00 ; Chk# 164  2019-01-01
+  Unit 201:Nicholas Teder       -$650.00 ; Chk# 166  2019-01-31
+  Unit 203:Danner Morrison       -$35.00 ; Chk# 2004 2019-01-07
+  Unit 203:Danner Morrison      -$685.00 ; Chk# 2003 2019-01-03
+  Unit 204:Amanda Barr          -$650.00 ; Chk# 3242 2019-02-01
+  Unit 205:Colin Thomson        -$685.00 ; Chk# 112  2019-02-03
+  Unit 206:Michele Natale       -$650.00 ; Chk# 367  2019-02-05
+  Unit 207:Jason Hoey           -$650.00 ; Chk# 1100 2019-02-05
+  Unit 208:Antonio Curie        -$342.50 ; MO#17-860060893
+  Unit 208:Antonio Curie        -$342.50 ; MO#17-860060894
+  Unit 301:Katie Costa          -$685.00 ; Chk# 1411 2019-02-05
+  Unit 302:Joey Watson          -$650.00 ; Chk# 1141 2019-02-05
+  Unit 303:Olivia Neal          -$650.00 ; Chk# 111  2019-02-02
+  Unit 307:R. Mercandante       -$650.00 ; Chk# 251989 2019-02-05
+  Unit 307:R. Mercandante       -$650.00 ; Chk# 247174 2019-01-07
+  Trustee Corner Income
+#+END_SRC
+
+#+RESULTS:
+:            $11639.54  Trustee Corner Income
+***** Communications
+| Time | Person(s)  | Method      | Topic |
+|------+------------+-------------+-------|
+| 1030 | Jason Hoey | Missed Call | Low water pressure in #207 |
+
+**** 2019-03-06 Wednesday
+***** Bookkeeping
+#+BEGIN_SRC ledger :tangle trustee-corner.ledger :cmdline bal "Trustee Corner Income"
+2019/03/06 * Trustee Corner Deposit
+  Unit 101:Andromeda Training  -$2364.54 ; Chk# 7911 2019-02-28
+  Unit 105:Crooks Corner        -$450.00 ; Chk# 1249 2019-03-01
+  Unit 201:Nicholas Teder       -$650.00 ; Chk# 167  2019-03-02
+  Unit 202:Jesse Hall          -$1002.98 ; Chk# 411  2019-02-15
+  Unit 202:Jesse Hall           -$685.00 ; Chk# 4348425 2019-03-05
+  Unit 203:Danner Morrison      -$685.00 ; Chk# 2002 2019-03-04
+  Unit 204:Amanda Barr          -$650.00 ; Chk# 3247 2019-03-01
+  Unit 205:Colin Thomson        -$685.00 ; Chk# 113  2019-03-03
+  Unit 206:Michele Natale       -$650.00 ; Chk# 377  2019-03-05
+  Unit 208:Antonio Curie        -$342.50 ; MO#17-860063050
+  Unit 208:Antonio Curie        -$342.50 ; MO#17-860061430
+  Unit 301:Katie Costa          -$685.00 ; Chk# 1412 2019-03-03
+  Unit 302:Joey Watson          -$650.00 ; Chk# 1142 2019-03-05
+  Unit 303:Olivia Neal          -$650.00 ; Chk# 113  2019-03-05
+  Unit 307:R. Mercandante       -$650.00 ; Chk# 256581 2019-03-04
+  Unit 308:Christopher Allen    -$650    ; Cash
+  Trustee Corner Income
+#+END_SRC
+
+#+RESULTS:
+:            $11107.52  Trustee Corner Income
+* Plans
+** Routine
+*** Clocktable
+ #+BEGIN: clocktable :maxlevel 4 :scope file
+ #+CAPTION: Clock summary at [2018-10-27 Sat 16:21]
+ | Headline                               |   Time |      |      |
+ |----------------------------------------+--------+------+------|
+ | *Total time*                           | *1:59* |      |      |
+ |----------------------------------------+--------+------+------|
+ | Daily                                  |   0:37 |      |      |
+ | \emsp Morning survey                   |        | 0:37 |      |
+ | \emsp\emsp TODO Walk the property      |        |      | 0:28 |
+ | \emsp\emsp TODO Check the bathrooms    |        |      | 0:09 |
+ | Weekly                                 |   0:54 |      |      |
+ | \emsp Sweeping                         |        | 0:54 |      |
+ | \emsp\emsp TODO Sweep Merritt sidewalk |        |      | 0:07 |
+ | \emsp\emsp TODO Sweep stairs           |        |      | 0:47 |
+ | Annual                                 |   0:28 |      |      |
+ | \emsp TODO Fire extinguisher servicing |        | 0:28 |      |
+ #+END:
+*** Daily
+*** Weekly
+**** Sweeping
+***** Sweep Rosemary sidewalk
+     SCHEDULED: <2018-11-01 Thu 09:20 .+1w>
+     - State "DONE"       from "TODO"       [2018-10-25 Thu 16:20]
+     :PROPERTIES:
+     :LAST_REPEAT: [2018-10-25 Thu 16:20]
+     :Effort:   0:20
+     :END:
+     :LOGBOOK:
+     CLOCK: [2018-10-25 Thu 15:57]--[2018-10-25 Thu 16:20] =>  0:23
+     :END:
+***** Sweep Merritt sidewalk
+     SCHEDULED: <2018-11-01 Thu 09:20 .+1w>
+     - State "DONE"       from "TODO"       [2018-10-25 Thu 16:14]
+     :LOGBOOK:
+     CLOCK: [2018-10-25 Thu 16:07]--[2018-10-25 Thu 16:14] =>  0:07
+     :END:
+     :PROPERTIES:
+     :LAST_REPEAT: [2018-10-25 Thu 16:14]
+     :Effort:   0:40
+     :END:
+***** Sweep parking lot
+     SCHEDULED: <2018-11-03 Sat 09:20 .+1w>
+     - State "DONE"       from "TODO"       [2018-10-27 Sat 15:18]
+     :PROPERTIES:
+     :LAST_REPEAT: [2018-10-27 Sat 15:18]
+     :Effort:   0:50
+     :END:
+     :LOGBOOK:
+     CLOCK: [2018-10-27 Sat 15:13]--[2018-10-27 Sat 15:28] =>  0:15
+     :END:
+***** Sweep stairs
+     - State "DONE"       from "TODO"       [2018-10-27 Sat 16:14]
+     :LOGBOOK:
+     CLOCK: [2018-10-27 Sat 15:26]--[2018-10-27 Sat 16:13] =>  0:47
+     :END:
+     SCHEDULED: <2018-11-03 Sat 09:20 .+1w>
+     :PROPERTIES:
+     :LAST_REPEAT: [2018-10-27 Sat 16:14]
+     :Effort:   0:50
+     :END:
+***** Sweep lobby
+     SCHEDULED: <2018-11-04 Sun 09:20 .+1w>
+     - State "Swept"      from "Sweep"      [2018-10-28 Sun 10:10]
+     CLOCK: [2018-10-28 Sun 09:59]--[2018-10-28 Sun 10:10] =>  0:11
+     :PROPERTIES:
+     :Effort:   0:20
+     :LAST_REPEAT: [2018-10-28 Sun 10:10]
+     :END:
+**** Bathrooms
+***** Clean west bathroom
+     SCHEDULED: <2018-11-01 Thu 09:20 .+3d>
+     - State "Cleaned"    from "Clean"      [2018-10-29 Mon 12:01]
+     :PROPERTIES:
+     :Effort:   15
+     :LAST_REPEAT: [2018-10-29 Mon 12:01]
+     :END:
+***** Clean east bathroom
+     SCHEDULED: <2018-10-31 Wed 09:20 .+3d>
+     - State "Cleaned"    from "Clean"      [2018-10-28 Sun 10:11]
+     - State "DONE"       from "TODO"       [2018-10-25 Thu 16:19]
+     :PROPERTIES:
+     :LAST_REPEAT: [2018-10-28 Sun 10:11]
+     :Effort:   0:15
+     :END:
+     :LOGBOOK:
+     CLOCK: [2018-10-28 Sun 10:10]--[2018-10-28 Sun 10:10] =>  0:00
+     :END:
+**** Clean laundry room
+    SCHEDULED: <2018-10-31 Wed 10:00 .+3d>
+    - State "Cleaned"    from "Clean"      [2018-10-28 Sun 15:18]
+    - State "DONE"       from "TODO"       [2018-10-25 Thu 16:20]
+    :PROPERTIES:
+    :LAST_REPEAT: [2018-10-28 Sun 15:18]
+    :Effort:   0:20
+    :END:
+**** Garbage
+***** Prop open dumpster
+     SCHEDULED: <2018-10-31 Wed 19:30 ++1w>
+     - State "DONE"       from "TODO"       [2018-10-25 Thu 14:57]
+     :PROPERTIES:
+     :LAST_REPEAT: [2018-10-25 Thu 14:57]
+     :Effort:   3
+     :END:
+***** Close dumpster
+     SCHEDULED: <2018-11-01 Thu 08:50 .+1w>
+     - State "DONE"       from "TODO"       [2018-10-25 Thu 16:19]
+     :PROPERTIES:
+     :LAST_REPEAT: [2018-10-25 Thu 16:19]
+     :Effort:   0:03
+     :END:
+ Make sure the dumpster has been emptied.
+***** Sort recycling
+     SCHEDULED: <2018-10-30 Tue 10:00 .+3d>
+     - State "DONE"       from "TODO"       [2018-10-27 Sat 12:35]
+     :PROPERTIES:
+     :LAST_REPEAT: [2018-10-27 Sat 12:35]
+     :Effort:   5
+     :END:
+**** Plant care
+***** Water lobby plants
+***** Water laundry room plants
+**** Seasonal
+***** Spring
+***** Summer
+****** INVALID Water outdoor plants
+      - State "DONE"       from "TODO"       [2018-10-27 Sat 16:23]
+****** INVALID Weedeat
+***** Fall
+***** Winter
+****** INVALID Salt the walkways
+*** Monthly
+**** Handle rent
+***** Collate rent payments
+     SCHEDULED: <2018-11-05 Mon 08:10 +1m>
+     :PROPERTIES:
+     :Effort:   1:00
+     :END:
+***** Deposit rent payments
+     SCHEDULED: <2018-11-06 Tue 11:00 +1m>
+     :PROPERTIES:
+     :Effort:   1:30
+     :END:
+**** Account laundry
+    SCHEDULED: <2018-11-03 Sat +1m>
+    :PROPERTIES:
+    :Effort:   40
+    :END:
+**** Roll quarters
+    SCHEDULED: <2018-11-03 Sat +1m>
+    :PROPERTIES:
+    :Effort:   40
+    :END:
+*** Quarterly
+***** Conduct unit exams
+     :PROPERTIES:
+     :Effort:   8:00
+     :END:
+ air conditioner, hot water heater, under sinks, bathtub, toilet, windows,
+***** Conduct inventory
+*** Annual
+**** Seasonal
+***** Conduct spring routine changeover
+     SCHEDULED: <2019-03-15 Fri +1y>
+***** Conduct summer routine changeover
+     SCHEDULED: <2019-06-15 Sat +1y>
+***** Conduct Setup fall routine changeover
+     SCHEDULED: <2019-09-15 Sun +1y>
+***** Conduct Setup winter routine changeover
+     SCHEDULED: <2019-12-15 Sun +1y>
+**** Conduct Fire extinguisher servicing
+    SCHEDULED: <2019-10-24 Thu 10:00 +1y>
+    - State "DONE"       from "TODO"       [2018-10-24 Wed 11:32]
+    :PROPERTIES:
+    :LAST_REPEAT: [2018-10-24 Wed 21:43]
+    :Effort:   1:30
+    :END:
+    :LOGBOOK:
+    CLOCK: [2018-10-24 Wed 10:54]--[2018-10-24 Wed 11:22] =>  0:28
+    :END:
+** Tenant Prospecting
+*** Brennan Mullin
+   SCHEDULED: <2019-05-15 Wed>
+Interested in renting a unit once his lease is up.
+https://www.messenger.com/t/bgmullin
+* Footnotes
+
+[fn:10] Told Saeed he needed to give me a mailing address for his new
+place and be finished moving out by today. He left without doing
+either.
+
+[fn:9] Talked to Francis on the phone about Saeed, who confirmed what
+I'd looked up online about being able to keep the deposit for back
+rent.
+
+[fn:8] Saeed came by to tell me he was moving out. I asked him if he
+had January's rent. He said he didn't owe rent, because he was asked
+to move. I told him that was incorrect. He complained about how I
+treated him, and that I didn't have a friendly relationship with him
+like he had with Miss Susie, the previous property manager. I told him
+I would talk to the Chans about it, but was pretty sure he owed rent.
+
+[fn:7] When I talked to Marcia (I think that's her first name), she
+told me Saeed was "gone," and that he'd moved out. I told her I needed
+to have a mailing address for him and asked if she would tell him to
+call me, and she said she would.
+
+[fn:6] Gregory Ryan Ross expressed frustration with Michele's
+complaints, and offered to move. I'd like to move all food service
+people to the north wing of the second floor, since that's above an
+office, but since there are 3-4 who work third shift on the south wing
+of the third floor, it might make more sense to move Michele.
+
+[fn:5] Gregory Ryan Ross complained about how confrontational Michele
+was when discussing his noisiness with him.
+
+[fn:4] Michele complained about Gregory Ryan Ross being noisy again.
+
+[fn:3] See [[transcript-2018-01-05-saeed-blake-texts]]
+
+[fn:2] Michele called to say that Gregory Ryan Ross was making a lot
+of noise last night, from 03-0500h.
+
+[fn:1] Amanda and Olivia, separately, told me that Saeed Blake
+harassed customers at Bowbar, threw bottles out his window into the
+parking lot, two tenants said they felt unsafe because of it. Also
+heard he threatened to burn the building down, and that the police
+were called to the premises. I observed that his car was parked across
+ramp to the 1st floor and the property manager's space.

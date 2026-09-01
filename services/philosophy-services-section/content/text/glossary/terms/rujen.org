@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       242cf429-065f-43ab-8df5-8d99619facd3
+:END:
+#+title: Rujen
+#+date: [2025-07-21 Mon 14:35]
+#+index: Rujen
+Rujen is a [[id:de595b66-d89d-41d6-87fc-724482ec16ec][music artist]].
+* Tracks
+** "Psychic Sister / Spider Silk"
+:PROPERTIES:
+:ID:       81450ea7-ac0a-4928-9e3a-d7a5c914bed0
+:END:
+[[id:3e4481fd-c3f3-499b-8c74-9fec05bcc8c4][music track]]
+[[id:359bf87b-2ae0-4149-a186-1c9ef8d33dee][psychedelic]], [[id:425e0762-97cb-4637-a102-50840397b5dd][pop]]
+https://www.youtube.com/watch?v=W1FQ78EfgX4

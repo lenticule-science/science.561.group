@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       1cef8503-f223-4657-853c-7ab4be0fe97a
+:END:
+#+title: community
+#+date: [2025-08-25 Mon 19:47]
+

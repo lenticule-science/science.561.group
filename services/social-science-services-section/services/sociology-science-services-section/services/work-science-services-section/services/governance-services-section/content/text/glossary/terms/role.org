@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       e3c71550-53c8-4cc4-a371-73afbb667cad
+:END:
+#+title: role
+#+date: [2025-08-29 Fri 22:14]
+

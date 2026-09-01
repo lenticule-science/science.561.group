@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       03b050b0-adaa-4a1e-b2c4-90ad41ade884
+:ROAM_ALIASES: "Theses on the Philosophy of History"
+:public:   true
+:resource-descriptin: (([[id:edaef069-c68d-46aa-a970-d3cb7fe3165c][resource type]] . [[id:caed3b82-143c-4344-a2c2-03824a83969b][book]]) ([[id:5950d59a-8d30-47e6-939c-171327e23b44][creator]] . [[id:c979ca4d-1cfa-43bf-b079-f9c416f58ddd][Walter Benjamin]]))
+:END:
+#+title: Über den Begriff der Geschichte
+#+date: [2025-10-04 Sat 10:19]
+

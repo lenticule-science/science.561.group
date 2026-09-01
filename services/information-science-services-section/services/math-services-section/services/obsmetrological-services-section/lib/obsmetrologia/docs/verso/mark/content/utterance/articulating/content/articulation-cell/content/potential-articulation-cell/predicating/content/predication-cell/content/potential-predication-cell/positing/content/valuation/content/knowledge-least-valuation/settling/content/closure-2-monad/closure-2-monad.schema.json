@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/closure-2-monad",
+  "title": "closure-2-monad",
+  "description": "The 2-functor Cl on the 2-category of predication-fibrations, given fiberwise by a C-natural closure-operator family and equipped with unit and multiplication; the 2-categorical promotion of the closure-operator that drives settling as its inferential engine.",
+  "type": "object",
+  "required": ["endofunctor", "unit", "multiplication", "monotone", "inflationary", "lax-idempotent", "c-natural"],
+  "properties": {
+    "endofunctor": {
+      "const": "2-functor",
+      "description": "Cl: PrFib(L, C, E) -> PrFib(L, C, E), defined fiberwise by Cl(E)_q := cl_q(E_q)"
+    },
+    "unit": {
+      "const": "2-cell",
+      "description": "eta: 1 => Cl, inclusion-into-closure, witnessing inflationarity v <=_k cl_q(v) at each fiber value"
+    },
+    "multiplication": {
+      "const": "2-cell",
+      "description": "mu: Cl^2 => Cl, nested-closure collapse; identity in the strict case, a canonical coherence 2-cell in the lax case"
+    },
+    "monotone": {
+      "const": true,
+      "description": "monotone in <=_k: the 2-functoriality of Cl"
+    },
+    "inflationary": {
+      "const": true,
+      "description": "the unit eta of the 2-monad: cl always extends its argument"
+    },
+    "lax-idempotent": {
+      "const": true,
+      "description": "mu -| eta_Cl with identity counit (Kelly-Lack K1): Cl is a Kock-Zoeberlein monad; reduces to strict idempotence under Scott-continuity"
+    },
+    "c-natural": {
+      "const": true,
+      "description": "Cl commutes with reindexing along predicate-category morphisms"
+    }
+  }
+}

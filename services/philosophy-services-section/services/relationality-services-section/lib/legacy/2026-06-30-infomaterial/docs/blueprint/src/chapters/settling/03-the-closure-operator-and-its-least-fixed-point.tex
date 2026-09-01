@@ -1,0 +1,52 @@
+\section{The closure operator and its least fixed point}
+\begin{proposition}[Closure operator]\label{thm:closure-operator}\lean{Infomaterial.Charge.Closure}\leanok\uses{thm:kle}
+A \texttt{Closure} bundles an endomap $\texttt{op}:\texttt{Charge}\to\texttt{Charge}$
+that is \emph{inflationary} ($a \le_k \texttt{op}\,a$), \emph{monotone}
+($a \le_k b \Rightarrow \texttt{op}\,a \le_k \texttt{op}\,b$), and
+\emph{idempotent} ($\texttt{op}(\texttt{op}\,a) = \texttt{op}\,a$). At the finite
+regime settling's modal closure $\Diamond\circ\Box$ is one such operator.
+\end{proposition}
+\begin{theorem}[Knaster--Tarski: $\texttt{op}\,a$ is a fixed point]\label{thm:op-fixed}\lean{Infomaterial.Charge.Closure.op_fixed}\leanok\uses{thm:closure-operator}
+For any closure $c$ and seed $a$, $c.\texttt{op}(c.\texttt{op}\,a) =
+c.\texttt{op}\,a$: settling stops changing after the closure is applied once.
+This is the closure form of the Knaster--Tarski fixed-point theorem.
+\end{theorem}
+\begin{theorem}[$\texttt{op}\,a$ is the least fixed point above $a$]\label{thm:op-least}\lean{Infomaterial.Charge.Closure.op_least}\leanok\uses{thm:closure-operator, thm:le-joink}
+Any fixed point $x$ with $a \le_k x$ and $c.\texttt{op}\,x = x$ satisfies
+$c.\texttt{op}\,a \le_k x$. Thus the settled value is the \emph{least} upper
+bound among fixed points above the seed --- the lub character of settling made
+precise.
+\end{theorem}
+\begin{proposition}[The canonical join-closure]\label{thm:join-closure}\lean{Infomaterial.Charge.joinClosure}\leanok\uses{thm:closure-operator, thm:joink-le}
+\texttt{joinClosure k} is the closure $a \mapsto k \vee_k a$: raise to the
+knowledge bound $k$ by joining. Inflation, monotonicity, and idempotence are
+each discharged over the finite lattice. It is the prototype settling dynamic
+``possibilize toward $k$.''
+\end{proposition}
+\begin{proposition}[Settling]\label{thm:settling}\lean{Infomaterial.Charge.settle}\leanok\uses{thm:closure-operator, thm:op-fixed}
+\texttt{settle c seed} is the fixed point reached from \texttt{seed} under the
+closure $c$, namely $c.\texttt{op}\,\texttt{seed}$. For an idempotent closure the
+orbit stabilizes in a single step --- the finite-regime confluence
+$\Diamond\Box = \Box\Diamond$ that drains the residue to zero. This is the
+headline export of the chapter: the morphism that brings a trace to its fixed
+point and, in doing so, generates the order it settles within.
+\end{proposition}
+\begin{theorem}[The settled value is a fixed point]\label{thm:settle-fixed}\lean{Infomaterial.Charge.settle_fixed}\leanok\uses{thm:settling}
+$c.\texttt{op}(\texttt{settle}\,c\,\texttt{seed}) = \texttt{settle}\,c\,\texttt{seed}$:
+once settled, nothing remains to descend.
+\end{theorem}
+\begin{theorem}[The settled value is least]\label{thm:settle-least}\lean{Infomaterial.Charge.settle_least}\leanok\uses{thm:settling, thm:op-least}
+For any fixed point $x$ above the seed, $\texttt{settle}\,c\,\texttt{seed} \le_k x$:
+settling lands on the least fixed point above its seed, never overshooting.
+\end{theorem}
+\begin{theorem}[Worked instance: settling $\bot_k$ toward $k$]\label{thm:settle-kbot}\lean{Infomaterial.Charge.settle_kBot}\leanok\uses{thm:settling, thm:join-closure}
+$\texttt{settle}\,(\texttt{joinClosure}\,k)\,\bot_k = k$: settling the
+knowledge-least charge toward a bound $k$ lands exactly on $k$, confirming that
+the deposited positing's seed climbs to its target.
+\end{theorem}
+
+\begin{theorem}[Closure-rule systems have immediate-consequence least fixed points]\label{thm:closure-rule-lfp}\lean{Infomaterial.ClosureRule.immediate_consequence_lfp}\leanok\uses{thm:settling, thm:valuation, thm:predication, thm:settle-least}
+A positive closure-rule system generates an immediate-consequence operator
+$T_S$. Once its finite-charge orbit has reached a fixed point, the generated
+closure $\mathrm{cl}^S v$ is the least fixed point of $T_S$ above the seed.
+\end{theorem}

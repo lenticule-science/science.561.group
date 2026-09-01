@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       d3f00922-b32a-4465-8c6b-9150d18e325d
+:END:
+#+title: theory of MUD design
+#+date: [2025-09-27 Sat 00:06]
+

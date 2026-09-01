@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       548ad418-49f8-407a-bbff-c6c7dfa495fe
+:END:
+#+title: discourse
+#+date: [2025-09-07 Sun 08:31]
+

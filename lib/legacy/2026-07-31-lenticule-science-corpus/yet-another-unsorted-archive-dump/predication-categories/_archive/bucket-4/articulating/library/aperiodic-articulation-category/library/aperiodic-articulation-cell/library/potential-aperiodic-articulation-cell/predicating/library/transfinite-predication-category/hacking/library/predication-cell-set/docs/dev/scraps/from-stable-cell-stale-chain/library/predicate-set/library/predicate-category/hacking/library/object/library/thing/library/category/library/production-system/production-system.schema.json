@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/category/library/production-system/production-system.schema.json",
+  "title": "Production system",
+  "description": "JSON Schema for a production system — the Chomsky quadruple (V, T, P, S) of variables, terminals, productions, and a start symbol (Chomsky 1959). A grammar (e.g., the project's name-grammar) specializes a production system by attaching resolution-conformance rules to its terminals. Each inner production has shape {lhs, rhs} with lhs a variable and rhs a sequence of variables and terminals; unevaluatedProperties on the inner production locks its surface so stray fields are rejected.",
+  "allOf": [{ "$ref": "https://research-notes.561.group/hacking/library/predication-notes/object/library/thing/thing.schema.json" }],
+  "type": "object",
+  "required": ["variables", "terminals", "productions", "start"],
+  "properties": {
+    "variables": {
+      "type": "array",
+      "description": "The set V of nonterminal symbols. Each variable is a name; the set is non-empty and contains no duplicates.",
+      "items": { "$dynamicRef": "#name-shape" },
+      "uniqueItems": true,
+      "minItems": 1
+    },
+    "terminals": {
+      "type": "array",
+      "description": "The set T of terminal symbols. Disjoint from the variable set (the disjointness condition is universally quantified and checked by the production-system-axiom transformer, not by JSON Schema).",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "productions": {
+      "type": "array",
+      "description": "The production set P. Each production rewrites a variable (lhs) to a sequence of variables and terminals (rhs). The production array is non-empty (a grammar with no productions cannot generate any string).",
+      "items": {
+        "type": "object",
+        "required": ["lhs", "rhs"],
+        "properties": {
+          "lhs": {
+            "$dynamicRef": "#name-shape",
+            "description": "The variable being rewritten. Must be a member of the variables array (the membership constraint is checked by the production-membership transformer)."
+          },
+          "rhs": {
+            "type": "array",
+            "items": { "type": "string", "minLength": 1 },
+            "description": "The replacement sequence. Each element is either a variable name or a terminal; the classification is determined by lookup in the parent variables and terminals arrays."
+          }
+        },
+        "unevaluatedProperties": false
+      },
+      "minItems": 1
+    },
+    "start": {
+      "$dynamicRef": "#name-shape",
+      "description": "The start symbol S. Must be a member of the variables array."
+    }
+  }
+}

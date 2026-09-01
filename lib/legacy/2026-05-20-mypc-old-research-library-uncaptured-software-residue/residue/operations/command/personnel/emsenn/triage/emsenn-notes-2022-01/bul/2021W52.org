@@ -1,0 +1,26 @@
+#+title: 2021W52RB: Routine Bulletin: 2021, Week 52: 12/26-1/1
+
+This is a /routine bulletin/ produced by [[https://emsenn.net][emsenn]] for the Web; syndication elsewhere is permitted.
+
+#+toc: headlines 2 local
+
+* Personal Updates
+- I spent time mucking about in my personal garden, for the first time since early October.
+- I received a copy of [[../ref/lib.org::#revolutionary-suicide][/Revolutionary Suicide/]] and [[file:../lib.org::#hyperion][/Hyperion/]] as a gift from Es.
+* World Updates
+** Commercial Opportunities
+- [[https://powwowsupply.com/blog/bead-powwow-supply-will-be-closed-for-january-2022/][Powwow Supply]] will be closed for January, to let themselves have a solid break after 10 years of growth.
+- [[https://www.gnarlyheadache.com/shop/untctodpw9dlqu53a5uuhxn8xt7l09][Gnarly Headache]] is selling a shirt where all the proceeds go to get supplies for a Zapatista medical center.
+** In The News
+- [[https://oilprice.com/Energy/Crude-Oil/Global-Oil-And-Gas-Discoveries-Set-To-Hit-75-Year-Low-In-2021.html][Global oil and gas discoveries set to hit 75-year low]]
+- [[https://www.marketwatch.com/story/hidden-drains-and-secret-pumps-how-a-seattle-company-evaded-the-epa-to-dump-toxic-water-into-puget-sound-for-years-11640299073?mod=home-page][A company in Seattle was secretly dumping toxic waste into Puget Sound for /years/]]
+- [[https://www.reuters.com/markets/commodities/bird-flu-kills-thousands-cranes-israels-worst-wildlife-disaster-2021-12-27/][Bird flu kills thousands of cranes in an Israeli nature reserve, prompting a poultry cull]]
+
+** Upcoming Events
+- January 3rd :: The /Poor Proles Almanac/, a podcast about collapse praxis, is hosting a kimchi-making skillshare on [[https://www.twitch.tv/poorprolesalmanac][their Twitch]].
+** Historic Events
+Here's a listing of notable events that happened between December 26th and January 1st, in the past:
+
+#+include: "../ref/timeline/index.org::ds-12-26"
+#+include: "../ref/timeline/index.org::ds-12-27"
+

@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       a8bc7e3a-cdf7-4cfa-8e4d-a1a5f7eb2931
+:node-relations: (([[id:bee496e1-139b-4a7f-8a24-d4c14e6084c6][instantiates]] . [[id:e3c71550-53c8-4cc4-a371-73afbb667cad][role]]) ([[id:50711a63-93b5-4213-b768-165d10e8821c][actor]] . [[id:9fee0f36-1b36-43c7-b896-14b6700c7738][person]]) ([[id:4a53867b-afa3-437b-b979-385597e0e616][process]] . [[id:54213c5a-a48a-4976-acff-cc89ebf673c0][writing]]) ([[id:e3c71550-53c8-4cc4-a371-73afbb667cad][role]] . [[id:3f4d97de-5388-40bb-8b9f-288510923b7f][contributor]]) ([[id:e3c71550-53c8-4cc4-a371-73afbb667cad][role]] . [[id:5950d59a-8d30-47e6-939c-171327e23b44][creator]]))
+:END:
+#+title: author
+#+date: [2025-08-30 Sat 12:16]
+

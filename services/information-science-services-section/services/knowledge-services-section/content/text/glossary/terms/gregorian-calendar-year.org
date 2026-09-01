@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       a47ea310-d2a1-40d2-b42f-271c7bf273c5
+:node-relations: (([[id:bee496e1-139b-4a7f-8a24-d4c14e6084c6][instantiates]] . [[id:be5cefca-5949-46a2-981e-ba327be4363e][calendar year]]) ([[id:aba44961-c408-40a4-a1f0-5c536eaecfb5][temporal reference system]] . [[id:d7dd4232-8aae-43e5-bc8c-ca4e4c9412f7][proleptic Gregorian calendar]]))
+:END:
+#+title: Gregorian calendar year
+#+date: [2025-09-14 Sun 07:57]
+

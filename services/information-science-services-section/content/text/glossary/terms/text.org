@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       80ecba92-ca84-4b32-99ae-44d446b24350
+:END:
+#+title: text
+#+date: 2025-07-19
+#+author: emsenn
+
+A */text/* is the result of [[id:54213c5a-a48a-4976-acff-cc89ebf673c0][writing]] that is [[id:b188bed1-02e9-47f4-a289-713c8a3dfc35][bound]] and [[id:52b1e59b-ad33-4180-a199-0c5448453ead][structurated]].

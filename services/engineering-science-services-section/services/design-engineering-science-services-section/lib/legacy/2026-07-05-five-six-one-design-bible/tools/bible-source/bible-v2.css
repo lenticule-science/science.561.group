@@ -1,0 +1,249 @@
+/* 561 GROUP — DESIGN BIBLE v.0.3
+   Brutalism + Tufte + Visual Engineering (emsenn).
+   Discipline: bone paper, ink, one alarm, one witness. */
+
+/* §08 thumbnail scaling — posters in spec-block thumbnail columns
+   are scaled to fit 300px containers, not full grid columns. */
+#s08 .spec-block .poster {
+  overflow: hidden;
+  font-size: 0;
+}
+#s08 .spec-block .poster > * { font-size: initial; }
+#s08 .spec-block .poster [style*="font-size:60px"]  { font-size: 38px !important; line-height: .85 !important; }
+#s08 .spec-block .poster [style*="font-size:42px"]  { font-size: 26px !important; }
+#s08 .spec-block .poster [style*="font-size:280px"] { font-size: 168px !important; line-height: .85 !important; }
+#s08 .spec-block .poster [style*="font-size:26px"]  { font-size: 18px !important; }
+#s08 .spec-block .poster [style*="font-size:13px"]  { font-size: 10px !important; }
+#s08 .spec-block .poster [style*="font-size:11px"]  { font-size: 9px !important; }
+#s08 .spec-block .poster [style*="font-size:9px"]   { font-size: 8px !important; }
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Roboto+Slab:wght@400;500;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+:root{
+  --ink:        #0A0A0A;
+  --ink-soft:   #2E2A24;
+  --bone:       #F2EAD8;
+  --bone-deep:  #E6DCC4;
+  --bone-edge:  #D8CDB2;
+  --red:        #FF4530;
+  --blue:       #3D5588;
+
+  --sans: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --slab: "Roboto Slab", "Rockwell", Georgia, serif;
+  --mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --col-gap: 24px;
+  --gutter: 56px;
+  --max: 1320px;
+
+  /* ------------------------------------------------------------
+     --ems-* TOKEN MAP — visual-engineering nomenclature.
+     Specs throughout the bible reference these tokens directly.
+     Existing 561 tokens (above) remain as the runtime values;
+     --ems-* are aliases plus a few derivations.
+     ------------------------------------------------------------ */
+
+  /* Spacing scale (units of 4, base 8). Used as --ems-u<n>. */
+  --ems-u0: 0;
+  --ems-u1: 4px;     /* hairline / micro */
+  --ems-u2: 8px;     /* baseline grid step */
+  --ems-u3: 14px;    /* tight gap */
+  --ems-u4: 24px;    /* standard gutter */
+  --ems-u5: 48px;    /* section gap */
+  --ems-u6: 80px;    /* page top/bottom */
+  --ems-u7: 120px;   /* large vertical interval */
+
+  /* Rule weights. Used as --ems-rule-<name>. */
+  --ems-rule-hair:  1px;   /* default rule, table dividers */
+  --ems-rule-beam:  3px;   /* paragraph dividers, section heads */
+  --ems-rule-bar:   8px;   /* slogan band, mastheads */
+
+  /* Colors. Aliases of the runtime palette + soft variants. */
+  --ems-color-ink:       #0A0A0A;
+  --ems-color-ink-soft:  #5A5A5A;          /* ink at 60% on bone */
+  --ems-color-paper:     #F2EAD8;          /* "bone" */
+  --ems-color-paper-deep:#E6DCC4;
+  --ems-color-paper-edge:#D8CDB2;
+  --ems-color-alarm:     #FF4530;          /* "red" — hazard / urgency */
+  --ems-color-witness:   #3D5588;          /* "blue" — evidence callouts */
+
+  /* Typographic scale tokens. See §04. */
+  --ems-type-d1: 128px;  --ems-lh-d1: .85;   --ems-tr-d1: -.04em;  /* slogan */
+  --ems-type-d2: 76px;   --ems-lh-d2: .88;   --ems-tr-d2: -.04em;  /* section heads */
+  --ems-type-d3: 48px;   --ems-lh-d3: .95;   --ems-tr-d3: -.02em;  /* poster titles */
+  --ems-type-d4: 28px;   --ems-lh-d4: 1.05;  --ems-tr-d4: -.01em;  /* card titles */
+  --ems-type-l1: 22px;   --ems-lh-l1: 1.4;   --ems-tr-l1: 0;       /* lede */
+  --ems-type-b1: 16px;   --ems-lh-b1: 1.5;   --ems-tr-b1: 0;       /* body */
+  --ems-type-b2: 14px;   --ems-lh-b2: 1.45;  --ems-tr-b2: 0;       /* small body */
+  --ems-type-m1: 13px;   --ems-lh-m1: 1.3;   --ems-tr-m1: .05em;   /* meta */
+  --ems-type-m2: 11px;   --ems-lh-m2: 1.4;   --ems-tr-m2: .18em;   /* micro caps */
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bone);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.45;-webkit-font-smoothing:antialiased}
+body{
+  background-image:
+    radial-gradient(rgba(10,10,10,0.035) 1px, transparent 1px);
+  background-size: 4px 4px;
+}
+
+.page{max-width:var(--max);margin:0 auto;padding:0 var(--gutter);position:relative}
+.grid12{display:grid;grid-template-columns:repeat(12,1fr);gap:var(--col-gap)}
+.grid6{display:grid;grid-template-columns:repeat(6,1fr);gap:var(--col-gap)}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--col-gap)}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--col-gap)}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--col-gap)}
+
+section{padding:80px 0;border-top:1px solid var(--ink);position:relative}
+section.no-rule{border-top:none}
+section.dark{background:var(--ink);color:var(--bone)}
+section.dark .rule{background:var(--bone)}
+
+.section-head{display:grid;grid-template-columns:repeat(12,1fr);gap:var(--col-gap);margin-bottom:48px;align-items:end}
+.section-head .num{
+  grid-column:1/3;
+  font-family:var(--mono);font-size:13px;letter-spacing:.05em;
+  border-top:6px solid var(--ink);padding-top:8px;
+}
+.section-head .title{
+  grid-column:3/13;
+  font-family:var(--sans);font-weight:700;
+  font-size:clamp(38px,6vw,76px);line-height:.95;letter-spacing:-.02em;
+  text-transform:uppercase;
+}
+section.dark .section-head .num{border-top-color:var(--bone)}
+
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft)}
+.dark .eyebrow{color:var(--bone-edge)}
+.lede{font-family:var(--slab);font-weight:400;font-size:clamp(18px,1.6vw,21px);line-height:1.5;max-width:62ch}
+.body{font-family:var(--slab);font-weight:400;font-size:15px;line-height:1.55;max-width:62ch}
+.body p+p{margin-top:.85em}
+.mono{font-family:var(--mono);font-size:12px;letter-spacing:.04em}
+.h4{font-family:var(--mono);font-weight:700;font-size:11px;letter-spacing:.18em;text-transform:uppercase}
+section.dark .lede,section.dark .body{color:var(--bone)}
+
+/* page numbers — in flow above the section-head, can never collide with the title */
+.folio{display:block;text-align:right;font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--ink-soft);margin-bottom:24px;padding-bottom:8px;border-bottom:1px dashed var(--ink-soft)}
+section.dark .folio{color:var(--bone-edge);border-bottom-color:var(--bone-edge)}
+
+/* Marks: more intentional, less ornate */
+.swatch{border:1px solid var(--ink);background:var(--bone)}
+.swatch .chip{height:140px;border-bottom:1px solid var(--ink)}
+.swatch .meta{padding:12px 14px;font-family:var(--mono);font-size:11px;letter-spacing:.04em;display:grid;gap:4px}
+.swatch .meta .name{font-family:var(--sans);font-weight:700;font-size:14px;letter-spacing:.04em;text-transform:uppercase}
+.swatch .meta .row{display:flex;justify-content:space-between;color:var(--ink-soft)}
+
+.specimen{border:1px solid var(--ink);padding:24px;background:var(--bone)}
+.specimen .label{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:18px;display:flex;justify-content:space-between}
+
+table.spec{width:100%;border-collapse:collapse;font-family:var(--mono);font-size:12px}
+table.spec th,table.spec td{border-bottom:1px solid var(--ink);padding:10px 12px;text-align:left;vertical-align:top}
+table.spec th{font-family:var(--sans);font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:11px;border-bottom:2px solid var(--ink)}
+section.dark table.spec th,section.dark table.spec td{border-color:var(--bone);color:var(--bone)}
+
+.refuse{list-style:none}
+.refuse li{padding:18px 0 18px 56px;border-top:1px solid var(--ink);position:relative;font-family:var(--slab);font-size:18px;line-height:1.4}
+.refuse li::before{
+  content:'✕';
+  position:absolute;left:0;top:18px;
+  font-family:var(--sans);font-weight:700;font-size:24px;color:var(--red);
+  width:36px;height:36px;border:2px solid var(--red);display:flex;align-items:center;justify-content:center;line-height:1;
+}
+.refuse li:last-child{border-bottom:1px solid var(--ink)}
+
+/* placeholder block — bone-deep + diagonal hatch */
+.placeholder{
+  border:1px solid var(--ink);
+  background:
+    repeating-linear-gradient(45deg,
+      transparent 0,
+      transparent 6px,
+      rgba(10,10,10,0.06) 6px,
+      rgba(10,10,10,0.06) 7px);
+  background-color:var(--bone-deep);
+  padding:24px;
+  font-family:var(--mono);font-size:11px;letter-spacing:.1em;
+  color:var(--ink-soft);
+}
+.placeholder strong{color:var(--ink);font-weight:700;text-transform:uppercase;letter-spacing:.18em;display:block;margin-bottom:6px}
+
+/* template card */
+.template{border:1px solid var(--ink);background:var(--bone);overflow:hidden;position:relative}
+.template .tpl-label{position:absolute;top:8px;right:8px;font-family:var(--mono);font-size:10px;letter-spacing:.1em;background:var(--ink);color:var(--bone);padding:4px 8px;text-transform:uppercase;z-index:5}
+
+/* poster */
+.poster{aspect-ratio:3/4;border:1px solid var(--ink);position:relative;overflow:hidden;background:var(--bone)}
+.poster.dark{background:var(--ink);color:var(--bone)}
+.poster.red{background:var(--red);color:var(--ink)}
+.poster .p-label{position:absolute;top:10px;left:10px;font-family:var(--mono);font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:inherit;opacity:.7;z-index:6}
+
+/* TOC */
+.toc{list-style:none;font-family:var(--mono);font-size:13px;letter-spacing:.04em}
+.toc li{display:grid;grid-template-columns:48px 1fr auto;gap:18px;padding:10px 0;border-bottom:1px dotted var(--ink);align-items:baseline}
+.toc li:first-child{border-top:1px solid var(--ink)}
+.toc .t-num{font-weight:700}
+.toc .t-name{font-family:var(--sans);text-transform:uppercase;font-weight:500;letter-spacing:.02em}
+
+/* ---------- SPEC CLAUSES ---------- */
+/* Each clause is a labeled block: When required / When permitted / Geometry / Color / Conflicts / Test.
+   Two-column: label (4 cols) + body (8 cols). Body uses slab; metric values use mono. */
+.clause{display:grid;grid-template-columns:160px 1fr;gap:24px;padding:18px 0;border-top:1px solid var(--ink)}
+.clause:last-child{border-bottom:1px solid var(--ink)}
+.clause .c-label{font-family:var(--sans);font-weight:700;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink);padding-top:2px}
+.clause .c-body{font-family:var(--slab);font-size:15px;line-height:1.5;color:var(--ink)}
+.clause .c-body p{margin-bottom:8px}
+.clause .c-body p:last-child{margin-bottom:0}
+.clause .c-body code,
+.clause .c-body var{font-family:var(--mono);font-size:13px;font-style:normal;background:var(--bone-deep);padding:1px 6px;border:1px solid var(--bone-edge);white-space:nowrap}
+.clause.test .c-label{color:var(--red)}
+.clause.conflict .c-label{color:var(--red)}
+section.dark .clause{border-top-color:var(--bone)}
+section.dark .clause:last-child{border-bottom-color:var(--bone)}
+section.dark .clause .c-label{color:var(--bone)}
+section.dark .clause .c-body{color:var(--bone)}
+section.dark .clause .c-body code,
+section.dark .clause .c-body var{background:#1a1714;border-color:var(--bone-edge);color:var(--bone)}
+
+.spec-block{margin-top:32px;border-left:3px solid var(--ink);padding-left:24px}
+section.dark .spec-block{border-left-color:var(--bone)}
+.spec-block .spec-id{font-family:var(--mono);font-size:11px;letter-spacing:.18em;color:var(--ink-soft);margin-bottom:4px}
+section.dark .spec-block .spec-id{color:var(--bone-edge)}
+.spec-block .spec-title{font-family:var(--sans);font-weight:700;font-size:22px;letter-spacing:-.01em;text-transform:none;margin-bottom:16px}
+section.dark .spec-block .spec-title{color:var(--bone)}
+.toc .t-page{color:var(--ink-soft)}
+.toc a{color:inherit;text-decoration:none;display:contents}
+.toc a:hover .t-name{background:var(--red);color:var(--bone)}
+
+.masthead{
+  border-top:8px solid var(--ink);
+  border-bottom:1px solid var(--ink);
+  padding:18px 0;
+  font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+  display:grid;grid-template-columns:repeat(12,1fr);gap:var(--col-gap);
+}
+.masthead .m1{grid-column:1/4}
+.masthead .m2{grid-column:4/8}
+.masthead .m3{grid-column:8/11}
+.masthead .m4{grid-column:11/13;text-align:right}
+
+.hero{padding:96px 0 80px;border-bottom:1px solid var(--ink);position:relative;overflow:hidden}
+.hero .hero-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:var(--col-gap);align-items:end}
+.hero .mark-wrap{grid-column:1/5}
+.hero .title-wrap{grid-column:5/13}
+.hero h1{
+  font-family:var(--sans);font-weight:700;
+  font-size:clamp(72px,12vw,200px);line-height:.82;letter-spacing:-.05em;
+}
+.hero h1 .stack{display:block}
+
+footer.colophon{padding:80px 0 60px;border-top:8px solid var(--ink);background:var(--ink);color:var(--bone)}
+
+@media (max-width:880px){
+  :root{--gutter:24px;--col-gap:14px}
+  .grid12,.grid6,.grid4,.grid3{grid-template-columns:repeat(2,1fr)}
+  .section-head{grid-template-columns:1fr}
+  .section-head .num,.section-head .title{grid-column:1/-1}
+  .hero .mark-wrap,.hero .title-wrap{grid-column:1/-1}
+  .masthead{grid-template-columns:1fr 1fr}
+  .masthead .m1,.masthead .m2,.masthead .m3,.masthead .m4{grid-column:auto;text-align:left}
+}

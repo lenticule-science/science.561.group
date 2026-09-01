@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       6796ebdb-bcb6-4c0a-9f28-5331118ffb04
+:ROAM_ALIASES: "desert blues"
+:END:
+#+title: Tishoumaren
+#+date: [2025-07-21 Mon 17:14]
+#+index: desert blues
+desert blues is a [[id:2d77e9d7-6819-4cc8-9189-a81b5cff3d92][music genre]] synthesizing [[id:81bcc6a6-8aae-457b-838f-4446f099b276][blues]] and [[id:13858ca3-3dde-4527-b9c2-7a95648a2e31][Saharan music]]

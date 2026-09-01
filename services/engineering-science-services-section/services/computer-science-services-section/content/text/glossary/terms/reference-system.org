@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       f78e463f-a513-4f82-9fee-5f9241232873
+:END:
+#+title: reference system
+#+date: [2025-10-17 Fri 12:03]
+

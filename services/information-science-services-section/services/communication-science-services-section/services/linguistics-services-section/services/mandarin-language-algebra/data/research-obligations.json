@@ -1,0 +1,42 @@
+[
+  {
+    "id": "tonal-phonology",
+    "maturity": "Roadmap",
+    "area": "phonology",
+    "summary": "Tone (声调) is not modeled at all: ⊥. RawBundle has no phonological/tonal feature slot, and this fiber does not fake tone-sensitive analysis.",
+    "currentEvidence": "bundle.mts/.mjs's own top-of-file comment states tone is unmodeled; no pinyin or tone data appears anywhere in this package.",
+    "upgradeEvidence": "Pinyin readings (including tone marks) belong in emsenn-mandarin-services-section's glossary content, not in this syntax/segmentation fiber — a genuine upgrade here would require RawBundle itself to grow a phonological feature slot, which is out of this package's scope."
+  },
+  {
+    "id": "core-vocabulary-sourcing",
+    "maturity": "Roadmap",
+    "area": "segmentation",
+    "summary": "The open-class word list the segmenter's dictionary draws from is seeded from the author's general HSK-1-level knowledge, not exported from a verified corpus or dictionary.",
+    "currentEvidence": "content/wordlists/mandarin-core-vocabulary.json's own top-level 'note' field states this plainly; the list is intentionally small (~90 words) and unpadded.",
+    "upgradeEvidence": "Replace/expand the wordlist with entries sourced from an authoritative HSK word list export or reviewed dictionary, with a citation for each entry or batch, and add coverage tests against held-out real text."
+  },
+  {
+    "id": "predicate-tagging",
+    "maturity": "Roadmap",
+    "area": "syntax",
+    "summary": "No word is ever tagged 'verb': this bundle curates no verb-stem allowlist (unlike lakota-language-algebra's curated Lakota verb stems), because Mandarin verbs are the true open class and no morphological suffix marks one. The real, verified consequence is that nsubj/dobj/ccomp/obl/discourse/topic/focus/contrast/repair dependency arcs and semantic role frames never fire for ANY Mandarin sentence through this bundle, including for the 把/被-construction strategies that are correctly wired in grammar.roleStrategies.",
+    "currentEvidence": "test/engine.test.mjs's 'honest gap' tests, verified directly against the shared engine: read('我喜欢你。', bundle) tags every content word 'noun' or 'pron', never 'verb', and produces no nsubj/dobj/roles.",
+    "upgradeEvidence": "A reviewed, source-cited curated verb-stem allowlist (morphology.rootPatternRules or a dedicated tag), or a real morphosyntactic verb-detection strategy, plus corpus tests proving nsubj/dobj/obl arcs form correctly for 把/被 constructions and plain SVO sentences."
+  },
+  {
+    "id": "classifier-coverage-and-noun-class-validation",
+    "maturity": "Roadmap",
+    "area": "morphotactics",
+    "summary": "Only 8 of Mandarin's dozens of productive classifiers are curated, and the noun-class feature on each is asserted from general knowledge, not validated against a reviewed classifier-noun pairing source.",
+    "currentEvidence": "morphology.rootPatternRules in src/bundle.mts lists exactly 8 classifier entries; see data/maturity.json (id: classifier-morphotactics) for the honest grade.",
+    "upgradeEvidence": "An expanded, source-cited classifier inventory, plus a reviewed classifier-noun pairing table and tests that check a classifier is actually compatible with the noun it precedes in a given sentence (not just tagged in isolation)."
+  },
+  {
+    "id": "copula-tag-surfacing",
+    "maturity": "Roadmap",
+    "area": "engine-upstream",
+    "summary": "是 is correctly listed as this bundle's copula and bundle.isCopula('是') is true, but the shared engine's closedClassTags() (in @lenticule-science/communicating's compile.mts) checks determiners/prepositions/pronouns/conjunctions/auxiliaries only — it never consults the copula set, so 是's .tags floors to ['noun'] instead of surfacing a 'cop' tag.",
+    "currentEvidence": "test/engine.test.mjs's 'honest gap: 是 is a recognized copula...' test, verified directly against the installed @lenticule-science/communicating@0.0.4.",
+    "upgradeEvidence": "This is an upstream fix, not something this fiber package can resolve: closedClassTags() in communicating's compile.mts would need to also check the copula set and return a 'cop' tag. Filed here for visibility; not actioned in this package per the instruction to report engine-plumbing findings precisely rather than hack around them."
+  }
+]

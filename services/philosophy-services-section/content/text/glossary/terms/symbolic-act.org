@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       f7c49d5e-ff71-41df-acee-fd01b7a4fb03
+:instantiates: [[id:32e00173-c695-4bb6-b0d2-9dc17fec128b][act]]
+:field:    [[id:12e293e4-a137-44f1-81bf-23068b69b54a][semiotics]]
+:public:   true
+:END:
+#+title: symbolic act
+#+date: [2025-09-05 Fri 16:26]
+#+index: semiotics!symbolic act

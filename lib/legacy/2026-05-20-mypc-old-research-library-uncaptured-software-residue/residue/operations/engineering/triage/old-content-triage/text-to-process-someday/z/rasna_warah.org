@@ -1,0 +1,20 @@
+#+title: Rasna Warah
+#+begin_head
+#+ghe_schema: person-0.1.2
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2021-01-06 Wed 11:53]
+#+roam_tags: person
+#+end_head
+#+name: definition
+
+
+#+toc: headlines 2
+* Introduction
+* Rasna Warah
+* Supplements
+** Record history
+   :LOGBOOK:
+   - Note taken on [2021-01-06 Wed 11:53] \\
+     Created
+   :END:

@@ -1,0 +1,329 @@
+---
+title: "Multi-Agent Coordination in the Agential Semioverse"
+date-created: 2026-03-03T00:00:00
+aliases:
+  - "Multi-Agent Coordination in the Agential Semioverse"
+  - "multi-agent coordination"
+keywords:
+  - AgentialSemioverse
+---
+
+## 1. Introduction
+
+The [agential semioverse](../../../../mathematics/objects/universes/agential-semioverse/index.md) defines individual agents and their execution semantics: an internal agent $A = (\Sigma, K, \Pi)$ selects interaction operators from its skillset $K$ according to its policy $\Pi$ and applies them to a partial state $u \in \mathcal{U}$. The specification addresses single-agent execution in detail but does not address what happens when multiple agents act on the same state concurrently.
+
+In practice, this vault uses parallel agent sessions for performance. Three patterns recur:
+
+1. **Fan-out across directory subtrees.** A coordinator agent partitions the vault into disjoint directory subtrees and spawns worker agents, one per subtree. Each worker applies the same skill template (e.g., cross-linking, style checking, reference auditing) to its subtree. Workers run concurrently and do not touch each other's files.
+
+2. **Pipeline composition.** One agent's output feeds the next. For example, an audit agent produces a list of broken references; a repair agent reads that list and creates stubs; a style-check agent then verifies the stubs conform to PTGAE.
+
+3. **Config-driven batch operations.** Multiple agents share a configuration artifact (e.g., a JSON file specifying cross-link targets). Each agent reads the config but only modifies files in its assigned region. Only the coordinator may update the config itself.
+
+Formalizing these patterns requires extending the existing framework with region ownership, non-interference conditions, and composition theorems. This document provides that extension.
+
+We assume familiarity with the base structures: the complete [Heyting algebra](../../../../mathematics/concepts/heyting-algebra/index.md) $H$ with modal closure $j$ and [trace comonad](../../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/glossary/terms/trace-comonad.md) $G$; the definable operator algebra $\mathsf{Op}^{\mathrm{def}}$; fragments $\mathcal{F}(H)$ as finitely generated modal-temporal [Heyting](../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/arend-heyting.md) subalgebras; partial states $\mathcal{U} = \mathcal{P}(H) \times \mathcal{P}(\mathsf{Op}^{\mathrm{def}})$; the composite [closure operator](../../../../mathematics/concepts/closure-operator/index.md) $\mathcal{S} = \mathcal{S}_{\mathrm{fus}} \circ \mathcal{S}_{\mathrm{syn}} \circ \mathcal{S}_{\mathrm{sem}}$ with [least fixed point](../../../../mathematics/concepts/fixed-point/index.md) $X^{\star}$; [handles](../../../../../../../../philosophy-services-section/services/relationality-services-section/services/interactive-semioverse-services-section/content/text/glossary/terms/handle.md) $\mathsf{Handle}$ with semantic seeds $\eta : \mathsf{Handle} \to H$; handle fragments $F_{\tau, X}$; [footprints](../../../../../../../../philosophy-services-section/services/relationality-services-section/services/interactive-semioverse-services-section/content/text/glossary/terms/footprint.md) $\mathrm{Foot}_X(\tau) = \mathcal{S}_X(F_{\tau, X})$; and interaction operators $\mathbf{Int}$ as monotone endomorphisms of $\mathcal{U}$ satisfying fragment-preservation, closure-compatibility, provenance extension, and failure monotonicity. We also assume the agential extension: agent profiles $P(a) = (\mathrm{role}_a, \mathrm{goals}_a, \mathrm{policy}_a, \mathrm{Skills}_a, \mathrm{Tools}_a, \mathrm{Mem}_a)$, internal agents $A = (\Sigma, K, \Pi)$, the skill calculus $\mathsf{Skill}^{\mathrm{def}}$, policy-restricted interpretation $[\![s]\!]_a$, and the agential [closure operator](../../../../mathematics/concepts/closure-operator/index.md) $\mathcal{S}_{\mathrm{agent}}$ with its [least fixed point](../../../../mathematics/concepts/fixed-point/index.md) $A^{\star}$.
+
+---
+
+## 2. Regions
+
+We formalize the notion of a "region" within the fragment [lattice](../../../../../../../../information-science-services-section/services/math-services-section/services/order-services-section/content/text/glossary/terms/lattice.md) that corresponds to a directory subtree in the ASR implementation.
+
+**Definition 2.1 (Region).** A **region** $R \subseteq \mathcal{F}(H)$ is a downward-closed subset of the fragment [lattice](../../../../../../../../information-science-services-section/services/math-services-section/services/order-services-section/content/text/glossary/terms/lattice.md): if $F \in R$ and $F' \subseteq F$ with $F' \in \mathcal{F}(H)$, then $F' \in R$.
+
+Downward closure captures the intuition that if a region owns a fragment, it also owns all subfragments of that fragment. In the ASR implementation, a region $R_d$ for directory $d$ contains all fragments whose [handles](../../../../../../../../philosophy-services-section/services/relationality-services-section/services/interactive-semioverse-services-section/content/text/glossary/terms/handle.md) lie under $d$ in the filesystem hierarchy.
+
+**Definition 2.2 (Region generated by a directory).** Given a directory path $d$ and the set $\mathsf{Handle}_d = \{\tau \in \mathsf{Handle} : \tau \text{ lies under } d\}$, define the **directory region**:
+
+$$R_d = \{F \in \mathcal{F}(H) : \text{every generator of } F \text{ lies in } \bigcup_{\tau \in \mathsf{Handle}_d} F_{\tau, X}\}.$$
+
+Then $R_d$ is downward-closed by construction, since subfragments of fragments generated by things under $d$ are themselves generated by elements from things under $d$.
+
+**Definition 2.3 (Disjoint regions).** Two regions $R_1, R_2$ are **disjoint** if $R_1 \cap R_2 = \emptyset$: no fragment belongs to both regions.
+
+**Definition 2.4 (Region cover).** A **region cover** of $\mathcal{F}(H)$ is a finite family $\{R_i\}_{i=1}^{n}$ such that every fragment $F \in \mathcal{F}(H)$ belongs to at least one $R_i$. A region cover is **disjoint** if the $R_i$ are pairwise disjoint.
+
+**Lemma 2.5 (Directory subtrees give disjoint regions).** If $d_1, \ldots, d_n$ are directories with pairwise disjoint filesystem subtrees (no $d_i$ is an ancestor of $d_j$ for $i \neq j$, and their subtrees do not overlap), then $R_{d_1}, \ldots, R_{d_n}$ are pairwise disjoint regions.
+
+*Proof.* A [handle](../../../../../../../../philosophy-services-section/services/relationality-services-section/services/interactive-semioverse-services-section/content/text/glossary/terms/handle.md) $\tau$ lies under at most one $d_i$ (since the subtrees are disjoint in the filesystem), so $F_{\tau, X}$ belongs to at most one $R_{d_i}$. Fragments are generated by handle denotations; a fragment whose generators come from disjoint handle sets cannot belong to two distinct directory regions.
+
+---
+
+## 3. Region-Restricted Agents
+
+We define what it means for an agent to operate within a region.
+
+**Definition 3.1 (Region-restricted skillset).** Given an agent $A = (\Sigma, K, \Pi)$ and a region $R$, define the **region-restricted skillset**:
+
+$$K|_R = \{E \in K : \text{for all } u \in \mathcal{U}, \text{ if } F \notin R \text{ then } E(u)|_F = u|_F\}.$$
+
+That is, $K|_R$ contains exactly those interaction operators in $K$ that act as the identity on fragments outside $R$.
+
+**Definition 3.2 (Region-restricted agent).** The **region-restricted agent** $A|_R = (\Sigma, K|_R, \Pi|_R)$ where:
+
+- $\Sigma$ is unchanged (the agent retains its internal state space);
+- $K|_R$ is the restricted skillset from Definition 3.1;
+- $\Pi|_R(\sigma, u) = \Pi(\sigma, u) \cap K|_R$ restricts operator selection to $K|_R$.
+
+**Lemma 3.3 (Fragment identity outside region).** If $E \in K|_R$, then $E$ is fragment-preserving on $\mathcal{F}(H) \setminus R$: for every fragment $F \notin R$, $E(u)|_F = u|_F$.
+
+*Proof.* This is the defining [property](../../../../sociology/terms/property.md) of $K|_R$ (Definition 3.1).
+
+**Lemma 3.4 (Region restriction preserves admissibility).** If $E \in K$ is an admissible interaction operator (monotone, fragment-preserving, closure-compatible, provenance-extending, failure-monotone), then $E \in K|_R$ is also admissible.
+
+*Proof.* Restricting the set of fragments an operator may modify does not weaken monotonicity, fragment-preservation, closure-compatibility, provenance extension, or failure monotonicity. Each [property](../../../../sociology/terms/property.md) holds for all fragments; restricting to identity on some fragments preserves the [property](../../../../sociology/terms/property.md) on the remaining ones.
+
+---
+
+## 4. Non-Interference Theorem
+
+The central result: agents restricted to disjoint regions do not interfere with each other.
+
+**Theorem 4.1 (Non-interference).** Let $A_1, A_2$ be agents restricted to disjoint regions $R_1, R_2$, with $R_1 \cap R_2 = \emptyset$. Let $E_1 \in K|_{R_1}$ and $E_2 \in K|_{R_2}$. Then:
+
+(i) **Commutativity.** $E_1 \circ E_2 = E_2 \circ E_1$ on $\mathcal{U}$.
+
+(ii) **Admissibility of composite.** The composite $E_1 \circ E_2$ is an admissible interaction operator.
+
+(iii) **Preservation of all admissibility conditions.** Fragment-preservation, closure-compatibility, provenance extension, and failure monotonicity hold for $E_1 \circ E_2$.
+
+*Proof sketch.*
+
+For (i): Let $u \in \mathcal{U}$ and let $F$ be any fragment. There are three cases:
+
+- $F \in R_1 \setminus R_2$: Then $E_2$ acts as identity on $F$, so $(E_1 \circ E_2)(u)|_F = E_1(u)|_F$. Similarly, $(E_2 \circ E_1)(u)|_F = E_2(E_1(u))|_F = E_1(u)|_F$ since $E_2$ acts as identity on $F$ regardless of [the state](../../../../sociology/terms/the-state.md).
+- $F \in R_2 \setminus R_1$: Symmetric argument.
+- $F \notin R_1 \cup R_2$: Both operators act as identity on $F$, so both composites yield $u|_F$.
+
+Since the composites agree on every fragment, and partial states are determined by their fragment restrictions (by the [sheaf condition](../../../../mathematics/disciplines/higher-topos-theory/terms/sheaf-condition.md), Theorem 15.2 of the Interactive Semioverse specification), $E_1 \circ E_2 = E_2 \circ E_1$.
+
+For (ii): Monotonicity composes. Fragment-preservation holds because each operator preserves fragments in the other's region and its own. Closure-compatibility: for any $X$,
+
+$$\mathcal{S}((E_1 \circ E_2)(X)) = \mathcal{S}(E_1(E_2(X))) \geq E_1(\mathcal{S}(E_2(X))) \geq E_1(E_2(\mathcal{S}(X)))$$
+
+where the first inequality uses closure-compatibility of $E_1$ and the second uses closure-compatibility of $E_2$ together with monotonicity of $E_1$. Provenance extension and failure monotonicity compose because each operator independently extends provenance and preserves failure marks in its region, and acts as identity elsewhere.
+
+For (iii): This follows from (ii) and the observation that each admissibility condition is preserved under composition of operators satisfying it (established in the base Interactive Semioverse specification for monotonicity, fragment-preservation, and closure-compatibility).
+
+---
+
+## 5. Parallel Composition
+
+We define a parallel composition operator for region-restricted agents.
+
+**Definition 5.1 (Parallel composition).** Given agents $A_1|_{R_1}, \ldots, A_n|_{R_n}$ with pairwise disjoint regions (i.e., $R_i \cap R_j = \emptyset$ for all $i \neq j$), define the **parallel composition**:
+
+$$A_1 \parallel A_2 \parallel \cdots \parallel A_n$$
+
+as the agent whose step operator applies each $E_i \in K|_{R_i}$ concurrently. Formally, the composite step operator is:
+
+$$E_{A_1 \parallel \cdots \parallel A_n}(u) = (E_n \circ \cdots \circ E_1)(u)$$
+
+where each $E_i$ is selected by $\Pi_i|_{R_i}$.
+
+By Theorem 4.1(i), the result does not depend on the ordering of operators: for any permutation $\sigma$ of $\{1, \ldots, n\}$,
+
+$$E_{\sigma(n)} \circ \cdots \circ E_{\sigma(1)} = E_n \circ \cdots \circ E_1.$$
+
+**Theorem 5.2 (Parallel composition preserves admissibility).** The parallel composition $A_1 \parallel \cdots \parallel A_n$ is an admissible agent: its step operator is monotone, fragment-preserving, closure-compatible, provenance-extending, and failure-monotone.
+
+*Proof.* By induction on $n$. The base case $n = 1$ is trivial. For the inductive step, apply Theorem 4.1(ii)-(iii) to the composite of $E_{n}$ with the operator for $A_1 \parallel \cdots \parallel A_{n-1}$, noting that $R_n$ is disjoint from $R_1 \cup \cdots \cup R_{n-1}$.
+
+**Corollary 5.3 (Order independence).** The parallel composition is well-defined up to fragmentwise extensional equality: the result depends on the set $\{(A_i, R_i)\}$ but not on any enumeration of that set.
+
+---
+
+## 6. Sequential Composition with Handoff
+
+Not all multi-agent coordination involves disjoint regions. We formalize the sequential case.
+
+**Definition 6.1 (Handoff predicate).** A **handoff predicate** is a monotone function $h : \mathcal{U} \to \{\mathrm{true}, \mathrm{false}\}$: if $h(u)$ holds and $u \leq u'$, then $h(u')$ holds. The predicate checks that a partial state satisfies the preconditions for a subsequent agent to begin work.
+
+**Definition 6.2 (Sequential composition with handoff).** Given agents $A_1, A_2$ and a handoff predicate $h$, define the **sequential composition with handoff**:
+
+$$A_1 ;_h A_2$$
+
+as the agent that executes $A_1$ repeatedly until $h$ holds on the resulting state, then executes $A_2$. Formally, let $E_{A_1}^{(k)}$ denote $k$ applications of $A_1$'s step operator. Define:
+
+$$E_{A_1 ;_h A_2}(u, \sigma_1, \sigma_2) = E_{A_2}(E_{A_1}^{(k^{\star})}(u, \sigma_1), \sigma_2)$$
+
+where $k^{\star} = \min\{k : h(E_{A_1}^{(k)}(u, \sigma_1)_{\mathcal{U}}) = \mathrm{true}\}$, and $(-)_{\mathcal{U}}$ projects to [the state](../../../../sociology/terms/the-state.md) component. If no such $k^{\star}$ exists, execution diverges (liveness failure; see Section 10).
+
+**Lemma 6.3 (Connection to work-unit chains).** A sequential composition $A_1 ;_h A_2$ is a two-element chain in the work-unit model (as defined in the [work-units-and-chains](../../../../../../../../philosophy-services-section/services/relationality-services-section/services/interactive-semioverse-services-section/services/agential-semioverse-services-section/content/text/documents/articles/notes/work-units-and-chains.md) specification): $A_1$'s execution is the first work unit, $A_2$'s execution is the second, and $h$ is the token-availability check that enables the second transition.
+
+*Proof.* In the Petri net model, $A_1$ is a transition whose output places include a place $p_h$ representing the handoff condition. The predicate $h$ holds exactly when $p_h$ has a token. $A_2$ is a transition with $p_h$ as an input place. The two-element chain fires $A_1$ first (consuming input tokens, producing $p_h$), then fires $A_2$ (consuming $p_h$ and producing final output tokens). This is exactly the sequential composition $A_1 ;_h A_2$.
+
+**Lemma 6.4 (Sequential composition preserves admissibility).** If $E_{A_1}$ and $E_{A_2}$ are admissible interaction operators, then $E_{A_1 ;_h A_2}$ is admissible, provided $k^{\star}$ exists.
+
+*Proof.* Finite compositions of admissible interaction operators are admissible (monotonicity, fragment-preservation, closure-compatibility, provenance extension, and failure monotonicity all compose). The composite $E_{A_2} \circ E_{A_1}^{(k^{\star})}$ is a finite composition.
+
+---
+
+## 7. Shared Configuration Artifacts
+
+In practice, agents share configuration artifacts (e.g., `cross-link-config.json`). We formalize read-only shared state.
+
+**Definition 7.1 (Shared artifact).** A **shared artifact** is a [handle](../../../../../../../../philosophy-services-section/services/relationality-services-section/services/interactive-semioverse-services-section/content/text/glossary/terms/handle.md) $\tau_{\mathrm{config}} \in \mathsf{Handle}$ whose fragment $F_{\tau_{\mathrm{config}}, X}$ is designated as read-only for a set of participating agents. Formally, given a set of agents $\{A_1, \ldots, A_n\}$ and a designated **coordinator** agent $A_c$:
+
+- Every agent $A_i$ may read $F_{\tau_{\mathrm{config}}, X}$ (include it in the [interaction surface](../../../../../../../../philosophy-services-section/services/relationality-services-section/services/interactive-semioverse-services-section/content/text/glossary/terms/interaction-surface.md) for any skill invocation);
+- Only $A_c$ may modify $F_{\tau_{\mathrm{config}}, X}$;
+- For every non-coordinator agent $A_i$ ($i \neq c$), the policy enforces:
+
+$$\Pi_i(\sigma, u) \cap \{E \in K_i : E \text{ modifies } F_{\tau_{\mathrm{config}}, X}\} = \emptyset.$$
+
+This is a monotone restriction on policy: the predicate $\mathrm{Pol}_{a_i}(s, \mathrm{in}, X) = \mathrm{false}$ whenever skill $s$ with input $\mathrm{in}$ would modify $\tau_{\mathrm{config}}$ and $a_i$ is not the coordinator.
+
+**Lemma 7.2 (Shared artifacts do not break non-interference).** Let $A_1|_{R_1}, \ldots, A_n|_{R_n}$ be region-restricted agents sharing a read-only artifact $\tau_{\mathrm{config}}$. If $F_{\tau_{\mathrm{config}}, X} \notin R_i$ for any $i$ (i.e., the config fragment is not in any worker's region), then non-interference (Theorem 4.1) still holds.
+
+*Proof.* Each worker's operators act as identity on fragments outside their region, and the config fragment is outside every worker's region. Workers read the config fragment but do not modify it. Reading is observation, not mutation: it does not change [the state](../../../../sociology/terms/the-state.md) in $\mathcal{U}$, so it introduces no conflict between operators. The commutativity proof from Theorem 4.1 applies without modification.
+
+---
+
+## 8. Fan-Out Pattern
+
+The fan-out pattern is the primary parallelism mechanism in this vault. We formalize it as a composition theorem.
+
+**Definition 8.1 (Fan-out).** Given:
+
+- a task $T$ specified by a skill template $s \in \mathsf{Skill}^{\mathrm{def}}$,
+- a disjoint region cover $\{R_1, \ldots, R_n\}$ of the relevant portion of $\mathcal{F}(H)$,
+- a shared configuration artifact $\tau_{\mathrm{config}}$,
+- a coordinator agent $A_c$ and worker agents $A_1, \ldots, A_n$,
+
+a **fan-out** is the following execution:
+
+1. $A_c$ produces $\tau_{\mathrm{config}}$ (applying a skill that creates the configuration artifact).
+2. Each $A_i|_{R_i}$ executes $s$ with $\tau_{\mathrm{config}}$ as input, modifying only fragments in $R_i$.
+3. By Theorem 4.1, steps (2) for all $i$ can execute in parallel.
+4. $A_c$ collects effect reports from each $A_i$ and produces a summary.
+
+Formally, the fan-out is the sequential-then-parallel composition:
+
+$$A_c^{\mathrm{init}} ;_{h_{\mathrm{config}}} (A_1|_{R_1} \parallel \cdots \parallel A_n|_{R_n}) ;_{h_{\mathrm{done}}} A_c^{\mathrm{collect}}$$
+
+where $h_{\mathrm{config}}$ checks that $\tau_{\mathrm{config}}$ exists in [the state](../../../../sociology/terms/the-state.md), and $h_{\mathrm{done}}$ checks that all workers have produced effect reports.
+
+**Theorem 8.2 (Fan-out equivalence).** Let $A_{\mathrm{seq}}$ be a single agent that applies skill $s$ to each region $R_i$ in sequence (in any order), reading $\tau_{\mathrm{config}}$ at each step. Then the fan-out produces a result that is fragmentwise extensionally equal to $A_{\mathrm{seq}}$:
+
+$$E_{A_1|_{R_1} \parallel \cdots \parallel A_n|_{R_n}}(u) \equiv_F E_{A_{\mathrm{seq}}}(u)$$
+
+for every fragment $F \in \mathcal{F}(H)$.
+
+*Proof sketch.* By Theorem 4.1(i), the parallel composition is independent of ordering. The sequential agent applies operators to disjoint regions in some order. Since each operator acts as identity outside its region (Lemma 3.3), the sequential composition in any order produces the same result as the parallel composition (each fragment is modified by at most one operator). The [sheaf condition](../../../../mathematics/disciplines/higher-topos-theory/terms/sheaf-condition.md) (Theorem 15.2 of the Interactive Semioverse specification) guarantees that agreement on every fragment implies agreement on the global state, so the results are fragmentwise extensionally equal.
+
+**Corollary 8.3 (Fan-out preserves admissibility).** The fan-out execution is admissible: the composite operator is monotone, fragment-preserving, closure-compatible, provenance-extending, and failure-monotone.
+
+*Proof.* Apply Theorem 5.2 to the parallel phase and Lemma 6.4 to the sequential phases. Composition of admissible operators is admissible.
+
+---
+
+## 9. Pipeline Pattern
+
+We formalize the pipeline pattern, where the output of one skill feeds the input of the next.
+
+**Definition 9.1 (Pipeline).** Given a sequence of skills $s_1, s_2, \ldots, s_k \in \mathsf{Skill}^{\mathrm{def}}$ such that the output schema $T_{\mathrm{out}}^{(i)}$ of $s_i$ is compatible with the input schema $T_{\mathrm{in}}^{(i+1)}$ of $s_{i+1}$ (there exists a monotone map $\phi_i : T_{\mathrm{out}}^{(i)} \to T_{\mathrm{in}}^{(i+1)}$ translating outputs to inputs), define the **pipeline**:
+
+$$s_1 ;_{h_1} s_2 ;_{h_2} \cdots ;_{h_{k-1}} s_k$$
+
+where each handoff predicate $h_i$ checks that $s_i$ has produced output satisfying $\phi_i$'s domain.
+
+Each skill invocation is a work unit in the sense of the [work-units-and-chains](../../../../../../../../philosophy-services-section/services/relationality-services-section/services/interactive-semioverse-services-section/services/agential-semioverse-services-section/content/text/documents/articles/notes/work-units-and-chains.md) specification. The pipeline is a $k$-element chain.
+
+**Lemma 9.2 (Pipeline admissibility).** A pipeline $s_1 ;_{h_1} \cdots ;_{h_{k-1}} s_k$ is admissible if each $s_i$ is admissible and each handoff predicate $h_i$ is satisfiable (i.e., there exists a state $u$ such that $h_i([\![s_i]\!](u, \mathrm{in}_i)_{\mathcal{U}})$ holds).
+
+*Proof.* By induction on $k$, using Lemma 6.4 at each step. Satisfiability of $h_i$ ensures that $k^{\star}$ exists at each handoff, preventing divergence.
+
+**Theorem 9.3 (Pipeline composite effect).** The pipeline's composite effect on partial states is the composition of individual skill effects:
+
+$$[\![s_1 ;_{h_1} \cdots ;_{h_{k-1}} s_k]\!](u, \mathrm{in}_1) = ([\![s_k]\!] \circ \cdots \circ [\![s_1]\!])(u, \mathrm{in}_1, \phi_1, \ldots, \phi_{k-1})$$
+
+where each $\mathrm{in}_{i+1} = \phi_i(\mathrm{out}_i)$ and $\mathrm{out}_i$ is the output of $s_i$.
+
+**Theorem 9.4 (Provenance trace concatenation).** The composite provenance trace of a pipeline is the concatenation of individual provenance traces:
+
+$$\mathrm{trace}(s_1 ;_{h_1} \cdots ;_{h_{k-1}} s_k) = \mathrm{trace}(s_1) \cdot \mathrm{trace}(s_2) \cdots \mathrm{trace}(s_k)$$
+
+where $\cdot$ denotes concatenation in the provenance history category $P(F)$ (Section 9 of the Interactive Semioverse specification).
+
+*Proof sketch.* Each skill invocation produces a provenance record (Section on Execution Semantics in the Agential Semioverse specification). Sequential composition concatenates records. The refinement [morphisms](../../../../../../../../information-science-services-section/services/math-services-section/services/categorical-services-section/services/ordinary-categories-services-section/content/text/glossary/terms/morphism.md) in $P(F)$ respect concatenation because provenance histories compose functorially (Lemma 9.1 of the Interactive Semioverse specification).
+
+---
+
+## 10. Coordination Correctness
+
+We define four correctness conditions for multi-agent coordination and relate them to established Petri net properties.
+
+**Definition 10.1 (Safety).** A multi-agent coordination is **safe** if no agent modifies fragments outside its assigned region. Formally, for each agent $A_i|_{R_i}$ and each execution step $\mathrm{Exec}(a_i, s, \mathrm{in}, u) = (u', \mathrm{out}, \mathrm{trace})$:
+
+$$\text{for all } F \notin R_i, \quad u'|_F = u|_F.$$
+
+This is guaranteed by construction when agents use region-restricted skillsets (Definition 3.1).
+
+**Definition 10.2 (Liveness).** A multi-agent coordination is **live** if, whenever all agents' skills are admissible and all handoff predicates are satisfiable, the coordination completes in finitely many steps. No agent blocks indefinitely waiting for a resource held by another agent.
+
+In the parallel case with disjoint regions, liveness holds trivially: agents cannot contend for shared resources, so deadlock is impossible. In the sequential case, liveness reduces to satisfiability of each handoff predicate.
+
+**Definition 10.3 (Equivalence).** A multi-agent coordination is **equivalent** to a single-agent execution if the result is fragmentwise extensionally equal to some sequential single-agent execution. Formally, there exists an ordering $\sigma$ of all skill invocations across all agents such that:
+
+$$E_{A_1 \parallel \cdots \parallel A_n}(u) \equiv_F E_{\sigma(1)} \circ \cdots \circ E_{\sigma(m)}(u)$$
+
+for every fragment $F \in \mathcal{F}(H)$, where $E_{\sigma(i)}$ are the individual skill invocations in order $\sigma$.
+
+For parallel compositions with disjoint regions, equivalence holds for every ordering (Theorem 4.1). For sequential compositions, equivalence holds for the given ordering.
+
+**Definition 10.4 (Provenance completeness).** A multi-agent coordination has **complete provenance** if every modification to [the state](../../../../sociology/terms/the-state.md) is traced to an agent, a skill, and an input. Formally, for every fragment $F$ and every element $a \in F$ that differs between the initial and final state, there exists a provenance history in $P(F)$ that records which agent applied which skill with which input to produce $a$.
+
+**Theorem 10.5 (Correctness of parallel fan-out).** A fan-out (Definition 8.1) with pairwise disjoint regions satisfies all four correctness conditions: safety, liveness, equivalence, and provenance completeness.
+
+*Proof.*
+
+- **Safety**: Each worker $A_i|_{R_i}$ uses the region-restricted skillset $K|_{R_i}$, which by definition acts as identity outside $R_i$ (Lemma 3.3).
+- **Liveness**: Workers operate on disjoint regions and share no mutable state (the shared config is read-only). No contention occurs, so no deadlock is possible. The sequential phases (coordinator init and collect) complete if their skills are admissible and handoff predicates are satisfiable.
+- **Equivalence**: By Theorem 8.2, the parallel execution is fragmentwise extensionally equal to any sequential ordering.
+- **Provenance completeness**: Each worker produces an effect report (required by the Agential Semioverse specification, Section on Effect Reports). The coordinator collects these reports. Every modification is traceable to a worker, skill, and input through the individual effect reports.
+
+**Remark 10.6 (Relationship to Petri net properties).** The correctness conditions correspond to standard Petri net properties as described in the [petri-nets-and-lean](../ideas/petri-nets-and-lean.md) specification:
+
+- **Safety** corresponds to **boundedness**: each place (fragment ownership token) has at most one token (one owning agent). The coordination is 1-bounded on ownership places.
+- **Liveness** corresponds to **liveness** in the Petri net sense: every intended transition can eventually fire. For disjoint-region parallelism, all transitions are independent (no shared input places), guaranteeing liveness. For sequential compositions, liveness reduces to reachability of the handoff marking.
+- **Equivalence** corresponds to **confluence**: different firing sequences reach the same marking. For disjoint-region parallelism, this follows from the independence of transitions sharing no input or output places.
+- **Provenance completeness** corresponds to **observability**: every transition firing is recorded. The effect report requirement of the Agential Semioverse ensures that every firing (skill invocation) produces an observable output.
+
+---
+
+## 11. Mixed Coordination
+
+Real workflows combine parallel and sequential phases. We define the general composition.
+
+**Definition 11.1 (Coordination term).** The set $\mathsf{Coord}$ of **coordination terms** is generated by:
+
+$$c ::= A|_R \quad|\quad c_1 \parallel c_2 \quad|\quad c_1 ;_h c_2$$
+
+where $A|_R$ is a region-restricted agent, $\parallel$ is parallel composition (requiring disjoint regions), and $;_h$ is sequential composition with handoff.
+
+**Theorem 11.2 (General coordination correctness).** A coordination term $c \in \mathsf{Coord}$ satisfies safety, liveness, equivalence, and provenance completeness if:
+
+(i) Every $\parallel$ node has children with pairwise disjoint regions.
+
+(ii) Every handoff predicate $h$ in a $;_h$ node is satisfiable given the preceding phase's output.
+
+(iii) Every leaf agent $A|_R$ uses only admissible interaction operators.
+
+*Proof.* By structural induction on $c$. The base case (single agent) is given by the Agential Semioverse specification. The parallel case uses Theorem 5.2. The sequential case uses Lemma 6.4.
+
+---
+
+## 12. Discussion
+
+This specification extends the Agential Semioverse with three capabilities: region-restricted execution, parallel composition over disjoint regions, and sequential composition with typed handoffs. The key insight is that the fragment [lattice](../../../../../../../../information-science-services-section/services/math-services-section/services/order-services-section/content/text/glossary/terms/lattice.md) already provides the locality structure needed for concurrency: if two operators modify disjoint sets of fragments, they commute.
+
+The [sheaf condition](../../../../mathematics/disciplines/higher-topos-theory/terms/sheaf-condition.md) on the fragment fibration (Theorem 15.2 of the Interactive Semioverse) plays a structural role: it guarantees that fragmentwise equality implies global equality, which is what lets us prove that parallel and sequential executions produce the same result.
+
+Three directions remain open:
+
+1. **Overlapping regions.** The non-interference theorem requires disjoint regions. In practice, some operations (e.g., cross-linking) touch fragments in multiple directory subtrees. Extending the theory to handle overlapping regions requires either a locking discipline or a merge operation on conflicting fragment modifications. The sheaf gluing condition (Theorem 15.2) provides a candidate merge semantics, but conflict resolution (when two agents produce incompatible modifications to the same fragment) requires additional structure.
+
+2. **Dynamic region assignment.** The current formalization assigns regions statically before execution begins. A dynamic scheme, where regions are negotiated or reallocated during execution, would require extending the policy function to include region claims and a protocol for resolving competing claims. This connects to the colored Petri net extensions mentioned in the [petri-nets-and-lean](../ideas/petri-nets-and-lean.md) specification.
+
+3. **Lean formalization.** The theorems in this document admit formal proofs in Lean 4. The fragment [lattice](../../../../../../../../information-science-services-section/services/math-services-section/services/order-services-section/content/text/glossary/terms/lattice.md) is a finite distributive [lattice](../../../../../../../../information-science-services-section/services/math-services-section/services/order-services-section/content/text/glossary/terms/lattice.md) (a special case of a [Heyting algebra](../../../../mathematics/concepts/heyting-algebra/index.md)); region restriction is a sublattice operation; commutativity of operators on disjoint sublattices is a standard algebraic fact. A Lean encoding would provide machine-checked guarantees that fan-out and pipeline executions preserve all admissibility conditions.

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       3cd2cd21-1a6b-4adc-9ef3-3a8178b45288
+:END:
+#+title: subcreation
+#+date: [2025-09-10 Wed 22:59]
+

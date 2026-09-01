@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       264ced4d-54fd-45c0-bd49-0374139bb274
+:END:
+#+title: differentiation
+#+date: [2025-09-19 Fri 20:05]
+

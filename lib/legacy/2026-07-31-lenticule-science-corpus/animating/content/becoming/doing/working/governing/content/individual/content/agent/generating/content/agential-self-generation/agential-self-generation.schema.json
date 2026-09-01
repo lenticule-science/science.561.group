@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://561.group/swarm-intelligence/agentic-orchestration-platform/agential-self-generation/agential-self-generation.schema.json",
+  "title": "Agential self-generation (the defining platform property)",
+  "description": "Per platform-opener: 'The defining property is agential self-generation: the operations agents use are themselves entities in the substrate the agents act on. A skill that audits skills is a skill. A shape that validates shapes is a shape. The org chart is in the predication-graph store.' This $thing declares the property's witness for our platform — listing the categories of operations + their substrate-entity status.",
+  "kind": "object",
+  "type": "object",
+  "required": ["operationsAreSubstrateEntities", "examples", "evidence"],
+  "additionalProperties": false,
+  "properties": {
+    "operationsAreSubstrateEntities": { "const": true },
+    "examples": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["operation", "substrateEntity"],
+        "additionalProperties": false,
+        "properties": {
+          "operation": { "type": "string", "minLength": 1 },
+          "substrateEntity": { "type": "string", "minLength": 1 }
+        }
+      },
+      "minItems": 1
+    },
+    "evidence": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  }
+}

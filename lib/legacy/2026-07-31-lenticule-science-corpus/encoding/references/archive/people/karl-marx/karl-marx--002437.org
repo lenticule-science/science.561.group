@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       59c12ad1-ace9-4401-b8e1-fe13542515f8
+:public:   true
+:resource-description: (([[id:edaef069-c68d-46aa-a970-d3cb7fe3165c][resource type]] . [[id:6882cc6d-049d-4c68-866a-67bc57fce725][Homo sapiens]]) ([[id:5950d59a-8d30-47e6-939c-171327e23b44][creator]] . [[id:61f7f4a0-8e58-4f1a-9114-30e296301176][Marxism]]))
+:END:
+#+title: Karl Marx
+#+date: [2025-09-28 Sun 13:53]
+

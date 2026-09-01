@@ -1,0 +1,7 @@
+#+title: Operations Manual
+
+* Projects
+** Burrow Aquaponics
+*** Operations
+**** Routine Operations
+***** Fill hardening basin

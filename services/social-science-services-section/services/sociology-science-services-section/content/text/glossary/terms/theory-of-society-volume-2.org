@@ -1,0 +1,30 @@
+:PROPERTIES:
+:ID:       757b4cd5-9d3b-4b08-9268-62c4692703df
+:public:   true
+:ROAM_REFS: @luhmann_theory_2013
+:END:
+#+title: Theory of Society, Volume 2
+#+date: [2025-10-04 Sat 12:53]
+
+
+* [[id:0638898a-ad87-4dcc-aaa7-1a0634d080e3][resource code]]
+
+** [[id:42f66990-2e7d-4081-8f0e-7eb67b23e1fb][BibTex entry]]
+
+#+begin_src bibtex :canonical yes
+  
+@book{luhmann_theory_2013,
+	series = {Theory of {Society}},
+	title = {Theory of {Society}, {Volume} 2},
+	volume = {2},
+	isbn = {978-0-8047-7160-3},
+	url = {https://www.sup.org/books/sociology/theory-society-volume-2},
+	abstract = {This second volume of Niklas Luhmann's two-part final work was first published in German in 1997. The culmination of his thirty-year theoretical project to reconceptualize sociology, it offers a comprehensive description of modern society.},
+	language = {en},
+	urldate = {2025-10-04},
+	publisher = {Stanford University Press},
+	author = {Luhmann, Niklas},
+	month = aug,
+	year = {2013},
+}
+#+end_src

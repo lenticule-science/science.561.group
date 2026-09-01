@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       074d6f57-3e8b-45a2-8ba3-2a1e315cd2bb
+:END:
+#+title: filename
+#+date: [2025-09-07 Sun 08:36]
+

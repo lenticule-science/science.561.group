@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       c74c9b4e-ae92-4b7f-b577-c90dd57848b0
+:public:   true
+:resource-description: (([[id:edaef069-c68d-46aa-a970-d3cb7fe3165c][resource type]] . [[id:fcbd45c3-0100-4891-b1b1-fe45a8bdf829][expression]]) ([[id:557d79c0-1e0f-45fb-b248-468f23654cc1][creation date]] . [2025-09-08 Mon 23:10]) ([[id:4695cc5c-70e9-442f-8a89-4b14fff5be3e][subject]] . [[id:fee8bcb2-f2ed-42c0-9aa7-44788bf9a5f6][memes]]))
+:END:
+#+title: industrial production of memes
+#+date: [2025-09-08 Mon 23:10]
+#+index: memes!industrial production of memes

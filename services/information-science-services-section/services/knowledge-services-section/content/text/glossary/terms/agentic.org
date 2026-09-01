@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       6b057fe5-74f1-4c71-8e6e-de7ac56bfd4e
+:END:
+#+title: agentic
+#+date: [2025-09-19 Fri 20:27]
+

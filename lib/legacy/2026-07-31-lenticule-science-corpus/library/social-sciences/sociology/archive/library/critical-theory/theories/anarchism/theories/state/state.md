@@ -1,0 +1,14 @@
+---
+title: "State"
+description: "The anarchist analysis of the state — what it is, what it does, why it cannot be captured for liberatory purposes, and what its abolition entails — distinct from but in conversation with the Marxist analysis of the state and the contemporary critical-theoretical analyses of governmentality and biopolitics."
+locates: topic
+component-of: anarchism
+---
+
+The anarchist analysis of the state is the analysis that distinguishes anarchism most sharply from the rest of the socialist tradition. The classical Marxist analysis treats the state as a class instrument that the proletariat must capture (and, eventually, dismantle) on the way to communism. The anarchist analysis refuses the capture step: the state is not a neutral instrument that takes its character from whoever holds it; it is a structure whose operation produces and requires the relations of domination it appears to resolve. A workers' state remains a state, and its operation continues to produce the asymmetries — between rulers and ruled, between organized force and disorganized populations, between law and the lives subjected to it — that are the substance of what the anarchist tradition opposes.
+
+Bakunin's polemics against Marx (1870s) are the foundational texts of this divergence. Bakunin's prediction — that a workers' state would produce a new ruling class composed of party functionaries and intellectuals — was sufficiently borne out by the twentieth century that the anarchist analysis has had little need to argue it again. Contemporary anarchist analysis has extended the position into the analysis of the state's other dimensions: the carceral state (read through [`abolition/`](../../../abolition/) and through Davis and Gilmore), the settler-colonial state (read through [`settler-colonialism/`](../../../povinellian/theories/settler-colonialism/) and through the Indigenous land-defense traditions), the surveillance state, and the welfare state's role in producing dependence as much as in providing care.
+
+The subdomain's term — *the state* — is the discipline-wide anchor for what the analysis names. The substantive work is distributed across the neighboring subdomains and across the texts the anarchism school carries. The relation to Foucault's analysis of governmentality is non-trivial: Foucault's analysis of how power operates through institutions, knowledges, and the production of subjects is structurally adjacent to the anarchist analysis of the state, but the two are not identical, and the question of how to read them together remains live.
+
+The relation to the cybernetic-postliberal analysis of state form (the late-liberal state's operation through administrative withdrawal, regulatory capture, and the franchise of governance to private platforms) is also part of what this subdomain holds — the contemporary state is not the classical state, and the anarchist analysis must reckon with what has changed.

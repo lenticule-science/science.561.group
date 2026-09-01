@@ -1,0 +1,10 @@
+name = "Obsmetrologia"
+defaultTargets = ["Obsmetrologia"]
+
+[leanOptions]
+autoImplicit = false
+relaxedAutoImplicit = false
+pp.unicode.fun = true
+
+[[lean_lib]]
+name = "Obsmetrologia"

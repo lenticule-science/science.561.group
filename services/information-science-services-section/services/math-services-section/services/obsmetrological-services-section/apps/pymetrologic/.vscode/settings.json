@@ -1,0 +1,56 @@
+{
+  // --- interpreter: the WSL-built uv venv (Linux). Requires a Remote-WSL window. ---
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+  "python.terminal.activateEnvironment": true,
+
+  // --- testing: the property-based suite shows up in the Test Explorer ---
+  "python.testing.pytestEnabled": true,
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestArgs": ["packages"],
+
+  // --- Pylance: see the package source without installing ---
+  "python.analysis.typeCheckingMode": "standard",
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.extraPaths": ["packages/pymetrologic/src"],
+  "python.analysis.inlayHints.functionReturnTypes": true,
+  "python.analysis.inlayHints.variableTypes": true,
+
+  // --- ruff is the formatter + import sorter, on save ---
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports.ruff": "explicit",
+      "source.fixAll.ruff": "explicit"
+    }
+  },
+  "ruff.importStrategy": "fromEnvironment",
+
+  // --- mypy strict, using the project config + the venv's mypy ---
+  "mypy-type-checker.importStrategy": "fromEnvironment",
+  "mypy-type-checker.args": ["--config-file=${workspaceFolder}/pyproject.toml"],
+
+  // --- Jupyter: run `# %%` cells in any .py; root at the workspace ---
+  "jupyter.notebookFileRoot": "${workspaceFolder}",
+  "notebook.formatOnSave.enabled": true,
+  "notebook.output.textLineLimit": 60,
+
+  // --- keep the tree and search clean ---
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/*.egg-info": true
+  },
+  "search.exclude": {
+    "**/.venv": true,
+    "**/.pytest_cache": true,
+    "**/.mypy_cache": true,
+    "**/.ruff_cache": true,
+    "**/.hypothesis": true,
+    "**/uv.lock": true
+  },
+  "files.watcherExclude": {
+    "**/.venv/**": true
+  },
+
+  "terminal.integrated.defaultProfile.linux": "bash"
+}

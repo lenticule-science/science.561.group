@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       852b664d-892a-4d80-b0c2-0fd3931c4902
+:END:
+#+title: referent
+#+date: [2025-09-05 Fri 16:24]
+

@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       893f4488-619e-4d32-972c-d0fe6a0f5f3c
+:public:   true
+:END:
+#+title: starting a story
+#+date: [2025-08-25 Mon 08:54]
+*/Starting a story/* is the [[id:32e00173-c695-4bb6-b0d2-9dc17fec128b][act]] of [[id:1bbad071-fa84-42a1-ada3-122d4bb97900][starting]] a [[id:8b841773-a82c-4e01-b77d-bef6c7ee859f][story]]

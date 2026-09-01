@@ -1,0 +1,54 @@
+{{- $dest := .Destination -}}
+{{- $page := .Page -}}
+{{- $parsed := try (urls.Parse $dest) -}}
+{{- $url := $parsed.Value -}}
+{{- $valid := false -}}
+{{- $internal := false -}}
+{{- $href := "" -}}
+{{- if $url -}}
+  {{- $internal = or (not $url.Host) (eq $url.Host "emsenn.net") (eq $url.Host "www.emsenn.net") -}}
+  {{- $path := $url.Path -}}
+  {{- $frag := $url.Fragment -}}
+  {{- if not $internal -}}
+    {{- $valid = true -}}
+    {{- $href = $url.String -}}
+  {{- else if and (eq $path "") (ne $frag "") -}}
+    {{- with $page.Fragments -}}
+      {{- if in .Identifiers $frag -}}
+        {{- $valid = true -}}
+        {{- $href = printf "#%s" $frag -}}
+      {{- end -}}
+    {{- end -}}
+  {{- else if and (ne $path "") (not (strings.Contains $path "|")) -}}
+    {{- $r := try ($page.GetPage $path) -}}
+    {{- $target := $r.Value -}}
+    {{- if $target -}}
+      {{- $fragOk := true -}}
+      {{- if ne $frag "" -}}
+        {{- $fragOk = false -}}
+        {{- with $target.Fragments -}}
+          {{- $fragOk = in .Identifiers $frag -}}
+        {{- end -}}
+      {{- end -}}
+      {{- if $fragOk -}}
+        {{- $valid = true -}}
+        {{- $href = $target.RelPermalink -}}
+        {{- if ne $frag "" -}}
+          {{- $href = printf "%s#%s" $href $frag -}}
+        {{- end -}}
+      {{- end -}}
+    {{- else -}}
+      {{- $staticPath := printf "static/%s" (strings.TrimPrefix "/" $path) -}}
+      {{- if os.FileExists $staticPath -}}
+        {{- $valid = true -}}
+        {{- $href = $url.String -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- if $valid -}}
+  {{- $class := cond $internal "link-internal" "link-external" -}}
+<a href="{{ $href }}" class="{{ $class }}"{{ with $.Title }} title="{{ . }}"{{ end }}>{{ $.Text }}</a>
+{{- else -}}
+{{ $.Text }}
+{{- end -}}

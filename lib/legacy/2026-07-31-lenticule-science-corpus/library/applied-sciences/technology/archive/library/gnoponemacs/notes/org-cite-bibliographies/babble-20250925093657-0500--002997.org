@@ -1,0 +1,36 @@
+:PROPERTIES:
+:ID:       41d87b0a-9457-4fed-a0d6-e4d77d637c83
+:form:     [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]
+:instantiates: [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]
+:author:   [[id:40cbaad9-af3c-4573-b356-ae116687e483][emsenn]]
+:date-created: [2025-09-25 Thu 09:36]
+:END:
+#+title: Babble, [2025-09-25 Thu 09:36]
+#+date: [2025-09-25 Thu 09:36]
+#+author: emsenn
+
+Someone [[id:353ee49d-a20e-436a-ab32-4593207977a3][asked]] me a [[id:daf21c65-7cc5-4238-ad59-058c6f96d758][question]] that led to me wanting to put together a [[id:cafbefe4-8762-41ca-97e7-35e06f9f9073][bibliography]] for the [[id:b7b34e3c-345c-442c-a6f3-9f798a0d1295][social dynamic]] at hand: [[id:bcc2ddef-11dd-4bd9-909a-3e671de0e649][white-coding as retaliation against anti-whiteness displaced into non-white communities]].
+
+(That might take the prize for longest [[id:2ed383fa-7c21-4139-9761-d1d751a799a8][node name]].)
+
+That got me to realizing that I haven't actually used [[id:6d5673b0-6072-4c48-bcee-771e5f3e705c][Org-cite]] since setting it up in [[id:edc48bf0-336b-4b63-8505-a3730b328c9d][GnoponEmacs]]. In part, that's because of [[id:36a1cd4e-fd33-43cf-92ef-0130c2e62a07][anxiety]] about if I'm going to continue with GnoponEmacs over time: the allure of a [[id:bed1ec61-b5fb-4225-a09d-25f646211914][bespoke text editor]] done in [[id:2d55e751-41d9-423a-8898-363f0ea9847f][Fennel]] calls to me. "Is it that same song, that lured the young sailors? I think they're one and the same." ([[id:c0f4be6c-4e6a-4d9b-9801-3a1708dbc3df][The Rainbow Connection]]).
+
+But as I wanted to touch on [[id:27b50a20-e7a9-44d0-a9b8-d5b67647518f][On the process of making dirt]], there's good reasons to keep [[id:64ca3b11-6883-471d-89ae-74fae88e2db8][improving GnoponEmacs]], even as I'm [[id:d9b3e450-2750-4a93-a2fc-a2408da75f39][hoping]] to move past it.
+
+Anyway: I just wanna [[id:f2829f05-2e51-461e-bcaa-c62c396b7cd7][babble]] back through how to use Org-cite, to do whatever I need to properly be able to generate the bibliography at the dynamic I mentioned. This'll be useful too because I've been importing [[id:981370b8-e3d7-4be9-81c0-8c19ffcf08cf][my letters to the Web]], but I don't want those to have the hyperlink saturation that the rest of [[id:0d50b865-57b3-4d6d-aadf-1925457396a4][my research]] tends to have. Instead, I want them to hold more true to the [[id:5dcab411-2668-4b0e-97ab-3c4d3aa4736c][academic genre]], with [[id:2f26ae48-1807-4138-8cf9-135b9f988f8e][in-line citations]] and a bibliography at the end.
+
+I think where I ended was that I never got to the step of writing the [[id:42f66990-2e7d-4081-8f0e-7eb67b23e1fb][BibTex entry]] for a [[id:1f8724a6-960b-494a-8f3c-5cc808d1a922][document]] in that document's [[id:e5474b02-2852-4c8a-91cd-4a683e0db672][Org-roam node]], and figuring out how to bring those all together into a single bibliography file...
+
+So, that's I think my next work - let me try it with [[id:2fcf1671-a1d0-4847-a462-97baa0132ac2][Black Skin, White Masks]]...
+
+---
+
+Okay, so between trying that and now, I ended up spinning up a few functions I've added to GnoponEmacs. They're clunky, but they result in me being able to generate [[id:88c32478-d3e6-47ff-a3a4-b33635ef3764][my bibliography]] into a single file, and lets me write ~:canonical yes~ into a [[id:0b36d24d-3603-4535-96ad-a9fdbeed1632][Org-mode source block]] that's using [[id:9402600d-dc83-4a2f-b381-2532aa6ae248][BibTex]] formatting.
+
+So now I can go and write BibTex entries for the various documents I want to put in the annotated bibliography for this social dynamic, and then I can generate the global bibliography and cite it.
+
+I'd love to improve it so that the BibTex entry code blocks draw on the Org-roam node data to complete itself, rather than be hardcoded in... I might look at that after a short break, because then I can prevent duplicating effort down the line.
+
+(Generally, I'm seeing that i want to encode stuff at the Org-roam node level if I can, at the Org-mode subtree if I can't, and only if I can't do that, coding it deeper.)
+
+Unfortunately I think that brings me to a thing I've been procastinating, which is writing parsers for handling that stuff! I've kind of looked around the idea before, but now it seems clear that i'm going to want a way to have a property that points to the full node - link and anchor - and translate that into just the anchor text, or just the ID text, consistently.

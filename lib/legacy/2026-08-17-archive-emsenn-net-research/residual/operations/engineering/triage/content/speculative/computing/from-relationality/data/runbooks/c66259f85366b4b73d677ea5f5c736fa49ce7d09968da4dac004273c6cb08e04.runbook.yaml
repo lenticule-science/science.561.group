@@ -1,0 +1,22 @@
+name: fixed_dynamics_build
+inputs:
+- role: flow_map
+  kind: flow_map
+- role: fixed_invariants
+  kind: fixed_invariants
+outputs:
+- role: fixed_dynamics
+  kind: fixed_operator
+steps:
+- name: fixed_dynamics_build
+  operator: fixed_dynamics_build
+  step_index: 0
+  inputs:
+  - role: flow_map
+    kind: flow_map
+  - role: fixed_invariants
+    kind: fixed_invariants
+  outputs:
+  - role: fixed_dynamics
+    kind: fixed_operator
+id: c66259f85366b4b73d677ea5f5c736fa49ce7d09968da4dac004273c6cb08e04

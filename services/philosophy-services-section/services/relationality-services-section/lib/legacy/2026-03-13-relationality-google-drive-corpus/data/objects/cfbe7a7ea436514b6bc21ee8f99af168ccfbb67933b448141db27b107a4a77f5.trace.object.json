@@ -1,0 +1,12 @@
+{
+  "elements": [
+    "a",
+    "b"
+  ],
+  "head": "a",
+  "id": "cfbe7a7ea436514b6bc21ee8f99af168ccfbb67933b448141db27b107a4a77f5",
+  "kind": "trace",
+  "tail": [
+    "b"
+  ]
+}

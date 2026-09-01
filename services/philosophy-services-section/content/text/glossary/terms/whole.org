@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       a8fd2d30-861c-4341-b39f-90d9899a88b5
+:END:
+#+title: whole
+#+date: [2025-09-01 Mon 07:50]
+

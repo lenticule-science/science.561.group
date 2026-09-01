@@ -1,0 +1,14 @@
+{"brutstrap-css": {
+    "name": "Brutstrap CSS",
+    "creator": "emsenn",
+    "license": "CC0",
+    "description": "a cascading stylesheet for representing HTML content as it is constructed.",
+    "versions": {
+	"current": {
+	    "sourcehut": {
+		"location": "https://git.sr.ht/~emsenn/brutstrap-css/blob/master/",
+		"formats": ["html","md","pdf","tex","txt"]
+	    }
+	}
+   }
+}}

@@ -1,0 +1,211 @@
+---
+type: narrative
+status: current
+discusses:
+  - predication-fiber-algebra
+  - predication-settling
+  - bitopological-settling-site
+  - d-frame
+  - d-frame-valued-sheaf
+  - four-regime-dichotomy
+  - cohomological-framework
+  - strong-mld-via-composed-duality
+  - bilattice-network-sheaf-consensus
+  - hansen-ghrist-spectral-engagement
+  - felber-task-sheaf-d-frame-translation
+  - unified-distributed-systems-cohomology
+---
+
+# State of the theory
+
+Predication categories has been growing in distinct directions long enough that the chapter no longer describes itself accurately by listing what it contains. This narrative is a survey: what the theory is centrally about, what its structural skeleton looks like at the present moment, what is genuinely established versus what is load-bearing-sketch, where the unresolved tensions are, and what the recent work has added.
+
+The corpus currently has 178 theorems, 95 examples, 58 questions, 69 narratives, 96 reference annotations, 74 objects, 36 concepts, and a substantial Python toolkit. By raw count the chapter is large; by the count of *load-bearing* mathematical claims and of cross-framework verifications the chapter is much smaller, and this gap is itself a piece of the present state worth naming.
+
+## What the theory is centrally about
+
+The corpus is the categorical study of **bilattice- and quantale-valued predication structures** — predicate-categorical relation cells fibered over a small predicate category, refined into predication hyperdoctrines, dualized through Priestley correspondence onto bitopological sites, and stratified by the cohomology and moduli of the resulting settling dynamics. The chief application that drove the chapter's development is *spatiotemporal knowledge*: modeling how relations between entities settle over space and time, with paraconsistent disagreement as first-class content rather than an error condition. Other applications — CRDTs, distributed-systems causal histories, ludics — sit inside the same categorical apparatus.
+
+The chapter's distinctive content, which differentiates it from the surrounding bilattice / Priestley / sheaf-cohomology / distributed-systems literatures, is the *combination*: bilattice values (paraconsistency-native), settling dynamics (transfinite-temporal), bitopological / d-frame duals (pointfree spatial structure), and cohomological invariants of the resulting site. No one of these is novel individually; the combination — and the resulting four-regime classification of settling behavior — is what the corpus is for.
+
+## The structural skeleton
+
+The chapter has a layered architecture, visible in the opener narratives:
+
+**Foundational layers (predication structure).** [Predication structure opener](predication-structure-opener.md), [bilattice-prelims opener](bilattice-prelims-opener.md), [four-generators opener](/predication-categories/library/predication-cell-complex-site/content/explanations/exhaustiveness-of-four-predication-cell-complex-site-generators.md). Establishes the bilattice as the value domain, the predicate category as the indexing, the predication fiber algebra $A_q = \mathbf L^{\bowtie\, E \times E}$ as the per-predicate value space, and the four predicate-category generators (specialization, converse, subject-projection, object-projection) as the generators of all reindexing.
+
+**Closure / settling dynamics.** [Closure machinery opener](closure-machinery-opener.md), [settling dynamics opener](settling-dynamics-opener.md), [regime stratification opener](regime-stratification-opener.md). The closure-2-monad framework for inferential rule application; the settling as a transfinite $\leq_k$-monotone $\leq_k$-continuous orbit; the four-regime dichotomy classifying settlings by closure ordinal $\kappa \in \{<\omega, \omega, (\omega, \omega_1), \geq \omega_1\}$.
+
+**Hyperdoctrine / categorical layer.** [Hyperdoctrine layer opener](hyperdoctrine-layer-opener.md), [predication-fibers-as-linear-logic-models](predication-fibers-as-linear-logic-models.md), [not-a-tripos](not-a-tripos.md). The predication hyperdoctrine refining the fiber algebra into a fibration; the connection to (and divergence from) Lawvere–Seely hyperdoctrines, triposes, linear-logic models.
+
+**Priestley duality / bitopological site.** [Priestley duality opener](priestley-duality-opener.md), [priestley-sheaf-lineage](priestley-sheaf-lineage.md), [internal-gauge-and-priestley-swap](internal-gauge-and-priestley-swap.md). Jung–Rivieccio duality, the paired-Priestley space dual to a distributive bilattice, the bitopological settling site over $\mathcal C^{\mathrm{op}} \times \lambda^{\mathrm{op}}$.
+
+**Cohomology layers.** [Bilattice-cohomology opener](bilattice-cohomology-opener.md), [bigraded-cohomology opener](bigraded-cohomology-opener.md), [verdier-duality opener](verdier-duality-opener.md), [d-frame-cohomology methodology](d-frame-cohomology-methodology.md), [three-cohomological-frameworks](three-cohomological-frameworks.md). Multiple cohomology theories on the bitopological site: $\mathbf{Ab}$-valued shadow sheaves, d-frame-valued sheaves, q-enriched cellular sheaves, the Tarski / Lawvere Laplacian framework; the four cohomological frameworks running in parallel.
+
+**Distributed-systems / agentic strand.** [CRDT applications opener](crdt-applications-opener.md), [crdts-and-calm](crdts-and-calm.md), [distributed-systems topology relation](distributed-systems-topology-relation.md), [toward agentic swarm theory](toward-agentic-swarm-theory.md). The CRDT / Mayer–Vietoris / cohomological-CALM machinery; the multi-observer system; the network-sheaf-on-agent-graph specialization; the engagement with Hansen–Ghrist, Felber et al, Lopez 2024, Halpern–Moses, Fagin–Halpern–Moses–Vardi.
+
+**Modal / paraconsistent / moduli.** [Modal calculus opener](modal-calculus-opener.md), [paraconsistent variants opener](paraconsistent-variants-opener.md), [moduli layer opener](moduli-layer-opener.md), [deformation-theory opener](deformation-theory-opener.md). Lifting the bilattice / d-frame structure into modal logics (twist-modal translation), classifying paraconsistent variants, moduli of settlings, deformation theory of the structures.
+
+These layers are not strictly sequential — they interpenetrate. The cohomology layers depend on the Priestley-dual layer; the agentic-swarm layer depends on the cohomology and the bilattice value domain; the modal layer depends on the predication-structure foundation but extends in a different direction from cohomology. The chapter is more of a *braid* than a *ladder*.
+
+## Status reality check
+
+Theorem-status counts:
+
+- **Proved:** 159
+- **Sketch:** 18
+- Open / draft / refuted: 0
+
+Question-status counts:
+
+- **Open:** 42
+- **Partial:** 15
+- **Resolved:** 0
+
+The 159 proved / 18 sketch ratio is *misleading without context*: a small number of sketch theorems sit at structural high points, with many "proved" theorems depending on them. Specifically (per [three-cohomological-frameworks](three-cohomological-frameworks.md) and the [d-frame cohomology framework narrative](d-frame-cohomology-framework.md)):
+
+- [Q-enriched Curry on Grothendieck sites](../theorems/q-enriched-curry-grothendieck-site.md): **sketch**. The structural assembly theorem connecting per-fiber Curry to global cohomology.
+- [Q-enriched Curry on CW complexes](../theorems/q-enriched-curry-cw-complex.md): **sketch**. The induction step from finite graphs and 2-dim degree-0 to general CW.
+- [Verdier duality on bitopological site](../theorems/verdier-duality-bitopological-site.md): **sketch**. Threads through the previous two.
+- [D-frame Verdier composition]: **sketch** (only relevant in the strong-MLD chain).
+- [Strong-MLD via composed duality](../theorems/strong-mld-via-composed-duality.md): **sketch** (recently demoted from proved). The chapter's deepest classification result.
+- [Q-enriched cohomology higher-degree vanishing](../theorems/q-enriched-cohomology-higher-degree-vanishing.md): **sketch** (recently demoted). Depends on the Lawvere Laplacian extension sketch.
+- [Lawvere Laplacian on Grothendieck sites](../theorems/lawvere-laplacian-grothendieck-sites.md): **sketch**. Layer 1 of the cellular extension plan.
+- The transfinite-bounded and aperiodic-regime d-frame cohomology theorems: **sketch** in the current chain.
+
+Two proved layers sit cleanly without sketch dependencies:
+
+- The strict and Scott-continuous regime cohomology theorems (Framework 2: Tarski Laplacian on discrete-points fiber) are proved end-to-end; they cover the $\kappa \leq \omega$ regimes.
+- The CRDT / Mayer–Vietoris / cohomological-CALM trio is proved, including the recent network-sheaf-on-agent-graph specialization and the bilattice extension. This is the corpus's load-bearing distributed-systems content.
+
+The recent agentic-swarm work sits cleanly: every theorem reduces componentwise to either (a) the proved CRDT machinery or (b) the proved abelian-shadow theorems, with bilattice / d-frame extension via the d-frame cohomology comparison theorem (proved). No new sketch dependencies were introduced.
+
+## The four cohomological frameworks
+
+The corpus computes "cohomology of a settling" via four parallel frameworks (per the [cohomological-framework concept](../concepts/cohomological-framework.md) and the [three-cohomological-frameworks narrative](three-cohomological-frameworks.md)):
+
+- **Framework 1 — substitution-matrix Anderson–Putnam.** Computational, working. The benchmark suite runs on this. Does not prove abstract theorems.
+- **Framework 2 — Tarski Laplacian on discrete-points fiber.** Proves strict / Scott-continuous regime d-frame cohomology theorems. Treats fibers as discrete topological spaces.
+- **Framework 3 — cellular sheaf on order complex of clopen lattice (Q-enriched, parallel-pair convention).** The per-fiber Curry equivalence chain lives here. The downstream Verdier / d-frame Verdier / strong-MLD chain threads through this.
+- **Framework 4 — Lawvere-Laplacian Q-enriched (weighted-meet convention).** Theoretical scaffolding for higher-degree-vanishing theorems. Not concretely computed against any specific settling.
+
+These frameworks should agree where they overlap, but the corpus has only **one verified concrete agreement** at this writing: Framework 2 ↔ Framework 3 on the standard Belnap fiber, $H^0$ component, via the [per-fiber d-frame Curry on the Belnap fiber example](../examples/per-fiber-d-frame-curry-on-belnap-fiber.md) (5 passes complete). Frameworks 1 ↔ 2, Frameworks 1 ↔ 3, Frameworks 3 ↔ 4 — none of these has a single verified concrete cross-framework agreement on a specific settling. Frameworks 2, 3, 4 *give the same headline results* on the spaces where multiple are computable, but the agreement is by structural argument, not computational verification.
+
+This is the chapter's most significant unresolved tension: the cohomology spine is multi-pathed and the paths have not been concretely shown to land at the same place except in one case.
+
+## The four-regime stratification
+
+The [four-regime dichotomy](../theorems/four-regime-dichotomy.md) is the chapter's central organizing structural fact. Every settling falls into exactly one of four regimes by its closure ordinal $\kappa$:
+
+| regime | $\kappa$ | $H^1$ | classification | status |
+|---|---|---|---|---|
+| Strict | $< \omega$ | $0$ | Designated-cell counts | proved end-to-end |
+| Scott-continuous | $= \omega$ | $0$ | Polynomial in settling length | proved end-to-end |
+| Transfinite-bounded | $\omega < \kappa < \omega_1$ | non-zero, $H^1$-generators per NSC firing | Tarski–Lawvere fixed-point at countable cofinality | sketch chain |
+| Aperiodic | $\geq \omega_1$ | direct-limit of countable truncations | Anderson–Putnam classifying invariant | sketch chain |
+
+The strict and Scott-continuous regimes are clean. The transfinite-bounded and aperiodic regimes have proved structural arguments at the chapter's standard rigor, but those arguments rest on the cohomology-spine sketch chain. The aperiodic-regime classification — *aperiodic settlings up to MLD-equivalence are classified by their $H^1$-class in a direct-limit cohomology* — is the chapter's deepest result and the highest-risk one.
+
+The benchmark suite (7 substitutions: Fibonacci, Tribonacci, Tetranacci, Padovan, Thue–Morse, plus computational variants) verifies the orbit-type classification *on each specific case* via Framework 1. This is empirical evidence that the abstract classification is correct on the cases checked; it is not a proof.
+
+## What the recent work has added
+
+The agentic-swarm-theory strand (developed across the last few sessions) has substantially extended the chapter into the multi-agent / distributed-systems literature, with the following concrete additions:
+
+**Network-sheaf-on-agent-graph reformulation** ([network-sheaf consensus on agent graphs](../theorems/network-sheaf-consensus-on-agent-graphs.md), proved). The corpus's CRDT / Mayer–Vietoris / cohomological-CALM trio specialized to the standard distributed-systems setting: $O = \hat G$ is the incidence poset of a finite agent graph $G$. Five claims (consensus, disagreement-paraconsistency, coordination-freeness, CALM-compatibility, higher-cohomology vanishing), each citing an existing proved corpus theorem. Reformulation work: the chapter is now legible to readers familiar with Hansen–Ghrist / Lopez / Felber.
+
+**Bilattice extension** ([bilattice network-sheaf consensus on agent graphs](../theorems/bilattice-network-sheaf-consensus.md), proved). The d-frame-valued analog of the previous theorem. Six claims, each reducing componentwise to the abelian shadow + relational inheritance via the d-frame cohomology comparison. The corpus's distinctive content: paraconsistency-from-disagreement is captured natively at the d-frame level via $\mathrm{con}$-failure at $\top$-witness cells.
+
+**Per-observer rule extension** ([CRDT convergence with per-observer rules](../theorems/crdt-convergence-with-per-observer-rules.md), proved; [multi-observer system with rules](../objects/multi-observer-system-with-rules.md), object). Distinguishes evidence-layer disagreement from inferential-layer disagreement; observer-specific rule systems are first-class. The structural extension of the multi-observer-system needed for Direction 2 (Brewka–Eiter multi-context-systems engagement) of the swarm-theory plan.
+
+**Hansen–Ghrist spectral engagement** ([hansen-ghrist-spectral-engagement question](../questions/hansen-ghrist-spectral-engagement.md), passes 1+2 done, 3–4 open). The corpus and Hansen–Ghrist 2019 *agree on the consensus space* ($\Gamma = \lim V_G = H^0 = \ker L_F$); they *characterize it via complementary machinery* (corpus: Mayer–Vietoris obstruction-vanishing across all replica covers + bilattice extensibility; Hansen–Ghrist: spectral gap + convergence rate + Hodge orthogonal decomposition). Hansen–Ghrist's spectral apparatus *structurally cannot extend* to bilattice / d-frame values — no canonical inner product on $\mathbf B$, no canonical adjoint of d-frame morphisms, no $\Delta_F$-style operator on heterogeneous d-frame components. This is a substantive structural finding, not just a methodological choice on the corpus's part.
+
+**Felber task-sheaf d-frame translation** ([felber-task-sheaf-d-frame-translation question](../questions/felber-task-sheaf-d-frame-translation.md), pass 1 done, 2 partial, 3–4 open). Felber et al's task-sheaf stalks are *frames* (powersets of output sets), with restrictions $\vee$-preserving frame morphisms; the lift to $\mathbf{Ab}$ via $\mathbb Z[-]$ is computational, not structural. **Both Felber's task sheaves and the corpus's settling-associated sheaves share $\mathbf{Frm}_\vee$ as a common value category** — partially settling Sub-question 1 of the [unified distributed-systems cohomology question](../questions/unified-distributed-systems-cohomology.md) affirmatively. The d-frame extension of Felber's task sheaf is structurally available, refining Felber's binary valid/invalid into Belnap's $\mathbf t$/$\mathbf f$/$\top$/$\bot$.
+
+**Three corpus-wide sub-questions opened (not yet pursued in depth):**
+
+- *Pass 3 / 4 of Hansen–Ghrist engagement.* Lopez 2024 fuzzy-adjoint as the bilattice-flavored quantale-graded analog; Lawvere Laplacian convergence rate as the corpus-side fixed-point analog of spectral gap. Both substantial research-program continuations.
+- *Pass 2 (proof) and Pass 3 of Felber engagement.* The d-frame analog of Felber's Theorem 20 is constructed-but-not-proved; the cohomological-CALM analog for task sheaves is statable on this footing but not yet stated formally.
+- *The remaining sub-questions of the unified-distributed-systems-cohomology question.* Sub-question 2 (does cohomological-CALM generalize?) and Sub-question 3 (mixed-system frameworks) — both are now downstream of the partially-settled Sub-question 1.
+
+**Four reference annotations** added (Brewka–Eiter 2007, Sznitman 1991, Dung 1995, Fagin–Halpern–Moses–Vardi 1995), establishing the chapter's literature engagement for Directions 2, 4, 5 of the swarm-theory plan.
+
+## Post-bigraded-common-knowledge update (May 2026, with subsequent audit)
+
+A session pursued four directions in sequence — bigraded common knowledge, tropical rank-collapse classification, Lawvere-Laplacian on a 4-cycle, six-functor formalism consolidation — followed by an audit that identified theory-internal vs theory-external content and revised accordingly.
+
+**Pursuit 1 — Bigraded common knowledge** (theory-internal, retained). The K-axiom Pass 1 result (the corpus's natural K-axiom is bigraded K = K-truth ⊕ K-knowledge, derived from the [predication hyperdoctrine](../objects/predication-hyperdoctrine.md)'s two parallel adjoint systems) elevates to a bigraded common-knowledge construction. The [bigraded common knowledge theorem](../theorems/bigraded-common-knowledge.md) (sketch) defines $C^t \phi$ and $C^k \phi$ as two independent greatest fixed points using corpus operators on corpus objects (modal-necessity operator, bilattice-accessibility relation, predication fiber algebra). On benchmark-5, these have different bottoms — $C^t p = (\mathbf{f},\mathbf{f},\mathbf{f})$, $C^k p = (\bot,\bot,\bot)$ uniformly — interpreted in framework terms as truth-axis-bottom vs knowledge-axis-bottom settling outcomes. Settles sub-task 5f of the [bilattice K-axiom multi-agent epistemic question](../questions/bilattice-k-axiom-multi-agent-epistemic.md). For positioning relative to the public common-knowledge literature (Halpern-Moses, BEAK, Bílková-Frittella-Kozhemiachenko), see the [bigraded common knowledge position narrative](bigraded-common-knowledge-position.md).
+
+**Pursuit 2 — Continuous-V settling rank-stability** (theory-internal after audit, rederived). The original framing was "tropical rank-collapse classification" — a fact about iterated tropical matrix products. The audit identified this as a generic-tropical-algebra statement with a corpus-vocabulary label. The rederived [tropical rank-collapse classification theorem](../theorems/tropical-rank-collapse-classification.md) is now stated settling-internally: characterizes which weight assignments produce continuous-V step-$n$ settlings $v_\mathcal{S}^{(\mathcal{V}, w)}$ with non-degenerate rank-$n$ classifying invariants. The weight-stability cone $\mathcal{S}_\mathcal{S}$ is now a corpus-internal object (a property of the substitution rule), with tropical matrix algebra used as the proof apparatus rather than the theorem's subject. Stale earlier claims about "Tribonacci shape-forced collapse" in [continuous-V step-$n$ theorem](../theorems/continuous-valued-step-n-cohomological-rank.md) Part 6b and the [q-enriched aperiodic question](../questions/q-enriched-aperiodic-direct-limit-cohomology.md) were corrected.
+
+**Pursuit 3 — Lawvere-Laplacian on a 4-cycle** (theory-external, refuted). The audit identified this as the most egregious case: a computation on a generic simplicial 1-complex with constant V-sheaf, with comparison to classical cellular cohomology as an external reference frame. Neither the cohomology object nor the comparison was theory-internal. The [Lawvere-Laplacian H^1 cycle theorem](../theorems/lawvere-laplacian-h1-cycle-classical-divergence.md) is now marked `refuted` and retained as an audit record; the [higher-genus extension question](../questions/lawvere-laplacian-higher-genus-test.md) is now `closed`. The corpus's actual V-Cat $H^1$ on corpus objects is fully addressed by existing theorems: [aperiodic-regime cohomology via direct limit](../theorems/aperiodic-regime-cohomology-via-direct-limit.md), [step-$n$ cohomological rank theorem](../theorems/step-n-cohomological-rank-theorem.md), [continuous-V step-$n$ theorem](../theorems/continuous-valued-step-n-cohomological-rank.md). These give rank-$n$ classifying-invariant content on substitution settlings, not constants-only.
+
+**Pursuit 4 — Six-functor formalism consolidation** (theory-internal, retained). The [six-functor question file](../questions/six-functor-formalism-for-settling-cohomology.md) (now `partial`) records that the corpus had all declared required functors $(\Phi^*, \Phi_*, \Phi^!, \Phi_!, \otimes, \mathcal{H}om) + \mathbb{D}$ and the four key axioms at proved-or-sketch level — across [closed monoidal](../theorems/q-enriched-sheaf-closed-monoidal-structure.md) (proved), [Verdier duality](../theorems/verdier-duality-bitopological-site.md) (proved), [direct/inverse image](../theorems/q-enriched-sheaf-direct-inverse-image.md) (proved/sketch). Bookkeeping consolidation; downstream refinements (proper-morphism characterization, dualizing complex, etc.) remain open.
+
+**Audit lessons.** The audit identified a class of work that pattern-matched the corpus's surface vocabulary (V-Cat, Lawvere-Laplacian, Q-enriched cohomology, weighted matrices) without engaging the framework's primitives. The corpus's framework gets its content from the s→o-oriented [predication cell](../concepts/predication-cell.md) and its consequences (predicate category with its four irreducible generators including converse, fiber algebras over $E \times E$, settlings on the bitopological settling site). Stripping the framework down to objects without this orientation (generic simplicial complexes, generic tropical matrices, etc.) loses exactly the content the framework's theorems are about. The audit's standard: a theorem is theory-internal if both its statement and its proof derive from corpus primitives, with external comparisons relegated to narratives.
+
+The track produced two retained theorems (bigraded common knowledge, KZ-diamond strict commutation), one rederived theorem (continuous-V settling rank-stability), one refuted theorem (Lawvere-Laplacian H^1 on a 4-cycle), and one consolidation question (six-functor formalism). Two narratives now hold the comparative framing relocated from theorems: [bigraded common knowledge position](bigraded-common-knowledge-position.md).
+
+## Active tensions
+
+The chapter's main load-bearing tensions, in roughly ranked order of how much rests on them:
+
+1. **Cross-framework agreement.** Only one concrete instance verified (Frameworks 2 ↔ 3 on the standard Belnap fiber, $H^0$). The strong-MLD theorem and the higher-cohomology vanishing theorem assume framework agreement implicitly; the [per-fiber Curry working question](../questions/per-fiber-curry-on-clopen-lattice-fiber.md) is the potential site for verifying further cases.
+
+2. **The cohomology-spine sketch chain.** Q-enriched Curry on Grothendieck sites → Verdier duality on bitopological site → d-frame Verdier composition → strong-MLD. Each is sketch; the strong-MLD theorem inherits sketch status as a result. Tightening this chain would require either filling in the sketch arguments at the chapter's standard rigor, or deriving the headline results via a different framework path.
+
+3. **The Lawvere Laplacian extension's central claim.** Layer 1 of the [cellular extension plan](cellular-extension-plan.md) — establishing sheaf-compatibility of the Lawvere Laplacian on Grothendieck sites independent of cover cardinality. Currently sketch with the proof argument citing Kelly 1982 / Stubbe 2005 informally. Tightening this is necessary for the transfinite-bounded and aperiodic regime cohomology theorems' chains.
+
+4. **The benchmark-empirical / abstract-theory gap.** The benchmark suite verifies orbit-type classification via Framework 1 on 7 specific substitutions. The abstract strong-MLD theorem (Framework 3/4 chain) is structurally argued. These are *independent* supports for the same conclusion, not joint — a benchmark verification on a substitution does not constitute evidence that the abstract proof is sound, and vice versa.
+
+5. **D-frame value category vs Hilbert-analytic frameworks.** The Hansen–Ghrist spectral engagement question's Pass 2 establishes that the corpus's distinctive content (bilattice / d-frame values) *structurally cannot import* the Hilbert-analytic spectral apparatus. The Lopez 2024 fuzzy-adjoint and Ghrist et al 2025 Lawvere-Laplacian frameworks are the corpus's substitutes; whether they actually compute spectral-analog content (convergence rate, eigenvalue gap) remains open in Pass 4 of that engagement question.
+
+6. **Per-observer rules and inferential-layer disagreement.** The per-observer-rule extension is recent and not yet integrated with the broader closure-2-monad framework. The natural follow-up — when do per-observer rules give a CALM-compatible system? — is the cohomological-CALM-with-per-observer-rules question, not yet stated as a theorem.
+
+## Position in the broader landscape
+
+The chapter currently sits in the following relationships to its surrounding literatures:
+
+**Bilattice / paraconsistent logic.** The chapter inherits the Belnap–Fitting–Ginsberg–Bou–Rivieccio lineage and contributes the *categorical / cohomological* extension: bilattice values not just as an algebraic object but as an enriching base for the cohomology of distributed-systems settings.
+
+**Stone / Priestley / pointfree topology.** The chapter uses Jung–Rivieccio duality and the bitopological reformulation; it contributes the d-frame-valued sheaf cohomology on the bitopological settling site as a new application.
+
+**Cohomology of cellular sheaves.** The chapter is in the Hansen–Ghrist / Riess / Ghrist-Riess / Ghrist et al / Lopez / Curry literature, contributing the bilattice / d-frame extension and the regime-stratified cohomology classification. The Hansen–Ghrist spectral engagement question's structural-obstruction finding is a contribution: the bilattice extension is genuinely orthogonal to the spectral apparatus, not just methodologically distinct.
+
+**Distributed systems / CRDT / cohomological-CALM.** The chapter is in the Hellerstein–Alvaro / Shapiro et al / Felber et al lineage, contributing the cohomological framing of CALM (cohomological-CALM theorem), the bilattice extension of distributed knowledge representation, and now (with Felber engagement Pass 1) the structural identification of common $\mathbf{Frm}_\vee$-valuedness across both sides of the unified-distributed-systems-cohomology question.
+
+**Multi-agent epistemic logic.** The chapter has its headline framework-internal content: the [bigraded common knowledge theorem](../theorems/bigraded-common-knowledge.md) (sketch) defines $C^t \phi$ and $C^k \phi$ as two independent greatest fixed points (truth-axis and knowledge-axis), derived from the [predication hyperdoctrine](../objects/predication-hyperdoctrine.md)'s two parallel adjoint systems. On benchmark-5 these have different bottoms (truth-axis $\mathbf{f}$ vs knowledge-axis $\bot$) — interpreted in framework terms as distinct settling-state outcomes. The full bilattice K-axiom soundness/completeness theorem (frame class, soundness, completeness, MLD-as-refined-equivalence) — Direction 4's broader research-program scope — remains open. For positioning relative to public-literature common-knowledge frameworks, see the [bigraded common knowledge position narrative](bigraded-common-knowledge-position.md).
+
+**Aperiodic dynamics / substitution tilings.** The chapter is in the Anderson–Putnam / Sadun / Berthe et al lineage, contributing the strong-MLD orbit-type classification and the regime-stratified cohomology. The connection to Anderson–Putnam direct limits in the aperiodic regime is the corpus's structural bridge to this literature.
+
+**Argumentation / nonmonotonic reasoning.** The chapter has the Dung 1995 reference annotation now and the structural translation outlined (arguments ↔ bilattice judgments, attack relation ↔ disagreement, acceptable extensions ↔ d-frame consensus sections). The actual translation theorem is not stated.
+
+**Mean-field / interacting particle systems.** The chapter has the Sznitman 1991 reference annotation but no scaling-limit content yet. Direction 5 of the swarm-theory plan is research-program-scale.
+
+The chapter is *engaged* with each of these literatures via reference annotations and structural narratives. It has *contributed substantively* to the cellular-sheaf / cohomological-CALM / bilattice-extension literatures. The other engagements (multi-agent epistemic, argumentation, mean-field) are at the *foundations-laid* stage — the corpus has the structural pieces in place to develop the contribution but has not yet developed it.
+
+## What this survey is and is not
+
+This narrative is a *current-state* document. It is not normative — the chapter is not committed to filling in the sketch chain, completing Pass 3 of Hansen–Ghrist, proving the d-frame analog of Felber's Theorem 20, or any other specific next step. The chapter is structured for organic extension: the next session's work will determine which of the open directions get pursued.
+
+The survey *does* commit to the following as honest:
+
+- The 159-proved / 18-sketch ratio overstates structural completeness; the cohomology spine has sketch links that taint many "proved" downstream theorems.
+- Cross-framework agreement is verified in *one* concrete case; the chapter's headline results (strong-MLD, higher-cohomology vanishing) currently rely on framework agreement assumed at the structural-argument level rather than verified concretely.
+- The recent agentic-swarm work introduces no new sketch dependencies; it sits cleanly on the proved CRDT machinery and the proved abelian-shadow / d-frame-comparison theorems. This is the chapter's most rigorously-grounded recent expansion.
+- The bilattice / d-frame value category is the chapter's distinctive content. It blocks Hansen–Ghrist's spectral apparatus from extending (a structural result, not a deficiency); it gives the chapter a natural place in the Felber-side literature via shared frame-valuedness; and it generates the orbit-type classification specific to the chapter via the strong-MLD theorem chain.
+
+The survey leaves *unresolved* the question of which structural direction the chapter should next prioritize. The four most-natural follow-ups, in roughly ranked order of how much they would consolidate existing work:
+
+1. **Compute the per-fiber Curry in further cases.** Each new placement on the standard Belnap fiber adds a verified instance of Framework 2 ↔ Framework 3 agreement; richer paired-Priestley fibers ($\mathbf L = \mathbf 3, \mathbf 4$) test the framework correspondence beyond the simplest case.
+2. **Tighten the Lawvere Laplacian Layer 1 sketch** with rigorous citations from Kelly 1982 / Stubbe 2005, removing the central sketch from the cohomology spine.
+3. **Carry out Pass 2 of the Felber engagement** (the proof of the d-frame analog of Theorem 20) — the structural pieces are in place; the work is execution.
+4. **Promote the post-bigraded-common-knowledge sketch theorems toward proved status** — the surviving content from the post-audit pursuit track: bigraded common knowledge, KZ-diamond strict commutation, continuous-V settling rank-stability (rederived from the original tropical-rank-collapse classification). Plus their natural follow-up questions: polyhedral structure of the weight-stability cone $\mathcal{S}_\mathcal{S}$ for each substitution rule, the relation between the corpus's two distinct "bigraded" structures (cohomology bigrading vs common-knowledge bigrading).
+
+None of these is unique-as-priority. The chapter's structure is more legible now than before this session's work; the specific direction of next push is an open editorial decision rather than a forced hand.
+
+## Position in predication categories
+
+This narrative is a *survey*, not an opener or a methodology piece. It complements the [three-cohomological-frameworks narrative](three-cohomological-frameworks.md) (which gives the meta-level honest accounting of the cohomology side specifically) and the [toward-agentic-swarm-theory narrative](toward-agentic-swarm-theory.md) (which gives the tactical study plan for the swarm-theory direction specifically). Where those two narratives go deep into specific structural content, this one is *broad*: it surveys the whole chapter's current state in a form a returning reader can use to orient themselves in a single document.
+
+A natural cadence: this survey gets refreshed when major structural changes happen — when sketch links get filled, when new strands open, when the four cohomological frameworks get further agreement evidence, when the swarm-theory plan's later directions get substantively pursued. The current refresh is dated by the work it cites: the recent agentic-swarm theorems (network-sheaf consensus on agent graphs, bilattice extension, per-observer-rule CRDT convergence) and the engagement questions (Hansen–Ghrist, Felber) all from the May 2026 work.

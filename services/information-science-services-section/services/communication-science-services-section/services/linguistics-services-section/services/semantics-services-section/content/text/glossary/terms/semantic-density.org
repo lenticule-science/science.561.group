@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       d82bec51-50a9-4a85-869a-6f45aa1d7577
+:END:
+#+title: semantic density
+#+date: [2025-09-04 Thu 20:07]
+

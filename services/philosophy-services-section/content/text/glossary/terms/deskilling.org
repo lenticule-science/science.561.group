@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       dd04f88f-a63c-48f8-9021-dc0f1a9bf979
+:node-relations: (([[id:bb02d1c8-34ba-44fa-8975-521b5ec337f8][negating]] . [[id:14f0e931-3561-41e5-b494-ce2dafa486ba][skilling]]) ([[id:cd6999ae-aa5d-4e13-8711-076e86d43b22][cause]] . [[id:c83e696d-09d9-4ad5-88fb-10d198ac923d][automation]]))
+:END:
+#+title: deskilling
+#+date: [2025-09-27 Sat 10:21]
+

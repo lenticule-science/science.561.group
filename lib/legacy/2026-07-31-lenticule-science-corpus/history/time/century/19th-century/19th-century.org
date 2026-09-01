@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       18a265df-ee39-4fdb-983a-daaf9b7cd151
+:NODE-RELATIONS: (([[id:bf2ce9fc-6b3a-4c29-8cc4-388a7faab91b][calendar century]] . [[id:d7dd4232-8aae-43e5-bc8c-ca4e4c9412f7][proleptic Gregorian calendar]]))
+:END:
+#+title: 19th Century
+#+date: [2025-09-16 Tue 20:49]
+

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "relating/articulating/claim",
+  "title": "Claim",
+  "description": "A carrier over a Mark: the content-bearing RelMath mark role, occupying the second slot of an utterance (articulating/utterance.mts `Claim`).",
+  "type": "object",
+  "required": ["kind", "mark"],
+  "properties": {
+    "kind": { "const": "utterance.claim" },
+    "mark": { "$ref": "./mark-profile.schema.json" }
+  },
+  "additionalProperties": false
+}

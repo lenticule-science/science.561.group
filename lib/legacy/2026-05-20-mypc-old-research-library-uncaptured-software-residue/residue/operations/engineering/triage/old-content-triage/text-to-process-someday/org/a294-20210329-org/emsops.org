@@ -1,0 +1,155 @@
+#+title: emsenn's operations
+* Domains
+** Personal
+*** Personal Routines
+*** Personal Tasks
+**** Write
+     :LOGBOOK:
+     CLOCK: [2021-03-08 Mon 16:28]--[2021-03-08 Mon 17:25] =>  0:57
+     :END:
+**** Organize emsOps
+     :LOGBOOK:
+     CLOCK: [2021-03-08 Mon 17:26]--[2021-03-08 Mon 18:26] =>  1:00
+     :END:
+**** TODO Decide how to manage photos locally.
+**** Maintain ledger
+     :LOGBOOK:
+     CLOCK: [2021-03-13 Sat 14:25]--[2021-03-13 Sat 20:30] =>  6:05
+     :END:
+     - [ ] Add Gulden mining
+     - [ ] Add Algorand staking
+     - [ ] Add Nano stuff
+     - [ ] Add Banano stuff
+     - [ ] Add Hive stuff
+     - [ ] Add Smart Chain Stuff
+     - [ ] Add Cub DeFi stuff
+** Home
+*** TODO Decide whether to switch CPU miners from Gulden to Banano
+    - [0/3] Questions
+      1. [ ] Rate of return on each, per week?
+	 - 
+      2. [ ] Current value of weekly return?
+	 - 
+      3. [ ] [0/1] Expected value of returns in 6 months, 1 year, 3 years?
+	 - [ ] Depends on [[*Research potential gains of Gulden][Research potential gains of Gulden]]
+	 - [ ] Depends on [[*Research potential gains of Banano][Research potential gains of Banano]]
+
+
+    DECISION: ???
+** Community
+*** Makha Sa
+**** Makha Sa Routine
+***** TODO Take photos 
+      SCHEDULED: <2021-03-06 Sat +3d>
+**** Makha Sa Projects
+**** Makha Sa Tasks
+***** TODO Weed South Fernando Bed
+**** Makha Sa Decisions
+***** TODO Decide how to organize garden work
+*** CBGAZ
+**** CBGAZ Routine
+***** TODO Weaver St. Pickup                                       :HOME:CAR:
+      SCHEDULED: <2021-03-06 Sat 12:20 ++1d>
+      :PROPERTIES:
+      :LAST_REPEAT: [2021-03-05 Fri 19:52]
+      :END:
+      :LOGBOOK:
+      - State "DONE"       from "TODO"       [2021-03-05 Fri 19:52]
+      - State "DONE"       from "TODO"       [2021-03-03 Wed 18:11]
+      :END:
+      1. Go to Weaver St. and pickup the waste food
+      2. Bring it back and triage/inventory the market
+**** CBGAZ Projects
+**** CBGAZ Tasks
+** Ferguson Garden
+** Society
+*** Web
+**** Web Routine
+**** Web Projects
+**** Web Tasks
+***** General Web Tasks
+****** TODO Decide where to store photos for Web use.
+****** TODO Look into minting photos as NFTs                       :WEB:HOME:
+       - Redraft submission to the NFT Showroom
+***** Hive
+****** LeoFinance
+******* Lions, Cubs, Bears, and Bulls
+
+	LeoFinance rejects the standard narrative of market competition, in favor of a metaphor of cooperative growth: a family of lions growing up together.
+****** EcoTrain
+******* TODO Write post answering QOTW57 https://ecency.com/hive-123046/@ecotrain/ecotrain-question-of-the-week-57-share-a-ritual-that-you-perform-or-know-about
+	DEADLINE: <2021-03-17 Wed>
+
+*** Stock Market
+**** TODO Record asset prices                                      :WEB:HOME:
+     SCHEDULED: <2021-03-06 Sat 17:00 ++1d>
+     :PROPERTIES:
+     :LAST_REPEAT: [2021-03-05 Fri 17:08]
+     :END:
+     :LOGBOOK:
+     - State "DONE"       from "TODO"       [2021-03-05 Fri 17:08]
+     - State "DONE"       from "TODO"       [2021-03-03 Wed 17:48]
+     :END:
+*** Token Market
+**** Token Market Routine
+***** Claim staking rewards
+****** TODO Claim Algorand rewards                                 :WEB:HOME:
+       SCHEDULED: <2021-03-07 Sun +7d>
+       :PROPERTIES:
+       :LAST_REPEAT: [2021-03-03 Wed 17:51]
+       :END:
+       :LOGBOOK:
+       - State "DONE"       from "TODO"       [2021-03-03 Wed 17:51]
+       :END:
+       - In Exodus
+	 - Go to Rewards (top menubar, right-most icon)
+	 - Scroll to Algorand, click claim
+       - In Emacs:
+	 - =C-c c= to start an Org-mode capture template
+	 - =lribsa= to add an Algorand staking claim entry
+****** TODO Claim Cardano staking rewards      
+       SCHEDULED: <2021-04-18 Sun +3m>
+       - In Exodus
+	 - Go to Rewards (top menubar, right-most icon)
+	 - Scroll to Algorand, click claim
+       - In ledger, input something like the following, adjusting the following:
+	 - Date
+	 - Claimed amount
+	 - Cost basis
+       #+begin_src beancount
+	 2021-03-02 * "Cardano" "Claim Cardano staking rewards"
+	   Assets:Blockchain:Cardano:Exodus                 2.98 ADA {1.21 USD}
+	   Expenses:Business:Finance:Blockchain:Transaction:Cardano  0.02 ADA {1.21 USD}
+	   Revenue:Investment:Blockchain:Staking:Algorand   -3 ADA {1.21 USD}
+       #+end_src
+***** Claim participation rewards
+****** TODO Claim Hive rewards
+       SCHEDULED: <2021-03-06 Sat ++1d>
+       :PROPERTIES:
+       :LAST_REPEAT: [2021-03-03 Wed 18:11]
+       :END:
+       :LOGBOOK:
+       - State "DONE"       from "TODO"       [2021-03-03 Wed 18:11]
+       :END:
+**** Token Market Tasks
+***** TODO Compound CUB Den
+      SCHEDULED: <2021-03-20 Sun ++4d>
+***** TODO Harvest bLEO-BNB Farm & Stake in CUB Den
+      SCHEDULED: <2021-03-20 Sun ++6d>
+***** TODO Harvest CUB-BNB Farm & Stake in CUB Den
+      SCHEDULED: <2021-03-20 Sun ++6d>
+***** TODO Research potential gains of Gulden
+***** TODO Research potential gains of Banano
+***** TODO [0/2] Create Org-mode capture template for recording ALGO claim into my ledger
+      1. [ ] Draft a Org-mode capture template for adding ALGO staking claims to my ledger
+      2. [ ] Test it
+***** TODO Set up native wallets for crypto holdings
+***** TODO Set up seed backups for all wallets
+***** TODO Plan "No-buy Crypto" project
+      :LOGBOOK:
+      CLOCK: [2021-03-12 Fri 10:53]--[2021-03-12 Fri 11:42] =>  0:49
+      :END:
+
+      - [ ] Create record
+      - 
+

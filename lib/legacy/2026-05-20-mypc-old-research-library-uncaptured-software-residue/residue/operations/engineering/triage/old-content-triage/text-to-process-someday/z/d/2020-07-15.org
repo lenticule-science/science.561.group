@@ -1,0 +1,58 @@
+#+title: 2020-07-15
+#+begin_head
+#+ghe_schema: daily-record-0.1.0
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-07-15 Wed 19:47]
+#+roam_tags: daily-record
+#+end_head
+* Postings
+** [2020-07-15 Wed 19:47]
+
+   Earlier today, I was explaining [[file:../teraum.org][Teraum]] to a friend who was relatively unfamiliar. I couldn't find an earlier write-up I'd done of the history, so I wrote one out.
+
+   Here it is copy-pasted from our conversations: there might be some missing context; I apologize.
+
+   -----
+   
+   Alright so, the world started as a zoo/habitat for excess or unwelcome lifeforms created by [[file:../teraum/gods.org][gods]] across the [[file:../teraum/multiverse.org][multiverse]], in a vast complex known as the [[file:../teraum/worldkeep.org][Worldkeep]]. Many of the residents were [[file:../magic.org][magic]], so great sources of magic were built into the /Worldkeep/, to continue to feed those folk. But a lot, like humans, were [[file:../teraum/mundane.org][mundane]], magicless. It became a tourist attraction for the gods, so got expanded with a large garden around it: the natural geography of /Teraum/.
+
+As happens, the gods got bored of their zoo and park, so it got left pretty much abandoned. Over time, barriers between different habitats fell apart, and the different inhabitants went to war with each other.
+
+One notable war was betweeen the goblins. and giant spiders, who worked with their neighbors. Their warring ended up creating a crack in the Worldkeep, which let the giant spiders out into the world above, through the Worldkeepers, a vast mountain range at the eastern part of the Eastern Continent.
+
+Over the centuries other cracks formed and other species migrated onto the surface, and earthquakes and other things caused the collapse of tunnels, so many populations ended up stuck on the surface.
+
+During the period of migration, a lot of magic leaked from the Worldkeep to Teraum, sustaining the magical populations there. (Note: magic is a physical substance in this setting, kind of clay-like but more rubbery.)
+
+Through a series of events, humans, a mundane species living on Teraum, learned that they could work magic in limited ways: one of the most well-known properties was that if put under pressure, it would generate heat. This started an industrial and economic revolution.
+
+Magic power became the basis for human society, and they used its power to rapidly displace other populations, declaring open war on the dwarves and orcs they shared the Eastern Continent with. Human ships got better, and they were able to cross the Optic Ocean, named because its high concentration of magic makes it seem a different color at any moment, to the Western Continent, where they made contact with the elves and halflings.
+
+Humans at the time used a metal coin currency, but each coin contained in it a small amount of magic.
+
+Magic had a property humans didn't know about - in fact, it's thought no one would've known: if you get too much of it together in one spot, it vanishes. Not just the magic in that spot, but all magic.
+
+Which is exactly what happened, in an event known as the Collapse. Ground Zero is believed to be the Bank Hill district of the city of Ack, where deep bank vaults cut into the bedrock were filled with magic.
+
+The absence of magic changed a lot of species. Dwarven enclaves instantly shut their fortress doors, and haven't opened since. Elves in the Western Continent went feral, and exterminated the halflings, who'd become docile, acting like prairie dogs. Orcs became bloodthirsty, and were recruited by humans as mercenaries in the petty little wars that followed the Collapse, until the last ones died in battle against each other.
+
+It was a rough time! And all the magic artifacts humans had made or collected weren't working, so no, heroes didn't have magic.
+
+After about six decades of rebuilding and small wars, humans were collected again enough to have a series of Great Wars for about a decade, ravaging the Eastern Continent.
+
+But on the Western Continent, the humans found a different future: once they'd pushed back the feral elves, they found the halfling's former country to be a wonderful place to colonize and convert into farms and coppice forests.
+
+This helped prop up the humans living in the shell of Ack, which had been abandoned to monsters for a long time after the Collapse. The stability of trade goods from the West helped Ack become a cultural hub, and through a series of power-grabs, one group came to control most of the city, under a bureaucratic autocracy. When a fire burnt down much of the rapidly developing city, 80 years after the Collapse, the group used their connections to trade unions to form a federation of unions, naming itself the Red Union and beginning a rapid project of colonization across the Eastern and Western Continents.
+
+However, many humans are wary of civilization, blaming it for the Collapse, and so outside areas where the Red Union has material advantage, they're finding it hard to maintain a presence, so by the end of the decade, they've largely confined themselves to the Greater Ack Metropolitan Enclave: the city and the nearest regions of adjacent counties. Immigration into the Enclave is high, with the young folk of many rural communities drawn in by the promises of prosperity and freedom.
+
+Those wary of civilization are concerned the Enclave is essentially an open-air prison.
+
+Behind the scenes: magic is starting to leak back into Teraum, and new populations are beginning to find their way in from the Worldkeep. In the West, hunters working for the Red Union are capturing feral elves and draining their blood, extracting out the magic which collects there. And in both continents, botanists and biologists work to find plants and animals that have similar magic-concentrating ability: they seek to restart the industrial revolution, viewing the lack of fascism as the reason it failed. (A big part of Teraum's industrial revolution was the lack of intellectual property, there's a short story set in it about this.)
+
+In the East there's a rebel group known as the Delvers who are aware magic is coming back, and are working to find, capture, and destroy magic artifacts before the Red Union can get them and repair them with the magic they're accumulating.
+
+One thing I want to emphasis is that like, no one is going to win, no one has won, the world is just always changing outside of folks control and regardless of if there are fascists or monsters, life is /hard/, but that doesn't make it less worth doing
+
+and to be clear there are like whole human cultures that don't even get mentioned in this explanation like the nomadic tribes of the farsteppes, which in the early years of the magic revolution almost invaded Ack, or Tayopopopolis in the Unseen Sea, where humans won the favor of the magic beasts in the area and used their magics to construct great towers and monuments.

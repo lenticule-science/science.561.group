@@ -1,0 +1,127 @@
+#+SETUPFILE: ~/org/templates/setupfile0.org
+#+TITLE: Online Communication Manual
+#+EXPORT_FILE_NAME: ../pub/online-communication-manual
+* Introduction
+This document is an explanation of how I try to approach my online
+communication. The methods explained below have been in implicit
+development my whole life, but I started explicitly considering how I
+wanted to conduct my online communication in mid-2018.
+How I communicate online can be divided up roughly into two
+categories, though there's always some murkiness between the two.
+
+There's [[Direct Communication][direct communication]], for talking with individuals, privately,
+and [[Public Communication][public communication]], for talking with groups.
+
+The reason I don't explicitly allow for in-between communication like
+"followers-only microblog posts," is because the control of security
+on that communication is so low, I would prefer to treat it as public.
+#+INCLUDE: "./eli.org::#draft"
+#+INCLUDE: "./eli.org::#eli"
+* Online Communication Manual
+** Direct Communication
+This section is pretty short, because most of my direct online
+communication happens through an ever-changing medley of instant
+messaging platforms defined more by contemporary trends than my
+opinion.
+
+That is to say, I use whatever messaging applications my friends are
+using, and try not to be picky about the procedure.
+
+If I have my preference though, I use email.
+** Public Communication
+I divide my public communications into two subcategories:
+- */Posting/*, which is making a temporary or conversational public
+  post onto a platform. This includes sending messages to my [[Mailing Lists][mailing
+  lists]] and [[Microblogging][microblogging]]. As I wrote this document, for example, I
+  posted about at [[https://tenforward.social/@emsenn][@emsenn@tenforward.social]].
+- */Publishing/*, which is more formal: creating a document and
+  releasing it through a platform. This usually means posting to my
+  personal website, but includes /syndicating/ the document elsewhere.
+*** Posting
+When I want to */post/* something online, I want to send a quick
+message, usually to an audience of /followers/, but also usually in a
+way that anyone could see it. (After all, I can't be sure that by
+sharing with my followers, I am not unknowingly be syndicated
+publicly.) */Followers/* are people who have subscribed to the
+relevant account or stream.
+
+There are a few things that inspire me to post:
+- Reading something that I'd like to share my thoughts on.
+- Doing work on an interesting project or piece of writing that I'd
+  like to talk about.
+**** Mailing Lists
+I currently maintain two mailing lists: a /public inbox/ and a
+/parlour/. Mechanically, anyone can send an email to the public inbox,
+but only I can write replies. In the parlour, only I can post
+messages, but anyone can reply.
+**** Microblogging
+The main way I post things is by */microblogging/*: short temporary
+posts that are syndicated to followers' individual chronological
+feeds. Specifically, I use an account in the Fediverse to create
+posts: [[https://tenforward.social/@emsenn][@emsenn@tenforward.social]]. You can also view an [[https://mastodon.social/@emsenn.rss][RSS feed of
+those posts]].
+
+These are a few assumptions I make when microblogging:
+- Since my audience chooses to see my posts, I assume they have an
+  interest in the topics I'm posting about.
+- Anyone might take anything I've said and use it out-of-context to my
+  detriment.
+- Anyone might find a way to say something to me about what I've
+  posted. If they have an account in the Fediverse, this is easy, but
+  people find a way to make themselves heard if they want.
+
+I do not think my microblog should be permanent, since I can't
+reasonably moderate the posts that will show up in response to mine.
+In that spirit, I have taken the rather drastic step of deleting my
+posts that are older than 48 hours, unless I have "favorited" it
+myself. To accomplish this, I use [[https://www.codl.fr/][@codl]]'s [[https://forget.codl.fr/about/][Forget]] tool.
+**** Into Data Silos
+I recognize that a lot of potential and current personal and
+professional contacts don't have accounts in the Fediverse, don't use
+RSS, and won't manually check my Mastodon profile.
+
+I maintain accounts on [Facebook](https://facebook.com/emsenn) and
+[LinkedIn](https://linkedin.com/in/emsenn), though I have severe
+ethical criticisms of both. Take it as evidence that my desire to be
+cooperative outweighs my desire to boycott monopolistic providers.
+
+I don't post into these data silos as often as I post in the
+Fediverse, and tend to limit my posts there to what would be of
+interest to a professional audience.
+*** Publishing
+/Publishing/ something online is the most complicated way of
+communicating online, but also, I think, the most useful.
+*/Publishing/* here means sharing in a way that it becomes a
+"permanent" part of the Internet.
+
+I explain the specifics of how I write in my [Manual of
+Writing](/manual-of-writing), the specifics of how I edit in my
+[Manual of Editing](/manual-of-editing), and the specifics of how I
+create a document in my [Manual of Publishing](/manual-of-publishing).
+(All of which are in early development too.)
+
+This procedure is about how I share that published document.
+
+The first thing I do is add it to my website,
+[emsenn.net](https://emsenn.net), which is a repository of all my
+published documents (and drafts).
+
+Then, I write a post about it to the Fediverse, as described in my
+[procedures for posting online](/procedures-for-posting-online).
+
+Finally, I send the document to the relevant list of email contacts I
+maintain who have expressed interest in its topic.
+
+*** Receiving
+
+# Local Variables:
+# writefreely-post-id: "q92am0k3vt"
+# writefreely-post-token: nil
+ # End:
+* Supplements
+** Dictionary
+#+INCLUDE: "./dict.org::post-n"
+#+INCLUDE: "./dict.org::post-v"
+- public ::
+- followers ::
+#+INCLUDE: "./mit-license.org::#license"

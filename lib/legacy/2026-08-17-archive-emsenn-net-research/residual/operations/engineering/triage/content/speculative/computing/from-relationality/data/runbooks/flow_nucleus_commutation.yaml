@@ -1,0 +1,13 @@
+id: flow-nucleus-commutation
+name: Flow–Nucleus Commutation Evidence
+input_kind: StabilizedObservation
+output_kind: FixedInvariant
+description: Compute commutation evidence for Flow vs Nucleus paths on a stabilized observation.
+acts:
+  - FixFlowNucleus
+steps:
+  - operator: FixFlowNucleus
+    realizer: flow_nucleus_commute
+    input_kind: StabilizedObservation
+    output_kind: FixedInvariant
+    acts: ["FixFlowNucleus", "FixedInvariant"]

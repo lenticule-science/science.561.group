@@ -1,0 +1,23 @@
+\section{The mirror: recto, verso, and the held $\top$-seam}
+
+The software side carries a \emph{mirror}: the negative-paraconsistent sheaf is the
+bilattice-negation mirror of the settling sheaf, fixing the $\top$-seam
+(\texttt{NegationMirrorReceipt}). Its textile incarnation is already green here ---
+\cref{thm:overunder-negate}: the over/under flip \emph{is} Belnap negation $\sim$.
+
+\begin{theorem}[The two faces of a cloth are negation mirrors]\label{thm:cloth-faces-negation-mirror}\lean{Obsmetrologia.AperiodicOrder.Tiling.overUnder_swap_fixes_defect}\leanok\uses{thm:overunder-negate, thm:miscrossing-top, thm:paraconsistentEq-eq}
+The front and back of a woven cloth are
+bilattice-negation mirrors: every front-over is a back-under, the involution $\sim$ of
+\cref{thm:overunder-negate}. This is the software negation-mirror (negative sheaf
+$F^{(\top)}$ mirroring the truth sheaf $F^{(t)}$) realized as recto/verso. The mirror fixes
+the $\top$-seam: the selvedge and the mis-crossing locus (\cref{thm:miscrossing-top}) are
+exactly the negation-fixed points, held on both faces at once.
+\end{theorem}
+
+\begin{theorem}[A propagating defect is a section of the inconsistency sheaf]\label{thm:defect-is-inconsistency-sheaf}\lean{Obsmetrologia.AperiodicOrder.Tiling.miscrossing_isInconsistency}\leanok\uses{thm:cloth-faces-negation-mirror, thm:paraconsistent-cone}
+A mis-crossing is a section of the inconsistency ($\top$) sheaf: its charge is the held $\top_k$
+(\texttt{miscrossing\_isInconsistency}), the negative paraconsistent mirror. The dynamic residue is
+the \emph{propagation} --- a dropped stitch or controlled unraveling carries that $\top$ along the
+interlacement order, and Shimamoto's unraveling logic gates (NOT/AND/OR/half-adder on stitch
+topology) are paraconsistent computation on the $\top$-mirror.
+\end{theorem}

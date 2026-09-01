@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       a330bcd0-661a-4688-8c30-c4d47a2b3a00
+:END:
+#+title: viable system model
+#+date: [2025-10-05 Sun 08:23]
+

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       e9c9fd50-32c7-4e32-a079-b63cadbc5c54
+:END:
+#+title: demonstrating
+#+date: [2025-09-19 Fri 09:10]
+

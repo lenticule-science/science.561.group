@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       a30743b8-71e1-4c34-adbe-d5e17b004662
+:END:
+#+title: intertheoretic bridge law
+#+date: [2025-09-17 Wed 09:07]
+

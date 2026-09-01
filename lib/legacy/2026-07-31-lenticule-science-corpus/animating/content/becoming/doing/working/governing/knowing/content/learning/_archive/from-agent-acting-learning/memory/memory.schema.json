@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://561.group/swarm-intelligence/agentic-orchestration-platform/memory/memory.schema.json",
+  "title": "Memory (sub-region of predication-graph store for recall records)",
+  "description": "Per lab/.../predicated-agentic-orchestration-platform/memory/memory.md: the platform's pattern for recording what an agent has recently encountered. A sub-region of the predication-graph store whose entities are recall records. Three properties: relevance-is-a-value (bilattice-valued, not Boolean), settled-by-closure-rules (relevance-decay/recency-promotion/explicit-dismissal each are closure rules), capped-by-scope (bounded by agent's scope). Context-engineering concerns (window size, compaction, retrieval-augmented prompts) are particular realizations under specific cost constraints.",
+  "kind": "object",
+  "type": "object",
+  "required": ["agent", "recallRecords", "scope", "evidence"],
+  "additionalProperties": false,
+  "properties": {
+    "agent": { "type": "string", "pattern": "^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$" },
+    "recallRecords": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["entity", "relevance", "lastTouched"],
+        "additionalProperties": false,
+        "properties": {
+          "entity": { "type": "string", "minLength": 1 },
+          "relevance": {
+            "description": "Presence strength. A value corner (legacy bilattice path) OR a Q value in [0,1] (Q-enriched path; hacking/q-relevance, docs/GENEALOGY.md §6).",
+            "oneOf": [
+              { "$ref": "https://561.group/swarm-intelligence/articulating/library/aperiodic-articulation-category/library/aperiodic-articulation-cell/library/potential-aperiodic-articulation-cell/predicating/library/transfinite-predication-category/library/transfinite-predication-cell/library/potential-transfinite-predication-cell/positing/library/scott-continuous-posit-category/library/bilattice/library/bilattice-value/bilattice-value.schema.json" },
+              { "type": "number", "minimum": 0, "maximum": 1 }
+            ]
+          },
+          "lastTouched": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "scope": { "type": "string", "minLength": 1 },
+    "evidence": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  }
+}

@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       c6560203-9df7-4f38-be05-d7fd2a1e01c5
+:public:   true
+:resource-description: (([[id:edaef069-c68d-46aa-a970-d3cb7fe3165c][resource type]] . [[id:8f2271f9-3f27-4cdc-b7bf-ff11f2400140][influenza epidemic]]) ([[id:d150eaba-d55f-401c-8487-6f2f84d16ace][year]] . [[id:a8a2c626-a3c5-41c6-aa1e-58849caeab9a][1914]]))
+:END:
+#+title: 1914 Influenza Epidemic
+#+date: [2025-09-29 Mon 11:31]

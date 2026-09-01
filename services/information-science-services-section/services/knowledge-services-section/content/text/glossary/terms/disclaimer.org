@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       5c6b9992-b44e-46f7-9f5d-4c54ceca240b
+:END:
+#+title: disclaimer
+#+date: [2025-08-25 Mon 00:50]
+

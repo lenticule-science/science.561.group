@@ -1,0 +1,17 @@
+{
+  "name": "@lenticule-science/predicate",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Predicating on the EVM: the subject-predicate-object cell generated after articulation.",
+  "files": [
+    "content",
+    "services",
+    "src",
+    "foundry.toml"
+  ],
+  "scripts": {
+    "check": "forge build --force",
+    "test": "forge test"
+  },
+  "license": "UNLICENSED"
+}

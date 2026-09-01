@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       2f33a995-ade0-4888-a781-6079471dac9b
+:END:
+#+title: Going Native
+#+date: [2025-09-20 Sat 10:11]
+

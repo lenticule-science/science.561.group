@@ -1,0 +1,9 @@
+Done. The enhanced `--balance` mode now provides:
+
+1. **Per-account per-commodity rows** — each account+commodity pair gets its own line with debit, credit, and net columns
+2. **Group subtotals** — each top-level type (budget, active, operations, income, liabilities, waste, etc.) shows a subtotal row
+3. **Aligned columns** — dynamically sized table formatting with headers and separators
+4. **`--commodity` filter** — e.g. `--balance --commodity tasks` shows only task-denominated accounts
+5. **Color coding** — waste accounts with balances render red, liabilities with growing credit balances render yellow, system balanced/imbalanced uses green/red
+6. **Per-commodity balance check** — separate section showing whether debits equal credits within each commodity
+7. **Account imbalances** — flagged with color by account type

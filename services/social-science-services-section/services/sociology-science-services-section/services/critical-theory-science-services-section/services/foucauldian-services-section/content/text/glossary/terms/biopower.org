@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       f3ae8c30-cd53-4e49-856f-9f05c2b146db
+:END:
+#+title: biopower
+#+date: [2025-09-20 Sat 10:12]
+

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       80d0682a-d5c3-4891-90d4-191a0deaf8b6
+:END:
+#+title: liberty
+#+date: [2025-09-28 Sun 09:47]
+

@@ -1,0 +1,12 @@
++++
+title = "Right Time to Get Arrested, The"
+author = ["emsenn"]
+tags = ["activism"]
+draft = true
++++
+
+There's a well-sponsored anti-climate-damage organization that's advocating people use drones to interfere with airport operations, and then turn themselves in to be arrested.
+
+Don't do that. There's very few situations in which getting yourself arrested is a useful activist strategy. I let myself get arrested once, for example, in protest of the law that legalized the arrest. Without someone getting arrested, the negativity of the law existed wholly in theory. With someone arrested, the flaws of the laws became apparent.
+
+Unless you're directly challenging the laws that cause the arrest, getting arrested should only be a consequence of an action, not its goal.

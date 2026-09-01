@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       bdffbe80-08e1-4e95-ad98-81cea8cf68a1
+:public:   true
+:form:     [[id:32e00173-c695-4bb6-b0d2-9dc17fec128b][act]]
+:END:
+#+title: existing
+#+date: [2025-08-15 Fri 12:17]
+#+index: existing
+
+Where [[id:7706e59a-4dca-436b-a67c-66a45e9eca8d][being]] has to do with [[id:b4ae66ad-8700-4af3-b995-17cfd8b74eb9][conditions]], existing has to do with [[id:32e00173-c695-4bb6-b0d2-9dc17fec128b][acts]].

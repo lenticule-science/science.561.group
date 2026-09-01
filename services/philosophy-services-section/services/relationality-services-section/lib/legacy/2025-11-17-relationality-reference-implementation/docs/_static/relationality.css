@@ -1,0 +1,85 @@
+/* Relationality custom theme tweaks */
+
+:root {
+  /* Palette using doubled shorthand codes:
+     ffe→#ffffee, eed→#eeee dd, 312→#331122, 756→#775566,
+     880→#888800, aa2→#aaaa22, 934→#993344, b56→#bb5566,
+     008→#000088, 60b→#6600bb, 172→#117722, 394→#339944.
+   */
+  --rel-bg-main: #ffffee;   /* ffe */
+  --rel-bg-alt:  #eeee dd;  /* eed */
+  --rel-text:    #331122;   /* 312 */
+  --rel-text-alt:#117722;   /* 172 */
+  --rel-accent-1:#000088;   /* 008 */
+  --rel-accent-2:#aaaa22;   /* aa2 */
+  --rel-accent-3:#775566;   /* 756 */
+}
+
+body {
+  background-color: var(--rel-bg-main);
+  color: var(--rel-text);
+}
+
+div.document {
+  max-width: 64em;
+}
+
+.body {
+  max-width: 60em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  color: var(--rel-accent-1);
+}
+
+a:hover, a:focus {
+  color: var(--rel-accent-2);
+}
+
+div.sphinxsidebar, div.related {
+  background-color: var(--rel-bg-alt);
+  color: var(--rel-text-alt);
+}
+
+div.sphinxsidebar a, div.related a {
+  color: var(--rel-accent-1);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--rel-text-alt);
+}
+
+code, pre {
+  font-family: "IBM Plex Mono", Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+}
+
+.xref-note {
+  font-size: 0.85em;
+  color: var(--rel-text-alt);
+  border-left: 3px solid var(--rel-accent-3);
+  padding-left: 0.5em;
+  margin: 0.5em 0;
+}
+
+.phase-badge {
+  font-size: 0.8em;
+  color: var(--rel-accent-2);
+}
+
+/* Admonitions (notes, warnings, todos) using the palette */
+.admonition {
+  background-color: var(--rel-bg-alt);
+  border-left: 4px solid var(--rel-accent-3);
+  padding: 0.5em 0.75em;
+}
+
+.admonition-todo {
+  border-left-color: var(--rel-accent-2);
+}
+
+.admonition .admonition-title {
+  font-weight: bold;
+  color: var(--rel-text-alt);
+}

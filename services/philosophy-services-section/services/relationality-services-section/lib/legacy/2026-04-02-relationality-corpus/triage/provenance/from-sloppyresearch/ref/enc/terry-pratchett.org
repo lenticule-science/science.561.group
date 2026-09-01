@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       bb6a7511-0051-47f1-998f-081b94eec3cb
+:public:   true
+:END:
+#+title: Terry Pratchett
+#+date: [2025-08-23 Sat 21:37]
+#+index: Terry Pratchett
+
+*/Terry Prachett/* was[fn:: GNU Terry Prachett] an [[id:a8bc7e3a-cdf7-4cfa-8e4d-a1a5f7eb2931][author]]. known best for the [[id:22dd95b2-4c5a-42a5-937d-4713824c04d5][Discworld]] series.
+
+

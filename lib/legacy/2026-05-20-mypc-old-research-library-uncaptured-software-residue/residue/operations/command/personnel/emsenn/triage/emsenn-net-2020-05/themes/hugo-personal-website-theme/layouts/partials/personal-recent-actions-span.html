@@ -1,0 +1,29 @@
+{{ with $.Site.Data.personalData.activities }}
+  <span class="recent-actions">
+    Recently, I
+    {{ $scratch := newScratch -}}
+    {{- $scratch.Set "activityData" . -}}
+    {{- $scratch.Set "recentActivities" slice -}}
+    {{- range $date,$activities := . -}}
+      {{- $scratch.Add "dates" (slice .) -}}
+    {{- end -}}
+    {{- range sort ($scratch.Get "dates") "value" "desc" -}}
+      {{- $scratch.Add "activities" (slice .) -}}
+    {{- end -}}
+    {{- range last 3 ($scratch.Get "activities") -}}
+      {{- $scratch.Add "recentActivities" . -}}
+    {{- end -}}
+    {{- with ($scratch.Get "recentActivities") -}}
+      {{- if (eq (len .) 0) -}}
+      {{- else -}}
+        {{- if (eq (len .) 1) -}}
+          {{- ( . | markdownify) -}}
+        {{- else if (eq (len .) 2) -}}
+          {{- (delimit . " and ") | markdownify -}}
+        {{- else -}}
+          {{- (delimit . ", " ", and ") | markdownify -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  .
+{{ end }}

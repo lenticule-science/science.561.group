@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "servers": {
+    "561-datastore": {
+      "status": "healthy",
+      "checkedAt": 1775458980970,
+      "expiresAt": 1775459100970,
+      "failureCount": 0,
+      "lastError": null,
+      "nextRetryAt": 1775458980970
+    },
+    "fake-server": {
+      "status": "unhealthy",
+      "checkedAt": 1775323449941,
+      "expiresAt": 1775323449941,
+      "failureCount": 1,
+      "lastError": "ECONNREFUSED",
+      "lastFailureCode": "transport",
+      "nextRetryAt": 1775323479941
+    },
+    "mash": {
+      "status": "healthy",
+      "checkedAt": 1775510208360,
+      "expiresAt": 1775510328360,
+      "failureCount": 0,
+      "lastError": null,
+      "nextRetryAt": 1775510208360
+    }
+  }
+}

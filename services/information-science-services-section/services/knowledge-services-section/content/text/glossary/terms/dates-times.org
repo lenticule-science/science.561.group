@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       ec63dfed-7101-4b87-8716-b4440f399a69
+:END:
+#+title: Dates & Times
+
+A part of [[id:708f5536-237b-4c74-b115-af39f358b303][my encyclopedia]], this is a catalog of dates and times that I've referenced elsewhere.

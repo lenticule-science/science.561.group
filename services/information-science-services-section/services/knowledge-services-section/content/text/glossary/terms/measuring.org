@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       d446b935-869d-4651-bd79-8c3f2b84f940
+:END:
+#+title: measuring
+#+date: [2025-09-27 Sat 09:52]
+

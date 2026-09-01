@@ -1,0 +1,33 @@
+#+TITLE: Operations Overhaul
+#+AUTHOR: emsenn
+#+EMAIL: emsenn
+* Service Process
+** Collect information from client
+This step is collecting contemporary operations information
+from the client, and would be a combination of questionnaires
+and interviews.
+** Analyze client information
+This step is giving some thought to what would work best for
+this client.
+** Develop operations package
+This step is picking what operations framework and lexicon
+would work best for the client, and preparing their
+documentation.
+*** Determine operations framework
+This step is picking what hierarchy, system of reporting, task
+distribution, and so on, the organization should use.
+*** Determine operations lexicon
+This step is picking what language the client's documentation
+should be provided in.  (Software development, business ops,
+emotional, funny).
+*** Template operations package
+This step is applying the previous decisions to a template to
+produce the client's documentation.
+*** Specify company procedures
+This step is providing specific procedures for the client's
+operations, in the style of its templated documentation.
+** Prepare operations package
+This step is preparing the final documentation in appropriate
+formats.
+** Submit operations package.
+This step is providing the package to Lynn for review.

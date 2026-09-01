@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       23f5665f-3eed-4229-92ed-25b5a0a51e7a
+:END:
+#+title: algebraic equation
+#+date: [2025-10-15 Wed 18:09]
+

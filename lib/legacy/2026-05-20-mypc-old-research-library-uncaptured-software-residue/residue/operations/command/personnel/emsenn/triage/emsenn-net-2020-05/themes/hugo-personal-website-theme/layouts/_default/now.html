@@ -1,0 +1,11 @@
+{{ define "main" }}
+<p>My name is {{ partial "who-am-i.html" . }}. {{ partial "personal-whatido-span.html" . }}</p>
+<p>
+Here's some of what I'm working on now:
+</p>
+{{ partial "plans-listing.html" $.Site.Data.personalData.plans.current }}
+<p>
+Here's what I plan to do soon:
+{{ partial "plans-listing.html" $.Site.Data.personalData.plans.current }}
+</p>
+{{ end }}

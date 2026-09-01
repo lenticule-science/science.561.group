@@ -1,0 +1,78 @@
+* Plans 
+** TODO Figure out the layout of the house's plumbing
+Then I can know which faucets specifically to open in the winter.
+* Routine
+** Conditionally
+*** Deep freeze
+**** [#A] Open faucets
+** Annually
+*** [#B] Prep taxes
+** Quarterly
+*** [#B] Check smoke alarms
+** Monthly
+** Weekly
+*** TODO [#C] Prepare last week's records
+SCHEDULED: <2021-10-17 Sun +1w>
+*** TODO [#C] Laundry
+SCHEDULED: <2021-10-17 Sun +1w>
+*** TODO [#C] Sweep upstairs, first
+SCHEDULED: <2021-10-18 Mon +1w>
+*** TODO [#C] Dust downstairs
+SCHEDULED: <2021-10-19 Tue +1w>
+*** TODO [#C] Dust upstairs
+SCHEDULED: <2021-10-20 Wed +1w>
+*** TODO [#C] Go to grocery
+DEADLINE: <2021-10-21 Thu 09:30> SCHEDULED: <2021-10-21 Thu 08:00>
+:PROPERTIES:
+:EFFORT:   1:00
+:END:
+*** TODO [#C] Sweep upstairs, second
+SCHEDULED: <2021-10-21 Thu +1w>
+*** TODO [#C] Go thrifting
+DEADLINE: <2021-10-22 Fri 11:00>
+:PROPERTIES:
+:EFFORT:   1:00
+:END:
+*** TODO [#C] Inventory purchases
+SCHEDULED: <2021-10-23 Sat>
+*** TODO [#C] Prepare next week's records
+SCHEDULED: <2021-10-23 Sat +1w>
+** Everyday
+*** TODO [#C] Check on the water containers
+SCHEDULED: <2021-10-17 Sun 07:00 +1d>
+:PROPERTIES:
+:EFFORT:   0:15
+:END:
+*** TODO [#C] Sweep the porch
+SCHEDULED: <2021-10-17 Sun 07:15 +1d>
+:PROPERTIES:
+:EFFORT:   0:15
+:END:
+*** TODO [#C] Tidy downstairs
+SCHEDULED: <2021-10-17 Sun 07:30>
+:PROPERTIES:
+:EFFORT:   0:15
+:END:
+*** TODO [#C] Tidy the porch
+SCHEDULED: <2021-10-17 Sun 10:30 +1d>
+*** TODO [#C] Wash the dishes
+SCHEDULED: <2021-10-17 Sun 10:45 +1d>
+:PROPERTIES:
+:EFFORT:   0:45
+:END:
+*** TODO [#C] Sweep downstairs
+SCHEDULED: <2021-10-17 Sun 20:00 +1d>
+:PROPERTIES:
+:EFFORT:   0:15
+:END:
+*** TODO [#C] Tidy downstairs
+SCHEDULED: <2021-10-17 Sun 20:15 +1d>
+:PROPERTIES:
+:EFFORT:   0:15
+:END:
+** Anyday
+*** Recordkeeping
+:LOGBOOK:
+CLOCK: [2021-10-16 Sat 16:01]
+:END:
+  

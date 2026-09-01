@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       0963d01a-5b2e-47c5-afb2-5fd6faa866fc
+:END:
+#+title: elementary structure of relational coherence
+#+date: [2025-08-26 Tue 12:01]
+

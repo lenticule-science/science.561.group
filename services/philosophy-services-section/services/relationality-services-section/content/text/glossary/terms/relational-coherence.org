@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       bba6fc48-dcf2-4884-a726-35469155e0fb
+:END:
+#+title: relational coherence
+#+date: [2025-08-28 Thu 08:58]
+

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       1c2906c2-a8c5-4c84-a75d-26fc1361fe38
+:END:
+#+title: syntactic
+#+date: [2025-09-19 Fri 20:34]
+

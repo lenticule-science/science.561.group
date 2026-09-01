@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/system/library/operating-system/library/computer-operating-system/doing/working/running/https://research-notes.561.group/hacking/library/doing/working/hacking/doing/working/running/running.schema.json",
+  "title": "running (of a computer-operating-system)",
+  "description": "EAVT cell schema for the running of any computer-operating-system. Extends operating-system's running with POSIX-specific attributes — binding stdio, forwarding signals, and exiting with a status code.",
+  "allOf": [{ "$ref": "https://research-notes.561.group/hacking/library/predication-notes/object/library/thing/library/system/library/operating-system/doing/working/running/https://research-notes.561.group/hacking/library/doing/working/hacking/doing/working/running/running.schema.json" }],
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "e": { "type": "string" },
+    "a": { "type": "string", "enum": ["starting", "spawning", "supervising", "dispatching", "binding-stdio", "forwarding-signal", "stopping"] },
+    "v": {},
+    "t": { "type": "string", "format": "date-time" }
+  },
+  "required": ["e", "a", "v", "t"]
+}

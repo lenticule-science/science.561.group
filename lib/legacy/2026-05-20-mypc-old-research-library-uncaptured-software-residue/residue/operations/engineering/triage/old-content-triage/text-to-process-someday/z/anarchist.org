@@ -1,0 +1,25 @@
+#+title: anarchist
+#+begin_head
+#+ghe_schema: term-0.1.3
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2021-01-07 Thu 09:26]
+#+roam_tags: term
+#+end_head
+
+#+name: definition
+An */[[file:anarchist.org][anarchist]]/* is a [[file:person.org][person]] who believes people can [[file:cooperation.org][cooperate]] without [[file:kyriarchy.org][kyriarchism]].
+
+#+toc: headlines 2
+
+* Supplements
+** Record history
+   :PROPERTIES:
+   :CUSTOM_ID: record-history
+   :END:
+   :LOGBOOK:
+   - Note taken on [2021-01-07 Thu 09:26] \\
+      Created from [[file:~/org/s/p/d/2021-01-07.org::*My perspective on yesterday's protests in the U.S.][My perspective on yesterday's protests in the U.S.]]
+
+      
+   :END:

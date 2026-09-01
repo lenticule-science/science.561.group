@@ -1,0 +1,20 @@
+#+title: Deb Haaland
+#+begin_head
+#+ghe_schema: person-0.1.2
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-30 Wed 13:42]
+#+roam_tags: person
+#+end_head
+#+name: definition
+
+
+#+toc: headlines 2
+* Introduction
+* Deb Haaland
+* Supplements
+** Record history
+   :LOGBOOK:
+   - Note taken on [2020-12-30 Wed 13:42] \\
+     Created
+   :END:

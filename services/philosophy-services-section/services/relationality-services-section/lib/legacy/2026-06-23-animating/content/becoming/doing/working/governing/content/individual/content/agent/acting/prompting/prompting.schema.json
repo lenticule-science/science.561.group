@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://561.group/swarm-intelligence/articulating/library/aperiodic-articulation-category/prompting/prompting.schema.json",
+  "title": "Prompting morphism record",
+  "description": "Morphism: utterance → user-prompt. Aperiodic-regime morphism placed inside aperiodic-articulation-category; produces user-prompt cells (codomain at prompting/library/user-prompt). Variance: restriction of the articulating-class morphism to the human-typing enactor. The codomain user-prompt is an aperiodic-articulation-cell variant produced when a human supplies the utterance.",
+  "kind": "morphism",
+  "domain": "#schema/utterance",
+  "codomain": "#schema/user-prompt",
+  "variance": "restriction",
+  "monotone": true,
+  "type": "object",
+  "required": ["input", "output", "evidence"],
+  "additionalProperties": false,
+  "properties": {
+    "input": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "prefixItems": [
+        { "type": "string", "minLength": 1 },
+        { "type": "string", "minLength": 1 }
+      ],
+      "items": false
+    },
+    "output": {
+      "type": "object",
+      "required": ["utterance", "enactor", "transactionTime"],
+      "additionalProperties": false,
+      "properties": {
+        "utterance": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "prefixItems": [
+            { "type": "string", "minLength": 1 },
+            { "type": "string", "minLength": 1 }
+          ],
+          "items": false
+        },
+        "enactor": { "type": "string", "minLength": 1 },
+        "transactionTime": { "type": "string", "minLength": 1 }
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  }
+}

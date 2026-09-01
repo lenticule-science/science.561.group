@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       9ca86d85-debc-432f-b882-bbffe32a826b
+:END:
+#+title: analyzing
+#+date: [2025-08-29 Fri 11:18]
+

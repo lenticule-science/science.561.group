@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/category/library/product-category/product-category.schema.json",
+  "title": "Product category",
+  "description": "JSON Schema for a product category C × D — the category whose objects are pairs (c, d) with c in Ob(C) and d in Ob(D), and whose morphisms (c, d) → (c', d') are pairs (f, g) with f : c → c' in C and g : d → d' in D (Mac Lane 1971 Ch. II §3). Specializes category by carrying a factors array of categories being multiplied. uniqueItems: true on factors enforces distinct factors.",
+  "allOf": [{ "$ref": "https://research-notes.561.group/hacking/library/predication-notes/object/library/thing/library/category/category.schema.json" }],
+  "type": "object",
+  "required": ["factors"],
+  "properties": {
+    "factors": {
+      "type": "array",
+      "items": { "$dynamicRef": "#name-shape" },
+      "minItems": 2,
+      "uniqueItems": true,
+      "description": "The categories being multiplied. At least two; usually two for the binary case, more for n-ary products of categories."
+    }
+  }
+}

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       758357d0-4d5f-47e5-be15-186125c799d2
+:END:
+#+title: loop
+#+date: [2025-10-08 Wed 20:03]
+

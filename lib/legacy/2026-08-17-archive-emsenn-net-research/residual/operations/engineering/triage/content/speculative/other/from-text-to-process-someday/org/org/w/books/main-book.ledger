@@ -1,0 +1,676 @@
+account Assets:Petty
+account Assets:CashApp
+account Assets:PayPal:Business
+account Assets:PayPal:Personal
+account Assets:NCSECU:CHK0099
+account Assets:NCSECU:SAV1208
+account Assets:Esther:IRA
+account Assets:CashApp
+account Assets:NCSECU:CHK0099
+account Liabilities:Esther
+
+P 2021/01/01 BTC $32203.64
+P 2021/01/02 BTC $33063.48
+P 2021/01/03 BTC $32030.55
+P 2021/01/04 BTC $34038.29
+P 2021/01/05 BTC $36849.86
+P 2021/01/06 BTC $39479.41
+P 2021/01/07 BTC $40636.24
+P 2021/01/08 BTC $40236.66
+P 2021/01/09 BTC $38202.08
+P 2021/01/10 BTC $35496.03
+P 2021/01/11 BTC $34058.40
+P 2021/01/12 BTC $37380.85
+P 2021/01/13 BTC $39155.58
+P 2021/01/14 BTC $36790.17
+P 2021/01/15 BTC $36025.26
+P 2021/01/16 BTC $35839.51
+P 2021/01/17 BTC $36623.04
+P 2021/01/18 BTC $35932.79
+P 2021/01/19 BTC $35501.38
+P 2021/01/20 BTC $30840.30
+P 2021/01/21 BTC $33008.02
+P 2021/01/22 BTC $32107.29
+P 2021/01/23 BTC $32283.66
+P 2021/01/24 BTC $32275.27
+P 2021/01/25 BTC $32516.52
+P 2021/01/26 BTC $30423.05
+P 2021/01/27 BTC $33443.87
+P 2021/01/28 BTC $34252.08
+P 2021/01/29 BTC $34317.82
+P 2021/01/30 BTC $33143.22
+P 2021/01/31 BTC $33535.94
+P 2021/02/01 BTC $35524.43
+P 2021/02/02 BTC $36179.39
+P 2021/02/03 BTC $37773.65
+P 2021/02/04 BTC $36847.36
+P 2021/02/05 BTC $37733.15
+P 2021/02/06 BTC $39075.68
+P 2021/02/07 BTC $39266.95
+P 2021/02/08 BTC $46596.19
+P 2021/01/01 ETH $774.90 
+P 2021/01/02 ETH $978.69
+P 2021/01/03 ETH $1043.16
+P 2021/01/04 ETH $1103.19
+P 2021/01/05 ETH $1210.59
+P 2021/01/06 ETH $1225.50
+P 2021/01/07 ETH $1216.98
+P 2021/01/08 ETH $1279.96
+P 2021/01/09 ETH $1255.72
+P 2021/01/10 ETH $1088.37
+P 2021/01/11 ETH $1050.04
+P 2021/01/12 ETH $1129.84
+P 2021/01/13 ETH $1232.11
+P 2021/01/14 ETH $1169.06
+P 2021/01/15 ETH $1228.52
+P 2021/01/16 ETH $1233.73
+P 2021/01/17 ETH $1258.31
+P 2021/01/18 ETH $1367.65
+P 2021/01/19 ETH $1377.75
+P 2021/01/20 ETH $1111.49
+P 2021/01/21 ETH $1234.56
+P 2021/01/22 ETH $1234.10
+P 2021/01/23 ETH $1392.45
+P 2021/01/24 ETH $1318.47
+P 2021/01/25 ETH $1368.22
+P 2021/01/26 ETH $1241.51
+P 2021/01/27 ETH $1330.78
+P 2021/01/28 ETH $1379.13
+P 2021/01/29 ETH $1379.35
+P 2021/01/30 ETH $1314.18
+P 2021/01/31 ETH $1374.57
+P 2021/02/01 ETH $1513.90
+P 2021/02/02 ETH $1519.52
+P 2021/02/03 ETH $1587.85
+P 2021/02/04 ETH $1629.23
+P 2021/02/05 ETH $1718.00
+P 2021/02/06 ETH $1611.42
+P 2021/02/07 ETH $1694.54
+P 2021/02/08 ETH $1725.27
+P 2021/02/07 NLG  $0.01663
+P 2021/02/08 NLG  $0.01849
+
+P 2021/01/29 AMC $13.26
+P 2021/02/01 AMC $13.30
+P 2021/02/05 ARKG $108.905
+P 2021/02/08 ARKG $112.23
+P 2021/02/09 ARKG $112.01
+P 2021/02/10 ARKG $110.58
+P 2021/02/10 BMOOF $0.048
+P 2021/02/05 CNBS $29.19
+P 2021/02/08 CNBS $31.25
+P 2021/02/10 CNBS $39.90
+P 2021/02/10 CRLBF $16.90
+P 2021/02/10 CURLF $18.00
+P 2021/02/05 EWW $42.10
+P 2021/02/08 EWW $42.15
+P 2021/02/10 EWW $42.70
+P 2021/02/10 FNILX $14.03
+P 2021/01/29 GME $325.00
+P 2021/02/01 GME $224.00
+P 2021/02/02 GME $90.00
+P 2021/02/03 GME $92.41
+P 2021/02/04 GME $53.50
+P 2021/02/05 GME $63.77
+P 2021/02/08 GME $60.00
+P 2021/02/10 GME $51.20
+P 2021/02/10 GNLN $7.60
+P 2021/02/05 ICLN $31.18
+P 2021/02/08 ICLN $31.49
+P 2021/02/10 ICLN $30.79
+P 2021/02/05 IFRA $31.32
+P 2021/02/08 IFRA $31.65
+P 2021/02/10 IFRA $31.72
+P 2021/02/05 KBE $46.04
+P 2021/02/08 KBE $46.92
+P 2021/02/10 KBE $47.40
+P 2021/02/08 KKR $45.27
+P 2021/02/10 KKR $48.56
+P 2021/02/05 SIMO $59.59
+P 2021/02/08 SIMO $63.81
+P 2021/01/29 SPY $370.07
+P 2021/02/01 SPY $376.23
+P 2021/02/02 SPY $381.55
+P 2021/02/03 SPY $381.85
+P 2021/02/04 SPY $386.19
+P 2021/02/05 SPY $387.71
+P 2021/02/08 SPY $390.51
+P 2021/02/10 SPY $390.08
+P 2021/02/08 TIP $127.83
+P 2021/02/10 TIP $128.01
+P 2021/02/10 TRSSF $15.74
+P 2021/02/05 VCLO $12.9348
+P 2021/02/08 VCLO $12.8816
+P 2021/02/10 VCLO $13.0392
+P 2021/02/05 XLV $115.67
+P 2021/02/08 XLV $115.81
+P 2021/02/10 XLV $116.19
+P 2021/02/05 YOLO $26.05
+P 2021/02/08 YOLO $27.33
+P 2021/02/10 YOLO $30.56
+
+2021/01/01 00:00:00 * Initial balances
+    Assets:NCSECU:CHK0099                    $123.04
+    Assets:NCSECU:SAV1208                     $25.84
+    Assets:Coinbase                           $81.55
+    Assets:PayPal:Personal                    $79.93
+    Assets:PayPal:Business                    $93.81
+    Assets:Petty                            $1853.25
+    Equity:Opening Balance
+
+2021/01/01 11:37:00 * New Substack subscriber
+    Revenue:Commission:Substack:Main        -$182.00
+    Expenses:Finance:Pay Processing:Substack  $18.20
+    Expenses:Finance:Pay Processing:Stripe     $5.58
+    Assets:NCSECU:CHK0099
+
+2021/01/03 12:15:00 * Ko-fi gift
+    Revenue:Gift:Ko-fi                       -$25.00
+    Expenses:Finance:Pay Processing:Stripe     $1.03
+    Assets:NCSECU:CHK0099
+
+2021/01/04 * Ordered food
+    Assets:NCSECU:CHK0099                    -$10.21
+    Expenses:Food:Restaurant        
+
+2021/01/05 * Transfer PayPal to Checking
+    Assets:PayPal:Personal                   -$90.00
+    Expenses:Finance:Transfer Fee:NCSECU       $0.90
+    Assets:NCSECU:CHK0099
+
+2021/01/05 * Ko-fi gift
+    Revenue:Gift:Ko-fi                        -$5.00
+    Expenses:Finance:Transfer Fee:PayPal       $0.45
+    Assets:PayPal:Business      
+
+2021/01/05 * Delivery food
+    Expenses:Food:Restaurant                 -$35.18
+    Assets:PayPal:Personal
+2021/01/06 * Delivery food
+    Expenses:Food:Restaurant                  $41.00
+    Assets:NCSECU:CHK0099
+
+2021/01/06 * PayPal transfer
+    Assets:PayPal:Business                   -$98.36
+    Assets:PayPal:Personal
+
+2021/01/06 * Gift from Ecosteader
+    Revenue:Gift:PayPal:Personal             -$35.00
+    Assets:PayPal:Personal
+
+2021/01/07 * Gift
+    Revenue:Gift:PayPal:Personal               -$100
+    Assets:PayPal:Personal
+
+2021/01/07 * Give gift
+    Expenses:Gift                              -$110
+    Assets:PayPal:Personal
+
+
+
+2021/01/11 * Pay Fastmail
+    Expenses:Professional Services:Email         $10
+    Expenses:Finance:Pay Processing:NCSECU     $0.10
+    Assets:NCSECU:CHK0099
+
+2021/01/13 * Liberapay Gift
+    Revenue:Gift:LiberaPay                       -$60
+    Expenses:Finance:Transfer Fee:PayPal   $2.04
+    Assets:PayPal:Personal
+
+2021/01/15 * Give gift
+    Expenses:Gift                               $290
+    Assets:PayPal:Personal
+
+2021/01/15 * Delivery food
+    Expenses:Food:Restaurant                  $29.04
+    Assets:NCSECU:CHK0099
+
+2021/01/15 * VPS payment
+    Expenses:Professional Services:Web hosting  $21.18
+    Assets:NCSECU:CHK0099
+
+2021/01/15 * Buy videogame on Steam
+    Expenses:Recreation:Computer game         $13.96
+    Assets:PayPal:Personal
+2021/01/16 * Buy videogame on Steam
+    Expenses:Recreation:Computer game         $21.49
+    Assets:PayPal:Personal
+2021/01/17 * Delivery food
+    Expenses:Food:Restaurant                  $23.00
+    Assets:PayPal:Personal
+2021/01/18 * Liberapay gift
+    Revenue:Gift:Liberapay                    -$68.25
+    Assets:PayPal:Personal
+
+
+2021/01/21 * Delivery food
+    Expenses:Food:Restaurant                  $23.09
+    Assets:NCSECU:CHK0099
+
+2021/01/21 * Delivery food
+    Expenses:Food:Restaurant                  $28.00
+    Assets:NCSECU:CHK0099
+
+
+
+2021/01/25 * Delivery food
+    Expenses:Food:Restaurant                  $41.00
+    Assets:NCSECU:CHK0099
+
+2021/01/25 * Ko-fi gift
+    Revenue:Gift:Ko-fi                        -$10.00
+    Expenses:Finance:Transfer Fee:PayPal       $0.74
+    Assets:PayPal:Business
+
+2021/01/25 * Give gift
+    Expenses:Gift                                $90
+    Assets:PayPal:Personal
+
+2021/01/27 11:16:00 * Substack subscription
+    Revenue:Commission:Substack               -$8.00
+    Expenses:Finance:Pay Processing:Stripe     $1.33
+    Assets:NCSECU:CHK0099
+
+2021/01/29 09:30:21 * Open equity position in AMC
+    Assets:Esther:IRA:AMC                         15 AMC @ $14.74
+    Liabilities:Esther
+
+2021/01/29 09:39:00 * Ko-fi gift
+    Revenue:Gift:Ko-fi                       -$11.00
+    Expenses:Finance:Pay Processing:Stripe     $0.62
+    Assets:NCSECU:CHK0099
+
+2021/01/29 10:03:00 * Buy AMC to lower cost basis
+    Assets:Esther:IRA:AMC                          8 AMC @ $12.8975
+    Liabilities:Esther
+
+2021/01/29 21:46:00 * Transfer to Cashapp
+    Assets:NCSECU:CHK0099                       -$25
+    Assets:CashApp
+
+2021/01/29 21:52:00 * Open position in BTC
+    Assets:CashApp                              -$25
+    Assets:CashApp:BTC                    0.00071912 BTC @ $33972.08 
+    Expenses:Finance:Transfer Fee:CashApp
+
+2021/01/29 * NCSECU:SAV1208 Interest Payment
+    Assets:NCSECU:SAV1208                      $0.01
+    Revenue:Interest:NCSECU:SAV1208
+
+2021/01/29 * NCSECU:CHK0099 Interest Payment
+    Expenses:Finance:Banking Fee:NCSECU        $1.00
+    Revenue:Interest                          -$0.02
+    Assets:NCSECU:CHK0099
+
+2021/01/29 * Month of Ko-fi Gold
+    Expenses:Professional Services:Ko-fi Gold  $6.00
+    Assets:PayPal:Personal
+2021/01/30 18:44:00 * Gift from Jeremy Friesen
+    Revenue:Gift:PayPal:Personal              -$300
+    Assets:PayPal:Personal
+
+2021/01/30 20:44:00 * Loan to Jay
+    Liabilities:Jay                              $50
+    Assets:Petty
+2021/01/31 11:01:00 * Ko-fi gift
+    Revenue:Gift:Ko-fi                        -$6.00
+    Expenses:Finance:Pay Processing:Stripe     $0.47
+    Assets:NCSECU:CHK0099
+
+2021/01/31 20:25:00 * Clear out Coinbase
+    Assets:Coinbase                          -$81.55
+    Assets:NCSECU:CHK0099
+2021/02/01 07:01:32 * Open equity position in GME
+    Assets:Esther:IRA:GME                          3 GME @ $320.00
+    Liabilities:Esther
+
+2021/02/01 09:15:00 * Increase BTC position
+    Assets:CashApp                              -$25
+    Assets:CashApp:BTC                    0.00073095 BTC @ $33422.26
+    Expenses:Finance:Transfer Fee:CashApp:Crypto  $0.57
+
+2021/02/01 09:33:31 * Close all positions in AMC
+    Assets:Esther:IRA:AMC                        -15 AMC {$14.74} [2021/01/29] @ $15.92
+    Assets:Esther:IRA:AMC                         -8 AMC {$12.8975} [2021/01/29] @ $15.92
+    Liabilities:Esther                       $366.15
+    Revenue:Capital Gains:Profit
+
+2021/02/01 09:34:16 * Increase equity position in GME
+    Assets:Esther:IRA:GME                          1 GME @ $289.98
+    Liabilities:Esther
+
+2021/02/01 10:03:07 * Increase equity position in GME
+    Assets:Esther:IRA:GME                          1 GME @ $276.51
+    Liabilities:Esther
+
+2021/02/01 10:03:07 * Increase equity position in GME
+    Assets:Esther:IRA:GME                          1 GME @ $239.65
+    Liabilities:Esther
+
+2021/02/01 11:04:00 Pay for Vultr VPS
+    Expenses:Professional Services:VPS         $9.22
+    Assets:NCSECU:CHK0099
+
+2021/02/01 15:57:27 * Increase equity position in GME
+    Assets:Esther:IRA:GME                      0.223 GME @ $223.30
+    Liabilities:Esther
+
+2021/02/01 15:57:27 * Decrease equity position in GME
+    Assets:Esther:IRA:GME                     -0.223 GME {$320} [2021/02/01] @ $49.94
+    Liabilities:Esther                        $49.94
+    Revenue:Capital Gains:Loss
+
+2021/02/01 16:53:00 * Gift to Quarters-guy
+    Assets:Petty                                 -$4
+    Expenses:Gift
+
+2021/02/01 17:38:10 * Increase equity position in GME
+    Assets:Esther:IRA:GME                          1 GME @ $188.99
+    Liabilities:Esther
+
+2021/02/01 17:44:00 * Patreon transfer
+    Revenue:Gift:Patreon                    -$176.36
+    Assets:PayPal:Personal
+
+2021/02/01 21:46:00 * Donation to CashApp
+    Assets:CashApp                               $25
+    Revenue:Gift
+
+2021/02/01 22:07:04 * PayPal donation
+    Revenue:Gift:Liberapay                      -$30
+    Expenses:Finance:Transfer Fee:PayPal       $1.27
+    Assets:PayPal:Personal
+
+2021/02/01 * Pay for emsenn.net domain & hosting
+    Expenses:Professional Services:Web hosting   $40
+    Assets:NCSECU:CHK0099
+2021/02/02 07:30:57 * Increase equity position in GME
+    Assets:Esther:IRA:GME                          1 GME @ $160.39
+    Liabilities:Esther        
+
+2021/02/02 09:09:53 * Increase equity position in GME
+    Assets:Esther:IRA:GME                          1 GME @ $133.00
+    Liabilities:Esther
+
+2021/02/02 16:53:00 * Gift to Quarters-guy
+    Assets:Petty                                 -$4
+    Expenses:Gift
+
+2021/02/02 18:51:00 * Sherose
+    Assets:Petty                                $700
+    Revenue:Gift
+
+2021/02/02 22:29:00 * Open position in ETH
+    Expenses:Finance:Forex:PayPal              $0.50
+    Assets:PayPal:Personal:ETH            0.01293543 ETH @ $1546.14
+    Assets:PayPal:Personal
+
+2021/02/02 22:37:00 * Increase position in ETH
+    Expenses:Finance:Forex:PayPal              $1.96
+    Assets:PayPal:Personal:ETH            0.05489882 ETH @ $1548.30
+    Assets:PayPal:Personal    
+
+2021/02/02 23:55:00 * Increase position in ETH
+    Expenses:Finance:Forex:PayPal              $1.84
+    Assets:PayPal:Personal:ETH            0.05135318 ETH @ $1557.83
+    Assets:PayPal:Personal    
+
+
+2021/02/02 * Pay for VPS
+    Expenses:Professional Services:Web hosting  $9.22
+    Assets:NCSECU:CHK0099
+2021/02/03 12:16:00 * Ko-fi gift
+    Revenue:Gift:Ko-fi                        -$25.00
+    Expenses:Finance:Pay Processing:Stripe     $1.03
+    Assets:NCSECU:CHK0099
+
+2021/02/03 14:14:00 * Open position in SPY
+    Assets:Esther:IRA:SPY           0.052 SPY @ $382.73
+    Liabilities:Esther
+
+2021/02/03 17:01:00 * Increase position in BTC
+    Expenses:Finance:Forex:PayPal              $2.30
+    Assets:PayPal:Personal:BTC            0.00260517 BTC @ $38385.21
+    Assets:PayPal:Personal
+
+2021/02/03 19:01:00 * Increase position in BTC
+    Expenses:Finance:Forex:PayPal              $1.15
+    Assets:PayPal:Personal:BTC            0.00131023 BTC @ $38161.24
+    Assets:PayPal:Personal
+2021/02/04 09:44:00 * Increase position in BTC
+    Expenses:Finance:Forex:PayPal              $1.15
+    Assets:PayPal:Personal:BTC            0.00135163 BTC @ $36992.37
+    Assets:PayPal:Personal
+
+2021/02/04 12:02:00 * Gift to Quarters-guy
+    Expenses:Gift                                 $5
+    Assets:Petty
+
+2021/02/04 14:00:00 * Gift of food from settlerfolk
+    Revenue:Gift                                 -94lb @ $2
+    Assets:Inventory:Larder:beans:split yellow peas
+
+2021/02/04 14:00:00 * Gift of food from settlerfolk
+    Revenue:Gift                                  -24lb @ $2
+    Assets:Inventory:Larder:beans:split green peas
+
+2021/02/04 14:00:00 * Gift of food from settlerfolk
+    Revenue:Gift                                  -4lb @ $2
+    Assets:Inventory:Larder:beans:lentils
+
+2021/02/04 14:00:00 * Gift of food from settlerfolk
+    Revenue:Gift                                  -20lb @ $2
+    Assets:Inventory:Larder:beans:garbonzo
+
+2021/02/05 07:03:31 Ko-fi gift
+    Revenue:Gift:Ko-fi                           -$5
+    Expenses:Finance:Transfer Fee:PayPal       $0.45
+    Assets:PayPal:Business
+
+2021/02/05 12:02:00 * Gift to Quarters-guy
+    Expenses:Gift                                 $4
+    Assets:Petty
+
+2021/02/05 09:52:23 * Buy SIMO
+    Assets:Esther:IRA:SIMO                         1 SIMO @ $57
+    Liabilities:Esther
+
+2021/02/05 09:53:23 * Buy SPY
+    Assets:Esther:IRA:SPY                      0.257 SPY @ $387.72
+    Liabilities:Esther
+
+2021/02/05 11:03:00 * Buy ARKG
+    Assets:Esther:IRA:ARKG                     0.184 AKRG @ $108.59
+    Liabilities:Esther
+
+2021/02/05 13:11:00 * Buy BTC
+    Expenses:Finance:Forex                     $2.30
+    Assets:PayPal:Personal:BTC            0.00262869 BTC @ $38041.77
+    Assets:PayPal:Personal
+
+2021/02/05 13:14:46 * Buy VCLO
+    Assets:Esther:IRA:VCLO                         3 VCLO @ $12.90
+    Liabilities:Esther
+
+2021/02/05 13:16:42 * Buy KBE
+    Assets:Esther:IRA:KBE                          1 KBE @ $45.96
+    Liabilities:Esther
+
+2021/02/05 04:27:51 * Buy XLV
+    Assets:Esther:IRA:XLV                      0.432 XLV @@ $50
+    Liabilities:Esther
+
+2021/02/05 14:39:51 * Buy ICLN
+    Assets:Esther:IRA:ICLN                         2 ICLN @ $31.179
+    Liabilities:Esther
+
+2021/02/05 14:41:45 * Buy YOLO
+    Assets:Esther:IRA:YOLO                         1 YOLO @ $26.1688
+    Liabilities:Esther
+
+2021/02/05 14:42:03 * Buy CNBS
+    Assets:Esther:IRA:CNBS                         1 CNBS @ $29.1986
+    Liabilities:Esther
+
+2021/02/05 14:43:07 * Buy IFRA
+    Assets:Esther:IRA:IFRA                         1 IFRA @ $31.305
+    Liabilities:Esther
+
+2021/02/05 14:50:46 * Buy EWW
+    Assets:Esther:IRA:EWW                      0.473 EWW @ $47.28
+    Liabilities:Esther
+
+2021/02/05 09:58:00 * Buy FNILX
+    Assets:Esther:IRA:FNILX                    7.174 FNILX @ $13.94
+    Liabilities:Esther
+
+2021/02/05 17:50:00 * Sell ETH
+    Assets:PayPal:Personal:ETH           -0.01293543 ETH {$1546.14} [2021/02/02] @ $1652.69
+    Assets:PayPal:Personal:ETH           -0.05489882 ETH {$1548.30} [2021/02/02] @ $1652.69
+    Assets:PayPal:Personal:ETH           -0.05135318 ETH {$1557.83} [2021/02/02] @ $1652.69
+    Expenses:Finance:Forex:PayPal              $3.94
+    Assets:PayPal                            $193.04
+    Revenue:Capital Gains:Profit
+
+2021/02/05 17:54:00 * Buy ETH
+    Expenses:Finance:Forex:PayPal              $3.00
+    Assets:PayPal:Personal:ETH            0.08926915 ETH @ $1680.31
+    Assets:PayPal
+2021/02/06 09:14:00 * Quarters-guy
+    Expenses:Gift                                 $4
+    Assets:Petty
+
+2021/02/06 13:15:00 * Gift
+    Expenses:Gift                               $510
+    Assets:Petty
+
+2021/02/06 20:31:00 * Sell ETH
+    Expenses:Finance:Forex:PayPal              $2.88
+    Assets:PayPal:Personal:ETH           -0.08926915 ETH {$1680.31} [2021/02/05] @ $1613.88
+    Assets:PayPal:Personal                   $141.19
+    Revenue:Capital Gains:Loss
+
+2021/02/06 21:01:00 * Buy BTC
+    Expenses:Finance:Forex:PayPal              $2.30
+    Assets:PayPal:Personal:BTC            0.00259444 BTC @ $38543.97
+    Assets:PayPal:Personal
+
+
+2021/02/07 09:14:00 * Quarters guy
+    Expenses:Gift                                 $4
+    Assets:Petty
+
+2021/02/07 13:44:00 * Loan to joy
+    Liabilities:Jay                              $20
+    Assets:Petty
+
+2021/02/07 16:04:00 * Gift
+    Revenue:Gift
+    Assets:Crypto:Gulden:Slush     2156 NLG @ $0.01547
+2021/02/08 08:43:00 * Quarters guy
+    Expenses:Gift                                 $4
+    Assets:Petty
+
+2021/02/08 08:53:00 * Buy ETH
+    Expenses:Finance:Forex:PayPal              $2.30
+    Assets:PayPal:Personal:ETH            0.05862769 ETH @ $1705.68
+    Assets:PayPal:Personal
+
+2021/02/08 09:33:43 * Buy TIPs
+    Assets:Esther:IRA:TIP                      1.566 TIP @ $127.71
+    Liabilities:Esther
+
+2021/02/08 09:39:10 * Buy KKR
+    Assets:Esther:IRA:KKR                          1 KKR @ $45.005
+    Liabilities:Esther
+
+2021/02/08 14:50:00 * Gift
+    Revenue:Gift                            -$190.00
+    Assets:PayPal:Personal
+
+2021/02/08 19:38:00 * Buy BTC
+    Expenses:Finance:Forex:PayPal              $3.00
+    Assets:PayPal:Personal:BTC            0.00320930 BTC @ $46739.17
+    Assets:PayPal:Personal
+2021/02/09 02:25:00 Subscription to emspeculations
+    Revenue:Commission:Substack:emspeculations  -$250
+    Expenses:Finance:Pay Processing:Substack  $32.55
+    Assets:NCSECU:CHK0099
+
+2021/02/09 08:22:00 * Quarters guy
+    Expenses:Gift                                 $4
+    Assets:Petty
+
+2021/02/09 09:09:57 * Buy CRSR
+    Assets:Esther:IRA:CRSR                         1 CRSR @ $47.37
+    Liabilities:Esther
+
+2021/02/09 10:01:54 * Buy CRSR
+    Assets:Esther:IRA:CRSR                         1 CRSR @ $43.00
+    Liabilities:Esther
+
+2021/02/09 14:18:00 * Gift
+    Revenue:Gift                                -$75
+    Assets:PayPal:Personal
+
+2021/02/09 19:19:00 * Buy fast food
+    Expenses:Food:Restaurant                     $15
+    Assets:Petty
+
+2021/02/09 23:44:00 * Pay for Email
+    Expenses:Professional Services:Email         $10
+    Assets:NCSECU:CHK0099
+2021/02/10 09:30:11 * Sell TIP
+    Assets:Esther:IRA:TIP                     -0.782 TIP {$127.71} [2021/02/08] @ $127.87
+    Liabilities:Esther                       $99.87
+    Revenue:Capital Gains:Profit
+
+
+2021/02/10 09:31:43 * Buy GNLN
+    Assets:Esther:IRA:GNLN                         2 GNLN @ $7.7995
+    Liabilities:Esther
+
+2021/02/10 09:32:59 * Buy CURLF
+    Assets:Esther:IRA:CURLF                        1 CURLF @ $18.25
+    Liabilities:Esther
+
+2021/02/10 09:33:58 * Buy TRSSF
+    Assets:Esther:IRA:TRSSF                        1 TRSSF @ $15.92
+    Liabilities:Esther
+
+2021/02/10 09:38:33 * Buy CRLBF
+    Assets:Esther:IRA:CRLBF                        1 CRLBF @ $17.1796
+    Liabilities:Esther
+
+2021/02/10 09:40:00 * Sell SIMO
+    Assets:Esther:IRA:SIMO                        -1 SIMO {$57.00} [2021/02/05] @ $62.3532
+    Liabilities:Esther                        $62.35
+    Revenue:Capital Gains:Profit
+
+
+2021/02/10 09:43:27 * Sell CRSR
+    Assets:Esther:IRA:CRSR                        -1 CRSR {$47.37} [2021/02/09] @ $44.06
+    Assets:Esther:IRA:CRSR                        -1 CRSR {$43.00} [2021/02/09] @ $44.06
+    Liabilities:Esther                        $88.18
+    Revenue:Capital Gains:Loss
+
+2021/02/10 10:54:08 * Buy GNLN
+    Assets:Esther:IRA:GNLN                         1 GNLN @ $6.81
+    Liabilities:Esther
+
+2021/02/10 11:06:52 * Buy CRLBF
+    Assets:Esther:IRA:CRLBF                        1 CRLBF @ $16.71
+    Liabilities:Esther
+
+2021/02/10 11:07:23 * Buy TRSSF
+    Assets:Esther:IRA:TRSSF                        1 TRSSF @ $15.46
+    Liabilities:Esther
+
+2021/02/10 11:07:17 * Buy CURLF
+    Assets:Esther:IRA:CURLF                        1 CURLF @ $17.19
+    Liabilities:Esther
+
+2021/02/10 14:31:06 * Buy BMOOF
+    Assets:Esther:IRA:BMOOF                      400 BMOOF @ $0.0473
+    Liabilities:Esther

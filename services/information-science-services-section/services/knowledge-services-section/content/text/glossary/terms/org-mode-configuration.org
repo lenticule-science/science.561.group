@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       c93054e0-33b5-4859-b83d-9e37cbc382c3
+:END:
+#+title: Org-mode configuration
+#+date: [2025-08-28 Thu 09:03]
+

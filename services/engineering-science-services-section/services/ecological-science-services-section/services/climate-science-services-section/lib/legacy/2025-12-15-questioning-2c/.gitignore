@@ -1,0 +1,4 @@
+# Local media files (keep outside Git history)
+/media/*.mp4
+/media/*.pdf
+

@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>561 Group — Design Bible v.0.1</title>
+<link rel="stylesheet" href="bible.css">
+</head>
+<body>
+
+<!-- Registration marks (riso reference) -->
+<div class="regmark tl" aria-hidden="true"><svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="8" fill="none" stroke="#0A0A0A"/><line x1="10" y1="0" x2="10" y2="20" stroke="#0A0A0A"/><line x1="0" y1="10" x2="20" y2="10" stroke="#0A0A0A"/></svg></div>
+<div class="regmark tr" aria-hidden="true"><svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="8" fill="none" stroke="#0A0A0A"/><line x1="10" y1="0" x2="10" y2="20" stroke="#0A0A0A"/><line x1="0" y1="10" x2="20" y2="10" stroke="#0A0A0A"/></svg></div>
+<div class="regmark bl" aria-hidden="true"><svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="8" fill="none" stroke="#FF4530"/><line x1="10" y1="0" x2="10" y2="20" stroke="#FF4530"/><line x1="0" y1="10" x2="20" y2="10" stroke="#FF4530"/></svg></div>
+<div class="regmark br" aria-hidden="true"><svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="8" fill="none" stroke="#3D5588"/><line x1="10" y1="0" x2="10" y2="20" stroke="#3D5588"/><line x1="0" y1="10" x2="20" y2="10" stroke="#3D5588"/></svg></div>
+
+<!-- ============================================ -->
+<!-- MASTHEAD                                     -->
+<!-- ============================================ -->
+<div class="page">
+  <div class="masthead">
+    <div class="m1">561 GROUP / DESIGN BIBLE</div>
+    <div class="m2">v.0.1 — Living Document</div>
+    <div class="m3">Field Manual For Designers</div>
+    <div class="m4">FOLIO 001 / 048</div>
+  </div>
+</div>
+
+<!-- ============================================ -->
+<!-- HERO / SEAL                                  -->
+<!-- ============================================ -->
+<header class="hero" data-screen-label="00 Hero">
+<div class="page">
+  <div class="hero-grid">
+    <div class="seal-wrap">
+      <!-- PRIMARY SEAL -->
+      <svg viewBox="0 0 480 480" width="100%" style="display:block" aria-label="561 Group seal">
+        <!-- outer ring -->
+        <circle cx="240" cy="240" r="220" fill="none" stroke="#0A0A0A" stroke-width="3"/>
+        <circle cx="240" cy="240" r="200" fill="none" stroke="#0A0A0A" stroke-width="1"/>
+        <!-- circular text along top: 561 GROUP · END FOOD APARTHEID · CONFEDERACY -->
+        <defs>
+          <path id="topArc" d="M 60 240 A 180 180 0 0 1 420 240"/>
+          <path id="botArc" d="M 60 240 A 180 180 0 0 0 420 240"/>
+        </defs>
+        <text font-family="Space Grotesk, sans-serif" font-weight="700" font-size="22" letter-spacing="6" fill="#0A0A0A">
+          <textPath href="#topArc" startOffset="50%" text-anchor="middle">END · FOOD · APARTHEID</textPath>
+        </text>
+        <text font-family="Space Grotesk, sans-serif" font-weight="500" font-size="16" letter-spacing="8" fill="#0A0A0A">
+          <textPath href="#botArc" startOffset="50%" text-anchor="middle">561 · CONFEDERACY · 561 · CONFEDERACY · 561</textPath>
+        </text>
+
+        <!-- inner field: registration-shifted "561" with three abstracted bars -->
+        <!-- red shadow -->
+        <text x="243" y="262" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="156" letter-spacing="-6" text-anchor="middle" fill="#FF4530" opacity=".95">561</text>
+        <!-- blue shadow -->
+        <text x="237" y="258" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="156" letter-spacing="-6" text-anchor="middle" fill="#3D5588" opacity=".95" style="mix-blend-mode:multiply">561</text>
+        <!-- ink top -->
+        <text x="240" y="260" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="156" letter-spacing="-6" text-anchor="middle" fill="#0A0A0A">561</text>
+
+        <!-- four hash-marks for the lineages -->
+        <g stroke="#0A0A0A" stroke-width="4">
+          <line x1="120" y1="320" x2="160" y2="320"/>
+          <line x1="170" y1="320" x2="210" y2="320"/>
+          <line x1="270" y1="320" x2="310" y2="320"/>
+          <line x1="320" y1="320" x2="360" y2="320"/>
+        </g>
+        <text x="240" y="350" font-family="JetBrains Mono, monospace" font-size="13" letter-spacing="4" text-anchor="middle" fill="#0A0A0A">EFA</text>
+        <text x="240" y="372" font-family="Roboto Slab, serif" font-style="italic" font-size="14" text-anchor="middle" fill="#0A0A0A">land · seed · sovereignty</text>
+
+        <!-- crosshair registration in corners of the field -->
+        <g stroke="#0A0A0A" stroke-width="1">
+          <line x1="40" y1="240" x2="60" y2="240"/>
+          <line x1="50" y1="230" x2="50" y2="250"/>
+          <line x1="420" y1="240" x2="440" y2="240"/>
+          <line x1="430" y1="230" x2="430" y2="250"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="title-wrap">
+      <div class="eyebrow red" style="margin-bottom:18px">A FIELD MANUAL FOR DESIGNERS · ORGANIZERS · KIN</div>
+      <h1>
+        <span class="stack">561</span>
+        <span class="stack">Group</span>
+        <span class="stack red">Design</span>
+        <span class="stack">Bible</span>
+      </h1>
+      <p class="strap">
+        A working visual language for an autonomous confederacy in pursuit of black liberation, indigenous sovereignty, and the end of food apartheid. Built to be used, not admired. Read it twice. Then make something.
+      </p>
+      <div style="margin-top:36px;display:grid;grid-template-columns:repeat(4,1fr);gap:14px;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase">
+        <div><div style="color:var(--ink-soft)">Edition</div><div style="font-weight:700">v.0.1</div></div>
+        <div><div style="color:var(--ink-soft)">Status</div><div style="font-weight:700">Living</div></div>
+        <div><div style="color:var(--ink-soft)">License</div><div style="font-weight:700">Cooperative</div></div>
+        <div><div style="color:var(--ink-soft)">Origin</div><div style="font-weight:700">561 / EFA</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+<!-- ============================================ -->
+<!-- 00 — PREAMBLE / TOC                          -->
+<!-- ============================================ -->
+<section id="s00" class="no-rule" data-screen-label="00 Preamble">
+<div class="page">
+  <div class="folio">FOLIO 002</div>
+  <div class="grid12">
+    <div style="grid-column:1/6">
+      <div class="eyebrow" style="margin-bottom:18px">§ 00 · PREAMBLE</div>
+      <p class="declaration">
+        This bible is not a brand. <em>It is a tool.</em> A brand sells. A tool works. We are building a visual language for a confederacy that intends to feed itself, govern itself, and remember itself — without apology to the institutions that engineered our hunger.
+      </p>
+      <div style="margin-top:36px" class="body slab">
+        <p>The 561 Group is an autonomous confederacy organized to pursue black liberation, indigenous sovereignty, and the abolition of food apartheid. <strong>561 = E·F·A = End Food Apartheid.</strong> The number is the first instruction. Everything that follows is in service of it.</p>
+        <p>This document is a working manual. It does not require taste; it requires obedience to the constraints, and disobedience to the institutions those constraints stand against. When the manual fails, the manual is wrong. Edit it.</p>
+      </div>
+    </div>
+
+    <div style="grid-column:7/13">
+      <div class="eyebrow" style="margin-bottom:18px">CONTENTS · 15 SECTIONS</div>
+      <ul class="toc">
+        <li><a href="#s01"><span class="t-num">01</span><span class="t-name">Mission &amp; Declaration</span><span class="t-page">003</span></a></li>
+        <li><a href="#s02"><span class="t-num">02</span><span class="t-name">Name &amp; Symbolism — 561 / EFA</span><span class="t-page">005</span></a></li>
+        <li><a href="#s03"><span class="t-num">03</span><span class="t-name">The Seal — Construction &amp; Use</span><span class="t-page">008</span></a></li>
+        <li><a href="#s04"><span class="t-num">04</span><span class="t-name">Color System</span><span class="t-page">012</span></a></li>
+        <li><a href="#s05"><span class="t-num">05</span><span class="t-name">Typography &amp; Specimens</span><span class="t-page">016</span></a></li>
+        <li><a href="#s06"><span class="t-num">06</span><span class="t-name">Grid &amp; Layout Principles</span><span class="t-page">020</span></a></li>
+        <li><a href="#s07"><span class="t-num">07</span><span class="t-name">Glyph Set — 16 Marks</span><span class="t-page">024</span></a></li>
+        <li><a href="#s08"><span class="t-num">08</span><span class="t-name">Voice &amp; Copywriting</span><span class="t-page">028</span></a></li>
+        <li><a href="#s09"><span class="t-num">09</span><span class="t-name">Imagery &amp; Image Treatment</span><span class="t-page">031</span></a></li>
+        <li><a href="#s10"><span class="t-num">10</span><span class="t-name">Posters &amp; Flyers</span><span class="t-page">034</span></a></li>
+        <li><a href="#s11"><span class="t-num">11</span><span class="t-name">Web &amp; Digital Templates</span><span class="t-page">037</span></a></li>
+        <li><a href="#s12"><span class="t-num">12</span><span class="t-name">Print Artifacts — Zine, Newspaper, Pamphlet</span><span class="t-page">040</span></a></li>
+        <li><a href="#s13"><span class="t-num">13</span><span class="t-name">Refusals — What We Do Not Do</span><span class="t-page">044</span></a></li>
+        <li><a href="#s14"><span class="t-num">14</span><span class="t-name">Lineage &amp; Sources</span><span class="t-page">046</span></a></li>
+        <li><a href="#s15"><span class="t-num">15</span><span class="t-name">Colophon &amp; Edits</span><span class="t-page">048</span></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ============================================ -->
+<!-- 01 — MISSION                                 -->
+<!-- ============================================ -->
+<section id="s01" data-screen-label="01 Mission">
+<div class="page">
+  <div class="folio">FOLIO 003</div>
+  <div class="section-head">
+    <div class="num">§ 01<br>MISSION</div>
+    <div class="title">A Confederacy<br>Against Hunger.</div>
+  </div>
+
+  <div class="grid12">
+    <div style="grid-column:1/8">
+      <p class="declaration">
+        We organize land, seed, water, labor, and memory toward the end of food apartheid — the engineered scarcity that has shaped Black and Indigenous life in this hemisphere for five centuries. <em>This is not a campaign. It is a confederacy.</em>
+      </p>
+
+      <div style="margin-top:48px" class="grid2">
+        <div>
+          <div class="h4" style="margin-bottom:10px">WHAT WE ARE</div>
+          <p class="body slab">An autonomous network of growers, cooks, archivists, organizers, designers, and kin — bound by mutual aid agreements, not by ownership.</p>
+        </div>
+        <div>
+          <div class="h4" style="margin-bottom:10px">WHAT WE ARE NOT</div>
+          <p class="body slab">A nonprofit. A brand. A startup. A subcontractor of state agriculture. A cultural product to be consumed.</p>
+        </div>
+        <div>
+          <div class="h4" style="margin-bottom:10px">WHAT WE BUILD</div>
+          <p class="body slab">Land trusts. Seed libraries. Field kitchens. Distribution corridors. Printing presses. Schools. Records. Each one a fact on the ground.</p>
+        </div>
+        <div>
+          <div class="h4" style="margin-bottom:10px">WHAT WE END</div>
+          <p class="body slab">The food apartheid system: the redlines, the deserts, the surplus-cheese economy, the supply-chain capture of Black and Indigenous land.</p>
+        </div>
+      </div>
+    </div>
+
+    <aside style="grid-column:9/13;border-left:1px solid var(--ink);padding-left:24px">
+      <div class="h4" style="margin-bottom:14px">FIVE OBLIGATIONS<br>OF THE WORK</div>
+      <ol style="list-style:none;counter-reset:o" class="body">
+        <li style="counter-increment:o;padding:14px 0;border-bottom:1px dashed var(--ink);position:relative;padding-left:36px">
+          <span class="mono" style="position:absolute;left:0;top:14px;color:var(--red);font-weight:700">01.</span>
+          Feed first. Theorize second.</li>
+        <li style="counter-increment:o;padding:14px 0;border-bottom:1px dashed var(--ink);position:relative;padding-left:36px">
+          <span class="mono" style="position:absolute;left:0;top:14px;color:var(--red);font-weight:700">02.</span>
+          Land returns. Seed returns. Story returns.</li>
+        <li style="counter-increment:o;padding:14px 0;border-bottom:1px dashed var(--ink);position:relative;padding-left:36px">
+          <span class="mono" style="position:absolute;left:0;top:14px;color:var(--red);font-weight:700">03.</span>
+          Refuse the philanthropic frame.</li>
+        <li style="counter-increment:o;padding:14px 0;border-bottom:1px dashed var(--ink);position:relative;padding-left:36px">
+          <span class="mono" style="position:absolute;left:0;top:14px;color:var(--red);font-weight:700">04.</span>
+          Document everything. Archive nothing extractable.</li>
+        <li style="counter-increment:o;padding:14px 0;position:relative;padding-left:36px">
+          <span class="mono" style="position:absolute;left:0;top:14px;color:var(--red);font-weight:700">05.</span>
+          Make work that survives without electricity.</li>
+      </ol>
+    </aside>
+  </div>
+</div>
+</section>
+
+<!-- ============================================ -->
+<!-- BANNER                                       -->
+<!-- ============================================ -->
+<div class="banner">
+  <div class="inner" style="display:grid;grid-template-columns:auto 1fr auto;gap:48px;align-items:center">
+    <div style="font-family:var(--mono);font-size:12px;letter-spacing:.2em">PRIMARY DECLARATION ▸</div>
+    <div style="font-family:var(--sans);font-weight:700;font-size:clamp(28px,4vw,56px);line-height:1;letter-spacing:-.02em;text-transform:uppercase">
+      No Land. No Liberation.<br>
+      <span style="color:var(--red)">No Seed. No Sovereignty.</span>
+    </div>
+    <div style="font-family:var(--mono);font-size:12px;letter-spacing:.2em">◂ 561 / EFA</div>
+  </div>
+</div>
+
+<!-- ============================================ -->
+<!-- 02 — NAME & SYMBOLISM                        -->
+<!-- ============================================ -->
+<section id="s02" data-screen-label="02 Name">
+<div class="page">
+  <div class="folio">FOLIO 005</div>
+  <div class="section-head">
+    <div class="num">§ 02<br>NAME · SYMBOLISM</div>
+    <div class="title">561 Is The<br>First Instruction.</div>
+  </div>
+
+  <div class="grid12" style="align-items:start">
+    <div style="grid-column:1/5">
+      <div class="numeral" style="color:var(--ink)">5<span style="color:var(--red)">6</span>1</div>
+      <div class="mono" style="margin-top:12px">5 → E · 6 → F · 1 → A</div>
+      <div class="mono" style="margin-top:4px;color:var(--ink-soft)">A1Z26 simple substitution.</div>
+    </div>
+
+    <div style="grid-column:6/13">
+      <p class="lede">
+        <strong>561 = EFA = End Food Apartheid.</strong> The number is a key, not a symbol. Read it letter-by-letter and the program reveals itself. The numerals are spoken plainly — <em>five-six-one</em> — never &ldquo;five-sixty-one.&rdquo; The substitution is the thing.
+      </p>
+      <div class="grid2" style="margin-top:32px">
+        <div>
+          <div class="h4" style="margin-bottom:10px">WHY A NUMBER</div>
+          <p class="body slab">A number is harder to brand. It does not perform care. It does not say its meaning at a glance. It asks a question, and the answer is the work.</p>
+        </div>
+        <div>
+          <div class="h4" style="margin-bottom:10px">WHY THE WORD &ldquo;APARTHEID&rdquo;</div>
+          <p class="body slab">Because &ldquo;food desert&rdquo; is geological — it makes hunger sound like weather. Apartheid is a policy. We name the policy.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Substitution diagram -->
+  <div style="margin-top:64px" class="cropmarks">
+    <span class="cm-bl"></span><span class="cm-br"></span>
+    <div style="border:1px solid var(--ink);padding:32px;background:var(--bone)">
+      <div class="h4" style="margin-bottom:24px">FIG 02.1 · SUBSTITUTION TABLE — A1Z26 (Excerpt)</div>
+      <div style="display:grid;grid-template-columns:repeat(13,1fr);gap:0;font-family:var(--mono);font-size:13px">
+        <!-- header letters -->
+        <div></div>
+        <div style="text-align:center;padding:6px">A</div><div style="text-align:center;padding:6px">B</div><div style="text-align:center;padding:6px">C</div><div style="text-align:center;padding:6px">D</div>
+        <div style="text-align:center;padding:6px;background:var(--red);color:var(--ink);font-weight:700">E</div>
+        <div style="text-align:center;padding:6px;background:var(--red);color:var(--ink);font-weight:700">F</div>
+        <div style="text-align:center;padding:6px">G</div><div style="text-align:center;padding:6px">H</div><div style="text-align:center;padding:6px">I</div><div style="text-align:center;padding:6px">J</div><div style="text-align:center;padding:6px">K</div><div style="text-align:center;padding:6px">L</div>
+        <!-- numbers -->
+        <div style="border-top:1px solid var(--ink);padding:6px;font-weight:700">№</div>
+        <div style="border-top:1px solid var(--ink);text-align:center;padding:6px;color:var(--ink-soft)">1</div>
+        <div style="border-top:1px solid var(--ink);text-align:center;padding:6px;color:var(--ink-soft)">2</div>
+        <div style="border-top:1px solid var(--ink);text-align:center;padding:6px;color:var(--ink-soft)">3</div>
+        <div style="border-top:1px solid var(--ink);text-align:center;padding:6px;color:var(--ink-soft)">4</div>
+        <div style="border-top:1px solid var(--ink);text-align:center;padding:6px;background:var(--red);color:var(--ink);font-weight:700">5</div>
+        <div style="border-top:1px solid var(--ink);text-align:center;padding:6px;background:var(--red);color:var(--ink);font-weight:700">6</div>
+        <div style="border-top:1px solid var(--ink);text-align:center;padding:6px;color:var(--ink-soft)">7</div>
+        <div style="border-top:1px solid var(--ink);text-align:center;padding:6px;color:var(--ink-soft)">8</div>
+        <div style="border-top:1px solid var(--ink);text-align:center;padding:6px;color:var(--ink-soft)">9</div>
+        <div style="border-top:1px solid var(--ink);text-align:center;padding:6px;color:var(--ink-soft)">10</div>
+        <div style="border-top:1px solid var(--ink);text-align:center;padding:6px;color:var(--ink-soft)">11</div>
+        <div style="border-top:1px solid var(--ink);text-align:center;padding:6px;color:var(--ink-soft)">12</div>
+      </div>
+      <div class="mono" style="margin-top:24px;color:var(--ink-soft)">N.B. — A=1 substitution is named here for transparency, not encryption. The cipher is honest.</div>
+    </div>
+  </div>
+
+  <!-- Rhetorical pairings -->
+  <div style="margin-top:64px" class="grid12">
+    <div style="grid-column:1/13">
+      <div class="h4" style="margin-bottom:18px">PAIRED PHRASES — INTERCHANGEABLE IN COPY</div>
+    </div>
+    <div style="grid-column:1/5"><div class="numeral" style="font-size:96px;color:var(--blue)">561</div><div class="mono" style="margin-top:8px">numeric · seal · short-form</div></div>
+    <div style="grid-column:5/9;display:flex;align-items:center;justify-content:center;font-family:var(--sans);font-weight:700;font-size:64px;color:var(--ink-soft)">≡</div>
+    <div style="grid-column:9/13;text-align:right">
+      <div class="h2" style="font-size:48px;line-height:.95">END<br><span style="color:var(--red)">FOOD</span><br>APARTHEID</div>
+      <div class="mono" style="margin-top:8px">spoken · banner · long-form</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ============================================ -->
+<!-- 03 — THE SEAL                                -->
+<!-- ============================================ -->
+<section id="s03" class="dark" data-screen-label="03 Seal">
+<div class="page">
+  <div class="folio">FOLIO 008</div>
+  <div class="section-head">
+    <div class="num">§ 03<br>THE SEAL</div>
+    <div class="title">Construction<br>&amp; Use.</div>
+  </div>
+
+  <div class="grid12">
+    <div style="grid-column:1/7">
+      <!-- Construction diagram -->
+      <figure class="evidence" style="background:#1a1714;border-color:var(--bone)">
+        <svg viewBox="0 0 480 480" width="100%" style="display:block">
+          <!-- construction guides -->
+          <g stroke="#FF4530" stroke-width=".75" fill="none" opacity=".9">
+            <circle cx="240" cy="240" r="220"/>
+            <circle cx="240" cy="240" r="200"/>
+            <circle cx="240" cy="240" r="160"/>
+            <circle cx="240" cy="240" r="100"/>
+            <line x1="20" y1="240" x2="460" y2="240"/>
+            <line x1="240" y1="20" x2="240" y2="460"/>
+            <line x1="84" y1="84" x2="396" y2="396"/>
+            <line x1="396" y1="84" x2="84" y2="396"/>
+          </g>
+          <!-- labels -->
+          <g font-family="JetBrains Mono, monospace" font-size="10" fill="#FF4530">
+            <text x="240" y="14" text-anchor="middle">R₀ = 220</text>
+            <text x="240" y="34" text-anchor="middle" fill="#F2EAD8">R₁ = 200</text>
+            <text x="240" y="74" text-anchor="middle" fill="#F2EAD8">R₂ = 160 · TYPE PATH</text>
+          </g>
+          <!-- seal mark (simplified, ink ↔ bone) -->
+          <circle cx="240" cy="240" r="220" fill="none" stroke="#F2EAD8" stroke-width="3"/>
+          <circle cx="240" cy="240" r="200" fill="none" stroke="#F2EAD8" stroke-width="1"/>
+          <defs>
+            <path id="topArc2" d="M 80 240 A 160 160 0 0 1 400 240"/>
+            <path id="botArc2" d="M 80 240 A 160 160 0 0 0 400 240"/>
+          </defs>
+          <text font-family="Space Grotesk, sans-serif" font-weight="700" font-size="20" letter-spacing="6" fill="#F2EAD8">
+            <textPath href="#topArc2" startOffset="50%" text-anchor="middle">END · FOOD · APARTHEID</textPath>
+          </text>
+          <text font-family="Space Grotesk, sans-serif" font-weight="500" font-size="14" letter-spacing="8" fill="#F2EAD8">
+            <textPath href="#botArc2" startOffset="50%" text-anchor="middle">561 · CONFEDERACY · 561</textPath>
+          </text>
+          <text x="240" y="262" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="140" letter-spacing="-6" text-anchor="middle" fill="#F2EAD8">561</text>
+          <g stroke="#F2EAD8" stroke-width="3">
+            <line x1="130" y1="320" x2="170" y2="320"/>
+            <line x1="180" y1="320" x2="220" y2="320"/>
+            <line x1="260" y1="320" x2="300" y2="320"/>
+            <line x1="310" y1="320" x2="350" y2="320"/>
+          </g>
+        </svg>
+        <figcaption style="background:#1a1714;color:var(--bone);border-color:var(--bone)">
+          <span class="id">FIG 03.1</span>
+          <span class="text">Construction grid. Two concentric rings (R₀ 220, R₁ 200), an inset typographic ring at R₂ 160, and a centered numeral-glyph block. Four short hash-marks below name the four practices in §14.</span>
+          <span class="meta">REV.A — 2026·05</span>
+        </figcaption>
+      </figure>
+    </div>
+
+    <div style="grid-column:8/13">
+      <p class="lede">The seal is not a logo. It is a <em>certification</em>: when affixed to a thing — a publication, a kitchen, a corridor — it asserts that the thing was made in accordance with the obligations of §01.</p>
+
+      <div style="margin-top:32px">
+        <div class="h4" style="margin-bottom:14px;color:var(--bone)">USAGE</div>
+        <table class="spec" style="color:var(--bone)">
+          <tr><th style="color:var(--bone);border-color:var(--bone)">Min size, screen</th><td style="border-color:var(--bone)">96 px diameter</td></tr>
+          <tr><th style="color:var(--bone);border-color:var(--bone)">Min size, print</th><td style="border-color:var(--bone)">24 mm diameter</td></tr>
+          <tr><th style="color:var(--bone);border-color:var(--bone)">Clearspace</th><td style="border-color:var(--bone)">≥ 0.25 × diameter on all sides</td></tr>
+          <tr><th style="color:var(--bone);border-color:var(--bone)">Permitted inks</th><td style="border-color:var(--bone)">Ink on Bone · Bone on Ink · Red on Bone · Ink on Red</td></tr>
+          <tr><th style="color:var(--bone);border-color:var(--bone)">Forbidden</th><td style="border-color:var(--bone)">Drop shadows · gradients · 3D · embossing · gold/silver foil · circular crops</td></tr>
+        </table>
+      </div>
+
+      <div class="marginal" style="margin-top:28px;color:var(--bone-edge);border-left-color:var(--red)">
+        FIELD NOTE — The seal is reproduced freely by members. Reproduction by non-members requires consent of the Council. Misuse is not a copyright matter; it is an integrity matter.
+      </div>
+    </div>
+  </div>
+
+  <!-- Lockup variants -->
+  <div style="margin-top:80px">
+    <div class="h4" style="margin-bottom:24px;color:var(--bone)">FIG 03.2 · LOCKUP VARIANTS</div>
+    <div class="grid4">
+      <!-- A: Full seal -->
+      <figure class="evidence" style="background:#1a1714;border-color:var(--bone)">
+        <div style="aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;padding:28px">
+          <svg viewBox="0 0 200 200" width="100%">
+            <circle cx="100" cy="100" r="92" fill="none" stroke="#F2EAD8" stroke-width="2"/>
+            <circle cx="100" cy="100" r="84" fill="none" stroke="#F2EAD8" stroke-width=".75"/>
+            <text x="100" y="115" font-family="Space Grotesk" font-weight="700" font-size="58" letter-spacing="-2" text-anchor="middle" fill="#F2EAD8">561</text>
+            <defs><path id="ta3" d="M 36 100 A 64 64 0 0 1 164 100"/></defs>
+            <text font-family="Space Grotesk" font-weight="700" font-size="9" letter-spacing="2" fill="#F2EAD8"><textPath href="#ta3" startOffset="50%" text-anchor="middle">END · FOOD · APARTHEID</textPath></text>
+          </svg>
+        </div>
+        <figcaption style="background:#1a1714;color:var(--bone);border-color:var(--bone)"><span class="id">A</span><span class="text">FULL SEAL — for declarations, publications, mastheads.</span><span class="meta">100%</span></figcaption>
+      </figure>
+      <!-- B: Wordmark -->
+      <figure class="evidence" style="background:#1a1714;border-color:var(--bone)">
+        <div style="aspect-ratio:1/1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:28px;color:#F2EAD8">
+          <div style="font-family:var(--sans);font-weight:700;font-size:64px;letter-spacing:-.04em;line-height:.85">561</div>
+          <div style="font-family:var(--sans);font-weight:600;font-size:14px;letter-spacing:.18em;margin-top:8px">GROUP</div>
+          <div style="height:2px;background:#FF4530;width:48px;margin-top:8px"></div>
+          <div style="font-family:var(--mono);font-size:10px;letter-spacing:.18em;margin-top:8px">EFA</div>
+        </div>
+        <figcaption style="background:#1a1714;color:var(--bone);border-color:var(--bone)"><span class="id">B</span><span class="text">VERTICAL WORDMARK — for posters, banners, wide formats.</span><span class="meta">100%</span></figcaption>
+      </figure>
+      <!-- C: Inline -->
+      <figure class="evidence" style="background:#1a1714;border-color:var(--bone)">
+        <div style="aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;padding:28px;color:#F2EAD8">
+          <div>
+            <div style="font-family:var(--sans);font-weight:700;font-size:54px;letter-spacing:-.04em;line-height:.9">561 / EFA</div>
+            <div style="height:1px;background:#F2EAD8;margin:8px 0"></div>
+            <div style="font-family:var(--mono);font-size:11px;letter-spacing:.18em">END FOOD APARTHEID</div>
+          </div>
+        </div>
+        <figcaption style="background:#1a1714;color:var(--bone);border-color:var(--bone)"><span class="id">C</span><span class="text">INLINE LOCKUP — for documents, headers, sign-offs.</span><span class="meta">100%</span></figcaption>
+      </figure>
+      <!-- D: Stamp -->
+      <figure class="evidence" style="background:#1a1714;border-color:var(--bone)">
+        <div style="aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;padding:28px">
+          <svg viewBox="0 0 200 200" width="80%">
+            <rect x="10" y="10" width="180" height="180" fill="none" stroke="#FF4530" stroke-width="4"/>
+            <rect x="20" y="20" width="160" height="160" fill="none" stroke="#FF4530" stroke-width="1"/>
+            <text x="100" y="85" font-family="Space Grotesk" font-weight="700" font-size="48" letter-spacing="-2" text-anchor="middle" fill="#FF4530">561</text>
+            <line x1="40" y1="100" x2="160" y2="100" stroke="#FF4530" stroke-width="2"/>
+            <text x="100" y="125" font-family="Space Grotesk" font-weight="700" font-size="14" letter-spacing="3" text-anchor="middle" fill="#FF4530">CERTIFIED</text>
+            <text x="100" y="150" font-family="Roboto Slab" font-style="italic" font-size="12" text-anchor="middle" fill="#FF4530">end food apartheid</text>
+          </svg>
+        </div>
+        <figcaption style="background:#1a1714;color:var(--bone);border-color:var(--bone)"><span class="id">D</span><span class="text">RUBBER STAMP — for envelopes, crates, doors, hands.</span><span class="meta">100%</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ============================================ -->
+<!-- 04 — COLOR                                   -->
+<!-- ============================================ -->
+<section id="s04" data-screen-label="04 Color">
+<div class="page">
+  <div class="folio">FOLIO 012</div>
+  <div class="section-head">
+    <div class="num">§ 04<br>COLOR</div>
+    <div class="title">Two Inks.<br>One Surface.</div>
+  </div>
+
+  <div class="grid12">
+    <div style="grid-column:1/6">
+      <p class="lede">A risograph palette enforces discipline: <strong>two spot inks on bone paper, plus ink-black for type and rule.</strong> Misregistration is not a defect. It is the visible evidence that the work was made by hand on a real machine.</p>
+      <div class="marginal" style="margin-top:24px">
+        FIELD NOTE — Black is reserved for ink and rule. Bone is reserved for paper. Red and Blue are the only colors that may carry meaning. A fifth color introduced by a designer is a fifth ration on a four-ration table.
+      </div>
+    </div>
+    <div style="grid-column:7/13">
+      <table class="spec">
+        <tr><th>Token</th><th>Hex</th><th>Ink ref</th><th>Use</th></tr>
+        <tr><td><strong>--ink</strong></td><td>#0A0A0A</td><td>Process black</td><td>Type, rule, mark</td></tr>
+        <tr><td><strong>--bone</strong></td><td>#F2EAD8</td><td>Paper / Cream Soft</td><td>Background, paper</td></tr>
+        <tr><td><strong>--red</strong></td><td>#FF4530</td><td>Riso Fluo Red 805</td><td>Alarm, accent, certification</td></tr>
+        <tr><td><strong>--blue</strong></td><td>#3D5588</td><td>Riso Federal Blue</td><td>Witness, evidence, archive</td></tr>
+        <tr><td><strong>--soil</strong></td><td>#5A3A22</td><td>Riso Brown</td><td>Sparingly · land · seed</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- swatches -->
+  <div class="grid4" style="margin-top:48px">
+    <div class="swatch"><div class="chip" style="background:var(--ink)"></div><div class="meta"><div class="name">Ink</div><div class="row"><span>HEX</span><span>#0A0A0A</span></div><div class="row"><span>RGB</span><span>10·10·10</span></div><div class="row"><span>USE</span><span>type · rule · mark</span></div></div></div>
+    <div class="swatch"><div class="chip" style="background:var(--bone);border-bottom:1px solid var(--ink)"></div><div class="meta"><div class="name">Bone</div><div class="row"><span>HEX</span><span>#F2EAD8</span></div><div class="row"><span>RGB</span><span>242·234·216</span></div><div class="row"><span>USE</span><span>paper · ground</span></div></div></div>
+    <div class="swatch"><div class="chip" style="background:var(--red)"></div><div class="meta"><div class="name">Red — Fluo 805</div><div class="row"><span>HEX</span><span>#FF4530</span></div><div class="row"><span>RGB</span><span>255·69·48</span></div><div class="row"><span>USE</span><span>alarm · seal · accent</span></div></div></div>
+    <div class="swatch"><div class="chip" style="background:var(--blue)"></div><div class="meta"><div class="name">Federal Blue</div><div class="row"><span>HEX</span><span>#3D5588</span></div><div class="row"><span>RGB</span><span>61·85·136</span></div><div class="row"><span>USE</span><span>witness · evidence</span></div></div></div>
+  </div>
+
+  <!-- Color usage chart Tufte-style -->
+  <div style="margin-top:64px" class="cropmarks">
+    <span class="cm-bl"></span><span class="cm-br"></span>
+    <div style="border:1px solid var(--ink);padding:32px">
+      <div class="h4" style="margin-bottom:20px">FIG 04.1 · INK BUDGET — TYPICAL DOCUMENT</div>
+      <p class="mono" style="color:var(--ink-soft);margin-bottom:24px">Proportional ink coverage on a representative 8-page bulletin. Read horizontally.</p>
+
+      <div style="display:grid;grid-template-columns:120px 1fr 60px;gap:16px;align-items:center;font-family:var(--mono);font-size:12px">
+        <div>BONE (paper)</div><div style="background:linear-gradient(to right,var(--bone-deep) 84%,transparent 84%);height:18px;border:1px solid var(--ink)"></div><div style="text-align:right">84%</div>
+        <div>INK</div><div style="background:linear-gradient(to right,var(--ink) 11%,transparent 11%);height:18px;border:1px solid var(--ink)"></div><div style="text-align:right">11%</div>
+        <div>RED</div><div style="background:linear-gradient(to right,var(--red) 3.5%,transparent 3.5%);height:18px;border:1px solid var(--ink)"></div><div style="text-align:right">3.5%</div>
+        <div>BLUE</div><div style="background:linear-gradient(to right,var(--blue) 1.5%,transparent 1.5%);height:18px;border:1px solid var(--ink)"></div><div style="text-align:right">1.5%</div>
+      </div>
+      <p class="mono" style="color:var(--ink-soft);margin-top:24px">Red coverage above 6% of total area is overuse — the color stops alarming and starts decorating. Audit before press.</p>
+    </div>
+  </div>
+
+  <!-- Pairings -->
+  <div style="margin-top:64px">
+    <div class="h4" style="margin-bottom:20px">FIG 04.2 · PERMITTED PAIRINGS — TYPE ON GROUND</div>
+    <div class="grid6">
+      <div style="background:var(--bone);border:1px solid var(--ink);aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;font-family:var(--sans);font-weight:700;font-size:48px;color:var(--ink)">Aa</div>
+      <div style="background:var(--ink);border:1px solid var(--ink);aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;font-family:var(--sans);font-weight:700;font-size:48px;color:var(--bone)">Aa</div>
+      <div style="background:var(--red);border:1px solid var(--ink);aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;font-family:var(--sans);font-weight:700;font-size:48px;color:var(--ink)">Aa</div>
+      <div style="background:var(--red);border:1px solid var(--ink);aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;font-family:var(--sans);font-weight:700;font-size:48px;color:var(--bone)">Aa</div>
+      <div style="background:var(--blue);border:1px solid var(--ink);aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;font-family:var(--sans);font-weight:700;font-size:48px;color:var(--bone)">Aa</div>
+      <div style="background:var(--bone);border:1px solid var(--ink);aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;font-family:var(--sans);font-weight:700;font-size:48px;color:var(--blue)">Aa</div>
+    </div>
+    <div class="mono" style="margin-top:14px;color:var(--ink-soft)">Permitted. All others forbidden — including red on blue, blue on red, ink on red at small sizes (&lt; 14 px), and any color on a photograph.</div>
+  </div>
+</div>
+</section>
+
+<!-- continued in next file part -->
+<script src="glyphs.js"></script>
+<script src="bible-render.js"></script>
+
+<!-- Insert remaining sections via JS to keep file editable. -->
+<div id="rest"></div>
+
+</body>
+</html>

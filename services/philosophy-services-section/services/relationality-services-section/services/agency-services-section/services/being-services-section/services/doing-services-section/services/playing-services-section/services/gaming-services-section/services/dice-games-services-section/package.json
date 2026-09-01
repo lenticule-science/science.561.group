@@ -1,0 +1,7 @@
+{
+  "name": "@lenticule-science/dice-games-services-section",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Red Cup Science service section for dice games.",
+  "license": "UNLICENSED"
+}

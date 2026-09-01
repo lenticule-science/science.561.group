@@ -1,0 +1,70 @@
+{{- /*  Render a bibliography from .Params.references.
+
+        Each entry is keyed by citekey. Recognized fields:
+          authors      : [list]                 (or string)
+          title        : "..."
+          year         : 1937
+          publication  : "..."
+          volume, issue, pages
+          url          : "https://..."
+          link-to      : "library/.../slug"   resolves to internal page;
+                         when set, the title links to that page
+
+        Inline citations: [@key] in body content are rewritten to
+        <a href="#ref-key" class="citation">[key]</a> by single.html /
+        list.html before this partial renders.
+
+        Dual-vocabulary markup:
+          - RDFa: schema:CreativeWork on each entry, with property="..."
+            on author/title/year/publisher.
+          - Microformats v2: h-cite on each entry, with p-author / p-name
+            / dt-published / u-url for indieweb-shaped consumers.       */ -}}
+{{- with .Params.references -}}
+{{- if reflect.IsMap . -}}
+<section class="bibliography" id="bibliography"
+         vocab="https://schema.org/" typeof="ItemList">
+  <h2>References</h2>
+  {{- range $key, $ref := . -}}
+  {{- if reflect.IsMap $ref -}}
+  {{- $linkTo := index $ref "link-to" -}}
+  {{- $internal := "" -}}
+  {{- with $linkTo }}{{ $internal = site.GetPage . }}{{ end -}}
+  <p class="bib-entry h-cite" id="ref-{{ $key }}" typeof="CreativeWork" resource="#ref-{{ $key }}">
+    <span class="bib-key">[{{ $key }}]</span>
+    {{- with $ref.authors }}
+      <span class="p-author" property="author">
+        {{- if reflect.IsSlice . -}}
+          {{- range $i, $a := . -}}
+            {{- if $i -}}, {{ end }}{{ $a }}
+          {{- end -}}
+        {{- else -}}{{ . }}{{- end -}}
+      </span>.
+    {{- end }}
+    {{- with $ref.year }}
+      (<time class="dt-published" property="datePublished" datetime="{{ . }}">{{ . }}</time>).
+    {{- end }}
+    {{- with $ref.title }}
+      {{- if $internal -}}
+        <cite class="p-name" property="name"><a class="u-url" href="{{ $internal.RelPermalink }}">{{ . }}</a></cite>.
+      {{- else -}}
+        <cite class="p-name" property="name">{{ . }}</cite>.
+      {{- end -}}
+    {{- end }}
+    {{- with $ref.publication }}
+      <em class="p-publisher" property="publisher">{{ . }}</em>
+    {{- end -}}
+    {{- with $ref.volume -}}, {{ . }}{{ end -}}
+    {{- with $ref.issue -}}({{ . }}){{ end -}}
+    {{- with $ref.pages -}}, {{ . }}{{ end -}}.
+    {{- with $ref.url }}
+      <a class="u-url" href="{{ . }}">{{ . }}</a>
+    {{- end }}
+    {{- if and $linkTo (not $internal) }}
+      <span class="bib-link-to-missing"><em>(internal link target {{ $linkTo }} not found)</em></span>
+    {{- end }}
+  </p>
+  {{- end -}}
+  {{- end }}
+</section>
+{{- end -}}
+{{- end -}}

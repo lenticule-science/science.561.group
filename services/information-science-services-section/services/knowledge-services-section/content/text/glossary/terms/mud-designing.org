@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       b8ff4a29-92b2-4714-9f2f-1e5074ad929b
+:END:
+#+title: MUD designing
+#+date: [2025-09-27 Sat 08:57]
+

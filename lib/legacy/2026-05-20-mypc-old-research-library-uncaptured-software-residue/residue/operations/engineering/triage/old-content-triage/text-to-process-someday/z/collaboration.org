@@ -1,0 +1,8 @@
+#+title: Collaboration
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-18 Fri 19:37]
+#+roam_tags: term
+
+#+name: collaboration-definition
+*/[[file:collaboration.org][Collaboration]]/* (with a capital /C/) is performing actions that support the [[file:contemporary_kyriarchy.org][contemporary settler-colonial kyriarchy]].

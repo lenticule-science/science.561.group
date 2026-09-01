@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       61aaab4d-20a6-43ae-ad82-3b39468ada7d
+:END:
+#+title: field coherence
+#+date: [2025-10-05 Sun 07:58]
+

@@ -1,0 +1,16 @@
+name: measured_observation_check
+inputs: &id001
+- role: observation
+  kind: observation
+- role: measurement_frame
+  kind: measurement_frame
+outputs: &id002
+- role: measured_observation_evidence
+  kind: measured_observation_evidence
+steps:
+- name: measured_observation_check
+  operator: measured_observation_check
+  step_index: 0
+  inputs: *id001
+  outputs: *id002
+id: 3ade4d13f780ec24b286160d6fd046860ef6083b38e5a4040e2730677c44e0eb

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       ef4df4a8-4f32-4917-90e2-3783ebc9057d
+:END:
+#+title: autopoiesis
+#+date: [2025-10-05 Sun 08:12]
+

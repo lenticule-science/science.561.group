@@ -1,0 +1,8 @@
+{
+  "name": "@561-group/knowledge-services-section",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "EO section accountable for knowledge-representation services.",
+  "scripts": {
+  }
+}

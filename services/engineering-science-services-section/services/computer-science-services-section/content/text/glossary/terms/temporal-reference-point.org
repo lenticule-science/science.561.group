@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       cad4dbdc-a8b7-4a1a-abdb-bdd40cb1276a
+:END:
+#+title: temporal reference point
+#+date: [2025-10-21 Tue 11:17]
+
+#+begin_src elisp :tangle ./src/gnoponemacs/capture-templates/rt.el
+  ("rt" "temporal")
+#+end_src

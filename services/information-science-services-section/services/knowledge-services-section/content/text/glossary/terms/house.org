@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       f602872d-07e4-4b1a-89b8-16c5173af355
+:END:
+#+title: house
+#+date: [2025-08-28 Thu 20:10]
+

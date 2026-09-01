@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       e2de581c-f4e8-403b-aeb7-5fcbccc1d1df
+:public:   true
+:END:
+#+title: sensing
+#+date [2025-08-11 Mon 23:08]
+

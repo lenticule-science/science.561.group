@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       52ec12b3-b317-4f7a-9b06-a7d63cad1656
+:form:     [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]
+:public:   true
+:END:
+#+title: Babble, [2025-08-29 Fri 19:12], On the lineage of californication
+#+date: [2025-08-29 Fri 19:12]
+#+author: emsenn
+
+
+I have this [[id:02564d84-b9f3-4104-9e7a-03a6c93677f3][lineage of theory]] that goes roughly:
+
+- [[id:5aa335fc-151d-4e25-884f-3cc4da96ad29][liberal ontologizing]] [[id:c8ba8cf5-2718-43e7-9f27-126319bdfe40][induces]] [[id:ccfa42b1-16cc-448e-9f09-5577b91b6464][genring]] induces [[id:a0da85da-605d-4e06-86c6-f8afbe422aac][ontogenring]]
+  - [[id:aa700898-32d6-4e4d-9ea3-f711a246aeea][attributing]] is an [[id:79fe6d12-47a9-4f8f-a340-f60d542755b5][ontogenric act]]
+  - attributing induces [[id:eba98410-939f-4f95-ae31-59c9ef0fbf2b][ontogenric entitlement]] and [[id:c69ceaf6-63f1-4dba-82a7-3c75bae660ca][ontogenric anticipation]]
+- the [[id:b4ae66ad-8700-4af3-b995-17cfd8b74eb9][condition]] of [[id:9728cbe6-0066-4b32-9e09-1937fa8bc1ea][saturation]] induces [[id:05bda4dd-5f43-4c4d-a076-a1452aece12b][destabilization]]
+  - ontrogenring [[id:b326779e-e38a-45b7-973f-8fa4e7544714][narrativizes]] [[id:8358eb5b-49c2-441f-bc37-dd2a2eb27af7][saturation-induced destabilization]] as [[id:a09b4c5a-3010-4148-b851-671d50308fd7][collapse]]
+- ...[[id:8ce54c26-4f37-484f-bc2b-4b1190e75604][Maza]] has [[id:9710b716-d252-4362-81a8-45d201682e8a][distracted]] me...
+- ...something about [[id:29c0984f-d1a0-42d7-8a09-47582d36a11e][affect theory]]
+- ...thus, [[id:7ae00144-f028-4b25-a533-c64d081de2bd][californication]]?

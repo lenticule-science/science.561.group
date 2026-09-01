@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       3d89a15b-40a9-4d64-a734-f910eac5c13f
+:NODE-RELATIONS: (([[id:9fee0f36-1b36-43c7-b896-14b6700c7738][person]] . [[id:b2eaa04b-4fd9-44e4-ae7b-c8cb1e304f53][failing]]))
+:END:
+#+title: personal failure
+#+date: [2025-08-27 Wed 06:37]

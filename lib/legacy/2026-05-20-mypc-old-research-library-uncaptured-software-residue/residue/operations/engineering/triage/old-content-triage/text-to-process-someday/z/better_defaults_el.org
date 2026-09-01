@@ -1,0 +1,13 @@
+#+title: better-defaults.el
+#+begin_head
+#+ghe_schema: record-0.1.0
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-21 Mon 13:04]
+#+roam_key: https://git.sr.ht/~technomancy/better-defaults/tree/master/better-defaults.el
+#+end_head
+
+#+name: better-defaults-el-definition-text
+#+begin_quote
+*/better-defaults.el/* is a set of default options put together by [[file:phil_hagelberg.org][Phil Hagelberg]]for [[file:emacs.org][Emacs]] that almost everyone would prefer over the actual defaults.
+#+end_quote

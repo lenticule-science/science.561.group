@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       6fd5661b-9d66-4297-bd85-45fc1ab1ef72
+:END:
+#+title: defining
+#+date: [2025-10-15 Wed 18:09]
+

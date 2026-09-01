@@ -1,0 +1,260 @@
+---
+title: Person
+description: "A thing that can act, move, speak, and be held responsible."
+aliases: [persons, people, somebody]
+extends: object
+date-created: 2026-03-29
+date-modified: 2026-03-31
+---
+
+A person is a [thing](./thing.md) that can act, move, speak, and be held responsible. People are the things that do things on purpose. A rock sits where it is. A person walks somewhere because they want to go there.
+
+A person is an [object](./object.md) — they have mass, take up space, exist physically. A person is mobile — they move between [areas](./area.md) under their own power. But a person is more than a mobile object. A person has agency: they choose, they communicate, they make promises, they break them. A cart is mobile but not a person. A robot that moves is mobile but arguable. A sleeping human is still a person — agency is a capacity, not a continuous activity.
+
+Persons occupy [containers](./container.md). A person is in a room, on a ship, at a workstation. Like any object, a person has a location at any given moment. Unlike most objects, a person changes location by deciding to. The `move` operation in TAB works on any mobile, but for persons the move is volitional — they go somewhere because they choose to, not because someone carried them.
+
+Persons can receive messages. In TAB, when something happens in a container, the container broadcasts to its contents: "The door opens." "An apple arrives." Only things that can receive messages — persons, primarily — actually process those messages. Objects just sit there. Persons notice, react, respond.
+
+Persons can hold, carry, and use objects. A person picks up a cup, puts on a coat, swings a hammer. The relationship between person and object is asymmetric — the person acts on the object, not the other way around. Tools extend what a person can do, but the person is the one doing.
+
+Persons have grammar. TAB gives every thing pronouns, but for persons the pronouns matter socially: he, she, they, I, you. A person is addressed in the second person and refers to themselves in the first. No other kind of thing does this. Language is built around the assumption that some things in the world are persons and the rest are not.
+
+
+---
+
+<!-- source: archive/triage/from-philosophy/person.md -->
+
+## Imported source: archive/triage/from-philosophy/person.md
+
+---
+title: "Person"
+id: person
+description: "A Person is a quadruple (I, N, R, Φ) — persistent identity, normative position, recognition event, and representability structure. Person is the conjunction of tracked identity and normative recognition — not a metaphysical kind but a normatively constituted node."
+defines: Person
+related: Principal, Office, Officer, Incumbent, Proxy, Agent, Entity, PersistentIdentity, Persona, Character
+extends: entity
+requires: [persistent-identity, normative-position, recognition-event]
+contains: persona
+enables: [agent, officer, principal]
+date-created: 2026-03-19
+date-modified: 2026-03-20
+params:
+  persistent-identity: persistent-identity
+  normative-position: hohfeldian-position
+  recognition-event: relational-universe-morphism
+  representability: relational-universe-morphism
+output: relational-universe
+ast:
+  relational-history-saturating-nucleus:
+    - recognition-event:
+        - persistent-identity
+        - normative-position
+    - relational-history-transferring-nucleus:
+        - representability
+        - persistent-identity
+---
+
+
+## Formal definition
+
+A **Person** is a quadruple $\mathcal{P} = (I, N, R, \Phi)$:
+
+$$\mathcal{P} = (I : \mathrm{PersistentIdentity},\; N : \mathrm{NormativePosition},\; R : \mathrm{RecognitionEvent},\; \Phi : \mathrm{RepresentabilityStructure})$$
+
+where:
+- $I$ is the **persistent identity** — a stable, trackable reference that identifies this node as the same entity through time and change; the ground of continuity that enables the normative system to attribute prior acts, confer accumulated rights, and hold this node accountable for past conduct; realized variously as biological continuity (natural persons), psychological continuity through memory (Locke), legal registration (corporations, ships), or divine substance individuated by relation (theological persons)
+- $N$ is the **normative position** — at least one Hohfeldian relation in which this node can appear as bearer: duty $\mathbf{D}(\mathcal{P}, \varphi, r)$, claim $\mathbf{C}(\mathcal{P}, \varphi, r)$, power $\mathbf{Pw}(\mathcal{P}, R \to R', x)$, or immunity $\mathbf{Im}(\mathcal{P}, x)$; personhood requires appearing as a node in at least one such relation in at least one normative system; partial personhood is restricted to a proper subset of positions
+- $R$ is the **recognition event** — the constitutive act by which the relevant normative system installs this entity as a person-node; recognition is not epistemic (not merely discovering that the entity exists) but constitutive (the recognition creates the person-status); realized as birth registration, incorporation, royal charter, admiralty registration, baptism, installation into office; without $R$, an entity may have $I$ but cannot appear in $N$
+- $\Phi$ is the **representability structure** — the entity can appear as a term in representation relations: can have acts attributed to it through agents acting on its behalf, can be represented before the normative system (by counsel, proxy, guardian), or can represent others; $\Phi$ is what grammatical person tracks deictically (speaker/addressee/other), what proxy and agency track formally (identity substitution), and what corporate personhood tracks instrumentally (the corporation acts through organs)
+
+**Four invariants.** $\mathcal{P}$ is a person iff it satisfies:
+
+1. **Tracked identity**: $I$ is persistent — the normative system can identify $\mathcal{P}$ as the same node across transactions, through time, and despite change of other attributes. A ship at registry number IMO 9XXXXXX is the same ship regardless of crew, flag, or owner; a corporation at registration number XX is the same corporation despite changing shareholders. This is not metaphysical identity but normative tracking: the system treats it as the same.
+
+2. **Normative nodeness**: $\mathcal{P}$ appears in at least one Hohfeldian relation in at least one operative normative system. An entity not yet recognized by any normative system — before incorporation, before registration, before birth — has $I$ potentially but lacks $N$. When $N = \varnothing$, the entity is not yet a person in any operative sense, regardless of its other properties.
+
+3. **Recognition is constitutive**: $R$ is the act that creates the person-status; it is not a report of something that already exists independently. The Saul Salomon company exists as a legal person because the Companies Act recognizes it; the company would not exist as a legal person without that recognition. This is the Searle structure: "X counts as a person in context C" creates the institutional fact. $R$ is revocable: death, dissolution, attainder, and deregistration dissolve personhood; they do not merely fail to recognize what already exists.
+
+4. **Representability is symmetric**: $\Phi$ works in both directions — $\mathcal{P}$ can act through representatives (agents, proxies, organs) and $\mathcal{P}$ can be represented before others (by counsel, guardian, trustee). The symmetry matters: a person that can only be acted on, never for, is an object, not a person. A person that can only act, never be represented, is a pure autonomous agent, not a person in a normative system. Full personhood requires both.
+
+## The two readings of "person" unified
+
+Two genuinely distinct readings coexist under the word "person" and cannot be reduced to each other:
+
+**Reading A — Persona as mask/role**: the person is the legal or social mask, the normative interface type, the positional profile. The same natural human wears different masks in different contexts (taxpayer, parent, officer, voter). The mask is what the system tracks; the individual behind it is contingent. This reading: person = role occupant, and "this person" means "whoever is currently occupying this position."
+
+**Reading B — Person as individual**: the person is the numerically individual, unique entity — this one, not another. The Boethian *individua substantia*. The person is not interchangeable with any other. This reading: person = numerically singular individual whose identity is tracked over time.
+
+These are not the same concept but they are not competing theories — they are two projections of the same quadruple $\mathcal{P} = (I, N, R, \Phi)$:
+
+- **Persona as mask** = the $(N, R, \Phi)$ components — the normative position, recognition, and representability structure; these persist independently of which individual currently bears them; an office exists when vacant
+- **Person as individual** = the $I$ component — the persistent identity tracking one specific entity through time
+
+| Projection | Component | What persists when the other changes |
+|---|---|---|
+| Mask (office, role, position) | $(N, R, \Phi)$ | The position persists through succession |
+| Individual (occupant, incumbent) | $I$ | The individual persists through role changes |
+| Person (both) | $(I, N, R, \Phi)$ | The identified individual holding a recognized normative position |
+
+An office without a current holder is the $(N, R, \Phi)$ structure with $I$ vacant. An individual without any normative recognition has $I$ but lacks operative $(N, R, \Phi)$. A person is the conjunction of both in a recognized, identity-tracked node. This is exactly what [Incumbent](incumbent.md) captures: the two-body doctrine maps onto the mask/individual split — the body politic is $(N, R, \Phi)$ and the body natural is $I$.
+
+## Roman origins: *persona*
+
+The Latin *persona* (from Etruscan *phersu*, Greek *prosōpon* — "what faces toward") was first the theatrical mask: functional, persistent, and separable from the actor wearing it. Roman law appropriated this structure directly. In law, *persona* is the legal mask — the normative interface through which an entity can act, contract, own, sue, and be sued. The mask is what contracts; the face is contingent.
+
+Roman law articulated what the mask conferred formally — the *caput* bundle:
+
+| Component | Content | Loss |
+|---|---|---|
+| *Status libertatis* | Free / slave | *Capitis deminutio maxima* — loss of all three |
+| *Status civitatis* | Citizen / foreigner | *Capitis deminutio media* — loss of last two |
+| *Status familiae* | Head / dependent | *Capitis deminutio minima* — loss of family status only |
+
+Full legal personality required all three statuses; losing any reduced or eliminated personhood — *capitis deminutio*. A slave had biological existence but no *persona*: the mask had been stripped. A *paterfamilias* captured by enemies (*captivus*) temporarily lost his mask while his biological body persisted — the mask/face separation made explicit.
+
+The Roman insight is the purest statement of $R$: legal personality is a status conferred by the system ($R$), not a fact about biological nature. A slave *is* biologically human but *is not* a Roman legal person. The slave's natural body ($I$) does not generate legal personhood; $R$ is required.
+
+## Natural and juridical persons
+
+The foundational division in legal personhood:
+
+**Natural persons**: biological humans whose personhood begins at birth (standard modern rule; Roman law: *nasciturus pro iam nato habetur* — the child in the womb is treated as born where it benefits the child) and ends at death. The biological origin provides $I$; birth registration provides $R$; legal capacity provisions specify $N$; representation relations are available from birth.
+
+**Juridical persons**: entities constituted as legal persons by a constitutive legal act despite having no biological existence. Their entire existence is normative — they exist only through recognition.
+
+| Dimension | Natural person | Juridical person |
+|---|---|---|
+| $I$ origin | Biological continuity | Registration number, charter |
+| $R$ | Birth registration | Incorporation, charter, statute |
+| $N$ | Full default Hohfeldian profile | Determined by constitutive act |
+| Physical action | Acts bodily | Acts through natural persons as organs |
+| Personal rights | Full (liberty, privacy, bodily integrity) | None grounded in biological existence |
+| Dissolution | Biological death | Legal act (dissolution, deregistration) |
+
+*Salomon v. A. Salomon & Co.* [1897] AC 22: a company is a separate legal person from its members even with one member; the veil of incorporation is not metaphor but legal fact. *Dartmouth College v. Woodward* (1819): a corporation's legal personality is robust against the sovereign — the state cannot unilaterally dissolve what it has constitutively created without breaching the charter-contract.
+
+## Ships as minimal persons: what admiralty reveals
+
+A ship can be arrested in admiralty — the writ runs against the ship itself, not merely the owner. Prize money historically "belonged" to the ship. A vessel can be a "person" under the Maritime Drug Law Enforcement Act (US). Yet a ship has:
+- No consciousness
+- No agency
+- No psychological states
+- No continuous biological existence
+
+The ship is the purest case of **persona as mask without face**: $N$ and $R$ without any underlying $I$ grounded in biology or psychology. What gives a ship quasi-personhood is not any feature of the ship itself but the legal system's decision to route certain relations through it.
+
+The admiralty case reveals: legal personhood requires none of the metaphysical predicates (consciousness, rationality, autonomy). It requires only recognition as a node in at least one normative relation. This is the minimum $\mathcal{P}$:
+
+- $I$ = IMO registration number (stable, persistent reference)
+- $N$ = right to bring in rem proceedings; liability for maritime debts
+- $R$ = maritime registry (constitutive recognition)
+- $\Phi$ = representable by admiralty counsel; subject to in rem process
+
+## Philosophical personhood
+
+The philosophical tradition identifies what grounds $I$, $N$, $R$, $\Phi$ in the case of paradigmatic human persons:
+
+**Boethius**: *persona est naturae rationabilis individua substantia* — a person is an individual substance of a rational nature. Three components: individual (provides $I$ — numerically singular, not a universal), substance (self-subsisting, not a property), rational nature (what generates $N$ — capacity for normative participation). The conjunction: rationality in a particular individual substance.
+
+**Locke**: personal identity is psychological continuity through memory. "Person" is explicitly a **forensic term** — it tracks accountability. The Lockean person = the entity that can be held morally and legally responsible across time because it connects present self to past self through memory. This is $I$ as psychological continuity grounding $N$ as accountability-holding.
+
+**Kant**: a person is a rational autonomous self-legislator — capable of acting under the moral law by its own reason. Such an entity has **dignity** ($N$ = infinite normative standing, not merely claim or right) — a worth that is incomparable and cannot be traded. What distinguishes persons from things: things have price (replaceable by equivalent); persons have dignity (incomparable, non-substitutable). This grounds $\Phi$ in an especially strong form: a person can never be merely an instrument of another's purposes.
+
+**Strawson**: "person" is a primitive concept — an entity to which both **M-predicates** (physical: weighs 70kg, is in Paris) and **P-predicates** (psychological: is in pain, believes it is raining) can be meaningfully applied to the *same subject*. Person is not reducible to body plus mind; it is the irreducible intersection. This grounds $I$ in a way that defeats both physicalist (person = body) and idealist (person = mind) reduction.
+
+**Frankfurt**: a person has not only first-order desires but **second-order volitions** — desires about which desires to act on. A wanton has first-order desires only; a person has hierarchically structured desires with reflective endorsement. This grounds $N$ in the accountability sense: persons are accountable because they can evaluate and endorse their own motivations, not just be caused.
+
+## Theological person
+
+The Nicene controversy forced precision on the concept. The Cappadocian solution: three persons (*hypostaseis*) share one divine substance (*ousia*). A person is an **individual subsistence** — not merely an individual (which any particular is) but a relation-bearing individual subsistence:
+
+- The Father is constituted by the relation of being **unbegotten**
+- The Son is constituted by the relation of being **begotten**
+- The Spirit is constituted by the relation of **proceeding**
+
+The persons are distinguished not by substance (same) but by their **internal relational positions**. This is the genealogy of the idea that a person can be constituted by its relational position — the proto-model for the normative position $N$ as constitutive of personhood. The theological insight: personhood is relational all the way down; there is no person prior to or beneath the relational position.
+
+## Grammatical person
+
+In linguistics, **person** is a deictic category encoding the **participation structure** of an utterance — not about biological organisms but about roles in speech acts:
+
+| Person | Deictic role |
+|---|---|
+| First (I, we) | Speaker — utterance source |
+| Second (you) | Addressee — utterance target |
+| Third (he, she, it, they) | Third party — discourse object |
+
+Grammatical person is a three-way partition of the discourse domain by enunciative position. The same natural person can be indexed by first, second, or third person depending on which role they occupy in a given utterance. Grammatical person is always about $\Phi$ — representability in the enunciative structure: who is speaking (1st), who is being spoken to (2nd), who is being spoken about (3rd).
+
+## Graded personhood
+
+Legal personhood has threshold effects (either you are a juridical person for a given purpose or not) but personhood overall is graded across four dimensions:
+
+| Dimension | Minimum | Maximum |
+|---|---|---|
+| $I$ — identity persistence | Registry number | Psychological continuity + biological continuity + legal registration |
+| $N$ — normative position | One Hohfeldian relation in one system | Full Hohfeldian profile in every operative normative system |
+| $R$ — recognition breadth | One normative system (admiralty) | Recognition in every operative normative system simultaneously |
+| $\Phi$ — representability | One representation relation (in rem arrestable) | Full principal-agent capacity in all systems |
+
+**Minimum personhood**: at least one Hohfeldian position, in at least one normative system, with that system's recognition, with at least one representation-relation accessible. Below this, an entity is not a person in any operative sense.
+
+**Partial personhood**: minors have full $I$ and full $R$, restricted $N$ (no power to contract, vote, testify in some proceedings), partial $\Phi$. Corporations have full $N$, $R$, $\Phi$ in commercial law, no $N$ in rights grounded in biological existence (torture, bodily integrity, reproductive rights).
+
+## Person vs. adjacent concepts
+
+| Concept | What it is | How it differs from Person |
+|---|---|---|
+| **Entity** | Named, addressable individual | Has $I$; may lack $N$, $R$, $\Phi$ — a rock is an entity |
+| **Individual** | Numerically singular particular | Has $I$; need not be recognized by any normative system |
+| **Agent** | Entity submitting steps to an interface | Defined causally/computationally; need not have $N$ or $R$ |
+| **Subject** | Entity under a power or authority | Marks the passive Hohfeldian pole; persons can also be active |
+| **Party** | Entity appearing in a specific transaction | Local, context-specific role; person pro tempore |
+| **Self** | First-person referent — the entity known from the inside | Psychological/phenomenological; need not be legally recognized |
+| **Officer** | Person installed in an office | Person + investiture into a normative profile = $(I, N, R, \Phi)$ + $I^+$ |
+| **Principal** | Person holding original (non-derived) authority | Person with $N$ = original authority; source from which delegation flows |
+| **Proxy** | Person acting as identity-substitute for another | Person with $\Phi$ = identity-substitution for a specified act-class |
+
+**Person** $\supset$ **Entity**: entity + $(N, R, \Phi)$ = person.
+
+**Person** $\supset$ **Agent**: agent + $(N, R, \Phi)$ on its causal structure = person.
+
+**Officer** = person + formal installation ($I^+$) into a normative profile (office). The office provides $(N, R, \Phi)$ in the specific role; the individual brings $I$.
+
+## Nuclear reading
+
+**Sources:** [Saturation Nucleus](../math/relational-history-fiber-saturating-nucleus.md), [Transfer Nucleus](../math/relational-history-fiber-transferring-nucleus.md), [Meet Preservation](../math/relational-history-fiber-nucleus-meet-preservation.md), [Idempotence](../math/relational-history-fiber-nucleus-idempotence.md), [Commutation](../math/relational-history-fiber-nucleus-commutation.md).
+
+**Definition (Personhood condition).** An element $p \in H_t$ is a *person-proposition at $t$* iff $p \in H^*_t = \mathrm{Fix}(\sigma_t) \cap \mathrm{Fix}(\Delta_t)$. Concretely:
+
+- $\sigma_t(p) = p$ — the saturation nucleus has settled $p$ with respect to all sub-histories $t_0 < t$: $p$ is the maximum element with the same restriction profile to the past. This is the nuclear rendering of $R$ (recognition): the normative system's recognition of $p$ as a person-node is already fully encoded in the past, and $\sigma_t$ certifies that $p$ is past-saturated.
+- $\Delta_t(p) = p$ — the transfer nucleus has settled $p$: for every one-step extension $s \star t$, there exists an element in $H_{s \star t}$ that restricts back to $p$. This is the nuclear rendering of $\Phi$ (representability): $p$ is present in every forward extension, which is the formal condition for $p$ to appear as a term in forward-directed representation relations.
+
+The personhood condition is therefore $p \in H^*_t$. An entity not yet recognized has $\sigma_t(p) \neq p$: the past has not fully constituted this node. An entity whose representability is incomplete has $\Delta_t(p) \neq p$: not every extension carries this identity.
+
+**Note on agency.** The nuclei $\sigma_t$ and $\Delta_t$ are determined by the sheaf structure of the relational universe — by the restriction maps and extension data of $H$. No act at $t$ changes $\sigma_t$ or $\Delta_t$; these are structural invariants. An agent's act may place new elements into $H_t$, but the nuclei themselves are fixed.
+
+**Proposition (Identity conjunction is doubly stable).** If $p, q \in H^*_t$, then $p \wedge q \in H^*_t$.
+
+*Proof.* We must show $\sigma_t(p \wedge q) = p \wedge q$ and $\Delta_t(p \wedge q) = p \wedge q$.
+
+For the saturation nucleus: by meet-preservation ([Meet Preservation](../math/relational-history-fiber-nucleus-meet-preservation.md)), $\sigma_t(p \wedge q) = \sigma_t(p) \wedge \sigma_t(q)$. Since $p \in \mathrm{Fix}(\sigma_t)$ and $q \in \mathrm{Fix}(\sigma_t)$, we have $\sigma_t(p) = p$ and $\sigma_t(q) = q$. Therefore $\sigma_t(p \wedge q) = p \wedge q$.
+
+For the transfer nucleus: by meet-preservation of $\Delta_t$ ([Meet Preservation](../math/relational-history-fiber-nucleus-meet-preservation.md)), $\Delta_t(p \wedge q) = \Delta_t(p) \wedge \Delta_t(q) = p \wedge q$.
+
+Hence $p \wedge q \in \mathrm{Fix}(\sigma_t) \cap \mathrm{Fix}(\Delta_t) = H^*_t$. $\square$
+
+**Corollary.** For any finite family of person-propositions $p_1, \ldots, p_n \in H^*_t$, the meet $p_1 \wedge \cdots \wedge p_n \in H^*_t$. This follows by induction from the proposition. The conjunction "person $P_1$ AND person $P_2$ are both recognized and forward-stable" is itself a doubly-settled proposition.
+
+**Remark (Partial personhood).** An element $p$ with $\sigma_t(p) = p$ but $\Delta_t(p) \neq p$ has a recognized past (the normative system has constitutively installed $p$) but an unstable future identity — no guarantee that all extensions carry $p$ forward. Formally, there exists some $s \perp t$ such that no $b \in H_{s \star t}$ restricts to $p$ under $H(i_{s,t})$. This is the nuclear signature of a person whose representability $\Phi$ is incomplete: recognized but not forward-committable.
+
+An element $p$ with $\Delta_t(p) = p$ but $\sigma_t(p) \neq p$ is forward-stable (present in every extension) but not past-saturated: the prior histories have not fully settled what $p$ is. This is meaning-unsettled recognition — the structural analog of an entity that has been assigned a normative role but whose history has not yet ratified the assignment.
+
+**Non-derivability note.** The existence of a person-proposition $p \in H^*_t$ at any specific history $t$ is not derivable from the nuclear axioms alone. The nuclear axioms guarantee that if $p \in H^*_t$ then it has the stability properties above; they do not guarantee that $H^*_t$ is non-empty, or that a given intended person-element reaches $H^*_t$. Existence requires the specific sheaf data of the relational universe.
+
+## Open questions
+
+- Whether the **recognition event** $R$ can be partial — whether a system can recognize an entity as a person for some normative purposes but not others (the ship case suggests yes), and whether this partial recognition warrants a different formalization (a presheaf of recognition over the normative purpose space).
+- Whether **corporate personhood** requires a separate formal treatment or is fully captured by the quadruple with $I$ = registry number, $R$ = constitutive legal act, $N$ and $\Phi$ determined by the charter. *Citizens United* suggests that $N$ for corporations can include constitutional speech rights — whether this is a legitimate extension of the quadruple or a category error is contested.
+- The relationship between **personhood and vessel**: the [Vessel](vessel.md) in this repository is the institutional person-structure — the container carrying cargo, operating with crew, under the authority of a captain. Whether every vessel is a person in the quadruple sense (admiralty registration giving $I$, $N$, $R$, $\Phi$) or whether vessel and person are orthogonal concepts that can coincide.
+- Whether the **self/person** gap has formal content in the relational universe — whether there is a coherent way to formalize the difference between an element known from inside ($H_t$ as experienced by $p$) and an element known from outside ($H_t$ as tracked by the normative system), and whether this gap corresponds to any structural distinction in the fiber algebra.

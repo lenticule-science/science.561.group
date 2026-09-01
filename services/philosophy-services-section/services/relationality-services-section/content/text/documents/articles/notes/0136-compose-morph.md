@@ -1,0 +1,26 @@
+---
+title: Composing Morphism
+act: ComposeMorph
+index: 136
+top: Morph
+bottom: Morph
+summary: >-
+  Composing two structure-preserving maps yields another. *Morph* witnessing
+  *Morph* produces ***Compose Morph*** (`ComposeMorph`).
+strata:
+  - semantics
+phase: free
+keywords:
+  - act
+---
+
+## Interpretation
+
+Composing two structure-preserving maps yields another.  *Morph* witnessing *Morph* produces ***Compose Morph*** ([ComposeMorph](./0136-compose-morph.md)).
+
+This composition records closure of morphisms under composition, using only earned recognitions.
+
+
+{{ act_info(page.meta) }}
+
+{{ act_nav(page.meta) }}

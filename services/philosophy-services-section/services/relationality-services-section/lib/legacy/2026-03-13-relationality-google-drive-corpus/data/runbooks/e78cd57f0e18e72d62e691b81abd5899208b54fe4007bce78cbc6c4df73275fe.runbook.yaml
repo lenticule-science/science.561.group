@@ -1,0 +1,23 @@
+id: e78cd57f0e18e72d62e691b81abd5899208b54fe4007bce78cbc6c4df73275fe
+inputs:
+- kind: trace
+  role: trace
+- kind: profile_topos
+  role: profile_topos
+name: trace_profile
+outputs:
+- kind: trace_profile
+  role: trace_profile
+steps:
+- inputs:
+  - kind: trace
+    role: trace
+  - kind: profile_topos
+    role: profile_topos
+  name: trace_profile
+  operator: trace_profile
+  outputs:
+  - kind: trace_profile
+    role: trace_profile
+  step_index: 0
+

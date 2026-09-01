@@ -1,0 +1,34 @@
+#+title: logs
+#+author: emsenn
+#+hugo_base_dir: ~/dev/personal-website
+#+hugo_section: logs
+* 2020
+** 2020-05 May
+*** 2020-05-19 Monday
+**** <2020-05-19 Tue 10:06>
+     :LOGBOOK:
+     CLOCK: [2020-05-19 Tue 10:11]--[2020-05-19 Tue 10:35] =>  0:24
+     :END:
+I feel like I spend most of my time using a computer, trying to decide how to use a computer. And a lot of that decision-making is fairly fragmented. What I want from a computer changes faster than I can make computers do what I want.
+
+A big part of the struggle is that I know just enough about computers to find them really frustrating to use, and this has led to me bouncing between being frustrated trying to use Org-mode and other software for stuff, to being frustrated trying to use a LISP to write bespoke functions for handling what data I consider important.
+
+The latter leads to a rabbit-hole of it being impossible to define important data up-front, so I do the former for a bit to just get the job done, and then run into disagreements between how I want to do things and how the software works.
+
+Complicating things is that I have what could be a lot of data to handle, between just, my personal interests, my gardening efforts, and my work with local mutualists.
+
+Right now how things work, roughly, is that I write Org-mode files, and export them into Markdown that's compatible with the Hugo static site generator. I've written my own templates for taking that markdown and making a website.
+
+But this doesn't really use a lot of Org-mode features that I used to use, when I first started using Org-mode, and that's... not too useful!
+
+There are a few things that I'd like to prioritize:
+
+- Using Org-mode to record information about the Makhasa Nursery, what I'm calling the space around my apartment that I'm gardening.
+
+- Using Org-mode & Ledger to record the inventory of what my garden produces (if not the garden itself, but that's more to the above point), and donations, and where it goes.
+***** Using Org-Mode to Plan a Nursery
+<2020-05-19 Tue 10:19>
+
+The way to organize an Org-mode file for a garden that seems good to me right now is to have a few broad sections for each area, with subsections for beds within the space, going down to individual plants if necessary. Another section would be for the calendar: upcoming events. It'd be cool if these events could include what resources they'll need, so it can be planned for. Another section should be for an observation journal!
+
+[I scampered off to make the basics of this file.]

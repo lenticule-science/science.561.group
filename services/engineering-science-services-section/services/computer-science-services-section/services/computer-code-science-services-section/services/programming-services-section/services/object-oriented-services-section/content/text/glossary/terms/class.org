@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       4b914014-46a9-4e69-aed7-a3e307f25767
+:END:
+#+title: class
+#+date: [2025-08-28 Thu 13:23]
+

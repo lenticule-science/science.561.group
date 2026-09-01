@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       49a4d086-825e-4eb4-9b9b-6b899f621cac
+:END:
+#+title: gno-
+#+date: [2025-08-22 Fri 09:18]
+

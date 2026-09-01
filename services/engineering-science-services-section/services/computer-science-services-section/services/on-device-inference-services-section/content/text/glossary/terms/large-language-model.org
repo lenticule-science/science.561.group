@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       00d4fa27-d2ea-4d21-98e2-abb17e887175
+:END:
+#+title: large language model
+#+date: [2025-08-26 Tue 08:53]
+

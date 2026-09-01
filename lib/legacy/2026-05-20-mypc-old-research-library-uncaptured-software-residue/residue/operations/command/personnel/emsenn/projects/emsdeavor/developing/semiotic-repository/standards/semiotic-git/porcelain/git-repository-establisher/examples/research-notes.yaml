@@ -1,0 +1,30 @@
+template: research-notes
+output_path: ./notebooks/soil-salinity-observations
+
+project:
+  name: Soil Salinity Observations
+  description: Field notes, measurements, and exploratory analysis related to soil salinity in coastal gardens.
+  author: emsenn
+  contact_email: emsenn@example.com
+  organization: Independent Research
+
+github:
+  owner: your-org
+  repo: soil-salinity-observations
+  default_branch: main
+  include_codeowners: true
+  include_funding: false
+  badges:
+    tags: false
+
+license:
+  id: CC-BY-4.0
+
+metadata:
+  created: 2025-03-18
+  status: exploratory
+  tags:
+    - ecology
+    - soil
+    - salinity
+    - field-notes

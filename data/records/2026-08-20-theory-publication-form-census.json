@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "science-corpus-disposition/v1",
+  "observedAt": "2026-08-20",
+  "selection": "active non-Science Markdown articles with explicit theory markers in the filename after all note moves",
+  "count": 40,
+  "disposition": "retain-form-owner",
+  "reason": "These are essays, letters, fiction, posts, transcripts, references, and bibliographies. Their theoretical subject belongs to Science; the concrete artifact belongs to its publication or provenance form. Moving them would erase rather than normalize that distinction.",
+  "forms": {
+    "essays": 22,
+    "letters": 8,
+    "fiction": 3,
+    "bibliography": 2,
+    "bibliographies": 2,
+    "posts": 1,
+    "references": 1,
+    "transcripts": 1
+  },
+  "remainingTheoryNotesOutsideScience": 0
+}

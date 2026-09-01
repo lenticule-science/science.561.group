@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://561.group/swarm-intelligence/articulating/library/aperiodic-articulation-category/inferring/library/llm-model/llm-model.schema.json",
+  "title": "LLM model (the endpoint + model an inferring call addresses)",
+  "description": "The model object inferring calls: which endpoint enactor and which model name. endpoint and model are external references (addresses/identifiers of an outside resource), not articulated meaning — so they are reference strings, the same way a URL or file path is. One half of inferring's domain (prompt × model). NOTE: this used to be inferring's flat codomain {inputUtterance, endpoint, model, completion, transactionTime}; inferring's codomain is now an utterance (token = call provenance, claim = reply text), and this schema is the model INPUT object.",
+  "kind": "object",
+  "type": "object",
+  "required": ["endpoint"],
+  "additionalProperties": false,
+  "properties": {
+    "endpoint": {
+      "description": "Identifier of the LLM endpoint enactor (e.g. endpoint:groq, endpoint:cerebras, endpoint:nvidia-nim). An external reference.",
+      "type": "string",
+      "minLength": 1
+    },
+    "model": {
+      "description": "Specific model name at the endpoint (an external reference). If absent, inferring uses the endpoint's default model.",
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       85d7ced8-441d-47d2-a565-fccc2d07f7f6
+:END:
+#+title: R7RS
+#+date: [2025-09-18 Thu 10:01]
+

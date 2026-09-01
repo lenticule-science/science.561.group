@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       7c0b5dc8-bd3c-4358-bef0-ec793a7a93c8
+:public:   true
+:END:
+#+title: AI slop
+#+date: [2025-08-14 Thu 13:53]
+

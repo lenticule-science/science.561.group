@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       d43a8114-80f9-4a41-99eb-52b987be3a69
+:END:
+#+title: primary world
+#+date: [2025-09-10 Wed 20:57]
+

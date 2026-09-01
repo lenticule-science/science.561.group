@@ -1,0 +1,12 @@
+{
+  "encodings": [
+    "telnet"
+  ],
+  "id": "9216c6018186a397daaf2cc57c15048e532bab77f6b3252ca0c8c84d2acb2eb5",
+  "kind": "observation_carrier",
+  "payload_schema_version": "v1",
+  "payload_shape": {
+    "command": "attack",
+    "recognized_element": "fighting"
+  }
+}

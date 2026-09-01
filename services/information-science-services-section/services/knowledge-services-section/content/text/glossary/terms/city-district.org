@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       c325da1c-8fb3-42ff-b20a-f88b2b521c24
+:END:
+#+title: city district
+#+date: [2025-10-04 Sat 18:58]
+

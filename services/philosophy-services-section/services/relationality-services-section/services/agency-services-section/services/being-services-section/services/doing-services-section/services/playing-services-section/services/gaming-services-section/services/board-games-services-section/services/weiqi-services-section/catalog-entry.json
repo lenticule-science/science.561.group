@@ -1,0 +1,32 @@
+{
+  "id": "weiqi",
+  "displayName": "Weiqi",
+  "description": "A pure, dependency-free weiqi (Go) rules kernel -- five rulesets, SGF round-tripping, a semantic event layer -- paired with a real, tested client-side web app: Play (Capture Go vs. a scripted bot), Learn (interactive lesson player), and Read (compiled glossary). A competitive real-time/correspondence Play service against other humans is still declared, not built.",
+  "subdomain": "weiqi",
+  "entryPoints": {
+    "browser": "/",
+    "headless": "apps/weiqi-kernel/src/index.mts (pure module export, no server needed)"
+  },
+  "entryPointsNote": "Deployed to weiqi.561.group (Cloud Run service \"weiqi\", static apps/weiqi-web/public served via scripts/serve.mjs -- PORT/HOST honor the Cloud Run convention). npm run build && npm run serve inside apps/weiqi-web still serves the identical Play/Learn/Tsumego/Read pages locally at http://localhost:8080/ for development.",
+  "seedPolicy": {
+    "kind": "on-demand"
+  },
+  "seedPolicyNote": "The bot-play Capture Go mode has no seed policy of its own (the bot is a deterministic pure function of board state, not a seed); no Play-vs-human service exists yet to fix a daily/client-supplied seed policy.",
+  "intentLog": {
+    "schemaVersion": "weiqi-v1"
+  },
+  "status": "playable",
+  "statusNote": "Polish-phase pass (2026-08-20): gradient/shadow/sheen stone rendering, shape-coded ko/last-move markers, a magnifier-and-cancel touch flow, live concept-recognition toasts with hover-card glossary links, and an SRS-scheduled tsumego trainer are real and tested (168/168). Honest gaps, not yet built: no captured-stones tray or live score display; a territory/ownership-heatmap renderer exists in board.mjs but is not wired to any live page; one wood board theme; no move-number-on-stone option. A competitive real-time/correspondence Play service against other humans is still declared, not built.",
+  "energyBankWrapped": false,
+  "cartridgeWrapped": false,
+  "keywords": [
+    "go",
+    "weiqi",
+    "board-game",
+    "rules-kernel",
+    "tsumego",
+    "sgf",
+    "capture-go"
+  ],
+  "shelf": "Study"
+}

@@ -1,0 +1,5 @@
+# Exact-byte duplicate provenance; the first path is the retained canonical payload.
+hash	retained	removed
+19d121169b721e316f5b8f91d2d1653be45ec17a49149c571e246195d61c7fa4	medicine/_archive/from-discourse-domain-locus-medicine/harm-reduction/harm-reduction.md	medicine/_archive/from-discourse-domain-locus-medicine/public-health/harm-reduction/harm-reduction.md
+010b611883c3d3c65718cb15b8cc2ba724d911f1069e14ceae846403ca60c952	medicine/_archive/from-discourse-domain-locus-medicine/syndemic/syndemic.md	medicine/_archive/from-discourse-domain-locus-medicine/public-health/syndemic/syndemic.md
+cb507a39b208844f4aedf3ab470499a6425f44100850e793df76b97f7a65d9df	medicine/archive/medicine.md	medicine/archive/medicine-medicine.md

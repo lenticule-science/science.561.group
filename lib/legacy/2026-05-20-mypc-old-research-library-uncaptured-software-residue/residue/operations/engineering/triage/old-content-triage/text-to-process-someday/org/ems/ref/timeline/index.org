@@ -1,0 +1,1119 @@
+#+title: emsenn's timeline
+#+options: h:6 tags:nil
+#+todo: STUB | DONE
+This document is a listing of events that have happened, that I feel are worth keeping in mind.
+
+Events marked =STUB= aren't complete, sorry about that.
+#+toc: headlines 6
+* 6th Century
+** 580s
+*** 583
+**** 583-12 December
+***** [0583-12-23 Tue]
+****** STUB Yohl Ik'nal is crowned Queen of Palenque
+#+index: Maya!583, Yohl Ik'nal crowned Queen of Palenque
+#+index: Palenque!583, Yohl Ik'nal crowned Queen of Palenque
+* 10th Century
+** 960s
+*** 962
+**** 962-12 December
+***** [0962-12-23 Thu]
+****** STUB Byzantines sacked Aleppo
+#+index: Aleppo!962, Byzantines sacked Aleppo
+#+index: Byzantine!962, Byzantines sacked Aleppo
+* 13th Century
+** 1280s
+*** 1282
+**** 1282-12 December
+***** [1282-12-11 Fri]
+****** STUB Llywelyn ap Gruffudd, last sovereign Prince of Wales, was defeated in battle
+:PROPERTIES:
+:CUSTOM_ID: llywelyn-ap-gruffudd-defeated
+:END:
+#+index: Wales!1282, Llywelyn ap Gruffudd, last sovereign Prince of Wales, was defeated in battle
+Llywelyn ap Gruffudd (c. 1223 – 11 December 1282) was the last sovereign prince of Wales before its conquest by Edward I of England. He had, after a series of wars, sworn fealty to the English King, Edward I, but when his brother rebeled against the Crown, Llywelyn joined him, and at the Battle of Orewin Bridge at Builth Wells, he was killed after the English commanders misled him into believing they would pay homage.
+* 16th Century
+** 1520s
+*** 1521
+**** 1521-12 December
+***** [1521-12-25 Sun]
+****** STUB La Espanola slave revolt began
+#+index: uprisings!slave uprisings!1521, La Espanola slave revolt began
+#+index: slavery!slave uprisings!1521, La Espanola slave revolt began
+* 17th Century
+** 1620s
+*** 1620
+**** 1620-12 December
+***** [1620-12-21 Mon]
+****** STUB Mayflower landed at Plymouth Rock
+:PROPERTIES:
+:CUSTOM_ID: mayflower-landed-at-plymouth-rock
+:END:
+#+index: America!American colonialism!1620, Mayflower landed at Plymouth Rock
+#+index: colonialism!American colonialism!1620, Mayflower landed at Plymouth Rock
+** 1650s
+*** 1652
+**** 1652-12 December
+***** [1652-12-23 Mon]
+****** STUB John Cotton died
+#+index: Cotton, John!1652, John Cotton died
+** 1680s
+*** 1688
+**** 1688-12 December
+***** [1688-12-11 Saturday]
+****** James II, while trying to abdicate to France, threw the Great Seal of the Realm into the Thames
+:PROPERTIES:
+:CUSTOM_ID: seal-of-the-realm-thrown-into-the-thames
+:END:
+After a bunch of janky shit that got him deposed, James II tried to get to France, but on the way he threw the Great Seal of the Realm, used to formalize documents, into the Thames.
+***** [1688-12-23 Thu]
+****** STUB King James II began his flight to Paris
+* 18th Century
+** 1780s
+*** 1781
+**** 1781-01 January
+***** 1781-01-03 Wednesday
+****** Incan rebellion in Peru
+:PROPERTIES:
+:CUSTOM_ID: incan-rebellion-in-peru
+:END:
+**** 1781-12 December
+***** [1781-12-22 Sat]
+****** STUB Zong Massacre
+https://twitter.com/tenementyaad_/status/1473662432979693578
+*** 1783
+**** 1783-12 December
+***** [1783-12-23 Tue]
+****** STUB George Washington resigned as Commander-in-Chief of the Continental Army
+** 1790s
+*** 1792
+**** 1792-12 December
+***** [1792-12-11 Tuesday]
+****** STUB Louis XVI's trial for treason begins.
+:PROPERTIES:
+:CUSTOM_ID: louis-xvi-trial-begins
+:END:
+Louis XVI, the last King of France, was tried for treason by the National Convention, and at the end, his head got cut off.
+*** 1793
+**** 1793-01 January
+***** 1793-01-03 Thursday
+****** Lucretia Mott was born
+:PROPERTIES:
+:CUSTOM_ID: lucretia-mott-birth
+:END:
+**** 1793-12 December
+***** [1793-12-23 Mon]
+****** STUB French royalists are defeated at the Battle of Savenay
+* 19th Century
+** 1800s
+*** 1804
+**** 1804-01 January
+***** [1804-01-01 Sun]
+****** Haiti is self-established
+:PROPERTIES:
+:CUSTOM_ID: haiti-self-established
+:END:
+*** 1805
+**** 1805-12 December
+***** [1805-12-23 Mon]
+****** STUB Joseph Smith, founder of the LDS, is born
+** 1810s
+*** 1810
+**** 1810-12 December
+***** [1810-12-23 Sun]
+****** STUB Edward Blyth was born
+Zoologist, focused on birds, helped establish... zoological colonialism? whatever you'd call it; he was an early animal smuggler.
+*** 1811
+**** 1811-01 January
+***** 1811-01-08 Tuesday
+****** German Coast Uprisings began
+:PROPERTIES:
+:CUSTOM_ID: german-coast-uprisings-began
+:END:
+*** 1815
+**** 1815-12 December
+***** [1815-12-11 Monday]
+****** STUB U.S. Senate created a select committee on finance and a uniform national currency.
+:PROPERTIES:
+:CUSTOM_ID: select-committee-on-finance-created
+:END:
+The committee was the predecessor to the United States Senate Committee on Finance, which is responsible for a whole bunch of financial economic nonsense.
+***** [1815-12-23 Sat]
+****** STUB Jane Austen's novel /Emma/ is published
+** 1820s
+*** 1821
+**** 1821-12 December
+***** [1821-12-27 Thursday]
+****** STUB Joseph Dejacque was born
+:PROPERTIES:
+:CUSTOM_ID: joseph-dejacque-birth
+:END:
+Joseph Déjacque, born on this day in 1821, was a French anarcho-communist poet, philosopher, and writer who coined the term "libertarian" in reference to his own anti-capitalist politics. He utilized the term in an 1857 letter written to Pierre-Joseph Proudhon, criticizing his sexist views and support of individual ownership of the product of labor and a market economy.
+
+Déjacque was sentenced to two years of prison for his collection of poems "Les Lazaréennes, Fables et Poésies Sociales", but escaped to London around the time of the December 2nd, 1851 coup d'état. There, he joined a small community of outlaws gathered in Jersey and published "La question révolutionnaire", an exposition of the philosophy of anarchism.
+
+Later, Déjacque moved to the UNited States, where he publicly condemned the hanging of John Brown abd promoted the abolitionist cause. As the American Civil War began, Déjacque published a last issue of his paper "Libertaire" with an urgent appeal in which he urges the American people, whom he would like to be "less religious and more socialist", to defend freedom and the Republic against the "Jesuits, slavers, absolutists and authoritarians" who were at their door.
+
+Déjacque then returned to France, living his remaining years in poverty and passing away in 1864.
+*** 1826
+**** 1826-12 December
+***** [1826-12-21 Thursday]
+****** STUB American secessionists in Nacogdoches, Texas, declared independence
+:PROPERTIES:
+:CUSTOM_ID: american-secesionists-in-nacogdoches-texas-declared-independence
+:END:
+*** 1828
+**** 1828-12 December
+***** [1828-12-26 Fri]
+****** STUB Dover Mill Women's Strike began
+:PROPERTIES:
+:CUSTOM_ID: dover-mill-womens-strike-began
+:END:
+** 1830s
+*** 1831
+**** 1831-12 December
+***** [1831-12-25 Sun]
+****** STUB Baptist War began
+in Jamaica
+*** 1835
+**** 1835-12 December
+***** [1835-12-27 Sun]
+****** STUB Osceola killed the Indian Agent who'd imprisoned him
+*** 1837
+**** 1837-12 December
+***** [1837-12-25 Mon]
+****** STUB Seminole Nation repelled a U.S. invasion
+** 1840s
+*** 1844
+**** 1844-12 December
+***** [1844-12-21 Saturday]
+****** STUB Rochdale Society of Equitable Pioneers started
+:PROPERTIES:
+:CUSTOM_ID: rochdale-society-of-equitable-pioneers-started
+:END:
+** 1850s
+*** 1855
+**** 1855-01 January
+***** 1855-01-05 Friday
+****** Dundalli was assasinated
+:PROPERTIES:
+:CUSTOM_ID: dundalli-assassinated
+:END:
+** 1860s
+*** 1862
+**** 1862-12 December
+***** [1862-12-26 Fri]
+****** STUB Dakota 38 were executed
+*** 1867
+**** 1867-01 January
+***** 1867-01-06 Sunday
+****** Revolutionary Committee of Puerto Rico founded
+:PROPERTIES:
+:CUSTOM_ID: revolutionary-committee-of-puerto-rico-founded
+:END:
+*** 1869
+**** 1869-12 December
+***** [1869-12-27 Mon]
+****** STUB Knights of Labor were founded
+** 1870s
+*** 1872
+**** 1872-12 December
+***** [1872-12-21 Saturday]
+****** STUB HMS Challenger expedition began
+*** 1873
+**** 1873-01 January
+***** 1873-01-02 Thursday
+****** Anton Pannekoek was born
+:PROPERTIES:
+:CUSTOM_ID: anton-pannekoek-birth
+:END:
+*** 1876
+**** 1876-12 December
+***** [1876-12-23 Sat]
+****** STUB Constantinople Conference began
+*** 1877
+**** 1877-12 December
+***** [1877-12-23 Sun]
+****** STUB Luigi Fabbri was born
+** 1880s
+*** 1884
+**** 1884-01 January
+***** 1884-01-07 Monday
+****** Arturo Giovannitti was born
+:PROPERTIES:
+:CUSTOM_ID: arturo-giovannitti-birth
+:END:
+*** 1889
+**** 1889-12 December
+***** [1889-12-25 Wed]
+****** STUB Wilhelm Jelinek was born
+German anarchist who survived WW2 to die in an East German prison in 1952
+** 1890s
+*** 1890
+**** 1890-12 December
+***** [1890-12-29 Mon]
+****** STUB Wounded Knee Massacre
+*** 1893
+**** 1893-01 January
+***** 1893-01-02 Monday
+****** Sybil Morrison was born
+:PROPERTIES:
+:CUSTOM_ID: sybil-morrison-birth
+:END:
+**** 1893-12 December
+***** [1893-12-26 Tuesday]
+****** STUB Mao Zedong was born
+*** 1898
+**** 1898-01
+***** 1898-01-05 Wednesday
+****** Federico Garcia Lorca was born
+:PROPERTIES:
+:CUSTOM_ID: federico-garcia-lorca-birth
+:END:
+*** 1899
+**** 1899-01 January
+***** 1899-01-01 Sunday
+:PROPERTIES:
+:CUSTOM_ID: wovoka-received-ghost-dance
+:END:
+****** Wovoka received the Ghost Dance
+***** 1899-01-03 Tuesday
+****** Nietzsche hugged a horse
+:PROPERTIES:
+:CUSTOM_ID: nietzsche-hugged-horse
+:END:
+* 20th Century
+** 1900s
+*** 1900
+**** 1900-12 December
+***** [1900-12-22 Sat]
+****** STUB Valerio Isca, co-founder of the Libertarian Book Club in NYC, was born
+*** 1901
+**** 1901-01 January
+***** 1901-01-04 Friday
+****** CLR James was born
+:PROPERTIES:
+:CUSTOM_ID: clr-james-birth
+:END:
+*** 1905
+**** 1905-01 January
+***** 1905-01-02 Monday
+****** Chicago Unionists met
+:PROPERTIES:
+:CUSTOM_ID: chicago-unionists-met
+:END:
+**** 1905-12 December
+***** [1905-12-11 Monday]
+****** STUB Workers in Kyiv, Ukraine rose up and formed the Shuliavka Republic.
+:PROPERTIES:
+:CUSTOM_ID: shuliavka-republic-created
+:END:
+Then a part of the Russian Empire, workers in Kiev rose up, stopped working at factories, formed a militia, and declared the worker's district the Shuliavka Republic, which was Kiev's sole authority. The Council of Workers' Deputies, leading the uprising, released a manifesto which called for the "abolition of the absolute monarchy, for the freedom of speech and assembly, for social services, for amnesty of political prisoners, for a national emancipation of Ukrainians, Poles, and Jews, and other nationalities of the Russian Empire, for the immediate end to the Jewish Pogroms, which embarasses our people," among other demands.
+
+Four day]s later, the Imperial Russian Army and police surrounded the Shuliavska Republic and arrested at least 78 people and confiscated all weapons. The next day, armed Gendarmes and Cossacks put down the uprising.
+***** [1905-12-22 Fri]
+****** STUB Kenneth Rexroth, Wobbly poet, was born
+***** [1905-12-30 Sat]
+****** STUB Frank Steunenberg assassinated
+Governor of Idaho
+*** 1907
+**** 1907-01 January
+***** 1907-01-03 Thursday
+****** Leon Trotsky exiled to Siberia
+:PROPERTIES:
+:CUSTOM_ID: trotsky-exiled
+:END:
+**** 1907-12 December
+***** [1907-12-21 Sat]
+****** STUB Santa Maria School Massacre
+*** 1908
+**** 1908-10 October
+***** [1908-10-16 Friday]
+****** STUB Enver Hoxha was born
+:PROPERTIES:
+:CUSTOM_ID: enver-hoxha-birth
+:END:
+Enver Hoxha, born on this day in 1908, was the communist leader of Albania from 1946 to 1985, leaving behind a complex legacy of feminism and greatly improved access to healthcare and education, coupled with what critics perceive as a paranoid personality cult and brutal state repression.
+
+Hoxha is also known for having sharp ideological and political disagreements with the Soviet Union and communist Yugoslavia, siding most strongly with and receiving aid from Maoist China.
+
+Before coming into power, Hoxha was a French school teacher and librarian, becoming a communist partisan after fascist Italy invaded Albania in 1939. In March 1943, the first National Conference of the Communist Party elected Hoxha formally as First Secretary.
+
+It was in this position as First Secretary that Hoxha became head of state after the Albanian monarchy was abolished in 1946.
+
+In the years after Stalin's death, Hoxha grew increasingly distressed by the policies of the Soviet leadership and of Khrushchev in particular. China was also disillusioned with Soviet behavior at this time, and Hoxha found common ground with Mao Zedong's criticisms of Moscow. By 1961, Hoxha's attacks on the "revisionist" Soviet leadership had so infuriated Khrushchev that he elected first to terminate Moscow's economic aid to Albania and ultimately to sever diplomatic relations entirely.
+
+Under Hoxha's leadership, the Albanian literacy rate improved from 5-10% in rural areas to more 90%. Hoxha was also a proponent of women's rights, stating "the entire party and country should hurl into the fire and break the neck of anyone who dared trample underfoot the sacred edict of the party on the defense of women's rights". Accordingly, more than 175 times as many women attended secondary schools in 1978 than had done so in 1938.
+
+Critics of Hoxha point out that his reign had state repression of dissidents reminiscent of the Soviet Union and what they perceived as a paranoid personality cult.
+
+The government denied the population access to information other than that disseminated by the government-controlled media. The 1992 book "Albania: A Country Study" (commissioned by the U.S. government) alleges one out of three Albanians had either been interrogated by the Sigurimi secret police or incarcerated in labor camps.
+
+Hoxha died in 1985, leading Ramiz Alia to succeed him as head of state. Although Albania was one of the poorest European nations at the time of his death, the country was also economically self-sufficient, carrying minimal foreign debt and boasting a trade surplus of $10 million.
+
+"Every departure from class struggle has fatal results for the destiny of socialism."
+
+- Enver Hoxha
+
+** 1910s
+*** 1912
+**** 1912-01 January
+***** 1912-01-01 Monday
+****** Herbert Lee was born
+:PROPERTIES:
+:CUSTOM_ID: herbert-lee-birth
+:END:
+***** 1912-01-03 Wednesday
+****** Federico Borrell Garcia was born
+:PROPERTIES:
+:CUSTOM_ID: federico-borrell-garcia-birth
+:END:
+***** 1912-01-09 Tuesday
+****** African National Congress founded
+:PROPERTIES:
+:CUSTOM_ID: african-national-congress-founded
+:END:
+
+*** 1913
+**** 1913-12 December
+***** [1913-12-23 Tuesday]
+****** STUB Federal Reserve Act is signed into U.S. law
+***** [1913-12-24 Wednesday]
+****** STUB The Italian Hall Disaster occurred
+:PROPERTIES:
+:CUSTOM_ID: italian-hall-disaster
+:END:
+*** 1916
+**** 1916-12 December
+***** [1916-12-25 Mon]
+****** STUB Ahmed Ben Bella was born
+first Prime Minister of Algeria
+*** 1919
+**** 1919-01 January
+***** 1919-01-07 Tuesday
+****** Tragic Week began
+:PROPERTIES:
+:CUSTOM_ID: tragic-week-began
+:END:
+**** 1919-12 December
+***** [1919-12-21 Sun]
+****** STUB Emma Goldman deported to Russia
+***** [1919-12-23 Tue]
+****** STUB Sexual Disqualification Act became law in the UK
+It let women work
+** 1920s
+*** 1920
+**** 1920-01 January
+***** 1920-01-02 Friday
+****** 2nd Palmer Raids began
+:PROPERTIES:
+:CUSTOM_ID: 2nd-palmer-raids-began
+:END:
+***** 1920-01-08 Thursday
+****** Steelworkers in United States striked
+:PROPERTIES:
+:CUSTOM_ID: steelworkers-in-united-states-striked
+:END:
+**** 1920-12 December
+***** [1920-12-11 Saturday]
+****** STUB British forces burnt and looted Cork
+:PROPERTIES:
+:CUSTOM_ID: cork-burnt
+:END:
+It was in retaliation of an IRA ambush.
+***** [1920-12-24 Friday]
+****** STUB Storme DeLarverie was born
+:PROPERTIES:
+:CUSTOM_ID: storme-delarverie-birth
+:END:
+*** 1922
+**** 1922-01 January
+***** 1922-01-09 Monday
+****** Chicago construction workers striked
+:PROPERTIES:
+:CUSTOM_ID: chicago-construction-workers-striked
+:END:
+**** 1922-12 December
+***** [1922-12-25 Mon]
+****** STUB Founding congress for the International Workers Association began
+****** STUB LAPD beat 7 people in their custody
+*** 1923
+**** 1923-01 January
+***** 1923-01-10 Wednesday
+****** Soldiers in Canada fired on striking coal miners
+:PROPERTIES:
+:CUSTOM_ID: soldiers-in-canada-fired-on-striking-coal-miners
+:END:
+**** 1923-12 December
+***** [1923-12-27 Thursday]
+****** STUB The Toranomon Incident occurred
+:PROPERTIES:
+:CUSTOM_ID: toranomon-incident
+:END:
+The Toranomon Incident (虎ノ門事件) was an assassination attempt on the Prince Regent Hirohito of Japan by communist dissident Daisuke Nanba that took place at the Toranomon intersection in downtown Tokyo, Japan on December 27th, 1923. Nanba was sentenced to death and executed on November 15th, 1924.
+
+Nanba was motivated both by leftist ideology and a desire to avenge the execution of Shūsui Kōtoku, who was executed for his alleged role in the High Treason Incident of 1910. Hirohito was on his way to the opening of the 48th Session of the Imperial Diet when Namba fired a small pistol into his carriage, shattering a window and injuring a chamberlain, but leaving Hirohito unharmed.
+
+After being arrested, Nanba explained that he was a communist and was seeking to avenge the death of Kōtoku. Despite court records affirming his sound state of mind, Namba was presented as insane to the public.
+***** [1923-12-29 Sat]
+****** STUB Catcher Race Riot
+*** 1924
+**** 1924-12 December
+***** [1924-12-10 Wednesday]
+****** STUB The Society for Human Rights was founded
+:PROPERTIES:
+:CUSTOM_ID: society-for-human-rights-founded
+:END:
+The Society for Human Rights, founded by Henry Gerber in Illinois on this day in 1924, was the first gay rights organization in the United States. The Society for Human Rights also published the earliest-documented homosexual periodical, Friendship and Freedom. Although Gerber (shown above) founded the group, a black clergyman named John T. Graves was its first president, with Gerber serving as a director.
+
+Gerber set out to expand the Society's membership beyond the original seven but had difficulty interesting anyone other than poorer gays in joining. More affluent members of Chicago's gay community refused to join his society, not wanting to ruin their reputations by being associated with homosexuality.
+
+The Society was only a chartered organization for a few months before police arrested Gerber and several other members. After their arrests, the Chicago Examiner reported the story under the headline "Strange Sex Cult Exposed".
+
+Gerber was subjected to three highly publicized trials, and his defense, while ultimately successful, cost him his life savings. Unable to continue funding the Society, the group dismantled, and Gerber left for New York City, embittered that none of the wealthier gays of Chicago had come to his aid for a cause he believed was designed to advance the common good.
+*** 1926
+**** 1926-12 December
+***** [1926-12-23 Thu]
+****** STUB Robert Bly was born
+One of the leaders of mythopoetic masculinity.
+*** 1927
+**** 1927-12 December
+***** [1927-12-11 Sunday]
+****** STUB Communist Red Guards rose up in Guangzhou, China, and formed a Gaungzhou Soviety
+:PROPERTIES:
+:CUSTOM_ID: gaungzhou-soviety-created
+:END:
+They tried!
+** 1930s
+*** 1932
+**** 1932-01 January
+***** 1932-01-06 Wednesday
+****** Unemployed in Hamburg, Germany, clash with police
+:PROPERTIES:
+:CUSTOM_ID: unemployed-in-hamburg-germany-clash-with-police
+:END:
+*** 1936
+**** 1936-12 December
+***** [1936-12-11 Friday]
+****** STUB Edward VIII's abdication took effect
+:PROPERTIES:
+:CUSTOM_ID: edward-viii-abdicated
+:END:
+The things we do for love.
+***** [1936-12-23 Wed]
+****** STUB Spanish Republic legalized the Regional Defense Council of Aragon
+***** [1936-12-30 Wed]
+****** STUB Flint Sit-down Strike began
+*** 1937
+**** 1937-01 January
+***** 1937-01-05 Tuesday
+****** Abraham Lincoln Brigade formed
+:PROPERTIES:
+:CUSTOM_ID: abraham-lincoln-brigade-formed
+:END:
+**** 1937-10 October
+***** [1937-10-02 Saturday]
+****** STUB The Parsley Massacre began
+:PROPERTIES:
+:CUSTOM_ID: parsley-massacre
+:END:
+The */Parsley Massacre/* was an act of genocide which started on October 2nd, 1937, in which the army of the Dominican Republic was ordered by Rafael Trujillo to exterminate Haitians living in the northwest Dominican Republic.
+#+begin_quote
+The Parsley Massacre (Spanish: El Corte "the cutting"; Creole: kout kouto-a "the stabbing") was an act of genocide committed against Haitians living in the Dominican Republic's northwestern frontier that began on this day in 1937. Estimates of the amount of Haitians murdered range from 12,000-35,000.
+
+The massacre was carried out by the Dominican Army on the orders of Dominican dictator Rafael Trujillo, who initiated the violence with this statement, given on Oct. 2nd, 1937:
+
+"To the Dominicans who were complaining of the depredations by Haitians living among them, thefts of cattle, provisions, fruits, etc., and were thus prevented from enjoying in peace the products of their labor, I have responded, 'I will fix this.' And we have already begun to remedy the situation. Three hundred Haitians are now dead in Bánica. This remedy will continue."
+
+In the following week, hundreds of Dominican troops poured into the region, killing Haitians with rifles, machetes, shovels, knives, and bayonets. Haitian children were reportedly thrown in the air and caught by soldiers' bayonets, then thrown on their mothers' corpses. Others were drowned in the sea, making identification and counting of the dead impossible.
+
+The term "Parsley Massacre" for the genocide came from the method that Dominican soldiers would use to determine whether or not those living on the border were native Afro-Dominicans or immigrant Afro-Haitians - they would hold up a sprig of parsley to someone and ask them what it was.
+
+If the person could pronounce it the Spanish way ("perejil"), the soldiers considered them Dominican and let them live, however if they pronounced it with a French or Creole accent, they were considered Haitian and executed.[fn:: See apeoplescalendar.org/calendar/events/parsley-massacre-1937]
+#+end_quote
+*** 1939
+**** 1939-01
+***** 1939-01-04 Wednesday
+****** George Orwell signed the Breton/River manifesto
+:PROPERTIES:
+:CUSTOM_ID: george-orwell-signed-breton-rivera-manifesto
+:END:
+** 1940s
+*** 1941
+**** 1941-01 January
+***** 1941-01-10 Friday
+****** Farmers in Tayug, Phillipines destroyed land records
+:PROPERTIES:
+:CUSTOM_ID: farmers-in-tayug-phillipines-destroyed-land-records
+:END:
+**** 1941-12 December
+***** [1941-12-11 Thursday]
+****** STUB Germany and Italy declared war on the United States, Poland declared war on Japan
+:PROPERTIES:
+:CUSTOM_ID: ww2-germany-and-italy-declared-war-on-the-us
+:END:
+*** 1942
+**** 1942-01 January
+***** 1942-01-01 Thursday
+****** Stalin proclaimed Time magazine's "Man of the Year"
+:PROPERTIES:
+:CUSTOM_ID: stalin-proclaimed-time-magazines-man-of-the-year
+:END:
+*** 1946
+**** 1946-12 December
+***** [1946-12-22 Sun]
+****** STUB Kuwasi Balgoon was born
+*** 1947
+**** 1947-12 December
+***** [1947-12-23 Tue]
+****** STUB Transistor demonstrated at Bell Labs
+*** 1948
+**** 1948-12 December
+***** [1948-12-23 Thu]
+****** STUB Japanese leaders of World War 2 are executed
+*** 1949
+**** 1949-12 December
+***** [1949-12-21 Wed]
+****** STUB Thomas Sankara was born
+** 1950s
+*** 1951
+**** 1951-12
+***** [1951-12-25 Tue]
+****** STUB Moore Home Bombing
+Harry and Harriette Moore's home was bombed by white supremacists
+*** 1954
+**** 1954-12 December
+***** [1954-12-23 Thu]
+****** STUB First successful kidney transplant
+*** 1956
+**** 1956-12 December
+***** [1956-12-10 Monday]
+****** STUB The People's Movement for the Liberation of Angola (MPLA) was founded
+:PROPERTIES:
+:CUSTOM_ID: peoples-movement-for-the-liberation-of-angola-founded
+:END:
+On this day in 1956, the People's Movement for the Liberation of Angola (MPLA) was founded in a merger between two smaller communist and anti-colonial parties. The MPLA fought for their independence from Portuguese colonizers, alongside the African Party for the Independence of Guinea and Cape Verde (PAIGC), the Mozambique Liberation Front (FRELIMO) and CLSTP, forerunner of the Movement for the Liberation of São Tomé and Príncipe.
+
+From 1961 to 1974, the MLPA waged a guerrilla liberation war against the Portuguese colonial government in Angola. Following the Carnation Revolution in Portugal, the newly-established Portuguese military government granted Angola independence, which was to be led by a coalition of different anti-colonial liberation armies.
+
+The coalition quickly broke apart, erupting into a civil war between the MPLA, the National Liberation Front of Angola (FNLA), and the Union for the Total Independence of Angola (UNITA). The MLPA won the war, and has ruled Angola since 1975.
+
+At its first congress in 1977, the MPLA adopted Marxism-Leninism as its official ideology. Receiving military support from Cuba and the Soviet Union, they maintained control over most territory in Angola, despite extensive aid to the FNLA and UNITA from South Africa, Zaire, and the United States.
+
+Both the MPLA and UNITA were complicit in war crimes; more than 500,000 civilians were killed during the civil war.
+
+After the end of the Cold War and collapse of the Soviet Union, the MPLA renounced Marxism-Leninism in favor of social democracy. Though no longer a proxy war between the USA and the USSR, the Angolan Civil War lasted until 2002, when a peace agreement was finally reached.
+*** 1957
+**** 1957-01 January
+***** 1957-01-05 Saturday
+****** Eisenhower Doctrine Declared
+:PROPERTIES:
+:CUSTOM_ID: eisenhower-doctrine-declared
+:END:
+
+*** 1958
+**** 1958-12 December
+***** [1958-12-11 Thursday]
+****** STUB Republic of Upper Volta (now Burkina Faso) and Republic of Dahomey (now Benin) became self-governing and joined the French Community
+:PROPERTIES:
+:CUSTOM_ID: republics-of-upper-volta-and-dahomey-joined-french-community
+:END:
+*** 1959
+**** 1959-01 January
+***** 1959-01-01 Thursday
+****** Cuban Revolution succeeded
+:PROPERTIES:
+:CUSTOM_ID: cuban-revolution-succeeded
+:END:
+** 1960s
+*** 1960
+**** 1960-12 December
+***** [1960-12-11 Sunday]
+****** STUB French forces in Algeria cracked down on protesters during a visit from French President Charless de Gaulle
+:PROPERTIES:
+:CUSTOM_ID: french-crackdown-against-anti-de-gaulle-protesters-in-algeria
+:END:
+*** 1961
+**** 1961-01 January
+***** 1961-01-04 Wednesday
+****** Danish barbers' assistants ended their strike
+:PROPERTIES:
+:CUSTOM_ID: danish-barbers-assistant-strike-ended
+:END:
+it was the longest in recorded history - 33 years!
+****** Workers in Baixa de Cassanje, Angola, began protesting
+:PROPERTIES:
+:CUSTOM_ID: protests-began-in-baixa-de-cassanje-angola
+:END:
+*** 1963
+**** 1963-12 December
+***** [1963-12-21 Sat]
+****** STUB Bloody Christmas began in Cyprus
+Turks destroyed more than 100 Greek villages, displacing tens of thousands
+*** 1964
+**** 1964-12 December
+***** [1964-12-11 Friday]
+****** STUB Che Guevara spoke to the UN General Assembly
+:PROPERTIES:
+:CUSTOM_ID: che-guevara-spoke-to-un-ga
+:END:
+*** 1965
+**** 1965-01 January
+***** 1965-01-04 Monday
+****** Free Speech Movement held first rally
+:PROPERTIES:
+:CUSTOM_ID: free-speech-movement-held-first-rally
+:END:
+**** 1965-12 December
+***** [1965-12-21 Tue]
+****** STUB United Nations adopted the International Convention on the Elimination of All Forms of Racial Discrimination
+*** 1966
+**** 1966-01 January
+***** 1966-01-03 Monday
+****** Sammy Younge Jr. shot dead
+:PROPERTIES:
+:CUSTOM_ID: sammy-younge-jr-murdered
+:END:
+***** 1966-01-06 Thursday
+****** SNCC adopted position against war in Vietnam
+:PROPERTIES:
+:CUSTOM_ID: sncc-adopted-position-against-war-in-vietnam
+:END:
+**** 1966-12 December
+***** [1966-12-31 Sat]
+****** STUB Black Cat Tavern Raid
+*** 1968
+**** 1968-10 October
+***** [1968-10-02 Wednesday]
+****** STUB The Tlatelolco Massacre began
+:PROPERTIES:
+:CUSTOM_ID: tlatelolco-massacre
+:END:
+The */Tlatelolco Massacre/* was a massacre of university and high-school students carried out by the Mexican military. The event radicalized Subcomandante Marcos of the Zapatistas and the resignation of Peter Agee from the CIA.
+
+#+begin_quote
+On this day in 1968, around 10,000 university and high school students gathered in the Plaza de las Tres Culturas to protest the government's actions and listen peacefully to speeches. The crowd, which also included non-students such as residential neighbors, bystanders, and children, was fired upon by the Mexican military that evening.
+
+Although the Mexican government said gunfire from the surrounding apartments prompted the army's attack, multiple eyewitness accounts claim they saw a military flare go up as a sign to begin firing on the crowd. The government also had hidden soldiers with machine guns in the apartment buildings they claimed they were fired upon from.
+
+Estimates of the total killed range from 300-400, and over 1,300 people were arrested. The event radicalized Subcomandante Marcos, who later became a prominent member of the Zapatistas, an indigenous group that fights for liberation from the Mexican government.
+
+The massacre also led CIA agent Philip Agee, an eyewitness to the violence, to resign from the organization in protest and author "Inside the Company: CIA Diary", which detailed his work on behalf of American imperialism and caused him to be deported from the United Kingdom.[fn:: See apeoplescalendar.org/calendar/events/tlatelolco-massacre-1968]
+#+end_quote
+**** 1968-12 December
+***** [1968-12-23 Mon]
+****** STUB U.S. sailors released after 11 months of North Korean internment
+83 sailors from the USS Pueblo are released after 11 months of North Korean internment
+
+*** 1969
+**** 1969-12 December
+***** [1969-12-11 Thursday]
+****** STUB Pino Pinelli murdered in Spanish state massacre
+:PROPERTIES:
+:CUSTOM_ID: pino-pinelli-massacre
+:END:
+** 1970s
+*** 1970
+**** 1970-01 January
+***** 1970-01-06 Tuesday
+****** West Virginia miners striked
+:PROPERTIES:
+:CUSTOM_ID: west-virginia-miners-striked
+:END:
+*** 1973
+**** 1973-01 January
+***** 1973-01-03 Wednesday
+****** Daniel Ellsberg charged with espionage
+:PROPERTIES:
+:CUSTOM_ID: daniel-ellsburg-charged-with-espionage
+:END:
+**** 1973-12 December
+***** [1973-12-27 Thursday]
+****** STUB Skylab went silent
+:PROPERTIES:
+:CUSTOM_ID: skylab-went-silent
+:END:
+On Thursday, December 27th, 1973, overworked astronauts on the American Skylab 4 mission accidentally went silent. Perceived as a strike by ground crew, the silence resulted in better labor conditions for the space crew, and was arguably the first extraterran act of human labor resistance.
+
+#+begin_quote
+Prior to the incident, the three man crew reported exhausting working conditions. According to astronaut Edward Gibson, "We fell behind what mission control desired. So they decided they were going to help us out by giving us detailed instructions every morning....One morning we had about sixty feet of teleprinter message to cut up and divide up and understand before we even got to work."
+
+In late December, the crew got permission for a day off from ground control, accounted for in their contracts. According to crewmember Gerald P. Carr, in their fatigued state, "[they] got careless with [their] radios", going a full orbit of the Earth without contacting ground control (approximately 90 minutes).
+
+On Earth, this was perceived as intentional, and rumor of a strike quickly spread. Later, this incident was reported on by journalist Henry S.F. Cooper and Harvard Business School (HBS) as the first strike in space.
+
+In later interviews, at least one crewmember claimed that the radio silence was unintentional, and, for its part, NASA strongly denies that the incident was a strike, with John Uri of the NASA Johnson Space Center stating "It is unfortunate that the unverified story began at all but even more so that over the years prestigious organizations propagated it, giving it credence when it deserves none."
+
+In any case, a few days after the incident, administrators called a "crisis meeting", at the end of which ground control agreed to let the space crew set their own schedules.
+#+end_quote
+*** 1978
+**** 1978-12 December
+***** [1978-12-11 Monday]
+****** STUB the Lufthansa heist is committed
+:PROPERTIES:
+:CUSTOM_ID: lufthansa-heist
+:END:
+***** [1978-12-23 Sat]
+****** STUB USSR forces occupied Kabul
+*** 1979
+**** 1979-10 October
+***** [1979-10-16 Tuesday]
+****** STUB Bu-Ma Democratic Protests
+:PROPERTIES:
+:CUSTOM_ID: bu-ma-protests
+:END:
+The Bu-Ma Democratic Protests against the South Korean Yushin regime began on this day in 1979, starting in Busan and later spreading to and Masan (now Changwon). The first to protest were students from Pusan National University, who began calling for the abolition of the Yushin regime in public demonstrations.
+
+The protests quickly grew, and, just two days later, they had spread to Masan, resulted in the destruction of a tax collection office and burned police vehicles, and President Park Chung-hee declared martial law, arrested more than 1,000 people. On October 26th, President Park Chung-hee was assassinated, leading to the eventual dissolution of the Fourth Republic of South Korea.
+
+On the 40th anniversary of the event, President Moon Jae-in apologized for the previous episodes of political repression, stating "As long as we have a history of great democratic protests, no power can rule over the people".
+**** 1979-12 December
+***** [1979-12-21 Fri]
+****** STUB Lancaster House Agreement is signed
+Rhodesia becomes independent
+** 1980s
+*** 1980
+**** 1980-12 December
+***** [1980-12-11 Thursday]
+****** STUB Superfund Act created
+:PROPERTIES:
+:CUSTOM_ID: superfund-act-created
+:END:
+*** 1981
+**** 1981-12 December
+***** [1981-12-11 Friday]
+****** STUB Salvadoran soldiers committed the El Mozote Massacre
+:PROPERTIES:
+:CUSTOM_ID: el-mozote-massacre
+:END:
+The El Mozote Massacre took place in the village of el Mozote, El Salvador on this day in 1981, when U.S.-trained Salvadoran soldiers massacred 800-1200 villagers, raping and murdering children there. The massacre was carried out by units of the Salvadoran army's Atlacatl Battalion, which was created in 1980 at the U.S. Army's School of the Americas.
+
+Soldiers separated the population of el Mozote into men, women, and children, and began by torturing and executing the men. Girls as young as 10 were raped, and they murdered the children by cutting their throats and hanging them from trees. At least one child killed in this way was reportedly two years old.
+
+Rufina Amaya (1943 - 2007) was the sole survivor of the violence. Amaya, hiding in a tree, watched as soldiers decapitated her husband and slaughtered her children, the youngest of whom was eight months old.
+
+New York Times and Washington Post reporters, taking testimony from Amaya, broke the story in early 1982 and were heavily criticized. Both the U.S. and Salvadoran governments downplayed or outright denied the incident.
+
+Officials from the Reagan administration called the accusations "gross exaggerations" and, as late as 2001, U.S. official Elliott Abrams said that Washington's policy in El Salvador from that period was a "fabulous achievement."
+
+In December 2011, the government of El Salvador formally apologized for the massacre.
+*** 1983
+**** 1983-01
+***** 1983-01-04 Tuesday
+****** Colorado farmers protested foreclosures
+:PROPERTIES:
+:CUSTOM_ID: colorado-farmers-protested-foreclosures
+:END:
+
+*** 1986
+**** 1986-12 December
+***** [1986-12-23 Tue]
+****** STUB Voyager arrived at Edwards AFB
+became the first craft to travel around the world without refueling
+***** [1986-12-31 Wed]
+****** STUB Dupont Plaza Hotel Fire
+*** 1988
+**** 1988-01 January
+***** 1988-01-02 Saturday
+****** Ashland Oil Company spills into Monongahela River, in Pennyslvania
+:PROPERTIES:
+:CUSTOM_ID: monongahela-oil-spill
+:END:
+**** 1988-12 December
+***** [1988-12-21 Wed]
+****** STUB Locerbie Bombing
+***** [1988-12-22 Thu]
+****** STUB Chico Mendes was assassinated
+****** STUB Jean Malquias died
+https://libcom.org/history/malaquais-jean-1908-1998
+** 1990s
+*** 1990
+**** 1990-12 December
+***** [1990-12-11 Tuesday]
+****** STUB Anti-communist demonstrations began in Albania
+:PROPERTIES:
+:CUSTOM_ID: anti-communist-protests-in-albania-began
+:END:
+The beginning of the end of state communism for them.
+***** [1990-12-23 Sun]
+****** STUB Slovenia voted for independence
+88.5% of Slovenia electorate voted for independence from Yugoslavia
+*** 1994
+**** 1994-01 January
+***** 1994-01-01 Saturday
+****** Zapatistas declared war on Mexico
+:PROPERTIES:
+:CUSTOM_ID: zapatistas-declared-war-on-mexico
+:END:
+**** 1994-10 October
+***** [1994-10-16 Sunday]
+****** STUB Los Angeles protested against Prop 187, anti-immigrantion legislation
+:PROPERTIES:
+:CUSTOM_ID: protest-against-prop-187
+:END:
+On this day in 1994, an estimated 70,000 demonstrators marched across Los Angeles in opposition to Prop 187, a ballot initiative that prevented any undocumented immigrant (both children and parents) from accessing public school, public healthcare, and public universities. The demonstration against Prop 187, known as the "Save Our State" initiative, is one of the largest mass protests in Los Angeles' history.
+
+Although the ballot initiative passed at first, public and legal pressure from opponents of Prop 187 led to a federal court order preventing enforcement of the measure. The law was finally killed in 1997, when it was declared unconstitutional. The political controversy surrounding the law led to widespread voter registration from the Latino population, and is considered a major factor in California's subsequent shift away from the Republican Party.
+**** 1994-12 December
+***** [1994-12-11 Sunday]
+****** STUB First Chechen War began
+:PROPERTIES:
+:CUSTOM_ID: first-chechen-war-began
+:END:
+*** 1995
+**** 1995-10 October
+***** [1995-10-16 Monday]
+****** STUB The Million Man March occurred
+:PROPERTIES:
+:CUSTOM_ID: million-man-march
+:END:
+On this day in 1995, a collaborative rally of various civil rights and black liberation groups known as the "Million Man March" took place in Washington, D.C. Hundreds of thousands strong, the march included groups from across the political spectrum, from the National Association for the Advancement of Colored People (NAACP) to the National of Islam (NOI), and its purpose was to "convey to the world a vastly different picture of the Black male".
+
+The rally's events were broken down into several sessions on specific topics, including "Sankofa: Lessons from the Past Linkages to the Future" and "Atonement and Reconciliation". Many prominent civil rights activists spoke at the event, including Betty Shabazz (widow of Malcolm X), Dr. Cornel West, Rosa Parks, Maya Angelou, Rev. Benjamin Chavis, Jr., and Minister Louis Farrakhan.
+
+Two years after the march, the Million Woman March was held in response to fears that the Million Man March had focused on black men to the exclusion of black women. Farrakhan held the 20th Anniversary of the "Million Man March: Justice or Else" on October 10th, 2015, in Washington, D.C.
+
+*** 1997
+
+**** 1997-01 January
+
+***** 1997-01-04 Saturday
+
+****** Nigerians rallied against Shell Oil
+:PROPERTIES:
+:CUSTOM_ID: nigerians-rallied-against-shell-oil
+:END:
+**** 1997-12 December
+***** [1997-12-11 Thursday]
+****** STUB Kyoto Protocol opened for signatures
+:PROPERTIES:
+:CUSTOM_ID: kyoto-protocol-opened
+:END:
+Before the Paris Agreement, lol
+***** [1997-12-22 Mon]
+****** STUB Acteal Massacre
+***** [1997-12-23 Tue]
+****** STUB Seinfeld popularized the secular holiday Festivus
+
+*** 1998
+
+**** 1998-01 January
+
+***** 1998-01-11 Sunday
+
+****** Narmada dam site occupied
+:PROPERTIES:
+:CUSTOM_ID: narmada-dam-site-occupied
+:END:
+* 21st Century
+** 2000s
+*** 2002
+**** 2002-01 January
+***** 2002-01-11 Friday
+****** First prisoners arrived at Guantanomo Bay
+:PROPERTIES:
+:CUSTOM_ID: first-prisoners-arrived-at-guantanamo-bay
+:END:
+**** 2002-12 December
+***** [2002-12-23 Mon]
+****** STUB Iraqi MiG-25 shot down a U.S. MQ-1 Predator
+The first combat engagement between a drone and conventional aircraft
+*** 2003
+**** 2003-01 January
+***** 2003-01-01 Wednesday
+****** ELF torched vehicles in Erie, Pennsylvania
+:PROPERTIES:
+:CUSTOM_ID: elf-torched-vehicles-in-erie-pennsylvania
+:END:
+**** 2003-12 December
+***** [2003-12-23 Tue]
+****** STUB Chuangdongbein Explosion
+Chuandongbei natural gas field in Quaoqiao, Kai County, Chongqing, China, exploded, killing at least 234 people.
+*** 2005
+**** 2005-12 December
+***** [2005-12-11 Sunday]
+****** STUB Cronulla race riots occurred
+:PROPERTIES:
+:CUSTOM_ID: cronulla-race-riots
+:END:
+*** 2006
+**** 2006-12 December
+***** [2006-12-11 Monday]
+****** STUB Mexican Drug War began
+:PROPERTIES:
+:CUSTOM_ID: mexican-drug-war-began
+:END:
+*** 2007
+**** 2007-12 December
+***** [2007-12-23 Sun]
+****** STUB Nepal began transitioning into a republic
+*** 2009
+**** 2009-01 January
+***** 2009-01-01 Thursday
+****** Oscar Grant III murdered by police
+:PROPERTIES:
+:CUSTOM_ID: oscar-grant-iii-murdered
+:END:
+**** 2009-10 October
+***** [2009-10-13 Tue]
+****** Grace Lee Boggs died
+** 2010s
+*** 2011
+**** 2011-01 January
+***** 2011-01-07 Friday
+****** Banks ransacked in Algeria to protest high food prices
+:PROPERTIES:
+:CUSTOM_ID: banks-ransacked-in-algeria-to-protest-high-food-prices
+:END:
+**** 2011-12 December
+***** [2011-12-11 Sunday]
+****** STUB Aqrab Massacre
+:PROPERTIES:
+:CUSTOM_ID: aqrab-massacre
+:END:
+*** 2013
+**** 2013-12 December
+***** [2013-12-23 Mon]
+****** STUB Lennon Brown hacked Citibank
+Lennon Brown took down 90% of Citibank's North American servers as he quit his job for them
+*** 2015
+**** 2015-12 December
+***** [2015-12-23 Wed]
+****** STUB Sabhia Gokcen bombing
+Sabhia Gokcen bombing occurred, claimbed by the Kurdistan Freedom Hawks
+*** 2016
+**** 2016-12 December
+***** [2016-12-21 Wed]
+****** STUB Nazzareno Antonio Tassone (Şehîd Agir Ararat) and Ryan Lock (Berxwedan Givara) died in Raqqa, fighting Daesh
+*** 2017
+**** 2017-12 December
+***** [2017-12-11 Monday]
+****** STUB Pipebomb failed in NYC, injuring 4, including bomber
+:PROPERTIES:
+:CUSTOM_ID: failed-nyc-pipebomb
+:END:
+*** 2019
+**** 2019-12 December
+***** [2019-12-11 Wednesday]
+****** STUB Bougainvillean independence referendum results announced
+:PROPERTIES:
+:CUSTOM_ID: bougainvillean-independence-referendum-results-announced
+:END:
+** 2020s
+*** 2020
+**** 2020-01 January
+***** 2020-01-02 Thursday
+****** Chileans fake-protested for a dog
+:PROPERTIES:
+:CUSTOM_ID: chileans-fake-protested
+:END:
+*** 2021
+**** 2021-05 May
+***** [2021-05-28 Friday]
+****** STUB Unmarked mass graves at former Kamloops Residential School were announced
+**** 2021-12 December
+***** [2021-12-25 Sat]
+****** STUB Candy Palmater passed on
+****** STUB Turkish drone attack in Koban, Rojava killed 2, injured 7
+*** 2022
+**** 2022-01 January
+***** 2022-01-03 Monday
+****** Politics and Prose unionized
+:PROPERTIES:
+:CUSTOM_ID: politics-and-prose-unionized
+:END:
+* Supplements
+** Daily Summaries
+*** January
+#+name: ds-01-01
+- */January 1st/*
+  - 1804 :: [[file:timeline.org::#haiti-self-established][Haiti self-established itself]]
+  - 1899 :: [[file:timeline.org::#wovoka-received-ghost-dance][Wovoka received the Ghost dance]]
+  - 1912 :: [[file:timeline.org::#herbert-lee-birth][Herbert Lee was born]]
+  - 1942 :: [[file:timeline.org::#stalin-proclaimed-time-magazines-man-of-the-year][Stalin proclaimed Time magazine's "Man of the Year"]]
+  - 1959 :: [[file:timeline.org::#cuban-revolution-succeeded][Cuban Revolution succeeded]]
+  - 1994 :: [[file:timeline.org::#zapatistas-declared-war-on-mexica][Zapatistas declared war on Mexico]]
+  - 2003 :: [[file:timeline.org::#elf-torched-vehicles-in-erie-pennsylvania][ELF torched vehicles in Erie, Pennsylvania]]
+  - 2009 :: [[file:timeline.org::#oscar-grant-iii-murdered][Oscar Grant III murdered]]
+#+name: ds-01-02
+- */January 2nd/*
+  - 1873 :: [[file:timeline.org::#anton-pannekoek-birth][Anton Pannekoek was born]]
+  - 1893 :: [[file:timeline.org::#sybil-morrison-birth][Sybil Morrison was born]]
+  - 1905 :: [[file:timeline.org::#chicago-unionists-met][Chicago Unionists met]], leading to the formation of the Industrial Workers of the World
+  - 1920 :: [[file:timeline.org::#2nd-palmer-raids-began][2nd Palmer Raids began]]
+  - 1988 :: [[file:timeline.org::#monongahela-oil-spill"][Ashland Oil Company spills into Monongahela River, in Pennyslvania]]
+  - 2020 :: [[file:timeline.org::#chileans-fake-protested][Chileans fake protested]] (for a dog!)
+#+name: ds-01-03
+- */January 3rd/*
+  - 1781 :: [[file:timeline.org::#incan-rebellion-in-peru][Incan rebellion in Peru]]
+  - 1793 :: [[file:timeline.org::#lucretia-mott-birth][Lucretia Mott was born]]
+  - 1899 :: [[file:timeline.org::#nietzsche-hugged-horse][Nietzsche hugged a horse]]
+  - 1907 :: [[file::timeline.org::#trotsky-exiled][Trotsky exiled]]
+  - 1912 :: [[file:timeline.org::#federico-borrell-garcia-birth][Federico Borrell Garcia was born]]
+  - 1966 :: [[file:timeline.org::#sammy-younge-jr-murdered][Sammy Younge Jr. shot dead]]
+  - 1973 :: [[file:timeline.org::#daniel-ellsburg-charged-with-espionage][Daniel Ellsburg charged with espionage]]
+  - 2022 :: [[file:timeline.org::#politics-and-prose-unionized][Politics and Prose unionized]] (a bookstore)
+#+name: ds-01-04
+- */January 4th/*
+  - 1901 :: [[file:timeline.org::#clr-james-birth][CLR James was born]]
+  - 1939 :: [[file:timeline.org::#george-orwell-signed-breton-rivera-manifesto][George Orwell signed the Breton/Rivera manifesto]]
+  - 1961 :: [[file:timeline.org::#protests-began-in-baixa-de-cassanje-angola][Worker protests began in Baixa de Cassanje, Angola]], and [[file:timeline.org::#danish-barbers-assistant-strike-ended][Danish barbers' assistants ended their strike]], after 33 years; the longest in recorded history.
+  - 1965 :: [[file:timeline.org::#free-speech-movement-held-first-rally][Free Speech Movement held first rally]]
+  - 1983 :: [[file:timeline.org::#colorado-farmers-protested-foreclosures][Colorado farmers protested foreclosures]]
+  - 1997 :: [[file:timeline.org::#nigerians-rallied-against-shell-oil][Nigerians rallied against Shell Oil]]
+#+name: ds-01-05
+- */January 5th/*
+  - 1855 :: [[file:timeline.org::#dundalli-assassinated][Dundalli assassinated]]
+  - 1898 :: [[file:timeline.org::#federico-garcia-lorca-birth][Federico Garcia Lorca was born]]
+  - 1937 :: [[file:timeline.org::#abraham-lincoln-brigade-formed][Abraham Lincoln Brigade formed]]
+  - 1957 :: [[file:timeline.org::#eisenhower-doctrine-declared][Eisenhower Doctrine declared]]
+#+name: ds-01-06
+- */January 6th/*
+  - 1867 :: [[file:timeline.org::#revolutionary-committee-of-puerto-rico-founded][Revolutionary Committee of Puerto Rico founded]]
+  - 1932 :: [[file:timeline.org::#unemployed-in-hamburg-germany-clash-with-police][Unemployed in Hamburg, Germany, clash with police]]
+  - 1966 :: [[file:timeline.org::#sncc-adopted-position-against-war-in-vietnam][SNCC adopted position against war in Vietnam]]
+  - 1970 :: [[file:timeline.org::#west-virginia-miners-striked][West Virginia miners striked]]
+#+name: ds-01-07
+- */January 7th/*
+  - 1884 :: [[file:timeline.org::#arturo-giovannitti-birth][Arturo Giovannitti was born]]
+  - 1919 :: [[file:timeline.org::#tragic-week-began][Tragic Week began]]
+  - 2011 :: [[file:timeline.org::#banks-ransacked-in-algeria-to-protest-high-food-prices][Banks ransacked in Algeria to protest high food prices]]
+#+name: ds-01-08
+- */January 8th/*
+  - 1811 :: [[file:timeline.org::#german-coast-uprisings-began][German Coast Uprisings began]]
+  - 1920 :: [[file:timeline.org::#steelworkers-in-united-states-striked][Steelworkers in United States striked]]
+#+name: ds-01-09
+- */January 9th/*
+  - 1912 :: [[file:timeline.org::#african-national-congress-founded][African National Congress founded]]
+  - 1922 :: [[file:timeline.org::#chicago-construction-workers-striked][Chicago construction workers striked]]
+#+name: ds-01-10
+- */January 10th/*
+  - 1923 :: [[file:timeline.org::#soldiers-in-canada-fired-on-striking-coal-miners][Soldiers in Canada fired on striking coal miners]]
+  - 1941 :: [[file:timeline.org::#farmers-in-tayug-phillipines-destroyed-land-records][Farmers in Tayug, Phillipines destroyed land records]]
+#+name: ds-01-11
+- */January 11th/*
+  - 1998 :: [[file:timeline.org::#narmada-dam-site-occupied][Narmada Dam site occupied]]
+  - 2002 :: [[file::#first-prisoners-arrived-at-guantanamo-bay][First prisoners arrived at Guantanomo Bay]]
+#+name: ds-01-11
+#+name: ds-01-12
+#+name: ds-01-13
+#+name: ds-01-14
+#+name: ds-01-15
+#+name: ds-01-16
+#+name: ds-01-17
+#+name: ds-01-18
+#+name: ds-01-19
+#+name: ds-01-20
+
+*** December
+#+name: ds-12-26
+- */December 26th/*
+  - 1828 :: [[file:timeline.org::#dover-mill-womens-strike-began][Dover Mill Women's Strike began]]
+  - 1862 :: [[file:timeline.org::#dakota-38][Dakota 38 were executed]]
+  - 1893 :: [[file:timeline.org::#mao-zedong-birth][Mao Zedong was born]].
+    
+#+name: ds-12-27
+- */December 27th/*
+  - 1821 :: [[file:timeline.org::#joseph-dejacque-birth][Joseph Dejacque was born]]
+  - 1923 :: [[file:timeline.org::#toranomon-incident][Toranomon incident occurred]]
+  - 1973 :: [[file:timeline.org::#skylab-went-silent][Skylab went silent]]

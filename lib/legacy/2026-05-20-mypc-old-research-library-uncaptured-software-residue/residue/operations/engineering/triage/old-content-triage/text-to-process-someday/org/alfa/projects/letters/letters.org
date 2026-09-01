@@ -1,0 +1,175 @@
+# Created 2019-06-15 Sat 23:22
+#+OPTIONS: :mkdirp t
+#+TITLE: Letters
+#+AUTHOR: emsenn
+#+export_file_name: ./letters
+* Letters
+* To Brandon Nolet
+** Some Stylish Elisp Declarations
+Hey Brandon,
+
+If you would, go ahead and open this message as raw text, and copy all
+but the headers into a new /Emacs buffer/ set to /Org-mode./[fn:1]
+
+I know you like a bit of style to your stuff, so thought I'd pass on
+some of the things I've done to prettify my own /Emacs/, or that I know
+to do but choose not to.
+
+The reason I had you open this in an /Org-mode buffer/ is so you can run
+the things directly from here, without having to copy paste. For most
+of these, just place your cursor anywhere in the source block and
+press =C-c C-c=. If you want to edit one of the source blocks, press
+=C-c '=. You can close that window with the same hotkey. In it, you can
+evaluate any bit of /Elisp/ with =C-x C-e=. And to look up any given...
+anything, near about, do =C-h d=, and then type the thing you'd like to
+search for. If that doesn't work, do =C-h ?= and look for another hotkey
+to search - maybe you want =v= for "variable"?
+
+I'm just looking through my =~/.emacs/init.el= and let's look at what
+I've got:
+
+#+begin_src elisp
+  (setq inhibit-startup-messaget)
+  (setq initial-scratch-message nil)
+  (setq initial-major-mode 'org-mode)
+#+end_src
+
+In order, these turn off the "this is /Emacs/, here are links to
+manuals," message you get when you start - the default buffer that
+isn't the =*scratch*= buffer. The second line turns off any content in
+the scratch buffer - you could set this to a string if you'd
+like.[fn:2] This third line sets your scratch buffer - now the window
+that is open and empty and showing when you start /Emacs/ - to
+/Org-mode/. Handy for getting started writing, without even needing to
+go to where it needs to end up, because you can use /refile/ to move
+your entry to where it should go.[fn:3]
+
+Next in my configuration I have
+
+#+begin_src elisp
+  (setq ring-bell function 'ignore)
+  (setq show-paren-delay 0)
+  (show-paren-mode 1)
+  (setq echo-keystrokes 0.1)
+  (setq mouse-wheel-scroll-amount '(1 ((shift) .1)))
+#+end_src
+
+This turns off dinging, the delay before showing a matching bracket,
+always show matching brackets, show what command keys you've entered
+in the minibuffer quickly, and have the mousewheel move the buffer by
+one line at a time.
+
+#+begin_src elisp
+  (setq line-number-mode t)
+  (setq column-number-mode t)
+  (setq sentence-end-double-space nil)
+#+end_src
+
+These make it always show the line and column number in the...
+whatever is above the minibuffer, I think it's called the status bar,
+and mean you don't need to double-space after sentences for it to be a
+proper sentence, from a keyboard navigation or auto-fill perspective.
+
+I don't know if you're using /use-package/, the /Emacs package/ that's a
+package configuration coordinator of sort, but you should be.[fn:4]
+
+Then, you can do this to set up a pretty cool theme for Org-mode:
+
+#+begin_src elisp
+  (use-package poet-theme
+    :ensure t
+    :config
+    (load-theme 'poet-monochrome t))
+#+end_src
+
+(It has a yellow-y colorful mode, too, and a dark mode, but I'm a
+grayscale person myself.)
+
+If you're using /use-package/, you can use it for /Org-mode/ too. Here's a
+cleaned up version of the relevant declaration; I'm taking out all the
+hotkeys and macros and everything not related to aesthetics.
+
+#+begin_src elisp
+      (use-package org
+        :mode (("\\.org$" . org-mode))
+        :ensure org-plus-contrib
+        :config
+        (progn
+  	(setq org-hide-emphasis-markers t)
+  	(setq org-ellipsis "→")
+  	(setq org-image-actual-width nil)
+  	(add-hook 'text-mode-hook
+  		  (lambda ()
+  		    ('variable-pitch-mode)))
+  (setq header-line-format " ")
+#+end_src
+
+
+
+The last four lines are what matter: the first,
+=org-hide-emphasis-markers=, hides the =*= in =those are *big*
+chickens=, for example.
+
+The second changes the =...= that /Org-mode/ normally uses to show a
+subtree has contents for an arrow. The latter makes images render
+different, I don't know if it works as it's written there.
+
+The last - well go ahead and evaluate this:
+
+#+begin_src elisp
+  (variable-pitch-mode)
+#+end_src
+
+It should turn on variable-pitched font for most of the body, but keep
+it in place for the code blocks. The line above sets it to be the
+default in /Org-mode/.
+
+That's all I got for now, hopefully this is a bit useful. There's a
+lot more that can be tweaked, but tbh i've only just started really
+configuring my /Emacs/.
+
+[fn:1] You can make a new buffer of an arbitrary name with =M-x b foo=,
+with =foo= being the buffer name. =M-x b= is (or should) a hotkey for the
+=switch-to-buffer= command. You can change a buffer to use /Org-mode/ as
+its /major mode/ with the =org-mode= command.
+
+[fn:2] Like this:
+#+begin_src elisp
+  (setq initial-scratch-message "* Subtree\nI think newlines would work.")
+#+end_src
+
+[fn:3] Note, this requires having set the =org-refile-targets= variable,
+see its documentation at =C-h v org-refile-targets=.
+
+[fn:4] Run the command =package-install use-package= and then add this
+to the start of your /Emacs configuration/.
+
+#+begin_src elisp
+  (package-initialize)
+  (require 'package)
+  (add-to-list 'package-archives
+  	     '("melpa" . "http://melpa.org/packages/") t)
+  (add-to-list 'package-archives '("org" . "https://orgmode.org/elpa/") t)
+  (eval-when-compile
+    (add-to-list 'load-path "~/.emacs.d/elpa")
+    (require 'use-package))
+#+end_src
+
+You can add this after to set up auto-updating:
+
+#+begin_src elisp
+  (use-package auto-package-update
+  	     :ensure t
+  	     :config
+  	     (setq auto-package-update-delete-old-versions t)
+  	     (setq auto-package-update-hide-results t)
+  	     (auto-package-update-maybe))
+#+end_src
+
+*** Index
+- Emacs :: A software, a programming interpretter focused around being a text-editor. See [[https://www.gnu.org/software/emacs/][https://www.gnu.org/software/emacs/]] or #Emacs.
+- Emacs buffer :: An /Emacs/ object for holding a quantity of text. See [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Buffers.html][https://www.gnu.org/software/emacs/manual/html_node/emacs/Buffers.html]]
+- Emacs package :: A collection of /Emacs Lisp/ declarations that add additional features. See [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Packages.html][https://www.gnu.org/software/emacs/manual/html_node/emacs/Packages.html]]
+- Org-mode  :: A way of formatting plain data inside text documents. See [[https://orgmode.org/][https://orgmode.org/]]  or #OrgMode.
+- Org-mode refile :: A way to move text from one part a document to another, or into another document entirely. See [[https://orgmode.org/manual/Refile-and-Copy.html#Refile-and-Copy][https://orgmode.org/manual/Refile-and-Copy.html#Refile-and-Copy]]
+- use-package :: An /Emacs/ macro for isolating package configurations. See [[https://github.com/jwiegley/use-package][https://github.com/jwiegley/use-package]]

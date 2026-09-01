@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       be1389b0-1ee1-400a-8dee-78e2979cc9d8
+:END:
+#+title: foreign person
+#+date: [2025-08-31 Sun 10:34]
+

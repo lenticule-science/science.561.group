@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       da02a777-3f5d-4cc3-aaa3-ee6612772239
+:public:   true
+:END:
+#+title: television show
+#+date [2025-08-07 Thu 21:42]
+#+index: television!television show

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       eac7bd24-9a1b-4de6-9c65-8698b128b7c9
+:resource-description: (([[id:edaef069-c68d-46aa-a970-d3cb7fe3165c][resource type]] . [[id:03d6af62-60bb-4d76-9aa9-fe2e286310fb][socializing]])) 
+:END:
+#+title: hanging out
+#+date: [2025-09-01 Mon 19:21]

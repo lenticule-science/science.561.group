@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "science-note-disposition-set/v1",
+  "source": "information-science-services-section/services/knowledge-services-section/content/text/documents/articles/notes",
+  "sourceCount": 15,
+  "remainingAtSource": 0,
+  "principle": "one most-specific canonical scientific owner; cross-domain relevance by relation",
+  "dispositions": {
+    "epistemology-services-section": 4,
+    "knowledge-organization-services-section": 4,
+    "knowledge-systems-services-section": 5,
+    "anarchism-services-section": 1,
+    "media-science-services-section": 1
+  },
+  "vocabulary": {
+    "L-Space": "Lenticule Space",
+    "SPACE": "Semantic Position Arranging Conceptual Elements",
+    "TUFTE": "Tiling User Frontend Topology Engine"
+  }
+}

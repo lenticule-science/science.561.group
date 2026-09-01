@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       78293e10-93d8-4bfa-9266-fc702c17ab7e
+:END:
+#+title: computer
+#+date: [2025-08-29 Fri 22:43]
+

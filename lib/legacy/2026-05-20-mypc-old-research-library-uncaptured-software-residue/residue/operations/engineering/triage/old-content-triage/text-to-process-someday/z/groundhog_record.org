@@ -1,0 +1,28 @@
+#+title: Groundhog record
+#+begin_head
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-19 Sat 13:10]
+#+roam_alias: "Groundhog records"
+#+roam_tags: term
+#+end_head
+
+#+name: definition
+A */Groundhog record/* is a [[file:record.org][record]] whose [[file:schema.org][schema]] is management by the [[file:webgaz.org][WebGAZ]]. They're implemented using the [[file:org_mode_format.org][Org-mode format]] and interpretted using [[file:groundhog_emacs.org][Groundhog Emacs]], my [[file:emacs_configuration.org][Emacs configuration]].
+
+#+toc: headlines 2
+
+* Introduction
+
+* Groundhog record
+#+include: "groundhog_record.org::definition"
+
+
+* Supplements
+
+  The following sections contain contextualizing information that might help you learn more about the content. 
+** Record history
+   :LOGBOOK:
+   - Note taken on [2020-12-24 Thu 11:09] \\
+     Came into a nearly-empty record, going to flesh it out as a place to talk about this developing idea for a set of [[file:schema.org][schema]].
+   :END:

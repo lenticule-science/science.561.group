@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       159d42d5-4f1a-4205-8d01-c42bd443974a
+:END:
+#+title: first-person perspective
+#+date: [2025-10-03 Fri 23:18]
+

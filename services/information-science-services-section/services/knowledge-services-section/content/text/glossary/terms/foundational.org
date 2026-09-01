@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       af5c7da7-0f5b-4a80-bb5a-882b28d9aa6e
+:END:
+#+title: foundational
+#+date: [2025-08-28 Thu 14:07]
+

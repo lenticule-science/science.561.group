@@ -1,0 +1,254 @@
+#+title: Source File
+#+header-args: :tangle ~/.emacs/init.el
+#+MACRO: mr-chan =$BOSS1=
+* Log
+** 2019
+*** 2019-06 June
+**** 2019-06-17 Monday
+I've been on a long journey to reform how I use a computer, and recently it's been packed full of epiphanies and realizations. I had the notion a while back of maintaining basically a /Starfleet/-esque log of my activities, writing, and so on. Sections of the log would be set up in such a way as to let me export them and make use of them in other contexts. I didn't really know how to do that. I still don't, but as I said, I've recently had a bunch of realizations about things like /functional programming/.
+
+So I'm presenting to myself a new challenge: I'm going to, with the exception of communicating with other folk, try and limit myself to operating within this one file. This is my first entry in such a file. Some - like this, I think - might get cut and shared online - if you're reading this and you're not me, that's probably the context.
+
+Although I could write about writing a log forever, I shall try to move on to writing a log, by picking an easy project to talk about.
+***** Emacs Configuration                                         :emacs:
+:PROPERTIES:
+:header-args: :tangle ~/.emacs/init.el :exports both :results value silent
+:END:
+One kind of perpetual project I have going on is the import of various old projects into whatever my new method of organization is. Well, seems like now is as good a time as any to look through my /Emacs configuration/ and see what I want to keep, and what I want to pull. The first two lines are definitely keepers: they set up the /Emacs/ package management.
+
+#+begin_src elisp
+  (package-initialize)
+  (require 'package)
+#+end_src
+
+This next chunk sets up some additional package sources, remote and local, also necessary.
+
+#+begin_src elisp
+  (add-to-list 'package-archives
+               '("melpa" . "http://melpa.org/packages/") t)
+  (add-to-list 'package-archives '("org" . "https://orgmode.org/elpa/") t)
+  (eval-when-compile
+    (add-to-list 'load-path "~/.emacs.d/elpa")
+    (add-to-list 'load-path "~/.emacs.d/git")
+    (require 'use-package))
+#+end_src
+
+This sets up the /auto-package-update/ package, which automatically updates all the required packages (I think?) when I restart Emacs. Also pretty necessary.
+
+#+begin_src elisp
+  (use-package auto-package-update
+               :ensure t
+               :config
+               (setq auto-package-update-delete-old-versions t)
+               (setq auto-package-update-hide-results t)
+               (auto-package-update-maybe))
+#+end_src elisp
+
+This is my backup configuration, and I'm... not sure if it works. I mean, right now if I look in my local directory, there's an autosave of this file. Let's see, I think I know how to diagnose this from within /Emacs/. If I put the point (my cursor) right after the last character in =auto-save-mode=, I can hit =C-h v ENT= and look up the variable... which isn't documented. I guess that doesn't mean it didn't exist, though, but it seems unlikely it would be undocumented. So it probably is the wrong variable name. And also... this no longer seems like it'd be compatible with how I'd like to handle this sort of data-protection. I do want autosaves, in the same (or a predictable subdirectory) as the source file, and I don't necessarily want backups, because I should be using versioning control.
+
+#+begin_src elisp :exports code
+  (setq auto-save-mode nil)
+  (setq backup-directory-alist
+        `(("." . ,(concat user-emacs-directory "backups"))))
+#+end_src elisp
+
+This will need some work.
+
+**** 2019-06-18 Tuesday
+
+***** Waking Up                                           :nativeCulture:
+Today I woke up feeling generally upset at the continuing genocide of /Native Americans/, and tried to braid my hair. I'm not very good at it so ended up pulling it out, but I've put on my bangles and done my /facemark/. Last week {{{mr-chan}}} suggested my haircut - or lack thereof - was perhaps dissuading potential clients, as I looked like a "hippie." He's a /Cantonese/ immigrant who supports the /PRC/, so I chose not to try and debate the point with him, but I'd like to make it more clear without debate that the long hair is an intentional choice, not a consequence of ennui.
+
+***** Call from {{{mr-chan}}}                             :trusteeCorner:
+I received a call from {{{mr-chan}}} a bit ago. He was disappointed with how I handled a recent issue, where a client's actions caused a vendor to leave an under unfulfilled, and sought to explain to me how I could better resolve the issue next time. He emphasized that part of why he was bothering was because he regreted that he had not had a similar influence earlier in his life. While the specifics of the vendor-issue were resolved adequately and in advance of any issue, from my perspective, I really appreciate that he takes the time to talk to me.
+
+***** Planning the Day
+I don't really have any firm plans today, beyond extant obligations to {{{mr-chan}}} which are recorded elsewhere. I'd like to continue progressing on combing-over my /Emacs/ configuration, and also think about - now that I understand it more fully - how I can apply /literate programming/ to my fantasy setting, /Teraum/.
+
+***** Bill from Spectrum                                        :private:
+I received an /email/ from /Spectrum/ today, at my =emsenn@emsenn.net= address, saying that our service was enabled and to log in to pay our bill, which is $350 and some change. I called and spoke with Zach, who said there was no record of my previous conversations with them about this, or a record of a technician looking at it.
+
+****** TODO Collect records on interactions with Spectrum  :recordCraft:
+
+***** Saw a New(-to-Me) Markdown Editor
+Darius Kazemi's post about it through the Fediverse made me aware of a /Markdown/ editor/previewer called /Typora/. It had one cool feature that I'd like to integrate into my /Emacs configuration/:
+
+****** TODO Prettify Checkboxes
+I'd like for list checkboxes (=- [ ] An undone list item=, =- [X] A done list item=) to be somewhat prettier. They're fixed-width right now and so really stand out in a document that otherwise might be entirely serif in the body.
+
+***** DRAFT Found a Cool /Elisp/ Declaration
+*/Note to readers:/* A lot of what I'm working on here has to do with how my client looks to me, not how any rendered documents look. I may say something is working, when from your perspective, it isn't.
+
+While looking up how I prettify my /Org-mode checkboxes/, I found that /Emacs/, since version 24.4, comes with a bultin =prettify-symbols-mode=. It swaps out text with a /Unicode/ symbol. This led me to a post [[http://www.modernemacs.com/post/prettify-mode/]["Mathematical Notation in Emacs",]] which is convenient for me: I want to learn to read maths.
+
+I'm not going to rewrite its explanation of its code blocks, but reproduce them here for my own use. The first enables the =pretty-mode= package and turns off some parts of it, to make room for features that will be enabled by later code blocks.
+
+#+begin_src elisp
+(require 'pretty-mode)
+(global-pretty-mode t)
+
+(pretty-deactivate-groups
+ '(:equality :ordering :ordering-double :ordering-triple
+             :arrows :arrows-twoheaded :punctuation
+             :logic :sets))
+
+(pretty-activate-groups
+ '(:sub-and-superscripts :greek :arithmetic-nary))
+#+end_src
+
+Let me see if I can't figure out how to write that as a =use-package= declaration, and since I'm not setting up the litagure stuff right now, I'll leave all the stuff on.
+
+#+name: pretty-mode-use-package-declaration-alpha
+#+begin_src elisp :noweb yes
+  (use-package pretty-mode
+    :ensure pretty-mode
+    :config
+    (progn
+      (global-pretty-mode t)
+      (global-prettify-symbols-mode 1)
+      (pretty-activate-groups
+       '(:sub-and-superscripts :greek :arithmetic-nary))))
+#+end_src
+
+That seems to work! (And now gets appended to my /Emacs configuration/.
+
+The article also has another quote introducing some /Emacs commands/ I didn't know about:
+
+#+begin_quote
+The command =insert-char=, =C-x 8 RET= prompts for Unicode characters by name and inserts at point. There is also =describe-char=, =M-m h d c= which gives information on the character at point. Use in conjunction with eg. [[https://en.wikipedia.org/wiki/Mathematical_operators_and_symbols_in_Unicode]["Math Unicode Symbols List"]] to explore your options.
+#+end_quote
+
+Nifty! Looking elsewhere, it looks like the only thing that is prettified in lisp dialects is the lambda symbol, and it suggests things can be added like this:
+
+#+begin_src elisp
+(add-hook 'emacs-lisp-mode-hook
+            (lambda ()
+              (push '(">=" . ?≥) prettify-symbols-alist)))
+#+end_src
+
+Which, testing out, works just fine. I wouldn't mind mentions if the whole greek alphabet got replaced, and in Org-mode too - though there I'd do it with a prefix of =\= since that's the LaTeX for it. I encounter a problem here, though: I don't actually understand the syntax above, so I don't know how I'd change it to add multiple things to the =prettify-symbols-alist=.
+
+I guess what I need to know is what's a \lambda expression in /Emacs/, and what's the =push= function takes and returns.
+
+I was reading about \lambda calculus on /Wikipedia/ recently, so the /Elisp Reference Manual's/ brief explanation of what \lambda expressions might make sense. It says they're "anonymous functions," but are more commonly associated with symbols to make a named function. A \lambda expression - contained within =()=, always starts with the =lambda= symbol, then takes a list of argument variables, called the "\lambda list." There can be a documentation string, an interactive declaration, and then the body - very similar to a normal function declaration, except with =lambda= instead of =defun function-name=.
+
+=push= I looked up with =C-h f push ENT=, it adds its first argument to the list stored at its second argument, so =(push "apple" '("orange" "banana" "berry"))=... gets me an error about "orange" not being a function. ='("orange" "banana" "berry")= is a valid list declaration, so why does =push= fail?...
+
+#+begin_src elisp
+  (setq fruits '("orange" "banana" "berry"))
+  (push '"apple" fruits)
+#+end_src
+
+Okay - I'm messing - oh! I was messing up declaring the list. Let's combine two things, maybe?
+
+#+begin_src elisp
+  (push '"apple" (lambda () '("orange" "banana" "berry")))
+#+end_src
+
+That gets me this error message, that I have a real hard time reading: =let*: Symbol’s function definition is void: \(setf\ function\)=.
+
+I think that's still telling me "this second argument isn't a function," which seems to contra- oh! One more try:
+
+#+begin_src elisp
+  (push '"apple" '(lambda () '("orange" "banana" "berry")))
+#+end_src
+
+Nope - I added a ='= before the \lambda expression, but get a similar error. Is =lambda= perhaps an /Elisp macro/ for =(setf function)=, or similar?
+
+Either way, I don't need to figure out the more compact syntax right now: I'm still looking to add all the greek letters at once to the Org- and Elisp- modes of =prettify-symbols=. Lets play with some fake code. And actually, I'm going to try this =let= thing I've heard of.
+
+#+begin_src elisp
+  (let ((alpha '("oh..." . "it rendered as a greek character"))))
+#+end_src
+
+So I guess no further configuration needed for that. I guess the example of =>== to =≥= is still relevant, though, so I can chug on with this.
+
+#+begin_src elisp
+  (let ((alpha '(1 2 3))
+        (beta '(4 5 6)))
+    (dolist (gamma beta)
+      (push gamma alpha))
+    alpha)
+#+end_src
+
+This gives me a list of =(6 5 4 1 2 3)=, which shows that push puts things at the start of a list. That's not relevant to my goals, but does give me a hypothetical syntax for my need:
+
+#+name: math-litagures-elisp-prettify-hook
+#+begin_src elisp :noweb yes
+  (add-hook 'emacs-lisp-mode-hook
+            (lambda ()
+              (let ((replacements
+                     '((">=" . ?≥))))
+                (dolist (alpha replacements)
+                  (push alpha prettify-symbols-alist)))))
+#+end_src
+
+And now if I put =>== in an /Elisp/ source block, it should become the litagure. (That's the name for two characters combined like this.)
+
+#+begin_src elisp
+  >=
+#+end_src
+
+(This is a rendering thing, so any readers of an export will likely not see anything functional.)
+
+Okay, so I think now I have two source blocks I want to add to my /Emacs configuration/:
+
+#+begin_src elisp :noweb yes
+<<pretty-mode-use-package-declaration-alpha>>
+<<math-litagures-elisp-prettify-hook>>
+#+end_src
+
+Since the the latter relies on the =pretty-mode= package, I should refactor them together, and go ahead and in more symbols:
+
+#+name: pretty-mode-use-package-declaration-beta
+#+begin_src elisp :tangle ./src/pretty-mode-use-package-declaration.el
+  (use-package pretty-mode
+    :ensure pretty-mode
+    (progn
+      (global-pretty-mode t)
+      (global-prettify-symbols-mode 1)
+      (pretty-activate-groups
+       '(:greek :logic-nary :sets-operations-nary :sub-and-super-scripts))
+      (add-hook 'emacs-lisp-mode-hook
+                (lambda ()
+                  (let ((replacements
+                         '((">=" . ?))))
+                    (dolist (alpha replacements)
+                      (push alpha prettify-symbols-alist)))))))
+#+end_src
+
+At this point I need to take a break and do some other stuff, but I feel like this was a good exercise in learning to work with more /Elisp/ stuff.
+
+Plus, now I can write code that looks like this:
+
+#+begin_src elisp
+  (let ((alpha 1)
+        (beta 3))
+    (+ alpha beta))
+#+end_src
+
+Which just looks cool.
+
+***** Kernel Compilation and Rainfall
+I'm recompiling my kernel on my main computer right now, and with my current services setup, I don't know how to turn on my /SSH server/ while that's happening, so I'm currently just sitting here waiting for it to finish. And, because of some exploit that's why I'm compiling, pages don't load in my browser, even in /Emacs/, so I can't email it to myself, even. (Probably should have a real email client set up, but I don't.)
+
+I'm listening to the rain, and waiting.
+
+* Triage
+** CANCELLED Evaluate-At-Point Tweak
+   Currently if I'm in an Org-mode buffer - or maybe any buffer, I can hit the hotkey =C-x C-e= to evaluate whatever is before it; run it through the /Elisp REPL/. This is handy some of the time, but other times I mention a variable inside a pair of ===, and the interpretter complains that there's no variable ==foo==, even though there is a variable =foo=.
+*** TODO Workaround: Use Inline Src Calls                              :help:
+Inline source blocks, done with =src_elisp()=, are more explicit about what language they are, and caxn be evaluated just fine. This creates a new issue: those inline source blocks aren't rendered in a fixed-width font, if I'm using /Poet Theme/ and have src_elisp[](variable-pitch-mode) turned on, then they aren't fixed-width. Understandable, but it'd be cool if they were!
+
+Here's an answer from [[https://stackoverflow.com/questions/20309842/how-to-syntax-highlight-for-org-mode-inline-source-code-src-lang/28059832#28059832][StackOverflow]] that might work:
+
+#+begin_src elisp
+  (font-lock-add-keywords 'org-mode
+                      '(("\\(src_\\)\\([^[{]+\\)\\(\\[:.*\\]\\){\\([^}]*\\)}"
+                         (1 'org-code)
+                         (2 'org-code)
+                         (3 'org-code)
+                         (4 'org-code))))
+#+end_src
+
+Doesn't seem too, and I'm unable to figure out why, right now.

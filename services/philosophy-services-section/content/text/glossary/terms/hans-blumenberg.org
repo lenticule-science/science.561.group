@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       28a48cc9-81b2-4237-aaa2-082547178e3f
+:NODE-RELATIONS: (([[id:d13beb9d-3360-4889-be32-36ba4254c07c][philosopher]] . [[id:f427ec74-c16a-4950-887e-0b40dc5cee0d][philosophy]]) ([[id:668ab0cc-f949-46f7-81e7-2da4a3eb0a9f][historian]] . [[id:ef1c8528-d850-4bf9-9f06-539b09962c54][intellectualism]]) ([[id:5950d59a-8d30-47e6-939c-171327e23b44][creator]] . [[id:4836d19f-114c-4bf6-84f8-df768eba4bd9][metaphorology]]) ([[id:839fb73c-158c-42fa-8d66-aad074ab7fe5][birth date]] . [[id:c5885899-dfe4-4a6d-be1b-acd24e586509][1920-07-13]]) ([[id:58fa095f-5878-4503-bdb2-e22a1200fbdf][death date]] . [[id:e205066e-7326-4e32-a3f6-b0d929b84412][1996-03-28]]))
+:END:
+#+title: Hans Blumenberg
+#+date: [2025-09-13 Sat 09:40]

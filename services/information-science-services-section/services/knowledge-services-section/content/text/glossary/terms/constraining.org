@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       af5c7d3b-eca8-4240-899b-030616289dcc
+:END:
+#+title: constraining
+#+date: [2025-09-21 Sun 14:51]
+

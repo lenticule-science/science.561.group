@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       6b5c2dcd-d286-4eaa-9905-6032d94538b5
+:END:
+#+title: recipient
+#+date: [2025-09-05 Fri 16:32]

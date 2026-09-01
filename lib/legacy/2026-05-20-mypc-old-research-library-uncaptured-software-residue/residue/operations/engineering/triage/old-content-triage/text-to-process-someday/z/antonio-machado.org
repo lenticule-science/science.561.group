@@ -1,0 +1,56 @@
+#+title: Antonio Machado
+#+begin_head
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2021-01-09 Sat 11:38]
+#+roam_tags: term
+#+end_head
+
+#+name: antonio-machado-definition
+*/Antonio Machado/* was a [[file:poet.org][poet]] in [[file:spain.org][Spain]] during the 20th century.
+
+* Quotes
+
+  #+antonio-machado-no-hay-camino-quote
+  #+begin_quote
+  Caminante no hay camino, se hace camino al andar.
+  #+end_quote
+  
+* Poems
+** English translations
+*** Last Night As I Lay Sleeping
+
+    #+begin_verse
+    Last night as I lay sleeping,
+    I dreamed”oh blessed art!”
+    of fountain water leaping
+    and flowing in my heart.
+    “Where is the hidden channel,”
+    I cried, “that was equipped
+    to bring to me this spring of life
+    from which I never sipped?”
+    
+    Last night as I lay sleeping,
+    I dreamed”oh blessed art!”
+    a hive of bees was reaping
+    its nectar in my heart.
+    The worker bees so golden
+    were filling up the cracks
+    with sorrows they converted
+    into honey and white wax.
+    
+    Last night as I lay sleeping,
+    I dreamed”oh blessed art!”
+    a burning sun was steeping
+    the blood within my heart.
+    
+    I know that it was burning.
+    I felt its heat inside.
+    I know that it was sunlight.
+    It shone, and then I cried.
+
+    Last night as I lay sleeping,
+    I dreamed”oh blessed art!”
+    that God himself was keeping
+    watch inside my heart.
+    #+end_verse

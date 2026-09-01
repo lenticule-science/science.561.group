@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       9728cbe6-0066-4b32-9e09-1937fa8bc1ea
+:END:
+#+title: saturation
+#+date: [2025-08-29 Fri 19:25]
+

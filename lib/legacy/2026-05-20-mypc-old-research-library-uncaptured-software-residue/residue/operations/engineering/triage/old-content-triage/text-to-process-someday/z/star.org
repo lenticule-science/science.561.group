@@ -1,0 +1,20 @@
+#+title: star
+#+begin_head
+#+ghe_schema: record-0.1.3
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-24 Thu 11:46]
+#+end_head
+
+#+name: definition
+A */star/* is a self-sustaining fusion reaction floating in [[file:space.org][space]].
+
+#toc: headlines 2
+* Intrododuction
+* star
+* Supplements
+** Record history
+   :LOGBOOK:
+   - Note taken on [2020-12-24 Thu 11:46] \\
+     Created
+   :END:

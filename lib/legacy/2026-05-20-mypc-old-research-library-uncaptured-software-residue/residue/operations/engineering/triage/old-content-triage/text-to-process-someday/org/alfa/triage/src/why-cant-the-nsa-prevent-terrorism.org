@@ -1,0 +1,45 @@
+*** Why Can't the NSA Prevent Terrorism?            :national_security:@note:
+    :PROPERTIES:
+    :EXPORT_FILE_NAME: why-cant-the-nsa-prevent-terrorism
+    :EXPORT_DATE: 2015-11-28
+    :END:
+A friend asked me, "Why doesn't the NSA, for all their data harvesting, actually seem to
+prevent terror attacks?"
+
+Basically, the latency of the justice system makes that impossible, but they will be able to predict the future.
+
+At the moment, many of the NSA's projects and systems are very new: it's only recently
+they've been able to bring together the technologies that have developed in the last
+decade, such as neural net, and those technologies are not yet trained to understand the
+NSA's raw data.
+
+Now that we're finally able to take the theory of algorithmic data-to-intelligence flow
+out of the classroom, we have to figure out how to apply it to the real world.
+
+Think of it like physics. It's pretty easy to figure out gravity, because there's a lot of
+material to observe. But if there were only 8 billion particles to be observed, what is
+self-evident as gravity in a universe of aummillions of particles, would just look like
+random static (unless observed for an unreasonable amount of time, for the analogy to
+hold). Because the NSA is only dealing with the data of around 600 million individuals,
+and reasonable useful amount of data on only say 250 million, it is very hard to infer any
+sort of meaningful knowledge from that data.
+
+With an increased period and quantity of information, however, combined with development
+of proper maths for dealing with the data, the NSA will eventually be able to make sense
+of all the information it's capturing today.
+
+Also, using the sort of data which can be scrapped by the NSA and manually interpreted, it
+is still very difficult to ascertain the specific information about any given action, as
+obtaining that data requires the more explicit involvement of our justice system. What
+reveals itself more are general trends in social groups and individual dynamics. It
+becomes easy to see that a neighborhood's rate of crime is going to increase, or that a
+certain criminal operation is going to become violent, sure, but knowing exactly how will
+be a human-operated procedure for a long time to come.
+
+This gives the NSA a potentially unique outlook on our nation, as they will be able to,
+essentially, predict the future. Not the specifics of it, but with increasing accuracy,
+the forces which act our our social layout the way gravity works, unseen, on our universe
+of 8 billion particles.
+
+One possible implication of this is a factor in the plot of Isaac Asimov's /Foundation/
+series, which I'll close by recommending.

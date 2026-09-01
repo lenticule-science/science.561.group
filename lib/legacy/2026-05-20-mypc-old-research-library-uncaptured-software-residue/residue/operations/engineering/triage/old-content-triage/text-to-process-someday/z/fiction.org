@@ -1,0 +1,12 @@
+#+title: fiction
+#+begin_head
+#+ghe_schema: reference-0.1.1
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-22 Tue 16:51]
+#+roam_tags: term
+#+end_head
+#+name: fiction-definition-text
+#+begin_quote
+*/Fiction/* is a way of describing a [[file:narrative.org][narrative]] that has non-[[file:truth.org][true]] elements.
+#+end_quote

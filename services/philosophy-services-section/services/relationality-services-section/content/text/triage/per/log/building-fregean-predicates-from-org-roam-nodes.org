@@ -1,0 +1,131 @@
+:PROPERTIES:
+:ID:       39a3beb3-898b-4494-b1d2-144c7a38c3dd
+:node-description: (([[id:edaef069-c68d-46aa-a970-d3cb7fe3165c][resource type]] . [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]) ([[id:a8bc7e3a-cdf7-4cfa-8e4d-a1a5f7eb2931][author]] . [[id:40cbaad9-af3c-4573-b356-ae116687e483][emsenn]]) ([[id:ab477596-70c8-467c-8d61-83756e6bb443][publication]] . [[id:cc253409-9a82-4c5d-a4cd-8013f4e350c6][emsenn.net]]) ([[id:557d79c0-1e0f-45fb-b248-468f23654cc1][creation date]] . [[id:0e8816c2-b88a-4b1e-a766-bb54acfb49cf][2025-10-06]]))
+:END:
+#+title: Building Fregean predicates from Org-roam nodes
+#+date: [2025-10-06 Mon 11:26]
+
+So I didn't do a good job writing much about it in [[id:3ffa600c-f831-428f-bd11-a4e6583ff5ad][my archive]] as I was reading about it, but I recently did a lot of reading into the [[id:23cba804-33b1-43e4-abf5-7f403a122abd][Semantic Web]], which led me to reading about [[id:9b364840-65a9-4443-929b-c717ce29d0ba][resource description format]] and finally onto things like [[id:4afb18b4-a9be-4df6-88bc-ec387c4c4405][Fregean first-order predicates]].
+
+This all coalesced around something I'd been slowly doing in my nodes anyway, which was writing a property into each [[id:e5474b02-2852-4c8a-91cd-4a683e0db672][Org-roam node]], which has changed name and shape a few times, but I'm currently calling it the ~node-description~ property.
+
+One way I'm thinking of this property is as a node's [[id:43bba717-cfa8-4f77-9079-76c00fd9f586][secondary intension]] toward [[id:7031b7c2-7bfd-410e-8ed7-fbfc81dc3afc][relational dynamics]], and given that, the structure that seemed best was Fregian ~subject-predicate-object~ triplets, where each part of the triplet is another node in the database.
+
+Conveniently, this lines up with where a lot of contemporary [[id:b4fd1192-985b-44de-abb5-233afdecd3e1][Web]] and [[id:6fc8913c-1dec-47ce-8248-908f2f19fb88][large language model technologies]] are moving.
+
+Here's a demonstration of what a node's property drawer looks like, in [[id:edc48bf0-336b-4b63-8505-a3730b328c9d][GnoponEmacs]]:
+
+#+begin_src org
+  :PROPERTIES:
+  :ID:       39a3beb3-898b-4494-b1d2-144c7a38c3dd
+  :node-description: (([[id:edaef069-c68d-46aa-a970-d3cb7fe3165c][resource type]] . [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]) ([[id:a8bc7e3a-cdf7-4cfa-8e4d-a1a5f7eb2931][author]] . [[id:40cbaad9-af3c-4573-b356-ae116687e483][emsenn]]) ([[id:ab477596-70c8-467c-8d61-83756e6bb443][publication]] . [[id:cc253409-9a82-4c5d-a4cd-8013f4e350c6][emsenn.net]]) ([[id:557d79c0-1e0f-45fb-b248-468f23654cc1][creation date]] . [[id:0e8816c2-b88a-4b1e-a766-bb54acfb49cf][2025-10-06]])
+  :END:
+#+end_src
+
+That probably isn't super readable like that. To the computer, it can parse as a list of two-part items: a predicate and an object, and it knows the subject for each is the ID, forming that ~subject-predicate-object~ triplet.
+
+But in plainer rendering, here's what that says the node description is:
+
+- [[id:edaef069-c68d-46aa-a970-d3cb7fe3165c][resource type]] :: [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]
+- [[id:a8bc7e3a-cdf7-4cfa-8e4d-a1a5f7eb2931][author]] :: [[id:40cbaad9-af3c-4573-b356-ae116687e483][emsenn]]
+- [[id:ab477596-70c8-467c-8d61-83756e6bb443][publication]] :: [[id:cc253409-9a82-4c5d-a4cd-8013f4e350c6][emsenn.net]]
+- [[id:557d79c0-1e0f-45fb-b248-468f23654cc1][creation date]] :: [[id:0e8816c2-b88a-4b1e-a766-bb54acfb49cf][2025-10-06]]
+
+As you can see, every part of every triplet is itself has two parts: an ~ID~ and ~sign~ (~d542...ecb~ and ~babble~).
+
+#+begin_src elisp
+  (defun gpe/build-predicates ()
+    (cl-loop
+     for (id file level pos todo priority scheduled deadline title props)
+     in (org-roam-db-query
+         [:select [id file level pos todo priority scheduled deadline title properties]
+	:from nodes
+	:where (like properties '"%resource-description%")])
+     collect
+     (let* ((raw-rd (alist-get "RESOURCE-DESCRIPTION" props nil nil #'string=))
+	  (alist (when raw-rd (ignore-errors (read raw-rd)))))
+       (when alist
+         (cl-loop
+        for (pred . obj) in alist
+        collect
+        (let* ((parse-link
+	      (lambda (s)
+	(when (string-match "\\[\\[id:\\([^]]+\\)\\]\\[\\([^]]+\\)\\]\\]" s)
+	  (list :id (match-string 1 s)
+	:sign (match-string 2 s)))))
+	     (pred-str (replace-regexp-in-string "] \\[" "][" (format "%s" pred)))
+	     (obj-str  (replace-regexp-in-string "] \\[" "][" (format "%s" obj)))
+	     (pred-link (funcall parse-link pred-str))
+	     (obj-link  (funcall parse-link obj-str)))
+	(list
+           :subject-id id
+           :subject-sign title
+           :predicate-id (plist-get pred-link :id)
+           :predicate-sign (plist-get pred-link :sign)
+           :object-id (plist-get obj-link :id)
+           :object-sign (plist-get obj-link :sign))))))))
+  (gpe/build-predicates)
+#+end_src
+
+
+
+#+begin_src elisp :results raw
+  (defun gpe/collect-predicates-from-node (node)
+    (let* ((raw-rd (alist-get "RESOURCE-DESCRIPTION"
+	    (org-roam-node-properties node) nil nil #'string=))
+	 (alist (when raw-rd (ignore-errors (read raw-rd)))))
+      (when alist
+        (cl-loop
+         for (pred . obj) in alist
+         collect
+         (let* ((parse-link
+	       (lambda (s)
+	 (when (string-match "\\[\\[id:\\([^]]+\\)\\]\\[\\([^]]+\\)\\]\\]" s)
+	   (list :id (match-string 1 s)
+	 :sign (match-string 2 s)))))
+	      (pred-str
+	       (replace-regexp-in-string "] \\[" "]["
+	 (format "%s" pred)))
+	     (obj-str
+	      (replace-regexp-in-string "] \\[" "]["
+	(format "%s" obj)))
+	     (pred-link (funcall parse-link pred-str))
+	     (obj-link  (funcall parse-link obj-str)))
+	(list
+           :subject-id id
+           :subject-sign title
+           :predicate-id (plist-get pred-link :id)
+           :predicate-sign (plist-get pred-link :sign)
+           :object-id (plist-get obj-link :id)
+           :object-sign (plist-get obj-link :sign)))))))
+  (defun gpe/filter-predicates-by (predicates predicate-id object-id)
+    (cl-loop for entry in predicates
+	   when (and (string= (plist-get (car entry) :predicate-id)
+	      predicate-id)
+	     (string= (plist-get (car entry) :object-id)
+	      object-id))
+	   collect (plist-get (car entry) :subject-id)))
+  (let* ((ids
+         (gpe/filter-predicates-by
+	(gpe/build-predicates)
+	"edaef069-c68d-46aa-a970-d3cb7fe3165c"
+	"d542e8d2-3512-47a0-adbb-4a393e161ecb"))
+         (nodes (mapcar #'org-roam-node-from-id ids))
+         (output
+	(mapconcat
+	 (lambda (node)
+	   (format "- [[id:%s][%s]]"
+	   (org-roam-node-id node)
+	   (org-roam-node-title node)))
+	 nodes
+	 "\n")))
+    output)
+#+end_src
+
+#+RESULTS:
+- [[id:ffe37ec89-a35c-4e74-b299-e904fe4e29f9][Keyword soup made from relational dynamics]]
+- [[id:38b3c08e-8846-486f-9d46-69f307c89f12][On the Fediverse as an industrial complex producing subcultural commons]]
+
+#+begin_src elisp
+  (gpe/ritm/render-list-of-matches '(("edaef069-c68d-46aa-a970-d3cb7fe3165c" . "d542e8d2-3512-47a0-adbb-4a393e161ecb")))
+#+end_src

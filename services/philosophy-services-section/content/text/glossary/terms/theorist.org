@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       92dfcfab-ba8f-407d-a2a6-121a76dbe7a3
+:END:
+#+title: theorist
+#+date: [2025-09-01 Mon 09:03]
+

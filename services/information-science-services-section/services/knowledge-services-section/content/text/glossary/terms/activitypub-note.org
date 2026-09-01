@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       ec53be39-d0a5-43f7-b427-32bbe126fa50
+:END:
+#+title: ActivityPub note
+#+date: [2025-08-25 Mon 19:55]
+

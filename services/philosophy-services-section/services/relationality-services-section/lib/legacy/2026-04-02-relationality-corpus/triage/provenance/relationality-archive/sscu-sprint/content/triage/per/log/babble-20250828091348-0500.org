@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       48acb82b-a432-4ca8-8334-09fa40726182
+:form:     [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]
+:END:
+#+title: Babble, [2025-08-28 Thu 09:13]
+#+date: [2025-08-28 Thu 09:13]
+#+author: emsenn
+
+It's [[id:178c6767-3b14-4fcc-998c-71131c03bb01][interesting]] that some people seem most [[id:8bb34fb1-2571-41d6-8c48-336266e77a9f][grounded]] when they're in that [[id:af089ff0-43cd-45d8-a78f-d3ac4fb10a5a][liminal space]] between [[id:2c117d9e-76cf-45c6-89eb-f6156a0ff04e][awake]] and [[id:2c294524-e7ca-49a3-91af-ebb2e87e9f30][asleep]]. I can't [[id:dc21a3aa-a339-4106-8a19-cbaba0a0ded4][describe]] it better right now.

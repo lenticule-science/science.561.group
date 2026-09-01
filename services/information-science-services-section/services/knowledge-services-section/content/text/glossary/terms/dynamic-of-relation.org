@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       96a9e078-7163-4319-87b3-53f0b7f50d63
+:END:
+#+title: dynamic of relation
+#+date: [2025-08-26 Tue 11:34]
+

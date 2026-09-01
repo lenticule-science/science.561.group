@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       dd810340-ed05-4579-8c36-49995e5cc0e3
+:END:
+#+title: computing
+#+date: [2025-08-29 Fri 22:43]

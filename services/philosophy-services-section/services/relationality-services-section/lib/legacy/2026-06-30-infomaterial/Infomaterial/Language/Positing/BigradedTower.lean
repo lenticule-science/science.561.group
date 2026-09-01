@@ -1,0 +1,300 @@
+import Infomaterial.Language.Positing.NucleusAndCommutingNuclei
+import Infomaterial.Language.Positing.Gauge
+import Infomaterial.Language.Positing.Bigraded
+import Infomaterial.Language.Positing.Valuation
+import Infomaterial.Language.Positing.FiberAlgebra
+import Infomaterial.Language.Predicating.HyperdoctrineDual
+
+/-!
+# Positing.BigradedTower — the (truth,knowledge) Klein-four grading of the nuclear quartet
+
+Corpus node (cited): `…/settling/content/bigraded-diamond/bigraded-diamond.md`.
+
+`Positing.Bigraded` and `NucleusAndCommutingNuclei` give the **single diamond** — the
+nuclear quartet of two commuting nuclei on one Heyting algebra, four corners
+`(A, Fix j₁, Fix j₂, A*)` indexed by `Articulating.Corner`. `Positing.Gauge` gives the group
+`K₄ ≅ ℤ/2 × ℤ/2` with its two commuting generating involutions `∼` (negation, the
+internal `ℤ/2` *knowledge* gauge) and `−` (conflation, the *truth* axis).
+`Positing.FiberAlgebra` proves **the cross-order finding**
+`Infomaterial.Positing.FiberAlgebra.cross_order_not_knowledge_nucleus`: a *truth*-closure is **not** a
+*knowledge* nucleus (not even knowledge-inflationary). `PredicationHyperdoctrineDual`
+carries the **two adjoint systems** (`dual_adjoint_system` for the truth order, the
+original knowledge system) — the two gradings' source.
+
+This module **grades the diamond by `K₄ ≅ ℤ/2(knowledge) × ℤ/2(truth)`** — one `ℤ/2`
+per ORDER — and stacks the diamonds into the **bigraded diamond tower**.
+
+What this derives:
+
+1. **The bigrading bijection** `K4 ≃ Articulating.FourCorner` (`= Bool × Bool`), exhibiting the two
+   `ℤ/2` grading axes explicitly: the FIRST `Bool` is the **knowledge** axis
+   (`∼`-presence, i.e. `Positing.Gauge.K4.inGauge`), the SECOND is the **truth** axis
+   (`−`-presence). `id ↔ (false,false)`, `neg ↔ (true,false)`, `conf ↔ (false,true)`,
+   `negConf ↔ (true,true)`. Composed with `FourCornerCell.cornerBij` this is also
+   `K4 ≃ Articulating.Corner ≃ Charge` — the diamond's four corners `{free, j₁, j₂, both}`.
+
+2. **`bigraded_diamond_tower`** — a `K₄`-graded family of nuclear quartets:
+   `tower : K4 → NuclearSquare Charge.heytingK`, each grade a *same-order*
+   `Charge.joinSquare` (the proven nuclear square), every grade realizing the Nuclear
+   Quartet Theorem (`fix_pi_iff`); bundled with the grading group `= K₄`
+   (`Positing.Gauge.K4.isGroup`), the corner exhaustion (`Articulating.Corner.card_eq_four`), and the
+   `K₄ ≃ Articulating.FourCorner` bigrading bijection.
+
+3. **`tower_bigrading_is_two_orders`** — the crucial coherence: the two `ℤ/2`
+   factors of `K₄` ARE the two orders (knowledge, truth) as **grading axes**, and this
+   is WHY the two orders cannot be two co-nuclei in a single square. We carry the proven
+   finding `Infomaterial.Positing.FiberAlgebra.cross_order_not_knowledge_nucleus` as a field of the
+   bundle: a truth-closure is not a knowledge-nucleus, so the second order MUST enter as
+   a grading axis, not a co-nucleus. The proven quartet at each grade uses two
+   SAME-order nuclei (`Charge.joinSquare`); the OTHER order is the grade. This is the
+   formalization's reconciliation of the corpus's "(j_k, j_t)" prose with the proven
+   structure — the pair `(j_k, j_t)` is NOT two nuclei in one square but one same-order
+   square per `K₄`-grade, the grade being the cross-order axis.
+-/
+
+namespace Infomaterial
+namespace Positing.BigradedTower
+
+open Infomaterial.Positing.Gauge
+
+/-! ## 1. The bigrading bijection `K4 ≃ Articulating.FourCorner` — the two `ℤ/2` axes
+
+`K₄ ≅ ℤ/2(knowledge) × ℤ/2(truth)`. We decompose each `K4` element into its two `ℤ/2`
+components and read them as a `Articulating.FourCorner = Bool × Bool`:
+
+* the **knowledge** component (FIRST `Bool`) — is the `∼` (negation) gauge generator
+  present? This is exactly `Positing.Gauge.K4.inGauge` (the internal `ℤ/2` gauge `{id, neg}`);
+* the **truth** component (SECOND `Bool`) — is the `−` (conflation) generator present?
+
+`id ↦ (F,F)`, `neg ↦ (T,F)` [knowledge axis on], `conf ↦ (F,T)` [truth axis on],
+`negConf ↦ (T,T)` [both axes on]. -/
+
+/-- The **knowledge** `ℤ/2` component of a `K4` element: is the negation generator `∼`
+present? Identical to `Positing.Gauge.K4.inGauge`-membership of the nontrivial part — `neg`
+and `negConf` carry the `∼` factor, `id` and `conf` do not. -/
+def knowledgeBit : K4 → Bool
+  | K4.id      => false
+  | K4.neg     => true
+  | K4.conf    => false
+  | K4.negConf => true
+
+/-- The **truth** `ℤ/2` component of a `K4` element: is the conflation generator `−`
+present? `conf` and `negConf` carry the `−` factor, `id` and `neg` do not. -/
+def truthBit : K4 → Bool
+  | K4.id      => false
+  | K4.neg     => false
+  | K4.conf    => true
+  | K4.negConf => true
+
+/-- The forward map `K4 → Articulating.FourCorner`: `(knowledge-axis present?, truth-axis present?)`
+— the explicit `ℤ/2 × ℤ/2` decomposition. -/
+def toFourCorner (g : K4) : Articulating.FourCorner := (knowledgeBit g, truthBit g)
+
+/-- The inverse map `Articulating.FourCorner → K4`: reassemble a `K4` element from its two `ℤ/2`
+components `(knowledge?, truth?)`. -/
+def ofFourCorner : Articulating.FourCorner → K4
+  | (false, false) => K4.id
+  | (true,  false) => K4.neg
+  | (false, true ) => K4.conf
+  | (true,  true ) => K4.negConf
+
+@[simp] theorem ofFourCorner_toFourCorner (g : K4) :
+    ofFourCorner (toFourCorner g) = g := by
+  cases g <;> rfl
+
+@[simp] theorem toFourCorner_ofFourCorner (s : Articulating.FourCorner) :
+    toFourCorner (ofFourCorner s) = s := by
+  obtain ⟨a, b⟩ := s; cases a <;> cases b <;> rfl
+
+/-- **The bigrading bijection** `K4 ≃ Articulating.FourCorner`. The two coordinates are the two
+`ℤ/2` grading axes: knowledge (`∼`) and truth (`−`). -/
+def bigradingBij : Bij K4 Articulating.FourCorner where
+  to := toFourCorner
+  inv := ofFourCorner
+  left := ofFourCorner_toFourCorner
+  right := toFourCorner_ofFourCorner
+
+/-- Composed with `FourCornerCell.cornerBij`, the bigrading bijection also identifies a
+`K₄`-grade with a diamond **corner** (`= Charge`): `K4 ≃ Articulating.Corner`. -/
+def gradeCornerBij : Bij K4 Articulating.Corner where
+  to g := Articulating.FourCorner.toCorner (toFourCorner g)
+  inv c := ofFourCorner (Articulating.FourCorner.ofCorner c)
+  left g := by
+    show ofFourCorner (Articulating.FourCorner.ofCorner (Articulating.FourCorner.toCorner (toFourCorner g))) = g
+    rw [Articulating.FourCorner.ofCorner_toCorner, ofFourCorner_toFourCorner]
+  right c := by
+    show Articulating.FourCorner.toCorner (toFourCorner (ofFourCorner (Articulating.FourCorner.ofCorner c))) = c
+    rw [toFourCorner_ofFourCorner, Articulating.FourCorner.toCorner_ofCorner]
+
+/-- **The knowledge axis is the internal `ℤ/2` gauge.** The first grading coordinate
+`knowledgeBit` agrees with `Positing.Gauge.K4.inGauge`'s nontrivial generator: an element
+carries the `∼` factor iff it is `neg`-like. Concretely `knowledgeBit g` is `true`
+exactly for `neg`/`negConf`, matching the `∼`-component of the `K₄ ≅ ℤ/2 × ℤ/2`
+decomposition. -/
+theorem knowledgeBit_eq_neg_component (g : K4) :
+    knowledgeBit g = (decide (g = K4.neg) || decide (g = K4.negConf)) := by
+  cases g <;> rfl
+
+/-- **The truth axis is the conflation `ℤ/2`.** The second grading coordinate carries
+the `−` factor: `truthBit g` is `true` exactly for `conf`/`negConf`. -/
+theorem truthBit_eq_conf_component (g : K4) :
+    truthBit g = (decide (g = K4.conf) || decide (g = K4.negConf)) := by
+  cases g <;> rfl
+
+/-- **The two axes are independent `ℤ/2`s.** Each generator toggles exactly its own
+coordinate and fixes the other under the group multiplication: multiplying by `neg`
+flips the knowledge bit and fixes the truth bit; multiplying by `conf` flips the truth
+bit and fixes the knowledge bit. This is the `ℤ/2 × ℤ/2` product structure made
+explicit on the grading coordinates. -/
+theorem axes_independent (g : K4) :
+    (knowledgeBit (K4.mul K4.neg g) = !knowledgeBit g
+      ∧ truthBit (K4.mul K4.neg g) = truthBit g)
+    ∧ (knowledgeBit (K4.mul K4.conf g) = knowledgeBit g
+      ∧ truthBit (K4.mul K4.conf g) = !truthBit g) := by
+  cases g <;> exact ⟨⟨rfl, rfl⟩, ⟨rfl, rfl⟩⟩
+
+/-! ## 2. The tower — a `K₄`-graded family of nuclear quartets
+
+Each grade gets a **same-order** nuclear square (`Charge.joinSquare`) on the *proven*
+knowledge-Heyting-algebra `Charge.heytingK`. The grade chooses which two same-order
+poles the diamond's nuclei raise toward; the OTHER order is the grade, not a nucleus.
+We index by `K4` and realize the Nuclear Quartet Theorem at every grade. -/
+
+/-- The pair of same-order poles assigned to each `K₄`-grade. The grade's two `ℤ/2`
+coordinates select the two charge poles the diamond raises toward (all four poles are
+exhausted as the grade ranges over `K₄`); the nuclei stay in ONE order (`joinSquare`
+on `heytingK`), the cross-order distinction being the grade itself. -/
+def gradePoles : K4 → Charge × Charge
+  | K4.id      => (Charge.kBot, Charge.kBot)
+  | K4.neg     => (Charge.tTop, Charge.kBot)
+  | K4.conf    => (Charge.tBot, Charge.kBot)
+  | K4.negConf => (Charge.kTop, Charge.kBot)
+
+/-- **The bigraded diamond tower** as a `K₄`-indexed family of nuclear squares on the
+proven knowledge-Heyting-algebra. Each grade is a `Charge.joinSquare` — two commuting
+SAME-order join-nuclei — so each grade IS a proven nuclear quartet. -/
+def towerSquare (g : K4) : NuclearSquare Charge.heytingK :=
+  Charge.joinSquare (gradePoles g).1 (gradePoles g).2
+
+/-- Packaged as a `Positing.Bigraded.SquareFamily` over the index type `K4`: the stacked
+diamonds, one per grade. -/
+def towerFamily : SquareFamily Charge.heytingK K4 where
+  square := towerSquare
+
+/-- **Every grade realizes the Nuclear Quartet Theorem** (`fix_pi_iff`): at grade `g`,
+a charge is `π`-quiescent iff it is fixed by both same-order nuclei. -/
+theorem grade_fix_pi_iff (g : K4) (a : Charge) :
+    (towerSquare g).pi a = a ↔ ((towerSquare g).j1.j a = a ∧ (towerSquare g).j2.j a = a) :=
+  (towerSquare g).fix_pi_iff a
+
+/-- The four diamond corners at each grade, read off `Articulating.Corner` via the quartet's
+`corner` operator (`potential = free`, `active = j₁`, `stable = j₂`, `absurd = π`). -/
+def gradeCorner (g : K4) (c : Articulating.Corner) (a : Charge) : Charge :=
+  (towerSquare g).corner c a
+
+/-! ## 3. The `K₄`-graded bigraded diamond tower -/
+
+/-- A proof-carrying **bigraded diamond tower** bundle: the `K₄`-graded family of
+nuclear quartets, with the grading group `= K₄`, the four-corner exhaustion, and the
+`K₄ ≃ Articulating.FourCorner` bigrading bijection. -/
+structure BigradedTower where
+  /-- The `K₄`-graded family of nuclear squares (the stacked diamonds). -/
+  family : SquareFamily Charge.heytingK K4
+  /-- Every grade realizes the Nuclear Quartet Theorem `fix_pi_iff`. -/
+  grade_quartet : ∀ (g : K4) (a : Charge),
+    (family.square g).pi a = a
+      ↔ ((family.square g).j1.j a = a ∧ (family.square g).j2.j a = a)
+  /-- The grading group is `K₄ ≅ ℤ/2 × ℤ/2` — associative, identity, self-inverse,
+  abelian, acting on `FOUR` as a homomorphism (`Positing.Gauge.K4.isGroup`). -/
+  grading_is_K4 :
+    (∀ g h k : K4, K4.mul (K4.mul g h) k = K4.mul g (K4.mul h k))
+      ∧ (∀ g : K4, K4.mul K4.id g = g ∧ K4.mul g K4.id = g)
+      ∧ (∀ g : K4, K4.mul g g = K4.id)
+      ∧ (∀ g h : K4, K4.mul g h = K4.mul h g)
+      ∧ (∀ (g h : K4) (a : Charge), K4.act (K4.mul g h) a = K4.act g (K4.act h a))
+  /-- The four diamond corners are exhausted: exactly four corners. -/
+  corners_card : Articulating.Corner.all.length = 4
+  /-- The `K₄ ≃ Articulating.FourCorner` bigrading bijection (round-trips both ways). -/
+  bigrading_left : ∀ g : K4, ofFourCorner (toFourCorner g) = g
+  bigrading_right : ∀ s : Articulating.FourCorner, toFourCorner (ofFourCorner s) = s
+
+/-- **The bigraded diamond tower.** The nuclear quartet (the diamond),
+graded by `K₄ ≅ ℤ/2(knowledge) × ℤ/2(truth)` and stacked: a `K₄`-indexed family of
+nuclear quartets on the proven knowledge-Heyting-algebra `Charge.heytingK`, each grade
+realizing the Nuclear Quartet Theorem, with the grading group `= K₄`, the four-corner
+exhaustion, and the `K₄ ≃ Articulating.FourCorner` bigrading bijection. -/
+def bigraded_diamond_tower : BigradedTower where
+  family := towerFamily
+  grade_quartet := grade_fix_pi_iff
+  grading_is_K4 := K4.isGroup
+  corners_card := Articulating.Corner.card_eq_four
+  bigrading_left := ofFourCorner_toFourCorner
+  bigrading_right := toFourCorner_ofFourCorner
+
+/-! ## 4. The crucial coherence: the bigrading IS the two orders
+
+The two `ℤ/2` factors of `K₄` ARE the two orders (knowledge, truth) as grading axes.
+This is WHY the two orders cannot be two co-nuclei in a single square: a truth-closure
+is NOT a knowledge-nucleus (the proven finding), so the second order must enter as a
+GRADE, not a co-nucleus. We carry the finding as a field. -/
+
+/-- A proof-carrying bundle witnessing the coherence: the two grading axes are the two
+orders, each grade's square uses two SAME-order nuclei, and the cross-order finding
+(`cross_order_not_knowledge_nucleus`) forbids the two orders from co-inhabiting one
+square as co-nuclei. -/
+structure TwoOrdersBigrading where
+  /-- The KNOWLEDGE grading axis: the first `ℤ/2` coordinate (`∼`-presence) — the
+  internal gauge generator. -/
+  knowledge_axis : K4 → Bool
+  /-- The TRUTH grading axis: the second `ℤ/2` coordinate (`−`-presence). -/
+  truth_axis : K4 → Bool
+  /-- The two axes assemble each `K₄`-grade — the `ℤ/2 × ℤ/2` product. -/
+  axes_assemble : ∀ g : K4, toFourCorner g = (knowledge_axis g, truth_axis g)
+  /-- The two axes are independent `ℤ/2`s: `neg` toggles only knowledge, `conf` only
+  truth (under the group multiplication). -/
+  axes_independent : ∀ g : K4,
+    (knowledge_axis (K4.mul K4.neg g) = !knowledge_axis g
+      ∧ truth_axis (K4.mul K4.neg g) = truth_axis g)
+    ∧ (knowledge_axis (K4.mul K4.conf g) = knowledge_axis g
+      ∧ truth_axis (K4.mul K4.conf g) = !truth_axis g)
+  /-- Each grade's square uses two SAME-order nuclei (`Charge.joinSquare` on the single
+  knowledge-Heyting-algebra `heytingK`) — the OTHER order is the grade, not a nucleus. -/
+  grade_same_order : ∀ g : K4,
+    towerSquare g = Charge.joinSquare (gradePoles g).1 (gradePoles g).2
+  /-- **The cross-order finding** (`Infomaterial.Positing.FiberAlgebra.cross_order_not_knowledge_nucleus`):
+  there is a valuation whose truth-closure is NOT knowledge-above it — a truth-closure
+  is not a knowledge nucleus. This is WHY the second order cannot be a co-nucleus in the
+  same square and must enter as a grading axis. -/
+  cross_order_forbids_co_nucleus :
+    ∃ v : Valuation,
+      ¬ Positing.FiberAlgebra.fLeK v (fun φ => Infomaterial.Charge.joinT Infomaterial.Charge.kBot (v φ))
+
+/-- **The tower's bigrading is the two orders.** The two `ℤ/2` factors of
+`K₄` ARE the two orders (knowledge `∼`, truth `−`) as GRADING axes; each grade's square
+uses two SAME-order nuclei; and the proven cross-order finding
+`Infomaterial.Positing.FiberAlgebra.cross_order_not_knowledge_nucleus` forbids the two orders from
+being two co-nuclei in one square — so the second order MUST be a grade. This is the
+formalization's reconciliation of the corpus's "(j_k, j_t)" prose with the proven
+structure: not two nuclei in one square, but one same-order square per `K₄`-grade. -/
+def towerTwoOrdersBigrading : TwoOrdersBigrading where
+  knowledge_axis := knowledgeBit
+  truth_axis := truthBit
+  axes_assemble _ := rfl
+  axes_independent := axes_independent
+  grade_same_order _ := rfl
+  cross_order_forbids_co_nucleus := Positing.FiberAlgebra.cross_order_not_knowledge_nucleus
+
+/-- **The tower's bigrading IS the two orders — as grades, not co-nuclei.** The two `ℤ/2` factors of
+`K₄` assemble each grade as the `(knowledge, truth)` product (`axes_assemble`), and — the specific,
+non-obvious content the bare bundle only gestured at — they **cannot** both be nuclei in one square:
+there is a valuation whose truth-closure is not knowledge-above it (`cross_order_not_knowledge_nucleus`),
+so the second order must enter as a *grading axis*, not a co-nucleus. Projected from
+`towerTwoOrdersBigrading`. -/
+theorem tower_bigrading_is_two_orders :
+    (∀ g : K4, toFourCorner g
+        = (towerTwoOrdersBigrading.knowledge_axis g, towerTwoOrdersBigrading.truth_axis g))
+    ∧ (∃ v : Valuation, ¬ Positing.FiberAlgebra.fLeK v (fun φ => Charge.joinT Charge.kBot (v φ))) :=
+  ⟨towerTwoOrdersBigrading.axes_assemble, towerTwoOrdersBigrading.cross_order_forbids_co_nucleus⟩
+
+end Positing.BigradedTower
+end Infomaterial

@@ -1,0 +1,55 @@
+\section{Lenticular percolation: density crosses into load-bearing topology}
+
+This subgraph relates condensate density to load-bearing topology.  The
+cover-nerve invariant floors contact count at the spanning forest
+$|V|-|C|$, so $\check H^1$ is exactly the excess-contact order parameter.
+The green carrier is \texttt{Infomaterial.Persistence.Aperiodic.Percolation}.
+
+\begin{proposition}[The percolation order parameter is the excess contacts]\label{thm:percolation-order-parameter}\lean{Infomaterial.Persistence.Aperiodic.h1rank_eq_excess}\leanok\uses{thm:condensate-is-top}
+The cycle rank $\check H^1 = |E| - (|V| - |C|)$ counts the contacts past the percolation threshold
+$|V| - |C|$ (the spanning forest). Each surplus contact is one held load-bearing cycle.
+\end{proposition}
+
+\begin{theorem}[The percolation threshold law]\label{thm:percolation-threshold-law}\lean{Infomaterial.Persistence.Aperiodic.loadBearing_iff_critical}\leanok\uses{thm:percolation-order-parameter}
+A contact network bears load exactly when its contacts reach the spanning forest plus one
+($|V| - |C| + 1 \le |E|$). The floppy state is precisely the forest, sitting at the single critical
+contact count $|V| - |C|$ (\texttt{floppy\_iff\_at\_threshold}): the percolation point is one count,
+not a sub-critical band.
+\end{theorem}
+
+\begin{theorem}[Percolation onset --- the jamming click is the transition]\label{thm:percolation-onset}\lean{Infomaterial.Persistence.Aperiodic.percolation_onset}\leanok\uses{thm:percolation-threshold-law}
+A network at the threshold (a spanning forest, floppy) becomes load-bearing the instant one more
+contact is added, opening exactly one cycle. The order parameter is monotone in the contacts
+(\texttt{h1rank\_mono}): percolation never \emph{un}-jams. Sub-critical to super-critical in one step.
+\end{theorem}
+
+\begin{theorem}[Density is necessary]\label{thm:percolation-density-necessary}\lean{Infomaterial.Persistence.Aperiodic.density_necessary}\leanok\uses{thm:percolation-threshold-law}
+A condensed lenticule is a held-$\top$ contact, so a material supplies at most $\texttt{rigidity}$
+contacts. Load-bearing then forces the condensate density strictly past the percolation threshold: a
+load-bearing fabric must hold more condensates than its spanning forest. A density $d$ is realizable
+(\texttt{rigidity\_replicate\_two}).
+\end{theorem}
+
+\begin{theorem}[Density is not sufficient --- the percolation gap]\label{thm:percolation-density-not-sufficient}\lean{Infomaterial.Persistence.Aperiodic.density_not_sufficient}\leanok\uses{thm:percolation-density-necessary}
+A single condensate density $d \ge 1$ is consistent with both a floppy forest and a load-bearing
+cycle: two networks with the same contact count, one bearing no load and one bearing load. Density
+crosses the threshold but does not determine load --- \emph{placement} does. This is why the
+percolation map is a genuine bridge, not the identity: the count underdetermines the topology.
+\end{theorem}
+
+\begin{theorem}[The gauge-canonical placement measure fixes the $\top$-rate at $\tfrac14$]\label{thm:percolation-gauge-measure}\lean{Infomaterial.Persistence.Aperiodic.condensate_baserate_quarter}\leanok\uses{thm:four-object, thm:percolation-density-not-sufficient}
+A placement is a \texttt{Charge}-colouring of the sites.  The FOUR gauge group
+$D_4=\mathrm{Aut}(\text{FOUR};\{\le_k,\le_t\})$ acts transitively on the four
+corners (\texttt{gauge\_transitive}), so the unique gauge-invariant probability is
+uniform.  Over the eight gauge images of any charge, exactly two are condensed
+(\texttt{gauge\_orbit\_equidistributes}), fixing the $\top$ base-rate at
+$\tfrac14$.
+\end{theorem}
+
+\begin{theorem}[The critical fraction]\label{thm:percolation-critical-fraction}\notready\uses{thm:percolation-gauge-measure}
+\emph{(Open frontier --- stated, not formalized.)} The critical fraction $p_c$ is
+the condensate density at which a load-bearing cycle appears with probability
+one.  The placement measure is \cref{thm:percolation-gauge-measure}; the
+deterministic count threshold is \cref{thm:percolation-threshold-law}.  The
+residue is the finite network law for FOUR-colourings over a given contact graph.
+\end{theorem}

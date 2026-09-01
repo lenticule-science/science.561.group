@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       671de5ba-91db-40bf-883d-214daea13190
+:END:
+#+title: signifier
+#+date: [2025-09-05 Fri 16:26]
+

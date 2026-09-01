@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       e73aa716-5a75-4482-9602-eff0001083a3
+:END:
+#+title: narrator
+#+date: [2025-09-01 Mon 19:21]
+

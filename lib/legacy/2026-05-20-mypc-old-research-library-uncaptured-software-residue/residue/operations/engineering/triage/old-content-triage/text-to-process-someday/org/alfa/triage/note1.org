@@ -1,0 +1,187 @@
+** Implementing a Personal Website with Hugo, Netlify, Org-mode, and Ox-Hugo
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: ../posts/implementing-a-personal-website-with-hugo-netlify-org-mode-and-ox-hugo
+   :END:
+I've been reworking my online presence recently, and part of that has
+been to change how I handle the website at =emsenn.net=.
+
+I've put a fair bit of thought into the generalities of how I want to
+handle it, but not the specifics. But first, let's look at the parts
+of my online identity I have set up right now, that I don't have any
+plans to change:
+
+- I conduct /email/ through [[mailto:emsenn@emsenn.net][emsenn@emsenn.net]].
+- I post publicly at [[https://posts.emsenn.net][https://posts.emsenn.net]]. Those posts are also
+  available through an /email list/, at
+  [[https://posts.emsenn.net/#subscribe][https://posts.emsenn.net/#subscribe]]. They're also available as an
+  /RSS/ feed at [[https://posts.emsenn.net/feed/][https://posts.emsenn.net/feed/]] and through the
+  /ActivityPub/ protocol at =@emsenn@posts.emsenn.net=.
+- I do two-way communication through /ActivityPub/ at
+  =@emsenn@tenforward.social=. You can view the public posts
+  associated with that account at [[https://tenforward.social/@emsenn][https://tenforward.social/@emsenn]].
+- My primary /Git forge/ is /Sourcehut/, at [[https://git.sr.ht/~emsenn][https://git.sr.ht/~emsenn]].
+  I like its approach to using existing tools properly, rather than
+  adding on new tools, when it comes to stuff like bug-tracking. (Even
+  though I don't use those features.
+  - I use /Gitlab/ to mirror my projects on /Sourcehut/, at
+    [[https://gitlab.com/emsenn][https://gitlab.com/emsenn]].
+  - I also mirror them on /Github/ at [[https://github.com/emsenn][https://github.com/emsenn]].
+
+I'm not sure what the full scope of =emsenn.net= will be, but I don't
+plan on it being a /dynamic website/ - nothing I do happens so rapidly
+that I need to run something like that: I can serve up /static/
+resources like HTML and JSON files, that are compiled well in advance
+of the request.
+
+I like /Hugo/ as my /static site generator/ - it's powerful enough to
+meet my needs without being so powerful I get bogged down in different
+ways to do things.
+
+So, I know that's one part of my /software stack/: the layers of
+software used to accomplish a task.
+
+I also like /Netlify/ as a /webhost/ for /static websites/ - they have
+an incredible amount of features, that don't get in the way until you
+want them there. That's one end of the /stack/: publishing on
+/Netlify/.
+
+Netlify can source its sites from three /Git forges/: /Gitlab/,
+/Github/, and /Bitbucket/. I prefer /Gitlab/ to /Github/, since
+/Gitlab/ is funded by users rather than owned by /Microsoft/, so I'll
+use /Gitlab/ as the source for /Netlify/. And since the /Gitlab/ repo
+is simply a mirror of the /Sourcehut/ /Git forge/, which is in turn
+just a presentation of my local /Git repository/, that gives me four
+sequenced tools in the /stack/: /Git/ to /Sourcehut/ to /Gitlab/ to
+/Netlify/.
+
+That still leaves what is in the /Git repo/ unsorted, as well as how
+it gets built by /Hugo/. It's been a bit since I've worked with
+/Netlify/ and /Hugo/ and all this, and I was never that experienced
+with it when I was, so at this point,  I'll need to start setting
+things up before fleshing out that part of the /stack/.
+
+So let's look at instead what I'm working with as the /source code/
+for the website. It's organized like any of my other projects, under
+the =~/org/projects/= directory on my server. Here's what the
+=emsenn-website= directory under that looks like:
+
+#+begin_src txt
+./
+ | README.md
+ | emsenn-website.html
+ | emsenn-website.org
+ | emsenn-website.pdf
+ | emsenn-website.tex
+ | src/
+      | emsenn-website.org
+      | build/
+             | content/
+             |        | <site pages go here>
+             | data/
+             |     | <site data goes here>
+             | themes/
+             |       | hugo-personal-website-theme/
+             | config.toml
+#+end_src
+
+The only file I edit by-hand is =./src/emsenn-website.org= - the other
+files are /tangled/ from it - extracted from code blocks written into
+the text of =./src/emsenn-website.org=.
+
+Here's an overview of that document's sections:
+
+- "Operations" has shell scripts and instructions for working with
+  the source file or otherwise working with the personal site. Any of
+  the shell scripts can be run from inside /Org-mode/, and the results
+  included in any exported document, if that's useful.
+- "Hugo Configuration" has /Hugo configuration/. Pretty simple. It's
+  extracted from this source file by using /Babel/ to /tangle/
+  (extract) the configuration.
+- "Content Pages" has sections for the website's pages. They're
+  exported with /Ox-Hugo/, an /Emacs/ package for exporting /Org-mode/
+  to /Hugo/-compatible /Markdown/. These files end up in
+  =./src/build/content/=.
+- "Site Data" has some /TOML/ files that have information about my
+  recent activities and plans, for now. These files end up in
+  =./src/build/data/=
+
+The themes directory contains a directory,
+=hugo-personal-website-theme=, which is a /Hugo theme/ that I'm
+working on - I'll probably write about it elsewhere, but it's a /Git
+submodule/, so it gets updated by using the =git pull= command after
+using =git checkout master= in the
+=./src/build/themes/hugo-personal-website-theme/= directory.
+
+So - that's one early part of the stack - update the themes with
+/Git/, and the commands for doing so are included in the "Operations"
+section.
+
+The other early parts of the stack are exporting the content as
+/Hugo/-compatible /Markdown/, and the data as /TOML/ files.
+
+The former I accomplish with /Ox-Hugo/ and /Org-mode's/ exporting
+features. The latter I accomplish with /Babel/, an /Org-mode/ package
+that enables the running and extraction of computer code inside
+/Org-mode/ files.
+
+I think I've covered all of how I go from a single source file,
+=src/index.org=, to the directory I laid out above.
+
+This whole directory is a /Git repository/, that as I said, I host on
+/Sourcehut/, /Gitlab/, and /Github/.
+
+(Actually at the moment /Gitlab/ isn't working for me so I'm just
+using the other two.)
+
+I've told /Netlify/ to look at the /Github/ version of the
+/repository/, and give it the build instructions =cd src/build &&
+hugo= - apparently these days /Netlify/ knows enough to do things
+properly from there - I also told it the final website is in
+=./src/build/public/=, but beyond that, no other configuration was
+necessary.
+
+So, to try and sum it up:
+
+- From within /Emacs/, looking at =./src/index.org=, I:
+  - Run the script to update the /Git submodule/ that is at
+    =./src/build/themes/hugo-personal-website-theme/=.
+  - Export all subtrees using /Ox-Hugo/, which copies them into
+    =./src/build/contents/=.
+  - Run /tangle/ on the file, which extracts things like my recent
+    activities and plans to =./src/build/data/=, and the /Hugo/
+    configuration to =./src/build/config.toml=.
+- Run the command =git add .= to record the updates.
+- Run =git commit= to explain the updates.
+- Run =git push= to send them to /Sourcehut/,
+  - which is mirrored by /Github/,
+    - which is watched by /Netlify/, which clones the /repository/
+      and:
+      - runs =cd ./src/build && hugo= to build the site.
+      - uploads =./src/build/public= as the final site.
+*** Index
+- ActivityPub :: {{{ref(activitypub)}}}
+- Babel :: {{{ref(babel)}}}
+- Babel tangle :: {{{ref(babel-tangle)}}}
+- Bitbucket :: {{{ref(bitbucket)}}}
+- email :: {{{ref(email)}}}
+- email list :: {{{ref(email-list)}}}
+- Git :: {{{ref(git)}}}
+- Git forge :: {{{ref(git-forge)}}}
+- Github :: {{{ref(github)}}}
+- Gitlab :: {{{ref(gitlab)}}}
+- Git repository :: {{{ref(git-repository)}}}
+- Git submodule :: {{{ref(git-submodule)}}}
+- Hugo :: {{{ref(hugo)}}}
+- Hugo configuration :: {{{ref(hugo-config)}}}
+- Hugo themes :: {{{ref(hugo-themes)}}}
+- Markdown :: {{{ref(markdown)}}}
+- Microsoft :: {{{ref(microsoft)}}}
+- Netlify :: {{{ref(netlify)}}}
+- Org-mode :: {{{ref(org-mode)}}}
+- Ox-Hugo :: {{{ref(ox-hugo)}}}
+- RSS :: {{{ref(rss)}}}
+- software stack :: {{{ref(software-stack)}}}
+- Sourcehut :: {{{ref(sourcehut)}}}
+- TOML :: {{{ref(toml)}}}
+- website, dynamic :: {{{ref(website-dynamic)}}}
+- website, static :: {{{ref(website-static)}}}

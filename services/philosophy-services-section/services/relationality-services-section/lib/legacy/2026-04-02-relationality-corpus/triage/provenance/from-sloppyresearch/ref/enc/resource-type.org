@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       edaef069-c68d-46aa-a970-d3cb7fe3165c
+:NODE-RELATIONS: (([[id:bee496e1-139b-4a7f-8a24-d4c14e6084c6][instantiates]] . [[id:b5abbca6-27f8-452d-a574-322c7c6efcf7][morphism]]))
+:ROAM_REFS: https://www.w3.org/1999/02/22-rdf-syntax-ns#type 
+:ROAM_ALIASES: rdf:type type
+#+title: resource type
+

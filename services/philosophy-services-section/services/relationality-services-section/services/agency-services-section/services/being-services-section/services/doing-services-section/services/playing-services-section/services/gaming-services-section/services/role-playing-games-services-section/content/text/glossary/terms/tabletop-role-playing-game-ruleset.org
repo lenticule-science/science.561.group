@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       884d994c-be55-4ca7-a728-2af6a57f8c38
+:END:
+#+title: tabletop role-playing game ruleset
+#+date: [2025-09-01 Mon 16:19]
+

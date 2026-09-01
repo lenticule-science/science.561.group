@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       f5011b32-d123-4825-b595-1edce23c8efe
+:NODE-RELATIONS: (([[id:bee496e1-139b-4a7f-8a24-d4c14e6084c6][instantiates]] . [[id:62317b3a-f4bf-42bb-b6da-603077329168][GnoponEmacs vault]]))
+:END:
+#+title: emsenn's vault
+
+* Documentation
+** README
+
+* Maps
+
+- [[file:./per/index.org][Personal Vault]]
+- [[file:./dev/index.org][Development Vault]]
+- [[file:./pro/index.org][Project Vault]]

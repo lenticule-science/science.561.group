@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       1a0f1788-1a40-4cf7-9864-afc1b6c01955
+:END:
+#+title: in-context learning
+#+date: [2025-10-05 Sun 22:17]
+

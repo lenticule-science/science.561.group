@@ -1,0 +1,44 @@
+\section{Format carriers}
+
+The computing surface classifies serialization formats by the same two
+coordinates already present in the proof tree: content corner and closure
+regime.  This is the incidence bridge from mathematical carrier to readable,
+machine-checkable surface.
+
+\begin{proposition}[Eight analyzed format carriers]\label{thm:format-carrier-eight}\lean{Obsmetrologia.Format.card_eight}\leanok\uses{thm:corner}
+The format carrier has eight analyzed points: bytes, plaintext, JSON, RDF,
+Markdown, HTML, TeX, and RMN-in-HTML.
+\end{proposition}
+
+\begin{theorem}[Format content corners cover the FOUR]\label{thm:format-corner-onto}\lean{Obsmetrologia.Format.corner_onto}\leanok\uses{thm:format-carrier-eight, thm:four-object}
+Every Articulating corner is occupied by some serialization format.  The
+content commitment of a format is therefore a FOUR-valued projection.
+\end{theorem}
+
+\begin{theorem}[Format completion regimes cover the FOUR]\label{thm:format-regime-onto}\lean{Obsmetrologia.Format.regime_onto}\leanok\uses{thm:format-carrier-eight, thm:strict-finite}
+Every closure regime in the four-regime carrier is occupied by some
+serialization format.  The completion commitment of a format is therefore a
+FOUR-valued regime projection.
+\end{theorem}
+
+\begin{theorem}[Format completion cost is nonmonotone]\label{thm:format-cost-nonmonotone}\lean{Obsmetrologia.Format.cost_nonmonotone_in_kle}\leanok\uses{thm:format-corner-onto, thm:format-regime-onto, thm:kle}
+Ascending in the knowledge order can either raise or lower the completion
+cost.  There is no single serialization ladder from less committed to more
+committed surface.
+\end{theorem}
+
+\begin{theorem}[The top corner has several regimes]\label{thm:format-top-corner-multi-regime}\lean{Obsmetrologia.Format.top_corner_multi_regime}\leanok\uses{thm:format-corner-onto, thm:strict-finite}
+Markdown, RDF, and HTML all occupy the top content corner, but their
+completion regimes are strict, Scott, and aperiodic respectively.
+\end{theorem}
+
+\begin{theorem}[RMN-in-HTML recovers decidability]\label{thm:rmn-html-decidable}\lean{Obsmetrologia.Format.rmn_html_is_decidable}\leanok\uses{thm:format-top-corner-multi-regime}
+RMN-in-HTML and general HTML have the same content commitment, but total RMN
+scripts make completion decidable while general HTML remains undecidable.
+\end{theorem}
+
+\begin{theorem}[Formats are a FOUR by regime surface]\label{thm:formats-closure-hierarchy}\lean{Obsmetrologia.Format.formats_closure_hierarchy}\leanok\uses{thm:format-corner-onto, thm:format-regime-onto, thm:format-cost-nonmonotone, thm:rmn-html-decidable}
+Serialization formats meet the recurring FOUR twice: as content corner and as
+completion regime.  The two projections are independent, which is why the same
+content surface can settle at different completion costs.
+\end{theorem}

@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       e2e23979-c001-4308-b04c-de03ac461168
+:public:   true
+:END:
+#+title: region
+#+date [2025-08-11 Mon 19:10]
+

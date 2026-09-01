@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       37ea34f9-6b7d-409e-a582-9e0cc0e997b9
+:END:
+#+title: goal
+#+date: 2025-07-19
+#+author: emsenn

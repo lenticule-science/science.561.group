@@ -1,0 +1,26 @@
+#+title: settler-colony
+#+begin_head
+#+ghe_schema: term-0.1.3
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-26 Sat 12:06]
+#+roam_tags: term
+#+end_head
+
+#+name: definition
+A */settler-colony/* is an area where[[file:colonial.org][colonials]] have built up their [[file:ways_of_living.org][way of life]].
+
+#+toc: headlines 2
+* Introduction
+* settler-colony
+* Supplements
+** Record history
+   :PROPERTIES:
+   :CUSTOM_ID: record-history
+   :END:
+   :LOGBOOK:
+   - Note taken on [2020-12-26 Sat 12:06] \\
+      Created from [[file:~/org/s/p/cottenboro_gaz.org][definition]]
+
+      
+   :END:

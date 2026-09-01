@@ -1,0 +1,30 @@
+id: e3405f403218250ca1b00e5d09a796b55db4da7783095fadc99e1a14e9a2cc35
+name: trace_ops
+steps:
+- input_kinds:
+  - observation_carrier
+  operator: start_trace
+  output_kinds:
+  - trace
+  step_index: 0
+- input_kinds:
+  - trace
+  - observation_carrier
+  operator: advance_trace
+  output_kinds:
+  - trace
+  step_index: 1
+- input_kinds:
+  - trace
+  operator: stabilize_trace
+  output_kinds:
+  - trace
+  - trace_evidence
+  step_index: 2
+- input_kinds:
+  - trace
+  operator: shuffle_trace
+  output_kinds:
+  - trace
+  - shuffle_equivalence_evidence
+  step_index: 3

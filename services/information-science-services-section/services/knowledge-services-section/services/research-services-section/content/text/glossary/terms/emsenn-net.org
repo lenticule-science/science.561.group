@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       cc253409-9a82-4c5d-a4cd-8013f4e350c6
+:END:
+#+title: emsenn.net
+#+date: 2025-07-19
+#+author: emsenn
+
+#+begin_peritaph
+here lives one whose life is writ in ions
+#+end_peritaph
+
+* Ideas and Plans
+** IDEA My Blog = My Babbling Log
+:PROPERTIES:
+:ID:       a1134b57-b1d3-45d6-b8af-3699116e0eea
+:END:
+I could perhaps use `#+include` statements (or maybe something else) to set up a directory on emsenn.net that is any babbles I want to make public. Or, I could do a single page, that's a rolling log of the 20 most recent babbles (that I'm comfortable sharing). But perhaps it would be better to keep babblings as assumed private, and anything useful from them that I want to share, I can render some other way, like rewriting them as part of the "routine bulleitns" I want to resume publishing.

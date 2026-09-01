@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/necessitating",
+  "title": "necessitating",
+  "description": "The modal box operation of the valuation: it lowers each cell's charge to the knowledge-meet of the charges assigned at that cell across the fiber-algebras, appending a new knowledge-monotone valuation to the trace. Deflationary ('what must hold') and right adjoint of possibilizing's diamond.",
+  "type": "object",
+  "required": ["morphism", "domain", "codomain"],
+  "properties": {
+    "morphism": { "const": "necessitating", "description": "a one-way generative arrow; the box that lowers each cell to the knowledge-meet of its charges across the fiber-algebras" },
+    "domain": { "$ref": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation", "description": "the valuation it maps out of - the charge assignment over the trace's cells" },
+    "codomain": { "$ref": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation", "description": "a new knowledge-monotone valuation v' appended to the trace, each cell deflated to the knowledge-meet of its charges across the fiber-algebras" }
+  }
+}

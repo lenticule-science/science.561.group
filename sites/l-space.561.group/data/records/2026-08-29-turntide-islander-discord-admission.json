@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "l-space-authentication-decision/v1",
+  "date": "2026-08-29",
+  "status": "implemented-and-locally-tested-awaiting-provider-configuration-and-deploy",
+  "decision": "L-Space retains fail-closed Google email admission for operators and independently admits a Discord-authenticated reader only while Discord reports that reader as a non-pending member of the configured Turntide Island guild holding the exact configured islander role ID.",
+  "trustBoundary": {
+    "authentication": "Discord OAuth 2.0 authorization-code grant with state and S256 PKCE",
+    "requestedScopes": ["identify", "guilds.members.read"],
+    "excludedScope": "guilds — L-Space does not need or receive the reader's other guild memberships",
+    "authorization": "GET /users/@me/guilds/{guild.id}/member followed by exact membership of TURNTIDE_ISLANDER_ROLE_ID in the returned role snowflakes",
+    "roleNameIsAuthority": false,
+    "botTokenUsed": false,
+    "revalidation": "before every protected response; no durable role snapshot grants access",
+    "failurePolicy": "missing configuration, missing scope, absent membership, pending membership, missing role, token failure, rate limit, malformed response, or Discord outage all deny protected content",
+    "rateLimitPolicy": "Discord Retry-After is persisted per session; protected requests receive fail-closed HTTP 503 with Retry-After instead of being misreported as signed out",
+    "refreshConcurrency": "optimistic authorization_version updates reload the winning rotated token when concurrent requests race a refresh"
+  },
+  "sessionCustody": {
+    "browser": "random opaque HttpOnly Secure SameSite=Lax bearer",
+    "database": "SHA-256 hash of browser bearer plus AES-GCM-encrypted Discord access and refresh tokens",
+    "encryptionKey": "derived from the Worker SESSION_SECRET with a domain-separated context",
+    "logout": "delete local D1 session, clear browser cookies, and request Discord token revocation",
+    "retention": "a daily bounded Worker trigger revokes and deletes expired Discord sessions",
+    "reviewIdentity": "SHA-256 of the provider-qualified Discord subject; raw Discord IDs do not enter VaultMaze review rows"
+  },
+  "sharedInfrastructure": {
+    "package": "@red-cup-engineering/discord-rest-transport-service/user-oauth",
+    "capabilities": [
+      "minimal-scope authorization URL",
+      "authorization-code exchange and refresh",
+      "token revocation",
+      "current-user observation",
+      "current-user guild-member observation",
+      "exact role-ID judgment",
+      "typed fail-closed Discord HTTP errors"
+    ]
+  },
+  "deployment": {
+    "redirectUri": "https://l-space.561.group/oauth/discord/callback",
+    "workerSecrets": [
+      "DISCORD_CLIENT_ID",
+      "DISCORD_CLIENT_SECRET",
+      "DISCORD_GUILD_ID",
+      "TURNTIDE_ISLANDER_ROLE_ID",
+      "SESSION_SECRET"
+    ],
+    "databaseMigration": "lib/cloudflare/migrations/0003_discord_oauth_sessions.sql",
+    "cloudflareAccess": "The legacy Cloudflare Access application must be removed or unscoped before either first-party login path can run."
+  },
+  "sources": [
+    "https://docs.discord.com/developers/topics/oauth2",
+    "https://docs.discord.com/developers/resources/user",
+    "https://docs.discord.com/developers/resources/guild",
+    "https://docs.discord.com/developers/topics/rate-limits"
+  ]
+}

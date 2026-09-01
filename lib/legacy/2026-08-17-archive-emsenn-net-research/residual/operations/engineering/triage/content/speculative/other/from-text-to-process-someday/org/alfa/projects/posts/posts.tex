@@ -1,0 +1,1283 @@
+% Created 2019-06-09 Sun 22:08
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{emsenn}
+\date{\today}
+\title{Posts}
+\hypersetup{
+ pdfauthor={emsenn},
+ pdftitle={Posts},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 26.2 (Org mode 9.2.3)},
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\setcounter{tocdepth}{2}
+\tableofcontents
+\section*{Introduction}
+\label{sec:org69e80f3}
+\section*{Posts}
+\label{sec:orgce8e977}
+\subsection*{Notes on "Guix Reference Manual," Sections 1-3}
+\label{sec:orgd952f7b}
+I've just installed the \emph{Guix System Distribution} on my desktop, and
+in an attempt to learn it fully I am going to read the manual and
+record notes here.
+
+The full text of the documentation is available at
+\url{https://www.gnu.org/software/guix/manual/en/guix.html}
+
+The manual says \emph{GNU Guix} is a package management tool, letting
+unprivileged users manage packages. It can be installed on an existing
+GNU/Linux system, or as a standalone operating system, \emph{Guix System}.
+That's what I'm doing.
+
+\emph{Guix} implements the "'functional package management' discipline,"
+apparently pioneered by \emph{Nix}, another Linux distribution.
+
+The package build/install process is a \emph{fuction}. Its inputs are the
+build script, the compiler, dependent libraries, and it returns an
+installed package.
+
+Packages can only refer to packages and such that were passed as
+inputs, and can't modify a system outside of its build and
+installation directories.
+
+The results of package build functions is cached in "the Store," under
+a folder that has a hash of all the inputs, so it's appropriately
+unique. That's pretty clever! It's, by default, under \texttt{/gnu/store/}.
+
+So, on to the \emph{Guix System}. It comes with some core packages...
+
+You "declare all aspects of the operating system configuration and
+\emph{Guix} takes care of instantiating the configuration in a
+transactional, reproducible, and stateless fashion."
+
+What... does that mean? Is it like \emph{Emacs}, where you write an
+initialization file and that gets loaded on startup? And then... it
+checks the hash that the inputs of your build function calls against
+the packages that are there to see if things need to be installed?
+
+Maybe I'm wrong, but I think that might be it. So, I've installed a
+few packages since I started up the system... I wonder where my system
+init is.
+
+(Also, isn't that how \emph{Arch} used to work, back when? A series of
+startup scripts that you could just... edit? I miss that; I had a very
+speedy netbook because of it.)
+
+The next section of the manual is for how to install \emph{Guix} ontop of
+another Linux, so I'll skip it for now; hopefuly that's fine.
+
+The next section I already read before installing the system, because
+it's how to install the \emph{Guix System}.
+
+Well... I didn't read it, as such. I skimmed it. Let me read it
+thoroughly now.
+
+So, it starts off with some limitations - that's a good idea. I should
+start off my project installation guides with disclosing
+limitations/failures of the project. \emph{Logical Volume Management} is
+missing, but I don't know what that is and so I don't think I'll miss
+it. KDE is also missing. That's fine, it's never been my preferred
+window manager. I'm using MATE right now; I made it all gray and blue
+to look like old-school Windows.
+
+It also warns me that wifi support is ify. My wifi chip does work, but
+I'm also wired into the router so that's irrelevant to me.
+
+Okay, blah blah, more installation instructions. Nothing that seems
+too important: I think I'm ready to start using the system.
+\subsection*{Notes on Installing Writefreely on a Guix System}
+\label{sec:orgaedb079}
+Before lunch I successfully got \emph{Nginx} to run on my desktop computer,
+which is running the \emph{GuixSD} operating system.
+
+My goal is still getting a federated communication platform up, though
+the more I give consideration to it, the more I think this might be
+the opportunity and excuse I need to stop microblogging: maybe email
+should be my federated communication platform of choice. Or,
+letter-writing, which I think is probably still best implemented
+through email.
+
+That said, I would like to host my documents through a \emph{WriteFreely}
+instance, so I can be followed via \emph{ActivityPub}, so I'm going to get on
+with that, rather than shift gears from \emph{Nginx} to email.
+
+So... I hate to say it but, I want to do this right, and I think that
+means creating a \emph{Guix} package for Writefreely.
+
+Dang. Back to the \emph{Guix Reference Manual}, this time Section 14:
+"Contributing," since it has a subsection on packaging.
+
+This section starts with some instructions for setting up the "Perfect
+Setup," which looks like it'd be really useful... if I knew more about
+Emacs and such.
+
+So I'm going to skip to 14.4, "Packaging Guidelines."
+
+And... realize I'm way in over my head. Happenstance, I've just
+received a message from \href{https://framapiaf.org/@roptat}{@roptat@framapiaf.org} about my progress with
+learning \emph{Guix}, so I'm going to ask them if making a package is the
+right way to go, before I sink my teeth into this. They've answered:
+
+\begin{quote}
+I don't know this software, so I can't be sure. I think you will need
+to create a package for it first, and then a service. They are two
+separate things. The service-type simply uses the package defined in
+guix.
+
+For writting your first package, I suggest reading
+\url{https://www.gnu.org/software/guix/blog/2018/a-packaging-tutorial-for-guix/}
+
+Then you'll probably have to look at actual package definitions for go
+packages that are a bit different from gnu packages. See
+go-build-system in the manual
+\end{quote}
+
+I asked them to explain what they meant by "[t]he service-type simply
+uses the package defined in \emph{[G]uix}," and they said:
+
+\begin{quote}
+A service-type like \texttt{nginx-service-type} is a declaration. When the
+manual says it's from \texttt{(gnu services web)} it actually means it's a
+scheme variable that was created in a file called
+\texttt{gnu/services/web.scm}, in the Guix repo. It's much more messy than a
+package definition though… So you'll have to create the package first,
+then your service definition will make use of it.
+\end{quote}
+
+I didn't really understand that answer, completely, but what I did
+understand is: Yes, writing a package definition is the right place to
+start.
+
+Before I do that though, I'm going to just try and run it plainly -
+download the latest binary, config, and run, following the
+instructions here: \url{https://writefreely.org/start}
+
+Which... when I try to run the binary inside that, gets me \texttt{bash:
+./writefreely: No such file or directory}. The file is executable, so
+this - in the past - has meant it's for 32bit and I'm on 64bit, or
+vice-versa.
+
+Running \texttt{uname -a} I see I'm on \texttt{x86\_64}, and the binary is for
+\texttt{amd64}. I think those are different platforms, so I guess it's time
+to build the package! I was going to do that as the next step even if
+the binary worked.
+
+Writefreely's documentation on this is a bit terse:
+\url{https://writefreely.org/docs/latest/developer/setup.md}
+
+I need Go 1.10 or higher, and Node.js
+
+Let's... this sounds like a good opportunity to learn how to do an
+environment with \emph{Guix}.
+
+But, so I don't get confused later, I'm going to write down the
+process ahead - I'll probably have to take a break soon, and don't
+want to lose my stride:
+
+\begin{itemize}
+\item First, I want to build and run WriteFreely, however I can get it to
+work, so I can learn how to do that.
+\begin{itemize}
+\item Learn how to make a Guix environment for tinkering in
+\item Learn how to build Writefreely
+\item Learn how to configure and run it.
+\end{itemize}
+\item Then, I want to write a package definition for it.
+\item Then, I want to define a service for it.
+\item Then, I want to... run it! I'll be running my own writefreely
+instance! That's cool!
+\end{itemize}
+
+Okay so uh... I \emph{think} I can just do... \texttt{guix environment} to make a
+little spot to muck around it.
+
+And then \texttt{guix install go} and \texttt{guix install node} to install those
+two packages...
+
+Hmm well even if I exit that environment I still have go installed so
+clearly I did that wrong. But I don't think it really matters.
+
+Writefreely's docs tell me to run this command:
+
+\begin{verbatim}
+go get -d github.com/writeas/writefreely/cmd/writefreely
+\end{verbatim}
+
+Which holy crap fetches a lot of dependencies. Modern software is
+crazy complex stacks, huh?
+
+But then... I'm in an empty folder? But now my home directory has a
+\texttt{go/} folder, which has \texttt{pkg/} and \texttt{src/} subdirectories.
+
+Searching online got me to this:
+\url{https://fedi.dev/gytis/build-writefreely-from-source}
+
+Which tells me to go to \texttt{\textasciitilde{}/src/github.com/writeas/writefreely/} and \texttt{make
+build}.
+
+One problem: I don't have \texttt{make} installed as a command. I recall
+reading that the \texttt{gnu-build-system} provided such tools, which would
+probably inform how I accomplish the Writefreely package. But for now?
+Hmm. I mean, let's try \texttt{guix install make}. It's a package, will it be
+the right one?
+
+Seems to be. I needed to also do \texttt{GOPATH=\textasciitilde{}/go} and \texttt{export
+PATH="\$PATH:\$GOPATH/bin"}
+
+\texttt{make build} gets me an error - apparently I don't have \texttt{as}, whatever
+that is. Poking around online hints me toward installing the
+\texttt{gcc-toolchain} package - I got to this issue whose t
+itle mimics my
+error, and then searched the \emph{Guix Reference Manual} for "gcc":
+\url{https://github.com/tensorflow/tensorflow/issues/4984}
+I get a new error now:
+
+\begin{verbatim}
+In file included from /gnu/store/h90vnqw0nwd0hhm1l5dgxsdrigddfmq4-glibc-2.28/include/errno.h:28:0,
+		 from cgo-gcc-prolog:29:
+/gnu/store/h90vnqw0nwd0hhm1l5dgxsdrigddfmq4-glibc-2.28/include/bits/errno.h:26:26: fatal error: linux/errno.h: No such file or directory
+\end{verbatim}
+
+Well. Sounds like maybe installing \texttt{glibc} was the wrong package?
+
+But I'm at a loss as to... what package would be the right one. I
+don't understand enough of the various compilation toolkits to be
+doing more than taking guesses.
+
+So, let's paste error messages into search engines and see what comes
+up. This thread:
+\url{https://lists.gnu.org/archive/html/bug-guix/2013-02/msg00024.html}
+
+It says to install \texttt{linux-libre-headers}. Which tells me to remove
+\texttt{glibc}. I do, and then install \texttt{linux-libre-headers} without issue.
+
+Let's try \texttt{make build} again? Damn! Same error: \texttt{linux/errno.h: No
+such file or directory}. That thread was the only result for \texttt{"guix"
+"linux/errno.h: No such file or directory"} so now I'm truly at a
+loss.
+
+Well, it does sill look like it's looking in the store for glibc. Is
+that perhaps the problem? Let me try garbage collecting, can't hurt.
+Didn't help, though.
+
+Omg. I'm an idiot. A skim-reading, half-illiterate idiot. So I
+uninstalled linux-libre-headers and reinstalled glibc and at the end,
+it says this:
+
+\begin{verbatim}
+export CPATH="/home/emsenn/.guix-profile/include${CPATH:+:}$CPATH"
+export LIBRARY_PATH="/home/emsenn/.guix-profile/lib${LIBRARY_PATH:+:}$LIBRARY_PATH"
+\end{verbatim}
+
+So I did that and then did \texttt{make build} and, it worked.
+
+I'm learning: read slower. It's been a big help so far in doing all
+this, but gosh. It's hard - there's so much I can't understand, it's
+hard to read every line.
+
+Okay. Well, a lesson to anyone who reads this: I said I was at a loss
+and kept plugging at it, and got it to work.
+
+Moving on!
+
+I'm using this still:
+\url{https://fedi.dev/gytis/build-writefreely-from-source}
+
+It says to run this command: \texttt{./cmd/writefreely/writefreely -{}-config}
+
+That works, takes me through the configuration process. Now, \texttt{make
+run} should get me an instance running at the configured address -
+\texttt{http://localhost:8080} for now.
+
+It works! There's no stylesheet - whoops, I missed a step- \texttt{make ui}.
+
+Which, of course, errors. I'm going to read this error. Slowly.
+
+So I input \texttt{make ui}, and it tells me it's entering the directory
+\texttt{./less/}. It then says shows me the output of the \texttt{which} command,
+telling me there's no \texttt{lessc} found. That message repeats several
+times.
+
+Then it says something I can't interpret so well:
+
+\begin{verbatim}
+node_modules/.bin/lessc app.less --clean-css="--s1 --advanced" ../static/css/write.css
+/gnu/store/q19l04vd2za80mk1845pz7r8cz29qk43-bash-minimal-4.4.23/bin/sh: node_modules/.bin/lessc: No such file or directory
+\end{verbatim}
+
+I install \texttt{node}, then do \texttt{cd less \&\& npm install less
+less-plugin-clean-css}.
+
+I cd back into the writefreely directory and then do \texttt{make ui}. It
+fails - \texttt{lessc} complains it can't find \texttt{env}. I do \texttt{which env} to see
+where it is, then edit \texttt{lessc} to match.
+
+I \texttt{make ui} again, and no errors. I \texttt{make run} and go back to
+\texttt{http://localhost:8080} and... it's there and has CSS. Wonderful.
+
+This is what my goal product is.
+
+Except... it's complaining that it can't store cookies. Whoops - I
+missed a step, between all the hopping between manuals - runnign
+\texttt{writefreely -{}-gen-keys} from within the \texttt{./writefreely} source
+directory.
+
+So. Cool! I have a functional writefreely instance.
+
+Now I have to learn how to do that again, but... as a package.
+\subsection*{Planning emsenn.net, Summer 2019}
+\label{sec:org8a96ea7}
+I've been using the domain as my "personal website," at
+\texttt{https://emsenn.net}, in one way or another for a bit over a year now,
+though what that means has shifted over that period.
+
+I've recently decided to stop sharing so many of my drafts as I work
+on them, at the advice of \href{https://sonomu.club/@yam655}{@yam655@sonomu.club}, who was recently
+speaking with me about building a community and audience around my
+writing.
+
+So instead of treating my website as a document repository, I'm going
+to treat it as a means of communication - more specifically, a way of
+\emph{broadcasting} long-form text to \emph{subscribers}. In this context,
+"broadcasting" means "sending, but not receiving, information," and
+"subscribers" means "people who have chosen to receive the broadcast."
+
+Since I've been using \emph{Mastodon} software service for a while now,
+I've grown to like the \emph{Fediverse}, the rough conglomeration of
+cultures that communicate using the \emph{ActivityPub} protocol.
+
+So it seemed natural to move to \emph{WriteFreely}, a \emph{federated} blogging
+platform. The software, \emph{open-source} of course, is maintained by the
+same people who run the \emph{Write.as} web service. There, one can post
+anonymously or run their own blog.
+
+That's what I'm choosing to do, for now - I've gone ahead and signed
+up for their "Pro" plan, which has let me set up a custom domain.
+
+So now, if you go to \texttt{https://emsenn.net}, you see a title (my name),
+a list of pinned posts, and then a chronological feed of my posts -
+most recent first. At the bottom of the page, there's a field where
+you can put your \emph{email} address to \emph{subscribe} to new posts - they'll
+show up in full in your email. If \emph{RSS} feeds are your preference,
+they're available at \href{https://emsenn.net/feed/}{https://emsenn.net/feed/}.
+
+There's a web interface for adding new posts and managing the site,
+but I'll be adding posts directly from \emph{Emacs}, my text-editor of
+choice. In it, I write files in the \emph{Org-mode} format, and use the
+\emph{writefreely.el} script to upload them to \emph{Write.as}.
+
+...Actually in playing with it, I can't get that to work quite
+properly if I try and update a post. So what I'll probably do instead,
+for now, is export to \emph{Github-Flavored Markdown} with \emph{Ox-GFM} and
+then use the web interface to post and update. A bit clunky, but as
+I'm no longer prioritizing my website as the main place I host my
+writing, I'm okay with it.
+
+I glossed over it at the start, but that is the main reason I'm
+comfortable moving my website from an ultra-light just-HTML thing to a
+web service: I plan on offering that sort of HTML document through
+some sort of store-front, for lack of a better term. I'm already doing
+something like that with my writing with Teraum - you can see an
+example at \href{https://emsenn.itch.io/crown-of-idbol-bark/}{https://emsenn.itch.io/crown-of-idbol-bark/} - though at the
+moment there's only a PDF available.
+
+With that burden lifted, to be placed somewhere else in the near
+future, \texttt{emsenn.net} can be a broadcast platform, and \emph{WriteFreely}
+seemed like an adequate choice to get that done.
+
+\subsection*{Planning a Personal Media Storefront Implemented in Hugo}
+\label{sec:orgb3d3e90}
+Recently I decided that I was going to make a change in how I
+presented my writing online, away from a traditional website and
+toward a "storefront." I was pushed toward the decision when looking
+at how I wanted to present my writing related to Teraum, a fantasy
+setting I'm implementing as some stories and other texts.
+
+While I have HTML files for each document, I'm not making them into a
+website. Instead, I've listed them as "games" on \href{https://itch.io/}{itch.io}, a web
+service for hosting and selling independent video (and other) games.
+
+That's not too different from how my website used to be, before I
+switched it to running \emph{WriteFreely}.
+
+I was using \emph{Hugo} and \emph{Ox-Hugo} to turn \emph{Org-mode} source files into
+\emph{HTML}, and I'll probably roughly follow that same toolchain.
+
+So let's think about what the site would have: There'd be an index
+page that would explain the site and probably present the most recent
+additions to the "store".
+
+There'd be a page for each "item" in the store, which would list info
+about it, its different formats in the latest version, and past
+versions.
+
+Which implies the existence of a directory that has all that. I
+imagine it'd probably be best to do it
+\texttt{/store/\{slug\}/\{version\}/\{slug\}.\{format\}}.
+
+So the \emph{HTML} rendering of version \texttt{1.0.0} of "A Shaggy Dog Tale"
+would go in \texttt{/store/shaggy-dog-tale/1.0.0/shaggy-dog-tale.html}.
+
+The store page itself - the one that people would go to, to find their
+download link...
+
+Actually, I should be able to link to an arbitrary source for the
+document - so while I might store things in that place I said, I'll
+want to accommodate them potentially being somewhere else.
+
+When I was thinking about this last night, I realized that in a way,
+I'm building a sort of package management system, for my own writing.
+
+\emph{Hugo} probably makes that easy, because it lets you use \emph{TOML} data
+files to supplement page contents.
+
+Sorry if this feels fragmented to read - notes like this are written
+primarily for my benefit, and this is a bit project, conceptually.
+
+I'll back up. There has to be a homepage. Then a page for each
+document that's available through the storefront.
+
+It's been a few months since I've used Hugo, but as I recall, it
+encourages you to organize your posts under directories based on
+\emph{content type}, which helps it decide what \emph{layout} to use.
+
+I think I can comfortably use these \emph{content types}:
+\begin{itemize}
+\item \texttt{documents} for mostly-text things, like books, essays, collections
+of letters, and so on.
+\item \texttt{images} for graphic assets, illustrations, scans of paintings, so
+on.
+\item \texttt{audio} for music and other sounds.
+\item \texttt{video} for video assets.
+\end{itemize}
+
+So, going back to the example, there'd be a page at
+\texttt{/documents/shaggy-dog-tale/}.
+
+Oh and to be clear, I'm picturing all this living at
+\texttt{https://store.emsenn.net}.
+
+Each page would have a bit of text about the document - with how I
+currently do things, I could copy any given document's "Introduction"
+section, since it is an out-of-context explanation of the document to
+follow, plus its license and so on.
+
+It'd also have links to each available format of the current version,
+then a summary of past versions, and links to those downloads.
+
+That... is a little trickier to build. I'm picturing that each page
+would be
+
+So... each page - each \emph{Markdown} source file - would basically be a package
+definition? Okay - so I'm writing a package definition schema
+implemented as a \emph{Hugo}-compatible \emph{Markdown} file, and layouts that
+render those.
+
+That seems pretty comprehensible. I'm probably reinventing the wheel
+in some way - I mean, I could just release packages for another
+package manager and use whatever their web interface is.
+
+But, here, I'll be able to really control how every store page looks,
+and I'm not sure but there might be features I want for a
+document-focused package store that existing software-focused package
+managers have. And beyond that, I'm not looking to build a full
+package manager, but just a static listing and an interface for
+accessing it.
+
+The next step will be to create a basic \emph{Hugo} site to build this out
+on, and then start to implement the media package definition schema
+and layouts for rendering it. That sounds complex, but unless I've
+forgotten more about \emph{Hugo} than I think, it should be fairly easy at
+first. The difficulty will be in extending it as I use it and
+discovere more use-cases.
+
+\subsection*{Defining a Media Package Definition and Channel}
+\label{sec:org9efbeb8}
+Earlier today I wrote about creating a "personal media storefront," a
+place where I could maintain a listing of all the things I've made,
+where they're available, and in what formats.
+
+I spent some time prototyping out a collection of \emph{Hugo} templates
+for that purpose, and realized that basically what I'm building is a
+package reposistory, but for media, not software. Since then I've
+tried to think of things in that way - tricky, as I don't know that
+much about how software package managers work. Luckily, I've been
+learning to use \emph{Guix} recently, and that gave me an exposure to its
+package definitions, and gave me some vocabulary to use moving
+forward.
+
+What I was calling a "storefront" - a bad metaphor since I had no
+intention of charging for access to content - I'll now call a
+"channel." I'll have my channel, and you, another content creator,
+would have yours.
+
+I'm picturing a shell script based on \texttt{curl} that can do something
+like \texttt{mepach download -{}-channel "https://mepach.emsenn.net/"
+shaggy-dog-tale}.
+
+This would \texttt{GET} a \texttt{json} file at, say
+\texttt{https://mepach.emsenn.net/get/shaggy-dog-tale}, which would have a
+package definition.
+
+"Mepach" here is a potential name for this project, short for MEdia
+PAckage CHannel. I've just searched online and it doesn't seem to be
+an existing term in computing.
+
+At \texttt{https://mepach.emsenn.net/shaggy-dog-tale} there would be an HTML
+representation of the project, and that's what I've been working on
+most recently.
+
+A thought - in my previous devlog and prototyping, I used different
+\emph{Hugo content types} to categorize content. I don't think I should do
+that, so it is easier to make assumptions about a package's location.
+
+Here's the example package definition I made earlier:
+
+\begin{verbatim}
++++
+title = "A Shaggy Dog Tale"
+description = """This is a story that doesn't go anwhere."""
+
+[v."1.0.1"."github"]
+location = "https://github.com/emsenn/master/"
+formats = ["org", "html"]
+[v."1.0.1"."local"]
+location = "/store/"
+formats = ["org", "html"]
+
+[v."1.0.0"."local"]
+location = "/store/"
+formats = ["org"]
++++
+\end{verbatim}
+\begin{verbatim}
+This story is about a dog that does a lot of things, but never
+ really gets anything done.
+\end{verbatim}
+
+I've split it into two sections because it uses two languages - \emph{TOML}
+for the \emph{Hugo front matter} and \emph{Markdown} for the content.
+
+The first parameters are general facts about the document the package
+is representing - for now, its \texttt{title} and a \texttt{description}. Neither
+needs to be required; a working title can be inferred from the package
+definition's file name, which is required to be the package's "slug,"
+or identifier. The example here is saved at
+\texttt{./content/shaggy-dog-tale.md}.
+
+The \texttt{description} is wrapped in three \texttt{"} instead of one so it can use
+linebreaks - though I might be doing that wrong; I'm not familiar with
+the finer points of \emph{TOML} yet.
+
+Below those general parameters is information about different
+versions.
+
+Each \emph{dictionary} representing a version of the document needs to
+start with \texttt{v}. The dot in-between separates that from the version
+number itself, and the version origin - more on that shortly. So that
+the version number's dots don't get parsed, it's wrapped inside
+quotes. The origin is also wrapped in quotes, since it might contain
+special characters.
+
+The origin is where the document can be found - whether it's available
+locally, or through a \emph{Git forge}, or some other website or protocol.
+
+In the example above, version \texttt{1.0.0} is available through the \texttt{local}
+origin, and version \texttt{1.0.1} is available through the \texttt{local} and
+\texttt{github} origin.
+
+Each \emph{dictionary}, then, specifies a version and origin. I don't have
+a term for this dictionary, perhaps "source dictionary"?
+
+For now, I'll go with that. So each source dictionary contains two
+keys, the \texttt{location} and the \texttt{formats}.
+
+The \texttt{location} says where the files are. The \texttt{formats} say which
+formats are available at that location.
+
+I should be clear, this is the internal format that's used to generate
+the actual package formats - I need to develop a better grasp of terms
+here so I can be more clear. This \emph{TOML} + \emph{Markdown} package
+definition is used on the backend, and will be turned into an actual
+useful package definition by the so-called media package channel
+generator I'm working on.
+
+I've already built a badly-executed \emph{Hugo layout} for turning this
+into an \emph{HTML} page, here's an example of how the above looks. \textbf{Links
+will be broken.}
+
+\paragraph*{A Shaggy Dog Tale}
+\label{sec:org7afe360}
+\begin{itemize}
+\item \textbf{1.0.1}:
+\begin{itemize}
+\item github:
+\begin{itemize}
+\item \href{https://github.com/emsenn/shaggy-dog-tale/blob/master/shaggy-dog-tale.html}{html}
+\item \href{https://github.com/emsenn/shaggy-dog-tale/blob/master/shaggy-dog-tale.org}{org}
+\end{itemize}
+\item local:
+\begin{itemize}
+\item \href{https://mepach.emsenn.net/store/shaggy-dog-tale/1.0.1/shaggy-dog-tale.html}{html}
+\item \href{https://mepach.emsenn.net/store/shaggy-dog-tale/1.0.1/shaggy-dog-tale.org}{org}
+\end{itemize}
+\end{itemize}
+\item \textbf{1.0.0}
+\begin{itemize}
+\item \href{https://mepach.emsenn.net/store/shaggy-dog-tale/1.0.0/shaggy-dog-tale.org}{org}
+\end{itemize}
+\end{itemize}
+
+So to spell it out:
+
+\begin{itemize}
+\item I'll write a package "definition" in \emph{TOML} and \emph{Markdown}. I don't
+like calling this the definition, but don't know what else to call
+it.
+\item Then, \emph{Hugo} will turn that into an \emph{HTML} and a \emph{JSON} file.
+\item Those get made available somewhere on the Web.
+\item Someone can use them as a package definition to download their
+version and format of the document of choice.
+\end{itemize}
+
+The main use here is still, I think, that I'll have a website where
+I'll be able to look up any mirror and old version of my documents.
+
+But the packaging stuff is cool to look at, too.
+\subsection*{Looking at my Org-mode Files}
+\label{sec:org5e8f171}
+I've been using \emph{Org-mode} more and more heavily for the past... year,
+or so.
+
+In that time, I've shuffled a lot of files around in my org-mode
+directory, but without always making sure older parts continued to
+make sense. Most importantly, I have a lot of little \emph{Org-mode macros}
+scattered across different projects, which means every time I export
+anything from that project, it has to load all the macros, and that
+takes time.
+
+So, as I said, I have a a directory named \texttt{org/} in my home directory.
+
+That directory in turn contains these directories:
+\begin{itemize}
+\item \texttt{clients/}
+\item \texttt{personal/}
+\item \texttt{projects/}
+\item \texttt{triage/}
+\end{itemize}
+
+The \texttt{clients/} directory contains a directory for each of my current
+clients, as well as a directory called \texttt{archive/} that contains a
+directory for each of my past clients. Client directories are similar
+in layout to a project directory.
+
+The \texttt{personal/} directory is also laid out like a project, which is,
+it contains two subdirectories, \texttt{pub/} and \texttt{src/}. \texttt{src/} is where the
+\emph{Org-mode} files themselves are located, and \texttt{pub/} is where any
+exported reports go, such as logs I've rendered exported to PDF to
+print out.
+
+The \texttt{projects/} directory has most of my stuff - and when I say that,
+I mean it; almost everything I make is one or more \emph{Org-mode} files.
+Explaining why is outside the scope of this post.
+
+Each project has a \texttt{src/} and \texttt{pub/} directory. Here is a list of
+other files and directories my projects might have:
+
+\begin{itemize}
+\item \texttt{src/setup.inc/} which would contain project-wide \emph{Org-mode}
+configurations. It would be used by other source files in that
+project.
+\item \texttt{src/index.org/} which would be the project's "homepage," if the
+project is rendered as any sort of collection of, or individual,
+HTML documents - which it almost certainly will be.
+\end{itemize}
+
+I'm honestly not able to think of anything else that is common between
+different projects.
+
+Finally, the \texttt{triage/} directory contains \emph{Org-mode} files that I
+haven't decided a better place for yet - such as a new piece of
+writing that I'm unsure if it'll be a letter, post, or what. For
+example, the file I'm writing this text in is in
+\texttt{triage/looking-at-my-org-mode-files.org}.
+
+Having written most of it, though, I'll probably move it into
+\texttt{projects/posts/src/looking-at-my-org-mode-files.org}.
+
+Anyway, that's the layout of my Org-mode directory, as it currently
+stands.
+
+\subsection*{Looking at How I Organize a Document}
+\label{sec:org0ad67c9}
+\subsubsection*{Overview}
+\label{sec:org3a20263}
+In this post I'm going to explain how I'm organizing my documents
+these days. By documents, I mean written texts - stories, essays,
+posts like this one, but also, software. Software might not seem like
+a document, but I use the \emph{literate programming} paradigm when I work
+with a computer, so I write my software as snippets of code inside
+longer essays.
+
+I'll use my \emph{Brutstrap} project as an example in this post. It's
+a relatively simple \emph{CSS} theme I made, so should be an opportunity to
+demonstrate a lot of things without its content getting in the way.
+\subsubsection*{Document Project Layout}
+\label{sec:org7c86384}
+Each document exists in its own directory on my computer, under the
+\texttt{\textasciitilde{}/org/projects/} directory. It's called \texttt{projects} because within
+\emph{Org-mode}, the name for collections of files published together is a
+"project," so each document exists as a "document project."
+Brutstrap's "identifier" is \texttt{brutstrap-css} - that means it's at
+\texttt{\textasciitilde{}/org/projects/brutstrap-css/}.
+
+The root of that directory contains the document in various formats
+(\emph{HTML}, plain-text, \emph{Markdown}, and others), as well as a \texttt{README.md}
+and a \texttt{media-package.json}.
+
+There's also a subdirectory, \texttt{src/}, which contains an \texttt{index.org} and
+subsubdirectory, \texttt{build/} which has in it an \texttt{index.html} and
+\texttt{brutstrap.css}.
+
+The only file I edit by hand is \texttt{src/index.org}, which is an
+\emph{Org-mode} text file. All the other files are created by using
+\emph{Org-mode} features on that file.
+\subsubsection*{The Source File}
+\label{sec:org465a1ec}
+Here's a walkthrough of what's in that file. I'll break it up into the
+front-matter, introduction, document contents, and supplements.
+\paragraph*{Front Matter}
+\label{sec:org35e91f9}
+
+\begin{verbatim}
+#+TITLE: Brutstrap
+#+AUTHOR: emsenn
+#+EXPORT_FILE_NAME: ../brutstrap
+#+MACRO: document-type CSS theme
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="./src/build/brutstrap.css">
+{{{document-brief}}}
+#+TOC: headlines local 4
+\end{verbatim}
+
+Let's look at this line by line:
+
+\begin{itemize}
+\item \texttt{\#+TITLE: Brutstrap}
+\begin{itemize}
+\item This sets the document's title. Fairly self-evident. It's used
+when exporting the document, and also available as a \emph{macro}:
+\texttt{\{\{\{title\}\}\}}. I use \emph{Org-mode macros} a fair amount, they're a
+way to quickly insert pre-assigned text.
+\end{itemize}
+\item \texttt{\#+AUTHOR: emsenn}
+\begin{itemize}
+\item This set's the document's author. Works similar to title.
+\end{itemize}
+\item \texttt{\#+EXPORT\_FILE\_NAME: ../brutstrap}
+\begin{itemize}
+\item This tells \emph{Org-mode} where to put exported copies of the file.
+When I tell \emph{Org-mode} to export \texttt{./src/index.org} as \emph{HTML},
+it'll export to \texttt{./brutstrap.html}.
+\end{itemize}
+\item \texttt{\#+MACRO: document-type CSS theme}
+\begin{itemize}
+\item This sets the \texttt{document-type} macro, which is used by some other
+macros to say what sort of document this is - in this example,
+it's a "CSS theme". Due to how it's used, the document-type is
+assumed to be a singular noun.
+\end{itemize}
+\item \texttt{\#+HTML\_HEAD: <link />}
+\begin{itemize}
+\item I cut out the specifics, but this line tells \emph{Org-mode}: when
+exporting as an HTML file, link to \texttt{./src/build/brutstrap.css} as
+a stylesheet.
+\end{itemize}
+\item \texttt{\{\{\{document-brief\}\}\}}
+\begin{itemize}
+\item This is a macro I've defined in my \emph{Org-mode} configuration, so
+it's available in all my \emph{Org-mode} files. Here's what it's
+defined as:
+\begin{verbatim}
+"{{{title}}}" is a {{{document-type}}} created by {{{author}}}.
+\end{verbatim}
+As you can see, it makes use of the macros defined above.
+\end{itemize}
+\item \texttt{\#+TOC: headlines local 4}
+\begin{itemize}
+\item This generates a table of contents linking to sections and through
+three depths of subsections. (1+3=4)
+\end{itemize}
+\end{itemize}
+
+Past here, the document is divided into three sections: an
+"Introduction," the document contents itself (here, "Brutstrap,") and
+"Supplements."
+\paragraph*{Introduction Section}
+\label{sec:orgf860eac}
+Here's the Introduction:
+
+\begin{verbatim}
+* Introduction
+  :PROPERTIES:
+  :CUSTOM_ID: introduction
+  :END:
+{{{document-is-draft}}}
+
+In this document I explain...
+
+{{{document-eli}}}
+\end{verbatim}
+
+Again, line by line:
+
+\begin{itemize}
+\item \texttt{* Introduction} declares the start of what \emph{Org-mode} calls a
+\emph{subtree}, but what normal people would call a "section". How many
+asterisks lead determine the depth of the section - \texttt{**** Pumpkin}
+means that "Pumpkin" is a subsubsubsection.
+\item \texttt{:PROPERTIES:} declares the start of what \emph{Org-mode} calls a
+\emph{drawer}, which is container for data associated with an element of
+the document - in this case, the Introduction section.
+\item \texttt{:CUSTOM\_ID:} declares what the identifier for this section should
+be, when it's exported. It's a part of the \texttt{PROPERTIES} drawer that
+was just opened. This is the name that anchor links in an \emph{HTML}
+export will point to, for example. If this isn't set, \emph{Org-mode}
+will generate an identifier automatically, something like
+\texttt{org3507c8b}.
+\item \texttt{:END:} declares the close of the \texttt{PROPERTIES} drawer.
+\item \texttt{\{\{\{document-is-draft\}\}\}} is another macro from my \emph{Org-mode}
+configuration:
+\begin{verbatim}
+This {{{document-type}}} is a /draft/: it is unfinished and that
+should be considered when reading it. Special attention should be paid
+to text marked DRAFT, EDIT, or TK.
+\end{verbatim}
+\item \texttt{In this document I explain...} is an abridged version of the
+paragraph that's actually there, that explains the broad strokes of
+what \emph{Brutstrap} is, how it's meant to look, and so on.
+\item =This post was created by me, emsenn, in the United States. To the extent possible under law, I have waived all copyright and related or neighboring rights to this document. This document was created for the benefit of the public. If you're viewing it on a remote server, you're encouraged to download your own copy. To learn how you can support me, see \href{https://emsenn.net/donate}{https://emsenn.net/donate}. is yet another macro from my \emph{Org-mode}
+configuration. This one is a bit unusual, it's set to
+\texttt{\{\{\{document-eli-\$1\}\}\}}. \emph{Org-mode} passes text after the macro
+name, between paratheses, as arguments, separated by commas. So,
+\texttt{\{\{\{document-eli(default)\}\}\}} translates to
+\texttt{\{\{\{document-eli-default\}\}\}}. Why don't I just do
+\texttt{\{\{\{document-eli-default\}\}\}} in the source file then? This way I can
+change how macro is rendered across all files, just by updating the
+\texttt{document-eli} macro. So, what does \texttt{document-eli-default} expand
+out to?
+\begin{verbatim}
+This {{{document-type}}} was created by me, emsenn, in the United
+States. To the extent possible under law, I have waived all copyright
+and related or neighboring rights to this document. This document was
+created for the benefit of the public. If you're viewing it on a
+remote server, you're encouraged to download your own copy. To learn
+how you can support me, see
+[[https://emsenn.net/donate][https://emsenn.net/donate]].
+\end{verbatim}
+Oh - it might help to say what "eli" is short for: \emph{editorial and
+licensing information}: a declaration of the author and the rights
+assocated with the document. I assume I'm the author, and that the
+rights are "released into the public domain."
+\end{itemize}
+\paragraph*{Document Contents}
+\label{sec:org8472732}
+That's it for the "Introduction". The "Brutstrap" section contains the
+\emph{Brutstrap} theme itself - explaining how I \emph{literately program} CSS
+is beyond the scope of this document. In short, using \emph{Babel}, I'm
+able to write short blocks of CSS, and extract them out to
+\texttt{./src/build/brutstrap.css}.
+\paragraph*{Supplements Section}
+\label{sec:orgf59bde1}
+The "Supplements" section contains four subsections:
+\begin{itemize}
+\item "Example Texts"
+This section contains two subsections:
+\begin{itemize}
+\item "Complete Stylesheet," uses \emph{Org-mode's} inclusion feature to pull
+in \texttt{./src/build/brustrap.css} - which is itself extracted from the
+"Brutstrap" section above.
+\item "Demonstration HTML," is a source block that, again using \emph{Babel},
+is written to \texttt{./src/build/index.html}
+\end{itemize}
+\item "Index"
+\begin{itemize}
+\item This section uses \emph{Org-mode's} dictionary list feature to present
+a list of proper terms mentioned in the document. Here's an
+excerpt from \emph{Brutstrap's} index:
+\begin{verbatim}
+- brutalism :: {{{ref(brutalism)}}}
+- Brutstrap :: {{{ref(brutstrap)}}}
+- CSS :: {{{ref(css)}}}
+- HTML :: {{{ref(html)}}}
+\end{verbatim}
+This introduces a new macro: \texttt{ref}. This is, like the others,
+defined in my \emph{Org-mode} configuration, and is: \texttt{\{\{\{define(\$1)\}\}\}
+    \{\{\{source(\$1)\}\}\}}. \texttt{define} is defined as \texttt{\{\{\{\$1-definition\}\}\}}
+and \texttt{source} is defined as \texttt{\{\{\{\$1-source\}\}\}.}. For each term, then,
+I have two macros, for example for Brutalism I have
+\texttt{brutalism-definition} and \texttt{brutalism-source}. The definition is
+simple a sentence defining the term, and the source is... a call
+to yet another macro:
+\texttt{\{\{\{source-link(https://en.wikipedia.org/wiki/Brutalist\_architecture)\}\}\}}.
+
+\texttt{source-link} is defined as \texttt{See [[\$1][\$1]]} which is \emph{Org-mode}
+formatting for a link whose anchor text is the URI it directs to.
+
+So, the final entry for \emph{brutalism} would be:
+\begin{verbatim}
+- Brutalism :: A style exaggerating the pragmatic functionality
+	       present in modernist design. See
+	       https://en.wikipedia.org/wiki/Brutalist_architecture.
+\end{verbatim}
+\end{itemize}
+\item "Media Package"
+\end{itemize}
+This section contains a \emph{JSON} source block which implements a
+specification I'm developing for what I'm calling a \emph{media package},
+which is a manifest of information about a piece of media content.
+
+Explaining that is beyond the scope of this document, in part because
+it's in development, so I'll just show the \emph{JSON} here:
+\begin{verbatim}
+"brutstrap-css": {
+    name: "Brutstrap",
+    creator: "emsenn",
+    license: "CC0",
+    languages: ["en_US","CSS","HTML"],
+    versions: {
+	"current": {
+	    "sourcehut": {
+		"location": "https://git.sr.ht/~emsenn/brutstrap-css/blob/master/",
+		"formats": ["html","md","pdf","tex","txt"]
+	    }
+	}
+    }
+}
+\end{verbatim}
+\begin{itemize}
+\item "README"
+\begin{itemize}
+\item The "README" section is used to generate a \texttt{README.md} at the root
+of the project, as that file is often used by \emph{Git forges} to
+generate the project's "homepage" on the forge. It contains three
+thing:
+\begin{itemize}
+\item It sets the \texttt{PROPERTY} of \texttt{EXPORT\_FILE\_NAME} to
+\end{itemize}
+\texttt{../README}, so that when this section is exported, as say
+\emph{Markdown}, it will be exported to \texttt{./README.md}.
+\begin{itemize}
+\item Then, it has the line \texttt{*** \{\{\{title\}\}\}} which creates a
+subsection under itself using the document's title.
+\item Then, it includes the "Introduction" section from
+\texttt{./src/index.org} - itself - but only the contents, not the
+title.
+\end{itemize}
+\end{itemize}
+Here's what the section looks like in the source file:
+\begin{verbatim}
+*** README
+    :PROPERTIES:
+    :EXPORT_FILE_NAME: ../README
+    :CUSTOM_ID: readme
+    :END:
+**** {{{title}}}
+#+INCLUDE: "./index.org::#introduction" :only-contents t
+\end{verbatim}
+
+And here's what \texttt{./README.md} looks like - with the paragraphs cut
+down.
+\begin{verbatim}
+# Brutstrap
+
+This CSS theme is a *draft*...
+
+In this document I explain...
+
+This CSS theme was created by...
+\end{verbatim}
+\end{itemize}
+\subsubsection*{Conclusion}
+\label{sec:orgc9b76bd}
+And so that's it, how I manage a document as a project, exporting it
+to various different formats, maintaining a README, and so on, by just
+editing one file for each document, one at \texttt{./src/index.org}.
+\subsubsection*{Index}
+\label{sec:orgb1e449d}
+\begin{description}
+\item[{brutalism}] A style exaggerating the pragmatic functionality present in modernist design. See \href{https://en.wikipedia.org/wiki/Brutalist\_architecture}{https://en.wikipedia.org/wiki/Brutalist\_architecture}
+\item[{Brutstrap}]
+
+\item[{CSS}]
+
+\item[{JSON}] A human-readable data format. See \href{https://json.org/}{https://json.org/}.
+\item[{literate programming}]
+
+\item[{Markdown}] A way of adding style notation to plain text. \url{https://daringfireball.net/projects/markdown/}
+\item[{Org-mode Babel}] A software tool for using code integrated into \emph{Org-mode} documents. See \href{https://orgmode.org/worg/org-contrib/babel/intro.html}{https://orgmode.org/worg/org-contrib/babel/intro.html}
+\item[{Org-mode macros}] A way to replace text in a source document when it is exported to a rendered document. See \href{https://orgmode.org/manual/Macro-replacement.html}{https://orgmode.org/manual/Macro-replacement.html}
+\item[{Org-mode}] A way of formatting plain data inside text documents. See \href{https://orgmode.org/}{https://orgmode.org/}  or \#OrgMode.
+\end{description}
+\subsection*{Planning a Personal Website with Hugo}
+\label{sec:orgfaa5a66}
+So I've been going through my various online representations, trying
+to figure out what each one is for, and what I'm missing. Part of that
+has been moving my "blog," such as it was, off of my main homepage and
+moving it to a dedicated platform for \emph{broadcasting} writing. Now, I'm
+using \emph{WriteFreely} at \texttt{posts.emsenn.net} to share some of my longer
+but more informal writing - this text is probably going to go there.
+
+This leaves \texttt{emsenn.net} free to be mine, rather than belonging to my
+writing. You might think this would leave me without much content to
+put there, and in way, that's true, but there's also still a \emph{lot} of
+information that one can provide about oneself to be a filled-out
+digital representation.
+
+A note - I'm going to be using terms like agent, representation,
+avatar, user, person, and so on as I write about this stuff, and I'll
+be doing so without what I hope is my usual precision. I'm not sure
+how I want to train myself to think about these things yet, so I'm not
+sure what terms I want to use for which concepts. I apologize if the
+current indecision makes this writing less intelligible or more
+verbose.
+
+So, \texttt{emsenn.net} is free to be my "personal website." Now... to think
+about what that means. It'd need to have information about me, as a
+person. I often find myself wanting to link to info about how to
+donate to me. I maintain a list of things I recommend folk read. I
+also maintain a list of my recent activities, my plans, and I'd like
+to start keeping a list of things I'm looking for help with.
+
+There's also things that are a part of the \emph{IndieWeb} that I'd like to
+add, and other things like a \texttt{/now/} page, which would have my most
+recent activities.
+
+I put some thought into this the other night and I think the way I'd
+like to implement this is as a static \emph{HTML} website - there's nothing
+I do so rapidly that people need a second-by-second update of it.
+
+\emph{Hugo} is my static site generator of choice - it's powerful enough to
+do everything I've wanted to do with it, without relying on your final
+site having \emph{Javascript} (or being very particular about avoiding it.)
+
+I want to do things properly this time though - and by properly, I
+mean in such a way that what I'm making can be useful for other people
+who'd like to make a site like mine, but with their own information.
+
+As I understand it, this means organizing the components as \emph{Hugo
+themes}. \emph{Hugo} uses what it calls \emph{layouts} to determine how to
+render a document, and follows a \emph{lookup order} to determine which
+layout to use.
+
+So, I think I'll start by making a new project,
+\texttt{hugo-personal-website-theme}, that'll be a \emph{Hugo} theme, and used by
+the \texttt{emsenn-website} project, that'll be a \emph{Hugo} website.
+
+That's about all I can write on the topic until I take the first steps
+toward implementation.
+\subsubsection*{Index}
+\label{sec:org93da482}
+\begin{description}
+\item[{broadcast}] To send a piece of information to \emph{subscribers} or into a public area.
+\item[{HTML}] A way of adding layout, formatting, and media to text documents. See \href{https://en.wikipedia.org/wiki/HTML}{https://en.wikipedia.org/wiki/HTML}.
+\item[{Hugo, layout}] The framework which determines what is in a rendered document and how it appears. See \href{https://gohugo.io/templates/lookup-order/}{https://gohugo.io/templates/lookup-order/}
+\item[{Hugo, lookup order}] The order in which \emph{Hugo} looks up which layout(s) to apply to a page. See \href{https://gohugo.io/templates/lookup-order/\#readout}{https://gohugo.io/templates/lookup-order/\#readout}.
+\item[{Hugo}] A software tool for creating rendered documents from formatted text files. See \href{https://gohugo.io/}{https://gohugo.io/}
+\item[{Hugo, themes}] Collections of layouts for use by the \emph{Hugo} static site generator. \url{https://gohugo.io/themes/}
+\item[{IndieWeb}] A set of data specifications and software utilities for coordinating the serialization of social data. See \href{https://indieweb.org/}{https://indieweb.org/}.
+\item[{Javascript}] An interpretted programming language used frequently in Web development. See \href{https://en.wikipedia.org/wiki/JavaScript}{https://en.wikipedia.org/wiki/JavaScript}.
+\item[{WriteFreely}] A software service for broadcasting long text documents. See See \href{https://writefreely.org/}{https://writefreely.org/} or \#WriteFreely.
+\end{description}
+\subsection*{Implementing a Personal Website with Hugo, Netlify, Org-mode, and Ox-Hugo}
+\label{sec:orgfb06bce}
+I've been reworking my online presence recently, and part of that has
+been to change how I handle the website at \texttt{emsenn.net}.
+
+I've put a fair bit of thought into the generalities of how I want to
+handle it, but not the specifics. But first, let's look at the parts
+of my online identity I have set up right now, that I don't have any
+plans to change:
+
+\begin{itemize}
+\item I conduct \emph{email} through \href{mailto:emsenn@emsenn.net}{emsenn@emsenn.net}.
+\item I post publicly at \href{https://posts.emsenn.net}{https://posts.emsenn.net}. Those posts are also
+available through an \emph{email list}, at
+\href{https://posts.emsenn.net/\#subscribe}{https://posts.emsenn.net/\#subscribe}. They're also available as an
+\emph{RSS} feed at \href{https://posts.emsenn.net/feed/}{https://posts.emsenn.net/feed/} and through the
+\emph{ActivityPub} protocol at \texttt{@emsenn@posts.emsenn.net}.
+\item I do two-way communication through \emph{ActivityPub} at
+\texttt{@emsenn@tenforward.social}. You can view the public posts
+associated with that account at \href{https://tenforward.social/@emsenn}{https://tenforward.social/@emsenn}.
+\item My primary \emph{Git forge} is \emph{Sourcehut}, at \href{https://git.sr.ht/\~emsenn}{https://git.sr.ht/\textasciitilde{}emsenn}.
+I like its approach to using existing tools properly, rather than
+adding on new tools, when it comes to stuff like bug-tracking. (Even
+though I don't use those features.
+\begin{itemize}
+\item I use \emph{Gitlab} to mirror my projects on \emph{Sourcehut}, at
+\href{https://gitlab.com/emsenn}{https://gitlab.com/emsenn}.
+\item I also mirror them on \emph{Github} at \href{https://github.com/emsenn}{https://github.com/emsenn}.
+\end{itemize}
+\end{itemize}
+
+I'm not sure what the full scope of \texttt{emsenn.net} will be, but I don't
+plan on it being a \emph{dynamic website} - nothing I do happens so rapidly
+that I need to run something like that: I can serve up \emph{static}
+resources like HTML and JSON files, that are compiled well in advance
+of the request.
+
+I like \emph{Hugo} as my \emph{static site generator} - it's powerful enough to
+meet my needs without being so powerful I get bogged down in different
+ways to do things.
+
+So, I know that's one part of my \emph{software stack}: the layers of
+software used to accomplish a task.
+
+I also like \emph{Netlify} as a \emph{webhost} for \emph{static websites} - they have
+an incredible amount of features, that don't get in the way until you
+want them there. That's one end of the \emph{stack}: publishing on
+\emph{Netlify}.
+
+Netlify can source its sites from three \emph{Git forges}: \emph{Gitlab},
+\emph{Github}, and \emph{Bitbucket}. I prefer \emph{Gitlab} to \emph{Github}, since
+\emph{Gitlab} is funded by users rather than owned by \emph{Microsoft}, so I'll
+use \emph{Gitlab} as the source for \emph{Netlify}. And since the \emph{Gitlab} repo
+is simply a mirror of the \emph{Sourcehut} \emph{Git forge}, which is in turn
+just a presentation of my local \emph{Git repository}, that gives me four
+sequenced tools in the \emph{stack}: \emph{Git} to \emph{Sourcehut} to \emph{Gitlab} to
+\emph{Netlify}.
+
+That still leaves what is in the \emph{Git repo} unsorted, as well as how
+it gets built by \emph{Hugo}. It's been a bit since I've worked with
+\emph{Netlify} and \emph{Hugo} and all this, and I was never that experienced
+with it when I was, so at this point,  I'll need to start setting
+things up before fleshing out that part of the \emph{stack}.
+
+So let's look at instead what I'm working with as the \emph{source code}
+for the website. It's organized like any of my other projects, under
+the \texttt{\textasciitilde{}/org/projects/} directory on my server. Here's what the
+\texttt{emsenn-website} directory under that looks like:
+
+\begin{verbatim}
+./
+ | README.md
+ | emsenn-website.html
+ | emsenn-website.org
+ | emsenn-website.pdf
+ | emsenn-website.tex
+ | src/
+      | emsenn-website.org
+      | build/
+	     | content/
+	     |        | <site pages go here>
+	     | data/
+	     |     | <site data goes here>
+	     | themes/
+	     |       | hugo-personal-website-theme/
+	     | config.toml
+\end{verbatim}
+
+The only file I edit by-hand is \texttt{./src/emsenn-website.org} - the other
+files are \emph{tangled} from it - extracted from code blocks written into
+the text of \texttt{./src/emsenn-website.org}.
+
+Here's an overview of that document's sections:
+
+\begin{itemize}
+\item "Operations" has shell scripts and instructions for working with
+the source file or otherwise working with the personal site. Any of
+the shell scripts can be run from inside \emph{Org-mode}, and the results
+included in any exported document, if that's useful.
+\item "Hugo Configuration" has \emph{Hugo configuration}. Pretty simple. It's
+extracted from this source file by using \emph{Babel} to \emph{tangle}
+(extract) the configuration.
+\item "Content Pages" has sections for the website's pages. They're
+exported with \emph{Ox-Hugo}, an \emph{Emacs} package for exporting \emph{Org-mode}
+to \emph{Hugo}-compatible \emph{Markdown}. These files end up in
+\texttt{./src/build/content/}.
+\item "Site Data" has some \emph{TOML} files that have information about my
+recent activities and plans, for now. These files end up in
+\texttt{./src/build/data/}
+\end{itemize}
+
+The themes directory contains a directory,
+\texttt{hugo-personal-website-theme}, which is a \emph{Hugo theme} that I'm
+working on - I'll probably write about it elsewhere.
+
+\subsubsection*{Index}
+\label{sec:org4180f04}
+\begin{description}
+\item[{Markdown}]
+
+\item[{Hugo}]
+
+\item[{Hugo theme}]
+
+\item[{TOML}]
+
+\item[{Ox-Hugo}]
+
+\item[{Org-mode}]
+
+\item[{Hugo configuration}]
+
+\item[{Babel}]
+
+\item[{Babel tangle}]
+
+\item[{ActivityPub}]
+
+\item[{Bitbucket}]
+
+\item[{email}]
+
+\item[{email list}]
+
+\item[{Git}]
+
+\item[{Git repository}]
+
+\item[{Git forge}]
+
+\item[{Github}]
+
+\item[{Gitlab}]
+
+\item[{Hugo}]
+
+\item[{Microsoft}]
+
+\item[{Netlify}]
+
+\item[{Org-mode}]
+
+\item[{Ox-Hugo}]
+
+\item[{RSS}]
+
+\item[{software stack}]
+
+\item[{Sourcehut}]
+
+\item[{website, dynamic}]
+
+\item[{website, static}]
+\end{description}
+\end{document}

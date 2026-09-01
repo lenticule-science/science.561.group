@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Weiqi — learn by playing</title>
+<meta
+  name="description"
+  content="An interactive, entirely client-side weiqi curriculum: a board, a capture-go tutorial, interactive lessons, a tsumego player, a free sandbox, and a searchable glossary — every rules event the kernel recognizes links back to the term that defines it."
+/>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="#/" data-route="home">Weiqi</a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#/tutorial" data-route="tutorial">Tutorial</a>
+      <a href="#/lessons" data-route="lessons">Lessons</a>
+      <a href="#/tsumego" data-route="tsumego">Tsumego</a>
+      <a href="#/sandbox" data-route="sandbox">Sandbox</a>
+      <a href="#/glossary" data-route="glossary">Glossary</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" tabindex="-1"></main>
+
+<footer class="site-footer">
+  <p>Entirely client-side. No accounts, no server state, no network requests once this page has loaded.</p>
+</footer>
+
+<script type="module" src="js/app.mjs"></script>
+</body>
+</html>

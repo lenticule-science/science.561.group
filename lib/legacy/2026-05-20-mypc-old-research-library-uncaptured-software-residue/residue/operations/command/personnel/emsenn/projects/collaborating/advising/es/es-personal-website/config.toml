@@ -1,0 +1,13 @@
+baseURL = "https://edavis.netlify.app"
+languageCode = "en-us"
+title = "Esther Davis"
+[menu]
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = -110
+
+  [[menu.main]]
+    name = "Portfolio"
+    url = "/portfolio/"
+    weight = -100

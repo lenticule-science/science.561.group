@@ -1,0 +1,77 @@
+id: dispatch-skill
+description: "Reads a skill file's dispatch frontmatter, reasons through the routing rules to pick a route, then calls the matching runbook or skill with the provided arguments."
+skill-closure-kind: process
+
+inputs:
+  - name: skill_path
+    type: str
+    description: "Path to the skill file with a dispatch block in its frontmatter"
+  - name: arguments
+    type: dict
+    description: "Key-value arguments to pass to the resolved route"
+
+outputs:
+  - name: result
+    from: "{{execute-route.result}}"
+
+steps:
+  - id: read-dispatch
+    type: script
+    cmd: |
+      python3 -c "
+      import yaml, sys
+      with open('{{inputs.skill_path}}') as f:
+          content = f.read()
+      # Parse frontmatter
+      parts = content.split('---', 2)
+      fm = yaml.safe_load(parts[1]) if len(parts) >= 3 else {}
+      dispatch = fm.get('dispatch', {})
+      import json
+      print(json.dumps(dispatch))
+      "
+
+  - id: resolve-route
+    type: llm-call
+    system_prompt: |
+      You are resolving a dispatch rule to a route key.
+
+      Dispatch config:
+      {{read-dispatch.result}}
+
+      Arguments provided:
+      {{inputs.arguments | json}}
+
+      The dispatch block has:
+      - `input`: which argument name drives the decision
+      - `reason`: natural-language rules explaining how to map the input value to a route key
+      - `routes`: the available route keys
+
+      Apply the `reason` rules to the value of the `input` argument.
+      Return exactly one route key from the `routes` map — nothing else.
+    user_input: "Resolve to a route key."
+    result_type: str
+
+  - id: execute-route
+    type: script
+    cmd: |
+      python3 -c "
+      import json, yaml, subprocess, sys
+
+      dispatch = json.loads('''{{read-dispatch.result}}''')
+      route_key = '{{resolve-route.result}}'.strip()
+      routes = dispatch.get('routes', {})
+      target = routes.get(route_key)
+
+      if target is None:
+          print(f'No route for key: {route_key}', file=sys.stderr)
+          sys.exit(1)
+
+      args = json.loads('''{{inputs.arguments | json}}''')
+
+      # If target is a sequence, run each in order
+      if isinstance(target, dict) and 'sequence' in target:
+          for step in target['sequence']:
+              print(f'[dispatch] running {step}')
+      else:
+          print(f'[dispatch] running {target} with {args}')
+      "

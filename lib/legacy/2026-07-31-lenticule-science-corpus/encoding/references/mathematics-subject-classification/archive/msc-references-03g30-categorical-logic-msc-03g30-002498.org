@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       40d76c55-c440-40c8-aef2-e03d794d3e25
+:NODE-RELATIONS: (([[id:bee496e1-139b-4a7f-8a24-d4c14e6084c6][instantiates]] . [[id:eca9d892-9471-47bb-a3b7-d0d8b6957ddc][Mathematics Subject Classification]]) ([[id:4695cc5c-70e9-442f-8a89-4b14fff5be3e][subject]] . [[id:906f5079-37e7-441c-91cd-86c954f81ccd][categorical logic]]))
+:END:
+#+title: 03G30
+#+date: [2025-10-09 Thu 12:33]
+

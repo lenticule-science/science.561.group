@@ -1,0 +1,23 @@
+{{- /*  Return a short clause describing a page, suitable for in-sentence
+        embedding ("My latest letter is about $X").
+
+        Resolution order:
+          1. .Params.short-description       — author-curated in-sentence form
+          2. first sentence of .Description  — truncated cleanly at first . ! ?
+          3. .Title                          — last-resort fallback                  */ -}}
+
+{{- $result := .Title -}}
+{{- $short := index .Params "short-description" -}}
+{{- with $short -}}
+  {{- $result = . -}}
+{{- else -}}
+  {{- with .Description -}}
+    {{- $matches := findRESubmatch `^([^.!?]+[.!?])` . 1 -}}
+    {{- if $matches -}}
+      {{- $result = index (index $matches 0) 1 -}}
+    {{- else -}}
+      {{- $result = . -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $result -}}

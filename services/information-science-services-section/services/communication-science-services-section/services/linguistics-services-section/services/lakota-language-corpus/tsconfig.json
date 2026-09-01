@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "es2023",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "allowImportingTsExtensions": true,
+    "lib": ["es2023"],
+    "types": ["node"],
+
+    "strict": true,
+
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+
+    "noEmit": true,
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*.mts"],
+  // communicate-serve.mts imports `serve` from @emsenn/relating, which does not
+  // exist in the pinned-and-published relating@0.0.0 (the script was written
+  // against a later, never-published build). Excluded rather than hacked;
+  // recorded as a Known limitation in README.md.
+  "exclude": ["src/scripts/communicate-serve.mts"]
+}

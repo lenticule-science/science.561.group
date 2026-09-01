@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       65a5f623-1600-459d-9c0e-4887ef3239da
+:resource-description: (([[id:edaef069-c68d-46aa-a970-d3cb7fe3165c][resource type]] . [[id:fd6ecbed-9bdf-4570-b4b2-5ff7744c0a96][concept]]) ([[id:5950d59a-8d30-47e6-939c-171327e23b44][creator]] . [[id:c979ca4d-1cfa-43bf-b079-f9c416f58ddd][Walter Benjamin]]))
+:public:   true
+:END:
+#+title: mythic time
+#+date: [2025-09-20 Sat 10:26]

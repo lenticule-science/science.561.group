@@ -1,0 +1,10 @@
+* Assets
+** Personal
+** House
+*** Garage
+**** Storage
+:LOGBOOK:
+- Note taken on [2021-10-23 Sat 21:39] \\
+  2021-10-23 open Assets:Personal:House:Garage:Storage
+:END:
+* Liabilities

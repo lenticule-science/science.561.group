@@ -1,0 +1,20 @@
+#+title: genocide
+#+begin_head
+#+ghe_schema: record-0.1.3
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-24 Thu 12:10]
+#+end_head
+
+#+name: definition
+*/Genocide/* is the intentional mass-murder of a group of people.
+
+#toc: headlines 2
+* Intrododuction
+* genocide
+* Supplements
+** Record history
+   :LOGBOOK:
+   - Note taken on [2020-12-24 Thu 12:10] \\
+     Created
+   :END:

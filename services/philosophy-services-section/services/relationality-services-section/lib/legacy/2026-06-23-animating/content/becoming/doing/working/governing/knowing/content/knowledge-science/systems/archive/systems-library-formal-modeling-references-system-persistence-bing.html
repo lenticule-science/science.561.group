@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-09-23 Tue 18:30 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>An Axiomatic Framework for System Persistence (Technical Draft)</title>
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'JavaScript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">An Axiomatic Framework for System Persistence (Technical Draft)</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org8c26b00">1. Abstract</a></li>
+<li><a href="#org17caea2">2. 1. Introduction</a></li>
+<li><a href="#org98b6d6d">3. 2. Notation and Primitive Objects</a>
+<ul>
+<li><a href="#orgec162aa">3.1. Process and dynamics</a></li>
+<li><a href="#org614ea66">3.2. Determination and persistence</a></li>
+<li><a href="#org12b618e">3.3. Disturbance model</a></li>
+<li><a href="#orgb8b7b9a">3.4. Resource model</a></li>
+<li><a href="#org1a0d65c">3.5. Metrics and functionals</a></li>
+</ul>
+</li>
+<li><a href="#orga12e8d1">4. 3. Axioms</a>
+<ul>
+<li><a href="#org857568f">4.1. Axiom 1 (Bounded Regulator)</a></li>
+<li><a href="#orge1536ad">4.2. Axiom 2 (Disturbance Volatility)</a></li>
+<li><a href="#orgf397a7e">4.3. Axiom 3 (Distributional Drift)</a></li>
+</ul>
+</li>
+<li><a href="#orgf704206">5. 4. Operators: Definitions and Certifying Inequalities</a>
+<ul>
+<li><a href="#org7916ccc">5.1. 4.1 Heterogeneity-Reduction Operator \(\mathcal{H}\)</a></li>
+<li><a href="#org45d738c">5.2. 4.2 Buffering Operator \(\mathcal{B}\)</a></li>
+<li><a href="#org6010763">5.3. 4.3 Option-Generation Operator \(\mathcal{O}\)</a></li>
+</ul>
+</li>
+<li><a href="#orgcee7245">6. 5. Necessity Lemmas</a>
+<ul>
+<li><a href="#org7d6f6a4">6.1. Lemma 1 (Necessity of \(\mathcal{H}\))</a></li>
+<li><a href="#org7871b1b">6.2. Lemma 2 (Necessity of \(\mathcal{B}\))</a></li>
+<li><a href="#org728f384">6.3. Lemma 3 (Necessity of \(\mathcal{O}\))</a></li>
+</ul>
+</li>
+<li><a href="#org7462889">7. 6. Theorem: Invariances of Determination</a>
+<ul>
+<li><a href="#org6ec1109">7.1. Theorem 1</a></li>
+</ul>
+</li>
+<li><a href="#org07d709c">8. 7. Failure Signatures (Technical Labels)</a></li>
+<li><a href="#orgcdc0951">9. 8. Trade-offs, Pareto Structure, and Canonical Allocation</a>
+<ul>
+<li><a href="#org06e4b5f">9.1. 8.1 Normalized capacities and cost</a></li>
+<li><a href="#orgf70e4a7">9.2. 8.2 Feasible set and Pareto frontier</a></li>
+<li><a href="#orgc928a99">9.3. 8.3 Emergent canonical point (no exogenous utility)</a></li>
+</ul>
+</li>
+<li><a href="#orgac0d27d">10. 9. Measurement and Estimation (Examples of \(\mathbf{H}_{\mathrm{eff}},\mathbf{B},\mathbf{O}\))</a></li>
+<li><a href="#orgb981cc3">11. 10. Scope, Assumptions, and Extensions</a></li>
+<li><a href="#orga4b047d">12. Appendix A: LTI Illustration (Sketch)</a></li>
+<li><a href="#org8ef387c">13. Appendix B: Viability, Pareto, and Selection (Formal Definitions)</a>
+<ul>
+<li><a href="#org183d1a2">13.1. Viability kernel</a></li>
+<li><a href="#org469f606">13.2. Pareto frontier</a></li>
+<li><a href="#org985127e">13.3. Canonical point (weighted costs)</a></li>
+</ul>
+</li>
+<li><a href="#org1b7d631">14. Appendix C: Diagnostic Checklist (Operator-Centric)</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8c26b00" class="outline-2">
+<h2 id="org8c26b00"><span class="section-number-2">1.</span> Abstract</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+We formalize three operator-level invariances necessary for any process to persist under disturbance and change. From three minimal axioms—*Bounded Regulator*, <b>Disturbance Volatility</b>, and <b>Distributional Drift*—we derive the necessity of (i) an input *heterogeneity-reduction</b> operator \(\mathcal{H}\), (ii) a <b>buffering</b> operator \(\mathcal{B}\), and (iii) an <b>option-generation</b> operator \(\mathcal{O}\). Each operator is defined as a mapping on the process and/or its disturbance space, accompanied by measurable functionals that certify sufficiency. We characterize trade-offs via a resource-constrained Pareto frontier and show that a canonical allocation emerges from viability thresholds without exogenous utility weights.
+</p>
+</div>
+</div>
+<div id="outline-container-org17caea2" class="outline-2">
+<h2 id="org17caea2"><span class="section-number-2">2.</span> 1. Introduction</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Persistence in dynamic environments is a core question across cybernetics, control, ecology, and social systems. Existing accounts are typically domain-bound. Here we abstract to the level of <b>processes</b> (state transitions under disturbance) and prove that three operator classes are invariantly required for persistence. Our emphasis is on mappings and certifying inequalities rather than outcomes: we specify <b>what must be implemented</b> (operators and bounds) for determination to continue.
+</p>
+</div>
+</div>
+<div id="outline-container-org98b6d6d" class="outline-2">
+<h2 id="org98b6d6d"><span class="section-number-2">3.</span> 2. Notation and Primitive Objects</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-orgec162aa" class="outline-3">
+<h3 id="orgec162aa"><span class="section-number-3">3.1.</span> Process and dynamics</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+Let a <b>process</b> \(P\) be a tuple \(P=(X,U,D,\Phi)\) with state space \(X\), control/input space \(U\), disturbance space \(D\), and transition map
+\[
+x_{t+1}=\Phi(x_t,u_t,d_t),\qquad \Phi: X\times U\times D\to X.
+\]
+We assume discrete time for clarity; continuous-time analogues follow mutatis mutandis.
+</p>
+</div>
+</div>
+<div id="outline-container-org614ea66" class="outline-3">
+<h3 id="org614ea66"><span class="section-number-3">3.2.</span> Determination and persistence</h3>
+<div class="outline-text-3" id="text-3-2">
+<ul class="org-ul">
+<li><b>Determination</b> is the application of \(\Phi\) at each step.</li>
+<li><b>Persistence</b> over horizon \(T>0\) means: there exists a compact <b>viability set</b> \(\mathcal{V}\subseteq X\) such that, under admissible controls \(u_t\) and realized disturbances \(d_t\), the trajectory remains in \(\mathcal{V}\) with probability \(\ge 1-\delta\) (for some tolerance \(\delta\in[0,1)\)) for all \(t\le T\).</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org12b618e" class="outline-3">
+<h3 id="org12b618e"><span class="section-number-3">3.3.</span> Disturbance model</h3>
+<div class="outline-text-3" id="text-3-3">
+<p>
+Let \(D\) be endowed with a \(\sigma\)-algebra and disturbance law \(P_t\) (possibly non-stationary). Write \(d_t\sim P_t\).
+</p>
+</div>
+</div>
+<div id="outline-container-orgb8b7b9a" class="outline-3">
+<h3 id="orgb8b7b9a"><span class="section-number-3">3.4.</span> Resource model</h3>
+<div class="outline-text-3" id="text-3-4">
+<p>
+Let \(\mathcal{R}>0\) denote a bound on regulatory capacity; let \(R>0\) denote a budget for implementing operators (Section 6).
+</p>
+</div>
+</div>
+<div id="outline-container-org1a0d65c" class="outline-3">
+<h3 id="org1a0d65c"><span class="section-number-3">3.5.</span> Metrics and functionals</h3>
+<div class="outline-text-3" id="text-3-5">
+<p>
+We will use:
+</p>
+<ul class="org-ul">
+<li>\(\mathbf{H}_{\mathrm{eff}}(\cdot)\): an <b>effective heterogeneity</b> functional on disturbances (e.g., entropy, covering number, or expected number of disturbance classes after coarse-graining). Monotone w.r.t. refinement.</li>
+<li>\(\mathbf{B}(\cdot)\): a <b>buffer adequacy</b> functional (e.g., variance attenuation, stock-to-flow ratio, or an input-to-state stability gain).</li>
+<li>\(\mathbf{O}(\cdot)\): an <b>option capacity</b> functional on the process (e.g., volume of reachable set under constraints, rank of controllability Gramian, or diversity index of feasible policies).</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orga12e8d1" class="outline-2">
+<h2 id="orga12e8d1"><span class="section-number-2">4.</span> 3. Axioms</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org857568f" class="outline-3">
+<h3 id="org857568f"><span class="section-number-3">4.1.</span> Axiom 1 (Bounded Regulator)</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+There exists \(\mathcal{R}\in\mathbb{R}_{+}\) such that if \(\mathbf{H}_{\mathrm{eff}}(P_t)>\mathcal{R}\) for some \(t\), persistence fails. (Requisite variety bound.)
+</p>
+</div>
+</div>
+<div id="outline-container-orge1536ad" class="outline-3">
+<h3 id="orge1536ad"><span class="section-number-3">4.2.</span> Axiom 2 (Disturbance Volatility)</h3>
+<div class="outline-text-3" id="text-4-2">
+<p>
+Disturbances exhibit nontrivial variance and bursts: there exist times \(t\) for which \(\mathrm{Var}_{P_t}[d_t]\) and/or tail probabilities are large enough that, absent local absorption, the induced state increment exceeds viability bounds.
+</p>
+</div>
+</div>
+<div id="outline-container-orgf397a7e" class="outline-3">
+<h3 id="orgf397a7e"><span class="section-number-3">4.3.</span> Axiom 3 (Distributional Drift)</h3>
+<div class="outline-text-3" id="text-4-3">
+<p>
+Over any sufficiently long horizon, the disturbance law changes: \(P_{t+\tau}\neq P_t\) for some \(\tau>0\). Fixed response policies become mismatched; persistence requires adaptability in the determination process.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf704206" class="outline-2">
+<h2 id="orgf704206"><span class="section-number-2">5.</span> 4. Operators: Definitions and Certifying Inequalities</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+We define three operator classes and associate each with a certifying inequality in terms of the functionals \(\mathbf{H}_{\mathrm{eff}},\mathbf{B},\mathbf{O}\).
+</p>
+</div>
+<div id="outline-container-org7916ccc" class="outline-3">
+<h3 id="org7916ccc"><span class="section-number-3">5.1.</span> 4.1 Heterogeneity-Reduction Operator \(\mathcal{H}\)</h3>
+<div class="outline-text-3" id="text-5-1">
+<p>
+A mapping \(\mathcal{H}: D\to \tilde D\) (coarse-graining/filtering/standardization) and an induced pushforward law \(\tilde P_t:=\mathcal{H}_\# P_t\) such that
+\[
+\mathbf{H}_{\mathrm{eff}}(\tilde P_t)\le \mathcal{R}\quad \text{for all relevant } t.
+\]
+<b>Properties.</b> \(\mathbf{H}_{\mathrm{eff}}\) is monotone under refinement; \(\mathcal{H}\) reduces dimensionality, variance, or class cardinality while preserving information necessary for viability.
+</p>
+</div>
+</div>
+<div id="outline-container-org45d738c" class="outline-3">
+<h3 id="org45d738c"><span class="section-number-3">5.2.</span> 4.2 Buffering Operator \(\mathcal{B}\)</h3>
+<div class="outline-text-3" id="text-5-2">
+<p>
+An operator \(\mathcal{B}\) enriches \(P\) with local stocks/slack/redundancy or negative feedback such that disturbance-induced state deviations are attenuated. A generic certification is an ISS-type inequality:
+\[
+\|x_{t}\|_{\mathcal{V}} \le \beta(\|x_0\|_{\mathcal{V}},t)+\gamma\!\left(\sup_{0\le k<t}\|d_k\|\right),
+\]
+with class-\(\mathcal{KL}\) function \(\beta\) and class-\(\mathcal{K}\) function \(\gamma\) whose gain is <b>decreasing</b> in \(\mathbf{B}\). Equivalently, define \(\mathbf{B}\) so that
+\[
+\mathbf{B}(\mathcal{B},\Phi)\ \ge\ B_{\min}(\tilde P_t,\mathcal{R},\mathcal{V})
+\]
+implies variance attenuation and constraint satisfaction.
+</p>
+</div>
+</div>
+<div id="outline-container-org6010763" class="outline-3">
+<h3 id="org6010763"><span class="section-number-3">5.3.</span> 4.3 Option-Generation Operator \(\mathcal{O}\)</h3>
+<div class="outline-text-3" id="text-5-3">
+<p>
+An operator \(\mathcal{O}\) modifies \(P\) to \(P'=(X',U',D,\Phi')\) so as to enlarge or preserve the feasible <b>reachability</b> set under constraints. Let
+\[
+\mathrm{Reach}_{t+\tau}(x):=\{x'\in X \mid \exists\ \{u_k\}_{k=t}^{t+\tau-1}: x_{t+\tau}=x',\ x_k\in\mathcal{V} \},
+\]
+then
+\[
+\mathbf{O}(P'):=\mu\big(\mathrm{Reach}_{t+\tau}(x)\big)\ \ge\ O_{\min}>0
+\]
+for some measure \(\mu\) (e.g., volume, cardinality, controllable subspace dimension) and some \(\tau>0\). Option-generation includes adding actuators/sensors, skills/policies, or architectural degrees of freedom.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgcee7245" class="outline-2">
+<h2 id="orgcee7245"><span class="section-number-2">6.</span> 5. Necessity Lemmas</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-org7d6f6a4" class="outline-3">
+<h3 id="org7d6f6a4"><span class="section-number-3">6.1.</span> Lemma 1 (Necessity of \(\mathcal{H}\))</h3>
+<div class="outline-text-3" id="text-6-1">
+<p>
+Under Axiom 1, if \(\mathbf{H}_{\mathrm{eff}}(P_t)>\mathcal{R}\) for some \(t\), persistence fails unless there exists \(\mathcal{H}\) such that \(\mathbf{H}_{\mathrm{eff}}(\tilde P_t)\le \mathcal{R}\). Hence \(\mathcal{H}\) is necessary.
+</p>
+
+<p>
+<b>Sketch.</b> Requisite variety bounds the regulator. Coarse-graining/filtering ensures effective heterogeneity lies within capacity. ∎
+</p>
+</div>
+</div>
+<div id="outline-container-org7871b1b" class="outline-3">
+<h3 id="org7871b1b"><span class="section-number-3">6.2.</span> Lemma 2 (Necessity of \(\mathcal{B}\))</h3>
+<div class="outline-text-3" id="text-6-2">
+<p>
+Under Axiom 2, without local absorption the propagation of high-variance disturbances violates viability constraints with non-negligible probability. Thus there must exist \(\mathcal{B}\) achieving an attenuation certificate (e.g., ISS bound), i.e., \(\mathbf{B}\ge B_{\min}\).
+</p>
+
+<p>
+<b>Sketch.</b> Variance/bursts map through \(\Phi\) to state increments; without attenuation, constraints are breached. ∎
+</p>
+</div>
+</div>
+<div id="outline-container-org728f384" class="outline-3">
+<h3 id="org728f384"><span class="section-number-3">6.3.</span> Lemma 3 (Necessity of \(\mathcal{O}\))</h3>
+<div class="outline-text-3" id="text-6-3">
+<p>
+Under Axiom 3, \(P_t\) drifts. Without changes to controllability/feasible policies, the reachable set aligned to \(P_t\) becomes inadequate for \(P_{t+\tau}\). Therefore an \(\mathcal{O}\) that maintains \(\mathbf{O}>0\) over horizons is necessary.
+</p>
+
+<p>
+<b>Sketch.</b> Distribution shift renders fixed maps suboptimal/infeasible; nonzero future reachability is required to re-align. ∎
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org7462889" class="outline-2">
+<h2 id="org7462889"><span class="section-number-2">7.</span> 6. Theorem: Invariances of Determination</h2>
+<div class="outline-text-2" id="text-7">
+</div>
+<div id="outline-container-org6ec1109" class="outline-3">
+<h3 id="org6ec1109"><span class="section-number-3">7.1.</span> Theorem 1</h3>
+<div class="outline-text-3" id="text-7-1">
+<p>
+For any process \(P\) that persists under Axioms 1–3, there exist operators \((\mathcal{H},\mathcal{B},\mathcal{O})\) such that
+\[
+\mathbf{H}_{\mathrm{eff}}(\tilde P_t)\le \mathcal{R},\qquad
+\mathbf{B}\ge B_{\min},\qquad
+\mathbf{O}\ge O_{\min}\ (>0).
+\]
+<b>Proof.</b> Immediate from Lemmas 1–3. ∎
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org07d709c" class="outline-2">
+<h2 id="org07d709c"><span class="section-number-2">8.</span> 7. Failure Signatures (Technical Labels)</h2>
+<div class="outline-text-2" id="text-8">
+<p>
+Absence of any operator yields a distinct, diagnosable failure:
+</p>
+<ul class="org-ul">
+<li><b>Regulatory Saturation</b> (no \(\mathcal{H}\)): \(\mathbf{H}_{\mathrm{eff}}(P_t)>\mathcal{R}\) ⇒ classification/filtering fails; controller saturates.</li>
+<li><b>Variance Propagation</b> (no \(\mathcal{B}\)): violation of attenuation bounds; disturbance-to-state gain too high ⇒ instability/brittleness.</li>
+<li><b>Reachability Exhaustion</b> (no \(\mathcal{O}\)): \(\mu(\mathrm{Reach}_{t+\tau})\to 0\) under drift ⇒ inability to reconfigure policies to new distributions.</li>
+</ul>
+
+<p>
+These correspond to distinct temporal horizons: instantaneous capacity overflow, short-horizon destabilization, and long-horizon mismatch.
+</p>
+</div>
+</div>
+<div id="outline-container-orgcdc0951" class="outline-2">
+<h2 id="orgcdc0951"><span class="section-number-2">9.</span> 8. Trade-offs, Pareto Structure, and Canonical Allocation</h2>
+<div class="outline-text-2" id="text-9">
+</div>
+<div id="outline-container-org06e4b5f" class="outline-3">
+<h3 id="org06e4b5f"><span class="section-number-3">9.1.</span> 8.1 Normalized capacities and cost</h3>
+<div class="outline-text-3" id="text-9-1">
+<p>
+Define normalized capacities \(h,b,o\in[0,1]\) from the certifying functionals (e.g., via affine rescaling so that \(h=1\) saturates the \(\mathcal{H}\) certificate, etc.). Implementations incur linearized cost:
+\[
+C(h,b,o)=\alpha h+\beta b+\gamma o \le R,\qquad \alpha,\beta,\gamma>0.
+\]
+</p>
+</div>
+</div>
+<div id="outline-container-orgf70e4a7" class="outline-3">
+<h3 id="orgf70e4a7"><span class="section-number-3">9.2.</span> 8.2 Feasible set and Pareto frontier</h3>
+<div class="outline-text-3" id="text-9-2">
+<p>
+The feasible set is \(\mathcal{F}=\{(h,b,o)\in[0,1]^3\mid C(h,b,o)\le R\}\).
+The (weak) Pareto dominance relation \(\succeq\) is:
+\((h',b',o')\succeq (h,b,o)\) iff \(h'\ge h,\ b'\ge b,\ o'\ge o\) and \((h',b',o')\neq(h,b,o)\).
+The Pareto frontier \(\mathcal{P}\subseteq \mathcal{F}\) is the set of nondominated points. Viability thresholds \(h\ge h_{\min}, b\ge b_{\min}, o\ge o_{\min}\) define the <b>viable frontier</b> \(\mathcal{P}_{\mathrm{viable}}:=\mathcal{P}\cap\{h\ge h_{\min},b\ge b_{\min},o\ge o_{\min}\}\).
+</p>
+</div>
+</div>
+<div id="outline-container-orgc928a99" class="outline-3">
+<h3 id="orgc928a99"><span class="section-number-3">9.3.</span> 8.3 Emergent canonical point (no exogenous utility)</h3>
+<div class="outline-text-3" id="text-9-3">
+<p>
+Let <b>slack</b> \(S:=R-(\alpha h_{\min}+\beta b_{\min}+\gamma o_{\min})\ge 0\).
+Define margins \((m_h,m_b,m_o)\) by
+\[
+\alpha m_h+\beta m_b+\gamma m_o=S,\qquad m_h,m_b,m_o\ge 0,
+\]
+and optimize the <b>Nash product</b> over <b>normalized margins</b>:
+\[
+\max_{m_h,m_b,m_o\ge 0}\ (m_h m_b m_o)\quad\text{s.t.}\quad \alpha m_h+\beta m_b+\gamma m_o=S.
+\]
+KKT conditions yield \( \alpha m_h=\beta m_b=\gamma m_o\). Hence
+\[
+m_h=\frac{S}{3\alpha},\quad m_b=\frac{S}{3\beta},\quad m_o=\frac{S}{3\gamma},
+\]
+and the <b>canonical allocation</b> is
+\[
+(h^\*,b^\*,o^\*)=\big(h_{\min}+m_h,\ b_{\min}+m_b,\ o_{\min}+m_o\big).
+\]
+This selection depends only on viability thresholds and costs \((\alpha,\beta,\gamma)\) and is independent of arbitrary utility weights.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgac0d27d" class="outline-2">
+<h2 id="orgac0d27d"><span class="section-number-2">10.</span> 9. Measurement and Estimation (Examples of \(\mathbf{H}_{\mathrm{eff}},\mathbf{B},\mathbf{O}\))</h2>
+<div class="outline-text-2" id="text-10">
+<ul class="org-ul">
+<li><b>Heterogeneity:</b> \(\mathbf{H}_{\mathrm{eff}}=\) (i) Shannon entropy \(H(\tilde P_t)\); (ii) covering number \(N(\epsilon)\) of disturbance classes post-\(\mathcal{H}\); (iii) empirical class count with concentration bounds.</li>
+<li><b>Buffering:</b> (i) input-to-state \(L_\infty\)-gain \(\gamma\); (ii) stock-to-flow ratio \(S/F\) with lower bound; (iii) closed-loop spectral radius or Lyapunov attenuation rate.</li>
+<li><b>Options:</b> (i) \(\mu(\mathrm{Reach}_{t+\tau})\) (Lebesgue volume under constraints); (ii) rank/condition of controllability Gramian \(W_c\); (iii) count/diversity of feasible policies satisfying constraints.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgb981cc3" class="outline-2">
+<h2 id="orgb981cc3"><span class="section-number-2">11.</span> 10. Scope, Assumptions, and Extensions</h2>
+<div class="outline-text-2" id="text-11">
+<ul class="org-ul">
+<li><b>Scope.</b> Discrete-time systems; stochastic disturbances allowed; persistence defined via viability with probability \(1-\delta\).</li>
+<li><b>Assumptions.</b> Metrics chosen satisfy monotonicity and boundedness; resource cost linearized (locally valid).</li>
+<li><b>Extensions.</b> Multiscale \(\mathcal{H}\) (scale-adaptive coarse-graining), buffer-as-memory (integral action linking \(\mathbf{B}\) and \(\mathbf{O}\)), adaptive \(\mathcal{O}\) design (online enlargement of reachable sets), and non-linear cost surfaces.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga4b047d" class="outline-2">
+<h2 id="orga4b047d"><span class="section-number-2">12.</span> Appendix A: LTI Illustration (Sketch)</h2>
+<div class="outline-text-2" id="text-12">
+<p>
+Consider LTI system \(x_{t+1}=Ax_t+Bu_t+Ed_t\).
+</p>
+<ul class="org-ul">
+<li>\(\mathcal{H}\): projection/filter \(F\) on \(d_t\), \(\tilde d_t=Fd_t\), choose \(F\) to bound \(\mathbb{E}\|\tilde d_t\|^2\) below \(\mathcal{R}\).</li>
+<li>\(\mathcal{B}\): state feedback \(u_t=Kx_t\) and local storage \(s_{t+1}=\lambda s_t + g(d_t)\) so that closed-loop \(A+BK\) is Schur and ISS gain \(\gamma<\gamma_{\max}\).</li>
+<li>\(\mathcal{O}\): augment \(B\) (extra actuator) or enlarge input set to increase \(\mathrm{rank}(W_c)\) over horizon \(\tau\). Certificates: entropy bound for \(\mathbf{H}_{\mathrm{eff}}\), ISS Lyapunov for \(\mathbf{B}\), Gramian rank/volume for \(\mathbf{O}\).</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8ef387c" class="outline-2">
+<h2 id="org8ef387c"><span class="section-number-2">13.</span> Appendix B: Viability, Pareto, and Selection (Formal Definitions)</h2>
+<div class="outline-text-2" id="text-13">
+</div>
+<div id="outline-container-org183d1a2" class="outline-3">
+<h3 id="org183d1a2"><span class="section-number-3">13.1.</span> Viability kernel</h3>
+<div class="outline-text-3" id="text-13-1">
+<p>
+\[
+\mathrm{Viab}(\mathcal{V})=\{x_0\in \mathcal{V}\mid \exists\ \{u_t\}\ \text{s.t.}\ x_t\in\mathcal{V}\ \forall t\}.
+\]
+Persistence requires \(x_0\in \mathrm{Viab}(\mathcal{V})\) with high probability.
+</p>
+</div>
+</div>
+<div id="outline-container-org469f606" class="outline-3">
+<h3 id="org469f606"><span class="section-number-3">13.2.</span> Pareto frontier</h3>
+<div class="outline-text-3" id="text-13-2">
+<p>
+\[
+\mathcal{P}=\{(h,b,o)\in \mathcal{F}\mid \nexists (h',b',o')\in \mathcal{F}: (h',b',o')\succeq (h,b,o)\}.
+\]
+</p>
+</div>
+</div>
+<div id="outline-container-org985127e" class="outline-3">
+<h3 id="org985127e"><span class="section-number-3">13.3.</span> Canonical point (weighted costs)</h3>
+<div class="outline-text-3" id="text-13-3">
+<p>
+As in §8.3, the KKT conditions of the weighted-sum constraint yield \( \alpha m_h=\beta m_b=\gamma m_o\). The resulting \((h^\*,b^\*,o^\*)\) is unique given \((\alpha,\beta,\gamma)\) and thresholds.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org1b7d631" class="outline-2">
+<h2 id="org1b7d631"><span class="section-number-2">14.</span> Appendix C: Diagnostic Checklist (Operator-Centric)</h2>
+<div class="outline-text-2" id="text-14">
+<ul class="org-ul">
+<li>\(\mathcal{H}\): Is \(\mathbf{H}_{\mathrm{eff}}(\tilde P_t)\le \mathcal{R}\)? What coarse-graining map achieves this at minimal loss?</li>
+<li>\(\mathcal{B}\): What attenuation certificate (ISS/Lyapunov/stock-to-flow) holds? What is the disturbance-to-state gain?</li>
+<li>\(\mathcal{O}\): What is \(\mu(\mathrm{Reach}_{t+\tau})\)? Which architectural changes increase it while respecting constraints?</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Created: 2025-09-23 Tue 18:30</p>
+</div>
+</body>
+</html>

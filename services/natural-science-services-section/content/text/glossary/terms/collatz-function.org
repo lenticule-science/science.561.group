@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       ed84348e-b42c-4d3a-83d0-cc23364da35e
+:NODE-RELATIONS: (([[id:bee496e1-139b-4a7f-8a24-d4c14e6084c6][instantiates]] . [[id:8b8b0529-39fa-4290-8beb-12c1567e0fbf][function]]))
+:END:
+#+title: Collatz function
+#+date: [2025-10-17 Fri 12:19]
+

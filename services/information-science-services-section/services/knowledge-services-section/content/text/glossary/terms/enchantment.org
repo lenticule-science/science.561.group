@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       83838eb1-61a5-48bd-960a-5be8b5528c92
+:END:
+#+title: enchantment
+#+date: [2025-09-24 Wed 22:35]
+

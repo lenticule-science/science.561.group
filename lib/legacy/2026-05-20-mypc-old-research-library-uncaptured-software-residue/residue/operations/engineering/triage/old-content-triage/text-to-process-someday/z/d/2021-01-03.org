@@ -1,0 +1,36 @@
+#+title: 2021-01-03
+#+ghe_schema: daily-record-0.1.1
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2021-01-03 Sun 12:15]
+#+roam_tags: daily-record
+
+#+name: definition
+This is some of what I (emsenn) experienced and wrote on on [2021-01-03 Sun].
+
+#+toc: headlines 2
+
+* Activity Log                                                     :noexport:
+
+* Journal                                                          :noexport:
+
+** [2021-01-03 Sun 12:43]
+
+   I kind of fell off using my records for the past few days, because I made it too hard on myself to change [[file:../groundhog_emacs.org][Groundhog Emacs]] as I was using it. I'd like to fill in the missing news events from the past few days, but otherwise just try and get back to things.
+** [20* Weather observations
+
+* Postings
+** Keeping an inventory of perfumes with Org-mode
+
+   A bit earlier 
+  
+* Media log
+
+* Reposts
+* News log
+** Indian Health Service criticized after scaling hospital down to clinic during COVID-19 pandemic
+   :LOGBOOK:
+   - Note taken on [2021-01-03 Sun 13:54] \\
+     The [[file:../new_york_times.org][New York Times]] is criticizing the [[file:../ihs.org][Indian Health Service]] for, among other things, scaling down a hospital in [[file:../new_mexico_u_s_a.org][New Mexico, U.S.A.]] to a clinic.
+   :END:
+   - Source :: https://www.nytimes.com/2021/01/03/us/politics/indian-health-service-hospital.html

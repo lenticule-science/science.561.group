@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       fd323e62-bf94-44c7-b098-4a68ec25c72f
+:END:
+#+title: impossible thing
+#+date: [2025-08-31 Sun 13:10]
+

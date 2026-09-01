@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       ecda738b-18b3-4ccf-9fb1-5da102a3cd9a
+:NODE-RELATIONS: (([[id:bee496e1-139b-4a7f-8a24-d4c14e6084c6][instantiates]] . [[id:65451a74-64a3-4135-a17f-9289c639563b][nation]]) ([[id:39aab1a4-6170-4933-b0f8-49d8a26ba5d3][political region]] . [[id:701698ca-1f99-40d9-b7ee-9e9b5c1826de][Europe]]))
+:END:
+#+title: France
+#+date: [2025-08-29 Fri 22:35]
+

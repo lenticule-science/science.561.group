@@ -1,0 +1,273 @@
+#+title: Org-mode
+#+begin_head
+#+ghe_schema: term-0.1.4
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-12 Sat 10:12]
+#+roam_tags: term
+#+end_head
+
+#+index: Org-mode
+
+#+name: org-mode-definition
+*/Org-mode/* is a [[file:text_formatting.org][text-formatting]] [[file:language.org][language]] and its interpretter [[file:software.org][software]], a part of the [[file:emacs.org][Emacs]] [[file:text_editor.org][text editor]].
+
+* Introduction
+
+  This record is some of what I (emsenn) know about */Org-mode/*. You may use it without limits or promises.
+
+* Org-mode
+
+  #+include: "org_mode.org::org-mode-definition"
+  
+  Whenever I'm using a [[file:computer.org][computer]], I'm probably using [[file:org_mode.org][Org-mode]]. I use it to keep notes, draft essays, keep ledgers, write software, and more.
+
+** Web resources
+
+*** Reference material   
+
+    - [[https://orgmode.org/manual/][The Org Manual]]
+
+*** Communities
+
+    - [[https://orgmode.org/worg/org-mailing-list.html][Email list]]
+
+** Org-mode configuration
+   :PROPERTIES:
+   :header-args: :noweb yes
+   :END:
+
+   #+name: org-mode-configuration-elisp
+   #+caption: A sequence of /Elisp/ declarations that configures some basic parts of /Org-mode/
+   #+begin_src elisp
+     (setq org-directory
+	   <<org-directory-value-elisp>>)
+     (setq org-startup-folded
+	   <<org-startup-folded-value-elisp>>)
+     (setq org-hide-block-startup
+	   <<org-hide-block-startup-value-elisp>>)
+     (setq org-catch-invisible-edits
+	   <<org-catch-invisible-edits-value-elisp>>)
+     (setq org-image-actual-width
+           <<org-image-actual-width-value-elisp>>)
+   #+end_src
+  
+*** Org-mode directory configuration
+
+    #+name: org-directory-value-elisp
+    #+caption: The value of =org-directory=
+    #+begin_src elisp
+      "~/org"
+    #+end_src
+*** Org-mode startup folding configuration
+
+     #+name: org-startup-folded-value-elisp
+     #+caption: The value of =org-startup-folded=.
+     #+begin_src text
+     'overview
+     #+end_src
+*** Org-mode invisible edits catch configuration
+
+     #+name: org-catch-invisible-edits-value-elisp
+     #+caption: The value for =org-catch-invisible-edits=
+     #+begin_src text
+      'show-and-error
+     #+end_src
+*** Org-mode blocks visibility configuration
+
+     #+name: org-hide-block-startup-value-elisp
+     #+begin_src text
+       'hideblocks
+     #+end_src
+*** Org-mode image visibility configuration
+
+    #+name: org-image-actual-width-value-elisp
+    #+begin_src elisp
+      '(400)
+    #+end_src
+** Components
+*** Org-agenda
+
+    #+include: "org_mode_agenda.org::org-mode-agenda-definition"
+*** Org-links
+
+    #+include: "org_mode_link.org::org-mode-link-definition"
+
+*** Org-attach-screenshot
+
+    #+include: "org_attach_screenshot.org::org-attach-screenshot-definition"
+*** Babel
+
+    #+include: "babel.org::babel-definition"
+*** Org-capture
+
+    #+include: "org_mode_capture_template.org::org-mode-capture-template-definition"
+* Supplements
+** Component parts
+   :PROPERTIES:
+   :header-args: :noweb yes
+   :END:
+*** Org-agenda
+**** Org-agenda configuration
+     #+include: "org_mode_agenda.org::org-agenda-files-value-elisp"
+     #+include: "org_mode_agenda.org::org-agenda-configuration-elisp"
+
+**** Org-agenda global bindings
+     #+include: "org_mode_agenda.org::org-agenda-global-bindings-elisp"
+*** Org-export
+**** Org-export functions
+
+     #+include: "org_mode_export.org::defun-ghe-org-export-preprocessor-elisp"
+**** Org-export configuration
+
+     #+include: "org_mode_export.org::org-export-with-section-numbers-value-elisp"
+     #+include: "org_mode_export.org::org-export-with-smart-quotes-value-elisp"
+     #+include: "org_mode_export.org::org-export-with-toc-value-elisp"
+     #+include: "org_mode_export.org::org-export-configuration-elisp"
+**** Org-export hooks
+     #+include: "org_mode_export.org::org-export-hooks-elisp"
+**** HTML
+***** HTML functions
+      #+include: "org_mode_html_export.org::defun-ghe-org-html-format-drawer-elisp"
+***** HTML variables
+      #+include: "org_mode_html_export.org::ghe-style-css"
+      #+include: "org_mode_html_export.org::ghe-org-html-base-preamble-elisp"
+      #+include: "org_mode_html_export.org::ghe-org-html-subdir-preamble-elisp"
+      #+include: "org_mode_html_export.org::ghe-org-html-head-elisp"
+
+***** HTML configuration
+     #+include: "org_mode_html_export.org::org-html-validation-link-value-elisp"
+     #+include: "org_mode_html_export.org::org-html-export-configuration-elisp"
+    
+*** Org-links
+**** Org-links global bindings
+
+     #+include: "org_mode_link.org::org-mode-links-global-bindings-elisp"
+*** Babel
+**** Babel languages configuration
+
+     #+include: "babel.org::org-babel-do-load-languages-elisp"
+*** HTMLize
+
+    #+include: "htmlize.org::org-html-htmlize-output-value-elisp"
+    #+include: "htmlize.org::htmlize-configuration-elisp"
+*** Org-log
+
+    #+include: "org_mode_log.org::org-log-done-value-elisp"
+    #+include: "org_mode_log.org::org-log-into-drawer-value-elisp"
+    #+include: "org_mode_log.org::org-log-configuration-elisp"
+*** Org-capture
+
+    #+include: "org_mode_capture_template.org::defun-ghe-org-capture-capture-at-point"
+
+    #+include: "org_mode_capture_template.org::org-mode-capture-templates-global-bindings-elisp"
+
+    #+include: "org_mode_capture_template.org::org-capture-source-block-template"
+    #+include: "org_mode_capture_template.org::org-capture-elisp-source-block-template-elisp"
+    #+include: "org_mode_capture_template.org::org-capture-inclusion-template-elisp"
+    #+include: "org_mode_capture_template.org::org-capture-org-mode-inclusion-template-elisp"
+
+    
+** Use-package declaration
+   :PROPERTIES:
+   :header-args: :noweb yes
+   :END:
+
+   #+name: org-mode-straight-use-package-elisp
+   #+caption: My /use-package/ declaration for installing and configuration /Org-mode/ (and its /ecosystem/).
+   #+begin_src elisp
+     (use-package
+       org :straight t
+       :config
+
+       <<defun-ghe-org-capture-capture-at-point-elisp>>
+
+       <<defun-ghe-org-export-preprocessor-elisp>>
+
+       <<defun-ghe-org-html-format-drawer-elisp>>
+
+       <<org-mode-configuration-elisp>>
+       <<org-agenda-configuration-elisp>>
+
+
+       <<org-export-configuration-elisp>>
+
+       <<htmlize-configuration-elisp>>
+       <<org-html-export-configuration-elisp>>
+
+       <<org-log-configuration-elisp>>
+
+       <<ghe-org-html-base-preamble-elisp>>
+       <<ghe-org-html-subdir-preamble-elisp>>
+       <<ghe-org-html-head-elisp>>
+
+       <<org-babel-do-load-languages-elisp>>
+
+
+
+			<<defun-ghe-org-html-format-drawer-elisp>>
+			<<defun-ghe-org-publish-format-sitemap-elisp>>
+			(setq org-capture-templates
+			      `(
+				<<org-capture-source-block-template-elisp>>
+				<<org-capture-elisp-source-block-template-elisp>>
+				))
+			(setq org-publish-project-alist
+			      `(
+				<<org-publish-personal-project-elisp>>
+				("personal-records"
+				 <<org-publish-standard-project-configuration-elisp>>
+				 <<org-publish-personal-records-project-elisp>>)
+				("personal-daily-records"
+				 <<org-publish-standard-project-configuration-elisp>>
+				 <<org-publish-personal-daily-records-project-elisp>>)
+				("teraum"
+				 <<org-publish-standard-project-configuration-elisp>>
+				 <<org-publish-teraum-records-project-elisp>>)))
+			:hook 
+			       <<org-hooks-elisp>>
+
+			:bind (
+			       <<org-bindings-elisp>>
+			       ))
+
+		    <<org-attach-screenshot-elisp>>
+
+		    (use-package
+			org-roam :straight t
+			:config (setq
+				 org-roam-directory <<org-roam-directory-value-text>>
+				 org-roam-dailies-directory <<org-roam-dailies-directory-value-text>>)
+			<<defun-ghe-org-roam-format-backlinks-list-elisp>>
+			(setq org-roam-capture-immediate-template
+			  (backquote 
+			  <<org-roam-record-capture-template-elisp>>))
+			(setq org-roam-capture-templates
+			      `(
+				<<org-roam-record-capture-template-elisp>>
+				<<org-roam-term-capture-template-elisp>>
+				<<org-roam-reference-capture-template-elisp>>
+				<<org-roam-person-capture-template-elisp>>
+				<<org-roam-teraum-capture-template-elisp>>
+				<<org-roam-teraum-record-capture-template-elisp>>
+				<<org-roam-teraum-person-capture-template-elisp>>))
+			(setq org-roam-dailies-capture-templates
+			      `(
+				<<org-roam-dailies-activity-capture-template-elisp>>
+				<<org-roam-dailies-journal-capture-template-elisp>>
+				<<org-roam-dailies-media-log-capture-template-elisp>>
+				<<org-roam-dailies-weather-capture-template-elisp>>
+				<<org-roam-dailies-postings-capture-template-elisp>>))
+	       :hook <<org-roam-hooks-elisp>>
+			:bind (
+			       <<org-roam-org-roam-mode-bindings-elisp>>
+			       <<org-roam-org-mode-bindings-elisp>>))
+
+		     <<org-roam-server-elisp>>
+   #+end_src
+
+** Record history
+   :LOGBOOK:
+   - Note taken on [2020-12-25 Fri 18:39] \\
+     Brought this record up, roughly, version =0.1.4= of the [[file:groundhog_record.org][Groundhog record]] schema.
+   :END:

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       7f12dea3-9840-4e9a-b8e3-109ab633799e
+:END:
+#+title: calculus
+#+date: [2025-09-19 Fri 20:05]
+

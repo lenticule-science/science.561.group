@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "source_root": "lib/emsenn/services/561-group/lib/legacy/2026-08-17-windows-561-group/sites/triage.dev.emsenn.net/content/_archive/yet-another-unsorted-archive-dump",
+  "existing_target": "lib/emsenn/services/561-group/services/science-services-section/lib/legacy/2026-07-31-lenticule-science-corpus/yet-another-unsorted-archive-dump/predication-categories",
+  "historical_landing": "lib/emsenn/services/561-group/lib/legacy/2026-06-20-relational-predication-corpus/windows-archive-2026-08-17-unique",
+  "source_file_entries": 2921,
+  "already_preserved_entries": 2782,
+  "relocated_unique_entries": 139,
+  "existing_target_hash_manifest": "/tmp/yp-tgt.json",
+  "source_hash_manifest": "/tmp/yp-src.json",
+  "ledger": "lib/emsenn/services/561-group/lib/legacy/2026-06-20-relational-predication-corpus/windows-archive-2026-08-17-reconciliation.ndjson",
+  "semantic_second_pass": {
+    "classified_relocated_entries": 139,
+    "active_exact_duplicates": 3,
+    "active_exact_duplicate_backup": "/tmp/yp-second-pass-duplicates-2026-08-18",
+    "remaining_unique_historical_entries": 136,
+    "canonical_summaries": [
+      "lib/emsenn/services/561-group/services/science-services-section/services/philosophy-services-section/services/relationality-services-section/content/text/glossary/terms/relation.md",
+      "lib/emsenn/services/561-group/services/science-services-section/services/philosophy-services-section/services/relationality-services-section/content/text/documents/articles/notes/articulate.md",
+      "lib/emsenn/services/561-group/services/science-services-section/services/math-services-section/services/obsmetrological-services-section/content/documents/articles/notes/2026/08/2026-08-18-note-on-predication-corpus-reconciliation.md",
+      "lib/emsenn/services/561-group/services/engineering-services-section/services/computer-services-section/services/computer-systems-services-section/services/semiotic-computer-system-services-section/content/documents/notes/note-on-computing-payloads-from-predication-corpus.md",
+      "lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/semiotic-computer-system-services-section/content/text/documents/articles/notes/mud-and-interactive-computation-corpus-reconciliation.md",
+      "lib/emsenn/services/561-group/services/science-services-section/services/engineering-science-services-section/services/computer-science-services-section/services/artificial-intelligence-research-services-section/services/agents-services-section/content/text/documents/articles/notes/agent-computation-architecture-corpus-reconciliation-2026.md",
+      "lib/emsenn/services/561-group/services/science-services-section/services/engineering-science-services-section/services/computer-science-services-section/services/blockchain-services-section/content/text/documents/articles/notes/autonomous-systems-blockchain-patterns-reconciliation.md",
+      "lib/emsenn/services/561-group/services/science-services-section/services/engineering-science-services-section/services/design-science-services-section/services/visual-engineering-services-section/content/text/documents/articles/notes/visual-engineering-corpus-reconciliation.md"
+    ],
+    "note": "Every relocated payload has semantic_disposition and canonical_destination fields in the reconciliation ledger. Meaningful claims are represented by the smallest applicable active notes or existing terms; exact active duplicates are removable only after hash verification; all other unique payloads remain byte-for-byte in this dated historical landing."
+  },
+  "note": "The source was a flattened/duplicated Windows archive. Entries marked already-preserved are exact SHA-256 payload equivalences to the existing 2026-07-31 predication corpus. Relocated entries retain their source-relative path under the existing 2026-06-20 relational-predication corpus; no source bytes were overwritten."
+}

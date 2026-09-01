@@ -1,0 +1,282 @@
+/* 561 GROUP — DESIGN BIBLE
+   Visual engineering: Brutalism-forward, Tufte-forward.
+   Lineage cited in §11. */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Roboto+Slab:wght@400;500;700;900&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+/* ---------- TOKENS ---------- */
+:root{
+  /* Riso + agitprop ink set */
+  --ink:        #0A0A0A;          /* near-black, never #000 */
+  --ink-soft:   #2A2622;
+  --bone:       #F2EAD8;          /* paper */
+  --bone-deep:  #E6DCC4;
+  --bone-edge:  #D8CDB2;
+  --red:        #FF4530;          /* riso fluorescent red */
+  --blue:       #3D5588;          /* riso federal blue */
+  --rule:       #0A0A0A;
+  --soil:       #5A3A22;          /* sparingly */
+
+  /* Type */
+  --sans: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --slab: "Roboto Slab", "Rockwell", Georgia, serif;
+  --mono: "JetBrains Mono", "IBM Plex Mono", ui-monospace, monospace;
+
+  /* Grid */
+  --col-gap: 24px;
+  --gutter: 56px;
+  --max: 1440px;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bone);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.45;-webkit-font-smoothing:antialiased}
+body{
+  background-image:
+    /* paper grain */
+    radial-gradient(rgba(10,10,10,0.035) 1px, transparent 1px),
+    radial-gradient(rgba(90,58,34,0.025) 1px, transparent 1px);
+  background-size: 3px 3px, 7px 7px;
+  background-position: 0 0, 1px 2px;
+}
+
+/* ---------- LAYOUT PRIMITIVES ---------- */
+.page{max-width:var(--max);margin:0 auto;padding:0 var(--gutter);position:relative}
+.rule{height:1px;background:var(--ink);width:100%}
+.rule.thick{height:3px}
+.rule.thicker{height:8px}
+.rule.dashed{background:none;border-top:1px dashed var(--ink)}
+.rule.red{background:var(--red)}
+.rule.blue{background:var(--blue)}
+
+.grid12{display:grid;grid-template-columns:repeat(12,1fr);gap:var(--col-gap)}
+.grid6{display:grid;grid-template-columns:repeat(6,1fr);gap:var(--col-gap)}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--col-gap)}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--col-gap)}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--col-gap)}
+
+/* ---------- SECTION CHROME ---------- */
+section{padding:80px 0;border-top:1px solid var(--ink);position:relative}
+section.no-rule{border-top:none}
+section.dark{background:var(--ink);color:var(--bone)}
+section.dark .rule{background:var(--bone)}
+section.red-band{background:var(--red);color:var(--ink)}
+
+.section-head{display:grid;grid-template-columns:repeat(12,1fr);gap:var(--col-gap);margin-bottom:48px;align-items:end}
+.section-head .num{
+  grid-column:1/3;
+  font-family:var(--mono);font-size:13px;letter-spacing:.05em;
+  border-top:8px solid var(--ink);padding-top:8px;
+}
+.section-head .title{
+  grid-column:3/13;
+  font-family:var(--sans);font-weight:700;
+  font-size:clamp(38px,6vw,84px);line-height:.95;letter-spacing:-.02em;
+  text-transform:uppercase;
+}
+section.dark .section-head .num{border-top-color:var(--bone)}
+
+/* ---------- TYPE UTILITIES ---------- */
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft)}
+.eyebrow.red{color:var(--red)}
+.dark .eyebrow{color:var(--bone-deep)}
+.lede{font-family:var(--slab);font-weight:400;font-size:clamp(18px,1.6vw,22px);line-height:1.45;max-width:62ch}
+.body{font-family:var(--sans);font-weight:400;font-size:15px;line-height:1.55;max-width:64ch}
+.body p+p{margin-top:.85em}
+.mono{font-family:var(--mono);font-size:12px;letter-spacing:.04em}
+.slab{font-family:var(--slab)}
+.h2{font-family:var(--sans);font-weight:700;font-size:32px;letter-spacing:-.01em;text-transform:uppercase;line-height:1}
+.h3{font-family:var(--sans);font-weight:600;font-size:18px;letter-spacing:.02em;text-transform:uppercase}
+.h4{font-family:var(--mono);font-weight:700;font-size:12px;letter-spacing:.16em;text-transform:uppercase}
+
+/* registration-shifted display (riso miss-print) */
+.shift{position:relative;display:inline-block}
+.shift::before,.shift::after{
+  content:attr(data-text);position:absolute;left:0;top:0;pointer-events:none;
+  mix-blend-mode:multiply;
+}
+.shift::before{color:var(--red);transform:translate(3px,2px)}
+.shift::after{color:var(--blue);transform:translate(-2px,-1px)}
+.shift > span{position:relative;color:var(--ink)}
+
+/* labels for evidence-style figures */
+figure.evidence{
+  border:1px solid var(--ink);
+  background:var(--bone);
+  position:relative;
+}
+figure.evidence figcaption{
+  border-top:1px solid var(--ink);
+  padding:10px 14px;
+  display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:start;
+  font-family:var(--mono);font-size:11px;letter-spacing:.04em;
+}
+figure.evidence figcaption .id{font-weight:700}
+figure.evidence figcaption .text{font-family:var(--sans);font-size:12px;letter-spacing:0;line-height:1.35;text-transform:none}
+figure.evidence figcaption .meta{color:var(--ink-soft)}
+
+/* corner crops for the brutalist exposed-frame feeling */
+.cropmarks{position:relative}
+.cropmarks::before,.cropmarks::after,
+.cropmarks > .cm-tl, .cropmarks > .cm-tr, .cropmarks > .cm-bl, .cropmarks > .cm-br{
+  content:'';position:absolute;width:14px;height:14px;border-color:var(--ink);border-style:solid;border-width:0;
+}
+.cropmarks::before{top:-2px;left:-2px;border-top-width:1px;border-left-width:1px}
+.cropmarks::after{top:-2px;right:-2px;border-top-width:1px;border-right-width:1px}
+.cropmarks .cm-bl{bottom:-2px;left:-2px;border-bottom-width:1px;border-left-width:1px}
+.cropmarks .cm-br{bottom:-2px;right:-2px;border-bottom-width:1px;border-right-width:1px}
+
+/* ---------- MASTHEAD ---------- */
+.masthead{
+  border-top:8px solid var(--ink);
+  border-bottom:1px solid var(--ink);
+  padding:18px 0;
+  font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+  display:grid;grid-template-columns:repeat(12,1fr);gap:var(--col-gap);
+}
+.masthead .m1{grid-column:1/4}
+.masthead .m2{grid-column:4/8}
+.masthead .m3{grid-column:8/11}
+.masthead .m4{grid-column:11/13;text-align:right}
+
+/* ---------- TOC ---------- */
+.toc{list-style:none;font-family:var(--mono);font-size:13px;letter-spacing:.04em}
+.toc li{display:grid;grid-template-columns:48px 1fr auto;gap:18px;padding:10px 0;border-bottom:1px dotted var(--ink);align-items:baseline}
+.toc li:first-child{border-top:1px solid var(--ink)}
+.toc .t-num{font-weight:700}
+.toc .t-name{font-family:var(--sans);text-transform:uppercase;font-weight:500;letter-spacing:.02em}
+.toc .t-page{color:var(--ink-soft)}
+.toc a{color:inherit;text-decoration:none;display:contents}
+.toc a:hover .t-name{background:var(--red);color:var(--bone)}
+
+/* ---------- COLOR SWATCH ---------- */
+.swatch{border:1px solid var(--ink);background:var(--bone)}
+.swatch .chip{height:160px;border-bottom:1px solid var(--ink)}
+.swatch .meta{padding:12px 14px;font-family:var(--mono);font-size:11px;letter-spacing:.04em;display:grid;gap:4px}
+.swatch .meta .name{font-family:var(--sans);font-weight:700;font-size:14px;letter-spacing:.04em;text-transform:uppercase}
+.swatch .meta .row{display:flex;justify-content:space-between;color:var(--ink-soft)}
+
+/* type specimen blocks */
+.specimen{border:1px solid var(--ink);padding:24px;background:var(--bone)}
+.specimen .label{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:18px;display:flex;justify-content:space-between}
+.specimen .glyphs{font-family:var(--slab);font-size:48px;line-height:1;letter-spacing:-.01em;word-spacing:.1em;color:var(--ink)}
+.specimen.sans .glyphs{font-family:var(--sans);font-weight:700;letter-spacing:-.02em;text-transform:uppercase}
+.specimen.mono .glyphs{font-family:var(--mono);font-size:32px;font-weight:500}
+
+.scale-row{display:grid;grid-template-columns:80px 1fr;gap:24px;align-items:baseline;padding:14px 0;border-bottom:1px dashed var(--ink)}
+.scale-row .meta{font-family:var(--mono);font-size:11px;letter-spacing:.04em;color:var(--ink-soft)}
+
+/* glyph grid */
+.glyphs-grid{display:grid;grid-template-columns:repeat(8,1fr);gap:0;border:1px solid var(--ink)}
+.glyphs-grid .g{aspect-ratio:1/1;border-right:1px solid var(--ink);border-bottom:1px solid var(--ink);display:flex;align-items:center;justify-content:center;padding:14px;background:var(--bone);position:relative}
+.glyphs-grid .g:nth-child(8n){border-right:none}
+.glyphs-grid .g .label{position:absolute;top:6px;left:8px;font-family:var(--mono);font-size:9px;letter-spacing:.1em;color:var(--ink-soft);text-transform:uppercase}
+.glyphs-grid .g svg{width:60%;height:60%}
+
+/* mini bar charts (Tufte) */
+.bar{height:14px;background:var(--ink);display:inline-block;vertical-align:middle}
+.sparkline{font-family:var(--mono);font-size:11px;display:flex;align-items:center;gap:8px}
+
+/* refusals list */
+.refuse{list-style:none}
+.refuse li{padding:18px 0 18px 56px;border-top:1px solid var(--ink);position:relative;font-family:var(--slab);font-size:18px;line-height:1.4}
+.refuse li::before{
+  content:'✕';
+  position:absolute;left:0;top:18px;
+  font-family:var(--sans);font-weight:700;font-size:24px;color:var(--red);
+  width:36px;height:36px;border:2px solid var(--red);display:flex;align-items:center;justify-content:center;line-height:1;
+}
+.refuse li:last-child{border-bottom:1px solid var(--ink)}
+
+/* templates */
+.template{border:1px solid var(--ink);background:var(--bone);overflow:hidden;position:relative}
+.template .tpl-label{position:absolute;top:8px;right:8px;font-family:var(--mono);font-size:10px;letter-spacing:.1em;background:var(--ink);color:var(--bone);padding:4px 8px;text-transform:uppercase;z-index:5}
+
+/* page numbers — sits in flow above the section-head so it can never collide with the title */
+.folio{display:block;text-align:right;font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--ink-soft);margin-bottom:24px;padding-bottom:8px;border-bottom:1px dashed var(--ink-soft)}
+section.dark .folio{color:var(--bone-edge);border-bottom-color:var(--bone-edge)}
+
+/* dark-section type tweaks */
+section.dark .lede,section.dark .body{color:var(--bone)}
+section.dark .swatch{background:var(--ink-soft);border-color:var(--bone)}
+section.dark .specimen{background:transparent;border-color:var(--bone);color:var(--bone)}
+
+/* tables */
+table.spec{width:100%;border-collapse:collapse;font-family:var(--mono);font-size:12px}
+table.spec th,table.spec td{border-bottom:1px solid var(--ink);padding:10px 12px;text-align:left;vertical-align:top}
+table.spec th{font-family:var(--sans);font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:11px;border-bottom:2px solid var(--ink)}
+table.spec tr:last-child td{border-bottom:none}
+
+/* numbered margin notes */
+.marginal{
+  font-family:var(--mono);font-size:11px;line-height:1.45;color:var(--ink-soft);
+  border-left:3px solid var(--red);padding:8px 0 8px 14px;
+}
+
+/* footer */
+footer.colophon{padding:80px 0 60px;border-top:8px solid var(--ink);background:var(--ink);color:var(--bone)}
+footer .colophon-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:var(--col-gap)}
+
+/* hero seal */
+.hero{
+  padding:96px 0 80px;
+  border-bottom:1px solid var(--ink);
+  position:relative;
+  overflow:hidden;
+}
+.hero .hero-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:var(--col-gap);align-items:end}
+.hero .seal-wrap{grid-column:1/6}
+.hero .title-wrap{grid-column:6/13}
+.hero h1{
+  font-family:var(--sans);font-weight:700;
+  font-size:clamp(56px,9.5vw,168px);line-height:.86;letter-spacing:-.035em;
+  text-transform:uppercase;
+}
+.hero h1 .stack{display:block}
+.hero h1 .red{color:var(--red)}
+.hero .strap{
+  font-family:var(--slab);font-weight:400;font-size:clamp(18px,1.8vw,24px);line-height:1.35;max-width:60ch;margin-top:32px;
+}
+
+/* declaration block */
+.declaration{
+  font-family:var(--slab);font-weight:500;
+  font-size:clamp(28px,3.4vw,52px);line-height:1.1;letter-spacing:-.01em;
+}
+.declaration em{font-style:italic;color:var(--red);font-weight:700}
+
+/* big numerals */
+.numeral{
+  font-family:var(--sans);font-weight:700;font-size:clamp(120px,18vw,280px);line-height:.85;letter-spacing:-.05em;
+}
+
+/* posters */
+.poster{aspect-ratio:3/4;border:1px solid var(--ink);position:relative;overflow:hidden;background:var(--bone)}
+.poster.dark{background:var(--ink);color:var(--bone)}
+.poster.red{background:var(--red);color:var(--ink)}
+.poster .p-label{position:absolute;top:10px;left:10px;font-family:var(--mono);font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:inherit;opacity:.7;z-index:6}
+
+/* full-bleed banners */
+.banner{padding:72px var(--gutter);background:var(--ink);color:var(--bone);border-top:8px solid var(--red);border-bottom:8px solid var(--red)}
+.banner .inner{max-width:var(--max);margin:0 auto}
+
+/* corner registration marks for whole-doc feel */
+.regmark{position:fixed;width:20px;height:20px;pointer-events:none;z-index:99}
+.regmark.tl{top:12px;left:12px}
+.regmark.tr{top:12px;right:12px}
+.regmark.bl{bottom:12px;left:12px}
+.regmark.br{bottom:12px;right:12px}
+.regmark svg{width:100%;height:100%}
+
+/* responsive — collapse the 12 col cleanly */
+@media (max-width:880px){
+  :root{--gutter:24px;--col-gap:14px}
+  .grid12,.grid6,.grid4,.grid3{grid-template-columns:repeat(2,1fr)}
+  .section-head{grid-template-columns:1fr}
+  .section-head .num,.section-head .title{grid-column:1/-1}
+  .hero .seal-wrap,.hero .title-wrap{grid-column:1/-1}
+  .glyphs-grid{grid-template-columns:repeat(4,1fr)}
+  .glyphs-grid .g:nth-child(8n){border-right:1px solid var(--ink)}
+  .glyphs-grid .g:nth-child(4n){border-right:none}
+  .masthead{grid-template-columns:1fr 1fr}
+  .masthead .m1,.masthead .m2,.masthead .m3,.masthead .m4{grid-column:auto;text-align:left}
+}

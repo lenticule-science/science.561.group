@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "l-space-integration-observation/v1",
+  "observedAt": "2026-08-20",
+  "configId": "lenticule-science-knowledge-vault",
+  "dialect": "house",
+  "rooms": 10858,
+  "doors": 15220,
+  "halls": 1397,
+  "cards": 28628,
+  "spaceElements": 10858,
+  "tufteElements": 10858,
+  "tufte": {
+    "strategy": "tiling-grid",
+    "columns": 96,
+    "rows": 114
+  },
+  "vaultMaze": {
+    "displayName": "VaultMaze",
+    "engine": "lantern-compatible/v1",
+    "gates": 10858,
+    "targetRetention": 0.9,
+    "reviewGateObserved": true,
+    "authorizedDirectReadObserved": true,
+    "familiarRetrievalObserved": true,
+    "familiarLearningCredit": false,
+    "costPolicy": "lenticule-science/familiar-cost/v1"
+  },
+  "warnings": 30171,
+  "warningDisposition": "retained as an explicit graph-repair backlog; no unresolved relation was guessed"
+}

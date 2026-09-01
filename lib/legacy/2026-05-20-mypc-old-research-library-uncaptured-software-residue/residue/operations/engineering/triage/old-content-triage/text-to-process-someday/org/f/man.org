@@ -1,0 +1,63 @@
+* Groundhog Emacs Manual
+
+*/Groundhog Emacs/* (GHE) is a set of /Org-mode files/ and an /Emacs configuration file/ that sets up Emacs to be used as a personal terminal for taking records compatible with those used by the Groundhog Autonomous Zone.
+
+** Basics
+
+*** The Lingo
+- files :: GHE stores the data created through use in different */files/*.
+- entries :: These /files/ contain */entries/*, usually organized under some hierarchy.
+- events :: When something occurs in real life, that */event/* might mean an /entry/ should be created.
+
+*** GHE Files & Folders
+GHE comes as a set of files and folders. It's assumed they'll go in =~/.emacs.d=, overwriting any existing configuration you may have. */Be careful about that!/*
+**** The Files
+***** =bib.org=
+A bibliography of resources the user has a relationship with.
+***** =cal.org=
+A calendar of events from the past that are recognized each year.
+***** =led.org=
+This holds a Beancount-format /ledger/, organized under Org-mode style subtrees by week-of-the-year and then date. /Ledger entries/, like lots of other entries, are created with capture templates. Some are created when an /event/ occurs, others are created during dedicated record-keeping.
+***** =log.org=
+This holds a written record created by the user. It consists of two sections, a /Journal/ for a personal journal, and /Ramblings/, from capturing anything the user says elsewhere that might be worth recording more permanently.
+***** =man.org=
+This file, containing instructions for the user on how to use GHE.
+***** =ops.org=
+The operations the user engages in, including their /Routine/ and their /Plans/
+***** =init.el=
+The configuration file for Emacs.
+***** =com.org=
+This uses Org-mode inclusion to compose documents for export, generally for sharing with the GAZ or another person.
+**** The Folders
+***** =exp/=
+This holds documents created through com.org
+***** =ref/=
+This holds references, mostly for pointing to in the bibliography.
+***** =img/=
+This holds images added by the user.
+*** Getting Started
+Copy the files into your ~=~/.emacs.d/= directory and good luck.
+
+** Guides
+*** Using the Capture Templates
+- Pull up the capture template menu with =C-c c=
+  - Finish the entry with =C-c C-c=
+  - (or throw it away with =C-c C-k=)
+** Specifications
+*** Entry Formats
+**** Journal
+Journal entries are located under "Journal" in the /Log/.
+**** Rambling
+Ramblings are located under "Rambling" in the /Log/.
+**** Operation
+Operations are located in the /Ops/ file.
+
+Operations are organized firstly under three sections:
+
+- Events, for upcoming one-time things
+- Plans
+- Routine
+
+
+*** Ledger Stuff
+**** Commodities

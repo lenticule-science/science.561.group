@@ -1,0 +1,12 @@
+#+title: anthropology
+#+roam_alias: "anthropologist"
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-18 Fri 19:52]
+*/Anthropology/* is the study of [[file:human.org][human]], usually through [[file:artifact.org][artifacts]]
+
+** Media
+
+*** Early human history
+
+    - [[https://www.youtube.com/watch?v=vJybfmbrOCE&feature=youtu.be][The Remains Of The Oldest Human Ancestor Ever Found]] 

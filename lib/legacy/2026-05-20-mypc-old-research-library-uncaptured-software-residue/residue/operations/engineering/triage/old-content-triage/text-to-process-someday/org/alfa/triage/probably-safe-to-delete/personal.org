@@ -1,0 +1,700 @@
+#+TITLE: Personal Information
+#+AUTHOR: emsenn
+#+OPTIONS: c:t p:t d:t toc:nil num:nil
+#+TODO: TODO EXEC | DONE
+#+TAGS: reading_list
+#+LATEX_CLASS: log
+* Preface
+** Ledger Preface
+#+BEGIN_SRC ledger :noweb yes :tangle yes
+C 1 tbsp = 3 tsp
+C 1 cup = 8 oz
+C 1 gal = 16 cup
+C 1 lb = 16 OZ
+#+END_SRC
+* Logs
+** 1990
+*** 1990-05 May
+**** 1990-05-11 Friday
+Born, in Switzerland.
+** 1994
+Immigrated to Kettering, Ohio, United States.
+** 1997
+Wrote my first short story, about a pirate.
+** 1999
+Participated in a collaboration between my fourth-grade class at Prass
+Elementary and the NASA branch of the local air force base.
+** 2000
+*** 2000-03 March
+Moved from Kettering to Dayton, Ohio.
+*** 2000-09 September
+**** Projects
+***** Canland
+- A story set on Canland, a planet on the inside of a tin can.
+** 2003
+*** 2003-07 March
+**** 2003-07-21 Monday
+Started attending Stivers School for the Arts, studying creative
+writing with a focus on writing.
+** 2004
+*** Projects
+**** Canland
+Published my first story, set in Canland, about someone who
+accidentally introduced magic to the world.
+** 2005
+*** Projects
+**** Canland
+Published a story set in Canland, a parody of Phantom of the Opera.
+** 2007
+Published a poem, lost my writing portfolio.
+** 2008
+Earned my high school diploma.
+** 2009
+*** 2009-07 July
+**** 2009-07-12 Sunday
+***** Work
+Along with several others, founded Sedazad (then NedaNet) in response
+to the Iranian presidential election.
+**** 2009-07-18 Saturday
+***** Writing
+- Wrote [[file:~/org/docs/posts/publicity-isnt-always-good.org]["Publicity Isn't Always Good"]]
+**** 2009-07-19
+***** Writing
+- Wrote [[file:~/org/docs/posts/was-neda-christion.org]["Was Neda Christian"]]
+** 2018
+*** 2018-09 September
+**** 2018-09-05 Wednesday
+***** Reading
+****** "The Unreasonable Effectiveness of Metaphor"            :reading_list:
+       :PROPERTIES:
+       :AUTHOR:   Julie Moronuki
+       :END:
+*** 2018-10 October
+**** 2018-10-27 Saturday
+***** Bookkeeping
+****** Personal Log Maintenance
+       :LOGBOOK:
+       CLOCK: [2018-10-27 Sat 07:33]--[2018-10-27 Sat 09:12] =>  1:39
+       :END:
+**** 2018-10-29 Monday
+***** Bookkeeping
+****** Personal Log Maintenance
+       :LOGBOOK:
+       CLOCK: [2018-10-29 Mon 15:33]--[2018-10-29 Mon 15:53] =>  0:20
+       :END:
+** 2019
+*** 2019-01 January
+**** 2019-01-01 Tuesday
+***** Bookkeeping
+****** Larder Inventory[fn:1]
+#+BEGIN_SRC ledger :noweb yes :tangle yes
+2019/01/01 * Larder Inventory
+  Inventory:Larder:eggs                    4
+  Inventory:Larder:vegetables              2    can
+  Inventory:Larder:rice and beans          0.5  cup
+  Inventory:Larder:vegetable oil           2    cup
+  Inventory:Larder:table salt            412    tsp
+  Inventory:Larder:peanut butter          46    tbsp
+  Inventory:Larder:mustard                32    tsp
+  Inventory:Larder:decaf                  60    tbsp
+  Inventory:Larder:beans                   2    can
+  Inventory:Larder:bread                  18    pc
+  Inventory:Larder:coffee                 22    tbsp
+  Inventory:Larder:soft flour              8    cup
+  Life:Bookbalancing
+#+END_SRC
+**** 2019-01-04 Friday
+***** Cooking
+ #+BEGIN_SRC ledger :noweb yes :tangle yes
+ 2019/01/04 * Biscuits
+   Inventory:Larder:baking powder          -2    tsp
+   Inventory:Larder:soft flour             -2    cup
+   Inventory:Larder:white sugar            -2    tsp
+   Inventory:Larder:table salt             -0.5  tsp
+   Inventory:Larder:vegetable oil          -0.25 cup
+   Inventory:Larder:milk                   -0.4  cup
+   Inventory:Larder:biscuits               12
+   Life:Cooking
+ 2019/01/04 * Lunch ; w/ Esther
+   Inventory:Larder:biscuits               -6
+   Inventory:Larder:rice and beans         -0.5  cup
+   Inventory:Larder:cheese                 -2    OZ
+   Inventory:Larder:eggs                   -4
+   Life:Eating
+ 2019/01/04 * Dinner
+   Inventory:Larder:biscuits               -6
+   Life:Eating
+ #+END_SRC
+***** Shopping
+ #+BEGIN_SRC ledger :noweb yes :tangle yes
+ 2019/01/04 * Harris Teeter
+   Inventory:Larder:cheese                 18    OZ   @@   $6.78
+   Inventory:Larder:cream                  16    oz   @@   $5.79
+   Inventory:Larder:yogurt                 32    oz   @@   $3.99
+   Inventory:Larder:bologna                12    OZ   @@   $0.99
+   Inventory:Larder:chicken                 2.25 lb   @@   $2.23
+   Inventory:Larder:hot dogs                8         @@   $4.29
+   Inventory:Larder:sausage                 2    lb   @@   $5.98
+   Inventory:Larder:sauerkraut             16    OZ   @@   $3.98
+   Inventory:Larder:whitefish              16    OZ   @@   $5.97
+   Inventory:Larder:apple cider vinegar   128    oz   @@   $2.99
+   Inventory:Larder:baking powder          48    tsp  @@   $0.99
+   Inventory:Larder:baking soda            72    tsp  @@   $0.99
+   Inventory:Larder:black beans            16    OZ   @@   $0.99
+   Inventory:Larder:brown rice             48    OZ   @@   $1.99
+   Inventory:Larder:corn                    4    can  @@   $2.40
+   Inventory:Larder:white rice             60    OZ   @@   $2.99
+   Inventory:Larder:white sugar           360    tbsp @@   $5.79
+   Inventory:Larder:hot dog buns            8         @@   $0.99
+   Inventory:Larder:garlic                  3         @@   $1.77
+   Inventory:Larder:chili                   1    can  @@   $0.99
+   Supplier:Harris Teeter
+ 2019/01/04 * Harris Teeter
+   Expenses:Food:Groceries                $82.90
+   Esther
+ #+END_SRC
+**** 2019-01-05 Saturday
+***** Bookkeeping
+****** Personal Log Maintenance
+       :LOGBOOK:
+       CLOCK: [2019-01-05 Sat 10:22]--[2019-01-05 Sat 10:45] => 0:23
+       :END:
+***** Cooking
+ #+BEGIN_SRC ledger :noweb yes :tangle yes
+ 2019/01/05 * Coffee
+   Inventory:Larder:coffee                 -4    tbsp
+   Inventory:Larder:cream                  -1    oz
+   Inventory:Larder:milk                   -0.2  cup
+   Life:Eating
+ 2019/01/05 * Dinner ; "Skyline" w/ Esther
+   Inventory:Larder:hot dogs               -4
+   Inventory:Larder:hot dog buns           -4
+   Inventory:Larder:chili                  -0.5  can
+   Inventory:Larder:mustard                -2    tsp
+   Inventory:Larder:cheese                 -5    OZ
+   Life:Eating
+ #+END_SRC
+***** Recreation
+***** Reading
+        :LOGBOOK:
+	CLOCK: [2019-01-05 Sat 10:03]--[2019-01-05 Sat 10:11] =>  0:08
+     :END:
+- [[https://wilwilliams.reviews/2019/01/04/podcasters-are-people-the-intimacy-of-medium-vs-parasocial-relationships/]["Podcasters are People"]] by Wil Williams
+**** 2019-01-07 Sunday
+***** Cooking
+ #+BEGIN_SRC ledger :noweb yes :tangle yes
+ 2019/01/06 * Lunch
+   Inventory:Larder:sausage                -0.2  lb
+   Inventory:Larder:sauerkraut             -4    OZ
+   Life:Eating
+ #+END_SRC
+**** 2019-01-08 Tuesday
+***** Bookkeeping
+****** Collect Laundry Quarter
+ #+BEGIN_SRC ledger :noweb yes :tangle yes
+ 2019/01/08 * Trustee Corner Laundry Machines
+   Assets:Cash                            $50
+   Liabilities:Trustee Corner
+ #+END_SRC
+***** Cooking
+      :LOGBOOK:
+      CLOCK: [2019-01-08 Tue 19:24]--[2019-01-08 Tue 19:40] =>  0:16
+      :END:
+ #+BEGIN_SRC ledger :noweb yes :tangle yes
+ 2019/01/08 * Coffee
+   Inventory:Larder:decaf                  -6    tbsp
+   Life:Eating
+ 2019/01/08 * Dinner
+   Inventory:Larder:sausage                -0.8  lb
+   Inventory:Larder:beans                  -1    can
+   Life:Eating
+ #+END_SRC
+***** Shopping
+ #+BEGIN_SRC ledger :noweb yes :tangle yes
+ 2019/01/09 * Angelina's in Pittsboro
+   Expenses:Food:Dining                    $8.32
+   Assets:Cash
+ 2019/01/08 * Pittsboro Antique Store
+   Inventory:Kitchen:dishes:custard cups    5         @@   $15
+   Inventory:Kitchen:dishes:soup bowls      2         @@   $13
+   Inventory:Kitchen:dishes:cream pot       1         @@    $9.5
+   Inventory:Books                          1         @@    $4
+   ; "Shovel and Trowel Gardening Club Favorite Recipes 1962-63"
+   Expenses:Books                         -$4
+   Expenses:Homegoods
+ #+END_SRC
+**** 2019-01-09 Wednesday
+***** Bookkeeping
+****** Personal Log Maintenance[fn:2]
+      :LOGBOOK:
+      CLOCK: [2019-01-09 Wed 21:58]--[2019-01-09 Wed 22:23] =>  0:25
+      CLOCK: [2019-01-09 Wed 08:27]--[2019-01-09 Wed 09:42] =>  1:15
+      :END:
+***** Cooking
+      :LOGBOOK:
+      CLOCK: [2019-01-09 Wed 18:18]--[2019-01-09 Wed 18:37] =>  0:19
+      CLOCK: [2019-01-09 Wed 17:55]--[2019-01-09 Wed 18:18] =>  0:23
+      CLOCK: [2019-01-09 Wed 17:30]--[2019-01-09 Wed 17:36] =>  0:06
+      :END:
+ #+BEGIN_SRC ledger :noweb yes :tangle yes
+ 2019/01/08 * Coffee
+   Inventory:Larder:coffee                 -4    tbsp
+   Inventory:Larder:decaf                  -6.5  tbsp
+   Life:Eating
+ 2019/01/09 * Baking ; biscuits
+   Inventory:Larder:soft flour             -2    cup
+   Inventory:Larder:white sugar            -2    tsp
+   Inventory:Larder:baking powder          -1    tsp
+   Inventory:Larder:vegetable oil          -0.5  cup
+   Inventory:Larder:milk                   -0.6  cup
+   Inventory:Larder:biscuits               18
+   Life:Cooking
+ 2019/01/09 * Breakfast
+   Inventory:Larder:biscuits               -3
+   Inventory:Larder:cheese                 -2    OZ
+   Life:Eating
+ 2019/01/09 * Lunch
+   Inventory:Larder:biscuits               -4
+   Inventory:Larder:cheese                 -3    OZ
+   Life:Eating
+ 2019/01/09 * Dinner ; chicken soup
+   Inventory:Larder:vegetables             -2    can
+   Inventory:Larder:garlic                 -1
+   Inventory:Larder:chicken                -2.25 lb
+   Inventory:Larder:biscuits               -4
+   Inventory:Larder:chicken soup            8    cup
+   Life:Cooking
+ #+END_SRC
+***** Domestic
+****** [4/4] Cleaning[fn:3]
+   :LOGBOOK:
+   CLOCK: [2019-01-09 Wed 13:34]--[2019-01-09 Wed 14:56] =>  1:22
+   :END:
+ - [X] Tidy laundry
+ - [X] Sweep
+ - [X] Wash dishes
+ - [X] Fold trash
+***** Recreation
+****** Minecraft[fn:4]
+   CLOCK: [2019-01-09 Wed 19:22]--[2019-01-09 Wed 20:50] =>  1:28
+   CLOCK: [2019-01-09 Wed 12:30]--[2019-01-09 Wed 13:28] =>  0:58
+   :END:
+***** Social
+****** Chatting
+   :LOGBOOK:
+   CLOCK: [2019-01-09 Wed 14:18]--[2019-01-09 Wed 14:27] =>  0:09
+   :END:
+ | Time                   | Person(s) | Topic(s)          |
+ |------------------------+-----------+-------------------|
+ | [2019-01-09 Wed 14:18] | Tom       | Fediverse privacy |
+**** 2019-01-10 Thursday
+***** Bookkeeping
+****** [2/4] Personal Log Maintenance[fn:5]
+       :LOGBOOK:
+       CLOCK: [2019-01-10 Thu 21:23]--[2019-01-10 Thu 22:35] =>  1:12
+       CLOCK: [2019-01-10 Thu 15:22]--[2019-01-10 Thu 15:28] =>  0:06
+       CLOCK: [2019-01-10 Thu 09:03]--[2019-01-10 Thu 09:59] =>  0:56
+       :END:
+ - [X] Clean up the 9th's personal log
+ - [X] Revise Capture Templates
+ - [ ] Write ~plans.org~
+ - [ ] Write capture template for plans.
+***** Cooking
+      :LOGBOOK:
+      CLOCK: [2019-01-10 Thu 17:35]--[2019-01-10 Thu 18:19] =>  0:44
+      :END:
+ #+BEGIN_SRC ledger :noweb yes :tangle yes
+ 2019/01/09 * Coffee
+   Inventory:Larder:coffee                 -9    tbsp
+   Inventory:Larder:decaf                  -6    tbsp
+   Life:Eating
+ 2019/01/10 * Breakfast
+   Inventory:Larder:biscuits               -7
+   Inventory:Larder:cheese                 -2    OZ
+   Life:Eating
+ 2019/01/10 * Dinner
+   Inventory:Larder:sausage                -0.5  lb
+   Inventory:Larder:garlic                 -0.5
+   Inventory:Larder:beans                  -1    can
+   Life:Eating
+ #+END_SRC
+***** Domestic
+****** Cleaning
+       :LOGBOOK:
+       CLOCK: [2019-01-10 Thu 13:57]--[2019-01-10 Thu 15:03] =>  1:06
+       CLOCK: [2019-01-10 Thu 11:31]--[2019-01-10 Thu 11:35] =>  0:04
+       :END:
+****** Gardening[fn:6]
+ #+BEGIN_SRC ledger :noweb yes :tangle yes
+ 2019/01/10 * Gardening
+   Inventory:Larder:garlic                -1
+   Inventory:Kitchen:Planter:garlic
+ #+END_SRC
+***** Projects
+****** Emacs & Org-Mode
+       :LOGBOOK:
+       CLOCK: [2019-01-10 Thu 22:08]--[2019-01-10 Thu 22:18] =>  0:10
+       CLOCK: [2019-01-10 Thu 11:41]--[2019-01-10 Thu 12:03] =>  0:22
+       :END:
+****** Teraum
+       :LOGBOOK:
+       CLOCK: [2019-01-10 Thu 22:58]--[2019-01-10 Thu 23:12] =>  0:14
+       :END:
+***** Shopping
+ #+BEGIN_SRC ledger :noweb yes :tangle yes
+ 2019/01/10 * Harris Teeter
+   Inventory:Larder:ovaltine               48    tbsp @@   $5.29
+   Inventory:Larder:peas                    4    can  @@   $5
+   Inventory:Larder:honey                   8    oz   @@   $3.49
+   Inventory:Larder:jelly                  48    tbsp @@   $1.99
+   Inventory:Larder:cheese                 24    OZ   @@   $6.00
+   Inventory:Larder:coffee                120    tbsp @@   $3.99
+   Inventory:Larder:milk                    1    gal  @@   $3.99
+   Supplier:Harris Teeter
+ 2019/01/10 * Harris Teeter
+   Expenses:Food:Groceries                $63.51
+   Esther
+ #+END_SRC
+***** Social
+****** Chatting
+       :LOGBOOK:
+       CLOCK: [2019-01-10 Thu 16:20]--[2019-01-10 Thu 16:28] =>  0:08
+       :END:
+ | Time                   | Person(s) | Topic(s)          |
+ |------------------------+-----------+-------------------|
+ | [2019-01-09 Wed 14:18] | @jorty    | Cursive and print |
+****** Esther
+       :LOGBOOK:
+       CLOCK: [2019-01-10 Thu 15:03]--[2019-01-10 Thu 15:21] =>  0:18
+       CLOCK: [2019-01-10 Thu 13:27]--[2019-01-10 Thu 13:57] =>  0:30
+       CLOCK: [2019-01-10 Thu 12:03]--[2019-01-10 Thu 12:13] =>  0:10
+       CLOCK: [2019-01-10 Thu 11:35]--[2019-01-10 Thu 11:41] =>  0:06
+       CLOCK: [2019-01-10 Thu 09:59]--[2019-01-10 Thu 10:12] =>  0:13
+       CLOCK: [2019-01-10 Thu 09:09]--[2019-01-10 Thu 09:15] =>  0:06
+       :END:
+**** 2019-01-11 Friday
+***** Bookkeeping
+****** Personal Log Maintenance[fn:7]
+       :LOGBOOK:
+       CLOCK: [2019-01-11 Fri 19:55]--[2019-01-11 Fri 22:40] =>  2:45
+       CLOCK: [2019-01-11 Fri 09:52]--[2019-01-11 Fri 10:27] =>  0:35
+       :END:
+***** Cooking
+      :LOGBOOK:
+      CLOCK: [2019-01-11 Fri 17:08]--[2019-01-11 Fri 17:38] =>  0:30
+      :END:
+ #+BEGIN_SRC ledger :noweb yes :tangle yes
+ 2019/01/11 * Coffee
+   Inventory:Larder:coffee                 -8    tbsp
+   Life:Eating
+ 2019/01/11 * Breakfast ; PB&J sandwich
+   Inventory:Larder:bread                  -2    pc
+   Inventory:Larder:peanut butter          -2    tbsp
+   Inventory:Larder:jelly                  -2    tbsp
+   Life:Eating
+ 2019/01/11 * Dinner ; "Skyline" w/ Esther
+   Inventory:Larder:hot dogs               -4
+   Inventory:Larder:chili                  -0.5  can
+   Inventory:Larder:hot dog buns           -4
+   Inventory:Larder:mustard                -3    tsp
+   Inventory:Larder:cheese                 -5    OZ
+   Life:Eating
+ 2019/01/11 * Snack
+   Inventory:Larder:cheese                 -2    OZ
+   Inventory:Larder:milk                   -4    oz
+   Life:Eating
+ #+END_SRC
+***** Domestic
+****** Cleaning
+       :LOGBOOK:
+       CLOCK: [2019-01-11 Fri 16:24]--[2019-01-11 Fri 16:41] =>  0:17
+       CLOCK: [2019-01-11 Fri 15:45]--[2019-01-11 Fri 16:05] =>  0:20
+       CLOCK: [2019-01-11 Fri 11:33]--[2019-01-11 Fri 11:41] =>  0:08
+       :END:
+***** Projects
+****** S&T Garden Club Cookbook Transcription[fn:8]
+       :LOGBOOK:
+       CLOCK: [2019-01-11 Fri 11:41]--[2019-01-11 Fri 11:51] =>  0:10
+       :END:
+****** [3/5] Emacs & Org-mode
+       :LOGBOOK:
+       CLOCK: [2019-01-11 Fri 18:02]--[2019-01-11 Fri 19:15] =>  1:13
+       CLOCK: [2019-01-11 Fri 11:22]--[2019-01-11 Fri 11:33] =>  0:11
+       CLOCK: [2019-01-11 Fri 10:50]--[2019-01-11 Fri 11:06] =>  0:16
+       :END:
+ - [X] Capture Template for Chatting
+ - [X] Cleanup ~~/org/~
+ - [ ] Write plans.org
+ - [ ] Write better "Post to Writefreely" template[fn:9]
+ - [X] Find better Tex class[fn:10]
+***** Recreation
+****** Minecraft[fn:11]
+       :LOGBOOK:
+       CLOCK: [2019-01-11 Fri 14:30]--[2019-01-11 Fri 15:45] =>  1:15
+       :END:
+***** Socializing
+****** Chatting
+       :LOGBOOK:
+       CLOCK: [2019-01-11 Fri 10:05]--[2019-01-11 Fri 10:23] =>  0:18
+       :END:
+ | Time                   | Person(s) | Topic(s)                        |
+ |------------------------+-----------+---------------------------------|
+ | [2019-01-11 Fri 10:05] | Tom       | Imperialism and history museums |
+
+****** Esther
+       :LOGBOOK:
+       CLOCK: [2019-01-11 Fri 19:15]--[2019-01-11 Fri 19:55] =>  0:40
+       CLOCK: [2019-01-11 Fri 17:38]--[2019-01-11 Fri 17:57] =>  0:19
+       CLOCK: [2019-01-11 Fri 16:05]--[2019-01-11 Fri 16:24] =>  0:19
+       :END:
+
+**** 2019-01-12 Saturday
+***** Bookkeeping
+****** Computer Maintenance[fn:12]
+       :LOGBOOK:
+       CLOCK: [2019-01-12 Sat 15:25]--[2019-01-12 Sat 15:54] =>  0:29
+       CLOCK: [2019-01-12 Sat 06:45]--[2019-01-12 Sat 07:33] =>  0:48
+       :END:
+***** Cooking
+#+BEGIN_SRC ledger :noweb yes :tangle yes
+2019/01/12 * Coffee
+  Inventory:Larder:coffee                -24    g
+  Inventory:Larder:ovaltine               -6    g
+  Inventory:Larder:milk                  -30    ml
+  Life:Eating
+2019/01/12 * Breakfast
+  Inventory:Larder:oatmeal                -1    pack
+  Inventory:Larder:milk                  -20    ml
+  Life:Eating
+***** Projects
+****** Emacs & Org-mode
+***** Recreation
+****** Minecraft[fn:13]
+       :LOGBOOK:
+       CLOCK: [2019-01-12 Sat 14:47]--[2019-01-12 Sat 15:21] =>  0:34
+       :END:
+***** Writing
+****** [[file:./org/docs/guides/keep-a-larder-inventory-org-mode-ledger.org]["Keep a Larder Inventory with Org-mode and Ledger"]]
+       :LOGBOOK:
+       CLOCK: [2019-01-12 Sat 13:46]--[2019-01-12 Sat 14:23] =>  0:37
+       :END:
+**** 2019-01-13 Sunday
+***** Bookkeeping
+****** Computer Maintenance[fn:14]
+       :LOGBOOK:
+       CLOCK: [2019-01-13 Sun 11:01]--[2019-01-13 Sun 12:27] =>  1:26
+       :END:
+***** Cleaning
+      :LOGBOOK:
+      CLOCK: [2019-01-13 Sun 15:19]--[2019-01-13 Sun 15:34] =>  0:15
+      CLOCK: [2019-01-13 Sun 13:58]--[2019-01-13 Sun 15:09] =>  1:11
+      :END:
+***** Cooking
+#+BEGIN_SRC ledger :noweb yes :tangle yes
+2019/01/13 * Coffee
+  Inventory:Larder:coffee                  -6   tbsp
+  Inventory:Larder:ovaltine               -12   g
+  Inventory:Larder:milk                   -20   ml
+  Inventory:Larder:cream                  -15   ml
+  Life:Eating
+#+END_SRC
+***** Social
+      :LOGBOOK:
+      CLOCK: [2019-01-13 Sun 15:09]--[2019-01-13 Sun 15:19] =>  0:10
+      :END:
+| Time | Person | Topic |
+| <2019-01-13 Sun 15:10>     |        |       |
+**** 2019-01-16 Wednesday
+***** Cleaning
+      :LOGBOOK:
+      CLOCK: [2019-01-16 Wed 10:19]--[2019-01-16 Wed 10:58] =>  0:39
+      :END:
+***** Projects
+****** Aperte[fn:15]
+- Released at [[https://git.sr.ht/~emsenn/aperte]]
+***** Writing
+      :LOGBOOK:
+      CLOCK: [2019-01-16 Wed 09:51]--[2019-01-16 Wed 10:09] =>  0:18
+      :END:
+- Published [[file:~/org/docs/essays/expository/planning-my-online-presence/README.md]["Planning My Online Presence"]] as [[https://wordsmith.social/emsenn/planning-my-online-presence][@emsenn@wordsmith.social]]
+  and at [[https://git.sr.ht/~emsenn/planning-my-online-presence]]
+- Released [[file:~/org/docs/templates/document-template/README.md][Document Template]] on
+  [[https://git.sr.ht/~emsenn/document-template]]
+- Published [[file:~/org/docs/essays/expository/a-brief-chemical-history-of-gold-currency/README.md]["A Brief Chemical History of Gold Currency"]] at
+  [[https://git.sr.ht/~emsenn/a-brief-chemical-history-of-gold-currency]]
+- Published [[file:~/org/docs/contracts/one-way-non-disclosure-agreement/README.md]["One-Way Non-Disclosure Agreement"]] at
+  [[https://git.sr.ht/~emsen/one-way-non-disclosure-agreement]]
+**** 2019-01-17 Thursday
+***** Bookkeeping[fn:16]
+      :LOGBOOK:
+      CLOCK: [2019-01-17 Thu 13:47]--[2019-01-17 Thu 14:07] =>  0:20
+      :END:
+***** Cleaning
+      :LOGBOOK:
+      CLOCK: [2019-01-17 Thu 15:50]--[2019-01-17 Thu 16:59] =>  1:09
+      CLOCK: [2019-01-17 Thu 14:19]--[2019-01-17 Thu 15:22] =>  1:03
+      :END:
+***** Cooking
+      :LOGBOOK:
+      CLOCK: [2019-01-17 Thu 13:03]--[2019-01-17 Thu 13:47] =>  0:44
+      :END:
+#+BEGIN_SRC ledger :noweb yes :tangle yes
+2019/01/17 * Coffee
+  Inventory:Larder:coffee                 -4   tbsp
+  Inventory:Larder:ovaltine               -1   tbsp
+  Inventory:Larder:cream                  -2   tbsp
+2019/01/17 * Lunch
+  Inventory:Larder:salami                 -3   oz
+  Inventory:Larder:cheese                 -2   oz
+#+END_SRC
+***** Projects
+****** [[file:~/org/projects/emsenn-neocities-org/README.md][~emsenn.neocities.org~]]
+       :LOGBOOK:
+       CLOCK: [2019-01-17 Thu 10:47]--[2019-01-17 Thu 13:03] =>  2:16
+       :END:
+***** Recreation
+      :LOGBOOK:
+      CLOCK: [2019-01-17 Thu 15:23]--[2019-01-17 Thu 15:50] =>  0:27
+      :END:
+***** Socializing
+      :LOGBOOK:
+      CLOCK: [2019-01-17 Thu 14:07]--[2019-01-17 Thu 14:19] =>  0:12
+      :END:
+|  Time | Person(s)                 | Topic(s)   |
+| 10:00 | Tom                       | Dating     |
+| 14:07 | @starbreaker@pleroma.site | Web design |
+**** 2019-01-18 Friday
+***** Bookkeeping
+***** Cleaning
+      :LOGBOOK:
+      CLOCK: [2019-01-18 Fri 10:50]--[2019-01-18 Fri 15:10] =>  4:20
+      :END:
+***** Cooking
+#+BEGIN_SRC ledger :tangle yes
+2019/01/18 * Coffee
+  Inventory:Larder:coffee          -7 tbsp
+  Inventory:Larder:ovaltine        -1 tbsp
+  Inventory:Larder:milk            -2 oz
+#+END_SRC
+***** Projects
+****** emacs.d
+       :LOGBOOK:
+       CLOCK: [2019-01-18 Fri 20:23]--[2019-01-18 Fri 20:50] =>  0:27
+       :END:
+****** emsenn.net
+       :LOGBOOK:
+       CLOCK: [2019-01-18 Fri 10:02]--[2019-01-18 Fri 10:18] =>  0:16
+       :END:
+***** Socializing
+      :LOGBOOK:
+      CLOCK: [2019-01-18 Fri 17:20]--[2019-01-18 Fri 17:56] =>  0:00
+      :END:
+|  Time | Person(s)     | Mode      | Topic(s)      |
+| 17:20 | Alex Thompson | in-person | The Fediverse |
+***** Writing
+- Wrote [[https://git.sr.ht/~emsenn/mastodon-is-a-bake-fair/]["Mastodon is a Bake Fair"]] and syndicated it on [[https://wordsmith.social/emsenn/mastodon-is-a-bake-sale][Wordsmith.social]].
+**** 2019-01-19 Saturday
+***** Cooking
+#+BEGIN_SRC ledger :tangle yes
+  Inventory:Larder:coffee    -4 tbsp
+#+END_SRC
+***** Socializing
+|  Time | Person(s)                                           | Topic(s)                                        |
+| 13:20 | Daniel Sockwell, @brandon@fosstodon.org             | Effects of gamification on online communication[fn:17] |
+|       |                                                     |                                                 |
+* Plans
+** Personal
+*** [0/1] Bookkeeping
+- [ ] Convert log larder ledgers to metric system
+** Docs
+*** Contracts
+*** Essays
+*** Fiction
+*** Games
+*** Guides
+*** Letters
+*** Misc
+*** Template Guides
+*** Templates
+** Projects
+*** [0/1] [[file:./org/projects/emacs.d/][~emacs.d~]]
+- [ ] Write [[file:~/org/projects/emacs.d/init.org][init.org]].
+*** [0/1] lbry.io
+- [ ] Look at it as a potential syndication platform.
+*** [0/1] teraum
+- [ ] Add accidental introduction of magic to canon.
+*** [0/1] tabletop.social
+- [ ] write README post
+*** [0/1] tabletop.press
+- [ ] write README post
+* Reference
+** Larder Information
+| Good     | Normal Measure | Scientific Measure |
+| Coffee   | 1 tbsp         | 8g                 |
+| Ovaltine | 1 tbsp         | 6g                 |
+| Milk     | 1 oz           | 28ml               |
+
+* Footnotes
+
+[fn:17] Daniel's comments made me realize I think about the effects on
+posters, not the network, and I should give the latter more
+consideration.
+
+[fn:1] This entry exists to fill in the gaps in my kitchen's
+inventory, since I wasn't keeping these records before 2019.
+
+[fn:2] I want to try using the org-mode stuff I've learned so far to
+write a personal log for today.
+
+[fn:3] I procrastinated my morning chores to work on the Org-mode
+capture templates, but now that I've gotten that done and played some
+Minecraft, it's time to get this place looking nice again.
+
+[fn:4] Started a new map with a modpack called /FTB: Revelations/.
+Spawn is a on a narrow plateau facing an eastern sea, and I'm building
+a village north of that plateau, in a bay forested with beech trees.
+
+[fn:5] I made good progress working on my personal log format
+yesterday, including getting some capture templates set up. Today I'd
+like to get that even more refined, work on a ~plans.org~ format to
+supplement the logs, and if I have the time and direction, look more
+at elisp and how to write my capture templates a bit better.
+
+[fn:6] Planted a garlic bulb split into its cloves in a planeter on
+the kitchen counter, to use the sprouts in cooking.
+
+[fn:7] A big part of "general maintenance" for now means tinkering
+with the day's logs as they happen, because for a lot of "types" of
+events, it's the first time they're happening and I'm unsure how I'd
+like to record them.
+
+[fn:8] Just typed up the first recipe, but I'll be playing with using
+Org-mode source blocks and tangling with this project. The book is
+still copyrighted, and the organization is still around, so I'll be
+sharing it with them when I'm finished.
+
+[fn:9] Writefreely is the software that [[https://wordsmith.social][wordsmith.social]] runs, and I'm
+interested in having a better capture template for writing when I know
+it's intended for one of my blogs there.
+
+[fn:10] Went with the ~tufte-handout~ class for now.
+
+[fn:11] Finished the huts in Beechwood Bay and began to build a winery
+on the north shore of the Bay, northwest of town.
+
+[fn:12] I've got a lot of files across my two laptops and Gitlab.com
+account that I'd like to get centralized on my desktop, then properly
+backed up as git repos.
+
+[fn:13] Building the winery near Beechwood Bay.
+
+[fn:14] Copying files from my Chromebooks to my desktop, before we
+head out of town in the evening.
+
+[fn:15] Found the source code for Aperte, a single-file blogging
+engine I wrote with a person I knew from the XKCD IRC chatroom in
+2009, which was used by Sedazad (then NedaNet) to set up local
+webblogs during the Green Revolution.
+
+[fn:16] I fell behind in my logs because of going on vacation to
+Asheville, and need to dedicate some time to catching up on them.

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       6bc635ae-69d8-40e9-b9ba-c004b94a659d
+:END:
+#+title: draft document
+#+date: [2025-10-04 Sat 10:57]
+

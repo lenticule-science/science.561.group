@@ -1,0 +1,15 @@
+id: eb5e8c2f72433bc698a4d9e2d09d066f612360282418b8883703afa88cf4bd8f
+inputs: &id001
+- kind: observation_equivalence
+  role: observation_equivalence
+name: observation_equivalence_check
+outputs: &id002
+- kind: observation_equivalence_evidence
+  role: observation_equivalence_evidence
+steps:
+- inputs: *id001
+  name: check_observation_equivalence
+  operator: observation_equivalence_check
+  outputs: *id002
+  step_index: 0
+

@@ -1,0 +1,27 @@
+#+SETUPFILE: ./default-setup.inc
+#+TITLE: Follow Friday for January 18, 2019
+#+EXPORT_FILE_NAME: ../pub/follow-friday-2019-01-18
+#+MACRO: document-type letter
+#+TOC: headlines 1
+* Introduction
+#+INCLUDE: "./plates.inc::default-eli"
+#+INCLUDE: "./plates.inc::contemporary"
+* Follow Friday for January 18, 2019
+| Person                              | Reason for recommendation                             |
+|-------------------------------------+-------------------------------------------------------|
+| [[https://mastodon.social/@IgnaceK][@IgnaceK@mastodon.social]]            | A real life friend of mine                            |
+| [[https://pleroma.site/@starbreaker][@starbreaker@pleroma.site]]           | Posts interesting stuff about writing and tech        |
+| [[https://mastodon.zombocloud.com/@staticsafe][@staticsafe@mastodon.zombocloud.com]] | Posts cool stuff about tech and the people who use it |
+| [[https://mastodon.technology/@kaushalmodi][@kaushalmodi@mastodon.technology]]    | Always helpful with my Emacs questions.               |
+* Supplements
+#+TOC: headlines local 1
+** Contribute
+   :PROPERTIES:
+   :CUSTOM_ID: supplements-contribute
+   :END:
+#+INCLUDE: "./plates.inc::personal-contribute"
+** License
+   :PROPERTIES:
+   :CUSTOM_ID: supplements-license
+   :END:
+#+INCLUDE: "./plates.inc::mit-license"

@@ -1,0 +1,18 @@
+id: b49024a8f40bb997781d742dd5875b651a3e15287c153572eda83a68d4ff5d9c
+name: flow_laws_check
+inputs:
+  - role: flow_map
+    kind: flow_map
+outputs:
+  - role: flow_laws_evidence
+    kind: flow_laws_evidence
+steps:
+  - name: flow_laws_check
+    operator: flow_laws_check
+    step_index: 0
+    inputs:
+      - role: flow_map
+        kind: flow_map
+    outputs:
+      - role: flow_laws_evidence
+        kind: flow_laws_evidence

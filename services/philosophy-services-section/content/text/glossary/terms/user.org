@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       671fcda5-e8e7-451e-a6d5-d3131f39f89f
+:END:
+#+title: user
+#+date: [2025-08-29 Fri 20:42]
+

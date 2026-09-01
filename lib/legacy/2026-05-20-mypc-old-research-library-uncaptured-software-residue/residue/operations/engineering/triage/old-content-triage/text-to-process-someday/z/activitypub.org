@@ -1,0 +1,10 @@
+#+title: ActivityPub
+#+begin_head
+#+ghe_schema: record-0.1.1
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-22 Tue 10:38]
+#+roam_tags: term
+#+end_head
+
+*/ActivityPub/* is a comunications protocol for the [[file:web.org][Web]].

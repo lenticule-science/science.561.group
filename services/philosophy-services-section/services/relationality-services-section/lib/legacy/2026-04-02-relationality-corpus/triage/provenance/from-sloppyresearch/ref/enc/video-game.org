@@ -1,0 +1,30 @@
+:PROPERTIES:
+:ID:       8178d7b5-4c78-4780-8718-8c15e9bb87f0
+:public:   true
+:form:     [[id:e8e4d00e-aead-4b0a-be07-a0c30069774c][game]]
+:END:
+#+title: video game
+
+#+begin_src elisp :results value raw :exports results :eval yes
+  (let* ((nodes
+          (org-roam-db-query
+           [:select [*]
+            :from nodes
+            :where (and
+                    (like properties '"%form%video game%")
+                    (like properties '"%public%true%"))]))
+         (sorted-nodes
+          (sort nodes
+                (lambda (a b)
+                  (string-lessp (nth 8 a) (nth 8 b))))))
+    (mapconcat
+     (lambda (node)
+       (format "- [[id:%s][%s]]" (car node) (nth 8 node)))
+     sorted-nodes
+     "\n"))
+#+end_src
+
+
+#+RESULTS:
+- [[id:848aa467-7549-4478-a075-19dd92d9dabb][Grand Theft Auto VI]]
+- [[id:130901da-561e-4823-a0a2-44fa95e54c1f][The Outer Worlds]]

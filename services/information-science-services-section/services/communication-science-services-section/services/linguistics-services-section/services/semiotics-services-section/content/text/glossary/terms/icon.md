@@ -1,0 +1,30 @@
+---
+name: "icon"
+aliases:
+  - "icon"
+  - "iconic sign"
+date-created: 2026-03-01T00:00:00
+keywords:
+  - Peirce
+cites:
+  - "Collected Papers of Charles Sanders Peirce"
+  - "Semiotics: The Basics"
+---
+
+An icon is a [sign](./sign.md) that represents its object by resemblance. The [representamen](./representamen.md) shares some quality or structural feature with the thing it stands for — a portrait resembles the person depicted, a map resembles the territory, a diagram resembles the structure it represents.
+
+[Peirce](../../../../../../../../../knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/charles-sanders-peirce.md) distinguished three subtypes of icon [@peirce_CollectedPapers_1931]:
+
+- **Image**: resembles the object in simple qualities (a photograph, an onomatopoeia)
+- **Diagram**: resembles the object in relational structure (a flowchart, a mathematical graph)
+- **Metaphor**: represents one thing by its resemblance to another in some respect
+
+Iconic [signs](./sign.md) are never purely iconic — a map uses conventional markings ([symbols](./symbol.md)) and is produced through a causal process ([indexical](./index-sign.md)). The classification identifies which aspect of the [sign](./sign.md) relation predominates, not which is exclusively present [@chandler_Semiotics_2007].
+
+## Related terms
+
+- [index](./index-sign.md) — a [sign](./sign.md) connected to its object by causal or spatial relation
+- [symbol](./symbol.md) — a [sign](./sign.md) connected to its object by convention
+- [sign](./sign.md) — the triadic relation in which icon is one type
+
+**Source:** [Peirce](../../../../../../../../../knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/charles-sanders-peirce.md), Charles Sanders. *Collected Papers*. Harvard University Press, 1931–1958.

@@ -1,0 +1,24 @@
+.DS_Store
+Thumbs.db
+*.tmp
+*.tmp.*
+*.swp
+*~
+
+.lake/
+**/.lake/
+*.olean
+*.ilean
+*-imports.dot
+*-redundant.dot
+blueprint/web/
+
+dist/
+node_modules/
+.tmp/
+__pycache__/
+*.pyc
+
+# agent session metadata & local recovery backups — never track
+.claude/
+*.sonnet-bak

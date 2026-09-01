@@ -1,0 +1,4 @@
+---
+title: "Dynamic Of Relation"
+---
+

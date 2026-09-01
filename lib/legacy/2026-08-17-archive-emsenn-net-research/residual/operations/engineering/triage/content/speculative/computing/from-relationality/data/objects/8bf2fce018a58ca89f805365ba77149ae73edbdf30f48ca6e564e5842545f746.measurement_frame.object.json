@@ -1,0 +1,8 @@
+{
+  "act_version": "v1",
+  "admissible_observations": [],
+  "constraints": {},
+  "id": "8bf2fce018a58ca89f805365ba77149ae73edbdf30f48ca6e564e5842545f746",
+  "kernel_params": {},
+  "kind": "measurement_frame"
+}

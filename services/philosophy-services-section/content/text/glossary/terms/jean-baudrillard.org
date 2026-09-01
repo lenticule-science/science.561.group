@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       9f6de6aa-6798-491a-a299-e13e87daa867
+:NODE-RELATIONS: (([[id:02f90700-7b36-450c-9b36-4ec013faa94b][philospher]] . [[id:12e293e4-a137-44f1-81bf-23068b69b54a][semiotics]]) ([[id:d13beb9d-3360-4889-be32-36ba4254c07c][philosopher]] . [[id:af42f254-aecb-4b0f-986f-e89ac0619061][social philosophy]]) ([[id:6ba3fe8d-6737-4f98-a4b9-f75f77dafb7c][formulated]] . [[id:9a5e4e34-a9a7-45a0-85ce-9d0dc4a26afe][hyperreality]]))
+:END:
+#+title: Jean Baudrillard
+#+date: [2025-09-20 Sat 22:11]
+

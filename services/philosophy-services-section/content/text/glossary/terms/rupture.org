@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       8fac3af9-edab-4c91-b590-eed38cc0205f
+:END:
+#+title: rupture
+#+date: [2025-09-03 Wed 21:26]
+

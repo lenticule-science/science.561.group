@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/system/library/inference-model/inference-model.schema.json",
+  "title": "Inference model",
+  "description": "JSON Schema for an inference-model instance: a record naming an externally-realized stochastic partial function from queries to inferences. Carries the provider, endpoint URL, adapter, authentication, exposed capabilities, and rate-limit data the OS dispatcher walks to route work.",
+  "type": "object",
+  "required": ["provider", "model-name", "base-url", "adapter", "auth-env-var", "handedness"],
+  "additionalProperties": true,
+  "properties": {
+    "provider": {"type": "string", "pattern": "^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$"},
+    "model-name": {"type": "string", "minLength": 1},
+    "model-version": {"type": "string"},
+    "base-url": {"type": "string", "format": "uri"},
+    "adapter": {"type": "string"},
+    "auth-env-var": {"type": "string", "pattern": "^[A-Z_][A-Z0-9_]*$"},
+    "handedness": {"type": "string", "const": "outbound-only"},
+    "provides-capabilities": {"type": "array", "items": {"type": "string"}},
+    "work-types": {"type": "array", "items": {"type": "string"}},
+    "skills": {"type": "array", "items": {"type": "string", "pattern": "^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$"}},
+    "context-window-tokens": {"type": "integer", "minimum": 0},
+    "supports-tool-calling": {"type": "boolean"},
+    "supports-structured-output": {"type": "boolean"},
+    "rate-limit-rpm": {"type": ["integer", "string"]},
+    "rate-limit-rpd": {"type": ["integer", "string"]},
+    "rate-limit-tpm": {"type": ["integer", "string"]},
+    "rate-limit-tpd": {"type": ["integer", "string"]},
+    "cost-per-token-in": {"type": ["number", "string"]},
+    "cost-per-token-out": {"type": ["number", "string"]},
+    "monthly-budget-tokens": {"type": ["integer", "string"]},
+    "enrolled-at": {"type": "string", "format": "date"},
+    "enrolled-by": {"type": "string"}
+  }
+}

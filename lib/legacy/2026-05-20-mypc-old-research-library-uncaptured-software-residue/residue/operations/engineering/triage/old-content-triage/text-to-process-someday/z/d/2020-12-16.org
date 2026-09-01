@@ -1,0 +1,97 @@
+#+title: 2020-12-16
+#+begin_head
+#+ghe_schema: daily-record-0.1.0
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-16 Wed]
+#+roam_tags: daily-record
+#+select_tags: export
+#+end_head
+#+name: summary-text
+#+begin_summary
+This is [[file:../emsenn.org][emsenn]]'s [[file:../daily_record.org][daily record]] for [2020-12-16 Wed]. If you are viewing this record outside of its original context, please be aware it maybe be heavily redacted.
+#+end_summary
+* Journal                                                          :noexport:
+** [2020-12-16 Wed 11:22]
+
+Good morning. Today I'd like to continue playing with . I'm not ready to commit to any sort of workflow with it yet, but I do think its approach to things is a little closer to the approach I prefer, against [[file:../org_mode.org][Org-mode]]'s more hierarchal approach to notes.
+
+Part of the issue is that I'm trying to vet Org-roam as both a tool for taking notes and as a part of a publishing stack all at once, and I think that's making it a little hard to keep my head on straight. Also, I'm working against a... pretty messy [[file:../emacs.org][Emacs]] configuration.
+
+In addition to looking and babbling about Org-roam, I also want to get that configuration cleaned up, so that I'm a little closer to having a process for other [[file:../groundhog.org][Groundhog]] folk to start taking notes and building up non-kyriarchal data assets. 
+
+I've talked a lot about how [[file:../decolonization.org][decolonization]] starts inside folks' own heads. I think for a lot of us, in very real ways, [[file:../computers.org][computers]] are an extension of our "heads," our [[file:../cognition.org][cognition]] and [[file:../memory.org][memory]]. I think this might explain why, for folk, having a decolonial approach to [[file:../information_management.org][information management]] is important for making progress in internalizing decolonial ways of thinking. I know myself, when I took a break from computers to focus on [[file:../writing.org][writing]] with [[file:../pen_and_paper.org][pen and paper]], I was amazed to find how much my thinking about information was dependent on the metaphors presented to me by my computer use.
+
+This seemed backward: I should build my thinking off of [[file:../reality.org][reality]], creating a [[file:../world.org][world]] for myself. Then, I should use [[file:../language.org][language]] to describe this world, and then use a computer to encode that language into things i can communicate with others. Not, start with some metaphors given to me by [[file:../for_profit_software.org][for-profit software]] and use those to try and perceive reality.
+
+I've been lucky to have my thinking influenced by [[file:../esther_davis.org][Esther Davis]], who's studying [[file:../library_science.org][library-science]] right now, and so I think I see a clear path forward, it's just a matter of implementation and then correcting for any deviation from this intention.
+
+[[file:../information.org][information]] can be said to have two parts, [[file:../data.org][data]] and [[file:../meta_data.org][meta-data]], or put another way, /content/ and /context/. Most, if not all, information, from [[file:../genetic_sequencing.org][genetic-sequencing]] to [[file:../lakota_stories.org][Lakota stories]], can be recorded in this way. (At a certain point, the /content/ almost becomes just another piece of /context/, and perhaps it is a [[file:../colonialism.org][colonialism]] notion to separate them, but it's also the language used by most [[file:../computer_scientists.org][computer-scientists]] and [[file:../information_scientists.org][information-scientists]].)
+
+The meta-data associated with a piece of data can be recorded in a [[file:../schema.org][schema]], which can then be [[file:../serialization.org][serialization]] into an [[file:../org_mode.org][Org-mode]] file, which can then be rendered into whatever is necessary.
+** [2020-12-16 Wed 17:18]
+   
+I've been tinkering with the language as much as the concepts recently, but as I talked about earlier, [[file:../information.org][information]] consists of [[file:../data.org][data]] and [[file:../meta_data.org][meta-data]].
+
+I'm interested in helping build up tools so we can handle information as [[file:../note.org][note]], atomic records that contain information, and I think (for now) that [[file:../org_roam.org][Org-roam]] on top of [[file:../org_mode.org][Org-mode]] inside [[file:../emacs.org][Emacs]] is probably the best tool available right now for creating and managing those records. (This [[file:../emacsen.org][Emacsen]] is called [[file:../groundhog_emacs.org][Groundhog Emacs]].)
+
+But, just saying that doesn't explain how to do it, or convey the... cultural properties of information that I want to make sure get emphasized in my [[file:../note_taking.org][note-taking]].
+
+That is something I've found really hard to do, except in fragments.
+
+One concept that's important to me is that each person who's building up this sort of informational asset grow their own asset, not simply reference other peoples assets. That is, I'd like it to be set up in such a way that people can pull in other folks notes, but be able to treat them as, then, their notes.
+
+I've been putting my own records under =~/org/= but it has gotten a bit untidy through recent usage. Here's a look at how I might like my org directory to work:
+
+#+begin_src text
+  ~/org/
+       | roam/
+       |     | personal/
+       |     |         | XX-note1.org
+       |	   |	     | XY-note2.org
+       |	   | binding-generations/
+       |	                        | XZ-note1.org
+       | 				| YX-note2.org
+       | publications/
+       |		   | emsenn-net/
+       |                         | index.html
+       |                         | XX-note1.html
+       | images/
+       | exports/
+#+end_src
+
+The above doesn't really leave room for... non-Org-roam source files, which are an important thing, at least for resources coming in from outside the [[file:../webgaz.org][WebGAZ]].
+
+Changing =./roam/= to =./source/= might solve that... abbreviating things that gets us:
+
+- =~/org/= holds a person's informational assets
+  - =s/= holds the source files: the information records themselves.
+    - =p/= holds a person's personal informational records.
+    - =webgaz/= holds the WebGAZ's informational records.
+  - =p/= holds publications: published [[file:../org_mode_projects.org][Org-mode projects]].
+  - =e/= holds exported information renderings.
+
+=p/= and =webgaz/= both are =Org-roam= databases, but they won't overlap and be able to cross-link. This is, I think, where being able to use [[file:../bibtex.org][BibTex]] might be handy? I'm not sure.
+
+I think the next step from here is cleaning up the [[file:../groundhog_emacs.org][Groundhog Emacs]] source file so that it is written with Org-roam as a tool in mind, and with this notion of "bring everything into an Org-roam database" as another perspective.
+
+** [2020-12-16 Wed 18:22]
+So I think with some tinkering, [[file:../org_roam.org][Org-roam]] is going to be a great [[file:../tool.org][tool]] for [[file:../note_taking.org][note-taking]]. The thing I want to make sure I can do then is publish a [[file:../website.org][Website]] from the notes, while not having to worry about doing too much work to get a note from my personal [[file:../org_roam_directory.org][Org-roam directory]] into one for my Website.
+
+Org-roam can store different directories as discrete [[file:../database.org][database]], and so I /think/ that a great deal can be done by simply manually copy-pasting notes between directories.
+
+So, like I had to do with setting up Binding Generations, I'll set up a =.dir-locals.el= file in the =~/org/s/emsenn-net= and then I'll tweak my [[file:../org_publish.org][Org-publish]] configuration in .
+
+Copying files actually works well enough, but if I have a link to a note I don't copy over, it just renders the broken link destination; I'd prefer if it stripped the link entirely, but that's a quality-of-life thing. On a [[file:../web_server.org][Web server]], such as Github Pages, I'd be able to set up a custom [[file:../html_404.org][HTML 404]] that would explain why pages might be missing.
+
+So, there isn't actually much I need to change, code-wise, right now; I just need to go in and write documentation for how it use it, in the  [[file:../groundhog_emacs.org][Groundhog Emacs]] note.
+** [2020-12-16 Wed 20:44]
+   This is a test of the [[file:../org_roam_dailies.org][Org-roam dailies]] feature. Also something is broken in my [[file:../org_roam_capture_template.org][Org-roam capture templates]]!
+** [2020-12-16 Wed 20:49]
+   I fixed my broken [[file:../org_roam_capture_template.org][Org-roam capture templates]]; the issue was so trivial I forgot it by the time I navigated to this log.
+** [2020-12-16 Wed 20:51]
+   I'm trying to fix the [[file:../backlink.org][backlinks]] created by [[file:../org_publish.org][Org-publish]] when rendering [[file:../org_roam_dailies.org][Org-roam dailies]].
+** [2020-12-16 Wed 21:11]
+Took a little bit of hacking to re-familiarize myself with Elisp, specifically file and directory handling, but my [[file:../daily_notes.org][daily notes]] now can link back to normal [[file:../note.org][notes]]. Pretty cool!
+** [2020-12-16 Wed 23:21]
+   Now that I know how to use [[file:../org_roam_dailies.org][Org-roam dailies]] I'm going to clean up a lot of today's entries and pull them into today's record.

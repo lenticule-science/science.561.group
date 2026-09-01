@@ -1,0 +1,10 @@
+{
+  "kind": "judgment_equivalence_evidence",
+  "judgment_equivalence_id": "a2f364fa4842aeb646a0770ceb28b30d7d1a98f1354a00deb1c449b4b82466d9",
+  "witness_ids": [
+    "64b3fa99e8b54e0bdbeb1f1c73f481d7d0fe4e9862f39c653f8618de0ddc12a0"
+  ],
+  "status": "pass",
+  "act_ref": "JudgmentEquivalence",
+  "id": "012f4831d43bb47dda425a7e83dccce1aceb52b1ac3e7472a7c511ae6be5fb3f"
+}

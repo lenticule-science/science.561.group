@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       2dcb1503-a9f5-429b-a352-77bfa2765b47
+:END:
+#+title: State
+#+date: [2025-08-24 Sun 09:23]

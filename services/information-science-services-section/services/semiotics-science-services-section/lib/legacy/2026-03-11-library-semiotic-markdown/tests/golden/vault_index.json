@@ -1,0 +1,75 @@
+[
+  {
+    "doc_id": "folder-one-inner",
+    "title": "Inner",
+    "source_path": "Folder One/Inner.md",
+    "frontmatter_raw": "title: Inner\n",
+    "frontmatter_norm": {
+      "title": "Inner"
+    },
+    "folders": [
+      "folder-one"
+    ],
+    "features": []
+  },
+  {
+    "doc_id": "other-note",
+    "title": "Other Note",
+    "source_path": "Other Note.md",
+    "frontmatter_raw": null,
+    "frontmatter_norm": null,
+    "folders": [],
+    "features": []
+  },
+  {
+    "doc_id": "root-note",
+    "title": "Root Title",
+    "source_path": "root.md",
+    "frontmatter_raw": "id: Root Note\ntitle: Root Title\ntags: [one, two]\n",
+    "frontmatter_norm": {
+      "id": "Root Note",
+      "title": "Root Title",
+      "tags": [
+        "one",
+        "two"
+      ]
+    },
+    "folders": [],
+    "features": [
+      {
+        "type": "link",
+        "kind": "wikilink",
+        "target_raw": "Other Note",
+        "target_id": "other-note",
+        "label": "label"
+      },
+      {
+        "type": "link",
+        "kind": "transclusion",
+        "target_raw": "Transclude",
+        "target_id": "transclude"
+      },
+      {
+        "type": "inline_field",
+        "key": "key",
+        "value": "value",
+        "delimiter": "[]"
+      },
+      {
+        "type": "citation_group",
+        "keys": [
+          "smith2020"
+        ],
+        "suppressed_keys": [
+          "doe2021"
+        ]
+      },
+      {
+        "type": "callout",
+        "callout_type": "note",
+        "body": "Callout body.",
+        "title": "Example"
+      }
+    ]
+  }
+]

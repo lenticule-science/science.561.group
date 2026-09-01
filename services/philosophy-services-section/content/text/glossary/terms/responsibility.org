@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       dae12ab6-5db6-4cfc-85bf-90aee09df85c
+:public:   true
+:resource-description: (([[id:edaef069-c68d-46aa-a970-d3cb7fe3165c][resource type]] . [[id:e6a725c5-fe66-44fe-9fc1-63984bfad016][obligation]]))
+:END:
+#+title: responsibility
+#+date: [2025-09-27 Sat 09:54]
+

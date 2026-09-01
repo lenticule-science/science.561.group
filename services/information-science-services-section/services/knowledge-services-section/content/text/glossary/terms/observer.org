@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       65da32b3-d07c-493e-80e7-05b8d06c60e8
+:END:
+#+title: observer
+#+date: [2025-08-29 Fri 17:16]
+

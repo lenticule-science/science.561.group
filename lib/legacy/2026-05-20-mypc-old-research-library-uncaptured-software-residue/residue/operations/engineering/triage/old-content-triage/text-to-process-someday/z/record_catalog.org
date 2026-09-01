@@ -1,0 +1,26 @@
+#+title: record catalog
+#+begin_head
+#+ghe_schema: term-0.1.3
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-27 Sun 13:55]
+#+roam_tags: term
+#+end_head
+
+#+name: definition
+A */[[file:record_catalog.org][record catalog]]/* is a collection of [[file:record.org][records]] related to either each other or the collection through their qualities.
+
+#+toc: headlines 2
+* Introduction
+* record catalog
+* Supplements
+** Record history
+   :PROPERTIES:
+   :CUSTOM_ID: record-history
+   :END:
+   :LOGBOOK:
+   - Note taken on [2020-12-27 Sun 13:55] \\
+      Created from [[file:~/org/s/p/emsenn.org][emsenn]]
+
+      
+   :END:

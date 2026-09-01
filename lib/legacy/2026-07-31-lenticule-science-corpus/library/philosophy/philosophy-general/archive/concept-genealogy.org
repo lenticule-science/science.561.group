@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       c05883b1-d52f-4932-86dd-565775ccb0d3
+:node-relations: (([[id:bf97ea35-5e01-4ffb-8137-fb1621c64815][methodology]] . [[id:63d0b38d-703b-411d-9130-4c4b9b8e0f47][genealogy]]) ([[id:4a53867b-afa3-437b-b979-385597e0e616][process]] . [[id:f6dbe2e2-b75e-448a-85ad-0e75c938ff53][conceptual analysis]]) ([[id:9adb7d35-07dd-477c-8efa-1e169b968d16][origin]] . [[id:2c427835-010e-446f-a3f5-9bf327c69746][Zur Genealogie der Moral]]))
+:END:
+#+title: concept genealogy
+#+date: [2025-09-04 Thu 09:34]
+

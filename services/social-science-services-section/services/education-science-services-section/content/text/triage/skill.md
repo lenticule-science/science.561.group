@@ -1,0 +1,563 @@
+---
+name: learn-curriculum-design
+id: learn-curriculum-design
+description: >-
+  Analyze a subject's dependency structure, define testable completion criteria
+  for each node, annotate edges with specific requirements, and state the
+  curriculum's scope honestly.
+type: learn
+date-created: 2026-03-01
+tags: []
+part-of: education/disciplines/pedagogy
+region:
+  reads: ["content/education/disciplines/pedagogy/"]
+  writes: ["content/education/disciplines/pedagogy/"]
+---
+
+# Learn Curriculum Design
+
+## What you will be able to do
+
+- Given a subject, analyze its dependency structure: identify what depends on what, which dependencies are shared, and which paths through the graph are valid.
+- For each node in a dependency graph, define a testable completion criterion — not "understand X" but "given Y, do Z."
+- Annotate each prerequisite edge with what specifically is required from the prerequisite, distinguishing what is needed from what the prerequisite covers in full.
+- Identify when a curriculum confuses a dependency graph with a numbered list, and explain what the numbered list hides.
+- State a curriculum's scope: what it covers, what it excludes, and why the exclusions matter (the "whose knowledge?" question applied to curriculum structure).
+
+## Prerequisites
+
+- **learn-lesson-design** — backward design (you need the concept of starting from desired results and working backward, which curriculum design applies at a larger scale) and the distinction between teaching and presenting (so you can evaluate whether individual nodes in the curriculum actually teach)
+- **learn-decolonial-pedagogy** — the "whose knowledge?" question (you need this to evaluate scope honestly: every curriculum centers some knowledge and excludes other knowledge, and stating this is part of the design)
+
+## Lessons
+
+- [Designing Curricula](../../curricula/designing-curricula.md) — dependency graphs, completion criteria, edge annotations, scope honesty, the spiral curriculum
+
+This is a single lesson. Work through it fully, including the self-check questions and the worked example on the [semiotic](../../../../../linguistics/topics/semiotics/index.md) universe dependency graph.
+
+## Scope
+
+This skill covers the design of curricula as dependency graphs with completion criteria. It does not cover:
+
+- Designing individual lessons within a curriculum (covered by **learn-lesson-design**, a prerequisite)
+- Institutional curriculum design (course sequences, credit hours, accreditation requirements — this vault's curricula are self-directed)
+- Assessment at the curriculum level (how to verify that an entire curriculum has been completed is a design question this skill raises but does not fully answer)
+- The formal mathematics of graph theory (the dependency graph concept here is intuitive, not formalized — a learner does not need to know graph theory to design curricula)
+
+## Verification
+
+Design a small dependency graph (3-5 nodes) for learning any subject you know well. For each node, write a completion criterion. For each edge, annotate what specifically is required. Identify at least one place where a naive numbered list would misrepresent the dependency structure (e.g., two independent nodes that could be studied in either order, or a shared dependency). State what your curriculum covers and one thing it does not.
+
+
+---
+
+<!-- source: archive/domains/pedagogy/domains/learn-decolonial-pedagogy/SKILL.md -->
+
+## Imported source: archive/domains/pedagogy/domains/learn-decolonial-pedagogy/SKILL.md
+
+---
+name: learn-decolonial-pedagogy
+id: learn-decolonial-pedagogy
+description: >-
+  Identify the banking model in an educational practice, articulate the principles
+  of problem-posing education, and evaluate a knowledge system for epistemological
+  assumptions.
+type: learn
+date-created: 2026-03-01
+tags:
+  - Decolonial
+part-of: education/disciplines/pedagogy
+region:
+  reads: ["content/education/disciplines/pedagogy/"]
+  writes: ["content/education/disciplines/pedagogy/"]
+---
+
+# Learn Decolonial Pedagogy
+
+## What you will be able to do
+
+- Identify whether an educational practice reproduces the banking model (teacher deposits knowledge into passive students) and articulate what makes it so.
+- Describe problem-posing education as an alternative and explain how it differs structurally from the banking model.
+- Given a knowledge system (a curriculum, a library classification, a database schema), identify whose knowledge it centers, what forms of knowledge it privileges, and what it excludes.
+- Explain why "decolonize" is not a synonym for "diversify" or "critically examine" — what [decolonization](../../../../../sociology/terms/decolonization.md) specifically requires (following [Eve Tuck](../../../../../general/people/eve-tuck.md) and [K. Wayne Yang](../../../../../general/people/k-wayne-yang.md)).
+
+## Prerequisites
+
+None. This skill is a starting point.
+
+## Lessons
+
+- [Decolonial Pedagogy](../../curricula/decolonial-pedagogy.md) — the banking model, problem-posing education, engaged pedagogy, decolonizing methodologies, Red Pedagogy, land-based education, and the "[decolonization](../../../../../sociology/terms/decolonization.md) is not a metaphor" corrective
+
+This is a single lesson. Work through it fully.
+
+## Scope
+
+This skill covers the major thinkers and frameworks in decolonial pedagogy as represented in the vault: [Paulo Freire](../../../../../general/people/paulo-freire.md), [bell hooks](../../../../../general/people/bell-hooks.md), [Linda Tuhiwai Smith](../../../../../general/people/linda-tuhiwai-smith.md), Sandy Grande, [Leanne Betasamosake Simpson](../../../../../general/people/leanne-simpson.md), and [Eve Tuck](../../../../../general/people/eve-tuck.md) and [K. Wayne Yang](../../../../../general/people/k-wayne-yang.md).
+
+It does not cover:
+
+- Lesson design or curriculum design (covered by separate pedagogy skills that depend on this one)
+- The full breadth of critical pedagogy (Henry Giroux, Peter McLaren, and others are mentioned but not developed)
+- Indigenous pedagogies in depth (the schools/indigenous-pedagogies page goes deeper, but land-based education in particular cannot be learned through text alone — it requires sustained relationship with place)
+- Non-anglophone decolonial thought ([Frantz Fanon](../../../../../general/people/frantz-fanon.md), Aníbal Quijano, Walter Mignolo, and others are not yet represented)
+
+## Verification
+
+After completing the lesson, try this: pick any educational practice you have experienced (a class, a textbook, an online course, a training program). Describe it in terms of the banking model: who holds the knowledge, how does it flow, what role does the learner play? Then describe what a problem-posing alternative would look like. Finally, identify one [epistemological](../../../../../philosophy/terms/epistemology.md) assumption the practice makes — what kind of knowledge does it treat as legitimate, and what does it exclude?
+
+
+---
+
+<!-- source: archive/domains/pedagogy/domains/learn-lesson-design/SKILL.md -->
+
+## Imported source: archive/domains/pedagogy/domains/learn-lesson-design/SKILL.md
+
+---
+name: learn-lesson-design
+id: learn-lesson-design
+description: >-
+  Design a lesson using backward design, order content concrete-before-abstract,
+  write scaffolded prerequisites, and include exercises aligned with learning goals.
+type: learn
+date-created: 2026-03-01
+tags: []
+part-of: education/disciplines/pedagogy
+region:
+  reads: ["content/education/disciplines/pedagogy/"]
+  writes: ["content/education/disciplines/pedagogy/"]
+---
+
+# Learn Lesson Design
+
+## What you will be able to do
+
+- Given a topic, identify the desired learning result (what the learner should be able to do) before deciding what content to include — the core of backward design.
+- Determine whether a lesson introduces concepts in concrete-before-abstract order or in definition-first order, and restructure the latter into the former.
+- Write scaffolded prerequisites that state specifically what a learner needs to know (not "familiarity with X" but "the definition of Y and the ability to do Z").
+- Design self-check exercises that are aligned with the learning goals — exercises that ask the learner to apply concepts, not just recall definitions.
+- Identify when a lesson is acting as a reference document rather than a teaching document.
+
+## Prerequisites
+
+- **learn-decolonial-pedagogy** — the banking model (you need to recognize when a lesson reproduces it) and problem-posing education (the alternative that lesson design should embody)
+
+## Lessons
+
+- [Designing Effective Lessons](../../curricula/designing-effective-lessons.md) — backward design, concrete-before-abstract ordering, scaffolding, exercises as engagement
+
+This is a single lesson. Work through it fully, including the self-check questions.
+
+## Scope
+
+This skill covers the design of individual lessons: how to structure a single teaching document so that it builds understanding rather than depositing information. It does not cover:
+
+- Organizing multiple lessons into a curriculum (covered by **learn-curriculum-design**, which depends on this skill)
+- Writing prose or choosing voice (covered by separate writing skills — lesson design is about structure, not style)
+- Assessment design for institutional contexts (this vault's lessons are self-directed; the exercises here are self-checks, not grades)
+- Subject-specific pedagogical techniques (how to teach mathematics differs from how to teach history — this skill covers general structural principles)
+
+## Verification
+
+Pick an existing lesson in this vault (or any educational text you have access to). Answer these questions about it: (1) Does it state what the learner should be able to do afterward? (2) Does it introduce each concept with a concrete example before the formal definition? (3) Are its prerequisites specific enough that you know exactly what to review? (4) Does it include at least one exercise where the learner applies a concept? If you can answer these confidently and identify what the lesson does well or poorly on each count, you have this skill.
+
+
+---
+
+<!-- source: archive/domains/pedagogy/domains/review-lesson/SKILL.md -->
+
+## Imported source: archive/domains/pedagogy/domains/review-lesson/SKILL.md
+
+---
+description: Review a curriculum lesson against pedagogical criteria and report what it does well and what it lacks
+id: review-lesson
+name: review-lesson
+version: [0, 1]
+type: operational
+runtime: inference
+triggers:
+  - "review lesson"
+  - "check lesson"
+  - "audit lesson"
+inputs:
+  path: string
+outputs:
+  report: object
+region:
+  reads: ["content/"]
+  writes: []
+dependencies: []
+scopes: []
+part-of: education/disciplines/pedagogy
+---
+Review the lesson at: $ARGUMENTS
+
+## Instructions
+
+1. Read the target lesson file.
+2. Read the style guide at `content/writing/texts/style-guide.md`.
+3. Check the lesson against each criterion below. For each, note whether the lesson passes, partially passes, or fails, with specific line numbers and quotes.
+
+## Pedagogical criteria
+
+### Structure
+
+- **Motivation before definition**: Does the lesson explain why the topic matters before introducing formal content? A lesson that opens with a definition or formula fails this check.
+- **Prerequisites stated**: Are prerequisites listed? Are they specific about what the reader needs (not just "familiarity with X")?
+- **Prerequisites achievable**: Do the linked prerequisite pages exist? Do they cover what this lesson assumes?
+- **Scope**: Does the lesson focus on one core idea, or does it try to cover multiple topics? Count the number of distinct concepts introduced — more than 3-4 in a single lesson is a warning sign.
+
+### Concept introduction
+
+- **One at a time**: Are concepts introduced sequentially, each grounded before the next appears? Or are multiple new terms introduced in a single paragraph?
+- **Concrete before abstract**: For each concept, is there an example or intuitive explanation before the formal definition?
+- **Examples present**: Does each major concept have at least one concrete example?
+
+### Engagement
+
+- **Worked example**: Is there a full walkthrough applying the concepts? (Not just a definition followed by "for example, ..." but a multi-step demonstration.)
+- **Exercises or checkpoints**: Can the reader test their understanding? Self-check questions, exercises, or prompts to try something count.
+- **Active voice**: Does the lesson address the reader and invite participation, or does it read like a textbook passage?
+
+### Connections
+
+- **Wikilinks**: Are `[wikilinks](wikilinks)` used for terms, people, and related content? Count how many key terms lack links.
+- **Citations**: Are scholarly claims attributed with `[@citekey]`? Flag unsourced claims that should be cited.
+- **Sequence links**: Does the lesson say where it fits — what comes before and what comes next?
+
+### Style
+
+- Run the same checks as `/check-note-style`: vague adverbs, mixed contractions, noun+verb contractions, telling the reader how to feel.
+
+## Output format
+
+For each criterion, report:
+- **Pass** / **Partial** / **Fail**
+- Line number(s) and quoted text illustrating the finding
+- A specific suggestion for improvement (if Partial or Fail)
+
+At the end, provide a summary: what the lesson does well and what needs the most work.
+
+Do not rewrite the lesson. Report only.
+
+
+---
+
+<!-- source: archive/domains/pedagogy/domains/write-learn-skill/SKILL.md -->
+
+## Imported source: archive/domains/pedagogy/domains/write-learn-skill/SKILL.md
+
+---
+description: Create a learn-* skill that defines a node in the vault's curriculum dependency graph
+id: write-learn-skill
+name: write-learn-skill
+version: [0, 1]
+type: meta
+runtime: inference
+triggers:
+  - "create a learn skill"
+  - "write a learning skill"
+  - "add a curriculum node"
+inputs:
+  subject: string
+  module: string?
+outputs:
+  path: string
+region:
+  reads: ["content/"]
+  writes: ["content/{discipline}/skills/"]
+dependencies:
+  - make-content-folder
+  - write-lesson
+scopes: []
+part-of: education/disciplines/pedagogy
+---
+Create a learn skill for: $ARGUMENTS
+
+## Instructions
+
+1. Identify the subject and where it lives in the vault. Run:
+
+```bash
+find content -mindepth 1 -maxdepth 2 -type d ! -path "*/\.*" ! -path "*/private*" ! -path "*/slop*" ! -path "*/triage*" ! -path "*/meta*" ! -path "*/tags*" ! -path "*/assets*" | sort
+```
+
+2. Check what lessons and terms already exist for the subject:
+
+```bash
+find content/[module]/[path] -name "*.md" -type f | sort
+```
+
+3. Identify prerequisite learn skills. Check what learn skills already exist:
+
+```bash
+find content -path "*/skills/learn-*/SKILL.md" -type f | sort
+```
+
+4. Propose the skill to emsenn before writing. The proposal should include:
+   - Skill name (format: `learn-[subject]`)
+   - Where it will live (in the subject's `skills/` directory)
+   - Terminal learning goal (what the learner can DO after)
+   - Prerequisite learn skills (with what specifically is needed from each)
+   - Lessons the skill points to
+   - What the skill does NOT cover (scope boundary)
+   - Any lessons that need to be written (gaps)
+
+5. After confirmation, write the skill following this structure:
+
+### Required learn skill structure
+
+**Location:** `content/[module]/[path]/skills/learn-[subject]/SKILL.md`
+
+**Frontmatter:**
+```yaml
+---
+name: learn-[subject]
+description: >-
+  One sentence: what the learner can do after completing this skill.
+kind: learn
+date-created: [current ISO 8601 date]
+tags:
+  - [relevant tags]
+---
+```
+
+**Body sections:**
+
+```markdown
+# Learn [Subject]
+
+## What you will be able to do
+
+[Specific, testable completion criteria. Not "understand X" but "do Y."
+List 2-4 concrete things the learner can do after completing this skill.]
+
+## Prerequisites
+
+[List prerequisite learn skills. For each, state what specifically is needed.
+Use the format:]
+
+- **learn-[prerequisite]** — [what you need from it: "the definition of X and the ability to do Y"]
+
+[If there are no prerequisites, say so explicitly: "None. This skill is a starting point."]
+
+## Lessons
+
+[List the lessons to work through, as [wikilinks](wikilinks). Do NOT number them as a
+forced sequence unless the dependency structure requires a specific order.
+If multiple lessons are independent of each other, say so.]
+
+- [lesson-slug|Lesson Title](lesson-slug|Lesson Title) — [one line: what this lesson teaches]
+
+## Scope
+
+[State what this skill covers and what it does not. Be honest about gaps —
+subjects the medium cannot hold, traditions not represented, topics deferred
+to other skills.]
+
+## Verification
+
+[How the learner (or agent) checks that the skill is complete. Point to
+self-check exercises in the lessons, or state a concrete task the learner
+should be able to perform.]
+```
+
+### Rules
+
+- Each learn skill is a node in the dependency graph. It has edges (prerequisites) and a completion criterion.
+- Prerequisites point to other learn skills, not to lessons. The skill handles the indirection: "to learn X, first complete learn-Y, then work through these lessons."
+- Completion criteria are specific and testable. "Understand X" is not a completion criterion. "Given a Y, determine whether it is an X by checking properties P, Q, R" is.
+- Scope is stated explicitly. Every skill excludes things; say what.
+- Do not force linear order on independent lessons. If lessons A and B are independent, say "these can be done in either order."
+- If a needed lesson does not exist yet, note it as a gap: "[Gap: no lesson on X exists yet. This skill is incomplete until one is written.]"
+- If an existing learn skill for the same subject already exists (from gpt-5.2-codex), overwrite it — the old stubs are placeholders.
+
+6. After writing, check that all referenced lessons and prerequisite skills actually exist. Report any gaps.
+
+
+---
+
+<!-- source: archive/domains/pedagogy/domains/write-lesson/SKILL.md -->
+
+## Imported source: archive/domains/pedagogy/domains/write-lesson/SKILL.md
+
+---
+description: Write a new curriculum lesson with sound pedagogical structure in the appropriate module
+id: write-lesson
+name: write-lesson
+version: [0, 1]
+type: operational
+runtime: inference
+triggers:
+  - "write a lesson"
+  - "create a lesson"
+  - "write curriculum"
+inputs:
+  subject: string
+  module: string?
+outputs:
+  path: string
+region:
+  reads: ["content/"]
+  writes: ["content/{discipline}/curricula/"]
+dependencies:
+  - make-content-folder
+scopes: []
+part-of: education/disciplines/pedagogy
+---
+Write a lesson on: $ARGUMENTS
+
+## Instructions
+
+1. Read the style guide at `content/writing/texts/style-guide.md`.
+2. If the destination discipline has a writing skill (e.g., `pedagogy/skills/writing-curricula/SKILL.md`), read that too — it extends the style guide with discipline-specific conventions.
+
+3. Identify the destination module. Run:
+
+```bash
+find content -mindepth 1 -maxdepth 2 -type d ! -path "*/\.*" ! -path "*/private*" ! -path "*/slop*" ! -path "*/triage*" ! -path "*/meta*" ! -path "*/tags*" ! -path "*/assets*" | sort
+```
+
+4. Read the destination module's existing `curricula/index.md` to understand what lessons exist, what sequence they follow, and what ground is already covered.
+
+5. Read any prerequisite lessons that the new lesson will build on.
+
+6. Propose a lesson plan to emsenn before writing. The plan should include:
+   - Title
+   - Where it fits in the existing sequence
+   - What single core idea the lesson teaches
+   - What prerequisites are assumed
+   - What the worked example will be
+   - What sources the lesson will draw on (with [@citekeys] where available)
+
+7. After confirmation, write the lesson following this structure:
+
+### Required lesson structure
+
+**Frontmatter:**
+```yaml
+---
+title: "Lesson Title"
+date-created: [current ISO 8601]
+tags:
+  - [module tag]
+  - curricula
+---
+```
+
+**Body sections, in order:**
+
+- **What this lesson covers** — 1-2 sentences. No jargon. A reader should know from this whether the lesson is for them.
+
+- **Why it matters** — Motivation before definitions. What problem does this concept solve? What would be harder or impossible without it? Use a concrete scenario or historical example. Don't say "this is important because" — show why through a situation.
+
+- **Prerequisites** — List as `[wikilinks](wikilinks)`. For each, note what specifically the reader needs from it (not just "familiarity with X" but "the definition of X and how Y works").
+
+- **Core concepts** — Introduce ONE concept at a time. For each concept:
+  1. Start with an intuitive explanation using plain language or analogy
+  2. Give a concrete example the reader can hold in their head
+  3. Only then give the formal definition (if applicable)
+  4. Don't introduce the next concept until this one is grounded
+
+- **Worked example** — A full walkthrough applying the lesson's concepts to a specific case. Show each step. Name what concept is being used at each step. The reader should be able to follow along and reproduce the reasoning.
+
+- **Check your understanding** — 2-3 questions. These are self-checks, not exam questions. Each should test whether the reader grasped a specific concept. Include brief answers or hints in a details block.
+
+- **Common mistakes** — What learners typically get wrong with this material. Be specific: "Confusing X with Y" not "misunderstanding the concept."
+
+- **What comes next** — 1-2 sentences linking to the next lesson in the sequence.
+
+- **Sources** — List the sources the lesson draws on, with `[@citekey]` references. Note where the reader can find the original treatment for deeper study.
+
+### Rules
+
+- One core idea per lesson. If you find yourself writing "now we turn to a different topic," the lesson is too big. Split it.
+- Concrete before abstract. Every definition should be preceded by an example of what it defines.
+- The reader does something. A lesson without exercises or a worked example is a reference document, not a lesson.
+- Use `[wikilinks](wikilinks)` for all cross-references to terms, people, and other content.
+- Use `[@citekey]` for all scholarly claims. Check `bibliography.bib` for existing entries; propose new ones if needed.
+- Follow the style guide: no vague adverbs, no telling the reader how to feel, active voice.
+- **First mention of a person uses their full name**: "Charles Sanders Peirce" not "Peirce," "Paulo Freire" not "Freire." Subsequent mentions may use surname only. Use `[wikilinks](wikilinks)` for the first mention.
+- Don't frame the topic instrumentally (e.g., "this matters because the semioverse needs it"). Teach the subject as genuine knowledge.
+- **Cite your sources.** Every lesson should cite the works it draws on. When a concept comes from a specific text, cite that text. The reader should be able to trace the lesson's claims back to their origins.
+
+8. After writing, run `/check-note-style` on the new file.
+9. Update the module's `curricula/index.md` to include the new lesson in the sequence.
+
+
+---
+
+<!-- source: archive/domains/pedagogy/domains/writing-curricula/SKILL.md -->
+
+## Imported source: archive/domains/pedagogy/domains/writing-curricula/SKILL.md
+
+---
+name: writing-curricula
+id: writing-curricula
+description: >-
+  Write curriculum lessons and sequences that teach through concrete examples,
+  build understanding rather than depositing information, and meet the vault's
+  pedagogical and citation standards.
+type: operational
+date-created: 2026-03-03
+tags:
+  - Writing
+part-of: education/disciplines/pedagogy
+region:
+  reads: ["content/education/disciplines/pedagogy/"]
+  writes: ["content/education/disciplines/pedagogy/"]
+---
+
+# Writing Curricula
+
+## What you will be able to do
+
+- Write a lesson that teaches a single core idea through concrete-before-abstract ordering, with a worked example and self-check exercises.
+- Sequence multiple lessons into a curriculum with explicit prerequisites and forward-links.
+- Apply the vault's citation standards to educational content: cite the sources each lesson draws on, cite the original treatment of concepts being taught.
+- Recognize when a lesson is acting as a reference document (depositing information) rather than a teaching document (building understanding), and restructure it.
+- Write in Plain Technical General American English (PTGAE) as specified in the [Style Guide](../../../../../writing/texts/style-guide.md), adapted for a teaching context.
+
+## Prerequisites
+
+- **learn-lesson-design** — backward design, concrete-before-abstract ordering, scaffolding, exercise design
+- **learn-decolonial-pedagogy** — the banking model (what to avoid) and problem-posing education (what to aim for)
+- Familiarity with the [Style Guide](../../../../../writing/texts/style-guide.md) — the PTGAE rules apply to lessons; this skill extends them for pedagogical contexts
+
+## Reference documents
+
+- [Designing Effective Lessons](../../curricula/designing-effective-lessons.md) — the canonical lesson structure
+- [Designing Curricula](../../curricula/designing-curricula.md) — how to sequence lessons into a curriculum
+- [Style Guide](../../../../../writing/texts/style-guide.md) — the PTGAE style rules, including the lesson content-type section
+- The `write-lesson` agent skill (`.claude/skills/write-lesson/SKILL.md`) — the operational checklist for creating lessons
+
+## Conventions specific to curricula
+
+### Voice in lessons
+
+Lessons use PTGAE with two modifications:
+- **Second person is acceptable**: "you" can address the learner directly. This is the one context where the vault's usual third-person default relaxes.
+- **Imperatives are acceptable**: "Consider a poset with three elements" is fine in a lesson context.
+
+### Citation in lessons
+
+Lessons cite their sources, but the citations serve the learner, not just the scholar. When citing a source, note what the learner can find there: "For a full treatment, see [@[lattice](../../../../../mathematics/objects/posets/terms/lattice.md)-theory, ch. 3]" is more useful than a bare citation.
+
+### Exercises
+
+Self-check exercises test application, not recall. "Define X" is a bad exercise. "Given Y, determine whether X applies and explain why" is a good one. Include answers in a collapsible details block.
+
+### Prerequisites
+
+State what the learner needs from each prerequisite — not "familiarity with [partial orders](../../../../../mathematics/objects/posets/terms/partial-order.md)" but "the definition of a [partial order](../../../../../mathematics/objects/posets/terms/partial-order.md) and the ability to draw a Hasse diagram."
+
+## Scope
+
+This skill covers writing educational content for this vault. It doesn't cover:
+- Subject-specific pedagogy (how to teach mathematics vs. how to teach philosophy — that's the subject discipline's concern)
+- Assessment design for institutional contexts (this vault's lessons are self-directed)
+- The general style rules (covered by the [Style Guide](../../../../../writing/texts/style-guide.md))
+
+## Verification
+
+You have this skill if you can: (1) take a topic and produce a lesson that opens with a worked example before any formal definition, (2) write exercises that test application rather than recall, (3) cite the sources the lesson draws on in a way that's useful to the learner, and (4) identify where a draft lesson is depositing information rather than building understanding.

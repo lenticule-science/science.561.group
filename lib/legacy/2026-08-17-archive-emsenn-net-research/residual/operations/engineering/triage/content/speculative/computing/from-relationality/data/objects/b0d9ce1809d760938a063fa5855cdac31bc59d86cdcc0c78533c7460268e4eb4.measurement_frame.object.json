@@ -1,0 +1,21 @@
+{
+  "act_version": "v1",
+  "admissible_observations": [
+    "resting",
+    "surveying",
+    "traveling",
+    "fighting",
+    "command_any"
+  ],
+  "constraints": {},
+  "id": "b0d9ce1809d760938a063fa5855cdac31bc59d86cdcc0c78533c7460268e4eb4",
+  "kernel_params": {
+    "carrier_to_element": {
+      "05a7cc0f777ec87ffdd20a3dd18648f3e5bf3ba839ba3d5bd1840bb34b536c40": "surveying",
+      "3ebe1bc118c03dee80bfb7efa3632a2921152c25773cb073009134ebdd835580": "traveling",
+      "4a7d44a4ce5950c3312265e5c7459e660e3fe17c4df836e76f259db79c4ee4ec": "resting",
+      "9216c6018186a397daaf2cc57c15048e532bab77f6b3252ca0c8c84d2acb2eb5": "fighting"
+    }
+  },
+  "kind": "measurement_frame"
+}

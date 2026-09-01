@@ -1,0 +1,39 @@
+---
+title: "K. Wayne Yang"
+date-created: 2026-03-02T00:00:00
+type: person
+aliases:
+  - "K. Wayne Yang"
+  - "Wayne Yang"
+keywords:
+  - Education
+description: "Scholar of decolonial education and co-author of 'Decolonization Is Not a Metaphor' (2012), which argued against the metaphorical adoption of decolonization by settler institutions."
+---
+
+K. Wayne Yang is a scholar of education at the University of California, San Diego and co-founder (with [Eve Tuck](./eve-tuck.md)) of the journal *Decolonization: Indigeneity, Education & Society*. His work addresses the intersections of decolonial theory, education, racial politics, and the structural relationships between [settler colonialism](../../sociology/terms/settler-colonialism.md) and other forms of domination.
+
+## Core ideas
+
+- **Decolonization is not a metaphor**: the co-authored article with [Eve Tuck](./eve-tuck.md) (2012) insists that [decolonization](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/povinellian-services-section/services/settler-colonialism-services-section/content/text/glossary/terms/decolonization.md) names a specific material demand — the repatriation of Indigenous land and the dissolution of settler sovereignty — and that its adoption as a general progressive term constitutes a [settler move to innocence](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/povinellian-services-section/services/settler-colonialism-services-section/content/text/glossary/terms/settler-moves-to-innocence.md). When scholars and activists use "decolonize" to mean any critical or justice-oriented project (decolonize your syllabus, decolonize your diet), they appropriate the term while evacuating its material content.
+- **Incommensurability**: Yang and [Tuck](./eve-tuck.md) argue that [decolonization](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/povinellian-services-section/services/settler-colonialism-services-section/content/text/glossary/terms/decolonization.md) is incommensurable with other social justice frameworks — it cannot be folded into multicultural inclusion, critical pedagogy, or human rights [discourse](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/foucauldian-services-section/content/text/glossary/terms/discourse.md) without losing its specific demand. This incommensurability is not a problem to be solved but a condition that must be acknowledged. Solidarity requires working across incommensurable positions, not collapsing them into a shared framework.
+- **A third university**: in *A Third University Is Possible* (2017), Yang examines how universities function as [settler-colonial](../../sociology/topics/settler-colonialism/index.md) institutions — not merely through their curricula or demographics but through their structural role in land appropriation, knowledge extraction, and the reproduction of settler sovereignty. The "third university" names the possibility of educational institutions organized around Indigenous self-determination rather than settler-state credentialing.
+
+## Significance for this research
+
+Yang's work provides a framework for understanding how radical concepts are neutralized through metaphorical adoption — a process that connects to emsenn's analysis of [citing for containment](../../../../../../../../communication-science-services-section/services/linguistics-services-section/content/text/glossary/terms/citing-for-containment.md) and [dead English](../../../../../../../../communication-science-services-section/services/linguistics-services-section/content/text/glossary/terms/dead-english.md). The insistence that [decolonization](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/povinellian-services-section/services/settler-colonialism-services-section/content/text/glossary/terms/decolonization.md) is not a metaphor is a [refusal](../../sociology/terms/refusal.md) of the process by which insurgent concepts are absorbed into academic and institutional [discourse](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/foucauldian-services-section/content/text/glossary/terms/discourse.md): named, cited, and thereby contained. It also connects to emsenn's critique of [industrial intellectualism](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/cybernetic-postliberalism-services-section/content/text/glossary/terms/industrial-intellectualism.md) — the condition in which citing "[decolonization](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/povinellian-services-section/services/settler-colonialism-services-section/content/text/glossary/terms/decolonization.md)" performs the affects of justice work without confronting the material demand.
+
+## Notable works
+
+- "Decolonization Is Not a Metaphor" (2012, with [Eve Tuck](./eve-tuck.md))
+- *A Third University Is Possible* (2017)
+- "R-Words: Refusing Research" (2014, with [Eve Tuck](./eve-tuck.md))
+
+## Related
+
+- [Eve Tuck](./eve-tuck.md) — frequent collaborator
+- [Decolonization](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/povinellian-services-section/services/settler-colonialism-services-section/content/text/glossary/terms/decolonization.md) — the material demand their work centers
+- [Settler moves to innocence](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/povinellian-services-section/services/settler-colonialism-services-section/content/text/glossary/terms/settler-moves-to-innocence.md) — what metaphorical adoption of [decolonization](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/povinellian-services-section/services/settler-colonialism-services-section/content/text/glossary/terms/decolonization.md) accomplishes
+- [Settler colonialism](../../sociology/terms/settler-colonialism.md) — the structural condition they analyze
+- [Glen Coulthard](./glen-coulthard.md) — fellow theorist of Indigenous [refusal](../../sociology/terms/refusal.md) of recognition politics
+- [Citing for containment](../../../../../../../../communication-science-services-section/services/linguistics-services-section/content/text/glossary/terms/citing-for-containment.md) — the linguistic mechanism of concept neutralization
+- [Industrial intellectualism](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/cybernetic-postliberalism-services-section/content/text/glossary/terms/industrial-intellectualism.md) — the commodified knowledge production their critique challenges

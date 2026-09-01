@@ -1,0 +1,6 @@
+#+title: Elisp variable
++#roam_alias: "Elisp variables"
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-19 Sat 11:20]
+#+roam_tags: term

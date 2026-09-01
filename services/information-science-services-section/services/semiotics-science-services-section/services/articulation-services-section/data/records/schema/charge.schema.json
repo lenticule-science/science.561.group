@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "relating/articulating/predicating/positing/charge",
+  "title": "Charge",
+  "description": "A charge bearing evidence: the [truth, falsity] side coordinates and the witness Marks accumulated on each side (predicating/positing/bilattice-charge.mts `ChargeCarrier`). Belnap's FOUR, never boolean-shaped: absurd = (absent, absent), potential = (present, absent), active = (absent, present), stable = (present, present). Charges are never admitted directly; they are constructed from evidence and joined.",
+  "type": "object",
+  "required": ["kind", "value", "evidence"],
+  "properties": {
+    "kind": { "const": "bilattice-charge.carrier" },
+    "value": {
+      "type": "array",
+      "prefixItems": [
+        { "$ref": "#/$defs/side" },
+        { "$ref": "#/$defs/side" }
+      ],
+      "items": false,
+      "minItems": 2,
+      "maxItems": 2,
+      "description": "The [truth, falsity] side coordinates naming one of the FOUR corners: absurd, potential, active, stable."
+    },
+    "evidence": {
+      "type": "array",
+      "prefixItems": [
+        { "type": "array", "items": { "$ref": "./mark-profile.schema.json" } },
+        { "type": "array", "items": { "$ref": "./mark-profile.schema.json" } }
+      ],
+      "items": false,
+      "minItems": 2,
+      "maxItems": 2,
+      "description": "The witness Marks accumulated on the truth side, then the falsity side."
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "side": {
+      "type": "object",
+      "required": ["kind", "name"],
+      "properties": {
+        "kind": { "const": "bilattice-charge.side" },
+        "name": { "enum": ["absent", "present"] }
+      },
+      "additionalProperties": false,
+      "title": "ChargeSide"
+    }
+  }
+}

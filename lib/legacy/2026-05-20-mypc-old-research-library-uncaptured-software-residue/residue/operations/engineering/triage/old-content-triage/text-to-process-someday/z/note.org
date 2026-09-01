@@ -1,0 +1,12 @@
+#+title: note
+#+begin_head
+#+ghe_schema: term-0.1.0
+#+roam_alias: "notes"
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+roam_tags: ILS term
+#+end_head
+
+A */note/* is a type of [[file:information.org][information]], consisting of, at a minimum, an /identifier/ and /content/. In many [[file:information_management_system.org][information management tools]], a /note/ is the most basic unit of information.
+
+Notes are implemented within [[file:groundhog_emacs.org][Groundhog Emacs]], as the most-basic information [[file:schema.org][schema]]. Notes are also an important part of the [[file:zettelkasten_method.org][Zettelkasten method]] of [[file:note_taking.org][note-taking]].

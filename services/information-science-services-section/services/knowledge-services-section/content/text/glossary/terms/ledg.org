@@ -1,0 +1,11 @@
+option "operating_currency" "USD"
+2021-10-23 open Assets:House:Garage:Storage
+2021-10-23 open Income:Shopping:Garden:Pots
+2021-10-23 open Liabilities:Esther
+2021-10-23 * "Buy pots @ScrapExchange (Materials)"
+  Income:Shopping:Garden:Pots    -1 GARD-POT {3 USD}
+  Assets:House:Garage:Storage
+2021-10-23 * "Buy pots @ScrapExchange (Finances)"
+  Income:Shopping:Garden:Pots    3 USD
+  Liabilities:Esther
+  

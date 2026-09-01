@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       96fd39fd-e3a3-4850-a8ed-458ffe015044
+:END:
+#+title: learning
+#+date: [2025-09-01 Mon 10:29]
+

@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       8a435757-c37a-420e-8b45-4cac1dd9fb41
+:node-relations: (([[id:bee496e1-139b-4a7f-8a24-d4c14e6084c6][instantiates]] . [[id:6f9aac44-c72c-4ac5-84ef-9dc5cec6177c][analysis]]) ([[id:9adb7d35-07dd-477c-8efa-1e169b968d16][origin]] . [[id:3c104628-fd3b-427f-ba38-35a1f431cde5][Ludwig Wittgenstein]]) ([[id:ab477596-70c8-467c-8d61-83756e6bb443][publication]] . [[id:cc253409-9a82-4c5d-a4cd-8013f4e350c6][emsenn.net]]))
+:END:
+#+title: Wittgensteinian analysis
+#+date: [2025-09-21 Sun 07:09]
+

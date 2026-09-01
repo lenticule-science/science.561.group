@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       59181fb6-bc78-4d87-8384-c9f52f5c505e
+:END:
+#+title: Org-roam
+#+date: [2025-08-22 Fri 09:23]
+

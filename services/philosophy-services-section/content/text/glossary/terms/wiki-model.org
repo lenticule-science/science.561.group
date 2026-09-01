@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       a687f2dc-7257-42fb-bd9e-123c1978beb6
+:END:
+#+title: wiki model
+#+date: [2025-09-21 Sun 07:28]
+

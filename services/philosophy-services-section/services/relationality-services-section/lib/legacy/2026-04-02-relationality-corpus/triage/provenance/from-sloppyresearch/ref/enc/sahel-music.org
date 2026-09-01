@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       e4df1c6c-6282-4273-9a9d-52379f9ca2e8
+:public:   true
+:form:     [[id:2d77e9d7-6819-4cc8-9189-a81b5cff3d92][music genre]]
+:END:
+#+title: Sahel music
+#+date [2025-08-11 Mon 18:54]
+#+index: Sahel!Sahel music
+
+*/Sahel music/* is a [[id:2d77e9d7-6819-4cc8-9189-a81b5cff3d92][music genre]] [[id:dc21a3aa-a339-4106-8a19-cbaba0a0ded4][describing]] [[id:86840788-cff4-414b-a69d-1da24b0f9444][music]] from [[id:1425f6fd-6aaf-4e5b-946f-52bf16b23adc][Sahel]], a [[id:fe40f454-1977-4594-843e-065f39b4f845][biogeographical region]] in [[id:0fc02254-90b4-453e-8b64-58108739c7cb][Africa]].

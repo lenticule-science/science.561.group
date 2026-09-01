@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       1cf24f84-57f9-4b6e-8650-24b835b96dc9
+:form:     [[id:48276608-ffef-478e-ab66-7de6790b3fbb][Rumex]]
+:ROAM_ALIASES: "curled dock" "curly dock" "yellow dock"
+:END:
+#+title: Rumex crispus
+#+date: [2025-08-26 Tue 10:30]
+#+index: Rumex!Rumex crispus
+
+*/Rumex crispus/* is a [[id:970f3226-be0c-4421-8ab8-e6b5b7781dff][species]] of [[id:48276608-ffef-478e-ab66-7de6790b3fbb][Rumex]] differentiated by its...

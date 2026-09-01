@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       c23d726b-b9c7-4fa1-a438-1e178c850f12
+:node-relations: (([[id:b4ae66ad-8700-4af3-b995-17cfd8b74eb9][condition]] . [[id:1df6d7cc-ab00-4bc1-b9cc-1f21a3cdcd1a][reception]]))
+:END:
+#+title: condition of reception
+#+date: [2025-09-03 Wed 21:11]
+

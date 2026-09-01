@@ -1,0 +1,29 @@
+#+title: emsenn's records catalog
+#+ghe_schema: resource-0.1.0
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-21 Mon 14:24]
+#+roam_tags: meta
+
+#+name: garden-file-counter
+#+begin_src sh :exports none
+find . -type f -not -path '*/\.git/*' | wc -l
+#+end_src
+
+#+name: garden-word-counter
+#+begin_src sh :exports none
+find . -name '*.org' -print0 | cat | wc -w --files0-from=- | cut -d' ' -f1 | tail -1
+#+end_src
+
+
+My name is [[file:emsenn.org][emsenn]] and this is a catalog of my personal records. It's a collection of /hypertext records/ created through my experiences with /decolonizing/ and finding /indigeneity/ within /settler-colonial society/.
+
+I'm 30 years-old, /Itázipčo/ of the /Lakota/, /queer/, and I have permanent health and mobility issues. I've developed skills in /land stewardship/ and /urban direct action/.
+
+The goal of this catalog is to cultivate support for applying these skills, through providing information about my relationship to the various concepts involved. 
+
+There are currently call_garden-file-counter() records in the catalog, containing a total of call_garden-word-counter() words. To help folk find there way, there are a few pages which provide various listings and overviews:
+
+- There's a [[file:d/index.org][list of my daily records]]. These are things that might go on a conventional /blog/ or /social media profile/.
+- There's an [[file:records_index.org][list of all the records]], in alphabetical order. This is useful if you know the name of what you want to look up, or you want to dive into a random page.
+- There's an [[file:concepts_index.org][index of concepts]] that I talk about. This is useful if you want to see every entry that's been associated with a given notion.

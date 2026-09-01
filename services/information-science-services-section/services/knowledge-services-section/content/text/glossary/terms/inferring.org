@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       42b47a03-af7c-4e10-850f-9fba06696c21
+:END:
+#+title: inferring
+#+date: [2025-08-29 Fri 17:17]
+

@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/lattice/library/closure-operator/library/closure-rule-system/closure-rule-system.schema.json",
+  "title": "closure-rule-system",
+  "description": "A versionable closure-rule system. Generates the closure operator cl^S whose firing realizes the closure 2-monad's algebra on the substrate. Fields: id, version-hash, rules, scope-applicability, closure-kind-distribution, rule-language-fragment, fuel-policy, predecessor.",
+  "type": "object",
+  "required": ["id", "description", "version-hash", "rules", "rule-language-fragment"],
+  "additionalProperties": true,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$"
+    },
+    "description": {"type": "string", "minLength": 1},
+    "version-hash": {
+      "type": "string",
+      "description": "Canonical-form hash of the rule-set's content. Two byte-identical systems must have identical version-hashes."
+    },
+    "rules": {
+      "type": "array",
+      "items": {"type": "string"},
+      "minItems": 0,
+      "description": "References to the closure-rule records the system includes. Each must resolve to an existing substrate entity."
+    },
+    "scope-applicability": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "References to the scopes the rule system is potential in."
+    },
+    "closure-kind-distribution": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "process": {"type": "integer", "minimum": 0},
+        "derivation": {"type": "integer", "minimum": 0},
+        "procedure": {"type": "integer", "minimum": 0},
+        "inquiry": {"type": "integer", "minimum": 0}
+      },
+      "description": "Derived count of rules per closure-kind. Sums to total rules per the closure-kind invariant."
+    },
+    "rule-language-fragment": {
+      "type": "string",
+      "enum": ["quantifier-free", "with-forall-blocks"],
+      "description": "Determines the regime of the substrate's settling. Quantifier-free => strict or Scott-continuous regime. With-forall-blocks => transfinite-bounded or aperiodic regime."
+    },
+    "fuel-policy": {
+      "type": "string",
+      "description": "Reference to the fuel-bound discipline. Must be regime-compatible with rule-language-fragment."
+    },
+    "predecessor": {
+      "type": "string",
+      "description": "Reference to the prior version of this rule-system. Predecessor chain must terminate at a bootstrap version per the acyclic-predecessor-chain invariant."
+    }
+  }
+}

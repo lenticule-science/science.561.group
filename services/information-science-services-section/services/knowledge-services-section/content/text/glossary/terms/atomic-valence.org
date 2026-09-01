@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       8d757858-f3bb-4a99-a8ba-546636d87af3
+:END:
+#+title: atomic valence
+#+date: [2025-09-29 Mon 13:19]
+

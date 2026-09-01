@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       9ac2f310-aba2-4b7c-afcd-f1c5d9f53f5d
+:END:
+#+title: text editor
+#+date: [2025-08-22 Fri 09:14]
+

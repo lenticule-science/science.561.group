@@ -1,0 +1,21 @@
+#+title: 2020-12-07
+#+begin_head
+#+ghe_schema: daily-record-0.1.0
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-07 Tue 08:37]
+#+roam_tags: daily-record
+#+end_head
+
+#+toc: headlines 2
+* Media log
+** Computer games
+*** HEDGE! by Aldercone Studio
+    - Source :: https://aldercone.itch.io/hedge
+* News log
+** Nunavut introduces bill for civilian oversight of RCMP
+   :LOGBOOK:
+   - Note taken on [2021-01-06 Wed 13:15] \\
+     [[file:../royal_canadian_mounted_police.org][Royal Canadian Mounted Police]] in [[file:../nunavut_canada.org][Nunavut, Canada]] may receive civilian oversight for some instances, if a bill introduced by the territory's government passes. The bill ultimately allows the RCMP to investigate themselves, if they choose, however; I view the bill as a gesture toward appeasing [[file:../police_abolitionist.org][police abolitionists]], not a step toward [[file:../abolition.org][abolition]] or even [[file:../reform.org][reform]].
+   :END:
+   - Source :: https://www.cbc.ca/news/canada/north/nunavut-government-introduces-bill-aimed-at-civilian-oversight-of-rcmp-1.5829396

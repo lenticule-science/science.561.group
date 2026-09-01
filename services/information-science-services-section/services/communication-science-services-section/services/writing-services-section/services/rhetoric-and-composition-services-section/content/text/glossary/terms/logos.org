@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       68dd530b-98e3-4ede-8cfb-a896c4aa69ca
+:END:
+#+title: logos
+#+date: [2025-08-30 Sat 10:13]
+

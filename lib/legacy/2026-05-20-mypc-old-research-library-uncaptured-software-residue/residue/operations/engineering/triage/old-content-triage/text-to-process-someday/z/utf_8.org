@@ -1,0 +1,10 @@
+#+title: UTF-8
+#+begin_head
+#+ghe_schema: record-0.1.1
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-21 Mon 21:24]
+#+roam_tags: term
+#+end_head
+
+*/UTF-8/* is a [[file:text_encoding.org][text encoding]].

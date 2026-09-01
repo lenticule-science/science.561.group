@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       5950d59a-8d30-47e6-939c-171327e23b44
+:END:
+#+title: creator
+#+date: [2025-10-04 Sat 00:26]
+

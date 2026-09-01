@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://561.group/swarm-intelligence/agentic-orchestration-platform/iterating-operations-loop/iterating-operations-loop.schema.json",
+  "title": "Iterating-operations-loop (cross-regime composing morphism; controller at stable-aperiodic-articulation-cell)",
+  "description": "Regime at controller level: stable-aperiodic-articulation-cell (platform-level loop orchestrator). Body composes morphisms across all four regimes — the unique place where today's four-regime grammar shows up most concretely. Per-stage regime decomposition: (1) heartbeat-selection — stable-aperiodic-articulation-cell at platform scope (selects which entity ticks next); (2) dispatch — scott-continuous-posit-category (positing-regime; twist-product fusion is Scott-continuous); (3) mode-application — transfinite-predication-category (predicating-regime fiber restriction); (4) tick/settlement — finite-settlement-algebra (settling-regime, κ < ω; one closure-rule application); (5) cost-tracking and audit — finite-settlement-algebra (Lawvere-quantale cost composition; witness emission). Each emitted witness row carries a regime tag so the cross-regime composition is auditable. Variance: restriction (advances the operations-loop state through one cycle).",
+  "kind": "morphism",
+  "domain": "(operations-loop, observation?, agentSet, workItem?, closureRules)",
+  "codomain": "{operationsLoop', witnessRows[]}",
+  "variance": "restriction",
+  "monotone": true,
+  "type": "object",
+  "required": ["operationsLoop", "agentSet", "closureRules", "output", "evidence"],
+  "additionalProperties": false,
+  "properties": {
+    "operationsLoop": {
+      "type": "object",
+      "required": ["slug"],
+      "properties": {
+        "slug": { "type": "string", "minLength": 1 }
+      }
+    },
+    "observation": { "type": ["object", "null"] },
+    "agentSet": { "type": "array" },
+    "workItem": { "type": ["object", "null"] },
+    "closureRules": { "type": "array" },
+    "output": {
+      "type": "object",
+      "required": ["operationsLoop", "witnessRows"],
+      "additionalProperties": false,
+      "properties": {
+        "operationsLoop": {
+          "type": "object",
+          "required": ["slug"],
+          "additionalProperties": true,
+          "properties": {
+            "slug": { "type": "string", "minLength": 1 }
+          }
+        },
+        "witnessRows": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["stage", "regime"],
+            "additionalProperties": true,
+            "properties": {
+              "stage": {
+                "enum": [
+                  "heartbeat-selection",
+                  "dispatch",
+                  "mode-application",
+                  "tick",
+                  "cost-tracking",
+                  "audit"
+                ]
+              },
+              "regime": {
+                "enum": [
+                  "stable-aperiodic-articulation-cell",
+                  "scott-continuous-posit-category",
+                  "transfinite-predication-category",
+                  "finite-settlement-algebra"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  }
+}

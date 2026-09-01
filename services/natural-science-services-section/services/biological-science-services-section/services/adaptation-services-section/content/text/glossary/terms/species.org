@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       970f3226-be0c-4421-8ab8-e6b5b7781dff
+:END:
+#+title: species
+#+date: [2025-09-01 Mon 09:05]
+#+index: species
+
+A */species/* is a [[id:4b1d8087-3b03-47e5-b4f3-2803ff68dbc3][mode]] of [[id:052d4b09-e8e9-4cf1-a898-e68a9105c0d3][genus]].

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       99e7a251-722f-460d-9a32-7234161c188c
+:END:
+#+title: multi-user text-interface game
+#+date: [2025-08-23 Sat 10:25]
+

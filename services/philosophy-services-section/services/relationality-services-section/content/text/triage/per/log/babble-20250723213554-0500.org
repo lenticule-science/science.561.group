@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       adb03cf1-9c42-43f1-bcb3-88d572adf713
+:instantiates:     [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]
+:author:   [[id:40cbaad9-af3c-4573-b356-ae116687e483][emsenn]]
+:date-created: [2025-07-23 Wed 21:35]
+:public:   true
+:END:
+#+title: Thinking on privacy within my research notes
+#+date: [2025-07-23 Wed 21:35]
+
+
+[[id:f13a0895-6b03-4fe3-a9a2-755f4875dc9f][Terran]] said something that [[id:1e0eb1ce-bb00-4719-a657-300ded55cf7a][prompted]] me to [[id:91257384-4e2b-4425-987b-89d4df1592f1][imagine]] what [[id:9c59b84d-c1d5-44bd-9907-412c07118fa6][Ska]] "[[id:488b5e82-0a07-4bd3-be15-f807f21f4529][theme song]]" would be... and then I realized I'm not sure where/how to put Terran and Ska, in [[id:3ffa600c-f831-428f-bd11-a4e6583ff5ad][my files]]. Making [[id:cc253409-9a82-4c5d-a4cd-8013f4e350c6][emsenn.net]] not be bleedy-as-heck, with links, is gonna be tough!
+
+Part of why I've compartmentalized things into subdirectories is to make it easier to keep some things private, but this ultimately means I have to think about how much I'm leaking. I guess I'm stuck between a few different places. Let me think about it...
+
+I essentially have this act I want to do - record information about people, that will be "private" unless made "public".
+
+That's... too vague. I want to record selectively publicized information about a person, in a way that lets me work, computationally, with it.
+
+I'm taking a break but when I come back, I'm going to think about it as, what if I were building my files, as the "dimension" part of "[[id:a963cb87-8dab-436a-880f-6984c6cb0610][MUD]]"?

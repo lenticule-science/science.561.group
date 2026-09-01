@@ -1,0 +1,21 @@
+---
+
+title: "Ecosystem"
+date-created: 2026-03-06T00:00:00
+aliases:
+  - "ecosystem"
+  - "ecosystems"
+keywords:
+  - biology
+  - ecology
+date-modified: 2026-03-09
+part-of: biology/disciplines/ecology/terms
+---
+
+An ecosystem is a community of living [organisms](../../../terms/organism.md) together with the nonliving components of their environment — water, soil, atmosphere, sunlight — interacting as a system. The term was coined by Arthur Tansley in 1935. Ecosystems can be as small as a tide pool or as large as the Amazon basin, but the concept is the same: organisms and their physical environment, connected by flows of energy and cycles of matter.
+
+Energy enters most ecosystems as sunlight, captured by photosynthetic organisms (plants, algae, cyanobacteria) and converted into chemical energy. This energy flows through the ecosystem via food webs: herbivores eat plants, predators eat herbivores, decomposers break down dead matter at every level. At each transfer, energy is lost as heat — which is why ecosystems depend on continuous solar input. Matter, by contrast, cycles: carbon, nitrogen, phosphorus, and water move from the nonliving environment into organisms and back again through [metabolism](../../physiology/terms/metabolism.md), death, and decomposition.
+
+Decomposition is as essential as photosynthesis. Without organisms that break down dead matter — primarily fungi and bacteria — nutrients would accumulate in corpses and fallen leaves, unavailable to living organisms. Saprotrophic fungi are the only organisms that can decompose lignin, the structural polymer of wood, making them indispensable to the carbon cycle in terrestrial ecosystems.
+
+Ecosystems are not static. They change through succession — the gradual replacement of one community by another — and are disrupted by disturbance (fire, flood, human activity). The stability of an ecosystem depends on the diversity and redundancy of its components and on the feedback loops that regulate population sizes and nutrient flows. An ecosystem is not a thing but a pattern of interactions maintained by the ongoing activity of its members.

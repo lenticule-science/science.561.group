@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/system/library/operating-system/library/computer-operating-system/library/work-item/doing/working/finding-blocked-work-rooted-at-me/finding-blocked-work-rooted-at-me.schema.json",
+  "title": "finding-blocked-work-rooted-at-me",
+  "description": "Walks work-items owned by or assigned to the caller and returns the ones in blocked status, with their blocking reasons.",
+  "type": "object"
+}

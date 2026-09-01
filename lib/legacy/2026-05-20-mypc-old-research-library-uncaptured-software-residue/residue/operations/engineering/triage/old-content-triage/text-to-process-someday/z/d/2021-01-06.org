@@ -1,0 +1,63 @@
+#+title: 2020-01-06
+#+ghe_schema: daily-record-0.1.1
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2021-01-06 Wed 09:09]
+#+roam_tags: daily-record
+
+#+name: definition
+This is some of what I (emsenn) experienced and wrote on on [2021-01-06 Wed].
+
+#+toc: headlines 2
+
+* Journal                                                          :noexport:
+** [2021-01-06 Wed 09:12]
+
+   So I'm kind of grumpy with [[file:../esther_davis.org][Esther]] this morning, still about the [[file:../note_taking.org][note-taking]] thing from [[file:2021-01-05.org][yesterday]]. When I said, "If you don't start using [[file:../org_mode.org][Org-mode]], you're never going to start using it," they basically shrugged at me. At this point, I'm trying to figure out how to, without hurting them, explain that to my perspective, it seems… very disrespectful, in a lot of ways, to act like me making my skill and [[file:../labor.org][labor]] available for this is a big burden on them.
+
+   And I just can't help but see it in the context of them like, not wanting to come to the [[file:../fediverse.org][Fediverse]], even after several years on [[file:../instagram.org][Instagram]] and there being several different exoduses of users off the platform. I don't want to presume, but it feels like they maintain these little bits of "normal" as kind of a lifeline to that way of life, and maybe that's where my feeling of disrespect comes from? They superficially agree with all I say in conversation, but clearly care more about making sure their labor is nominal to [[file:../kyriarchy.org][kyriarchism]] than making sure their labor works toward our desired future.
+
+   Let me see if I can't write this in a way I could say to them:
+
+   "Your continued use of [[file:../tool.org][tools]] that [[file:../sabotage.org][sabotage]] your [[file:../decolonization.org][decolonization]] is a source of deep frustration for me. You don't acknowledge the [[file:../cognition.org][cognitive]] risks of continuing to scope your labor and [[file:../recreation.org][recreation]] to the kyriarchy, instead state simply that slight and temporary declines in productivity are undesirable. This is frustrating for several reasons.
+
+   "It seems dismissive of the information I've shared on my perspective on knowledge management and note-taking. Regardless of systemic issues, I either know a lot about how to develop an understanding of a topic or I don't. You act like I do, until it comes time for /you/ to develop an understanding, and then the nominal Collaborationist way is often not just /necessary/, but /better/.
+
+   "It seems dismissive of the information I've shared on my perspective on the health and stability of the contemporary settler-colonial kyriarchy. We've both talked about how this system does not actually have the resources to sustain us, yet in almost every choice between independence and service, you choose the course of action that serves kyriarchism first. You've heard me talk a /lot/ about the people who treat decolonization as a hobby instad of a way of life. I'm concerned that you do that too, more than you realize. It often seems like your first priority is securing our stability within kyriarchism, when in our conversations that is often repeated as an impossibility that we criticize others for believing it.
+
+   "It also seems wasteful of my labor. I've now set you up three different tools for handling an accretive knowledge system, each of which took the better part of a day or more, and you've not used any of them beyond an on-boarding session.
+
+   "And it seems wasteful of your labor. Rather than developing a repository of information about these topics that can serve you well into your future, you're performing research for a university. You're doing a job to earn a chance of surviving tomorrow. Fair enough, but is that all you're planning to do? If so, that's a bigger conversation: I don't repeat that the kyriarchy is unstable and not capable of providing for our survival for the fun of it, it's so that we... don't make this exact mistake of prioritizing securing our survival through kyrirachism, rather than prioritizing... living."
+
+   I don't think I could say any of that to them, at least not like that. But I know if I don't say something soon, then the whole complaint will be dismissed out-of-hand for me having ruminated on it too long. Maybe I should just ask them? Be like, "Hey, your choice to use Scrivener for this project, without further discussion, surprised me. I think maybe I'm confused about what your goals are for the immediate and long-term future. Could we talk about that?"
+
+   I feel like I have made myself extraordinarily available to help them with their goals, like, I've offered repeatedly to even transcribe their hand-written notes into the software for them, not to mention setting up the software in the first place, designing the [[file:../website.org][Website]] styling, and so on. I... I feel weirdly like how I do in almost any situation where I'm trying to get someone to radicalize. I have to come entirely to where they are, and then slooowly try and coax them into seeing the legitimacy of my position, hope they will and then we can actually discuss the merits of the position...
+
+   ...And just like [[file:../radicalization.org][radicalization]], I feel like I've gotten someone who has agreed to show up to the meeting, and then once there is raising their hand to ask how come we don't just write a letter to the President. Which sucks, as a feeling, in many ways. I feel like... this lack of change means in some ways I'm losing my partner, that I'm heading off into this direction of "performing labor directly for other humans" and they see me going there, and declining to follow, because they have more faith in a system that I spend most of my day advocating people abandon their faith in.
+
+   So, my plan: Tell them their choice to use Scrivener without any more discussion surprised me, ask if they're up for a conversation because I think it's indicative of a greater difference in belief than we're currently acknowledging.
+* News log
+** Democrats to retake Senate
+   :LOGBOOK:
+   - Note taken on [2021-01-06 Wed 14:55] \\
+     [[file:../cbs_news.org][CBS News]] is projecting that [[file:../democrat.org][Democrat]] [[file:../raphael_warnock.org][Raphael Warnock]] has defeated the incumbent [[file:../republican.org][Republican]] Senator [[file:../kelly_loeffler.org][Kelly Loeffler]] in yesterday's [[file:../general_election.org][general election]] in [[file:../georgia_u_s_a.org][Georgia, U.S.A.]]. Additionally, Democrat [[file:../jon_ossoff.org][Jon Ossoff]] is likely to defeat incumbent Senator [[file:../david_perdue.org][David Perdue]]. If the [[file:../democratic_party.org][Democratic Party]] wins both seats, the [[file:../senate.org][Senate]] will be split 50/50 between them and the [[file:../republican_party.org][Republican Party]]. In the case of a tie in the Senate, the sitting Vice President is allowed a vote. Under the upcoming [[file:../joe_biden.org][Biden]] administration, this would mean that Vice President-elect [[file:../kamala_harris.org][Kamala Harris]] would hold that privilege. The election results, if both are the Democrats, will change which party holds the position of [[file:../senate_majority_leader.org][Senate Majority Leader]]. It's currently [[file:../mitch_mcconnell.org][Mitch McConnell]]'s, but it could transfer to [[file:../chuck_schumer.org][Chuck Schumer]].
+     
+     This could all have relatively immediate effects for the [[file:../united-states-of-america.org][American]] [[file:../person.org][people]], as the Democrats have promised to move forward on several pieces of legislation if they secure these positions, including the distribution of $1,400 to certain [[file:../citizen.org][citizens]] and the [[file:../legalization.org][legalization]] of [[file:../cannabis.org][cannabis]].
+     
+     I also anticipate an effect on the [[file:../american_left.org][American Left]]. The [[file:../united-states-of-america.org][U.S.A.]] federal government seems well-prepared to handle the transition to a Democratic majority. I conjecture that recent conflicts between the [[file:../proud_boys.org][Proud Boys]] and [[file:../police.org][police]] in [[file:../portland.org][Portland, Oregon]] and other cities is an attempt to establish a relationship between a new [[file:../moral_majority.org][moral majority]] and a [[file:../deplorable.org][deplorable]] minority.[fn:1] Rather than (implicitly [[file:../anarchism.org][anarchist]]) [[file:../community.org][communities]] resisting the [[file:../state.org][state]], it can be the [[file:../nation.org][nation]] organized against [[file:../terrorism.org][terrorism]]. That's a [[file:../political_environment.org][political environment]] that has existed the entire lifetime of some of my younger [[file:../mutalist.org][mutalist]] associates, and a [[file:../cooption.org][cooption]] of their [[file:../praxis.org][praxis]] into [[file:../collaboration.org][Collaboration]] might be entirely [[file:../invisible.org][invisible]].
+     
+     The [[file:../media.org][media]] and [[file:../social_media.org][social media]] both seem to have a role in this this transition: I've already heard people who were at [[file:../blm.org][#BLM]] protests [[file:../george_floyd_uprising.org][last summer]] refer to the situation between the Proud Boys, police, and [[file:../antifa.org][antifa]] as "[[file:../fascist.org][fascists]], police, and antifa." The Proud Boys are pro-[[file:../fascism.org][fascism]] [[file:../terrorist.org][terrorists]], and the police are fascists. That they conflict occasionally doesn't have wider meaning on their politics: fascists conflict, it's what they do.
+     
+     As I write this, there's escalating [[file:../violence.org][violence]] in [[file:../washington_d_c_u_s_a.org][Washington, D.C., U.S.A.]], as Proud Boys and other [[file:../far_right_terrorists.org][far-right terrorists]] come into the city to assert the continuation of [[file:../donald_j_trump.org][Donald Trump]]'s presidency. There are a fair number of people who were desperately radical for the past four years, who will, today, enjoy watching the police injure terrorists. I'll say, if watching the state fight terrorists brings someone comfort, it wasn't the [[file:../contemporary_kyriarchy.org][contemporary settler-colonial kyriarchy]] that theywere uncomfortable with. It was that the incumbent administration has scratched through it's well-loved verdigris.
+   :END:
+   - Source :: https://www.cbsnews.com/live-updates/georgia-election-results-runoff-senate-2021-01-06/
+** An anthropological look at the ritual of drinking coffee
+   :LOGBOOK:
+   - Note taken on [2021-01-06 Wed 11:55] \\
+     From [[file:../sapiens.org][Sapiens]], writing by [[file:../gideon_lasco.org][Gideon Lasco]] about the [[file:../ritual.org][ritual]] of preparing and consuming [[file:../coffee.org][coffee]], and how his [[file:../relationships.org][relationship]] to coffee changed because of the [[file:../covid_19_restriction.org][COVID-19 restrictions]] in place in the [[file:../phillipines.org][Phillipines]], where the author lives.
+   :END:
+   - Source :: https://www.sapiens.org/column/entanglements/coffee-rituals/
+
+* Footnotes
+
+[fn:1] [2021-01-07 Thu 16:35] I've added a record for this concept, [[file:../moral_majority_versus_deplorables.org][moral majority versus deplorables]]. 

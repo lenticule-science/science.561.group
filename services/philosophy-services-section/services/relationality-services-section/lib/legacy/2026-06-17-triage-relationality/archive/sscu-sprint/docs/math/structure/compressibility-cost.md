@@ -1,0 +1,27 @@
+---
+title: Compressibility Cost
+role: structure
+proof_refs: []
+introduces: structure
+part-of: relational-computer
+computer-system-type: primitive
+---
+
+
+
+Cost metric derived from compressibility recognition to guide scheduling and
+storage.
+
+## Definition
+- Measure: maps traces/recognitions to a cost based on
+  [Compressibility Recognition](../operator/compressibility-recognition.md):
+  incompressible items have higher cost.
+- Role: informs scheduling/storage decisions.
+
+## Invariants
+- Monotonic: higher compressibility → lower cost.
+- Stable under shuffle-equivalence.
+
+## Proof
+- Uses: compressibility recognition to assign costs.
+- Shows that: compressibility can be quantified as a cost metric.

@@ -1,0 +1,14 @@
+#+title: prosopagnosia
+#+begin_head
+#+ghe_schema: record-0.1.1
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-22 Tue 14:29]
+#+roam_alias: "trouble recognizing faces"
+#+roam_tags: term
+#+end_head
+#+begin_summary
+#+name: prosopagnosia-definition
+*/Prosopagnosia/* is when a [[file:human.org][human]] has trouble recognizing faces.
+#+end_summary
+* 

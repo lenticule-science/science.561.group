@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       f6e515e7-5243-4a2b-bf3c-bdc29456cc2c
+:END:
+#+title: Flowers
+#+date: [2025-09-05 Fri 20:34]
+

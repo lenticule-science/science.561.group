@@ -1,0 +1,78 @@
+baseURL = 'https://emsenn.net/'
+locale = 'en-us'
+title = 'emsenn.net'
+
+themesDir = ".."
+theme = "hugo-publisher"
+
+publishDir = "../../../projects/emsenn-net"
+
+# Skip directories that contain non-content files (archetypes, themes, etc.)
+ignoreFiles = ['archetypes/', 'skills/', 'agents/', 'archive/', 'themes/', 'triage/', 'prompts/', 'slop', '\.j2$', 'SKILL[^/]*\.md$', 'AGENTS?\.md$', 'relationality/']
+disableAliases = true
+ignoreErrors = ["deprecated", "error-deprecated", "error-output-format"]
+
+# Mount existing content directories into Hugo's content tree
+[[module.mounts]]
+  source = "content"
+  target = "content"
+
+[[module.mounts]]
+  source = "../../../library/domains"
+  target = "content/library"
+
+[[module.mounts]]
+  source = "../../command/personnel/emsenn/projects/writing/letters-to-the-web"
+  target = "content/letters"
+
+# Keep the default static/layouts/etc working
+[[module.mounts]]
+  source = "static"
+  target = "static"
+
+[[module.mounts]]
+  source = "layouts"
+  target = "layouts"
+
+[taxonomies]
+  tag = "tags"
+  type = "types"
+  author = "authors"
+
+[params]
+  email = "emsenn@emsenn.net"
+  tribalHeritage = "Itazipcho (Sans Arc of the Lakota Sioux)"
+  genderIdentity = "queer"
+  showHCard = true
+  properName = "emsenn"
+  pronounNominative = "they"
+  pronounOblique = "them"
+  pronounPossessive = "theirs"
+  honorificPrefix = "M"
+  canonicalURL = "https://emsenn.net"
+  nickname = "emsenn"
+  logo = "/imgs/emsenn-logotype.png"
+  logoAlt = "The text '(ems), representing emsenn's logotype."
+  givenName = "Morgan"
+  familyName = "Sennhauser"
+  locality = "North Shore of Gitchigumee"
+  region = "Minnesota"
+  country = "United States of America"
+  traditionalSovereignty = "Ojibwe"
+  webmentions = true
+
+[frontmatter]
+  date = ["date", "date-created", ":git", ":default"]
+
+[markup.goldmark]
+  [markup.goldmark.extensions]
+    [markup.goldmark.extensions.passthrough]
+      enable = true
+      [markup.goldmark.extensions.passthrough.delimiters]
+        block = [['$$', '$$']]
+        inline = [['$', '$']]
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.goldmark.parser]
+    [markup.goldmark.parser.attribute]
+      block = false

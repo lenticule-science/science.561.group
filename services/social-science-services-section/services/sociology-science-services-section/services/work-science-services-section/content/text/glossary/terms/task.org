@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       c6b3ca98-2261-4ff1-b0e6-963f28693999
+:public:   true
+:END:
+#+title: task
+#+date: [2025-08-25 Mon 00:57]
+#+index: task

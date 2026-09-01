@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://active.development.561.group/articulating/library/aperiodic-articulation-category/commutating/library/aperiodic-nuclear-quartet-category/library/joint-quiescent-corner/library/aperiodic-autopoiesis-cell/library/viable-system-model/viable-system-model.schema.json",
+  "title": "viable-system-model",
+  "description": "Stafford Beer's organizational architecture: an aperiodic-autopoiesis-cell at organizational scale, decomposed into five recursively-nested subsystems (operations, coordination, control, intelligence, policy). Each subsystem is itself a viable-system-model. The substrate-instance of autopoiesis applied to multi-component organizations.",
+  "type": "object",
+  "properties": {
+    "name": { "type": "string", "const": "viable-system-model" }
+  },
+  "required": ["name"]
+}

@@ -1,0 +1,1182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2019-06-07 Fri 20:08 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The State of Iranian Communication</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Morgan Sennhauser, Project Coordinator, Sedazad" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">The State of Iranian Communication</h1>
+<div id="outline-container-org9c52a1f" class="outline-2">
+<h2 id="org9c52a1f">Introduction</h2>
+<div class="outline-text-2" id="text-org9c52a1f">
+<p>
+This report was prepared for public release by me in my role as
+project coordinator at Sedazad.
+</p>
+
+<p>
+This report was created by me, emsenn, in the United States. To the extent possible under law, I have waived all copyright and related or neighboring rights to this document. This document was created for the benefit of the public. If you're viewing it on a remote server, you're encouraged to download your own copy. To learn how you can support me, see <a href="https://emsenn.net/donate">https://emsenn.net/donate</a>.
+</p>
+</div>
+</div>
+<div id="outline-container-org9b7915d" class="outline-2">
+<h2 id="org9b7915d">The State of Iranian Communication</h2>
+<div class="outline-text-2" id="text-org9b7915d">
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org697636b">Purpose</a></li>
+<li><a href="#org54de0da">History</a></li>
+<li><a href="#org2d9cb2e">Traffic Manipulation</a></li>
+<li><a href="#org339660d">Response</a></li>
+<li><a href="#org45d667b">Conclusion</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org697636b" class="outline-3">
+<h3 id="org697636b">Purpose</h3>
+<div class="outline-text-3" id="text-org697636b">
+<p>
+This document is an overview of the current state of communications in Iran, as well as a rundown of the
+recommended methods for circumvention.
+</p>
+
+<p>
+As this document is intended for non-technical readers, I hope to
+provide a clear yet thorough picture of the Iranian data manipulation
+system as well as suggested circumvention methods. For the more
+technical among us (our programmers and developers), I hope to
+stimulate development in the proper direction by showing what methods
+have already failed to work and what methods may work.
+</p>
+
+<p>
+I also hope to dispel some of the rumors about the Iranian filtration
+system and clarify which circumvention methods are predicted to work
+and which may not.
+</p>
+
+<p>
+Finally, some information about Iran's data manipulation may be left
+intentionally vague. This is to prevent the Iranian government from
+discovering we know more about their monitoring and manipulation than
+they think we do. Additionally, I do not cite many sources, as doing
+so would reveal how we obtained the information, and therefore make it
+much more difficult to continue to do so.
+</p>
+
+<p>
+An additional note: This document is not intended to be a detailed
+analysis of the Iranian firewall, so some parts may be worded in ways
+which may not be technically correct, but get the point across much
+more clearly than a more technically correct sentence would. That
+said, if you find something which is simply incorrect, please inform
+me.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org54de0da" class="outline-3">
+<h3 id="org54de0da">History</h3>
+<div class="outline-text-3" id="text-org54de0da">
+<p>
+After the Iranian presidential election on June 12 , the Iranian
+government began to limit civilians’ basic freedoms in strict and
+unjustifiable ways, due to allegations of election fraud. The
+government prevented protests by using teargas, batons, and eventually
+automatic weapons. They limited phone communications, preventing
+people from communicating with friends and family. They also began
+limiting the Internet inside Iran.
+</p>
+
+<p>
+However, there were several sites that were not blocked which enabled
+the Iranians to share photographs, video, and thoughts about the
+election, and the subsequent violence against protesters. The most
+notable site for the torrent of information coming out of Iran was
+Twitter, where content tags like #iranelection and #gr88 (Green
+Revolution 1388, the current year on the Islamic calendar) took
+control of the most used tags for over two weeks. (Nolte, 2009)
+</p>
+
+<p>
+This enabled millions of people to see and read about what was
+happening in Iran. And as they watched footage of protesters being
+beaten, and became far too familiar with the concept of Basij militia
+arresting people in the middle of the night, they wondered what they
+could do.
+</p>
+
+<p>
+Initially, assisting was easy. One could follow simple instructions to
+set up a proxy and send the IP and port of the proxy server to one of
+several volunteers who would then spread the connection details into
+Iran. Unfortunately, most proxies were quickly blocked, which meant
+that it took a constant rush of people setting up proxies on thousands
+of computers to keep communication even somewhat open.
+</p>
+
+<p>
+Obviously, this pace could not be continued indefinitely, and it was
+becoming clear that this was going to be a long struggle for the
+Iranian people. Worse, rumors were circulating that the Iranian
+government was enabling previously unused hardware, which made the
+majority of proxies obsolete.
+</p>
+
+<p>
+Some examination proved these rumors to be true. The Iranians had
+moved beyond simple IP blocking to much more thorough methods of data
+manipulation- things that would also prove much more difficult to
+circumvent.
+</p>
+</div>
+</div>
+<div id="outline-container-org2d9cb2e" class="outline-3">
+<h3 id="org2d9cb2e">Traffic Manipulation</h3>
+<div class="outline-text-3" id="text-org2d9cb2e">
+<p>
+Traffic manipulation, in terms of computer networking, is any
+tampering done to information in transit from its origin to its
+destination. The most well known case of traffic manipulation is the
+Great Firewall of China (Golden Shield Project), the complex system of
+measures used to filter the information that Chinese citizens can
+access online. (Stilgherrian, 2008) However, many other nations and
+entities have instituted some form of traffic manipulation. For
+example, many companies block the IPs<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup> of servers their employees do
+not need to access during work hours, such as eBay.
+</p>
+
+<p>
+There are many types of traffic manipulation, however, and they all
+pose different problems to those who wish to work around them. The
+next few sections summarize and show examples of the methods used to
+impose communication restrictions in Iran.
+</p>
+</div>
+<div id="outline-container-orgbb3513a" class="outline-4">
+<h4 id="orgbb3513a">Overview</h4>
+<div class="outline-text-4" id="text-orgbb3513a">
+<p>
+The Iranian firewall<sup><a id="fnr.2" class="footref" href="#fn.2">2</a></sup> is a much more complex system than is commonly
+observed at a national level. For example, in China, the firewall is
+simply IP blocking and some keyword dropping. (Stilgherrian, 2008) In
+Myanmar, they solved their communications issues by disconnecting the
+entire Internet. (Drash, 2007)
+</p>
+
+<p>
+The Iranians, however, had to take a middle ground. A simple firewall
+wouldn’t work, there was too much public attention on getting around
+it, and too many people inside desperate to get information out.
+Cutting off the Internet completely wouldn’t work, as there are
+businesses within Iran that would fail if their lines of communication
+were cut off; the most prominent of these is the oil industry.
+</p>
+
+<p>
+Therefore, the methods which they had to employ had to be more
+thorough than IP blocking and keyword filtering, without debilitating
+the economy. They decided on a multi-level system that used several
+redundant systems, and is astonishingly good at manipulating the data
+flow from and to Iran.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3e2cd6d" class="outline-4">
+<h4 id="org3e2cd6d">Monitoring</h4>
+<div class="outline-text-4" id="text-org3e2cd6d">
+
+<div class="figure">
+<p><a href="./assets/fig1.jpg"><img src="./assets/fig1.jpg" alt="fig1.jpg" /></a>
+</p>
+<p><span class="figure-number">Figure 1: </span>BRN Monitoring</p>
+</div>
+
+<p>
+Before examining the types of traffic manipulation in place, I feel it
+is important to discuss the Iranian government’s practices of
+information monitoring. It is not always necessary to change or block
+the flow of information; sometimes it is enough to gather information.
+This is commonly referred to as wiretapping, because it is essentially
+putting a tap in the middle of the communication, and listening to
+what is being transmitted.
+</p>
+
+<p>
+The Iranian government had been monitoring most international
+communication well before the election. The most commonly acknowledged
+form of monitoring is that done by the Iranian post office. However,
+there are other examples:
+</p>
+</div>
+<ul class="org-ul">
+<li><a id="org7e7baea"></a>Internet<br />
+<div class="outline-text-5" id="text-org7e7baea">
+<p>
+Iranian Internet traffic is superficially scanned for certain
+keywords. However there is no confirmation about what is done with the
+information obtained, nor are we entirely sure how thorough the
+traffic monitors are.
+</p>
+
+<p>
+It requires a great deal of manpower to thoroughly monitor
+communications, and it is unknown if the Iranian government has
+invested the required effort. Note that a lot of what is commonly
+referred to as Internet monitoring is actually manipulation, and is
+therefore covered in a different section.
+</p>
+</div>
+</li>
+<li><a id="org94575ac"></a>SMS<br />
+<div class="outline-text-5" id="text-org94575ac">
+<p>
+The monitoring of SMS<sup><a id="fnr.3" class="footref" href="#fn.3">3</a></sup> by the Iranian government has recently gotten a
+lot of attention. It is believed that this monitoring, combined with
+location tracking, has been used to arrest people who were sharing
+information about protests after the election. Additionally, the
+entire SMS system has been shut down and brought back several times
+since the elections, so even if it were secure to use, it would not be
+very reliable. (Kanalley, 2009) (Ghalam News, 2009) (Wire News
+Sources, 2009)
+</p>
+</div>
+</li>
+<li><a id="orga62a396"></a>Telephone<br />
+<div class="outline-text-5" id="text-orga62a396">
+<p>
+The land line<sup><a id="fnr.4" class="footref" href="#fn.4">4</a></sup> phones of Iran, like those in almost every other
+country, are capable of being monitored, and therefore most likely
+are. It is not recommended that any Iranian use their telephones for
+any purpose.
+</p>
+
+<p>
+Cell phones are probably also monitored. There are also some
+unconfirmed reports of the Iranian militia tracking protesters’
+physical location by their cell phones. We have no evidence, but it is
+highly likely.
+</p>
+</div>
+</li>
+</ul>
+</div>
+<div id="outline-container-org91ca92b" class="outline-4">
+<h4 id="org91ca92b">IP Blocking</h4>
+<div class="outline-text-4" id="text-org91ca92b">
+<p>
+The first method of traffic manipulation which the Iranian government employed was relatively simple.
+They dropped (stopped transmitting) any packets that were going to or coming from a flagged IP address. For
+example, the domain www.bbcpersian.com (IP address: 212.58.253.68) was blocked shortly after the election
+results were announced. Any traffic going to or from that IP would be ignored; it would appear to both sides as if
+the other did not exist. This is useful in blocking entire servers, such as websites that go against the Iranian
+government’s doctrine, or computers acting as proxies.
+</p>
+
+<div class="org-src-container">
+<label class="org-src-name"><span class="listing-number">Listing 1: </span>emsenn.com to facebook.com</label><pre class="src src-text">PING www.facebook.com (69.63.184.142) 56(84) bytes of data.
+64 bytes from www-10-03-ash1.facebook.com (69.63.814.142): icmp_seq=1 time=32.9
+64 bytes from www-10-03-ash1.facebook.com (69.63.814.142): icmp_seq=2 time=39.8
+64 bytes from www-10-03-ash1.facebook.com (69.63.814.142): icmp_seq=3 time=39.0
+64 bytes from www-10-03-ash1.facebook.com (69.63.814.142): icmp_seq=4 time=34.5
+--- www.facebook.com ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+Rtt min/avg/max/mdev = 32.975/36.606/39.830/2.906
+</pre>
+</div>
+
+<div class="org-src-container">
+<label class="org-src-name"><span class="listing-number">Listing 2: </span>Iranian server to facebook.com</label><pre class="src src-text">Iranian server:
+PING www.facebook.ccom (69.63.184.142) 56(84) bytes of data.
+--- www.facebook.com ping statistics ---
+4 packets transmitted, 0 received, 100% packet loss, time 3002ms
+</pre>
+</div>
+
+<p>
+The above is a pinging of the main Facebook server, www.facebook.com
+(IP address: 69.63.184.142), from my main server and a computer in
+Iran. As you can see, the ping from my server is successful and I
+receive a response from Facebook's server. This shows that the server
+is functional and able to communicate in both directions with my
+machine.
+</p>
+
+<p>
+However, the machine in Iran sees no response from the Facebook
+severs. To a computer inside Iran, it would appear that the Facebook
+server is nonoperational.
+</p>
+
+<p>
+What is odd is that when this ping was done, the domain name
+www.facebook.com still resolved to its IP address, 69.63.184.142. This
+is unusual because they could have also blocked the domain name from
+resolving, preventing any knowledge of the Facebook server from being
+obtained.
+</p>
+</div>
+<ul class="org-ul">
+<li><a id="orgc451e75"></a>What Gets Blocked<br />
+<div class="outline-text-5" id="text-orgc451e75">
+<p>
+It’s usually fairly hard to determine what will be blocked and what
+won’t be, though there are a few broad categories that usually get
+blocked. In addition, servers that are blocked are sometimes unblocked
+a few days later, only to be promptly blocked again. Currently the
+reason for this sporadic unblocking is unknown.
+</p>
+
+<p>
+Additionally, sites that you would think would be blocked are not, while those you sites that you wouldn't think of
+are.
+</p>
+</div>
+</li>
+<li><a id="orgc13748b"></a>BitTorrent<br />
+<div class="outline-text-5" id="text-orgc13748b">
+<p>
+BitTorrent filesharing, while peer-to-peer, relies on centralized
+servers to connect the peers. At a minimum, at least one linkage of
+peers must be made by the tracker, although from there the peers can
+connect by peer exchange. (One person sharing all his peers’ IPs with
+all other peers he is connected to). For this reason, many BitTorrent
+trackers have been blocked to prevent the sharing of information
+through this medium.
+</p>
+</div>
+</li>
+<li><a id="org1366325"></a>News<br />
+<div class="outline-text-5" id="text-org1366325">
+<p>
+Many foreign news agencies’ websites have been blocked. The stated
+reason for this is to prevent the Iranian people from being influenced
+by the Western media - which is, in some ways, correct. However due to
+the lack of impartiality and truthfulness from their own
+(government-operated) news outlets, the Iranian people were most
+likely not looking to be influenced, but merely learn what was
+happening in their own country.
+</p>
+
+<p>
+Additionally, they have been blocking Iranian news outlets that
+expressed moderate views, claiming that the moderate media was trying
+to corrupt the sanctity of the Islamic Republic.
+</p>
+</div>
+</li>
+<li><a id="orgd51cea7"></a>Blogs<br />
+<div class="outline-text-5" id="text-orgd51cea7">
+<p>
+Many blogs have been blocked by the Iranian firewall, mostly because
+they were sharing video, photographs, or opinions on the protests.
+This was, in the eyes of the Iranian government, not a good thing, as
+they were trying to prevent any knowledge of the protests from
+spreading, especially within their borders. The fact that many blogs
+were blocked also greatly diminished how much of the international
+support the Iranian people were able to see. Finally, blogs were
+blocked because many of them were sued to mirror tools which could be
+used to circumvent the firewall.
+</p>
+</div>
+</li>
+<li><a id="org79a0914"></a>Political Opposition<br />
+<div class="outline-text-5" id="text-org79a0914">
+<p>
+Those in Iranian politics who take a much more moderate stance than
+the incumbent leaders are also liable to be blocked within Iran. Due
+to previous harassments, many opposition leaders’ webservers are
+hosted outside of Iran. However that does not prevent them from being
+filtered.
+</p>
+</div>
+</li>
+<li><a id="org9daf7e6"></a>Circumvention Tools<br />
+<div class="outline-text-5" id="text-org9daf7e6">
+<p>
+Websites which explain how to circumvent the Iranian firewall are
+frequently blocked, making it much more difficult to get these tools
+into Iran. However, many other people have set up mirrors of the files
+and instructions, so blocking these tools has proved ineffective.
+</p>
+</div>
+</li>
+<li><a id="org4e96e86"></a>Proxy Servers<br />
+<div class="outline-text-5" id="text-org4e96e86">
+<p>
+Perhaps most rapidly, proxy servers are constantly being blocked by
+the Iranian firewall, as they provide a direct (if usually insecure)
+link to the outside world. Due to the speed with which they are being
+blocked, among other reasons, they are not currently recommended for
+use in Iran.
+</p>
+</div>
+</li>
+</ul>
+</div>
+<div id="outline-container-orgb61b144" class="outline-4">
+<h4 id="orgb61b144">Bandwidth Throttling</h4>
+<div class="outline-text-4" id="text-orgb61b144">
+
+<div class="figure">
+<p><a href="./assets/fig2.jpg"><img src="./assets/fig2.jpg" alt="fig2.jpg" /></a>
+</p>
+</div>
+
+<p>
+In addition to monitoring, there have also been strict limits on the
+amount of available bandwidth in Iran since the election. This limit
+is most likely artificially imposed as it limits the amount of traffic
+that must be monitored and manipulated. With less than normal traffic,
+the load on the manipulation servers is much lower. This enables the
+Iranian government to devote much greater attention to every piece of
+information they receive, resulting in much more thorough analysis;
+this in turn increases the risk to dissidents within Iran, and means
+that our countermeasures must be much more thorough. Unlike the Golden
+Shield Project in China, where the system is well established and also
+much less resource intensive due to the light nature of inspection,
+the Iranian firewall is very thorough and would be unable to function
+if the Iranian Internet were at full capacity (an estimated six
+gigabytes a second).
+</p>
+
+
+<div class="figure">
+<p><a href="./assets/fig3.jpg"><img src="./assets/fig3.jpg" alt="fig3.jpg" /></a>
+</p>
+</div>
+
+<p>
+The image above is an examination in the decrease or increase of
+traffic that the international Internet service providers who operate
+in Iran saw in the days after the election. The six providers are:
+</p>
+
+<ul class="org-ul">
+<li>TTNet (Turk Telecom)</li>
+<li>FLAG</li>
+<li>SingTel (Signapore telecom)</li>
+<li>PCCW</li>
+<li>Telia Sonera</li>
+<li>Telcom Italia</li>
+</ul>
+<p>
+On the chart above, the red lines represent traffic lost, while green
+represents traffic gained (and black represents minor changes.) What
+is unusual about the traffic flow is that while traffic to almost
+every other ISP lessened, TTNet and its subsequent connec connections
+tions saw a tremendous increase in traffic. While the exact reason for
+this is unknown, it can be e speculated that the traffic manipulation
+system installed on Turk Telecom’s connection is more sophisticated
+and most likely larger, meaning it could monitor a greater volume of
+traffic more successfully than the other providers.
+</p>
+</div>
+</div>
+<div id="outline-container-org77b5ff3" class="outline-4">
+<h4 id="org77b5ff3">Keyword Filtration</h4>
+<div class="outline-text-4" id="text-org77b5ff3">
+<p>
+WORD FILTRATION This is also another fairly simple type of filtration
+where the government drops any packets featuring certain keywords,
+such as protest, proxy, or mousavi. There are also rumors circulating
+that they block any information that transmits IP and ports in their
+standard form (such as 4.2.2.1:1338) is also blocked.
+</p>
+
+<p>
+Although Yahoo! Instant Messenger is now blocked, it was functional
+prior to the election, although there were keyword restrictions of the
+type above imposed on it. In addition, messages containing standard
+formed urls (such as <a href="http://www.google.com">http://www.google.com</a>) were blocked, though it
+was easy to circumvent by manipulating the text (such as
+www|||google|||com). Keyword filtration is still in use to some
+extent, but it is mostly inactive due to the high resource intensity
+and low effectiveness in stopping traffic. That said, keyword
+monitoring is still in effect; this is a simple way to flag
+dissidents.
+</p>
+</div>
+</div>
+<div id="outline-container-org3317af8" class="outline-4">
+<h4 id="org3317af8">Traffic Classification</h4>
+<div class="outline-text-4" id="text-org3317af8">
+<p>
+TRAFFIC CLASSIFICATION Traffic classification, also referred to as
+Quality of Service control (QoS) is the filtration and manipulation of
+information based by the transfer protocol<sup><a id="fnr.5" class="footref" href="#fn.5">5</a></sup> and port<sup><a id="fnr.6" class="footref" href="#fn.6">6</a></sup> it is transmitted
+on. For example, website (HTTP) traffic is typically run over the TCP
+protocol, on port 80. If one wished to slow down almost all website
+browsing. This can be employed to manipulate the protocols that
+dissidents are most likely used to view and receive information the
+Iranian government would rather they not. It would also appear that
+the degree to which they throttle traffic by QoS varies based on the
+time and day of the week. This is most likely to prevent too heavy of
+restrictions on normal business operations.
+</p>
+</div>
+<ul class="org-ul">
+<li><a id="orga28267d"></a>QoSed Services<br />
+<div class="outline-text-5" id="text-orga28267d">
+<p>
+The following is a list of the services we believe to have been
+manipulated based on port and protocol.
+</p>
+</div>
+<ul class="org-ul">
+<li><a id="org3ed354d"></a>HTTPS<br />
+<div class="outline-text-6" id="text-org3ed354d">
+<p>
+HTTPS (HTTP with encryption) is believed to have been throttled using
+QoS in Iran. The suspected reason for this is that many web-based
+email providers require HTTPS to log in. Therefore, by throttling
+HTTPS, Iranian access to email has been limited
+</p>
+</div>
+</li>
+<li><a id="orgff9632c"></a>SSH<br />
+<div class="outline-text-6" id="text-orgff9632c">
+<p>
+SSH, or Secure Shell, is commonly used to remotely access computers.
+Additionally, it can be used to “tunnel” a connection through. For
+both of these reasons, it is heavily throttled in Iran.
+</p>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="outline-container-org78926e7" class="outline-4">
+<h4 id="org78926e7">Shallow Packet Inspection</h4>
+<div class="outline-text-4" id="text-org78926e7">
+<p>
+Stateful packet inspection, also referred to as shallow packet
+inspection, is the lightest type of packet inspection. It is the
+examination of the header information of a packet; the information
+that identifies what type of information the packet contains. The
+header of a packet usually contains a few things, most importantly
+(for purposes of traffic manipulation) the protocol, options, and
+packet length. These values can be used to determine the alleged
+contents of a packet without much more inspection than QoS controls
+require, making them more efficient than heavier inspection while more
+thorough than QoS. This is currently the most widely used type of
+packet inspection in the Iran.
+</p>
+</div>
+<ul class="org-ul">
+<li><a id="org05daf10"></a>SSL<br />
+<div class="outline-text-5" id="text-org05daf10">
+<p>
+SSL<sup><a id="fnr.7" class="footref" href="#fn.7">7</a></sup> is the most notable type of traffic to be throttled and
+manipulated by this level of packet inspection. It does not matter
+what port SSL traffic is transmitted on, it will be manipulated and
+shaped anyway. This has heavily hurt the ability of many individuals
+and organizations to access the Internet in their favorite secure
+methods (such as HTTPS).
+</p>
+</div>
+</li>
+</ul>
+</div>
+<div id="outline-container-org431a259" class="outline-4">
+<h4 id="org431a259">Fingerprint Packet Inspection</h4>
+<div class="outline-text-4" id="text-org431a259">
+<p>
+Fingerprint packet inspection is the
+examination of how a packet is formed. Based on the packet length, and
+several other identifying features of a packet (ignoring the headers,
+which can be intentionally misleading) it is possible to determine
+what type of information a packet holds, still without having to
+deeply examine the packet. This is a fairly resource-intensive form of
+packet identification.
+</p>
+</div>
+</div>
+<div id="outline-container-orgeeb95a6" class="outline-4">
+<h4 id="orgeeb95a6">Deep Packet Inspection</h4>
+<div class="outline-text-4" id="text-orgeeb95a6">
+<p>
+True deep packet inspection is the thorough examination of a packet’s
+contents. This can be used to figure out more information about a
+packet than would be known by other filtering. Even if the contents
+are encrypted, it is possible to tell what type, generally, of
+information a packet contains. Combining this knowledge with the
+information gathered by fingerprinting and header inspection, it is
+possible to manipulate almost all known forms of Internet traffic.
+</p>
+</div>
+</div>
+<div id="outline-container-org683dd29" class="outline-4">
+<h4 id="org683dd29">What Else Is Possible</h4>
+<div class="outline-text-4" id="text-org683dd29">
+<p>
+We now have a decent grasp of the types of filtration employed in Iran
+at this point. In order to start working on a viable and long-term
+solution, we have to examine where things are going next. There are
+three major ways in which the Iranian firewall can be expanded beyond
+its current level.
+</p>
+</div>
+<ul class="org-ul">
+<li><a id="orgebcecd9"></a>Automation<br />
+<div class="outline-text-5" id="text-orgebcecd9">
+<p>
+The process of automating the traffic filtration and manipulation is a
+long one; it requires a lot of tinkering to be done properly.
+Automatically tagging traffic, however, reduces the human labor
+required to operate the firewall. The automation will not be
+dramatically noticeable at any single point, but will be a constantly
+increasing measure.
+</p>
+</div>
+</li>
+<li><a id="orgbcb685f"></a>Expansion<br />
+<div class="outline-text-5" id="text-orgbcb685f">
+<p>
+There are a few ways which the Iranian firewall is going to be
+expanded:
+</p>
+
+<ul class="org-ul">
+<li>Migration. The Iranian government is currently expected to move some
+of their filtration methods to the ISP level, from their current
+position at the international chokepoints. This is to reduce the
+burden on these chokepoints, enabling them to more thoroughly
+inspect the information they see.</li>
+<li>Labor. The amount of employees dedicated to Iranian network control
+is expected to grow as the Iranian firewall becomes more a permanent
+feature of the Iranian general infrastructure.</li>
+<li>Hardware. The amount of processing power the Iranian government has
+now is restrictive to the level of traffic manipulation they can
+implement. If they are able to purchase new hardware, it would
+eliminate both these issues, assuming they have the operators to
+manage the equipment.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgeac4aff"></a>Invisibility<br />
+<div class="outline-text-5" id="text-orgeac4aff">
+<p>
+Any solution which is able to be implemented without detection is an
+ideal solution. You cannot circumvent something if you are unaware of
+the circumvention taking place. However, due to the scale and
+aggressiveness of the Iranian firewall, any successful solution will
+mostly likely be visible.
+</p>
+</div>
+</li>
+</ul>
+</div>
+<div id="outline-container-org1e9a4cc" class="outline-4">
+<h4 id="org1e9a4cc">Summary</h4>
+<div class="outline-text-4" id="text-org1e9a4cc">
+<p>
+There is a very sophisticated traffic manipulation system in
+Iran currently, and its complexity is growing. It is much more
+thorough than any other national firewall to date, presenting many
+challenges which have never existed before. In order to develop a long
+term solution to the Iranian firewall, it is vital we understand these
+developments and risks. In doing so, we can thoroughly and correctly
+prepare our responses to ensure that the communication lines of the
+Iranian people remain open.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org339660d" class="outline-3">
+<h3 id="org339660d">Response</h3>
+<div class="outline-text-3" id="text-org339660d">
+<p>
+With all of those varied methods of traffic inspection possible, a
+single solution is not the correct response. There are methods we can
+work toward, but none are permanent, and even the longevity of a
+response is greatly variable. Therefore, it is best to not only
+consider and develop solutions for the current situation, but to
+predict where things are heading, and how to counteract the predicted
+changes.
+</p>
+</div>
+<div id="outline-container-orgbefe186" class="outline-4">
+<h4 id="orgbefe186">Determining Successful Responses</h4>
+<div class="outline-text-4" id="text-orgbefe186">
+<p>
+There are a few questions which I ask of all proposed suggestions for
+circumventing the Iranian firewall. Usually it works to weed out bad
+choices rather quickly; also, it helps see where existing products can
+be improved.
+</p>
+</div>
+<ul class="org-ul">
+<li><a id="org7232967"></a>How Resilient Is It To Countermeasures?<br />
+<div class="outline-text-5" id="text-org7232967">
+<p>
+Any tool must first be determined to be secure against being throttled
+by the methods already in place, as well as be somewhat resistant to
+new measures. This is not to say that a solution must be able to
+withstand targeted and long-term attacks to be considered viable; it
+must be able to withstand the collateral damage of general
+manipulation increases.
+</p>
+</div>
+</li>
+<li><a id="org26aca44"></a>How Secure Is It?<br />
+<div class="outline-text-5" id="text-org26aca44">
+<p>
+Assuming that the traffic is not easily manipulated, how secure is the
+information being transmitted? Unencrypted (plain) text is completely
+insecure. Anyone in the transmission path, from the origin to
+destination, can view the full contents of what you are transmitting.
+Obviously, encryption is necessary. The key to successful encryption
+is improving on the system’s weakest point.
+</p>
+</div>
+</li>
+<li><a id="orge0b4f83"></a>How Expensive Is It To Run?<br />
+<div class="outline-text-5" id="text-orge0b4f83">
+<p>
+Servers are expensive to operate. The monetary cost involved in any
+planned long-term measure should be carefully considered. Depending on
+the level of usage, costs could range anywhere from less than a
+hundred dollars a month to tens of thousands of dollars a week. These
+costs could prove prohibitive, which is why I tend to stay away from
+solutions requiring dedicated servers.
+</p>
+</div>
+</li>
+<li><a id="org8a3e683"></a>Is It Traceable?<br />
+<div class="outline-text-5" id="text-org8a3e683">
+<p>
+If the information being transmitted is tracked to the person using
+it, that is evidence against them. The activities which a solution are
+used for should not imply guilt. If a solution is used only to view
+illegal materials, than anyone using that tool can be assumed to be
+viewing illegal materials.
+</p>
+</div>
+</li>
+<li><a id="org03d0bb5"></a>How Easily Can It be Deployed<br />
+<div class="outline-text-5" id="text-org03d0bb5">
+<p>
+Many solutions require a lot of personal communication between the
+distributor and the recipient. The most ready example is the long
+route of communication from someone who set up a proxy server (Donor)
+to someone who needs it (Iranian):
+</p>
+
+<ol class="org-ol">
+<li>Donor creates proxy</li>
+<li>Donor gives credentials to Facilitator</li>
+<li>Iranian asks Facilitator for a proxy</li>
+<li>Facilitator gives Iranian a proxy</li>
+</ol>
+
+<p>
+There is an unsustainable amount of cooperation between Donor and
+Facilitator, and Facilitator and Iranian. Additionally, if the
+Facilitator is unable to complete the duties they have volunteered
+for, the system will fall apart. Generally the more coordination
+required for distribution, the less reliable the growth of a product
+can be.
+</p>
+</div>
+</li>
+<li><a id="org6720e92"></a>Would It Operate Securely With Full Disclosure?<br />
+<div class="outline-text-5" id="text-org6720e92">
+<p>
+This is not a black and white determining factor, but does help to
+determine a product’s estimated lifetime. It can be assumed that,
+eventually, a product will be cracked. The variables that determine
+the speed it takes are many, but it is usually a fairly quick process.
+Then there is the delay of reorganizing traffic manipulation to catch
+the new circumvention tool. Of course, the tool may not be throttled
+if it is broken; it may be allowed to operate without manipulation in
+order to allow continued monitoring. It is for this reason that the
+transmissions not only be difficult to detect, but secure even after
+they have been detected.
+</p>
+</div>
+</li>
+<li><a id="org8b3dc58"></a>How Easy Is It To Use?<br />
+<div class="outline-text-5" id="text-org8b3dc58">
+<p>
+While many of the people developing and testing tools to be employed
+in opening Iranian communication, the users (the Iranian people) may
+not be. Therefore, it is important that the burden placed on the
+client is relatively low.
+</p>
+</div>
+</li>
+<li><a id="orga2caf50"></a>Has It Been Tested Thoroughly<br />
+<div class="outline-text-5" id="text-orga2caf50">
+<p>
+Any solution intended to last must be aggressively attacked and put
+through simulations based on the knowledge we have of the Iranian
+firewall. This helps to ensure that a product will be able to survive
+the current levels of filters, even if it is discovered.
+</p>
+</div>
+</li>
+</ul>
+</div>
+<div id="outline-container-orgae0eebd" class="outline-4">
+<h4 id="orgae0eebd">Normal Usage</h4>
+<div class="outline-text-4" id="text-orgae0eebd">
+<p>
+This is a rundown of all the tools that allow a general connection to
+the Internet. These do not restrict the types of connections which can
+be used, meaning they are for all purposes.
+</p>
+</div>
+<ul class="org-ul">
+<li><a id="orgd3ccc43"></a>Single-hop Proxies<br />
+<div class="outline-text-5" id="text-orgd3ccc43">
+<p>
+A single-hop proxy is one which has a single intermediary connection
+between the origin and true destination. This enables them to be
+faster (usually) than multiple-hop proxies, at the cost of a great
+deal of security.
+</p>
+</div>
+</li>
+<li><a id="org0db9127"></a>HTTP Proxies<br />
+<div class="outline-text-5" id="text-org0db9127">
+<p>
+HTTP proxies are proven to be ineffective against the Iranian firewall
+at this time. Before explaining how they don’t work, their operations
+should be explained, briefly.
+</p>
+
+<ol class="org-ol">
+<li>Client connects to Proxy</li>
+<li>Proxy forwards traffic between Client and Destination</li>
+</ol>
+
+<p>
+The problem is that all parts of this are blatantly marked as being
+proxy traffic. The initial connection is broadcast in plain text, and
+easily identifiable. From then on, all traffic between the proxy and
+client is also plaintext, meaning that it can be intercepted and
+manipulated in all ways that are possible if no proxy were used. Note
+that in the beginning, when only IP blocking was employed, this was
+not the case, so with the extent of the firewall at that time, HTTP
+proxies were good enough.
+</p>
+</div>
+</li>
+<li><a id="orgb54c2e9"></a>Freegate<br />
+<div class="outline-text-5" id="text-orgb54c2e9">
+<p>
+FreeGate works by allowing a client to connect to the DynaWeb service,
+which is a closed system of proxies created by Dynamic Internet
+Technologies (DIT). (Dynamic Internet Technology) Currently, not too
+much is known about the inner workings of FreeGate, although there are
+some beliefs that as the Iranian firewall expands, FreeGate may not be
+able to remain operational.
+</p>
+</div>
+</li>
+<li><a id="orgd63fce0"></a>Psiphon<br />
+<div class="outline-text-5" id="text-orgd63fce0">
+<p>
+Psiphon works as a sort of HTTPS proxy, although instead of being
+publicly accessible, it requires the Donor getting the account
+credentials to Iranian. This increases the resource intensity of the
+product for mass distribution. Additionally, all Psiphon servers log
+the clients’ activities, reducing the security of the communication.
+Furthermore, due to the fact that SSL is highly throttled in Iran
+currently, that means that there is a high chance that Psiphon traffic
+is also manipulated. For this reason, it is believed that Psiphon is
+not a viable solution for mass distribution. However, if you have
+friends and family in Iran who want something a bit more useful than
+HTTP proxies, but have complaints about other solutions, it may work
+to temporarily keep them connected.
+</p>
+</div>
+</li>
+<li><a id="org8197b62"></a>Multi-hop Circuits<br />
+<div class="outline-text-5" id="text-org8197b62">
+<p>
+These are connections with two or more intermediate connections
+between the origin and the destination.
+</p>
+</div>
+</li>
+<li><a id="orge3c6166"></a>TOR<br />
+<div class="outline-text-5" id="text-orge3c6166">
+<p>
+Tor is a multiple-node proxy which focuses not only on keeping the
+information secure, but the users’ identities as well. It has a bit
+longer circuit than other multiple-node proxies, though they are
+special in the fact that they don’t require dedicated servers. Any
+home user, business, or other organization can run a Tor relay,
+helping to speed up the Tor network.
+</p>
+
+<p>
+While Tor is secure, it does have a few downsides. Most noticeably is
+the speed of the Tor network. It is very slow, which discourages
+Iranians from using it. There have also been complaints of Tor being
+difficult to install; however there is a Tor browser and IM bundle,
+which comes with an Internet browser and instant messaging client.
+</p>
+
+<p>
+If you are willing to make the sacrifice of speed for the security
+granted by Tor, it is one of the recommended tools to get around the
+Iranian firewall.
+</p>
+</div>
+</li>
+<li><a id="orgbb0dde4"></a>Haystack<br />
+<div class="outline-text-5" id="text-orgbb0dde4">
+<p>
+Haystack is a circuit proxy developed by Austin Heap and Daniel
+Colascione, specifically to operate from within Iran Due to concerns
+that information leaks may cause preemptive responses to the product,
+information is fairly scarce. However, there are some things that have
+been revealed. Haystack will be available to clients who run Windows,
+Mac, and Unix systems, and will work in a way similar to FreeGate (in
+what sense it is similar is not certain). (Heap, 2009)
+</p>
+
+<p>
+While the Haystack developers are maintaining a great deal of secrecy
+around the specific workings of the product, there are some things we
+have confirmed from the developers about how it will work. It will be
+a multiple-node circuit type of proxy; additionally, it is an
+obfuscating proxy, though what that specifically means is unclear.
+(Colascione, 2009).
+</p>
+</div>
+</li>
+<li><a id="org16b9ca7"></a>Summary<br />
+<div class="outline-text-5" id="text-org16b9ca7">
+<p>
+While there are a great number of tools currently in place to allow
+Iranians to communicate on the Internet, there are concerns of
+security with all solutions, and all solutions are temporary. As the
+Iranian firewall evolves, so will our usage of these tools, to enable
+us to keep Iranians online and communicating openly.
+</p>
+</div>
+</li>
+</ul>
+</div>
+<div id="outline-container-org31b4903" class="outline-4">
+<h4 id="org31b4903">Special Usage</h4>
+<div class="outline-text-4" id="text-org31b4903">
+<p>
+There are some tools that may be developed which are not intended to
+allow access to the entire Internet, but still allow people to
+communicate.
+</p>
+</div>
+<ul class="org-ul">
+<li><a id="org037f428"></a>Peer-to-Peer<br />
+<div class="outline-text-5" id="text-org037f428">
+<p>
+Peer-to-peer connections are a type of connection in which two users communicate without the need of a
+centralized server. Almost everything on the Internet relies on client-server connections, though peer-to-peer is
+increasingly being used. It is a viable way for communication because it is incredibly hard to completely block and
+does not require a single server to stay in service for the duration of the conflict. Unfortunately, almost all peer-to-
+peer solutions require a network that is separate from the general Internet, meaning that they would not allow
+dissidents to access their favorite websites.
+</p>
+</div>
+</li>
+<li><a id="orgf738854"></a>FreeNet<br />
+<div class="outline-text-5" id="text-orgf738854">
+<p>
+FreeNet allows the users to view (either in open or darknet methods) a completely peer-to-peer web. It
+has the benefit of being able to be a darknet, meaning no one who isn’t trusted to get on is even able to connect.
+However, this also greatly limits the content available on the darknet. Furthermore, adding content is a fairly
+complicated process.
+While FreeNet is a great system and currently in very active development, it is not quite ready for use in a
+situation like Iran.
+</p>
+</div>
+</li>
+<li><a id="org1322f2f"></a>GNUNet<br />
+<div class="outline-text-5" id="text-org1322f2f">
+<p>
+GNUnet is an anonymizing filesharing network that is entirely peer-to-peer. By treating all peers as relays
+for data transfer, information being accessed by a client is indistinguishable from information simply being routed
+through the peer. While fairly simple to use, GNUnet has a fairly small user-base, meaning that the content
+available, and the speed of downloading it, may not be too great.
+</p>
+</div>
+</li>
+<li><a id="org8a6dad7"></a>Summary<br />
+<div class="outline-text-5" id="text-org8a6dad7">
+<p>
+In handling the Iranian firewall’s current measures and expansion, there are a wide variety of options.
+However, at this time, none are ideal and all are able to be theoretically filtered without cutting all Internet. We
+do have several ways to keep the Iranian people communicating with the world and each other and are developing
+new and expanded communication methods.
+</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org45d667b" class="outline-3">
+<h3 id="org45d667b">Conclusion</h3>
+<div class="outline-text-3" id="text-org45d667b">
+<p>
+The Iranian firewall is a much more thorough method of communication filtration than has previously
+been seen on a national scale. It will be difficult to defeat, even temporarily, but not impossible. It will require a
+great deal of work, however, and developing and improving on existing tools, or even creating new tools. With a
+dedicated effort to circumvent it, the Iranian firewall will be routed around.
+</p>
+
+<blockquote>
+<p>
+“The Internet interprets censorship as damage and routes around it.” -
+John Gilmore, cofounder of the Electronic Freedom Foundation
+</p>
+</blockquote>
+</div>
+</div>
+</div>
+<div id="outline-container-org87da62a" class="outline-2">
+<h2 id="org87da62a">Supplements</h2>
+<div class="outline-text-2" id="text-org87da62a">
+</div>
+<div id="outline-container-orgefe7e1f" class="outline-3">
+<h3 id="orgefe7e1f">Works Cited</h3>
+<div class="outline-text-3" id="text-orgefe7e1f">
+<ul class="org-ul">
+<li>Colascione, D. (2009, July 10). Questions About Haystack. (Multiple,
+Interviewer)</li>
+<li>Cowie, J. (2009, June 14). Strange Changes in Iranian Transit.
+Retrieved July 10, 2009, from renesys|blog:
+<a href="http://asert.arbornetworks.com/2009/06/a-deeper-look-at-the-iranian-firewall/">http://asert.arbornetworks.com/2009/06/a-deeper-look-at-the-iranian-firewall/</a></li>
+<li>Drash, W. (2007, September 28). Internet cut in Myanmar. Retrieved
+July 10, 2009, from CNN.com:
+<a href="http://www.cnn.com/2007/WORLD/asiapcf/09/28/myanmar.dissidents/">http://www.cnn.com/2007/WORLD/asiapcf/09/28/myanmar.dissidents/</a></li>
+<li>Ghalam News. (2009, June 11). Retrieved July 10, 2009, from Ghalam
+News: <a href="http://www.ghalamnews.ir/news-20704.aspx">http://www.ghalamnews.ir/news-20704.aspx</a></li>
+<li>Heap, A. (2009, July 4). Haystack: Good Luck Finding That Needle.
+Retrieved July 11, 2009, from Austin Heap:
+<a href="http://blog.austinheap.com/2009/07/04/haystack-good-luck-finding-that-needle/">http://blog.austinheap.com/2009/07/04/haystack-good-luck-finding-that-needle/</a></li>
+<li>Kanalley, C. (2009, June 11). SMS system down in Iran just hours
+before election. Retrieved July 10, 2009, from breaking tweets:
+<a href="http://www.breakingtweets.com/2009/06/11/sms-system-down-in-iran-just-hours-before-election/">http://www.breakingtweets.com/2009/06/11/sms-system-down-in-iran-just-hours-before-election/</a></li>
+<li>Labovitz, C. (2009, June 18). A Deeper Look at The Iranian Firewall.
+Retrieved July 9, 2009, from Arbor Networks:
+<a href="http://asert.arbornetworks.com/2009/06/a-deeper-look-at-the-iranian-firewall/">http://asert.arbornetworks.com/2009/06/a-deeper-look-at-the-iranian-firewall/</a></li>
+<li>Nolte, H. (2009, July 3). #iranelection - Twitter topics &amp; historic
+events. Retrieved July 10, 2009, from examiner.com:
+<a href="http://www.examiner.com/x-6207-Using-Computers-Examiner~y2009m7d3-iranelection--amazing-Twitter-trending-topic-stats-and-historic-events-cited">http://www.examiner.com/x-6207-Using-Computers-Examiner~y2009m7d3-iranelection--amazing-Twitter-trending-topic-stats-and-historic-events-cited</a></li>
+<li>Stilgherrian. (2008, August 1). The Great Firewall of China.
+Retrieved July 10, 2009, from Stilgherrian:
+<a href="http://stilgherrian.com/politics/the-great-firewall-of-china-how-it-works-how-to-bypass-it/">http://stilgherrian.com/politics/the-great-firewall-of-china-how-it-works-how-to-bypass-it/</a></li>
+<li>Wire News Sources. (2009, July 2). Iran 'lifts block on SMS
+texting'. Retrieved July 10, 2009, from Herald de Paris:
+<a href="http://www.heralddeparis.com/iran-lifts-block-on-sms-texting/42694">http://www.heralddeparis.com/iran-lifts-block-on-sms-texting/42694</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara"><p class="footpara">
+IP address: a computer's address on the Internet, this is
+typically how other machines will refer to a computer online.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2">2</a></sup> <div class="footpara"><p class="footpara">
+Firewall: a system in place on a network used to block select
+traffic.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.3" class="footnum" href="#fnr.3">3</a></sup> <div class="footpara"><p class="footpara">
+Simple messaging system, also known as cellular text messaging.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.4" class="footnum" href="#fnr.4">4</a></sup> <div class="footpara"><p class="footpara">
+Land line, also known as stationary phones, are those wired
+into buildings and are not mobile.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.5" class="footnum" href="#fnr.5">5</a></sup> <div class="footpara"><p class="footpara">
+Protocol, standard by which information is transmitted
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.6" class="footnum" href="#fnr.6">6</a></sup> <div class="footpara"><p class="footpara">
+Port, the defining endpoint of a connection, which is tied to a
+specific server and protocol.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.7" class="footnum" href="#fnr.7">7</a></sup> <div class="footpara"><p class="footpara">
+A transfer protocol which provides encrypted communication.
+</p></div></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+<p class="date">Date: 2009-07-13</p>
+<p class="author">Author: Morgan Sennhauser, Project Coordinator, Sedazad</p>
+<p class="date">Created: 2019-06-07 Fri 20:08</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

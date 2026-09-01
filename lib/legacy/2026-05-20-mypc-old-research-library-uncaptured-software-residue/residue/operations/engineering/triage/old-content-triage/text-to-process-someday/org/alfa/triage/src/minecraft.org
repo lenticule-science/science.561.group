@@ -1,0 +1,8 @@
+#+SETUPFILE: ~/org/templates/setupfile0.org
+#+TITLE: My Minecraft Notes
+#+EXPORT_FILE_NAME: ../pub/minecraft
+#+INDEX: Minecraft!"My Minecraft Notes"
+#+INDEX: computer games!Minecraft!"My Minecraft Notes"
+* Introduction
+* My Minecraft Notes
+* Supplements

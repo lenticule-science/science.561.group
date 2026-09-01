@@ -1,0 +1,72 @@
+#+title: 2020-12-27
+#+ghe_schema: daily-record-0.1.1
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-27 Sun 08:06]
+#+roam_tags: daily-record
+
+#+name: definition
+This is some of what I (emsenn) experienced and wrote on [2020-12-27 Sun].
+
+#+toc: headlines 2
+
+* Activity Log                                                     :noexport:
+** [2020-12-27 Sun 13:37]
+   Taking a little break.
+** [2020-12-27 Sun 13:37]
+   Noticed a bug in the indentation of my [[file:../org_roam_daily_capture_templates.org][Org-roam daily capture templates]] for my activity log, fixing it now.
+* Journal                                                          :noexport:
+** [2020-12-27 Sun 08:55]
+
+   [[file:../ikmu.org][Ikmu]] was a real pest last night, waking me up for the morning at just past 0300h. Which ironically means I'm getting a late start to my morning. I feel like it's off-set all the recuperation I managed yesterday, sleeping in.
+** [2020-12-27 Sun 10:03]
+   Took a shower. Had a conversation with [[file:../theruran.org][@theruran]], first about [[file:../freeing_space.org][Freeing space]], the [[file:../dennis_schep.org][Dennis Schep]] article, and then about their [[file:../software.org][software]] choices, specifically about how they plan to [[file:../writing.org][write]] their upcoming paper/software. They're leaning heavily toward [[file:../racket.org][Racket]], which I think will let them appropriately produce the thing they're looking to make, but I don't think by any means it's the "right" choice, in the abstract: I think [[file:../emacs.org][Emacs]] and [[file:../org_mode.org][Org-mode]] get far closer. Our conversation, though, was less about "rightness" and more about how they're weighing the decision: are their critiques of Emacs valid? Are their benefits of Racket? So on. Part of their argument seems to be about how the [[file:../gnu_community.org][GNU community]] is toxic, which is very valid... but I haven't seen anything better from the [[file:../racket_community.org][Racket community]], it's just a different sort of pro-[[file:../collaboration.org][Collaboration]] attitude.
+
+   Still don't feel good, haven't made real plans for the day. I'd love to take a nap but at this point I'd have to wake up just in time for picking up from [[file:../weaver_st.org][Weaver St.]] and I don't wanna do that...
+
+   I'll probably end up vaguely tinkering with my [[file:../computer.org][computer]] the rest of the morning. I'm still trying to figure out how to refer to this kind of work. The [[file:../metaphor.org][metaphor]] of a [[file:../digital_garden.org][digital garden]] captures some of the intention and action, but not much of the content. On the plus side, I think I have my [[file:../org_roam_daily_capture_templates.org][Org-roam daily capture templates]] configured well enough to actually allow me to consistently update this [[file:../daily_record.org][daily record]]. Maybe today will be the first day I actually like, [[file:../computer_user.org][use]] the [[file:../tool.org][tool]] more than I build it.
+** [2020-12-27 Sun 13:27]
+   Didn't nap, did the [[file:../weaver_st.org][Weaver St.]] pickup, am now at my desktop... not doing much of anything. I think I want to write a letter introducing the new [[file:../website.org][Website]] to my [[file:../mailing_list.org][mailing list]], but I also don't feel like it's quite ready to show off! I think that's, in part, because so many of the [[file:../record.org][records]] are so poorly formed...
+
+   ...Actually that's not it. It's that so /few/ records are /well/-formed. In part that's because I haven't really spent much time in my [[file:../digital_garden.org][digital garden]] yet; like I said earlier, today is the first day I feel like I'm actually journalling with it.
+
+   Another problem is that I have, at this point, quite a bit of [[file:../technical_debt.org][technical debt]] has accrued: mis-named files, records that lack "necessary" boilerplate, and so on. At the moment this debt is also all invisible: there's no record of it. Often I don't notice it when I encounter it and when I do encounter it, I don't have the ability to stop and address it right then.
+
+   I... could sit here and head-on address these problems, but I really think things will be better-served if I just kind of use my record catalog as it occurs to me. So, that's what I'll do!
+
+   I'm going to take a slight break, fix some more [[file:../coffee.org][coffee]], but once I get that done I'll try and be consistent about using my daily activity log to record what it is I'm doing.
+** [2020-12-27 Sun 14:14]
+
+   Alright, I've prepped my coffee, and I'm back at my desk. [[file:../ikmu.org][Ikmu]] is taking up most of my chair, which doesn't make for the most comfortable environment.
+
+   So, one thing I think I want to do is figure out how I'd like to start recording future work I'd like myself to do in these records. Oh, a note: I've written before about how I was unsure what terms to use to talk about the various parts of my "digital garden," critiquing that term. I'm pretty well-settled on the term "record." I like words that have been in [[file:../english.org][English]] since at least [[file:../late_middle_english.org][Late Middle English]], which it has been, and I like its origins from [[file:../french.org][French]] as, vaguely, a thing to help one remember.
+
+   Today I've started using the term "records catalog" to refer to my collection of records, which I like too, since through most interfaces (Emacs, the Web,) I pick out a single record to work with at a time.
+
+   At this point, I'm so unfamiliar with Org-mode's task management systems, I guess my first step is to look online about what to do.
+** [2020-12-27 Sun 15:23]
+
+   In wanting to learn how to use TODO items and stuff, I'm now reading [[http://doc.norang.ca/org-mode.html][this documentation on Org-mode]] and thinking more broadly about what to put where in my records. Which seems... ambitious considering how badly formatted some are.
+
+   One thing that's been scratching at me is how to do time-tracking. I want to keep an eye on my time spent doing different things, so I can change them when it's sensible.
+
+   I like Bernt's approach here... but it's a bit hard to get an understanding of at a quick read, since there's so many moving parts. (It doesn't help that I'm /really/ tired.)
+
+   In fact, I'm going to take a break from this. Before I go, I did want to note that I plan on trying to break up the source from Groundhog Emacs into the records for its various components, such as moving my capture templates into those files.
+
+   Then I can use inclusion and Babel weaving to build the GHE record, with all its component parts.
+** [2020-12-27 Sun 19:23]
+
+   I took a nap, and while I feel physically better, my mood is just sour. I'm... so disappointed in the WebGAZ. Everyone seemed very excited to join, and there's some discussion happening in threads where I've manually tagged people, but the craft circles never got above 1 other person beside me, except the first two, and like, only a couple people introduced themselves. What set me off is that after I woke up from my nap, I saw Jude posting in the Fediverse that he had been playing Minetest... at home, rather than on the server that Jak is letting WebGAZ folk onto. And he asked if anyone would watch him stream, and Andrew said he would and it's like... cool to see this thing that the WebGAZ exists for being done through the Web like we're all anonymous strangers.
+
+   How am I supposed to build community with people who, even when given a group of like-minded folk engaged in similar work, keep posting about how alone they are on the Web? I've been complaining on the Fediverse about my feelings, but honestly I'm about at the point of like... I don't know. I have to get money to survive, and I seem decent at getting money by performing on the Web. And it's not like there's a better place to find community, I've tried locally.
+
+   But being a person on the Web is so draining. I feel like I put a lot into trying to bring these people together, and it accomplished nothing. If I'd been streaming on Twitch I'd have more followers and maybe a donation or two. That's just... so gross to think about.
+* Weather observations
+
+* Postings
+
+* Media log
+
+* Reposts
+

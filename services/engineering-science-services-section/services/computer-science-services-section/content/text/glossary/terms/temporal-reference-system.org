@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       aba44961-c408-40a4-a1f0-5c536eaecfb5
+:NODE-RELATIONS: (([[id:f78e463f-a513-4f82-9fee-5f9241232873][reference system]] . [[id:9b6932df-1549-4161-bb4b-3a2b2ff7d304][temporal sequence]]))
+:END:
+#+title: temporal reference system
+#+date: [2025-10-04 Sat 23:52]
+

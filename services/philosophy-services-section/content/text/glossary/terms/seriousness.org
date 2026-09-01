@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       f699d685-f17e-4060-a0ec-bdfc24fe52be
+:node-relations: (([[id:bee496e1-139b-4a7f-8a24-d4c14e6084c6][instantiates]] . [[id:b4ae66ad-8700-4af3-b995-17cfd8b74eb9][condition]]))
+:END:
+#+title: seriousness
+#+date: [2025-10-06 Mon 23:35]
+

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/pre-bilattice/content/bilattice/content/predication-fiber-algebra",
+  "title": "predication-fiber-algebra",
+  "description": "The bilattice held at a single predicate p: the pointwise twist product of a residuated lattice over the entity-pair index E x E, whose elements assign a twist-product value to each predication cell with predicate coordinate fixed at p. It is a bilattice refined by being indexed over E x E and fibered over one predicate.",
+  "allOf": [
+    { "$ref": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/pre-bilattice/content/bilattice" }
+  ],
+  "type": "object",
+  "required": ["base", "index", "predicate", "value"],
+  "properties": {
+    "base": { "const": "residuated-lattice", "description": "the fixed residuated lattice L whose twist product L^bowtie supplies the bilattice carrier" },
+    "index": { "const": "entity-pair", "description": "the index set E x E of subject-object pairs, E being the entity set" },
+    "predicate": { "const": "predicate", "description": "the predicate p whose values this fiber holds; the abstract algebra is the same for every p" },
+    "value": { "const": "function", "description": "an element is a function E x E -> L x L assigning v(s,o) in L^bowtie to each predication cell (s, p, o)" },
+    "pointwise": { "const": true, "description": "the bilattice operations meet_t, join_t, meet_k, join_k, ~ lift pointwise from L^bowtie, e.g. (v meet_k v')(s,o) := v(s,o) meet_k v'(s,o)" },
+    "distributive": { "type": "boolean", "description": "A_p is distributive whenever the base residuated lattice L is distributive" }
+  }
+}

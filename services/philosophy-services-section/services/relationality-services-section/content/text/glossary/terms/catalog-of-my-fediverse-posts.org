@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       c61f11cd-da42-48e1-a5fc-c183c360e131
+:END:
+#+title: Catalog of My Fediverse Posts
+#+date: [2025-07-28 Mon 22:32]
+
+This is a [[id:9c606291-7654-428d-8f3f-13f97cbcb41f][catalog]] of [[id:40cbaad9-af3c-4573-b356-ae116687e483][my]] [[id:e4ddac0c-3d82-4c17-8df7-b379643896fa][Fediverse posts]].

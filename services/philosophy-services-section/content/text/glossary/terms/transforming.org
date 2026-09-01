@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       93cd672e-4426-4aef-afe3-34061a030190
+:END:
+#+title: transforming
+#+date: [2025-08-31 Sun 08:25]
+

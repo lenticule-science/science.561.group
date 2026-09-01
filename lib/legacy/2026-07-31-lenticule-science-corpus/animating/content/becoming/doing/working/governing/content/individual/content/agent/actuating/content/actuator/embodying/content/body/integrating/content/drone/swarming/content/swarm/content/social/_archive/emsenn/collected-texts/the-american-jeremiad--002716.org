@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID:       4dd6894a-b344-4f0f-a6ba-3b70b572b6ad
+:instantiates: [[id:caed3b82-143c-4344-a2c2-03824a83969b][book]]
+:author:   [[id:3922f9fb-8ae0-4fb8-acf8-1f179065552c][Sacvan Bercovitch]]
+:public:   true
+:ROAM_REFS: [cite:@TheAmericanJeremiad]
+:END:
+#+title: The American Jeremiad
+#+date: [2025-09-28 Sun 19:49]
+
+* [[id:ed3a99f2-07af-4424-8cfa-4d1ce69d1b0e][code]]
+
+** [[id:42f66990-2e7d-4081-8f0e-7eb67b23e1fb][BibTex entry]]
+
+#+begin_src bibtex :canonical yes
+  @book{TheAmericanJeremiad,
+  author    = {Sacvan Bercovitch},
+  title     = {The American Jeremiad},
+  year      = {1978},
+  publisher = {University of Wisconsin Press},
+  address   = {Madison}
+}
+#+end_src

@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       dc582064-65be-4eba-a4b4-f42c3c91cbf3
+:public:   true
+:instantiates: [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]
+:author:   [[id:40cbaad9-af3c-4573-b356-ae116687e483][emsenn]]
+:date-created: [2025-07-20 Sun 17:17]
+:END:
+#+title: Testing GnoponEmacs' babble capture template
+#+date: [2025-07-20 Sun 17:17]
+
+This is actually a [[id:db6af486-8736-4c9d-9243-57d8607511c2][test babble]], produced via the relevant [[id:edc48bf0-336b-4b63-8505-a3730b328c9d][GnoponEmacs]] [[id:686d4e72-eb77-4ac7-b37a-2c7a7e0c0dc6][Org-roam capture template]]. Notably, the first thing produced that isn't handwritten since I picked [[id:6a3fc30f-fd91-4d01-b5bb-ef4f001d934a][Emacs]] back up a few days ago.

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       c45b4db8-b68c-4e9d-97fa-dc30e9ff7b11
+:END:
+#+title: stabilization
+#+date: [2025-09-19 Fri 20:05]
+

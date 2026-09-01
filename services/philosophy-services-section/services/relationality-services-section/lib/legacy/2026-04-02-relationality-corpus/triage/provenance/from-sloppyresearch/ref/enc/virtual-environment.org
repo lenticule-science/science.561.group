@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       d6db98dc-1126-40e7-8ddc-8b3897be5c0c
+:END:
+#+title: virtual environment
+#+date: [2025-08-26 Tue 17:13]
+A */virtual environment/* is an [[id:5030c027-88ba-45a4-8ddb-a09af57b93c5][environment]] that is [[id:fae94410-21d4-4f17-9123-0588e7d6afb5][constructed]] with [[id:c7e961f9-a517-4c62-8c25-80c3d4184273][digital computers]] or [[id:5fd154b5-9358-438e-9b93-8f19590bbe97][imagination]].

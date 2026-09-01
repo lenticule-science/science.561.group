@@ -1,0 +1,18 @@
+\subsubsection{All degrees}
+
+\begin{theorem}[Causal $H^n$ --- the cochain complex in every degree]\label{thm:causal-cohomology-n}\lean{Infomaterial.Relational.Spacetime.Causal.Cohomology.N.causal_cohomology_n}\leanok\uses{thm:causal-cohomology-h2}
+The all-degree capstone: a single coboundary $\delta$ with
+$\delta \circ \delta = 0$ in every degree, so
+$H^n = \ker\delta / \operatorname{im}\delta$ is well-defined for all $n$. The
+standard simplicial alternating-sum route needs machinery Infomaterial lacks; the
+incidence-algebra reading instead gives the cone-contraction recursion:
+a simplex is a chain, and
+$\delta\varphi(a\!\cdot\!\tau) =
+\varphi(\tau) - \delta(a\!\cdot\!\varphi)(\tau)$, with
+$(a\!\cdot\!\varphi)(l) = \varphi(a\!\cdot\! l)$. From it,
+$\delta\circ\delta = 0$ is induction on chain length. This subsumes the
+degreewise complex --- $H^1$ for the $\mathrm{cl\text{-}inv}$/chromatic
+obstruction (\cref{thm:causal-cochain-complex}) and $H^2$ for the exact
+symplectic form's ambient degree (\cref{thm:causal-cohomology-h2}) --- into
+one graded object $C^0 \to C^1 \to C^2 \to \cdots$.
+\end{theorem}

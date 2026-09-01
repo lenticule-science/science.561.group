@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "glossary/terms/game-state",
+  "title": "game-state",
+  "description": "The game state is the complete set of information describing the current situation of a game at a moment: whose turn it is, what resources each player holds, what has happened, what actions are available. Freeze the game and hand it to a stranger — the game state is everything they need to continue correctly.",
+  "type": "object",
+  "required": ["complete"],
+  "properties": {
+    "complete": {
+      "const": true,
+      "description": "The state suffices to continue play correctly; anything needed to resume that is not in the state is not yet part of the state."
+    },
+    "public": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Information visible to all players (the board position, the score)."
+    },
+    "private": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Information held by one player (a hand of cards, a planned strategy)."
+    },
+    "hidden": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Information hidden from all players (the undrawn deck's order). An empty private and hidden partition is a perfect-information game; otherwise imperfect information."
+    }
+  }
+}

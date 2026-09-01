@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       c6b43295-422c-4835-be91-09d60fb33e4a
+:ROAM_ALIASES: note-taking
+:END:
+#+title: taking notes
+#+date: [2025-08-25 Mon 19:36]
+

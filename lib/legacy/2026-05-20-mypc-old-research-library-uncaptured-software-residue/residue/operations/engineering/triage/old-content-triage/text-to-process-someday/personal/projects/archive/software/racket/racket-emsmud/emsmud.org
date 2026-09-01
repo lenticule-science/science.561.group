@@ -1,0 +1,305 @@
+#+title: emsMUD
+#+options: num:t
+My MUD is implemented in Racket, using qtMUD, a MUD engine I'm making. In qtMUD, each dimension is represented as one or more "universes." Continuing that metaphor, the code of my MUD is arranged below chronologically from the "Big Bang" (establishing the rules of physics) through the "start of history," when the MUD becomes accessible to outside clients and time begins to progress.
+
+This MUD is available as a [[https://code.cyberearth.systems/emsenn/emsmud][git repository]]
+#+toc: headlines 4 local
+* Requirements
+Being written in Racket, my MUD requires that: this code snippet is actually to specify what parts of the qtMUD library are used by the MUD.
+#+name: requirements-declaration
+#+begin_src racket
+(require "../qtmud/qtmud.rkt"
+         "../qtmud/components/animation.rkt"
+         "../qtmud/components/animation-for-mudsocket.rkt"
+         "../qtmud/components/areas.rkt"
+         "../qtmud/components/mudsocket.rkt")
+#+end_src
+* History
+** Creating & building the emsverse
+In the beginning, the =emsverse= is created, and =create-thing= is defined as a procedure for creating /things/ into that universe. Also, the logger is made and started running, so that Racket can report back what's happening inside the =emsverse=.
+#+name: creating-the-emsverse-declarations
+#+begin_src racket
+(define emsverse (create-universe "emsVerse"))
+(define create-thing (create-thing-creator-for-universe emsverse))
+(run-universe-logger (make-universe-logger emsverse))
+#+end_src
+
+*** Adding library procedures to the emsverse
+Once the =emsverse= has been built, we'll go ahead and add the procedures from two of the above library components to it: animation, which provides the mechanisms putting /things/ in "containers" and giving the container /things/ "contents". (/Container/ and /contents/ both being /qualities/ that a thing can possess.)
+
+Continuing to view the =emsverse= as a universe, this can be seen as kind of adding the basic rules of physics.
+#+name: adding-library-procedures-to-the-emsverse-declarations
+#+begin_src racket
+(add-animation-procedures-to-universe! emsverse)
+(add-area-procedures-to-universe! emsverse)
+#+end_src
+*** Setting specific procedures
+The library procedures added in the previous section provide some general procedures for handling "physics" within the =emsverse=. What follows are some procedures for setting procedures specific to the =emsverse=.
+**** Make MUDSocket connection message
+This procedure sets the message shown to folk when they connect to the MUDSocket server.
+#+name: set-make-mudsocket-connection-message-procedure-for-emsverse-declaration
+#+begin_src racket
+  (define mudsocket-connection-message
+    (string-join
+     '("Your connection to emsenn's dimension from ~a:~a has been accepted."
+       "Welcome."
+       ""
+       "Proceed intentionally, please:"
+       "what exists here was created by one person wishing to communicate"
+       "with others."
+       ""
+       "Interact with the universe by typing commands and pressing ENTER."
+       "Try getting started with the \"help\" command.")
+     "\n"))
+  (set-universe-procedure!
+   emsverse 'make-mudsocket-connection-message
+   (λ (connected-thing)
+     (format mudsocket-connection-message
+	     (thing-quality connected-thing 'mudsocket-ip)
+	     (thing-quality connected-thing 'mudsocket-port))))
+#+end_src
+**** Handle MUDSocket connection
+When a person connects to the MUDSocket, a new /thing/ is made to represent them inside the =emsverse=. The MUDSocket does some stuff to set up that /thing/: this procedure comes after that to change the /thing/ more.
+
+Namely, it adds some commands (look, move, and map) to the /thing/, and moves it into the lobby, an area of the =emsverse=.
+
+Two of the new commands, look and move, come from the Animation library component, while the third, map, is defined right in this declaration.
+#+name: set-handle-mudsocket-connection-procedure-for-emsverse-declaration
+#+begin_src racket
+  (set-universe-procedure!
+   emsverse 'handle-mudsocket-connection
+   (λ (logged-in-thing)
+     (add-keyvalues-to-thing-quality!
+      (list (cons "look" (make-look-mudsocket-command-for-thing logged-in-thing))
+	    (cons "move" (make-move-mudsocket-command-for-thing logged-in-thing))
+	    (cons "map" (λ (a) (add-string-to-thing-quality!
+				areas-ascii-map logged-in-thing
+				'mudsocket-output-buffer))))
+      logged-in-thing 'mudsocket-commands)
+     (add-element-to-thing-quality!
+      logged-in-thing lobby 'contents)))
+#+end_src
+**** Set MUDSocket help response
+This changes the text sent to folk when they use the =help= command.
+#+name: set-make-mudsocket-help-response-procedure-for-emsverse-declaration
+#+begin_src racket
+  (define help-response
+    (string-join
+     '("You're connected to emsenn's dimension, a virtual universe they created."
+       ""
+       "To interact, type commands and press ENTER."
+       ""
+       "A few useful commands:"
+       "- commands"
+       "  lists available commands"
+       "- look"
+       "  shows you where in universe you are"
+       "- move <exit>"
+       "  can move you to another area of the universe")
+     "\n"))
+  (set-universe-procedure!
+   emsverse 'make-mudsocket-help-response
+   (λ (helped-thing)
+   help-response))
+
+#+end_src
+** Creating & building areas of the emsverse
+*** Map
+The =emsverse= contains several /areas/, /things/ within the /universe/ that share several qualities, including:
+
+- an "area description," text that describes what someone in the area would see.
+- a list of "area exits," other places someone in the area could move to from there.
+
+The following block creates the areas, defines an =areas= list of them, and gives them all the /contents/ quality.
+#+name: creating-areas-declarations
+#+begin_src racket
+  (define lobby (create-thing "lobby"))
+  (define gardens-courtyard (create-thing "gardens"))
+  (define projects-hall (create-thing "projects"))
+  (define library-area (create-thing "library"))
+  (define makha-sa-garden (create-thing "Makȟá Šá Garden"))
+  (define qtmud-exhibit (create-thing "qtMUD"))
+  (define library-original-works-area (create-thing "library: original works"))
+  (define library-collection-area (create-thing "library: collection"))
+  (define areas (list lobby gardens-courtyard projects-hall
+		      library-area makha-sa-garden
+		      qtmud-exhibit library-original-works-area
+		      library-collection-area))
+  (map (λ (area)
+	 (set-thing-quality! area 'contents '() #t))
+       areas)
+#+end_src
+
+Here's an ASCII map of the =areas=, though direction on this map has no bearing on anything.
+#+name: areas-ascii-map-declaration
+#+begin_src racket
+  (define areas-ascii-map
+    (string-join
+     '("            (ma )-(mf ) (mB )"
+       "                    |  /"
+       "            (mb )-( m )-(me )"
+       "                    |"
+       "      ( p )-( l )-( g )"
+       "     /        |"
+       "( q )       ( L )-(LO )"
+       "           /"
+       "      (LC )"
+       ""
+       "l lobby       | L  library"
+       "g gardens     | LC collection"
+       "p projects    | LO original works"
+       "q qtmud       |"
+       "--------------+------------------"
+       "m  Makȟá Šá"
+       "mf flood g'dn"
+       "mB bar \""
+       "me emsenn's \""
+       "mb barber \""
+       "ma apple \"")
+     "\n"))
+#+end_src
+*** Building the lobby
+The lobby is the room folk get moved into when they first connect to the MUD and enter the =emsverse=.
+
+I really haven't decided how it should look, but it serves - for now - as the hub to other areas of the =emsverse=.
+#+name: building-the-lobby-declarations
+#+begin_src racket
+(set-thing-quality!
+ lobby 'area-description
+ "This is the lobby of emsenn's universe. It looks exactly how you might imagine such a place might look. There are several doors, conspicuously labeled."
+ #t)
+(set-thing-quality!
+ lobby 'area-exits
+ `(("gardens" . ,gardens-courtyard)
+   ("projects" . ,projects-hall)
+   ("library" . ,library-area))
+ #t)
+#+end_src
+*** Building the gardens
+The gardens are a collection of gardens - or, will be. Right now it's simply a courtyard that then leads to a bad representation of my real garden.
+**** Building the Gardens Courtyard
+This is the Gardens Courtyard. Right now there's not really much to it beyond an area description and exits. It serves as the hub between the various gardens - right now, that's just Makȟá Šá.
+#+name: building-the-gardens-courtyard-declarations
+#+begin_src racket
+  (set-thing-quality!
+   gardens-courtyard 'area-description
+   "This is large courtyard, paved with gray stone bricks, bounded by a tall wall of plastered stone. There are two open doors in at opposite points in the wall. One leads to the lobby, while the other leads to Makȟá Šá, a virtualization of emsenn's actual garden. The courtyard is not open to the air, but roofed by a stained glass dome, the colorful shards arranged without pattern."
+   #t)
+  (set-thing-quality!
+   gardens-courtyard 'area-exits
+   `(("makha-sa" . ,makha-sa-garden)
+     ("lobby" . ,lobby))
+   #t)
+#+end_src
+**** Building Makȟá Šá
+Makȟá Šá is my real-life garden. These areas represent its
+#+name: building-makha-sa-declarations
+#+begin_src racket
+(set-thing-quality!
+ makha-sa-garden 'area-description
+ "This is Makȟá Šá Garden, or at least, its representation within emsenn's universe. It's based on a real place, located in the settler-colony of Chapel Hill, within U.S. territory. The garden is oriented around a parking lot in its center. Right now, the garden is still being made."
+ #t)
+(set-thing-quality!
+ makha-sa-garden 'area-exits
+ `(("courtyard" . ,gardens-courtyard))
+ #t)
+#+end_src
+*** Building the Projects Hall
+#+name: building-the-projects-hall-declarations
+#+begin_src racket
+(set-thing-quality!
+ projects-hall 'area-description
+ "This is the Projects Hall, which provides access to various exhibits about projects emsenn is or has worked on. There are quite a few unlabeled doors that are boarded-up. Only two doors aren't covered: one leading to the lobby, and the other to the exhibit on qtMUD, a game engine."
+ #t)
+(set-thing-quality!
+ projects-hall 'area-exits
+ `(("qtmud" . ,qtmud-exhibit)
+   ("lobby" . ,lobby))
+ #t)
+#+end_src
+**** Building the qtMUD exhibit
+#+name: building-the-qtmud-exhibit-declarations
+#+begin_src racket
+(set-thing-quality!
+ qtmud-exhibit 'area-description
+ "This area of the universe holds a demonstration of the qtMUD engine, software for running virtual services. It is a large circular room, with a recessed area in the center. Near the exit is a small sign on a brass post that reads, \"Exhibit coming soon."
+ #t)
+(set-thing-quality!
+ qtmud-exhibit 'area-exits
+ `(("projects" . ,projects-hall))
+ #t)
+#+end_src
+*** Building the Library
+The library is available directly from the main lobby, and a representation of things I've created or collected that I can share.
+#+name: building-the-library-declarations
+#+begin_src racket
+(set-thing-quality!
+ library-area 'area-description
+ "This is the library within emsenn's universe. From this entry room, there are three doors. One leads to a collection of reviews about other people's writing, another leads to emsenn's original work, and the third leads to the lobby."
+ #t)
+(set-thing-quality!
+ library-area 'area-exits
+ `(("original" . ,library-original-works-area)
+   ("collection" . ,library-collection-area)
+   ("lobby" . ,lobby))
+ #t)
+#+end_src
+**** Building the Original Works Wing
+The Original Works Wing is where I present my original writing.
+#+name: building-the-original-works-wing-declarations
+#+begin_src racket
+(set-thing-quality!
+ library-original-works-area 'area-exits
+ `(("library" . ,library-area))
+ #t)
+#+end_src
+**** Building the collection area
+The Collections Wing is where I present stories or other things I've rendered through my MUD.
+#+name: building-the-collections-wing-declarations
+#+begin_src racket
+(set-thing-quality!
+ library-collection-area 'area-exits
+ `(("library" . library-area))
+ #t)
+#+end_src
+** Preparing for the start of time
+Before I start the =emsverse= running, I add the MUDSocket's recurring tick event to the universe's schedule, so that the universe is available through the MUDSocket.
+#+name: preparing-for-the-start-of-time-declarations
+#+begin_src racket
+(add-event-to-universe-schedule! (make-mudsocket-tick-event-for-universe emsverse) emsverse)
+#+end_src
+** Starting time
+This declaration starts the =emsverse= running, making it "tick" every fifth of a second, calling various procedures that were added to its schedule, which is how "time" is simulated in qtMUD.
+#+name: starting-time-declaration
+#+begin_src racket
+(define emsmud (run-universe emsverse))
+#+end_src
+* Complete Files                       :noexport:
+  :PROPERTIES:
+  :EXPORT_HUGO_SECTION: programming/qtmud/files/
+  :header-args: :noweb yes
+  :END:
+** emsmud.rkt
+#+name: emsmud.rkt
+#+begin_src racket :mkdirp yes :tangle ./emsmud.rkt
+#lang racket
+
+<<requirements-declaration>>
+<<creating-the-emsverse-declarations>>
+<<adding-library-procedures-to-the-emsverse-declarations>>
+<<set-make-mudsocket-connection-message-procedure-for-emsverse-declaration>>
+<<set-handle-mudsocket-connection-procedure-for-emsverse-declaration>>
+<<set-make-mudsocket-help-response-procedure-for-emsverse-declaration>>
+<<creating-areas-declarations>>
+<<areas-ascii-map-declaration>>
+<<building-the-lobby-declarations>>
+<<building-the-gardens-courtyard-declarations>>
+<<building-makha-sa-declarations>>
+<<building-the-projects-hall-declarations>>
+<<building-the-qtmud-exhibit-declarations>>
+<<building-the-library-declarations>>
+<<building-the-original-works-wing-declarations>>
+<<building-the-collections-wing-declarations>>
+<<preparing-for-the-start-of-time-declarations>>
+<<starting-time-declaration>>
+#+end_src

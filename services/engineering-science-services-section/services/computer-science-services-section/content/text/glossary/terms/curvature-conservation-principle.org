@@ -1,0 +1,90 @@
+:PROPERTIES:
+:ID:       ce55d5cb-98b0-42db-909d-f136d5864bda
+:node-relations: (([[id:2d79d4ba-8d36-4714-869c-081e8d40d24f][field]] . [[id:c1063ea5-c247-4529-b091-c20bf85b2ae4][mathematical physics]]) ([[id:bee496e1-139b-4a7f-8a24-d4c14e6084c6][instantiates]] . [[id:09871008-e878-4c03-b4ac-f3f9d4811e0b][principle]]) ([[id:2d79d4ba-8d36-4714-869c-081e8d40d24f][field]] . [[id:9509100b-546a-4dcc-a2f3-7bd4fd213e89][information theory]]) ([[id:2d79d4ba-8d36-4714-869c-081e8d40d24f][field]] . [[id:f97e50b5-3121-4a82-bb69-72cc73c1c384][general relativity]]) ([[id:2d79d4ba-8d36-4714-869c-081e8d40d24f][field]] . [[id:9dcf6cbc-2888-4d31-9015-1881777b23a6][quantum cosmology]]) ([[id:42cca9f1-8cae-4295-b494-f39329aa78b8][domain]] . [[id:8669c57a-f67e-4325-bb8f-90d9fddadcb4][Fisher-Rao manifold]]) ([[id:fc7d1ea7-e967-46b9-9fdf-1b15cbba3b0f][deriving]] . [[id:4d957afc-08c5-486e-9fc9-685f15741cc5][Theorem of Information-Theoretic Stability as Reward Function]]))
+:END:
+#+title: Curvature Conservation Principle
+#+date: [2025-10-11 Sat 15:13]
+
+* Abstract
+We show that the Fisher–information geometry underlying divergence minimization obeys a curvature conservation law across coupled systems.  
+For any collection of informational manifolds related by mutual-information–preserving maps, the sum of their Ricci curvatures equals the Laplacian of the total stability functional previously defined in Senn (2025a).  
+This result, derived under standard smoothness and bounded-entropy assumptions, establishes a general constraint linking local learning dynamics to global geometric invariants without requiring physical or semantic interpretation.
+
+* 1. Introduction
+Information geometry relates the curvature of probability manifolds to statistical inference (Amari 2016).  
+Systems that minimize divergence between successive distributions trace geodesics under the Fisher metric.  
+Senn (2025a) defined a *stability functional*
+\[
+R_s(t) = -\frac{1}{\delta t}\, D_{\mathrm{KL}}(p_{t+\delta}||p_t),
+\]
+whose maximization describes local divergence minimization.  
+Here we show that when multiple such systems are coupled through mutual information, the Ricci curvature of their respective Fisher manifolds satisfies a conservation law linking geometry and stability.
+
+* 2. Preliminaries
+
+** 2.1 Informational Manifolds
+Let each system \(i\) be represented by a Riemannian manifold \((\mathcal{P}_i, g^{(i)})\), where \(g^{(i)}\) is the Fisher–Rao metric
+\[
+g^{(i)}_{ab} = \mathbb{E}_{p_i}\!\left[\partial_a \log p_i \, \partial_b \log p_i \right].
+\]
+Assume each \(p_i(x,t)\) is smooth with finite entropy \(H_i(t)\).
+
+** 2.2 Coupling Maps
+Two systems \(i,j\) are *informationally coupled* if there exists a smooth map
+\[
+\Phi_{ij}: (\mathcal{P}_i, g^{(i)}) \to (\mathcal{P}_j, g^{(j)})
+\]
+satisfying
+\[
+I(i;j) = I(\Phi_{ij}(p_i); p_j),
+\]
+up to small curvature correction \(\kappa_{ij}\).
+
+* 3. Curvature–Stability Relation
+
+** 3.1 Local Relation
+For each manifold, the Ricci curvature satisfies
+\[
+\operatorname{Ric}(g^{(i)})_{ab}
+  = -\,\nabla_a\nabla_b \log p_i(x,t)
+  + \mathcal{O}(\partial^2 D_{\mathrm{KL}}),
+\]
+so its scalar trace approximates the Laplacian of divergence along the manifold (Amari 2016; Ay et al. 2017).
+
+** 3.2 Conservation Lemma
+Let the total stability functional of \(N\) coupled systems be
+\[
+R_s^{\mathrm{tot}} = \sum_{i=1}^N R_s^{(i)}.
+\]
+Assuming bounded entropy and differentiable couplings \(\Phi_{ij}\), the following holds:
+\[
+\boxed{
+\sum_{i=1}^N \operatorname{Ric}(g^{(i)}) = \nabla^2 R_s^{\mathrm{tot}}.
+}
+\]
+*Proof sketch.*  
+Starting from the Bianchi identity \(\nabla^\mu G_{\mu\nu}=0\) on each manifold and substituting the Fisher metric’s expression for the information potential \(\psi_i = -\log p_i\), we obtain
+\[
+\nabla^2 \psi_i = \operatorname{Tr}\operatorname{Ric}(g^{(i)}).
+\]
+Since \(R_s^{(i)} = -\partial_t D_{\mathrm{KL}}(p_{t+\delta}||p_t)\)
+depends on \(\nabla^2\psi_i\) through \(\partial_t g^{(i)}_{ab}\),
+summing over coupled manifolds and using \(\sum_i\nabla^\mu G_{\mu\nu}^{(i)}=0\)
+yields the stated conservation law.
+
+* 4. Consequences
+1. **Geometric invariance.**  
+   Divergence minimization across coupled information manifolds preserves the total informational curvature.
+2. **Bounded stability.**  
+   Local increases in \(R_s^{(i)}\) require compensating decreases in curvature elsewhere, ensuring finite total informational variance.
+3. **Model scope.**  
+   The result applies to any differentiable system modeled by Fisher geometry—statistical, algorithmic, biological, or physical—without further assumption.
+
+* 5. Conclusion
+Under general information-geometric conditions, the total Ricci curvature of coupled Fisher manifolds equals the Laplacian of the joint stability functional.  
+This curvature conservation principle provides a minimal geometric constraint governing divergence-minimizing dynamics across heterogeneous systems, linking local learning behavior to a global invariant of informational geometry.
+
+* References
+- Amari, S. (2016). *Information Geometry and Its Applications.* Springer.  
+- Ay, N., Jost, J., Lê, H. V., & Schwachhöfer, L. (2017). *Information Geometry.* Springer.  
+- Senn, E. (2025a). *Information-Theoretic Stability as a Reward Function.* arXiv:math.IT.

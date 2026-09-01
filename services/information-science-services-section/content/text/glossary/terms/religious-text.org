@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       ad9b3afb-460c-4664-8a04-1f6d93ef5cd9
+:ROAM_ALIASES: scriptures scripture "religious texts"
+:form:     [[id:80ecba92-ca84-4b32-99ae-44d446b24350][text]]
+:END:
+#+title: religious text
+#+date: [2025-08-27 Wed 07:54]
+

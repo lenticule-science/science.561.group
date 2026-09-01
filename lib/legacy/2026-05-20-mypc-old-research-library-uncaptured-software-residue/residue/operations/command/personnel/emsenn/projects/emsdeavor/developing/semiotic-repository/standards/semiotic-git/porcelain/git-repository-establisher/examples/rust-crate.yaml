@@ -1,0 +1,26 @@
+template: rust-crate
+output_path: ./code/my-rust-crate
+
+project:
+  name: My Rust Crate
+  description: Example Rust crate scaffold.
+  author: Your Name
+  contact_email: you@example.com
+  organization: ""
+
+github:
+  owner: your-org
+  repo: my-rust-crate
+  default_branch: main
+  include_codeowners: true
+  include_funding: false
+  badges:
+    tags: false
+
+license:
+  id: Apache-2.0
+
+metadata:
+  created: 2025-01-01
+  status: prototype
+  tags: [rust, crate]

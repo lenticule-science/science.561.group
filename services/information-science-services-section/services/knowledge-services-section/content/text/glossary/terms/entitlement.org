@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       bc49235c-12a6-4a0e-9cc9-b74cc00ae84c
+:END:
+#+title: entitlement
+#+date: [2025-08-29 Fri 10:53]
+

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       6110007b-62a9-4a28-8a26-b70e24a10ba8
+:END:
+#+title: Greengrass
+#+date: [2025-09-05 Fri 20:32]
+

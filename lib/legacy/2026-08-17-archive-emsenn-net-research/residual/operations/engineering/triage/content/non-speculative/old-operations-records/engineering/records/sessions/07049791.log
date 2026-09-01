@@ -1,0 +1,17 @@
+Both files working. Here's what was built:
+
+**`HEARTBEAT.md`** — 8 checks across 3 intervals:
+- **Every 6h**: Failed sessions (high), stale plans (medium)
+- **Every 24h**: Record hygiene, instinct confidence review, knowledge graph regeneration
+- **Weekly**: Weekly review, instinct pruning, library structural health
+
+Each check has: what to check, what to do on failure, priority level.
+
+**`heartbeat-runner.js`** — ~200 lines, parses HEARTBEAT.md and manages execution:
+- Parses H2 headings as interval groups, H3 as check names, bullet fields for check/onFailure/priority
+- Tracks last-run timestamps in `heartbeat-state.json`
+- Extracts `node tool.js` commands and runs them directly via `execSync`
+- Dispatches non-tool checks via `mash-engine start`
+- Sorts due checks by priority (high > medium > low)
+- Flags: `--dry-run` (show without executing), `--force` (ignore schedule), `--json` (structured output)
+- Can be called from the daemon world-tick

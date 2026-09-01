@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       e5248432-6d1e-436e-9bdc-50fe0fcd3fe6
+:public:   true
+:form:     [[id:1f810c64-c53a-4e7e-8d9a-1a93dfbb1b7a][structure]]
+:END:
+#+title: thing
+#+date [2025-08-12 Tue 07:04]
+#+index: thing

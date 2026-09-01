@@ -1,0 +1,65 @@
+---
+
+title: Markov Dynamics Simulation
+aliases:
+  - Markov Dynamics Simulation
+  - markov dynamics simulation
+date-created: "2026-03-04T00:00:00"
+keywords:
+  - simulation
+  - markov
+  - kernel
+depends_on:
+  - theorem/external/relational-markov-dynamics
+type: specification
+description: Specification for simulating Markov dynamics with kernel iteration, entropy monitoring, mixing tests, and detailed balance verification.
+target-discipline: mathematics
+triage-status: promotable
+---
+
+
+# Specification (Markov Dynamics Simulation)
+
+Implement the transition kernel, entropy, and mixing behaviour from
+**Theorem (Relational Markov Dynamics)** on an explicit state space (finite or
+symbolically represented).
+
+## State representation
+
+- **Kernel operator `K`.**  
+  Doubly stochastic matrix (or symbolic operator) approximating
+  `ObservationKernel`.  Rows/columns index fixed invariant states.
+- **Stationary vector `π`.**  
+  Estimate of `FixedKernel`, updated via power iteration.
+- **Entropy tracker.**  
+  Scalar sequence `{H_t}` computed from `π K^t` to observe monotonicity.
+
+## Inputs
+
+1. Initial distribution `π_0` and kernel `K` (obtained from flow measurements).
+2. Desired tolerance `ε` for convergence of `π`.
+3. Maximum iterations `T`.
+
+## Update procedure
+
+1. **Stationary iteration.**  
+   Repeatedly set `π_{t+1} = π_t K`.  Stop when `||π_{t+1} - π_t||_1 < ε` or the
+   symbolic recurrence stabilizes.
+2. **Entropy measurement.**  
+   For each `t`, compute `H_t = -∑ π_t(i) log π_t(i)` and verify non-decrease.
+3. **Mixing test.**  
+   Evaluate total variation distance between distributions obtained from
+   different starting states to ensure decay toward zero.
+4. **Detailed balance check.**  
+   Confirm `π_i K_{ij} ≈ π_j K_{ji}` for all `(i,j)` to match the act witness.
+
+## Invariants
+
+- Rows/columns of `K` must sum to 1; deviations indicate inconsistent flows.
+- Entropy sequence should stabilise; decreasing entropy flags numerical issues.
+- Detailed-balance residual must stay below a user-configured threshold.
+
+## Outputs
+
+- Approximated stationary distribution `π`.
+- Logs for entropy trajectory, mixing rates, and balance residuals.

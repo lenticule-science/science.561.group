@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       cf8fe837-d19e-42aa-a448-24ccaa3d15fe
+:END:
+#+title: computer mainframe model
+#+date: [2025-08-29 Fri 20:55]
+

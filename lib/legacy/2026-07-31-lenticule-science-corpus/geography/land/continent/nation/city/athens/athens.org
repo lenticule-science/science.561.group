@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       fc575e55-5f61-4139-932f-bd76871d000d
+:public:   true
+:instantiates: [[id:ba952b7a-467a-43e3-bcbe-b622d8b20459][city]]
+:field:    [[id:e39947c4-1bd9-44d0-bfb5-3e2bef417065][Earth]]
+:END:
+#+title: Athens
+#+date: [2025-09-13 Sat 12:14]
+#+index: Athens

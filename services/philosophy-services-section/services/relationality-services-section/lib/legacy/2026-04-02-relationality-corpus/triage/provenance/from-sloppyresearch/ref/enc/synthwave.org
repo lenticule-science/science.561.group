@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       05f4d7ef-def5-47a7-bc35-f34d0d09c081
+:public:   true
+:form:     [[id:2d77e9d7-6819-4cc8-9189-a81b5cff3d92][music genre]]
+:END:
+#+title: synthwave
+#+date: [2025-07-22 Tue 01:01]
+#+index: synthwave
+
+synthwave is a [[id:2d77e9d7-6819-4cc8-9189-a81b5cff3d92][music genre]].

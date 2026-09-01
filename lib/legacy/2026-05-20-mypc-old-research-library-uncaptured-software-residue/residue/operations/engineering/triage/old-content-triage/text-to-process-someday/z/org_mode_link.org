@@ -1,0 +1,64 @@
+#+title: Org-mode link
+#+begin_head
+#+ghe_schema: term-0.1.3
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-30 Wed 09:52]
+#+roam_alias: "Org-mode links"
+#+roam_tags: term
+#+end_head
+
+#+name: org-mode-link-definition
+An */[[file:org_mode_link.org][Org-mode link]]/* is a [[file:hypertext.org][hypertext]] reference to another location within a [[file:computer_file.org][computer file]].
+
+#+toc: headlines 2
+
+* Introduction
+
+  This /record/ is some of what I (emsenn) know about /Org-mode links/.
+
+* Org-mode links
+
+  #+toc: headlines 2 local
+  
+** Org-mode links configuration
+
+*** Global bindings
+  
+    #+name: org-mode-links-global-bindings-elisp
+    #+caption: The /Emacs bindings/ I add for handling /Org-mode links/.
+    #+begin_src
+      ("C-c l" . org-store-link)
+      ("C-c t" . org-toggle-link-display)
+    #+end_src
+** Use
+*** Key Sequences
+**** Structure movement
+     #+name: org-mode-links-structure-movement-key-sequences-table
+     #+caption: A /table/ describing the /key sequences/ I use to move around with /Org-mode links/.
+     | Key sequence  | Command               | Description                               |
+     |---------------+-----------------------+-------------------------------------------|
+     | =C-c C-o=     | =(org-open-at-point)= | *Open* the link under point               |
+     | =C-c C-x C-n= | =(org-next-link)=     | Move to the *next* link in the buffer     |
+     | =C-c C-x C-p= | =(org-previous-link)= | Move to the *previous* link in the buffer |
+**** Structure editing    
+     #+name: org-mode-links-structure-editing-key-sequences-table
+     #+caption: A /table/ describing the /key sequences/ I use to edit /Org-mode links/.
+     | Key sequence | Command             | Description                                                                                                          |
+     |--------------+---------------------+----------------------------------------------------------------------------------------------------------------------|
+     | =C-c C-l=    | =(org-insert-link)= | Pulls up the interface to insert a link (either typed or selected from the link "ring", or edit the link under point |
+     | =C-c l=      | =(org-store-link)=  | Saves a link in in the link "ring"                                                                                   |
+  
+* Supplements
+** Record history
+   :PROPERTIES:
+   :CUSTOM_ID: record-history
+   :END:
+   :LOGBOOK:
+   - Note taken on [2020-12-31 Thu 12:53] \\
+     Added some basic structure to the record.
+   - Note taken on [2020-12-30 Wed 09:52] \\
+      Created from [[help:org-catch-invisible-edits]]
+
+      
+   :END:

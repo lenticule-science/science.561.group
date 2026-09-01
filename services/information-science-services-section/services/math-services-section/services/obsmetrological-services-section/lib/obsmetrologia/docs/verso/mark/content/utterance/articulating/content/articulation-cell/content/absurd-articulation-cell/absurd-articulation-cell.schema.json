@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mark/content/utterance/articulating/content/articulation-cell/content/absurd-articulation-cell",
+  "title": "absurd-articulation-cell",
+  "description": "The initial corner of the articulation-cell partition - neither side articulated (no, no), told none. The claim holding only because nothing constrains it; the seed presentation of articulating's codomain, from which potential, active, and stable are reached.",
+  "allOf": [
+    { "$ref": "mark/content/utterance/articulating/content/articulation-cell" }
+  ],
+  "type": "object",
+  "required": ["token", "claim"],
+  "properties": {
+    "token": { "const": false, "description": "the identity-carrying token side is not yet articulated" },
+    "claim": { "const": false, "description": "the content-carrying claim side is not yet articulated" }
+  }
+}

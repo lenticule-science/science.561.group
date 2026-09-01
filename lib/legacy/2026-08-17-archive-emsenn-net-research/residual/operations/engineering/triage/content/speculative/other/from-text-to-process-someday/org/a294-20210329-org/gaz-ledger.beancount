@@ -1,0 +1,17 @@
+option "title" "GAZ Ledger"
+option "operating_currency" "BANANO"
+option "name_income" "Revenue"
+* 2021
+** 2021-03
+*** 201-03-14
+**** 2021-03-14 Account Changes
+2021-03-14 open Assets:Discord:Tipbot:BANANO
+2021-03-14 open Revenue:Funding:Internal:Emsenn
+**** 2021-03-14 Transactions
+2021-03-14 * "emsenn" "Deposited 75 BANANO"
+  Revenue:Funding:Internal:Emsenn                       -75 BANANO {0.0126 USD}
+  Assets:Discord:Tipbot:BANANO                           75 BANANO {0.0126 USD}
+*** 2021-03-15
+2021-03-15 * "emsenn" "Deposited 500 BANANO"
+  Revenue:Funding:Internal:Emsenn                      -500 BANANO {0.008 USD}
+  Assets:Discord:Tipbot:BANANO                          500 BANANO {0.008 USD}

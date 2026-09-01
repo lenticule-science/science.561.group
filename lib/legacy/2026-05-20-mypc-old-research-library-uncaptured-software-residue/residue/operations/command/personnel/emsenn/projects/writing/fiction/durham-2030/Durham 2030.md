@@ -1,0 +1,24 @@
+---
+title: Definitions
+date-created: "2026-03-04T00:00:00"
+dg-publish: true
+---
+
+***Durham 2030*** is a (type:: [[speculative fiction setting]]) representing an [[imaginging]] of [[Durham]] in the year [[2030]]. Written in [[Winter 2023]], the fiction assumes that [[TESCREAL]] ideology has reshaped local settlements into [[technofascist]] enclaves known as [[arcologies]].
+
+This page serves as an overview of the fiction.
+
+## Definitions
+```dataview
+table definition
+where fiction = [[Durham 2030]] AND
+  type = [[definition]]
+```
+
+## Writing
+```dataview
+table
+where type = [[essay]] OR
+  type = [[narrative essay]]
+where fiction = [[Durham 2030]]
+```

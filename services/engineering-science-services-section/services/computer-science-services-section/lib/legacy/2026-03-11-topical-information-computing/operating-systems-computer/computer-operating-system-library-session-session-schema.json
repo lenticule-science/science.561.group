@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/system/library/operating-system/library/computer-operating-system/library/session/session.schema.json",
+  "title": "Session",
+  "description": "JSON Schema for a session — a temporally-ordered set of turns conducted by one character against one inference model in one connected run. Identity is the session-id (a kebab-case name). Specializes thing via allOf with cells naming the character running the session and the inference-model the session runs against. The ordered sequence of turns lives as EAVT cell-records in the session-instance's jsonl, not as a field on this record.",
+  "allOf": [{ "$ref": "https://research-notes.561.group/hacking/library/predication-notes/object/library/thing/thing.schema.json" }],
+  "type": "object",
+  "required": ["name"],
+  "properties": {
+    "character": {
+      "description": "The slug of the character conducting the session. References doing/governing/characters/<character>/.",
+      "$dynamicRef": "#name-shape"
+    },
+    "inference-model": {
+      "description": "The slug or version-string of the inference-model the session runs against (e.g., claude-opus-4-7).",
+      "type": "string",
+      "minLength": 1
+    },
+    "started-at": {
+      "description": "ISO-8601 timestamp when the session opened. Optional at the schema layer; the canonical record is the EAVT row whose `a` is `opening-a-session` in the session's jsonl.",
+      "type": "string",
+      "format": "date-time"
+    },
+    "ended-at": {
+      "description": "ISO-8601 timestamp when the session closed. Optional; absence means the session is still open.",
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

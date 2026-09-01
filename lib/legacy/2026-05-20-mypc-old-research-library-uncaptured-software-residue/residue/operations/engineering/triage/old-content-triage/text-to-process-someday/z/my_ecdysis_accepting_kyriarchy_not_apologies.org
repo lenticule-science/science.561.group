@@ -1,0 +1,67 @@
+#+title: My Ecdysis: "Accepting Kyriarchy, Not Apologies"
+#+begin_head
+#+ghe_schema: term-0.1.3
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-29 Tue 18:58]
+#+roam_key: http://myecdysis.blogspot.com/2008/04/accepting-kyriarchy-not-apologies.html
+#+roam_tags: term
+#+end_head
+
+#+name: definition
+*/[[file:my_ecdysis_accepting_kyriarchy_not_apologies.org]["Accepting Kyriarchy, Not Apologies"]]/* is an article from the [[file:blog.org][blog]] [[file:my_ecdysis.org][My Ecdysis]] explaining the author's [[file:relationships.org][relationship]] to the term /[[file:kyriarchy.org][kyriarchy]]/.
+#+toc: headlines 2
+* Introduction
+* My Ecdysis: "Accepting Kyriarchy, Not Apologies"
+
+** Text Capture                                                    :noexport:
+
+   In my last post, I actually used the word patriarchy.
+
+[spit]
+
+Ok, now I feel better.  Let me introduce what I really mean when I talk oppression: kyriarchy.
+
+Kyr-whhaaaa?
+
+A few years ago, I studied under a radical feminist theologian Elisabeth Schussler Fiorenza who does pretty amazing pioneering week in feminist theology. (Let me say now, if you want to make your head explode with inspiring feminist discourse, dip your toes in feminism and liberation theology...holy schnikes, hold on to your socks.)
+
+Patriarchy, for me, doesn't cut it.  It cuts it to gender.  As you can see, I'm not that simple. Kyriarchy is a term I adopted four years ago and I feel now it's time to show my true colors of what I think of patriarchy.  Two words: old skool.
+
+    Kyriarchy - a neologism coined by Elisabeth Schussler Fiorenza and derived from the Greek words for "lord" or "master" (kyrios) and "to rule or dominate" (archein) which seeks to redefine the analytic category of patriarchy in terms of multiplicative intersecting structures of domination...Kyriarchy is best theorized as a complex pyramidal system of intersecting multiplicative social structures of superordination and subordination, of ruling and oppression. 
+
+    Patriarchy - Literally means the rule of the father and is generally understood within feminist discourses in a dualistic sense as asserting the domination of all men over all women in equal terms.  The theoretical adequacy of patriarchy has been challenged because, for instance, black men to not have control over white wo/men and some women (slave/mistresses) have power over subaltern women and men (slaves). 
+
+    - Glossary, Wisdom Ways, Orbis Books   New York 2001
+
+
+Let me break this down for you.  When people talk about patriarchy and then it divulges into a complex conversation about the shifting circles of privilege, power, and domination -- they're talking about kyriarchy.  When you talk about power assertion of a White woman over a Brown man, that's kyriarchy.  When you talk about a Black man dominating a Brown womyn, that's kyriarchy.  It's about the human tendency for everyone trying to take the role of lord/master within a pyramid.  At it best heights, studying kyriarchy displays that it's more than just rich, white Christian men at the tip top and, personally, they're not the ones I find most dangerous. There's a helluva lot more people a few levels down the pyramid who are more interested in keeping their place in the structure than to turning the pyramid upside down.
+
+Who's at the bottom of the pyramid?  Who do you think are at the bottom of the pyramid who are less likely to scheme and spend extravagant resources to further perpetuate oppression?  I think of poor children with no roads out of hell, the mentally ill who are never "credible," un-gendered or non-gender identified people, farm workers, modern day slaves...But, the pyramid stratifies itself from top to bottom.   And before you start making a checklist of who is at the top and bottom - here's my advice: don't bother.  The pyramid shifts with context.  The point is not to rank.  The point is to learn.
+
+It's about recognizing the power-over relationships that exist because of property, religion, security, economics, citizenship, and geography.  Let's not pretend that just because there are not many propertied males mucking around the fem blogosphere, there aren't queen bees and wanna bees exercising the same kind of behavior.  So when we talk about woman asserting power over other womyn, we're talking kyriarchy.  When you witness woman trying to dominate, define, outline the "movement" or even what an ally should be - that's the kyriarchal ethos strong at work. 
+
+So, this is my response to those who have emailed or otherwise asked me what it is I desire.
+What I want and what is now the first rule of engagement on my blog is this: Learn Kyriarchy.
+If you don't, then get out of here.  Go drive up the stat counter on someone else's blog.  
+Learn it, think about it, consider it.
+
+Consider kyriarchy when you think about the function of public apologies. ABC, or a former Archbishop, Michael Richards, Rosie O'Donnell, Don Imus, Isaiah Washington, or even a whole university who promises to send folks to diversity trainings!
+
+Not these apologies or the ones uttered recently are for me to accept or deny.  I tend to view apologies as the beginning, not the end.  So, if apologies are true and heartfelt, you'll forgive me for not weeping with joy and instead, again, borrowing this popular term, "Prove it."
+
+Not to me, but to those who you say you love and have hurt.  Prove it to them.
+
+__________________________________________
+Thanks to all who have posted or emailed to ask for permission to use the word kyriarchy and give credit to Elisabeth Schussler Fiorenza.  I would only encourage you to use her entire name when giving credit, or when using her last name, be sure to write Schussler Fiorenza.  She was ardent with her name and let her students know that we could call her either Elisabeth or Schussler Fiorenza, never Fiorenza alone.  As a womyn with a hyphenated name myself, I can appreciate that one.
+* Supplements
+** Record history
+   :PROPERTIES:
+   :CUSTOM_ID: record-history
+   :END:
+   :LOGBOOK:
+   - Note taken on [2020-12-29 Tue 18:58] \\
+      Created from [[file:~/org/s/p/kyriarchy.org::my-ecydsis-kyriarchy-quote][my-ecydsis-kyriarchy-quote]]
+
+      
+   :END:

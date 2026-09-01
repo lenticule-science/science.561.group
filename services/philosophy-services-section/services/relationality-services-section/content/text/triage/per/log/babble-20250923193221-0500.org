@@ -1,0 +1,52 @@
+:PROPERTIES:
+:ID:       27b50a20-e7a9-44d0-a9b8-d5b67647518f
+:form:     [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]
+:END:
+#+title: Babble, [2025-09-23 Tue 19:32], On the process of making dirt
+#+date: [2025-09-23 Tue 19:32]
+#+author: emsenn
+
+Earlier today I was around [[id:6ecd3044-8c62-426c-89eb-18be40cd5cf9][Turntide Islands]], talking about [[id:d8050ea6-3ea1-4f21-9396-6aa3ecd77d99][deciding]] [[id:536150eb-0c41-4b39-a818-9d9f367dfd1d][praxis]], especially [[id:83fa7b1e-fe49-487c-80e5-e361b0ffdcac][climate breakdown praxis]].
+
+And I said:
+
+#+begin_quote
+[[id:b300307c-83fc-4188-b4a2-a1215c750e8a][making dirt]]! seriously! it's kind of the raw material for just about anything that does anything, so providing it is one of the best ways to distribute power/autonomy from yourself into your community, not just human
+
+reductive interpretation of problems:
+
+- settler-colonialism means we all significantly over-consume, over-pollute, from a position of self-centeredness
+- it would be good to not do that
+- to do (or not do) anything, determinations have to be made about how to do it
+- for simple lifeforms like bacteria determination is very biochemical reaction
+- for us it's very cognitive
+- our cognitive is sabotaged by settler-colonliasm
+- additionally it is ours, using it maintains self-centeredness
+- so: can we distribute the power-of-determination outside of ourselvse?
+- answer: if determination is biochemical, yes:
+  - by increasing availability of biochemical energy
+- how to do that?
+  - MAKE DIRT
+
+i've never put the argument together so clearly and completely as that but that is a pretty good explanation right there of why, make dirt make dirt make dirt. if you can't decide what to do, make dirt. if you're concerned about how you're deciding things, make dirt. making dirt is a weird anti-bias machine that requires your particular biases in order to work, solving both the problems of collectively distributed autonomy and individual agency.
+#+end_quote
+
+I want to take that seriously, because I think the [[id:05a1a0ed-628d-4bd7-9606-4da282150828][logic]] there is actually pretty robust and generalizable. Like, in any [[id:8b78e297-2d6b-452a-bbea-c53bd2cf35ed][complex system]], there are [[id:86271bc1-4b95-42c8-8b76-dae85f193d8a][fail state]], and continue/succeed states, and... anyway, let me start by, I wanna look at why making dirt - building living soil - is instrumentally good across very different objective functions.
+
+First, what is making dirt? I think I'd say, any transformative process in a substance that results in an increase of:
+
+- [[id:fbfd80ce-5d83-4fb6-9476-440d75b252b7][soil-organic-matter]]
+- [[id:84ff2532-eb6e-47b2-8d9e-22dc0e800c05][microbial soil activity]]
+- [[id:2690f73f-69f1-4cab-b303-ec5d25fc0b76][soil aggregate stability]]
+- [[id:eb216c5d-f320-426a-a1b0-7837d82887e7][soil nutrient cycling]]
+- [[id:b2b5b6c9-2477-4702-bfe3-517753edead4][soil water infiltration]]
+- [[id:a6362897-0173-408e-9fd1-d054204ed5fa][soil water retention]]
+
+concretely:
+
+- [[id:c228af75-7054-44be-95ea-b3ca049128de][composting]]
+- [[id:916c5f4e-31c7-4899-b4d9-f63823c06bde][mulching]]
+- [[id:93214a50-597d-4c50-b966-6a216657111d][vermicomposting]]
+- [[id:2ec3c1de-9dec-464f-9802-a8df88a33209][ramial]]
+- [[id:1cb48e74-a58f-4378-a3c0-9641b0d5eb2e][cover-cropping]]
+- [[id:dad059be-917d-40a3-a910-fbaaabe36587][biochar charging]]

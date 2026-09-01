@@ -1,0 +1,78 @@
+\subsection{Calculus carriers for value, probability, and internal reals}
+
+\begin{theorem}[The order/lattice calculus carrier]\label{thm:order-lattice-carrier}\lean{Obsmetrologia.Order.Lattice}\leanok\uses{thm:kle}
+The calculus layer first packages the order operations needed by later fixed-point and value
+arguments as a lattice carrier.
+\end{theorem}
+
+\begin{theorem}[Order is recovered from join]\label{thm:order-le-iff-join}\lean{Obsmetrologia.Order.Lattice.le_iff_join}\leanok\uses{thm:order-lattice-carrier}
+Inside the lattice carrier, $a \le b$ is exactly the assertion that $a \vee b=b$.
+\end{theorem}
+
+\begin{theorem}[The complete-lattice calculus carrier]\label{thm:complete-lattice-carrier}\lean{Obsmetrologia.Order.CompleteLattice}\leanok\uses{thm:order-lattice-carrier}
+Complete lattices promote the finite lattice carrier to the substrate on which monotone settling
+operators have least and greatest fixed points.
+\end{theorem}
+
+\begin{theorem}[Knaster--Tarski fixed points]\label{thm:knaster-tarski-fixed-points}\lean{Obsmetrologia.Order.CompleteLattice.Mono.lfp_le_gfp}\leanok\uses{thm:complete-lattice-carrier}
+The monotone complete-lattice calculus supplies the least/greatest fixed-point bracket used by the
+optimization and settling views of closure.
+\end{theorem}
+
+\begin{theorem}[FOUR is the two-element twist product]\label{thm:four-as-twist-two}\lean{Obsmetrologia.Order.FOUR.four_is_twist_two}\leanok\uses{thm:four-bilattice, thm:kle, thm:tle}
+The Belnap four is identified with the twist-product presentation of two truth values, aligning the
+order-theoretic calculus with the existing charge carrier.
+\end{theorem}
+
+\begin{theorem}[Optimization is fixed-point settling]\label{thm:optimization-is-settling}\lean{Obsmetrologia.Optimization.FixedPoint.settling_is_optimization}\leanok\uses{thm:value-category, thm:closure-operator, thm:knaster-tarski-fixed-points}
+The optimization calculus reads a closure trajectory as an optimization problem whose optimum is a
+settled fixed point.
+\end{theorem}
+
+\begin{theorem}[The stochastic semiring carrier]\label{thm:stochastic-semiring-carrier}\lean{Obsmetrologia.Probability.Stochastic.StochSemiring}\leanok\uses{thm:value-category}
+The probability calculus starts from an abstract stochastic semiring carrier before specializing to
+internal real intervals.
+\end{theorem}
+
+\begin{theorem}[The Markov-kernel carrier]\label{thm:markov-kernel-carrier}\lean{Obsmetrologia.Probability.Stochastic.MarkovKernel}\leanok\uses{thm:stochastic-semiring-carrier}
+Markov kernels are the transition carrier over the stochastic semiring.
+\end{theorem}
+
+\begin{theorem}[Stationary Markov states are closure fixed points]\label{thm:markov-stationary-closure-fixed}\lean{Obsmetrologia.Probability.Stochastic.markov_stationary_is_closure_fixpoint}\leanok\uses{thm:markov-kernel-carrier, thm:optimization-is-settling}
+Stationarity in the stochastic carrier is glued to the same fixed-point shape as settling closure.
+\end{theorem}
+
+\begin{theorem}[Stochastic calculus is value settling]\label{thm:stochastic-is-value-settling}\lean{Obsmetrologia.Probability.Stochastic.stochastic_is_value_settling}\leanok\uses{thm:markov-stationary-closure-fixed, thm:value-category, thm:regime-cohomology-vanishes-iff}
+The stochastic layer is not a separate object: it is the value-settling profile of the same fixed-point
+carrier.
+\end{theorem}
+
+\begin{theorem}[The finite probability-measure carrier]\label{thm:finite-probability-measure-carrier}\lean{Obsmetrologia.Probability.Measure.SampleSpace}\leanok\uses{thm:valuation}
+A finite sample space packages events and probability weights as the measure-theoretic carrier over
+which valuation statements can be made.
+\end{theorem}
+
+\begin{theorem}[Measure is valuation]\label{thm:measure-is-valuation}\lean{Obsmetrologia.Probability.Measure.measure_is_valuation}\leanok\uses{thm:finite-probability-measure-carrier, thm:valuation}
+Finite probability measures are recognized as valuation data on events.
+\end{theorem}
+
+\begin{theorem}[Conditioning is reindexing]\label{thm:conditioning-is-reindex}\lean{Obsmetrologia.Probability.Measure.conditioning_is_reindex}\leanok\uses{thm:measure-is-valuation, thm:reindex, thm:reindex-comp}
+Conditioning moves a measure along the same reindexing shape used by the hyperdoctrine layer.
+\end{theorem}
+
+\begin{theorem}[The internal-real carrier]\label{thm:internal-real-carrier}\lean{Obsmetrologia.Real.Internal.RReal}\leanok\uses{thm:value-category, thm:stochastic-is-value-settling}
+Constructive internal reals supply the magnitude carrier needed by stochastic value settling.
+\end{theorem}
+
+\begin{theorem}[Internal real completeness]\label{thm:internal-real-completeness}\lean{Obsmetrologia.Real.Internal.RReal.real_completeness}\leanok\uses{thm:internal-real-carrier}
+The internal real carrier is complete for the Cauchy construction used in the calculus layer.
+\end{theorem}
+
+\begin{theorem}[Reals are the Scott-continuous settling completion]\label{thm:reals-are-scott-settling-completion}\lean{Obsmetrologia.Real.Internal.RReal.reals_are_the_scott_continuous_settling_completion}\leanok\uses{thm:internal-real-completeness, thm:regime-cohomology-vanishes-iff}
+The internal reals identify the continuous value layer as a Scott-continuous settling completion.
+\end{theorem}
+
+\begin{theorem}[Reals close the value-settling hub]\label{thm:reals-close-value-settling-hub}\lean{Obsmetrologia.Real.Internal.RReal.reals_close_the_value_settling_hub}\leanok\uses{thm:reals-are-scott-settling-completion, thm:value-category}
+The real carrier closes the value-settling hub by providing the continuous magnitude profile needed
+by probability and free-energy claims.
+\end{theorem}

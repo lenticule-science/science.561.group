@@ -1,0 +1,32 @@
+#+title: emsenn's Calendar
+#+toc: headlines 4
+* 1914
+** 1914-06 June
+*** 1914-06-24
+**** Birth of [[file:../ref/carl-braden.org][Carl Braden]]
+* 1937
+** 1937-10 October
+*** 1937-10-02 Saturday
+**** [[file:../def/parsley-massacre.org][Parsley Massacre]]
+* 1958
+** 1958-08 August
+*** 1958-08-30 Saturday
+**** Notting Hill Anti-Racist Militia
+
+* 1968
+** 1968-10 October
+*** 1968-10-02 Wednesday
+**** [[../def/tlatelolco-massacre.org][Tlatelolco Massacre]]
+#+include: "../def/tlatelolco-massacre.org::definition"
+* 1975
+** 1975-02 February
+*** 1975-02-18
+**** Passing of [[file:../ref/carl-braden.org][Carl Braden]]
+  
+* 1995                                                             :noexport:
+** 1995-04 April                                                   :noexport:
+*** 1995-04-25 Tuesday                                             :noexport:
+**** Esther's Birthday                                             :noexport:
+:PROPERTIES:
+:CUSTOM_ID: esthers-birthday
+:END:

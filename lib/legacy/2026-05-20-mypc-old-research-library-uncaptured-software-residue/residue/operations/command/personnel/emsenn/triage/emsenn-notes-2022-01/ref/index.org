@@ -1,0 +1,10 @@
+#+title: emsenn's references
+
+I've created a few documents that help me track external references:
+
+- [[file:lib.org][Library]] :: External resources I've used
+- [[file:timeline.org][Timeline]] :: Events that have occurred
+
+Here's an index of the events/resources in those documents:
+
+#+include: "theindex.inc"

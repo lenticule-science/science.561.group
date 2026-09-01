@@ -1,0 +1,10 @@
+- [ ] Brush teeth
+- [ ] Face the sun/walk east
+- [ ] pray
+- [ ] oil and comb hair
+- [ ] warm up
+- [ ] workout
+- [ ] stretch
+- [ ] study breathwork
+- [ ] meditate
+- [ ] optional: journal

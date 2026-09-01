@@ -1,0 +1,41 @@
+#+title: 2020-12-23
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-23 Wed 08:38]
+#+roam_tags: daily-record
+#+begin_summary
+#+name: 2020-12-22-summary
+This is my personal record for [2020-12-22 Tue]. If you are viewing this record outside of its original environment, please be aware it maybe be heavily redacted.
+#+end_summary
+#+toc: headlines 2
+* Journal                                                          :noexport:
+* Activity Log                                                     :noexport:
+** [2020-12-23 Wed 17:39]
+ Talked on the [[file:../fediverse.org][Fediverse]] with [[file:../jeremy_friesen.org][Jeremy Friesen]] about designing my [[file:../website.org][Website]].
+* News log
+** New mailing list for non-programmer Emacs users
+   :LOGBOOK:
+   - Note taken on [2020-12-23 Wed 20:05] \\
+     [[file:../benjamin_slade.org][Benjamin Slade]] just forwarded this new [[file:../mailing_list.org][mailing list]] to me, it's for [[file:../person.org][people]] who [[file:../computer_user.org][use]] [[file:../emacs.org][Emacs]] but aren't necessarily programmers: "people using Emacs to write their PhDs, research projects, novels, screenplays, etc." Seems like a good step forward for [[file:../emacs.org][Emacs]] as a [[file:../tool.org][tool]] that's still being developed, and the other tools built around it like [[file:../groundhog_emacs.org][Groundhog Emacs]].
+   :END:
+   - Source :: https://lists.gnu.org/archive/html/emacs-humanities/2020-12/msg00005.html
+** St. John's, Newfoundland, Canada: 10 officers charged in 2019 death of Inuk man
+   :LOGBOOK:
+   - Note taken on [2020-12-23 Wed 08:57] \\
+     In [[file:../st_johns_newfoundland_labrador_canada.org][St. Johns, Newfoundland, Canada]], 10 [[file:../police.org][police]] have been [[file:../charges.org][charged]] from [[file:../manslaughter.org][manslaughter]] to [[file:../criminal_negligence.org][criminal negligence]] in the [[file:../death.org][death]] of [[file:../jonathan_henoche.org][Jonathan Henoche]], who died in [[file:../police_custody.org][police custody]] last November.
+   :END:
+   - Source :: https://www.ctvnews.ca/canada/10-correctional-officers-charged-following-death-of-indigenous-man-in-n-l-jail-1.5241766
+** Washington, D.C., U.S.A: Looking at the December 12th skirmish between antifascists, police, and proud boys
+   :LOGBOOK:
+   - Note taken on [2020-12-23 Wed 08:46] \\
+     From [[file:../its_going_down.org][It's Going Down]], about the violence between [[file:../antifa.org][antifa]], [[file:../proud_boys.org][Proud Boys]], and the [[file:../police.org][police]]. Seeing police [[file:../pepper_spray.org][pepper-spray]] Proud Boys scares me more than getting pepper-sprayed by cops myself. A homie loosing their [[file:../police_dog.org][dog]] on me is one thing; a homie losing control entirely is another.
+   :END:
+ - Source ::  https://itsgoingdown.org/d12-report-back-and-antifascist-resistance-in-the-era-of-stop-the-steal/
+* Media log                                                        
+** DISCOVERED Michael Warren Lucas: "The Last Hour of Hogswatch"
+   :LOGBOOK:
+   - Note taken on [2020-12-23 Wed 17:04] \\
+   [[file:../michael_warren_lucas.org][Michael Warren Lucas]] released this free [[file:../short_story.org][short story]] that, heads up, requires a fair emotional investment and will probably make you acutely sad. I cried, tears down my cheek.
+   :END:
+ - Source: https://www.wmgpublishinginc.com/2020/11/30/wmg-holiday-spectacular-2020-free-story-of-the-week/
+

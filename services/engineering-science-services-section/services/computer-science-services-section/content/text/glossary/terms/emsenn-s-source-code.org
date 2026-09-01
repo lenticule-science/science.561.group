@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       cd72e285-d828-480a-b4bd-fff30fee4e82
+:END:
+#+title: emsenn's Source Code
+
+The [[id:1d4f4bee-a3dd-4b03-b76c-485a0fa2ae11][source code]] I've written; a part of [[id:4af9c205-098f-4a6c-81a2-d5babb748227][my projects catalog]].
+
+- [[id:d073bcbe-33f7-487e-ab2d-bd1562dd576a][Elisp]] :: Stuff written in [[id:c2b25e91-7619-447b-858f-982437b7e545][Elisp]], the language used in [[id:1d64bd84-0a23-46ca-8e97-a3a688eb0620][Emacs]]

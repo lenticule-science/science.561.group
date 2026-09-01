@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       49e095c4-9ab8-49df-8eda-5d071dc07590
+:END:
+#+title: Org-agenda
+#+date: [2025-08-25 Mon 00:53]
+

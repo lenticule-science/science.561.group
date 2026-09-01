@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       a9d9e89c-c692-41a3-a2e8-84e57b11102f
+:public:   true
+:resource-description: (([[id:edaef069-c68d-46aa-a970-d3cb7fe3165c][resource type]] . [[id:8bae816c-5884-4688-b119-01c7d53bdb87][predicate]]))
+:END:
+#+title: asserting
+#+date: [2025-09-13 Sat 09:41]
+#+index: asserting

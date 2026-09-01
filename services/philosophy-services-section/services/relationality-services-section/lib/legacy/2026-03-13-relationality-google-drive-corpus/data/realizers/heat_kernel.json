@@ -1,0 +1,9 @@
+{
+  "id": "heat_kernel",
+  "act": "HeatKernel",
+  "module": "relationality.realizers.heat_kernel",
+  "callable": "realize_heat_kernel",
+  "input_kind": "SpectralGeometry",
+  "output_kind": "PhaseSpace",
+  "description": "Propagate phase space under a heat kernel using spectral geometry."
+}

@@ -1,0 +1,4 @@
+* License
+  :PROPERTIES:
+  :CUSTOM_ID: license
+  :END:

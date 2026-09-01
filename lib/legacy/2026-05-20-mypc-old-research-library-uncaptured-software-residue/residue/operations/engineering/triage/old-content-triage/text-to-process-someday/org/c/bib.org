@@ -1,0 +1,70 @@
+#+macro: nl (eval "\n")
+#+macro: lib-item-table - Title :: {{{property(lib-item-title)}}}{{{nl}}}- Author :: {{{property(lib-item-author)}}}{{{nl}}}- Source :: {{{property(lib-item-source)}}}
+* Ways of Life 1: Original Affluence 
+:PROPERTIES:
+:lib-item-title: Ways of life part 1 - original affluence
+:lib-item-author: DJ Zhao
+:lib-item-source: https://thisisafrica.me/lifestyle/nomadic-lifestyle-lessons-capitalists/
+:EXPORT_DATE: [2021-10-11 Mon 13:05]
+:END:
+:LOGBOOK:
+CLOCK: [2021-10-11 Mon 13:04]--[2021-10-11 Mon 13:05] =>  0:01
+:END:
+{{{lib-item-table}}}
+* Ways of Life 2: Another Perspective 
+:PROPERTIES:
+:lib-item-title: Ways of life 2: Another perspective
+:lib-item-author: DJ Zhao
+:lib-item-source: https://thisisafrica.me/lifestyle/nomadic-lifestyle-lessons-capitalists/
+:END:
+:LOGBOOK:
+CLOCK: [2021-10-11 Mon 13:05]--[2021-10-11 Mon 13:06] =>  0:01
+:END:
+{{{lib-item-table}}}
+* Ways of Life 3: Indigenous Anarchism 
+:PROPERTIES:
+:lib-item-title: Ways of Life 3: Indigenous Anarchism
+:lib-item-author: DJ Zhao
+:lib-item-source: https://thisisafrica.me/politics-and-society/ways-of-life-3-indigenous-anarchism/
+:EXPORT_DATE: [2021-10-10 Sun 12:50]
+:END:
+{{{lib-item-table}}}
+
+* Pollution is Colonialism 
+:PROPERTIES:
+:EXPORT_DATE: [2021-10-11 Mon 13:09]
+:lib-item-title: Pollution is Colonialism
+:lib-item-author: Max Liboiron
+:lib-item-source: GAZ Library
+:END:
+:LOGBOOK:
+CLOCK: [2021-10-12 Tue 08:25]--[2021-10-12 Tue 08:34] =>  0:09
+CLOCK: [2021-10-11 Mon 16:53]--[2021-10-11 Mon 18:27] =>  1:34
+CLOCK: [2021-10-11 Mon 13:08]--[2021-10-11 Mon 13:11] =>  0:03
+:END:
+** Notes
+*** [2021-10-11 Mon 16:53], emsenn
+For my first read through /Pollution is Colonialism/, I want to just read through it kind of quickly, without taking many notes. I've already read through the Acknowledgements, and some of the Introduction, when I first got it a week and some ago, but I'm going to skim through them again to catch myeslf up.
+
+#+name: 2021-10-11-pic-acknowledgements
+The "Acknowledgements" section of /Pollution is Colonialism/ also serves as a bit of an orientation. Liboiron uses the /why/ of /who/ and /where/ they're acknowledging to help readers understand why the text itself exists. "Acknowledgements" is also where Liboiron explains how they use footnotes, which are a prominent part of the text.
+
+(Still reading but laptop gonna die. Gotta bring this onto my phone.)
+*** [2021-10-11 Tue 08:25], emsenn
+#+name: 2021-10-11-pic-review
+Before a space has a trail, it has landmarks, and folk orient their journey through the space by their distance from these landmarks. /Pollution is Colonialism/ exists as a wonderful navigator through the novel space of anti-colonial science.
+
+The liminal edges of academe form a frontier, and like all frontiers, colonialism brings it to a state of war, immediately setting up supply chains, skirmishing lines, and all the other trappings of conflict. (Of course, in academia, these look like grants and dissertation committees.) /Pollution is Colonialism/, as an anti-colonial work, doesn't work so hard to attack anything. Instead, it brings us, the readers, into this frontier. Here, in the space beyond the well-worn trails of establishment discourse, Liboiron serves as a deft navigator, pointing to and orienting with the landmarks that exist in this space: pollution, land use, cosmology.
+* Charcoal Making at Home 
+:PROPERTIES:
+:CUSTOM_ID: lib-charcoal-making
+:lib-item-title: Charcoal Making at Home
+:lib-item-author: Robert Lea
+:lib-item-source: GAZ Digital Library
+:END:
+:LOGBOOK:
+CLOCK: [2021-10-11 Mon 15:32]--[2021-10-11 Mon 16:53] =>  1:21
+:END:
+{{{lib-item-table}}}
+
+Contains a good diagram of how to make a kiln from a steel drum, and a fair explanation of the combustion process that occurs when wood turns into charcoal.

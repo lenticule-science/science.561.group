@@ -1,0 +1,21 @@
+#+title: knowledge
+#+begin_head
+#+ghe_schema: record-0.1.3
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-24 Thu 11:34]
+#+roam_tags: term
+#+end_head
+
+#+name: definition
+*/Knowledge/* is information that a [[file:person.org][person]], well, knows.
+
+#toc: headlines 2
+* Intrododuction
+* knowledge
+* Supplements
+** Record history
+   :LOGBOOK:
+   - Note taken on [2020-12-24 Thu 11:34] \\
+     Created
+   :END:

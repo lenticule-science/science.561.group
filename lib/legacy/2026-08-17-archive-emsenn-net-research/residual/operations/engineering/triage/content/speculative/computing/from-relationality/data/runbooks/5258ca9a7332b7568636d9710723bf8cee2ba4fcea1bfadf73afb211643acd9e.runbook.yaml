@@ -1,0 +1,19 @@
+id: 5258ca9a7332b7568636d9710723bf8cee2ba4fcea1bfadf73afb211643acd9e
+inputs:
+- kind: trace
+  role: trace
+name: trace_continue
+outputs:
+- kind: continue_trace_evidence
+  role: continue_trace_evidence
+steps:
+- inputs:
+  - kind: trace
+    role: trace
+  name: continue_trace
+  operator: continue_trace
+  outputs:
+  - kind: continue_trace_evidence
+    role: continue_trace_evidence
+  step_index: 0
+

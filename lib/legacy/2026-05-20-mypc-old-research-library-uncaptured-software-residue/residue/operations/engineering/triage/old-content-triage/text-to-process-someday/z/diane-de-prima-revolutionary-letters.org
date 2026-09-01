@@ -1,0 +1,86 @@
+#+title: Diane de Prima: "Revolutionary Letters"
+#+begin_head
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2021-01-09 Sat 11:17]
+#+roam_tags: reference
+#+end_head
+
+#+name: diane-de-prima-revolutionary-letters-definition
+*/[[file:diane-de-prima-revolutionary-letters.org]["Revolutionary Letters"]]/* is a collection of poems by [[file:diane-de-prima.org][Diane de Prima]].
+
+[[file:jude.org][@jude]] emailed me a few of these poems December 2020
+
+* Partial text                                                     :noexport:
+** #31
+
+   #+begin_verse
+   not all the works of Mozart worth one human life
+   not all the brocaded of the Potala palace
+   better we should wear homespun, than some in orlon
+   some in Thailand silk
+   the children of Bengal weave gold thread in silk saris
+   six years old, eight years old, for export, they don't sing
+   the singers are for export, Folkways records
+
+   better we should all have homemade flutes
+   and practice excruciatingly upon them, one hundred years
+   till we learn to
+   make our own music
+   #+end_verse
+** #4
+
+   #+begin_verse
+   Left to themselves people
+   grow their hair
+   Left to themselves they
+   take off their shoe's.
+   Left to themselves they make love
+   sleep easily
+   share blankets, dope & children
+   they are not lazy or afraid
+   they plant seeds, they smile, they
+   speak to one another. The word
+   coming into its own: touch of love;
+   on the brain, the ear.
+   //
+   We return with the sea, the tides
+   we return as often as leaves, as numerous
+   as grass, gentle, insistent, we remember
+   the way,
+   our babes toddle barefoot thru cities of the universe
+   #+end_verse
+** #26
+
+   #+begin_verse
+   'DOES THE END
+   JUSTIFY THE MEANS?' this is
+   process, there is no end, there are only
+   means, each one
+   had better justify itself.
+   To whom?
+   #+end_verse
+** #1
+
+   #+begin_verse
+   The value of an individual life a credo they taught us
+   to instil fear, and inaction, 'you only live once'
+   a fog in our eyes, we are
+   endless as the sea, not separate, we die
+   a million times a day, we are born
+   a million times, each breath life and death:
+   get up, put on your shoes, get
+   started, someone will finish
+
+   #+end_verse
+** #41
+
+   #+begin_verse
+   Revolution: a turning, as the earth
+   turns, among planets, as the sun
+   turns round some (darker) star, the galaxy
+   describes a yin-yang spiral in the aether, we turn
+   from dark to light, turn
+   faces of pain & fear, the dawn
+   awash among them
+   #+end_verse

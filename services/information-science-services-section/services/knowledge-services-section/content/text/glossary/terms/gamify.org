@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       7b10c91e-af4a-45a7-a363-c857aed63995
+:END:
+#+title: gamify
+#+date: [2025-09-04 Thu 20:20]
+

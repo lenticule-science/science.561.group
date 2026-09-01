@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "relating/articulating/mark",
+  "title": "Mark (articulating profile)",
+  "description": "The articulation locus's profile of the canonical mark: the arbitrary atomic primitive, the genus of which token and claim are the two kinds. A mark's value is a literal surface string, or a `ni:` content address (the immutable replacement for the retired URI-era pointers) standing for a larger document.",
+  "allOf": [
+    {
+      "$ref": "../../../../../../math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/mark.schema.json"
+    }
+  ],
+  "properties": {
+    "value": {
+      "description": "A literal surface string, or a `ni:` content address (`^ni:///sha-256;...`) standing for a larger document. Surface form, not identity."
+    }
+  }
+}

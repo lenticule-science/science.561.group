@@ -1,0 +1,105 @@
+{{- /* Page-level meta computed once for reuse below */ -}}
+{{- $title := .Site.Title -}}
+{{- if .Title }}{{ $title = printf "%s - %s" .Title .Site.Title }}{{ end -}}
+{{- $desc := or .Params.description .Site.Params.description "" -}}
+{{- $desc = $desc | plainify | truncate 300 -}}
+{{- $url := .Permalink -}}
+{{- $ogType := "website" -}}
+{{- if .IsPage }}{{ $ogType = "article" }}{{ end -}}
+{{- $ogImage := or .Params.image .Params.cover .Site.Params.ogImage .Site.Params.logo -}}
+{{- if $ogImage -}}
+  {{- if not (strings.HasPrefix $ogImage "http") -}}
+    {{- $ogImage = printf "%s%s" (strings.TrimSuffix "/" .Site.BaseURL) $ogImage -}}
+  {{- end -}}
+{{- end -}}
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ $title }}</title>
+
+{{/* SEO baseline */}}
+{{- with $desc }}
+<meta name="description" content="{{ . }}">
+{{- end }}
+<link rel="canonical" href="{{ $url }}">
+
+{{/* Theme color (browser tab + Mastodon preview chrome) */}}
+<meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1a1a1a" media="(prefers-color-scheme: dark)">
+
+{{/* OpenGraph */}}
+<meta property="og:title" content="{{ .Title | default .Site.Title }}">
+<meta property="og:type" content="{{ $ogType }}">
+<meta property="og:url" content="{{ $url }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:locale" content="en_US">
+{{- with $desc }}
+<meta property="og:description" content="{{ . }}">
+{{- end }}
+{{- with $ogImage }}
+<meta property="og:image" content="{{ . }}">
+<meta property="og:image:alt" content="{{ $.Site.Params.logoAlt | default $.Site.Title }}">
+{{- end }}
+{{- if and .IsPage (eq $ogType "article") }}
+{{- with .Date }}
+<meta property="article:published_time" content="{{ .Format "2006-01-02T15:04:05Z07:00" }}">
+{{- end }}
+{{- with .Lastmod }}
+<meta property="article:modified_time" content="{{ .Format "2006-01-02T15:04:05Z07:00" }}">
+{{- end }}
+{{- with .Params.authors }}
+{{- range . }}
+<meta property="article:author" content="{{ . }}">
+{{- end }}
+{{- end }}
+{{- end }}
+
+{{/* Twitter Card */}}
+<meta name="twitter:card" content="{{ if $ogImage }}summary_large_image{{ else }}summary{{ end }}">
+<meta name="twitter:title" content="{{ .Title | default .Site.Title }}">
+{{- with $desc }}
+<meta name="twitter:description" content="{{ . }}">
+{{- end }}
+{{- with $ogImage }}
+<meta name="twitter:image" content="{{ . }}">
+{{- end }}
+
+{{/* Fonts and stylesheets */}}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Serif:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/pagefind/pagefind-ui.css">
+
+{{/* KaTeX */}}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css" integrity="sha384-zh0CIslj3dQfLz0UPTAfXZDdRVtiEgqowVbFMRmHd1cQaMNLqbm0E+VYNyjU6MX" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.js" integrity="sha384-Rma6DA2IPUwhNxmrB/7S3Tno0YY7sFu9WSYMCuulLhIqYSGZ2gKCJWIqhBWqMQfh" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}], throwOnError:false});"></script>
+
+{{/* Indieweb / WebMention / rel-me */}}
+<link href="https://gmpg.org/xfn/11" rel="profile">
+{{- with $.Site.Params.canonicalURL }}
+<link href="{{ . }}" rel="me">
+{{- end }}
+{{- with $.Site.Params.email }}
+<link href="mailto:{{ . }}" rel="me authn">
+{{- end }}
+{{- if $.Site.Params.webmentions }}
+<link rel="webmention" href="https://webmention.io/emsenn.net/webmention">
+<link rel="pingback" href="https://webmention.io/webmention?forward=https://emsenn.net/webmention">
+{{- end }}
+
+{{/* Alternate output formats (RSS, JSON Feed, etc.) */}}
+{{- range .AlternativeOutputFormats }}
+<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
+{{- end }}
+
+{{/* JSON-LD */}}
+{{- if .IsPage }}
+{{ partial "json-ld.html" . }}
+{{- else if .IsHome }}
+{{ partial "json-ld-home.html" . }}
+{{- else }}
+{{ partial "json-ld-list.html" . }}
+{{- end }}

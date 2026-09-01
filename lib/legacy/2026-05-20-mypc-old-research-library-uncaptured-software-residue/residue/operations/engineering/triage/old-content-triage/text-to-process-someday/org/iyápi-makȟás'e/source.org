@@ -1,0 +1,68 @@
+#+TITLE: iyápi makȟás'e
+#+date: 2020-01-24
+#+export_file_name: iyapi-makhase
+#+hugo_base_dir: ~/dev/personal-website/
+#+hugo_section: software
+#+hugo_tags: alpha MUD Racket
+* introduction
+pronunciation: /(ee-yAH-pee mah-khAHs-ay)/
+
+*/iyápi makȟás'e/* is:
+
+- a world of words
+- a purposeful current within our ionic tradewinds
+- an exercise in personal decolonization
+
+=It is a MUD - a text-based role-playing game.=
+
+it is only a few parts, with intentions for many
+
+=It is in the earliest stages of development.=
+
+** stories
+
+these stories are to explain what is, what will be, and why what will be will be that way
+
+*** genesis
+
+#+BEGIN_SRC text
+what does makȟa call you?
+
+[type your name and press ENTER]
+> emsenn
+your entry code is 81ff38c8
+
+keep it
+
+you will need it to return
+
+[press ENTER]
+
+you are rising from makȟa
+
+change has been happening and will happen
+
+what change marks your genesis
+
+1) the hatching of a bird's egg
+2) the coalesence of a cloud
+3) the cascade of a new channel of water
+4) the germination of a seed of grass
+
+
+a new part of the whole
+
+what manner of thing are you?
+
+bird
+cloud
+creek
+grass
+hill
+human
+pond
+tree
+worm
+
+[type a noun and press ENTER]
+#+END_SRC

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/system/library/git/library/git-pre-commit/git-pre-commit.schema.json",
+  "title": "Git pre-commit event",
+  "description": "JSON Schema for a git-pre-commit event payload — git delivers no stdin to pre-commit hooks; the payload is the staged-path-set derivable from git diff --cached.",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "staged-paths": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "at-time": {"type": "string", "format": "date-time"}
+  }
+}

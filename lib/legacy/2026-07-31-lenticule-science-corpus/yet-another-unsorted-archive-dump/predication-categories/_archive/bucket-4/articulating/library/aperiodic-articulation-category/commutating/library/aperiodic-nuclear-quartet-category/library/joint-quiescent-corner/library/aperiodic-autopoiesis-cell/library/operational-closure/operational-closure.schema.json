@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://active.development.561.group/articulating/library/aperiodic-articulation-category/commutating/library/aperiodic-nuclear-quartet-category/library/joint-quiescent-corner/library/aperiodic-autopoiesis-cell/library/operational-closure/operational-closure.schema.json",
+  "title": "operational-closure",
+  "description": "The property of an aperiodic-autopoiesis-cell that its operations refer only to its own internal states. The nuclei σ, Δ that produce H* are themselves elements of the cell's content. No external operator is needed; closure is generated entirely from data internal to the cell.",
+  "type": "object",
+  "properties": {
+    "name": { "type": "string", "const": "operational-closure" }
+  },
+  "required": ["name"]
+}

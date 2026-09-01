@@ -1,0 +1,45 @@
+{{- if .Title -}}
+  <strong><em>
+    <a href="{{ .Permalink }}">
+      {{- .Title -}}
+    </a>
+  </strong></em>
+{{- else -}}
+  This
+{{- end -}}
+{{- if .Type }}
+  is a <a href="{{- printf "%s%s/" .Site.BaseURL .Type -}}">
+         {{ (replace (.Type | singularize) "-" " ") -}}
+       </a>
+{{- end -}}
+{{- if .Description -}}
+  : "{{- .Description -}}"
+{{- else if .Params.Tags }}
+  {{ with .Param "tags" }}
+    {{ $scratch := newScratch }}
+    {{ range . }}
+      {{ $scratch.Add "tags" (slice (printf "<a href=\"%stags/%s/\">%s</a>" $.Site.BaseURL (. | urlize) (replace . "-" " "))) }}
+    {{ end }}
+    tagged with {{ delimit ( $scratch.Get "tags" ) ", " ", and " }}
+  {{- end }}
+{{- end -}}
+{{- if .Description -}}
+{{- else -}}
+  .
+{{- end -}}
+{{ if (or .PublishDate .Date) }}
+  It was
+  {{ if (and (.PublishDate) (ne .PublishDate .Date)) }}
+    first published on {{ dateFormat "Jan 2, 2006" .PublishDate }}
+    {{ if .Date }}
+      and updated on {{ dateFormat "Jan 2, 2006" .Date }}
+    {{ end }}
+    .
+  {{ else if .Date }}
+    released on {{ dateFormat "Jan 2, 2006" .Date }}.
+  {{ end }}
+{{ end }}
+{{ if .Draft }}
+  <strong>This {{ .Type | singularize }} has been flagged as a <em>draft</em>.</strong>
+  It is not complete, and should be viewed that way.
+{{ end }}

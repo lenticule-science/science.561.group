@@ -1,0 +1,9 @@
+#+title: Jonathan Henoche
+#+begin_head
+#+ghe_schema: person-0.1.1
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-23 Wed 08:58]
+#+roam_tags: person
+#+end_head
+*/Jonathan Henoche/* was an [[file:inuk.org][Inuk]] man who died in [[file:police_custody.org][police custody]] in Her Majesty's Penitentiary in [[file:st_johns_newfoundland_labrador_canada.org][St. Johns, Newfoundland, Canada]] at the age of 33. He had been awaiting [[file:trial.org][trial]] on [[file:charges.org][charges]] including [[file:first_Degree_murder.org][first-degree murder]] in relation to the 2016 death of an 88-year-old woman in [[file:labrador.org][Labrador]].

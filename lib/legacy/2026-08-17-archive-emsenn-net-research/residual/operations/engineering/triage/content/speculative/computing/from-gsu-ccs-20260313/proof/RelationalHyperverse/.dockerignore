@@ -1,0 +1,9 @@
+# Exclude the local .lake directory from the Docker build context.
+# The Dockerfile fetches the Lean toolchain and Mathlib cache from scratch
+# inside the container (stage 1), so the local .lake is not needed and
+# would make the build context unnecessarily large.
+.lake
+
+# Git metadata not needed in the image
+.git
+.github

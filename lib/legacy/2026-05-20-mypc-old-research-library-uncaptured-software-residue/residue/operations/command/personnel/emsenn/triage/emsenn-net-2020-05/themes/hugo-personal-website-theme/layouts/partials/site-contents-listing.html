@@ -1,0 +1,27 @@
+{{- $scratch := newScratch -}}
+{{- range where $.Site.RegularPages ".File.TranslationBaseName" "in" $.Site.Params.mainPages -}}
+  {{- $scratch.Add "mainPagePhrases" (slice ((printf "<a href=\"%s\">%s</a>" .Permalink .Params.indexPhrase) | safeHTML)) -}}
+{{- end -}}
+{{- $mPP := ($scratch.Get "mainPagePhrases") -}}
+{{- range $.Site.Params.mainSections -}}
+  {{ if (eq (len (where $.Site.RegularPages "Type" .)) 0) }}{{ else }}
+  {{- $scratch.Add "mainSectionCounts" (slice (partial "section-count.html" (dict "Section" . "Site" $.Site))) -}}
+  {{ end }}
+{{- end -}}
+{{- $mS := ($scratch.Get "mainSectionCounts") -}}
+
+
+
+{{- if (eq (len $mPP) 0) -}}
+{{- else -}}
+<ul>
+{{- range $mPP -}}<li><a href="{{ . }}">{{ . }}</a></li>{{ end }}
+</ul>
+{{ end }}
+
+{{- if (eq (len $mS) 0) }}
+{{- else }}
+<ul>
+{{- range $mS -}}<li><a href="{{ . }}">{{ . }}</a></li>{{ end }}
+</ul>
+{{ end }}

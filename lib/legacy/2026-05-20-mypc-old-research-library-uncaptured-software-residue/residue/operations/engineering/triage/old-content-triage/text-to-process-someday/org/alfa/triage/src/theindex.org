@@ -1,0 +1,3 @@
+#+SETUPFILE: ./default-setup.inc
+* Index
+#+INCLUDE: "theindex.inc"

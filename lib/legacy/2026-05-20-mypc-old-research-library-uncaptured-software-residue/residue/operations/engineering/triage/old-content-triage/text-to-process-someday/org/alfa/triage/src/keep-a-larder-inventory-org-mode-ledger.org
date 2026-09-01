@@ -1,0 +1,73 @@
+#+SETUPFILE: ./default-setup.inc
+#+TITLE: Keep a Larder Inventory with Org-Mode and Ledger
+#+EXPORT_FILE_NAME: ../pub/maintain-a-larder-inventory-with-org-mode-and-ledger
+#+INDEX: manual!software!"Keep a Larder Inventory with Org-Mode and Ledger"
+#+INDEX: Org-mode!"Keep a Larder Inventory with Org-Mode and Ledger"
+#+INDEX: Ledger!"Keep a Larder Inventory with Org-Mode and Ledger"
+#+TOC: headlines 1
+* Introduction
+In this piece I'll explain how I'm maintaining an inventory of what's
+in my /larder/ (kitchen: fridge and pantry) by keeping a personal log
+using Org-modeTK with ledger-cliTK.
+#+INCLUDE: "plates.inc::default-eli"
+* Keep a Larder Inventory with Org-mode and Ledger
+** [0/3] Set up your tech stack.
+- [ ] Install Emacs.
+- [ ] Install Org-mode.
+- [ ] Configure Org-babel.
+** Create a log.
+*** Create a header
+#+BEGIN_SRC org :noweb yes :tangle larder-demo.org
+  ,#+TITLE: Larder Log
+  ,#+OPTIONS: c:t d:t
+#+END_SRC
+*** Lay out the datetree
+#+BEGIN_SRC org :noweb yes :tangle larder-demo.org
+  ,* 2019
+  ,** 2019-01 January
+  ,*** 2019-01-01 Tuesday
+#+end_src
+** Buy groceries
+#+BEGIN_SRC org :noweb yes :tangle larder-demo.org
+  ,**** Shopping
+  ,#+BEGIN_SRC ledger :noweb yes :tangle larder-demo.ledger
+  2019/01/01 * Grocery Store
+    Inventory:Larder:eggs                    4         @@ $0.99
+    Inventory:Larder:sausage                 2    lbs  @@ $1.99
+    Inventory:Larder:coffee                 90    tbsp @@ $3.99
+    Supplier:Harris Teeter
+  ,#+END_SRC
+#+END_SRC
+** Make coffee
+#+BEGIN_SRC org :noweb yes :tangle larder-demo.org
+  ,**** Cooking
+  ,#+BEGIN_SRC ledger :noweb yes :tangle larder-demo.ledger
+  2019/01/01 * Coffee
+    Inventory:Larder:coffee                 -3    tbsp
+    Life:Eating
+#+END_SRC
+** Make dinner
+#+BEGIN_SRC org :noweb yes :tangle larder-demo.org
+  2019/01/01 * Dinner
+    Inventory:Larder:eggs                   -4
+    Inventory:Larder:sausage                -2    lbs
+    Life:Eating
+  ,#+END_SRC
+#+END_SRC
+
+# Local Variables:
+# writefreely-post-id: "7m5miq6fr4"
+# writefreely-post-token: nil
+# End:
+* Supplements
+#+TOC: headlines local 1
+** Contribute
+   :PROPERTIES:
+   :CUSTOM_ID: supplements-contribute
+   :END:
+#+INCLUDE: "./plates.inc::personal-contribute"
+** License
+   :PROPERTIES:
+   :CUSTOM_ID: supplements-license
+   :END:
+#+INCLUDE: "./plates.inc::mit-license"

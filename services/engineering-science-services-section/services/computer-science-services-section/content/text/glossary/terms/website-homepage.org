@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       1503af2d-855f-4b54-8307-730b30fc07e4
+:END:
+#+title: website homepage
+#+date: [2025-10-01 Wed 06:44]
+

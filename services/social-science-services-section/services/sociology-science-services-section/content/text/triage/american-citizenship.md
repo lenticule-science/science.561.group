@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       ec625148-3579-4109-9dc9-449a94b8a341
+:NODE-RELATIONS: (([[id:1381eda5-98a7-439f-bd83-3302d59131b3][citizenship]] . [[id:0f55630d-f00f-4101-bbe5-95140331247e][United States of America]]))
+:END:
+#+title: American citizenship
+#+date: [2025-09-28 Sun 09:52]

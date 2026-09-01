@@ -1,0 +1,26 @@
+{
+  "act_ref": "FixedKernel",
+  "basis": [
+    "a",
+    "b"
+  ],
+  "id": "e5f775b94863b7b1d1a33bfd0ae8f0acf985a33dbfce2b5e0ec91d9c6036ed56",
+  "kernel_matrix": [
+    [
+      "1/2",
+      "1/2"
+    ],
+    [
+      "1/2",
+      "1/2"
+    ]
+  ],
+  "kind": "fixed_kernel",
+  "stationarity_evidence": {
+    "observation_kernel_id": "ea29e8381baf7e5135557d40257ef0e0bf08cfb36f3a9438e858445b607f3ca4",
+    "space_average": [
+      "1/2",
+      "1/2"
+    ]
+  }
+}

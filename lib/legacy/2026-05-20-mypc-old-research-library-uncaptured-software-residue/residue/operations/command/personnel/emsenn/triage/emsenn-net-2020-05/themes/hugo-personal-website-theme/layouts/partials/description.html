@@ -1,0 +1,134 @@
+{{- $scratch := newScratch -}}
+{{- ($scratch.Set "showListItems" "") -}}
+{{- ($scratch.Set "showDate" "essay fiction note") -}}
+{{- ($scratch.Set "showReadingTime" "essay fiction letter manual procedure procedures") -}}
+{{- ($scratch.Set "showWordCount" "essay fiction letter manual procedure procedures") -}}
+{{- ($scratch.Set "paramTypes" slice) -}}
+
+{{- if (isset .Params "categories") -}}
+  {{- with .Params.categories -}}
+    {{- range last 1 . -}}
+      {{- ($scratch.Set "contentType" .) -}}
+    {{- end -}}
+  {{- end -}}
+{{- else -}}
+  {{- $scratch.Set "contentType" "piece" -}}
+{{- end -}}
+
+{{- if (isset .Params "tags") -}}
+  {{- with .Params.tags -}}
+    {{- range last 1 . -}}
+      {{- if (eq (. | title) .) -}}
+	{{- ($scratch.Set "contentSubject" (. | humanize | title)) -}}
+      {{- else -}}
+	{{- ($scratch.Set "contentSubject" (. | humanize | lower)) -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- with ($scratch.Get "contentType") -}}
+  {{- if (eq . ( . | pluralize)) -}}
+    {{- ($scratch.SetInMap "grammar" "article" "these") -}}
+    {{- ($scratch.SetInMap "grammar" "hasTense" "have") -}}
+    {{- ($scratch.SetInMap "grammar" "isTense" "are") -}}
+  {{- else -}}
+    {{- ($scratch.SetInMap "grammar" "article" "this") -}}
+    {{- ($scratch.SetInMap "grammar" "hasTense" "has") -}}
+    {{- ($scratch.SetInMap "grammar" "isTense" "is") -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if (in ($scratch.Get "showDate") ($scratch.Get "contentType")) -}}
+  {{- with .Date -}}
+    {{- ($scratch.SetInMap "pageParameters" "1date" .) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if (in ($scratch.Get "showListItems") ($scratch.Get "contentType")) -}}
+{{- end -}}
+
+{{- if (in ($scratch.Get "showWordCount") ($scratch.Get "contentType")) -}}
+    {{- ($scratch.SetInMap "pageParameters" "3wordCount" .WordCount) -}}
+{{- end -}}
+
+{{- if (in ($scratch.Get "showReadingTime") ($scratch.Get "contentType")) -}}
+  {{- ($scratch.SetInMap "pageParameters" "4readingTime" .ReadingTime) -}}
+{{- end -}}
+
+{{- if (.Draft) -}}
+  {{- ($scratch.SetInMap "pageParameters" "5isDraft" true) -}}
+{{- end -}}
+
+{{- ($scratch.Set "introClause" (printf "%s **%s**" ((index ($scratch.Get "grammar") "article") | title) ($scratch.Get "contentType"))) -}}
+{{- with ($scratch.Get "contentSubject") -}}
+  {{- ($scratch.Set "introClause" (printf "%s is about **%s** and" ($scratch.Get "introClause") (printf "%s" .))) -}}
+{{- end -}}
+{{- range $k, $v := ($scratch.Get "pageParameters") -}}
+  {{- ($scratch.Add "paramTypes" (slice $k)) -}}
+{{- end -}}
+{{- if (gt (len ($scratch.Get "paramTypes")) 1) -}}
+  {{- ($scratch.Set "fullDesc" ($scratch.Get "introClause")) -}}
+  {{- range first (sub (len ($scratch.Get "paramTypes")) 1) ($scratch.Get "paramTypes") -}}
+    {{- if (eq . "1date") -}}
+      {{- if $.PublishDate -}}
+	{{- if (ne (string $.PublishDate) ("0001-01-01 00:00:00 +0000 UTC")) -}}
+	  {{- ($scratch.Set "fullDesc" (printf "%s was **released on %s**," ($scratch.Get "fullDesc") (dateFormat "January 2, 2006" $.PublishDate))) -}}
+	{{- else -}}
+	  {{- ($scratch.Set "fullDesc" (printf "%s was **last updated on %s**," ($scratch.Get "fullDesc") (dateFormat "Jan 2, 2006" $.Date))) -}}
+	{{- end -}}
+      {{- end -}}
+    {{- else if (eq . "2listItems") -}}
+    {{- else if (eq . "3wordCount") -}}
+      {{- ($scratch.Set "fullDesc" (printf "s% %s **%s words**," ($scratch.Get "fullDesc") (index ($scratch.Get "grammar") "hasTense") (string (index ($scratch.Get "pageParameters") .)))) | safeHTML -}}
+    {{- else if (eq . "4readingTime") -}}
+      {{- ($scratch.Set "fullDesc" (printf "%s %s estimated to take **%s minutes to read**," ($scratch.Get "fullDesc") (index ($scratch.Get "grammar") "isTense") (string (math.Round (mul (index ($scratch.Get "pageParameters") .) 1.2))))) -}}
+    {{- else if (eq . "5isDraft") -}}
+      {{- ($scratch.Set "fullDesc" (printf "%s <strong>not finalized</strong>," ($scratch.Get "fullDesc") (index ($scratch.Get "grammar") "isTense"))) -}}
+    {{- end -}}
+  {{- end -}}
+  {{- range last 1 ($scratch.Get "paramTypes") -}}
+    {{- if (eq . "1date") -}}
+      {{- if $.PublishDate -}}
+	{{- if (ne (string $.PublishDate) ("0001-01-01 00:00:00 +0000 UTC")) -}}
+	  {{- ($scratch.Set "fullDesc" (printf "%s was **released on %s**," ($scratch.Get "fullDesc") (dateFormat "January 2, 2006" $.PublishDate))) -}}
+	{{- else -}}
+	  {{- ($scratch.Set "fullDesc" (printf "%s was **last updated on %s**," ($scratch.Get "fullDesc") (dateFormat "Jan 2, 2006" $.Date))) -}}
+	{{- end -}}
+      {{- end -}}
+    {{- else if (eq . "2listItems") -}}
+    {{- else if (eq . "3wordCount") -}}
+      {{- ($scratch.Set "fullDesc" (printf "%s and %s **%s words**." ($scratch.Get "fullDesc") (index ($scratch.Get "grammar") "hasTense") (string (index ($scratch.Get "pageParameters") .)))) | safeHTML -}}
+    {{- else if (eq . "4readingTime") -}}
+      {{- ($scratch.Set "fullDesc" (printf "%s and %s estimated to take **%s minutes to read**." ($scratch.Get "fullDesc") (index ($scratch.Get "grammar") "isTense") (string (math.Round (mul (index ($scratch.Get "pageParameters") .) 1.2))))) -}}
+    {{- else if (eq . "5isDraft") -}}
+      {{- ($scratch.Set "fullDesc" (printf "%s and %s **not finalized**." ($scratch.Get "fullDesc") (index ($scratch.Get "grammar") "isTense"))) -}}
+    {{- end -}}
+  {{- end -}}
+{{- else if (gt (len ($scratch.Get "paramTypes")) 0) -}}
+  {{- ($scratch.Set "fullDesc" ($scratch.Get "introClause")) -}}
+  {{- with ($scratch.Get "contentSubject") -}}
+    {{- ($scratch.Set "introClause" (printf "%s %s about %s and" ($scratch.Get "introClause") (index ($scratch.Get "grammar") "isTense") ($scratch.Get "contentSubject" ))) -}}
+  {{- end -}}
+  {{- range first 1 ($scratch.Get "paramTypes") -}}
+    {{- if (eq . "1date") -}}
+      {{- if $.PublishDate -}}
+	{{- if (ne (string $.PublishDate) ("0001-01-01 00:00:00 +0000 UTC")) -}}
+	  {{- ($scratch.Set "fullDesc" (printf "%s was **released on %s**," ($scratch.Get "fullDesc") (dateFormat "January 2, 2006" $.PublishDate))) -}}
+	{{- else -}}
+	  {{- ($scratch.Set "fullDesc" (printf "%s was **last updated on %s**," ($scratch.Get "fullDesc") (dateFormat "Jan 2, 2006" $.Date))) -}}
+	{{- end -}}
+      {{- end -}}
+    {{- else if (eq . "2listItems") -}}
+    {{- else if (eq . "3wordCount") -}}
+      {{- ($scratch.Set "fullDesc" (printf "%s %s **%s words**." ($scratch.Get "fullDesc") (index ($scratch.Get "grammar") "hasTense") (string (index ($scratch.Get "pageParameters") .)))) -}}
+    {{- else if (eq . "4readingTime") -}}
+      {{- ($scratch.Set "fullDesc" (printf "%s %s estimated to take **%s minutes to read**." ($scratch.Get "fullDesc") (index ($scratch.Get "grammar") "isTense") (string (math.Round (mul (index ($scratch.Get "pageParameters") .) 1.2))))) -}}
+    {{- else if (eq . "5isDraft") -}}
+      {{- ($scratch.Set "fullDesc" (printf "%s %s <strong>not finalized</strong>." ($scratch.Get "fullDesc") (index ($scratch.Get "grammar") "isTense"))) -}}
+    {{- end -}}
+  {{- end -}}
+{{- else -}}
+  {{- ($scratch.Set "fullDesc" ($scratch.Get "introClause")) -}}
+{{- end -}}
+{{- ($scratch.Get "fullDesc") | markdownify -}}

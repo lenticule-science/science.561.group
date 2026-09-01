@@ -1,0 +1,875 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2019-06-09 Sun 21:10 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Hugo Personal Website Theme</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="emsenn" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Hugo Personal Website Theme</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org4a7d0bd">Introduction</a></li>
+<li><a href="#hugo-media-package-channel-generator">Hugo Personal Website Theme</a>
+<ul>
+<li><a href="#orga20e68a">Overview</a></li>
+<li><a href="#orgaf33f49">Operations</a>
+<ul>
+<li><a href="#org8ae209f">Install the Theme</a></li>
+<li><a href="#orgc11b22c">Prepare the Build Environment</a></li>
+<li><a href="#org8bcdb8b">Build the Theme</a></li>
+<li><a href="#org1e02ffb">Distribute the Theme</a></li>
+</ul>
+</li>
+<li><a href="#orgfb0eaae">Theme Configuration</a></li>
+<li><a href="#orgaa9fa41">Page Layouts</a>
+<ul>
+<li><a href="#orgb5436ea">Base Page Layout</a></li>
+<li><a href="#orgf39f4e6">List Page Layout</a></li>
+<li><a href="#org0f6f037">Index Page Layout</a></li>
+<li><a href="#orgd96e8a1">Single Page Layout</a></li>
+<li><a href="#org2316f8d">404 Page Layout</a></li>
+</ul>
+</li>
+<li><a href="#orge4eda18">Partial Layouts</a>
+<ul>
+<li><a href="#org5559b39">Pages Listing</a></li>
+<li><a href="#orgc907de8">Main Menu Listing</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orga90bfd8">Supplements</a>
+<ul>
+<li><a href="#org5ca8540">Index</a></li>
+<li><a href="#orgcceec30">README</a></li>
+<li><a href="#orgad57988">Source</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org4a7d0bd" class="outline-2">
+<h2 id="org4a7d0bd">Introduction</h2>
+<div class="outline-text-2" id="text-org4a7d0bd">
+<p>
+This <i>Hugo</i> theme is about a software prototype. It is likely to be inaccurate.
+</p>
+
+<p>
+This <i>Hugo</i> theme is an implementation of a <i>personal website</i>: a website
+catered around presenting information about a person. It is done using
+<i>Hugo</i>, a <i>static site generator</i> written in <i>Go</i>.
+</p>
+
+<p>
+The theme is written primarily for my personal use, on
+<a href="https://emsenn.net">https://emsenn.net</a>.
+</p>
+
+<p>
+The focus is on a relatively data-driven site, and hopefully one
+that's able to present that data in a useful way, too.
+</p>
+
+<p>
+This <i>Hugo</i> theme was created by me, emsenn, in the United States. To the extent possible under law, I have waived all copyright and related or neighboring rights to this document. This document was created for the benefit of the public. If you're viewing it on a remote server, you're encouraged to download your own copy. To learn how you can support me, see <a href="https://emsenn.net/donate">https://emsenn.net/donate</a>.
+</p>
+
+<p>
+This <i>Hugo</i> theme implements its content using the <i>literate programming</i> paradigm. The "software" being presented is included as sections of code, within a longer piece of prose which explains the codes' purpose and usage. See <a href="https://en.wikipedia.org/wiki/Literate_programming">https://en.wikipedia.org/wiki/Literate_programming</a>
+</p>
+</div>
+</div>
+<div id="outline-container-orgffa0049" class="outline-2">
+<h2 id="hugo-media-package-channel-generator">Hugo Personal Website Theme</h2>
+<div class="outline-text-2" id="text-hugo-media-package-channel-generator">
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orga20e68a">Overview</a></li>
+<li><a href="#orgaf33f49">Operations</a></li>
+<li><a href="#orgfb0eaae">Theme Configuration</a></li>
+<li><a href="#orgaa9fa41">Page Layouts</a></li>
+<li><a href="#orge4eda18">Partial Layouts</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga20e68a" class="outline-3">
+<h3 id="orga20e68a">Overview</h3>
+<div class="outline-text-3" id="text-orga20e68a">
+<p>
+This <i>theme</i> provides layouts for generating a static website with the
+<i>Hugo</i> static site generator. Despite the name, it doesn't provide any
+information about how to style the documents - <i>theme</i> here is just
+<i>Hugo's</i> term for things.
+</p>
+</div>
+</div>
+<div id="outline-container-orgaf33f49" class="outline-3">
+<h3 id="orgaf33f49">Operations</h3>
+<div class="outline-text-3" id="text-orgaf33f49">
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org8ae209f">Install the Theme</a></li>
+<li><a href="#orgc11b22c">Prepare the Build Environment</a></li>
+<li><a href="#org8bcdb8b">Build the Theme</a></li>
+<li><a href="#org1e02ffb">Distribute the Theme</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8ae209f" class="outline-4">
+<h4 id="org8ae209f">Install the Theme</h4>
+<div class="outline-text-4" id="text-org8ae209f">
+</div>
+<div id="outline-container-org6f0054e" class="outline-5">
+<h5 id="org6f0054e">Install with Git</h5>
+</div>
+<div id="outline-container-org720e91d" class="outline-5">
+<h5 id="org720e91d">Install from Source</h5>
+</div>
+</div>
+<div id="outline-container-orgc11b22c" class="outline-4">
+<h4 id="orgc11b22c">Prepare the Build Environment</h4>
+<div class="outline-text-4" id="text-orgc11b22c">
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#create-directories">Create Directories</a></li>
+<li><a href="#orga0b588f">Tangle Code</a></li>
+<li><a href="#org4f0e7ad">Remove Past Builds</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga227594" class="outline-5">
+<h5 id="create-directories">Create Directories</h5>
+<div class="outline-text-5" id="text-create-directories">
+<p>
+This shell script makes all the directories Hugo will expect to have.
+</p>
+<div class="org-src-container">
+<pre class="src src-sh">mkdir -p ../layouts/{_default,partials}
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga0b588f" class="outline-5">
+<h5 id="orga0b588f">Tangle Code</h5>
+<div class="outline-text-5" id="text-orga0b588f">
+<p>
+The implementation of this <i>theme</i> is programmed <i>literately</i>, as
+code blocks embedded in this <i>Hugo</i> theme.
+</p>
+
+<p>
+The <i>theme</i> is implemented as a collection of <i>Hugo layouts</i>,
+which <i>Hugo</i> uses to create the final website.
+</p>
+
+<p>
+To tangle this code from this document you need the <i>Emacs</i> software
+and its <i>Org-mode</i>. Then, while viewing this file, run the command
+<code>org-babel-tangle</code>. You must first create directories, see <a href="#create-directories">"Create
+Directories"</a>, so the folders the layouts expect are present.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4f0e7ad" class="outline-5">
+<h5 id="org4f0e7ad">Remove Past Builds</h5>
+<div class="outline-text-5" id="text-org4f0e7ad">
+<p>
+If you want to remove past builds:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh">rm -r ./build/
+mkdir ./build/
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org8bcdb8b" class="outline-4">
+<h4 id="org8bcdb8b">Build the Theme</h4>
+<div class="outline-text-4" id="text-org8bcdb8b">
+<p>
+To rebuild the collection of files that are the <i>theme</i>, you need the
+<i>Hugo</i> software. Then, run <code>hugo</code> while in the <code>./build/</code> directory,
+and it will create the channel under <code>./build/public/</code>.
+</p>
+</div>
+</div>
+<div id="outline-container-org1e02ffb" class="outline-4">
+<h4 id="org1e02ffb">Distribute the Theme</h4>
+<div class="outline-text-4" id="text-org1e02ffb">
+<p>
+The generated theme is in <code>./build/public/</code>.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgfb0eaae" class="outline-3">
+<h3 id="orgfb0eaae">Theme Configuration</h3>
+<div class="outline-text-3" id="text-orgfb0eaae">
+<p>
+The configuration below <i>tangles</i> to <code>./build/theme.toml</code>. Explaining
+it in detail is beyond the scope of this document. <a href="https://gohugo.io/themes/">https://gohugo.io/themes/</a>
+</p>
+<div class="org-src-container">
+<pre class="src src-toml" id="org774fbc1"><span style="color: #7c7c7c;">name</span> = <span style="color: #8e8e8e;">"Hugo Personal Website Theme"</span>
+<span style="color: #7c7c7c;">license</span> = <span style="color: #8e8e8e;">"CC0"</span>
+<span style="color: #7c7c7c;">min_version</span> = <span style="color: #8e8e8e;">"0.55"</span>
+[<span style="color: #a0a0a0;">author</span>]
+  <span style="color: #7c7c7c;">name</span> = <span style="color: #8e8e8e;">"emsenn"</span>
+  <span style="color: #7c7c7c;">homepage</span> = <span style="color: #8e8e8e;">"https://emsenn.net"</span>
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgaa9fa41" class="outline-3">
+<h3 id="orgaa9fa41">Page Layouts</h3>
+<div class="outline-text-3" id="text-orgaa9fa41">
+<p>
+This section contains the different page <i>layouts</i>.
+</p>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgb5436ea">Base Page Layout</a></li>
+<li><a href="#orgf39f4e6">List Page Layout</a></li>
+<li><a href="#org0f6f037">Index Page Layout</a></li>
+<li><a href="#orgd96e8a1">Single Page Layout</a></li>
+<li><a href="#org2316f8d">404 Page Layout</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgb5436ea" class="outline-4">
+<h4 id="orgb5436ea">Base Page Layout</h4>
+<div class="outline-text-4" id="text-orgb5436ea">
+<p>
+Located at <code>./build/layouts/_default/baseof.html</code>, this <i>layout</i>
+serves as the base for all others in this collection.
+</p>
+<div class="org-src-container">
+<pre class="src src-html"><span style="color: #8e8e8e;">&lt;!DOCTYPE html&gt;</span>
+  &lt;<span style="color: #686868;">html</span> <span style="color: #7c7c7c;">xmlns</span>=<span style="color: #8e8e8e;">"http://www.w3.org/1999/xhtml"</span>
+    {{- with .Site.Language.Lang }} <span style="color: #868686;">xml</span>:<span style="color: #7c7c7c;">lang</span>=<span style="color: #8e8e8e;">"{{- . -}}"</span> <span style="color: #7c7c7c;">lang</span>=<span style="color: #8e8e8e;">"{{- . -}}"</span>
+    {{- end }}&gt;
+  &lt;<span style="color: #686868;">head</span>&gt;
+    &lt;<span style="color: #686868;">link</span> <span style="color: #7c7c7c;">href</span>=<span style="color: #8e8e8e;">"https://gmpg.org/xfn/11"</span> <span style="color: #7c7c7c;">rel</span>=<span style="color: #8e8e8e;">"profile"</span>&gt;
+    &lt;<span style="color: #686868;">meta</span> <span style="color: #7c7c7c;">charset</span>=<span style="color: #8e8e8e;">"UTF-8"</span>&gt;
+    &lt;<span style="color: #686868;">meta</span> <span style="color: #7c7c7c;">name</span>=<span style="color: #8e8e8e;">"description"</span> <span style="color: #7c7c7c;">content</span>=<span style="color: #8e8e8e;">""</span>&gt;
+    &lt;<span style="color: #686868;">meta</span> <span style="color: #7c7c7c;">name</span>=<span style="color: #8e8e8e;">"keywords"</span> <span style="color: #7c7c7c;">content</span>=<span style="color: #8e8e8e;">"{{- .Render "</span>keywords<span style="color: #8e8e8e;">" -}}"</span>&gt;
+    {{- with ((.Params.author) | default (.Site.Author)) }}
+    &lt;<span style="color: #686868;">meta</span> <span style="color: #7c7c7c;">name</span>=<span style="color: #8e8e8e;">"author"</span> <span style="color: #7c7c7c;">content</span>=<span style="color: #8e8e8e;">"{{ . }}"</span>&gt;
+    {{- end }}
+    &lt;<span style="color: #686868;">meta</span> <span style="color: #7c7c7c;">name</span>=<span style="color: #8e8e8e;">"viewport"</span> <span style="color: #7c7c7c;">content</span>=<span style="color: #8e8e8e;">"width=device-width, initial-scale=1.0"</span>&gt;
+    &lt;<span style="color: #686868;">title</span>&gt;<span style="font-weight: bold; text-decoration: underline;">{{- printf </span><span style="color: #8e8e8e; font-weight: bold; text-decoration: underline;">"%s%s"</span><span style="font-weight: bold; text-decoration: underline;"> (.Site.Title) (printf </span><span style="color: #8e8e8e; font-weight: bold; text-decoration: underline;">": %s"</span><span style="font-weight: bold; text-decoration: underline;"> (((.Data.Term | pluralize) | default .Title)) | default </span><span style="color: #8e8e8e; font-weight: bold; text-decoration: underline;">"Personal Website"</span><span style="font-weight: bold; text-decoration: underline;">) -}}</span>&lt;/<span style="color: #686868;">title</span>&gt;
+    &lt;<span style="color: #686868;">style</span>&gt;
+      html {
+        color: #444;
+        background-color: #eee;
+      }
+      body: { margin: 0; }
+      header {
+        overflow: hidden;
+        padding: 1rem 0 3rem 0;
+        background: linear-gradient(to bottom, #eeef 92%, #eee0);
+      }
+      main {
+        width: 80vw;
+        max-width: 40rem;
+        margin: -4rem 1em -6rem;
+        padding: 3rem 2rem 6rem;
+        background: linear-gradient(to right, #eee0, #eeef 02%, #eeef 98%, #eee0);
+      }
+      footer {
+        padding: 4rem 1rem 1rem;
+        background: linear-gradient(to top, #eeef 97%, #eee0);
+      }
+      a {
+        text-decoration: none;
+        color: #3ac;
+        display: inline;
+        position: relative;
+        border-bottom: 0.1rem dotted;
+        line-height: 1.2;
+        transition: border 0.3s;
+      }
+      a:hover {
+        color: #5ce;
+        outline-style: none;
+        border-bottom: 0.1rem solid;
+      }
+      a:visited { color: #b8c; }
+      a:visited:hover { color: #dae; }
+      a:focus {
+        outline-style: none;
+        border-bottom: 0.1rem solid;
+      }
+      .skipToContentLink {
+        opacity: 0;
+        position: absolute;
+      }
+      .skipToContentLink:focus{
+        opacity:1
+      }
+      ::selection {
+        color: #222;
+        background-color: #777;
+      }
+      img {
+        width: 100%;
+      }
+    &lt;/<span style="color: #686868;">style</span>&gt;
+  &lt;/<span style="color: #686868;">head</span>&gt;
+  &lt;<span style="color: #686868;">body</span>&gt;
+    &lt;<span style="color: #686868;">a</span> <span style="color: #7c7c7c;">class</span>=<span style="color: #8e8e8e;">"skipToContentLink"</span> <span style="color: #7c7c7c;">href</span>=<span style="color: #8e8e8e;">"#content"</span>&gt;Skip to Content&lt;/<span style="color: #686868;">a</span>&gt;
+    &lt;<span style="color: #686868;">header</span>&gt;
+      &lt;<span style="color: #686868;">h1</span>&gt;<span style="font-weight: bold; text-decoration: underline;">{{ .Title | default (.Data.Term.Pluralize | default (.Site.Title | default </span><span style="color: #8e8e8e; font-weight: bold; text-decoration: underline;">"Personal Website"</span><span style="font-weight: bold; text-decoration: underline;">)) }}</span>&lt;/<span style="color: #686868;">h1</span>&gt;
+    &lt;/<span style="color: #686868;">header</span>&gt;
+    &lt;<span style="color: #686868;">main</span>&gt;
+      {{- block <span style="color: #8e8e8e;">"main"</span> . -}}
+        <span style="color: #b9b9b9;">&lt;!-- --&gt;</span>
+      {{- end }}
+    &lt;/<span style="color: #686868;">main</span>&gt;
+  &lt;/<span style="color: #686868;">body</span>&gt;
+&lt;/<span style="color: #686868;">html</span>&gt;
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf39f4e6" class="outline-4">
+<h4 id="orgf39f4e6">List Page Layout</h4>
+<div class="outline-text-4" id="text-orgf39f4e6">
+<p>
+Located at <code>./build/layouts/_default/list.html</code>, this <i>layout</i> serves
+serves as the base for pages that exist to serve lists, like the index
+(homepage), or taxonomical list pages, such as those for categories or
+tags.
+</p>
+<div class="org-src-container">
+<pre class="src src-html">{{ define <span style="color: #8e8e8e;">"main"</span> }}
+  {{ partial <span style="color: #8e8e8e;">"pages-listing"</span> . }}
+{{ end }}
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org0f6f037" class="outline-4">
+<h4 id="org0f6f037">Index Page Layout</h4>
+<div class="outline-text-4" id="text-org0f6f037">
+<div class="org-src-container">
+<pre class="src src-html" id="orgdfecd31">{{ define <span style="color: #8e8e8e;">"main"</span> }}
+  {{ with .Content }}{{ . }}{{ end }}
+  {{ partial <span style="color: #8e8e8e;">"index-menu-listing.html"</span> . }}
+  {{ with .Site.Data.activities }}
+    &lt;<span style="color: #686868;">h2</span>&gt;<span style="font-weight: bold; font-style: italic; text-decoration: underline;">Recent Activites</span>&lt;/<span style="color: #686868;">h2</span>&gt;
+    &lt;<span style="color: #686868;">ul</span>&gt;
+      {{ range $date, $report := . }}
+        &lt;<span style="color: #686868;">li</span>&gt;
+          {{ (printf <span style="color: #8e8e8e;">"**%s,** %s"</span> (dateFormat <span style="color: #8e8e8e;">"January 2, 2006"</span> $date) $report) | safeHTML | markdownify }}
+        &lt;/<span style="color: #686868;">li</span>&gt;
+      {{ end }}
+    &lt;/<span style="color: #686868;">ul</span>&gt;
+  {{ end }}
+  {{ with .Site.Data.plans }}
+    &lt;<span style="color: #686868;">h2</span>&gt;<span style="font-weight: bold; font-style: italic; text-decoration: underline;">Plans</span>&lt;/<span style="color: #686868;">h2</span>&gt;
+    {{ range $type, $plans := . }}
+      &lt;<span style="color: #686868;">h3</span>&gt;<span style="font-style: italic; text-decoration: underline;">{{ $type | upper }}</span>&lt;/<span style="color: #686868;">h3</span>&gt;
+      &lt;<span style="color: #686868;">ul</span>&gt;
+        {{ range $plans }}
+          &lt;<span style="color: #686868;">li</span>&gt;{{ . }}&lt;/<span style="color: #686868;">li</span>&gt;
+        {{ end }}
+      &lt;/<span style="color: #686868;">ul</span>&gt;
+    {{ end }}
+  {{ end }}
+{{ end }}
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd96e8a1" class="outline-4">
+<h4 id="orgd96e8a1">Single Page Layout</h4>
+<div class="outline-text-4" id="text-orgd96e8a1">
+<div class="org-src-container">
+<pre class="src src-html" id="orge2ad779">{{- define <span style="color: #8e8e8e;">"main"</span> -}}
+  {{ with .Content }}
+    {{ . }}
+  {{ end }}
+{{- end -}}
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org2316f8d" class="outline-4">
+<h4 id="org2316f8d">404 Page Layout</h4>
+<div class="outline-text-4" id="text-org2316f8d">
+<div class="org-src-container">
+<pre class="src src-html" id="orga913c36">{{- define <span style="color: #8e8e8e;">"main"</span> -}}
+
+&lt;<span style="color: #686868;">article</span>&gt;
+    &lt;<span style="color: #686868;">h1</span> <span style="color: #7c7c7c;">class</span>=<span style="color: #8e8e8e;">"post-title"</span>&gt;<span style="font-weight: bold; text-decoration: underline;">404</span>&lt;/<span style="color: #686868;">h1</span>&gt;
+    &lt;<span style="color: #686868;">p</span>&gt;
+        Sorry, we have misplaced that URL or it's pointing to something that
+        doesn't exist.
+    &lt;/<span style="color: #686868;">p</span>&gt;
+    &lt;<span style="color: #686868;">p</span>&gt;
+        Head back &lt;<span style="color: #686868;">a</span> <span style="color: #7c7c7c;">href</span>=<span style="color: #8e8e8e;">"/"</span>&gt;Home&lt;/<span style="color: #686868;">a</span>&gt; or use the &lt;<span style="color: #686868;">a</span> <span style="color: #7c7c7c;">href</span>=<span style="color: #8e8e8e;">"/search/"</span>&gt;Search&lt;/<span style="color: #686868;">a</span>&gt; to
+        try finding it again.
+    &lt;/<span style="color: #686868;">p</span>&gt;
+&lt;/<span style="color: #686868;">article</span>&gt;
+
+{{- end -}}
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orge4eda18" class="outline-3">
+<h3 id="orge4eda18">Partial Layouts</h3>
+<div class="outline-text-3" id="text-orge4eda18">
+</div>
+<div id="outline-container-org5559b39" class="outline-4">
+<h4 id="org5559b39">Pages Listing</h4>
+<div class="outline-text-4" id="text-org5559b39">
+<div class="org-src-container">
+<pre class="src src-html">  {{ with .Pages }}
+    &lt;<span style="color: #686868;">ul</span>&gt;
+      {{ range . }}
+        &lt;<span style="color: #686868;">li</span>&gt;
+          &lt;<span style="color: #686868;">a</span> <span style="color: #7c7c7c;">href</span>=<span style="color: #8e8e8e;">"{{ .Permalink}}"</span>&gt;&lt;<span style="color: #686868;">strong</span>&gt;
+<span style="font-weight: bold;">            {{- if (eq .Kind </span><span style="color: #8e8e8e; font-weight: bold;">"taxonomy"</span><span style="font-weight: bold;">) -}}</span>
+<span style="font-weight: bold;">              {{- .Title | pluralize -}}</span>
+<span style="font-weight: bold;">        {{- else -}}{{- .Title -}}{{- end -}}</span>
+<span style="font-weight: bold;">        </span>&lt;/<span style="color: #686868;">strong</span>&gt;&lt;/<span style="color: #686868;">a</span>&gt;&lt;<span style="color: #686868;">br</span>/&gt;
+      &lt;/<span style="color: #686868;">li</span>&gt;
+    {{ end }}
+  &lt;/<span style="color: #686868;">ul</span>&gt;
+{{ end }}
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc907de8" class="outline-4">
+<h4 id="orgc907de8">Main Menu Listing</h4>
+<div class="outline-text-4" id="text-orgc907de8">
+<div class="org-src-container">
+<pre class="src src-html">{{ with .Site.Menus.index }}
+  &lt;<span style="color: #686868;">ul</span>&gt;
+    {{ range . }}
+      &lt;<span style="color: #686868;">li</span>&gt;&lt;<span style="color: #686868;">a</span> <span style="color: #7c7c7c;">href</span>=<span style="color: #8e8e8e;">"{{ .URL }}"</span>&gt;{{ .Name }}&lt;/<span style="color: #686868;">a</span>&gt;&lt;/<span style="color: #686868;">li</span>&gt;
+    {{ end }}
+  &lt;/<span style="color: #686868;">ul</span>&gt;
+{{ end }}
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orga90bfd8" class="outline-2">
+<h2 id="orga90bfd8">Supplements</h2>
+<div class="outline-text-2" id="text-orga90bfd8">
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org5ca8540">Index</a></li>
+<li><a href="#orgcceec30">README</a></li>
+<li><a href="#orgad57988">Source</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5ca8540" class="outline-3">
+<h3 id="org5ca8540">Index</h3>
+<div class="outline-text-3" id="text-org5ca8540">
+<dl class="org-dl">
+<dt>JSON</dt><dd>A human-readable data format. See <a href="https://json.org/">https://json.org/</a>.</dd>
+<dt>HTML</dt><dd>A way of adding layout, formatting, and media to text documents. See <a href="https://en.wikipedia.org/wiki/HTML">https://en.wikipedia.org/wiki/HTML</a>.</dd>
+<dt>Markdown</dt><dd>A way of adding style notation to plain text. <a href="https://daringfireball.net/projects/markdown/">https://daringfireball.net/projects/markdown/</a></dd>
+<dt>Hugo</dt><dd>A software tool for creating rendered documents from formatted text files. See <a href="https://gohugo.io/">https://gohugo.io/</a></dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-orgcceec30" class="outline-3">
+<h3 id="orgcceec30">README</h3>
+</div>
+
+<div id="outline-container-orgad57988" class="outline-3">
+<h3 id="orgad57988">Source</h3>
+<div class="outline-text-3" id="text-orgad57988">
+<p>
+The following is the source of this document as it was written by the
+author.
+</p>
+<pre class="example">
+#+TITLE: Hugo Personal Website Theme
+#+EXPORT_FILE_NAME: ../hugo-personal-website-theme
+#+MACRO: document-type /Hugo/ theme
+#+TOC: headlines 3
+* Introduction
+{{{document-is-software-prototype}}}
+
+This {{{doc}}} is an implementation of a /personal website/: a website
+catered around presenting information about a person. It is done using
+/Hugo/, a /static site generator/ written in /Go/.
+
+The theme is written primarily for my personal use, on
+[[https://emsenn.net][https://emsenn.net]].
+
+The focus is on a relatively data-driven site, and hopefully one
+that's able to present that data in a useful way, too.
+
+{{{document-eli(default)}}}
+
+{{{document-implements-literate-programming}}}
+* Hugo Personal Website Theme
+  :PROPERTIES:
+  :CUSTOM_ID: hugo-media-package-channel-generator
+  :END:
+#+TOC: headlines 1 local
+** DRAFT Overview
+This /theme/ provides layouts for generating a static website with the
+/Hugo/ static site generator. Despite the name, it doesn't provide any
+information about how to style the documents - /theme/ here is just
+/Hugo's/ term for things.
+** DRAFT Operations
+#+TOC: headlines 1 local
+*** Install the Theme
+**** Install with Git
+**** Install from Source
+*** DRAFT Prepare the Build Environment
+#+TOC: headlines 1 local
+**** DRAFT Create Directories
+     :PROPERTIES:
+     :CUSTOM_ID: create-directories
+     :END:
+This shell script makes all the directories Hugo will expect to have.
+#+begin_src sh :results none
+  mkdir -p ../layouts/{_default,partials}
+#+end_src
+
+**** DRAFT Tangle Code
+The implementation of this /theme/ is programmed /literately/, as
+code blocks embedded in this {{{doc}}}.
+
+The /theme/ is implemented as a collection of /Hugo layouts/,
+which /Hugo/ uses to create the final website.
+
+To tangle this code from this document you need the /Emacs/ software
+and its /Org-mode/. Then, while viewing this file, run the command
+=org-babel-tangle=. You must first create directories, see [[#create-directories]["Create
+Directories"]], so the folders the layouts expect are present.
+
+**** DRAFT Remove Past Builds
+If you want to remove past builds:
+
+#+begin_src sh :results none
+rm -r ./build/
+mkdir ./build/
+#+end_src
+*** DRAFT Build the Theme
+To rebuild the collection of files that are the /theme/, you need the
+/Hugo/ software. Then, run =hugo= while in the =./build/= directory,
+and it will create the channel under =./build/public/=.
+*** DRAFT Distribute the Theme
+The generated theme is in =./build/public/=.
+** DRAFT Theme Configuration
+   :PROPERTIES:
+   :header-args: :tangle ../theme.toml :padline no
+   :END:
+The configuration below /tangles/ to =./build/theme.toml=. Explaining
+it in detail is beyond the scope of this document. {{{source(hugo-themes)}}}
+#+NAME: site-configuration-base-url
+#+begin_src toml
+  name = "Hugo Personal Website Theme"
+  license = "CC0"
+  min_version = "0.55"
+  [author]
+    name = "emsenn"
+    homepage = "https://emsenn.net"
+#+end_src
+** DRAFT Page Layouts
+This section contains the different page /layouts/.
+#+TOC: headlines 1 local
+*** Base Page Layout
+    :PROPERTIES:
+    :header-args: :tangle ../layouts/_default/baseof.html
+    :END:
+Located at =./build/layouts/_default/baseof.html=, this /layout/
+serves as the base for all others in this collection.
+#+BEGIN_SRC html
+  &lt;!DOCTYPE html&gt;
+    &lt;html xmlns="http://www.w3.org/1999/xhtml"
+      {{- with .Site.Language.Lang }} xml:lang="{{- . -}}" lang="{{- . -}}"
+      {{- end }}&gt;
+    &lt;head&gt;
+      &lt;link href="https://gmpg.org/xfn/11" rel="profile"&gt;
+      &lt;meta charset="UTF-8"&gt;
+      &lt;meta name="description" content=""&gt;
+      &lt;meta name="keywords" content="{{- .Render "keywords" -}}"&gt;
+      {{- with ((.Params.author) | default (.Site.Author)) }}
+      &lt;meta name="author" content="{{ . }}"&gt;
+      {{- end }}
+      &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+      &lt;title&gt;{{- printf "%s%s" (.Site.Title) (printf ": %s" (((.Data.Term | pluralize) | default .Title)) | default "Personal Website") -}}&lt;/title&gt;
+      &lt;style&gt;
+	html {
+	  color: #444;
+	  background-color: #eee;
+	}
+	body: { margin: 0; }
+	header {
+	  overflow: hidden;
+	  padding: 1rem 0 3rem 0;
+	  background: linear-gradient(to bottom, #eeef 92%, #eee0);
+	}
+	main {
+	  width: 80vw;
+	  max-width: 40rem;
+	  margin: -4rem 1em -6rem;
+	  padding: 3rem 2rem 6rem;
+	  background: linear-gradient(to right, #eee0, #eeef 02%, #eeef 98%, #eee0);
+	}
+	footer {
+	  padding: 4rem 1rem 1rem;
+	  background: linear-gradient(to top, #eeef 97%, #eee0);
+	}
+	a {
+	  text-decoration: none;
+	  color: #3ac;
+	  display: inline;
+	  position: relative;
+	  border-bottom: 0.1rem dotted;
+	  line-height: 1.2;
+	  transition: border 0.3s;
+	}
+	a:hover {
+	  color: #5ce;
+	  outline-style: none;
+	  border-bottom: 0.1rem solid;
+	}
+	a:visited { color: #b8c; }
+	a:visited:hover { color: #dae; }
+	a:focus {
+	  outline-style: none;
+	  border-bottom: 0.1rem solid;
+	}
+	.skipToContentLink {
+	  opacity: 0;
+	  position: absolute;
+	}
+	.skipToContentLink:focus{
+	  opacity:1
+	}
+	::selection {
+	  color: #222;
+	  background-color: #777;
+	}
+	img {
+	  width: 100%;
+	}
+      &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+      &lt;a class="skipToContentLink" href="#content"&gt;Skip to Content&lt;/a&gt;
+      &lt;header&gt;
+	&lt;h1&gt;{{ .Title | default (.Data.Term.Pluralize | default (.Site.Title | default "Personal Website")) }}&lt;/h1&gt;
+      &lt;/header&gt;
+      &lt;main&gt;
+	{{- block "main" . -}}
+	  &lt;!-- --&gt;
+	{{- end }}
+      &lt;/main&gt;
+    &lt;/body&gt;
+  &lt;/html&gt;
+#+end_src
+*** DRAFT List Page Layout
+    :PROPERTIES:
+    :header-args: :tangle ../layouts/_default/list.html
+    :END:
+Located at =./build/layouts/_default/list.html=, this /layout/ serves
+serves as the base for pages that exist to serve lists, like the index
+(homepage), or taxonomical list pages, such as those for categories or
+tags.
+#+BEGIN_SRC html
+  {{ define "main" }}
+    {{ partial "pages-listing" . }}
+  {{ end }}
+#+END_SRC
+*** DRAFT Index Page Layout
+    :PROPERTIES:
+    :header-args: :tangle ../layouts/_default/index.html
+    :END:
+#+NAME: index-layout
+#+BEGIN_SRC html
+  {{ define "main" }}
+    {{ with .Content }}{{ . }}{{ end }}
+    {{ partial "index-menu-listing.html" . }}
+    {{ with .Site.Data.activities }}
+      &lt;h2&gt;Recent Activites&lt;/h2&gt;
+      &lt;ul&gt;
+	{{ range $date, $report := . }}
+	  &lt;li&gt;
+	    {{ (printf "**%s,** %s" (dateFormat "January 2, 2006" $date) $report) | safeHTML | markdownify }}
+	  &lt;/li&gt;
+	{{ end }}
+      &lt;/ul&gt;
+    {{ end }}
+    {{ with .Site.Data.plans }}
+      &lt;h2&gt;Plans&lt;/h2&gt;
+      {{ range $type, $plans := . }}
+	&lt;h3&gt;{{ $type | upper }}&lt;/h3&gt;
+	&lt;ul&gt;
+	  {{ range $plans }}
+	    &lt;li&gt;{{ . }}&lt;/li&gt;
+	  {{ end }}
+	&lt;/ul&gt;
+      {{ end }}
+    {{ end }}
+  {{ end }}
+#+END_SRC
+*** DRAFT Single Page Layout
+    :PROPERTIES:
+    :header-args: :tangle ../layouts/_default/single.html
+    :END:
+#+NAME: default-single-document-layout
+#+BEGIN_SRC html
+  {{- define "main" -}}
+    {{ with .Content }}
+      {{ . }}
+    {{ end }}
+  {{- end -}}
+#+END_SRC
+*** DRAFT 404 Page Layout
+    :PROPERTIES:
+    :header-args: :tangle ../layouts/404.html
+    :END:
+#+NAME: 404-layout
+#+BEGIN_SRC html
+{{- define "main" -}}
+
+&lt;article&gt;
+    &lt;h1 class="post-title"&gt;404&lt;/h1&gt;
+    &lt;p&gt;
+	Sorry, we have misplaced that URL or it's pointing to something that
+	doesn't exist.
+    &lt;/p&gt;
+    &lt;p&gt;
+	Head back &lt;a href="/"&gt;Home&lt;/a&gt; or use the &lt;a href="/search/"&gt;Search&lt;/a&gt; to
+	try finding it again.
+    &lt;/p&gt;
+&lt;/article&gt;
+
+{{- end -}}
+#+END_SRC
+** Partial Layouts
+*** Pages Listing
+    :PROPERTIES:
+    :header-args: :tangle ../layouts/partials/pages-listing.html
+    :END:
+#+begin_src html
+    {{ with .Pages }}
+      &lt;ul&gt;
+	{{ range . }}
+	  &lt;li&gt;
+	    &lt;a href="{{ .Permalink}}"&gt;&lt;strong&gt;
+	      {{- if (eq .Kind "taxonomy") -}}
+		{{- .Title | pluralize -}}
+	  {{- else -}}{{- .Title -}}{{- end -}}
+	  &lt;/strong&gt;&lt;/a&gt;&lt;br/&gt;
+	&lt;/li&gt;
+      {{ end }}
+    &lt;/ul&gt;
+  {{ end }}
+#+end_src
+*** Main Menu Listing
+    :PROPERTIES:
+    :header-args: :tangle ../layouts/partials/index-menu-listing.html
+    :END:
+#+begin_src html
+  {{ with .Site.Menus.index }}
+    &lt;ul&gt;
+      {{ range . }}
+	&lt;li&gt;&lt;a href="{{ .URL }}"&gt;{{ .Name }}&lt;/a&gt;&lt;/li&gt;
+      {{ end }}
+    &lt;/ul&gt;
+  {{ end }}
+#+end_src
+* Supplements
+#+TOC: headlines 1 local
+** Index
+- JSON :: {{{ref(json)}}}
+- HTML :: {{{ref(html)}}}
+- Markdown :: {{{ref(markdown)}}}
+- Hugo :: {{{ref(hugo)}}}
+** README
+
+** Source
+The following is the source of this document as it was written by the
+author.
+#+INCLUDE:  "./index.org" src
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: emsenn</p>
+<p class="date">Created: 2019-06-09 Sun 21:10</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

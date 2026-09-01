@@ -1,0 +1,12 @@
+---
+kind: definition
+realizes: [entity]
+type: set
+symbol: E
+---
+
+# Entity set
+
+A set, denoted $E$, whose elements are [entities](../concepts/entity.md). The entity set carries no required structure beyond set-hood in general; specific theorems and applications may impose finiteness, and the entity set may be sorted.
+
+Pairs of entities form the index $E \times E$ over which [predication fiber algebras](predication-fiber-algebra.md) are built; the first and second coordinates of such pairs are the [subject](../concepts/subject.md) and [object](../concepts/object.md) positions of [predication cells](../concepts/predication-cell.md).

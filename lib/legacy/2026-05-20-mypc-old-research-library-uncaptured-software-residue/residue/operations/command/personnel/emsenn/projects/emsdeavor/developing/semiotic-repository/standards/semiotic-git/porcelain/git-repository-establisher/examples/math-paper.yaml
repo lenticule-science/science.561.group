@@ -1,0 +1,27 @@
+template: math-paper
+output_path: ./papers/example-math-paper
+
+project:
+  name: Example Math Paper
+  description: A draft math paper scaffolded by repo-establisher.
+  author: emsenn
+  contact_email: emsenn@emsenn.net
+  organization: emsenn
+
+github:
+  owner: emsenn
+  repo: example-math-paper
+  default_branch: main
+  include_codeowners: true
+  include_funding: false
+  badges:
+    tags: true
+
+license:
+  id: MIT
+
+metadata:
+  created: 2025-12-14
+  status: draft
+  tags: [mathematics, category-theory]
+

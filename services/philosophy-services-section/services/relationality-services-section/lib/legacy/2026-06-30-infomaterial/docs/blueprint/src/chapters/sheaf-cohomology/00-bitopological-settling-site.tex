@@ -1,0 +1,28 @@
+\section{The bitopological settling site}
+
+\begin{proposition}[The FOUR has a finite Priestley dual]\label{thm:four-priestley-dual}\lean{Infomaterial.Stone.four_priestley_dual}\leanok\uses{thm:four-object, thm:four-bilattice}
+The four charges are the clopen up-sets of the two-point pairwise-Stone dual.
+This is the local topological carrier over which the settling site is built.
+\end{proposition}
+
+\begin{theorem}[The pairwise-Stone topology recovers the order]\label{thm:pairwise-stone-order-recovery}\lean{Infomaterial.Stone.order_recovered_from_tauPlus}\leanok\uses{thm:four-priestley-dual}
+The bitopological pair recovers the Priestley order: the order is exactly the
+relation preserving all positive clopen observations.
+\end{theorem}
+
+\begin{theorem}[The bitopological settling site is Grothendieck]\label{thm:bitopological-site-grothendieck}\lean{Infomaterial.Site.bitopological_site_grothendieck}\leanok\uses{thm:pairwise-stone-order-recovery, thm:closure-regime-carrier}
+The objects are predicate, stratum, and clopen data; the covering relation is a
+join-cover in the pairwise-Stone clopen fiber.  The clopen algebra, inclusion
+order, temporal preorder, and Grothendieck basis axioms are all formalized.
+\end{theorem}
+
+\begin{theorem}[Covers are fiber-local, not temporal]\label{thm:no-temporal-covers}\lean{Infomaterial.Site.no_temporal_covers}\leanok\uses{thm:bitopological-site-grothendieck}
+A cover refines the clopen fiber at fixed predicate and stratum.  Pure temporal
+advancement is carried by morphisms, not by the topology.  Cross-stratum
+content must therefore enter through morphisms and later direct limits.
+\end{theorem}
+
+\begin{theorem}[The strict site has finite clopen fiber]\label{thm:strict-site-finite-fiber}\lean{Infomaterial.Site.strict_site_finite_fiber}\leanok\uses{thm:no-temporal-covers, thm:spine-is-strict-regime}
+In the strict regime, the clopen fiber is the four-element Boolean algebra.
+This is the finite site on which the first sheaf-cohomology calculation lives.
+\end{theorem}

@@ -1,0 +1,26 @@
+#+title: Ivy
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-19 Sat 20:12]
+#+roam_alias: "Ivy-mode"
+#+roam_tags: term
+
+#+name: ivy-definition
+*/Ivy/* is a tool for easier [[file:text_completion.org][text-completion]] in the [[file:emacs_minibuffer.org][Emacs minibuffer]].
+
+#+name: ivy-straight-use-package-elisp
+#+caption: Setup ivy
+#+begin_src elisp 
+ (use-package ivy
+    :straight t
+    :diminish (ivy-mode . "")
+    :bind (("C-c C-r" . ivy-resume))
+    :config (ivy-mode 1)
+    (setq ivy-use-virtual-buffers t)
+    (setq ivy-height 12)
+    (setq ivy-count-format "(%d/%d) ")
+    (setq ivy-initial-inputs-alist nil)
+    (setq ivy-re-builders-alist
+	  '((read-file-name-internal . ivy--regex-fuzzy)
+	    (t . ivy--regex-ignore-order))))
+#+end_src

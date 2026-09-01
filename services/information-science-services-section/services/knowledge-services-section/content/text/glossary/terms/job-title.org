@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       aac0821d-994b-4e8e-bdd2-b20e0953b715
+:END:
+#+title: job title
+#+date: [2025-10-04 Sat 18:40]
+

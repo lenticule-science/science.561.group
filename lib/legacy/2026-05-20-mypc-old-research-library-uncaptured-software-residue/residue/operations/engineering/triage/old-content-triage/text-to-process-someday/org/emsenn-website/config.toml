@@ -1,0 +1,6 @@
+# baseURL = "https://emsenn.net"
+title = "emsenn"
+theme = ["hugo-personal-website-theme"]
+[author]
+  name = "emsenn"
+  homepage = "https://emsenn.net"

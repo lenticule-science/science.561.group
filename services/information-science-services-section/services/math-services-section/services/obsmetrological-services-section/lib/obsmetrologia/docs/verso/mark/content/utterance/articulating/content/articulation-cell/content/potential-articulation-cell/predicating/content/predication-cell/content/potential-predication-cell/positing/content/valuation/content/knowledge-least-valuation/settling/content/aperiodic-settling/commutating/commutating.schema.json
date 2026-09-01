@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/aperiodic-settling/commutating",
+  "title": "commutating",
+  "description": "The coherence morphism of an aperiodic settling: it asserts that the past-facing nucleus saturating (sigma) and the future-facing nucleus transferring (Delta) on the same settled fiber Heyting algebra commute, sigma . Delta = Delta . sigma, the aperiodic-regime KZ-diamond hinge whose commuting square produces the four-corner quartet.",
+  "type": "object",
+  "required": ["morphism", "domain", "codomain"],
+  "properties": {
+    "morphism": {
+      "const": "commutating",
+      "description": "a one-way generative arrow; asserts sigma . Delta = Delta . sigma so the composite is again a nucleus with doubly-quiescent fixed-point layer A* = Fix(sigma) intersect Fix(Delta)"
+    },
+    "domain": {
+      "$ref": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/aperiodic-settling",
+      "description": "the aperiodic settling carrying the two commuting nuclei it maps out of"
+    },
+    "codomain": {
+      "$ref": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/aperiodic-settling/commutating/content/aperiodic-nuclear-quartet-category",
+      "description": "the aperiodic-nuclear-quartet-category whose objects are commutative nuclear squares (A, sigma, Delta) with four-corner structure (A, Fix(sigma), Fix(Delta), A*)"
+    }
+  }
+}

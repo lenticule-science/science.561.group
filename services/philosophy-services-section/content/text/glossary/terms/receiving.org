@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       64f2a04c-9073-49f6-ab6f-e2356eb4d035
+:ROAM_ALIASES: received receives
+:END:
+#+title: receiving
+#+date: [2025-09-01 Mon 07:44]
+

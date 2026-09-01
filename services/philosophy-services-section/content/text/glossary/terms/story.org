@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       8b841773-a82c-4e01-b77d-bef6c7ee859f
+:public:   true
+:resource-description: (([[id:edaef069-c68d-46aa-a970-d3cb7fe3165c][resource type]] . [[id:e5987b3f-f07f-47a5-ae7e-d16736b5a04d][narrative]]) ([[id:557d79c0-1e0f-45fb-b248-468f23654cc1][creation date]] . [2025-08-25 Mon 08:54]))
+:END:
+#+title: story
+#+index: story
+

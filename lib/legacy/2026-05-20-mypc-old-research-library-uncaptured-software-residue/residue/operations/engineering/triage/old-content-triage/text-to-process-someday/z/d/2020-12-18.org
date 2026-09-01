@@ -1,0 +1,75 @@
+#+title: 2020-12-18
+#+begin_head
+#+ghe_schema: daily-record-0.1.0
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-18 Fri 08:37]
+#+todo: DISCOVERED(!) | REGISTERED(@)
+#+roam_tags: daily-record
+#+end_head
+#+name: summary-text
+#+begin_summary
+This is [[file:../emsenn.org][emsenn]]'s [[file:../daily_record.org][daily record]] for [2020-12-18 Fri]. If you are viewing this record outside of its original environment, please be aware it maybe be heavily redacted.
+#+end_summary
+* Journal                                                          :noexport:
+** [2020-12-18 Fri 08:37]
+ Woke up and watched [[file:../lostsioux.org][@lostsioux]] for a bit, didn't feel well, health-wise; lots of nausea.
+
+ Going to work on my [[file:../language.org][language]] -> [[file:../schema.org][schema]] -> [[file:../org_mode.org][Org-mode]] [[file:../record.org][record]] part of the [[file:../groundhog_emacs.org][Groundhog Emacs]] tool later, once I've finished with my morning. Oh - before that though, I think I might want to work on the general configuration of the Emacs, as well as document how to set up [[file:../git_repository.org][git repositories]] in the various appropriate places and hook that into making a Github page. After helping [[file:../esther_davis.org][Esther]] with it, I think I'm a lot closer than I expected to an [[file:../emacsen.org][Emacsen]] that someone like [[file:../jude.org][@jude]] would be able to use to make a little [[file:../website.org][Website]] than I thought.
+** [2020-12-18 Fri 08:47]
+ So a [[file:../record.org][record]] is [[file:../serialization.org][serialized]] [[file:../information.org][information]], so is itself information (its [[file:../data.org][data]] being the information and [[file:../meta_data.org][meta-data]] being the serialization format.)
+
+ In order for information to be serialized as a record, it needs to be associated with a [[file:../schema.org][schema]]. The specification for handling a serialized schema is a [[file:../record_type.org][record type]].
+
+ So, this writing lives inside the =2020-12-18.org= record, which is of the [[file:../daily_record.org][daily record]] record type.
+
+ Does this translate into a step-by-step for "I have identified a new type of information" to "[[file:../groundhog_emacs.org][Groundhog Emacs]] can capture this information as an appopriate record?"
+
+ 1) Identify a new type of information: something that defines what a word or phrase means.
+ 2) Name this type of information: =term definition= seems like a good one
+ 3) Determine the information's data and meta-data.
+ 4) Craft the information's schema
+ 5) Define a record type based on the schema
+ 6) Create a template record of that type
+ 7) Create a capture template based on that record
+
+ A few of these definitely need more specification, but at a glance, this does indeed bring me from "identify new information" to "can capture it in Groundhog Emacs."
+
+ I think it also begs the question, "what qualifies as 'new type of information,'" which for now I'm going to answer off-the-cuff as "information that can be cultivated into an asset in a better way than existing information types account for.
+** [2020-12-18 Fri 10:15]
+ Really confused if I just did a merge or not with my [[file:../personal_records.org][personal records]], hopefully nothing is too broken!
+** [2020-12-18 Fri 10:17]
+ I'm really enjoying the... metaphor-overlap of =F5= to make a new entry in my [[file:../daily_record.org][daily record]] and =F9= to load it, with the keys familiar to [[file:../first_person_shooters.org][first-person-shooters]].
+** [2020-12-18 Fri 10:21]
+ Okay, so my tasks for the day:
+ - Clean up the [[file:../groundhog_emacs.org][Groundhog Emacs]] record, try and define its type and so on. Start using it for tracking its own needs!
+ - Continue planning the record type for daily records.
+ - Figure out where to record work, clocking-in and -out of things. One record that has it all, or...?
+** [2020-12-18 Fri 13:49]
+ Good afternoon! I've spent some time cleaning up the [[file:../groundhog_emacs.org][Groundhog Emacs]] record, but it's no where near what I want it to be: specifically, there's nothing handling ftracking of what its issues are, or plans for its future.
+
+ It's been a fair bit since I've used [[file:../org_mode.org][Org-mode]], so I'm going to start by just referencing its manual to see what it has to say about tasks and such...
+
+ Okay, it looks like, if I'm not mistaking things, [[file:../org_mode_todo_item.org][Org-mode TODO item]] basically turn a [[file:../org_mode_subtree.org][subtree]] into a [[file:../kanban_card.org][Kanban-card]], where its different non-complete states indicate its place in the production cycle.
+
+ So I reckon I should start by creating the different [[file:../org_mode_todo_keyword.org][Org-mode TODO keyword]] that I'll be using in the Groundhog Emacs, and then continuing to organize the existing subtrees around those states.
+** [2020-12-18 Fri 14:22]
+ I've added the following text to the head of the [[file:../groundhog_emacs.org][Groundhog Emacs]] record, which should set it up to allow for the type of task-planning-and-doing I want.
+
+ #+begin_src org
+   ,#+todo: PLANNING(@) DRAFTING(!) RFC(!) IMPLEMENTING(@) TESTING(@) DOCUMENTING(@) | ACTIVE(@)
+   ,#+todo: DEPRECATING(@) | DEPRECATED(!)
+   ,#+todo: | CANCELED(@)
+   ,#+startup: logdone logdrawer
+ #+end_src
+* Activity Log                                                     :noexport:
+** [2020-12-18 Fri 21:26]
+ Made good progress tinkering with Groundhog Emacs today. Feel like I can keep going ahead with making records! Org-roam seems solid.
+
+* News log
+** Ottawa to phase out fish farms in Discovery Islands by July 2022
+   :LOGBOOK:
+   - Note taken on [2021-01-03 Sun 13:56] \\
+     The federal government in [[file:../canada.org][Canada]] says that it's phasing out [[file:../fish_farm.org][fish farms]] along a key migration route for [[file:../pacific_salmon.org][Pacific salmon]] in the [[file:../discovery_islands.org][Discovery Islands]], near the [[file:../campbell_river.org][Campbell River]] in [[file:../british_columbia_canada.org][British Columbia, Canada]].
+   :END:
+   - Source :: https://vancouversun.com/news/local-news/ottawa-to-phase-out-fish-farms-in-b-c-s-discovery-islands-by-july-2022

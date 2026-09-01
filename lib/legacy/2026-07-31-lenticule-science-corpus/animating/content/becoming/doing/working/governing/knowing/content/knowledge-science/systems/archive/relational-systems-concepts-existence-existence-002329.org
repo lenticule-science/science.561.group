@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       00298e02-93cb-41cc-a77f-ee90289e0139
+:node-relations: (([[id:428c2f61-8c85-48b8-a191-1187c2a5f2ae][extends]] . [[id:c1894182-a0b9-4692-8f55-45c5eabdac55][relational complex]]))
+:END:
+#+title: existence
+#+date: [2025-08-29 Fri 10:51]
+#+index: existence
+

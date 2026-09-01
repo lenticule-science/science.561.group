@@ -1,0 +1,9 @@
+\subsection{Cross-base coinduction}
+
+\begin{theorem}[Coalgebraic cross-base MLD classification (up-to-closure coinduction)]\label{thm:coalgebraic-crossbase-mld}\lean{Infomaterial.Persistence.Aperiodic.UpTo.crossBase_classification}\leanok\uses{thm:common-base-mld-classification}
+Cross-base converse is carried by a settling bisimulation up to closure
+(\texttt{BisimUTC}).  The relation agrees on settled value and is closed under
+the joint closure step; absorption makes that enough to classify geometric MLD
+by equality of \(\mathrm{settle}\).  Equal settled value constructs the
+settled-value kernel, giving the converse on the settling coalgebra.
+\end{theorem}

@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       09f1ae9b-4a92-42c9-8d1b-6f57261c1970
+:public:   true
+:END:
+#+title: persisting
+#+date: [2025-08-26 Tue 12:03]
+#+index: persisting

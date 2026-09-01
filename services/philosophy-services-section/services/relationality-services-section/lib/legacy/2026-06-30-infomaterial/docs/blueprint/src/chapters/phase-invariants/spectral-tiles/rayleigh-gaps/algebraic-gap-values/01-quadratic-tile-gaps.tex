@@ -1,0 +1,27 @@
+\subsubsection{Quadratic tile gaps}
+
+\begin{theorem}[The 4-site irrational gap $2-\sqrt2$ is a real root of $x^2-4x+2$]\label{thm:tile4-irrational-gap}\lean{Infomaterial.Flow.tile4_gap_char_root}\leanok\uses{thm:two-site-gap, thm:euler-e-internal-real}
+The first irrational tile gap: the 4-site path Laplacian has spectral gap
+$2-\sqrt2$, the smaller root of $x^2-4x+2$. With
+$\sqrt2=\texttt{sqrtNat 2}$ in the constructive reals, the value
+$g=2-\sqrt2$ satisfies $g^2+2=4g$. This realizes the first non-rational path
+tile eigenvalue over Infomaterial's real carrier; the corresponding Rayleigh
+eigenvector calculation is the real-tile-form step.
+\end{theorem}
+
+\begin{theorem}[The crystallographic gap family $2-\sqrt d$]\label{thm:tile-crystallographic-gap}\lean{Infomaterial.Flow.tile_gap_char_root}\leanok\uses{thm:tile4-irrational-gap}
+For $1\le d\le4$, the value $2-\sqrt d:\mathbb R$ is a root of
+$x^2-4x+(4-d)$. The path tiles whose spectral gaps have this form are the
+crystallographic orders $N\in\{3,4,6\}$, with the degenerate $N=2$ case giving
+the rational gap $2$. Thus the gap is $\sqrt{}$-constructible on the
+crystallographic part of the small-tile tower; the $6$-site case is
+\texttt{tile6\_gap\_char\_root}.
+\end{theorem}
+
+\begin{theorem}[The 5-site gap is the golden quadratic irrational $(3-\sqrt5)/2$]\label{thm:tile5-golden-gap}\lean{Infomaterial.Flow.tile5_gap_char_root}\leanok\uses{thm:gap-quad-surd}
+The first non-crystallographic tile gap still lies in a quadratic field:
+$\lambda_1(5)=2(1-\cos(\pi/5))=(3-\sqrt5)/2$. Division-free, the doubled gap
+$2\lambda_1=3-\sqrt5$ is a root of $x^2-6x+4$, the $a=3,d=5$ instance of the
+quadratic-surd engine. The gap remains degree $\le2$ through $N=6$; $N=7$ is
+the first cubic escape.
+\end{theorem}

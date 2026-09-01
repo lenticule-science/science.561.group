@@ -1,0 +1,4 @@
+{{- $ld := partial "json-ld-object.html" . -}}
+<script type="application/ld+json">
+{{ $ld | jsonify (dict "indent" "  ") | safeJS }}
+</script>

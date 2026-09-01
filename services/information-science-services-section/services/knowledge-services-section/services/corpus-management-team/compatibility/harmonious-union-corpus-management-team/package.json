@@ -1,0 +1,25 @@
+{
+  "name": "@coesite-operations/corpus-management-team",
+  "version": "0.2.4",
+  "type": "module",
+  "description": "Compatibility command alias for @561-group/corpus-management-team.",
+  "files": [
+    "scripts",
+    "README.md"
+  ],
+  "bin": {
+    "manage-project-corpus-knowledge": "./scripts/manage-project-corpus-knowledge.mjs",
+    "solicit-service": "./scripts/solicit-service.mjs",
+    "invoke-service": "./scripts/invoke-service.mjs"
+  },
+  "dependencies": {
+    "@561-group/corpus-management-team": "0.2.5"
+  },
+  "redCupEngineering": {
+    "successor": {
+      "package": "@561-group/corpus-management-team",
+      "version": "0.2.3",
+      "reason": "Compatibility alias only; all corpus-management behavior is supplied by the successor package."
+    }
+  }
+}

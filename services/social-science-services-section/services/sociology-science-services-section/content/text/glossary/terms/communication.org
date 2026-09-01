@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       09fd88b6-87be-4af3-835f-daf4514553ff
+:END:
+#+title: communication
+#+date: [2025-08-27 Wed 07:56]
+

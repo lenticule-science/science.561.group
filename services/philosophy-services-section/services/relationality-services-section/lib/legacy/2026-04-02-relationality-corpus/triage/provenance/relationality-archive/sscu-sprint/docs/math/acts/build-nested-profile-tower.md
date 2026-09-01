@@ -1,0 +1,24 @@
+---
+
+name: build-nested-profile-tower
+act: BuildNestedProfileTower
+top: BuildProfileTower
+bottom: NestProfile
+summary: Nested profiles also inherit the full relational chain. *Build Profile Tower* witnessing *Nest Profile* yields ***Build Nested Profile Tower*** (`BuildNestedProfileTower`).
+tags:
+- act
+layer: act
+part-of: relational-computer
+computer-system-type: primitive
+---
+
+## Interpretation
+
+Nested profiles also inherit the full relational chain.  *Build Profile Tower* witnessing *Nest Profile* yields ***Build Nested Profile Tower*** ([BuildNestedProfileTower](build-nested-profile-tower.md)).
+
+This act records the recursive tower property promised for nested filters, so *Build Nested Profile Tower* is valid.
+
+
+{{ act_info(page.meta) }}
+
+{{ act_nav(page.meta) }}

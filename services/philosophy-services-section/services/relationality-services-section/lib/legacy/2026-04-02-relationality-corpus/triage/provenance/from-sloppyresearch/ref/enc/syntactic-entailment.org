@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       b4314f19-b112-4af5-9a8d-f714d946d87f
+:node-relations: (([[id:64928231-fd2c-4c59-ae56-b00480e2591c][extends]] . [[id:ff3a93d7-ba08-4faa-8be9-6568188d4c77][entailment]]))
+:ROAM_ALIASES: ⊢
+:END:
+#+title: syntactic entailment
+#+date: [2025-08-29 Fri 19:29]
+#+index: formalism!entailment!syntactic entailment
+
+*/Syntactic entailment/* is [[id:ff3a93d7-ba08-4faa-8be9-6568188d4c77][entailment]] in which one [[id:e5248432-6d1e-436e-9bdc-50fe0fcd3fe6][thing]] can be [[id:fc7d1ea7-e967-46b9-9fdf-1b15cbba3b0f][derived]] from another within a [[id:3cb36663-8e9d-41a3-acaa-ea7eefc49673][formal system]].
+
+It's denoted by the [[id:812664d3-b7aa-421b-91df-db0d3f461ad7][symbol]] ⊢
+

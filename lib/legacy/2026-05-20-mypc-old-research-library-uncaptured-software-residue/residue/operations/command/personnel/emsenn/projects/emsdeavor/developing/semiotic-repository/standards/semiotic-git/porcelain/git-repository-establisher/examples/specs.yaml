@@ -1,0 +1,27 @@
+template: specs
+output_path: ./specs/my-protocol-spec
+
+project:
+  name: My Protocol Spec
+  description: Specification and JSON Schema for a protocol/RPC/dialect.
+  author: emsenn
+  contact_email: emsenn@emsenn.net
+  organization: ""
+
+github:
+  owner: emsenn
+  repo: my-protocol-spec
+  default_branch: main
+  include_codeowners: true
+  include_funding: false
+  badges:
+    tags: false
+
+license:
+  id: MIT
+
+metadata:
+  created: 2025-01-01
+  status: draft
+  tags: [spec, schema]
+

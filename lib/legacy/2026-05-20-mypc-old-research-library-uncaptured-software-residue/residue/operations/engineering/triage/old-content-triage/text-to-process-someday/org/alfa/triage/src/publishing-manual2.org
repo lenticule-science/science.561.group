@@ -1,0 +1,64 @@
+#+title: Publishing Manual
+#+author: emsenn
+#+date: 2018-01-29
+#+OPTIONS: toc:nil ':nil num:nil todo:nil
+#+HTML_HEAD: <link rel="stylesheet" href="/home/emsenn/org/projects/oats/build/oats.css">
+#+HTML_HEAD: <style>#content{width:85vw;max-width:40rem;margin:0 auto;padding:3rem 2rem 6rem;}</style>
+* TODO Introduction
+*/Please note any "TODO" or "TK" - that means text around it is
+incomplete or inaccurate, such as missing a citation./*
+
+This document is a manual of the procedures I use to publish my
+writing. It is intended to serve as a companion to my [[https://emsenn.net/docs/writing-manual][writing manual]].
+** License & Editorial Information
+This document and the source code it contains are released under the
+MIT License and maintained at
+[[https://git.sr.ht/~emsenn/publishing-manual]], where a list of
+syndications is available.
+#+TOC: headlines 1
+* TODO Requirements
+#+TOC: headlines 1 local
+** TODO Emacs
+** TODO Org-mode
+** TODO LaTeX
+** TODO Ox-Hugo
+** TODO Hugo
+** TODO Git
+* TODO Setup
+#+TOC: headlines 1 local
+** TODO Installing Emacs and Org-Mode
+#+TOC: headlines 1 local
+** TODO Installing Ox-Hugo and Hugo
+#+TOC: headlines 1 local
+** TODO Installing LaTeX stuff
+#+TOC: headlines 1 local
+* Rendering Methods
+#+TOC: headlines 1 local
+** TODO Render as HTML
+#+begin Introduction
+*/Hyper-text Markup Language/*, or /HTML/, is the document format used
+ across the Web.
+#+end
+#+TOC: headlines 1 local
+While editing your Org-mode source document in Emacs, run
+~org-export~dispatch~ and
+** TODO Render as PDF
+#+TOC: headlines 1 local
+** TODO Render as LaTeX
+#+TOC: headlines 1 local
+** TODO Render as Plain-Text
+#+TOC: headlines 1 local
+** TODO Render as Hugo-Compatible Markdown
+#+TOC: headlines 1 local
+* Publishing Methods
+#+TOC: headlines 1 local
+** TODO To Neocities (HTTPS)
+** TODO To DAT Protocol
+** TODO LBRY
+** TODO Wordsmith.social
+** TODO Tabletop.press
+
+# Local Variables:
+# writefreely-post-id: "jyhknuo8yv"
+# writefreely-post-token: nil
+# End:

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://561.group/swarm-intelligence/reading-file/reading-file.schema.json",
+  "title": "Reading-file morphism record",
+  "description": "Morphism: file path → file-content. Aperiodic morphism enacted by filesystem read. Variance: restriction of articulating-class to filesystem-reading enactor. Sibling to prompting, inferring, articulating, fetching-web.",
+  "kind": "morphism",
+  "domain": "file path (non-empty string)",
+  "codomain": "#schema/file-content",
+  "variance": "restriction",
+  "monotone": true,
+  "type": "object",
+  "required": ["input", "output", "evidence"],
+  "additionalProperties": false,
+  "properties": {
+    "input": { "type": "string", "minLength": 1 },
+    "output": { "$ref": "library/file-content/file-content.schema.json" },
+    "evidence": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  }
+}

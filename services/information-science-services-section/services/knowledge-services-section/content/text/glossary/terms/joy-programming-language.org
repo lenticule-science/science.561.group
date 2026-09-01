@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       0e33632f-11fc-4c6c-8fb3-290faaf3abc9
+:END:
+#+title: Joy programming language
+#+date: [2025-10-05 Sun 08:35]
+

@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       b7014013-8f96-463c-b45f-c689fe90f20a
+:END:
+#+title: University of Gothenburg
+#+date: [2025-08-29 Fri 21:04]
+
+* Relations
+
+#+name: predicate
+- [[id:df00bebb-1eeb-432a-862b-e28c2ca29d24][university]]
+
+#+name: link
+| type     | node       |
+| [[id:06b2b366-df2a-4a1b-86a6-7332152e407a][location]] | [[id:97573105-c304-49ed-9598-97c96e0270dc][Gothenburg]] |
+

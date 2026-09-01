@@ -1,0 +1,10 @@
+#+title: Ikmu
+#+begin_head
+#+ghe_schema: person-0.1.0
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-17 Thu 09:11]
+#+roam_tags: person
+#+end_head
+
+*/Ikmu/* (or Iǧmúwiyula,) "Little Painted Cat," is the [[file:cat.org][cat]] I live with. I love her a whole bunch! She's one of the most considerate people I've ever met.

@@ -1,0 +1,7 @@
+#+title: hacker
+#+roam_alias: "hackers"
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-19 Sat 11:31]
+#+roam_tags: term
+A */hacker/* is a [[file:human.org][human]] who [[file:craft.org][crafts]] the [[file:tool.org][tools]] they use.

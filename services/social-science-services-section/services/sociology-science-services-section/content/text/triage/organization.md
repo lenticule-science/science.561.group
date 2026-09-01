@@ -1,0 +1,14 @@
+---
+title: "Organization"
+description: "The anarchist analysis of organizational forms — the affinity group, the federation, mutual aid, prefigurative politics — as a tradition of working out how people coordinate at scale without command, central authority, or representative mediation."
+locates: topic
+component-of: anarchism
+---
+
+The organizational question is anarchism's recurrent practical and theoretical site. If the state and coercive hierarchy are illegitimate, how do people coordinate at scale? Anarchism's answer is not "they don't" — anarchist projects have organized substantial collective action, from the Spanish CNT-FAI in the 1930s to contemporary mutual-aid and disaster-response networks — but the answer is also not the familiar bureaucratic-organizational picture of representative authority, delegation, and stabilized command. The work of the tradition has been to develop and refine forms that hold coordination together without producing the command relations they would refuse.
+
+The subdomain's terms name four of those forms. The *affinity group* — small, self-selected, informal, project-specific — is the basic cell of insurrectionary and direct-action work. The *federation* — voluntary, recallable, mandate-based association of affinity groups or other base units — is the form scale takes when scale is needed without producing a permanent center. *Mutual aid* — the practice and the principle — is both an ethic of social life and an organizational practice that distributes capacity through reciprocal support rather than through markets or state provision. *Prefigurative politics* — the commitment that the means must contain the ends, that the world being built must be present in the practice that builds it — is the meta-organizational principle that judges any specific form by whether its operation embodies the relations the project claims to be working toward.
+
+The subdomain reads against the cybernetic-postliberal analysis of organization-as-platform (the way contemporary corporate platforms have absorbed the language of horizontal organization while reproducing extractive command at the infrastructure level). The continuity between earlier anarchist organizational forms and contemporary federated, mesh, and mutual-aid infrastructure is part of the substance the subdomain holds.
+
+The relation to the neighboring subdomains. [`insurrectionary-anarchism/`](../insurrectionary-anarchism/) takes a specific position about which organizational forms are admissible (the affinity group; not the standing federation). [`anarcho-nihilism/`](../anarcho-nihilism/) presses the question of whether *any* stabilized organizational form can avoid recuperation. [`disaster-response/`](../disaster-response/) is the contemporary practical site at which mutual-aid organization has been most visible. The organizational analysis here is the place these positions argue from.

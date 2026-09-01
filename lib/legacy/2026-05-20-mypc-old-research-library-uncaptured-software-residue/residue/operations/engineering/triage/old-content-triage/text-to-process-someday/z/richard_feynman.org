@@ -1,0 +1,13 @@
+#+title: Richard Feynman
+#+begin_head
+#+ghe_schema: person-0.1.0
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-21 Mon 17:44]
+#+roam_tags: person
+#+end_head
+
+#+name: richard-feynman-definition-text
+#+begin_quote
+*/Richard Feynman/* was an [[file:united-states-of-america.org][American]] [[file:theoretical_physics.org][theoretical physicist]] whose work, to me, is most important for how it synthesized ideas across multiple fields of [[file:physics.org][physics]].
+#+end_quote

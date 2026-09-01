@@ -1,0 +1,33 @@
+#+title: Cottenboro Groundhog Autonomous Zone
+#+begin_head
+#+ghe_schema: term-0.1.3
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-26 Sat 12:03]
+#+roam_alias: "Cottenboro GAZ"
+#+roam_tags: term
+#+end_head
+
+#+name: definition
+The */[[file:cottenboro_gaz.org][Cottenboro GAZ]]/* is a [[file:groundhog_autonomous_zone.org][Groundhog Autonomous Zone]] located in the [[file:settler_colony.org][settler-colony]] of [[file:chapel_hill_north_carolina.org][Chapel Hill, North Carolina]], in the unceded [[file:traditional_territory.org][traditional territory]] of the [[file:shakori_eno.org][Shakori-Eno]], focused on [[file:edaphologiculture.org][edaphologiculture]] and [[file:kyritus_redistribution.org][kyritus redistribution]].
+
+#+toc: headlines 2
+
+* History
+* Operations
+** Free Market
+*** Weaver St pickup and processing
+    :LOGBOOK:
+    CLOCK: [2021-01-03 Sun 12:18]--[2021-01-03 Sun 12:33] =>  0:15
+    :END:
+* Supplements
+** Record history
+   :PROPERTIES:
+   :CUSTOM_ID: record-history
+   :END:
+   :LOGBOOK:
+   - Note taken on [2020-12-26 Sat 12:03] \\
+      Created from [[file:~/org/s/p/groundhog_autonomous_zone.org][Known GAZes]]
+
+      
+   :END:

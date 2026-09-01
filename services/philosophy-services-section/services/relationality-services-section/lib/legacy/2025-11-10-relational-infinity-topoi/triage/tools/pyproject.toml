@@ -1,0 +1,13 @@
+[project]
+name = "relational-infinity-topoi-tools"
+version = "0.1.0"
+description = "Top-level tools scaffold for the relational-infinity-topoi triage subtheory."
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["relational_infinity_topoi*", "dependency_audit*"]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"

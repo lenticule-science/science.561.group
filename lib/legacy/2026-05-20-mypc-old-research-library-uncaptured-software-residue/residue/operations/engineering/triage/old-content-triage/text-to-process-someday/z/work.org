@@ -1,0 +1,20 @@
+#+title: work
+#+begin_head
+#+ghe_schema: record-0.1.3
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-24 Thu 11:33]
+#+end_head
+
+#+name: definition
+*/Work/* is an action that is some sort of [[file:craft.org][craft]] or [[file:study.org][study]], taken to result in one's [[file:survival.org][survival]] and/or [[file:growth.org][growth]].
+
+#toc: headlines 2
+* Intrododuction
+* work
+* Supplements
+** Record history
+   :LOGBOOK:
+   - Note taken on [2020-12-24 Thu 11:33] \\
+     Created
+   :END:

@@ -1,0 +1,20 @@
+\subsection{Logical contextuality rungs}
+
+\begin{proposition}[Logical contextuality]\label{thm:logical-contextuality}\lean{Infomaterial.Relational.Quantum.LogicallyContextual}\leanok\uses{thm:possibilistic-model}
+Logical contextuality asks whether at least one supported local section fails
+to extend to any global section.
+\end{proposition}
+
+\begin{theorem}[The PR box is logically contextual]\label{thm:pr-logical-contextuality}\lean{Infomaterial.Relational.Quantum.prBox_logicallyContextual}\leanok\uses{thm:logical-contextuality, thm:pr-box-strong-contextual}
+Strong contextuality of the PR box inhabits the logical contextuality rung.
+\end{theorem}
+
+\begin{theorem}[Hardy inhabits the strict middle rung]\label{thm:hardy-logical-not-strong}\lean{Infomaterial.Relational.Quantum.hardyBox_logical_not_strong}\leanok\uses{thm:logical-contextuality}
+The Hardy support model has a global section and is not strongly contextual,
+but a supported local section still extends to no global section.
+\end{theorem}
+
+\begin{theorem}[Hardy has a no-signaling probabilistic support]\label{thm:hardy-probabilistic-logical-not-strong}\lean{Infomaterial.Relational.Quantum.hardyBoxP_support_logical_not_strong}\leanok\uses{thm:hardy-logical-not-strong, thm:global-dist-no-signaling}
+The Hardy phenomenon lifts to a no-signaling weighted empirical model whose
+support is logically contextual but not strongly contextual.
+\end{theorem}

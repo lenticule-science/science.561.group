@@ -1,0 +1,9 @@
+{
+  "id": "wave_operator",
+  "act": "WaveOperator",
+  "module": "relationality.realizers.wave_operator",
+  "callable": "realize_wave_operator",
+  "input_kind": "PhaseSpace",
+  "output_kind": "PhaseSpace",
+  "description": "Propagate phase space under a wave operator."
+}

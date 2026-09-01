@@ -1,0 +1,30 @@
+:PROPERTIES:
+:ID:       89a74c4d-4322-40e9-a0b5-9c921b363f16
+:form:     [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]
+:END:
+#+title: Babble, [2025-09-15 Mon 21:34]
+#+date: [2025-09-15 Mon 21:34]
+#+author: emsenn
+
+
+
+#+begin_src fennel
+  (local forms [{:id :1234
+                :aliases [:container]
+                :additive-conditions [
+                :acts [:receive :remove]
+                :contents []
+                :receive [:fn [:self :item]
+                          [[:call :foo]]]
+                :remove [:fn [:self :item :?destination]
+                         [[:call :foo]]]},
+                {:id :4321
+                 :aliases [:backpack]
+                 :bases [:container]
+                 :acts ])
+#+end_src
+
+#+RESULTS:
+: unknown:5:33: Parse error: expected whitespace before opening delimiter [
+:
+: * Try adding whitespace.

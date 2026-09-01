@@ -1,0 +1,20 @@
+#+title: Alex Schröder
+#+begin_head
+#+ghe_schema: person-0.1.2
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2021-01-01 Fri 17:34]
+#+roam_tags: person
+#+end_head
+#+name: definition
+
+
+#+toc: headlines 2
+* Introduction
+* Alex Schröder
+* Supplements
+** Record history
+   :LOGBOOK:
+   - Note taken on [2021-01-01 Fri 17:34] \\
+     Created
+   :END:

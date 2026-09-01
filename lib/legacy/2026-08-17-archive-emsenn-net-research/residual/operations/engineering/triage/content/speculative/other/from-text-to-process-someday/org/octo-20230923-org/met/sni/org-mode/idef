@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: idef
+# key: idef
+# --
+#+include: "~/org/$1.org::definition"

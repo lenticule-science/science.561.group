@@ -1,0 +1,3227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2023-01-14 Sat 15:02 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>emsenn's timeline</title>
+<meta name="generator" content="Org Mode" />
+<style>
+  	   @charset "UTF-8";
+  
+  	   :root {	
+  	       --body-font: sans-serif;
+  	       --header-font: sans-serif;
+  	       --code-font: monospace;
+  	       --primary-color: #ffe;
+  	       --primary-dim-color: #eed;
+  	       --secondary-color: #312;
+  	       --secondary-dim-color: #756;
+  	       --link-color: #880;
+  	       --link-hover-color: #aa2;
+  	       --link-visited-color: #934;
+  	       --link-visited-hover-color: #b56;
+  	       --external-link-color: #008;
+  	       --external-link-hover-color: #60b;
+  	       --external-link-visited-color: #172;
+  	       --external-link-visited-hover-color: #394;
+  	   }
+  	   @media(prefers-color-scheme:dark){
+  	       :root {
+  		  --body-font: sans-serif;
+  		  --header-font: sans-serif;
+  		  --code-font: monospace;
+  		  --primary-color: #756;
+  		  --primary-dim-color: #312;
+  		  --secondary-color: #eed;
+  		  --secondary-dim-color: #ffe;
+  		  --link-color: #880;
+  		  --link-hover-color: #aa2;
+  		  --link-visited-color: #934;
+  		  --link-visited-hover-color: #b56;
+  	       }}
+  	   body {
+  	       position: relative;
+  	       min-height: 100%;
+  	       background-color: var(--primary-color);
+  	       color: var(--secondary-color);
+  	       margin: 0 auto;
+  	       font-family: sans-serif;
+  	   }
+  	   main, #content {
+  	       background-color: var(--primary-dim-color);
+  	       border-left: 1.5em dotted var(--primary-color);
+  	       padding: 1em;
+  	   }
+  	   header {
+  	       border-bottom: 0.8em dotted var(--secondary-dim-color);
+  	   }
+  	   h1 { font-size: 2em; margin-bottom: 0; }
+  	   h2 {
+  	       border-bottom: 0.3em dotted var(--secondary-dim-color);
+  	   }
+  	   h2, h3, h4, h5, h6, p, table, ul, ol, .org-src-container {
+  	       width: 60%;
+  	   }
+  	   aside {
+  	       float: right;
+  	       width: 35%;
+  	   }
+  	   aside p { width: 100%; }
+  	   @media screen and (max-width:760px) {
+  	       h2, h3, h4, h5, h6, p, table, ul, ol, .org-src-container {
+  		  width: 90%;
+  	       }
+  	       aside {
+  		  float: inherit;
+  		  width: 90%;
+  		  border-top: 0.2em dotted var(--secondary-dim-color);
+  		  border-bottom: 0.2em dotted VAR(--secondary-dim-color);
+  		  font-size: 0.8em;
+  		    }
+  	   }
+  
+  	   footer, #postamble, #preamble {
+  	       padding: 0.5em;
+  	   }
+  	   table {
+  	       border-collapse: collapse;
+  	       border-spacing: 0;
+  	       empty-cells: show;
+  	       border: 0.1em solid #444;
+  	   }
+  	   thead { font-family: sans-serif; }
+  	   th, td {
+  	       padding: 0 0.3em;
+  	       border: 0.01em solid #444;
+  	   }
+  	   img {
+  	       max-width: 80vw;
+  	       vertical-align: middle;
+  	   }
+  	   pre, .src {
+  	       padding: 0.5em;
+  	       border: 0.1em solid #444;
+  	       white-space: pre-wrap;
+  	       overflow-x: scroll;
+  	       text-overflow: clip;
+  	       scrollbar-width: none;
+  	   }
+  	   pre::-webkit-scrollbar, .src::-webkit-scrollbar {
+  	       display: none;
+  	   }
+  
+  
+  	   dt {
+  	       font-weight: normal;
+  	       display: inline-block;
+  	       border-bottom: 0.1rem dotted #444;
+  	   }
+  	   #text-index dt { border-bottom: none; }
+  	   h2, h3, h4, h5, h6, h7, h8, h9, h10 {
+  	       display: block;
+  	       font-family: sans-serif;
+  	       margin: 0.2em auto 0.5em 0;
+  	   }
+  	   a, .link {
+  	       text-decoration: none;
+  	       color: #880;
+  	       display: inline;
+  	       position: relative;
+  	       border-bottom: 0.1rem dotted;
+  	       line-height: 1.2;
+  	       transition: border 0.3s;
+  	   }
+  	   a:hover {
+  	       color: #aa2;
+  	       outline-style: none;
+  	       border-bottom: 0.1rem solid;
+  	   }
+  	   a:visited, .visited-link { color: #934; }
+  	   a:visited:hover { color: #b56; }
+  	   a:focus {
+  	       outline-style: none;
+  	       border-bottom: 0.1rem solid;
+  	   }
+  	   ::selection { background-color: #777; color: #eee; }
+  	   a::selection { background-color: #ccc; }
+  	   .org-todo {
+  	       background-color: #ddd;
+  	       color: #333;
+  	       font-size: .8rem;
+  	       float: right;
+  	   }
+  	   .org-src-container + .example {
+  	       margin-left: 8em;
+  	   }
+  	   a[href^="https://"]:not([href*="emsenn.net"]):after, a[href^="https://"]:not([href*="emsenn.net"]):visited:after, .external-link:after, .visited-external-link:after { 
+  	       content: "^";
+  	       font-size: 0.5em;
+  	       vertical-align: super;
+  	   }
+  	   a[href^="https://"]:not([href*="emsenn.net"]), .external-link {
+  	       color: var(--external-link-color);
+  	   }
+  	   a[href^="https://"]:not([href*="emsenn.net"]):hover{ 
+  	       color: var(--external-link-hover-color);
+  	   }
+  	   a[href^="https://"]:not([href*="emsenn.net"]):visited, .visited-external-link { 
+  	       color: var(--external-link-visited-color);
+  	   }
+  	   a[href^="https://"]:not([href*="emsenn.net"]):visited:hover{ 
+  	       color: var(--external-link-visited-hover-color);
+  	   }
+  	   blockquote {
+  	       border: 0.1em dashed var(--secondary-dim-color);
+  	       padding-left: 0.2em;
+  	   }
+  	   label.org-src-name {
+  	       margin: 0 0 0 3em;
+  	       font-family: sans-serif;
+  	       font-size: 1rem;
+  	       line-height: 0;
+  	   }
+  	   .skip-to-content {
+  	       opacity: 0;
+  	       position: absolute;
+  	       left: 0.2em;
+  	   }
+  	   .skip-to-content:focus{
+  	       opacity: 1;
+  	       background-color: var(--secondary-dim-color);
+  	       color: var(--primary-color);
+  	   }
+  	   ul { max-width: 85%; }
+      .footpara { display: inline; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+<section id="preamble" class="status">
+<a href="#content" class="skip-to-content">skip to content</a><section class="nav"><strong>emsenn.net:</strong> <a href="./index.html">Homepage</a> | <a href="./bul/index.html">Bulletins</a> | <a href="./mainindex.html">Main Index</a><p>This Website was cultivated as a public asset with <a href="https://ko-fi.com/emsenn">support</a> from people like you. <strong><em>Thank you!</em></strong></p>
+  	 <details>
+  	   <summary>Click this sentence for information about my Website.</summary>
+  	   <p>Click each sentence below for more info:</p>
+  	     <ul>
+  	       <li><details>
+  	 	<summary>This website was created by Emacs and Org-mode</summary>
+  	 	<p>See <a href="https://emsenn.net/src/infoponemacs.html">my Emacs configuration</a> to learn how.</p>
+  	       </details></li>
+  	       <li><details>
+  	         <summary>Its content was written by hand.</summary>
+  	         <p>This means there might be mistakes! 
+  	       </details></li>
+  	       <li><details>
+  	 	<summary>It uses style to add information to the pages.</summary>
+  	 	<ul>
+  	 	  <li><details>
+  	 	  <summary>Click this sentence to see how links are styled:</summary>
+  	 	  <table>
+  	 	    <thead><tr>
+  	 	      <th scope="col">Color</th>
+  	 	      <th scope="col">Link type</th>
+  	 	    </tr></thead>
+  	 	    <tbody>
+  	 	      <tr><td class="link">Sample</td>
+  	 		<td>Unvisited local resource</td></tr>
+  	 	      <tr><td class="visited-link">Sample</td>
+  	 		<td>Visited local resource</td></tr>
+  	 	      <tr><td class="external-link">Sample</td>
+  	 		<td>Unvisited external resource</td></tr>
+  	 	      <tr><td class="visited-external-link">Sample</td>
+  	 		<td>Visited external resource</td></tr>
+  	 	    </tbody>
+  	 	  </table>
+  	 	</details></li>
+  	       </ul>
+  	     </details></li>
+  	   </ul>
+  	 </details>
+  	 </section>
+</section>
+<main id="content" class="content">
+<header>
+<h1 class="title">emsenn's timeline</h1>
+</header><p>
+This document is a listing of events that have happened, that I feel are worth keeping in mind.
+</p>
+
+<p>
+Events marked <code>STUB</code> aren't complete, sorry about that.
+</p>
+<section id="outline-container-org87cc08c" class="outline-2">
+<h2 id="org87cc08c">6th Century</h2>
+<div class="outline-text-2" id="text-org87cc08c">
+</div>
+<div id="outline-container-org696746f" class="outline-3">
+<h3 id="org696746f">580s</h3>
+<div class="outline-text-3" id="text-org696746f">
+</div>
+<div id="outline-container-org8bf4b9a" class="outline-4">
+<h4 id="org8bf4b9a">583</h4>
+<div class="outline-text-4" id="text-org8bf4b9a">
+</div>
+<div id="outline-container-org090a718" class="outline-5">
+<h5 id="org090a718">583-12 December</h5>
+<div class="outline-text-5" id="text-org090a718">
+</div>
+<div id="outline-container-org00b01d8" class="outline-6">
+<h6 id="org00b01d8"><span class="timestamp-wrapper"><span class="timestamp">[0583-12-23 Tue]</span></span></h6>
+<div class="outline-text-6" id="text-org00b01d8">
+</div>
+<div id="outline-container-org24f8bbe" class="outline-7">
+<h7 id="org24f8bbe"><span class="todo STUB">STUB</span> Yohl Ik'nal is crowned Queen of Palenque</h7>
+<div class="outline-text-7" id="text-org24f8bbe">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="outline-container-org7e509e4" class="outline-2">
+<h2 id="org7e509e4">10th Century</h2>
+<div class="outline-text-2" id="text-org7e509e4">
+</div>
+<div id="outline-container-orgc8ff2af" class="outline-3">
+<h3 id="orgc8ff2af">960s</h3>
+<div class="outline-text-3" id="text-orgc8ff2af">
+</div>
+<div id="outline-container-orgf25bfe0" class="outline-4">
+<h4 id="orgf25bfe0">962</h4>
+<div class="outline-text-4" id="text-orgf25bfe0">
+</div>
+<div id="outline-container-org86cecbb" class="outline-5">
+<h5 id="org86cecbb">962-12 December</h5>
+<div class="outline-text-5" id="text-org86cecbb">
+</div>
+<div id="outline-container-orgfd06419" class="outline-6">
+<h6 id="orgfd06419"><span class="timestamp-wrapper"><span class="timestamp">[0962-12-23 Thu]</span></span></h6>
+<div class="outline-text-6" id="text-orgfd06419">
+</div>
+<div id="outline-container-org5ef3009" class="outline-7">
+<h7 id="org5ef3009"><span class="todo STUB">STUB</span> Byzantines sacked Aleppo</h7>
+<div class="outline-text-7" id="text-org5ef3009">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="outline-container-org6bdb20d" class="outline-2">
+<h2 id="org6bdb20d">13th Century</h2>
+<div class="outline-text-2" id="text-org6bdb20d">
+</div>
+<div id="outline-container-org121f5fe" class="outline-3">
+<h3 id="org121f5fe">1280s</h3>
+<div class="outline-text-3" id="text-org121f5fe">
+</div>
+<div id="outline-container-org4d018f3" class="outline-4">
+<h4 id="org4d018f3">1282</h4>
+<div class="outline-text-4" id="text-org4d018f3">
+</div>
+<div id="outline-container-org4ea684d" class="outline-5">
+<h5 id="org4ea684d">1282-12 December</h5>
+<div class="outline-text-5" id="text-org4ea684d">
+</div>
+<div id="outline-container-orgbade973" class="outline-6">
+<h6 id="orgbade973"><span class="timestamp-wrapper"><span class="timestamp">[1282-12-11 Fri]</span></span></h6>
+<div class="outline-text-6" id="text-orgbade973">
+</div>
+<div id="outline-container-llywelyn-ap-gruffudd-defeated" class="outline-7">
+<h7 id="llywelyn-ap-gruffudd-defeated"><span class="todo STUB">STUB</span> Llywelyn ap Gruffudd, last sovereign Prince of Wales, was defeated in battle</h7>
+<div class="outline-text-7" id="text-llywelyn-ap-gruffudd-defeated">
+<p>
+Llywelyn ap Gruffudd (c. 1223 – 11 December 1282) was the last sovereign prince of Wales before its conquest by Edward I of England. He had, after a series of wars, sworn fealty to the English King, Edward I, but when his brother rebeled against the Crown, Llywelyn joined him, and at the Battle of Orewin Bridge at Builth Wells, he was killed after the English commanders misled him into believing they would pay homage.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="outline-container-org9a9059a" class="outline-2">
+<h2 id="org9a9059a">16th Century</h2>
+<div class="outline-text-2" id="text-org9a9059a">
+</div>
+<div id="outline-container-org64d2015" class="outline-3">
+<h3 id="org64d2015">1520s</h3>
+<div class="outline-text-3" id="text-org64d2015">
+</div>
+<div id="outline-container-org9c69e05" class="outline-4">
+<h4 id="org9c69e05">1521</h4>
+<div class="outline-text-4" id="text-org9c69e05">
+</div>
+<div id="outline-container-org3bad09e" class="outline-5">
+<h5 id="org3bad09e">1521-12 December</h5>
+<div class="outline-text-5" id="text-org3bad09e">
+</div>
+<div id="outline-container-org9bca9d0" class="outline-6">
+<h6 id="org9bca9d0"><span class="timestamp-wrapper"><span class="timestamp">[1521-12-25 Sun]</span></span></h6>
+<div class="outline-text-6" id="text-org9bca9d0">
+</div>
+<div id="outline-container-org0b46f48" class="outline-7">
+<h7 id="org0b46f48"><span class="todo STUB">STUB</span> La Espanola slave revolt began</h7>
+<div class="outline-text-7" id="text-org0b46f48">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="outline-container-orgb399a02" class="outline-2">
+<h2 id="orgb399a02">17th Century</h2>
+<div class="outline-text-2" id="text-orgb399a02">
+</div>
+<div id="outline-container-org34660cc" class="outline-3">
+<h3 id="org34660cc">1620s</h3>
+<div class="outline-text-3" id="text-org34660cc">
+</div>
+<div id="outline-container-org2aa431c" class="outline-4">
+<h4 id="org2aa431c">1620</h4>
+<div class="outline-text-4" id="text-org2aa431c">
+</div>
+<div id="outline-container-orgd5defc6" class="outline-5">
+<h5 id="orgd5defc6">1620-12 December</h5>
+<div class="outline-text-5" id="text-orgd5defc6">
+</div>
+<div id="outline-container-org343a1df" class="outline-6">
+<h6 id="org343a1df"><span class="timestamp-wrapper"><span class="timestamp">[1620-12-21 Mon]</span></span></h6>
+<div class="outline-text-6" id="text-org343a1df">
+</div>
+<div id="outline-container-mayflower-landed-at-plymouth-rock" class="outline-7">
+<h7 id="mayflower-landed-at-plymouth-rock"><span class="todo STUB">STUB</span> Mayflower landed at Plymouth Rock</h7>
+<div class="outline-text-7" id="text-mayflower-landed-at-plymouth-rock">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org6ede872" class="outline-3">
+<h3 id="org6ede872">1650s</h3>
+<div class="outline-text-3" id="text-org6ede872">
+</div>
+<div id="outline-container-org3c81913" class="outline-4">
+<h4 id="org3c81913">1652</h4>
+<div class="outline-text-4" id="text-org3c81913">
+</div>
+<div id="outline-container-org286db96" class="outline-5">
+<h5 id="org286db96">1652-12 December</h5>
+<div class="outline-text-5" id="text-org286db96">
+</div>
+<div id="outline-container-orgf8755a7" class="outline-6">
+<h6 id="orgf8755a7"><span class="timestamp-wrapper"><span class="timestamp">[1652-12-23 Mon]</span></span></h6>
+<div class="outline-text-6" id="text-orgf8755a7">
+</div>
+<div id="outline-container-org66483f0" class="outline-7">
+<h7 id="org66483f0"><span class="todo STUB">STUB</span> John Cotton died</h7>
+<div class="outline-text-7" id="text-org66483f0">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org3164cdc" class="outline-3">
+<h3 id="org3164cdc">1680s</h3>
+<div class="outline-text-3" id="text-org3164cdc">
+</div>
+<div id="outline-container-org61ed7ee" class="outline-4">
+<h4 id="org61ed7ee">1688</h4>
+<div class="outline-text-4" id="text-org61ed7ee">
+</div>
+<div id="outline-container-org001f6fe" class="outline-5">
+<h5 id="org001f6fe">1688-12 December</h5>
+<div class="outline-text-5" id="text-org001f6fe">
+</div>
+<div id="outline-container-org0df913a" class="outline-6">
+<h6 id="org0df913a"><span class="timestamp-wrapper"><span class="timestamp">[1688-12-11 Sat]</span></span></h6>
+<div class="outline-text-6" id="text-org0df913a">
+</div>
+<div id="outline-container-seal-of-the-realm-thrown-into-the-thames" class="outline-7">
+<h7 id="seal-of-the-realm-thrown-into-the-thames">James II, while trying to abdicate to France, threw the Great Seal of the Realm into the Thames</h7>
+<div class="outline-text-7" id="text-seal-of-the-realm-thrown-into-the-thames">
+<p>
+After a bunch of janky shit that got him deposed, James II tried to get to France, but on the way he threw the Great Seal of the Realm, used to formalize documents, into the Thames.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org524404f" class="outline-6">
+<h6 id="org524404f"><span class="timestamp-wrapper"><span class="timestamp">[1688-12-23 Thu]</span></span></h6>
+<div class="outline-text-6" id="text-org524404f">
+</div>
+<div id="outline-container-org5d7f216" class="outline-7">
+<h7 id="org5d7f216"><span class="todo STUB">STUB</span> King James II began his flight to Paris</h7>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="outline-container-org41a257e" class="outline-2">
+<h2 id="org41a257e">18th Century</h2>
+<div class="outline-text-2" id="text-org41a257e">
+</div>
+<div id="outline-container-orgbcf5479" class="outline-3">
+<h3 id="orgbcf5479">1780s</h3>
+<div class="outline-text-3" id="text-orgbcf5479">
+</div>
+<div id="outline-container-org7068b50" class="outline-4">
+<h4 id="org7068b50">1781</h4>
+<div class="outline-text-4" id="text-org7068b50">
+</div>
+<div id="outline-container-org109e6e0" class="outline-5">
+<h5 id="org109e6e0">1781-12 December</h5>
+<div class="outline-text-5" id="text-org109e6e0">
+</div>
+<div id="outline-container-orgbb56b52" class="outline-6">
+<h6 id="orgbb56b52"><span class="timestamp-wrapper"><span class="timestamp">[1781-12-22 Sat]</span></span></h6>
+<div class="outline-text-6" id="text-orgbb56b52">
+</div>
+<div id="outline-container-org5341b0c" class="outline-7">
+<h7 id="org5341b0c"><span class="todo STUB">STUB</span> Zong Massacre</h7>
+<div class="outline-text-7" id="text-org5341b0c">
+<p>
+<a href="https://twitter.com/tenementyaad_/status/1473662432979693578">https://twitter.com/tenementyaad_/status/1473662432979693578</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org6bf2b65" class="outline-4">
+<h4 id="org6bf2b65">1782</h4>
+<div class="outline-text-4" id="text-org6bf2b65">
+</div>
+<div id="outline-container-orgfc0ad20" class="outline-5">
+<h5 id="orgfc0ad20">1782-01 January</h5>
+<div class="outline-text-5" id="text-orgfc0ad20">
+</div>
+<div id="outline-container-org475d44c" class="outline-6">
+<h6 id="org475d44c"><span class="timestamp-wrapper"><span class="timestamp">[1781-01-07 Sun]</span></span></h6>
+<div class="outline-text-6" id="text-org475d44c">
+</div>
+<div id="outline-container-bank-of-north-america-opened" class="outline-7">
+<h7 id="bank-of-north-america-opened"><span class="todo STUB">STUB</span> Bank of North America opened</h7>
+<div class="outline-text-7" id="text-bank-of-north-america-opened">
+<p>
+The Bank of North America, chartered by the Congress of the Confederation the previous year, was the de facto central bank of what became the United States of America.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgda1a3ef" class="outline-4">
+<h4 id="orgda1a3ef">1783</h4>
+<div class="outline-text-4" id="text-orgda1a3ef">
+</div>
+<div id="outline-container-org9686423" class="outline-5">
+<h5 id="org9686423">1783-12 December</h5>
+<div class="outline-text-5" id="text-org9686423">
+</div>
+<div id="outline-container-org2fcb845" class="outline-6">
+<h6 id="org2fcb845"><span class="timestamp-wrapper"><span class="timestamp">[1783-12-23 Tue]</span></span></h6>
+<div class="outline-text-6" id="text-org2fcb845">
+</div>
+<div id="outline-container-org98d46b9" class="outline-7">
+<h7 id="org98d46b9"><span class="todo STUB">STUB</span> George Washington resigned as Commander-in-Chief of the Continental Army</h7>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org490326e" class="outline-3">
+<h3 id="org490326e">1790s</h3>
+<div class="outline-text-3" id="text-org490326e">
+</div>
+<div id="outline-container-org3051992" class="outline-4">
+<h4 id="org3051992">1792</h4>
+<div class="outline-text-4" id="text-org3051992">
+</div>
+<div id="outline-container-org5b17542" class="outline-5">
+<h5 id="org5b17542">1792-12 December</h5>
+<div class="outline-text-5" id="text-org5b17542">
+</div>
+<div id="outline-container-org2a5e5bb" class="outline-6">
+<h6 id="org2a5e5bb"><span class="timestamp-wrapper"><span class="timestamp">[1792-12-11 Tue]</span></span></h6>
+<div class="outline-text-6" id="text-org2a5e5bb">
+</div>
+<div id="outline-container-louis-xvi-trial-begins" class="outline-7">
+<h7 id="louis-xvi-trial-begins"><span class="todo STUB">STUB</span> Louis XVI's trial for treason begins.</h7>
+<div class="outline-text-7" id="text-louis-xvi-trial-begins">
+<p>
+Louis XVI, the last King of France, was tried for treason by the National Convention, and at the end, his head got cut off.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgdf23688" class="outline-4">
+<h4 id="orgdf23688">1793</h4>
+<div class="outline-text-4" id="text-orgdf23688">
+</div>
+<div id="outline-container-org3d658ae" class="outline-5">
+<h5 id="org3d658ae">1793-01 January</h5>
+<div class="outline-text-5" id="text-org3d658ae">
+</div>
+<div id="outline-container-org5e3ee7f" class="outline-6">
+<h6 id="org5e3ee7f">1793-01-03 Thursday</h6>
+<div class="outline-text-6" id="text-org5e3ee7f">
+</div>
+<div id="outline-container-lucretia-mott-birth" class="outline-7">
+<h7 id="lucretia-mott-birth">Lucretia Mott was born</h7>
+<div class="outline-text-7" id="text-lucretia-mott-birth">
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org8f960bb" class="outline-5">
+<h5 id="org8f960bb">1793-12 December</h5>
+<div class="outline-text-5" id="text-org8f960bb">
+</div>
+<div id="outline-container-orgd980cd6" class="outline-6">
+<h6 id="orgd980cd6"><span class="timestamp-wrapper"><span class="timestamp">[1793-12-23 Mon]</span></span></h6>
+<div class="outline-text-6" id="text-orgd980cd6">
+</div>
+<div id="outline-container-org6c1b7ec" class="outline-7">
+<h7 id="org6c1b7ec"><span class="todo STUB">STUB</span> French royalists are defeated at the Battle of Savenay</h7>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="outline-container-org96edd03" class="outline-2">
+<h2 id="org96edd03">19th Century</h2>
+<div class="outline-text-2" id="text-org96edd03">
+</div>
+<div id="outline-container-orgd317730" class="outline-3">
+<h3 id="orgd317730">1800s</h3>
+<div class="outline-text-3" id="text-orgd317730">
+</div>
+<div id="outline-container-org6176499" class="outline-4">
+<h4 id="org6176499">1804</h4>
+<div class="outline-text-4" id="text-org6176499">
+</div>
+<div id="outline-container-org17b324a" class="outline-5">
+<h5 id="org17b324a">1804-01 January</h5>
+<div class="outline-text-5" id="text-org17b324a">
+</div>
+<div id="outline-container-org8d27658" class="outline-6">
+<h6 id="org8d27658"><span class="timestamp-wrapper"><span class="timestamp">[1804-01-01 Sun]</span></span></h6>
+<div class="outline-text-6" id="text-org8d27658">
+</div>
+<div id="outline-container-haiti-self-established" class="outline-7">
+<h7 id="haiti-self-established">Haiti is self-established</h7>
+<div class="outline-text-7" id="text-haiti-self-established">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org4e0867f" class="outline-4">
+<h4 id="org4e0867f">1805</h4>
+<div class="outline-text-4" id="text-org4e0867f">
+</div>
+<div id="outline-container-orgad1e377" class="outline-5">
+<h5 id="orgad1e377">1805-12 December</h5>
+<div class="outline-text-5" id="text-orgad1e377">
+</div>
+<div id="outline-container-org4366887" class="outline-6">
+<h6 id="org4366887"><span class="timestamp-wrapper"><span class="timestamp">[1805-12-23 Mon]</span></span></h6>
+<div class="outline-text-6" id="text-org4366887">
+</div>
+<div id="outline-container-org4c68747" class="outline-7">
+<h7 id="org4c68747"><span class="todo STUB">STUB</span> Joseph Smith, founder of the LDS, is born</h7>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orge13c8e3" class="outline-3">
+<h3 id="orge13c8e3">1810s</h3>
+<div class="outline-text-3" id="text-orge13c8e3">
+</div>
+<div id="outline-container-org3f5905c" class="outline-4">
+<h4 id="org3f5905c">1810</h4>
+<div class="outline-text-4" id="text-org3f5905c">
+</div>
+<div id="outline-container-org7378fec" class="outline-5">
+<h5 id="org7378fec">1810-12 December</h5>
+<div class="outline-text-5" id="text-org7378fec">
+</div>
+<div id="outline-container-orgc5db619" class="outline-6">
+<h6 id="orgc5db619"><span class="timestamp-wrapper"><span class="timestamp">[1810-12-23 Sun]</span></span></h6>
+<div class="outline-text-6" id="text-orgc5db619">
+</div>
+<div id="outline-container-org3f9e670" class="outline-7">
+<h7 id="org3f9e670"><span class="todo STUB">STUB</span> Edward Blyth was born</h7>
+<div class="outline-text-7" id="text-org3f9e670">
+<p>
+Zoologist, focused on birds, helped establish&#x2026; zoological colonialism? whatever you'd call it; he was an early animal smuggler.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orge5447d6" class="outline-4">
+<h4 id="orge5447d6">1811</h4>
+<div class="outline-text-4" id="text-orge5447d6">
+</div>
+<div id="outline-container-org3b76d7a" class="outline-5">
+<h5 id="org3b76d7a">1811-01 January</h5>
+<div class="outline-text-5" id="text-org3b76d7a">
+</div>
+<div id="outline-container-org589c19a" class="outline-6">
+<h6 id="org589c19a">1811-01-08 Tuesday</h6>
+<div class="outline-text-6" id="text-org589c19a">
+</div>
+<div id="outline-container-german-coast-uprisings-began" class="outline-7">
+<h7 id="german-coast-uprisings-began">German Coast Uprisings began</h7>
+<div class="outline-text-7" id="text-german-coast-uprisings-began">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgea982d1" class="outline-4">
+<h4 id="orgea982d1">1815</h4>
+<div class="outline-text-4" id="text-orgea982d1">
+</div>
+<div id="outline-container-orgf0da24d" class="outline-5">
+<h5 id="orgf0da24d">1815-12 December</h5>
+<div class="outline-text-5" id="text-orgf0da24d">
+</div>
+<div id="outline-container-orgc5fb809" class="outline-6">
+<h6 id="orgc5fb809"><span class="timestamp-wrapper"><span class="timestamp">[1815-12-11 Mon]</span></span></h6>
+<div class="outline-text-6" id="text-orgc5fb809">
+</div>
+<div id="outline-container-select-committee-on-finance-created" class="outline-7">
+<h7 id="select-committee-on-finance-created"><span class="todo STUB">STUB</span> U.S. Senate created a select committee on finance and a uniform national currency.</h7>
+<div class="outline-text-7" id="text-select-committee-on-finance-created">
+<p>
+The committee was the predecessor to the United States Senate Committee on Finance, which is responsible for a whole bunch of financial economic nonsense.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org510f725" class="outline-6">
+<h6 id="org510f725"><span class="timestamp-wrapper"><span class="timestamp">[1815-12-23 Sat]</span></span></h6>
+<div class="outline-text-6" id="text-org510f725">
+</div>
+<div id="outline-container-org40f9f9b" class="outline-7">
+<h7 id="org40f9f9b"><span class="todo STUB">STUB</span> Jane Austen's novel <i>Emma</i> is published</h7>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org83fbc51" class="outline-3">
+<h3 id="org83fbc51">1820s</h3>
+<div class="outline-text-3" id="text-org83fbc51">
+</div>
+<div id="outline-container-org7b68e92" class="outline-4">
+<h4 id="org7b68e92">1821</h4>
+<div class="outline-text-4" id="text-org7b68e92">
+</div>
+<div id="outline-container-org01ac580" class="outline-5">
+<h5 id="org01ac580">1821-12 December</h5>
+<div class="outline-text-5" id="text-org01ac580">
+</div>
+<div id="outline-container-orgb97ff96" class="outline-6">
+<h6 id="orgb97ff96"><span class="timestamp-wrapper"><span class="timestamp">[1821-12-27 Thu]</span></span></h6>
+<div class="outline-text-6" id="text-orgb97ff96">
+</div>
+<div id="outline-container-joseph-dejacque-birth" class="outline-7">
+<h7 id="joseph-dejacque-birth"><span class="todo STUB">STUB</span> Joseph Dejacque was born</h7>
+<div class="outline-text-7" id="text-joseph-dejacque-birth">
+<p>
+Joseph Déjacque, born on this day in 1821, was a French anarcho-communist poet, philosopher, and writer who coined the term "libertarian" in reference to his own anti-capitalist politics. He utilized the term in an 1857 letter written to Pierre-Joseph Proudhon, criticizing his sexist views and support of individual ownership of the product of labor and a market economy.
+</p>
+
+<p>
+Déjacque was sentenced to two years of prison for his collection of poems "Les Lazaréennes, Fables et Poésies Sociales", but escaped to London around the time of the December 2nd, 1851 coup d'état. There, he joined a small community of outlaws gathered in Jersey and published "La question révolutionnaire", an exposition of the philosophy of anarchism.
+</p>
+
+<p>
+Later, Déjacque moved to the UNited States, where he publicly condemned the hanging of John Brown abd promoted the abolitionist cause. As the American Civil War began, Déjacque published a last issue of his paper "Libertaire" with an urgent appeal in which he urges the American people, whom he would like to be "less religious and more socialist", to defend freedom and the Republic against the "Jesuits, slavers, absolutists and authoritarians" who were at their door.
+</p>
+
+<p>
+Déjacque then returned to France, living his remaining years in poverty and passing away in 1864.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org2ccaf4b" class="outline-4">
+<h4 id="org2ccaf4b">1826</h4>
+<div class="outline-text-4" id="text-org2ccaf4b">
+</div>
+<div id="outline-container-org3a87204" class="outline-5">
+<h5 id="org3a87204">1826-12 December</h5>
+<div class="outline-text-5" id="text-org3a87204">
+</div>
+<div id="outline-container-org42361fa" class="outline-6">
+<h6 id="org42361fa"><span class="timestamp-wrapper"><span class="timestamp">[1826-12-21 Thu]</span></span></h6>
+<div class="outline-text-6" id="text-org42361fa">
+</div>
+<div id="outline-container-american-secesionists-in-nacogdoches-texas-declared-independence" class="outline-7">
+<h7 id="american-secesionists-in-nacogdoches-texas-declared-independence"><span class="todo STUB">STUB</span> American secessionists in Nacogdoches, Texas, declared independence</h7>
+<div class="outline-text-7" id="text-american-secesionists-in-nacogdoches-texas-declared-independence">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org0e5784c" class="outline-4">
+<h4 id="org0e5784c">1828</h4>
+<div class="outline-text-4" id="text-org0e5784c">
+</div>
+<div id="outline-container-org993655d" class="outline-5">
+<h5 id="org993655d">1828-12 December</h5>
+<div class="outline-text-5" id="text-org993655d">
+</div>
+<div id="outline-container-org9b51e99" class="outline-6">
+<h6 id="org9b51e99"><span class="timestamp-wrapper"><span class="timestamp">[1828-12-26 Fri]</span></span></h6>
+<div class="outline-text-6" id="text-org9b51e99">
+</div>
+<div id="outline-container-dover-mill-womens-strike-began" class="outline-7">
+<h7 id="dover-mill-womens-strike-began"><span class="todo STUB">STUB</span> Dover Mill Women's Strike began</h7>
+<div class="outline-text-7" id="text-dover-mill-womens-strike-began">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org1e86411" class="outline-3">
+<h3 id="org1e86411">1830s</h3>
+<div class="outline-text-3" id="text-org1e86411">
+</div>
+<div id="outline-container-org53ea43b" class="outline-4">
+<h4 id="org53ea43b">1831</h4>
+<div class="outline-text-4" id="text-org53ea43b">
+</div>
+<div id="outline-container-org638fcfb" class="outline-5">
+<h5 id="org638fcfb">1831-12 December</h5>
+<div class="outline-text-5" id="text-org638fcfb">
+</div>
+<div id="outline-container-org8d52e10" class="outline-6">
+<h6 id="org8d52e10"><span class="timestamp-wrapper"><span class="timestamp">[1831-12-25 Sun]</span></span></h6>
+<div class="outline-text-6" id="text-org8d52e10">
+</div>
+<div id="outline-container-org6898469" class="outline-7">
+<h7 id="org6898469"><span class="todo STUB">STUB</span> Baptist War began</h7>
+<div class="outline-text-7" id="text-org6898469">
+<p>
+in Jamaica
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org7a2f71d" class="outline-4">
+<h4 id="org7a2f71d">1835</h4>
+<div class="outline-text-4" id="text-org7a2f71d">
+</div>
+<div id="outline-container-orgd21b6fb" class="outline-5">
+<h5 id="orgd21b6fb">1835-12 December</h5>
+<div class="outline-text-5" id="text-orgd21b6fb">
+</div>
+<div id="outline-container-org9294d8a" class="outline-6">
+<h6 id="org9294d8a"><span class="timestamp-wrapper"><span class="timestamp">[1835-12-27 Sun]</span></span></h6>
+<div class="outline-text-6" id="text-org9294d8a">
+</div>
+<div id="outline-container-orgdb67f1d" class="outline-7">
+<h7 id="orgdb67f1d"><span class="todo STUB">STUB</span> Osceola killed the Indian Agent who'd imprisoned him</h7>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org2b436e6" class="outline-4">
+<h4 id="org2b436e6">1837</h4>
+<div class="outline-text-4" id="text-org2b436e6">
+</div>
+<div id="outline-container-org74d18c4" class="outline-5">
+<h5 id="org74d18c4">1837-12 December</h5>
+<div class="outline-text-5" id="text-org74d18c4">
+</div>
+<div id="outline-container-orge391b28" class="outline-6">
+<h6 id="orge391b28"><span class="timestamp-wrapper"><span class="timestamp">[1837-12-25 Mon]</span></span></h6>
+<div class="outline-text-6" id="text-orge391b28">
+</div>
+<div id="outline-container-org492faae" class="outline-7">
+<h7 id="org492faae"><span class="todo STUB">STUB</span> Seminole Nation repelled a U.S. invasion</h7>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgabee93d" class="outline-3">
+<h3 id="orgabee93d">1840s</h3>
+<div class="outline-text-3" id="text-orgabee93d">
+</div>
+<div id="outline-container-orgd325591" class="outline-4">
+<h4 id="orgd325591">1844</h4>
+<div class="outline-text-4" id="text-orgd325591">
+</div>
+<div id="outline-container-orgdbda59a" class="outline-5">
+<h5 id="orgdbda59a">1844-12 December</h5>
+<div class="outline-text-5" id="text-orgdbda59a">
+</div>
+<div id="outline-container-org6ce4823" class="outline-6">
+<h6 id="org6ce4823"><span class="timestamp-wrapper"><span class="timestamp">[1844-12-21 Sat]</span></span></h6>
+<div class="outline-text-6" id="text-org6ce4823">
+</div>
+<div id="outline-container-rochdale-society-of-equitable-pioneers-started" class="outline-7">
+<h7 id="rochdale-society-of-equitable-pioneers-started"><span class="todo STUB">STUB</span> Rochdale Society of Equitable Pioneers started</h7>
+<div class="outline-text-7" id="text-rochdale-society-of-equitable-pioneers-started">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org301390d" class="outline-3">
+<h3 id="org301390d">1850s</h3>
+<div class="outline-text-3" id="text-org301390d">
+</div>
+<div id="outline-container-org7fa3291" class="outline-4">
+<h4 id="org7fa3291">1855</h4>
+<div class="outline-text-4" id="text-org7fa3291">
+</div>
+<div id="outline-container-org3a44665" class="outline-5">
+<h5 id="org3a44665">1855-01 January</h5>
+<div class="outline-text-5" id="text-org3a44665">
+</div>
+<div id="outline-container-org5be6946" class="outline-6">
+<h6 id="org5be6946">1855-01-05 Friday</h6>
+<div class="outline-text-6" id="text-org5be6946">
+</div>
+<div id="outline-container-dundalli-assassinated" class="outline-7">
+<h7 id="dundalli-assassinated">Dundalli was assasinated</h7>
+<div class="outline-text-7" id="text-dundalli-assassinated">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org551f022" class="outline-3">
+<h3 id="org551f022">1860s</h3>
+<div class="outline-text-3" id="text-org551f022">
+</div>
+<div id="outline-container-orgf401320" class="outline-4">
+<h4 id="orgf401320">1862</h4>
+<div class="outline-text-4" id="text-orgf401320">
+</div>
+<div id="outline-container-org9b25a65" class="outline-5">
+<h5 id="org9b25a65">1862-12 December</h5>
+<div class="outline-text-5" id="text-org9b25a65">
+</div>
+<div id="outline-container-org902c60e" class="outline-6">
+<h6 id="org902c60e"><span class="timestamp-wrapper"><span class="timestamp">[1862-12-26 Fri]</span></span></h6>
+<div class="outline-text-6" id="text-org902c60e">
+</div>
+<div id="outline-container-org42697d6" class="outline-7">
+<h7 id="org42697d6"><span class="todo STUB">STUB</span> Dakota 38 were executed</h7>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org30f3363" class="outline-4">
+<h4 id="org30f3363">1867</h4>
+<div class="outline-text-4" id="text-org30f3363">
+</div>
+<div id="outline-container-orgf59e5e6" class="outline-5">
+<h5 id="orgf59e5e6">1867-01 January</h5>
+<div class="outline-text-5" id="text-orgf59e5e6">
+</div>
+<div id="outline-container-org14c816b" class="outline-6">
+<h6 id="org14c816b">1867-01-06 Sunday</h6>
+<div class="outline-text-6" id="text-org14c816b">
+</div>
+<div id="outline-container-revolutionary-committee-of-puerto-rico-founded" class="outline-7">
+<h7 id="revolutionary-committee-of-puerto-rico-founded">Revolutionary Committee of Puerto Rico founded</h7>
+<div class="outline-text-7" id="text-revolutionary-committee-of-puerto-rico-founded">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org06adc47" class="outline-4">
+<h4 id="org06adc47">1869</h4>
+<div class="outline-text-4" id="text-org06adc47">
+</div>
+<div id="outline-container-org5c914cf" class="outline-5">
+<h5 id="org5c914cf">1869-12 December</h5>
+<div class="outline-text-5" id="text-org5c914cf">
+</div>
+<div id="outline-container-org7ab75d7" class="outline-6">
+<h6 id="org7ab75d7"><span class="timestamp-wrapper"><span class="timestamp">[1869-12-27 Mon]</span></span></h6>
+<div class="outline-text-6" id="text-org7ab75d7">
+</div>
+<div id="outline-container-org375131c" class="outline-7">
+<h7 id="org375131c"><span class="todo STUB">STUB</span> Knights of Labor were founded</h7>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org2d176d6" class="outline-3">
+<h3 id="org2d176d6">1870s</h3>
+<div class="outline-text-3" id="text-org2d176d6">
+</div>
+<div id="outline-container-orge53ff56" class="outline-4">
+<h4 id="orge53ff56">1872</h4>
+<div class="outline-text-4" id="text-orge53ff56">
+</div>
+<div id="outline-container-orgf9c09a6" class="outline-5">
+<h5 id="orgf9c09a6">1872-12 December</h5>
+<div class="outline-text-5" id="text-orgf9c09a6">
+</div>
+<div id="outline-container-org9a8f98e" class="outline-6">
+<h6 id="org9a8f98e"><span class="timestamp-wrapper"><span class="timestamp">[1872-12-21 Sat]</span></span></h6>
+<div class="outline-text-6" id="text-org9a8f98e">
+</div>
+<div id="outline-container-org96bea4f" class="outline-7">
+<h7 id="org96bea4f"><span class="todo STUB">STUB</span> HMS Challenger expedition began</h7>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org4fed346" class="outline-4">
+<h4 id="org4fed346">1873</h4>
+<div class="outline-text-4" id="text-org4fed346">
+</div>
+<div id="outline-container-orgf890c75" class="outline-5">
+<h5 id="orgf890c75">1873-01 January</h5>
+<div class="outline-text-5" id="text-orgf890c75">
+</div>
+<div id="outline-container-org2db2f34" class="outline-6">
+<h6 id="org2db2f34">1873-01-02 Thursday</h6>
+<div class="outline-text-6" id="text-org2db2f34">
+</div>
+<div id="outline-container-anton-pannekoek-birth" class="outline-7">
+<h7 id="anton-pannekoek-birth">Anton Pannekoek was born</h7>
+<div class="outline-text-7" id="text-anton-pannekoek-birth">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd5eca97" class="outline-4">
+<h4 id="orgd5eca97">1876</h4>
+<div class="outline-text-4" id="text-orgd5eca97">
+</div>
+<div id="outline-container-orga958ab6" class="outline-5">
+<h5 id="orga958ab6">1876-12 December</h5>
+<div class="outline-text-5" id="text-orga958ab6">
+</div>
+<div id="outline-container-org55c67d9" class="outline-6">
+<h6 id="org55c67d9"><span class="timestamp-wrapper"><span class="timestamp">[1876-12-23 Sat]</span></span></h6>
+<div class="outline-text-6" id="text-org55c67d9">
+</div>
+<div id="outline-container-org34a38d1" class="outline-7">
+<h7 id="org34a38d1"><span class="todo STUB">STUB</span> Constantinople Conference began</h7>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgdad0249" class="outline-4">
+<h4 id="orgdad0249">1877</h4>
+<div class="outline-text-4" id="text-orgdad0249">
+</div>
+<div id="outline-container-org3b49eb5" class="outline-5">
+<h5 id="org3b49eb5">1877-12 December</h5>
+<div class="outline-text-5" id="text-org3b49eb5">
+</div>
+<div id="outline-container-orgdc20603" class="outline-6">
+<h6 id="orgdc20603"><span class="timestamp-wrapper"><span class="timestamp">[1877-12-23 Sun]</span></span></h6>
+<div class="outline-text-6" id="text-orgdc20603">
+</div>
+<div id="outline-container-orgbf0bc56" class="outline-7">
+<h7 id="orgbf0bc56"><span class="todo STUB">STUB</span> Luigi Fabbri was born</h7>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orga369c59" class="outline-3">
+<h3 id="orga369c59">1880s</h3>
+<div class="outline-text-3" id="text-orga369c59">
+</div>
+<div id="outline-container-org361c2f4" class="outline-4">
+<h4 id="org361c2f4">1884</h4>
+<div class="outline-text-4" id="text-org361c2f4">
+</div>
+<div id="outline-container-org86ec2c3" class="outline-5">
+<h5 id="org86ec2c3">1884-01 January</h5>
+<div class="outline-text-5" id="text-org86ec2c3">
+</div>
+<div id="outline-container-orgb1f3c73" class="outline-6">
+<h6 id="orgb1f3c73">1884-01-07 Monday</h6>
+<div class="outline-text-6" id="text-orgb1f3c73">
+</div>
+<div id="outline-container-arturo-giovannitti-birth" class="outline-7">
+<h7 id="arturo-giovannitti-birth">Arturo Giovannitti was born</h7>
+<div class="outline-text-7" id="text-arturo-giovannitti-birth">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org7bdb9ee" class="outline-4">
+<h4 id="org7bdb9ee">1889</h4>
+<div class="outline-text-4" id="text-org7bdb9ee">
+</div>
+<div id="outline-container-org905c6ee" class="outline-5">
+<h5 id="org905c6ee">1889-12 December</h5>
+<div class="outline-text-5" id="text-org905c6ee">
+</div>
+<div id="outline-container-org6d3fb22" class="outline-6">
+<h6 id="org6d3fb22"><span class="timestamp-wrapper"><span class="timestamp">[1889-12-25 Wed]</span></span></h6>
+<div class="outline-text-6" id="text-org6d3fb22">
+</div>
+<div id="outline-container-org663b0bd" class="outline-7">
+<h7 id="org663b0bd"><span class="todo STUB">STUB</span> Wilhelm Jelinek was born</h7>
+<div class="outline-text-7" id="text-org663b0bd">
+<p>
+German anarchist who survived WW2 to die in an East German prison in 1952
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org4b5a7f2" class="outline-3">
+<h3 id="org4b5a7f2">1890s</h3>
+<div class="outline-text-3" id="text-org4b5a7f2">
+</div>
+<div id="outline-container-orgad52f48" class="outline-4">
+<h4 id="orgad52f48">1890</h4>
+<div class="outline-text-4" id="text-orgad52f48">
+</div>
+<div id="outline-container-orgc169bcf" class="outline-5">
+<h5 id="orgc169bcf">1890-12 December</h5>
+<div class="outline-text-5" id="text-orgc169bcf">
+</div>
+<div id="outline-container-org620eccf" class="outline-6">
+<h6 id="org620eccf"><span class="timestamp-wrapper"><span class="timestamp">[1890-12-29 Mon]</span></span></h6>
+<div class="outline-text-6" id="text-org620eccf">
+</div>
+<div id="outline-container-org7b8b8aa" class="outline-7">
+<h7 id="org7b8b8aa"><span class="todo STUB">STUB</span> Wounded Knee Massacre</h7>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org72303de" class="outline-4">
+<h4 id="org72303de">1893</h4>
+<div class="outline-text-4" id="text-org72303de">
+</div>
+<div id="outline-container-orgdd0ee3e" class="outline-5">
+<h5 id="orgdd0ee3e">1893-01 January</h5>
+<div class="outline-text-5" id="text-orgdd0ee3e">
+</div>
+<div id="outline-container-org79a70af" class="outline-6">
+<h6 id="org79a70af">1893-01-02 Monday</h6>
+<div class="outline-text-6" id="text-org79a70af">
+</div>
+<div id="outline-container-sybil-morrison-birth" class="outline-7">
+<h7 id="sybil-morrison-birth">Sybil Morrison was born</h7>
+<div class="outline-text-7" id="text-sybil-morrison-birth">
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org2baf879" class="outline-5">
+<h5 id="org2baf879">1893-12 December</h5>
+<div class="outline-text-5" id="text-org2baf879">
+</div>
+<div id="outline-container-org2eaeaa3" class="outline-6">
+<h6 id="org2eaeaa3"><span class="timestamp-wrapper"><span class="timestamp">[1893-12-26 Tue]</span></span></h6>
+<div class="outline-text-6" id="text-org2eaeaa3">
+</div>
+<div id="outline-container-org8eb723f" class="outline-7">
+<h7 id="org8eb723f"><span class="todo STUB">STUB</span> Mao Zedong was born</h7>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf019dd8" class="outline-4">
+<h4 id="orgf019dd8">1899</h4>
+<div class="outline-text-4" id="text-orgf019dd8">
+</div>
+<div id="outline-container-org9731dda" class="outline-5">
+<h5 id="org9731dda">1899-01 January</h5>
+<div class="outline-text-5" id="text-org9731dda">
+</div>
+<div id="outline-container-wovoka-received-ghost-dance" class="outline-6">
+<h6 id="wovoka-received-ghost-dance">1899-01-01 Sunday</h6>
+<div class="outline-text-6" id="text-wovoka-received-ghost-dance">
+</div>
+<div id="outline-container-orgd02edcd" class="outline-7">
+<h7 id="orgd02edcd">Wovoka received the Ghost Dance</h7>
+</div>
+</div>
+<div id="outline-container-org36306ae" class="outline-6">
+<h6 id="org36306ae">1899-01-03 Tuesday</h6>
+<div class="outline-text-6" id="text-org36306ae">
+</div>
+<div id="outline-container-nietzsche-hugged-horse" class="outline-7">
+<h7 id="nietzsche-hugged-horse">Nietzsche hugged a horse</h7>
+<div class="outline-text-7" id="text-nietzsche-hugged-horse">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="outline-container-orge8c8c29" class="outline-2">
+<h2 id="orge8c8c29">20th Century</h2>
+<div class="outline-text-2" id="text-orge8c8c29">
+</div>
+<div id="outline-container-org9c9a5ed" class="outline-3">
+<h3 id="org9c9a5ed">1900s</h3>
+<div class="outline-text-3" id="text-org9c9a5ed">
+</div>
+<div id="outline-container-org10e5fb0" class="outline-4">
+<h4 id="org10e5fb0">1900</h4>
+<div class="outline-text-4" id="text-org10e5fb0">
+</div>
+<div id="outline-container-orge8be5a3" class="outline-5">
+<h5 id="orge8be5a3">1900-12 December</h5>
+<div class="outline-text-5" id="text-orge8be5a3">
+</div>
+<div id="outline-container-org39b558f" class="outline-6">
+<h6 id="org39b558f"><span class="timestamp-wrapper"><span class="timestamp">[1900-12-22 Sat]</span></span></h6>
+<div class="outline-text-6" id="text-org39b558f">
+</div>
+<div id="outline-container-orgf650fdc" class="outline-7">
+<h7 id="orgf650fdc"><span class="todo STUB">STUB</span> Valerio Isca, co-founder of the Libertarian Book Club in NYC, was born</h7>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org91f8adb" class="outline-4">
+<h4 id="org91f8adb">1901</h4>
+<div class="outline-text-4" id="text-org91f8adb">
+</div>
+<div id="outline-container-orgee35d21" class="outline-5">
+<h5 id="orgee35d21">1901-01 January</h5>
+<div class="outline-text-5" id="text-orgee35d21">
+</div>
+<div id="outline-container-org989a675" class="outline-6">
+<h6 id="org989a675">1901-01-04 Friday</h6>
+<div class="outline-text-6" id="text-org989a675">
+</div>
+<div id="outline-container-clr-james-birth" class="outline-7">
+<h7 id="clr-james-birth">CLR James was born</h7>
+<div class="outline-text-7" id="text-clr-james-birth">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgcbb1746" class="outline-4">
+<h4 id="orgcbb1746">1905</h4>
+<div class="outline-text-4" id="text-orgcbb1746">
+</div>
+<div id="outline-container-org488663c" class="outline-5">
+<h5 id="org488663c">1905-12 December</h5>
+<div class="outline-text-5" id="text-org488663c">
+</div>
+<div id="outline-container-org3687e7d" class="outline-6">
+<h6 id="org3687e7d"><span class="timestamp-wrapper"><span class="timestamp">[1905-12-11 Mon]</span></span></h6>
+<div class="outline-text-6" id="text-org3687e7d">
+</div>
+<div id="outline-container-shuliavka-republic-created" class="outline-7">
+<h7 id="shuliavka-republic-created"><span class="todo STUB">STUB</span> Workers in Kyiv, Ukraine rose up and formed the Shuliavka Republic.</h7>
+<div class="outline-text-7" id="text-shuliavka-republic-created">
+<p>
+Then a part of the Russian Empire, workers in Kiev rose up, stopped working at factories, formed a militia, and declared the worker's district the Shuliavka Republic, which was Kiev's sole authority. The Council of Workers' Deputies, leading the uprising, released a manifesto which called for the "abolition of the absolute monarchy, for the freedom of speech and assembly, for social services, for amnesty of political prisoners, for a national emancipation of Ukrainians, Poles, and Jews, and other nationalities of the Russian Empire, for the immediate end to the Jewish Pogroms, which embarasses our people," among other demands.
+</p>
+
+<p>
+Four day]s later, the Imperial Russian Army and police surrounded the Shuliavska Republic and arrested at least 78 people and confiscated all weapons. The next day, armed Gendarmes and Cossacks put down the uprising.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf5ff82d" class="outline-6">
+<h6 id="orgf5ff82d"><span class="timestamp-wrapper"><span class="timestamp">[1905-12-22 Fri]</span></span></h6>
+<div class="outline-text-6" id="text-orgf5ff82d">
+</div>
+<div id="outline-container-orgd80797f" class="outline-7">
+<h7 id="orgd80797f"><span class="todo STUB">STUB</span> Kenneth Rexroth, Wobbly poet, was born</h7>
+</div>
+</div>
+<div id="outline-container-org24d99fc" class="outline-6">
+<h6 id="org24d99fc"><span class="timestamp-wrapper"><span class="timestamp">[1905-12-30 Sat]</span></span></h6>
+<div class="outline-text-6" id="text-org24d99fc">
+</div>
+<div id="outline-container-orgb18c4fc" class="outline-7">
+<h7 id="orgb18c4fc"><span class="todo STUB">STUB</span> Frank Steunenberg assassinated</h7>
+<div class="outline-text-7" id="text-orgb18c4fc">
+<p>
+Governor of Idaho
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org7ce4ff4" class="outline-4">
+<h4 id="org7ce4ff4">1907</h4>
+<div class="outline-text-4" id="text-org7ce4ff4">
+</div>
+<div id="outline-container-org259054f" class="outline-5">
+<h5 id="org259054f">1907-01 January</h5>
+<div class="outline-text-5" id="text-org259054f">
+</div>
+<div id="outline-container-orgea165e5" class="outline-6">
+<h6 id="orgea165e5">1907-01-03 Thursday</h6>
+<div class="outline-text-6" id="text-orgea165e5">
+</div>
+<div id="outline-container-trotsky-exiled" class="outline-7">
+<h7 id="trotsky-exiled">Leon Trotsky exiled to Siberia</h7>
+<div class="outline-text-7" id="text-trotsky-exiled">
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org0a8dcf8" class="outline-5">
+<h5 id="org0a8dcf8">1907-12 December</h5>
+<div class="outline-text-5" id="text-org0a8dcf8">
+</div>
+<div id="outline-container-orgc7f49a2" class="outline-6">
+<h6 id="orgc7f49a2"><span class="timestamp-wrapper"><span class="timestamp">[1907-12-21 Sat]</span></span></h6>
+<div class="outline-text-6" id="text-orgc7f49a2">
+</div>
+<div id="outline-container-org84cdc3e" class="outline-7">
+<h7 id="org84cdc3e"><span class="todo STUB">STUB</span> Santa Maria School Massacre</h7>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgca97590" class="outline-4">
+<h4 id="orgca97590">1908</h4>
+<div class="outline-text-4" id="text-orgca97590">
+</div>
+<div id="outline-container-org6de0201" class="outline-5">
+<h5 id="org6de0201">1908-10 October</h5>
+<div class="outline-text-5" id="text-org6de0201">
+</div>
+<div id="outline-container-orga8318d6" class="outline-6">
+<h6 id="orga8318d6"><span class="timestamp-wrapper"><span class="timestamp">[1908-10-16 Fri]</span></span></h6>
+<div class="outline-text-6" id="text-orga8318d6">
+</div>
+<div id="outline-container-enver-hoxha-birth" class="outline-7">
+<h7 id="enver-hoxha-birth"><span class="todo STUB">STUB</span> Enver Hoxha was born</h7>
+<div class="outline-text-7" id="text-enver-hoxha-birth">
+<p>
+Enver Hoxha, born on this day in 1908, was the communist leader of Albania from 1946 to 1985, leaving behind a complex legacy of feminism and greatly improved access to healthcare and education, coupled with what critics perceive as a paranoid personality cult and brutal state repression.
+</p>
+
+<p>
+Hoxha is also known for having sharp ideological and political disagreements with the Soviet Union and communist Yugoslavia, siding most strongly with and receiving aid from Maoist China.
+</p>
+
+<p>
+Before coming into power, Hoxha was a French school teacher and librarian, becoming a communist partisan after fascist Italy invaded Albania in 1939. In March 1943, the first National Conference of the Communist Party elected Hoxha formally as First Secretary.
+</p>
+
+<p>
+It was in this position as First Secretary that Hoxha became head of state after the Albanian monarchy was abolished in 1946.
+</p>
+
+<p>
+In the years after Stalin's death, Hoxha grew increasingly distressed by the policies of the Soviet leadership and of Khrushchev in particular. China was also disillusioned with Soviet behavior at this time, and Hoxha found common ground with Mao Zedong's criticisms of Moscow. By 1961, Hoxha's attacks on the "revisionist" Soviet leadership had so infuriated Khrushchev that he elected first to terminate Moscow's economic aid to Albania and ultimately to sever diplomatic relations entirely.
+</p>
+
+<p>
+Under Hoxha's leadership, the Albanian literacy rate improved from 5-10% in rural areas to more 90%. Hoxha was also a proponent of women's rights, stating "the entire party and country should hurl into the fire and break the neck of anyone who dared trample underfoot the sacred edict of the party on the defense of women's rights". Accordingly, more than 175 times as many women attended secondary schools in 1978 than had done so in 1938.
+</p>
+
+<p>
+Critics of Hoxha point out that his reign had state repression of dissidents reminiscent of the Soviet Union and what they perceived as a paranoid personality cult.
+</p>
+
+<p>
+The government denied the population access to information other than that disseminated by the government-controlled media. The 1992 book "Albania: A Country Study" (commissioned by the U.S. government) alleges one out of three Albanians had either been interrogated by the Sigurimi secret police or incarcerated in labor camps.
+</p>
+
+<p>
+Hoxha died in 1985, leading Ramiz Alia to succeed him as head of state. Although Albania was one of the poorest European nations at the time of his death, the country was also economically self-sufficient, carrying minimal foreign debt and boasting a trade surplus of $10 million.
+</p>
+
+<p>
+"Every departure from class struggle has fatal results for the destiny of socialism."
+</p>
+
+<ul class="org-ul">
+<li>Enver Hoxha</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org265401c" class="outline-3">
+<h3 id="org265401c">1910s</h3>
+<div class="outline-text-3" id="text-org265401c">
+</div>
+<div id="outline-container-org44203f1" class="outline-4">
+<h4 id="org44203f1">1912</h4>
+<div class="outline-text-4" id="text-org44203f1">
+</div>
+<div id="outline-container-org55691a2" class="outline-5">
+<h5 id="org55691a2">1912-01 January</h5>
+<div class="outline-text-5" id="text-org55691a2">
+</div>
+<div id="outline-container-org940abb0" class="outline-6">
+<h6 id="org940abb0">1912-01-01 Monday</h6>
+<div class="outline-text-6" id="text-org940abb0">
+</div>
+<div id="outline-container-herbert-lee-birth" class="outline-7">
+<h7 id="herbert-lee-birth">Herbert Lee was born</h7>
+<div class="outline-text-7" id="text-herbert-lee-birth">
+</div>
+</div>
+</div>
+<div id="outline-container-orgbff4034" class="outline-6">
+<h6 id="orgbff4034">1912-01-03 Wednesday</h6>
+<div class="outline-text-6" id="text-orgbff4034">
+</div>
+<div id="outline-container-federico-borrell-garcia-birth" class="outline-7">
+<h7 id="federico-borrell-garcia-birth">Federico Borrell Garcia was born</h7>
+<div class="outline-text-7" id="text-federico-borrell-garcia-birth">
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org02e944d" class="outline-4">
+<h4 id="org02e944d">1913</h4>
+<div class="outline-text-4" id="text-org02e944d">
+</div>
+<div id="outline-container-org76f70b6" class="outline-5">
+<h5 id="org76f70b6">1913-12 December</h5>
+<div class="outline-text-5" id="text-org76f70b6">
+</div>
+<div id="outline-container-orga70c8d8" class="outline-6">
+<h6 id="orga70c8d8"><span class="timestamp-wrapper"><span class="timestamp">[1913-12-23 Tue]</span></span></h6>
+<div class="outline-text-6" id="text-orga70c8d8">
+</div>
+<div id="outline-container-orgb0dbf4c" class="outline-7">
+<h7 id="orgb0dbf4c"><span class="todo STUB">STUB</span> Federal Reserve Act is signed into U.S. law</h7>
+</div>
+</div>
+<div id="outline-container-org77a5224" class="outline-6">
+<h6 id="org77a5224"><span class="timestamp-wrapper"><span class="timestamp">[1913-12-24 Wed]</span></span></h6>
+<div class="outline-text-6" id="text-org77a5224">
+</div>
+<div id="outline-container-italian-hall-disaster" class="outline-7">
+<h7 id="italian-hall-disaster"><span class="todo STUB">STUB</span> The Italian Hall Disaster occurred</h7>
+<div class="outline-text-7" id="text-italian-hall-disaster">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org26eacd2" class="outline-4">
+<h4 id="org26eacd2">1916</h4>
+<div class="outline-text-4" id="text-org26eacd2">
+</div>
+<div id="outline-container-org9b6aeff" class="outline-5">
+<h5 id="org9b6aeff">1916-12 December</h5>
+<div class="outline-text-5" id="text-org9b6aeff">
+</div>
+<div id="outline-container-orga7ed059" class="outline-6">
+<h6 id="orga7ed059"><span class="timestamp-wrapper"><span class="timestamp">[1916-12-25 Mon]</span></span></h6>
+<div class="outline-text-6" id="text-orga7ed059">
+</div>
+<div id="outline-container-orgbebcc98" class="outline-7">
+<h7 id="orgbebcc98"><span class="todo STUB">STUB</span> Ahmed Ben Bella was born</h7>
+<div class="outline-text-7" id="text-orgbebcc98">
+<p>
+first Prime Minister of Algeria
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org2ada057" class="outline-4">
+<h4 id="org2ada057">1919</h4>
+<div class="outline-text-4" id="text-org2ada057">
+</div>
+<div id="outline-container-orgfc9b5d6" class="outline-5">
+<h5 id="orgfc9b5d6">1919-01 January</h5>
+<div class="outline-text-5" id="text-orgfc9b5d6">
+</div>
+<div id="outline-container-org4eae894" class="outline-6">
+<h6 id="org4eae894">1919-01-07 Tuesday</h6>
+<div class="outline-text-6" id="text-org4eae894">
+</div>
+<div id="outline-container-tragic-week-began" class="outline-7">
+<h7 id="tragic-week-began">Tragic Week began</h7>
+<div class="outline-text-7" id="text-tragic-week-began">
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org27e0b8e" class="outline-5">
+<h5 id="org27e0b8e">1919-12 December</h5>
+<div class="outline-text-5" id="text-org27e0b8e">
+</div>
+<div id="outline-container-org05f1fd4" class="outline-6">
+<h6 id="org05f1fd4"><span class="timestamp-wrapper"><span class="timestamp">[1919-12-21 Sun]</span></span></h6>
+<div class="outline-text-6" id="text-org05f1fd4">
+</div>
+<div id="outline-container-org431bf6a" class="outline-7">
+<h7 id="org431bf6a"><span class="todo STUB">STUB</span> Emma Goldman deported to Russia</h7>
+</div>
+</div>
+<div id="outline-container-org75f4ece" class="outline-6">
+<h6 id="org75f4ece"><span class="timestamp-wrapper"><span class="timestamp">[1919-12-23 Tue]</span></span></h6>
+<div class="outline-text-6" id="text-org75f4ece">
+</div>
+<div id="outline-container-org6cea679" class="outline-7">
+<h7 id="org6cea679"><span class="todo STUB">STUB</span> Sexual Disqualification Act became law in the UK</h7>
+<div class="outline-text-7" id="text-org6cea679">
+<p>
+It let women work
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org80ea598" class="outline-3">
+<h3 id="org80ea598">1920s</h3>
+<div class="outline-text-3" id="text-org80ea598">
+</div>
+<div id="outline-container-orgdb8ae77" class="outline-4">
+<h4 id="orgdb8ae77">1920</h4>
+<div class="outline-text-4" id="text-orgdb8ae77">
+</div>
+<div id="outline-container-orgc95299b" class="outline-5">
+<h5 id="orgc95299b">1920-01 January</h5>
+<div class="outline-text-5" id="text-orgc95299b">
+</div>
+<div id="outline-container-orgcf2b7db" class="outline-6">
+<h6 id="orgcf2b7db">1920-01-02 Friday</h6>
+<div class="outline-text-6" id="text-orgcf2b7db">
+</div>
+<div id="outline-container-2nd-palmer-raids-began" class="outline-7">
+<h7 id="2nd-palmer-raids-began">2nd Palmer Raids began</h7>
+<div class="outline-text-7" id="text-2nd-palmer-raids-began">
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org03dbe75" class="outline-5">
+<h5 id="org03dbe75">1920-12 December</h5>
+<div class="outline-text-5" id="text-org03dbe75">
+</div>
+<div id="outline-container-orgf33e613" class="outline-6">
+<h6 id="orgf33e613"><span class="timestamp-wrapper"><span class="timestamp">[1920-12-11 Sat]</span></span></h6>
+<div class="outline-text-6" id="text-orgf33e613">
+</div>
+<div id="outline-container-cork-burnt" class="outline-7">
+<h7 id="cork-burnt"><span class="todo STUB">STUB</span> British forces burnt and looted Cork</h7>
+<div class="outline-text-7" id="text-cork-burnt">
+<p>
+It was in retaliation of an IRA ambush.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org4a2c3c6" class="outline-6">
+<h6 id="org4a2c3c6"><span class="timestamp-wrapper"><span class="timestamp">[1920-12-24 Fri]</span></span></h6>
+<div class="outline-text-6" id="text-org4a2c3c6">
+</div>
+<div id="outline-container-storme-delarverie-birth" class="outline-7">
+<h7 id="storme-delarverie-birth"><span class="todo STUB">STUB</span> Storme DeLarverie was born</h7>
+<div class="outline-text-7" id="text-storme-delarverie-birth">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org5134630" class="outline-4">
+<h4 id="org5134630">1922</h4>
+<div class="outline-text-4" id="text-org5134630">
+</div>
+<div id="outline-container-org8c2be58" class="outline-5">
+<h5 id="org8c2be58">1922-12 December</h5>
+<div class="outline-text-5" id="text-org8c2be58">
+</div>
+<div id="outline-container-org45332a5" class="outline-6">
+<h6 id="org45332a5"><span class="timestamp-wrapper"><span class="timestamp">[1922-12-25 Mon]</span></span></h6>
+<div class="outline-text-6" id="text-org45332a5">
+</div>
+<div id="outline-container-orgb97811f" class="outline-7">
+<h7 id="orgb97811f"><span class="todo STUB">STUB</span> Founding congress for the International Workers Association began</h7>
+</div>
+<div id="outline-container-org1cf50c8" class="outline-7">
+<h7 id="org1cf50c8"><span class="todo STUB">STUB</span> LAPD beat 7 people in their custody</h7>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org14b7f6d" class="outline-4">
+<h4 id="org14b7f6d">1923</h4>
+<div class="outline-text-4" id="text-org14b7f6d">
+</div>
+<div id="outline-container-org7814798" class="outline-5">
+<h5 id="org7814798">1923-12 December</h5>
+<div class="outline-text-5" id="text-org7814798">
+</div>
+<div id="outline-container-orgba5935d" class="outline-6">
+<h6 id="orgba5935d"><span class="timestamp-wrapper"><span class="timestamp">[1923-12-27 Thu]</span></span></h6>
+<div class="outline-text-6" id="text-orgba5935d">
+</div>
+<div id="outline-container-toranomon-incident" class="outline-7">
+<h7 id="toranomon-incident"><span class="todo STUB">STUB</span> The Toranomon Incident occurred</h7>
+<div class="outline-text-7" id="text-toranomon-incident">
+<p>
+The Toranomon Incident (虎ノ門事件) was an assassination attempt on the Prince Regent Hirohito of Japan by communist dissident Daisuke Nanba that took place at the Toranomon intersection in downtown Tokyo, Japan on December 27th, 1923. Nanba was sentenced to death and executed on November 15th, 1924.
+</p>
+
+<p>
+Nanba was motivated both by leftist ideology and a desire to avenge the execution of Shūsui Kōtoku, who was executed for his alleged role in the High Treason Incident of 1910. Hirohito was on his way to the opening of the 48th Session of the Imperial Diet when Namba fired a small pistol into his carriage, shattering a window and injuring a chamberlain, but leaving Hirohito unharmed.
+</p>
+
+<p>
+After being arrested, Nanba explained that he was a communist and was seeking to avenge the death of Kōtoku. Despite court records affirming his sound state of mind, Namba was presented as insane to the public.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgffa37d0" class="outline-6">
+<h6 id="orgffa37d0"><span class="timestamp-wrapper"><span class="timestamp">[1923-12-29 Sat]</span></span></h6>
+<div class="outline-text-6" id="text-orgffa37d0">
+</div>
+<div id="outline-container-org91c64bc" class="outline-7">
+<h7 id="org91c64bc"><span class="todo STUB">STUB</span> Catcher Race Riot</h7>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org68acba2" class="outline-4">
+<h4 id="org68acba2">1924</h4>
+<div class="outline-text-4" id="text-org68acba2">
+</div>
+<div id="outline-container-orgaf26ba9" class="outline-5">
+<h5 id="orgaf26ba9">1924-12 December</h5>
+<div class="outline-text-5" id="text-orgaf26ba9">
+</div>
+<div id="outline-container-org8bfeddf" class="outline-6">
+<h6 id="org8bfeddf"><span class="timestamp-wrapper"><span class="timestamp">[1924-12-10 Wed]</span></span></h6>
+<div class="outline-text-6" id="text-org8bfeddf">
+</div>
+<div id="outline-container-society-for-human-rights-founded" class="outline-7">
+<h7 id="society-for-human-rights-founded"><span class="todo STUB">STUB</span> The Society for Human Rights was founded</h7>
+<div class="outline-text-7" id="text-society-for-human-rights-founded">
+<p>
+The Society for Human Rights, founded by Henry Gerber in Illinois on this day in 1924, was the first gay rights organization in the United States. The Society for Human Rights also published the earliest-documented homosexual periodical, Friendship and Freedom. Although Gerber (shown above) founded the group, a black clergyman named John T. Graves was its first president, with Gerber serving as a director.
+</p>
+
+<p>
+Gerber set out to expand the Society's membership beyond the original seven but had difficulty interesting anyone other than poorer gays in joining. More affluent members of Chicago's gay community refused to join his society, not wanting to ruin their reputations by being associated with homosexuality.
+</p>
+
+<p>
+The Society was only a chartered organization for a few months before police arrested Gerber and several other members. After their arrests, the Chicago Examiner reported the story under the headline "Strange Sex Cult Exposed".
+</p>
+
+<p>
+Gerber was subjected to three highly publicized trials, and his defense, while ultimately successful, cost him his life savings. Unable to continue funding the Society, the group dismantled, and Gerber left for New York City, embittered that none of the wealthier gays of Chicago had come to his aid for a cause he believed was designed to advance the common good.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb2afddd" class="outline-4">
+<h4 id="orgb2afddd">1926</h4>
+<div class="outline-text-4" id="text-orgb2afddd">
+</div>
+<div id="outline-container-orgc7101e6" class="outline-5">
+<h5 id="orgc7101e6">1926-12 December</h5>
+<div class="outline-text-5" id="text-orgc7101e6">
+</div>
+<div id="outline-container-orgaa25ae9" class="outline-6">
+<h6 id="orgaa25ae9"><span class="timestamp-wrapper"><span class="timestamp">[1926-12-23 Thu]</span></span></h6>
+<div class="outline-text-6" id="text-orgaa25ae9">
+</div>
+<div id="outline-container-org4a6a1f6" class="outline-7">
+<h7 id="org4a6a1f6"><span class="todo STUB">STUB</span> Robert Bly was born</h7>
+<div class="outline-text-7" id="text-org4a6a1f6">
+<p>
+One of the leaders of mythopoetic masculinity.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgecd226d" class="outline-4">
+<h4 id="orgecd226d">1927</h4>
+<div class="outline-text-4" id="text-orgecd226d">
+</div>
+<div id="outline-container-org8901b44" class="outline-5">
+<h5 id="org8901b44">1927-12 December</h5>
+<div class="outline-text-5" id="text-org8901b44">
+</div>
+<div id="outline-container-orgb482d51" class="outline-6">
+<h6 id="orgb482d51"><span class="timestamp-wrapper"><span class="timestamp">[1927-12-11 Sun]</span></span></h6>
+<div class="outline-text-6" id="text-orgb482d51">
+</div>
+<div id="outline-container-gaungzhou-soviety-created" class="outline-7">
+<h7 id="gaungzhou-soviety-created"><span class="todo STUB">STUB</span> Communist Red Guards rose up in Guangzhou, China, and formed a Gaungzhou Soviety</h7>
+<div class="outline-text-7" id="text-gaungzhou-soviety-created">
+<p>
+They tried!
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org38cd2c4" class="outline-3">
+<h3 id="org38cd2c4">1930s</h3>
+<div class="outline-text-3" id="text-org38cd2c4">
+</div>
+<div id="outline-container-orgd181b93" class="outline-4">
+<h4 id="orgd181b93">1936</h4>
+<div class="outline-text-4" id="text-orgd181b93">
+</div>
+<div id="outline-container-orgad5a6e0" class="outline-5">
+<h5 id="orgad5a6e0">1936-12 December</h5>
+<div class="outline-text-5" id="text-orgad5a6e0">
+</div>
+<div id="outline-container-orged2c3fe" class="outline-6">
+<h6 id="orged2c3fe"><span class="timestamp-wrapper"><span class="timestamp">[1936-12-11 Fri]</span></span></h6>
+<div class="outline-text-6" id="text-orged2c3fe">
+</div>
+<div id="outline-container-edward-viii-abdicated" class="outline-7">
+<h7 id="edward-viii-abdicated"><span class="todo STUB">STUB</span> Edward VIII's abdication took effect</h7>
+<div class="outline-text-7" id="text-edward-viii-abdicated">
+<p>
+The things we do for love.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org8a4d592" class="outline-6">
+<h6 id="org8a4d592"><span class="timestamp-wrapper"><span class="timestamp">[1936-12-23 Wed]</span></span></h6>
+<div class="outline-text-6" id="text-org8a4d592">
+</div>
+<div id="outline-container-org4ba0705" class="outline-7">
+<h7 id="org4ba0705"><span class="todo STUB">STUB</span> Spanish Republic legalized the Regional Defense Council of Aragon</h7>
+</div>
+</div>
+<div id="outline-container-org5c52ec6" class="outline-6">
+<h6 id="org5c52ec6"><span class="timestamp-wrapper"><span class="timestamp">[1936-12-30 Wed]</span></span></h6>
+<div class="outline-text-6" id="text-org5c52ec6">
+</div>
+<div id="outline-container-org36be938" class="outline-7">
+<h7 id="org36be938"><span class="todo STUB">STUB</span> Flint Sit-down Strike began</h7>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf1d3c72" class="outline-4">
+<h4 id="orgf1d3c72">1937</h4>
+<div class="outline-text-4" id="text-orgf1d3c72">
+</div>
+<div id="outline-container-org72a509a" class="outline-5">
+<h5 id="org72a509a">1937-10 October</h5>
+<div class="outline-text-5" id="text-org72a509a">
+</div>
+<div id="outline-container-org6198d6d" class="outline-6">
+<h6 id="org6198d6d"><span class="timestamp-wrapper"><span class="timestamp">[1937-10-02 Sat]</span></span></h6>
+<div class="outline-text-6" id="text-org6198d6d">
+</div>
+<div id="outline-container-parsley-massacre" class="outline-7">
+<h7 id="parsley-massacre"><span class="todo STUB">STUB</span> The Parsley Massacre began</h7>
+<div class="outline-text-7" id="text-parsley-massacre">
+<p>
+The <b><i>Parsley Massacre</i></b> was an act of genocide which started on October 2nd, 1937, in which the army of the Dominican Republic was ordered by Rafael Trujillo to exterminate Haitians living in the northwest Dominican Republic.
+</p>
+<blockquote>
+<p>
+The Parsley Massacre (Spanish: El Corte "the cutting"; Creole: kout kouto-a "the stabbing") was an act of genocide committed against Haitians living in the Dominican Republic's northwestern frontier that began on this day in 1937. Estimates of the amount of Haitians murdered range from 12,000-35,000.
+</p>
+
+<p>
+The massacre was carried out by the Dominican Army on the orders of Dominican dictator Rafael Trujillo, who initiated the violence with this statement, given on Oct. 2nd, 1937:
+</p>
+
+<p>
+"To the Dominicans who were complaining of the depredations by Haitians living among them, thefts of cattle, provisions, fruits, etc., and were thus prevented from enjoying in peace the products of their labor, I have responded, 'I will fix this.' And we have already begun to remedy the situation. Three hundred Haitians are now dead in Bánica. This remedy will continue."
+</p>
+
+<p>
+In the following week, hundreds of Dominican troops poured into the region, killing Haitians with rifles, machetes, shovels, knives, and bayonets. Haitian children were reportedly thrown in the air and caught by soldiers' bayonets, then thrown on their mothers' corpses. Others were drowned in the sea, making identification and counting of the dead impossible.
+</p>
+
+<p>
+The term "Parsley Massacre" for the genocide came from the method that Dominican soldiers would use to determine whether or not those living on the border were native Afro-Dominicans or immigrant Afro-Haitians - they would hold up a sprig of parsley to someone and ask them what it was.
+</p>
+
+<p>
+If the person could pronounce it the Spanish way ("perejil"), the soldiers considered them Dominican and let them live, however if they pronounced it with a French or Creole accent, they were considered Haitian and executed.<sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup>
+</p>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgfa8726b" class="outline-4">
+<h4 id="orgfa8726b">1939</h4>
+<div class="outline-text-4" id="text-orgfa8726b">
+</div>
+<div id="outline-container-org493a595" class="outline-5">
+<h5 id="org493a595">1939-01</h5>
+<div class="outline-text-5" id="text-org493a595">
+</div>
+<div id="outline-container-org56abf7e" class="outline-6">
+<h6 id="org56abf7e">1939-01-04 Wednesday</h6>
+<div class="outline-text-6" id="text-org56abf7e">
+</div>
+<div id="outline-container-george-orwell-signed-breton-rivera-manifesto" class="outline-7">
+<h7 id="george-orwell-signed-breton-rivera-manifesto">George Orwell signed the Breton/River manifesto</h7>
+<div class="outline-text-7" id="text-george-orwell-signed-breton-rivera-manifesto">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org6ad9528" class="outline-3">
+<h3 id="org6ad9528">1940s</h3>
+<div class="outline-text-3" id="text-org6ad9528">
+</div>
+<div id="outline-container-org88d263b" class="outline-4">
+<h4 id="org88d263b">1941</h4>
+<div class="outline-text-4" id="text-org88d263b">
+</div>
+<div id="outline-container-org9a0192b" class="outline-5">
+<h5 id="org9a0192b">1941-12 December</h5>
+<div class="outline-text-5" id="text-org9a0192b">
+</div>
+<div id="outline-container-org19dd417" class="outline-6">
+<h6 id="org19dd417"><span class="timestamp-wrapper"><span class="timestamp">[1941-12-11 Thu]</span></span></h6>
+<div class="outline-text-6" id="text-org19dd417">
+</div>
+<div id="outline-container-ww2-germany-and-italy-declared-war-on-the-us" class="outline-7">
+<h7 id="ww2-germany-and-italy-declared-war-on-the-us"><span class="todo STUB">STUB</span> Germany and Italy declared war on the United States, Poland declared war on Japan</h7>
+<div class="outline-text-7" id="text-ww2-germany-and-italy-declared-war-on-the-us">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orga129655" class="outline-4">
+<h4 id="orga129655">1946</h4>
+<div class="outline-text-4" id="text-orga129655">
+</div>
+<div id="outline-container-orga08a619" class="outline-5">
+<h5 id="orga08a619">1946-12 December</h5>
+<div class="outline-text-5" id="text-orga08a619">
+</div>
+<div id="outline-container-org617c4bc" class="outline-6">
+<h6 id="org617c4bc"><span class="timestamp-wrapper"><span class="timestamp">[1946-12-22 Sun]</span></span></h6>
+<div class="outline-text-6" id="text-org617c4bc">
+</div>
+<div id="outline-container-org7d5a430" class="outline-7">
+<h7 id="org7d5a430"><span class="todo STUB">STUB</span> Kuwasi Balgoon was born</h7>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org3548189" class="outline-4">
+<h4 id="org3548189">1947</h4>
+<div class="outline-text-4" id="text-org3548189">
+</div>
+<div id="outline-container-orgc616a48" class="outline-5">
+<h5 id="orgc616a48">1947-12 December</h5>
+<div class="outline-text-5" id="text-orgc616a48">
+</div>
+<div id="outline-container-orgf0d23bb" class="outline-6">
+<h6 id="orgf0d23bb"><span class="timestamp-wrapper"><span class="timestamp">[1947-12-23 Tue]</span></span></h6>
+<div class="outline-text-6" id="text-orgf0d23bb">
+</div>
+<div id="outline-container-org745c1ba" class="outline-7">
+<h7 id="org745c1ba"><span class="todo STUB">STUB</span> Transistor demonstrated at Bell Labs</h7>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orge07b003" class="outline-4">
+<h4 id="orge07b003">1948</h4>
+<div class="outline-text-4" id="text-orge07b003">
+</div>
+<div id="outline-container-org3a1d7e2" class="outline-5">
+<h5 id="org3a1d7e2">1948-12 December</h5>
+<div class="outline-text-5" id="text-org3a1d7e2">
+</div>
+<div id="outline-container-orgd1c9a51" class="outline-6">
+<h6 id="orgd1c9a51"><span class="timestamp-wrapper"><span class="timestamp">[1948-12-23 Thu]</span></span></h6>
+<div class="outline-text-6" id="text-orgd1c9a51">
+</div>
+<div id="outline-container-org4b08075" class="outline-7">
+<h7 id="org4b08075"><span class="todo STUB">STUB</span> Japanese leaders of World War 2 are executed</h7>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgbed6c94" class="outline-4">
+<h4 id="orgbed6c94">1949</h4>
+<div class="outline-text-4" id="text-orgbed6c94">
+</div>
+<div id="outline-container-orgcc61eb1" class="outline-5">
+<h5 id="orgcc61eb1">1949-12 December</h5>
+<div class="outline-text-5" id="text-orgcc61eb1">
+</div>
+<div id="outline-container-org4d31425" class="outline-6">
+<h6 id="org4d31425"><span class="timestamp-wrapper"><span class="timestamp">[1949-12-21 Wed]</span></span></h6>
+<div class="outline-text-6" id="text-org4d31425">
+</div>
+<div id="outline-container-org321f3c7" class="outline-7">
+<h7 id="org321f3c7"><span class="todo STUB">STUB</span> Thomas Sankara was born</h7>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org0bcba4d" class="outline-3">
+<h3 id="org0bcba4d">1950s</h3>
+<div class="outline-text-3" id="text-org0bcba4d">
+</div>
+<div id="outline-container-org5c87a8b" class="outline-4">
+<h4 id="org5c87a8b">1951</h4>
+<div class="outline-text-4" id="text-org5c87a8b">
+</div>
+<div id="outline-container-org8691566" class="outline-5">
+<h5 id="org8691566">1951-12</h5>
+<div class="outline-text-5" id="text-org8691566">
+</div>
+<div id="outline-container-org6f7d6ff" class="outline-6">
+<h6 id="org6f7d6ff"><span class="timestamp-wrapper"><span class="timestamp">[1951-12-25 Tue]</span></span></h6>
+<div class="outline-text-6" id="text-org6f7d6ff">
+</div>
+<div id="outline-container-orgd8f278b" class="outline-7">
+<h7 id="orgd8f278b"><span class="todo STUB">STUB</span> Moore Home Bombing</h7>
+<div class="outline-text-7" id="text-orgd8f278b">
+<p>
+Harry and Harriette Moore's home was bombed by white supremacists
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf84ec2a" class="outline-4">
+<h4 id="orgf84ec2a">1954</h4>
+<div class="outline-text-4" id="text-orgf84ec2a">
+</div>
+<div id="outline-container-org882c60f" class="outline-5">
+<h5 id="org882c60f">1954-12 December</h5>
+<div class="outline-text-5" id="text-org882c60f">
+</div>
+<div id="outline-container-org71b882b" class="outline-6">
+<h6 id="org71b882b"><span class="timestamp-wrapper"><span class="timestamp">[1954-12-23 Thu]</span></span></h6>
+<div class="outline-text-6" id="text-org71b882b">
+</div>
+<div id="outline-container-orge4d7816" class="outline-7">
+<h7 id="orge4d7816"><span class="todo STUB">STUB</span> First successful kidney transplant</h7>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgac79129" class="outline-4">
+<h4 id="orgac79129">1956</h4>
+<div class="outline-text-4" id="text-orgac79129">
+</div>
+<div id="outline-container-org6711948" class="outline-5">
+<h5 id="org6711948">1956-12 December</h5>
+<div class="outline-text-5" id="text-org6711948">
+</div>
+<div id="outline-container-org1fee700" class="outline-6">
+<h6 id="org1fee700"><span class="timestamp-wrapper"><span class="timestamp">[1956-12-10 Mon]</span></span></h6>
+<div class="outline-text-6" id="text-org1fee700">
+</div>
+<div id="outline-container-peoples-movement-for-the-liberation-of-angola-founded" class="outline-7">
+<h7 id="peoples-movement-for-the-liberation-of-angola-founded"><span class="todo STUB">STUB</span> The People's Movement for the Liberation of Angola (MPLA) was founded</h7>
+<div class="outline-text-7" id="text-peoples-movement-for-the-liberation-of-angola-founded">
+<p>
+On this day in 1956, the People's Movement for the Liberation of Angola (MPLA) was founded in a merger between two smaller communist and anti-colonial parties. The MPLA fought for their independence from Portuguese colonizers, alongside the African Party for the Independence of Guinea and Cape Verde (PAIGC), the Mozambique Liberation Front (FRELIMO) and CLSTP, forerunner of the Movement for the Liberation of São Tomé and Príncipe.
+</p>
+
+<p>
+From 1961 to 1974, the MLPA waged a guerrilla liberation war against the Portuguese colonial government in Angola. Following the Carnation Revolution in Portugal, the newly-established Portuguese military government granted Angola independence, which was to be led by a coalition of different anti-colonial liberation armies.
+</p>
+
+<p>
+The coalition quickly broke apart, erupting into a civil war between the MPLA, the National Liberation Front of Angola (FNLA), and the Union for the Total Independence of Angola (UNITA). The MLPA won the war, and has ruled Angola since 1975.
+</p>
+
+<p>
+At its first congress in 1977, the MPLA adopted Marxism-Leninism as its official ideology. Receiving military support from Cuba and the Soviet Union, they maintained control over most territory in Angola, despite extensive aid to the FNLA and UNITA from South Africa, Zaire, and the United States.
+</p>
+
+<p>
+Both the MPLA and UNITA were complicit in war crimes; more than 500,000 civilians were killed during the civil war.
+</p>
+
+<p>
+After the end of the Cold War and collapse of the Soviet Union, the MPLA renounced Marxism-Leninism in favor of social democracy. Though no longer a proxy war between the USA and the USSR, the Angolan Civil War lasted until 2002, when a peace agreement was finally reached.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org8fb656f" class="outline-4">
+<h4 id="org8fb656f">1957</h4>
+<div class="outline-text-4" id="text-org8fb656f">
+</div>
+<div id="outline-container-org9ffb52b" class="outline-5">
+<h5 id="org9ffb52b">1957-01 January</h5>
+<div class="outline-text-5" id="text-org9ffb52b">
+</div>
+<div id="outline-container-orgfe93109" class="outline-6">
+<h6 id="orgfe93109">1957-01-05 Saturday</h6>
+<div class="outline-text-6" id="text-orgfe93109">
+</div>
+<div id="outline-container-eisenhower-doctrine-declared" class="outline-7">
+<h7 id="eisenhower-doctrine-declared">Eisenhower Doctrine Declared</h7>
+<div class="outline-text-7" id="text-eisenhower-doctrine-declared">
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org51ee511" class="outline-4">
+<h4 id="org51ee511">1958</h4>
+<div class="outline-text-4" id="text-org51ee511">
+</div>
+<div id="outline-container-org982bad8" class="outline-5">
+<h5 id="org982bad8">1958-12 December</h5>
+<div class="outline-text-5" id="text-org982bad8">
+</div>
+<div id="outline-container-org617886d" class="outline-6">
+<h6 id="org617886d"><span class="timestamp-wrapper"><span class="timestamp">[1958-12-11 Thu]</span></span></h6>
+<div class="outline-text-6" id="text-org617886d">
+</div>
+<div id="outline-container-republics-of-upper-volta-and-dahomey-joined-french-community" class="outline-7">
+<h7 id="republics-of-upper-volta-and-dahomey-joined-french-community"><span class="todo STUB">STUB</span> Republic of Upper Volta (now Burkina Faso) and Republic of Dahomey (now Benin) became self-governing and joined the French Community</h7>
+<div class="outline-text-7" id="text-republics-of-upper-volta-and-dahomey-joined-french-community">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org6793473" class="outline-4">
+<h4 id="org6793473">1959</h4>
+<div class="outline-text-4" id="text-org6793473">
+</div>
+<div id="outline-container-orgfe31caa" class="outline-5">
+<h5 id="orgfe31caa">1959-01 January</h5>
+<div class="outline-text-5" id="text-orgfe31caa">
+</div>
+<div id="outline-container-org5e550a9" class="outline-6">
+<h6 id="org5e550a9">1959-01-01 Thursday</h6>
+<div class="outline-text-6" id="text-org5e550a9">
+</div>
+<div id="outline-container-cuban-revolution-succeeded" class="outline-7">
+<h7 id="cuban-revolution-succeeded">Cuban Revolution succeeded</h7>
+<div class="outline-text-7" id="text-cuban-revolution-succeeded">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orga7d79eb" class="outline-3">
+<h3 id="orga7d79eb">1960s</h3>
+<div class="outline-text-3" id="text-orga7d79eb">
+</div>
+<div id="outline-container-org597d891" class="outline-4">
+<h4 id="org597d891">1960</h4>
+<div class="outline-text-4" id="text-org597d891">
+</div>
+<div id="outline-container-org5698c91" class="outline-5">
+<h5 id="org5698c91">1960-12 December</h5>
+<div class="outline-text-5" id="text-org5698c91">
+</div>
+<div id="outline-container-orgfcd741c" class="outline-6">
+<h6 id="orgfcd741c"><span class="timestamp-wrapper"><span class="timestamp">[1960-12-11 Sun]</span></span></h6>
+<div class="outline-text-6" id="text-orgfcd741c">
+</div>
+<div id="outline-container-french-crackdown-against-anti-de-gaulle-protesters-in-algeria" class="outline-7">
+<h7 id="french-crackdown-against-anti-de-gaulle-protesters-in-algeria"><span class="todo STUB">STUB</span> French forces in Algeria cracked down on protesters during a visit from French President Charless de Gaulle</h7>
+<div class="outline-text-7" id="text-french-crackdown-against-anti-de-gaulle-protesters-in-algeria">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org0929ba0" class="outline-4">
+<h4 id="org0929ba0">1961</h4>
+<div class="outline-text-4" id="text-org0929ba0">
+</div>
+<div id="outline-container-org7908ff1" class="outline-5">
+<h5 id="org7908ff1">1961-01 January</h5>
+<div class="outline-text-5" id="text-org7908ff1">
+</div>
+<div id="outline-container-org0219715" class="outline-6">
+<h6 id="org0219715">1961-01-04 Wednesday</h6>
+<div class="outline-text-6" id="text-org0219715">
+</div>
+<div id="outline-container-protests-began-in-baixa-de-cassanje-angola" class="outline-7">
+<h7 id="protests-began-in-baixa-de-cassanje-angola">Workers in Baixa de Cassanje, Angola, began protesting</h7>
+<div class="outline-text-7" id="text-protests-began-in-baixa-de-cassanje-angola">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org11fb089" class="outline-4">
+<h4 id="org11fb089">1963</h4>
+<div class="outline-text-4" id="text-org11fb089">
+</div>
+<div id="outline-container-orgee054ae" class="outline-5">
+<h5 id="orgee054ae">1963-12 December</h5>
+<div class="outline-text-5" id="text-orgee054ae">
+</div>
+<div id="outline-container-org7602234" class="outline-6">
+<h6 id="org7602234"><span class="timestamp-wrapper"><span class="timestamp">[1963-12-21 Sat]</span></span></h6>
+<div class="outline-text-6" id="text-org7602234">
+</div>
+<div id="outline-container-org666852c" class="outline-7">
+<h7 id="org666852c"><span class="todo STUB">STUB</span> Bloody Christmas began in Cyprus</h7>
+<div class="outline-text-7" id="text-org666852c">
+<p>
+Turks destroyed more than 100 Greek villages, displacing tens of thousands
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org1238e15" class="outline-4">
+<h4 id="org1238e15">1964</h4>
+<div class="outline-text-4" id="text-org1238e15">
+</div>
+<div id="outline-container-orgb12f479" class="outline-5">
+<h5 id="orgb12f479">1964-12 December</h5>
+<div class="outline-text-5" id="text-orgb12f479">
+</div>
+<div id="outline-container-org60014e2" class="outline-6">
+<h6 id="org60014e2"><span class="timestamp-wrapper"><span class="timestamp">[1964-12-11 Fri]</span></span></h6>
+<div class="outline-text-6" id="text-org60014e2">
+</div>
+<div id="outline-container-che-guevara-spoke-to-un-ga" class="outline-7">
+<h7 id="che-guevara-spoke-to-un-ga"><span class="todo STUB">STUB</span> Che Guevara spoke to the UN General Assembly</h7>
+<div class="outline-text-7" id="text-che-guevara-spoke-to-un-ga">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org2e41c91" class="outline-4">
+<h4 id="org2e41c91">1965</h4>
+<div class="outline-text-4" id="text-org2e41c91">
+</div>
+<div id="outline-container-org1bb7689" class="outline-5">
+<h5 id="org1bb7689">1965-12 December</h5>
+<div class="outline-text-5" id="text-org1bb7689">
+</div>
+<div id="outline-container-orga32c515" class="outline-6">
+<h6 id="orga32c515"><span class="timestamp-wrapper"><span class="timestamp">[1965-12-21 Tue]</span></span></h6>
+<div class="outline-text-6" id="text-orga32c515">
+</div>
+<div id="outline-container-org802bb18" class="outline-7">
+<h7 id="org802bb18"><span class="todo STUB">STUB</span> United Nations adopted the International Convention on the Elimination of All Forms of Racial Discrimination</h7>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org5f9bf7b" class="outline-4">
+<h4 id="org5f9bf7b">1966</h4>
+<div class="outline-text-4" id="text-org5f9bf7b">
+</div>
+<div id="outline-container-org445e5e9" class="outline-5">
+<h5 id="org445e5e9">1966-01 January</h5>
+<div class="outline-text-5" id="text-org445e5e9">
+</div>
+<div id="outline-container-orgae0cb04" class="outline-6">
+<h6 id="orgae0cb04">1966-01-03 Monday</h6>
+<div class="outline-text-6" id="text-orgae0cb04">
+</div>
+<div id="outline-container-sammy-younge-jr-murdered" class="outline-7">
+<h7 id="sammy-younge-jr-murdered">Sammy Younge Jr. shot dead</h7>
+<div class="outline-text-7" id="text-sammy-younge-jr-murdered">
+</div>
+</div>
+</div>
+<div id="outline-container-org86009eb" class="outline-6">
+<h6 id="org86009eb">1966-01-06 Thursday</h6>
+<div class="outline-text-6" id="text-org86009eb">
+</div>
+<div id="outline-container-sncc-adopted-position-against-war-in-vietnam" class="outline-7">
+<h7 id="sncc-adopted-position-against-war-in-vietnam">SNCC adopted position against war in Vietnam</h7>
+<div class="outline-text-7" id="text-sncc-adopted-position-against-war-in-vietnam">
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org21ccb84" class="outline-5">
+<h5 id="org21ccb84">1966-12 December</h5>
+<div class="outline-text-5" id="text-org21ccb84">
+</div>
+<div id="outline-container-org47a5e40" class="outline-6">
+<h6 id="org47a5e40"><span class="timestamp-wrapper"><span class="timestamp">[1966-12-31 Sat]</span></span></h6>
+<div class="outline-text-6" id="text-org47a5e40">
+</div>
+<div id="outline-container-org3e85a4e" class="outline-7">
+<h7 id="org3e85a4e"><span class="todo STUB">STUB</span> Black Cat Tavern Raid</h7>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org1005be2" class="outline-4">
+<h4 id="org1005be2">1968</h4>
+<div class="outline-text-4" id="text-org1005be2">
+</div>
+<div id="outline-container-orgc5e9d12" class="outline-5">
+<h5 id="orgc5e9d12">1968-10 October</h5>
+<div class="outline-text-5" id="text-orgc5e9d12">
+</div>
+<div id="outline-container-org92d8b1e" class="outline-6">
+<h6 id="org92d8b1e"><span class="timestamp-wrapper"><span class="timestamp">[1968-10-02 Wed]</span></span></h6>
+<div class="outline-text-6" id="text-org92d8b1e">
+</div>
+<div id="outline-container-tlatelolco-massacre" class="outline-7">
+<h7 id="tlatelolco-massacre"><span class="todo STUB">STUB</span> The Tlatelolco Massacre began</h7>
+<div class="outline-text-7" id="text-tlatelolco-massacre">
+<p>
+The <b><i>Tlatelolco Massacre</i></b> was a massacre of university and high-school students carried out by the Mexican military. The event radicalized Subcomandante Marcos of the Zapatistas and the resignation of Peter Agee from the CIA.
+</p>
+
+<blockquote>
+<p>
+On this day in 1968, around 10,000 university and high school students gathered in the Plaza de las Tres Culturas to protest the government's actions and listen peacefully to speeches. The crowd, which also included non-students such as residential neighbors, bystanders, and children, was fired upon by the Mexican military that evening.
+</p>
+
+<p>
+Although the Mexican government said gunfire from the surrounding apartments prompted the army's attack, multiple eyewitness accounts claim they saw a military flare go up as a sign to begin firing on the crowd. The government also had hidden soldiers with machine guns in the apartment buildings they claimed they were fired upon from.
+</p>
+
+<p>
+Estimates of the total killed range from 300-400, and over 1,300 people were arrested. The event radicalized Subcomandante Marcos, who later became a prominent member of the Zapatistas, an indigenous group that fights for liberation from the Mexican government.
+</p>
+
+<p>
+The massacre also led CIA agent Philip Agee, an eyewitness to the violence, to resign from the organization in protest and author "Inside the Company: CIA Diary", which detailed his work on behalf of American imperialism and caused him to be deported from the United Kingdom.<sup><a id="fnr.2" class="footref" href="#fn.2" role="doc-backlink">2</a></sup>
+</p>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org81769ed" class="outline-5">
+<h5 id="org81769ed">1968-12 December</h5>
+<div class="outline-text-5" id="text-org81769ed">
+</div>
+<div id="outline-container-orge0851c5" class="outline-6">
+<h6 id="orge0851c5"><span class="timestamp-wrapper"><span class="timestamp">[1968-12-23 Mon]</span></span></h6>
+<div class="outline-text-6" id="text-orge0851c5">
+</div>
+<div id="outline-container-org998f92c" class="outline-7">
+<h7 id="org998f92c"><span class="todo STUB">STUB</span> U.S. sailors released after 11 months of North Korean internment</h7>
+<div class="outline-text-7" id="text-org998f92c">
+<p>
+83 sailors from the USS Pueblo are released after 11 months of North Korean internment
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb06b89e" class="outline-4">
+<h4 id="orgb06b89e">1969</h4>
+<div class="outline-text-4" id="text-orgb06b89e">
+</div>
+<div id="outline-container-orgebe7e86" class="outline-5">
+<h5 id="orgebe7e86">1969-12 December</h5>
+<div class="outline-text-5" id="text-orgebe7e86">
+</div>
+<div id="outline-container-orge88eaa8" class="outline-6">
+<h6 id="orge88eaa8"><span class="timestamp-wrapper"><span class="timestamp">[1969-12-11 Thu]</span></span></h6>
+<div class="outline-text-6" id="text-orge88eaa8">
+</div>
+<div id="outline-container-pino-pinelli-massacre" class="outline-7">
+<h7 id="pino-pinelli-massacre"><span class="todo STUB">STUB</span> Pino Pinelli murdered in Spanish state massacre</h7>
+<div class="outline-text-7" id="text-pino-pinelli-massacre">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org29966d9" class="outline-3">
+<h3 id="org29966d9">1970s</h3>
+<div class="outline-text-3" id="text-org29966d9">
+</div>
+<div id="outline-container-org0cfc66f" class="outline-4">
+<h4 id="org0cfc66f">1973</h4>
+<div class="outline-text-4" id="text-org0cfc66f">
+</div>
+<div id="outline-container-org95a30b6" class="outline-5">
+<h5 id="org95a30b6">1973-01 January</h5>
+<div class="outline-text-5" id="text-org95a30b6">
+</div>
+<div id="outline-container-orgf8549ab" class="outline-6">
+<h6 id="orgf8549ab">1973-01-03 Wednesday</h6>
+<div class="outline-text-6" id="text-orgf8549ab">
+</div>
+<div id="outline-container-daniel-ellsburg-charged-with-espionage" class="outline-7">
+<h7 id="daniel-ellsburg-charged-with-espionage">Daniel Ellsberg charged with espionage</h7>
+<div class="outline-text-7" id="text-daniel-ellsburg-charged-with-espionage">
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf76e0e0" class="outline-5">
+<h5 id="orgf76e0e0">1973-12 December</h5>
+<div class="outline-text-5" id="text-orgf76e0e0">
+</div>
+<div id="outline-container-org7e11229" class="outline-6">
+<h6 id="org7e11229"><span class="timestamp-wrapper"><span class="timestamp">[1973-12-27 Thu]</span></span></h6>
+<div class="outline-text-6" id="text-org7e11229">
+</div>
+<div id="outline-container-skylab-went-silent" class="outline-7">
+<h7 id="skylab-went-silent"><span class="todo STUB">STUB</span> Skylab went silent</h7>
+<div class="outline-text-7" id="text-skylab-went-silent">
+<p>
+On Thursday, December 27th, 1973, overworked astronauts on the American Skylab 4 mission accidentally went silent. Perceived as a strike by ground crew, the silence resulted in better labor conditions for the space crew, and was arguably the first extraterran act of human labor resistance.
+</p>
+
+<blockquote>
+<p>
+Prior to the incident, the three man crew reported exhausting working conditions. According to astronaut Edward Gibson, "We fell behind what mission control desired. So they decided they were going to help us out by giving us detailed instructions every morning&#x2026;.One morning we had about sixty feet of teleprinter message to cut up and divide up and understand before we even got to work."
+</p>
+
+<p>
+In late December, the crew got permission for a day off from ground control, accounted for in their contracts. According to crewmember Gerald P. Carr, in their fatigued state, "[they] got careless with [their] radios", going a full orbit of the Earth without contacting ground control (approximately 90 minutes).
+</p>
+
+<p>
+On Earth, this was perceived as intentional, and rumor of a strike quickly spread. Later, this incident was reported on by journalist Henry S.F. Cooper and Harvard Business School (HBS) as the first strike in space.
+</p>
+
+<p>
+In later interviews, at least one crewmember claimed that the radio silence was unintentional, and, for its part, NASA strongly denies that the incident was a strike, with John Uri of the NASA Johnson Space Center stating "It is unfortunate that the unverified story began at all but even more so that over the years prestigious organizations propagated it, giving it credence when it deserves none."
+</p>
+
+<p>
+In any case, a few days after the incident, administrators called a "crisis meeting", at the end of which ground control agreed to let the space crew set their own schedules.
+</p>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org729be0f" class="outline-4">
+<h4 id="org729be0f">1978</h4>
+<div class="outline-text-4" id="text-org729be0f">
+</div>
+<div id="outline-container-org945ccd0" class="outline-5">
+<h5 id="org945ccd0">1978-12 December</h5>
+<div class="outline-text-5" id="text-org945ccd0">
+</div>
+<div id="outline-container-orgcd8de8c" class="outline-6">
+<h6 id="orgcd8de8c"><span class="timestamp-wrapper"><span class="timestamp">[1978-12-11 Mon]</span></span></h6>
+<div class="outline-text-6" id="text-orgcd8de8c">
+</div>
+<div id="outline-container-lufthansa-heist" class="outline-7">
+<h7 id="lufthansa-heist"><span class="todo STUB">STUB</span> the Lufthansa heist is committed</h7>
+<div class="outline-text-7" id="text-lufthansa-heist">
+</div>
+</div>
+</div>
+<div id="outline-container-org483a4b7" class="outline-6">
+<h6 id="org483a4b7"><span class="timestamp-wrapper"><span class="timestamp">[1978-12-23 Sat]</span></span></h6>
+<div class="outline-text-6" id="text-org483a4b7">
+</div>
+<div id="outline-container-orgd189aec" class="outline-7">
+<h7 id="orgd189aec"><span class="todo STUB">STUB</span> USSR forces occupied Kabul</h7>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org61d002d" class="outline-4">
+<h4 id="org61d002d">1979</h4>
+<div class="outline-text-4" id="text-org61d002d">
+</div>
+<div id="outline-container-org1d7632c" class="outline-5">
+<h5 id="org1d7632c">1979-10 October</h5>
+<div class="outline-text-5" id="text-org1d7632c">
+</div>
+<div id="outline-container-org9bed320" class="outline-6">
+<h6 id="org9bed320"><span class="timestamp-wrapper"><span class="timestamp">[1979-10-16 Tue]</span></span></h6>
+<div class="outline-text-6" id="text-org9bed320">
+</div>
+<div id="outline-container-bu-ma-protests" class="outline-7">
+<h7 id="bu-ma-protests"><span class="todo STUB">STUB</span> Bu-Ma Democratic Protests</h7>
+<div class="outline-text-7" id="text-bu-ma-protests">
+<p>
+The Bu-Ma Democratic Protests against the South Korean Yushin regime began on this day in 1979, starting in Busan and later spreading to and Masan (now Changwon). The first to protest were students from Pusan National University, who began calling for the abolition of the Yushin regime in public demonstrations.
+</p>
+
+<p>
+The protests quickly grew, and, just two days later, they had spread to Masan, resulted in the destruction of a tax collection office and burned police vehicles, and President Park Chung-hee declared martial law, arrested more than 1,000 people. On October 26th, President Park Chung-hee was assassinated, leading to the eventual dissolution of the Fourth Republic of South Korea.
+</p>
+
+<p>
+On the 40th anniversary of the event, President Moon Jae-in apologized for the previous episodes of political repression, stating "As long as we have a history of great democratic protests, no power can rule over the people".
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgababd1e" class="outline-5">
+<h5 id="orgababd1e">1979-12 December</h5>
+<div class="outline-text-5" id="text-orgababd1e">
+</div>
+<div id="outline-container-org1228ee1" class="outline-6">
+<h6 id="org1228ee1"><span class="timestamp-wrapper"><span class="timestamp">[1979-12-21 Fri]</span></span></h6>
+<div class="outline-text-6" id="text-org1228ee1">
+</div>
+<div id="outline-container-orgc407f7d" class="outline-7">
+<h7 id="orgc407f7d"><span class="todo STUB">STUB</span> Lancaster House Agreement is signed</h7>
+<div class="outline-text-7" id="text-orgc407f7d">
+<p>
+Rhodesia becomes independent
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org43b4844" class="outline-3">
+<h3 id="org43b4844">1980s</h3>
+<div class="outline-text-3" id="text-org43b4844">
+</div>
+<div id="outline-container-orgcd2d916" class="outline-4">
+<h4 id="orgcd2d916">1980</h4>
+<div class="outline-text-4" id="text-orgcd2d916">
+</div>
+<div id="outline-container-orgc832673" class="outline-5">
+<h5 id="orgc832673">1980-12 December</h5>
+<div class="outline-text-5" id="text-orgc832673">
+</div>
+<div id="outline-container-org66ce1e6" class="outline-6">
+<h6 id="org66ce1e6"><span class="timestamp-wrapper"><span class="timestamp">[1980-12-11 Thu]</span></span></h6>
+<div class="outline-text-6" id="text-org66ce1e6">
+</div>
+<div id="outline-container-superfund-act-created" class="outline-7">
+<h7 id="superfund-act-created"><span class="todo STUB">STUB</span> Superfund Act created</h7>
+<div class="outline-text-7" id="text-superfund-act-created">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org7be3909" class="outline-4">
+<h4 id="org7be3909">1981</h4>
+<div class="outline-text-4" id="text-org7be3909">
+</div>
+<div id="outline-container-org1f05b7f" class="outline-5">
+<h5 id="org1f05b7f">1981-12 December</h5>
+<div class="outline-text-5" id="text-org1f05b7f">
+</div>
+<div id="outline-container-org17f33ca" class="outline-6">
+<h6 id="org17f33ca"><span class="timestamp-wrapper"><span class="timestamp">[1981-12-11 Fri]</span></span></h6>
+<div class="outline-text-6" id="text-org17f33ca">
+</div>
+<div id="outline-container-el-mozote-massacre" class="outline-7">
+<h7 id="el-mozote-massacre"><span class="todo STUB">STUB</span> Salvadoran soldiers committed the El Mozote Massacre</h7>
+<div class="outline-text-7" id="text-el-mozote-massacre">
+<p>
+The El Mozote Massacre took place in the village of el Mozote, El Salvador on this day in 1981, when U.S.-trained Salvadoran soldiers massacred 800-1200 villagers, raping and murdering children there. The massacre was carried out by units of the Salvadoran army's Atlacatl Battalion, which was created in 1980 at the U.S. Army's School of the Americas.
+</p>
+
+<p>
+Soldiers separated the population of el Mozote into men, women, and children, and began by torturing and executing the men. Girls as young as 10 were raped, and they murdered the children by cutting their throats and hanging them from trees. At least one child killed in this way was reportedly two years old.
+</p>
+
+<p>
+Rufina Amaya (1943 - 2007) was the sole survivor of the violence. Amaya, hiding in a tree, watched as soldiers decapitated her husband and slaughtered her children, the youngest of whom was eight months old.
+</p>
+
+<p>
+New York Times and Washington Post reporters, taking testimony from Amaya, broke the story in early 1982 and were heavily criticized. Both the U.S. and Salvadoran governments downplayed or outright denied the incident.
+</p>
+
+<p>
+Officials from the Reagan administration called the accusations "gross exaggerations" and, as late as 2001, U.S. official Elliott Abrams said that Washington's policy in El Salvador from that period was a "fabulous achievement."
+</p>
+
+<p>
+In December 2011, the government of El Salvador formally apologized for the massacre.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org809aa0b" class="outline-4">
+<h4 id="org809aa0b">1983</h4>
+<div class="outline-text-4" id="text-org809aa0b">
+</div>
+<div id="outline-container-org659d3d4" class="outline-5">
+<h5 id="org659d3d4">1983-01</h5>
+<div class="outline-text-5" id="text-org659d3d4">
+</div>
+<div id="outline-container-orge62fb9a" class="outline-6">
+<h6 id="orge62fb9a">1983-01-04 Tuesday</h6>
+<div class="outline-text-6" id="text-orge62fb9a">
+</div>
+<div id="outline-container-colorado-farmers-protested-foreclosures" class="outline-7">
+<h7 id="colorado-farmers-protested-foreclosures">Colorado farmers protested foreclosures</h7>
+<div class="outline-text-7" id="text-colorado-farmers-protested-foreclosures">
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org9bdf42d" class="outline-4">
+<h4 id="org9bdf42d">1986</h4>
+<div class="outline-text-4" id="text-org9bdf42d">
+</div>
+<div id="outline-container-org721de91" class="outline-5">
+<h5 id="org721de91">1986-12 December</h5>
+<div class="outline-text-5" id="text-org721de91">
+</div>
+<div id="outline-container-org59986bb" class="outline-6">
+<h6 id="org59986bb"><span class="timestamp-wrapper"><span class="timestamp">[1986-12-23 Tue]</span></span></h6>
+<div class="outline-text-6" id="text-org59986bb">
+</div>
+<div id="outline-container-org7f19baa" class="outline-7">
+<h7 id="org7f19baa"><span class="todo STUB">STUB</span> Voyager arrived at Edwards AFB</h7>
+<div class="outline-text-7" id="text-org7f19baa">
+<p>
+became the first craft to travel around the world without refueling
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgbd7e18e" class="outline-6">
+<h6 id="orgbd7e18e"><span class="timestamp-wrapper"><span class="timestamp">[1986-12-31 Wed]</span></span></h6>
+<div class="outline-text-6" id="text-orgbd7e18e">
+</div>
+<div id="outline-container-org05741b8" class="outline-7">
+<h7 id="org05741b8"><span class="todo STUB">STUB</span> Dupont Plaza Hotel Fire</h7>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgabfce76" class="outline-4">
+<h4 id="orgabfce76">1988</h4>
+<div class="outline-text-4" id="text-orgabfce76">
+</div>
+<div id="outline-container-org3ef0611" class="outline-5">
+<h5 id="org3ef0611">1988-12 December</h5>
+<div class="outline-text-5" id="text-org3ef0611">
+</div>
+<div id="outline-container-org5911559" class="outline-6">
+<h6 id="org5911559"><span class="timestamp-wrapper"><span class="timestamp">[1988-12-21 Wed]</span></span></h6>
+<div class="outline-text-6" id="text-org5911559">
+</div>
+<div id="outline-container-orgee112b4" class="outline-7">
+<h7 id="orgee112b4"><span class="todo STUB">STUB</span> Locerbie Bombing</h7>
+</div>
+</div>
+<div id="outline-container-orga7af73f" class="outline-6">
+<h6 id="orga7af73f"><span class="timestamp-wrapper"><span class="timestamp">[1988-12-22 Thu]</span></span></h6>
+<div class="outline-text-6" id="text-orga7af73f">
+</div>
+<div id="outline-container-org8acfd5b" class="outline-7">
+<h7 id="org8acfd5b"><span class="todo STUB">STUB</span> Chico Mendes was assassinated</h7>
+</div>
+<div id="outline-container-org5dc8c3e" class="outline-7">
+<h7 id="org5dc8c3e"><span class="todo STUB">STUB</span> Jean Malquias died</h7>
+<div class="outline-text-7" id="text-org5dc8c3e">
+<p>
+<a href="https://libcom.org/history/malaquais-jean-1908-1998">https://libcom.org/history/malaquais-jean-1908-1998</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org38fc126" class="outline-3">
+<h3 id="org38fc126">1990s</h3>
+<div class="outline-text-3" id="text-org38fc126">
+</div>
+<div id="outline-container-org4a39256" class="outline-4">
+<h4 id="org4a39256">1990</h4>
+<div class="outline-text-4" id="text-org4a39256">
+</div>
+<div id="outline-container-org5b51b7d" class="outline-5">
+<h5 id="org5b51b7d">1990-12 December</h5>
+<div class="outline-text-5" id="text-org5b51b7d">
+</div>
+<div id="outline-container-org956031c" class="outline-6">
+<h6 id="org956031c"><span class="timestamp-wrapper"><span class="timestamp">[1990-12-11 Tue]</span></span></h6>
+<div class="outline-text-6" id="text-org956031c">
+</div>
+<div id="outline-container-anti-communist-protests-in-albania-began" class="outline-7">
+<h7 id="anti-communist-protests-in-albania-began"><span class="todo STUB">STUB</span> Anti-communist demonstrations began in Albania</h7>
+<div class="outline-text-7" id="text-anti-communist-protests-in-albania-began">
+<p>
+The beginning of the end of state communism for them.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org77494ed" class="outline-6">
+<h6 id="org77494ed"><span class="timestamp-wrapper"><span class="timestamp">[1990-12-23 Sun]</span></span></h6>
+<div class="outline-text-6" id="text-org77494ed">
+</div>
+<div id="outline-container-org5b21539" class="outline-7">
+<h7 id="org5b21539"><span class="todo STUB">STUB</span> Slovenia voted for independence</h7>
+<div class="outline-text-7" id="text-org5b21539">
+<p>
+88.5% of Slovenia electorate voted for independence from Yugoslavia
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgdc5b445" class="outline-4">
+<h4 id="orgdc5b445">1994</h4>
+<div class="outline-text-4" id="text-orgdc5b445">
+</div>
+<div id="outline-container-org742d42d" class="outline-5">
+<h5 id="org742d42d">1994-01 January</h5>
+<div class="outline-text-5" id="text-org742d42d">
+</div>
+<div id="outline-container-orgc0dd4d2" class="outline-6">
+<h6 id="orgc0dd4d2">1994-01-01 Saturday</h6>
+<div class="outline-text-6" id="text-orgc0dd4d2">
+</div>
+<div id="outline-container-zapatistas-declared-war-on-mexico" class="outline-7">
+<h7 id="zapatistas-declared-war-on-mexico">Zapatistas declared war on Mexico</h7>
+<div class="outline-text-7" id="text-zapatistas-declared-war-on-mexico">
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org5f4c489" class="outline-5">
+<h5 id="org5f4c489">1994-10 October</h5>
+<div class="outline-text-5" id="text-org5f4c489">
+</div>
+<div id="outline-container-org7b5d80b" class="outline-6">
+<h6 id="org7b5d80b"><span class="timestamp-wrapper"><span class="timestamp">[1994-10-16 Sun]</span></span></h6>
+<div class="outline-text-6" id="text-org7b5d80b">
+</div>
+<div id="outline-container-protest-against-prop-187" class="outline-7">
+<h7 id="protest-against-prop-187"><span class="todo STUB">STUB</span> Los Angeles protested against Prop 187, anti-immigrantion legislation</h7>
+<div class="outline-text-7" id="text-protest-against-prop-187">
+<p>
+On this day in 1994, an estimated 70,000 demonstrators marched across Los Angeles in opposition to Prop 187, a ballot initiative that prevented any undocumented immigrant (both children and parents) from accessing public school, public healthcare, and public universities. The demonstration against Prop 187, known as the "Save Our State" initiative, is one of the largest mass protests in Los Angeles' history.
+</p>
+
+<p>
+Although the ballot initiative passed at first, public and legal pressure from opponents of Prop 187 led to a federal court order preventing enforcement of the measure. The law was finally killed in 1997, when it was declared unconstitutional. The political controversy surrounding the law led to widespread voter registration from the Latino population, and is considered a major factor in California's subsequent shift away from the Republican Party.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org3845b99" class="outline-5">
+<h5 id="org3845b99">1994-12 December</h5>
+<div class="outline-text-5" id="text-org3845b99">
+</div>
+<div id="outline-container-org31cb9a3" class="outline-6">
+<h6 id="org31cb9a3"><span class="timestamp-wrapper"><span class="timestamp">[1994-12-11 Sun]</span></span></h6>
+<div class="outline-text-6" id="text-org31cb9a3">
+</div>
+<div id="outline-container-first-chechen-war-began" class="outline-7">
+<h7 id="first-chechen-war-began"><span class="todo STUB">STUB</span> First Chechen War began</h7>
+<div class="outline-text-7" id="text-first-chechen-war-began">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orga131e68" class="outline-4">
+<h4 id="orga131e68">1995</h4>
+<div class="outline-text-4" id="text-orga131e68">
+</div>
+<div id="outline-container-orgdae664c" class="outline-5">
+<h5 id="orgdae664c">1995-10 October</h5>
+<div class="outline-text-5" id="text-orgdae664c">
+</div>
+<div id="outline-container-orga95fc48" class="outline-6">
+<h6 id="orga95fc48"><span class="timestamp-wrapper"><span class="timestamp">[1995-10-16 Mon]</span></span></h6>
+<div class="outline-text-6" id="text-orga95fc48">
+</div>
+<div id="outline-container-million-man-march" class="outline-7">
+<h7 id="million-man-march"><span class="todo STUB">STUB</span> The Million Man March occurred</h7>
+<div class="outline-text-7" id="text-million-man-march">
+<p>
+On this day in 1995, a collaborative rally of various civil rights and black liberation groups known as the "Million Man March" took place in Washington, D.C. Hundreds of thousands strong, the march included groups from across the political spectrum, from the National Association for the Advancement of Colored People (NAACP) to the National of Islam (NOI), and its purpose was to "convey to the world a vastly different picture of the Black male".
+</p>
+
+<p>
+The rally's events were broken down into several sessions on specific topics, including "Sankofa: Lessons from the Past Linkages to the Future" and "Atonement and Reconciliation". Many prominent civil rights activists spoke at the event, including Betty Shabazz (widow of Malcolm X), Dr. Cornel West, Rosa Parks, Maya Angelou, Rev. Benjamin Chavis, Jr., and Minister Louis Farrakhan.
+</p>
+
+<p>
+Two years after the march, the Million Woman March was held in response to fears that the Million Man March had focused on black men to the exclusion of black women. Farrakhan held the 20th Anniversary of the "Million Man March: Justice or Else" on October 10th, 2015, in Washington, D.C.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgdf2a93c" class="outline-4">
+<h4 id="orgdf2a93c">1997</h4>
+<div class="outline-text-4" id="text-orgdf2a93c">
+</div>
+<div id="outline-container-orgb0f7146" class="outline-5">
+<h5 id="orgb0f7146">1997-01 January</h5>
+<div class="outline-text-5" id="text-orgb0f7146">
+</div>
+<div id="outline-container-orgb300a90" class="outline-6">
+<h6 id="orgb300a90">1997-01-04 Saturday</h6>
+<div class="outline-text-6" id="text-orgb300a90">
+</div>
+<div id="outline-container-nigerians-rallied-against-shell-oil" class="outline-7">
+<h7 id="nigerians-rallied-against-shell-oil">Nigerians rallied against Shell Oil</h7>
+<div class="outline-text-7" id="text-nigerians-rallied-against-shell-oil">
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orge095fe3" class="outline-5">
+<h5 id="orge095fe3">1997-12 December</h5>
+<div class="outline-text-5" id="text-orge095fe3">
+</div>
+<div id="outline-container-orgec28c5f" class="outline-6">
+<h6 id="orgec28c5f"><span class="timestamp-wrapper"><span class="timestamp">[1997-12-11 Thu]</span></span></h6>
+<div class="outline-text-6" id="text-orgec28c5f">
+</div>
+<div id="outline-container-kyoto-protocol-opened" class="outline-7">
+<h7 id="kyoto-protocol-opened"><span class="todo STUB">STUB</span> Kyoto Protocol opened for signatures</h7>
+<div class="outline-text-7" id="text-kyoto-protocol-opened">
+<p>
+Before the Paris Agreement, lol
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org3a89a27" class="outline-6">
+<h6 id="org3a89a27"><span class="timestamp-wrapper"><span class="timestamp">[1997-12-22 Mon]</span></span></h6>
+<div class="outline-text-6" id="text-org3a89a27">
+</div>
+<div id="outline-container-org83b6655" class="outline-7">
+<h7 id="org83b6655"><span class="todo STUB">STUB</span> Acteal Massacre</h7>
+</div>
+</div>
+<div id="outline-container-orgead9c3e" class="outline-6">
+<h6 id="orgead9c3e"><span class="timestamp-wrapper"><span class="timestamp">[1997-12-23 Tue]</span></span></h6>
+<div class="outline-text-6" id="text-orgead9c3e">
+</div>
+<div id="outline-container-orge7ec092" class="outline-7">
+<h7 id="orge7ec092"><span class="todo STUB">STUB</span> Seinfeld popularized the secular holiday Festivus</h7>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="outline-container-org08898c4" class="outline-2">
+<h2 id="org08898c4">21st Century</h2>
+<div class="outline-text-2" id="text-org08898c4">
+</div>
+<div id="outline-container-org4d14a1a" class="outline-3">
+<h3 id="org4d14a1a">2000s</h3>
+<div class="outline-text-3" id="text-org4d14a1a">
+</div>
+<div id="outline-container-org8b224cd" class="outline-4">
+<h4 id="org8b224cd">2002</h4>
+<div class="outline-text-4" id="text-org8b224cd">
+</div>
+<div id="outline-container-org9522eb2" class="outline-5">
+<h5 id="org9522eb2">2002-12 December</h5>
+<div class="outline-text-5" id="text-org9522eb2">
+</div>
+<div id="outline-container-org85da93d" class="outline-6">
+<h6 id="org85da93d"><span class="timestamp-wrapper"><span class="timestamp">[2002-12-23 Mon]</span></span></h6>
+<div class="outline-text-6" id="text-org85da93d">
+</div>
+<div id="outline-container-orgb29089b" class="outline-7">
+<h7 id="orgb29089b"><span class="todo STUB">STUB</span> Iraqi MiG-25 shot down a U.S. MQ-1 Predator</h7>
+<div class="outline-text-7" id="text-orgb29089b">
+<p>
+The first combat engagement between a drone and conventional aircraft
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org6557adc" class="outline-4">
+<h4 id="org6557adc">2003</h4>
+<div class="outline-text-4" id="text-org6557adc">
+</div>
+<div id="outline-container-orgc2a47ae" class="outline-5">
+<h5 id="orgc2a47ae">2003-01 January</h5>
+<div class="outline-text-5" id="text-orgc2a47ae">
+</div>
+<div id="outline-container-orgf3a1a50" class="outline-6">
+<h6 id="orgf3a1a50">2003-01-01 Wednesday</h6>
+<div class="outline-text-6" id="text-orgf3a1a50">
+</div>
+<div id="outline-container-elf-torched-vehicles-in-erie-pennsylvania" class="outline-7">
+<h7 id="elf-torched-vehicles-in-erie-pennsylvania">ELF torched vehicles in Erie, Pennsylvania</h7>
+<div class="outline-text-7" id="text-elf-torched-vehicles-in-erie-pennsylvania">
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org7f0a40f" class="outline-5">
+<h5 id="org7f0a40f">2003-12 December</h5>
+<div class="outline-text-5" id="text-org7f0a40f">
+</div>
+<div id="outline-container-orge0f5b70" class="outline-6">
+<h6 id="orge0f5b70"><span class="timestamp-wrapper"><span class="timestamp">[2003-12-23 Tue]</span></span></h6>
+<div class="outline-text-6" id="text-orge0f5b70">
+</div>
+<div id="outline-container-org680434c" class="outline-7">
+<h7 id="org680434c"><span class="todo STUB">STUB</span> Chuangdongbein Explosion</h7>
+<div class="outline-text-7" id="text-org680434c">
+<p>
+Chuandongbei natural gas field in Quaoqiao, Kai County, Chongqing, China, exploded, killing at least 234 people.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org270daa9" class="outline-4">
+<h4 id="org270daa9">2005</h4>
+<div class="outline-text-4" id="text-org270daa9">
+</div>
+<div id="outline-container-orgc34eb68" class="outline-5">
+<h5 id="orgc34eb68">2005-12 December</h5>
+<div class="outline-text-5" id="text-orgc34eb68">
+</div>
+<div id="outline-container-org3c2e5bd" class="outline-6">
+<h6 id="org3c2e5bd"><span class="timestamp-wrapper"><span class="timestamp">[2005-12-11 Sun]</span></span></h6>
+<div class="outline-text-6" id="text-org3c2e5bd">
+</div>
+<div id="outline-container-cronulla-race-riots" class="outline-7">
+<h7 id="cronulla-race-riots"><span class="todo STUB">STUB</span> Cronulla race riots occurred</h7>
+<div class="outline-text-7" id="text-cronulla-race-riots">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orga530efb" class="outline-4">
+<h4 id="orga530efb">2006</h4>
+<div class="outline-text-4" id="text-orga530efb">
+</div>
+<div id="outline-container-org09f8231" class="outline-5">
+<h5 id="org09f8231">2006-12 December</h5>
+<div class="outline-text-5" id="text-org09f8231">
+</div>
+<div id="outline-container-org1c42af1" class="outline-6">
+<h6 id="org1c42af1"><span class="timestamp-wrapper"><span class="timestamp">[2006-12-11 Mon]</span></span></h6>
+<div class="outline-text-6" id="text-org1c42af1">
+</div>
+<div id="outline-container-mexican-drug-war-began" class="outline-7">
+<h7 id="mexican-drug-war-began"><span class="todo STUB">STUB</span> Mexican Drug War began</h7>
+<div class="outline-text-7" id="text-mexican-drug-war-began">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd7ce04a" class="outline-4">
+<h4 id="orgd7ce04a">2007</h4>
+<div class="outline-text-4" id="text-orgd7ce04a">
+</div>
+<div id="outline-container-org0bcfaf1" class="outline-5">
+<h5 id="org0bcfaf1">2007-12 December</h5>
+<div class="outline-text-5" id="text-org0bcfaf1">
+</div>
+<div id="outline-container-org712efbe" class="outline-6">
+<h6 id="org712efbe"><span class="timestamp-wrapper"><span class="timestamp">[2007-12-23 Sun]</span></span></h6>
+<div class="outline-text-6" id="text-org712efbe">
+</div>
+<div id="outline-container-org1be2586" class="outline-7">
+<h7 id="org1be2586"><span class="todo STUB">STUB</span> Nepal began transitioning into a republic</h7>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgced3edb" class="outline-4">
+<h4 id="orgced3edb">2009</h4>
+<div class="outline-text-4" id="text-orgced3edb">
+</div>
+<div id="outline-container-org6be353d" class="outline-5">
+<h5 id="org6be353d">2009-01 January</h5>
+<div class="outline-text-5" id="text-org6be353d">
+</div>
+<div id="outline-container-orgbe71081" class="outline-6">
+<h6 id="orgbe71081">2009-01-01 Thursday</h6>
+<div class="outline-text-6" id="text-orgbe71081">
+</div>
+<div id="outline-container-oscar-grant-iii-murdered" class="outline-7">
+<h7 id="oscar-grant-iii-murdered">Oscar Grant III murdered by police</h7>
+<div class="outline-text-7" id="text-oscar-grant-iii-murdered">
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org3c4e28e" class="outline-5">
+<h5 id="org3c4e28e">2009-10 October</h5>
+<div class="outline-text-5" id="text-org3c4e28e">
+</div>
+<div id="outline-container-orga7e715a" class="outline-6">
+<h6 id="orga7e715a"><span class="timestamp-wrapper"><span class="timestamp">[2009-10-13 Tue]</span></span></h6>
+<div class="outline-text-6" id="text-orga7e715a">
+</div>
+<div id="outline-container-org392e5cc" class="outline-7">
+<h7 id="org392e5cc">Grace Lee Boggs died</h7>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org7b45092" class="outline-3">
+<h3 id="org7b45092">2010s</h3>
+<div class="outline-text-3" id="text-org7b45092">
+</div>
+<div id="outline-container-org97cb134" class="outline-5">
+<h5 id="org97cb134">2011-12 December</h5>
+<div class="outline-text-5" id="text-org97cb134">
+</div>
+<div id="outline-container-org5fa6ee7" class="outline-6">
+<h6 id="org5fa6ee7"><span class="timestamp-wrapper"><span class="timestamp">[2011-12-11 Sun]</span></span></h6>
+<div class="outline-text-6" id="text-org5fa6ee7">
+</div>
+<div id="outline-container-aqrab-massacre" class="outline-7">
+<h7 id="aqrab-massacre"><span class="todo STUB">STUB</span> Aqrab Massacre</h7>
+<div class="outline-text-7" id="text-aqrab-massacre">
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org5a7f5bb" class="outline-4">
+<h4 id="org5a7f5bb">2013</h4>
+<div class="outline-text-4" id="text-org5a7f5bb">
+</div>
+<div id="outline-container-orgf13e43a" class="outline-5">
+<h5 id="orgf13e43a">2013-12 December</h5>
+<div class="outline-text-5" id="text-orgf13e43a">
+</div>
+<div id="outline-container-orgcc2acea" class="outline-6">
+<h6 id="orgcc2acea"><span class="timestamp-wrapper"><span class="timestamp">[2013-12-23 Mon]</span></span></h6>
+<div class="outline-text-6" id="text-orgcc2acea">
+</div>
+<div id="outline-container-org9ff2602" class="outline-7">
+<h7 id="org9ff2602"><span class="todo STUB">STUB</span> Lennon Brown hacked Citibank</h7>
+<div class="outline-text-7" id="text-org9ff2602">
+<p>
+Lennon Brown took down 90% of Citibank's North American servers as he quit his job for them
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf47c6a8" class="outline-4">
+<h4 id="orgf47c6a8">2015</h4>
+<div class="outline-text-4" id="text-orgf47c6a8">
+</div>
+<div id="outline-container-orgbc3effb" class="outline-5">
+<h5 id="orgbc3effb">2015-12 December</h5>
+<div class="outline-text-5" id="text-orgbc3effb">
+</div>
+<div id="outline-container-org86256ef" class="outline-6">
+<h6 id="org86256ef"><span class="timestamp-wrapper"><span class="timestamp">[2015-12-23 Wed]</span></span></h6>
+<div class="outline-text-6" id="text-org86256ef">
+</div>
+<div id="outline-container-orgc9142f3" class="outline-7">
+<h7 id="orgc9142f3"><span class="todo STUB">STUB</span> Sabhia Gokcen bombing</h7>
+<div class="outline-text-7" id="text-orgc9142f3">
+<p>
+Sabhia Gokcen bombing occurred, claimbed by the Kurdistan Freedom Hawks
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org7b56d9a" class="outline-4">
+<h4 id="org7b56d9a">2016</h4>
+<div class="outline-text-4" id="text-org7b56d9a">
+</div>
+<div id="outline-container-orgf2d6c1f" class="outline-5">
+<h5 id="orgf2d6c1f">2016-12 December</h5>
+<div class="outline-text-5" id="text-orgf2d6c1f">
+</div>
+<div id="outline-container-org5be3903" class="outline-6">
+<h6 id="org5be3903"><span class="timestamp-wrapper"><span class="timestamp">[2016-12-21 Wed]</span></span></h6>
+<div class="outline-text-6" id="text-org5be3903">
+</div>
+<div id="outline-container-org79c342f" class="outline-7">
+<h7 id="org79c342f"><span class="todo STUB">STUB</span> Nazzareno Antonio Tassone (Şehîd Agir Ararat) and Ryan Lock (Berxwedan Givara) died in Raqqa, fighting Daesh</h7>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgadc7315" class="outline-4">
+<h4 id="orgadc7315">2017</h4>
+<div class="outline-text-4" id="text-orgadc7315">
+</div>
+<div id="outline-container-org855dbae" class="outline-5">
+<h5 id="org855dbae">2017-12 December</h5>
+<div class="outline-text-5" id="text-org855dbae">
+</div>
+<div id="outline-container-org1dd499c" class="outline-6">
+<h6 id="org1dd499c"><span class="timestamp-wrapper"><span class="timestamp">[2017-12-11 Mon]</span></span></h6>
+<div class="outline-text-6" id="text-org1dd499c">
+</div>
+<div id="outline-container-failed-nyc-pipebomb" class="outline-7">
+<h7 id="failed-nyc-pipebomb"><span class="todo STUB">STUB</span> Pipebomb failed in NYC, injuring 4, including bomber</h7>
+<div class="outline-text-7" id="text-failed-nyc-pipebomb">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org6b7e76a" class="outline-4">
+<h4 id="org6b7e76a">2019</h4>
+<div class="outline-text-4" id="text-org6b7e76a">
+</div>
+<div id="outline-container-org9efeb0b" class="outline-5">
+<h5 id="org9efeb0b">2019-12 December</h5>
+<div class="outline-text-5" id="text-org9efeb0b">
+</div>
+<div id="outline-container-orgbed2b5f" class="outline-6">
+<h6 id="orgbed2b5f"><span class="timestamp-wrapper"><span class="timestamp">[2019-12-11 Wed]</span></span></h6>
+<div class="outline-text-6" id="text-orgbed2b5f">
+</div>
+<div id="outline-container-bougainvillean-independence-referendum-results-announced" class="outline-7">
+<h7 id="bougainvillean-independence-referendum-results-announced"><span class="todo STUB">STUB</span> Bougainvillean independence referendum results announced</h7>
+<div class="outline-text-7" id="text-bougainvillean-independence-referendum-results-announced">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc942fa1" class="outline-3">
+<h3 id="orgc942fa1">2020s</h3>
+<div class="outline-text-3" id="text-orgc942fa1">
+</div>
+<div id="outline-container-org733572b" class="outline-4">
+<h4 id="org733572b">2021</h4>
+<div class="outline-text-4" id="text-org733572b">
+</div>
+<div id="outline-container-org593b530" class="outline-5">
+<h5 id="org593b530">2021-05 May</h5>
+<div class="outline-text-5" id="text-org593b530">
+</div>
+<div id="outline-container-orgef32eef" class="outline-6">
+<h6 id="orgef32eef"><span class="timestamp-wrapper"><span class="timestamp">[2021-05-28 Fri]</span></span></h6>
+<div class="outline-text-6" id="text-orgef32eef">
+</div>
+<div id="outline-container-orge031032" class="outline-7">
+<h7 id="orge031032"><span class="todo STUB">STUB</span> Unmarked mass graves at former Kamloops Residential School were announced</h7>
+</div>
+</div>
+</div>
+<div id="outline-container-orgae28b7f" class="outline-5">
+<h5 id="orgae28b7f">2021-12 December</h5>
+<div class="outline-text-5" id="text-orgae28b7f">
+</div>
+<div id="outline-container-org1668dfc" class="outline-6">
+<h6 id="org1668dfc"><span class="timestamp-wrapper"><span class="timestamp">[2021-12-25 Sat]</span></span></h6>
+<div class="outline-text-6" id="text-org1668dfc">
+</div>
+<div id="outline-container-org8b4a445" class="outline-7">
+<h7 id="org8b4a445"><span class="todo STUB">STUB</span> Candy Palmater passed on</h7>
+</div>
+<div id="outline-container-orgff1a69a" class="outline-7">
+<h7 id="orgff1a69a"><span class="todo STUB">STUB</span> Turkish drone attack in Koban, Rojava killed 2, injured 7</h7>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="outline-container-org89f3d24" class="outline-2">
+<h2 id="org89f3d24">Supplements</h2>
+<div class="outline-text-2" id="text-org89f3d24">
+</div>
+<div id="outline-container-orgcf2143b" class="outline-3">
+<h3 id="orgcf2143b">Daily Summaries</h3>
+<div class="outline-text-3" id="text-orgcf2143b">
+</div>
+<div id="outline-container-org9fd4af0" class="outline-4">
+<h4 id="org9fd4af0">January</h4>
+<div class="outline-text-4" id="text-org9fd4af0">
+<ul class="org-ul">
+<li><b><i>January 1st</i></b>
+<dl class="org-dl">
+<dt>1804</dt><dd><a href="timeline.html#haiti-self-established">Haiti self-established itself</a></dd>
+<dt>1899</dt><dd><a href="timeline.html#wovoka-received-ghost-dance">Wovoka received the Ghost dance</a></dd>
+<dt>1912</dt><dd><a href="timeline.html#herbert-lee-birth">Herbert Lee was born</a></dd>
+<dt>1959</dt><dd><a href="timeline.html#cuban-revolution-succeeded">Cuban Revolution succeeded</a></dd>
+<dt>1994</dt><dd><a href="timeline.html#zapatistas-declared-war-on-mexica">Zapatistas declared war on Mexico</a></dd>
+<dt>2003</dt><dd><a href="timeline.html#elf-torched-vehicles-in-erie-pennsylvania">ELF torched vehicles in Erie, Pennsylvania</a></dd>
+<dt>2009</dt><dd><a href="timeline.html#oscar-grant-iii-murdered">Oscar Grant III murdered</a></dd>
+</dl></li>
+</ul>
+<ul class="org-ul">
+<li><b><i>January 2nd</i></b>
+<dl class="org-dl">
+<dt>1873</dt><dd><a href="timeline.html#anton-pannekoek-birth">Anton Pannekoek was born</a></dd>
+<dt>1893</dt><dd><a href="timeline.html#sybil-morrison-birth">Sybil Morrison was born</a></dd>
+<dt>1920</dt><dd><a href="timeline.html#2nd-palmer-raids-began">2nd Palmer Raids began</a></dd>
+</dl></li>
+</ul>
+<ul class="org-ul">
+<li><b><i>January 3rd</i></b>
+<dl class="org-dl">
+<dt>1793</dt><dd><a href="timeline.html#lucretia-mott-birth">Lucretia Mott was born</a></dd>
+<dt>1899</dt><dd><a href="timeline.html#nietzsche-hugged-horse">Nietzsche hugged a horse</a></dd>
+<dt>1907</dt><dd><a href=":timeline.html#trotsky-exiled">Trotsky exiled</a></dd>
+<dt>1912</dt><dd><a href="timeline.html#federico-borrell-garcia-birth">Federico Borrell Garcia was born</a></dd>
+<dt>1966</dt><dd><a href="timeline.html#sammy-younge-jr-murdered">Sammy Younge Jr. shot dead</a></dd>
+<dt>1973</dt><dd><a href="timeline.html#daniel-ellsburg-charged-with-espionage">Daniel Ellsburg charged with espionage</a></dd>
+</dl></li>
+</ul>
+<ul class="org-ul">
+<li><b><i>January 4th</i></b>
+<dl class="org-dl">
+<dt>1901</dt><dd><a href="timeline.html#clr-james-birth">CLR James was born</a></dd>
+<dt>1939</dt><dd><a href="timeline.html#george-orwell-signed-breton-rivera-manifesto">George Orwell signed the Breton/Rivera manifesto</a></dd>
+<dt>1961</dt><dd><a href="timeline.html#protests-began-in-baixa-de-cassanje-angola">Protests began in Baixa de Cassanje, Angola</a></dd>
+<dt>1983</dt><dd><a href="timeline.html#colorado-farmers-protested-foreclosures">Colorado farmers protested foreclosures</a></dd>
+<dt>1997</dt><dd><a href="timeline.html#nigerians-rallied-against-shell-oil">Nigerians rallied against Shell Oil</a></dd>
+</dl></li>
+</ul>
+<ul class="org-ul">
+<li><b><i>January 5th</i></b>
+<dl class="org-dl">
+<dt>1855</dt><dd><a href="timeline.html#dundalli-assassinated">Dundalli assassinated</a></dd>
+<dt>1957</dt><dd><a href="timeline.html#eisenhower-doctrine-declared">Eisenhower Doctrine declared</a></dd>
+</dl></li>
+</ul>
+<ul class="org-ul">
+<li><b><i>January 6th</i></b>
+<dl class="org-dl">
+<dt>1867</dt><dd><a href="timeline.html#revolutionary-committee-of-puerto-rico-founded">Revolutionary Committee of Puerto Rico founded</a></dd>
+<dt>1966</dt><dd><a href="timeline.html#sncc-adopted-position-against-war-in-vietnam">SNCC adopted position against war in Vietnam</a></dd>
+</dl></li>
+</ul>
+<ul class="org-ul">
+<li><b><i>January 7th</i></b>
+<dl class="org-dl">
+<dt>1782</dt><dd><a href="timeline.html#bank-of-north-america-opened">Bank of North America opened</a></dd>
+<dt>1884</dt><dd><a href="timeline.html#arturo-giovannitti-birth">Arturo Giovannitti was born</a></dd>
+<dt>1919</dt><dd><a href="timeline.html#tragic-week-began">Tragic Week began</a></dd>
+</dl></li>
+</ul>
+<ul class="org-ul">
+<li><b><i>January 8th</i></b>
+<dl class="org-dl">
+<dt>1811</dt><dd><a href="timeline.html#german-coast-uprisings-began">German Coast Uprisings began</a></dd>
+</dl></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org30d2e4f" class="outline-4">
+<h4 id="org30d2e4f">December</h4>
+<div class="outline-text-4" id="text-org30d2e4f">
+<ul class="org-ul">
+<li><b><i>December 26th</i></b>
+<dl class="org-dl">
+<dt>1828</dt><dd><a href="timeline.html#dover-mill-womens-strike-began">Dover Mill Women's Strike began</a></dd>
+<dt>1862</dt><dd><a href="timeline.html#dakota-38">Dakota 38 were executed</a></dd>
+<dt>1893</dt><dd><a href="timeline.html#mao-zedong-birth">Mao Zedong was born</a>.</dd>
+</dl></li>
+</ul>
+
+<ul class="org-ul">
+<li><b><i>December 27th</i></b>
+<dl class="org-dl">
+<dt>1821</dt><dd><a href="timeline.html#joseph-dejacque-birth">Joseph Dejacque was born</a></dd>
+<dt>1923</dt><dd><a href="timeline.html#toranomon-incident">Toranomon incident occurred</a></dd>
+<dt>1973</dt><dd><a href="timeline.html#skylab-went-silent">Skylab went silent</a></dd>
+</dl></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">See apeoplescalendar.org/calendar/events/parsley-massacre-1937</p></div></div>
+
+<div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2" role="doc-backlink">2</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">See apeoplescalendar.org/calendar/events/tlatelolco-massacre-1968</p></div></div>
+
+
+</div>
+</div></main>
+<section id="postamble" class="status">
+<p class="date">Created: 2023-01-14 Sat 15:02</p>
+</section>
+</body>
+</html>

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       d9632a1a-461b-4804-b343-050f006325de
+:END:
+#+title: microphysical law
+#+date: [2025-09-17 Wed 09:22]
+

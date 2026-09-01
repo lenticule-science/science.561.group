@@ -1,0 +1,16 @@
+Written to `operations/engineering/fars/docs/vps-migration-runbook.md`.
+
+**What's in the runbook** — 10 steps, all with exact commands:
+
+1. **Provision** CX32 on Hetzner (€6.80/mo, Ubuntu 24.04 LTS)
+2. **Secure** the server (user, SSH lockdown, UFW)
+3. **Install** Node.js 22, Rust 1.94+, build tools, Claude Code
+4. **Clone** repo, build mash-engine from source
+5. **Install** harness, verify datastore loads
+6. **Cron** — one job: heartbeat-runner every 15min
+7. **Ollama** — install, pull qwen2.5:0.5b, test inference
+8. **Verify** — full checklist of everything that should work
+9. **Update** local SSH config
+10. **Decommission** Vultr after 24h stable
+
+Current VPS state captured: 17GB disk, 4.5GB repo, no custom systemd services, one cron job. The migration is straightforward — everything rebuilds from source or git.

@@ -1,0 +1,13 @@
+---
+name: agentic-orchestration-m1-phase-14-complete-source-split-cl-sessions-generative-indexe
+specialization: milestone
+date-created: 2026-04-01
+plan: agentic-orchestration
+expected-task-contributions:
+  - separate-source-from-deployment
+  - continuous-learning-pipeline
+  - session-infrastructure
+  - generative-index-composition
+gate: "harness source in fars/agentic/, install.js generates CLAUDE.md/AGENTS.md from frontmatter, CL pipeline records observations, sessions tracked"
+milestone-reached: 2026-04-01
+---

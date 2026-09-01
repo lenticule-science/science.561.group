@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       536150eb-0c41-4b39-a818-9d9f367dfd1d
+:public:   true
+:END:
+#+title: praxis
+#+date: [2025-09-23 Tue 20:17]
+#+index: praxis

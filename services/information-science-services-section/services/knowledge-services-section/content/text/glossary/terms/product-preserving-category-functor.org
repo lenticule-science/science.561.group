@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       c5554fba-c1fd-4a18-9063-01c078bd9da3
+:END:
+#+title: product-preserving category functor
+#+date: [2025-10-15 Wed 18:09]
+

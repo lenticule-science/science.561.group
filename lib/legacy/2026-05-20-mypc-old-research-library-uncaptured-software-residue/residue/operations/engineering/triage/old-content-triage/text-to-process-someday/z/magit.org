@@ -1,0 +1,30 @@
+#+title: Magit
+#+begin_head
+#+ghe_schema: term-0.1.3
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-31 Thu 11:29]
+#+roam_tags: term
+#+end_head
+
+#+name: magit-definition
+*/[[file:magit.org][Magit]]/* is an [[file:emacs_package.org][Emacs package]] that provides an interface for [[file:git.org][Git]].
+#+toc: headlines 2
+* Introduction
+* magit
+
+  #+name: magit-straight-use-package-elisp
+#+begin_src elisp
+(use-package magit :straight t)
+#+end_src
+* Supplements
+** Record history
+   :PROPERTIES:
+   :CUSTOM_ID: record-history
+   :END:
+   :LOGBOOK:
+   - Note taken on [2020-12-31 Thu 11:29] \\
+      Created from [[file:~/org/s/p/groundhog_emacs.org::*Magit][Magit]]
+
+      
+   :END:

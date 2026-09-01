@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       9237354f-c3e1-4e47-9e9d-5f657ecad20f
+:END:
+#+title: Ubuntu
+#+date [2025-08-11 Mon 23:04]
+

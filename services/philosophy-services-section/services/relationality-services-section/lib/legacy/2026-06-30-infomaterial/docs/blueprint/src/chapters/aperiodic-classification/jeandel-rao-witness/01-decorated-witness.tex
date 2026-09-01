@@ -1,0 +1,18 @@
+\subsection{Decorated witness}
+
+\begin{theorem}[Jeandel--Rao finite aperiodic cohomology witness]\label{thm:jeandel-rao-witness}\lean{Infomaterial.Persistence.Aperiodic.Witness.jeandelRaoMarker01_nonzero_h1_class}\leanok\uses{thm:clinv-dichotomy}
+A concrete, finite realization of ``$\mathrm{cl\text{-}inv}$ can be nonzero in
+the aperiodic regime'': on a finite one-vertex Anderson--Putnam
+marker-domino subcomplex extracted from the Jeandel--Rao $11$-tile aperiodic
+Wang set, the decorated cochain $\varphi$ supported on $\{e_2,e_3\}$ is a
+nonzero cocycle. Since the one-vertex complex has $\delta^0 = 0$,
+$[\varphi]\neq0$ in $H^1$.
+
+This is a finite witness only: it is not Jeandel--Rao aperiodicity, and not by
+itself a persistent direct-limit $\mathrm{cl\text{-}inv}$ class. It is,
+however, the cohomological content of the abstract
+\texttt{aperiodicWitness}: \texttt{Settling.clInv} is derived from a closed
+cochain on a one-vertex AP complex, and
+\texttt{aperiodicWitness\_clinv\_nonzero} is discharged from
+\texttt{phi\_nonzero} rather than from a bare coordinate.
+\end{theorem}

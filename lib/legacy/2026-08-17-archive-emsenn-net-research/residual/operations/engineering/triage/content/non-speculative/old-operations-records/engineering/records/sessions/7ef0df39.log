@@ -1,0 +1,7 @@
+Fixes applied from code review:
+
+- **Removed** redundant `fs.accessSync` check (flush already handles missing files gracefully)
+- **Added** error logging to all catch blocks — no more silent swallowing
+- **Pass object directly** to `check-frontmatter.run()` instead of re-serializing to JSON
+- **Anchored path checks** to `REPO_ROOT` — no false matches from `library/` appearing in unrelated paths
+- **Reduced debounce** from 5s to 3s to fit comfortably within the 10s async hook timeout

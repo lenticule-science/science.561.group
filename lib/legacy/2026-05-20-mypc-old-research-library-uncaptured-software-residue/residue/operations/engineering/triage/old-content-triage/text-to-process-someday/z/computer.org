@@ -1,0 +1,9 @@
+#+title: computer
+#+roam_alias: "computers"
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-17 Thu 09:42]
+
+** Thoughts
+*** Engineers, artists, and computers
+    Engineers use computers to do what can be automated. Artists use computers to do what is possible.

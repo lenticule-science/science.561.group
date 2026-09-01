@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       b2f7ae00-10d2-4c95-9b74-9aae61f3cb0d
+:ROAM_REFS: https://orgmode.org/manual/Citation-handling.html
+:END:
+#+title: Org-mode citation
+#+date: [2025-08-28 Thu 09:00]
+

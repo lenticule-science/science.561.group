@@ -1,0 +1,25 @@
+[project]
+name = "pypred"
+version = "0.1.0"
+description = "Reusable Python primitives for predication-native computation."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = [
+    "sympy>=1.12",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+
+[tool.mypy]
+strict = true
+files = ["src/pypred"]

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       099557d1-c90c-4d9b-8c9a-778afb8020de
+:ROAM_ALIASES: "Swiss-German language"
+:END:
+#+title: Schwyzerdütsch
+#+date: [2025-08-23 Sat 10:41]
+
+*/Schwyzerdütsch/*, or Swiss-German, is a [[id:e8bfbd06-21f6-4e9a-a42b-27a93d5c7b21][language]] spoken in [[id:d7fe3a22-e8d4-402a-8920-e76e3a50e458][Switzerland]].

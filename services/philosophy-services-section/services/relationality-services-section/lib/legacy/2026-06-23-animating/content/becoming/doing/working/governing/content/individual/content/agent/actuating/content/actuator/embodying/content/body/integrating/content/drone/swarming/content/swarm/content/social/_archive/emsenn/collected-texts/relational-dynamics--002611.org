@@ -1,0 +1,46 @@
+:PROPERTIES:
+:ID:       7031b7c2-7bfd-410e-8ed7-fbfc81dc3afc
+:public:   true
+:instantiates: [[id:329b4b61-eb4d-4d0e-9d4a-dcdb967a6f86][metaphysical framework]]
+:field:    [[id:f0c26b81-a602-4ce3-8e2e-43919e4c58b0][emsean thought]]
+:END:
+#+title: relational dynamics
+#+date: [2025-09-01 Mon 12:28]
+#+index: relational dynamics
+
+*/Relational dynamics/* are the [[id:f23b6a7a-5bbd-426c-af58-1fa5072e1a81][modes of relation]] that [[id:c8ba8cf5-2718-43e7-9f27-126319bdfe40][induce]], [[id:2a4a0e43-c3f0-4bc6-bbfe-0bcc98e09ef4][cohere]], and [[id:214a8bed-386a-416a-bd73-9ffed0cb5ab2][sustain]] [[id:bdffbe80-08e1-4e95-ad98-81cea8cf68a1][existing]].
+
+The idea is a part of [[id:f0c26b81-a602-4ce3-8e2e-43919e4c58b0][emsean thought]], and the product of [[id:525f32ef-8b74-43c7-854b-ffc18ae96f80][emsean analysis]].
+
+#+include: "introducing-relational-dynamics.org" :only-contents t
+
+* [[id:9c606291-7654-428d-8f3f-13f97cbcb41f][catalog]]
+
+** [[id:e5474b02-2852-4c8a-91cd-4a683e0db672][Org-roam nodes]] in [[id:08583fa9-929f-43b4-abc4-e612caa532bb][GnoponEmacs field]] of emsean thought
+
+#+begin_src elisp :results value raw :exports results :eval yes
+  (let* ((nodes
+          (org-roam-db-query
+           [:select [*]
+            :from nodes
+            :where (and
+                    (like properties '"%field%7031b7c2-7bfd-410e-8ed7-fbfc81dc3afc%")
+                    (like properties '"%public%true%"))]))
+         (sorted-nodes
+          (sort nodes
+                (lambda (a b)
+                  (string-lessp (nth 8 a) (nth 8 b))))))
+    (mapconcat
+     (lambda (node)
+       (format "- [[id:%s][%s]] :: %s" (car node) (nth 8 node) (cdr (assoc "INSTANTIATES" (nth 9 node)))))
+     (reverse sorted-nodes)
+     "\n"))
+#+end_src
+
+#+RESULTS:
+- [[id:d9d79997-04e0-40e6-9ad9-24e5be3487c4][relational polyvalence]] :: [[id:2cee862c-1516-40e6-8e1f-63e71d1f7439][polyvalence]]
+- [[id:7031b7c2-7bfd-410e-8ed7-fbfc81dc3afc][relational dynamics]] :: [[id:329b4b61-eb4d-4d0e-9d4a-dcdb967a6f86][metaphysical framework]]
+- [[id:c289a415-7cf4-44fd-a5dd-0139c6c56f0e][relational dynamic]] :: [[id:bee4430c-bf1c-4691-ab81-a681997e3928][dynamic]]
+- [[id:0c45a2b5-f4fd-4a08-b99e-5b617ec7378e][inciting]] :: [[id:32e00173-c695-4bb6-b0d2-9dc17fec128b][act]]
+- [[id:00298e02-93cb-41cc-a77f-ee90289e0139][existence]] :: [[id:1f810c64-c53a-4e7e-8d9a-1a93dfbb1b7a][structure]]
+- [[id:110f00d0-77fc-4f99-9502-74e186e88e20][Introducing Relational Dynamics]] :: [[id:495f274d-80ec-47a2-93dc-733355ef9b9c][essay]]

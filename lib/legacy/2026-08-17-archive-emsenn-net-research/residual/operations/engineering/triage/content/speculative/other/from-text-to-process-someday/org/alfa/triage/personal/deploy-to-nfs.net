@@ -1,0 +1,2 @@
+mkdocs build
+scp -r ./site/* emsenn_emsenn@ssh.phx.nearlyfreespeech.net:./

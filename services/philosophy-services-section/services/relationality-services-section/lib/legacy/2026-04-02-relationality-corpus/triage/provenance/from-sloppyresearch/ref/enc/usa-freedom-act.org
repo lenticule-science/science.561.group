@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       3637ef16-85dc-4f66-820b-cafc937ce450
+:ROAM_REFS: [cite:@USAFREEDOMAct]
+:END:
+#+title: USA FREEDOM Act
+#+date: [2025-09-27 Sat 23:25]
+* [[id:ed3a99f2-07af-4424-8cfa-4d1ce69d1b0e][code]]
+** [[id:42f66990-2e7d-4081-8f0e-7eb67b23e1fb][BibTex entry]]
+
+#+begin_src bibtex :canonical yes
+    @misc{USAFREEDOMAct,
+    author = {U.S. Congress},
+    title        = {USA FREEDOM Act of 2015},
+    howpublished = {Public Law 114-23},
+    year         = {2015},
+    month        = {June},
+  }
+#+end_src
+

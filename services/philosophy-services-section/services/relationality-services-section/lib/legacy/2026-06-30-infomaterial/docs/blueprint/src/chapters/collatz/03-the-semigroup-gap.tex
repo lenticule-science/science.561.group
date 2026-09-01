@@ -1,0 +1,37 @@
+\section{The semigroup gap}
+
+\begin{theorem}[Non-descent is a semigroup certificate]
+  \label{thm:collatz-nondescent-iff}
+  \lean{Infomaterial.Closure.Collatz.nonDescent_iff_semigroup_certificate}
+  \leanok
+  \uses{thm:collatz-firstpassage-iff}
+  For a parent barrier with first-passage relation $2B\cdot y=A\cdot n+C$, write $D=2B-A$,
+  $M=2B$. The first-passage word fails to descend ($y\ge n$) exactly when $C$ lies in the
+  two-generator numerical semigroup $\langle D,M\rangle$, i.e. $C=D\cdot n+M\cdot d$ for some
+  $d$.
+\end{theorem}
+\begin{proposition}[Parent-barrier gap]
+  \label{thm:collatz-gap}
+  \lean{Infomaterial.Closure.Collatz.ParentBarrierGap}
+  \leanok
+  \uses{thm:collatz-nondescent-iff}
+  The \emph{gap} property: for every nontrivial parent barrier ($p\ne[]$, $p\ne[O]$), $C\notin
+  \langle D,M\rangle$. (Definition formalized; its truth is the frontier node
+  \cref{thm:collatz-gap-holds}.)
+\end{proposition}
+\begin{theorem}[Gap implies first-passage descent]
+  \label{thm:collatz-gap-implies-descent}
+  \lean{Infomaterial.Closure.Collatz.parentBarrierGap_implies_firstPassageDescent}
+  \leanok
+  \uses{thm:collatz-gap}
+  If the gap holds, every nontrivial first-passage word descends at any realising $n>2$.
+\end{theorem}
+\begin{theorem}[Every first-passage cylinder descends]
+  \label{thm:collatz-all-firstpassage-descent}
+  \lean{Infomaterial.Closure.Collatz.parentBarrierGap_implies_all_firstPassage_descent}
+  \leanok
+  \uses{thm:collatz-gap-implies-descent}
+  Under the gap, \emph{every} first-passage cylinder descends, including the two
+  terminal-adjacent cases handled directly: $[E]$ (an even seed halves) and $[O,E]$
+  ($4\cdot T^2(n)=3n+1<4n$).
+\end{theorem}

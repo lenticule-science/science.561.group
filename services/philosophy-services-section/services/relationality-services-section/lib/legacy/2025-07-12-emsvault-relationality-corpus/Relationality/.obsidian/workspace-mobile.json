@@ -1,0 +1,207 @@
+{
+  "main": {
+    "id": "576debee3c44ed6d",
+    "type": "split",
+    "children": [
+      {
+        "id": "0b64c5d93e2f3ca1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "275b4e7446d5c779",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Personal Log, Wednesday, June 6 2025.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Personal Log, Wednesday, June 6 2025"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "42ce8a1602587918",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "73b6564dbb57a8ad",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical",
+            "autoReveal": false
+          },
+          "icon": "lucide-folder-closed",
+          "title": "Files"
+        }
+      },
+      {
+        "id": "d5fd72c37c8dd694",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "including",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          },
+          "icon": "lucide-search",
+          "title": "Search"
+        }
+      },
+      {
+        "id": "762e53887f76be67",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true,
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-tags",
+          "title": "Tags"
+        }
+      },
+      {
+        "id": "50a7bf43a8c64dae",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {},
+          "icon": "lucide-bookmark",
+          "title": "Bookmarks"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "1213b210d0e261e2",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "509b800a210d739e",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "system/meta/text/Relational Dynamic Cubical Agba Formalism.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-coming-in",
+          "title": "Backlinks"
+        }
+      },
+      {
+        "id": "3e64aae14f9704dd",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "reflex induced relation.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-going-out",
+          "title": "Outgoing links"
+        }
+      },
+      {
+        "id": "53566375c14be4ab",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "reflex induced relation.md",
+            "followCursor": false,
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-list",
+          "title": "Outline"
+        }
+      },
+      {
+        "id": "1daef04bb0007cc6",
+        "type": "leaf",
+        "state": {
+          "type": "git-view",
+          "state": {},
+          "icon": "git-pull-request",
+          "title": "Source Control"
+        }
+      }
+    ],
+    "currentTab": 3
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "improved-random-note:Open improved random note": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "275b4e7446d5c779",
+  "lastOpenFiles": [
+    "2025-06-11.md",
+    "Personal Log, Wednesday, June 6 2025.md",
+    "system/meta/text/Relational Dynamic Cubical Agba Formalism.md",
+    "applications/governance/control/surveillance/text/briefing/2025/Mapping Potential Mass Protest Surveillance System Relations as of April 18, 2025.md",
+    "applications/biology/Biology Inquiry.md",
+    "main derivations.md",
+    "applications/mathematics/proofs/Proof of the Yangs-Mills Mass Gap Dynamic.md",
+    "applications/mathematics/proofs/Proof of Banach-Tarski Invalidity.md",
+    "applications/mathematics/proofs/Proof of Ramsey Dynamics.md",
+    "applications/mathematics/proofs/Proof of the Goodstein Termination Dynamic.md",
+    "applications/mathematics/proofs/Proof of the Neimann Dynamic.md",
+    "applications/mathematics/proofs/Proof of the Collatz Dynamic.md",
+    "applications/mathematics/principles/Principles of Standard Natural Numbers.md",
+    "applications/mathematics/dynamics/Relational Dynamics of Relational Natural Numbers.md",
+    "system/units/minimal coherence.md",
+    "applications/biology",
+    "applications/mathematics/dynamics/Relational Dynamics of Standard Natural Numbers.md",
+    "applications/mathematics/dynamics",
+    "applications/personal/text/reflections/Memorializing Patrick Adiarte.md",
+    "applications/personal/mapping/Mapping a Random Dinner.md",
+    "applications/mathematics/principles/Principles of Relational Natural Numbers.md",
+    "applications/mathematics/principles",
+    "applications/relational/mathematics/Untitled.md",
+    "applications/mathematics/proofs",
+    "applications/mathematics",
+    "system/meta/text/Statement of Novelty.md",
+    "applications/personal/mapping",
+    "applications/LLM prompting/text/Comparative Analysis of Operationalizing Relational Dynamics via LLM Engagement and Conceptions of Cognition.md",
+    "applications/LLM prompting/text/Statement on the Emergence and Operationalization of a Relational Field through Recursive LLM Engagement.md",
+    "applications/LLM prompting/text",
+    "applications/LLM prompting",
+    "system/meta/text/Introductory Relational Dynamics.md",
+    "system/meta/text/Deriving Coherence.md",
+    "GOOD DERIVATIONS.md",
+    "system/dynamics/dynamic of relation",
+    "system/dynamics"
+  ]
+}

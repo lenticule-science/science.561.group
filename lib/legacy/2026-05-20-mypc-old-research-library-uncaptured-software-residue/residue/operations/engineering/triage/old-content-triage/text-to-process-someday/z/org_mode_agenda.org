@@ -1,0 +1,52 @@
+#+title: Org-mode agenda
+#+begin_head
+#+ghe_schema: term-0.1.3
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-31 Thu 13:04]
+#+roam_tags: term
+#+end_head
+
+#+name: org-mode-agenda-definition
+*/[[file:org_mode_agenda.org][Org-mode agenda]]/* is a part of [[file:org_mode.org][Org-mode]] used for handling a [[file:time.org][temporal]] schedule.
+#+toc: headlines 2
+* Introduction
+* Org-mode agenda
+  :PROPERTIES:
+  :header-args: :noweb yes
+  :END:
+** Org-mode agenda configuration
+
+   #+name: org-agenda-configuration-elisp
+   #+caption: A sequence of /Elisp/ declarations for configuring /Org-mode agenda/.
+   #+begin_src elisp
+     (setq org-agenda-files
+	   <<org-agenda-files-value-elisp>>)
+   #+end_src
+   
+*** Org-mode agenda configuration variables
+    #+name: org-agenda-files-value-elisp
+    #+caption: The value for =org-agenda-files=. Needs to be a list of /strings/, each pointing to a /file/ or /directory/.
+    #+begin_src elisp
+      (list "~/org/r")
+    #+end_src
+
+*** Org-mode agenda global bindings
+
+    #+name: org-agenda-global-bindings-elisp
+    #+caption: The /Emacs bindings/ I add for handling /Org-mode links/.
+    #+begin_src
+      ("C-c a" . org-agenda)
+    #+end_src
+    
+* Supplements
+** Record history
+   :PROPERTIES:
+   :CUSTOM_ID: record-history
+   :END:
+   :LOGBOOK:
+   - Note taken on [2020-12-31 Thu 13:04] \\
+      Created from [[file:~/org/s/p/org_mode_link.org][Bindings]]
+
+      
+   :END:

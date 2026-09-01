@@ -1,0 +1,57 @@
+{
+  "bottom": "a",
+  "current_state": "a",
+  "flow_tags": [
+    "two_state_flow"
+  ],
+  "id": "b1b23af7db6fe79b19d37ee6159fcc5f9eed0ff0e5ba74b3c4112925afd64526",
+  "imply_table": {
+    "a": {
+      "a": "b",
+      "b": "b"
+    },
+    "b": {
+      "a": "a",
+      "b": "b"
+    }
+  },
+  "join_table": {
+    "a": {
+      "a": "a",
+      "b": "b"
+    },
+    "b": {
+      "a": "b",
+      "b": "b"
+    }
+  },
+  "kind": "phase_space",
+  "meet_table": {
+    "a": {
+      "a": "a",
+      "b": "a"
+    },
+    "b": {
+      "a": "a",
+      "b": "b"
+    }
+  },
+  "negate_map": {
+    "a": "b",
+    "b": "a"
+  },
+  "order": {
+    "a": [
+      "a",
+      "b"
+    ],
+    "b": [
+      "b"
+    ]
+  },
+  "states": [
+    "a",
+    "b"
+  ],
+  "top": "b"
+}

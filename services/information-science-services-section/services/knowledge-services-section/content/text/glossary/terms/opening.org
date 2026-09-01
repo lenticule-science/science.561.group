@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       6b3f231e-b9a9-4697-937d-9f271331f291
+:END:
+#+title: opening
+#+date: [2025-09-04 Thu 09:30]
+

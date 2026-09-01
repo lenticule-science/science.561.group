@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       18fa3a81-373c-4e6b-b13f-b7a69ab57b71
+:END:
+#+title: Existential Stratified Directed Infinity-Homotopy Geometry
+#+date: [2025-10-09 Thu 08:36]
+

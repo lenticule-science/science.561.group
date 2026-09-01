@@ -1,0 +1,103 @@
+{{ define "main" }}
+{{- $type := or .Params.type (index .Params "locates") (index .Params "introduces") "page" -}}
+{{- $domain := or (index .Params "component-of") (index .Params "part-of") "" -}}
+<article class="h-entry" data-type="{{ $type }}"
+  data-pagefind-meta="type:{{ $type }}{{ with $domain }}, domain:{{ . }}{{ end }}{{ with .Params.defines }}, defines:{{ . }}{{ end }}{{ with .Section }}, section:{{ . }}{{ end }}">
+  {{ partial "breadcrumbs.html" . }}
+  <h1 class="p-name">{{ .Title }}</h1>
+  <div class="meta">
+    {{ with .Date }}<time class="dt-published" datetime="{{ .Format "2006-01-02T15:04:05Z07:00" }}">{{ .Format "2006-01-02" }}</time>{{ end }}
+    {{ with .Params.authors }}<span>by {{ range $i, $a := . }}{{ if $i }}, {{ end }}<span class="p-author">{{ $a }}</span>{{ end }}</span>{{ end }}
+    {{- $type := .Params.type | default "" }}
+    {{ if not (or (eq $type "text") (eq $type "paper")) }}{{ with .Description }}<span class="p-summary">{{ . }}</span>{{ end }}{{ end }}
+  </div>
+  {{- if or (eq $type "term") (eq $type "definition") (eq $type "concept") }}
+  {{ with .Params.defines }}
+  <div class="type-meta type-meta--definition">
+    <span class="type-meta-label">Defines</span>
+    <span class="type-meta-value">{{ if reflect.IsSlice . }}{{ delimit . ", " }}{{ else }}{{ . }}{{ end }}</span>
+  </div>
+  {{ end }}
+  {{ with $.Params.requires }}
+  <div class="type-meta type-meta--prereqs">
+    <span class="type-meta-label">Requires</span>
+    {{ if reflect.IsSlice . }}<ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ else }}<span class="type-meta-value">{{ . }}</span>{{ end }}
+  </div>
+  {{ end }}
+  {{- else if or (eq $type "text") (eq $type "paper") }}
+  {{ with .Description }}
+  <div class="type-meta type-meta--abstract">
+    <span class="type-meta-label">Abstract</span>
+    <p>{{ . }}</p>
+  </div>
+  {{ end }}
+  {{- else if eq $type "lesson" }}
+  {{ with .Params.teaches }}
+  <div class="type-meta type-meta--objectives">
+    <span class="type-meta-label">Learning objectives</span>
+    {{ if reflect.IsSlice . }}<ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ else }}<span class="type-meta-value">{{ . }}</span>{{ end }}
+  </div>
+  {{ end }}
+  {{ with $.Params.requires }}
+  <div class="type-meta type-meta--prereqs">
+    <span class="type-meta-label">Prerequisites</span>
+    {{ if reflect.IsSlice . }}<ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ else }}<span class="type-meta-value">{{ . }}</span>{{ end }}
+  </div>
+  {{ end }}
+  {{- end }}
+  {{- if and (gt .WordCount 500) (not .Params.notoc) -}}
+    {{- $headings := findRE `<h[23][^>]*>` .Content -}}
+    {{- if gt (len $headings) 3 -}}
+    <details class="toc" open>
+      <summary>Table of contents</summary>
+      {{ .TableOfContents }}
+    </details>
+    <script>
+    (function() {
+      const links = document.querySelectorAll('.toc a[href^="#"]');
+      if (!links.length || !('IntersectionObserver' in window)) return;
+      const linkByHash = {};
+      links.forEach(a => { linkByHash[a.getAttribute('href')] = a; });
+      const headings = Array.from(document.querySelectorAll('.e-content h2[id], .e-content h3[id]'));
+      if (!headings.length) return;
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          const link = linkByHash['#' + entry.target.id];
+          if (!link) return;
+          if (entry.isIntersecting) {
+            links.forEach(l => l.classList.remove('toc-potential'));
+            link.classList.add('toc-potential');
+          }
+        });
+      }, { rootMargin: '-20% 0px -70% 0px', threshold: 0 });
+      headings.forEach(h => observer.observe(h));
+    })();
+    </script>
+    {{- end -}}
+  {{- end }}
+  <div class="e-content">
+    {{- $content := .Content -}}
+    {{- with .Params.references -}}
+      {{- if reflect.IsMap . -}}
+        {{- range $key, $ref := . -}}
+          {{- if reflect.IsMap $ref -}}
+            {{- $pattern := printf `\[@%s\]` $key -}}
+            {{- $link := printf `<a href="#ref-%s" class="citation">[%s]</a>` $key $key -}}
+            {{- $content = $content | replaceRE $pattern $link -}}
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end }}
+    {{ $content | safeHTML }}
+  </div>
+  {{ with .Lastmod }}
+  <p class="last-reviewed">Last reviewed <time class="dt-updated" datetime="{{ .Format "2006-01-02" }}">{{ .Format "January 2, 2006" }}</time>.</p>
+  {{ end }}
+  {{ partial "bibliography.html" . }}
+</article>
+{{ partial "frontmatter-graph.html" . }}
+{{ partial "cite-this.html" . }}
+{{ if $.Site.Params.webmentions }}
+  {{ partial "webmentions.html" . }}
+{{ end }}
+{{ end }}

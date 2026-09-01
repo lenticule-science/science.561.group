@@ -1,0 +1,17 @@
+'("shaggy-dog-tale"
+  ("versions"
+   ("current"
+    ("sourcehut"
+     ("location" . "https://example.org/shaggy-dog-tale/")
+     ("formats" . ("html"))))))
+
+'(("brutstrap-css"
+   ("name" . "Brutstrap CSS")
+   ("description" . "a cascading stylesheet for representing HTML content as it is constructed.")
+   ("creator" . "emsenn")
+   ("license" . "CC0")
+   ("versions"
+    ("current"
+     ("sourcehut"
+      ("location" . "https://git.sr.ht/~emsenn/brutstrap-css/blob/master/")
+      ("formats" . ("html" "md" "pdf" "tex" "txt")))))))

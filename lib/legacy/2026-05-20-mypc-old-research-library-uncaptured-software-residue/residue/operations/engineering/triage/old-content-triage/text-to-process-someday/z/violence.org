@@ -1,0 +1,20 @@
+#+title: violence
+#+begin_head
+#+ghe_schema: record-0.1.3
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-24 Thu 11:55]
+#+end_head
+
+#+name: definition
+*/Violence/* is an relationship formed between [[file:person.org][people]] without everyone's consent.
+
+#toc: headlines 2
+* Intrododuction
+* violence
+* Supplements
+** Record history
+   :LOGBOOK:
+   - Note taken on [2020-12-24 Thu 11:55] \\
+     Created
+   :END:

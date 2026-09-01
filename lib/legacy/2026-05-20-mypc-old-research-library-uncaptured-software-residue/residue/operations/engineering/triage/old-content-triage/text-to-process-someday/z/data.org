@@ -1,0 +1,12 @@
+#+title: data
+#+begin_head
+#+ghe_schema: term-0.1.0
+#+roam_alias: "datum"
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-21 Mon 15:04]
+#+roam_tags: ILS term
+#+end_head
+*/Data/* is the "content" of [[file:information.org][information]], as contrasted to [[file:meta_data.org][meta-data]], which can be seen as the information's "context."
+
+Using [[file:computer.org][computer]], data is often associated with a /type/, which is meta-data about the class of information. Common computer data types are [[file:numbers.org][numbers]], [[file:computer_string.org][computer string]], and [[file:associative_array.org][associative array]].

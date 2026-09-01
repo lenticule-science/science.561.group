@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       24540b59-852d-46f7-82f2-29814d7e8f2a
+:public:   true
+:END:
+#+title: conditioning
+#+date: [2025-08-24 Sun 21:01]
+#+index: tekodynamics!conditioning

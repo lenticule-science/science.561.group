@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       40af395b-830a-4e22-8f7a-6cdc83408ca2
+:END:
+#+title: Naïve Psychology
+#+date: [2025-08-29 Fri 17:04]
+

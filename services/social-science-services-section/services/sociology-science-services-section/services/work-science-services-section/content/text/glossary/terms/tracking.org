@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       59c55c3c-d67f-4510-baa9-33144f0e122e
+:NODE-RELATIONS: (([[id:bee496e1-139b-4a7f-8a24-d4c14e6084c6][instantiates]] . [[id:32e00173-c695-4bb6-b0d2-9dc17fec128b][act]]))
+:END:
+#+title: tracking
+#+date: [2025-09-06 Sat 09:16]
+

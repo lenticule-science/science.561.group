@@ -1,0 +1,114 @@
+#!/usr/bin/env python3
+"""
+fetch-anderson-citations.py
+--------------------------------
+Pulls bibliographic metadata and abstracts for works likely citing or discussing
+Kevin B. Anderson’s *The Late Marx and the Russian Road* (2010; 2016).
+
+Filters to humanities/social-science English records containing Marxist terms,
+to avoid chemistry/physics false positives.
+
+Outputs: abstracts.csv with fields:
+label,year,title,authors,publisher,doi,abstract
+"""
+
+import csv, json, re, time, random
+import requests
+
+# --- Config ---
+OUTFILE = "abstracts.csv"
+CONTACT_EMAIL = "emsenn@emsenn.net"
+MAX_RESULTS = 200
+SLEEP = 1.2
+SEED = 42
+random.seed(SEED)
+
+# --- Query and filters ---
+QUERY_ANDERSON = '"Kevin B. Anderson" "The Late Marx and the Russian Road"'
+QUERY_CONTROL  = 'Marxism OR "Karl Marx"'
+MARX_FILTER = re.compile(r"(marx|marxism|historical materialism|capitalis\w*|communis\w*|class struggle)", re.I)
+BAD_SUBJECTS = {"chemistry", "physics", "materials", "engineering", "medicine", "biology", "geology"}
+
+def query_crossref(query, rows=100, cursor="*"):
+    url = "https://api.crossref.org/works"
+    params = {"query.bibliographic": query, "rows": rows, "cursor": cursor, "mailto": CONTACT_EMAIL}
+    while True:
+        r = requests.get(url, params=params, timeout=30)
+        if r.status_code != 200:
+            print("Error", r.status_code, r.text)
+            break
+        data = r.json()
+        items = data["message"]["items"]
+        for it in items:
+            yield it
+        cursor_next = data["message"].get("next-cursor")
+        if not cursor_next or len(items) == 0:
+            break
+        params["cursor"] = cursor_next
+        time.sleep(SLEEP)
+
+def clean(text):
+    if not text:
+        return ""
+    return re.sub(r"\s+", " ", str(text)).strip()
+
+def extract(it):
+    doi = it.get("DOI", "")
+    title = clean(" ".join(it.get("title", [])))
+    abstract = clean(it.get("abstract", ""))
+    year = None
+    for fld in ("published-print","published-online","created"):
+        if fld in it and "date-parts" in it[fld]:
+            year = it[fld]["date-parts"][0][0]
+            break
+    authors = ", ".join([a.get("family","") for a in it.get("author",[]) if "family" in a])
+    publisher = it.get("publisher", "")
+    subjects = [s.lower() for s in it.get("subject", [])]
+    lang = it.get("language","").lower() if it.get("language") else ""
+    return {"doi":doi,"title":title,"abstract":abstract,"year":year,
+            "authors":authors,"publisher":publisher,"subjects":subjects,"lang":lang}
+
+def is_marxist(rec):
+    """Heuristic: English + humanities/social + Marx lexicon"""
+    if rec["lang"] and not rec["lang"].startswith("en"):
+        return False
+    if any(bad in rec["subjects"] for bad in BAD_SUBJECTS):
+        return False
+    text = f"{rec['title']} {rec['abstract']}".lower()
+    return bool(MARX_FILTER.search(text))
+
+# --- Main collection ---
+def collect(query, label):
+    records = []
+    for item in query_crossref(query, rows=100):
+        rec = extract(item)
+        if not is_marxist(rec):
+            continue
+        rec["label"] = label
+        records.append(rec)
+        if len(records) >= MAX_RESULTS:
+            break
+    return records
+
+print("Fetching Anderson-related records…")
+anderson_records = collect(QUERY_ANDERSON, "cites_anderson")
+
+print("Fetching Marxist control records…")
+control_records = collect(QUERY_CONTROL, "control")
+
+rows = anderson_records + control_records
+random.shuffle(rows)
+
+# --- Write CSV ---
+with open(OUTFILE, "w", newline="", encoding="utf-8") as f:
+    writer = csv.DictWriter(f, fieldnames=[
+        "label","year","title","authors","publisher","doi","abstract"
+    ])
+    writer.writeheader()
+    for r in rows:
+        writer.writerow({k:r.get(k,"") for k in writer.fieldnames})
+
+print(f"Wrote {len(rows)} records to {OUTFILE}")
+print("Sample titles:")
+for r in rows[:10]:
+    print(f"- [{r['label']}] {r['year']} {r['title'][:80]}…")

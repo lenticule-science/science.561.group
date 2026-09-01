@@ -1,0 +1,15 @@
+{{- $scratch := newScratch -}}
+{{- range . -}}
+  {{- $scratch.Add "plans" (slice ( . | markdownify )) -}}
+{{- end -}}
+{{- with ($scratch.Get "plans") -}}
+{{- if (eq (len .) 0) -}}{{- else -}}
+  {{- if (eq (len .) 1) }}
+      {{ . }}
+    {{- else if (eq (len .) 2) }}
+      {{ delimit . " and " }}
+    {{- else }}
+      {{ delimit (first 3 .) ", " ", and " }}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}

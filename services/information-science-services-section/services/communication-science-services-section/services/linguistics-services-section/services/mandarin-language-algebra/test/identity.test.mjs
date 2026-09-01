@@ -1,0 +1,14 @@
+import assert from "node:assert/strict";
+import test from "node:test";
+
+import { EMPTY_WITNESS_ROOT, identifyJsonSemanticContent } from "@red-cup-engineering/semantic-content-identify-service";
+import { jsonId } from "../src/semantic-identity.mjs";
+
+test("Mandarin die IDs preserve the exact SCIS v2 object-kind/value/witness-root law", () => {
+  const value = { text: "我喜欢学习。" };
+  const objectKind = "lenticule.mandarin-language-algebra.tagging-request";
+  const expected = identifyJsonSemanticContent({ objectKind, value, witnessRoot: EMPTY_WITNESS_ROOT });
+  assert.equal(jsonId(value, objectKind), expected.token);
+  assert.notEqual(jsonId(value, `${objectKind}.other`), expected.token);
+  assert.throws(() => jsonId(value, ""), /object kind is required/);
+});

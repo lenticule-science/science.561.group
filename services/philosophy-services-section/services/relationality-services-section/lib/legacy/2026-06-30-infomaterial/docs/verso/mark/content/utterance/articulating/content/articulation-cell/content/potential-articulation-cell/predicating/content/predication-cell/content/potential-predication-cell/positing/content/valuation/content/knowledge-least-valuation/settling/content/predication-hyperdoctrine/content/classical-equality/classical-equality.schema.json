@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/predication-hyperdoctrine/content/classical-equality",
+  "title": "classical-equality",
+  "description": "The classical two-valued equality predicate =_E on a predication hyperdoctrine, derived (not postulated) as the truth-order Lawvere image of the constant-t valuation on the diagonal of an entity set.",
+  "type": "object",
+  "required": ["hyperdoctrine", "entity-set", "definition", "two-valued", "derived"],
+  "properties": {
+    "hyperdoctrine": {
+      "$ref": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/predication-hyperdoctrine",
+      "description": "the predication hyperdoctrine on whose truth-order adjoint system the equality is derived"
+    },
+    "entity-set": {
+      "const": "set",
+      "description": "the entity set E whose diagonal sub-support Delta_E = {(s,s) : s in E} carries the equality"
+    },
+    "definition": {
+      "const": "=_E := exists_g^t(1_q^t)",
+      "description": "the truth-order Lawvere image of the leq_t-terminal (constant-t valuation) on Delta_E along the predicate specialization g : q -> p"
+    },
+    "two-valued": {
+      "const": true,
+      "description": "=_E(s, o) = t when s = o and f when s != o"
+    },
+    "derived": {
+      "const": true,
+      "description": "obtained from the dual adjoint triple via Lawvere's diagonal-Sigma construction rather than postulated as a primitive"
+    }
+  }
+}

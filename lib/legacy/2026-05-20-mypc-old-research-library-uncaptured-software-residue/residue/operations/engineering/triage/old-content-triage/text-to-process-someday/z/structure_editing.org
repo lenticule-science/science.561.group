@@ -1,0 +1,25 @@
+#+title: structure editing
+#+begin_head
+#+ghe_schema: term-0.1.3
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-30 Wed 09:39]
+#+roam_tags: term
+#+end_head
+
+#+name: definition
+*/[[file:structure_editing.org][Structure editing]]/* is a method of using a [[file:text_editor.org][text editor]] to change the text by manipulating it as a [[file:semantics.org][semantic]] structure, not a [[file:computer_string.org][list of characters]].
+#+toc: headlines 2
+* Introduction
+* structure editing
+* Supplements
+** Record history
+   :PROPERTIES:
+   :CUSTOM_ID: record-history
+   :END:
+   :LOGBOOK:
+   - Note taken on [2020-12-30 Wed 09:39] \\
+      Created from [[file:~/org/s/p/d/2020-12-30.org][Looking at structure editing and movement in Org-mode]]
+
+      
+   :END:

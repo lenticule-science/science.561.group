@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       0b6c199e-8a08-4b1f-8860-5fecfad1dc75
+:END:
+#+title: zero-sum state
+#+date: [2025-09-28 Sun 08:32]
+#+index: game theory!zero-sum state
+#+index: state!zero-sum state

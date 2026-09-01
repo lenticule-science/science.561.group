@@ -1,0 +1,27 @@
+#+title: My Ecdysis
+#+begin_head
+#+ghe_schema: term-0.1.3
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-29 Tue 19:03]
+#+roam_key: http://myecdysis.com/
+#+roam_tags: term
+#+end_head
+
+#+name: definition
+*/[[file:my_ecdysis.org][My Ecdysis]]/* is a [[file:blog.org][blog]] about [[file:resistance.org][resisting]] [[file:kyriarchy.org][kyriarchism]].
+#+toc: headlines 2
+* Introduction
+* My Ecdysis
+
+* Supplements
+** Record history
+   :PROPERTIES:
+   :CUSTOM_ID: record-history
+   :END:
+   :LOGBOOK:
+   - Note taken on [2020-12-29 Tue 19:03] \\
+      Created from [[file:~/org/s/p/my_ecdysis_accepting_kyriarchy_not_apologies.org::definition][definition]]
+
+      
+   :END:

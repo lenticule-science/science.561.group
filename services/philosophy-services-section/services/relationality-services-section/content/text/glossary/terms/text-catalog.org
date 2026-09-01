@@ -1,0 +1,43 @@
+:PROPERTIES:
+:ID:       24e57e89-efa6-4102-8cce-d6b8559c3a00
+:public:   true
+:form:     [[id:9c606291-7654-428d-8f3f-13f97cbcb41f][catalog]]
+:END:
+#+title: text catalog
+#+date [2025-08-05 Tue 17:33]
+
+* Catalog of Text Catalogs
+#+begin_src elisp :results value raw :exports results :eval yes
+  (let* ((nodes
+          (org-roam-db-query
+           [:select [*]
+            :from nodes
+            :where (and
+  		  (like properties '"%form%text catalog%")
+  		  (like properties '"%public%true%"))]))
+         (nodes-with-date
+  	(cl-loop for node in nodes
+  		 for file = (nth 1 node)
+  		 for date = (with-temp-buffer
+  			      (when (and file (file-readable-p file))
+  				(insert-file-contents file)
+  				(org-mode)
+  				(goto-char (point-min))
+  				(let ((date-entry (cdr (assoc "DATE" (org-collect-keywords '("DATE"))))))
+  				  (and date-entry (string-trim (car date-entry))))))  				
+  		 collect (append node (list date))))
+         (sorted-nodes
+  	(sort nodes-with-date
+  	      (lambda (a b)
+  		(let ((ad (ignore-errors (org-time-string-to-time (nth 11 a))))
+  		      (bd (ignore-errors (org-time-string-to-time (nth 11 a)))))
+  		  (and ad bd (time-less-p bd ad)))))))
+    (mapconcat
+     (lambda (node)
+       (format "- [[id:%s][%s]]" (car node) (nth 8 node)))
+     sorted-nodes
+     "\n"))
+#+end_src
+
+#+RESULTS:
+- [[id:70da4a1e-b8f5-4e6d-b8b6-229ba2d72ae1][My Blog]]

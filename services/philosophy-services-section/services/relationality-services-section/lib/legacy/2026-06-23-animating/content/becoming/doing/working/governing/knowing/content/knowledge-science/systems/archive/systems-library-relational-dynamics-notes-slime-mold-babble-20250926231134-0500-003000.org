@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID:       b7c97a25-8682-44a4-a8ac-6165d17607fe
+:form:     [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]
+:instantiates: [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]
+:author:   [[id:40cbaad9-af3c-4573-b356-ae116687e483][emsenn]]
+:END:
+#+title: On anticipation, recursion, and slime mold
+#+date: [2025-09-26 Fri 23:11]
+#+author: emsenn
+
+A lot of [[id:f7eb4bb0-9eb1-4daa-8fdf-7ea19c56248e][my writing]] recently has been focused on [[id:7031b7c2-7bfd-410e-8ed7-fbfc81dc3afc][relational dynamics]] in the [[id:190fec80-b71a-40ab-9fe4-feb4e9169585][fields]] of 
+[[id:bad397e9-7897-48b7-9046-5cc298419fea][sociology]] and [[id:2782b41b-9dc9-408c-9174-06c60af1640c][psychology]], and I thought it might be [[id:f18d2eed-0235-4c1f-a6da-d2851ff3245b][fun]] to look at something else: [[id:410a74cb-3475-4f00-95b5-c5fe7fc92749][Physarum polycephalum]]. It's a [[id:08be7389-934e-4502-869f-2f60b952d8ae][slime mold]] that's been called the "many-headed slime," that's what [[id:dc985ad4-877c-4c23-aa44-668101ffa95b][polycephalum]] means.
+
+First described by [[id:3acd7e87-9d81-4360-b9d6-5608f938cf00][Johann Heinrich Freidrich Link]], a [[id:28b173c8-e6bc-49d1-9036-cbf452d402ac][German]] [[id:37e0567b-8ea0-47c2-8b26-f23029f2f092][naturalist]] back in [[id:8d84f402-572d-4960-9b8e-507bb73b7793][1833ce]].
+
+I should write a [[id:305eb15d-d802-4d58-8b41-19eabc994a1a][history of study of Physarum polysephalum]] and I'm tempted to but I actually want to explain how it's been an [[id:bd02e7f9-468f-4ef8-a4c7-52edf0f02db9][object of study]] in other fields like [[id:7fafd8a0-bf31-4177-9fb7-1e3ae93102f9][mass transit]] and [[id:05a1a0ed-628d-4bd7-9606-4da282150828][logic]].
+
+And through that study, led to things like the [[id:28c6e916-4d53-48a2-af74-2a583e19fe0d][Tero–Kobayashi–Nakagaki equation]], which is what I think might actually be useful in my studies of how [[id:d5d2a92f-1d9f-4f9d-b660-85a897e75dd3][social media platforms]] interact with [[id:5fd154b5-9358-438e-9b93-8f19590bbe97][imagination]].
+
+I got here specifically because I've been thinking of the concept of [[id:8e3226e1-3f56-4b6f-80cd-4478a80a0ff1][pressure]], where I've been elsewhere describing [[id:6026937d-a66d-4f73-9d51-09cd69fd0df9][change]] or [[id:fdd6eab3-471a-4e19-a66f-d06792e93317][input]], especially in the context of relational dynamics.
+
+I think the [[id:0d8c8813-25b4-4e71-898f-32a417dfcedc][homotopy-type theory paths]] and P. polycephalum's tubes might also relate to how edges/boundaries form with relational dynamics, but that's...  a vaguer shape.
+
+And, it's also, like, late, so I'm not really going to get into any of this tonight. I think I want to instead pivot toward thinking about how to get better about making more kinds of nodes in the database, so I can more easily make nodes for specific claims, questions, ideas, postulates, etc.
+
+I recently added "field" and "instantiates" as two properties most of my [[id:3d21771f-14f9-44df-92fd-24a51b0c3937][GnoponEmacs nodes]] have (or should have), but I'm not... loving that. I've been thinking, as always, about [[id:d3f00922-b32a-4465-8c6b-9150d18e325d][theory of MUD design]], and am wondering about bringing in a map of contemporary engine/systems jargon to see which are the most applicable for the kind of weird system that GnoponEmacs is, where it's not [[id:548a9181-254d-4c52-9d31-53dca4cce8a3][automatic]], but it ias [[id:be971fc3-a59d-4ca4-a82c-4448c53ffb25][autonomic]]: that is, it does internal processing, but only directly in response to input. (Maybe that'll change down the line if I integrate a [[id:599df3d8-9fd7-4a0e-bacd-b6c1776e18e4][Fediverse client]] or something.)
+

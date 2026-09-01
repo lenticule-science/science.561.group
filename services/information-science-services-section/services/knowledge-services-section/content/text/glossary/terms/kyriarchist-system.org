@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       3d5c27c4-d1b8-434f-b821-4fc534bee37f
+:END:
+#+title: kyriarchist system
+#+date: [2025-08-29 Fri 10:51]
+

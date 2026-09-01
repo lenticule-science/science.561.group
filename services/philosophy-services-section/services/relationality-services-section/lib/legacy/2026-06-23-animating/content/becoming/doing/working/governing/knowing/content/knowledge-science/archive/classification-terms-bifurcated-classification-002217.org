@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       c9cc4a84-0f4a-4bd6-8ebe-5048131187bc
+:form:     [[id:582193f2-fc61-4e2d-91af-812d64a9f0e0][classification]]
+:sets:     2
+:public:   true
+:END:
+#+title: bifurcated classification
+#+date: [2025-08-29 Fri 17:10]
+#+index: classification
+

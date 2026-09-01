@@ -1,0 +1,7 @@
+<p>
+  {{ partial "site-main-pages-span.html" .}}
+  {{ partial "recentest-page-span.html" . }}
+  In total, this website has around {{ (partial "total-fuzzy-word-count.html" .) | humanize }} words.
+</p>
+{{ partial "site-main-sections-listing.html" . }}
+{{ partial "site-tags-listing.html" . }}

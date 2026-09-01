@@ -1,0 +1,19 @@
+{{ define "main" }}
+  <section itemscope itemtype="https://ns.retribute.me/v0.1/profile">
+    {{ with .Content }}{{ . }}{{ end }}
+    {{ with $.Site.Data.donationMeans}}
+      <ul>
+        {{ range $source, $info := . }}
+          <li itemscope itemtype="https://ns.retribute.me/v0.1/mean">
+            <a itemprop="url" href="{{ index $info 1}}">
+              <data itemprop="id" value="emsenn"></data>
+              <span itemprop="provider" itemvalue="{{ $source }}">
+                {{ index $info 0 }}
+              </span>
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+    {{ end }}
+  </section>
+{{ end }}

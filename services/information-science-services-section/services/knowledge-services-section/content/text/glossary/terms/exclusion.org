@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       8d89196f-966b-4229-b99a-c77d912b0c93
+:END:
+#+title: exclusion
+#+date: [2025-08-15 Fri 12:18]
+

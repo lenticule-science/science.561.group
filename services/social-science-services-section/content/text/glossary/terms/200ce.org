@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       d20d7b3b-f4d6-487b-9f42-1df4375d84dc
+:public:   true
+:instantiates: [[id:d150eaba-d55f-401c-8487-6f2f84d16ace][year]]
+:field:    [[id:e39947c4-1bd9-44d0-bfb5-3e2bef417065][Earth]]
+:END:
+#+title: 200ce
+#+date: [2025-08-25 Mon 08:46]
+#+index: Chronology!Common Era!3rd Century!200ce

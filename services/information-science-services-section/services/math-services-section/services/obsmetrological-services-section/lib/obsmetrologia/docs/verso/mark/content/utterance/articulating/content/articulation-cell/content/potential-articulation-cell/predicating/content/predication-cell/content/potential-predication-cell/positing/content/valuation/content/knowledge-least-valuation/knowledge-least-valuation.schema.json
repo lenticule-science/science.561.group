@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation",
+  "title": "knowledge-least-valuation",
+  "description": "The seed valuation positing deposits - bottom charge on every cell, the knowledge order's least element pointwise. Not the empty graph but bottom-on-every-cell; the base from which the modal dynamic and settling begin.",
+  "allOf": [
+    {
+      "$ref": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation"
+    }
+  ],
+  "type": "object",
+  "required": [
+    "bottom"
+  ],
+  "properties": {
+    "bottom": {
+      "const": true,
+      "description": "bottom charge on every cell - the knowledge order's least element, assigned pointwise; the identity of joining-knowledge"
+    }
+  }
+}

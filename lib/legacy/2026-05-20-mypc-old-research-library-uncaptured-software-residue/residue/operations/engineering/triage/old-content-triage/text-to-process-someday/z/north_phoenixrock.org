@@ -1,0 +1,69 @@
+#+title: North Phoenixrock
+#+begin_head
+#+ghe_schema: term-0.1.3
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-30 Wed 21:05]
+#+roam_tags: term
+#+end_head
+
+#+name: definition
+*/[[file:north_phoenixrock.org][North Phoenixrock]]/* is a [[file:fiction.org][fictional]] place I made in my friend's [[file:minetest.org][Minetest]] server. It's built as a settlement cut into the sides of a large volcano.
+#+toc: headlines 2
+* Introduction
+* North Phoenixrock
+** Trade
+
+   /North Phoenixrock/ uses a gift economy with outsiders. Gifts are made available at the base of the settlement. Here's a list of gifts the settlemnet likes:
+
+   - Dirt :: Since they live on the side of an active volcano, the settlement has no natural dirt.
+   - Ores :: Again, living on a volcano, they have no access to metal.
+
+   Here's a list of gifts that are frequently abundant for visitors:
+
+   - Stone :: As the settlement is constantly terracing the volcano and expanding into its walls, there is usually a great volume of stone available.
+   - Gravel :: Same reason as above.
+   - Hay :: The green-spaces of North Phoenixrock are, for now, mostly cultivated for grass for hay, which is used extensively by the settlement as a building material and fuel.
+  
+** Atlas
+*** Terraces
+**** 1: Gift ring
+
+     The base of North Phoenixrock is nothing but chests full of free things.
+
+**** 38: ???
+
+     - [0/0] Changes
+       - [ ] Flatten
+     
+**** 39: Cedar ring
+
+     - [1/3] Changes
+       - [X] Finish flattening
+       - [ ] Finish adding dirt
+       - [ ] plant cedar trees
+
+     The top of North Phoenixrock is a grove of cedar, looking down at the ever-churning flow of lava in the volcano's cauldron.
+
+
+*** Floatlands
+    :LOGBOOK:
+    - Note taken on [2020-12-30 Wed 21:35] \\
+      And sunflowers!!
+    - Note taken on [2020-12-30 Wed 21:33] \\
+      Exploring these, built up a tower of dry dirt to get here. There's ponds and cedar trees! and a lake!
+    :END:
+
+    Around the cauldron of North Phoenixrock are several floating landmasses, referred to as the Floatlands. /(It's hoped the cedar trees might extend high enough to reach there without an artificial construction.)/
+    
+* Supplements
+** Record history
+   :PROPERTIES:
+   :CUSTOM_ID: record-history
+   :END:
+   :LOGBOOK:
+   - Note taken on [2020-12-30 Wed 21:05] \\
+      Created from [[file:~/org/s/p/neil_mather.org][file:~/org/s/p/20201222103314-neil_mather.org]]
+
+      
+   :END:

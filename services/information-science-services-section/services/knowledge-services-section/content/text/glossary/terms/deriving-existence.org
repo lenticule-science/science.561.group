@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       26ecba0b-05c8-460d-b118-1535e7fce692
+:END:
+#+title: Deriving Existence
+#+date: [2025-08-26 Tue 10:39]
+

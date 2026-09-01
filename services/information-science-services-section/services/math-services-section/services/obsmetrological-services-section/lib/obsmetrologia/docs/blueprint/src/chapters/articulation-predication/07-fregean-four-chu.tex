@@ -1,0 +1,30 @@
+\section{Fregean predication forces FOUR and presents a Chu space}
+
+\begin{proposition}[Independent predication evidence is FOUR]\label{thm:predication-independent-evidence-four}\lean{Obsmetrologia.independentEvidenceCharge_exhaustive}\leanok\uses{thm:predication, thm:four-bilattice, thm:valuation}
+An oriented subject--predicate--object claim has no intrinsic truth field.  Its
+standing is supplied by evidence for the claim and evidence against the claim.
+When those two observations are preserved independently, their carrier is
+$\mathrm{Bool}\times\mathrm{Bool}$.  The maps
+\texttt{independentEvidenceCharge} and
+\texttt{independentEvidenceCharge\_slots} are inverse to the charge-coordinate
+readout, so the four values are forced rather than chosen: neither, for only,
+against only, and both.
+\end{proposition}
+
+\begin{proposition}[The predication evaluation Chu space]\label{thm:predication-chu}\lean{Obsmetrologia.predicationChu}\leanok\uses{thm:predication-independent-evidence-four, thm:valuation}
+The canonical evaluation matrix has claims as points, valuations as states, and
+$r(\varphi,v)=v(\varphi)$ as its FOUR-valued entry.  This is a Chu space over
+FOUR.  Passing from the predication fiber to the Chu presentation neither
+changes the claim nor manufactures a new value.
+\end{proposition}
+
+\begin{theorem}[Fregean predication forces FOUR and Chu]\label{thm:fregean-predication-four-chu}\lean{Obsmetrologia.fregean_predication_forces_four_and_chu}\leanok\uses{thm:predication-independent-evidence-four, thm:predication-chu}
+For every independently observed positive/negative evidence pair, the
+coordinate-to-charge and charge-to-coordinate maps round-trip, and the
+predication evaluation Chu matrix reads that same charge at that same claim.
+This is the compact formal carrier of the Obsmetrologia result whose statement
+had become distributed through the predication, bilattice, fibration, and Chu
+developments.  Belnap FOUR, twist products, Fregean predication, and Chu spaces
+have separate prior histories; their forced composition in this theorem is the
+lab's result.
+\end{theorem}

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       ea85f582-e732-4e62-aef9-cfcaab6e5e6c
+:node-relations: (([[id:428c2f61-8c85-48b8-a191-1187c2a5f2ae][extends]] . [[id:28e9e947-4825-491e-9dde-066ae98f889e][living]]) ([[id:db4493a9-9e14-4a24-8647-f5f52e787be0][shortcut]] . [[id:f699d685-f17e-4060-a0ec-bdfc24fe52be][seriousness]]) ([[id:db4493a9-9e14-4a24-8647-f5f52e787be0][shortcut]] . [[id:9c91aeec-fb0b-4e1c-8259-c793b310f7ed][bravery]]))
+:END:
+#+title: living well
+

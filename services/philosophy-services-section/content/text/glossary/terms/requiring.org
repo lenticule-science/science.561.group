@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       d8f3567d-9390-4d8a-be7b-ff452479b63c
+:END:
+#+title: requiring
+#+date: [2025-08-25 Mon 10:17]
+

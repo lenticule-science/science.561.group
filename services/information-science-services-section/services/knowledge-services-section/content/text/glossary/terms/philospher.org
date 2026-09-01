@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       02f90700-7b36-450c-9b36-4ec013faa94b
+:END:
+#+title: philospher
+#+date: [2025-08-25 Mon 09:11]
+

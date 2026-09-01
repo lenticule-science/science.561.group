@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       4e737124-fc0d-45db-a3a7-5d175c14bb0c
+:END:
+#+title: Ersnt Chladni
+#+date: [2025-10-05 Sun 08:22]
+

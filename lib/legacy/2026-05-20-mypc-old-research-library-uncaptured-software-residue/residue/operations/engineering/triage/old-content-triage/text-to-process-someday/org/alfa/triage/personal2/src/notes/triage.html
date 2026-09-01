@@ -1,0 +1,1132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2019-06-03 Mon 22:24 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="emsenn" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org147ae7a">1. Notes</a>
+<ul>
+<li><a href="#org256ac7a">1.1. Notes on "Guix Reference Manual," Sections 1-3</a></li>
+<li><a href="#orgd0f4197">1.2. Notes on Setting Up Nginx on GuixSD</a></li>
+<li><a href="#org58638a8">1.3. Notes on Setting up Writefreely on a Guix System</a></li>
+<li><a href="#orgd7f7e64">1.4. Notes on Making a Writefreely Package for Guix</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org147ae7a" class="outline-2">
+<h2 id="org147ae7a"><span class="section-number-2">1</span> Notes</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org256ac7a" class="outline-3">
+<h3 id="org256ac7a"><span class="section-number-3">1.1</span> Notes on "Guix Reference Manual," Sections 1-3</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+I've just installed the <i>Guix System Distribution</i> on my desktop, and
+in an attempt to learn it fully I am going to read the manual and
+record notes here.
+</p>
+
+<p>
+The full text of the documentation is available at
+<a href="https://www.gnu.org/software/guix/manual/en/guix.html">https://www.gnu.org/software/guix/manual/en/guix.html</a>
+</p>
+
+<p>
+The manual says <i>GNU Guix</i> is a package management tool, letting
+unprivileged users manage packages. It can be installed on an existing
+GNU/Linux system, or as a standalone operating system, <i>Guix System</i>.
+That's what I'm doing.
+</p>
+
+<p>
+<i>Guix</i> implements the "'functional package management' discipline,"
+apparently pioneered by <i>Nix</i>, another Linux distribution.
+</p>
+
+<p>
+The package build/install process is a <i>fuction</i>. Its inputs are the
+build script, the compiler, dependent libraries, and it returns an
+installed package.
+</p>
+
+<p>
+Packages can only refer to packages and such that were passed as
+inputs, and can't modify a system outside of its build and
+installation directories.
+</p>
+
+<p>
+The results of package build functions is cached in "the Store," under
+a folder that has a hash of all the inputs, so it's appropriately
+unique. That's pretty clever! It's, by default, under <code>/gnu/store/</code>.
+</p>
+
+<p>
+So, on to the <i>Guix System</i>. It comes with some core packages&#x2026;
+</p>
+
+<p>
+You "declare all aspects of the operating system configuration and
+<i>Guix</i> takes care of instantiating the configuration in a
+transactional, reproducible, and stateless fashion."
+</p>
+
+<p>
+What&#x2026; does that mean? Is it like <i>Emacs</i>, where you write an
+initialization file and that gets loaded on startup? And then&#x2026; it
+checks the hash that the inputs of your build function calls against
+the packages that are there to see if things need to be installed?
+</p>
+
+<p>
+Maybe I'm wrong, but I think that might be it. So, I've installed a
+few packages since I started up the system&#x2026; I wonder where my system
+init is.
+</p>
+
+<p>
+(Also, isn't that how <i>Arch</i> used to work, back when? A series of
+startup scripts that you could just&#x2026; edit? I miss that; I had a very
+speedy netbook because of it.)
+</p>
+
+<p>
+The next section of the manual is for how to install <i>Guix</i> ontop of
+another Linux, so I'll skip it for now; hopefuly that's fine.
+</p>
+
+<p>
+The next section I already read before installing the system, because
+it's how to install the <i>Guix System</i>.
+</p>
+
+<p>
+Well&#x2026; I didn't read it, as such. I skimmed it. Let me read it
+thoroughly now.
+</p>
+
+<p>
+So, it starts off with some limitations - that's a good idea. I should
+start off my project installation guides with disclosing
+limitations/failures of the project. <i>Logical Volume Management</i> is
+missing, but I don't know what that is and so I don't think I'll miss
+it. KDE is also missing. That's fine, it's never been my preferred
+window manager. I'm using MATE right now; I made it all gray and blue
+to look like old-school Windows.
+</p>
+
+<p>
+It also warns me that wifi support is ify. My wifi chip does work, but
+I'm also wired into the router so that's irrelevant to me.
+</p>
+
+<p>
+Okay, blah blah, more installation instructions. Nothing that seems
+too important.*
+</p>
+</div>
+</div>
+<div id="outline-container-orgd0f4197" class="outline-3">
+<h3 id="orgd0f4197"><span class="section-number-3">1.2</span> Notes on Setting Up Nginx on GuixSD</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+I've just set up a fresh <i>Guix</i> install on my desktop and installed
+some of the packages I know I need - like emacs. I've previously read
+through first part of the <i>Guix Reference Manual</i>, see <a href="#org256ac7a">Notes on "Guix
+Reference Manual," Sections 1-3</a>.
+</p>
+
+<p>
+My first goal with this system is to get a federated communication
+platform set up - something like <i>Mastodon</i>, though probably not
+<i>Mastodon</i>. The first step to doing that is getting some services
+running - probably a web server of some sort, and probably also a
+database.
+</p>
+
+<p>
+I'm going to skip ahead now to Section 8.8.16, "Web Services,"
+&#x2026;which makes absolutely no sense to me. It's jumped straight into
+saying how to configure the services - which is something I can
+understand, I think, but I don't yet know where this configuration
+goes, or how to update it, or stuff like that.
+</p>
+
+<p>
+I remember from reading the first few sections that the configuration
+file is a Scheme file, and it's, I think, at <code>/etc/config.scm</code>. So
+I've opened that file in another view, and it definitely looks like a
+system configuration file - I mean, it starts with a comment saying
+"[t]his is an operating system configuration," I didn't deduce it.
+</p>
+
+<p>
+Anyway let's back up to the start of Section 8, and see if that
+doesn't give enough context.
+</p>
+
+<p>
+It does. It says that the <i>Guix System</i> - that's the name for "/Guix
+as your operating system, not just package manager" - supports a
+"whole-system" configuration, where "services, timezone&#x2026;, user
+accounts - are declared in a single place."
+</p>
+
+<p>
+So, <i>Guix</i> offers a <i>system configuration mechanism</i>. And that's what
+this section'll be about.
+</p>
+
+<p>
+It says you write a configuration, and then use the <code>guix system</code>
+command to instantiate it - make it take effect. Then it provides a
+demo configuration. It's in Scheme, I guess - I don't know any of the
+paranthes-heavy languages so they all look like Lisp to me.
+</p>
+
+<p>
+Comparing the example to what is at <code>/etc/config.scm</code>, they look
+pretty similar - my configuration has my username and partitioning,
+and MATE desktop stuff, but otherwise pretty- closely matches the
+default.
+</p>
+
+<p>
+The documetnation goes on to explain the "most important" fields in
+that file - fields here being "things that go inside the
+<code>(operating-system)</code> paranthesis. (Statement? Again, I don't know
+Scheme.)
+</p>
+
+<p>
+The first one it explains is the "Bootloader". My computer boots, so I'm
+not touching that one.
+</p>
+
+<p>
+The next section is "Globally Visible Packages". Before I get into
+this, I know this is going to be something I need to learn - there are
+packages I want my system to have, system-wide, not just for an
+individual user. (Maybe? I guess with how <i>Guix</i> does packaging,
+system-wide packages are less important?)
+</p>
+
+<p>
+Looking, I see that my configuration adds "nss-certs" to my list of
+<code>%base-packages</code>. I'll leave it alone for now - I think I understand
+how it works enough to add packages to it if I need to. Moving on.
+</p>
+
+<p>
+The next system is "System Services." Getting closer to setting up an
+HTTP server, it sounds like. System services, it says, are to be made
+available when the system starts. That might not be where the HTTP
+server goes&#x2026; though it gives OpenSSH as an example service here.
+</p>
+
+<p>
+Okay - looking, it seems like my configuration has "%desktop-services"
+while this says "%base-services"&#x2026; some of the time. Others it says
+desktop-services; maybe the two are synonyms or&#x2026; determine when in
+the startup they get called? Let me just search the <i>Manual</i> for
+<code>"desktop-services"</code>. I don't think this matters, but it might.
+</p>
+
+<p>
+Okay - the same way %base-services is a collection of basic services
+for a system, at all, desktop-services is for a GUI desktop system.
+</p>
+
+<p>
+Okay - I think&#x2026; I'm ready to try adding the <i>Nginx</i> service to my
+configuration? Back to Section 8.8.16, "Web Services."
+</p>
+
+<p>
+Okay so it says "The <code>(gnu services web)</code> moduel provides the Apache
+HTTP Server, the nginx web server, and also a fastcgi wrapper daemon.
+</p>
+
+<p>
+So I think that means I go to this line in my <code>config.scm</code>:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-scheme">(use-service-modules desktop networking ssh web xorg)
+</pre>
+</div>
+
+<p>
+And add <code>web</code> - the list seems to be in alphabetical order, so I'll
+stick with that.
+</p>
+
+<p>
+And now to near the end of the configuration - inside the
+<code>(operating-system)</code> declaration, there's the <code>(services)</code>
+declaration.
+</p>
+
+<p>
+Right now, it looks like this:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-scheme">(services
+  (append
+    (list (service mate-desktop-service-type)
+          (service openssh-service-type)
+          (set-xorg-configuration
+            (xorg-configuration
+              (keyboard-layout keyboard-layout))))
+    %desktop-services))
+</pre>
+</div>
+
+<p>
+According to the documentation, I can set up a basic nginx server by
+changing that to this:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-scheme">(services
+  (append
+    (list (service mate-desktop-service-type)
+          (service openssh-service-type)
+          (service nginx-service-type
+                   (nginx-configuration
+                    (server-blocks
+                     (list (nginx-server-configuration
+                            (server-name '(<span style="color: #8e8e8e;">"emsenn.net"</span>))
+                            (root <span style="color: #8e8e8e;">"/srv/http/emsenn.net"</span>))))))
+          (set-xorg-configuration
+            (xorg-configuration
+              (keyboard-layout keyboard-layout))))
+    %desktop-services))
+</pre>
+</div>
+
+<p>
+You can see I added that bit about the <code>nginx-service-type</code>. I'm being
+optimistic and hoping I can get my home website running on this
+machine stable before too long, so going ahead with setting it up.
+</p>
+
+<p>
+I&#x2026; don't understand, really, any of what I just added. Also, the
+scattered parantheses of Lisp-y languages still looks ridiculous to
+me. I get why it's clever, but gosh. If it were any other character I
+think I'd have less of a problem with it, but my grammar-nerd just
+rankles at that many nested clauses.
+</p>
+
+<p>
+I understand the <code>server-name</code> and <code>root</code> parts - I'm inferring
+<code>server-blocks</code> is what each&#x2026; oh I don't remember what the parts of
+an nginx configuration are called; I suppose it might be "blocks"
+there too. But like, each discrete&#x2026; not "server" because that's what
+nginx is. Set of server-names and file locations and security
+certificates and so on.
+</p>
+
+<p>
+So I guess&#x2026; let's see if <code>guix system reconfigure</code> works with that
+config file, eh?
+</p>
+
+<p>
+It did not:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-text">guix system: error: exception caught while executing 'start' on service 'nginx':
+Throw to key `srfi-34' with args `("#&lt;condition &amp;invoke-error [program: \"/gnu/store/byd116qs89b0am4zwjf4vjai7qlskvaw-nginx-1.17.0/sbin/nginx\" arguments: (\"-c\" \"/gnu/store/4d6mc3ja9q530w6ghp0ab8y0hp0lh121-nginx.conf\" \"-p\" \"/var/run/nginx\") exit-status: 1 term-signal: #f stop-signal: #f] 192f640&gt;")'.
+</pre>
+</div>
+
+<p>
+Parsing that out, I think <code>srfi-34</code> is the error code&#x2026; and the error
+is something to do with nginx not loading its config properly? I don't
+know more than that.
+</p>
+
+<p>
+I tried the lines in the <i>Reference Manual</i> for setting up an Apache
+server, pointing at the same place, and it worked just fine, so the
+issue might be something with <i>Nginx's</i> package. I just don't know
+enough to know!
+</p>
+
+<p>
+(Actually, looking at it more closely, it looks like the nginx config
+is in a different "store" than Nginx itself - and if I run the <code>nginx</code>
+command I get an error saying it can't find the log file/directory -
+same for the config file.)
+</p>
+
+
+<hr />
+
+<p>
+I went away to sleep for the night and came back and I think I can see
+what the problem is:
+</p>
+
+<p>
+When Nginx is installing itself, it outputs this during <code>guix system
+reconfigure</code>:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-text">creating nginx log directory '/var/log/nginx'
+creating nginx run directory '/var/run/nginx'
+creating nginx temp directories '/var/run/nginx/{client_body,proxy,fastcgi,uwsgi,scgi}_temp'
+nginx: [alert] could not open error log file: open() "/gnu/store/byd116qs89b0am4zwjf4vjai7qlskvaw-nginx-1.17.0/logs/error.log" failed (2: No such file or directory)
+</pre>
+</div>
+
+<p>
+So it looks like it's making the directores for <i>Nginx</i> under
+<code>/var/run/nginx/</code>, which is where the documentation under Section
+8.8.16 says it will be.
+</p>
+
+<p>
+However, it then looks like it's looking to write the log file under
+the GNU store directory&#x2026;
+</p>
+
+<p>
+Maybe that's not <i>the</i> problem though. The next line in the output log
+is:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-text">2019/06/03 00:17:50 [emerg] 10065#0: no "ssl_certificate" is defined for the "listen ... ssl" directive in /gnu/store/4d6mc3ja9q530w6ghp0ab8y0hp0lh121-nginx.conf:13
+nginx: configuration file /gnu/store/4d6mc3ja9q530w6ghp0ab8y0hp0lh121-nginx.conf test failed
+</pre>
+</div>
+
+<p>
+Maybe I need to say "don't use SSL?" I think I read about how to do
+that in the <i>Manual</i>&#x2026;
+</p>
+
+<p>
+&#x2026;I think how to do that is&#x2026; by adding these lines into the
+<code>nginx-server-configuration</code> list, that is inside the <code>server-blocks</code>
+declaration, that's inside <code>nginx-configuration</code>, that's inside
+<code>nginx-service-type</code>, that's inside the list of services to be
+appended to <code>%desktop-services</code>.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-scheme">(ssl-certificate #f)
+(ssl-certificate-key #f)
+</pre>
+</div>
+
+<p>
+Let's try that, by again running <code>guix system reconfigure config.scm</code>
+</p>
+
+<p>
+Nope - same exact error. Let me look at the file it's looking at -
+<code>/gnu/store/4d6...-nginx.conf</code>&#x2026; I see the server block declaration:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-text">server {
+  listen 80;
+  listen 443 ssl;
+  server_name emsenn.net ;
+  root /srv/http/emsenn.net;
+  index index.html ;
+  sever_tokens off;
+</pre>
+</div>
+
+<p>
+First off, it's weird how some of them have a space before the <code>;</code> and
+others don't. But also - I see: it has ssl on by default? Which seems
+silly since that needs a certificate; maybe it assumes you're setting
+it up all at once, not bit-by-bit? And I will want SSL set up - but
+for now, I want to know how to turn it off, even if the next step for
+me is going to be ssl certificates.
+</p>
+
+<p>
+Back to the <i>Reference Manual</i>.  Here we go - the
+<code>nginx-server-configuration</code> data type (aha! "data type" is the term
+here) has the parameter (aha! another term!) <code>listen</code>, which defaults
+to <code>'("80" "443 ssl")</code>
+</p>
+
+<p>
+I think that means I need to add the following line to the
+<code>nginx-server-configuration</code> data type:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-scheme">(listen '(<span style="color: #8e8e8e;">"80"</span>))
+</pre>
+</div>
+
+<p>
+Let's try this now, then!
+</p>
+
+<p>
+Oh! Oh!
+</p>
+
+<div class="org-src-container">
+<pre class="src src-text">shepherd: Service nginx has been started.
+</pre>
+</div>
+
+<p>
+That's progress, right there! Looking back up, I see there was no
+longer the SSL error with the service - there's still an error about
+logging, but the <i>Manual</i> explains how that's due to <i>Nginx's</i>
+bootstrapping process, so that's fine.
+</p>
+
+<p>
+Okay so&#x2026; now to bring up <code>https://localhost</code> in my browser. I've put
+a file that says <code>&lt;html&gt;&lt;body&gt;Hi!&lt;/body&gt;&lt;/html&gt;</code> at
+<code>/srv/http/emsenn.net/index.html</code>, so I expect to see that when I go
+there.
+</p>
+
+<p>
+And I do!
+</p>
+
+<p>
+Wonderful. I'm going to wrap up this note here - I have a functional
+<i>Nginx</i> server on my desktop. Next step will be setting up my
+registrar to point to this new server, and then after that, setting up
+those security certificates I danced around this time.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org58638a8" class="outline-3">
+<h3 id="org58638a8"><span class="section-number-3">1.3</span> Notes on Setting up Writefreely on a Guix System</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+Before lunch I successfully got <i>Nginx</i> to run on my desktop computer,
+which is running the <i>GuixSD</i> operating system. See <a href="#orgd0f4197">Notes on Setting
+Up Nginx on GuixSD</a>.
+</p>
+
+<p>
+My goal is still getting a federated communication platform up, though
+the more I give consideration to it, the more I think this might be
+the opportunity and excuse I need to stop microblogging: maybe email
+should be my federated communication platform of choice. Or,
+letter-writing, which I think is probably still best implemented
+through email.
+</p>
+
+<p>
+That said, I would like to host my documents through a <i>WriteFreely</i>
+instance, so I can be followed via <i>ActivityPub</i>, so I'm going to get on
+with that, rather than shift gears from <i>Nginx</i> to email.
+</p>
+
+<p>
+So&#x2026; I hate to say it but, I want to do this right, and I think that
+means creating a <i>Guix</i> package for Writefreely.
+</p>
+
+<p>
+Dang. Back to the <i>Guix Reference Manual</i>, this time Section 14:
+"Contributing," since it has a subsection on packaging.
+</p>
+
+<p>
+This section starts with some instructions for setting up the "Perfect
+Setup," which looks like it'd be really useful&#x2026; if I knew more about
+Emacs and such.
+</p>
+
+<p>
+So I'm going to skip to 14.4, "Packaging Guidelines."
+</p>
+
+<p>
+And&#x2026; realize I'm way in over my head. Happenstance, I've just
+received a message from <a href="https://framapiaf.org/@roptat">@roptat@framapiaf.org</a> about my progress with
+learning <i>Guix</i>, so I'm going to ask them if making a package is the
+right way to go, before I sink my teeth into this. They've answered:
+</p>
+
+<blockquote>
+<p>
+I don't know this software, so I can't be sure. I think you will need
+to create a package for it first, and then a service. They are two
+separate things. The service-type simply uses the package defined in
+guix.
+</p>
+
+<p>
+For writting your first package, I suggest reading
+<a href="https://www.gnu.org/software/guix/blog/2018/a-packaging-tutorial-for-guix/">https://www.gnu.org/software/guix/blog/2018/a-packaging-tutorial-for-guix/</a>
+</p>
+
+<p>
+Then you'll probably have to look at actual package definitions for go
+packages that are a bit different from gnu packages. See
+go-build-system in the manual
+</p>
+</blockquote>
+
+<p>
+I asked them to explain what they meant by "[t]he service-type simply
+uses the package defined in <i>[G]uix</i>," and they said:
+</p>
+
+<blockquote>
+<p>
+A service-type like <code>nginx-service-type</code> is a declaration. When the
+manual says it's from <code>(gnu services web)</code> it actually means it's a
+scheme variable that was created in a file called
+<code>gnu/services/web.scm</code>, in the Guix repo. It's much more messy than a
+package definition though… So you'll have to create the package first,
+then your service definition will make use of it.
+</p>
+</blockquote>
+
+<p>
+I didn't really understand that answer, completely, but what I did
+understand is: Yes, writing a package definition is the right place to
+start.
+</p>
+
+<p>
+Before I do that though, I'm going to just try and run it plainly -
+download the latest binary, config, and run, following the
+instructions here: <a href="https://writefreely.org/start">https://writefreely.org/start</a>
+</p>
+
+<p>
+Which&#x2026; when I try to run the binary inside that, gets me <code>bash:
+./writefreely: No such file or directory</code>. The file is executable, so
+this - in the past - has meant it's for 32bit and I'm on 64bit, or
+vice-versa.
+</p>
+
+<p>
+Running <code>uname -a</code> I see I'm on <code>x86_64</code>, and the binary is for
+<code>amd64</code>. I think those are different platforms, so I guess it's time
+to build the package! I was going to do that as the next step even if
+the binary worked.
+</p>
+
+<p>
+Writefreely's documentation on this is a bit terse:
+<a href="https://writefreely.org/docs/latest/developer/setup.md">https://writefreely.org/docs/latest/developer/setup.md</a>
+</p>
+
+<p>
+I need Go 1.10 or higher, and Node.js
+</p>
+
+<p>
+Let's&#x2026; this sounds like a good opportunity to learn how to do an
+environment with <i>Guix</i>.
+</p>
+
+<p>
+But, so I don't get confused later, I'm going to write down the
+process ahead - I'll probably have to take a break soon, and don't
+want to lose my stride:
+</p>
+
+<ul class="org-ul">
+<li>First, I want to build and run WriteFreely, however I can get it to
+work, so I can learn how to do that.
+<ul class="org-ul">
+<li>Learn how to make a Guix environment for tinkering in</li>
+<li>Learn how to build Writefreely</li>
+<li>Learn how to configure and run it.</li>
+</ul></li>
+<li>Then, I want to write a package definition for it.</li>
+<li>Then, I want to define a service for it.</li>
+<li>Then, I want to&#x2026; run it! I'll be running my own writefreely
+instance! That's cool!</li>
+</ul>
+
+<p>
+Okay so uh&#x2026; I <i>think</i> I can just do&#x2026; <code>guix environment</code> to make a
+little spot to muck around it.
+</p>
+
+<p>
+And then <code>guix install go</code> and <code>guix install node</code> to install those
+two packages&#x2026;
+</p>
+
+<p>
+Hmm well even if I exit that environment I still have go installed so
+clearly I did that wrong. But I don't think it really matters.
+</p>
+
+<p>
+Writefreely's docs tell me to run this command:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh">go get -d github.com/writeas/writefreely/cmd/writefreely
+</pre>
+</div>
+
+<p>
+Which holy crap fetches a lot of dependencies. Modern software is
+crazy complex stacks, huh?
+</p>
+
+<p>
+But then&#x2026; I'm in an empty folder? But now my home directory has a
+<code>go/</code> folder, which has <code>pkg/</code> and <code>src/</code> subdirectories.
+</p>
+
+<p>
+Searching online got me to this:
+<a href="https://fedi.dev/gytis/build-writefreely-from-source">https://fedi.dev/gytis/build-writefreely-from-source</a>
+</p>
+
+<p>
+Which tells me to go to <code>~/src/github.com/writeas/writefreely/</code> and <code>make
+build</code>.
+</p>
+
+<p>
+One problem: I don't have <code>make</code> installed as a command. I recall
+reading that the <code>gnu-build-system</code> provided such tools, which would
+probably inform how I accomplish the Writefreely package. But for now?
+Hmm. I mean, let's try <code>guix install make</code>. It's a package, will it be
+the right one?
+</p>
+
+<p>
+Seems to be. I needed to also do <code>GOPATH=~/go</code> and <code>export
+PATH="$PATH:$GOPATH/bin"</code>
+</p>
+
+<p>
+<code>make build</code> gets me an error - apparently I don't have <code>as</code>, whatever
+that is. Poking around online hints me toward installing the
+<code>gcc-toolchain</code> package - I got to this issue whose t
+itle mimics my
+error, and then searched the <i>Guix Reference Manual</i> for "gcc":
+<a href="https://github.com/tensorflow/tensorflow/issues/4984">https://github.com/tensorflow/tensorflow/issues/4984</a>
+I get a new error now:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-text">In file included from /gnu/store/h90vnqw0nwd0hhm1l5dgxsdrigddfmq4-glibc-2.28/include/errno.h:28:0,
+                 from cgo-gcc-prolog:29:
+/gnu/store/h90vnqw0nwd0hhm1l5dgxsdrigddfmq4-glibc-2.28/include/bits/errno.h:26:26: fatal error: linux/errno.h: No such file or directory
+</pre>
+</div>
+
+<p>
+Well. Sounds like maybe installing <code>glibc</code> was the wrong package?
+</p>
+
+<p>
+But I'm at a loss as to&#x2026; what package would be the right one. I
+don't understand enough of the various compilation toolkits to be
+doing more than taking guesses.
+</p>
+
+<p>
+So, let's paste error messages into search engines and see what comes
+up. This thread:
+<a href="https://lists.gnu.org/archive/html/bug-guix/2013-02/msg00024.html">https://lists.gnu.org/archive/html/bug-guix/2013-02/msg00024.html</a>
+</p>
+
+<p>
+It says to install <code>linux-libre-headers</code>. Which tells me to remove
+<code>glibc</code>. I do, and then install <code>linux-libre-headers</code> without issue.
+</p>
+
+<p>
+Let's try <code>make build</code> again? Damn! Same error: <code>linux/errno.h: No
+such file or directory</code>. That thread was the only result for <code>"guix"
+"linux/errno.h: No such file or directory"</code> so now I'm truly at a
+loss.
+</p>
+
+<p>
+Well, it does sill look like it's looking in the store for glibc. Is
+that perhaps the problem? Let me try garbage collecting, can't hurt.
+Didn't help, though.
+</p>
+
+<p>
+Omg. I'm an idiot. A skim-reading, half-illiterate idiot. So I
+uninstalled linux-libre-headers and reinstalled glibc and at the end,
+it says this:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-text">export CPATH="/home/emsenn/.guix-profile/include${CPATH:+:}$CPATH"
+export LIBRARY_PATH="/home/emsenn/.guix-profile/lib${LIBRARY_PATH:+:}$LIBRARY_PATH"
+</pre>
+</div>
+
+<p>
+So I did that and then did <code>make build</code> and, it worked.
+</p>
+
+<p>
+I'm learning: read slower. It's been a big help so far in doing all
+this, but gosh. It's hard - there's so much I can't understand, it's
+hard to read every line.
+</p>
+
+<p>
+Okay. Well, a lesson to anyone who reads this: I said I was at a loss
+and kept plugging at it, and got it to work.
+</p>
+
+<p>
+Moving on!
+</p>
+
+<p>
+I'm using this still:
+<a href="https://fedi.dev/gytis/build-writefreely-from-source">https://fedi.dev/gytis/build-writefreely-from-source</a>
+</p>
+
+<p>
+It says to run this command: <code>./cmd/writefreely/writefreely --config</code>
+</p>
+
+<p>
+That works, takes me through the configuration process. Now, <code>make
+run</code> should get me an instance running at the configured address -
+<code>http://localhost:8080</code> for now.
+</p>
+
+<p>
+It works! There's no stylesheet - whoops, I missed a step- <code>make ui</code>.
+</p>
+
+<p>
+Which, of course, errors. I'm going to read this error. Slowly.
+</p>
+
+<p>
+So I input <code>make ui</code>, and it tells me it's entering the directory
+<code>./less/</code>. It then says shows me the output of the <code>which</code> command,
+telling me there's no <code>lessc</code> found. That message repeats several
+times.
+</p>
+
+<p>
+Then it says something I can't interpret so well:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-text">node_modules/.bin/lessc app.less --clean-css="--s1 --advanced" ../static/css/write.css
+/gnu/store/q19l04vd2za80mk1845pz7r8cz29qk43-bash-minimal-4.4.23/bin/sh: node_modules/.bin/lessc: No such file or directory
+</pre>
+</div>
+
+<p>
+I install <code>node</code>, then do <code>cd less &amp;&amp; npm install less
+less-plugin-clean-css</code>.
+</p>
+
+<p>
+I cd back into the writefreely directory and then do <code>make ui</code>. It
+fails - <code>lessc</code> complains it can't find <code>env</code>. I do <code>which env</code> to see
+where it is, then edit <code>lessc</code> to match.
+</p>
+
+<p>
+I <code>make ui</code> again, and no errors. I <code>make run</code> and go back to
+<code>http://localhost:8080</code> and&#x2026; it's there and has CSS. Wonderful.
+</p>
+
+<p>
+This is what my goal product is.
+</p>
+
+<p>
+Except&#x2026; it's complaining that it can't store cookies. Whoops - I
+missed a step, between all the hopping between manuals - runnign
+<code>writefreely --gen-keys</code> from within the <code>./writefreely</code> source
+directory.
+</p>
+
+<p>
+So. Cool! I have a functional writefreely instance.
+</p>
+
+<p>
+Now I have to learn how to do that again, but&#x2026; as a package.
+</p>
+</div>
+</div>
+<div id="outline-container-orgd7f7e64" class="outline-3">
+<h3 id="orgd7f7e64"><span class="section-number-3">1.4</span> Notes on Making a Writefreely Package for Guix</h3>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: emsenn</p>
+<p class="date">Created: 2019-06-03 Mon 22:24</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

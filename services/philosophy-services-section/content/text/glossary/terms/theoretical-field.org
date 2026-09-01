@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       5ebdfdd9-f054-4cf5-b6b0-048451ec6fd3
+:END:
+#+title: theoretical field
+#+date: [2025-10-04 Sat 21:43]
+

@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       a0750c9e-6f5c-42d2-9f41-77bdbb044f5a
+:form:     [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]
+:public:   true
+:END:
+#+title: Babble, 2025-08-07 0819h
+#+date: [2025-08-07 Thu 08:19]
+#+author: emsenn
+
+This is a test babble.

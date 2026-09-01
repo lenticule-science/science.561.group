@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       1a626c10-4c4e-4212-8059-cc165e1649a8
+:END:
+#+title: diagnostician
+#+date: [2025-10-15 Wed 22:47]
+

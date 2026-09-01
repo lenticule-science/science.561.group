@@ -1,0 +1,29 @@
+:PROPERTIES:
+:ID:       80ecba92-ca84-4b32-99ae-44d446b24350
+:form:     [[id:ed3a99f2-07af-4424-8cfa-4d1ce69d1b0e][code]]
+:END:
+#+title: text
+#+date: 2025-07-19
+#+author: emsenn
+
+A */text/* is the result of [[id:54213c5a-a48a-4976-acff-cc89ebf673c0][writing]] that is [[id:b188bed1-02e9-47f4-a289-713c8a3dfc35][bound]] and [[id:52b1e59b-ad33-4180-a199-0c5448453ead][structurated]].
+
+* Encodings of Text
+** Org-roam Capture Template for Text
+
+#+name: text-org-roam-capture-template
+#+begin_src elisp :tangle ./src/gpe/org-roam-capture-templates/t.el
+  ("t" "text")
+#+end_src
+
+#+name: plain-text-org-roam-capture-template
+#+begin_src elisp :tangle ./src/gpe/org-roam-capture-templates/tp.el
+  ("tp" "plain text" plain "%?"
+   :target (file+head "text-%<%Y%m%d%H%M%S%z>.org"
+  		    (concat 
+  		    "#+title: Text, %<Y-%m%-d %H%Mh>\n"
+  		    "#+date: %U\n"
+  		    "#+author: emsenn\n\n"))
+   :form "[[id:80ecba92-ca84-4b32-99ae-44d446b24350][text]]"
+   :unnarrowed t)
+#+end_src

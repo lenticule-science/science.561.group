@@ -1,0 +1,15 @@
+#+title: LISP
+#+ghe_schema: record-0.1.1
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-21 Mon 21:34]
+#+roam_tags: term
+
+#+name: definition
+*/[[file:lisp.org][LISP]]/* is a family of [[file:programming_languages.org][programming languages]] that share a [[file:prefix_notation.org][prefix notation]], tail-calls, and a heavy use of [[file:lists.org][lists]].
+
+* LISP
+** Comparisons to other programming languages
+*** General
+- Jan Meww: [[https://www.quora.com/Why-is-Lisp-not-as-popular-as-Python/answer/Jan-Meww]["LISP is misunderstood"]]
+- Stepan Parunashvili: "[[https://stopa.io/post/265][An Intuition for Lisp Syntax]]"

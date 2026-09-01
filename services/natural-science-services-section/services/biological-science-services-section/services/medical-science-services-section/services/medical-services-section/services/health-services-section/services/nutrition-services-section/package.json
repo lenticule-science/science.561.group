@@ -1,0 +1,8 @@
+{
+  "name": "@lenticule-science/nutrition-services-section",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Shared nutrition science, food-composition provenance, evidence, and exchange contracts.",
+  "scripts": { "test": "node --test test/*.test.mjs" },
+  "devDependencies": { "@red-cup-engineering/json-schema-services-section": "0.1.9" }
+}

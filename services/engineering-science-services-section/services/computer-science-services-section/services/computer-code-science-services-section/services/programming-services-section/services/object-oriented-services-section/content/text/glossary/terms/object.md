@@ -1,0 +1,9 @@
+---
+name: "object"
+aliases:
+  - "object"
+date-created: 2026-01-01
+tags: []
+---
+
+An object is an instance of a [class](./class.md): a runtime entity that holds specific values for the attributes defined by its class and can execute the methods that class defines. Objects encapsulate state and behavior together, communicating with other objects through method calls (message passing). The identity of an object is distinct from its state -- two objects can have identical attribute values but remain different entities.

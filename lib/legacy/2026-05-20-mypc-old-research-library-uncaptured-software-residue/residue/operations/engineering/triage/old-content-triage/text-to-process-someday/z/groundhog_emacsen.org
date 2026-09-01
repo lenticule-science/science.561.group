@@ -1,0 +1,5 @@
+#+title: Groundhog Emacsen
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-18 Fri 10:28]
+A */Groundhog Emacsen/* is a [[file:groundhog_person.org][Groundhog person]]'s individual [[file:groundhog_emacs.org][Groundhog Emacs]] client. See [[file:emacsen.org][Emacsen]].

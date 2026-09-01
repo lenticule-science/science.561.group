@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       b7d64e1d-3912-48d9-a8cf-b4ead98a00bb
+:public:   true
+:form:     [[id:0996461e-b92f-4361-8c19-e7f3232d8f67][court]]
+:END:
+#+title: Supreme Court
+#+date: [2025-09-01 Mon 10:38]
+#+index: United States!Supreme Court
+
+A */Supreme Court/* is the [[id:e53e39e3-269e-4bff-8425-d7f4d16e8b55][highest court]] of a [[id:bb2b82be-1cf2-473f-9e65-256a027f0e6d][state of the United States]] or the [[id:0f55630d-f00f-4101-bbe5-95140331247e][United States of America]] itself.

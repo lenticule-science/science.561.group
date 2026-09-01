@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       752fe42b-b765-43f0-9556-82c4140670c4
+:public:   true
+:resource-description: (([[id:edaef069-c68d-46aa-a970-d3cb7fe3165c][resource type]] . [[id:e2e23979-c001-4308-b04c-de03ac461168][region]]) ([[id:2d79d4ba-8d36-4714-869c-081e8d40d24f][field]] . [[id:b82a8ebf-816d-49e1-be38-8fde4b32c1dd][biology]]))
+:END:
+#+title: bioregion
+#+date: [2025-10-04 Sat 18:50]
+#+index: biology!bioregion
+

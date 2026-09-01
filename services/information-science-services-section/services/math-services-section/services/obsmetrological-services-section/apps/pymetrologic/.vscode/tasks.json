@@ -1,0 +1,66 @@
+{
+  "version": "2.0.0",
+  // Every task is a thin wrapper over a Makefile target, so the terminal, the
+  // command palette, and CI all actuate the lab the same way.
+  "tasks": [
+    {
+      "label": "lab: sync",
+      "type": "shell",
+      "command": "make sync",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "lab: test",
+      "type": "shell",
+      "command": "make test",
+      "group": { "kind": "test", "isDefault": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "lab: test (failed first)",
+      "type": "shell",
+      "command": "make test-failed",
+      "group": "test",
+      "problemMatcher": []
+    },
+    {
+      "label": "lab: lint",
+      "type": "shell",
+      "command": "make lint",
+      "problemMatcher": []
+    },
+    {
+      "label": "lab: format",
+      "type": "shell",
+      "command": "make fmt",
+      "problemMatcher": []
+    },
+    {
+      "label": "lab: types",
+      "type": "shell",
+      "command": "make types",
+      "problemMatcher": []
+    },
+    {
+      "label": "lab: check (full gate)",
+      "type": "shell",
+      "command": "make check",
+      "group": { "kind": "build", "isDefault": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "lab: serve through ICK",
+      "type": "shell",
+      "command": "make lab",
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "lab: probe ICK Jupyter",
+      "type": "shell",
+      "command": "make lab-probe",
+      "problemMatcher": []
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{"e":"pre-bilattice","a":"describing","v":"An algebra ⟨B, ∧_t, ∨_t, ∧_k, ∨_k⟩ on a carrier B in which ⟨B, ∧_t, ∨_t⟩ and ⟨B, ∧_k, ∨_k⟩ are both lattices. Adding a unary negation antitone in the truth order and monotone in the knowledge order yields a bilattice.","t":"2026-05-19T21:48:19Z"}
+{"e":"pre-bilattice","a":"meeting-in-the-truth-order","v":"pre-bilattice","t":"2026-05-19T21:48:19Z"}
+{"e":"pre-bilattice","a":"joining-in-the-truth-order","v":"pre-bilattice","t":"2026-05-19T21:48:19Z"}
+{"e":"pre-bilattice","a":"meeting-in-the-knowledge-order","v":"pre-bilattice","t":"2026-05-19T21:48:19Z"}
+{"e":"pre-bilattice","a":"joining-in-the-knowledge-order","v":"pre-bilattice","t":"2026-05-19T21:48:19Z"}
+{"e":"pre-bilattice","a":"extended-by-adding-negation","v":"bilattice","t":"2026-05-19T21:48:19Z"}

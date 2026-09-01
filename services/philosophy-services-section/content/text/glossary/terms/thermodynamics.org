@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       977a4584-e008-49ea-93d3-4d63f9373a1d
+:END:
+#+title: thermodynamics
+#+date: [2025-10-16 Thu 11:18]
+

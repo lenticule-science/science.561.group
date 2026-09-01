@@ -1,0 +1,8 @@
+#+TITLE: Concepts Index
+
+This is a list of all the entries in this /records catalog/ that have been manually [[file:term_index.org][indexed]]. There's also an [[file:records_index.org][alphabetical listing of all records]].
+
+#+toc: headlines 1
+
+#+INCLUDE: "theindex.inc"
+

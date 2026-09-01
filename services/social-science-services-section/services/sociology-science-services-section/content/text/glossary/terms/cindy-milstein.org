@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       cee1cfab-60ef-421d-aabe-3fadda490b6e
+:structure: [[id:6882cc6d-049d-4c68-866a-67bc57fce725][Homo sapiens]]
+:identities: [[id:e8accf6f-9ad9-4ec1-9f07-406d60311b54][anarchist]], [[id:e0b22173-4455-486a-92d3-2ab49f56c7c8][Jewish]]
+:public:   true
+:END:
+#+title: Cindy Milstein
+#+date: [2025-09-26 Fri 22:06]
+#+index: Cindy Milstein

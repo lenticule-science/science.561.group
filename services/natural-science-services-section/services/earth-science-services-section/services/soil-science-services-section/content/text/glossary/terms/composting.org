@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       c228af75-7054-44be-95ea-b3ca049128de
+:node-relations: (([[id:bee496e1-139b-4a7f-8a24-d4c14e6084c6][instantiates]] . [[id:4a53867b-afa3-437b-b979-385597e0e616][process]]) ([[id:2d79d4ba-8d36-4714-869c-081e8d40d24f][field]] . [[id:e213a06a-bb96-46bc-af0f-1b5ec455b2ab][soil science]]))
+:END:
+#+title: composting
+#+date: [2025-09-23 Tue 20:32]
+
+*Composting* is the managed biological decomposition of organic material into
+a stable, soil-like amendment rich in organic matter and plant nutrients.
+
+* Consolidated triage representation
+:PROPERTIES:
+:SOURCE_PATH: lib/emsenn/services/561-group/services/public-services-section/services/personal-services-section/emsenn-services-section/content/text/triage/composting.org
+:SOURCE_SHA256: 12f12dd2505226062f4a958d5a61d3ede14dfa0717cd326028aa9f5131e97ab7
+:END:
+
+#+begin_example
+:PROPERTIES:
+:ID:       c228af75-7054-44be-95ea-b3ca049128de
+:node-relations: (([[id:bee496e1-139b-4a7f-8a24-d4c14e6084c6][instantiates]] . [[id:4a53867b-afa3-437b-b979-385597e0e616][process]]) ([[id:2d79d4ba-8d36-4714-869c-081e8d40d24f][field]] . [[id:e213a06a-bb96-46bc-af0f-1b5ec455b2ab][soil science]]))
+:END:
+#+title: composting
+#+date: [2025-09-23 Tue 20:32]
+
+#+end_example

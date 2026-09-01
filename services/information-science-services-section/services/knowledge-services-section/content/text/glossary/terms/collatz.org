@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       bd339ea9-5277-4a99-bdb9-5ba71f928ee3
+:END:
+#+title: Collatz
+#+date: [2025-10-17 Fri 12:15]
+

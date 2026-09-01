@@ -1,0 +1,12 @@
+#+title: Erin Horáková
+#+begin_head
+#+ghe_schema: reference-0.1.1
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-22 Tue 16:49]
+#+roam_tags: term
+#+end_head
+#+name: erin-horáková-definition-text
+#+begin_quote
+*/Erin Horáková/* is a writer, who I know from their writing about [[file:science_fiction_culture.org][science-fiction culture]].
+#+end_quote

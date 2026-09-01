@@ -1,0 +1,8 @@
+#+title: Poet
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-19 Sat 18:28]
+#+roam_tags: term
+*/Poet/* is an [[file:emacs_theme.org][Emacs theme]] heavily focused on using the editor to [[file:writing.org][write]] [[file:prose.org][prose]].
+#+name: poet-definition
+

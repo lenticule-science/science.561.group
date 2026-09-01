@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       bf47064a-4b7f-47e5-abb4-f6bca70801b3
+:END:
+#+title: resolution
+#+date: [2025-08-29 Fri 17:05]
+

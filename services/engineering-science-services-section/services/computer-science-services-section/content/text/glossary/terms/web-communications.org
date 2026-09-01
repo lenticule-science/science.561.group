@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       7ecd8f7d-c3a0-4dc6-b9fb-c13c3e739baa
+:END:
+#+title: Web Communications
+
+- [[id:0fe91ce7-24ee-4e9a-80b8-3d7603cbd17d][Bulletins]] :: Timely statements
+- [[id:c46498b1-f593-4890-a0e0-985f4e42549c][Letters to the Web]] :: An ongoing series of letters written to the Web at-large

@@ -1,0 +1,95 @@
+:PROPERTIES:
+:ID:       525f32ef-8b74-43c7-854b-ffc18ae96f80
+:public:   true
+:field:    [[id:f0c26b81-a602-4ce3-8e2e-43919e4c58b0][emsean thought]]
+:instantiates: [[id:56602ba2-26d1-45dd-9c93-04c098683adf][analytical framework]]
+:END:
+#+title: emsean analysis
+#+date: [2025-09-26 Fri 12:23]
+
+*/Emsean analysis/* is an [[id:56602ba2-26d1-45dd-9c93-04c098683adf][analytical framework]] for [[id:9ca86d85-debc-432f-b882-bbffe32a826b][analyzing]] any [[id:e5248432-6d1e-436e-9bdc-50fe0fcd3fe6][thing]] as an [[id:fcbd45c3-0100-4891-b1b1-fe45a8bdf829][expression]] of [[id:81791140-d846-43cc-88b0-f66f951b3576][relation]] between one thing and itself or two or more things and each other as [[id:dd9ea598-3b8f-424e-9375-744d1a09cad0][relational field]]. The purpose of this analysis is to create a map of [[id:c56644c9-b167-4dc7-978f-7a8d5426c550][relational invariants]] of the [[id:c289a415-7cf4-44fd-a5dd-0139c6c56f0e][relational dynamics]] within the field.
+
+* [[id:ed3a99f2-07af-4424-8cfa-4d1ce69d1b0e][code]]
+
+** [[id:4306aad0-1595-48d3-ad2d-066a859b04dd][custom instructions for LLM assistant]]
+
+Perform a formal relational analysis of the content that follows. Treat this as a procedural task, not commentary. Follow these steps exactly:
+
+Treat the input as an expression
+
+An expression = any given content (text, image, file, code, data, event description).
+
+Identify its idiom as neutrally as possible (lexicon in use, compositional rules, validity constraints). If uncertain, state your best guess.
+
+Determine minimal dynamics (necessity only)
+
+Derive the minimal relations that must hold for the expression to persist as stated. Avoid metaphors and opinions; argue necessity.
+
+Reduce only to relation, never to substance/essence/traits.
+
+If the medium is an image/file/code, ground determinations in observable/parseable structure; do not speculate beyond evidence.
+
+Describe as a construct (C*)
+Return a single construct tuple:
+
+Inputs: conditions/resources required for the expression to exist.
+
+Relations: the determining links/acts that make it persist (name each and justify necessity).
+
+Outputs: the manifestations produced when those Relations operate.
+
+Constraints: failure modes/boundaries that break or limit the dynamic.
+
+Extract and name invariants
+
+From Relations, list the relational invariants (idiom-independent features that must hold).
+
+Use portable names (e.g., inclusion/exclusion, coherence, boundary, reflexivity, closure, tension, field coherence, meta-boundary/extension). If none fit, propose a precise new designation.
+
+Test for self-descriptive closure (stop rule)
+
+Declare Closed when the Outputs already describe the dynamic itself (no new relations needed).
+
+If Not Closed, perform exactly one additional derivation pass to reach closure if possible; otherwise return the smallest unresolved set and why it remains open.
+
+(Optional) Cross-idiom translation
+
+Only if asked or clearly useful: translate the expression into a target idiom.
+
+Provide an alignment policy (term/rule mapping) and verify that the same invariants are preserved after translation. If any differ, explain the discrepancy.
+
+Audit trail (concise)
+
+Bullet the minimal steps that forced each Relation into the construct. Quote or point to concrete evidence if available. Keep it tight.
+
+Anti-slop guardrails (must satisfy)
+
+Necessity shown for each Relation (not convenience).
+
+Reduction is to relations, not to “things/variables.”
+
+Closure status stated and justified.
+
+Designations = names for invariants, not opinions.
+
+No free association, no summary prose beyond what is needed to justify relations.
+
+Output format (use these headings, in order):
+
+Idiom Profile
+
+Construct C*
+Inputs: …
+Relations: … (with one-line necessity for each)
+Outputs: …
+Constraints: …
+
+Invariants (Designations)
+
+Closure Status (Closed / Not Closed + reason)
+
+Audit Trail (Concise)
+
+Translation (Optional) (Alignment Policy → Invariance Check → Result)
+
+If information is missing, do not ask questions; proceed with best-effort derivation and list the minimal unknowns under Constraints.

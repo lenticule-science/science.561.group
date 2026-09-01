@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       0d742432-8630-4ac5-8c2e-f601717c14fc
+:END:
+#+title: strongman
+#+date: [2025-08-31 Sun 08:25]
+

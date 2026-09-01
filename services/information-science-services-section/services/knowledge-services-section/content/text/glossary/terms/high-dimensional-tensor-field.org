@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       abf3be17-0c35-4ed1-96e4-2ac33bcfd71e
+:END:
+#+title: high-dimensional tensor field
+#+date: [2025-10-16 Thu 16:43]
+

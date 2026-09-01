@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mark/content/token",
+  "title": "token",
+  "description": "A mark carried on the left hand - the first side of an utterance. One of the two kinds of mark.",
+  "type": "object",
+  "required": [
+    "hand",
+    "mark"
+  ],
+  "properties": {
+    "hand": {
+      "const": "left",
+      "description": "the token side of the utterance pair"
+    },
+    "mark": {
+      "$ref": "mark",
+      "description": "the mark this token carries"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       1b8fe5e2-64e4-4cef-9aad-773d52caa06f
+:public:   true
+:instantiates: [[id:d150eaba-d55f-401c-8487-6f2f84d16ace][year]]
+:field:    [[id:e39947c4-1bd9-44d0-bfb5-3e2bef417065][Earth]]
+:year-before: [[id:db24c5d1-9882-4431-926d-07e491d0162e][1998ce]]
+:year-after: [[id:3b54e7b2-430e-4f1f-841b-7fd672e7d1d8][2000ce]]
+:END:
+#+title: 1999ce
+#+date: [2025-09-28 Sun 20:50]
+

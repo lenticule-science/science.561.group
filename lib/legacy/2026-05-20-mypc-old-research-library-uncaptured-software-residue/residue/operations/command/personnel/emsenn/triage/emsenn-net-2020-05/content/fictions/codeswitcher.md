@@ -1,0 +1,31 @@
++++
+title = "Codeswitcher"
+author = ["emsenn"]
+draft = true
++++
+
+## Introduction {#introduction}
+
+An in-progress fiction.
+
+
+## Codeswitcher {#codeswitcher}
+
+_Instead of writing this, I should have read Tolstoy._
+
+**_A neomodernist stone soup_**
+
+
+### An Account of My Flight from the North {#an-account-of-my-flight-from-the-north}
+
+Law motivated a forfeit of my identity on the banks of the Anacostia, but they could not force from me personality. So it was the next month, while I received sanctuary of the Rainbow Family in the pine gloaming of Pensicola, I did cause three conflicts with the community which they used to justify terminating my sanctuary.
+
+The first, my maintenance of a barter economy and radio broadcast. The second, my assistance in the suppression of a wildfire. The third, my protection of a child.
+
+My maintenance of a barter economy was forbidden by the Rainbow Family as all things must be free, and my broadcast of radio news was forbidden as members of the community were required to "be here now." It was known that elders sought necessities from my economy and were given credit. It was known that credit was respected by community kitchens and medics. It was known that my broadcast of a storm warning protected several infirm from harsh nights in the forest. However, my barter and radio were used as evidence to terminate my sanctuary.
+
+One night while exploring the gloaming with Alice I sighted a fire. Expecting a bon, I approached to discover three inebriated individuals who'd set fire to a fallen and charred pine log. I physically stopped them from setting new fires, and used their blankets to suppress the blaze, which was already spreading through the undergrowth. Though the fire was growing to the size noticable by many camps, and though I sustained injuries in suppressing it myself, and though my efforts enabled us to avoid calling in the county fire marshals, the destruction of the firestarter's possessions was used as evidence to terminate my sanctuary.
+
+Several nights later a father came to me with his child daughter who was not very responsive. He came to me because he knew my camp had medical supplies and phone service, sustained by the barter economy. She had been given substances which interferred with her medication, intentionally, by an unknown individual. I administered medical care and promised food and medicine for information about the individual. I enabled the father to contact the police. I used the information I received to detain the individual and bring them to the police. My cooperation with law enforcement, despite the risks it posed to myself, was used as evidence to terminate my sanctuary.
+
+So it came that when the Rainbow Family left the region, I stayed for another week, before seeking fresh sanctuary in the Piedmont.

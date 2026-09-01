@@ -1,0 +1,24 @@
+---
+
+title: "Monocot"
+date-created: 2026-04-02
+aliases:
+  - "Monocot"
+  - "monocot"
+  - "Monocotyledon"
+  - "monocotyledon"
+keywords:
+  - botany
+  - plant-diversity
+  - plant-anatomy
+---
+
+Monocot: a flowering plant with a single cotyledon (seed leaf), one of the two major clades of [angiosperms](./angiosperm.md). Monocots comprise approximately 70,000 species and dominate grasslands, wetlands, and tropical canopies. They are identified by a suite of anatomical characters that reflect their monophyletic origin: parallel leaf venation (veins running parallel to the leaf axis), scattered vascular bundles throughout the stem (not arranged in a ring), flower parts typically arranged in threes or multiples of three, fibrous root systems (many similarly sized roots rather than a central taproot), and absence of secondary growth (monocots do not produce wood and cannot form annual rings).
+
+The largest monocot family is Poaceae — the grasses, including wheat, rice, corn, and all pasture plants. Grasses are among the most economically important plants on Earth, feeding humanity and livestock while covering vast grassland ecosystems. The second-largest monocot family is Orchidaceae, with approximately 25,000 species, making it the largest flowering plant family by species count. Other major monocot families include Arecaceae (palms), Liliaceae (lilies), Amaryllidaceae (daffodils, amaryllis), and Asparagaceae (asparagus).
+
+The monocot body plan reflects adaptation to specific ecological niches. Grasses, for instance, have a growth strategy based on meristems positioned at the base of leaves (intercalary meristems), allowing them to regrow after herbivory or mowing — an adaptation that made them preadapted for dominance in grasslands grazed by megafauna. Palm growth relies on apical meristems that produce new fronds continuously, enabling rapid vertical expansion in tropical understories. Orchids, many of which are epiphytes, have evolved elaborate flowers and pollination mechanisms.
+
+Because monocots lack the vascular cambium that produces secondary xylem and phloem in woody plants, they cannot add girth year after year. This anatomical constraint has profound ecological consequences: monocots cannot form the tall, long-lived tree forms that dominate temperate forests (although palms are an exception, achieving height through primary growth and cell expansion). Instead, monocot diversity centers on herbaceous forms with fast life cycles and rapid reproduction.
+
+See also: [eudicot](./eudicot.md), [angiosperm](./angiosperm.md), [leaf](./leaf.md), [root](./root.md), [vascular-tissue](./vascular-tissue.md)

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       fa9438b2-1fd1-471a-a6d3-26fed711d0a0
+:END:
+#+title: rolling dice
+#+date: [2025-09-01 Mon 19:21]
+

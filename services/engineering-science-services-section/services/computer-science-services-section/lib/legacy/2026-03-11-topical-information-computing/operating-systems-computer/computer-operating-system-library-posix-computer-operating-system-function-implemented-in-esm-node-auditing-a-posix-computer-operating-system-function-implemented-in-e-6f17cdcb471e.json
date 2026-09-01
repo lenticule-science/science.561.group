@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/system/library/operating-system/library/computer-operating-system/library/posix-computer-operating-system-function-implemented-in-esm-node/auditing-a-posix-computer-operating-system-function-implemented-in-esm-node/auditing-a-posix-computer-operating-system-function-implemented-in-esm-node.schema.json",
+  "title": "auditing-a-posix-computer-operating-system-function-implemented-in-esm-node",
+  "description": "Input and output shape for auditing an ESM Node implementation projection of a POSIX computer-operating-system function.",
+  "type": "object",
+  "required": ["input", "output"],
+  "additionalProperties": false,
+  "properties": {
+    "input": {
+      "type": "object",
+      "required": ["path", "source"],
+      "additionalProperties": false,
+      "properties": {
+        "path": {"type": "string", "minLength": 1},
+        "source": {"type": "string"},
+        "declared-role": {
+          "type": "string",
+          "enum": ["transformer-body", "cli-wrapper", "helper", "runtime-service", "hook-handler", "wire-adapter", "unknown"],
+          "default": "unknown"
+        },
+        "declared-capabilities": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["argv", "stdio", "cwd", "env", "filesystem-read", "filesystem-write", "subprocess", "network", "clock", "schema-validation", "dynamic-import"]
+          },
+          "uniqueItems": true,
+          "default": []
+        },
+        "mode": {
+          "type": "string",
+          "pattern": "^0[0-7]{3,4}$"
+        }
+      }
+    },
+    "output": {
+      "$ref": "https://research-notes.561.group/hacking/library/predication-notes/object/library/thing/library/system/library/operating-system/library/computer-operating-system/library/posix-computer-operating-system-function-implemented-in-esm-node/posix-computer-operating-system-function-implemented-in-esm-node.schema.json"
+    }
+  }
+}

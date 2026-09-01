@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       4176fe41-e558-47e6-8418-4145373f8f67
+:END:
+#+title: ARP 2500
+#+date: [2025-10-05 Sun 08:23]
+

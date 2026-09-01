@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       e90140e0-663f-4c54-8496-604910d0361b
+:END:
+#+title: profession
+#+date: [2025-09-27 Sat 09:55]
+
