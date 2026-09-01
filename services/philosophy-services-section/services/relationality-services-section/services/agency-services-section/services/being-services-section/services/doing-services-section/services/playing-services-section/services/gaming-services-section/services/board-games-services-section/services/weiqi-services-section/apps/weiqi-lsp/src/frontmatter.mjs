@@ -4,8 +4,48 @@
 // (SPEC.md Family e).
 
 import { makeDiagnostic } from "./diagnostic.mjs";
-import { parseFrontmatter, itemsOf, isNonEmpty } from "./frontmatter-yaml.mjs";
+import { readMarkdownFrontmatter } from "@red-cup-engineering/read-markdown-frontmatter-service";
 import { checkSiteRootedTermPath } from "./links.mjs";
+
+export function parseFrontmatter(text) {
+  const parsed = readMarkdownFrontmatter(text, {
+    frontmatterFormats: ["yaml"],
+    yamlSourceLocations: true,
+  });
+  if (parsed.frontmatter === null) return null;
+  const keyLines = Object.fromEntries(Object.entries(parsed.keyLocations).map(([key, location]) => [key, location.line]));
+  const prefix = text.slice(0, text.length - parsed.body.length);
+  return {
+    data: trimDecodedStrings(parsed.frontmatter),
+    keyLines,
+    bodyText: parsed.body,
+    bodyStartLine: prefix.split(/\r?\n/u).length,
+  };
+}
+
+function trimDecodedStrings(value) {
+  if (typeof value === "string") return value.trimEnd();
+  if (Array.isArray(value)) return value.map(trimDecodedStrings);
+  if (value !== null && typeof value === "object") {
+    return Object.fromEntries(Object.entries(value).map(([key, item]) => [key, trimDecodedStrings(item)]));
+  }
+  return value;
+}
+
+export function itemsOf(list, fallbackLine) {
+  if (!Array.isArray(list)) return [];
+  return list.map((entry) => (
+    entry !== null && typeof entry === "object" && "value" in entry
+      ? entry
+      : { value: entry, line: fallbackLine }
+  ));
+}
+
+export function isNonEmpty(value) {
+  if (Array.isArray(value)) return value.length > 0;
+  if (typeof value === "string") return value.trim().length > 0;
+  return value !== undefined && value !== null && value !== "";
+}
 
 const GLOSSARY_TERMS_SOURCE = "content/text/glossary/terms/";
 const LESSON_SOURCE = "content/text/documents/articles/notes/weiqi-overview.md";

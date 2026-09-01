@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { parseFrontmatter, itemsOf, isNonEmpty } from "../src/frontmatter-yaml.mjs";
+import { parseFrontmatter, itemsOf, isNonEmpty } from "../src/frontmatter.mjs";
 
 test("parseFrontmatter returns null when there is no --- delimited block", () => {
   assert.equal(parseFrontmatter("just a body\n"), null);

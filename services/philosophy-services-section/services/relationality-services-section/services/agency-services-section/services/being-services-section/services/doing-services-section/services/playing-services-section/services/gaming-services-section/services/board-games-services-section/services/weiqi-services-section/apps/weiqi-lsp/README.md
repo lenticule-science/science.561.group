@@ -84,7 +84,7 @@ apps/weiqi-lsp/
     expected-block.mjs              Family (b): WQ010-014, WQ019, and WQ003
     sgf-check.mjs                    Family (c): WQ020-024
     links.mjs                         Family (d): WQ030-032
-    frontmatter-yaml.mjs                a minimal corpus-specific YAML subset parser
+    frontmatter.mjs                     domain checks over the shared Markdown/YAML reader
     frontmatter.mjs                       Family (e): WQ040-044
     app-data.mjs                            Family (f): WQ050-054
     glob.mjs                                  zero-dep glob expansion (**, *)
