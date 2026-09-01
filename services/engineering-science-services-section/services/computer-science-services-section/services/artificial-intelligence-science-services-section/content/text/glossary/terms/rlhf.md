@@ -30,12 +30,12 @@ Variants and alternatives to RLHF have emerged since 2022:
 - **RLAIF (Reinforcement Learning from AI Feedback)** uses a model's own judgments (or those of another model) as the preference signal, reducing dependence on human evaluators.
 - **Constitutional AI (Anthropic, 2022)** combines RLAIF with a set of principles ("a constitution") that the model uses to self-evaluate and revise its outputs.
 
-The connection to [agentic systems](../../../../../artificial-intelligence-science-services-section/services/agents-services-section/content/text/glossary/terms/agentic-system.md) is direct: RLHF is what gives language models the instruction-following reliability required for agent behavior. A model that cannot reliably follow [system prompt](./system-prompt.md) instructions, produce structured [tool call](../../../../../artificial-intelligence-science-services-section/services/agents-services-section/content/text/glossary/terms/tool-use.md) outputs, and defer to human judgment when uncertain is not a viable agent. RLHF (and its variants) produce these capabilities.
+The connection to [agentic systems](../../../../services/agent-science-services-section/content/text/glossary/terms/agentic-system.md) is direct: RLHF is what gives language models the instruction-following reliability required for agent behavior. A model that cannot reliably follow [system prompt](./system-prompt.md) instructions, produce structured [tool call](../../../../services/agent-science-services-section/content/text/glossary/terms/tool-use.md) outputs, and defer to human judgment when uncertain is not a viable agent. RLHF (and its variants) produce these capabilities.
 
 ## Related terms
 
 - [Fine-tuning](./fine-tuning.md) — the broader category RLHF belongs to
 - [Neural network](./neural-network.md) — the model being trained
 - [System prompt](./system-prompt.md) — the instructions RLHF-trained models learn to follow
-- [Tool use](../../../../../artificial-intelligence-science-services-section/services/agents-services-section/content/text/glossary/terms/tool-use.md) — a capability RLHF-trained models support
-- [Agentic system](../../../../../artificial-intelligence-science-services-section/services/agents-services-section/content/text/glossary/terms/agentic-system.md) — the systems RLHF enables
+- [Tool use](../../../../services/agent-science-services-section/content/text/glossary/terms/tool-use.md) — a capability RLHF-trained models support
+- [Agentic system](../../../../services/agent-science-services-section/content/text/glossary/terms/agentic-system.md) — the systems RLHF enables

@@ -12,13 +12,13 @@ date-created: 2026-03-29
 date-modified: 2026-03-29
 ---
 
-Context engineering is the discipline of designing the complete information environment a [language model](../../../../../on-device-inference-services-section/content/text/glossary/terms/large-language-model.md) receives — [system prompts](./system-prompt.md), retrieved documents, [tool](../../../../../artificial-intelligence-science-services-section/services/agents-services-section/content/text/glossary/terms/tool-use.md) definitions, conversation history, and instruction files — to maximize task performance within the [context window](./context-window.md) budget. The term became established in **June 2025** when Shopify CEO Tobi Lutke and former OpenAI researcher Andrej Karpathy publicly endorsed it. Lutke described it as "the art of providing all the context for the task to be plausibly solvable by the LLM." Gartner defines it as "designing and structuring the relevant data, workflows and environment so AI systems can understand intent, make better decisions and deliver contextual, enterprise-aligned outcomes."
+Context engineering is the discipline of designing the complete information environment a [language model](../../../../../on-device-inference-services-section/content/text/glossary/terms/large-language-model.md) receives — [system prompts](./system-prompt.md), retrieved documents, [tool](../../../../services/agent-science-services-section/content/text/glossary/terms/tool-use.md) definitions, conversation history, and instruction files — to maximize task performance within the [context window](./context-window.md) budget. The term became established in **June 2025** when Shopify CEO Tobi Lutke and former OpenAI researcher Andrej Karpathy publicly endorsed it. Lutke described it as "the art of providing all the context for the task to be plausibly solvable by the LLM." Gartner defines it as "designing and structuring the relevant data, workflows and environment so AI systems can understand intent, make better decisions and deliver contextual, enterprise-aligned outcomes."
 
 Context engineering supersedes prompt engineering. Prompt engineering focuses on the text of instructions — word choice, formatting, few-shot examples. Context engineering focuses on the entire information environment: what information reaches the model, in what order, at what token cost, and through what mechanisms (direct inclusion, retrieval, tool calls, instruction files).
 
 ### Why order matters
 
-Research on context window utilization documents a "lost in the middle" problem: model accuracy is highest when relevant information appears at the beginning or end of the context, with over 30% accuracy drop for information placed in the middle. This produces a U-shaped attention curve. In [agentic systems](../../../../../artificial-intelligence-science-services-section/services/agents-services-section/content/text/glossary/terms/agentic-system.md), this means the placement of instructions, tool definitions, and retrieved documents within the context window directly affects output quality — the same information in a different position produces measurably different results.
+Research on context window utilization documents a "lost in the middle" problem: model accuracy is highest when relevant information appears at the beginning or end of the context, with over 30% accuracy drop for information placed in the middle. This produces a U-shaped attention curve. In [agentic systems](../../../../services/agent-science-services-section/content/text/glossary/terms/agentic-system.md), this means the placement of instructions, tool definitions, and retrieved documents within the context window directly affects output quality — the same information in a different position produces measurably different results.
 
 ### Why length matters
 
@@ -26,7 +26,7 @@ As instruction count increases, instruction-following quality decreases. A focus
 
 ### Application to agent instruction files
 
-[AGENTS.md](../../../../../artificial-intelligence-science-services-section/services/agents-services-section/content/text/glossary/terms/agents-md.md), [CLAUDE.md](../../../../../artificial-intelligence-science-services-section/services/agents-services-section/content/text/glossary/terms/agents-md.md), and [SOUL.md](../../../../../artificial-intelligence-science-services-section/services/agents-services-section/content/text/glossary/terms/soul-md.md) are context engineering artifacts. Their content is injected into the model's context window and competes for [tokens](./token.md) with the actual task. Context engineering principles apply directly:
+[AGENTS.md](../../../../services/agent-science-services-section/services/agent-content-science-services-section/services/agent-markdown-file-science-services-section/content/text/glossary/terms/agents-md.md), [CLAUDE.md](../../../../services/agent-science-services-section/services/agent-content-science-services-section/services/agent-markdown-file-science-services-section/content/text/glossary/terms/agents-md.md), and [SOUL.md](../../../../services/agent-science-services-section/services/agent-content-science-services-section/services/agent-markdown-file-science-services-section/content/text/glossary/terms/soul-md.md) are context engineering artifacts. Their content is injected into the model's context window and competes for [tokens](./token.md) with the actual task. Context engineering principles apply directly:
 
 - Keep instruction files short and specific to observed problems
 - Place the most critical constraints first (identity before procedures before edge cases)
@@ -42,6 +42,6 @@ Context engineering includes decisions about what information to retrieve and wh
 
 - [Context window](./context-window.md) — the budget context engineering operates within
 - [System prompt](./system-prompt.md) — the primary context engineering surface
-- [AGENTS.md](../../../../../artificial-intelligence-science-services-section/services/agents-services-section/content/text/glossary/terms/agents-md.md) — a context engineering artifact for project instructions
+- [AGENTS.md](../../../../services/agent-science-services-section/services/agent-content-science-services-section/services/agent-markdown-file-science-services-section/content/text/glossary/terms/agents-md.md) — a context engineering artifact for project instructions
 - [Retrieval-augmented generation](./retrieval-augmented-generation.md) — a context engineering strategy
 - [Token](./token.md) — the unit of context budget
