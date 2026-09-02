@@ -1,6 +1,6 @@
 {
   "name": "@561-group/resolving-an-identifier",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "type": "module",
   "description": "Headverb service ME that resolves identifiers from a customer node's own standpoint.",
   "exports": {

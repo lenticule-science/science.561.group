@@ -504,7 +504,7 @@ function relativizeAll(result, from) {
   };
 }
 
-function main() {
+export function main() {
   if (process.argv.includes("--help")) { printUsage(); return; }
   const ref = process.argv[2] && !process.argv[2].startsWith("--") ? process.argv[2] : undefined;
   if (!ref) { printUsage(); out({ ok: false, error: "no ref given" }, 1); }
