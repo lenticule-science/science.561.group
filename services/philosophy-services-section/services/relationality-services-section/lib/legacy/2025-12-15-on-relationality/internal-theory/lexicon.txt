@@ -1,0 +1,369 @@
+#+begin_src text
+  # Canonical Lexicon (ProperTerm, v0.1)
+
+  ## 0) Sorts and Conventions
+
+  Truth: two values True, False.
+  Entity: raw recognizables.
+  Rel: recognized relations; carries a complete Heyting–residuated algebra (Rel, Together, Either, Implies, Negate, Top, Bottom, Entails).
+  Obj: stabilized objects (structural/dynamic level).
+  Site: small indexing category (for stratified geometry).
+  Diag: diagrams Fun(Site, Obj).
+  System: triads (or chains) of internally balanced operations.
+  HoColim, HoLim: homotopy (co)limit constructors on Diag (only used when earned).
+
+  Model M gives denotations:
+  ⟦Entity⟧_M a set
+  ⟦Rel⟧_M a Heyting–residuated algebra
+  ⟦Obj⟧_M a category-like domain closed under the operators below
+  ⟦Site⟧_M, ⟦Diag⟧_M as usual
+  Interpretation map ⟦·⟧ extends to all Terms
+
+  M ⊨ φ means the Tarski truth of sentence φ in M.
+
+  ## A) Logical / Heyting–Residuated Core
+
+  Term: Distinguish
+  Kind: Operator
+  Signature: (Entity, Entity) -> Rel
+  ResultType: Rel
+  Arity: 2
+  Tarski Truth: introduces a boundary; yields a primitive r ∈ ⟦Rel⟧ with marked/unmarked sides.
+
+  Term: Entails
+  Kind: Predicate
+  Signature: (Rel, Rel) -> Truth
+  ResultType: Truth
+  Arity: 2
+  Tarski Truth: Entails(r,s) iff ⟦r⟧ ⊆ ⟦s⟧.
+
+  Term: Excludes
+  Kind: Predicate
+  Signature: (Rel, Rel) -> Truth
+  ResultType: Truth
+  Arity: 2
+  Tarski Truth: Excludes(r,s) iff ⟦r⟧ ∩ ⟦s⟧ = ∅ (equivalently Entails(r, Negate(s))).
+
+  Term: Together
+  Kind: Operator
+  Signature: (Rel, Rel) -> Rel
+  ResultType: Rel
+  Arity: 2
+  Tarski Truth: ⟦Together(r,s)⟧ = ⟦r⟧ ∩ ⟦s⟧.
+
+  Term: Either
+  Kind: Operator
+  Signature: (Rel, Rel) -> Rel
+  ResultType: Rel
+  Arity: 2
+  Tarski Truth: ⟦Either(r,s)⟧ = ⟦r⟧ ∪ ⟦s⟧.
+
+  Term: Implies
+  Kind: Operator
+  Signature: (Rel, Rel) -> Rel
+  ResultType: Rel
+  Arity: 2
+  Tarski Truth: Entails(Together(a,b),c) ⇔ Entails(a, Implies(b,c)).
+
+  Term: Negate
+  Kind: Operator
+  Signature: Rel -> Rel
+  ResultType: Rel
+  Arity: 1
+  Tarski Truth: ⟦Negate(a)⟧ is the Heyting complement: Equal(Negate(a), Implies(a, Bottom)).
+
+  Term: Top
+  Kind: Constant
+  Signature: () -> Rel
+  ResultType: Rel
+  Arity: 0
+  Tarski Truth: ⟦Top⟧ is the greatest element.
+
+  Term: Bottom
+  Kind: Constant
+  Signature: () -> Rel
+  ResultType: Rel
+  Arity: 0
+  Tarski Truth: ⟦Bottom⟧ is the least element.
+
+  Derived Laws:
+  Residuation: Entails(Together(a,b),c) ⇔ Entails(a, Implies(b,c))
+  Negation: Equal(Negate(a), Implies(a, Bottom))
+  Exclusion: Excludes(a,b) ⇔ Entails(a, Negate(b))
+
+  ## B) Iteration and Stabilization
+
+  Term: Iterate
+  Kind: Operator
+  Signature: Rel -> Rel
+  ResultType: Rel
+  Arity: 1
+  Tarski Truth: monotone, inflationary; M ⊨ Equal(Iterate(Iterate(Iterate(a))), a) within the stabilized context.
+
+  Term: Close
+  Kind: Operator
+  Signature: Rel -> Rel
+  ResultType: Rel
+  Arity: 1
+  Tarski Truth: closure nucleus: inflationary, idempotent, meet-stable. ⟦Close(a)⟧ is the least Iterate-stable superset of ⟦a⟧.
+
+  Term: Open
+  Kind: Operator
+  Signature: Rel -> Rel
+  ResultType: Rel
+  Arity: 1
+  Tarski Truth: interior: deflationary, idempotent, meet-stable. ⟦Open(a)⟧ is the greatest Iterate-stable subset of ⟦a⟧.
+
+  Term: Include
+  Kind: Operator
+  Signature: Rel -> Rel
+  ResultType: Rel
+  Arity: 1
+  Tarski Truth: mediating identity: ⟦Include(a)⟧ = ⟦a⟧.
+
+  Term: Balance
+  Kind: Predicate
+  Signature: (Rel->Rel, Rel->Rel) -> Truth
+  ResultType: Truth
+  Arity: 2
+  Tarski Truth: Balance(Open, Close) holds iff for all a: Entails(Open(a), a), Entails(a, Close(a)), Equal(Close(Open(a)), Close(a)), Equal(Open(Close(a)), Open(a)).
+
+  Term: StabilizesBetween
+  Kind: Predicate
+  Signature: (Rel->Rel, Rel->Rel, Rel->Rel) -> Truth
+  ResultType: Truth
+  Arity: 3
+  Tarski Truth: StabilizesBetween(Include, Open, Close) holds iff Balance(Open, Close) and for all a: Equal(Include(Open(a)), Open(a)) and Equal(Close(Include(a)), Close(a)).
+
+  ## C) Idempotent Modalities (on stabilized core)
+
+  Term: Must
+  Kind: Operator
+  Signature: Obj -> Obj
+  ResultType: Obj
+  Arity: 1
+  Tarski Truth: idempotent “closed” modality. Equal(Must(Must(x)), Must(x)).
+
+  Term: May
+  Kind: Operator
+  Signature: Obj -> Obj
+  ResultType: Obj
+  Arity: 1
+  Tarski Truth: idempotent “open” modality. Equal(May(May(x)), May(x)).
+
+  Term: Identity
+  Kind: Operator
+  Signature: Obj -> Obj
+  ResultType: Obj
+  Arity: 1
+  Tarski Truth: Equal(Identity(x), x).
+
+  Term: MaintainsBalance
+  Kind: Predicate
+  Signature: (Obj->Obj, Obj->Obj, Obj->Obj) -> Truth
+  ResultType: Truth
+  Arity: 3
+  Tarski Truth: MaintainsBalance(FlowLike, A, B) iff for all x: Equal(FlowLike(A(x)), A(FlowLike(x))) and Equal(FlowLike(B(x)), B(FlowLike(x))).
+
+  ## D) Directed Dynamics
+
+  Term: Flow
+  Kind: Operator
+  Signature: Obj -> Obj
+  ResultType: Obj
+  Arity: 1
+  Tarski Truth: “do-then-forget” evolution.
+
+  Term: FlowCounit
+  Kind: Transformer
+  Signature: Obj -> (Flow(x) -> x)
+  ResultType: Morphism
+  Arity: 1
+  Tarski Truth: expresses resolution; used in KZ-laxity axioms.
+
+  Term: FlowComult
+  Kind: Transformer
+  Signature: Obj -> (Flow(x) -> Flow(Flow(x)))
+  ResultType: Morphism
+  Arity: 1
+  Tarski Truth: expresses propagation.
+
+  Term: KZLax
+  Kind: Predicate
+  Signature: Obj -> Truth
+  ResultType: Truth
+  Arity: 1
+  Tarski Truth: expresses lax-idempotence condition; schema-level.
+
+  Term: PreservesCore
+  Kind: Predicate
+  Signature: (Obj->Obj) -> Truth
+  ResultType: Truth
+  Arity: 1
+  Tarski Truth: PreservesCore(Flow) iff MaintainsBalance(Flow, May, Must).
+
+  ## E) Cohesive Context (as earned extensions)
+
+  Term: Shape
+  Kind: Operator
+  Signature: Obj -> Obj
+  ResultType: Obj
+  Arity: 1
+  Tarski Truth: global-form extractor; preserves colimits.
+
+  Term: Discrete
+  Kind: Operator
+  Signature: Obj -> Obj
+  ResultType: Obj
+  Arity: 1
+  Tarski Truth: discrete reflection; preserves finite limits.
+
+  Term: Codiscrete
+  Kind: Operator
+  Signature: Obj -> Obj
+  ResultType: Obj
+  Arity: 1
+  Tarski Truth: codiscrete coreflection; preserves finite colimits.
+
+  Term: Global
+  Kind: Operator
+  Signature: Obj -> TruthCarrier
+  ResultType: Set/TruthCarrier
+  Arity: 1
+  Tarski Truth: global points; preserves limits.
+
+  Term: CohesiveChain
+  Kind: Predicate
+  Signature: (Obj->Obj, Obj->Obj, Obj->Obj, Obj->Obj) -> Truth
+  ResultType: Truth
+  Arity: 4
+  Tarski Truth: CohesiveChain(Shape, Discrete, Codiscrete, Global) holds iff each preservation axiom holds and StabilizesBetween(Discrete, Shape, Global) and StabilizesBetween(Identity, May, Must) are preserved by Discrete and Codiscrete.
+
+  ## F) Stratified Directed Geometry
+
+  Term: Stratify
+  Kind: Operator
+  Signature: Diag -> Diag
+  ResultType: Diag
+  Arity: 1
+  Tarski Truth: site-directed propagation (Reedy-style).
+
+  Term: Constructible
+  Kind: Predicate
+  Signature: (Diag) -> Truth
+  ResultType: Truth
+  Arity: 1
+  Tarski Truth: holds when each node is reflexively determined by forward/backward neighborhoods after stabilization.
+
+  Term: Ambidextrous
+  Kind: Predicate
+  Signature: (Diag) -> Truth
+  ResultType: Truth
+  Arity: 1
+  Tarski Truth: Ambidextrous(F) iff Equal(Must(HoColim(F)), Must(HoLim(F))) and Equal(May(HoColim(F)), May(HoLim(F))).
+
+  ## G) Meta-Level (systems of balances)
+
+  Term: MakeSystem
+  Kind: Operator
+  Signature: (Op, Op, Op) -> System
+  ResultType: System
+  Arity: 3
+  Tarski Truth: packages a triad like (Open, Include, Close).
+
+  Term: MetaRotate
+  Kind: Operator
+  Signature: System -> System
+  ResultType: System
+  Arity: 1
+  Tarski Truth: cyclically permutes roles (definition by re-indexing).
+
+  Term: MetaIterate
+  Kind: Operator
+  Signature: System -> System
+  ResultType: System
+  Arity: 1
+  Tarski Truth: triple return Equal(MetaIterate(MetaIterate(MetaIterate(S))), S).
+
+  Term: MetaFlow
+  Kind: Operator
+  Signature: System -> System
+  ResultType: System
+  Arity: 1
+  Tarski Truth: evolution on systems; has MetaCounit, MetaComult analogous to Flow.
+
+  Term: MetaBalance
+  Kind: Predicate
+  Signature: System -> Truth
+  ResultType: Truth
+  Arity: 1
+  Tarski Truth: holds if each component pair in the system satisfies Balance and its mediator satisfies StabilizesBetween.
+
+  ## H) Structural Utilities
+
+  Term: Equal
+  Kind: Predicate
+  Signature: (X, X) -> Truth
+  ResultType: Truth
+  Arity: 2
+  Tarski Truth: Equal(a,b) iff ⟦a⟧ = ⟦b⟧.
+
+  Term: Compose
+  Kind: Operator
+  Signature: (Op, Op) -> Op
+  ResultType: Op
+  Arity: 2
+  Tarski Truth: ⟦Compose(f,g)⟧ = (x ↦ ⟦g⟧(⟦f⟧(x))).
+
+  Term: Define
+  Kind: Meta-Construct
+  Signature: (Name, Expr) -> Binding
+  ResultType: Binding
+  Arity: 2
+  Tarski Truth: adds a binding Name := Expr to current context (meta-level).
+
+  Term: Equivalent
+  Kind: Predicate
+  Signature: (X, X) -> Truth
+  ResultType: Truth
+  Arity: 2
+  Tarski Truth: up-to-structure equality as specified by context.
+
+  ## I) Core Rewrite / Law Schemas
+
+  Residuation:
+  Entails(Together(a,b),c) EquivalentTo Entails(a, Implies(b,c))
+
+  Negation:
+  Equal(Negate(a), Implies(a, Bottom))
+
+  Stabilized Modus Ponens:
+  Entails(Together(a, Close(Implies(a,b))), b)
+
+  Cubic Return (stabilized):
+  Equal(Iterate(Iterate(Iterate(a))), a) for all a in the Close-fixed locus
+
+  Balance (earned):
+  Balance(Open, Close) iff for all a, Entails(Open(a), a), Entails(a, Close(a)),
+  Equal(Close(Open(a)), Close(a)), Equal(Open(Close(a)), Open(a))
+
+  Flow preserves the core:
+  MaintainsBalance(Flow, May, Must) ⇒ Equal(Flow(Must(x)), Must(Flow(x))) and Equal(Flow(May(x)), May(Flow(x)))
+
+  Ambidexterity on constructible diagrams:
+  Constructible(F) ⇒ Ambidextrous(F)
+
+  ## J) Typing / Formation
+
+  If a,b : Rel then Together(a,b), Either(a,b), Implies(a,b), Negate(a) : Rel
+  If a : Rel then Open(a), Close(a), Include(a) : Rel
+  If x : Obj then May(x), Must(x), Flow(x) : Obj
+  If S : Site and F : Diag(S) then Stratify(F) : Diag(S); HoColim(F), HoLim(F) : Obj
+  If A,B : Rel->Rel then Balance(A,B) : Truth; if also C:Rel->Rel, then StabilizesBetween(C,A,B) : Truth
+  MakeSystem(A,M,B) : System, with MetaRotate, MetaIterate, MetaFlow : System->System
+
+  Notes:
+  No external symbols required.
+  “Inequalities” appear only as Entails(...) or named axiom schemas.
+  Each Balance or StabilizesBetween replaces external adjointness with an internal phenomenon.
+#+end_src

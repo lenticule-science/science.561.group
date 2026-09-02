@@ -1,0 +1,72 @@
+#+TITLE: Relationing Research Program Repository
+#+DATE: [2025-11-09 Sun]
+#+CATEGORY: Relationing
+#+FILETAGS: PROGRAM
+
+* Documentation
+** README
+:PROPERTIES:
+:EXPORT_FILE_NAME: README
+:EXPORT_TITLE: Relationing Research Program Repository
+:END:
+
+The */Relationing Research Program Repository/* is a research program developing an understanding of /relationing/, a framework of logic, algebra, calculus, geometry, and physics derived by emsenn from Lakota cosmogeny.
+
+*/Why?/* The research program exists as an extension of Lakota culture and spiritual practice into the scientific community, picking up threads of work left by Vine Deloria Jr. and Aragorn!
+
+*/How?/* Poorly, at the moment; the program is in its early days and is just starting the process of organizing into a coherent method. But: a specialized Emacs configuration, GnoponEmacs, is used to manage a Org-roam database whose nodes are themselves Things, Morphisms, Systems, etc. within a Modality of Relationing.
+
+*** Layout
+
+- =org/= :: The canonical files which make up the research program itself.
+  - =org/ref/= :: Reference nodes: external publications, terms.
+  - =org/txt/= :: Research texts: Papers with theorems, experiments, etc. 
+- =src/= :: Computer programs and scripts for doing relationing.
+- =pub/= :: Publications for external distribution.
+
+*** Research Policies
+*** Getting Started
+
+#+begin_src sh
+  git clone https://github.com/emsenn/rrpr.git
+  cd rrpr
+#+end_src
+*** Contributing
+*** License
+Program released under MIT, individual docs under ./pub/ might have their own licenses.
+*** Citation
+
+#+begin_src bibtex :canonical
+  @online{emsenn_RRPR_2025,
+    author       = {emsenn},
+    title        = {Relationing Research Program Repository},
+    url          = {https://github.com/emsenn/rrpr},
+    year         = {2025},
+    license      = {MIT}
+  }
+#+end_src
+*** Funding
+
+This project is developed independently by emsenn.
+
+** LICENSE
+:PROPERTIES:
+:EXPORT_FILE_NAME: LICENSE
+:END:
+MIT License
+
+Copyright (c) 2025 emsenn
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+** AGENTS
+:PROPERTIES:
+:EXPORT_FILE_NAME: AGENTS
+:END:
+
+See README.md for initial guidance.

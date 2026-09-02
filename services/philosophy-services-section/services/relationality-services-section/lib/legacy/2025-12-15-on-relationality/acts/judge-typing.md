@@ -1,0 +1,25 @@
+---
+title: Typing Judging
+act: JudgeTyping
+slug: judge-typing
+top: TypeSeed
+bottom: TypeApplication
+summary: >-
+  *Type Seed* and *Type Application* collectively present how terms
+  inhabit types under contexts. Letting *Type Seed* witness *Type
+  Application* produces ***Judge Typing*** (`JudgeTyping`).
+tags:
+  - act
+---
+# Typing Judging
+
+## Interpretation
+
+*Type Seed* and *Type Application* collectively present how terms inhabit types under contexts.  Letting *Type Seed* witness *Type Application* produces ***Judge Typing*** ([JudgeTyping](judge-typing.md)).
+
+Both recognitions were previously earned; their composition records the judgement that a context recognises term t at type A in native form, so *Judge Typing* follows.
+
+
+{{ act_info(page.meta) }}
+
+{{ act_nav(page.meta) }}
