@@ -21,8 +21,8 @@
     "@red-cup-engineering/render-markdown-block-html-service": "file:../../../engineering-services-section/services/computer-engineering-services-section/services/computer-data-services-section/services/computer-data-type-services-section/services/computer-text-data-services-section/services/markdown-services-section/services/markdown-rendering-services-section/services/render-markdown-block-html-service",
     "@red-cup-engineering/render-markdown-inline-html-service": "file:../../../engineering-services-section/services/computer-engineering-services-section/services/computer-data-services-section/services/computer-data-type-services-section/services/computer-text-data-services-section/services/markdown-services-section/services/markdown-inline-html-services-section/services/render-markdown-inline-html-service",
     "@red-cup-engineering/vaultmaze": "file:../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-knowledge-systems-services-section/services/knowledge-vault-computer-system-services-section/apps/vaultmaze",
-    "@red-cup-engineering/victor": "file:../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/web-services-section/services/web-server-services-section/services/website-server-services-section/apps/victor",
-    "@red-cup-engineering/web-tufte-gui-services-section": "file:../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/web-services-section/services/web-interface-services-section/services/web-tufte-gui-services-section",
+    "@red-cup-engineering/victor": "0.1.2",
+    "@red-cup-engineering/web-tufte-gui-services-section": "0.6.0",
     "jose": "^6.2.9"
   },
   "exports": {
