@@ -10,6 +10,9 @@ import {
   queryResearchRecords,
   recordResearchRecord,
 } from "./record-journal.mjs";
+import { canonical } from "@red-cup-engineering/json-codec-service";
+
+export { canonical };
 
 export const NODE_ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 export const ACTOR = "urn:ame:relational-orientation-research-desk";
@@ -21,16 +24,6 @@ const CLAIM_BOUNDARY =
   "observed-carriers-and-declared-rights-evidence-not-legal-sufficiency";
 const SHA = /^sha256:[a-f0-9]{64}$/u;
 
-export function canonical(value) {
-  if (Array.isArray(value)) return `[${value.map(canonical).join(",")}]`;
-  if (value && typeof value === "object")
-    return `{${Object.keys(value)
-      .sort()
-      .filter((key) => value[key] !== undefined)
-      .map((key) => `${JSON.stringify(key)}:${canonical(value[key])}`)
-      .join(",")}}`;
-  return JSON.stringify(value);
-}
 export function digest(value) {
   return `sha256:${createHash("sha256").update(canonical(value)).digest("hex")}`;
 }

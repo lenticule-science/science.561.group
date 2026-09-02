@@ -3,6 +3,8 @@ import { lstatSync, readFileSync, realpathSync } from "node:fs";
 import { dirname, join, relative, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { EMPTY_WITNESS_ROOT, identifyJsonSemanticContent } from "@red-cup-engineering/semantic-content-identify-service";
+import { canonical } from "@red-cup-engineering/json-codec-service";
+export { canonical };
 import { journalRecords, recordJournal } from "./journal.mjs";
 
 export const NODE_ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
@@ -13,7 +15,6 @@ export const SOURCE_PACKET_ROOT = join(NODE_ROOT, "content/source-packets");
 export const FIRST_PACKET = join(SOURCE_PACKET_ROOT, "causality-and-kinematic-space/order-before-distance.md");
 const REQUIRED_USES = ["notebooklm-transformation", "mathematics-curriculum", "public-youtube-release"];
 const ID = /^[a-z0-9]+(?:-[a-z0-9]+)*$/u;
-export function canonical(value) { if (Array.isArray(value)) return `[${value.map(canonical).join(",")}]`; if (value && typeof value === "object") return `{${Object.keys(value).sort().filter((key) => value[key] !== undefined).map((key) => `${JSON.stringify(key)}:${canonical(value[key])}`).join(",")}}`; return JSON.stringify(value); }
 export function digest(value) { const bytes = value instanceof Uint8Array ? value : Buffer.from(canonical(value)); return `sha256:${createHash("sha256").update(bytes).digest("hex")}`; }
 export function contentId(objectKind, value) { return identifyJsonSemanticContent({ objectKind, value, witnessRoot: EMPTY_WITNESS_ROOT }).token; }
 function exact(value, objectKind) { if (!value || typeof value !== "object") return false; const { id, ...body } = value; return id === contentId(objectKind, body); }

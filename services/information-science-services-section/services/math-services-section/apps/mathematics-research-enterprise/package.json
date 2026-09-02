@@ -16,6 +16,7 @@
     "test": "node --test test/research.test.mjs"
   },
   "dependencies": {
+    "@red-cup-engineering/json-codec-service": "0.1.13",
     "@red-cup-engineering/semantic-content-identify-service": "0.2.7",
     "@red-cup-engineering/semantic-record-journal-service": "0.1.8"
   },
