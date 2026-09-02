@@ -37,6 +37,18 @@ export function closureOrdinal(L: Lattice, phi: Operator, opts?: { finite?: numb
 export function leastFixedPoint(L: Lattice, phi: Operator, opts?: { finite?: number; limits?: number }): any;
 export function regimeOfOrdinal(kappa: Ordinal | null): Regime;
 
+export type EvidenceVertex = { id: string; basis: string[]; seed: string[] };
+export type EvidenceEdge = { id?: string; source: string; target: string; map: Record<string, string[]> };
+export type EvidenceDiagnostic = { edge: string; code: string; message: string };
+export type EvidenceWitness = { kind: "seed" } | { kind: "edge"; edge: string; source: string; sourceAtoms: string[] };
+export function settleEvidence(input: { vertices: EvidenceVertex[]; edges: EvidenceEdge[]; validateMap?: (edge: unknown) => boolean | string }): {
+  values: Record<string, string[]>;
+  iterations: number;
+  rejectedEdges: EvidenceDiagnostic[];
+  fixedPoint: true;
+  witnesses: Record<string, Record<string, EvidenceWitness>>;
+};
+
 // ── lattices — witnesses of each regime, and the bridge to settle ────────────
 export function reachability(nVertices: number, edges: [number, number][], seed?: number[]): { lattice: Lattice; phi: Operator };
 export function omegaPlusOne(): { lattice: Lattice; phi: Operator; rank: (a: any) => number };

@@ -20,4 +20,6 @@ export { approx, orbit, stabilizingSup } from "./iterate.mjs";
 
 export { closureOrdinal, leastFixedPoint, regimeOfOrdinal } from "./closure.mjs";
 
+export { settleEvidence } from "./directed-evidence.mjs";
+
 export { reachability, omegaPlusOne, tower, fromBilattice } from "./lattices.mjs";
