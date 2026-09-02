@@ -27,7 +27,7 @@ identified, without adding a single dependency.
 ## Running it
 
 ```
-npm run build   # strip the kernel's .mts -> public/js/kernel/*.mjs, compile glossary markdown -> public/data/glossary.json
+npm run build   # run the kernel's browser projection -> public/js/kernel/*.mjs, compile glossary markdown -> public/data/glossary.json
 npm run check   # check-mts.mjs: a real TS+JS syntax gate for test/*.test.mts (see its own doc comment)
 npm run serve   # node scripts/serve.mjs -- static file server over ./public, http://localhost:8080/
 npm test        # npm run check, then node --test 'test/*.test.mts'
@@ -73,9 +73,6 @@ apps/weiqi-web/
                           leaves open; see the file's own doc comment for why
   README.md               this file
   scripts/
-    build-kernel.mjs       strips ../weiqi-kernel/src/*.mts -> public/js/kernel/*.mjs via
-                            node:module's native stripTypeScriptTypes (zero-dep, no tsc), rewriting
-                            sibling .mts import specifiers to .mjs
     build-glossary.mjs     compiles ../../content/text/glossary/terms/*.md -> public/data/glossary.json
                             (title, definition, elaboration, related terms) -- a small targeted
                             frontmatter/markdown extraction, not a general parser
@@ -153,7 +150,7 @@ apps/weiqi-web/
       tsumego-app.mjs          page glue for tsumego.html (the trainer)
       learn-app.mjs            page glue for learn.html
       glossary-app.mjs         page glue for glossary.html
-      kernel/                  BUILD PRODUCT (see build-kernel.mjs) -- browser-ready copies of
+      kernel/                  BUILD PRODUCT (from weiqi-kernel's shared browser projection) -- browser-ready copies of
                                 every ../weiqi-kernel/src/*.mts module
 ```
 

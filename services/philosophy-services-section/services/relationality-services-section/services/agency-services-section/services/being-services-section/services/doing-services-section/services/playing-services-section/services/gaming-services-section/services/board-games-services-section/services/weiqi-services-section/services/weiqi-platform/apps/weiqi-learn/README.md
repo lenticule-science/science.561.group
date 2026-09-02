@@ -17,12 +17,12 @@ sources into browser-loadable `.mjs` (below); JSDoc types are welcome, nothing i
 npm run build
 ```
 
-Runs `scripts/build.mjs`: strips every `apps/weiqi-kernel/src/*.mts` to
-`public/lib/kernel/<name>.mjs` using Node's native `node:module` type stripping (Node 24),
-rewriting intra-kernel `"./x.mts"` import specifiers to `"./x.mjs"`, then verifies the result
-by importing the built `public/lib/kernel/index.mjs` and playing three moves of a 9x9 game —
-fails loudly if that import or those moves don't work. Copies nothing else; data JSON under
-`public/data/` is authored directly, not generated.
+Runs the Weiqi kernel's shared browser-projection operation, which strips every
+`apps/weiqi-kernel/src/*.mts` to `public/lib/kernel/<name>.mjs` using Node's native
+`node:module` type stripping (Node 24), rewrites intra-kernel `"./x.mts"` import specifiers
+to `"./x.mjs"`, and verifies the result by importing the built kernel and playing three moves
+of a 9x9 game. Copies nothing else; data JSON under `public/data/` is authored directly, not
+generated.
 
 ## Serve
 
