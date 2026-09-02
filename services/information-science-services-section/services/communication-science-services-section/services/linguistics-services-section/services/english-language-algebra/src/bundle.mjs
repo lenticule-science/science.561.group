@@ -1,15 +1,8 @@
 // bundle.mjs — English as a syntaxis fiber-algebra bundle, plain-JS
-// transcription of ./bundle.mts's RawBundle. The type authority is now
-// @lenticule-science/communicating/speaking/listening/algebra; this JavaScript
-// carrier is the package's runtime data.
-//
-// SVO word order, left-headed determiners and adjectives. Confirmed
-// data-identical (diffed directly) to the duplicate copy under the older
-// package-naming scheme at
-// content/assets/legacy/github-language-packages/language-parsing-english/src/bundle.mts
-// (only its type-only import path differs, erased at runtime) — same
-// provenance-duplication pattern tokipona-language-algebra's README documents
-// for its own recovered package.
+// transcription of ./bundle.mts's RawBundle (kept data-identical; see
+// parity.test.mts). Type authority:
+// @lenticule-science/communicating/speaking/listening/algebra. SVO word
+// order, left-headed determiners and adjectives.
 export const rawBundle = {
   meta: {
     name: "English",
@@ -57,8 +50,9 @@ export const rawBundle = {
       "till", "as", "that", "whether", "once", "lest",
       "provided", "supposing",
     ],
+    // "be"'s forms live only in copula below, not here: closedClassTags()
+    // checks aux before copula, so a word in both would never surface "cop".
     auxiliaries: [
-      "be", "am", "is", "are", "was", "were", "been", "being",
       "have", "has", "had", "having",
       "do", "does", "did", "doing",
       "will", "would", "shall", "should",
@@ -83,6 +77,9 @@ export const rawBundle = {
       { pattern: ".{2,}ed$", tag: "past" },
       { pattern: ".{3,}ing$", tag: "nonfin" },
       { pattern: ".{3,}en$", tag: "nonfin" },
+      // Regular 3sg present ("walks"): excludes -ous/-less/-ness, the only
+      // suffixRules noun/adj classes that also end in "s".
+      { pattern: "^(?!.*(?:ous|less|ness)$).{2,}s$", tag: "3sg" },
     ],
     numberWords: [
       "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten",

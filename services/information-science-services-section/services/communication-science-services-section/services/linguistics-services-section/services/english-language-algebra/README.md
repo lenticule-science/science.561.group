@@ -3,7 +3,7 @@
 English's language fiber: lexicon, morphology, reference, SVO attachment and
 segmentation data, plus a directly invocable tagging die.
 
-The package owns English data. `@lenticule-science/communicating@0.0.3` owns the
+The package owns English data. `@lenticule-science/communicating@0.0.5` owns the
 language-neutral Mark admission, articulation, charged parse, role and
 cohomology machinery. `./tag` composes those public readings with this bundle;
 it does not import a private section engine. Activity and request IDs preserve
@@ -16,10 +16,11 @@ Exports:
 - `solicit-service` and `invoke-service`: ActivityStreams process faces
 
 Established limits remain evidence, not euphemism: unsuffixed adjectives such
-as `difficult` fall to `noun`, and ordinary present-tense verbs without a
-recognized suffix do not anchor subject/object arcs. The tests retain both
-limits so future grammar work must improve the data rather than quietly change
-the claim.
+as `difficult` fall to `noun`, and a bare regular verb stem with neither an
+irregular-table entry nor a recognized 3sg/past/nonfin suffix (e.g. `chase`,
+as opposed to its own `chases`) does not anchor subject/object arcs. The
+tests retain both limits so future grammar work must improve the data rather
+than quietly change the claim.
 
 ```sh
 npm run check

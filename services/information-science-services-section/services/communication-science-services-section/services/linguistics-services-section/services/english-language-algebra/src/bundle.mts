@@ -1,6 +1,6 @@
-// bundle.ts — English as a syntaxis fiber-algebra bundle.
-// SVO word order, left-headed determiners and adjectives.
-// This is the reference bundle: behavior matches the engine's internal tables.
+// bundle.mts — English as a syntaxis fiber-algebra bundle. SVO word order,
+// left-headed determiners and adjectives. The reference bundle: kept
+// data-identical to ./bundle.mjs (see parity.test.mts).
 import type { RawBundle } from "@lenticule-science/communicating/speaking/listening/algebra";
 
 export const rawBundle: RawBundle = {
@@ -50,8 +50,9 @@ export const rawBundle: RawBundle = {
       "till", "as", "that", "whether", "once", "lest",
       "provided", "supposing",
     ],
+    // "be"'s forms live only in copula below, not here: closedClassTags()
+    // checks aux before copula, so a word in both would never surface "cop".
     auxiliaries: [
-      "be", "am", "is", "are", "was", "were", "been", "being",
       "have", "has", "had", "having",
       "do", "does", "did", "doing",
       "will", "would", "shall", "should",
@@ -76,6 +77,9 @@ export const rawBundle: RawBundle = {
       { pattern: ".{2,}ed$", tag: "past" },
       { pattern: ".{3,}ing$", tag: "nonfin" },
       { pattern: ".{3,}en$", tag: "nonfin" },
+      // Regular 3sg present ("walks"): excludes -ous/-less/-ness, the only
+      // suffixRules noun/adj classes that also end in "s".
+      { pattern: "^(?!.*(?:ous|less|ness)$).{2,}s$", tag: "3sg" },
     ],
     numberWords: [
       "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten",

@@ -1,12 +1,7 @@
 // engine.test.mjs — exercises the REAL ported pipeline stages directly
-// (articulate → tag/construe → parse → roles/cohomology), reproducing the
-// original recovered src/parity.test.mts's own assertions (SVO subject/
-// object arcs from "The teacher graded the exam."; tag() on "The"/"teacher"/
-// "graded") — the exact behavior that package boundary dropped when a flat
-// suffix/lexicon stub with no arcs and no roles would otherwise have been
-// written. Also exercises real, reproducible gaps in the recovered English
-// bundle data confronted with the shared engine's generic attachment rules
-// (see README.md "what's still stubbed").
+// (articulate → tag/construe → parse → roles/cohomology) against the real
+// English bundle data, reproducing parity.test.mts's own SVO assertions
+// plus reproducible gaps still open in that data.
 import test from "node:test";
 import assert from "node:assert/strict";
 
@@ -118,31 +113,29 @@ test("GAP (real, reproducible): a bare adjective with no recognized derivational
   assert.equal(frame?.patient, "difficult"); // roles() inherits the same wrong resolution
 });
 
-test("GAP (real, reproducible): no rule in the recovered suffixRules ever tags a bare/plain present-tense verb, so nsubj/dobj/roles() never fire for present-tense sentences", () => {
-  // rawBundle.morphology.suffixRules covers -ly (adv), -ize/-ise/-ify/-ate
-  // (verb, but only when the word ITSELF ends that way — a 3sg "-s" suffix
-  // added on top, e.g. "translates", breaks the match), -ing (verb), -ed
-  // (verb), -en (verb/noun), and a battery of adjective/noun-suffix
-  // patterns. None of them covers a bare present-tense verb stem or its
-  // regular 3sg "-s" form ("read"/"reads", "eat"/"eats", "chase"/"chases",
-  // "run"/"runs") — so tagging.mjs's open-class floor assigns every one of
-  // them ["noun"]. The shared engine's nsubj()/dobj() rules require a word
-  // tagged "verb" or "aux" to anchor an arc on; without one, neither rule
-  // ever fires. This is a real gap in the recovered English *data* (Latin's
-  // own recovered suffixRules DO cover present tense: ".{2,}t$" 3sg,
-  // ".{2,}nt$" 3pl), not in the ported *engine*.
-  for (const verb of ["reads", "read", "chases", "chase", "eats", "eat", "runs", "run"]) {
-    assert.deepEqual(tag(verb, bundle), ["noun"], `expected "${verb}" to float to noun, got ${JSON.stringify(tag(verb, bundle))}`);
+test("present-tense verbs now tag \"verb\" via the irregular-verb table and the regular 3sg rule, so nsubj/dobj/roles() fire for present-tense sentences", () => {
+  // rawBundle.morphology.irregularVerbs already lists read/eat/run (bare
+  // lemma AND inflected forms); rawBundle.morphology.verbFormRules now adds
+  // a regular-3sg rule for the rest ("chases"). Neither route covers a
+  // truly regular BARE stem with no inflection ("chase") — that narrower
+  // gap is real and reproduced below, not fixed by this change.
+  for (const verb of ["reads", "read", "chases", "eats", "eat", "runs", "run"]) {
+    assert.ok(tag(verb, bundle).includes("verb"), `expected "${verb}" to tag verb, got ${JSON.stringify(tag(verb, bundle))}`);
   }
+  assert.deepEqual(tag("chase", bundle), ["noun"], "bare regular stem with no irregular-table entry and no suffix still floors to noun");
   const text = "Mary reads a book.";
   const base = articulate(text, bundle);
   const sentence = base.spans.find((s) => s.tier === "sentence") ?? base.document;
   const result = parse(sentence, base, bundle);
-  assert.equal(result.arcs.find((a) => a.rel === "nsubj"), undefined);
-  assert.equal(result.arcs.find((a) => a.rel === "dobj"), undefined);
-  assert.deepEqual(roles(result), []);
-  const mary = result.words.find((w) => w.text === "Mary");
-  assert.equal(mary.connected, "void");
+  const nsubj = result.arcs.find((a) => a.rel === "nsubj");
+  const dobj = result.arcs.find((a) => a.rel === "dobj");
+  assert.equal(nsubj?.headText, "reads");
+  assert.equal(nsubj?.depText, "Mary");
+  assert.equal(dobj?.headText, "reads");
+  assert.equal(dobj?.depText, "book");
+  const frame = roles(result).find((r) => r.verb === "reads");
+  assert.equal(frame?.agent, "Mary");
+  assert.equal(frame?.patient, "book");
 });
 
 test("the pipeline is a deterministic function of (text, bundle): identical input, identical output", () => {
