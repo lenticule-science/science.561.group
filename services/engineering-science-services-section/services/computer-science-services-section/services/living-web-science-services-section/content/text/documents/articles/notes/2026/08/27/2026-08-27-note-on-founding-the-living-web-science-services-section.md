@@ -56,7 +56,7 @@ not as the discipline:
 
 - **VICTOR** (Voxelized Information Catalog Topos Orienting Relations), the
   walking-skeleton website server at
-  `engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/web-services-section/services/web-server-services-section/services/website-server-services-section/apps/victor/`,
+  `engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-systems-publishing-engineering-services-section/apps/victor/`,
   is named directly in the section's README as "the initiative's engineering
   realization" — the build system that checks conformance continuously
   rather than at launch.
