@@ -1,15 +1,10 @@
 #!/usr/bin/env node
-// Strips apps/weiqi-kernel/src/*.mts to public/lib/kernel/*.mjs using Node's
-// native TypeScript-type stripping (node:module, Node >=22.6, stable "strip"
-// mode by Node 24) — no TypeScript compiler, no dependency. This is the app's
-// only build step; everything else under public/ is authored directly.
-//
-// "strip" mode blanks type-only syntax with whitespace, preserving line
-// numbers and leaving every runtime token — including string literals such
-// as import specifiers — untouched. The kernel's own sources import each
-// other as "./x.mts"; a browser (and this app's own served static tree) has
-// no loader that resolves ".mts", so every intra-kernel specifier is
-// rewritten to ".mjs" in the emitted text, once stripping has already run.
+/**
+ * Strips apps/weiqi-kernel/src/*.mts to public/lib/kernel/*.mjs via
+ * node:module's stripTypeScriptTypes ("strip" mode, no tsc, no dependency),
+ * then rewrites intra-kernel "./x.mts" import specifiers to "./x.mjs" so
+ * the emitted tree resolves as real browser ESM. The app's only build step.
+ */
 
 import { stripTypeScriptTypes } from "node:module";
 import { readdir, readFile, writeFile, mkdir } from "node:fs/promises";
@@ -21,12 +16,9 @@ const appRoot = path.resolve(here, "..");
 const kernelSrcDir = path.resolve(appRoot, "../../../../apps/weiqi-kernel/src");
 const outDir = path.resolve(appRoot, "public/lib/kernel");
 
-// Rewrites only the ".mts" suffix inside a quoted relative-import specifier
-// ("./name.mts" or "../name.mts"), never touching prose or unrelated text —
-// the kernel's own files use exactly this shape for every intra-kernel
-// import, per apps/weiqi-kernel/src/index.mts and its siblings.
+/** Rewrites ".mts" to ".mjs" only in a quoted specifier following `from`, never in prose. */
 function rewriteKernelSpecifiers(source) {
-  return source.replace(/(["'](?:\.\.?\/)[^"']*)\.mts(["'])/g, "$1.mjs$2");
+  return source.replace(/(from\s+["'](?:\.\.?\/)[^"']*)\.mts(["'])/g, "$1.mjs$2");
 }
 
 async function main() {
