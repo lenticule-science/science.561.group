@@ -8,12 +8,39 @@ export function charge(words, arcs) {
     const specialization = [];
     const questions = [];
     for (const w of words) {
+        // A word dual-tagged noun+verb (a suffix-only 3sg reading colliding with a
+        // noun-plural reading, or any other morphological double-match) has its
+        // is-noun/is-verb settled below from arc evidence, not asserted outright.
+        const posAmbiguous = w.tags.includes("noun") && w.tags.includes("verb");
         for (const t of w.tags) {
+            if (posAmbiguous && (t === "noun" || t === "verb"))
+                continue;
             entries.push({ subject: w.id, predicate: `is-${t}`, charge: TRUE });
         }
         for (const f of w.feats) {
             entries.push({ subject: w.id, predicate: `is-${f}`, charge: TRUE });
         }
+    }
+    for (const w of words) {
+        if (!w.tags.includes("noun") || !w.tags.includes("verb"))
+            continue;
+        // House thesis: morphology must not argmax. An nsubj/dobj arc landing ON
+        // the word as dependent settles it noun; the word taking its own nsubj as
+        // head settles it verb; absent either, the reading stays a charged
+        // question — a void in the cohomology reading (h1) — never a silent guess.
+        const nounEvidence = arcs.some((a) => a.dependent === w.id && (a.rel === "nsubj" || a.rel === "dobj"));
+        const verbEvidence = arcs.some((a) => a.head === w.id && a.rel === "nsubj");
+        entries.push({
+            subject: w.id,
+            predicate: "is-noun",
+            charge: nounEvidence ? TRUE : verbEvidence ? FALSE : BOTTOM,
+        });
+        entries.push({
+            subject: w.id,
+            predicate: "is-verb",
+            charge: verbEvidence ? TRUE : nounEvidence ? FALSE : BOTTOM,
+        });
+        questions.push({ subject: w.id, predicate: "is-verb", label: "pos-ambiguity", on: w.span.text });
     }
     const prepHeads = new Map();
     for (const a of arcs) {

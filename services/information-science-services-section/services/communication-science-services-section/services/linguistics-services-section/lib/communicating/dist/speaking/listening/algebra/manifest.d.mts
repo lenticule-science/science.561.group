@@ -155,6 +155,12 @@ export declare const languageManifestSchema: {
                         readonly irregularVerbs: {
                             readonly type: "object";
                         };
+                        readonly verbStems: {
+                            readonly type: "array";
+                            readonly items: {
+                                readonly type: "string";
+                            };
+                        };
                     };
                 };
                 readonly reference: {
@@ -417,6 +423,7 @@ export declare const languageManifestCarrier: import("@red-cup-engineering/relat
             readonly rootPatternRules?: readonly unknown[];
             readonly irregularPlurals?: Record<string, unknown>;
             readonly irregularVerbs?: Record<string, unknown>;
+            readonly verbStems?: readonly string[];
         };
         readonly segmentation: {
             readonly sentenceTerminatorPattern: string;

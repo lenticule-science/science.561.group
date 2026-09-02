@@ -81,6 +81,10 @@ export const rawBundle = {
       // suffixRules noun/adj classes that also end in "s".
       { pattern: "^(?!.*(?:ous|less|ness)$).{2,}s$", tag: "3sg" },
     ],
+    // Bare present-tense verb stems with no inflection at all ("They chase
+    // the cat.") — no suffix or irregular-table evidence covers these; unlike
+    // a suffix-only 3sg match, a listed stem is unambiguous "verb" evidence.
+    verbStems: ["chase"],
     numberWords: [
       "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten",
       "hundred", "thousand", "million", "billion",

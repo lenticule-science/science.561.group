@@ -64,6 +64,7 @@ const languageBundleSchema = {
                 numberWords: stringArraySchema,
                 irregularPlurals: { type: "object" },
                 irregularVerbs: { type: "object" },
+                verbStems: stringArraySchema,
             },
         },
         reference: {

@@ -40,6 +40,12 @@ export interface BundleMorphology {
   readonly numberWords: readonly string[];
   readonly irregularPlurals?: Readonly<Record<string, string>>;
   readonly irregularVerbs?: Readonly<Record<string, Readonly<Record<string, string>>>>;
+  /** Base-form (bare present) verb lemmas with no morphological marking of their
+   *  own — e.g. "chase" — that would otherwise floor to "noun" for lack of any
+   *  suffix or irregular-table evidence. Unlike a suffix-only 3sg match, a stem
+   *  listed here is unambiguous, non-defeasible "verb" evidence (like a
+   *  closed-class listing or the irregular-verb table), never dual-tagged. */
+  readonly verbStems?: readonly string[];
 }
 
 export interface PronounFeatures {

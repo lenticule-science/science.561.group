@@ -113,16 +113,19 @@ test("GAP (real, reproducible): a bare adjective with no recognized derivational
   assert.equal(frame?.patient, "difficult"); // roles() inherits the same wrong resolution
 });
 
-test("present-tense verbs now tag \"verb\" via the irregular-verb table and the regular 3sg rule, so nsubj/dobj/roles() fire for present-tense sentences", () => {
-  // rawBundle.morphology.irregularVerbs already lists read/eat/run (bare
-  // lemma AND inflected forms); rawBundle.morphology.verbFormRules now adds
-  // a regular-3sg rule for the rest ("chases"). Neither route covers a
-  // truly regular BARE stem with no inflection ("chase") — that narrower
-  // gap is real and reproduced below, not fixed by this change.
-  for (const verb of ["reads", "read", "chases", "eats", "eat", "runs", "run"]) {
+test("present-tense verbs now tag \"verb\" via the irregular-verb table, the regular 3sg rule, and a verb-stem lexicon, so nsubj/dobj/roles() fire for present-tense sentences", () => {
+  // rawBundle.morphology.irregularVerbs lists read/eat/run (bare lemma AND
+  // inflected forms, unambiguous). rawBundle.morphology.verbFormRules'
+  // regular-3sg rule covers the rest ("chases") — dual-tagged noun+verb,
+  // since it collides with the noun-plural suffix (settled by arc evidence,
+  // see @lenticule-science/communicating's charging.mts). rawBundle.morphology
+  // .verbStems now covers the truly regular BARE stem with no inflection at
+  // all ("chase") as unambiguous verb evidence.
+  for (const verb of ["reads", "read", "chases", "eats", "eat", "runs", "run", "chase"]) {
     assert.ok(tag(verb, bundle).includes("verb"), `expected "${verb}" to tag verb, got ${JSON.stringify(tag(verb, bundle))}`);
   }
-  assert.deepEqual(tag("chase", bundle), ["noun"], "bare regular stem with no irregular-table entry and no suffix still floors to noun");
+  assert.deepEqual(tag("chase", bundle), ["verb"], "a verbStems bare stem is unambiguous, non-defeasible verb evidence");
+  assert.ok(tag("chases", bundle).includes("noun"), "the suffix-only 3sg reading of \"chases\" stays dual-tagged, not argmaxed");
   const text = "Mary reads a book.";
   const base = articulate(text, bundle);
   const sentence = base.spans.find((s) => s.tier === "sentence") ?? base.document;

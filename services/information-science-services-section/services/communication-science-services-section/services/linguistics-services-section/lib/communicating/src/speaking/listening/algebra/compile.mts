@@ -45,8 +45,11 @@ export function load(raw: RawBundle): CompiledBundle {
     Object.entries(reference.pronouns).map(([w, f]) => [w.toLowerCase(), f]),
   );
 
-  
+
   const irregularPlurals = new Map(Object.entries(morphology.irregularPlurals ?? {}));
+  const irregularPluralForms = new Set(
+    Object.values(morphology.irregularPlurals ?? {}).map((surface) => surface.toLowerCase()),
+  );
 
   const irregularVerbBases = new Set(Object.keys(morphology.irregularVerbs ?? {}).map((w) => w.toLowerCase()));
   const irregularVerbForms = new Map<string, string>();
@@ -55,6 +58,8 @@ export function load(raw: RawBundle): CompiledBundle {
       irregularVerbForms.set(surface.toLowerCase(), slot);
     }
   }
+
+  const verbStemSet = new Set((morphology.verbStems ?? []).map((w) => w.toLowerCase()));
   const numberSuffixRe = morphology.numberSuffixPattern === ""
     ? null
     : new RegExp(morphology.numberSuffixPattern, "i");
@@ -89,13 +94,21 @@ export function load(raw: RawBundle): CompiledBundle {
       if (re.test(word) && !tags.includes(tag)) tags.push(tag);
     }
 
-    if ((irregularVerbBases.has(lower) || irregularVerbForms.has(lower)) && !tags.includes("verb")) {
+    if ((irregularVerbBases.has(lower) || irregularVerbForms.has(lower) || verbStemSet.has(lower)) && !tags.includes("verb")) {
       tags.push("verb");
     }
 
     for (const { re, form } of verbFormMatchers) {
       if ((form === "3sg" || form === "base") && re.test(word) && !tags.includes("verb")) {
-        tags.push("verb");
+        if (form === "3sg" && numberSuffixRe?.test(word)) {
+          // Suffix-only 3sg evidence collides with the noun-plural suffix ("cats"
+          // reads equally as 3sg-verb and plural-noun): emit both tags, never argmax
+          // — charging.mts settles the reading from arc evidence.
+          tags.push("verb");
+          if (!tags.includes("noun")) tags.push("noun");
+        } else {
+          tags.push("verb");
+        }
       }
     }
     if (tags.length === 0) tags.push("noun");
@@ -132,9 +145,11 @@ export function load(raw: RawBundle): CompiledBundle {
       return [pf.number];
     }
     if (!tags.includes("noun")) return [];
-    
-    if (irregularPlurals.has(lower)) return ["pl"];
-    
+    // irregularPlurals is keyed by the SINGULAR lemma ("mouse" -> "mice"); a word
+    // is plural only when it IS one of the irregular plural surface forms, not
+    // when it's a key of the map (that mistagged "mouse" itself as plural).
+    if (irregularPluralForms.has(lower)) return ["pl"];
+
     if (numberSuffixRe?.test(lower)) return ["pl"];
     
     return ["sg"];
@@ -145,7 +160,7 @@ export function load(raw: RawBundle): CompiledBundle {
 
     const irregularSlot = irregularVerbForms.get(lower);
     if (irregularSlot !== undefined) return irregularSlot;
-    if (irregularVerbBases.has(lower)) return "base";
+    if (irregularVerbBases.has(lower) || verbStemSet.has(lower)) return "base";
     for (const { re, form } of verbFormMatchers) {
       if (re.test(word)) return form;
     }

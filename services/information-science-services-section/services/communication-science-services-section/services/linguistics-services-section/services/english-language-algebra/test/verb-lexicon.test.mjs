@@ -39,3 +39,21 @@ test("agent/patient roles now resolve for a present-tense sentence via the regul
   const frame = roles(result).find((r) => r.verb === "walks");
   assert.equal(frame?.agent, "She");
 });
+
+test("DEFECT FIXED: \"The cats chase the mouse.\" no longer mistags \"cats\" as the sole verb — chase (a verbStems bare stem) bears the nsubj, and cats settles noun", () => {
+  const result = parse("The cats chase the mouse.");
+
+  const chase = result.words.find((w) => w.text === "chase");
+  assert.deepEqual(chase?.tags, ["verb"]);
+
+  const cats = result.words.find((w) => w.text === "cats");
+  assert.ok(cats?.tags.includes("verb") && cats?.tags.includes("noun"), "cats is dual-tagged, not argmaxed");
+
+  const nsubj = result.arcs.find((a) => a.rel === "nsubj");
+  assert.equal(nsubj?.headText, "chase");
+  assert.equal(nsubj?.depText, "cats");
+
+  const posAnswer = result.answers.find((a) => a.question === "pos-ambiguity" && a.on === "cats");
+  assert.equal(posAnswer?.status, "decided", "cats' noun/verb reading settles from arc evidence, it does not stay a void");
+  assert.equal(posAnswer?.value, "active", "settled FALSE on is-verb: the noun reading won");
+});
