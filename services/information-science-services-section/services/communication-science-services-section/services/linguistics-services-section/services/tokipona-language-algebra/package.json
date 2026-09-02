@@ -1,6 +1,6 @@
 {
   "name": "@lenticule-science/tokipona-language-algebra",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "type": "module",
   "description": "tokipona-language-algebra: Toki Pona as a language fiber — its lexicon, isolating morphology, reference, attachment and segmentation tables — presented as a live, discoverable, directly contractable micro-enterprise (a die) of linguistics-services-section.",
   "repository": {
@@ -28,7 +28,7 @@
     "./package.json": "./package.json"
   },
   "dependencies": {
-    "@lenticule-science/communicating": "0.0.4",
+    "@lenticule-science/communicating": "0.0.5",
     "@red-cup-engineering/semantic-content-identify-service": "0.2.7"
   },
   "devDependencies": {
