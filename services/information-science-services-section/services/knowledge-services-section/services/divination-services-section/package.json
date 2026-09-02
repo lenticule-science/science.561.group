@@ -23,6 +23,8 @@
     "access": "public"
   },
   "dependencies": {
+    "@561-group/dispatching-a-task": "0.1.2",
+    "@561-group/listing-open-obligations": "0.1.2",
     "@561-group/resolving-an-identifier": "0.2.0",
     "@red-cup-engineering/a2a-agent-card-key-service": "1.0.5",
     "@red-cup-engineering/a2a-contracted-agent-service": "2.1.1",

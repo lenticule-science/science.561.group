@@ -8,6 +8,7 @@ import {
   resolveFreeFirstAttemptPacket,
   isRateLimitRefusal,
 } from "@red-cup-engineering/openai-compatible-chat-completion-service";
+import { runMain } from "@red-cup-engineering/javascript-file-main-guard-service";
 
 /**
  * Default location of the house-verified free-inference provider catalog
@@ -112,17 +113,21 @@ export async function gatherQuestionEvidence(questionPrompt, options = {}) {
   }
 }
 
-if (import.meta.main) {
-  const argv = process.argv.slice(2);
+async function main({ argv, stderr }) {
   const [questionPrompt] = argv;
   const catalogFlagAt = argv.indexOf("--catalog");
   const catalogPath = catalogFlagAt === -1 ? undefined : argv[catalogFlagAt + 1];
   if (!questionPrompt) {
-    process.stderr.write('usage: gather-question-evidence.mjs "<question prompt>" [--catalog <path>]\n');
+    stderr.write('usage: gather-question-evidence.mjs "<question prompt>" [--catalog <path>]\n');
     process.exitCode = 2;
-  } else {
-    gatherQuestionEvidence(questionPrompt, { catalogPath })
-      .then((estimate) => { process.stdout.write(`${JSON.stringify(estimate, null, 2)}\n`); })
-      .catch((error) => { process.stderr.write(`${error.message}\n`); process.exitCode = 1; });
+    return undefined;
   }
+  return gatherQuestionEvidence(questionPrompt, { catalogPath });
 }
+
+runMain(main, {
+  moduleUrl: import.meta.url,
+  formatResult: (result) => (result === undefined ? "" : `${JSON.stringify(result, null, 2)}\n`),
+  formatError: (error) => `${error.message}\n`,
+  exitCode: 1,
+});

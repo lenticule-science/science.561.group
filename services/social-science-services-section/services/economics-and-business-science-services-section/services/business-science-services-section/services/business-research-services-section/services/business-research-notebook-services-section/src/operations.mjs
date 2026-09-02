@@ -20,6 +20,7 @@ import {
   admitJsonSemanticContent,
   EMPTY_WITNESS_ROOT,
   identifyJsonSemanticContent,
+  verifyJsonSemanticRecord,
 } from "@red-cup-engineering/semantic-content-identify-service";
 const RSC_A2A_JSON_KIND = "rsc-quiescent.a2a-json",
   semanticBytes = (value) =>
@@ -74,10 +75,14 @@ export function contentId(v) {
     witnessRoot: EMPTY_WITNESS_ROOT,
   }).token;
 }
-function exact(v) {
+export function exact(v) {
   if (!v || typeof v !== "object") return false;
   const { id, ...b } = v;
-  return id === contentId(b);
+  return verifyJsonSemanticRecord({
+    objectKind: "emsweb.modern-business-persistent-notebook.record",
+    value: { id, ...semanticJson(b) },
+    witnessRoot: EMPTY_WITNESS_ROOT,
+  });
 }
 function exactProduct(v) {
   if (!v || typeof v !== "object") return false;

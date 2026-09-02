@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { fileURLToPath } from "node:url";
+import { runMain, isStrictMain } from "@red-cup-engineering/javascript-file-main-guard-service";
 import { agentRmnMessage, extractRmnPart, parseA2aMessage } from "@red-cup-engineering/a2a-rmn-part-service";
 import { admitJsonSemanticContent, EMPTY_WITNESS_ROOT, identifyJsonSemanticContent } from "@red-cup-engineering/semantic-content-identify-service";
 const A2A_CARRIER_KIND = "rsc-quiescent.a2a-json";
@@ -14,4 +14,9 @@ export async function executeResearchOrder(order, options = {}) {
 }
 
 async function main() { let input = ""; process.stdin.setEncoding("utf8"); for await (const chunk of process.stdin) input += chunk; const message = parseA2aMessage(JSON.parse(input)), part = extractRmnPart(message.parts), term = decodeSemantic(part.bytes); if (!semanticBytes(term).equals(part.bytes) || term?.[0] !== "climate-research-packet-order" || term.length !== 2) throw new TypeError("foreign climate research request"); const result = await executeResearchOrder(term[1]); process.stdout.write(`${JSON.stringify(agentRmnMessage(semanticBytes(["climate-research-packet-result", result]), "climate-research-packet-result.rmn.cbor"))}\n`); }
-if (process.argv[1] === fileURLToPath(import.meta.url)) main().catch((error) => { process.stderr.write(`${error.message}\n`); process.exitCode = 2; });
+runMain(main, {
+  moduleUrl: import.meta.url,
+  isEntry: isStrictMain,
+  formatError: (error) => `${error.message}\n`,
+  exitCode: 2,
+});

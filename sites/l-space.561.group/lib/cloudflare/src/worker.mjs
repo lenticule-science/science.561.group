@@ -26,18 +26,17 @@ import {
   identifyDiscordCommandSession,
   pollDiscordCommandChallenge,
 } from "./discord-command-login.mjs";
+import { handleGeodeVocabularyRequest, ownsGeodeVocabularyRequest } from "@red-cup-engineering/geode/vocabulary";
 
 const JSON_HEADERS = { "content-type": "application/json; charset=utf-8" };
 export const LSPACE_AUTHOR_EMAIL = "morgan.sennhauser@gmail.com";
 
 /**
- * The anonymous surface is an allowlist of exact shell paths, never a prefix.
- *
- * A prefix rule is how a public front door turns into a disclosure: `/vault/`
- * holds every authenticated room, so no anonymous route may be able to name a
- * path inside it. Public rooms live in their own `/vault/public/` tree, and the
- * only anonymous route into that tree builds the path itself from a validated
- * content address.
+ * The anonymous surface is an allowlist of exact shell paths, never a prefix
+ * (a prefix would let `/vault/`'s authenticated rooms leak); public rooms
+ * instead live under their own validated-content-address `/vault/public/`
+ * tree. `/ns/` is the one deliberate exception: dereferenceable term and
+ * predicate IRIs are public by doctrine (D5), served read-only over GEODE.
  */
 const PUBLIC_SHELL_ASSETS = new Set([
   "/", "/index.html", "/styles.css", "/app.js", "/favicon.ico", "/robots.txt",
@@ -285,6 +284,17 @@ export async function authoringResponse(request, env, url, session) {
 }
 
 /**
+ * `/ns/term/<identity>` and `/ns/predicate/<name>`: the public dereferenceable vocabulary
+ * (doctrine D5). Read-only over the same GEODE binding `authoringResponse` writes through; a
+ * missing binding (no live checkout, e.g. Cloudflare with no VPS-side GEODE_APPLICATION) answers
+ * 503 rather than requiring a session for a route that must stay anonymous.
+ */
+export async function vocabularyResponse(request, env, url) {
+  if (!ownsGeodeVocabularyRequest(request)) return null;
+  return handleGeodeVocabularyRequest(request, { workspace: authoringBinding(env), baseUrl: url.origin });
+}
+
+/**
  * Routes served without an identity. Each one either returns fixed metadata,
  * carries a login, or addresses the `/vault/public/` tree, which the release
  * builder fills only with rooms whose own frontmatter opted in.
@@ -314,6 +324,9 @@ async function anonymousResponse(request, env, url) {
     const discord = await logoutDiscord(request, env);
     return authResponse({ ...discord, cookies: [...google.cookies, ...discord.cookies] });
   }
+
+  const vocabulary = await vocabularyResponse(request, env, url);
+  if (vocabulary) return vocabulary;
 
   if (request.method !== "GET" && request.method !== "HEAD") return null;
 

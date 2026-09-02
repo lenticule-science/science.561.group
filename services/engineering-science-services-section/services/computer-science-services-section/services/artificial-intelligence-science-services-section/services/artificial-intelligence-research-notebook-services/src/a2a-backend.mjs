@@ -3,11 +3,10 @@ import { createHash } from "node:crypto";
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { basename, join, resolve } from "node:path";
 import { ACTOR, NODE_ROOT } from "./notebook.mjs";
-import { CHANNEL, contentId, digest, rows, runLesson, validLesson } from "./operations.mjs";
+import { CHANNEL, contentId, digest, exact, rows, runLesson, validLesson } from "./operations.mjs";
 import { recordJournalRecord, semanticJson } from "./record-journal.mjs";
 
 export const ORDER_CATEGORY = "artificial-intelligence-notebook.a2a-explainer-order-state";
-function exact(value) { if (!value || typeof value !== "object") return false; const { id, ...body } = value; return id === contentId(body); }
 function curriculumCanonical(value) { if (Array.isArray(value)) return `[${value.map(curriculumCanonical).join(",")}]`; if (value && typeof value === "object") return `{${Object.keys(value).sort().filter((key) => value[key] !== undefined).map((key) => `${JSON.stringify(key)}:${curriculumCanonical(value[key])}`).join(",")}}`; return JSON.stringify(value); }
 function exactCurriculum(value) { if (!value || typeof value !== "object") return false; const { id, ...body } = value; return id === identifyJsonSemanticContent({ objectKind: "emsweb.artificial-intelligence-curriculum.record", value: semanticJson(body), witnessRoot: EMPTY_WITNESS_ROOT }).token; }
 function accountSettlement() { const value = JSON.parse(readFileSync(join(NODE_ROOT, "content/evm/accounts/eip155-31337.json"), "utf8")); if (!/^eip155:[0-9]+:0x[a-f0-9]{40}$/u.test(value?.account?.caip10 ?? "")) throw new TypeError("AI notebook A2A provider requires its settlement account"); return value.account.caip10; }

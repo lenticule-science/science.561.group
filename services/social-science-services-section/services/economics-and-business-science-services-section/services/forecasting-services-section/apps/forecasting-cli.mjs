@@ -4,6 +4,7 @@ import { gatherQuestionEvidence } from "../scripts/gather-question-evidence.mjs"
 import { fuseForecast } from "../scripts/fuse-forecast.mjs";
 import { recordForecast } from "../scripts/record-forecast.mjs";
 import { scoreForecast } from "../scripts/score-forecast.mjs";
+import { runMain } from "@red-cup-engineering/javascript-file-main-guard-service";
 
 /**
  * Composes the full forecasting pipeline: ingest a question, gather one
@@ -54,8 +55,9 @@ async function main(argv) {
   throw new Error('usage: forecasting-cli.mjs run <question.json> [--catalog <path>] | forecasting-cli.mjs score <forecastId> <outcome 0|1>');
 }
 
-if (import.meta.main) {
-  main(process.argv.slice(2))
-    .then((result) => { process.stdout.write(`${JSON.stringify(result, null, 2)}\n`); })
-    .catch((error) => { process.stderr.write(`${error.message}\n`); process.exitCode = 1; });
-}
+runMain(({ argv }) => main(argv), {
+  moduleUrl: import.meta.url,
+  formatResult: (result) => `${JSON.stringify(result, null, 2)}\n`,
+  formatError: (error) => `${error.message}\n`,
+  exitCode: 1,
+});

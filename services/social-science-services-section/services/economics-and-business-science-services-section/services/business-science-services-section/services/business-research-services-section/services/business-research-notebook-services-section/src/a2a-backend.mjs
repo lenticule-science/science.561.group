@@ -10,17 +10,13 @@ import {
   CHANNEL,
   contentId,
   digest,
+  exact,
   rows,
   runLesson,
   validLesson,
 } from "./operations.mjs";
 import { recordJournalRecord, semanticJson } from "./record-journal.mjs";
 export const CATEGORY = "modern-business-notebook.a2a-explainer-order-state";
-function exact(v) {
-  if (!v || typeof v !== "object") return false;
-  const { id, ...b } = v;
-  return id === contentId(b);
-}
 function pc(v) {
   if (Array.isArray(v)) return `[${v.map(pc).join(",")}]`;
   if (v && typeof v === "object")
