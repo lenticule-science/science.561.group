@@ -1,25 +1,47 @@
 import { communicationDocument } from "./carrier.mjs";
-/** Build a frozen span. */
-export function span(tier, text, start, end) {
-    return Object.freeze({ tier, start, end, text });
+/** Build a frozen span. `numeric` (word-tier only) marks a recognized numeric token. */
+export function span(tier, text, start, end, numeric) {
+    return Object.freeze(numeric ? { tier, start, end, text, numeric: true } : { tier, start, end, text });
 }
 /** A rule-span (synthesized — no offsets, carries a rule id as text). */
 export function ruleSpan(ruleId) {
     return Object.freeze({ tier: "rule", start: null, end: null, text: ruleId });
 }
+/** Currency symbols recognized as a numeric token's optional leading character. */
+const CURRENCY_CLASS = "$€£¥₩₹₽¢";
+/** A comma-grouped or decimal number, optionally currency-prefixed: one of
+ * (a) a currency symbol followed by digits, with any run of comma/decimal groups,
+ * (b) plain digits with at least one comma-group or decimal-point group, or
+ * (c) plain digits immediately followed by a percent sign (consumed below).
+ * Each alternative requires a digit after every comma/period so a sentence-final
+ * period or a plain list-separating comma is never pulled into the match. */
+const NUMBER_TOKEN_SOURCE = `[${CURRENCY_CLASS}]\\d+(?:[,.]\\d+)*` +
+    `|\\d+(?:[,.]\\d+)+` +
+    `|\\d+(?=%)`;
+/** Word-internal joiners: apostrophes and hyphens, unchanged from the original tokenizer. */
+const WORD_TOKEN_SOURCE = "[\\p{L}\\p{M}\\p{N}](?:[''ʼ‐\\-]?[\\p{L}\\p{M}\\p{N}])*";
+/** One token: a numeric token (with its optional trailing percent sign and any
+ * directly-attached unit letters, e.g. "$40.5bn"), or else a default word run. */
+const TOKEN_RE_SOURCE = `(?:${NUMBER_TOKEN_SOURCE})%?[\\p{L}]*|${WORD_TOKEN_SOURCE}`;
+/** A token text reads as numeric when it opens with an optional currency symbol
+ * then a digit — covers every match produced by `NUMBER_TOKEN_SOURCE` above, plus
+ * plain digit runs ("2020", "10") matched by the fallback word alternative. */
+const NUMERIC_TOKEN_RE = new RegExp(`^[${CURRENCY_CLASS}]?\\d`, "u");
 /** Unicode-aware tokenizer: extracts words as spans, preserving absolute offsets.
  * A word token is one or more Unicode letter/mark/number runs, connected by
- * word-internal joiners (apostrophes, hyphens). This is the pipeline's DEFAULT
- * behavior — branch (c) of `tokenizeWithBundle` — unchanged from before the
- * segmentation hook. */
+ * word-internal joiners (apostrophes, hyphens) — OR a numeric token: a
+ * comma-grouped or decimal number, with an optional leading currency symbol and
+ * trailing percent sign, kept as ONE token (`"1,195"`, `"3.2%"`, `"€5"`,
+ * `"$40.5bn"`). Numeric tokens carry `numeric: true`. This is the pipeline's
+ * DEFAULT behavior — branch (c) of `tokenizeWithBundle`. */
 export function tokenize(text, baseOffset) {
-    const wordRe = /[\p{L}\p{M}\p{N}](?:[''ʼ‐\-]?[\p{L}\p{M}\p{N}])*/gu;
+    const wordRe = new RegExp(TOKEN_RE_SOURCE, "gu");
     const result = [];
     let m;
     while ((m = wordRe.exec(text)) !== null) {
         const start = baseOffset + m.index;
         const end = start + m[0].length;
-        result.push(span("word", m[0], start, end));
+        result.push(span("word", m[0], start, end, NUMERIC_TOKEN_RE.test(m[0])));
     }
     return result;
 }
@@ -34,7 +56,7 @@ function tokenizeByScript(text, baseOffset) {
     while ((m = charRe.exec(text)) !== null) {
         const start = baseOffset + m.index;
         const end = start + m[0].length;
-        result.push(span("word", m[0], start, end));
+        result.push(span("word", m[0], start, end, NUMERIC_TOKEN_RE.test(m[0])));
     }
     return result;
 }
@@ -56,7 +78,7 @@ function spansFromSegments(text, baseOffset, words) {
             continue;
         const start = baseOffset + index;
         const end = start + word.length;
-        result.push(span("word", word, start, end));
+        result.push(span("word", word, start, end, NUMERIC_TOKEN_RE.test(word)));
         cursor = index + word.length;
     }
     return result;
@@ -113,15 +135,23 @@ function splitOn(parent, tier, separatorRe) {
     return parts;
 }
 const BLOCK_RE = /\n[ \t]*\n/g;
-const CLAUSE_RE = /[,;:—–]|--/g;
+// Comma splits a clause EXCEPT one flanked by a digit on both sides (a thousands
+// separator, e.g. "150,000"): the two alternatives require a non-digit on one side.
+const CLAUSE_RE = /,(?!\d)|(?<!\d),|[;:—–]|--/g;
 const SPACE_RE = /\s+/g;
 /** Split into blocks (paragraph breaks). */
 function splitBlocks(doc) {
     return splitOn(doc, "block", BLOCK_RE);
 }
+/** True when `absoluteIndex` falls inside (start ≤ index < end of) one of `quoteSpans`. */
+function isInsideQuote(absoluteIndex, quoteSpans) {
+    return quoteSpans.some((q) => q.start !== null && q.end !== null && absoluteIndex >= q.start && absoluteIndex < q.end);
+}
 /** Split a block into sentences using bundle's terminator pattern.
- * Preserves the terminator as part of the sentence text. */
-function splitSentences(block, bundle) {
+ * Preserves the terminator as part of the sentence text. A terminator that falls
+ * inside one of `quoteSpans` never ends the sentence — the quoted material's own
+ * punctuation doesn't fracture the sentence that carries it. */
+function splitSentences(block, bundle, quoteSpans) {
     const text = block.text;
     const baseStart = block.start ?? 0;
     const sentences = [];
@@ -135,6 +165,8 @@ function splitSentences(block, bundle) {
         if (bundle.isAbbreviation(word))
             continue;
         if (/\d$/.test(before) && m[0] === ".")
+            continue;
+        if (isInsideQuote(baseStart + m.index, quoteSpans))
             continue;
         const raw = text.slice(last, termEnd).trim();
         if (raw.length > 0) {
@@ -161,12 +193,79 @@ function splitClauses(sentence) {
 function splitWords(clause, bundle) {
     return tokenizeWithBundle(clause.text, clause.start ?? 0, bundle);
 }
-/** Segment text into the full span hierarchy and build containment + sequence edges. */
+/** True when the character before `idx` (or the start of `text`) is not a letter
+ * or digit — the position a quote mark can plausibly OPEN a quote from. */
+function isWordBoundaryBefore(text, idx) {
+    if (idx === 0)
+        return true;
+    return !/[\p{L}\p{N}]/u.test(text[idx - 1]);
+}
+/** True when the character after `idx` (or the end of `text`) is not a letter or
+ * digit — the position a quote mark can plausibly CLOSE a quote at. Requiring this
+ * before treating a same-glyph or apostrophe-shaped mark as a closer is what keeps
+ * contractions and possessives ("Fry's", "rivals'") from being read as quotes. */
+function isWordBoundaryAfter(text, idx) {
+    if (idx + 1 >= text.length)
+        return true;
+    return !/[\p{L}\p{N}]/u.test(text[idx + 1]);
+}
+/** Scan `text` for quotation-mark pairs — straight (`"`, `'`) and curly
+ * (“”, ‘’), single and double — yielding "quote" tier spans that include the
+ * delimiting marks (so `text.slice(start, end) === span.text`, matching every
+ * other span in this module). The curly open marks (“, ‘) are unambiguous and
+ * always open; the curly right-single mark (’) and both straight marks double as
+ * apostrophes, so those close only where `isWordBoundaryAfter` holds — a straight
+ * or curly apostrophe inside a word ("Fry's", "OpenAI’s") is never mistaken for a
+ * closing quote. Unmatched opens at end of text are simply dropped. */
+export function findQuoteSpans(text, baseOffset) {
+    const doubleStack = [];
+    const singleStack = [];
+    const result = [];
+    const emit = (tier, start, end) => {
+        result.push(span(tier, text.slice(start, end), baseOffset + start, baseOffset + end));
+    };
+    for (let i = 0; i < text.length; i++) {
+        const ch = text[i];
+        if (ch === "“") {
+            doubleStack.push(i);
+        }
+        else if (ch === "‘") {
+            singleStack.push(i);
+        }
+        else if (ch === "”") {
+            if (doubleStack.length > 0)
+                emit("quote", doubleStack.pop(), i + 1);
+        }
+        else if (ch === "’") {
+            if (singleStack.length > 0 && isWordBoundaryAfter(text, i))
+                emit("quote", singleStack.pop(), i + 1);
+        }
+        else if (ch === "\"") {
+            if (doubleStack.length > 0 && isWordBoundaryAfter(text, i))
+                emit("quote", doubleStack.pop(), i + 1);
+            else if (isWordBoundaryBefore(text, i))
+                doubleStack.push(i);
+        }
+        else if (ch === "'") {
+            if (singleStack.length > 0 && isWordBoundaryAfter(text, i))
+                emit("quote", singleStack.pop(), i + 1);
+            else if (isWordBoundaryBefore(text, i))
+                singleStack.push(i);
+        }
+    }
+    return result.slice().sort((a, b) => (a.start ?? 0) - (b.start ?? 0));
+}
+/** Segment text into the full span hierarchy and build containment + sequence edges.
+ * Quote spans (tier "quote") are computed once over the whole text and added to
+ * `spans` alongside the block/sentence/clause/word tiers; sentence articulation
+ * consults them so a terminator inside a quote never ends the sentence. */
 export function articulate(text, bundle) {
     const doc = span("document", text, 0, text.length);
     const spans = [doc];
     const inside = [];
     const after = [];
+    const quoteSpans = findQuoteSpans(text, 0);
+    spans.push(...quoteSpans);
     const rawBlocks = splitBlocks(doc);
     const blocks = rawBlocks.length > 0
         ? [...rawBlocks]
@@ -174,7 +273,7 @@ export function articulate(text, bundle) {
     for (const block of blocks) {
         spans.push(block);
         inside.push({ child: block, parent: doc });
-        const rawSentences = splitSentences(block, bundle);
+        const rawSentences = splitSentences(block, bundle, quoteSpans);
         const sentences = rawSentences.length > 0
             ? [...rawSentences]
             : [span("sentence", block.text, block.start, block.end)];

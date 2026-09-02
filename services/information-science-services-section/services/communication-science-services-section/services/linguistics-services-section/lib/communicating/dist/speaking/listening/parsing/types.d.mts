@@ -1,12 +1,16 @@
 import type { ChargeCarrier, ChargeValueName } from "@red-cup-engineering/relating";
 export type Charge = ChargeCarrier;
-export type Tier = "document" | "block" | "sentence" | "clause" | "word" | "rule";
-/** A text span: a tier, its absolute byte offsets (null for synthesized rule-spans), and its text. */
+export type Tier = "document" | "block" | "sentence" | "clause" | "word" | "quote" | "rule";
+/** A text span: a tier, its absolute byte offsets (null for synthesized rule-spans), and its text.
+ * `numeric` is set true on a "word" tier span whose text is a recognized numeric token
+ * (a comma-grouped or decimal number, optionally currency-prefixed or percent-suffixed —
+ * see `tokenize`); absent on every other span. */
 export interface Span {
     readonly tier: Tier;
     readonly start: number | null;
     readonly end: number | null;
     readonly text: string;
+    readonly numeric?: boolean;
 }
 /** Containment edge: child is nested inside parent in the tier hierarchy. */
 export interface ContainmentEdge {
@@ -100,6 +104,30 @@ export interface ParsedAnswer {
     readonly status: ChargeStatus;
     readonly value: ChargeValue;
 }
+/** A text-bearing span used by the attribution reading. Unlike `Span`, it is
+ * not restricted to the tier hierarchy — it may combine several words'
+ * ranges (a multi-word speaker phrase, a matched marker, a quote) into one
+ * absolute-offset range over the document text. */
+export interface AttributionSpan {
+    readonly text: string;
+    readonly start: number | null;
+    readonly end: number | null;
+}
+/** One attribution reading: a reported content clause or quotation, its
+ * speaker, and the cue that licensed the reading. */
+export interface Attribution {
+    readonly speaker: AttributionSpan;
+    readonly cue: AttributionSpan;
+    readonly content: AttributionSpan;
+    readonly kind: "reporting-verb" | "marker";
+}
+/** Per-sentence modality reading: hedge, future-marking, and auxiliary
+ * surface tokens found in the sentence, in reading order. */
+export interface ModalityReading {
+    readonly hedges: readonly string[];
+    readonly future: readonly string[];
+    readonly auxiliaries: readonly string[];
+}
 export interface FoldPath {
     readonly head: string;
     readonly path: readonly string[];
@@ -118,6 +146,11 @@ export interface ParseResult {
     readonly tower: FoldTower;
     readonly conflicts: readonly ParsedAnswer[];
     readonly voids: readonly ParsedAnswer[];
+    /** Attribution readings for the sentence (reporting-verb and marker kinds).
+     * Empty when the bundle carries neither `reportingVerbs` nor `attributionMarkers`. */
+    readonly attributions: readonly Attribution[];
+    /** Hedge/future/auxiliary modality tokens found in the sentence. */
+    readonly modality: ModalityReading;
 }
 export interface ParseForestReading {
     readonly kind: "communicating.parse-forest.reading";
@@ -129,6 +162,10 @@ export interface ParseForestReading {
     readonly complete: boolean;
     readonly ambiguity: number;
     readonly obstructions: readonly CohomologyObstruction[];
+    /** Quote spans (tier "quote") fully contained in this reading's sentence. */
+    readonly quotes?: readonly Span[];
+    /** Word-tier spans within this reading's sentence flagged `numeric` by the tokenizer. */
+    readonly numericTokens?: readonly Span[];
 }
 export interface ParseForest {
     readonly kind: "communicating.parse-forest";

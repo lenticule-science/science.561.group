@@ -9,6 +9,15 @@ export function load(raw) {
     const conjSet = new Set(lexicon.conjunctions.map((w) => w.toLowerCase()));
     const auxSet = new Set(lexicon.auxiliaries.map((w) => w.toLowerCase()));
     const copSet = new Set(lexicon.copula.map((w) => w.toLowerCase()));
+    // Case-preserved mirrors of the same lexicon entries, kept in their
+    // authored case, so an all-caps acronym can be matched verbatim before any
+    // reading is attempted through the lowercase path (see closedClassTagsCased).
+    const detSetCased = new Set(lexicon.determiners);
+    const prepSetCased = new Set(lexicon.prepositions);
+    const pronSetCased = new Set(lexicon.pronouns);
+    const conjSetCased = new Set(lexicon.conjunctions);
+    const auxSetCased = new Set(lexicon.auxiliaries);
+    const copSetCased = new Set(lexicon.copula);
     const suffixMatchers = morphology.suffixRules.map((r) => ({
         re: new RegExp(r.pattern, "i"),
         tag: r.tag,
@@ -43,7 +52,11 @@ export function load(raw) {
         ? null
         : new RegExp(morphology.numberSuffixPattern, "i");
     const numberWordSet = new Set(morphology.numberWords.map((w) => w.toLowerCase()));
-    const abbrevSet = new Set(segmentation.abbreviations.map((a) => a.toLowerCase()));
+    // Abbreviation surface forms may be stored with or without their trailing period
+    // ("Inc." or "Inc") — `isAbbreviation` below always looks up a period-stripped
+    // word (the terminator regex match excludes the period it matched), so both
+    // conventions resolve the same way.
+    const abbrevSet = new Set(segmentation.abbreviations.map((a) => a.toLowerCase().replace(/\.$/, "")));
     const sentTermRe = new RegExp(segmentation.sentenceTerminatorPattern, "gu");
     function closedClassTags(lower) {
         if (detSet.has(lower))
@@ -57,6 +70,21 @@ export function load(raw) {
         if (auxSet.has(lower))
             return ["aux"];
         if (copSet.has(lower))
+            return ["cop"];
+        return [];
+    }
+    function closedClassTagsCased(word) {
+        if (detSetCased.has(word))
+            return ["det"];
+        if (prepSetCased.has(word))
+            return ["prep"];
+        if (pronSetCased.has(word))
+            return ["pron"];
+        if (conjSetCased.has(word))
+            return ["conj"];
+        if (auxSetCased.has(word))
+            return ["aux"];
+        if (copSetCased.has(word))
             return ["cop"];
         return [];
     }
@@ -164,6 +192,7 @@ export function load(raw) {
         registerFiber: languageRegisterFiber(raw.meta.code, raw.registerFiber),
         attachment: raw.attachment,
         closedClassTags,
+        closedClassTagsCased,
         morphologyTags,
         featureTags,
         numberFeatures,
@@ -174,6 +203,9 @@ export function load(raw) {
         isAbbreviation: (word) => abbrevSet.has(word.toLowerCase()),
         sentenceTerminators: sentTermRe,
         ...(raw.segment !== undefined ? { segment: raw.segment } : {}),
+        ...(raw.reportingVerbs !== undefined ? { reportingVerbs: raw.reportingVerbs } : {}),
+        ...(raw.attributionMarkers !== undefined ? { attributionMarkers: raw.attributionMarkers } : {}),
+        ...(raw.hedges !== undefined ? { hedges: raw.hedges } : {}),
     };
 }
 //# sourceMappingURL=compile.mjs.map

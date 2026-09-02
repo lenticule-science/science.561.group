@@ -48,11 +48,29 @@ export function construe(
 
 /** Helper: extract word-tier spans for a sentence from the articulate base. */
 export function wordsInSentence(sentenceSpan: Span, allSpans: readonly Span[]): readonly Span[] {
-  
+
   const { start: sStart, end: sEnd } = sentenceSpan;
   if (sStart === null || sEnd === null) return [];
   return allSpans.filter((s) => {
     if (s.tier !== "word") return false;
+    if (s.start === null || s.end === null) return false;
+    return s.start >= sStart && s.end <= sEnd;
+  });
+}
+
+/**
+ * Extract spans of a given tier fully contained in a sentence, from the
+ * articulate base. Generalizes `wordsInSentence` to any tier (e.g. "quote").
+ * @param sentenceSpan the sentence whose range spans must fall within
+ * @param allSpans the full `ArticulateResult.spans` array to filter
+ * @param tier the tier to select
+ * @returns spans of `tier` with `start >= sentenceSpan.start` and `end <= sentenceSpan.end`
+ */
+export function spansInSentenceOfTier(sentenceSpan: Span, allSpans: readonly Span[], tier: Span["tier"]): readonly Span[] {
+  const { start: sStart, end: sEnd } = sentenceSpan;
+  if (sStart === null || sEnd === null) return [];
+  return allSpans.filter((s) => {
+    if (s.tier !== tier) return false;
     if (s.start === null || s.end === null) return false;
     return s.start >= sStart && s.end <= sEnd;
   });

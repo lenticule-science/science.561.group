@@ -5,10 +5,12 @@ import type { ArticulateResult, CompiledBundle } from "./types.mjs";
 import type { CommunicatingCarrier } from "./carrier.mjs";
 import { valueOf } from "@red-cup-engineering/relating";
 import { articulateCommunication } from "./articulating.mjs";
-import { construe, wordsInSentence } from "./construing.mjs";
+import { construe, spansInSentenceOfTier, wordsInSentence } from "./construing.mjs";
 import { descend } from "./descending.mjs";
 import { fold } from "./folding.mjs";
 import { chargeStatus } from "../algebra/index.mjs";
+import { attributionsFromWords } from "./attributing.mjs";
+import { modalityFromWords } from "./modalizing.mjs";
 
 /** Parse a sentence span and return the full ParseResult. */
 export function parse(
@@ -79,6 +81,10 @@ export function parse(
   const conflicts = parsedAnswers.filter((a) => a.status === "ambiguous");
   const voids = parsedAnswers.filter((a) => a.status === "void");
 
+  const quotes = spansInSentenceOfTier(sentenceSpan, base.spans, "quote");
+  const attributions = attributionsFromWords(words, parsedArcs, quotes, base.text, bundle);
+  const modality = modalityFromWords(words, bundle);
+
   return {
     words: parsedWords,
     arcs: parsedArcs,
@@ -87,6 +93,8 @@ export function parse(
     tower,
     conflicts,
     voids,
+    attributions,
+    modality,
   };
 }
 

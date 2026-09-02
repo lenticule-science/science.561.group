@@ -443,14 +443,17 @@ export function resolveIdentifier(ref, opts = {}) {
   if (parsed.error) return { ok: false, error: parsed.error };
 
   const strategy = opts.strategy ?? "nearest";
-  if (strategy !== "nearest") {
-    return { ok: false, error: `strategy '${strategy}' crosses settlement membranes; resolve from one node or send a contracted request` };
+  if (strategy !== "nearest" && strategy !== "global") {
+    return { ok: false, error: `strategy '${strategy}' is neither nearest nor global — refused` };
   }
   if (opts.multiSeat === true) {
     return { ok: false, error: "multi-seat resolution is a central-pool migration artifact, not a node-local operation" };
   }
 
-  const result = resolveNearest(parsed.kind, parsed.slug, opts);
+  const result =
+    strategy === "global"
+      ? resolveGlobal(parsed.kind, parsed.slug, { root: opts.root ?? process.cwd() })
+      : resolveNearest(parsed.kind, parsed.slug, opts);
 
   return {
     ok: true,
@@ -510,18 +513,19 @@ export function main() {
   if (!ref) { printUsage(); out({ ok: false, error: "no ref given" }, 1); }
 
   const from = argValue("--from") ?? process.cwd();
-  if (process.argv.includes("--global") || process.argv.includes("--multi-seat")) {
-    out({ ok: false, error: "cross-settlement scans are refused; address one node or use its contracted boundary" }, 1);
-  }
+  const root = argValue("--root") ?? process.cwd();
+  const global = process.argv.includes("--global");
   const opts = {
     kind: argValue("--kind"),
     from,
-    strategy: "nearest",
+    root,
+    strategy: global ? "global" : "nearest",
+    multiSeat: process.argv.includes("--multi-seat"),
   };
 
   const result = resolveIdentifier(ref, opts);
   if (!result.ok) out(result, 1);
-  out(relativizeAll(result, from));
+  out(relativizeAll(result, global ? root : from));
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) main();

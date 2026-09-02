@@ -33,6 +33,9 @@ export type {
   ParseForest,
   ParseForestReading,
   ParseResult,
+  AttributionSpan,
+  Attribution,
+  ModalityReading,
 } from "./speaking/listening/parsing/index.mjs";
 
 export { actions } from "./communicate/actions.mjs";
@@ -155,6 +158,7 @@ export type {
 
 export {
   admitCommunication,
+  articulate,
   articulateCommunication,
   carrierOfUtterance,
   communicationDocument,

@@ -23,10 +23,12 @@
     "access": "public"
   },
   "dependencies": {
+    "@561-group/dispatching-a-task": "0.1.2",
+    "@561-group/listing-open-obligations": "0.1.2",
     "@561-group/resolving-an-identifier": "0.2.0",
     "@red-cup-engineering/a2a-agent-card-key-service": "1.0.5",
     "@red-cup-engineering/a2a-contracted-agent-service": "2.1.1",
-    "@red-cup-engineering/claude-harness-projection-service": "1.2.0",
+    "@red-cup-engineering/claude-harness-projection-service": "1.3.0",
     "@red-cup-engineering/http-server": "0.0.4",
     "@red-cup-engineering/json-schema-services-section": "0.1.7",
     "@red-cup-engineering/relation-model-notation-runtime": "8.0.1",

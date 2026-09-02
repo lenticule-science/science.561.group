@@ -89,6 +89,17 @@ export interface RawBundle {
    *  or per-character tokenization when `grammar.segmentation.wordBoundary` is
    *  `"script"`). */
   readonly segment?: (text: string) => readonly string[];
+  /** Reporting-verb lemmas (e.g. "say", "tell", "report") that license an
+   *  attribution reading when found inflected in a sentence. Absent = no
+   *  reporting-verb attributions are read. */
+  readonly reportingVerbs?: readonly string[];
+  /** Multi-word attribution markers (e.g. "according to", "per") that license
+   *  a marker-based attribution reading when found sentence-initial. Absent =
+   *  no marker attributions are read. */
+  readonly attributionMarkers?: readonly string[];
+  /** Epistemic-hedge surface forms (e.g. "likely", "reportedly", "appears")
+   *  surfaced in the modality reading. Absent = no hedges are read. */
+  readonly hedges?: readonly string[];
 }
 
 /** Compiled language bundle: raw data resolved into fast lookup functions. */
@@ -101,6 +112,11 @@ export interface CompiledBundle {
   readonly registerFiber: LanguageRegisterFiber;
   readonly attachment: BundleAttachment;
   readonly closedClassTags: (lowerWord: string) => readonly string[];
+  /** Case-preserved closed-class lookup: matches `word` verbatim (no
+   *  lowercasing) against the bundle's closed-class lexicon entries in their
+   *  original case. Used to look up all-caps acronyms without collapsing them
+   *  onto a lowercase closed-class reading (e.g. "US" vs. the pronoun "us"). */
+  readonly closedClassTagsCased: (word: string) => readonly string[];
   readonly morphologyTags: (word: string) => readonly string[];
   readonly featureTags: (word: string, tags: readonly string[]) => readonly string[];
   readonly numberFeatures: (word: string, tags: readonly string[]) => readonly ("sg" | "pl")[];
@@ -113,4 +129,10 @@ export interface CompiledBundle {
   /** Bundle-supplied word segmentation, passed through unchanged from `RawBundle`
    *  (see there). Absent = existing behavior. */
   readonly segment?: (text: string) => readonly string[];
+  /** Reporting-verb lemmas, passed through unchanged from `RawBundle` (see there). */
+  readonly reportingVerbs?: readonly string[];
+  /** Attribution markers, passed through unchanged from `RawBundle` (see there). */
+  readonly attributionMarkers?: readonly string[];
+  /** Hedge surface forms, passed through unchanged from `RawBundle` (see there). */
+  readonly hedges?: readonly string[];
 }

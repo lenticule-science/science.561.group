@@ -3,7 +3,18 @@
 // data-identical to ./bundle.mjs (see parity.test.mts).
 import type { RawBundle } from "@lenticule-science/communicating/speaking/listening/algebra";
 
-export const rawBundle: RawBundle = {
+/** Local widening for optional bundle hooks (reportingVerbs/
+ *  attributionMarkers/hedges) that land on `RawBundle` in a newer
+ *  @lenticule-science/communicating release than the one currently pinned
+ *  (0.0.6); a harmless no-op once that release's RawBundle already
+ *  declares them. */
+type EnglishRawBundle = RawBundle & {
+  readonly reportingVerbs?: readonly string[];
+  readonly attributionMarkers?: readonly string[];
+  readonly hedges?: readonly string[];
+};
+
+export const rawBundle: EnglishRawBundle = {
   meta: {
     name: "English",
     code: "en",
@@ -122,39 +133,43 @@ export const rawBundle: RawBundle = {
     irregularVerbs: {
       be: { "3sg": "is", past: "was", nonfin: "being", perfect: "been" },
       have: { "3sg": "has", past: "had", nonfin: "having" },
-      do: { "3sg": "does", past: "did", nonfin: "doing" },
-      go: { "3sg": "goes", past: "went", nonfin: "going" },
+      do: { "3sg": "does", past: "did", nonfin: "doing", perfect: "done" },
+      go: { "3sg": "goes", past: "went", nonfin: "going", perfect: "gone" },
       say: { "3sg": "says", past: "said", nonfin: "saying" },
-      see: { "3sg": "sees", past: "saw", nonfin: "seeing" },
+      see: { "3sg": "sees", past: "saw", nonfin: "seeing", perfect: "seen" },
       get: { "3sg": "gets", past: "got", nonfin: "getting" },
       make: { "3sg": "makes", past: "made", nonfin: "making" },
-      know: { "3sg": "knows", past: "knew", nonfin: "knowing" },
-      take: { "3sg": "takes", past: "took", nonfin: "taking" },
-      come: { "3sg": "comes", past: "came", nonfin: "coming" },
+      know: { "3sg": "knows", past: "knew", nonfin: "knowing", perfect: "known" },
+      take: { "3sg": "takes", past: "took", nonfin: "taking", perfect: "taken" },
+      come: { "3sg": "comes", past: "came", nonfin: "coming", perfect: "come" },
       think: { "3sg": "thinks", past: "thought", nonfin: "thinking" },
-      give: { "3sg": "gives", past: "gave", nonfin: "giving" },
+      give: { "3sg": "gives", past: "gave", nonfin: "giving", perfect: "given" },
       look: { "3sg": "looks", past: "looked", nonfin: "looking" },
-      run: { "3sg": "runs", past: "ran", nonfin: "running" },
+      run: { "3sg": "runs", past: "ran", nonfin: "running", perfect: "run" },
       eat: { "3sg": "eats", past: "ate", nonfin: "eating" },
-      begin: { "3sg": "begins", past: "began", nonfin: "beginning" },
+      begin: { "3sg": "begins", past: "began", nonfin: "beginning", perfect: "begun" },
       find: { "3sg": "finds", past: "found", nonfin: "finding" },
-      write: { "3sg": "writes", past: "wrote", nonfin: "writing" },
+      write: { "3sg": "writes", past: "wrote", nonfin: "writing", perfect: "written" },
       read: { "3sg": "reads", past: "read", nonfin: "reading" },
-      speak: { "3sg": "speaks", past: "spoke", nonfin: "speaking" },
+      speak: { "3sg": "speaks", past: "spoke", nonfin: "speaking", perfect: "spoken" },
       bring: { "3sg": "brings", past: "brought", nonfin: "bringing" },
       buy: { "3sg": "buys", past: "bought", nonfin: "buying" },
       build: { "3sg": "builds", past: "built", nonfin: "building" },
-      choose: { "3sg": "chooses", past: "chose", nonfin: "choosing" },
-      draw: { "3sg": "draws", past: "drew", nonfin: "drawing" },
-      drive: { "3sg": "drives", past: "drove", nonfin: "driving" },
-      fall: { "3sg": "falls", past: "fell", nonfin: "falling" },
+      break: { "3sg": "breaks", past: "broke", nonfin: "breaking", perfect: "broken" },
+      become: { "3sg": "becomes", past: "became", nonfin: "becoming", perfect: "become" },
+      choose: { "3sg": "chooses", past: "chose", nonfin: "choosing", perfect: "chosen" },
+      catch: { "3sg": "catches", past: "caught", nonfin: "catching", perfect: "caught" },
+      draw: { "3sg": "draws", past: "drew", nonfin: "drawing", perfect: "drawn" },
+      drive: { "3sg": "drives", past: "drove", nonfin: "driving", perfect: "driven" },
+      fall: { "3sg": "falls", past: "fell", nonfin: "falling", perfect: "fallen" },
       feel: { "3sg": "feels", past: "felt", nonfin: "feeling" },
+      fight: { "3sg": "fights", past: "fought", nonfin: "fighting", perfect: "fought" },
       fly: { "3sg": "flies", past: "flew", nonfin: "flying" },
-      forget: { "3sg": "forgets", past: "forgot", nonfin: "forgetting" },
+      forget: { "3sg": "forgets", past: "forgot", nonfin: "forgetting", perfect: "forgotten" },
       freeze: { "3sg": "freezes", past: "froze", nonfin: "freezing" },
-      grow: { "3sg": "grows", past: "grew", nonfin: "growing" },
+      grow: { "3sg": "grows", past: "grew", nonfin: "growing", perfect: "grown" },
       hear: { "3sg": "hears", past: "heard", nonfin: "hearing" },
-      hide: { "3sg": "hides", past: "hid", nonfin: "hiding" },
+      hide: { "3sg": "hides", past: "hid", nonfin: "hiding", perfect: "hidden" },
       hold: { "3sg": "holds", past: "held", nonfin: "holding" },
       keep: { "3sg": "keeps", past: "kept", nonfin: "keeping" },
       lead: { "3sg": "leads", past: "led", nonfin: "leading" },
@@ -165,26 +180,41 @@ export const rawBundle: RawBundle = {
       pay: { "3sg": "pays", past: "paid", nonfin: "paying" },
       put: { "3sg": "puts", past: "put", nonfin: "putting" },
       ride: { "3sg": "rides", past: "rode", nonfin: "riding" },
-      rise: { "3sg": "rises", past: "rose", nonfin: "rising" },
+      rise: { "3sg": "rises", past: "rose", nonfin: "rising", perfect: "risen" },
       sell: { "3sg": "sells", past: "sold", nonfin: "selling" },
       send: { "3sg": "sends", past: "sent", nonfin: "sending" },
       set: { "3sg": "sets", past: "set", nonfin: "setting" },
-      show: { "3sg": "shows", past: "showed", nonfin: "showing" },
+      show: { "3sg": "shows", past: "showed", nonfin: "showing", perfect: "shown" },
       shut: { "3sg": "shuts", past: "shut", nonfin: "shutting" },
       sing: { "3sg": "sings", past: "sang", nonfin: "singing" },
       sit: { "3sg": "sits", past: "sat", nonfin: "sitting" },
       sleep: { "3sg": "sleeps", past: "slept", nonfin: "sleeping" },
+      spend: { "3sg": "spends", past: "spent", nonfin: "spending", perfect: "spent" },
       stand: { "3sg": "stands", past: "stood", nonfin: "standing" },
       steal: { "3sg": "steals", past: "stole", nonfin: "stealing" },
       swim: { "3sg": "swims", past: "swam", nonfin: "swimming" },
       teach: { "3sg": "teaches", past: "taught", nonfin: "teaching" },
       tell: { "3sg": "tells", past: "told", nonfin: "telling" },
-      throw: { "3sg": "throws", past: "threw", nonfin: "throwing" },
+      throw: { "3sg": "throws", past: "threw", nonfin: "throwing", perfect: "thrown" },
       understand: { "3sg": "understands", past: "understood", nonfin: "understanding" },
       wake: { "3sg": "wakes", past: "woke", nonfin: "waking" },
       wear: { "3sg": "wears", past: "wore", nonfin: "wearing" },
-      win: { "3sg": "wins", past: "won", nonfin: "winning" },
+      win: { "3sg": "wins", past: "won", nonfin: "winning", perfect: "won" },
     },
+    // Apostrophe-clitic surface forms (n't/'re/'ve/'ll/'d/'s) tokenize as one
+    // word (the tokenizer joins on '); without a rule they floor to "noun".
+    // `root` witnesses the stem the clitic contracts to; `tag` is that stem's
+    // closed-class category so downstream reading treats "isn't"/"we've" as
+    // aux/cop, not an unrecognized noun. "'s" is tagged toward its verbal
+    // (is/has) reading; a possessive "'s" is not distinguished from it here.
+    rootPatternRules: [
+      { pattern: ".+n't$", tag: "aux", root: "not", features: ["clitic"] },
+      { pattern: ".+'re$", tag: "cop", root: "are", features: ["clitic"] },
+      { pattern: ".+'ve$", tag: "aux", root: "have", features: ["clitic"] },
+      { pattern: ".+'ll$", tag: "aux", root: "will", features: ["clitic"] },
+      { pattern: ".+'d$", tag: "aux", root: "had", features: ["clitic"] },
+      { pattern: ".+'s$", tag: "aux", root: "is", features: ["clitic"] },
+    ],
   },
   reference: {
     pronouns: {
@@ -232,6 +262,27 @@ export const rawBundle: RawBundle = {
   },
   segmentation: {
     sentenceTerminatorPattern: "[.!?]",
-    abbreviations: ["mr", "mrs", "dr", "vs", "etc"],
+    abbreviations: [
+      "U.S.", "U.K.", "U.N.", "E.U.", "Dr.", "Mr.", "Mrs.", "Ms.", "Prof.",
+      "Sen.", "Rep.", "Gov.", "Gen.", "Inc.", "Ltd.", "Corp.", "Co.", "Jr.",
+      "Sr.", "St.", "Mt.", "vs.", "etc.", "e.g.", "i.e.", "Jan.", "Feb.",
+      "Mar.", "Apr.", "Jun.", "Jul.", "Aug.", "Sep.", "Sept.", "Oct.",
+      "Nov.", "Dec.", "No.", "approx.",
+    ],
   },
+  // Discourse-reading hooks consumed by @lenticule-science/communicating's
+  // optional attribution/modality readings (absent = no attribution/hedge
+  // reading, never an error — see attributionsFromWords/modalizing there).
+  reportingVerbs: [
+    "say", "tell", "report", "claim", "announce", "warn", "add", "note",
+    "write", "state", "confirm", "deny", "argue", "estimate", "suggest",
+    "find", "conclude", "describe", "call", "insist", "acknowledge",
+    "admit", "allege", "predict", "project", "expect",
+  ],
+  attributionMarkers: ["according to", "per", "as reported by", "citing"],
+  hedges: [
+    "likely", "unlikely", "possibly", "reportedly", "allegedly",
+    "apparently", "appears", "seems", "expected", "projected", "estimated",
+    "roughly", "about", "around", "nearly", "almost",
+  ],
 };

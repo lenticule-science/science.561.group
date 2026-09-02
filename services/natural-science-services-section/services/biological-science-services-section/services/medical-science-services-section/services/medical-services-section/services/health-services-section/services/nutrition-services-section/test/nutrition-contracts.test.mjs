@@ -5,7 +5,7 @@ import { createSchema, inspectSchema, schemaCorpus, validateInstance } from "@re
 
 const root = new URL("../", import.meta.url);
 const readJson = async (path) => JSON.parse(await readFile(new URL(path, root), "utf8"));
-const schemas = await Promise.all([readJson("lib/schemas/nutrition-intake-candidate-v1.schema.json"), readJson("lib/schemas/nutrition-food-assertion-snapshot-v1.schema.json"), readJson("lib/schemas/nutrition-intake-event-v1.schema.json"), readJson("lib/schemas/nutrition-biometric-observation-v1.schema.json")]);
+const schemas = await Promise.all([readJson("lib/schemas/nutrition-intake-candidate-v1.schema.json"), readJson("lib/schemas/nutrition-food-assertion-snapshot-v1.schema.json"), readJson("lib/schemas/nutrition-intake-event-v1.schema.json"), readJson("lib/schemas/nutrition-biometric-observation-v1.schema.json"), readJson("../../lib/schemas/biometric-observation-v1.schema.json")]);
 const corpus = schemaCorpus(schemas);
 const byId = new Map(schemas.map((schema) => [schema.$id, schema]));
 const ids = new Set(byId.keys());

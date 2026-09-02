@@ -116,9 +116,9 @@ export declare const messageCarrier: import("@red-cup-engineering/relating").Car
     readonly speaker: unknown;
     readonly listener: unknown;
     readonly charge: unknown;
+    readonly content: unknown;
     readonly channel: unknown;
     readonly status: "sent" | "received";
-    readonly content: unknown;
 }>;
 export type MessageCarrier = Omit<FromSchema<typeof messageSchema>, "speaker" | "listener" | "channel"> & {
     readonly speaker: SpeakerCarrier;

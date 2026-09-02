@@ -5,7 +5,7 @@ the study of nervous systems: attention and its allocation, prospection
 and simulation, threat and safety learning, and the neural substrates of
 affect.
 
-It holds the estate's oldest attention-as-neurocognitive-system material
+It holds the org's oldest attention-as-neurocognitive-system material
 (see `content/text/documents/articles/notes/`) and, as of 2026-08-26,
 the neuroscience calibration of the attention/affect research line —
 the audit of the hope–care–fear budget-rivalry theses against current

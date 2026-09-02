@@ -15,6 +15,7 @@ export type {
   DescentResult,
   ChargeValue, ChargeStatus,
   ParsedWord, ParsedArc, ParsedAnswer, FoldPath, FoldTower, ParseResult,
+  AttributionSpan, Attribution, ModalityReading,
   ParseForestReading, ParseForest,
   CohomologyObstruction, CohomologyResult,
   BundleMeta, BundleLexicon, SuffixRule, BundleMorphology,
@@ -37,7 +38,7 @@ export {
 
 
 
-export { articulateCommunication } from "./articulating.mjs";
+export { articulate, articulateCommunication, findQuoteSpans } from "./articulating.mjs";
 
 
 export { parse, parseCommunication } from "./parsing.mjs";

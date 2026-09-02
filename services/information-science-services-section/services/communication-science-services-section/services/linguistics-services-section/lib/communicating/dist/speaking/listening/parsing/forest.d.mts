@@ -19,7 +19,7 @@ export declare const parseForestReadingSchema: {
             readonly additionalProperties: false;
             readonly properties: {
                 readonly tier: {
-                    readonly enum: readonly ["document", "block", "sentence", "clause", "word", "rule"];
+                    readonly enum: readonly ["document", "block", "sentence", "clause", "word", "quote", "rule"];
                 };
                 readonly start: {
                     readonly anyOf: readonly [{
@@ -39,6 +39,9 @@ export declare const parseForestReadingSchema: {
                 };
                 readonly text: {
                     readonly type: "string";
+                };
+                readonly numeric: {
+                    readonly type: "boolean";
                 };
             };
         };
@@ -81,6 +84,76 @@ export declare const parseForestReadingSchema: {
                 };
             };
         };
+        readonly quotes: {
+            readonly type: "array";
+            readonly items: {
+                readonly type: "object";
+                readonly required: readonly ["tier", "start", "end", "text"];
+                readonly additionalProperties: false;
+                readonly properties: {
+                    readonly tier: {
+                        readonly enum: readonly ["document", "block", "sentence", "clause", "word", "quote", "rule"];
+                    };
+                    readonly start: {
+                        readonly anyOf: readonly [{
+                            readonly type: "integer";
+                            readonly minimum: 0;
+                        }, {
+                            readonly type: "null";
+                        }];
+                    };
+                    readonly end: {
+                        readonly anyOf: readonly [{
+                            readonly type: "integer";
+                            readonly minimum: 0;
+                        }, {
+                            readonly type: "null";
+                        }];
+                    };
+                    readonly text: {
+                        readonly type: "string";
+                    };
+                    readonly numeric: {
+                        readonly type: "boolean";
+                    };
+                };
+            };
+        };
+        readonly numericTokens: {
+            readonly type: "array";
+            readonly items: {
+                readonly type: "object";
+                readonly required: readonly ["tier", "start", "end", "text"];
+                readonly additionalProperties: false;
+                readonly properties: {
+                    readonly tier: {
+                        readonly enum: readonly ["document", "block", "sentence", "clause", "word", "quote", "rule"];
+                    };
+                    readonly start: {
+                        readonly anyOf: readonly [{
+                            readonly type: "integer";
+                            readonly minimum: 0;
+                        }, {
+                            readonly type: "null";
+                        }];
+                    };
+                    readonly end: {
+                        readonly anyOf: readonly [{
+                            readonly type: "integer";
+                            readonly minimum: 0;
+                        }, {
+                            readonly type: "null";
+                        }];
+                    };
+                    readonly text: {
+                        readonly type: "string";
+                    };
+                    readonly numeric: {
+                        readonly type: "boolean";
+                    };
+                };
+            };
+        };
     };
 };
 export declare const parseForestSchema: {
@@ -116,7 +189,7 @@ export declare const parseForestSchema: {
                         readonly additionalProperties: false;
                         readonly properties: {
                             readonly tier: {
-                                readonly enum: readonly ["document", "block", "sentence", "clause", "word", "rule"];
+                                readonly enum: readonly ["document", "block", "sentence", "clause", "word", "quote", "rule"];
                             };
                             readonly start: {
                                 readonly anyOf: readonly [{
@@ -136,6 +209,9 @@ export declare const parseForestSchema: {
                             };
                             readonly text: {
                                 readonly type: "string";
+                            };
+                            readonly numeric: {
+                                readonly type: "boolean";
                             };
                         };
                     };
@@ -174,6 +250,76 @@ export declare const parseForestSchema: {
                                 };
                                 readonly value: {
                                     readonly enum: readonly ["absurd", "potential", "active", "stable"];
+                                };
+                            };
+                        };
+                    };
+                    readonly quotes: {
+                        readonly type: "array";
+                        readonly items: {
+                            readonly type: "object";
+                            readonly required: readonly ["tier", "start", "end", "text"];
+                            readonly additionalProperties: false;
+                            readonly properties: {
+                                readonly tier: {
+                                    readonly enum: readonly ["document", "block", "sentence", "clause", "word", "quote", "rule"];
+                                };
+                                readonly start: {
+                                    readonly anyOf: readonly [{
+                                        readonly type: "integer";
+                                        readonly minimum: 0;
+                                    }, {
+                                        readonly type: "null";
+                                    }];
+                                };
+                                readonly end: {
+                                    readonly anyOf: readonly [{
+                                        readonly type: "integer";
+                                        readonly minimum: 0;
+                                    }, {
+                                        readonly type: "null";
+                                    }];
+                                };
+                                readonly text: {
+                                    readonly type: "string";
+                                };
+                                readonly numeric: {
+                                    readonly type: "boolean";
+                                };
+                            };
+                        };
+                    };
+                    readonly numericTokens: {
+                        readonly type: "array";
+                        readonly items: {
+                            readonly type: "object";
+                            readonly required: readonly ["tier", "start", "end", "text"];
+                            readonly additionalProperties: false;
+                            readonly properties: {
+                                readonly tier: {
+                                    readonly enum: readonly ["document", "block", "sentence", "clause", "word", "quote", "rule"];
+                                };
+                                readonly start: {
+                                    readonly anyOf: readonly [{
+                                        readonly type: "integer";
+                                        readonly minimum: 0;
+                                    }, {
+                                        readonly type: "null";
+                                    }];
+                                };
+                                readonly end: {
+                                    readonly anyOf: readonly [{
+                                        readonly type: "integer";
+                                        readonly minimum: 0;
+                                    }, {
+                                        readonly type: "null";
+                                    }];
+                                };
+                                readonly text: {
+                                    readonly type: "string";
+                                };
+                                readonly numeric: {
+                                    readonly type: "boolean";
                                 };
                             };
                         };
@@ -224,9 +370,10 @@ export declare const parseForestReadingCarrier: import("@red-cup-engineering/rel
     readonly id: string;
     readonly span: {
         readonly text: string;
-        readonly tier: "document" | "block" | "sentence" | "clause" | "word" | "rule";
+        readonly tier: "document" | "block" | "sentence" | "clause" | "word" | "quote" | "rule";
         readonly start: number | null;
         readonly end: number | null;
+        readonly numeric?: boolean;
     };
     readonly parse: Record<string, unknown>;
     readonly glued: boolean;
@@ -237,6 +384,20 @@ export declare const parseForestReadingCarrier: import("@red-cup-engineering/rel
         readonly value: "potential" | "active" | "stable" | "absurd";
         readonly label: string;
         readonly on: string;
+    }[];
+    readonly quotes?: readonly {
+        readonly text: string;
+        readonly tier: "document" | "block" | "sentence" | "clause" | "word" | "quote" | "rule";
+        readonly start: number | null;
+        readonly end: number | null;
+        readonly numeric?: boolean;
+    }[];
+    readonly numericTokens?: readonly {
+        readonly text: string;
+        readonly tier: "document" | "block" | "sentence" | "clause" | "word" | "quote" | "rule";
+        readonly start: number | null;
+        readonly end: number | null;
+        readonly numeric?: boolean;
     }[];
 }>;
 export declare const parseForestCarrier: import("@red-cup-engineering/relating").Carrier<{
@@ -258,9 +419,10 @@ export declare const parseForestCarrier: import("@red-cup-engineering/relating")
         readonly id: string;
         readonly span: {
             readonly text: string;
-            readonly tier: "document" | "block" | "sentence" | "clause" | "word" | "rule";
+            readonly tier: "document" | "block" | "sentence" | "clause" | "word" | "quote" | "rule";
             readonly start: number | null;
             readonly end: number | null;
+            readonly numeric?: boolean;
         };
         readonly parse: Record<string, unknown>;
         readonly glued: boolean;
@@ -271,6 +433,20 @@ export declare const parseForestCarrier: import("@red-cup-engineering/relating")
             readonly value: "potential" | "active" | "stable" | "absurd";
             readonly label: string;
             readonly on: string;
+        }[];
+        readonly quotes?: readonly {
+            readonly text: string;
+            readonly tier: "document" | "block" | "sentence" | "clause" | "word" | "quote" | "rule";
+            readonly start: number | null;
+            readonly end: number | null;
+            readonly numeric?: boolean;
+        }[];
+        readonly numericTokens?: readonly {
+            readonly text: string;
+            readonly tier: "document" | "block" | "sentence" | "clause" | "word" | "quote" | "rule";
+            readonly start: number | null;
+            readonly end: number | null;
+            readonly numeric?: boolean;
         }[];
     }[];
 }>;

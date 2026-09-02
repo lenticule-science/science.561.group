@@ -37,7 +37,9 @@ This section does not restate those carriers. It defines the clinical
 entities, names the instruments, and holds the syntheses that cross all
 four.
 
-Its material is organized by artifact role under `content/`.
+Its material is organized by artifact role under `content/`; the
+structured literature synthesis behind the claims above lives at
+[`content/text/theories/predication-literature-review-mecfs-mechanisms.md`](content/text/theories/predication-literature-review-mecfs-mechanisms.md).
 
 ## Thread-mates
 

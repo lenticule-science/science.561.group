@@ -19,6 +19,8 @@ export function read(text, bundle) {
         tower: { folds: 0, fixedPoint: true, sizes: [] },
         conflicts: [],
         voids: [],
+        attributions: [],
+        modality: { hedges: [], future: [], auxiliaries: [] },
     };
     return {
         text,

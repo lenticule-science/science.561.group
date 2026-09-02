@@ -1,9 +1,11 @@
 import { valueOf } from "@red-cup-engineering/relating";
 import { articulateCommunication } from "./articulating.mjs";
-import { construe, wordsInSentence } from "./construing.mjs";
+import { construe, spansInSentenceOfTier, wordsInSentence } from "./construing.mjs";
 import { descend } from "./descending.mjs";
 import { fold } from "./folding.mjs";
 import { chargeStatus } from "../algebra/index.mjs";
+import { attributionsFromWords } from "./attributing.mjs";
+import { modalityFromWords } from "./modalizing.mjs";
 /** Parse a sentence span and return the full ParseResult. */
 export function parse(sentenceSpan, base, bundle) {
     const wordSpans = wordsInSentence(sentenceSpan, base.spans);
@@ -62,6 +64,9 @@ export function parse(sentenceSpan, base, bundle) {
     const { paths: compositions, tower } = fold(arcs);
     const conflicts = parsedAnswers.filter((a) => a.status === "ambiguous");
     const voids = parsedAnswers.filter((a) => a.status === "void");
+    const quotes = spansInSentenceOfTier(sentenceSpan, base.spans, "quote");
+    const attributions = attributionsFromWords(words, parsedArcs, quotes, base.text, bundle);
+    const modality = modalityFromWords(words, bundle);
     return {
         words: parsedWords,
         arcs: parsedArcs,
@@ -70,6 +75,8 @@ export function parse(sentenceSpan, base, bundle) {
         tower,
         conflicts,
         voids,
+        attributions,
+        modality,
     };
 }
 /** Parse the first sentence of an admitted communicating document. */

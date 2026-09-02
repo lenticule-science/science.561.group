@@ -10,16 +10,17 @@ import { carrierFrom, chargeValue, joinKnowledgeValue, } from "@red-cup-engineer
 import { articulateCommunication } from "./articulating.mjs";
 import { cohomology } from "./cohomology.mjs";
 import { parse } from "./parsing.mjs";
-import { wordsInSentence } from "./construing.mjs";
+import { spansInSentenceOfTier, wordsInSentence } from "./construing.mjs";
 const spanSchema = {
     type: "object",
     required: ["tier", "start", "end", "text"],
     additionalProperties: false,
     properties: {
-        tier: { enum: ["document", "block", "sentence", "clause", "word", "rule"] },
+        tier: { enum: ["document", "block", "sentence", "clause", "word", "quote", "rule"] },
         start: { anyOf: [{ type: "integer", minimum: 0 }, { type: "null" }] },
         end: { anyOf: [{ type: "integer", minimum: 0 }, { type: "null" }] },
         text: { type: "string" },
+        numeric: { type: "boolean" },
     },
 };
 const obstructionSchema = {
@@ -49,6 +50,8 @@ export const parseForestReadingSchema = {
         complete: { type: "boolean" },
         ambiguity: { type: "integer", minimum: 0 },
         obstructions: { type: "array", items: obstructionSchema },
+        quotes: { type: "array", items: spanSchema },
+        numericTokens: { type: "array", items: spanSchema },
     },
 };
 export const parseForestSchema = {
@@ -81,7 +84,10 @@ function parseCharge(result) {
 function readingId(span, index) {
     return `reading@${span.start ?? "?"}-${span.end ?? "?"}:${index}`;
 }
-function readingFromParse(span, result, index) {
+/** Build one reading, including the quote spans and numeric word-tokens that fall
+ * within `span` (read off `allSpans`, the full articulation's span set) so a
+ * consumer gets both through the reading without re-deriving them. */
+function readingFromParse(span, result, index, allSpans) {
     const coh = cohomology(result);
     const reading = Object.freeze({
         kind: "communicating.parse-forest.reading",
@@ -93,6 +99,8 @@ function readingFromParse(span, result, index) {
         complete: result.voids.length === 0,
         ambiguity: coh.obstructions.length,
         obstructions: Object.freeze([...coh.obstructions]),
+        quotes: Object.freeze(spansInSentenceOfTier(span, allSpans, "quote")),
+        numericTokens: Object.freeze(wordsInSentence(span, allSpans).filter((s) => s.numeric === true)),
     });
     parseForestReadingCarrier.assert(reading, "parse forest reading");
     return reading;
@@ -102,7 +110,7 @@ function sentenceSpans(base) {
     return sentences.length === 0 ? [base.document] : sentences;
 }
 export function parseForestFromArticulation(base, bundle) {
-    const readings = sentenceSpans(base).map((sentence, index) => readingFromParse(sentence, parse(sentence, base, bundle), index));
+    const readings = sentenceSpans(base).map((sentence, index) => readingFromParse(sentence, parse(sentence, base, bundle), index, base.spans));
     const obstructions = Object.freeze(readings.flatMap((reading) => reading.obstructions));
     const forest = Object.freeze({
         kind: "communicating.parse-forest",
@@ -119,10 +127,11 @@ export function parseForestFromArticulation(base, bundle) {
 }
 export function parseForest(sentenceSpan, base, bundle) {
     const wordSpans = wordsInSentence(sentenceSpan, base.spans);
+    const quoteSpans = spansInSentenceOfTier(sentenceSpan, base.spans, "quote");
     const localBase = Object.freeze({
         ...base,
         document: sentenceSpan,
-        spans: Object.freeze([sentenceSpan, ...wordSpans]),
+        spans: Object.freeze([sentenceSpan, ...wordSpans, ...quoteSpans]),
     });
     return parseForestFromArticulation(localBase, bundle);
 }

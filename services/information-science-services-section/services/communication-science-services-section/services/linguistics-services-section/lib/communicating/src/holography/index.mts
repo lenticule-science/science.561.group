@@ -46,6 +46,8 @@ export function read(text: string, bundle: CompiledBundle): Reading {
     tower: { folds: 0, fixedPoint: true, sizes: [] },
     conflicts: [],
     voids: [],
+    attributions: [],
+    modality: { hedges: [], future: [], auxiliaries: [] },
   };
   return {
     text,
