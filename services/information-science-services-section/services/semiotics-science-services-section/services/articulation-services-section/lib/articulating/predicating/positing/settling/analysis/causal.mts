@@ -47,6 +47,11 @@ export interface CausalSettlementObstruction {
   readonly offending?: CausalLink;
 }
 
+export const isCausalSettlementObstruction = (value: unknown): value is CausalSettlementObstruction =>
+  typeof value === "object"
+  && value !== null
+  && (value as { readonly kind?: string }).kind === "lorentzian.causalSettle-obstruction";
+
 export type CausalSettlementJudgment = CausalSettlementWitness | CausalSettlementObstruction;
 
 const linkKey = (link: CausalLink): string => `${link.from}\u0000${link.to}`;
@@ -406,10 +411,6 @@ export function causalMobiusReceipt(): CausalMobiusReceipt {
     hallSumAtApex,
     mobiusEqualsHallSumAtApex: true as const,
   });
-}
-
-function isCausalSettlementObstruction(value: readonly string[] | CausalSettlementObstruction): value is CausalSettlementObstruction {
-  return !Array.isArray(value);
 }
 
 export const cDiamond = (layer: number): number => layer === 0 ? -1 : layer === 2 ? 1 : 0;

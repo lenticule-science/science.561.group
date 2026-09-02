@@ -20,6 +20,7 @@ import {
 } from "./bilattice-charge.mjs";
 import {
   readValuationFiber,
+  sameValuationFiber as sameFiber,
   valuationFiberCarrier,
   valuationLeqKnowledge,
   type ValuationFiberCarrier,
@@ -120,10 +121,6 @@ const unique = (items: readonly string[]): boolean => new Set(items).size === it
 
 const knowledgeLeqValue = (left: ChargeValueName, right: ChargeValueName): boolean =>
   chargeValueName(joinKnowledgeValue(chargeValue(left), chargeValue(right))) === right;
-
-const sameFiber = (left: ValuationFiberCarrier, right: ValuationFiberCarrier): boolean =>
-  left.points.length === right.points.length
-  && left.points.every((point, index) => point === right.points[index] && readValuationFiber(left, point) === readValuationFiber(right, point));
 
 const samePointCarrier = (left: ValuationFiberCarrier, right: ValuationFiberCarrier): boolean =>
   left.points.length === right.points.length && left.points.every((point, index) => point === right.points[index]);

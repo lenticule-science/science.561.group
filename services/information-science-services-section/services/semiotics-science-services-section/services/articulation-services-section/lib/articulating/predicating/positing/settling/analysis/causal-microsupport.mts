@@ -14,6 +14,7 @@ import {
 } from "../../bilattice-charge.mjs";
 import {
   diamondCausalSet,
+  isCausalSettlementObstruction as isObstruction,
   settleCausalSet,
   type CausalLink,
   type CausalSetCarrier,
@@ -44,12 +45,6 @@ export interface CausalMicrosupportReceipt {
 }
 
 const edgeKey = (edge: Codirection): string => `${edge.from}->${edge.to}`;
-
-function isObstruction(value: unknown): value is CausalSettlementObstruction {
-  return typeof value === "object"
-    && value !== null
-    && (value as { readonly kind?: string }).kind === "lorentzian.causalSettle-obstruction";
-}
 
 function settledCarrier(carrier: CausalSetCarrier): CausalSetCarrier | CausalSettlementObstruction {
   const settled = settleCausalSet(carrier);

@@ -13,12 +13,7 @@ import {
   type ChargeValue,
   type ChargeValueName,
 } from "../../bilattice-charge.mjs";
-
-const assertIndex = (name: string, value: number, length: number): void => {
-  if (!Number.isSafeInteger(value) || value < 0 || value >= length) {
-    throw new RangeError(`${name}: expected an index into the carrier`);
-  }
-};
+import { assertIndex } from "./order-infra.mjs";
 
 const requireSquareRelation = (le: readonly (readonly boolean[])[], size: number): void => {
   if (le.length !== size) throw new RangeError("laxSlack: relation row count must match carrier size");

@@ -178,6 +178,7 @@ export {
   truthImplicationValue,
   valuationFiberCarrier,
   readValuationFiber,
+  sameValuationFiber,
   valuationTruthMeet,
   valuationTruthJoin,
   valuationTruthImplication,

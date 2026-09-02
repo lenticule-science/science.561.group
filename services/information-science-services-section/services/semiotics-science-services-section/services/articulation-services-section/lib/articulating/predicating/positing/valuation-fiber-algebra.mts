@@ -190,9 +190,11 @@ export const valuationTruthJoin = (left: ValuationFiberCarrier, right: Valuation
 export const valuationTruthImplication = (antecedent: ValuationFiberCarrier, consequent: ValuationFiberCarrier): ValuationFiberCarrier =>
   zipFiber(antecedent, consequent, (a, c) => chargeValueName(truthImplicationValue(chargeValue(a), chargeValue(c))));
 
-const sameFiber = (left: ValuationFiberCarrier, right: ValuationFiberCarrier): boolean =>
+export const sameValuationFiber = (left: ValuationFiberCarrier, right: ValuationFiberCarrier): boolean =>
   left.points.length === right.points.length
   && left.points.every((point, index) => point === right.points[index] && readValuationFiber(left, point) === readValuationFiber(right, point));
+
+const sameFiber = sameValuationFiber;
 
 const leqTruthValue = (left: ChargeValueName, right: ChargeValueName): boolean => leqTruth(charge(chargeValue(left)), charge(chargeValue(right)));
 const leqKnowledgeValue = (left: ChargeValueName, right: ChargeValueName): boolean => leqKnowledge(charge(chargeValue(left)), charge(chargeValue(right)));

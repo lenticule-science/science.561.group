@@ -8,6 +8,7 @@
 import {
   causalMobius,
   diamondCausalSet,
+  isCausalSettlementObstruction,
   settleCausalSet,
   type CausalLink,
   type CausalSetCarrier,
@@ -41,12 +42,6 @@ export interface CausalManifoldlikenessReceipt {
 
 function hasLink(links: readonly CausalLink[], from: string, to: string): boolean {
   return links.some((link) => link.from === from && link.to === to);
-}
-
-function isCausalSettlementObstruction(value: unknown): value is CausalSettlementObstruction {
-  return typeof value === "object"
-    && value !== null
-    && (value as { readonly kind?: string }).kind === "lorentzian.causalSettle-obstruction";
 }
 
 function assertKnownMap(map: EventMap, event: string): string {

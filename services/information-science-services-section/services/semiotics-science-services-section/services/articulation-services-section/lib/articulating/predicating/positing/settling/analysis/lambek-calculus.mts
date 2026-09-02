@@ -6,27 +6,15 @@
  * left/right residual tables satisfying the two bi-residuation adjunctions.
  */
 import {
+  assertIndex,
   lattice,
+  requireBinaryTable,
   type FiniteLatticeSystem,
   type LatticeObstruction,
 } from "./order-infra.mjs";
 
-const assertIndex = (name: string, value: number, length: number): void => {
-  if (!Number.isSafeInteger(value) || value < 0 || value >= length) {
-    throw new RangeError(`${name}: expected an index into the carrier`);
-  }
-};
-
 const freezeTable = (table: readonly (readonly number[])[]): readonly (readonly number[])[] =>
   Object.freeze(table.map((row) => Object.freeze([...row])));
-
-const requireBinaryTable = (name: string, table: readonly (readonly number[])[], size: number): void => {
-  if (table.length !== size) throw new RangeError(`${name}: table row count must match carrier size`);
-  table.forEach((row, left) => {
-    if (row.length !== size) throw new RangeError(`${name}: table must be square`);
-    row.forEach((target, right) => assertIndex(`${name}[${left}][${right}]`, target, size));
-  });
-};
 
 export interface FiniteLambekAlgebraSystem {
   readonly kind: "lambek.finiteAlgebraSystem";

@@ -8,28 +8,16 @@
  * laws, residuation adjunction, integrality, and derived laws.
  */
 import {
+  assertIndex,
   boundedLattice,
   latticeOrder,
+  requireBinaryTable,
   type BoundedLatticeObstruction,
   type FiniteLatticeSystem,
 } from "./order-infra.mjs";
 
-const assertIndex = (name: string, value: number, length: number): void => {
-  if (!Number.isSafeInteger(value) || value < 0 || value >= length) {
-    throw new RangeError(`${name}: expected an index into the carrier`);
-  }
-};
-
 const freezeTable = (table: readonly (readonly number[])[]): readonly (readonly number[])[] =>
   Object.freeze(table.map((row) => Object.freeze([...row])));
-
-const requireBinaryTable = (name: string, table: readonly (readonly number[])[], size: number): void => {
-  if (table.length !== size) throw new RangeError(`${name}: table row count must match carrier size`);
-  table.forEach((row, left) => {
-    if (row.length !== size) throw new RangeError(`${name}: table must be square`);
-    row.forEach((target, right) => assertIndex(`${name}[${left}][${right}]`, target, size));
-  });
-};
 
 const leAt = (system: FiniteResiduatedLatticeSystem, left: number, right: number): boolean =>
   system.lattice.meet[left]?.[right] === left;

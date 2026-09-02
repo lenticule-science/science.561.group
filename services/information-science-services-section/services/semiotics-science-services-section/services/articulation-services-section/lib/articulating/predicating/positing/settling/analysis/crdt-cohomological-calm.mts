@@ -27,6 +27,7 @@ import {
 } from "../../closure-operator-fiber.mjs";
 import {
   readValuationFiber,
+  sameValuationFiber,
   valuationFiberCarrier,
   valuationLeqKnowledge,
   type ValuationFiberCarrier,
@@ -97,10 +98,6 @@ export const mergeDeltas = (deltas: readonly ChargeValueName[]): ChargeValueName
 const sameMembership = (left: readonly ChargeValueName[], right: readonly ChargeValueName[]): boolean =>
   chargeValueNames.every((value) => left.includes(value) === right.includes(value));
 
-const sameFiber = (left: ValuationFiberCarrier, right: ValuationFiberCarrier): boolean =>
-  left.points.length === right.points.length
-  && left.points.every((point, index) => point === right.points[index] && readValuationFiber(left, point) === readValuationFiber(right, point));
-
 const allValuations = (points: readonly string[]): readonly ValuationFiberCarrier[] => {
   if (points.length > 4) throw new RangeError("crdtCalm: exhaustive valuation checks are limited to at most 4 points");
   const out: ValuationFiberCarrier[] = [];
@@ -161,9 +158,9 @@ export function calmConvergenceFactsReceipt(): CalmConvergenceFactsReceipt {
   const right = valuationFiberCarrier(cells, { p: "absurd", q: "active" });
   const closure = knowledgeJoinClosure("potential");
   const fixedPoint = liftClosure(closure, valuationFiberCarrier(cells, { p: "active", q: "stable" }));
-  const quiescentIffClosureFixed = sameFiber(liftClosure(closure, fixedPoint), fixedPoint);
+  const quiescentIffClosureFixed = sameValuationFiber(liftClosure(closure, fixedPoint), fixedPoint);
   const mutuallyBelowImpliesEqual = allValuations(cells).every((u) => allValuations(cells).every((v) =>
-    !(valuationLeqKnowledge(u, v) && valuationLeqKnowledge(v, u)) || sameFiber(u, v)));
+    !(valuationLeqKnowledge(u, v) && valuationLeqKnowledge(v, u)) || sameValuationFiber(u, v)));
   if (!quiescentIffClosureFixed || !mutuallyBelowImpliesEqual) {
     throw new TypeError("calmConvergenceFactsReceipt: finite fixed-point/confluence laws failed");
   }

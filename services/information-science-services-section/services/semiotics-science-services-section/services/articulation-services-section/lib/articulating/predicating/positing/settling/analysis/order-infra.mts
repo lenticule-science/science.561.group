@@ -7,7 +7,7 @@
  * explicit carrier/relation/table data are checked and returned as receipts.
  */
 
-const assertIndex = (name: string, value: number, length: number): void => {
+export const assertIndex = (name: string, value: number, length: number): void => {
   if (!Number.isSafeInteger(value) || value < 0 || value >= length) {
     throw new RangeError(`${name}: expected an index into the carrier`);
   }
@@ -30,8 +30,13 @@ const requireSquareRelation = (le: readonly (readonly boolean[])[], size: number
   });
 };
 
-const requireBinaryTable = (name: string, table: readonly (readonly number[])[], size: number): void => {
-  if (table.length !== size) throw new RangeError(`${name}: table row count must match carrier size`);
+export const requireBinaryTable = (
+  name: string,
+  table: readonly (readonly number[])[],
+  size: number,
+  rowCountMessage = "table row count must match carrier size",
+): void => {
+  if (table.length !== size) throw new RangeError(`${name}: ${rowCountMessage}`);
   table.forEach((row, left) => {
     if (row.length !== size) throw new RangeError(`${name}: table must be square`);
     row.forEach((target, right) => assertIndex(`${name}[${left}][${right}]`, target, size));

@@ -7,18 +7,13 @@
  * endomap table yields least/greatest fixed-point receipts.
  */
 import {
+  assertIndex,
   completeLattice,
   monotoneMap,
   type CompleteLatticeObstruction,
   type FinitePreorderSystem,
   type MonotoneMapObstruction,
 } from "./order-infra.mjs";
-
-const assertIndex = (name: string, value: number, length: number): void => {
-  if (!Number.isSafeInteger(value) || value < 0 || value >= length) {
-    throw new RangeError(`${name}: expected an index into the carrier`);
-  }
-};
 
 const leAt = (system: FinitePreorderSystem, left: number, right: number): boolean => {
   assertIndex("knasterTarski left", left, system.labels.length);
