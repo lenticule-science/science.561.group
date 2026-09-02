@@ -4,7 +4,7 @@ Lakȟótiyapi's language fiber: lexicon, a deliberately curated verb-stem
 morphology, reference, SOV/postposed attachment and segmentation data, plus a
 directly invocable tagging die.
 
-The package owns Lakota data. `@lenticule-science/communicating@0.0.4` owns the
+The package owns Lakota data. `@lenticule-science/communicating@0.0.5` owns the
 language-neutral Mark admission, articulation, charged parse, role and
 cohomology machinery. `./tag` composes those public readings with this bundle;
 it does not import a private section engine. Activity and request IDs preserve
