@@ -66,6 +66,9 @@
     "./dist/astrology/index.mjs": "./dist/astrology/index.mjs",
     "./dist/liturgy/index.mjs": "./dist/liturgy/index.mjs"
   },
+  "dependencies": {
+    "@red-cup-engineering/seeded-random": "0.1.0"
+  },
   "devDependencies": {
     "@types/node": "22.20.1",
     "typescript": "5.9.3"

@@ -7,15 +7,23 @@ settings:
 importers:
 
   .:
+    dependencies:
+      '@red-cup-engineering/seeded-random':
+        specifier: 0.1.0
+        version: 0.1.0
     devDependencies:
       '@types/node':
-        specifier: ^22.0.0
+        specifier: 22.20.1
         version: 22.20.1
       typescript:
-        specifier: ^5.8.0
+        specifier: 5.9.3
         version: 5.9.3
 
 packages:
+
+  '@red-cup-engineering/seeded-random@0.1.0':
+    resolution: {integrity: sha512-A1nsqj3N9HCHOvNoJUGLbZPYtp4ZRMqv0Rtkqg/yK7TadeC8Xlcx/3DKqCNZXiwK9wg/WMvSewtlXneDl/nVCw==}
+    engines: {node: '>=24'}
 
   '@types/node@22.20.1':
     resolution: {integrity: sha512-EANqOCF9QFyra+4pfxUcX9STKJpCLjMbObVzljIJomAWSnuSIEAvyzEU53GaajbXJEgdh0iEcPL+DGvpUd4k1Q==}
@@ -29,6 +37,8 @@ packages:
     resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
 
 snapshots:
+
+  '@red-cup-engineering/seeded-random@0.1.0': {}
 
   '@types/node@22.20.1':
     dependencies:
