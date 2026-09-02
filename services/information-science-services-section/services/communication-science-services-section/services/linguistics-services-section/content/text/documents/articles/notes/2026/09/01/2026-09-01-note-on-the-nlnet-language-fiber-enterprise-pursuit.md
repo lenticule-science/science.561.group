@@ -145,14 +145,9 @@ language and recorded historical band names to the language's own
 knowledge holders, and this note does not add to or resolve that
 deferral.
 
-The application and all offers built on this work continue to carry
-**zero heritage claims** — the standing discipline already applied in
-the NLnet draft itself (see its "On stating identity and mission"
-section) and elsewhere in the tree (e.g.
-`indigenous-data-governance-consulting-services-section`'s advisory
-offer, sold on the founder's own standing rather than on a heritage
-claim). No session may add a tribal-affiliation or heritage claim to
-the application text on the founder's behalf.
+Statements about the founder's identity in the application are the
+founder's own to make. No session may add a tribal-affiliation or
+heritage statement to the application text on the founder's behalf.
 
 ## Open preconditions
 

@@ -418,15 +418,14 @@ of an individual's name, and the 561 Group is described in that same
 corpus as the corporate structure the band's work is conducted through,
 not the band itself.
 
-This draft deliberately does **not** put a tribal-affiliation or
-heritage claim into the application text above, for two reasons stated
+This draft leaves the applicant's identity out of the application text
+above, for two reasons stated
 plainly rather than smoothed over: (1) NLnet's actual form, as fetched,
 does not ask about the applicant's ethnicity or tribal affiliation at
 all — the abstract and prior-experience answers above are complete
 without it; and (2) the source note itself explicitly defers "the
 relation of Pheží Ocháǧe to the recorded band names of Lakota history"
-to "the language's and the tradition's own knowledge holders," i.e. it
-is deliberately not a verified enrollment or tribal-citizenship claim.
+to "the language's and the tradition's own knowledge holders."
 HANDS: the founder decides whether and how to characterize this
 personally in the application (for instance in the free-text
 prior-experience field), and, separately, whether the corpus's account
