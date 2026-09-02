@@ -1,7 +1,7 @@
 # Obsmetrological linguistics
 
 Obsmetrological linguistics is the reading of language through obsmetrologia
-— the estate's Lean 4 / pymetrologic instrument for measurement with
+— the 561 Group's Lean 4 / pymetrologic instrument for measurement with
 provenance, fusion laws, consistency conditions, and error budgets — taken as
 ontologically serious rather than as a metaphor borrowed from physics.
 
