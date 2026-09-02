@@ -89,3 +89,24 @@ plan, and reconciliation of the monograph's Part V against
 `2026-08-21-the-game-the-flywheel-and-the-five-instruments.md`'s instruments
 section, which the plan itself notes will be superseded when that part is
 written.
+
+The engineering program toward what Ch. 16 (*For AI*) calls a
+witness-preserving language machine is active, not just planned. The
+verifier-honesty wedge shipped 2026-09-02: the engine
+(`@lenticule-science/communicating@0.0.5`) fixed closed-class copula
+tagging and irregular/regular-3sg verb recognition (78/78 tests), backported
+as a real postcondition check across all five language fibers
+(`english-language-algebra@0.1.6`, `lakota-language-algebra@0.1.4`,
+`latin-language-algebra@0.1.4`, `tokipona-language-algebra@0.1.4`,
+`mandarin-language-algebra@0.1.2`, every fiber green after the backport),
+and closed for Mandarin specifically with a 172-entry source-cited
+verb-stem allowlist. A same-day independent assay found the fix real but
+incomplete — a plain plural-subject sentence ("The cats chase the mouse.")
+still misparses, and the Mandarin allowlist surfaces new, untested
+breakage on 把-sentences — so the reference implementation Ch. 16 cites is
+closer, not finished. Still owed, named rather than left implicit: EAVT
+strata (asserted/saturated/settled, still lacking per the EAVT custody
+ruling), the proposer (SHRIMP) runtime that would let this engine's
+readings enter a repair loop instead of only a test suite, and MASH's
+exchange/settlement half, so a contested reading can be retained instead
+of silently resolved.
