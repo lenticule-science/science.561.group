@@ -4,6 +4,7 @@ import { existsSync, lstatSync, readFileSync, realpathSync } from "node:fs";
 import { dirname, join, relative, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { createSemanticRecordJournal } from "@red-cup-engineering/semantic-record-journal-service";
+import { canonicalJsonByteCarrier, jsonByteCarrierValue } from "@red-cup-engineering/json-byte-carrier-service";
 
 export const NODE_ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 export const ACTOR = "urn:ame:artificial-intelligence-research-enterprise";
@@ -15,9 +16,9 @@ const CONTENT_ROOT = join(NODE_ROOT, "content");
 const REQUIRED_USES = ["notebooklm-transformation", "artificial-intelligence-curriculum", "public-youtube-release"];
 const ID = /^[a-z0-9]+(?:-[a-z0-9]+)*$/u;
 
-export function canonical(value) { if (value instanceof Uint8Array) return `{"$bytes":${JSON.stringify(Buffer.from(value).toString("base64url"))}}`; if (Array.isArray(value)) return `[${value.map(canonical).join(",")}]`; if (value && typeof value === "object") return `{${Object.keys(value).sort().filter((key) => value[key] !== undefined).map((key) => `${JSON.stringify(key)}:${canonical(value[key])}`).join(",")}}`; return JSON.stringify(value); }
+export const canonical = canonicalJsonByteCarrier;
 export function digest(value) { return `sha256:${createHash("sha256").update(value instanceof Uint8Array ? value : canonical(value)).digest("hex")}`; }
-function semanticJson(value) { if (value instanceof Uint8Array) return { "$bytes": Buffer.from(value).toString("base64url") }; if (Array.isArray(value)) return value.map(semanticJson); if (value && typeof value === "object") return Object.fromEntries(Object.entries(value).map(([key, child]) => [key, semanticJson(child)])); return value; }
+const semanticJson = jsonByteCarrierValue
 export function contentId(value) { return identifyJsonSemanticContent({ objectKind: "emsweb.artificial-intelligence-research.record", value: semanticJson(value), witnessRoot: EMPTY_WITNESS_ROOT }).token; }
 function exact(value) { if (!value || typeof value !== "object") return false; const { id, ...body } = value; return id === contentId(body); }
 function contained(path) { const root = realpathSync(CONTENT_ROOT), actual = realpathSync(path); if (actual !== root && !actual.startsWith(`${root}/`)) throw new TypeError("AI research carrier escapes the research settlement"); return actual; }

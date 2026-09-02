@@ -12,6 +12,7 @@ const semanticBytes = (value) => identifyJsonSemanticContent({ objectKind: A2A_C
 const decodeSemantic = (bytes) => admitJsonSemanticContent({ bytes, objectKind: A2A_CARRIER_KIND }).value;
 import { ACTOR, NODE_ROOT, notebookIdentity } from "./notebook.mjs";
 import { queryJournalRecords, recordJournalRecord, semanticJson } from "./record-journal.mjs";
+import { canonicalJsonByteCarrier } from "@red-cup-engineering/json-byte-carrier-service";
 
 export const PROVIDER = "urn:ame:notebooklm-inference-team";
 export const CURRICULUM = "urn:ame:artificial-intelligence-curriculum-enterprise";
@@ -20,7 +21,7 @@ export const VIDEO_CAPACITY_ALLOCATION = "ai-history-frontiers-alternating";
 const INVENTORY_CATEGORY = "artificial-intelligence-notebook.inventory-admission", SOURCE_CATEGORY = "artificial-intelligence-notebook.source-state-admission", VIDEO_CATEGORY = "artificial-intelligence-notebook.video-artifact-admission";
 const NI = /^ni:\/\/\/sha-256;[A-Za-z0-9_-]{43}$/u;
 
-export function canonical(value) { if (value instanceof Uint8Array) return `{"$bytes":${JSON.stringify(Buffer.from(value).toString("base64url"))}}`; if (Array.isArray(value)) return `[${value.map(canonical).join(",")}]`; if (value && typeof value === "object") return `{${Object.keys(value).sort().filter((key) => value[key] !== undefined).map((key) => `${JSON.stringify(key)}:${canonical(value[key])}`).join(",")}}`; return JSON.stringify(value); }
+export const canonical = canonicalJsonByteCarrier;
 function producerCanonical(value) { if (Array.isArray(value)) return `[${value.map(producerCanonical).join(",")}]`; if (value && typeof value === "object") return `{${Object.keys(value).sort().filter((key) => value[key] !== undefined).map((key) => `${JSON.stringify(key)}:${producerCanonical(value[key])}`).join(",")}}`; return JSON.stringify(value); }
 export function digest(value) { return `sha256:${createHash("sha256").update(value instanceof Uint8Array ? value : canonical(value)).digest("hex")}`; }
 export function contentId(value) { return identifyJsonSemanticContent({ objectKind: "emsweb.artificial-intelligence-persistent-notebook.record", value: semanticJson(value), witnessRoot: EMPTY_WITNESS_ROOT }).token; }
