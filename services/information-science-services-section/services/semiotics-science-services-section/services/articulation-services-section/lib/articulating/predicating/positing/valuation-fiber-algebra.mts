@@ -114,8 +114,6 @@ export interface ValuationQuartetDischargeReceipt {
   readonly abstractQuartetDischarged: true;
 }
 
-const freezeRecord = <T,>(record: Record<string, T>): Readonly<Record<string, T>> => Object.freeze({ ...record });
-
 const valueCoordinates = (value: ChargeValue): readonly [truth: boolean, falsity: boolean] =>
   Object.freeze([
     chargeSideName(value.coordinates[0]) === "present",
@@ -142,21 +140,20 @@ const unique = (items: readonly string[]): boolean => new Set(items).size === it
 
 export function valuationFiberCarrier(points: readonly string[], values: Readonly<Record<string, ChargeValueName>>): ValuationFiberCarrier {
   if (!unique(points)) throw new TypeError("valuationFiberCarrier: duplicate points are not a finite carrier");
-  const out: Record<string, ChargeValueName> = {};
-  for (const point of points) {
-    const value = values[point];
+  const out = Object.fromEntries(points.map(point => {
+    const value = Object.hasOwn(values, point) ? values[point] : undefined;
     if (value === undefined) throw new TypeError(`valuationFiberCarrier: missing value for ${point}`);
-    out[point] = value;
-  }
+    return [point, value];
+  }));
   return Object.freeze({
     kind: "positing.valuationFiber.carrier" as const,
     points: Object.freeze([...points]),
-    values: freezeRecord(out),
+    values: Object.freeze(out),
   });
 }
 
 export function readValuationFiber(carrier: ValuationFiberCarrier, point: string): ChargeValueName {
-  const value = carrier.values[point];
+  const value = Object.hasOwn(carrier.values, point) ? carrier.values[point] : undefined;
   if (value === undefined) throw new TypeError(`readValuationFiber: point ${point} is not in the carrier`);
   return value;
 }
@@ -165,9 +162,9 @@ const mapFiber = (
   carrier: ValuationFiberCarrier,
   f: (value: ChargeValueName, point: string) => ChargeValueName,
 ): ValuationFiberCarrier => {
-  const out: Record<string, ChargeValueName> = {};
-  for (const point of carrier.points) out[point] = f(readValuationFiber(carrier, point), point);
-  return valuationFiberCarrier(carrier.points, out);
+  return valuationFiberCarrier(carrier.points, Object.fromEntries(
+    carrier.points.map(point => [point, f(readValuationFiber(carrier, point), point)]),
+  ));
 };
 
 const zipFiber = (
@@ -352,8 +349,8 @@ export const valuationFiberCornerOp = (
 };
 
 export function quartetRecurrenceReceipt(carrier: ValuationFiberCarrier): QuartetRecurrenceReceipt {
-  const modalMap = freezeRecord(Object.fromEntries(modals.map((modal) => [modal, modalToCorner(modal)])) as Record<ModalCornerName, ValuationFiberCornerName>);
-  const cornerMap = freezeRecord(Object.fromEntries(corners.map((corner) => [corner, cornerToModal(corner)])) as Record<ValuationFiberCornerName, ModalCornerName>);
+  const modalMap = Object.freeze(Object.fromEntries(modals.map((modal) => [modal, modalToCorner(modal)])) as Record<ModalCornerName, ValuationFiberCornerName>);
+  const cornerMap = Object.freeze(Object.fromEntries(corners.map((corner) => [corner, cornerToModal(corner)])) as Record<ValuationFiberCornerName, ModalCornerName>);
   const modalRoundTrip = modals.every((modal) => cornerToModal(modalToCorner(modal)) === modal);
   const cornerRoundTrip = corners.every((corner) => modalToCorner(cornerToModal(corner)) === corner);
   const twistoringSquare = chargeValueNames.every((name) =>

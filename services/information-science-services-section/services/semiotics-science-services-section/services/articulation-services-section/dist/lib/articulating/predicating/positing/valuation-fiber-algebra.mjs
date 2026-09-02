@@ -11,7 +11,6 @@
  * that finite carrier.
  */
 import { charge, chargeSideName, chargeValue, chargeValueName, chargeValueNames, chargeValues, conflateValue, joinTruthValue, leqKnowledge, leqTruth, meetTruthValue, negateValue, sameChargeValue, } from "./bilattice-charge.mjs";
-const freezeRecord = (record) => Object.freeze({ ...record });
 const valueCoordinates = (value) => Object.freeze([
     chargeSideName(value.coordinates[0]) === "present",
     chargeSideName(value.coordinates[1]) === "present",
@@ -33,30 +32,26 @@ const unique = (items) => new Set(items).size === items.length;
 export function valuationFiberCarrier(points, values) {
     if (!unique(points))
         throw new TypeError("valuationFiberCarrier: duplicate points are not a finite carrier");
-    const out = {};
-    for (const point of points) {
-        const value = values[point];
+    const out = Object.fromEntries(points.map(point => {
+        const value = Object.hasOwn(values, point) ? values[point] : undefined;
         if (value === undefined)
             throw new TypeError(`valuationFiberCarrier: missing value for ${point}`);
-        out[point] = value;
-    }
+        return [point, value];
+    }));
     return Object.freeze({
         kind: "positing.valuationFiber.carrier",
         points: Object.freeze([...points]),
-        values: freezeRecord(out),
+        values: Object.freeze(out),
     });
 }
 export function readValuationFiber(carrier, point) {
-    const value = carrier.values[point];
+    const value = Object.hasOwn(carrier.values, point) ? carrier.values[point] : undefined;
     if (value === undefined)
         throw new TypeError(`readValuationFiber: point ${point} is not in the carrier`);
     return value;
 }
 const mapFiber = (carrier, f) => {
-    const out = {};
-    for (const point of carrier.points)
-        out[point] = f(readValuationFiber(carrier, point), point);
-    return valuationFiberCarrier(carrier.points, out);
+    return valuationFiberCarrier(carrier.points, Object.fromEntries(carrier.points.map(point => [point, f(readValuationFiber(carrier, point), point)])));
 };
 const zipFiber = (left, right, f) => {
     if (left.points.length !== right.points.length || left.points.some((point, index) => point !== right.points[index])) {
@@ -190,8 +185,8 @@ export const valuationFiberCornerOp = (corner, carrier) => {
     }
 };
 export function quartetRecurrenceReceipt(carrier) {
-    const modalMap = freezeRecord(Object.fromEntries(modals.map((modal) => [modal, modalToCorner(modal)])));
-    const cornerMap = freezeRecord(Object.fromEntries(corners.map((corner) => [corner, cornerToModal(corner)])));
+    const modalMap = Object.freeze(Object.fromEntries(modals.map((modal) => [modal, modalToCorner(modal)])));
+    const cornerMap = Object.freeze(Object.fromEntries(corners.map((corner) => [corner, cornerToModal(corner)])));
     const modalRoundTrip = modals.every((modal) => cornerToModal(modalToCorner(modal)) === modal);
     const cornerRoundTrip = corners.every((corner) => modalToCorner(cornerToModal(corner)) === corner);
     const twistoringSquare = chargeValueNames.every((name) => sameChargeValue(negateValue(conflateValue(chargeValue(name))), conflateValue(negateValue(chargeValue(name)))));

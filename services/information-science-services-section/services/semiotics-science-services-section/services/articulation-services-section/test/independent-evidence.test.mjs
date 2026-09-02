@@ -161,3 +161,33 @@ test('corner operators follow Quartet.lean and the maps are commuting truth nucl
     assert.equal(Object.hasOwn(receipt, 'absurdIsIntersection'), false);
   }
 });
+
+import { readValuationFiber, valuationTruthJoin, valuationTruthImplication } from '../dist/lib/articulating/predicating/positing/valuation-fiber-algebra.mjs';
+
+test('valuation points survive prototype-sensitive names through JSON and nuclei', () => {
+  const points = ['active', 'potential', 'carrier', '__proto__', 'constructor', 'toString'];
+  const ordinary = points.map((_, index) => `point-${index}`);
+  const valuesOf = carrier => carrier.points.map(point => readValuationFiber(carrier, point));
+  for (const name of chargeValueNames) {
+    const make = labels => valuationFiberCarrier(labels, Object.fromEntries(labels.map(point => [point, name])));
+    const carrier = make(points);
+    assert.equal(Object.getPrototypeOf(carrier.values), Object.prototype);
+    assert.equal(Object.isFrozen(carrier.values), true);
+    assert.deepEqual(Object.keys(carrier.values), points);
+    assert.deepEqual(valuationFiberCarrier(points, JSON.parse(JSON.stringify(carrier.values))), carrier);
+    for (const operation of [sigmaNucleus, deltaNucleus, value => valuationFiberCornerOp('stable', value)]) {
+      assert.deepEqual(valuesOf(operation(carrier)), valuesOf(operation(make(ordinary))));
+    }
+    for (const operation of [valuationTruthMeet, valuationTruthJoin, valuationTruthImplication]) {
+      assert.deepEqual(valuesOf(operation(carrier, carrier)), valuesOf(operation(make(ordinary), make(ordinary))));
+    }
+  }
+  for (const point of points) {
+    assert.throws(() => valuationFiberCarrier([point], Object.create({ [point]: 'active' })), {
+      name: 'TypeError', message: `valuationFiberCarrier: missing value for ${point}`,
+    });
+    assert.throws(() => readValuationFiber(valuationFiberCarrier([], {}), point), {
+      name: 'TypeError', message: `readValuationFiber: point ${point} is not in the carrier`,
+    });
+  }
+});
