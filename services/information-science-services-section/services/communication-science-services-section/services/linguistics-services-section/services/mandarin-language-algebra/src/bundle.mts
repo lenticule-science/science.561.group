@@ -1,26 +1,19 @@
-// bundle.ts — 普通话 (Standard Mandarin) as a syntaxis fiber-algebra bundle.
-// SVO word order; determiners and adjectives are preposed (LEFT attachment).
-// Mandarin is isolating: words do not inflect for person, number, tense, or
-// case. Grammatical relations that other languages carry with morphology are
-// carried here by word order and by a handful of structural particles.
-//
-// Tone (声调) is not modeled: RawBundle has no phonological/tonal feature
-// slot, and this fiber does not fake tone-sensitive analysis. Pinyin readings
-// (including tone marks) belong in emsenn-mandarin-services-section's
+// bundle.ts — 普通话 (Standard Mandarin) syntaxis fiber-algebra bundle.
+// SVO word order, preposed (LEFT) determiners/adjectives; isolating — no
+// person/number/tense/case inflection, relations ride on word order and
+// structural particles. Tone (声调) is unmodeled: no phonological/tonal
+// feature slot exists; pinyin belongs to emsenn-mandarin-services-section's
 // glossary content, not here.
 import { readFileSync } from "node:fs";
 import type { RawBundle } from "@lenticule-science/communicating/speaking/listening/algebra";
 
 // ── Dictionary-based segmenter's word list ──────────────────────────────
-// Mandarin's script carries no whitespace between words (wordBoundary would
-// otherwise fall back to per-character tokenization — see the `segment`
-// hook below). The word list a greedy longest-match segmenter scans against
-// is assembled from three sources: this bundle's own closed-class lexicon,
-// the classifier characters curated in morphology.rootPatternRules, and a
-// small curated open-class vocabulary file. See content/wordlists/
-// mandarin-core-vocabulary.json's own "note" field and
-// data/research-obligations.json (id: core-vocabulary-sourcing) for exactly
-// how provisional that last source is.
+// No whitespace between Mandarin words, so greedy longest-match scans a
+// dictionary built from four sources: closed-class lexicon, the classifier
+// characters (below), a curated open-class vocabulary file, and the
+// curated verb-stem allowlist (below) — see each file's own "note" field
+// and data/research-obligations.json (core-vocabulary-sourcing,
+// predicate-tagging) for how provisional/curated each source is.
 const coreVocabularyUrl = new URL("../content/wordlists/mandarin-core-vocabulary.json", import.meta.url);
 const coreVocabulary: { readonly note: string; readonly words: readonly string[] } =
   JSON.parse(readFileSync(coreVocabularyUrl, "utf8"));
@@ -112,6 +105,23 @@ const CLASSIFIER_RULES = [
 
 const CLASSIFIER_CHARS = ["个", "条", "本", "张", "只", "位", "家", "次"];
 
+// Curated, source-cited verb-stem allowlist (single/two-character HSK 1-3
+// stems), closing the predicate-tagging gap named in data/research-
+// obligations.json (id: predicate-tagging). See content/wordlists/
+// mandarin-verb-stems.json's own "note" field for how each stem was
+// compiled and reviewed. Wired the same way CLASSIFIER_RULES is above:
+// one morphology.rootPatternRules entry per stem, tagged "verb".
+const verbStemsUrl = new URL("../content/wordlists/mandarin-verb-stems.json", import.meta.url);
+const verbStems: { readonly note: string; readonly entries: readonly { readonly stem: string; readonly pinyin: string; readonly gloss: string; readonly hskLevel: string; readonly source: string }[] } =
+  JSON.parse(readFileSync(verbStemsUrl, "utf8"));
+const escapeForPattern = (word: string): string => word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+const VERB_STEM_RULES = verbStems.entries.map((entry) => ({
+  pattern: `^${escapeForPattern(entry.stem)}$`,
+  tag: "verb",
+  features: ["verb-stem", entry.hskLevel],
+}));
+const VERB_STEMS = verbStems.entries.map((entry) => entry.stem);
+
 // ── Segment: dictionary-based greedy longest-match, left to right ──────
 const wordList = [
   ...PARTICLES,
@@ -122,6 +132,7 @@ const wordList = [
   ...COPULA,
   ...PREPOSITIONS,
   ...CLASSIFIER_CHARS,
+  ...VERB_STEMS,
   ...coreVocabulary.words,
 ];
 const wordSet = new Set(wordList);
@@ -135,18 +146,14 @@ const maxWordLength = wordList.reduce((max, word) => Math.max(max, Array.from(wo
 // punctuation mark.
 const WORD_CHAR_RE = /[\p{L}\p{M}\p{N}]/u;
 
-/** Greedy longest-match dictionary segmenter. At each position, tries the
- *  longest run of characters (down to length 2) that is present in
- *  `wordSet`; if none matches and the character is word-class (letter/mark/
- *  number), it passes through as its own single-character token — the same
- *  fallback behavior the engine's own per-character script tokenizer would
- *  produce. Non-word-class characters (punctuation, whitespace) are skipped
- *  rather than emitted as tokens, again matching that fallback.
- *
- *  This is a small curated dictionary, not a statistical or corpus-trained
- *  segmenter: unknown multi-character words it does not know about will be
- *  mis-segmented into smaller known pieces or single characters. See
- *  data/maturity.json (id: dictionary-segmentation) for the honest grade. */
+/** Greedy longest-match dictionary segmenter: at each position tries the
+ *  longest wordSet run (down to length 2); falls through to a single
+ *  word-class character (matching the engine's per-character fallback),
+ *  or skips a non-word-class character (punctuation/whitespace). Small
+ *  curated dictionary, not statistical/corpus-trained: unknown words
+ *  mis-segment into smaller known pieces or single characters — see
+ *  data/maturity.json (id: dictionary-segmentation) for the honest
+ *  grade. */
 function segment(text: string): readonly string[] {
   const chars = Array.from(text);
   const tokens: string[] = [];
@@ -197,7 +204,7 @@ export const rawBundle: RawBundle = {
     numberSuffixPattern: "",
     verbFormRules: [],
     numberWords: ["零", "一", "二", "三", "四", "五", "六", "七", "八", "九", "十", "百", "千"],
-    rootPatternRules: CLASSIFIER_RULES,
+    rootPatternRules: [...CLASSIFIER_RULES, ...VERB_STEM_RULES],
   },
   reference: {
     // No grammatical gender marking in speech; 他/她/它 differ only in
@@ -231,15 +238,13 @@ export const rawBundle: RawBundle = {
       adposition: "left",   // coverbs precede their object: 在家, 从北京
     },
     // 把/被 are filed as "obl" (not "case") strategies: relating.mts's
-    // obliqueParticles() is the consumer that actually scans roleStrategies
-    // for a "particle" marker, attaches the marked NP as an oblique
-    // dependent of the nearest verb, AND emits the "case" arc for the
-    // marker itself — "case" is only ever an *output* relation of that
-    // rule, never a `relation` a strategy is filed under. Both require a
-    // verb-tagged word to attach to; see the honest gap documented in
-    // test/engine.test.mjs (this bundle curates no verb allowlist, so no
-    // word is ever tagged "verb", so these strategies do not currently fire
-    // for any sentence — they are correctly wired, not currently exercised).
+    // obliqueParticles() scans roleStrategies for a "particle" marker,
+    // attaches the marked NP as an oblique dependent of the nearest verb,
+    // and emits a "case" arc for the marker itself. Both require a
+    // verb-tagged word to attach to — now reachable for any sentence whose
+    // verb is in the curated allowlist above (see test/engine.test.mjs for
+    // verified 把/被 sentences; the allowlist is still curated, not full
+    // morphosyntactic verb detection — data/research-obligations.json).
     roleStrategies: [
       { relation: "nsubj", by: "position", direction: "left", distance: "nearest" },
       { relation: "dobj", by: "position", direction: "right", distance: "nearest" },

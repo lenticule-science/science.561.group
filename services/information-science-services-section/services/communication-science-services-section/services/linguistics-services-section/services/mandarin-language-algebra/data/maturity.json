@@ -15,7 +15,7 @@
       "area": "lexicon",
       "summary": "Determiners/particles (的了吗呢吧把被着这那), pronouns, conjunctions, modal auxiliaries, the copula 是, and coverb-prepositions are curated and tag correctly through the shared engine's closedClassTags().",
       "evidence": "test/engine.test.mjs 'tag() tags curated closed classes', test/mandarin-die.test.mjs closed-class assertions.",
-      "limits": "Covers only the specific items curated in src/bundle.mts/.mjs — not an exhaustive particle or coverb inventory. 是 is listed as a copula and isCopula('是') is true, but the shared engine's closedClassTags() never surfaces a 'cop' tag from that list (a verified, engine-level fact, not something this bundle can fix)."
+      "limits": "Covers only the specific items curated in src/bundle.mts/.mjs — not an exhaustive particle or coverb inventory."
     },
     {
       "id": "dictionary-segmentation",
@@ -24,6 +24,14 @@
       "summary": "A small dictionary-based greedy longest-match segmenter (the bundle's `segment` hook) tokenizes Mandarin text into real multi-character words where they are in the curated dictionary.",
       "evidence": "test/engine.test.mjs and test/mandarin-die.test.mjs segment()/tokenize() assertions, verified against the real engine output (e.g. '我喜欢学习' -> ['我','喜欢','学习'], '你好吗' -> ['你好','吗']).",
       "limits": "The dictionary is the union of this bundle's closed-class lexicon, its 8 curated classifiers, and content/wordlists/mandarin-core-vocabulary.json's small curated word list — on the order of 150 words, not a real lexicon. Any word outside that list mis-segments into smaller known pieces or single characters (verified: '钥匙' segments as ['钥','匙']). This is not a statistical, corpus-trained, or dictionary-maximum-matching-with-frequency segmenter; it has no ambiguity resolution beyond greedy longest-match."
+    },
+    {
+      "id": "predicate-tagging",
+      "maturity": "Research-grade",
+      "area": "syntax",
+      "summary": "A curated, source-cited allowlist of 172 single/two-character HSK 1-3 verb stems (content/wordlists/mandarin-verb-stems.json) is wired as morphology.rootPatternRules, tagging matching words 'verb'. This closes the predicate-tagging gap: nsubj/dobj arcs and semantic-role frames now fire for sentences whose predicate is in the allowlist, including 把/被-construction obl/case arcs.",
+      "evidence": "test/engine.test.mjs, verified against the real engine: read('我喜欢你。', bundle) tags 喜欢 'verb' with nsubj/dobj arcs and a role frame; read('我把书买了。', bundle) fires obl/case for the 把-construction; the word-salad pair 你好吗 (no arcs) vs 喜欢你我 (one dobj arc) no longer read identically.",
+      "limits": "This is a curated stem list, not morphosyntactic verb detection or an open-class-complete lexicon. A predicate outside the 172 curated stems (e.g. 给, curated only as a closed-class coverb) still tags 'noun'/'prep' and forms no verb-anchored arc — see data/research-obligations.json (id: predicate-tagging) for the honest upgrade path."
     },
     {
       "id": "classifier-morphotactics",

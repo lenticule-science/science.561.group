@@ -17,11 +17,11 @@
   },
   {
     "id": "predicate-tagging",
-    "maturity": "Roadmap",
+    "maturity": "Research-grade",
     "area": "syntax",
-    "summary": "No word is ever tagged 'verb': this bundle curates no verb-stem allowlist (unlike lakota-language-algebra's curated Lakota verb stems), because Mandarin verbs are the true open class and no morphological suffix marks one. The real, verified consequence is that nsubj/dobj/ccomp/obl/discourse/topic/focus/contrast/repair dependency arcs and semantic role frames never fire for ANY Mandarin sentence through this bundle, including for the 把/被-construction strategies that are correctly wired in grammar.roleStrategies.",
-    "currentEvidence": "test/engine.test.mjs's 'honest gap' tests, verified directly against the shared engine: read('我喜欢你。', bundle) tags every content word 'noun' or 'pron', never 'verb', and produces no nsubj/dobj/roles.",
-    "upgradeEvidence": "A reviewed, source-cited curated verb-stem allowlist (morphology.rootPatternRules or a dedicated tag), or a real morphosyntactic verb-detection strategy, plus corpus tests proving nsubj/dobj/obl arcs form correctly for 把/被 constructions and plain SVO sentences."
+    "summary": "A word is now tagged 'verb' when it matches a stem in the curated, source-cited verb-stem allowlist at content/wordlists/mandarin-verb-stems.json (172 single/two-character HSK 1-3 stems, wired as morphology.rootPatternRules). This closes the real gap: nsubj/dobj arcs and semantic role frames now fire for sentences whose predicate is in the allowlist, including 把/被-construction strategies in grammar.roleStrategies. It is still a curated allowlist, not real morphosyntactic verb detection or an open-class-complete lexicon — a predicate outside the 172 curated stems (e.g. 给 in '我把书给你。', curated only as a closed-class coverb) still tags 'noun'/'prep' and forms no verb-anchored arc.",
+    "currentEvidence": "test/engine.test.mjs, verified directly against the shared engine: read('我喜欢你。', bundle) tags 喜欢 'verb' and produces nsubj/dobj arcs plus a role frame ({agent:'我', patient:'你'}); read('我把书买了。', bundle) fires the obl/case arcs for the 把-construction now that 买 is an allowlisted verb; the word-salad pair 你好吗 (no allowlisted verb, zero arcs) vs 喜欢你我 (喜欢 tags verb, one dobj arc) no longer read identically.",
+    "upgradeEvidence": "Expand the allowlist beyond HSK 1-3 (larger citable HSK/CC-CEDICT verb inventories exist), or replace it with real morphosyntactic verb-detection evidence (distributional/positional cues, not a fixed stem list), plus corpus tests over a larger held-out sentence set than this package's own hand-picked examples."
   },
   {
     "id": "classifier-coverage-and-noun-class-validation",

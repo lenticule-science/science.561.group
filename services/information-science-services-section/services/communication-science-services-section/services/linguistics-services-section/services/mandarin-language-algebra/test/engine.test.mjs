@@ -3,9 +3,9 @@
 // @lenticule-science/communicating engine, mirroring lakota-language-algebra's
 // own engine.test.mjs in structure. Every assertion below was checked against
 // the actual engine output, not assumed from the fiber contract — including
-// the "honest gap" tests, which record real, verified behavior of the shared
-// engine confronted with an isolating language that curates no verb
-// allowlist (see the comments on each).
+// the remaining "honest gap" test, which records real, verified behavior of
+// the shared engine for a sentence whose predicate falls outside this
+// bundle's curated verb-stem allowlist (see the comment on it).
 import test from "node:test";
 import assert from "node:assert/strict";
 
@@ -117,31 +117,79 @@ test("articulate() threads the segment hook through the full span pipeline, term
   assert.deepEqual(words, ["我", "喜欢", "学习"]);
 });
 
-// ── Honest gaps, verified against the real engine (not assumed) ─────────
+// ── Predicate tagging via the curated verb-stem allowlist ───────────────
 
 // relating.mts's nsubj()/dobj()/ccomp()/obl()/discourse()/topic() rules all
-// gate on isVerbLike (a word tagged "verb"). This bundle curates no verb
-// allowlist — Mandarin verbs are the true open class, and morphology has no
-// suffix or affix that marks a word as a verb, so tagging one honestly
-// requires a curated allowlist (as lakota-language-algebra does for Lakota
-// verb stems) or real morphosyntactic evidence, neither of which this build
-// was scoped to produce. The real, verified consequence: no word in this
-// bundle is EVER tagged "verb", so nsubj/dobj/ccomp/obl/discourse/topic arcs
-// never fire for ANY Mandarin sentence — including for 把/被, whose
-// roleStrategies (grammar.roleStrategies, "obl" by particle) are correctly
-// wired to relating.mts's obliqueParticles() but have no verb to attach to.
-test("honest gap: no verb allowlist means nsubj/dobj/roles never fire, even for simple SVO sentences", () => {
+// gate on isVerbLike (a word tagged "verb"). Mandarin verbs are the true
+// open class and morphology carries no suffix/affix marking one, so this
+// bundle now tags a word "verb" only when it matches a stem in the curated,
+// source-cited allowlist at content/wordlists/mandarin-verb-stems.json (172
+// HSK 1-3 stems; see that file's own "note" and data/research-obligations.json,
+// id: predicate-tagging, for the honest scope of that grade). The falsifier
+// this closes, verified directly against the real engine: 喜欢 ("to like") is
+// in the allowlist, so read("我喜欢你。") now tags it "verb" and nsubj/dobj
+// arcs and a full semantic-role frame fire around it — where before, every
+// content word floored to "noun"/"pron" and no arc or role ever formed.
+test("predicate tagging: 喜欢 tags verb and nsubj/dobj arcs + a role frame fire for a simple SVO sentence", () => {
   const result = read("我喜欢你。", bundle).parse;
-  assert.deepEqual(result.words.map((w) => w.tags), [["pron"], ["noun"], ["pron"]]);
-  assert.equal(result.arcs.find((a) => a.rel === "nsubj"), undefined);
-  assert.equal(result.arcs.find((a) => a.rel === "dobj"), undefined);
-  assert.deepEqual(roles(result), []);
+  assert.deepEqual(result.words.map((w) => w.tags), [["pron"], ["verb"], ["pron"]]);
+  const nsubj = result.arcs.find((a) => a.rel === "nsubj");
+  const dobj = result.arcs.find((a) => a.rel === "dobj");
+  assert.equal(nsubj?.headText, "喜欢");
+  assert.equal(nsubj?.depText, "我");
+  assert.equal(dobj?.headText, "喜欢");
+  assert.equal(dobj?.depText, "你");
+  assert.deepEqual(roles(result), [
+    { verb: "喜欢", agent: "我", patient: "你", instrument: null, recipient: null, location: null },
+  ]);
 });
 
-test("honest gap: 把/被 oblique-particle strategies are wired but do not fire without a tagged verb", () => {
+// The falsifier named in the per-sentence-cohomology-probe note: two
+// superficially similar strings built from the same characters must no
+// longer read identically once one of them contains an allowlisted verb.
+// 你好吗 ("how are you") has no allowlisted verb (你好 segments as one
+// curated noun-phrase greeting, 吗 as a question particle) and produces no
+// arcs at all. 喜欢你我 (word-salad: "like you I", not a grammatical
+// sentence) has 喜欢 as its first token, which tags "verb" and anchors a
+// dobj arc to the following pronoun. Both readings are printed verbatim so
+// the difference is visible in the test log, not just asserted.
+test("word-salad falsifier: 你好吗 and 喜欢你我 no longer read identically", () => {
+  const greeting = read("你好吗", bundle).parse;
+  const salad = read("喜欢你我", bundle).parse;
+  console.log("你好吗 ->", JSON.stringify({ tags: greeting.words.map((w) => w.tags), arcs: greeting.arcs }));
+  console.log("喜欢你我 ->", JSON.stringify({ tags: salad.words.map((w) => w.tags), arcs: salad.arcs }));
+  assert.notDeepEqual(
+    greeting.words.map((w) => w.tags),
+    salad.words.map((w) => w.tags),
+  );
+  assert.notDeepEqual(greeting.arcs, salad.arcs);
+  // The concrete difference: 喜欢你我 tags its first word "verb" and forms a
+  // dobj arc from it; 你好吗 tags no word "verb" and forms no arcs at all.
+  assert.deepEqual(salad.words[0]?.tags, ["verb"]);
+  assert.equal(salad.arcs.find((a) => a.rel === "dobj")?.headText, "喜欢");
+  assert.equal(greeting.words.some((w) => w.tags.includes("verb")), false);
+  assert.deepEqual(greeting.arcs, []);
+});
+
+// 给 ("to give") is a curated coverb/preposition in this bundle's closed
+// class, not in the verb-stem allowlist (a deliberate exclusion — see
+// mandarin-verb-stems.json's note on collisions with closed-class readings),
+// so this specific 把-sentence still has no verb to attach to and remains a
+// real, verified gap. The mechanism itself is exercised (not merely wired)
+// by a different sentence below, whose verb (买) IS in the allowlist.
+test("honest gap: 把 has no verb to attach to in a sentence whose only predicate-like word (给) is a curated coverb, not an allowlisted verb", () => {
   const result = read("我把书给你。", bundle).parse;
   assert.equal(result.arcs.find((a) => a.rel === "obl"), undefined);
   assert.equal(result.arcs.find((a) => a.rel === "case" && a.depText === "把"), undefined);
+});
+
+test("把/被 oblique-particle strategies fire once the allowlist supplies a verb (买, HSK 1) to attach to", () => {
+  const result = read("我把书买了。", bundle).parse;
+  const obl = result.arcs.find((a) => a.rel === "obl");
+  const caseArc = result.arcs.find((a) => a.rel === "case" && a.depText === "把");
+  assert.equal(obl?.headText, "买");
+  assert.equal(obl?.depText, "书");
+  assert.equal(caseArc?.headText, "书");
 });
 
 test("是 is a recognized copula via isCopula() and closedClassTags() surfaces a 'cop' tag", () => {
