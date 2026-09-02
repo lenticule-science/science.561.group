@@ -144,16 +144,15 @@ test("honest gap: 把/被 oblique-particle strategies are wired but do not fire 
   assert.equal(result.arcs.find((a) => a.rel === "case" && a.depText === "把"), undefined);
 });
 
-// isCopula("是") is true (bundle.lexicon.copula lists it), but
-// closedClassTags() in communicating's compile.mts only ever returns
-// ["det"|"prep"|"pron"|"conj"|"aux"] or [] — it never consults the copula
-// set. isCopula is exposed as its own standalone function instead. This is
-// real, verified behavior of the shared engine (not a defect this bundle
-// introduces or could fix): 是 floors to "noun" in .tags even though the
-// bundle correctly lists it as a copula.
-test("honest gap: 是 is a recognized copula via isCopula(), but closedClassTags() never surfaces a 'cop' tag", () => {
+test("是 is a recognized copula via isCopula() and closedClassTags() surfaces a 'cop' tag", () => {
   assert.equal(bundle.isCopula("是"), true);
-  assert.deepEqual(read("是", bundle).parse.words[0]?.tags, ["noun"]);
+  assert.deepEqual(read("是", bundle).parse.words[0]?.tags, ["cop"]);
+});
+
+test("是 tags 'cop' in a simple copular sentence", () => {
+  const result = read("我是学生。", bundle).parse;
+  const shi = result.words.find((w) => w.text === "是");
+  assert.deepEqual(shi.tags, ["cop"]);
 });
 
 // ── What DOES work without a curated verb: prep/pobj and det attachment ──

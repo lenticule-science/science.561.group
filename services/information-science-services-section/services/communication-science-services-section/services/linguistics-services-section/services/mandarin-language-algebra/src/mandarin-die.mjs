@@ -90,6 +90,23 @@ function validateInvocation(activity) {
   return null;
 }
 
+/** The postcondition this die previously never checked: tagText() already
+ *  computes a real per-sentence cohomology reading (glued/h0/h1/obstructions)
+ *  from the settlement engine's own conflicts/voids — it was computed and
+ *  then discarded on the way out. A tagging that produced conflicting
+ *  (overdetermined) analysis for a sentence is not the same postcondition as
+ *  one that settled cleanly, and treating them identically was exactly the
+ *  "call the function, trust the result" gap. This does not refuse an
+ *  unsettled parse — real language is often genuinely ambiguous, and the
+ *  corpus's own doctrine is to price obstruction, not hide it — but the
+ *  postcondition is now checked and reported, not silently dropped. */
+function checkedPostcondition(result) {
+  const perSentence = result.sentences.map((sentence) => sentence.cohomology);
+  const settled = perSentence.every((c) => c.glued);
+  const totalH1 = perSentence.reduce((sum, c) => sum + c.h1, 0);
+  return { settled, totalObstructionBits: totalH1 };
+}
+
 function invoke(activity, instant) {
   const invalid = validateInvocation(activity);
   if (invalid) { reject(activity, invalid); return; }
@@ -98,7 +115,17 @@ function invoke(activity, instant) {
   let result;
   try { result = tagText(request.text); }
   catch (error) { reject(activity, "tagging failed before producing a result", { diagnostic: error.message }); return; }
-  const resultBody = { type: "MandarinTaggingResult", taggedAt: instant, requestDigest: offer.object.requestDigest, sourceActivity: offer.object.sourceActivity, ...result, customerTerritoryMutation: false };
+  const postcondition = checkedPostcondition(result);
+  const resultBody = {
+    type: "MandarinTaggingResult",
+    taggedAt: instant,
+    requestDigest: offer.object.requestDigest,
+    sourceActivity: offer.object.sourceActivity,
+    ...result,
+    settled: postcondition.settled,
+    totalObstructionBits: postcondition.totalObstructionBits,
+    customerTerritoryMutation: false,
+  };
   emit(response("Accept", activity, { ...resultBody, id: digest(resultBody, "lenticule.mandarin-language-algebra.tagging-result") }));
 }
 

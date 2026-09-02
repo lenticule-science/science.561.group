@@ -30,13 +30,5 @@
     "summary": "Only 8 of Mandarin's dozens of productive classifiers are curated, and the noun-class feature on each is asserted from general knowledge, not validated against a reviewed classifier-noun pairing source.",
     "currentEvidence": "morphology.rootPatternRules in src/bundle.mts lists exactly 8 classifier entries; see data/maturity.json (id: classifier-morphotactics) for the honest grade.",
     "upgradeEvidence": "An expanded, source-cited classifier inventory, plus a reviewed classifier-noun pairing table and tests that check a classifier is actually compatible with the noun it precedes in a given sentence (not just tagged in isolation)."
-  },
-  {
-    "id": "copula-tag-surfacing",
-    "maturity": "Roadmap",
-    "area": "engine-upstream",
-    "summary": "是 is correctly listed as this bundle's copula and bundle.isCopula('是') is true, but the shared engine's closedClassTags() (in @lenticule-science/communicating's compile.mts) checks determiners/prepositions/pronouns/conjunctions/auxiliaries only — it never consults the copula set, so 是's .tags floors to ['noun'] instead of surfacing a 'cop' tag.",
-    "currentEvidence": "test/engine.test.mjs's 'honest gap: 是 is a recognized copula...' test, verified directly against the installed @lenticule-science/communicating@0.0.4.",
-    "upgradeEvidence": "This is an upstream fix, not something this fiber package can resolve: closedClassTags() in communicating's compile.mts would need to also check the copula set and return a 'cop' tag. Filed here for visibility; not actioned in this package per the instruction to report engine-plumbing findings precisely rather than hack around them."
   }
 ]
