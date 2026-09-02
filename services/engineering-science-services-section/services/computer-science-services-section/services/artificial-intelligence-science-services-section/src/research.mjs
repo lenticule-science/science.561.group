@@ -1,4 +1,4 @@
-import { EMPTY_WITNESS_ROOT, identifyJsonSemanticContent } from "@red-cup-engineering/semantic-content-identify-service";
+import { EMPTY_WITNESS_ROOT, identifyJsonSemanticContent, verifyJsonSemanticRecord } from "@red-cup-engineering/semantic-content-identify-service";
 import { createHash } from "node:crypto";
 import { existsSync, lstatSync, readFileSync, realpathSync } from "node:fs";
 import { dirname, join, relative, resolve } from "node:path";
@@ -20,7 +20,6 @@ export const canonical = canonicalJsonByteCarrier;
 export function digest(value) { return `sha256:${createHash("sha256").update(value instanceof Uint8Array ? value : canonical(value)).digest("hex")}`; }
 const semanticJson = jsonByteCarrierValue
 export function contentId(value) { return identifyJsonSemanticContent({ objectKind: "emsweb.artificial-intelligence-research.record", value: semanticJson(value), witnessRoot: EMPTY_WITNESS_ROOT }).token; }
-function exact(value) { if (!value || typeof value !== "object") return false; const { id, ...body } = value; return id === contentId(body); }
 function contained(path) { const root = realpathSync(CONTENT_ROOT), actual = realpathSync(path); if (actual !== root && !actual.startsWith(`${root}/`)) throw new TypeError("AI research carrier escapes the research settlement"); return actual; }
 
 export function loadResearchDraft(path = FIRST_MANIFEST) {
@@ -78,7 +77,7 @@ export async function admitResearchProduct(draft = loadResearchDraft(), options 
 }
 
 export function researchSourceProjection(product) {
-  if (!exact(product) || product.type !== "ArtificialIntelligenceResearchProductAdmission" || product.provider !== ACTOR || product.customer !== CUSTOMER) throw new TypeError("AI source projection requires one exact admitted product");
+  if (!verifyJsonSemanticRecord({ objectKind: "emsweb.artificial-intelligence-research.record", value: semanticJson(product), witnessRoot: EMPTY_WITNESS_ROOT }) || product.type !== "ArtificialIntelligenceResearchProductAdmission" || product.provider !== ACTOR || product.customer !== CUSTOMER) throw new TypeError("AI source projection requires one exact admitted product");
   const carrier = product.sourcePacket?.carrier, path = contained(resolve(NODE_ROOT, carrier?.path ?? "")), stat = lstatSync(path), bytes = !stat.isSymbolicLink() && stat.isFile() ? readFileSync(path) : null;
   if (!bytes || carrier.mediaType !== "text/markdown" || bytes.length !== carrier.byteLength || digest(bytes) !== carrier.sha256) throw new TypeError("AI admitted research carrier bytes changed");
   return { title: `${product.lessonId.replaceAll("-", " ")} — source-grounded research packet`, digest: carrier.sha256, mediaType: carrier.mediaType, byteLength: bytes.length, bytes };
