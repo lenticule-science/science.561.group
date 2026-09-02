@@ -164,17 +164,29 @@ Measured state, 2026-09-02:
   `@lenticule-science/communicating` 0.0.6, plus RelConLang; panini is
   the composing app and its Lot 1 is unstarted (linguistics custody,
   2026-09-01 panini note).
-- Corpora: only RelConLang has sentence rows (35 + 9 + 4); the Lakota
-  corpus is 27 paradigm rows; Toki Pona has none. The corpus is the
-  program's binding constraint in every language.
+- Corpora: only RelConLang has sentence rows (35 + 9 + 4, 25 distinct
+  facts); the Lakota corpus is 27 paradigm rows; Toki Pona has none. The
+  corpus is the program's binding constraint in every language, and the
+  first receipts of the media wedge are the first rows of each fiber's
+  own corpus.
 - Media rail: Koios News renders a sourced-claim store to pages, feeds,
   and JSON-LD in English only. The one house precedent for media in
   another language is the lochiel binational dossiers, translated to
   Spanish by hand.
-- Machine: the organism's masked-incidence evaluation beats frequency
-  on RelConLang (16/28 vs 10/28); the kernel's saturation speaker loses
-  (1/7 vs 3/7); the kernel carries the ledger, the denial lane, and
-  residuation with abstain on unwitnessed columns (68/68).
+- Machine (kernel 100/100 at close of 2026-09-02): the RelConLang
+  organism is the kernel's own intake (`src/relconlang.mjs`, manifest
+  grammar, stance charges, expect.features); the twin service that
+  duplicated the laws is gone. Honest saturation evaluation on 25
+  distinct facts, five seeds, same candidate pool: per-predicate
+  frequency 3.40/6, plain fiber 1.80/6, closure-with-features 3.60/6 —
+  a hair above frequency, closure firing on 16 of 30 cases. On the
+  org's package graph (1169 packages) the exact residuation stack
+  abstains (0/114) and the charged-implication lane scores 39/114
+  against the frequency baseline's 37/114. The kernel's state can now be
+  built from an eavt trace through eavt's own strata (`src/trace.mjs`).
+- Panini: `@lenticule-science/panini` 0.1.0 published (5/5), the
+  composing app over the engine and the five fibers; the media wedge
+  consumes it.
 
 Bought glass is unavailable today, measured 2026-09-02: the inference
 market (inference-dispatch-service) admits four providers and every
