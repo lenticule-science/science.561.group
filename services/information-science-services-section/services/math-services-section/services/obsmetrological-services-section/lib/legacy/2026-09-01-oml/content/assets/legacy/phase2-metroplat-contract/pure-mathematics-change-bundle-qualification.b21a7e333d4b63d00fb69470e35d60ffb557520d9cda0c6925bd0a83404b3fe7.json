@@ -1,0 +1,25 @@
+{
+  "kind": "metroplat.contract",
+  "id": "pure-mathematics-change-bundle-qualification",
+  "precondition": {
+    "id": "change-bundle-admitted-for-qualification",
+    "description": "An ActivityStreams solicitation carries an immutable baseline and a bundle conforming to emsenn/schema/pure-mathematics-change-bundle; the customer accepts OML's exact offer and reciprocal-value term, and a capability admits only invoke-service plus provider-local write."
+  },
+  "move": {
+    "id": "qualify-pure-mathematics-change-bundle",
+    "description": "OML verifies unified-diff digest, exact changed paths, lack of application-shaped paths and dependencies, source-digested corpus grounding, and passed scope-audit and Lean-build evidence, then appends its own qualification or refusal, causal projections, receipt, and seller book.",
+    "domain": "content-addressed-change-bundle", "codomain": "qualified-bundle-or-typed-refusal", "partial": false, "deterministic": true, "effects": ["provider-local-records"]
+  },
+  "postcondition": {
+    "id": "customer-admission-remains-reserved",
+    "description": "A completion identifies exactly what was mechanically verified and records that mathematical truth, corpus truth, evidence replay, and admission remain unverified or customer-owned. OML writes neither Obsmetrologia nor its history."
+  },
+  "evidencePolicy": {
+    "required": true,
+    "records": ["exact patch SHA-256 and path set", "baseline revision", "source-digested corpus references", "scope-audit and Lean-build evidence digests", "ActivityStreams messages", "provider event and EAVT projection", "qualification or refusal", "bilateral receipt and seller-side book entry"]
+  },
+  "boundary": {
+    "customerOwned": ["Obsmetrologia source and history", "mathematical truth review", "evidence replay", "admission, rejection, release, and supersession"],
+    "providerOwned": ["bundle-envelope qualification", "provider evidence", "provider book", "provider refusal"]
+  }
+}
