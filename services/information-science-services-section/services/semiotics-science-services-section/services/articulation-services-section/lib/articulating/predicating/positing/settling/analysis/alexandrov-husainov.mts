@@ -76,7 +76,7 @@ const uniqueSorted = (values: readonly string[]): readonly string[] => {
   return Object.freeze(out.sort((left, right) => left.localeCompare(right)));
 };
 
-const pairKey = (left: string, right: string): string => `${left}\u0000${right}`;
+const pairKey = (left: string, right: string): string => JSON.stringify([left, right]);
 
 export function finitePoset(pointsInput: readonly string[], leqInput: readonly (readonly [string, string])[]): FinitePosetCarrier {
   const points = uniqueSorted(pointsInput);
@@ -88,7 +88,7 @@ export function finitePoset(pointsInput: readonly string[], leqInput: readonly (
     }
     pairs.add(pairKey(left, right));
   }
-  const leqPairs = [...pairs].map((keyValue) => keyValue.split("\u0000") as [string, string]);
+  const leqPairs = [...pairs].map((keyValue) => JSON.parse(keyValue) as [string, string]);
   const leq = (left: string, right: string): boolean => pairs.has(pairKey(left, right));
   const reflexive = points.every((point) => leq(point, point));
   const transitive = points.every((a) => points.every((b) => points.every((c) =>
@@ -171,7 +171,7 @@ export function monotoneMap(
 ): MonotoneMapCarrier {
   for (const point of source.points) {
     const image = mapInput[point];
-    if (image === undefined || !target.points.includes(image)) {
+    if (!Object.hasOwn(mapInput, point) || image === undefined || !target.points.includes(image)) {
       throw new TypeError(`monotoneMap: ${point} maps outside the target`);
     }
   }

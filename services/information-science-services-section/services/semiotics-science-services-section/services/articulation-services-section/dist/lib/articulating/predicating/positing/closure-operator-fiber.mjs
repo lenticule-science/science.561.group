@@ -28,10 +28,8 @@ function* valuationRecords(points, index = 0, record = {}) {
     }
     const point = points[index];
     for (const value of chargeValueNames) {
-        record[point] = value;
-        yield* valuationRecords(points, index + 1, record);
+        yield* valuationRecords(points, index + 1, { ...record, [point]: value });
     }
-    delete record[point];
 }
 function valuations(points) {
     return Object.freeze([...valuationRecords(points)].map((values) => valuationFiberCarrier(points, values)));
@@ -226,15 +224,14 @@ export function reindexMapCarrier(sourcePoints, targetPoints, map) {
     if (!unique(targetPoints))
         throw new TypeError("reindexMapCarrier: duplicate target points are not a finite carrier");
     const targetSet = new Set(targetPoints);
-    const out = {};
-    for (const source of sourcePoints) {
-        const target = map[source];
+    const out = Object.fromEntries(sourcePoints.map((source) => {
+        const target = Object.hasOwn(map, source) ? map[source] : undefined;
         if (target === undefined)
             throw new TypeError(`reindexMapCarrier: missing target for ${source}`);
         if (!targetSet.has(target))
             throw new TypeError(`reindexMapCarrier: target ${target} is not in the target carrier`);
-        out[source] = target;
-    }
+        return [source, target];
+    }));
     return Object.freeze({
         kind: "positing.closure.reindexMap.carrier",
         sourcePoints: Object.freeze([...sourcePoints]),

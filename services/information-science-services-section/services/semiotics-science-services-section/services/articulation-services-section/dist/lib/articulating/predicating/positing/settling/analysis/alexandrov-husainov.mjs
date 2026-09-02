@@ -18,7 +18,7 @@ const uniqueSorted = (values) => {
     }
     return Object.freeze(out.sort((left, right) => left.localeCompare(right)));
 };
-const pairKey = (left, right) => `${left}\u0000${right}`;
+const pairKey = (left, right) => JSON.stringify([left, right]);
 export function finitePoset(pointsInput, leqInput) {
     const points = uniqueSorted(pointsInput);
     const pairs = new Set();
@@ -30,7 +30,7 @@ export function finitePoset(pointsInput, leqInput) {
         }
         pairs.add(pairKey(left, right));
     }
-    const leqPairs = [...pairs].map((keyValue) => keyValue.split("\u0000"));
+    const leqPairs = [...pairs].map((keyValue) => JSON.parse(keyValue));
     const leq = (left, right) => pairs.has(pairKey(left, right));
     const reflexive = points.every((point) => leq(point, point));
     const transitive = points.every((a) => points.every((b) => points.every((c) => !leq(a, b) || !leq(b, c) || leq(a, c))));
@@ -85,7 +85,7 @@ export function specializes(poset, x, y) {
 export function monotoneMap(source, target, mapInput) {
     for (const point of source.points) {
         const image = mapInput[point];
-        if (image === undefined || !target.points.includes(image)) {
+        if (!Object.hasOwn(mapInput, point) || image === undefined || !target.points.includes(image)) {
             throw new TypeError(`monotoneMap: ${point} maps outside the target`);
         }
     }

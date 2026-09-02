@@ -154,7 +154,7 @@ function requireSuccessorAlgebra(algebra, caller) {
     requireMember(algebra.elements, algebra.zero, caller);
     for (const element of algebra.elements) {
         const next = algebra.successor[element];
-        if (next === undefined)
+        if (!Object.hasOwn(algebra.successor, element) || next === undefined)
             throw new TypeError(`${caller}: missing successor for ${element}`);
         requireMember(algebra.elements, next, caller);
     }
@@ -238,7 +238,7 @@ export function directedGraph(vertices, edges) {
     const edgeKeys = new Set();
     const out = [];
     for (const [source, target] of edges) {
-        const key = `${source}\u0000${target}`;
+        const key = JSON.stringify([source, target]);
         if (!edgeKeys.has(key)) {
             edgeKeys.add(key);
             out.push(Object.freeze([source, target]));
@@ -274,13 +274,12 @@ export function directedHandshakeReceipt(graph) {
     });
 }
 export function topologicalDagReceipt(graph, order) {
-    const normalized = {};
-    for (const vertex of graph.vertices) {
+    const normalized = Object.fromEntries(graph.vertices.map((vertex) => {
         const value = order[vertex];
-        if (typeof value !== "number" || !Number.isSafeInteger(value))
+        if (!Object.hasOwn(order, vertex) || typeof value !== "number" || !Number.isSafeInteger(value))
             throw new TypeError(`topologicalDagReceipt: missing integer order for ${vertex}`);
-        normalized[vertex] = value;
-    }
+        return [vertex, value];
+    }));
     const irreflexive = graph.edges.every(([source, target]) => source !== target);
     const topological = graph.edges.every(([source, target]) => normalized[source] < normalized[target]);
     if (!irreflexive || !topological)

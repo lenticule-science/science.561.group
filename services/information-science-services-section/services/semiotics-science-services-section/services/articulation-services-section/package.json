@@ -1,6 +1,6 @@
 {
   "name": "@lenticule-science/articulating",
-  "version": "0.2.9",
+  "version": "0.2.10",
   "engines": {
     "forge": "1.7.1"
   },

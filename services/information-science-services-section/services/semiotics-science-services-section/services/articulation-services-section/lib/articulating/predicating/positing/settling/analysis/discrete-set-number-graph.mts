@@ -293,7 +293,7 @@ function requireSuccessorAlgebra(algebra: SuccessorAlgebraCarrier, caller: strin
   requireMember(algebra.elements, algebra.zero, caller);
   for (const element of algebra.elements) {
     const next = algebra.successor[element];
-    if (next === undefined) throw new TypeError(`${caller}: missing successor for ${element}`);
+    if (!Object.hasOwn(algebra.successor, element) || next === undefined) throw new TypeError(`${caller}: missing successor for ${element}`);
     requireMember(algebra.elements, next, caller);
   }
 }
@@ -378,7 +378,7 @@ export function directedGraph(vertices: readonly string[], edges: readonly (read
   const edgeKeys = new Set<string>();
   const out: (readonly [string, string])[] = [];
   for (const [source, target] of edges) {
-    const key = `${source}\u0000${target}`;
+    const key = JSON.stringify([source, target]);
     if (!edgeKeys.has(key)) {
       edgeKeys.add(key);
       out.push(Object.freeze([source, target]) as readonly [string, string]);
@@ -416,12 +416,11 @@ export function directedHandshakeReceipt(graph: FiniteDirectedGraphCarrier): Dir
 }
 
 export function topologicalDagReceipt(graph: FiniteDirectedGraphCarrier, order: Readonly<Record<string, number>>): TopologicalDagReceipt {
-  const normalized: Record<string, number> = {};
-  for (const vertex of graph.vertices) {
+  const normalized = Object.fromEntries(graph.vertices.map((vertex) => {
     const value = order[vertex];
-    if (typeof value !== "number" || !Number.isSafeInteger(value)) throw new TypeError(`topologicalDagReceipt: missing integer order for ${vertex}`);
-    normalized[vertex] = value;
-  }
+    if (!Object.hasOwn(order, vertex) || typeof value !== "number" || !Number.isSafeInteger(value)) throw new TypeError(`topologicalDagReceipt: missing integer order for ${vertex}`);
+    return [vertex, value];
+  }));
   const irreflexive = graph.edges.every(([source, target]) => source !== target);
   const topological = graph.edges.every(([source, target]) => (normalized[source] as number) < (normalized[target] as number));
   if (!irreflexive || !topological) throw new TypeError("topologicalDagReceipt: graph is not witnessed as a DAG by this order");

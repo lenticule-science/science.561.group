@@ -191,3 +191,18 @@ test('valuation points survive prototype-sensitive names through JSON and nuclei
     });
   }
 });
+
+import { knowledgeJoinClosure, pointwiseClosureFamilyReceipt, reindexMapCarrier, reindexValuationFiber } from '../dist/lib/articulating/predicating/positing/closure-operator-fiber.mjs';
+
+test('pointwise closure and reindexing preserve own prototype-sensitive point names', () => {
+  for (const point of ['__proto__', 'constructor', 'toString']) {
+    const seed = valuationFiberCarrier([point], { [point]: 'absurd' });
+    const map = reindexMapCarrier([point], ['target'], { [point]: 'target' });
+    assert.equal(Object.getPrototypeOf(map.map), Object.prototype);
+    assert.deepEqual(Object.keys(map.map), [point]);
+    assert.deepEqual(reindexValuationFiber(JSON.parse(JSON.stringify(map)), valuationFiberCarrier(['target'], { target: 'absurd' })), seed);
+    const receipt = pointwiseClosureFamilyReceipt(knowledgeJoinClosure('potential'), seed);
+    assert.equal(readValuationFiber(receipt.closed, point), 'potential');
+    assert.throws(() => reindexMapCarrier([point], ['target'], Object.create({ [point]: 'target' })), { name: 'TypeError', message: `reindexMapCarrier: missing target for ${point}` });
+  }
+});
