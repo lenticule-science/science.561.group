@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@red-cup-engineering/a2a-agent-card-discovery-service": "1.0.9",
-    "@red-cup-engineering/a2a-contracted-agent-service": "2.1.1",
+    "@red-cup-engineering/a2a-contracted-agent-service": "2.1.7",
     "@red-cup-engineering/a2a-rmn-part-service": "1.0.4",
     "@red-cup-engineering/a2a-rmn-task-client-service": "1.1.7",
     "@red-cup-engineering/semantic-content-identify-service": "0.2.7",
