@@ -185,9 +185,18 @@ with billing off. A provider on a free lane is the precondition for any
 bought-glass rendering; until then the wedge below produces an
 obstruction receipt, never a faked translation.
 
-First wedge: one Koios claim rendered through one non-English fiber
-with its translation receipt (source identity, validation scope, loss
-profile) landing as rows. Dimensions the owner named that this carrier
+First wedge, SHIPPED 2026-09-02: `news-media-engineering-services-section/scripts/render-claim-in-language.mjs`
+(13/13) takes a Koios claim, a target fiber, and a candidate rendering,
+re-reads the rendering through the fiber's own grammaticality judgment,
+and prints the receipt (source identity, producer, validation scope,
+loss profile, obstruction). Survey finding: no fiber and not the engine
+can PRODUCE surface text; fibers judge. Measured on the real title claim
+"Emergent Alignment" with this session declared as the glass: Mandarin
+「涌现对齐」 grammatical; Toki Pona "kama sama" ungrammatical (stranded
+preposition — the fiber refused it); Toki Pona "ijo mute li kama sama
+ijo wan" grammatical. The fiber's judgment covers surface form only,
+never meaning preservation — the receipt says so. Receipts land as rows
+through the semantic record journal in engineering custody. Dimensions the owner named that this carrier
 holds open, unsettled: the transnational corporate structure (which
 entities and markets), resource internationalization (fibers, corpora,
 and contributors per language), and media production per language.
