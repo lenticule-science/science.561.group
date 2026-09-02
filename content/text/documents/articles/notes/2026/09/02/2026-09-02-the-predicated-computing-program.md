@@ -176,6 +176,15 @@ Measured state, 2026-09-02:
   (1/7 vs 3/7); the kernel carries the ledger, the denial lane, and
   residuation with abstain on unwitnessed columns (68/68).
 
+Bought glass is unavailable today, measured 2026-09-02: the inference
+market (inference-dispatch-service) admits four providers and every
+solicitation is transport-obstructed — the npu, openrouter, and kernel
+providers are loopback agent cards (127.0.0.1:8795, :8808, :8813) with
+no listener, and the Gemini provider is a Cloud Run URL answering 503
+with billing off. A provider on a free lane is the precondition for any
+bought-glass rendering; until then the wedge below produces an
+obstruction receipt, never a faked translation.
+
 First wedge: one Koios claim rendered through one non-English fiber
 with its translation receipt (source identity, validation scope, loss
 profile) landing as rows. Dimensions the owner named that this carrier
