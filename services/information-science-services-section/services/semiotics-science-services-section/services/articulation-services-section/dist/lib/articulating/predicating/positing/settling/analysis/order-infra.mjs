@@ -6,7 +6,7 @@
  * lattices by arbitrary suprema. This module keeps the Node claim finite:
  * explicit carrier/relation/table data are checked and returned as receipts.
  */
-const assertIndex = (name, value, length) => {
+export const assertIndex = (name, value, length) => {
     if (!Number.isSafeInteger(value) || value < 0 || value >= length) {
         throw new RangeError(`${name}: expected an index into the carrier`);
     }
@@ -25,9 +25,9 @@ const requireSquareRelation = (le, size) => {
             throw new RangeError("orderInfra: relation must be square");
     });
 };
-const requireBinaryTable = (name, table, size) => {
+export const requireBinaryTable = (name, table, size, rowCountMessage = "table row count must match carrier size") => {
     if (table.length !== size)
-        throw new RangeError(`${name}: table row count must match carrier size`);
+        throw new RangeError(`${name}: ${rowCountMessage}`);
     table.forEach((row, left) => {
         if (row.length !== size)
             throw new RangeError(`${name}: table must be square`);

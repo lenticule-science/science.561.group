@@ -6,11 +6,7 @@
  * and endomap tables, plus a concrete FOUR/knowledge-order no-slack receipt.
  */
 import { chargeValue, chargeValues, joinKnowledgeValue, sameChargeValue, } from "../../bilattice-charge.mjs";
-const assertIndex = (name, value, length) => {
-    if (!Number.isSafeInteger(value) || value < 0 || value >= length) {
-        throw new RangeError(`${name}: expected an index into the carrier`);
-    }
-};
+import { assertIndex } from "./order-infra.mjs";
 const requireSquareRelation = (le, size) => {
     if (le.length !== size)
         throw new RangeError("laxSlack: relation row count must match carrier size");

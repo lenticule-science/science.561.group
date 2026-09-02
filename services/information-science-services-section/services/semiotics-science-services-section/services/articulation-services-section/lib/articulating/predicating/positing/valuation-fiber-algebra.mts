@@ -2,7 +2,7 @@
  * positing/valuation-fiber-algebra — finite valuation truth-Heyting quartet.
  *
  * Executable shadow of `RelMath.Positing.ValuationFiberAlgebra`,
- * `RelMath.Positing.ValuationQuartetDischarge`, and the finite recurrence cell
+ * `Obsmetrologia/Language/Positing/ValuationQuartetDischarge.lean`, and the finite recurrence cell
  * in `RelMath.Positing.QuartetRecurrence`.
  *
  * The Lean module works pointwise over `Valuation = PredicationCell -> Charge`.
@@ -94,8 +94,8 @@ export interface QuartetRecurrenceReceipt {
 
 export interface ValuationQuartetDischargeReceipt {
   readonly kind: "positing.valuationQuartetDischarge.receipt:witness";
-  readonly theorem: "RelMath.FiberDischarge.valuation_discharges_abstract_quartet";
-  readonly theoremFixPi: "RelMath.FiberDischarge.valuation_quartet_fix_pi_iff";
+  readonly theorem: "Obsmetrologia.FiberDischarge.valuation_discharges_abstract_quartet";
+  readonly theoremFixPi: "Obsmetrologia.FiberDischarge.valuation_quartet_fix_pi_iff";
   readonly carrier: ValuationFiberCarrier;
   readonly algebra: ValuationFiberAlgebraReceipt;
   readonly recurrence: QuartetRecurrenceReceipt;
@@ -106,7 +106,7 @@ export interface ValuationQuartetDischargeReceipt {
   readonly himpAdjunction: true;
   readonly nucleiCommute: true;
   readonly cornersCard: 4;
-  readonly absurdIsIntersection: true;
+  readonly stableIsIntersection: true;
   readonly fixPiIffFixSigmaAndDelta: true;
   readonly j1AgreesSigma: true;
   readonly j2AgreesDelta: true;
@@ -344,10 +344,10 @@ export const valuationFiberCornerOp = (
   carrier: ValuationFiberCarrier,
 ): ValuationFiberCarrier => {
   switch (corner) {
-    case "potential": return carrier;
-    case "active": return sigmaNucleus(carrier);
-    case "stable": return deltaNucleus(carrier);
-    case "absurd": return piNucleus(carrier);
+    case "absurd": return carrier;
+    case "potential": return sigmaNucleus(carrier);
+    case "active": return deltaNucleus(carrier);
+    case "stable": return piNucleus(carrier);
   }
 };
 
@@ -377,31 +377,31 @@ export function quartetRecurrenceReceipt(carrier: ValuationFiberCarrier): Quarte
   });
 }
 
-const absurdCornerIsIntersection = (): boolean =>
+const stableCornerIsIntersection = (): boolean =>
   chargeValueNames.every((name) => {
     const point = "cell";
     const carrier = valuationFiberCarrier([point], { [point]: name });
-    const fixedAbsurd = sameFiber(valuationFiberCornerOp("absurd", carrier), carrier);
-    const fixedActiveAndStable =
-      sameFiber(valuationFiberCornerOp("active", carrier), carrier) &&
-      sameFiber(valuationFiberCornerOp("stable", carrier), carrier);
-    return fixedAbsurd === fixedActiveAndStable;
+    const fixedStable = sameFiber(valuationFiberCornerOp("stable", carrier), carrier);
+    const fixedPotentialAndActive =
+      sameFiber(valuationFiberCornerOp("potential", carrier), carrier) &&
+      sameFiber(valuationFiberCornerOp("active", carrier), carrier);
+    return fixedStable === fixedPotentialAndActive;
   });
 
-/** Bundle the finite Node discharge of `RelMath.Positing.ValuationQuartetDischarge`. */
+/** Bundle the finite Node discharge of `Obsmetrologia/Language/Positing/ValuationQuartetDischarge.lean`. */
 export function valuationQuartetDischargeReceipt(carrier: ValuationFiberCarrier): ValuationQuartetDischargeReceipt {
   const algebra = valuationFiberAlgebraReceipt(carrier);
   const recurrence = quartetRecurrenceReceipt(carrier);
-  const j1AgreesSigma = sameFiber(valuationFiberCornerOp("active", carrier), sigmaNucleus(carrier));
-  const j2AgreesDelta = sameFiber(valuationFiberCornerOp("stable", carrier), deltaNucleus(carrier));
-  const piAgrees = sameFiber(valuationFiberCornerOp("absurd", carrier), piNucleus(carrier));
-  const absurdIsIntersection = absurdCornerIsIntersection();
+  const j1AgreesSigma = sameFiber(valuationFiberCornerOp("potential", carrier), sigmaNucleus(carrier));
+  const j2AgreesDelta = sameFiber(valuationFiberCornerOp("active", carrier), deltaNucleus(carrier));
+  const piAgrees = sameFiber(valuationFiberCornerOp("stable", carrier), piNucleus(carrier));
+  const stableIsIntersection = stableCornerIsIntersection();
 
   if (
     !algebra.heytingAdjunction ||
     !algebra.sigmaDeltaCommute ||
     recurrence.cardFour !== 4 ||
-    !absurdIsIntersection ||
+    !stableIsIntersection ||
     !algebra.fixPiIffFixSigmaAndDelta ||
     !j1AgreesSigma ||
     !j2AgreesDelta ||
@@ -413,8 +413,8 @@ export function valuationQuartetDischargeReceipt(carrier: ValuationFiberCarrier)
 
   return Object.freeze({
     kind: "positing.valuationQuartetDischarge.receipt:witness" as const,
-    theorem: "RelMath.FiberDischarge.valuation_discharges_abstract_quartet" as const,
-    theoremFixPi: "RelMath.FiberDischarge.valuation_quartet_fix_pi_iff" as const,
+    theorem: "Obsmetrologia.FiberDischarge.valuation_discharges_abstract_quartet" as const,
+    theoremFixPi: "Obsmetrologia.FiberDischarge.valuation_quartet_fix_pi_iff" as const,
     carrier,
     algebra,
     recurrence,
@@ -425,7 +425,7 @@ export function valuationQuartetDischargeReceipt(carrier: ValuationFiberCarrier)
     himpAdjunction: true as const,
     nucleiCommute: true as const,
     cornersCard: 4 as const,
-    absurdIsIntersection: true as const,
+    stableIsIntersection: true as const,
     fixPiIffFixSigmaAndDelta: true as const,
     j1AgreesSigma: true as const,
     j2AgreesDelta: true as const,

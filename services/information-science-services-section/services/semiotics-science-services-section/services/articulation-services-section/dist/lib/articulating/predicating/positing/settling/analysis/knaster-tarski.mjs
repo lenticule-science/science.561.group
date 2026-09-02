@@ -6,12 +6,7 @@
  * finite table version: a finite complete lattice relation plus a monotone
  * endomap table yields least/greatest fixed-point receipts.
  */
-import { completeLattice, monotoneMap, } from "./order-infra.mjs";
-const assertIndex = (name, value, length) => {
-    if (!Number.isSafeInteger(value) || value < 0 || value >= length) {
-        throw new RangeError(`${name}: expected an index into the carrier`);
-    }
-};
+import { assertIndex, completeLattice, monotoneMap, } from "./order-infra.mjs";
 const leAt = (system, left, right) => {
     assertIndex("knasterTarski left", left, system.labels.length);
     assertIndex("knasterTarski right", right, system.labels.length);

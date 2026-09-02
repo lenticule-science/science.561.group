@@ -7,13 +7,8 @@
  * expose a finite cotangent wavefront projection.
  */
 import { chargeValue, chargeValueName, joinKnowledgeValue, } from "../../bilattice-charge.mjs";
-import { diamondCausalSet, settleCausalSet, } from "./causal.mjs";
+import { diamondCausalSet, isCausalSettlementObstruction as isObstruction, settleCausalSet, } from "./causal.mjs";
 const edgeKey = (edge) => `${edge.from}->${edge.to}`;
-function isObstruction(value) {
-    return typeof value === "object"
-        && value !== null
-        && value.kind === "lorentzian.causalSettle-obstruction";
-}
 function settledCarrier(carrier) {
     const settled = settleCausalSet(carrier);
     if (settled.kind !== "lorentzian.causalSettle:witness")

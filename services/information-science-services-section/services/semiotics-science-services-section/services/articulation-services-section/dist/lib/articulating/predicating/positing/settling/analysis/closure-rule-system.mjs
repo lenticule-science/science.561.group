@@ -6,7 +6,7 @@
  * one consequent that raises a cell by knowledge join.
  */
 import { chargeValue, chargeValueName, chargeValueNames, joinKnowledgeValue, } from "../../bilattice-charge.mjs";
-import { readValuationFiber, valuationFiberCarrier, valuationLeqKnowledge, valuationKnowledgeJoin, } from "../../index.mjs";
+import { readValuationFiber, sameValuationFiber, valuationFiberCarrier, valuationLeqKnowledge, valuationKnowledgeJoin, } from "../../index.mjs";
 import { signatureOfCell, cellSignatureKey } from "../../../fibration.mjs";
 /**
  * The earned runtime image of Lean's `PredicationCell`.  A closure system may
@@ -19,8 +19,6 @@ const unique = (items) => new Set(items).size === items.length;
 const freezeRecord = (record) => Object.freeze({ ...record });
 const knowledgeLeqValue = (left, right) => chargeValueName(joinKnowledgeValue(chargeValue(left), chargeValue(right))) === right;
 const knowledgeJoinValueName = (left, right) => chargeValueName(joinKnowledgeValue(chargeValue(left), chargeValue(right)));
-const sameFiber = (left, right) => left.points.length === right.points.length
-    && left.points.every((point, index) => point === right.points[index] && readValuationFiber(left, point) === readValuationFiber(right, point));
 function requireChargeValue(value, caller) {
     if (!chargeValueNames.includes(value))
         throw new TypeError(`${caller}: ${value} is not a FOUR charge value`);
@@ -106,7 +104,7 @@ export function closureOrbit(system, seed, maxSteps = Math.max(4, system.cells.l
     for (let step = 0; step < maxSteps; step += 1) {
         const next = tstep(system, current);
         orbit.push(next);
-        if (sameFiber(next, current))
+        if (sameValuationFiber(next, current))
             break;
         current = next;
     }
@@ -130,7 +128,7 @@ export function eventualClosure(system, seed) {
  */
 export function threeStepClosureReceipt(system, seed) {
     const threeStep = tstep(system, tstep(system, tstep(system, seed)));
-    if (!sameFiber(tstep(system, threeStep), threeStep)) {
+    if (!sameValuationFiber(tstep(system, threeStep), threeStep)) {
         throw new RangeError("threeStepClosureReceipt: Lean clS is not fixed; use eventual runtime closure without the three-step theorem claim");
     }
     return Object.freeze({
@@ -173,7 +171,7 @@ function checkLeastClosed(system, seed, closed) {
     if (system.cells.length > 4) {
         throw new RangeError("closureRuleReceipt: exhaustive least-closed check is limited to at most 4 cells");
     }
-    return allValuations(system.cells).every((candidate) => !(valuationLeqKnowledge(seed, candidate) && sameFiber(tstep(system, candidate), candidate))
+    return allValuations(system.cells).every((candidate) => !(valuationLeqKnowledge(seed, candidate) && sameValuationFiber(tstep(system, candidate), candidate))
         || valuationLeqKnowledge(closed, candidate));
 }
 export function firedRuleNames(system, carrier) {
@@ -182,7 +180,7 @@ export function firedRuleNames(system, carrier) {
 export function closureRuleReceipt(system, seed) {
     const orbit = closureOrbit(system, seed);
     const closed = orbit[orbit.length - 1];
-    const fixed = sameFiber(tstep(system, closed), closed);
+    const fixed = sameValuationFiber(tstep(system, closed), closed);
     const inflationary = valuationLeqKnowledge(seed, closed);
     const monotone = checkMonotone(system);
     const respecting = ruleRespecting(system, closed);

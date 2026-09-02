@@ -6,6 +6,8 @@
  * lattices by arbitrary suprema. This module keeps the Node claim finite:
  * explicit carrier/relation/table data are checked and returned as receipts.
  */
+export declare const assertIndex: (name: string, value: number, length: number) => void;
+export declare const requireBinaryTable: (name: string, table: readonly (readonly number[])[], size: number, rowCountMessage?: string) => void;
 export interface FinitePreorderSystem {
     readonly kind: "orderInfra.finitePreorderSystem";
     readonly labels: readonly string[];

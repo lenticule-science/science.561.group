@@ -8,6 +8,9 @@
  */
 import { fromRatio, ratOne, ratZero } from "./exact-number.mjs";
 import { chargeValue, joinKnowledgeValue, } from "../../bilattice-charge.mjs";
+export const isCausalSettlementObstruction = (value) => typeof value === "object"
+    && value !== null
+    && value.kind === "lorentzian.causalSettle-obstruction";
 const linkKey = (link) => `${link.from}\u0000${link.to}`;
 const sortedLinks = (links) => Object.freeze([...links].sort((left, right) => linkKey(left).localeCompare(linkKey(right))).map((link) => Object.freeze({ ...link })));
 function duplicateEvent(events) {
@@ -331,9 +334,6 @@ export function causalMobiusReceipt() {
         hallSumAtApex,
         mobiusEqualsHallSumAtApex: true,
     });
-}
-function isCausalSettlementObstruction(value) {
-    return !Array.isArray(value);
 }
 export const cDiamond = (layer) => layer === 0 ? -1 : layer === 2 ? 1 : 0;
 export const bdCoeff2 = (layer) => layer === 0 ? 1 : layer === 1 ? -2 : layer === 2 ? 1 : 0;

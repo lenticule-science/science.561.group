@@ -11,12 +11,10 @@
  */
 import { chargeValue, chargeValueName, chargeValueNames, joinKnowledgeValue, } from "../../bilattice-charge.mjs";
 import { applyChargeClosure, chargeClosureCarrier, closureMonadReceipt, knowledgeJoinClosure, liftClosure, valuationKnowledgeJoin, } from "../../closure-operator-fiber.mjs";
-import { readValuationFiber, valuationFiberCarrier, valuationLeqKnowledge, } from "../../index.mjs";
+import { readValuationFiber, sameValuationFiber, valuationFiberCarrier, valuationLeqKnowledge, } from "../../index.mjs";
 const knowledgeLeqValue = (left, right) => chargeValueName(joinKnowledgeValue(chargeValue(left), chargeValue(right))) === right;
 const knowledgeJoinValueName = (left, right) => chargeValueName(joinKnowledgeValue(chargeValue(left), chargeValue(right)));
 const knowledgeSup = (values) => values.reduce((out, value) => knowledgeJoinValueName(out, value), "absurd");
-const sameFiber = (left, right) => left.points.length === right.points.length
-    && left.points.every((point, index) => point === right.points[index] && readValuationFiber(left, point) === readValuationFiber(right, point));
 const zeroIncrement = (points) => valuationFiberCarrier(points, Object.fromEntries(points.map((point) => [point, "absurd"])));
 function requireCharge(value, caller) {
     if (!chargeValueNames.includes(value))
@@ -141,11 +139,11 @@ export function settlingCoalgebraReceipt(closure, carrier, increment) {
     const coalgebraMapInflationary = valuationLeqKnowledge(carrier, target);
     const settlingEndofunctorMonotone = all.every((left) => all.every((right) => !valuationLeqKnowledge(left, right)
         || valuationLeqKnowledge(settlingEndofunctor(closure, increment, left), settlingEndofunctor(closure, increment, right))));
-    const zeroIncrementRecoversClosure = sameFiber(zeroTarget, closed);
+    const zeroIncrementRecoversClosure = sameValuationFiber(zeroTarget, closed);
     const orbitMonotone = orbit.every((left, leftIndex) => orbit.every((right, rightIndex) => leftIndex > rightIndex || valuationLeqKnowledge(left, right)));
     const fixed = orbit[orbit.length - 1];
-    const quiescenceIsoAtZeroIncrement = sameFiber(liftClosure(closure, fixed), fixed)
-        && sameFiber(settlingEndofunctor(closure, zeroIncrement(fixed.points), fixed), fixed);
+    const quiescenceIsoAtZeroIncrement = sameValuationFiber(liftClosure(closure, fixed), fixed)
+        && sameValuationFiber(settlingEndofunctor(closure, zeroIncrement(fixed.points), fixed), fixed);
     if (!coalgebraMapInflationary || !settlingEndofunctorMonotone || !zeroIncrementRecoversClosure || !orbitMonotone || !quiescenceIsoAtZeroIncrement) {
         throw new TypeError("settlingCoalgebraReceipt: finite settling-coalgebra laws failed");
     }

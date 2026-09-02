@@ -592,8 +592,8 @@ export function kleinFourGaugeReceipt(): KleinFourGaugeReceipt {
     abelian: true as const,
     actionHomomorphism: true as const,
     generatedByNegationConflation: true as const,
-    negationOrbit: Object.freeze(["active", "stable"] as const),
-    conflationOrbit: Object.freeze(["potential", "absurd"] as const),
+    negationOrbit: Object.freeze(["potential", "active"] as const),
+    conflationOrbit: Object.freeze(["absurd", "stable"] as const),
     negationFixed: Object.freeze(fixedSet("negation").map((value) => value.name)),
     conflationFixed: Object.freeze(fixedSet("conflation").map((value) => value.name)),
     orderEffects: Object.freeze(Object.fromEntries(

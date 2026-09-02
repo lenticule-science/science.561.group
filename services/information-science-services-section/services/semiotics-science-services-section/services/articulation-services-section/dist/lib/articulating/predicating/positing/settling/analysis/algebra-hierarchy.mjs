@@ -8,27 +8,13 @@
  * tables as carrier-shaped receipts.
  */
 import { gauge, gaugeElementNames, chargeValue, chargeValueNames, sameChargeValue, } from "../../bilattice-charge.mjs";
-import { booleanLatticeSystem, } from "./order-infra.mjs";
+import { assertIndex, booleanLatticeSystem, requireBinaryTable, } from "./order-infra.mjs";
 import { twoBooleanResiduatedLattice, } from "./residuated-lattice.mjs";
-const assertIndex = (name, value, length) => {
-    if (!Number.isSafeInteger(value) || value < 0 || value >= length) {
-        throw new RangeError(`${name}: expected an index into the carrier`);
-    }
-};
-const requireBinaryTable = (name, table, size) => {
-    if (table.length !== size)
-        throw new RangeError(`${name}: row count must match carrier size`);
-    table.forEach((row, left) => {
-        if (row.length !== size)
-            throw new RangeError(`${name}: table must be square`);
-        row.forEach((target, right) => assertIndex(`${name}[${left}][${right}]`, target, size));
-    });
-};
 const freezeTable = (table) => Object.freeze(table.map((row) => Object.freeze([...row])));
 export function finiteBinaryAlgebra(labels, op) {
     if (labels.length === 0)
         throw new RangeError("finiteBinaryAlgebra: carrier must be nonempty");
-    requireBinaryTable("finiteBinaryAlgebra op", op, labels.length);
+    requireBinaryTable("finiteBinaryAlgebra op", op, labels.length, "row count must match carrier size");
     return Object.freeze({
         kind: "algebraHierarchy.finiteBinaryAlgebra",
         labels: Object.freeze([...labels]),

@@ -5,14 +5,9 @@
  * pullback as a cochain map, cocycle/coboundary preservation on finite samples,
  * and the corpus diamond interval's Philip-Hall/Mobius Euler signature.
  */
-import { causalMobius, diamondCausalSet, settleCausalSet, } from "./causal.mjs";
+import { causalMobius, diamondCausalSet, isCausalSettlementObstruction, settleCausalSet, } from "./causal.mjs";
 function hasLink(links, from, to) {
     return links.some((link) => link.from === from && link.to === to);
-}
-function isCausalSettlementObstruction(value) {
-    return typeof value === "object"
-        && value !== null
-        && value.kind === "lorentzian.causalSettle-obstruction";
 }
 function assertKnownMap(map, event) {
     const mapped = map[event];

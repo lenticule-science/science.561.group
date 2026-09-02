@@ -38,6 +38,7 @@ export interface CausalSettlementObstruction {
     readonly closure: readonly CausalLink[];
     readonly offending?: CausalLink;
 }
+export declare const isCausalSettlementObstruction: (value: unknown) => value is CausalSettlementObstruction;
 export type CausalSettlementJudgment = CausalSettlementWitness | CausalSettlementObstruction;
 /** One Boolean causal closure step: `v(a,c) or exists b. v(a,b) and v(b,c)`. */
 export declare function causalStep(events: readonly string[], links: readonly CausalLink[]): readonly CausalLink[];

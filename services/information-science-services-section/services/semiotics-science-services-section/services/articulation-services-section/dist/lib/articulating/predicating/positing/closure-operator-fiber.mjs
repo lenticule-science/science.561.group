@@ -11,12 +11,10 @@
  * closure laws, and lifts the table pointwise over finite valuation fibers.
  */
 import { chargeValue, chargeValueName, chargeValueNames, joinKnowledgeValue, meetKnowledgeValue, } from "./bilattice-charge.mjs";
-import { readValuationFiber, valuationFiberCarrier, valuationLeqKnowledge, } from "./valuation-fiber-algebra.mjs";
+import { readValuationFiber, sameValuationFiber as sameFiber, valuationFiberCarrier, valuationLeqKnowledge, } from "./valuation-fiber-algebra.mjs";
 const freezeRecord = (record) => Object.freeze({ ...record });
 const unique = (items) => new Set(items).size === items.length;
 const knowledgeLeqValue = (left, right) => chargeValueName(joinKnowledgeValue(chargeValue(left), chargeValue(right))) === right;
-const sameFiber = (left, right) => left.points.length === right.points.length
-    && left.points.every((point, index) => point === right.points[index] && readValuationFiber(left, point) === readValuationFiber(right, point));
 const samePointCarrier = (left, right) => left.points.length === right.points.length && left.points.every((point, index) => point === right.points[index]);
 function requireSamePointCarrier(left, right) {
     if (!samePointCarrier(left, right)) {

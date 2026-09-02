@@ -5,22 +5,8 @@
  * represented by a lattice table, a possibly noncommutative product table, and
  * left/right residual tables satisfying the two bi-residuation adjunctions.
  */
-import { lattice, } from "./order-infra.mjs";
-const assertIndex = (name, value, length) => {
-    if (!Number.isSafeInteger(value) || value < 0 || value >= length) {
-        throw new RangeError(`${name}: expected an index into the carrier`);
-    }
-};
+import { assertIndex, lattice, requireBinaryTable, } from "./order-infra.mjs";
 const freezeTable = (table) => Object.freeze(table.map((row) => Object.freeze([...row])));
-const requireBinaryTable = (name, table, size) => {
-    if (table.length !== size)
-        throw new RangeError(`${name}: table row count must match carrier size`);
-    table.forEach((row, left) => {
-        if (row.length !== size)
-            throw new RangeError(`${name}: table must be square`);
-        row.forEach((target, right) => assertIndex(`${name}[${left}][${right}]`, target, size));
-    });
-};
 export function finiteLambekAlgebraSystem(latticeSystem, unit, dot, lres, rres) {
     assertIndex("finiteLambekAlgebraSystem unit", unit, latticeSystem.labels.length);
     requireBinaryTable("finiteLambekAlgebraSystem dot", dot, latticeSystem.labels.length);

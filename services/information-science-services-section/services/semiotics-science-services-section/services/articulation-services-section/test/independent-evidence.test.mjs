@@ -125,3 +125,39 @@ test(
     assert.equal(openFromNegative.value.neg, 1, "an independent negative witness charges the negative coordinate");
   },
 );
+
+import { chargeValueNames, chargeValue, gauge, kleinFourGaugeReceipt } from "../dist/lib/articulating/predicating/positing/bilattice-charge.mjs";
+
+test("gauge witness orbits match the actual nonfixed action", () => {
+  const receipt = kleinFourGaugeReceipt();
+  for (const element of ["negation", "conflation"]) {
+    const orbit = chargeValueNames.filter(name => gauge(element, chargeValue(name)).name !== name);
+    assert.deepEqual([...receipt[element + "Orbit"]].sort(), [...orbit].sort());
+    for (const name of orbit) assert.ok(orbit.includes(gauge(element, chargeValue(name)).name));
+  }
+});
+
+import { valuationFiberCarrier, valuationFiberCornerOp, sigmaNucleus, deltaNucleus, valuationTruthMeet, valuationLeqTruth, valuationQuartetDischargeReceipt } from '../dist/lib/articulating/predicating/positing/valuation-fiber-algebra.mjs';
+
+test('corner operators follow Quartet.lean and the maps are commuting truth nuclei', () => {
+  const names = ['absurd', 'potential', 'active', 'stable'];
+  const valuations = names.flatMap(x => names.map(y => valuationFiberCarrier(['x', 'y'], { x, y })));
+  for (const value of valuations) {
+    // Obsmetrologia.Language.Positing.Quartet: absurd=id, potential=f, active=g, stable=f∘g.
+    assert.deepEqual(valuationFiberCornerOp('absurd', value), value);
+    assert.deepEqual(valuationFiberCornerOp('potential', value), sigmaNucleus(value));
+    assert.deepEqual(valuationFiberCornerOp('active', value), deltaNucleus(value));
+    assert.deepEqual(valuationFiberCornerOp('stable', value), sigmaNucleus(deltaNucleus(value)));
+    assert.deepEqual(sigmaNucleus(deltaNucleus(value)), deltaNucleus(sigmaNucleus(value)));
+    for (const nucleus of [sigmaNucleus, deltaNucleus]) {
+      assert.equal(valuationLeqTruth(value, nucleus(value)), true);
+      assert.deepEqual(nucleus(nucleus(value)), nucleus(value));
+      for (const other of valuations) assert.deepEqual(nucleus(valuationTruthMeet(value, other)), valuationTruthMeet(nucleus(value), nucleus(other)));
+    }
+    const receipt = valuationQuartetDischargeReceipt(value);
+    assert.equal(receipt.stableIsIntersection, true);
+    assert.equal(receipt.theorem, 'Obsmetrologia.FiberDischarge.valuation_discharges_abstract_quartet');
+    assert.equal(receipt.theoremFixPi, 'Obsmetrologia.FiberDischarge.valuation_quartet_fix_pi_iff');
+    assert.equal(Object.hasOwn(receipt, 'absurdIsIntersection'), false);
+  }
+});

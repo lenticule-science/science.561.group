@@ -7,22 +7,8 @@
  * lattice tables plus fusion/residual tables satisfy the commutative monoid
  * laws, residuation adjunction, integrality, and derived laws.
  */
-import { boundedLattice, latticeOrder, } from "./order-infra.mjs";
-const assertIndex = (name, value, length) => {
-    if (!Number.isSafeInteger(value) || value < 0 || value >= length) {
-        throw new RangeError(`${name}: expected an index into the carrier`);
-    }
-};
+import { assertIndex, boundedLattice, latticeOrder, requireBinaryTable, } from "./order-infra.mjs";
 const freezeTable = (table) => Object.freeze(table.map((row) => Object.freeze([...row])));
-const requireBinaryTable = (name, table, size) => {
-    if (table.length !== size)
-        throw new RangeError(`${name}: table row count must match carrier size`);
-    table.forEach((row, left) => {
-        if (row.length !== size)
-            throw new RangeError(`${name}: table must be square`);
-        row.forEach((target, right) => assertIndex(`${name}[${left}][${right}]`, target, size));
-    });
-};
 const leAt = (system, left, right) => system.lattice.meet[left]?.[right] === left;
 const meetAt = (system, left, right) => system.lattice.meet[left]?.[right];
 const fuseAt = (system, left, right) => system.fuse[left]?.[right];

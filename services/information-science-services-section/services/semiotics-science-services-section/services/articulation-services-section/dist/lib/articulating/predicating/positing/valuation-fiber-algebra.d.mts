@@ -2,7 +2,7 @@
  * positing/valuation-fiber-algebra — finite valuation truth-Heyting quartet.
  *
  * Executable shadow of `RelMath.Positing.ValuationFiberAlgebra`,
- * `RelMath.Positing.ValuationQuartetDischarge`, and the finite recurrence cell
+ * `Obsmetrologia/Language/Positing/ValuationQuartetDischarge.lean`, and the finite recurrence cell
  * in `RelMath.Positing.QuartetRecurrence`.
  *
  * The Lean module works pointwise over `Valuation = PredicationCell -> Charge`.
@@ -71,8 +71,8 @@ export interface QuartetRecurrenceReceipt {
 }
 export interface ValuationQuartetDischargeReceipt {
     readonly kind: "positing.valuationQuartetDischarge.receipt:witness";
-    readonly theorem: "RelMath.FiberDischarge.valuation_discharges_abstract_quartet";
-    readonly theoremFixPi: "RelMath.FiberDischarge.valuation_quartet_fix_pi_iff";
+    readonly theorem: "Obsmetrologia.FiberDischarge.valuation_discharges_abstract_quartet";
+    readonly theoremFixPi: "Obsmetrologia.FiberDischarge.valuation_quartet_fix_pi_iff";
     readonly carrier: ValuationFiberCarrier;
     readonly algebra: ValuationFiberAlgebraReceipt;
     readonly recurrence: QuartetRecurrenceReceipt;
@@ -83,7 +83,7 @@ export interface ValuationQuartetDischargeReceipt {
     readonly himpAdjunction: true;
     readonly nucleiCommute: true;
     readonly cornersCard: 4;
-    readonly absurdIsIntersection: true;
+    readonly stableIsIntersection: true;
     readonly fixPiIffFixSigmaAndDelta: true;
     readonly j1AgreesSigma: true;
     readonly j2AgreesDelta: true;
@@ -96,6 +96,7 @@ export declare function readValuationFiber(carrier: ValuationFiberCarrier, point
 export declare const valuationTruthMeet: (left: ValuationFiberCarrier, right: ValuationFiberCarrier) => ValuationFiberCarrier;
 export declare const valuationTruthJoin: (left: ValuationFiberCarrier, right: ValuationFiberCarrier) => ValuationFiberCarrier;
 export declare const valuationTruthImplication: (antecedent: ValuationFiberCarrier, consequent: ValuationFiberCarrier) => ValuationFiberCarrier;
+export declare const sameValuationFiber: (left: ValuationFiberCarrier, right: ValuationFiberCarrier) => boolean;
 export declare const valuationLeqTruth: (left: ValuationFiberCarrier, right: ValuationFiberCarrier) => boolean;
 export declare const valuationLeqKnowledge: (left: ValuationFiberCarrier, right: ValuationFiberCarrier) => boolean;
 export declare const nucleusToward: (pole: ChargeValueName, carrier: ValuationFiberCarrier) => ValuationFiberCarrier;
@@ -108,6 +109,6 @@ export declare const modalToCorner: (modal: ModalCornerName) => ValuationFiberCo
 export declare const cornerToModal: (corner: ValuationFiberCornerName) => ModalCornerName;
 export declare const valuationFiberCornerOp: (corner: ValuationFiberCornerName, carrier: ValuationFiberCarrier) => ValuationFiberCarrier;
 export declare function quartetRecurrenceReceipt(carrier: ValuationFiberCarrier): QuartetRecurrenceReceipt;
-/** Bundle the finite Node discharge of `RelMath.Positing.ValuationQuartetDischarge`. */
+/** Bundle the finite Node discharge of `Obsmetrologia/Language/Positing/ValuationQuartetDischarge.lean`. */
 export declare function valuationQuartetDischargeReceipt(carrier: ValuationFiberCarrier): ValuationQuartetDischargeReceipt;
 //# sourceMappingURL=valuation-fiber-algebra.d.mts.map

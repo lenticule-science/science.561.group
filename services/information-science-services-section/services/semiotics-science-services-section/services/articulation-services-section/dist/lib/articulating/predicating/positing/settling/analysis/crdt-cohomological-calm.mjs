@@ -9,12 +9,10 @@
  */
 import { chargeValue, chargeValueName, chargeValueNames, joinKnowledgeValue, } from "../../bilattice-charge.mjs";
 import { applyChargeClosure, closureMonadReceipt, cosettlingReceipt, knowledgeJoinClosure, liftClosure, valuationKnowledgeJoin, } from "../../closure-operator-fiber.mjs";
-import { readValuationFiber, valuationFiberCarrier, valuationLeqKnowledge, } from "../../index.mjs";
+import { readValuationFiber, sameValuationFiber, valuationFiberCarrier, valuationLeqKnowledge, } from "../../index.mjs";
 const knowledgeJoinValueName = (left, right) => chargeValueName(joinKnowledgeValue(chargeValue(left), chargeValue(right)));
 export const mergeDeltas = (deltas) => deltas.reduce((out, value) => knowledgeJoinValueName(out, value), "absurd");
 const sameMembership = (left, right) => chargeValueNames.every((value) => left.includes(value) === right.includes(value));
-const sameFiber = (left, right) => left.points.length === right.points.length
-    && left.points.every((point, index) => point === right.points[index] && readValuationFiber(left, point) === readValuationFiber(right, point));
 const allValuations = (points) => {
     if (points.length > 4)
         throw new RangeError("crdtCalm: exhaustive valuation checks are limited to at most 4 points");
@@ -73,8 +71,8 @@ export function calmConvergenceFactsReceipt() {
     const right = valuationFiberCarrier(cells, { p: "absurd", q: "active" });
     const closure = knowledgeJoinClosure("potential");
     const fixedPoint = liftClosure(closure, valuationFiberCarrier(cells, { p: "active", q: "stable" }));
-    const quiescentIffClosureFixed = sameFiber(liftClosure(closure, fixedPoint), fixedPoint);
-    const mutuallyBelowImpliesEqual = allValuations(cells).every((u) => allValuations(cells).every((v) => !(valuationLeqKnowledge(u, v) && valuationLeqKnowledge(v, u)) || sameFiber(u, v)));
+    const quiescentIffClosureFixed = sameValuationFiber(liftClosure(closure, fixedPoint), fixedPoint);
+    const mutuallyBelowImpliesEqual = allValuations(cells).every((u) => allValuations(cells).every((v) => !(valuationLeqKnowledge(u, v) && valuationLeqKnowledge(v, u)) || sameValuationFiber(u, v)));
     if (!quiescentIffClosureFixed || !mutuallyBelowImpliesEqual) {
         throw new TypeError("calmConvergenceFactsReceipt: finite fixed-point/confluence laws failed");
     }
