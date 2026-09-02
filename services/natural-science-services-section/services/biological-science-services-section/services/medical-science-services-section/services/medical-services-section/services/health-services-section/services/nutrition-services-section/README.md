@@ -19,14 +19,19 @@ The governing architecture is in
 
 ## Admitted exchange contracts
 
-`lib/schemas/` currently admits three Draft 2020-12 record contracts:
+`lib/schemas/` currently admits four Draft 2020-12 record contracts:
 
 - `urn:red-cup-science:nutrition:intake-candidate:1.0.0` for a
   non-authoritative logging candidate;
 - `urn:red-cup-science:nutrition:food-assertion-snapshot:1.0.0` for a
-  source-release-pinned set of nutrient assertions; and
+  source-release-pinned set of nutrient assertions;
 - `urn:red-cup-science:nutrition:intake-event:1.0.0` for a human-affirmed
-  intake that cites its selected snapshot.
+  intake that cites its selected snapshot; and
+- `urn:red-cup-science:nutrition:biometric-observation:1.0.0` for a
+  device/manual/derived biometric reading (resting heart rate, RR-interval
+  summaries, RMSSD, sleep duration, step count, and other metrics in the
+  same open kebab-case vocabulary) with explicit missingness and consent
+  scope.
 
 Every record must include `mediaRetention` affirming
 `containsRawPhoto: false`, `containsReceiptImage: false`,

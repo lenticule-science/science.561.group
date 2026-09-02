@@ -44,7 +44,6 @@ references:
     title: "Levoit LV-H132 Air Purifier Review"
     publication: "HouseFresh"
     year: 2023
-    title: "housefresh-lv-h132-2023"
 ---
 
 ## The Problem

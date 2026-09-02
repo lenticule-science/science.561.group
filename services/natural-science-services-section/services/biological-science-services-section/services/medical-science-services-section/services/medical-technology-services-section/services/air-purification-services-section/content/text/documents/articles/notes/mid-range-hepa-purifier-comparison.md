@@ -29,7 +29,6 @@ references:
     title: "ENERGY STAR Product Specification for Room Air Cleaners"
     publication: "EPA / DOE"
     year: 2023
-    title: "energy-star-room-air-cleaners"
 ---
 
 ## The Problem
