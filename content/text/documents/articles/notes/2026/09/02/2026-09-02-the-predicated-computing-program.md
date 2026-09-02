@@ -135,3 +135,46 @@ Obsmetrologia (absorption reports pending, this session).
 The fidelity seat — whether the port remains Lakotaean — stays with the
 Leader as a standing boundary condition of the whole program, per
 Stringing Glass §8.2.
+
+## 7. Internationalization: the forms over every fiber
+
+Owner-directed 2026-09-02: this program is also how the 561 Group
+bootstraps itself as a small transnational corporation, and its nearest
+outward face is producing media in other languages. Here that is not a
+translation department. It is the one machine parameterized over
+language fibers, under two standing laws: a public property is a
+parameterization over shared services (org-layering, owner-ruled
+2026-08-30), and a carrier in another language is a language
+presentation over an addressed artifact with a typed translation
+judgment, declared validation scope, and loss profile, never a second
+truth (metroplat design note, §5.3, §6.5, AD-39). Media in language L is
+therefore the claim store × fiber L × a translation judgment, spoken by
+the machine's language form, with bought glass at the typed boundary
+during bootstrap and the weaning fraction published per language; every
+such receipt grows that fiber's witnessed corpus.
+
+Measured state, 2026-09-02:
+
+- Fibers: five language algebras in source (english 0.1.7, lakota
+  0.1.4, latin 0.1.4, mandarin 0.1.2, tokipona 0.1.4) over
+  `@lenticule-science/communicating` 0.0.6, plus RelConLang; panini is
+  the composing app and its Lot 1 is unstarted (linguistics custody,
+  2026-09-01 panini note).
+- Corpora: only RelConLang has sentence rows (35 + 9 + 4); the Lakota
+  corpus is 27 paradigm rows; Toki Pona has none. The corpus is the
+  program's binding constraint in every language.
+- Media rail: Koios News renders a sourced-claim store to pages, feeds,
+  and JSON-LD in English only. The one house precedent for media in
+  another language is the lochiel binational dossiers, translated to
+  Spanish by hand.
+- Machine: the organism's masked-incidence evaluation beats frequency
+  on RelConLang (16/28 vs 10/28); the kernel's saturation speaker loses
+  (1/7 vs 3/7); the kernel carries the ledger, the denial lane, and
+  residuation with abstain on unwitnessed columns (68/68).
+
+First wedge: one Koios claim rendered through one non-English fiber
+with its translation receipt (source identity, validation scope, loss
+profile) landing as rows. Dimensions the owner named that this carrier
+holds open, unsettled: the transnational corporate structure (which
+entities and markets), resource internationalization (fibers, corpora,
+and contributors per language), and media production per language.
