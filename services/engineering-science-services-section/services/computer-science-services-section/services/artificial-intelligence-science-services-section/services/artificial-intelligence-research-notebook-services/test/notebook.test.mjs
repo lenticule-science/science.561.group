@@ -5,7 +5,7 @@ import { join } from "node:path";
 import test from "node:test";
 import { EMPTY_WITNESS_ROOT, identifyJsonSemanticContent } from "@red-cup-engineering/semantic-content-identify-service";
 import { ACTOR, formNotebookBindingCandidate, notebookIdentity } from "../src/notebook.mjs";
-import { CHANNEL, PROVIDER, VIDEO_CAPACITY_ALLOCATION, contentId, digest, formVideoDemand, nextPendingLesson, providerBinding, validLesson } from "../src/operations.mjs";
+import { CHANNEL, PROVIDER, VIDEO_CAPACITY_ALLOCATION, contentId, digest, exact as exactPredicate, formVideoDemand, nextPendingLesson, providerBinding, validLesson } from "../src/operations.mjs";
 import { queryJournalRecords, recordJournalRecord, semanticJson } from "../src/record-journal.mjs";
 
 const AT = "2026-07-22T12:00:00.000Z";
@@ -17,6 +17,15 @@ function lessonProduct() {
   return { id, ...body };
 }
 function exact(body) { return { id: contentId(body), ...body }; }
+
+test("exact() delegates to the shared content-identity primitive and preserves identity for a record carrying a nested Uint8Array", () => {
+  const body = { type: "ArtificialIntelligenceLessonProductAdmission", source: { title: "situated source", bytes: Buffer.from("ai research source bytes") } };
+  const record = { id: contentId(body), ...body };
+  assert.equal(exactPredicate(record), true);
+  assert.equal(exactPredicate({ ...record, source: { ...record.source, bytes: Buffer.from("changed bytes") } }), false);
+  assert.equal(exactPredicate(null), false);
+  assert.equal(exactPredicate("not-an-object"), false);
+});
 
 test("AI/ML notebook identity is bound while effects remain separately gated", () => { const identity = notebookIdentity(); assert.equal(identity.actor, ACTOR); assert.equal(identity.notebookId, "9c3eed44-7fa3-4203-8b79-e0a20b91017f"); assert.match(identity.creationReceipt, /^urn:sha256:/u); const candidate = formNotebookBindingCandidate(identity.url); assert.equal(candidate.notebookId, identity.notebookId); assert.deepEqual(candidate.authorityGranted, []); assert.throws(() => formNotebookBindingCandidate("https://example.com/notebook/67510ce7-79b3-4caa-b25c-28e0d3911b5a"), /exact NotebookLM/u); });
 

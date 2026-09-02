@@ -1,35 +1,17 @@
-// Page glue for play.html: the Capture Go onboarding ladder (Experience
-// Brief item 2 / task item 2), using the kernel via relative import (this
-// module IS the relative import the task calls for -- ./kernel/*.mjs, the
-// same source scripts/build-kernel.mjs stripped from
-// ../../weiqi-kernel/src).
-//
-// Rules authority stays entirely with the kernel: this module never
-// decides legality itself, only calls game.isLegal()/game.play() and
-// renders what comes back. Capture-go's win condition ("first capture
-// wins") is the one house rule layered on top, read from the kernel's own
-// `capture` semantic events (see bot.mjs's wasCaptureMove).
-//
-// This module is also where the Experience Brief's items 3 (SOUND) and 4
-// (LIVE CONCEPT RECOGNITION) get wired to real play: every semantic event
-// the kernel fires drives both a synthesized sound (sound.mjs) and,
-// tier-gated, a toast (concept-toast.mjs) -- board.mjs and its sibling
-// modules only render what this glue tells them to.
-//
-// The ladder itself (public/data/ladder-rungs.json): each rung names a
-// board size and a bot-ladder tier id (public/js/bot.mjs's BOT_TIERS is
-// the one place the tiers themselves are defined -- this module only looks
-// a tier up by id via BOT_TIERS.find, never reimplements a bot or a second
-// copy of a tier's label/description). Clearing a rung (winning it as
-// Black) persists to localStorage and unlocks the next rung in order;
-// nothing already unlocked is ever re-locked. Per-rung intro copy is a
-// verbatim excerpt from this section's own lesson/glossary corpus (see
-// each rung's introSource in the JSON), not invented UI copy.
+// Page glue for play.html: the Capture Go onboarding ladder. Rules
+// authority stays entirely with the kernel -- this module only calls
+// game.isLegal()/game.play() and renders what comes back. Capture-go's
+// win condition ("first capture wins") is a house rule read from the
+// kernel's own `capture` events (bot.mjs's wasCaptureMove); every
+// semantic event also drives sound (sound.mjs) and a tier-gated toast
+// (concept-toast.mjs). The ladder (data/ladder-rungs.json) persists
+// cleared rungs to localStorage; BOT_TIERS (bot.mjs) defines tiers.
 
 import * as kernel from "./kernel/index.mjs";
 import { WeiqiBoard, getEventGlyph } from "./board.mjs";
 import { GlossaryHoverCard, loadGlossary } from "./hover-card.mjs";
 import { wasCaptureMove, BOT_TIERS } from "./bot.mjs";
+import { explainCaptureGoEnd } from "./game-summary.mjs";
 import { WeiqiSound } from "./sound.mjs";
 import { ConceptToastStrip } from "./concept-toast.mjs";
 import { LADDER_PROGRESS_KEY, unlockedCount, isRungUnlocked, addClearedRung, parseClearedRungIds } from "./ladder-progress.mjs";
@@ -40,6 +22,8 @@ const TOUCH_MODE_KEY = "weiqi-touch-mode";
 const boardHost = document.getElementById("board-host");
 const boardWrap = document.getElementById("board-wrap");
 const statusLine = document.getElementById("status-line");
+const gameSummaryEl = document.getElementById("game-summary");
+const gameSummaryListEl = document.getElementById("game-summary-list");
 const eventLog = document.getElementById("event-log");
 const newGameBtn = document.getElementById("new-game-btn");
 const soundToggleBtn = document.getElementById("sound-toggle-btn");
@@ -161,6 +145,35 @@ function logEvent(ev, mover) {
   hoverCard.attachTermSpans(item);
 }
 
+// The proposedWedge: one glossary-grounded sentence per decisive event in
+// THIS game (weiqi-meet-then-beat-record.json) -- what the scrolling
+// event log already showed move-by-move, distilled to just the atari and
+// group-death that decided the outcome, once play has actually ended.
+function renderGameSummary() {
+  gameSummaryListEl.innerHTML = "";
+  const sentences = explainCaptureGoEnd(game, kernel);
+  gameSummaryEl.hidden = sentences.length === 0;
+  for (const s of sentences) {
+    const item = document.createElement("div");
+    item.className = "event-item";
+    const text = document.createElement("span");
+    text.textContent = s.text;
+    const term = document.createElement("span");
+    term.className = "term-hover";
+    term.setAttribute("data-term", s.term);
+    term.tabIndex = 0;
+    term.textContent = ` (${s.term})`;
+    item.append(text, term);
+    gameSummaryListEl.appendChild(item);
+  }
+  hoverCard.attachTermSpans(gameSummaryListEl);
+}
+
+function hideGameSummary() {
+  gameSummaryListEl.innerHTML = "";
+  gameSummaryEl.hidden = true;
+}
+
 function toastEvent(ev, mover) {
   if (!toasts.shouldShow(ev.type)) return;
   const spec = getEventGlyph(ev.type);
@@ -209,6 +222,7 @@ function applyMove(coord) {
   if (wasCaptureMove(outcome.events)) {
     winner = mover;
     sound.playGameEnd();
+    renderGameSummary();
     if (winner === kernel.BLACK) onHumanClearedRung();
   }
   render();
@@ -249,6 +263,7 @@ function startRung(index) {
   board.setAnnotations([]);
   updateKoMarker();
   hideCelebration();
+  hideGameSummary();
   renderLadderPanel();
   render();
   board.announce(`${rung.label} started, ${rung.boardSize}x${rung.boardSize} board. Black to move.`);

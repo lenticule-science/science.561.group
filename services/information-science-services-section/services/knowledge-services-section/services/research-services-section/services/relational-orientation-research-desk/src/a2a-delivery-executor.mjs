@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import { resolve } from "node:path";
+import { runMain } from "@red-cup-engineering/javascript-file-main-guard-service";
 import {
   agentRmnMessage,
   extractRmnPart,
@@ -47,11 +48,10 @@ async function main() {
     `${JSON.stringify(executeDeliveryMessage(JSON.parse(input), { dataRoot: process.env.RELATIONAL_RESEARCH_DATA_ROOT }))}\n`,
   );
 }
-if (
-  process.argv[1] &&
-  resolve(process.argv[1]) === resolve(new URL(import.meta.url).pathname)
-)
-  await main().catch((error) => {
-    process.stderr.write(`${error.message}\n`);
-    process.exitCode = 2;
-  });
+await runMain(main, {
+  moduleUrl: import.meta.url,
+  isEntry: (url, entry) =>
+    Boolean(entry) && resolve(entry) === resolve(new URL(url).pathname),
+  formatError: (error) => `${error.message}\n`,
+  exitCode: 2,
+});

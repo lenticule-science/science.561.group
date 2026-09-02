@@ -1,7 +1,7 @@
 [
   {
     "name": "area-scoring",
-    "title": "area scoring",
+    "title": "area-scoring",
     "definition": "Area scoring in weiqi computes each player's final score as the number of that player's own live stones remaining on the board plus the vacant points that count as that player's territory; captures made during play matter only insofar as they change which stones are on the board at the end, not as separately counted prisoner points. Chinese, New Zealand, and Ing rules all use area scoring. Because a stone on the board and an enclosed empty point are worth the same one point each, playing an extra move inside your own territory late in the game costs nothing under area scoring: it simply converts a territory point into a stone point.",
     "related": [
       "territory",
@@ -61,7 +61,7 @@
   },
   {
     "name": "dead-stones",
-    "title": "dead stones",
+    "title": "dead-stones",
     "definition": "Dead stones in weiqi are stones left on the board after both players pass that cannot avoid eventual capture under correct play, and are therefore removed as though captured before the board is counted, without either player having to actually play out the capture. A stone or group is dead exactly when it fails the same test life-and-death reading always applies: it cannot make two secure eyes and cannot escape or be rescued. A group that shares unresolvable liberties with the opponent, by contrast, is in seki and is never marked dead.",
     "related": [
       "life-and-death",
@@ -85,7 +85,7 @@
   },
   {
     "name": "false-eye",
-    "title": "false eye",
+    "title": "false-eye",
     "definition": "A false eye in weiqi is an eye-shaped empty point that looks like a protected internal liberty but does not meet the diagonal-control and connection requirements of a real eye, so the opponent can eventually force the surrounding group to fill it.",
     "related": [
       "eye",
@@ -156,7 +156,7 @@
   },
   {
     "name": "life-and-death",
-    "title": "life and death",
+    "title": "life-and-death",
     "definition": "Life and death in weiqi is the analysis of whether a group can secure enough stable shape, usually through eyes, to avoid capture, or whether the opponent can force it off the board.",
     "related": [
       "eye",
@@ -228,7 +228,7 @@
   },
   {
     "name": "territory-scoring",
-    "title": "territory scoring",
+    "title": "territory-scoring",
     "definition": "Territory scoring in weiqi computes each player's final score as the vacant points that count as that player's territory plus the prisoners that player captured from the opponent during the game; a live stone remaining on the board at the end contributes no direct point value of its own. Japanese and Korean rules use territory scoring. Because stones themselves are not counted, playing an extra move inside your own territory late in the game costs a full point under territory scoring: it removes one territory point and, since nothing was captured, adds nothing back.",
     "related": [
       "territory",
