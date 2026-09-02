@@ -19,7 +19,7 @@ test("the projected engine loads as plain ESM, with no TypeScript left in it", a
 });
 
 test("the projected scheduler agrees with the upstream package it was stripped from", async () => {
-  const upstream = await import("@red-cup-engineering/lantern-561-group/srs");
+  const upstream = await import("@red-cup-engineering/education-platform-service/srs");
   assert.equal(browser.srs.DECAY, upstream.DECAY);
   assert.equal(browser.srs.FACTOR, upstream.FACTOR);
   assert.equal(browser.srs.DEFAULT_TARGET_RETENTION, upstream.DEFAULT_TARGET_RETENTION);
@@ -43,7 +43,7 @@ test("the projected scheduler agrees with the upstream package it was stripped f
 });
 
 test("the projected light cone agrees with the upstream package", async () => {
-  const upstream = await import("@red-cup-engineering/lantern-561-group/lightcone");
+  const upstream = await import("@red-cup-engineering/education-platform-service/lightcone");
   const rooms = [{ id: "a" }, { id: "b" }, { id: "c" }];
   const doors = [{ from: "a", to: "b", weight: "hard", reason: "t" }, { from: "b", to: "c", weight: "hard", reason: "t" }];
   const cards = [
@@ -75,11 +75,11 @@ test("the browser uses CAIRN room-index search unchanged", async () => {
 
 test("specifier retargeting rewrites only relative engine imports", () => {
   assert.equal(
-    retargetSpecifiers(`import { x } from './srs.mts';\nimport y from "./types.mts";`),
+    retargetSpecifiers(`import { x } from './srs.js';\nimport y from "./types.js";`),
     `import { x } from './srs.mjs';\nimport y from "./types.mjs";`,
   );
   assert.equal(
-    retargetSpecifiers(`import z from "@scope/pkg/srs.mts";`),
-    `import z from "@scope/pkg/srs.mts";`,
+    retargetSpecifiers(`import z from "@scope/pkg/srs.js";`),
+    `import z from "@scope/pkg/srs.js";`,
   );
 });

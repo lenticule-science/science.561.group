@@ -1,8 +1,8 @@
 import { composeVaultMaze } from "@red-cup-engineering/vaultmaze/compose";
 import { validateVaultMazeConfig } from "@red-cup-engineering/vaultmaze/config";
 import { evaluateVaultMazePassage } from "@red-cup-engineering/vaultmaze/passage";
-import { compileVault } from "@561-group/vault-compiler/compile";
-import { recallProbability } from "@red-cup-engineering/lantern-561-group/srs";
+import { compileVault } from "@red-cup-engineering/vault-compiler/compile";
+import { recallProbability } from "@red-cup-engineering/education-platform-service/srs";
 import { lSpaceConfig, lSpaceSurfacePolicy, roomVisibility } from "./config.mjs";
 
 export {
