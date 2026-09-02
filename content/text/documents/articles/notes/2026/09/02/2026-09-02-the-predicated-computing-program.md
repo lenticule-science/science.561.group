@@ -103,7 +103,11 @@ a published number.
    with wit-logged sampling → masked-incidence evaluation versus a
    frequency baseline.
 4. **Sound memory** — eavt strata (Fix σ / Fix Δ / H*), the machine's
-   proposer-versus-verifier soundness condition.
+   proposer-versus-verifier soundness condition. SHIPPED upstream:
+   `@red-cup-engineering/eavt` 0.5.0 carries `stratify` (saturate then
+   transfer, read off the immutable trace; 94/94). The remaining edge is
+   the kernel building its context from a trace through those strata
+   instead of bare (object, attribute) pairs.
 5. **Learned Hamiltonian** — conductance adaptation live (L0–L3 of the
    machine spec: fix δ per form, consistency, locality, entropic
    convergence).
