@@ -111,11 +111,18 @@ These six are simultaneously the papers agenda's first candidates.
 
 ## Current edge
 
-The architecture judge-panel resolved: minimal-enrichment over GEODE's
-existing stateless `fae-workspace-graph.mjs` provider composition, not a
-new FAE root in this section. Its output became four bounded
-implementation lots against the doctrine above, each scoped to the
-publish gate.
+The architecture judge-panel resolved: minimal-enrichment sequencing over
+a Territory-Native spine, both grounded in GEODE's existing stateless
+`fae-workspace-graph.mjs` provider composition rather than a new FAE root
+in this section. Its output became a ten-lot build order (Lots 1–10, plus
+an explicit deferral of a live FAE root, nanopub/DOI deposit, a
+non-term refusal schema, and any settle-corpus scheduler past v1) against
+the doctrine above, each lot scoped to the publish gate. The full
+synthesis — components, build order, candidate-0 critique, risks, open
+questions — is journaled at `ni:///sha-256;XvVrAJTCnrGbwymNKTKA1-w_V40gTzXmP7sHc5GNiug`
+(`architecture-adoption`, 2026-09-02T06:01:05Z); that record currently
+lives only in science-services-section's uncommitted `data/logs`, so it
+is also at-risk pending the custody resolution named below.
 
 Lots 1–3 landed and gate-verified: canonical eavt row identity for
 GEODE's declared relations (content-addressed `ni:` ids, G-Set dedupe,
@@ -139,9 +146,36 @@ contested cells and dangling links by benefit/cost — "the thing nobody
 in any knowledge system has ever built"), is undispatched: no code, no
 brief, queued behind Lot 4.
 
+Lots 6–10 are undispatched, queued behind Lot 5, and not yet named in
+any receipt other than the architecture-adoption record itself: Lot 6,
+an EAVT-to-SEAVT lift for term-to-term relations through
+witness-journal-rdf-projection-service's existing `projectSeavtRdf`,
+unmodified; Lot 7, a citation-triple carrier and admission gate in
+bibliography-engineering-services-section (papers, admission only —
+nanopub/DOI deposit explicitly excluded); Lot 8, a manual settling pass
+(`apps/geode/scripts/settle-corpus.mjs`) orchestrating Lots 1–5, with
+H⁰/H¹ recorded as "not yet computed" until Lot 9 lands; Lot 9, deferred
+deliberately late, extracting the Settlement-locus σ/Δ nucleus-pair
+algebra from FAE's kernel to its lawful theorem-locus seat, replacing
+Lot 3's interim windowed reads — coordinated with FAE's own custody as a
+finding, never landed en passant; Lot 10, the vertical-slice proof
+itself (not new code): admit one real note, run settle-corpus.mjs,
+verify admitted → settled → served → dereferenced → exactly one receipt.
+
 First vertical-slice target unchanged: one real science note admitted →
 settled → served → term IRI dereferences → receipt written and priced.
-It depends on Lots 4 and 5 both landing.
+Lot 10 is that proof; it depends on Lots 1–8 landing, at minimum.
+
+Open questions the architecture synthesis left, ruled this session under
+the decision law (executive rulings, not founder rulings): `/ns/*` stays
+on l-space.561.group, graduation to a standalone zone waiting on real
+external dereference signal; `consent-status`'s value vocabulary is not
+invented — Lot 2's executor greps the corpus first and, if empty, leaves
+the value set open pending a founder ruling on consent semantics; Lot 7's
+paper-predicate authority list is checked against CiTO before any
+predicate is coined; retiring Lot 3's interim windowed-strata reading in
+favor of Lot 9's doctrine-precise extraction is deferred until Lot 9's
+extraction cost is known.
 
 Standing debts filed at the head of the build: the false
 2026-08-21-agent-science-founding record (disk/record contradiction), and
