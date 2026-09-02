@@ -1,5 +1,5 @@
 /**
- * @red-cup-engineering/communicating/speaking/listening — listened communication.
+ * @lenticule-science/communicating/speaking/listening — listened communication.
  *
  * This is the normative listening spine: admission, articulation, parsing,
  * grounding, understanding, grammatical judgment, codecs, geometry, and the

@@ -1,5 +1,5 @@
 /**
- * @red-cup-engineering/communicating/speaking/listening/algebra — the generative/compositional foundation of the
+ * @lenticule-science/communicating/speaking/listening/algebra — the generative/compositional foundation of the
  * language chain.
  *
  * Three faces of the same algebraic layer:

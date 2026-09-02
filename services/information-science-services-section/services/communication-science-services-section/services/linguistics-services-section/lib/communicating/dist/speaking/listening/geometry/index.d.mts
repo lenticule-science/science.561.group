@@ -1,5 +1,5 @@
 /**
- * @red-cup-engineering/communicating/speaking/listening/geometry — the metric layer of language.
+ * @lenticule-science/communicating/speaking/listening/geometry — the metric layer of language.
  *
  * Distance and shape over senses: an inspectable hypernym graph, synonym
  * sets, least-common-ancestor, and a depth-normalized similarity. No

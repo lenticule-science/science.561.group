@@ -1,5 +1,5 @@
 /**
- * @red-cup-engineering/communicating/speaking — speaking as the communicating trunk.
+ * @lenticule-science/communicating/speaking — speaking as the communicating trunk.
  *
  * Speaking gives communicative form: speech is listened into settled readings,
  * signified, and given illocutionary force. Realization from section and

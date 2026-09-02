@@ -1,13 +1,13 @@
 /**
- * @red-cup-engineering/communicating/speaking/listening/codecs — the codec layer of language.
+ * @lenticule-science/communicating/speaking/listening/codecs — the codec layer of language.
  *
  * Codecs are representation-boundary morphisms. This subpath owns the
  * structure → surface projection for settled communicating parses.
  *
  * The other legs live in their home objects:
- *   - load:       raw fiber data  ⇄  compiled fiber        (@red-cup-engineering/communicating/speaking/listening/algebra)
- *   - admit:      surface string  →   relating utterance    (@red-cup-engineering/communicating/speaking/listening/parsing)
- *   - parse:      admitted carrier →  settled structure     (@red-cup-engineering/communicating/speaking/listening/parsing)
+ *   - load:       raw fiber data  ⇄  compiled fiber        (@lenticule-science/communicating/speaking/listening/algebra)
+ *   - admit:      surface string  →   relating utterance    (@lenticule-science/communicating/speaking/listening/parsing)
+ *   - parse:      admitted carrier →  settled structure     (@lenticule-science/communicating/speaking/listening/parsing)
  *   - render:     settled structure →  surface string       (this subpath)
  *
  * The codec law (after the research archive's `interpret(note; rules) → fiber`):

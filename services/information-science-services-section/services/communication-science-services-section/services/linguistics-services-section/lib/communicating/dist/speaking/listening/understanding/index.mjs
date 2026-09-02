@@ -1,5 +1,5 @@
 /**
- * @red-cup-engineering/communicating/speaking/listening/understanding — semantic readings of language.
+ * @lenticule-science/communicating/speaking/listening/understanding — semantic readings of language.
  *
  * What a settled parse *means*: semantic frames (roles, polarity, scope, tense,
  * presupposition, logical form) and discourse structure (entity linking,
