@@ -289,11 +289,13 @@ COVID POTS specifically.
 ### RECOVER-AUTONOMIC platform trial: First long-COVID POTS RCT
 
 The first randomized trial specifically designed to test pharmacologic
-management of long-COVID-associated POTS is RECOVER-AUTONOMIC (ClinicalTrials.gov
-NCT06305793), a platform-trial design testing three interventions: coordinated
-nonpharmacologic care, IVIG, and ivabradine. The ivabradine arm completed
-enrollment and results were presented at the American College of Cardiology
-Scientific Session in March 2026.
+management of long-COVID-associated POTS is RECOVER-AUTONOMIC, a platform
+protocol (ClinicalTrials.gov NCT06305780) testing three interventions, each
+registered as its own appendix under the platform: coordinated
+nonpharmacologic care, IVIG (Appendix A, NCT06305793), and ivabradine
+(Appendix B, NCT06305806). The ivabradine arm completed enrollment and
+results were presented at the American College of Cardiology Scientific
+Session in March 2026.
 
 #### Ivabradine arm results (conference presentation, not yet peer-reviewed publication)
 
@@ -400,4 +402,5 @@ postural orthostatic tachycardia syndrome: A systematic review of studies before
 and during the COVID-19 pandemic. *Frontiers in Neurology*, 10.3389/fneur.2024.1515486.
 
 RECOVER-AUTONOMIC platform protocol. (2024). National Institutes of Health RECOVER
-Initiative, ClinicalTrials.gov NCT06305793.
+Initiative, ClinicalTrials.gov NCT06305780 (platform protocol);
+NCT06305793 (Appendix A, IVIG); NCT06305806 (Appendix B, Ivabradine).
