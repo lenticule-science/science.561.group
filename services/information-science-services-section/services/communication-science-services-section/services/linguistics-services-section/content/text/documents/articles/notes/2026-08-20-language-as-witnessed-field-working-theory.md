@@ -1,6 +1,6 @@
 ---
 title: "Language as Witnessed Field: Working Theory Note"
-description: "A standalone working statement of the Witnessed Field theory of language founded in the 2026-08-20 design dialogue: axioms, the meme quantum with bilattice charge, community cohomology, gauge, causal cones, settlement — with every claim anchored to the estate's formal assets and graded by the house evidence discipline."
+description: "A standalone working statement of the Witnessed Field theory of language founded in the 2026-08-20 design dialogue: axioms, the meme quantum with bilattice charge, community cohomology, gauge, causal cones, settlement — with every claim anchored to the house's formal assets and graded by the house evidence discipline."
 date-created: 2026-08-20
 type: notes
 name: 2026-08-20-language-as-witnessed-field-working-theory
@@ -23,7 +23,7 @@ authors:
 This note states the theory in full working form. It is science-side because
 it is theory about language as such, not about any learner. The dialogue
 notes (see provenance) record how it was reached; this note records what it
-claims, what in this estate already formalizes each part, and what would
+claims, what in this tree already formalizes each part, and what would
 falsify it.
 
 ## 0. The instrument thesis
@@ -48,7 +48,7 @@ season-gated, and the theory represents gating natively rather than treating
 all data as extractable. (No predecessor theory carries consent in its
 foundations.)
 
-**A2 — Quantum: the meme.** Estate definition, verbatim
+**A2 — Quantum: the meme.** The house definition, verbatim
 (articulation-services-section, lib/articulating/predicating/positing/fiber.mts):
 "the minimal transmissible unit of meaning-with-evidence: a predication cell
 bound to a bilattice charge," where the charge carries [truth, falsity] side
@@ -159,7 +159,7 @@ stratification is a formal home for sign-vehicle/interpretant talk, with
 uptake as interpretant made measurable. Related formal precedents to engage
 honestly: Goguen's institutions; Abramsky-Brandenburger sheaf-theoretic
 contextuality; Belnap/Ginsberg/Fitting bilattices; Lawvere hyperdoctrines
-(already cited by the estate's CHL module).
+(already cited by the house's CHL module).
 
 ## 4. Obligations (what would falsify this)
 
