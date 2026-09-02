@@ -30,6 +30,13 @@ export function load(raw) {
     }));
     const pronRef = new Map(Object.entries(reference.pronouns).map(([w, f]) => [w.toLowerCase(), f]));
     const irregularPlurals = new Map(Object.entries(morphology.irregularPlurals ?? {}));
+    const irregularVerbBases = new Set(Object.keys(morphology.irregularVerbs ?? {}).map((w) => w.toLowerCase()));
+    const irregularVerbForms = new Map();
+    for (const [, forms] of Object.entries(morphology.irregularVerbs ?? {})) {
+        for (const [slot, surface] of Object.entries(forms)) {
+            irregularVerbForms.set(surface.toLowerCase(), slot);
+        }
+    }
     const numberSuffixRe = morphology.numberSuffixPattern === ""
         ? null
         : new RegExp(morphology.numberSuffixPattern, "i");
@@ -47,11 +54,14 @@ export function load(raw) {
             return ["conj"];
         if (auxSet.has(lower))
             return ["aux"];
+        if (copSet.has(lower))
+            return ["cop"];
         return [];
     }
     function morphologyTags(word) {
         const tags = [];
-        if (/^\d[\d,.]*$/.test(word) || numberWordSet.has(word.toLowerCase())) {
+        const lower = word.toLowerCase();
+        if (/^\d[\d,.]*$/.test(word) || numberWordSet.has(lower)) {
             tags.push("num");
         }
         for (const { re, tag } of suffixMatchers) {
@@ -61,6 +71,14 @@ export function load(raw) {
         for (const { re, tag } of rootPatternMatchers) {
             if (re.test(word) && !tags.includes(tag))
                 tags.push(tag);
+        }
+        if ((irregularVerbBases.has(lower) || irregularVerbForms.has(lower)) && !tags.includes("verb")) {
+            tags.push("verb");
+        }
+        for (const { re, form } of verbFormMatchers) {
+            if ((form === "3sg" || form === "base") && re.test(word) && !tags.includes("verb")) {
+                tags.push("verb");
+            }
         }
         if (tags.length === 0)
             tags.push("noun");
@@ -110,6 +128,12 @@ export function load(raw) {
         return ["sg"];
     }
     function verbForm(word, _tags) {
+        const lower = word.toLowerCase();
+        const irregularSlot = irregularVerbForms.get(lower);
+        if (irregularSlot !== undefined)
+            return irregularSlot;
+        if (irregularVerbBases.has(lower))
+            return "base";
         for (const { re, form } of verbFormMatchers) {
             if (re.test(word))
                 return form;

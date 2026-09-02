@@ -47,6 +47,14 @@ export function load(raw: RawBundle): CompiledBundle {
 
   
   const irregularPlurals = new Map(Object.entries(morphology.irregularPlurals ?? {}));
+
+  const irregularVerbBases = new Set(Object.keys(morphology.irregularVerbs ?? {}).map((w) => w.toLowerCase()));
+  const irregularVerbForms = new Map<string, string>();
+  for (const [, forms] of Object.entries(morphology.irregularVerbs ?? {})) {
+    for (const [slot, surface] of Object.entries(forms)) {
+      irregularVerbForms.set(surface.toLowerCase(), slot);
+    }
+  }
   const numberSuffixRe = morphology.numberSuffixPattern === ""
     ? null
     : new RegExp(morphology.numberSuffixPattern, "i");
@@ -64,12 +72,14 @@ export function load(raw: RawBundle): CompiledBundle {
     if (pronSet.has(lower)) return ["pron"];
     if (conjSet.has(lower)) return ["conj"];
     if (auxSet.has(lower)) return ["aux"];
+    if (copSet.has(lower)) return ["cop"];
     return [];
   }
 
   function morphologyTags(word: string): readonly string[] {
     const tags: string[] = [];
-    if (/^\d[\d,.]*$/.test(word) || numberWordSet.has(word.toLowerCase())) {
+    const lower = word.toLowerCase();
+    if (/^\d[\d,.]*$/.test(word) || numberWordSet.has(lower)) {
       tags.push("num");
     }
     for (const { re, tag } of suffixMatchers) {
@@ -77,6 +87,16 @@ export function load(raw: RawBundle): CompiledBundle {
     }
     for (const { re, tag } of rootPatternMatchers) {
       if (re.test(word) && !tags.includes(tag)) tags.push(tag);
+    }
+
+    if ((irregularVerbBases.has(lower) || irregularVerbForms.has(lower)) && !tags.includes("verb")) {
+      tags.push("verb");
+    }
+
+    for (const { re, form } of verbFormMatchers) {
+      if ((form === "3sg" || form === "base") && re.test(word) && !tags.includes("verb")) {
+        tags.push("verb");
+      }
     }
     if (tags.length === 0) tags.push("noun");
     return tags;
@@ -121,6 +141,11 @@ export function load(raw: RawBundle): CompiledBundle {
   }
 
   function verbForm(word: string, _tags: readonly string[]): string | null {
+    const lower = word.toLowerCase();
+
+    const irregularSlot = irregularVerbForms.get(lower);
+    if (irregularSlot !== undefined) return irregularSlot;
+    if (irregularVerbBases.has(lower)) return "base";
     for (const { re, form } of verbFormMatchers) {
       if (re.test(word)) return form;
     }
