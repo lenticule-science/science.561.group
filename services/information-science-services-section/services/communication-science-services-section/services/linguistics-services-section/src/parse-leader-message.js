@@ -16,7 +16,7 @@ import {
   identifyJsonSemanticContent,
 } from "@red-cup-engineering/semantic-content-identify-service";
 
-const DEFAULT_ENGLISH_FIBER = "@lenticule-science/english-language-algebra@0.1.5";
+const DEFAULT_ENGLISH_FIBER = "@lenticule-science/english-language-algebra@0.1.7";
 
 export function semanticJsonId(value, objectKind) {
   return identifyJsonSemanticContent({ objectKind, value, witnessRoot: EMPTY_WITNESS_ROOT }).token;

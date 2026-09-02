@@ -26,7 +26,7 @@ test("the default English fiber preserves source, ambiguity, and repairs without
   assert.equal(parsed.kind, "lenticule-science.leader-message-parse/v2");
   assert.equal(parsed.candidateReading, true);
   assert.equal(parsed.source.text, leaderText);
-  assert.equal(parsed.language.fiber, "@lenticule-science/english-language-algebra@0.1.5");
+  assert.equal(parsed.language.fiber, "@lenticule-science/english-language-algebra@0.1.7");
   assert.notEqual(parsed.language.fiber, parsed.language.contentToken);
   assert.ok(parsed.ambiguity.obstructions.length >= 1);
   assert.ok(parsed.repairObligations.length >= parsed.ambiguity.obstructions.length);

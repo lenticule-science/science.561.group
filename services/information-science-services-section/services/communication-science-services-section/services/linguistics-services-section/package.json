@@ -12,8 +12,8 @@
     "test": "node --test test/leader-message-parsing.test.js"
   },
   "dependencies": {
-    "@lenticule-science/communicating": "0.0.4",
-    "@lenticule-science/english-language-algebra": "0.1.5",
+    "@lenticule-science/communicating": "0.0.6",
+    "@lenticule-science/english-language-algebra": "0.1.7",
     "@red-cup-engineering/relational-value-graph-service": "0.1.1",
     "@red-cup-engineering/semantic-content-identify-service": "0.2.7",
     "@red-cup-engineering/semantic-record-journal-service": "0.1.6"
