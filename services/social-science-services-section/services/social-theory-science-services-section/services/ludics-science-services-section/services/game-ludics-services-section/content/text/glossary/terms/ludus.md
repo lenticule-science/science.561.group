@@ -5,6 +5,13 @@ aliases:
   - "formal play"
 date-created: 2026-03-06
 tags: []
+references:
+  caillois1958:
+    authors: ["Roger Caillois"]
+    title: "Les jeux et les hommes"
+    publisher: "Gallimard"
+    year: 1958
+    note: "Translated by Meyer Barash as Man, Play and Games, Free Press, 1961."
 ---
 
 Ludus is one pole of Roger Caillois's paidia-ludus spectrum: play that has been structured by [rules](../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/services/being-services-section/services/doing-services-section/services/playing-services-section/services/gaming-services-section/content/text/glossary/terms/rules.md), constraints, and conventions — play that has become a game. Where [paidia](./paidia.md) is spontaneous and free-form, ludus is disciplined and formalized. The movement from paidia to ludus is the movement from splashing in a pool to swimming laps, from noodling on a guitar to performing a sonata, from roughhousing to wrestling with weight classes and a referee. Ludus doesn't eliminate the energy of paidia; it channels it through structure.

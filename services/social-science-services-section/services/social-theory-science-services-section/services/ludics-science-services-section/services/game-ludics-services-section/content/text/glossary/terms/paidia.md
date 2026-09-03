@@ -5,6 +5,13 @@ aliases:
   - "free play"
 date-created: 2026-03-06
 tags: []
+references:
+  caillois1958:
+    authors: ["Roger Caillois"]
+    title: "Les jeux et les hommes"
+    publisher: "Gallimard"
+    year: 1958
+    note: "Translated by Meyer Barash as Man, Play and Games, Free Press, 1961."
 ---
 
 Paidia is one pole of Roger Caillois's paidia-ludus spectrum: unstructured, spontaneous, free-form play — play before it becomes a game. A child splashing in a puddle, a musician noodling without a score, a group of friends improvising a story with no [rules](../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/services/being-services-section/services/doing-services-section/services/playing-services-section/services/gaming-services-section/content/text/glossary/terms/rules.md). Paidia is characterized by joy, improvisation, and the absence of imposed constraints. It isn't formless — it has its own internal logic — but that logic emerges from the activity rather than being imposed from outside. No one decides the rules of a daydream in advance.
