@@ -25,6 +25,7 @@ import ObsmetrologiaManual.BookV.RecurringFour
 import ObsmetrologiaManual.BookV.ComputingFormats
 import ObsmetrologiaManual.BookV.ItToBitToByte
 import ObsmetrologiaManual.BookV.CausalityPackets
+import ObsmetrologiaManual.BookV.HoarePrograms
 import ObsmetrologiaManual.BookVI.ValuationFiber
 import ObsmetrologiaManual.BookVI.GluingWitnesses
 import ObsmetrologiaManual.BookVI.StructuredCohomologyWitnesses
@@ -326,6 +327,8 @@ specified and witnessed.
 {include 1 ObsmetrologiaManual.BookV.ItToBitToByte}
 
 {include 1 ObsmetrologiaManual.BookV.CausalityPackets}
+
+{include 1 ObsmetrologiaManual.BookV.HoarePrograms}
 
 # Book VI: Fibered And Cohomological Matter
 

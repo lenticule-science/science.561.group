@@ -19,8 +19,8 @@ This page carries the packet/readout claim-site at the computing surface.
 * phase: computing after causal settling and site support have been generated;
 * generating sites: finite causal sets, cone geometry, and the bitopological
   settling site;
-* downstream uses: program surfaces, endpoint readouts, and runtime admission
-  logs;
+* downstream uses: program surfaces, endpoint readouts, Hoare programs, and
+  runtime admission logs;
 * Lean carrier: {name Computing.CausalCarrierReadout}`Computing.CausalCarrierReadout`
   and {name Computing.CausalityPacket}`Computing.CausalityPacket`;
 * Blueprint nodes: `def:causal-carrier-readout`,
