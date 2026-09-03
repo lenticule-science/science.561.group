@@ -1,7 +1,7 @@
 import { createHash } from "node:crypto";
 import { cp, mkdir, rm, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
-import { canonicalStringify, validateWorld } from "@561-group/vault-compiler/canonical";
+import { canonicalStringify, validateWorld } from "@red-cup-engineering/vault-compiler/canonical";
 import { projectWebFeedArtifacts } from "@red-cup-engineering/project-web-feed-artifacts-service";
 import { renderMarkdownBlockHtml } from "@red-cup-engineering/render-markdown-block-html-service";
 import { normalizeTufteModel } from "@red-cup-engineering/web-tufte-gui-services-section";

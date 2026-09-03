@@ -39,9 +39,9 @@ test("the release ledger derives compound keywords, reverse backlinks, and no si
     siblingOperation: "services/other/content/text/glossary/terms/operation.md",
   };
   const carriers = new Map([
-    [paths.model, "---\nname: Model\n---\n\nA model is a purpose-bounded representation used to answer specified questions about what it represents. Its omissions and transformations are part of its engineering contract, so a model is judged against its intended use rather than by resemblance alone.\n"],
-    [paths.bamboo, "---\nname: BAMBOO\nkeywords: model, operation\n---\n\nBAMBOO is a compound engineering term whose declared constituents are carried only by its keywords. This fixture makes no reciprocal claim in either primitive term.\n"],
-    [paths.siblingOperation, "---\nname: Operation\n---\n\nAn operation is an admitted transformation from specified inputs and state to specified outputs and state. This sibling definition must not enter another service's glossary scope.\n"],
+    [paths.model, "---\nidentity: model\nname: Model\n---\n\nA model is a purpose-bounded representation used to answer specified questions about what it represents. Its omissions and transformations are part of its engineering contract, so a model is judged against its intended use rather than by resemblance alone.\n"],
+    [paths.bamboo, "---\nidentity: bamboo\nname: BAMBOO\nkeywords:\n  - model\n  - operation\n---\n\nBAMBOO is a compound engineering term whose declared constituents are carried only by its keywords. This fixture makes no reciprocal claim in either primitive term.\n"],
+    [paths.siblingOperation, "---\nidentity: operation\nname: Operation\n---\n\nAn operation is an admitted transformation from specified inputs and state to specified outputs and state. This sibling definition must not enter another service's glossary scope.\n"],
   ]);
   for (const [path, text] of carriers) {
     await mkdir(dirname(join(root, path)), { recursive: true });
@@ -51,11 +51,18 @@ test("the release ledger derives compound keywords, reverse backlinks, and no si
   const projected = await projectLSpaceRelationLedger({ root, rooms });
   assert.equal(projected.scanned, 3);
   assert.equal(projected.documents, 1);
-  assert.deepEqual(projected.rows.map(({ e, a, v }) => ({ e, a, v })), [{
-    e: paths.bamboo,
-    a: "declares-keyword",
-    v: "model",
-  }]);
+  assert.deepEqual(projected.defects, []);
+  assert.deepEqual(projected.rows.map(({ e, a, v }) => ({ e, a, v })), [
+    { e: paths.bamboo, a: "declares-keyword", v: "model" },
+    {
+      e: paths.bamboo,
+      a: "refused",
+      v: {
+        rule: "not-found-in-current-or-ancestor-scope",
+        message: "keyword operation did not resolve to a defined term",
+      },
+    },
+  ]);
   assert.deepEqual(projected.unresolved, [{
     path: paths.bamboo,
     keyword: "operation",
