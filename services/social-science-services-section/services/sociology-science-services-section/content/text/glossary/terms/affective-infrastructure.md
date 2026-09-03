@@ -92,7 +92,7 @@ Affective infrastructure also connects to [feeling rules](./feeling-rules.md): t
 ## Related terms
 
 - [Lauren Berlant](../../general/people/lauren-berlant.md) — who develops the concept
-- [Cruel optimism](./cruel-optimism.md) — the attachment sustained by affective infrastructure
+- [Cruel optimism](../../../../services/critical-theory-science-services-section/services/affect-theory-services-section/services/berlantian-services-section/content/text/glossary/terms/cruel-optimism.md) — the attachment sustained by affective infrastructure
 - [Crisis ordinariness](../../philosophy/terms/crisis-ordinariness.md) — the condition affective infrastructure manages
 - [Feeling rules](./feeling-rules.md) — the prescriptions that affective infrastructure enforces
 - [Industrial intellectualism](./industrial-intellectualism.md) — knowledge production as affective infrastructure
@@ -134,7 +134,7 @@ Affective infrastructure also connects to [feeling rules](./feeling-rules.md): t
 ## Related terms
 
 - [Lauren Berlant](../../general/people/lauren-berlant.md) — who develops the concept
-- [Cruel optimism](./cruel-optimism.md) — the attachment sustained by affective infrastructure
+- [Cruel optimism](../../../../services/critical-theory-science-services-section/services/affect-theory-services-section/services/berlantian-services-section/content/text/glossary/terms/cruel-optimism.md) — the attachment sustained by affective infrastructure
 - [Crisis ordinariness](../../philosophy/terms/crisis-ordinariness.md) — the condition affective infrastructure manages
 - [Feeling rules](./feeling-rules.md) — the prescriptions that affective infrastructure enforces
 - [Industrial intellectualism](../schools/cybernetic-postliberalism/terms/industrial-intellectualism.md) — knowledge production as affective infrastructure

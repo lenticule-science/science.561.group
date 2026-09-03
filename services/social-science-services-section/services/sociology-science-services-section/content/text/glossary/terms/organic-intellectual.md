@@ -58,5 +58,5 @@ emsenn's "The theory that survived the war" (2025-04-07) traces how this concept
 - [Antonio Gramsci](../../general/people/antonio-gramsci.md) — who develops the concept
 - [Hegemony](./hegemony.md) — the condition organic intellectuals work to contest
 - [COINTELPRO](./cointelpro.md) — the program that destroyed organic intellectual formations
-- [Cruel optimism](./cruel-optimism.md) — the condition of the organic intellectual whose attachment to pedagogy sustains the formatting that neutralizes insurgent thought
+- [Cruel optimism](../../../../services/critical-theory-science-services-section/services/affect-theory-services-section/services/berlantian-services-section/content/text/glossary/terms/cruel-optimism.md) — the condition of the organic intellectual whose attachment to pedagogy sustains the formatting that neutralizes insurgent thought
 - [Prefigurative politics](./prefigurative-politics.md) — the practice organic intellectuals emerge from

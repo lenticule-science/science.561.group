@@ -59,7 +59,7 @@ This is why emsenn connects feeling rules to [industrial intellectualism](../sch
 - [Arlie Russell Hochschild](../../general/people/arlie-russell-hochschild.md) — who develops the concept
 - [Industrial intellectualism](../schools/cybernetic-postliberalism/terms/industrial-intellectualism.md) — intellectual [labor](./labor.md) governed by genre's feeling rules
 - [Neurotic platformal intellectual](../schools/cybernetic-postliberalism/terms/neurotic-platformal-intellectual.md) — the subject position governed by platform-specific feeling rules
-- [Cruel optimism](./cruel-optimism.md) — attachment sustained by feeling rules that make hope mandatory
+- [Cruel optimism](../../../../services/critical-theory-science-services-section/services/affect-theory-services-section/services/berlantian-services-section/content/text/glossary/terms/cruel-optimism.md) — attachment sustained by feeling rules that make hope mandatory
 - [Affective infrastructure](./affective-infrastructure.md) — the procedural frameworks through which feeling rules operate
 - [Fascist grammar](../schools/cybernetic-postliberalism/terms/fascist-grammar.md) — a grammar whose steps prescribe specific affects
 - [The closet](../schools/queer/terms/the-closet.md) — the structure through which feeling rules about sexuality are enforced

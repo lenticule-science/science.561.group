@@ -54,5 +54,5 @@ This connects to emsenn's broader analysis of how systems stabilize through norm
 - [Late liberalism](./late-liberalism.md) — a hypernormalized political order
 - [Fascist grammar](./fascist-grammar.md) — depends on hypernormalization to make its sequence habitual
 - [Spectacle](./spectacle.md) — [Debord](../../general/people/guy-debord.md)'s parallel concept of displaced social life
-- [Cruel optimism](./cruel-optimism.md) — attachment that persists after belief has collapsed
+- [Cruel optimism](../../../../services/critical-theory-science-services-section/services/affect-theory-services-section/services/berlantian-services-section/content/text/glossary/terms/cruel-optimism.md) — attachment that persists after belief has collapsed
 - [Crisis ordinariness](../../philosophy/terms/crisis-ordinariness.md) — [Berlant](../../general/people/lauren-berlant.md)'s term for the normalized condition of ongoing instability

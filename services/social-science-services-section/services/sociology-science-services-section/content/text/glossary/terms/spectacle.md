@@ -61,4 +61,4 @@ This connects to emsenn's broader analysis of [fascist grammar](../schools/cyber
 - [Fascist grammar](../schools/cybernetic-postliberalism/terms/fascist-grammar.md) — operates through spectacle's logic of performance-as-reality
 - [Industrial intellectualism](../schools/cybernetic-postliberalism/terms/industrial-intellectualism.md) — spectacle applied to knowledge production
 - [Programmability](../../information/terms/programmability.md) — digital-era updating logic as spectacle's current form
-- [Cruel optimism](./cruel-optimism.md) — structural attachment sustained by the spectacle's affective management
+- [Cruel optimism](../../../../services/critical-theory-science-services-section/services/affect-theory-services-section/services/berlantian-services-section/content/text/glossary/terms/cruel-optimism.md) — structural attachment sustained by the spectacle's affective management

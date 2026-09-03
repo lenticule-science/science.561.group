@@ -1,10 +1,10 @@
 ---
 title: "K. Wayne Yang"
-description: "Scholar of ethnic studies and education at UC San Diego; co-author with Eve Tuck of 'Decolonization Is Not a Metaphor' (2012), co-founder of Roses in Concrete, and, writing as la paperson, author of A Third University Is Possible (2017)."
+description: "Scholar of ethnic studies and education at UC San Diego; co-author with Eve Tuck of 'Decolonization Is Not a Metaphor' (2012) and, writing as la paperson, author of A Third University Is Possible (2017)."
 date-created: 2026-09-02
 ---
 
-K. Wayne Yang is a scholar on the faculty at the University of California, San Diego, working across ethnic studies and education. With Eve Tuck he co-founded and co-edits the journal *Critical Ethnic Studies* and co-founded Roses in Concrete, a community school. Writing under the pseudonym la paperson, he is the author of *A Third University Is Possible*.
+K. Wayne Yang is a scholar on the faculty at the University of California, San Diego, working across ethnic studies and education. With Eve Tuck he co-founded and co-edits the journal *Critical Ethnic Studies*. Writing under the pseudonym la paperson, he is the author of *A Third University Is Possible*.
 
 ## Core ideas
 
