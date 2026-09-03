@@ -21,10 +21,13 @@ course on 2026-07-18. The OSS membrane is seated here, published as the private
 ambient parent as one gitlink. That completed formation is historical evidence,
 not a continuing need for a classifier or assurance service.
 
-No absence of an application from Obsmetrologia makes the application invalid,
-and no application demand authorizes adding application code to the primary
-mathematics package. Applications hire a separately owned OSS service and cross
-the mathematical package boundary through an explicit dependency or contract.
+No absence of an application from Obsmetrologia makes the application invalid.
+Program-logic carriers that extend Obsmetrologia's own grammar live in the
+primary mathematics package's Computing surface
+(`lib/obsmetrologia/Obsmetrologia/Computing/`); application demand does not
+authorize adding application code beyond that surface. Applications hire a
+separately owned OSS service and cross the mathematical package boundary
+through an explicit dependency or contract.
 
 ## Holdings
 
@@ -42,14 +45,15 @@ the mathematical package boundary through an explicit dependency or contract.
   patch bytes, path envelope, application-dependency absence, and required
   scope/build evidence before returning a bundle for Obsmetrologia's own
   admission review.
-- **Nation — Hoare Program Carrier / Finite Program Measurement Service**
-  (`services/hoare-program-carrier/`, `services/finite-program-measurement-service/`):
-  split 2026-07-30 from the former combined `hoare-program-measurement`. The
-  first owns the application-specific Lean carrier removed from the primary
-  mathematics library; the second is the executable ActivityStreams service
-  that measures a supplied finite program relation and provenance-bearing
-  customer observations, with qualified results, counterexamples, receipts,
-  books, causal journals, and typed refusals.
+- **Nation — Computing surface** (`lib/obsmetrologia/Obsmetrologia/Computing/`):
+  `CausalityPacket.lean`, `FormatsFour.lean`, and `HoareProgram.lean` are the
+  primary mathematics package's own program-logic carriers — `HoareProgram`,
+  its preservation theorem `HoareProgram.preserves_post` (no axioms), and its
+  keratinous specialization's four theorems (`Quot.sound` only). Production
+  MetroPlat's program contracts cite the two keratinous theorems from this
+  module. There is no separate `hoare-program-carrier` or
+  `finite-program-measurement-service`; neither directory exists under
+  `services/`.
 - **Union — Mathematical Readout Exchange**
   (`services/mathematical-readout-exchange/`): offers a signed A2A 1.0 face
   plus an ActivityStreams contract face with source pinning, conformance

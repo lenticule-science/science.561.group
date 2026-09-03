@@ -6,6 +6,10 @@
   "engines": {
     "node": ">=18"
   },
+  "scripts": {
+    "audit-set-of-theorems": "node scripts/audit-set-of-theorems.mjs",
+    "test": "node --test test/theorem-audit.test.mjs"
+  },
   "dependencies": {
     "@red-cup-engineering/semantic-content-identify-service": "0.2.7"
   }
