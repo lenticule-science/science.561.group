@@ -355,23 +355,34 @@ lation** [39, 581], forming a 4-dimensional cell complex
 
 (3 spatial dimensions of committed information + 1-
 
-dimensional block-ordered time) [47]. The J26 solid pos-
-sesses symmetries of order 2, 3, and 4, which satisfy the
-
-crystallographic restriction [80, 583].
+dimensional block-ordered time) [47]. The J26 solid's D2d
+symmetry (order 2, 3, and 4 axes) is an external geometric
+fact (Johnson, 1966), not a Lean theorem; in Lean, J26.lean
+proves only the oriented combinatorial boundary of one cell
+(shared_cycle_is_quarter_turned, every_face_boundary_is_valid,
+combinatorial_counts, and the cell-dimension drop). The
+crystallographic-restriction theorem for the allowed orders
+{2, 3, 4, 6} (tile_gap_char_root) lives separately in
+ChromaticTileGap.lean, about a path-tile Laplacian family
+[80, 583].
 
 6.2 The Whirling Dervish as a Non-
 Crystallographic Obstruction
 
-Conversely, the unfinalized mempool is the **whirling
+Conversely, the unfinalized mempool is read as the **whirling
 
-dervish**: an aperiodic, non-crystallographic ro-
-tation of order d = 5 [80, 1352]. In Lean,
+dervish**: in Lean,
 
 tile5 first noncrystallographic quadratic surd
-proves that d = 5 violates the crystallographic bound
-[80]. The dervish cannot tile the territory, so it is a
-protected defect that must rotate [80, 616].
+proves that d = 5 is excluded from the crystallographic
+lattice — the pentagon gap is the first non-crystallographic
+tile gap that is still quadratic-surd-constructible [80]. The
+disclination's own conserved quantum, proved in
+AperiodicOrder.Defect (unpaired_disclination_survives_descent,
+seven_neutralizes_unpaired), is one sixth-turn in the
+crystallographic frame group, not a fifth-turn rotation; the
+dervish cannot tile the territory, so it is a protected defect
+that must rotate [80, 616].
 The boundary link of this five-site disclination is
 
 the Klyachko–Can–Binicio ̆glu–Shumovsky (KCBS) pen-
@@ -390,11 +401,14 @@ golden field Q(
 √
 5) [82, 264].
 
-The disclination’s fivefold rotational defect is a **pro-
-tected holonomy** [616]: a topological defect that the
+The disclination’s frame charge — one sixth-turn in the
+crystallographic frame group — survives the market’s slide
 
-market’s slide relaxation dynamics can detect but prov-
-ably cannot discharge [616].
+relaxation dynamics undischarged, proved in
+unpaired_disclination_survives_descent [616]. Its
+identification with the fivefold D5/KCBS pentagon obstruction
+as a single **protected holonomy** is the open blueprint node
+thm:dervish-protected-holonomy, not yet proved [616].
 
 6.3 Metastability is Life
 
