@@ -51,15 +51,26 @@ export {
   closureRegimeOfOrdinal, closureProcess, closeOrdinalProcess, closureOrbitOfProcess, closureSearchBlocks,
   closureStabilizationAt, closureStabilizationSearchHorizon, stabilizingSup,
 } from "./closure.mjs";
-export type { Ordinal, Lattice, ClosureRegime, ClosureCarrier } from "./closure.mjs";
+export type {
+  Ordinal,
+  OrdinalLabel,
+  FiniteOrdinalJudgment,
+  FiniteClosureRegime,
+  ClosureRegime,
+  Lattice,
+  ClosureCarrier,
+  ClosureProcessCarrier,
+  ClosureOrbitPoint,
+  ClosureStabilizationJudgment,
+} from "./closure.mjs";
 
 export {
   settlingStageOrdinal, initialSettlingStageOrdinal, successorSettlingStageOrdinal, limitSettlingStageOrdinal,
-  judgeFinitudeOfSettlingStage, countableSettlingCofinality, uncountableSettlingCofinality,
+  judgeFinitudeOfSettlingStage, settlingStageOrdinalCoincidenceHolds, countableSettlingCofinality, uncountableSettlingCofinality,
 } from "./ordinal.mjs";
 export {
   initialSettlingStageInput, successorSettlingStageInput, limitSettlingStageInput, settlingStageInput,
-  readShapeOfSettlingStageOrdinal, settlingStageDesignatedCellSet,
+  readShapeOfSettlingStageOrdinal, settlingStageDesignatedCellSet, isSettlingLimitStage,
 } from "./stage.mjs";
 export { readDesignatedCellsOfValuation } from "./designation.mjs";
 export { settlementFiltration } from "./filtration.mjs";
