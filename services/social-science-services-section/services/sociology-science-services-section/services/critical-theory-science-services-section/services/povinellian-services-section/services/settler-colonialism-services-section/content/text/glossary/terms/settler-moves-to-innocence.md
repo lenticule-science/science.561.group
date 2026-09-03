@@ -8,6 +8,12 @@ tags: []
 date-modified: 2026-03-09
 date-updated: 2026-03-09
 part-of: sociology/topics/settler-colonialism/terms
+references:
+  tuck2012:
+    authors: ["Eve Tuck", "K. Wayne Yang"]
+    title: "Decolonization is not a metaphor"
+    publication: "Decolonization: Indigeneity, Education & Society 1(1)"
+    year: 2012
 ---
 
 Settler moves to innocence are rhetorical and political strategies by which settlers attempt to relieve themselves of the guilt and complicity of living on stolen land without actually returning that land or dismantling [settler-colonial](../topics/settler-colonialism/index.md) structures. The concept was developed by [Eve Tuck](../../../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/eve-tuck.md) and [K. Wayne Yang](../../../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/k-wayne-yang.md) in "[Decolonization Is Not a Metaphor](../../../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/decolonization-is-not-a-metaphor.md)" (2012).
