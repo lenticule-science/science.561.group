@@ -6,7 +6,8 @@
  * Per cell, compares the least extremum's charge to the coincident greatest
  * charge: a closure witness when they agree, an opening obstruction when they
  * differ, a missing-greatest obstruction when the greatest has no coincident
- * cell. The gap vanishes exactly when no obstructions remain — the bilattice
+ * cell, and a missing-least obstruction for an unmatched greatest cell. The gap
+ * vanishes exactly when both supports and charge values agree — the bilattice
  * interval collapses to a point.
  */
 import { sameChargeValue, valueOf } from "../bilattice-charge.mjs";
@@ -25,15 +26,18 @@ export const fixedPointGapCellClosures = (readings) => selectRankedReadings("pre
 export const fixedPointGapCellOpenings = (readings) => selectRankedReadings("predication.valuation.fixedPoint.gap.cellOpenings", readings, (reading) => reading.kind === "predication.valuation.fixedPoint.gap.cellOpening-obstruction");
 /** Select the missing-greatest obstructions. */
 export const fixedPointGapMissingGreatestCells = (readings) => selectRankedReadings("predication.valuation.fixedPoint.gap.missingGreatestCells", readings, (reading) => reading.kind === "predication.valuation.fixedPoint.gap.cellMissingGreatest-obstruction");
-/** Combine openings and missing-greatest into one obstructions carrier. */
-export const fixedPointGapCellObstructions = (openings, missingGreatest) => {
-    const obstructions = Object.freeze([...openings.readings, ...missingGreatest.readings]);
+/** Select the missing-least obstructions. */
+export const fixedPointGapMissingLeastCells = (readings) => selectRankedReadings("predication.valuation.fixedPoint.gap.missingLeastCells", readings, (reading) => reading.kind === "predication.valuation.fixedPoint.gap.cellMissingLeast-obstruction");
+/** Combine openings and unmatched cells into one obstructions carrier. */
+export const fixedPointGapCellObstructions = (openings, missingGreatest, missingLeast = fixedPointGapMissingLeastCells([])) => {
+    const obstructions = Object.freeze([...openings.readings, ...missingGreatest.readings, ...missingLeast.readings]);
     return Object.freeze({
         kind: "predication.valuation.fixedPoint.gap.cellObstructions",
         readings: obstructions,
         rank: count(obstructions),
         openings,
         missingGreatest,
+        missingLeast,
     });
 };
 /** Judge vanishing from an obstructions carrier. */
@@ -45,6 +49,7 @@ export function fixedPointGap(input) {
     const least = input.least;
     const greatest = input.greatest;
     const greatestAssignments = greatest.sheaf.section.fibers.flatMap((fiber) => fiber.assignments);
+    const leastAssignments = least.sheaf.section.fibers.flatMap((fiber) => fiber.assignments);
     const readings = [];
     for (const fiber of least.sheaf.section.fibers) {
         for (const assignment of fiber.assignments) {
@@ -60,11 +65,17 @@ export function fixedPointGap(input) {
             readings.push(Object.freeze({ kind: "predication.valuation.fixedPoint.gap.cellOpening-obstruction", cell: assignment.cell, least: assignment.charge, greatest: greatestCharge }));
         }
     }
+    for (const assignment of greatestAssignments) {
+        if (!leastAssignments.some((candidate) => cellCoincides(candidate.cell, assignment.cell))) {
+            readings.push(Object.freeze({ kind: "predication.valuation.fixedPoint.gap.cellMissingLeast-obstruction", cell: assignment.cell, greatest: assignment.charge }));
+        }
+    }
     const cellReadings = fixedPointGapCellReadings(readings);
     const closures = fixedPointGapCellClosures(readings);
     const openings = fixedPointGapCellOpenings(readings);
     const missingGreatest = fixedPointGapMissingGreatestCells(readings);
-    const obstructions = fixedPointGapCellObstructions(openings, missingGreatest);
+    const missingLeast = fixedPointGapMissingLeastCells(readings);
+    const obstructions = fixedPointGapCellObstructions(openings, missingGreatest, missingLeast);
     return Object.freeze({
         kind: "predication.valuation.fixedPoint.gap.carrier",
         order: input.order,
@@ -74,6 +85,7 @@ export function fixedPointGap(input) {
         closures,
         openings,
         missingGreatest,
+        missingLeast,
         obstructions,
         rank: obstructions.rank,
         vanishing: fixedPointGapVanishing(obstructions),

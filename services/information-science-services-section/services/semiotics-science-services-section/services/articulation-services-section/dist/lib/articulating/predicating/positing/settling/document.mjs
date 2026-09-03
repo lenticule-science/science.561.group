@@ -7,23 +7,49 @@
  * become it.
  */
 import { chargeValueName, valueOf } from "../bilattice-charge.mjs";
+import { termCoincides } from "../../predication.mjs";
 import { fixedPointReadings, } from "./fixed-point-reading.mjs";
-const stableStringify = (value) => {
+// Preserve ordinary JSON address bytes while distinguishing admitted non-JSON
+// scalars. Identity-only values and cyclic or sparse structures have no address
+// encoding here; rejection belongs to this codec boundary, not Mark admission.
+const stableStringify = (value, ancestors = new Set()) => {
     if (value === undefined)
         return "undefined";
     if (value === null)
         return "null";
     if (typeof value === "bigint")
-        return value.toString();
+        return `${value}n`;
+    if (typeof value === "number") {
+        if (Object.is(value, -0))
+            return "-0";
+        if (!Number.isFinite(value))
+            return String(value);
+    }
+    if (typeof value === "symbol" || typeof value === "function") {
+        throw new TypeError("documentAddressKey: symbols and functions have no structural address encoding");
+    }
     if (typeof value !== "object")
-        return JSON.stringify(value) ?? String(value);
-    if (Array.isArray(value))
-        return `[${value.map(stableStringify).join(",")}]`;
-    const record = value;
-    return `{${Object.keys(record).sort().map((key) => `${JSON.stringify(key)}:${stableStringify(record[key])}`).join(",")}}`;
+        return JSON.stringify(value);
+    if (ancestors.has(value))
+        throw new TypeError("documentAddressKey: cyclic values have no structural address encoding");
+    ancestors.add(value);
+    try {
+        if (Array.isArray(value)) {
+            for (let index = 0; index < value.length; index++) {
+                if (!Object.hasOwn(value, index))
+                    throw new TypeError("documentAddressKey: sparse arrays have no structural address encoding");
+            }
+            return `[${value.map((item) => stableStringify(item, ancestors)).join(",")}]`;
+        }
+        const record = value;
+        return `{${Object.keys(record).sort().map((key) => `${JSON.stringify(key)}:${stableStringify(record[key], ancestors)}`).join(",")}}`;
+    }
+    finally {
+        ancestors.delete(value);
+    }
 };
 const termKey = (term) => stableStringify(term.mark.value);
-const predicateKey = (predicate) => stableStringify(predicate.mark.value);
+const predicateKey = (predicate) => stableStringify(predicate.claim.mark.value);
 export const documentAddressKey = (cell) => stableStringify([termKey(cell.subject), predicateKey(cell.predicate), termKey(cell.object)]);
 const addressOf = (meme) => Object.freeze({
     kind: "settledDocument.address",
@@ -32,8 +58,8 @@ const addressOf = (meme) => Object.freeze({
 });
 const referenceOf = (meme, addresses) => {
     const from = documentAddressKey(meme.cell);
-    const target = addresses.find((address) => termKey(address.cell.subject) === termKey(meme.cell.object));
-    return termKey(meme.cell.subject) === termKey(meme.cell.object) || target === undefined
+    const target = addresses.find((address) => termCoincides(address.cell.subject, meme.cell.object));
+    return termCoincides(meme.cell.subject, meme.cell.object) || target === undefined
         ? undefined
         : Object.freeze({
             kind: "settledDocument.reference",

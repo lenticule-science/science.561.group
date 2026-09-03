@@ -1,13 +1,15 @@
 /**
  * @packageDocumentation
  *
- * settling/fixed-point — the least and greatest fixed points in both orders.
+ * settling/fixed-point — source- and upper-seeded closures in both orders.
  *
  * For each order (knowledge, truth) the closure is run from two seeds — the
  * posit valuation for the least fixed point, and a top-saturated seed for the
- * greatest — yielding the extremal valuations and the gap between them. The four
- * extrema (knowledge/truth × least/greatest) are the complete fixed-point
- * structure a posit presheaf determines.
+ * greatest — yielding stabilized valuations and their gap on the admitted cell
+ * support. The bound names identify these seeds; stabilization witnesses fixedness
+ * of the selected closure endomorphism, not global extremality or an enumeration
+ * of all fixed points. Least-above-seed conclusions require the closure order
+ * assumptions on a fixed state domain. Truth and knowledge remain distinct orders.
  */
 import { chargeSide } from "../bilattice-charge.mjs";
 import {} from "./closure.mjs";
@@ -95,7 +97,7 @@ class FixedPointComputation {
         });
     }
 }
-/** The complete fixed-point structure of a posit presheaf. */
+/** Close a posit presheaf from its source and upper seeds in each order. */
 export function fixedPoints(p) {
     return new FixedPointComputation(p).carrier();
 }

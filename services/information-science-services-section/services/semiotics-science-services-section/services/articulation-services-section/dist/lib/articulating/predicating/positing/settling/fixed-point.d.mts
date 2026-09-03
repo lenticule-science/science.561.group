@@ -23,7 +23,7 @@ export interface FixedPointSeedCarrier {
     readonly bound: FixedPointBoundObject;
     readonly valuation: Valuation;
 }
-/** A computed extremal fixed point. */
+/** A closure result for the selected source or upper seed. */
 export interface FixedPointExtremum {
     readonly kind: "predication.valuation.fixedPoint.extremum";
     readonly order: FixedPointOrderObject;
@@ -58,12 +58,12 @@ export interface FixedPointOrderCarrier {
     readonly greatest: FixedPointExtremum;
     readonly gap: FixedPointGapCarrier;
 }
-/** The full fixed-point structure: knowledge and truth orders. */
+/** The four seeded closure results in knowledge and truth orders. */
 export interface FixedPointCarrier {
     readonly kind: "predication.valuation.fixedPoint.carrier";
     readonly knowledge: FixedPointOrderCarrier;
     readonly truth: FixedPointOrderCarrier;
 }
-/** The complete fixed-point structure of a posit presheaf. */
+/** Close a posit presheaf from its source and upper seeds in each order. */
 export declare function fixedPoints(p: PositPresheaf): FixedPointCarrier;
 //# sourceMappingURL=fixed-point.d.mts.map

@@ -6,7 +6,8 @@
  * Per cell, compares the least extremum's charge to the coincident greatest
  * charge: a closure witness when they agree, an opening obstruction when they
  * differ, a missing-greatest obstruction when the greatest has no coincident
- * cell. The gap vanishes exactly when no obstructions remain — the bilattice
+ * cell, and a missing-least obstruction for an unmatched greatest cell. The gap
+ * vanishes exactly when both supports and charge values agree — the bilattice
  * interval collapses to a point.
  */
 import { type ChargeCarrier } from "../bilattice-charge.mjs";
@@ -33,10 +34,16 @@ export interface FixedPointGapCellMissingGreatestObstruction {
     readonly cell: Cell;
     readonly least: ChargeCarrier;
 }
+/** A greatest cell with no coincident least counterpart. */
+export interface FixedPointGapCellMissingLeastObstruction {
+    readonly kind: "predication.valuation.fixedPoint.gap.cellMissingLeast-obstruction";
+    readonly cell: Cell;
+    readonly greatest: ChargeCarrier;
+}
 /** The per-cell outcome of the least/greatest comparison. */
-export type FixedPointGapCellReading = FixedPointGapCellClosureWitness | FixedPointGapCellOpeningObstruction | FixedPointGapCellMissingGreatestObstruction;
+export type FixedPointGapCellReading = FixedPointGapCellClosureWitness | FixedPointGapCellOpeningObstruction | FixedPointGapCellMissingGreatestObstruction | FixedPointGapCellMissingLeastObstruction;
 /** The obstructing subset of cell readings. */
-export type FixedPointGapCellObstruction = FixedPointGapCellOpeningObstruction | FixedPointGapCellMissingGreatestObstruction;
+export type FixedPointGapCellObstruction = FixedPointGapCellOpeningObstruction | FixedPointGapCellMissingGreatestObstruction | FixedPointGapCellMissingLeastObstruction;
 /** Every per-cell reading, with rank. */
 export interface FixedPointGapCellReadingsCarrier {
     readonly kind: "predication.valuation.fixedPoint.gap.cellReadings";
@@ -61,6 +68,12 @@ export interface FixedPointGapMissingGreatestCellsCarrier {
     readonly readings: readonly FixedPointGapCellMissingGreatestObstruction[];
     readonly rank: Natural;
 }
+/** Only the missing-least obstructions, with rank. */
+export interface FixedPointGapMissingLeastCellsCarrier {
+    readonly kind: "predication.valuation.fixedPoint.gap.missingLeastCells";
+    readonly readings: readonly FixedPointGapCellMissingLeastObstruction[];
+    readonly rank: Natural;
+}
 /** All obstructing readings, grouped, with rank. */
 export interface FixedPointGapCellObstructionsCarrier {
     readonly kind: "predication.valuation.fixedPoint.gap.cellObstructions";
@@ -68,6 +81,7 @@ export interface FixedPointGapCellObstructionsCarrier {
     readonly rank: Natural;
     readonly openings: FixedPointGapCellOpeningsCarrier;
     readonly missingGreatest: FixedPointGapMissingGreatestCellsCarrier;
+    readonly missingLeast: FixedPointGapMissingLeastCellsCarrier;
 }
 /** The gap vanishes (no obstructions). */
 export interface FixedPointGapVanishingWitness {
@@ -92,6 +106,7 @@ export interface FixedPointGapCarrier {
     readonly closures: FixedPointGapCellClosuresCarrier;
     readonly openings: FixedPointGapCellOpeningsCarrier;
     readonly missingGreatest: FixedPointGapMissingGreatestCellsCarrier;
+    readonly missingLeast: FixedPointGapMissingLeastCellsCarrier;
     readonly obstructions: FixedPointGapCellObstructionsCarrier;
     readonly rank: Natural;
     readonly vanishing: FixedPointGapVanishingJudgment;
@@ -113,8 +128,10 @@ export declare const fixedPointGapCellClosures: (readings: readonly FixedPointGa
 export declare const fixedPointGapCellOpenings: (readings: readonly FixedPointGapCellReading[]) => FixedPointGapCellOpeningsCarrier;
 /** Select the missing-greatest obstructions. */
 export declare const fixedPointGapMissingGreatestCells: (readings: readonly FixedPointGapCellReading[]) => FixedPointGapMissingGreatestCellsCarrier;
-/** Combine openings and missing-greatest into one obstructions carrier. */
-export declare const fixedPointGapCellObstructions: (openings: FixedPointGapCellOpeningsCarrier, missingGreatest: FixedPointGapMissingGreatestCellsCarrier) => FixedPointGapCellObstructionsCarrier;
+/** Select the missing-least obstructions. */
+export declare const fixedPointGapMissingLeastCells: (readings: readonly FixedPointGapCellReading[]) => FixedPointGapMissingLeastCellsCarrier;
+/** Combine openings and unmatched cells into one obstructions carrier. */
+export declare const fixedPointGapCellObstructions: (openings: FixedPointGapCellOpeningsCarrier, missingGreatest: FixedPointGapMissingGreatestCellsCarrier, missingLeast?: FixedPointGapMissingLeastCellsCarrier) => FixedPointGapCellObstructionsCarrier;
 /** Judge vanishing from an obstructions carrier. */
 export declare const fixedPointGapVanishing: (obstructions: FixedPointGapCellObstructionsCarrier) => FixedPointGapVanishingJudgment;
 /** Compute the gap between an order's least and greatest extrema. */

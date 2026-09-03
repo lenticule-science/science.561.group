@@ -1,13 +1,15 @@
 /**
  * @packageDocumentation
  *
- * settling/fixed-point — the least and greatest fixed points in both orders.
+ * settling/fixed-point — source- and upper-seeded closures in both orders.
  *
  * For each order (knowledge, truth) the closure is run from two seeds — the
  * posit valuation for the least fixed point, and a top-saturated seed for the
- * greatest — yielding the extremal valuations and the gap between them. The four
- * extrema (knowledge/truth × least/greatest) are the complete fixed-point
- * structure a posit presheaf determines.
+ * greatest — yielding stabilized valuations and their gap on the admitted cell
+ * support. The bound names identify these seeds; stabilization witnesses fixedness
+ * of the selected closure endomorphism, not global extremality or an enumeration
+ * of all fixed points. Least-above-seed conclusions require the closure order
+ * assumptions on a fixed state domain. Truth and knowledge remain distinct orders.
  */
 import { chargeSide, type ChargeSide } from "../bilattice-charge.mjs";
 import { type ClosureCarrier } from "./closure.mjs";
@@ -50,7 +52,7 @@ export interface FixedPointSeedCarrier {
   readonly valuation: Valuation;
 }
 
-/** A computed extremal fixed point. */
+/** A closure result for the selected source or upper seed. */
 export interface FixedPointExtremum {
   readonly kind: "predication.valuation.fixedPoint.extremum";
   readonly order: FixedPointOrderObject;
@@ -90,7 +92,7 @@ export interface FixedPointOrderCarrier {
   readonly gap: FixedPointGapCarrier;
 }
 
-/** The full fixed-point structure: knowledge and truth orders. */
+/** The four seeded closure results in knowledge and truth orders. */
 export interface FixedPointCarrier {
   readonly kind: "predication.valuation.fixedPoint.carrier";
   readonly knowledge: FixedPointOrderCarrier;
@@ -198,7 +200,7 @@ class FixedPointComputation {
   }
 }
 
-/** The complete fixed-point structure of a posit presheaf. */
+/** Close a posit presheaf from its source and upper seeds in each order. */
 export function fixedPoints(p: PositPresheaf): FixedPointCarrier {
   return new FixedPointComputation(p).carrier();
 }

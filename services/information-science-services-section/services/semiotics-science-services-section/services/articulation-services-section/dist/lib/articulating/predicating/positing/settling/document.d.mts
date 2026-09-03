@@ -8,7 +8,7 @@
  */
 import { type ChargeValueName } from "../bilattice-charge.mjs";
 import type { Meme } from "../fiber.mjs";
-import type { Cell, PredicationPredicate } from "../../predication.mjs";
+import { type Cell, type PredicationPredicate } from "../../predication.mjs";
 import { type MemeTopologyFixedPointReading } from "./fixed-point-reading.mjs";
 import type { FixedPointCarrier, FixedPointWitness } from "./fixed-point.mjs";
 export interface DocumentAddress {
