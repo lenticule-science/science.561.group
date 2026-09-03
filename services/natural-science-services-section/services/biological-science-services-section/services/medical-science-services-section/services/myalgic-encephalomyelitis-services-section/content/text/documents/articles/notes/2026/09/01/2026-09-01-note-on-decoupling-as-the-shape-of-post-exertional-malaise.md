@@ -118,9 +118,14 @@ reach anaerobic metabolism at workloads that should be trivial. Aerobic
 capacity is a rate, not a stock, so a lowered ceiling does not mean
 running out later — it means failing at low intensity. This is a
 different claim from deconditioning, and the two-day cardiopulmonary
-exercise test is the instrument that distinguishes them, because
-deconditioned people reproduce their day-one values and ME/CFS patients
-characteristically do not.
+exercise test is the instrument proposed to distinguish them, on the
+logic that deconditioned people reproduce their day-one values while
+ME/CFS patients do not. That marker is contested: Keller (n=22, no
+controls) and Snell (n=51 patients, 10 controls) found a day-two
+decline, and Mancini and colleagues (n=58 patients, 25 controls, 2026)
+found none and concluded their data do not support using the protocol to
+define post-exertional malaise or disability. The metabolic arm rests on
+an open question, not a settled measurement.
 
 **A compounding loop through the hypothalamus.** The paraventricular
 nucleus is metabolically expensive. If systemic mitochondrial capacity
@@ -146,9 +151,12 @@ an effective brake — whether because cortisol output is insufficient or
 because chronic exposure has produced glucocorticoid resistance at the
 receptor, which are different failures with the same downstream
 result — the pro-inflammatory cascade triggered by the adrenergic surge
-is not counter-regulated. Microglia and mast cells degranulate;
-IL-1β, TNF-α, IL-6 and reactive oxygen species enter parenchyma and
-circulation and stay. Cytokine half-lives and the transcriptional
+is not counter-regulated. Activated microglia release IL-1β, TNF-α and
+IL-6, struggling mitochondria add reactive oxygen species, and both
+enter parenchyma and circulation and stay. Mast-cell degranulation is a
+proposed contributor rather than a demonstrated one in this population:
+no controlled demonstration of degranulation in a diagnosed ME/CFS
+cohort was found on a targeted search of the literature. Cytokine half-lives and the transcriptional
 programs they induce operate on exactly the multi-day scale that
 post-exertional malaise occupies.
 
@@ -209,9 +217,10 @@ possibility, and Papadopoulos and Cleare's reviews treat it as
 unresolved — then the endocrine arm of the argument is an effect rather
 than a cause, and the decoupling framing loses its starting point.
 
-If the reduced day-two ventilatory threshold fails to replicate in
-larger and better-controlled samples, the metabolic arm loses its only
-provocable objective measure.
+The reduced day-two ventilatory threshold has already failed to
+replicate once, in the largest and most recent of the three studies. If
+further well-powered work confirms that null, the metabolic arm loses
+its only provocable objective measure.
 
 If the microglial-activation findings do not survive — Nakatomi and
 colleagues' 2014 translocator-protein PET study is small, and the
