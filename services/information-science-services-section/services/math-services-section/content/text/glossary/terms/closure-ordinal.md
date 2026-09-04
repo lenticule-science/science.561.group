@@ -65,6 +65,31 @@ while `spine_is_strict` spent `propext` — antisymmetry of the entailment preor
 `Prop` — to conclude the spine's regime membership is not merely biconditional-true but
 equal to `strict` on the nose.
 
+`ClosureRegimeData` is a decidable classification of exactly three Booleans
+(`scottContinuous`, `finiteBase`, `countableCofinality`) constrained by two
+stipulated implications carried as structure fields —
+`finiteBase = true → scottContinuous = true` (`fin_scott`) and
+`finiteBase = true → countableCofinality = true` (`fin_cof`) — not an
+independent triple. The honest ordinal-shape classifier cannot reach every
+stratum this decidable data can name: `Closure/RegimeCofinality.lean`
+proves `Ord.regimeOfOrdHonest_ne_aperiodic` — for any ordinal or
+Scott-continuity witness, `Ord.regimeOfOrdHonest` never outputs `aperiodic`
+— because Lean core carries no transfinite cardinals to test uncountable
+cofinality against. The aperiodic regime is inhabited in the library only
+through a stipulated `countableCofinality = false` flag in one hand-built
+`ClosureRegimeData`
+(`KineticTheory/Plasma/TopologicalWaveSheaf.lean`'s `canonicalEdgeBand`),
+never through ordinal evidence.
+
+The regime-cohomology table (`cohomologyVanishes`, a definition by cases
+over the four `ClosureRegime` constructors; `cohomologyVanishes_iff` proves
+this table's own content by exhaustion) has exactly one constructed,
+rather than merely stipulated, witness in the whole library:
+`Cohomology/FiringGenerators.lean` builds a finite one-vertex cochain
+complex whose header calls it "the first witness making
+`cohomologyVanishes transfiniteBounded = false` true by construction
+rather than by table stipulation."
+
 ## See also
 
 - [Scott continuity](./scott-continuity.md) — the property that bounds a closure ordinal at $\omega$

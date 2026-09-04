@@ -1,0 +1,14 @@
+{
+  "name": "@lenticule-science/physics-services-section",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Physics as studied by Lenticule Science: deterministic kinetically constrained model instruments over the Obsmetrologia facilitation-closure skeleton.",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "measure-facilitation-closure": "node scripts/measure-facilitation-closure.mjs",
+    "test": "node --test test/facilitation-closure.test.mjs"
+  }
+}

@@ -60,12 +60,16 @@ and each has a plain reading:
   approximations foreshadowed. This is the formal content of "a
   discontinuous topology change at the limit stage" — the module's own
   description of a plasma reconnection event.
-- **`H¹ ≠ 0`, never draining.** `cohomologyVanishes_iff` proves `H¹ = 0`
-  exactly in the strict and Scott regimes; kinetic existence sits outside
-  both. The obstruction is not merely non-zero at some stage and later
-  resolved — because there is no countable stage at which the regime's
-  own internal resources ever catch up, the obstruction has no internal
-  stage left at which it could drain.
+- **`H¹ ≠ 0`, never draining, per the table.** `cohomologyVanishes` is a
+  definition by cases over the four `ClosureRegime` constructors, and
+  `cohomologyVanishes_iff` — proved by exhaustion over those cases —
+  states that table's own content: `H¹ = 0` exactly in the strict and
+  Scott regimes; kinetic existence sits outside both, by this same table
+  entry, not by a derivation from any physics. Read as a mathematical
+  fact about the table, though: the obstruction is not merely non-zero at
+  some stage and later resolved — because there is no countable stage at
+  which the regime's own internal resources ever catch up, the
+  obstruction has no internal stage left at which it could drain.
 
 Read together: an aperiodic process cannot be predicted forward by
 counting through its own history, however long that history runs.
@@ -116,7 +120,18 @@ obstruction:
   lines changing topology — is a non-Scott firing
   (`reconnection_event_implies_firing`) and forces `H¹ ≠ 0`
   (`reconnection_event_implies_H1_nonzero`); the flat, ideal-MHD regime
-  forbids it outright (`flat_regime_forbids_reconnection_event`). The
+  forbids it outright (`flat_regime_forbids_reconnection_event`); and an
+  ideal (closure-operator) field-line flow never reconnects
+  (`ideal_flow_has_no_reconnection`). These theorems take the regime datum
+  `d : ClosureRegimeData` and a matching hypothesis as arguments — they do
+  not derive which regime a reconnection event lands in, only that
+  whichever regime is supplied is forced curved. The module's own concrete
+  instance, `canonicalReconnection_regime_curved`, supplies the hand-built
+  `Flow.NSCFiring.nscRegimeData`, which classifies to
+  transfinite-bounded — this article's own [quantum
+  existence](../../../../glossary/terms/quantum-existence.md) rung, not
+  the aperiodic rung this article is about; the corpus's one concrete
+  plasma-reconnection witness does not itself reach aperiodic. The
   continuum electrodynamics of reconnection (magnetic helicity, field-line
   braiding, MHD/PIC reconnection rates) sits above this as the analytic
   layer; the discrete topology/curvature event is what the Lean core

@@ -23,7 +23,8 @@ Causal existence is the regime of natural existence whose closure ordinal
 `Obsmetrologia.Closure.Regime.classify`): the closure is Scott-continuous —
 it commutes with directed `ω`-joins, in the sense of Scott domain theory
 (Scott 1976) — over an infinite base. Its settling cohomology `H¹` is
-zero, per `cohomologyVanishes_iff` in
+zero per the regime-cohomology table's own definition, proved by
+exhaustion in `cohomologyVanishes_iff` in
 `lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/Obsmetrologia/Closure/Regime.lean`:
 unlike [quantum existence](./quantum-existence.md) and [kinetic
 existence](./kinetic-existence.md), the obstruction has fully drained by
@@ -60,7 +61,12 @@ Boolean:
   past-count function `t(x) = |{z : z ≺ x}|` is strictly monotone along
   the causal order (`timeSection_strict_mono`): a discrete refinement of
   Hawking's stable-causality theorem, and the source of this regime's own
-  name (`RegimeSection`) in the corpus.
+  name (`RegimeSection`) in the corpus. The module's own docstring states a
+  full biconditional — "an ordinal time section exists iff the settling is
+  non-aperiodic" — and calls `timeSection_strict_mono` "the green half":
+  the existence direction, proved here for a finite causal set. The
+  converse (an aperiodic settling admits no bounded-ordinal time section)
+  is stated in the docstring but not proved in this module.
 
 ## Proof kind: settlement
 

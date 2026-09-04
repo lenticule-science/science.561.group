@@ -37,10 +37,31 @@ export function parseAxiomAuditLine(line) {
 }
 
 /**
+ * Rejoin a `depends on axioms: [...]` line Lean's pretty-printer wrapped
+ * across lines (a long name pushes the closing `]` past terminal width).
+ *
+ * @param {string[]} rawLines
+ * @returns {string[]}
+ */
+function rejoinWrappedAxiomLines(rawLines) {
+  const lines = [];
+  for (const line of rawLines) {
+    const prev = lines.length > 0 ? lines[lines.length - 1] : undefined;
+    if (prev !== undefined && prev.includes("depends on axioms:") && !prev.includes("]")) {
+      lines[lines.length - 1] = `${prev} ${line.trim()}`;
+    } else {
+      lines.push(line);
+    }
+  }
+  return lines;
+}
+
+/**
  * Parse the full combined stdout/stderr of a `lake env lean` scratch-file
  * run into one row per requested theorem name. Matching is by the quoted
  * or backtick-quoted identifier Lean itself prints, not by line order, so
- * output order need not match request order.
+ * output order need not match request order. Wrapped axiom-list lines are
+ * rejoined first (`rejoinWrappedAxiomLines`).
  *
  * @param {string} output - Combined stdout+stderr text.
  * @param {string[]} requestedNames - Fully-qualified theorem names requested, in order.
@@ -49,7 +70,7 @@ export function parseAxiomAuditLine(line) {
  *   output line gets `exists: null, axioms: null` (never guessed).
  */
 export function parseAxiomAuditOutput(output, requestedNames) {
-  const lines = String(output).split(/\r?\n/);
+  const lines = rejoinWrappedAxiomLines(String(output).split(/\r?\n/));
   const byName = new Map();
   for (const line of lines) {
     if (!line.trim()) continue;

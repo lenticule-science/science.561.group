@@ -33,8 +33,13 @@ regimes, determined by three decidable flags (Scott-continuity, a finite
 base, countable cofinality) and their two corpus implications (a finite
 base forces both Scott-continuity and countable cofinality). `classify`
 selects the regime; `four_regime_dichotomy` proves the four are mutually
-exclusive and jointly exhaustive; `cohomologyVanishes_iff` proves `H¹ = 0`
-exactly in the strict and Scott regimes.
+exclusive and jointly exhaustive; `cohomologyVanishes` is a definition by
+cases over the four `ClosureRegime` constructors, and `cohomologyVanishes_iff`
+— proved by exhaustion over those same four cases — states that definitional
+table's own content: `H¹ = 0` exactly in the strict and Scott regimes. The
+table is a stipulation about the four regimes, not a derivation from any
+physics; what each row means for a natural process is established
+separately below, module by module.
 
 Read as nature (session ruling, this section, 2026-09-03) the four
 mathematical regimes are the four regimes of natural existence named in
@@ -74,6 +79,50 @@ the aperiodic top and not a finite event; *thermalizing* glues causal
 existence's local sections into thermodynamic existence's single global
 section with `H¹ = 0`, and stops there because full thermalization is heat
 death: there is nothing left to thermalize.
+
+## What the Lean establishes and what it stipulates
+
+`Closure.Regime.cohomologyVanishes` is a definition by cases over the four
+`ClosureRegime` constructors — `true` for strict and Scott, `false` for
+transfinite-bounded and aperiodic — and `cohomologyVanishes_iff` is proved
+by exhaustion over those same four cases (`cases r <;> simp
+[cohomologyVanishes]`). This is the regime-cohomology table stating its own
+content, not a derivation from any settling-associated sheaf.
+
+Two modules go further and build a concrete witness rather than resting on
+the table. `Cohomology/FiringGenerators.lean` is, per its own header, "the
+first witness making `cohomologyVanishes transfiniteBounded = false` true
+by construction rather than by table stipulation" — modeled on a finite
+one-vertex cochain complex where "edges = firing stages" stand in for a
+finite subset of `L_ns(κ)`. No witness of this kind exists for the
+aperiodic regime: `Closure/RegimeCofinality.lean`'s
+`Ord.regimeOfOrdHonest_ne_aperiodic` proves the honest ordinal-shape
+classifier never outputs `aperiodic`, for any ordinal or Scott-continuity
+witness — the aperiodic branch is structurally unreachable from real `Ord`
+evidence, not merely unbuilt, because Lean core has no transfinite
+cardinals. The aperiodic regime is inhabited in the library only through a
+stipulated `countableCofinality = false` flag in one hand-built
+`ClosureRegimeData` (`KineticTheory/Plasma/TopologicalWaveSheaf.lean`'s
+`canonicalEdgeBand`), never through ordinal evidence or a derivation from a
+flow.
+
+The 2026-09-04 regime-instantiation census
+(`lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/math-services-section/services/obsmetrological-services-section/data/records/2026-09-04-regime-instantiation-census.json`)
+counted every regime-bearing theorem in the library by how it reaches its
+regime conclusion. Of 199 total: 70 assume a regime as a `∀`-bound
+hypothesis (hypothesized), 27 reach a concrete hand-built
+`ClosureRegimeData` in their proof term (hand-built), 15 reach
+`Ord.regimeOfOrdHonest`/`Ord.regimeOfOrd` (derived), 81 rest on the table
+alone (table-only), and 6 combine more than one route (mixed). Exactly 3
+concrete `ClosureRegimeData` definitions exist in the whole library
+(`spineData`, `Flow.NSCFiring.nscRegimeData`,
+`Cohomology.ScottFace.regimeData`), and none sets `countableCofinality =
+false` — every named datum in the corpus commits to countable cofinality.
+Of the 42 theorems that conclude aperiodic, 24 are table-only, 10
+hypothesized, 6 derived, 1 mixed, and 1 hand-built. Four physics-lineage
+modules — `Thermodynamics/`, `QuantumContextuality/`, `ReactionNetworks/`,
+`DenseMatter/` — carry zero regime-bearing theorems; `KineticTheory/`
+(11), `CausalSets/` (8), and `AperiodicOrder/` (42) are populated.
 
 ## Lineage
 

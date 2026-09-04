@@ -25,3 +25,14 @@ and
 [`KineticTheory/`](../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/Obsmetrologia/KineticTheory),
 inside
 [`Obsmetrologia`](../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/Obsmetrologia).
+
+## Instruments
+
+[`scripts/measure-facilitation-closure.mjs`](scripts/measure-facilitation-closure.mjs)
+runs the deterministic facilitation-closure instrument for kinetic
+existence — bootstrap percolation (threshold 2), the Spiral Model, and the
+1D East model skeleton, matching
+`AperiodicOrder.GlassDynamics.KCM.activateStep` in the Obsmetrologia Lean
+corpus — over a seeded grid of lattice sizes and densities, writing a
+dated `PhysicsFacilitationClosureMeasurement` record to
+[`data/records/`](data/records/).

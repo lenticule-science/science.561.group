@@ -25,8 +25,20 @@ finite. `Regime.lean`'s corpus constraints (`fin_scott`, `fin_cof`) prove
 a finite base forces both Scott-continuity and countable cofinality, so
 thermodynamic existence is the most constrained of the four regimes,
 nested inside the conditions the others only partly satisfy. Its settling
-cohomology `H¹` is zero, per `cohomologyVanishes_iff` in
+cohomology `H¹` is zero per the regime-cohomology table's own definition,
+proved by exhaustion in `cohomologyVanishes_iff` in
 `lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/Obsmetrologia/Closure/Regime.lean`.
+No theorem under `Thermodynamics/` instantiates the classifier at all: the
+2026-09-04 regime-instantiation census
+(`lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/math-services-section/services/obsmetrological-services-section/data/records/2026-09-04-regime-instantiation-census.json`)
+counts zero theorems there using `ClosureRegime`, `ClosureRegimeData`, or
+`classify`. The library's own concrete strict-regime instance is the
+spine's `spineData` (`spine_is_strict`, spending `propext` — the axiom
+needed to conclude classification on the nose rather than merely
+biconditionally) — a finite charge lattice, not a thermodynamic system.
+Thermodynamic existence's placement at the strict, finite-base rung rests
+on this section's own frame (the regime ladder, the monograph's
+correspondence table), not on a Lean theorem about `BoltzmannEntropy.lean`.
 
 ## What it studies in nature
 
@@ -41,18 +53,22 @@ equilibrating exchange — moving one particle from a fuller velocity cell
 to an emptier one — never increases `H`, hence never decreases entropy.
 This is the deterministic monotone skeleton of the H-theorem, the entropic
 companion to the collision-conservation proofs kinetic existence's own gas
-module builds on.
+module builds on. This module does not itself use `ClosureRegime` or
+`classify`; its placement in the strict regime is this section's frame,
+above.
 
 ## Proof kind: exhaustion
 
 Per the LAGOON architecture's regime ladder
 (`lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/services/multi-agent-computer-system-engineering-services-section/content/text/documents/articles/specifications/2026-08-29-lagoon-architecture.md`,
 "The regime ladder"), thermodynamic existence admits **proof by
-exhaustion**: every state and transition checked. Landauer/`H¹` accounting
-is exact here — `h1Vanishes` in the finite regime is a computed fact, not
-an estimate, consonant with Landauer's principle (Landauer 1961) that
-erasing information in a finite system has an exact, accountable
-thermodynamic cost.
+exhaustion**: every state and transition checked. The library carries no
+thermodynamics-specific instance of this proof kind — no `Thermodynamics/`
+theorem instantiates the regime-cohomology table (above). Landauer's
+principle (Landauer 1961), that erasing information in a finite system has
+an exact, accountable thermodynamic cost, is this section's own reading of
+the table's strict-regime stipulation (`cohomologyVanishes strict = true`)
+onto thermodynamics, not a theorem the Lean proves about thermodynamics.
 
 ## Where it sits in the descent
 

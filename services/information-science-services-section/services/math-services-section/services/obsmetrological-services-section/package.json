@@ -10,7 +10,9 @@
     "audit-set-of-theorems": "node scripts/audit-set-of-theorems.mjs",
     "census-set-of-theorem-axioms": "node scripts/census-set-of-theorem-axioms.mjs",
     "census-set-of-identification-sites": "node scripts/census-set-of-identification-sites.mjs",
-    "test": "node --test test/theorem-audit.test.mjs test/theorem-census.test.mjs test/identification-site-census.test.mjs"
+    "census-set-of-regime-instantiations": "node scripts/census-set-of-regime-instantiations.mjs",
+    "census-set-of-module-strata": "node scripts/census-set-of-module-strata.mjs",
+    "test": "node --test test/theorem-audit.test.mjs test/theorem-census.test.mjs test/identification-site-census.test.mjs test/regime-instantiation-census.test.mjs test/module-strata-census.test.mjs"
   },
   "dependencies": {
     "@red-cup-engineering/semantic-content-identify-service": "0.2.7"

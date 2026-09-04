@@ -26,12 +26,34 @@ references:
 Kinetic existence is the regime of natural existence whose closure ordinal
 `κ` is uncountable (`κ ≥ ω₁`, the *aperiodic* stratum of
 `Obsmetrologia.Closure.Regime.classify`) and whose settling cohomology
-`H¹` is non-zero and never drains from inside the regime — the aperiodic
-case of `cohomologyVanishes_iff` in
-`lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/Obsmetrologia/Closure/Regime.lean`.
-Concretely, it is the case where the closure is not Scott-continuous and
-its cofinality is not countable: no directed join of countably many
-internal stages reaches the settled value, because none exists to reach.
+`H¹` is stipulated non-zero and never draining by the regime-cohomology
+table's own definition — the aperiodic case of `cohomologyVanishes_iff` in
+`lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/Obsmetrologia/Closure/Regime.lean`,
+proved by exhaustion over the table. Concretely, it is the case where the
+closure is not Scott-continuous and its cofinality is not countable: no
+directed join of countably many internal stages reaches the settled value,
+because none exists to reach.
+
+No theorem in the Obsmetrologia library exhibits a `ClosureRegimeData` that
+reaches this stratum through ordinal evidence.
+`Closure/RegimeCofinality.lean` proves `Ord.regimeOfOrdHonest_ne_aperiodic`:
+the honest ordinal-shape classifier never outputs `aperiodic`, for any
+ordinal or Scott-continuity witness — the aperiodic branch is structurally
+unreachable from real `Ord` evidence, not merely unbuilt, because Lean core
+has no transfinite cardinals to test uncountable cofinality against. The
+aperiodic regime is inhabited in the library only through a stipulated
+`countableCofinality = false` flag in one hand-built `ClosureRegimeData`
+(`KineticTheory/Plasma/TopologicalWaveSheaf.lean`'s `canonicalEdgeBand`),
+never through a derivation from an ordinal or a flow. Identifying kinetic
+existence with the aperiodic stratum is this section's own frame — stated
+in `lib/emsenn/services/561-group/services/science-services-section/services/natural-science-services-section/README.md`
+(renamed 2026-08-21) and carried forward by the LAGOON architecture's
+regime ladder
+(`lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/services/multi-agent-computer-system-engineering-services-section/content/text/documents/articles/specifications/2026-08-29-lagoon-architecture.md`),
+both agent-written carriers rather than a Lean theorem, following the
+monograph's own correspondence table
+(`lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/math-services-section/services/obsmetrological-services-section/content/text/documents/articles/notes/2026/06/17/2026-06-17-mysterious-spacetime-geometries-of-the-void.md`,
+"The one four-fold" and "The four fields").
 
 ## What it studies in nature
 
@@ -41,8 +63,16 @@ The Lean sub-corpus `KineticTheory/` studies kinetic existence as physics:
   models magnetic reconnection as a non-Scott-continuous firing: the
   field-line update fails to commute with the limiting join
   (`IsNSC`), and `reconnection_event_implies_H1_nonzero` proves this forces
-  non-vanishing settling cohomology, forbidden in the flat (ideal-MHD)
-  regime by `flat_regime_forbids_reconnection_event`.
+  non-vanishing settling cohomology for whatever `ClosureRegimeData` the
+  caller supplies as a hypothesis (the theorem takes `d : ClosureRegimeData`
+  and a matching condition as arguments; it does not derive the datum from
+  the flow), forbidden in the flat (ideal-MHD) regime by
+  `flat_regime_forbids_reconnection_event`. The module's own concrete
+  instance, `canonicalReconnection_regime_curved`, supplies the hand-built
+  `Flow.NSCFiring.nscRegimeData`, which classifies to transfinite-bounded —
+  quantum existence's rung, not kinetic existence's; the corpus's one
+  concrete plasma-reconnection witness does not itself reach the aperiodic
+  stratum.
 - **Gas collisions** — `KineticTheory/Gas/BoltzmannClosure.lean` reads
   finite discrete-velocity collisions as closure rules and proves
   `finite_boltzmann_collision_lfp`, the least-fixed-point form of
