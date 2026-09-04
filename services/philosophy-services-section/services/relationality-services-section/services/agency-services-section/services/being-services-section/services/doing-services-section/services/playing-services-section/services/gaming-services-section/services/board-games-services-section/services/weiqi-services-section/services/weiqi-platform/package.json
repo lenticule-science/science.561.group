@@ -3,8 +3,5 @@
   "version": "0.1.0",
   "type": "module",
   "description": "weiqi-platform-services-section: serves weiqi as one product over one shared concept graph. Cover: weiqi-platform-learn-service (admitted, apps/weiqi-learn) and weiqi-platform-play-service (declared, not admitted).",
-  "license": "UNLICENSED",
-  "workspaces": [
-    "apps/*"
-  ]
+  "license": "UNLICENSED"
 }
