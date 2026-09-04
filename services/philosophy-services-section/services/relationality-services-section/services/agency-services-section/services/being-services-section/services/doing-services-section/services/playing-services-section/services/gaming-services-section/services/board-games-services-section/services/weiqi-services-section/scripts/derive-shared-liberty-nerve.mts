@@ -1,9 +1,10 @@
-// Derive the coordination nerve of a weiqi position and read its cohomology:
-// vertices are groups, one cell per pair of groups sharing an empty point,
-// H^0/H^1 read combinatorially by metrologic (rank H^1 = cells - groups + components).
-// Instrument for surviving candidate 1 in obsmetrologia-and-go-strategy.md;
-// the number is a conjectured measure, not a result.
-// Run with: node scripts/derive-coordination-nerve.mts --sgf <file> [--move <n>]
+// Derive the shared-liberty nerve: vertices are groups, one cell per pair
+// sharing an empty point; H^0/H^1 read combinatorially by metrologic
+// (rank H^1 = cells - groups + components). Adjacency coordination only —
+// cannot see a ladder breaker, a stone deciding a distant group's status
+// while sharing no liberty with it. Candidate 1 (obsmetrologia-and-go-
+// strategy.md) still needs edges by readout pullback, tested on that breaker.
+// Run with: node scripts/derive-shared-liberty-nerve.mts --sgf <file> [--move <n>]
 import { readFileSync, realpathSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { parseArgs } from "node:util";
@@ -18,7 +19,7 @@ export interface NerveCell {
   object: string;
 }
 
-export interface CoordinationNerve {
+export interface SharedLibertyNerve {
   size: number;
   groups: number;
   groupsInNerve: number;
@@ -47,8 +48,8 @@ export function nerveCells(derived: LibertyChuSpace): { cells: NerveCell[]; shar
   return { cells, sharedLiberties };
 }
 
-/** The coordination nerve of a position with its cohomology read off the graph. */
-export function coordinationNerve(position: Position): CoordinationNerve {
+/** The shared-liberty nerve of a position with its cohomology read off the graph. */
+export function sharedLibertyNerve(position: Position): SharedLibertyNerve {
   const derived = libertyChuSpace(position);
   const { cells, sharedLiberties } = nerveCells(derived);
   const colour = new Map(derived.groups.map((g) => [g.id, g.color]));
@@ -79,11 +80,11 @@ function isEntrypoint(metaUrl: string): boolean {
 if (isEntrypoint(import.meta.url)) {
   const { values } = parseArgs({ options: { sgf: { type: "string" }, move: { type: "string" } } });
   if (!values.sgf) {
-    console.error("usage: node scripts/derive-coordination-nerve.mts --sgf <file> [--move <n>]");
+    console.error("usage: node scripts/derive-shared-liberty-nerve.mts --sgf <file> [--move <n>]");
     process.exitCode = 2;
   } else {
     const { position, moveIndex } = positionFromSgf(readFileSync(values.sgf, "utf8"), values.move === undefined ? undefined : Number(values.move));
-    const nerve = coordinationNerve(position);
-    process.stdout.write(`${JSON.stringify({ type: "weiqi.coordination-nerve", moveIndex, ...nerve }, null, 2)}\n`);
+    const nerve = sharedLibertyNerve(position);
+    process.stdout.write(`${JSON.stringify({ type: "weiqi.shared-liberty-nerve", moveIndex, ...nerve }, null, 2)}\n`);
   }
 }
