@@ -174,5 +174,7 @@ whole-board reader's duty before anyone decides.
   engine's policy mass on the atari-saving move. If energy does not
   separate forced from unforced ataris better than liberty count alone,
   §4 is wrong as stated.
-- Two eyes, in this language: two independent harmonic holes in the
-  group's stalk. Independence is still the missing definition.
+- Two eyes, in this language, with independence now named: Benson's
+  vitality (every empty point of the region is a liberty of the chain,
+  [benson1976](../bibliographies/benson1976.md)); two independent harmonic holes in the
+  group's stalk. Independence is vitality.

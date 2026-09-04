@@ -298,7 +298,7 @@ marked "inference" are this note's and are unproved.
 | atari | one admissible continuation left before operational defeat | §17.7 |
 | capture | removal from active incarnation, never from addressed history (a dissolved enterprise keeps its ledger) | §17.4, §17.7 |
 | eye | a hole relative to the opponent's success readout; a protected border under the distal-bypass law is the enterprise form | §17.10, §18 |
-| two eyes | two independent readout-inaccessible regions immune to a single enclosing challenge; theorem not yet earned | §17.10 |
+| two eyes | two independent readout-inaccessible regions immune to a single enclosing challenge; on the grid this is Benson's theorem (1976): unconditional life iff every chain has two vital regions, independence being vitality; the transport to the honeycomb is the open Lean lot | §17.10; [benson1976](../bibliographies/benson1976.md); [Strategy Spaces the Engines Cannot See](strategy-spaces-the-engines-cannot-see.md) §5 |
 | seki | a contested `⊤` locus settled as a durable interface rather than one side winning | §17.13 |
 | ko | no nontrivial cycle in the full monotone state; an oscillating process with no new addressed evidence is "either already at a fixed point, performing an unrecorded effect, or violating monotonicity" | §17.12 |
 | pass | an explicit event "asserting that a player currently offers no admissible profitable move under a declared observation frontier", with coverage evidence | §17.13 |
@@ -354,8 +354,9 @@ kernel, which knows nothing of `HoareProgram.lean`); **operations** (nothing:
 no runbook computes a weiqi readout); **561-group** (the rail's pass event,
 admitted); **public** (`weiqi.561.group`, per the games deploy runbook).
 
-Material uncertainties, in the order they block: the two-eyes theorem
-(§17.10); whether the reading nerve's `H¹`, once built over readout pullbacks,
+Material uncertainties, in the order they block: the transport of Benson's
+two-eyes theorem from the grid to the honeycomb (the grid case is proved,
+1976); whether the reading nerve's `H¹`, once built over readout pullbacks,
 predicts engine disagreement (candidate 1);
 whether held-⊥ is one object across aji and hope; the Chu dual convention;
 whether the liberty Chu space extends to a faithful Chu presentation of the

@@ -81,8 +81,9 @@ What is this note's own synthesis, and therefore proposal rather than
 theorem: the exact J26 cell for one exchange, the honeycomb patch that
 results from stacking several, and the mapping of the weiqi board vocabulary
 onto it — exactly the territory audit's open Deliverables 1–3, unclosed as of
-this writing. The two-eyes theorem is stated below and is unproved; §7 says
-what would refute it. This note does not repeat a status label at every
+this writing. The two-eyes theorem is stated below; on the grid it is
+Benson's theorem (1976), and what is unproved is its transport to the
+honeycomb; §7 says what would refute that transport. This note does not repeat a status label at every
 sentence below; where a claim needs its own qualification beyond what this
 paragraph states, it says so once, in place.
 
@@ -455,13 +456,25 @@ damage/border test, applied locally, does.
 
 ## 7. The two-eyes theorem
 
-**Statement (owner-ruled reading, made exact, unproved).** On a
-gyrobifastigial honeycomb of exchange-cells with keratinous Hoare programs
-and the kernel's legality laws at admission: a genet survives every single
-refusal iff it holds two independent future-facing liberties (eyes) — two
-open faces such that no single opposing admission can close both at once.
+**Statement (owner-ruled reading, made exact; proved on the grid, open on
+the honeycomb).** On a gyrobifastigial honeycomb of exchange-cells with
+keratinous Hoare programs and the kernel's legality laws at admission: a
+genet survives every single refusal iff it holds two independent
+future-facing liberties (eyes) — two open faces such that no single
+opposing admission can close both at once.
 
-The word doing all the work is **independent**. Two future-facing faces that
+On the grid this is Benson's theorem (D. B. Benson, "Life in the Game of
+Go", Information Sciences 10, 1976; the weiqi section's bibliography entry
+`benson1976`): a region enclosed by one colour is *vital* to a chain when
+every empty point of the region is a liberty of that chain, and a set of
+chains is unconditionally alive, safe against any number of consecutive
+opponent moves, exactly when every chain has at least two vital regions.
+So independence has a definition, vitality, and the theorem to earn is its
+transport: chains become genets, regions become future-facing faces, and
+"every empty point is a liberty of the chain" becomes "every continuation
+in the face is admitted for the genet."
+
+The word doing all the work is still **independent**, now read as vitality. Two future-facing faces that
 merely look separate — different customers, different contracts, different
 product lines — are not eyes if they share a fatal causal cut somewhere
 upstream. Worked instance: R's two "independent" customer contracts, one
@@ -511,9 +524,11 @@ this note closes none of them:
   under composition across a chain of arrows — needed before §3's loop
   argument for the Burgers vector is anything more than illustrative
   arithmetic.
-- **The two-eyes theorem itself (§7)**, including a formal definition of
-  face independence strong enough to rule out the shared-lease
-  counterexample shape and weak enough to be checkable on a real genet.
+- **The transport of Benson's two-eyes theorem to the honeycomb (§7)**: a
+  Lean statement of chains, regions, and vitality on
+  `Obsmetrologia.GameTheory.Weiqi.Board`, Benson's equivalence proved
+  there, and the honeycomb reading with vitality as face independence,
+  checked against the shared-lease counterexample shape.
 - **The damage/border classifier (§1, §5)** as a decision procedure rather
   than a case-by-case judgment call — currently every worked example in this
   note (the rounding Burgers vector, the split lease) resolves the
