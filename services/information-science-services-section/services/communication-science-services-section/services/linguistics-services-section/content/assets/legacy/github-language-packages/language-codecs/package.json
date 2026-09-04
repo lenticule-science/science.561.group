@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "type": "module",
   "description": "The codec layer of language: reversible bridge morphisms between representations — fiber compile (load), surface→structure (parse/articulate), structure→surface (render) — bound as one round-trip surface.",
-  "engines": { "node": ">=22.18" },
+  "engines": {
+    "node": ">=22.18"
+  },
   "scripts": {
     "clean": "rm -rf dist .tmp/test-dist",
     "check": "tsc --noEmit",
@@ -13,15 +15,24 @@
   },
   "main": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
-  "files": ["dist", "package.json"],
+  "files": [
+    "dist",
+    "package.json"
+  ],
   "exports": {
-    ".": { "types": "./dist/index.d.ts", "import": "./dist/index.mjs" },
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs"
+    },
     "./package.json": "./package.json"
   },
   "dependencies": {
     "@emsenn/language-topology": "0.0.1",
     "@emsenn/language-algebra": "0.0.0"
   },
-  "devDependencies": { "@types/node": "22.20.1", "typescript": "5.9.3" },
+  "devDependencies": {
+    "@types/node": "22.20.1",
+    "typescript": "5.9.3"
+  },
   "sideEffects": false
 }
