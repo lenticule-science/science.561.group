@@ -2,7 +2,7 @@
 title: Weiqi
 description: "Start-here index for the weiqi corpus: the sequenced lesson curriculum and the dependency-linked glossary, in one place."
 date-created: 2026-08-19
-date-updated: 2026-09-03
+date-updated: 2026-09-04
 type: topic
 authors:
   - claude-sonnet-5
@@ -26,7 +26,7 @@ Read in this order; each lesson names what comes next.
 
 ## Terms
 
-Twenty-eight dependency-linked terms in five clusters.
+Thirty-seven dependency-linked terms in four clusters.
 
 **Tactical** — liberty, atari, capture, ko, superko, suicide:
 
@@ -54,7 +54,7 @@ Twenty-eight dependency-linked terms in five clusters.
 - [life and death](../terms/life-and-death.md)
 - [seki](../terms/seki.md)
 
-**Strategy** — influence, thickness, sente, gote, aji, aji keshi, miai, sabaki, honte, joseki, fuseki:
+**Strategy** — influence, thickness, sente, gote, aji, aji keshi, miai, sabaki, honte, joseki, fuseki, moyo, geta, sute-ishi, kikashi, tobi, keima, dango, semeai, zenkyoku:
 
 - [influence](../terms/influence.md)
 - [thickness](../terms/thickness.md)
@@ -67,6 +67,17 @@ Twenty-eight dependency-linked terms in five clusters.
 - [honte](../terms/honte.md)
 - [joseki](../terms/joseki.md)
 - [fuseki](../terms/fuseki.md)
+- [moyo](../terms/moyo.md)
+- [geta](../terms/geta.md)
+- [sute-ishi](../terms/sute-ishi.md)
+- [kikashi](../terms/kikashi.md)
+- [tobi](../terms/tobi.md)
+- [keima](../terms/keima.md)
+- [dango](../terms/dango.md)
+- [semeai](../terms/semeai.md)
+- [zenkyoku](../terms/zenkyoku.md)
+
+See also: [Note on Lakota Weiqi Strategy](../../documents/articles/notes/2026-09-04-note-on-lakota-weiqi-strategy.md) — the owner-stated 2026-09-03 hypothesis that a Lakota lineage's play would read, in the strategy cluster's own vocabulary, as center-dominant, encirclement-favoring, and sacrifice-heavy, turned into measurable features of a player's move stream.
 
 ## Bibliography
 
@@ -86,6 +97,18 @@ it.
 - [Jung et al. 2013](../../documents/articles/bibliographies/jung2013.md) — gray-matter morphometry and resting-state connectivity in Baduk experts.
 - [Sohn et al. 2017](../../documents/articles/bibliographies/sohn2017.md) — resting-state network connectivity in professional Baduk players.
 - [Kim 2025](../../documents/articles/bibliographies/kim2025.md) — a 2025 review of Go training's cognitive and neural impacts, including executive function.
+- [Honinbo (Wikipedia)](../../documents/articles/bibliographies/honinbo-wikipedia.md) — the Japanese professional lineage's institutional root, 1612-1940.
+- [Shinfuseki (Wikipedia)](../../documents/articles/bibliographies/shinfuseki-wikipedia.md) — the 1933 New Fuseki movement of Kitani Minoru and Go Seigen.
+- [Takemiya Masaki (Wikipedia)](../../documents/articles/bibliographies/takemiya-wikipedia.md) — the cosmic style (*uchu-ryu*), documented as thick, not light.
+- [Otake Hideo (Wikipedia)](../../documents/articles/bibliographies/otake-wikipedia.md) — the thickness style, "Otake aesthetic."
+- [Chinese opening (Wikipedia)](../../documents/articles/bibliographies/chinese-opening-wikipedia.md) — the named Chinese fuseki pattern.
+- [Nie Weiping (Wikipedia)](../../documents/articles/bibliographies/nie-weiping-wikipedia.md) — the Chinese fighting-style player, "Steel Goalkeeper."
+- [Cho Hun-hyun (Wikipedia)](../../documents/articles/bibliographies/cho-hunhyun-wikipedia.md) — the founding figure of modern Korean professional Go.
+- [Cho Hun-hyun (Go Magic)](../../documents/articles/bibliographies/cho-hunhyun-gomagic.md) — the "Swallow" and "God of War" style periods, and Korean Go's break from Japanese convention.
+- [Lee Chang-ho (Wikipedia)](../../documents/articles/bibliographies/lee-changho-wikipedia.md) — the endgame-strength, secure-groups-first style.
+- [Lee Sedol (Wikipedia)](../../documents/articles/bibliographies/lee-sedol-wikipedia.md) — the risk-taking, fighting-style player, and the 2016 AlphaGo match.
+- [Ke Jie (Go Magic)](../../documents/articles/bibliographies/kejie-gomagic.md) — Ke Jie's style and its documented reconsideration after AlphaGo.
+- [AlphaGo Game 3 (American Go E-Journal)](../../documents/articles/bibliographies/alphago-33invasion-usgo.md) — the 3-3 invasion's shift from taboo to standard, and the AI-era devaluation of moyo relative to direct invasion.
 
 ## Research articles
 
@@ -95,6 +118,7 @@ it.
 - [The Two-Time Board](../../documents/articles/research-articles/the-two-time-board.md) — move time and reading depth as two axes, the house's saturation/transfer nuclei split across them, and territory/aji/dame/contested as the four resulting readings.
 - [Readouts as a Chu Space, Coordination as Cohomology](../../documents/articles/research-articles/readouts-as-a-chu-space-coordination-as-cohomology.md) — a readout Chu space over FOUR, the Hoare triple as its lax condition, and the ladder breaker as the acceptance test for a coordination nerve.
 - [Whole-Board Reading as a Gluing Problem, and Lineages as Signatures](../../documents/articles/research-articles/whole-board-reading-as-gluing-lineages-as-signatures.md) — regional strategies as local sections that fail to glue, and a teaching lineage as a cluster in the space of readout signatures.
+- [National and Historical Play Styles](../../documents/articles/research-articles/national-and-historical-play-styles.md) — a sourced comparative survey of the Japanese, Chinese, and Korean professional traditions and the AI era's revision of all three, read against the Lakota hypothesis's seven-feature signature.
 
 ## Other section content
 

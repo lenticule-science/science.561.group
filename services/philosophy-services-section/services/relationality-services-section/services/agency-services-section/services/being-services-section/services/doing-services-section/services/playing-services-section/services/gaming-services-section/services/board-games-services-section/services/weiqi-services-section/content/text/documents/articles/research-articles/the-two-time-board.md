@@ -24,7 +24,8 @@ date-created: 2026-09-03
 status: proposal
 what-is-proved:
   - "@red-cup-engineering/eavt 0.6.0 (src/eavt.mjs): saturate/transfer/stratify compute Fix σ, Fix Δ, and H* = Fix σ ∩ Fix Δ as separate derived passes over a trace — the general two-nuclei machinery §3 reads onto weiqi's two time axes. The package proves the two nuclei stay separate passes over any trace; it knows nothing about weiqi, so the move-time/reading-depth assignment itself stays this article's proposal."
-  - "apps/weiqi-kernel/src/game.mts (checkKoViolation) and src/rulesets.mts (KoRegime): the three ko-regime checks §5 reads as orbit-injectivity conditions are working, exercised code — this section's npm test suite passes 4/4 over the kernel-composing scripts. The injectivity reading is this article's gloss on that code, not a new proof."
+  - "Obsmetrologia/GameTheory/Weiqi/Ko.lean: SimpleKo, PositionalSuperko, SituationalSuperko as trace predicates realizing the kernel's three-regime KoRegime table as Lean objects, not a gloss on them — positionalSuperko_implies_simpleKo, positionalSuperko_implies_situationalSuperko, situationalSuperko_not_implies_positionalSuperko (the missing third implication, a decide-checked counterexample rather than a silent gap), and Board.positionalSuperko_length_le (a trace under positional superko on a board of Board.card = n points has length ≤ 3 ^ n, Obsmetrologia/GameTheory/Weiqi/Board.lean). §5's orbit-injectivity reading is now this proved record, applied by this article to the kernel's KoRegime table below rather than argued from scratch each time."
+  - "apps/weiqi-kernel/src/game.mts (checkKoViolation) and src/rulesets.mts (KoRegime): the three ko-regime checks are working, exercised code — this section's npm test suite passes 4/4 over the kernel-composing scripts. The correspondence between this table and Ko.lean's three predicates is this article's application of the Lean record to the kernel's names, not a claim that the kernel code is itself Lean-checked."
 ---
 
 # The Two-Time Board
@@ -306,7 +307,22 @@ superko demands injectivity of the **(board, to-move) projection**
 projection than positional superko's, since it can distinguish the same
 stone arrangement recurring with different players to move.
 
-This reading of ko as an orbit-injectivity condition matches the
+This reading is no longer only a reading: `Obsmetrologia/GameTheory/Weiqi/Ko.lean`
+states the same three regimes as trace predicates — `SimpleKo`,
+`PositionalSuperko` (no position recurs — `trace.Nodup`), and
+`SituationalSuperko` (no `(position, side-to-move)` pair recurs) — and proves
+`positionalSuperko_implies_simpleKo`, `positionalSuperko_implies_situationalSuperko`,
+and, as the missing third implication made explicit rather than left
+unstated, `situationalSuperko_not_implies_positionalSuperko` (a one-point-board
+counterexample: the same position recurring under different sides to move
+satisfies situational but not positional superko). It further proves the
+**termination bound** the kernel's regime table implies but never states: under
+`positional_superko`, `Board.positionalSuperko_length_le` bounds a trace on a
+board of `n` points at `3 ^ n` plies — every position is injected into the
+`3 ^ n`-element space of stone-tuples over the board's points
+(`Discrete.Graph`'s `Reach`-free, `List`-based enumeration, since this library
+carries no `Fintype`), so a duplicate-free trace cannot outrun that bound. This
+reading of ko as an orbit-injectivity condition matches the
 glass-sponge note's account of semantic ko,
 [the glass-sponge note](../../../../../../../../../../../../../../../../../../../../../../../../engineering-services-section/content/text/documents/articles/notes/2026/08/01/2026-08-01-note-on-the-content-addressed-glass-sponge-semantic-compute-complex.md)
 §17.12: "The full addressed causal/evidence position has built-in
@@ -367,12 +383,16 @@ aji/settled distinction its candidate 2 tries to formalize.
 **Conjecture.** A FOUR-charged ownership readout — one that keeps
 positive evidence and negative evidence in separate slots, per
 `ChuSpace`'s `Charge` rather than collapsing them into one signed
-scalar — separates the two cases by construction: an aji point's readout
-moves decisively toward `t` or `f` as reading depth (search visits)
-increases, because deeper reading is exactly what resolves an unwitnessed
-cell; a contested point's readout stays split (persistent `⊤`) because its
-resolution structurally depends on context elsewhere on the board that
-deeper local search does not reach.
+scalar — separates the two cases by construction: unwitnessed (`⊥`, no
+evidence either way) and contested (`⊤`, evidence both ways) are distinct
+values, where a signed scalar near zero is one value for both. What follows
+from the definitions alone is that an aji point's readout moves toward `t`
+or `f` as reading depth increases, because deeper reading is what
+witnesses an unwitnessed cell. Whether a persistently contested point is
+contested *because* its resolution depends on context elsewhere on the
+board is not entailed by the definition of contested; it is the strategy
+inquiry's second surviving conjecture (the inconsistency sheaf as aji) and
+is cited here as that, not deduced.
 
 **Falsification path.** Take a corpus of KataGo-analyzed positions.
 Classify near-zero-ownership points into this article's aji/contested

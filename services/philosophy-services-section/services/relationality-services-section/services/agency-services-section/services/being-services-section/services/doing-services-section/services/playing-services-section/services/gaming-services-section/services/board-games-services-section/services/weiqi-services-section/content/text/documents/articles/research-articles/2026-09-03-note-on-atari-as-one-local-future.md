@@ -9,6 +9,8 @@ authors:
   - emsenn
   - claude-fable-5.1
 keywords: ["weiqi", "atari", "heyting-algebra", "fiber-algebra", "sheaf-laplacian", "settlement", "honeycomb"]
+what-is-proved:
+  - "Obsmetrologia/GameTheory/Weiqi/Board.lean: Board.Group and Board.Liberties give §2's 'group' and 'liberty count' a checked definition (a group is a Discrete.Graph.Reach-component of same-colour occupied points; a liberty is an empty point adjacent to some stone of the group), and Board.liberties_disjoint_from_stones proves a group's liberties are never its own stones — the fact that makes 'the stalk's admitted continuations' and 'the liberty count' the same number in §2. This proves the board-static object atari is a condition on; it proves nothing about §3's stacked-board time-direction reading of a liberty, §4's Heyting-algebra truth values, or §5-6's fiber-algebra/sheaf-Laplacian claims, which remain proposal."
 ---
 
 ## 1. The statement
@@ -34,10 +36,15 @@ restricted to it.
 A group's *continuations* live in that stalk: the moves that keep the group
 admitted, computed locally. The kernel computes exactly this when
 `findGroup` floods a group and collects its liberties
-(`weiqi-kernel/src/board.mts`). In the honeycomb reading each continuation
-is a future-facing face of the genet. Atari is the condition that the
-stalk's set of admitted continuations is a singleton. Its size is the
-liberty count. Nothing global has been consulted yet, and that is the
+(`weiqi-kernel/src/board.mts`); `Obsmetrologia/GameTheory/Weiqi/Board.lean`
+now states the same object formally — `Board.Group` (a
+`Discrete.Graph.Reach`-component of same-colour occupied points) and
+`Board.Liberties` (the empty points adjacent to some stone of the group),
+with `Board.liberties_disjoint_from_stones` proving a liberty is never
+itself a stone of the group it liberates. In the honeycomb reading each
+continuation is a future-facing face of the genet. Atari is the condition
+that the stalk's set of admitted continuations is a singleton. Its size is
+the liberty count. Nothing global has been consulted yet, and that is the
 point: atari is a local section, not a global judgment.
 
 ## 3. Future: liberties point into time
@@ -75,9 +82,13 @@ with no loss is empty. That is the pseudo-complement, and it is computed in
 the fiber, not on the board. Two things follow immediately and both match
 play:
 
-- An atari whose capture costs nothing is not forced. The implication
-  fails because `loss` is ⊥ in the payoff readout, so its residual with
-  `not answering` is the whole space, not the empty open.
+- An atari whose capture costs nothing is not forced. `loss` is then **f**
+  in the payoff readout, witnessed: nothing is lost. The implication
+  `(not answering) ⇒ loss` reduces to the interior of `answering`, which
+  is not the whole space, so the move is not necessary. (⊥ is a different
+  case: `loss` unwitnessed means the atari has not been read yet, and
+  reading is the duty before any forcing judgment; ⊤ means the loss is
+  itself contested.)
 - A move can be forced without any group being in atari. The residual is
   about loss, and loss can be territorial. Sente is the same object one
   level up: a move whose pullback makes the opponent's residual empty.
@@ -129,7 +140,7 @@ what its neighbours' restrictions expect of it. Then:
   `x' = −L x` is the market of the territory audit driving the Burgers
   vector to zero. A forced move is one the flow takes regardless of who is
   to move; an unforced atari is a cell where the gradient is zero because
-  the loss fiber is ⊥.
+  the loss fiber is **f**, witnessed as nothing lost.
 - **The spectral gap is the temperature.** How fast a local fight settles
   under the flow is the smallest nonzero eigenvalue on that region
   (`LawvereLaplacianSpectralGap.lean`; the chromatic tile gaps in
@@ -146,8 +157,10 @@ a section in atari is *forced* only when its loss would change a harmonic
 section, a global readout the org relies on. The price of the forced move
 is the Laplacian energy released, and Obsmetrologia already carries the
 cost side (`Cohomology/AntiLandauerEntropy.lean`, `LandauerEntropy.lean`).
-An atari nobody should answer is a section whose loss fiber is ⊥: capture
-it into legacy and spend nothing.
+An atari nobody should answer is a section whose loss fiber is **f**,
+witnessed as nothing lost: capture it into legacy and spend nothing. A
+section whose loss fiber is ⊥ has not been read, and reading it is the
+whole-board reader's duty before anyone decides.
 
 ## 8. Open, and what refutes it
 
