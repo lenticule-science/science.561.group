@@ -5,6 +5,10 @@
   "description": "Red Cup Science service section for weiqi.",
   "license": "UNLICENSED",
   "scripts": {
-    "check-links": "node scripts/check-links.mts"
+    "check-links": "node scripts/check-links.mts",
+    "test": "node --test 'test/*.test.mts'"
+  },
+  "dependencies": {
+    "@lenticule-science/metrologic": "0.2.0"
   }
 }
