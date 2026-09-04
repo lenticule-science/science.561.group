@@ -6,7 +6,7 @@ import { makeDiagnostic } from "./diagnostic.mjs";
 import { looksLikeDiagramHeader } from "./markdown.mjs";
 import { deriveColumnLetters } from "./kernel.mjs";
 
-const REGRESSION_POSITIONS_SOURCE = "content/text/documents/articles/notes/regression-positions.md";
+const REGRESSION_POSITIONS_SOURCE = "content/text/documents/articles/teaching-articles/references/regression-positions.md";
 const VALID_SYMBOLS = new Set(["X", "O", ".", "*"]);
 
 /**

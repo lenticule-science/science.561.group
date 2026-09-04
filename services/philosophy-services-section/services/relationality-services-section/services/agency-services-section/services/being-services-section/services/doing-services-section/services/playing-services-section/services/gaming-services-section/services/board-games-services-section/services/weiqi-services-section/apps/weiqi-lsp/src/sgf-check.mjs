@@ -16,7 +16,7 @@ import { makeDiagnostic } from "./diagnostic.mjs";
 const SGF_SOURCE = "apps/weiqi-kernel/src/sgf.mts";
 const KERNEL_CONSTITUTION_SOURCE =
   "content/text/documents/articles/notes/weiqi-kernel-constitution.md";
-const RULESETS_SOURCE = "content/text/documents/articles/notes/rulesets.md";
+const RULESETS_SOURCE = "content/text/documents/articles/teaching-articles/references/rulesets.md";
 
 // SGF FF4 defines five PREDEFINED RU[...] spellings (see the SGF property
 // spec's RU entry) that don't literally match this kernel's own

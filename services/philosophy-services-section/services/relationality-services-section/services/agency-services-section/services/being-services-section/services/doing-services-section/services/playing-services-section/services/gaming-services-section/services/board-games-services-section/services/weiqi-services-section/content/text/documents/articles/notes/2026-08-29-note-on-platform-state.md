@@ -16,7 +16,7 @@ Session provenance: this note reports the findings of a 2026-08-29 codebase-and-
 
 ### apps/weiqi-kernel
 
-`@lenticule-science/weiqi-kernel`: pure, dependency-free TypeScript (`.mts`, Node-native type-stripping, no build step). Implements all five rulesets from [Rulesets](rulesets.md) as declared data with correct ko/superko regime handling (simple, positional, situational), suicide legal/illegal per ruleset, area and territory scoring with seki-aware flood fill, handicap point tables for 9/13/19 (including 19×19's non-monotonic tengen inclusion), a full recursive-descent SGF parser/serializer with variation trees, and a semantic event layer (`events.mts`) that annotates moves with glossary-linked events (atari, capture, ko-started/resolved, connection, eye-formed, group-killed, pass, game-ended). The five rulesets, exactly as declared:
+`@lenticule-science/weiqi-kernel`: pure, dependency-free TypeScript (`.mts`, Node-native type-stripping, no build step). Implements all five rulesets from [Rulesets](../teaching-articles/references/rulesets.md) as declared data with correct ko/superko regime handling (simple, positional, situational), suicide legal/illegal per ruleset, area and territory scoring with seki-aware flood fill, handicap point tables for 9/13/19 (including 19×19's non-monotonic tengen inclusion), a full recursive-descent SGF parser/serializer with variation trees, and a semantic event layer (`events.mts`) that annotates moves with glossary-linked events (atari, capture, ko-started/resolved, connection, eye-formed, group-killed, pass, game-ended). The five rulesets, exactly as declared:
 
 | Ruleset | Ko regime | Suicide | Scoring | Komi | Handicap |
 |---|---|---|---|---|---|

@@ -4,7 +4,7 @@
     "title": "Weiqi Overview",
     "audience": "readers who want a first structural map of weiqi before studying joseki, life and death, or advanced strategy",
     "goal": "explain how liberties, capture, territory, and ko organize play in weiqi",
-    "_source": "content/text/documents/articles/notes/weiqi-overview.md",
+    "_source": "content/text/documents/articles/teaching-articles/tutorials/weiqi-overview.md",
     "_orderingNote": "Each source lesson's own 'What comes next' section cross-links the others as a small graph, not a single line (e.g. living-groups-and-eyes points first to weiqi-history, weiqi-history points first back to living-groups-and-eyes). This 'next' chain picks one linear reading order — overview, living-groups-and-eyes, weiqi-history, komi-and-handicap, back to overview — using each lesson's first-listed 'next' pointer where that pointer is not already used earlier in the chain.",
     "steps": [
       {
@@ -75,7 +75,7 @@
     "title": "Living Groups and Eyes",
     "audience": "readers who already understand liberties, capture, territory, and ko",
     "goal": "explain why connection and eye shape determine whether a group lives or dies",
-    "_source": "content/text/documents/articles/notes/living-groups-and-eyes.md",
+    "_source": "content/text/documents/articles/teaching-articles/tutorials/living-groups-and-eyes.md",
     "steps": [
       {
         "kind": "board",
@@ -145,7 +145,7 @@
     "audience": "readers who have followed the structural lessons and want institutional and historical context for weiqi",
     "goal": "trace how weiqi spread from its origins in China across East Asia and into global play while keeping its core rules intact",
     "_comment": "weiqi-history.md has no explicit 'Audience:' / 'Learning goal:' lines like the other three lessons do (it opens directly with prose instead). audience/goal above are this extraction's own summary of the lesson's content, not a quotation from the source.",
-    "_source": "content/text/documents/articles/notes/weiqi-history.md",
+    "_source": "content/text/documents/articles/teaching-articles/tutorials/weiqi-history.md",
     "steps": [
       {
         "kind": "read",
@@ -191,7 +191,7 @@
     "title": "Komi and Handicap",
     "audience": "readers who understand basic weiqi structure and want to know how even games and uneven games are balanced",
     "goal": "explain the difference between komi and handicap, and show why weiqi uses both",
-    "_source": "content/text/documents/articles/notes/komi-and-handicap.md",
+    "_source": "content/text/documents/articles/teaching-articles/tutorials/komi-and-handicap.md",
     "_comment": "This lesson's 'Worked example: even game versus teaching game' section is entirely about scoring/procedure (what komi and handicap are for), not a describable board position — it names no points or stone counts. Per the extraction brief ('where a lesson describes a position in prose, realize it concretely'), no 'board' step was fabricated for it; the worked example is carried as a 'read' step instead, faithfully to the source.",
     "steps": [
       {

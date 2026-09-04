@@ -8,7 +8,7 @@
       "botId": "random",
       "introTitle": "Liberties and capture",
       "introQuote": "The central tactical unit is the liberty. A single stone in open space has four liberties, fewer on the edge, and fewer again in the corner. Connected stones share liberties, which is why groups matter more than isolated stones. When a move removes the last liberty from an opposing stone or group, the player captures it and removes it from the board.",
-      "introSource": "content/text/documents/articles/notes/weiqi-overview.md",
+      "introSource": "content/text/documents/articles/teaching-articles/tutorials/weiqi-overview.md",
       "celebration": "First capture! You just did the one thing every game of Go comes down to: remove your opponent's last liberty."
     },
     {

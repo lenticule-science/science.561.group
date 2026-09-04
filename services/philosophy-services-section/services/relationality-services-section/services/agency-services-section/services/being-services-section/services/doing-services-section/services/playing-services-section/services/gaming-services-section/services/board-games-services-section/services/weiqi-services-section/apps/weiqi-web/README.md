@@ -419,7 +419,7 @@ not code.
 ## The lesson player (`public/js/learn-app.mjs`)
 
 Renders `public/data/lesson-weiqi-overview.json`, hand-authored from
-[`weiqi-overview.md`](../../content/text/documents/articles/notes/weiqi-overview.md) per the house
+[`weiqi-overview.md`](../../content/text/documents/articles/teaching-articles/tutorials/weiqi-overview.md) per the house
 lesson template ported to an interactive widget. Unchanged by this build's own code, but a direct
 beneficiary of it: because `board.mjs`'s `setPosition` now diffs and animates rather than hard-
 cutting, stepping forward/backward through the lesson now animates stones appearing/disappearing

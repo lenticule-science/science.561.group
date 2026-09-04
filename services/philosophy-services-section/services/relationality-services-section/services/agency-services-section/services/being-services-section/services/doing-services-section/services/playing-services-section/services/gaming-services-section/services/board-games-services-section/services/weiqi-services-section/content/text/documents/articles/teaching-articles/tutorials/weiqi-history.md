@@ -32,13 +32,13 @@ What matters historically is durability. Weiqi kept the same basic logic of plac
 
 Weiqi spread from China to Korea and Japan, where it developed strong local traditions and institutions [@igf2026historyofgo]. Japanese professional houses later played a major role in codifying teaching lineages, recording famous games, and circulating the name *go* beyond Japan.
 
-This transmission changed how the game was taught and organized, but not its basic identity. The core mechanics remained territorial placement, [capture](../../../glossary/terms/capture.md), and shape judgment. The major historical shifts were institutional and cultural rather than mechanical.
+This transmission changed how the game was taught and organized, but not its basic identity. The core mechanics remained territorial placement, [capture](../../../../glossary/terms/capture.md), and shape judgment. The major historical shifts were institutional and cultural rather than mechanical.
 
 ## Modern international play
 
 In the twentieth century, weiqi expanded far beyond East Asia through national associations, translated teaching materials, and international federations [@igf2026historyofgo; @britgo2026whatisgo]. That growth made rank systems, tournament rules, and teaching methods more legible to new players outside the game's older centers.
 
-One important feature of that modern spread is accessibility across skill levels. Organizations outside East Asia often present [handicap](../../../glossary/terms/handicap.md) play as a normal and valuable part of the game, not as a lesser version of it [@britgo2026whatisgo]. That emphasis helped weiqi travel as both a competitive discipline and a teachable social practice.
+One important feature of that modern spread is accessibility across skill levels. Organizations outside East Asia often present [handicap](../../../../glossary/terms/handicap.md) play as a normal and valuable part of the game, not as a lesser version of it [@britgo2026whatisgo]. That emphasis helped weiqi travel as both a competitive discipline and a teachable social practice.
 
 ## Exercises
 
@@ -60,4 +60,4 @@ Its institutions changed more than its basic mechanics. The game kept the same t
 
 ## What comes next
 
-The next useful move is to return from chronology to structure through [Living Groups and Eyes](./living-groups-and-eyes.md), then follow the rule-balancing side of the game in [Komi and Handicap](./komi-and-handicap.md). The local [Terms](../../../glossary/topics/weiqi.md) define the recurring tactical vocabulary directly.
+The next useful move is to return from chronology to structure through [Living Groups and Eyes](./living-groups-and-eyes.md), then follow the rule-balancing side of the game in [Komi and Handicap](./komi-and-handicap.md). The local [Terms](../../../../glossary/topics/weiqi.md) define the recurring tactical vocabulary directly.

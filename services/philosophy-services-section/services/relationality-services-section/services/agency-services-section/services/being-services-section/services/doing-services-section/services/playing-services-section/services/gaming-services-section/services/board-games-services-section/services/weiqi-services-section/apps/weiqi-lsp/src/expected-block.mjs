@@ -22,7 +22,7 @@
 import { makeDiagnostic } from "./diagnostic.mjs";
 import { coordInRange, REGRESSION_POSITIONS_SOURCE } from "./diagram.mjs";
 
-const RULESETS_SOURCE = "content/text/documents/articles/notes/rulesets.md";
+const RULESETS_SOURCE = "content/text/documents/articles/teaching-articles/references/rulesets.md";
 const KERNEL_EVENTS_SOURCE = "apps/weiqi-kernel/src/events.mts";
 
 function leadingSpaces(line) {

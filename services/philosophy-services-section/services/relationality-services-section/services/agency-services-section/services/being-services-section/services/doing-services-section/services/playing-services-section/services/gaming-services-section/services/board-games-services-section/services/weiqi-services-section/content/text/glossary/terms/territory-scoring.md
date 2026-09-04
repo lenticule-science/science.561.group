@@ -15,7 +15,7 @@ cites:
 
 Territory scoring in [weiqi](../topics/weiqi.md) computes each player's final score as the vacant points that count as that player's [territory](./territory.md) plus the prisoners that player captured from the opponent during the game; a live stone remaining on the board at the end contributes no direct point value of its own [@nihonkiin1989rules]. Japanese and Korean rules use territory scoring. Because stones themselves are not counted, playing an extra move inside your own territory late in the game costs a full point under territory scoring: it removes one territory point and, since nothing was captured, adds nothing back.
 
-That cost is the main practical difference from [area-scoring](./area-scoring.md), and it is one reason experienced players under territory scoring stop playing inside their own territory as soon as a group is settled, while players under area scoring can fill such points for free. The exact standard komi and other parameters for each ruleset are recorded in the [rulesets comparison](../../documents/articles/notes/rulesets.md).
+That cost is the main practical difference from [area-scoring](./area-scoring.md), and it is one reason experienced players under territory scoring stop playing inside their own territory as soon as a group is settled, while players under area scoring can fill such points for free. The exact standard komi and other parameters for each ruleset are recorded in the [rulesets comparison](../../documents/articles/teaching-articles/references/rulesets.md).
 
 ## Related terms
 

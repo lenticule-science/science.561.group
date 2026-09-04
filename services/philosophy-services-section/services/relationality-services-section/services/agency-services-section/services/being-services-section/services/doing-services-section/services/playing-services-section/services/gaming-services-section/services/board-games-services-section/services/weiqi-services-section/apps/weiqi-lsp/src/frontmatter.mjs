@@ -48,7 +48,7 @@ export function isNonEmpty(value) {
 }
 
 const GLOSSARY_TERMS_SOURCE = "content/text/glossary/terms/";
-const LESSON_SOURCE = "content/text/documents/articles/notes/weiqi-overview.md";
+const LESSON_SOURCE = "content/text/documents/articles/teaching-articles/tutorials/weiqi-overview.md";
 const CORPUS_SOURCE = "content/ frontmatter conventions (uniform across the corpus)";
 
 const CITATION_SOURCE = "content/text/glossary/terms/ko.md";

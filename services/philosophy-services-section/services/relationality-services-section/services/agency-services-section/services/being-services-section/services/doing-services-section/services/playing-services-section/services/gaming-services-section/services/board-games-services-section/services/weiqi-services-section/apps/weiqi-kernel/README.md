@@ -12,10 +12,10 @@ product-spine derivation).
 
 ## Doctrine this code implements
 
-- [Rulesets](../../content/text/documents/articles/notes/rulesets.md) — the five-ruleset
+- [Rulesets](../../content/text/documents/articles/teaching-articles/references/rulesets.md) — the five-ruleset
   comparison table (Chinese, Japanese, AGA, New Zealand, Ing) whose stable identifiers
   `rulesets.mts`'s `RULESETS` object transcribes directly, one ruleset per `Ruleset` record.
-- [Regression Positions](../../content/text/documents/articles/notes/regression-positions.md)
+- [Regression Positions](../../content/text/documents/articles/teaching-articles/references/regression-positions.md)
   — thirteen hand-verified board positions (ko, superko, suicide, seki, dead-stone settlement,
   both scoring modes, handicap) that `test/*.test.mts` assert against by `id` (`R1`, `R6`,
   `R9`, ...), so doctrine and code cite each other rather than drifting apart.

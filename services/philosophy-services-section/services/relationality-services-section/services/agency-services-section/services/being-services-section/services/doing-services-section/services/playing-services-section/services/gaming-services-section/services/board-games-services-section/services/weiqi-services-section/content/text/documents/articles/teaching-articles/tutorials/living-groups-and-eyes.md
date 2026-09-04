@@ -39,25 +39,25 @@ Learning goal: explain why connection and eye shape determine whether a group li
 
 ## Worked example: a corner group with two eyes
 
-Imagine Black has enclosed a small corner group so that two separate empty points remain inside its shape. White surrounds the outside completely. Even so, Black's group is usually safe. White cannot simply fill both internal points in sequence, because each point functions as an [eye](../../../glossary/terms/eye.md), and the group remains alive as long as those internal liberties stay structurally separate [@britgo2026howtoplaygo].
+Imagine Black has enclosed a small corner group so that two separate empty points remain inside its shape. White surrounds the outside completely. Even so, Black's group is usually safe. White cannot simply fill both internal points in sequence, because each point functions as an [eye](../../../../glossary/terms/eye.md), and the group remains alive as long as those internal liberties stay structurally separate [@britgo2026howtoplaygo].
 
 This example shows why raw stone count is not enough. A surrounded group can still live if its shape is strong enough. In weiqi, survival depends less on "having many stones" than on building a form that the opponent cannot legally or efficiently eliminate.
 
 ## Connection makes groups stronger
 
-A [connection](../../../glossary/terms/connection.md) turns separate stones into one unit. That matters because connected stones share [liberties](../../../glossary/terms/liberty.md), answer attacks together, and can build internal shape more efficiently than isolated stones can [@britgo2026howtoplaygo]. Many local fights are therefore really fights over cutting and connecting.
+A [connection](../../../../glossary/terms/connection.md) turns separate stones into one unit. That matters because connected stones share [liberties](../../../../glossary/terms/liberty.md), answer attacks together, and can build internal shape more efficiently than isolated stones can [@britgo2026howtoplaygo]. Many local fights are therefore really fights over cutting and connecting.
 
-When a player connects two weak stones, the move may look passive. But it often changes the status of the whole position. A connected group may escape [atari](../../../glossary/terms/atari.md), threaten to make eyes, or stop the opponent from splitting the board into easy targets.
+When a player connects two weak stones, the move may look passive. But it often changes the status of the whole position. A connected group may escape [atari](../../../../glossary/terms/atari.md), threaten to make eyes, or stop the opponent from splitting the board into easy targets.
 
 ## Eyes and life
 
 An eye is a protected empty point inside a group's shape. Under common rules, the opponent cannot simply play into a true eye if that move would leave the played stone without liberties and capture nothing [@britgo2025default]. That is why eye shape matters so much.
 
-The usual practical rule is simple: a group with two secure eyes lives, while a group that cannot make two eyes may die [@britgo2026howtoplaygo]. This is the core of [life and death](../../../glossary/terms/life-and-death.md). Players read local sequences to determine whether a group can form those eyes before the opponent seals it in.
+The usual practical rule is simple: a group with two secure eyes lives, while a group that cannot make two eyes may die [@britgo2026howtoplaygo]. This is the core of [life and death](../../../../glossary/terms/life-and-death.md). Players read local sequences to determine whether a group can form those eyes before the opponent seals it in.
 
 ## Why this matters for the whole board
 
-Life-and-death judgment is not a narrow endgame skill. It changes strategic value across the whole board. A move that saves a living group can preserve a large territorial framework. A move that kills an invading group can turn a contested region into secure [territory](../../../glossary/terms/territory.md).
+Life-and-death judgment is not a narrow endgame skill. It changes strategic value across the whole board. A move that saves a living group can preserve a large territorial framework. A move that kills an invading group can turn a contested region into secure [territory](../../../../glossary/terms/territory.md).
 
 This is why advanced weiqi still returns to local shape. Whole-board strategy decides where to fight, but life-and-death reading decides whether the stones in that fight can remain on the board.
 
@@ -81,4 +81,4 @@ A group survives by preserving secure internal liberties, not by merely having m
 
 ## What comes next
 
-The next useful step is historical context in [History of Weiqi](./weiqi-history.md), then scoring structure in [Komi and Handicap](./komi-and-handicap.md), then continued vocabulary study through [Terms](../../../glossary/topics/weiqi.md), especially [atari](../../../glossary/terms/atari.md), [eye](../../../glossary/terms/eye.md), and [life and death](../../../glossary/terms/life-and-death.md).
+The next useful step is historical context in [History of Weiqi](./weiqi-history.md), then scoring structure in [Komi and Handicap](./komi-and-handicap.md), then continued vocabulary study through [Terms](../../../../glossary/topics/weiqi.md), especially [atari](../../../../glossary/terms/atari.md), [eye](../../../../glossary/terms/eye.md), and [life and death](../../../../glossary/terms/life-and-death.md).

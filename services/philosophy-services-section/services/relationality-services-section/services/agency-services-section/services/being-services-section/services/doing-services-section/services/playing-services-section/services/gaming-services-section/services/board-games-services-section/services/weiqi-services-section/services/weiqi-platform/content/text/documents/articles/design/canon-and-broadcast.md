@@ -111,7 +111,7 @@ Field rules a build/lint step enforces — each is a refusal condition, not a st
 |---|---|
 | `slug` | kebab-case, unique across `canon.json` |
 | `gameMeta.sgfSource` | required and non-empty; a beat with no cited primary source does not ship (see Authoring standards) |
-| `gameMeta.targetRank` | required, spelled `"N kyu"` / `"N dan"` per [How Ranks Work](../../../../../../../content/text/documents/articles/notes/how-ranks-work.md), not an invented band |
+| `gameMeta.targetRank` | required, spelled `"N kyu"` / `"N dan"` per [How Ranks Work](../../../../../../../content/text/documents/articles/teaching-articles/references/how-ranks-work.md), not an invented band |
 | `beats` | non-empty, ordered; each `movesRange` must be strictly increasing and non-overlapping with its neighbors |
 | `beats[].prose` | 60-120 words; a documentary that needs more per beat is narrating too much before the next you-try — split the beat |
 | `beats[].assertions[].term` | must be a `name` value that exists in [`glossary.json`](../../../../../apps/weiqi-learn/public/data/glossary.json), or `null` for prose with no single linkable concept; never a term the glossary doesn't define (Pillar 1's forbid on app-invented vocabulary applies to documentaries too) |

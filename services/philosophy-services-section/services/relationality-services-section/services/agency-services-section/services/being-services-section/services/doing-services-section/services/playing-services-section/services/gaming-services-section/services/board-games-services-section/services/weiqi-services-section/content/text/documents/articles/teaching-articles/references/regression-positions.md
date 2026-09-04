@@ -21,7 +21,7 @@ cites:
   - "British Go Association, A. Default Rules"
 ---
 
-Audience: kernel implementers building `@lenticule-science/weiqi-kernel`, per the [Weiqi Platform Plan](./weiqi-platform-plan.md)'s call for "a corpus of regression positions drawn from the rules-completeness documents so the doctrine and the code cite each other."
+Audience: kernel implementers building `@lenticule-science/weiqi-kernel`, per the [Weiqi Platform Plan](../../notes/weiqi-platform-plan.md)'s call for "a corpus of regression positions drawn from the rules-completeness documents so the doctrine and the code cite each other."
 
 Learning goal: give the kernel a first, hand-checked set of small positions covering ko, superko, suicide, seki, dead-stone settlement, both scoring methods, and handicap placement — each with a stable id and an expected outcome precise enough to assert against in a test file.
 
@@ -256,7 +256,7 @@ expected:
   margin: White by 6.5
 ```
 
-Note the raw totals (16–16 area vs. 10–10 territory) look different, but once each ruleset's own standard komi is applied the margins are close (7.5 vs. 6.5) — see R11 for the case where a wasted move inside one's own territory pushes them further apart, and see [Ending the Game](./ending-the-game.md#why-area-and-territory-rarely-differ) for why.
+Note the raw totals (16–16 area vs. 10–10 territory) look different, but once each ruleset's own standard komi is applied the margins are close (7.5 vs. 6.5) — see R11 for the case where a wasted move inside one's own territory pushes them further apart, and see [Ending the Game](../tutorials/ending-the-game.md#why-area-and-territory-rarely-differ) for why.
 
 ## R11 — where area and territory actually diverge
 
@@ -339,4 +339,4 @@ expected:
 
 ## What comes next
 
-Return to [Rulesets](./rulesets.md) for the parameter definitions these positions exercise, or [Ending the Game](./ending-the-game.md) for the procedural narrative around R7 through R12. R2 and R3 are flagged above as structural specifications rather than fully traced sequences — implementers should construct and verify an exact move list against the kernel's own board-history representation before trusting them as literal test fixtures; every other position in this appendix (R1, R4 through R13) was hand-verified point by point during authoring.
+Return to [Rulesets](./rulesets.md) for the parameter definitions these positions exercise, or [Ending the Game](../tutorials/ending-the-game.md) for the procedural narrative around R7 through R12. R2 and R3 are flagged above as structural specifications rather than fully traced sequences — implementers should construct and verify an exact move list against the kernel's own board-history representation before trusting them as literal test fixtures; every other position in this appendix (R1, R4 through R13) was hand-verified point by point during authoring.

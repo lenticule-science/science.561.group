@@ -40,11 +40,17 @@ The constitutions and the platform plan's "board decisions requested" gates (see
 
 ## Standards decided this session
 
-Three standards decisions were made this session, closing previously-open implementation questions the plan had left implicit:
-
-1. **SGF FF[4] is the canonical interchange serialization.** House notations — this corpus's diagram fences, `expected:` blocks, and any future notation — must round-trip through SGF-expressible positions. Where a house notation and SGF disagree on what a position means, SGF wins.
-2. **GTP (Go Text Protocol) is the standard for engine play** — any engine wired in as an opponent (weakened bots, KataGo, or otherwise) speaks GTP at the integration boundary.
-3. **The KataGo JSON analysis protocol is the standard for analysis** — post-game review and in-study analysis both speak KataGo's own JSON query/response protocol rather than a house-invented analysis format.
+RMN is the house's universal weiqi language (the house never adopts one
+canonical format unless it is a core house protocol, and RMN is one such
+protocol — `.claude/skills/build-the-semiotic-language-model/SKILL.md`,
+"RMN is one language, not a compatibility brand"): house weiqi notation —
+this corpus's diagram fences, `expected:` blocks, and any future notation —
+is RMN, and round-trips through it. SGF FF[4], GTP (Go Text Protocol), and
+the KataGo JSON analysis protocol are outside formats, read and written for
+interchange with the world's engines and servers — SGF at the position-
+interchange boundary, GTP at the engine-play boundary, KataGo's JSON at the
+analysis boundary — none of them canonical; a position, a move, or an
+analysis result crossing one of those boundaries round-trips through RMN.
 
 ## weiqi-lsp refit direction (proposed, not yet authorized)
 

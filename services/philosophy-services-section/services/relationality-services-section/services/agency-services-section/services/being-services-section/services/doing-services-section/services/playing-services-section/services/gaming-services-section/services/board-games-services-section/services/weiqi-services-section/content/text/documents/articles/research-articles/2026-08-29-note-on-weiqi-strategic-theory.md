@@ -37,7 +37,7 @@ structural predicate. Nothing above the level at which a game is *decided* has a
 definition anywhere in the section.
 
 This matters concretely because the section's one strategy document already
-depends on the missing vocabulary. `.../weiqi-services-section/content/text/documents/articles/notes/obsmetrologia-and-go-strategy.md`
+depends on the missing vocabulary. `.../weiqi-services-section/content/text/documents/articles/research-articles/obsmetrologia-and-go-strategy.md`
 (2026-08-19) records an inquiry into whether the Obsmetrologia mathematics
 contributes anything novel to Go strategy — eight candidate bridges assessed,
 six rejected, two surviving — and one of the two survivors is a conjecture that
@@ -317,7 +317,7 @@ Working references from assistant knowledge; verify before public use.
 
 ### In-corpus references
 
-- `lib/emsenn/.../weiqi-services-section/content/text/documents/articles/notes/obsmetrologia-and-go-strategy.md` (the note this one complements)
+- `lib/emsenn/.../weiqi-services-section/content/text/documents/articles/research-articles/obsmetrologia-and-go-strategy.md` (the note this one complements)
 - `lib/emsenn/.../weiqi-services-section/content/text/glossary/terms/` (the seventeen rules-level terms)
 - `lib/emsenn/.../weiqi-services-section/content/text/documents/articles/notes/provenance-policy.md`
 - `lib/emsenn/.../math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/Obsmetrologia/Cohomology/InconsistencySheaf.lean`

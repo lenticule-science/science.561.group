@@ -29,7 +29,7 @@ nothing; it points. Owner statements on weiqi that precede it: the
 2026-08-19 board question ("Is there anything the Obsmetrologia mathematics
 contributes to the strategy of Go that is potentially novel and opens new Go
 strategy spaces?"), the 2026-08-29 attention-collapse reframe recorded in
-[Reframe and Standards](2026-08-29-note-on-reframe-and-standards.md), and the
+[Reframe and Standards](../notes/2026-08-29-note-on-reframe-and-standards.md), and the
 2026-09-01 remark that language learning will be "learning language
 topologies and grammar spatiotemporal HTT", and the earlier 2026-09-03
 statement persisted in `.claude/skills/build-the-semiotic-language-model/SKILL.md`
@@ -40,7 +40,10 @@ owner-stated; its application to weiqi is stated for the first time in the
 message above. No carrier before it says weiqi as Chu space, weiqi as Fregean
 predication, or weiqi as the foundation of quantum foam (whole-tree search,
 2026-09-03, current and legacy generations). That is a search miss recorded
-as a cold spot, not a refutation.
+as a cold spot, not a refutation. The owner also ruled, the same day: "we
+generally never want ONE canonical thing, unless it's one of our real core
+protocols like RMN (which probably should be the universal weiqi language we
+use)" — applied in [Reframe and Standards](../notes/2026-08-29-note-on-reframe-and-standards.md).
 
 ## 1. What the corpus holds, per lineage
 
@@ -119,7 +122,7 @@ files §17 as "design correspondence, not proved theorem".
 - The manifold link: the MASH note (§1.3 below) records Jakl's
   `2 ⊗ 2 ≅ Chu(2, 0)` and that each predicate fiber is a Chu object.
 - The one prior weiqi-specific ruling:
-  [Obsmetrologia and Go Strategy](obsmetrologia-and-go-strategy.md) rejected
+  [Obsmetrologia and Go Strategy](./obsmetrologia-and-go-strategy.md) rejected
   "Chu-space / concurrent-game semantics for sente and gote" because the
   2026-06-18 concurrent-game note
   (`obsmetrological-services-section/.../2026-06-18-mysterious-machines-strategy-self-and-the-concurrent-game.md`)
@@ -149,7 +152,7 @@ standard dual is a plain transpose is an open equivalence question.
   into an assertion." The paper's predicate fibers over `2 ⊗ 2` are the
   objects the manifold and the Chu fibers are built from.
 - The weiqi kernel's own law, board-approved in
-  [the platform plan](weiqi-platform-plan.md) and executed in
+  [the platform plan](../notes/weiqi-platform-plan.md) and executed in
   `apps/weiqi-kernel/src/events.mts`: "the engine is the executable form of
   the glossary. Each glossary term corresponds to a named predicate or event
   in the rules kernel"; every semantic event carries a `termRef` to the term
@@ -223,7 +226,7 @@ unproved.
   misses, so "foam" in the house sense is gluing failure, not a spin-foam
   complex.
 - The weiqi carrier of the same object is
-  [Obsmetrologia and Go Strategy](obsmetrologia-and-go-strategy.md) surviving
+  [Obsmetrologia and Go Strategy](./obsmetrologia-and-go-strategy.md) surviving
   candidate 1: `CoordinationCohomology.lean` proves the cover nerve's
   `Ȟ¹ = |E| − |V| + |C|` "counts exactly the cells in excess of a spanning
   forest — the irreducible cross-region coordination"; the conjecture is that
@@ -239,13 +242,18 @@ So "weiqi as the underlying foundation of quantum foam" reads, as inference
 consistent with all three carriers: the foam is the nonvanishing first
 cohomology of local readings that will not glue, and a Go position is the
 smallest exactly-computable world in which that quantity has a name (aji,
-whole-board vision) and a falsification path. The instrument that computes
-the nerve's `H¹` over real positions exists as of this note (§3); whether the
-number tracks anything a strong engine sees is the open test.
+whole-board vision) and a falsification path. The shared-liberty (adjacency)
+nerve computes `H¹` over real positions as of this note (§3), but it measures
+adjacency coordination only — a ladder breaker, a stone that decides a
+distant group's status while sharing no liberty with it, is invisible to it.
+Candidate 1's own instrument still needs edges by readout pullback (one move
+changing readouts in two regions), with the ladder breaker as the acceptance
+test; only once that reading nerve exists is whether the number tracks
+anything a strong engine sees the open test.
 
 ### 1.6 Strategy
 
-[Weiqi Strategic Theory](2026-08-29-note-on-weiqi-strategic-theory.md)
+[Weiqi Strategic Theory](./2026-08-29-note-on-weiqi-strategic-theory.md)
 supplies the vocabulary (influence, thickness, sente, gote, aji) the strategy
 inquiry presupposed and names eleven glossary terms still missing; its §6
 classification (readings over a board fiber, relations between moves, CGT)
@@ -314,17 +322,23 @@ dependency, closing the "island" shape named in org-layering):
 - `scripts/derive-liberty-chu-space.mts`: position → the liberty Chu space over
   FOUR via `metrologic/chu`; also `positionFromSgf`, replaying a record
   through the kernel so captures and ko are the kernel's.
-- `scripts/derive-coordination-nerve.mts`: liberty Chu space → the nerve
-  (groups as vertices, one cell per pair sharing a liberty) → `H⁰`, `H¹` read
-  by `metrologic/obstruction/cochain` (`rank H¹ = cells − groups +
+- `scripts/derive-shared-liberty-nerve.mts`: liberty Chu space → the adjacency
+  nerve (groups as vertices, one cell per pair sharing a liberty) → `H⁰`, `H¹`
+  read by `metrologic/obstruction/cochain` (`rank H¹ = cells − groups +
   components`), with same-colour and opposite-colour cells counted separately.
+  This is the adjacency nerve, not candidate 1's own instrument: adjacency
+  edges cannot see a ladder breaker, a stone that decides a distant group's
+  status while sharing no liberty with it. Candidate 1's instrument needs
+  edges by readout pullback (one move changing readouts in two regions), with
+  the ladder breaker as its acceptance test — that reading nerve is not yet
+  built.
 
-On a 26-move 9×9 sample the nerve had 7 groups, 5 shared liberties, 5 cells,
-2 components, `H¹ = 0`. The number is the conjecture's instrument, not a
-result: the falsification path in
-[Obsmetrologia and Go Strategy](obsmetrologia-and-go-strategy.md) (correlate
-against engine review over real games; "no correlation kills the idea") is
-now runnable once a game corpus and an engine are wired.
+On a 26-move 9×9 sample the adjacency nerve had 7 groups, 5 shared liberties,
+5 cells, 2 components, `H¹ = 0`. That number measures adjacency coordination
+only; it is not yet the instrument the falsification path in
+[Obsmetrologia and Go Strategy](./obsmetrologia-and-go-strategy.md) needs for
+candidate 1 (correlate against engine review over real games; "no
+correlation kills the idea") — the reading nerve over readout pullbacks is.
 
 A seating finding was recorded through the record journal
 (`data/logs/2026/09/03/`, category `import-stratification-finding`): the
@@ -341,12 +355,34 @@ no runbook computes a weiqi readout); **561-group** (the rail's pass event,
 admitted); **public** (`weiqi.561.group`, per the games deploy runbook).
 
 Material uncertainties, in the order they block: the two-eyes theorem
-(§17.10); whether the nerve's `H¹` predicts engine disagreement (candidate 1);
+(§17.10); whether the reading nerve's `H¹`, once built over readout pullbacks,
+predicts engine disagreement (candidate 1);
 whether held-⊥ is one object across aji and hope; the Chu dual convention;
 whether the liberty Chu space extends to a faithful Chu presentation of the
 whole game with `#` and `⊤` distinct.
 
-Current edge: run `derive-coordination-nerve` over a real game corpus against
-an engine's per-move review, the first experiment the 2026-08-19 inquiry
-asked for and could not run. Behind it: a weiqi arena example in the gaming
-app, and the kernel's move stated as a `HoareProgram` instance.
+Current edge: build the reading nerve over readout pullbacks (edges where one
+move changes readouts in two regions), with a ladder breaker as its
+acceptance test, then run it over a real game corpus against an engine's
+per-move review, the first experiment the 2026-08-19 inquiry asked for and
+could not run. Behind it: a weiqi arena example in the gaming app, and the
+kernel's move stated as a `HoareProgram` instance.
+
+**The lineage articles.** Three research articles carry this program's
+material forward into named, cited proposals and one falsifiable claim,
+each in the shape of the math section's research articles:
+[The Two-Time Board](./the-two-time-board.md) (§1's stacked board and §1.2's
+cascade depth as two time axes, split by the saturation/transfer nuclei of
+`org-layering.md`'s EAVT custody, giving territory/aji/dame/contested as
+four readings, ko regimes as trace-projection injectivity choices, and a
+falsifiable claim against KataGo's scalar ownership readout);
+[Readouts as a Chu Space, Coordination as Cohomology](./readouts-as-a-chu-space-coordination-as-cohomology.md)
+(§1.2's Chu pair as the honest Chu space of readouts, the Hoare triple as
+its lax Chu condition per the 2026-07-18 audit, and SGF/GTP/KataGo-JSON as
+the three non-canonical boundaries RMN's standing crosses); and
+[Whole-Board Reading as a Gluing Problem, and Lineages as Signatures](./whole-board-reading-as-gluing-lineages-as-signatures.md)
+(the cover-nerve rank of `CoordinationCohomology.lean` read against an
+owner-reported neuroimaging claim this section's own bibliography does not
+verify, and a teaching lineage read as a cluster in the space of readout
+signatures). All three are proposal- and conjecture-labelled extensions of
+the material above, not settlements of it.

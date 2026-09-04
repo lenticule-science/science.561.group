@@ -112,7 +112,7 @@ test("a glob scoped to a single, known-clean real file exits 0 with zero diagnos
 });
 
 test("a glob scoped to R4's diagram/expected block reproduces the real, documented WQ013 finding end-to-end", () => {
-  const result = runCli(["--json", "content/text/documents/articles/notes/regression-positions.md"]);
+  const result = runCli(["--json", "content/text/documents/articles/teaching-articles/references/regression-positions.md"]);
   assert.equal(result.status, 1);
   const parsed = JSON.parse(result.stdout);
   const wq013Errors = parsed.diagnostics.filter((d) => d.code === "WQ013" && d.severity === "error");

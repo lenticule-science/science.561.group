@@ -57,11 +57,11 @@ cites:
   - "Robert Jasiek, Super Ko"
 ---
 
-Audience: readers who already understand [territory](../../../glossary/terms/territory.md), [komi](../../../glossary/terms/komi.md), and [handicap](../../../glossary/terms/handicap.md) and want to know which named ruleset governs a given club, server, or tournament, and why the differences rarely change who wins.
+Audience: readers who already understand [territory](../../../../glossary/terms/territory.md), [komi](../../../../glossary/terms/komi.md), and [handicap](../../../../glossary/terms/handicap.md) and want to know which named ruleset governs a given club, server, or tournament, and why the differences rarely change who wins.
 
 Learning goal: distinguish area scoring from territory scoring, compare standard komi and suicide legality across the Chinese, Japanese, AGA, New Zealand, and Ing rulesets, and explain why a beginner can safely postpone choosing among them.
 
-See also: [Rulesets](./rulesets.md) is this lesson's implementer-facing companion, fixing the same five rulesets' ko-regime, suicide, scoring, komi, and handicap values as stable identifiers for the rules kernel rather than as club-facing prose.
+See also: [Rulesets](../references/rulesets.md) is this lesson's implementer-facing companion, fixing the same five rulesets' ko-regime, suicide, scoring, komi, and handicap values as stable identifiers for the rules kernel rather than as club-facing prose.
 
 ## Worked example: one finished position, two ways of counting it
 
@@ -73,17 +73,17 @@ These are different arithmetic procedures, but they almost always produce the sa
 
 ## Area scoring vs. territory scoring
 
-**Territory scoring** (used by Japanese and Korean rules) counts each player's surrounded empty points plus prisoners captured during the game, and does not otherwise count stones on the board [@britgo2026compare; @gomagic2026rulesets]. Because stones themselves are worth nothing under this method, playing a stone inside your own [territory](../../../glossary/terms/territory.md) without capturing anything turns a counted territory point into an uncounted stone, which is why filling in your own territory late in the game typically costs a point.
+**Territory scoring** (used by Japanese and Korean rules) counts each player's surrounded empty points plus prisoners captured during the game, and does not otherwise count stones on the board [@britgo2026compare; @gomagic2026rulesets]. Because stones themselves are worth nothing under this method, playing a stone inside your own [territory](../../../../glossary/terms/territory.md) without capturing anything turns a counted territory point into an uncounted stone, which is why filling in your own territory late in the game typically costs a point.
 
 **Area scoring** (used by Chinese, AGA, New Zealand, and Ing rules) counts each player's surrounded empty points plus every living stone of that color remaining on the board [@britgo2026compare; @gomagic2026rulesets]. Under area scoring, filling in your own territory does not cost anything, because the stone you added is worth exactly as much as the territory point it replaced. This is the practical difference that matters, not some difference in what counts as "winning."
 
 ## Why the two methods almost always agree
 
-Across a full game, both players place roughly the same number of stones, including the neutral endgame points ([dame](../../../glossary/terms/dame.md)) that get filled in near the close of play. Area scoring pays a point for every stone on the board, including those dame-filling moves; territory scoring pays nothing for them. As long as both sides fill roughly equal numbers of dame points, that difference cancels out between the two players, leaving the margin between area and territory results at zero or one point [@britgo2026compare].
+Across a full game, both players place roughly the same number of stones, including the neutral endgame points ([dame](../../../../glossary/terms/dame.md)) that get filled in near the close of play. Area scoring pays a point for every stone on the board, including those dame-filling moves; territory scoring pays nothing for them. As long as both sides fill roughly equal numbers of dame points, that difference cancels out between the two players, leaving the margin between area and territory results at zero or one point [@britgo2026compare].
 
 The two methods diverge in a few well-known situations rather than randomly:
 
-- **[Seki](../../../glossary/terms/seki.md)** (a mutual standoff where neither side can profitably capture the other). Territory scoring gives no territory and no prisoners to either seki group, since nothing was captured and no space was ever "enclosed" territory. Area scoring still counts each living stone in the seki, so an uneven number of stones on each side of a seki can shift the count by a few points under area rules where it would not move at all under territory rules [@britgo2026compare; @gomagic2026rulesets].
+- **[Seki](../../../../glossary/terms/seki.md)** (a mutual standoff where neither side can profitably capture the other). Territory scoring gives no territory and no prisoners to either seki group, since nothing was captured and no space was ever "enclosed" territory. Area scoring still counts each living stone in the seki, so an uneven number of stones on each side of a seki can shift the count by a few points under area rules where it would not move at all under territory rules [@britgo2026compare; @gomagic2026rulesets].
 - **Disputed dead stones.** Territory scoring requires the players to agree on which stones are dead before counting, because a stone left on the board uncounted is worth nothing either way. Area scoring lets a disagreement be settled by simply resuming play and capturing the stone, since filling in the extra move costs nothing. This is a procedural difference in how disputes get resolved, not a difference in the game's usual result.
 
 These are corner cases. For an ordinary finished game with no seki and no disputed groups, area and territory scoring will hand the same player the win, usually by the same margin plus or minus a point tied to whichever side passed last.
@@ -92,7 +92,7 @@ These are corner cases. For an ordinary finished game with no seki and no disput
 
 ### Japanese rules
 
-Territory scoring; standard even-game komi is 6.5 points [@britgo2026compare; @gomagic2026rulesets]. Suicide (playing a stone with no remaining [liberty](../../../glossary/terms/liberty.md) that captures nothing) is forbidden. Only the simple [ko](../../../glossary/terms/ko.md) rule — no immediate one-move recapture that restores the prior position — is written into the rules; broader repeating whole-board positions have traditionally been ruled "no result," requiring the game to be replayed, rather than resolved by a general superko rule [@britgo2026compare].
+Territory scoring; standard even-game komi is 6.5 points [@britgo2026compare; @gomagic2026rulesets]. Suicide (playing a stone with no remaining [liberty](../../../../glossary/terms/liberty.md) that captures nothing) is forbidden. Only the simple [ko](../../../../glossary/terms/ko.md) rule — no immediate one-move recapture that restores the prior position — is written into the rules; broader repeating whole-board positions have traditionally been ruled "no result," requiring the game to be replayed, rather than resolved by a general superko rule [@britgo2026compare].
 
 ### Korean rules
 
@@ -118,16 +118,16 @@ Area scoring, but counted by a distinctive physical method: each player starts w
 
 Playing a single stone onto a point where it would immediately have zero liberties and capture nothing is pointless under any rule set, so single-stone suicide almost never comes up as a live question. The real difference between rulesets is **multi-stone suicide**: a move that removes the last liberty of a larger friendly group without capturing anything. Japanese, Chinese, and AGA rules forbid this outright. New Zealand and Ing rules permit it [@britgo2026compare; @gokgs2026rulesets]. This mostly matters in rare, carefully constructed double-ko and multi-stone capturing race positions; it essentially never comes up in ordinary play, which is one reason many players go years without noticing which side of this rule their games are being played under.
 
-## Ko and [superko](../../../glossary/terms/superko.md), in outline
+## Ko and [superko](../../../../glossary/terms/superko.md), in outline
 
-Every ruleset above starts from the same simple [ko](../../../glossary/terms/ko.md) rule: a player may not immediately recapture a single stone if doing so would recreate the position from just before the opponent's last move. Where the rulesets differ is in how far that principle extends to rarer whole-board repetitions:
+Every ruleset above starts from the same simple [ko](../../../../glossary/terms/ko.md) rule: a player may not immediately recapture a single stone if doing so would recreate the position from just before the opponent's last move. Where the rulesets differ is in how far that principle extends to rarer whole-board repetitions:
 
 - Japanese and Korean rules mostly stop at the simple ko rule and traditionally treat other repeating cycles as an unresolved "no result."
 - Chinese rules broadly forbid recreating any prior whole-board position.
 - AGA and New Zealand rules state an explicit situational superko rule.
 - Ing rules use a separate "fighting ko" versus "disturbing ko" distinction instead of a general superko statement.
 
-This is a summary, not the full account. The mechanics of positional versus situational superko, and the rare board positions that expose the difference, belong to a dedicated lesson on [ko and superko](./ko-and-superko.md).
+This is a summary, not the full account. The mechanics of positional versus situational superko, and the rare board positions that expose the difference, belong to a dedicated lesson on [ko and superko](../references/ko-and-superko.md).
 
 ## What a beginner should actually do about all this
 
@@ -182,4 +182,4 @@ Learn whichever ruleset their club, teacher, or server already uses, and stop wo
 
 ## What comes next
 
-Continue with [Ko and Superko](./ko-and-superko.md) for the detailed mechanics behind the summary above, including positional versus situational superko and the rare positions that expose the difference. For the scoring vocabulary this lesson depends on, see [Komi and Handicap](./komi-and-handicap.md) and the local [Terms](../../../glossary/topics/weiqi.md), especially [territory](../../../glossary/terms/territory.md), [komi](../../../glossary/terms/komi.md), and [ko](../../../glossary/terms/ko.md).
+Continue with [Ko and Superko](../references/ko-and-superko.md) for the detailed mechanics behind the summary above, including positional versus situational superko and the rare positions that expose the difference. For the scoring vocabulary this lesson depends on, see [Komi and Handicap](./komi-and-handicap.md) and the local [Terms](../../../../glossary/topics/weiqi.md), especially [territory](../../../../glossary/terms/territory.md), [komi](../../../../glossary/terms/komi.md), and [ko](../../../../glossary/terms/ko.md).

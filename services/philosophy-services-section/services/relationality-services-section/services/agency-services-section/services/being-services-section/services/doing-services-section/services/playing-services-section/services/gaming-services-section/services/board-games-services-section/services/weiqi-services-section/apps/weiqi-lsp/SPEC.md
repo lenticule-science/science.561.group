@@ -32,7 +32,7 @@ Every rule below, regardless of transport face, produces this one record shape:
 
 ### Family (a) — diagram parse and position legality
 
-Normative source for the whole family: [Regression Positions](../../content/text/documents/articles/notes/regression-positions.md), §"Diagram format", and `apps/weiqi-kernel/src/board.mts`'s coordinate/geometry model, which that section's convention was written to match exactly (row 1 = array row 0, top of the diagram; columns lettered `A`–`H`,`J`–... skipping `I`).
+Normative source for the whole family: [Regression Positions](../../content/text/documents/articles/teaching-articles/references/regression-positions.md), §"Diagram format", and `apps/weiqi-kernel/src/board.mts`'s coordinate/geometry model, which that section's convention was written to match exactly (row 1 = array row 0, top of the diagram; columns lettered `A`–`H`,`J`–... skipping `I`).
 
 #### WQ001 — malformed diagram row
 
@@ -112,7 +112,7 @@ Normative source for the whole family: Regression Positions' own stated contract
 #### WQ014 — unknown ruleset identifier
 
 **Checks:** any `ruleset:` value named in an `expected:` block is a key `getRuleset` actually resolves (`chinese`, `japanese`, `aga`, `newzealand`, `ing`).
-**Source:** `apps/weiqi-kernel/src/rulesets.mts`, `RULESETS`; [Rulesets](../../content/text/documents/articles/notes/rulesets.md)'s stable-identifier table.
+**Source:** `apps/weiqi-kernel/src/rulesets.mts`, `RULESETS`; [Rulesets](../../content/text/documents/articles/teaching-articles/references/rulesets.md)'s stable-identifier table.
 **Severity:** error.
 **Minimal trigger:** `ruleset: chineese` (typo).
 

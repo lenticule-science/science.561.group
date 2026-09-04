@@ -45,13 +45,13 @@ Learning goal: explain the difference between komi and handicap, and show why we
 
 ## Worked example: even game versus teaching game
 
-In an even game, Black moves first and White receives [komi](../../../glossary/terms/komi.md), a fixed score bonus that offsets the first-move advantage [@britgo2025default; @britgo2026whatisgo]. In a teaching game between players of unequal strength, the weaker player may instead receive [handicap](../../../glossary/terms/handicap.md) stones before play begins [@britgo2026whatisgo]. These two adjustments solve different problems. Komi balances the initiative inside an otherwise equal game. Handicap balances the starting position between unequal players.
+In an even game, Black moves first and White receives [komi](../../../../glossary/terms/komi.md), a fixed score bonus that offsets the first-move advantage [@britgo2025default; @britgo2026whatisgo]. In a teaching game between players of unequal strength, the weaker player may instead receive [handicap](../../../../glossary/terms/handicap.md) stones before play begins [@britgo2026whatisgo]. These two adjustments solve different problems. Komi balances the initiative inside an otherwise equal game. Handicap balances the starting position between unequal players.
 
 ## Why komi exists
 
 Weiqi is not fully symmetrical at the start because Black moves first [@britannica2026go; @britgo2026whatisgo]. Komi compensates for that structural advantage by adding points to White's final score. This means the core rules of play stay the same while the scoring system absorbs the asymmetry.
 
-Komi therefore belongs to scoring, not to local tactics. It matters when the final [territory](../../../glossary/terms/territory.md) and related points are counted, not when players are reading captures or life-and-death fights.
+Komi therefore belongs to scoring, not to local tactics. It matters when the final [territory](../../../../glossary/terms/territory.md) and related points are counted, not when players are reading captures or life-and-death fights.
 
 ## Why handicap exists
 
@@ -85,4 +85,4 @@ Because komi balances even games, while handicap balances games between players 
 
 ## What comes next
 
-The next useful step is to return to [History of Weiqi](./weiqi-history.md) for institutional context or to the local [Terms](../../../glossary/topics/weiqi.md), especially [komi](../../../glossary/terms/komi.md), [handicap](../../../glossary/terms/handicap.md), and [territory](../../../glossary/terms/territory.md).
+The next useful step is to return to [History of Weiqi](./weiqi-history.md) for institutional context or to the local [Terms](../../../../glossary/topics/weiqi.md), especially [komi](../../../../glossary/terms/komi.md), [handicap](../../../../glossary/terms/handicap.md), and [territory](../../../../glossary/terms/territory.md).
