@@ -3,7 +3,9 @@
   "version": "0.1.2",
   "type": "module",
   "description": "Historical tombstone for an unrecoverable corpus-formation lead courier release.",
-  "files": ["README.md"],
+  "files": [
+    "README.md"
+  ],
   "redCupEngineering": {
     "recoveryStatus": "The historical executable surface is not republished: the named successor @561-group/corpus-formation-lead-courier@0.1.1 has a manifest test entry with no corresponding test artifact, so no complete behavior has been proven."
   }
