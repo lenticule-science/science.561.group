@@ -5,11 +5,20 @@
  * reading a maturity label or a date.
  * @module audit-set-of-theorems
  */
-import { spawn } from "node:child_process";
-import { mkdtemp, readFile, rm, writeFile } from "node:fs/promises";
+import { mkdtemp, rm, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
-import { join, resolve as resolvePath } from "node:path";
+// friction (obsmetrological-services-section-node-import-migration, 2026-09-04): no house
+// scratch-directory lifecycle service (create + remove a temp dir, or set an explicit file
+// mode) exists yet; this scratch .lean file for `lake env lean` stays hand-rolled here.
 import { fileURLToPath } from "node:url";
+// friction (obsmetrological-services-section-node-import-migration, 2026-09-04): no house
+// service converts a file:// URL (import.meta.url) to a filesystem path; filepath-services-section
+// only confines already-filesystem paths. Kept for these module-relative default constants.
+import { readFileText } from "@red-cup-engineering/file-services/read-file";
+import { executeJavascriptNodeCommand } from "@red-cup-engineering/execute-javascript-node-command-service";
+import { confinePath } from "@red-cup-engineering/filepath-services-section";
+import { isMain } from "@red-cup-engineering/javascript-file-main-guard-service";
+import { readJavascriptNodeStandardInputText } from "@red-cup-engineering/read-javascript-node-standard-input-text-service";
 import {
   allTheoremsExist,
   assembleTheoremAuditReport,
@@ -31,16 +40,19 @@ const DEFAULT_PACKAGE_ROOT = fileURLToPath(new URL("../lib/obsmetrologia/", impo
  * @returns {Promise<{code: number|null, stdout: string, stderr: string}>}
  */
 export function runCommand(command, args, { cwd }) {
-  return new Promise((resolveRun, reject) => {
-    const child = spawn(command, args, { cwd, stdio: ["ignore", "pipe", "pipe"] });
-    let stdout = "";
-    let stderr = "";
-    child.stdout.setEncoding("utf8");
-    child.stderr.setEncoding("utf8");
-    child.stdout.on("data", (chunk) => { stdout += chunk; });
-    child.stderr.on("data", (chunk) => { stderr += chunk; });
-    child.on("error", reject);
-    child.on("close", (code) => resolveRun({ code, stdout, stderr }));
+  const receipt = executeJavascriptNodeCommand({
+    type: "JavascriptNodeCommandExecutionRequest",
+    version: 1,
+    command,
+    arguments: args,
+    directory: confinePath({ root: cwd }).path,
+    environment: null,
+    input: null,
+  });
+  return Promise.resolve({
+    code: receipt.result.status,
+    stdout: receipt.result.stdout,
+    stderr: receipt.result.stderr,
   });
 }
 
@@ -79,11 +91,13 @@ export function parseArgv(argv) {
  * @returns {Promise<string[]>}
  */
 export async function readTheoremNamesFromStdin() {
-  const chunks = [];
-  for await (const chunk of process.stdin) chunks.push(chunk);
-  const text = Buffer.concat(chunks.map((chunk) => Buffer.from(chunk))).toString("utf8").trim();
-  if (!text) return [];
-  const parsed = JSON.parse(text);
+  const { text } = await readJavascriptNodeStandardInputText(
+    { type: "JavascriptNodeStandardInputTextReadRequest", version: 1 },
+    { standardInput: process.stdin },
+  );
+  const trimmed = text.trim();
+  if (!trimmed) return [];
+  const parsed = JSON.parse(trimmed);
   if (!Array.isArray(parsed)) throw new TypeError("theorem-audit-stdin-array-required");
   return parsed;
 }
@@ -98,7 +112,7 @@ export async function readTheoremNamesFromStdin() {
  */
 export async function checkSourceDeclares(packageRoot, relativePath, theoremName) {
   try {
-    const sourceText = await readFile(resolvePath(packageRoot, relativePath), "utf8");
+    const sourceText = await readFileText(confinePath({ root: packageRoot, path: relativePath }).path);
     return sourceDeclaresName(sourceText, theoremName);
   } catch {
     return false;
@@ -137,8 +151,8 @@ export async function runTheoremAudit({
   }
 
   const source = buildScratchLeanSource({ importModule, theoremNames });
-  const scratchDir = await mkdtemp(join(tmpdir(), "obsmetrologia-theorem-audit-"));
-  const scratchPath = join(scratchDir, "TheoremAudit.lean");
+  const scratchDir = await mkdtemp(`${tmpdir()}/obsmetrologia-theorem-audit-`);
+  const scratchPath = `${scratchDir}/TheoremAudit.lean`;
   let rows;
   try {
     await writeFile(scratchPath, source, { encoding: "utf8", mode: 0o600 });
@@ -195,6 +209,6 @@ async function main() {
   process.exit(allTheoremsExist(rows) ? 0 : 1);
 }
 
-if (import.meta.url === `file://${process.argv[1]}`) {
+if (isMain(import.meta.url)) {
   main();
 }

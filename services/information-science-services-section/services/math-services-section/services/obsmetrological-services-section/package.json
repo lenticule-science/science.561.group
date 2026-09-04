@@ -12,9 +12,19 @@
     "census-set-of-identification-sites": "node scripts/census-set-of-identification-sites.mjs",
     "census-set-of-regime-instantiations": "node scripts/census-set-of-regime-instantiations.mjs",
     "census-set-of-module-strata": "node scripts/census-set-of-module-strata.mjs",
-    "test": "node --test test/theorem-audit.test.mjs test/theorem-census.test.mjs test/identification-site-census.test.mjs test/regime-instantiation-census.test.mjs test/module-strata-census.test.mjs"
+    "admit-set-of-census-rows": "node scripts/admit-set-of-census-rows.mjs",
+    "relate-set-of-theorem-facts": "node scripts/relate-set-of-theorem-facts.mjs",
+    "test": "node --test test/theorem-audit.test.mjs test/theorem-census.test.mjs test/identification-site-census.test.mjs test/regime-instantiation-census.test.mjs test/module-strata-census.test.mjs test/census-admission.test.mjs"
   },
   "dependencies": {
-    "@red-cup-engineering/semantic-content-identify-service": "0.2.7"
+    "@red-cup-engineering/semantic-content-identify-service": "0.2.7",
+    "@red-cup-engineering/eavt": "0.6.0",
+    "@red-cup-engineering/ni-services-section": "0.1.2",
+    "@red-cup-engineering/execute-javascript-node-command-service": "0.2.1",
+    "@red-cup-engineering/file-services": "0.2.1",
+    "@red-cup-engineering/filepath-services-section": "0.1.0",
+    "@red-cup-engineering/javascript-file-main-guard-service": "0.1.3",
+    "@red-cup-engineering/path-walking-service": "1.3.1",
+    "@red-cup-engineering/read-javascript-node-standard-input-text-service": "0.2.1"
   }
 }

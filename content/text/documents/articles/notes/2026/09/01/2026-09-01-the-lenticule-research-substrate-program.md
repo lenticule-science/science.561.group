@@ -109,6 +109,70 @@ binding as the publishing differentiator to falsify against nanopubs).
    lightcone function applied to the corpus).
 These six are simultaneously the papers agenda's first candidates.
 
+## The knowledge-systems campaign (owner movement 2026-09-04)
+
+Owner, 2026-09-04: really invest in knowledge systems; "every predicate is
+a generator, and there are four of these," and one pays more to say "is
+equal" than to say "this predicate is basically that one"; take on first
+"whichever makes whatever is the most expensive for LLMs the cheapest."
+The measured cost that names the target: the 2026-09-03/04 executive
+session spent about 3.5 million subagent tokens, most of it locating facts
+by re-reading files, while the GEODE ledger admits one relation
+(`declares-keyword`) and the L-Space concept query for "settling" returns
+unknown. The most expensive LLM activity is context rediscovery; the
+campaign's order is by how directly a piece cheapens it.
+
+The front door comes first (owner, 2026-09-04, correcting the session's
+census-first approach as "not clever"): strings become Marks, Marks become
+admitted terms with schemas, terms predicate other terms, and the manifold
+is the settled result. Measured the same night: of a 300-term sample of the
+science glossary, 2 admit through `term-engineering`'s own verb and 298 are
+refused, for mechanical reasons (`date-created`, which the carrier guide
+requires, is not admitted by the term contract; `identity` is absent; the
+relation keys in live use, `contrasts-with`, `part-of`, `enables`,
+`requires`, `instance-of`, `derives-from`, are not authorized predicates).
+So ks-00 precedes the ten: reconcile the term contract with the carrier
+guide, authorize the predicates the corpus already uses, make the index
+account refusals as data, and run the admission census over all 4,493
+science terms; then repin GEODE and l-space so the admitted terms are served
+at `/ns/`. The provenance census (ks-03) landed the same night: 10,453
+science carriers; 8,804 agent-written with no citation; 1,479 agent-cited;
+151 owner-authored; 10 owner-attributed with a locator; 9 without.
+
+Ten pieces the house math has that no lab's knowledge system has, each
+landing as an admission codec or a query verb with a deterministic gate,
+admitted on the rail as `campaign:knowledge-systems-ten-pieces` under
+`endeavor:lenticule-research-substrate-program` (on the laptop fixture;
+the production admit verb refuses with an SDK error, a friction admitted
+and queued for repair):
+
+1. **Ask the substrate** (ks-01): one verb returning a cell's FOUR value,
+   stratum, contested flag, and proof tree from the eavt trace. First.
+2. **Census rows** (ks-02, in flight): the four Lean censuses as one trace.
+3. **Provenance census** (ks-03, in flight): every science carrier graded
+   owner-authored, owner-attributed-located, owner-attributed-unlocated,
+   agent-cited, agent-uncited.
+4. **Priced predicate algebra** (ks-04): predicates generated from the four
+   generators; MLD by default, equality as a paid identification;
+   `Equality.lean` and `LocalMldClassification.lean` are the proofs;
+   generator exhaustiveness is unverified in the Lean.
+5. **Contested cells** (ks-05): the corpus's held contradictions counted and
+   queryable.
+6. **Dispositions as rows** (ks-06): a claim's WIT and ACK counts.
+7. **Attention read-next** (ks-07): the allocation solver over contested
+   cells.
+8. **Regime-tagged answers** (ks-08): each answer carries its proof kind.
+9. **Corpus Landauer accounting** (ks-09): H⁰, H¹, χ of the claim-source
+   nerve as the integrity check D4 asks for.
+10. **Consent-filtered queries** (ks-10): the CARE-binding differentiator as
+    a verb.
+
+The office measures the arena before any beat is claimed (ks-11): GraphRAG,
+LlamaIndex property graphs, Neo4j's LLM graph builder, Zep, Mem0, LangGraph
+checkpointers, the labs' memory features; Datomic and ORKG as reference
+implementations. D6 stands: no model-extracted claim enters the substrate;
+model output is an untrusted candidate until a receiver disposition.
+
 ## Current edge
 
 The architecture judge-panel resolved: minimal-enrichment sequencing over

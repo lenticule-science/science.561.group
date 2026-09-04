@@ -6,10 +6,19 @@
  * `PhysicsFacilitationClosureMeasurement` record. Prints a compact table.
  * @module measure-facilitation-closure
  */
-import { mkdir, writeFile } from "node:fs/promises";
-import { join, resolve as resolvePath } from "node:path";
+// friction (physics-services-section-node-import-migration, 2026-09-04): no house service
+// converts a file:// URL (import.meta.url) to a filesystem path; kept for this
+// module-relative default constant.
 import { fileURLToPath } from "node:url";
+import { writeFileText } from "@red-cup-engineering/file-services/write-file";
+import { confinePath } from "@red-cup-engineering/filepath-services-section";
+import { isMain } from "@red-cup-engineering/javascript-file-main-guard-service";
 import { assembleRecord, runCell } from "../src/facilitation-closure.mjs";
+// friction (physics-services-section-node-import-migration, 2026-09-04):
+// semantic-record-journal-service writes an append-only JSONL log under data/logs/, never
+// an exact named path under data/records/ that other carriers already cite. Kept as a
+// house-file-services writer (not raw node:fs) of this exact-path carrier until the journal
+// grows that shape.
 
 const DEFAULT_OUT_DIR = fileURLToPath(new URL("../data/records/", import.meta.url));
 const DEFAULT_BASE_SEED = 0xc0ffee;
@@ -154,7 +163,7 @@ async function main() {
   const { outDir: argvOutDir, date: argvDate, quick, baseSeed, maxStages, outPath } = parseArgv(
     process.argv.slice(2),
   );
-  const outDir = resolvePath(argvOutDir ?? DEFAULT_OUT_DIR);
+  const outDir = confinePath({ root: argvOutDir ?? DEFAULT_OUT_DIR }).path;
   const date = argvDate ?? todayStamp();
   const modelSpecs = quick ? QUICK_MODEL_SPECS : FULL_MODEL_SPECS;
 
@@ -171,12 +180,10 @@ async function main() {
     modelCells,
   });
 
-  await mkdir(outDir, { recursive: true });
   const recordPath = outPath
-    ? resolvePath(outPath)
-    : join(outDir, `${date}-facilitation-closure-measurement.json`);
-  await mkdir(join(recordPath, ".."), { recursive: true });
-  await writeFile(recordPath, `${JSON.stringify(record, null, 2)}\n`, "utf8");
+    ? confinePath({ root: outPath }).path
+    : `${outDir}/${date}-facilitation-closure-measurement.json`;
+  await writeFileText(recordPath, `${JSON.stringify(record, null, 2)}\n`);
 
   process.stdout.write(`${renderTable(modelCells)}\n\n`);
   process.stdout.write(`wrote ${recordPath}\n`);
@@ -184,6 +191,6 @@ async function main() {
   process.exit(0);
 }
 
-if (import.meta.url === `file://${process.argv[1]}`) {
+if (isMain(import.meta.url)) {
   main();
 }

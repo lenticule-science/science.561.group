@@ -6,10 +6,21 @@
  * four-stratum layering, and write the dated record to `data/records/`.
  * @module census-set-of-module-strata
  */
-import { mkdir, readdir, readFile, stat, writeFile } from "node:fs/promises";
-import { join, relative, resolve as resolvePath, sep } from "node:path";
+// friction (obsmetrological-services-section-node-import-migration, 2026-09-04): no house
+// service converts a file:// URL (import.meta.url) to a filesystem path; kept for these
+// module-relative default constants.
 import { fileURLToPath } from "node:url";
+import { readFileText } from "@red-cup-engineering/file-services/read-file";
+import { writeFileText } from "@red-cup-engineering/file-services/write-file";
+import { confinePath } from "@red-cup-engineering/filepath-services-section";
+import { isMain } from "@red-cup-engineering/javascript-file-main-guard-service";
+import { walkPosixPaths } from "@red-cup-engineering/path-walking-service";
 import { assembleRecord, buildGraph, DECLARED_STRATA } from "../src/module-strata-census.mjs";
+// friction (obsmetrological-services-section-node-import-migration, 2026-09-04):
+// semantic-record-journal-service writes an append-only JSONL log under data/logs/, never
+// an exact named path under data/records/ that other carriers already cite. Kept as a
+// house-file-services writer (not raw node:fs) of this exact-path carrier until the
+// journal grows that shape.
 
 const DEFAULT_PACKAGE_ROOT = fileURLToPath(new URL("../lib/obsmetrologia/", import.meta.url));
 const DEFAULT_OUT_DIR = fileURLToPath(new URL("../data/records/", import.meta.url));
@@ -46,30 +57,6 @@ export function todayStamp() {
 }
 
 /**
- * Recursively collect every `.lean` file under `dir`, as `{path, text}`
- * with `path` relative to `root`, forward-slash separated.
- *
- * @param {string} dir - Absolute directory to walk.
- * @param {string} root - Absolute directory paths are made relative to.
- * @returns {Promise<Array<{path: string, text: string}>>}
- */
-async function walkLeanFiles(dir, root) {
-  const files = [];
-  const entries = await readdir(dir, { withFileTypes: true });
-  for (const entry of entries) {
-    const full = join(dir, entry.name);
-    if (entry.isDirectory()) {
-      files.push(...(await walkLeanFiles(full, root)));
-    } else if (entry.isFile() && entry.name.endsWith(".lean")) {
-      const text = await readFile(full, "utf8");
-      const relPath = relative(root, full).split(sep).join("/");
-      files.push({ path: relPath, text });
-    }
-  }
-  return files;
-}
-
-/**
  * Collect the whole-library scan scope: every `.lean` file recursively
  * under `<root>/Obsmetrologia/`, plus the single root manifest
  * `<root>/Obsmetrologia.lean` (present in the corpus proper — the
@@ -80,11 +67,20 @@ async function walkLeanFiles(dir, root) {
  * @returns {Promise<Array<{path: string, text: string}>>} Sorted by `path`.
  */
 export async function readLeanFiles(root) {
-  const files = await walkLeanFiles(join(root, "Obsmetrologia"), root);
-  const rootManifestPath = join(root, "Obsmetrologia.lean");
-  const rootStat = await stat(rootManifestPath).catch(() => null);
-  if (rootStat?.isFile()) {
-    files.push({ path: "Obsmetrologia.lean", text: await readFile(rootManifestPath, "utf8") });
+  const obsmetrologiaDir = `${root}/Obsmetrologia`;
+  const walk = await walkPosixPaths({ root: obsmetrologiaDir, extensions: [".lean"] });
+  const files = await Promise.all(
+    walk.files
+      .filter(({ kind }) => kind === "file")
+      .map(async (file) => ({
+        path: `Obsmetrologia/${file.path}`,
+        text: await readFileText(`${obsmetrologiaDir}/${file.path}`),
+      })),
+  );
+  try {
+    files.push({ path: "Obsmetrologia.lean", text: await readFileText(`${root}/Obsmetrologia.lean`) });
+  } catch (error) {
+    if (error?.code !== "ENOENT") throw error;
   }
   return files.sort((a, b) => (a.path < b.path ? -1 : a.path > b.path ? 1 : 0));
 }
@@ -136,7 +132,7 @@ export function renderSummary(record) {
 
 async function main() {
   const { outDir: argvOutDir, date: argvDate } = parseArgv(process.argv.slice(2));
-  const outDir = resolvePath(argvOutDir ?? DEFAULT_OUT_DIR);
+  const outDir = confinePath({ root: argvOutDir ?? DEFAULT_OUT_DIR }).path;
   const date = argvDate ?? todayStamp();
   const packageRoot = DEFAULT_PACKAGE_ROOT;
 
@@ -144,14 +140,13 @@ async function main() {
   const graph = buildGraph(files);
   const record = assembleRecord({ checkedAt: new Date().toISOString(), packageRoot, graph, config: DECLARED_STRATA });
 
-  await mkdir(outDir, { recursive: true });
-  const recordPath = join(outDir, `${date}-module-strata-census.json`);
-  await writeFile(recordPath, `${JSON.stringify(record, null, 2)}\n`, "utf8");
+  const recordPath = `${outDir}/${date}-module-strata-census.json`;
+  await writeFileText(recordPath, `${JSON.stringify(record, null, 2)}\n`);
 
   process.stdout.write(`${renderSummary(record)}\n`);
   process.exit(0);
 }
 
-if (import.meta.url === `file://${process.argv[1]}`) {
+if (isMain(import.meta.url)) {
   main();
 }

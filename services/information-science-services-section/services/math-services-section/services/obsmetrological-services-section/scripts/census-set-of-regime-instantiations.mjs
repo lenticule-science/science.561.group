@@ -7,11 +7,20 @@
  * program.
  * @module census-set-of-regime-instantiations
  */
-import { mkdir, writeFile } from "node:fs/promises";
-import { join, resolve as resolvePath } from "node:path";
+// friction (obsmetrological-services-section-node-import-migration, 2026-09-04): no house
+// service converts a file:// URL (import.meta.url) to a filesystem path; kept for these
+// module-relative default constants.
 import { fileURLToPath } from "node:url";
+import { writeFileText } from "@red-cup-engineering/file-services/write-file";
+import { confinePath } from "@red-cup-engineering/filepath-services-section";
+import { isMain } from "@red-cup-engineering/javascript-file-main-guard-service";
 import { runCommand } from "./audit-set-of-theorems.mjs";
 import { assembleCensusRecord, parseCensusRows } from "../src/regime-instantiation-census.mjs";
+// friction (obsmetrological-services-section-node-import-migration, 2026-09-04):
+// semantic-record-journal-service writes an append-only JSONL log under data/logs/, never
+// an exact named path under data/records/ that other carriers already cite. Kept as a
+// house-file-services writer (not raw node:fs) of these two exact-path carriers until the
+// journal grows that shape.
 
 const DEFAULT_PACKAGE_ROOT = fileURLToPath(new URL("../lib/obsmetrologia/", import.meta.url));
 const DEFAULT_LEAN_SOURCE_PATH = fileURLToPath(new URL("./census-set-of-regime-instantiations.lean", import.meta.url));
@@ -68,7 +77,7 @@ export async function runRegimeCensus({ packageRoot, leanSourcePath, runCommand:
 
 async function main() {
   const { outDir: argvOutDir, date: argvDate } = parseArgv(process.argv.slice(2));
-  const outDir = resolvePath(argvOutDir ?? DEFAULT_OUT_DIR);
+  const outDir = confinePath({ root: argvOutDir ?? DEFAULT_OUT_DIR }).path;
   const date = argvDate ?? todayStamp();
   const packageRoot = DEFAULT_PACKAGE_ROOT;
   const leanSourcePath = DEFAULT_LEAN_SOURCE_PATH;
@@ -90,16 +99,15 @@ async function main() {
     parsed,
   });
 
-  await mkdir(outDir, { recursive: true });
-  const recordPath = join(outDir, `${date}-regime-instantiation-census.json`);
-  const rowsPath = join(outDir, `${date}-regime-instantiation-census-rows.tsv`);
-  await writeFile(recordPath, `${JSON.stringify(record, null, 2)}\n`, "utf8");
-  await writeFile(rowsPath, stdout.endsWith("\n") ? stdout : `${stdout}\n`, "utf8");
+  const recordPath = `${outDir}/${date}-regime-instantiation-census.json`;
+  const rowsPath = `${outDir}/${date}-regime-instantiation-census-rows.tsv`;
+  await writeFileText(recordPath, `${JSON.stringify(record, null, 2)}\n`);
+  await writeFileText(rowsPath, stdout.endsWith("\n") ? stdout : `${stdout}\n`);
 
   process.stdout.write(`${JSON.stringify(record.summary, null, 2)}\n`);
   process.exit(0);
 }
 
-if (import.meta.url === `file://${process.argv[1]}`) {
+if (isMain(import.meta.url)) {
   main();
 }

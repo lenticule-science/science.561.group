@@ -10,5 +10,10 @@
   "scripts": {
     "measure-facilitation-closure": "node scripts/measure-facilitation-closure.mjs",
     "test": "node --test test/facilitation-closure.test.mjs"
+  },
+  "dependencies": {
+    "@red-cup-engineering/file-services": "0.2.1",
+    "@red-cup-engineering/filepath-services-section": "0.1.0",
+    "@red-cup-engineering/javascript-file-main-guard-service": "0.1.3"
   }
 }
