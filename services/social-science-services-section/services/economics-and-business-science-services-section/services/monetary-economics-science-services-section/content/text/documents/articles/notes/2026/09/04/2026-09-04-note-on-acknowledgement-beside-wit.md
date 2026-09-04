@@ -200,8 +200,8 @@ cost, plus what got kept by being acknowledged.
 **What would falsify it.** If the audit machinery that already computes
 $H^0$/$H^1$ for a trace (`audit-set-of-theorems.mjs`, the
 LandauerEntropy and AntiLandauerEntropy modules) shows that an isolated
-acknowledgement cell — one that transitions a witness `open \to
-resolved` with no accompanying affirmation or retraction — changes
+acknowledgement cell — one that transitions a witness from `open` to
+`resolved` with no accompanying affirmation or retraction — changes
 neither count, the conjecture is false: acknowledgement would then have
 no real economic position in the index balance, only a bookkeeping
 label. Equally, if a WIT can be minted with no possible corresponding ACK
@@ -296,7 +296,7 @@ authorship, is the ordinary-language instance already named above)
 closes this spiral back to a settled $H^*$, or simply opens the next
 turn at one level up, the way SYN opened this one.
 
-## Open questions (owner, 2026-09-03 evening discussion)
+## Open questions (owner)
 
 - Is ACK minted only at a border — mirroring the assay contract's rule
   that "price forms only at a counterparty border" for WIT — or can an
