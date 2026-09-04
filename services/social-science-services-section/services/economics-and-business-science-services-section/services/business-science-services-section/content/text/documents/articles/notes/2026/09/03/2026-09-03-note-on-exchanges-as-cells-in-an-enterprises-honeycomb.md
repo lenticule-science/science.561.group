@@ -526,7 +526,7 @@ this note closes none of them:
   arithmetic.
 - **The transport of Benson's two-eyes theorem to the honeycomb (§7)**: a
   Lean statement of chains, regions, and vitality on
-  `Obsmetrologia.GameTheory.Weiqi.Board`, Benson's equivalence proved
+  `WeiqiObsmetrologia.Board`, Benson's equivalence proved
   there, and the honeycomb reading with vitality as face independence,
   checked against the shared-lease counterexample shape.
 - **The damage/border classifier (§1, §5)** as a decision procedure rather

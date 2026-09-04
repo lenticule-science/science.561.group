@@ -24,7 +24,7 @@ date-created: 2026-09-03
 status: proposal
 what-is-proved:
   - "@red-cup-engineering/eavt 0.6.0 (src/eavt.mjs): saturate/transfer/stratify compute Fix σ, Fix Δ, and H* = Fix σ ∩ Fix Δ as separate derived passes over a trace — the general two-nuclei machinery §3 reads onto weiqi's two time axes. The package proves the two nuclei stay separate passes over any trace; it knows nothing about weiqi, so the move-time/reading-depth assignment itself stays this article's proposal."
-  - "Obsmetrologia/GameTheory/Weiqi/Ko.lean: SimpleKo, PositionalSuperko, SituationalSuperko as trace predicates realizing the kernel's three-regime KoRegime table as Lean objects, not a gloss on them — positionalSuperko_implies_simpleKo, positionalSuperko_implies_situationalSuperko, situationalSuperko_not_implies_positionalSuperko (the missing third implication, a decide-checked counterexample rather than a silent gap), and Board.positionalSuperko_length_le (a trace under positional superko on a board of Board.card = n points has length ≤ 3 ^ n, Obsmetrologia/GameTheory/Weiqi/Board.lean). §5's orbit-injectivity reading is now this proved record, applied by this article to the kernel's KoRegime table below rather than argued from scratch each time."
+  - "weiqi-obsmetrologia-services-section/lib/weiqi-obsmetrologia/WeiqiObsmetrologia/Ko.lean: SimpleKo, PositionalSuperko, SituationalSuperko as trace predicates realizing the kernel's three-regime KoRegime table as Lean objects, not a gloss on them — positionalSuperko_implies_simpleKo, positionalSuperko_implies_situationalSuperko, situationalSuperko_not_implies_positionalSuperko (the missing third implication, a decide-checked counterexample rather than a silent gap), and Board.positionalSuperko_length_le (a trace under positional superko on a board of Board.card = n points has length ≤ 3 ^ n, weiqi-obsmetrologia-services-section/lib/weiqi-obsmetrologia/WeiqiObsmetrologia/Board.lean). §5's orbit-injectivity reading is now this proved record, applied by this article to the kernel's KoRegime table below rather than argued from scratch each time."
   - "apps/weiqi-kernel/src/game.mts (checkKoViolation) and src/rulesets.mts (KoRegime): the three ko-regime checks are working, exercised code — this section's npm test suite passes 4/4 over the kernel-composing scripts. The correspondence between this table and Ko.lean's three predicates is this article's application of the Lean record to the kernel's names, not a claim that the kernel code is itself Lean-checked."
 ---
 
@@ -307,7 +307,7 @@ superko demands injectivity of the **(board, to-move) projection**
 projection than positional superko's, since it can distinguish the same
 stone arrangement recurring with different players to move.
 
-This reading is no longer only a reading: `Obsmetrologia/GameTheory/Weiqi/Ko.lean`
+This reading is no longer only a reading: `weiqi-obsmetrologia-services-section/lib/weiqi-obsmetrologia/WeiqiObsmetrologia/Ko.lean`
 states the same three regimes as trace predicates — `SimpleKo`,
 `PositionalSuperko` (no position recurs — `trace.Nodup`), and
 `SituationalSuperko` (no `(position, side-to-move)` pair recurs) — and proves

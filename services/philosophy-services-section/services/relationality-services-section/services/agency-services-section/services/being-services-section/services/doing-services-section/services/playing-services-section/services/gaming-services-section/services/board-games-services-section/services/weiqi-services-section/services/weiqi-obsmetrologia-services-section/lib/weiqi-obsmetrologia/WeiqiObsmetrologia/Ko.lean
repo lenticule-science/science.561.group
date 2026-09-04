@@ -1,4 +1,4 @@
-import Obsmetrologia.GameTheory.Weiqi.Board
+import WeiqiObsmetrologia.Board
 
 /-!
 # Weiqi — ko regimes and their termination bound
@@ -19,9 +19,7 @@ rather than a comment: whichever regime the kernel selects, this module is
 where "how long can this run" stops being folklore.
 -/
 
-namespace Obsmetrologia
-namespace GameTheory
-namespace Weiqi
+namespace WeiqiObsmetrologia
 namespace Ko
 
 /-- A **trace**: a game's positions in move order. -/
@@ -222,16 +220,14 @@ theorem positionalSuperko_length_le (trace : Ko.Trace Point)
 
 end Board
 
-end Weiqi
-end GameTheory
-end Obsmetrologia
+end WeiqiObsmetrologia
 
-#print axioms Obsmetrologia.GameTheory.Weiqi.Ko.positionalSuperko_implies_simpleKo
-#print axioms Obsmetrologia.GameTheory.Weiqi.Ko.positionalSuperko_implies_situationalSuperko
-#print axioms Obsmetrologia.GameTheory.Weiqi.Ko.situationalSuperko_not_implies_positionalSuperko
-#print axioms Obsmetrologia.GameTheory.Weiqi.Ko.allTuples_length
-#print axioms Obsmetrologia.GameTheory.Weiqi.Ko.allTuples_complete
-#print axioms Obsmetrologia.GameTheory.Weiqi.Ko.nodup_length_le_of_subset
-#print axioms Obsmetrologia.GameTheory.Weiqi.Board.toTuple_length
-#print axioms Obsmetrologia.GameTheory.Weiqi.Board.toTuple_injective
-#print axioms Obsmetrologia.GameTheory.Weiqi.Board.positionalSuperko_length_le
+#print axioms WeiqiObsmetrologia.Ko.positionalSuperko_implies_simpleKo
+#print axioms WeiqiObsmetrologia.Ko.positionalSuperko_implies_situationalSuperko
+#print axioms WeiqiObsmetrologia.Ko.situationalSuperko_not_implies_positionalSuperko
+#print axioms WeiqiObsmetrologia.Ko.allTuples_length
+#print axioms WeiqiObsmetrologia.Ko.allTuples_complete
+#print axioms WeiqiObsmetrologia.Ko.nodup_length_le_of_subset
+#print axioms WeiqiObsmetrologia.Board.toTuple_length
+#print axioms WeiqiObsmetrologia.Board.toTuple_injective
+#print axioms WeiqiObsmetrologia.Board.positionalSuperko_length_le

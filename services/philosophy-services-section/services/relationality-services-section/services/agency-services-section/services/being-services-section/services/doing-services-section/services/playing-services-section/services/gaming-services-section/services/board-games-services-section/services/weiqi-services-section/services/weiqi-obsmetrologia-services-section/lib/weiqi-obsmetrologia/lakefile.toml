@@ -1,0 +1,14 @@
+name = "WeiqiObsmetrologia"
+defaultTargets = ["WeiqiObsmetrologia"]
+
+[leanOptions]
+autoImplicit = false
+relaxedAutoImplicit = false
+pp.unicode.fun = true
+
+[[require]]
+name = "Obsmetrologia"
+path = "../../../../../../../../../../../../../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia"
+
+[[lean_lib]]
+name = "WeiqiObsmetrologia"

@@ -6,8 +6,8 @@ author: claude-fable-5.1
 date-created: 2026-09-04
 keywords: ["weiqi", "rule-space", "ruliology", "multiway", "closure-rule-language", "regime", "ko", "curry-howard-lambek", "cone"]
 what-is-proved:
-  - "Obsmetrologia.GameTheory.Weiqi.Ko: the three ko regimes as trace predicates; positional implies simple and situational; the 3^n bound"
-  - "Obsmetrologia.GameTheory.Weiqi.Admission: legality as a HoareProgram precondition, invariant transported along composition, for one fixed point of the rule space (positional superko, suicide illegal)"
+  - "WeiqiObsmetrologia.Ko: the three ko regimes as trace predicates; positional implies simple and situational; the 3^n bound"
+  - "WeiqiObsmetrologia.Admission: legality as a HoareProgram precondition, invariant transported along composition, for one fixed point of the rule space (positional superko, suicide illegal)"
   - "Obsmetrologia/CausalSets/Causal/Cone.lean and Order.lean: future and past cones over a finite causal order, a proved partial order; finite causal sets settle in the strict regime"
   - "Obsmetrologia/Language/Predicating/CurryHowardLambek.lean: the simply-typed correspondence and chl_quartet_is_nuclear"
   - "the closure-rule language (obsmetrological section, closure-rule/): a rule's fragment determines its settling regime"

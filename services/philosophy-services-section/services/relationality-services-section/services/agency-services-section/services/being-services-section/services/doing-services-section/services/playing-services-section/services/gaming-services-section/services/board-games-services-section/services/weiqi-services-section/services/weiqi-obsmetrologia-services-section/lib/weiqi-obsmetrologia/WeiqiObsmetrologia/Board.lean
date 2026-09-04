@@ -21,9 +21,7 @@ both endpoints are occupied by the same stone. This module reuses `Reach`,
 machinery of its own.
 -/
 
-namespace Obsmetrologia
-namespace GameTheory
-namespace Weiqi
+namespace WeiqiObsmetrologia
 
 /-- A board point's contents: empty, or occupied by a black or white stone. -/
 inductive Stone
@@ -36,7 +34,7 @@ inductive Stone
 abbrev Position (Point : Type) := Point → Stone
 
 /-- A **board**: a finite type of points (realized as an explicit duplicate-free,
-complete enumeration — the same shape as `Discrete.Graph.FinGraph.ExactPresentation`
+complete enumeration — the same shape as `Obsmetrologia.Discrete.Graph.FinGraph.ExactPresentation`
 in `SetNumberGraphTheory.lean`) together with a symmetric, irreflexive adjacency.
 Definitions here are only executable enough to state the theorems below; no play
 (placing stones, capturing) is implemented. -/
@@ -63,13 +61,13 @@ def card : Nat := B.points.length
 
 /-- The board's adjacency read as the library's `Graph` type
 (`Obsmetrologia.Discrete.Graph`, `V → V → Bool`). -/
-abbrev graph : Discrete.Graph Point := B.adjacent
+abbrev graph : Obsmetrologia.Discrete.Graph Point := B.adjacent
 
 /-- The **same-colour-occupied restriction** of the board's adjacency at a
 position: an edge `p ~ q` survives exactly when `p` and `q` are adjacent, carry
 the same stone, and that stone is not empty. Groups are the `Reach`-components
 of this graph. -/
-def sameColorGraph (pos : Position Point) : Discrete.Graph Point :=
+def sameColorGraph (pos : Position Point) : Obsmetrologia.Discrete.Graph Point :=
   fun p q => B.adjacent p q && decide (pos p = pos q) && decide (pos p ≠ Stone.empty)
 
 /-- `sameColorGraph` is symmetric (needed nowhere below as a hypothesis — `Reach`
@@ -94,11 +92,11 @@ theorem sameColorGraph_edge_same_color {pos : Position Point} {p q : Point}
   exact of_decide_eq_true h3.2
 
 /-- A **group**: the points reachable from `root` through the same-colour-occupied
-restricted graph, i.e. the `Discrete.Graph.Reach`-component of `root` in
+restricted graph, i.e. the `Obsmetrologia.Discrete.Graph.Reach`-component of `root` in
 `sameColorGraph` — the connected component of same-colour occupied points
 containing `root`. -/
 def Group (pos : Position Point) (root : Point) : Point → Prop :=
-  fun q => Discrete.Graph.Reach (B.sameColorGraph pos) root q
+  fun q => Obsmetrologia.Discrete.Graph.Reach (B.sameColorGraph pos) root q
 
 /-- Every point of a group carries the same stone as the group's root — the
 group is genuinely single-coloured. -/
@@ -132,20 +130,20 @@ theorem liberties_disjoint_from_stones {pos : Position Point} {root : Point}
 /-- **Groups sharing a point coincide.** If two roots' groups share a common
 point, the groups are the very same set — this is exactly the disjoint-or-equal
 law for `Reach`-components (the analogue of
-`Discrete.EquivalenceRelation.cls_eq_of_overlap` in `SetNumberGraphTheory.lean`,
+`Obsmetrologia.Discrete.EquivalenceRelation.cls_eq_of_overlap` in `SetNumberGraphTheory.lean`,
 here for reachability instead of an explicit equivalence relation). -/
 theorem groups_eq_or_disjoint {pos : Position Point} {r1 r2 : Point}
     (hoverlap : ∃ p, B.Group pos r1 p ∧ B.Group pos r2 p) :
     ∀ q, B.Group pos r1 q ↔ B.Group pos r2 q := by
   obtain ⟨p, h1, h2⟩ := hoverlap
-  have hr2r1 : Discrete.Graph.Reach (B.sameColorGraph pos) r2 r1 :=
-    Discrete.Graph.Reach.trans h2 (Discrete.Graph.Reach.symm h1)
-  have hr1r2 : Discrete.Graph.Reach (B.sameColorGraph pos) r1 r2 :=
-    Discrete.Graph.Reach.trans h1 (Discrete.Graph.Reach.symm h2)
+  have hr2r1 : Obsmetrologia.Discrete.Graph.Reach (B.sameColorGraph pos) r2 r1 :=
+    Obsmetrologia.Discrete.Graph.Reach.trans h2 (Obsmetrologia.Discrete.Graph.Reach.symm h1)
+  have hr1r2 : Obsmetrologia.Discrete.Graph.Reach (B.sameColorGraph pos) r1 r2 :=
+    Obsmetrologia.Discrete.Graph.Reach.trans h1 (Obsmetrologia.Discrete.Graph.Reach.symm h2)
   intro q
   constructor
-  · intro hq; exact Discrete.Graph.Reach.trans hr2r1 hq
-  · intro hq; exact Discrete.Graph.Reach.trans hr1r2 hq
+  · intro hq; exact Obsmetrologia.Discrete.Graph.Reach.trans hr2r1 hq
+  · intro hq; exact Obsmetrologia.Discrete.Graph.Reach.trans hr1r2 hq
 
 /-- **Two distinct groups of the same colour share no point.** Groups are
 components: if the point-sets of two groups are not identical, they cannot
@@ -159,13 +157,11 @@ theorem groups_disjoint_of_ne {pos : Position Point} {r1 r2 : Point}
 
 end Board
 
-end Weiqi
-end GameTheory
-end Obsmetrologia
+end WeiqiObsmetrologia
 
-#print axioms Obsmetrologia.GameTheory.Weiqi.Board.sameColorGraph_symm
-#print axioms Obsmetrologia.GameTheory.Weiqi.Board.sameColorGraph_edge_same_color
-#print axioms Obsmetrologia.GameTheory.Weiqi.Board.group_same_color
-#print axioms Obsmetrologia.GameTheory.Weiqi.Board.liberties_disjoint_from_stones
-#print axioms Obsmetrologia.GameTheory.Weiqi.Board.groups_eq_or_disjoint
-#print axioms Obsmetrologia.GameTheory.Weiqi.Board.groups_disjoint_of_ne
+#print axioms WeiqiObsmetrologia.Board.sameColorGraph_symm
+#print axioms WeiqiObsmetrologia.Board.sameColorGraph_edge_same_color
+#print axioms WeiqiObsmetrologia.Board.group_same_color
+#print axioms WeiqiObsmetrologia.Board.liberties_disjoint_from_stones
+#print axioms WeiqiObsmetrologia.Board.groups_eq_or_disjoint
+#print axioms WeiqiObsmetrologia.Board.groups_disjoint_of_ne

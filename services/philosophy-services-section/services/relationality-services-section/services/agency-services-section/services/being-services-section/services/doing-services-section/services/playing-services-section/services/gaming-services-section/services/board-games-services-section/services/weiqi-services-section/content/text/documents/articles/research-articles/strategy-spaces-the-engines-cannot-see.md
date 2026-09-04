@@ -9,7 +9,7 @@ what-is-proved:
   - "Benson 1976: a set of chains is unconditionally alive iff every chain has at least two vital regions (the two-eyes theorem, outside the house, transported below)"
   - "Wang et al. 2023 and Tseng et al. 2025: superhuman engines lose to cyclic attacks and no tried defense closes the class (empirical, outside the house)"
   - "Obsmetrologia/Cohomology/CoordinationCohomology.lean: cover-nerve rank = cells − vertices + components"
-  - "Obsmetrologia.GameTheory.Weiqi.Ko.*: the regimes and the 3^n bound"
+  - "WeiqiObsmetrologia.Ko.*: the regimes and the 3^n bound"
 ---
 
 ## 0. The claim, stated so it can lose
@@ -117,7 +117,7 @@ least two vital regions. Independence is vitality. Two eyes is Benson's
 theorem.
 
 What remains is the transport, and it is a Lean lot, not a conjecture:
-state chains and regions on `Obsmetrologia.GameTheory.Weiqi.Board`, define
+state chains and regions on `WeiqiObsmetrologia.Board`, define
 vitality, prove Benson's equivalence, and then read it on the honeycomb,
 where a genet survives every single refusal iff it holds two future-facing
 faces vital to it. That is the survivability theorem the internal market

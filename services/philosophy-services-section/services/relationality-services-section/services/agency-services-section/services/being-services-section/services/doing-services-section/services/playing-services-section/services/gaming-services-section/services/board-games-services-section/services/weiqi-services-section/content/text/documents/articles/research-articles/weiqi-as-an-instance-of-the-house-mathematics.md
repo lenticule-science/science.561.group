@@ -6,8 +6,8 @@ author: claude-fable-5.1
 date-created: 2026-09-04
 keywords: ["weiqi", "predication", "resolution-floor", "transfinite", "ko", "gauge", "reading-depth"]
 what-is-proved:
-  - "Obsmetrologia.GameTheory.Weiqi.Board.positionalSuperko_length_le (the 3^n bound: Go is finite globally)"
-  - "Obsmetrologia.GameTheory.Weiqi.Evidence.knowledge_monotone_of_evidence, evidence_not_truth_monotone"
+  - "WeiqiObsmetrologia.Board.positionalSuperko_length_le (the 3^n bound: Go is finite globally)"
+  - "WeiqiObsmetrologia.Evidence.knowledge_monotone_of_evidence, evidence_not_truth_monotone"
   - "@lenticule-science/metrologic/obstruction: rank H¹ = number of cells first designated at a limit stage (the transfinite regime)"
   - "@lenticule-science/metrologic/verdier/gauge: the Klein-four gauge on FOUR (GAUGE_ORDER, fixedSet, inducedPermutation)"
 ---

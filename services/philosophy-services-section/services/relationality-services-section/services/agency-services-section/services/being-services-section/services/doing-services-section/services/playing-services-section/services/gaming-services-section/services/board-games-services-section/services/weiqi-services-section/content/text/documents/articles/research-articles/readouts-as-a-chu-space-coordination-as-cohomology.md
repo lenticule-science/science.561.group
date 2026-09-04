@@ -19,7 +19,7 @@ date-created: 2026-09-03
 status: proposal
 what-is-proved:
   - "Obsmetrologia/Calculus/Logic/LinearLogicChu.lean: ChuSpace (r : pts → sts → Charge) and ChuMap's forward/backward adjointness D.r (fwd a) y = C.r a (bwd y) — §1's Chu-transform reading of a move is this article's application of that Lean object to weiqi, not a new theorem."
-  - "Obsmetrologia/GameTheory/Weiqi/Admission.lean: boolPredicateChu, functionPredicateChuMap, and boolean_hoare_is_lax_chu — the 2026-07-18 gyrobifastigial Chu–Hoare Territory Audit's predicate-Chu bridge, lean-checked there but explicitly not committed, is now committed here, axiom-free, against the library's ChuSpace/ChuMap (Obsmetrologia/Calculus/Logic/LinearLogicChu.lean). The same module's MoveInput/Legal/admission gives a weiqi move the literal HoareProgram shape §2 describes (precondition = the legality conjunction, postcondition = the ko regime holding on the extended trace) — this is still inference from the kernel's own Game.play, which is not itself restated as this Lean term; what changed is that the target shape now exists as a checked Lean object, not only as this article's description of one."
+  - "weiqi-obsmetrologia-services-section/lib/weiqi-obsmetrologia/WeiqiObsmetrologia/Admission.lean: WeiqiObsmetrologia.boolPredicateChu, WeiqiObsmetrologia.functionPredicateChuMap, and WeiqiObsmetrologia.boolean_hoare_is_lax_chu — the 2026-07-18 gyrobifastigial Chu–Hoare Territory Audit's predicate-Chu bridge, lean-checked there but explicitly not committed, is now committed here, axiom-free, against the library's ChuSpace/ChuMap (Obsmetrologia/Calculus/Logic/LinearLogicChu.lean). The same module's MoveInput/Legal/admission gives a weiqi move the literal HoareProgram shape §2 describes (precondition = the legality conjunction, postcondition = the ko regime holding on the extended trace) — this is still inference from the kernel's own Game.play, which is not itself restated as this Lean term; what changed is that the target shape now exists as a checked Lean object, not only as this article's description of one."
   - "apps/weiqi-kernel/src/game.mts (Game.play, isLegal) and scripts/derive-liberty-chu-space.mts (chuSpace over @lenticule-science/metrologic/chu 0.2.0): working code computing an honest liberty Chu space from a replayed SGF record, tested by this section's npm test (4/4 pass)."
 ---
 
@@ -101,8 +101,8 @@ lax Chu condition:
 > The Hoare triple is the ordered or lax condition `{P} f {Q} iff P ≤
 > f*(Q)`.
 
-realized by the theorem `boolean_hoare_is_lax_chu` over
-`functionPredicateChuMap`'s `bwd` (its `adj` field is `rfl`: the Boolean
+realized by the theorem `WeiqiObsmetrologia.boolean_hoare_is_lax_chu` over
+`WeiqiObsmetrologia.functionPredicateChuMap`'s `bwd` (its `adj` field is `rfl`: the Boolean
 Hoare case is not merely analogous to the Chu adjointness of §1, it *is*
 that adjointness specialized to `Bool`-valued predicate Chu spaces). The
 audit records this as "the strongest new bridge recovered," open beyond
@@ -125,7 +125,7 @@ states. This is still inference, not code linkage: the kernel's `Game.play`
 is not restated as the Lean `HoareProgram` term. What the 2026-09-03
 program note's own §4 edge list named as still-behind work — "the kernel's
 move stated as a `HoareProgram` instance" — now exists on the Lean side:
-`Obsmetrologia/GameTheory/Weiqi/Admission.lean`'s `MoveInput`, `Legal`
+`weiqi-obsmetrologia-services-section/lib/weiqi-obsmetrologia/WeiqiObsmetrologia/Admission.lean`'s `MoveInput`, `Legal`
 (the conjunction — not-off-board, not-occupied, not-suicide, and the
 ko-regime predicates `HistoryRegimeOk`/`FreshPosition`), and `admission`
 build exactly this triple as a `HoareProgram (MoveInput Point) (MoveInput

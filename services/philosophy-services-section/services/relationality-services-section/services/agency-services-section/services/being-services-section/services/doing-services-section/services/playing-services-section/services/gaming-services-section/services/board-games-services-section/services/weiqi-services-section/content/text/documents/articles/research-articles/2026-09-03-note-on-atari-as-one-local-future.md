@@ -10,7 +10,7 @@ authors:
   - claude-fable-5.1
 keywords: ["weiqi", "atari", "heyting-algebra", "fiber-algebra", "sheaf-laplacian", "settlement", "honeycomb"]
 what-is-proved:
-  - "Obsmetrologia/GameTheory/Weiqi/Board.lean: Board.Group and Board.Liberties give §2's 'group' and 'liberty count' a checked definition (a group is a Discrete.Graph.Reach-component of same-colour occupied points; a liberty is an empty point adjacent to some stone of the group), and Board.liberties_disjoint_from_stones proves a group's liberties are never its own stones — the fact that makes 'the stalk's admitted continuations' and 'the liberty count' the same number in §2. This proves the board-static object atari is a condition on; it proves nothing about §3's stacked-board time-direction reading of a liberty, §4's Heyting-algebra truth values, or §5-6's fiber-algebra/sheaf-Laplacian claims, which remain proposal."
+  - "weiqi-obsmetrologia-services-section/lib/weiqi-obsmetrologia/WeiqiObsmetrologia/Board.lean: Board.Group and Board.Liberties give §2's 'group' and 'liberty count' a checked definition (a group is a Discrete.Graph.Reach-component of same-colour occupied points; a liberty is an empty point adjacent to some stone of the group), and Board.liberties_disjoint_from_stones proves a group's liberties are never its own stones — the fact that makes 'the stalk's admitted continuations' and 'the liberty count' the same number in §2. This proves the board-static object atari is a condition on; it proves nothing about §3's stacked-board time-direction reading of a liberty, §4's Heyting-algebra truth values, or §5-6's fiber-algebra/sheaf-Laplacian claims, which remain proposal."
 ---
 
 ## 1. The statement
@@ -36,7 +36,7 @@ restricted to it.
 A group's *continuations* live in that stalk: the moves that keep the group
 admitted, computed locally. The kernel computes exactly this when
 `findGroup` floods a group and collects its liberties
-(`weiqi-kernel/src/board.mts`); `Obsmetrologia/GameTheory/Weiqi/Board.lean`
+(`weiqi-kernel/src/board.mts`); `weiqi-obsmetrologia-services-section/lib/weiqi-obsmetrologia/WeiqiObsmetrologia/Board.lean`
 now states the same object formally — `Board.Group` (a
 `Discrete.Graph.Reach`-component of same-colour occupied points) and
 `Board.Liberties` (the empty points adjacent to some stone of the group),

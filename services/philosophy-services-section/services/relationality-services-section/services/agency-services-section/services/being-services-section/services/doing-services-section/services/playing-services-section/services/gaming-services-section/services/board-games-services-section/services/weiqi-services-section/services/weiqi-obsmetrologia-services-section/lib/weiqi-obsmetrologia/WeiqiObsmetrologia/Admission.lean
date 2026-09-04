@@ -1,7 +1,7 @@
 import Obsmetrologia.Computing.HoareProgram
 import Obsmetrologia.Calculus.Logic.LinearLogicChu
-import Obsmetrologia.GameTheory.Weiqi.Board
-import Obsmetrologia.GameTheory.Weiqi.Ko
+import WeiqiObsmetrologia.Board
+import WeiqiObsmetrologia.Ko
 
 /-!
 # Weiqi — admitting a move as a Hoare program, and the predicate-Chu bridge
@@ -10,7 +10,7 @@ Two constructions, both against existing library carriers, neither redefining
 them:
 
 1. **A predicate-Chu bridge** (`boolPredicateChu`, `functionPredicateChuMap`,
-   `boolean_hoare_is_lax_chu`), against `ChuSpace`/`ChuMap`
+   `boolean_hoare_is_lax_chu`), against `Obsmetrologia.ChuSpace`/`Obsmetrologia.ChuMap`
    (`Obsmetrologia/Calculus/Logic/LinearLogicChu.lean`). Committed, cleaned,
    from the 2026-07-18 territory audit's "A predicate-Chu bridge compiled
    during this audit"
@@ -36,25 +36,25 @@ them:
    side-by-side facts.
 -/
 
-namespace Obsmetrologia
+namespace WeiqiObsmetrologia
 
 /-! ## A predicate-Chu bridge -/
 
 /-- The **predicate Chu space** over a state carrier `S`: points are states,
 states (as a Chu carrier) are Boolean predicates `S → Bool`, and the
-FOUR-valued matrix records `⟨s, p⟩ ↦ Charge.ofSlots (p s) false` — the
+FOUR-valued matrix records `⟨s, p⟩ ↦ Obsmetrologia.Charge.ofSlots (p s) false` — the
 predicate evaluated at the state, told positively (and never negatively). -/
-def boolPredicateChu (S : Type) : ChuSpace where
+def boolPredicateChu (S : Type) : Obsmetrologia.ChuSpace where
   pts := S
   sts := S → Bool
-  r := fun s p => Charge.ofSlots (p s) false
+  r := fun s p => Obsmetrologia.Charge.ofSlots (p s) false
 
 /-- A deterministic state transition `move : S → T` induces a **Chu transform**
 `boolPredicateChu S → boolPredicateChu T`: forward on states by `move`,
 backward on predicates by precomposition (pullback), `post ↦ post ∘ move`.
 Adjointness is the definitional equality `post (move s) = (post ∘ move) s`. -/
 def functionPredicateChuMap {S T : Type} (move : S → T) :
-    ChuMap (boolPredicateChu S) (boolPredicateChu T) where
+    Obsmetrologia.ChuMap (boolPredicateChu S) (boolPredicateChu T) where
   fwd := move
   bwd := fun post s => post (move s)
   adj := fun _ _ => rfl
@@ -72,11 +72,9 @@ theorem boolean_hoare_is_lax_chu
     ∀ s, pre s = true → (functionPredicateChuMap move).bwd post s = true :=
   h
 
-end Obsmetrologia
+end WeiqiObsmetrologia
 
-namespace Obsmetrologia
-namespace GameTheory
-namespace Weiqi
+namespace WeiqiObsmetrologia
 namespace Admission
 
 open Obsmetrologia.Computing
@@ -185,13 +183,11 @@ theorem admission_seq (B : Board Point) (m1 m2 : MoveInput Point)
   exact nodup_append_of_fresh hreg2 h2rest.2.2.2
 
 end Admission
-end Weiqi
-end GameTheory
-end Obsmetrologia
+end WeiqiObsmetrologia
 
-#print axioms Obsmetrologia.boolPredicateChu
-#print axioms Obsmetrologia.functionPredicateChuMap
-#print axioms Obsmetrologia.boolean_hoare_is_lax_chu
-#print axioms Obsmetrologia.GameTheory.Weiqi.Admission.nodup_append_of_fresh
-#print axioms Obsmetrologia.GameTheory.Weiqi.Admission.admission
-#print axioms Obsmetrologia.GameTheory.Weiqi.Admission.admission_seq
+#print axioms WeiqiObsmetrologia.boolPredicateChu
+#print axioms WeiqiObsmetrologia.functionPredicateChuMap
+#print axioms WeiqiObsmetrologia.boolean_hoare_is_lax_chu
+#print axioms WeiqiObsmetrologia.Admission.nodup_append_of_fresh
+#print axioms WeiqiObsmetrologia.Admission.admission
+#print axioms WeiqiObsmetrologia.Admission.admission_seq
