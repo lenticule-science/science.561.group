@@ -13,8 +13,8 @@ trace on a board of `n` points has length at most `3 ^ n`.
 
 This ties `lib/emsenn/services/561-group/services/science-services-section/…`'s
 kernel ruleset field
-`kernel/src/services/kernel-runtime/rulesets.mts` (`ko_regime`, one of
-`"simple" | "positional-superko" | "situational-superko"`) to a proved bound
+`weiqi-services-section/apps/weiqi-kernel/src/rulesets.mts` (`ko_regime`, one of
+`"simple_ko" | "positional_superko" | "situational_superko"`) to a proved bound
 rather than a comment: whichever regime the kernel selects, this module is
 where "how long can this run" stops being folklore.
 -/
