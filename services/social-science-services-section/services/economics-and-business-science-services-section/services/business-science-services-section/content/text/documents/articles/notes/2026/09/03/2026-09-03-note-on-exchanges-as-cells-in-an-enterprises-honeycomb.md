@@ -181,7 +181,9 @@ witnessed postconditions of the cells whose faces it shares on the earlier
 side; a cell's **later** faces are its **liberties**, the lawful
 continuations still open to it; and cells admitted within the same move,
 sharing neither an earlier nor a later relation, meet instead on **side**
-faces (§17.14, "concurrent cells share side faces"). This is what makes the
+faces. That side relation is this note's reading of §17.14's rule that
+independent moves commute and are "one concurrent position", not a phrase
+the glass-sponge note uses. This is what makes the
 honeycomb a causal set rather than an undirected mesh: its dual graph's order
 complex is read cohomologically exactly as
 [`Manifoldlikeness.lean`](../../../../../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/Obsmetrologia/CausalSets/Dimension/Manifoldlikeness.lean)
