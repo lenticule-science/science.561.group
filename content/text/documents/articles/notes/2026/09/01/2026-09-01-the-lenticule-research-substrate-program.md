@@ -139,8 +139,17 @@ generator written
 (`knowledge-vault-computer-system-services-section/apps/geode/src/vocabulary.mjs`,
 computing term and predicate IRIs live from the admitted glossary record
 per request, no hand-declared ttl/JSON-LD) with unit and route-level
-tests drafted, but is not wired into GEODE's server routing or
-l-space's worker; it sits disconnected, untracked, pending integration.
+tests drafted, and is wired: GEODE 0.1.3's `vocabulary.mjs` serves
+`/ns/term/<identity>` and `/ns/predicate/<name>` as JSON-LD and Turtle,
+and `sites/l-space.561.group/lib/cloudflare/src/worker.mjs` imports
+`handleGeodeVocabularyRequest` and routes `/ns/` anonymously
+(`vocabularyResponse`). It is served by the l-space MCP but not yet in
+the deployed bundle: `curl -sS -H "Accept: text/turtle"
+https://l-space.561.group/ns/predicate/declares-keyword` returned
+`HTTP 401 {"error":"access-required"}` (2026-09-04 UTC), and the running
+bundle on cold-red-gate predates the wiring (`grep -c "ns/predicate"` = 0
+against `/home/emsenn/services/l-space/worker.mjs`, dated Aug 29). What
+remains is a rebuild-and-redeploy of l-space, a procedure, not new code.
 Lot 5, the backward-leg seam D1 requires (authorship demand ranked from
 contested cells and dangling links by benefit/cost — "the thing nobody
 in any knowledge system has ever built"), is undispatched: no code, no
