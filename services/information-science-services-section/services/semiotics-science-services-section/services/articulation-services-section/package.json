@@ -10,10 +10,10 @@
   "types": "./dist/lib/articulating/index.d.mts",
   "files": [
     "dist",
-    "data/forge-out/Mark.sol",
-    "data/forge-out/Utterance.sol",
-    "data/forge-out/Articulating.sol",
-    "data/forge-out/ArticulationCell.sol",
+    "data/state/forge-out/Mark.sol",
+    "data/state/forge-out/Utterance.sol",
+    "data/state/forge-out/Articulating.sol",
+    "data/state/forge-out/ArticulationCell.sol",
     "content/deployments"
   ],
   "scripts": {
@@ -67,10 +67,10 @@
       "types": "./dist/lib/articulating/predicating/geometry/spatial/index.d.mts",
       "import": "./dist/lib/articulating/predicating/geometry/spatial/index.mjs"
     },
-    "./evm/Mark.json": "./data/forge-out/Mark.sol/Mark.json",
-    "./evm/Utterance.json": "./data/forge-out/Utterance.sol/Utterance.json",
-    "./evm/Articulating.json": "./data/forge-out/Articulating.sol/Articulating.json",
-    "./evm/ArticulationCell.json": "./data/forge-out/ArticulationCell.sol/ArticulationCell.json",
+    "./evm/Mark.json": "./data/state/forge-out/Mark.sol/Mark.json",
+    "./evm/Utterance.json": "./data/state/forge-out/Utterance.sol/Utterance.json",
+    "./evm/Articulating.json": "./data/state/forge-out/Articulating.sol/Articulating.json",
+    "./evm/ArticulationCell.json": "./data/state/forge-out/ArticulationCell.sol/ArticulationCell.json",
     "./deployments/eip155-5615610.json": "./content/deployments/eip155-5615610.json",
     "./*": {
       "types": "./dist/lib/articulating/*.d.mts",
