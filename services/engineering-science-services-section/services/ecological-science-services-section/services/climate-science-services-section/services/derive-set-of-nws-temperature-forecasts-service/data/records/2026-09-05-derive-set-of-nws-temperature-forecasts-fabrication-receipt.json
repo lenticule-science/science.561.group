@@ -1,0 +1,32 @@
+{
+  "kind": "jsnode.fabrication-receipt",
+  "packageName": "@lenticule-science/derive-set-of-nws-temperature-forecasts-service",
+  "packageVersion": "0.1.0",
+  "sourceDigest": "sha256:35a3165e6c89cf91d6a9e05305646db4d3391b19cebee5d56c3ae7d28abe6bde",
+  "specificationDigest": "sha256:a05fe27c150f308fb853cfdc050afcd05ba03aeb39f8f9a8701828eb21b5e3ab",
+  "destination": "lib/emsenn/services/561-group/services/science-services-section/services/engineering-science-services-section/services/ecological-science-services-section/services/climate-science-services-section/services/derive-set-of-nws-temperature-forecasts-service",
+  "workOrder": "content/text/documents/specifications/derive-set-of-nws-temperature-forecasts-work-order.md",
+  "assays": [
+    {"name": "syntax", "status": "passed"},
+    {"name": "the-rule", "status": "passed", "scripts": 1, "lines": 151},
+    {"name": "tests", "status": "passed", "paths": ["test/derive-set-of-nws-temperature-forecasts-faces.test.mjs", "test/derive-set-of-nws-temperature-forecasts.test.mjs"]},
+    {"name": "pack", "status": "passed", "filename": "lenticule-science-derive-set-of-nws-temperature-forecasts-service-0.1.0.tgz", "digest": "sha256:29eea1e3a1dbc9832668bd220f60baf93c8a5e2e7d601adb2235c193cf992931"},
+    {"name": "clean-installation", "status": "passed", "javascriptFiles": 1, "reachableJavascriptFiles": 1},
+    {"name": "import-face", "status": "passed", "examples": 2},
+    {"name": "command-face", "status": "passed", "examples": 2},
+    {"name": "help", "status": "passed"}
+  ],
+  "registryPublication": {
+    "registry": "https://registry.561.group",
+    "tarballDiffClassification": "first-publish",
+    "journalReceiptId": "ni:///sha-256;0ufFeuXeaxceE4DF7wxmvB5lgWq20T0M0UzwwASV8Yk"
+  },
+  "freshInstallVerification": {
+    "command": "npm test",
+    "registryUsed": "https://registry.561.group",
+    "testsRun": 10,
+    "testsPassed": 10,
+    "testsFailed": 0
+  },
+  "recordedAt": "2026-09-05T00:00:00Z"
+}
