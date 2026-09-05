@@ -153,7 +153,7 @@ documentation on 2026-09-04 (observed 08:10 UTC):
 |---|---|---|
 | Beancount | "if Beancount encounters a different balance than this for USD it will report an error." and "each account benefits from an implicit balance assertion that the account is empty after it is opened at the date of its Open directive." | beancount.github.io/docs/beancount_language_syntax/, page says "Updated: April 2016" |
 | hledger | "After reading a journal file, hledger will check all balance assertions and report an error if any of them fail." and "You can disable them temporarily with the -I/--ignore-assertions flag" | hledger.org/hledger.html, manual for hledger 1.52 (the pinned Guix shell carries 1.43.2) |
-| Fava | not measured today; unknown | |
+| Fava | `get_errors` is "Serialise errors (do not pass entry as that might fail serialisation." and returns `[SerialisedError.from_beancount_error(e) for e in g.ledger.errors]`: Fava's error view is Beancount's own error list re-serialised, so a failed assertion is an error and an unwitnessed balance is nothing at all; its JSON API (`/errors`, `/balance_sheet`, `/income_statement`, `/trial_balance`, `/journal`, `/query`, `/context`, 35 routes) is "used by the web interface for asynchronous functionality", documents no authentication, and carries no verdict other than error | raw.githubusercontent.com/beancount/fava/main/src/fava/internal_api.py and src/fava/json_api.py, main branch, undated (`published_date: unknown`), observed 2026-09-05 |
 
 Neither documented surface distinguishes an account whose balance was never witnessed from
 one confirmed as zero; Beancount's implicit assertion makes every opened account zero by
