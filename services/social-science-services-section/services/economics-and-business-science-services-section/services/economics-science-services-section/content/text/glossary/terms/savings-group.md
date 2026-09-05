@@ -27,9 +27,16 @@ references:
     year: 2017
     publication: Proceedings of the National Academy of Sciences 114(12)
     doi: 10.1073/pnas.1611520114
+  bouman1995:
+    authors:
+      - F. J. A. Bouman
+    title: "Rotating and accumulating savings and credit associations: A development perspective"
+    year: 1995
+    publication: World Development 23(3)
+    doi: 10.1016/0305-750X(94)00141-K
 ---
 A savings group is a self-managed group of members who save together into a common fund, lend the fund to members at interest, and periodically share out the fund and its earnings. The village savings and loan association, the form spread widely since the 1990s, adds a lockbox with several keys, a written ledger or passbook, weekly meetings, a social fund for emergencies, and an annual share-out in proportion to each member's savings ([Karlan 2017](../../documents/articles/bibliographies/karlan2017.md)). Karlan, Ratan, and Zinman's review places the form among the answers to the constraints that keep the poor from saving: transaction costs, distrust of institutions, claims of kin on a visible balance, and present bias ([Karlan 2014](../../documents/articles/bibliographies/karlan2014.md)).
 
-It differs from a rotating savings and credit association in that the fund accumulates and is lent rather than handed whole to one member per period, and from a credit union in that it holds no license and keeps its own books. The [rotating savings and credit association](../../../../../economics-science-services-section/content/text/glossary/terms/rotating-savings-and-credit-association.md) is the older and simpler form; the savings group is its accumulating descendant, and the ledger is what the accumulation requires.
+It differs from a rotating savings and credit association in that the fund accumulates and is lent rather than handed whole to one member per period, and from a credit union in that it holds no license and keeps its own books. The [rotating savings and credit association](../../../../../economics-science-services-section/content/text/glossary/terms/rotating-savings-and-credit-association.md) is the older and simpler form; the savings group is its accumulating descendant, and the ledger is what the accumulation requires. Bouman draws the line as ROSCA against ASCA: the accumulating association keeps its fund between meetings, lends it at interest, and shares it out at the end of a cycle, so it is the form in which the draw limit first becomes a rule someone has to write ([Bouman 1995](../../documents/articles/bibliographies/bouman1995.md)).
 
 The measured effect of membership is greater savings, credit access, and resilience to shocks with small effects on income, so a pool built on the same form should state its return as liquidity supplied and fees avoided rather than as growth. The largest randomized trial of the form, across Ghana, Malawi, and Uganda, found exactly that profile ([Karlan 2017](../../documents/articles/bibliographies/karlan2017.md)). The house pool's ledger, barrier series, and draw rule ([tally credit](../../../../../monetary-economics-science-services-section/content/text/glossary/terms/tally-credit.md)) are the savings group's passbook, social fund, and lending rule written as operations over a double-entry ledger.
