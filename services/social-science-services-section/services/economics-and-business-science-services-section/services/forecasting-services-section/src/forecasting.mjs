@@ -15,6 +15,44 @@ const ID = /^[a-z0-9]+(?:-[a-z0-9]+)*$/u;
 
 /** @typedef {{questionId: string, probability: number, rationale: string, evidenceCitations: EvidenceCitation[], timestamp: string}} ForecastRecord A canonical forecast: `probability` of YES in [0,1]; `rationale` is required non-empty reasoning (mirrors Metaculus AIB's rule that every bot forecast must post its reasoning); `timestamp` is ISO 8601. */
 
+/**
+ * Normalizes a Kalshi bracket ticker (e.g. "KXHIGHNY-26SEP05-B85.5") into
+ * this section's lowercase-hyphen ForecastingQuestion id. Moved here
+ * 2026-09-05 from apps/forecast-weather-markets-cli.mjs (re-exported there
+ * unchanged for its existing consumers) so scripts/resolve-set-of-forecast-questions.mjs
+ * can share the same transform without a script importing an app (import
+ * law: scripts import scripts and src, never apps).
+ * @param {string} ticker
+ * @returns {string}
+ */
+export function questionIdFromTicker(ticker) {
+  // A bracket ticker like "KXHIGHNY-26SEP05-B85.5" carries a decimal strike;
+  // this id must be lowercase-hyphen only, so any run of non [a-z0-9]
+  // characters (the "." here) becomes one hyphen.
+  return ticker.toLowerCase().replace(/[^a-z0-9]+/gu, "-").replace(/^-+|-+$/gu, "");
+}
+
+/**
+ * The calibration reference class for one Kalshi weather series. Moved
+ * here 2026-09-05 alongside questionIdFromTicker (see that function's doc).
+ * @param {string} seriesTicker
+ * @returns {string}
+ */
+export function referenceClassFromSeries(seriesTicker) {
+  return `kalshi.weather.${seriesTicker}`;
+}
+
+/**
+ * The environment variable name every deployed unit of this section reads
+ * its journal data root from (one state root shared by
+ * forecast-weather-markets-cli.mjs's run/score commands and
+ * forecasting-daily-cycle.mjs), so one release-package-on-host
+ * environment file wires all of them consistently. Added 2026-09-05
+ * (coordinator ruling: one state root).
+ * @type {string}
+ */
+export const DATA_ROOT_ENV_VAR = "FORECASTING_DAILY_CYCLE_DATA_ROOT";
+
 function requireNonEmptyString(value, label) {
   if (typeof value !== "string" || value.length === 0) throw new TypeError(`forecasting: ${label} must be a non-empty string`);
   return value;
