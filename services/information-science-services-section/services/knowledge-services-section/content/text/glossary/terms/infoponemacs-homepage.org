@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       1ab7db61-eb25-4490-ba77-165a00be53b8
+:END:
+#+title: InfoPonEmacs Homepage
+
+This is the project homepage for InfoPonEmacs, my [[id:f16d1067-1b13-405b-ac9b-d5deba34d09d][Emacs configuration]]
+
+- [[id:8c38dc06-1913-49ec-a5a2-ca8e9f0de287][InfoPonEmacs]] :: The complete [[id:1d4f4bee-a3dd-4b03-b76c-485a0fa2ae11][source code]] for my Emacs configuration, which lets me use [[id:1d64bd84-0a23-46ca-8e97-a3a688eb0620][Emacs]] for [[id:fed0f561-36f0-416e-b703-68aaa662316e][digital gardening]].

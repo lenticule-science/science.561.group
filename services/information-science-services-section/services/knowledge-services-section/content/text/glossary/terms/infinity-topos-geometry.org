@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       8a06603a-a402-4080-9460-628580f4ada1
+:END:
+#+title: infinity-topos geometry
+#+date: [2025-10-09 Thu 14:03]
+

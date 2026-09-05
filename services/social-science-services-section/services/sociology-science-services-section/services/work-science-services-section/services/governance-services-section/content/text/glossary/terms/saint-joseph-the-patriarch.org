@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       e3fc2303-d2ad-4271-825d-d975a031e989
+:NODE-RELATIONS: (([[id:e3c71550-53c8-4cc4-a371-73afbb667cad][role]] . [[id:c3a8bbe5-b5ef-4af4-ac99-58e2edd8ab94][Catholic Saint]]))
+:END:
+#+title: Saint Joseph the Patriarch
+#+date: [2025-08-31 Sun 10:31]
+

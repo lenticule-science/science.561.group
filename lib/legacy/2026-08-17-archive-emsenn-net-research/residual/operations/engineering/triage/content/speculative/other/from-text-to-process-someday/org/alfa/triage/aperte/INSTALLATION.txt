@@ -1,0 +1,3 @@
+INSTALLATION
+
+Simply unpack the archive in the desired directory.  Will only work, of course, if the directory is underneath the server root.

@@ -1,0 +1,25 @@
+#+title: United Healthcare
+#+begin_head
+#+ghe_schema: term-0.1.3
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2021-01-07 Thu 09:26]
+#+roam_tags: term
+#+end_head
+
+#+name: definition
+*/[[file:united_healthcare.org][United Healthcare]]/* is a [[file:health_insurance.org][health insurance]] company in the [[file:united-states-of-america.org][U.S.A.]].
+#+toc: headlines 2
+* Introduction
+* United Healthcare
+* Supplements
+** Record history
+   :PROPERTIES:
+   :CUSTOM_ID: record-history
+   :END:
+   :LOGBOOK:
+   - Note taken on [2021-01-07 Thu 09:26] \\
+      Created from [[file:~/org/s/p/d/2021-01-07.org::*My perspective on yesterday's protests in the U.S.][My perspective on yesterday's protests in the U.S.]]
+
+      
+   :END:

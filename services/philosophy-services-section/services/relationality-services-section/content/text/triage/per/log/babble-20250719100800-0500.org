@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       754c4d33-ae12-4ee3-a6ef-cb81b8e0bf7c
+:public:   true
+:instantiates: [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]
+:author:   [[id:40cbaad9-af3c-4573-b356-ae116687e483][emsenn]]
+:date-created: [2025-07-19 Sat 10:08]
+:END:
+#+title: Complaining about nearby construction noise
+#+author: emsenn
+#+date: [2025-07-19 Sat 10:08]
+
+Even though it's [[id:724085ec-523e-4cd3-8d51-8188b879ed8c][Saturday]], the construction work to replace the pipes around [[id:f09b07d6-8475-43c4-bc4a-0982829add54][the neighborhood]] is continuing. It makes sense, thinking about it, given the days cancelled and shortened from the heavy [[id:254d6bb0-95ce-4176-85da-7928bedc2bcf][rain]] earlier in the week, but it wasn't what I expected: I was [[id:d9b3e450-2750-4a93-a2fc-a2408da75f39][hoping]] to spend the day tinkering with my writing and code, especially [[id:edc48bf0-336b-4b63-8505-a3730b328c9d][GnoponEmacs]], free of the sensory overload. I've been enjoying [[id:8178d7b5-4c78-4780-8718-8c15e9bb87f0][video games]], but with the noise, they're becoming more of an escape than a [[id:18694529-273f-4f7b-bc3f-2f0aa03a9d6d][vacation]].

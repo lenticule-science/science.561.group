@@ -1,0 +1,28 @@
+\subsection{Diagonal equality}
+
+\begin{proposition}[Diagonal fiber]\label{thm:diagFiber}\lean{Infomaterial.diagFiber}\leanok\uses{thm:predication, thm:existsT, thm:existsF}
+The diagonal fiber over $(s,o)$ is a singleton when $s=o$ and empty otherwise.
+It is the finite fiber along which Lawvere's diagonal-$\Sigma$ construction
+builds equality.
+\end{proposition}
+
+\begin{proposition}[Classical and paraconsistent equality]\label{thm:classicalEq}\lean{Infomaterial.classicalEq, Infomaterial.paraconsistentEq}\leanok\uses{thm:diagFiber, thm:existsT, thm:existsF, thm:charge-joinTList, thm:charge-joinList}
+Classical equality is the truth-order existential image of the diagonal
+$t$-terminal. Paraconsistent equality is the knowledge-order existential image
+of the diagonal $\top$-terminal. Equality is therefore constructed in each
+order, not postulated.
+\end{proposition}
+
+\begin{theorem}[Classical equality is two-valued]\label{thm:classicalEq-eq}\lean{Infomaterial.classicalEq_eq}\leanok\uses{thm:classicalEq, thm:existsT-adjunction}
+Classical equality returns $t$ on the diagonal and $f$ off it.
+\end{theorem}
+
+\begin{theorem}[Paraconsistent equality is $\top$/$\bot$]\label{thm:paraconsistentEq-eq}\lean{Infomaterial.paraconsistentEq_eq}\leanok\uses{thm:classicalEq, thm:existsT-adjunction, thm:four-bilattice}
+Paraconsistent equality returns $\top$ on the diagonal and $\bot$ off it.
+\end{theorem}
+
+\begin{corollary}[Reflexivity in both orders]\label{cor:eq-refl}\lean{Infomaterial.classicalEq_refl, Infomaterial.paraconsistentEq_refl}\leanok\uses{thm:classicalEq-eq, thm:paraconsistentEq-eq}
+Both equalities are reflexive, but they carry different charges on the same
+diagonal: $t$ for classical truth-order equality and $\top$ for
+knowledge-order paraconsistent equality.
+\end{corollary}

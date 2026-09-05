@@ -1,0 +1,26 @@
+template: python-package
+output_path: ./code/my-python-lib
+
+project:
+  name: My Python Lib
+  description: Example python package scaffold.
+  author: Your Name
+  contact_email: you@example.com
+  organization: ""
+
+github:
+  owner: your-org
+  repo: my-python-lib
+  default_branch: main
+  include_codeowners: true
+  include_funding: false
+  badges:
+    tags: false
+
+license:
+  id: MIT
+
+metadata:
+  created: 2025-01-01
+  status: prototype
+  tags: [python, library]

@@ -1,0 +1,1407 @@
+{
+  "extractor": "tools/extract_conformance.py",
+  "grammar_version": "1.0",
+  "source_relative_path": "../../lib/obsmetrologia/conformance/ConformanceVectors.lean",
+  "source_sha256": "37a2705365baa199294a7ccc48e4bc75ca516fe7ff1760c5fc47a1f1eea2db52",
+  "extracted_at": "2026-08-17T00:00:00+00:00",
+  "vector_count": 33,
+  "unparsed_count": 0,
+  "definition_count": 11,
+  "unparsed_definition_count": 0,
+  "definitions": [
+    {
+      "name": "measureUtterance",
+      "type": "Utterance",
+      "line": 129,
+      "term": {
+        "kind": "struct",
+        "items": [
+          {
+            "kind": "struct",
+            "items": [
+              {
+                "kind": "string",
+                "value": "measure-token"
+              }
+            ]
+          },
+          {
+            "kind": "struct",
+            "items": [
+              {
+                "kind": "string",
+                "value": "measure-claim"
+              }
+            ]
+          }
+        ]
+      },
+      "raw": "def measureUtterance : Utterance := ⟨⟨\"measure-token\"⟩, ⟨\"measure-claim\"⟩⟩"
+    },
+    {
+      "name": "markAlpha",
+      "type": "Mark",
+      "line": 149,
+      "term": {
+        "kind": "struct",
+        "items": [
+          {
+            "kind": "string",
+            "value": "alpha"
+          }
+        ]
+      },
+      "raw": "def markAlpha : Mark := ⟨\"alpha\"⟩"
+    },
+    {
+      "name": "markBeta",
+      "type": "Mark",
+      "line": 150,
+      "term": {
+        "kind": "struct",
+        "items": [
+          {
+            "kind": "string",
+            "value": "beta"
+          }
+        ]
+      },
+      "raw": "def markBeta : Mark := ⟨\"beta\"⟩"
+    },
+    {
+      "name": "markGamma",
+      "type": "Mark",
+      "line": 151,
+      "term": {
+        "kind": "struct",
+        "items": [
+          {
+            "kind": "string",
+            "value": "gamma"
+          }
+        ]
+      },
+      "raw": "def markGamma : Mark := ⟨\"gamma\"⟩"
+    },
+    {
+      "name": "markDelta",
+      "type": "Mark",
+      "line": 152,
+      "term": {
+        "kind": "struct",
+        "items": [
+          {
+            "kind": "string",
+            "value": "delta"
+          }
+        ]
+      },
+      "raw": "def markDelta : Mark := ⟨\"delta\"⟩"
+    },
+    {
+      "name": "utteranceOne",
+      "type": "Utterance",
+      "line": 156,
+      "term": {
+        "kind": "struct",
+        "items": [
+          {
+            "kind": "app",
+            "fn": "markAlpha",
+            "args": []
+          },
+          {
+            "kind": "app",
+            "fn": "markBeta",
+            "args": []
+          }
+        ]
+      },
+      "raw": "def utteranceOne : Utterance := ⟨markAlpha, markBeta⟩"
+    },
+    {
+      "name": "utteranceTwo",
+      "type": "Utterance",
+      "line": 160,
+      "term": {
+        "kind": "struct",
+        "items": [
+          {
+            "kind": "app",
+            "fn": "markGamma",
+            "args": []
+          },
+          {
+            "kind": "app",
+            "fn": "markDelta",
+            "args": []
+          }
+        ]
+      },
+      "raw": "def utteranceTwo : Utterance := ⟨markGamma, markDelta⟩"
+    },
+    {
+      "name": "claimOne",
+      "type": "Claim",
+      "line": 162,
+      "term": {
+        "kind": "app",
+        "fn": "Claim.seed",
+        "args": [
+          {
+            "kind": "app",
+            "fn": "utteranceOne",
+            "args": []
+          }
+        ]
+      },
+      "raw": "def claimOne : Claim := Claim.seed utteranceOne"
+    },
+    {
+      "name": "claimTwo",
+      "type": "Claim",
+      "line": 163,
+      "term": {
+        "kind": "app",
+        "fn": "Claim.seed",
+        "args": [
+          {
+            "kind": "app",
+            "fn": "utteranceTwo",
+            "args": []
+          }
+        ]
+      },
+      "raw": "def claimTwo : Claim := Claim.seed utteranceTwo"
+    },
+    {
+      "name": "potentialCellOne",
+      "type": "Articulating.Cell",
+      "line": 220,
+      "term": {
+        "kind": "struct",
+        "items": [
+          {
+            "kind": "app",
+            "fn": "utteranceOne",
+            "args": []
+          },
+          {
+            "kind": "bool",
+            "value": true
+          },
+          {
+            "kind": "bool",
+            "value": false
+          }
+        ]
+      },
+      "raw": "def potentialCellOne : Articulating.Cell := ⟨utteranceOne, true, false⟩"
+    },
+    {
+      "name": "main",
+      "type": "IO Unit",
+      "line": 252,
+      "term": {
+        "kind": "app",
+        "fn": "IO.println",
+        "args": [
+          {
+            "kind": "string",
+            "value": "conformance: OK — every golden vector in ConformanceVectors.lean kernel-checked."
+          }
+        ]
+      },
+      "raw": "def main : IO Unit :=\n  IO.println \"conformance: OK — every golden vector in ConformanceVectors.lean kernel-checked.\""
+    }
+  ],
+  "vectors": [
+    {
+      "id": "v01_kbot_is_joink_s_left_identity",
+      "line": 65,
+      "doc": "`kBot` is `joinK`'s left identity at `potential` — guards `Charge",
+      "relation": "eq",
+      "proof": "rfl",
+      "lhs": {
+        "kind": "app",
+        "fn": "Charge.joinK",
+        "args": [
+          {
+            "kind": "app",
+            "fn": "Charge.kBot",
+            "args": []
+          },
+          {
+            "kind": "app",
+            "fn": "Charge.tTop",
+            "args": []
+          }
+        ]
+      },
+      "rhs": {
+        "kind": "app",
+        "fn": "Charge.tTop",
+        "args": []
+      },
+      "raw": "example : Charge.joinK Charge.kBot Charge.tTop = Charge.tTop := rfl"
+    },
+    {
+      "id": "v02_kbot_is_joink_s_left_identity",
+      "line": 69,
+      "doc": "`kBot` is `joinK`'s left identity at `active` — the other truth-pole, so the unit law is pinned on both sides of the truth axis, not just one",
+      "relation": "eq",
+      "proof": "rfl",
+      "lhs": {
+        "kind": "app",
+        "fn": "Charge.joinK",
+        "args": [
+          {
+            "kind": "app",
+            "fn": "Charge.kBot",
+            "args": []
+          },
+          {
+            "kind": "app",
+            "fn": "Charge.tBot",
+            "args": []
+          }
+        ]
+      },
+      "rhs": {
+        "kind": "app",
+        "fn": "Charge.tBot",
+        "args": []
+      },
+      "raw": "example : Charge.joinK Charge.kBot Charge.tBot = Charge.tBot := rfl"
+    },
+    {
+      "id": "v03_kbot_is_joink_s_left_identity",
+      "line": 73,
+      "doc": "`kBot` is `joinK`'s left identity at `stable` (`⊤ₖ`) too — guards that the unit law holds even at the top of the knowledge order, not only below it",
+      "relation": "eq",
+      "proof": "rfl",
+      "lhs": {
+        "kind": "app",
+        "fn": "Charge.joinK",
+        "args": [
+          {
+            "kind": "app",
+            "fn": "Charge.kBot",
+            "args": []
+          },
+          {
+            "kind": "app",
+            "fn": "Charge.kTop",
+            "args": []
+          }
+        ]
+      },
+      "rhs": {
+        "kind": "app",
+        "fn": "Charge.kTop",
+        "args": []
+      },
+      "raw": "example : Charge.joinK Charge.kBot Charge.kTop = Charge.kTop := rfl"
+    },
+    {
+      "id": "v04_ktop_absorbs_into_joink_from_potential",
+      "line": 79,
+      "doc": "`kTop` absorbs into `joinK` from `potential` — guards `Charge",
+      "relation": "eq",
+      "proof": "rfl",
+      "lhs": {
+        "kind": "app",
+        "fn": "Charge.joinK",
+        "args": [
+          {
+            "kind": "app",
+            "fn": "Charge.kTop",
+            "args": []
+          },
+          {
+            "kind": "app",
+            "fn": "Charge.tTop",
+            "args": []
+          }
+        ]
+      },
+      "rhs": {
+        "kind": "app",
+        "fn": "Charge.kTop",
+        "args": []
+      },
+      "raw": "example : Charge.joinK Charge.kTop Charge.tTop = Charge.kTop := rfl"
+    },
+    {
+      "id": "v05_ktop_absorbs_into_joink_from_active",
+      "line": 82,
+      "doc": "`kTop` absorbs into `joinK` from `active` — the other truth-pole",
+      "relation": "eq",
+      "proof": "rfl",
+      "lhs": {
+        "kind": "app",
+        "fn": "Charge.joinK",
+        "args": [
+          {
+            "kind": "app",
+            "fn": "Charge.kTop",
+            "args": []
+          },
+          {
+            "kind": "app",
+            "fn": "Charge.tBot",
+            "args": []
+          }
+        ]
+      },
+      "rhs": {
+        "kind": "app",
+        "fn": "Charge.kTop",
+        "args": []
+      },
+      "raw": "example : Charge.joinK Charge.kTop Charge.tBot = Charge.kTop := rfl"
+    },
+    {
+      "id": "v06_ktop_absorbs_into_joink_from_absurd",
+      "line": 86,
+      "doc": "`kTop` absorbs into `joinK` from `absurd` (`⊥ₖ`) — the seed itself cannot escape absorption once joined against `⊤ₖ`",
+      "relation": "eq",
+      "proof": "rfl",
+      "lhs": {
+        "kind": "app",
+        "fn": "Charge.joinK",
+        "args": [
+          {
+            "kind": "app",
+            "fn": "Charge.kTop",
+            "args": []
+          },
+          {
+            "kind": "app",
+            "fn": "Charge.kBot",
+            "args": []
+          }
+        ]
+      },
+      "rhs": {
+        "kind": "app",
+        "fn": "Charge.kTop",
+        "args": []
+      },
+      "raw": "example : Charge.joinK Charge.kTop Charge.kBot = Charge.kTop := rfl"
+    },
+    {
+      "id": "v07_negate_fixes_absurd_guards_charge",
+      "line": 90,
+      "doc": "`negate` fixes `absurd` — guards `Charge",
+      "relation": "eq",
+      "proof": "rfl",
+      "lhs": {
+        "kind": "app",
+        "fn": "Charge.negate",
+        "args": [
+          {
+            "kind": "app",
+            "fn": "Charge.kBot",
+            "args": []
+          }
+        ]
+      },
+      "rhs": {
+        "kind": "app",
+        "fn": "Charge.kBot",
+        "args": []
+      },
+      "raw": "example : Charge.negate Charge.kBot = Charge.kBot := rfl"
+    },
+    {
+      "id": "v08_negate_fixes_stable_guards_charge",
+      "line": 94,
+      "doc": "`negate` fixes `stable` — guards `Charge",
+      "relation": "eq",
+      "proof": "rfl",
+      "lhs": {
+        "kind": "app",
+        "fn": "Charge.negate",
+        "args": [
+          {
+            "kind": "app",
+            "fn": "Charge.kTop",
+            "args": []
+          }
+        ]
+      },
+      "rhs": {
+        "kind": "app",
+        "fn": "Charge.kTop",
+        "args": []
+      },
+      "raw": "example : Charge.negate Charge.kTop = Charge.kTop := rfl"
+    },
+    {
+      "id": "v09_negate_swaps_potential_to_active_guards",
+      "line": 98,
+      "doc": "`negate` swaps `potential` to `active` — guards `Charge",
+      "relation": "eq",
+      "proof": "rfl",
+      "lhs": {
+        "kind": "app",
+        "fn": "Charge.negate",
+        "args": [
+          {
+            "kind": "app",
+            "fn": "Charge.tTop",
+            "args": []
+          }
+        ]
+      },
+      "rhs": {
+        "kind": "app",
+        "fn": "Charge.tBot",
+        "args": []
+      },
+      "raw": "example : Charge.negate Charge.tTop = Charge.tBot := rfl"
+    },
+    {
+      "id": "v10_negate_swaps_active_to_potential_the",
+      "line": 102,
+      "doc": "`negate` swaps `active` to `potential` — the other direction of the same swap, guarding `Charge",
+      "relation": "eq",
+      "proof": "rfl",
+      "lhs": {
+        "kind": "app",
+        "fn": "Charge.negate",
+        "args": [
+          {
+            "kind": "app",
+            "fn": "Charge.tBot",
+            "args": []
+          }
+        ]
+      },
+      "rhs": {
+        "kind": "app",
+        "fn": "Charge.tTop",
+        "args": []
+      },
+      "raw": "example : Charge.negate Charge.tBot = Charge.tTop := rfl"
+    },
+    {
+      "id": "v11_articulating_corner_ofstatus",
+      "line": 111,
+      "doc": null,
+      "relation": "eq",
+      "proof": "rfl",
+      "lhs": {
+        "kind": "app",
+        "fn": "Articulating.Corner.ofStatus",
+        "args": [
+          {
+            "kind": "bool",
+            "value": false
+          },
+          {
+            "kind": "bool",
+            "value": false
+          }
+        ]
+      },
+      "rhs": {
+        "kind": "app",
+        "fn": "Articulating.Corner.absurd",
+        "args": []
+      },
+      "raw": "example : Articulating.Corner.ofStatus false false = Articulating.Corner.absurd := rfl"
+    },
+    {
+      "id": "v12_articulating_corner_ofstatus",
+      "line": 112,
+      "doc": null,
+      "relation": "eq",
+      "proof": "rfl",
+      "lhs": {
+        "kind": "app",
+        "fn": "Articulating.Corner.ofStatus",
+        "args": [
+          {
+            "kind": "bool",
+            "value": true
+          },
+          {
+            "kind": "bool",
+            "value": false
+          }
+        ]
+      },
+      "rhs": {
+        "kind": "app",
+        "fn": "Articulating.Corner.potential",
+        "args": []
+      },
+      "raw": "example : Articulating.Corner.ofStatus true false = Articulating.Corner.potential := rfl"
+    },
+    {
+      "id": "v13_articulating_corner_ofstatus",
+      "line": 113,
+      "doc": null,
+      "relation": "eq",
+      "proof": "rfl",
+      "lhs": {
+        "kind": "app",
+        "fn": "Articulating.Corner.ofStatus",
+        "args": [
+          {
+            "kind": "bool",
+            "value": false
+          },
+          {
+            "kind": "bool",
+            "value": true
+          }
+        ]
+      },
+      "rhs": {
+        "kind": "app",
+        "fn": "Articulating.Corner.active",
+        "args": []
+      },
+      "raw": "example : Articulating.Corner.ofStatus false true = Articulating.Corner.active := rfl"
+    },
+    {
+      "id": "v14_articulating_corner_ofstatus",
+      "line": 114,
+      "doc": null,
+      "relation": "eq",
+      "proof": "rfl",
+      "lhs": {
+        "kind": "app",
+        "fn": "Articulating.Corner.ofStatus",
+        "args": [
+          {
+            "kind": "bool",
+            "value": true
+          },
+          {
+            "kind": "bool",
+            "value": true
+          }
+        ]
+      },
+      "rhs": {
+        "kind": "app",
+        "fn": "Articulating.Corner.stable",
+        "args": []
+      },
+      "raw": "example : Articulating.Corner.ofStatus true true = Articulating.Corner.stable := rfl"
+    },
+    {
+      "id": "v15_articulating_corner_absurd_tostatus",
+      "line": 115,
+      "doc": null,
+      "relation": "eq",
+      "proof": "rfl",
+      "lhs": {
+        "kind": "app",
+        "fn": "Articulating.Corner.absurd.toStatus",
+        "args": []
+      },
+      "rhs": {
+        "kind": "tuple",
+        "items": [
+          {
+            "kind": "bool",
+            "value": false
+          },
+          {
+            "kind": "bool",
+            "value": false
+          }
+        ]
+      },
+      "raw": "example : Articulating.Corner.absurd.toStatus = (false, false) := rfl"
+    },
+    {
+      "id": "v16_articulating_corner_potential_tostatus",
+      "line": 116,
+      "doc": null,
+      "relation": "eq",
+      "proof": "rfl",
+      "lhs": {
+        "kind": "app",
+        "fn": "Articulating.Corner.potential.toStatus",
+        "args": []
+      },
+      "rhs": {
+        "kind": "tuple",
+        "items": [
+          {
+            "kind": "bool",
+            "value": true
+          },
+          {
+            "kind": "bool",
+            "value": false
+          }
+        ]
+      },
+      "raw": "example : Articulating.Corner.potential.toStatus = (true, false) := rfl"
+    },
+    {
+      "id": "v17_articulating_corner_active_tostatus",
+      "line": 117,
+      "doc": null,
+      "relation": "eq",
+      "proof": "rfl",
+      "lhs": {
+        "kind": "app",
+        "fn": "Articulating.Corner.active.toStatus",
+        "args": []
+      },
+      "rhs": {
+        "kind": "tuple",
+        "items": [
+          {
+            "kind": "bool",
+            "value": false
+          },
+          {
+            "kind": "bool",
+            "value": true
+          }
+        ]
+      },
+      "raw": "example : Articulating.Corner.active.toStatus = (false, true) := rfl"
+    },
+    {
+      "id": "v18_articulating_corner_stable_tostatus",
+      "line": 118,
+      "doc": null,
+      "relation": "eq",
+      "proof": "rfl",
+      "lhs": {
+        "kind": "app",
+        "fn": "Articulating.Corner.stable.toStatus",
+        "args": []
+      },
+      "rhs": {
+        "kind": "tuple",
+        "items": [
+          {
+            "kind": "bool",
+            "value": true
+          },
+          {
+            "kind": "bool",
+            "value": true
+          }
+        ]
+      },
+      "raw": "example : Articulating.Corner.stable.toStatus = (true, true) := rfl"
+    },
+    {
+      "id": "v19_articulating_cell_measure",
+      "line": 131,
+      "doc": null,
+      "relation": "eq",
+      "proof": "rfl",
+      "lhs": {
+        "kind": "app",
+        "fn": "Articulating.Cell.measure",
+        "args": [
+          {
+            "kind": "struct",
+            "items": [
+              {
+                "kind": "app",
+                "fn": "measureUtterance",
+                "args": []
+              },
+              {
+                "kind": "bool",
+                "value": false
+              },
+              {
+                "kind": "bool",
+                "value": false
+              }
+            ]
+          }
+        ]
+      },
+      "rhs": {
+        "kind": "app",
+        "fn": "Charge.kBot",
+        "args": []
+      },
+      "raw": "example : Articulating.Cell.measure ⟨measureUtterance, false, false⟩ = Charge.kBot := rfl"
+    },
+    {
+      "id": "v20_articulating_cell_measure",
+      "line": 132,
+      "doc": null,
+      "relation": "eq",
+      "proof": "rfl",
+      "lhs": {
+        "kind": "app",
+        "fn": "Articulating.Cell.measure",
+        "args": [
+          {
+            "kind": "struct",
+            "items": [
+              {
+                "kind": "app",
+                "fn": "measureUtterance",
+                "args": []
+              },
+              {
+                "kind": "bool",
+                "value": true
+              },
+              {
+                "kind": "bool",
+                "value": false
+              }
+            ]
+          }
+        ]
+      },
+      "rhs": {
+        "kind": "app",
+        "fn": "Charge.tTop",
+        "args": []
+      },
+      "raw": "example : Articulating.Cell.measure ⟨measureUtterance, true, false⟩ = Charge.tTop := rfl"
+    },
+    {
+      "id": "v21_articulating_cell_measure",
+      "line": 133,
+      "doc": null,
+      "relation": "eq",
+      "proof": "rfl",
+      "lhs": {
+        "kind": "app",
+        "fn": "Articulating.Cell.measure",
+        "args": [
+          {
+            "kind": "struct",
+            "items": [
+              {
+                "kind": "app",
+                "fn": "measureUtterance",
+                "args": []
+              },
+              {
+                "kind": "bool",
+                "value": false
+              },
+              {
+                "kind": "bool",
+                "value": true
+              }
+            ]
+          }
+        ]
+      },
+      "rhs": {
+        "kind": "app",
+        "fn": "Charge.tBot",
+        "args": []
+      },
+      "raw": "example : Articulating.Cell.measure ⟨measureUtterance, false, true⟩ = Charge.tBot := rfl"
+    },
+    {
+      "id": "v22_articulating_cell_measure",
+      "line": 134,
+      "doc": null,
+      "relation": "eq",
+      "proof": "rfl",
+      "lhs": {
+        "kind": "app",
+        "fn": "Articulating.Cell.measure",
+        "args": [
+          {
+            "kind": "struct",
+            "items": [
+              {
+                "kind": "app",
+                "fn": "measureUtterance",
+                "args": []
+              },
+              {
+                "kind": "bool",
+                "value": true
+              },
+              {
+                "kind": "bool",
+                "value": true
+              }
+            ]
+          }
+        ]
+      },
+      "rhs": {
+        "kind": "app",
+        "fn": "Charge.kTop",
+        "args": []
+      },
+      "raw": "example : Articulating.Cell.measure ⟨measureUtterance, true, true⟩ = Charge.kTop := rfl"
+    },
+    {
+      "id": "v23_the_freshly_initial_cell_articulating",
+      "line": 139,
+      "doc": "The freshly-initial cell (`Articulating",
+      "relation": "eq",
+      "proof": "rfl",
+      "lhs": {
+        "kind": "field",
+        "base": {
+          "kind": "app",
+          "fn": "Articulating.Cell.initial",
+          "args": [
+            {
+              "kind": "app",
+              "fn": "measureUtterance",
+              "args": []
+            }
+          ]
+        },
+        "path": [
+          "meme",
+          "charge"
+        ]
+      },
+      "rhs": {
+        "kind": "app",
+        "fn": "Charge.kBot",
+        "args": []
+      },
+      "raw": "example : (Articulating.Cell.initial measureUtterance).meme.charge = Charge.kBot := rfl"
+    },
+    {
+      "id": "v24_the_two_claims_really_are_distinct",
+      "line": 167,
+      "doc": "The two claims really are distinct — the standing hypothesis every \"posit here, read there\" vector below relies on being non-vacuous",
+      "relation": "ne",
+      "proof": "decide",
+      "lhs": {
+        "kind": "app",
+        "fn": "claimOne",
+        "args": []
+      },
+      "rhs": {
+        "kind": "app",
+        "fn": "claimTwo",
+        "args": []
+      },
+      "raw": "example : claimOne ≠ claimTwo := by decide"
+    },
+    {
+      "id": "v25_positing_t_told_true_at_claimone",
+      "line": 172,
+      "doc": "Positing `t` (told-true) at `claimOne` from the knowledge-least seed reads back exactly `t` there — guards `Valuation",
+      "relation": "eq",
+      "proof": "rfl",
+      "lhs": {
+        "kind": "app",
+        "fn": "Valuation.posit",
+        "args": [
+          {
+            "kind": "app",
+            "fn": "claimOne",
+            "args": []
+          },
+          {
+            "kind": "app",
+            "fn": "Charge.tTop",
+            "args": []
+          },
+          {
+            "kind": "app",
+            "fn": "Valuation.knowledgeLeast",
+            "args": []
+          },
+          {
+            "kind": "app",
+            "fn": "claimOne",
+            "args": []
+          }
+        ]
+      },
+      "rhs": {
+        "kind": "app",
+        "fn": "Charge.tTop",
+        "args": []
+      },
+      "raw": "example : Valuation.posit claimOne Charge.tTop Valuation.knowledgeLeast claimOne\n    = Charge.tTop := rfl"
+    },
+    {
+      "id": "v26_the_same_posit_leaves_the_other",
+      "line": 177,
+      "doc": "The same posit leaves the *other* claim at the seed's `kBot` — guards that `delta`'s point mass genuinely does not leak to an unrelated claim point",
+      "relation": "eq",
+      "proof": "rfl",
+      "lhs": {
+        "kind": "app",
+        "fn": "Valuation.posit",
+        "args": [
+          {
+            "kind": "app",
+            "fn": "claimOne",
+            "args": []
+          },
+          {
+            "kind": "app",
+            "fn": "Charge.tTop",
+            "args": []
+          },
+          {
+            "kind": "app",
+            "fn": "Valuation.knowledgeLeast",
+            "args": []
+          },
+          {
+            "kind": "app",
+            "fn": "claimTwo",
+            "args": []
+          }
+        ]
+      },
+      "rhs": {
+        "kind": "app",
+        "fn": "Charge.kBot",
+        "args": []
+      },
+      "raw": "example : Valuation.posit claimOne Charge.tTop Valuation.knowledgeLeast claimTwo\n    = Charge.kBot := rfl"
+    },
+    {
+      "id": "v27_two_posits_at_the_same_claim",
+      "line": 182,
+      "doc": "Two posits at the *same* claim (`t` then `f`) join to `⊤ₖ` — a concrete instance of `posit_posit_same`: told-true and told-false, merged, is told-both",
+      "relation": "eq",
+      "proof": "rfl",
+      "lhs": {
+        "kind": "app",
+        "fn": "Valuation.posit",
+        "args": [
+          {
+            "kind": "app",
+            "fn": "claimOne",
+            "args": []
+          },
+          {
+            "kind": "app",
+            "fn": "Charge.tBot",
+            "args": []
+          },
+          {
+            "kind": "app",
+            "fn": "Valuation.posit",
+            "args": [
+              {
+                "kind": "app",
+                "fn": "claimOne",
+                "args": []
+              },
+              {
+                "kind": "app",
+                "fn": "Charge.tTop",
+                "args": []
+              },
+              {
+                "kind": "app",
+                "fn": "Valuation.knowledgeLeast",
+                "args": []
+              }
+            ]
+          },
+          {
+            "kind": "app",
+            "fn": "claimOne",
+            "args": []
+          }
+        ]
+      },
+      "rhs": {
+        "kind": "app",
+        "fn": "Charge.kTop",
+        "args": []
+      },
+      "raw": "example : Valuation.posit claimOne Charge.tBot\n    (Valuation.posit claimOne Charge.tTop Valuation.knowledgeLeast) claimOne\n    = Charge.kTop := rfl"
+    },
+    {
+      "id": "v28_contesting_claimone_valuation",
+      "line": 190,
+      "doc": "Contesting `claimOne` (`Valuation",
+      "relation": "eq",
+      "proof": "rfl",
+      "lhs": {
+        "kind": "app",
+        "fn": "Valuation.phase",
+        "args": [
+          {
+            "kind": "app",
+            "fn": "Valuation.contesting",
+            "args": [
+              {
+                "kind": "app",
+                "fn": "claimOne",
+                "args": []
+              },
+              {
+                "kind": "app",
+                "fn": "Valuation.knowledgeLeast",
+                "args": []
+              }
+            ]
+          },
+          {
+            "kind": "app",
+            "fn": "claimOne",
+            "args": []
+          }
+        ]
+      },
+      "rhs": {
+        "kind": "app",
+        "fn": "Articulating.Corner.stable",
+        "args": []
+      },
+      "raw": "example : Valuation.phase (Valuation.contesting claimOne Valuation.knowledgeLeast) claimOne\n    = Articulating.Corner.stable := rfl"
+    },
+    {
+      "id": "v29_positlist_permutation_invariance_concretely",
+      "line": 199,
+      "doc": "**`positList` permutation invariance, concretely",
+      "relation": "eq",
+      "proof": "rfl",
+      "lhs": {
+        "kind": "app",
+        "fn": "Valuation.positList",
+        "args": [
+          {
+            "kind": "list",
+            "items": [
+              {
+                "kind": "tuple",
+                "items": [
+                  {
+                    "kind": "app",
+                    "fn": "claimOne",
+                    "args": []
+                  },
+                  {
+                    "kind": "app",
+                    "fn": "Charge.tTop",
+                    "args": []
+                  }
+                ]
+              },
+              {
+                "kind": "tuple",
+                "items": [
+                  {
+                    "kind": "app",
+                    "fn": "claimTwo",
+                    "args": []
+                  },
+                  {
+                    "kind": "app",
+                    "fn": "Charge.tBot",
+                    "args": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "kind": "app",
+            "fn": "Valuation.knowledgeLeast",
+            "args": []
+          },
+          {
+            "kind": "app",
+            "fn": "claimOne",
+            "args": []
+          }
+        ]
+      },
+      "rhs": {
+        "kind": "app",
+        "fn": "Valuation.positList",
+        "args": [
+          {
+            "kind": "list",
+            "items": [
+              {
+                "kind": "tuple",
+                "items": [
+                  {
+                    "kind": "app",
+                    "fn": "claimTwo",
+                    "args": []
+                  },
+                  {
+                    "kind": "app",
+                    "fn": "Charge.tBot",
+                    "args": []
+                  }
+                ]
+              },
+              {
+                "kind": "tuple",
+                "items": [
+                  {
+                    "kind": "app",
+                    "fn": "claimOne",
+                    "args": []
+                  },
+                  {
+                    "kind": "app",
+                    "fn": "Charge.tTop",
+                    "args": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "kind": "app",
+            "fn": "Valuation.knowledgeLeast",
+            "args": []
+          },
+          {
+            "kind": "app",
+            "fn": "claimOne",
+            "args": []
+          }
+        ]
+      },
+      "raw": "example :\n    Valuation.positList [(claimOne, Charge.tTop), (claimTwo, Charge.tBot)]\n        Valuation.knowledgeLeast claimOne\n      = Valuation.positList [(claimTwo, Charge.tBot), (claimOne, Charge.tTop)]\n        Valuation.knowledgeLeast claimOne := rfl"
+    },
+    {
+      "id": "v30_the_same_permutation_pair_read_at",
+      "line": 207,
+      "doc": "The same permutation pair, read at `claimTwo` instead — order-independence holds at both claim points the batch touches, not only the one checked above",
+      "relation": "eq",
+      "proof": "rfl",
+      "lhs": {
+        "kind": "app",
+        "fn": "Valuation.positList",
+        "args": [
+          {
+            "kind": "list",
+            "items": [
+              {
+                "kind": "tuple",
+                "items": [
+                  {
+                    "kind": "app",
+                    "fn": "claimOne",
+                    "args": []
+                  },
+                  {
+                    "kind": "app",
+                    "fn": "Charge.tTop",
+                    "args": []
+                  }
+                ]
+              },
+              {
+                "kind": "tuple",
+                "items": [
+                  {
+                    "kind": "app",
+                    "fn": "claimTwo",
+                    "args": []
+                  },
+                  {
+                    "kind": "app",
+                    "fn": "Charge.tBot",
+                    "args": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "kind": "app",
+            "fn": "Valuation.knowledgeLeast",
+            "args": []
+          },
+          {
+            "kind": "app",
+            "fn": "claimTwo",
+            "args": []
+          }
+        ]
+      },
+      "rhs": {
+        "kind": "app",
+        "fn": "Valuation.positList",
+        "args": [
+          {
+            "kind": "list",
+            "items": [
+              {
+                "kind": "tuple",
+                "items": [
+                  {
+                    "kind": "app",
+                    "fn": "claimTwo",
+                    "args": []
+                  },
+                  {
+                    "kind": "app",
+                    "fn": "Charge.tBot",
+                    "args": []
+                  }
+                ]
+              },
+              {
+                "kind": "tuple",
+                "items": [
+                  {
+                    "kind": "app",
+                    "fn": "claimOne",
+                    "args": []
+                  },
+                  {
+                    "kind": "app",
+                    "fn": "Charge.tTop",
+                    "args": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "kind": "app",
+            "fn": "Valuation.knowledgeLeast",
+            "args": []
+          },
+          {
+            "kind": "app",
+            "fn": "claimTwo",
+            "args": []
+          }
+        ]
+      },
+      "raw": "example :\n    Valuation.positList [(claimOne, Charge.tTop), (claimTwo, Charge.tBot)]\n        Valuation.knowledgeLeast claimTwo\n      = Valuation.positList [(claimTwo, Charge.tBot), (claimOne, Charge.tTop)]\n        Valuation.knowledgeLeast claimTwo := rfl"
+    },
+    {
+      "id": "v31_predicatingof_guarded_by_a_concrete_decide",
+      "line": 228,
+      "doc": "`predicatingOf`, guarded by a concrete `decide`-discharged proof that `potentialCellOne` sits in the `potential` corner, agrees with the plain `PredicationCell",
+      "relation": "eq",
+      "proof": "rfl",
+      "lhs": {
+        "kind": "app",
+        "fn": "Articulating.Cell.predicatingOf",
+        "args": [
+          {
+            "kind": "app",
+            "fn": "potentialCellOne",
+            "args": []
+          },
+          {
+            "kind": "proof",
+            "text": "decide"
+          }
+        ]
+      },
+      "rhs": {
+        "kind": "app",
+        "fn": "PredicationCell.seed",
+        "args": [
+          {
+            "kind": "app",
+            "fn": "utteranceOne",
+            "args": []
+          }
+        ]
+      },
+      "raw": "example :\n    Articulating.Cell.predicatingOf potentialCellOne (by decide)\n      = PredicationCell.seed utteranceOne := rfl"
+    },
+    {
+      "id": "v32_sibling_seed_composition_concretely",
+      "line": 237,
+      "doc": "**Sibling-seed composition, concretely",
+      "relation": "eq",
+      "proof": "rfl",
+      "lhs": {
+        "kind": "app",
+        "fn": "PredicationCell.composeSeeds",
+        "args": [
+          {
+            "kind": "app",
+            "fn": "utteranceOne",
+            "args": []
+          },
+          {
+            "kind": "app",
+            "fn": "utteranceTwo",
+            "args": []
+          }
+        ]
+      },
+      "rhs": {
+        "kind": "struct",
+        "items": [
+          {
+            "kind": "app",
+            "fn": "markAlpha",
+            "args": []
+          },
+          {
+            "kind": "app",
+            "fn": "markBeta",
+            "args": []
+          },
+          {
+            "kind": "app",
+            "fn": "markGamma",
+            "args": []
+          }
+        ]
+      },
+      "raw": "example : PredicationCell.composeSeeds utteranceOne utteranceTwo\n    = ⟨markAlpha, markBeta, markGamma⟩ := rfl"
+    },
+    {
+      "id": "v33_composing_a_seed_with_itself_stays",
+      "line": 243,
+      "doc": "Composing a seed with itself stays diagonal — a concrete instance of `composeSeeds_self`, guarding that self-composition never manufactures an off-diagonal cell from nothing",
+      "relation": "eq",
+      "proof": "rfl",
+      "lhs": {
+        "kind": "app",
+        "fn": "PredicationCell.composeSeeds",
+        "args": [
+          {
+            "kind": "app",
+            "fn": "utteranceOne",
+            "args": []
+          },
+          {
+            "kind": "app",
+            "fn": "utteranceOne",
+            "args": []
+          }
+        ]
+      },
+      "rhs": {
+        "kind": "app",
+        "fn": "PredicationCell.seed",
+        "args": [
+          {
+            "kind": "app",
+            "fn": "utteranceOne",
+            "args": []
+          }
+        ]
+      },
+      "raw": "example : PredicationCell.composeSeeds utteranceOne utteranceOne\n    = PredicationCell.seed utteranceOne := rfl"
+    }
+  ],
+  "unparsed": [],
+  "unparsed_definitions": []
+}

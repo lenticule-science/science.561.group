@@ -1,0 +1,105 @@
+* October
+** October 2nd
+*** TODO In 1937, the Parsley Massacre began.
+SCHEDULED: <2023-10-02 Mon +1y>
+:PROPERTIES:
+:LAST_REPEAT: [2021-10-16 Sat 20:01]
+:END:
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2021-10-16 Sat 20:01]
+:END:
+The */Parsley Massacre/* was an act of genocide which started on October 2nd, 1937, in which the army of the Dominican Republic was ordered by Rafael Trujillo to exterminate Haitians living in the northwest Dominican Republic.
+
+#+begin_quote
+The Parsley Massacre (Spanish: El Corte "the cutting"; Creole: kout kouto-a "the stabbing") was an act of genocide committed against Haitians living in the Dominican Republic's northwestern frontier that began on this day in 1937. Estimates of the amount of Haitians murdered range from 12,000-35,000.
+
+The massacre was carried out by the Dominican Army on the orders of Dominican dictator Rafael Trujillo, who initiated the violence with this statement, given on Oct. 2nd, 1937:
+
+"To the Dominicans who were complaining of the depredations by Haitians living among them, thefts of cattle, provisions, fruits, etc., and were thus prevented from enjoying in peace the products of their labor, I have responded, 'I will fix this.' And we have already begun to remedy the situation. Three hundred Haitians are now dead in Bánica. This remedy will continue."
+
+In the following week, hundreds of Dominican troops poured into the region, killing Haitians with rifles, machetes, shovels, knives, and bayonets. Haitian children were reportedly thrown in the air and caught by soldiers' bayonets, then thrown on their mothers' corpses. Others were drowned in the sea, making identification and counting of the dead impossible.
+
+The term "Parsley Massacre" for the genocide came from the method that Dominican soldiers would use to determine whether or not those living on the border were native Afro-Dominicans or immigrant Afro-Haitians - they would hold up a sprig of parsley to someone and ask them what it was.
+
+If the person could pronounce it the Spanish way ("perejil"), the soldiers considered them Dominican and let them live, however if they pronounced it with a French or Creole accent, they were considered Haitian and executed.[fn:: See apeoplescalendar.org/calendar/events/parsley-massacre-1937]
+#+end_quote
+*** TODO In 1968, the Tlatelolco Massacre began.
+SCHEDULED: <2022-10-02 Sun +1y>
+:PROPERTIES:
+:LAST_REPEAT: [2021-10-16 Sat 20:01]
+:END:
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2021-10-16 Sat 20:01]
+:END:
+The */Tlatelolco Massacre/* was a massacre of university and high-school students carried out by the Mexican military. The event radicalized Subcomandante Marcos of the Zapatistas and the resignation of Peter Agee from the CIA.
+
+#+begin_quote
+On this day in 1968, around 10,000 university and high school students gathered in the Plaza de las Tres Culturas to protest the government's actions and listen peacefully to speeches. The crowd, which also included non-students such as residential neighbors, bystanders, and children, was fired upon by the Mexican military that evening.
+
+Although the Mexican government said gunfire from the surrounding apartments prompted the army's attack, multiple eyewitness accounts claim they saw a military flare go up as a sign to begin firing on the crowd. The government also had hidden soldiers with machine guns in the apartment buildings they claimed they were fired upon from.
+
+Estimates of the total killed range from 300-400, and over 1,300 people were arrested. The event radicalized Subcomandante Marcos, who later became a prominent member of the Zapatistas, an indigenous group that fights for liberation from the Mexican government.
+
+The massacre also led CIA agent Philip Agee, an eyewitness to the violence, to resign from the organization in protest and author "Inside the Company: CIA Diary", which detailed his work on behalf of American imperialism and caused him to be deported from the United Kingdom.[fn:: See apeoplescalendar.org/calendar/events/tlatelolco-massacre-1968]
+#+end_quote
+** October 16th
+*** In 1859, John Brown conducted the Raid on Harper's Ferry
+SCHEDULED: <2021-10-16 Sat +1y>
+On this day in 1859, abolitionist John Brown initiated a raid on Harper's Ferry to start a revolt in Southern states by taking over a U.S. arsenal in Virginia and arming slaves with the weapons there.
+
+Brown did not receive the support from slaves that he was counting on for the raid to succeed. Many slaves did not trust the fact that a white man would be inciting them to rebel, and knew little about how to work firearms besides that. Some believed they were actually about to be sold.
+
+Brown's raid was defeated by a company of U.S. Marines, killing two of his three sons. He was convicted of treason and hanged on December 2nd, 1859. Later, president of the Confederacy Jefferson Davis cited the attack as grounds for Southerners to leave the Union, "even if it rushes us into a sea of blood".
+*** In 1979, the Bu-Ma Democratic Protests began
+SCHEDULED: <2021-10-16 Sat>
+The Bu-Ma Democratic Protests against the South Korean Yushin regime began on this day in 1979, starting in Busan and later spreading to and Masan (now Changwon). The first to protest were students from Pusan National University, who began calling for the abolition of the Yushin regime in public demonstrations.
+
+The protests quickly grew, and, just two days later, they had spread to Masan, resulted in the destruction of a tax collection office and burned police vehicles, and President Park Chung-hee declared martial law, arrested more than 1,000 people. On October 26th, President Park Chung-hee was assassinated, leading to the eventual dissolution of the Fourth Republic of South Korea.
+
+On the 40th anniversary of the event, President Moon Jae-in apologized for the previous episodes of political repression, stating "As long as we have a history of great democratic protests, no power can rule over the people".
+*** In 1854, Karl Kautsky was born
+SCHEDULED: <2021-10-16 Sat>
+Karl Johann Kautsky was a Czech-Austrian philosopher, journalist, and Marxist theoretician born on this day in 1854. Kautsky was one of the most authoritative promulgators of Orthodox Marxism after the death of Friedrich Engels in 1895 until the outbreak of World War I in 1914. He was one of the most important socialist theorists during the years of the Second International.
+
+He founded the an important socialist journal, Neue Zeit. Following the war, Kautsky was an outspoken critic of the Bolshevik Revolution, engaging in polemics with Vladimir Lenin, Leon Trotsky, and Joseph Stalin on the nature of the Soviet state. Towards the end of his life, he became close friends with Rosa Luxemburg.
+
+Of the USSR, he famously wrote "Foreign tourists in Russia stand in silent amazement before the gigantic enterprises created there, as they stand before the pyramids, for example. Only seldom does the thought occur to them what enslavement, what lowering of human self-esteem was connected with the construction of those gigantic establishments."
+
+For his part, Lenin excoriated Kautsky's interpretations of Marxist thought stating "Kautsky has beaten the world record in the liberal distortion of Marx." (see Lenin's essay "How Kautsky Turned Marx Into A Common Liberal").
+
+Kautsky is notable for, in addition to his anti-Bolshevik polemics, his editing and publication of Marx's Capital, Volume IV (usually published as "Theories of Surplus Value").
+*** In 1908, Enver Hoxha was born
+SCHEDULED: <2021-10-16 Sat>
+Enver Hoxha, born on this day in 1908, was the communist leader of Albania from 1946 to 1985, leaving behind a complex legacy of feminism and greatly improved access to healthcare and education, coupled with what critics perceive as a paranoid personality cult and brutal state repression.
+
+Hoxha is also known for having sharp ideological and political disagreements with the Soviet Union and communist Yugoslavia, siding most strongly with and receiving aid from Maoist China.
+
+Before coming into power, Hoxha was a French school teacher and librarian, becoming a communist partisan after fascist Italy invaded Albania in 1939. In March 1943, the first National Conference of the Communist Party elected Hoxha formally as First Secretary.
+
+It was in this position as First Secretary that Hoxha became head of state after the Albanian monarchy was abolished in 1946.
+
+In the years after Stalin's death, Hoxha grew increasingly distressed by the policies of the Soviet leadership and of Khrushchev in particular. China was also disillusioned with Soviet behavior at this time, and Hoxha found common ground with Mao Zedong's criticisms of Moscow. By 1961, Hoxha's attacks on the "revisionist" Soviet leadership had so infuriated Khrushchev that he elected first to terminate Moscow's economic aid to Albania and ultimately to sever diplomatic relations entirely.
+
+Under Hoxha's leadership, the Albanian literacy rate improved from 5-10% in rural areas to more 90%. Hoxha was also a proponent of women's rights, stating "the entire party and country should hurl into the fire and break the neck of anyone who dared trample underfoot the sacred edict of the party on the defense of women's rights". Accordingly, more than 175 times as many women attended secondary schools in 1978 than had done so in 1938.
+
+Critics of Hoxha point out that his reign had state repression of dissidents reminiscent of the Soviet Union and what they perceived as a paranoid personality cult.
+
+The government denied the population access to information other than that disseminated by the government-controlled media. The 1992 book "Albania: A Country Study" (commissioned by the U.S. government) alleges one out of three Albanians had either been interrogated by the Sigurimi secret police or incarcerated in labor camps.
+
+Hoxha died in 1985, leading Ramiz Alia to succeed him as head of state. Although Albania was one of the poorest European nations at the time of his death, the country was also economically self-sufficient, carrying minimal foreign debt and boasting a trade surplus of $10 million.
+
+"Every departure from class struggle has fatal results for the destiny of socialism."
+
+- Enver Hoxha
+*** In 1994, Los Angeles protested against Prop 187
+SCHEDULED: <2021-10-16 Sun +1y>
+On this day in 1994, an estimated 70,000 demonstrators marched across Los Angeles in opposition to Prop 187, a ballot initiative that prevented any undocumented immigrant (both children and parents) from accessing public school, public healthcare, and public universities. The demonstration against Prop 187, known as the "Save Our State" initiative, is one of the largest mass protests in Los Angeles' history.
+
+Although the ballot initiative passed at first, public and legal pressure from opponents of Prop 187 led to a federal court order preventing enforcement of the measure. The law was finally killed in 1997, when it was declared unconstitutional. The political controversy surrounding the law led to widespread voter registration from the Latino population, and is considered a major factor in California's subsequent shift away from the Republican Party.
+*** In 1995, the Million Man March took place
+SCHEDULED: <2021-10-16 Sun +1y>
+On this day in 1995, a collaborative rally of various civil rights and black liberation groups known as the "Million Man March" took place in Washington, D.C. Hundreds of thousands strong, the march included groups from across the political spectrum, from the National Association for the Advancement of Colored People (NAACP) to the National of Islam (NOI), and its purpose was to "convey to the world a vastly different picture of the Black male".
+
+The rally's events were broken down into several sessions on specific topics, including "Sankofa: Lessons from the Past Linkages to the Future" and "Atonement and Reconciliation". Many prominent civil rights activists spoke at the event, including Betty Shabazz (widow of Malcolm X), Dr. Cornel West, Rosa Parks, Maya Angelou, Rev. Benjamin Chavis, Jr., and Minister Louis Farrakhan.
+
+Two years after the march, the Million Woman March was held in response to fears that the Million Man March had focused on black men to the exclusion of black women. Farrakhan held the 20th Anniversary of the "Million Man March: Justice or Else" on October 10th, 2015, in Washington, D.C.

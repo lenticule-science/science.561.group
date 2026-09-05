@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       db59eb3c-e2bc-43cd-b45a-c3c7213a451c
+:END:
+#+title: Wikipedia
+#+date: [2025-09-21 Sun 07:28]
+

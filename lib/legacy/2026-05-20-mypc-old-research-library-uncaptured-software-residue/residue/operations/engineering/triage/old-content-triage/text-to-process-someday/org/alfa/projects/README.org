@@ -1,0 +1,27 @@
+#+TITLE: README
+
+** Reports
+*** All Projects Reports
+**** Size-on-Disk Report
+#+begin_src sh :results value table :exports both
+du -h --exclude=".git" --exclude="hugo" --max-depth 1 ~/org/projects
+#+end_src
+
+#+RESULTS:
+| 308K | /home/emsenn/org/projects/brutstrap-css                         |
+| 94M  | /home/emsenn/org/projects/ikmu-website                          |
+| 272K | /home/emsenn/org/projects/30-days-of-world-building-summer-2019 |
+| 208K | /home/emsenn/org/projects/emsalpha-css                          |
+| 28M  | /home/emsenn/org/projects/teraum                                |
+| 564K | /home/emsenn/org/projects/emsenn-website                        |
+| 12K  | /home/emsenn/org/projects/teraum-website                        |
+| 8.0K | /home/emsenn/org/projects/emsenn-posts-website                  |
+| 180K | /home/emsenn/org/projects/hugo-media-package-channel-theme      |
+| 12K  | /home/emsenn/org/projects/essays                                |
+| 624K | /home/emsenn/org/projects/posts                                 |
+| 348K | /home/emsenn/org/projects/hugo-personal-website-theme           |
+| 20K  | /home/emsenn/org/projects/ydwarf-css                            |
+| 12K  | /home/emsenn/org/projects/media-packages                        |
+| 268K | /home/emsenn/org/projects/state-of-iranian-communication        |
+| 20K  | /home/emsenn/org/projects/system-distribution                   |
+| 124M | /home/emsenn/org/projects                                       |

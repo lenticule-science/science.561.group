@@ -1,0 +1,66 @@
+\section{Finite gauge, horizon, and dense matter projections}
+
+\begin{proposition}[Finite gauge field carrier]\label{thm:finite-gauge-group}\lean{Infomaterial.Gauge.FiniteGroup}\leanok\uses{thm:k4-group}
+A finite gauge group is enough to state discrete gauge transformations, path
+holonomy, and Wilson-loop invariance without pretending to have a Lie group or
+continuum bundle.
+\end{proposition}
+
+\begin{theorem}[Wilson loops are gauge-invariant class functions]\label{thm:wilson-loop-invariant}\lean{Infomaterial.Gauge.wilsonLoop_invariant}\leanok\uses{thm:finite-gauge-group}
+A class function of a closed-loop holonomy is invariant under finite gauge
+transformation.  This is the finite skeleton of the Wilson-loop observable; the
+analytic area law, spinors, and Lie-bundle layer remain outside the present
+formalization.
+\end{theorem}
+
+\begin{proposition}[Finite infohole no-readout region]\label{thm:infohole-region}\lean{Infomaterial.Relational.Spacetime.Boundary.Infohole.InfoholeRegion}\leanok\uses{thm:causal-settling-transitive-closure, thm:cone-field-geometry}
+Given a causal set and a chosen readout region, the infohole region is the
+no-readout region: events that do not causally precede any readout event.
+\end{proposition}
+
+\begin{theorem}[No-readout is future-closed]\label{thm:infohole-future-closed}\lean{Infomaterial.Relational.Spacetime.Boundary.Infohole.infohole_future_closed}\leanok\uses{thm:infohole-region}
+The finite infohole region is future-closed: once an event cannot reach readout,
+no causal future of it can reach readout either.
+\end{theorem}
+
+\begin{proposition}[Finite infohole shroud]\label{thm:infohole-shroud}\lean{Infomaterial.Relational.Spacetime.Boundary.Infohole.Shroud}\leanok\uses{thm:infohole-region, thm:infohole-future-closed}
+The shroud is the no-readout side of the boundary: an infohole-region event
+causally adjacent to a readout-exterior event.
+\end{proposition}
+
+\begin{proposition}[Shroud-indexed keratin]\label{thm:shroud-indexed-keratin}\lean{Infomaterial.Relational.Material.ShroudIndexedKeratin}\leanok\uses{thm:infohole-shroud}
+A shroud-indexed keratin carrier welds an infohole shroud to directed contact
+and irreversible lock history without asserting a disc, entropy law, or smooth
+horizon theorem.
+\end{proposition}
+
+\begin{proposition}[Finite equation of state]\label{thm:finite-eos}\lean{Infomaterial.Relational.DenseMatter.FiniteEOS}\leanok\uses{thm:finite-boltzmann-collision-lfp, thm:dft-minimizer-equilibrium}
+A finite sampled equation of state records pressure, energy, and a finite sample
+set.  It is a discrete admissibility projection, not neutron-star structure
+equations.
+\end{proposition}
+
+\begin{theorem}[Admissibility has a speed bound]\label{thm:eos-speed-bound}\lean{Infomaterial.Relational.DenseMatter.admissible_speed_bound}\leanok\uses{thm:finite-eos}
+A stable causal finite equation of state satisfies the sampled pressure-speed
+bound.  The stiff model is admissible and the superluminal model fails
+causality, so the constraint has content.
+\end{theorem}
+
+\begin{proposition}[Nuclear-pasta excursion complex]\label{thm:pasta-cell-complex}\lean{Infomaterial.Relational.DenseMatter.CellComplex}\leanok\uses{thm:cover-nerve, thm:persistent-h0-components-merge}
+The pasta projection is a finite cell complex with vertices, edges, triangular
+faces, and thresholded excursion subcomplexes.
+\end{proposition}
+
+\begin{theorem}[Excursion topology distinguishes filled and hollow triangles]\label{thm:pasta-euler-witnesses}\lean{Infomaterial.Relational.DenseMatter.filledTriangle_euler}\leanok\uses{thm:pasta-cell-complex}
+The filled triangle has Euler characteristic \(1\), while the companion
+\lean{Infomaterial.Relational.DenseMatter.hollowTriangle_euler} has Euler
+characteristic \(0\).  This is finite excursion topology, not continuum nuclear
+pasta morphology.
+\end{theorem}
+
+\begin{theorem}[Continuum dense-matter physics]\label{thm:continuum-dense-matter-frontier}\notready\uses{thm:eos-speed-bound, thm:pasta-euler-witnesses, thm:wilson-loop-invariant, thm:infohole-future-closed}
+The finite projections above do not yet prove TOV structure equations,
+\(\chi\)EFT/nuclear many-body models, smooth event horizons, \(SU(3)\) gauge
+theory, Wilson area laws, or confinement.  Those require the analytic
+measure/Hilbert/PDE/Lie-bundle layers.
+\end{theorem}

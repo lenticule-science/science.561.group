@@ -1,0 +1,24 @@
+\subsection{Dimension estimators}
+
+\begin{theorem}[Diamond ordering fraction $r=5/6$]\label{thm:mm-ordering-fraction}\lean{Obsmetrologia.CausalSets.Dimension.OrderingFraction.diamond_ordering_fraction_val}\leanok\uses{thm:causal-settling-transitive-closure}
+For the four-event causal diamond, the Myrheim--Meyer ordering fraction
+$r=2|{\prec}|/(N(N-1))$ is exactly $5/6$ in lowest terms
+(\texttt{diamond\_ordering\_fraction\_val}).  This is a rational invariant of
+the finite causal carrier.
+\end{theorem}
+
+\begin{theorem}[Myrheim--Meyer dimension]\label{thm:myrheim-meyer-dimension}\notready\uses{thm:mm-ordering-fraction}
+\emph{(Open frontier --- stated, not formalized.)} The dimension estimator is
+$d_{MM}=f^{-1}(r)$, where $f(d)$ is the $\Gamma$-function expected ordering
+fraction of a $d$-dimensional sprinkling.  \Cref{thm:mm-ordering-fraction}
+supplies the rational input $r=5/6$; the missing fiber is constructive reals,
+$\Gamma$, its inverse, and the sprinkling measure.
+\end{theorem}
+
+\begin{theorem}[Myrheim--Meyer real interpretation]\label{thm:myrheim-meyer-real-bridge}\lean{Obsmetrologia.CausalSets.Dimension.Fingerprint.diamond_myrheim_meyer_real_bridge}\leanok\uses{thm:mm-ordering-fraction}
+The rational-to-real part is green: the diamond's ordering fraction embeds in
+\texttt{Real.Internal.RReal} as $5/6$.  The proof rebuilds the fraction in the
+internal rationals from \texttt{apexCount} and ordered-pair count; the actual
+dimension $d_{MM}=f^{-1}(r)$ remains the red fiber of
+\cref{thm:myrheim-meyer-dimension}.
+\end{theorem}

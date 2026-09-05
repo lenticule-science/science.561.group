@@ -1,0 +1,6 @@
+{"e":"cell-record","a":"describing","v":"A persisted row in an event-log jsonl: predication-cell + bilattice-value + ISO-8601 transaction-id + optional provenance (stratum, derived-from, derived-via). Distinct from the cell itself, which is pure position.","t":"2026-05-19T23:00:00Z"}
+{"e":"cell-record","a":"packaging","v":"predication-cell","t":"2026-05-19T23:00:00Z"}
+{"e":"cell-record","a":"recording-value","v":"bilattice-value","t":"2026-05-19T23:00:00Z"}
+{"e":"cell-record","a":"deriving-from","v":"cell-id","t":"2026-05-19T23:00:00Z"}
+{"e":"cell-record","a":"deriving-via","v":"predicating","t":"2026-05-19T23:00:00Z"}
+{"e":"cell-record","a":"row-format-of","v":"predication-fiber-algebra","t":"2026-05-19T23:00:00Z"}

@@ -1,0 +1,70 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pypredcomp"
+version = "0.2.0"
+description = "pypredcomp v0.2 — Python implementation of the 561 group's predicated-computing OS (substrate kernel + users, sessions, runlevels, and HTTP shell)"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "Apache-2.0" }
+authors = [{ name = "561 Group" }]
+dependencies = [
+    "pydantic>=2.5",
+    "fastapi>=0.110",
+    "uvicorn[standard]>=0.27",
+    "websockets>=12.0",
+    "httpx>=0.27",
+    "cryptography>=42.0",
+    "aiofiles>=23.2",
+    "anyio>=4.2",
+    "jinja2>=3.1",
+    "python-multipart>=0.0.9",
+    # Closure-engine StateGraph + MCP driver are core (since v0.1).
+    "langgraph>=0.2",
+    "mcp>=1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23",
+    "hypothesis>=6.100",
+    "ruff>=0.4",
+]
+
+[project.scripts]
+substrate = "substrate.runtime:main"
+substrate-mcp = "drivers.mcp_driver:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["substrate*", "storage*", "network*", "drivers*", "shell*", "init_boot*", "process*"]
+
+[tool.setuptools.package-data]
+shell = ["templates/*.html", "static/*.js", "static/*.css"]
+
+# pypredcomp is built as a regular Python package by uv2nix (parent
+# polity 561 group consumes it via Nix). The prior `[tool.uv].package
+# = false` setting was a Replit-specific workaround (read-only Nix
+# store at the Replit deployment site rejected editable installs);
+# uv2nix needs the package to be installable, so the workaround is
+# removed. If pypredcomp is ever re-deployed on Replit, the right fix
+# is at the Replit env config level, not in pyproject.toml.
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+filterwarnings = ["ignore::DeprecationWarning"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+ignore = ["E501"]

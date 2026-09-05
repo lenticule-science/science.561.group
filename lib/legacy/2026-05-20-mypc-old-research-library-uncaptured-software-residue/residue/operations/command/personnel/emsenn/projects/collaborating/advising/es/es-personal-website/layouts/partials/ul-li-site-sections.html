@@ -1,0 +1,9 @@
+{{ if .Site.Sections }}
+  <ul id="site-sections">
+    {{ range .Site.Sections.ByTitle }}
+      <li>
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+      </li>
+    {{ end }}
+  </ul>
+{{ end }}

@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       f3c62d91-5b96-46a9-b89f-c64dc2dda246
+:public:   true
+:form:     [[id:e2de581c-f4e8-403b-aeb7-5fcbccc1d1df][sensing]]
+:ROAM_ALIASES: smells smelled smell
+:END:
+#+title: smelling
+#+date [2025-08-11 Mon 23:08]
+

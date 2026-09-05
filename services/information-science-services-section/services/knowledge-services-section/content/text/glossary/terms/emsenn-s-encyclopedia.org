@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       708f5536-237b-4c74-b115-af39f358b303
+:ROAM_ALIASES: Encyclopedia "my encyclopedia"
+:END:
+#+title: emsenn's Encyclopedia
+
+This [[id:51369518-277a-47b6-9713-95b349ffcbef][encyclopedia]] is a part of [[id:4b3b82b9-d9fd-4b4a-a4f6-c8115039de5b][my digital garden]], and contains a few subsections:
+
+- [[file:./bio/index.org][Biographies]]
+- [[file:./def/index.org][Dictionary]]
+- [[file:./loc/index.org][Locations]]
+- [[file:./tem/index.org][Times]]

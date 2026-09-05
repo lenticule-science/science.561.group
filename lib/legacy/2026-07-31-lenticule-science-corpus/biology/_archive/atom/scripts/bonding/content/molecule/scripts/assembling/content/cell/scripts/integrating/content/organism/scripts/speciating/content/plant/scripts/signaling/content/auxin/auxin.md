@@ -1,0 +1,70 @@
+---
+
+title: "Auxin"
+description: "Auxin: the primary plant growth hormone, regulating cell elongation, apical dominance, phototropism, gravitropism, root initiation, fruit development, and vascular differentiation. The main natural auxin is indole-3-acetic acid (IAA), first isolated by the botanist Went in 1926 following Darwin's classical observations of phototropic bending in grass seedlings."
+date-created: 2026-04-02T00:00:00
+aliases:
+  - Auxin
+  - auxin
+  - IAA
+  - Indole-3-acetic acid
+keywords:
+  - botany
+  - plant-physiology
+  - plant-hormones
+  - growth-regulation
+references:
+  - id: went1926
+    type: document
+    title: On Growth-Accelerating Substances in the Coleoptile of Avena sativa
+    author:
+      - literal: F. W. Went
+    container-title: Proceedings of the Dutch Academy of Sciences
+    issued:
+      - year: 1926
+  - id: dharmasiri2005
+    type: document
+    title: The F-box protein TIR1 is an auxin receptor
+    author:
+      - literal: Neelima Dharmasiri
+      - literal: Sindhu Dharmasiri
+      - literal: Mark Estelle
+    container-title: Nature
+    issued:
+      - year: 2005
+  - id: kepinski2005
+    type: document
+    title: The Arabidopsis F-box protein TIR1 is an auxin receptor
+    author:
+      - literal: Stanislaw Kepinski
+      - literal: Ottoline Leyser
+    container-title: Nature
+    issued:
+      - year: 2005
+---
+
+Auxin: the primary plant growth hormone, regulating cell elongation, apical dominance, phototropism, gravitropism, root initiation, fruit development, and vascular differentiation. The main natural auxin is indole-3-acetic acid (IAA), first isolated by the botanist Went in 1926 following Darwin's classical observations of phototropic bending in grass seedlings.
+
+## Biosynthesis and transport
+
+Auxin is synthesized primarily in the shoot apex through the TAA/YUC (tryptophan aminotransferase / YUCCA) pathway: tryptophan → indole-3-pyruvic acid (IPA) → IAA. The enzyme TAA1 catalyzes the first step; the YUCCA family of flavin monooxygenases catalyzes the second. Once produced, IAA moves through tissues via polar transport — a directional basipetal (downward) movement mediated by PIN-FORMED (PIN) efflux carriers and AUX1/LAX influx carriers on the plasma membrane. This polar transport is unique among plant hormones: auxin cannot move acropetally (upward) against the PIN gradient. The directionality of PIN localization determines the direction of auxin flow and thus the spatial pattern of growth.
+
+## Mechanisms of action
+
+Auxin is perceived by the TIR1/AFB F-box receptors, which integrate auxin binding with the SCF ubiquitin ligase complex. When IAA binds TIR1/AFB, the receptor recruits Aux/IAA transcriptional repressor proteins, targeting them for proteasomal degradation. This releases ARF (AUXIN RESPONSE FACTOR) transcription factors to activate auxin-responsive genes. The concentration of IAA thus determines whether growth genes are activated (high auxin) or repressed (low auxin).
+
+At the cellular level, auxin promotes elongation through the acid growth hypothesis: IAA activates plasma membrane H⁺-ATPases, which pump protons into the cell wall, acidifying the apoplast. Low pH weakens hydrogen bonds between cellulose microfibrils and loosens the cell wall matrix, allowing cells to expand under turgor pressure.
+
+## Developmental roles
+
+**Apical dominance.** High auxin concentration in the apical meristem inhibits the growth of lateral buds. When the apex is removed, auxin concentration drops in axillary buds, and [cytokinin](./cytokinin.md) from the roots accumulates, promoting lateral shoot branching. This auxin:cytokinin ratio is fundamental to shoot development.
+
+**Phototropism and gravitropism.** Light causes asymmetric auxin distribution — IAA concentrates on the shaded side of a shoot, driving differential cell elongation toward light. Similarly, gravity causes auxin redistribution in the root cap, triggering downward growth.
+
+**Root initiation.** Auxin promotes lateral root emergence from the vascular cylinder and adventitious root formation from cut stems — the basis for auxin rooting powders used in plant propagation.
+
+**Vascular differentiation.** Polar auxin transport specifies phloem and xylem development in developing shoots. Synthetic auxins like 2,4-D are potent herbicides precisely because they disrupt vascular differentiation and growth regulation across the plant.
+
+## Cross-references
+
+See also [gibberellin.md](./gibberellin.md), [cytokinin.md](./cytokinin.md), [plant-signaling-molecular.md](./plant-signaling-molecular.md), [tropism.md](./tropism.md).

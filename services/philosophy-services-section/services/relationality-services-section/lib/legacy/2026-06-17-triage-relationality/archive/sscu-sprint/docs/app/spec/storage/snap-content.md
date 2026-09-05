@@ -1,0 +1,30 @@
+---
+title: SnapContent
+layer: spec
+status: plan
+tags:
+  - storage
+  - snapshot
+depends-on:
+  - theorem/internal/relational-storage
+  - theorem/internal/persistence-stack
+  - theorem/internal/baseline-renewal
+  - spec/recognition-carrier
+enacts: idea
+part-of: relational-computer
+in-domain: science/relationality
+description: "Describes the content component of a snapshot containing persisted recognition state."# SnapContent
+
+`SnapContent` is the stored payload associated with a `SnapId`. It captures the
+minimal data required by [Relational Storage](../../math/theorem/internal/relational-storage.md)
+to reconstruct a [RelationalState](relational-state.md):
+
+- `observations`: intake-normalised observations present in the state when
+  saved, consistent with [Intake Stack](../intake-stack.md).
+- `baseline_remainder`: the stabilized tail recognised by
+  [Baseline and Renewal Mechanics](../../math/theorem/internal/baseline-renewal.md).
+- `fixed`: the list of fixed recognitions/invariants eligible for persistence,
+  each encoded as a [RecognitionCarrier](../recognition-carrier.md).
+
+`SnapContent` is derived directly from the live `RelationalState`; it is not an
+independent store.

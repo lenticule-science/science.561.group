@@ -1,0 +1,30 @@
+id: 5cdbf4b170d8e37cab1c32435d3981bfa5130768247455105dcdec63d5f055ea
+inputs:
+- kind: profile_topos
+  role: profile_topos
+- kind: flow_map
+  role: flow_map
+- kind: nucleus_map
+  role: nucleus_map
+- kind: regime
+  role: regime
+name: profile_invariant
+outputs:
+- kind: profile_invariant
+  role: profile_invariant
+steps:
+- inputs:
+  - kind: profile_topos
+    role: profile_topos
+  - kind: flow_map
+    role: flow_map
+  - kind: nucleus_map
+    role: nucleus_map
+  - kind: regime
+    role: regime
+  name: profile_invariant
+  operator: profile_invariant
+  outputs:
+  - kind: profile_invariant
+    role: profile_invariant
+  step_index: 0

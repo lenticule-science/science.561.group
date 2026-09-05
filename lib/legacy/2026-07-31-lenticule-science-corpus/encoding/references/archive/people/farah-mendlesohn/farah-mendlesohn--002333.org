@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       54a7027a-a2db-4c89-9834-d4875103643d
+:NODE-RELATIONS: (([[id:d13beb9d-3360-4889-be32-36ba4254c07c][philosopher]] . [[id:10fa7996-6883-4bc4-9549-6d83bef2c5cf][fiction]]) ([[id:668ab0cc-f949-46f7-81e7-2da4a3eb0a9f][historian]] . [[id:f43ad783-2b66-4c03-b8fd-d1991b2b976d][fantasy fiction]]))
+:END:
+#+title: Farah Mendlesohn
+#+date: [2025-09-10 Wed 23:40]
+

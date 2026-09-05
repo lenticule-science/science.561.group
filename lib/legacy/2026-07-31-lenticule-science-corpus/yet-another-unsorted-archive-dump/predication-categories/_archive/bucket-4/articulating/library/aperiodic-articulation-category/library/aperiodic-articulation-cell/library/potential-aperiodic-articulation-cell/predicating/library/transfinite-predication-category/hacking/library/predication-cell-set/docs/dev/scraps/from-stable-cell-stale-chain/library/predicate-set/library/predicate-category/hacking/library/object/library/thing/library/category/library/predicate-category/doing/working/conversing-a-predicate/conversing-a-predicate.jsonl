@@ -1,0 +1,3 @@
+{"e":"conversing-a-predicate","a":"describing","v":"Return the targets of all converse-class morphisms out of a source predicate. Involutive at the morphism level.","t":"2026-05-19T23:00:00Z"}
+{"e":"conversing-a-predicate","a":"querying-class","v":"converse","t":"2026-05-19T23:00:00Z"}
+{"e":"conversing-a-predicate","a":"consuming","v":"predicate-category","t":"2026-05-19T23:00:00Z"}

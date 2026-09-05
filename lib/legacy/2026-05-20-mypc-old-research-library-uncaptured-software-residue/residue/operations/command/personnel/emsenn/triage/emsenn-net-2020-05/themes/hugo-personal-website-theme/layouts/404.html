@@ -1,0 +1,9 @@
+{{- define "header" -}}
+  <h1>404: Page Not Found</h1>
+{{- end -}}
+{{- define "main" -}}
+  <article>
+    <p>There is no page at this address: this is a <code>404</code> error. You may wish to go to my <a href="{{ .Site.BaseURL }}">homepage</a>. You may also wish to use your browser's Back button to return to the previous page.
+    </p>
+  </article>
+{{- end -}}

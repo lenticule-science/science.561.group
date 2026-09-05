@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       6c2a9678-c7ae-4e69-8086-9ba85df12d75
+:public:   true
+:END:
+#+title: set
+#+date: [2025-08-15 Fri 12:21]
+A */set/* is a [[id:1f810c64-c53a-4e7e-8d9a-1a93dfbb1b7a][structure]] that can [[id:d2dd4008-f6be-48cc-a53e-cd64854f2afc][include]] 

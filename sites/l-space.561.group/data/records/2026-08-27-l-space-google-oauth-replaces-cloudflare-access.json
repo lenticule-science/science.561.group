@@ -1,0 +1,80 @@
+{
+  "type": "LSpaceAuthenticationDecision",
+  "version": 1,
+  "date": "2026-08-27",
+  "supersedes": "2026-08-27-l-space-domain-move-and-public-surface.json",
+  "status": "built-tested-and-locally-served-awaiting-google-client-and-deploy",
+  "decision": "Cloudflare Access is retired. Readers sign in with Google through an OpenID Connect authorization-code flow the Worker runs itself, and admission is decided by an explicit email allowlist.",
+  "priorArtSurveyed": {
+    "finding": "No Google-OAuth-with-browser-session login existed anywhere in the estate. Every Google OAuth path terminates in a Bearer token held in localStorage or handed to an MCP/agent client, and none of them is credentialed in .env. The pattern was two halves that had never been joined.",
+    "sessionPrecedent": "eve-assist.561.group — a live Cloudflare Worker with an HMAC-SHA256 signed session cookie, a state cookie, and working logout. Same platform, different identity provider.",
+    "googlePrecedent": "aagaard — real Google OIDC with discovery, PKCE, and a single-address allowlist, but a Node HTTP server with localStorage bearer tokens.",
+    "resolution": "L-Space joins them: the eve-assist Worker session shape with Google as the identity provider."
+  },
+  "implementation": {
+    "flow": "authorization-code with PKCE S256",
+    "stateNonceAndVerifier": "carried in a short-lived signed cookie rather than server storage, because a Worker has no memory between requests",
+    "idTokenVerification": "full — signature against Google's JWKS, plus issuer, audience, expiry, and nonce, via jose",
+    "sessionCookie": "l_space_session; HMAC-SHA256 signed; HttpOnly; Secure; SameSite=Lax; Path=/; 14 days",
+    "subjectKey": "SHA-256 of the Google subject; the reader's address is never written to a review row",
+    "openRedirectDefence": "the post-login destination must be a same-site absolute path; //host, https://host, and backslash forms all collapse to /"
+  },
+  "admission": {
+    "rule": "explicit email allowlist in the LSPACE_ALLOWED_EMAILS Worker secret",
+    "emptyAllowlistAdmits": "nobody",
+    "reJudgedPerRequest": true,
+    "reason": "Google authenticates any account on earth. Cloudflare Access was silently doing authorization through its allow policy; that job had to become explicit or the corpus would have opened to the internet."
+  },
+  "upstreamFixed": [
+    {
+      "package": "@red-cup-engineering/judge-principal-admission-service",
+      "defect": "resolveAdmissionPolicy failed OPEN: with no admitEmail and no allowedEmail it returned () => true, admitting everyone.",
+      "fix": "Added a fail-closed allowedEmails tier accepting an array or a comma-separated string, where an empty list admits nobody. The legacy open default is left intact for a published consumer that relies on it, but is now documented as open.",
+      "breaking": false
+    },
+    {
+      "package": "@red-cup-engineering/relay-to-google-consent-service",
+      "defect": "No PKCE, no nonce, hardcoded scope and callback path.",
+      "fix": "Added optional codeChallenge, nonce, scopes, redirectPath, accessType, prompt, and loginHint. A pinned-output test proves an existing three-argument call still produces a byte-identical URL.",
+      "breaking": false
+    },
+    {
+      "package": "@red-cup-engineering/exchange-google-callback-service",
+      "defect": "Used Buffer, so it could not run in a Worker isolate; discarded the Google subject; could not send a PKCE verifier or check a nonce or audience.",
+      "fix": "Workers-safe base64url decoding with atob and TextDecoder; additive return of subject, claims, and idToken; optional codeVerifier, expectedNonce, verifyIdToken, redirectPath, and fetchImpl; an audience check. Signature verification stays optional and injectable so the package takes on no JWT dependency.",
+      "breaking": false
+    }
+  ],
+  "upstreamNotChanged": [
+    {
+      "packages": ["mint-authorization-request-service", "redeem-authorization-code-service", "register-oauth-client-service", "serve-google-oauth-service"],
+      "issue": "All use node:crypto, and serve-google-oauth-service persists OAuth state to the filesystem, so none can run in a Cloudflare Worker.",
+      "reason": "Porting them to WebCrypto turns synchronous functions asynchronous, which is a breaking change. Their only consumer, @red-cup-engineering/bare-cedar-fog-561-group, exists solely as a published tarball with no source in the tree, so it could not be rebuilt against a changed API. Left alone deliberately.",
+      "note": "These implement an OAuth authorization server — this repo acting as a provider for API clients — which is a different job from signing a reader in to a website, and is not what L-Space needed."
+    }
+  ],
+  "defectsFoundByRunningIt": [
+    "The consent redirect_uri was derived from the request origin and came out as http:// rather than https://. A redirect URI must match Google's registration byte for byte, so it is now pinned by a PUBLIC_BASE_URL variable, with the request origin kept only as a local-development fallback.",
+    "wrangler dev reads .dev.vars beside the config file rather than at the package root; with it in the wrong place the login route returned 503, which was the fail-closed path behaving correctly."
+  ],
+  "learnerState": {
+    "action": "wiped",
+    "migration": "0002_reset_review_state_for_google_subjects.sql",
+    "reason": "Rows were keyed by a pseudonym of the Cloudflare Access identity. Google supplies a different subject, so every row belonged to a key no reader could present again."
+  },
+  "tests": { "site": "47 passing", "upstreamOauthPackages": "37 passing" },
+  "operatorActionsRequired": [
+    "Create a Google OAuth client ID of type Web application with https://l-space.561.group/oauth/callback as an authorized redirect URI.",
+    "Set GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET, SESSION_SECRET, and LSPACE_ALLOWED_EMAILS as Worker secrets. Nobody is admitted until the allowlist is set.",
+    "DELETE the Cloudflare Access application covering this hostname. While it stands it intercepts every request before the Worker runs, so both the public door and the Google login are unreachable behind it.",
+    "Remove the science.561.group DNS record once l-space.561.group verifies."
+  ],
+  "deferredInterfaces": [
+    "The l-space:direct-read, l-space:curator, and l-space:accessibility-bypass claims are declared but unsourced. Cloudflare Access could carry arbitrary provider claims; a Google id_token carries Google's claims and no custom ones, so nothing issues them and nobody holds one. Sourcing them needs a per-reader grant the deployment stores itself.",
+    "Session revocation is by expiry and allowlist removal only; there is no revocation list.",
+    "The session-cookie module duplicates the EVE Assist implementation rather than sharing one. The honest fix is a shared web-session service, worth doing the moment a third Worker needs it.",
+    "Typed semantic-neighborhood and multi-projection TUFTE explorer",
+    "GitHub-backed rich CMS editor",
+    "Familiar retrieval economy policy"
+  ]
+}

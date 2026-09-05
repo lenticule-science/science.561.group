@@ -1,0 +1,48 @@
+option "booking_method" "FIFO"
+option "operating_currency" "GAZ"
+2021-10-23 open Assets:Inventory:Larder:Food
+2021-10-23 open Assets:Inventory:Larder:Materials
+2021-10-23 open Assets:Inventory:Larder:Water
+2021-10-23 open Assets:Inventory:Garage:Storage
+2021-10-23 open Income:Shopping:Groceries:HarrisTeeter
+2021-10-23 open Liabilities:Emsenn
+2021-10-23 open Liabilities:Esther
+2021-10-23 * "Water"
+  Assets:Inventory:Larder:Water    2 GAL-WAT {0.006 USD}
+  Liabilities:Esther
+2021-10-23 * "Buy V8 (Materials)"
+  Assets:Inventory:Larder:Food    64 OZ-V8 {0.045 USD}
+  Assets:Inventory:Larder:Materials  8 SODA-CAN {0 GAZ}
+  Income:Shopping:Groceries:HarrisTeeter
+2021-10-23 * "Buy V8 (Finances)"
+  Income:Shopping:Groceries:HarrisTeeter   2.88 USD
+  Liabilities:Esther
+2021-10-24 * "Drink v8 (Materials)"
+  Assets:Inventory:Larder:Food    -8 OZ-V8 {}
+  Liabilities:Emsenn
+2021-10-24 * "Drink V8 (Waste)"
+  Assets:Inventory:Larder:Materials    -1 SODA-CAN {}
+  Assets:Inventory:Garage:Storage      1 SODA-CAN {0 GAZ}
+2021-10-25 open Equity:Garden
+2021-10-25 open Assets:Inventory:Porch
+2021-10-25 * "Cut inchplant (Materials)"
+  Assets:Inventory:Porch    1 INCH-PLNT {2 GAZ}
+  Equity:Garden
+2021-10-25 * "Collect dirt"
+  Assets:Inventory:Porch   5 GAL-CPOST {50 GAZ}
+  Equity:Garden
+2021-10-26 open Assets:Inventory:Porch:Can18
+2021-10-26 * "Plant inchplant in soda can (Materials)"
+  Assets:Inventory:Garage:Storage    -1 SODA-CAN {}
+  Assets:Inventory:Porch      -1 INCH-PLNT {}
+  Assets:Inventory:Porch      -0.0125 GAL-CPOST {}
+  Assets:Inventory:Porch:Can18
+2021-10-26 * "Plant inchplant in soda can (Labor"
+  Assets:Inventory:Porch:Can18    8 MIN {0.2 GAZ}
+  Liabilities:Emsenn
+2021-10-27 * "Tend to Can18 (Materials)"
+  Assets:Inventory:Larder:Water    -0.0078 GAL-WAT {}
+  Assets:Inventory:Porch:Can18
+2021-10-27 * "Tend to Can18 (Labor)"
+  Assets:Inventory:Porch:Can18    1 MIN {0.2 GAZ}
+  Liabilities:Emsenn

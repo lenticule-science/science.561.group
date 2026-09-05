@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       291f9264-5b97-4f48-acfc-53dc7ac77301
+:END:
+#+title: organization
+#+date: [2025-09-05 Fri 22:15]
+

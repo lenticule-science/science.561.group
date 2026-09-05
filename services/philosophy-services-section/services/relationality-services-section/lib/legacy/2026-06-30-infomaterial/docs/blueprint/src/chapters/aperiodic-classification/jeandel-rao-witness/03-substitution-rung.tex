@@ -1,0 +1,13 @@
+\subsection{Substitution rung}
+
+\begin{theorem}[Jeandel--Rao marker-domino substitution chain map ($b_3 \mapsto \varphi$)]\label{thm:jeandel-rao-substitution}\lean{Infomaterial.Persistence.Aperiodic.Witness.jr_substitution_pullback}\leanok\uses{thm:jeandel-rao-witness, thm:jeandel-rao-b3}
+The marker-domino step is an explicit integer cellular chain map
+$\mathrm{jrComplex}\to\mathrm{markerRingComplex}$. On $1$-cells, the marked
+edges map $e_2\mapsto q_1$ and $e_3\mapsto q_5$, while the four unmarked edges
+map to $q_0$; on $2$-cells every witness face maps to $-g_3$, forced because
+$\partial(-g_3)=q_1-q_5$ is the edge-image of each witness-face boundary. The
+induced cochain pullback sends the marker-ring core class to the decorated
+witness exactly, $\mathrm{subPull}\,b_3=\varphi$, and carries cocycles to
+cocycles. Thus $\varphi$ is the pullback of a nonzero $H^1$ class along a
+genuine integer chain map: one marker-domino rung.
+\end{theorem}

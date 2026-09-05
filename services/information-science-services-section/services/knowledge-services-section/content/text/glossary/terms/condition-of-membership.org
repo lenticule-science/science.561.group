@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       b219cd64-7be9-4d3f-b29d-07b81b0f7f07
+:END:
+#+title: condition of membership
+#+date: [2025-09-20 Sat 09:38]
+

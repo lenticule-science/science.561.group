@@ -1,0 +1,27 @@
+{
+  "name": "@lenticule-science/obsmetrologia",
+  "version": "0.1.1",
+  "type": "module",
+  "description": "Obsmetrologia's dependency-free Lean 4 library of pure mathematics generated from its mathematical corpus.",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "files": [
+    "Obsmetrologia.lean",
+    "Obsmetrologia/",
+    "docs/blueprint/README.md",
+    "docs/blueprint/src/",
+    "docs/blueprint/lean_decls",
+    "lake-manifest.json",
+    "lakefile.toml",
+    "lean-toolchain",
+    "package.json"
+  ],
+  "scripts": {
+    "lean:build": "lake build",
+    "lean:check:primitive": "lake env lean Obsmetrologia/Primitive.lean",
+    "lean:lsp": "lake env lean --server",
+    "lean:mcp": "uvx lean-lsp-mcp --lean-project-path .",
+    "verso:build": "cd docs/verso && lake build"
+  }
+}

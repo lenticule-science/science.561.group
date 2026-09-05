@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       a3e5059c-d632-4eb9-9113-5ae6e49c1a8b
+:public:   true
+:resource-description: (([[id:edaef069-c68d-46aa-a970-d3cb7fe3165c][resource type]] . [[id:33b57543-61f0-4152-9b58-3d61d7fe80af][fictional character]]) ([[id:2d79d4ba-8d36-4714-869c-081e8d40d24f][field]] . [[id:506787ad-4a7f-4327-9c95-41aa82243aa3][Bible]]))
+:END:
+#+title: Jephthah’s daughter
+#+date: [2025-08-31 Sun 10:31]
+

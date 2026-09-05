@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/system/library/operating-system/library/computer-operating-system/library/work-item/work-item.schema.json",
+  "title": "Work-item",
+  "description": "JSON Schema for a work-item-inhabiting record. Validates the 9 characteristic cells of the predication-shape. has-kind, has-status, owned-by are required; the rest are optional refinements.",
+  "type": "object",
+  "required": ["name", "description", "has-kind", "has-status", "owned-by"],
+  "additionalProperties": true,
+  "properties": {
+    "name": {"type": "string", "pattern": "^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$"},
+    "description": {"type": "string"},
+    "has-kind": {
+      "type": "string",
+      "enum": ["task", "goal", "milestone", "campaign", "objective", "project", "expedition", "plan", "phase", "sprint", "question", "decision", "friction-note", "triage-note"]
+    },
+    "has-status": {
+      "type": "string",
+      "enum": ["open", "in-progress", "blocked", "review", "done", "deferred", "abandoned", "reopened"]
+    },
+    "owned-by": {"type": "string", "pattern": "^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$"},
+    "assigned-to": {"type": "array", "items": {"type": "string", "pattern": "^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$"}, "uniqueItems": true},
+    "has-priority": {"type": "string"},
+    "has-deadline": {"type": "string", "format": "date"},
+    "depends-on": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "contributes-to": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "blocked-by": {"type": "string"}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"has-status": {"const": "blocked"}}},
+      "then": {"required": ["blocked-by"]}
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       32e00173-c695-4bb6-b0d2-9dc17fec128b
+:END:
+#+title: act
+#+date: 2025-07-19
+#+author: emsenn

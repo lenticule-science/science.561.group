@@ -1,0 +1,86 @@
+---
+type: theorem
+status: proved
+depends-on: [quantale-enriched-sheaf, d-frame-valued-sheaf, bitopological-settling-site, kelly1982]
+---
+
+# Lawvere Laplacian preserves sheafhood on Grothendieck sites
+
+The **Layer-1 sheaf-compatibility lemma** of the [cellular extension plan](../narratives/cellular-extension-plan.md). Extends [@ghrist-et-al2025]'s Lawvere Laplacian framework from graph-indexed presheaves to [Q-enriched sheaves on arbitrary Grothendieck sites](../objects/quantale-enriched-sheaf.md), establishing the single structural fact: *the Lawvere Laplacian sends sheaves to sheaves*.
+
+The two further pieces of the cellular-extension plan — extending the Tarski–Lawvere fixed-point convergence to transfinite covers (Layer 2/3 fixed-point extension) and developing the corresponding higher-degree cohomology framework — live in separate theorem files. The Tarski–Lawvere transfinite extension is sketch ([Tarski–Lawvere fixed point on Grothendieck sites](tarski-lawvere-fixed-point-grothendieck-sites.md)). The higher-degree cohomology framework is closed *in the Boolean d-frame scope* by [Q-enriched derived cohomology agreement: Boolean d-frame case](q-enriched-derived-cohomology-boolean-d-frame.md) (proved); the non-Boolean cases are open via [Q-enriched Hodge on non-Boolean frames](q-enriched-hodge-theorem-non-boolean-frames.md), [Q-enriched Hodge on Lawvere-quantale data](q-enriched-hodge-theorem-lawvere-quantale.md), and [Q-enriched Grothendieck spectral sequence](q-enriched-grothendieck-spectral-sequence.md), each its own sketch.
+
+## Setup
+
+Fix a commutative unital quantale $\mathsf{Q}$, a small category $\mathbf{T}$ with Grothendieck topology $J$, and a $\mathsf{Q}$-enriched presheaf $F : \mathbf{T}^{\mathrm{op}} \to \mathbf{Q\text{-}Cat}_{\mathrm{cwl}}$ (where $\mathbf{Q\text{-}Cat}_{\mathrm{cwl}}$ is the $\mathsf{Q}$-category of complete weighted lattices).
+
+The **cochain complex** of $F$ has
+
+$$C^n F \;:=\; \prod_{\sigma \in \mathbf{T}_n} F(\sigma)$$
+
+where $\mathbf{T}_n$ is the set of objects of $\mathbf{T}$ at "dimension $n$" — those reached by length-$n$ chains of non-identity morphisms. (For graphs, $\mathbf{T}_0 = V$ and $\mathbf{T}_1 = E$.) The product is taken in $\mathbf{Q\text{-}Cat}_{\mathrm{cwl}}$.
+
+The **coboundary** $\delta^n : C^n F \to C^{n+1} F$ is the standard sheaf-theoretic coboundary for sheaves on a poset/site, with restrictions encoded by the $\mathsf{Q}$-functor structure of $F$.
+
+## The Lawvere Laplacian
+
+The **Lawvere Laplacian** $L : C^0 F \to C^0 F$ is a $\mathsf{Q}$-endofunctor on the cochain $\mathsf{Q}$-category $C^0 F = \prod_\sigma F(\sigma)$. Following [@ghrist-et-al2025] §3, the operator combines, at each object $\sigma$, the restriction maps $F(f) : F(\tau) \to F(\sigma)$ for outgoing morphisms $f : \sigma \to \tau$ with their right $\mathsf{Q}$-adjoints $F(f)^* : F(\sigma) \to F(\tau)$ (which exist because each $F(\tau)$ is a complete weighted lattice).
+
+The **defining property**: fixed points of $L$ in $C^0 F$ are exactly global sections of $F$ — sections whose values lift coherently along every outgoing morphism. The explicit formula is a weighted meet over outgoing morphisms of the round-trip $F(f) \circ F(f)^*$ closure, recorded in [@ghrist-et-al2025] §3 (specializing to the Tarski Laplacian of [@ghrist-riess2022] when $\mathsf Q$ is the Boolean quantale, weighted analog otherwise). We use the formula as a black box; the structural facts that matter for the Layer-1 lemma are: $L$ is local (at $\sigma$, depends only on $F$'s data at $\sigma$ and at objects $\tau$ reachable by outgoing morphisms), and $L$ is a $\mathsf Q$-functor componentwise.
+
+In the graph case, this reduces to [@ghrist-et-al2025]'s Lawvere Laplacian on vertex–edge incidence data. In the Grothendieck-site case, "outgoing morphisms" generalizes to all morphisms $\sigma \to \tau$ in $\mathbf T$.
+
+## The Layer-1 lemma
+
+**Theorem (Lawvere Laplacian preserves sheafhood).** *If $F$ is a $\mathsf Q$-enriched **sheaf** on the site $(\mathbf T, J)$ — not just a presheaf — then $L(F) : \mathbf T^{\mathrm{op}} \to \mathbf{Q\text{-}Cat}_{\mathrm{cwl}}$ is again a sheaf.*
+
+Equivalently: the Lawvere Laplacian, defined as an endofunctor on $\mathsf Q$-enriched presheaves, restricts to an endofunctor on the sheaf subcategory.
+
+### Proof
+
+The argument has two structural pieces, each citing a precise statement from [@kelly1982].
+
+**(1) The Lawvere Laplacian is a $\mathsf Q$-functor on presheaves.** $L$ is built componentwise from three $\mathsf Q$-functorial pieces:
+
+- *Sheaf restrictions* $F(f) : F(\tau) \to F(\sigma)$ — $\mathsf Q$-functors by definition of a $\mathsf Q$-enriched presheaf.
+- *Right $\mathsf Q$-adjoints* $F(f)^* : F(\sigma) \to F(\tau)$ — exist pointwise per morphism in any complete weighted lattice (right adjoints to $\mathsf Q$-functors between complete $\mathsf Q$-categories exist by the $\mathsf Q$-enriched adjoint functor theorem; [@kelly1982] §3.2 establishes that right adjoints preserve all limits that exist, which gives the Q-functoriality of $F(f)^*$). They do not in general assemble into a covariant functor (adjoint composition reverses), but the Laplacian is local in $\sigma$ and uses morphism-by-morphism right adjoints, so this is fine.
+- *Weighted meets in stalks* $F(\sigma)$ — $\mathsf Q$-functorial in their arguments by [@kelly1982] Theorem 3.73, which characterizes complete $\mathsf Q$-categories as those admitting cotensor products and small conical limits, and characterizes $\mathsf Q$-functors between them as continuous iff they preserve cotensors and small conical limits. The weighted-meet operation on a complete $\mathsf Q$-category is precisely such a continuous $\mathsf Q$-functor.
+
+Composition of $\mathsf Q$-functors is a $\mathsf Q$-functor ([@kelly1982] §1.2). So $L$ is a $\mathsf Q$-functor from the $\mathsf Q$-category of $\mathsf Q$-enriched presheaves to itself.
+
+(*Remark.* This is *not* claiming a sheaf-cosheaf derived equivalence; that's the separate, much more open question of the [Verdier duality theorem](verdier-duality-bitopological-site.md). Per [@lopez2024], the Lawvere Laplacian uses paired sheaf-and-cosheaf data with fuzzy-adjoint relations, but the Laplacian itself is a sheaf-side endofunctor — its definition via right-adjoint composition does not require a coherent cosheaf, only pointwise right-adjoints.)
+
+**(2) $L$ preserves the sheaf-condition equalizer.** The sheaf condition at a cover $\{U_i \to U\}$ is precisely a weighted-limit condition: $F(U)$ is the equalizer (a particular weighted limit, in the $\mathsf Q$-enriched sense) of the cover diagram
+
+$$\prod_i F(U_i) \;\rightrightarrows\; \prod_{i, j} F(U_i \times_U U_j).$$
+
+Two facts together establish that $L(F)$ inherits this equalizer:
+
+- **Locality of $L$.** $L$ at any object $\sigma$ depends only on $F$'s data at $\sigma$ and at outgoing-morphism targets from $\sigma$. In particular, $L$ at $U$ uses $F(U)$ and $F$'s values at objects reachable from $U$. The cover $\{U_i \to U\}$'s objects $U_i$ and their fiber products $U_i \times_U U_j$ are all reachable from $U$ via the cover-morphisms (and their compositions); $L$ at $U$ therefore commutes with the cover-equalizer construction at the level of data.
+- **Continuity of $L$ on each component.** By Theorem 3.73 of [@kelly1982] applied to $L$ as a $\mathsf Q$-functor on $C^0 F$, $L$ preserves cotensors and small conical limits when $L$ is continuous; the Laplacian's per-object construction (a finite weighted meet over outgoing morphisms in any locally finite cover, or a cotensor-of-conical-limits in general) is manifestly continuous because each ingredient (sheaf restriction, right adjoint, weighted meet) is.
+
+The sheaf condition's equalizer is a small conical limit (the equalizer of two parallel arrows is a finite conical limit). Combining locality with continuity: $L(F)(U)$ is the equalizer over the $L$-applied cover diagram, which is the sheaf condition for $L(F)$ at $U$.
+
+Hence $L(F)$ satisfies the sheaf condition at every covering family. $\square$
+
+### Remarks on the proof
+
+- The argument is **independent of cover cardinality**. It works for finite covers, countable covers, and transfinite covers alike, as long as the cover diagram is a $\mathsf Q$-weighted limit (which it is by construction). So the Layer-1 lemma is general — it does not require Layer 2 / 3 of the cellular extension plan.
+- What does require Layers 2 / 3: extending the *Tarski–Lawvere Fixed Point Theorem* and its consequences (cohomology-agreeing-with-global-sections in degree 0, etc.) to the transfinite-cover setting. The fixed-point machinery uses transfinite induction whose convergence requires extra cofinality arguments at uncountable scale. **That is a separate theorem with its own scope** — see [Tarski–Lawvere fixed point on Grothendieck sites](tarski-lawvere-fixed-point-grothendieck-sites.md), `status: sketch`.
+- The argument relies on $\mathbf{Q\text{-}Cat}_{\mathrm{cwl}}$ being closed under weighted limits. This is established in [@kelly1982] Theorem 3.73 + Proposition 3.75 (every reflective full subcategory of $[A, V]$ is complete and cocomplete, applied to $\mathbf{Q\text{-}Cat}_{\mathrm{cwl}}$ as a reflective subcategory of $\mathsf Q$-presheaves).
+- The quantale-enriched specialization of Kelly's general $\mathsf V$-enriched results is treated in detail in [@stubbe2005], which the present argument's "complete weighted lattice" and "$\mathsf Q$-functor preserves weighted limits" terminology follows.
+
+## Specialization to the bitopological settling site
+
+For the [bitopological settling site](../objects/bitopological-settling-site.md) $(\mathbf T^*, J)$ and the [d-frame-valued settling sheaf](../objects/d-frame-valued-sheaf.md) $\mathbb F_v$, the framework specializes as follows:
+
+- $\mathsf Q$ = the underlying frame quantale of d-frames (multiplication = meet).
+- $\mathbf T = \mathbf T^*$, the bitopological settling site.
+- $J$ = the pairwise-Stone-cover topology.
+- $F = \mathbb F_v$, the d-frame-valued sheaf.
+
+In every regime, the Layer-1 lemma applies and the Lawvere Laplacian sends $\mathbb F_v$ to a d-frame-valued sheaf $L(\mathbb F_v)$ on $(\mathbf T^*, J)$. What changes by regime is the cover structure for the Tarski–Lawvere fixed-point iteration — the Layer 2/3 question, not the sheaf-compatibility question handled here.
+
+- *Strict regime.* Finite covers; the [strict-regime d-frame cohomology theorem](strict-regime-d-frame-cohomology.md) computes $H^0$ via the Lawvere Laplacian directly.
+- *Scott-continuous regime.* Countable but locally-finite covers; the [Scott-continuous-regime d-frame cohomology theorem](scott-continuous-regime-d-frame-cohomology.md) handles the assembly via filtered-colimit machinery.
+- *Transfinite-bounded and aperiodic regimes.* Transfinite covers; the cohomology theorems use the direct-limit definition (each truncation handled by countable-cofinality Tarski–Lawvere; the colimit is the standard categorical operation), bypassing the open question of $\omega_1$-cofinal Tarski–Lawvere convergence. See [aperiodic-regime d-frame cohomology](aperiodic-regime-d-frame-cohomology.md) for the construction.

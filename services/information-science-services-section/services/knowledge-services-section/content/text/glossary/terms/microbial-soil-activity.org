@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       84ff2532-eb6e-47b2-8d9e-22dc0e800c05
+:END:
+#+title: microbial soil activity
+#+date: [2025-09-23 Tue 20:31]
+

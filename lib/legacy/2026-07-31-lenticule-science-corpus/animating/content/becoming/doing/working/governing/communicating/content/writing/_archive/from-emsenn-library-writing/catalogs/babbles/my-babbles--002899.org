@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       b8e0a03d-83d0-4ccc-8a4f-caff00cea5ff
+:public:   true
+:END:
+#+title: my babbles
+#+date: [2025-08-22 Fri 22:47]
+*/My babbles/* are [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babbles]] written by me, [[id:40cbaad9-af3c-4573-b356-ae116687e483][emsenn]].

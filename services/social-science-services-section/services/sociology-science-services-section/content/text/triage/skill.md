@@ -1,0 +1,265 @@
+---
+name: analyze-legal-recuperation
+id: american-law-skill-analyze-legal-recuperation
+description: "Analyze a legal proceeding for recuperation dynamics. Use when investigating how a trial or prosecution absorbs subcultural forms."
+type: learn
+authors:
+  - emsenn
+date-created: 2026-03-06
+keywords:
+  - Legalism
+  - AmericanLaw
+runtime:
+  invocation: human
+  tool: human
+region:
+  reads: ["content/sociology/disciplines/legalism/"]
+  writes: []
+dependencies:
+  - /sociology/disciplines/legalism/schools/american-law/curricula/legal-recuperation.md
+  - /sociology/disciplines/legalism/schools/american-law/curricula/structural-comparison.md
+part-of: sociology/disciplines/legalism/schools/american-law
+---
+
+# Analyze Legal Recuperation
+
+This skill applies the five-step case study method from the [graduate curriculum](../../curricula/cultural-governance-case-study.md) to a specific legal proceeding.
+
+## Steps
+
+1. **Identify the evidentiary move.** Find the moment(s) where a cultural practice was entered as [character evidence](../../terms/character-evidence.md). Note:
+   - What practice was entered
+   - What it was entered as evidence of
+   - Who entered it (which legal person)
+   - What community perspective is absent
+
+2. **Trace the formatting.** Apply the four-step model:
+   - **Selection**: Why this practice and not others?
+   - **Decontextualization**: What social relations were stripped?
+   - **Reattachment**: What legal proposition does it now support?
+   - **Standardization**: Can any institution reproduce it without community contact?
+
+3. **Analyze the propagation pathway.** Assess which channels will carry the evidentiary move:
+   - Direct citation in future proceedings (likely/unlikely?)
+   - Professional diffusion through attorney networks (how wide is the sector?)
+   - Institutional risk management adoption (how risk-averse is the sector?)
+   - Estimated timescale for full propagation
+
+4. **Map the structural effects.** Predict:
+   - **Credentialing**: Will institutions adopt the practice as a compliance artifact?
+   - **Homogenization**: Will the range of acceptable forms narrow?
+   - **Displacement**: Will the subcultural practice's meaning shift?
+
+5. **Assess compounding.** Check the three conditions:
+   - Is there a mature market pathway for this practice? (commercial infrastructure)
+   - Is the legal pathway established? (precedent, professional awareness)
+   - Is institutional capacity present? (organizations that can adopt)
+   - If all three: compounding is active. Document the interaction.
+
+## Comparison checklist
+
+After completing the analysis, compare your case to the prairieland case:
+
+| Dimension | Prairieland | Your case |
+|---|---|---|
+| Practice formatted | Zine production | ? |
+| Evidentiary function | Institutional good faith | ? |
+| Community absent | Zine scene | ? |
+| Market pathway mature | Yes | ? |
+| Propagation speed | Months | ? |
+| Compounding active | Yes | ? |
+
+## Output
+
+Produce a written analysis following the five-step structure. Include the comparison checklist. Note the analysis's limitations — what community responses or contextual factors the structural framework can't capture.
+
+
+---
+
+<!-- source: content/legalism/domains/american-law/domains/identify-evidentiary-formatting/SKILL.md -->
+
+## Imported source: content/legalism/domains/american-law/domains/identify-evidentiary-formatting/SKILL.md
+
+---
+name: identify-evidentiary-formatting
+id: american-law-skill-identify-evidentiary-formatting
+description: "Identify when a cultural practice is being formatted into a legal credential. Use when observing institutional adoption of community practices."
+type: learn
+authors:
+  - emsenn
+date-created: 2026-03-06
+tags:
+  - Legalism
+  - AmericanLaw
+runtime:
+  invocation: human
+  tool: human
+region:
+  reads: ["content/sociology/disciplines/legalism/"]
+  writes: []
+dependencies:
+  - /sociology/disciplines/legalism/schools/american-law/curricula/evidentiary-logic.md
+  - /sociology/disciplines/legalism/schools/american-law/curricula/evidence-as-translation.md
+part-of: sociology/disciplines/legalism/schools/american-law
+---
+
+# Identify Evidentiary Formatting
+
+Evidentiary formatting is often invisible at the point of its effects. Institutions adopt community practices and call it engagement. This skill helps you recognize when the adoption is driven by credentialing logic rather than genuine community relation.
+
+## Indicators
+
+Look for these signs that a practice has been or is being formatted:
+
+1. **Institutional adoption without community contact.** The institution produces the form (zine, garden, workshop) without participating in the community that originates it. The practice is adopted as an output, not as a relation.
+
+2. **Documentation priority.** The institution emphasizes documenting the practice — photographing it, counting participants, producing reports about it — more than the practice itself. Documentation signals that the practice's value is evidentiary (demonstrating something to external audiences) rather than functional (serving the community).
+
+3. **Standardization.** The practice becomes uniform across institutions in the sector. If every nonprofit in a region starts producing similar community publications at the same time, the adoption is likely driven by a shared template (legal, compliance, or professional) rather than by independent community need.
+
+4. **Absence of the originating community.** The institution claims proximity to a community through the practice but doesn't include community members in decision-making, design, or evaluation. The practice is performed *about* the community, not *with* it.
+
+5. **Defensive framing.** When asked about the practice, institutional representatives describe it in terms of what it demonstrates ("shows our commitment," "reflects our values") rather than what it does ("serves this specific community need," "responds to this specific condition"). Demonstrative language signals credential function.
+
+## What to do when you identify formatting
+
+- **Name it.** Use the vocabulary: [evidentiary credentialing](../../../terms/evidentiary-credentialing.md), [legal formatting](../../../terms/legal-formatting.md), [compliance artifact](../../../terms/compliance-artifact.md). Naming the dynamic makes it analyzable and communicable.
+- **Trace the source.** Try to identify the legal precedent, compliance guidance, or professional template that initiated the institutional adoption. Was there a specific proceeding? A sector-wide compliance update? A professional conference where the practice was recommended?
+- **Assess the damage.** How has the formatting affected the originating community's practice? Has meaning shifted? Has institutional adoption displaced community use? Or is the community practice continuing alongside institutional imitation without significant interference?
+- **Share the analysis.** Communities whose practices are being formatted often experience the effects without having vocabulary for them. Sharing the analysis — in accessible language, not academic jargon — can help communities name what they are experiencing and consider their options.
+
+
+---
+
+<!-- source: content/legalism/domains/american-law/domains/map-credentialing-incentives/SKILL.md -->
+
+## Imported source: content/legalism/domains/american-law/domains/map-credentialing-incentives/SKILL.md
+
+---
+name: map-credentialing-incentives
+id: american-law-skill-map-credentialing-incentives
+description: "Map the institutional incentive structure a legal precedent creates. Use when assessing how a legal development will reshape institutional behavior in a sector."
+type: learn
+authors:
+  - emsenn
+date-created: 2026-03-06
+tags:
+  - Legalism
+  - AmericanLaw
+runtime:
+  invocation: human
+  tool: human
+region:
+  reads: ["content/sociology/disciplines/legalism/"]
+  writes: []
+dependencies:
+  - /sociology/disciplines/legalism/schools/american-law/curricula/precedent-and-propagation.md
+  - /sociology/disciplines/legalism/schools/american-law/curricula/rules-change-behavior.md
+part-of: sociology/disciplines/legalism/schools/american-law
+---
+
+# Map Credentialing Incentives
+
+When a legal precedent establishes a practice as evidence of institutional character, it creates an incentive structure that reshapes institutional behavior across the relevant sector. This skill maps that structure.
+
+## Steps
+
+1. **Identify the precedent.** What legal proceeding established the practice as character evidence? What was the specific evidentiary proposition? ("Zine production demonstrates community engagement.")
+
+2. **Define the sector.** Which institutions are affected? Define the sector by:
+   - **Type**: Educational institutions, nonprofits, healthcare organizations, etc.
+   - **Jurisdiction**: Geographic scope of the precedent's influence
+   - **Risk profile**: How litigation-exposed is the sector? Higher exposure = faster adoption
+
+3. **Map the incentive.** For each institution in the sector, the precedent creates:
+   - **Adoption incentive**: Producing the practice strengthens evidentiary position
+   - **Non-adoption risk**: Not producing the practice creates an institutional vulnerability
+   - **Cost of adoption**: Resources required (staff time, budget, expertise)
+   - **Cost of non-adoption**: Reputational and legal exposure
+
+4. **Assess the adoption curve.** Predict the sequence:
+   - **Early adopters**: Institutions with the most legal exposure and the most resources. They adopt first because the cost of adoption is low relative to the risk of non-adoption.
+   - **Middle majority**: Institutions that adopt after seeing early adopters. Professional networks and compliance guidance drive this wave.
+   - **Ambient expectation**: The point at which adoption is so widespread that non-adoption itself becomes a signal. "Why don't you produce community publications? Everyone in the sector does."
+
+5. **Identify the displacement effects.** As institutional adoption saturates the sector:
+   - How does the practice's meaning shift for communities that originated it?
+   - Does institutional adoption interfere with community use?
+   - Are community practitioners displaced, drowned out, or unaffected?
+
+6. **Evaluate intervention points.** Where, if anywhere, can the credentialing incentive be disrupted?
+   - **Before propagation**: Contesting the evidentiary move in the original proceeding (requires legal standing and awareness)
+   - **During propagation**: Providing counter-narratives through professional networks (requires access to those networks)
+   - **After saturation**: Distinguishing community practice from institutional credential through mode of production, distribution, or naming (requires community coordination)
+
+## Output
+
+A credentialing incentive map should include:
+- The precedent and its evidentiary proposition
+- The affected sector and its risk profile
+- The adoption curve (early adopters → middle majority → ambient expectation)
+- The displacement effects on originating communities
+- Available intervention points (with honest assessment of feasibility)
+
+
+---
+
+<!-- source: content/legalism/domains/american-law/domains/read-a-case-sociologically/SKILL.md -->
+
+## Imported source: content/legalism/domains/american-law/domains/read-a-case-sociologically/SKILL.md
+
+---
+name: read-a-case-sociologically
+id: american-law-skill-read-a-case-sociologically
+description: "Read a legal proceeding as a social text. Use when analyzing the structural effects of a trial, prosecution, or civil suit on communities and cultural practices."
+type: learn
+authors:
+  - emsenn
+date-created: 2026-03-06
+tags:
+  - Legalism
+  - AmericanLaw
+runtime:
+  invocation: human
+  tool: human
+region:
+  reads: ["content/sociology/disciplines/legalism/"]
+  writes: []
+dependencies:
+  - /sociology/disciplines/legalism/schools/american-law/curricula/overview.md
+  - /sociology/disciplines/legalism/schools/american-law/curricula/evidentiary-logic.md
+part-of: sociology/disciplines/legalism/schools/american-law
+---
+
+# Read a Case Sociologically
+
+Reading a legal case as a sociological text means attending to what the proceeding *produces* rather than what it *decides*. The verdict is the least interesting part. The structural effects — what was formatted, what propagated, what was made invisible — are the analysis.
+
+## Steps
+
+1. **Identify the parties and their legal standing.** Who appears in the proceeding? Who has [legal personhood](../../terms/legal-personhood.md)? Who is affected by the case but absent from it? The gap between participants and affected parties is analytically central.
+
+2. **Catalog the evidence presented.** What cultural practices, institutional activities, or community relations were entered as evidence? For each piece of evidence, ask: what was this *in its social context* before it entered the courtroom? What proposition does it now support?
+
+3. **Identify the formatting.** For each cultural practice entered as evidence, trace the four-step formatting process:
+   - What was **selected** (and what was not)?
+   - How was it **decontextualized** (what social relations were stripped)?
+   - What legal proposition was it **reattached** to?
+   - Is it **standardizable** (can any institution reproduce it)?
+
+4. **Assess the propagation potential.** Will the evidentiary moves in this case propagate? Through which channels (direct citation, professional knowledge, institutional risk management)? How wide is the relevant institutional sector?
+
+5. **Map the visibility gap.** Which communities are affected by the case but have no legal standing in the proceeding? What perspective is absent from the legal record? How does the absence shape the court-produced facts?
+
+6. **Evaluate the structural effects.** Based on the formatting and propagation analysis, what credentialing, homogenization, and displacement effects are likely? What institutional behaviors will the precedent incentivize?
+
+7. **Note what the analysis can't see.** What community responses, adaptations, or resistances are the structural analysis unable to capture? What would ethnographic or community-centered inquiry add?
+
+## Output
+
+A case reading should produce:
+- A description of the evidentiary moves and their formatting effects
+- An assessment of propagation pathways and timescale
+- A map of the visibility gap (who is present, who is absent, what is lost)
+- A prediction of structural effects (credentialing, homogenization, displacement)
+- An honest statement of the analysis's limits

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       e501fe9f-2009-47aa-8d52-c24551fbd66c
+:END:
+#+title: reader
+#+date: [2025-08-22 Fri 23:01]
+

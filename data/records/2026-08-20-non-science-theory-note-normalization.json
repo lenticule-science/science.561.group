@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "science-corpus-normalization/v1",
+  "observedAt": "2026-08-20",
+  "selection": "remaining active non-Science Markdown notes with explicit theory markers in the filename after catchall and public-note normalization",
+  "sourceCount": 23,
+  "dispositions": {
+    "redundantSourceRemovedAfterBodyComparison": 10,
+    "uniqueNoteMoved": 13,
+    "remaining": 0
+  },
+  "destinations": {
+    "categorical-services-section": 1,
+    "computer-science-services-section": 9,
+    "epistemology-services-section": 1,
+    "work-services-section": 2
+  },
+  "integrity": {
+    "identicalBodiesAmongRedundantSources": 10,
+    "uniqueBodiesDiscarded": 0
+  }
+}

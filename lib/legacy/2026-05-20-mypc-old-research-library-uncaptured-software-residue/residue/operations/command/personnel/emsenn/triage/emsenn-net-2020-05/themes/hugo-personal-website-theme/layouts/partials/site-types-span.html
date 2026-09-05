@@ -1,0 +1,22 @@
+<span class="site-types">
+  {{ $scratch := newScratch }}
+  {{- range $.Site.Params.mainSections -}}
+    {{ if (eq (len (where $.Site.RegularPages "Type" .)) 0) }}{{ else }}
+    {{- $scratch.Add "mainSectionCounts" (slice (partial "section-count.html" (dict "Section" . "Site" $.Site))) -}}
+    {{ end }}
+  {{- end -}}
+  {{- $mS := ($scratch.Get "mainSectionCounts") -}}
+  {{- if (eq (len $mS) 0) }}
+  {{- else }}
+  It also contains
+  {{- if (eq (len $mS) 1) }}
+  {{ (index $mS 0) }}
+  {{- else if (eq (len $mS) 2) }}
+  {{ delimit $mS " and " }}
+  {{- else }}
+  {{ delimit $mS ", " ", and " }}
+  {{- end -}}
+  .
+  {{- end -}}
+
+</span>

@@ -1,0 +1,89 @@
+---
+name: Polygonaceae
+description: "The buckwheat family — a cosmopolitan angiosperm family of ~1,200 species in ~48 genera, defined by the ochrea (a tubular stipular sheath at each node), and including buckwheat, rhubarb, sorrel, and the invasive knotweeds"
+date-created: 2026-04-02
+aliases:
+- Polygonaceae
+- buckwheat family
+- knotweed family
+- smartweed family
+tags:
+- botany
+- plant-taxonomy
+- angiosperm
+- polygonaceae
+instance-of: plant-family
+component-of: caryophyllales
+includes:
+- reynoutria
+- polygonum
+- fagopyrum
+- rheum
+- rumex
+- persicaria
+references:
+  sanchez2011:
+    authors:
+    - Arnoldo Sanchez
+    - Kenneth A. Kron
+    title: Phylogenetics of Polygonaceae with an emphasis on the evolution of Eriogonoideae
+    publication: Systematic Botany
+    year: 2011
+    volume: 36
+    pages: 554-564
+  apg2016:
+    authors:
+    - Angiosperm Phylogeny Group
+    title: "An update of the Angiosperm Phylogeny Group classification for the orders and families of flowering plants: APG IV"
+    publication: Botanical Journal of the Linnean Society
+    year: 2016
+    volume: 181
+    pages: 1-20
+---
+
+Polygonaceae (the buckwheat family) is a family of flowering plants in the order Caryophyllales, comprising approximately 1,200 species in 48 genera distributed across all continents except Antarctica. The family includes plants of major economic importance (buckwheat, rhubarb, sorrel), ecological significance (the invasive knotweeds), and pharmaceutical value ([Japanese knotweed](./japanese-knotweed.md) as a source of [resveratrol](../../../../medicine/domains/pharmacology/terms/resveratrol.md)).
+
+## The ochrea: defining character
+
+The single most reliable diagnostic feature of Polygonaceae is the **ochrea** (plural: ochreae) — a tubular or funnel-shaped sheath formed from fused stipules that encircles the stem above each node. The ochrea is present in nearly all members of the family (reduced or absent in a few genera of subfamily Eriogonoideae) and is found in no other angiosperm family. When identifying an unknown plant, the presence of an ochrea at the stem nodes is strong evidence for Polygonaceae.
+
+The ochrea varies in texture, persistence, and form across genera: papery and translucent in *Persicaria*, brown and fibrous in *Rumex*, quickly disintegrating in some *Polygonum* species. In [*Reynoutria*](./reynoutria.md) (knotweeds), the ochrea is present on young growth but caducous (falling early), leaving a scar or ridge at the node.
+
+## Classification and phylogeny
+
+The family is divided into two subfamilies based on molecular phylogenetics [@sanchez2011]:
+
+**Eriogonoideae** (~325 species): Primarily North American, centered in western North America. Ochreae absent or rudimentary. Includes *Eriogonum* (wild buckwheat, ~250 species — the largest genus in the family) and *Chorizanthe*.
+
+**Polygonoideae** (~875 species): Cosmopolitan. Ochreae well-developed. Includes all the economically and ecologically important genera: *Polygonum* s.s. (knotweeds), *Persicaria* (smartweeds), *Reynoutria* (Japanese, giant, and Bohemian knotweed), *Fagopyrum* (buckwheat), *Rheum* (rhubarb), *Rumex* (docks and sorrels), *Bistorta* (bistorts), and *Fallopia* (black bindweed and allies).
+
+The internal classification of Polygonoideae has been extensively revised by molecular phylogenetics. The old, broadly defined genus *Polygonum* (which once contained over 300 species) has been split into multiple segregate genera: *Persicaria*, *Bistorta*, *Aconogonon*, *Reynoutria*, and *Koenigia*, among others. This splitting reflects genuine phylogenetic structure — the old *Polygonum* was polyphyletic — but has created nomenclatural instability, with species appearing under different genus names depending on which classification a publication follows.
+
+## Morphology
+
+Beyond the ochrea, Polygonaceae share several morphological features:
+
+**Flowers** are typically small, often in dense racemes, spikes, or panicles. Perianth segments (tepals) number 3–6, often petaloid, without differentiation into distinct sepals and petals. Flowers are usually bisexual, sometimes unisexual.
+
+**Fruit** is a one-seeded achene or nut, often three-angled (trigonous) or lens-shaped (lenticular), frequently enclosed by persistent perianth segments that may develop wings aiding wind dispersal.
+
+**Leaves** are alternate, simple, entire (smooth-margined), with prominent veins. Leaf shape varies from linear to broadly ovate.
+
+**Stems** often have swollen nodes (the name *Polygonum* derives from Greek *poly* "many" + *gonu* "knee/joint," referring to the jointed stems).
+
+## Economic and ecological significance
+
+**Food crops**: Buckwheat (*Fagopyrum esculentum*) is a globally important pseudocereal — not a grass, but its seeds are used like grain. Rhubarb (*Rheum rhabarbarum*) is cultivated for its edible petioles. Sorrel (*Rumex acetosa*) and French sorrel (*R. scutatus*) are culinary herbs.
+
+**Medicinal plants**: Japanese knotweed (*Reynoutria japonica*) is a major source of resveratrol and the TCM herb [Hu Zhang](../../../../medicine/domains/traditional-chinese-medicine/terms/hu-zhang.md). Rhubarb root (*Rheum palmatum*, Da Huang) is one of the most important purgative herbs in Chinese medicine. Both share [emodin](../../../../medicine/domains/pharmacology/terms/emodin.md) and related anthraquinones as active constituents — a phytochemical signature of the family.
+
+**Invasive species**: The [*Reynoutria*](./reynoutria.md) knotweeds (Japanese, giant, and Bohemian) are among the world's most destructive [invasive species](../../ecology/terms/invasive-species.md). Several *Persicaria* species (particularly *P. perfoliata*, mile-a-minute vine) are also significant invaders.
+
+**Weeds**: Docks (*Rumex* spp.) and knotgrasses (*Polygonum aviculare* complex) are common agricultural and garden weeds worldwide.
+
+## See also
+
+- [Reynoutria](./reynoutria.md) — the knotweed genus
+- [Japanese Knotweed](./japanese-knotweed.md) — the most ecologically consequential member
+- [Root](./root.md) — root biology relevant to the family's rhizomatous members
+- [Rhizome](./rhizome.md) — the underground organ that makes knotweeds invasive

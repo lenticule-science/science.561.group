@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       5b89c4ee-3aa9-4cfb-ae0e-4942ae72bf90
+:END:
+#+title: habit
+#+date: [2025-09-20 Sat 23:54]
+

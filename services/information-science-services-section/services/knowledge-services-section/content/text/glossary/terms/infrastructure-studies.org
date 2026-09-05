@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       6d4c033f-a9be-4c52-8a56-fcea94323aa2
+:END:
+#+title: infrastructure studies
+#+date: [2025-09-29 Mon 00:08]
+

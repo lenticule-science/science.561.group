@@ -1,0 +1,9 @@
+#+title: inn
+#+begin_head
+#+ghe_schema: record-0.1.2
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-23 Wed 17:33]
+#+end_head
+#+name: definition
+An */inn/* is a place that serves [[file:food.org][food]] and [[file:drinks.org][drinks]], as well as provides [[file:lodgins.org][lodgings]].

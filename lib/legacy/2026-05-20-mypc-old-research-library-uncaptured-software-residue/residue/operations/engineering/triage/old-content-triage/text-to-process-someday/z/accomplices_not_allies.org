@@ -1,0 +1,31 @@
+#+title: Accomplices Not Allies
+#+begin_head
+#+ghe_schema: term-0.1.3
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2021-01-07 Thu 09:24]
+#+roam_tags: term
+#+roam_key: https://www.indigenousaction.org/accomplices-not-allies-abolishing-the-ally-industrial-complex/
+#+end_head
+
+#+name: definition
+*/[[file:accomplices_not_allies.org]["Accomplices Not Allies: Abolishing the Ally-Industrial Complex"]]/*, [[https://www.indigenousaction.org/accomplices-not-allies-abolishing-the-ally-industrial-complex/][https://www.indigenousaction.org/accomplices-not-allies-abolishing-the-ally-industrial-complex/]], is an essay by [[file:indigenous_action_media.org][Indigenous Action Media]] seeking to describe the [[file:relationships.org][relationship]] between [[file:indigenous.org][Indigenous]] [[file:person.org][people]] and [[file:whiteness.org][White]] "allies."
+
+#+toc: headlines 2
+
+* Accomplices Not Allies
+
+** History
+
+   - /Accomplices Not Allies/ has been recommended frequently to White allies during the [[file:george_floyd_uprising.org][George Floyd Uprising]].
+* Supplements
+** Record history
+   :PROPERTIES:
+   :CUSTOM_ID: record-history
+   :END:
+   :LOGBOOK:
+   - Note taken on [2021-01-07 Thu 09:24] \\
+      Created from [[file:~/org/s/p/d/2021-01-07.org::*My perspective on yesterday's protests in the U.S.][My perspective on yesterday's protests in the U.S.]]
+
+      
+   :END:

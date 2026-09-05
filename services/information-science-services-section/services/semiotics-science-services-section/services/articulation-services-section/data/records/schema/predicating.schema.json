@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "relating/articulating/predicating",
+  "title": "Predicating",
+  "description": "Predicating consumes the potential aperiodic articulation cell and materializes the predication site Φ = E × Π × E around the token-schema and claim-schema the utterance carries (predicating/predication.mts). Cohering a site (`cohere`) yields the saturated cell set and its residue with closed specialization — the residue witness carried, never elided. Transfinite structural regime, quantum dynamical regime.",
+  "type": "object",
+  "required": ["kind", "saturated", "residue", "structuralRegime", "dynamicalRegime"],
+  "properties": {
+    "kind": { "const": "predication.coherence" },
+    "saturated": {
+      "type": "object",
+      "required": ["kind", "cells"],
+      "properties": {
+        "kind": { "const": "predication.cellSet" },
+        "cells": { "type": "array", "items": { "$ref": "./predication-cell.schema.json" } }
+      },
+      "title": "CellSet",
+      "description": "The saturated cells (predicating/predication.mts `CellSet`)."
+    },
+    "residue": {
+      "type": "object",
+      "required": ["kind", "cells"],
+      "properties": {
+        "kind": { "const": "predication.site" },
+        "cells": {
+          "type": "object",
+          "required": ["kind", "cells"],
+          "properties": {
+            "kind": { "const": "predication.cellSet" },
+            "cells": { "type": "array", "items": { "$ref": "./predication-cell.schema.json" } }
+          }
+        }
+      },
+      "title": "PredicationSite",
+      "description": "The residue: the site with closed specialization that positing consumes (predicating/predication.mts `CoherenceCarrier.residue`)."
+    },
+    "structuralRegime": { "const": "transfinite" },
+    "dynamicalRegime": { "const": "quantum" }
+  },
+  "additionalProperties": false
+}

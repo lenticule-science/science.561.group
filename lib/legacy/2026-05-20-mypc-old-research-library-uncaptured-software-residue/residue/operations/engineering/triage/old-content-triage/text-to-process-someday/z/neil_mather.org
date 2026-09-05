@@ -1,0 +1,10 @@
+#+title: Neil Mather
+#+begin_head
+#+ghe_schema: person-0.1.0
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-22 Tue 10:33]
+#+roam_tags: term
+#+roam_key: https://doubleloop.net
+#+end_head
+*/Neil Mather/* is a [[file:human.org][human]] person who I'd describe as a [[file:hacker.org][hacker]], but I don't know if they'd describe themself that way.

@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       471d8a41-8979-4980-b5e7-02df020dafa9
+:public:   true
+:instantiates: [[id:556a02e4-457c-4225-a00b-397f111ad908][ontology]]
+:field:    [[id:f28ac924-d5d5-4c07-941c-75a6f5fc3161][Taoism]]
+:END:
+#+title: Taoist ontology
+#+date: [2025-08-24 Sun 08:44]
+#+index: Taoism!Taoist ontology

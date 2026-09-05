@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "relating/articulating/articulating",
+  "title": "Articulating",
+  "description": "Opens the aperiodic articulation category at an utterance's potential cell and recurses over further utterances (articulating/utterance.mts `Articulating` = `ArticulatingUtter | ArticulatingPair`). Aperiodic structural regime, kinetic dynamical regime.",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": ["kind", "utterance", "structuralRegime", "dynamicalRegime"],
+      "properties": {
+        "kind": { "const": "articulating.utter" },
+        "utterance": { "$ref": "./utterance.schema.json" },
+        "structuralRegime": { "const": "aperiodic" },
+        "dynamicalRegime": { "const": "kinetic" }
+      },
+      "additionalProperties": false,
+      "title": "ArticulatingUtter"
+    },
+    {
+      "type": "object",
+      "required": ["kind", "utterance", "articulating", "structuralRegime", "dynamicalRegime"],
+      "properties": {
+        "kind": { "const": "articulating.pair" },
+        "utterance": { "$ref": "./utterance.schema.json" },
+        "articulating": { "$ref": "#" },
+        "structuralRegime": { "const": "aperiodic" },
+        "dynamicalRegime": { "const": "kinetic" }
+      },
+      "additionalProperties": false,
+      "title": "ArticulatingPair"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+#+title: National Park Service
+#+begin_head
+#+ghe_schema: term-0.1.3
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2021-01-07 Thu 10:43]
+#+roam_tags: term
+#+end_head
+
+#+name: definition
+The */[[file:national_park_service.org][National Park Service]]/* is a [[file:u_s_federal_government.org][federal]] agency under the [[file:department_of_interior.org][Department of the Interior]] that manages the [[file:u_s_national_park.org][U.S. National Parks]], as well as other monuments and historical properties.
+#+toc: headlines 2
+* Introduction
+* National Park Service
+* Supplements
+** Record history
+   :PROPERTIES:
+   :CUSTOM_ID: record-history
+   :END:
+   :LOGBOOK:
+   - Note taken on [2021-01-07 Thu 10:43] \\
+      Created from [[file:~/org/s/p/u_s_national_park.org::definition][definition]]
+
+      
+   :END:

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       b4ae66ad-8700-4af3-b995-17cfd8b74eb9
+:END:
+#+title: condition
+#+date: 2025-07-19
+#+author: emsenn

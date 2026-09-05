@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       551602f0-99c9-4196-9880-c8395d1f1453
+:END:
+#+title: relational meaning
+#+date: [2025-09-04 Thu 09:39]
+

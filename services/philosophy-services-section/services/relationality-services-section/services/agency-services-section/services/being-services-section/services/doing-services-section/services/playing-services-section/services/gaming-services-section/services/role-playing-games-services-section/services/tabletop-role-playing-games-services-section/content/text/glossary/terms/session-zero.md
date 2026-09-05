@@ -1,0 +1,16 @@
+---
+name: "session zero"
+aliases:
+  - "session zero"
+date-created: 2026-01-01
+date-updated: 2026-03-09
+authors:
+  - claude
+tags: []
+---
+
+A session zero is the initial meeting of a [tabletop role-playing game](../../../../README.md) group, held before the first [session](../../../../../../content/text/glossary/terms/session.md) of actual play. Its purpose is to align expectations, establish boundaries, and create [characters](../../../../../../content/text/glossary/terms/character.md) that work together.
+
+A typical session zero covers: the genre and tone of the [campaign](../../../../../../content/text/glossary/terms/campaign.md), content boundaries using [safety tools](../../../../../../content/text/glossary/terms/safety-tool.md), scheduling logistics, platform choices for remote groups such as a [virtual tabletop](./virtual-tabletop.md), and the kind of stories the group wants to tell. Players then create characters with this shared context, which reduces the chance of a character concept that clashes with the group's agreed direction.
+
+Session zero is also where the [game master](../../../../../../content/text/glossary/terms/game-master.md) communicates house rules, system modifications, and expectations about player engagement, including attendance, preparation, and spotlight sharing. The conversation is not a contract. It establishes a starting point that the group can revisit as the campaign develops and preferences shift.

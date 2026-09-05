@@ -1,0 +1,38 @@
+---
+
+description: "An input that directs an agent's behavior by specifying what to do, how to do it, or what constraints to observe — the primary interface between a principal and an agent in language-based systems."
+aliases: [prompts, system prompt, user prompt]
+made-of: [instruction, context, constraint]
+distinguished-from: [command, rule, skill]
+instances: [system-prompt, user-prompt, skill-prompt]
+governs: agent
+date-created: 2026-04-01
+---
+
+A prompt is an input that directs an [agent](./agent.md)'s behavior by specifying what to do, how to do it, or what constraints to observe.
+In a language-based system, the prompt is the primary interface between a principal and an agent — it is how the principal communicates intent.
+
+The word comes from theater.
+A prompter sits offstage and feeds lines to actors who have forgotten them.
+The prompter does not perform; the prompter tells the performer what to say next.
+The theatrical sense carries into computing: a shell prompt (`$`, `>`) tells the user the system is waiting for input.
+The command prompt is not itself a [command](./command.md) — it is the invitation to give one.
+
+In artificial intelligence, prompting became a central technique with the development of large language models.
+Rather than training a model for each specific task, researchers discovered that providing the right input text could steer a general model toward specific behavior.
+Jason Wei, Xuezhi Wang, Dale Schuurmans, Maarten Bosma, Brian Ichter, Fei Xia, Ed Chi, Quoc Le, and Denny Zhou demonstrated in "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models" (2022) that including reasoning steps in a prompt caused models to produce reasoning steps in their output.
+The prompt shapes the response not by changing the model but by changing what the model conditions on.
+
+A prompt has three components.
+Instructions specify what the agent should do — the task, the format, the goal.
+Context provides information the agent needs — background, examples, relevant state.
+Constraints specify what the agent must not do — boundaries, safety requirements, scope limits.
+A well-constructed prompt balances all three: enough instruction to direct, enough context to inform, enough constraint to bound.
+
+In agentic systems, prompts compose.
+A system prompt sets baseline behavior for all interactions.
+[Rules](./rule.md) inject standing constraints.
+[Skills](./skill.md) inject domain-specific knowledge when activated.
+A user prompt specifies the immediate task.
+The agent's effective prompt is the composition of all these layers — system, rules, skills, and user input merged into a single context that governs the agent's next action.
+This layered composition is why agentic systems can be customized without modifying the agent itself: each layer adds to the prompt without replacing what came before.

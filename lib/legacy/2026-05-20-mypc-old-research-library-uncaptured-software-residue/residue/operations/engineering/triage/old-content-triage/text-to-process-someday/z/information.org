@@ -1,0 +1,10 @@
+#+title: information
+#+begin_head
+#+ghe_schema: term-0.1.0
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-21 Mon 14:53]
+#+roam_tags: ILS term
+#+end_head
+*/Information/* is a thing with two parts, [[file:data.org][data]] and [[file:meta_data.org][meta-data]].
+

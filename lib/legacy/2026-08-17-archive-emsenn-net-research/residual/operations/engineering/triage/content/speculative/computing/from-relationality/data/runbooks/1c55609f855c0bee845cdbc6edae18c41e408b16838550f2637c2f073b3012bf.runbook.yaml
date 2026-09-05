@@ -1,0 +1,19 @@
+id: 1c55609f855c0bee845cdbc6edae18c41e408b16838550f2637c2f073b3012bf
+inputs:
+- kind: trace
+  role: trace
+name: trace_decompose
+outputs:
+- kind: decompose_trace_evidence
+  role: decompose_trace_evidence
+steps:
+- inputs:
+  - kind: trace
+    role: trace
+  name: decompose_trace
+  operator: decompose_trace
+  outputs:
+  - kind: decompose_trace_evidence
+    role: decompose_trace_evidence
+  step_index: 0
+

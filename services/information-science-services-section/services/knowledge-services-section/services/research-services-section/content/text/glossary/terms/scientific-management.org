@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       8f7e9ad3-def6-4279-8c72-356c9b0b7f9a
+:END:
+#+title: scientific management
+#+date: [2025-09-27 Sat 09:52]
+

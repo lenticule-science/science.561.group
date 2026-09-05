@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2019-06-15 Sat 22:33 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Letters</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="emsenn" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Letters</h1>
+<div id="outline-container-orgeeb1d31" class="outline-2">
+<h2 id="orgeeb1d31">Letters</h2>
+</div>
+<div id="outline-container-org32a0349" class="outline-2">
+<h2 id="to-brandon-nolet">To Brandon Nolet</h2>
+<div class="outline-text-2" id="text-to-brandon-nolet">
+</div>
+<div id="outline-container-orgc0bf38e" class="outline-3">
+<h3 id="some-styleish-elisp-declarations">Some Stylish Elisp Declarations</h3>
+<div class="outline-text-3" id="text-some-styleish-elisp-declarations">
+<p>
+Hey Brandon,
+</p>
+
+<p>
+If you would, go ahead and open this message as raw text, and copy all
+but the headers into a new <i>Emacs buffer</i> set to <i>Org-mode.</i><sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>
+</p>
+
+<p>
+I know you like a bit of style to your stuff, so thought I'd pass on
+some of the things I've done to prettify my own <i>Emacs</i>, or that I know
+to do but choose not to.
+</p>
+
+<p>
+The reason I had you open this in an <i>Org-mode buffer</i> is so you can run
+the things directly from here, without having to copy paste. For most
+of these, just place your cursor anywhere in the source block and
+press <code>C-c C-c</code>. If you want to edit one of the source blocks, press
+<code>C-c '</code>. You can close that window with the same hotkey. In it, you can
+evaluate any bit of <i>Elisp</i> with <code>C-x C-e</code>. And to look up any given...
+anything, near about, do <code>C-h d</code>, and then type the thing you'd like to
+search for. If that doesn't work, do <code>C-h ?</code> and look for another hotkey
+to search - maybe you want <code>v</code> for "variable"?
+</p>
+
+<p>
+I'm just looking through my <code>~/.emacs/init.el</code> and let's look at what
+I've got:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-elisp">(<span style="color: #656565;">setq</span> inhibit-startup-messaget)
+(<span style="color: #656565;">setq</span> initial-scratch-message nil)
+(<span style="color: #656565;">setq</span> initial-major-mode 'org-mode)
+</pre>
+</div>
+
+<p>
+In order, these turn off the "this is <i>Emacs</i>, here are links to
+manuals," message you get when you start - the default buffer that
+isn't the <code>*scratch*</code> buffer. The second line turns off any content in
+the scratch buffer - you could set this to a string if you'd like.<sup><a id="fnr.2" class="footref" href="#fn.2">2</a></sup>
+This third line sets your scratch buffer - now the window that is open
+and empty and showing when you start <i>Emacs</i> - to <i>Org-mode</i>. Handy for
+getting started writing, without even needing to go to where it needs
+to end up, because you can use <i>refile</i> to move your entry to where it
+should go.<sup><a id="fnr.3" class="footref" href="#fn.3">3</a></sup>
+</p>
+
+<p>
+Next in my configuration I have
+</p>
+
+<div class="org-src-container">
+<pre class="src src-elisp">
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org9097ce6" class="outline-4">
+<h4 id="org9097ce6">Index</h4>
+<div class="outline-text-4" id="text-org9097ce6">
+<dl class="org-dl">
+<dt>Emacs</dt><dd></dd>
+
+<dt>Emacs buffer</dt><dd></dd>
+
+<dt>Org-mode refile</dt><dd></dd>
+
+<dt>Org-mode </dt><dd></dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara"><p class="footpara">
+You can make a new buffer of an arbitrary name with <code>M-x b foo</code>,
+with <code>foo</code> being the buffer name. <code>M-x b</code> is (or should) a hotkey for the
+<code>switch-to-buffer</code> command. You can change a buffer to use <i>Org-mode</i> as
+its <i>major mode</i> with the <code>org-mode</code> command.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2">2</a></sup> <div class="footpara"><p class="footpara">
+Like this:
+</p>
+<div class="org-src-container">
+<pre class="src src-elisp">(<span style="color: #656565;">setq</span> initial-scratch-message <span style="color: #595959;">"* Subtree\nI think newlines would work."</span>)
+</pre>
+</div></div></div>
+
+<div class="footdef"><sup><a id="fn.3" class="footnum" href="#fnr.3">3</a></sup> <div class="footpara"><p class="footpara">
+Note, this requires having set the <code>org-refile-targets</code> variable,
+see its documentation at <code>C-h v org-refile-targets</code>.
+</p></div></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+<p class="author">Author: emsenn</p>
+<p class="date">Created: 2019-06-15 Sat 22:33</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

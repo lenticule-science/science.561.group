@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       450e2fc1-42e2-4f2e-8384-cdd2f091183e
+:END:
+#+title: coherence
+#+date: [2025-08-26 Tue 11:41]
+

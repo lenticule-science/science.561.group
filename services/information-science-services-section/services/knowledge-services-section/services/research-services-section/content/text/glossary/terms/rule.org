@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       91be8b8f-817a-40d1-9323-9596c44f4483
+:END:
+#+title: rule
+#+date: [2025-09-17 Wed 10:15]
+

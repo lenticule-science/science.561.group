@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       b6d196ce-e5e8-439f-b488-ad20cfa8f2df
+:END:
+#+title: nonreactivity
+#+date: [2025-09-03 Wed 14:16]
+

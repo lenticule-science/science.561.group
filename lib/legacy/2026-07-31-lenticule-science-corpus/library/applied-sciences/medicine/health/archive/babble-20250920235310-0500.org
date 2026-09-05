@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID:       f11936b7-ec44-412b-b92e-a4f67ec49fe2
+:form:     [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]
+:relations: (([[id:bee496e1-139b-4a7f-8a24-d4c14e6084c6][instantiates]] . [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]) ([[id:a8bc7e3a-cdf7-4cfa-8e4d-a1a5f7eb2931][author]] . [[id:40cbaad9-af3c-4573-b356-ae116687e483][emsenn]]) ([[id:4695cc5c-70e9-442f-8a89-4b14fff5be3e][subjects]] . ([[id:1ef846b0-6f44-4209-bf42-17b6e2852f21][my wellness]])))
+:END:
+#+title: Babble, [2025-09-20 Sat 23:53], On wellness tracking
+#+date: [2025-09-20 Sat 23:53]
+#+author: emsenn
+
+One thing recently is that I've kind of been [[id:7e77b636-495e-4580-a21a-0bdc6fd8e90f][acclimating]] to a more "[[id:d223ed82-ee1b-4a69-806c-666089ff4e25][normal]]" life, though it certainly isn't /normal/, and *normal* itself is a bit of a funky [[id:fd6ecbed-9bdf-4570-b4b2-5ff7744c0a96][concept]].
+
+But in a specific context, what I mean is, I don't have a lot of [[id:5b89c4ee-3aa9-4cfb-ae0e-4942ae72bf90][habits]] or [[id:081d1a18-c09a-4ca5-8cad-e962bf25168e][routines]] that I see people in similar [[id:016d1a73-4c6d-43e5-9313-8ef0065fa7f8][material positions]] have, and one way that seems true is with how I use [[id:0e9c04df-aecd-46c1-a4d8-920fcb382fe7][my smartphone]].
+
+I don't know enough about it to know what I don't know, but I know my phone can hook into my laptop pretty seamlessly, and I know there's all sorts of like, fitness or wellness apps?
+
+And while that might be stuff looking for a solution, I also recognize that with [[id:ece53dd7-a7a1-4f04-be20-d779a1f86720][governmentality]], it can be personally advantageous to engage consciously in some of the [[id:e56a685f-e87f-47e7-900b-610e9fb2f436][subjectivation]] that I might otherwise be invisibly forced to. The [[id:bdaa9b86-68bd-465c-b9d8-84f503249b5f][illusion of consent]], I suppose, helps things feel nice, but it also removes some of the layers that make it inefficient, and since i'll have to be doing it, it being subjectivation, anyway, I may as well try and do it lazily.
+
+So I guess I'm curious if there are like, sleep-tracking apps, or maybe apps to help me remember to take breaks and stretch or whatever. I'm mostly interested in those that use some capacity of my phone that my laptop doesn't have, because I want to track things like [[id:cdd2883b-b71d-469b-83ac-e9793aafd145][my physical therapy routine]] in [[id:edc48bf0-336b-4b63-8505-a3730b328c9d][GnoponEmacs]] down the line. Which also means I'm most interested in things that can export my data. Additionally, since I'm clearly focused on sleep tracking, it's worth noting that I'm unsure if I can reliably have my phone sense things like my movement (I recall that being a feature I used many years ago, tied into a feature that would trigger white noise to send me back to sleep?) since I usually am sleeping near another person.
+
+...And looking at it the apps all seem overwrought or do very very specific tracking, so I think I might just think on how to do this in GnoponEmacs in the morning.
+
+#+begin_src elisp
+  (setq org-capture-templates
+      '(("s" "Sleep record"
+         entry
+         (file+olp+datetree "~/ems/orgmy-sleep-record.org")
+         "%?"
+         :clock-in t
+         :clock-resume t)))
+#+end_src
+

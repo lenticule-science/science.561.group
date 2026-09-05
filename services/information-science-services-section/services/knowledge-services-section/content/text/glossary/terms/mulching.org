@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       916c5f4e-31c7-4899-b4d9-f63823c06bde
+:END:
+#+title: mulching
+#+date: [2025-09-23 Tue 20:32]
+

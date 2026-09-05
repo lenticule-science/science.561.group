@@ -1,0 +1,14 @@
+option "operating_currency" "USD"
+option "booking_method" "FIFO"
+* 2023
+** 2023-01 January
+*** 2023-01-01 Sunday
+**** Open Accounts
+2023-01-01 open Expenses:Aquaponics:Fish:Minnow:RosyRed
+2023-01-01 open Expenses:Fees:Tax:Sales
+2023-01-01 open Liabilities:Payable:Esther
+**** Purchase minnows
+2023-01-01 * "Purchase minnows"
+  Expenses:Aquaponics:Fish:Minnow:RosyRed  8.00 USD
+  Expenses:Fees:Tax:Sales    0.60 USD
+  Liabilities:Payable:Esther

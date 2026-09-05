@@ -1,0 +1,48 @@
++++
+title = "Oppose SESTA"
+author = ["emsenn"]
+date = 2018-03-08T00:00:00-05:00
+tags = ["USA", "legislation"]
+draft = false
++++
+
+Yesterday, Comcast was caught blocking Paypal for users who opted in to their new
+monitoring service.
+
+If you earn your money through any sort of online service or product, you should be
+treating "contacting your representatives" the same way you treat "having sales":
+absolutely necessary if you don't want outside circumstances to completely dictate how
+your company can operate.
+
+Net Neutrality is repealed and without a heavy push for the Dems in the election, will
+stay repealed. (Make sure you're registered to vote, and keep checking your registration -
+don't forget the Russian state has said they are going to tamper in the election, and
+don't forget our President has explicitly forbidden any of our agencies from doing
+anything to prevent it.)
+
+But today, you can take a simple action: click this link and start calling your
+representatives, telling them you oppose SESTA: <https://stopsesta.org/#take-action>
+
+SESTA is supposedly to make it easier to stop sex trafficking, though the Department of
+Justice has released statements saying it will actually make it more difficult.
+
+What it will do is further wall us into our existing platforms, chilling any new services
+that might try to develop, and significantly harming existing efforts. Services like
+Wikipedia will become criminal. You could be sent to prison for things people say in your
+Facebook group. Post a YouTube video and someone comments something inappropriate? That's
+your fault, and you can be fined.
+
+It is bad enough that our online communication has been so heavily scoped by
+algorithms. Let's not tack on "and if you do it wrong, you go to jail!" to things, eh?
+
+
+## Editorial Information {#editorial-information}
+
+
+### Change Log {#change-log}
+
+
+#### <span class="timestamp-wrapper"><span class="timestamp">&lt;2017-10-11 Wed&gt;</span></span>: Created as microblog post {#created-as-microblog-post}
+
+
+#### <span class="timestamp-wrapper"><span class="timestamp">&lt;2018-11-05 Mon&gt;</span></span>: Added to Personal Record {#added-to-personal-record}

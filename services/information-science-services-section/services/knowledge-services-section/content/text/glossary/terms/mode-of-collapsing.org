@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       ad361e45-a178-4dfb-bcc9-e951834cfe06
+:END:
+#+title: mode of collapsing
+#+date: [2025-08-31 Sun 18:51]
+

@@ -1,0 +1,19 @@
+name: evaluation_equivalence
+inputs:
+- role: evaluation_equivalence
+  kind: evaluation_equivalence
+outputs:
+- role: evaluation_equivalence_evidence
+  kind: evaluation_equivalence_evidence
+steps:
+- name: evaluation_equivalence
+  operator: evaluation_equivalence
+  step_index: 0
+  inputs:
+  - role: evaluation_equivalence
+    kind: evaluation_equivalence
+  outputs:
+  - role: evaluation_equivalence_evidence
+    kind: evaluation_equivalence_evidence
+id: 458fe3935a8a4624c607a774b7f927bb77a0a9446d5e50319f5a8643b67238a0
+

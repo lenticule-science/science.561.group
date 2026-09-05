@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       e138b81c-6d9a-43c0-9f06-75ce69569e00
+:END:
+#+title: precondition
+#+date: [2025-08-29 Fri 11:08]
+

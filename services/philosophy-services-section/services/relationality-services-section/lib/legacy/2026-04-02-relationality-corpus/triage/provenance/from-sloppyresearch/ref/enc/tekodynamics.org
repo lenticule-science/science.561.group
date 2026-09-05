@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       7b55bed5-f798-4563-8194-f4bf8f3cc1ac
+:END:
+#+title: tekodynamics
+#+date: [2025-09-19 Fri 20:04]
+
+* [[id:ed3a99f2-07af-4424-8cfa-4d1ce69d1b0e][code]]
+
+** [[id:686d4e72-eb77-4ac7-b37a-2c7a7e0c0dc6][Org-roam capture template]]
+
+The /tekodynamics/ capture template is under the [[id:fd6ecbed-9bdf-4570-b4b2-5ff7744c0a96][concept]] capture template.
+
+#+begin_src elisp :tangle ./src/gpe/org-roam-capture-templates/ct.el
+  ("ct" "tekodynamics")
+#+end_src

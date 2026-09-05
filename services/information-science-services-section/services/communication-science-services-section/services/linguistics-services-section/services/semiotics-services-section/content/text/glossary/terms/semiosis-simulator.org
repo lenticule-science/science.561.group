@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       850dd02f-f25d-4287-bb47-60a546cf5002
+:END:
+#+title: semiosis simulator
+#+date: [2025-09-19 Fri 21:01]
+

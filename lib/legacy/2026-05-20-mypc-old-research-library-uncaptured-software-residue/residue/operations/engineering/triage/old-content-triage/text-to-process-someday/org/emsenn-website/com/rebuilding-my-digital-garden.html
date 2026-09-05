@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2023-01-14 Sat 15:02 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Rebuilding my digital garden</title>
+<meta name="generator" content="Org Mode" />
+<style>
+  	   @charset "UTF-8";
+  
+  	   :root {	
+  	       --body-font: sans-serif;
+  	       --header-font: sans-serif;
+  	       --code-font: monospace;
+  	       --primary-color: #ffe;
+  	       --primary-dim-color: #eed;
+  	       --secondary-color: #312;
+  	       --secondary-dim-color: #756;
+  	       --link-color: #880;
+  	       --link-hover-color: #aa2;
+  	       --link-visited-color: #934;
+  	       --link-visited-hover-color: #b56;
+  	       --external-link-color: #008;
+  	       --external-link-hover-color: #60b;
+  	       --external-link-visited-color: #172;
+  	       --external-link-visited-hover-color: #394;
+  	   }
+  	   @media(prefers-color-scheme:dark){
+  	       :root {
+  		  --body-font: sans-serif;
+  		  --header-font: sans-serif;
+  		  --code-font: monospace;
+  		  --primary-color: #756;
+  		  --primary-dim-color: #312;
+  		  --secondary-color: #eed;
+  		  --secondary-dim-color: #ffe;
+  		  --link-color: #880;
+  		  --link-hover-color: #aa2;
+  		  --link-visited-color: #934;
+  		  --link-visited-hover-color: #b56;
+  	       }}
+  	   body {
+  	       position: relative;
+  	       min-height: 100%;
+  	       background-color: var(--primary-color);
+  	       color: var(--secondary-color);
+  	       margin: 0 auto;
+  	       font-family: sans-serif;
+  	   }
+  	   main, #content {
+  	       background-color: var(--primary-dim-color);
+  	       border-left: 1.5em dotted var(--primary-color);
+  	       padding: 1em;
+  	   }
+  	   header {
+  	       border-bottom: 0.8em dotted var(--secondary-dim-color);
+  	   }
+  	   h1 { font-size: 2em; margin-bottom: 0; }
+  	   h2 {
+  	       border-bottom: 0.3em dotted var(--secondary-dim-color);
+  	   }
+  	   h2, h3, h4, h5, h6, p, table, ul, ol, .org-src-container {
+  	       width: 60%;
+  	   }
+  	   aside {
+  	       float: right;
+  	       width: 35%;
+  	   }
+  	   aside p { width: 100%; }
+  	   @media screen and (max-width:760px) {
+  	       h2, h3, h4, h5, h6, p, table, ul, ol, .org-src-container {
+  		  width: 90%;
+  	       }
+  	       aside {
+  		  float: inherit;
+  		  width: 90%;
+  		  border-top: 0.2em dotted var(--secondary-dim-color);
+  		  border-bottom: 0.2em dotted VAR(--secondary-dim-color);
+  		  font-size: 0.8em;
+  		    }
+  	   }
+  
+  	   footer, #postamble, #preamble {
+  	       padding: 0.5em;
+  	   }
+  	   table {
+  	       border-collapse: collapse;
+  	       border-spacing: 0;
+  	       empty-cells: show;
+  	       border: 0.1em solid #444;
+  	   }
+  	   thead { font-family: sans-serif; }
+  	   th, td {
+  	       padding: 0 0.3em;
+  	       border: 0.01em solid #444;
+  	   }
+  	   img {
+  	       max-width: 80vw;
+  	       vertical-align: middle;
+  	   }
+  	   pre, .src {
+  	       padding: 0.5em;
+  	       border: 0.1em solid #444;
+  	       white-space: pre-wrap;
+  	       overflow-x: scroll;
+  	       text-overflow: clip;
+  	       scrollbar-width: none;
+  	   }
+  	   pre::-webkit-scrollbar, .src::-webkit-scrollbar {
+  	       display: none;
+  	   }
+  
+  
+  	   dt {
+  	       font-weight: normal;
+  	       display: inline-block;
+  	       border-bottom: 0.1rem dotted #444;
+  	   }
+  	   #text-index dt { border-bottom: none; }
+  	   h2, h3, h4, h5, h6, h7, h8, h9, h10 {
+  	       display: block;
+  	       font-family: sans-serif;
+  	       margin: 0.2em auto 0.5em 0;
+  	   }
+  	   a, .link {
+  	       text-decoration: none;
+  	       color: #880;
+  	       display: inline;
+  	       position: relative;
+  	       border-bottom: 0.1rem dotted;
+  	       line-height: 1.2;
+  	       transition: border 0.3s;
+  	   }
+  	   a:hover {
+  	       color: #aa2;
+  	       outline-style: none;
+  	       border-bottom: 0.1rem solid;
+  	   }
+  	   a:visited, .visited-link { color: #934; }
+  	   a:visited:hover { color: #b56; }
+  	   a:focus {
+  	       outline-style: none;
+  	       border-bottom: 0.1rem solid;
+  	   }
+  	   ::selection { background-color: #777; color: #eee; }
+  	   a::selection { background-color: #ccc; }
+  	   .org-todo {
+  	       background-color: #ddd;
+  	       color: #333;
+  	       font-size: .8rem;
+  	       float: right;
+  	   }
+  	   .org-src-container + .example {
+  	       margin-left: 8em;
+  	   }
+  	   a[href^="https://"]:not([href*="emsenn.net"]):after, a[href^="https://"]:not([href*="emsenn.net"]):visited:after, .external-link:after, .visited-external-link:after { 
+  	       content: "^";
+  	       font-size: 0.5em;
+  	       vertical-align: super;
+  	   }
+  	   a[href^="https://"]:not([href*="emsenn.net"]), .external-link {
+  	       color: var(--external-link-color);
+  	   }
+  	   a[href^="https://"]:not([href*="emsenn.net"]):hover{ 
+  	       color: var(--external-link-hover-color);
+  	   }
+  	   a[href^="https://"]:not([href*="emsenn.net"]):visited, .visited-external-link { 
+  	       color: var(--external-link-visited-color);
+  	   }
+  	   a[href^="https://"]:not([href*="emsenn.net"]):visited:hover{ 
+  	       color: var(--external-link-visited-hover-color);
+  	   }
+  	   blockquote {
+  	       border: 0.1em dashed var(--secondary-dim-color);
+  	       padding-left: 0.2em;
+  	   }
+  	   label.org-src-name {
+  	       margin: 0 0 0 3em;
+  	       font-family: sans-serif;
+  	       font-size: 1rem;
+  	       line-height: 0;
+  	   }
+  	   .skip-to-content {
+  	       opacity: 0;
+  	       position: absolute;
+  	       left: 0.2em;
+  	   }
+  	   .skip-to-content:focus{
+  	       opacity: 1;
+  	       background-color: var(--secondary-dim-color);
+  	       color: var(--primary-color);
+  	   }
+  	   ul { max-width: 85%; }
+      .footpara { display: inline; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+<section id="preamble" class="status">
+<a href="#content" class="skip-to-content">skip to content</a><section class="nav"><strong>emsenn.net:</strong> <a href="../index.html">Homepage</a> | <a href="../bul/index.html">Bulletins</a> | <a href="../mainindex.html">Main Index</a><p>This Website was cultivated as a public asset with <a href="https://ko-fi.com/emsenn">support</a> from people like you. <strong><em>Thank you!</em></strong></p>
+  	      <details>
+  	        <summary>Click this sentence for information about my Website.</summary>
+  	        <p>Click each sentence below for more info:</p>
+  	          <ul>
+  	            <li><details>
+  	      	<summary>This website was created by Emacs and Org-mode</summary>
+  	      	<p>See <a href="https://emsenn.net/src/infoponemacs.html">my Emacs configuration</a> to learn how.</p>
+  	            </details></li>
+  	            <li><details>
+  	              <summary>Its content was written by hand.</summary>
+  	              <p>This means there might be mistakes! 
+  	            </details></li>
+  	            <li><details>
+  	      	<summary>It uses style to add information to the pages.</summary>
+  	      	<ul>
+  	      	  <li><details>
+  	      	  <summary>Click this sentence to see how links are styled:</summary>
+  	      	  <table>
+  	      	    <thead><tr>
+  	      	      <th scope="col">Color</th>
+  	      	      <th scope="col">Link type</th>
+  	      	    </tr></thead>
+  	      	    <tbody>
+  	      	      <tr><td class="link">Sample</td>
+  	      		<td>Unvisited local resource</td></tr>
+  	      	      <tr><td class="visited-link">Sample</td>
+  	      		<td>Visited local resource</td></tr>
+  	      	      <tr><td class="external-link">Sample</td>
+  	      		<td>Unvisited external resource</td></tr>
+  	      	      <tr><td class="visited-external-link">Sample</td>
+  	      		<td>Visited external resource</td></tr>
+  	      	    </tbody>
+  	      	  </table>
+  	      	</details></li>
+  	            </ul>
+  	          </details></li>
+  	        </ul>
+  	      </details>
+  	      </section>
+</section>
+<main id="content" class="content">
+<header>
+<h1 class="title">Rebuilding my digital garden</h1>
+</header><p>
+In my <a href="new-year-new-flow.html">last communication</a>, I shared that I changed my plans for how I was going to use a computer through the 2023 warm season. I mostly just briefly covered where I'd be posting &amp; hanging out on the Web, though.
+</p>
+
+<p>
+Since that communication, I've been rebuilding my <i>digital garden</i> using the tools I'm most familiar with for that purpose: <i>Emacs</i>.
+</p>
+
+<aside id="org511dc5c">
+<p>
+A <b><a href="../def/digital-garden.html">digital garden</a></b> is a collection of digital information that emerges from using note-taking software.
+</p>
+
+<p>
+<b><a href="../def/emacs.html">Emacs</a></b> is a very customizable <a href="../def/text-editor.html">text editor</a>.
+</p>
+</aside>
+
+<p>
+I've done this - or at least something very very similar - a few times already, so it was pretty easy to get things basically set up.
+</p>
+
+<p>
+The "garden" itself might be said to be the various text files here on my computer: the text file representing this communication, text files defining things like <i>digital garden</i> and <i>Emacs</i>, and so on.
+</p>
+
+<p>
+One of these files contains <a href="../src/infoponemacs.html">InfoPonEmacs</a>, the configuration I've written to help me use Emacs for cultivating this garden.
+</p>
+
+<aside id="org6185e98">
+<p>
+<b><i><a href="../src/infoponemacs.html">InfoPonEmacs</a></i></b> is an <a href="../def/emacsen.html">Emacsen</a> for cultivating a <a href="../def/digital-garden.html">digital garden</a>.
+</p>
+</aside>
+
+<p>
+There's a few parts to this, for now, with plans for more in the future.
+</p>
+
+<p>
+<i>Org-mode capture templates</i> let me quickly add new notes to the garden, and <i>Org-mode publishing</i> lets me publish all the notes as a collection of HTML documents - which are what I upload as my Website. <i>(That might be where you're reading this.)</i>
+</p>
+
+<p>
+I'd like to include a diagram of the rough flow, but I don't currently have that configured - I've noted to plan it though.
+</p>
+
+<p>
+In plaintext, though, information comes in from the outside world, through me, into capture templates, where it then goes into notes, which are published as a collection of HTML documents.
+</p>
+
+<p>
+Its worth mentioning that a lot of notes share similar sections - for example, there's a section of the garden where I take notes on <a href="../pro/index.html">projects</a>, and most <i>projects</i> contain a section outlining <i>operations</i>, which in turn list <i>tasks</i>.
+</p>
+
+<p>
+<i>Tasks</i> share special markup that lets me use them with the <i>Org-mode agenda</i> to make an itinerary for me, of what it is I need to do across various projects.
+</p>
+
+<p>
+All the components of this I've mentioned so far are part of the <a href="../def/org-mode.html">Org-mode</a> package for Emacs; another important component - that I'm not so familiar with, and so not sure how to best integrate into the garden - is <a href="../def/beancount.html">Beancount</a> - software for doing accounting, that I also have used for some inventory management in the past. <i>(I'll probably ramble about this in a future communication.)</i>
+</p>
+
+<p>
+Right now, since I've only just begun setting things up, nothing looks very sensible - much like a real garden. You can head to the "front gate" as it were by checking out the <a href="../index.html">homepage</a>, but if you want to look at the garden from another perspective, there's also an <a href="../mainindex.html">index</a>.
+</p>
+</main>
+<section id="postamble" class="status">
+<p class="date">Created: 2023-01-14 Sat 15:02</p>
+</section>
+</body>
+</html>

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       b767fc38-64cb-4a4d-a778-ed5754fcec82
+:END:
+#+title: self
+#+date: [2025-08-30 Sat 20:52]
+

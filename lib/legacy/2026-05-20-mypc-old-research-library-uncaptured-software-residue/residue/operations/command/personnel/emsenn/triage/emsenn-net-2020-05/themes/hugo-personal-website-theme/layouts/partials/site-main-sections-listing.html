@@ -1,0 +1,22 @@
+{{ $scratch := newScratch }}
+  {{- range $.Site.Params.mainSections -}}
+    {{ if (eq (len (where $.Site.RegularPages "Type" .)) 0) }}{{ else }}
+    {{- $scratch.Add "mainSectionCounts" (slice (partial "section-count.html" (dict "Section" . "Site" $.Site))) -}}
+    {{ end }}
+  {{- end -}}
+  {{- $mS := ($scratch.Get "mainSectionCounts") -}}
+  {{- if (eq (len $mS) 0) }}
+  {{- else }}
+  This website contains pages of the follow types:
+  <ul><li>
+  {{- if (eq (len $mS) 1) }}
+  {{ (index $mS 0) }}</li>
+  {{- else if (eq (len $mS) 2) }}
+  {{ delimit $mS ",</li><li> " }}
+  {{- else }}
+  {{ delimit $mS ",</li><li> " ", and</li><li> " }}.</li>
+  {{- end -}}
+  </ul>
+  {{- end -}}
+
+</span>

@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       a6abe253-9ae0-4214-9506-4dccfaf8a95c
+:public:   true
+:form:     [[id:b7d64e1d-3912-48d9-a8cf-b4ead98a00bb][Supreme Court]]
+:END:
+#+title: Supreme Court of the United States
+#+date: [2025-08-30 Sat 20:31]
+#+index: United States!Supreme Court!Supreme Court of the United States
+
+The */Supreme Court of the United States/* is the [[id:b7d64e1d-3912-48d9-a8cf-b4ead98a00bb][Supreme Court]] of the [[id:0f55630d-f00f-4101-bbe5-95140331247e][United States of America]] and its [[id:e53e39e3-269e-4bff-8425-d7f4d16e8b55][highest court]].

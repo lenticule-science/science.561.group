@@ -1,0 +1,19 @@
+name: context_geometry
+inputs:
+- role: presheaf_site
+  kind: presheaf_site
+outputs:
+- role: context_geometry
+  kind: context_geometry
+steps:
+- name: context_geometry
+  operator: context_geometry
+  step_index: 0
+  inputs:
+  - role: presheaf_site
+    kind: presheaf_site
+  outputs:
+  - role: context_geometry
+    kind: context_geometry
+id: 464f470209c488df04b52e7b3fc796031e222a5dc4ff6e78b09ad3a793d23468
+

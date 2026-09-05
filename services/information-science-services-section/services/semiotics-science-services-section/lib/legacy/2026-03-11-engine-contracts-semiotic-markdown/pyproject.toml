@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "semiotic-markdown"
+version = "0.1.0"
+description = "A syntax-friendly Markdown dialect for building meaning over plaintext semantic data."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+authors = [{ name = "emsenn", email = "emsenn@emsenn.net" }]
+dependencies = ["PyYAML>=6.0.2"]
+
+[project.optional-dependencies]
+dev = ["pre-commit>=3.8.0", "pytest>=8.0.0", "ruff>=0.12.0"]
+
+[project.scripts]
+smd = "semiotic_markdown.__main__:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/semiotic_markdown"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = ["--capture=sys"]

@@ -1,0 +1,61 @@
+{
+  "name": "@emsenn/communicating-in-relation-conlang",
+  "version": "0.0.0",
+  "type": "module",
+  "description": "Communicating in Relation Conlang - a greenfield manifest-first language package for building relation-native conlangs over @emsenn/communicating.",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "clean": "rm -rf dist .tmp/test-dist",
+    "check": "tsc --noEmit",
+    "build": "tsc -p tsconfig.build.json && chmod +x dist/scripts/*.mjs",
+    "test": "node --test \"test/*.test.mjs\"",
+    "prepack": "pnpm run rebuild",
+    "rebuild": "pnpm run clean && pnpm run build"
+  },
+  "main": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "bin": {
+    "communicate": "./dist/scripts/communicate.mjs",
+    "communicate-serve": "./dist/scripts/communicate-serve.mjs"
+  },
+  "files": [
+    "corpus",
+    "data",
+    "docs",
+    "dist",
+    "exercises",
+    "lessons",
+    "README.md",
+    "package.json"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs"
+    },
+    "./manifest": {
+      "types": "./dist/manifest.d.mts",
+      "import": "./dist/manifest.mjs"
+    },
+    "./bundle": {
+      "types": "./dist/compiled.d.mts",
+      "import": "./dist/compiled.mjs"
+    },
+    "./actions": {
+      "types": "./dist/actions.d.mts",
+      "import": "./dist/actions.mjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "dependencies": {
+    "@emsenn/communicating": "0.0.0",
+    "@emsenn/relating": "0.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.1",
+    "typescript": "5.9.3"
+  },
+  "sideEffects": false
+}

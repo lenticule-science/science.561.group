@@ -1,0 +1,46 @@
+* Soilwork
+** TODO Rotate the compost
+DEADLINE: <2021-11-20 Sat +3m>
+:PROPERTIES:
+:Effort:   3:00
+:END:
+* Planting
+** TODO [#A] [0/2] Plant garlic
+*** TODO [#A] Scythe the intended area low
+:PROPERTIES:
+:EFFORT:   1:30
+:END:
+*** TODO [#A] Plant the garlic
+:PROPERTIES:
+:EFFORT:   2:00
+:END:
+** TODO [#B] [0/5] Plant radish bed
+*** TODO Scythe the intended area low
+:PROPERTIES:
+:EFFORT:   1:30
+:END:
+*** TODO Till the area
+:PROPERTIES:
+:EFFORT:   1:30
+:END:
+*** TODO Mix in compost
+:PROPERTIES:
+:EFFORT:   1:00
+:END:
+*** TODO Plough the area
+:PROPERTIES:
+:EFFORT:   1:00
+:END:
+*** TODO Plant the radishes
+:PROPERTIES:
+:EFFORT:   1:00
+:END:
+** TODO [#C] [0/2] Plant greens
+*** TODO Rake the intended area
+:PROPERTIES:
+:EFFORT:   1:30
+:END:
+*** TODO Scatter seed
+:PROPERTIES:
+:EFFORT:   1:00
+:END:

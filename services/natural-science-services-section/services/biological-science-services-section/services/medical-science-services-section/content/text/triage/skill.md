@@ -1,0 +1,500 @@
+---
+name: airway-assessment
+id: airway-assessment
+description: >-
+  Learn to assess and manage airway patency, oxygenation, and ventilation
+  using staged escalation — distinguishing upper from lower obstruction,
+  matching interventions to physiology, and anticipating deterioration.
+type: learn
+date-created: 2026-03-06
+authors:
+  - claude-opus-4-6
+keywords:
+  - Airway
+  - EmergencyMedicine
+part-of: medicine
+region:
+  reads: ["content/medicine/"]
+  writes: ["content/medicine/"]
+---
+
+## What you will be able to do
+
+- Distinguish between oxygenation (oxygen into blood, measured by SpO2) and ventilation (gas movement and CO2 clearance, measured by capnography), and explain why treating a ventilation problem with supplemental oxygen alone is insufficient.
+- Localize airway obstruction as upper (stridor, inspiratory difficulty) or lower (wheeze, expiratory difficulty) based on clinical signs, and explain why localization determines the intervention.
+- Apply the staged escalation framework: positioning → supplemental oxygen → airway adjuncts → positive-pressure ventilation → advanced airway, selecting the least invasive intervention that maintains oxygenation and ventilation.
+- Identify high-risk clinical signs that indicate impending airway failure: inability to speak in full sentences, stridor at rest, silent chest despite respiratory effort, worsening mental status, accessory muscle use, and tracheal tug.
+- Describe the anatomical differences in pediatric airways (larger occiput, anterior larynx, subglottic narrowing, lower oxygen reserve) and explain how they change management.
+- Articulate the immediate post-intubation priorities: confirm placement with capnography, secure the tube, anticipate post-intubation hypotension, ensure adequate sedation and analgesia.
+
+## Prerequisites
+
+- No formal prerequisites. The introductory curriculum is self-contained.
+- Familiarity with the [respiratory system](../../topics/human-body/texts/the-respiratory-system.md) and [nervous system](../../topics/human-body/texts/the-nervous-system.md) is helpful.
+
+## Reference documents
+
+- [Introduction to Airway Management](../../curricula/introduction-to-airway-management.md) — the introductory lesson
+- [Airway Anatomy and Physiology Basics](../../topics/airway/texts/airway-anatomy-and-physiology-basics.md) — structural foundation
+- [Airway Assessment and Clinical Reasoning](../../topics/airway/texts/airway-assessment-and-clinical-reasoning.md) — bedside evaluation
+- [Oxygen Delivery and Ventilation Support](../../topics/airway/texts/oxygen-delivery-and-ventilation-support.md) — the support ladder
+- [Airway Treatment Principles](../../topics/airway/texts/airway-treatment-principles.md) — staged escalation
+- [Pediatric Airway Differences](../../topics/airway/texts/pediatric-airway-differences.md) — what changes in children
+- [Post-Intubation Safety and Reassessment](../../topics/airway/texts/post-intubation-safety-and-reassessment.md) — after the tube
+- [Common Airway Illnesses and Syndromes](../../topics/airway/texts/common-airway-illnesses-and-syndromes.md) — clinical patterns
+
+## Scope
+
+This skill covers conceptual understanding of airway assessment and the logic of airway management. It does not cover:
+
+- Procedural competence (intubation technique, cricothyrotomy, chest tube insertion) — these require hands-on training
+- Ventilator management beyond initial settings
+- Anesthesia-specific airway planning
+- Advanced imaging interpretation
+
+## Verification
+
+You have this skill if you can: (1) given a clinical scenario with respiratory distress, distinguish whether the primary problem is oxygenation or ventilation and explain why; (2) localize obstruction as upper or lower airway based on clinical signs; (3) select an appropriate intervention from the staged escalation framework and justify why you chose that level; and (4) describe what you would check and anticipate in the first five minutes after intubation.
+
+
+---
+
+<!-- source: archive/domains/applying-the-biopsychosocial-model/SKILL.md -->
+
+## Imported source: archive/domains/applying-the-biopsychosocial-model/SKILL.md
+
+---
+name: applying-the-biopsychosocial-model
+id: applying-the-biopsychosocial-model
+description: >-
+  Learn the biopsychosocial model of pain — how biological, psychological,
+  and social factors interact through shared neural mechanisms — and apply
+  it to analyze pain presentations that the biomedical model cannot explain.
+type: learn
+date-created: 2026-03-06
+authors:
+  - claude-opus-4-6
+tags:
+  - Pain
+  - Neuroscience
+part-of: medicine
+region:
+  reads: ["content/medicine/"]
+  writes: ["content/medicine/"]
+---
+
+## What you will be able to do
+
+- Explain why pain is an output of the nervous system rather than a direct readout of tissue damage, and why this distinction matters clinically.
+- Identify the three domains of the biopsychosocial model (biological, psychological, social) and give examples of how each contributes to a pain presentation.
+- Describe how psychological factors — particularly catastrophizing, fear-avoidance, and trauma history — influence pain through descending modulation and central sensitization, not as separate "mental" processes.
+- Recognize when a pain presentation cannot be explained by the biomedical model alone (e.g., pain without tissue damage, normal imaging with severe pain, pain that persists long after healing).
+- Analyze a chronic pain scenario by identifying biological contributors (nociception, sensitization, deconditioning), psychological contributors (beliefs, affect, coping patterns), and social contributors (clinical interactions, structural conditions, access to care).
+- Explain how the clinical relationship itself — what the clinician says, how they listen, whether they validate the patient's experience — affects pain through the same neural mechanisms as any other intervention.
+
+## Prerequisites
+
+- Familiarity with basic neurophysiology is helpful but not required — the introductory curriculum covers the necessary foundations.
+- No clinical experience required. The skill is designed for anyone encountering pain science for the first time.
+
+## Reference documents
+
+- [Introduction to Pain Science](../../curricula/introduction-to-pain-science.md) — the introductory lesson
+- [Pain Neurophysiology](../../topics/pain/texts/pain-neurophysiology.md) — the full neural mechanism
+- [The Biopsychosocial Model of Pain](../../topics/pain/texts/biopsychosocial-model.md) — the comprehensive framework
+- [Pain Assessment](../../topics/pain/texts/pain-assessment.md) — clinical application
+- [Chronic Pain and Disability Justice](../../topics/pain/texts/chronic-pain-and-disability-justice.md) — structural conditions and pain
+- [Central Sensitization](../../topics/pain/terms/central-sensitization.md) — when the nervous system itself changes
+- [The Nervous System](../../topics/human-body/texts/the-nervous-system.md) — foundational neuroanatomy
+
+## Scope
+
+This skill covers understanding and applying the biopsychosocial model as an analytical framework for pain. It does not cover:
+
+- Clinical pain management techniques (pharmacological, procedural, rehabilitative)
+- Conducting formal pain assessments (though it provides the conceptual foundation for assessment)
+- The full neuroscience of nociception and pain processing at the cellular level
+- Specific chronic pain conditions (fibromyalgia, CRPS, migraine) beyond their use as examples
+
+## Verification
+
+You have this skill if you can: (1) explain to someone why "pain equals tissue damage" is wrong and what replaces it; (2) take a pain presentation — clinical or everyday — and identify biological, psychological, and social factors contributing to it; (3) explain how those factors interact through shared neural mechanisms rather than operating as separate domains; and (4) describe how a clinician's behavior during assessment can itself increase or decrease pain.
+
+
+---
+
+<!-- source: archive/domains/identifying-defense-mechanisms/SKILL.md -->
+
+## Imported source: archive/domains/identifying-defense-mechanisms/SKILL.md
+
+---
+name: identifying-defense-mechanisms
+id: identifying-defense-mechanisms
+description: >-
+  Learn to identify psychological defense mechanisms — automatic
+  processes that protect against anxiety by distorting, displacing,
+  or denying threatening internal states — in clinical descriptions,
+  interpersonal situations, and your own experience.
+type: learn
+date-created: 2026-03-06
+authors:
+  - claude-opus-4-6
+tags:
+  - Psychology
+part-of: medicine
+region:
+  reads: ["content/medicine/"]
+  writes: ["content/medicine/"]
+---
+
+## What you will be able to do
+
+- Define defense mechanisms as automatic, unconscious psychological processes and distinguish them from deliberate coping strategies.
+- Identify at least six specific defense mechanisms (denial, projection, splitting, displacement, rationalization, reaction formation, repression, sublimation, humor, suppression) in descriptions of behavior and interpersonal situations.
+- Classify defenses along the maturity continuum (immature, neurotic, mature) and explain what makes a defense more or less adaptive.
+- Recognize when a defense has become clinically concerning — rigid, costly, reality-distorting, or interpersonally destructive — versus when it is functioning adaptively.
+- Connect psychological defenses to their somatic expressions (character armor, chronic muscular tension, sensory-motor amnesia) and explain why purely cognitive approaches often cannot resolve embodied defensive patterns.
+- Apply the concept of defenses to understand why symptoms sometimes serve protective functions — and why simply removing a symptom without understanding its defensive function may produce worse outcomes.
+
+## Prerequisites
+
+- No formal prerequisites. The introductory curriculum is self-contained.
+- Familiarity with [somatic awareness](../../concepts/somatics/somatic-awareness.md) concepts will enrich understanding of how defenses are embodied but is not required.
+
+## Reference documents
+
+- [Introduction to Psychological Defenses](../../curricula/introduction-to-psychological-defenses.md) — the introductory lesson
+- [Psychopathology](../../disciplines/psychology/psychopathology.md) — defense mechanisms in the context of psychological suffering
+- [Psychotherapy](../../disciplines/psychology/psychotherapy.md) — how therapy works with defenses
+- [Theoretical Traditions](../../disciplines/psychology/theoretical-traditions.md) — the psychodynamic tradition that developed these concepts
+- [Somatic Awareness](../../concepts/somatics/somatic-awareness.md) — the somatic dimension of defensive patterns
+- [Somatic Experiencing](../../concepts/somatics/somatic-experiencing.md) — working with the body's defensive responses
+
+## Scope
+
+This skill covers recognition and conceptual understanding of defense mechanisms. It does not cover:
+
+- Interpreting defenses in clinical practice (which requires supervised training and a therapeutic relationship)
+- Psychoanalytic theory beyond what is needed to understand defenses
+- Diagnosing personality disorders or other conditions where defense patterns are central
+- Conducting psychological assessment
+
+## Verification
+
+You have this skill if you can: (1) read a description of interpersonal behavior and identify which defense mechanism is likely operating; (2) explain what the defense protects against (what threatening material it manages); (3) distinguish between adaptive and maladaptive use of the same defense; and (4) explain why defenses have somatic expressions and why insight alone may not resolve an embodied defensive pattern.
+
+
+---
+
+<!-- source: archive/domains/learning-about-communitas-and-immunitas/SKILL.md -->
+
+## Imported source: archive/domains/learning-about-communitas-and-immunitas/SKILL.md
+
+---
+name: learning-about-communitas-and-immunitas
+id: learning-about-communitas-and-immunitas
+description: >-
+  Learn Roberto Esposito's paired concepts of communitas and immunitas —
+  shared obligation and exemption from it — and apply them to analyze
+  how collective care is maintained or dismantled.
+type: learn
+date-created: 2026-03-05
+authors:
+  - claude-opus-4-6
+tags:
+  - PoliticalPhilosophy
+part-of: medicine
+region:
+  reads: ["content/medicine/"]
+  writes: ["content/medicine/"]
+---
+
+## What you will be able to do
+
+- Define communitas and immunitas from their shared Latin root (*munus*) and explain how each concept orients toward obligation differently.
+- Identify immunitarian logic in public discourse — statements, policies, or norms that exempt individuals from collective obligation.
+- Identify communitarian logic in practice — infrastructure, norms, or relationships that distribute obligation across a group.
+- Analyze a concrete situation (a policy, a rhetorical move, a community practice) using the communitas/immunitas pairing, explaining what obligation is at stake and how it is being shared or dissolved.
+- Connect the pairing to related concepts: biopolitics, disability justice, harm reduction, and access intimacy.
+
+## Prerequisites
+
+- No formal prerequisites. The introductory lesson is self-contained.
+- Familiarity with [disability justice](../../terms/disability-justice.md) and [harm reduction](../../terms/harm-reduction.md) will deepen understanding of the worked examples but is not required.
+
+## Reference documents
+
+- [Communitas](../../terms/communitas.md) — term definition
+- [Immunitas](../../terms/immunitas.md) — term definition
+- [Introduction to Communitas and Immunitas](../../curricula/introduction-to-communitas-and-immunitas.md) — the introductory lesson
+- [Roberto Esposito](../../../general/people/roberto-esposito.md) — the philosopher who develops both concepts
+
+## Scope
+
+This skill covers understanding and applying Esposito's communitas/immunitas pairing as analytical tools. It does not cover:
+
+- Esposito's full philosophical system (the "affirmative biopolitics" he develops in later work)
+- The broader Italian tradition of biopolitical thought ([Giorgio Agamben](../../../general/people/giorgio-agamben.md), [Antonio Negri](../../../general/people/antonio-negri.md))
+- Latin philology beyond what is needed to understand *munus*, *communitas*, and *immunitas*
+
+## Verification
+
+You have this skill if you can: (1) explain the communitas/immunitas distinction to someone unfamiliar with Esposito, grounding it in the shared root *munus*; (2) take a concrete scenario — a policy debate, a community norm, a rhetorical move — and identify whether it operates through communitarian or immunitarian logic; and (3) explain the consequences of that logic for those with least access to individual protection.
+
+
+---
+
+<!-- source: archive/domains/pharmacological-literacy/SKILL.md -->
+
+## Imported source: archive/domains/pharmacological-literacy/SKILL.md
+
+---
+name: pharmacological-literacy
+id: pharmacological-literacy
+description: >-
+  Learn the pharmacological concepts — receptor dynamics, pharmacokinetics,
+  therapeutic index, drug interactions — needed to understand how drugs
+  help and harm, and how this knowledge functions as harm reduction
+  infrastructure.
+type: learn
+date-created: 2026-03-06
+authors:
+  - claude-opus-4-6
+tags:
+  - Pharmacology
+part-of: medicine
+region:
+  reads: ["content/medicine/"]
+  writes: ["content/medicine/"]
+---
+
+## What you will be able to do
+
+- Explain the difference between pharmacodynamics (what the drug does to the body) and pharmacokinetics (what the body does to the drug), and why both are necessary for understanding drug effects.
+- Distinguish between agonists, partial agonists, and antagonists at a receptor, and explain the clinical significance of each (using opioids as a working example: morphine, buprenorphine, naloxone).
+- Define therapeutic index and explain why narrow therapeutic index drugs are more dangerous — connecting this to overdose risk and the fentanyl crisis.
+- Describe the four pharmacokinetic processes (absorption, distribution, metabolism, excretion) and explain how variation in each affects drug response.
+- Identify common drug interaction mechanisms (enzyme inhibition, enzyme induction, protein binding displacement) and explain why polypharmacy increases risk.
+- Articulate how pharmacological knowledge functions as harm reduction infrastructure — why understanding half-life, potency, and bioavailability makes rational risk management possible and why withholding this knowledge costs lives.
+
+## Prerequisites
+
+- No formal prerequisites. The introductory curriculum is self-contained.
+- Familiarity with basic cell biology ([cell](../../topics/human-body/terms/cell.md), [receptor](../../topics/human-body/terms/receptor.md)) is helpful but not required.
+
+## Reference documents
+
+- [Introduction to Pharmacology](../../curricula/introduction-to-pharmacology.md) — the introductory lesson
+- [How Drugs Work](../../topics/pharmacology/texts/how-drugs-work.md) — receptors, enzymes, ion channels
+- [Dose-Response Relationships](../../topics/pharmacology/texts/dose-response-relationships.md) — potency, efficacy, therapeutic window
+- [Drug Metabolism and Clearance](../../topics/pharmacology/texts/drug-metabolism-and-clearance.md) — CYP enzymes, genetic variation
+- [Pharmacology and Harm Reduction](../../topics/pharmacology/texts/pharmacology-and-harm-reduction.md) — applied pharmacology as survival infrastructure
+- [Harm Reduction](../../terms/harm-reduction.md) — the communal practice that pharmacological literacy supports
+
+## Scope
+
+This skill covers pharmacological literacy — the conceptual foundation for understanding how drugs interact with living systems. It does not cover:
+
+- Prescribing or clinical pharmacotherapy (dosing, drug selection, monitoring)
+- Pharmacology of specific drug classes beyond those used as examples
+- Organic chemistry or molecular biology of drug-receptor binding
+- Herbal pharmacology or TCM formula composition
+
+## Verification
+
+You have this skill if you can: (1) explain why buprenorphine is safer than methadone for opioid use disorder treatment using pharmacodynamic concepts; (2) explain why naloxone must be followed by emergency care using pharmacokinetic concepts; (3) identify a potential drug interaction mechanism given two drugs and their metabolic pathways; and (4) articulate why pharmacological literacy is a harm reduction issue, not merely a clinical one.
+
+
+---
+
+<!-- source: archive/domains/reading-the-bodys-systems/SKILL.md -->
+
+## Imported source: archive/domains/reading-the-bodys-systems/SKILL.md
+
+---
+name: reading-the-bodys-systems
+id: reading-the-bodys-systems
+description: >-
+  Learn to trace how dysfunction propagates across the body's organ
+  systems — understanding the body as an integrated, self-organizing
+  system rather than a collection of independent parts.
+type: learn
+date-created: 2026-03-06
+authors:
+  - claude-opus-4-6
+tags:
+  - Anatomy
+  - Physiology
+part-of: medicine
+region:
+  reads: ["content/medicine/"]
+  writes: ["content/medicine/"]
+---
+
+## What you will be able to do
+
+- Describe the six major organ systems covered in this module (nervous, cardiovascular, respiratory, musculoskeletal, digestive, immune) in terms of their primary functions and their contributions to homeostasis.
+- Explain how the body is organized hierarchically (cell → tissue → organ → organ system) and why each level of organization produces emergent properties that the level below cannot accomplish alone.
+- Define homeostasis as the body's self-organizing principle and identify how specific organ systems maintain it (e.g., respiratory system maintaining blood pH through CO2 regulation, cardiovascular system maintaining tissue oxygenation through cardiac output).
+- Trace how dysfunction in one organ system propagates to others — given a primary disruption (chronic stress, respiratory failure, gut dysfunction), identify secondary effects across at least two other systems.
+- Connect biomedical organ-system descriptions to alternative frameworks: TCM's Zang-Fu functional systems, somatic awareness of the musculoskeletal-nervous system interface, and the biopsychosocial model's integration of biological processes with psychological and social factors.
+- Explain why "the body is a machine" is misleading and why "self-organizing system" is a more accurate frame for understanding health, disease, and treatment.
+
+## Prerequisites
+
+- No formal prerequisites. The introductory curriculum provides the conceptual foundation.
+- Familiarity with the foundational terms (cell, tissue, organ, neuron, receptor, homeostasis, inflammation) is helpful and can be acquired through the human body module's term files.
+
+## Reference documents
+
+- [Introduction to the Human Body](../../curricula/introduction-to-the-human-body.md) — the introductory lesson
+- [The Nervous System](../../topics/human-body/texts/the-nervous-system.md) — neural integration and autonomic regulation
+- [The Cardiovascular System](../../topics/human-body/texts/the-cardiovascular-system.md) — transport and circulation
+- [The Respiratory System](../../topics/human-body/texts/the-respiratory-system.md) — gas exchange
+- [The Musculoskeletal System](../../topics/human-body/texts/the-musculoskeletal-system.md) — structure and movement
+- [The Digestive System](../../topics/human-body/texts/the-digestive-system.md) — nutrition, immunity, and the gut-brain axis
+- [The Immune System](../../topics/human-body/texts/the-immune-system.md) — defense and inflammation
+- [Zang-Fu (Organ-Function Systems)](../../disciplines/traditional-chinese-medicine/zang-fu.md) — TCM's functional alternative to anatomical organ systems
+
+## Scope
+
+This skill covers conceptual understanding of organ system integration. It does not cover:
+
+- Clinical assessment of organ system function (physical examination, laboratory interpretation, imaging)
+- Detailed histology or cellular biology
+- Pathophysiology of specific diseases
+- Surgical or procedural anatomy
+
+## Verification
+
+You have this skill if you can: (1) describe each of the six major organ systems by function and homeostatic contribution; (2) given a primary disruption, trace its propagation across at least three organ systems; (3) explain why the digestive system is simultaneously a digestive, endocrine, immune, and nervous organ — and why this matters for understanding disease; and (4) articulate at least one way that TCM's Zang-Fu framework captures functional integration that biomedicine's organ-specific approach can obscure.
+
+
+---
+
+<!-- source: archive/domains/recognizing-somatic-patterns/SKILL.md -->
+
+## Imported source: archive/domains/recognizing-somatic-patterns/SKILL.md
+
+---
+name: recognizing-somatic-patterns
+id: recognizing-somatic-patterns
+description: >-
+  Learn to recognize somatic patterns — habitual muscular tension,
+  sensory-motor amnesia, and autonomic nervous system states — in
+  yourself and in descriptions of others, using the vocabulary of
+  somatic education.
+type: learn
+date-created: 2026-03-06
+authors:
+  - claude-opus-4-6
+tags:
+  - Somatics
+part-of: medicine
+region:
+  reads: ["content/medicine/"]
+  writes: ["content/medicine/"]
+---
+
+## What you will be able to do
+
+- Define somatic awareness, proprioception, and interoception as distinct but related sensory capacities, and explain what each contributes to the experience of embodiment.
+- Identify Hanna's three reflex patterns (green-light, red-light, trauma) in descriptions of posture, movement, and chronic tension — and explain the nervous system logic behind each.
+- Explain sensory-motor amnesia: what it is, how it develops, why it cannot be resolved through stretching, and what pandiculation does differently.
+- Distinguish between somatic practices (Feldenkrais, Clinical Somatic Education, Somatic Experiencing, Alexander Technique, Structural Integration) by their primary methods and theoretical emphases.
+- Recognize when a physical complaint (chronic tension, restricted movement, unexplained pain) might involve somatic patterns rather than or in addition to structural pathology.
+- Connect somatic patterns to psychological and autonomic phenomena — how chronic muscular holding relates to defense mechanisms, how interoception relates to affect, how autonomic states relate to trauma responses.
+
+## Prerequisites
+
+- No formal prerequisites. The introductory curriculum is self-contained.
+- Personal experience of attending to bodily sensation (even briefly, as in the opening exercise of the curriculum) is helpful for grounding the concepts experientially.
+
+## Reference documents
+
+- [Introduction to Somatic Awareness](../../curricula/introduction-to-somatic-awareness.md) — the introductory lesson
+- [Somatics](../../concepts/somatics/index.md) — the field overview
+- [Somatic Awareness](../../concepts/somatics/somatic-awareness.md) — the full concept
+- [Interoception](../../concepts/somatics/interoception.md) — the body's internal sense
+- [Proprioception](../../concepts/somatics/proprioception.md) — the sense of position and movement
+- [Pandiculation](../../concepts/somatics/pandiculation.md) — the somatic alternative to stretching
+- [Clinical Somatic Education](../../concepts/somatics/schools/clinical-somatic-education.md) — Hanna's clinical method
+- [Somatic Experiencing](../../concepts/somatics/somatic-experiencing.md) — Levine's trauma resolution approach
+
+## Scope
+
+This skill covers recognition and conceptual understanding of somatic patterns. It does not cover:
+
+- Performing somatic techniques (pandiculation, Feldenkrais lessons, SE sessions) — these require supervised practice
+- Diagnosing musculoskeletal conditions
+- Prescribing somatic interventions for specific complaints
+- The full neuroscience of proprioception and interoception at the receptor level
+
+## Verification
+
+You have this skill if you can: (1) notice and name a somatic pattern in a description of someone's posture, tension, or movement (identifying the relevant reflex pattern and explaining the nervous system logic); (2) explain to someone why stretching does not resolve chronic tension and what pandiculation does instead; (3) distinguish between at least three somatic traditions by their methods and emphases; and (4) explain the connection between somatic patterns and psychological phenomena (defense mechanisms, affect, trauma responses) without collapsing one into the other.
+
+
+---
+
+<!-- source: archive/domains/using-tcm-diagnostic-vocabulary/SKILL.md -->
+
+## Imported source: archive/domains/using-tcm-diagnostic-vocabulary/SKILL.md
+
+---
+name: using-tcm-diagnostic-vocabulary
+id: using-tcm-diagnostic-vocabulary
+description: >-
+  Learn to use Traditional Chinese Medicine's core diagnostic vocabulary
+  — Jing, Qi, Shen, Yin-Yang, Zang-Fu, and meridians — to describe
+  patterns of vitality, dysfunction, and balance that Western vocabulary
+  does not name.
+type: learn
+date-created: 2026-03-06
+authors:
+  - claude-opus-4-6
+tags:
+  - MedicalTraditions
+  - ChinesePhilosophy
+part-of: medicine
+region:
+  reads: ["content/medicine/"]
+  writes: ["content/medicine/"]
+---
+
+## What you will be able to do
+
+- Define the Three Treasures (Jing, Qi, Shen) as three layers of system vitality — stored substrate, circulating energy, and reflective awareness — and explain what each describes that Western medical vocabulary does not.
+- Apply the Yin-Yang framework as a tool for describing dynamic balance (not static opposition) — identifying complementary aspects of any phenomenon and recognizing when the balance has shifted.
+- Describe the Zang-Fu organ-function systems as functional relationships rather than anatomical organs, and explain why the TCM "liver" is not the biomedical liver.
+- Explain what meridians describe — channels of functional connection linking interior organs to the surface and to each other — without reducing them to anatomical structures or dismissing them as metaphor.
+- Use TCM vocabulary diagnostically: given a description of a person's condition (energy, mood, digestion, sleep, pain patterns), identify which TCM categories are relevant and what pattern they suggest.
+- Articulate why TCM categories are diagnostic rather than ontological — they describe how a situation presents, not what the world is made of — and why forcing correspondence with Western biomedical categories distorts both systems.
+
+## Prerequisites
+
+- No formal prerequisites. The reference documents are self-contained.
+- Familiarity with basic anatomy (particularly the [digestive](../../topics/human-body/texts/the-digestive-system.md) and [nervous](../../topics/human-body/texts/the-nervous-system.md) systems) is helpful for understanding how TCM categories relate to — without reducing to — biomedical structures.
+
+## Reference documents
+
+- [Traditional Chinese Medicine](../../disciplines/traditional-chinese-medicine/index.md) — the discipline overview
+- [Zang-Fu (Organ-Function Systems)](../../disciplines/traditional-chinese-medicine/zang-fu.md) — the functional organ systems
+- [Meridians (Jing Luo)](../../disciplines/traditional-chinese-medicine/meridians.md) — the channels through which Qi circulates
+- [Three Treasures (San Bao)](../../terms/san-bao.md) — Jing, Qi, Shen as a diagnostic framework
+- [Qi](../../terms/qi.md) — circulating vitality
+- [Jing](../../terms/jing.md) — stored essence
+- [Shen](../../terms/shen.md) — reflective awareness and spirit
+
+## Scope
+
+This skill covers using TCM vocabulary as a diagnostic and descriptive framework. It does not cover:
+
+- TCM clinical practice (pulse diagnosis, tongue diagnosis, herbal prescription, acupuncture point selection)
+- The Five Phases (Wu Xing) in depth, beyond their role in Zang-Fu relationships
+- TCM treatment principles or herbal pharmacology
+- The history of TCM's development and its relationship to Chinese philosophy and statecraft
+
+## Verification
+
+You have this skill if you can: (1) describe a person's condition using the Jing/Qi/Shen framework, identifying which level of vitality is affected; (2) explain a Zang-Fu pattern (e.g., "Liver overacting on Spleen") in functional terms without mapping it onto biomedical anatomy; (3) articulate what TCM vocabulary names that Western medical vocabulary does not — specifically the intermediate condition of animation without adaptivity; and (4) explain to someone why comparing the TCM liver to the biomedical liver misunderstands both systems.

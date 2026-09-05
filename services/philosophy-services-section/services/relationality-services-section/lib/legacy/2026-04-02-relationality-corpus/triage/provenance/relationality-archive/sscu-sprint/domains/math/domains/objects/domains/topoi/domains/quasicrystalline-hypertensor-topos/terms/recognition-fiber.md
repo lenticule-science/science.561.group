@@ -1,0 +1,10 @@
+---
+
+name: recognition-fiber
+introduces: term
+tags: []
+---
+
+A **recognition fiber** is a finite bounded [Heyting algebra](../../../../teaching/explanations/heyting-algebra/index.md) $H_t$ equipped with a modal closure operator, assigned to each trace $t$ in the [trace category](./trace-category.md). Recognition fibers are the primitive "stuff living over traces" in the [Quasicrystalline Hypertensor Topos](../index.md).
+
+Axiom A1 of the [QCHTTopos specification](../quasicrystalline-hypertensor-topos-specification.md) defines fiber algebras. Each fiber carries meets, joins, implication, negation, top, and bottom, together with a modal closure operator that interacts with the Heyting structure.

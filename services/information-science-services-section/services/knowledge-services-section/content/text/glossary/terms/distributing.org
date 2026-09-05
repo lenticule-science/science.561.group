@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       0f225eec-d192-4536-9dec-01502d81703a
+:END:
+#+title: distributing
+#+date: [2025-08-25 Mon 19:44]
+

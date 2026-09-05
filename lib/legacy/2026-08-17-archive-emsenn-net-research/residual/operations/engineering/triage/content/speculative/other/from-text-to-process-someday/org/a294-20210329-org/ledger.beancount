@@ -1,0 +1,51 @@
+* Frontmatter
+option "title" "emsenn's Ledger"
+option "operating_currency" "USD"
+option "name_income" "Revenue"
+option "booking_method" "FIFO"
+2020-03-23 commodity HIVE
+  name: "HIVE token"
+  asset-class: "fungible liquid blockchain token"
+2020-03-23 commodity HP
+  name: "HIVE Power"
+  asset-class: "fungible illiquid blockchain token"
+2020-03-23 commodity HBD
+  name: "HIVE-Backed dollar"
+  asset-class: "fungible illiquid blockchain token"
+2021-02-11 open Assets:Blockchain:Hive:Wallet:HIVE
+2021-02-11 open Assets:Blockchain:Hive:Wallet:HP
+2021-02-11 open Assets:Blockchain:Hive:Wallet:HBD
+2021-02-11 open Revenue:Labor:Blockchain:Hive:Memo
+2021-02-11 * "LeoFinance" "Receive Hive memo about Hive onboarding"
+  Revenue:Labor:Blockchain:Hive:Memo       -0.001 HIVE {0.23 USD}
+  Assets:Blockchain:Hive:Wallet:HIVE        0.001 HIVE {0.23 USD}
+2021-02-11 * "Powerup 0.001 Hive"
+  Assets:Blockchain:Hive:Wallet:HIVE       -0.001 HIVE {}
+  Assets:Blockchain:Hive:Wallet:HP          0.001 HP {0.23 USD}
+2021-02-14 open Revenue:Labor:Blockchain:Hive:Rewards:Curation
+2021-02-14 * "Hive" "Claim Hive curation reward(s)."
+  Revenue:Labor:Blockchain:Hive:Rewards:Curation       -0.001 HP {0.2426 USD}
+  Assets:Blockchain:Hive:Wallet:HP        0.001 {0.2426 USD}
+2021-02-15 open Assets:Blockchain:Hive:Engine:SWAPHIVE SWAPHIVE
+2021-02-15 open Expenses:Finance:Blockchain:Exchange:Hive:Engine:Withdrawal
+2021-02-15 * "Withdraw 122 SWAP.HIVE from Hive-Engine"
+  Assets:Blockchain:Hive:Engine:SWAPHIVE   -122 SWAPHIVE {}
+  Expenses:Finance:Blockchain:Exchange:Hive:Engine:Withdrawal   1.22 SWAPHIVE {0.26 USD}
+  Assets:Blockchain:Hive:Wallet:HIVE   120.780 HIVE {0.26 USD}
+2021-02-15 * "Powerup 92 Hive"
+  Assets:Blockchain:Hive:Wallet:HIVE       -92 HIVE {}
+  Assets:Blockchain:Hive:Wallet:HP          92 HP {0.26 USD}
+2021-02-17 * "Hive" "Claim Hive curation reward(s)."
+  Revenue:Labor:Blockchain:Hive:Rewards:Curation       -0.002 HP {0.30 USD}
+  Assets:Blockchain:Hive:Wallet:HP        0.002 {0.30 USD}
+2021-02-18 open Assets:Blockchain:Hive:Games:DCity
+2021-02-18 open Assets:Blockchain:Hive:Games:DCity:Cards
+2021-02-18 open Expenses:Gaming:Computer:Blockchain:Hive:DCity
+2021-02-18 * "Buy DCity Cards for 12 HIVE"
+  Assets:Blockchain:Hive:Wallet:HIVE       -12 HIVE {}
+  Assets:Blockchain:Hive:Games:DCity:Cards       1 NFT-HIVE-DCITY-1-LUXHOME {0.10 USD}
+  Assets:Blockchain:Hive:Games:DCity:Cards       1 NFT-HIVE-DCITY-1-ZOO {0.870573 USD}
+  Expenses:Gaming:Computer:Blockchain:Hive:DCity
+2021-12-19 * "Hive" "Receive Hive memo about referring @takeonrules"
+  Revenue:Labor:Blockchain:Hive:Memo    -0.001 HIVE {0.32 USD}
+  Assets:Blockchain:Hive:Wallet:HIVE     0.001 HIVE {0.32 USD}

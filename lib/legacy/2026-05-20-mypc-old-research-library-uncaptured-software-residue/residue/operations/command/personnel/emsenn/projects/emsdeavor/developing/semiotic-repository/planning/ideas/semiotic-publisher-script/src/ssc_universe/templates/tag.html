@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Tag: {{ tag }}</h1>
+<p class="provenance">Concepts carrying this tag.</p>
+<section class="panel" role="region" aria-labelledby="tagged-concepts">
+  <h2 id="tagged-concepts">Tagged concepts</h2>
+  <ul>
+  {% for concept in concepts %}
+    <li>
+      <a href="{{ relroot }}{{ concept.anchor }}.html">{{ concept.title }}</a>
+      {% if concept.ann_terms %}
+      <div class="concept-ann" aria-label="Ann_X(k) terms for {{ concept.anchor }}">Ann_X(k): {{ concept.ann_terms | join(', ') }}</div>
+      {% endif %}
+      <div class="concept-metrics" aria-label="Inferred structure for {{ concept.anchor }}">
+        <span class="concept-chip">T generators: {{ concept.generator_count }}</span>
+        <span class="concept-chip">F elements: {{ concept.fragment_size }}</span>
+        {% if concept.is_failure %}<span class="concept-chip failure" aria-label="Failure fragment for {{ concept.anchor }}">⊥_fail</span>{% endif %}
+      </div>
+    </li>
+  {% endfor %}
+  </ul>
+</section>
+<p class="back-to-top"><a href="#top" aria-label="Back to the top of this page">Back to top</a></p>
+{% endblock %}

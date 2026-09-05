@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       5b2829a0-28f0-41ee-8334-b78aa62ab5cc
+:ROAM_ALIASES: n-1 predecssor
+:instantiates: [[id:a874ec71-5f5d-4f4e-ad93-7b921ebe637b][sequential position]]
+:END:
+#+title: previous
+#+date: [2025-08-29 Fri 20:46]
+#+index: sequencing!sequential position!previous

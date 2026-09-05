@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       100e7f91-0f4b-4a0c-ae2b-a30c8e11be41
+:END:
+#+title: mechanism
+#+date: [2025-09-19 Fri 09:11]
+

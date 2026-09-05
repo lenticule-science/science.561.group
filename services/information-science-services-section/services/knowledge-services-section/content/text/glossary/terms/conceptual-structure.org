@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       f43ccdb6-9a9b-4680-8e33-494f6f1bf7fc
+:END:
+#+title: conceptual structure
+#+date: [2025-10-07 Tue 21:57]
+

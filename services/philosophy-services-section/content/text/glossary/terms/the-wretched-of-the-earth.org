@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       b123ead0-3fa2-4f20-8b6f-3cb3a24aacca
+:ROAM_REFS: https://libcom.org/library/wretched-earth-frantz-fanon
+:END:
+#+title: The Wretched of the Earth
+#+date: [2025-08-26 Tue 10:22]
+

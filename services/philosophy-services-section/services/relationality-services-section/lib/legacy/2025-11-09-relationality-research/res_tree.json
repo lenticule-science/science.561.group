@@ -1,0 +1,44 @@
+{
+  "reserved": [
+    "Relationlessness",
+    "Reflex"
+  ],
+  "definitions": [
+    {
+      "name": "Articulation",
+      "params": [
+        "statement"
+      ],
+      "body": {
+        "type": "list",
+        "elements": [
+          {
+            "type": "symbol",
+            "value": "Reflex"
+          },
+          {
+            "type": "symbol",
+            "value": "statement"
+          }
+        ]
+      },
+      "source_line": 45
+    }
+  ],
+  "expressions": [
+    {
+      "source_line": 29,
+      "expression": {
+        "type": "symbol",
+        "value": "Relationlessness"
+      }
+    },
+    {
+      "source_line": 36,
+      "expression": {
+        "type": "symbol",
+        "value": "Reflex"
+      }
+    }
+  ]
+}

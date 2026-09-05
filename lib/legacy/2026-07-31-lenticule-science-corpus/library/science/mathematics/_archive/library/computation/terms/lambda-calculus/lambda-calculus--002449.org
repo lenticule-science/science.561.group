@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       fbe8ccac-b47b-4c28-88ad-6740bd65da10
+:node-relations: (([[id:bee496e1-139b-4a7f-8a24-d4c14e6084c6][instantiates]] . [[id:7f12dea3-9840-4e9a-b8e3-109ab633799e][calculus]]) ([[id:4695cc5c-70e9-442f-8a89-4b14fff5be3e][subject]] . [[id:ad29e15d-de70-4a16-9540-7d6c6f1e20fc][lambda functor]]))
+:END:
+#+title: lambda calculus
+#+date: [2025-09-17 Wed 10:12]
+

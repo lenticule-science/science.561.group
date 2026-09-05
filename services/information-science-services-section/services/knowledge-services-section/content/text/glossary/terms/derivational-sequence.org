@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       fddd4192-a779-4684-bf5e-2af52f3d6649
+:END:
+#+title: derivational sequence
+#+date: [2025-08-31 Sun 11:25]
+

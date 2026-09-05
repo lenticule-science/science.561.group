@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "emsenn/schema/pure-mathematics-change-bundle",
+  "title": "pure-mathematics-change-bundle",
+  "$comment": "JSON wire validation for the bundle governed by content/contracts/pure-mathematics-change-bundle-qualification.rml. OML also verifies RFC 6920 content identity, exact changed paths, path envelope, empty application dependencies, and required evidence identities.",
+  "type": "object",
+  "required": ["bundleId", "baseline", "patch", "claim", "verification", "applicationDependencies", "authority"],
+  "additionalProperties": false,
+  "properties": {
+    "bundleId": { "type": "string", "minLength": 1 },
+    "baseline": {
+      "type": "object", "required": ["repository", "revision"], "additionalProperties": false,
+      "properties": { "repository": { "type": "string", "minLength": 1 }, "revision": { "type": "string", "pattern": "^[0-9a-f]{40}$" } }
+    },
+    "patch": {
+      "type": "object", "required": ["content", "ni", "changedPaths"], "additionalProperties": false,
+      "properties": {
+        "content": { "type": "string", "minLength": 1, "maxLength": 1000000 },
+        "ni": { "type": "string", "pattern": "^ni:///sha-256;[A-Za-z0-9_-]{43}$" },
+        "changedPaths": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } }
+      }
+    },
+    "claim": {
+      "type": "object", "required": ["id", "kind", "statement", "corpusSources"], "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "minLength": 1 }, "kind": { "const": "pure-mathematics" }, "statement": { "type": "string", "minLength": 1 },
+        "corpusSources": {
+          "type": "array", "minItems": 1,
+          "items": { "type": "object", "required": ["path", "ni"], "additionalProperties": false, "properties": { "path": { "type": "string", "minLength": 1 }, "ni": { "type": "string", "pattern": "^ni:///sha-256;[A-Za-z0-9_-]{43}$" } } }
+        }
+      }
+    },
+    "verification": {
+      "type": "array", "minItems": 2,
+      "items": { "type": "object", "required": ["id", "outcome", "evidence"], "additionalProperties": false, "properties": { "id": { "type": "string", "minLength": 1 }, "outcome": { "const": "passed" }, "evidence": { "type": "string", "pattern": "^ni:///sha-256;[A-Za-z0-9_-]{43}$" } } }
+    },
+    "applicationDependencies": { "type": "array", "maxItems": 0 },
+    "authority": {
+      "type": "object", "required": ["controller", "basis", "mayAdmitToObsmetrologia"], "additionalProperties": false,
+      "properties": { "controller": { "type": "string", "minLength": 1 }, "basis": { "type": "string", "minLength": 1 }, "mayAdmitToObsmetrologia": { "const": false } }
+    }
+  }
+}

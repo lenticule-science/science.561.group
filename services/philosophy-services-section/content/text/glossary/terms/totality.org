@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       ce43d2db-88a9-42d7-9d93-6d9bc3000eb2
+:END:
+#+title: totality
+#+date: [2025-09-13 Sat 12:44]
+

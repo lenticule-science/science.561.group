@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID:       939f6493-a082-4c92-9401-4e9cdccb0b6e
+:form:     [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]
+:END:
+#+title: Babble, [2025-09-19 Fri 21:00], On improving GnoponEmacs
+#+date: [2025-09-19 Fri 21:00]
+#+author: emsenn
+
+One thing I want to do is try and make sure I take some time to [[id:ee30fde6-1d49-47fa-95a7-9b1629e897ec][stabilize]] [[id:0d50b865-57b3-4d6d-aadf-1925457396a4][my research]], as I take time to do other work. Like, [[id:1fe90527-1b1b-45bf-a1b3-31610e671a9b][hacking]] on potential [[id:de5cda39-6fa8-4f17-a11e-3c6aca2b66e8][MUD engines]] and [[id:850dd02f-f25d-4287-bb47-60a546cf5002][semiosis simulators]] is cool, but I'll benefit from taking time to do what i can to improve [[id:edc48bf0-336b-4b63-8505-a3730b328c9d][GnoponEmacs]], the [[id:7d54dd45-1b51-4e4d-b36f-6e75b93a6af6][engine]] I'm actually using to do my research.
+
+One thought I have is, if I can get better at using [[id:b9c743ff-1514-4437-a8bf-70701cd40b1c][Org-mode clocking]], maybe I could try and [[id:96505b81-edf8-42f7-9a93-de3838ebb75a][budget]] out some fraction of my time spent working toward [[id:89735d5e-afac-42d0-b0fc-b865b177115f][improving]] the [[id:0cfd72af-ade5-49a3-a367-ebf9fcdcf0da][system]] I have.
+
+In order to do that - get better at clocking - I'd need to improve the system, which shows something: I can't try [[id:edd38d25-a123-49e7-ba79-7b491260632f][ideas]] that I [[id:91257384-4e2b-4425-987b-89d4df1592f1][imagine]], because the system is [[id:7c85da6f-94b5-4205-9b98-1b210e3d45ed][underdeveloped]].
+
+But, short-term, I think I should just try and take some time when I've got good thinking capacity to futz in my notes. Right now, if my brain isn't dead, I'm doing active research, and then when my brain is dead, I'm doing minimal edits and addition of markup. (i.e. flagging [[id:e5474b02-2852-4c8a-91cd-4a683e0db672][nodes]] as public).
+
+But like, I've been using just "blank node" to create almost /all/ of my nodes that I create as I make them as I write. I could do a lot more without much effort if I bothered to write better capture templates - even just for being able to more easily copy in [[id:a299fe51-7629-4b6e-afa0-7c7717371cc7][my Fediverse posts]].
+
+I think that's my biggest hangup right now; it's a big enough hurdle that I can't actually think of much else I want to tackle right now.
+
+...Though that brings me to: Huh, I don't actually have a way to plan things in GnoponEmacs.
+
+And, I'm remembering that I wanted to consider reworking my babbles, so that I can potentially more-easily link them together: be able to spin up a babble for exploring a detail in nuance, or for when topics take a turn. But, also, that might be presumptive and inhibit the stream-of-consciousness I'm doing with them currently; another thought is that I could simple start adding in subtrees to structure babbles, after I'm done.
+
+(Long term, I have an idea to have GnoponEmacs bring up specific nodes with specific edit suggestions, i.e. add/revise links, add headlines, whatever.)
+
+Here, I'm realizing I've mentioned a few different ideas, and should probably go add them to the appropriate files.

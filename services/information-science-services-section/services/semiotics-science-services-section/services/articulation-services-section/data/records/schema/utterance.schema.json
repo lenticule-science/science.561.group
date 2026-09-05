@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "relating/articulating/utterance",
+  "title": "Utterance",
+  "description": "The base admission carrier: the ordered pair (Token, Claim), token slot first (owner-ruled). A Fregean unsaturated function: articulating opens it at the potential aperiodic articulation cell with the token slot filled and the claim slot empty (articulating/utterance.mts `articulate`) — the residue of unsaturation carried in that empty slot, never elided. Every public morphism of relating normalizes back through Mark → Utterance → articulate.",
+  "type": "array",
+  "prefixItems": [
+    { "$ref": "./token.schema.json" },
+    { "$ref": "./claim.schema.json" }
+  ],
+  "items": false,
+  "minItems": 2,
+  "maxItems": 2
+}

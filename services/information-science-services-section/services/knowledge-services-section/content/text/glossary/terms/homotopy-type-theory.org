@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       cf29271b-9d29-4689-934f-223710dce476
+:END:
+#+title: homotopy type theory
+#+date: [2025-08-24 Sun 11:09]
+

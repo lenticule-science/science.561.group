@@ -1,0 +1,25 @@
+\subsection{Finite nerve coordination}
+
+\begin{theorem}[Components-count from a finite graph]\label{thm:fingraph-components-count}\notready\uses{thm:cover-nerve, thm:tree-coordination-free}
+\emph{Open frontier, stated but not formalized.} The cover-nerve invariant
+$|V|\le|E|+|C|$ should be derived from a \texttt{Discrete.FinGraph} equipped
+with a component counter: each of the $|E|$ edges merges at most one of the
+$|V|$ initial singleton components, so at least $|V|-|E|$ components survive.
+Infomaterial has \texttt{FinGraph.Connected} and \texttt{Reach} but no general
+component count yet; the tree case (\cref{thm:tree-coordination-free}) is the
+only instance where the invariant is currently discharged from graph axioms.
+Red until the union-find component counter is built and the bound is proved
+over an arbitrary finite nerve.
+\end{theorem}
+
+\begin{theorem}[Value-level coordination obstruction (the converse)]\label{thm:coordination-value-converse}\notready\uses{thm:coordination-h1-iff-forest, thm:lawvere-harmonic-clinv-zero, thm:bilattice-stable-top-conflict}
+\emph{Open frontier, stated but not formalized.} Beyond the obstruction rank:
+a genuine cycle ($\check H^1\neq0$) actually obstructs a monotone global
+section --- the agreeing-family gluing fails --- unless a total order is
+imposed on the cycle's cells. The existence half (an agreeing family over an
+acyclic cover glues) is the settling sheaf model's $H^1$-vanishing
+(\texttt{Cohomology.h1\_vanishes}), but that model glues unconditionally. The
+genuine value-level obstruction lives in the bilattice consensus dynamics, the
+same place \cref{thm:bilattice-stable-top-conflict} is red. Red until the
+obstruction is modeled past the unconditionally-gluing \v{C}ech model.
+\end{theorem}

@@ -1,0 +1,39 @@
+#+title: Org-attach-screenshot
+#+begin_head
+#+ghe_schema: term-0.1.3
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-31 Thu 14:49]
+#+roam_tags: term
+#+end_head
+
+#+name: org-attach-screenshot-definition
+*/[[file:org_attach_screenshot.org][Org-attach-screenshot]]/* is an [[file:emacs_package.org][Emacs package]], part of the [[file:org_ecosystem.org][Org ecosystem]], that is for using [[file:org_attach.org][Org-attach]] to link screenshots to Org-mode entries.
+
+#+toc: headlines 2
+* Introduction
+
+* Org-attach-screenshot
+
+** Org-attach-screenshot usage
+
+#+name: org-attach-screenshot-straight-use-package-elisp
+#+caption: Org-attach-screenshot
+#+begin_src elisp 
+ (use-package org-attach-screenshot :straight t
+    :config (setq
+	     org-attach-screenshot-command-line "spectacle -rbno $f"))
+#+end_src
+
+* Supplements
+
+** Record history
+   :PROPERTIES:
+   :CUSTOM_ID: record-history
+   :END:
+   :LOGBOOK:
+   - Note taken on [2020-12-31 Thu 14:49] \\
+      Created from [[file:~/org/s/p/groundhog_emacs.org::*Org-attach-screenshot][Org-attach-screenshot]]
+
+      
+   :END:

@@ -1,0 +1,101 @@
+:PROPERTIES:
+:ID:       dbe2a349-8d7c-481d-908e-11cb39ef6f89
+:form:     [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]
+:instantiates: [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]
+:author:   [[id:40cbaad9-af3c-4573-b356-ae116687e483][emsenn]]
+:public:   true
+:date-created: [2025-09-29 Mon 22:40]
+:END:
+#+title: Poking at stats for my research notes
+#+date: [2025-09-29 Mon 22:40]
+#+author: emsenn
+
+I wanna poke around at some stats about [[id:3ffa600c-f831-428f-bd11-a4e6583ff5ad][my files]].
+
+Interestingly, as I'm writing this, it'll produce *new* stats each time I update my Website. But I'm writing this on [[id:e669b56a-9fb7-4216-a76a-e4a8246eab10][September 29th, 2025]], and I started this research archive, with [[id:edc48bf0-336b-4b63-8505-a3730b328c9d][GnoponEmacs]], on [[id:a1ab1040-b2b4-4dc9-9738-eac2630d9f50][August 7th]].
+
+First, I was curious: how many nodes do I have, what's the mean number of links in each one, what's the max links in one nodes, and how many are isolatd.
+
+#+begin_src elisp
+  (defun gpe/org-roam-link-stats ()
+    "Return an alist of (node-id . link-count)."
+    (mapcar
+     (lambda (node)
+       (cons (org-roam-node-id node)
+             (length (org-roam-backlinks-get node))))
+     (org-roam-node-list)))
+  (let* ((stats (gpe/org-roam-link-stats))
+       (counts (mapcar #'cdr stats)))
+  (list
+   (cons 'total-nodes (length stats))
+   (cons 'mean-links (/ (apply #'+ counts) (float (length counts))))
+   (cons 'max-links (apply #'max counts))
+   (cons 'isolated-nodes (cl-count 0 counts))))
+
+#+end_src
+
+#+RESULTS:
+: ((total-nodes . 3905) (mean-links . 1.7144686299615877) (max-links . 106) (isolated-nodes . 325))
+
+As of writing, 3783 nodes, 1.6 mean links per, max links in one node is 103, and 295 nodes are isolated.
+
+Now I wanna look at the distribution of those links:
+
+#+begin_src elisp
+(let* ((stats (mapcar
+               (lambda (node)
+                 (cons (org-roam-node-id node)
+                       (length (org-roam-backlinks-get node))))
+               (org-roam-node-list)))
+       (counts (mapcar #'cdr stats))
+       (hist (make-hash-table :test 'equal)))
+  (dolist (c counts)
+    (puthash c (1+ (gethash c hist 0)) hist))
+  (let (alist)
+    (maphash (lambda (k v) (push (cons k v) alist)) hist)
+    (concat "| Degree | Count |\n|-\n"
+            (mapconcat
+             (lambda (pair)
+               (format "| %d | %d |" (car pair) (cdr pair)))
+             (sort alist (lambda (a b) (< (car a) (car b))))
+             "\n"))))
+#+end_src
+
+#+RESULTS:
+#+begin_example
+| Degree | Count |
+|-
+| 0 | 325 |
+| 1 | 2693 |
+| 2 | 473 |
+| 3 | 157 |
+| 4 | 69 |
+| 5 | 60 |
+| 6 | 25 |
+| 7 | 23 |
+| 8 | 14 |
+| 9 | 8 |
+| 10 | 11 |
+| 11 | 3 |
+| 12 | 3 |
+| 13 | 4 |
+| 14 | 2 |
+| 15 | 1 |
+| 16 | 2 |
+| 17 | 7 |
+| 18 | 2 |
+| 20 | 3 |
+| 21 | 1 |
+| 23 | 2 |
+| 24 | 3 |
+| 25 | 1 |
+| 29 | 1 |
+| 30 | 1 |
+| 33 | 1 |
+| 35 | 1 |
+| 48 | 1 |
+| 51 | 1 |
+| 59 | 2 |
+| 91 | 3 |
+| 106 | 2 |
+#+end_example

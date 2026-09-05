@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       64928231-fd2c-4c59-ae56-b00480e2591c
+:END:
+#+title: extending
+#+date: [2025-10-06 Mon 23:51]
+

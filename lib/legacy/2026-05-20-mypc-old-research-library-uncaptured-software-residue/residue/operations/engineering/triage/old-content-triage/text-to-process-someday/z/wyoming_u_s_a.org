@@ -1,0 +1,25 @@
+#+title: Wyoming, U.S.A.
+#+begin_head
+#+ghe_schema: term-0.1.3
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2021-01-07 Thu 10:42]
+#+roam_tags: term
+#+end_head
+
+#+name: definition
+*/[[file:wyoming_u_s_a.org][Wyoming, U.S.A.]]/* is a [[file:u_s_state.org][U.S. state]]. 
+#+toc: headlines 2
+* Introduction
+* Wyoming, U.S.A.
+* Supplements
+** Record history
+   :PROPERTIES:
+   :CUSTOM_ID: record-history
+   :END:
+   :LOGBOOK:
+   - Note taken on [2021-01-07 Thu 10:42] \\
+      Created from [[file:~/org/s/p/yellowstone_national_park.org::definition][definition]]
+
+      
+   :END:

@@ -1,0 +1,71 @@
+#+SETUPFILE: ./default-setup.inc
+#+TITLE: Recordkeeping Manual
+#+EXPORT_FILE_NAME: ../pub/recordkeeping-manual.org
+#+MACRO: document-type manual
+#+MACRO: assumed-knowledge familiar with {{{emacs-link}}} and {{{orgmode-link}}}
+#+MACRO: objective-definition a goal qualified by the /results/ required for its completion
+#+MACRO: action-definition a general thing-to-do, usually associated with one or more /objectives/
+#+MACRO: task-definition an actionable thing that can be done, usually part of an /action/
+#+MACRO: result-definition a measure to be used in assessing whether an /objective/ has been completed
+#+TOC: headlines 1
+* Introduction
+#+INCLUDE: "./plates.inc::draft"
+#+INCLUDE: "./plates.inc::eli-default"
+#+INCLUDE: "./plates.inc::literate-programming"
+#+INCLUDE: "./plates.inc::assumes-knowledge"
+* Recordkeeping Manual
+** The Master Record
+I use a single Org-mode file to maintain my personal records. It
+follows the same format as most of my documents: a header of Org-mode
+configuration stuff, followed by top-level sections for the following:
+- *Introduction* which discloses stuff like the confidentiality of the
+  records.
+- *Records* which contains the records themselves.
+- *Footnotes* which contain footnotes.
+- *Supplements* which contains necessary supplements, like the ledgers
+  extracted from logs.
+** Types of Records
+*** Log
+A */log/* is a long-form entry for keeping track of events, plans, and
+work done.
+
+The logs in a recordkeeping file are organized under the /Logs/ header
+first by type, then with a "datetree," resulting in something like
+this:
+#+BEGIN_SRC org
+  ,* Logs
+  ,** Personal Logs
+  ,*** 2019
+  ,**** 2019-05 May
+  ,***** 2019-05-15 Wednesday
+  ,****** <2019-05-15 Wed 11:11>
+  Today I plan to work on the following tasks:
+
+  - [ ] Write the Recordkeeping Manual
+
+  I also find myself thinking about various things I can do with the
+  mulberries that are ripening...
+#+END_SRC
+The list of tasks would include links to the relevant task in that
+part of the master record.
+**** Personal Log
+A */personal log/* is a log which is mostly focused on one's personal
+experiences or personal perspective on something.
+*** Work Package
+**** Objective
+An */objective/* is {{{objective-definition}}}.
+**** Action
+An */action/* is {{{action-definition}}}.
+**** Task
+A */task/* is {{{task-definition}}}.
+* Supplements
+** Contribute
+   :PROPERTIES:
+   :CUSTOM_ID: supplements-contribute
+   :END:
+#+INCLUDE: "./plates.inc::personal-contribute"
+** License
+   :PROPERTIES:
+   :CUSTOM_ID: supplements-license
+   :END:
+#+INCLUDE: "./plates.inc::mit-license"

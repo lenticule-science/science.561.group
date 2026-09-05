@@ -1,0 +1,24 @@
+{{ define "headline" }}
+  <h1>{{ (.Data.Term | title | pluralize) | default .Site.Title }}</h1>
+{{ end }}
+{{ define "main" }}
+  {{ with .Pages }}
+    <ul>
+      {{ range . }}
+        <li>
+          <a href="{{ .Permalink}}"><strong>
+            {{- if (eq .Kind "taxonomy") -}}
+              {{- .Title | pluralize -}}
+	    {{- else -}}{{- .Title -}}{{- end -}}
+	  </strong></a><br/>
+	</li>
+      {{ end }}
+    </ul>
+  {{ end }}
+{{ end }}
+
+## Additional material from the Google Drive library
+
+{{ define "main" }}
+  {{ partial "pages-listing" . }}
+{{ end }}

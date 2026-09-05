@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://561.group/swarm-intelligence/articulating/library/aperiodic-articulation-category/inferring/inferring.schema.json",
+  "title": "Inferring morphism record",
+  "description": "Morphism: prompt × model → utterance. Aperiodic-regime morphism placed inside aperiodic-articulation-category; variance: restriction of the articulating-class morphism to the LLM-endpoint enactor. Given a prompt (a claim schema-document, the outgoing message) and an llm-model (endpoint + model references), inferring calls the endpoint and returns an utterance whose token (slot 0) carries the call provenance (originating prompt, endpoint, model, transactionTime) as a schema-doc, and whose claim (slot 1) carries the reply text as a schema-doc. The reply IS an utterance — it composes directly into the descent via articulating.",
+  "kind": "morphism",
+  "domain": "#schema/llm-model",
+  "codomain": "#schema/utterance",
+  "variance": "restriction",
+  "monotone": true,
+  "type": "object",
+  "required": ["input", "output"],
+  "additionalProperties": false,
+  "properties": {
+    "input": {
+      "type": "object",
+      "required": ["prompt", "model"],
+      "additionalProperties": false,
+      "properties": {
+        "prompt": { "$ref": "https://561.group/swarm-intelligence/articulating/library/aperiodic-articulation-category/inferring/library/prompt/prompt.schema.json" },
+        "model": { "$ref": "https://561.group/swarm-intelligence/articulating/library/aperiodic-articulation-category/inferring/library/llm-model/llm-model.schema.json" }
+      }
+    },
+    "output": { "$ref": "https://561.group/swarm-intelligence/library/utterance/utterance.schema.json" }
+  }
+}

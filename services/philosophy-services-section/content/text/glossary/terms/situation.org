@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       e4c6a564-9138-4509-ba65-4504e5162d9a
+:END:
+#+title: situation
+#+date: [2025-08-29 Fri 22:14]
+

@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       916eca24-9e56-433f-b05a-e22161f5a099
+:public:   true
+:form:     [[id:6640fcb5-cb3c-420e-a9c3-d45e17bb6d6b][communicating]]
+:END:
+#+title: talking
+#+index: talking
+#+date [2025-08-01 Fri 09:16]
+

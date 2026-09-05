@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://561.group/swarm-intelligence/articulating/library/aperiodic-articulation-category/library/aperiodic-articulation-cell/library/stable-aperiodic-articulation-cell/characterizing/characterizing.schema.json",
+  "title": "Characterizing (role → character)",
+  "description": "Characterizing produces a character — a stable articulation bearing a χ-nucleus disposition — from a role (a capability-signature) plus an endorsed-behavior set and an optional persona. Generator of the character object (characterizing/library/character). Variance: restriction (a character is the stable cell restricted to an endorsed behavioral fixed-set). Grounded in the lab agentic-characters survey: character = χ-nucleus, role = Σ_R, persona = bearer. Per docs/ORCHESTRATION-GENEALOGY.md.",
+  "kind": "morphism",
+  "variance": "restriction",
+  "type": "object",
+  "required": ["input", "output"],
+  "additionalProperties": false,
+  "properties": {
+    "input": {
+      "type": "object",
+      "required": ["role"],
+      "additionalProperties": false,
+      "properties": {
+        "role": { "description": "a capability-signature: a slug string or an array of capability references", "anyOf": [{ "type": "string", "minLength": 1 }, { "type": "array", "items": { "type": "string", "minLength": 1 } }] },
+        "endorse": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+        "persona": { "type": ["string", "null"] }
+      }
+    },
+    "output": { "$ref": "https://561.group/swarm-intelligence/articulating/library/aperiodic-articulation-category/library/aperiodic-articulation-cell/library/stable-aperiodic-articulation-cell/characterizing/library/character/character.schema.json" }
+  }
+}

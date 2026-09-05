@@ -1,0 +1,50 @@
+{
+  "name": "@lenticule-science/l-space",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "L-Space: the Lenticule Science corpus application, routing admitted principals to VaultMaze or GEODE over CAIRN.",
+  "engines": {
+    "node": ">=24"
+  },
+  "dependencies": {
+    "@red-cup-engineering/vault-compiler": "0.1.2",
+    "@red-cup-engineering/cairn": "0.1.0",
+    "@red-cup-engineering/discord-rest-transport-service": "1.1.0",
+    "@red-cup-engineering/drew": "0.1.1",
+    "@red-cup-engineering/exchange-google-callback-service": "0.1.1",
+    "@red-cup-engineering/geode": "0.1.6",
+    "@red-cup-engineering/judge-principal-admission-service": "0.1.1",
+    "@red-cup-engineering/education-platform-service": "0.2.4",
+    "@red-cup-engineering/oauth-services-section": "0.1.0",
+    "@red-cup-engineering/project-web-feed-artifacts-service": "0.1.0",
+    "@red-cup-engineering/relay-to-google-consent-service": "0.1.1",
+    "@red-cup-engineering/render-markdown-block-html-service": "0.1.2",
+    "@red-cup-engineering/render-markdown-inline-html-service": "0.1.2",
+    "@red-cup-engineering/vaultmaze": "0.1.0",
+    "@red-cup-engineering/victor": "0.1.10",
+    "@red-cup-engineering/web-tufte-gui-services-section": "0.8.2",
+    "jose": "6.2.10"
+  },
+  "exports": {
+    ".": "./src/index.mjs",
+    "./config": "./src/config.mjs",
+    "./release-observation": "./src/release-observation.mjs"
+  },
+  "scripts": {
+    "build:cloud": "npm run build:engine && node --stack-size=65500 --import tsx scripts/build-cloud-release.mjs",
+    "build:worker": "esbuild lib/cloudflare/src/worker.mjs --bundle --platform=node --format=esm --minify --banner:js=\"import { createRequire as __createRequire } from 'node:module'; const require = __createRequire(import.meta.url);\" --outfile=dist/worker.mjs",
+    "build:vps": "npm run build:cloud && npm run build:worker && esbuild lib/vps/authoring-entry.mjs --bundle --platform=node --format=esm --banner:js=\"import { createRequire as __createRequire } from 'node:module'; const require = __createRequire(import.meta.url);\" --outfile=dist/vps-authoring.mjs",
+    "build:engine": "node scripts/build-browser-engine.mjs",
+    "cloudflare:config": "node scripts/configure-cloudflare.mjs",
+    "cloudflare:deploy": "npm run build:cloud && npm run cloudflare:config && wrangler d1 migrations apply lenticule-science-vaultmaze --remote --config lib/cloudflare/wrangler.generated.jsonc && wrangler deploy --config lib/cloudflare/wrangler.generated.jsonc",
+    "vps:start": "node lib/vps/server.mjs",
+    "mcp:start": "node scripts/serve-mcp.mjs",
+    "test:vps": "node --test lib/vps/test/*.test.mjs",
+    "test": "node --import tsx --test test/*.test.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2",
+    "tsx": "4.23.13",
+    "wrangler": "4.123.0"
+  }
+}

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       519d51bd-2653-4ba6-a723-e00405086342
+:END:
+#+title: derivation source
+#+date: [2025-10-04 Sat 10:17]
+

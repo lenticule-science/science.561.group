@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       470cd805-c1b3-4357-ab15-913b9283c7c2
+:public:   true
+:form:     [[id:b4ae66ad-8700-4af3-b995-17cfd8b74eb9][condition]]
+:END:
+#+title: unproven
+#+date: [2025-08-30 Sat 11:32]
+#+index: proving!not-proving!unproven
+
+For a [[id:e5248432-6d1e-436e-9bdc-50fe0fcd3fe6][thing]] to be */unproven/* is to be [[id:518bb07b-ae7e-4a3c-8c3c-e895f3679dfc][not]] [[id:bb635b18-7f1d-4e0a-bb7b-1b0a48c13241][proven]].
+
+

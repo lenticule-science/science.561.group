@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       1cb48e74-a58f-4378-a3c0-9641b0d5eb2e
+:END:
+#+title: cover-cropping
+#+date: [2025-09-23 Tue 20:34]
+

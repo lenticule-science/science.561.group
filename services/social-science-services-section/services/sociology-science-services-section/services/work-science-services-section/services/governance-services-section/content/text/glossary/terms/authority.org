@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       be095971-c665-40c0-87d1-d12681f1e55e
+:END:
+#+title: authority
+#+date: [2025-09-04 Thu 20:11]
+

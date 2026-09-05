@@ -1,0 +1,12 @@
+{{- $scratch := newScratch -}}
+{{- range . -}}
+  {{- $scratch.Add "plans" (slice ( . | markdownify )) -}}
+{{- end -}}
+{{- with ($scratch.Get "plans") -}}
+{{- if (eq (len .) 0) -}}{{- else -}}
+<ul>
+{{- range first 3 . -}}
+<li>{{ . }}</li>
+{{- end -}}
+</ul>
+{{- end -}}{{- end -}}

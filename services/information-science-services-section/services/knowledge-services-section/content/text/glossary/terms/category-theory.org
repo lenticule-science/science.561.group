@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       44d2a15c-6492-4e13-bbd4-20e9ed6ab495
+:END:
+#+title: category theory
+#+date: [2025-10-09 Thu 12:30]
+

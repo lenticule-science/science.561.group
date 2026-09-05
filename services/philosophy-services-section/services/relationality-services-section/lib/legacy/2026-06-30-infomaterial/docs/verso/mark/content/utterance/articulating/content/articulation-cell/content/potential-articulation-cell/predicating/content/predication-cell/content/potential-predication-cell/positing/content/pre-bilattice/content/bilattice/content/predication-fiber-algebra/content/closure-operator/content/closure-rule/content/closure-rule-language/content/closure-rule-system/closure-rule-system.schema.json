@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/pre-bilattice/content/bilattice/content/predication-fiber-algebra/content/closure-operator/content/closure-rule/content/closure-rule-language/content/closure-rule-system",
+  "title": "closure-rule-system",
+  "description": "A finite or countable set of closure rules whose admissible antecedent formulas are fixed by a closure-rule language; it generates the least closure operator that is inflationary, idempotent, and closed under firing every rule instantiation.",
+  "type": "object",
+  "required": ["rules", "language", "generated_closure_operator", "inflationary", "idempotent", "rule_closed"],
+  "properties": {
+    "rules": {
+      "type": "array",
+      "description": "the finite or countable set S of closure rules",
+      "items": { "$ref": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/pre-bilattice/content/bilattice/content/predication-fiber-algebra/content/closure-operator/content/closure-rule" }
+    },
+    "language": {
+      "$ref": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/pre-bilattice/content/bilattice/content/predication-fiber-algebra/content/closure-operator/content/closure-rule/content/closure-rule-language",
+      "description": "the closure-rule language fixing which antecedent formulas are admissible, and thereby the regime-class of the generated operator"
+    },
+    "generated_closure_operator": {
+      "$ref": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/pre-bilattice/content/bilattice/content/predication-fiber-algebra/content/closure-operator",
+      "description": "cl^S, the least operator satisfying the three conditions, obtained as the pointwise meet of all qualifying operator families"
+    },
+    "inflationary": { "const": true, "description": "v <=_k cl^S_p(v) for every fiber p" },
+    "idempotent": { "const": true, "description": "cl^S_p . cl^S_p = cl^S_p for every fiber p" },
+    "rule_closed": { "const": true, "description": "for every rule r in S and every instantiation y of its free variables, the consequent of r[y] holds in cl^S(v) whenever its antecedent does" }
+  }
+}

@@ -1,0 +1,15 @@
+#+title: culture
+#+begin_head
+#+ghe_schema: record-0.1.1
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-22 Tue 10:45]
+#+roam_alias: "cultural"
+#+roam_tags: term
+#+end_head
+
+#+name: culture-definition-text
+#+begin_quote
+*/Culture/* is... difficult to define. Let me come back to this.
+#+end_quote
+

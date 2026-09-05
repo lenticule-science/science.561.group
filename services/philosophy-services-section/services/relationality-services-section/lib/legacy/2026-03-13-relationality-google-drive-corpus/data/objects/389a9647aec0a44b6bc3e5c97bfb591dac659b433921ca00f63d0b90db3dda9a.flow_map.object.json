@@ -1,0 +1,12 @@
+{
+  "act_version": "v1",
+  "carrier_id": "2417541c7a188c089d83e8ba4b1d65d0ac964641f2a508f6438b8e23d38daa6f",
+  "elements": [
+    "25bf90d79b1bedf69ef92750e9326b1b50a7ef52ecc0ae072b2814f4b2555e47"
+  ],
+  "flow_table": {
+    "25bf90d79b1bedf69ef92750e9326b1b50a7ef52ecc0ae072b2814f4b2555e47": "25bf90d79b1bedf69ef92750e9326b1b50a7ef52ecc0ae072b2814f4b2555e47"
+  },
+  "id": "389a9647aec0a44b6bc3e5c97bfb591dac659b433921ca00f63d0b90db3dda9a",
+  "kind": "flow_map"
+}

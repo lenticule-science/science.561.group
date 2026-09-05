@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       fb179423-029a-4506-83c3-9bad6793e1ab
+:ROAM_ALIASES: zines
+:END:
+#+title: zine
+#+date: [2025-08-25 Mon 19:44]
+

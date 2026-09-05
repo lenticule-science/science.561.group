@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       e9d865b0-8765-436e-8623-1a63be562113
+:END:
+#+title: Obsidian
+#+date: [2025-09-19 Fri 10:21]
+

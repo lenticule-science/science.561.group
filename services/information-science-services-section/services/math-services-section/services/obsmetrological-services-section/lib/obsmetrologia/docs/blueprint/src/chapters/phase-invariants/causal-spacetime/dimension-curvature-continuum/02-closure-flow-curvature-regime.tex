@@ -1,0 +1,58 @@
+\subsection{Closure-flow curvature regime}
+
+\begin{proposition}[Directed joins are the Scott-continuity test carrier]\label{thm:directed-family-carrier}\lean{Obsmetrologia.Closure.Scott.DirectedFamily}\leanok\uses{thm:closure-regime-data, thm:kle}
+A directed family is the finite charge-lattice projection of a directed subset.
+It is the carrier on which a closure operator is tested for commuting with
+directed joins.
+\end{proposition}
+
+\begin{theorem}[Finite charge closures are Scott-continuous]\label{thm:finite-scott-continuous}\lean{Obsmetrologia.Closure.Scott.finite_scott_continuous}\leanok\uses{thm:directed-family-carrier, thm:closure-operator, thm:spine-is-strict-regime}
+On the finite charge carrier, every directed join is attained.  Therefore every
+charge closure commutes with directed joins and sits on the strict/Scott side
+of the regime projection.
+\end{theorem}
+
+\begin{proposition}[A non-Scott firing is failure to commute with a directed join]\label{thm:nsc-firing-carrier}\lean{Obsmetrologia.Flow.NSCFiring.IsNSC}\leanok\uses{thm:finite-scott-continuous}
+An NSC firing is the precise obstruction equation: firing after the directed
+join is not the directed join of the firings.  This is the incidence point
+where infinitary antecedents enter the proof tree.
+\end{proposition}
+
+\begin{theorem}[Scott-continuity is absence of NSC firing]\label{thm:scott-continuous-iff-no-nsc-firing}\lean{Obsmetrologia.Flow.NSCFiring.scott_continuous_iff_no_nsc_firing}\leanok\uses{thm:nsc-firing-carrier, thm:finite-scott-continuous}
+A charge closure is Scott-continuous exactly when no directed-family prefix is
+an NSC firing for its operator.  This turns the regime flag into an incidence
+condition.
+\end{theorem}
+
+\begin{theorem}[NSC firings source the non-Scott regimes]\label{thm:nsc-firing-source-of-aperiodic}\lean{Obsmetrologia.Flow.NSCFiring.nsc_firing_source_of_aperiodic}\leanok\uses{thm:scott-continuous-iff-no-nsc-firing, thm:regime-cohomology-vanishes-iff}
+Genuine finite charge closures have no NSC firing, while a concrete
+forall-antecedent firing operator witnesses one.  The witness lands on the
+cohomology-bearing non-Scott side of the regime table.
+\end{theorem}
+
+\begin{theorem}[Transfinite closure flow has no settling-limit blowup]\label{thm:transfinite-closure-flow-no-blowup}\lean{Obsmetrologia.Valuation.ModalFrame.transfinite_closure_flow_no_blowup}\leanok\uses{thm:scott-continuous-iff-no-nsc-firing, thm:finite-scott-continuous}
+For the modal-frame closure flow indexed by the internal ordinal, every
+settling limit sequence is continuous and has no NSC firing.  The theorem
+therefore gives the discrete global-regularity statement that is currently
+proved: no limit-stage blowup occurs once the predecessor chain has reached the
+settled value.
+\end{theorem}
+
+\begin{theorem}[Raw all-limit regularity is a frontier obligation]\label{thm:raw-all-limit-regularity-frontier}\notready\uses{thm:transfinite-closure-flow-no-blowup}
+The stronger slogan "continuity at every raw limit constructor" is not yet a
+proved theorem.  The current Brouwer ordinal admits degenerate fundamental sequences,
+so this claim needs an additional carrier for genuine/cofinal limit
+presentations before it can be promoted.
+\end{theorem}
+
+\begin{theorem}[Curvature is the non-Scott regime projection]\label{thm:curvature-regime-correspondence}\lean{Obsmetrologia.Flow.CurvatureRegime.curvature_regime_correspondence}\leanok\uses{thm:nsc-firing-source-of-aperiodic, thm:regime-cohomology-vanishes-iff}
+Flatness, vanishing \(H^1\), absence of curvature events, and strict/Scott
+regime membership are the same side of the projection.  Curvedness,
+nonvanishing \(H^1\), and NSC firing live on the transfinite-bounded or
+aperiodic side.
+\end{theorem}
+
+\begin{theorem}[Positive curvature rank has an NSC firing witness]\label{thm:curvature-rank-has-nsc-firing}\lean{Obsmetrologia.Flow.CurvatureRegime.rank_nonzero_has_nsc_firing}\leanok\uses{thm:curvature-regime-correspondence}
+The positive-rank side is not empty bookkeeping: the formalized
+forall-antecedent operator supplies an actual NSC firing witness.
+\end{theorem}

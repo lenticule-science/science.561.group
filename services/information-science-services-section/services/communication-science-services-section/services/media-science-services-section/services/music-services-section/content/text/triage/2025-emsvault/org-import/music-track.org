@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       3e4481fd-c3f3-499b-8c74-9fec05bcc8c4
+:END:
+#+title: music track
+#+date: [2025-07-21 Mon]
+#+author: emsenn

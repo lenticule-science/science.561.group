@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       6a3e79f3-43fc-4f06-954e-e3266d78eeb4
+:public:   true
+:instantiates: [[id:32e00173-c695-4bb6-b0d2-9dc17fec128b][act]]
+:field:    [[id:626f3f76-39ca-445c-9b8a-7d4f3ad424b1][violence]]
+:END:
+#+title: violent act
+#+date: [2025-08-31 Sun 09:53]
+#+index: act!violent act
+#+index: violence!violent act

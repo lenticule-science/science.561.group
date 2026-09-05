@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       c449af7f-8dcd-4686-a3d8-f92048d29861
+:END:
+#+title: adding
+#+date: [2025-08-28 Thu 08:54]
+

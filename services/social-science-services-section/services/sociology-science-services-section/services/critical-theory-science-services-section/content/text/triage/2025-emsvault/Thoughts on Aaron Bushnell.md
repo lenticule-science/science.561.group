@@ -1,0 +1,3 @@
+Folk have, and will have, a lot to say about Aaron Bushnell, who self-immolated for Palestinian autonomy. A lot of folk around me are trying to figure out how the act relates to concepts like *revolutionary suicide* or *martydrom*. Some figuring of this relationship relies on knowing whether Bushnell was acting toward the changes he wanted to see in the world, or whether self-immolation was his sole political act.
+
+It wasn't. Bushnell was an anarchist, and active in anarchist communities across Turtle Island.

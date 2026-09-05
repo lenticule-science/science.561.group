@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       28c6e916-4d53-48a2-af74-2a583e19fe0d
+:END:
+#+title: Tero–Kobayashi–Nakagaki equation
+#+date: [2025-09-26 Fri 23:57]
+

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       3c4248d2-455e-4d23-81af-434aa565c761
+:END:
+#+title: Elisp
+#+date: [2025-09-19 Fri 21:56]
+

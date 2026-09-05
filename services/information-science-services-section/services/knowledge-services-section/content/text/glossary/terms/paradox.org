@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       ef3399e9-ac7a-4f82-a995-9b27971a73ad
+:END:
+#+title: paradox
+#+date: [2025-09-03 Wed 21:05]
+

@@ -1,0 +1,27 @@
+---
+title: "Artificial Intelligence"
+component-of: computing
+---
+
+Theories of artificial intelligence systems in the engineering branch of the
+library.
+
+| Theory | Status | Summary |
+|---|---|---|
+| [agents](theories/agents/_index.md) | active | Formal theory of agentic systems: three-condition characterization, coordination topology and overhead, delegation chains and accountability |
+| [swarm-intelligence](theories/swarm-intelligence/_index.md) | active | Formal theory of swarm-coordinated multi-agent systems: stigmergy, emergence from local rules, classical convergence results (ACO, PSO), and the failure of classical convergence conditions for LLM-based swarms |
+| [reinforcement-learning](theories/reinforcement-learning/_index.md) | active | Formal theory of sequential decision-making under reward signals: MDPs, Bellman optimality, Q-learning and policy-gradient convergence, and the structural reasons that RLHF training of LLM agents inherits reward-hacking and specification-gaming pathologies |
+| [alignment](theories/alignment/_index.md) | active | Formal theory of AI alignment: inner-vs-outer decomposition of alignment failure, mesa-optimization and goal misgeneralization, the structural conditions for deceptive alignment, the corrigibility-capability tension, and the eliciting-latent-knowledge problem |
+| [planning](theories/planning/_index.md) | active | Formal theory of how agents construct goal-achieving courses of action from known dynamics: classical STRIPS/PDDL planning and its complexity, A* and admissible heuristic search, Monte Carlo tree search, hierarchical task networks, planning under uncertainty, and the recasting of LLM chain-of-thought / tree-of-thoughts as inference-time search |
+| [world-modeling](theories/world-modeling/_index.md) | active | Formal theory of how agents represent environment dynamics: forward and latent world models, model-based RL (Dyna, Dreamer, MuZero), the compounding-error horizon limit, sim-to-real transfer bounds, latent-state non-identifiability, and the contested status of LLMs as implicit world models |
+| [agent-foundations](theories/agent-foundations/_index.md) | active | Formal theory of what it means to be a rational agent embedded in the same physical universe whose laws the agent must reason about: classical decision theory (VNM, Savage, Jeffrey), the CDT/EDT/FDT divergence on Newcomblike problems, embedded agency (Demski-Garrabrant), Garrabrant's logical induction, reflective stability and the Loebian obstacle, naturalized induction, vingean reflection, bounded rationality |
+| [memory](theories/memory/_index.md) | active | Formal theory of how AI agents store, retrieve, and update information across time: the cognitive-psychology decomposition (episodic/semantic/procedural/working), classical memory architectures (knowledge bases, replay buffers, memory networks), retrieval-augmented generation, the context-window-as-memory controversy, the capacity-retrieval tradeoff, the lost-in-the-middle effect, and the no-free-lunch result for memory architectures |
+| [interpretability](theories/interpretability/_index.md) | active | Formal theory of how to understand the internal computation of trained neural networks: the features-and-circuits vocabulary (Olah-Cammarata Distill 2020), the superposition hypothesis explaining polysemanticity (Elhage 2022), sparse-autoencoder feature decomposition (Bricken 2023, Templeton 2024), attribution methods (activation patching, ablation, ACDC), the linear-representation hypothesis, and the open faithfulness/scalability questions for frontier models |
+| [multi-agent](theories/multi-agent/_index.md) | active | Formal theory of systems composed of multiple interacting autonomous agents: classical multi-agent systems (Shoham & Leyton-Brown 2009), mechanism design (Vickrey, VCG, revelation principle), social choice and Arrow / Gibbard-Satterthwaite impossibilities, equilibrium concepts and the price of anarchy (Koutsoupias-Papadimitriou 1999), Byzantine fault tolerance and the $n > 3f$ bound (Lamport-Shostak-Pease 1982), CAP impossibility, and the contemporary engineering practice of LLM-agent orchestration. Parent of the [theory-of-mind](theories/multi-agent/theories/theory-of-mind/_index.md) subtheory studying inter-agent modeling |
+| causal-reasoning | planned | Pearl's framework applied to agents: do-calculus, counterfactual policy evaluation, causal RL |
+| knowledge-representation | planned | Ontologies, knowledge graphs, neurosymbolic integration |
+| reasoning | planned | Deductive, inductive, and abductive reasoning; formal CoT theory; the reasoning-vs-retrieval distinction |
+| evaluation | planned | Capability elicitation, dangerous-capability evaluations, sandbagging, the eval-capabilities gap |
+| robustness | planned | Adversarial robustness, distribution shift, OOD detection, jailbreaking |
+| scaling-laws | planned | Neural scaling laws, the emergence controversy, capability prediction |
+| learning | planned | Learning paradigms other than RL: imitation-learning, in-context-learning, continual-learning, meta-learning (each as subtheory) |

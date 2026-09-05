@@ -1,0 +1,197 @@
+site_name: emsenn
+site_description: writer & developer
+site_author: 'emsenn'
+site_url: 'http://emsenn.samjones.media'
+
+repo_name: 'emsenn/personal'
+repo_url: 'https://github.com/emsenn/personal'
+
+google_analytics:
+    - 'UA-108128128-2'
+    - 'auto'
+
+copyright: "I hope you like my website, it's"
+
+pages:
+    - home: index.md
+    - fiction:
+        - fiction index: fiction/index.md
+        - teraum:
+            - teraum index: fiction/teraum/index.md
+    - poetry:
+        - poetry index: poetry/index.md
+        - psalms to the moon:
+            - psalms index: poetry/psalms/index.md
+            - disclaimer 1: poetry/psalms/disclaimer-1.md
+            - ego: poetry/psalms/ego.md
+            - disclaimer 2: poetry/psalms/disclaimer-2.md
+            - motif: poetry/psalms/motif.md
+            - note to self: poetry/psalms/note-to-self.md
+            - denial: poetry/psalms/denial.md
+            - start: poetry/psalms/start.md
+            - cost: poetry/psalms/cost.md
+            - preparation: poetry/psalms/preparation.md
+            - dichotomy: poetry/psalms/dichotomy.md
+            - bravery: poetry/psalms/bravery.md
+            - continuity: poetry/psalms/continuity.md
+            - surrender: poetry/psalms/surrender.md
+            - un-terse: poetry/psalms/un-terse.md
+            - comparing: poetry/psalms/comparing.md
+            - definition: poetry/psalms/definition.md
+            - the tower, unrevised: poetry/psalms/the-tower-unrevised.md
+            - autonomy: poetry/psalms/autonomy.md
+            - eventual: poetry/psalms/eventual.md
+            - drink: poetry/psalms/drink.md
+            - dream: poetry/psalms/dream.md
+            - beholder: poetry/psalms/beholder.md
+            - deceit: poetry/psalms/deceit.md
+            - complex: poetry/psalms/complex.md
+            - apology: poetry/psalms/apology.md
+            - observe: poetry/psalms/observe.md
+            - clarity: poetry/psalms/clarity.md
+            - care: poetry/psalms/care.md
+            - cowardice: poetry/psalms/cowardice.md
+            - education: poetry/psalms/education.md
+            - lucid infection 1: poetry/psalms/lucid-infection-1.md
+            - asking heart: poetry/psalms/asking-heart.md
+            - exchange: poetry/psalms/exchange.md
+            - breath: poetry/psalms/breath.md
+            - samson: poetry/psalms/samson.md
+            - internalization: poetry/psalms/internalization.md
+            - honesty: poetry/psalms/honesty.md
+            - difference: poetry/psalms/difference.md
+            - simplicity: poetry/psalms/simplicity.md
+            - fearful: poetry/psalms/fearful.md
+            - scent: poetry/psalms/scent.md
+            - color: poetry/psalms/color.md
+            - perception: poetry/psalms/perception.md
+            - language: poetry/psalms/language.md
+            - remove: poetry/psalms/remove.md
+            - friction: poetry/psalms/friction.md
+            - skin: poetry/psalms/skin.md
+            - probability: poetry/psalms/probability.md
+            - obstinate: poetry/psalms/obstinate.md
+            - consent: poetry/psalms/consent.md
+            - easter: poetry/psalms/easter.md
+            - road: poetry/psalms/road.md
+            - value: poetry/psalms/value.md
+            - fragments: poetry/psalms/fragments.md
+            - sex: poetry/psalms/sex.md
+            - epic: poetry/psalms/epic.md
+            - declare: poetry/psalms/declare.md
+            - southren: poetry/psalms/southren.md
+            - pause: poetry/psalms/pause.md
+            - travel: poetry/psalms/travel.md
+            - fashion: poetry/psalms/fashion.md
+            - tragedy: poetry/psalms/tragedy.md
+            - union: poetry/psalms/union.md
+            - sleep: poetry/psalms/sleep.md
+            - familiar: poetry/psalms/familiar.md
+            - static: poetry/psalms/static.md
+            - inference: poetry/psalms/inference.md
+            - terror: poetry/psalms/terror.md
+            - unique: poetry/psalms/unique.md
+            - pressure: poetry/psalms/pressure.md
+            - millennial: poetry/psalms/millennial.md
+            - thought: poetry/psalms/thought.md
+            - exhale: poetry/psalms/exhale.md
+            - undefined: poetry/psalms/undefined.md
+            - placement: poetry/psalms/placement.md
+            - individual: poetry/psalms/individual.md
+            - tinder: poetry/psalms/tinder.md
+            - ignorance: poetry/psalms/ignorance.md
+            - water: poetry/psalms/water.md
+            - family: poetry/psalms/family.md
+            - lucid infection 3: poetry/psalms/lucid-infection-3.md
+            - judgment 1 & 2: poetry/psalms/judgment-1-2.md
+            - hymn: poetry/psalms/hymn.md
+            - weight: poetry/psalms/weight.md
+            - hear: poetry/psalms/hear.md
+            - prescient: poetry/psalms/prescient.md
+            - present: poetry/psalms/present.md
+            - end: poetry/psalms/end.md
+        - grace:
+            - grace index: poetry/grace/index.md
+            - anniversary: poetry/grace/anniversary.md
+            - 2055: poetry/grace/2055.md
+            - patter: poetry/grace/patter.md
+            - spring: poetry/grace/spring.md
+            - 2070: poetry/grace/2070.md
+            - death: poetry/grace/death.md
+            - stretch: poetry/grace/stretch.md
+            - perspective: poetry/grace/perspective.md
+    - references:
+        - reference index: ref/index.md
+        - project management:
+            - getting started: ref/project-management/index.md
+        - writing documentation:
+            - getting started: ref/mkdocs-website/index.md
+        - style guide: ref/style-guide.md
+        - preferred tools: ref/preferred-tools.md
+    - sources:
+        - source index: src/index.md
+    - blog:
+        - blog index: blog/index.md
+        - 2009:
+            - july:
+                - publicity isn't always good: blog/20090718-publicity.md
+                - was neda christian: blog/20090719-neda.md
+        - 2014:
+            - october:
+                - gun control stats suck: blog/20141029-gun-control.md
+        - 2016:
+            - january:
+                - unpaid internships suck: blog/20160121-internships.md
+            - april:
+                - is it better to starve?: blog/20160425-scarcity.md
+            - october:
+                - don't check in at standing rock: blog/20161031-standing-rock.md
+        - 2017:
+            - october:
+                - machine learning is the next semiconductor: blog/20171011-machine-learning.md
+    - feedback: feedback.md
+    
+theme: 'material'
+
+
+extra:
+  feature:
+    tabs: true
+  palette:
+    primary: 'light blue'
+    accent: 'amber'
+  font:
+    text: 'Comfortaa'
+    code: 'Cousine'
+  social:
+    - type: 'github'
+      link: 'https://github.com/emsenn'
+    - type: 'twitter'
+      link: 'https://twitter.com/emsenn'
+    - type: 'linkedin'
+      link: 'https://www.linkedin.com/in/emsenn/'
+    
+markdown_extensions:
+  - admonition
+  - codehilite:
+        guess_lang: false
+        linenums: true
+  - toc(permalink=true)
+  - markdown_include.include::
+        base_path: docs
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde

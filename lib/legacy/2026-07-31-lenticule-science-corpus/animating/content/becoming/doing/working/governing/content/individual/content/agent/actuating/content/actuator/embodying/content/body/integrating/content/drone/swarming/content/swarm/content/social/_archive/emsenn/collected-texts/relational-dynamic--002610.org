@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       c289a415-7cf4-44fd-a5dd-0139c6c56f0e
+:public:   true
+:field:    [[id:7031b7c2-7bfd-410e-8ed7-fbfc81dc3afc][relational dynamics]]
+:instantiates: [[id:bee4430c-bf1c-4691-ab81-a681997e3928][dynamic]]
+:END:
+#+title: relational dynamic
+#+date: [2025-09-26 Fri 12:40]
+#+index: relational dynamics!relational dynamic
+
+A */relational dynamic/* is a [[id:bee4430c-bf1c-4691-ab81-a681997e3928][dynamic]] within a [[id:dd9ea598-3b8f-424e-9375-744d1a09cad0][relational field]].

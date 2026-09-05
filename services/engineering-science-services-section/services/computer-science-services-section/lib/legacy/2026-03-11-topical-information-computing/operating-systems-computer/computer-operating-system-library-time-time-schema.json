@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/system/library/operating-system/library/computer-operating-system/library/time/time.schema.json",
+  "title": "Time",
+  "description": "JSON Schema for a time instance: an ISO-8601 timestamp produced from POSIX clock_gettime, used as the t-field of every EAVT row.",
+  "type": "object",
+  "required": ["has-value", "clock-source"],
+  "additionalProperties": true,
+  "properties": {
+    "has-value": {
+      "type": "string",
+      "format": "date-time",
+      "description": "The rendered ISO-8601 string."
+    },
+    "clock-source": {
+      "type": "string",
+      "enum": ["realtime", "monotonic"]
+    },
+    "precision": {
+      "type": "string",
+      "enum": ["seconds", "milliseconds", "microseconds", "nanoseconds"]
+    },
+    "host": {
+      "type": "string",
+      "description": "Host identifier whose clock produced the value."
+    }
+  }
+}

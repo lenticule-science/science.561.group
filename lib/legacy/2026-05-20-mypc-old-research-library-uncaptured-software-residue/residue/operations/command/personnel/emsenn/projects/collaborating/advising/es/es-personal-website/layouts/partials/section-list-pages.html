@@ -1,0 +1,9 @@
+{{ if .Pages }}
+  <section>
+    {{ if (eq .Kind "taxonomyTerm") }}
+      {{ partial "ul-pages-by-count.html" . }}
+    {{ else }}
+      {{ partial "ul-pages-by-title.html" . }}
+    {{ end }}
+  </section>
+{{ end }}

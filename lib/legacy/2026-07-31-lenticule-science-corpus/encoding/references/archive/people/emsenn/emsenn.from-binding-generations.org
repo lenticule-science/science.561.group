@@ -1,0 +1,5 @@
+#+title: emsenn
+#+author: Esther Davis
+#+email: edavis@bindinggenerations.net
+#+roam_key: https://emsenn.net
+*/emsenn/* is the person who set up the [[file:index.org][Binding Generations]] website. 

@@ -1,0 +1,14 @@
+{{ define "header" }}
+<h1>personal summary</h1>
+{{ end }}
+{{ define "main" }}
+<p>my name is emsenn
+</p>
+<p>{{ partial "personal-whatido-span.html" . }}</p>
+<p>
+{{ partial "personal-recent-actions-span.html" . }}
+</p>
+<p>
+{{ partial "personal-current-plans-span.html" . }}
+</p>
+{{ end }}

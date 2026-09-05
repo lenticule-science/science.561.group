@@ -1,0 +1,22 @@
+% Macros and theorem environments used by BOTH the web and print builds.
+
+% Theorem-like environments that appear in the dependency graph. All share the
+% `theorem` counter, numbered within chapter (the [chapter] on the first line).
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+% Project notation (the corpus's own symbols). Harmless if unused by a chapter.
+\newcommand{\charges}{\{\bot, t, f, \top\}}
+\newcommand{\leqk}{\le_k}
+\newcommand{\leqt}{\le_t}
+\newcommand{\settle}{\Diamond\!\circ\!\Box}
+\newcommand{\botk}{\bot_k}

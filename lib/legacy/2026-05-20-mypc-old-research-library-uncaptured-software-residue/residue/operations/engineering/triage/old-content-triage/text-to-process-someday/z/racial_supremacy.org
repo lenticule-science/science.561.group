@@ -1,0 +1,12 @@
+#+title: racial supremacists
+#+begin_head
+#+ghe_schema: reference-0.1.1
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-22 Tue 16:42]
+#+roam_tags: term
+#+end_head
+#+name: racial-supremacy-definition-text
+#+begin_quote
+*/Racial supremacy/* is the belief that one [[file:human.org][human]] [[file:race.org][race]] is superior to all others.
+#+end_quote

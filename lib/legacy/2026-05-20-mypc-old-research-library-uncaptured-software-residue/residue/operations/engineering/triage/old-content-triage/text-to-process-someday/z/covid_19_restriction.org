@@ -1,0 +1,41 @@
+#+title: COVID-19 restriction
+#+begin_head
+#+ghe_schema: term-0.1.3
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-30 Wed 14:34]
+#+roam_tags: term
+#+end_head
+
+#+name: definition
+A */[[file:covid_19_restriction.org][COVID-19 restriction]]/* is a limit put on something because of the [[file:covid_19.org][COVID-19]] pandemic. [[file:social_distancing.org][Social distancing]] and the requirement to wear a [[file:mask.org][face-mask]] in public are examples of /COVID-19 restrictions/.
+
+#+toc: headlines 2
+* Introduction
+* COVID-19 restrictions
+
+** Cultural reactions
+   :LOGBOOK:
+   - Note taken on [2020-12-30 Wed 14:43] \\
+     I'm not sure what exactly I want to put in this entry, but talking about the /cultural reactions/ to /COVID-19 restrictions/ seems important. Maybe just a bit about my personal history with them?
+     
+        I adopted many of the things that would become "restrictions" before they were mandated by my community. I started wearing a [[file:mask.org][face-mask]] by the end of February, and by [[file:d/2020-03-03.org][2020-03-03]] I stopped going places, except when it was related to [[file:mutualist_labor.org][mutualist labor]].
+     
+        I would, through the spring, take a cart with food to distribute down [[file:chapel_hill_north_carolina.org][Chapel Hill]]'s [[file:high_street.org][high street]], and I would get booed, coughed at, and shoved, by people who were angry I was wearing a face-mask. That continued until the businesses got shut down by mandate, and suddenly there weren't people to jeer.
+     
+        Outside that, there were lots of people who were really resistant to wearing masks, and even still are. They'll "forget" to pull their mask up... as though they're not supposed to be keeping it up.
+     
+        Thinking about this was shockingly draining, so that's about all I have to say for now.
+   :END:
+   
+* Supplements
+** Record history
+   :PROPERTIES:
+   :CUSTOM_ID: record-history
+   :END:
+   :LOGBOOK:
+   - Note taken on [2020-12-30 Wed 14:34] \\
+      Created from 
+
+      
+   :END:

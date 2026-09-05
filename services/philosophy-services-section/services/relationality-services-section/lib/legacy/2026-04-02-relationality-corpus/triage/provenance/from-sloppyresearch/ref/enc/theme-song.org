@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       488b5e82-0a07-4bd3-be15-f807f21f4529
+:END:
+#+title: theme song
+#+date [2025-08-07 Thu 21:49]
+#+index: theme song
+#+index: song!theme song
+#+index: theme!theme song
+
+A */theme song/* is the [[id:79aaafcf-dc06-4edc-9af0-5b52904c3cbb][song]] that [[id:581fe6b1-04fa-4218-a5d7-98bf4f3345b1][accompanies]] another [[id:e5248432-6d1e-436e-9bdc-50fe0fcd3fe6][thing]] as part of its [[id:712aad3e-7db6-4ca7-838a-5411b3ba7cb9][theme]], such as a song being used during a [[id:da02a777-3f5d-4cc3-aaa3-ee6612772239][television show]]'s [[id:60443e78-279c-477b-8d07-e2121ea6e90c][introduction]].

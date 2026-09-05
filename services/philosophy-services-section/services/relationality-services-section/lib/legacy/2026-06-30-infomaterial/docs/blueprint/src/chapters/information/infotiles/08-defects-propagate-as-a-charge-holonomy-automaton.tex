@@ -1,0 +1,38 @@
+\section{Defects propagate as a charge-holonomy automaton}
+
+\Cref{thm:defect-is-inconsistency-sheaf} supplies the defect fiber: a section of
+the $\top$-sheaf over the interlacement order.  This subgraph adds the missing
+transition carrier: charge holonomy, cascade propagation, and the circuit reading
+of controlled defects.
+
+\begin{theorem}[A defect is a charge-holonomy automaton]\label{thm:defect-charge-holonomy-automaton}\notready\uses{thm:defect-is-inconsistency-sheaf, thm:mobius-band-holonomy}
+\emph{(Open frontier --- stated, not formalized.)} The defect-propagation calculus
+(Shimamoto's dropped-loop classifier) is a finite automaton on the $\mathbb{Z}^2$ carrier
+whose state is the accumulated charge holonomy around a loop enclosing the defect: a
+mis-crossing carries $\top_k$, a hole carries $\bot_k$, and the transition rule transports
+this charge to the next cell along the interlacement order. A defect is removable iff its
+holonomy is trivial, exactly as the M\"obius band's face-swap holonomy
+(\cref{thm:mobius-band-holonomy}) is the obstruction that cannot be combed away. Requires a
+charge-transport automaton over the torus carrier.
+\end{theorem}
+
+\begin{theorem}[Laddering is a charge cascade]\label{thm:laddering-charge-cascade}\notready\uses{thm:defect-charge-holonomy-automaton, thm:unweaving-is-landauer}
+\emph{(Open frontier --- stated, not formalized.)} A dropped stitch that ladders is the
+charge-holonomy automaton (\cref{thm:defect-charge-holonomy-automaton}) in a non-settling
+run: each released support relation propagates a $\bot_k$ (told-nothing) cell down its wale,
+and the cascade halts iff the local contact graph regains forest structure --- the
+un-weaving Landauer threshold (\cref{thm:unweaving-is-landauer}). A run-stop is a
+cycle-rich, high-$\check H^1$ region that arrests the ladder; a clean ladder is a near-forest
+that erases freely. Laddering propagation is the dual of settling: information un-sticking
+along the wale.
+\end{theorem}
+
+\begin{theorem}[Unraveling gates compute on the $\top$-mirror]\label{thm:unraveling-gates-paraconsistent}\notready\uses{thm:defect-charge-holonomy-automaton, thm:paraconsistentEq-eq}
+\emph{(Open frontier --- stated, not formalized.)} Shimamoto's unraveling logic gates ---
+NOT, AND, OR, half-adder implemented by controlled defect propagation on stitch topology ---
+are the charge-holonomy automaton (\cref{thm:defect-charge-holonomy-automaton}) used as a
+circuit: each gate is a local transport rule on the held $\top$-mirror, computing
+paraconsistently (\cref{thm:paraconsistentEq-eq}) from the contradiction without explosion.
+Requires the automaton of \cref{thm:defect-charge-holonomy-automaton} read as a
+paraconsistent circuit.
+\end{theorem}

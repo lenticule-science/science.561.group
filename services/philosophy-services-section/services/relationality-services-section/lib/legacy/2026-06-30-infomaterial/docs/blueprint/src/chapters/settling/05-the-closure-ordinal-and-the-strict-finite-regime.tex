@@ -1,0 +1,85 @@
+\section{The closure ordinal and the strict-finite regime}
+
+This section records claim nodes and dependency edges.
+
+\begin{proposition}[The settling orbit $f^n$]\label{thm:iter}\lean{Infomaterial.Charge.iter}\leanok\uses{thm:closure-operator}
+$\texttt{iter}\,f\,n\,x = f^n(x)$, plain recursion iterating an endomap $n$ times
+from $x$. This is the orbit whose stabilization stage is the closure ordinal.
+\end{proposition}
+\begin{theorem}[Fixed points stay fixed]\label{thm:iter-fixed-of}\lean{Infomaterial.Charge.iter_fixed_of}\leanok\uses{thm:iter}
+If $f\,a = a$ then $\texttt{iter}\,f\,n\,a = a$ for all $n$: once the orbit
+reaches a fixed point it never leaves it.
+\end{theorem}
+\begin{theorem}[Iteration adds]\label{thm:iter-add}\lean{Infomaterial.Charge.iter_add}\leanok\uses{thm:iter}
+$f^{n+m}(x) = f^m(f^n(x))$, the additive law of iteration, by induction on $m$.
+\end{theorem}
+\begin{theorem}[The orbit is a $\le_k$-chain]\label{thm:iter-step-le}\lean{Infomaterial.Charge.iter_step_le}\leanok\uses{thm:iter, thm:kbot-ktop}
+For an inflationary $f$, each step climbs: $f^n(x) \le_k f^{n+1}(x)$. The
+settling orbit is therefore an ascending knowledge chain.
+\end{theorem}
+\begin{theorem}[No ascending chain of four distinct charges]\label{thm:kchain-height}\lean{Infomaterial.Charge.kchain_height}\leanok\uses{thm:kle}
+For any $a \le_k b \le_k c \le_k d$, at least one of $a=b$, $b=c$, $c=d$ holds:
+the knowledge order has height two, so a chain of four must collapse somewhere.
+A finite \texttt{decide} check; this is the pigeonhole that bounds the closure
+ordinal.
+\end{theorem}
+\begin{theorem}[Propagation from coincidence]\label{thm:iter-propagate}\lean{Infomaterial.Charge.iter_propagate}\leanok\uses{thm:iter-add, thm:iter-fixed-of}
+If two consecutive iterates coincide at stage $k$ then the orbit is constant
+from $k$ on: $\texttt{iter}\,f\,(k+j)\,x = \texttt{iter}\,f\,k\,x$ for all $j$.
+Once it stops, it stays stopped.
+\end{theorem}
+\begin{theorem}[Strict-finite termination: $f^3 = f^4$]\label{thm:settles-by-three}\lean{Infomaterial.Charge.settles_by_three}\leanok\uses{thm:iter-step-le, thm:kchain-height, thm:iter-propagate}
+Every inflationary endomap on the charge lattice reaches its fixed point by step
+three: $\texttt{iter}\,f\,3\,x = \texttt{iter}\,f\,4\,x$. The height-two chain
+bound forces one of the first three steps to be stationary, and propagation
+carries it forward. The closure ordinal is $\le 3$.
+\end{theorem}
+\begin{proposition}[The settling bound $\texttt{SettlesBy}$]\label{thm:settles-by}\lean{Infomaterial.Charge.SettlesBy}\leanok\uses{thm:iter}
+$\texttt{SettlesBy}\,f\,x\,n$ holds when $f^{n+1}(x) = f^n(x)$ --- the orbit is
+fixed from stage $n$. The least such $n$ is the closure ordinal $\kappa$; any
+such $n$ is a settling bound $\lambda$.
+\end{proposition}
+\begin{theorem}[The strict-finite regime: $\kappa \le 3$]\label{thm:strict-finite}\lean{Infomaterial.Charge.strict_finite}\leanok\uses{thm:settles-by, thm:settles-by-three}
+Every inflationary endomap on the charge lattice satisfies
+$\texttt{SettlesBy}\,f\,x\,3$ --- a uniform finite settling bound with no
+transfinite tail. This is the strict-finite regime named in the module
+docstring.
+\end{theorem}
+\begin{proposition}[The four closure-ordinal regimes]\label{thm:closure-regime-carrier}\lean{Infomaterial.ClosureRegime}\leanok\uses{thm:strict-finite, thm:corner}
+The closure ordinal does not produce an arbitrary taxonomy.  It lands in the
+recurring FOUR as the regime carrier: strict, Scott, transfinite-bounded, and
+aperiodic.
+\end{proposition}
+\begin{proposition}[Regime data are the decidable regime coordinates]\label{thm:closure-regime-data}\lean{Infomaterial.ClosureRegimeData}\leanok\uses{thm:closure-regime-carrier}
+A settling problem is projected to three decidable coordinates: Scott
+continuity, finite base, and countable cofinality, with the finite-base
+constraints carried as fields.
+\end{proposition}
+\begin{theorem}[The four-regime dichotomy]\label{thm:four-regime-dichotomy}\lean{Infomaterial.four_regime_dichotomy}\leanok\uses{thm:closure-regime-data}
+Every regime datum selects exactly the strict, Scott, transfinite-bounded, or
+aperiodic case, with the intended Boolean characterization for each case.
+\end{theorem}
+\begin{theorem}[The regime carrier is the FOUR again]\label{thm:regime-is-four-corner}\lean{Infomaterial.regime_is_four_corner}\leanok\uses{thm:four-regime-dichotomy, thm:corner}
+The regime carrier round-trips with the articulation corners.  This is a
+specific incidence weld, not a claim that the regime chain is already the same
+ordered object as the knowledge diamond.
+\end{theorem}
+\begin{theorem}[The spine classifies as strict]\label{thm:spine-is-strict-regime}\lean{Infomaterial.spine_is_strict}\leanok\uses{thm:strict-finite, thm:four-regime-dichotomy}
+The finite charge-lattice spine has finite-base regime data, so its regime is
+strict.  The strict-finite theorem is the operational witness.
+\end{theorem}
+\begin{theorem}[Regime cohomology vanishes exactly on strict/Scott]\label{thm:regime-cohomology-vanishes-iff}\lean{Infomaterial.cohomologyVanishes_iff}\leanok\uses{thm:four-regime-dichotomy, thm:spine-is-strict-regime}
+The regime table marks the flat side: cohomology vanishes exactly for strict
+and Scott regimes, and can carry content on the transfinite-bounded and
+aperiodic side.
+\end{theorem}
+\begin{theorem}[The settled value is genuinely fixed]\label{thm:settled-fixed}\lean{Infomaterial.Charge.settled_fixed}\leanok\uses{thm:settles-by-three}
+$f(f^3(x)) = f^3(x)$: after three steps the orbit is at an honest fixed point,
+not merely slowing.
+\end{theorem}
+\begin{corollary}[Every closure settles in $\le 3$ steps]\label{cor:closure-strict-finite}\lean{Infomaterial.Charge.closure_strict_finite}\leanok\uses{thm:closure-operator, thm:strict-finite}
+Since every \texttt{Closure} is inflationary, $\texttt{SettlesBy}\,c.\texttt{op}\,x\,3$
+holds --- consistent with idempotent closures settling in one step. The two
+models agree: the one-step idempotent settling is the degenerate case of the
+$\kappa \le 3$ iterated settling.
+\end{corollary}

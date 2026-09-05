@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       7bfeed0b-d9e5-40a5-9fb6-5c65d40565f1
+:END:
+#+title: form of Website
+#+date: [2025-09-21 Sun 07:32]
+

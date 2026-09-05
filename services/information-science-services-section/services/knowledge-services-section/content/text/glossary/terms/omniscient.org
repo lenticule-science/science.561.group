@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       42cdf664-5d8c-4337-a3b9-2b3625cd48ca
+:END:
+#+title: omniscient
+#+date: [2025-09-20 Sat 12:05]
+

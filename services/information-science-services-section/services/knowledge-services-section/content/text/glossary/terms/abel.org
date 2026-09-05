@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       0fbd3b36-ecf8-4da7-8d5f-d04a007be520
+:END:
+#+title: Abel
+#+date: [2025-08-31 Sun 10:30]
+

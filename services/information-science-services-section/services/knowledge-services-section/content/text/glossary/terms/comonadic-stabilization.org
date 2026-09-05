@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       614ae4bd-3ee2-464f-8ec2-b2ab01524f84
+:END:
+#+title: comonadic stabilization
+#+date: [2025-10-17 Fri 12:18]
+

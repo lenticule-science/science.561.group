@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       75aff2ae-74e9-46e8-bd87-e12906ba34b6
+:END:
+#+title: information geometry
+#+date: [2025-10-05 Sun 08:01]
+

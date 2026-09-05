@@ -1,0 +1,12 @@
+[package]
+name = "relational-core"
+version = "0.1.0"
+edition = "2021"
+description = "Core abstractions for the Treatise on Relationality"
+license = "UNLICENSED"
+
+[dependencies]
+
+[dev-dependencies]
+proptest = "1"
+

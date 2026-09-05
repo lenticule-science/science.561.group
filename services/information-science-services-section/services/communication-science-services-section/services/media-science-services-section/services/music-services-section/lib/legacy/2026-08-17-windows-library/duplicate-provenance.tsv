@@ -1,0 +1,23 @@
+# Exact-byte duplicate provenance; the first path is the retained canonical payload.
+hash	retained	removed
+601b25ff4d0d99c4bf37bfa27c937e4b1cea7153f3991ca0636948d75d1a154d	music/content/aerophones/chinese-aerophones/aerophone-classification/aerophone-classification.md	music/archive/library/music-instruments/theories/aerophones/theories/chinese-aerophones/concepts/aerophone-classification.md
+83662616ca362cb13b649938937becc351c0f244bb59d1b623c656f1c453299d	music/content/aerophones/chinese-aerophones/bawu/bawu.md	music/archive/library/music-instruments/theories/aerophones/theories/chinese-aerophones/concepts/bawu.md
+231026273321e644fe21258cb0b097154f3315e062d9f5b9b58598077a5a9c85	music/content/aerophones/chinese-aerophones/dizi/dizi.md	music/archive/library/music-instruments/theories/aerophones/theories/chinese-aerophones/concepts/dizi.md
+003632cf8a87daf7f85b1ff656cf5f888862def8704595174b69b2f67656c9fa	music/content/aerophones/chinese-aerophones/guanzi/guanzi.md	music/archive/library/music-instruments/theories/aerophones/theories/chinese-aerophones/concepts/guanzi.md
+4948a0e920f1ff64faec37ed3b5923c0afc062793153ba17bac9bd1592665ea6	music/content/aerophones/chinese-aerophones/hulusi/hulusi.md	music/archive/library/music-instruments/theories/aerophones/theories/chinese-aerophones/concepts/hulusi.md
+ecc4460aca471ca17bebb40bbe0c7b30683e127fa4fa62a01820f63d70ecc1a9	music/content/aerophones/chinese-aerophones/sheng/sheng.md	music/archive/library/music-instruments/theories/aerophones/theories/chinese-aerophones/concepts/sheng.md
+5330de323a195423c0a734825f5880facecaa80cc86ca1748acdbfb0d7849dc5	music/content/aerophones/chinese-aerophones/suona/suona.md	music/archive/library/music-instruments/theories/aerophones/theories/chinese-aerophones/concepts/suona.md
+1f395782d1b3a33a857b7679739b8bb7d0b230129ad02665da2e9124777ae873	music/content/aerophones/chinese-aerophones/xiao/xiao.md	music/archive/library/music-instruments/theories/aerophones/theories/chinese-aerophones/concepts/xiao.md
+9c131221d03ae416b4f386aa3cbeaa1558225af90e346a59978e81133a6203b5	music/archive/library/music-theory/terms/consonance.md	music/content/music-theory/fundamental/pitch-space/interval/scale-degree/mode/tonality/consonance/consonance.md
+f9801c3ae77a679cc70dc53130de737fc570163f81ee4693f5f853c227cd82ad	music/archive/library/music-theory/terms/dissonance.md	music/content/music-theory/fundamental/pitch-space/interval/scale-degree/mode/tonality/dissonance/dissonance.md
+b3359026d9dd5a3303fedde3d04e92acb37d1afdf0f043c4c645fce9147fa47d	music/archive/library/music-theory/terms/harmony.md	music/content/music-theory/fundamental/pitch-space/interval/scale-degree/mode/tonality/harmony/harmony.md
+b5487f61446ca527e65bb3c5e00f1e790aaf0486f890fb570ea3b7b04782f243	music/archive/library/music-theory/terms/improvisation.md	music/content/music-theory/improvisation/improvisation.md
+1a3e771663ba11ace0e9b7491cd184abf3ffac04884b4c162dd3292cd4072655	music/archive/library/music-theory/terms/intonation.md	music/content/music-theory/fundamental/pitch-space/interval/intonation/intonation.md
+98d037aa2b613616bb42f951040e47d53d4d0b5146483c71147e8a5d502df0aa	music/archive/library/music-theory/terms/melody.md	music/content/music-theory/fundamental/pitch-space/melody/melody.md
+e5fc09829ec84efd2ddb249cb934027d81578e4b508d7cdf1529033c51ea276e	music/content/music-theory/rhythm/meter/meter.md	music/archive/library/music-theory/terms/meter.md
+050abdd07d56720ba1cfc18c5c7345ea411df152b0388c4cdabcb1e4e2d8d3d0	music/content/music-theory/rhythm/rhythm.md	music/archive/library/music-theory/terms/rhythm.md
+11832bd51ed808225c8962fdb82df502f7922db46236150c4b128c094582ac4e	music/archive/library/music-theory/terms/timbre.md	music/content/music-theory/fundamental/harmonic/harmonic-series/timbre/timbre.md
+917cdfeeea7ebf1183058a5f0b151ed4c96ce7dd3349a457cd97e538589c4051	music/archive/library/music-theory/terms/tonality.md	music/content/music-theory/fundamental/pitch-space/interval/scale-degree/mode/tonality/tonality.md
+313c297ece5ca00a5855e439b276e560ecaf21f705c5135e31126159ca3d4b1c	music/archive/terms/call-and-response.from-library.md	music/content/music-theory/voice/call-and-response/call-and-response.md
+e6a51e1ab2128d351c7d634379e9ea39beed8a79ae86003ecd49c23fd3a43455	music/archive/terms/drone.from-library.md	music/content/music-theory/fundamental/pitch-space/interval/scale-degree/mode/tonality/drone/drone.md
+a470b333c994effa128ed4f9370b12563ff4f9243dfa72e39fb9a6eb8ce399f4	music/archive/terms/polyrhythm.from-library.md	music/content/music-theory/rhythm/meter/polyrhythm/polyrhythm.md

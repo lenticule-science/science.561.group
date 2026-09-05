@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/identifier/library/name/doing/working/checking-a-name/checking-a-name.schema.json",
+  "title": "Checking-a-name (transformer)",
+  "description": "Input/output shape of checking-a-name: checking specialized to inspect a name. The subject is constrained to the name structure; the predicate is any record appropriate to checking names. Specializations further constrain the predicate.",
+  "type": "object",
+  "required": ["input", "output"],
+  "additionalProperties": false,
+  "properties": {
+    "input": {
+      "type": "object",
+      "required": ["subject", "predicate"],
+      "additionalProperties": false,
+      "properties": {
+        "subject": {
+          "description": "The name being checked. References the name JSON Schema by $ref.",
+          "$ref": "https://research-notes.561.group/hacking/library/predication-notes/identifier/library/name/name.schema.json"
+        },
+        "predicate": {
+          "description": "The predicate the name is checked against. Specializations bind this to a specific schema.",
+          "type": ["object", "string"]
+        }
+      }
+    },
+    "output": {
+      "description": "A check-decision record per the parent checking transformer's output schema.",
+      "type": "object"
+    }
+  }
+}

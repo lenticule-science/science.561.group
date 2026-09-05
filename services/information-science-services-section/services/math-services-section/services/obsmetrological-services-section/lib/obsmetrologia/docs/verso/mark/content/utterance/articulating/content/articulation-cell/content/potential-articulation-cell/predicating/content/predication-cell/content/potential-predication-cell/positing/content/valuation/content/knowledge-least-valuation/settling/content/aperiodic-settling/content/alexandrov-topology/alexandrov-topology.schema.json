@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/aperiodic-settling/content/alexandrov-topology",
+  "title": "alexandrov-topology",
+  "description": "The topology on a poset whose open sets are exactly the up-sets (sets closed under going up along the order), making finite topological spaces equivalent to finite posets and bridging combinatorial poset theory with topological sheaf theory.",
+  "type": "object",
+  "required": ["poset", "opens", "open-sets-are-up-sets"],
+  "properties": {
+    "poset": {
+      "const": "poset",
+      "description": "the partially ordered set (P, <=) on which the topology is built"
+    },
+    "opens": {
+      "const": "set",
+      "description": "the collection of open sets of the topology, drawn from the subsets of P"
+    },
+    "open-sets-are-up-sets": {
+      "const": true,
+      "description": "U is open iff U is an up-set: x in U and x <= y implies y in U (dually, down-sets; the choice fixes a direction)"
+    },
+    "monotone-equals-continuous": {
+      "const": true,
+      "description": "monotone maps of posets correspond exactly to continuous maps of the Alexandrov spaces; sheaves on (P,<=)_Alex are functors P -> V"
+    }
+  }
+}

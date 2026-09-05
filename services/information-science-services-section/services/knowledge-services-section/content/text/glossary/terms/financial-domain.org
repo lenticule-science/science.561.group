@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       cbe548a4-d387-4c77-a53c-9f95e28a654e
+:END:
+#+title: financial domain
+#+date: [2025-08-29 Fri 12:15]
+

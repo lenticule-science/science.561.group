@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       bac22349-7978-418e-8d6c-7eb15d7c1bf8
+:END:
+#+title: medical text
+#+date: [2025-09-03 Wed 21:32]
+

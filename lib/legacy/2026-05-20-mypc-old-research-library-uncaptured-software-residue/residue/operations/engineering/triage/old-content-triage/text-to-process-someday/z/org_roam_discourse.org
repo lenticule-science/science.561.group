@@ -1,0 +1,11 @@
+#+title: Org-roam Discourse
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-17 Thu 09:46]
+#+roam_key: https://org-roam.discourse.group
+
+The */Org-roam Discourse/*, [[https://org-roam.discourse.group]], seems to be the de facto public community for discussing [[file:org_roam.org][Org-roam]].
+
+* Notable Threads
+** Tutorials
+   - [[https://org-roam.discourse.group/t/zero-to-emacs-and-org-roam-a-step-by-step-guide-on-windows-10/400][Zero to Emacs and Org-roam, a Step-by-step Guide on Windows 10]]

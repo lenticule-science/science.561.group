@@ -1,0 +1,20 @@
+{
+  "kind": "ownership-law-shadow",
+  "node": "linguistics-services-section",
+  "owners": [
+    "561-group",
+    "lenticule-science"
+  ],
+  "effective-law": {
+    "direct-contracting": true,
+    "owner-gateway-required": false,
+    "rules": [
+      "this ANT Colony owns its lib, content, data, admission, refusal, contracts, language maps, semiotes, and evidence",
+      "a semiote acts only through a colony contract and never acquires the customer's admission authority",
+      "a parse is a candidate reading and never a declaration of speaker intent",
+      "translation preserves source and target frames together with every explicit non-correspondence",
+      "legacy source is admitted for internal operation only until its redistribution license is decided",
+      "SHP is an optional projection and cannot gate the JSON parsing contract"
+    ]
+  }
+}

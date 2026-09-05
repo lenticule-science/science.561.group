@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       f97e50b5-3121-4a82-bb69-72cc73c1c384
+:END:
+#+title: general relativity
+#+date: [2025-10-11 Sat 16:09]
+

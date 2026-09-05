@@ -1,0 +1,9 @@
+{
+  "id": "shuffle_trace",
+  "act": "ShuffleTrace",
+  "module": "relationality.realizers.shuffle_trace",
+  "callable": "realize_shuffle_trace",
+  "input_kind": "Trace",
+  "output_kind": "Trace",
+  "description": "Shuffle trace entries deterministically as placeholder for shuffle algebra."
+}

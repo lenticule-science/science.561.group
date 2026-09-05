@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       23cba804-33b1-43e4-abf5-7f403a122abd
+:END:
+#+title: Semantic Web
+#+date: [2025-10-06 Mon 18:03]
+

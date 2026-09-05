@@ -1,0 +1,30 @@
+#+title: emsenn
+#+ghe_schema: person-0.1.1
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-16 Wed 14:48]
+#+roam_tags: person
+
+#+name: definition
+*/[[file:emsenn.org][emsenn]]/* is me. I'm [[file:itazipco.org][Itazípčo]] of the [[file:lakota.org][Lakota]], and the creator of this [[file:record_catalog.org][record catalog]].
+
+#+toc: headlines 2
+* Introduction
+  This profile was created as a part of [[file:index.org][emsenn's records catalog]]. If you are viewing this record outside of its original environment, please be aware it maybe be heavily redacted. 
+* emsenn
+  #+name: emsenn-contact-list
+  - Public name :: emsenn
+  - [[file:website.org][Website]] :: [[https://emsenn.net][emsenn.net]]
+  - [[file:email.org][email]] :: [[mailto:emsenn@emsenn.net][emsenn@emsenn.net]]
+* Supplements
+** Record history
+   :LOGBOOK:
+   - Note taken on [2020-12-27 Sun 13:58] \\
+     Changed my definition to mention my band and tribe.
+   - Note taken on [2020-12-22 Tue 16:17] \\
+     I added more details to this record, playing with a potential new version of the [[file:person_record.org][person record]].
+   - Note taken on [2020-12-16 Wed] \\
+     I created this record.
+   :END:
+
+    

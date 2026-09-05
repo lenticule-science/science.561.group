@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       f2829f05-2e51-461e-bcaa-c62c396b7cd7
+:END:
+#+title: babbling
+#+date: 2025-07-19
+#+author: emsenn
+
+*/Babbling/* is [[id:54213c5a-a48a-4976-acff-cc89ebf673c0][writing]] that makes [[id:80ecba92-ca84-4b32-99ae-44d446b24350][text]] without a [[id:37ea34f9-6b7d-409e-a582-9e0cc0e997b9][goal]] or [[id:7801aaee-b673-4a41-8299-9c45859d8fc0][plan]], except perhaps topical [[id:e651afd7-937f-4d63-916d-a89c9a6f0a17][bounding]].
+

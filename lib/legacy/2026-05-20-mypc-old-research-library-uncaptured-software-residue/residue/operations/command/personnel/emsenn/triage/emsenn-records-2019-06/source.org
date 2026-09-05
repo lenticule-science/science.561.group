@@ -1,0 +1,593 @@
+#+title: Source File
+#+header-args: :tangle ~/.emacs/init.el
+#+EXCLUDE_TAGS: Private TrusteeCorner
+#+MACRO: mr-chan =$BOSS1=
+* Log
+:PROPERTIES:
+:header-args: mkdirp t
+:END:
+** 2019
+*** 2019-06 June
+**** 2019-06-17 Monday
+I've been on a long journey to reform how I use a computer, and recently it's been packed full of epiphanies and realizations. I had the notion a while back of maintaining basically a /Starfleet/-esque log of my activities, writing, and so on. Sections of the log would be set up in such a way as to let me export them and make use of them in other contexts. I didn't really know how to do that. I still don't, but as I said, I've recently had a bunch of realizations about things like /functional programming/.
+
+So I'm presenting to myself a new challenge: I'm going to, with the exception of communicating with other folk, try and limit myself to operating within this one file. This is my first entry in such a file. Some - like this, I think - might get cut and shared online - if you're reading this and you're not me, that's probably the context.
+
+Although I could write about writing a log forever, I shall try to move on to writing a log, by picking an easy project to talk about.
+***** Emacs Configuration                                         :Emacs:
+:PROPERTIES:
+:header-args:
+:END:
+One kind of perpetual project I have going on is the import of various old projects into whatever my new method of organization is. Well, seems like now is as good a time as any to look through my /Emacs configuration/ and see what I want to keep, and what I want to pull. The first two lines are definitely keepers: they set up the /Emacs/ package management.
+
+#+begin_src elisp
+  (package-initialize)
+  (require 'package)
+#+end_src
+
+This next chunk sets up some additional package sources, remote and local, also necessary.
+
+#+begin_src elisp
+  (add-to-list 'package-archives
+               '("melpa" . "http://melpa.org/packages/") t)
+  (add-to-list 'package-archives '("org" . "https://orgmode.org/elpa/") t)
+  (eval-when-compile
+    (add-to-list 'load-path "~/.emacs.d/elpa")
+    (add-to-list 'load-path "~/.emacs.d/git")
+    (require 'use-package))
+#+end_src
+
+This sets up the /auto-package-update/ package, which automatically updates all the required packages (I think?) when I restart Emacs. Also pretty necessary.
+
+#+begin_src elisp
+  (use-package auto-package-update
+               :ensure t
+               :config
+               (setq auto-package-update-delete-old-versions t)
+               (setq auto-package-update-hide-results t)
+               (auto-package-update-maybe))
+#+end_src elisp
+
+This is my backup configuration, and I'm... not sure if it works. I mean, right now if I look in my local directory, there's an autosave of this file. Let's see, I think I know how to diagnose this from within /Emacs/. If I put the point (my cursor) right after the last character in =auto-save-mode=, I can hit =C-h v ENT= and look up the variable... which isn't documented. I guess that doesn't mean it didn't exist, though, but it seems unlikely it would be undocumented. So it probably is the wrong variable name. And also... this no longer seems like it'd be compatible with how I'd like to handle this sort of data-protection. I do want autosaves, in the same (or a predictable subdirectory) as the source file, and I don't necessarily want backups, because I should be using versioning control.
+
+#+begin_src elisp :exports code
+  (setq auto-save-mode nil)
+  (setq backup-directory-alist
+        `(("." . ,(concat user-emacs-directory "backups"))))
+#+end_src elisp
+
+This will need some work.
+***** CANCELLED Evaluate-At-Point Tweak
+   Currently if I'm in an Org-mode buffer - or maybe any buffer, I can hit the hotkey =C-x C-e= to evaluate whatever is before it; run it through the /Elisp REPL/. This is handy some of the time, but other times I mention a variable inside a pair of ===, and the interpretter complains that there's no variable ==foo==, even though there is a variable =foo=.
+***** Workaround: Use Inline Src Calls                  :HelpWanted:
+Inline source blocks, done with =src_elisp()=, are more explicit about what language they are, and caxn be evaluated just fine. This creates a new issue: those inline source blocks aren't rendered in a fixed-width font, if I'm using /Poet Theme/ and have src_elisp[](variable-pitch-mode) turned on, then they aren't fixed-width. Understandable, but it'd be cool if they were!
+
+Here's an answer from [[https://stackoverflow.com/questions/20309842/how-to-syntax-highlight-for-org-mode-inline-source-code-src-lang/28059832#28059832][StackOverflow]] that might work:
+
+#+begin_src elisp
+  (font-lock-add-keywords 'org-mode
+                      '(("\\(src_\\)\\([^[{]+\\)\\(\\[:.*\\]\\){\\([^}]*\\)}"
+                         (1 'org-code)
+                         (2 'org-code)
+                         (3 'org-code)
+                         (4 'org-code))))
+#+end_src
+
+Doesn't seem too, and I'm unable to figure out why, right now.
+**** 2019-06-18 Tuesday
+***** Waking Up                                  :NativeCulture:personal:
+Today I woke up feeling generally upset at the continuing genocide of /Native Americans/, and tried to braid my hair. I'm not very good at it so ended up pulling it out, but I've put on my bangles and done my /facemark/. Last week {{{mr-chan}}} suggested my haircut - or lack thereof - was perhaps dissuading potential clients, as I looked like a "hippie." I chose not to try and debate the point with him, but I'd like to make it more clear without debate that the long hair is an intentional choice, not a consequence of ennui.
+
+***** Call from {{{mr-chan}}}                             :TrusteeCorner:
+I received a call from {{{mr-chan}}} a bit ago. He was disappointed with how I handled a recent issue, where a client's actions caused a vendor to leave an under unfulfilled, and sought to explain to me how I could better resolve the issue next time. He emphasized that part of why he was bothering was because he regreted that he had not had a similar influence earlier in his life. While the specifics of the vendor-issue were resolved adequately and in advance of any issue, from my perspective, I really appreciate that he takes the time to talk to me.
+
+***** Planning the Day
+I don't really have any firm plans today, beyond extant obligations to {{{mr-chan}}} which are recorded elsewhere. I'd like to continue progressing on combing-over my /Emacs/ configuration, and also think about - now that I understand it more fully - how I can apply /literate programming/ to my fantasy setting, /Teraum/.
+
+***** Bill from Spectrum                                        :Private:
+I received an /email/ from /Spectrum/ today, at my =emsenn@emsenn.net= address, saying that our service was enabled and to log in to pay our bill, which is $350 and some change. I called and spoke with Zach, who said there was no record of my previous conversations with them about this, or a record of a technician looking at it.
+
+****** TODO Collect records on interactions with Spectrum  :Recordcraft:
+
+***** Saw a New(-to-Me) Markdown Editor                        :Markdown:
+Darius Kazemi's post about it through the Fediverse made me aware of a /Markdown/ editor/previewer called /Typora/. It had one cool feature that I'd like to integrate into my /Emacs configuration/:
+
+****** TODO Prettify Checkboxes
+I'd like for list checkboxes (=- [ ] An undone list item=, =- [X] A done list item=) to be somewhat prettier. They're fixed-width right now and so really stand out in a document that otherwise might be entirely serif in the body.
+
+***** Found a Cool /Elisp/ Declaration                               :Elisp:
+*/Note to readers:/* A lot of what I'm working on here has to do with how my client looks to me, not how any rendered documents look. I may say something is working, when from your perspective, it isn't.
+
+While looking up how I prettify my /Org-mode checkboxes/, I found that /Emacs/, since version 24.4, comes with a bultin =prettify-symbols-mode=. It swaps out text with a /Unicode/ symbol. This led me to a post [[http://www.modernemacs.com/post/prettify-mode/]["Mathematical Notation in Emacs",]] which is convenient for me: I want to learn to read maths.
+
+I'm not going to rewrite its explanation of its code blocks, but reproduce them here for my own use. The first enables the =pretty-mode= package and turns off some parts of it, to make room for features that will be enabled by later code blocks.
+
+#+begin_src elisp
+(require 'pretty-mode)
+(global-pretty-mode t)
+
+(pretty-deactivate-groups
+ '(:equality :ordering :ordering-double :ordering-triple
+             :arrows :arrows-twoheaded :punctuation
+             :logic :sets))
+
+(pretty-activate-groups
+ '(:sub-and-superscripts :greek :arithmetic-nary))
+#+end_src
+
+Let me see if I can't figure out how to write that as a =use-package= declaration, and since I'm not setting up the litagure stuff right now, I'll leave all the stuff on.
+
+#+name: pretty-mode-use-package-declaration-alpha
+#+begin_src elisp :noweb yes
+  (use-package pretty-mode
+    :ensure pretty-mode
+    :config
+    (progn
+      (global-pretty-mode t)
+      (global-prettify-symbols-mode 1)
+      (pretty-activate-groups
+       '(:sub-and-superscripts :greek :arithmetic-nary))))
+#+end_src
+
+That seems to work! (And now gets appended to my /Emacs configuration/.
+
+The article also has another quote introducing some /Emacs commands/ I didn't know about:
+
+#+begin_quote
+The command =insert-char=, =C-x 8 RET= prompts for Unicode characters by name and inserts at point. There is also =describe-char=, =M-m h d c= which gives information on the character at point. Use in conjunction with eg. [[https://en.wikipedia.org/wiki/Mathematical_operators_and_symbols_in_Unicode]["Math Unicode Symbols List"]] to explore your options.
+#+end_quote
+
+Nifty! Looking elsewhere, it looks like the only thing that is prettified in lisp dialects is the lambda symbol, and it suggests things can be added like this:
+
+#+begin_src elisp
+(add-hook 'emacs-lisp-mode-hook
+            (lambda ()
+              (push '(">=" . ?≥) prettify-symbols-alist)))
+#+end_src
+
+Which, testing out, works just fine. I wouldn't mind mentions if the whole greek alphabet got replaced, and in Org-mode too - though there I'd do it with a prefix of =\= since that's the LaTeX for it. I encounter a problem here, though: I don't actually understand the syntax above, so I don't know how I'd change it to add multiple things to the =prettify-symbols-alist=.
+
+I guess what I need to know is what's a \lambda expression in /Emacs/, and what's the =push= function takes and returns.
+
+I was reading about \lambda calculus on /Wikipedia/ recently, so the /Elisp Reference Manual's/ brief explanation of what \lambda expressions might make sense. It says they're "anonymous functions," but are more commonly associated with symbols to make a named function. A \lambda expression - contained within =()=, always starts with the =lambda= symbol, then takes a list of argument variables, called the "\lambda list." There can be a documentation string, an interactive declaration, and then the body - very similar to a normal function declaration, except with =lambda= instead of =defun function-name=.
+
+=push= I looked up with =C-h f push ENT=, it adds its first argument to the list stored at its second argument, so =(push "apple" '("orange" "banana" "berry"))=... gets me an error about "orange" not being a function. ='("orange" "banana" "berry")= is a valid list declaration, so why does =push= fail?...
+
+#+begin_src elisp
+  (setq fruits '("orange" "banana" "berry"))
+  (push '"apple" fruits)
+#+end_src
+
+Okay - I'm messing - oh! I was messing up declaring the list. Let's combine two things, maybe?
+
+#+begin_src elisp
+  (push '"apple" (lambda () '("orange" "banana" "berry")))
+#+end_src
+
+That gets me this error message, that I have a real hard time reading: =let*: Symbol’s function definition is void: \(setf\ function\)=.
+
+I think that's still telling me "this second argument isn't a function," which seems to contra- oh! One more try:
+
+#+begin_src elisp
+  (push '"apple" '(lambda () '("orange" "banana" "berry")))
+#+end_src
+
+Nope - I added a ='= before the \lambda expression, but get a similar error. Is =lambda= perhaps an /Elisp macro/ for =(setf function)=, or similar?
+
+Either way, I don't need to figure out the more compact syntax right now: I'm still looking to add all the greek letters at once to the Org- and Elisp- modes of =prettify-symbols=. Lets play with some fake code. And actually, I'm going to try this =let= thing I've heard of.
+
+#+begin_src elisp
+  (let ((alpha '("oh..." . "it rendered as a greek character"))))
+#+end_src
+
+So I guess no further configuration needed for that. I guess the example of =>== to =≥= is still relevant, though, so I can chug on with this.
+
+#+begin_src elisp
+  (let ((alpha '(1 2 3))
+        (beta '(4 5 6)))
+    (dolist (gamma beta)
+      (push gamma alpha))
+    alpha)
+#+end_src
+
+This gives me a list of =(6 5 4 1 2 3)=, which shows that push puts things at the start of a list. That's not relevant to my goals, but does give me a hypothetical syntax for my need:
+
+#+name: math-litagures-elisp-prettify-hook
+#+begin_src elisp :noweb yes
+  (add-hook 'emacs-lisp-mode-hook
+            (lambda ()
+              (let ((replacements
+                     '((">=" . ?≥))))
+                (dolist (alpha replacements)
+                  (push alpha prettify-symbols-alist)))))
+#+end_src
+
+And now if I put =>== in an /Elisp/ source block, it should become the litagure. (That's the name for two characters combined like this.)
+
+#+begin_src elisp
+  >=
+#+end_src
+
+(This is a rendering thing, so any readers of~ an export will likely not see anything functional.)
+
+Okay, so I think now I have two source blocks I want to add to my /Emacs configuration/:
+
+#+begin_src elisp :noweb yes
+<<pretty-mode-use-package-declaration-alpha>>
+<<math-litagures-elisp-prettify-hook>>
+#+end_src
+
+Since the the latter relies on the =pretty-mode= package, I should refactor them together, and go ahead and in more symbols:
+
+#+name: pretty-mode-use-package-declaration-beta
+#+begin_src elisp
+  (use-package pretty-mode
+    :ensure pretty-mode
+    :config
+    (progn
+      (global-pretty-mode t)
+      (global-prettify-symbols-mode 1)
+      (pretty-activate-groups
+       '(:greek :logic-nary :sets-operations-nary :sub-and-super-scripts))
+      (add-hook 'emacs-lisp-mode-hook
+                (lambda ()
+                  (let ((replacements
+                         '((">=" . ?≥)
+                           ("<=" . ?≤)
+                           ("defun" . ?ƒ)
+                           ("for" . ?∀)))
+                    (dolist (alpha replacements)
+                      (push alpha prettify-symbols-alist))))))))
+#+end_src
+
+At this point I need to take a break and do some other stuff, but I feel like this was a good exercise in learning to work with more /Elisp/ stuff.
+
+Now I can write code that looks like this:
+
+#+begin_src elisp
+  (defun ems-tmp-accel
+      (alpha beta gamma delta)
+     (/ (- beta alpha) (- delta gamma)))
+#+end_src
+
+Which just looks cool, even if the example is a bit contrived.
+
+***** Kernel Compilation and Rainfall                          :Personal:
+I'm recompiling my kernel on my main computer right now, and with my current services setup, I don't know how to turn on my /SSH server/ while that's happening, so I'm currently just sitting here waiting for it to finish. And, because of some exploit that's why I'm compiling, pages don't load in my browser, even in /Emacs/, so I can't email it to myself, even. (Probably should have a real email client set up, but I don't.)
+
+I'm listening to the rain, and waiting.
+
+**** 2019-06-19 Wednesday
+#+toc: headlines 2 local
+***** System Hiccups                                               :Guix:
+Today, my /Guix system/ installation was broken. I reinstalled from scratch, with no real hangups. Beauty of the system. Spent some time trying diagnose it first, but gave up before too long.
+***** Adding Olivetti Mode                                        :Elisp:
+I'm adding /olivetti-mode/ to my /Emacs configuration/, with a hook to turn it on by default for /Org-mode/. I might also turn it on for /Elisp/ - since whitespace there doesn't matter, I've even been considering migrating away from a fixed-width font. But, for now, I'm sticking with it.
+
+Here's the /use-package/ declaration:
+
+#+name olivetti-mode-use-package-declaration
+#+begin_src elisp :tangle ./src/emacs-config/olivetti-mode-use-package-declaration.el
+  (use-package olivetti
+    :ensure olivetti
+    :after org
+    :config
+    (progn
+      (setq olivetti-body-width 85)
+      (add-hook 'org-mode-hook 'olivetti-mode)))
+#+end_src
+
+Simple enough.
+***** Literally Programming a Fantasy World?               :Teraum:Elisp:
+:LOGBOOK:
+CLOCK: [2019-06-19 Wed 17:55]--[2019-06-19 Wed 17:55] =>  0:00
+:END:
+I wrote, three days ago now, that I was going to use a single /Org-mode/ file that I was going to write from. I've been doing a better job of that than I expected to, but I also haven't been able to spend much time on a computer, so that doesn't count for much.
+
+One thing I've been doing - though I don't know if anyone has noticed. (I'm checking, but I can only see the top 25 posts I've put on my /WriteFreely/ account.) Anyway, one thing I've been doing is putting the non-private sections of this file's daily section on my /WriteFreely/ blog, currently at [[https://posts.emsenn.net/][https://posts.emsenn.net]] - if you're reading this and it's only a few days after now, and not me, that's probably where. Hi, anonymous reader!
+
+So that's a kind of cool side-effect of this. I'll probably run the output through /Hugo/ soon too, to make it a more robust site.
+
+Anyway, I was wondering what I might be able to do to handle writing and adding to my fantasy canon and the resource books and all that stuff I want to do. I've written about that enough other times in the past, but that's out of the context of this sort of log file, so I'll cover it again very briefly: /Teraum/ is a fantasy setting I've been writing in basically my whole life, and I want to make a bunch of media set in it, from stories and podcasts to table-top role-playing game resources.
+
+One thing I realized that I'll have to accept about /literate programming/ is that it's okay to rewrite and edit what came before - the previous sections in this document can be changed, if that suits my needs. I know that sounds obvious, but it was a mental hangup I had, that once I wrote something, getting rid of it was... bad.
+****** Background
+
+Anyway, so, the very first time I wanted to "codify" my fantasy setting it was as a /multi-user dimension/, or /MUD/. This seemed easy-enough to me, as I played /MUDs/ at the time. I played /LPC MUDs/, which means that in-game things, like /NPCs/ and rooms in buildings or sections of streets, were objects, with attributes and states. It's been a bit since I've done Python, but here's a mockup:
+
+#+begin_src python
+  class Tavern(object):
+      def __init__:
+          super.__init__(self)
+          self.name = "Twisted Alembic"
+          self.description = ("The Twisted Alembic clearly was a nice "
+                              "tavern, but these days it's a bit more "
+                              "rundown.")
+          self.exits = { "south" : "caliber_street" }
+#+end_src
+
+Something like that, at least.
+****** Serializing the Twisted Alembic in Elisp
+Now thinking about it I can pretty easily make a similar thing as an elisp declaration:
+
+#+name: teraum-twisted-alembic-declaration
+#+begin_src elisp
+  (setq teraum-twisted-alembic
+        '(("name" . "Twisted Alembic")
+          ("description" . "The Twisted Alembic clearly was a nice
+          tavern, but these days it's a bit more rundown.")
+          ("exits"
+           (("south" .  teraum-caliper-street)))))
+#+end_src
+
+I did something similar with my /personal dictionary/, though I stopped tinkering with that once I learned the basics of the syntax.
+
+I like this more too because rather than a string that requires a lookup (or possible recursion, or needing to load all the variables into memory, if I understand /Python/ right,) I can just reference the variable and get a =nil= if I call to it like with =(cdr (assoc "south" (cdr (assoc "exits" teraum-twisted-alembic))))=.
+****** Serializing Caliper Street
+So, that record references a "Caliper Street," which I'll need to define, too.
+
+#+name: teraum-caliper-street-declaration
+#+begin_src elisp
+  (setq teraum-caliper-street
+        '(("name" . "Caliper Street")
+          ("description" . "One of the busiest streets in the Brass
+          Ward, Caliper Street is home to the workshops that drive
+          Ack's more luxurious industries. Bookbinders, luthiers,
+          watchmakers and more have shops here.")
+          ("exits"
+           ("north" .  teraum-twisted-alembic))))
+#+end_src
+
+*/Note:/* at this point I had to take quite a bit of time learning more about /Elisp/ syntax, because I was failing to be able to refer to a list as a variable inside another list. The thing I needed was the =symbol-value= function.
+
+So here's a little bit of code that returns the name of the northern exit of Caliper Street - that is, it returns ="Twisted Alembic"=.
+
+#+begin_src elisp
+  (cdr (assoc "name" (symbol-value (cdr (assoc "north" (cdr (assoc "exits" teraum-caliper-street)))))))
+#+end_src
+
+And here's that done a little bit more programmatically, though not well, just for the practice of it.
+
+#+begin_src elisp
+  (let ((alpha teraum-caliper-street) (beta "exits") (gamma "north")) (cdr (assoc "name" (symbol-value (cdr (assoc gamma (cdr (assoc beta alpha))))))))
+#+end_src
+
+And here's that same thing, done using a \lambda expression, just because I think those are cool.
+
+#+begin_src elisp
+  (funcall (lambda (alpha beta) (cdr (assoc "name" (symbol-value (cdr (assoc beta (cdr (assoc "exits" alpha)))))))) teraum-caliper-street "north")
+#+end_src
+****** Writing Some Teraum Functions
+
+Now, I recognize that those are both pretty verbose, but I think it's cool how they can be written pretty arbitrarily, and I can check where I am in any part of it with /Emacs/ builtin /REPL/. Plus, I can write functions:
+
+#+begin_src elisp
+  (defun teraum-get-name
+      (subject)
+    "Returns the proper name of the SUBJECT within Teraum."
+    (cdr (assoc "name" subject)))
+  (defun teraum-get-desc
+      (subject)
+    "Returns the description of the SUBJECT within Teraum."
+    (cdr (assoc "description")))
+#+end_src
+
+Those two are simple enough. I wrote another kind of by rote that I'll share, but then I'm going to talk about what I've written so far.
+
+#+begin_src elisp
+  (defun teraum-get-exits
+      (subject)
+    "Returns the exits from the SUBJECT within Teraum."
+    (cdr (assoc "exits")))
+#+end_src
+****** Another Go At Serializing
+
+Before I go further, I think I want to change how I'm storing these records. Rather than each one its own variable, I think I'm going to declare a =teraum-data= variable, and have each one be an element of that list. Also, =exits= is kind of a traditional name from /MUDs/, and I think I'd rather have some a more generic term, like =nav=, since this'll translate across scales, not just rooms and segments of a road. So let's refactor our data-structure a bit.
+
+#+begin_src elisp :tangle ./src/teraum/teraum-data.el
+  (setq teraum-data
+        '((caliper-street
+           (name . "Caliper Street")
+           (description . "This is Caliper Street.")
+           (nav
+            (114 . twisted-alembic)))
+          (twisted-alembic
+           (name . "Twisted Alembic")
+           (description . "This is the Twisted Alembic.")
+           (nav
+            (south . caliper-street)))))
+#+end_src
+
+There's a lot more arbitrary symbol use because, well, I honestly forgot that was a thing I could do instead of quoting them!
+****** And Another Go At Functions
+So, now I need to take a fresh look at the functions
+
+#+begin_src elisp :tangle ./src/teraum/teraum-functions.el
+  (defun teraum-read-record
+      (subject)
+    "Returns the list representing the record of SUBJECT."
+    (cdr (assoc subject teraum-data)))
+  (defun teraum-read-name
+      (subject)
+    "Returns the name of the SUBJECT."
+    (cdr (assoc 'name (teraum-read-record subject))))
+  (defun teraum-read-desc
+      (subject)
+    "Returns the description of the SUBJECT."
+    (cdr (assoc 'description (teraum-read-record subject))))
+  (defun teraum-read-nav
+      (subject)
+    "Returns the nav items of the SUBJECT."
+    (cdr (assoc 'nav (teraum-read-record subject))))
+  (defun teraum-read-nav-item
+      (subject item)
+    "Returns the record of the ITEM in the SUBJECT's navigation list."
+    (cdr (assoc item (teraum-read-nav subject))))
+#+end_src
+
+That's a longer code block than I'm used to doing in this sort of log entry, but, it all kind of follows each other.
+****** Serializing the Green Delta
+So now rather than write about a region in English I can just do
+
+#+begin_src elisp :tangle ./src/teraum/teraum-data.el
+  (push
+   '(green-delta
+     (name . "Green Delta")
+     (description . "The Green Delta is a fertile region, dense with farms and small villages.")
+     (nav
+      (east . central-plains)
+      (southeast . gloaming)
+      (south . widewoods)
+      (west . optic-ocean)))
+   teraum-data)
+#+end_src
+
+And give a bit of information about the /Green Delta/. Of course I imagine down the line I'll want to have functions that better let me add stuff, with some sort of safeguards that it's the right sort of data, maybe? I suppose I do know how to read the errors it might throw though, so I shouldn't stretch out of my way to write writer-functions that aren't actually helpful, I suppose.
+****** Serializing Teraum's Easy-Smoking Pipe
+Now I'd like to try and write about something real. I'm going to start with something simple, the /easy-smoking pipe/, which a magic item currently held by /Jenos Anadini/. (Maybe I'll get to him, next.)
+
+For this,
+
+#+begin_src elisp :tangle ./src/teraum/teraum-data.el
+  (push
+   '(easy-smoking-pipe
+     (name . "easy-smoking pipe")
+     (description . "The easy-smoking pipe is a wooden pipe which emits an intoxicating smoke. The magic comes from the pipe itself; anything burnt in it produces the same effect.")
+     (location . anadini-jenos))
+   teraum-data)
+#+end_src
+****** A Function to Read Locations
+This introduces a new kind of... key?, =location=. So, should add some matching functions, or at least the one to read it.
+
+#+begin_src elisp :tangle ./src/teraum/teraumn-functions.el
+  (defun teraum-read-location
+      (subject)
+    "Returns the location of SUBJECT."
+    (cdr (assoc 'location (teraum-read-record subject))))
+#+end_src
+****** Serializing Jenos Anadini
+And so that we aren't left hanging, let's give some sort of definition to /Jenos Anadini/. My thought is, if I define him poorly and sparsely right now, I can learn some more /Elisp/ syntax to try and properly flesh him out.
+
+#+begin_src elisp :tangle ./src/teraum/teraum-data.el
+  (push
+   '(anadini-jenos
+     (name . "Jenos Anadini")
+     (description . "Jenos Anadini is a middle-aged human man who works for Honeyfern Laboratory as an archivist.")
+     (inventory
+      (easy-smoking-pipe .)))
+   teraum-data)
+#+end_src
+****** Adding An Event
+So let's see, what else might be in his record. I suppose I could add a bit about his history; maybe a list of events?
+
+#+begin_src elisp :tangle ./src/teraum/teraum-data.el
+  (push
+   '(43pc
+     (Summer
+      (21
+       (concat
+          "In "
+          (teraum-read-name 'pled)
+          ", "
+          (teraum-read-name 'anadini-jenos)
+          " is born."))))
+   teraum-data)
+#+end_src
+
+So here I'm using the year as the main record key (I still don't know if that's the proper term, with a list for each month, containing a list for each day, that contains a list of strings for each event. You can see it's reading from two records to make that string. (For the curious, and myself if I forget: =(teraum-read-name '43pc)= returns =nil=, which is conveniently truthful and non-error-y.
+
+So, the issue with this format is that every event needs to have a known day, but since it's fiction, I can just make that up when I need to.
+****** Function for Reading a Day's Event
+With events in the record, I need a function for reading them, too.
+
+#+begin_src elisp :tangle ./src/teraum/teraum-functions.el
+  (defun teraum-read-events
+      (year month day)
+    "Returns a list of the events that happened on DAY of MONTH of YEAR."
+    (loop
+     for event
+     in (cdr (assoc day (cdr (assoc month (teraum-read-record year)))))
+      collect event))
+#+end_src
+
+Now I'm having a bit of an issue working with the list that returns in such a way that it processes the =concat= that's embedded in that, so I'll have to get that sorted, but I need to take a break for now.
+****** Further Reading
+After sharing this post, there were recommendations for other related reading which I will link to here:
+- [[http://xlisp.org/zil.pdf][Infocom's ZIL, a Lisp dialect for writing text adventures]]
+- [[https://queue.acm.org/detail.cfm?id=2068896][Matthew Flat's "Creating Languages In Racket"]]
+- [[http://www.linusakesson.net/dialog/docs/index.html][Linus Kesson's "Dialog Manual"]]
+
+I'd like to remember to read those last two so I'm going to go ahead and create a variable called =ems-reading-list= fill it in.
+
+#+begin_src elisp
+  (setq ems-reading-list
+        '((pending
+          ("Creating Languages in Racket"
+           (author . "Matthew Flat")
+           (source . "https://queue.acm.org/detail.cfm?id=2068896"))
+          ("Dialog Manual"
+           (author . "Linus Kesson")
+           (source . "http://www.linusakesson.net/dialog/docs/index.html")))))
+#+end_src
+
+***** Blocklists on the Fediverse                             :Fediverse:
+There's a mobile phone application for accessing /Mastodon/ instances, to post to and read content from the /Fediverse/. The app is called /Tusky/ and recently they patched the software so that users from a certain white supremacist instance would be redirected to an irrelevant video, essentially blocking them for using the app with that instance.
+
+There's a lot of argument around that, which I might get to, but I've seen a few people say that the whole argument could be avoided with shared blocklists - a configuration shared publicly that would let instances basically follow another instance's instance moderation.
+
+These sorts of blocklists exist for users on /Twitter/, and they're viewed as highly problematic, despite having started with identical intentions: to alleviate the difficulty in removing white supremacist voices from one's view.
+
+In fact, last spring, or maybe summer, /Wil Wheaton/ was collectively run-off the /Fediverse/ by coordinated harassment, explicitly because of his (claimed accidental) misuse of blocklists.
+
+Explicitly, the risk is that marginalized people are less able to appeal being added to such lists, since they are generally in possession of less social capital, and online discourse tends to side against them by default.
+
+It's interesting to me that the same people who helped coordinate harassing /Wheaton/ off the /Fediverse/ are now advocating for a similar tool as what he misused, without seeming to appreciate that developing such tools would enable again such misuse.
+
+Being explicit though, I have no problem with allowlists, or whitelists, where list of not who to block, but of which instances are allowed, being shared. I view that as a mimic of how social interaction has worked for much of our past. I mean, you can only interact with an entity after you know it exists, right? Whereas with the /Fediverse's/ model, you interact - in the sense of /broadcasting/ a message to them - by anyone who has an instance.
+
+There's a lot of different social communication that comes up with the /Fediverse/, and I have to think that a lot of them would be solved by a whitelist-y model. I know that'd introduce a lot of other problems, but I really do think that /Mastodon/, and so the rest of the /Fediverse/, are letting themselves being wagged by the golden goose of "discoverability," when that's never been important outside of advertising. (Yes, I mixed a metaphor, a tail wagging a dog and a goose laying a golden egg.)
+
+***** Get an Item from My Pending Reading List
+Just a bit ago I set up an =ems-reading-list= variable, and I'd like to set up a function to get a random item from those items in the =pending= sublist.
+
+#+begin_src elisp
+  (defun ems-read-something
+      ()
+    "Return a random element's cdr, which should be a string that is a URL, from the ems-reading-list variable."
+    (cdr (assoc 'source (cdr (seq-random-elt (cdr (assoc 'pending ems-reading-list)))))))
+  (defun ems-read-something-now
+      ()
+    "Opens a random item from the pending reading list."
+    (interactive)
+    (browse-url (ems-read-something)))
+  (ems-read-something-now)
+#+end_src
+
+Now, I can do =M-x ems-read-something-now= and the browser will immediately open up something in my reading list. Next is to make a function for adding something to the reading list, and moving it to a =read= section.
+
+**** 2019-06-20 Thursday
+***** TODO Visual Line Mode on All Text Modes and Elisp Mode
+I'd prefer to have visual line mode, where /Emacs/ wraps lines to the next line, visually (word-wrapping in other clients), turned on in every text-mode, not just /Org-mode/, and in the /Elisp/ mode as well.
+***** Playing with Thorns in Org-mode
+So I think it'd be interesting to replace the =th= characters with a thorn - þ is the lowercase, and þ is the uppercase, though those look the same in my font.
+
+I'm going to copy my existing /use-package/ declaration for /pretty-mode/ and add to that - I'm still not comfortable working with lists and it's about 0200h and I don't feel like trying to learn... anything.
+
+-----
+
+It's now the morning. I put an =:after org= in this as well as the new config. It works, but the problem is symbols only count if they're a "word" by themselves - th shows as a thorn, but the shows as t h e.
+
+In the light of day, I'm realizing this is probably not a thing worth doing. What might be more interesting is to have words replaced with their /international phonetic alphabet/ equivalent. I've always been annoyed I don't know how to read it, and having the word "the" replaced by "ði."
+
+That said, even for "the," it requires some figuring to know if it's "thuh" or "thee," so maybe this whole thing is best abandoned for now. In fact; I shall just drop it.
+***** Thoughts on Free Software Developers
+I'm noticing huge chunks of the free-software world is largely ignorant to the philosophical motivates behind free software, and view their participation in it more as participation in a sort of majority-run corporation, which... makes sense in hindsight, and explains a lot of the contradiction I see in people's views.
+
+They aren't rejecting property rights, they're trying to become a part of the "winning" structure by hedging their bets outside proprietary software. Because of the white academic roots of free- and open-source software, I think a lot of participants don't realize that most of what they do reinforces that as the dominant voice in the field, and don't appreciate that all those issues of equality meaning little without equity follow them from social pub debates to their actions adjacent to free software.
+
+I've been thinking about this because in response to a few /microblog/ posts I made saying so, people told me free software was not a rejection of intellectual property rights.
+
+And it's interesting to me as someone who's sided with open-, not free-, source, even after giving it some recent consideration. I think the open-source community is ignorant too, and their actions denote a similar amount of ignorance to their roots, but generally I view open-source people as less philosophically pedantic, so I'm a bit more forgiving of their contradictions.
+
+***** Commits Since Documentation Update Disclosure          :HelpWanted:
+I wonder if there's a documentation system that tracks how many commits have affected the documented code and presents that in the rendering; "There have been 5 commits affecting these functions since the documentation was changed."

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       58a4508e-2352-4f1e-8cf4-867e62d702b9
+:END:
+#+title: harm
+#+date: [2025-09-03 Wed 21:22]
+

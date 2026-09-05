@@ -1,0 +1,31 @@
+#+SETUPFILE: ../default-setup.inc
+#+TITLE: Judgement Day
+#+EXPORT_FILE_NAME: ../../pub/poems/judgement-day
+#+TOC: headlines 1 local
+* Introduction
+#+INCLUDE: "../../plates.inc::draft"
+#+INCLUDE: "../../plates.inc::default-eli"
+* Judgement Day
+#+BEGIN_VERSE
+When judgement day comes I'll be writing a novel
+about all the things which haven't happened to me.
+I'll write about love, and I'll write about triumph
+Confidence, clarity, certainty, absolution.
+I won't say a word about the caustic fear
+that brought us headlong to the end
+There'll be no mention of the little deaths
+the false justice or apprehension.
+Gods don't need that.
+#+END_VERSE
+* Supplements
+#+TOC: headlines local 1
+** Contribute
+   :PROPERTIES:
+   :CUSTOM_ID: supplements-contribute
+   :END:
+#+INCLUDE: "../../plates.inc::personal-contribute"
+** License
+   :PROPERTIES:
+   :CUSTOM_ID: supplements-license
+   :END:
+#+INCLUDE: "../../plates.inc::mit-license"

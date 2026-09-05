@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       73ad56c9-385a-42ed-927e-0a702952d93d
+:END:
+#+title: event
+#+date: [2025-09-24 Wed 23:04]
+

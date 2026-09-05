@@ -1,0 +1,56 @@
+{
+  "name": "@emsenn/communicating-in-tokipona",
+  "version": "0.0.0",
+  "type": "module",
+  "description": "Communicating in Tokipona — the Tokipona fiber over @emsenn/communicating: the compiled Tokipona bundle and the runnable communicate/communicate-serve surface wired to Tokipona.",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "clean": "rm -rf dist .tmp/test-dist",
+    "check": "tsc --noEmit",
+    "build": "tsc -p tsconfig.build.json && chmod +x dist/scripts/*.mjs",
+    "prepack": "pnpm run rebuild",
+    "rebuild": "pnpm run clean && pnpm run build"
+  },
+  "main": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "bin": {
+    "communicate": "./dist/scripts/communicate.mjs",
+    "communicate-serve": "./dist/scripts/communicate-serve.mjs"
+  },
+  "files": [
+    "data",
+    "dist",
+    "README.md",
+    "package.json"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs"
+    },
+    "./bundle": {
+      "types": "./dist/compiled.d.mts",
+      "import": "./dist/compiled.mjs"
+    },
+    "./manifest": {
+      "types": "./dist/manifest.d.mts",
+      "import": "./dist/manifest.mjs"
+    },
+    "./actions": {
+      "types": "./dist/actions.d.mts",
+      "import": "./dist/actions.mjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "dependencies": {
+    "@emsenn/communicating": "0.0.0",
+    "@emsenn/relating": "0.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.1",
+    "typescript": "5.9.3"
+  },
+  "sideEffects": false
+}

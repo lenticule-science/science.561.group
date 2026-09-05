@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2023-01-17 Tue 11:32 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Burrow Aquaria</title>
+<meta name="generator" content="Org Mode" />
+<style>
+  	   @charset "UTF-8";
+  
+  	   :root {	
+  	       --body-font: sans-serif;
+  	       --header-font: sans-serif;
+  	       --code-font: monospace;
+  	       --primary-color: #ffe;
+  	       --primary-dim-color: #eed;
+  	       --secondary-color: #312;
+  	       --secondary-dim-color: #756;
+  	       --link-color: #880;
+  	       --link-hover-color: #aa2;
+  	       --link-visited-color: #934;
+  	       --link-visited-hover-color: #b56;
+  	       --external-link-color: #008;
+  	       --external-link-hover-color: #60b;
+  	       --external-link-visited-color: #172;
+  	       --external-link-visited-hover-color: #394;
+  	   }
+  	   @media(prefers-color-scheme:dark){
+  	       :root {
+  		  --body-font: sans-serif;
+  		  --header-font: sans-serif;
+  		  --code-font: monospace;
+  		  --primary-color: #756;
+  		  --primary-dim-color: #312;
+  		  --secondary-color: #eed;
+  		  --secondary-dim-color: #ffe;
+  		  --link-color: #880;
+  		  --link-hover-color: #aa2;
+  		  --link-visited-color: #934;
+  		  --link-visited-hover-color: #b56;
+  	       }}
+  	   body {
+  	       position: relative;
+  	       min-height: 100%;
+  	       background-color: var(--primary-color);
+  	       color: var(--secondary-color);
+  	       margin: 0 auto;
+  	       font-family: sans-serif;
+  	   }
+  	   main, #content {
+  	       background-color: var(--primary-dim-color);
+  	       border-left: 1.5em dotted var(--primary-color);
+  	       padding: 1em;
+  	   }
+  	   header {
+  	       border-bottom: 0.8em dotted var(--secondary-dim-color);
+  	   }
+  	   h1 { font-size: 2em; margin-bottom: 0; }
+  	   h2 {
+  	       border-bottom: 0.3em dotted var(--secondary-dim-color);
+  	   }
+  	   h2, h3, h4, h5, h6, p, table, ul, ol, .org-src-container {
+  	       width: 60%;
+  	   }
+  	   aside {
+  	       float: right;
+  	       width: 35%;
+  	   }
+  	   aside p { width: 100%; }
+  	   @media screen and (max-width:760px) {
+  	       h2, h3, h4, h5, h6, p, table, ul, ol, .org-src-container {
+  		  width: 90%;
+  	       }
+  	       aside {
+  		  float: inherit;
+  		  width: 90%;
+  		  border-top: 0.2em dotted var(--secondary-dim-color);
+  		  border-bottom: 0.2em dotted VAR(--secondary-dim-color);
+  		  font-size: 0.8em;
+  		    }
+  	   }
+  
+  	   footer, #postamble, #preamble {
+  	       padding: 0.5em;
+  	   }
+  	   table {
+  	       border-collapse: collapse;
+  	       border-spacing: 0;
+  	       empty-cells: show;
+  	       border: 0.1em solid #444;
+  	   }
+  	   thead { font-family: sans-serif; }
+  	   th, td {
+  	       padding: 0 0.3em;
+  	       border: 0.01em solid #444;
+  	   }
+  	   img {
+  	       max-width: 80vw;
+  	       vertical-align: middle;
+  	   }
+  	   pre, .src {
+  	       padding: 0.5em;
+  	       border: 0.1em solid #444;
+  	       white-space: pre-wrap;
+  	       overflow-x: scroll;
+  	       text-overflow: clip;
+  	       scrollbar-width: none;
+  	   }
+  	   pre::-webkit-scrollbar, .src::-webkit-scrollbar {
+  	       display: none;
+  	   }
+  
+  
+  	   dt {
+  	       font-weight: normal;
+  	       display: inline-block;
+  	       border-bottom: 0.1rem dotted #444;
+  	   }
+  	   #text-index dt { border-bottom: none; }
+  	   h2, h3, h4, h5, h6, h7, h8, h9, h10 {
+  	       display: block;
+  	       font-family: sans-serif;
+  	       margin: 0.2em auto 0.5em 0;
+  	   }
+  	   a, .link {
+  	       text-decoration: none;
+  	       color: #880;
+  	       display: inline;
+  	       position: relative;
+  	       border-bottom: 0.1rem dotted;
+  	       line-height: 1.2;
+  	       transition: border 0.3s;
+  	   }
+  	   a:hover {
+  	       color: #aa2;
+  	       outline-style: none;
+  	       border-bottom: 0.1rem solid;
+  	   }
+  	   a:visited, .visited-link { color: #934; }
+  	   a:visited:hover { color: #b56; }
+  	   a:focus {
+  	       outline-style: none;
+  	       border-bottom: 0.1rem solid;
+  	   }
+  	   ::selection { background-color: #777; color: #eee; }
+  	   a::selection { background-color: #ccc; }
+  	   .org-todo {
+  	       background-color: #ddd;
+  	       color: #333;
+  	       font-size: .8rem;
+  	       float: right;
+  	   }
+  	   .org-src-container + .example {
+  	       margin-left: 8em;
+  	   }
+  	   a[href^="https://"]:not([href*="emsenn.net"]):after, a[href^="https://"]:not([href*="emsenn.net"]):visited:after, .external-link:after, .visited-external-link:after { 
+  	       content: "^";
+  	       font-size: 0.5em;
+  	       vertical-align: super;
+  	   }
+  	   a[href^="https://"]:not([href*="emsenn.net"]), .external-link {
+  	       color: var(--external-link-color);
+  	   }
+  	   a[href^="https://"]:not([href*="emsenn.net"]):hover{ 
+  	       color: var(--external-link-hover-color);
+  	   }
+  	   a[href^="https://"]:not([href*="emsenn.net"]):visited, .visited-external-link { 
+  	       color: var(--external-link-visited-color);
+  	   }
+  	   a[href^="https://"]:not([href*="emsenn.net"]):visited:hover{ 
+  	       color: var(--external-link-visited-hover-color);
+  	   }
+  	   blockquote {
+  	       border: 0.1em dashed var(--secondary-dim-color);
+  	       padding-left: 0.2em;
+  	   }
+  	   label.org-src-name {
+  	       margin: 0 0 0 3em;
+  	       font-family: sans-serif;
+  	       font-size: 1rem;
+  	       line-height: 0;
+  	   }
+  	   .skip-to-content {
+  	       opacity: 0;
+  	       position: absolute;
+  	       left: 0.2em;
+  	   }
+  	   .skip-to-content:focus{
+  	       opacity: 1;
+  	       background-color: var(--secondary-dim-color);
+  	       color: var(--primary-color);
+  	   }
+  	   ul { max-width: 85%; }
+      .footpara { display: inline; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+<section id="preamble" class="status">
+<a href="#content" class="skip-to-content">skip to content</a><section class="nav"><strong>emsenn.net:</strong> <a href="./index.html">Homepage</a> | <a href="./bul/index.html">Bulletins</a> | <a href="./mainindex.html">Main Index</a><p>This Website was cultivated as a public asset with <a href="https://ko-fi.com/emsenn">support</a> from people like you. <strong><em>Thank you!</em></strong></p>
+  	 <details>
+  	   <summary>Click this sentence for information about my Website.</summary>
+  	   <p>Click each sentence below for more info:</p>
+  	     <ul>
+  	       <li><details>
+  	 	<summary>This website was created by Emacs and Org-mode</summary>
+  	 	<p>See <a href="https://emsenn.net/src/infoponemacs.html">my Emacs configuration</a> to learn how.</p>
+  	       </details></li>
+  	       <li><details>
+  	         <summary>Its content was written by hand.</summary>
+  	         <p>This means there might be mistakes! 
+  	       </details></li>
+  	       <li><details>
+  	 	<summary>It uses style to add information to the pages.</summary>
+  	 	<ul>
+  	 	  <li><details>
+  	 	  <summary>Click this sentence to see how links are styled:</summary>
+  	 	  <table>
+  	 	    <thead><tr>
+  	 	      <th scope="col">Color</th>
+  	 	      <th scope="col">Link type</th>
+  	 	    </tr></thead>
+  	 	    <tbody>
+  	 	      <tr><td class="link">Sample</td>
+  	 		<td>Unvisited local resource</td></tr>
+  	 	      <tr><td class="visited-link">Sample</td>
+  	 		<td>Visited local resource</td></tr>
+  	 	      <tr><td class="external-link">Sample</td>
+  	 		<td>Unvisited external resource</td></tr>
+  	 	      <tr><td class="visited-external-link">Sample</td>
+  	 		<td>Visited external resource</td></tr>
+  	 	    </tbody>
+  	 	  </table>
+  	 	</details></li>
+  	       </ul>
+  	     </details></li>
+  	   </ul>
+  	 </details>
+  	 </section>
+</section>
+<main id="content" class="content">
+<header>
+<h1 class="title">Burrow Aquaria</h1>
+</header><div class="head" id="org5933e3d">
+
+</div>
+
+<p>
+The <b><i><a href="aquaria.html">Burrow Aquaria</a></i></b> is a small <i>aquaponics</i> setup inside the <i>Burrow</i>.
+</p>
+
+<aside id="org06d6752">
+<p>
+<b><a href="../../def/aquaponics.html">Aquaponics</a></b> is the combination of <i>aquaculture</i> and <i>hydroponics</i>; uniting systems for cultivating plants and fish.
+</p>
+<p>
+The <b><i><a href="index.html">561 Burrow</a></i></b> is what me and my roommates call our house, where we practice <a href="../def/cottage-industry">cottage industry</a>.
+</p>
+</aside>
+
+<p>
+The primary <i>goal</i> of the <i>Aquaria</i> is to sustain populations of select plants through our <i>winter</i>, for use in the <i>Garden</i> come <i>spring</i>.
+</p>
+
+<aside id="orgf1e10dc">
+<p>
+A <b><a href="../../def/goal.html">goal</a></b> is something an <i>individual</i> or <i>group</i> has <i>choosen</i> to put <i>energy</i> toward.
+</p>
+<p>
+<b><a href="../../def/winter.html">Winter</a></b> is the <i>season</i> that occurs when a part of the <i>Earth</i> is tilted furthest away from the <i>Sun</i>.
+</p>
+<p>
+The <b><a href="../gar/index.html">561 Garden</a></b> is the name of the <i>backyard garden</i> I help steward.
+</p>
+<p>
+<b><a href="../../def/spring.html">Spring</a></b> is the <i>season</i> that occurs when a part of the <i>Earth</i> is tilting toward the <i>Sun</i>.
+</p>
+</aside>
+
+<nav id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org741c8d8">Aquaria</a>
+<ul>
+<li><a href="#org79305ee">Mobile Aquarium</a></li>
+<li><a href="#orgef48e44">Hardening Basin</a></li>
+<li><a href="#org37ff7c0">Shrimp Basin</a></li>
+<li><a href="#orgd494303">Minnow Basin #1</a></li>
+<li><a href="#org92be1b1">Minnow Basin #2</a></li>
+<li><a href="#org441497b">Biofilter Basin #1</a></li>
+<li><a href="#org14725aa">Biofilter Basin #2</a></li>
+</ul>
+</li>
+<li><a href="#orgefb27b0">Operations</a>
+<ul>
+<li><a href="#org34bb259">Routines</a></li>
+<li><a href="#org62bdb0d">Plans</a></li>
+</ul>
+</li>
+<li><a href="#org50b1692">Journal</a>
+<ul>
+<li><a href="#org9a2df0f">2023</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</nav>
+
+<section id="outline-container-org741c8d8" class="outline-2">
+<h2 id="org741c8d8">Aquaria</h2>
+<div class="outline-text-2" id="text-org741c8d8">
+</div>
+<div id="outline-container-org79305ee" class="outline-3">
+<h3 id="org79305ee">Mobile Aquarium</h3>
+<div class="outline-text-3" id="text-org79305ee">
+<p>
+The <b>Mobile Aquarium</b> is an <i>aquarium</i> holding about 2 quarts of water, with glass marble beads as <i>substrate</i>. <i>Azolla</i> floats on the water's surface, and two <i>ghost shrimp</i>, two <i>bladder snails</i> and three <i>rosy-red minnows</i> share the space.
+</p>
+
+<aside id="org79c0070">
+<p>
+An <b><a href="../../def/aquarium.html">aquarium</a></b> is a <i>vivarium</i> filled with water, where aquatic plants and animals are kept.
+</p>
+<p>
+<b><a href="../../def/aquarium-substrate.html">Aquarium substrate</a></b> is the <i>substrate</i> used on the bottom of an <i>aquarium</i>.
+</p>
+<p>
+<b><a href="../../def/azolla.html">Azolla</a></b> is a <i>genus</i> of <i>aquatic plant</i> that floats and looks like a fern.
+</p>
+<p>
+<b><a href="../../def/palaemonetes-paludosus.html">Palaemonetes paludosus</a></b>, commonly called ghost shrimp or glass shrimp, are small <i>shrimp</i>.
+</p>
+<p>
+<b><a href="../../def/physidae.html">Physidae</a></b>, commonly called bladder snail,  is a <i>family</i> of pulmonate <i>gastropods</i>.
+</p>
+<p>
+<b><a href="../../def/pimephales-promelas-rosy-red.html">Pimephales promelas 'Rosy Red'</a></b>, commonly called rosy-red fathead minnow, is a xanthic strain of <i>Pimephales promelas</i>, having a rosy-golden color.
+</p>
+</aside>
+</div>
+</div>
+
+<div id="outline-container-orgef48e44" class="outline-3">
+<h3 id="orgef48e44">Hardening Basin</h3>
+<div class="outline-text-3" id="text-orgef48e44">
+<p>
+The <b>Hardening Basin</b> is an <i>aquarium</i> holding about 5 gallons of water with <i>calcium grit</i> &amp; <i>seashells</i> as <i>substrate</i>, planted with <i>azolla</i>.
+</p>
+
+<aside id="org0059b12">
+<p>
+<b><a href="../../def/calcium-grit.html">Calcium grit</a></b> is a <a href="../../def/supplemental-poultry-feed.html">supplementary poultry feed</a> which helps birds' digestion and egg-laying.
+</p>
+<p>
+A <b><a href="../../def/seashell.html">seashell</a></b> is a hard mineralized outer layer that some sea critters possess. It usually outlives them, and can be an important crafting supply.
+</p>
+</aside>
+</div>
+</div>
+
+<div id="outline-container-org37ff7c0" class="outline-3">
+<h3 id="org37ff7c0">Shrimp Basin</h3>
+<div class="outline-text-3" id="text-org37ff7c0">
+<p>
+The <b>Shrimp Basin</b> is an <i>aquarium</i> holding about 5 gallons of water. <i>Azolla</i> floats on the water's surface, and approximately 40 <i>ghost shrimp</i> live in the water.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd494303" class="outline-3">
+<h3 id="orgd494303">Minnow Basin #1</h3>
+<div class="outline-text-3" id="text-orgd494303">
+<p>
+<b>Minnow Basin #1</b> is an <i>aquarium</i> holding about 3 gallons of water with <i>calcium grit</i> as <i>substrate</i>, planted with <i>azolla</i>. X <i>rosy-red minnows</i> live in it. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org92be1b1" class="outline-3">
+<h3 id="org92be1b1">Minnow Basin #2</h3>
+<div class="outline-text-3" id="text-org92be1b1">
+<p>
+<b>Minnow Basin #2</b> is an <i>aquarium</i> holding about 5 gallons of water with <i>calcium grit</i> as <i>substrate</i>, planted with <i>azolla</i>. X <i>rosy-red minnows</i> and eight <i>ghost shrimp</i> share the space.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org441497b" class="outline-3">
+<h3 id="org441497b">Biofilter Basin #1</h3>
+<div class="outline-text-3" id="text-org441497b">
+<p>
+<b>Biofilter Basin #1</b> is an <i>aquarium</i> holding about 5 gallons of water with <i>calcium grit</i> as <i>substrate</i>, planted with <i>azolla</i> and <i>water lettuce</i>.
+</p>
+
+<aside id="org7ec8ad0">
+<p>
+<b><a href="../../def/pistia-stratiotes.html">Pistia stratiotes</a></b>, commonly called water lettuce, is a floating <i>aquatic plant</i>.
+</p>
+</aside>
+</div>
+</div>
+
+<div id="outline-container-org14725aa" class="outline-3">
+<h3 id="org14725aa">Biofilter Basin #2</h3>
+<div class="outline-text-3" id="text-org14725aa">
+<p>
+<b>Biofilter Basin #2</b> is an <i>aquarium</i> hodling about 2.5 gallons of water with <i>calcium grit</i> as <i>substrate</i>, planted with <i>azolla</i> and <i>filamentous algae</i>.
+</p>
+
+<aside id="org7fde7c9">
+<p>
+<b><a href="../../def/filamentous-algae.html">Filamentous algae</a></b> is <i>algae</i> that grows as intertwined <i>filaments</i>.
+</p>
+</aside>
+</div>
+</div>
+</section>
+
+<section id="outline-container-orgefb27b0" class="outline-2">
+<h2 id="orgefb27b0">Operations</h2>
+<div class="outline-text-2" id="text-orgefb27b0">
+</div>
+<div id="outline-container-org34bb259" class="outline-3">
+<h3 id="org34bb259">Routines</h3>
+<div class="outline-text-3" id="text-org34bb259">
+</div>
+<div id="outline-container-org654763f" class="outline-4">
+<h4 id="org654763f"><span class="todo ROUTINE">ROUTINE</span> Top up the hardening basin</h4>
+<div class="outline-text-4" id="text-org654763f">
+<p>
+Every day, top up the hardening basin with water from the tap. This'll let the existing bacteria neutralize the <i>chloramine</i> in the water, before it goes into any of the basins with life.
+</p>
+
+<aside id="orgaefbac0">
+<p>
+<b><a href="../../def/chloramine.html">Chloramine</a></b> is a chemical used to make water potable.
+</p>
+</aside>
+</div>
+</div>
+<div id="outline-container-org2e8d95c" class="outline-4">
+<h4 id="org2e8d95c"><span class="todo ROUTINE">ROUTINE</span> Transfer water between aquaria</h4>
+<div class="outline-text-4" id="text-org2e8d95c">
+</div>
+</div>
+</div>
+<div id="outline-container-org62bdb0d" class="outline-3">
+<h3 id="org62bdb0d">Plans</h3>
+<div class="outline-text-3" id="text-org62bdb0d">
+</div>
+<div id="outline-container-org8eca9fb" class="outline-4">
+<h4 id="org8eca9fb"><span class="todo SOON">SOON</span> Order plants from the Fish Room</h4>
+<div class="outline-text-4" id="text-org8eca9fb">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Put together the shopping cart on desktop</li>
+<li class="off"><code>[&#xa0;]</code> Allocate funds</li>
+<li class="off"><code>[&#xa0;]</code> Place order</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgb1b5280" class="outline-4">
+<h4 id="orgb1b5280"><span class="done DONE">DONE</span> Move minnows out of Mobile Aquarium.</h4>
+<div class="outline-text-4" id="text-orgb1b5280">
+<p>
+I think the <i>rosy-red minnows</i> in the Mobile Aquarium are bored; all they do is nibble on the <i>azolla</i> roots and that's gonna kill the whole aquarium's ability to cycle.
+</p>
+</div>
+</div>
+</div>
+</section>
+<section id="outline-container-org50b1692" class="outline-2">
+<h2 id="org50b1692">Journal</h2>
+<div class="outline-text-2" id="text-org50b1692">
+</div>
+<div id="outline-container-org9a2df0f" class="outline-3">
+<h3 id="org9a2df0f">2023</h3>
+<div class="outline-text-3" id="text-org9a2df0f">
+</div>
+<div id="outline-container-org0ecdc5b" class="outline-4">
+<h4 id="org0ecdc5b">2023-W01</h4>
+<div class="outline-text-4" id="text-org0ecdc5b">
+</div>
+<div id="outline-container-org753a414" class="outline-5">
+<h5 id="org753a414">2023-01-06 Friday</h5>
+<div class="outline-text-5" id="text-org753a414">
+</div>
+<div id="outline-container-orgb99ff4b" class="outline-6">
+<h6 id="orgb99ff4b"><span class="timestamp-wrapper"><span class="timestamp">[2023-01-06 Fri 19:20]</span></span></h6>
+<div class="outline-text-6" id="text-orgb99ff4b">
+<p>
+As of a couple days ago, been turning green.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgea83f5e" class="outline-5">
+<h5 id="orgea83f5e">2023-01-07 Saturday</h5>
+<div class="outline-text-5" id="text-orgea83f5e">
+</div>
+<div id="outline-container-org9c84562" class="outline-6">
+<h6 id="org9c84562"><span class="timestamp-wrapper"><span class="timestamp">[2023-01-07 Sat 15:01]</span></span></h6>
+<div class="outline-text-6" id="text-org9c84562">
+<p>
+Just noting that no <i>shrimp</i> are in the <i>Shrimp Basin</i> yet. In the meantime, its turning real green, with stringy bits of algae starting to form on the roots of the few azolla that are in this bin. Also, lots of bubbles on the surface of the basin.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orge7469c0" class="outline-4">
+<h4 id="orge7469c0">2023-W02</h4>
+<div class="outline-text-4" id="text-orge7469c0">
+</div>
+<div id="outline-container-org37de915" class="outline-5">
+<h5 id="org37de915">2023-01-10 Tuesday</h5>
+<div class="outline-text-5" id="text-org37de915">
+</div>
+<div id="outline-container-orgf6615fd" class="outline-6">
+<h6 id="orgf6615fd"><span class="timestamp-wrapper"><span class="timestamp">[2023-01-10 Tue 14:22]</span></span></h6>
+<div class="outline-text-6" id="text-orgf6615fd">
+<p>
+Just a little experiment, set up last night, a half-gallon little bin with 3 rosy red minnows in it, and a thick covering of azolla on top.
+</p>
+</div>
+</div>
+<div id="outline-container-org40d55cb" class="outline-6">
+<h6 id="org40d55cb"><span class="timestamp-wrapper"><span class="timestamp">[2023-01-10 Tue 18:43]</span></span></h6>
+<div class="outline-text-6" id="text-org40d55cb">
+<p>
+Moved a snail from Minnow Basin #2 to the Mobile Aquaria.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org6a0089b" class="outline-5">
+<h5 id="org6a0089b">2023-01-11 Wednesday</h5>
+<div class="outline-text-5" id="text-org6a0089b">
+</div>
+<div id="outline-container-org1717ed4" class="outline-6">
+<h6 id="org1717ed4"><span class="timestamp-wrapper"><span class="timestamp">[2023-01-11 Wed 16:42]</span></span></h6>
+<div class="outline-text-6" id="text-org1717ed4">
+<p>
+Added 2 ghost shrimp to it today.
+</p>
+</div>
+</div>
+<div id="outline-container-org904aa4b" class="outline-6">
+<h6 id="org904aa4b"><span class="timestamp-wrapper"><span class="timestamp">[2023-01-11 Wed 16:43]</span></span></h6>
+<div class="outline-text-6" id="text-org904aa4b">
+<p>
+Added what should be 44 <i>ghost shrimp</i> to it today. Its finally actually a shrimp bin!!
+</p>
+</div>
+</div>
+<div id="outline-container-org8fa4e1d" class="outline-6">
+<h6 id="org8fa4e1d"><span class="timestamp-wrapper"><span class="timestamp">[2023-01-11 Wed 16:43]</span></span></h6>
+<div class="outline-text-6" id="text-org8fa4e1d">
+<p>
+Added 4 ghost shrimp to <i>Minnow Basin #2</i> today.
+</p>
+</div>
+</div>
+<div id="outline-container-orgc876120" class="outline-6">
+<h6 id="orgc876120"><span class="timestamp-wrapper"><span class="timestamp">[2023-01-11 Wed 18:23]</span></span></h6>
+<div class="outline-text-6" id="text-orgc876120">
+<p>
+Found another little snail in Minnow Basin #2, so I moved it into the mobile aquaria
+</p>
+</div>
+</div>
+<div id="outline-container-org4731fac" class="outline-6">
+<h6 id="org4731fac"><span class="timestamp-wrapper"><span class="timestamp">[2023-01-11 Wed 18:32]</span></span></h6>
+<div class="outline-text-6" id="text-org4731fac">
+<p>
+Added a stick w/ some <i>fibrous algae</i> dangling off it to the top of it.
+</p>
+</div>
+</div>
+<div id="outline-container-org488357c" class="outline-6">
+<h6 id="org488357c"><span class="timestamp-wrapper"><span class="timestamp">[2023-01-11 Wed 20:38]</span></span></h6>
+<div class="outline-text-6" id="text-org488357c">
+<p>
+I can't get over how cute the shrimp are. They move in so many different ways; its like evolution led them to evolve new ways to do things rather than refining the existing ways, leading to like 3 different kinds of legs or something.
+</p>
+</div>
+</div>
+<div id="outline-container-org1463c17" class="outline-6">
+<h6 id="org1463c17"><span class="timestamp-wrapper"><span class="timestamp">[2023-01-11 Wed 20:42]</span></span></h6>
+<div class="outline-text-6" id="text-org1463c17">
+<p>
+I should note, a lot of the <i>azolla</i> has dropped its roots since adding it to the basin, forming a little aquatic tumbleweed that's resting above the bead substrate.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org88123b6" class="outline-5">
+<h5 id="org88123b6">2023-01-12 Thursday</h5>
+<div class="outline-text-5" id="text-org88123b6">
+</div>
+<div id="outline-container-org67d0930" class="outline-6">
+<h6 id="org67d0930"><span class="timestamp-wrapper"><span class="timestamp">[2023-01-12 Thu 11:00]</span></span></h6>
+<div class="outline-text-6" id="text-org67d0930">
+<p>
+Last night I saw one of the <i>bladder snails</i> riding the other one. Maybe eggs soon? Here's hoping!!
+</p>
+</div>
+</div>
+<div id="outline-container-orgb945106" class="outline-6">
+<h6 id="orgb945106"><span class="timestamp-wrapper"><span class="timestamp">[2023-01-12 Thu 13:58]</span></span></h6>
+<div class="outline-text-6" id="text-orgb945106">
+<p>
+I noticed the <i>water lettuce</i> was under the water, just barely, so I pulled it out and noticed it had <i>no</i> roots. I'm suspecting that the <i>rosy-red minnows</i> favour its roots as food, over any part of the <i>azolla</i>.
+</p>
+</div>
+</div>
+<div id="outline-container-orgfeb5d01" class="outline-6">
+<h6 id="orgfeb5d01"><span class="timestamp-wrapper"><span class="timestamp">[2023-01-12 Thu 15:53]</span></span></h6>
+<div class="outline-text-6" id="text-orgfeb5d01">
+<p>
+I've only seen one of the two <i>ghost shrimp</i> I added, all day. Its a small container, where could it be hiding?
+</p>
+</div>
+</div>
+<div id="outline-container-org2b765e7" class="outline-6">
+<h6 id="org2b765e7"><span class="timestamp-wrapper"><span class="timestamp">[2023-01-12 Thu 16:03]</span></span></h6>
+<div class="outline-text-6" id="text-org2b765e7">
+<p>
+I added four more <i>glass shrimp</i> from the Shrimp Basin.
+</p>
+</div>
+</div>
+<div id="outline-container-org9f3ab66" class="outline-6">
+<h6 id="org9f3ab66"><span class="timestamp-wrapper"><span class="timestamp">[2023-01-12 Thu 16:11]</span></span></h6>
+<div class="outline-text-6" id="text-org9f3ab66">
+<p>
+Found the missing <i>glass shrimp</i> - its hanging upside down among the roots of the <i>azolla</i>.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgbf90bce" class="outline-6">
+<h6 id="orgbf90bce"><span class="timestamp-wrapper"><span class="timestamp">[2023-01-12 Thu 16:46]</span></span></h6>
+<div class="outline-text-6" id="text-orgbf90bce">
+<p>
+The <i>water lettuce</i> I ordered arrived today. It looks different than the water lettuce I have one of, so I'm moving that to Biofilter Basin #2 and planting these new water lettuces in Biofilter Basin #1.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<section id="postamble" class="status">
+<p class="date">Created: 2023-01-17 Tue 11:32</p>
+</section>
+</body>
+</html>

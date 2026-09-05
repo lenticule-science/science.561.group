@@ -1,0 +1,3 @@
+#+title: rhizomatous writing
+#+date: [2020-12-15 Tue 16:48]
+*/Rhizomatous writing/* is a non-heirarchal style of linking together pieces of [[file:writing.org][writing]].

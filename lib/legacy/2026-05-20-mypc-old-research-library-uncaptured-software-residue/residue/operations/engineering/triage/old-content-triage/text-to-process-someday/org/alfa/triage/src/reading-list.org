@@ -1,0 +1,74 @@
+#+TITLE: Reading List
+** Reading List
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: reading-list
+   :END:
+* Introduction
+This is a list of documents that others have written and chosen to
+release for free, that I find valuable in some or another way.
+* On Business
+I have a special note for people interested in reading texts "on
+business." As Noah Madden says in [[https://twitter.com/naval/status/1002103360646823936]["How to Get Rich (without getting
+Lucky)"]]:
+
+#+BEGIN_QUOTE
+"There is no skill called 'business[...]' Study
+microeconomics, game theory, psychology, persuasion, ethics,
+mathematics, and computers."
+#+END_QUOTE
+
+In that spirit, I recommend anyone interested in writing "on business"
+read pieces from all categories of this list.
+
+- Matt Mochary's [[https://docs.google.com/document/d/1ZJZbv4J6FZ8Dnb0JuMhJxTnwl-dwqx5xl0s65DE3wO8/preview#heading=h.pdmqf3646hgt]["Founder to CEO"]], a guide on how to build a a company
+  from the ground up. It's a great read for seeing just what you don't
+  know about building a company.
+- Vivek Haldar's [[http://blog.vivekhaldar.com/post/79843441901/the-automatic-corporation]["The Automatic Corporation"]].
+- Paul Graham's [[http://paulgraham.com/opensource.html]["What Businesses Can Learn from Open Source"]].
+- Gitlab.com's [[https://www.remoteonly.org/][/Remote Only/]], about running an organization without a
+  central location.
+* On Technology and Programming
+- Bret Victor's [[http://worrydream.com/LearnableProgramming/]["Learnable Programming"]].
+- C. Titus Brown's post asking: for an open-source project, [[http://ivory.idyll.org/blog/2018-how-open-is-too-open.html]["How Open
+  Is Too Open?"]]
+- Jeff Atwood's [[https://blog.codinghorror.com/why-cant-programmers-program/]["Why Can't Programmers... Program?"]].
+- Eric S. Raymond's [[http://www.catb.org/esr/writings/taoup/html/ch01s06.html][/Basics of Unix Philosophy/]].
+- Neal Stephenson's [[http://cristal.inria.fr/~weis/info/commandline.html]["In the Beginning Was The Command Line"]], which
+  takes a long time to paraphrase Alan Kay, who said, "Keep simple
+  things simple, and make complex things possible."
+- Paul Ford's [[https://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/]["What is Code?"]].
+- Karl Fogel's [[https://producingoss.com/][/Producing Open-Source Software]]: probably the best book
+  about making a collaborative project work. The title and language
+  are almost unfortunate, it's message is relevant for every market.
+- Nick Heer's criticism of [[https://pxlnv.com/blog/bullshit-web/]["The Bullshit Web"]].
+- Kieran Healy's [[http://plain-text.co/][/The Plain Person's Guide to
+  Plain Text Social Science/], which is an argument for "[using] tools
+  that give you /more control/ over the process of data analysis and
+  writing."
+- Nadia Eghbal's [[https://nadiaeghbal.com/project-health]["Methodologies for Measuring Project Health"]].
+- Jessica Kerr's [[https://the-composition.com/the-origins-of-opera-and-the-future-of-programming-bcdaf8fbe960]["The Origins of Opera and the Future of Programming"]].
+- Ory.sh's [Guide to Web Access Control](https://www.ory.sh/api-security-cloud-guide-overview/).
+* On Design
+- The [http://motherfuckingwebsite.com/](http://motherfuckingwebsite.com/).
+- Justin Jackson's [Words](https://justinjackson.ca/words.html), which is a more family-friendly version of the Motherfucking Website.
+- Kevin Goldman's [Material Honesty on the Web](https://alistapart.com/article/material-honesty-on-the-web/).
+- Grigoria Pontiki's [Accessibility low hanging fruit](http://www.grigoria.gr/2018/08/25/accessibility-low-hanging-fruits.html).
+* On Society
+- Scott Alexander's [I Can Tolerate Anything Except the Outgroup](http://slatestarcodex.com/2014/09/30/i-can-tolerate-anything-except-the-outgroup/).
+* On Writing
+- Nicole Fenton's [Words as Material](https://www.nicolefenton.com/words-as-material/).
+- Pramila Rai's [Archetypal Imagination in Mark Twain's Works](http://202.45.147.21:8080/jspui/bitstream/123456789/154/1/PhD_Thesis_Pramila_Rai_Aug_2016.pdf).
+- Einar Bjarnason's [The Hero, the Shadow and The Wise Old Man](Einar).
+- The [Chicago Manual of Style](https://www.chicagomanualofstyle.org/book/). (Similarly, I recommend Joseph M. William's [Style: The Basics of Clarity and Grace](https://www.amazon.com/dp/0321953304/) and Kate L. Turabian's [A Manual for Writers of Research Papers, Theses, and Dissertations](https://www.amazon.com/dp/022649442X/) but they cost money.)
+- I mention it under the technology category as well, but [The Plain Person's Guide to Plain Text Social Science](http://plain-text.co/) by Kieran Healy is an argument for "[using] tools that give you _more control_ over... writing."
+- Kate Kinnear's ["The aesthetics of science fiction spaceship design"]() which can be taken as a detailed analysis of "how a trope comes into existence."
+- Sam Schlinkert's [[https://write.as/sts10/digital-security-guide-for-friends-and-loved-ones][Digital Security Guide for Friends and Loved Ones]].
+* Others
+- W Ben Hunt's piece about [how coyotes are too
+  clever](http://www.epsilontheory.com/too-clever-by-half/), and what
+  that means for us. This led me to another article by Hunt, about
+  [sheep logic](http://www.epsilontheory.com/sheep-logic/).
+- {{{lo-vicente-link}}}'s {{{towards-eden-link}}}.
+
+
+_Like what I read? You might like [what I write](https://emsenn.net/)._

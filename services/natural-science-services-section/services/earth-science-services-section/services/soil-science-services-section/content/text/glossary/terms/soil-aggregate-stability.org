@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       2690f73f-69f1-4cab-b303-ec5d25fc0b76
+:END:
+#+title: soil aggregate stability
+#+date: [2025-09-23 Tue 20:31]
+

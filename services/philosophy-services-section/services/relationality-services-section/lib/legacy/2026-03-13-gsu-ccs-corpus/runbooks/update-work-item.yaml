@@ -1,0 +1,21 @@
+id: update-work-item
+description: "Update a WorkItem's status in PLANS.md."
+skill-closure-kind: process
+
+inputs:
+  - name: unit_id
+    type: int
+  - name: status
+    type: str   # open | done | blocked | deferred
+  - name: why_blocked
+    type: str
+    default: ""
+
+steps:
+  - id: update-item
+    type: update
+    unit_id: "{{inputs.unit_id}}"
+    flush: true
+    fields:
+      status: "{{inputs.status}}"
+      why_blocked: "{{inputs.why_blocked}}"

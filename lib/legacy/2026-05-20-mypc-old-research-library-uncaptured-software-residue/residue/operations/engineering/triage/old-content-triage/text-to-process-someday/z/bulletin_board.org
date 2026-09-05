@@ -1,0 +1,6 @@
+#+title: bulletin board
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-20 Sun 15:14]
+#+roam_tags: term
+A */bulletin board/* is a place where members of a community can share information.

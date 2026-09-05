@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       52cc81a3-7ffe-493d-83a7-2e8fd05bdf6c
+:END:
+#+title: editor
+#+date: [2025-08-31 Sun 08:28]
+

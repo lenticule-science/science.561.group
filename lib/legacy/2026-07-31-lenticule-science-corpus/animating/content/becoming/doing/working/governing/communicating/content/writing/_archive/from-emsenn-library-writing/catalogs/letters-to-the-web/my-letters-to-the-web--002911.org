@@ -1,0 +1,42 @@
+:PROPERTIES:
+:ID:       981370b8-e3d7-4be9-81c0-8c19ffcf08cf
+:public:   true
+:ROAM_ALIASES: "Letters to the Web" "my Letters to the Web" "emsenn's Letters to the Web" "emsenn's letters to the Web" "my letters to the Web"
+:instantiates: [[id:9c606291-7654-428d-8f3f-13f97cbcb41f][catalog]]
+:author:   [[id:40cbaad9-af3c-4573-b356-ae116687e483][emsenn]]
+:audience: [[id:9127f744-2fb8-4604-af04-566b946a6eb4][Web]]
+:members-instantiate: [[id:1794ee8d-7bf3-4240-85ab-aeebbb62c0a8][letter]]
+:END:
+#+title: emsenn's Letters to the Web
+#+date: [2025-08-13 Wed 07:24]
+
+*/ey Letters to the Web/* are [[id:1794ee8d-7bf3-4240-85ab-aeebbb62c0a8][letters]] that I, [[id:40cbaad9-af3c-4573-b356-ae116687e483][emsenn]], wrote for the [[id:9127f744-2fb8-4604-af04-566b946a6eb4][Web]]. They're [[id:588b08dd-7574-4d5d-97e0-e364cb03f0ea][syndicated]] onto [[id:29d0ffd3-718f-4311-bc87-952a41560c74][Substack]] at [[https://emsenn.substack.com]], where you can subscribe to get them into your [[id:41555eea-e577-4059-8324-0732c1b64ed5][email inbox]].
+
+My letters to the Web provide a [[id:7c5995dd-eaad-4e63-aeae-28ae204b0071][Lakota perspective]] on things, written toward an audience who are curious about different ways to look at things like [[id:2782b41b-9dc9-408c-9174-06c60af1640c][psychology]] and [[id:bad397e9-7897-48b7-9046-5cc298419fea][sociology]].
+
+* Catalog
+#+begin_src elisp :results value raw :exports results :eval yes
+  (let* ((nodes
+  	(org-roam-db-query
+  	 [:select [*]
+  		  :from nodes
+  		  :where (and
+  			  (like properties '"%structure%[[id:1794ee8d-7bf3-4240-85ab-aeebbb62c0a8%")
+  			  (like properties
+  				'"%author%[[id:40cbaad9-af3c-4573-b356-ae116687e483%")
+  			  (like properties '"%public%true%"))]))
+  	(sorted-nodes
+  	 (sort nodes
+  	       (lambda (a b)
+  		 (string-lessp (cdr (nth 1 (nth 9 a))) (cdr (nth 1 (nth 9 b))))))))
+         (mapconcat
+  	(lambda (node)
+  	  (format "%s" node)
+  	  (format "- %s :: [[id:%s][%s]]" (cdr (nth 1 (nth 9 node))) (car node) (nth 8 node)))
+  	(reverse sorted-nodes)
+  	"\n"))
+#+end_src
+
+#+RESULTS:
+- true :: [[id:bcd7381e-de02-40e8-ba83-891ba96cd9b5][On white-supremacist COVID-eugenicist queers]]
+- Fascist grammaring, (post)liberal vocabularies, and anarchist alternatives :: [[id:e5c3d75e-56bf-4c4d-9308-38db7ecd3ebd][A Storm is a Storm is a Storm]]

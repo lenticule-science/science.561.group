@@ -1,0 +1,61 @@
+#+title: beading
+
+* Inventory
+** Size 11
+*** Opaque
+** Misc
+*** Beads
+*** Pieces
+* Ledger
+:PROPERTIES:
+:header-args: :noweb yes :tangle beading-ledger.beancount
+:END:
+#+begin_src beancount
+  option "operating_currency" "USD"
+  2021-12-31 open Expenses:Beads
+#+end_src
+** 2021
+
+*** 2021-12 December
+
+**** 2021-12-31 Friday
+***** [2021-12-31 Fri 13:11] :acquisition:
+
+#+begin_src beancount
+  2021-12-31 open Assets:Beads:Seed:Eleven:Rocaille:Metallic:Gunmetal
+  2021-12-31 * "Purchased beads: size 11/0 rocaille seed beads in Metallic Gunmetal"
+    Assets:Beads:Seed:Eleven:Rocaille:Metallic:Gunmetal   75 GRAM {{8.64 USD}}
+    Expenses:Beads
+#+end_src
+***** [2021-12-31 Fri 13:31] :acquisition:
+
+#+begin_src beancount
+  2021-12-31 open Assets:Beads:Seed:Eleven:Rocaille:Translucent:DarkSmokeTopaz
+  2021-12-31 * "Purchased beads: size 11/0 rocaille seed beads in Translucent DarkSmokeTopaz"
+    Assets:Beads:Seed:Eleven:Rocaille:Translucent:DarkSmokeTopaz   34 GRAM {{4.20 USD}}
+    Expenses:Beads
+#+end_src
+***** [2021-12-31 Fri 14:00] :acquistion:
+
+#+begin_src beancount
+2021-12-31 open Assets:Beads:Seed:Eleven:Rocaille:TransAB:Emerald
+2021-12-31 * "Purchased beads: size Eleven Rocaille in TransAB Emerald"
+  Assets:Beads:Seed:Eleven:Rocaille:TransAB:Emerald  69 GRAM {{7.90 USD}}
+  Expenses:Beads
+#+end_src
+***** [2021-12-31 Fri 14:03] :acquistion:
+
+#+begin_src beancount
+2021-12-31 open Assets:Beads:Seed:Eleven:Rocaille:TransLuster:DarkSmokeTopaz
+2021-12-31 * "Purchased beads: size Eleven Rocaille in TransLuster DarkSmokeTopaz"
+  Assets:Beads:Seed:Eleven:Rocaille:TransLuster:DarkSmokeTopaz  35 GRAM {{4.00 USD}}
+  Expenses:Beads
+#+end_src
+***** [2021-12-31 Fri 14:08] :acquistion:
+
+#+begin_src beancount
+2021-12-31 open Assets:Beads:Seed:Eleven:Rocaille:Translucent:CopperLinedYellow
+2021-12-31 * "Purchased beads: size Eleven Rocaille in Translucent CopperLinedYellow"
+  Assets:Beads:Seed:Eleven:Rocaille:Translucent:CopperLinedYellow  34 GRAM {{4.00 USD}}
+  Expenses:Beads
+#+end_src

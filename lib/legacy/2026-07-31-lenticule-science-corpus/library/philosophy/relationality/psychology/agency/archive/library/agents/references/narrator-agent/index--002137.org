@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       d5e839c7-6bec-43e1-857e-3c38056d7241
+:NODE-RELATIONS: (([[id:bee496e1-139b-4a7f-8a24-d4c14e6084c6][instantiates]] . [[id:f691f203-1b49-49ae-b665-0f65c915c822][agent]]))
+:END:
+#+title: Narrator Agent
+
+* 

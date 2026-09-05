@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       5bdf224c-3df5-4625-afe7-db8744922cba
+:END:
+#+title: semantic framework
+#+date: [2025-08-28 Thu 13:22]
+

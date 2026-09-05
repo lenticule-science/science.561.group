@@ -1,0 +1,10 @@
+#+title: environmental racism lawsuit against UNC-CH
+#+begin_head
+#+ghe_schema: record-0.1.1
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-22 Tue 13:18]
+#+roam_tags: term
+#+end_head
+
+See [[https://www.newsobserver.com/news/local/education/article237999519.html]].

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       d115550a-3b96-4e12-9bdb-6bca06869a0e
+:END:
+#+title: procedural generation
+#+date: [2025-10-05 Sun 08:43]
+

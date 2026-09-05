@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       bb984b66-146e-4110-b7b1-69a8f73b4faa
+:END:
+#+title: document body
+#+date: [2025-10-05 Sun 11:58]
+

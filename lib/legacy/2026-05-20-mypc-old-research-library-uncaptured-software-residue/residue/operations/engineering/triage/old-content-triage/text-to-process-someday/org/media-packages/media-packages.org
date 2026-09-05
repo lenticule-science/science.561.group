@@ -1,0 +1,82 @@
+# Created 2019-06-10 Mon 19:31
+#+OPTIONS: broken-links:mark H:10
+#+TITLE: Media Packages
+#+AUTHOR: emsenn
+#+export_file_name: ../media-packages
+#+macro: document-type document
+#+toc: headlines 1
+* Introduction
+This document is about a software prototype. It is likely to be inaccurate.
+
+This document contains the specifications for /media packages/ and
+/media package channels/, formats for maintaining a manifest about a
+piece of media content and a listing of those manifests.
+
+This document was created by me, emsenn, in the United States. To the extent possible under law, I have waived all copyright and related or neighboring rights to this document. This document was created for the benefit of the public. If you're viewing it on a remote server, you're encouraged to download your own copy. To learn how you can support me, see [[https://emsenn.net/donate][https://emsenn.net/donate]].
+
+* Media Packages
+#+toc: headlines 1 local
+** Overview
+A */media package/* is a manifest of information about a piece of
+media content, providing information about the piece as well as
+information about from where it can be obtained.
+
+A */media package channel/* provides a listing of /media packages/.
+** Media Package Specification
+A /media package/ is the core concept around which these
+specifications are built, representing information about a piece of
+media content, such as a painting, song, or story.
+
+Here's the currently defined parts of a /media package/:
+- Required:
+  - =identifier=
+  - =version=
+- Optional:
+  - =title=
+  - =creator=
+*** Media Package Requirements
+#+toc: headlines 1 local
+**** Media Package Identifier
+Every /media package/ must have a unique =identifier= - unique to the
+channel, at least. In the /Hugo Media Package Channel Generator/, each
+package is identified by its /slug/, which is the "kebab-case"
+filename at which the package is saved, stripped of its extension.
+
+The =identifier= is expected to be semantically meaningful.
+**** Media Package Versions
+Every /media package/ must have at least one =version=
+*** Media Package Supplements
+#+toc: headlines 1 local
+**** Media Package Title
+**** Media Package Creator
+
+** Media Package Channels
+A */media package channel/* is a listing of /media packages/.
+** Implementations
+*** Media Package Channel Generators
+A */media package channel generator/* is a piece of software that
+creates a /media package channel/. In my implementation, it does that
+by reading files written in /TOML/ and /Markdown/ and, using /Hugo/,
+generates /HTML/ and /JSON/ files.
+
+- I'm working on a collection of /Hugo/ templates that take
+  /Hugo/-compatible /Markdown/ (a combination of /Markdown/ and
+  /TOML/) /media packages/ and turn them into a /media package
+  channel/ in /HTML/ and /JSON/.
+* Index
+- dictionary :: A pairing of keys to the values that define them.
+- Git forge :: A web service providing an interface to and extending a /Git/ repository.
+- Git :: A software tool for tracking and coordinating changes in computer files. See [[https://git-scm.com/][https://git-scm.com/]] or #Git.
+- Guix :: A software tool for managing a computer system's software packages. See [[https://www.gnu.org/software/guix/][https://www.gnu.org/software/guix/]].
+- HTML :: A way of adding layout, formatting, and media to text documents. See [[https://en.wikipedia.org/wiki/HTML][https://en.wikipedia.org/wiki/HTML]].
+- Hugo content type :: The classification of a piece based on what form of media it is. See [[https://gohugo.io/content-management/types/][https://gohugo.io/content-management/types/]]
+- Hugo front matter :: A collection of data associated with a content piece. See [[https://gohugo.io/content-management/front-matter/][https://gohugo.io/content-management/front-matter/]].
+- Hugo layout :: The framework which determines what is in a rendered document and how it appears. See [[https://gohugo.io/templates/lookup-order/][https://gohugo.io/templates/lookup-order/]]
+- Hugo :: A software tool for creating rendered documents from formatted text files. See [[https://gohugo.io/][https://gohugo.io/]]
+- JSON :: A human-readable data format. See [[https://json.org/][https://json.org/]].
+- literate programming :: A programming paradigm in which information is presented in natural language with traditional source code implemented as figures within that text. See [[https://en.wikipedia.org/wiki/Literate_programming][https://en.wikipedia.org/wiki/Literate_programming]]
+- Markdown :: A way of adding style notation to plain text. https://daringfireball.net/projects/markdown/
+- Org-mode :: A way of formatting plain data inside text documents. See [[https://orgmode.org/][https://orgmode.org/]]  or #OrgMode.
+- Ox-Hugo :: A software tool for exporting /Org-mode/ files to /Hugo/-compatible /Markdown/. See [[https://ox-hugo.scripter.co/][https://ox-hugo.scripter.co/]].
+- TOML :: A human-readable data format. See [[https://github.com/toml-lang/toml][https://github.com/toml-lang/toml]].
+- WriteFreely :: A software service for broadcasting long text documents. See See [[https://writefreely.org/][https://writefreely.org/]] or #WriteFreely.

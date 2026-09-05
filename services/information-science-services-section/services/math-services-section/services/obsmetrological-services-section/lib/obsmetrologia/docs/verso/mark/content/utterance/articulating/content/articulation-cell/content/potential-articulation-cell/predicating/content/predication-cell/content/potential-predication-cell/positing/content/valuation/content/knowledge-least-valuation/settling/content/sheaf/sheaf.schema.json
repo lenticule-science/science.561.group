@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/sheaf",
+  "title": "sheaf",
+  "description": "The fixed point that settling packages: a pair {base, section} of the value-saturated predication base together with a globally agreeing section that glues the local settlements into a single whole. It is the crystal the four-regime descent deposits.",
+  "type": "object",
+  "required": ["base", "section", "glues", "cohomologyVanishes"],
+  "properties": {
+    "base": {
+      "$ref": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation",
+      "description": "the value-saturated predication base the descent settled over"
+    },
+    "section": {
+      "$ref": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/sheaf/content/section",
+      "description": "the globally agreeing assignment over the base"
+    },
+    "glues": {
+      "const": true,
+      "description": "the local settlements glue into a globally agreeing whole with no obstruction"
+    },
+    "cohomologyVanishes": {
+      "const": true,
+      "description": "the unique fixed point under confluence makes gluing succeed: H^1 = 0, no disagreement among local settlements"
+    }
+  }
+}

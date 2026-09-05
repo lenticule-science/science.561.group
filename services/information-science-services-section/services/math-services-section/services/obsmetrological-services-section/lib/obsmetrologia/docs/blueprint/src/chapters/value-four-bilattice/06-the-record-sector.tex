@@ -1,0 +1,278 @@
+\section{The record sector}
+
+Under the charge sits the record: a pair of evidence tallies rather than a
+pair of flags. The carrier is the twist product of the unbounded lattice
+$(\mathbb{N}, \min, \max)$ with itself, and the charge is its positivity
+shadow. This section records the carrier, the theorems that make the shadow's
+lossiness a property rather than a choice, and the escape from the
+strict-finite regime.
+
+\begin{proposition}[The record carrier]\label{thm:record-carrier}\lean{Obsmetrologia.Record}\leanok\uses{thm:four-bilattice, thm:interlaced-bilattice}
+A \texttt{Record} is a pair of tallies (told-true count, told-false count),
+with knowledge order both-tallies-up and truth order positive-up/negative-down,
+componentwise $\max$/$\min$ lattice operations for each, the empty record as
+knowledge bottom, and the merge \texttt{add} by pointwise addition ---
+carrying multiplicity, unlike the idempotent joins.
+\end{proposition}
+
+\begin{theorem}[The record laws are interlaced but unbounded]\label{thm:record-interlaced}\lean{Obsmetrologia.Record.record_interlaced}\leanok\uses{thm:record-carrier}
+Both orders are lattices, the knowledge bottom is the empty record, and each
+operation is monotone in the other order --- every field shape of
+\ref{thm:interlaced-bilattice} that does not mention a missing bound holds on
+records (\texttt{record\_interlaced}). But \texttt{no\_kTop},
+\texttt{no\_tTop}, \texttt{no\_tBot} (each axiom-free): no record absorbs the
+knowledge join, and the truth order has neither top nor bottom. The carrier
+fails the boundedness hypothesis of \ref{thm:four-initial}, which therefore
+does not apply to it: with \texttt{InterlacedBilattice.joinK\_kTop}, held
+$\top$ is what a value carrier buys by demanding a bound.
+\end{theorem}
+
+\begin{theorem}[The record carrier escapes the strict-finite regime]\label{thm:record-escapes-strict-finite}\lean{Obsmetrologia.Record.record_escapes_strict_finite}\leanok\uses{thm:record-carrier, thm:settling}
+The tally increment \texttt{succPos} is knowledge-inflationary and monotone,
+yet no iterate is a settling stage: \texttt{iter succPos (k+1) r $\neq$ iter
+succPos k r} for every $k$ and seed (axiom-free).
+\texttt{Charge.settles\_by\_three} fails on records: the $\kappa \le 3$
+strict-finite collapse is a boundedness artifact of the four-element carrier,
+and the $\kappa = \omega$ regime is inhabited by a derived carrier rather than
+by asserted regime data. The counterpoint \texttt{joinClosure\_one\_step}:
+every join-bounded closure on records still settles in one step, so
+unboundedness of the carrier, not failure of the closure laws, is what admits
+the escaping dynamic.
+\end{theorem}
+
+\begin{theorem}[The charge is the record's shadow]\label{thm:record-charge-shadow}\lean{Obsmetrologia.Record.charge_add_eq_charge_joinK}\leanok\uses{thm:record-carrier, thm:four-bilattice}
+The readout \texttt{charge} (tally positivity) is a homomorphism for all four
+lattice operations (\texttt{charge\_joinK}/\texttt{meetK}/\texttt{joinT}/%
+\texttt{meetT}), surjective and not injective, and it cannot distinguish the
+counting merge from the idempotent join
+(\texttt{charge\_add\_eq\_charge\_joinK}): multiplicity is exactly what the
+shadow forgets. Contradiction mass is the matched-pair count
+\texttt{topMass}; a record reads out as held $\top$ iff its mass is positive
+(\texttt{charge\_eq\_kTop\_iff}), and the counting merge is superadditive in
+mass (\texttt{topMass\_add}) where the idempotent charge join collapses it.
+\end{theorem}
+
+\begin{theorem}[The collapse is forced]\label{thm:record-collapse-forced}\lean{Obsmetrologia.Record.bottom_reflecting_hom_eq_charge}\leanok\uses{thm:record-charge-shadow}
+Any map from records to charges that preserves the four lattice operations,
+sends the empty record to $\bot_k$, and sends only the empty record to
+$\bot_k$ is the charge readout, pointwise
+(\texttt{bottom\_reflecting\_hom\_eq\_charge}). The Belnap flags are the only
+bottom-faithful four-valued reading of the tallies: the lossiness measured by
+\ref{thm:record-charge-shadow} is a property of reading records four-valuedly
+at all, not a defect of the particular readout.
+\end{theorem}
+
+\begin{theorem}[The record-coefficient exchange rate is the ground-state energy]\label{thm:record-merge-ground-state}\lean{Obsmetrologia.QuantumContextuality.record_merge_ground_state}\leanok\uses{thm:record-charge-shadow, thm:top-h1-exchange}
+The measurement-scenario merge rebuilt over record coefficients: the
+counting merge \texttt{mergeTally} tallies one tick per context-incidence,
+and its total contradiction mass over a complete duplicate-free measurement
+list prices the obstruction with multiplicity. For any pair-context parity
+model, the minimum over realizing families of the merged mass equals the
+minimum over reference sections of the frustrated-context count --- the
+ground-state energy of the target's coset. Below: every realizing family's
+mass dominates the energy of its majority readout (each frustrated context
+has a dissenting endpoint incidence, distinct contexts are distinct
+incidences, and dissent from the majority is the smaller tally). Above: the
+pay family of any reference attains its energy (each frustrated context
+pays one tick at its picked endpoint). There is no vertex-cover correction:
+unlike the idempotent norm of \ref{thm:top-h1-exchange-rate}, contexts
+sharing a paying measurement still pay separately, because the counting
+merge carries multiplicity (\texttt{topMass\_add}).
+Axiom profile: \texttt{propext}, inherited from the generic-carrier
+membership decisions in \texttt{mergeTally}/\texttt{localRecord}
+(\texttt{Decidable} for \texttt{List} membership over an arbitrary
+\texttt{DecidableEq} carrier is core-Lean-tainted at that generality).
+\end{theorem}
+
+\begin{theorem}[Record mass and cycle rank are distinct invariants]\label{thm:record-mass-vs-rank}\lean{Obsmetrologia.QuantumContextuality.theta_record_mass_below_rank}\leanok\uses{thm:record-merge-ground-state, thm:fig8-merge-top-below-rank}
+The instance comparisons of the ground-state energy against the cycle rank.
+On the figure-eight the counting merge restores the exchange rate the
+idempotent merge undercounts in \ref{thm:fig8-merge-top-below-rank}: the
+mass minimum is two, one per independent odd cycle
+(\texttt{fig8\_record\_mass\_attains\_rank}), where the idempotent
+$\top$-support minimum is one. On a theta graph whose two independent odd
+cycles share their one odd edge, a single frustrated context services both
+topological debts: the mass minimum is one, strictly below the cycle rank
+two (\texttt{theta\_record\_mass\_below\_rank}). Both lower bounds are one
+lemma applied per odd cycle: a triangle with an odd target always carries a
+frustrated edge (\texttt{odd\_triangle\_frustrated}).
+Axiom profile: \texttt{propext}, inherited from
+\ref{thm:record-merge-ground-state}.
+\end{theorem}
+
+\begin{theorem}[Record-coefficient settling over the hull]\label{thm:record-settling-h1}\lean{Obsmetrologia.Odometer.hull_settling_gluing_dichotomy}\leanok\uses{thm:tower-gluing-dichotomy, thm:record-escapes-strict-finite}
+The settling sheaf over the dyadic hull's cylinder covers, valued in a
+pre-value carrier (\texttt{CylinderDatum}): one value per depth-$n$
+cylinder, knowledge-monotone along refinement --- nested cylinders are the
+cover system's only overlaps, so monotonicity along refinement is the
+agreement condition. A global section is a value at each hull point
+dominating every cylinder value its thread passes through. With charge
+coefficients every datum glues ($\top$ absorbs,
+\texttt{charge\_cylinder\_datum\_glues}); with record coefficients the
+depth-tally datum glues to none
+(\texttt{record\_cylinder\_datum\_not\_glues}: any candidate value at the
+all-minimal thread is outrun by the depth). The equality-agreement \v{C}ech
+$H^1$ vanishes for every datum (\texttt{Cohomology.h1\_vanishes}), so this
+obstruction is invisible to it: it lives in the order-valued reading of
+the cover and opens exactly at the topless coefficient carrier --- the
+coefficient carrier gates the settling sheaf over an actual point-set
+cover. Axiom-free.
+\end{theorem}
+
+\begin{theorem}[The completed record]\label{thm:completed-record}\lean{Obsmetrologia.ORecord.oRecordInterlaced}\leanok\uses{thm:record-interlaced, thm:interlaced-bilattice}
+Adjoining the point at infinity $\omega$ to each tally axis restores every
+missing bound: the completed record is a bounded interlaced bilattice
+(\texttt{oRecordInterlaced}), with knowledge top the double infinity
+$(\omega, \omega)$ --- told both, unboundedly --- truth top $(\omega, 0)$,
+and truth bottom $(0, \omega)$. Held $\top$ is literally the
+compactification point of the evidence quadrant.
+\end{theorem}
+
+\begin{theorem}[FOUR embeds in the completed record]\label{thm:four-embeds-completed-record}\lean{Obsmetrologia.ORecord.four_embeds}\leanok\uses{thm:four-initial, thm:completed-record}
+By initiality the unique bounds map carries FOUR into the completed record;
+it is injective (the four bounds are pairwise distinct) and sends $\top_k$ to
+the double infinity.
+\end{theorem}
+
+\begin{theorem}[Settling at stage $\omega$]\label{thm:settles-at-omega}\lean{Obsmetrologia.ORecord.settles_at_omega}\leanok\uses{thm:completed-record, thm:record-escapes-strict-finite}
+On the completed record the extended tally increment ($\omega + 1 = \omega$)
+is inflationary, reaches no fixed point at any finite stage, and the
+stage-$\omega$ value $(\omega, 0)$ is its fixed point and the least upper
+bound of the orbit: the closure ordinal is exactly $\omega$ --- the
+transfinite-bounded regime, inhabited by a derived carrier. The regime tower
+so far: FOUR settles by three (the bounded quotient), the bare record never
+settles (the topless carrier), the completed record settles at $\omega$ (the
+bound restored at infinity). Axiom-free.
+\end{theorem}
+
+\begin{theorem}[The gluing dichotomy over the dyadic tower]\label{thm:tower-gluing-dichotomy}\lean{Obsmetrologia.Odometer.tower_gluing_dichotomy}\leanok\uses{thm:record-escapes-strict-finite, thm:dyadic-tower}
+Over the dyadic tower's stages, every FOUR-valued accumulation admits a
+global bound ($\top$ absorbs, so the merge always glues), while some
+knowledge-monotone record-valued accumulation admits no global section:
+with bounded coefficients every cover settles, with topless coefficients
+gluing genuinely fails. The first derived instance of the
+cohomology-vanishing regime gate distinguishing carriers. Axiom-free.
+\end{theorem}
+
+\begin{theorem}[The additive coboundary cannot close over Record coefficients]\label{thm:record-additive-coboundary-fails}\lean{Obsmetrologia.Record.deltaAdd_eq_kBot_iff, Obsmetrologia.Record.deltaAdd_ne_kBot_of_ne}\leanok\uses{thm:record-carrier, thm:record-interlaced}
+The naive port of the classical alternating-sum coboundary to \texttt{Record} coefficients,
+replacing subtraction with \texttt{add} (all the carrier offers, per \texttt{no\_kTop},
+\texttt{no\_tTop}, \texttt{no\_tBot}): a triangle's composite \(\delta^1\delta^0 f\) sums every
+value it reads twice, with no cancellation available, so it equals \texttt{kBot} exactly when
+\(f\) vanishes at all three vertices (\texttt{deltaAdd\_eq\_kBot\_iff}) and is otherwise always
+nonzero (\texttt{deltaAdd\_ne\_kBot\_of\_ne}). This is not a missing proof of
+\(\delta\circ\delta=\texttt{kBot}\); it is a proof that the naive additive construction never
+satisfies it on nontrivial input, for any choice of which faces to sum --- the same obstruction as
+the missing bounds, sharpened to the cochain level. A genuine Record-coefficient coboundary
+theory, if one exists, must therefore be order-valued, matching
+\texttt{Closure.Odometer.CylinderDatum.GluesTo}'s \(\le_k\)-gluing rather than an
+\(=\)-coboundary triviality condition.
+\end{theorem}
+
+\begin{theorem}[Monoid-coefficient cochains on the record carrier]\label{thm:record-monoid-cochain-complex}\notready\uses{thm:record-carrier, thm:record-interlaced, thm:record-additive-coboundary-fails}
+An order-valued coboundary theory over \texttt{Record} coefficients that does not pass through
+the group completion $\mathbb{N}\times\mathbb{N} \to \mathbb{Z}$, ruled out in equational form by
+\cref{thm:record-additive-coboundary-fails}: a cochain complex built from the
+\texttt{PreValueCategory} structure directly on the twist product, with cocycle/coboundary
+conditions stated via \(\le_k\) rather than \(=\), generalizing the degree-one gluing pattern
+\texttt{CylinderDatum} already uses along cover refinement (\cref{thm:record-settling-h1}) to a
+genuine Čech nerve with pairwise and triple overlaps. No such complex is built past degree one;
+\cref{thm:record-settling-h1} is the one instance in hand of a record-valued gluing failure,
+stated as a sheaf section problem rather than a cochain boundary.
+\end{theorem}
+
+\begin{theorem}[An irrevocability class]\label{thm:irrevocability-class}\notready\uses{thm:record-monoid-cochain-complex, thm:record-settling-h1, thm:record-charge-shadow}
+A class $[c]$ of \cref{thm:record-monoid-cochain-complex}, nonzero over
+\texttt{Record} coefficients, whose image under group completion to
+$\mathbb{Z}$ is a coboundary --- an obstruction that exists only because the
+record carrier admits no subtraction (\texttt{no\_kTop}, \texttt{no\_tTop},
+\texttt{no\_tBot}, \cref{thm:record-interlaced}). The degree-one instance is
+already in hand under a different name: \texttt{record\_cylinder\_datum\_not\_glues}
+of \cref{thm:record-settling-h1} fails to glue exactly where the
+charge-valued (group-completed, bounded) version of the same datum glues
+without obstruction. What is missing is the degree-two case and the general
+statement that group completion of coefficients discharges exactly the
+classes priced by the superadditivity of \texttt{topMass}
+(\texttt{topMass\_add}) --- the counting merge's mass is not preserved by
+any map that allows cancellation.
+\end{theorem}
+
+\begin{theorem}[The germ order is not antisymmetric]\label{thm:germ-order-not-antisymm}\lean{Obsmetrologia.Record.germ_order_not_antisymm}\leanok\uses{thm:record-carrier, thm:lax-slack-is-antisymmetry}
+Record sequences under bounded-difference domination (\texttt{DomBy}, a
+preorder: reflexive and transitive) admit mutual domination without
+identity --- the tally climb and its one-step lead dominate each other and
+differ. Antisymmetry fails on a derived carrier: exactly the
+order-deficiency that \ref{thm:lax-slack-is-antisymmetry} shows the
+aperiodic lax-slack regime requires. Axiom-free.
+\end{theorem}
+
+\begin{theorem}[Lax slack on the germ order]\label{thm:germ-lax-slack}\lean{Obsmetrologia.Record.tally_lax_slack}\leanok\uses{thm:germ-order-not-antisymm}
+The germ carrier is a pre-value category (\texttt{germPreValue}) and the
+tally bump --- one more told-true at every stage --- is a lax closure on it
+(\texttt{tallyLaxClosure}): inflationary, monotone, and Kock--Zöberlein,
+with the KZ inequality holding at witness constant one. At the seed its
+double differs from its single (\texttt{tally\_lax\_slack}): the first
+inhabited \texttt{HasLaxSlack} in the tree --- the non-identity
+$\mu$ 2-cell that \ref{thm:lax-slack-is-antisymmetry} proves cannot exist on
+any antisymmetric carrier. The closure 2-monad's multiplication carries
+content for the first time. Axiom-free.
+\end{theorem}
+
+\begin{theorem}[The regime tower]\label{thm:regime-tower}\lean{Obsmetrologia.regime_tower}\leanok\uses{thm:settles-at-omega, thm:record-escapes-strict-finite, thm:germ-lax-slack}
+One derived family of value carriers inhabits the regime column: FOUR
+settles by stage three (strict-finite, the bounded quotient); the topless
+record admits an inflationary monotone dynamic with no finite settling
+stage (the $\omega$-escape); the completed record settles exactly at stage
+$\omega$ (transfinite-bounded, the bound restored at infinity); and the
+germ preorder carries genuine lax-idempotence slack (the aperiodic
+signature, possible only where antisymmetry fails). Each regime is a
+deficiency of the carrier's bound structure, exhibited by derivation.
+Axiom-free.
+\end{theorem}
+
+\begin{theorem}[The $\top$-flux is order-quiescent and never settles]\label{thm:top-bump-flux}\lean{Obsmetrologia.Record.topBump_flux}\leanok\uses{thm:germ-lax-slack, thm:record-charge-shadow}
+The contradiction bump --- one more told-true and one more told-false at
+every stage --- is a lax closure on the germ carrier with slack at the seed
+(\texttt{topBumpLaxClosure}, \texttt{topBump\_lax\_slack}). Its orbit: every
+iterate is germ-equivalent to the seed, so the whole orbit is a single
+point of the germ order; consecutive iterates are never equal; and after
+$k$ bumps the contradiction mass at every stage is at least $k$
+(\texttt{topBump\_flux}). At the aperiodic rung the settling question
+splits: the order settles instantly, the data never does, and the gap is
+an unbounded held-$\top$ flux inside one germ --- the stable held-$\top$
+dynamics the corpus places at $\kappa \ge \omega_1$. Axiom-free.
+\end{theorem}
+
+\begin{theorem}[The $\omega$-escape profile]\label{thm:omega-escape-profile}\lean{Obsmetrologia.Odometer.omega_escape_profile}\leanok\uses{thm:regime-tower, thm:tower-gluing-dichotomy}
+For each tower carrier, whether an $\mathbb{N}$-indexed stage accumulation
+escapes every global bound: charges never ($\top$ absorbs); records do (the
+tally climb); completed records never (the double infinity absorbs); and
+germs never --- every $\mathbb{N}$-indexed family of germs is dominated by
+its diagonal running maximum (\texttt{germ\_omega\_family\_bounded}) ---
+although the germ carrier has no top (\texttt{germ\_no\_top}). The
+$\mathbb{N}$-indexed escape is alive exactly at the topless $\omega$-rung.
+This derived invariant does not reproduce the stipulated
+\texttt{cohomologyVanishes} gate (which vanishes at strict and Scott and is
+alive at transfinite-bounded and aperiodic): the escape invariant is alive
+at the Scott rung and quiescent at the transfinite-bounded and aperiodic
+rungs. At the aperiodic rung the obstruction exists (no top) but no
+$\mathbb{N}$-indexed accumulation witnesses it: the escape requires
+cofinality beyond $\omega$ --- the $\kappa \ge \omega_1$ signature, derived.
+Axiom-free.
+\end{theorem}
+
+\begin{theorem}[The regime gate is the unattained-settling gate]\label{thm:aperiodic-top-flux}\lean{Obsmetrologia.unattained_settling_gate}\leanok\uses{thm:regime-tower, thm:top-bump-flux, thm:omega-escape-profile}
+The invariant the stipulated \texttt{cohomologyVanishes} table gates,
+derived on the tower: a settled value that no finite stage attains. On FOUR
+every inflationary step attains its settled value at stage three, and on
+the record the tally increment fixes nothing, so no unattained settled
+value exists --- the gate reads \texttt{true}. On the completed record the
+stage-$\omega$ value is fixed and no finite stage reaches it, and on the
+germ carrier the contradiction bump's orbit is a single point of the germ
+order while no stage equals the next --- the gate reads \texttt{false}.
+The pattern matches \texttt{cohomologyVanishes} at all four rungs, where
+the $\mathbb{N}$-indexed escape invariant of
+\ref{thm:omega-escape-profile} does not: the gate prices the settled
+value's transcendence of its stages, not the boundedness of accumulations.
+Axiom-free.
+\end{theorem}

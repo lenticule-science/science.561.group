@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "glossary/terms/unit-object",
+  "title": "unit-object",
+  "description": "The object I of a monoidal category that is neutral for the tensor product: I ⊗ A ≅ A ≅ A ⊗ I via the unitor isomorphisms. The categorical analogue of a monoid's identity element; supplies the identity maps I → Hom(A, A) of an enriched category.",
+  "type": "object",
+  "required": [
+    "neutral-for-tensor",
+    "monoidal-category"
+  ],
+  "properties": {
+    "neutral-for-tensor": {
+      "description": "I ⊗ A ≅ A ≅ A ⊗ I, coherently (triangle identity)",
+      "const": true
+    },
+    "monoidal-category": {
+      "description": "the monoidal category whose unit this is",
+      "$ref": "./monoidal-category.schema.json"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       8d0627ea-d45f-49ba-84d9-4015d22bc179
+:public:   true
+:END:
+#+title: irony
+#+date: [2025-09-02 Tue 18:34]
+#+index: irony

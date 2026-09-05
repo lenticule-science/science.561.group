@@ -1,0 +1,3 @@
+Mass is a fundamental property of [[object|objects]], [[quantification|quantifying]] the amount of [[matter]] they contain.
+
+It is a [[measuring|measure]] of an object's [[resistance]] to [[acceleration]] when a [[force]] is applied, often referred to as [[inertia]]. Mass also determines the strength of an object's [[gravity|gravitational attraction]] to other objects with mass. Unlike [[weight]], which can vary depending on gravity, mass is constant regardless position in [[space]]. In [[physics]], it is typically measured in [[grams]] and plays a crucial role in [[Newtonian mechanics]] and [[Einstein's theory of relativity]].

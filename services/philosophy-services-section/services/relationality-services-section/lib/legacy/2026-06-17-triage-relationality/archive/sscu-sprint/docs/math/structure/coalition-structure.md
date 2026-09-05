@@ -1,0 +1,26 @@
+---
+title: Coalition Structure
+role: structure
+proof_refs: []
+introduces: structure
+part-of: relational-computer
+computer-system-type: primitive
+---
+
+
+
+Groups of agents sharing recognitions stable under mutual flow.
+
+## Definition
+- Carrier: partitions of agents into coalitions where applying
+  [Coordination Operator](../operator/coordination-operator.md) within the group
+  yields stable shared recognitions.
+- Structure: coalition recognitions and joint flows.
+
+## Invariants
+- Stability: intra-coalition recognitions remain aligned under social flow.
+- Closure: coalitions are maximal sets with stable shared recognitions.
+
+## Proof
+- Uses: [Agent](agent.md) set and [Coordination Operator](../operator/coordination-operator.md).
+- Shows that: coalitions are recognisable as stable alignment groups.

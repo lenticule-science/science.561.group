@@ -1,0 +1,52 @@
+{{- block "html" . -}}
+  <!DOCTYPE html>
+  <html xmlns="http://www.w3.org/1999/xhtml"
+   {{- with .Site.Language.Lang }} xml:lang="{{- . -}}" lang="{{- . -}}"
+   {{- end }}>
+   {{- block "head" . }}
+     <head>
+       {{- partial "title-title.html" . -}}
+       {{- partial "meta.html" . -}}
+       {{- partial "link-alternative-output-formats.html" . -}}
+       {{- partial "style-css.html" . }}
+     </head>
+   {{- end -}}
+   {{- block "body" . }}
+     <body>
+       {{ partial "a-skip-to-content.html" }}
+       {{ block "article" . }}
+         <article>
+           {{ block "header" . }}
+	     <header>
+	       <nav>
+		 <a href="{{ "/" | relURL }}">Home</a>
+		 {{ range .Site.Menus.main }}
+		 <a href="{{ .URL }}">{{ .Name }}</a>
+		 {{ end }}
+		 {{ with .Site.GetPage "/blog" }}
+		 <a href="{{ "/blog" | relURL }}">Blog</a>
+		 {{ end }}
+	       </nav>
+	       {{ partial "h1-title.html" . }}
+    	       {{ partial "p-page-description.html" . }}
+               <p>{{ partial "span-page-tags.html" . }}</p>
+	     </header>
+	   {{ end }}
+	   {{ block "main" . }}
+	     <main>
+                {{ block "content" . }}
+	          {{ partial "section-content.html" . }}
+	        {{ end }}
+	      </main>
+	    {{ end }}
+	    {{ block "footer" . }}
+	      <footer>
+	        {{ partial "span-copyright.html" . }}
+	      </footer>
+	    {{ end }}
+          </article>
+	{{ end }}
+      </body>
+    {{- end }}
+  </html>
+{{ end }}

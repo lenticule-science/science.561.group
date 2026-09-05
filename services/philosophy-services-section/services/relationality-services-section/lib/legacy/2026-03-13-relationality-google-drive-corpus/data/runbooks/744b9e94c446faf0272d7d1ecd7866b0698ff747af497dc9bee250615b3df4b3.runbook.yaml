@@ -1,0 +1,18 @@
+name: stabilized_observation_check
+inputs:
+- role: observation
+  kind: observation
+outputs:
+- role: stabilized_observation_evidence
+  kind: stabilized_observation_evidence
+steps:
+- name: stabilized_observation_check
+  operator: stabilized_observation_check
+  step_index: 0
+  inputs:
+  - role: observation
+    kind: observation
+  outputs:
+  - role: stabilized_observation_evidence
+    kind: stabilized_observation_evidence
+id: 744b9e94c446faf0272d7d1ecd7866b0698ff747af497dc9bee250615b3df4b3

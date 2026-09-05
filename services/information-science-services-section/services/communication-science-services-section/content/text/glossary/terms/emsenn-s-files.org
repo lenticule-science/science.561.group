@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       3ffa600c-f831-428f-bd11-a4e6583ff5ad
+:ROAM_ALIASES: "my files"
+:END:
+#+title: emsenn's files
+#+date: 2025-06-19
+#+author: emsenn
+
+My name is [[id:40cbaad9-af3c-4573-b356-ae116687e483][emsenn]], and this directory contains my files. Bleep blorp! Blap blap

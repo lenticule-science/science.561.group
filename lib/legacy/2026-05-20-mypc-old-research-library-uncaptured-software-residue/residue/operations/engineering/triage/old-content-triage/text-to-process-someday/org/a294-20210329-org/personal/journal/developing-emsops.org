@@ -1,0 +1,23 @@
+#+title: Developing "emsOps"
+
+I've recently been overhauling how I use Org-mode, trying to bring it past just writing and into some sort of project-management system. Through the winter I was working off the metaphor of a "digital garden," but found myself frustrated with it, until it clicked that I was letting other folks' conception of "garden" influence mine.
+
+To lots of people, "gardens" are recreational aesthetic places, where a person labours on a sort of living sculpture. To me, a garden is... I don't want to to say a garden is a factory, but it is certainly closer to a factory than a garden. It is a space of land that has been cultivated into being able to, in a way, take action, in its own way: actions like "produce corn" or "hold rainwater."
+
+If I view my digital garden as that sort of thing, a space where actions can be cultivated into capability, then I suddenly see the whole project as more worthwhile, outside of the potential benefits to heutagogy.
+
+I also hold in my head the metaphor of a starship: a machine and its inhabits working closely together to live their lives. The starship has no life outside of what the people who created it have given it, but it's hard, in some ways, to argue that it doesn't have a life: what the ship is capable of, what its day is full of, is quite different than the capabilities of its crew or their experiences.
+
+In a digital garden, I don't exist as human. I exist as whatever vessel my interface creates around me. So, great thought has to be put into what that vessel is. In my digital garden, my vessel is my Emacs client. What capabilities does this vessel need to have? An interesting difference between my vessel and a starship, is that my vessel is the sole creator of its environment, while a starship is created from its environment!
+
+Like a starship, I need sensors, some way of taking data that exists outside my vessel and capture it in a way that the rest of the vessel's systems can make sense of. I would prefer at this point to have those sensors be rather "manual:" I, the human observe something, and trigger a manual entry into whatever the sensor's database is. (The alternative being "automatic" sensors like hooking my email client into Emacs.)
+
+I also need a database that stores that captured information, and a way of querying that database and generating some sort of report.
+
+But... there's also the routine activity that I take that isn't really an external input, like writing this essay, or claiming a blockchain token staking reward.
+
+Right now I have things organized with one file holding my plans and schedule, divided into their domains. It also has the configuration for my Emacs, since that's the main point of my Emacs, so the boundary between configuring the client and planning projects is very blurry.
+
+The difficulty ahead of me is in expanding that configuration in such a way that it gets easier for me to track my work, and generate reports on it, and capture external information - the non-metaphor version of what I outlined above.
+
+

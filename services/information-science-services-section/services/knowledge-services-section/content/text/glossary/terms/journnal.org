@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       1a228ca1-b625-4230-b025-71dc5cb06b03
+:END:
+#+title: journnal
+#+date: [2025-09-29 Mon 16:54]
+

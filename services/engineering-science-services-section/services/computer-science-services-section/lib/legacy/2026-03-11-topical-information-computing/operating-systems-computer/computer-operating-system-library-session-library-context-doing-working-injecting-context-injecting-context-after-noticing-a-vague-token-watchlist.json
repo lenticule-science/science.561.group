@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://561.group/skills/injecting-context-on-a-vague-token/watchlist.json",
+  "description": "The list of vague-token triggers. Each entry is a token or regex pattern that, when found in scanned text, is a candidate red-flag for an AI-stretch. Triggers may carry per-token exempt-context cues that suppress the flag when the surrounding text shows the token is being used in its precise sense. Triggers are not banned vocabulary; they are detection points whose diagnostic injects nearby glossary context. The list grows as new stretches surface.",
+  "triggers": [
+    {
+      "token": "polity",
+      "reason": "Vague stand-in for a specific named group (the 561 Group, the RSC Quiescent, the tiyóšpaye, a Lakota band, etc.). The precise name is almost always available nearby.",
+      "exemptCues": []
+    },
+    {
+      "token": "substrate",
+      "reason": "Stand-in for an unspecified implementation/byte-layer. The repo has precise vocabulary: posix-file, cell, predication-cell, kernel cell log, Node ESM module, the predicated-computing implementation it cites.",
+      "exemptCues": []
+    },
+    {
+      "token": "apex",
+      "reason": "Used loosely as a buzzword for 'directory' or 'top-level thing'. Apex means apex of a cone in category theory — the initial algebra of a closure operator, the structure-side fixed point. Flag suppressed when the precise category-theory reading is adjacent.",
+      "exemptCues": ["cone", "tower", "LFP", "initial algebra", "fixed point", "Lambek", "closure operator", "predication"]
+    },
+    {
+      "token": "in order",
+      "reason": "Filler — 'in order to' / 'in order for' add nothing over 'to' / 'so' / 'for'. Each occurrence is a candidate for deletion.",
+      "exemptCues": []
+    },
+    {
+      "token": "framework",
+      "reason": "Vague stand-in. Use the specific scheme (Diátaxis is a four-mode taxonomy, the apex tower is a CHL recursion, Nix is a build tool).",
+      "exemptCues": ["Diátaxis"]
+    },
+    {
+      "token": "mechanism",
+      "reason": "Vague stand-in. Use the specific operation (closure-rule firing, hook dispatch, MCP-server registration, schema validation, witness emission).",
+      "exemptCues": []
+    },
+    {
+      "token": "ecosystem",
+      "reason": "Vague stand-in. Use the specific set of named components.",
+      "exemptCues": []
+    },
+    {
+      "token": "infrastructure",
+      "reason": "Vague stand-in. Use the specific named component (the Nix flake, the hook config, the witness log, the cell log).",
+      "exemptCues": []
+    },
+    {
+      "token": "approach",
+      "reason": "Vague stand-in. Use the specific verb-phrase (the closure firing; the schema validation; the per-day witness log).",
+      "exemptCues": []
+    },
+    {
+      "token": "essentially",
+      "reason": "Filler. 'X is essentially Y' is either 'X is Y' (drop 'essentially') or 'X approximates Y' (say so precisely).",
+      "exemptCues": []
+    },
+    {
+      "token": "fundamentally",
+      "reason": "Filler. Same shape as essentially — either the claim is direct or it is approximated; name which.",
+      "exemptCues": []
+    },
+    {
+      "token": "powerful",
+      "reason": "Performative adjective with no referent. Drop or replace with the property that justified the word.",
+      "exemptCues": []
+    }
+  ],
+  "hedgePatterns": [
+    {
+      "pattern": "\\bin the\\s+\\w+(?:\\s+\\w+){0,3}\\s+sense\\b",
+      "reason": "The 'in the X sense' hedge reframes a precise term as bespoke. If the term means X precisely, just say so. If it does not, do not use the term."
+    },
+    {
+      "pattern": "\\bthis (?:project|repo)'s\\b",
+      "reason": "False specificity. The precise referent is named in the records; reference it directly."
+    },
+    {
+      "pattern": "\\bwhat\\s+\\w+\\s+means here\\b",
+      "reason": "Hedge that frames a term as having a special local meaning. If the term means its standard thing, say so without 'means here'. If it does not, use a different term."
+    },
+    {
+      "pattern": "\\bwe use\\s+\\w+\\s+to mean\\b",
+      "reason": "Hedge that reframes a precise term as project-bespoke. Same diagnosis as above."
+    },
+    {
+      "pattern": "\\bby\\s+\\w+\\s+we mean\\b",
+      "reason": "Hedge that reframes a precise term as project-bespoke. Same diagnosis as above."
+    },
+    {
+      "pattern": "\\b(?:[Hh]ere|[Tt]his)\\s+(?:means|denotes|refers to)\\b",
+      "reason": "Reframes a precise term. Same diagnosis as above."
+    }
+  ]
+}

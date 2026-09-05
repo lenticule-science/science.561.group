@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       08ec21bf-02e3-4059-a3b5-374dec7f889e
+:END:
+#+title: elementary structure
+#+date: [2025-08-26 Tue 11:43]
+

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       e58dd57e-ccfd-4c01-8ca3-5d1b359c5bee
+:END:
+#+title: too many open tabs
+#+date: [2025-09-21 Sun 18:49]
+

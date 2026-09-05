@@ -1,0 +1,33 @@
+!-  -   -   -   -   -   -   -   -   -
+! file: ~/.Xdefaults
+! author: Morgan Sennhauser <emsenn@emsenn.com>
+! vim:enc=utf-8:nu:ai:sm:et:ts=4:sw=4
+!-  -   -   -   -   -   -   -   -   -
+
+*background: #111111
+*foreground: #babdb6
+*color0:    #000000
+*color8:    #555753
+*color1:    #ff6565
+*color2:    #93d44f
+*color10:   #c8e7a8
+*color3:    #eab93d
+*color11:   #ffc123
+*color4:    #204a87
+*color12:   #3465a4
+*color5:    #ce5c00
+*color13:   #f57900
+*color6:    #89b6e2
+*color14:   #46a4ff
+*color7:    #cccccc
+*color15:   #ffffff
+
+URxvt*depth:         32
+URxvt*font:          9x15
+URxvt*foreground:    white
+URxvt*background:    black
+URxvt*scrollBar:     off
+URxvt*perl-ext:      default,url-select
+URxvt*keysym.M-u:    perl:url-select:select_next
+URxvt*urlLauncher:   chromium
+URxvt*underlineURLs: true

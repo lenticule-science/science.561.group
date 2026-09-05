@@ -1,0 +1,11 @@
+#+title: survival
+#+begin_head
+#+ghe_schema: reference-0.1.1
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-22 Tue 16:44]
+#+roam_tags: term
+#+end_head
+#+name: survival-definition
+*/Survival/* is the concept of a thing staying alive from now until later.
+

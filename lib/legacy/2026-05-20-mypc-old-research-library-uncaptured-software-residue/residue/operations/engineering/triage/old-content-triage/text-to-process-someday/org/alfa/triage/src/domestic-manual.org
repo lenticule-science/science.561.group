@@ -1,0 +1,161 @@
+#+SETUPFILE: ./default-setup.inc
+#+TITLE: Domestic Manual
+#+EXPORT_FILE_NAME: ../pub/domestic-manual
+#+OPTIONS: todo:t tasks:t stat:t
+#+TOC: headlines 1
+* Introduction
+#+INCLUDE: "./plates.inc::draft"
+#+INCLUDE: "./plates.inc::eli-default"
+* Domestic Manual
+#+TOC: headlines 1 local
+** Home Maintenance
+#+TOC: headlines 1 local
+*** Humidity Control
+#+TOC: headlines 1 local
+**** TODO Rock Salt Dehydrator
+** Food Preparation
+#+TOC: headlines 2 local
+*** Baking
+#+TOC: headlines 1 local
+**** Quickbreads
+***** Southern Biscuits
+****** Materials
+| Ingredient    | Quantity |
+|---------------+----------|
+| soft flour    | 1 cup    |
+| white sugar   | 1 tsp    |
+| baking powder | 2 tsp    |
+| salt          | 1/2 tsp  |
+| shortening    | 1/2 cup  |
+| milk          | 2/5 cup  |
+****** [0/8] Steps
+- [ ] Preheat oven to 450f
+- [ ] Combine dry ingreidents
+- [ ] Cut in shortening until mix is crumby.
+- [ ] Add milk while stirring until dough lifts from bowl. Should
+  still be sticky and soft.
+- [ ] Lightly squarefold-knead mix on floured surface until springy,
+  then string to 2 inch tall roll.
+- [ ] Let rest 2 minutes.
+- [ ] Cut into 1 inch slices, lay sideways on baking sheet 1 inch apart.
+- [ ] Bake 10-12 minutes on center rack.
+****** Notes
+- For more traditional texture, skip kneading, but let dough rise on
+  floured surface. Cover in flour after rising then fold over, gently,
+  once, and tear off small chunks.
+- Butter is preferred shortening.
+- Substitute or supplement buttermilk for milk.[fn:buttermilk-substitution]
+
+*** Beverages
+#+TOC: headlines 1 local
+**** Fermented Beverages
+#+TOC: headlines 1 local
+***** Ginger Beer
+      :PROPERTIES:
+      :CUSTOM_ID: ginger-beer
+      :END:
+*/Ginger beer/* is a fermented beverage made with ginger, sugar,
+water, and "composite organism" colloquially known as a */plant/*,
+primarily composed of the yeast Saccharomyces florentinus[fn:1] and
+the bacterium Lactobacillus hilgardii[fn:2].
+
+I use a plant originally sourced from the Deutsche Sammlung von
+Mikroorganismen und Zellkulturen, DMS#2484, to produce alcoholic and
+non-alcholic ginger beer for myself and my partner.
+#+TOC: headlines 1 local
+****** [0/7] Requirements
+- [ ] A container of at least 8-and-a-half cups
+- [ ] 1 sq.ft. of cheesecloth
+- [ ] 2 quarts, quarter-cup water
+- [ ] 2 tablespoons ginger beer plant
+- [ ] 3 tablespoons finely grated ginger
+- [ ] 4 tablespoons white sugar
+- [ ] 2 tablespoons dark brown sugar
+- [ ] Some way of loosely sealing the container[fn:loosely-sealing-containers]
+****** [0/6] Process
+- [ ] In a bowl, mix your grated ginger and a quarter-cup of water.
+- [ ] In another bowl, place your cheesecloth and pour the
+  ginger-water over it. Strain the ginger and discard. Add the
+  filtered ginger-water to your large container.
+- [ ] Add the 2 quarts water and sugar to the container and mix until
+  most has dissolved.
+- [ ] Add the ginger beer plant.
+- [ ] Loosely seal the container
+- [ ] Wait 3 days and bottle for 1 for non-alcoholic fizzy ginger
+  beer.
+- [ ] Wait 5-9 days and bottle for 1 for alcholic fizzy ginger beer.
+**** Juices
+#+TOC: headlines 1 local
+***** Mulberry Juice
+      :PROPERTIES:
+      :CUSTOM_ID: mulberry-juice
+      :END:
+*/Mulberry juice/* is the liquid pressed from */mulberries/*, a tart
+purple berry that ripen around North Carolina through late April and
+May.
+#+TOC: headlines 1 local
+****** [0/2] Requirements
+- [ ] 2 pots, each capable of holding all the berries you plan to juice.
+- [ ] 1 piece of cheesecloth large enough that the berries could be
+  spread flat on it.
+
+*/Tip:/* roll some beeswax in your hands before you start to prevent
+the worst of the staining from working with mulberries.
+****** [0/7] Process
+1) [ ] Place the berries in your first pot and bring it to 30c while
+   gently mashing the berries.
+2) [ ] Line the second pot with the cheesecloth and pour the mash into
+   the cloth.
+3) [ ] Gather the corners and lift out of the pot, holding any
+   openings pinched shut.
+4) [ ] Begin to massage the mash dry, slowly twisting the closed ends
+   to keep it secure. The juice will fill the second pot.
+5) [ ] Continue until you run out of patience, then discard the dry mash.
+6) [ ] Discard the dry mash.
+7) [ ] Pasteurize the juice.
+****** Results
+This is a record of my results with this recipe.
+
+| Date             | Input  | Output | Comments                      |
+|------------------+--------+--------+-------------------------------|
+| <2019-05-13 Mon> | 3.5 lb | 1.2 qt | Bit tart to drink on its own. |
+*** Cheesemaking
+#+TOC: headlines 1 local
+**** Fresh Cheeses
+#+TOC: headlines 1 local
+***** Breakfast Cheese
+      :PROPERTIES:
+      :CUSTOM_ID: breakfast-cheese
+      :END:
+#+INDEX: cheese!by type!fresh!"Queso Seco" in /emsenn's Recipes/
+Breakfast is a fresh cow's milk cheese that I often eat for breakfast,
+thus the name.
+* Footnotes
+
+[fn:loosely-sealing-containers] The best way to loosely seal a
+container is with an air-lock pressure valve. Here are others, in
+order of fitness: a lightly waxed but not air-tight cloth, any cloth,
+another small container placed upside-down over the opening.
+
+[fn:2] Lactobacillus hilgardii was previously known as Brevibacterium
+vermiforme.
+
+[fn:1] Saccharomyces florentinus was previously known as Saccharomyces
+pyriformis.
+
+[fn:buttermilk-substitution] When substituting buttermilk in recipes
+that use baking powder, you should remove 2 tsp baking powder and add
+1 tsp baking soda for every 1 cup of milk you are replacing with
+buttermilk.
+* Supplements
+#+TOC: headlines local 1
+** Contribute
+   :PROPERTIES:
+   :CUSTOM_ID: supplements-contribute
+   :END:
+#+INCLUDE: "./plates.inc::personal-contribute"
+** License
+   :PROPERTIES:
+   :CUSTOM_ID: supplements-license
+   :END:
+#+INCLUDE: "./plates.inc::mit-license"

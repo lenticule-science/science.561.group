@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/pre-bilattice/content/bilattice/content/predication-fiber-algebra/content/closure-operator/content/closure-rule",
+  "title": "closure-rule",
+  "description": "A syntactic generator of a closure operator: one conditional cell-update asserting that whenever a positive Pi_1 antecedent over the predication state holds, a particular cell value must be at least a given knowledge-order threshold.",
+  "type": "object",
+  "required": ["antecedent", "consequent", "freeEntityVariables", "boundEntityVariables"],
+  "properties": {
+    "antecedent": {
+      "type": "object",
+      "description": "a positive Pi_1 condition phi(x; y; v) over the predication state that must hold for the rule to fire",
+      "required": ["positive", "form"],
+      "properties": {
+        "positive": { "const": true, "description": "the antecedent uses only positive (monotone) atoms over the cell values" },
+        "form": { "const": "Pi_1", "description": "universally-quantified-prefix condition over the entity domain E" }
+      }
+    },
+    "consequent": {
+      "type": "object",
+      "description": "the cell-update v'(p)(t1, t2) >=_k V it forces",
+      "required": ["cell", "threshold"],
+      "properties": {
+        "cell": { "const": "predication-cell", "description": "the predicate-and-arguments cell whose value is updated" },
+        "threshold": { "const": "knowledge-order", "description": "the value V the cell must reach at least, measured in the knowledge order >=_k" }
+      }
+    },
+    "freeEntityVariables": { "type": "array", "items": { "const": "entity" }, "description": "the variables y; the rule fires once per y-instantiation drawn from the entity domain E" },
+    "boundEntityVariables": { "type": "array", "items": { "const": "entity" }, "description": "the universally bound variables x ranging over E inside the antecedent" }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "act_version": "v1",
+  "carrier_id": "520d8ae0ce9f0cbb89e368d60c63f8b1e5ee86c73de4518b3a70273c7851ee1f",
+  "elements": [
+    "resting",
+    "surveying",
+    "traveling",
+    "fighting",
+    "command_any"
+  ],
+  "flow_table": {
+    "command_any": "command_any",
+    "fighting": "fighting",
+    "resting": "resting",
+    "surveying": "surveying",
+    "traveling": "traveling"
+  },
+  "id": "5e55cd365f40fd43047c4297c20bedbfb85c970373b7957be876dae75ad2a2fb",
+  "kind": "flow_map"
+}

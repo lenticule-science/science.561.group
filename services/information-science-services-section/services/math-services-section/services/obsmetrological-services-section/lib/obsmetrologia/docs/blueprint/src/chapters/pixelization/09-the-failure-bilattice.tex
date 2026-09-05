@@ -1,0 +1,41 @@
+\section{The failure bilattice}
+
+This section records claim nodes and dependency edges. Paper-grade development in
+\texttt{2026-08-26-paper-outline-bilattice-sampling.md} and
+\texttt{2026-08-26-paper-outline-photograph-hologram-cohomology.md}.
+
+\begin{theorem}[The reconstruction interval]\label{thm:reconstruction-interval}\lean{Obsmetrologia.Valuation.reconstruction_interval, Obsmetrologia.Valuation.interval_collapse_iff_exact}\notready\uses{thm:pixelization-closure, thm:carving-interior, thm:photo-hull, thm:kle}
+\emph{(Open frontier --- stated, not formalized.)} For every valuation $v$,
+$\texttt{carve}\,v \le_k v \le_k \texttt{samplingCl}\,v$: the sampling closure
+over-approximates from above (least fixed point), the consistency interior
+under-approximates from below (greatest fixed point), and the knowledge-order interval
+between them is exactly the set of valuations the sampling scheme cannot distinguish
+from $v$. Interval collapse iff the scheme is exact at $v$ (pixelizable and voxelizable
+at once) --- the order-theoretic form of the Haralick--Zhuang--Lin--Lee bracketing, and
+the abstract-interpretation over/under pair landed on imaging.
+\end{theorem}
+
+\begin{theorem}[The two failure drifts]\label{thm:sampling-failure-bilattice}\lean{Obsmetrologia.Valuation.aliasing_kbot_drift, Obsmetrologia.Valuation.inconsistency_ktop_drift}\notready\uses{thm:reconstruction-interval, thm:pixel-corner-observable, thm:designated-short-exact-sequence}
+\emph{(Open frontier --- stated, not formalized.)} Sampling has exactly two failure
+modes and they are the two off-diagonal poles of FOUR: aliasing (many signals, one
+sample set) widens the interval only downward --- $\bot_k$-drift, under-determination
+--- while multi-view inconsistency (no signal, conflicting samples) widens it only
+upward --- $\top_k$-drift, over-determination. Two-valued satisfaction cannot separate
+them; the corner field of \cref{thm:pixel-corner-observable} measures both slots
+independently, and the split sequence of \cref{thm:designated-short-exact-sequence}
+proves the two axes cohomologically independent. Failure is a point in a product, not a
+scalar.
+\end{theorem}
+
+\begin{theorem}[The hologram is the $\top$-summand]\label{thm:hologram-top-summand}\lean{Obsmetrologia.Cohomology.PixelCech.hologram_top_summand}\notready\uses{thm:designated-short-exact-sequence, thm:lenticule-elemental-cocycle, thm:holographic-reconstruction-obstruction, thm:h0-count}
+\emph{(Open frontier --- stated, not formalized.)} Photograph : hologram :: $H^{0}$ :
+overlap cocycle. All-refraction boundary data (every lenticule agreeing) is equivalent
+to its $H^{0}$ readout --- a photograph, intensity only; the diffraction data generated
+at disagreeing lenticules assembles into a 1-cochain valued in the $\top$-graded summand
+of \cref{thm:designated-short-exact-sequence}, whose degree-zero shadow is the
+lenticule-census identity already green in the lenticle stratum
+(\texttt{pairwiseLenticleCensus\_eq\_h0top}). Sharpened target for
+\cref{thm:holographic-reconstruction-obstruction}: the bulk is determined by the
+boundary photograph \emph{plus} its diffraction cochain, exactly when the boundary
+obstruction vanishes --- the $\top$-summand is the holographic content of boundary data.
+\end{theorem}

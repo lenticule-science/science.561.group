@@ -1,0 +1,15 @@
+#+title: posting
+#+begin_head
+#+ghe_schema: record-0.1.1
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-22 Tue 10:40]
+#+roam_alias: "postings"
+#+roam_tags: term
+#+end_head
+#+name: posting-definition-text
+#+begin_quote
+A */posting/* is a [[file:message.org][message]] that is made available at a location for a time, to anyone that has access to that location within that time, rather than a message that is sent directly between two parties.
+
+Blogs, newspaper articles, journal publications, are all forms of /postings/.
+#+end_quote

@@ -1,0 +1,106 @@
+
+
+
+-------------------------------------------------
+Day-agenda (W27):
+
+
+
+-------------------------------------------------
+Sunday      5 July 2020
+
+
+  todo water sprouts                      
+[ ]  6:15...... Scheduled
+
+
+  todo water Makȟa Ša garden            
+[ ]  6:30...... Scheduled
+
+
+   todo water sprouts                      
+[ ]  6:30...... Deadline
+
+
+  place signage        
+[ ]  7:00...... Scheduled
+
+
+  todo refill Makȟa Ša irrigation       
+[ ]  7:30...... Scheduled
+
+
+  set up tables        
+[ ]  7:30...... Scheduled
+
+
+   todo water Makȟa Ša garden            
+[ ]  7:30...... Deadline
+
+
+  display gifts        
+[ ]  7:45...... Scheduled
+
+
+   place signage        
+[ ]  7:45...... Deadline
+
+
+  todo weed Bowbar pathing             
+[ ]  8:00...... Scheduled
+
+
+  todo weed Cut Above pathing          
+[ ]  8:00...... Scheduled
+
+
+  todo cut Cut Above grass             
+[ ]  8:00...... Scheduled
+
+
+   set up tables        
+[ ]  8:00...... Deadline
+
+
+
+[ ]  8:00...... ----------------
+
+
+   display gifts        
+[ ]  8:30...... Deadline
+
+
+
+[ ] 10:00...... ----------------
+[ ] 11:29...... now - - - - - - - - - - - - - - - - - - - - - - - - -
+[ ] 12:00...... ----------------
+[ ] 12:20...... Deadline:   todo pickup from Weaver St
+[ ] 14:00...... ----------------
+[ ] 16:00...... ----------------
+[ ] 18:00...... ----------------
+
+
+   todo refill Makȟa Ša irrigation       
+[ ] 18:30...... Deadline
+
+
+
+[ ] 20:00...... ----------------
+
+
+  todo empty household compost             
+[ ] 20:30...... Scheduled
+
+
+   todo empty household compost             
+[ ] 21:00...... Deadline
+
+
+Home
+[ ]  todo water household plants
+[ ]  todo process sprouts
+[ ]  todo check household smoke detector
+
+
+BrickBox
+[ ]  todo check building fire extinguishes

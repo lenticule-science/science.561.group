@@ -1,0 +1,15 @@
+---
+type: concept
+class: condition
+depends-on: [predication-settling, knowledge-order]
+---
+
+# Settling continuity
+
+A [predication settling](../objects/predication-settling.md) $v = (v_\tau)_{\tau < \lambda}$ is **continuous** if for every limit ordinal $\mu < \lambda$ and every [predicate](predicate.md) $p$,
+
+$$v_\mu(p) = \bigvee_k \{ v_\sigma(p) : \sigma < \mu \}$$
+
+pointwise — the cellwise [knowledge-order](knowledge-order.md) join (colimit) of the values at all earlier settling steps.
+
+Settling continuity says the value at a limit ordinal is determined as the directed knowledge-join of values at preceding steps; no new content is introduced at limits beyond what is approached from below.

@@ -1,0 +1,237 @@
+#+TITLE: Personal Records
+#+TODO: PLANNING(p!) READY(r!) | COMPLETE(c@) STOPPED(s@) DELAYED(d@)
+#+OPTIONS: toc:nil ':nil <:t c:t d:t date:t e:t email:t f:t H:12 num:nil broken-links:mark arch:t prop:t inline:t pri:t stat:t tags:t
+#+COLUMNS: %49ITEM %TODO %3PRIORITY %TAGS
+#+TOC: headlines 1
+* Introduction
+* Records
+#+TOC: headlines 1 local
+** Logs
+   :PROPERTIES:
+   :header-args: :tangle ./personal.ledger
+   :END:
+#+TOC: headlines 1 local
+*** 2019
+#+TOC: headlines 1 local
+**** 2019-05 May
+#+TOC: headlines 1 local
+***** 2019-05-13 Monday
+****** <2019-05-13 Mon 13:43>
+#+BEGIN_SRC ledger :tangle ./personal.ledger
+  2019/05/13 * Picked mulberries
+    Inventory:Larder:mulberries              3.5     lb
+    LABOR
+#+END_SRC
+****** <2019-05-13 Mon 15:12>
+#+BEGIN_SRC ledger :tangle ./personal.ledger
+  2019/05/13 * Picked mulberries
+    Inventory:Larder:mulberries             -3.5     lb
+    Inventory:Larder:mulberry juice          1.2     qt
+    LABOR
+#+END_SRC
+***** 2019-05-15 Wednesday
+#+TOC: headlines 1 local
+****** <2019-05-15 Wed 07:25>
+I've just woken up - or just gotten to my computer after having woken
+up too early, and I'm sitting here looking at my "personal record," an
+Org-mode file that I'd like to use as my main method of tracking my
+goals and past activities.
+
+Right now the file has 4 real sections, somewhat conveniently making
+an acronym, *LOAT*:
+- Logs
+- Objectives
+- Actions
+- Tasks
+
+Objectives are for big picture goals. Each one should have a checklist
+of how to measure its completion.
+
+Actions are things to do.
+****** <2019-05-15 Wed 11:10>
+I thankfully fell back asleep for a while. Now I'm sitting at my desk,
+my kitty happy staring over my shoulder while I type.
+
+So, actions are things to do, and are usually made up of tasks, which
+are granular things that can be done.
+
+What I haven't done yet is write an objective for my recordkeeping,
+because, well, that's a hard thing to think about.
+
+I'm going to start by adding the objective /Keep good records/, the
+results of which I'll say are keeping track of all obligations,
+personal inventory, work done, and interactions.
+
+Easier said than done. Let me try and write some actions to get to
+those results:
+
+For keeping track of my obligations, I think I'll want /capture
+templates/, a quick way of adding data to Org-mode... but before I can
+really do that, I'll need to write a little schema for what
+Objectives, Actions, and Tasks contain...
+
+Which should probably be written into my recordkeeping manual... which
+I don't think I have yet.
+****** <2019-05-15 Wed 12:43>
+I've just written some into my recordkeeping manual, which will be the
+explanation of how I'm handling the records that this log is a part
+of.
+
+I think, to help decide what "schema" I should set up for different
+work packages, I should start by importing some of the records I have
+scattered in older attempts at recordkeeping. In adding those, I'll
+have to clean them up and probably develop some sort of schema, which
+I can add to the recordkeeping manual.
+***** 2019-05-17 Friday
+#+TOC: headlines 1 local
+****** <2019-05-17 Fri 11:53>
+Today I plan on working on a few small things around the apartment
+building, but my main plans are to write a short letter to my parlour,
+to try and explain, mostly to myself, how it is I'm going to try and
+prioritize projects moving forward. I'm fairly comfortable with my job
+and so have the opportunity to step back and give some consideration
+to what would be best for my sense of fulfillment, long-term.
+
+In that spirit I've recently been trying to feel more comfortable
+identifying as a writer, and feeling comfortable believing that
+writing fantasy writing is something worth doing. I've been chewing
+that thought over the past few days, especially yesterday since Esther
+had the day off, and so I was just sitting in a car for a while.
+
+...Actually I just realized, in trying to write about it here, what I
+mean to be thinking:
+
+Teraum - my fantasy setting, /is/ a MUD. It's just not necessarily an
+/online/ MUD.
+
+So, for my memory, the backstory:
+
+When I was little I wrote fantasy stories and played the Discworld
+MUD. That made me want to write my own MUD to have people be able to
+play in my world, the way they could play in Pratchett's. But making a
+MUD is hard, and programming has never been what I've been focused on,
+so it's been a poor way to implement my fantasy setting. For most of
+my life, other interests kept the fantasy stuff on the backburner.
+
+Now, though, I have the opportunity to bring that stuff onto the fire,
+I'm hestitant about how to do it.
+
+The simple solution would be to just write stories, the traditional
+way. But I think that might be under-utilizing my other skills and
+interests, specifically those in tabletop role-playing games and MUDs,
+but also, visual art, book layout and design, and other small skills.
+** Objectives
+*** PLANNING Collate past work [0%]
+    :PROPERTIES:
+    :CUSTOM_ID: collate-past-work
+    :END:
+- [ ] Collect all the work
+- [ ] Write a format for all the work types
+- [ ] Have relevant processes in relevant manuals
+*** PLANNING Keep good records [0%]
+- [ ] Keep track of all obligations
+- [ ] Keep track of personal inventory
+- [ ] Keep track of work done
+- [ ] Keep track of interactions
+*** PLANNING Perfect [[ems-dm:breakfast-cheese][breakfast cheese]] recipe [0%]
+- [ ] High fat and protein content
+- [ ] Keeps for a week
+- [ ] Not messy to eat
+** Actions
+#+TOC: headlines 1 local
+*** [0/1] Harvest local foodstuffs
+- [ ] [[*Pick mulberries][Pick mulberries]]
+*** Collect portfolio
+Related to the [[#collate-past-work]["Collate Past Work"]] objective.
+** Tasks
+#+TOC: headlines 1 local
+*** READY Clean the house
+    :LOGBOOK:
+    CLOCK: [2019-05-16 Thu 20:48]--[2019-05-16 Thu 22:00] =>  1:12
+    CLOCK: [2019-05-16 Thu 11:44]--[2019-05-16 Thu 12:28] =>  0:44
+    CLOCK: [2019-05-15 Wed 20:44]--[2019-05-15 Wed 21:22] =>  0:38
+    CLOCK: [2019-05-15 Wed 14:47]--[2019-05-15 Wed 16:21] =>  1:34
+    :END:
+    - State "READY"      from "PLANNING"   [2019-05-15 Wed 14:47]
+    - State "PLANNING"   from              [2019-05-15 Wed 14:47]
+*** PLANNING Juice mulberries
+*** PLANNING Release [[file:~/org/src/qtmud.org][qtMUD 0.1.0]]
+    - State "PLANNING"   from              [2019-05-15 Wed 14:26]
+*** COMPLETE Prepare ginger beer
+    CLOSED: [2019-05-16 Thu 13:40]
+    :LOGBOOK:
+    CLOCK: [2019-05-16 Thu 13:24]--[2019-05-16 Thu 13:40] =>  0:16
+    :END:
+    - State "COMPLETE"   from "READY"      [2019-05-16 Thu 13:40]
+    - State "READY"      from "PLANNING"   [2019-05-16 Thu 13:24]
+    - State "PLANNING"   from              [2019-05-16 Thu 13:23]
+*** READY Clean the food dehydrator
+    - State "READY"      from              [2019-05-14 Tue 23:42]
+*** READY Conduct kitchen inventory
+*** READY General recordkeeping
+    :LOGBOOK:
+    CLOCK: [2019-05-15 Wed 14:24]--[2019-05-15 Wed 14:47] =>  0:23
+    :END:
+*** READY Import [[file:~/org/triage/log.org][log.org]]
+*** COMPLETE Pick mulberries
+    CLOSED: [2019-05-17 Fri 11:50] SCHEDULED: <2019-05-15 Wed>
+    - State "COMPLETE"   from "READY"      [2019-05-17 Fri 11:50] \\
+      Got about a quart and a half.
+   - State "READY"      from "COMPLETE"   [2019-05-13 Tue 13:39]
+   - State "COMPLETE"   from "READY"      [2019-05-13 Tue 13:37] \\
+*** READY Write personal logs
+    :LOGBOOK:
+    CLOCK: [2019-05-17 Fri 16:38]--[2019-05-17 Fri 16:57] =>  0:19
+    CLOCK: [2019-05-17 Fri 11:52]--[2019-05-17 Fri 12:06] =>  0:14
+    CLOCK: [2019-05-15 Wed 12:43]--[2019-05-15 Wed 12:51] =>  0:08
+    CLOCK: [2019-05-15 Wed 11:12]--[2019-05-15 Wed 11:33] =>  0:21
+    CLOCK: [2019-05-15 Wed 07:31]--[2019-05-15 Wed 07:44] =>  0:13
+    :END:
+*** READY Write [[file:~/org/src/recordkeeping-manual.org][/Recordkeeping Manual/]]
+    :LOGBOOK:
+    CLOCK: [2019-05-15 Wed 11:33]--[2019-05-15 Wed 12:20] =>  0:47
+    :END:
+    - State "READY"      from "PLANNING"   [2019-05-15 Wed 11:32]
+    - State "PLANNING"   from              [2019-05-15 Wed 11:32]
+*** PLANNING Create "Help Me" page for my personal website.
+    - State "PLANNING"   from              [2019-05-15 Wed 16:35]
+*** READY Cook
+    :LOGBOOK:
+    CLOCK: [2019-05-16 Thu 12:28]--[2019-05-16 Thu 12:42] =>  0:14
+    CLOCK: [2019-05-15 Wed 16:35]--[2019-05-15 Wed 18:21] =>  1:46
+    :END:
+    - State "READY"      from "PLANNING"   [2019-05-15 Wed 16:35]
+    - State "PLANNING"   from              [2019-05-15 Wed 16:35]
+*** READY Do laundry
+    SCHEDULED: <2019-05-17 Fri>
+    - State "READY"      from "PLANNING"   [2019-05-17 Fri 11:42]
+    - State "PLANNING"   from              [2019-05-17 Fri 11:42]
+*** COMPLETE Write [[file:src/essays/how-my-projects-relate.org]["How My Projects Relate"]]
+    CLOSED: [2019-05-17 Fri 19:54]
+    - State "COMPLETE"   from "READY"      [2019-05-17 Fri 19:54]
+    :LOGBOOK:
+    CLOCK: [2019-05-17 Fri 17:08]--[2019-05-17 Fri 18:48] =>  1:40
+    :END:
+    - State "READY"      from "PLANNING"   [2019-05-17 Fri 16:48]
+    - State "PLANNING"   from              [2019-05-17 Fri 16:48]
+*** Archive                                                         :ARCHIVE:
+#+TOC: headlines 1 local
+**** COMPLETE Imported [[file:~/org/src/dr-allen-spreen-is-conducting-fraud.org]["Allan Spreen is Conducting Fraud"]]
+     CLOSED: [2018-10-26 Fri 16:31]
+     :PROPERTIES:
+     :CUSTOM_ID: import-allan-spreen-is-conducting-fraud
+     :ARCHIVE_TIME: 2018-10-26 Wed 16:31
+     :END:
+     - State "COMPLETE"   from "READY"      [2018-10-26 Fri 16:31]
+     - State "READY"      from "PLANNING"   [2018-10-26 Fri 15:44]
+     - State "PLANNING"   from              [2018-10-26 Fri 15:44]
+     :LOGBOOK:
+     CLOCK: [2018-10-26 Fri 16:29]--[2018-10-26 Fri 16:31] =>  0:02
+     CLOCK: [2018-10-26 Fri 15:44]--[2018-10-26 Fri 15:54] =>  0:10
+     :END:
+*** STOPPED Import [[file:~/org/triage/fyreside/][Fyreside]] project.
+    CLOSED: [2019-05-15 Wed 14:25]
+    - State "STOPPED"    from "PLANNING"   [2019-05-15 Wed 14:25] \\
+      Waiting on [[#release-qtmud-0-1-0]["Release qtMUD 0.1.0"]]
+    - State "PLANNING"   from              [2019-05-15 Wed 14:25]
+* Supplements

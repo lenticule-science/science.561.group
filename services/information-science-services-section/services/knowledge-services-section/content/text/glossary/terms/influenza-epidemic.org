@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       8f2271f9-3f27-4cdc-b7bf-ff11f2400140
+:END:
+#+title: influenza epidemic
+#+date: [2025-10-06 Mon 08:22]
+

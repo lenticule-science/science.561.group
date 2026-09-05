@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/predication-settling-category/predication-settling-category.schema.json",
+  "title": "Predication settling category",
+  "description": "JSON Schema for the predication-settling category PS(L, C, E, λ) — a thin poset-category whose objects are predication-settlings over a fixed base and whose hom-classes are sub-singletons indexed by the pointwise-and-stepwise knowledge-order relation on valuations. Stored as the base parameters and the list of object-settlings; the homs are reconstructed by a script from the ≤_k relation and are not stored. The antisymmetric-poset property is runtime-checked.",
+  "type": "object",
+  "required": ["lattice", "predicate-category", "entity-set", "bound", "settlings"],
+  "additionalProperties": false,
+  "properties": {
+    "lattice": {
+      "$ref": "https://research-notes.561.group/hacking/library/predication-notes/lattice/library/residuated-lattice/residuated-lattice.schema.json"
+    },
+    "predicate-category": {
+      "$ref": "https://research-notes.561.group/hacking/library/predication-notes/object/library/thing/library/category/library/predicate-category/predicate-category.schema.json"
+    },
+    "entity-set": {
+      "$ref": "https://research-notes.561.group/hacking/library/predication-notes/entity-set/entity-set.schema.json"
+    },
+    "bound": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "settlings": {
+      "description": "The objects of the category — settlings over the fixed base (L, C, E, λ).",
+      "type": "array",
+      "items": {"$ref": "https://research-notes.561.group/hacking/library/predication-notes/predication-settling-category/library/predication-settling/predication-settling.schema.json"}
+    }
+  }
+}

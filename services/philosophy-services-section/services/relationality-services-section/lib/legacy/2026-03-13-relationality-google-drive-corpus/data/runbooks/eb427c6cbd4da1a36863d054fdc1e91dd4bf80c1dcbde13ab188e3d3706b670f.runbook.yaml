@@ -1,0 +1,23 @@
+name: build_evaluation_context
+inputs:
+- role: trace
+  kind: trace
+- role: eval_context_seed
+  kind: eval_context_seed
+outputs:
+- role: evaluation_context
+  kind: evaluation_context
+steps:
+- name: build_evaluation_context
+  operator: build_evaluation_context
+  step_index: 0
+  inputs:
+  - role: trace
+    kind: trace
+  - role: eval_context_seed
+    kind: eval_context_seed
+  outputs:
+  - role: evaluation_context
+    kind: evaluation_context
+id: eb427c6cbd4da1a36863d054fdc1e91dd4bf80c1dcbde13ab188e3d3706b670f
+

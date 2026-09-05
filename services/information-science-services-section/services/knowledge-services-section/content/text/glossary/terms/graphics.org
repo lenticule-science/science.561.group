@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       a955ab84-824d-48e3-8460-c4c185ec9e37
+:END:
+#+title: graphics
+#+date: [2025-08-25 Mon 08:04]
+

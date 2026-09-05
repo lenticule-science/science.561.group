@@ -1,0 +1,27 @@
+#+SETUPFILE: ../default-setup.inc
+#+TITLE: Why It Might End
+#+EXPORT_FILE_NAME: ../../pub/poems/why-it-might-end
+#+TOC: headlines 1 local
+* Introduction
+#+INCLUDE: "../../plates.inc::draft"
+#+INCLUDE: "../../plates.inc::default-eli"
+* Why It Might End
+#+BEGIN_VERSE
+Maybe the world ends because uncertain people
+stop acting because of the reaction of other people
+that our collective definition of reality
+becomes so muddied that reality
+goes away
+#+END_VERSE
+* Supplements
+#+TOC: headlines local 1
+** Contribute
+   :PROPERTIES:
+   :CUSTOM_ID: supplements-contribute
+   :END:
+#+INCLUDE: "../../plates.inc::personal-contribute"
+** License
+   :PROPERTIES:
+   :CUSTOM_ID: supplements-license
+   :END:
+#+INCLUDE: "../../plates.inc::mit-license"

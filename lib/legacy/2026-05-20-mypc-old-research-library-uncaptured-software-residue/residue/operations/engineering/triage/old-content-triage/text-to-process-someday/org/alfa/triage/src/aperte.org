@@ -1,0 +1,553 @@
+#+SETUPFILE: ./default-setup.inc
+#+TITLE: Aperte
+#+EXPORT_FILE_NAME: ../pub/aperte
+#+MACRO: document-type software
+#+INDEX: Aperte!*Aperte*
+#+INDEX: software!by type!web service!*Aperte*
+#+INDEX: software!by language!PHP!*Aperte*
+#+INDEX: Aperte!*Aperte*
+#+TOC: headlines 1
+* Introduction
+Aperte is a PHP script for running a flatfile blogging site.
+#+INCLUDE: "./plates.inc::draft"
+#+INCLUDE: "./plates.inc::abandonware"
+#+INCLUDE: "./plates.inc::default-eli"
+#+INCLUDE: "./plates.inc::literate-programming"
+* Aperte
+#+BEGIN_SRC php
+<?php
+error_reporting(E_ALL);
+/*
+ * Aperte, an unconstrained and simple blogging system.
+ *   Copyright (C) 2008 emsenn (http://www.canland.net)
+ *   A fork of OpenBlag, by Marz (http://tehmarz.com/blag/)
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY;without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ */
+
+$blogserv = true;
+//$ext_dir = "../../../passes/";
+
+if(isset($ext_dir)) $passfile = (($blogserv && strrpos(__FILE__,$_SERVER["SCRIPT_NAME"])+strlen($_SERVER["SCRIPT_NAME"]) == strlen(__FILE__))?$ext_dir:"../".$ext_dir).str_replace("/","_",$_SERVER['SCRIPT_NAME'])."_pass.txt";
+else $passfile = "./passwd.txt";
+
+if(!is_readable($passfile)){
+  define("TITLE", "New Blog");
+  define("DESC", "Welcome to your new Aperte blog. Please <a href=\"./?mode=config\">configure your installation</a>.");
+  define("SERVMSG", "This is an <a href=\"http://www.canland.net/aperte/\">Aperte</a> server. Aperte is a free and open source blogging service with a minimalist approach. Unlike most alternative blogging services, Aperte is simple and clean, and dedicated to remaining lightweight - providing you want you need and nothing else. If you would like to create a blog, please put your desired blog name in the box below, and click Submit.");
+  define("PPP", 5);
+  define("RECENT", 10);
+  define("COMMENT", false);
+  define("DATES", "g:ia F jS, Y");
+  define("BANNER", "#369");
+  define("HEADER", "#fff");
+  define("BODYBG", "#ddd");
+  define("PAGEBG", "#fff");
+  define("BORDER", "#000");
+  define("TITLES", "#000");
+  define("TEXT", "#000");
+  define("FAINT", "#666");
+  define("LINK", "#036");
+  define("HOVER", "#369");
+  define("ACTIVE", "#69c");
+}
+else{
+  $comment = false;
+  foreach(file("./config.txt", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES) as $item){
+    $pair = explode("\t",$item);
+    if($pair[0] == "COMMENT") $comment = true;
+    define($pair[0],$pair[1]);
+  }
+  if(!$comment) define("COMMENT", false);
+}
+define("MODE", isset($_GET["mode"])?$_GET["mode"]:"view");
+define("PAGE", isset($_GET["page"])?$_GET["page"]:1);
+define("POST", isset($_GET["post"])?$_GET["post"]:"");
+define("SERV", ($blogserv && strrpos(__FILE__,$_SERVER["SCRIPT_NAME"])+strlen($_SERVER["SCRIPT_NAME"]) == strlen(__FILE__)));
+if(SERV && file_exists($passfile)){ define("PPP",""); define("RECENT",""); define("DATES",""); define("TITLES","");}
+if(!defined("SERVMSG")) define("SERVMSG","");
+list($uerr,$perr,$terr,$body,$return) = "";
+$posts = array();
+$bbcguide = "<br/><br/><strong>BBCode:</strong> <tt>[b]<strong>bold</strong>[/b] [i]<em>italics</em>[/i] [u]<span style=\"text-decoration: underline;\">underlined</span>[/u] [s]<s>strikethrough</s>[/s] [code]<tt>codestyle</tt>[/code] [url]link[/url] [url=link]text[/url] [img]link[/img]</tt>";
+$updated = false;
+
+function article($id,$def=false,$com=false,$comonly=false){
+  global $posts,$return, $NAME, $bbcguide, $uerr;
+  if($comonly==false){
+    (key_exists($id,$posts) && is_readable("./post/$id.txt"))?$content = explode("\n\n",file_get_contents("./post/$id.txt")):$content = array(time()."\t".TITLE."\tOops!","That isn't a valid post.");
+    $j = false;
+    foreach($content as $block){
+      if(!$j){
+        $info = explode("\t",trim($block)); $title = $info[2];
+        $date = date(DATES,$info[0])." "; $author = "by ".$info[1];
+        $return = "<div class=\"post\" id=\"post:$id\"><h2><a href=\"./?post=$id\">$title</a></h2><div class=\"sign\">$date$author</div>\n<div class=\"content\">\n";
+        $j = true;
+        if($def) $NAME = $title;
+    }
+    else $return .= "<div>".trim($block)."</div>\n";
+    }
+    $return .= "</div>\n";
+  }
+  $iscom = is_readable("./comments/$id.txt");
+  if(COMMENT){
+    if(POST){
+      if(isset($_POST["comment"])){
+        $_comment = isset($_POST["comment"])?bbcodify(strip_tags($_POST["comment"])):"";
+        $_name = $_POST["name"]!==""?$_POST["name"]:"Anonymous";
+        if(md5($_POST['turing']) !== $_POST["captcha"]) $return = "<div class=\"post\"><strong>Sorry, you didn't pass the captcha test.</strong> Scroll down to try again.</div>".$return;
+        else{
+          if(!is_readable("./comments/")) mkdir("./comments/");
+          fwrite(fopen("./comments/".POST.".txt","a"), ($iscom?"\n\n":"").time()."\t".$_name."\n".$_comment);
+          $return = "<div class=\"post\"><strong>Your comment has been added.</strong></div>".$return;
+          list($_comment,$_name) = "";
+        }
+      }
+    $return .= "<div id=\"comments\" class=\"comment\">";
+    }
+    if($iscom==true){
+      $comments = array_reverse(explode("\n\n",file_get_contents("./comments/$id.txt")));
+      $comcnt = count($comments);
+      $return .= "$comcnt comments.";
+      if(POST){
+        for($i = 1;$i <= count($comments);$i++){
+          $arr = explode("\n",$comments[$i-1]);
+          $info = explode("\t",array_shift($arr));
+          $return .= "<div id=\"comment:$i\" class=\"comment\">".(MODE=="manage"?"<input name=\"c$i\" value=\"".($i-1)."\" type=\"checkbox\" />":"").date(DATES,$info[0])." by ".$info[1]."<div>\n".implode($arr)."\n</div>\n</div>\n";
+        }
+      }
+    }
+    else $return .= "No comments.";
+    if(!POST) $return .= " <a href=\"./?post=".$id."\">Go to post.</a>";
+    if(POST && $comonly==false){
+      captcha();
+      $return .= $bbcguide.make_form("./?post=".POST, array(array("name", "Name $uerr", "text", isset($_POST["name"])?$_POST["name"]:"", false),array("comment", "Comment", "textarea", isset($_comment)?$_comment:"", true, 6),array("captcha","")));
+    }
+  }
+  return "$return</div>\n";
+}
+
+function bbcodify($toparse){
+  return $toparse = str_replace(array("\r\n","\n<br/>","\n","\\","@<script[^>]*?>.*?</script>@si"),array("\n","\n","\n<br/>","",""),preg_replace(array("/\[b\](.*)\[\/b\]/i","/\[i\](.*)\[\/i\]/i","/\[url\](.*)\[\/url\]/i","/\[url=(.*)\](.*)\[\/url\]/i","/\[img\](.*)\[\/img\]/i","/\[u\](.*)\[\/u\]/i","/\[s\](.*)\[\/s\]/i","/\[code\](.*)\[\/code\]/i"),array("<strong>$1</strong>","<em>$1</em>","<a href=\"$1\">$1</a>","<a href=\"$1\">$2</a>","<img src=\"$1\"/>","<span style=\"text-decoration: underline;\">$1</span>","<s>$1</s>","<pre>$1</pre>"),$toparse));
+}
+
+function html2rgb($color){
+  if ($color[0] == '#') $color = substr($color, 1);
+  if(strlen($color)==3) $color = $color[0].$color[0].$color[1].$color[1].$color[2].$color[2];
+  if(strlen($color)!==6) return false;
+  list($r, $g, $b) = array(hexdec($color[0].$color[1]),hexdec($color[2].$color[3]),hexdec($color[4].$color[5]));
+  return array($r, $g, $b);
+}
+
+function captcha(){
+  list($bgc,$lnc,$txtc)= array(html2rgb(PAGEBG),html2rgb(BODYBG),html2rgb(TEXT));
+  $width = 140; $height = 70; $im = imagecreate($width, $height);
+  $bg = imagecolorallocate($im, $bgc[0],$bgc[1],$bgc[2]);
+  $text_color = imagecolorallocate($im, $txtc[0],$txtc[1],$txtc[2]);
+  $_POST['captcha_code'] = $string = substr(md5(microtime()),0,5);
+  for($i = 0; $i < 20; $i++) {
+    $line_color = imagecolorallocate($im, $lnc[0]+rand(0,150),$lnc[1]+rand(0,150),$lnc[2]+rand(0,150));
+    $rand_x = rand(0, $width - 50); $rand_y = rand(0, $height - 40);
+    if($i == 10) for($c = 0; $c <5; $c++) imagestring($im, 5, $rand_x+($c*10), $rand_y+rand(0,20), $string[$c], $text_color);
+    imageline($im, rand(0, $width - 1), rand(0, $height - 1), $rand_x_2 = rand(0, $width - 1), $rand_y_2 = rand(0, $height - 1), $line_color);
+  }
+  imagepng($im,"captcha.png");
+  imageDestroy($im);
+}
+
+function check_pass($user,$pass,$admin=false){
+  global $passfile;
+  if(is_readable($passfile)){
+    foreach(file($passfile,FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES) as $pwd){
+      $pwd_r = explode("\t",$pwd);
+      if(strtolower($pwd_r[0]) == strtolower($user)) return (hash("whirlpool",$pass) == $pwd_r[1]? 2 : 1);
+    }
+  }
+  return 0;
+}
+
+function make_form($action,$form,$end=true){
+  $return = "";
+  foreach($form as $item){
+    $return .= "<div class=\"block\">\n<label for=\"i_".$item[0]."\">".$item[1]."</label>\n<br/>";
+    if($item[0] == "captcha") $return .="<img src=\"./captcha.png\"><input type=\"hidden\" id=\"captcha\" name=\"captcha\" value=\"".md5($_POST["captcha_code"])."\"/><div class=\"block\">\n<label for=\"turing\">Prove you're human, type the five characters. (If you can't read them, refresh.)</label><br/><input id=\"turing\" name=\"turing\" type=\"text\">";
+    elseif($item[2] == "checkbox") $return .= "<input id=\"i_".$item[0]."\" name=\"".$item[0]."\" type=\"".$item[2]."\" value=\"1\" ".($item[3]?"checked":"")."/>";
+    elseif($item[2] == "textarea") $return .= "<textarea id=\"i_".$item[0]."\" name=\"".$item[0]."\" cols=\"0\" rows=\"".$item[5]."\"".($item[4]?" class=\"expand\"":"").">".str_replace("&","&amp;",$item[3])."</textarea>";
+    elseif($item[2] == "image") $return .="<img src=\"".$item[3]."\"/>".$item[4];
+    else $return .= "<input id=\"i_".$item[0]."\" name=\"".$item[0]."\" type=\"".$item[2]."\" ".($item[4]?"class=\"expand\" ":"")."value=\"".str_replace("\"","&quot;",$item[3])."\" />";
+    $return .= "\n</div>\n";
+  }
+  if($end) $return .= "<div class=\"submit\"><input type=\"submit\" value=\"Submit\" /></div>\n</form>\n";
+  return "<form action=\"$action\" method=\"post\">\n$return";
+}
+
+
+if(is_readable("./posts.txt")){
+  $fo = file("./posts.txt",FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+  foreach($fo as $post){
+    $info = explode("\t",$post);
+    $posts[$info[0]] = $info[1];
+  }
+}
+
+if(count($posts) > 0 && !SERV){
+  $side = (RECENT >0)?"<div class=\"head\">Recent Posts</div>\n<ul>\n":"";
+  foreach(array_slice(array_reverse($posts),0,RECENT) as $id=>$title) $side .= "<li><a href=\"./?post=$id\">$title</a></li>\n";
+  $side .= "</ul>\n";
+}
+
+if(MODE == "config"){
+  $_title = isset($_POST["title"])?$_POST["title"]:"";
+  if($_title){
+    $_name = $_POST["name"]; $_pass = $_POST["pass"];
+    if(!$_name) $uerr = "<strong>required</strong>";
+    elseif(is_readable($passfile)){
+      $ret = check_pass($_name,$_pass,true);
+      if($ret == 0) $uerr = "<strong>incorirect</strong>";
+      elseif($ret == 1) $perr = "<strong>incorrect</strong>";
+    }
+    if(!$_POST["title"]) $terr = " <strong>required</strong>";
+    if(!$uerr && !$perr && !$terr){
+      $confs = array();
+      foreach($_POST as $key => $val){
+        if($key == "title" || $key == "desc") $val = bbcodify($val);
+        if($key != "name" && $key != "pass") array_push($confs,strtoupper($key)."\t".str_replace("\\","",$val));
+      }
+      fwrite(fopen("./config.txt","w"), implode("\n",$confs));
+      if(!is_readable($passfile)) fwrite(fopen($passfile,"w"), str_replace("\t"," ",$_name)."\t".hash("whirlpool",$_pass));
+      $updated = true;
+    }
+  }
+  if(!$body){
+    (!is_readable($passfile))?$set = "Set ":$set = "";
+    $body .= "<h2>Management tools</h2>
+      <ul><li><a href=\"./?mode=accounts&amp;action=create\">Create an account</a></li><li><a href=\"./?mode=accounts&amp;action=delete\">Delete an account.</a></li></ul><h2>Basic and Style Options</h2>";
+    $form = array(
+      array("name", "$set Admin Username $uerr", "text", "", false),
+      array("pass", "<strong>$set Admin Password</strong> $perr", "password", "", false),
+      array("title", "Blog Title $terr", "text", TITLE, true),
+      array("desc", "Blog Description", "text", DESC, true),
+      array("servmsg", "Server Message", "textarea", defined("SERVMSG")?SERVMSG:"", true, 4),
+      array("comment", "Comments enabled", "checkbox", COMMENT, false),
+      array("ppp", "Posts per page", "text", PPP, false),
+      array("recent", "Number of \"recent posts\"", "text", RECENT, false),
+      array("dates", "<a href=\"http://uk3.php.net/date\" target=\"_new\">Date format</a>", "text", DATES, false),
+      array("banner", "Banner color", "text", BANNER, false),
+      array("header", "Header color", "text", HEADER, false),
+      array("bodybg", "Page background color", "text", BODYBG, false),
+      array("pagebg", "Body background color", "text", PAGEBG, false),
+      array("border", "Border color", "text", BORDER, false),
+      array("titles", "Post titles", "text", TITLES, false),
+      array("text", "Text color", "text", TEXT, false),
+      array("faint", "Faint text color", "text", FAINT, false),
+      array("link", "Link color", "text", LINK, false),
+      array("hover", "Hovered link color", "text", HOVER, false),
+      array("active", "Active link color", "text", ACTIVE, false));
+    if(!SERV) array_splice($form,4,1);
+    if(SERV){
+      array_splice($form,5,1); array_splice($form,5,1); array_splice($form,5,1); array_splice($form,5,1); array_splice($form,10,1);
+    }
+    $body .= make_form("./?mode=config", $form);
+  }
+}
+
+elseif(SERV){
+  if(MODE == "directory"){
+    $dir_handle = @opendir("./");
+    while (false !== ($file = readdir($dir_handle))){
+      if(!strstr($file,".")){
+        foreach(file("./$file/config.txt", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES) as $item){
+          $pair = explode("\t",$item);
+          if($pair[0] == "TITLE") $dir_list[$file] = $pair[1];
+        }
+      }
+    }
+    closedir($dir_handle);
+    ksort($dir_list);
+    foreach($dir_list as $key => $value){
+        $body .= "<strong><a href=\"./$key\">/$key/</a></strong> - ".$value."<br/>";
+    }
+  }
+  else{
+    isset($_POST["name"])?$_name = $_POST["name"]:$_name = "";
+    if($_name){
+      if(preg_match("/\W/",$_name) == 1) $uerr = "That blog name is invalid! Please use characters A-z, 0-9, and underscores only.";
+      elseif(is_readable("./$_name/")) $uerr = "That blog already exists!";
+      elseif(md5($_POST['turing']) !== $_POST["captcha"]) $uerr = "Sorry, you didn't pass the captcha test.";
+      else{
+        mkdir("./$_name/");
+        $fo = fopen("./$_name/index.php","w");
+        fwrite($fo, "<?php include(\"../index.php\");?>");
+        fwrite($fo, "TITLE\t$_name's Blog");
+        fclose($fo);
+        header("Location: ./$_name/");
+      }
+    }
+    captcha();
+    $body .= "<div class=\"post\">".SERVMSG."<br/><br/><strong>".(isset($uerr)?"<br/>$uerr":"")."</strong></div>\n".make_form("./", array(array("name", "Blog name? (Your blog will become http://".$_SERVER["HTTP_HOST"]."/aperte/yourblogname/ - Case sensitive.", "text", "", false), array("captcha","")));
+  }
+}
+
+elseif(MODE == "accounts"){
+  if(!is_readable($passfile)) $body = "You must <a href=\"./?mode=config\">configure your blog</a> before you can do anything!";
+  $action = $_GET["action"];
+  if(isset($_POST["acc_name"])){
+    $_name = $_POST["name"];$_pass = $_POST["pass"];
+    if(!$_name) $uerr = "<strong>required</strong>";
+    else{
+      $ret = check_pass($_name,$_pass,true);
+      if($ret == 0) $uerr = "<strong>incorrect</strong>";
+      elseif($ret == 1) $perr = "<strong>incorrect</strong>";
+      (is_readable($passfile)) ? $passwd = file($passfile,FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES) : $passwd = array();
+      $i = 0;
+      foreach($passwd as $pwd){
+        $pwd_r = explode("\t",$pwd);
+        if(strtolower($pwd_r[0]) == strtolower($_POST["acc_name"])){
+          $exists = true;
+          if($action == "delete"){
+            array_splice($passwd,$i,1);
+            $aerr = "deleted";
+          }
+          break;
+        }
+        $i++;
+      }
+      if($action == "create") (isset($exists)) ? $aerr = " <strong>already exists</strong>" : array_push($passwd, $_POST["acc_name"]."\t".hash("whirlpool",$_POST["acc_pass"]));
+      elseif(!$exists) $aerr = "<strong>doesn't exist</strong>";
+      fwrite(fopen($passfile,"w"), implode("\n",$passwd));
+      $updated = true;
+    }
+  }
+  if(!$body){
+    $aerr = isset($aerr)?$aerr:"";
+    $form = array(array("name", "Admin Username $uerr", "text", "", false),array("pass", "Admin Password $perr", "password", "", false),array("acc_name", "Account Username <strong>$aerr</strong>", "text", "", false));
+    if($action == "create" || $action == "delete"){
+      if($action == "create") array_push($form, array("acc_pass", "Account Password", "password", "", false));
+      $body .= make_form("./?mode=accounts&amp;action=$action", $form);
+    }
+  }
+}
+
+elseif(MODE == "create" || MODE == "edit"){
+  if(!is_readable($passfile)) $body = "You must <a href=\"./?mode=config\">configure your blog</a> before you can do anything!";
+  if(MODE == "edit" && !is_readable("./post/".POST.".txt")) $body = "<div class=\"post\">Sorry, this post doesn't exist.</div>";
+  elseif(MODE == "edit"){
+    $fo = file("./post/".POST.".txt", FILE_IGNORE_NEW_LINES);
+    $meta = explode("\t",array_shift($fo));
+    list($_time,$_name,$_title)= array($meta[0],$meta[1],$meta[2]);
+    if(!isset($_POST["content"])) $_content = implode("\n",$fo);
+  }
+  else{
+    $_time = time();
+    $_name = trim((isset($_POST["name"])?$_POST["name"]:""));
+  }
+  if(!isset($_content) && isset($_POST["content"])) $_content= $_POST["content"];
+  if(!isset($_title) && isset($_POST["title"])) $_title = str_replace("\\","",trim($_POST["title"]));
+  $_content = isset($_content)?bbcodify(str_replace("\\","",trim($_content))):"";
+  $_title = isset($_title)?bbcodify(str_replace("\t"," ",$_title)):"";
+  if(!$body && isset($_POST["content"])){
+    if(!$_name) $uerr = "<strong>required</strong>";
+    else{
+      $ret = check_pass($_name,$_POST["pass"]);
+      if($ret == 0) $uerr = "<strong>incorrect</strong>";
+      elseif($ret == 1) $perr = "<strong>incorrect</strong>";
+    }
+    if(!$_title) $terr = " <strong>required</strong>";
+    if(MODE == "create"){
+      $post = strtolower(preg_replace(array("/\W/","/\\s+/"),array("","_"),$_title));
+      if(strlen($post) == 0) $terr = " <strong>invalid</strong>";
+      else{
+        for($i=0;is_readable("./post/$post".str_repeat("_",$i).".txt");$i++);
+        $post = $post.str_repeat("_",$i);
+       }
+    }
+    else $post = POST;
+    if(!$uerr && !$perr && !$terr){
+      $delete = (MODE == "edit" && isset($_POST["delete"]));
+      if(!$delete){
+        if(!is_readable("./post/")) mkdir("./post/");
+        fwrite(fopen("./post/$post.txt","w"), "$_time\t$_name\t$_title\n\n".str_replace("\r\n","\n",$_content));
+      }
+      if($delete){
+        unlink("./post/$post.txt");
+        unset($posts[$post]);
+        $updated=true;
+      }
+      else $posts[$post] = $_title;
+      $fo = fopen("./posts.txt","w");
+      foreach($posts as $id=>$title) fwrite($fo, "$id\t$title\n");
+      fclose($fo);
+      $fo = fopen("./feed.rss","w");
+      $link = "http://".$_SERVER["HTTP_HOST"].$_SERVER['SCRIPT_NAME'];
+      fwrite($fo, "<?xml version=\"1.0\"?>\n<rss version=\"2.0\">\n<channel>\n<title>".TITLE."</title>\n<link>$link</link>\n<description>".DESC."</description>\n<pubDate>".date("r")."</pubDate>\n");
+      foreach(array_slice(array_reverse($posts),0,RECENT) as $id=>$title){
+        $content = explode("\n\n",file_get_contents("./post/$id.txt"));
+        $info = explode("\t",trim(array_shift($content)));
+        fwrite($fo, "<item>\n<title>$title</title>\n<guid>$link?post=$id</guid>\n<link>$link?post=$id</link>\n<description>".str_replace(array("<",">"),array("&lt;","&gt;"),htmlentities(implode("\n<br />",$content)))."</description>\n<pubDate>".date("r",$info[0])."</pubDate>\n</item>\n");
+      }
+      fwrite($fo, "</channel>\n</rss>");
+      fclose($fo);
+      header("Location: ./?post=$post");
+     }
+  }
+  if(!$body){
+    $body .= $bbcguide;
+    $form = array(
+      array("name", "Username $uerr", "text", $_name, false),
+      array("pass", "Password $perr", "password", "", false),
+      array("title", "Title $terr", "text", $_title, true),
+      array("content", "Content", "textarea", $_content, true, 18));
+    if(MODE == "edit") array_push($form,array("delete", "Delete Post", "checkbox", false, false));
+    $body .= make_form("./?mode=".MODE.(POST?"&amp;post=".POST:""), $form);
+  }
+}
+
+elseif(COMMENT && MODE == "manage"){
+  if(!key_exists(POST,$posts)) $body = "<div class=\"post\">Sorry, this post doesn't  exist.</div>";
+  elseif(!is_readable("./comments/")) $body = "<div class=\"post\">Sorry, there aren't any comments for this post.</div>";
+  elseif(count($_POST) > 0){
+    $_name = $_POST["name"];
+    if(!$_name) $uerr = "<strong>required</strong>";
+    else{
+      $ret = check_pass($_name,$_POST["pass"]);
+      if($ret == 0) $uerr = "<strong>incorrect</strong>";
+      elseif($ret == 1) $perr = "<strong>incorrect</strong>";
+     }
+    if(!$uerr && !$perr && !$terr){
+      $comments = explode("\n\n",file_get_contents("./comments/".POST.".txt"));
+      $delete = array_slice($_POST,2);rsort($delete);
+      foreach($delete as $num) array_splice($comments,$num,1);
+      if(count($comments) == 0) unlink("./comments/".POST.".txt");
+      else fwrite(fopen("./comments/".POST.".txt","w"), implode("\n\n",$comments));
+      $body = article(POST,true,true);
+    }
+  }
+  if(!$body) $body = make_form("./?mode=manage&amp;post=".POST, array(
+    array("name", "Username $uerr", "text", isset($_name)?$_name:"", false),
+    array("pass", "Password $perr", "password", "", false)),false).article(POST,true,true,true)."\n<div class=\"submit\"><input type=\"submit\" value=\"Delete Comments\" /></div>\n</form>\n";
+}
+
+elseif(POST) $body .= article(POST,true,true,false);
+
+
+if(!SERV && !POST){
+  if(count($posts)==0) (!file_exists($passfile)) ? $body .= "<div class=\"post\">This blog has not been configured yet. You MUST <a href=\"./?mode=config\">configure your blog</a> before you can do anything! There will soon be complete instructions." : $body .= "<div class=\"post\">".TITLE." doesn't seem to have any posts yet.</div>\n";
+  else{
+    if((PAGE-1)*PPP < count($posts)) foreach(array_slice(array_reverse($posts), (PAGE-1)*PPP, PPP) as $id=>$title) $body .= article($id);
+    else $body .= "<div class=\"post\">Invalid page. ".TITLE." doesn't have this many posts.</div>\n";
+    $pager = "<div id=\"pager\">".(PAGE==1?"&laquo;":"<a href=\"./?page=".(PAGE-1)."\">&laquo;</a>");
+    for($i = 1; $i < (count($posts)/PPP)+1; $i++ ) $pager .= " ".($i==PAGE?"<strong>$i</strong>":"<a href=\"./?page=$i\">$i</a>");
+    $pager .= " ".(PAGE>=(count($posts)/PPP)?"&raquo;":"<a href=\"./?page=".(PAGE+1)."\">&raquo;</a>")."</div>\n";
+  }
+}
+
+if($updated==true) header("Location: ./?updated=true");
+
+?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" dir="ltr">
+  <head>
+    <title><?=TITLE.(isset($NAME)?': '.$NAME:'')?></title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta http-equiv="content-style-type" content="text/css" />
+    <meta name="resource-type" content="document" />
+    <?
+      if(MODE != "view" && !SERV || MODE != "directory") echo "<meta name=\"robots\" content=\"noindex, nofollow\" />\n";
+      if(is_readable("./feed.rss")) echo "<link rel=\"alternate\" type=\"application/rss+xml\" href=\"./feed.rss\" />\n";
+      if(isset($changemsg)) echo "<meta http-equiv=\"Refresh\" content=\"0;url=\"./\">\n";
+    ?>
+    <style type="text/css">
+      body{ background-color:<?=BODYBG?>;color:<?=TEXT?>;font-family:sans-serif;font-size:12px;margin:15px }
+      a{ text-decoration:none;color:<?=LINK?> }
+      a:hover{ text-decoration:underline;color:<?=HOVER?> }
+      a:active{ color:<?=ACTIVE?> }
+      img{ border:none;max-width:100% }
+      h1, h2, h3, h4, pre { margin:0 }
+      h1{ color:<?=HEADER?>;font-size:3em;text-align:center }
+      h2{ color:<?=TITLES?>;font-size:2em }
+      h1 a, h1 a:hover, h1 a:active, h2 a { text-decoration:none;color:inherit }
+      h2 a:hover { text-decoration:none }
+      table{ border:1px solid <?=BORDER?>;font-size:inherit }
+      th{ border-bottom:1px dotted <?=BORDER?>;padding:0 4px 2px }
+      td{ padding:2px 4px }
+      input,textarea{ background-color:<?=PAGEBG?>;color:<?=TEXT?>;border:1px solid <?=BORDER?> }
+      #page{ background-color:<?=PAGEBG?>;border:1px solid <?=BORDER?>;margin:0 auto;max-width:85% }
+      #banner{ background-color:<?=BANNER?>;border-bottom:1px solid <?=BORDER?>;padding:15px 0;width:100% }
+      #desc, #tail { padding:6px 0;margin:0 10px;text-align:center }
+      #desc{ border-bottom:1px dotted <?=BORDER?> }
+      #tail{ border-top:1px dotted <?=BORDER?>;clear:both;font-size:.8em }
+      #sidebar{ float:right;margin:5px 10px 18px;width:12em }
+      #sidebar .head{ font-weight:bold;margin:12px 0 3px }
+      #sidebar ul{ margin:3px 0 0;list-style-type:none;padding:0;text-indent:3px }
+      #sidebar ul li{ margin:2px 0 0 }
+      #wrapper{ margin:0 13.5em 0 0;padding:0 10px }
+      #comments{ border-top:1px dotted <?=BORDER?>;margin:18px 0 0;padding:6px }
+      #pager{ margin:0 0 15px;text-align:center }
+      .post{ margin:30px 0 }
+      .sign{ color:<?=FAINT?>;font-size:.9em;margin:6px 0 0 24px }
+      .content{ margin:0 0 12px }
+      .content div{ margin:6px 3px }
+      .comment{ margin:18px 0 }
+      .comment div{ color:<?=FAINT?>;margin:6px 0 0 12px }
+      .quote{ border-left:1px dotted <?=BORDER?>;font-style:italic;padding:12px 3px 12px 12px }
+      .block{ margin:12px 6px }
+      .expand{ width:100% }
+      .submit{ margin:0 auto 18px }
+      .submit, .submit input{ color:<?=TEXT?>;width:14em }
+    </style>
+  </head>
+  <body>
+    <div id="page">
+      <div id="banner">
+        <h1><a href="./"><?=TITLE?></a></h1>
+      </div>
+      <div id="desc"><?=DESC?></div>
+      <div id="sidebar">
+      <?=(isset($side)?$side:"")?>
+        <div class="head">Meta</div>
+        <ul>
+        <?
+          if(!SERV){
+            if(POST && MODE != "edit") echo "<li><a href=\"./?mode=edit&amp;post=".POST."\">Edit This Post</a></li>\n";
+            if(POST && COMMENT && MODE != "manage") echo "<li><a href=\"./?mode=manage&amp;post=".POST."\">Manage Comments</a></li>\n";
+            echo "<li><a href=\"./?mode=create\">Create New Post</a></li>";
+          }
+        ?>
+        <li><a href="./?mode=config">Manage <?=SERV?"Server":"Blog"?></a></li>
+        <?
+          if(SERV) echo "<li><a href=\"./?mode=directory\">Blog Directory</a></li>\n";
+          if(!SERV && is_readable("./feed.rss")) echo "<li><a href=\"./feed.rss\" />Subscribe (RSS)</a></li>\n";
+        ?>
+        </ul>
+      </div>
+      <div id="wrapper">
+        <?
+          if(isset($_GET["updated"])&&$_GET["updated"]==true) echo "<br/><div class=\"post\"><strong>Your blog has been successfully updated.</strong></div>";
+          if(isset($body)) echo $body;
+        ?>
+      </div>
+      <?=(isset($pager)?$pager:"")?>
+      <div id="tail"><?=TITLE?> is powered by <a href="http://www.canland.net/aperte/">Aperte 1.1</a>.</div>
+    </div>
+  </body>
+</html>
+#+END_SRC
+* Supplements
+** Contribute
+   :PROPERTIES:
+   :CUSTOM_ID: supplements-contribute
+   :END:
+#+INCLUDE: "./plates.inc::personal-contribute"
+** License
+   :PROPERTIES:
+   :CUSTOM_ID: supplements-license
+   :END:
+#+INCLUDE: "./plates.inc::mit-license"

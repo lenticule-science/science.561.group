@@ -1,0 +1,32 @@
+{
+  "targets": {
+    "fft_slope": -1.0,
+    "entropy_bits": 6.3,
+    "rms_contrast": 0.2,
+    "fractal_D": 1.4
+  },
+  "results": {
+    "fft_slope": -2.0020872285050957,
+    "entropy_bits": 7.22904239764107,
+    "rms_contrast": 0.32781130780030454,
+    "fractal_D": -1.8230167374782142
+  },
+  "params": {
+    "width": 1024,
+    "height": 1024,
+    "seed": 33,
+    "mean_lum": 0.55,
+    "sat_min": 0.25,
+    "sat_max": 0.8,
+    "perlin_freq_small": 7.0,
+    "perlin_freq_mid": 2.5,
+    "perlin_freq_macro": 0.6,
+    "perlin_amp_small": 0.45,
+    "perlin_amp_mid": 0.35,
+    "perlin_amp_macro": 0.2,
+    "palette_mode": "triad",
+    "base_hue_deg": 25.0,
+    "radial_strength": 0.2,
+    "tune_steps": 24
+  }
+}

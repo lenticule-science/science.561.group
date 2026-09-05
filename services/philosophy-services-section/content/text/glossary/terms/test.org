@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       3a319ab1-21e1-415b-8281-186c81e1eafc
+:END:
+#+title: test
+#+date: [2025-08-29 Fri 21:53]
+

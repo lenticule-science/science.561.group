@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/system/library/operating-system/library/computer-operating-system/library/message/message.schema.json",
+  "title": "Message",
+  "description": "JSON Schema for a message instance: a unit of communication crossing a wire boundary, carrying direction, endpoints, content, and an envelope-protocol identifier.",
+  "type": "object",
+  "required": ["has-direction", "has-content", "envelope-protocol"],
+  "additionalProperties": true,
+  "properties": {
+    "has-direction": {
+      "type": "string",
+      "enum": ["inbound", "outbound"]
+    },
+    "has-sender": {
+      "type": "string",
+      "description": "Originating endpoint identifier."
+    },
+    "has-recipient": {
+      "type": "string",
+      "description": "Destination endpoint identifier."
+    },
+    "has-content": {
+      "description": "Body payload. May be a string, byte sequence (base64), or structured object depending on the protocol."
+    },
+    "envelope-protocol": {
+      "type": "string",
+      "description": "Wire-protocol slug (http, smtp, imap, mqtt, matrix, mcp-jsonrpc, etc.)."
+    },
+    "has-signature": {
+      "type": "string",
+      "description": "Optional cryptographic signature over the message bytes."
+    },
+    "sent-at": {"type": "string", "format": "date-time"},
+    "received-at": {"type": "string", "format": "date-time"}
+  }
+}

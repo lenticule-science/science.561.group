@@ -1,0 +1,32 @@
+---
+name: "Biopolitics"
+date-created: 2026-03-03
+aliases:
+  - "biopolitics"
+  - "biopower"
+tags: []
+description: "Michel Foucault's concept naming the governance of populations through the management of biological life — birth rates, mortality, health, hygiene — rather than through sovereign violence."
+date-modified: 2026-03-09
+part-of: sociology/topics/state-repression/terms
+date-updated: 2026-03-09
+---
+
+Biopolitics, as theorized by [Michel Foucault](../../../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/michel-foucault.md) in his lectures at the Collège de France (1975–79), names the form of power that governs populations through the management of biological life itself. Where sovereign power operates through the right to kill (the power to take life or let live), [biopower](../../../../../../../foucauldian-services-section/content/text/glossary/terms/biopower.md) operates through the management of living (the power to make live and let die). The shift from sovereignty to [biopower](../../../../../../../foucauldian-services-section/content/text/glossary/terms/biopower.md) marks the emergence of modern governance: [the state](./the-state.md) governs not by threatening death but by managing birth rates, mortality, public health, hygiene, and the general conditions of life.
+
+Biopolitics does not replace sovereign power but supplements it. The modern state retains the capacity for sovereign violence but exercises it within a biopolitical framework: war is waged to defend the life of the population, not the honor of the sovereign. Racism, in [Foucault](../../../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/michel-foucault.md)'s analysis, functions as the mechanism that introduces a break within the biological continuum — it divides the population into those whose life must be optimized and those who must be exposed to death for the health of the whole. State racism is the condition under which [biopower](../../../../../../../foucauldian-services-section/content/text/glossary/terms/biopower.md) can exercise the old sovereign right to kill.
+
+The concept has been extended by several thinkers in directions [Foucault](../../../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/michel-foucault.md) did not pursue. [Achille Mbembe](../../../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/achille-mbembe.md) argues that biopolitics cannot account for colonial and postcolonial contexts where sovereignty operates primarily through death, developing [necropolitics](./necropolitics.md) as a corrective. [Elizabeth Povinelli](../../../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/elizabeth-povinelli.md) argues that biopolitics remains within the Life/Nonlife distinction and cannot account for how [late liberalism](../../../../../../../povinellian-services-section/content/text/glossary/terms/late-liberalism.md) governs through the management of what does not rise to the level of event — developing her concept of the [quasi-event](../../../../../../../povinellian-services-section/content/text/glossary/terms/quasi-event.md) and [geontologies](../../philosophy/terms/geontologies.md). [Roberto Esposito](../../../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/roberto-esposito.md) reframes biopolitics through the dialectic of immunization and community.
+
+## Related terms
+
+- [Michel Foucault](../../../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/michel-foucault.md) — who develops the concept
+- [Necropolitics](./necropolitics.md) — [Mbembe](../../../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/achille-mbembe.md)'s extension to the politics of death
+- [Quasi-event](../../../../../../../povinellian-services-section/content/text/glossary/terms/quasi-event.md) — [Povinelli](../../../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/elizabeth-povinelli.md)'s extension to late liberal harm governance
+- [Surveillance](./surveillance.md) — a mechanism of biopolitical management
+- [Legibility](./legibility.md) — state simplification as a biopolitical technique
+- [Geontologies](../../philosophy/terms/geontologies.md) — [Povinelli](../../../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/elizabeth-povinelli.md)'s framework for the governance beneath biopolitics
+- [Povinellian school](../../philosophy/disciplines/critical-theory/schools/povinelli/index.md) — curriculum for Povinelli's extension of biopolitics
+- [Settler colonialism](./settler-colonialism.md) — the structure that produces racial divisions within the biopolitical field
+- [Heteronormativity](../../../../../../../queer-services-section/content/text/glossary/terms/heteronormativity.md) — the normative framework through which biopolitics organizes reproduction and sexuality
+- [Queer theory](../schools/queer/index.md) — extends the analysis of how life is governed to the regulation of gender and desire
+- [AIDS crisis](../../../../../../../queer-services-section/content/text/glossary/terms/aids-crisis.md) — the epidemic that demonstrated biopolitical governance through differential distribution of death

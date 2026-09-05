@@ -1,0 +1,19 @@
+id: fa4e3281b52b139ec07766f4e1eabf65982a1219e3109ebd6ba5db0a6b6b3f4f
+inputs:
+- kind: trace
+  role: trace
+name: trace_tail
+outputs:
+- kind: tail_trace_evidence
+  role: tail_trace_evidence
+steps:
+- inputs:
+  - kind: trace
+    role: trace
+  name: tail_trace
+  operator: tail_trace
+  outputs:
+  - kind: tail_trace_evidence
+    role: tail_trace_evidence
+  step_index: 0
+

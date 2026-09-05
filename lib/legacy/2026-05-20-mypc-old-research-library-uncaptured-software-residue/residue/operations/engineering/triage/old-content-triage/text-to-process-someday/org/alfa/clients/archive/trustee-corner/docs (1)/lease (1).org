@@ -1,0 +1,261 @@
+#+TITLE: Lease Agreement
+#+AUTHOR: FJC Trust, 101 Harkness Circle, Durham NC 27705
+#+DATE: 2019-02-08
+#+OPTIONS: toc:nil num:nil ':nil title:nil
+#+macro: start-date January 1st, 2019
+#+macro: end-date December 31st, 2020
+#+macro: tenant-name Antonio La'Mont Currie
+#+macro: unit 305
+#+MACRO: nl @@latex:\\@@ @@html:<br>@@ @@ascii:|@@
+#+LATEX_HEADER: \usepackage{fancyhdr}
+#+LATEX_HEADER: \pagestyle{fancyplain}
+#+LATEX_HEADER: \chead{Lease Agreement between FJC Trust and Antonio La'Mont Currie}
+#+LATEX_HEADER: \lhead{}
+#+LATEX_HEADER: \rhead{}
+#+LATEX_HEADER: \lfoot{TENANT Initials: }
+#+LATEX_HEADER: \rfoot{LANDLORD Initials: }
+* Lease Agreement
+This property rental agreement (hereinafter "AGREEMENT") is entered
+into on {{{start-date}}} by and between:
+
+The Landlord: Francis and Jenny Chan, Trustees and building owners,
+hereinafter "LANDLORD"
+
+and Tenant, {{{tenant-name}}}, hereinafter "TENANT"
+
+in regards to the premises 115 N. Merritt Mill Road, Unit {{{unit}}},
+Chapel Hill 27516, hereinafter "PREMISES."
+
+LANDLORD desires to lease the premises to TENANT upon the terms and
+conditions as contained herein; and TENANT desires to lease the
+PREMISES from LANDLORD on the terms and conditions contained herein.
+The LANDLORD and TENANT do hereby agree to abide by the terms set out
+in this AGREEMENT.
+
+** Term
+LANDLORD leases to TENANT and TENANT lease from LANDLORD the above
+described PREMISES for a term of one (1) year, beginning on
+{{{start-date}}} and ending at twelve o'clock (12:00) midnight on
+{{{end-date}}}.  TENANT agrees to provide LANDLORD with thirty (30)
+days WRITTEN NOTICE to vacate PREMISES in order to leave in good
+standing with LANDLORD.
+
+** Rent
+Monthly rent amount of six-hundred eighty-five dollars ($685.00) is due
+and payable on the first (1st) day of each month.  Payments are to be
+delivered to the mailbox adjacent to Unit 104 and should be made in
+full by personal check or money order.  There will be a $35 change on
+all returned checks.  Exceptions to the above may be made by LANDLORD
+for infrequent emergencies, but only if a personal request is made
+before the first day of the month by TENANT.
+
+** Late Charges
+In the event that rent is not received by the fifth (5th) day of the
+month by 5:30pm, a late charge of thirty-five dollars ($35.00) will be
+added to the rent amount due.
+
+** Security Deposit
+Upon the due execution of this AGREEMENT, TENANT shall deposit with
+LANDLORD the sum of six-hundred eighty-five dollars ($685) receipt of
+which is hereby acknowledged by LANDLORD, as security for all damage
+caused to PREMISES during term hereof. Such deposit shall be returned
+to TENANT without interest and less any fees for damages to PREMISES
+after TENANT vacates PREMISES.  UNDER NO CIRCUMSTANCES WILL TENANT BE
+ALLOWED TO USE SECURITY DEPOSIT AS A RENT PAYMENT.
+** Default
+If TENANT fails to comply with any of the material provisions of this
+AGREEMENT, other than the covenant to pay rent, or of any present
+rules and regulations or any that may be hereafter prescribed by
+LANDLORD, or materially fails to comply with any duties imposed on
+TENANT by statue, within seven (7) days thereafter, LANDLORD may, at
+LANDLORD's option, declare the entire balance of rent payable
+hereunder to be immediately due and payable and may exercise any and
+all rights and remedies available to LANDLORD at law or in equity or
+may immediately terminate this AGREEMENT.
+
+** Use of PREMISES
+The PREMISES shall be used and occupied by TENANT exclusively, as a
+private single-person dwelling.  Subletting or subleasing is not
+permitted under any circumstances.
+
+** Conditions of PREMISES
+TENANT stipulates, represents and warrants that TENANT has examined
+the PREMISES and that they are at the time of this AGREEMENT in good
+order, repair, and in a safe, clean habitable condition.
+
+** Insurance
+TENANT acknowledges that LANDLORD's insurance does not cover personal
+property damage caused by fire, theft, rain, war, acts of God, acts of
+others, and/or any other causes, nor shall LANDLORD be held liable for
+such loses.  TENANT is hereby advised to obtain their own insurance
+policy to cover personal losses.
+
+** Alterations
+TENANT shall not paint, wallpaper, alter or redecorate, change or
+install locks, install antenna or other equipment, or use screws or
+large nails on or in the PREMISES.
+
+** Hazardous Materials
+TENANT shall not keep on PREMISES any item of a dangerous, flammable,
+ore explosive character that might unreasonably increase the danger of
+fire or explosion on the PREMISES or that might be considered
+hazardous or extra hazardous by any responsible insurance company.
+
+** Utilities
+TENANT shall be responsible for paying electric service to Duke Energy
+(1-800-777-9898).  LANDLORD provides water and trash service.  TENANT
+is encouraged to use water sparingly, and is not allowed to wash any
+vehicle on the PREMISES.  TENANT is encouraged to make use of provided
+recycling bins.  Absolutely no corrugated board is allowed in
+dumpster.
+
+** Liquid-Filled Furnishings
+No liquid-filled furniture or receptacle containing more than 10 gallons
+of liquid is permitted on the PREMISES at any time.
+
+** Pets
+No animal, fowl, and/or pet of any kind shall be kept on or about the
+PREMISES, for any amount of time.
+
+** Locked Apartment
+There will be a charge of twenty-five dollars ($25) to unlock any
+apartment after normal business hours.
+
+** Parking
+TENANT is allowed one (1) parking space on the PREMISES for personal
+vehicle.  Guests are invited to park in the free municipal lot located
+across W. Rosemary Street.
+
+** Maintenance and Repair Rules
+TENANT will keep and maintain the PREMISES in good and sanitary
+condition and repair during the term of this AGREEMENT and any renewal
+thereof.  Without limiting the generality of the foregoing, TENANT
+shall:
+
+1) Not obstruct the driveways, sidewalks, courts, entryways, stairs
+   and/or halls, which shall be used for the purpose of ingress and
+   egress only.
+2) Not perform any vehicle maintenance on PREMISES.
+3) Not store/abandon any vehicle not in running/driving condition.
+4) Keep all windows, mirrors, window coverings, doors, locks, and
+   hardware in good clean order and repair.
+5) Not leave windows or doors in an open position during inclement weather.
+6) Not hang any laundry, clothing, sheets, etc., from any window,
+   rails, porch or balcony nor air or dry any of the same within any
+   yard area or space.
+7) Not cover or block the air condition and heating vents with
+   furniture or drapes.
+8) Keep all lavatories, sinks, drains, toilets, and all other water
+   and plumbing apparatus in good order and repair and shall use the
+   same only for the purposes for which they were constructed.  TENANT
+   shall not allow any sweepings, rubbish, sand, rags, ashes or other
+   substances to be thrown or deposited therein.  Any damage to any
+   such apparatus and the cost of clearing and repairing any plumbing
+   resulting from misuse shall be borne by TENANT.
+9) TENANT and family and guests shall at all times maintain order in
+   the PREMISES and at all places on the PREMISES, and shall not make
+   or permit any loud or improper noise, or otherwise disturb other
+   residents.
+10) Not engage in any illegal activities on the PREMISES.
+11) Keep all radios, televisions, stereos, etc., at a level of sound
+    that does not disturb or interfere with other residents,
+    especially between the hours of 10:00pm and 7:00am.
+
+** Destruction of Premises
+If the PREMISES become totally or partially destroyed and
+uninhabitable during the term of this AGREEMENT so that TENANT's use
+is seriously impaired, LANDLORD or TENANT may terminate this AGREEMENT
+immediately upon three (3) days WRITTEN NOTICE to the other.
+
+** Inspection of Premises
+LANDLORD and building manager shall have the right at all reasonable
+times during the term of this AGREEMENT and any renewal thereof to
+enter the PREMISES for the purpose of making repairs, additions or
+alterations as may be deemed appropriate by LANDLORD for the
+preservation of the PREMISES or building.
+
+** Lease Expiration
+If TENANT remains in possession of the PREMISES with the consent of
+the LANDLORD after the natural expiration of this AGREEMENT, a new
+tenancy from month-to-month shall be created between LANDLORD and
+TENANT which shall be subject to all of the terms and conditions of
+this AGREEMENT, except that such tenancy shall be terminated upon
+thirty (30) days written notice served by either party.
+
+** Surrender of Premises
+Upon the expiration of the term hereof, TENANT shall surrender the
+PREMISES in as good a state and condition as they were at the
+commencement of this AGREEMENT, with the exception of reasonable use
+and wear and tear thereof and damages by the elements.
+
+** Indemnification
+LANDLORD shall not be liable for any damage or injury of or to the
+TENANT, TENANT's family, guests, invitees, agents or employees or to
+any person entering the PREMISES or the building of which the PREMISES
+are a part; and TENANT hereby agrees to indemnify, defend, and hold
+LANDLORD harmless from any and all claims or assertions of every kind
+and nature.
+
+** Eviction for Objectionable Conduct
+If TENANT violates any other terms or conditions of this AGREEMENT or
+fails to perform any other promise, duty or obligation herein agreed
+to by the TENANT or imposed upon the TENANT by law, then in any of
+such events and as often as any of them may occur, the LANDLORD, in
+addition to all other rights and remedies provided by law, may with or
+without notice to the TENANT, either terminate this AGREEMENT or
+terminate the TENANT"s right to possession of the PREMISES without
+terminating the AGREEMENT.
+
+** Partial Invalidity
+Nothing contained in this AGREEMENT shall be construed as waiving any
+of the LANDLORD's or TENANT's rights under the law.  If any of this
+AGREEMENT shall be in conflict with the law, that part shall be void
+to the extent that it is in conflict, but shall not invalidate this
+AGREEMENT or affect the validity of or ability to enforce any other
+provisions of this AGREEMENT.
+
+** Abandonment
+If at any time during the term of this AGREEMENT the TENANT abandons
+the PREMISES or any part thereof, LANDLORD may, at LANDLORD's option,
+obtain possession of the PREMISES in the manner provided by law, and
+without becoming liable to the TENANT for damages or any payment of any
+kind whatsoever.  LANDLORD may, at LANDLORD's discretion, as agent for
+TENANT, re-let the PREMISES or any part thereof, for the whole or ay
+part of the unexpired term, and may receive and collect all rent
+payable by virtue of such a reletting.  If LANDLORD's right of reentry
+is exercised following abandonment of the PREMISES by TENANT, then
+LANDLORD shall consider any personal property belonging to TENANT and
+left on the PREMISES to also have been abandoned, in which case
+LANDLORD may dispose of all personal property in any manner LANDLORD
+shall deem proper and LANDLORD is hereby relieved of all liability for
+doing so.
+
+** Attorney Fees
+Should it become necessary to employ an attorney to enforce any of the
+conditions or covenants hereof, including the collection of rentals
+and gaining possession of the PREMISES, TENANT agrees to pay all
+expenses so incurred, including reasonable attorney's fees.
+
+** Report to Credit/Tenant Agencies
+TENANT is hereby notified that a nonpayment, late payment, or breach
+of any of the terms of this AGREEMENT may be submitted/reported to a
+credit and/or tenant reporting agency, and may create a negative
+credit record.
+
+** Entire Agreement
+This AGREEMENT constitutes the entire AGREEMENT between LANDLORD and
+TENANT.  No oral agreements have been entered into, and all
+modifications or notices shall be in writing to be valid.
+** Signatures
+*** LANDLORD
+Signature: \rule{8cm}{0.5pt}
+{{{nl}}}{{{nl}}}
+Print: \rule{8cm}{0.5pt}
+{{{nl}}}{{{nl}}}
+Date: \rule{8cm}{0.5pt}
+*** TENANT
+Signature: \rule{8cm}{0.5pt}
+{{{nl}}}{{{nl}}}
+Print: \rule{8cm}{0.5pt}
+{{{nl}}}{{{nl}}}
+Date: \rule{8cm}{0.5pt}

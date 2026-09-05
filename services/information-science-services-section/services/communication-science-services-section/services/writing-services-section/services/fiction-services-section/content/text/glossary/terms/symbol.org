@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       812664d3-b7aa-421b-91df-db0d3f461ad7
+:END:
+#+title: symbol
+#+date: [2025-08-29 Fri 19:31]
+

@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+repo_root="$(git rev-parse --show-toplevel 2>/dev/null || true)"
+if [[ -z "${repo_root}" ]]; then
+  exit 0
+fi
+cd "${repo_root}"
+
+has_cmd() { command -v "$1" >/dev/null 2>&1; }
+
+if [[ -f "pyproject.toml" ]] && has_cmd pytest; then
+  echo "hook: pytest -q"
+  pytest -q
+fi
+
+if [[ -f "Cargo.toml" ]] && has_cmd cargo; then
+  echo "hook: cargo test"
+  cargo test
+fi
+
+if [[ -f "mkdocs.yml" ]] && has_cmd mkdocs; then
+  echo "hook: mkdocs build --strict"
+  mkdocs build --strict
+fi
+

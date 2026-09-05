@@ -1,0 +1,25 @@
+#+title: kyritus redistribution
+#+begin_head
+#+ghe_schema: term-0.1.3
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-26 Sat 12:11]
+#+roam_tags: term
+#+end_head
+
+#+name: definition
+*/[[file:kyritus_redistribution.org][Kyritus redistribution]]/* is a [[file:decolonization.org][decolonial]] action where one secures [[file:kyritus.org][waste and excess from settler-colonialism]] and [[file:gift.org][gifts]] it outside of the [[file:contemporary_kyriarchy.org][contemporary settler-colonial kyriarchy]].
+#+toc: headlines 2
+* Introduction
+* kyritus redistribution
+* Supplements
+** Record history
+   :PROPERTIES:
+   :CUSTOM_ID: record-history
+   :END:
+   :LOGBOOK:
+   - Note taken on [2020-12-26 Sat 12:11] \\
+      Created from [[file:~/org/s/p/cottenboro_gaz.org::definition][definition]]
+
+      
+   :END:

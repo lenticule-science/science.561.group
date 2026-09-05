@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       3b564925-5102-424c-8e05-b5bf5e0b2804
+:form:     [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]
+:public:   true
+:END:
+#+title: Babble, [2025-08-25 Mon 00:49]
+#+date: [2025-08-25 Mon 00:49]
+#+author: emsenn
+
+Now that I have started developing [[id:3ffa600c-f831-428f-bd11-a4e6583ff5ad][my files]], it is easy to get overwhelmed by the many directions I can go. An idea I've just had is that it would be good for me to be able to put a [[id:5c6b9992-b44e-46f7-9f5d-4c54ceca240b][disclaimer]] before certain types of [[id:80ecba92-ca84-4b32-99ae-44d446b24350][text]], for example making sure that [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babbles]] disclose that they're, well, babble-y, or that any essay that's more than a couple years old has a good chance of being wrong.
+
+I could see, over time, even doing cool math on that sort of stuff: weighting old essays in catalogs by their age and how often they've been cited, for example.
+
+But the work before me at this mmoment is where to record these sorts of ideas. Having the entirety of my files read by [[id:49e095c4-9ab8-49df-8eda-5d071dc07590][Org-agenda]] would be useful, but I suspect it would be too slow... though, [[id:b59c6255-b760-4a18-9ee2-f548c2e9c11a][my laptop]] is pretty powerful, at least compared to systems I used in the past, so maybe that isn't an impossible setup.
+
+More realistically is setting up certain [[id:bc7c9861-6f01-4f8e-ac8f-feb6c9cc0706][nodes]] as projects, or task lists, or something, and recording tasks in those. IN this case, it'd probably be best to track these [[id:c6b3ca98-2261-4ff1-b0e6-963f28693999][tasks]] in the file for [[id:cc253409-9a82-4c5d-a4cd-8013f4e350c6][my website]]'s source code.

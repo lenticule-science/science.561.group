@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       b561596f-5d2b-4cd8-b9d5-9383eedc189f
+:END:
+#+title: Rusty Reno
+#+date: [2025-08-31 Sun 08:28]
+

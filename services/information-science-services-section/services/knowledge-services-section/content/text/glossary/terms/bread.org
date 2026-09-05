@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       e39aa64b-046b-482e-a4ec-348d4092ff04
+:END:
+#+title: bread
+#+date: [2025-08-26 Tue 08:28]
+

@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       e708b5d5-1b3e-42bc-8cfa-8935c47dc597
+:NODE-RELATIONS: (([[id:5a4f8d4e-763d-4b97-b21d-6cba947315a7][personal identity]] . [[id:e6b235fb-9804-4408-b1a5-ad27628dd327][progressivism]]))
+:END:
+#+title: progressive identity
+#+date: [2025-09-28 Sun 09:11]
+

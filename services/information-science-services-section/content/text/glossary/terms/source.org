@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       0c3f40ba-ed8c-4e57-89e9-fb94b649c9f3
+:END:
+#+title: source
+#+date [2025-07-31 Thu 23:20]
+

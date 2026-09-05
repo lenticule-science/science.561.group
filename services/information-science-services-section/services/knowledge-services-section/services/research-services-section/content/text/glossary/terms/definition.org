@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       e5713ab3-f9b9-45da-99bb-8a9b67891ca6
+:END:
+#+title: definition
+#+date: [2025-08-28 Thu 13:49]
+

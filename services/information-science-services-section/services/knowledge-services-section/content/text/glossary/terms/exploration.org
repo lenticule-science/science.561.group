@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       d8639c93-01ce-4a07-882f-b987e5532137
+:END:
+#+title: exploration
+#+date: [2025-09-01 Mon 10:29]
+

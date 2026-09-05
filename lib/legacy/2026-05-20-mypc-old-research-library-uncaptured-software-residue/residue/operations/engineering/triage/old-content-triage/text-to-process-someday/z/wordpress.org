@@ -1,0 +1,12 @@
+#+title: Wordpress
+#+begin_head
+#+ghe_schema: record-0.1.1
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-22 Tue 10:42]
+#+roam_tags: term
+#+end_head
+#+name: wordpress-definition-text
+#+begin_quote
+*/Wordpress/* is a [[file:software.org][software]] for [[file:web_performance.org][performing on the Web]].
+#+end_quote

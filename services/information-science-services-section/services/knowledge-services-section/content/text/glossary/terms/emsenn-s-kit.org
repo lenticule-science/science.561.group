@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       45616196-9d21-47e9-8434-b73539c85cc8
+:ROAM_ALIASES: "my kit"
+:END:
+#+title: emsenn's Kit
+
+This [[id:48b7a343-963c-4f8f-b4c1-dae02e35d792][personal project]] represents my [[id:55c615dc-6333-4d17-8a1e-2700fe1f30f3][kit]], the stuff I use to make my way in life.

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       4c768b5a-be58-482a-ba0f-ee701996c3e7
+:END:
+#+title: William Shakespeare
+#+date: [2025-08-25 Mon 08:42]
+

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       b9c743ff-1514-4437-a8bf-70701cd40b1c
+:END:
+#+title: Org-mode clocking
+#+date: [2025-09-19 Fri 21:02]
+

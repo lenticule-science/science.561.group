@@ -1,0 +1,9 @@
+{
+  "id": "spectrum_map",
+  "act": "SpectrumMap",
+  "module": "relationality.realizers.spectrum_map",
+  "callable": "realize_spectrum_map",
+  "input_kind": "PhaseSpace",
+  "output_kind": "SpectralGeometry",
+  "description": "Compute spectral geometry placeholder from PhaseSpace carrier."
+}

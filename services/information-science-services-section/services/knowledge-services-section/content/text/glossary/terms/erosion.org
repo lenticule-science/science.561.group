@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       862a8422-e45f-43ad-9fd0-134ee4049515
+:END:
+#+title: erosion
+#+date: [2025-09-03 Wed 20:55]
+

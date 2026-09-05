@@ -1,0 +1,22 @@
+#+title: economics
+#+begin_head
+#+ghe_schema: record-0.1.3
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-24 Thu 11:37]
+#+roam_alias: "economic"
+#+roam_tags: term
+#+end_head
+
+#+name: definition
+*/Economics/* is the [[file:study.org][study]] of [[file:markets.org][markets]].
+
+#toc: headlines 2
+* Intrododuction
+* economic
+* Supplements
+** Record history
+   :LOGBOOK:
+   - Note taken on [2020-12-24 Thu 11:37] \\
+     Created
+   :END:

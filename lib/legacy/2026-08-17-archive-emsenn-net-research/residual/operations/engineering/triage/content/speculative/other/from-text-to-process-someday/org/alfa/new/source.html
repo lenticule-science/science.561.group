@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2019-06-18 Tue 21:59 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Found a Cool <i>Elisp</i> Declaration</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="emsenn" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Found a Cool <i>Elisp</i> Declaration</h1>
+<p>
+While looking up how I prettify my <i>Org-mode checkboxes</i>, I found that <i>Emacs</i>, since version 24.4, comes with a bultin <code>prettify-symbols-mode</code>. It swaps out text with a <i>Unicode</i> symbol. This led me to a post <a href="http://www.modernemacs.com/post/prettify-mode/">"Mathematical Notation in Emacs",</a> which is convenient for me: I want to learn to read maths.
+</p>
+
+<p>
+I'm not going to rewrite its explanation of its code blocks, but reproduce them here for my own use. The first enables the <code>pretty-mode</code> package and turns off some parts of it, to make room for features that will be enabled by later code blocks.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-elisp">(<span style="color: #656565;">require</span> '<span style="color: #696969;">pretty-mode</span>)
+(global-pretty-mode t)
+
+(pretty-deactivate-groups
+ '(<span style="color: #606060;">:equality</span> <span style="color: #606060;">:ordering</span> <span style="color: #606060;">:ordering-double</span> <span style="color: #606060;">:ordering-triple</span>
+             <span style="color: #606060;">:arrows</span> <span style="color: #606060;">:arrows-twoheaded</span> <span style="color: #606060;">:punctuation</span>
+             <span style="color: #606060;">:logic</span> <span style="color: #606060;">:sets</span>))
+
+(pretty-activate-groups
+ '(<span style="color: #606060;">:sub-and-superscripts</span> <span style="color: #606060;">:greek</span> <span style="color: #606060;">:arithmetic-nary</span>))
+</pre>
+</div>
+
+<p>
+Let me see if I can't figure out how to write that as a <code>use-package</code> declaration, and since I'm not setting up the litagure stuff right now, I'll leave all the stuff on.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-elisp" id="org69d8a27">(<span style="color: #656565;">use-package</span> <span style="color: #696969;">pretty-mode</span>
+  <span style="color: #606060;">:ensure</span> pretty-mode
+  <span style="color: #606060;">:config</span>
+  (<span style="color: #656565;">progn</span>
+    (global-pretty-mode t)
+    (global-prettify-symbols-mode 1)
+    (pretty-activate-groups
+     '(<span style="color: #606060;">:sub-and-superscripts</span> <span style="color: #606060;">:greek</span> <span style="color: #606060;">:arithmetic-nary</span>))))
+</pre>
+</div>
+
+<p>
+That seems to work! (And now gets appended to my <i>Emacs configuration</i>.
+</p>
+
+<p>
+The article also has another quote introducing some <i>Emacs commands</i> I didn't know about:
+</p>
+
+<blockquote>
+<p>
+The command <code>insert-char</code>, <code>C-x 8 RET</code> prompts for Unicode characters by name and inserts at point. There is also <code>describe-char</code>, <code>M-m h d c</code> which gives information on the character at point. Use in conjunction with eg. <a href="https://en.wikipedia.org/wiki/Mathematical_operators_and_symbols_in_Unicode">"Math Unicode Symbols List"</a> to explore your options.
+</p>
+</blockquote>
+
+<p>
+Nifty! Looking elsewhere, it looks like the only thing that is prettified in lisp dialects is the lambda symbol, and it suggests things can be added like this:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-elisp">(add-hook 'emacs-lisp-mode-hook
+            (<span style="color: #656565;">lambda</span> ()
+              (<span style="color: #656565;">push</span> '(<span style="color: #595959;">"&gt;="</span> . ?&#8805;) prettify-symbols-alist)))
+</pre>
+</div>
+
+<p>
+Which, testing out, works just fine. I wouldn't mind mentions if the whole greek alphabet got replaced, and in Org-mode too - though there I'd do it with a prefix of <code>\</code> since that's the LaTeX for it. I encounter a problem here, though: I don't actually understand the syntax above, so I don't know how I'd change it to add multiple things to the <code>prettify-symbols-alist</code>.
+</p>
+
+<p>
+I guess what I need to know is what's a &lambda; expression in <i>Emacs</i>, and what's the <code>push</code> function takes and returns.
+</p>
+
+<p>
+I was reading about &lambda; calculus on <i>Wikipedia</i> recently, so the <i>Elisp Reference Manual's</i> brief explanation of what &lambda; expressions might make sense. It says they're "anonymous functions," but are more commonly associated with symbols to make a named function. A &lambda; expression - contained within <code>()</code>, always starts with the <code>lambda</code> symbol, then takes a list of argument variables, called the "&lambda; list." There can be a documentation string, an interactive declaration, and then the body - very similar to a normal function declaration, except with <code>lambda</code> instead of <code>defun function-name</code>.
+</p>
+
+<p>
+<code>push</code> I looked up with <code>C-h f push ENT</code>, it adds its first argument to the list stored at its second argument, so <code>(push "apple" '("orange" "banana" "berry"))</code>... gets me an error about "orange" not being a function. <code>'("orange" "banana" "berry")</code> is a valid list declaration, so why does <code>push</code> fail?...
+</p>
+
+<div class="org-src-container">
+<pre class="src src-elisp">(<span style="color: #656565;">setq</span> fruits '(<span style="color: #595959;">"orange"</span> <span style="color: #595959;">"banana"</span> <span style="color: #595959;">"berry"</span>))
+(<span style="color: #656565;">push</span> '<span style="color: #595959;">"apple"</span> fruits)
+</pre>
+</div>
+
+<p>
+Okay - I'm messing - oh! I was messing up declaring the list. Let's combine two things, maybe?
+</p>
+
+<div class="org-src-container">
+<pre class="src src-elisp">(<span style="color: #656565;">push</span> '<span style="color: #595959;">"apple"</span> (<span style="color: #656565;">lambda</span> () '(<span style="color: #595959;">"orange"</span> <span style="color: #595959;">"banana"</span> <span style="color: #595959;">"berry"</span>)))
+</pre>
+</div>
+
+<p>
+That gets me this error message, that I have a real hard time reading: <code>let*: Symbol’s function definition is void: \(setf\ function\)</code>.
+</p>
+
+<p>
+I think that's still telling me "this second argument isn't a function," which seems to contra- oh! One more try:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-elisp">(<span style="color: #656565;">push</span> '<span style="color: #595959;">"apple"</span> '(lambda () '(<span style="color: #595959;">"orange"</span> <span style="color: #595959;">"banana"</span> <span style="color: #595959;">"berry"</span>)))
+</pre>
+</div>
+
+<p>
+Nope - I added a <code>'</code> before the &lambda; expression, but get a similar error. Is <code>lambda</code> perhaps an <i>Elisp macro</i> for <code>(setf function)</code>, or similar?
+</p>
+
+<p>
+Either way, I don't need to figure out the more compact syntax right now: I'm still looking to add all the greek letters at once to the Org- and Elisp- modes of <code>prettify-symbols</code>. Lets play with some fake code. And actually, I'm going to try this <code>let</code> thing I've heard of.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-elisp">(<span style="color: #656565;">let</span> ((alpha '(<span style="color: #595959;">"oh..."</span> . <span style="color: #595959;">"it rendered as a greek character"</span>))))
+</pre>
+</div>
+
+<p>
+So I guess no further configuration needed for that. I guess the example of <code>&gt;=</code> to <code>≥</code> is still relevant, though, so I can chug on with this.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-elisp">(<span style="color: #656565;">let</span> ((alpha '(1 2 3))
+      (beta '(4 5 6)))
+  (<span style="color: #656565;">dolist</span> (gamma beta)
+    (<span style="color: #656565;">push</span> gamma alpha))
+  alpha)
+</pre>
+</div>
+
+<p>
+This gives me a list of <code>(6 5 4 1 2 3)</code>, which shows that push puts things at the start of a list. That's not relevant to my goals, but does give me a hypothetical syntax for my need:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-elisp" id="org4ce2f22">(add-hook 'emacs-lisp-mode-hook
+          (<span style="color: #656565;">lambda</span> ()
+            (<span style="color: #656565;">let</span> ((replacements
+                   '((<span style="color: #595959;">"&gt;="</span> . ?&#8805;))))
+              (<span style="color: #656565;">dolist</span> (alpha replacements)
+                (<span style="color: #656565;">push</span> alpha prettify-symbols-alist)))))
+</pre>
+</div>
+
+<p>
+And now if I put <code>&gt;=</code> in an <i>Elisp</i> source block, it should become the litagure. (That's the name for two characters combined like this.)
+</p>
+
+<div class="org-src-container">
+<pre class="src src-elisp">&gt;=
+</pre>
+</div>
+
+<p>
+(This is a rendering thing, so any readers of an export will likely not see anything functional.)
+</p>
+
+<p>
+Okay, so I think now I have two source blocks I want to add to my <i>Emacs configuration</i>:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-elisp">(<span style="color: #656565;">use-package</span> <span style="color: #696969;">pretty-mode</span>
+  <span style="color: #606060;">:ensure</span> pretty-mode
+  <span style="color: #606060;">:config</span>
+  (<span style="color: #656565;">progn</span>
+    (global-pretty-mode t)
+    (global-prettify-symbols-mode 1)
+    (pretty-activate-groups
+     '(<span style="color: #606060;">:sub-and-superscripts</span> <span style="color: #606060;">:greek</span> <span style="color: #606060;">:arithmetic-nary</span>))))
+(add-hook 'emacs-lisp-mode-hook
+          (<span style="color: #656565;">lambda</span> ()
+            (<span style="color: #656565;">let</span> ((replacements
+                   '((<span style="color: #595959;">"&gt;="</span> . ?&#8805;))))
+              (<span style="color: #656565;">dolist</span> (alpha replacements)
+                (<span style="color: #656565;">push</span> alpha prettify-symbols-alist)))))
+</pre>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: emsenn</p>
+<p class="date">Created: 2019-06-18 Tue 21:59</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,1313 @@
+#+title: emsenn's emacsen
+* Configuration
+  :PROPERTIES:
+  :header-args: :noweb yes
+  :END:
+** Email
+
+   #+name: emacsen-setq-user-mail-address-elisp
+   #+caption: Set the =user-mail-address= variable.
+   #+begin_src elisp
+     (setq user-mail-address "emsenn@emsenn.net")
+   #+end_src
+** Save configuration
+   #+name: emacsen-save-configuration-elisp
+   #+begin_src elisp
+    (setq make-backup-files nil)
+#+end_src
+** Startup configuration
+   #+name: emacsen-startup-configuration-elisp
+   #+begin_src elisp
+     (setq inhibit-startup-message t)
+     (setq visible-bell 1)
+     (setq inhibit-startup-screen t)
+     (add-to-list 'exec-path "~/bin")
+
+   #+end_src
+** Scratch configuration
+   #+name: emacsen-scratch-configuration-elisp
+#+begin_src elisp
+    (setq initial-scratch-message ";; Groundhog Emacs has some bugs\n;; Press C-x C-e after the following lines to fix them\n(ivy-mode)\n")
+
+#+end_src
+** Interface configuration
+   #+name: emacsen-interface-configuration-elisp
+   #+begin_src elisp
+     (menu-bar-mode -1)
+     (tool-bar-mode -1)
+     (show-paren-mode 1)
+     (setq line-number-mode t)
+     (setq column-number-mode t)
+     (setq-default truncate-lines t)
+     (setq-default line-spacing 1)
+     (setq sentence-end-double-space nil)
+     (global-visual-line-mode t)
+   #+end_src
+** Basic behavior configuration
+   #+name: emacsen-basic-behavior-configuration-elisp
+   #+begin_src elisp
+      (setq echo-keystrokes 0.1)
+      (setq fill-column 68)
+      (setq mouse-wheel-scroll-amount '(1 ((shift) .1)))
+   #+end_src
+** Org-mode configuration
+   #+name: emacsen-org-mode-configuration-elisp
+   #+begin_src elisp
+     (setq org-directory "~/org")
+     (setq org-startup-folded 'fold)
+     (setq org-hide-block-startup 'hideblocks)
+     (setq org-catch-invisible-edits 'show-and-error)
+     (setq org-agenda-files (list "~/org"))
+     (setq org-export-with-section-numbers nil)
+     (setq org-export-with-smart-quotes nil)
+     (setq org-export-with-toc nil)
+     (setq org-html-htmlize-output-type 'nil)
+     (setq org-html-validation-link nil)
+     (setq org-log-done 'time)
+     (setq org-log-into-drawer 'LOGBOOK)
+     (setq org-image-actual-width '(400))
+   #+end_src
+** Org-mode capture templates
+   #+toc: headlines 1 local
+*** Source block (s)
+    #+name: emacsen-org-mode-source-block-capture-template-elisp
+    #+begin_src elisp
+      ("s" "Capture source code block")
+    #+end_src
+**** Elisp source block (se)
+     #+name: emacsen-org-mode-elisp-source-block-capture-template-elisp
+     #+begin_src elisp
+       ("se" "Elisp code block"
+		    plain (clock)
+		    ,(concat "#+name: %^{NAME}-elisp\n"
+			     "#+caption: %^{CAPTION}\n"
+			   "#+begin_src elisp %^{HEADER-ARGS}\n"
+			   "%?\n"
+			   "#+end_src\n"))
+     #+end_src
+*** Ledger entries (l)
+    #+name: emacsen-org-mode-ledger-entries-capture-templates-elisp
+    #+begin_src elisp
+	    ("l" "Record new ledger entry")
+	    ("lr" "Record new revenue entry")
+	    ("lri" "Record new investment revenue")
+	    ("lrib" "Record new blockchain investment revenue")
+	    ("lribs" "Record new blockchain staking revenue")
+	    ("lribsa" "Record claim of Algorand staking reward"
+	     plain (file "~/org/ledger.beancount")
+	     ,(concat "%^{DATE} * \"Algorand\" "
+		      "\"Claim Algorand staking rewards\"\n"
+		      "  Revenue:Investment:Blockchain:Staking:Algorand"
+		      "    -%\\2 ALGO {%\\3 USD}\n"
+		      "  Assets:Blockchain:Algorand:Exodus"
+		      "    %^{AMOUNT} ALGO {%^{BASIS} USD}\n"))
+	    ("lribm" "Record new blockchain mining revenue")
+	    ("lribmb" "Record Banano folding reward"
+	     plain (file "~/org/ledger.beancount")
+	     ,(concat "%^{DATE} * \"BananoMiner\" "
+		      "\"Receive BananoMiner F@H reward\"\n"
+		      "  Revenue:Investment:Crypto:Mining:Banano"
+		      "    -%\\2 BANANO {%\\3 USD}\n"
+		      "  Assets:Blockchain:Banano:Vault"
+		      "    %^{AMOUNT} BANANO {%^{BASIS} USD}\n"))
+	    ("lrl" "Record new labor revenue")
+	    ("lrlb" "Record new blockchain labor revenue")
+	    ("lrlbh" "Record new Hive blockchain labor revenue")
+	    ("lrlbhm" "Record new Hive memo revenue"
+	     plain (file "~/org/ledger.beancount")
+	     ,(concat "%^{DATE} * \"%^{PAYEE}\" \"Receive Hive memo about %^{NARRATION}\"\n"
+		      "  Revenue:Labor:Blockchain:Hive:Memo"
+		      "    -0.001 HIVE {%^{BASIS} USD}\n"
+		      "  Assets:Blockchain:Hive:Wallet:HIVE"
+		      "     0.001 HIVE {%\\4 USD}\n"))
+	    ("lrlbhc" "Record new Hive curation revenue"
+	     plain (file "~/org/ledger.beancount")
+	     ,(concat "%^{DATE} * \"Hive\" \"Claim Hive curation reward(s).\"\n"
+		      "  Revenue:Labor:Blockchain:Hive:Rewards:Curation"
+		      "    -%^{AMOUNT} HP {%^{BASIS} USD}\n"
+		      "  Assets:Blockchain:Hive:Wallet:HP"
+		      "     %\\2 {%\\3 USD}\n"))
+	    ("le" "Record new expense ledger entry")
+	    ("leg" "Record new gaming expense")
+	    ("legc" "Record new computer gaming expense")
+	    ("legcb" "Record new blockchain computer gaming expense")
+	    ("legcbh" "Ledger, expense, gaming, computer, blockchain, Hive")
+	    ("legcbhd" "DCity")
+	    ("legcbhdc" "Get DCity cards")
+	    ("legcbhdcb" "Buy DCity Cards")
+	    ("legcbhdcbh" "Buy DCity Cards with Hive"
+	     plain (file "~/org/ledger.beancount")
+	     ,(concat "%^{DATE} * \"Buy DCity Cards for %^{HIVE-COST} HIVE\"\n"
+		      "  Assets:Blockchain:Hive:Wallet:HIVE   "
+		      "    -%\\2 HIVE {}\n"
+		      "  Assets:Blockchain:Hive:Games:DCity:Cards   "
+		      "    1 NFT-HIVE-DCITY-%?EDITION-NAME {}\n"
+		      "  Expenses:Gaming:Computer:Blockchain:Hive:DCity\n"))
+	    ("legcbhdcm" "Mint DCity Cards")
+	    ("lt" "Record new transfer entry")
+	    ("ltb" "Record new blockchain transfer entry")
+	    ("ltbh" "Record new Hive blockchain transfer entry")
+	    ("ltbhp" "Record new Hive power-transfer entry")
+	    ("ltbhpu" "Record new Hive powerup blockchain transfer entry"
+	     plain (file "~/org/ledger.beancount")
+	     ,(concat "%^{DATE} * \"Powerup %^{AMOUNT} Hive\"\n"
+		      "  Assets:Blockchain:Hive:Wallet:HIVE   "
+		      "    -%\\2 HIVE {}\n"
+		      "  Assets:Blockchain:Hive:Wallet:HP   "
+		      "     %\\2 HP {%^{BASIS} USD}\n"))
+	    ("lte" "Ledger, Transfer, Exchange")
+	    ("lteh" "Ledger, transfer, exchange, Hive-engine")
+	    ("ltehw" "Ledger, transfer, exchange, Hive-Engine, withdrawal")
+	    ("ltehwh" "Ledger, transfer, exchange, Hive-Engine, withdrawal, HIVE"
+	     plain (file "~/org/ledger.beancount")
+	     ,(concat "%^{DATE} * \"Withdraw %^{WITHDRAWAL-AMOUNT} SWAP.HIVE from Hive-Engine\"\n"
+		      "  Assets:Blockchain:Hive:Engine:SWAPHIVE"
+		      "   -%\\2 SWAPHIVE {}\n"
+		      "  Expenses:Finance:Blockchain:Exchange:Hive-Engine:Withdrawal  "
+		      "   %^{FEE-AMOUNT} SWAPHIVE {%^{BASIS} USD}\n"
+		      "  Assets:Blockchain:Hive:Wallet:HIVE   "
+		      "   %^{DEPOSIT-AMOUNT} HIVE {%\\4 USD}\n"))
+    #+end_src
+** Org-mode projects
+
+   #+toc: headlines 1 local
+*** Records catalog project
+    #+name: emacsen-org-mode-records-catalog-project-elisp
+    #+begin_src elisp
+      ("records" :components ("all-records" "com-rss" "term-records" "comment-records" "reference-records" "daily-records"))
+    #+end_src
+*** All records project
+    #+name: emacsen-org-mode-all-records-project-elisp
+    #+begin_src elisp
+      ("all-records"
+       :base-extension "org"
+       :publishing-function org-html-publish-to-html
+       :html-doctype "html5"
+       :html-html5-fancy t
+       :html-container "section"
+       :headline-levels 6
+       :recursive t
+       :html-divs ((preamble "section" "preamble")
+		  (content "main" "content")
+		  (postamble "section" "postamble"))
+       :publishing-function org-html-publish-to-html
+       :html-format-drawer-function emacsen-org-html-format-drawer
+       :html-head-include-scripts nil
+       :html-head-include-default-style nil
+       :html-head ,emacsen-org-html-head
+       :exclude ,(regexp-opt '("README.org" "PRIVATE"))
+       :with-footnotes t
+       :with-toc nil
+       :with-drawers t
+       :base-directory "~/org/s/"
+       :publishing-directory "~/org/p"
+       :makeindex t
+       :html-preamble ,emacsen-org-html-base-preamble)
+    #+end_src
+*** Term records project
+    #+name: emacsen-org-mode-term-records-project-elisp
+    #+begin_src elisp
+      ("term-records"
+       :base-extension "org"
+       :publishing-function org-html-publish-to-html
+       :html-doctype "html5"
+       :html-html5-fancy t
+       :html-container "section"
+       :headline-levels 6
+       :recursive t
+       :html-divs ((preamble "section" "preamble")
+		  (content "main" "content")
+		  (postamble "section" "postamble"))
+       :publishing-function org-html-publish-to-html
+       :html-format-drawer-function emacsen-org-html-format-drawer
+       :sitemap-function emacsen-org-publish-format-sitemap
+       :html-head-include-scripts nil
+       :html-head-include-default-style nil
+       :html-head ,emacsen-org-html-head
+       :exclude ,(regexp-opt '("README.org" "PRIVATE"))
+       :auto-sitemap t
+       :with-footnotes t
+       :with-toc nil
+       :with-drawers t
+       :base-directory "~/org/s/term"
+       :publishing-directory "~/org/p/term"
+       :html-preamble ,emacsen-org-html-subdir-preamble
+       :sitemap-filename "index.org"
+       :sitemap-sort-files alphabetically
+       :sitemap-title "Term Index")
+    #+end_src
+*** Comment records project
+    #+name: emacsen-org-mode-comment-records-project-elisp
+    #+begin_src elisp
+      ("comment-records"
+       :base-extension "org"
+       :publishing-function org-html-publish-to-html
+       :html-doctype "html5"
+       :html-html5-fancy t
+       :html-container "section"
+       :headline-levels 6
+       :recursive t
+       :html-divs ((preamble "section" "preamble")
+		  (content "main" "content")
+		  (postamble "section" "postamble"))
+       :publishing-function org-html-publish-to-html
+       :html-format-drawer-function emacsen-org-html-format-drawer
+       :sitemap-function emacsen-org-publish-format-sitemap
+       :html-head-include-scripts nil
+       :html-head-include-default-style nil
+       :html-head ,emacsen-org-html-head
+       :exclude ,(regexp-opt '("README.org" "PRIVATE"))
+       :auto-sitemap t
+       :with-footnotes t
+       :with-toc nil
+       :with-drawers t
+       :base-directory "~/org/s/com"
+       :publishing-directory "~/org/p/com"
+       :html-preamble ,emacsen-org-html-subdir-preamble
+       :sitemap-filename "index.org"
+       :sitemap-sort-files anti-chronologically
+       :sitemap-title "Communications Index")
+    #+end_src
+
+*** Reference records project
+    #+name: emacsen-org-mode-reference-records-project-elisp
+    #+begin_src elisp
+      ("reference-records"
+       :base-extension "org"
+       :publishing-function org-html-publish-to-html
+       :html-doctype "html5"
+       :html-html5-fancy t
+       :html-container "section"
+       :headline-levels 6
+       :recursive t
+       :html-divs ((preamble "section" "preamble")
+		  (content "main" "content")
+		  (postamble "section" "postamble"))
+       :publishing-function org-html-publish-to-html
+       :html-format-drawer-function emacsen-org-html-format-drawer
+       :sitemap-function emacsen-org-publish-format-sitemap
+       :html-head-include-scripts nil
+       :html-head-include-default-style nil
+       :html-head ,emacsen-org-html-head
+       :exclude ,(regexp-opt '("README.org" "PRIVATE"))
+       :auto-sitemap t
+       :with-footnotes t
+       :with-toc nil
+       :with-drawers t
+       :base-directory "~/org/s/ref"
+       :publishing-directory "~/org/p/ref"
+       :html-preamble ,emacsen-org-html-subdir-preamble
+       :sitemap-filename "index.org"
+       :sitemap-sort-files alphabetically
+       :sitemap-title "Reference Index")
+    #+end_src
+*** Daily records project
+    #+name: emacsen-org-mode-daily-records-project-elisp
+    #+begin_src elisp
+      ("daily-records"
+       :base-extension "org"
+       :publishing-function org-html-publish-to-html
+       :html-doctype "html5"
+       :html-html5-fancy t
+       :html-container "section"
+       :headline-levels 6
+       :recursive t
+       :html-divs ((preamble "section" "preamble")
+		  (content "main" "content")
+		  (postamble "section" "postamble"))
+       :publishing-function org-html-publish-to-html
+       :html-format-drawer-function emacsen-org-html-format-drawer
+       :sitemap-function emacsen-org-publish-format-sitemap
+       :html-head-include-scripts nil
+       :html-head-include-default-style nil
+       :html-head ,emacsen-org-html-head
+       :exclude ,(regexp-opt '("README.org" "PRIVATE"))
+       :auto-sitemap t
+       :with-footnotes t
+       :with-toc nil
+       :with-drawers t
+       :base-directory "~/org/s/daily"
+       :publishing-directory "~/org/p/daily"
+       :html-preamble ,emacsen-org-html-subdir-preamble
+       :sitemap-filename "index.org"
+       :sitemap-sort-files anti-chronologically
+       :sitemap-title "Daily Index")
+    #+end_src
+*** Comment RSS project
+    #+name: emacsen-org-mode-com-rss-project-elisp
+    #+begin_src elisp
+      ("com-rss"
+       :base-extension "org"
+       :exclude ,(regexp-opt '("index.org" "rss.org" "README.org" "PRIVATE"))
+       :headline-levels 6
+       :html-container "section"
+       :html-divs ((preamble "section" "preamble")
+		  (content "main" "content")
+		  (postamble "section" "postamble"))
+       :html-doctype "html5"
+       :html-head ,emacsen-org-html-head
+       :html-head-include-default-style nil
+       :html-head-include-scripts nil
+       :html-html5-fancy t
+       :publishing-function emacsen-org-rss-publish-to-rss
+       :recursive t
+       :sitemap-function emacsen-format-rss-feed
+       :sitemap-format-entry emacsen-format-rss-feed-entry
+       :auto-sitemap t
+       :with-footnotes t
+       :with-toc nil
+       :with-drawers t
+       :base-directory "~/org/s/com"
+       :publishing-directory "~/org/p/com"
+       :html-preamble ,emacsen-org-html-subdir-preamble
+       :sitemap-filename "rss.org"
+       :sitemap-sort-files anti-chronologically
+       :sitemap-title "Communication RSS")
+    #+end_src
+*** Teraum project
+    #+name: emacsen-org-mode-teraum-project-elisp
+    #+begin_src elisp
+      ("teraum"
+       :base-extension "org"
+       :publishing-function org-html-publish-to-html
+       :html-doctype "html5"
+       :html-html5-fancy t
+       :html-container "section"
+       :headline-levels 6
+       :recursive t
+       :html-divs ((preamble "section" "preamble")
+		   (content "main" "content")
+		   (postamble "section" "postamble"))
+       :publishing-function org-html-publish-to-html
+       :html-format-drawer-function emacsen-org-html-format-drawer
+       :sitemap-function emacsen-org-publish-format-sitemap
+       :html-head-include-scripts nil
+       :html-head-include-default-style nil
+       :html-head ,emacsen-org-html-head
+       :exclude ,(regexp-opt '("README.org" "PRIVATE"))
+       :auto-sitemap t
+       :with-footnotes t
+       :with-toc nil
+       :with-drawers t
+       :base-directory "~/org/s/teraum"
+       :publishing-directory "~/org/p/teraum"
+       :html-preamble ,emacsen-org-html-subdir-preamble
+       :sitemap-filename "index.org"
+       :sitemap-sort-files anti-chronologically
+       :sitemap-title "Teraum Index")
+    #+end_src
+
+** Org-roam configuration
+*** Org-roam immediate capture template
+
+    #+name: emacsen-org-roam-immediate-capture-template-elisp
+    #+begin_src elisp
+      ("B" "blank term" plain
+       (function org-roam--capture-get-point)
+       "*/[[file:${slug}.org][${title}]]/* hasn't been defined yet.\n"
+       :file-name "term/${slug}"
+       :head ,(concat "#+title: ${title}\n"
+		      "#+author: " (user-full-name) "\n"
+		      "#+date: %U\n"
+		      "#+index: ${title}\n"
+		      "#+name: ${slug}-definition\n")
+       :unnarrowed t
+       :immediate-finish t)
+    #+end_src
+*** Org-roam capture templates
+**** Org-roam term capture template
+
+     #+name: emacsen-org-roam-term-capture-template-elisp
+     #+begin_src elisp
+       ("t" "term" plain
+	(function org-roam--capture-get-point)
+	"*/[[file:${slug}.org][${title}]]/* %?\n"
+	:file-name "term/${slug}"
+	:head ,(concat "#+title: ${title}\n"
+		       "#+author: " (user-full-name) "\n"
+		       "#+date: %U\n"
+		       "#+index: ${title}\n"
+		       "#+name: ${slug}-definition\n")
+	:unnarrowed t)
+     #+end_src
+**** Org-roam reference capture template
+
+     #+name: emacsen-org-roam-reference-capture-template-elisp
+     #+begin_src elisp
+       ("r" "reference" plain
+	(function org-roam--capture-get-point)
+	,(concat "#+author: %^{Author?}\n"
+		 "#+date: %^{Date?}\n"
+		 "#+roam_tags: unincorporated-reference\n"
+		 "#+index: %^{Index?}!references!${title}\n"
+		 "#+name: ${slug}-definition\n"
+		 "*/[[file:${slug}.org][${title}]]/* is an [[file:../term/unincorporated-reference.org][unincorporated reference]].\n")
+	:file-name "ref/${slug}"
+	:head ,(concat "#+title: ${title}\n")
+	:unnarrowed t)
+     #+end_src
+     
+**** Org-roam comment capture template
+
+     #+name: emacsen-org-roam-comment-capture-template-elisp
+     #+begin_src elisp
+       ("c" "comment" plain
+	(function org-roam--capture-get-point)
+		       "#+index: %^{Index?}!comments!${slug}\n\n%?\n"
+	:file-name "com/${slug}"
+	:head ,(concat "#+title: ${title}\n"
+		       "#+author: " (user-full-name) "\n"
+		       "#+date: %U\n"
+		       "#+roam_tags: comment\n")
+	:unnarrowed t)
+     #+end_src
+     
+**** Org-roam Teraum capture templates
+***** Org-roam Teraum term capture template
+
+      #+name: emacsen-org-roam-teraum-term-capture-template-elisp
+      #+begin_src elisp
+	("Tt" "term" plain
+	 (function org-roam--capture-get-point)
+	 "#+name: ${slug}-definition\n*/[[file:${slug}.org][${title}]]/* is an term of [[file:../teraum.org][Teraum]].\n\n#+toc: headlines 2\n\n%?\n* Supplements\n** Record history\n   :PROPERTIES:\n   :CUSTOM_ID: record-history\n   :END:\n   :LOGBOOK:\n   - Note taken on %U \\\\\n      Created from %f\n\n      %?\n   :END:\n"
+	 :file-name "teraum/${slug}"
+	 :head ,(concat "#+title: ${title}\n"
+			"#+begin_head\n"
+			"#+emacsen_schema: "
+			"\n"
+			"#+author: " (user-full-name) "\n"
+			"#+email: " user-mail-address "\n"
+			"#+date: %U\n"
+			"#+roam_tags: Teraum\n"
+			"#+end_head\n\n")
+	 :unnarrowed t)
+      #+end_src
+***** Org-roam Teraum area capture template
+
+      #+name: emacsen-org-roam-teraum-area-capture-template-elisp
+      #+begin_src elisp
+	("Ta" "area" plain
+	 (function org-roam--capture-get-point)
+	 "#+name: ${slug}-definition\n*/[[file:${slug}.org][${title}]]/* is an area of [[file:../teraum.org][Teraum]].\n\n#+toc: headlines 2\n\n%?\n* Supplements\n** Record history\n   :PROPERTIES:\n   :CUSTOM_ID: record-history\n   :END:\n   :LOGBOOK:\n   - Note taken on %U \\\\\n      Created from %a\n\n      %?\n   :END:\n"
+	 :file-name "teraum/${slug}"
+	 :head ,(concat "#+title: ${title}\n"
+			"#+begin_head\n"
+			"#+emacsen_schema: "
+			"\n"
+			"#+author: " (user-full-name) "\n"
+			"#+email: " user-mail-address "\n"
+			"#+date: %U\n"
+			"#+roam_tags: Teraum area\n"
+			"#+end_head\n\n")
+	 :unnarrowed t)
+      #+end_src
+***** Org-roam Teraum year capture template
+
+      #+name: emacsen-org-roam-teraum-year-capture-template-elisp
+      #+begin_src elisp
+	("Ty" "year" plain
+	 (function org-roam--capture-get-point)
+	 "#+name: ${slug}-definition\n*/[[file:${slug}.org][${title}]]/* is a year in [[file:teraum_s_history.org][Teraum's history]].\n\n#+toc: headlines 2\n\n%?\n\n* Supplements\n** Record history\n   :PROPERTIES:\n   :CUSTOM_ID: record-history\n   :END:\n   :LOGBOOK:\n   - Note taken on %U \\\\\n      Created from %a\n\n      %?\n   :END:\n"
+	 :file-name "teraum/${slug}"
+	 :head ,(concat "#+title: ${title}\n"
+			"#+begin_head\n"
+			"#+emacsen_schema: "
+			"\n"
+			"#+author: " (user-full-name) "\n"
+			"#+email: " user-mail-address "\n"
+			"#+date: %U\n"
+			"#+roam_tags: Teraum year\n"
+			"#+end_head\n\n")
+	 :unnarrowed t)
+      #+end_src
+***** Org-roam Teraum date capture template
+
+      #+name: emacsen-org-roam-teraum-date-capture-template-elisp
+      #+begin_src elisp
+	("Td" "date" plain
+	 (function org-roam--capture-get-point)
+	 "#+name: ${slug}-definition\n*/[[file:${slug}.org][${title}]]/* is a date in [[file:teraum_s_history.org][Teraum's history]].\n\n#+toc: headlines 2\n\n%?\n\n* Supplements\n** Record history\n   :PROPERTIES:\n   :CUSTOM_ID: record-history\n   :END:\n   :LOGBOOK:\n   - Note taken on %U \\\\\n      Created from %a\n\n      %?\n   :END:\n"
+	 :file-name "teraum/${slug}"
+	 :head ,(concat "#+title: ${title}\n"
+			"#+begin_head\n"
+			"#+emacsen_schema: "
+			"\n"
+			"#+author: " (user-full-name) "\n"
+			"#+email: " user-mail-address "\n"
+			"#+date: %U\n"
+			"#+roam_tags: Teraum date\n"
+			"#+end_head\n\n")
+	 :unnarrowed t)
+      #+end_src
+***** Org-roam Teraum species capture template
+
+      #+name: emacsen-org-roam-teraum-species-capture-template-elisp
+      #+begin_src elisp
+	("Ts" "species" plain
+	 (function org-roam--capture-get-point)
+	 "#+name: ${slug}-definition\n*/[[file:${slug}.org][${title}]]/* is an species from [[file:../teraum.org][Teraum]].\n\n#+toc: headlines 2\n\n%?\n* Supplements\n** Record history\n   :PROPERTIES:\n   :CUSTOM_ID: record-history\n   :END:\n   :LOGBOOK:\n   - Note taken on %U \\\\\n      Created from %a\n\n      %?\n   :END:\n"
+	 :file-name "teraum/${slug}"
+	 :head ,(concat "#+title: ${title}\n"
+			"#+begin_head\n"
+			"#+emacsen_schema: "
+			"\n"
+			"#+author: " (user-full-name) "\n"
+			"#+email: " user-mail-address "\n"
+			"#+date: %U\n"
+			"#+roam_tags: Teraum species\n"
+			"#+end_head\n\n")
+	 :unnarrowed t)
+      #+end_src
+***** Org-roam Teraum person capture template
+
+      #+name: emacsen-org-roam-teraum-person-capture-template-elisp
+      #+begin_src elisp
+	("Tp" "species" plain
+	 (function org-roam--capture-get-point)
+	 "#+name: ${slug}-definition\n*/[[file:${slug}.org][${title}]]/* is an person from [[file:../teraum.org][Teraum]].\n\n#+toc: headlines 2\n\n%?\n* Supplements\n** Record history\n   :PROPERTIES:\n   :CUSTOM_ID: record-history\n   :END:\n   :LOGBOOK:\n   - Note taken on %U \\\\\n      Created from %a\n   :END:\n"
+	 :file-name "teraum/${slug}"
+	 :head ,(concat "#+title: ${title}\n"
+			"#+begin_head\n"
+			"#+emacsen_schema: "
+			"\n"
+			"#+author: " (user-full-name) "\n"
+			"#+email: " user-mail-address "\n"
+			"#+date: %U\n"
+			"#+roam_tags: Teraum person\n"
+			"#+end_head\n\n")
+	 :unnarrowed t)
+      #+end_src
+*** Org-roam dailies capture templates
+
+     #+name: emacsen-org-roam-dailies-capture-template-elisp
+     #+begin_src elisp
+       ("d" "daily" plain
+	#'org-roam-capture--get-point
+	"- [[%f][%?]]\n"
+	:file-name "daily/%<%Y-%m-%d>"
+	:head ,(concat "#+title: %<%Y-%m-%d>\n"
+		       "#+author: " (user-full-name) "\n"
+		       "#+date: %U\n"
+		       "#+roam_tags: daily\n"
+		       "This is some changes that were made to this record catalog on %u.\n"))
+     #+end_src
+  
+* Components
+  :PROPERTIES:
+  :header-args: :noweb yes
+  :END:
+
+  #+toc: headlines 2 local
+** Bugfixes & Version-handling
+*** Isearch occurence bug
+     
+    #+name: emacsen-isearch-occur-bugfix-elisp
+    #+caption: An /Elisp/ declaration for fixing bug #20971 in /Emacs/.
+    #+begin_src elisp
+      (defadvice isearch-occur (after isearch-occur-fix activate)
+	"Fixes bug #20971: http://debbugs.gnu.org/cgi/bugreport.cgi?bug=20971"
+	(setq buffer-read-only nil))
+    #+end_src
+
+*** TLS fix for Emacs <26.3
+
+    #+name: emacsen-tls-fix-for-emacs-lessthan-26-3-elisp
+    #+caption: Fix an error with /TLS/ stuff in Emacs versions <26.3
+    #+begin_src elisp
+    (if (and (version< emacs-version "26.3") (>= libgnutls-version 30600))
+        (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3"))
+
+    #+end_src
+** Straight.el and use-package
+
+   Requires [[file:git.org][Git]] be installed.
+   
+*** Straight.el bootstrapping
+    #+name: emacsen-straight-el-bootstrapping-elisp
+    #+begin_src elisp
+     (defvar straight-install-script-path
+       "https://raw.githubusercontent.com/raxod502/straight.el/develop/install.el")
+    
+     (defvar bootstrap-version)
+     (let ((bootstrap-file
+            (expand-file-name "straight/repos/straight.el/bootstrap.el" user-emacs-directory))
+           (bootstrap-version 5))
+       (unless (file-exists-p bootstrap-file)
+         (with-current-buffer
+    	 (url-retrieve-synchronously straight-install-script-path
+    	  'silent 'inhibit-cookies)
+           (goto-char (point-max))
+           (eval-print-last-sexp)))
+       (load bootstrap-file nil 'nomessage))
+
+    #+end_src
+*** Use-package bootstrapping
+    #+name: emacsen-use-package-bootstrapping-elisp
+    #+begin_src elisp
+    (straight-use-package 'use-package)
+    #+end_src
+** Tao theme
+#+name: emacsen-theme-elisp
+#+begin_src elisp
+  (use-package darktooth-theme :straight t
+    :config
+    (load-theme 'darktooth t))
+#+end_src
+** HTMLize
+   #+name: emacsen-htmlize-elisp
+   #+begin_src elisp
+ (use-package htmlize :straight t)
+
+   #+end_src
+
+** Ivy
+   #+name: emacsen-ivy-elisp
+   #+begin_src elisp
+     (use-package ivy
+	   :straight t
+	   :diminish (ivy-mode . "")
+	   :bind (("C-c C-r" . ivy-resume))
+	   :config (ivy-mode 1)
+	   (setq ivy-use-virtual-buffers t)
+	   (setq ivy-height 12)
+	   (setq ivy-count-format "(%d/%d) ")
+	   (setq ivy-initial-inputs-alist nil)
+	   (setq ivy-re-builders-alist
+	     '((read-file-name-internal . ivy--regex-fuzzy)
+	       (t . ivy--regex-ignore-order))))
+   #+end_src
+
+** Fennel-mode
+   #+name: emacsen-fennel-mode-elisp
+   #+begin_src elisp
+	       (use-package fennel-mode :straight t
+		 :mode "\\.fnl\\'"
+		 :interpreter "fennel"
+		 :custom
+		 (inferior-lisp-program "/home/emsenn/.luarocks/bin/fennel"))
+   #+end_src
+** Ledger-mode
+   #+name: emacsen-ledger-mode-elisp
+   #+begin_src elisp
+     (use-package ledger-mode :straight t)
+   #+end_src
+** Lua-mode
+   #+name: emacsen-lua-mode-elisp
+   #+begin_src elisp
+     (use-package lua-mode :straight t
+       :mode "\\.lua\\'"
+       :interpreter "lua")
+   #+end_src
+** Racket-mode
+   #+name: emacsen-racket-mode-elisp
+   #+begin_src elisp
+     (use-package racket-mode :straight t
+       :mode "\\.rkt\\'"
+       :interpreter "racket")
+   #+end_src
+** rcIRC
+
+   #+name: emacsen-rcirc-elisp
+   #+begin_src elisp
+     (use-package rcirc :straight t
+       :custom
+       (rcirc-time-format "%Y-%m-%d %H:%M ")
+       (rcirc-default-nick "emsenn")
+       (rcirc-default-user-name "emsenn")
+       (rcirc-default-full-name "emsenn")
+       (rcirc-server-alist '(("irc.freenode.net" :channels ("webgaz" "qtops"))))
+       :config
+       (rcirc-connect "irc.freenode.net"))
+   #+end_src
+** Magit
+   #+name: emacsen-magit-elisp
+   #+begin_src elisp
+       (use-package magit :straight t)
+
+   #+end_src
+** Olivetti
+   #+name: emacsen-olivetti-elisp
+   #+begin_src elisp
+     (use-package olivetti :straight t)
+   #+end_src
+** Org-mode
+   #+name: emacsen-org-mode-elisp
+   #+begin_src elisp
+     (use-package
+	 org :straight t
+	 :config 
+	 <<emacsen-org-mode-configuration-elisp>>
+	 <<emacsen-org-html-base-preamble-elisp>>
+	 <<emacsen-org-html-subdir-preamble-elisp>>
+	 <<emacsen-org-html-head-elisp>>
+	 (org-babel-do-load-languages 'org-babel-load-languages
+				      '((shell . t)))
+
+	 (defun emacsen-org-capture-capture-at-point ()
+	   "Insert an org capture template at point."
+	   (interactive)
+	   (org-capture 0))
+	 (defun emacsen-org-export-preprocessor (backend)
+	   (let ((links (emacsen-org-roam-format-backlinks-list
+			 (buffer-file-name))))
+	     (unless (string= links "")
+	       (save-excursion
+		 (goto-char (point-max))
+		 (insert (concat "\n* Backlinks\n   :PROPERTIES:\n   :CUSTOM_ID:   backlinks\n   :END:\n") links)))))
+
+	 (defun emacsen-org-html-format-drawer (name contents)
+	   (format "<section class=\"org-drawer\"> %s </section>" contents))
+
+	 ;; from https://www.john2x.com/blog/blogging-with-orgmode.html
+	 (defun emacsen-org-publish-format-sitemap (title sitemap)
+	   (let ((posts (cdr sitemap)))
+	     (concat
+	      (format "#+title: %s\n" title)
+	      "#+author: emsenn\n"
+	      "#+email: emsenn@emsenn.net\n"
+	      (format "#+date: %s\n" (format-time-string "[%Y-%m-%d %a %H:%M:%S]" (current-time)))
+	      "#+roam_tags: meta\n"
+	      (org-list-to-org (cons (car sitemap) posts)))))
+
+	 (defun emacsen-org-rss-publish-to-rss (plist filename pub-dir)
+	   "Publish RSS with PLIST, only when FILENAME is 'rss.org'. PUB-DIR is when the output will be placed."
+	   (if (equal "rss.org" (file-name-nondirectory filename))
+	       (org-rss-publish-to-rss plist filename pub-dir)))
+
+	 (defun emacsen-format-rss-feed (title list)
+	   "Generate RSS feed, as a string. TITLE is the title of the RSS feed.  LIST is an internal representation for the files to include, as returned by `org-list-to-lisp'.  PROJECT is the current project."
+	   (concat "#+TITLE: " title "\n\n"
+		   (org-list-to-subtree list 1 '(:icount "" :istart ""))))
+	 (defun emacsen-format-rss-feed-entry (entry style project)
+	   "Format ENTRY for the RSS feed. ENTRY is a file name.  STYLE is either 'list' or 'tree'. PROJECT is the current project."
+	   (cond ((not (directory-name-p entry))
+		  (let* ((file (org-publish--expand-file-name entry project))
+			 (title (org-publish-find-title entry project))
+			 (date (format-time-string "%Y-%m-%d" (org-publish-find-date entry project)))
+			 (link (concat (file-name-sans-extension entry) ".html")))
+		    (with-temp-buffer
+		      (insert (format "* [[file:%s][%s]]\n" file title))
+		      (org-set-property "RSS_PERMALINK" link)
+		      (org-set-property "PUBDATE" date)
+		      (insert-file-contents file)
+		      (buffer-string))))
+		 ((eq style 'tree)
+		  ;; Return only last subdir.
+		  (file-name-nondirectory (directory-file-name entry)))
+		 (t entry)))    
+
+	 (setq org-capture-templates
+	       `(
+		 <<emacsen-org-mode-source-block-capture-template-elisp>>
+		 <<emacsen-org-mode-elisp-source-block-capture-template-elisp>>
+		 <<emacsen-org-mode-ledger-entries-capture-templates-elisp>>
+		 ))
+	 (setq org-publish-project-alist
+	       `(
+		 <<emacsen-org-mode-records-catalog-project-elisp>>
+		 <<emacsen-org-mode-all-records-project-elisp>>
+		 <<emacsen-org-mode-term-records-project-elisp>>
+		 <<emacsen-org-mode-comment-records-project-elisp>>
+		 <<emacsen-org-mode-daily-records-project-elisp>>
+		 <<emacsen-org-mode-reference-records-project-elisp>>
+		 <<emacsen-org-mode-teraum-project-elisp>>
+		 ))
+	 :hook 
+	 (org-export-before-processing . emacsen-org-export-preprocessor)
+	 :bind (
+		("C-c l" . org-store-link)
+		("C-c a" . org-agenda)
+		("C-c c" . org-capture)
+		("C-c t" . org-toggle-link-display)
+		("C-c C-q" . counsel-org-tag)
+		("<f8>" . emacsen-org-capture-capture-at-point)
+		))
+#+end_src
+
+** Org-attach-screenshot
+   #+name: emacsen-org-attach-screenshot-elisp
+   #+begin_src elisp
+    (use-package org-attach-screenshot :straight t
+       :config (setq
+    	    org-attach-screenshot-command-line "spectacle -rbno $f"))
+   #+end_src
+
+** Org-roam
+   #+name: emacsen-org-roam-elisp
+   #+begin_src elisp
+     (use-package
+       org-roam :straight t
+       :hook (after-init . org-roam-mode)
+       :bind (
+	      ("<f5>" . org-roam-dailies-capture-today)
+	      ("<f9>" . org-roam-dailies-find-today)
+	      ("C-c n l" . org-roam)
+	      ("C-c n f" . org-roam-find-file)
+	      ("C-c n g" . org-roam-graph)
+	      ("C-c n i" . org-roam-insert)
+	      ("C-c n I" . org-roam-insert-immediate))
+       :custom
+       (org-roam-directory "~/org")
+       (org-roam-dailies-directory "d/")
+       (org-roam-db-update-method 'immediate)
+       (org-roam-capture-immediate-template
+	(backquote
+	 <<emacsen-org-roam-immediate-capture-template-elisp>>
+	 ))
+       (org-roam-capture-templates
+	`(
+	  <<emacsen-org-roam-term-capture-template-elisp>>
+	  <<emacsen-org-roam-reference-capture-template-elisp>>
+	  <<emacsen-org-roam-comment-capture-template-elisp>>
+	  ("T" "Teraum")
+	  <<emacsen-org-roam-teraum-term-capture-template-elisp>>
+	  <<emacsen-org-roam-teraum-area-capture-template-elisp>>
+	  <<emacsen-org-roam-teraum-year-capture-template-elisp>>
+	  <<emacsen-org-roam-teraum-date-capture-template-elisp>>
+	  <<emacsen-org-roam-teraum-species-capture-template-elisp>>
+	  ))
+       (org-roam-dailies-capture-templates
+	`(
+	  <<emacsen-org-roam-dailies-capture-template-elisp>>
+	  ))
+       :config
+       (defun org-roam--title-to-slug (title)
+	 "Convert TITLE to a filename-suitable slug. Uses hyphens rather than underscores."
+	 (cl-flet* ((nonspacing-mark-p
+		     (char)
+		     (eq 'Mn (get-char-code-property char 'general-category)))
+		    (strip-nonspacing-marks
+		     (s)
+		     (apply #'string (seq-remove #'nonspacing-mark-p
+						 (ucs-normalize-NFD-string s))))
+		    (cl-replace (title pair)
+				(replace-regexp-in-string (car pair)
+							  (cdr pair)
+							  title)))
+	   (let* ((pairs `(("[^[:alnum:][:digit:]]" . "-")
+			   ;; convert anything not alphanumeric
+			   ("--*" . "-")  ;; remove sequential underscores
+			   ("^-" . "")  ;; remove starting underscore
+			   ("-$" . "")))  ;; remove ending underscore
+		  (slug (-reduce-from #'cl-replace
+				      (strip-nonspacing-marks title)
+				      pairs)))
+	     (s-downcase slug))))
+       ;; from neil mather's commonplace wiki
+       (defun emacsen-org-roam-format-backlinks-list (file)
+	 (if (org-roam--org-roam-file-p file)
+	     (--reduce-from
+	      (concat acc
+		      (format
+		       "- [[file:%s][%s]]\n"
+		       (if (or (string= (org-roam-dailies-directory--get-absolute-path)
+					(file-name-directory file))
+			       (string= "/home/emsenn/org/s/term/"
+					(file-name-directory file))
+			       (string= "/home/emsenn/org/s/ref/"
+					(file-name-directory file))
+			       (string= "/home/emsenn/org/s/com/"
+					(file-name-directory file))
+			       (string= "/home/emsenn/org/s/daily/"
+					(file-name-directory file))
+			       )
+			   (file-relative-name (car it))
+			 (file-relative-name (car it) org-roam-directory))
+		       (org-roam-db--get-title (car it))))
+	      "" (org-roam-db-query
+		  [:select [source]
+			   :from links
+			   :where (= dest $s1)] file))
+	   "")))
+   #+end_src
+
+** Org-roam-server
+   #+name: emacsen-org-roam-server-elisp
+   #+begin_src elisp
+     (use-package org-roam-server :straight t)
+
+   #+end_src
+
+** Org-mode export HTML & CSS chunks
+*** HTML base preamble
+    #+name: emacsen-org-html-base-preamble-elisp
+    #+begin_src elisp
+     (setq emacsen-org-html-base-preamble
+	 (concat "<a href=\"#content\" class=\"skip-to-content\">skip to content</a>"
+		 "<section class=\"nav\"><strong>Website navigation:</strong> "
+		 "<a href=\"./index.html\">"
+		 "homepage</a> | "
+		 "<a href=\"./term/index.html\">"
+		 "definitions</a> | "
+		 "<a href=\"./ref/index.html\">"
+		 "references"
+		 "</a> | "
+		 "<a href=\"./com/index.html\">"
+		 "communication"
+		 "</a> | "
+		 "<a href=\"./daily/index.html\">"
+		 "daily summary"
+		 "</a>"
+		 "<p>"
+		 "This Website was cultivated as a public asset with <a href=\"https://ko-fi.com/emsenn\">support</a> from people like you. <strong><em>Thank you!</em></strong>"
+		 "</p>"
+		 "<details>"
+		 "<summary>Click this sentence for information about this Website.</summary>"
+		 "<p>Click each sentence below for more information about each topic.</p>"
+		 "<ul>"
+		 "<li>"
+		 "<details>"
+		 "<summary>This Website is a collection of records linked through their relationship to each other.</summary>"
+		 "<p>Each page on this Website is <em>record</em> of <em>information</em>. (There are <a href=\"./record.html\">records</a> with more <a href=\"./information.html\">information</a> about both of those concepts.) On the <a href=\"./Web.html\">Web</a>, these records are <a href=\"hypertext\">hypertext</a>: they contain links to each other (and other resources). The table below demonstrates link styling."
+		 "<table>"
+		 "<thead><tr>"
+		 "<th scope=\"col\">Color</th>"
+		 "<th scope=\"col\">Link type</th>"
+		 "</tr></thead>"
+		 "<tbody>"
+		 "<tr>"
+		 "<td class=\"link\">Sample</td>"
+		 "<td>Unvisited local resource</td>"
+		 "</tr>"
+		 "<tr>"
+		 "<td class=\"visited-link\">Sample</td>"
+		 "<td>Visited local resource</td>"
+		 "</tr>"
+		 "<tr>"
+		 "<td class=\"external-link\">Sample</td>"
+		 "<td>Unvisited external resource</td>"
+		 "</tr>"
+		 "<tr>"
+		 "<td class=\"visited-external-link\">Sample</td>"
+		 "<td>Visited external resource</td>"
+		 "</tr>"
+		 "</table>"
+		 "</details>"
+		 "</li>"
+		 "<li>"
+		 "<details>"
+		 "<summary>It was created by one human person wishing to communicate with others.</summary>"
+		 "<p>It was created by me, <a href=\"./emsenn.html\">emsenn</a>, to share some of my <a href=\"./knowledge.html\">knowledge</a> with <a href=\"./person.html\">people</a> on the <a href=\"Web.html\">Web</a>.</p>"
+		 "</details>"
+		 "</li>"
+		 "<li>"
+		 "<details>"
+		 "<summary>Each Webpage contains a <em>record</em> of <em>information</em>.</summary>"
+		 "<p>Each Webpage on my Website is a <a href=\"./record.html\">record</a> of <a  href=\"information.html\">information</a>. These records have different components, depending on what type they are, but here's some common components:"
+		 "<dl>"
+		 "<dt>Introduction</dt>"
+		 "<dd>A record's <em>introduction</em> describes the record, including what <a href=\"./permission.html\">permissions</a> are granted.</dd>"
+		 "<dt>Backlinks</dt>"
+		 "<dd>A record's <a href=\"./backlink.html\">backlinks</a> shows which other records link to this one.</dd>"
+		 "</dl>"
+		 "</details>"
+		 "</li>"
+		 "</ul>"
+		 "</section>"
+	  ))
+    #+end_src
+*** HTML subdir preamble
+    #+name: emacsen-org-html-subdir-preamble-elisp
+    #+begin_src elisp
+     (setq emacsen-org-html-subdir-preamble
+	 (concat "<a href=\"#content\" class=\"skip-to-content\">skip to content</a>"
+		 "<section class=\"nav\"><strong>Website navigation:</strong> "
+		 "<a href=\"../index.html\">"
+		 "homepage</a> | "
+		 "<a href=\"../term/index.html\">"
+		 "definitions</a> | "
+		 "<a href=\"../ref/index.html\">"
+		 "references"
+		 "</a> | "
+		 "<a href=\"../com/index.html\">"
+		 "communication"
+		 "</a> | "
+		 "<a href=\"../daily/index.html\">"
+		 "daily summary"
+		 "</a>"
+		 "<p>"
+		 "This Website was cultivated as a public asset with <a href=\"https://ko-fi.com/emsenn\">support</a> from people like you. <strong><em>Thank you!</em></strong>"
+		 "</p>"
+		 "<details>"
+		 "<summary>Click this sentence for information about this Website.</summary>"
+		 "<p>Click each sentence below for more information about each topic.</p>"
+		 "<ul>"
+		 "<li>"
+		 "<details>"
+		 "<summary>This Website is a collection of records linked through their relationship to each other.</summary>"
+		 "<p>Each page on this Website is <em>record</em> of <em>information</em>. (There are <a href=\"../record.html\">records</a> with more <a href=\"../information.html\">information</a> about both of those concepts.) On the <a href=\"../Web.html\">Web</a>, these records are <a href=\"hypertext\">hypertext</a>: they contain links to each other (and other resources). The table below demonstrates link styling."
+		 "<table>"
+		 "<thead><tr>"
+		 "<th scope=\"col\">Color</th>"
+		 "<th scope=\"col\">Link type</th>"
+		 "</tr></thead>"
+		 "<tbody>"
+		 "<tr>"
+		 "<td class=\"link\">Sample</td>"
+		 "<td>Unvisited local resource</td>"
+		 "</tr>"
+		 "<tr>"
+		 "<td class=\"visited-link\">Sample</td>"
+		 "<td>Visited local resource</td>"
+		 "</tr>"
+		 "<tr>"
+		 "<td class=\"external-link\">Sample</td>"
+		 "<td>Unvisited external resource</td>"
+		 "</tr>"
+		 "<tr>"
+		 "<td class=\"visited-external-link\">Sample</td>"
+		 "<td>Visited external resource</td>"
+		 "</tr>"
+		 "</table>"
+		 "</details>"
+		 "</li>"
+		 "<li>"
+		 "<details>"
+		 "<summary>It was created by one human person wishing to communicate with others.</summary>"
+		 "<p>It was created by me, <a href=\"../emsenn.html\">emsenn</a>, to share some of my <a href=\"../knowledge.html\">knowledge</a> with <a href=\"../person.html\">people</a> on the <a href=\"../Web.html\">Web</a>.</p>"
+		 "</details>"
+		 "</li>"
+		 "<li>"
+		 "<details>"
+		 "<summary>Each Webpage contains a <em>record</em> of <em>information</em>.</summary>"
+		 "<p>Each Webpage on my Website is a <a href=\"../record.html\">record</a> of <a  href=\"information.html\">information</a>. These records have different components, depending on what type they are, but here's some common components:"
+		 "<dl>"
+		 "<dt>Introduction</dt>"
+		 "<dd>A record's <em>introduction</em> describes the record, including what <a href=\"../permission.html\">permissions</a> are granted.</dd>"
+		 "<dt>Backlinks</dt>"
+		 "<dd>A record's <a href=\"../backlink.html\">backlinks</a> shows which other records link to this one.</dd>"
+		 "</dl>"
+		 "</details>"
+		 "</li>"
+		 "</ul>"
+		 "</section>"
+		 ))
+    #+end_src
+*** CSS stylesheet
+
+    #+name: emacsen-org-html-css
+    #+begin_src css
+      @charset \"UTF-8\";
+
+      :root {
+	  --body-font: sans-serif;
+	  --header-font: sans-serif;
+	  --code-font: monospace;
+	  --primary-color: #eed;
+	  --primary-dim-color: #ffe;
+	  --secondary-color: #312;
+	  --secondary-dim-color: #756;
+	  --link-color: #320;
+	  --link-hover-color: #862;
+	  --link-visited-color: #400;
+	  --link-visited-hover-color: #822;
+	  --external-link-color: #004;
+	  --external-link-hover-color: #228;
+	  --external-link-visited-color: #030;
+	  --external-link-visited-hover-color: #141;
+      }
+      body {
+	  position: relative;
+	  min-height: 100%;
+	  background-color: var(--primary-color);
+	  color: var(--secondary-color);
+	  margin: 0 auto;
+	  font-family: sans-serif;
+      }
+      main, #content {
+	  background-color: var(--primary-dim-color);
+	  border-left: 1.5em dotted var(--primary-color);
+	  padding: 1em;
+      }
+      header {
+	  border-bottom: 0.8em dotted var(--secondary-dim-color);
+      }
+      h1 { font-size: 2em; margin-bottom: 0; }
+      h2 {
+	  border-bottom: 0.3em dotted var(--secondary-dim-color);
+      }
+      h2, h3, h4, h5, h6, p, table, ul, ol, .org-src-container {
+	  width: 60%;
+      }
+      ul ul { width: auto; }
+      aside {
+	  float: right;
+	  width: 35%;
+      }
+      aside p { width: 100%; }
+      @media screen and (max-width:760px) {
+	  h2, h3, h4, h5, h6, p, table, ul, ol, .org-src-container {
+	      width: 90%;
+	  }
+	  aside {
+	      float: inherit;
+	      width: 90%;
+	      border-top: 0.2em dotted var(--secondary-dim-color);
+	      border-bottom: 0.2em dotted var(--secondary-dim-color);
+	      font-size: 0.8em;
+		}
+      }
+
+      footer, #postamble, #preamble {
+	  padding: 0.5em;
+      }
+      table {
+	  border-collapse: collapse;
+	  border-spacing: 0;
+	  empty-cells: show;
+	  border: 0.1em solid var(--secondary-color);
+      }
+      thead { font-family: sans-serif; }
+      th, td {
+	  padding: 0 0.3em;
+	  border: 0.01em solid var(--secondary-color);
+      }
+      img {
+	  max-width: 80vw;
+	  vertical-align: middle;
+      }
+      pre, .src {
+	  padding: 0.5em;
+	  border: 0.1em solid var(--secondary-color);
+	  white-space: pre-wrap;
+	  overflow-x: scroll;
+	  text-overflow: clip;
+	  scrollbar-width: none;
+      }
+      pre::-webkit-scrollbar, .src::-webkit-scrollbar {
+	  display: none;
+      }
+
+
+      dt {
+	  font-weight: normal;
+	  display: inline-block;
+	  border-bottom: 0.1rem dotted var(--secondary-color);
+      }
+      #text-index dt { border-bottom: none; }
+      h2, h3, h4, h5, h6, h7, h8, h9, h10 {
+	  display: block;
+	  font-family: sans-serif;
+	  margin: 0.2em auto 0.5em 0;
+      }
+      a, .link {
+	  text-decoration: none;
+	  color: var(--link-color);
+	  display: inline;
+	  position: relative;
+	  border-bottom: 0.1rem dotted;
+	  line-height: 1.2;
+	  transition: border 0.3s;
+      }
+      a:hover {
+	  color: var(--link-hover-color);
+	  outline-style: none;
+	  border-bottom: 0.1rem solid;
+      }
+      a:visited, .visited-link { color: var(--link-visited-color); }
+      a:visited:hover { color: var(--link-visited-hover-color); }
+      a:focus {
+	  outline-style: none;
+	  border-bottom: 0.1rem solid;
+      }
+      ::selection { background-color: var(--secondary-color); color: var(--secondary-color-dim); }
+      a::selection { background-color: var(--secondary-color-dim); }
+      .org-todo {
+	  background-color: var(--secondary-color);
+	  color: var(--secondary-color-dim);
+	  font-size: .8rem;
+	  float: right;
+      }
+      .org-src-container + .example {
+	  margin-left: 8em;
+      }
+      a[href^=\"https://\"]:not([href*=\"emsenn.net\"]):after, a[href^=\"https://\"]:not([href*=\"emsenn.net\"]):visited:after, .external-link:after, .visited-external-link:after { 
+	  content: \"^\";
+	  font-size: 0.5em;
+	  vertical-align: super;
+      }
+      a[href^=\"https://\"]:not([href*=\"emsenn.net\"]), .external-link {
+	  color: var(--external-link-color);
+      }
+      a[href^=\"https://\"]:not([href*=\"emsenn.net\"]):hover{ 
+	  color: var(--external-link-hover-color);
+      }
+      a[href^=\"https://\"]:not([href*=\"emsenn.net\"]):visited, .visited-external-link { 
+	  color: var(--external-link-visited-color);
+      }
+      a[href^=\"https://\"]:not([href*=\"emsenn.net\"]):visited:hover{ 
+	  color: var(--external-link-visited-hover-color);
+      }
+      blockquote {
+	  border: 0.1em dashed var(--secondary-dim-color);
+	  padding-left: 0.2em;
+      }
+      label.org-src-name {
+	  margin: 0 0 0 3em;
+	  font-family: sans-serif;
+	  font-size: 1rem;
+	  line-height: 0;
+      }
+      .skip-to-content {
+	  opacity: 0;
+	  position: absolute;
+	  left: 0.2em;
+      }
+      .skip-to-content:focus{
+	  opacity: 1;
+	  background-color: var(--secondary-dim-color);
+	  color: var(--primary-color);
+      }
+      ul { max-width: 85%; }
+    #+end_src
+*** HTML head
+    #+name: emacsen-org-html-head-elisp
+    #+begin_src elisp
+       	(setq emacsen-org-html-head
+	      (concat "<style>
+	      <<emacsen-org-html-css>>
+     </style>"))
+    #+end_src
+* Full Emacs Source
+  :PROPERTIES:
+  :header-args: :noweb yes
+  :END:
+  #+name: emacsen-elisp
+  #+begin_src elisp :tangle ~/.emacs.d/init.el
+      <<emacsen-tls-fix-for-emacs-lessthan-26-3-elisp>>
+
+      <<emacsen-straight-el-bootstrapping-elisp>>
+      <<emacsen-use-package-bootstrapping-elisp>>
+
+      <<emacsen-setq-user-mail-address-elisp>>
+      <<emacsen-save-configuration-elisp>>
+      <<emacsen-startup-configuration-elisp>>
+      <<emacsen-scratch-configuration-elisp>>
+      <<emacsen-interface-configuration-elisp>>
+      <<emacsen-basic-behavior-configuration-elisp>>
+
+
+      <<emacsen-theme-elisp>>
+
+      <<emacsen-htmlize-elisp>>
+
+      <<emacsen-fennel-mode-elisp>>
+
+      <<emacsen-lua-mode-elisp>>
+      <<emacsen-racket-mode-elisp>>
+
+
+      <<emacsen-ivy-elisp>>
+
+      <<emacsen-magit-elisp>>
+
+      <<emacsen-org-mode-elisp>>
+
+      <<emacsen-org-attach-screenshot-elisp>>
+
+      <<emacsen-org-roam-elisp>>
+
+      <<emacsen-org-roam-server-elisp>>
+
+    #+end_src
+    

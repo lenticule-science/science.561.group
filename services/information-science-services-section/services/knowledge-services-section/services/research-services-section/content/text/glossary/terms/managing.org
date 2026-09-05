@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       b91cdf78-787a-433d-8573-de4dfcbc6a46
+:END:
+#+title: managing
+#+date: [2025-09-27 Sat 09:51]
+

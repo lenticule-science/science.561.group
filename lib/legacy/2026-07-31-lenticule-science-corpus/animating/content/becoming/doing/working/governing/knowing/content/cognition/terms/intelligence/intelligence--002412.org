@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       3d419b37-eaa5-45f4-9c88-2d9afb9ff574
+:public:   true
+:resource-description: (([[id:edaef069-c68d-46aa-a970-d3cb7fe3165c][resource type]] . [[id:fd6ecbed-9bdf-4570-b4b2-5ff7744c0a96][concept]]))
+:END:
+#+title: intelligence
+#+date: [2025-09-06 Sat 23:28]
+#+index: intelligence

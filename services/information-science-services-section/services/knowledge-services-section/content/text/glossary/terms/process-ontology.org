@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       c66fe75f-fdce-4c8d-95cf-9609c359f880
+:END:
+#+title: process ontology
+#+date: [2025-09-01 Mon 11:55]
+

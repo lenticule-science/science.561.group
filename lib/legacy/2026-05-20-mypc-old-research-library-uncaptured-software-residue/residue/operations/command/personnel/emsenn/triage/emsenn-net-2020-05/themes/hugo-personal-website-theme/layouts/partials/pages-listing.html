@@ -1,0 +1,9 @@
+{{ with .Pages }}
+  <ul>
+    {{ range sort . "Title" "asc" }}
+      <li>
+        {{ partial "page-description" . }}
+      </li>
+    {{ end }}
+  </ul>
+{{ end }}

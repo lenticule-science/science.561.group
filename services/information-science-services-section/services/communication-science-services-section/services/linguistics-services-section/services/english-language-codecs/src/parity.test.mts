@@ -1,0 +1,51 @@
+import test from "node:test";
+import assert from "node:assert/strict";
+import {
+  TRUE,
+  FALSE,
+  BOTTOM,
+  joinKnowledge,
+} from "@lenticule-science/language-topology";
+import {
+  realizeSection,
+  sectionFromText,
+  model,
+} from "./index.mts";
+
+const TOP = joinKnowledge(TRUE, FALSE);
+
+test("settled section realization honors all four bilattice regimes", () => {
+  const out = realizeSection({
+    subject: "dog",
+    cells: [
+      { predicate: "chase", object: "cat", charge: TRUE, tense: "past" },
+      { predicate: "eat", object: "cake", charge: FALSE, tense: "past" },
+      { predicate: "find", object: "bone", charge: BOTTOM, tense: "past" },
+      { predicate: "guard", object: "yard", charge: TOP, tense: "present" },
+    ],
+  });
+  assert.match(out.prose, /The dog chased the cat\./);
+  assert.match(out.prose, /The dog did not eat the cake\./);
+  assert.doesNotMatch(out.prose, /bone/);
+  assert.equal(out.dropped.length, 1);
+  assert.equal(out.audit.length, 1);
+  assert.equal(out.why(0)?.cell.predicate, "guard");
+});
+
+test("sectionFromText bridges language-parsing parses into language-generation sections", () => {
+  const section = sectionFromText("The dog chased the cat.");
+  assert.equal(section.subject, "dog");
+  assert.equal(section.cells[0]?.predicate, "chase");
+  assert.equal(section.cells[0]?.object, "cat");
+  assert.equal(realizeSection(section).prose, "The dog chased the cat.");
+});
+
+test("settling model is append-only and predicts without forgetting", () => {
+  const first = model("a b", "one");
+  const second = first.ingest("a c", "two");
+  assert.equal(first.assertions.length, 1);
+  assert.equal(second.assertions.length, 2);
+  const tokens = new Set(second.predict("a").map((p) => p.token));
+  assert.ok(tokens.has("b"));
+  assert.ok(tokens.has("c"));
+});

@@ -1,0 +1,129 @@
+\section{Sibling-seed composition: off-diagonal cells from composed seeds}
+
+RelMath's prose promises that predication cells with \(\text{subject} \neq
+\text{object}\) ``arise only by composing such seeds drawn from sibling
+utterances of the articulating recursion, never by postulating an entity from
+nothing.'' This section discharges that promise, and states honestly the one
+piece of the promise the corpus never glossed: what ``sibling'' means.
+
+\begin{remark}[The linear-sibling hypothesis --- a stated choice, not a theorem]\label{rem:sibling-hypothesis}\uses{def:articulating}
+The corpus never defines which utterances of an \texttt{Articulating}
+recursion count as one another's siblings. The reading formalized below is
+the \emph{linear} one: for a recursion \(a\), its siblings are the utterances
+of \texttt{a.utterances}, the flat list obtained by walking the
+\texttt{pair}/\texttt{utter} spine and collecting every utterance carried
+along the way, in order. This is the natural reading of a linear recursion
+(each \texttt{pair} has one utterance and one further articulating, no
+branching), but it is a choice: a structural notion of ``sibling'' (for
+instance, utterances at the same depth across distinct recursions) is not
+ruled out and is not addressed here.
+\end{remark}
+
+\begin{definition}[The utterances of a recursion]\label{thm:articulating-utterances}\lean{Obsmetrologia.Articulating.utterances}\leanok\uses{def:articulating, rem:sibling-hypothesis}
+\texttt{utterances} walks the \texttt{pair}/\texttt{utter} spine of an
+\texttt{Articulating} value and returns the list of every utterance carried
+along the way, in order: \(\texttt{utter}\,u \mapsto [u]\) and
+\(\texttt{pair}\,u\,a \mapsto u :: a.\mathrm{utterances}\). Under the
+linear-sibling hypothesis of \cref{rem:sibling-hypothesis} this is the pool a
+recursion's own siblings are drawn from.
+\end{definition}
+
+\begin{proposition}[The head is among its own utterances]\label{thm:head-mem-utterances}\lean{Obsmetrologia.Articulating.head_mem_utterances}\leanok\uses{thm:articulating-utterances, thm:floor}
+The head utterance of a recursion is always a member of its own
+\texttt{utterances} list --- what \cref{thm:seed-head-mem-cellsof} draws on
+below is honestly drawn from \(a\)'s own siblings, not smuggled in from
+outside.
+\end{proposition}
+
+\begin{proposition}[Composing sibling seeds]\label{thm:composeseeds}\lean{Obsmetrologia.PredicationCell.composeSeeds}\leanok\uses{thm:predication-seed}
+The composite of the reflexive seeds of two utterances \(u, v\), taken
+through the \emph{first} utterance's claim: \(\texttt{composeSeeds}\,u\,v =
+(u.\mathrm{token}, u.\mathrm{claim}, v.\mathrm{token})\). Subject and
+predicate come from \(u\); the object comes only from \(v\)'s token.
+Composition is not symmetric in its two arguments: in general \(v\)'s
+predicate never enters.
+\end{proposition}
+
+\begin{proposition}[Composing a seed with itself is the diagonal]\label{thm:composeseeds-self}\lean{Obsmetrologia.PredicationCell.composeSeeds_self}\leanok\uses{thm:composeseeds}
+\(\texttt{composeSeeds}\,u\,u = \texttt{seed}\,u\). Nothing off-diagonal is
+produced from a single utterance alone.
+\end{proposition}
+
+\begin{proposition}[The composite reads its endpoints off the two seeds]\label{thm:composeseeds-subj-obj}\lean{Obsmetrologia.PredicationCell.composeSeeds_subject_object}\leanok\uses{thm:composeseeds}
+The composite's subject is \(\texttt{seed}\,u\)'s subject and its object is
+\(\texttt{seed}\,v\)'s object. This is the sense in which an off-diagonal
+cell is assembled from two seeds rather than posited fresh.
+\end{proposition}
+
+\subsection*{Projection recovery: a real, stated asymmetry}
+
+\begin{theorem}[Subject-projection recovers the composite exactly]\label{thm:subjproj-composeseeds}\lean{Obsmetrologia.PredicationCell.subjProj_composeSeeds}\leanok\uses{thm:composeseeds, thm:predication-proj}
+\(\texttt{subjProj}\,(\texttt{composeSeeds}\,u\,v) = \texttt{seed}\,u\),
+exactly, predicate included --- because the composite's predicate already is
+\(u\)'s claim.
+\end{theorem}
+
+\begin{theorem}[Object-projection does not, in general, recover the composite]\label{thm:objproj-composeseeds}\lean{Obsmetrologia.PredicationCell.objProj_composeSeeds}\leanok\uses{thm:composeseeds, thm:predication-proj}
+\(\texttt{objProj}\,(\texttt{composeSeeds}\,u\,v) = (v.\mathrm{token},
+u.\mathrm{claim}, v.\mathrm{token})\): collapsing the composite onto its
+object side keeps \emph{\(u\)'s} claim, not \(v\)'s. The true statement is
+this asymmetric form. A symmetric claim --- that object-projection recovers
+\(\texttt{seed}\,v\) outright, the mirror of
+\cref{thm:subjproj-composeseeds} --- is \textbf{not} claimed and is false in
+general (see \cref{thm:objproj-composeseeds-of-claim-eq} for the one
+condition under which it does hold).
+\end{theorem}
+
+\begin{proposition}[What object-projection does share with \texttt{seed v}]\label{thm:objproj-composeseeds-endpoints}\lean{Obsmetrologia.PredicationCell.objProj_composeSeeds_endpoints}\leanok\uses{thm:objproj-composeseeds}
+Object-projection of the composite agrees with \(\texttt{seed}\,v\) at both
+entity endpoints (subject and object, both \(v.\mathrm{token}\)) --- but not,
+by \cref{thm:objproj-composeseeds}, at the predicate coordinate. Stated at the
+endpoint level rather than as full equality.
+\end{proposition}
+
+\begin{proposition}[The one condition recovering \texttt{seed v} exactly]\label{thm:objproj-composeseeds-of-claim-eq}\lean{Obsmetrologia.PredicationCell.objProj_composeSeeds_of_claim_eq}\leanok\uses{thm:objproj-composeseeds}
+When \(u\) and \(v\) share a claim, object-projection of the composite does
+equal \(\texttt{seed}\,v\) exactly. This is the missing case that closes the
+gap \cref{thm:objproj-composeseeds} leaves open, not a retraction of the
+asymmetry: outside this hypothesis the equality fails.
+\end{proposition}
+
+\subsection*{Completeness: nothing off-diagonal need be postulated}
+
+\begin{theorem}[\texttt{composeSeeds} is surjective onto all predication cells]\label{thm:composeseeds-surjective}\lean{Obsmetrologia.PredicationCell.composeSeeds_surjective}\leanok\uses{thm:composeseeds, thm:predication}
+Every predication cell \(\varphi\), on- or off-diagonal, equals
+\(\texttt{composeSeeds}\,u\,v\) for some pair of utterances \(u, v\) ---
+witnessed by \(u = (\varphi.\mathrm{subject}, \varphi.\mathrm{predicate})\)
+and \(v = (\varphi.\mathrm{object}, \mathtt{default})\); the witness's second
+claim is irrelevant, since \texttt{composeSeeds} never reads \(v\)'s claim.
+This is a surjectivity statement over \emph{all} utterances, not one
+restricted to a fixed recursion's own siblings --- that restriction is
+\cref{thm:cellsof} below.
+\end{theorem}
+
+\begin{definition}[The cells composable from a recursion's own siblings]\label{thm:cellsof}\lean{Obsmetrologia.PredicationCell.cellsOf}\leanok\uses{thm:articulating-utterances, thm:composeseeds}
+\(\texttt{cellsOf}\,a\) is the list of \(\texttt{composeSeeds}\,u\,v\) for
+\(u, v\) both ranging over \(a.\mathrm{utterances}\) --- the provenance
+restriction \cref{thm:composeseeds-surjective} does not itself supply: every
+member of \(\texttt{cellsOf}\,a\) is composed from two of \(a\)'s own
+siblings under \cref{rem:sibling-hypothesis}'s reading, not from an arbitrary
+utterance drawn from outside.
+\end{definition}
+
+\begin{proposition}[The base case]\label{thm:cellsof-utter}\lean{Obsmetrologia.PredicationCell.cellsOf_utter}\leanok\uses{thm:cellsof}
+A bare \(\texttt{utter}\,u\) has exactly one sibling, itself, so its only
+composable cell is the diagonal seed: \(\texttt{cellsOf}\,(\texttt{utter}\,u)
+= [\texttt{seed}\,u]\).
+\end{proposition}
+
+\begin{theorem}[The recursion's own diagonal seed is always drawn]\label{thm:seed-head-mem-cellsof}\lean{Obsmetrologia.PredicationCell.seed_head_mem_cellsOf}\leanok\uses{thm:cellsof, thm:head-mem-utterances, thm:composeseeds-self}
+\(\texttt{seed}\,a.\mathrm{head} \in \texttt{cellsOf}\,a\) for every
+recursion \(a\): the recursion always composes at least its own reflexive
+seed from its own siblings, never needing anything from outside itself.
+\end{theorem}
+
+This section does not decide whether ``sibling'' should instead mean
+something structural, only that the linear reading is formalized end to end.
+Nor does \cref{thm:composeseeds-surjective} claim a \emph{unique} witnessing
+pair for a given cell --- it produces one witness, not a bijection between
+predication cells and pairs of utterances.

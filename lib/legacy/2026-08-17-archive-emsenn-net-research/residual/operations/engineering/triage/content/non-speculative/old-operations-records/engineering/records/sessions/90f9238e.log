@@ -1,0 +1,14 @@
+Decision record created at `operations/command/records/decisions/003-settlingday-2026-04-04.md`.
+
+Eight decisions captured with context, alternatives, rationale, and status:
+
+| # | Decision | Status |
+|---|----------|--------|
+| 1 | Progressive automation — 7 offices for demotion, 3 completed | **Implemented** (3/7) |
+| 2 | MCP-first architecture | **Decided** |
+| 3 | Three-level computation (LLM / fine-tuned / deterministic) | **Decided** |
+| 4 | Hetzner CX32 migration for local inference | **Proposed** |
+| 5 | 10 adoption priorities from cross-system analysis | **Decided** |
+| 6 | Algebraic learning calculus (closure-based, not floats) | **Proposed** |
+| 7 | Persistent first officer session (MUD-style) | **Proposed** |
+| 8 | mash-engine rename | **Implemented** |

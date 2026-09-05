@@ -1,0 +1,11 @@
+#+title: cross-cultural communication
+#+begin_head
+#+ghe_schema: record-0.1.1
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-22 Tue 10:44]
+#+roam_tags: term
+#+end_head
+#+name: cross-cultural-communication-definition-text
+#+begin_quote
+*/Cross-cultural communication/* is [[file:communication.org][communication]] between two or more [[file:person.org][people]] where the things they're communicating come from different [[file:culture.org][cultural]] backgrounds.

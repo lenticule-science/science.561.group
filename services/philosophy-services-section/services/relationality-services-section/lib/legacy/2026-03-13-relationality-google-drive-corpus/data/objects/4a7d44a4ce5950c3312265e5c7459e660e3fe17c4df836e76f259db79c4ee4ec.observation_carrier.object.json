@@ -1,0 +1,12 @@
+{
+  "encodings": [
+    "telnet"
+  ],
+  "id": "4a7d44a4ce5950c3312265e5c7459e660e3fe17c4df836e76f259db79c4ee4ec",
+  "kind": "observation_carrier",
+  "payload_schema_version": "v1",
+  "payload_shape": {
+    "command": "rest",
+    "recognized_element": "resting"
+  }
+}

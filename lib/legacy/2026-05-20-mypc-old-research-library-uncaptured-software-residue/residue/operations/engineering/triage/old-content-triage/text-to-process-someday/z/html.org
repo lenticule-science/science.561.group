@@ -1,0 +1,13 @@
+#+title: HTML
+#+date: [2020-12-15 Tue 15:20]
+*/Hypertext Markup Language/* is a way of serializing multimedia data, typically for transmission through [[file:http.org][HTTP]].
+
+Here's some random elisp for dangerously not-really-sanitizing HTML strings:
+
+#+name: clean-html 
+#+begin_src elisp
+;;(replace-regexp-in-string "\"" "\"" input)
+(prin1-to-string input)
+#+end_src
+
+

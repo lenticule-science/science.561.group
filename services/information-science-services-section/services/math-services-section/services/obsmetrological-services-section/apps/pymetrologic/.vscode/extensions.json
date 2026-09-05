@@ -1,0 +1,12 @@
+{
+  // VS Code will offer to install these when the lab folder is opened.
+  "recommendations": [
+    "ms-vscode-remote.remote-wsl",       // the lab runs in WSL
+    "ms-python.python",                  // interpreter, testing, debugging
+    "ms-python.vscode-pylance",          // fast type-aware IntelliSense
+    "ms-toolsai.jupyter",                // run `# %%` cells + notebooks
+    "charliermarsh.ruff",                // lint + format + import sort
+    "ms-python.mypy-type-checker",       // mypy strict inline
+    "tamasfe.even-better-toml"           // pyproject.toml editing
+  ]
+}

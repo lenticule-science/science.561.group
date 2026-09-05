@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2019-06-11 Tue 16:14 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Listing My Projects on My Personal Website</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="emsenn" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Listing My Projects on My Personal Website</h1>
+<p>
+I've been implementing my website as a series of static webpages, and
+today I'd like to build out the page listing my personal projects.
+</p>
+
+<p>
+Last week I was giving some thought to how I'd like to handle this,
+and I decided for now, that I'm going to put a <i>JSON</i> file in the root
+of my repositories, that'll have some information about the project.
+Then, I can use <i>Hugo</i> to pull in that file from the repo, and turn it
+into a section on a page.
+</p>
+
+<p>
+This'll require me to work on three projects:
+</p>
+
+<ul class="org-ul">
+<li>My <code>emsenn-website</code> project, where I keep my <i>personal website</i>.</li>
+<li>My <code>hugo-personal-website-theme</code> project, which provides the theme
+to <i>Hugo</i>, that's used by <code>emsenn-website</code>.</li>
+<li>Some third project that generates a <i>media package</i>. I could
+probably use the <code>media-package.json</code> from one of the other two
+projects, but I'd rather not risk stumbling into a recursion error
+if I can help it, or spend too much time mucking about fixing
+relative paths or something. I think I'll use my <code>brutstrap-css</code>
+project because it's relatively simple.</li>
+</ul>
+
+<p>
+I want to take a step back, because programmers might be wondering
+about my language here if they haven't read my previous posts, and to
+be honest, I'm a bit muddy on it myself. Combining language from
+publishing and software development, along with my own ignorance, has
+left my language fairly imprecise. Hopefully, posts like this will
+help me clarify it.
+</p>
+
+<p>
+I write all my stuff, whether it's an essay or source code for a web
+service, as documents, implemented in <i>Org-mode</i>. They're one big long
+text, with whatever code blocks or lists or tables are necessary
+embedded in them.
+</p>
+
+<p>
+Each document is treated like a project - that's <i>Org-mode's</i> term for
+it. Each project contains, beyond the document itself, a few rendered
+versions of the document (such as nice looking HTML), the
+extracted version of the source code from the project, and a few, uh,
+I don't have a term for them but... communicative files?
+</p>
+
+<p>
+For example, a <code>README.md</code>, that's shown on the project homepage on most
+<i>Git forges</i>, or things like a <code>CODE_OF_CONDUCT</code>, or the
+<code>media-package.json</code> that I mentioned. Files that exist to communicate
+information about the project to folk, outside the context of the
+project itself. (The source file, its renderings, and its extracted
+source are Watsonian components of the project, while the readme, code
+of conduct, media package, and other such files are Doylian
+components.
+</p>
+
+<p>
+Here's what the <code>brutstrap-css</code> directory looks like:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-text"><span class="linenr">0: </span>./
+<span class="linenr">1: </span> | brutstrap-css.html
+<span class="linenr">2: </span> | brutstrap-css.org
+<span class="linenr">3: </span> | brutstrap-css.tex
+<span class="linenr">4: </span> | brutstrap-css.txt
+<span class="linenr">5: </span> | brutstrap.css
+<span class="linenr">6: </span> | README.md
+<span class="linenr">7: </span> | media-package.json
+<span class="linenr">8: </span> | src/
+<span class="linenr">9: </span>      | index.org
+</pre>
+</div>
+
+<p>
+The first four files are renderings, the fifth is the Brutstrap
+stylesheet itself, the sixth the project readme, the seventh its media
+package definition, and then in the <code>src/</code> directory is the source
+file itself - what I actually edit to work with the project.
+</p>
+
+<p>
+The specifics of the Brutstrap package don't matter, but let's look at
+its <code>media-package.json</code>. This is the file I'll be pulling into
+<i>Hugo</i>, to turn into the project listing.
+</p>
+
+<p>
+Why do I call it a media package? Because it's not intended to for
+linking to the extracted code, or source file, but the various
+rendered documents: pieces of text media.
+</p>
+
+<p>
+Anyway, here's <code>brutstrap-css/media-package.json</code>
+</p>
+
+<div class="org-src-container">
+<pre class="src src-json">{<span style="color: #747474;">"brutstrap-css"</span>: {
+    <span style="color: #747474;">"name"</span>: <span style="color: #8e8e8e;">"Brutstrap CSS"</span>,
+    <span style="color: #747474;">"creator"</span>: <span style="color: #8e8e8e;">"emsenn"</span>,
+    <span style="color: #747474;">"license"</span>: <span style="color: #8e8e8e;">"CC0"</span>,
+    <span style="color: #747474;">"description"</span>: <span style="color: #8e8e8e;">"a cascading stylesheet for representing HTML content as it is constructed"</span>,
+    <span style="color: #747474;">"versions"</span>: {
+        <span style="color: #747474;">"current"</span>: {
+            <span style="color: #747474;">"sourcehut"</span>: {
+                <span style="color: #747474;">"location"</span>: <span style="color: #8e8e8e;">"https://git.sr.ht/~emsenn/brutstrap/tree/refs/heads/master/"</span>,
+                <span style="color: #747474;">"formats"</span>: [<span style="color: #8e8e8e;">"html"</span>,<span style="color: #8e8e8e;">"md"</span>,<span style="color: #8e8e8e;">"pdf"</span>,<span style="color: #8e8e8e;">"tex"</span>,<span style="color: #8e8e8e;">"txt"</span>]
+            }
+        }
+   }
+}}
+</pre>
+</div>
+
+<p>
+This is pretty simple, so hopefully kind of self-explanatory.
+</p>
+
+<p>
+The next thing I want to do is write out is how I'll record the
+listing in my <code>emsenn-website</code> project, and then I'll change the
+<code>hugo-personal-website-theme</code> project so it's capable of making the
+two communicate.
+</p>
+
+<p>
+For now I'll keep it fairly simple; here's what I'm thinking should
+work:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-markdown">  +++
+  title = "Projects"
+  layout = "media-package-list"
+  mediaPackages = [
+    "<span style="color: #686868; text-decoration: underline;">https://git.sr.ht/~emsenn/brutstrap-css/blob/master/media-package.json"</span>
+  ]
+  +++
+This page is a listing of my projects.
+</pre>
+</div>
+
+<p>
+I'll add more URLs to the mediaPackages list once I have them, but for
+now, that should work.
+</p>
+
+<p>
+Well, will work, once I make the match <code>media-package-list</code> <i>Hugo layout</i>.
+</p>
+
+<p>
+That looks like this:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-html">{{ define <span style="color: #8e8e8e;">"main"</span> }}
+  {{ with .Content }}{{ . }}{{ end }}
+  {{ partial <span style="color: #8e8e8e;">"media-package-listing"</span> . }}
+{{ end }}
+</pre>
+</div>
+
+
+<p>
+Fairly simple - but that's because it relies on a <i>partial layout</i>,
+<code>media-package-listing</code>, which is a bit more complex.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-html">{{ with .Params.mediaPackages }}
+  &lt;<span style="color: #686868;">ul</span>&gt;
+    {{ range . }}
+      {{ with getJSON . }}
+        {{ range $packageID, $packageDetails := . }}
+          &lt;<span style="color: #686868;">li</span>&gt;
+            {{ $packageDetails.name }} - Created by
+            {{ $packageDetails.creator }}, {{ $packageDetails.name }} is
+            {{ $packageDetails.description }} released under the
+            {{ $packageDetails.license }}.
+            {{ if $packageDetails.versions.current }}
+              The current version is available through the following
+              locations and formats:
+              {{ with $packageDetails.versions.current }}
+                &lt;<span style="color: #686868;">ul</span>&gt;
+                  {{ range $originName, $originDetails := . }}
+                    &lt;<span style="color: #686868;">li</span>&gt;
+                      &lt;<span style="color: #686868;">strong</span>&gt;<span style="font-weight: bold;">{{ $originName | title }}</span>&lt;/<span style="color: #686868;">strong</span>&gt;:
+                      {{ range $originDetails.formats }}
+                        &lt;<span style="color: #686868;">a</span> <span style="color: #7c7c7c;">href</span>=<span style="color: #8e8e8e;">"{{ $originDetails.location }}{{ $packageID }}.{{ . }}"</span>&gt;
+                          {{ . }}
+                        &lt;/<span style="color: #686868;">a</span>&gt;
+                      {{ end }}
+                    &lt;/<span style="color: #686868;">li</span>&gt;
+                  {{ end }}
+                &lt;/<span style="color: #686868;">ul</span>&gt;
+              {{ end }}
+            {{ end }}
+          &lt;/<span style="color: #686868;">li</span>&gt;
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  &lt;/<span style="color: #686868;">ul</span>&gt;
+{{ end }}
+</pre>
+</div>
+
+<p>
+I'm not going to bother explaining how that works, exactly, but here's
+the relevant HTML from the "Projects" page:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-html">&lt;<span style="color: #686868;">main</span>&gt;
+  &lt;<span style="color: #686868;">p</span>&gt;
+    This page lists my projects.
+  &lt;/<span style="color: #686868;">p</span>&gt;
+  &lt;<span style="color: #686868;">ul</span>&gt;
+    &lt;<span style="color: #686868;">li</span>&gt;Brutstrap CSS - Created by emsenn, Brutstrap CSS is a
+      cascading stylesheet for representing HTML content as it is
+      constructed, released under CC0. The current version is
+      available through the following locations and formats:
+      &lt;<span style="color: #686868;">ul</span>&gt;&lt;<span style="color: #686868;">li</span>&gt;&lt;<span style="color: #686868;">strong</span>&gt;<span style="font-weight: bold;">Sourcehut</span>&lt;/<span style="color: #686868;">strong</span>&gt;:
+          &lt;<span style="color: #686868;">a</span> <span style="color: #7c7c7c;">href</span>=<span style="color: #8e8e8e;">"...brutstrap-css.html"</span>&gt;html&lt;/<span style="color: #686868;">a</span>&gt;
+          &lt;<span style="color: #686868;">a</span> <span style="color: #7c7c7c;">href</span>=<span style="color: #8e8e8e;">"...brutstrap-css.md"</span>&gt;md&lt;/<span style="color: #686868;">a</span>&gt;
+          &lt;<span style="color: #686868;">a</span> <span style="color: #7c7c7c;">href</span>=<span style="color: #8e8e8e;">"...brutstrap-css.pdf"</span>&gt;pdf&lt;/<span style="color: #686868;">a</span>&gt;
+          &lt;<span style="color: #686868;">a</span> <span style="color: #7c7c7c;">href</span>=<span style="color: #8e8e8e;">"...brutstrap-css.tex"</span>&gt;tex&lt;/<span style="color: #686868;">a</span>&gt;
+          &lt;<span style="color: #686868;">a</span> <span style="color: #7c7c7c;">href</span>=<span style="color: #8e8e8e;">"...brutstrap-css.txt"</span>&gt;txt&lt;/<span style="color: #686868;">a</span>&gt;
+      &lt;/<span style="color: #686868;">li</span>&gt;&lt;/<span style="color: #686868;">ul</span>&gt;
+  &lt;/<span style="color: #686868;">li</span>&gt;&lt;/<span style="color: #686868;">ul</span>&gt;
+&lt;/<span style="color: #686868;">main</span>&gt;
+</pre>
+</div>
+
+<p>
+I'll probably end up changing the styling and layout a fair bit, but
+honestly I'm pleased with this as a first draft - I can put a
+<code>media-package.json</code> following that format anywhere online, and then
+all I need to do to add that package as a project on that list is add
+it to the appropriate list.
+</p>
+
+<p>
+It's the start of a homegrown package management system I've written
+about before, where it's focused entirely on the distribution of media
+content, no real toolkit or accomodation for a build chain.
+</p>
+
+<p>
+The next step from here will be implementing the media package in some
+more projects and seeing if it actually all works in production.
+</p>
+<div id="outline-container-org5adbf0c" class="outline-2">
+<h2 id="org5adbf0c">Index</h2>
+<div class="outline-text-2" id="text-org5adbf0c">
+<dl class="org-dl">
+<dt>Brutstrap CSS</dt><dd></dd>
+
+<dt>Hugo</dt><dd>A software tool for creating rendered documents from formatted text files. See <a href="https://gohugo.io/">https://gohugo.io/</a></dd>
+<dt>Hugo layout</dt><dd>The framework which determines what is in a rendered document and how it appears. See <a href="https://gohugo.io/templates/lookup-order/">https://gohugo.io/templates/lookup-order/</a></dd>
+<dt>Hugo partial templates</dt><dd>See <a href="https://gohugo.io/templates/partials/">https://gohugo.io/templates/partials/</a></dd>
+<dt>Org-mode</dt><dd>A way of formatting plain data inside text documents. See <a href="https://orgmode.org/">https://orgmode.org/</a>  or #OrgMode.</dd>
+<dt>website, personal</dt><dd></dd>
+</dl>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: emsenn</p>
+<p class="date">Created: 2019-06-11 Tue 16:14</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       fc7d1ea7-e967-46b9-9fdf-1b15cbba3b0f
+:public:   true
+:ROAM_ALIASES: derive derived
+:END:
+#+title: deriving
+#+date: [2025-08-14 Thu 12:44]
+

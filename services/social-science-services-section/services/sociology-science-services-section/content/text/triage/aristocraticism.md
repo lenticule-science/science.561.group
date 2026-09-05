@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       748af328-66a3-4c27-a982-46f4c8f235fc
+:public:   true
+:resource-description: (([[id:edaef069-c68d-46aa-a970-d3cb7fe3165c][resource type]] . [[id:fd6ecbed-9bdf-4570-b4b2-5ff7744c0a96][concept]]) ([[id:2d79d4ba-8d36-4714-869c-081e8d40d24f][field]] . [[id:469ee922-2238-44f2-8e3d-5500116abe29][aristocracy]]))
+:END:
+#+title: aristocraticism
+#+date: [2025-09-28 Sun 19:57]

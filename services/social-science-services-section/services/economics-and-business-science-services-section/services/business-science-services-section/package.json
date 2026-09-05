@@ -1,0 +1,11 @@
+{
+  "name": "@lenticule-science/stroboscope-business-research",
+  "version": "0.1.0",
+  "description": "Stroboscope Business Research — Lenticule Science's business research division: the science of value realized in circulation (accounting, strategy, marketing, negotiation, competitive intelligence, human resources), the instrument that makes circulation measurable.",
+  "type": "module",
+  "keywords": [
+    "brand:stroboscope-business-research",
+    "business-science",
+    "lenticule-science"
+  ]
+}

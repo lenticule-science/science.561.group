@@ -1,0 +1,80 @@
+:PROPERTIES:
+:ID:       9150072b-8551-40a1-ac24-6b6c694999bf
+:form:     [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]
+:END:
+#+title: Babble, [2025-09-15 Mon 11:02]
+#+date: [2025-09-15 Mon 11:02]
+#+author: emsenn
+
+I wanna play around in [[id:2d55e751-41d9-423a-8898-363f0ea9847f][Fennel]], specifically mucking about what something like a [[id:e5248432-6d1e-436e-9bdc-50fe0fcd3fe6][thing]] would look like, given my more robust understanding of different [[id:1f928166-8617-49ab-b900-0987954f648f][metaphysical philosophies]] than last time I approached things.
+
+Unfortunately, at this point, I know there's /many/ ways to construct a [[id:185d0139-c4db-4223-85e1-97e9665d3147][metaphysics]], and I also know there's some of them that can be [[id:4c92bcc1-3de0-4375-929c-c5ce26bc5135][digitizing]] easier than others.
+
+I think for the sake of a [[id:de5cda39-6fa8-4f17-a11e-3c6aca2b66e8][MUD engine]], I'll want to [[id:951d5421-ebe7-4df3-8d3e-0fcba4d33164][implement]] [[id:6b9c71c3-0b70-4bc9-b19f-d30a24e663f9][kyriontoeidic theory]], which is, from what I can feel out, pretty similar to how I was [[id:53db0e23-0bba-4756-be38-d8aa0522e0f7][programming]] my last [[id:14cc5094-e5c2-4d53-828b-0da7d5684793][MUD]], [[id:a6e6b071-b2ff-4fdc-8312-84b01f95896d][TAB]].
+
+There, a [[id:e5248432-6d1e-436e-9bdc-50fe0fcd3fe6][thing]] was defined by having /attributes/ and /behaviors/, which were [[id:2f56055d-6f9c-401d-a6fb-e66a7886936b][inherited]] from models. It was somewhat similar to an [[id:7b2ea6f9-f386-4261-a29b-8684c71feb87][entity-component system]], but... wasn't, due to a different [[id:898c8699-d49b-483a-bcc6-f541a3ea8328][lineage]].
+
+To consider what I might do now, I think I'd like to start by [[id:bf3f18be-7c8a-451f-b777-29c253eca508][mapping]] a [[id:d8470715-0427-460a-8e68-16b591a4d80d][glossary]] of [[id:fd6ecbed-9bdf-4570-b4b2-5ff7744c0a96][concepts]] that I'll be using, and how they're defined against each other.
+
+The goal is to get a complete enough mapping of concepts that how to implement them in code is evident.
+
+Before I even start, I'm realizing I might need a few levels of glossary, we'll see.
+
+...Or maybe a glossary isn't even the right place to start.
+
+See, I started to talk about /instancing/, which I figured would take in /forms/ as input, and output an /instantiation/.
+
+But then I'm thinking maybe I should explain some about the triadic model I've developed with [[id:7031b7c2-7bfd-410e-8ed7-fbfc81dc3afc][relational process theory]]: [[id:32e00173-c695-4bb6-b0d2-9dc17fec128b][acts]], [[id:b4ae66ad-8700-4af3-b995-17cfd8b74eb9][conditions]], and [[id:1f810c64-c53a-4e7e-8d9a-1a93dfbb1b7a][structures]].
+
+In short, for any claim to be made, such as "existence exists" or "there is a thing," there has to be an act of [[id:d7989cc6-3c09-4fd1-be48-55ef1f958cd5][determining]], which means there are acts.
+
+This determining results in some [[id:33c6945f-b093-46e9-8750-5e3cfd6514dd][determination]], specifically of a relationship between the elements of the claim being determined. These relationships would be the conditions.
+
+And, for some thing to be some thing, to exist, it has to sustain itself, meaning there is some thing holding these conditions, a structure.
+
+This all might sound tautological, or nonsensical, but the nuance will matter as I develop the grammar and try to systemize the theory.
+
+Maybe it'll help me to rediscuss this in specific terms, repeating, roughly, the derivations that establish relational dynamics.
+
+So, repeating the induction of my first chain of derivations, to claim that some thing exists is not trivial - and it is necessary to claim that some thing exists, to make a MUD. That is, broadly speaking, what a MUD simulates: that some things exist in some relation, and multiple users can interface with those things.
+
+But, specifically, claiming that any thing exists is to claim any thing is different than no thing, or at a minimum, any thing is not what it is not. In [[id:70bc351d-cac6-4f5f-804e-d69a0522a596][logical theory]], this is the [[id:66f02303-1a4f-4b52-a7a0-26d214c200a2][principle of non-contradiction]] and [[id:cd2fa1c4-d5bd-42b8-b585-292a5ada6bd6][self-differentiation]]
+
+In Fennel, and all programming languages, I'm working inside a box that already has a lot of assumptions about logic and stuff, so my function needs to also check that a thing isn't Fennel's a priori concept of nil.
+
+#+begin_src fennel
+  (fn exists? [thing]
+    (and (not= thing nil)
+         (not= thing (not thing))))
+
+  (exists? "foo")
+#+end_src
+
+#+RESULTS:
+: true
+
+The issue is, for being a test of our very first claim, this function relies on a lot of logic that comes from Fennel, not relational dynamics.
+
+That's the issue that we run into with determining, abstractly, and why we need conditions and so on.
+
+I know I used to know how this stuff was implemented in Fennel, but, symbols are conditions, tables are structures, and functions are, as shown, acts.
+
+Now, also as we see, the condition of "existent" is not explicitly coded into a thing: it's the result of a predicate-checking function.
+
+That's part of what I might class as "unary conditions" - either a thing has them, or they don't. Also, it might be worth highlighting that when I say thing, I don't just mean an object, but I am including things like concepts.
+
+I'll also highlight that in proper relational dynamics, this existing claim leads to specific acts, conditions, and structures, which are not similarly necessary at this low level due to Fennel's preconfiguration, but are perhaps worth covering:
+
+- including and excluding are the acts that allow for determining:
+  - a thing includes itself in what it is
+  - a thing excludes what it is not in what it is
+
+These acts require the conditions of inclusion and exclusion: is a thing being included or excluded by another?
+
+And the structuration that this including and excluding lead to is a coherent minimal thing: something with the structure to determine what conditions it has and what they are, such that other structures and conditions interact.
+
+...Wow, trying to translate this into something I can do with simple LISP code really took the heart out of the dynamics of relational dynamics.
+
+But i also am probably just too out-of-practice with things like monads and closures to properly do what I want to do.
+
+So let me chug on in this improper way.

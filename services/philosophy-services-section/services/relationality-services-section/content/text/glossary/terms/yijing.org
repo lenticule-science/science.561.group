@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       91b295e1-7d31-4bb7-9101-b679ee044704
+:node-relations: (([[id:428c2f61-8c85-48b8-a191-1187c2a5f2ae][extends]] . [[id:caed3b82-143c-4344-a2c2-03824a83969b][book]]) ([[id:17818943-5372-4867-965c-3983ba0b641e][utility]] . [[id:aa216e4d-af3a-44c0-b811-43c3ba335d7d][claromancy]]) ([[id:17818943-5372-4867-965c-3983ba0b641e][utility]] . [[id:cf50da13-b6b4-45ec-a085-033fc6229fc3][cosmology]]) ([[id:17818943-5372-4867-965c-3983ba0b641e][utility]] . [[id:f427ec74-c16a-4950-887e-0b40dc5cee0d][philosophy]]) ([[id:9adb7d35-07dd-477c-8efa-1e169b968d16][origin]] . [[id:c5f78e46-9b80-4b20-a706-2972c322327c][Western Zhou period]]))
+:END:
+#+title: Yijing
+#+date: [2025-10-05 Sun 08:33]

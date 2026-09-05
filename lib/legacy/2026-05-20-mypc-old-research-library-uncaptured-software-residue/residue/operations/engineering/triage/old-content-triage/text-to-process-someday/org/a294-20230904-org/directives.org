@@ -1,0 +1,68 @@
+#+title: Directives
+#+description: emsenn's personal directives.
+#+startup: num
+#+options: num:t h:7
+
+* I am a person.
+
+* I use names and labels to identify myself.
+
+** My Name is emsenn.
+
+** My Pronouns are e/em/eir.
+
+*** My Alternative Pronouns are they/them/their.
+
+* I maintain Directives that provide guidance on my decision-making and actions.
+
+** I maintain my Directives as an Org-mode file ("Directives file").
+
+* I maintain an encyclopedia of information I know about the worlds I have experienced.
+
+** I maintain my encyclopedia as a collection of Org-mode files ("Encyclopedia directory").
+
+** I maintain my encyclopedia with Org-mode and Org-roam.
+
+** My Encyclopedia defines terms used in my Directives.
+
+* I maintain a presence on the Web
+
+** I maintain an email address: emsenn@emsenn.net
+** I use Hive for broadcasting posts onto the Web
+
+*** I track Hive blockchain transactions in my Ledger.
+
+*** I track Hive posting and comment activity in my Operations.
+
+* I collaborate with the Groundhog Autonomous Zone
+
+** I am organizing the Bootstrapping Domain of the Groundhog Autonomous Zone
+
+** I am organizing Makha Sa Garden
+
+** I am organizing Ferguson Garden
+
+* I try to increase the capabilities of personal, community, and natural systems.
+
+** I use Emacs as a tool for handling information on computers
+
+*** I maintain the configuration for my Emacsen as an Org-mode file.
+* I maintain a defense against the threats of colonialism
+
+** I maintain a revenue that provides the means of life through colonialism which other Directives do not.
+
+** I hold assets which are valued by colonials.
+
+*** I hold cryptocurrency tokens.
+
+**** I hold Bitcoin.
+
+**** I hold Algorand.
+
+**** I hold tokens on the Hive Blockchain.
+
+***** I hold HIVE.
+
+***** I hold Hive Power.
+
+***** I hold Hive-Backed Dollars.

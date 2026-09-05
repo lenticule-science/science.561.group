@@ -1,0 +1,46 @@
+\section{Fiber quantifiers for the projections}
+
+This section records claim nodes and dependency edges.
+
+\begin{proposition}[List join and meet of charges]\label{thm:charge-joinList}\lean{Infomaterial.Charge.joinList}\leanok\uses{thm:four-bilattice, thm:settling}
+The knowledge-join $\texttt{joinList}$ of a finite list of charges is the right
+fold of $\vee_k$ with unit $\bot_k$; the knowledge-meet $\texttt{meetList}$ is the
+right fold of $\wedge_k$ with unit $\top_k$. These finite folds are the
+existential and universal aggregations over a finite fiber, with the empty fiber
+landing at the respective knowledge pole.
+\end{proposition}
+\begin{proposition}[Finite fibration]\label{thm:finiteFibration}\lean{Infomaterial.Valuation.FiniteFibration}\leanok\uses{thm:predication}
+A finite fibration records a base map together with, for each cell $\varphi$, its
+preimage presented as a finite list, plus the membership law $\psi \in
+\texttt{fiber}\,\varphi \iff \texttt{base}\,\psi = \varphi$. This is exactly the
+data that makes $\exists_{f}$ and $\forall_{f}$ computable for a non-injective
+generator.
+\end{proposition}
+\begin{proposition}[Fiber existential and universal]\label{thm:existsF}\lean{Infomaterial.Valuation.existsF}\leanok\uses{thm:valuation, thm:finiteFibration, thm:charge-joinList}
+The existential $\texttt{existsF}\,F\,v$ sends $\varphi$ to the knowledge-join of
+$v$ over the fiber of $\varphi$; the universal $\texttt{forallF}\,F\,v$ sends
+$\varphi$ to the knowledge-meet over that fiber. These are the fiberwise
+$\bigsqcup_k$ and $\bigsqcap_k$ that the hyperdoctrine demands.
+\end{proposition}
+\begin{theorem}[Existential left adjoint to reindexing]\label{thm:existsF-adjunction}\lean{Infomaterial.Valuation.existsF_adjunction}\leanok\uses{thm:existsF, thm:reindex, thm:kle-trans}
+$\exists_{f} \dashv f^{*}$: for any valuations $v, w$, $\texttt{existsF}\,F\,v
+\le_k w \iff v \le_k \texttt{reindex}\,(F.\texttt{base})\,w$. The fiber join is the
+best lower existential approximation, proved straight from the least-upper-bound
+laws of \texttt{Charge}.
+\end{theorem}
+\begin{theorem}[Reindexing left adjoint to the universal]\label{thm:forallF-adjunction}\lean{Infomaterial.Valuation.forallF_adjunction}\leanok\uses{thm:existsF, thm:reindex, thm:kle-trans}
+$f^{*} \dashv \forall_{f}$: for any valuations $v, w$,
+$\texttt{reindex}\,(F.\texttt{base})\,v \le_k w \iff v \le_k
+\texttt{forallF}\,F\,w$. Together with the previous theorem this completes the
+adjoint triple $\exists_{f} \dashv f^{*} \dashv \forall_{f}$ for every finite
+fibration.
+\end{theorem}
+\begin{theorem}[Coherence with the bijection case]\label{thm:existsF-converse}\lean{Infomaterial.Valuation.existsF_converse}\leanok\uses{thm:existsF, thm:converseIso, thm:converse-adjunction}
+Presented as a finite fibration with singleton fibers $[\texttt{converse}\,
+\varphi]$ (\texttt{converseFib}), the converse generator's fiber existential
+agrees with reindexing along converse: $\texttt{existsF}\,\texttt{converseFib}\,v
+= \texttt{reindex}\,\texttt{converse}\,v$. The bijection adjoints of the previous
+section are exactly the singleton-fiber instance of the general construction.
+\end{theorem}
+
+This section records claim nodes and dependency edges.

@@ -1,0 +1,19 @@
+---
+title: Making progress with GnoponEmacs
+author: emsenn
+date-created: 2025-07-22
+type: babble
+status: draft
+keywords:
+  - babble
+  - gnoponemacs
+  - website
+publish_to:
+  - emsenn-net
+---
+
+Yesterday I made some progress with GnoponEmacs, specifically setting up capture templates for my music log. Don't really love the work, and it has me wishing I had something like my ideal software for more properly spinning up the schema and functions that actually go into that, without having to shoehorn it into Org-mode's subtree form.
+
+That said, Org-mode's ability to serve as a metaframe above and outside my futzing, with its ability to already make a website, is definitely still a necessary tool at this point.
+
+Today, my goal should be on getting GnoponEmacs to publish emsenn.net, which could be relatively easy, but I suspect I'll make it hard on myself. There's a lot of assumptions about the directory layout that don't necessarily hold up anymore, so it'll probably take a lot of failed compilations in order to get something, anything at all, publishing.

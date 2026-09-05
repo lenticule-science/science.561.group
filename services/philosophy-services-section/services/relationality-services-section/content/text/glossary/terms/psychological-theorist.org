@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       ff870e2b-1273-44ae-bcc4-1628303292e6
+:NODE-RELATIONS: (([[id:92dfcfab-ba8f-407d-a2a6-121a76dbe7a3][theorist]] . [[id:2782b41b-9dc9-408c-9174-06c60af1640c][psychology]]))
+:END:
+#+title: psychological theorist
+#+date: [2025-09-01 Mon 10:53]
+

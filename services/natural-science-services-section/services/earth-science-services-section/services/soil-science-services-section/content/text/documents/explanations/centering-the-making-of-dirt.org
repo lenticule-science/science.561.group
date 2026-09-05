@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       8acf7b1d-fc1a-4b16-8ca2-2e203c2ea190
+:form:     [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]
+:END:
+#+title: Babble, [2025-09-02 Tue 08:59], On centering the making of dirt
+#+date: [2025-09-02 Tue 08:59]
+#+author: emsenn
+
+I was [[id:59a01374-1869-49dc-a443-46cd77548bf0][reading]] [[id:f7eb4bb0-9eb1-4daa-8fdf-7ea19c56248e][my writing]], specifically [[id:706d25b7-1d22-426a-ae3d-edc75f0b7d98][Letter ot the Web, 2023-10-31: Fall Arrives]], and was struck by [[id:ef3433a0-d9d2-453b-82de-f5b2afe9bfa6][remembering]] how central [[id:b300307c-83fc-4188-b4a2-a1215c750e8a][making dirt]] used to be to [[id:b41dcc21-9136-40cd-a514-8dc93263201a][my praxis]], and I'm [[id:0e97d683-cfbb-40af-9518-42e94045acdd][introspecting]] on how that came to change.
+
+With very little thought I can remember how i got there - not just related to [[id:37b25413-f1bc-4ecf-b6fe-a6c2c81dcc55][climate breakdown]] or [[id:c201d2c7-15fb-4f85-9f26-51cf155ee1ea][LandBack]], but [[id:0b8a0677-262f-4e1f-bfdf-1432403ea310][cultivating relationality]]: making dirt is [[id:4a2382fb-f933-4018-be6a-98cbaa01a961][good]] because it helps [[id:81791140-d846-43cc-88b0-f66f951b3576][relations]] [[id:0bf0b37a-1181-4a1f-a036-93d7b397eb52][relate]].
+
+And, I'm [[id:98e7fbfd-f774-4587-9127-fdcd1db2b562][proud]] of [[id:40cbaad9-af3c-4573-b356-ae116687e483][myself]] for [[id:f2829f05-2e51-461e-bcaa-c62c396b7cd7][babbling]] this little [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]], because it isn't [[id:8f301bbb-3306-477f-a8f2-4b9a074478b6][important]] or [[id:c94b2ca2-c57b-4616-aa1f-765436a4a7e3][urgent]], and I had to [[id:1e6940ad-093c-4d1d-8a15-adf4ffaca144][stop]] [[id:54213c5a-a48a-4976-acff-cc89ebf673c0][writing]] [[id:ea55f339-24a1-49ea-adc6-8786ad86e288][Babble, [2025-09-01 Mon 10:09], Mapping the neurotic platform intellectual]] to do it - but that's exactly the sort of thing I want to do, with [[id:edc48bf0-336b-4b63-8505-a3730b328c9d][GnoponEmacs]].

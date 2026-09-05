@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://561.group/swarm-intelligence/agentic-orchestration-platform/dispatch/dispatch.schema.json",
+  "title": "Dispatch morphism record (capability-predication traversal)",
+  "description": "Morphism: (agents, work-item) → assignment. Per lab/.../predicated-agentic-orchestration-platform/dispatch/ and platform-opener: 'Dispatch reads capability predications and produces match-strength values'. Selects an agent whose capability predications match the work-item's required-skill, with match-strength as the assignment basis. Variance: restriction of the abstract traversal morphism.",
+  "kind": "morphism",
+  "domain": "(agents[], work-item)",
+  "codomain": "assignment | unmatched",
+  "variance": "restriction",
+  "monotone": true,
+  "type": "object",
+  "required": ["agents", "workItem", "output", "evidence"],
+  "additionalProperties": false,
+  "properties": {
+    "agents": { "type": "array" },
+    "workItem": {
+      "type": "object",
+      "required": ["id", "requiredSkill"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "requiredSkill": { "type": "string", "minLength": 1 },
+        "scope": { "type": "string" }
+      }
+    },
+    "output": {
+      "oneOf": [
+        {
+          "type": "object",
+          "required": ["kind", "assignedTo", "matchStrength"],
+          "additionalProperties": false,
+          "properties": {
+            "kind": { "const": "assignment" },
+            "assignedTo": { "type": "string", "minLength": 1 },
+            "matchStrength": { "enum": ["true", "top"] }
+          }
+        },
+        {
+          "type": "object",
+          "required": ["kind", "reason"],
+          "additionalProperties": false,
+          "properties": {
+            "kind": { "const": "unmatched" },
+            "reason": { "type": "string", "minLength": 1 }
+          }
+        }
+      ]
+    },
+    "evidence": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  }
+}

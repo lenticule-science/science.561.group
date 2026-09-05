@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating",
+  "title": "predicating",
+  "description": "Restricts articulation by saying something of the articulated - admits the oriented triple (s, p, o) as an assertion-position.",
+  "type": "object",
+  "required": [
+    "morphism",
+    "domain",
+    "codomain"
+  ],
+  "properties": {
+    "morphism": {
+      "const": "predicating",
+      "description": "a one-way generative arrow"
+    },
+    "domain": {
+      "$ref": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell",
+      "description": "the potential articulation cell - articulation present, nothing yet said of it"
+    },
+    "codomain": {
+      "$ref": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell",
+      "description": "the predication cell, an oriented assertion-position"
+    }
+  }
+}

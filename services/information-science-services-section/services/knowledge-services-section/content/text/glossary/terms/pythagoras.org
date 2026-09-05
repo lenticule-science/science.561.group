@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       04f0dd8c-b3af-466b-8138-0a360767b599
+:END:
+#+title: Pythagoras
+#+date: [2025-08-29 Fri 09:09]
+

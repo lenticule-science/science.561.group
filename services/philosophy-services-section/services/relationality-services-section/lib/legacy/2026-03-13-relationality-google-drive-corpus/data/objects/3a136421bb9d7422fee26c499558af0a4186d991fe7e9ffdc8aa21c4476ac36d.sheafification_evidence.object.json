@@ -1,0 +1,28 @@
+{
+  "act_ref": "SheafificationEvidence",
+  "glued_sections": {
+    "cover_0": "id_U"
+  },
+  "id": "3a136421bb9d7422fee26c499558af0a4186d991fe7e9ffdc8aa21c4476ac36d",
+  "kind": "sheafification_evidence",
+  "matching_families": {
+    "cover_0": [
+      {
+        "arrows": [
+          "id_U"
+        ],
+        "glued_section": "id_U",
+        "object": "U",
+        "sections": {
+          "id_U": "id_U"
+        }
+      }
+    ]
+  },
+  "presheaf_id": "b11d8b57ff259be47caa2eede2691f5ba412895983d4c558b197e03bc6b8debf",
+  "status": "pass",
+  "uniqueness_witnesses": {
+    "functoriality_ok": true,
+    "sheaf_gluing_ok": true
+  }
+}

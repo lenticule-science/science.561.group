@@ -1,0 +1,22 @@
+% Print build entry point — `leanblueprint pdf` runs latexmk on this.
+% The blueprint plugin is NOT loaded; macros/print.tex defines the dependency
+% macros (\lean, \leanok, \uses, ...) as no-ops so plain pdflatex compiles
+% content.tex unchanged. Theorem environments live in macros/common.tex.
+
+\documentclass[a4paper]{report}
+
+\usepackage{amssymb, amsthm, amsmath}
+\usepackage[nameinlink, capitalize]{cleveref}
+\usepackage{hyperref}
+
+\input{macros/common}
+\input{macros/print}
+
+\title{RelMath --- a dependency-free formalization of the 561 corpus}
+\author{561 Group}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\input{content}
+\end{document}

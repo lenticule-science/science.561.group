@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       2c117d9e-76cf-45c6-89eb-f6156a0ff04e
+:END:
+#+title: awake
+#+date: [2025-08-28 Thu 09:14]
+

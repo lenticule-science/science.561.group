@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       1bc9a9ad-5008-4fb5-8ade-dc5983b063a3
+:END:
+#+title: magic spell
+#+date: [2025-10-05 Sun 00:00]
+

@@ -1,0 +1,20 @@
+# Configuration for the engineering/tools/research/math toolkit.
+# Tools auto-discover this file by walking up from CWD; pass --root to override.
+
+[program]
+title = "Relational Infinity-Topoi"
+subtitle = "Cohesive ∞-topoi, RITM, stratified directed ∞-sites, and the Heyting-algebra shadow — a triage subtheory under predication-categories"
+
+[corpus]
+lib_dirs = [
+    "concepts", "objects", "morphisms", "theorems",
+    "examples", "narratives", "questions", "references",
+]
+bib = "references.bib"
+
+[validate]
+min_body_chars = 200
+lean_dir = "lean"
+
+[compose]
+output = "publications/monograph.md"

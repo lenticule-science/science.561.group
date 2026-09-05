@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       084aedc3-5d38-41ec-908d-5d77c5700947
+:public:   true
+:instantiates: [[id:711cfd7d-5129-44a9-8dc5-de61aafd5d1c][date]]
+:field:    [[id:e39947c4-1bd9-44d0-bfb5-3e2bef417065][Earth]]
+:ROAM_ALIASES: 2023-11-29 "November 29th, 2023"
+:END:
+#+title: November 29th, 2023
+#+date: [2025-09-24 Wed 19:36]
+#+index: Chronology!Common Era!21st Century!2023!November 2023!November 29th, 2023

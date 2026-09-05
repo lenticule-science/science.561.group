@@ -1,0 +1,19 @@
+{
+  "act_ref": "ObservationKernel",
+  "basis": [
+    "a",
+    "b"
+  ],
+  "id": "ea29e8381baf7e5135557d40257ef0e0bf08cfb36f3a9438e858445b607f3ca4",
+  "kernel_matrix": [
+    [
+      "1/2",
+      "1/2"
+    ],
+    [
+      "1/2",
+      "1/2"
+    ]
+  ],
+  "kind": "observation_kernel"
+}

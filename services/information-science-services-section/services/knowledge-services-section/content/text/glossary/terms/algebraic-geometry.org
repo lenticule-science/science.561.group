@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       686c2d3d-b05a-4713-810b-d7ec94f87590
+:END:
+#+title: algebraic geometry
+#+date: [2025-10-09 Thu 12:31]
+

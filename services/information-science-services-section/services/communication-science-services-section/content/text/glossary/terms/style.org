@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       fe582aae-0dcd-4b28-81e6-b7f3a39712f1
+:END:
+#+title: style
+#+date: [2025-09-27 Sat 09:30]
+

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       06c21fde-b05a-4118-9f15-262eb3375b31
+:END:
+#+title: loss
+#+date: [2025-09-03 Wed 21:12]
+

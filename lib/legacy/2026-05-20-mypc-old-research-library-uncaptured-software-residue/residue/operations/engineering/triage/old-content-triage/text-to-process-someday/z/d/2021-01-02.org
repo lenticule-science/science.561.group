@@ -1,0 +1,68 @@
+#+title: 2021-01-02
+#+begin_head
+#+ghe_schema: daily-record-0.1.2
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2021-01-02 Sat 05:56]
+#+roam_tags: daily-record
+#+end_head
+
+#+name: definition
+This is some of what I (emsenn) experienced and wrote on on [2021-01-02 Sat].
+
+#+toc: headlines 2
+
+* Activity Log                                                     :noexport:
+
+* Journal                                                          :noexport:
+** [2021-01-02 Sat 05:56]
+
+   I need to come up with a different thing to do when I wake up in the [[file:../morning.org][morning]] and need something to occupy my [[file:../time.org][time]] until I get back to bed, beyond checking my [[file:../email.org][email]] and the [[file:../news.org][news]]. It's what I did this morning, and I saw the latest email from [[file:../theruran.org][@theruran]], continuing our discussion of... from my perspective, his on-going [[file:../collaboration.org][Collaboration]], and in his perspective, I reckon the conversation is about how mean I am, and how my own mean-ness gets in the way of seeing what he's saying.
+
+   And, he might be right - it's too early in the day for me to be able to suss out something like that! But, from experience, the conversation follows a very familiar cadence. Someone who has spent a lifetime of naive complicity with the [[file:../contemporary_kyriarchy.org][contemporary settler-colonial kyriarchy]] has recently realized it's bad, for one reason or another. They then see that their work to make the world better has been anti-kyriarchist this whole time, and so carry on with what they were doing, tying up their moral goodness with their work and expecting that to solve everything.
+
+   And while it is [[file:../settlerday.org][Settlerday]], this isn't exactly the tone I wanted to strike with the first part of my morning. Especially when my sleep was so adorable! [[file:../ikmu.org][Ikmu]] spent almost the entire night cuddled up as my "little spoon." Also, this morning she ate too much and threw up - I wasn't expecting that, despite it being a life-long habit, since her food bowl had so little in it. I guess it's not just down to the availablity of food! All the commotion woke up [[file:../esther_davis.org][Esther]], which is unfortunate.
+
+   Now, I'm sitting here in bed watching "Remember Me," the [[file:../star_trek_the_next_generation.org][Star Trek: The Next Generation]] episode, while Esther tries to fall back asleep. I'm going to tinker on [[file:../groundhog_emacs.org][Groundhog Emacs]] for a moment - I noticed I want an extra new-line in the [[file:../org_roam_daily_capture_templates.org][Org-roam daily capture template]] that I use to write these journal entries, and it'd be nice to have a function for unlinking an [[file:../org_mode_link.org][Org-mode link]] in a text.
+** [2021-01-02 Sat 06:24]
+
+   The other day, after quite a bit of being hung-up, I finally realized how I wanted to get back to doing a [[file:../tabletop_role_playing_games.org][tabletop role-playing game]] set in [[file:../teraum.org][Teraum]]. I'd decided that a [[file:../west_marches.org][West Marches]]-style [[file:../role_playing_game_campaign.org][campaign]] would probably be the best-suited to the [[file:../person.org][people]] around me who I reckon would be interested in playing. What was giving me trouble was figuring out where in my world to set it, so that players would be relatively "stuck" where they are, but still have access to [[file:../adventure.org][adventure]].
+
+   A few days ago I decided that a great setting would be if the [[file:../red_union.org][Red Union]] created their own [[file:../hollywood.org][Hollywood]], a place where they produced intentional [[file:../art.org][art]] and [[file:../culture.org][culture]] and exported it as far as they could. After being stuck on a name for a little bit, I finally decided on [[file:../teraum/rosebanks.org][Rosebanks]]. For the past couple days I've had the idea that it would be just north of [[file:../teraum/ack.org][Ack]], in the southern part of [[file:../teraum/arathel_county.org][Arathel County]] that's part of the [[file:../teraum/game.org][GAME]]. But, that wasn't wowing me: Ack would be so close, and there's no way I could reasonably make the city impenetrable.
+
+   So, I sat and thought about what I remembered to be happening in Teraum, around [[file:../teraum/80pc.org][80pc]], when the [[file:../brave_old_world_campaign.org][Brave Old World campaign]] was set. I'd already decided that I wanted all the players to be from somewhere around the [[file:../teraum/game.org][GAME]], and so it seemed reasonable to have the new campaign set there, too. But then this morning it occurred to me, I can set the campaign just north of the [[file:../teraum/widewoods.org][Widewoods]], and that'll definitely put it far away enough from /Ack/ to avoid letting folks wander there in a session, and give it a lot of space for adventure to unfold.
+
+   So, now I really have no excuse to not start putting together little adventures!
+** [2021-01-02 Sat 09:47]
+
+   Fell back asleep after [[file:../ikmu.org][Ikmu]] laid down on top of my back and started kneading the blanket and purring real loud. Hard to stay awake through that!
+
+   I re-read the email from [[file:../theruran.org][@theruran]] and on re-read, it still doesn't seem... great. In a lot of ways he just seems mad that I'm not thrilled a colonial is using colonial resources to build a system out of indigenous ideas. He admits a lifetime of kyriarchism has blinded him to certain ways of thinking, but also gets very mad if I make assumptions about his thinking. And also, I feel like, not grasping the systemic nature of things, or appreciating the weird violence in his rhetoric, where he's encouraging me to keep posting, because such posts are useful to him, but discouraging me from criticizing his labor.
+
+   It seems like there's some big hold-overs from being a kyriarchist, like thinking it's his choice what he does to make the world better, and a /big/ expectation that I not question those. One thing stuck out, is he quoted myself back at me, saying people in the GAZ need to trust each other's Collaboration. How... how does he think we get there without justifying ourselves to each other? I don't expect people to just trust my choices, when they're a part of my community. I expect them to engage in a dialog about the choices and come to understand whether they trust them or not. Funnily, a lot of what he seems most upset by in my rhetoric, is the same stuff he's presenting in his, I'm just explicit and up-front about it.
+
+   James is super-clearly proud of how much work he's done to change his relationship to kyriarchism, and I think that's getting in his own way, keeping him from seeing that there's still a lot to change. And I think in a lot of ways, he holds his own identity as rather static, and so plays into that [[file:../settler_colonial_mindset.org][settler-colonial mindset]] thing I've talked about before, where they assume the world is changing, not their perspective on it.
+
+   I'm still not entirely sure how to respond. "Your rhetoric expresses a violent threat of assimilation, where I am a resource and you are an actor," is honest and short, but I think would just make him even more upset.
+
+   But also I simply cannot just molly-coddle every Assimilationist who comes along. The whole point of the WebGAZ is setting up a space where I don't have to have that relationship with Collaborators, instead, as James points out, we can trust each other's actions... because we understand where folk are coming from, and agree with it.
+
+   And if I can't agree that James' actions are best when they're centered around building a systems modeling system for kyriarchists, then... he would still very much like to benefit from reading what I have to say, but needs me to stop asking questions about if that's a good use of his time.
+
+   
+* Weather observations
+
+* Postings
+
+* Media log
+
+* Reposts
+
+* News log
+** Navajo Nation battles to protect its elders as COVID-19 death tolls spike
+   :LOGBOOK:
+   - Note taken on [2021-01-03 Sun 13:50] \\
+     As the deaths from [[file:../covid_19.org][COVID-19]] continue to rise, the [[file:../navajo_nation.org][Navajo Nation]] works to protect its [[file:../elder.org][elders]], the holders of their [[file:../tradition.org][traditions]].
+   :END:
+   - Souce :: https://www.cnn.com/2021/01/02/us/navajo-nation-coronavirus-toll/index.html
+   - Source :: https://indiancountrytoday.com/news/tribes-work-to-shield-elders-knowledge-from-virus-3eZmVmUyoky2g8jaIes8qA

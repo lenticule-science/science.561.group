@@ -1,0 +1,40 @@
+#+title: planning my Online presence, spring 202
+#+export_file_name: online-presence-spring-2020
+#+hugo_section: plans
+#+hugo_tags: onlineCommunication
+#+hugo_base_dir: ~/dev/personal-website/
+I have recently been giving great thought to what living within the white supremacy has done to my way of thinking
+
+part of that thought has been about how I communicate with others
+
+communicating Online is one of the ways I communicate, so I have been thinking about that
+
+these thoughts are mostly full of doubt:
+
+- should I have a website?
+
+- should I have a microblog?
+
+- should I have a MUD?
+
+- what should any of those be, if I have them?
+
+despite doubts, I have made some decisions for the rest of winter, and the coming spring:
+
+- I will keep my website
+
+- I will post on my microblog
+
+- I will not work on my MUD
+
+I want to keep notes on my self-education toward decolonizing my thinking
+
+for now those will go on my website
+
+I want to put more time into my website's visual and organizational aesthetic
+
+I worry that perhaps a traditional website is inherently imperial in manner
+
+I worry that using it will limit my ability to think without hierarchal taxonomy
+
+I hope those worries will challenge me

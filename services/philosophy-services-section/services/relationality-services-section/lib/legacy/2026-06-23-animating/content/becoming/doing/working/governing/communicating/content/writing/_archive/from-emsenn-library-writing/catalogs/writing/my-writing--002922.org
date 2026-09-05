@@ -1,0 +1,78 @@
+:PROPERTIES:
+:ID:       f7eb4bb0-9eb1-4daa-8fdf-7ea19c56248e
+:ROAM_ALIASES: "my writing"
+:END:
+#+title: emsenn's writing
+#+date: [2025-09-02 Tue 08:59]
+
+* [[id:9c606291-7654-428d-8f3f-13f97cbcb41f][catalog]]
+
+#+begin_src elisp :results value raw :exports results :eval yes
+  (let* ((nodes
+          (org-roam-db-query
+           [:select [*]
+            :from nodes
+            :where (and
+                    (or (like properties '"%form%babble%")
+  		      (like properties '"%form%essay%"))
+                    (like properties '"%public%true%"))]))
+         (sorted-nodes
+          (sort nodes
+                (lambda (a b)
+                  (string-lessp (nth 8 a) (nth 8 b))))))
+    (mapconcat
+     (lambda (node)
+       (format "- [[id:%s][%s]]" (car node) (nth 8 node)))
+     (reverse sorted-nodes)
+     "\n"))
+#+end_src
+
+#+RESULTS:
+- [[id:db6af486-8736-4c9d-9243-57d8607511c2][test babble]]
+- [[id:495f274d-80ec-47a2-93dc-733355ef9b9c][essay]]
+- [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]
+- [[id:6912c5d9-0f6b-467f-b2b4-d528700c26f3][Why emsenn Is Lowercase]]
+- [[id:058de326-7978-46aa-b3cd-b31ffff7d491][Support Sustainable Economics in Pine Ridge]]
+- [[id:cf67c091-6332-4fd9-ae40-678d1b5411bb][Submission to Cindy Milstein zine, message to liberals]]
+- [[id:672ab7a1-d632-48be-b18d-08a54472bb8c][Returning to Emacs with GnoponEmacs]]
+- [[id:32d5e9f3-d254-4dd3-beed-18563f87d50c][Relaunching emsenn.net]]
+- [[id:17d85aa2-9bf9-4fec-9fb6-2a6ed68ffd5a][Reflecting on personal experiences with solidarity in North Carolina]]
+- [[id:dbe2a349-8d7c-481d-908e-11cb39ef6f89][Poking at stats for my research notes]]
+- [[id:b2499858-b4a4-4ba3-8e8d-642e0ac43bbc][On hospicing humanity as a mechanism of total liberation]]
+- [[id:7b5581e4-9d06-4f64-8a99-8fde57fb9514][On epistemics, economies, and didactics of encyclopedia, wiki, and digital gardens.]]
+- [[id:50dedd6e-8a0c-4f72-96d4-f921b29d8e32][My Essays]]
+- [[id:303a7064-9edf-47e1-9686-f02fc6c42f7e][J.D. Vance, Catholicism, and the Postliberal Turn]]
+- [[id:c81f19bc-7142-47f6-a593-1cf9a8c84e98][Installing Guix on my Omnibook X]]
+- [[id:0dd3b087-3869-4b29-b349-edc231973b8a][How I Installed Emacs On My Chromebook]]
+- [[id:099b75f0-0f2c-4327-a676-0f3f62a44a22][Differentiating Attributing and Blaming in Introspection]]
+- [[id:21e23b2b-5d94-4296-a004-316a28a16556][Decolonization is not a Metaphor]]
+- [[id:1a218fef-004e-45c3-98fc-135b33a64b21][Complaining about wildfire smoke]]
+- [[id:8d19496f-c0eb-4e03-97b0-ba154371707e][Brief History of Rhoticitiy in General American English]]
+- [[id:a6bdfc4d-666a-4363-90ea-b169f81d33d7][Blessed is the Flame]]
+- [[id:3ca0238a-4623-4722-808a-93a21d4ca3f1][Babble, [2025-09-20 Sat 21:44], Geontological analysis of Flavor Town]]
+- [[id:85a9a3a8-4c2a-4d2c-8121-d83e64eff8a7][Babble, [2025-09-19 Fri 21:39], On describing GnoponEmacs nodes]]
+- [[id:856456dd-1a2c-4c11-9406-02ade9d20fe0][Babble, [2025-09-19 Fri 10:20], On improving GnoponEmacs with semiotics]]
+- [[id:20c6e9e1-ee11-48c7-8a55-9a98e90480b4][Babble, [2025-09-17 Wed 23:05], Drafting a Fennel library for semiotics]]
+- [[id:a4ca1768-2382-4eb1-b4da-12116df827bf][Babble, [2025-09-16 Tue 18:25]]]
+- [[id:a6c60f5e-4915-4a4c-b73c-b62f8879c287][Babble, [2025-09-15 Mon 10:55], Install Cubical Agda in GnoponEmacs]]
+- [[id:8fc8c669-c688-4aa7-b1ed-244f6394fcd2][Babble, [2025-09-15 Mon 09:19], Properly installing Fennel on my Omnibook]]
+- [[id:34a6180c-ce51-4693-a6f0-2a3e9ed3f9b4][Babble, [2025-09-11 Thu 08:55], Installing TAB on my Omnibook]]
+- [[id:d3c094e7-afc4-489a-a376-050092978208][Babble, [2025-09-10 Wed 11:09], On the defining "emsean paracosm"]]
+- [[id:1351e79d-a307-4c6f-a675-8456b5fa24bb][Babble, [2025-09-08 Mon 14:42], On Neel's Theory of the Party]]
+- [[id:c76c79ac-0fd5-4bb4-baaf-75a0318cde0a][Babble, [2025-09-04 Thu 19:57], On influencer authenticity, aestheticity, authority, and availability]]
+- [[id:59bdaa1b-63a4-4d0a-8546-b01746e684dc][Babble, [2025-09-02 Tue 20:05], On linguistic pragmatics and "ludimatics"]]
+- [[id:fa3440f9-9ee1-4133-b0bc-d240808fc1b0][Babble, [2025-09-02 Tue 20:03], On Californication]]
+- [[id:ea55f339-24a1-49ea-adc6-8786ad86e288][Babble, [2025-09-01 Mon 10:09], Mapping the neurotic platform intellectual]]
+- [[id:cb672b64-f2b1-46c0-96e9-a0c8a4abef6e][Babble, [2025-09-01 Mon 09:49], Idea for Teraumian cats]]
+- [[id:52ec12b3-b317-4f7a-9b06-a7d63cad1656][Babble, [2025-08-29 Fri 19:12], On the lineage of californication]]
+- [[id:ce80dded-27ad-4264-b047-96165d05d14b][Babble, [2025-08-28 Thu 10:15]]]
+- [[id:0e876cfc-d0db-4993-a5c8-8291e4ab8412][Babble, [2025-08-28 Thu 08:34], On the Annunciation Shooting]]
+- [[id:15841348-244d-444c-a2a8-dc4f40620017][Babble, [2025-08-26 Tue 09:23]]]
+- [[id:3b564925-5102-424c-8e05-b5bf5e0b2804][Babble, [2025-08-25 Mon 00:49]]]
+- [[id:d169cd46-fa49-4e08-b49b-5a3d42d6202e][Babble, [2025-08-04 Mon 09:53], Working with the Org-roam database]]
+- [[id:25d4618f-0ffd-48cc-aa2f-239400fdf325][Babble, [2020-01-19 Sun], Anatomy of Things]]
+- [[id:a3c1c545-774c-4191-b060-0fb77f9c7096][Babble, [2016-09-17 Sat], Planning MUD skillchecks]]
+- [[id:a0750c9e-6f5c-42d2-9f41-77bdbb044f5a][Babble, 2025-08-07 0819h]]
+- [[id:76e18c83-2781-40fd-99cd-7122f7fd73cd][Anchoring Oktoberfest/Indianer genring post in theory]]
+- [[id:9cbbeef0-0b01-4d86-900b-5c6c7623fbf7][Adding Org-cite to GnoponEmacs]]
+- [[id:f03175d2-697b-40af-b3e4-522412564d80][A History of Liberal Ontologizing As Kyriarchist Genring]]

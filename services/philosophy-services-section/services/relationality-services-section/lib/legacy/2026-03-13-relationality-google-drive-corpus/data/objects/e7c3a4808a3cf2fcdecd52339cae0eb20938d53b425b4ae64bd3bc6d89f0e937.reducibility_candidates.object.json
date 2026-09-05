@@ -1,0 +1,12 @@
+{
+  "candidates": {
+    "x": {
+      "normalization_witness_id": "945238d14196f1b671909dba1b96712fa0af3ea2129ae9aac82089a8083f904f",
+      "term_id": "bbed3c70bae66273132fe47dcfa680e11235520dff27466c6505ab428fb57bad",
+      "typing_witness_id": "706942affb7a8d9065957fdff491fa5e972d7c2fd5ac03673d87a1b6b94f2d48"
+    }
+  },
+  "context_id": "39fe7febb78a08e49c554135cecf1bc06decb8baf26ce2349bb35c0d42a180dd",
+  "id": "e7c3a4808a3cf2fcdecd52339cae0eb20938d53b425b4ae64bd3bc6d89f0e937",
+  "kind": "reducibility_candidates"
+}

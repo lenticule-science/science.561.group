@@ -1,0 +1,6 @@
+name = "RelationalInfinityTopoi"
+version = "0.1.0"
+defaultTargets = ["RelationalInfinityTopoi"]
+
+[[lean_lib]]
+name = "RelationalInfinityTopoi"

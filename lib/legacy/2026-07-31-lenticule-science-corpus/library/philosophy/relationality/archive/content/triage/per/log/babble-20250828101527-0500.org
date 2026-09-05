@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       ce80dded-27ad-4264-b047-96165d05d14b
+:form:     [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]
+:public:   true
+:END:
+#+title: Babble, [2025-08-28 Thu 10:15]
+#+date: [2025-08-28 Thu 10:15]
+#+author: emsenn
+
+I'm watching [[id:2e07d838-1754-4fb9-8071-36e587ec28fb][They Might Be Giants]]' recent live performance for [[id:d32d22e2-0486-4773-96aa-5c61e51e796c][KEXP]], and they mentioned they'd been a band for like 40 years, and wow, it made me feel old.

@@ -1,0 +1,12 @@
+{
+  "name": "@lenticule-science/tai-chi-services-section",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Shared scientific and practical services concerning Tai Chi as a martial art and cross-domain fitness practice.",
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
+  "devDependencies": {
+    "@red-cup-engineering/json-schema-services-section": "0.1.9"
+  }
+}

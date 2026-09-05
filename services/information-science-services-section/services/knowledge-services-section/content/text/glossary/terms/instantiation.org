@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       de5179c0-67de-4d65-99f8-6316dbfebe75
+:END:
+#+title: instantiation
+#+date: [2025-10-11 Sat 21:52]
+

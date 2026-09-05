@@ -1,0 +1,7 @@
+{
+  "name": "@lenticule-science/fitness-services-section",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Shared cross-domain fitness services spanning multiple health domains."
+}
+

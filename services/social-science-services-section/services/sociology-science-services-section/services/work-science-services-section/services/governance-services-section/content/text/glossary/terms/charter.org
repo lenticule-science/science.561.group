@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       481ee600-ab0d-4c53-b758-ea0d9d061427
+:END:
+#+title: charter
+#+date: [2025-09-28 Sun 14:32]
+

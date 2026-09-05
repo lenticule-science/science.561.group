@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       3ae3b760-524a-478c-949d-71e0ebaf26b8
+:ROAM_ALIASES: SPORE
+:END:
+#+title: synthetic place of ritualized ethnosis
+#+date: [2025-09-01 Mon 07:49]
+#+index: ethnosis!ritual ethnosis!synthetic place of ritualized ethnosis
+
+A */synthetic place of ritualized ethnosis/* (or SPORE) is both the [[id:c5f982ed-01b3-4d8c-8af8-f1ce93dd248c][origin point]] and [[id:a8fd2d30-861c-4341-b39f-90d9899a88b5][whole]] of a [[id:7d4b42d4-fe3e-4fcb-bd30-97385276d7fe][mode of virtual environment]] for [[id:76033efb-c34c-4e7c-8e5e-7a2dcf5aeb6b][vernacular autoethnosizing]].
+
+The [[id:fd6ecbed-9bdf-4570-b4b2-5ff7744c0a96][concept]] of a SPORE was [[id:fe5f19f5-4966-42c0-bc11-f5b5f7031238][created]] when [[id:42858739-88d0-4370-b575-8e3c0b66409f][synthesizing]] the concept of [[id:98f833f3-82d9-4e83-86be-9fd6ed124027][vernacular autoethnosis]] with [[id:bfddfbb8-0fb2-42a7-92f6-e9ab5064749f][digital gardens]].
+
+[[id:3ffa600c-f831-428f-bd11-a4e6583ff5ad][My files]] is the first SPORE.

@@ -1,0 +1,40 @@
+:PROPERTIES:
+:ID:       08675b4b-07b6-4680-9533-5ce69628ffd3
+:END:
+#+title: common relational path
+#+date: [2025-10-12 Sun 22:01]
+
+Down the line I'd love to make this a list of the relations most commonly used as paths, but right now this is just for my convenience: a handcoded list of paths that can probably be used to add some more detail to any given node.
+
+- instantiates :: (existential) what archetype or form this node realizes
+- field :: (contextual) the ambient domain or field it belongs to
+- source :: (directional) the origin of its primary relation
+- target :: (directional) what it points toward or transforms into
+- derives :: (inferential) what other node its logic depends on
+- refines :: (transformational) specializes, adds precision
+- generalizes :: (transformational) abstracts, widens scope
+- extends :: (transformational) adds structure while preserving coherence
+- restricts :: (transformational) limits domain of validity
+- depends-on :: (operational) relies on evidence, material, or prior act
+- enables :: (modal) creates conditions for target to occur
+- stabilizes :: (modal) maintains target’s coherence
+- destabilizes :: (modal) disrupts or dissolves target’s coherence
+- observes :: (operational) measures or records target
+- models :: (operational) represents target in formal register
+- realizes :: (operational) implements or enacts target
+- validates :: (operational) confirms or tests target relation
+- connects :: (topological) mediates between two otherwise separate nodes
+- bridges :: (topological) links distinct fields
+- contains :: (topological) has target as internal subsite
+- emits :: (dynamic) produces target node (result, corollary)
+- absorbs :: (dynamic) resolves or consumes target (input, premise)
+- composes-with :: (categorical) forms pushout/pullback with target
+- adjacent :: (topological) shares boundary or interface with target
+- equates :: (logical) asserts equivalence or isomorphism
+- contradicts :: (logical) asserts negation or incompatibility
+- necessitates :: (modal) target must hold if source holds
+- permits :: (modal) target may hold if source holds
+- prevents :: (modal) target cannot hold if source holds
+- symbolizes :: (semiotic) stands for or expresses target
+- interprets :: (epistemic) reads or re-frames target
+- comments-on :: (meta) provides discourse or reflection about target

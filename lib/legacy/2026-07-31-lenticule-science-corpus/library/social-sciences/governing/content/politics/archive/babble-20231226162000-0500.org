@@ -1,0 +1,37 @@
+:PROPERTIES:
+:ID:       8aeec03e-f720-4140-9f00-ef5945cb837c
+:form:     [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]
+:instantiates: [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]
+:author:   [[id:40cbaad9-af3c-4573-b356-ae116687e483][emsenn]]
+:date-created: [2023-12-26 Tue 16:20]
+:END:
+#+title: Babbling about life, December 26th 2023
+#+author: emsenn
+
+- The [[weather]] - and gravity of our [[planning]] - has me feeling exhausted, so I mostly napped, but I also moved a few bins around down by the [[202 Soilworks]].
+- [[talking|Talked]] with [[Zitkato]]:
+		- Gave me some tasks I added to the [[Migration to Pine Ridge#Plans]] and [[Living with Phahin Sinte Wakpala]]
+	- Told him about how we brought [[Hyla chrysoscelis|tree frogs]] back to the [[Headwaters, Crooked Creek]].
+	- Also shared some [[photograph|photos]] of our [[HDPE potato hotbox]] and our [[202 Soilworks|Soilworks]].
+		- He wasn't irked by the [[Groundhog aesthetic]]. "It's not trash if you use it."
+		- Talked about my ideas for [[HDPE casting]] using [[solar oven|solar ovens]].
+	- Asked about water: available nearby, walk or short drive. "The people around you will be there to help."
+	- Zitkato says, "Jobs are scarce but we are working on that too," and mentioned a potential [[food truck]]. (Could we provide them with [[microgreen|microgreens]] and/or [[mushroom|mushrooms]])?
+	- I mentioned [[Mo]] and [[Ari]] and Zitkato was excited: they've been wanting a [[welder]] to help make [[wood stove|wood stoves]].
+	- I asked if an arrive in mid/late [[March 2024]] was feasible, and he said we'd make it work.
+	- We talked a bit about how if we do not make opportunities for accomplices to help us, then well-intentioned folk have no option but to support the grifters.
+	- Zitkato spoke to coming from an orientation of [[revolutionary suicide]].
+	- We can use his [[Uncle Leo]]'s [[PO box]] at first.
+	- He mentioned we'll be building a [[buffalo prairie]].
+	- I talked about the [[Tipularia discolor|cranefly orchid]] that has come up in the [[Headwaters, Crooked Creek]] through this winter. *(And have learned transcribing this entry that another [[common name]] for the plant is the "crippled cranefly.")*
+- [[talking|talked]] with [[Ralph McDonald]]:
+	- No [[act|actions]] had been taken in actually [[buying]] a [[homestead]]
+	- Their [[searching]] had expanded all the way to [[West Virginia]], so wasn't likely to provide the accommodations we'd want.
+	- Told him that we had our plan: [[Migration to Pine Ridge]] and wanted to make sure he wouldn't feel [[abandoning|abandoned]] if we did that.
+	- He said he wouldn't, and would be happy to help with the migration.
+	- That might solve parts of the issues with the [[202 Garden Relocation]]: he can take things that we can't, back to [[Atlanta]] or wherever.
+- [[talking|Talked]] with [[Hannah Kass]]
+	- Explained a bit about the migration.
+	- They want to write something about it with me, to iteratively document and manifest it.
+	- I set up `#mooneys-island` within [[Turntide Islands]] for this discussion.
+	- In that channel I've discussed that we're using [[AI]] as part of the [[Groundhog Autonomous Zone]].

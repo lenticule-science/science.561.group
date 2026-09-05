@@ -1,0 +1,46 @@
+option "operating_currency" "USD"
+option "booking_method" "FIFO"
+option "name_income" "Input"
+option "name_expenses" "Output"
+* Commodities
+2023-01-01 commodity AFMINRR
+  name: "Animal, Fish, Minnow, Rosy Red"
+* 2022
+** 2022-12 December
+*** 2022-12-31 Saturday
+**** Open Accounts
+2022-12-31 open Equity:OpeningBalances
+2022-12-31 open Assets:Burrow:Aquaponics:Basins:Cistern
+2022-12-31 open Assets:Burrow:Aquaponics:Basins:Hardening
+2022-12-31 open Assets:Burrow:Aquaponics:Basins:Minnow1
+2022-12-31 open Assets:Burrow:Aquaponics:Basins:Minnow2
+**** Establish inventory
+2022-12-31 * "Establish inventory"
+  Assets:Burrow:Aquaponics:Basins:Hardening      7 MWATGAL
+  Assets:Burrow:Aquaponics:Basins:Minnow1        3 MWATGAL
+  Assets:Burrow:Aquaponics:Basins:Minnow2        7 MWATGAL
+  Assets:Burrow:Aquaponics:Basins:Minnow2       11 AFMINRR {0.20 USD}
+  Equity:OpeningBalances
+* 2023
+** 2023-01 January
+*** 2023-01-01 Sunday
+**** Open Accounts
+2023-01-01 open Assets:Inventory:Triage
+2023-01-01 open Assets:Garden:Porch:Basins:Minnow1
+2023-01-01 open Input:Infrastructure:Water
+2023-01-01 open Input:Purchase:Store:Petsmart
+**** Fill hardening tank
+2023-01-01 * "Fill hardening tank"
+  Assets:Burrow:Aquaponics:Basins:Hardening   0.5 MWATGAL
+  Input:Infrastructure:Water
+**** Purchase, minnows from PetSmart
+2023-01-01 * "Purchase minnows from Petsmart"
+  Assets:Inventory:Triage    40 AFMINRR {0.20 USD}
+  Input:Purchase:Store:Petsmart
+**** Labor, allocate minnows
+2023-01-01 * "Labor, allocate minnows"
+  Assets:Burrow:Aquaponics:Basins:Minnow1  12 AFMINRR {0.20 USD}
+  Assets:Burrow:Aquaponics:Basins:Minnow2   5 AFMINRR {0.20 USD}
+  Assets:Garden:Porch:Basins:Minnow1        6 AFMINRR {0.20 USD} 
+  Assets:Burrow:Aquaponics:Basins:Cistern  17 AFMINRR {0.20 USD}
+  Assets:Inventory:Triage      -40 AFMINRR {}

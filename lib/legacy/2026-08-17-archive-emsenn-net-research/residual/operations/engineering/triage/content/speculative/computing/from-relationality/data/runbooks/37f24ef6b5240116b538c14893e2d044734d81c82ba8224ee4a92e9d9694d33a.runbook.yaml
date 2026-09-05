@@ -1,0 +1,22 @@
+name: trace_reentry
+inputs:
+- role: trace
+  kind: trace
+outputs:
+- role: trace
+  kind: trace
+- role: reentry_trace_evidence
+  kind: reentry_trace_evidence
+steps:
+- name: trace_reentry
+  operator: trace_reentry
+  step_index: 0
+  inputs:
+  - role: trace
+    kind: trace
+  outputs:
+  - role: trace
+    kind: trace
+  - role: reentry_trace_evidence
+    kind: reentry_trace_evidence
+id: 37f24ef6b5240116b538c14893e2d044734d81c82ba8224ee4a92e9d9694d33a

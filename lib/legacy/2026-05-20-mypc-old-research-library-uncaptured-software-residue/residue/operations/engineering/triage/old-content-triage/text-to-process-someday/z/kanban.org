@@ -1,0 +1,5 @@
+#+title: Kanban
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-18 Fri 14:02]
+*/Kanban/* is an [[file:asset_management.org][asset management]] system, specifically for relating asset-consumption to asset-production.

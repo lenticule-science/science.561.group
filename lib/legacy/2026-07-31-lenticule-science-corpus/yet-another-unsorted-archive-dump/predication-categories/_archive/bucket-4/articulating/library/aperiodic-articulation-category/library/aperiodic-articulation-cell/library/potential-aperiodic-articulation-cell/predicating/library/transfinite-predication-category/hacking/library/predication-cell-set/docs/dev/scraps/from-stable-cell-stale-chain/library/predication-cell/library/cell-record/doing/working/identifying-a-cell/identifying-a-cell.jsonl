@@ -1,0 +1,4 @@
+{"e":"identifying-a-cell","a":"describing","v":"The morphism cell-record → cell-id. Assigns each cell-record its content-addressed identifier; two records receive equal identifiers exactly when their canonical encodings coincide.","t":"2026-05-19T23:00:00Z"}
+{"e":"identifying-a-cell","a":"consuming","v":"cell-record","t":"2026-05-19T23:00:00Z"}
+{"e":"identifying-a-cell","a":"producing","v":"cell-id","t":"2026-05-19T23:00:00Z"}
+{"e":"identifying-a-cell","a":"depending-only-on","v":"canonical-encoding","t":"2026-05-19T23:00:00Z"}

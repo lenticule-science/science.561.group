@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       b2b5b6c9-2477-4702-bfe3-517753edead4
+:END:
+#+title: soil water infiltration
+#+date: [2025-09-23 Tue 20:31]
+

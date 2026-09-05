@@ -1,0 +1,18 @@
+id: 78409a9abc86b6a46067fa44dccd807c15803b8454291862ef38720b592efdda
+name: nucleus_laws_check
+inputs:
+  - role: nucleus_map
+    kind: nucleus_map
+outputs:
+  - role: nucleus_laws_evidence
+    kind: nucleus_laws_evidence
+steps:
+  - name: nucleus_laws_check
+    operator: nucleus_laws_check
+    step_index: 0
+    inputs:
+      - role: nucleus_map
+        kind: nucleus_map
+    outputs:
+      - role: nucleus_laws_evidence
+        kind: nucleus_laws_evidence

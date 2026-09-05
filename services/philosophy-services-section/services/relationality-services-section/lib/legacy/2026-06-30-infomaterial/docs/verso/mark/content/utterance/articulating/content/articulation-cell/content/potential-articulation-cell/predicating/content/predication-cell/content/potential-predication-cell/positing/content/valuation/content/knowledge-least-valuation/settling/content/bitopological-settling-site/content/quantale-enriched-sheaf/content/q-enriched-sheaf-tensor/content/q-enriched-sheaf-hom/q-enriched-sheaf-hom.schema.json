@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/bitopological-settling-site/content/quantale-enriched-sheaf/content/q-enriched-sheaf-tensor/content/q-enriched-sheaf-hom",
+  "title": "q-enriched-sheaf-hom",
+  "description": "The internal Hom Hom(F,G) of Q-enriched sheaves on a Grothendieck site: the sheafification of the cell-wise Q-Cat_cwl internal Hom, right adjoint to the q-enriched-sheaf tensor product. It is the closing companion of the tensor that makes the Q-enriched sheaf category closed symmetric monoidal.",
+  "type": "object",
+  "required": ["domain-sheaf", "codomain-sheaf", "presheaf-internal-hom", "sheafified", "tensor-hom-adjunction"],
+  "properties": {
+    "domain-sheaf": {
+      "$ref": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/bitopological-settling-site/content/quantale-enriched-sheaf",
+      "description": "the source sheaf F of the internal Hom Hom(F,G)"
+    },
+    "codomain-sheaf": {
+      "$ref": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/bitopological-settling-site/content/quantale-enriched-sheaf",
+      "description": "the target sheaf G of the internal Hom Hom(F,G)"
+    },
+    "presheaf-internal-hom": {
+      "const": true,
+      "description": "cell-wise Hom_p(F,G)(σ) := hom_{Q-Cat_cwl}(F(σ), G(σ)), the Q-category of Q-functors with weighted Q-hom, restrictions induced by pre/postcomposition"
+    },
+    "sheafified": {
+      "const": true,
+      "description": "Hom(F,G) := sheafify_J(Hom_p(F,G)); when T has enough equalizers the presheaf Hom already satisfies the sheaf condition since Q-Cat_cwl-Hom commutes with limits in its second argument"
+    },
+    "tensor-hom-adjunction": {
+      "const": true,
+      "description": "right adjoint to the tensor: Hom_Sh(F ⊗ G, H) ≅ Hom_Sh(F, Hom(G, H)), making the Q-enriched sheaf category closed symmetric monoidal"
+    }
+  }
+}

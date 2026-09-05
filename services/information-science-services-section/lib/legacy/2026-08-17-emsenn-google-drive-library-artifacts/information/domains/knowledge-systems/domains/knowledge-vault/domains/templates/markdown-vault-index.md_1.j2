@@ -1,0 +1,24 @@
+---
+title: Markdown Vault Index
+id: markdown-vault-index
+kind: index
+authors:
+- gpt-5.2-codex
+date-created: "{{ date_created }}"
+tags:
+- interactive-semioverse
+- markdown
+- vault
+dependencies:
+- /mathematics/objects/interactive-semioverse/skills/map-markdown-vault-to-handles/SKILL.md
+---
+
+# Markdown Vault Index
+
+Vault root: `{{ vault_root }}`
+
+## Entries
+
+{% for entry in entries %}
+- [{{ entry.title }}]({{ entry.path }}){% if entry.id %} (id: {{ entry.id }}){% endif %}{% if entry.tags %} (tags: {{ entry.tags | join(", ") }}){% endif %}
+{% endfor %}

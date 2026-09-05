@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       8838b39e-6a43-4b0c-b799-0318c61cc58f
+:node-relations: (([[id:bee496e1-139b-4a7f-8a24-d4c14e6084c6][instantiates]] . [[id:32e00173-c695-4bb6-b0d2-9dc17fec128b][act]]))
+:END:
+#+title: rupturing
+#+date: [2025-09-06 Sat 08:02]
+

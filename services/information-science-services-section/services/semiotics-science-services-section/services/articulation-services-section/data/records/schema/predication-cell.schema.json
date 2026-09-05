@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "relating/articulating/predicating/predication-cell",
+  "title": "PredicationCell",
+  "description": "The predication cell: a subject term, a predicate carrying a Claim's mark, and an object term (predicating/predication.mts `Cell`), holding the charge assigned to it (predicating/positing/bilattice-charge.mts `ChargeCarrier`) — the ruled bundled form, matching the pre-Lean carriers PyPredCalc (s, p, o, v), PyFARS, and FARS. The charge is never optional: it defaults to the absurd bottom charge before evidence arrives.",
+  "type": "object",
+  "required": ["subject", "predicate", "object", "charge"],
+  "properties": {
+    "subject": { "$ref": "./token.schema.json" },
+    "predicate": {
+      "type": "object",
+      "required": ["kind", "claim", "mark"],
+      "properties": {
+        "kind": { "const": "predication.predicate" },
+        "claim": { "$ref": "./claim.schema.json" },
+        "mark": { "$ref": "./mark-profile.schema.json" }
+      },
+      "additionalProperties": false,
+      "title": "Predicate",
+      "description": "An object of the predicate category, carrying a Claim's mark (predicating/predication.mts `Predicate`)."
+    },
+    "object": { "$ref": "./token.schema.json" },
+    "charge": { "$ref": "./charge.schema.json" }
+  },
+  "additionalProperties": false
+}

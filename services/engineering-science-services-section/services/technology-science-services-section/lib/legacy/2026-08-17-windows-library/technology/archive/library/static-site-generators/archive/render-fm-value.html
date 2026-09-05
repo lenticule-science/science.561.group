@@ -1,0 +1,45 @@
+{{- /* Render a single frontmatter value, linking if possible.
+       Receives dict: val, key, titleIndex, noLink, taxonomyKeys */ -}}
+{{- $val := .val -}}
+{{- $key := .key -}}
+{{- $titleIndex := .titleIndex -}}
+{{- $noLink := .noLink -}}
+{{- $taxonomyKeys := .taxonomyKeys -}}
+
+{{- $valType := printf "%T" $val -}}
+
+{{- if eq $valType "bool" -}}
+  {{ $val }}
+{{- else if strings.HasSuffix $valType "Time" -}}
+  <time datetime="{{ $val | time.Format "2006-01-02" }}">{{ $val | time.Format "2006-01-02" }}</time>
+{{- else -}}
+  {{- $str := printf "%v" $val -}}
+  {{- $isDateStr := findRE `^\d{4}-\d{2}-\d{2}` $str -}}
+  {{- if and (len $isDateStr) (strings.HasPrefix $key "date") -}}
+    {{- $dateStr := substr $str 0 10 -}}
+    <time datetime="{{ $dateStr }}">{{ $dateStr }}</time>
+  {{- else -}}
+    {{- $safe := $str -}}
+    {{- if gt (len $safe) 0 -}}
+      {{- $replaced := replaceRE `[-_]` " " $str -}}
+      {{- if gt (len $replaced) 0 -}}
+        {{- $safe = $replaced -}}
+      {{- end -}}
+    {{- end -}}
+    {{- $taxBase := index $taxonomyKeys $key -}}
+    {{- if $taxBase -}}
+      <a href="{{ $taxBase }}{{ $str | urlize }}/">{{ $str }}</a>
+    {{- else if $noLink -}}
+      {{ $safe }}
+    {{- else -}}
+      {{- if gt (len $str) 0 -}}
+        {{- $url := index $titleIndex (lower $str) -}}
+        {{- if $url -}}
+          <a href="{{ $url }}">{{ $safe }}</a>
+        {{- else -}}
+          {{ $safe }}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       69df5217-efe3-4a36-99b9-0e07f6858daf
+:END:
+#+title: decoupling
+#+date: [2025-09-13 Sat 09:59]
+

@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       1390632d-eba1-4030-ae6c-280f64da7290
+:END:
+#+title: emsenn's External Communications
+
+- [[file:./ess/index.org][My Essays]] :: My essays, short writing about specific topics.
+- [[id:7ecd8f7d-c3a0-4dc6-b9fb-c13c3e739baa][emsenn's Web Communications]] :: Things I've written for the Web

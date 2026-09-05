@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       dca628f7-0709-4ca8-9e9e-b4757d9ad708
+:public:   true
+:END:
+#+title: War of the Roses
+#+date [2025-08-12 Tue 05:56]
+#+index: War of the Roses

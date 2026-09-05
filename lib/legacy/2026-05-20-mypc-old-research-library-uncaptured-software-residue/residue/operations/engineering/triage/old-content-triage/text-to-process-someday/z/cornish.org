@@ -1,0 +1,7 @@
+#+title: Cornwall
+#+roam_alias: "Cornish"
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-19 Sat 21:17]
+#+roam_tags: term
+*/Cornwall/* is a region of [[file:england.org][England]].

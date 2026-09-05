@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       8b78e297-2d6b-452a-bbea-c53bd2cf35ed
+:END:
+#+title: complex system
+#+date: [2025-09-23 Tue 20:26]
+

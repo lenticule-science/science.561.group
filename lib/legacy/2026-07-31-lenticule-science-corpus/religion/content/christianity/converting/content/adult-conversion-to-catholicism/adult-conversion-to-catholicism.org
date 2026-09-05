@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       2d9709d8-ee7e-483e-b5b7-7d38213aa495
+:resource-description: (([[id:edaef069-c68d-46aa-a970-d3cb7fe3165c][resource type]] . [[id:fd6ecbed-9bdf-4570-b4b2-5ff7744c0a96][concept]]) ([[id:2d79d4ba-8d36-4714-869c-081e8d40d24f][field]] . [[id:6c6bd13e-ddf6-45ec-857a-72b73eaef6bc][Catholicism]]))
+:public:   true
+:END:
+#+title: adult conversion to Catholicism
+#+date: [2025-08-31 Sun 08:27]
+

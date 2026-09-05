@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       7a54056a-9b86-475e-ad66-887f3af30fe7
+:node-relations: (([[id:bee496e1-139b-4a7f-8a24-d4c14e6084c6][instantiates]] . [[id:fa2a8bee-008a-4dfa-88f3-9c267b122782][using]]) ([[id:ffe77382-1ddc-47ae-a757-b1bac88b4fc6][object]] . [[id:c544a883-fa72-4441-acff-c5b01e71d698][social media]]) ([[id:50711a63-93b5-4213-b768-165d10e8821c][actor]] . [[id:4b1d53d5-0058-4cc8-a1ac-619ec283351c][social media user]]) ([[id:ab477596-70c8-467c-8d61-83756e6bb443][publication]] . [[id:cc253409-9a82-4c5d-a4cd-8013f4e350c6][emsenn.net]]))
+:END:
+#+title: using social media
+#+date: [2025-09-29 Mon 17:54]
+#+index: social media!using social media

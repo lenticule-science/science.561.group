@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       2bb5d318-28d4-4c69-8e41-488044b50151
+:END:
+#+title: actor-network theory
+#+date: [2025-08-24 Sun 11:09]
+

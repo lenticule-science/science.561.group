@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       2b062792-d6a6-45e1-9afb-7737049198b5
+:NODE-RELATIONS: (([[id:15b4c689-118a-4dad-9bf2-e7d483e433a3][ending]] . [[id:f2d72b4f-4262-4ae8-bb6a-a6a325e8adac][badness]]))
+:END:
+#+title: redeeming
+#+date: [2025-09-03 Wed 21:39]
+

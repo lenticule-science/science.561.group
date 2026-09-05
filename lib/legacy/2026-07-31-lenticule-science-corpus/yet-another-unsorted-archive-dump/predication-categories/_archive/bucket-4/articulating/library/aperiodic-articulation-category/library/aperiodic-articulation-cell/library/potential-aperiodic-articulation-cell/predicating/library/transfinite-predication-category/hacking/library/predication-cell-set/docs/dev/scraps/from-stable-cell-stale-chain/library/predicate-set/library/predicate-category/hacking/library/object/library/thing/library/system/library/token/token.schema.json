@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/system/library/token/token.schema.json",
+  "title": "Token",
+  "description": "JSON Schema for a token record — a unit of text recognized within a stretch of bytes by a watchlist scanner.",
+  "type": "object",
+  "required": ["surface", "position", "kind"],
+  "additionalProperties": false,
+  "properties": {
+    "surface": {
+      "type": "string",
+      "description": "The matched bytes as they appeared in the source.",
+      "minLength": 1
+    },
+    "position": {
+      "type": "object",
+      "description": "Where in the source the token appeared.",
+      "required": ["offset"],
+      "additionalProperties": false,
+      "properties": {
+        "offset": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Byte offset of the start of the match in the source."
+        },
+        "line": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "One-based line number of the match."
+        },
+        "column": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "One-based column number of the match."
+        }
+      }
+    },
+    "kind": {
+      "type": "string",
+      "enum": ["bare-prose", "code-fenced", "quoted", "link-text", "link-target", "frontmatter-value", "regex-pattern-match"],
+      "description": "How the token appears in the source. Bare-prose means appearing in running prose without quoting; code-fenced means inside a fenced code block; quoted means inside quotation marks; link-text means inside the [text](...) portion of a markdown link; link-target means inside the (...) portion; frontmatter-value means inside YAML frontmatter; regex-pattern-match means matched by a hedge-phrase regex rather than a literal token."
+    },
+    "source": {
+      "type": "string",
+      "description": "The path or origin of the source the token was found in."
+    }
+  }
+}

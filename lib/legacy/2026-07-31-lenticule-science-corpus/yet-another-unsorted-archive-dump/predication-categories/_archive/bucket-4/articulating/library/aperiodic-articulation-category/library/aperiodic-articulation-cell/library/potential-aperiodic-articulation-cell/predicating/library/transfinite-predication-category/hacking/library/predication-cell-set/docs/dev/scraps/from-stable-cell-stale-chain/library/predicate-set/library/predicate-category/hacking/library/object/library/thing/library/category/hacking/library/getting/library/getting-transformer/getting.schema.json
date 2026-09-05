@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/code/transformers/getting.schema.json",
+  "title": "getting-transformer-contract",
+  "description": "The contract every getting-<noun> skill inherits: a pure read of state. The args MAY be empty (a request for the current observation of the named noun) or carry a query specifier (an addressing of which instance to fetch). The return shape is an object — the observation of the named noun. Per-noun shape constraints will be added when the structure-substitution mechanism is wired; for now the contract is loose on both ends.",
+  "input": {
+    "type": "object"
+  },
+  "output": {
+    "type": "object"
+  }
+}

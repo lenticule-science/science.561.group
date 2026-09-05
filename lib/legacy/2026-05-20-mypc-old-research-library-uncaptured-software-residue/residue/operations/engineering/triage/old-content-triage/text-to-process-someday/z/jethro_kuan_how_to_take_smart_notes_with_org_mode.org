@@ -1,0 +1,68 @@
+#+title: Jethro Kuan: "How To Take Smart Notes with Org-mode"
+#+begin_head
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-15 Tue 15:30]
+#+roam_key: https://blog.jethro.dev/posts/how_to_take_smart_notes_org/
+#+roam_tags: reference
+#+end_head
+
+#+name: jethro-kuan-how-to-take-smart-notes-with-org-mode-definition
+*/[[file:jethro_kuan_how_to_take_smart_notes_with_org_mode.org]["How To Take Smart Notes with Org-mode"]]/* by [[file:jethro_kuan.org][Jethro Kuan]], [[https://blog.jethro.dev/posts/how_to_take_smart_notes_org/][https://blog.jethro.dev/posts/how_to_take_smart_notes_org/]], is an article about using [[file:org_mode.org][Org-mode]] and [[file:org_roam.org][Org-roam]] as a [[file:note_taking_system.org][note-taking systems]], but focused on [[file:learning.org][learning]] and [[file:writing.org][writing]].
+
+* Introduction
+
+  This record is some of my (emsenn's) interpretation of "How To Take Smart Notes with Org-mode" by Jethro Kuan.
+
+* Ancestry
+
+  This piece credits "How To Take Smart Notes" by Sonke Ahrens.
+* Key points
+
+  - Why take notes?
+    - In what context do I want to see this note again?
+* Concepts
+
+  */Note:/* The quotes selected from this piece have been rephrased in places to align with my own semantics around [[file:note_taking.org][note-taking]].
+  
+** Note-taking and writing theory
+*** A bad formal writing process
+
+    #+begin_quote
+    One can imagine the process of writing to be broken down into the following steps:
+   
+    1. Find topic/research question
+    2. Research/find literature
+    3. Read and take notes
+    4. Draw conclusions / outline text
+    5. Write
+
+    This process may seem natural, but it is highly linear, and suggests that the process of writing begins by first deciding on a research question. But what about all those lectures and seminars you attend? Books and papers you read? Conversations with friends, colleagues, professors? Surely these ideas floating in your head, or on paper, factor into the written work somehow. Nobody starts from scratch. How do you know what’s a good research question, without relying on prior reading? How do you know what directions to explore for new ideas and insights?
+    #+end_quote
+*** From idea to writing
+
+    #+begin_quote
+    You have a bunch of unrefined ideas sitting around, thoughts you had speaking with friends, or from reading something on the web. Link them up together, and you have a paper. Instead of beginning with the research question, and going top down, we begin with the notes, and build and refine ideas from the bottom up. This also breaks writing down into small, reasonable steps (one note at a time).
+    #+end_quote
+
+*** The purpose of note-taking
+
+    #+begin_quote
+    The primary purpose of note-taking should not be for storing ideas, but for developing them. When we take notes, we should ask: “In what context do I want to see this note again?”
+    #+end_quote
+
+** Note-taking method
+
+*** Fleeting and permanent notes
+
+    #+begin_quote
+    [Daily records] are [records] that are taken as a reminder of what’s in my head.…
+
+    [Records] are basically everything else. Here are some examples of items that get their own [record]:
+
+    - a talk…
+    - a book…
+    - a paper…
+    - any topic or thought refined from my [daily records]…
+
+    #+end_quote

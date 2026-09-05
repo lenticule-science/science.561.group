@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       e055d71b-ab6b-46d5-8470-7b5065b60182
+:END:
+#+title: manual
+#+date: [2025-08-25 Mon 10:45]
+

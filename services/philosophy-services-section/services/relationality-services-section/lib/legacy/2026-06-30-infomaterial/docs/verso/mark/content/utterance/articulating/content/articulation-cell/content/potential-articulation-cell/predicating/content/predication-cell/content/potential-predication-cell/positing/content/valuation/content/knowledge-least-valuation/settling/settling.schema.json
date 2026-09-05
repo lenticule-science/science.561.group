@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling",
+  "title": "settling",
+  "description": "Brings a trace to its fixed point by iterating the modal closure until the last valuation stops changing, and packages the fixed point as a sheaf. The generative home of order and sheaf.",
+  "type": "object",
+  "required": [
+    "morphism",
+    "domain",
+    "codomain"
+  ],
+  "properties": {
+    "morphism": {
+      "const": "settling",
+      "description": "a one-way generative arrow"
+    },
+    "domain": {
+      "$ref": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation",
+      "description": "the knowledge-least valuation - bottom on every cell, the base of every trace"
+    },
+    "codomain": {
+      "$ref": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/sheaf",
+      "description": "the sheaf {base, section} packaging the closure's least fixed point"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       e8a7d4a9-8efe-4972-93a8-7dd56a0cf52b
+:END:
+#+title: cosmos
+#+date: [2025-09-17 Wed 09:50]
+

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       596666b4-45be-4850-866a-8d58f8a22fb3
+:END:
+#+title: recursive structure
+#+date: [2025-08-29 Fri 07:52]
+

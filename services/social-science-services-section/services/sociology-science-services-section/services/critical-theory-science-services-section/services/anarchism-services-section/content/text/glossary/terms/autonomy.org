@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       268ba0b4-3bed-463f-b909-6c67f53c21aa
+:END:
+#+title: autonomy
+#+date: [2025-09-03 Wed 21:00]
+

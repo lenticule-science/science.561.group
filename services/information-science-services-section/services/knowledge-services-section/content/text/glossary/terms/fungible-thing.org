@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       37f44540-db4d-4b94-ad46-09c4ebf1eeeb
+:END:
+#+title: fungible thing
+#+date: [2025-09-13 Sat 21:29]
+

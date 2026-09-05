@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       92ad15fb-ce6c-4eed-9432-e54125804cbc
+:END:
+#+title: candlemaker
+#+date: [2025-09-05 Fri 21:10]
+

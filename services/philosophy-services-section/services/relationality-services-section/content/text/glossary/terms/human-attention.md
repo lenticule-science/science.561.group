@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       2bd1bea4-db43-4e1d-9469-e4ef32430e73
+:NODE-RELATIONS: (([[id:9a73bab3-a9ea-4e96-afdb-adbc0e15fc8d][human]]. [[id:861d8401-0ff1-4674-9ac2-ef7946603653][attention]]))
+:END:
+#+title: human attention
+#+date: [2025-10-08 Wed 09:08]

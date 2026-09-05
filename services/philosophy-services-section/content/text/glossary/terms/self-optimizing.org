@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       61b11553-fdca-44da-bb36-b074babad559
+:END:
+#+title: self-optimizing
+#+date: [2025-09-03 Wed 21:02]
+

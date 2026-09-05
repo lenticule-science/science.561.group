@@ -1,0 +1,3 @@
+#+title: Roam Research
+#+date: [2020-12-15 Tue 15:53]
+*/Roam Research/* is a proprietary [[file:note_taking.org][note-taking]] [[file:tool.org][tool]] that implements a version of the [[file:zettelkasten_method.org][Zettelkasten method]].

@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       ede40cb0-8bfe-4b7e-8eaa-ed222beef5da
+:public:   true
+:NODE-RELATIONS: (([[id:4a53867b-afa3-437b-b979-385597e0e616][process]] . [[id:06b0a902-5215-4dcb-b92a-1be5b53d4b41][responsibilizing]]))
+:END:
+#+title: responsibilization
+#+date: [2025-09-02 Tue 22:30]
+#+index: responsibilization
+

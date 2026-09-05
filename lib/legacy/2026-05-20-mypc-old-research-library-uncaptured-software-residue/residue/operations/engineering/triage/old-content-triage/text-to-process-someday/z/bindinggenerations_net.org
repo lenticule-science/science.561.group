@@ -1,0 +1,103 @@
+#+title: BindingGenerations.net
+*/BindingGenerations.net/* is the personal website of [[file:esther_davis.org][Esther Davis]]. This file is my notes on building up that [[file:website.org][Website]].
+* Getting Started
+  Before creating this [[file:note.org][note]], I have already made a few decisions about how the Website should work, that I discussed with Esther. They're trusting me that they'll be a fan of the [[file:zettelkasten_method.org][Zettelkasten method]] of [[file:note_taking.org][note-taking]], and because of other decisions made in relationship to the [[file:webgaz.org][WebGAZ]], [[file:org_roam.org][Org-roam]] seems like the best way of creating those notes. (The fact its built on-top of [[file:org_mode.org][Org-mode]] and so its notes will be suitable for independent export as [[file:pdf.org][PDFs]] is a nice bonus, but honestly unrelated to the choice to use Org-roam.
+
+  I've been using Org-roam myself since yesterday, and so my first task is to configure some sort of... not-my-own [[file:org_roam_directory.org][Org-roam directory]], so that I can separate the notes for BN.net from my notes. [[https://www.orgroam.com/manual.html#How-do-I-have-more-than-one-Org_002droam-directory_003f][Section 21.1]] of the Org-roam manual seems to have the answer, but not enough context for me to know for sure: I'm not sure if I understand how [[file:emacs.org][Emacs]] handles "directory-local variables," as that section calls it.
+
+  The relevant section of the manual, [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Directory-Variables.html][49.2.5]], gives the context to make it clear: I want to put the following lines in =~/org/edavis/roam/.dir-locals.el=, where I'll be keeping the source data for BN.net.
+
+  #+begin_src elisp :tangle ~/org/edavis/roam/dir-locals.el
+  ((nil . ((org-roam-directory . ".")
+         (org-roam-db-location . "./org-roam.db"))))
+  #+end_src
+
+  With that directory in place, I can start to capture Org-roam notes while in that directory. I seeded it with one for Esther Davis, to kick things off, and now I want to set up an [[file:org_publish.org][Org-publish]] project for rendering out those notes as a Website.
+
+  Yesterday I found [[https://commonplace.doubleloop.net/20200821142536-how_i_publish_my_wiki_with_org_publish]["How I publish my wiki with org-publish"]] on the [[file:commonplace_wiki.org][Commonplace wiki]], and it's probably a good resource for getting a publishing process set up myself. (I looked for how [[file:jethro_kuan.org][Jethro Kuan]] publishes their [[https://braindump.jethro.dev/][braindump]] but didn't find it.)
+
+  It's actually Doubleloop's [[https://gitlab.com/ngm/commonplace/-/blob/master/publish.el][=publish.el=]] that I want to look at, apparently.
+
+  Let's start with a simple projects list and see how that looks, exported:
+
+  #+begin_src elisp
+    (setq org-publish-project-alist
+	  `(("bindinggenerations"
+	     :base-directory "~/org/edavis/roam"
+	     :base-extension "org"
+	     :publishing-directory "~/org/edavis/public"
+	     :publishing-function org-html-publish-to-html
+	     :recursive t
+	     :headline-levels 4
+	     :with-toc nil
+	     :html-doctype "html5"
+	     :html-html5-fancy t
+	     :html-head-include-scripts nil
+	     :html-head-include-default-style nil
+	     :html-container "section"
+	     :htmlized-source nil
+	     :auto-sitemap t
+	     :sitemap-title "Notes"
+	     :sitemap-sort-files anti-chronologically
+	     :sitemap-filename "notes.org")))
+  #+end_src
+
+  That definitely works - I end up with a =posts.html= and a =20...-esther_davis.html=. Two things I see I need to change: it uses me as the author, and I need some sort of index page.
+
+  I think I can accomplish the former by tweaking =.dir-locals.el=
+
+  #+begin_src elisp :tangle ~/org/edavis/roam/dir-locals.el
+    ((nil . ((org-roam-directory . ".")
+	     (org-roam-db-location . "./org-roam.db")
+	     (user-full-name "Esther Davis"))))
+  #+end_src
+
+  Dang, nope! That's not too important though - we want to have the author hard-coded into the note file, which means tweaking our capture templates. First, to address the second of the issues above, I want to try manually adding an =index.org= to =~/org/edavis/roam.org= and see what that gets us, in Org-roam and the Website.
+
+
+  That worked, okay. Tabling the "wrong author" problem for now, since it'll get resolved by the next step: setting up [[file:org_roam_capture_template.org][Org-roam capture templates]].
+
+  [[https://www.orgroam.com/manual.html#The-Templating-System][Section 7]] of the Org-roam manual talks about its extension/hijacking of [[file:org_mode_capture_template.org][Org-mode capture template]].
+
+  #+begin_src elisp
+    (setq org-roam-capture-templates
+	  `(("b" "Binding Generations records")
+	    ("bn" "General note"
+	     plain (function org-roam--capture-get-point)
+	     "%?"
+	     :file-name "%<%Y%m%d%H%M%S>-${slug}"
+	     :head "#+title: ${title}\n#+author: Esther Davis\n#+email: edavis@bindinggenerations.net\n"
+	     :unnarrowed t)
+	    ("bb" "Bibliographical entry"
+	     plain (function org-roam--capture-get-point)
+	     "#+title: %^{AUTHOR}: \"%^{TITLE}\"\n#+author: Esther Davis\n#+email: edavis@bindinggenerations.net\n%?"
+	     :file-name "%<%Y%m%d%H%M%S>-%{slug}"
+	     :unnarrowed t)))
+  #+end_src
+  
+  The above all seems to work, and the only thing I really need these pages to have right now is a listing of backlinks on each note, which might be easy to extract from Doubleloop's =publish.el=
+
+  #+begin_src elisp
+    (defun commonplace/org-roam--backlinks-list (file)
+      (if (org-roam--org-roam-file-p file)
+	  (--reduce-from
+	   (concat acc (format "- [[file:%s][%s]]\n"
+			       (file-relative-name (car it) org-roam-directory)
+			       (org-roam-db--get-title (car it))))
+	   "" (org-roam-db-query [:select [source] :from links :where (= dest $s1)] file))
+	""))
+
+    (defun commonplace/org-export-preprocessor (backend)
+      (let ((links (commonplace/org-roam--backlinks-list (buffer-file-name))))
+	(unless (string= links "")
+	  (save-excursion
+	    (goto-char (point-max))
+	    (insert (concat "\n* Backlinks\n") links)))))
+
+    (add-hook 'org-export-before-processing-hook 'commonplace/org-export-preprocessor)
+  #+end_src
+
+That actually seems to have worked to do exactly what I wanted it to do, and so now the big challenge will be figuring out the specific schema for notes, tweaking capture templates, and the rendering of HTML and its CSS.
+
+But before I can really get further in those problems, I need to figure out how to not get my notes so messy, and so that I don't end up losing useful code snippets here in the notes, or, worse, have useful code that contradicts itself being extracted and applied out of them!
+

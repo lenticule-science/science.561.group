@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "glossary/terms/hom-object",
+  "title": "hom-object",
+  "description": "The object Hom(A, B) in a monoidal base V that plays the role of 'morphisms from A to B' in an enriched category. In an ordinary category the hom-objects are sets; in an enriched category they can be spaces, chain complexes, or simplicial sets, so the morphisms carry structure.",
+  "type": "object",
+  "required": [
+    "in-base",
+    "of-pair"
+  ],
+  "properties": {
+    "in-base": {
+      "description": "the object lives in the monoidal base V",
+      "$ref": "./monoidal-category.schema.json"
+    },
+    "of-pair": {
+      "description": "indexed by an ordered pair of objects (A, B) of the enriched category"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       e5b7e1bc-2255-4b9c-acf2-9a02965be639
+:END:
+#+title: doomscrolling
+#+date: [2025-09-03 Wed 14:30]
+

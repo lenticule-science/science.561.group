@@ -1,0 +1,113 @@
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix socd:  <https://emsenn.net/ns/domain/sociological#> .
+
+# =============================================================================
+# Sociological ASR — SHACL Validation Shapes
+#
+# Sociological validity is structural: content is valid when its
+# mechanisms, conditions, and positions are made legible. Terms must
+# define, concepts must integrate, schools must acknowledge limits.
+# =============================================================================
+
+socd:TermShape
+    a sh:NodeShape ;
+    sh:targetClass socd:Term ;
+    sh:property [
+        sh:path socd:defines ;
+        sh:minCount 1 ;
+        sh:severity sh:Violation ;
+        sh:message "A term MUST have defines: with the canonical term name."
+    ] ;
+    sh:property [
+        sh:path socd:cites ;
+        sh:minCount 1 ;
+        sh:severity sh:Warning ;
+        sh:message "A term SHOULD cite who introduced or developed it."
+    ] .
+
+socd:ConceptShape
+    a sh:NodeShape ;
+    sh:targetClass socd:Concept ;
+    sh:property [
+        sh:path socd:defines ;
+        sh:minCount 1 ;
+        sh:severity sh:Violation ;
+        sh:message "A concept MUST have defines: with the concept name."
+    ] ;
+    sh:property [
+        sh:path socd:integrates ;
+        sh:minCount 1 ;
+        sh:severity sh:Warning ;
+        sh:message "A concept SHOULD specify integrates: listing the terms it assembles."
+    ] ;
+    sh:property [
+        sh:path socd:cites ;
+        sh:minCount 1 ;
+        sh:severity sh:Warning ;
+        sh:message "A concept SHOULD cite sources informing the analysis."
+    ] .
+
+socd:SchoolShape
+    a sh:NodeShape ;
+    sh:targetClass socd:School ;
+    sh:property [
+        sh:path socd:cites ;
+        sh:minCount 1 ;
+        sh:severity sh:Warning ;
+        sh:message "A school SHOULD cite key texts and thinkers."
+    ] ;
+    sh:sparql [
+        sh:severity sh:Warning ;
+        sh:message "A school SHOULD include a critiques or limitations section." ;
+        sh:select """
+            SELECT $this WHERE {
+                $this a socd:School .
+                FILTER NOT EXISTS { $this socd:hasCritiquesSection true }
+            }
+        """
+    ] .
+
+socd:LessonShape
+    a sh:NodeShape ;
+    sh:targetClass socd:Lesson ;
+    sh:property [
+        sh:path socd:requires ;
+        sh:minCount 1 ;
+        sh:severity sh:Violation ;
+        sh:message "A lesson MUST specify requires: listing prerequisites."
+    ] ;
+    sh:property [
+        sh:path socd:teaches ;
+        sh:minCount 1 ;
+        sh:severity sh:Violation ;
+        sh:message "A lesson MUST specify teaches: listing what it develops."
+    ] .
+
+socd:TextShape
+    a sh:NodeShape ;
+    sh:targetClass socd:Text ;
+    sh:property [
+        sh:path socd:cites ;
+        sh:minCount 1 ;
+        sh:severity sh:Warning ;
+        sh:message "A text SHOULD cite its sources."
+    ] .
+
+# --- Cross-type constraint ---
+
+socd:NoSelfReferenceShape
+    a sh:NodeShape ;
+    sh:targetClass socd:Term, socd:Concept ;
+    sh:sparql [
+        sh:severity sh:Violation ;
+        sh:message "A page must not list itself in its own requires: or integrates: fields." ;
+        sh:select """
+            SELECT $this WHERE {
+                { $this socd:requires $this }
+                UNION
+                { $this socd:integrates $this }
+            }
+        """
+    ] .

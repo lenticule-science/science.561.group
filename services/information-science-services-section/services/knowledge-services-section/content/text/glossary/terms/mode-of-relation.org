@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       f23b6a7a-5bbd-426c-af58-1fa5072e1a81
+:END:
+#+title: mode of relation
+#+date: [2025-09-01 Mon 12:30]
+

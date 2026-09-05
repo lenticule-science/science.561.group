@@ -1,0 +1,6 @@
+#+title: health
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-19 Sat 21:07]
+#+roam_tags: term
+*/Health/* is a person's state of wellness.

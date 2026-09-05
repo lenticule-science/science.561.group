@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       37f410d2-336a-4185-b6c4-ca520dafa867
+:END:
+#+title: John Dewey
+#+date: [2025-09-01 Mon 08:20]
+

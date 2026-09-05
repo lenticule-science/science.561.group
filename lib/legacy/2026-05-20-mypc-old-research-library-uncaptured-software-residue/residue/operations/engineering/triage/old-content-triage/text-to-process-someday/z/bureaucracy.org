@@ -1,0 +1,20 @@
+#+title: bureaucracy
+#+begin_head
+#+ghe_schema: record-0.1.3
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-24 Thu 11:30]
+#+end_head
+
+#+name: definition
+*/Bureaucracy/* is a means of social order where decisions and actions are performed through accretive record-keeping.
+
+#toc: headlines 2
+* Intrododuction
+* bureaucracy
+* Supplements
+** Record history
+   :LOGBOOK:
+   - Note taken on [2020-12-24 Thu 11:30] \\
+     Created
+   :END:

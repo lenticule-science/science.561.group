@@ -1,0 +1,106 @@
+#+title: Brave Old World
+#+begin_head
+#+ghe_schema: record-0.1.2
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-23 Wed 16:20]
+#+end_head
+
+#+index: Games!Game software & systems!Tabletop role-playing game systems!"Brave Old World"
+
+#+name: brave-old-world-definition
+*/[[file:brave_old_world.org][Brave Old World]]/* is a [[file:role_playing_game_system.org][role-playing game system]] written for the [[file:teraum.org][Teraum]] fantasy world.
+
+It was originally based on [[file:dungeon-world.org][Dungeon World]], but over many iterations has become something different.
+
+#+toc: headlines 2
+* Requirements
+
+  #+name: brave-old-world-requirements
+  - A */six-sided [[file:dice.org][die]]/*. It is better to have two, and best to have two per person.
+  - A writing utensil and a sheet of paper. It is best to have a pencil and a few pieces of paper for each person.
+  - Two players. More is better. Four to six is best.
+  - One to four hours. Two is normal.
+
+* How to Play
+
+  #+name: brave-old-world-gameplay-brief
+  In */Brave Old World/*, one player is the /narrator/ while the others are /adventurers/. The narrator facilitates the /story/ while the adventurers, working as a /party/, explore strange places and have grand adventures.
+
+  #+name: brave-old-world-gameplay-explanation
+  Gameplay works like a conversation. The narrator says where the party is and what is happening around them. The adventurers say what it is they’d like to do. When an adventurer takes a risk, they /roll/ two six-sided dice and add the results. /(If the adventurer is particularly good at the thing they’re doing, they may be able to add to that result.)/
+
+  #+name: gameplay-roll
+  - If they roll a 10 or more (10+), they succeed at what they attempted.
+  - If they roll a 7 through 9 (7-9), they succeed… but with a cost or consequence.
+  - If they roll a 6 or less (6-), they fail, and something is going to happen.
+
+   You can play /Brave Old World/ with only this rule, if your primary interest is telling a fun little story with a group of friends. There are [[#additional-rules][Additional Rules]] that extend the gameplay, providing rules for adventurer skills, equipment, health, and so on.
+* Additional Rules
+  :PROPERTIES:
+  :CUSTOM_ID: additional-rules
+  :END:
+** Skills
+*** Skillfulness
+
+    When an adventurer takes a risk, their personal skills may be able to influence the results of their roll.
+
+    There are a lot of ways to describe a person’s skill, but mechanically they all work out to either -2, -1, +1, or +2 to the result of a roll.
+
+    #+name: skillfulness
+    | -2 |                                   |
+    | -1 |                                   |
+    |  0 |                                   |
+    | +1 | Familiar, knack                   |
+    | +2 | Knowledgeable, adept, exceptional |
+
+*** List of Skills
+
+    #+name: skill-list
+    - acrobatics
+    - investigation
+    - magic
+    - covert
+    - swimming
+    - dancing
+
+** Equipment
+
+   Adventurers either have /a lot/ of supplies, /some/ supplies, /a few/ supplies, or /basically no/ supplies.
+
+   With */a lot/* of supplies, adventurers can roll and if successful, find the item they were searching for in their inventory.
+
+   With */some/* supplies, adventurers need to subtract one from their roll, and with */a few/* supplies, they need to subtract two.
+
+   If the adventurer has */basically no/* supplies, the adventurer can roll with no modifier, but any success leads to an item similar to what they want, but (at narrator’s discretion) unsuited for the purpose for which it was intended.
+** Consequences
+*** Agitation
+*** Angst
+*** Exhaustion
+*** Nerves
+*** Panic
+*** Health
+** Out-of-character Conflict Resolution
+
+   Whether you’re using all the rules or just the roll, eventually the group of players is going to disagree about something.
+
+   Conflict resolution in Brave Old World relies on consensus: all the people playing must agree that something is valid. This most often comes into play when a player is claiming a new skill or equipment, and not all of the players agree that it’s reasonable.
+* Gameplay Examples
+** Just the Roll
+- Alice :: You're about 300 meters into the tunnel, and this far in, there's no sunlight. Your lantern is barely bright enough to illuminate both sides of the tunnel at the same time, and the rough stone ceiling is just out of sight. The floor is smooth, continuing back straight to the entrance and on ahead of you into the unknown. What do you?
+- Barry :: Can I smell anything distinct?
+- Alice :: There's the smell of rock dust, but not much else.
+- Chris :: You said the floor was smooth - can I tell what made it?
+- Alice :: Not at a glance, do you want to take the time to investigate it?
+- Daria :: We shouldn't - we need to keep after the Onion King.
+- Chris :: Sure, but rushing now won't do any good if we fall into a trap. I'd like to watch for danger moving forward.
+- Daria :: Okay, but it's your fault if we lose him.
+
+Chris picks up two six-sided dice and rolls them. Each shows a three.
+
+- Chris :: Six plus my two Intelligence is eight, so I succeed in keeping an eye out for a single trap ahead, but... I lose a resource.
+- Alice :: Chris, looking more closely at the floor, you see that the stone is covered in dust... revealing the prints from a dire badger. Paying closer attention, you hear the distinctive sounds of its claws against stone. It doesn't seem to have noticed your party yet. You can get around it, but what resource are you going to use to do so?
+- Chris :: Well the obvious solution would be to toss some meat at it when we get closer, but...
+** With Additional Rules
+   */Coming soon!/*
+* Supplements

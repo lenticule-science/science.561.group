@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       e5474b02-2852-4c8a-91cd-4a683e0db672
+:END:
+#+title: Org-roam node
+#+date: [2025-08-28 Thu 10:40]
+

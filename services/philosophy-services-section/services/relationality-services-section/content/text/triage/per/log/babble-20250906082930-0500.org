@@ -1,0 +1,46 @@
+:PROPERTIES:
+:ID:       8469150e-398e-4df3-9e10-9dff1d98d18b
+:form:     [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]
+:END:
+#+title: Babble, [2025-09-06 Sat 08:29], Catholic figures of anger, melancholy, and hope, to influence my brand
+#+date: [2025-09-06 Sat 08:29]
+#+author: emsenn
+
+I'm thinking about [[id:c9cf3c3d-684f-4671-9717-faf9dcd412c1][my Fediverse profile]] as where I perform as a sort of, well, [[id:04258f7e-ffc1-4298-83d9-d59974aa53ff][social justice warrior]], but specifically, I see myself often succeeding when I try and "[[id:53184bdc-4de8-4b6a-aa05-a429ed1076b4][beat the drum]]" of [[id:d59df8e0-9161-4ba8-b922-f86ea6d39bc7][validating]] [[id:56d477d7-0fc7-446a-b16f-abac1a0dea31][anger]] and [[id:13f4966d-c00c-4ee3-a242-a972373b3dcd][rage]].
+
+And [[id:d580b5a6-d111-4100-bcb8-9f7175468870][my Substack]] is often where I'm [[id:9ca86d85-debc-432f-b882-bbffe32a826b][analyzing]] [[id:178fb213-8306-4a05-a73d-8a61a8808bd7][my melancholy]] as a [[id:e90a4567-868b-4adc-a2bc-98d908a96dc6][mechanism of hoping]].
+
+So, this relates to [[id:4cc1fa17-6c58-4d06-948d-0a353b767199][my brand]] and [[id:1ff9d4b3-94f6-4c8a-9769-9eaf5dc216bc][my public image]].
+
+And that got me wondering what [[id:878bda6f-b05c-4f02-9ce2-f21fde7c0be4][persons of the Catholic Church]] relate to those practices. Here's my [[id:6f6d9c4d-1ebc-4cbe-a039-1813db78826b][keyword salad]].
+
+- Anger
+  - [[id:7fd79463-840a-4004-a485-cc2aadae2af4][Aquinas]] wrote about anger as [[id:d6d5f08b-5776-4b13-bb7d-f9f2af930cb4][ira]], with virtuous and disordered forms: [[id:39307eb1-9254-4a70-bfc7-319d2e3a82dd][ira bona]] and [[id:4264eda7-ff8d-41e8-bb23-2ebd75b8e83e][ira mala]]
+  - [[id:491fc842-f5e7-462a-af11-1c0a49354cc7][Catherine of Siena]] wrote about [[id:c04516dc-7900-44f6-823c-09e23fc2e121][holy indignation]]
+  - [[id:0d2dfb68-d946-4315-997f-a89167d4bc88][Francis of Assisi]]
+    - normally [[id:916c35b6-88c0-4c41-a7dd-b9f83b5fc72e][Catholic signifier]] for [[id:1dc5c641-63c2-4003-aeab-3a57f6847561][jouissance]], that [[id:84c30965-a952-424d-a75b-aa1b903e45fe][non-teleological]] [[id:346f6564-df4f-4fc1-a92d-28ecfe86e20a][joy]], but much like [[id:398429cb-e3d6-40ce-8074-087c905b1e25][anarcho-nihilist jouissance]], Francis' joy came from [[id:9d5b1f06-d726-4df0-9d5f-19c31261ef3f][frustration]] about [[id:ba172e39-568c-4762-b5da-b6ddf59de0b9][wealth]] and [[id:5f8829a5-78e3-435e-8392-92fbc397a347][violence]]
+      - he framed it as a [[id:ffac530f-501e-4c67-9602-c54476c0cc99][zeal]] for [[id:3be05569-6ed3-44d2-9c6a-03e0401f5c23][justice]].
+  - [[id:66585abc-66ea-43bc-8cd9-7358c1749f5b][Dorothy Day]]
+    - publicly, all about [[id:d784b1db-bbce-49ec-b515-471e7f5ed07d][holy anger]]
+    - her journals revealed melancholy she used for hope
+- [[id:8d954498-e0d6-4312-b0e6-64c77ec9b053][Melancholy]]
+  - [[id:081afb22-31cb-4d76-bb1a-f631304be38c][Augustine of Hippo]] wrote about the [[id:5869a342-1964-4962-88b9-f6a859d03443][inquietum cor]] (restless heart)
+  - [[id:23db8854-80a1-4976-9206-2a3c038a2d80][John of the Cross]] wrote on [[id:6904c492-5f80-46ad-9ff7-ab26d23df651][The Dark Night of the Soul]]
+    - "night" is the condition of hope
+  - [[id:2dfd915c-4adb-4f63-95ef-f37718ecf72f][Teresa of Ávila]], contemporary of John, wrote on [[id:1bc426ae-6c09-4f65-866e-6f9bd6041edb][spiritual aridity]]:
+    - a melancholy that comes from deep prayer
+    - prepares the soul for deeper union
+    - She discusses an [[id:55a496ff-1950-4016-afef-74b17ef296fd][interior castle]]
+      - The emphasis on an internal sanctuary seems to be a development of Catholic scholarship that is not (yet) found in development's like [[id:574fc40f-4778-4fe1-bbfe-774373365e2f][hope]] as developed by [[id:9bbd19ff-9564-48be-aeb5-ace10cfcad7f][Byung-Chul Han]] in [[id:6a7006b5-0aed-40ba-91a8-34f49a3b47d2][The Spirit of Hope]] ([[id:29035ee8-7163-4850-9cc2-465916073d47][2024ce]])
+  - [[id:cf02f8e7-3fac-43b1-a62f-7e19fe6d307a][Ignatius of Loyola]]
+    - [[id:a5a9aecb-ceb8-4c88-bfd8-c26ccb6f4605][founder]] of the [[id:8babda47-177b-434a-b27d-f5e88bc0e014][Jesuits]]
+    - contrasted [[id:923b9ab9-2c03-43bb-8425-82c9d58edf21][desolation]] and [[id:45eafd6c-9d3a-46be-919c-5e224488e879][consolation]]
+    - taught that desolation can deepen hope:
+      - [[id:b1d585c8-fb34-4eec-b19a-bb90e4eb834c][revealing]] our [[id:7e967cb6-493f-475f-93cd-0432251faebb][dependence]] on [[id:8b531a9d-45d6-476b-a05b-3914eb520a4f][God]]
+      - [[id:7b2ffde4-1eb2-4af0-ad93-30ed5cb3f7da][opportunity]] for [[id:6cb9ff13-9616-4a22-96bc-16f7ff6bc433][perserverance]]
+	- perserverance here then is a [[id:e90a4567-868b-4adc-a2bc-98d908a96dc6][mechanism of hoping]]
+  - [[id:281fb41a-7c08-41ca-a429-7092a3e2dc8f][Thérèse of Lisieux]]
+    - created the [[id:af09e6a4-3d69-41aa-927a-e3b03ff8a24a][Little Way]]
+      - another focus on spiritual aridity, connecting it with melancholy and [[id:cff94409-0203-43ea-936c-783321c3081a][doubt]]
+      - [[id:fa7312d0-acfe-4a09-86ad-8511553f1497][absence]] of [[id:45eafd6c-9d3a-46be-919c-5e224488e879][consolation]] is the highest form of hoping:
+	- trust without /sought-after/ evidence

@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/aperiodic-settling/content/step-n-substitution-recurrence/content/step-n-substitution-rule/content/step-n-classifying-invariant",
+  "title": "step-n-classifying-invariant",
+  "description": "The post-shift-quotient classifying invariant of a step-n substitution settling - the aperiodic classifying invariant refined by the step parameter n, with the uncountable-rank invariant collapsed under settling-shift equivalence to rank exactly n.",
+  "allOf": [
+    { "$ref": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/aperiodic-settling/content/aperiodic-classifying-invariant" }
+  ],
+  "type": "object",
+  "required": ["step", "settling-shift-quotient", "rank", "self-similar-cohomology"],
+  "properties": {
+    "step": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "the step depth n indexing the substitution rule that generated the settling - one substitution-letter per row/column of the substitution matrix"
+    },
+    "settling-shift-quotient": {
+      "const": true,
+      "description": "the invariant is cl-inv(v) / ~settling-shift, quotienting the aperiodic invariant by the corpus's natural MLD settling-shift equivalence"
+    },
+    "rank": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "the cohomological rank, equal to the step parameter: cl-inv^(n)(v) in Z^n (step-n cohomological rank theorem; Anderson-Putnam Cech^1 cong Z^n)"
+    },
+    "self-similar-cohomology": {
+      "const": true,
+      "description": "after settling-shift the distinct firing-ordinals collapse to exactly n substitution-equivalence classes, one per substitution-letter"
+    },
+    "substitution-matrix-action": {
+      "description": "the rank-n invariant carries an action by the step-n substitution matrix; same n yields the same rank but matrices distinct up to conjugacy give distinct invariants (necessary but not sufficient for MLD-equivalence)"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+* Events
+** TODO [#A] Attend the powwow in Raleigh
+SCHEDULED: <2021-10-30 Sat>
+** TODO [#A] Hand out candy for Halloween
+SCHEDULED: <2021-10-31 Sun>
+* Anniversaries

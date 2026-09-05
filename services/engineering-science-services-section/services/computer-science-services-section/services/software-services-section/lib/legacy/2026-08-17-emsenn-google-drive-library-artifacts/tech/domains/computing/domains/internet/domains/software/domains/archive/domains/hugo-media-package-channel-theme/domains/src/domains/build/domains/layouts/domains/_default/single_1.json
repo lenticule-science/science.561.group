@@ -1,0 +1,13 @@
+{
+  "shaggy-dog-tale": {
+    "title": "A Shaggy Dog Tale"
+    version: {
+      "0.1.0": {
+        "local":{
+          "location": "/store/"
+          "formats": ["html","org"]
+        }
+      }
+    }
+  }
+}

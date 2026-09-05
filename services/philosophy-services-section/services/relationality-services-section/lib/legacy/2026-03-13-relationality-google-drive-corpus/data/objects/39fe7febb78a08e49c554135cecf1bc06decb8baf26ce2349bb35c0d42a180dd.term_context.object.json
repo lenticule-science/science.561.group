@@ -1,0 +1,12 @@
+{
+  "discipline_refs": [],
+  "id": "39fe7febb78a08e49c554135cecf1bc06decb8baf26ce2349bb35c0d42a180dd",
+  "kind": "term_context",
+  "trace_id": "64b3fa99e8b54e0bdbeb1f1c73f481d7d0fe4e9862f39c653f8618de0ddc12a0",
+  "types": [
+    "T"
+  ],
+  "variables": [
+    "x"
+  ]
+}

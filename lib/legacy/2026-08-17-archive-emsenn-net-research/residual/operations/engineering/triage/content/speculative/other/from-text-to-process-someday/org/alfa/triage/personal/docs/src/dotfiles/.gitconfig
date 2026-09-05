@@ -1,0 +1,25 @@
+﻿; user identification
+[user]
+    name = Morgan Sennhauser
+[github]
+    user = emsenn
+
+; environment
+[alias]
+    co = checkout
+    c =  commit
+    diff = !git diff --word-diff | vim
+    st = status
+
+    amend = !git log -n 1 --pretty=tformat%s%n%n%b | git commit -F --amend
+    ignore = !([ ! -e .gitignore ] && touch .gitignore) | echo $1 >>.gitignore
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+    r = !git ls-files -z --deleted | xargs -0 git rm
+    this = !git init && git add . && git commit -m \"initial commit\"
+
+[color]
+    branch = auto
+    diff = auto
+    interactive = auto
+    status = auto

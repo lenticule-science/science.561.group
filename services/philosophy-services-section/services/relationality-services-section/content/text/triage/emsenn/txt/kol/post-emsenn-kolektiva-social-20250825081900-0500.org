@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       9bf0833f-c072-4d7b-9075-e5b1c7503d80
+:public:   true
+:form:     [[id:a299fe51-7629-4b6e-afa0-7c7717371cc7][post to @emsenn@kolektiva.social]]
+:ROAM_REFS: https://kolektiva.social/@emsenn/115087035145710325
+:END:
+#+title: Post to @emsenn@kolektiva.social, 2025-08-25
+
+I've been getting back to writing in [[id:6a3fc30f-fd91-4d01-b5bb-ef4f001d934a][Emacs]] and just got to the point where I can publish [[id:cc253409-9a82-4c5d-a4cd-8013f4e350c6][my personal website]] from [[id:3ffa600c-f831-428f-bd11-a4e6583ff5ad][my files]].
+
+Here's me babbling about that: [[id:99f1289a-973a-4882-8a50-4613aa646127][Babble, [2025-08-22 Fri 22:41]​]]
+
+It'll take a while for there to be enough information on the site for it to be useful to anyone, but I just wanted to post again about how happy I am to have a computer that can actually run Emacs and do some [[id:a9dd2168-00b4-4106-8ff6-d508b27fea0a][SQLite]] stuff without choking.
+
+Working in a [[id:bfddfbb8-0fb2-42a7-92f6-e9ab5064749f][digital garden]] is something I love, am suited to do, and people value from me, so it's just all-in-all exciting, even if I'm currently doing a bunch of sloggy work that readers won't easily see.
+
+Also while I'm getting back to various aspects of online living, I should mention that I admin [[id:6ecd3044-8c62-426c-89eb-18be40cd5cf9][a small Discord server]]. It's small enough that in practice, it's just folk who find each other mutually agreeable chatting, but the designed purpose is bringing together folk who want to respond, not react, to [[id:37b25413-f1bc-4ecf-b6fe-a6c2c81dcc55][climate breakdown]] and its consequences like [[id:3485b805-24fe-4b8b-ba60-fb96882f924f][ecofascism]].

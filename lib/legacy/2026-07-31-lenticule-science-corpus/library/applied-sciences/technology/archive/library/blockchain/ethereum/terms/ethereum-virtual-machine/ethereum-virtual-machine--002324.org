@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       bd0e585f-0cba-4148-8380-265874c0ed67
+:NODE-RELATIONS: (([[id:a2c2f698-d068-41c9-a997-acd39886e3d7][virtual machine]] . [[id:09c6b3fc-dd4f-495f-8542-95791a6d2384][Ethereum]]))
+:END:
+#+title: Ethereum Virtual Machine
+#+date: [2025-09-06 Sat 09:50]
+

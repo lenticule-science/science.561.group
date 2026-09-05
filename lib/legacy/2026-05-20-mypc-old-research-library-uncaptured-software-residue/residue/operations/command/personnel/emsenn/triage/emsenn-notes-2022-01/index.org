@@ -1,0 +1,9 @@
+#+title: emsenn's digital garden
+
+My name is emsenn.[fn:: I'm a second-generation lost bird Itazipco Lakota, queer, and have permanent health and mobility issues. I was raised on the unceded traditional territory of the Shawnee, Miami, and Wyandotte Nations, by family that live as settlers, and now live on the unceded traditional territory of the Shakori-Eno people, alongside Indigenous people from many Nations, tribes, and bands, as well as people brought here through diaspora, displacement, and settler-colonization. I've lived through 31 winters, and in my life I've developed skills in land stewardship and urban direct action.[fn:: Everything I know was taught to me through the hard work of others, especially Black and Indigenous women.]]
+
+This is a collection of digital artifacts I've created.
+
+- [[file:bul/index.org][Bulletins]] :: Timely information I want to share with other folk on the Web
+- [[file:com/index.org][Communications]] :: Less timely, though certainly not timeless, informatoin
+- [[file:./lan/index.org][Local Area Network]] :: Information relevant to folk who live near me[fn:: Around the headwaters of what most folk call the Haw River, in the Piedmont of Turtle Island.]

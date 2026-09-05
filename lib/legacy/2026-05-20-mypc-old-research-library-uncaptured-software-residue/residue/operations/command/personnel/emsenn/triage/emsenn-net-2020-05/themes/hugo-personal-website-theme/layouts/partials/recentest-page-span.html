@@ -1,0 +1,12 @@
+<span class="recentest-page">
+  The page most recently added to this website is
+  {{- range first 1 $.Site.Pages.ByPublishDate.Reverse }}
+    <a href="{{- .Permalink -}}">{{- .Title -}}</a>, a(n)
+    {{ .Type | singularize -}}
+    {{- with .Description -}}
+      : "{{- . -}}"
+    {{- else -}}
+      .
+    {{- end -}}
+  {{- end -}}
+</span>

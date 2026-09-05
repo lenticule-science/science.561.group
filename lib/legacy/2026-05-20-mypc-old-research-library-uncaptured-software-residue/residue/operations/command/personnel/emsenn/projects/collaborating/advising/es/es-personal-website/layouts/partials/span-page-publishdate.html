@@ -1,0 +1,5 @@
+{{ with .PublishDate }}
+  <span id="page-publishdate">
+    [{{ dateFormat "2006-01-02 Mon 15:04" . }}]
+  </span>
+{{ end }}

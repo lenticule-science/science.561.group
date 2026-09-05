@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://active.development.561.group/articulating/library/aperiodic-articulation-category/commutating/library/aperiodic-nuclear-quartet-category/library/joint-quiescent-corner/library/aperiodic-autopoiesis-cell/library/potential-aperiodic-autopoiesis-cell/predicating/library/transfinite-predication-category/library/transfinite-bounded-nuclear-square-shadow/library/potential-transfinite-bounded-nuclear-square-shadow/positing/library/scott-continuous-posit-category/library/scott-continuous-nuclear-dyad-shadow/library/potential-scott-continuous-nuclear-dyad-shadow/settling/library/finite-settlement-algebra/library/strict-finite-nuclear-collapse-shadow/strict-finite-nuclear-collapse-shadow.schema.json",
+  "title": "strict-finite-nuclear-collapse-shadow",
+  "description": "The strict-finite shadow of aperiodic-autopoiesis-cell, descended through transfinite-bounded → Scott-continuous. The nuclei become identity (closure trivially fixes every element in finitely many steps). The dyad collapses to the underlying Heyting algebra with no nuclear distinction. Where textbook closure-operator theory recovers as the fully-collapsed shadow.",
+  "type": "object",
+  "properties": {
+    "name": { "type": "string", "const": "strict-finite-nuclear-collapse-shadow" }
+  },
+  "required": ["name"]
+}

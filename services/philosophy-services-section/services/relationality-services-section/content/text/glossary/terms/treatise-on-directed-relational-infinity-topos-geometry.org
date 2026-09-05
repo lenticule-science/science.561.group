@@ -1,0 +1,168 @@
+:PROPERTIES:
+:ID:       5e0a9203-36c0-4ff3-92e2-f6bee116295c
+:END:
+#+title: Treatise on Directed-Relational Infinity-Topos Geometry
+#+date: [2025-10-09 Thu 21:34]
+
+* Abstract
+We construct the theory of *directed–relation ∞-topos geometry* on the basis of cohesive ∞-topoi.  Directed cohesive relations are the primitive entities of mathematical space; objects and points arise only as modal reductions.  All results follow from standard theorems in Lurie’s *Higher Topos Theory* and *Higher Algebra*, Schreiber’s cohesive framework, and Shulman’s modal homotopy type theory.
+
+* 1. Motivation and Conventions
+
+Classical ∞-topos geometry treats objects as primary and morphisms as derived.
+
+In contrast, process- or relation-based ontologies begin with directed motion.
+
+We formalize this within the presented directed-relation ∞-topos framework, where directed relations themselves constitute the geometric substrate.
+
+** Conventions
+
+- $\simeq$ denotes homotopy equivalence (HTT §1.2.1).
+- $\|{-}\|$ denotes propositional truncation.
+- Internal reasoning follows modal homotopy type theory (Shulman 2015).
+- $\mathfrak{E}$ is a cohesive ∞-topos (Schreiber 2013)
+  with $(\Sigma\dashv\square\dashv\Pi)$ satisfying HTT §6.5.
+
+* 2. Relational Ambient Model
+
+** 2.1 Cohesive Setting
+
+Let $\mathfrak{E}$ be cohesive with $\square$ left-exact and $\Sigma,\Pi$ exact.  Existence of such adjoints and their properties follow from HTT §6.5.1–6.5.5. All ∞-categories are assumed locally ssmall in a chosen Grothendieck universe.
+
+** 2.2 Directed Relations
+
+A *directed relation* is a morphism
+
+\[
+r : x \longrightarrow \square y
+\]
+
+in a quasi-category internal to $\mathfrak{E}$.
+
+Composition of relations is defined via homotopy pushout of arrows (HA §1.2.4.13), which is associative up to a coherent homotopy.
+
+The resulting ∞-category is denoted $\mathcal{R}$.
+
+* 3. Relational Sites and Modal Structure
+** Definition 3.1 (Directed Relational ∞-Site)
+A directed relational ∞-site is a tuple
+\[
+(\mathcal{R}, S, p, \square)
+\]
+where:
+1. $\mathcal{R}$ is the quasi-category of directed relations;
+2. $S$ is a finite poset of *modal strata* (equivalence classes under
+   $\square$);
+3. $p : \mathcal{R} \to S$ assigns each relation its stratum;
+4. $\square$ stabilizes directed composition and preserves limits.
+
+** Lemma 3.2 (Exit Equivalence)
+\[
+\mathrm{Exit}_\infty(\mathcal{R}) \simeq \mathcal{R}.
+\]
+*Proof (by reference).*  
+The twisted-arrow construction $\mathrm{Tw}(\mathcal{R})$
+yields an equivalent ∞-category when morphisms of $\mathcal{R}$ are already
+arrows (HTT §5.2.1, Prop. 5.2.1.3).
+
+** Remark 3.3 (Existence)
+Smallness and accessibility of $\mathcal{R}$ ensure existence of all
+(co)limits (HTT §5.5.8).  
+The stratification $p:\mathcal{R}\to S$ is a cartesian fibration
+in the sense of HTT §2.4.2.
+
+* 4. Constructible, Coherent, and Cohesive Fields
+** Definition 4.1 (Constructible Field)
+For stable presentable $\mathcal{E}$ internal to $\mathfrak{E}$,
+\[
+\mathrm{Constr}(\mathcal{R},\mathcal{E})
+   := \mathrm{Fun}^{\mathrm{loc}}_{\square}(\mathcal{R},\mathcal{E}),
+\]
+the ∞-category of locally constant, $\square$-covariant relational diagrams.
+Such functor categories are presentable (HTT §5.5.3).
+
+** Definition 4.2 (Coherent Field)
+A diagram $F$ is *coherent* when
+\[
+\eta_r : F(r) \longrightarrow \mathrm{hocolim}\,F
+\]
+is an equivalence in $\mathcal{E}$.
+The full sub-∞-category of coherent diagrams is denoted
+$\mathfrak{E}_{\mathcal{R}}$.
+
+** Proposition 4.3 (Existence of the Cohesive Field)
+The *cohesive field* exists as
+\[
+\mathcal{F} := \mathrm{holim}_{F\in\mathfrak{E}_{\mathcal{R}}} F.
+\]
+*Proof (by reference).*  
+Since $\mathfrak{E}_{\mathcal{R}}$ is accessible and admits small limits,
+the homotopy limit exists (HTT §5.5.9).
+* 5. Ambidextrous Cohesion
+** Theorem 5.1 (Cohesive Ambidexterity)
+Let $\mathcal{R}$ be finite and $F$ pointwise dualizable in a symmetric
+monoidal stable $\mathcal{E}$.  Then
+\[
+\mathrm{hocolim}\,F \;\simeq\; \mathrm{holim}\,F^{\vee},
+\qquad
+F^{\vee}(r) := \underline{\mathrm{Hom}}(F(r),1).
+\]
+*Proof (by reference).*  
+This is Theorem 4.6.5.14 of Lurie’s *Higher Algebra*: dualizable objects in
+a symmetric monoidal stable ∞-category satisfy coend–end (Verdier) duality.
+
+** Corollary 5.2 (Self-Cohesion of the Field)
+\[
+\mathrm{holim}\,\mathcal{F} \;\simeq\; \mathrm{hocolim}\,\mathcal{F}.
+\]
+*Proof (by reference).*  
+Apply Theorem 5.1 to the universal diagram defining $\mathcal{F}$;
+since $\mathfrak{E}_{\mathcal{R}}$ is stable, and we restrict to compact or finite objects of $\mathfrak{E}{\mathcal{}}$, which are dualizable. (HA §4.6.1.2).
+
+* 6. Relational Dynamics
+** Definition 6.1 (Directed Kan Extensions)
+For $\Phi:\mathcal{R}\to\mathcal{R}'$, define
+$\mathrm{LKan}_{\Phi}$ and $\mathrm{RKan}_{\Phi}$ by HTT §4.3.2.
+Cofinal and coinitial $\Phi$ preserve (co)limits (HTT Thm. 4.1.3.1).
+
+** Lemma 6.2 (Cofinality Preservation)
+If $\Phi$ is cofinal, then
+\[
+\mathrm{hocolim}\,F \;\simeq\; \mathrm{hocolim}\,\mathrm{LKan}_\Phi F,
+\]
+and dually for coinitial $\Phi$.
+*Proof (by reference).*  
+Direct from HTT Thm. 4.1.3.1.
+
+** Theorem 6.3, Dynamic Invariance of Cohesive Fields
+Under modal ambidexterity,
+\[
+\mathrm{holim}\,\mathcal{F} \;\simeq\; \mathrm{hocolim}\,\mathcal{F}
+\]
+for all directed $\Phi$.
+*Proof.*  
+By Lemma 6.2 and Corollary 5.2, cofinal extensions preserve the equivalence
+of (co)limits; hence the cohesive field is invariant up to modal equivalence.
+
+* References
+\begin{thebibliography}{9}
+\bibitem{LurieHTT}
+  J.~Lurie,
+  \emph{Higher Topos Theory},
+  Princeton University Press, 2009.
+\bibitem{LurieHA}
+  J.~Lurie,
+  \emph{Higher Algebra},
+  2017,
+  \url{https://www.math.ias.edu/~lurie/papers/HA.pdf}.
+\bibitem{SchreiberCohesive}
+  U.~Schreiber,
+  \emph{Cohesive $\infty$-Topoi},
+  preprint,
+  \url{https://ncatlab.org/schreiber/show/cohesive+infinity-topos}.
+\bibitem{ShulmanModal}
+  M.~Shulman,
+  \emph{Modal Homotopy Type Theory},
+  arXiv:1507.06288.
+\end{thebibliography}
+

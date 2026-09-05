@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       0c16d724-7466-46fd-80d5-e02a6ac07fe9
+:END:
+#+title: magic
+#+date: [2025-09-01 Mon 19:23]
+

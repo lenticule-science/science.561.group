@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       5d1f94df-8e30-4e98-951a-451e9977530d
+:END:
+#+title: procedure
+#+date: [2025-10-01 Wed 08:14]
+

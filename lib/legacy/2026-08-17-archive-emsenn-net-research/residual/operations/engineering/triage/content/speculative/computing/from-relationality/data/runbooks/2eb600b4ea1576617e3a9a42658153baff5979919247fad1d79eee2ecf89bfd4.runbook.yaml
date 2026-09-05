@@ -1,0 +1,26 @@
+name: star_operation
+inputs:
+- role: fixed_operator
+  kind: fixed_operator
+- role: fixed_invariants
+  kind: fixed_invariants
+- role: nucleus_map
+  kind: nucleus_map
+outputs:
+- role: fixed_operator
+  kind: fixed_operator
+steps:
+- name: star_operation
+  operator: star_operation
+  step_index: 0
+  inputs:
+  - role: fixed_operator
+    kind: fixed_operator
+  - role: fixed_invariants
+    kind: fixed_invariants
+  - role: nucleus_map
+    kind: nucleus_map
+  outputs:
+  - role: fixed_operator
+    kind: fixed_operator
+id: 2eb600b4ea1576617e3a9a42658153baff5979919247fad1d79eee2ecf89bfd4

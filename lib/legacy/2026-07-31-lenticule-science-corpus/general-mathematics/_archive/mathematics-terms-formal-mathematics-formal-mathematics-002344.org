@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       e6d260ea-cf24-438a-90b2-fcc5a170c6f8
+:field:    [[id:858d7dea-f66e-4222-b91c-f00cc037c736][mathematics]]
+:instantiates: [[id:ca7fc9c5-9820-4bf2-ba1f-6b90f323d7f4][formalism]]
+:END:
+#+title: formal mathematics
+#+date: [2025-08-24 Sun 11:47]
+#+index: mathematics!formal mathematics

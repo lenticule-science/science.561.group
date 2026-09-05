@@ -1,0 +1,41 @@
+#+title: HTMLize
+#+begin_head
+#+ghe_schema: term-0.1.3
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-31 Thu 15:32]
+#+roam_tags: term
+#+end_head
+
+#+name: htmlize-definition
+*/[[file:htmlize.org][HTMLize]]/* is an [[file:emacs_package.org][Emacs package]] for styling [[file:org_mode_source_block.org][Org-mode code-blocks]] when [[file:org_mode_export.org][exported]] as [[file:html.org][HTML]].
+
+#+toc: headlines 2
+* Introduction
+* HTMLize
+** HTMLize configuration
+
+   #+name: htmlize-configuration-elisp
+   #+caption: A sequence of /Elisp/ declarations for configuring /Org-mode agenda/.
+   #+begin_src elisp
+     (setq org-html-htmlize-output-type
+	   <<org-html-htmlize-output-value-elisp>>)
+   #+end_src
+   
+*** HTMLize configuration variables
+    #+name: org-html-htmlize-output-value-elisp
+    #+caption: The value for =org-html-htmlize-output=.
+    #+begin_src elisp
+      nil
+    #+end_src
+* Supplements
+** Record history
+   :PROPERTIES:
+   :CUSTOM_ID: record-history
+   :END:
+   :LOGBOOK:
+   - Note taken on [2020-12-31 Thu 15:32] \\
+      Created from [[file:~/org/s/p/org_mode_export.org::*Org-mode export configuration][Org-mode export configuration]]
+
+      
+   :END:

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       e2d85a81-dbda-4ef4-a386-f3effeda448a
+:END:
+#+title: education
+#+date: [2025-08-28 Thu 09:24]
+

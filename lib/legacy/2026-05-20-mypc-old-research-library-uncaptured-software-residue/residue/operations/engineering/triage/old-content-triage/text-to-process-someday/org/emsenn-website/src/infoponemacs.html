@@ -1,0 +1,2146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2023-01-14 Sat 15:03 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>InfoPonEmacs</title>
+<meta name="generator" content="Org Mode" />
+<style>
+  	   @charset "UTF-8";
+  
+  	   :root {	
+  	       --body-font: sans-serif;
+  	       --header-font: sans-serif;
+  	       --code-font: monospace;
+  	       --primary-color: #ffe;
+  	       --primary-dim-color: #eed;
+  	       --secondary-color: #312;
+  	       --secondary-dim-color: #756;
+  	       --link-color: #880;
+  	       --link-hover-color: #aa2;
+  	       --link-visited-color: #934;
+  	       --link-visited-hover-color: #b56;
+  	       --external-link-color: #008;
+  	       --external-link-hover-color: #60b;
+  	       --external-link-visited-color: #172;
+  	       --external-link-visited-hover-color: #394;
+  	   }
+  	   @media(prefers-color-scheme:dark){
+  	       :root {
+  		  --body-font: sans-serif;
+  		  --header-font: sans-serif;
+  		  --code-font: monospace;
+  		  --primary-color: #756;
+  		  --primary-dim-color: #312;
+  		  --secondary-color: #eed;
+  		  --secondary-dim-color: #ffe;
+  		  --link-color: #880;
+  		  --link-hover-color: #aa2;
+  		  --link-visited-color: #934;
+  		  --link-visited-hover-color: #b56;
+  	       }}
+  	   body {
+  	       position: relative;
+  	       min-height: 100%;
+  	       background-color: var(--primary-color);
+  	       color: var(--secondary-color);
+  	       margin: 0 auto;
+  	       font-family: sans-serif;
+  	   }
+  	   main, #content {
+  	       background-color: var(--primary-dim-color);
+  	       border-left: 1.5em dotted var(--primary-color);
+  	       padding: 1em;
+  	   }
+  	   header {
+  	       border-bottom: 0.8em dotted var(--secondary-dim-color);
+  	   }
+  	   h1 { font-size: 2em; margin-bottom: 0; }
+  	   h2 {
+  	       border-bottom: 0.3em dotted var(--secondary-dim-color);
+  	   }
+  	   h2, h3, h4, h5, h6, p, table, ul, ol, .org-src-container {
+  	       width: 60%;
+  	   }
+  	   aside {
+  	       float: right;
+  	       width: 35%;
+  	   }
+  	   aside p { width: 100%; }
+  	   @media screen and (max-width:760px) {
+  	       h2, h3, h4, h5, h6, p, table, ul, ol, .org-src-container {
+  		  width: 90%;
+  	       }
+  	       aside {
+  		  float: inherit;
+  		  width: 90%;
+  		  border-top: 0.2em dotted var(--secondary-dim-color);
+  		  border-bottom: 0.2em dotted VAR(--secondary-dim-color);
+  		  font-size: 0.8em;
+  		    }
+  	   }
+  
+  	   footer, #postamble, #preamble {
+  	       padding: 0.5em;
+  	   }
+  	   table {
+  	       border-collapse: collapse;
+  	       border-spacing: 0;
+  	       empty-cells: show;
+  	       border: 0.1em solid #444;
+  	   }
+  	   thead { font-family: sans-serif; }
+  	   th, td {
+  	       padding: 0 0.3em;
+  	       border: 0.01em solid #444;
+  	   }
+  	   img {
+  	       max-width: 80vw;
+  	       vertical-align: middle;
+  	   }
+  	   pre, .src {
+  	       padding: 0.5em;
+  	       border: 0.1em solid #444;
+  	       white-space: pre-wrap;
+  	       overflow-x: scroll;
+  	       text-overflow: clip;
+  	       scrollbar-width: none;
+  	   }
+  	   pre::-webkit-scrollbar, .src::-webkit-scrollbar {
+  	       display: none;
+  	   }
+  
+  
+  	   dt {
+  	       font-weight: normal;
+  	       display: inline-block;
+  	       border-bottom: 0.1rem dotted #444;
+  	   }
+  	   #text-index dt { border-bottom: none; }
+  	   h2, h3, h4, h5, h6, h7, h8, h9, h10 {
+  	       display: block;
+  	       font-family: sans-serif;
+  	       margin: 0.2em auto 0.5em 0;
+  	   }
+  	   a, .link {
+  	       text-decoration: none;
+  	       color: #880;
+  	       display: inline;
+  	       position: relative;
+  	       border-bottom: 0.1rem dotted;
+  	       line-height: 1.2;
+  	       transition: border 0.3s;
+  	   }
+  	   a:hover {
+  	       color: #aa2;
+  	       outline-style: none;
+  	       border-bottom: 0.1rem solid;
+  	   }
+  	   a:visited, .visited-link { color: #934; }
+  	   a:visited:hover { color: #b56; }
+  	   a:focus {
+  	       outline-style: none;
+  	       border-bottom: 0.1rem solid;
+  	   }
+  	   ::selection { background-color: #777; color: #eee; }
+  	   a::selection { background-color: #ccc; }
+  	   .org-todo {
+  	       background-color: #ddd;
+  	       color: #333;
+  	       font-size: .8rem;
+  	       float: right;
+  	   }
+  	   .org-src-container + .example {
+  	       margin-left: 8em;
+  	   }
+  	   a[href^="https://"]:not([href*="emsenn.net"]):after, a[href^="https://"]:not([href*="emsenn.net"]):visited:after, .external-link:after, .visited-external-link:after { 
+  	       content: "^";
+  	       font-size: 0.5em;
+  	       vertical-align: super;
+  	   }
+  	   a[href^="https://"]:not([href*="emsenn.net"]), .external-link {
+  	       color: var(--external-link-color);
+  	   }
+  	   a[href^="https://"]:not([href*="emsenn.net"]):hover{ 
+  	       color: var(--external-link-hover-color);
+  	   }
+  	   a[href^="https://"]:not([href*="emsenn.net"]):visited, .visited-external-link { 
+  	       color: var(--external-link-visited-color);
+  	   }
+  	   a[href^="https://"]:not([href*="emsenn.net"]):visited:hover{ 
+  	       color: var(--external-link-visited-hover-color);
+  	   }
+  	   blockquote {
+  	       border: 0.1em dashed var(--secondary-dim-color);
+  	       padding-left: 0.2em;
+  	   }
+  	   label.org-src-name {
+  	       margin: 0 0 0 3em;
+  	       font-family: sans-serif;
+  	       font-size: 1rem;
+  	       line-height: 0;
+  	   }
+  	   .skip-to-content {
+  	       opacity: 0;
+  	       position: absolute;
+  	       left: 0.2em;
+  	   }
+  	   .skip-to-content:focus{
+  	       opacity: 1;
+  	       background-color: var(--secondary-dim-color);
+  	       color: var(--primary-color);
+  	   }
+  	   ul { max-width: 85%; }
+      .footpara { display: inline; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+<section id="preamble" class="status">
+<a href="#content" class="skip-to-content">skip to content</a><section class="nav"><strong>emsenn.net:</strong> <a href="../index.html">Homepage</a> | <a href="../bul/index.html">Bulletins</a> | <a href="../mainindex.html">Main Index</a><p>This Website was cultivated as a public asset with <a href="https://ko-fi.com/emsenn">support</a> from people like you. <strong><em>Thank you!</em></strong></p>
+  	      <details>
+  	        <summary>Click this sentence for information about my Website.</summary>
+  	        <p>Click each sentence below for more info:</p>
+  	          <ul>
+  	            <li><details>
+  	      	<summary>This website was created by Emacs and Org-mode</summary>
+  	      	<p>See <a href="https://emsenn.net/src/infoponemacs.html">my Emacs configuration</a> to learn how.</p>
+  	            </details></li>
+  	            <li><details>
+  	              <summary>Its content was written by hand.</summary>
+  	              <p>This means there might be mistakes! 
+  	            </details></li>
+  	            <li><details>
+  	      	<summary>It uses style to add information to the pages.</summary>
+  	      	<ul>
+  	      	  <li><details>
+  	      	  <summary>Click this sentence to see how links are styled:</summary>
+  	      	  <table>
+  	      	    <thead><tr>
+  	      	      <th scope="col">Color</th>
+  	      	      <th scope="col">Link type</th>
+  	      	    </tr></thead>
+  	      	    <tbody>
+  	      	      <tr><td class="link">Sample</td>
+  	      		<td>Unvisited local resource</td></tr>
+  	      	      <tr><td class="visited-link">Sample</td>
+  	      		<td>Visited local resource</td></tr>
+  	      	      <tr><td class="external-link">Sample</td>
+  	      		<td>Unvisited external resource</td></tr>
+  	      	      <tr><td class="visited-external-link">Sample</td>
+  	      		<td>Visited external resource</td></tr>
+  	      	    </tbody>
+  	      	  </table>
+  	      	</details></li>
+  	            </ul>
+  	          </details></li>
+  	        </ul>
+  	      </details>
+  	      </section>
+</section>
+<main id="content" class="content">
+<header>
+<h1 class="title">InfoPonEmacs</h1>
+</header><div class="head" id="org5a7a210">
+
+</div>
+<p>
+<i>Information</i> <b>+</b> <i>*Ponics</i> <b>+</b> <i>Emacs</i>
+</p>
+
+<p>
+<b><i><a href="infoponemacs.html">InfoPonEmacs</a></i></b> is an <a href="../def/emacsen.html">Emacsen</a> for cultivating a <a href="../def/digital-garden.html">digital garden</a>.
+</p>
+
+<nav id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgdadd5c1">Documentation</a>
+<ul>
+<li><a href="#orgaa23b71">FAQ</a></li>
+<li><a href="#org32ead27">Guides</a></li>
+</ul>
+</li>
+<li><a href="#org32f4402">Configuration</a>
+<ul>
+<li><a href="#orge76dff5">Email</a></li>
+<li><a href="#org0bf52e5">Save Behavior</a></li>
+<li><a href="#orgafd3413">Startup Behaviors</a></li>
+<li><a href="#org6a91478">Interface</a></li>
+<li><a href="#orgf3851f6">Basic Behaviors</a></li>
+<li><a href="#org60b95cf">Org-mode</a></li>
+</ul>
+</li>
+<li><a href="#org494e30d">Components</a>
+<ul>
+<li><a href="#orgaadaf1e">Package Management</a></li>
+<li><a href="#org0b9a34d">HTMLize</a></li>
+<li><a href="#orgd13b9d7">Magit</a></li>
+<li><a href="#org61d8c81">Org-mode</a></li>
+<li><a href="#org637d7a8">Theme</a></li>
+</ul>
+</li>
+<li><a href="#org3619c35">Development</a>
+<ul>
+<li><a href="#org0ac0f87">Plans</a></li>
+<li><a href="#org94f5949">Operations</a></li>
+</ul>
+</li>
+<li><a href="#orgc34819c">Full Source</a></li>
+</ul>
+</div>
+</nav>
+
+<section id="outline-container-orgdadd5c1" class="outline-2">
+<h2 id="orgdadd5c1">Documentation</h2>
+<div class="outline-text-2" id="text-orgdadd5c1">
+</div>
+<div id="outline-container-orgaa23b71" class="outline-3">
+<h3 id="orgaa23b71">FAQ</h3>
+<div class="outline-text-3" id="text-orgaa23b71">
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org521b3ba">Why not Org-roam, etc.?</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org521b3ba" class="outline-4">
+<h4 id="org521b3ba">Why not Org-roam, etc.?</h4>
+<div class="outline-text-4" id="text-org521b3ba">
+<p>
+A lot of the cultivation of my digital garden is done through the Emacs client that runs on my phone, which got laggy dealing with a previous version of my digital garden which did use Org-roam.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org32ead27" class="outline-3">
+<h3 id="org32ead27">Guides</h3>
+<div class="outline-text-3" id="text-org32ead27">
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgf38533d">Styleguide</a></li>
+<li><a href="#orga0a67bb">Hotkey Cheatsheets</a></li>
+<li><a href="#projects-operations-tasks">Understanding Projects, Operations, and Tasks</a></li>
+</ul>
+</div>
+
+<p>
+Here's some guides related to InfoPonEmacs; please note these were written for and by the me, the same person that made InfoPonEmacs, so they might not be too useful if you are anyone who isn't me.
+</p>
+</div>
+<div id="outline-container-orgf38533d" class="outline-4">
+<h4 id="orgf38533d">Styleguide</h4>
+<div class="outline-text-4" id="text-orgf38533d">
+<ul class="org-ul">
+<li>Italics and bold when you define a term</li>
+<li>Italics when you mention it outside its definition</li>
+<li>First time you define it in a file, include its definition as an aside</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga0a67bb" class="outline-4">
+<h4 id="orga0a67bb">Hotkey Cheatsheets</h4>
+<div class="outline-text-4" id="text-orga0a67bb">
+</div>
+<div id="outline-container-org1bd6f2e" class="outline-5">
+<h5 id="org1bd6f2e">Clocking</h5>
+<div class="outline-text-5" id="text-org1bd6f2e">
+<dl class="org-dl">
+<dt>Go to current clock</dt><dd><code>C-c C-x C-j</code></dd>
+</dl>
+</div>
+</div>
+</div>
+<div id="outline-container-projects-operations-tasks" class="outline-4">
+<h4 id="projects-operations-tasks">Understanding Projects, Operations, and Tasks</h4>
+<div class="outline-text-4" id="text-projects-operations-tasks">
+</div>
+<div id="outline-container-orgc281b5d" class="outline-5">
+<h5 id="orgc281b5d">Tasks</h5>
+<div class="outline-text-5" id="text-orgc281b5d">
+</div>
+<div id="outline-container-org56d2bb0" class="outline-6">
+<h6 id="org56d2bb0">Task priorities</h6>
+<div class="outline-text-6" id="text-org56d2bb0">
+<p>
+Org-mode lets tasks have one of three priorities - by default these priorities are <code>#A</code>, <code>#B</code>, and <code>#C</code>, and that's what I've left them as. Here's how they're used:
+</p>
+
+<dl class="org-dl">
+<dt><code>#A</code></dt><dd><b>Maintain</b> <i>external</i> obligations</dd>
+<dt><code>#B</code></dt><dd><b>Maintain</b> <i>internal</i> obligations</dd>
+<dt><code>#C</code></dt><dd><b>Change</b>, that is, grow or something similar</dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="outline-container-org32f4402" class="outline-2">
+<h2 id="org32f4402">Configuration</h2>
+<div class="outline-text-2" id="text-org32f4402">
+</div>
+<div id="outline-container-orge76dff5" class="outline-3">
+<h3 id="orge76dff5">Email</h3>
+<div class="outline-text-3" id="text-orge76dff5">
+<div class="org-src-container">
+<label class="org-src-name"><span class="listing-number">Listing 1: </span>Set the <code>user-mail-address</code> variable.</label><pre class="src src-elisp" id="orga41f3b7">(setq user-mail-address "emsenn@emsenn.net")
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org0bf52e5" class="outline-3">
+<h3 id="org0bf52e5">Save Behavior</h3>
+<div class="outline-text-3" id="text-org0bf52e5">
+<div class="org-src-container">
+<pre class="src src-elisp" id="org1290a8d">(setq make-backup-files nil)
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgafd3413" class="outline-3">
+<h3 id="orgafd3413">Startup Behaviors</h3>
+<div class="outline-text-3" id="text-orgafd3413">
+<div class="org-src-container">
+<pre class="src src-elisp" id="orgd7df312">(setq inhibit-startup-message t)
+(setq inhibit-startup-screen t)
+(setq initial-scratch-message
+      ";; LANDBACK")
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org6a91478" class="outline-3">
+<h3 id="org6a91478">Interface</h3>
+<div class="outline-text-3" id="text-org6a91478">
+<div class="org-src-container">
+<pre class="src src-elisp" id="org17f5468">(menu-bar-mode -1)
+(tool-bar-mode -1)
+(show-paren-mode 1)
+(setq line-number-mode t)
+(setq column-number-mode t)
+(setq-default truncate-lines t)
+(setq-default line-spacing 1)
+(setq sentence-end-double-space nil)
+(global-visual-line-mode t)
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf3851f6" class="outline-3">
+<h3 id="orgf3851f6">Basic Behaviors</h3>
+<div class="outline-text-3" id="text-orgf3851f6">
+<div class="org-src-container">
+<pre class="src src-elisp" id="orgac7a05b">(setq echo-keystrokes 0.1)
+(setq fill-column 68)
+(setq mouse-wheel-scroll-amount '(1 ((shift) .1)))
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org60b95cf" class="outline-3">
+<h3 id="org60b95cf">Org-mode</h3>
+<div class="outline-text-3" id="text-org60b95cf">
+<div class="org-src-container">
+<pre class="src src-elisp" id="orgfc9963e">(org-directory "~/org")
+(org-startup-folded 'fold)
+(org-hide-block-startup 'hideblocks)
+(org-catch-invisible-edits 'show-and-error)
+(org-agenda-custom-commands
+      '(("A" "Agenda and TODO"
+	 ((agenda "" )
+	  (alltodo "" )))))
+(org-agenda-todo-ignore-scheduled 'all)
+(org-agenda-files (list "~/org" "~/org/pro" "~/org/pro/bur" "~/org/pro/gar" "~/org/src"))
+(org-export-with-section-numbers nil)
+(org-export-with-smart-quotes nil)
+(org-export-with-toc nil)
+(org-html-htmlize-output-type 'nil)
+(org-html-validation-link nil)
+(org-log-done 'time)
+(org-log-into-drawer 'LOGBOOK)
+(org-image-actual-width '(400))
+</pre>
+</div>
+</div>
+<div id="outline-container-org415bf9b" class="outline-4">
+<h4 id="org415bf9b">Keybindings</h4>
+<div class="outline-text-4" id="text-org415bf9b">
+<div class="org-src-container">
+<pre class="src src-elisp" id="org40e3217">("C-c l" . org-store-link)
+("C-c a" . org-agenda)
+("C-c c" . org-capture)
+("C-c t" . org-toggle-link-display)
+("C-c C-q" . counsel-org-tag)
+("&lt;f8&gt;" . emacsen-org-capture-capture-at-point)
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf264bcf" class="outline-4">
+<h4 id="orgf264bcf">Babel Languages</h4>
+<div class="outline-text-4" id="text-orgf264bcf">
+<div class="org-src-container">
+<pre class="src src-elisp" id="orgc3d827e">(shell . t)
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org32db0e8" class="outline-4">
+<h4 id="org32db0e8">Macros</h4>
+<div class="outline-text-4" id="text-org32db0e8">
+</div>
+<div id="outline-container-org6eee23b" class="outline-5">
+<h5 id="org6eee23b">Utility Macros</h5>
+<div class="outline-text-5" id="text-org6eee23b">
+<div class="org-src-container">
+<pre class="src src-elisp" id="orgddea05f">("nl" . "(eval \"\\n\")")
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd846776" class="outline-5">
+<h5 id="orgd846776">Library Macros</h5>
+<div class="outline-text-5" id="text-orgd846776">
+<div class="org-src-container">
+<pre class="src src-elisp" id="orgc5edc52">("lib-item-table" . "- Title :: {{{property(lib-item-title)}}}{{{nl}}}- Author :: {{{property(lib-item-author)}}}{{{nl}}}- Brief :: {{{property(lib-item-brief)}}}{{{nl}}}- Topics :: {{{property(lib-item-topics)}}}{{{nl}}}")
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org0813bc3" class="outline-4">
+<h4 id="org0813bc3">Capture Templates</h4>
+<div class="outline-text-4" id="text-org0813bc3">
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org1638c8a"><span class="todo TODO">TODO</span> New communication (c)</a></li>
+<li><a href="#org4312f52"><span class="todo TODO">TODO</span> New definition (d)</a></li>
+<li><a href="#org8b5a07f"><span class="todo TODO">TODO</span> New journal entry (j)</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org1638c8a" class="outline-5">
+<h5 id="org1638c8a"><span class="todo TODO">TODO</span> New communication (c)</h5>
+</div>
+<div id="outline-container-org4312f52" class="outline-5">
+<h5 id="org4312f52"><span class="todo TODO">TODO</span> New definition (d)</h5>
+</div>
+<div id="outline-container-org8b5a07f" class="outline-5">
+<h5 id="org8b5a07f"><span class="todo TODO">TODO</span> New journal entry (j)</h5>
+</div>
+</div>
+<div id="outline-container-orge55e3f9" class="outline-4">
+<h4 id="orge55e3f9">Projects</h4>
+<div class="outline-text-4" id="text-orge55e3f9">
+</div>
+<div id="outline-container-org339ae40" class="outline-5">
+<h5 id="org339ae40">emsenn's Website</h5>
+<div class="outline-text-5" id="text-org339ae40">
+</div>
+<div id="outline-container-org8fa3930" class="outline-6">
+<h6 id="org8fa3930">Project Definitions</h6>
+<div class="outline-text-6" id="text-org8fa3930">
+</div>
+<div id="outline-container-org567e82f" class="outline-7">
+<h7 id="org567e82f">Configuration</h7>
+<div class="outline-text-7" id="text-org567e82f">
+<div class="org-src-container">
+<pre class="src src-elisp" id="org67ac29f">:base-extension "org"
+:publishing-function org-html-publish-to-html
+:html-doctype "html5"
+:html-html5-fancy t
+:html-container "section"
+:headline-levels 6
+:recursive t
+:html-divs ((preamble "section" "preamble")
+	    (content "main" "content")
+	    (postamble "section" "postamble"))
+:html-head-include-scripts nil
+:html-head-include-default-style nil
+:html-head ,org-project-emsenn-website-html-head
+:html-format-drawer-function ipe-org-html-format-drawer
+:exclude "README.org\\|DRAFT\\|PRIVATE"
+:with-footnotes t
+:with-date nil
+:with-timestamps nil
+:with-author nil
+:sitemap-function ipe-org-publish-format-sitemap
+:sitemap-filename "index.org"
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgbeaafee" class="outline-7">
+<h7 id="orgbeaafee">Conglomerate Project</h7>
+<div class="outline-text-7" id="text-orgbeaafee">
+<div class="org-src-container">
+<pre class="src src-elisp" id="orgcf3f826">("emsenn-website" :components ("emsenn-website-all" "emsenn-website-bul" "emsenn-website-com" "emsenn-website-def" "emsenn-website-pro" "emsenn-website-pro-bur" "emsenn-website-pro-gar" "emsenn-website-ref" "emsenn-website-src" "emsenn-website-ter" "emsenn-website-ter-adv" "emsenn-website-ter-ref" "emsenn-website-static"))
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgfa53900" class="outline-7">
+<h7 id="orgfa53900">All</h7>
+<div class="outline-text-7" id="text-orgfa53900">
+<div class="org-src-container">
+<pre class="src src-elisp" id="orgdd80873">:base-directory "~/org"
+:publishing-directory "~/emsenn-website"
+:makeindex t
+:html-preamble ,org-project-emsenn-website-preamble
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orga3e37e7" class="outline-7">
+<h7 id="orga3e37e7">Bulletins</h7>
+<div class="outline-text-7" id="text-orga3e37e7">
+<div class="org-src-container">
+<pre class="src src-elisp" id="org9c50ec4">:base-directory "~/org/bul"
+:publishing-directory "~/emsenn-website/bul"
+:html-preamble ,org-project-emsenn-website-preamble-subdir
+:auto-sitemap t
+:sitemap-sort-files anti-chronologically
+:sitemap-title "Bulletins"
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgbd2ac9a" class="outline-7">
+<h7 id="orgbd2ac9a">Communications</h7>
+<div class="outline-text-7" id="text-orgbd2ac9a">
+<div class="org-src-container">
+<pre class="src src-elisp" id="org484e609">:base-directory "~/org/com"
+:publishing-directory "~/emsenn-website/com"
+:html-preamble ,org-project-emsenn-website-preamble-subdir
+:auto-sitemap t
+:sitemap-sort-files anti-chronologically
+:sitemap-title "Communications"
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org894d0b8" class="outline-7">
+<h7 id="org894d0b8">Definitions</h7>
+<div class="outline-text-7" id="text-org894d0b8">
+<div class="org-src-container">
+<pre class="src src-elisp" id="org010b7bf">:base-directory "~/org/def"
+:publishing-directory "~/emsenn-website/def"
+:html-preamble ,org-project-emsenn-website-preamble-subdir
+:auto-sitemap t
+:sitemap-sort-files alphabetically
+:sitemap-title "Definitions"
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org04ca246" class="outline-7">
+<h7 id="org04ca246">Projects</h7>
+<div class="outline-text-7" id="text-org04ca246">
+<div class="org-src-container">
+<pre class="src src-elisp" id="orged66022">:base-directory "~/org/pro"
+:publishing-directory "~/emsenn-website/pro"
+:html-preamble ,org-project-emsenn-website-preamble-subdir
+:with-clocks t
+:with-drawers t
+:with-planning t
+:with-priority t
+:with-tasks t
+:with-todo-keywords t
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org4fc6e47" class="outline-7">
+<h7 id="org4fc6e47">561 Burrow Project</h7>
+<div class="outline-text-7" id="text-org4fc6e47">
+<div class="org-src-container">
+<pre class="src src-elisp" id="org71b5035">:base-directory "~/org/pro/bur"
+:publishing-directory "~/emsenn-website/pro/bur"
+:html-preamble ,org-project-emsenn-website-preamble-subsubdir
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org6ffd057" class="outline-7">
+<h7 id="org6ffd057">561 Garden Project</h7>
+<div class="outline-text-7" id="text-org6ffd057">
+<div class="org-src-container">
+<pre class="src src-elisp" id="orgbca64e6">:base-directory "~/org/pro/gar"
+:publishing-directory "~/emsenn-website/pro/gar"
+:html-preamble ,org-project-emsenn-website-preamble-subsubdir
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org8844d4e" class="outline-7">
+<h7 id="org8844d4e">References</h7>
+<div class="outline-text-7" id="text-org8844d4e">
+<div class="org-src-container">
+<pre class="src src-elisp" id="orgda003dc">:base-directory "~/org/ref"
+:publishing-directory "~/emsenn-website/ref"
+:html-preamble ,org-project-emsenn-website-preamble-subdir
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgbcdbfef" class="outline-7">
+<h7 id="orgbcdbfef">Source</h7>
+<div class="outline-text-7" id="text-orgbcdbfef">
+<div class="org-src-container">
+<pre class="src src-elisp" id="org8dd3cd3">:base-directory "~/org/src"
+:publishing-directory "~/emsenn-website/src"
+:html-preamble ,org-project-emsenn-website-preamble-subdir
+:auto-sitemap t
+:sitemap-sort-files alphabetically
+:sitemap-title "Source Code"
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org5377f0e" class="outline-7">
+<h7 id="org5377f0e">Static</h7>
+<div class="outline-text-7" id="text-org5377f0e">
+<div class="org-src-container">
+<pre class="src src-elisp" id="org9cd115f">("emsenn-website-static"
+ :base-directory "~/org/ems"
+ :base-extension "css\\|js\\|png\\|jpg\\|gif\\|pdf\\|mp3\\|ogg\\|swf"
+ :publishing-directory "~/org/pub/emsenn-net"
+ :recursive t
+ :publishing-function org-publish-attachment)
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org37c7863" class="outline-7">
+<h7 id="org37c7863">Teraum</h7>
+<div class="outline-text-7" id="text-org37c7863">
+<div class="org-src-container">
+<pre class="src src-elisp" id="org03a440a">:base-directory "~/org/ter"
+:publishing-directory "~/emsenn-website/ter"
+:html-preamble ,org-project-emsenn-website-preamble-subdir
+</pre>
+</div>
+</div>
+<ul class="org-ul">
+<li><a id="org00f145a"></a>Adventures<br>
+<div class="outline-text-8" id="text-org00f145a">
+<div class="org-src-container">
+<pre class="src src-elisp" id="org34eee0b">:base-directory "~/org/ter/adv"
+:publishing-directory "~/emsenn-website/ter/adv"
+:html-preamble ,org-project-emsenn-website-preamble-subdir
+</pre>
+</div>
+</div>
+</li>
+<li><a id="org1b43002"></a>References<br>
+<div class="outline-text-8" id="text-org1b43002">
+<div class="org-src-container">
+<pre class="src src-elisp" id="orgfea51a5">:base-directory "~/org/ter/ref"
+:publishing-directory "~/emsenn-website/ter/ref"
+:html-preamble ,org-project-emsenn-website-preamble-subsubdir
+</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5dc52d8" class="outline-6">
+<h6 id="org5dc52d8">Copy</h6>
+<div class="outline-text-6" id="text-org5dc52d8">
+</div>
+<div id="outline-container-org73f5297" class="outline-7">
+<h7 id="org73f5297">Preamble</h7>
+<div class="outline-text-7" id="text-org73f5297">
+<div class="org-src-container">
+<pre class="src src-elisp" id="orgb18529f">"&lt;p&gt;This Website was cultivated as a public asset with &lt;a href=\"https://ko-fi.com/emsenn\"&gt;support&lt;/a&gt; from people like you. &lt;strong&gt;&lt;em&gt;Thank you!&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;details&gt;
+  &lt;summary&gt;Click this sentence for information about my Website.&lt;/summary&gt;
+  &lt;p&gt;Click each sentence below for more info:&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;details&gt;
+	&lt;summary&gt;This website was created by Emacs and Org-mode&lt;/summary&gt;
+	&lt;p&gt;See &lt;a href=\"https://emsenn.net/src/infoponemacs.html\"&gt;my Emacs configuration&lt;/a&gt; to learn how.&lt;/p&gt;
+      &lt;/details&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;details&gt;
+	&lt;summary&gt;Its content was written by hand.&lt;/summary&gt;
+	&lt;p&gt;This means there might be mistakes! 
+      &lt;/details&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;details&gt;
+	&lt;summary&gt;It uses style to add information to the pages.&lt;/summary&gt;
+	&lt;ul&gt;
+	  &lt;li&gt;&lt;details&gt;
+	  &lt;summary&gt;Click this sentence to see how links are styled:&lt;/summary&gt;
+	  &lt;table&gt;
+	    &lt;thead&gt;&lt;tr&gt;
+	      &lt;th scope=\"col\"&gt;Color&lt;/th&gt;
+	      &lt;th scope=\"col\"&gt;Link type&lt;/th&gt;
+	    &lt;/tr&gt;&lt;/thead&gt;
+	    &lt;tbody&gt;
+	      &lt;tr&gt;&lt;td class=\"link\"&gt;Sample&lt;/td&gt;
+		&lt;td&gt;Unvisited local resource&lt;/td&gt;&lt;/tr&gt;
+	      &lt;tr&gt;&lt;td class=\"visited-link\"&gt;Sample&lt;/td&gt;
+		&lt;td&gt;Visited local resource&lt;/td&gt;&lt;/tr&gt;
+	      &lt;tr&gt;&lt;td class=\"external-link\"&gt;Sample&lt;/td&gt;
+		&lt;td&gt;Unvisited external resource&lt;/td&gt;&lt;/tr&gt;
+	      &lt;tr&gt;&lt;td class=\"visited-external-link\"&gt;Sample&lt;/td&gt;
+		&lt;td&gt;Visited external resource&lt;/td&gt;&lt;/tr&gt;
+	    &lt;/tbody&gt;
+	  &lt;/table&gt;
+	&lt;/details&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/details&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/details&gt;
+"
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org9b71167" class="outline-6">
+<h6 id="org9b71167">HTML</h6>
+<div class="outline-text-6" id="text-org9b71167">
+</div>
+<div id="outline-container-orgb92875f" class="outline-7">
+<h7 id="orgb92875f">Preambles</h7>
+<div class="outline-text-7" id="text-orgb92875f">
+</div>
+<ul class="org-ul">
+<li><a id="org8b017be"></a>Top-level<br>
+<div class="outline-text-8" id="text-org8b017be">
+<div class="org-src-container">
+<pre class="src src-elisp" id="orga49eae4">(setq org-project-emsenn-website-preamble
+ (concat "&lt;a href=\"#content\" class=\"skip-to-content\"&gt;skip to content&lt;/a&gt;"
+	 "&lt;section class=\"nav\"&gt;&lt;strong&gt;emsenn.net:&lt;/strong&gt; "
+	 "&lt;a href=\"./index.html\"&gt;"
+	 "Homepage&lt;/a&gt; | "
+	 "&lt;a href=\"./bul/index.html\"&gt;"
+	 "Bulletins&lt;/a&gt; | "
+	 "&lt;a href=\"./mainindex.html\"&gt;"
+	 "Main Index&lt;/a&gt;"
+	 "&lt;p&gt;This Website was cultivated as a public asset with &lt;a href=\"https://ko-fi.com/emsenn\"&gt;support&lt;/a&gt; from people like you. &lt;strong&gt;&lt;em&gt;Thank you!&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+	 &lt;details&gt;
+	   &lt;summary&gt;Click this sentence for information about my Website.&lt;/summary&gt;
+	   &lt;p&gt;Click each sentence below for more info:&lt;/p&gt;
+	     &lt;ul&gt;
+	       &lt;li&gt;&lt;details&gt;
+		&lt;summary&gt;This website was created by Emacs and Org-mode&lt;/summary&gt;
+		&lt;p&gt;See &lt;a href=\"https://emsenn.net/src/infoponemacs.html\"&gt;my Emacs configuration&lt;/a&gt; to learn how.&lt;/p&gt;
+	       &lt;/details&gt;&lt;/li&gt;
+	       &lt;li&gt;&lt;details&gt;
+		 &lt;summary&gt;Its content was written by hand.&lt;/summary&gt;
+		 &lt;p&gt;This means there might be mistakes! 
+	       &lt;/details&gt;&lt;/li&gt;
+	       &lt;li&gt;&lt;details&gt;
+		&lt;summary&gt;It uses style to add information to the pages.&lt;/summary&gt;
+		&lt;ul&gt;
+		  &lt;li&gt;&lt;details&gt;
+		  &lt;summary&gt;Click this sentence to see how links are styled:&lt;/summary&gt;
+		  &lt;table&gt;
+		    &lt;thead&gt;&lt;tr&gt;
+		      &lt;th scope=\"col\"&gt;Color&lt;/th&gt;
+		      &lt;th scope=\"col\"&gt;Link type&lt;/th&gt;
+		    &lt;/tr&gt;&lt;/thead&gt;
+		    &lt;tbody&gt;
+		      &lt;tr&gt;&lt;td class=\"link\"&gt;Sample&lt;/td&gt;
+			&lt;td&gt;Unvisited local resource&lt;/td&gt;&lt;/tr&gt;
+		      &lt;tr&gt;&lt;td class=\"visited-link\"&gt;Sample&lt;/td&gt;
+			&lt;td&gt;Visited local resource&lt;/td&gt;&lt;/tr&gt;
+		      &lt;tr&gt;&lt;td class=\"external-link\"&gt;Sample&lt;/td&gt;
+			&lt;td&gt;Unvisited external resource&lt;/td&gt;&lt;/tr&gt;
+		      &lt;tr&gt;&lt;td class=\"visited-external-link\"&gt;Sample&lt;/td&gt;
+			&lt;td&gt;Visited external resource&lt;/td&gt;&lt;/tr&gt;
+		    &lt;/tbody&gt;
+		  &lt;/table&gt;
+		&lt;/details&gt;&lt;/li&gt;
+	       &lt;/ul&gt;
+	     &lt;/details&gt;&lt;/li&gt;
+	   &lt;/ul&gt;
+	 &lt;/details&gt;
+	 "
+	 "&lt;/section&gt;"
+	 ))
+</pre>
+</div>
+</div>
+</li>
+<li><a id="org72768ea"></a>Subdir<br>
+<div class="outline-text-8" id="text-org72768ea">
+<div class="org-src-container">
+<pre class="src src-elisp" id="org2fda184">(setq org-project-emsenn-website-preamble-subdir
+      (concat "&lt;a href=\"#content\" class=\"skip-to-content\"&gt;skip to content&lt;/a&gt;"
+	      "&lt;section class=\"nav\"&gt;&lt;strong&gt;emsenn.net:&lt;/strong&gt; "
+	      "&lt;a href=\"../index.html\"&gt;"
+	      "Homepage&lt;/a&gt; | "
+	      "&lt;a href=\"../bul/index.html\"&gt;"
+	      "Bulletins&lt;/a&gt; | "
+	      "&lt;a href=\"../mainindex.html\"&gt;"
+	      "Main Index&lt;/a&gt;"
+	      "&lt;p&gt;This Website was cultivated as a public asset with &lt;a href=\"https://ko-fi.com/emsenn\"&gt;support&lt;/a&gt; from people like you. &lt;strong&gt;&lt;em&gt;Thank you!&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+	      &lt;details&gt;
+		&lt;summary&gt;Click this sentence for information about my Website.&lt;/summary&gt;
+		&lt;p&gt;Click each sentence below for more info:&lt;/p&gt;
+		  &lt;ul&gt;
+		    &lt;li&gt;&lt;details&gt;
+		&lt;summary&gt;This website was created by Emacs and Org-mode&lt;/summary&gt;
+		&lt;p&gt;See &lt;a href=\"https://emsenn.net/src/infoponemacs.html\"&gt;my Emacs configuration&lt;/a&gt; to learn how.&lt;/p&gt;
+		    &lt;/details&gt;&lt;/li&gt;
+		    &lt;li&gt;&lt;details&gt;
+		      &lt;summary&gt;Its content was written by hand.&lt;/summary&gt;
+		      &lt;p&gt;This means there might be mistakes! 
+		    &lt;/details&gt;&lt;/li&gt;
+		    &lt;li&gt;&lt;details&gt;
+		&lt;summary&gt;It uses style to add information to the pages.&lt;/summary&gt;
+		&lt;ul&gt;
+		  &lt;li&gt;&lt;details&gt;
+		  &lt;summary&gt;Click this sentence to see how links are styled:&lt;/summary&gt;
+		  &lt;table&gt;
+		    &lt;thead&gt;&lt;tr&gt;
+		      &lt;th scope=\"col\"&gt;Color&lt;/th&gt;
+		      &lt;th scope=\"col\"&gt;Link type&lt;/th&gt;
+		    &lt;/tr&gt;&lt;/thead&gt;
+		    &lt;tbody&gt;
+		      &lt;tr&gt;&lt;td class=\"link\"&gt;Sample&lt;/td&gt;
+			&lt;td&gt;Unvisited local resource&lt;/td&gt;&lt;/tr&gt;
+		      &lt;tr&gt;&lt;td class=\"visited-link\"&gt;Sample&lt;/td&gt;
+			&lt;td&gt;Visited local resource&lt;/td&gt;&lt;/tr&gt;
+		      &lt;tr&gt;&lt;td class=\"external-link\"&gt;Sample&lt;/td&gt;
+			&lt;td&gt;Unvisited external resource&lt;/td&gt;&lt;/tr&gt;
+		      &lt;tr&gt;&lt;td class=\"visited-external-link\"&gt;Sample&lt;/td&gt;
+			&lt;td&gt;Visited external resource&lt;/td&gt;&lt;/tr&gt;
+		    &lt;/tbody&gt;
+		  &lt;/table&gt;
+		&lt;/details&gt;&lt;/li&gt;
+		    &lt;/ul&gt;
+		  &lt;/details&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	      &lt;/details&gt;
+	      "
+	      "&lt;/section&gt;"
+	      ))
+</pre>
+</div>
+</div>
+</li>
+<li><a id="orge3f47bb"></a>Subsubdir<br>
+<div class="outline-text-8" id="text-orge3f47bb">
+<div class="org-src-container">
+<pre class="src src-elisp" id="org674a76f">(setq org-project-emsenn-website-preamble-subsubdir
+      (concat "&lt;a href=\"#content\" class=\"skip-to-content\"&gt;skip to content&lt;/a&gt;"
+	      "&lt;section class=\"nav\"&gt;&lt;strong&gt;emsenn.net:&lt;/strong&gt; "
+	      "&lt;a href=\"../../index.html\"&gt;"
+	      "Homepage&lt;/a&gt; | "
+	      "&lt;a href=\"../../bul/index.html\"&gt;"
+	      "Bulletins&lt;/a&gt; | "
+	      "&lt;a href=\"../../mainindex.html\"&gt;"
+	      "Main Index&lt;/a&gt;"
+
+	      "&lt;/section&gt;"
+	      ))
+</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org2ba0bfa" class="outline-6">
+<h6 id="org2ba0bfa">CSS</h6>
+<div class="outline-text-6" id="text-org2ba0bfa">
+<div class="org-src-container">
+<pre class="src src-elisp" id="orgb7f6030">(setq org-project-emsenn-website-html-head
+ "&lt;style&gt;
+	   @charset \"UTF-8\";
+
+	   :root {	
+	       --body-font: sans-serif;
+	       --header-font: sans-serif;
+	       --code-font: monospace;
+	       --primary-color: #ffe;
+	       --primary-dim-color: #eed;
+	       --secondary-color: #312;
+	       --secondary-dim-color: #756;
+	       --link-color: #880;
+	       --link-hover-color: #aa2;
+	       --link-visited-color: #934;
+	       --link-visited-hover-color: #b56;
+	       --external-link-color: #008;
+	       --external-link-hover-color: #60b;
+	       --external-link-visited-color: #172;
+	       --external-link-visited-hover-color: #394;
+	   }
+	   @media(prefers-color-scheme:dark){
+	       :root {
+		  --body-font: sans-serif;
+		  --header-font: sans-serif;
+		  --code-font: monospace;
+		  --primary-color: #756;
+		  --primary-dim-color: #312;
+		  --secondary-color: #eed;
+		  --secondary-dim-color: #ffe;
+		  --link-color: #880;
+		  --link-hover-color: #aa2;
+		  --link-visited-color: #934;
+		  --link-visited-hover-color: #b56;
+	       }}
+	   body {
+	       position: relative;
+	       min-height: 100%;
+	       background-color: var(--primary-color);
+	       color: var(--secondary-color);
+	       margin: 0 auto;
+	       font-family: sans-serif;
+	   }
+	   main, #content {
+	       background-color: var(--primary-dim-color);
+	       border-left: 1.5em dotted var(--primary-color);
+	       padding: 1em;
+	   }
+	   header {
+	       border-bottom: 0.8em dotted var(--secondary-dim-color);
+	   }
+	   h1 { font-size: 2em; margin-bottom: 0; }
+	   h2 {
+	       border-bottom: 0.3em dotted var(--secondary-dim-color);
+	   }
+	   h2, h3, h4, h5, h6, p, table, ul, ol, .org-src-container {
+	       width: 60%;
+	   }
+	   aside {
+	       float: right;
+	       width: 35%;
+	   }
+	   aside p { width: 100%; }
+	   @media screen and (max-width:760px) {
+	       h2, h3, h4, h5, h6, p, table, ul, ol, .org-src-container {
+		  width: 90%;
+	       }
+	       aside {
+		  float: inherit;
+		  width: 90%;
+		  border-top: 0.2em dotted var(--secondary-dim-color);
+		  border-bottom: 0.2em dotted VAR(--secondary-dim-color);
+		  font-size: 0.8em;
+		    }
+	   }
+
+	   footer, #postamble, #preamble {
+	       padding: 0.5em;
+	   }
+	   table {
+	       border-collapse: collapse;
+	       border-spacing: 0;
+	       empty-cells: show;
+	       border: 0.1em solid #444;
+	   }
+	   thead { font-family: sans-serif; }
+	   th, td {
+	       padding: 0 0.3em;
+	       border: 0.01em solid #444;
+	   }
+	   img {
+	       max-width: 80vw;
+	       vertical-align: middle;
+	   }
+	   pre, .src {
+	       padding: 0.5em;
+	       border: 0.1em solid #444;
+	       white-space: pre-wrap;
+	       overflow-x: scroll;
+	       text-overflow: clip;
+	       scrollbar-width: none;
+	   }
+	   pre::-webkit-scrollbar, .src::-webkit-scrollbar {
+	       display: none;
+	   }
+
+
+	   dt {
+	       font-weight: normal;
+	       display: inline-block;
+	       border-bottom: 0.1rem dotted #444;
+	   }
+	   #text-index dt { border-bottom: none; }
+	   h2, h3, h4, h5, h6, h7, h8, h9, h10 {
+	       display: block;
+	       font-family: sans-serif;
+	       margin: 0.2em auto 0.5em 0;
+	   }
+	   a, .link {
+	       text-decoration: none;
+	       color: #880;
+	       display: inline;
+	       position: relative;
+	       border-bottom: 0.1rem dotted;
+	       line-height: 1.2;
+	       transition: border 0.3s;
+	   }
+	   a:hover {
+	       color: #aa2;
+	       outline-style: none;
+	       border-bottom: 0.1rem solid;
+	   }
+	   a:visited, .visited-link { color: #934; }
+	   a:visited:hover { color: #b56; }
+	   a:focus {
+	       outline-style: none;
+	       border-bottom: 0.1rem solid;
+	   }
+	   ::selection { background-color: #777; color: #eee; }
+	   a::selection { background-color: #ccc; }
+	   .org-todo {
+	       background-color: #ddd;
+	       color: #333;
+	       font-size: .8rem;
+	       float: right;
+	   }
+	   .org-src-container + .example {
+	       margin-left: 8em;
+	   }
+	   a[href^=\"https://\"]:not([href*=\"emsenn.net\"]):after, a[href^=\"https://\"]:not([href*=\"emsenn.net\"]):visited:after, .external-link:after, .visited-external-link:after { 
+	       content: \"^\";
+	       font-size: 0.5em;
+	       vertical-align: super;
+	   }
+	   a[href^=\"https://\"]:not([href*=\"emsenn.net\"]), .external-link {
+	       color: var(--external-link-color);
+	   }
+	   a[href^=\"https://\"]:not([href*=\"emsenn.net\"]):hover{ 
+	       color: var(--external-link-hover-color);
+	   }
+	   a[href^=\"https://\"]:not([href*=\"emsenn.net\"]):visited, .visited-external-link { 
+	       color: var(--external-link-visited-color);
+	   }
+	   a[href^=\"https://\"]:not([href*=\"emsenn.net\"]):visited:hover{ 
+	       color: var(--external-link-visited-hover-color);
+	   }
+	   blockquote {
+	       border: 0.1em dashed var(--secondary-dim-color);
+	       padding-left: 0.2em;
+	   }
+	   label.org-src-name {
+	       margin: 0 0 0 3em;
+	       font-family: sans-serif;
+	       font-size: 1rem;
+	       line-height: 0;
+	   }
+	   .skip-to-content {
+	       opacity: 0;
+	       position: absolute;
+	       left: 0.2em;
+	   }
+	   .skip-to-content:focus{
+	       opacity: 1;
+	       background-color: var(--secondary-dim-color);
+	       color: var(--primary-color);
+	   }
+	   ul { max-width: 85%; }
+    .footpara { display: inline; font-size: 0.8rem; }
+  &lt;/style&gt;")
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="outline-container-org494e30d" class="outline-2">
+<h2 id="org494e30d">Components</h2>
+<div class="outline-text-2" id="text-org494e30d">
+</div>
+<div id="outline-container-orgaadaf1e" class="outline-3">
+<h3 id="orgaadaf1e">Package Management</h3>
+<div class="outline-text-3" id="text-orgaadaf1e">
+<p>
+I use <a href="https://github.com/radian-software/straight.el">straight.el</a> and <a href="https://github.com/jwiegley/use-package">use-package</a> for most (all?) of my package management.
+</p>
+<div class="org-src-container">
+<pre class="src src-elisp" id="org3f48161">(defvar straight-install-script-path
+  "https://raw.githubusercontent.com/raxod502/straight.el/develop/install.el")
+
+(defvar bootstrap-version)
+(let ((bootstrap-file
+       (expand-file-name "straight/repos/straight.el/bootstrap.el" user-emacs-directory))
+      (bootstrap-version 5))
+  (unless (file-exists-p bootstrap-file)
+    (with-current-buffer
+    (url-retrieve-synchronously straight-install-script-path
+     'silent 'inhibit-cookies)
+      (goto-char (point-max))
+      (eval-print-last-sexp)))
+  (load bootstrap-file nil 'nomessage))
+
+(straight-use-package 'use-package)
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org0b9a34d" class="outline-3">
+<h3 id="org0b9a34d">HTMLize</h3>
+<div class="outline-text-3" id="text-org0b9a34d">
+<div class="org-src-container">
+<pre class="src src-elisp" id="org0913cce">(use-package htmlize :straight t)
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd13b9d7" class="outline-3">
+<h3 id="orgd13b9d7">Magit</h3>
+<div class="outline-text-3" id="text-orgd13b9d7">
+<div class="org-src-container">
+<pre class="src src-elisp" id="orgf5e7ce2">(use-package magit :straight t)
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org61d8c81" class="outline-3">
+<h3 id="org61d8c81">Org-mode</h3>
+<div class="outline-text-3" id="text-org61d8c81">
+</div>
+<div id="outline-container-org0115084" class="outline-4">
+<h4 id="org0115084">Functions</h4>
+<div class="outline-text-4" id="text-org0115084">
+</div>
+<div id="outline-container-org67f84ca" class="outline-5">
+<h5 id="org67f84ca">Export HTML Drawer</h5>
+<div class="outline-text-5" id="text-org67f84ca">
+<div class="org-src-container">
+<pre class="src src-elisp" id="org3bf2f18">(defun ipe-org-html-format-drawer (name contents)
+  (format "&lt;section class=\"org-drawer\"&gt; %s &lt;/section&gt;" contents))
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgeb19cca" class="outline-5">
+<h5 id="orgeb19cca">Export HTML Sitemap</h5>
+<div class="outline-text-5" id="text-orgeb19cca">
+<div class="org-src-container">
+<pre class="src src-elisp" id="orgb696fba">      ;; from https://www.john2x.com/blog/blogging-with-orgmode.html
+      (defun ipe-org-publish-format-sitemap (title sitemap)
+	(let ((posts (cdr sitemap)))
+	  (concat
+	   (format "#+title: %s\n" title)
+	   "#+options: timestamp:nil date:nil\n"
+; 	   (format "#+date: %s\n" (format-time-string "[%Y-%m-%d %a %H:%M:%S]" (current-time)))
+	   (org-list-to-org (cons (car sitemap) posts)))))
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org637d7a8" class="outline-3">
+<h3 id="org637d7a8">Theme</h3>
+<div class="outline-text-3" id="text-org637d7a8">
+<div class="org-src-container">
+<pre class="src src-elisp" id="orga419355">(use-package modus-themes
+  :straight t
+  :config
+  (load-theme 'modus-operandi t))
+</pre>
+</div>
+</div>
+</div>
+</section>
+<section id="outline-container-org3619c35" class="outline-2">
+<h2 id="org3619c35">Development</h2>
+<div class="outline-text-2" id="text-org3619c35">
+</div>
+<div id="outline-container-org0ac0f87" class="outline-3">
+<h3 id="org0ac0f87">Plans</h3>
+<div class="outline-text-3" id="text-org0ac0f87">
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orge012d34">Soon</a>
+<ul>
+<li><a href="#org18e9671"><span class="todo TODO">TODO</span> Setup InfoPonEmacs as basic digital garden</a></li>
+<li><a href="#org8c2bddf"><span class="todo TODO">TODO</span> Figure out how to upload to emsenn.net</a></li>
+<li><a href="#org222aaa3"><span class="todo TODO">TODO</span> Track things we need to purchase</a></li>
+<li><a href="#org764035d"><span class="todo TODO">TODO</span> Figure out bulletins</a></li>
+</ul>
+</li>
+<li><a href="#orgaf4cd4a">Later</a>
+<ul>
+<li><a href="#orgd728d56"><span class="todo TODO">TODO</span> Add Mermaid diagram support</a></li>
+<li><a href="#org0dc0507"><span class="todo TODO">TODO</span> Handle Teraum information</a></li>
+<li><a href="#orge83fa68"><span class="todo TODO">TODO</span> Join the IndieWeb</a></li>
+<li><a href="#org82f1cf7"><span class="todo TODO">TODO</span> Decide how to handle images</a></li>
+<li><a href="#orgf2176ba"><span class="todo TODO">TODO</span> Implement spaced repetition flashcards</a></li>
+<li><a href="#orgf588d18"><span class="todo TODO">TODO</span> Handle synonyms in the index</a></li>
+</ul>
+</li>
+<li><a href="#orga0783d1">Someday</a>
+<ul>
+<li><a href="#orgeadf25a"><span class="todo TODO">TODO</span> Import all the old info I've got</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge012d34" class="outline-4">
+<h4 id="orge012d34">Soon</h4>
+<div class="outline-text-4" id="text-orge012d34">
+</div>
+<div id="outline-container-org18e9671" class="outline-5">
+<h5 id="org18e9671"><span class="todo TODO">TODO</span> Setup InfoPonEmacs as basic digital garden</h5>
+</div>
+<div id="outline-container-org8c2bddf" class="outline-5">
+<h5 id="org8c2bddf"><span class="todo TODO">TODO</span> Figure out how to upload to emsenn.net</h5>
+</div>
+<div id="outline-container-org222aaa3" class="outline-5">
+<h5 id="org222aaa3"><span class="todo TODO">TODO</span> Track things we need to purchase</h5>
+</div>
+<div id="outline-container-org764035d" class="outline-5">
+<h5 id="org764035d"><span class="todo TODO">TODO</span> Figure out bulletins</h5>
+</div>
+</div>
+<div id="outline-container-orgaf4cd4a" class="outline-4">
+<h4 id="orgaf4cd4a">Later</h4>
+<div class="outline-text-4" id="text-orgaf4cd4a">
+</div>
+<div id="outline-container-orgd728d56" class="outline-5">
+<h5 id="orgd728d56"><span class="todo TODO">TODO</span> Add Mermaid diagram support</h5>
+<div class="outline-text-5" id="text-orgd728d56">
+<p>
+Check out <a href="https://emacstil.com/til/2021/09/19/org-mermaid/">https://emacstil.com/til/2021/09/19/org-mermaid/</a>
+</p>
+</div>
+</div>
+<div id="outline-container-org0dc0507" class="outline-5">
+<h5 id="org0dc0507"><span class="todo TODO">TODO</span> Handle Teraum information</h5>
+</div>
+<div id="outline-container-orge83fa68" class="outline-5">
+<h5 id="orge83fa68"><span class="todo TODO">TODO</span> Join the IndieWeb</h5>
+</div>
+<div id="outline-container-org82f1cf7" class="outline-5">
+<h5 id="org82f1cf7"><span class="todo TODO">TODO</span> Decide how to handle images</h5>
+</div>
+<div id="outline-container-orgf2176ba" class="outline-5">
+<h5 id="orgf2176ba"><span class="todo TODO">TODO</span> Implement spaced repetition flashcards</h5>
+</div>
+<div id="outline-container-orgf588d18" class="outline-5">
+<h5 id="orgf588d18"><span class="todo TODO">TODO</span> Handle synonyms in the index</h5>
+<div class="outline-text-5" id="text-orgf588d18">
+<p>
+I'd love to be able to handle synonyms in the index&#x2026; I'm not even sure what I mean by handle but like, have an entry for "potato" that says "See Solanum tuberosum".
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orga0783d1" class="outline-4">
+<h4 id="orga0783d1">Someday</h4>
+<div class="outline-text-4" id="text-orga0783d1">
+</div>
+<div id="outline-container-orgeadf25a" class="outline-5">
+<h5 id="orgeadf25a"><span class="todo TODO">TODO</span> Import all the old info I've got</h5>
+</div>
+</div>
+</div>
+<div id="outline-container-org94f5949" class="outline-3">
+<h3 id="org94f5949">Operations</h3>
+<div class="outline-text-3" id="text-org94f5949">
+</div>
+<div id="outline-container-orgf58bae5" class="outline-4">
+<h4 id="orgf58bae5">Routine Operations</h4>
+<div class="outline-text-4" id="text-orgf58bae5">
+</div>
+<div id="outline-container-orge58fed2" class="outline-5">
+<h5 id="orge58fed2">Tinkering</h5>
+<div class="outline-text-5" id="text-orge58fed2">
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="outline-container-orgc34819c" class="outline-2">
+<h2 id="orgc34819c">Full Source</h2>
+<div class="outline-text-2" id="text-orgc34819c">
+<p>
+This section contains the full source of InfoPonEmacs - this is useful if you want to copy the file into a fresh Emacs install.
+</p>
+<div class="org-src-container">
+<pre class="src src-elisp" id="orgdffa3ef">;;; InfoPonEmacs
+
+;;; Package Management
+(defvar straight-install-script-path
+  "https://raw.githubusercontent.com/raxod502/straight.el/develop/install.el")
+
+(defvar bootstrap-version)
+(let ((bootstrap-file
+       (expand-file-name "straight/repos/straight.el/bootstrap.el" user-emacs-directory))
+      (bootstrap-version 5))
+  (unless (file-exists-p bootstrap-file)
+    (with-current-buffer
+    (url-retrieve-synchronously straight-install-script-path
+     'silent 'inhibit-cookies)
+      (goto-char (point-max))
+      (eval-print-last-sexp)))
+  (load bootstrap-file nil 'nomessage))
+
+(straight-use-package 'use-package)
+
+;;; Basic Configuration
+(setq user-mail-address "emsenn@emsenn.net")
+(setq make-backup-files nil)
+(setq inhibit-startup-message t)
+(setq inhibit-startup-screen t)
+(setq initial-scratch-message
+      ";; LANDBACK")
+(menu-bar-mode -1)
+(tool-bar-mode -1)
+(show-paren-mode 1)
+(setq line-number-mode t)
+(setq column-number-mode t)
+(setq-default truncate-lines t)
+(setq-default line-spacing 1)
+(setq sentence-end-double-space nil)
+(global-visual-line-mode t)
+(setq echo-keystrokes 0.1)
+(setq fill-column 68)
+(setq mouse-wheel-scroll-amount '(1 ((shift) .1)))
+
+;; Theme
+(use-package modus-themes
+  :straight t
+  :config
+  (load-theme 'modus-operandi t))
+
+;;; HTMLize
+(use-package htmlize :straight t)
+
+;;; Magit
+(use-package magit :straight t)
+
+;;; Org-mode
+(use-package
+  org :straight t
+  :custom
+  (org-directory "~/org")
+  (org-startup-folded 'fold)
+  (org-hide-block-startup 'hideblocks)
+  (org-catch-invisible-edits 'show-and-error)
+  (org-agenda-custom-commands
+	'(("A" "Agenda and TODO"
+	 ((agenda "" )
+	  (alltodo "" )))))
+  (org-agenda-todo-ignore-scheduled 'all)
+  (org-agenda-files (list "~/org" "~/org/pro" "~/org/pro/bur" "~/org/pro/gar" "~/org/src"))
+  (org-export-with-section-numbers nil)
+  (org-export-with-smart-quotes nil)
+  (org-export-with-toc nil)
+  (org-html-htmlize-output-type 'nil)
+  (org-html-validation-link nil)
+  (org-log-done 'time)
+  (org-log-into-drawer 'LOGBOOK)
+  (org-image-actual-width '(400))
+  (org-export-global-macros
+   '(
+     ("nl" . "(eval \"\\n\")")
+     ("lib-item-table" . "- Title :: {{{property(lib-item-title)}}}{{{nl}}}- Author :: {{{property(lib-item-author)}}}{{{nl}}}- Brief :: {{{property(lib-item-brief)}}}{{{nl}}}- Topics :: {{{property(lib-item-topics)}}}{{{nl}}}")
+     ))
+  (org-capture-templates
+   '(
+     ))
+  :bind (
+	 ("C-c l" . org-store-link)
+	 ("C-c a" . org-agenda)
+	 ("C-c c" . org-capture)
+	 ("C-c t" . org-toggle-link-display)
+	 ("C-c C-q" . counsel-org-tag)
+	 ("&lt;f8&gt;" . emacsen-org-capture-capture-at-point)
+	 )
+  :config
+  (org-babel-do-load-languages 'org-babel-load-languages
+			       '(
+				 (shell . t)
+				 ))
+  (setq org-project-emsenn-website-html-head
+   "&lt;style&gt;
+	   @charset \"UTF-8\";
+
+	   :root {	
+	       --body-font: sans-serif;
+	       --header-font: sans-serif;
+	       --code-font: monospace;
+	       --primary-color: #ffe;
+	       --primary-dim-color: #eed;
+	       --secondary-color: #312;
+	       --secondary-dim-color: #756;
+	       --link-color: #880;
+	       --link-hover-color: #aa2;
+	       --link-visited-color: #934;
+	       --link-visited-hover-color: #b56;
+	       --external-link-color: #008;
+	       --external-link-hover-color: #60b;
+	       --external-link-visited-color: #172;
+	       --external-link-visited-hover-color: #394;
+	   }
+	   @media(prefers-color-scheme:dark){
+	       :root {
+		  --body-font: sans-serif;
+		  --header-font: sans-serif;
+		  --code-font: monospace;
+		  --primary-color: #756;
+		  --primary-dim-color: #312;
+		  --secondary-color: #eed;
+		  --secondary-dim-color: #ffe;
+		  --link-color: #880;
+		  --link-hover-color: #aa2;
+		  --link-visited-color: #934;
+		  --link-visited-hover-color: #b56;
+	       }}
+	   body {
+	       position: relative;
+	       min-height: 100%;
+	       background-color: var(--primary-color);
+	       color: var(--secondary-color);
+	       margin: 0 auto;
+	       font-family: sans-serif;
+	   }
+	   main, #content {
+	       background-color: var(--primary-dim-color);
+	       border-left: 1.5em dotted var(--primary-color);
+	       padding: 1em;
+	   }
+	   header {
+	       border-bottom: 0.8em dotted var(--secondary-dim-color);
+	   }
+	   h1 { font-size: 2em; margin-bottom: 0; }
+	   h2 {
+	       border-bottom: 0.3em dotted var(--secondary-dim-color);
+	   }
+	   h2, h3, h4, h5, h6, p, table, ul, ol, .org-src-container {
+	       width: 60%;
+	   }
+	   aside {
+	       float: right;
+	       width: 35%;
+	   }
+	   aside p { width: 100%; }
+	   @media screen and (max-width:760px) {
+	       h2, h3, h4, h5, h6, p, table, ul, ol, .org-src-container {
+		  width: 90%;
+	       }
+	       aside {
+		  float: inherit;
+		  width: 90%;
+		  border-top: 0.2em dotted var(--secondary-dim-color);
+		  border-bottom: 0.2em dotted VAR(--secondary-dim-color);
+		  font-size: 0.8em;
+		    }
+	   }
+
+	   footer, #postamble, #preamble {
+	       padding: 0.5em;
+	   }
+	   table {
+	       border-collapse: collapse;
+	       border-spacing: 0;
+	       empty-cells: show;
+	       border: 0.1em solid #444;
+	   }
+	   thead { font-family: sans-serif; }
+	   th, td {
+	       padding: 0 0.3em;
+	       border: 0.01em solid #444;
+	   }
+	   img {
+	       max-width: 80vw;
+	       vertical-align: middle;
+	   }
+	   pre, .src {
+	       padding: 0.5em;
+	       border: 0.1em solid #444;
+	       white-space: pre-wrap;
+	       overflow-x: scroll;
+	       text-overflow: clip;
+	       scrollbar-width: none;
+	   }
+	   pre::-webkit-scrollbar, .src::-webkit-scrollbar {
+	       display: none;
+	   }
+
+
+	   dt {
+	       font-weight: normal;
+	       display: inline-block;
+	       border-bottom: 0.1rem dotted #444;
+	   }
+	   #text-index dt { border-bottom: none; }
+	   h2, h3, h4, h5, h6, h7, h8, h9, h10 {
+	       display: block;
+	       font-family: sans-serif;
+	       margin: 0.2em auto 0.5em 0;
+	   }
+	   a, .link {
+	       text-decoration: none;
+	       color: #880;
+	       display: inline;
+	       position: relative;
+	       border-bottom: 0.1rem dotted;
+	       line-height: 1.2;
+	       transition: border 0.3s;
+	   }
+	   a:hover {
+	       color: #aa2;
+	       outline-style: none;
+	       border-bottom: 0.1rem solid;
+	   }
+	   a:visited, .visited-link { color: #934; }
+	   a:visited:hover { color: #b56; }
+	   a:focus {
+	       outline-style: none;
+	       border-bottom: 0.1rem solid;
+	   }
+	   ::selection { background-color: #777; color: #eee; }
+	   a::selection { background-color: #ccc; }
+	   .org-todo {
+	       background-color: #ddd;
+	       color: #333;
+	       font-size: .8rem;
+	       float: right;
+	   }
+	   .org-src-container + .example {
+	       margin-left: 8em;
+	   }
+	   a[href^=\"https://\"]:not([href*=\"emsenn.net\"]):after, a[href^=\"https://\"]:not([href*=\"emsenn.net\"]):visited:after, .external-link:after, .visited-external-link:after { 
+	       content: \"^\";
+	       font-size: 0.5em;
+	       vertical-align: super;
+	   }
+	   a[href^=\"https://\"]:not([href*=\"emsenn.net\"]), .external-link {
+	       color: var(--external-link-color);
+	   }
+	   a[href^=\"https://\"]:not([href*=\"emsenn.net\"]):hover{ 
+	       color: var(--external-link-hover-color);
+	   }
+	   a[href^=\"https://\"]:not([href*=\"emsenn.net\"]):visited, .visited-external-link { 
+	       color: var(--external-link-visited-color);
+	   }
+	   a[href^=\"https://\"]:not([href*=\"emsenn.net\"]):visited:hover{ 
+	       color: var(--external-link-visited-hover-color);
+	   }
+	   blockquote {
+	       border: 0.1em dashed var(--secondary-dim-color);
+	       padding-left: 0.2em;
+	   }
+	   label.org-src-name {
+	       margin: 0 0 0 3em;
+	       font-family: sans-serif;
+	       font-size: 1rem;
+	       line-height: 0;
+	   }
+	   .skip-to-content {
+	       opacity: 0;
+	       position: absolute;
+	       left: 0.2em;
+	   }
+	   .skip-to-content:focus{
+	       opacity: 1;
+	       background-color: var(--secondary-dim-color);
+	       color: var(--primary-color);
+	   }
+	   ul { max-width: 85%; }
+      .footpara { display: inline; font-size: 0.8rem; }
+    &lt;/style&gt;")
+  (setq org-project-emsenn-website-preamble
+   (concat "&lt;a href=\"#content\" class=\"skip-to-content\"&gt;skip to content&lt;/a&gt;"
+	 "&lt;section class=\"nav\"&gt;&lt;strong&gt;emsenn.net:&lt;/strong&gt; "
+	 "&lt;a href=\"./index.html\"&gt;"
+	 "Homepage&lt;/a&gt; | "
+	 "&lt;a href=\"./bul/index.html\"&gt;"
+	 "Bulletins&lt;/a&gt; | "
+	 "&lt;a href=\"./mainindex.html\"&gt;"
+	 "Main Index&lt;/a&gt;"
+	 "&lt;p&gt;This Website was cultivated as a public asset with &lt;a href=\"https://ko-fi.com/emsenn\"&gt;support&lt;/a&gt; from people like you. &lt;strong&gt;&lt;em&gt;Thank you!&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+	 &lt;details&gt;
+	   &lt;summary&gt;Click this sentence for information about my Website.&lt;/summary&gt;
+	   &lt;p&gt;Click each sentence below for more info:&lt;/p&gt;
+	     &lt;ul&gt;
+	       &lt;li&gt;&lt;details&gt;
+		&lt;summary&gt;This website was created by Emacs and Org-mode&lt;/summary&gt;
+		&lt;p&gt;See &lt;a href=\"https://emsenn.net/src/infoponemacs.html\"&gt;my Emacs configuration&lt;/a&gt; to learn how.&lt;/p&gt;
+	       &lt;/details&gt;&lt;/li&gt;
+	       &lt;li&gt;&lt;details&gt;
+		 &lt;summary&gt;Its content was written by hand.&lt;/summary&gt;
+		 &lt;p&gt;This means there might be mistakes! 
+	       &lt;/details&gt;&lt;/li&gt;
+	       &lt;li&gt;&lt;details&gt;
+		&lt;summary&gt;It uses style to add information to the pages.&lt;/summary&gt;
+		&lt;ul&gt;
+		  &lt;li&gt;&lt;details&gt;
+		  &lt;summary&gt;Click this sentence to see how links are styled:&lt;/summary&gt;
+		  &lt;table&gt;
+		    &lt;thead&gt;&lt;tr&gt;
+		      &lt;th scope=\"col\"&gt;Color&lt;/th&gt;
+		      &lt;th scope=\"col\"&gt;Link type&lt;/th&gt;
+		    &lt;/tr&gt;&lt;/thead&gt;
+		    &lt;tbody&gt;
+		      &lt;tr&gt;&lt;td class=\"link\"&gt;Sample&lt;/td&gt;
+			&lt;td&gt;Unvisited local resource&lt;/td&gt;&lt;/tr&gt;
+		      &lt;tr&gt;&lt;td class=\"visited-link\"&gt;Sample&lt;/td&gt;
+			&lt;td&gt;Visited local resource&lt;/td&gt;&lt;/tr&gt;
+		      &lt;tr&gt;&lt;td class=\"external-link\"&gt;Sample&lt;/td&gt;
+			&lt;td&gt;Unvisited external resource&lt;/td&gt;&lt;/tr&gt;
+		      &lt;tr&gt;&lt;td class=\"visited-external-link\"&gt;Sample&lt;/td&gt;
+			&lt;td&gt;Visited external resource&lt;/td&gt;&lt;/tr&gt;
+		    &lt;/tbody&gt;
+		  &lt;/table&gt;
+		&lt;/details&gt;&lt;/li&gt;
+	       &lt;/ul&gt;
+	     &lt;/details&gt;&lt;/li&gt;
+	   &lt;/ul&gt;
+	 &lt;/details&gt;
+	 "
+	 "&lt;/section&gt;"
+	 ))
+  (setq org-project-emsenn-website-preamble-subdir
+	(concat "&lt;a href=\"#content\" class=\"skip-to-content\"&gt;skip to content&lt;/a&gt;"
+	      "&lt;section class=\"nav\"&gt;&lt;strong&gt;emsenn.net:&lt;/strong&gt; "
+	      "&lt;a href=\"../index.html\"&gt;"
+	      "Homepage&lt;/a&gt; | "
+	      "&lt;a href=\"../bul/index.html\"&gt;"
+	      "Bulletins&lt;/a&gt; | "
+	      "&lt;a href=\"../mainindex.html\"&gt;"
+	      "Main Index&lt;/a&gt;"
+	      "&lt;p&gt;This Website was cultivated as a public asset with &lt;a href=\"https://ko-fi.com/emsenn\"&gt;support&lt;/a&gt; from people like you. &lt;strong&gt;&lt;em&gt;Thank you!&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+	      &lt;details&gt;
+		&lt;summary&gt;Click this sentence for information about my Website.&lt;/summary&gt;
+		&lt;p&gt;Click each sentence below for more info:&lt;/p&gt;
+		  &lt;ul&gt;
+		    &lt;li&gt;&lt;details&gt;
+		&lt;summary&gt;This website was created by Emacs and Org-mode&lt;/summary&gt;
+		&lt;p&gt;See &lt;a href=\"https://emsenn.net/src/infoponemacs.html\"&gt;my Emacs configuration&lt;/a&gt; to learn how.&lt;/p&gt;
+		    &lt;/details&gt;&lt;/li&gt;
+		    &lt;li&gt;&lt;details&gt;
+		      &lt;summary&gt;Its content was written by hand.&lt;/summary&gt;
+		      &lt;p&gt;This means there might be mistakes! 
+		    &lt;/details&gt;&lt;/li&gt;
+		    &lt;li&gt;&lt;details&gt;
+		&lt;summary&gt;It uses style to add information to the pages.&lt;/summary&gt;
+		&lt;ul&gt;
+		  &lt;li&gt;&lt;details&gt;
+		  &lt;summary&gt;Click this sentence to see how links are styled:&lt;/summary&gt;
+		  &lt;table&gt;
+		    &lt;thead&gt;&lt;tr&gt;
+		      &lt;th scope=\"col\"&gt;Color&lt;/th&gt;
+		      &lt;th scope=\"col\"&gt;Link type&lt;/th&gt;
+		    &lt;/tr&gt;&lt;/thead&gt;
+		    &lt;tbody&gt;
+		      &lt;tr&gt;&lt;td class=\"link\"&gt;Sample&lt;/td&gt;
+			&lt;td&gt;Unvisited local resource&lt;/td&gt;&lt;/tr&gt;
+		      &lt;tr&gt;&lt;td class=\"visited-link\"&gt;Sample&lt;/td&gt;
+			&lt;td&gt;Visited local resource&lt;/td&gt;&lt;/tr&gt;
+		      &lt;tr&gt;&lt;td class=\"external-link\"&gt;Sample&lt;/td&gt;
+			&lt;td&gt;Unvisited external resource&lt;/td&gt;&lt;/tr&gt;
+		      &lt;tr&gt;&lt;td class=\"visited-external-link\"&gt;Sample&lt;/td&gt;
+			&lt;td&gt;Visited external resource&lt;/td&gt;&lt;/tr&gt;
+		    &lt;/tbody&gt;
+		  &lt;/table&gt;
+		&lt;/details&gt;&lt;/li&gt;
+		    &lt;/ul&gt;
+		  &lt;/details&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	      &lt;/details&gt;
+	      "
+	      "&lt;/section&gt;"
+	      ))
+  (setq org-project-emsenn-website-preamble-subsubdir
+	(concat "&lt;a href=\"#content\" class=\"skip-to-content\"&gt;skip to content&lt;/a&gt;"
+	      "&lt;section class=\"nav\"&gt;&lt;strong&gt;emsenn.net:&lt;/strong&gt; "
+	      "&lt;a href=\"../../index.html\"&gt;"
+	      "Homepage&lt;/a&gt; | "
+	      "&lt;a href=\"../../bul/index.html\"&gt;"
+	      "Bulletins&lt;/a&gt; | "
+	      "&lt;a href=\"../../mainindex.html\"&gt;"
+	      "Main Index&lt;/a&gt;"
+
+	      "&lt;/section&gt;"
+	      ))
+  (defun ipe-org-html-format-drawer (name contents)
+    (format "&lt;section class=\"org-drawer\"&gt; %s &lt;/section&gt;" contents))
+	;; from https://www.john2x.com/blog/blogging-with-orgmode.html
+	(defun ipe-org-publish-format-sitemap (title sitemap)
+	(let ((posts (cdr sitemap)))
+	  (concat
+	   (format "#+title: %s\n" title)
+	   "#+options: timestamp:nil date:nil\n"
+  ; 	   (format "#+date: %s\n" (format-time-string "[%Y-%m-%d %a %H:%M:%S]" (current-time)))
+	   (org-list-to-org (cons (car sitemap) posts)))))
+  (setq org-publish-project-alist
+   `(
+     ("emsenn-website" :components ("emsenn-website-all" "emsenn-website-bul" "emsenn-website-com" "emsenn-website-def" "emsenn-website-pro" "emsenn-website-pro-bur" "emsenn-website-pro-gar" "emsenn-website-ref" "emsenn-website-src" "emsenn-website-ter" "emsenn-website-ter-adv" "emsenn-website-ter-ref" "emsenn-website-static"))
+     ("emsenn-website-all"
+      :base-extension "org"
+      :publishing-function org-html-publish-to-html
+      :html-doctype "html5"
+      :html-html5-fancy t
+      :html-container "section"
+      :headline-levels 6
+      :recursive t
+      :html-divs ((preamble "section" "preamble")
+	    (content "main" "content")
+	    (postamble "section" "postamble"))
+      :html-head-include-scripts nil
+      :html-head-include-default-style nil
+      :html-head ,org-project-emsenn-website-html-head
+      :html-format-drawer-function ipe-org-html-format-drawer
+      :exclude "README.org\\|DRAFT\\|PRIVATE"
+      :with-footnotes t
+      :with-date nil
+      :with-timestamps nil
+      :with-author nil
+      :sitemap-function ipe-org-publish-format-sitemap
+      :sitemap-filename "index.org"
+      :base-directory "~/org"
+      :publishing-directory "~/emsenn-website"
+      :makeindex t
+      :html-preamble ,org-project-emsenn-website-preamble
+      )
+     ("emsenn-website-bul"
+      :base-extension "org"
+      :publishing-function org-html-publish-to-html
+      :html-doctype "html5"
+      :html-html5-fancy t
+      :html-container "section"
+      :headline-levels 6
+      :recursive t
+      :html-divs ((preamble "section" "preamble")
+	    (content "main" "content")
+	    (postamble "section" "postamble"))
+      :html-head-include-scripts nil
+      :html-head-include-default-style nil
+      :html-head ,org-project-emsenn-website-html-head
+      :html-format-drawer-function ipe-org-html-format-drawer
+      :exclude "README.org\\|DRAFT\\|PRIVATE"
+      :with-footnotes t
+      :with-date nil
+      :with-timestamps nil
+      :with-author nil
+      :sitemap-function ipe-org-publish-format-sitemap
+      :sitemap-filename "index.org"
+      :base-directory "~/org/bul"
+      :publishing-directory "~/emsenn-website/bul"
+      :html-preamble ,org-project-emsenn-website-preamble-subdir
+      :auto-sitemap t
+      :sitemap-sort-files anti-chronologically
+      :sitemap-title "Bulletins"
+      )
+     ("emsenn-website-com"
+      :base-extension "org"
+      :publishing-function org-html-publish-to-html
+      :html-doctype "html5"
+      :html-html5-fancy t
+      :html-container "section"
+      :headline-levels 6
+      :recursive t
+      :html-divs ((preamble "section" "preamble")
+	    (content "main" "content")
+	    (postamble "section" "postamble"))
+      :html-head-include-scripts nil
+      :html-head-include-default-style nil
+      :html-head ,org-project-emsenn-website-html-head
+      :html-format-drawer-function ipe-org-html-format-drawer
+      :exclude "README.org\\|DRAFT\\|PRIVATE"
+      :with-footnotes t
+      :with-date nil
+      :with-timestamps nil
+      :with-author nil
+      :sitemap-function ipe-org-publish-format-sitemap
+      :sitemap-filename "index.org"
+      :base-directory "~/org/com"
+      :publishing-directory "~/emsenn-website/com"
+      :html-preamble ,org-project-emsenn-website-preamble-subdir
+      :auto-sitemap t
+      :sitemap-sort-files anti-chronologically
+      :sitemap-title "Communications"
+      )
+     ("emsenn-website-def"
+      :base-extension "org"
+      :publishing-function org-html-publish-to-html
+      :html-doctype "html5"
+      :html-html5-fancy t
+      :html-container "section"
+      :headline-levels 6
+      :recursive t
+      :html-divs ((preamble "section" "preamble")
+	    (content "main" "content")
+	    (postamble "section" "postamble"))
+      :html-head-include-scripts nil
+      :html-head-include-default-style nil
+      :html-head ,org-project-emsenn-website-html-head
+      :html-format-drawer-function ipe-org-html-format-drawer
+      :exclude "README.org\\|DRAFT\\|PRIVATE"
+      :with-footnotes t
+      :with-date nil
+      :with-timestamps nil
+      :with-author nil
+      :sitemap-function ipe-org-publish-format-sitemap
+      :sitemap-filename "index.org"
+      :base-directory "~/org/def"
+      :publishing-directory "~/emsenn-website/def"
+      :html-preamble ,org-project-emsenn-website-preamble-subdir
+      :auto-sitemap t
+      :sitemap-sort-files alphabetically
+      :sitemap-title "Definitions"
+      )
+     ("emsenn-website-pro"
+      :base-extension "org"
+      :publishing-function org-html-publish-to-html
+      :html-doctype "html5"
+      :html-html5-fancy t
+      :html-container "section"
+      :headline-levels 6
+      :recursive t
+      :html-divs ((preamble "section" "preamble")
+	    (content "main" "content")
+	    (postamble "section" "postamble"))
+      :html-head-include-scripts nil
+      :html-head-include-default-style nil
+      :html-head ,org-project-emsenn-website-html-head
+      :html-format-drawer-function ipe-org-html-format-drawer
+      :exclude "README.org\\|DRAFT\\|PRIVATE"
+      :with-footnotes t
+      :with-date nil
+      :with-timestamps nil
+      :with-author nil
+      :sitemap-function ipe-org-publish-format-sitemap
+      :sitemap-filename "index.org"
+      :base-directory "~/org/pro"
+      :publishing-directory "~/emsenn-website/pro"
+      :html-preamble ,org-project-emsenn-website-preamble-subdir
+      :with-clocks t
+      :with-drawers t
+      :with-planning t
+      :with-priority t
+      :with-tasks t
+      :with-todo-keywords t
+      )
+     ("emsenn-website-pro-bur"
+      :base-extension "org"
+      :publishing-function org-html-publish-to-html
+      :html-doctype "html5"
+      :html-html5-fancy t
+      :html-container "section"
+      :headline-levels 6
+      :recursive t
+      :html-divs ((preamble "section" "preamble")
+	    (content "main" "content")
+	    (postamble "section" "postamble"))
+      :html-head-include-scripts nil
+      :html-head-include-default-style nil
+      :html-head ,org-project-emsenn-website-html-head
+      :html-format-drawer-function ipe-org-html-format-drawer
+      :exclude "README.org\\|DRAFT\\|PRIVATE"
+      :with-footnotes t
+      :with-date nil
+      :with-timestamps nil
+      :with-author nil
+      :sitemap-function ipe-org-publish-format-sitemap
+      :sitemap-filename "index.org"
+      :base-directory "~/org/pro"
+      :publishing-directory "~/emsenn-website/pro"
+      :html-preamble ,org-project-emsenn-website-preamble-subdir
+      :with-clocks t
+      :with-drawers t
+      :with-planning t
+      :with-priority t
+      :with-tasks t
+      :with-todo-keywords t
+      :base-directory "~/org/pro/bur"
+      :publishing-directory "~/emsenn-website/pro/bur"
+      :html-preamble ,org-project-emsenn-website-preamble-subsubdir
+      )
+     ("emsenn-website-pro-gar"
+      :base-extension "org"
+      :publishing-function org-html-publish-to-html
+      :html-doctype "html5"
+      :html-html5-fancy t
+      :html-container "section"
+      :headline-levels 6
+      :recursive t
+      :html-divs ((preamble "section" "preamble")
+	    (content "main" "content")
+	    (postamble "section" "postamble"))
+      :html-head-include-scripts nil
+      :html-head-include-default-style nil
+      :html-head ,org-project-emsenn-website-html-head
+      :html-format-drawer-function ipe-org-html-format-drawer
+      :exclude "README.org\\|DRAFT\\|PRIVATE"
+      :with-footnotes t
+      :with-date nil
+      :with-timestamps nil
+      :with-author nil
+      :sitemap-function ipe-org-publish-format-sitemap
+      :sitemap-filename "index.org"
+      :base-directory "~/org/pro"
+      :publishing-directory "~/emsenn-website/pro"
+      :html-preamble ,org-project-emsenn-website-preamble-subdir
+      :with-clocks t
+      :with-drawers t
+      :with-planning t
+      :with-priority t
+      :with-tasks t
+      :with-todo-keywords t
+      :base-directory "~/org/pro/gar"
+      :publishing-directory "~/emsenn-website/pro/gar"
+      :html-preamble ,org-project-emsenn-website-preamble-subsubdir
+      )
+     ("emsenn-website-ref"
+      :base-extension "org"
+      :publishing-function org-html-publish-to-html
+      :html-doctype "html5"
+      :html-html5-fancy t
+      :html-container "section"
+      :headline-levels 6
+      :recursive t
+      :html-divs ((preamble "section" "preamble")
+	    (content "main" "content")
+	    (postamble "section" "postamble"))
+      :html-head-include-scripts nil
+      :html-head-include-default-style nil
+      :html-head ,org-project-emsenn-website-html-head
+      :html-format-drawer-function ipe-org-html-format-drawer
+      :exclude "README.org\\|DRAFT\\|PRIVATE"
+      :with-footnotes t
+      :with-date nil
+      :with-timestamps nil
+      :with-author nil
+      :sitemap-function ipe-org-publish-format-sitemap
+      :sitemap-filename "index.org"
+      :base-directory "~/org/ref"
+      :publishing-directory "~/emsenn-website/ref"
+      :html-preamble ,org-project-emsenn-website-preamble-subdir
+      )
+     ("emsenn-website-src"
+      :base-extension "org"
+      :publishing-function org-html-publish-to-html
+      :html-doctype "html5"
+      :html-html5-fancy t
+      :html-container "section"
+      :headline-levels 6
+      :recursive t
+      :html-divs ((preamble "section" "preamble")
+	    (content "main" "content")
+	    (postamble "section" "postamble"))
+      :html-head-include-scripts nil
+      :html-head-include-default-style nil
+      :html-head ,org-project-emsenn-website-html-head
+      :html-format-drawer-function ipe-org-html-format-drawer
+      :exclude "README.org\\|DRAFT\\|PRIVATE"
+      :with-footnotes t
+      :with-date nil
+      :with-timestamps nil
+      :with-author nil
+      :sitemap-function ipe-org-publish-format-sitemap
+      :sitemap-filename "index.org"
+      :base-directory "~/org/src"
+      :publishing-directory "~/emsenn-website/src"
+      :html-preamble ,org-project-emsenn-website-preamble-subdir
+      :auto-sitemap t
+      :sitemap-sort-files alphabetically
+      :sitemap-title "Source Code"
+      )
+     ("emsenn-website-ter"
+      :base-extension "org"
+      :publishing-function org-html-publish-to-html
+      :html-doctype "html5"
+      :html-html5-fancy t
+      :html-container "section"
+      :headline-levels 6
+      :recursive t
+      :html-divs ((preamble "section" "preamble")
+	    (content "main" "content")
+	    (postamble "section" "postamble"))
+      :html-head-include-scripts nil
+      :html-head-include-default-style nil
+      :html-head ,org-project-emsenn-website-html-head
+      :html-format-drawer-function ipe-org-html-format-drawer
+      :exclude "README.org\\|DRAFT\\|PRIVATE"
+      :with-footnotes t
+      :with-date nil
+      :with-timestamps nil
+      :with-author nil
+      :sitemap-function ipe-org-publish-format-sitemap
+      :sitemap-filename "index.org"
+      :base-directory "~/org/ter"
+      :publishing-directory "~/emsenn-website/ter"
+      :html-preamble ,org-project-emsenn-website-preamble-subdir
+      )
+     ("emsenn-website-ter-adv"
+      :base-extension "org"
+      :publishing-function org-html-publish-to-html
+      :html-doctype "html5"
+      :html-html5-fancy t
+      :html-container "section"
+      :headline-levels 6
+      :recursive t
+      :html-divs ((preamble "section" "preamble")
+	    (content "main" "content")
+	    (postamble "section" "postamble"))
+      :html-head-include-scripts nil
+      :html-head-include-default-style nil
+      :html-head ,org-project-emsenn-website-html-head
+      :html-format-drawer-function ipe-org-html-format-drawer
+      :exclude "README.org\\|DRAFT\\|PRIVATE"
+      :with-footnotes t
+      :with-date nil
+      :with-timestamps nil
+      :with-author nil
+      :sitemap-function ipe-org-publish-format-sitemap
+      :sitemap-filename "index.org"
+      :base-directory "~/org/ter/adv"
+      :publishing-directory "~/emsenn-website/ter/adv"
+      :html-preamble ,org-project-emsenn-website-preamble-subdir
+      )
+     ("emsenn-website-ter-ref"
+      :base-extension "org"
+      :publishing-function org-html-publish-to-html
+      :html-doctype "html5"
+      :html-html5-fancy t
+      :html-container "section"
+      :headline-levels 6
+      :recursive t
+      :html-divs ((preamble "section" "preamble")
+	    (content "main" "content")
+	    (postamble "section" "postamble"))
+      :html-head-include-scripts nil
+      :html-head-include-default-style nil
+      :html-head ,org-project-emsenn-website-html-head
+      :html-format-drawer-function ipe-org-html-format-drawer
+      :exclude "README.org\\|DRAFT\\|PRIVATE"
+      :with-footnotes t
+      :with-date nil
+      :with-timestamps nil
+      :with-author nil
+      :sitemap-function ipe-org-publish-format-sitemap
+      :sitemap-filename "index.org"
+     :base-directory "~/org/ter/ref"
+     :publishing-directory "~/emsenn-website/ter/ref"
+     :html-preamble ,org-project-emsenn-website-preamble-subsubdir
+     )	
+     ("emsenn-website-static"
+      :base-directory "~/org/ems"
+      :base-extension "css\\|js\\|png\\|jpg\\|gif\\|pdf\\|mp3\\|ogg\\|swf"
+      :publishing-directory "~/org/pub/emsenn-net"
+      :recursive t
+      :publishing-function org-publish-attachment)
+     )))
+
+</pre>
+</div>
+</div>
+</section>
+</main>
+<section id="postamble" class="status">
+<p class="date">Created: 2023-01-14 Sat 15:03</p>
+</section>
+</body>
+</html>

@@ -1,0 +1,26 @@
+:PROPERTIES:
+:ID:       34a6180c-ce51-4693-a6f0-2a3e9ed3f9b4
+:form:     [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]
+:public:   true
+:END:
+#+title: Babble, [2025-09-11 Thu 08:55], Installing TAB on my Omnibook
+#+date: [2025-09-11 Thu 08:55]
+#+author: emsenn
+
+So for the past... month and a few days! I've been rebuilding [[id:3ffa600c-f831-428f-bd11-a4e6583ff5ad][my files]], and [[id:cc253409-9a82-4c5d-a4cd-8013f4e350c6][my website]].
+
+This has generally felt good, in a lot of ways, and has been helping refamiliarize myself with computer use in general.
+
+That means I'm feeling ready to start dabbling back into computer programming. A short term goal with that is getting the [[id:de5cda39-6fa8-4f17-a11e-3c6aca2b66e8][MUD engine]] that I wrote in [[id:2d55e751-41d9-423a-8898-363f0ea9847f][Fennel]] running again.
+
+Fennel is a [[id:b17ab51c-efe5-4efd-8848-a9f3a5786dea][computer programming language]] built on [[id:478353bc-68aa-491a-80df-3682d01bee58][Lua]], but uses [[id:1637757f-155b-4cd5-be40-d338324855d4][LISP]]-style syntax and macros. (I appreciate that [[https://fennel-lang.org/][the website]] has a nice little [[id:3a78eb02-dafe-4364-b24c-3410cfe54f05][REPL]] on the homepage.)
+
+And, like I mentioned, it's what I wrote a MUD engine in: [[https://github.com/gaz561/tab][TAB]], short for /things with attributes and behaviors/.
+
+These days my lingo has shifted a bit, and so I want to reapproach making a MUD engine from first steps, but, first want to check that I can get TAB running.
+
+Cloning it and following the README's instructions to ~make tab-bin~ worked without issue.
+
+The basics of TAB worked without issue, but trying to run [[id:e8b0f6b7-8a64-454b-aab8-b3dd6244e2a8][MarMUD]], the MUD of the [[id:edfcde9a-3442-45e7-b7b3-521918705557][Groundhog Autonomous Zone]], got me issues with sockets.
+
+And since that's another issue, I'll end it here for now, to tidy up my office on this rainy day.

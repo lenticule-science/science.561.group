@@ -1,0 +1,17 @@
+{{- $scratch := newScratch -}}
+{{- range sort . "value" "desc" -}}{{- range . }}
+  {{- $scratch.Add "activities" (slice ( . | markdownify)) -}}
+{{- end -}}{{- end -}}
+{{- with ($scratch.Get "activities") -}}
+{{- if (eq (len .) 0) -}}{{- else -}}
+  Recently, I
+  {{- if (eq (len .) 1) }}
+      {{ . }}
+    {{- else if (eq (len .) 2) }}
+      {{ delimit . " and " }}
+    {{- else }}
+      {{ delimit (first 3 .) ", " ", and " }}
+    {{- end -}}
+    .
+  {{- end -}}
+{{- end -}}

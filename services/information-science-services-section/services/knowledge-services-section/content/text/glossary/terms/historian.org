@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       668ab0cc-f949-46f7-81e7-2da4a3eb0a9f
+:END:
+#+title: historian  
+#+date: [2025-10-16 Thu 11:30]
+

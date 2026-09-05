@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       bbb8c259-1c09-4f3a-8490-36e813d43ff4
+:END:
+#+title: gray-zone conflict
+#+date: [2025-10-04 Sat 21:07]
+

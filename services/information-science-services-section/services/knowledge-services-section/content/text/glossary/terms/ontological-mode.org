@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       11f1242d-1f2a-4e0d-bd55-7c80aab098ae
+:END:
+#+title: ontological mode
+#+date: [2025-08-29 Fri 10:45]
+

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       60443e78-279c-477b-8d07-e2121ea6e90c
+:END:
+#+title: introduction
+#+date: [2025-08-29 Fri 21:51]
+

@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       4b3b82b9-d9fd-4b4a-a4f6-c8115039de5b
+:ROAM_ALIASES: "my digital garden"
+:END:
+#+title: emsenn's digital garden
+
+This is a [[id:fc0f83a0-3782-4f8a-8400-886bb0ed6699][digital garden]] made by me, [[id:b6ca89e9-36f6-400d-a39d-f719889de278][emsenn]].
+
+- [[id:bd583a4a-df9c-427d-b04f-d8ac3584293f][Communications]] :: Things I've written to communicate specific things
+- [[id:708f5536-237b-4c74-b115-af39f358b303][Encyclopedia]] :: A personal encyclopedia.
+- [[id:4af9c205-098f-4a6c-81a2-d5babb748227][Projects]] :: A catalog of my projects.

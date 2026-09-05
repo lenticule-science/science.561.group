@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "relating/articulating/predicating/positing",
+  "title": "Positing",
+  "description": "Value enters predication by evidence: potential-transfinite-predication-cell --positing--> potential-scott-continuous-posit-cell (predicating/positing/fiber.mts). A posit is a predication cell bound to its charge — RelMath's Meme, the minimal transmissible unit of meaning-with-evidence (`memeSchema`, kind `predication.fiber.meme`). Charges are never admitted directly; they are constructed from evidence and joined. Scott-continuous structural regime, causal dynamical regime.",
+  "allOf": [
+    { "$ref": "./predication-cell.schema.json" }
+  ],
+  "type": "object",
+  "required": ["kind", "structuralRegime", "dynamicalRegime"],
+  "properties": {
+    "kind": { "const": "predication.fiber.meme" },
+    "structuralRegime": { "const": "scott-continuous" },
+    "dynamicalRegime": { "const": "causal" }
+  }
+}

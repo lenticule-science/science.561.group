@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       530a1499-36e9-4cb6-9790-b9e136aacf19
+:END:
+#+title: instrument
+#+date: [2025-08-29 Fri 22:14]
+

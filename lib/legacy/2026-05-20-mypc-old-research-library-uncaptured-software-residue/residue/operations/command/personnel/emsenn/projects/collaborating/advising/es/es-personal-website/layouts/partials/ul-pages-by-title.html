@@ -1,0 +1,9 @@
+{{ with .Pages}}
+  <ul>
+    {{ range .ByTitle }}
+      <li>
+        {{ partial "reckon-brief-span.html" . }}
+      </li>
+    {{ end }}
+  </ul>
+{{ end }}

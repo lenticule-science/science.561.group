@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "relating/articulating/predicating/positing/settling",
+  "title": "Settling",
+  "description": "Settling commutates a posit presheaf: keeps it saturated and exposes its accumulated valuation traces as residue — the residue witness carried, never elided (predicating/positing/settling/sheaf.mts `commutate`, kind `predication.valuation.sheaf.commutation`). Finite structural regime, thermodynamic dynamical regime.",
+  "type": "object",
+  "required": ["kind", "saturated", "residue", "structuralRegime", "dynamicalRegime"],
+  "properties": {
+    "kind": { "const": "predication.valuation.sheaf.commutation" },
+    "saturated": {
+      "type": "object",
+      "required": ["kind", "fiber", "traces"],
+      "properties": {
+        "kind": { "const": "predication.posit.presheaf" },
+        "fiber": {
+          "type": "object",
+          "required": ["kind", "valuation"],
+          "properties": {
+            "kind": { "const": "predication.fiber.carrier" },
+            "valuation": { "$ref": "#/$defs/valuation" }
+          }
+        },
+        "traces": { "type": "array", "items": { "$ref": "#/$defs/valuation" } }
+      },
+      "title": "PositPresheaf"
+    },
+    "residue": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/valuation" },
+      "description": "The accumulated valuation traces (predicating/positing/settling/sheaf.mts `CommutationCarrier.residue`)."
+    },
+    "structuralRegime": { "const": "finite" },
+    "dynamicalRegime": { "const": "thermodynamic" }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "valuation": {
+      "type": "object",
+      "required": ["kind", "fibers"],
+      "properties": {
+        "kind": { "const": "predication.fiber.valuation" },
+        "fibers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["kind", "assignments"],
+            "properties": {
+              "kind": { "const": "predication.fiber.algebra" },
+              "assignments": { "type": "array", "items": { "$ref": "./positing.schema.json" } }
+            }
+          }
+        }
+      },
+      "title": "Valuation"
+    }
+  }
+}

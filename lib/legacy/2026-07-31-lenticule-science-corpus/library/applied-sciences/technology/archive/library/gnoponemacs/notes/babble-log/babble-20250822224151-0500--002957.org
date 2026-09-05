@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       99f1289a-973a-4882-8a50-4613aa646127
+:form:     [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]
+:END:
+#+title: Babble, [2025-08-22 Fri 22:41]
+#+date: [2025-08-22 Fri 22:41]
+#+author: emsenn
+
+I'd like to [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]] about [[id:b8e0a03d-83d0-4ccc-8a4f-caff00cea5ff][my babbles]], and [[id:70da4a1e-b8f5-4e6d-b8b6-229ba2d72ae1][my babble log]] (or blog).
+
+This is the first [[id:80ecba92-ca84-4b32-99ae-44d446b24350][text]] I'm writing with [[id:edc48bf0-336b-4b63-8505-a3730b328c9d][GnoponEmacs]] with the intention /and/ capability of it being [[id:88b03db0-4fed-4ace-8ef6-02ea9f2182e2][published]] straight to [[id:cc253409-9a82-4c5d-a4cd-8013f4e350c6][my website]].
+
+Anyway, a /babble/, as I've defined it, is one of the least-structured [[id:b25cca4d-9867-4de3-a10b-6f41dba5ff02][forms]] of [[id:80ecba92-ca84-4b32-99ae-44d446b24350][text]] I've encoded in [[id:3ffa600c-f831-428f-bd11-a4e6583ff5ad][my files]], and so serves as a good spot for, well, /babbling/: just kind of [[id:54213c5a-a48a-4976-acff-cc89ebf673c0][writing]] about whatever comes to mind, as it comes to mind.
+
+One thing [[id:e501fe9f-2009-47aa-8d52-c24551fbd66c][readers]] might notice is that there are /a lot/ of [[id:b07e5b56-b83b-4380-bff5-ace422998017][links]] in this text - and that a lot of them 

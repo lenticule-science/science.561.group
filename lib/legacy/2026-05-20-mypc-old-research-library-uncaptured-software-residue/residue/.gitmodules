@@ -1,0 +1,3 @@
+[submodule "projects/emsenn-net"]
+	path = operations/science/publications/emsenn-net
+	url = git@github.com:emsenn/emsenn-net.git

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       29d0ffd3-718f-4311-bc87-952a41560c74
+:END:
+#+title: Substack
+#+date: [2025-09-29 Mon 20:27]
+

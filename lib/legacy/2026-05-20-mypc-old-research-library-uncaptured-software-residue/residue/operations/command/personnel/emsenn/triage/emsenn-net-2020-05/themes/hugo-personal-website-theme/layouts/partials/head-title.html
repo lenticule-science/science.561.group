@@ -1,0 +1,1 @@
+<title>{{- (printf "%s" (.Title | default (printf "Tag: %s" (replace .Data.Term "-" " ") | pluralize))) -}} </title>

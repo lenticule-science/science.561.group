@@ -1,0 +1,10 @@
+{
+  "$id": "https://research-notes.561.group/hacking/library/research/operations/engineering/triage/content/speculative/computing/from-relationality/persistent/schemas/entropy-measurement.schema.json",
+  "title": "Entropy Measurement Payload",
+  "type": "object",
+  "properties": {
+    "value": {"type": "number"},
+    "phase_space_snapshot": {"type": "object"}
+  },
+  "additionalProperties": true
+}

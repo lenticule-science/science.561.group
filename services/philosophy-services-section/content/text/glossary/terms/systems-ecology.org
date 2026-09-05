@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       62a4c784-09f7-46ec-9a5d-3ff41580f192
+:END:
+#+title: systems ecology
+#+date: [2025-10-05 Sun 08:14]
+

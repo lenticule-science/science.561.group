@@ -1,0 +1,8 @@
+#+title: emsenn's Bulletins
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+options: timestamp:nil date:nil
+#+date: [2022-01-03 Mon 12:08:00]
+- [[file:2021W52.org][2021W52RB: Routine Bulletin: 2021, Week 52: 12/26-1/1]]
+- [[file:2022W01.org][2021W01RB: Routine Bulletin: 2021, Week 1: 2/2-2/8]]
+- [[file:2022W02.org][2021W01RB: Routine Bulletin: 2021, Week 2: 2/9-2/15]]

@@ -1,0 +1,65 @@
+#+TITLE: Development Log
+#+DESCRIPITION: A log of this projects development.
+#+AUTHOR: emsenn
+#+EMAIL: emsenn@emsenn.net
+#+FILETAGS: personal writing
+#+TODO: Plan(p) Write Edit | Wrote
+#+TODO: Fix(f) | Fixed
+#+TODO: Import(i) | Imported
+#+TODO: Conduct(c) | Conducted
+* UNRELEASED
+** Addition
+*** import of blog posts from emsenn.net
+*** Imported "[[file:../src/essays/expository/allan-spreen-is-conducting-fraud.org][Allan Spreen is Conducting Fraud]]".
+    :LOGBOOK:
+    CLOCK: [2018-10-26 Fri 16:29]--[2018-10-26 Fri 16:31] =>  0:02
+    CLOCK: [2018-10-26 Fri 15:44]--[2018-10-26 Fri 15:54] =>  0:10
+    :END:
+*** Imported "[[file:../src/essays/expository/why-gold-currency.org][Why Gold Currency?]]"
+    :LOGBOOK:
+    CLOCK: [2018-10-26 Fri 16:31]--[2018-10-26 Fri 16:34] =>  0:03
+    :END:
+*** Imported "[[file:../src/essays/expository/consumer-cost-bullshit-web.org][Consumer Cost of the Bullshit Web]]".
+    :LOGBOOK:
+    CLOCK: [2018-10-26 Fri 16:34]--[2018-10-26 Fri 17:04] =>  0:30
+    :END:
+*** Plan & document initial organization.
+   :LOGBOOK:
+   CLOCK: [2018-10-24 Wed 20:59]--[2018-10-24 Wed 21:15] =>  0:16
+   CLOCK: [2018-10-24 Wed 20:51]--[2018-10-24 Wed 20:58] =>  0:07
+   CLOCK: [2018-10-24 Wed 20:46]--[2018-10-24 Wed 20:47] =>  0:01
+   CLOCK: [2018-10-24 Wed 20:40]--[2018-10-24 Wed 20:42] =>  0:02
+   :END:
+**** Log entries
+***** <2018-10-24 Wed 18:43>
+     :LOGBOOK:
+     :END:
+I accidentally deleted all of the files on my
+Chromebook... whoops!  That means I lost the files I'd been
+fidgeting with in my first week of working in org-mode.  I'm
+mostly okay with that, because they were messy and didn't
+really have as much detail as I'd have liked.  Unfortunately,
+I'm not in the best place to start from scratch, because I'm
+still relatively in-experienced at working with org-mode.  Ahh well.
+
+This leaves me with the rather large-question of, moving
+forward, how do I organize my documentation?  This is of
+course a topic of thought and written a lot about, but
+ironically, I don't have most of the writing due to my own
+lack of organization.  Again, ahh well.
+
+Starting fresh, I've created a ~docs~ folder in my home
+directory, and within it, created a ~dev~ folder which
+contains a ~log.org~ file, into which I'm writing these
+notes.  So, within the ~docs~ repository, there is now a
+~/dev/log.org~ file, into which development logs will be
+recorded.  That seems like a fair starting point.  Though, as
+my personal directive 008 states, "no job is finished until
+the paperwork is complete."  So, I am now going to create a
+new file, ~/dev/guide.org~, and within it, I'll write the
+rules about where and how to write this development log.
+*** Wrote [[file:../src/templates/doc.org][org-mode template for documents]] and [[file:../src/templates/short-doc.org][short documents]].
+*** Write [[../template-guides/short-doc-org-template-guide.org][Short Document Org-Mode Template Guide]]
+*** Write [[file:../template-guides/doc-org-template-guide.org][Document Org-Mode Template Guide]]
+** Change
+*** Fixed link in "[[file:../src/essays/expository/consumer-cost-bullshit-web.org][Consumer Cost of the Bullshit Web]]".

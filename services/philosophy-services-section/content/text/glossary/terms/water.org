@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       d8aa63d2-461b-4178-829a-34fd6914c0b5
+:END:
+#+title: water
+#+date: [2025-08-29 Fri 08:41]
+

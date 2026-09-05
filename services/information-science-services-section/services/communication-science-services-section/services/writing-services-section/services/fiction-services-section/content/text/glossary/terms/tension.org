@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       4e428779-65fa-4622-b7f5-2f96e8ff570a
+:END:
+#+title: tension
+#+date: [2025-08-26 Tue 11:44]
+

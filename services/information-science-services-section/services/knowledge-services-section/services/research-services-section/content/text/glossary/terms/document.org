@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       1f8724a6-960b-494a-8f3c-5cc808d1a922
+:END:
+#+title: document
+#+date: [2025-09-25 Thu 10:01]
+

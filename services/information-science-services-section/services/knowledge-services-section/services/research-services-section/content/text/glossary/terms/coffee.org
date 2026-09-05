@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       c2591056-1064-4d90-af72-345bc4bae70e
+:END:
+#+title: coffee
+#+date: [2025-08-24 Sun 11:47]
+

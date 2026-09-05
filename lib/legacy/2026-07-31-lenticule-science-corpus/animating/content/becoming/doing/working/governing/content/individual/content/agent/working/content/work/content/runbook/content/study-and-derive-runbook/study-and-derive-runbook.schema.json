@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://561.group/swarm-intelligence/agentic-orchestration-platform/runbook/library/study-and-derive-runbook/study-and-derive-runbook.schema.json",
+  "title": "Study-and-derive runbook (specialized runbook; finite-settlement-algebra)",
+  "description": "Restriction of runbook to agent-561's study-and-derive pattern: querying-trace → joining-truth → composing-cells-transitively (transfinite-predicating) → minting-thing (aperiodic-articulating). Triggered by residuated obligations in agent-561's inbox. Executor: agent holding 'researcher' office and skills studying-knowledge + deriving-thing.",
+  "kind": "object",
+  "variance": "restriction",
+  "allOf": [{ "$ref": "../../runbook.schema.json" }]
+}

@@ -1,0 +1,18 @@
+# Changelog
+
+All notable changes to this project will be documented in this file. 
+
+NOTE: This does not include notable changes to the _canon_ of Teraum, just 
+the project & repository.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
+and this projeect adheres to 
+[Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## Unreleased
+
+### Added
+- Created the basic framework of the repository. 
+- Set up a basic MkDocs config file so the documents can be easily 
+  built into a website.
+- Added the UNLICENSE, a CHANGELOG, and a CODE_OF_CONDUCT.

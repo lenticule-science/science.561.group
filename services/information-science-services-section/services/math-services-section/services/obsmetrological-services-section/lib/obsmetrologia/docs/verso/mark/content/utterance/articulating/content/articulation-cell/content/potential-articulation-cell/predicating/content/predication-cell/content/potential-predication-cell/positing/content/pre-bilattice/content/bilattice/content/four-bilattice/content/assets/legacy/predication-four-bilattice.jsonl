@@ -1,0 +1,13 @@
+{"e":"four-bilattice","a":"describing","v":"The smallest non-trivial bilattice, denoted FOUR, with carrier {t, f, ⊥, ⊤}. Free bilattice on no generators (Fitting 2002); isomorphic to the twist product 2^⋈ of the Boolean lattice with itself (Fitting 1991).","t":"2026-05-19T21:48:19Z"}
+{"e":"four-bilattice","a":"instantiating","v":"bilattice","t":"2026-05-19T21:48:19Z"}
+{"e":"four-bilattice","a":"isomorphic-to","v":"twist-product","t":"2026-05-19T21:48:19Z"}
+{"e":"four-bilattice","a":"having-carrier-element","v":"t","t":"2026-05-19T21:48:19Z"}
+{"e":"four-bilattice","a":"having-carrier-element","v":"f","t":"2026-05-19T21:48:19Z"}
+{"e":"four-bilattice","a":"having-carrier-element","v":"bot","t":"2026-05-19T21:48:19Z"}
+{"e":"four-bilattice","a":"having-carrier-element","v":"top","t":"2026-05-19T21:48:19Z"}
+{"e":"four-bilattice","a":"meeting-in-the-truth-order","v":"four-bilattice","t":"2026-05-19T21:48:19Z"}
+{"e":"four-bilattice","a":"joining-in-the-truth-order","v":"four-bilattice","t":"2026-05-19T21:48:19Z"}
+{"e":"four-bilattice","a":"meeting-in-the-knowledge-order","v":"four-bilattice","t":"2026-05-19T21:48:19Z"}
+{"e":"four-bilattice","a":"joining-in-the-knowledge-order","v":"four-bilattice","t":"2026-05-19T21:48:19Z"}
+{"e":"four-bilattice","a":"negating","v":"four-bilattice","t":"2026-05-19T21:48:19Z"}
+{"e":"four-bilattice","a":"conflating","v":"four-bilattice","t":"2026-05-19T21:48:19Z"}

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       b4fd1192-985b-44de-abb5-233afdecd3e1
+:END:
+#+title: Web technology
+#+date: [2025-10-06 Mon 18:14]
+

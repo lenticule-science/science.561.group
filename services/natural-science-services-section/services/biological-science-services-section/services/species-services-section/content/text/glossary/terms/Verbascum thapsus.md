@@ -1,0 +1,11 @@
+---
+name: Verbascum Thapsus
+aliases:
+  - mullein
+  - great mullein
+  - common mullein
+invasive-to: "[South Dakota](South Dakota)"
+---
+
+
+

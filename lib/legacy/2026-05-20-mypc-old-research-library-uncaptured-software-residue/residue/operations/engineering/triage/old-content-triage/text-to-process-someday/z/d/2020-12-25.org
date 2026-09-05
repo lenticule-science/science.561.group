@@ -1,0 +1,40 @@
+#+title: 2020-12-25
+#+begin_head
+#+ghe_schema: daily-record-0.1.0
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-25 Fri 10:56]
+#+roam_tags: daily-record
+#+end_head
+* Journal                                                          :noexport:
+** [2020-12-25 Fri 15:33]
+
+   I've been bad about using my daily records as any sort of journal, which isn't great. I'd really like to be able to look at these journal entries and reconstruct my day. Today, it's mid-afternoon on Christmas. Here, it's in the high 30s and windy, after a few days of heavy rains. I've felt pretty poorly all day, nervous problems causing pain and nausea.
+
+   Esther and I did a brief video chat with their mom, Rob, and their brother, at 1400h - I guess I should put that in the day's activity log? Part of why I'm not doing well with writing journals is because in this early part of building up my digital garden, there's not records for lots of information I mention often, and so I guess I'm deciding "if I can't add links, don't bother adding notes at all? I think part of it is that I just need to be patient. I'm committed to this information management system, and I'm slowly adding the records I'll need - things that I'm sure to reference a /bunch/, but just hadn't yet, from things like the Great Lakes to the concept of lists. /(I'm not tagging anything in this journal entry because I don't feel like dealing with the "make a record popup.")/
+** [2020-12-25 Fri 16:22]
+   My plan for the rest of the evening is to tinker with my... I want to move away from [[file:../digital_garden.org][digital garden]] as my term for this collection of records, but I'm not sure what language I want to use. The [[file:../lexicon.org][lexicon]] of [[file:../ils.org][ILS]] makes sense, but I'm concerned its framework will limit my ability to decolonize through this tinkering, this "record-crafting." And I don't want to use the language of [[file:../storytelling.org][storytelling]], because I'm pretty sure that's a misrepresentation of what it is I'm doing.
+
+   I want to clean up the [[file:../groundhog_emacs.org][Groundhog Emacs]] config, fixing bugs as I come across them, and also clean up the "worst" records in my collection. But, I haven't yet defined what "worst" would mean here. Well - first, let me move away from such a general qualifier as "worst," let me say, "most in need of work." /(I haven't settled on a verb to describe/ record-craft /yet, except that one, which I'm not in love with.)/
+
+   For now, looking at the records that are the smallest, in terms of file-size, is probably enough.
+* News log
+** Hank Adams has died
+   :LOGBOOK:
+   - Note taken on [2020-12-25 10:58] \\
+     [[file:../hank_adams.org][Hank Adams]], a powerful [[file:../warrior.org][warrior]] for [[file:../native_american.org][Native]] existence, has [[file:../death.org][passed away]], aged 77.
+   :END:
+   - Source :: https://www.npr.org/2020/12/25/950199899/hank-adams-the-most-important-indian-dies-at-77
+** Bomb explodes in Nashville, Tennessee
+   :LOGBOOK:
+   - Note taken on [2020-12-25 Fri 11:00] \\
+     A bomb exploded at approximately 0630h this morning, in Nashville. I heard about it from [[file:../andrew_ragland.org][Andrew Ragland]], who said they felt a shake in LaVergne.
+   :END:
+   - Source :: https://www.tennessean.com/story/news/local/2020/12/25/downtown-nashville-explosion-christmas/4044635001/
+** Leaked documents reveal Cyberspace Administration of China's efforts to guide COVID-19 narrative
+   :LOGBOOK:
+   - Note taken on [2020-12-25 Fri 11:04] \\
+     Documents leaked by CCP Unmasked and verified by the New York Times, ProPublica, and China Digital Times, outline the campaign of narrative-guiding that the Cyberspace Administration of China engaged in, specifically using software made by Urun Big Data Services, when the COVID-19 pandemic was spreading, this past February.
+   :END:
+   - Source :: https://www.propublica.org/article/leaked-documents-show-how-chinas-army-of-paid-internet-trolls-helped-censor-the-coronavirus
+* Activity Log                                                     :noexport:

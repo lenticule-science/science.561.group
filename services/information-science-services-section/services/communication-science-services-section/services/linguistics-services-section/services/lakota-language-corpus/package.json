@@ -1,0 +1,96 @@
+{
+  "name": "@emsenn/communicating-in-lakota",
+  "version": "0.0.0",
+  "type": "module",
+  "description": "Communicating in Lakota — the Lakota fiber over @emsenn/communicating: the compiled Lakota bundle and the runnable communicate/communicate-serve surface wired to Lakota.",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "clean": "rm -rf dist .tmp/test-dist",
+    "check": "tsc --noEmit",
+    "build": "tsc -p tsconfig.build.json && chmod +x dist/scripts/*.mjs",
+    "examples": "pnpm run build && node examples/current-surfaces.mjs",
+    "pretest": "pnpm run build",
+    "test": "node --test \"test/*.test.mjs\"",
+    "prepack": "pnpm run rebuild",
+    "rebuild": "pnpm run clean && pnpm run build"
+  },
+  "main": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "bin": {
+    "communicate": "./dist/scripts/communicate.mjs",
+    "communicate-serve": "./dist/scripts/communicate-serve.mjs"
+  },
+  "files": [
+    "data",
+    "dist",
+    "examples",
+    "README.md",
+    "package.json"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs"
+    },
+    "./bundle": {
+      "types": "./dist/compiled.d.mts",
+      "import": "./dist/compiled.mjs"
+    },
+    "./compiled": {
+      "types": "./dist/compiled.d.mts",
+      "import": "./dist/compiled.mjs"
+    },
+    "./raw-bundle": {
+      "types": "./dist/bundle.d.mts",
+      "import": "./dist/bundle.mjs"
+    },
+    "./manifest": {
+      "types": "./dist/manifest.d.mts",
+      "import": "./dist/manifest.mjs"
+    },
+    "./actions": {
+      "types": "./dist/actions.d.mts",
+      "import": "./dist/actions.mjs"
+    },
+    "./corpus": {
+      "types": "./dist/corpus.d.mts",
+      "import": "./dist/corpus.mjs"
+    },
+    "./frames": {
+      "types": "./dist/frames.d.mts",
+      "import": "./dist/frames.mjs"
+    },
+    "./maturity": {
+      "types": "./dist/maturity.d.mts",
+      "import": "./dist/maturity.mjs"
+    },
+    "./obligations": {
+      "types": "./dist/obligations.d.mts",
+      "import": "./dist/obligations.mjs"
+    },
+    "./orthography": {
+      "types": "./dist/orthography.d.mts",
+      "import": "./dist/orthography.mjs"
+    },
+    "./paradigms": {
+      "types": "./dist/paradigms.d.mts",
+      "import": "./dist/paradigms.mjs"
+    },
+    "./particles": {
+      "types": "./dist/particles.d.mts",
+      "import": "./dist/particles.mjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "dependencies": {
+    "@emsenn/communicating": "0.0.0",
+    "@emsenn/relating": "0.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.1",
+    "typescript": "5.9.3"
+  },
+  "sideEffects": false
+}

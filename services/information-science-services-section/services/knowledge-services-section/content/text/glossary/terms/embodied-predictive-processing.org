@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       1e66ab29-00d4-49de-82d8-8fa3d6769556
+:END:
+#+title: embodied predictive processing
+#+date: [2025-10-05 Sun 08:18]
+

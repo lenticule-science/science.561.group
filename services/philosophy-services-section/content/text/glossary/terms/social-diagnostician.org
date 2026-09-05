@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       0eeedae7-3cba-4cce-8b6f-14f148f5ef05
+:node-relations: (([[id:e3c71550-53c8-4cc4-a371-73afbb667cad][role]] .  [[id:1a626c10-4c4e-4212-8059-cc165e1649a8][diagnostician]]) ([[id:d888a007-edb6-4a23-bb07-59c34ecdd4c7][context]] . [[id:bad397e9-7897-48b7-9046-5cc298419fea][sociology]]))
+:END:
+#+title: social diagnostician
+#+date: [2025-09-03 Wed 20:55]
+

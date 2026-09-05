@@ -1,0 +1,6 @@
+#+title: first-person shooter
+#+roam_alias: "first-person shooters"
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-18 Fri 10:18]
+A */first-person shooter/* is a type of [[file:computer_game.org][computer-game]].

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       796db9a5-ffda-4576-8a89-f5e38a6292a7
+:END:
+#+title: algebraic topology
+#+date: [2025-10-09 Thu 12:31]
+

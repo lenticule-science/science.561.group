@@ -1,0 +1,20 @@
+#+title: Lake Superior
+#+begin_head
+#+ghe_schema: record-0.1.3
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-24 Thu 15:37]
+#+end_head
+
+#+name: definition
+*/Lake Superior/* is a name for the western-most of the [[file:great_lakes.org][Great Lakes]].
+
+#toc: headlines 2
+* Intrododuction
+* Lake Superior
+* Supplements
+** Record history
+   :LOGBOOK:
+   - Note taken on [2020-12-24 Thu 15:37] \\
+     Created
+   :END:

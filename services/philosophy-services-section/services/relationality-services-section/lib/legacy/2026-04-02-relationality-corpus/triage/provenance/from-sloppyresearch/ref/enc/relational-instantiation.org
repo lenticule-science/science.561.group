@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       6f5aca7f-ffaf-4798-aa33-f7ef3ec2e43b
+:END:
+#+title: relational instantiation
+#+date: [2025-09-06 Sat 09:03]
+#+index: relational dynamics!structure!instantiation
+
+A */relational instantiation/* is the [[id:d8ccc143-1871-4e16-aa67-14045a01945f][result]] of [[id:67364976-f757-41b6-80ba-501628ca48ca][instancing]].

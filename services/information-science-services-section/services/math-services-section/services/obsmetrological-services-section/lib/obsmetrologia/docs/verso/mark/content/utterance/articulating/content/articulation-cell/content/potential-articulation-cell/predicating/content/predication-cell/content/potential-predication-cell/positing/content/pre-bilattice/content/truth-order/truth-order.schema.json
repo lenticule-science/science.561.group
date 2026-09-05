@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/pre-bilattice/content/truth-order",
+  "title": "truth-order",
+  "description": "The order <=_t of a pre-bilattice's truth lattice - the twist order on charges: it raises positive evidence and lowers negative. Its bottom is false, its top true.",
+  "allOf": [
+    {
+      "$ref": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/preorder/content/order"
+    }
+  ],
+  "type": "object",
+  "required": [
+    "twisted"
+  ],
+  "properties": {
+    "twisted": {
+      "const": true,
+      "description": "[a1,a2] <=_t [b1,b2] iff a1 <= b1 and b2 <= a2 - positive raised, negative lowered; negation is antitone in it"
+    }
+  }
+}

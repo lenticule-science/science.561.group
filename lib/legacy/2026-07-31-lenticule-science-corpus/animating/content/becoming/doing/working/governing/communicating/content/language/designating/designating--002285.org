@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       ef2b4ac9-7c11-47b5-868f-702e2f003c30
+:form:     [[id:e191eea1-7b0e-4603-9116-ab35bb1006e7][semiotic act]]
+:node-relations: (([[id:fe5bdbd8-29b5-49f3-925b-fad9c365d175][signifying]] . [[id:671de5ba-91db-40bf-883d-214daea13190][signifier]]) ([[id:60b28664-81b5-4ba9-865c-de844f119e02][assigning]] . [[id:e3c71550-53c8-4cc4-a371-73afbb667cad][role]]) [[id:c00a7ba5-19c0-41ca-b2e7-46b2ebe1212b][(semantic theory]] . [[id:f7c49d5e-ff71-41df-acee-fd01b7a4fb03][symbolic act]]))
+:END:
+#+title: designating
+#+date: [2025-08-30 Sat 05:08]
+#+index: semiotic theory!signifying!designating
+

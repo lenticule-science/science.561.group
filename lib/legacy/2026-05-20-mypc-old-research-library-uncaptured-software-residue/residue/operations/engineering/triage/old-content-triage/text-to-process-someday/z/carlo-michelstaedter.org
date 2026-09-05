@@ -1,0 +1,17 @@
+#+title: Carlo Michelstaedter
+#+begin_head
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2021-01-08 Fri 20:22]
+#+roam_tags: term
+#+end_head
+
+#+name: carlo-michelstaedter-definition
+*/[[file:carlo-michelstaedter.org][Carlo Michelstaedter]]/* was an Italian [[file:philosopher.org][philosopher]] during the turn into the 20th century, who connected [[file:modern-philosophy.org][modern philosophy]] to [[file:change.org][change]] in [[file:society.org][society]].
+
+* Quotes
+
+  #+name: carlo-michelstaedter-come-to-daggers-with-life-quote
+  #+begin_quote
+  Anyone can put an end to tossing about in the slavery of what they don’t know—and refusing the sop of empty words, come to daggers with life. - /[[file:carlo-michelstaedter.org][Carlo Michelstaedter]]/
+  #+end_quote

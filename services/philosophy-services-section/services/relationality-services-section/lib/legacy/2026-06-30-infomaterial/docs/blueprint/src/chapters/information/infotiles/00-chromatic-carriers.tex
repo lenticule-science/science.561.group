@@ -1,0 +1,54 @@
+\section{Chromatic carriers: colouring as factor map}
+
+This subgraph exposes the chromatic carrier that the textile and causal
+surfaces already use in prose.  The Lean settlement is not a new primitive
+definition in the Blueprint: the incidence claim is that proper colouring,
+factor maps, FOUR-valued palettes, and complete-graph obstructions are the
+same carrier read at different profiles.
+
+\begin{proposition}[Proper colouring is a factor map]\label{thm:proper-colouring-factor-map}\lean{Infomaterial.Combinatorics.properColoring_iff_hom}\leanok\uses{thm:cover-nerve}
+A proper colouring of a graph is exactly a graph homomorphism into the complete
+graph on its palette.  This is the chromatic settlement of the slogan
+``colouring is factor map'': local adjacency constraints are carried by a map
+to a finite colour shift, not by an external decoration.
+\end{proposition}
+
+\begin{theorem}[Colourings pull back along factor maps]\label{thm:colourings-pull-back}\lean{Infomaterial.Combinatorics.ProperColoring.comp}\leanok\uses{thm:proper-colouring-factor-map}
+If a factor map sends one graph carrier into another and the target is properly
+coloured, the source inherits a proper colouring by pullback.  This is the
+functorial weld behind sofic covers, MLD mediators, and every place the proof
+tree says a local finite rule is read through a simpler chromatic carrier.
+\end{theorem}
+
+\begin{proposition}[Bool-colouring is bipartiteness]\label{thm:bool-colouring-bipartite}\lean{Infomaterial.Combinatorics.bipartite_iff_colorableBool}\leanok\uses{thm:proper-colouring-factor-map}
+The old two-colour graph layer is exactly the Bool-valued instance of proper
+colouring.  Plain weave, bipartite causal splitting, and two-phase alternation
+therefore sit inside the same carrier rather than forming a separate rule.
+\end{proposition}
+
+\begin{theorem}[Odd closed walks obstruct two-colouring]\label{thm:odd-cycle-obstructs-two-colouring}\lean{Infomaterial.Combinatorics.not_bipartite_of_odd_closed_walk}\leanok\uses{thm:bool-colouring-bipartite}
+An odd closed walk blocks Bool-colouring.  In the incidence graph this is the
+chromatic obstruction fiber: the first place where a local alternation rule
+cannot be globally combed into two phases.
+\end{theorem}
+
+\begin{proposition}[FOUR is the four-colour palette]\label{thm:four-colour-palette-is-four}\lean{Infomaterial.Combinatorics.fourColouring, Infomaterial.Combinatorics.fourColouring_iff_hom}\leanok\uses{thm:four-bilattice, thm:proper-colouring-factor-map}
+A Charge-valued proper colouring is a four-colouring whose palette is the
+Belnap FOUR.  The textile over/under charges and the complete-graph
+four-colour shift are one alphabet seen through the bilattice and chromatic
+profiles of the same claim-site.
+\end{proposition}
+
+\begin{theorem}[Complete graphs force distinct colours]\label{thm:complete-graph-forces-distinct-colours}\lean{Infomaterial.Combinatorics.completeGraph_colorable, Infomaterial.Combinatorics.proper_completeGraph_injective}\leanok\uses{thm:proper-colouring-factor-map}
+The complete graph on a palette is coloured by the palette itself, and every
+proper colouring of a complete graph is injective on vertices.  This is the
+finite chromatic lower-bound carrier: if every pair conflicts, no two vertices
+can share a colour.
+\end{theorem}
+
+\begin{theorem}[$K_4$ requires the FOUR]\label{thm:k4-requires-four-charges}\lean{Infomaterial.Combinatorics.K4_four_colorable, Infomaterial.Combinatorics.K4_requires_FOUR}\leanok\uses{thm:four-colour-palette-is-four, thm:complete-graph-forces-distinct-colours}
+The complete graph on Charge is colourable by Charge, and every proper
+colouring of it uses the four charges injectively.  Thus ``four colours'' is
+not a loose metaphor in this proof tree: the extremal chromatic carrier forces
+the Belnap FOUR as its palette.
+\end{theorem}

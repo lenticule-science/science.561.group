@@ -1,0 +1,6 @@
+#+title: cat
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-20 Sun 23:35]
+#+roam_tags: term
+A */cat/*...

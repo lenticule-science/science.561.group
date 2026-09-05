@@ -1,0 +1,9 @@
+---
+type: topic
+name: "Manual Therapy Devices"
+contains: [percussive-massage-device, photobiomodulation, acupressure-mat, vacuum-cupping-device]
+---
+
+Manual therapy devices are handheld, portable, self-administered tools that apply mechanical pressure, vibration, negative pressure, heat, or light to skin and muscle tissue without electrical stimulation or pharmacological agents. The devices produce transient physiological effects through mechanical principles: vibration at muscle-spindle-resonant frequencies (20–60 Hz) triggers autogenic inhibition, a spinal reflex that relaxes the stimulated muscle; sustained pressure activates mechanoreceptors that suppress pain signal transmission via gate control theory; negative pressure mobilizes tissue and increases local blood flow; heat dilates capillaries and reduces muscle tension acutely; and red-light wavelengths interact with mitochondrial cytochrome c oxidase to enhance cellular energy production.
+
+Manual therapy devices are distinct from trained manual therapy (delivered by licensed massage therapists, lymphedema therapists, or physical therapists), which involves anatomically informed technique, adaptive adjustment during treatment, and integration with clinical assessment and rehabilitation planning. Consumer devices produce reproducible mechanistic effects—transient muscle relaxation, brief analgesia, modest acute range-of-motion improvement—but evidence for superiority over simpler methods (manual massage, stretching, heat application) or for long-term therapeutic outcome is limited. The devices are safe at recommended intensities but cannot replicate trained therapeutic technique (such as certified manual lymphatic drainage for lymphedema management) and should not be marketed as substitutes for professional therapy.

@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2019-06-12 Wed 14:51 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>emsenn's Emacs Configuration</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="emsenn" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">emsenn's Emacs Configuration</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgd8af508">Introduction</a></li>
+<li><a href="#org8391337">Emacs Configuration</a>
+<ul>
+<li><a href="#orgb8642da">Package Management Configuration</a></li>
+<li><a href="#org31114ca">Client Configuration</a></li>
+<li><a href="#orgb3a52e0">Package Configuration</a>
+<ul>
+<li><a href="#orgf88f566">Base16 Themes</a></li>
+<li><a href="#org5ebec69">HTMLize</a></li>
+<li><a href="#org24d94a6">Magit</a></li>
+<li><a href="#org0829a63">Ob-Crystal</a></li>
+<li><a href="#org305e2c3">Org-mode</a>
+<ul>
+<li><a href="#orgd4b8baf">Keybindings</a></li>
+<li><a href="#orgb600bc1">Agenda Configuration</a></li>
+<li><a href="#org268cd79">Link Abbreviations</a></li>
+<li><a href="#org06fb34f">Export Settings</a></li>
+<li><a href="#org0890925">TODO Settings</a></li>
+<li><a href="#orgdc4a5e9">Capture Templates</a></li>
+<li><a href="#orgf3d9f18">Projects</a></li>
+<li><a href="#org4368a6e">Macros</a>
+<ul>
+<li><a href="#org66bbbbe">Document Macros</a></li>
+<li><a href="#org4808b3c">Project Macros</a></li>
+<li><a href="#orgdc78a5c">Dictionary Macros</a></li>
+<li><a href="#orgb3156e9">Bibliography Macros</a></li>
+</ul>
+</li>
+<li><a href="#org5e683ab">Babel</a></li>
+</ul>
+</li>
+<li><a href="#org5517a24">Ox-GFM</a></li>
+<li><a href="#orga2f54d9">Webpaste</a></li>
+<li><a href="#orgfd9ea92">Writegood</a></li>
+<li><a href="#org0bd7700">Flyspell</a></li>
+<li><a href="#org77ce5f8">Writefreely</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgd8af508" class="outline-2">
+<h2 id="orgd8af508">Introduction</h2>
+</div>
+<div id="outline-container-org8391337" class="outline-2">
+<h2 id="org8391337">Emacs Configuration</h2>
+<div class="outline-text-2" id="text-org8391337">
+</div>
+<div id="outline-container-orgb8642da" class="outline-3">
+<h3 id="orgb8642da">Package Management Configuration</h3>
+<div class="outline-text-3" id="text-orgb8642da">
+<div class="org-src-container">
+<pre class="src src-elisp">(package-initialize)
+(<span style="color: #747474;">require</span> '<span style="color: #999999;">package</span>)
+(add-to-list 'package-archives
+             '(<span style="color: #8e8e8e;">"melpa"</span> . <span style="color: #8e8e8e;">"http://melpa.org/packages/"</span>) t)
+(add-to-list 'package-archives '(<span style="color: #8e8e8e;">"org"</span> . <span style="color: #8e8e8e;">"https://orgmode.org/elpa/"</span>) t)
+(<span style="color: #747474;">eval-when-compile</span>
+  (add-to-list 'load-path <span style="color: #8e8e8e;">"~/.emacs.d/elpa"</span>)
+  (add-to-list 'load-path <span style="color: #8e8e8e;">"~/.emacs.d/git"</span>)
+  (<span style="color: #747474;">require</span> '<span style="color: #999999;">use-package</span>))
+(<span style="color: #747474;">use-package</span> <span style="color: #999999;">auto-package-update</span>
+             <span style="color: #868686;">:ensure</span> t
+             <span style="color: #868686;">:config</span>
+             (<span style="color: #747474;">setq</span> auto-package-update-delete-old-versions t)
+             (<span style="color: #747474;">setq</span> auto-package-update-hide-results t)
+             (auto-package-update-maybe))
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org31114ca" class="outline-3">
+<h3 id="org31114ca">Client Configuration</h3>
+<div class="outline-text-3" id="text-org31114ca">
+<div class="org-src-container">
+<pre class="src src-elisp">(<span style="color: #747474;">setq</span> auto-save-mode nil)
+(<span style="color: #747474;">setq</span> backup-directory-alist
+      `((<span style="color: #8e8e8e;">"."</span> . ,(concat user-emacs-directory <span style="color: #8e8e8e;">"backups"</span>))))
+(<span style="color: #747474;">setq</span> inhibit-startup-message t)
+(<span style="color: #747474;">setq</span> initial-scratch-message nil)
+(<span style="color: #747474;">setq</span> initial-major-mode 'org-mode)
+(<span style="color: #747474;">setq</span> ring-bell-function 'ignore)
+(set-face-attribute 'default nil <span style="color: #868686;">:height</span> 148)
+<span style="color: #b9b9b9;">;; </span><span style="color: #ababab;">(menu-bar-mode -1)</span>
+<span style="color: #b9b9b9;">;; </span><span style="color: #ababab;">(tool-bar-mode -1)</span>
+(<span style="color: #747474;">setq</span> show-paren-delay 0)
+(show-paren-mode 1)
+(<span style="color: #747474;">setq</span> echo-keystrokes 0.1)
+(<span style="color: #747474;">setq</span> fill-column 68)
+(<span style="color: #747474;">setq</span> mouse-wheel-scroll-amount '(1 ((shift) .1)))
+(<span style="color: #747474;">setq</span> line-number-mode t)
+(<span style="color: #747474;">setq</span> column-number-mode t)
+(<span style="color: #747474;">setq-default</span> truncate-lines t)
+(<span style="color: #747474;">setq</span> sentence-end-double-space nil)
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
+(setenv <span style="color: #8e8e8e;">"PATH"</span> (concat (getenv <span style="color: #8e8e8e;">"PATH"</span>) <span style="color: #8e8e8e;">":~/.local/bin"</span>))
+(<span style="color: #747474;">defadvice</span> <span style="color: #686868;">load-theme</span> (before theme-dont-propagate activate)
+  (mapc #'disable-theme custom-enabled-themes))
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb3a52e0" class="outline-3">
+<h3 id="orgb3a52e0">Package Configuration</h3>
+<div class="outline-text-3" id="text-orgb3a52e0">
+</div>
+<div id="outline-container-orgf88f566" class="outline-4">
+<h4 id="orgf88f566">Base16 Themes</h4>
+<div class="outline-text-4" id="text-orgf88f566">
+<div class="org-src-container">
+<pre class="src src-elisp">(<span style="color: #747474;">use-package</span> <span style="color: #999999;">base16-theme</span>
+           <span style="color: #868686;">:ensure</span> t
+           <span style="color: #868686;">:config</span>
+           (load-theme 'base16-grayscale-light t))
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org5ebec69" class="outline-4">
+<h4 id="org5ebec69">HTMLize</h4>
+<div class="outline-text-4" id="text-org5ebec69">
+<div class="org-src-container">
+<pre class="src src-elisp">(<span style="color: #747474;">use-package</span> <span style="color: #999999;">htmlize</span>
+             <span style="color: #868686;">:ensure</span> t)
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org24d94a6" class="outline-4">
+<h4 id="org24d94a6">Magit</h4>
+<div class="outline-text-4" id="text-org24d94a6">
+<div class="org-src-container">
+<pre class="src src-elisp">(<span style="color: #747474;">use-package</span> <span style="color: #999999;">magit</span>
+             <span style="color: #868686;">:ensure</span> t)
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org0829a63" class="outline-4">
+<h4 id="org0829a63">Ob-Crystal</h4>
+<div class="outline-text-4" id="text-org0829a63">
+<div class="org-src-container">
+<pre class="src src-elisp">(<span style="color: #747474;">use-package</span> <span style="color: #999999;">ob-crystal</span>
+             <span style="color: #868686;">:ensure</span> t)
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org305e2c3" class="outline-4">
+<h4 id="org305e2c3">Org-mode</h4>
+<div class="outline-text-4" id="text-org305e2c3">
+<div class="org-src-container">
+<pre class="src src-elisp">(<span style="color: #747474;">use-package</span> <span style="color: #999999;">org</span>
+  <span style="color: #868686;">:mode</span> ((<span style="color: #8e8e8e;">"\\.org$"</span> . org-mode) (<span style="color: #8e8e8e;">"\\.inc$"</span> . org-mode))
+  <span style="color: #868686;">:ensure</span> org-plus-contrib
+</pre>
+</div>
+</div>
+<div id="outline-container-orgd4b8baf" class="outline-5">
+<h5 id="orgd4b8baf">Keybindings</h5>
+<div class="outline-text-5" id="text-orgd4b8baf">
+<div class="org-src-container">
+<pre class="src src-elisp"><span style="color: #868686;">:bind</span> ((<span style="color: #8e8e8e;">"C-c l"</span> . org-store-link)
+       (<span style="color: #8e8e8e;">"C-c c"</span> . org-capture)
+       (<span style="color: #8e8e8e;">"C-c a"</span> . org-agenda)
+       (<span style="color: #8e8e8e;">"C-c b"</span> . org-iswitchb)
+       (<span style="color: #8e8e8e;">"C-c C-w"</span> . org-refile)
+       (<span style="color: #8e8e8e;">"C-c j"</span> . org-clock-goto)
+       (<span style="color: #8e8e8e;">"C-c C-x C-o"</span> . org-clock-out))
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb600bc1" class="outline-5">
+<h5 id="orgb600bc1">Agenda Configuration</h5>
+<div class="outline-text-5" id="text-orgb600bc1">
+<div class="org-src-container">
+<pre class="src src-elisp"><span style="color: #868686;">:config</span>
+(<span style="color: #747474;">progn</span>
+  (<span style="color: #747474;">setq</span> org-log-done t)
+  (<span style="color: #747474;">setq</span> org-image-actual-width nil)
+  (<span style="color: #747474;">setq</span> org-agenda-custom-commands
+        '((<span style="color: #8e8e8e;">"A"</span> <span style="color: #8e8e8e;">"Agenda and TODO"</span>
+           ((agenda <span style="color: #8e8e8e;">""</span> )
+            (alltodo <span style="color: #8e8e8e;">""</span> )))))
+  (<span style="color: #747474;">setq</span> org-agenda-todo-ignore-scheduled 'all)
+  (<span style="color: #747474;">setq</span> org-agenda-files '(<span style="color: #8e8e8e;">"~/org/personal/src/index.org"</span>))
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org268cd79" class="outline-5">
+<h5 id="org268cd79">Link Abbreviations</h5>
+<div class="outline-text-5" id="text-org268cd79">
+<div class="org-src-container">
+<pre class="src src-elisp">(<span style="color: #747474;">setq</span> org-link-abbrev-alist '(
+                              (<span style="color: #8e8e8e;">"ems-domestic-manual"</span> . <span style="color: #8e8e8e;">"file:~/org/src/domestic-manual.org::#%s"</span>)))
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org06fb34f" class="outline-5">
+<h5 id="org06fb34f">Export Settings</h5>
+<div class="outline-text-5" id="text-org06fb34f">
+<div class="org-src-container">
+<pre class="src src-elisp">(<span style="color: #747474;">setq</span> org-export-allow-bind-keywords t)
+(<span style="color: #747474;">setq</span> org-export-with-sub-superscripts nil)
+(<span style="color: #747474;">setq</span> org-export-with-special-strings nil)
+(<span style="color: #747474;">setq</span> org-export-with-smart-quotes nil)
+(<span style="color: #747474;">setq</span> org-export-with-section-numbers nil)
+(<span style="color: #747474;">setq</span> org-export-with-toc nil)
+(<span style="color: #747474;">setq</span> org-export-with-todo-keywords nil)
+(<span style="color: #747474;">setq</span> org-export-headline-levels 10)
+(<span style="color: #747474;">setq</span> org-html-style-default nil)
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org0890925" class="outline-5">
+<h5 id="org0890925">TODO Settings</h5>
+<div class="outline-text-5" id="text-org0890925">
+<div class="org-src-container">
+<pre class="src src-elisp">(<span style="color: #747474;">setq</span> org-todo-keywords
+'((sequence <span style="color: #8e8e8e;">"DRAFT"</span> <span style="color: #8e8e8e;">"EDIT"</span> <span style="color: #8e8e8e;">"|"</span> <span style="color: #8e8e8e;">"DONE"</span>)
+  (sequence <span style="color: #8e8e8e;">"|"</span> <span style="color: #8e8e8e;">"CANCELED"</span>)))
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgdc4a5e9" class="outline-5">
+<h5 id="orgdc4a5e9">Capture Templates</h5>
+<div class="outline-text-5" id="text-orgdc4a5e9">
+<div class="org-src-container">
+<pre class="src src-elisp">(<span style="color: #747474;">setq</span> org-capture-templates
+      '((<span style="color: #8e8e8e;">"s"</span> <span style="color: #8e8e8e;">"New Source File"</span> plain (file <span style="color: #8e8e8e;">"~/org/triage/source-capture.org"</span>)
+         <span style="color: #8e8e8e;">"#+SETUPFILE: ~/org/templates/setupfile0.org\n#+TITLE: %^{TITLE}\n#+EXPORT_FILE_NAME: ../pub/%^{SLUG}\n* Introduction\n%?\n#+INCLUDE: \"./eli.org::#draft\"\n#+INCLUDE: \"./eli.org::#eli\"\n* %\\1\n  :PROPERTIES:\n  :CUSTOM_ID: contents\n  :END:\n* Supplements\n#+INCLUDE: \"./mit-license.org::#license\""</span>)
+        (<span style="color: #8e8e8e;">"l"</span> <span style="color: #8e8e8e;">"New Log Entry"</span> entry (file+olp+datetime <span style="color: #8e8e8e;">"~/org/personal.org"</span> [<span style="color: #8e8e8e;">"Logs"</span>])
+         <span style="color: #8e8e8e;">""</span>
+         )
+        (<span style="color: #8e8e8e;">"a"</span> <span style="color: #8e8e8e;">"Activity"</span> item (file+datetree <span style="color: #8e8e8e;">"~/org/projects/personal-data/activities.org"</span>)
+         <span style="color: #8e8e8e;">"%U :: %?"</span>)))
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf3d9f18" class="outline-5">
+<h5 id="orgf3d9f18">Projects</h5>
+<div class="outline-text-5" id="text-orgf3d9f18">
+<div class="org-src-container">
+<pre class="src src-elisp">(<span style="color: #747474;">setq</span> org-publish-project-alist
+      '(
+        (<span style="color: #8e8e8e;">"state-of-iranian-communication"</span>
+         <span style="color: #868686;">:base-directory</span> <span style="color: #8e8e8e;">"~/org/projects/state-of-iranian-communication/src/"</span>
+         <span style="color: #868686;">:base-extension</span> <span style="color: #8e8e8e;">"org"</span>
+         <span style="color: #868686;">:publishing-directory</span> <span style="color: #8e8e8e;">"~/org/projects/state-of-iranian-communication/"</span>
+         <span style="color: #868686;">:publishing-function</span> (org-html-publish-to-html org-latex-export-to-pdf org-org-export-to-org)
+         )
+        (<span style="color: #8e8e8e;">"30-days-of-world-building-summer-2019"</span>
+         <span style="color: #868686;">:base-directory</span> <span style="color: #8e8e8e;">"~/org/projects/30-days-of-world-building-summer-2019/src/"</span>
+         <span style="color: #868686;">:base-extension</span> <span style="color: #8e8e8e;">"org"</span>
+         <span style="color: #868686;">:publishing-directory</span> <span style="color: #8e8e8e;">"~/org/projects/30-days-of-world-building-summer-2019/"</span>
+         <span style="color: #868686;">:publishing-function</span> org-html-publish-to-html)
+        ))
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org4368a6e" class="outline-5">
+<h5 id="org4368a6e">Macros</h5>
+<div class="outline-text-5" id="text-org4368a6e">
+<div class="org-src-container">
+<pre class="src src-elisp">(<span style="color: #747474;">setq</span> org-export-global-macros
+        (<span style="color: #8e8e8e;">"ref"</span> . <span style="color: #8e8e8e;">"{{{define($1)}}} {{{source($1)}}}"</span>)
+        (<span style="color: #8e8e8e;">"define"</span> . <span style="color: #8e8e8e;">"{{{$1-definition}}}"</span>)
+        (<span style="color: #8e8e8e;">"source"</span> . <span style="color: #8e8e8e;">"{{{$1-source}}}"</span>)
+        (<span style="color: #8e8e8e;">"contact"</span> . <span style="color: #8e8e8e;">"{{{$1-contact}}}"</span>)            (<span style="color: #8e8e8e;">"contact"</span> . <span style="color: #8e8e8e;">"{{{$1-contact}}}"</span>)
+        (<span style="color: #8e8e8e;">"read"</span> . <span style="color: #8e8e8e;">"Read \"{{{$1-title}}},\" by {{{$1-author}}}. {{{source($1)}}} {{{$1-opinion}}}"</span>)
+</pre>
+</div>
+</div>
+<div id="outline-container-org66bbbbe" class="outline-6">
+<h6 id="org66bbbbe">Document Macros</h6>
+<div class="outline-text-6" id="text-org66bbbbe">
+<div class="org-src-container">
+<pre class="src src-elisp">'((<span style="color: #8e8e8e;">"document-type"</span> . <span style="color: #8e8e8e;">"document"</span>)
+  (<span style="color: #8e8e8e;">"doc"</span> . <span style="color: #8e8e8e;">"{{{document-type}}}"</span>)
+  (<span style="color: #8e8e8e;">"document-eli"</span> . <span style="color: #8e8e8e;">"{{{document-eli-$1}}}"</span>)
+  (<span style="color: #8e8e8e;">"document-eli-default"</span> . <span style="color: #8e8e8e;">"This {{{document-type}}} was created by me, emsenn, in the United States. To the extent possible under law, I have waived all copyright and related or neighboring rights to this document. This document was created for the benefit of the public. If you're viewing it on a remote server, you're encouraged to download your own copy. To learn how you can support me, see [[https://emsenn.net/donate][https://emsenn.net/donate]]."</span>)
+  (<span style="color: #8e8e8e;">"document-is-draft"</span> . <span style="color: #8e8e8e;">"This {{{document-type}}} is a /draft/: it is unfinished and that should be considered when reading it. Special attention should be paid to text marked DRAFT, EDIT, or TK."</span>)
+  (<span style="color: #8e8e8e;">"document-has-project"</span> . <span style="color: #8e8e8e;">"This {{{document-type}}} is part of a larger project, {{{project-name}}}. {{{project-logline}}} {{{project-brief}}} For more information, see {{{project-homepage}}}"</span>)
+  (<span style="color: #8e8e8e;">"document-brief"</span> . <span style="color: #8e8e8e;">"\"{{{title}}}\" is a {{{document-type}}} created by {{{author}}}."</span>)
+  (<span style="color: #8e8e8e;">"document-implements-literate-programming"</span> . <span style="color: #8e8e8e;">"This {{{document-type}}} implements its content using the /literate programming/ paradigm. The \"software\" being presented is included as sections of code, within a longer piece of prose which explains the codes' purpose and usage. {{{source(literate-programming)}}}"</span>)
+  (<span style="color: #8e8e8e;">"document-is-software-prototype"</span> . <span style="color: #8e8e8e;">"This {{{document-type}}} is about a software prototype. It is likely to be inaccurate."</span>)
+  (<span style="color: #8e8e8e;">"document-can-tangle"</span> . <span style="color: #8e8e8e;">"This /Org-mode/ source file contains code which can be extracted. See [[https://orgmode.org/manual/Working-with-source-code.html][https://orgmode.org/manual/Working-with-source-code.html]]."</span>)
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org4808b3c" class="outline-6">
+<h6 id="org4808b3c">Project Macros</h6>
+<div class="outline-text-6" id="text-org4808b3c">
+<div class="org-src-container">
+<pre class="src src-elisp">(<span style="color: #8e8e8e;">"project-brief"</span> . <span style="color: #8e8e8e;">"{{{project-name}}} is a {{{project-type}}} in {{{project-development-stage}}} being created by {{{project-author}}}."</span>)
+(<span style="color: #8e8e8e;">"project-eli"</span> . <span style="color: #8e8e8e;">"This {{{project-type}}} is maintained by {{{author}}} and is released for the benefit of the public under the terms in the {{{project-license-link(\"Project License\" section)}}}. It was made possible with {{{project-support-link(support)}}} from humans like you. Thank you. Please direct comments to the {{{author}}} through their {{{project-public-inbox}}} or, if appropriate, their {{{project-private-inbox}}}."</span>)
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgdc78a5c" class="outline-6">
+<h6 id="orgdc78a5c">Dictionary Macros</h6>
+<div class="outline-text-6" id="text-orgdc78a5c">
+<div class="org-src-container">
+<pre class="src src-elisp">(<span style="color: #8e8e8e;">"source-link"</span> . <span style="color: #8e8e8e;">"See [[$1][$1]]"</span>)
+(<span style="color: #8e8e8e;">"hashtag-link"</span> . <span style="color: #8e8e8e;">" or #$1"</span>)
+(<span style="color: #8e8e8e;">"activitypub-definition"</span> . <span style="color: #8e8e8e;">"A decentralized communication protocol for uploading, broadcasting, and subscribing to content."</span>)
+(<span style="color: #8e8e8e;">"activitypub-source"</span> . <span style="color: #8e8e8e;">"See {{{source-link(https://activitypub.rocks/)}}} or #ActivityPub."</span>)
+(<span style="color: #8e8e8e;">"bitbucket-definition"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"bitbucket-source"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"broadcast-definition"</span> . <span style="color: #8e8e8e;">"To send a piece of information to /subscribers/ or into a public area."</span>)
+(<span style="color: #8e8e8e;">"broadcast-source"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"brutalism-definition"</span> . <span style="color: #8e8e8e;">"A style exaggerating the pragmatic functionality present in modernist design."</span>)
+(<span style="color: #8e8e8e;">"brutalism-source"</span> . <span style="color: #8e8e8e;">"{{{source-link(https://en.wikipedia.org/wiki/Brutalist_architecture)}}}"</span>)
+(<span style="color: #8e8e8e;">"brutstrap-css-definition"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"brutstrap-css-source"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"bryant-stephanie-definition"</span> . <span style="color: #8e8e8e;">"Creator of the /30 Days of World Building/ challenge, and an Agile and SCRUM coach."</span>)
+(<span style="color: #8e8e8e;">"bryant-stephanie-source"</span> . <span style="color: #8e8e8e;">"{{{source-link(http://www.mortaine.com/)}}}"</span>)
+(<span style="color: #8e8e8e;">"dictionary-definition"</span> . <span style="color: #8e8e8e;">"A pairing of keys to the values that define them."</span>)
+(<span style="color: #8e8e8e;">"css-definition"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"css-source"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"domain-name-definition"</span> . <span style="color: #8e8e8e;">"A string (group of letters) defining the name of an area of the Internet."</span>)
+(<span style="color: #8e8e8e;">"domain-name-source"</span> . <span style="color: #8e8e8e;">"See {{{source-link(https://en.wikipedia.org/wiki/Domain_name)}}}."</span>)
+(<span style="color: #8e8e8e;">"emacs-definition"</span> . <span style="color: #8e8e8e;">"A software, a programming interpretter focused around being a text-editor."</span>)
+(<span style="color: #8e8e8e;">"emacs-source"</span> . <span style="color: #8e8e8e;">"See {{{source-link(https://www.gnu.org/software/emacs/)}}} or #Emacs."</span>)
+(<span style="color: #8e8e8e;">"emacs-configuration-personal-definition"</span> . <span style="color: #8e8e8e;">"Not available."</span>)
+(<span style="color: #8e8e8e;">"emacs-configuration-personal-source"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"email-definition"</span> . <span style="color: #8e8e8e;">"A collection of protocols for exchanging text messages between clients on servers."</span>)
+(<span style="color: #8e8e8e;">"email-source"</span> . <span style="color: #8e8e8e;">"See {{{source-link(https://en.wikipedia.org/wiki/Email)}}}."</span>)
+(<span style="color: #8e8e8e;">"email-list-definition"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"email-list-source"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"emsenn-definition"</span> . <span style="color: #8e8e8e;">"A writer and developer focused on how words affect our thinking."</span>)
+(<span style="color: #8e8e8e;">"emsenn-source"</span> . <span style="color: #8e8e8e;">"{{{source-link(https://emsenn.net/)}}}"</span>)
+(<span style="color: #8e8e8e;">"emsenn-contact"</span> . <span style="color: #8e8e8e;">"Send an email to [[mailto:emsenn@emsenn.net][emsenn.net]]."</span>)
+(<span style="color: #8e8e8e;">"emsenn-net-definition"</span> . <span style="color: #8e8e8e;">"A web service where I broadcast my writing."</span>)
+(<span style="color: #8e8e8e;">"emsenn-net-source"</span> . <span style="color: #8e8e8e;">"See {{{source-link(https://emsenn.net)}}}."</span>)
+(<span style="color: #8e8e8e;">"fediverse-definition"</span> . <span style="color: #8e8e8e;">"The conglomeration of federated communication platforms, or its culture."</span>)
+(<span style="color: #8e8e8e;">"fediverse-source"</span> . <span style="color: #8e8e8e;">"See {{{source-link(https://en.wikipedia.org/wiki/Fediverse)}}} or #Fediverse."</span>)
+(<span style="color: #8e8e8e;">"gfm-definition"</span> . <span style="color: #8e8e8e;">"A specialization of the /Markdown/ formatting for styling text documents."</span>)
+(<span style="color: #8e8e8e;">"gfm-source"</span> . <span style="color: #8e8e8e;">"See {{{source-link(https://github.github.com/gfm/)}}}."</span>)
+(<span style="color: #8e8e8e;">"git-definition"</span> . <span style="color: #8e8e8e;">"A software tool for tracking and coordinating changes in computer files."</span>)
+(<span style="color: #8e8e8e;">"git-source"</span> . <span style="color: #8e8e8e;">"{{{source-link(https://git-scm.com/)}}}{{{hashtag-link(Git)}}}."</span>)
+(<span style="color: #8e8e8e;">"git-forge-definition"</span> . <span style="color: #8e8e8e;">"A web service providing an interface to and extending a /Git/ repository."</span>)
+(<span style="color: #8e8e8e;">"git-forge-source"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"git-repository-definition"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"git-repository-source"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"git-submodule-definition"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"git-submodule-source"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"github-definition"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"github-source"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"gitlab-definition"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"gitlab-source"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"golang-definition"</span> . <span style="color: #8e8e8e;">"A computer programming language."</span>)
+(<span style="color: #8e8e8e;">"golang-source"</span> . <span style="color: #8e8e8e;">"See {{{source-link(https://golang.org)}}}."</span>)
+(<span style="color: #8e8e8e;">"guix-definition"</span> . <span style="color: #8e8e8e;">"A software tool for managing a computer system's software packages."</span>)
+(<span style="color: #8e8e8e;">"guix-source"</span> . <span style="color: #8e8e8e;">"{{{source-link(https://www.gnu.org/software/guix/)}}}."</span>)
+(<span style="color: #8e8e8e;">"html-definition"</span> . <span style="color: #8e8e8e;">"A way of adding layout, formatting, and media to text documents."</span>)
+(<span style="color: #8e8e8e;">"html-source"</span> . <span style="color: #8e8e8e;">"{{{source-link(https://en.wikipedia.org/wiki/HTML)}}}."</span>)
+(<span style="color: #8e8e8e;">"hugo-definition"</span> . <span style="color: #8e8e8e;">"A software tool for creating rendered documents from formatted text files."</span>)
+(<span style="color: #8e8e8e;">"hugo-source"</span> . <span style="color: #8e8e8e;">"{{{source-link(https://gohugo.io/)}}}"</span>)
+(<span style="color: #8e8e8e;">"hugo-config-source"</span> . <span style="color: #8e8e8e;">"{{{source-link(https://gohugo.io/getting-started/configuration/)}}}"</span>)
+(<span style="color: #8e8e8e;">"hugo-configuration-definition"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"hugo-configuration-source"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"hugo-content-type-definition"</span> . <span style="color: #8e8e8e;">"The classification of a piece based on what form of media it is."</span>)
+(<span style="color: #8e8e8e;">"hugo-content-type-source"</span> . <span style="color: #8e8e8e;">"{{{source-link(https://gohugo.io/content-management/types/)}}}"</span>)
+(<span style="color: #8e8e8e;">"hugo-front-matter-definition"</span> . <span style="color: #8e8e8e;">"A collection of data associated with a content piece."</span>)
+(<span style="color: #8e8e8e;">"hugo-front-matter-source"</span> . <span style="color: #8e8e8e;">"{{{source-link(https://gohugo.io/content-management/front-matter/)}}}."</span>)
+(<span style="color: #8e8e8e;">"hugo-templates-definition"</span> . <span style="color: #8e8e8e;">"The framework which determines what is in a rendered document and how it appears."</span>)
+(<span style="color: #8e8e8e;">"hugo-templates-source"</span> . <span style="color: #8e8e8e;">"{{{source-link(https://gohugo.io/templates/lookup-order/)}}}"</span>)
+(<span style="color: #8e8e8e;">"hugo-lookup-order-definition"</span> . <span style="color: #8e8e8e;">"The order in which /Hugo/ looks up which layout(s) to apply to a page."</span>)
+(<span style="color: #8e8e8e;">"hugo-lookup-order-source"</span> . <span style="color: #8e8e8e;">"{{{source-link(https://gohugo.io/templates/lookup-order/#readout)}}}."</span>)
+(<span style="color: #8e8e8e;">"hugo-partial-templates-definition"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"hugo-partial-templates-source"</span> . <span style="color: #8e8e8e;">"{{{source-link(https://gohugo.io/templates/partials/)}}}"</span>)
+(<span style="color: #8e8e8e;">"hugo-themes-definition"</span> . <span style="color: #8e8e8e;">"Collections of layouts for use by the /Hugo/ static site generator."</span>)
+(<span style="color: #8e8e8e;">"hugo-themes-source"</span> . <span style="color: #8e8e8e;">"https://gohugo.io/themes/"</span>)
+(<span style="color: #8e8e8e;">"hugo-media-package-channel-theme-definition"</span> . <span style="color: #8e8e8e;">"A /Hugo theme/ for creating a media package channel."</span>)
+(<span style="color: #8e8e8e;">"hugo-media-package-channel-theme-source"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"indieweb-definition"</span> . <span style="color: #8e8e8e;">"A set of data specifications and software utilities for coordinating the serialization of social data."</span>)
+(<span style="color: #8e8e8e;">"indieweb-source"</span> . <span style="color: #8e8e8e;">"{{{source-link(https://indieweb.org/)}}}."</span>)
+(<span style="color: #8e8e8e;">"javascript-definition"</span> . <span style="color: #8e8e8e;">"An interpretted programming language used frequently in Web development."</span>)
+(<span style="color: #8e8e8e;">"javascript-source"</span> . <span style="color: #8e8e8e;">"{{{source-link(https://en.wikipedia.org/wiki/JavaScript)}}}."</span>)
+(<span style="color: #8e8e8e;">"json-definition"</span> . <span style="color: #8e8e8e;">"A human-readable data format."</span>)
+(<span style="color: #8e8e8e;">"json-source"</span> . <span style="color: #8e8e8e;">"{{{source-link(https://json.org/)}}}."</span>)
+(<span style="color: #8e8e8e;">"literate-programming-definition"</span> . <span style="color: #8e8e8e;">"A programming paradigm in which information is presented in natural language with traditional source code implemented as figures within that text."</span>)
+(<span style="color: #8e8e8e;">"literate-programming-source"</span> . <span style="color: #8e8e8e;">"{{{source-link(https://en.wikipedia.org/wiki/Literate_programming)}}}"</span>)
+(<span style="color: #8e8e8e;">"markdown-definition"</span> . <span style="color: #8e8e8e;">"A way of adding style notation to plain text."</span>)
+(<span style="color: #8e8e8e;">"markdown-source"</span> . <span style="color: #8e8e8e;">"https://daringfireball.net/projects/markdown/"</span>)
+(<span style="color: #8e8e8e;">"mastodon-definition"</span> . <span style="color: #8e8e8e;">"A platform for broadcasting and receiving short text messages between users on different servers and viewing aggregate feeds of servers or tagged posts."</span>)
+(<span style="color: #8e8e8e;">"mastodon-source"</span> . <span style="color: #8e8e8e;">"See {{{source-link(https://joinmastodon.org/)}}} {{{tag-link(Mastodon)}}}"</span>)
+(<span style="color: #8e8e8e;">"media-package-definition"</span> . <span style="color: #8e8e8e;">"A manifest of metadata about a piece of media content."</span>)
+(<span style="color: #8e8e8e;">"media-package-source"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"media-package-channel-definition"</span> . <span style="color: #8e8e8e;">"A listing of /media packages/."</span>)
+(<span style="color: #8e8e8e;">"media-package-channel-source"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"media-package-channel-generator-definition"</span> . <span style="color: #8e8e8e;">"A software that turns /media packages/ into a /media package channel/."</span>)
+(<span style="color: #8e8e8e;">"media-package-channel-generator-source"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"microsoft-definition"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"microsoft-source"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"microblog-definition"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"microblog-source"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"microblog-federated-definition"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"microblog-federated-source"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"netlify-definition"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"netlify-source"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"org-mode-definition"</span> . <span style="color: #8e8e8e;">"A way of formatting plain data inside text documents."</span>)
+(<span style="color: #8e8e8e;">"org-mode-source"</span> . <span style="color: #8e8e8e;">"{{{source-link(https://orgmode.org/)}}} {{{hashtag-link(OrgMode)}}}."</span>)
+(<span style="color: #8e8e8e;">"org-mode-babel-definition"</span> . <span style="color: #8e8e8e;">"A software tool for using code integrated into /Org-mode/ documents."</span>)
+(<span style="color: #8e8e8e;">"org-mode-babel-source"</span> . <span style="color: #8e8e8e;">"{{{source-link(https://orgmode.org/worg/org-contrib/babel/intro.html)}}}"</span>)
+(<span style="color: #8e8e8e;">"org-mode-babel-tangle-definition"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"org-mode-babel-tangle-source"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"org-mode-macros-definition"</span> . <span style="color: #8e8e8e;">"A way to replace text in a source document when it is exported to a rendered document."</span>)
+(<span style="color: #8e8e8e;">"org-mode-macros-source"</span> . <span style="color: #8e8e8e;">"{{{source-link(https://orgmode.org/manual/Macro-replacement.html)}}}"</span>)
+(<span style="color: #8e8e8e;">"ox-gfm-definition"</span> . <span style="color: #8e8e8e;">"A software tool for exporting /Org-mode/ files to /Github-Flavored Markdown/."</span>)
+(<span style="color: #8e8e8e;">"ox-gfm-source"</span> . <span style="color: #8e8e8e;">"See {{{source-link(https://github.com/larstvei/ox-gfm)}}}."</span>)
+(<span style="color: #8e8e8e;">"ox-hugo-definition"</span> . <span style="color: #8e8e8e;">"A software tool for exporting /Org-mode/ files to /Hugo/-compatible /Markdown/."</span>)
+(<span style="color: #8e8e8e;">"ox-hugo-source"</span> . <span style="color: #8e8e8e;">"{{{source-link(https://ox-hugo.scripter.co/)}}}."</span>)
+(<span style="color: #8e8e8e;">"plate-tectonics-definition"</span> . <span style="color: #8e8e8e;">"A theory describing the movement of rock segments under a plates surface leading to the formation of geographic features."</span>)
+(<span style="color: #8e8e8e;">"plate-tectonics-source"</span> . <span style="color: #8e8e8e;">"{{{source-link(https://en.wikipedia.org/wiki/Plate_tectonics)}}}."</span>)
+(<span style="color: #8e8e8e;">"rss-definition"</span> . <span style="color: #8e8e8e;">"A file format for sharing a feed of a website's content; usually recently added pages."</span>)
+(<span style="color: #8e8e8e;">"rss-source"</span> . <span style="color: #8e8e8e;">"See {{{source-link(https://en.wikipedia.org/wiki/RSS)}}}."</span>)
+(<span style="color: #8e8e8e;">"software-stack-definition"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"software-stack-source"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"sourcehut-definition"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"sourcehut-source"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"subscribe-definition"</span> . <span style="color: #8e8e8e;">"To choose to receive communication from a source."</span>)
+(<span style="color: #8e8e8e;">"subscribe-source"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"teraum-definition"</span> . <span style="color: #8e8e8e;">"A tragically funny fantasy setting."</span>)
+(<span style="color: #8e8e8e;">"teraum-source"</span> . <span style="color: #8e8e8e;">"See {{{source-link(https://emsenn.net/teraum/)}}} {{{hashtag-link(Teraum)}}}."</span>)
+(<span style="color: #8e8e8e;">"teraum-arathel-definition"</span> . <span style="color: #8e8e8e;">"A sleepy, worn-down town."</span>)
+(<span style="color: #8e8e8e;">"teraum-arathel-source"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"teraum-arathel-county-definition"</span> . <span style="color: #8e8e8e;">"A swampy and sandy county."</span>)
+(<span style="color: #8e8e8e;">"teraum-arathel-county-source"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"teraum-central-plains-definition"</span> . <span style="color: #8e8e8e;">"A large agricultural region, full of towns and castles."</span>)
+(<span style="color: #8e8e8e;">"teraum-central-plains-source"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"teraum-falling-coast-definition"</span> . <span style="color: #8e8e8e;">"A massive cliff dividing a vast desert from the rest of the world."</span>)
+(<span style="color: #8e8e8e;">"teraum-falling-coast-source"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"teraum-green-delta-definition"</span> . <span style="color: #8e8e8e;">"A hospitable and well-settled region of the world."</span>)
+(<span style="color: #8e8e8e;">"teraum-green-delta-source"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"teraum-green-river-definition"</span> . <span style="color: #8e8e8e;">"A slow wide river, cutting through the world."</span>)
+(<span style="color: #8e8e8e;">"teraum-green-river-source"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"teraum-kaiper-river-definition"</span> . <span style="color: #8e8e8e;">"A silty excuse for a river."</span>)
+(<span style="color: #8e8e8e;">"teraum-kaiper-river-source"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"teraum-old-world-definition"</span> . <span style="color: #8e8e8e;">"The large continent where most of history happened."</span>)
+(<span style="color: #8e8e8e;">"teraum-old-world-source"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"teraum-optic-ocean-definition"</span> . <span style="color: #8e8e8e;">"A large desert separating one part of the world from the other."</span>)
+(<span style="color: #8e8e8e;">"teraum-optic-ocean-source"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"teraum-unseen-sea-definition"</span> . <span style="color: #8e8e8e;">"A desert so large it was first mistaken for a seabed."</span>)
+(<span style="color: #8e8e8e;">"teraum-unseen-sea-source"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"teraum-worldkeepers-definition"</span> . <span style="color: #8e8e8e;">"A range of large mountains."</span>)
+(<span style="color: #8e8e8e;">"teraum-worldkeepers-source"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"teraum-worldkeep-definition"</span> . <span style="color: #8e8e8e;">"A vast complex housing an unbelievable variety of magic lifeforms."</span>)
+(<span style="color: #8e8e8e;">"teraum-worldkeep-source"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"thirty-days-of-world-building-definition"</span> . <span style="color: #8e8e8e;">"A series of prompts for building a fictional world."</span>)
+(<span style="color: #8e8e8e;">"thirty-days-of-world-building-source"</span> . <span style="color: #8e8e8e;">"See {{{source-link(http://www.web-writer.net/fantasy/days/)}}} or #30DaysOfWorldBuilding."</span>)
+(<span style="color: #8e8e8e;">"toml-definition"</span> . <span style="color: #8e8e8e;">"A human-readable data format."</span>)
+(<span style="color: #8e8e8e;">"toml-source"</span> . <span style="color: #8e8e8e;">"{{{source-link(https://github.com/toml-lang/toml)}}}."</span>)
+(<span style="color: #8e8e8e;">"website-dynamic-definition"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"website-dynamic-source"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"website-personal-definition"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"website-personal-source"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"website-static-definition"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"website-static-source"</span> . <span style="color: #8e8e8e;">"$1"</span>)
+(<span style="color: #8e8e8e;">"write-as-definition"</span> . <span style="color: #8e8e8e;">"A web service providing /WriteFreely/ hosting."</span>)
+(<span style="color: #8e8e8e;">"write-as-source"</span> . <span style="color: #8e8e8e;">"See {{{source-link(https://write.as/)}}} or #WriteAs"</span>)
+(<span style="color: #8e8e8e;">"writefreely-el-definition"</span> . <span style="color: #8e8e8e;">"A script for uploading /Org-mode/ text to a /WriteFreely/ instance."</span>)
+(<span style="color: #8e8e8e;">"writefreely-el-source"</span> . <span style="color: #8e8e8e;">"See {{{source-link(https://github.com/dangom/writefreely.el)}}}."</span>)
+(<span style="color: #8e8e8e;">"writefreely-definition"</span> . <span style="color: #8e8e8e;">"A software service for broadcasting long text documents."</span>)
+(<span style="color: #8e8e8e;">"writefreely-source"</span> . <span style="color: #8e8e8e;">"See {{{source-link(https://writefreely.org/)}}} or #WriteFreely."</span>)
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb3156e9" class="outline-6">
+<h6 id="orgb3156e9">Bibliography Macros</h6>
+<div class="outline-text-6" id="text-orgb3156e9">
+<div class="org-src-container">
+<pre class="src src-elisp">(<span style="color: #8e8e8e;">"shaggy-dog-tale-title"</span> . <span style="color: #8e8e8e;">"A Shaggy Dog Tale"</span>)
+(<span style="color: #8e8e8e;">"shaggy-dog-tale-author"</span> . <span style="color: #8e8e8e;">"emsenn"</span>)
+(<span style="color: #8e8e8e;">"shaggy-dog-tale-source"</span> . <span style="color: #8e8e8e;">"Unavailable."</span>)
+(<span style="color: #8e8e8e;">"shaggy-dog-tale-opinion"</span> . <span style="color: #8e8e8e;">"Well-written but didn't seem to go anywhere."</span>)))
+
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org5e683ab" class="outline-5">
+<h5 id="org5e683ab">Babel</h5>
+<div class="outline-text-5" id="text-org5e683ab">
+<div class="org-src-container">
+<pre class="src src-elisp">(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((crystal . t)
+   (ledger . t)
+   (shell . t)))))
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org5517a24" class="outline-4">
+<h4 id="org5517a24">Ox-GFM</h4>
+<div class="outline-text-4" id="text-org5517a24">
+<div class="org-src-container">
+<pre class="src src-elisp">(<span style="color: #747474;">use-package</span> <span style="color: #999999;">ox-gfm</span>
+  <span style="color: #868686;">:after</span> org
+  <span style="color: #868686;">:ensure</span> t)
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orga2f54d9" class="outline-4">
+<h4 id="orga2f54d9">Webpaste</h4>
+<div class="outline-text-4" id="text-orga2f54d9">
+<div class="org-src-container">
+<pre class="src src-elisp">(<span style="color: #747474;">use-package</span> <span style="color: #999999;">webpaste</span>
+  <span style="color: #868686;">:ensure</span> t
+  <span style="color: #868686;">:bind</span> ((<span style="color: #8e8e8e;">"C-c C-p C-b"</span> . webpaste-paste-buffer)
+         (<span style="color: #8e8e8e;">"C-c C-p C-r"</span> . webpaste-paste-region))
+  <span style="color: #868686;">:config</span>
+  (<span style="color: #747474;">progn</span>
+    (<span style="color: #747474;">setq</span> webpaste-provider-priority '(<span style="color: #8e8e8e;">"ptpb.pw"</span>))))
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgfd9ea92" class="outline-4">
+<h4 id="orgfd9ea92">Writegood</h4>
+<div class="outline-text-4" id="text-orgfd9ea92">
+<div class="org-src-container">
+<pre class="src src-elisp">(<span style="color: #747474;">use-package</span> <span style="color: #999999;">writegood-mode</span>
+  <span style="color: #868686;">:ensure</span> t
+  <span style="color: #868686;">:bind</span> ((<span style="color: #8e8e8e;">"\C-c\C-gg"</span> . writegood-grade-level)
+         (<span style="color: #8e8e8e;">"\C-c\C-ge"</span> . writegood-reading-ease))
+  <span style="color: #868686;">:init</span>
+  (<span style="color: #747474;">progn</span>
+    (writegood-mode 1))
+  <span style="color: #868686;">:config</span>
+  (<span style="color: #747474;">progn</span>
+    (<span style="color: #747474;">setq</span> ispell-program-name <span style="color: #8e8e8e;">"aspell"</span>)
+    (<span style="color: #747474;">setq</span> ispell-list-command <span style="color: #8e8e8e;">"--list"</span>) <span style="color: #b9b9b9;">;; </span><span style="color: #ababab;">run flyspell with aspell, not ispell</span>
+  ))
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org0bd7700" class="outline-4">
+<h4 id="org0bd7700">Flyspell</h4>
+<div class="outline-text-4" id="text-org0bd7700">
+<div class="org-src-container">
+<pre class="src src-elisp">(<span style="color: #747474;">use-package</span> <span style="color: #999999;">flyspell</span>
+  <span style="color: #868686;">:ensure</span> t
+  <span style="color: #868686;">:init</span>
+  (<span style="color: #747474;">progn</span>
+    (writegood-mode 1))
+)
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org77ce5f8" class="outline-4">
+<h4 id="org77ce5f8">Writefreely</h4>
+<div class="outline-text-4" id="text-org77ce5f8">
+<div class="org-src-container">
+<pre class="src src-elisp">(<span style="color: #747474;">use-package</span> <span style="color: #999999;">writefreely</span>
+  <span style="color: #868686;">:after</span> org
+  <span style="color: #868686;">:ensure</span> t
+  <span style="color: #868686;">:config</span> (<span style="color: #747474;">setq</span> writefreely-auth-token <span style="color: #8e8e8e;">"1349cd28-8c69-4d42-7674-d8ce43f33822"</span>))
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: emsenn</p>
+<p class="date">Created: 2019-06-12 Wed 14:51</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

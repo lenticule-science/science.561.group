@@ -1,0 +1,1269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2019-05-18 Sat 14:44 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Personal Records</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="emsenn" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Personal Records</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org56c33ab">Introduction</a></li>
+<li><a href="#orgc5d96d7">Records</a></li>
+<li><a href="#org44d8a71">Supplements</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org56c33ab" class="outline-2">
+<h2 id="org56c33ab">Introduction</h2>
+</div>
+<div id="outline-container-orgc5d96d7" class="outline-2">
+<h2 id="orgc5d96d7">Records</h2>
+<div class="outline-text-2" id="text-orgc5d96d7">
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org415a400">Logs</a></li>
+<li><a href="#orgb1cfbbe">Plans</a></li>
+<li><a href="#orge5d8010">Routines</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org415a400" class="outline-3">
+<h3 id="org415a400">Logs</h3>
+<div class="outline-text-3" id="text-org415a400">
+<pre class="example">
+header-args: :tangle ./personal.ledger :padline no
+</pre>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org4e1905c">2019</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org4e1905c" class="outline-4">
+<h4 id="org4e1905c">2019</h4>
+<div class="outline-text-4" id="text-org4e1905c">
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgf810009">2019-05 May</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf810009" class="outline-5">
+<h5 id="orgf810009">2019-05 May</h5>
+<div class="outline-text-5" id="text-orgf810009">
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org583c6ba">2019-05-13 Monday</a></li>
+<li><a href="#orgb9b3fab">2019-05-15 Wednesday</a></li>
+<li><a href="#org7cf00f2">2019-05-16 Thursday</a></li>
+<li><a href="#org9cda946">2019-05-17 Friday</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org583c6ba" class="outline-6">
+<h6 id="org583c6ba">2019-05-13 Monday</h6>
+<div class="outline-text-6" id="text-org583c6ba">
+</div>
+<div id="outline-container-org366228e" class="outline-7">
+<h7 id="org366228e"><span class="timestamp-wrapper"><span class="timestamp">&lt;2019-05-13 Mon 13:43&gt;</span></span></h7>
+<div class="outline-text-7" id="text-org366228e">
+<div class="org-src-container">
+<pre class="src src-ledger">2019/05/13 * Picked mulberries
+  Inventory:Larder:mulberries              3.5     lb
+  LABOR
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgabf91f0" class="outline-7">
+<h7 id="orgabf91f0"><span class="timestamp-wrapper"><span class="timestamp">&lt;2019-05-13 Mon 15:12&gt;</span></span></h7>
+<div class="outline-text-7" id="text-orgabf91f0">
+<div class="org-src-container">
+<pre class="src src-ledger">2019/05/13 * Picked mulberries
+  Inventory:Larder:mulberries             -3.5     lb
+  Inventory:Larder:mulberry juice          1.2     qt
+  LABOR
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb9b3fab" class="outline-6">
+<h6 id="orgb9b3fab">2019-05-15 Wednesday</h6>
+<div class="outline-text-6" id="text-orgb9b3fab">
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org623447e"><span class="timestamp-wrapper"><span class="timestamp">&lt;2019-05-15 Wed 07:25&gt;</span></span></a></li>
+<li><a href="#orgce0b31f"><span class="timestamp-wrapper"><span class="timestamp">&lt;2019-05-15 Wed 11:10&gt;</span></span></a></li>
+<li><a href="#org34afd2e"><span class="timestamp-wrapper"><span class="timestamp">&lt;2019-05-15 Wed 12:43&gt;</span></span></a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org623447e" class="outline-7">
+<h7 id="org623447e"><span class="timestamp-wrapper"><span class="timestamp">&lt;2019-05-15 Wed 07:25&gt;</span></span></h7>
+<div class="outline-text-7" id="text-org623447e">
+<p>
+I've just woken up - or just gotten to my computer after having woken
+up too early, and I'm sitting here looking at my "personal record," an
+Org-mode file that I'd like to use as my main method of tracking my
+goals and past activities.
+</p>
+
+<p>
+Right now the file has 4 real sections, somewhat conveniently making
+an acronym, <b>LOAT</b>:
+</p>
+<ul class="org-ul">
+<li>Logs</li>
+<li>Objectives</li>
+<li>Actions</li>
+<li>Tasks</li>
+</ul>
+
+<p>
+Objectives are for big picture goals. Each one should have a checklist
+of how to measure its completion.
+</p>
+
+<p>
+Actions are things to do.
+</p>
+</div>
+</div>
+<div id="outline-container-orgce0b31f" class="outline-7">
+<h7 id="orgce0b31f"><span class="timestamp-wrapper"><span class="timestamp">&lt;2019-05-15 Wed 11:10&gt;</span></span></h7>
+<div class="outline-text-7" id="text-orgce0b31f">
+<p>
+I thankfully fell back asleep for a while. Now I'm sitting at my desk,
+my kitty happy staring over my shoulder while I type.
+</p>
+
+<p>
+So, actions are things to do, and are usually made up of tasks, which
+are granular things that can be done.
+</p>
+
+<p>
+What I haven't done yet is write an objective for my recordkeeping,
+because, well, that's a hard thing to think about.
+</p>
+
+<p>
+I'm going to start by adding the objective <i>Keep good records</i>, the
+results of which I'll say are keeping track of all obligations,
+personal inventory, work done, and interactions.
+</p>
+
+<p>
+Easier said than done. Let me try and write some actions to get to
+those results:
+</p>
+
+<p>
+For keeping track of my obligations, I think I'll want <i>capture
+templates</i>, a quick way of adding data to Org-mode&#x2026; but before I can
+really do that, I'll need to write a little schema for what
+Objectives, Actions, and Tasks contain&#x2026;
+</p>
+
+<p>
+Which should probably be written into my recordkeeping manual&#x2026; which
+I don't think I have yet.
+</p>
+</div>
+</div>
+<div id="outline-container-org34afd2e" class="outline-7">
+<h7 id="org34afd2e"><span class="timestamp-wrapper"><span class="timestamp">&lt;2019-05-15 Wed 12:43&gt;</span></span></h7>
+<div class="outline-text-7" id="text-org34afd2e">
+<p>
+I've just written some into my recordkeeping manual, which will be the
+explanation of how I'm handling the records that this log is a part
+of.
+</p>
+
+<p>
+I think, to help decide what "schema" I should set up for different
+work packages, I should start by importing some of the records I have
+scattered in older attempts at recordkeeping. In adding those, I'll
+have to clean them up and probably develop some sort of schema, which
+I can add to the recordkeeping manual.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org7cf00f2" class="outline-6">
+<h6 id="org7cf00f2">2019-05-16 Thursday</h6>
+<div class="outline-text-6" id="text-org7cf00f2">
+</div>
+<div id="outline-container-orgb4e0bc2" class="outline-7">
+<h7 id="orgb4e0bc2"><span class="timestamp-wrapper"><span class="timestamp">&lt;2019-05-16 Thu 18:44&gt;</span></span></h7>
+<div class="outline-text-7" id="text-orgb4e0bc2">
+<div class="org-src-container">
+<pre class="src src-ledger">2019/05/13 * Picked mulberries
+  Inventory:Larder:mulberries              1.8     lb
+  LABOR
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org9cda946" class="outline-6">
+<h6 id="org9cda946">2019-05-17 Friday</h6>
+<div class="outline-text-6" id="text-org9cda946">
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#personal-log-2019-05-17-1153"><span class="timestamp-wrapper"><span class="timestamp">&lt;2019-05-17 Fri 11:53&gt;</span></span></a></li>
+<li><a href="#org43775a0"><span class="timestamp-wrapper"><span class="timestamp">&lt;2019-05-17 Fri 23:45&gt;</span></span></a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org65da8b3" class="outline-7">
+<h7 id="personal-log-2019-05-17-1153"><span class="timestamp-wrapper"><span class="timestamp">&lt;2019-05-17 Fri 11:53&gt;</span></span></h7>
+<div class="outline-text-7" id="text-personal-log-2019-05-17-1153">
+<pre class="example">
+CUSTOM_ID: personal-log-2019-05-17-1153
+</pre>
+<p>
+Today I plan on working on a few small things around the apartment
+building, but my main plans are to write a short letter to my parlour,
+to try and explain, mostly to myself, how it is I'm going to try and
+prioritize projects moving forward. I'm fairly comfortable with my job
+and so have the opportunity to step back and give some consideration
+to what would be best for my sense of fulfillment, long-term.
+</p>
+
+<p>
+In that spirit I've recently been trying to feel more comfortable
+identifying as a writer, and feeling comfortable believing that
+writing fantasy writing is something worth doing. I've been chewing
+that thought over the past few days, especially yesterday since Esther
+had the day off, and so I was just sitting in a car for a while.
+</p>
+
+<p>
+&#x2026;Actually I just realized, in trying to write about it here, what I
+mean to be thinking:
+</p>
+
+<p>
+Teraum - my fantasy setting, <i>is</i> a MUD. It's just not necessarily an
+<i>online</i> MUD.
+</p>
+
+<p>
+So, for my memory, the backstory:
+</p>
+
+<p>
+When I was little I wrote fantasy stories and played the Discworld
+MUD. That made me want to write my own MUD to have people be able to
+play in my world, the way they could play in Pratchett's. But making a
+MUD is hard, and programming has never been what I've been focused on,
+so it's been a poor way to implement my fantasy setting. For most of
+my life, other interests kept the fantasy stuff on the backburner.
+</p>
+
+<p>
+Now, though, I have the opportunity to bring that stuff onto the fire,
+I'm hestitant about how to do it.
+</p>
+
+<p>
+The simple solution would be to just write stories, the traditional
+way. But I think that might be under-utilizing my other skills and
+interests, specifically those in tabletop role-playing games and MUDs,
+but also, visual art, book layout and design, and other small skills.
+</p>
+</div>
+</div>
+<div id="outline-container-org43775a0" class="outline-7">
+<h7 id="org43775a0"><span class="timestamp-wrapper"><span class="timestamp">&lt;2019-05-17 Fri 23:45&gt;</span></span></h7>
+<div class="outline-text-7" id="text-org43775a0">
+<p>
+This entry is, initially, to test a footnote setting. (I did, I didn't
+like it.)
+</p>
+
+<p>
+Now I'm just exploring random entries through Org-mode's index,
+looking for things that might be useful to practice - like now, I'm
+looking at adding tags to categorize plans by what sort of work is
+involved in completing them.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb1cfbbe" class="outline-3">
+<h3 id="orgb1cfbbe">Plans</h3>
+<div class="outline-text-3" id="text-orgb1cfbbe">
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org9ba94d0"><span class="todo PLANNING">PLANNING</span> Develop <i>Teraum</i>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="PROJECT">PROJECT</span></span></a></li>
+<li><a href="#develop-brave-old-world"><span class="todo PLANNING">PLANNING</span> Develop <i>Brave Old World</i>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="PROJECT">PROJECT</span></span></a></li>
+<li><a href="#org13101f2"><span class="todo PLANNING">PLANNING</span> Develop and maintain qtMUD&#xa0;&#xa0;&#xa0;<span class="tag"><span class="DEVELOPMENT">DEVELOPMENT</span>&#xa0;<span class="PROJECT">PROJECT</span></span></a></li>
+<li><a href="#org4739e52"><span class="todo PLANNING">PLANNING</span> Develop and maintain personal website&#xa0;&#xa0;&#xa0;<span class="tag"><span class="DEVELOPMENT">DEVELOPMENT</span>&#xa0;<span class="PROJECT">PROJECT</span></span></a></li>
+<li><a href="#org8b67dd6"><span class="todo READY">READY</span> Make good use of the mulberry tree <code>[33%]</code>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="LABOR">LABOR</span></span></a></li>
+<li><a href="#orgf9ba426"><span class="todo READY">READY</span> Clean the food dehydrator&#xa0;&#xa0;&#xa0;<span class="tag"><span class="LABOR">LABOR</span></span></a></li>
+<li><a href="#orgc0994e0"><span class="todo READY">READY</span> Conduct kitchen inventory&#xa0;&#xa0;&#xa0;<span class="tag"><span class="RECORDKEEPING">RECORDKEEPING</span></span></a></li>
+<li><a href="#orgdd64508"><span class="todo READY">READY</span> Import log.org&#xa0;&#xa0;&#xa0;<span class="tag"><span class="RECORDKEEPING">RECORDKEEPING</span></span></a></li>
+<li><a href="#orgae9b8c0"><span class="todo READY">READY</span> Write <i>Recordkeeping Manual</i>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="WRITING">WRITING</span></span></a></li>
+<li><a href="#orgc20a196"><span class="todo READY">READY</span> Do laundry&#xa0;&#xa0;&#xa0;<span class="tag"><span class="LABOR">LABOR</span></span></a></li>
+<li><a href="#orgf44e4cc">Archive&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ARCHIVE">ARCHIVE</span></span></a></li>
+<li><a href="#org19fbfeb"><span class="done STOPPED">STOPPED</span> Import Fyreside project.&#xa0;&#xa0;&#xa0;<span class="tag"><span class="DEVELOPMENT">DEVELOPMENT</span></span></a></li>
+<li><a href="#org7930894"><span class="done COMPLETE">COMPLETE</span> Wrote "How My Projects Relate"&#xa0;&#xa0;&#xa0;<span class="tag"><span class="WRITING">WRITING</span>&#xa0;<span class="ACTION">ACTION</span></span></a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9ba94d0" class="outline-4">
+<h4 id="org9ba94d0"><span class="todo PLANNING">PLANNING</span> Develop <a href="file:///home/emsenn/org/src/teraum/index.html"><i>Teraum</i></a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="PROJECT">PROJECT</span></span></h4>
+<div class="outline-text-4" id="text-org9ba94d0">
+<ul class="org-ul">
+<li>State "PLANNING"   from              <span class="timestamp-wrapper"><span class="timestamp">[2019-05-18 Sat 13:54]</span></span></li>
+</ul>
+</div>
+<div id="outline-container-org04a301e" class="outline-5">
+<h5 id="org04a301e">Write contemporary adventures <code>[0/1]</code></h5>
+<div class="outline-text-5" id="text-org04a301e">
+</div>
+<div id="outline-container-org6b11b77" class="outline-6">
+<h6 id="org6b11b77"><span class="todo PLANNING">PLANNING</span> Release <a href="file:///home/emsenn/org/src/teraum/adventures/crown-of-idbol-bark.html">"The Crown of Idbol Bark"</a> <code>[16%]</code></h6>
+<div class="outline-text-6" id="text-org6b11b77">
+<pre class="example">
+COOKIE_DATA: recursive
+</pre>
+<p>
+<span class="timestamp-wrapper">
+<span class="timestamp-kwd">CLOCK:</span> <span class="timestamp">[2019-05-18 Sat 14:00]--[2019-05-18 Sat 14:05] </span> <span class="timestamp">(0:05)</span>
+</span>
+</p>
+<ul class="org-ul">
+<li>State "PLANNING"   from              <span class="timestamp-wrapper"><span class="timestamp">[2019-05-18 Sat 13:59]</span></span></li>
+</ul>
+</div>
+<div id="outline-container-org8a776fb" class="outline-7">
+<h7 id="org8a776fb"><span class="todo PLANNING">PLANNING</span> Format for release as PDF</h7>
+<div class="outline-text-7" id="text-org8a776fb">
+<ul class="org-ul">
+<li>State "PLANNING"   from              <span class="timestamp-wrapper"><span class="timestamp">[2019-05-18 Sat 14:04]</span></span></li>
+</ul>
+</div>
+<div id="outline-container-org2019232" class="outline-8">
+<h8 id="org2019232"><span class="todo PLANNING">PLANNING</span> Revise based on playtest feedback</h8>
+<div class="outline-text-8" id="text-org2019232">
+<ul class="org-ul">
+<li>State "PLANNING"   from              <span class="timestamp-wrapper"><span class="timestamp">[2019-05-18 Sat 14:04]</span></span></li>
+</ul>
+</div>
+<div id="outline-container-org498548c" class="outline-9">
+<h9 id="org498548c"><span class="todo PLANNING">PLANNING</span> Release for public playtesting</h9>
+<div class="outline-text-9" id="text-org498548c">
+<ul class="org-ul">
+<li>State "PLANNING"   from              <span class="timestamp-wrapper"><span class="timestamp">[2019-05-18 Sat 14:04]</span></span></li>
+</ul>
+</div>
+<div id="outline-container-org62f4600" class="outline-10">
+<h10 id="org62f4600"><span class="todo PLANNING">PLANNING</span> Run private playtests <code>[1/1]</code></h10>
+<div class="outline-text-10" id="text-org62f4600">
+<ul class="org-ul">
+<li>State "PLANNING"   from              <span class="timestamp-wrapper"><span class="timestamp">[2019-05-18 Sat 14:03]</span></span></li>
+</ul>
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> First playtest</li>
+<li class="off"><code>[&#xa0;]</code> Second playtest</li>
+</ul>
+</div>
+<div id="outline-container-org0d52d1a" class="outline-11">
+<h11 id="org0d52d1a"><span class="done STOPPED">STOPPED</span> Incorporate <i>Brave Old World</i> lingo.</h11>
+<div class="outline-text-11" id="text-org0d52d1a">
+<p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-05-18 Sat 14:10]</span></span></p>
+<ul class="org-ul">
+<li>State "STOPPED"    from "PLANNING"   <span class="timestamp-wrapper"><span class="timestamp">[2019-05-18 Sat 14:10] </span></span> <br />
+Dependent on <a href="#develop-brave-old-world">"Develop <i>Brave Old World</i></a></li>
+<li>State "PLANNING"   from              <span class="timestamp-wrapper"><span class="timestamp">[2019-05-18 Sat 14:10]</span></span></li>
+</ul>
+</div>
+<div id="outline-container-org8ff53a0" class="outline-12">
+<h12 id="org8ff53a0"><span class="todo READY">READY</span> Draft the adventure</h12>
+<div class="outline-text-12" id="text-org8ff53a0">
+<p>
+<span class="timestamp-wrapper">
+<span class="timestamp-kwd">CLOCK:</span> <span class="timestamp">[2019-05-18 Sat 14:05]--[2019-05-18 Sat 14:43] </span> <span class="timestamp">(0:38)</span>
+</span>
+</p>
+<ul class="org-ul">
+<li>State "READY"      from "PLANNING"   <span class="timestamp-wrapper"><span class="timestamp">[2019-05-18 Sat 14:01]</span></span></li>
+<li>State "PLANNING"   from              <span class="timestamp-wrapper"><span class="timestamp">[2019-05-18 Sat 14:01]</span></span></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orga284c28" class="outline-4">
+<h4 id="develop-brave-old-world"><span class="todo PLANNING">PLANNING</span> Develop <a href="file:///home/emsenn/org/src/brave-old-world/index.html"><i>Brave Old World</i></a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="PROJECT">PROJECT</span></span></h4>
+<div class="outline-text-4" id="text-develop-brave-old-world">
+<pre class="example">
+CUSTOM_ID: develop-brave-old-world
+</pre>
+<ul class="org-ul">
+<li>State "PLANNING"   from              <span class="timestamp-wrapper"><span class="timestamp">[2019-05-18 Sat 13:56]</span></span></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org13101f2" class="outline-4">
+<h4 id="org13101f2"><span class="todo PLANNING">PLANNING</span> Develop and maintain <a href="file:///home/emsenn/org/src/qtmud.html">qtMUD</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="DEVELOPMENT">DEVELOPMENT</span>&#xa0;<span class="PROJECT">PROJECT</span></span></h4>
+<div class="outline-text-4" id="text-org13101f2">
+<ul class="org-ul">
+<li>State "PLANNING"   from              <span class="timestamp-wrapper"><span class="timestamp">[2019-05-18 Sat 01:03]</span></span></li>
+</ul>
+</div>
+<div id="outline-container-org9471bd2" class="outline-5">
+<h5 id="release-qtmud-0-1-0"><span class="todo PLANNING">PLANNING</span> Release <a href="file:///home/emsenn/org/src/qtmud.html">qtMUD 0.1.0</a> <code>[100%]</code></h5>
+<div class="outline-text-5" id="text-release-qtmud-0-1-0">
+<pre class="example">
+CUSTOM_ID: release-qtmud-0-1-0
+</pre>
+<ul class="org-ul">
+<li>State "PLANNING"   from              <span class="timestamp-wrapper"><span class="timestamp">[2019-05-15 Wed 14:26]</span></span></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org4739e52" class="outline-4">
+<h4 id="org4739e52"><span class="todo PLANNING">PLANNING</span> Develop and maintain <a href="file:///home/emsenn/org/src/personal-website.html">personal website</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="DEVELOPMENT">DEVELOPMENT</span>&#xa0;<span class="PROJECT">PROJECT</span></span></h4>
+<div class="outline-text-4" id="text-org4739e52">
+<ul class="org-ul">
+<li>State "PLANNING"   from              <span class="timestamp-wrapper"><span class="timestamp">[2019-05-18 Sat 01:03]</span></span></li>
+</ul>
+</div>
+<div id="outline-container-org0002095" class="outline-5">
+<h5 id="org0002095"><span class="todo PLANNING">PLANNING</span> Create "Help Me" page for my personal website.&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ACTION">ACTION</span></span></h5>
+<div class="outline-text-5" id="text-org0002095">
+<ul class="org-ul">
+<li>State "PLANNING"   from              <span class="timestamp-wrapper"><span class="timestamp">[2019-05-15 Wed 16:35]</span></span></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org8b67dd6" class="outline-4">
+<h4 id="org8b67dd6"><span class="todo READY">READY</span> Make good use of the mulberry tree <code>[33%]</code>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="LABOR">LABOR</span></span></h4>
+<div class="outline-text-4" id="text-org8b67dd6">
+</div>
+<div id="outline-container-orgeaa78d1" class="outline-5">
+<h5 id="orgeaa78d1"><span class="done COMPLETE">COMPLETE</span> Pick mulberries (first)</h5>
+<div class="outline-text-5" id="text-orgeaa78d1">
+<p><span class="timestamp-wrapper"><span class="timestamp-kwd">SCHEDULED:</span> <span class="timestamp">&lt;2020-05-09 Sat +1y&gt;</span></span></p>
+</div>
+</div>
+<div id="outline-container-org22bfbe1" class="outline-5">
+<h5 id="org22bfbe1"><span class="done COMPLETE">COMPLETE</span> Pick mulberries (second)</h5>
+<div class="outline-text-5" id="text-org22bfbe1">
+<p><span class="timestamp-wrapper"><span class="timestamp-kwd">SCHEDULED:</span> <span class="timestamp">&lt;2020-05-12 Tue +1y&gt;</span></span></p>
+</div>
+</div>
+<div id="outline-container-orgae260bd" class="outline-5">
+<h5 id="orgae260bd"><span class="done COMPLETE">COMPLETE</span> Pick mulberries (third)</h5>
+<div class="outline-text-5" id="text-orgae260bd">
+<p><span class="timestamp-wrapper"><span class="timestamp-kwd">SCHEDULED:</span> <span class="timestamp">&lt;2020-05-15 Fri +1y&gt;</span></span></p>
+</div>
+</div>
+<div id="outline-container-orgcd6e26b" class="outline-5">
+<h5 id="orgcd6e26b"><span class="done COMPLETE">COMPLETE</span> Juice mulberries (first)</h5>
+<div class="outline-text-5" id="text-orgcd6e26b">
+<p><span class="timestamp-wrapper"><span class="timestamp-kwd">SCHEDULED:</span> <span class="timestamp">&lt;2020-05-15 Fri +1y&gt;</span></span></p>
+</div>
+</div>
+<div id="outline-container-orge37845d" class="outline-5">
+<h5 id="orge37845d"><span class="todo READY">READY</span> Pick mulberries (fourth)</h5>
+<div class="outline-text-5" id="text-orge37845d">
+<p><span class="timestamp-wrapper"><span class="timestamp-kwd">SCHEDULED:</span> <span class="timestamp">&lt;2019-05-18 Sat +1y&gt;</span></span></p>
+</div>
+</div>
+<div id="outline-container-orge0e0efc" class="outline-5">
+<h5 id="orge0e0efc"><span class="todo READY">READY</span> Pick mulberries (fifth)</h5>
+<div class="outline-text-5" id="text-orge0e0efc">
+<p><span class="timestamp-wrapper"><span class="timestamp-kwd">SCHEDULED:</span> <span class="timestamp">&lt;2019-05-21 Tue +1y&gt;</span></span></p>
+</div>
+</div>
+<div id="outline-container-org5aba3a7" class="outline-5">
+<h5 id="org5aba3a7"><span class="todo READY">READY</span> Juice mulberries (second)</h5>
+<div class="outline-text-5" id="text-org5aba3a7">
+<p><span class="timestamp-wrapper"><span class="timestamp-kwd">SCHEDULED:</span> <span class="timestamp">&lt;2019-05-21 Tue +1y&gt;</span></span></p>
+</div>
+</div>
+<div id="outline-container-org094cb1e" class="outline-5">
+<h5 id="org094cb1e"><span class="todo READY">READY</span> Pick mulberries (sixth)</h5>
+<div class="outline-text-5" id="text-org094cb1e">
+<p><span class="timestamp-wrapper"><span class="timestamp-kwd">SCHEDULED:</span> <span class="timestamp">&lt;2019-05-24 Fri +1y&gt;</span></span></p>
+</div>
+</div>
+<div id="outline-container-org3b8aaa0" class="outline-5">
+<h5 id="org3b8aaa0"><span class="todo READY">READY</span> Pick mulberries (seventh)</h5>
+<div class="outline-text-5" id="text-org3b8aaa0">
+<p><span class="timestamp-wrapper"><span class="timestamp-kwd">SCHEDULED:</span> <span class="timestamp">&lt;2019-05-27 Mon +1y&gt;</span></span></p>
+</div>
+</div>
+<div id="outline-container-orgb3f5b4c" class="outline-5">
+<h5 id="orgb3f5b4c"><span class="todo READY">READY</span> Pick mulberries (eighth)</h5>
+<div class="outline-text-5" id="text-orgb3f5b4c">
+<p><span class="timestamp-wrapper"><span class="timestamp-kwd">SCHEDULED:</span> <span class="timestamp">&lt;2019-05-30 Thu +1y&gt;</span></span></p>
+</div>
+</div>
+<div id="outline-container-org07afded" class="outline-5">
+<h5 id="org07afded"><span class="todo READY">READY</span> Juice mulberries (third)</h5>
+<div class="outline-text-5" id="text-org07afded">
+<p><span class="timestamp-wrapper"><span class="timestamp-kwd">SCHEDULED:</span> <span class="timestamp">&lt;2019-05-30 Thu +1y&gt;</span></span></p>
+</div>
+</div>
+<div id="outline-container-org66578c5" class="outline-5">
+<h5 id="org66578c5"><span class="todo READY">READY</span> Condense mulberry juice</h5>
+<div class="outline-text-5" id="text-org66578c5">
+<p><span class="timestamp-wrapper"><span class="timestamp-kwd">SCHEDULED:</span> <span class="timestamp">&lt;2019-05-30 Thu +1y&gt;</span></span></p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf9ba426" class="outline-4">
+<h4 id="orgf9ba426"><span class="todo READY">READY</span> Clean the food dehydrator&#xa0;&#xa0;&#xa0;<span class="tag"><span class="LABOR">LABOR</span></span></h4>
+<div class="outline-text-4" id="text-orgf9ba426">
+<ul class="org-ul">
+<li>State "READY"      from              <span class="timestamp-wrapper"><span class="timestamp">[2019-05-14 Tue 23:42]</span></span></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc0994e0" class="outline-4">
+<h4 id="orgc0994e0"><span class="todo READY">READY</span> Conduct kitchen inventory&#xa0;&#xa0;&#xa0;<span class="tag"><span class="RECORDKEEPING">RECORDKEEPING</span></span></h4>
+</div>
+<div id="outline-container-orgdd64508" class="outline-4">
+<h4 id="orgdd64508"><span class="todo READY">READY</span> Import <a href="file:///home/emsenn/org/triage/log.html">log.org</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="RECORDKEEPING">RECORDKEEPING</span></span></h4>
+</div>
+<div id="outline-container-orgae9b8c0" class="outline-4">
+<h4 id="orgae9b8c0"><span class="todo READY">READY</span> Write <a href="file:///home/emsenn/org/src/recordkeeping-manual.html"><i>Recordkeeping Manual</i></a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="WRITING">WRITING</span></span></h4>
+<div class="outline-text-4" id="text-orgae9b8c0">
+<p>
+<span class="timestamp-wrapper">
+<span class="timestamp-kwd">CLOCK:</span> <span class="timestamp">[2019-05-18 Sat 13:05]--[2019-05-18 Sat 13:52] </span> <span class="timestamp">(0:47)</span>
+</span>
+</p>
+<p>
+<span class="timestamp-wrapper">
+<span class="timestamp-kwd">CLOCK:</span> <span class="timestamp">[2019-05-18 Sat 12:34]--[2019-05-18 Sat 13:05] </span> <span class="timestamp">(0:31)</span>
+</span>
+</p>
+<p>
+<span class="timestamp-wrapper">
+<span class="timestamp-kwd">CLOCK:</span> <span class="timestamp">[2019-05-15 Wed 11:33]--[2019-05-15 Wed 12:20] </span> <span class="timestamp">(0:47)</span>
+</span>
+</p>
+<ul class="org-ul">
+<li>State "READY"      from "PLANNING"   <span class="timestamp-wrapper"><span class="timestamp">[2019-05-15 Wed 11:32]</span></span></li>
+<li>State "PLANNING"   from              <span class="timestamp-wrapper"><span class="timestamp">[2019-05-15 Wed 11:32]</span></span></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc20a196" class="outline-4">
+<h4 id="orgc20a196"><span class="todo READY">READY</span> Do laundry&#xa0;&#xa0;&#xa0;<span class="tag"><span class="LABOR">LABOR</span></span></h4>
+<div class="outline-text-4" id="text-orgc20a196">
+<p><span class="timestamp-wrapper"><span class="timestamp-kwd">SCHEDULED:</span> <span class="timestamp">&lt;2019-05-17 Fri&gt;</span></span></p>
+<ul class="org-ul">
+<li>State "READY"      from "PLANNING"   <span class="timestamp-wrapper"><span class="timestamp">[2019-05-17 Fri 11:42]</span></span></li>
+<li>State "PLANNING"   from              <span class="timestamp-wrapper"><span class="timestamp">[2019-05-17 Fri 11:42]</span></span></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf44e4cc" class="outline-4">
+<h4 id="orgf44e4cc">Archive&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ARCHIVE">ARCHIVE</span></span></h4>
+<div class="outline-text-4" id="text-orgf44e4cc">
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#import-allan-spreen-is-conducting-fraud"><span class="done COMPLETE">COMPLETE</span> Imported "Allan Spreen is Conducting Fraud"</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5538d9a" class="outline-5">
+<h5 id="import-allan-spreen-is-conducting-fraud"><span class="done COMPLETE">COMPLETE</span> Imported <a href="file:///home/emsenn/org/src/dr-allen-spreen-is-conducting-fraud.html">"Allan Spreen is Conducting Fraud"</a></h5>
+<div class="outline-text-5" id="text-import-allan-spreen-is-conducting-fraud">
+<p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2018-10-26 Fri 16:31]</span></span></p>
+<pre class="example">
+CUSTOM_ID: import-allan-spreen-is-conducting-fraud
+ARCHIVE_TIME: 2018-10-26 Wed 16:31
+</pre>
+<ul class="org-ul">
+<li>State "COMPLETE"   from "READY"      <span class="timestamp-wrapper"><span class="timestamp">[2018-10-26 Fri 16:31]</span></span></li>
+<li>State "READY"      from "PLANNING"   <span class="timestamp-wrapper"><span class="timestamp">[2018-10-26 Fri 15:44]</span></span></li>
+<li>State "PLANNING"   from              <span class="timestamp-wrapper"><span class="timestamp">[2018-10-26 Fri 15:44]</span></span></li>
+</ul>
+<p>
+<span class="timestamp-wrapper">
+<span class="timestamp-kwd">CLOCK:</span> <span class="timestamp">[2018-10-26 Fri 16:29]--[2018-10-26 Fri 16:31] </span> <span class="timestamp">(0:02)</span>
+</span>
+</p>
+<p>
+<span class="timestamp-wrapper">
+<span class="timestamp-kwd">CLOCK:</span> <span class="timestamp">[2018-10-26 Fri 15:44]--[2018-10-26 Fri 15:54] </span> <span class="timestamp">(0:10)</span>
+</span>
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org19fbfeb" class="outline-4">
+<h4 id="org19fbfeb"><span class="done STOPPED">STOPPED</span> Import <a href="file:///home/emsenn/org/triage/fyreside/">Fyreside</a> project.&#xa0;&#xa0;&#xa0;<span class="tag"><span class="DEVELOPMENT">DEVELOPMENT</span></span></h4>
+<div class="outline-text-4" id="text-org19fbfeb">
+<p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-05-15 Wed 14:25]</span></span></p>
+<ul class="org-ul">
+<li>State "STOPPED"    from "PLANNING"   <span class="timestamp-wrapper"><span class="timestamp">[2019-05-15 Wed 14:25] </span></span> <br />
+Waiting on <a href="#release-qtmud-0-1-0">"Release qtMUD 0.1.0"</a></li>
+<li>State "PLANNING"   from              <span class="timestamp-wrapper"><span class="timestamp">[2019-05-15 Wed 14:25]</span></span></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org7930894" class="outline-4">
+<h4 id="org7930894"><span class="done COMPLETE">COMPLETE</span> Wrote <a href="src/essays/how-my-projects-relate.html">"How My Projects Relate"</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="WRITING">WRITING</span>&#xa0;<span class="ACTION">ACTION</span></span></h4>
+<div class="outline-text-4" id="text-org7930894">
+<p><span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED:</span> <span class="timestamp">[2019-05-17 Fri 19:54]</span></span></p>
+<ul class="org-ul">
+<li>State "COMPLETE"   from "READY"      <span class="timestamp-wrapper"><span class="timestamp">[2019-05-17 Fri 19:54]</span></span></li>
+</ul>
+<p>
+<span class="timestamp-wrapper">
+<span class="timestamp-kwd">CLOCK:</span> <span class="timestamp">[2019-05-17 Fri 17:08]--[2019-05-17 Fri 18:48] </span> <span class="timestamp">(1:40)</span>
+</span>
+</p>
+<ul class="org-ul">
+<li>State "READY"      from "PLANNING"   <span class="timestamp-wrapper"><span class="timestamp">[2019-05-17 Fri 16:48]</span></span></li>
+<li>State "PLANNING"   from              <span class="timestamp-wrapper"><span class="timestamp">[2019-05-17 Fri 16:48]</span></span></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orge5d8010" class="outline-3">
+<h3 id="orge5d8010">Routines</h3>
+<div class="outline-text-3" id="text-orge5d8010">
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgcf3712a">Housekeeping</a></li>
+<li><a href="#org2c50214">Recordkeeping</a></li>
+<li><a href="#org23b0b8b">Food Preparation</a></li>
+<li><a href="#org3d3bfc3">Writing</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgcf3712a" class="outline-4">
+<h4 id="orgcf3712a">Housekeeping</h4>
+<div class="outline-text-4" id="text-orgcf3712a">
+<p>
+<span class="timestamp-wrapper">
+<span class="timestamp-kwd">CLOCK:</span> <span class="timestamp">[2019-05-17 Fri 22:01]--[2019-05-17 Fri 22:52] </span> <span class="timestamp">(0:51)</span>
+</span>
+</p>
+<p>
+<span class="timestamp-wrapper">
+<span class="timestamp-kwd">CLOCK:</span> <span class="timestamp">[2019-05-16 Thu 20:48]--[2019-05-16 Thu 22:00] </span> <span class="timestamp">(1:12)</span>
+</span>
+</p>
+<p>
+<span class="timestamp-wrapper">
+<span class="timestamp-kwd">CLOCK:</span> <span class="timestamp">[2019-05-16 Thu 11:44]--[2019-05-16 Thu 12:28] </span> <span class="timestamp">(0:44)</span>
+</span>
+</p>
+<p>
+<span class="timestamp-wrapper">
+<span class="timestamp-kwd">CLOCK:</span> <span class="timestamp">[2019-05-15 Wed 20:44]--[2019-05-15 Wed 21:22] </span> <span class="timestamp">(0:38)</span>
+</span>
+</p>
+<p>
+<span class="timestamp-wrapper">
+<span class="timestamp-kwd">CLOCK:</span> <span class="timestamp">[2019-05-15 Wed 14:47]--[2019-05-15 Wed 16:21] </span> <span class="timestamp">(1:34)</span>
+</span>
+</p>
+</div>
+</div>
+<div id="outline-container-org2c50214" class="outline-4">
+<h4 id="org2c50214">Recordkeeping</h4>
+<div class="outline-text-4" id="text-org2c50214">
+<p>
+<span class="timestamp-wrapper">
+<span class="timestamp-kwd">CLOCK:</span> <span class="timestamp">[2019-05-18 Sat 13:54]--[2019-05-18 Sat 14:00] </span> <span class="timestamp">(0:06)</span>
+</span>
+</p>
+<p>
+<span class="timestamp-wrapper">
+<span class="timestamp-kwd">CLOCK:</span> <span class="timestamp">[2019-05-18 Sat 00:04]--[2019-05-18 Sat 00:50] </span> <span class="timestamp">(0:46)</span>
+</span>
+</p>
+<p>
+<span class="timestamp-wrapper">
+<span class="timestamp-kwd">CLOCK:</span> <span class="timestamp">[2019-05-17 Fri 23:45]--[2019-05-17 Fri 23:54] </span> <span class="timestamp">(0:09)</span>
+</span>
+</p>
+<p>
+<span class="timestamp-wrapper">
+<span class="timestamp-kwd">CLOCK:</span> <span class="timestamp">[2019-05-17 Fri 20:22]--[2019-05-17 Fri 20:29] </span> <span class="timestamp">(0:07)</span>
+</span>
+</p>
+<p>
+<span class="timestamp-wrapper">
+<span class="timestamp-kwd">CLOCK:</span> <span class="timestamp">[2019-05-17 Fri 20:04]--[2019-05-17 Fri 20:22] </span> <span class="timestamp">(0:18)</span>
+</span>
+</p>
+<p>
+<span class="timestamp-wrapper">
+<span class="timestamp-kwd">CLOCK:</span> <span class="timestamp">[2019-05-15 Wed 14:24]--[2019-05-15 Wed 14:47] </span> <span class="timestamp">(0:23)</span>
+</span>
+</p>
+</div>
+</div>
+<div id="outline-container-org23b0b8b" class="outline-4">
+<h4 id="org23b0b8b">Food Preparation</h4>
+<div class="outline-text-4" id="text-org23b0b8b">
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org9330f2a">General cooking</a></li>
+<li><a href="#org0b4c3ac">Prepare ginger beer</a></li>
+<li><a href="#org2885e06">Prepare breakfast cheese</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9330f2a" class="outline-5">
+<h5 id="org9330f2a">General cooking</h5>
+<div class="outline-text-5" id="text-org9330f2a">
+<p>
+<span class="timestamp-wrapper">
+<span class="timestamp-kwd">CLOCK:</span> <span class="timestamp">[2019-05-16 Thu 12:28]--[2019-05-16 Thu 12:42] </span> <span class="timestamp">(0:14)</span>
+</span>
+</p>
+<p>
+<span class="timestamp-wrapper">
+<span class="timestamp-kwd">CLOCK:</span> <span class="timestamp">[2019-05-15 Wed 16:35]--[2019-05-15 Wed 18:21] </span> <span class="timestamp">(1:46)</span>
+</span>
+</p>
+</div>
+</div>
+<div id="outline-container-org0b4c3ac" class="outline-5">
+<h5 id="org0b4c3ac">Prepare ginger beer</h5>
+<div class="outline-text-5" id="text-org0b4c3ac">
+<p><span class="timestamp-wrapper"><span class="timestamp-kwd">SCHEDULED:</span> <span class="timestamp">&lt;2019-05-20 Mon ++3d&gt;</span></span></p>
+<ul class="org-ul">
+<li>State "READY"      from "COMPLETE"   <span class="timestamp-wrapper"><span class="timestamp">[2019-05-17 Fri 20:07]</span></span></li>
+</ul>
+<p>
+<span class="timestamp-wrapper">
+<span class="timestamp-kwd">CLOCK:</span> <span class="timestamp">[2019-05-16 Thu 13:24]--[2019-05-16 Thu 13:40] </span> <span class="timestamp">(0:16)</span>
+</span>
+</p>
+<ul class="org-ul">
+<li>State "COMPLETE"   from "READY"      <span class="timestamp-wrapper"><span class="timestamp">[2019-05-16 Thu 13:40]</span></span></li>
+<li>State "READY"      from "PLANNING"   <span class="timestamp-wrapper"><span class="timestamp">[2019-05-16 Thu 13:24]</span></span></li>
+<li>State "PLANNING"   from              <span class="timestamp-wrapper"><span class="timestamp">[2019-05-16 Thu 13:23]</span></span></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org2885e06" class="outline-5">
+<h5 id="org2885e06">Prepare breakfast cheese</h5>
+<div class="outline-text-5" id="text-org2885e06">
+<p><span class="timestamp-wrapper"><span class="timestamp-kwd">SCHEDULED:</span> <span class="timestamp">&lt;2019-05-19 Sun&gt;</span></span></p>
+</div>
+</div>
+</div>
+<div id="outline-container-org3d3bfc3" class="outline-4">
+<h4 id="org3d3bfc3">Writing</h4>
+<div class="outline-text-4" id="text-org3d3bfc3">
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org32e4dd0">Write personal logs</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org32e4dd0" class="outline-5">
+<h5 id="org32e4dd0">Write personal logs</h5>
+<div class="outline-text-5" id="text-org32e4dd0">
+<p>
+<span class="timestamp-wrapper">
+<span class="timestamp-kwd">CLOCK:</span> <span class="timestamp">[2019-05-17 Fri 16:38]--[2019-05-17 Fri 16:57] </span> <span class="timestamp">(0:19)</span>
+</span>
+</p>
+<p>
+<span class="timestamp-wrapper">
+<span class="timestamp-kwd">CLOCK:</span> <span class="timestamp">[2019-05-17 Fri 11:52]--[2019-05-17 Fri 12:06] </span> <span class="timestamp">(0:14)</span>
+</span>
+</p>
+<p>
+<span class="timestamp-wrapper">
+<span class="timestamp-kwd">CLOCK:</span> <span class="timestamp">[2019-05-15 Wed 12:43]--[2019-05-15 Wed 12:51] </span> <span class="timestamp">(0:08)</span>
+</span>
+</p>
+<p>
+<span class="timestamp-wrapper">
+<span class="timestamp-kwd">CLOCK:</span> <span class="timestamp">[2019-05-15 Wed 11:12]--[2019-05-15 Wed 11:33] </span> <span class="timestamp">(0:21)</span>
+</span>
+</p>
+<p>
+<span class="timestamp-wrapper">
+<span class="timestamp-kwd">CLOCK:</span> <span class="timestamp">[2019-05-15 Wed 07:31]--[2019-05-15 Wed 07:44] </span> <span class="timestamp">(0:13)</span>
+</span>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org44d8a71" class="outline-2">
+<h2 id="org44d8a71">Supplements</h2>
+<div class="outline-text-2" id="text-org44d8a71">
+</div>
+<div id="outline-container-orgc8b3e82" class="outline-3">
+<h3 id="orgc8b3e82">Clocktables</h3>
+<div class="outline-text-3" id="text-orgc8b3e82">
+</div>
+<div id="outline-container-org4bda99b" class="outline-4">
+<h4 id="org4bda99b">All-Time Overview</h4>
+<div class="outline-text-4" id="text-org4bda99b">
+<p>
+#+BEGIN: clocktable :maxlevel 4 :narrow 40 :emphasize nil :scope file :formula % :sort (1 . ?a)
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption class="t-above"><span class="table-number">Table 1:</span> Clock summary at <span class="timestamp-wrapper"><span class="timestamp">[2019-05-18 Sat 14:44]</span></span></caption>
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Headline</th>
+<th scope="col" class="org-right">Time</th>
+<th scope="col" class="org-right">&#xa0;</th>
+<th scope="col" class="org-right">&#xa0;</th>
+<th scope="col" class="org-right">&#xa0;</th>
+<th scope="col" class="org-right">%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><b>Total time</b></td>
+<td class="org-right"><b>14:59</b></td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">100.0</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Records</td>
+<td class="org-right">14:59</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">100.0</td>
+</tr>
+
+<tr>
+<td class="org-left">&ensp;&ensp;Plans</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">4:40</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">31.1</td>
+</tr>
+
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;Develop <a href="file:///home/emsenn/org/src/teraum/index.html"><i>Teraum</i></a></td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">0:43</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">4.8</td>
+</tr>
+
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Write contemporary adventures [0/1]</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">0:43</td>
+<td class="org-right">4.8</td>
+</tr>
+
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;Write <a href="file:///home/emsenn/org/src/recordkeeping-manual.html"><i>Recordkeeping Manual</i></a></td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">2:05</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">13.9</td>
+</tr>
+
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;Archive</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">0:12</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">1.3</td>
+</tr>
+
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Imported <a href="file:///home/emsenn/org/src/dr-allen-spreen-is-conducting-fraud.html">"Allan Spreen is Conducting Fraud"</a></td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">0:12</td>
+<td class="org-right">1.3</td>
+</tr>
+
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;Wrote <a href="src/essays/how-my-projects-relate.html">"How My Projects Relate"</a></td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">1:40</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">11.1</td>
+</tr>
+
+<tr>
+<td class="org-left">&ensp;&ensp;Routines</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">10:19</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">68.9</td>
+</tr>
+
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;Housekeeping</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">4:59</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">33.3</td>
+</tr>
+
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;Recordkeeping</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">1:49</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">12.1</td>
+</tr>
+
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;Food Preparation</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">2:16</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">15.1</td>
+</tr>
+
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;General cooking</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">2:00</td>
+<td class="org-right">13.3</td>
+</tr>
+
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Prepare ginger beer</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">0:16</td>
+<td class="org-right">1.8</td>
+</tr>
+
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;Writing</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">1:15</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">8.3</td>
+</tr>
+
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Write personal logs</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">1:15</td>
+<td class="org-right">8.3</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="outline-container-org36b453a" class="outline-3">
+<h3 id="org36b453a">Index</h3>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: emsenn</p>
+<p class="email">Email: <a href="mailto:emsenn@ack">emsenn@ack</a></p>
+<p class="date">Created: 2019-05-18 Sat 14:44</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

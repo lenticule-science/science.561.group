@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/relationlessness/library/relating-locus/relating-locus.schema.json",
+  "title": "Relating locus",
+  "description": "JSON Schema for the object-coordinate R of the originating cell φ* = (X, p*, R). There is exactly one instance: the entity-slug 'relating-locus' itself, the canonical object-coordinate of the originating cell. The schema admits a single const entity-slug value; the slug is the entity's name.",
+  "type": "object",
+  "required": ["name"],
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "const": "relating-locus",
+      "description": "The entity-slug naming the relating-locus. Only one instance is admissible: the canonical object-coordinate of φ*."
+    }
+  }
+}

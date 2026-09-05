@@ -1,0 +1,27 @@
+name: profile_observe
+description: Admissibility check for observation carrier against profile and measurement frame.
+inputs:
+- role: observation_carrier
+  kind: observation_carrier
+- role: profile_topos
+  kind: profile_topos
+- role: measurement_frame
+  kind: measurement_frame
+outputs:
+- role: profile_observe_evidence
+  kind: profile_observe_evidence
+steps:
+- name: profile_observe
+  operator: profile_observe
+  step_index: 0
+  inputs:
+  - role: observation_carrier
+    kind: observation_carrier
+  - role: profile_topos
+    kind: profile_topos
+  - role: measurement_frame
+    kind: measurement_frame
+  outputs:
+  - role: profile_observe_evidence
+    kind: profile_observe_evidence
+id: 126a1035fb89d22ec2175b56d940338823c05455e9812057a1d06a77ba03124b

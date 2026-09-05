@@ -1,0 +1,81 @@
+---
+title: Symbolic Form
+date-created: "2025-04-13T00:00:00"
+type: "[core structure](core structure)"
+voice: "[structured reference record](structured reference record)"
+status: active
+delta:
+  - [lambda calculus](lambda calculus)
+  - [manual modulation effort](manual modulation effort)
+  - [structured deviation processing](structured deviation processing)
+lambda:
+  - [signal-responsive function formalism](signal-responsive function formalism)
+  - [recursive coherence logic](recursive coherence logic)
+adjoint:
+  - [telemetric resonance](telemetric resonance)
+enfolds:
+  - [telemetricism](./telemetricism.md)
+  - [delta register](delta register)
+  - [modulation systems](modulation systems)
+  - [recursive sensemaking](recursive sensemaking)
+  - [signal ontology](signal ontology)
+---
+
+## Symbolic Form
+
+Δ ⊣ λ ⇙ μ ↺ Δ
+
+Delta defines the lambda; the lambda produces modulation; the modulation re-enters the system as new delta.
+
+---
+
+## Definition
+
+A **telemetric lambda** is a structured modulation function defined by the deviations (deltas) it can accept. It does not operate continuously or autonomously—it must be manually or agentically applied. When a telemetric lambda is applied to a delta within an enfolded context, it produces a modulation that may become a new delta through recursive system interaction.
+
+This structure allows signal-based systems to evolve through **intentional, context-aware transformation** rather than reactive or goal-oriented computation. The lambda functions not as a fixed response tool, but as a **modulation pattern** that becomes meaningful only in relation to specific, contextualized deviations.
+
+---
+
+## Behavior
+
+- Telemetric lambdas do not listen—they are invoked.
+- Their definition is determined by historical use and delta adjacency (`Δ ⊣ λ`).
+- When applied, they yield modulation (`λ ⇝ μ`).
+- That modulation may surface again as a deviation (`μ ↺ Δ`), enabling recursive propagation.
+
+---
+
+## Relation to Classical Lambda Calculus
+
+- Like a pure λ-function (`λx. E`), telemetric lambdas require input to produce output.
+- Unlike in formal computation, telemetric lambdas are embedded in **interpretive and infrastructural contexts**.
+- Their “application” is not computation—it is **interpretive modulation**.
+- Their output is not always conclusive—it may initiate a new recursion.
+
+---
+
+## Use in the Delta Register
+
+Telemetric lambdas appear in the `lambda:` field of records. They should not be listed unless actually applied. They are best selected by **resonance-testing**—checking which lambdas have historically modulated deltas within similar enfolding contexts.
+
+Telemetric lambdas are not reactive—they are tools for deliberate modulation in systems that propagate through structured deviation. They may also be instantiated as AI agents if wrapped with input sensitivity.
+
+---
+
+## Differentiation
+
+- Not a passive filter
+- Not a universally valid transformation
+- Not an ontological claim
+- Not a representation of the delta
+- It is a **signal behavior pattern**, executable only within contextual field conditions
+
+---
+
+## Related Concepts
+
+- `[telemetric lambda expression](telemetric lambda expression)`
+- `[resonance-testing enfolded deltas for lambda potentiality](resonance-testing enfolded deltas for lambda potentiality)`
+- `[modulation buffer](modulation buffer)`
+- `[signal ontology](signal ontology)`

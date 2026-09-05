@@ -1,0 +1,106 @@
+2021/01/29 09:30:21 First stonk buy-in
+    Assets:Esther:Fidelity-Rollover-IRA    15 AMC @ $14.74
+    Liabilities:Esther
+
+2021/01/29 10:03:00 AMC on dip
+    Assets:Esther:Fidelity-Rollover-IRA     8 AMC @ $12.8975
+    Liabilities:Esther
+
+2021/01/29 21:46:00 Checking to Cashapp
+    Assets:NCSECU:checking@emsenn    -$25
+    Assets:CashApp:emsenn0
+
+2021/01/29 21:52:00 Buy BTC with CashApp
+    Assets:CashApp:emsenn0      0.00071912 BTC
+    Assets:CashApp:emsenn0   -$25
+
+2021/01/30 18:44 Stonk funds from Jeremy Friesen
+  Assets:PayPal:morgan.sennhauser@gmail.com    $300.00
+  Income:Mutualism:Discretionary
+
+2021/01/30 20:44:00 Loan to Jay
+    Loans:Jay                  $50
+    Assets:Cash
+
+2021/01/31 19:42:00 Add some opening balances
+   Assets:NCSECU:checking@emsenn               $139.52
+   Assets:PayPal:morgan.sennhauser@gmail.com    $50.13
+   Assets:PayPal:emsenn@emsenn.net               $9.26
+   Assets:Cash                                 $790.00
+   Equity:Opening balance
+
+2021/01/31 20:25:00 Clear out Coinbase
+    Assets:NCSECU:checking@emsenn     $81.55
+    Equity:Opening balance
+
+2021/01/29 21:46:00 Donation to CashApp
+    Assets:CashApp:emsenn0     $25
+    Income:CashApp
+
+2021/02/01 07:01:32 Pre-market buy on GME
+   Assets:Esther:Fidelity-Rollover-IRA    3 GME @ $320.00
+   Liabilities:Esther
+
+2021/02/01 09:15:00 Bitcoin buy on CashApp Opening sell off AMC
+   Assets:CashApp:emsenn0     0.00073095 BTC
+   Assets:CashApp:emsenn0  -$25
+
+2021/02/01 09:33:31 Opening sell off AMC
+   Assets:Esther:Fidelity-Rollover-IRA   -23 AMC @$15.92
+   Liaibilities:Esther
+
+2021/02/01 09:34:16 Opening buy on GME
+   Assets:Esther:Fidelity-Rollover-IRA   1 GME @$289.98
+   Liaibilities:Esther
+
+2021/02/01 10:03:07 Dip buy on GME
+   Assets:Esther:Fidelity-Rollover-IRA   1 GME @$276.51
+   Liabilities:Esther
+
+2021/02/01 10:03:07 Dip buy on GME
+   Assets:Esther:Fidelity-Rollover-IRA   1 GME @$239.65
+   Liabilities:Esther
+
+2021/02/01 11:04:00 Pay for Vultr VPS
+   Expenses:Web performance       -$9.22
+   Assets:NCSECU:checking@emsenn
+
+2021/02/01 15:57:27 Pre-closing surge buy on GME
+   Assets:Esther:Fidelity-Rollover-IRA  0.223 GME @$223.30
+   Liabilities:Esther
+
+2021/02/01 15:57:27 Post-closing surge sell off GME
+   Assets:Esther:Fidelity-Rollover-IRA  -0.223 GME @$226.01
+   Liabilities:Esther
+
+2021/02/01 16:53:00 Gift to Quarters-guy
+   Assets:Cash   -$4
+   Expenses:Quarters-guy
+
+2021/02/01 17:38:10 After-market dip buy on GME
+   Assets:Esther:Fidelity-Rollover-IRA    1 GME @$188.99
+   Liabilities:Esther
+
+2021/02/01 17:44:00 Patreon transfer After-market dip buy on GME
+   Assets:PayPal:morgan.sennhauser@gmail.com   $176.36
+   Income:Patreon
+
+2021/02/01 22:07:04 PayPal donation
+   Assets:PayPal:morgan.sennhauser@gmail.com   $30
+   Income:PayPal
+
+2021/02/02 07:30:57 Buy pre-market dip on GME
+   Assets:Esther:Fidelity-Rollover-IRA     1 GME
+   Liabilities:Esther                  -$160.39
+
+2021/02/02 08:04:00 Stripe
+   Assets:NCSECU:emsenn@checking   $10.34
+   Income:Stripe
+
+2021/02/02 09:09:53 Buy pre-market dip on GME
+   Assets:Esther:Fidelity-Rollover-IRA     1 GME
+   Liabilities:Esther                     -$133.00
+
+2021/02/02 18:51:00 Sherose
+   Assets:Cash     $700
+   Income:Sherose

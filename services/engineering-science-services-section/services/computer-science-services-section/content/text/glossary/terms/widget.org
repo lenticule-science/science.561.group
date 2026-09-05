@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       c73dd012-288c-4431-a427-8d248c7338ab
+:END:
+#+title: widget
+#+date: [2025-08-25 Mon 10:44]
+

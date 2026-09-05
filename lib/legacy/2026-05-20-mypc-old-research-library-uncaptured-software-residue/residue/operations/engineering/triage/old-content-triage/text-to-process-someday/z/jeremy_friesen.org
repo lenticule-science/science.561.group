@@ -1,0 +1,13 @@
+#+title: Jeremy Friesen
+#+roam_key: https://takeonrules.com/
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-19 Sat 11:25]
+
+*/Jeremy Friesen/* describes himself on his [[https://takeonrules.com/][Website]] as follows:
+
+#+begin_quote
+My preferred pronouns are he/him, though they/them are also good to use. I am a pudgy middle-aged white cis-gendered male who can’t grow much facial hair.
+#+end_quote
+
+Notably, he has a very sophisticated [[file:website.org][Website]] where he discusses [[file:role-playing-game.org][RPGs]] and his use of [[file:emacs.org][Emacs]], [[file:org_mode.org][Org-mode]], and [[file:org_roam.org][Org-roam]].

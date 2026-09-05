@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       7831086c-51a2-41ac-b871-60fa99026e69
+:END:
+#+title: diagnostic method
+#+date: [2025-09-03 Wed 20:01]
+

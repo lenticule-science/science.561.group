@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       918faa8f-3140-46bd-8d68-34ae4cfe9701
+:NODE-RELATIONS: (([[id:bee496e1-139b-4a7f-8a24-d4c14e6084c6][instantiates]] . [[id:6882cc6d-049d-4c68-866a-67bc57fce725][Homo sapiens]]) ([[id:1199dce9-2037-4c45-866c-f5a54b7580c7][process philosopher]] . [[id:f4907edc-6e92-4e78-bd7b-b7a3705e43d8][theoretical ecology]]) ([[id:1199dce9-2037-4c45-866c-f5a54b7580c7][process philosopher]] . [[id:977a4584-e008-49ea-93d3-4d63f9373a1d][thermodynamics]]) ([[id:839fb73c-158c-42fa-8d66-aad074ab7fe5][birth date]] . [[id:63af6e44-d2fc-4072-92ee-c64c97f983e3][1943-09-17]]) ([[id:5950d59a-8d30-47e6-939c-171327e23b44][creator]] . [[id:91593283-5664-48ac-9fee-017c82ff3bde][process ecology]]) ([[id:f7cc4bac-8a9d-43a2-a76f-4e014ae70405][authored]] . [[id:3cc89ca4-f064-4709-b636-b748a2075f38][A Third Window: Natural Life Beyond Newton and Darwin]]) ([[id:f7cc4bac-8a9d-43a2-a76f-4e014ae70405][authored]] . [[id:4bc3f170-400f-42e1-aef4-6ae6b430a600][Ecology: The Ascendant Perspective]]) ([[id:f7cc4bac-8a9d-43a2-a76f-4e014ae70405][authored]] . [[id:1486e407-a686-4085-ae60-c9afdc870e94][Growth and Development - Ecosystems phenomenology]]) ([[id:64f2a04c-9073-49f6-ab6f-e2356eb4d035][received]] . [[id:d78e2635-8905-4824-9be9-43fbcac84be4][2007 Ilya Prigogine Medal]]))
+:END:
+#+title: Rubert Ulanowicz
+#+date: [2025-10-05 Sun 08:14]
+

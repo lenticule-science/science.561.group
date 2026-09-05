@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       a6c60f5e-4915-4a4c-b73c-b62f8879c287
+:form:     [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]
+:public:   true
+:END:
+#+title: Babble, [2025-09-15 Mon 10:55], Install Cubical Agda in GnoponEmacs
+#+date: [2025-09-15 Mon 10:55]
+#+author: emsenn
+
+Simple enough to install: =sudo apt install agda=
+
+Didn't get it set up in GnoponEmacs though, I'll need to learn more about Agda first.

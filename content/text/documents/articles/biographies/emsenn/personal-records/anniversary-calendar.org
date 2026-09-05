@@ -1,0 +1,261 @@
+#+title: emsenn's anniversary calendar
+#+begin_head
+#+ghe_schema: term-0.1.3
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2021-01-01 Fri 10:03]
+#+roam_tags: term
+#+end_head
+
+#+name: definition
+*/[[file:emsenn_s_anniversary_calendar.org][emsenn's anniversary calendar]]/* is a list of the anniversaries and other events I observe over the course of my year.
+#+toc: headlines 2
+* Introduction
+* emsenn's anniversary calendar
+** January
+*** January 1st
+**** Congress of Racial Equality founed by James Farmer, Chicago, Illinois, U.S.A., 1942
+
+     On this date in 1942, in [[file:chicago_illinois_u_s_a.org][Chicago, Illinois, U.S.A.]], [[file:james_farmer.org][James Farmer]] founded the [[file:congress_of_racial_equality.org][Congress of Racial Equality]]. The group's membership largely came from the [[file:pacifist.org][pacifist]] group [[file:fellowship_of_reconciliation.org][Fellowship of Reconciliation]]. They were inspired by [[file:mahatma_gandhi.org][Mahatma Gandhi]]'s strategy of [[file:non_violence.org][non-violence]] and sought to apply it in abolishing [[file:segregation.org][segregation]]. Notably, the group was 28 men and 22 women, with nearly 2/3rds of its founding membership being white.
+     
+**** Oscar Grant III, shot by police, Oakland, California, U.S.A., 2009
+
+     [[file:oscar_grant_iii.org][Oscar Grant III]] was shot by [[file:police.org][police]] in [[file:oakland_california_u_s_a.org][Oakland, California, U.S.A.]], by officers affiliated with the city's public transport, while unarmed and held in a prone position. His shooting was captured on video by bystanders.
+     
+*** January 2nd
+**** Poplar River Fight, Lakota Country, 1881
+
+    /Waȟčíŋča Wakpá Okíčize/
+*** January 3rd
+**** Christmas Rebellion ends, Jamaica, 1832
+*** January 8th
+**** Wolf Mountain Fight, Lakota Country, 1877
+
+    /Thezí Pahá Okíčize/
+*** January 9th
+**** Southern Tenant Farmers Union sit-down strike begins, Missouri, U.S.A., 1939
+*** January 11th
+**** "Bread and Roses" strike begins, Lawrence, Massachussetts, U.S.A., 1912
+*** January 13th
+**** U.S. Supreme Court rules postal service must carry gay magazine, U.S.A. 1958
+*** January 14th
+**** Public school teachers strike begins, Los Angeles, California, U.S.A., 2019
+*** January 17th
+**** Lucy Parsons leads anti-hunger march, Chicago, Illinois, U.S.A., 1915
+*** January 18th
+**** Lumbee Tribe drive out the Ku Klux Klan, Robeson County, North Carolina, U.S.A., 1958
+*** January 20th
+**** Public school teacher strike succeeds, Los Angeles, California, U.S.A., 2019
+*** January 21st
+**** Women's March, U.S.A. and global, 2017
+*** January 28th
+**** Protests against "Muslim Ban" begin, U.S.A., 2017
+*** January 29th
+**** John C. Calhoun's name removed from Bde Maka Ska, Minneapolis, Minnesota, U.S.A., 2018
+
+** February
+
+*** February 1st
+
+**** Civil rights sit-ins begin, Greensboro, North Carolina, U.S.A., 1960
+
+*** Feburary 3rd
+
+**** Boycott of segregated city schools begins, New York City, New York, U.S.A., 1964
+
+*** February 6th
+
+**** Seattle General Strike, Seattle, Washington, U.S.A., 1919
+
+     First city-wide general strike in the U.S.A.
+*** February 9th
+
+**** Cottonwood Fight, Lakota Country, 1874
+
+     /Míla Háŋska Núnpa Ktépi/
+
+*** February 11th
+
+**** Japanese-Mexican Labor Association founded, Oxnard, California, U.S.A., 1903
+
+*** February 13th
+
+**** Via Rail shuts down service in response to Indigenous blockade, British Columbia, Canada, 2019
+*** February 15th
+
+**** Worldwide protests against U.S.A.'s invasion of Iraq, 2003
+
+*** February 20th
+
+**** Non-curricular clubs banned at East High SChool, Salt Lake City, Utah, U.S.A., 1995
+
+     After Kelli Peterson founded the Gay/Straight Allice, the city school board banned all "non-curricular" student clubs.
+
+*** Feburary 22nd
+
+**** Public school teachers strike begins, West Virginia, U.S.A., 2018
+
+*** February 23rd
+
+**** No Border Wall Drag Protest, Brownsville, Texas, U.S.A., 2019
+
+*** February 27th
+
+**** Occupation of Wounded Knee begins, Pine Ridge Reservation, South Dakota, U.S.A., 1973
+
+** March
+
+*** March 17th
+
+**** Charcoal River Fight, Lakota Country, 1876
+
+
+** April
+
+*** April 28th
+
+**** Grace Creek Fight, Lakota Country, 1876
+
+** May
+
+*** May 7th
+
+**** Me & Esther's Anniversary, 2015
+    
+**** Lame Deer Fight, Lakota Country, 1877
+
+*** May 16th
+
+**** Spring Creek Fight, Lakota Country, 1869
+
+** June
+
+*** June 4th
+
+**** Big Hill Fight, Lakota Country, 1873
+
+*** June 9th
+
+**** Praire Dog Creek Fight, Lakota Country, 1876
+
+*** June 17th
+
+**** Rosebud River Fight, Lakota Country, 1876
+
+*** June 25th
+
+**** Greasy Grass Fight, Lakota Country, 1876
+
+*** June 29th
+
+**** Beaver Creek Fight, Lakota Country, 1867
+
+** July
+
+*** July 17th
+
+**** Warbonnet Creek Fight, Lakota Country, 1879
+
+*** July 19th
+
+**** Ten Soldier Fight, Lakota Country, 1868
+
+*** July 20th
+
+**** Crazy Woman Creek Fight, Lakota Country, 1866
+
+*** July 24th
+
+**** Big Mound Fight, Lakota Country, 1863
+
+**** Clear Creek Fight, Lakota Country, 1866
+
+*** July 26th
+
+**** Bison Hunt Lake Fight, Lakota Country, 1863
+
+*** July 28th
+
+**** Stone Lake Fight, Lakota Country, 1863
+
+**** Where They Kill Deer Fight, Lakota Country, 1864
+
+     Continued until the 29th
+*** July 30th
+**** Apple Creek Fight, Lakota Country, 1863
+     Continued until August 1st
+** August
+*** August 1st
+**** They Tried to Start a Prairie Fire Fight, Lakota Country, 1867
+**** Red Canyon Creek Fight, Lakota Country, 1976
+*** August 2nd
+**** Wagon Fight, Lakota Country, 1867
+*** August 4th
+**** Tongue River Fight, Lakota Country, 1873
+*** August 7th
+**** Pitiful Lands Fight, Lakota Country, 1864
+
+     Continued until the 9th.
+*** August 11th
+**** Spoon Horn River Fight, Lakota Country, 1873
+*** August 16th
+**** Elk Creek Fight, Lakota Country, 1864
+*** August 19th
+**** White Man's Cow Fight, Lakota Country, 1855
+*** August 20th
+**** Creek Fight, Lakota Country, 1841
+** September
+*** September 2nd
+**** Earth Fort Fight, Lakota Country, 1864
+*** September 3rd
+**** Whitestone Hill Massacre, Lakota Country, 1863
+
+     Continued until the 5th
+*** September 9th
+**** Thin Buttes Fight, Lakota Country, 1876
+
+     Continued until the 10th
+*** September 10th
+**** Power River Fight, Lakota Country, 1865
+** October
+*** October 3rd
+**** Heart River Fight, Lakota Country, 1872
+
+     Continued until the 4th.
+*** October 11th
+**** Elk Creek Fights, Lakota Country, 1876
+
+     Continued until the 16th
+*** October 21st
+**** They Shot at Each Other Fight, Lakota Country, 1876
+** November
+*** November 4th
+**** Goose Creek Fight, Lakota Country, 1867
+     Continued until the 5th
+*** November 25th
+**** Canyon Fight, Lakota Country, 1876
+** December
+*** December 1st
+**** Another Fight at Crazy Woman Creek, Lakota Country, 1867
+     Continued until the 2nd.
+*** December 6th
+**** Magpie Creek Fight, Lakota Country, 1866
+*** December 7th
+**** Bark Creek Fight, Lakota Country, 1876
+*** December 15th
+**** Murder of Sitting Bull, Lakota Country, 1890
+*** December 18th
+**** Midwinter Fight, Lakota Country, 1876
+*** December 29th
+**** Wounded Knee Massacre, Lakota Country, 1890
+* Supplements
+** Record history
+   :PROPERTIES:
+   :CUSTOM_ID: record-history
+   :END:
+   :LOGBOOK:
+   - Note taken on [2020-12-21 Fri 10:03] \\
+      Created from scratch.
+
+      
+   :END:

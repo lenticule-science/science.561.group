@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       d7c2cc3b-ffdb-43a4-bbfc-09f61b8cc470
+:public:   true
+:END:
+#+title: Weelaunee Forest
+#+date: [2025-08-14 Thu 17:59]
+

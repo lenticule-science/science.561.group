@@ -1,0 +1,34 @@
+#+title: straight.el
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-19 Sat 11:29]
+#+roam_key: https://github.com/raxod502/straight.el
+
+#+name: straight-el-definition
+*/straight.el/* is an [[file:emacs_package.org][Emacs package]] which describes itself as a "next-generation, purely [[file:functional_programming.org][functional]] [[file:package_manager.org][package-manager]] for the [[file:emacs.org][Emacs]] [[file:hacker.org][hacker]]."
+
+* Introduction
+
+  This record is some of what I (emsenn) know about /straight.el/.
+
+* Straight.el
+
+  #+name: straight-el-bootstrapping-elisp
+#+caption: A sequence of /Elisp/ declarations that /bootstrap/ the /straight.el/ package installer for /Emacs/.
+#+begin_src elisp 
+  (defvar straight-install-script-path
+    "https://raw.githubusercontent.com/raxod502/straight.el/develop/install.el")
+
+  (defvar bootstrap-version)
+  (let ((bootstrap-file
+	 (expand-file-name "straight/repos/straight.el/bootstrap.el" user-emacs-directory))
+	(bootstrap-version 5))
+    (unless (file-exists-p bootstrap-file)
+      (with-current-buffer
+	  (url-retrieve-synchronously straight-install-script-path
+	   'silent 'inhibit-cookies)
+	(goto-char (point-max))
+	(eval-print-last-sexp)))
+    (load bootstrap-file nil 'nomessage))
+
+#+end_src

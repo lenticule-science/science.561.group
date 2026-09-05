@@ -1,0 +1,20 @@
+#+title: clinical nihilism
+#+begin_head
+#+ghe_schema: record-0.1.3
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-24 Thu 12:11]
+#+end_head
+
+#+name: definition
+*/Clinical nihilism/* is a method of distributing allopathic medicine in a way that prioritizes the social environment's interests, not the patient's health.
+
+#toc: headlines 2
+* Intrododuction
+* clinical nihilism
+* Supplements
+** Record history
+   :LOGBOOK:
+   - Note taken on [2020-12-24 Thu 12:11] \\
+     Created
+   :END:

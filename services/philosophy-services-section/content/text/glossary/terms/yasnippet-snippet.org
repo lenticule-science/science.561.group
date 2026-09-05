@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       043e8b51-1e7e-408c-b28d-1f2f0206220d
+:END:
+#+title: YASnippet snippet
+#+date: [2025-09-29 Mon 11:22]
+

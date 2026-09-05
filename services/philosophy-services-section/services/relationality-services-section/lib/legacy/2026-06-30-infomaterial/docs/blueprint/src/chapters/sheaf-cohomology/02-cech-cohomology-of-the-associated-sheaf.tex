@@ -1,0 +1,51 @@
+\section{\v{C}ech cohomology of the associated sheaf}
+
+This section records claim nodes and dependency edges.
+
+\begin{theorem}[The settling-associated sheaf is a presheaf on the site]\label{thm:settling-associated-sheaf}\lean{Infomaterial.AssocSheaf.settling_associated_sheaf}\leanok\uses{thm:bitopological-site-grothendieck, thm:settling-sheaf, thm:sheaf-designated, thm:sheaf-cover, thm:charge-joinList, thm:valuation}
+The associated sheaf \(F_U\) assigns integer cochains over the truth-designated
+cells of each clopen and restricts by masking.  Its presheaf identity,
+composition, designated support, and cover separation are all formalized over
+the bitopological settling site.
+\end{theorem}
+
+\begin{theorem}[The designated short exact sequence splits]\label{thm:designated-short-exact-sequence}\lean{Infomaterial.AssocSheaf.designated_short_exact_sequence}\leanok\uses{thm:settling-associated-sheaf, thm:valuation, thm:four-bilattice}
+The paraconsistent associated sheaf \(F_U^{(k)}\) splits into the truth sheaf
+\(F_U\) and the \(\top\)-increment cokernel \(F_U^{(\top)}\).  The inclusion is
+injective, the projection is surjective, and the kernel/image condition is the
+vanishing-on-\(\top\) condition.
+\end{theorem}
+
+\begin{proposition}[$H^0$ --- count of designated cells]\label{thm:h0-count}\lean{Infomaterial.Cohomology.H0}\leanok\uses{thm:sheaf-designated, thm:valuation}
+$H^0(T^*, F_U)$ realized is a \emph{count}: \texttt{H0 v cells} is the number of $d_T$-designated (settled-true) cells of the valuation $v$ among a clopen's cell support, computed by \texttt{List.countP} of the truth-side mask. This is the extent of the truth-designated cells the settling reaches.
+\end{proposition}
+\begin{theorem}[$H^0$ is the designated-cell count]\label{thm:settling-cohomology-h1-vanishes}\lean{Infomaterial.Cohomology.h0_is_designated_count}\leanok\uses{thm:h0-count, thm:valuation}
+\texttt{H0 v cells} counts exactly the cells where the charge is truth-firing ($d_T\,v\,\varphi = \texttt{isTruthFiring}(v\,\varphi)$), and it is strictly positive iff there is truth-content in the support (\texttt{h0\_is\_designated\_count}). Thus $H^0 = 0$ iff no cell is designated: $H^0$ is precisely the count of the designated cells, the global section the settling reaches.
+\end{theorem}
+\begin{proposition}[\v{C}ech $1$-datum]\label{thm:cech1}\lean{Infomaterial.Cohomology.Cech1}\leanok\uses{thm:sheaf-cover}
+A \emph{\v{C}ech $1$-datum} for $F_U$ carries a cover together with a local $F_U$-cochain \texttt{local\_ p} on each patch $p$ (a \texttt{Cochain} being \texttt{PredicationCell} $\to \mathbb{Z}$). The local section on a patch is read on the cells where that patch holds; off the patch it is irrelevant. This is the data of which $H^1$ measures the gluing obstruction.
+\end{proposition}
+\begin{proposition}[$1$-cocycle --- agreeing family]\label{thm:cocycle}\lean{Infomaterial.Cohomology.Cocycle}\leanok\uses{thm:cech1}
+A datum is a \emph{$1$-cocycle} when its local sections coincide on every overlap: wherever two patches $p$, $p'$ both hold at a cell $\varphi$, their local sections agree there. This is the \v{C}ech $1$-cocycle condition ($\delta^1$ vanishing) for $F_U$ --- the agreeing-family condition.
+\end{proposition}
+\begin{proposition}[Coboundary]\label{thm:coboundary}\lean{Infomaterial.Cohomology.Coboundary}\leanok\uses{thm:cech1}
+A datum is a \emph{coboundary} for a global cochain $g$ when each local section arises by reading $g$ through its patch: on every patch $p$, the local section equals $g$ wherever $p$ holds. This is the restriction $\delta^0 g$ of a single global section to the cover --- a coboundary is a family that comes from one global section.
+\end{proposition}
+\begin{proposition}[The glued global section]\label{thm:glue}\lean{Infomaterial.Cohomology.glue}\leanok\uses{thm:cech1}
+The \emph{glue} of a datum reads off, at each cell $\varphi$, the local value of the first patch of the cover that contains $\varphi$, found constructively by \texttt{List.find?} (which succeeds because the cover guarantees a covering patch). This is the pointwise gluing on the designated cells; being choice-free it stays within $\{\texttt{propext}, \texttt{Quot.sound}\}$.
+\end{proposition}
+\begin{theorem}[Existence --- an agreeing family glues]\label{thm:h1-vanishes}\lean{Infomaterial.Cohomology.glue_coboundary}\leanok\uses{thm:glue, thm:cocycle, thm:coboundary}
+For a $1$-cocycle (agreeing family), \texttt{glue D} restricts back to each local section: on every patch, \texttt{glue D} agrees with the local section wherever the patch holds (\texttt{glue\_coboundary}). The proof reads the \texttt{find?}-chosen covering patch $q$ of $\varphi$; since $q$ and $p$ both hold at $\varphi$, the cocycle condition forces their local values to coincide. So the family is a coboundary of \texttt{glue D} --- existence of the global section.
+\end{theorem}
+\begin{theorem}[Uniqueness --- by separation]\label{thm:classifying-invariant-zero}\lean{Infomaterial.Cohomology.glue_unique}\leanok\uses{thm:coboundary, thm:sheaf-separated}
+Two global sections that both restrict to the same agreeing family are equal (\texttt{glue\_unique}). This reuses \v{C}ech-level separation, which is \cref{thm:sheaf-separated} (a section is determined by its restrictions to a cover); vanishing cohomology is not re-derived but reused. Existence and uniqueness together package as \texttt{H1Vanishes}, and the gluing theorem \texttt{h1\_vanishes} establishes $H^1(\text{cover}, F_U) = 0$ for \emph{any} cover and \emph{any} agreeing family.
+\end{theorem}
+\begin{theorem}[$H^1$ vanishes; cohomology trivial above degree one]\label{thm:h1-zero-iff-confluent}\lean{Infomaterial.Cohomology.settling_cohomology_h1_vanishes}\leanok\uses{thm:h1-vanishes, thm:classifying-invariant-zero, thm:regime-cohomology-vanishes-iff}
+In the strict ($\kappa < \omega$) and Scott-continuous ($\kappa = \omega$) regimes, settling cohomology $H^1$ vanishes. The headline \texttt{settling\_cohomology\_h1\_vanishes} bundles three facts: the regime gate ($\texttt{cohomologyVanishes}\,r = \texttt{true}$ iff $r$ is \texttt{strict} or \texttt{scott} --- exactly the regimes where the cascade settles); the gluing/uniqueness of every \v{C}ech datum (\texttt{h1\_vanishes}); and vanishing above degree one (\texttt{hn\_vanishes\_above\_one}: $H^n$ is the zero group for $n \geq 2$, all content sitting in $H^0$ and $H^1$). $H^1$ can be nonzero only in the non-Scott, aperiodic regimes.
+\end{theorem}
+\begin{theorem}[The classifying invariant is zero in the settling regime]\label{thm:classifying-invariant-zero-strict}\lean{Infomaterial.Cohomology.classifying_invariant_zero_strict}\leanok\uses{thm:h1-zero-iff-confluent, thm:coboundary, thm:valuation}
+The classifying invariant $\mathrm{cl\text{-}inv}(v) := [1_{F_U}] \in H^1$ is the cohomology class of the identity cochain (\texttt{identityCochain}: coefficient $1$ on each designated cell, $0$ elsewhere). Its canonical representative datum (\texttt{clInvDatum}: every patch carries the same $1_{F_U}$) is trivially a $1$-cocycle (\texttt{clInvDatum\_cocycle}) and is a coboundary of $1_{F_U}$ itself (\texttt{clInv\_coboundary}). Hence in any strict/Scott regime $\mathrm{cl\text{-}inv} = 0$, with the witness unique (\texttt{classifying\_invariant\_zero\_strict}). It is forced to zero precisely because $H^1 = 0$; it can be nonzero only in the aperiodic regime.
+\end{theorem}
+\begin{remark}[Truth--knowledge long exact sequence]\label{rem:bigraded-les-ses}\lean{Infomaterial.Cohomology.bigraded_les_from_ses}\leanok\uses{thm:designated-short-exact-sequence, thm:valuation}
+The bilattice's two orders refine the graded invariant to a bigraded settling cohomology $H^{m,n}_{k,t}$. The wave-3 short exact sequence $0 \to F_U \to F_U^{(k)} \to F_U^{(\top)} \to 0$ induces the truth--knowledge comparison long exact sequence. Because $d_T$ and $d_\top$ are disjoint with $d_K = d_T \sqcup d_\top$, the sequence splits ($F_U^{(k)} \cong F_U \oplus F_U^{(\top)}$), every connecting map is zero, and the LES degenerates into the direct-sum decomposition $H^n(F_U^{(k)}) \cong H^n(F_U) \oplus H^n(F_U^{(\top)})$ --- the two bigrading axes. The structural witness \texttt{bigraded\_les\_from\_ses} re-exports exactness ($\iota$ injective, $\pi$ surjective, $\operatorname{im}\iota = \ker\pi$) and the splitting.
+\end{remark}

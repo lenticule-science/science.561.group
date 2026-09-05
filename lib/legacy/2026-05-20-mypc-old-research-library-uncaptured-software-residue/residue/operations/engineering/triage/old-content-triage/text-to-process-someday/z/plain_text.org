@@ -1,0 +1,10 @@
+#+title: plain text
+#+begin_head
+#+ghe_schema: record-0.1.1
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-21 Mon 21:23]
+#+roam_tags: term
+#+end_head
+
+*/Plain text/* is [[file:data.org][data]] on a computer that is text (words or computer code), encoded in some common format like [[file:utf_8.org][UTF-8]].

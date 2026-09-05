@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       0d50b865-57b3-4d6d-aadf-1925457396a4
+:NODE-RELATIONS: (([[id:5950d59a-8d30-47e6-939c-171327e23b44][creator]] . [[id:40cbaad9-af3c-4573-b356-ae116687e483][emsenn]]) ([[id:d888a007-edb6-4a23-bb07-59c34ecdd4c7][context]] . [[id:4501a3b7-861e-4f0f-b820-58f4e5e38690][researching]]))
+:END:
+#+title: my research
+#+date: [2025-09-07 Sun 23:51]
+

@@ -1,0 +1,62 @@
+\section{The Tiles display layer's quantitative half: diffraction}
+
+\Cref{thm:weave-infotiles-entropy} requires a quantitative fiber over the
+charge-coloured carrier.  This subgraph names that fiber: autocorrelation and its
+Fourier transform, the diffraction spectrum.
+
+\begin{theorem}[Finite autocorrelation is measured over displacements]\label{thm:finite-diffraction-mass}\lean{Infomaterial.Persistence.Aperiodic.finiteDiffractionMass}\leanok\uses{thm:finite-probability-measure-carrier, thm:measure-is-valuation}
+For a Boolean pattern on the finite cyclic carrier \(\operatorname{Fin}(n+1)\),
+the pair-correlation function can be pushed through the existing counting
+measure on the finite displacement sample space.  The result is a finite
+intensity-event mass: not a Fourier transform, but a measured boundary residue
+whose empty, total, and monotonicity laws are inherited from the finite
+probability-measure carrier.
+\end{theorem}
+
+\begin{theorem}[Homometry preserves finite diffraction mass]\label{thm:homometric-finite-diffraction-mass}\lean{Infomaterial.Persistence.Aperiodic.homometric_finiteDiffractionMass_eq}\leanok\uses{thm:finite-diffraction-mass}
+Homometric finite patterns have the same finite diffraction mass for every
+intensity event.  This proves the boundary-observational direction available in
+the finite core: equal pair-correlation gives equal measured residue.  The
+converse and the analytic inversion problem are not claimed here.
+\end{theorem}
+
+\begin{theorem}[Finite diffraction mass splits into three component counts]\label{thm:finite-diffraction-decomposition-mass}\lean{Infomaterial.Persistence.Aperiodic.finiteDiffractionDecomposition_mass}\leanok\uses{thm:finite-diffraction-mass}
+Every finite classifier into pure-point, singular-continuous, and
+absolutely-continuous component faces induces three disjoint events covering the
+sample space.  The existing finite measure laws then give
+\(\mu(\Omega)=\mu_{\mathrm{pp}}+\mu_{\mathrm{sc}}+\mu_{\mathrm{ac}}\) as a
+counting identity.
+\end{theorem}
+
+\begin{theorem}[The finite diffraction classifier agrees with charge, regime, and \(H^1\)]\label{thm:finite-diffraction-classifier-agreement}\lean{Infomaterial.Persistence.Aperiodic.finite_diffraction_classifier_agreement}\leanok\uses{thm:finite-diffraction-decomposition-mass, thm:salem-pisot-regime-split, thm:clinv-dichotomy}
+The finite component labels read the same proved split through the existing
+faces: charge-regime trichotomy, closure regime, the Pisot/Salem StepN split,
+and the exhibited nonzero aperiodic \(H^1\) witness.  This is the measured
+finite classifier; it does not assert the Fourier-side readout theorem.
+\end{theorem}
+
+\begin{theorem}[The charge autocorrelation of a draft]\label{thm:draft-autocorrelation-measure}\notready\uses{thm:thickened-torus-z2-carrier, thm:charge-coloured-sofic}
+\emph{(Open frontier --- stated, not formalized.)} A charge-coloured draft
+(\cref{thm:charge-coloured-sofic}) carries an autocorrelation: the shift-averaged
+coincidence measure $\gamma(t)=\lim_{R}\frac{1}{|B_R|}\sum_{v}\langle c(v),c(v+t)\rangle$ of
+its charge field over the $\mathbb{Z}^2$ carrier (\cref{thm:thickened-torus-z2-carrier}).
+The pairing $\langle\cdot,\cdot\rangle$ is the knowledge-order ($\leq_k$) coincidence on
+\texttt{Charge}, so the autocorrelation measures how far apart two cells must lie before
+their charges decorrelate. Plain weave's one-bit collapse
+(\cref{thm:weave-entropy-collapse}) is the degenerate periodic autocorrelation. Requires an
+averaging measure on the torus carrier.
+\end{theorem}
+
+\begin{theorem}[The diffraction spectrum is the measured entropy]\label{thm:draft-diffraction-spectrum}\notready\uses{thm:homometric-finite-diffraction-mass, thm:draft-autocorrelation-measure, thm:weave-infotiles-entropy, thm:weave-is-metallic, thm:diamond-spectral-portrait}
+\emph{(Open frontier --- stated, not formalized.)} The diffraction spectrum is
+the Fourier transform $\widehat{\gamma}$ of the charge autocorrelation
+(\cref{thm:draft-autocorrelation-measure}): a periodic isonemal draft has pure-point
+(Bragg) diffraction, a quasiperiodic weave has a pure-point spectrum on a rank-$>2$ module
+(the Sturmian/Ammann cases), and a positive-entropy float-twill has a singular-continuous
+or absolutely-continuous component. The bit-measured entropy of
+\cref{thm:weave-infotiles-entropy} is the entropy of this spectral measure.  The
+spectrum type is determined by the Pisot/Salem character of the metallic
+inflation (\cref{thm:weave-is-metallic}) and the causal-spectral portrait
+(\cref{thm:diamond-spectral-portrait}).  The residue is the explicit
+Bombieri--Taylor diffraction measure.
+\end{theorem}

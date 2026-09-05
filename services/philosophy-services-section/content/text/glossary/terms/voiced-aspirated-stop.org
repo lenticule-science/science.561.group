@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       d829e6d9-0243-4c09-9d85-94ebadf175fa
+:END:
+#+title: voiced aspirated stop
+#+date: [2025-08-29 Fri 22:41]
+

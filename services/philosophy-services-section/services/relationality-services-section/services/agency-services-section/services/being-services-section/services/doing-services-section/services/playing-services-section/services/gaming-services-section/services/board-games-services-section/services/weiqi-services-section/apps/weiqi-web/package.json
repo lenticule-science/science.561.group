@@ -1,0 +1,18 @@
+{
+  "name": "@lenticule-science/weiqi-web",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Education-first MVP web face for weiqi-services-section: Play (Capture Go vs. a scripted bot), Learn (interactive lesson player), Read (compiled glossary) -- static, client-side, zero dependencies, built on @lenticule-science/weiqi-kernel.",
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "node ../weiqi-kernel/scripts/build-browser-kernel.mjs public/js/kernel && node scripts/build-glossary.mjs",
+    "check": "node check-mts.mjs test/*.test.mts",
+    "test": "npm run check && node --test 'test/*.test.mts'",
+    "serve": "node scripts/serve.mjs",
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev"
+  },
+  "devDependencies": {
+    "wrangler": "4.123.0"
+  }
+}

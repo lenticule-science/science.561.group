@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       12e293e4-a137-44f1-81bf-23068b69b54a
+:public:   true
+:ROAM_ALIASES: semiotics
+:END:
+#+title: semiotic theory
+#+date: [2025-08-24 Sun 11:09]
+#+index: semiotic theory
+

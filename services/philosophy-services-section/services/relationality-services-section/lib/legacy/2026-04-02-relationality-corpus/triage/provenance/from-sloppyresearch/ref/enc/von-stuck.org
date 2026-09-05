@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       b48584c1-8bd6-4cc8-acf8-655c9285e3e6
+:public:   true
+:form:     [[id:de595b66-d89d-41d6-87fc-724482ec16ec][music artist]]
+:END:
+#+title: von Stuck
+#+date: [2025-07-23 Wed 10:13]
+#+index: von Stuck
+von Stuck is a [[id:de595b66-d89d-41d6-87fc-724482ec16ec][music artist]].
+* Tracks
+** "The Man Who Wanted To See It All"
+:PROPERTIES:
+:ID:       37636863-77c3-4124-bb25-63cd516797c3
+:END:
+[[id:3e4481fd-c3f3-499b-8c74-9fec05bcc8c4][music track]]

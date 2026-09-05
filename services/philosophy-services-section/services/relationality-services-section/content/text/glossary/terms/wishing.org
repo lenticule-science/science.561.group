@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       0f4b144f-4eca-4ae3-a22b-eb53a1cd1f73
+:public:   true
+:form:     [[id:d865f1e4-9fcb-481c-a071-3ec821ea8dda][desiring]]
+:field: [[id:2782b41b-9dc9-408c-9174-06c60af1640c][psychology]]
+:END:
+#+title: wishing
+#+date: [2025-09-01 Mon 09:19]
+#+index: wishing
+
+*/Wishing/* is [[id:d865f1e4-9fcb-481c-a071-3ec821ea8dda][desiring]], usually with a [[id:e78f958d-6f12-4bd0-a324-822252c23661][feeling]] that the [[id:acbd39ab-8b93-4099-8ebc-eac732db0632][desired thing]] is not [[id:7137d530-25bb-410c-b71e-cfcbf8a54784][attainable]].
+
+It probably relates to something to do with [[id:c8387e8d-2ed4-4980-9ba2-6ea5f4f27475][agency]] and [[id:e56a685f-e87f-47e7-900b-610e9fb2f436][subjectivation]]. It might also have to do with [[id:fb3157de-7652-417c-85ad-5ea57eee19b9][aestheticization]] of desire as a means of [[id:4e892509-aaa3-48bf-a74c-51275b95ccf2][deferring]] it.

@@ -1,0 +1,48 @@
+#+title: kyriarchy
+#+begin_head
+#+ghe_schema: term-0.1.2
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-22 Tue 16:46]
+#+roam_alias: "kyriarchism" "kyriarchist" "kyriarchists"
+#+end_head
+
+#+name: definition
+*/[[file:kyriarchy.org][Kyriarchy]]/* is a method of social order in which violence is seen as a legitimate means of achieving a resolution between two [[file:person.org][people]].
+
+#+end_quote
+#+toc: headlines 2
+* Introduction
+
+  This record is some of what I know abut /kyriarchism/.
+* Kyriarchy
+
+  #+include: "kyriarchy.org::definition"
+
+  The term was coined by [[file:elisabeth_schussler_fiorenza.org][Elisabeth Schussler Fiorenza]] in 1992.
+  
+  Over time, I've come to use /kyriarchy/ as the most general descriptor for any social order based on domination, regardless of its mechanisms.
+
+  One benefit of the word is that it encorporates [[file:intersectionality.org][intersectionality]] at the foundation of its conception of social orders.
+
+** Quotes
+
+   #+name: my-ecydsis-kyriarchy-quote
+   #+caption: From http://myecdysis.blogspot.com/2008/04/accepting-kyriarchy-not-apologies.html
+   #+begin_quote
+   Patriarchy, for me, doesn't cut it.  It cuts it to gender.  As you can see, I'm not that simple. Kyriarchy is a term I adopted four years ago and I feel now it's time to show my true colors of what I think of patriarchy.  Two words: old skool.
+   #+end_quote
+  
+** Trivia
+   
+   - I learned the word Kyriarchy from [[file:erin_horakova.org][Erin Horáková]] in their piece, [[http://strangehorizons.com/non-fiction/columns/freshly-rememberd-kirk-drift/]["Freshly Remember'd: Kirk Drift"]] shortly after that piece came out in the spring of 2017, and have used it a /lot/ since.
+     
+* Supplements
+** Record history
+   :LOGBOOK:
+   - Note taken on [2020-12-29 Tue 19:15] \\
+     Added some more, from the [[file:my_ecdysis_accepting_kyriarchy_not_apologies.org][My Ecdysis: "Accepting Kyriarchy, Not Apologies"]] article, while chatting with [[file:jessmahler.org][@jessmahler]] in the [[file:webgaz.org][WebGAZ]] group.
+   - Note taken on [2020-12-22 Tue 16:54] \\
+     Fleshed this record out a bit.
+   :END:
+  

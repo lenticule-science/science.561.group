@@ -1,0 +1,898 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2019-06-11 Tue 19:19 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>30 Days of World Building, Summer 2019</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="emsenn" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">30 Days of World Building, Summer 2019</h1>
+<div id="outline-container-org99a5f95" class="outline-2">
+<h2 id="introduction">Introduction</h2>
+<div class="outline-text-2" id="text-introduction">
+<p>
+This collection of writing exercises was written in response to the <i>30 Days of World
+Building</i> challenge created by <i>Stephanie Bryant</i>. I'm participating
+from June 4th until July 4th, 2019.
+</p>
+
+<p>
+This collection of writing exercises was created by me, emsenn, in the United States. To the extent possible under law, I have waived all copyright and related or neighboring rights to this document. This document was created for the benefit of the public. If you're viewing it on a remote server, you're encouraged to download your own copy. To learn how you can support me, see <a href="https://emsenn.net/donate">https://emsenn.net/donate</a>.
+</p>
+</div>
+</div>
+<div id="outline-container-org817eeb5" class="outline-2">
+<h2 id="org817eeb5">30 Days of World Building, Summer 2019</h2>
+<div class="outline-text-2" id="text-org817eeb5">
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgd3f6980">Day 1</a></li>
+<li><a href="#org6f305ed">Day 2</a></li>
+<li><a href="#org272ae1f">Day 3</a></li>
+<li><a href="#org958ff23">Day 4</a></li>
+<li><a href="#orga1c45dc">Day 5</a></li>
+<li><a href="#org7bab023">Day 6</a></li>
+<li><a href="#orga96b419">Day 7</a></li>
+<li><a href="#orgdd8e89c">Day 8</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgd3f6980" class="outline-3">
+<h3 id="orgd3f6980">Day 1</h3>
+<div class="outline-text-3" id="text-orgd3f6980">
+<p>
+The exercise for this first day is this:
+</p>
+
+<blockquote>
+<p>
+Get out a map or go to an international website like National
+Geographic. Look every- where. Antarctica. Saudi Arabia. The
+rainforests of Brazil. The rainforests of Central California. Look
+at how the different climates behave and appear.
+</p>
+
+<p>
+The first fifteen minute exercise is to write down all the different
+climates you can think of-- if you need to just say a city name, do
+it. Sometimes "Seattle" is more evocative than "northern damp
+temperate climate." Write these names down in a list.
+</p>
+
+<p>
+Then, go through that list and write one or two words that describe
+how that climate, either the word itself or the way the place itself
+may have made you feel, if you've been there before. Try to stick to
+abstract adjectives; emotional words, if you can, but nouns are also
+okay.
+</p>
+</blockquote>
+
+<p>
+Simple enough - though I think they might mean "biome" where they say
+"climate." And I'm not sure all of what I've listed are biomes,
+"officially."
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Climate</th>
+<th scope="col" class="org-left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">alpine mountains</td>
+<td class="org-left">divisive</td>
+</tr>
+
+<tr>
+<td class="org-left">badlands</td>
+<td class="org-left">sanguine, ironic</td>
+</tr>
+
+<tr>
+<td class="org-left">bayou</td>
+<td class="org-left">calm, saturated</td>
+</tr>
+
+<tr>
+<td class="org-left">chaparral</td>
+<td class="org-left">endurance, commitment</td>
+</tr>
+
+<tr>
+<td class="org-left">coral reef</td>
+<td class="org-left">childishness, riddles</td>
+</tr>
+
+<tr>
+<td class="org-left">equatorial archipelago</td>
+<td class="org-left">allegorical, precise</td>
+</tr>
+
+<tr>
+<td class="org-left">fen</td>
+<td class="org-left">playful</td>
+</tr>
+
+<tr>
+<td class="org-left">floodlands</td>
+<td class="org-left">folkart, communion</td>
+</tr>
+
+<tr>
+<td class="org-left">freshwater lake</td>
+<td class="org-left">plain-spoken</td>
+</tr>
+
+<tr>
+<td class="org-left">grasslands</td>
+<td class="org-left">eternal</td>
+</tr>
+
+<tr>
+<td class="org-left">holler</td>
+<td class="org-left">sneakiness</td>
+</tr>
+
+<tr>
+<td class="org-left">lowlands</td>
+<td class="org-left">historic, homely</td>
+</tr>
+
+<tr>
+<td class="org-left">mangrove swamp</td>
+<td class="org-left">consuming, decaying</td>
+</tr>
+
+<tr>
+<td class="org-left">marsh</td>
+<td class="org-left">honor</td>
+</tr>
+
+<tr>
+<td class="org-left">meadows</td>
+<td class="org-left">betrayal, beauty</td>
+</tr>
+
+<tr>
+<td class="org-left">moors</td>
+<td class="org-left">treason</td>
+</tr>
+
+<tr>
+<td class="org-left">ocean</td>
+<td class="org-left">introspection, philosophy</td>
+</tr>
+
+<tr>
+<td class="org-left">old growth forest</td>
+<td class="org-left">treacherous, ebulent</td>
+</tr>
+
+<tr>
+<td class="org-left">piedmont</td>
+<td class="org-left">prosperity, equality</td>
+</tr>
+
+<tr>
+<td class="org-left">pine forest</td>
+<td class="org-left">snide, caustic</td>
+</tr>
+
+<tr>
+<td class="org-left">rainforest</td>
+<td class="org-left">aggrevating, inspiring</td>
+</tr>
+
+<tr>
+<td class="org-left">redwood forest</td>
+<td class="org-left">weird</td>
+</tr>
+
+<tr>
+<td class="org-left">river delta</td>
+<td class="org-left">rigid, eternal</td>
+</tr>
+
+<tr>
+<td class="org-left">sandy desert</td>
+<td class="org-left">barren, spiritual</td>
+</tr>
+
+<tr>
+<td class="org-left">savanna</td>
+<td class="org-left">funny, excited</td>
+</tr>
+
+<tr>
+<td class="org-left">sea</td>
+<td class="org-left">opulence, reservation</td>
+</tr>
+
+<tr>
+<td class="org-left">shield</td>
+<td class="org-left">hardworking</td>
+</tr>
+
+<tr>
+<td class="org-left">steppes</td>
+<td class="org-left">stagnation</td>
+</tr>
+
+<tr>
+<td class="org-left">taiga</td>
+<td class="org-left">enthralling, catatonic</td>
+</tr>
+
+<tr>
+<td class="org-left">thicket</td>
+<td class="org-left">surprise</td>
+</tr>
+
+<tr>
+<td class="org-left">tidewater</td>
+<td class="org-left">creativity</td>
+</tr>
+
+<tr>
+<td class="org-left">tundra</td>
+<td class="org-left">challenging, introspective</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org6f305ed" class="outline-3">
+<h3 id="org6f305ed">Day 2</h3>
+<div class="outline-text-3" id="text-org6f305ed">
+<p>
+Before I get to today's exercise, I want to express a concern, of
+sorts, I have about being able accurately complete this challenge. I
+read through future days, and it seems that the challenge comes from
+the assumption that you have a vague idea of a story, and not a clear
+idea of what sort of world to have.
+</p>
+
+<p>
+I am coming at this from rather the opposite perspective: I have a
+notion of the world, but am looking for more stories to tell in it.
+This may mean that, going forward, I'll have to adjust how I respond
+to certain exercises.
+</p>
+
+<p>
+The exercise for this second day is this:
+</p>
+
+<blockquote>
+<p>
+What role do you anticipate weather playing in your story? Do you have
+a lot of travel that you want to complicate with bad storms? Are you
+going to snow in your mighty heroes? Will there be a mighty battle,
+determined by sudden flooding? You actually don't need to know right
+now. Your exerise for today is to jot down ten plot devices that
+relate to weather, and what you think they do to the story (for
+example: a snow-in can turn the mood very claustrophobic... or very
+intimate).
+</p>
+</blockquote>
+
+<p>
+Okay, ten plot devices related to weather, and what they can do to a
+story.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Device</th>
+<th scope="col" class="org-left">Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">calm at sea</td>
+<td class="org-left">Slowly building desperation. It's hard to know how long a calm will last when it starts, and so it becomes a point of anxiety, as it stretches on.</td>
+</tr>
+
+<tr>
+<td class="org-left">flash flood</td>
+<td class="org-left">Sudden emergency. You've got to make choices about what to rescue, where to go, right now.</td>
+</tr>
+
+<tr>
+<td class="org-left">fog</td>
+<td class="org-left">Obfuscation, opportunity for invisible things. Unseen murders.</td>
+</tr>
+
+<tr>
+<td class="org-left">weeks of rain</td>
+<td class="org-left">Discomfort, duldrums, break from routine. Canceled parties, missed opportunity.</td>
+</tr>
+
+<tr>
+<td class="org-left">heat wave</td>
+<td class="org-left">Concern for the future. Will it kill the crops? You've got time to plan.</td>
+</tr>
+
+<tr>
+<td class="org-left">thunderstorm</td>
+<td class="org-left">Natural fears. They're just... scary.</td>
+</tr>
+
+<tr>
+<td class="org-left">dust storm</td>
+<td class="org-left">Confusion, isolation, lasting destruction.</td>
+</tr>
+
+<tr>
+<td class="org-left">spring shower</td>
+<td class="org-left">Opportunity for romance, as two seek shelter from the sudden downpour.</td>
+</tr>
+
+<tr>
+<td class="org-left">very sunny</td>
+<td class="org-left">Noticing things you might otherwise not. The glint of a bracelet as a thief removes it from an aristocrat's wrist in the market.</td>
+</tr>
+
+<tr>
+<td class="org-left">snowstorm</td>
+<td class="org-left">Holiday special! Or other community-based things.</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+I feel I could dive into any of these to turn them into an <i>adventure</i>
+or story set within <i>Teraum</i>. One reminds me of an idea I had
+recently, for an <i>adventure</i> set on a transoceanic cargo ship upon
+which the <i>party</i> has bought passage. Instead of scenes being defined
+by area, they'd be defined by what the main challenge each month is,
+and one of those months would be the calm month, in which the ship
+is becalmed, and the <i>party</i> has to figure out how to remedy that
+situation, by getting the ship to move or stretching the supplies.
+</p>
+
+<p>
+Just for example.
+</p>
+</div>
+</div>
+<div id="outline-container-org272ae1f" class="outline-3">
+<h3 id="org272ae1f">Day 3</h3>
+<div class="outline-text-3" id="text-org272ae1f">
+<p>
+The exercise for the third day is this:
+</p>
+
+<blockquote>
+<p>
+Read over your list from Day 1 and then turn to a blank piece of
+paper. Close your eyes and think about what kind of feeling you like
+to have when you write or read. Write down four words that fit into
+that feeling: two adjectives, a verb, and a noun. Now return to the
+page with your list of climates and emotions. Do any of them match up?
+If they do, you have your climate. If not, try to find closest-match
+words.
+</p>
+
+<p>
+If you spend 10 solid minutes thinking about this and still can't
+decide, pick two climates that express moods you like. You can make up
+your mind later, and you can even build your world with both climates
+containing equally probable sites for your story.
+</p>
+</blockquote>
+
+<p>
+What kind of story do I want to tell? One where people are desperate
+and innovative; one where reactive decision-making ruins plans; one
+where even the heroes are covered in mud, but probably not blood:
+</p>
+
+<ul class="org-ul">
+<li>desperate</li>
+<li>innovative</li>
+<li>react</li>
+<li>mud</li>
+</ul>
+
+<p>
+So looking at the table from the first day's exercise, a few biomes
+stick out to me:
+</p>
+
+<ul class="org-ul">
+<li>I say "tidewater," is a setting for creativity - that's reasonably
+close to innovative. I also say "rainforests" are inspiring.</li>
+<li>"Thickets" are associated with surprise for me, that's close to
+react.</li>
+<li>"Freshwater lake" has plain-spoken, and floodlands has folkart, both
+of which are about the closest I can find in my list to mud.</li>
+</ul>
+
+<p>
+So, where should the story be set, following this logic? Sounds like
+someplace that's normally subject to the tides, with lots of little
+bits of forest to hideaway in.
+</p>
+
+<p>
+There's one part of my world that is very much like that: <i>Arathel
+County</i>, a coastal region north of humanity's largest city. A mix of
+wetlands, the whole region shifts with the tide, and again with spring
+flooding.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org958ff23" class="outline-3">
+<h3 id="org958ff23">Day 4</h3>
+<div class="outline-text-3" id="text-org958ff23">
+<p>
+The exercise for this fourth day is:
+</p>
+
+<blockquote>
+<p>
+For 15 minutes, jot down some of the Really Big Land Features you want
+in your story and just think "what if that were made by...." Write
+down a couple of causes for those features and scars, and stick it all
+into your notebook. Which scars are slow-force scars (like plate
+tectonics), and which are fast-forces (anything that takes less than
+10,000 years is medium-to-fast in geological scales).
+</p>
+</blockquote>
+
+<p>
+In yesterday's prompt, I was led to decide that <i>Arathel County</i> would
+be where I'm setting the stories and world-building these exercises
+are bringing me too.
+</p>
+
+<p>
+That might make this challenge a bit tricky, since it's catered around
+<i>world</i>-building, not <i>small region</i>-building. In talking about this
+hallenge with a couple friends doing it, they also expressed some
+difficulty - the challenge seems to be drifting between "develop a
+world" and "develop the area of the world your story will be set in."
+</p>
+
+<p>
+Anyway. The biggest land feature in the region is the region itself.
+It's on the eastern (and only known) coast of the <i>Old World</i>, north
+of the <i>Green River</i>, in a part of the world known as the <i>Green
+Delta</i>.
+</p>
+
+<p>
+The <i>Old World</i>, as written so far, has four major <i>tectonic plates</i>.
+The <i>Green Delta</i> and the <i>Central Plains</i> to its east exist on one,
+which is subducting the <i>Optic Ocean</i>, the ocean to the region's
+west.
+</p>
+
+<p>
+To the southeast, the <i>Central Plains</i> are obducting over the <i>Unseen
+Sea</i>, a massive desert which now exists a couple thousand feet under
+sea level; the tectonic border has formed a massive cliff known as the
+<i>Falling Coast</i>.
+</p>
+
+<p>
+To the east, the <i>Central Plains</i> and <i>Unseen Sea</i> meet with the
+<i>Worldkeepers</i>, converging to form that mountain range.
+</p>
+
+<p>
+So, four plates: under the <i>Green Delta</i> and <i>Central Plains</i>, under
+the <i>Optic Ocean</i>, under the <i>Unseen Sea</i>, and under the
+<i>Worldkeepers</i>.
+</p>
+
+<p>
+That brings us back to <i>Arathel County</i>, which, despite being part of
+the <i>Green Delta</i>, is not on the same plate. The region was formerly a
+coral reef and archipelago of sandy shoals, in the <i>Optic Ocean</i>.
+</p>
+
+<p>
+As the plates shifted, the region got obducted - I'm not sure if
+that's the proper word anymore, but "moved to be ontop of," - by the
+shifting of the <i>Green Delta</i> plate.
+</p>
+
+<p>
+An aside: it's interesting not having names for these plates because
+the people in my setting wouldn't be aware of them. Also, I should
+point out, while I'm using "plate tectonics" as the term, and the
+world does exist as a crust of plates, the plates' cause for movement
+is not like Earth's. Underneath the world is, basically, a zoo, called
+the <i>Worldkeep</i>, for all sorts of magic creatures. It's quite old by
+now and parts are collapsing in, and this is causing the world above
+to form plates and for them to move.
+</p>
+
+<p>
+Anyway, <i>Arathel County</i> was a coral reef, but shifting of the plates
+caused it to end up above the shoreline. The coral got filled in with
+sediment over many years, and the sandy islands got worn down to dirt.
+</p>
+
+<p>
+This has led to a region that's mostly gravel and sandy, with complex
+and often inter-connected cave regions. There's lots of ferns that
+grow in the region, and moss, and those sorts of things.
+</p>
+
+<p>
+There's a river that runs through the river, the <i>Kaiper River</i>,
+though "runs" is an over-ambitious description. Fed exclusively by
+rainfall and springs in <i>Arathel County</i>, the river is low-volume and
+full of silt, slowly oozing toward the coast.
+</p>
+
+<p>
+That's about it for notable geographic features in the region. The
+town of <i>Arathel</i> is built on the coast of the <i>Kaiper River</i>, and
+over time the area directly adjacent to the road leading to the town
+from the rest of the <i>Green Delta</i> has been cultivated into small
+scrappy farms.
+</p>
+</div>
+</div>
+<div id="outline-container-orga1c45dc" class="outline-3">
+<h3 id="orga1c45dc">Day 5</h3>
+<div class="outline-text-3" id="text-orga1c45dc">
+<p>
+The exercise for the fifth day is:
+</p>
+
+<blockquote>
+<p>
+[T]oday's exercise is to draw out the physical contours of your map,
+and then identify at least three places that your people might live.
+You don't need names for them yet-- we'll worry about names next week,
+when we give our people language. Just draw a dot on the map or maybe
+sketch a little "house" symbol to indicate that people have settled
+that area.
+</p>
+</blockquote>
+
+<p>
+I use <i>Inkarnate</i> to make my maps, but I haven't made one for <i>Arathel
+County</i> in quite some time. Now's as good a time as any.
+</p>
+
+
+<div class="figure">
+<p><a href="./assets/arathel-county-map-nokeys.jpg"><img src="./assets/arathel-county-map-nokeys.jpg" alt="arathel-county-map-nokeys.jpg" /></a>
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org7bab023" class="outline-3">
+<h3 id="org7bab023">Day 6</h3>
+<div class="outline-text-3" id="text-org7bab023">
+</div>
+</div>
+<div id="outline-container-orga96b419" class="outline-3">
+<h3 id="orga96b419">Day 7</h3>
+<div class="outline-text-3" id="text-orga96b419">
+</div>
+</div>
+<div id="outline-container-orgdd8e89c" class="outline-3">
+<h3 id="orgdd8e89c">Day 8</h3>
+<div class="outline-text-3" id="text-orgdd8e89c">
+</div>
+</div>
+</div>
+<div id="outline-container-org3916c0f" class="outline-2">
+<h2 id="org3916c0f">Supplements</h2>
+<div class="outline-text-2" id="text-org3916c0f">
+</div>
+<div id="outline-container-org49779a5" class="outline-3">
+<h3 id="org49779a5">Index</h3>
+<div class="outline-text-3" id="text-org49779a5">
+<dl class="org-dl">
+<dt>30 Days of World Building</dt><dd>A series of prompts for building a fictional world. See See <a href="http://www.web-writer.net/fantasy/days/">http://www.web-writer.net/fantasy/days/</a> or #30DaysOfWorldBuilding.</dd>
+<dt>Bryant, Stephanie</dt><dd>Creator of the <i>30 Days of World Building</i> challenge, and an Agile and SCRUM coach. See <a href="http://www.mortaine.com/">http://www.mortaine.com/</a></dd>
+<dt>plate tectonics</dt><dd>A theory describing the movement of rock segments under a plates surface leading to the formation of geographic features. See <a href="https://en.wikipedia.org/wiki/Plate_tectonics">https://en.wikipedia.org/wiki/Plate_tectonics</a>.</dd>
+<dt>Teraum</dt><dd>A tragically funny fantasy setting. See See <a href="https://emsenn.net/teraum/">https://emsenn.net/teraum/</a>  or #Teraum.</dd>
+<dt>Teraum, Arathel</dt><dd>A sleepy, worn-down town.</dd>
+<dt>Teraum, Arathel County</dt><dd>A swampy and sandy county.</dd>
+<dt>Teraum, Central Plains</dt><dd>A large agricultural region, full of towns and castles.</dd>
+<dt>Teraum, Falling Coast</dt><dd>A massive cliff dividing a vast desert from the rest of the world.</dd>
+<dt>Teraum, Green Delta</dt><dd>A hospitable and well-settled region of the world.</dd>
+<dt>Teraum, Green River</dt><dd>A slow wide river, cutting through the world.</dd>
+<dt>Teraum, Kaiper River</dt><dd>A silty excuse for a river.</dd>
+<dt>Teraum, Old World</dt><dd>The large continent where most of history happened.</dd>
+<dt>Teraum, Optic Ocean</dt><dd>A large desert separating one part of the world from the other.</dd>
+<dt>Teraum, Unseen Sea</dt><dd>A desert so large it was first mistaken for a seabed.</dd>
+<dt>Teraum, Worldkeepers</dt><dd>A range of large mountains.</dd>
+<dt>Teraum, Worldkeep</dt><dd>A vast complex housing an unbelievable variety of magic lifeforms.</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-org95f7ba6" class="outline-3">
+<h3 id="org95f7ba6">README</h3>
+<div class="outline-text-3" id="text-org95f7ba6">
+</div>
+<div id="outline-container-orgd935c1a" class="outline-4">
+<h4 id="orgd935c1a">30 Days of World Building, Summer 2019</h4>
+<div class="outline-text-4" id="text-orgd935c1a">
+<p>
+This collection of writing exercises was written in response to the <i>30 Days of World
+Building</i> challenge created by <i>Stephanie Bryant</i>. I'm participating
+from June 4th until July 4th, 2019.
+</p>
+
+<p>
+This collection of writing exercises was created by me, emsenn, in the United States. To the extent possible under law, I have waived all copyright and related or neighboring rights to this document. This document was created for the benefit of the public. If you're viewing it on a remote server, you're encouraged to download your own copy. To learn how you can support me, see <a href="https://emsenn.net/donate">https://emsenn.net/donate</a>.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: emsenn</p>
+<p class="date">Created: 2019-06-11 Tue 19:19</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

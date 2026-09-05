@@ -1,0 +1,31 @@
+\subsection{Hodge and harmonic sections}
+
+\begin{theorem}[Lawvere harmonic kernel equals $H^0$]\label{thm:lawvere-kernel-h0-iso}\lean{Obsmetrologia.LawvereLaplacian.harmonic_kernel_h0_iso}\leanok\uses{thm:settling-hodge-iso}
+The harmonic kernel of the Lawvere Laplacian is isomorphic to the degree-zero settling cohomology
+object $H^0$ --- and \emph{not} merely definitionally. The weakness it repairs: the settling
+Laplacianizer took $H^0 := \{v \mid \mathrm{closureOp}\,v = v\}$, literally the fixed-point set, with
+the Hodge map the identity ($\mathit{rfl}$). Here $H^0$ is given the genuinely distinct presentation
+of the \emph{global sections} --- the image of the settling closure $\{v \mid \exists u,\,
+\mathrm{closureOp}\,u = v\}$ --- and \texttt{mem\_h0\_iff\_harmonic} proves a global section is
+harmonic by \textbf{idempotence} of the closure (a closure of a closure is already closed), the
+forward direction being a real theorem rather than $\mathit{rfl}$. The Hodge maps
+\texttt{toH0}/\texttt{fromH0} are then mutually inverse, exhibiting the kernel $\cong H^0$ as an
+isomorphism of distinct objects.
+\end{theorem}
+
+\begin{theorem}[Settling Hodge isomorphism]\label{thm:settling-hodge-iso}\lean{Obsmetrologia.Laplacianizers.settling_hodge_isomorphism}\leanok\uses{thm:settling-cohomology-h1-vanishes, thm:h0-count}
+The settling Laplacianizer's degree-$0$ Hodge isomorphism $\eta : H^0 \cong \ker\Delta$ holds (both
+round-trips), with $\ker\Delta$ = the settled fixed points = the global sections = the harmonic
+equilibrium (\texttt{settling\_hodge\_isomorphism}); the algebraic Laplacian is inner-product-free.
+\end{theorem}
+
+\begin{theorem}[Lawvere-harmonic section $=$ cohomologically-trivial global section]\label{thm:lawvere-harmonic-clinv-zero}\lean{Obsmetrologia.Cohomology.lawvere_harmonic_section_classifying_invariant_zero}\leanok\uses{thm:settling-hodge-iso, thm:classifying-invariant-zero-strict, thm:h0-count}
+In a cohomology-vanishing regime the settled section is Lawvere-harmonic (in the kernel of the
+order Laplacian $L=\Box\Diamond$), its classifying invariant $\mathrm{cl\text{-}inv}=[1_{F_U}]=0$
+(cocycle, coboundary, unique), and $H^0$ counts its truth-firing cells. This is the first
+identification of the order-Laplacian harmonic kernel with the \emph{independent} \v{C}ech
+$H^0$/classifying invariant on a single settled section (the green \cref{thm:settling-hodge-iso}
+identifies $\ker\Delta$ only with the Laplacianizer's own $\texttt{settledSections}$, where $\eta$ is
+the identity). It is the dependency-free, bilattice projection of the Hodge--Tarski theorem
+(Ghrist--Riess 2022): Tarski-Laplacian fixed points $=$ degree-$0$ global sections.
+\end{theorem}

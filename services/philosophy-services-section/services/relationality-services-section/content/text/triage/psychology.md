@@ -1,0 +1,3 @@
+# Psychology
+
+Psychology is the scientific study of mind and behavior.

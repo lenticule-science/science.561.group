@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       13858ca3-3dde-4527-b9c2-7a95648a2e31
+:form:     [[id:2d77e9d7-6819-4cc8-9189-a81b5cff3d92][music genre]]
+:public:   true
+:END:
+#+title: Saharan music
+#+date: [2025-07-21 Mon 17:14]
+#+index: Saharan music
+Saharan music is a family of [[id:2d77e9d7-6819-4cc8-9189-a81b5cff3d92][music genre]] coming from the [[id:c158c780-35ca-454a-b737-e2179a3ecf5a][Sahara]].

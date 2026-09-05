@@ -1,0 +1,23 @@
+\section{The 2-adic / saturating-projection layer}
+
+\begin{theorem}[Saturating run is the 2-adic depth]
+  \label{thm:collatz-saturating-depth}
+  \lean{Infomaterial.Closure.Collatz.shortcut_odd_part}
+  \leanok
+  \uses{thm:collatz-affine-trace}
+  Every positive number factors as $2^k$ times an odd number
+  (\texttt{two\_adic\_factor}); for odd $n$ the expansion $3n+1=2^k\cdot m$ has $k\ge1$ and $m$
+  odd. So the halving run after an expansion is nonempty and collapsing it lands on the odd full
+  shortcut successor $(3n+1)/2^{\,v_2(3n+1)}$. The accelerated step peels exactly one
+  halving (\cref{thm:collatz-affine-trace}); the full shortcut peels the whole run.
+\end{theorem}
+\begin{theorem}[Geometric distribution of $v_2(3n+1)$]
+  \label{thm:collatz-v2-geometric}
+  \notready
+  \uses{thm:collatz-saturating-depth}
+  \emph{(Open probabilistic frontier --- empirical.)} Over uniformly random odd $n$,
+  $v_2(3n+1)$ is geometric, $P(v_2=k)=1/2^k$, with an observed trajectory-autocorrelation excess
+  at $k=4$. The deterministic stratification is \cref{thm:collatz-saturating-depth}; the
+  distributional claim needs counting/measure (the core's probability modules) and is not
+  formalized here.
+\end{theorem}

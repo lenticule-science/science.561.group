@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://561.group/swarm-intelligence/articulating/library/aperiodic-articulation-category/library/aperiodic-articulation-cell/library/stable-aperiodic-articulation-cell/forming/library/formed-collective/formed-collective.schema.json",
+  "title": "Formed collective (parallel composition ∥ of characters)",
+  "description": "A collective formed out of characters by parallel composition (the monoidal product ∥ on arenas — the algebraic shape of scale relations between coordinated participants). A general collective with no governance and no coordinating office yet; swarm and ensemble are restricted formings (forming then restricting). Codomain of forming. participants are character personas/role-slugs (references).",
+  "kind": "object",
+  "type": "object",
+  "required": ["kind", "id", "participants", "arena"],
+  "additionalProperties": false,
+  "properties": {
+    "kind": { "const": "formed-collective" },
+    "id": { "type": "string", "minLength": 1 },
+    "participants": { "type": "array", "items": { "type": "string", "minLength": 1 }, "description": "the composed characters, by persona or role-slug reference" },
+    "arena": { "const": "parallel-composition(∥)" }
+  }
+}

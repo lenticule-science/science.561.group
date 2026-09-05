@@ -1,0 +1,29 @@
+# Infomaterial Verso docs: type-checked prose over the Infomaterial library.
+#
+# The manual package builds against the Infomaterial source tree. Infomaterial never
+# depends on the manual. The proof-tree markdown under docs/verso/mark is mounted into
+# the manual appendix by the docs assembly script.
+
+name = "infomaterial-verso-docs"
+defaultTargets = ["infomaterial-docs"]
+
+[leanOptions]
+autoImplicit = false
+relaxedAutoImplicit = false
+pp.unicode.fun = true
+
+[[require]]
+name = "verso"
+git = "https://github.com/leanprover/verso.git"
+rev = "v4.31.0"
+
+[[lean_lib]]
+name = "Infomaterial"
+srcDir = "../.."
+
+[[lean_lib]]
+name = "InfomaterialManual"
+
+[[lean_exe]]
+name = "infomaterial-docs"
+root = "Main"

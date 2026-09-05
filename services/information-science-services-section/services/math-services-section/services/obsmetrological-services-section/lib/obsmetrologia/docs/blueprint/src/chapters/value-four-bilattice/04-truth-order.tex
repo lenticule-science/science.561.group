@@ -1,0 +1,28 @@
+\section{The truth order and truth-order closure}
+
+\begin{proposition}[The truth order as a relation]\label{thm:tle}\lean{Obsmetrologia.Charge.TLE}\leanok\uses{thm:four-bilattice}
+The truth order is the relation \texttt{TLE}, the \texttt{Prop}-valued form
+of the Boolean comparison \texttt{leT}. It is reflexive, transitive, and
+antisymmetric by finite charge analysis.
+\end{proposition}
+
+\begin{theorem}[$\vee_t$ and $\wedge_t$ are the truth lub and glb]\label{thm:truth-lattice}\lean{Obsmetrologia.Charge.joinT_le}\leanok\uses{thm:tle}
+Truth join is the least upper bound and truth meet is the greatest lower
+bound for \texttt{TLE}. With $f$ least and $t$ greatest, this is the bounded
+truth lattice of FOUR.
+\end{theorem}
+
+\begin{theorem}[Negation is the order duality]\label{thm:negate-tle}\lean{Obsmetrologia.Charge.negate_tle}\leanok\uses{thm:truth-lattice, thm:negate-duality}
+As a relation, negation reverses the truth order and preserves the knowledge
+order. This is the order-dual reading of the same slot swap.
+\end{theorem}
+
+\begin{proposition}[Truth-order closure operator]\label{thm:tclosure}\lean{Obsmetrologia.Charge.TClosure}\leanok\uses{thm:tle}
+A truth-order closure is an operator on charges that is inflationary,
+monotone, and idempotent with respect to \texttt{TLE}.
+\end{proposition}
+
+\begin{proposition}[The canonical truth closure and truth-settling]\label{thm:settleT}\lean{Obsmetrologia.Charge.joinTClosure}\leanok\uses{thm:tclosure, thm:truth-lattice}
+The canonical truth closure raises a charge toward a chosen truth bound by
+truth join. Truth-settling is the fixed point reached by this closure.
+\end{proposition}

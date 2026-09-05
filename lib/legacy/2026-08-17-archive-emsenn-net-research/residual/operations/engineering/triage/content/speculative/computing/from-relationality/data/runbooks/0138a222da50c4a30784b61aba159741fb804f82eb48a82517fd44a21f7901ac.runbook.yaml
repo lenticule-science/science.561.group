@@ -1,0 +1,18 @@
+name: judgment_laws_check
+inputs:
+- role: carrier
+  kind: phase_space
+outputs:
+- role: judgment_laws_evidence
+  kind: judgment_laws_evidence
+steps:
+- name: judgment_laws_check
+  operator: judgment_laws_check
+  step_index: 0
+  inputs:
+  - role: carrier
+    kind: phase_space
+  outputs:
+  - role: judgment_laws_evidence
+    kind: judgment_laws_evidence
+id: 0138a222da50c4a30784b61aba159741fb804f82eb48a82517fd44a21f7901ac

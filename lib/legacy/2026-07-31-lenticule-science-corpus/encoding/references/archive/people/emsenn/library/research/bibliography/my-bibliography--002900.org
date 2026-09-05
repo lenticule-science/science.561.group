@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       88c32478-d3e6-47ff-a3a4-b33635ef3764
+:public:   true
+:instantiates: [[id:cafbefe4-8762-41ca-97e7-35e06f9f9073][bibliography]]
+:subject:  [[id:0d50b865-57b3-4d6d-aadf-1925457396a4][my research]]
+:END:
+#+title: my bibliography
+#+date: [2025-08-28 Thu 10:41]
+
+#+begin_src elisp :results value raw :exports results
+  (gpe/bibtex-render-global-bibliography)
+#+end_src
+
+#+RESULTS:
+[cite:@PeauNoireMasquesBlancs] [cite:@BlackSkinWhiteMasks] [cite:@DecolonizationIsNotAMetaphor] [cite:@FBIDIOG2008] [cite:@USAPATRIOTAct] [cite:@USAPATRIOTAct215_2001] [cite:@USAPATRIOTAct215_2006] [cite:@USAPATRIOTACT_2011] [cite:@klein2019cw] [cite:@FISA] [cite:@TheAmericanJeremiad] [cite:@EnvyAndGratitude] [cite:@USAFREEDOMAct] [cite:@WhitenessAsProperty] [cite:@ChurchCommitteeReport] [cite:@ScenesOfSubjection] [cite:@AGGuidelines2008] [cite:@TheLiberalismOfFear] [cite:@Necropolitics] [cite:@berlant_cruel_2011] [cite:@gershon_down_2024] [cite:@minh-ha_woman_1989] [cite:@glissant_poetics_1997] [cite:@klemperer_language_2006]
+
+#+print_bibliography:
+

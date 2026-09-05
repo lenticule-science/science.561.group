@@ -1,0 +1,16 @@
+#+title: Org-mode TODO keyword
+#+ghe_schema: term 0.1.4
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-18 Fri 14:04]
+#+roam_alias: "Org-mode TODO keywords"
+#+roam_tags: term
+
+#+name: definition
+An */[[file:org_mode_todo_keyword.org][Org-mode TODO keyword]]/* is the word prefixed to an [[file:org_mode_subtree.org][Org-mode subtree]]'s heading to indicate its [[file:org_mode_todo_item.org::*State][state]].
+
+* Introduction
+
+  This record is some of what I (emsenn) know about */Org-mode TODO tags/*. You may use it without limits or promises.
+
+* Org-mode TODO Tags

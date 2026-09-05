@@ -1,0 +1,18 @@
+id: acknowledge-message
+description: "Acknowledge a message in an INBOX (mark as read/handled)."
+skill-closure-kind: process
+
+inputs:
+  - name: unit_id
+    type: int
+  - name: status
+    type: str
+    default: acknowledged   # acknowledged | deferred | declined
+
+steps:
+  - id: ack
+    type: update
+    unit_id: "{{inputs.unit_id}}"
+    flush: true
+    fields:
+      status: "{{inputs.status}}"

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       599df3d8-9fd7-4a0e-bacd-b6c1776e18e4
+:END:
+#+title: Fediverse client
+#+date: [2025-09-27 Sat 00:08]
+

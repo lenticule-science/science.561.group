@@ -1,0 +1,9 @@
+{
+  "id": "observation_kernel",
+  "act": "ObservationKernel",
+  "module": "relationality.realizers.observation_kernel",
+  "callable": "realize_observation_kernel",
+  "input_kind": "PhaseSpace",
+  "output_kind": "PhaseSpace",
+  "description": "Apply observation kernel adjustments to phase space."
+}

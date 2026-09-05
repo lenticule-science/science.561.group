@@ -1,0 +1,23 @@
+id: fa0c1622fec9f311a5415f0978f3e02427d25eec7bf605f2ba66d7058622c214
+name: spectral_analysis
+inputs:
+  - role: profile_topos
+    kind: profile_topos
+  - role: flow_map
+    kind: flow_map
+outputs:
+  - role: spectral_geometry
+    kind: spectral_geometry
+steps:
+  - name: spectral_geometry
+    operator: spectral_geometry
+    step_index: 0
+    inputs:
+      - role: profile_topos
+        kind: profile_topos
+      - role: flow_map
+        kind: flow_map
+    outputs:
+      - role: spectral_geometry
+        kind: spectral_geometry
+

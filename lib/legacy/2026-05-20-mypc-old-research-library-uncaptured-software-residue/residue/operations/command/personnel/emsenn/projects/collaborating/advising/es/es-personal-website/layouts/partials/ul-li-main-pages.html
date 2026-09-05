@@ -1,0 +1,22 @@
+<ul id="main-pages">
+  {{ with .GetPage "/contact.md" }}
+    <li>
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </li>
+  {{ end }}
+  {{ with .GetPage "/support.md" }}
+    <li>
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </li>
+  {{ end }}
+  {{ with .GetPage "/stories" }}
+    <li>
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </li>
+  {{ end }}
+  {{ with .GetPage "/projects.md" }}
+    <li>
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </li>
+  {{ end }}
+</ul>

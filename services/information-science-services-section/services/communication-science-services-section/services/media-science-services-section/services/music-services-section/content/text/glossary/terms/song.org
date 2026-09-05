@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       79aaafcf-dc06-4edc-9af0-5b52904c3cbb
+:END:
+#+title: song
+#+date: [2025-08-29 Fri 21:49]
+

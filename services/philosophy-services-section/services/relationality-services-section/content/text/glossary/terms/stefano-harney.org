@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       9ff05e62-0c23-4248-bdfe-3c264a35c545
+:public:   true
+:END:
+#+title: Stefano Harney
+#+date: [2025-08-24 Sun 21:08]
+#+index: Harney!Stefano Harney
+
+*/Stefano Harney/* is a [[id:92dfcfab-ba8f-407d-a2a6-121a76dbe7a3][theorist]].
+
+[[id:f7cc4bac-8a9d-43a2-a76f-4e014ae70405][authored]] [[id:8c9f8d83-97e8-4590-ace6-85d2cef0741a][The Undercommons: Fugitive Planning & Black Study]] with [[id:caeb4860-5a34-4349-9218-339fbff3e019][Fred Moten]] in [[id:104e8d3d-a604-4ce5-9e95-f8d4ed43498a][2013ce]].

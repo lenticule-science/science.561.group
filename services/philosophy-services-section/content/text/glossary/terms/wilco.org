@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       d68f2732-b1d6-43e1-887f-ff2aec3590f4
+:form:     [[id:de595b66-d89d-41d6-87fc-724482ec16ec][music artist]]
+:public:   true
+:END:
+#+title: Wilco
+#+date: [2025-08-26 Tue 08:39]
+#+index: Wilco
+
+* Albums
+** Sky Blue Sky
+:PROPERTIES:
+:form:     [[id:c18e4f56-75b8-49f6-8867-c8957283037f][music album]]
+:ID:       bda4a11d-6b3f-4fa6-bf23-256ad51be54d
+:END:
+** Yankee Hotel Foxtrot
+:PROPERTIES:
+:form:     [[id:c18e4f56-75b8-49f6-8867-c8957283037f][music album]]
+:ID:       678e80c0-2939-4c18-8dcb-cf1f9131cb0a
+:END:
+
+

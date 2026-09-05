@@ -1,0 +1,86 @@
++++
+title = "Justice Failed Steven Avery and Brendan Dassey"
+author = ["emsenn"]
+date = 2016-01-10
+tags = ["justice", "Steven-Avery", "Brendan-Dassey"]
+draft = false
++++
+
+The following links are all to articles I wrote for the [_Gazette
+Review_](http://gazettereview.com).
+
+When, in 1985, [Denis Vogel](http://gazettereview.com/2016/01/happened-denis-vogel-making-murderer-update/) failed to pursue alternate leads to a
+violent crime, he left a criminal free in his county, an abject
+failure of duty.
+
+When [Andrew Colburn](http://gazettereview.com/2016/01/andrew-colborn-updates-making-murderer-news/) was instructed to ignore information which could
+have led to Steven Avery's exoneration, his department failed.
+
+When [Steven Avery](http://gazettereview.com/2015/12/happened-steven-avery-making-murderer-update/) was viewed as the only possible suspect in Teresa
+Halbach's disappearance, the Sheriff's Office failed again.
+
+When 16-year-old mentally handicapped [Brendan Dassey](http://gazettereview.com/2016/01/what-happened-brendan-dassey-making-murderer-update/) was questioned at
+length based on conjecture put forth by a 12 year old, the District
+Attorney and Department of Justice failed.
+
+When [James Lenk](http://gazettereview.com/2016/01/happened-james-lenk-making-murderer-update/) was found to be having a critical role in the physical
+investigation of Steven Avery, despite an ongoing civil suit, he
+failed. When he inappropriately handled a crime scene, he failed.
+
+When [Michael O'Kelly](http://gazettereview.com/2016/01/happened-michael-okelly-making-murderer-update/) lied to a retarded child to get him to confess to
+a crime pointedly against the best interest of the defense team which
+had hired O'Kelly, O'Kelly and the defense failed in their duties to
+offer loyal counsel.
+
+When Judge [Patrick Willis](http://gazettereview.com/2016/01/what-happened-to-patrick-willis-now-update/) disallowed the presentation of third party
+liability, preventing Steven Avery's defense from offering any
+coherent narrative, he failed in his role as adjudicator.
+
+---
+
+Many of these may have been honest mistakes of emotionalism, but that does not negate the
+standard at which public servants are meant to hold themselves. Most evidently egregious
+are the behaviors of Len Kachinsky and Judge Fox.
+
+When Len Kachinsky hired Michael O'Kelly and approved the use of that form (see articles),
+it is a clear demonstration of ineffective and disloyal counsel. While Kachinsky has
+claimed he would seek a guilty plea and argue Dassey's lack of culpability due to mental
+issues, the form completely negates any argument about culpability Kachinksy could have
+put forth. Put simply, Kachinksy, through ignorance or malice, sold out his client.
+
+My [final article on the topic](http://gazettereview.com/2016/01/steven-avery-innocent-theory-scott-tadych-theory/) which argues against another man's
+presumption of innocence, highlights, albeit in passing, the most
+clear cut example of judicial misconduct.
+
+Judge Jerome Fox, who presided over the trial against Brendan Dassey
+for the murder of Teresa Halbach, had previously worked for a firm
+which had represented Scott Tadych, who at the time of the trial was
+Brendan Dassey's stepfather. This is a clear conflict of interest, and
+yet Judge Fox did not recuse himself.
+
+With these arguments against both Dassey's defense and adjudicator, it
+should be clear that regardless of guilt, Brendan Dassey did not get a
+fair trial, and certainly not one which legitimately proved beyond
+reasonable doubt that he was guilty.
+
+That doesn't sound much like a bombshell, does it? I don't know who
+killed Teresa Halbach, or even that Avery is innocent. I'm sorry, but
+real cases aren't tidy like that.
+
+The best I can do is argue a few concrete reasons why Brendan Dassey
+may deserve to get that appeal, and so that's what I plan to do. This
+is the last article I'm probably going to write about this case, at
+least for a bit, but as I said in an earlier status, I'll be talking
+to people who are helping with Dassey's defense next week.
+
+
+## Editorial Information {#editorial-information}
+
+
+### Change Log {#change-log}
+
+
+#### <span class="timestamp-wrapper"><span class="timestamp">&lt;2016-01-10 Sun&gt;</span></span>: Created as Facebook post {#created-as-facebook-post}
+
+
+#### <span class="timestamp-wrapper"><span class="timestamp">&lt;2018-11-05 Mon&gt;</span></span>: Added to Personal Record {#added-to-personal-record}

@@ -1,0 +1,16 @@
+{{- with $.Site.Params.makeThings -}}
+I {{ $.Site.Params.makeVerb | default "make" }}
+{{ if (eq (len .) 1) }}
+{{ with first 1 . }}
+{{- . | markdownify -}}
+{{ end }}
+{{- else if (eq (len .) 2) }}
+{{- delimit . " and " | markdownify -}}
+{{- else }}
+{{- delimit . ", " ", and " | markdownify -}}
+{{- end -}}
+{{- with $.Site.Params.makeFocus }}
+with a focus on {{ .  | markdownify }}
+{{- end -}}
+.
+{{- end -}}

@@ -1,0 +1,7 @@
+baseURL = "./"
+languageCode = "en-us"
+enableEmoji = true
+title = "emsenn's media store"
+author = "emsenn"
+[outputs]
+  page = ["HTML","JSON"]

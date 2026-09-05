@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       a033d86b-a322-4d7b-adff-cbb4a82a330d
+:END:
+#+title: oxide
+#+date: [2025-09-06 Sat 07:34]
+

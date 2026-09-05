@@ -1,0 +1,8 @@
+#+title: "No, not even for a picture"
+#+roam_key: https://clements.umich.edu/exhibit/pohrt/
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-18 Fri 19:20]
+
+"*/No, not even for a picture/*," is a digital exhibit from University of Michigan about the relationship between [[file:settler_colonialism.org][settler-colonialism]], [[file:native_american.org][Native Americans]], and [[file:photography.org][photography]].
+

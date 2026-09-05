@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       f194f45f-6211-4f39-aa3f-a7eaa39dd616
+:END:
+#+title: formatting
+#+date: [2025-08-29 Fri 10:51]
+

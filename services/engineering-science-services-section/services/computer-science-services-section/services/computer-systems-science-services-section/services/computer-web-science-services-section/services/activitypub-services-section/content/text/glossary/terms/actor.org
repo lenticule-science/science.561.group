@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       50711a63-93b5-4213-b768-165d10e8821c
+:END:
+#+title: actor
+#+date: [2025-10-07 Tue 00:05]
+

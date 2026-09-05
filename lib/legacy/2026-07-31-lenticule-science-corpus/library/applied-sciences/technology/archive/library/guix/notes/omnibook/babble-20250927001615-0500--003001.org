@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       c81f19bc-7142-47f6-a593-1cf9a8c84e98
+:form:     [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]
+:instantiates: [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]
+:author:   [[id:40cbaad9-af3c-4573-b356-ae116687e483][emsenn]]
+:public:   true
+:date-created: [2025-09-27 Sat 00:16]
+:END:
+#+title: Installing Guix on my Omnibook X
+#+date: [2025-09-27 Sat 00:16]
+#+author: emsenn
+
+On [[id:b59c6255-b760-4a18-9ee2-f548c2e9c11a][my Omnibook]], I'm running [[id:82e21c3a-fd3b-4522-95d9-86d2b65a7fcc][Windows 11]], with [[id:173298f2-380a-477b-a408-80829f6177c8][Windows Subsystem for Linux]] hosting [[id:9237354f-c3e1-4e47-9e9d-5f657ecad20f][Ubuntu]]. I'd like to, within this stack, set up [[id:fd807957-f450-4d5f-b7f9-691b792fc39d][Guix]], because after mucking about for a few months, I'm back to remembering that my old [[id:b8ff4a29-92b2-4714-9f2f-1e5074ad929b][MUD designing]] brought me to it, after moving me from [[id:1fb9a34e-749d-450c-b116-5f4ccd76a583][Python]] to [[id:9a4a0fef-53f9-4fba-b853-28c356633252][Racket]] to [[id:2d55e751-41d9-423a-8898-363f0ea9847f][Fennel]].
+
+According to the [[https://guix.gnu.org/manual/devel/en/guix.html][Guix Manual]], I can simply =sudo apt install guix= and =sudo guix pull= , so I've started that, which as started a... very slow download of the Guix source code, I think.
+
+So, I'm a bit stuck on that until later, at which point I'll look at how to get Emacs able to talk to my running [[id:27ea5a2f-4545-4162-ad13-7e46ae1b2ad1][Guix daemon]], and from there, I can start looking at how to make my [[id:3d21771f-14f9-44df-92fd-24a51b0c3937][GnoponEmacs nodes]] into [[id:e55b6272-9761-4983-83bf-01adef238e39][Guix packages]], [[id:db4f2024-d984-45fa-9573-da445435dad1][containers]], and [[id:3acf808b-12e8-4e6d-b898-ead1bb69b925][systems]].
+
+So in the meantime, I'll just dance around [[id:3ffa600c-f831-428f-bd11-a4e6583ff5ad][my files]] and tinker with them.

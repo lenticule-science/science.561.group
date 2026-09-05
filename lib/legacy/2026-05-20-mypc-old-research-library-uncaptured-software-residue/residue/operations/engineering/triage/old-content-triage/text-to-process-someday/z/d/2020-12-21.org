@@ -1,0 +1,38 @@
+#+title: 2020-12-21
+#+begin_head
+#+ghe_schema: daily-record-0.1.0
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-21 Mon 10:27]
+#+roam_tags: daily-record
+#+end_head
+#+name: summary-text
+#+begin_summary
+This is [[file:../emsenn.org][emsenn]]'s [[file:../daily_record.org][daily record]] for [2020-12-21 Mon]. If you are viewing this record outside of its original environment, please be aware it maybe be heavily redacted.
+#+end_summary
+* Activity Log                                                     :noexport:
+* Journal                                                          :noexport:
+** [2020-12-21 Mon 15:09]
+ In planning my [[file:../daily_record.org][daily record]], I think I'm going to mark most of the headlines within the record as =noexport=, but have one for statuses, that will be public.
+
+ The discovered media log also maybe?
+** [2020-12-21 Mon 17:05]
+ Alright, I'm... coming out of the brambles into some sort of [[file:../note_taking.org][note-taking]] [[file:../tool.org][tool]] that I'm not completely dissatisfied with, with [[file:../groundhog_emacs.org][Groundhog Emacs]]. It's funny, in demonstrating it and talking about it, I'm having to recognize [[file:../decision.org][decisions]] I've made, and [[file:../assumption.org][assumptions]], about all sorts of stuff vaguely in the realm of [[file:../epistemology.org][epistemology]].
+
+ Need to clean up my [[file:../org_roam_capture_template.org][Org-roam capture templates]] though, to accommodate the changes to my Org-roam records. Still haven't properly documented any of that, or even talked it through...
+
+ Let me first get those templates cleaned up.
+
+ Unrelated: It's so easy to introduce "bad" ideas. I was using [[file:../org_roam_tags.org][Org-roam tags]] to mark the "domain" of a record, like [[file:../ils.org][ILS]] or [[file:../epistemology.org][epistemology]], but... there's so much overlap, and those terms'll get mentioned in pages that are related to those concepts, or close to.
+
+ (Does make me wonder if certain records couldn't be tagged as "anchors" and then every record shows its closest anchor?)
+** [2020-12-21 Mon 19:31]
+Okay, I think trying to export these notes and then use that as a [[file:../website.org][Website]] base is too fragile. So, the new question is, can I make it so these notes are clean enough that I feel comfortable sharing them? I think that'll take a lot more decision-making, especially to be able to mention other people explicitly, but I think if I start small I can probably figure it out.
+
+So... I'm going to take a break for a little bit, but when I come back I'm going to start going through my existing notes, looking at them and planning schema for each to follow. I'll tinker with my capture templates as I go, but fixing the existing records will probably be largely manual, unfortunately.
+* Postings
+** [2020-12-21 Mon 15:18]
+ I've been tinkering with [[file:../org_roam.org][Org-roam]] the past few days, and am now tinkering with using it as a source of content for my [[file:../website.org][Website]], without having to maintain two discrete sets of records. This is different than my attitude over the past week, where I've been trying to copy notes out of this [[file:../org_roam_database.org][Org-roam database]] into another and use /that/ as the source of the Website's content.
+** [2020-12-21 Mon 21:41]
+   My 250th [[file:../org_roam_records.org][Org-roam record]] was for [[file:../elisp.org][Elisp]], just think that's interesting.
+* Activity Log   :noexport:

@@ -1,0 +1,50 @@
+{{- /*  Map a frontmatter key to an RDFa-usable property URI.
+        Standard vocabularies are preferred; emsenn: is the fallback
+        for predicates with no clean standard fit.
+
+        Prefixes (declared on <html>):
+          schema:   https://schema.org/
+          dc:       http://purl.org/dc/elements/1.1/
+          dcterms:  http://purl.org/dc/terms/
+          rdf:      http://www.w3.org/1999/02/22-rdf-syntax-ns#
+          rdfs:     http://www.w3.org/2000/01/rdf-schema#
+          skos:     http://www.w3.org/2004/02/skos/core#
+          prov:     http://www.w3.org/ns/prov#
+          emsenn:   https://emsenn.net/vocab#
+                                                                     */ -}}
+{{- $map := dict
+  "title"         "schema:name"
+  "description"   "schema:description"
+  "summary"       "schema:abstract"
+  "authors"       "schema:author"
+  "date-created"  "schema:dateCreated"
+  "date-updated"  "schema:dateModified"
+  "date-modified" "schema:dateModified"
+  "tags"          "schema:keywords"
+  "keywords"      "schema:keywords"
+  "type"          "dc:type"
+  "url"           "schema:url"
+  "publication"   "schema:publisher"
+  "year"          "schema:datePublished"
+
+  "cites"         "schema:citation"
+  "citations"     "schema:citation"
+  "references"    "schema:citation"
+
+  "extends"       "prov:wasDerivedFrom"
+  "contains"      "schema:hasPart"
+  "part-of"       "schema:isPartOf"
+  "component-of"  "schema:isPartOf"
+  "see-also"      "rdfs:seeAlso"
+  "related"       "rdfs:seeAlso"
+  "related-to"    "rdfs:seeAlso"
+  "instance-of"   "rdf:type"
+  "defines"       "schema:about"
+  "requires"      "schema:isBasedOn"
+  "teaches"       "schema:teaches"
+-}}
+{{- $result := index $map . -}}
+{{- if not $result -}}
+  {{- $result = printf "emsenn:%s" (. | replaceRE "-(.)" "${1}" | strings.FirstUpper) -}}
+{{- end -}}
+{{- return $result -}}

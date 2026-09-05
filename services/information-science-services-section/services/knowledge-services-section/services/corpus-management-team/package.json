@@ -1,0 +1,29 @@
+{
+  "name": "@561-group/corpus-management-team",
+  "version": "0.2.6",
+  "type": "module",
+  "description": "A directly contractable micro-enterprise that recovers source-bound prior research and analyzes immutable project-corpus snapshots.",
+  "bin": {
+    "manage-project-corpus-knowledge": "./scripts/manage-project-corpus-knowledge.mjs",
+    "solicit-service": "./scripts/solicit-service.mjs",
+    "invoke-service": "./scripts/invoke-service.mjs"
+  },
+  "files": [
+    "scripts",
+    "content",
+    "data",
+    "lib",
+    "src"
+  ],
+  "scripts": {
+    "check": "node --check src/manage-project-corpus-knowledge.js && node --check src/sweep-firm-corpus.js && node --check src/contract-prior-research-recovery.js && node --check src/lib/knowledge-forms.mjs && node --check src/lib/coordination-readout.mjs"
+  },
+  "dependencies": {
+    "@lenticule-science/mathematical-readout-exchange": "0.2.5",
+    "@red-cup-engineering/ni-services-section": "0.1.1",
+    "@red-cup-engineering/semantic-content-identify-service": "0.2.7",
+    "@red-cup-engineering/semantic-record-journal-service": "0.1.6",
+    "ajv": "8.20.0"
+  },
+  "license": "UNLICENSED"
+}

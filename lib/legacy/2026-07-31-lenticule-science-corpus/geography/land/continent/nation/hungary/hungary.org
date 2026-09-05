@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       437831c3-f4ee-49e5-822e-8171d3ccbb96
+:public:   true
+:form:     [[id:ed6718f3-0b95-4b5d-b81e-68501554bf84][nation-state]]
+:region:   [[id:9dde8863-a5a0-4801-bc6f-d1e3e9642dfa][Eurasia]]
+:END:
+#+title: Hungary
+#+date: [2025-08-31 Sun 08:25]
+#+index: Hungary

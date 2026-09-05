@@ -1,0 +1,56 @@
+:PROPERTIES:
+:ID:       76e18c83-2781-40fd-99cd-7122f7fd73cd
+:form:     [[id:0f290d0b-247e-4f7b-a0d4-ddbca3c97326][babble by emsenn]]
+:public:   true
+:date-created: [2025-09-20 Sat 10:34]
+:END:
+#+title: Anchoring Oktoberfest/Indianer genring post in theory
+#+date: {{{property(date-created)}}}
+#+author: emsenn
+
+I just wrote [[id:9f14134d-6d59-4317-9352-b3a200193a4b][Post to @emsenn@kolektiva.social, 2025-09-20 08:29h, On Oktoberfest as Bavarian genring and its relationship to Indianthusiasm]] and I want to go ahead and write through some of the claims and their theoretical referrants, in case i want to come back to the idea later.
+
+- [[id:31eeb2c2-7bdf-4be8-9050-3b595513d6f1][genre]] can be a [[id:87885ec8-8b6c-4131-9fc6-648b6de95136][technology of governance]] when [[id:c8354ff2-4655-4ab9-bea9-5963264c97d4][liberal subjectivation]] is a [[id:a0aef404-f3f9-4e87-b678-00be5eaef6b1][mode of governance]]
+  - [[id:e7d11cd2-1c74-406e-960e-0d56f90e5331][Michel Foucault]], [[id:ece53dd7-a7a1-4f04-be20-d779a1f86720][governmentality]]
+  - [[id:d1afc3b9-8c3e-458b-8215-35d427aed655][Juri Lotman]], [[id:3f0d714d-5c21-4cae-8e86-0fe57da4c88d][semiosphere]], genre as [[id:fce72cee-7601-496f-a247-b2eaf6b2c7ca][semiotic code boundary]]
+  - [[id:10583167-45ac-4b7c-a695-1323a5c51ab8][John Frow]], genre as [[id:3d70c365-cb46-47b7-bc92-86741cd60fb9][protocol]]
+  - [[id:4c013b44-27fc-4059-9177-90d771abd409][Benedict Anderson]], [[id:842e1628-f58b-49d0-9919-fbf5c630cca7][imagined community]]
+  - [[id:c979ca4d-1cfa-43bf-b079-f9c416f58ddd][Walter Benjamin]], [[id:972732e6-3034-4676-8a8c-d9678aaf5966][homogenous time]], [[id:b801ec67-6dda-40de-9e0a-417d6e3bf8f6][empty time]]
+- [[id:17c367a0-2b25-4aac-9cf2-b61588822406][interpellation]] via [[id:12a0ee0f-2eb4-4789-abe2-bdc4acf0a244][costuming]] and [[id:31d975f1-4170-4480-b5ae-ea8554215060][performing]]n
+  - [[id:af325496-886c-4ce7-b8ca-6543cd096b9a][Louis Althusser]], interpellation
+  - [[id:31b94296-2b45-488a-bd4d-8d7d8c2170d5][Judith Butler]], [[id:6c80c92a-8116-41bb-b8e2-d80d22084a75][performativity]], [[id:77c87f11-2f41-4708-9159-cffa8e6e08e5][citationality]]
+  - [[id:153b6050-36f4-4938-a3a8-be96c7334670][Erving Goffman]], [[id:6d32f8db-8a29-4386-80f6-9e88375dfe79][dramaturgy]]
+  - [[id:3eb2d150-cc83-422e-859e-373519ba75d9][Victor Turner]], [[id:e3c7732e-f7ad-4d7f-9f0b-491c3402f2e9][ritual process]], [[id:6720d275-2fb5-4058-ab88-420875c2bdbc][social drama]]
+  - [[id:99dc6ff8-cf2c-472a-ae1e-7bc5a2313787][Richard Schechner]]
+- [[id:e3bb1532-a410-4c83-a4f0-4399750ce382][affective economics]] and [[id:e9501f67-37ca-44d4-92eb-9980a0f1ef14][affective ontologizing]] make [[id:36f6ebba-a411-40b8-aa9b-e90c1752b85c][stereotypes]] [[id:e78f958d-6f12-4bd0-a324-822252c23661][feel]] [[id:34355157-6f8f-4a47-9286-bb5dfdec44e0][true]]
+  - [[id:80fa5009-8f87-498f-a5db-5ccb844097b3][Sara Ahmed]], affective economics, [[id:da79bef1-a34e-4986-b266-92b437441840][stickiness of affect]]
+  - [[id:514fd380-41cf-4cb0-80c8-71ca090b8dd5][Lauren Berlant]], [[id:c8d724ba-7d9c-4034-952a-4d58b0031d41][cruel optimism]]
+  - [[id:be47b642-0d7c-4183-b76b-1fb9fe6381c5][Brian Massumi]] on [[id:7da1183b-8e2e-4742-9c1d-a0acfaa5a1d7][intensity]] and [[id:281ba07c-012c-4a4d-88bf-d52da7d31181][affect]]
+- [[id:a04828a5-add1-4eac-be54-63d32938cfd0][invented tradition]] [[id:fe5f19f5-4966-42c0-bc11-f5b5f7031238][creates]] the [[id:7ee544f1-1549-4635-b25a-b323441e22a0][Volk]]
+  - [[id:e1a29ca6-8757-4546-99cb-a966cedef001][Eric Hobsbawn]], [[id:379dc91e-bd33-4fe4-a9b8-e1cfa3fd5fcb][Terrence Ranger]], invented tradition
+  - [[id:33404523-0960-4fdb-b07d-9ec6965f6ff4][George L. Mosse]], [[id:9e292a85-5ba4-4572-b075-2cd83fe78d47][volkisch nationalism]], [[id:a30a532c-e44b-4b5b-9232-d42379eb84df][Volksgemeinschaft]]
+- colonial optics in and out the nation
+  - [[id:997a3697-2f7b-46ae-ae98-6c9d79ee2d72][Patrick Wolfe]], [[id:ce556cef-b762-442b-a369-320ce9c159dc][structure of settler-colonialism]]
+  - [[id:9dae043b-14b1-4ef3-a83a-bf1b2eca7933][Philip J. Deloria]], [[id:969ff07f-4139-4938-911f-48d92b19c88d][Playing Indian]]
+  - [[id:879b1c87-d889-48d4-8563-68052f20e85f][Shari M. Huhndorf]], [[id:2f33a995-ade0-4888-a781-6079471dac9b][Going Native]]
+  - [[id:4e7d369f-0661-4fbd-aa7a-2fed904fbb21][Michael Hechter]], [[id:cfe26579-950a-4680-9b86-9dde0690c6de][internal colonialism]]
+- [[id:8a66b93e-0494-4f57-bc79-7506fd1da16f][biopolitics]] and [[id:978eff09-3015-4599-95e7-d683cab67960][necropolitics]], genre as [[id:a553f35d-9ca7-4fb9-aa05-ff5887364a87][necropolitical categorization mechanism]]
+  - Foucault again, [[id:f3ae8c30-cd53-4e49-856f-9f05c2b146db][biopower]], [[id:8a66b93e-0494-4f57-bc79-7506fd1da16f][biopolitics]]
+  - [[id:c253a546-c522-4a69-b16c-f00fcc8cfb9a][Achille Mbembe]], [[id:978eff09-3015-4599-95e7-d683cab67960][necropolitics]]
+  - [[id:f4081f8c-19fd-48a6-abb7-403b835bae13][Giorgio Agamben]], [[id:11df01ad-11f6-4b4a-913f-dc52608d9110][state of exception]], [[id:65c9f9bc-083a-4596-87d2-e9b52fcdf153][Homo Sacer]]
+  - [[id:a42f9a07-01d6-4369-b235-977e3d0ec842][Michael Omi]], [[id:c46378cf-3c2d-4eb4-9073-56eef208e5b2][Howard Winant]], [[id:0283ee35-d602-4dc4-b719-c7761709923f][racial formation]]
+- [[id:14b25236-395a-4b05-94ce-de6a37cb0ec4][exhibitionary complexes]] [[id:a1a802c7-32b8-4d24-8f9b-c3192d30bbf4][train]] the [[id:f481d1ff-083c-49cb-8a7a-048ac19f6f6d][national gaze]]:
+  - [[id:7951d196-6c4b-4c99-b3eb-bdec27b77a0d][Tony Bennett]], exhibitionary complex
+  - [[id:21782d8e-0139-4edb-b5b7-53de0e010b4a][Theodor W. Adorno]] and [[id:592e7351-1e4c-4990-b277-5f81d28e450d][Max Horkheimer]], [[id:3fd5286f-4d4a-4a4c-b05b-55715ca59d9d][culture industry]]
+  - [[id:9074f2ab-f6de-4345-9460-1a92ab989e20][Guy Debord]], [[id:fea129b0-d961-4e89-8d50-9aea72db2b3a][society of the spectacle]]
+  - [[id:6553eff3-2649-4d61-a7d4-8d481cfc8cbe][Timothy Mitchell]], [[id:0dc58dc1-5afe-4c53-8e64-5f179a811a80][world-as-exhibition]]
+- genre + [[id:1ead0ed9-257a-4fce-bba5-90cdee1d4d0f][land]] = [[id:70317862-084f-48b8-a5ef-70506cbe3a2c][governance of space]]
+  - [[id:43bb6efb-922d-49c0-87a3-d124c0579b0f][Elizabeth Povinelli]], [[id:c8484a21-ff76-4798-a1a6-2b47ec2cb84b][geontology]], [[id:beb0b94b-1c71-4615-8cbe-e3d62594d702][late liberalism]]
+  - [[id:329425ba-8c4e-4e49-b781-64659a9fad62][Audra Simpson]], [[id:8d9c9aa5-d801-49a1-b140-c386ffd2d506][refusal]], [[id:5b47c241-b480-427d-b257-a5c061fb6014][Indigenous sovereignty]]
+  - [[id:39356538-110c-450f-8174-04c3c2aaa144][Eve Tuck]], [[id:740d65fb-e6bb-46ce-b62b-ed48e14ac014][K. Wayne Yang]], [[id:21e23b2b-5d94-4296-a004-316a28a16556][Decolonization is not a Metaphor]]
+  - [[id:4285bf87-e677-4b7c-b1ac-e8096f141a82][Glen Sean Coulthard]], [[id:ade03cd0-6d0c-438a-9f04-ebf970cf4eba][political recognition]] versus [[id:09383e24-f271-4fd0-882d-6af09575b198][Indigenous resurgence]]
+- [[id:6e8d9ea7-1277-4637-8f66-d7c5f421f488][authenticity]] and [[id:4e2563f7-35d8-4673-9059-838f12903e8e][crisis management]]
+  - Berlant's cruel optimism again
+  - Mosse [[id:95cd63a5-f170-4b4f-b5fe-2fa0c5d4378c][aesthetics of politics]] and [[id:2a2aa398-65cf-48bb-b01a-c2e80a7c4feb][mass choreography]][fn:: Random thought, but what about connecting [[id:ada9857e-a613-4962-ae56-614e7dcf572f][governing by genre]], mass choreography, and the [[id:9373e508-8a19-496d-8bb7-4016a3ded6d6][positivism]]  shared by [[id:5a898ac0-0046-4074-b0d5-ed6b60aac677][liberalism]] and the [[id:3d508f83-dac3-43e2-8f42-5ac498a4be41][Church]] with [[id:c1c286e1-85f7-4e58-ad87-e3ec8abb0233][Kurt Vonnegut]]'s quote about "peculiar travel instructions are dancing lessons from God."]
+  - Benjamin's [[id:65a5f623-1600-459d-9c0e-4887ef3239da][mythic time]] and [[id:4b2c1878-2ca5-4eb9-b884-4079df314420][messianic time]]
+  - [[id:927d8200-e7f2-4d22-8210-c9c78d122fc0][Frantz Fanon]], [[id:e36c8522-f215-4b71-b2f4-9089d6182d69][national culture]]

@@ -1,0 +1,33 @@
+:PROPERTIES:
+:ID:       3ca0238a-4623-4722-808a-93a21d4ca3f1
+:form:     [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]
+:public:   true
+:END:
+#+title: Babble, [2025-09-20 Sat 21:44], Geontological analysis of Flavor Town
+#+date: [2025-09-20 Sat 21:44]
+#+author: emsenn
+
+When [[id:43bb6efb-922d-49c0-87a3-d124c0579b0f][Elizabeth Povinelli]] published [[id:6df11fb6-a8de-4cee-9075-72a4e332cd9d][Geontologies: A Requiem to Late Liberalism]] ([[id:e1e38af3-bbde-47d5-9c89-6ed7d3a25ed8][2016ce]]), she introduced a [[id:d8063aed-c504-44af-a0d1-186b93e384fc][vocabulary]] for [[id:9ca86d85-debc-432f-b882-bbffe32a826b][analyzing]] how [[id:beb0b94b-1c71-4615-8cbe-e3d62594d702][late liberalism]] [[id:2dd648f9-bca7-4a8e-9793-d87b5eef33ad][organizes]] the divide between [[id:d0e3bee2-f4b5-46db-9956-b4b6d59e2fb6][Life]] and [[id:68f28644-a3da-4fd1-80e8-bcf91bd4c369][Nonlife]].
+
+That distinction (life as vitality, nonlife as inert background) is a great lens for looking at [[id:1e91ba09-35dc-482e-af44-6276f88fdc0d][Flavor Town]] as a [[id:5a410a94-1eca-4794-8818-f25eede72074][commercial brand]] and [[id:22c823e9-0916-49e0-9c33-6d93823afe8b][imaginary space]].
+
+[[id:500e0934-07fc-4034-9e14-cfc13ce1c579][Diners, Drive-Ins, and Dives]] continually codes flame, sizzle, and "the money bite" as the pulse of Life, while the petroleum-and-broadcast infrastructure is folded down into a silent Nonlife substrate.
+
+
+Povinelli's [[id:c5e4c79c-2098-4b97-b97c-02bf49c09f21][geontopower]] is the starting frame here: [[id:37e301e0-153a-4480-873b-7e4f5d1a695c][governance]] through the management of thresholds, specifically: what gets to count as alive, and what is background.
+
+The moments of food-as-performance in Flavor Town media are indices of vitality, but the system of highways, refrigerators, and television that make these moments visible (and thus measurable as Life) are themselves invisible (and thus immeasurable as Life: thus, Nonlife).
+
+[[id:00fef16e-1a2c-4f91-99a0-1312c9528a4f][Animacies: Biopolitics, Racial Mattering, and Queer Affect]] ([[id:98d4a424-1ec1-4b51-a9cb-4408ebb61ea6][2012ce]]) by [[id:d82a76c3-bf32-48c0-a985-42e3b4707635][Mel Y. Chen]] provides the [[id:fd6ecbed-9bdf-4570-b4b2-5ff7744c0a96][concept]] of [[id:d5498401-3696-4687-bd10-39fe71155050][animacy hierarchy]], which helps understand the geontological categorization that happens in Flavor Town media: a sandwich "sings," a sauce "kicks," a dish "dances:" good food is /animate/: alive. Fieri describes proprietors and chefs as living parts of American culture, and their restaurants as part of what keep certain parts of American culture alives.
+
+[[id:80fa5009-8f87-498f-a5db-5ccb844097b3][Sara Ahmed]]'s [[id:ad136a3e-0d72-4d02-887d-a519cd305f1b][The Cultural Politics of Emotion]] ([[id:acc1bf30-430e-46bc-be8e-b38fd6671103][2004ce]]) lets us re-understand this indexing of liveliness as an indexing of affect. Joy, belonging, conviviality: these emotions get "stuck," in Ahmed's terms, to the benevolent host and the communal small business[fn:: If that isn't a contradiction in terms...]. These emotions aren't just felt: they're produced by the show and part of what Ahmed calls an [[id:bf80a8a9-fd7a-4cee-b6ab-86252738d04b][affective economy]]. Flavor Town is not just showing that good food is food that incites a certain set of feelings, but using those feelings to bind the viewer to certain ideas of food and restaurant.
+
+[[id:2e9b6d3b-f095-4640-b4df-5d6741c639f9][Henri Lefebvre]], with [[id:9f9c3313-c87a-4143-8f48-a1ce6f06ef19][The Production of Space]] ([[id:3d2d60c1-7ab9-49ab-b852-d943a49abe45][1974ce]]) gives us one way of understanding how those feelings are bound: by being brought together in a produced space. Flavor Town is not just a produced space, though, it's also an imaginary space. [[id:9f6de6aa-6798-491a-a299-e13e87daa867][Jean Baudrillard]]'s [[id:f4642a8a-1b44-4f94-89c3-16d06975b351][Simulacra and Simulation]] ([[id:0d443365-5d60-4a98-a2e6-2f370696e503][1981ce]]) gives a language for how this space is formed out of bindings between feelings, visual media, and real food.
+
+[[id:9664b22a-dc78-4a09-9683-51d5e0d591da][Public Culture]] ([[id:0d443365-5d60-4a98-a2e6-2f370696e503][1981ce]]) by [[id:13906f3d-d6d3-40cc-ba16-710d77d0026f][Arjun Appadurai]] talks about [[id:c765136f-af5f-4222-be5a-634d5510136f][gastropolitics]]: food as a negotiating social power. Flavor Town's staging of multiethnic cuisines within the national table enacts this negotiation. [[id:abc9fe82-5a5d-48ef-9503-6a5734b798ad][Eating the Other]] from [[id:831a6d29-68c6-4b4e-b4fc-84ff37e52fc7][bell hooks]] discusses difference as spice, as reassurance to the dominant center. This is exactly how Flavor Town packages its relationship with ethnic cuisine: always folded back into a white settler "we."
+
+[[id:1fb38a09-90ce-4e8a-803f-ee51df9e9e78][Anna Tsing]]'s [[id:a57870ad-a8a1-45d2-89a7-08d0f8c9d71a][The Mushroom at the End of the World]] ([[id:fd652e5e-44b5-471a-960b-7caf41c9fec3][2015ce]]) and [[id:9ff05e62-0c23-4248-bdfe-3c264a35c545][Stefano Harney]] and [[id:caeb4860-5a34-4349-9218-339fbff3e019][Fred Moten]]'s [[id:8c9f8d83-97e8-4590-ace6-85d2cef0741a][The Undercommons: Fugitive Planning & Black Study]] ([[id:104e8d3d-a604-4ce5-9e95-f8d4ed43498a][2013ce]]) give us terms for visibilizing the Nonlife of Flavor Town:
+
+The Life of Flavor Town is parasitic on the Nonlife infrastructure of industrial logistics: standardized equipment, containerized transport, precarious service labor. The televisual Lifeliness only works because this Nonlifely substrates exist. So, Flavor Town geontopower comes from erasing industrial logistics and the real material world in which that occurs with an imaginary Town.
+
+When Flavor Town functions as the produced space through which people negotiate their affective relation to food, its animacy cues and affective economies become the criteria of judgment, such that food is rendered good when it performs Flavor Town’s liveliness and bad when it does not.

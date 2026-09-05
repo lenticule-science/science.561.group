@@ -1,0 +1,8 @@
+{
+  "name": "@561-group/task-services-section",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Knowledge-services node accountable for task dispatch and office obligations.",
+  "scripts": {
+  }
+}

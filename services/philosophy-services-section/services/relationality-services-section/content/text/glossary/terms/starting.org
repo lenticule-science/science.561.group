@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       1bbad071-fa84-42a1-ada3-122d4bb97900
+:public:   true
+:instantiates: [[id:32e00173-c695-4bb6-b0d2-9dc17fec128b][act]]
+:END:
+#+title: starting
+#+date: [2025-08-25 Mon 08:54]
+#+index: starting

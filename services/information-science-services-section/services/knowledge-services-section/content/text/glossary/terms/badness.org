@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       f2d72b4f-4262-4ae8-bb6a-a6a325e8adac
+:END:
+#+title: badness
+#+date: [2025-10-16 Thu 11:27]
+

@@ -1,0 +1,30 @@
+:PROPERTIES:
+:ID:       672ab7a1-d632-48be-b18d-08a54472bb8c
+:FORM: [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]
+:instantiates: [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]
+:author:   [[id:40cbaad9-af3c-4573-b356-ae116687e483][emsenn]]
+:public:   true
+:date-created: [2025-07-18 Fri 09:33]
+:END:
+#+title: Returning to Emacs with GnoponEmacs
+#+date: [2025-07-18 Fri 09:33]
+#+author: emsenn
+
+After too long dealing with other [[id:9ac2f310-aba2-4b7c-afcd-f1c5d9f53f5d][text editors]], I'm finally returning to [[id:6a3fc30f-fd91-4d01-b5bb-ef4f001d934a][Emacs]]. A critical first step in this is dusting off my old [[id:1c59164e-ad43-4c24-a1ec-7a6c8a411149][Emacs configuration]], which I'd named [[id:48a79dfe-1b45-4f7f-a9a5-41d6bb70d2d7][InfoPonEmacs]].
+
+Since then ([[id:3bfd9dde-2784-4cf2-9794-b1b8129824de][2021ce]]), I've gotten more particular in my [[id:0bfc9029-808a-4d8b-b79e-db67955c2b23][neologisms]], specifically about mixing [[id:59cc2103-ae6b-4bc5-b35e-33377eb58174][Latin]] and [[id:fe2c5961-eb71-4bcd-83ba-b918b9f87e98][Greek]] influences, and have also significantly developed my interest in philosophy, epistemology, etc. (See [[id:f0c26b81-a602-4ce3-8e2e-43919e4c58b0][emsean thought]]).
+
+So, one of the first things I'm doing, to more than dust off the system, is renaming it /[[id:edc48bf0-336b-4b63-8505-a3730b328c9d][GnoponEmacs]]/.
+
+From there, I want to tweak a *lot* of how the system is implemented, in-line with the things I've been learning in other ways over the past few years.
+
+I want to make it so there is, in the root directory of our [[id:df5b6004-76f9-4999-a541-67926b1d4710][Gnoponograph]], a script for starting GnoponEmacs, specifically, rather than having InfoPonEmacs take over the users' Emacs configuration.
+
+Additionally, I want to rely more on placing snippets of configuration (i.e. capture templates) into a directory (or set of subdirectories) that the relevant configurations look into. That way, the main source file doesn't have to have a bunch of stuff about my personal capture templates in there, and the whole thing can be a little more modular.
+
+So, user runs a script that starts Emacs and, if necessary, runs the GnoponEmacs installation script, creating the directories that it needs for itself (a directory for [[id:043e8b51-1e7e-408c-b28d-1f2f0206220d][YASnippet snippet]]s, for example.)
+
+From there, they use [[id:3bb7a408-2522-42c1-937d-a01ca22ea23f][Org-mode]]/[[id:59181fb6-bc78-4d87-8384-c9f52f5c505e][-roam]] capture templates and [[id:e5474b02-2852-4c8a-91cd-4a683e0db672][Org-roam node]] lookups to create /[[id:caf37028-b36c-43ff-931d-7f2508a24d22][Gnoponograms]]/ and navigate the resultant /[[id:7b9e9c95-fd79-485e-8f03-db514b03a72c][Gnopolology]]/?
+
+Another thing I want to set up is a way to do audio input, and I do want to look into integrating in [[id:00d4fa27-d2ea-4d21-98e2-abb17e887175][large language model]] conversations, in some way.
+

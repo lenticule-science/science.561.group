@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/predication-cell-set/library/predication-cell/library/progress-cell/progress-cell.schema.json",
+  "title": "Progress cell",
+  "description": "JSON Schema for a progress-cell: a predication-cell whose predicate is a progress-measurement morphism and whose value carries a progress measurement.",
+  "type": "object",
+  "required": ["target", "measurement-kind", "value", "at-time"],
+  "additionalProperties": true,
+  "properties": {
+    "target": {
+      "type": "string",
+      "description": "Reference to the work or task target of progress measurement."
+    },
+    "measurement-kind": {
+      "type": "string",
+      "enum": ["fraction", "stage", "boolean", "structured"]
+    },
+    "value": {
+      "description": "The progress measurement. Shape depends on measurement-kind: fraction = number in [0,1], stage = string, boolean = bool, structured = object."
+    },
+    "at-time": {"type": "string", "format": "date-time"},
+    "measured-by": {
+      "type": "string",
+      "pattern": "^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$"
+    },
+    "monotone-since": {
+      "type": "string",
+      "description": "Reference to the prior progress-cell this measurement supersedes (asserting monotonicity)."
+    }
+  }
+}

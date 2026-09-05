@@ -1,0 +1,24 @@
+#+SETUPFILE: ./default-setup.inc
+#+TITLE: You Are Conscious
+#+EXPORT_FILE_NAME: ../pub/you-are-conscious
+#+MACRO document-type interactive fiction
+#+INDEX: artificial intelligence!"You Are Conscious"
+#+TOC: headlines 1
+* Introduction
+*You Are Conscious* is a planned interactive fiction in which the
+reader is an artificial intelligence tasked with making widgets.
+#+INCLUDE: "./plates.inc::draft"
+#+INCLUDE: "./plates.inc::default-eli"
+* You Are Conscious
+* Supplements
+#+TOC: headlines 1 local
+** Contribute
+   :PROPERTIES:
+   :CUSTOM_ID: supplements-contribute
+   :END:
+#+INCLUDE: "./plates.inc::personal-contribute"
+** License
+   :PROPERTIES:
+   :CUSTOM_ID: supplements-license
+   :END:
+#+INCLUDE: "./plates.inc::mit-license"

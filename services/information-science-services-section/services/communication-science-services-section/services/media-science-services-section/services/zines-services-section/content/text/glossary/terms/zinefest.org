@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       45f56f8b-5d6a-49d0-9b34-7af697b814e0
+:ROAM_ALIASES: zinefests
+:public:   true
+:form:     [[id:9752894a-039f-4264-bba2-a685b549d9ab][marketplace]]
+:END:
+#+title: zinefest
+#+date: [2025-08-25 Mon 08:28]
+
+A */zinefest/* is a form of [[id:9752894a-039f-4264-bba2-a685b549d9ab][marketplace]] specializing in [[id:0f225eec-d192-4536-9dec-01502d81703a][distributing]] or [[id:a54e4e93-b938-4270-bb87-cae70b8b741c][selling]] [[id:fb179423-029a-4506-83c3-9bad6793e1ab][zines]].

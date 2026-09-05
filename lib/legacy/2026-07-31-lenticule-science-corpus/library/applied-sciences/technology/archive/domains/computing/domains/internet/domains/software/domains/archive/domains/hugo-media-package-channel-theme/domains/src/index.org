@@ -1,0 +1,310 @@
+#+TITLE: Hugo Media Package Channel Theme
+#+EXPORT_FILE_NAME: ../hugo-media-package-channel-theme
+#+SETUPFILE: ../../brutstrap/pub/brutstrap.css
+#+OPTIONS: broken-links:mark H:10
+#+TOC: headlines 2
+* Introduction
+{{{document-is-software-prototype}}}
+
+This is an implementation of a /media package channel generator/ using
+/Hugo/.
+
+{{{document-eli(default)}}}
+
+{{{document-implements-literate-programming}}}
+* Hugo Media Package Channel Theme
+  :PROPERTIES:
+  :CUSTOM_ID: hugo-media-package-channel-generator
+  :END:
+#+TOC: headlines 1 local
+** DRAFT Overview
+This is an implementation of a /media package channel generator/ in
+/Hugo/: it uses a collection of packages defined in /Hugo/-compatible
+/Markdown/ to create a /media package channel/ with listings in /HTML/
+and /JSON/.
+** DRAFT Operations
+This section explains the various operations involved in using the
+/media package channel generator/ implemented in this {{{doc}}}.
+#+TOC: headlines 1 local
+*** DRAFT Prepare the Generator
+#+TOC: headlines 1 local
+**** DRAFT Create Directories
+     :PROPERTIES:
+     :CUSTOM_ID: create-directories
+     :END:
+This shell script makes all the directories Hugo will expect to have.
+#+begin_src sh :results none
+  mkdir -p ./build/layouts/{_default,audio,documents,images,partials,software,video}
+  mkdir -p ./build/content/packages
+#+end_src
+
+**** DRAFT Tangle Code
+The implementation of this /generator/ is programmed /literately/, as
+code blocks embedded in this {{{doc}}}.
+
+The generator is implemented as a collection of /Hugo templates/,
+which /Hugo/ uses to create /HTML/ and /JSON/ files, representing the
+channel and its packages.
+
+To tangle this code from this document you need the /Emacs/ software
+and its /Org-mode/. Then, while viewing this file, run the command
+=org-babel-tangle=. You must first create directories, see [[#create-directories]["Create
+Directories"]], so the folders the layouts expect are present.
+
+**** DRAFT Remove Past Builds
+If you want to remove past builds:
+
+#+begin_src sh :results none
+rm -r ./build/
+mkdir ./build/
+#+end_src
+*** DRAFT Use the Generator
+**** DRAFT Build the Site
+To rebuild the collection of files that are the /media package
+channel/, you need the /Hugo/ software. Then, run =hugo= while in the
+=./build/= directory, and it will create the channel under
+=./build/public/=.
+*** DRAFT Distribute the Channel
+The generated channel is in =./build/public/=.
+** DRAFT Channel Configuration
+   :PROPERTIES:
+   :header-args: :tangle ./build/config.toml :padline no
+   :END:
+The configuration below /tangles/ to =./build/config.toml=. Explaining
+it in detail is beyond the scope of this document. {{{source(hugo-config)}}}
+#+NAME: site-configuration-base-url
+#+begin_src toml
+  baseURL = "./"
+  languageCode = "en-us"
+  enableEmoji = true
+  title = "emsenn's media store"
+  author = "emsenn"
+  [outputs]
+    page = ["HTML","JSON"]
+#+end_src
+** DRAFT Page Layouts
+This section contains the different page /layouts/.
+#+TOC: headlines 1 local
+*** DRAFT HTML Layouts
+#+TOC: headlines 1 local
+**** DRAFT Base HTML Page Layout
+     :PROPERTIES:
+     :header-args: :tangle ./build/layouts/_default/baseof.html
+     :END:
+Located at =./build/layouts/_default/baseof.html=, this /layout/
+serves as the base for all others in this collection.
+#+BEGIN_SRC html
+  <!DOCTYPE html>
+    <html xmlns="http://www.w3.org/1999/xhtml"
+      {{- with .Site.Language.Lang }} xml:lang="{{- . -}}" lang="{{- . -}}"
+      {{- end }}>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="description" content="">
+      <meta name="keywords" content="{{- .Render "keywords" -}}">
+      {{- with ((.Params.author) | default (.Site.Author)) }}
+      <meta name="author" content="{{ . }}">
+      {{- end }}
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>{{ .Site.Title | default "Media Package Channel"}}</title>
+    </head>
+    <body>
+      <header>
+        <h1>{{ block "headline" . }}{{ .Site.Title | default "Media Package Channel" }}{{ end }}</h1>
+      </header>
+      <main>
+        {{- block "main" . -}}
+          <!-- -->
+        {{- end }}
+      </main>
+    </body>
+  </html>
+#+end_src
+**** DRAFT List HTML Page Layout
+    :PROPERTIES:
+    :header-args: :tangle ./build/layouts/_default/list.html
+    :END:
+Located at =./build/layouts/_default/list.html=, this /layout/ serves
+serves as the base for pages that exist to serve lists, like the index
+(homepage), or taxonomical list pages, such as those for categories or
+tags.
+#+BEGIN_SRC html
+  {{ define "headline" }}
+    <h1>{{ (.Data.Term | title | pluralize) | default .Site.Title }}</h1>
+  {{ end }}
+  {{ define "main" }}
+    {{ with .Pages }}
+      <ul>
+        {{ range . }}
+          <li>
+            <a href="{{ .Permalink}}"><strong>
+              {{- if (eq .Kind "taxonomy") -}}
+                {{- .Title | pluralize -}}
+	      {{- else -}}{{- .Title -}}{{- end -}}
+	    </strong></a><br/>
+	  </li>
+	{{ end }}
+      </ul>
+    {{ end }}
+  {{ end }}
+#+END_SRC
+**** DRAFT Index HTML Page Layout
+    :PROPERTIES:
+    :header-args: :tangle ./build/layouts/_default/index.html
+    :END:
+#+NAME: index-layout
+#+BEGIN_SRC html
+  {{ define "main" }}
+    raaaaaaaaaaaaaaar
+    {{ with .Pages }}
+      <ul>
+        {{ range . }}
+          <li>
+            <a href="{{ .Permalink}}"><strong>
+              {{- if (eq .Kind "taxonomy") -}}
+                {{- .Title | pluralize -}}
+	      {{- else -}}{{- .Title -}}{{- end -}}
+	    </strong></a><br/>
+	  </li>
+	{{ end }}
+      </ul>
+    {{ end }}
+  {{ end }}
+#+END_SRC
+**** DRAFT Package HTML Page Layout
+    :PROPERTIES:
+    :header-args: :tangle ./build/layouts/_default/single.html
+    :END:
+#+NAME: default-single-document-layout
+#+BEGIN_SRC html
+  {{- define "main" -}}
+    {{- $scratch := newScratch -}}
+    {{- range $version,$versionDetails := .Params.v -}}
+      {{- $scratch.Add "versions" (slice $version) -}}
+    {{- end -}}
+    {{- $scratch.Set "versions" (sort ($scratch.Get "versions") "value" "desc") }}
+        <ul>
+          {{- range ($scratch.Get "versions") -}}
+            {{- $scratch.Set "currentVersion" . -}}
+            {{- range $versionOrigin, $originDetails := (index $.Params.v .) -}}
+              {{- $scratch.Add "versionOrigins" (slice $versionOrigin) -}}
+            {{- end -}}
+            {{- $scratch.Set "versionOrigins" (sort ($scratch.Get "versionOrigins") "value" "asc") }}
+          <li><strong>{{ . }}</strong>:<ul>
+                  {{- range ($scratch.Get "versionOrigins") -}}
+                    {{- $scratch.Set "currentOrigin" . -}}
+                    {{- $scratch.Set "currentLocation" (index (index (index $.Params.v ($scratch.Get "currentVersion")) ($scratch.Get "currentOrigin")) "location") }}
+            <li><em>{{- . -}}</em>:<ul>
+                      {{- range (index (index (index $.Params.v ($scratch.Get "currentVersion")) ($scratch.Get "currentOrigin")) "formats") }}
+              <li>
+                <a href="
+                      {{- if (eq ($scratch.Get "currentOrigin") "local") -}}
+                                {{- $.Site.BaseURL -}}
+                              {{- end -}}
+                              {{- $scratch.Get "currentLocation" -}}
+	                      .
+                              {{- . -}}
+                            ">
+                            {{- . -}}
+                </a>
+              </li>
+                        {{- end }}
+            </ul></li>
+                {{- end -}}
+                {{- $scratch.Delete "versionOrigins" }}
+          </ul></li>
+        {{- end -}}
+        {{- $scratch.Delete "currentVersion" }}
+        </ul>
+  {{- end -}}
+#+END_SRC
+**** DRAFT 404 Page Layout
+    :PROPERTIES:
+    :header-args: :tangle ./build/layouts/404.html
+    :END:
+#+NAME: 404-layout
+#+BEGIN_SRC html
+{{- define "main" -}}
+
+<article>
+    <h1 class="post-title">404</h1>
+    <p>
+        Sorry, we have misplaced that URL or it's pointing to something that
+        doesn't exist.
+    </p>
+    <p>
+        Head back <a href="/">Home</a> or use the <a href="/search/">Search</a> to
+        try finding it again.
+    </p>
+</article>
+
+{{- end -}}
+#+END_SRC
+*** DRAFT JSON Layouts
+**** DRAFT List JSON Page Layout
+**** DRAFT Package JSON Page Layout
+     :PROPERTIES:
+     :header-args: :tangle ./build/layouts/_default/single.json
+     :END:
+#+begin_src json
+  {
+    "shaggy-dog-tale": {
+      "title": "A Shaggy Dog Tale"
+      version: {
+        "0.1.0": {
+          "local":{
+            "location": "/store/"
+            "formats": ["html","org"]
+          }
+        }
+      }
+    }
+  }
+#+end_src
+** DRAFT Example Packages
+This /media package channel generator/ sources from /Hugo/-compatible /Markdown/
+*** A Shaggy Dog Tale
+    :PROPERTIES:
+    :header-args: :tangle ./build/content/shaggy-dog-tale.md
+    :END:
+#+begin_src markdown
+  +++
+  title = "A Shaggy Dog Tale"
+  slug = "shaggy-dog-tale"
+  description = """This is an example of a media storefront content
+  piece listing."""
+  [v."1.0.1"."github"]
+  location = "https://github.com/emsenn/shaggy-dog-tale"
+  formats = ["org", "html"]
+  [v."1.0.1"."local"]
+  location = "/store/"
+  formats = ["org", "html"]
+  [v."1.0.0"."local"]
+  location = "/store/"
+  formats = ["org"]
+  +++
+
+  Blah blah blah
+#+end_src
+* Supplements
+#+TOC: headlines 1 local
+** Example Pages
+#+TOC: headlines 1 local
+*** HTML Channel Index
+#+INCLUDE: "./build/public/index.html" src
+*** HTML Package
+#+INCLUDE: "./build/public/shaggy-dog-tale/index.html" src
+*** JSON Package
+#+INCLUDE: "./build/public/shaggy-dog-tale/index.json" src
+** Index
+- media package :: {{{ref(media-package)}}}
+- media package channel :: {{{ref(media-package-channel)}}}
+- media package channel generator :: {{{ref(media-package-channel-generator)}}}
+- JSON :: {{{ref(json)}}}
+- HTML :: {{{ref(html)}}}
+- Markdown :: {{{ref(markdown)}}}
+- Hugo :: {{{ref(hugo)}}}
+** Source
+The following is the source of this document as it was written by the
+author.
+#+INCLUDE:  "./index.org" src

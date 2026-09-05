@@ -1,0 +1,354 @@
+{
+  "type": "ObsmetrologiaProofRealizationRecord",
+  "version": 1,
+  "recordedAt": "2026-09-04T22:51:38.439Z",
+  "order": {
+    "path": "content/work-orders/hat-metatile-substitution-witness.json",
+    "digest": "sha256:dd1737ff6694a74647e0bd5e0b4f9122cc976dd21b48b6c87fd6eb0e82bcb67c",
+    "id": "hat-metatile-substitution-witness",
+    "module": "Obsmetrologia.AperiodicOrder.Tiling.Witness.HatMetatile",
+    "headline": "Obsmetrologia.AperiodicOrder.Tiling.Witness.hat_metatile_witness"
+  },
+  "specificationDigest": "sha256:e4c011e109b69579370021c7b5bfe52c4da49ec0210e5098fda4c7229c9aaa90",
+  "gates": [
+    {
+      "id": "module-builds",
+      "command": "lake build Obsmetrologia.AperiodicOrder.Tiling.Witness.HatMetatile",
+      "cwd": "/home/emsenn/info/lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/",
+      "code": 0,
+      "passed": true,
+      "findings": [],
+      "outputDigest": "sha256:35ec4f1809ca1af581960146b4bc81636fef2f7851acf352b8bdc25ebccea1a4",
+      "outputTail": [
+        "warning: Obsmetrologia/Calculus/Order/SetNumberGraphTheory.lean:3102:5: Variable name `exact` is not explicitly referenced.",
+        "",
+        "The binding can be removed (if unused) or named `_` (if used implicitly).",
+        "",
+        "Note: This linter can be disabled with `set_option linter.unusedVariables false`",
+        "⚠ [54/62] Replayed Obsmetrologia.Calculus.Order.NumberTheoryCombinatorics",
+        "warning: Obsmetrologia/Calculus/Order/NumberTheoryCombinatorics.lean:399:29: Variable name `hb` is not explicitly referenced.",
+        "",
+        "The binding can be removed (if unused) or named `_` (if used implicitly).",
+        "",
+        "Note: This linter can be disabled with `set_option linter.unusedVariables false`",
+        "Build completed successfully (62 jobs)."
+      ]
+    },
+    {
+      "id": "axiom-budget",
+      "command": "lake env lean /home/emsenn/info/lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia//.lake/proof-audit/hat-metatile-substitution-witness.lean",
+      "cwd": "/home/emsenn/info/lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/",
+      "code": 0,
+      "passed": true,
+      "findings": [],
+      "outputDigest": "sha256:3f15590833f77c346095e616e24e56919dd48310dea21f41c2aef33baf9b4e0a",
+      "outputTail": [
+        "Obsmetrologia.AperiodicOrder.Tiling.Witness.hatMetatileMatrix_is_paper\tpropext",
+        "Obsmetrologia.AperiodicOrder.Tiling.Witness.hatMetatileMatrix_nonnegative\tpropext",
+        "Obsmetrologia.AperiodicOrder.Tiling.Witness.hatMetatileMatrix_pow2_positive\tpropext",
+        "Obsmetrologia.AperiodicOrder.Tiling.Witness.hatMetatileMatrix_primitive\tpropext",
+        "Obsmetrologia.AperiodicOrder.Tiling.Witness.charPolyHat_degree\t",
+        "Obsmetrologia.AperiodicOrder.Tiling.Witness.charPolyHat_monic\t",
+        "Obsmetrologia.AperiodicOrder.Tiling.Witness.cayleyHamilton_hat\tpropext",
+        "Obsmetrologia.AperiodicOrder.Tiling.Witness.hat_charPoly_factors\tpropext",
+        "Obsmetrologia.AperiodicOrder.Tiling.Witness.golden_fourth_power_hat_factor\tpropext",
+        "Obsmetrologia.AperiodicOrder.Tiling.Witness.hat_not_golden_quadratic\tpropext",
+        "Obsmetrologia.AperiodicOrder.Tiling.Witness.hatMetatileMatrix_chu_incidence\tpropext",
+        "Obsmetrologia.AperiodicOrder.Tiling.Witness.hat_metatile_witness\tpropext"
+      ]
+    },
+    {
+      "id": "blueprint-chart",
+      "command": "readLeanWorkspace /home/emsenn/info/lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/",
+      "cwd": "/home/emsenn/info/lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/",
+      "code": 0,
+      "passed": true,
+      "findings": [],
+      "outputDigest": "sha256:d00c4b51bba9281bb199497f090cacb749a89d68e558b77cb953f9a7858bb259",
+      "outputTail": [
+        "{\"modules\":387,\"declarations\":8933,\"nodes\":1121}"
+      ]
+    },
+    {
+      "id": "manual-builds",
+      "command": "lake build",
+      "cwd": "/home/emsenn/info/lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia//docs/verso",
+      "code": 0,
+      "passed": true,
+      "findings": [],
+      "outputDigest": "sha256:8f291d0ec40909510a20109b12e4452c4c7e8efcea73da460f8f8c8bcf2fea5d",
+      "outputTail": [
+        "Note: Example code is shown on mobile devices and other narrow contexts. Long lines are likely to be truncated in the rendered output.",
+        "",
+        "Hint: The limit of this linter can be changed with the option `verso.code.warnLineLength`. This linter can be disabled by setting this option to 0.",
+        "warning: ObsmetrologiaManual/BookXI/CollatzFrontier.lean:2976:0: Line 2976 is too long (68 columns exceeds 60).",
+        "",
+        "Note: Example code is shown on mobile devices and other narrow contexts. Long lines are likely to be truncated in the rendered output.",
+        "",
+        "Hint: The limit of this linter can be changed with the option `verso.code.warnLineLength`. This linter can be disabled by setting this option to 0.",
+        "Build completed successfully (1184 jobs).",
+        "",
+        "warning: verso: repository '/home/emsenn/info/lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/.lake/packages/verso' has local changes",
+        "warning: illuminate: repository '/home/emsenn/info/lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/.lake/packages/illuminate' has local changes"
+      ]
+    }
+  ],
+  "receipt": {
+    "type": "ArtifactFabricationRealizationReceipt",
+    "version": 1,
+    "artifactId": "hat-metatile-substitution-witness",
+    "specificationDigest": "sha256:e4c011e109b69579370021c7b5bfe52c4da49ec0210e5098fda4c7229c9aaa90",
+    "realizations": [
+      {
+        "type": "ArtifactFabricationRealizationEvidence",
+        "version": 1,
+        "projectionId": "blueprint-node",
+        "evidence": {
+          "type": "ArtifactFabricationEvidence",
+          "locator": "lib/obsmetrologia/docs/blueprint/src/chapters/aperiodic-classification/05-hat-monotile-witness.tex",
+          "digest": "sha256:db2375727ca37a9301cd7ee026371ca5a3a925e3cb174ce9747561f95fd6c10d"
+        }
+      },
+      {
+        "type": "ArtifactFabricationRealizationEvidence",
+        "version": 1,
+        "projectionId": "lean-module",
+        "evidence": {
+          "type": "ArtifactFabricationEvidence",
+          "locator": "lib/obsmetrologia/Obsmetrologia/AperiodicOrder/Tiling/Witness/HatMetatile.lean",
+          "digest": "sha256:158533568c534fac95eea5cd512044fd03d7fb1917a33bdad3890d6a0eafce4a"
+        }
+      },
+      {
+        "type": "ArtifactFabricationRealizationEvidence",
+        "version": 1,
+        "projectionId": "verso-verse",
+        "evidence": {
+          "type": "ArtifactFabricationEvidence",
+          "locator": "lib/obsmetrologia/docs/verso/ObsmetrologiaManual/BookVII/HatMonotile.lean",
+          "digest": "sha256:5415ab960c90555b44c936cf4dee8eb8ca3e94e6a7b57fc992f5a383bf484901"
+        }
+      }
+    ],
+    "acceptances": [
+      {
+        "type": "ArtifactFabricationRealizationEvidence",
+        "version": 1,
+        "acceptanceObligationId": "axiom-budget",
+        "evidence": {
+          "type": "ArtifactFabricationEvidence",
+          "locator": "lake env lean /home/emsenn/info/lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia//.lake/proof-audit/hat-metatile-substitution-witness.lean (exit 0)",
+          "digest": "sha256:3f15590833f77c346095e616e24e56919dd48310dea21f41c2aef33baf9b4e0a"
+        }
+      },
+      {
+        "type": "ArtifactFabricationRealizationEvidence",
+        "version": 1,
+        "acceptanceObligationId": "blueprint-chart",
+        "evidence": {
+          "type": "ArtifactFabricationEvidence",
+          "locator": "readLeanWorkspace /home/emsenn/info/lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/ (exit 0)",
+          "digest": "sha256:d00c4b51bba9281bb199497f090cacb749a89d68e558b77cb953f9a7858bb259"
+        }
+      },
+      {
+        "type": "ArtifactFabricationRealizationEvidence",
+        "version": 1,
+        "acceptanceObligationId": "manual-builds",
+        "evidence": {
+          "type": "ArtifactFabricationEvidence",
+          "locator": "lake build (exit 0)",
+          "digest": "sha256:8f291d0ec40909510a20109b12e4452c4c7e8efcea73da460f8f8c8bcf2fea5d"
+        }
+      },
+      {
+        "type": "ArtifactFabricationRealizationEvidence",
+        "version": 1,
+        "acceptanceObligationId": "module-builds",
+        "evidence": {
+          "type": "ArtifactFabricationEvidence",
+          "locator": "lake build Obsmetrologia.AperiodicOrder.Tiling.Witness.HatMetatile (exit 0)",
+          "digest": "sha256:35ec4f1809ca1af581960146b4bc81636fef2f7851acf352b8bdc25ebccea1a4"
+        }
+      }
+    ],
+    "traceability": [
+      {
+        "type": "ArtifactFabricationTrace",
+        "version": 1,
+        "requirementId": "abelianization-is-paper-matrix",
+        "constraintIds": [
+          "axiom-discipline",
+          "lean-toolchain",
+          "leanblueprint-node",
+          "verse-cites-module"
+        ],
+        "projectionIds": [
+          "blueprint-node",
+          "lean-module",
+          "verso-verse"
+        ],
+        "acceptanceObligationIds": [
+          "axiom-budget",
+          "blueprint-chart",
+          "manual-builds",
+          "module-builds"
+        ]
+      },
+      {
+        "type": "ArtifactFabricationTrace",
+        "version": 1,
+        "requirementId": "primitive-at-two",
+        "constraintIds": [
+          "axiom-discipline",
+          "lean-toolchain",
+          "leanblueprint-node",
+          "verse-cites-module"
+        ],
+        "projectionIds": [
+          "blueprint-node",
+          "lean-module",
+          "verso-verse"
+        ],
+        "acceptanceObligationIds": [
+          "axiom-budget",
+          "blueprint-chart",
+          "manual-builds",
+          "module-builds"
+        ]
+      },
+      {
+        "type": "ArtifactFabricationTrace",
+        "version": 1,
+        "requirementId": "cayley-hamilton-quartic",
+        "constraintIds": [
+          "axiom-discipline",
+          "lean-toolchain",
+          "leanblueprint-node",
+          "verse-cites-module"
+        ],
+        "projectionIds": [
+          "blueprint-node",
+          "lean-module",
+          "verso-verse"
+        ],
+        "acceptanceObligationIds": [
+          "axiom-budget",
+          "blueprint-chart",
+          "manual-builds",
+          "module-builds"
+        ]
+      },
+      {
+        "type": "ArtifactFabricationTrace",
+        "version": 1,
+        "requirementId": "perron-factor-golden",
+        "constraintIds": [
+          "axiom-discipline",
+          "lean-toolchain",
+          "leanblueprint-node",
+          "verse-cites-module"
+        ],
+        "projectionIds": [
+          "blueprint-node",
+          "lean-module",
+          "verso-verse"
+        ],
+        "acceptanceObligationIds": [
+          "axiom-budget",
+          "blueprint-chart",
+          "manual-builds",
+          "module-builds"
+        ]
+      },
+      {
+        "type": "ArtifactFabricationTrace",
+        "version": 1,
+        "requirementId": "chu-incidence",
+        "constraintIds": [
+          "axiom-discipline",
+          "lean-toolchain",
+          "leanblueprint-node",
+          "verse-cites-module"
+        ],
+        "projectionIds": [
+          "blueprint-node",
+          "lean-module",
+          "verso-verse"
+        ],
+        "acceptanceObligationIds": [
+          "axiom-budget",
+          "blueprint-chart",
+          "manual-builds",
+          "module-builds"
+        ]
+      },
+      {
+        "type": "ArtifactFabricationTrace",
+        "version": 1,
+        "requirementId": "headline-bundles",
+        "constraintIds": [
+          "axiom-discipline",
+          "lean-toolchain",
+          "leanblueprint-node",
+          "verse-cites-module"
+        ],
+        "projectionIds": [
+          "blueprint-node",
+          "lean-module",
+          "verso-verse"
+        ],
+        "acceptanceObligationIds": [
+          "axiom-budget",
+          "blueprint-chart",
+          "manual-builds",
+          "module-builds"
+        ]
+      },
+      {
+        "type": "ArtifactFabricationTrace",
+        "version": 1,
+        "requirementId": "no-reals-in-core",
+        "constraintIds": [
+          "axiom-discipline",
+          "lean-toolchain",
+          "leanblueprint-node",
+          "verse-cites-module"
+        ],
+        "projectionIds": [
+          "blueprint-node",
+          "lean-module",
+          "verso-verse"
+        ],
+        "acceptanceObligationIds": [
+          "axiom-budget",
+          "blueprint-chart",
+          "manual-builds",
+          "module-builds"
+        ]
+      },
+      {
+        "type": "ArtifactFabricationTrace",
+        "version": 1,
+        "requirementId": "no-aperiodicity-claim",
+        "constraintIds": [
+          "axiom-discipline",
+          "lean-toolchain",
+          "leanblueprint-node",
+          "verse-cites-module"
+        ],
+        "projectionIds": [
+          "blueprint-node",
+          "lean-module",
+          "verso-verse"
+        ],
+        "acceptanceObligationIds": [
+          "axiom-budget",
+          "blueprint-chart",
+          "manual-builds",
+          "module-builds"
+        ]
+      }
+    ]
+  }
+}

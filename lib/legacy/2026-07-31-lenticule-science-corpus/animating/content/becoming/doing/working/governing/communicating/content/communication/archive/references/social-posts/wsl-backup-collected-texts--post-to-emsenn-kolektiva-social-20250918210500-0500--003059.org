@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       912b0312-6730-41f3-b9ee-a9c1f338c7e6
+:form:     [[id:a299fe51-7629-4b6e-afa0-7c7717371cc7][post to @emsenn@kolektiva.social]]
+:END:
+#+title: Post to @emsenn@kolektiva.social, [2025-09-18 Fri 21:05]
+#+date: [2025-09-18 Thu 21:05]
+#+author: emsenn
+
+I write more on [[id:cc253409-9a82-4c5d-a4cd-8013f4e350c6][my website]] than I do here. Most recently I've been [[id:f2829f05-2e51-461e-bcaa-c62c396b7cd7][babbling]] around implementing Moscow-school [[id:7d5cddfa-2cd6-4fae-8592-482fbae85b07][semiosis]] in [[id:1637757f-155b-4cd5-be40-d338324855d4][LISP]] to better map the different [[id:d16d0be9-b066-4ba2-9d92-8eea825db257][sciences]] and [[id:63c53cfe-b992-4015-95b9-0948d600eabd][schools]] I use in my research.
+
+This first link looks at the modern shape of the minimal claims of what a science is
+
+[[id:a4ca1768-2382-4eb1-b4da-12116df827bf][Babble, [2025-09-16 Tue 18:25]​]]
+
+I reach the conclusion that it seems functionally equivalent to Moscow-school semiotics, specifically Lotman's.
+
+So in this second link, I start to sketch out what encoding Lotman's semiosis in in LISP would look like, so I can (down the line) see if I can encode some sciences and scientific texts.
+
+[[id:20c6e9e1-ee11-48c7-8a55-9a98e90480b4][Babble, [2025-09-17 Wed 23:05], Drafting a Fennel library for semiotics]]
+
+That'll let me do a more rigorous and formal version of what I've been doing when I take notes, but also, could help inform how to create and transform radical formations in society, which would also be cool.

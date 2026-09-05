@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       8ced5bc6-b772-4316-8b69-4274067a820f
+:END:
+#+title: bird
+#+date: [2025-08-26 Tue 08:28]
+

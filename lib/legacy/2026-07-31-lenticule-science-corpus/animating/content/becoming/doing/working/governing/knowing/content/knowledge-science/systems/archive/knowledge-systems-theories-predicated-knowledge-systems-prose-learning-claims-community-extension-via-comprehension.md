@@ -1,0 +1,81 @@
+---
+type: theorem
+status: sketch
+depends-on: [predicated-knowledge-system, knowledge-fiber-algebra, discourse-community-as-fiber, epistemic-closure]
+see-also: [aboutness, modal-knowability, federation-as-bilattice-colimit, four-group-register-as-regime]
+---
+
+# A community's extension of a predicate is its Lawvere comprehension on the scope's fiber (sketch)
+
+**Claim** (sketch). Let $\mathcal{K} = (\mathbf{L}, \mathcal{C}, E, \mathcal{S}, \Sigma)$ be a [predicated knowledge system](../objects/predicated-knowledge-system.md), $S \in \Sigma$ a scope ([discourse community as fiber](../teaching/explanations/discourse-community-as-fiber.md)), and $p \in \mathcal{C}_S$ a predicate the community admits. The community's *extension* of $p$ — the set of entity-pairs the community recognizes as standing in $p$ — is given by **Lawvere comprehension** on the scope's [knowledge fiber algebra](../objects/knowledge-fiber-algebra.md) $K_p^S$, in two upstream-proved schemas corresponding to two distinct community-level commitments:
+
+- **Classical comprehension** $\{p : v\}_\mathbf{t} \subseteq E \times E$ — the entity-pairs at which the community has settled $p$ to truth ($v(s, o) = \mathbf{t}$). The community's *asserted extension*. Right adjoint to the truth-side extension functor per [lawvere-comprehension-classical](../../../../../../../humanities/theories/math/theories/categories/theories/predication-categories/theorems/lawvere-comprehension-classical.md).
+- **Paraconsistent comprehension** $\{p : v\}_\top \subseteq E \times E$ — the entity-pairs at which the community has settled $p$ to information-maximal ($v(s, o) = \top$). The community's *contested extension*. Right adjoint to the knowledge-side extension functor per [lawvere-comprehension-paraconsistent](../../../../../../../humanities/theories/math/theories/categories/theories/predication-categories/theorems/lawvere-comprehension-paraconsistent.md).
+
+These two comprehensions are the substrate's currently-proved adjoint constructions; the dual $\mathbf{f}$- and $\bot$-comprehensions are conjectured below as the formal duals under the bilattice involution $\sim$ but are not theorems of the upstream substrate at this writing.
+
+When the value-domain is $\mathbf{L}^\bowtie = \mathbf{FOUR}$ (the standard reading of [predicated knowledge system](../objects/predicated-knowledge-system.md), with $\mathbf{L} = \mathbf{2}$), the community's *full extension profile* on $p$ is the four-tuple
+
+$$\mathrm{Ext}_S(p) \;=\; (\,\{p : v_S\}_\mathbf{t},\;\; \{p : v_S\}_\mathbf{f},\;\; \{p : v_S\}_\top,\;\; \{p : v_S\}_\bot\,),$$
+
+with the $\mathbf{t}$- and $\top$-parts the upstream-proved comprehensions and the $\mathbf{f}$- and $\bot$-parts the *fiber preimages* $v_S^{-1}(\mathbf{f})$ and $v_S^{-1}(\bot)$, well-defined as subsets of $E \times E$ even pending the dual-comprehension theorems. For larger residuated lattices $\mathbf{L}$ the fiber bilattice $\mathbf{L}^\bowtie$ has more than four designated regions and the partition refines accordingly; the four-tuple language below is stated for the $\mathbf{FOUR}$ case and generalizes to a *region-indexed* family of sub-extensions for arbitrary $\mathbf{L}^\bowtie$.
+
+## Setup
+
+Per the [predication hyperdoctrine](../../../../../../../humanities/theories/math/theories/categories/theories/predication-categories/objects/predication-hyperdoctrine.md) machinery, every predicate $p$ has a slice category $\mathcal{C}_S/p$ of specialisations into $p$ within the community's vocabulary. The substitution functor $f^*: \mathcal{E}_p \to \mathcal{E}_q$ for $f: q \to p$ has both adjoints — existential $\exists_f$ on the truth side and existential-paraconsistent $\exists_f^k$ on the knowledge side — and the right adjoints to the corresponding extension functors are the two comprehension schemas.
+
+Concretely, fixing the community's settled valuation $v_S \in K_p^S$ and the designated value $d \in \{\mathbf{t}, \mathbf{f}, \top, \bot\}$, the *$d$-comprehension* of $p$ in scope $S$ is the specialization
+
+$$q_{p, d}^S \to p \quad \text{with} \quad \mathrm{dom}(q_{p, d}^S) := v_S^{-1}(d) \subseteq E \times E.$$
+
+Each $q_{p, d}^S$ is itself a subpredicate of $p$ in the community's vocabulary, classified by the designated value. In the $\mathbf{FOUR}$-case the four such subpredicates exhaust $E \times E$, since every cell receives exactly one of the four bilattice values; in larger bilattices the fiber preimages partition $E \times E$ into one component per bilattice region.
+
+## Statement
+
+**Theorem (sketch).** For every predicate $p$ and scope $S$:
+
+1. **(Adjunction, proved cases)** The two extensions $\{p : -\}_\mathbf{t}$ and $\{p : -\}_\top$ are right adjoints to the truth-side and knowledge-side extension functors $\mathrm{Ext}^\mathbf{t}, \mathrm{Ext}^k: \mathcal{C}_S/p \to \mathcal{E}_p$ respectively, by direct application of [lawvere-comprehension-classical](../../../../../../../humanities/theories/math/theories/categories/theories/predication-categories/theorems/lawvere-comprehension-classical.md) and [lawvere-comprehension-paraconsistent](../../../../../../../humanities/theories/math/theories/categories/theories/predication-categories/theorems/lawvere-comprehension-paraconsistent.md) to the community's hyperdoctrine $\mathcal{E}_p^S$. The adjunction is the substrate-level statement of "the entities the community recognizes as $p$-instances under designation $d \in \{\mathbf{t}, \top\}$ are exactly those for which the $\mathrm{Ext}^d$-classifier of any specialization factors through them."
+
+   **(Conjecture, dual cases)** The corresponding $\mathbf{f}$- and $\bot$-comprehensions are conjectured to be right adjoints to dual extension functors obtained by applying the bilattice involution $\sim$ to $\mathrm{Ext}^\mathbf{t}$ and $\mathrm{Ext}^k$ respectively. This conjecture awaits theoremization in the upstream [predication-categories](../../../../../../../humanities/theories/math/theories/categories/theories/predication-categories/_index.md) family; until then the $\mathbf{f}$- and $\bot$-sub-extensions are used in the partition only as fiber preimages, not as adjoint constructions.
+
+2. **(Partition, $\mathbf{FOUR}$-case)** When $\mathbf{L} = \mathbf{2}$ so $\mathbf{L}^\bowtie = \mathbf{FOUR}$, the four sub-extensions form a partition of $E \times E$:
+$$E \times E \;=\; \{p : v_S\}_\mathbf{t} \;\sqcup\; \{p : v_S\}_\mathbf{f} \;\sqcup\; \{p : v_S\}_\top \;\sqcup\; \{p : v_S\}_\bot,$$
+since $v_S(s, o)$ takes exactly one of the four bilattice values at each cell. For arbitrary $\mathbf{L}^\bowtie$ the partition is indexed by the bilattice's regions rather than by four designated points; the $\mathbf{t}$-region and $\top$-region are still characterized by Lawvere comprehension per (1).
+
+3. **(Closure stability)** Under the community's [closure-rule system](../../../../../../../humanities/theories/math/theories/categories/theories/predication-categories/concepts/closure-rule-system.md) $\mathcal{S}_S$, the asserted extension grows monotonically in $\leq_k$ across settling stages; the silent extension shrinks correspondingly. The contested extension grows when closure rules fire on a cell already at $\mathbf{t}$ to produce $\mathbf{f}$ or vice versa. The denied extension grows when closure rules fire to refute a previously asserted cell; this growth requires the community to admit non-monotone retraction (per [reified-retraction](../teaching/explanations/reified-retraction.md)).
+
+4. **(Federation behavior)** Under [federation-as-bilattice-colimit](federation-as-bilattice-colimit.md) of $S$ with $S'$, the federated extension profile is the bilattice colimit:
+$$\mathrm{Ext}_{S \cup S'}(p) \;=\; \mathrm{Ext}_S(p) \,\vee_k\, \mathrm{Ext}_{S'}(p)$$
+componentwise, with cells where the two communities disagree on the designated value migrating to the contested sub-extension.
+
+## Argument
+
+**(1) Adjunction.** The $\mathbf{t}$- and $\top$-cases are direct applications of [lawvere-comprehension-classical](../../../../../../../humanities/theories/math/theories/categories/theories/predication-categories/theorems/lawvere-comprehension-classical.md) and [lawvere-comprehension-paraconsistent](../../../../../../../humanities/theories/math/theories/categories/theories/predication-categories/theorems/lawvere-comprehension-paraconsistent.md) with $\mathcal{E}_p$ taken in the community's hyperdoctrine $\mathcal{E}_p^S$ (the fiber over $p$ in the community's predication-fibration). The $\mathbf{f}$- and $\bot$-cases remain conjectural pending the upstream substrate documenting the dual right adjoints obtained via the bilattice involution $\sim$; the present theorem does not claim adjunction for them, only the proved $\mathbf{t}/\top$ pair.
+
+**(2) Partition.** The community's settled valuation $v_S(s, o) \in \mathbf{L}^\bowtie$ takes exactly one value at each cell. In the $\mathbf{FOUR}$-case that value is one of $\mathbf{t}, \mathbf{f}, \top, \bot$ and the four sub-extensions partition $E \times E$ as fiber preimages; for larger bilattices $\mathbf{L}^\bowtie$ the partition refines to one component per bilattice region. The partition statement is purely set-theoretic on the fiber preimages and does not depend on the conjectural $\mathbf{f}/\bot$-adjunction in (1).
+
+**(3) Closure stability.** Per [assertion-monotonicity](assertion-monotonicity.md), assertion is $\leq_k$-monotone, so the asserted extension grows at every closure step that fires under $\mathcal{S}_S$ on a previously silent cell. The contested extension grows when a closure rule fires on a $\mathbf{t}$-cell with $\mathbf{f}$-evidence (or symmetrically); the denied extension grows only under explicit retraction discipline.
+
+**(4) Federation behavior.** Direct from [federation-as-bilattice-colimit](federation-as-bilattice-colimit.md): the colimit is computed pointwise by $\vee_k$, which sends $(\mathbf{t}, \mathbf{f}) \mapsto \top$, preserves $\mathbf{t}$ and $\mathbf{f}$ on agreement, and lifts $\bot$ to whatever the other scope settles. The extension-profile statement is the cell-by-cell unpacking.
+
+## Why the disciplines treated this informally
+
+The classical knowledge-organization literature treats *what a controlled vocabulary's term denotes in a community* as either an unanalyzed primitive (the term has its meaning, the community uses it) or as a sociological observation requiring case-by-case description (Bowker & Star's "what counts as a tuberculosis case"). The classical knowledge-representation literature treats it as the model-theoretic extension under a fixed model, with the model itself outside the formalism.
+
+The substrate gives the formal handle: a community's extension of $p$ is a four-part partition of the cell space, computed by Lawvere comprehension on the community's settled valuation. The four parts are operationally distinct — the community can act differently on its asserted $p$-instances (publish them as facts), its denied $p$-instances (publish them as refutations), its contested $p$-instances (mark them as requiring further evidence or community-level adjudication), and its silent $p$-instances (note them as gaps in coverage requiring inquiry). The sociological fact "what counts as a tuberculosis case in this community" is exactly $\{p_{\mathrm{TB-case}} : v_S\}_\mathbf{t}$ in the substrate; the meta-fact that this is community-relative is the dependence on the scope $S$.
+
+## Corollaries
+
+**(C1) Aboutness via comprehension.** The [aboutness](../teaching/explanations/aboutness.md) of a document $d$ to topic $\theta$ in a community's scope is exactly the bilattice value $v_S(d, \theta)$ at the `is-about` cell, and the community's *aboutness extension* of $\theta$ is the comprehension $\{(\text{is-about}) : v_S(-, \theta)\}_\mathbf{t}$ — the document set the community recognizes as about $\theta$. The disciplinary disagreement on whether aboutness is intrinsic (Hutchins) or assigned (Hjorland) is the question of which extension functor fixes $v_S(d, \theta)$, not of whether comprehension applies.
+
+**(C2) Schema is the discrete part of the comprehension.** The community's *schema* on $p$ — the set of cells the community even admits as $p$-typed — is $\{p : v_S\}_\mathbf{t} \cup \{p : v_S\}_\mathbf{f} \cup \{p : v_S\}_\top$ (everything but the silent extension). A schema-validation operation in a knowledge-representation system is the substrate operation of checking that a candidate cell falls in the union of the three non-silent sub-extensions; a schema violation is a cell the community would have to admit into $\{p : v_S\}_\bot$ to type, which the schema discipline prohibits.
+
+**(C3) Knowledge-base completeness as silent-extension shrinkage.** A *complete* knowledge base on $p$ within scope $S$ is one where $\{p : v_S\}_\bot \cap (E_S \times E_S) = \emptyset$ — the community has settled every admitted cell to a designated value. The closed-world assumption is the community-level commitment to interpret $\{p : v_S\}_\bot$ as $\{p : v_S\}_\mathbf{f}$ at query time; the open-world assumption is the commitment to treat $\bot$-cells as genuinely unobserved. The substrate makes both options available without having to choose at the substrate level.
+
+## Status: sketch
+
+`status: sketch` because:
+
+- The $\mathbf{f}$- and $\bot$-comprehensions are stated as "formal duals" of the math substrate's $\mathbf{t}$- and $\top$-comprehensions; making this precise requires extending [lawvere-comprehension-paraconsistent](../../../../../../../humanities/theories/math/theories/categories/theories/predication-categories/theorems/lawvere-comprehension-paraconsistent.md) with the dual right adjoints, which the math substrate has not yet documented as separate theorems.
+- The closure-stability argument in (3) is a one-step claim per closure-rule application; the multi-step claim (the asserted extension grows monotonically across the entire settling trajectory) follows from monotonicity but is worth a separate corollary tying it to the [four-regime classification](../../../../../../../humanities/theories/math/theories/categories/theories/predication-categories/theorems/four-regime-dichotomy.md) — different regimes give different rates of asserted-extension growth.
+- The aboutness corollary (C1) is stated as if `is-about` were a single predicate; in practice, the corpus distinguishes multiple aboutness predicates ([pmest-as-five-axis-decomposition](pmest-as-five-axis-decomposition.md) gives the five-axis refinement). Restating C1 over the five-axis decomposition is straightforward but requires the per-axis comprehension to be spelled out.

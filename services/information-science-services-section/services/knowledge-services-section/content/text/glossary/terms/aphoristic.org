@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       306f10d2-24a5-44c2-bbc0-f53c25adaec7
+:END:
+#+title: aphoristic
+#+date: [2025-09-03 Wed 21:21]
+

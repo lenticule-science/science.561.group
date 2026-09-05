@@ -1,0 +1,108 @@
+{
+  "type": "ObsmetrologiaProofWorkOrder",
+  "version": 1,
+  "id": "hat-reflection-frequency",
+  "title": "Reflected hats have frequency 1 : phi^4, as an integer eigen-relation over Z[phi]",
+  "module": "Obsmetrologia.AperiodicOrder.Tiling.Witness.HatReflectionFrequency",
+  "headline": "Obsmetrologia.AperiodicOrder.Tiling.Witness.hat_reflection_frequency_witness",
+  "declarations": [
+    "Obsmetrologia.AperiodicOrder.Tiling.Witness.GoldenInt",
+    "Obsmetrologia.AperiodicOrder.Tiling.Witness.GoldenInt.phi_mul_phi",
+    "Obsmetrologia.AperiodicOrder.Tiling.Witness.GoldenInt.phi_pow_four",
+    "Obsmetrologia.AperiodicOrder.Tiling.Witness.goldenWeigh",
+    "Obsmetrologia.AperiodicOrder.Tiling.Witness.goldenRowMul",
+    "Obsmetrologia.AperiodicOrder.Tiling.Witness.hatLeftVector",
+    "Obsmetrologia.AperiodicOrder.Tiling.Witness.hat_left_eigen",
+    "Obsmetrologia.AperiodicOrder.Tiling.Witness.hatsPerMetatile",
+    "Obsmetrologia.AperiodicOrder.Tiling.Witness.reflectedHatsPerMetatile",
+    "Obsmetrologia.AperiodicOrder.Tiling.Witness.hat_total_weight",
+    "Obsmetrologia.AperiodicOrder.Tiling.Witness.hat_total_weight_is_three_phi_sq",
+    "Obsmetrologia.AperiodicOrder.Tiling.Witness.hat_reflected_weight",
+    "Obsmetrologia.AperiodicOrder.Tiling.Witness.hat_reflection_frequency",
+    "Obsmetrologia.AperiodicOrder.Tiling.Witness.hat_reflection_frequency_witness"
+  ],
+  "axiomBudget": [
+    "propext"
+  ],
+  "requirements": [
+    {
+      "id": "golden-integers",
+      "statement": "The golden integers Z[phi] are realized as pairs (a, b) standing for a + b*phi with componentwise addition and the multiplication induced by phi^2 = phi + 1, and phi * phi = phi + 1 holds by kernel computation."
+    },
+    {
+      "id": "left-eigen-relation",
+      "statement": "The vector v = (1, 5 - 3phi, 6phi - 9, 6 - 3phi) over Z[phi] satisfies v * M = phi^4 * v entrywise for M = hatMetatileMatrix of the HatMetatile module, where phi^4 = 2 + 3phi is the fourth power of phi in Z[phi]."
+    },
+    {
+      "id": "metatile-weights",
+      "statement": "The hats-per-metatile vector (4, 1, 2, 2) and the reflected-hats-per-metatile vector (1, 0, 0, 0) on the alphabet H, T, P, F are stated as integer weight vectors from the monotile paper's metatile composition (an H holds four hats, one of them reflected)."
+    },
+    {
+      "id": "frequency-ratio",
+      "statement": "Weighing v by hats per metatile gives 3 + 3phi = 3phi^2, weighing it by reflected hats gives 1, and the unreflected weight (total minus reflected) equals phi^4 times the reflected weight: the ratio phi^4 : 1 as an exact identity in Z[phi]."
+    },
+    {
+      "id": "headline-bundles",
+      "statement": "One headline theorem bundles the golden equation, the left eigen-relation, and the frequency identity."
+    }
+  ],
+  "prohibitions": [
+    {
+      "id": "no-reals-no-perron-frobenius",
+      "statement": "The module imports only Obsmetrologia core modules, states no RReal, and claims neither uniqueness nor positivity of the eigenvector: Z[phi] carries no order in core, so that v is THE frequency vector (Perron-Frobenius) is left to the frontier node seated beside the headline."
+    },
+    {
+      "id": "no-aperiodicity-claim",
+      "statement": "The module does not claim the hat aperiodic and does not transcribe metatile geometry; its scope section says so."
+    }
+  ],
+  "openQuestions": [
+    {
+      "id": "golden-integers-primitive",
+      "question": "Z[phi] as pairs is a primitive the metallic tower (StepN.MetallicMean, StepN.GoldenFieldBridge) should own once a second consumer appears; which StepN module seats it, and does phi^n = F(n-1) + F(n) phi land there against metallicNum 1?",
+      "blocking": false
+    },
+    {
+      "id": "eigenvector-positivity",
+      "question": "Positivity of 5 - 3phi, 6phi - 9, 6 - 3phi needs an order on Z[phi] (a sign law through the conjugate norm) or the RReal phi of GoldenFieldBridge; which route keeps the frontier node in core?",
+      "blocking": false
+    }
+  ],
+  "corpus": [
+    "lib/emsenn/services/561-group/services/public-services-section/services/personal-services-section/emsenn-services-section/content/text/documents/articles/notes/2026/06/26/2026-06-26-memo-on-coloring-aperiodic-tiles.md",
+    "lib/emsenn/services/561-group/services/public-services-section/services/personal-services-section/emsenn-services-section/content/text/documents/articles/notes/2026/06/26/quasicrystals_mathematical_frontier_memo.md",
+    "lib/emsenn/services/561-group/services/public-services-section/services/personal-services-section/emsenn-services-section/content/text/documents/articles/notes/2026/06/23/2026-06-23-memo-for-relmath-proofing-agents.md"
+  ],
+  "references": [
+    "D. Smith, J. S. Myers, C. S. Kaplan, C. Goodman-Strauss, An aperiodic monotile, Combinatorial Theory 4(1) (2024) #6, arXiv:2303.10798, section 2",
+    "M. Baake, F. Gaehler, L. Sadun, Dynamics and topology of the Hat family of tilings, arXiv:2305.05639, section 2 eq. (11) and Theorem 4",
+    "D. Smith, J. S. Myers, C. S. Kaplan, C. Goodman-Strauss, An aperiodic monotile, section 2: an H metatile holds four hats, one reflected; T one; P and F two each"
+  ],
+  "frontierOf": "hat-metatile-substitution-witness",
+  "blueprint": {
+    "chapter": "aperiodic-classification",
+    "chapterFile": "09-aperiodic-classification",
+    "file": "06-hat-reflection-frequency",
+    "section": "Hat reflection frequency",
+    "label": "thm:hat-reflection-frequency",
+    "title": "Reflected hats have frequency $1:\\varphi^4$ as an integer eigen-relation over $\\mathbb{Z}[\\varphi]$",
+    "statement": "In the golden integers $\\mathbb{Z}[\\varphi]$ ($\\varphi^2=\\varphi+1$, elements $a+b\\varphi$ as integer pairs) the vector $v=(1,\\,5-3\\varphi,\\,6\\varphi-9,\\,6-3\\varphi)$ is a left eigenvector of the hat metatile matrix $M$ for the eigenvalue $\\varphi^4=2+3\\varphi$: $vM=\\varphi^4 v$ entrywise. Weighted by hats per metatile $(4,1,2,2)$ it gives $3+3\\varphi=3\\varphi^2$; weighted by reflected hats per metatile $(1,0,0,0)$ it gives $1$; so unreflected $:$ reflected $=\\varphi^4:1$ as an exact identity, with no real number and no Perron eigenvector. Every claim is a kernel \\texttt{decide} over $\\mathrm{Fin}\\ 4$ and integer pairs.",
+    "uses": [
+      "thm:hat-metatile-substitution"
+    ],
+    "frontier": [
+      {
+        "label": "thm:hat-perron-frequency",
+        "title": "The golden left eigenvector is the hat's frequency vector",
+        "statement": "\\emph{Open frontier.} $v$ is the unique positive left Perron eigenvector of the primitive matrix $M$ up to scale, so its normalization is the metatile frequency vector of every hat tiling and $1:\\varphi^4$ is a frequency. The target is positivity of $5-3\\varphi$, $6\\varphi-9$, $6-3\\varphi$ through an order on $\\mathbb{Z}[\\varphi]$ (a sign law by the conjugate norm) or through the real $\\varphi$ of the golden field bridge, and Perron--Frobenius uniqueness for primitive integer matrices in core.",
+        "uses": [
+          "thm:hat-reflection-frequency",
+          "thm:hat-metatile-substitution"
+        ]
+      }
+    ]
+  },
+  "verse": {
+    "module": "ObsmetrologiaManual.BookVII.HatReflectionFrequency"
+  }
+}

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       38d223d3-0ea2-4d33-b513-82f075f454c0
+:END:
+#+title: Bulletins
+
+This is a [[id:9c606291-7654-428d-8f3f-13f97cbcb41f][catalog]] of [[id:4a29f148-bdf2-4030-961e-c258fb8708c7][bulletin]]

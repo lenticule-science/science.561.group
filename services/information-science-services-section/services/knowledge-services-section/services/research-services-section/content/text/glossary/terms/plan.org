@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       7801aaee-b673-4a41-8299-9c45859d8fc0
+:END:
+#+title: plan
+#+date: 2025-07-19
+#+author: emsenn

@@ -1,0 +1,44 @@
+{{ define "main" }}
+  raaaaaaaaaaaaaaar
+  {{ with .Pages }}
+    <ul>
+      {{ range . }}
+        <li>
+          <a href="{{ .Permalink}}"><strong>
+            {{- if (eq .Kind "taxonomy") -}}
+              {{- .Title | pluralize -}}
+	    {{- else -}}{{- .Title -}}{{- end -}}
+	  </strong></a><br/>
+	</li>
+      {{ end }}
+    </ul>
+  {{ end }}
+{{ end }}
+
+## Additional material from the Google Drive library
+
+{{ define "main" }}
+  {{ with .Content }}{{ . }}{{ end }}
+  {{ partial "index-menu-listing.html" . }}
+  {{ with .Site.Data.activities }}
+    <h2>Recent Activites</h2>
+    <ul>
+      {{ range $date, $report := . }}
+        <li>
+          {{ (printf "**%s,** %s" (dateFormat "January 2, 2006" $date) $report) | safeHTML | markdownify }}
+        </li>
+      {{ end }}
+    </ul>
+  {{ end }}
+  {{ with .Site.Data.plans }}
+    <h2>Plans</h2>
+    {{ range $type, $plans := . }}
+      <h3>{{ $type | upper }}</h3>
+      <ul>
+        {{ range $plans }}
+          <li>{{ . }}</li>
+        {{ end }}
+      </ul>
+    {{ end }}
+  {{ end }}
+{{ end }}

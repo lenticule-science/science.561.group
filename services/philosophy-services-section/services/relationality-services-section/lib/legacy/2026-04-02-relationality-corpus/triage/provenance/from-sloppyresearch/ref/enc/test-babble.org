@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       db6af486-8736-4c9d-9243-57d8607511c2
+:form:     [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]]
+:public:   true
+:END:
+#+title: test babble
+#+date: [2025-08-29 Fri 21:52]
+#+index: babble!test babble
+
+A */test babble/* is a [[id:d542e8d2-3512-47a0-adbb-4a393e161ecb][babble]] that was created for some [[id:3a319ab1-21e1-415b-8281-186c81e1eafc][test]].

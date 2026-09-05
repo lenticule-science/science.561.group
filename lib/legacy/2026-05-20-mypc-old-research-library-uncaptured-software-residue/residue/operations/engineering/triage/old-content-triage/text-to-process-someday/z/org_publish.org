@@ -1,0 +1,6 @@
+#+title: Org-publish
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2020-12-16 Wed 21:00]
+
+*/Org-publish/* is a component of [[file:org_mode.org][Org-mode]] for rendering an Org-mode file or many in some other format. Most often, /Org-publish/ seems to be used to generate [[file:website.org][Websites]] and [[file:pdf.org][PDFs]].

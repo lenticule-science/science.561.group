@@ -1,0 +1,5 @@
+describing-the-zombie.pdf  sha256  28b5444484146f26164f9ddefdf9d854f0445186e94fd666e5cab569349a9a76
+proposing-relationing.pdf  sha256  544e2a1261558299ad9cead85f0384b9a59e08d2eab160dac295d6421a58520f
+the-walking-dead-as-empircal-ontology-of-unfinished-death.pdf  sha256  34aa1e61bad7ca957f8b3a5bccb8a9ddaa1afd95c825a5c4924cee178d3c33d8
+write-for-a-month-fictional-memoir.pdf  sha256  fb33b712b084effc9cfaa68b46a3358a5521d99081588f56ae5a1cd19252a80f
+

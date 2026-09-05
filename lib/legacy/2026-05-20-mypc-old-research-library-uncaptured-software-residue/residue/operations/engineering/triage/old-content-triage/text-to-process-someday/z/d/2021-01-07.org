@@ -1,0 +1,188 @@
+#+title: 2021-01-07
+#+ghe_schema: daily-record-0.1.1
+#+author: emsenn
+#+email: emsenn@emsenn.net
+#+date: [2021-01-07 Thu 09:06]
+#+roam_tags: daily-record
+
+#+name: 2021-01-07-definition
+This is some of what I (emsenn) experienced and wrote on on [2021-01-07 Thu].
+
+#+toc: headlines 2
+
+* Activity Log                                                     :noexport:
+
+* Journal                                                          :noexport:
+* Postings
+** My perspective on yesterday's protests in the U.S.
+   
+   I've seen a lot of folk asking about what happened yesterday, referring to the [[file:../2021_storming_of_the_u_s_capitol.org][storming of the Capitol]].
+
+   The recent changes on the [[https://en.wikipedia.org/w/index.php?title=United_States_Capitol_Police&action=history][Wikipedia page]] for the [[file:../u_s_capitol_police.org][U.S. Capitol Police]] demonstrate that there has been an effort to establish what happened yesterday that is based in swarming Wikipedia with revisions, not evidence. The page has been changed frequently, with many changes painting vastly different pictures of events. Unless you were there, the reality of events is going to be impossible to discern, and is largely irrelevant.
+
+   "What happened in [[file:../washington_d_c_u_s_a.org][D.C.]] yesterday?"
+
+   Nothing of importance: what matters is that in [[file:../suburb.org][suburbs]] around the country, everyone said "traitor!" about [[file:../ashli_babbitt.org][the woman]] who got shot breaking into Congress, but there are mainly two groups saying it for exactly opposite reasons.
+
+   I cannot stress enough how much the events of yesterday were an attack against the [[file:../american_left.org][American Left]], and need to be seen that way, by [[file:../leftist.org][leftists]], immediately.
+
+   People who were funding your [[file:../protest.org][protests]] against the [[file:../police.org][police]], [[file:../george_floyd_uprising.org][several months ago]], are now cheering someone getting shot by federal cops.
+
+   (This is why for four years I've been repeating "[[file:../accomplices_not_allies.org][accomplices not allies]]" and holding my colleagues up to "impossible" high standards. Because they aren't impossibly high, they're quite easy to clear... if you aren't just waiting for an opportunity to [[file:../collaboration.org][privilege yourself]] within the [[file:../state.org][state]]. All our allies are going to vanish by the end of the month, and the people who will be left will largely be the people who have no place else to go. That's because they have few resources to use to secure privilege within the state, but it also means life is hard for them, outside the state.
+
+I've posted before about how it isn't even the [[file:../kyriarchy.org][kyriarchy]] keeping [[file:../person.org][people]] [[file:../survival.org][alive]] right now, citing [[file:../united_healthcare.org][United Healthcare]] redirecting customers to me, a single [[file:../anarchist.org][anarchist]], for support. Yet you will see a great many people lean into a pursuit of "[[file:../back_to_normal.org][back to normal]]," because the kyriarchy was at least keeping up the pretense of keeping them alive.
+
+Now's the real test. There are people who could get you your [[file:../universal_healthcare.org][free healthcare]], your [[file:../universal_basic_income.org][universal income]], your high-speed [[file:../internet.org][Internet]]. They're right in front of you, willing to help. All you've got to do is support the [[file:../united-states-of-america.org][U.S.]] [[file:../empire.org][empire]].
+
+Will you do it, or will you risk inaccess to healthcare, food, Internet, so that someday /everyone/ might have those things, not just you and your family?)
+
+Today, for the first time in their adult life, a lot of [[file:../zoomer.org][Zoomers]] are /genuinely/ facing the question, "Do you support the US empire?"
+
+I hope they're prepared to be surprised and disappointed by their knee-jerk answers. Looking around the [[file:../fediverse.org][Fediverse]], I have been.
+
+Think it can't happen to you?
+
+[[file:../boomer.org][Boomers]] started off as the anti-[[file:../war.org][war]] [[file:../hippie.org][Hippie]] [[file:../generation.org][generation]].
+
+Check your [[file:../privilege.org][privilege]].
+** Finding introductory reading on note-taking with Org-roam
+   :PROPERTIES:
+   :CUSTOM_ID: introductory-reading-on-note-taking-with-org-roam
+   :END:
+
+   Tomorrow, I'm going to help my partner as they begin to try and use [[file:../org_roam.org][Org-roam]] as their [[file:../note_taking_system.org][note-taking systems]] for their upcoming academic work; finishing their degree in [[file:../library_science.org][library science]].
+
+   So today, I'd like to share with them one or two pieces that I think might best prime them to engage with the activity. In this posting, I'm going to talk about my journey to find those resources.
+
+   To get started, I remember that when I was getting started with learning Org-roam, there were several lists to blog posts about the merits of a formal note-taking system, on the blog posts I was reading about Org-roam. I skipped past those lists at the time, as I was already sold on not just the intention but the specific product, but I'll try and go back now and re-find those things.
+
+   The place I started was with [[file:../jethro_kuan.org][Jethro Kuan]], and as my notes just reminded me as I typed in that link, I already wrote down the piece I wanted to remember, that talked about specifically this: [[https://blog.jethro.dev/posts/how_to_take_smart_notes_org/]["How To Take Smart Notes With Org-mode"]] Thank you, me of [[file:2020-12-15.org][December 15th]]!
+
+   I'm going to switch over to [[file:../jethro_kuan_how_to_take_smart_notes_with_org_mode.org][my record]] on that piece, to cut out my favorite quotes, but I'll probably hop back and forth to here to talk about whether it's the right piece for my partner's self-education.
+
+   …And I'm back! The piece was a decent introduction to the flaws of the traditional academic research method, and introduced some benefits of accretive knowledge management, but wasn't as deep as I'd hoped. Maybe there's something to be found in [[file:../neil_mather.org][Neil Mather]]'s [[https://commonplace.doubleloop.net/][digital garden]].
+
+   No such luck, but I did find an [[https://gilest.org/2004/interview-with-lion-kimbro/][interview with Lion Kimbro]] that was useful. [[file:../lion_kimbro.org][Lion Kimbro]] wrote [[file:../lion_kimbro_how_to_make_a_complete_map_of_every_thought_you_think.org]["How to make a complete map of every thought you think"]].
+
+   
+** The world of wikis that wasn't
+
+   I have found myself down an interesting rabbit-hole. I was, earlier, [[*Finding introductory reading on note-taking with Org-roam][looking for readings]] to share with my partner about [[file:../note_taking.org][note-taking]] with [[file:../org_roam.org][Org-roam]]. I found an interview from 2004 with [[file:../lion_kimbro.org][Lion Kimbro]], about his book [[file:../lion_kimbro_how_to_make_a_complete_map_of_every_thought_you_think.org]["How to make a complete map of every thought you think"]]. The interview is on [[https://gilest.org/2004/interview-with-lion-kimbro/][gilest.org]], and here's [[file:~/org/s/p/lion_kimbro.org::#2004-gilest-org-interview][my entry]] on that interview.
+
+   At the end of the interview, [[file:../giles_turnbull.org][Giles Turnbull]] asks Kimbro to go back to an earlier tangent, about [[file:../wiki.org][wiki]] and their role in what Kimbro calls the "Public Web," which seems contextually synonymous with my use of "the [[file:../web.org][Web]]."
+
+   Again, this interview is from 2004. Here are some quotes, that I'll discuss. This is all in response to Turnbull asking Kimbro the question, "Tell me why you like wikis"
+
+   #+begin_quote
+   Wiki, briefly, are the hottest thing in Social Software right now. All this “friendster” stuff is important, but it’s just a ruse. People don’t see the real revolution that wiki represents.
+
+   Wiki is terribly important because it’s the first public communication system that is DOCUMENT based.
+
+   Instant Messaging, E-Mail, Internet Relay Chat (IRC), Online Message Boards, all this stuff-
+
+   It’s all MESSAGE based.
+
+   It’s a “quick signal.” You send a message to someone, and they do something different than they would have done before. “Someone.” Sometimes even a group of people. Maybe you’re on a mailing list, or something.
+
+   After the message is done, it’s spent. It’s indexed by Google, and someone looking for something can find your message amidst a sea of messages, and try to apply it to their situation.
+
+   But wiki is totally different. It’s document based. The fundamental element of a wiki is the document. It’s not a one-off message. (Though, you CAN attach messages to the bottom of a wiki page. Very common.) It’s something that people can use, and refer back to, time and time again.
+
+   It’s made to exist across time.
+
+   And so, also, that means that you get a sense of “space.”
+   #+end_quote
+
+   I can't help but think about the recent pushes I've seen from people, toward "space"-oriented digital places, like the metaphor of a [[file:../digital_garden.org][digital garden]]. It feels like over and over again, people try and do something with [[file:../computers.org][computers]], and end up diverted for years before realizing it.
+
+   #+begin_quote
+   Let’s say we live in the year 2020. We haven’t killed ourselves off yet, as a species. You’re interested in writing for journalism. So you start off by searching the web for “writing.”
+
+   You find yourself on some wiki somewhere. By now, the public refinery system has implanted itself, and there’s wiki for every subject imaginable. You find yourself on some major “writing for science fiction” wiki. You go to a special page, that lists it’s relationships with neighbors. You find that there is a “general wiki for writing.” You go there, and find that it’s a wiki made almost entirely of redirections. You find a link to a wiki about writing for journalism. You find yourself on the writing for journalism wiki. Now you’re happy to be here, but you’re just curious- what is topically “near” the journalism wiki? You see that there’s a link to the journalism law wiki, you see that there’s a link to a plain talk writing wiki, you see links to all sorts of topically related wiki.
+   
+   There’s a wiki for everything imaginable. All the information is maintained by the editors. There’s a refinery process that takes poor quality writing, half baked ideas, integrates them into wiki that are taken better care of, and then they are taken into wiki that have even higher standards. It’s all networked, so you can trace a path from any one subject to any other subject.
+   #+end_quote
+
+   Reading this hours after being made aware of the on-going [[file:../edit_war.org][edit war]] on Wikipedia right now was... uncomfortable. Our expectations for the [[file:../capabilities.org][capabilities]] of the [[file:../web.org][Web]] and the [[file:../internet.org][Internet]] have shifted incredibly since their introduction, and I don't think for the better.
+
+   #+begin_quote
+   Really, wiki are going to change the world. It’s quite clear. The progression is already extraordinary.
+
+   Wiki is going to make our society more democratic, because we’re going to have incredible clarity about things, and because we’re going to have all this free information. It’s going to be refined. It’s going to be visual.
+   #+end_quote
+
+   Is there any group out there that doesn't underestimate their risk for [[file:../cooption.org][cooption]]?
+
+   And I'm uncomfortably aware that much of what Kembro is talking about doing with wiki, is what I'm talking about trying to accomplish for myself, with my [[file:../records_catalog.org][records catalog]]. I think a crucial difference is that I prioritize [[file:../consent.org][consent]] over [[file:../democracy.org][democracy]], and so don't have the same emphasis as Kembro does on [[file:../public_asset.org][public assets]].
+
+   In the interview, Kembro links to [[https://communitywiki.org][https://communitywiki.org]]. Here's a quote from the frontpage:
+
+   #+begin_quote
+   Wiki movement is close to being dead. We all know that. This text will probably get read by just one person other than me which proves my thesis (hello, Alex, I decided to write this message to everyone instead of a private message). I can only imagine how this wiki used to be years ago. Lively, pulsating. Something like that. I’ve never been there.
+   #+end_quote
+
+   Reading that, I thought, /huh, I know an [[file:../alex_schroder.org][Alex]] who is involved in wiki stuff…/. Curious if this wiki was as dead as it's homepage proclaims, I went to its page listing recent changes... only to see activity from both Alex Schröder and Lion Kembro, today!
+
+   I don't have time to go further down this [[file:../rabbit_hole.org][rabbit-hole]], but I'm excited to have discovered this little loop between [[file:../note_taking.org][note-taking]], [[file:../wiki.org][wiki]], [[file:../alex_schroder.org][Alex Schröder]], [[file:../emacs.org][Emacs]] and [[file:../org_mode.org][Org-mode]] and then [[file:../emsenn.org][me]], taking notes.
+   
+* News log
+** Yocha Dehe elder transitioned from COVID-19 December 29th
+   :LOGBOOK:
+   - Note taken on [2021-01-07 Thu 10:17] \\
+     Marshall McKay, an [[file:../elder.org][elder]] in the [[file:../yocha_dene_tribe.org][Yocha Dene Tribe]], [[file:../death.org][transitioned]] on [[file:2020-12-29.org][December 29th]], from [[file:../covid_19.org][COVID-19]].
+   :END:
+   - Source :: https://www.kcra.com/article/native-american-tribal-elder-marshall-mckay-dies-covid-19/35135876
+
+** FBI translating cold case posters into Navajo language
+   :LOGBOOK:
+   - Note taken on [2021-01-07 Thu 10:18] \\
+     The [[file:../fbi.org][FBI]] is translating several cold case posters into the [[file:../navajo_language.org][Navajo language]].
+   :END:
+   - Source :: https://www.nhonews.com/news/2021/jan/05/hone-wokeed-fbi-seeks-reach-navajo-language-speake/
+
+** Two charged with child endangerment in connection with missing Crow child
+   :LOGBOOK:
+   - Note taken on [2021-01-07 Thu 10:19] \\
+     Two people have been [[file:../charges.org][charged]] with [[file:../child_endangerment.org][child endangerment]] in connection with Mildred Old Crow, an eight-year-old who has been missing for more than a year. The charge carries a maximum sentence of 6 months in [[file:../jail.org][jail]] and a $2,500 [[file:../fine.org][fine]].
+     
+     The warrant first went out on [[file:2020-12-16.org][December 16th]], after the two "failed to produce the child nor was any proof of life provided," and on the [[file:2020-12-23.org][23rd]] they were arrested as fugitives. Yesterday, they posted [[file:../bond.org][bond]].
+     
+     Relatives of Mildred Old Crow informed the [[file:../bureau_of_indian_affairs.org][Bureau of Indian Affairs]] back in November that they'd not seen her since July 2018.
+     
+     That is, she was last seen alive when she was six. Two years later, two people who were supposed to be her guardians might spend six months in jail and pay a total of $5,000 because she has been missing, potentially that whole time.
+     
+     I've heard more people this year than last recognize the [[file:../mmiwg2s.org][#MMIWG2S]] epidemic. I hope that hearing about events like this shows just how little the [[file:../united-states-of-america.org][U.S.]] government cares about [[file:../indigenous.org][Indigenous]] people.
+   :END:
+   - Source :: https://billingsgazette.com/news/local/two-charged-with-child-endangerment-in-connection-with-missing-crow-girl/article_097dfca1-49ec-56c0-88e0-0ee718239d2a.html
+
+** Archaeologist shares some erased history of Yellowstone National Park
+   :LOGBOOK:
+   - Note taken on [2021-01-07 Thu 10:35] \\
+     In [[file:../smithsonian_magazine.org][Smithsonian Magazine]] magazine, a look at some of the [[file:../erasure.org][erasured]] [[file:../history.org][history]] of [[file:../yellowstone_national_park.org][Yellowstone National Park]].
+   :END:
+   - Source :: https://www.smithsonianmag.com/history/lost-history-yellowstone-180976518/
+
+** Nahua blockade roads following threats from Los Ardillos
+   :LOGBOOK:
+   - Note taken on [2021-01-07 Thu 13:27] \\
+     After the [[file:../mexican_federal_government.org][Mexican federal government]] failed to install checkpoints between [[file:../hueytenango.org][Hueytenango]] and [[file:../chilapa_de_alvarez.org][Chilapa de Alvarez]], [[file:../nahua.org][Nahua]] people have re-established a [[file:../road_blockade.org][road blockade]] between the two municipalities.
+   :END:
+   - Source :: https://sipazen.wordpress.com/2021/01/07/guerrero-nahua-indigenous-renew-road-blockades-following-new-threats/
+
+** Facebook blocks Donald Trump
+   :LOGBOOK:
+   - Note taken on [2021-01-07 Thu 13:30] \\
+     [[file:../facebook.org][Facebook]] has blocked President [[file:../donald_j_trump.org][Donald Trump]] from posting on the site. I view this as another part of the show to demonstrate the new [[file:../relationships.org][relationship]] of [[file:../moral_majority_versus_deplorables.org][moral majority versus deplorables]], so as to deradicalize many of those who were radicalized under Trump's administration.
+   :END:
+   - Source :: https://www.cnbc.com/2021/01/07/facebook-will-block-trump-from-posting-for-the-remainder-of-his-term.html
+
+** Historian contrasts storming of U.S. Capitol to anti-Democracy actions in the American South during Reconstruction
+   :LOGBOOK:
+   - Note taken on [2021-01-07 Thu 16:26] \\
+     I was reading this with my partner earlier and I have to say, I find this a rather... lacking comparison between the two eras and their events. It isn't very specific or deep. It seems to, instead, work to reinforce the [[file:../narrative.org][narrative]] I see developing across a lot of [[file:../media.org][media]] and [[file:../social_media.org][social media]], of the [[file:../moral_majority_versus_deplorables.org][moral majority versus deplorables]]. /(I've said that phrase, or something like it, a few times since yesterday; I've gone ahead and made a record for the concept. I don't see it becoming less relevant.)/
+   - Note taken on [2021-01-07 Thu 13:24] \\
+     Professor [[file:../manisha_sinha.org][Manisha Sinha]] at the [[file:../university_of_connectictu.org][University of Connecticut]] is interviewed by [[file:../amy_goodman.org][Amy Goodman]] from [[file:../democracy_now.org][Democracy Now!]] about the [[file:../2021_storming_of_the_u_s_capitol.org][2021 Storming of the U.S. Capitol]], contrasting the event to anti-[[file:../democracy.org][democracy]] efforts in the [[file:../american_south.org][American South]] during [[file:../reconstruction.org][Reconstruction]].
+   :END:
+   - Source :: https://www.democracynow.org/2021/1/7/us_capitol_violent_mob_manisha_sinha
+* Supplements
+

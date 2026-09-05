@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       86f1d8e9-bb7b-4631-9fde-b208e8d79f2c
+:END:
+#+title: resource coverage
+#+date: [2025-10-04 Sat 00:27]
+

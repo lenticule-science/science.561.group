@@ -1,0 +1,7 @@
+{
+  "id": "parsing-leader-messages",
+  "name": "parsing leader messages",
+  "kind": "duty",
+  "claim": "leader-message-semiote",
+  "obligation": "Given one immutable source message and one admitted language map, return a schema-validated candidate linguistic reading or a typed refusal while preserving source identity, ambiguity, repair obligations, provider-local evidence, and the customer's exclusive admission authority."
+}

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       dbdd09b8-0129-4db1-a4fb-a2d0e9fd9e51
+:instantiates: [[id:e2e23979-c001-4308-b04c-de03ac461168][region]]
+:public:   true
+:END:
+#+title: Sudetenland
+#+date: [2025-09-24 Wed 22:19]
+#+index: Sudetenland

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       660a29cd-2537-4966-8b1c-396707f08f2e
+:END:
+#+title: conceptual abstraction
+#+date: [2025-09-13 Sat 21:23]
+
