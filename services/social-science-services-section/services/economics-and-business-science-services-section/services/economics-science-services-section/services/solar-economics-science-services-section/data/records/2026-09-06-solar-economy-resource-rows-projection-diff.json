@@ -1,0 +1,1359 @@
+{
+  "type": "SolarEconomyResourceRowsProjectionDiff",
+  "version": 1,
+  "comparedAt": "2026-09-06",
+  "handAuthored": "lib/emsenn/services/561-group/services/science-services-section/services/social-science-services-section/services/economics-and-business-science-services-section/services/economics-science-services-section/services/solar-economics-science-services-section/data/records/2026-09-06-solar-economy-resource-rows.json",
+  "projected": "lib/emsenn/services/561-group/services/science-services-section/services/social-science-services-section/services/economics-and-business-science-services-section/services/economics-science-services-section/services/solar-economics-science-services-section/data/records/2026-09-06-solar-economy-resource-rows.projected.json",
+  "note": "Every difference below is a finding about which file is right, not something reconciled here: the hand-authored file is drawn from many sources per resource (business-plan notes, IRS pages, tribal LIHEAP filings, cleancounts.org, direct package-source reading) that the projector's two-measurement-record contract cannot ingest; the projected file reads only the one 561-group-solar-economics-services-section incumbent-and-data-source-measurement record (31 provider/data-source rows) through the declared catalog. The hand-authored file is not edited by this comparison.",
+  "perResourceSummary": [
+    {
+      "resource": "Electricity (kWh at utility tariff)",
+      "handEvidenceStatus": "measured",
+      "projectedEvidenceStatus": "measured",
+      "handWitnessCount": 2,
+      "projectedWitnessCount": 2,
+      "differingFieldCount": 12
+    },
+    {
+      "resource": "Distributed-generation credit (net-metered kWh)",
+      "handEvidenceStatus": "measured",
+      "projectedEvidenceStatus": "measured",
+      "handWitnessCount": 2,
+      "projectedWitnessCount": 2,
+      "differingFieldCount": 12
+    },
+    {
+      "resource": "Propane (gallon)",
+      "handEvidenceStatus": "unknown",
+      "projectedEvidenceStatus": "unknown",
+      "handWitnessCount": 0,
+      "projectedWitnessCount": 0,
+      "differingFieldCount": 12
+    },
+    {
+      "resource": "Diesel / heating oil (gallon)",
+      "handEvidenceStatus": "unknown",
+      "projectedEvidenceStatus": "unknown",
+      "handWitnessCount": 0,
+      "projectedWitnessCount": 0,
+      "differingFieldCount": 9
+    },
+    {
+      "resource": "Cordwood",
+      "handEvidenceStatus": "unknown",
+      "projectedEvidenceStatus": "unknown",
+      "handWitnessCount": 0,
+      "projectedWitnessCount": 0,
+      "differingFieldCount": 8
+    },
+    {
+      "resource": "LIHEAP grant (federal, state-administered)",
+      "handEvidenceStatus": "unknown",
+      "projectedEvidenceStatus": "measured",
+      "handWitnessCount": 0,
+      "projectedWitnessCount": 2,
+      "differingFieldCount": 13
+    },
+    {
+      "resource": "Tribal LIHEAP grant (Oglala Sioux Tribe)",
+      "handEvidenceStatus": "self-reported",
+      "projectedEvidenceStatus": "self-reported",
+      "handWitnessCount": 1,
+      "projectedWitnessCount": 1,
+      "differingFieldCount": 11
+    },
+    {
+      "resource": "Federal residential clean-energy tax credit (Section 25D)",
+      "handEvidenceStatus": "measured",
+      "projectedEvidenceStatus": "unknown",
+      "handWitnessCount": 2,
+      "projectedWitnessCount": 0,
+      "differingFieldCount": 15
+    },
+    {
+      "resource": "Renewable Energy Certificate (REC)",
+      "handEvidenceStatus": "self-reported",
+      "projectedEvidenceStatus": "unknown",
+      "handWitnessCount": 1,
+      "projectedWitnessCount": 0,
+      "differingFieldCount": 11
+    },
+    {
+      "resource": "Interconnection queue position (Oceti Sakowin Power Authority)",
+      "handEvidenceStatus": "self-reported",
+      "projectedEvidenceStatus": "unknown",
+      "handWitnessCount": 1,
+      "projectedWitnessCount": 0,
+      "differingFieldCount": 15
+    },
+    {
+      "resource": "Transmission access / corridor land along a route",
+      "handEvidenceStatus": "self-reported",
+      "projectedEvidenceStatus": "unknown",
+      "handWitnessCount": 1,
+      "projectedWitnessCount": 0,
+      "differingFieldCount": 15
+    },
+    {
+      "resource": "Water rights touched by a capital project",
+      "handEvidenceStatus": "self-reported",
+      "projectedEvidenceStatus": "unknown",
+      "handWitnessCount": 1,
+      "projectedWitnessCount": 0,
+      "differingFieldCount": 12
+    },
+    {
+      "resource": "Consultation rights (structural claim held as an option)",
+      "handEvidenceStatus": "self-reported",
+      "projectedEvidenceStatus": "unknown",
+      "handWitnessCount": 1,
+      "projectedWitnessCount": 0,
+      "differingFieldCount": 17
+    },
+    {
+      "resource": "Wit",
+      "handEvidenceStatus": "self-reported",
+      "projectedEvidenceStatus": "unknown",
+      "handWitnessCount": 1,
+      "projectedWitnessCount": 0,
+      "differingFieldCount": 13
+    },
+    {
+      "resource": "Joule",
+      "handEvidenceStatus": "measured",
+      "projectedEvidenceStatus": "unknown",
+      "handWitnessCount": 2,
+      "projectedWitnessCount": 0,
+      "differingFieldCount": 15
+    },
+    {
+      "resource": "USDC (x402 gateway settlement)",
+      "handEvidenceStatus": "measured",
+      "projectedEvidenceStatus": "self-reported",
+      "handWitnessCount": 2,
+      "projectedWitnessCount": 1,
+      "differingFieldCount": 13
+    }
+  ],
+  "fieldDiffCount": 203,
+  "fieldDiffs": [
+    {
+      "resource": "Electricity (kWh at utility tariff)",
+      "field": "identity.issuer",
+      "hand": "the household's serving utility (Minnesota Power, Lake Country Power, Cooperative Light & Power, or LaCreek Electric Association, depending on location)",
+      "projected": "OpenEI Utility Rate Database (URDB) API"
+    },
+    {
+      "resource": "Electricity (kWh at utility tariff)",
+      "field": "custody",
+      "hand": "platform-bound",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Electricity (kWh at utility tariff)",
+      "field": "yieldForm",
+      "hand": "none",
+      "projected": "savings interest"
+    },
+    {
+      "resource": "Electricity (kWh at utility tariff)",
+      "field": "laborForm",
+      "hand": "none",
+      "projected": "posting content"
+    },
+    {
+      "resource": "Electricity (kWh at utility tariff)",
+      "field": "liquidity.exitPath",
+      "hand": "none (consumed on delivery; no resale market found for retail residential kWh)",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Electricity (kWh at utility tariff)",
+      "field": "extractionCeiling.cap",
+      "hand": "none found (no purchase cap on residential retail kWh; bounded only by the household's own service/breaker capacity, not separately measured)",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Electricity (kWh at utility tariff)",
+      "field": "extractionCeiling.resetPeriod",
+      "hand": "monthly billing cycle",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Electricity (kWh at utility tariff)",
+      "field": "extractionCeiling.antiBotRule",
+      "hand": "none",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Electricity (kWh at utility tariff)",
+      "field": "identityCost.perHumanSlot",
+      "hand": false,
+      "projected": "unknown"
+    },
+    {
+      "resource": "Electricity (kWh at utility tariff)",
+      "field": "identityCost.detail",
+      "hand": "a utility account in the household's name; no government-ID requirement found in the measured rows",
+      "projected": "not found"
+    },
+    {
+      "resource": "Electricity (kWh at utility tariff)",
+      "field": "witnesses",
+      "hand": "[{\"observedOn\": \"2026-09-05\", \"source\": \"first-party utility rate page\", \"sourceUrl\": \"https://www.mnpower.com/ResidentialRates\"}, {\"observedOn\": \"2026-09-05\", \"source\": \"first-party utility rate page\", \"sourceUrl\": \"https://lakecountrypower.coop/rates-and-rebates\"}]",
+      "projected": "[{\"observedOn\": \"2026-09-05\", \"source\": \"upstream-provider\", \"sourceUrl\": \"https://developer.nlr.gov/docs/electricity/openei-utility-rates/\"}, {\"observedOn\": \"2026-09-05\", \"source\": \"upstream-provider\", \"sourceUrl\": \"https://www.genability.com/\"}]"
+    },
+    {
+      "resource": "Electricity (kWh at utility tariff)",
+      "field": "provenance.sourceUrl",
+      "hand": "https://www.mnpower.com/ResidentialRates",
+      "projected": "https://developer.nlr.gov/docs/electricity/openei-utility-rates/"
+    },
+    {
+      "resource": "Distributed-generation credit (net-metered kWh)",
+      "field": "identity.issuer",
+      "hand": "the household's utility, under Minnesota's net-metering statute (Minn. Stat. Sec. 216B.164, implementing rule Minn. Rules 7835.4015) where applicable; LaCreek Electric Association's and Lake Country Power's own compensation rates were not found on their published pages",
+      "projected": "OpenEI Utility Rate Database (URDB) API"
+    },
+    {
+      "resource": "Distributed-generation credit (net-metered kWh)",
+      "field": "custody",
+      "hand": "platform-bound",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Distributed-generation credit (net-metered kWh)",
+      "field": "yieldForm",
+      "hand": "return on capital already invested in a rooftop system: excess generation exported to the grid, credited against future bills",
+      "projected": "savings interest"
+    },
+    {
+      "resource": "Distributed-generation credit (net-metered kWh)",
+      "field": "laborForm",
+      "hand": "none",
+      "projected": "posting content"
+    },
+    {
+      "resource": "Distributed-generation credit (net-metered kWh)",
+      "field": "liquidity.exitPath",
+      "hand": "conversion: a system under 40 kW AC may elect the 'average retail utility energy rate'; a system under 1 MW AC (100 kW for a cooperative or municipal utility) may elect the 'simultaneous purchase and sale' rate, per Minnesota's net-metering rule",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Distributed-generation credit (net-metered kWh)",
+      "field": "liquidity.exitsToRow",
+      "hand": "Electricity (kWh at utility tariff)",
+      "projected": null
+    },
+    {
+      "resource": "Distributed-generation credit (net-metered kWh)",
+      "field": "extractionCeiling.cap",
+      "hand": "eligible system size capped at 120% of the site's own annual energy use, per Minnesota's net-metering rule; LaCreek's and Lake Country Power's own size caps were not found",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Distributed-generation credit (net-metered kWh)",
+      "field": "extractionCeiling.resetPeriod",
+      "hand": "unknown (monthly credit is confirmed in principle; annual true-up policy not found for LaCreek or Lake Country Power)",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Distributed-generation credit (net-metered kWh)",
+      "field": "extractionCeiling.antiBotRule",
+      "hand": "an interconnection/distributed-generation application to the utility (LaCreek's 'Application for Distributed Generation'; Lake Country Power's NOVA Power Portal documentation under its internal Operations & Engineering Policy 613)",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Distributed-generation credit (net-metered kWh)",
+      "field": "identityCost.detail",
+      "hand": "a utility interconnection application; no government-ID requirement found",
+      "projected": "not found"
+    },
+    {
+      "resource": "Distributed-generation credit (net-metered kWh)",
+      "field": "witnesses",
+      "hand": "[{\"observedOn\": \"2026-09-05\", \"source\": \"state regulator's own policy page\", \"sourceUrl\": \"https://mn.gov/puc/activities/economic-analysis/distributed-energy/net-metering/\"}, {\"observedOn\": \"2026-09-05\", \"source\": \"first-party utility page (compensation rate not published)\", \"sourceUrl\": \"https://lakecountrypower.coop/renewable-energy\"}]",
+      "projected": "[{\"observedOn\": \"2026-09-05\", \"source\": \"upstream-provider\", \"sourceUrl\": \"https://developer.nlr.gov/docs/electricity/openei-utility-rates/\"}, {\"observedOn\": \"2026-09-05\", \"source\": \"upstream-provider\", \"sourceUrl\": \"https://www.lacreek.com/billing\"}]"
+    },
+    {
+      "resource": "Distributed-generation credit (net-metered kWh)",
+      "field": "provenance.sourceUrl",
+      "hand": "https://mn.gov/puc/activities/economic-analysis/distributed-energy/net-metering/",
+      "projected": "https://developer.nlr.gov/docs/electricity/openei-utility-rates/"
+    },
+    {
+      "resource": "Propane (gallon)",
+      "field": "identity.issuer",
+      "hand": "regional propane distributors (rural retail propane market); no single named distributor measured in this pass",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Propane (gallon)",
+      "field": "custody",
+      "hand": "self",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Propane (gallon)",
+      "field": "yieldForm",
+      "hand": "none",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Propane (gallon)",
+      "field": "laborForm",
+      "hand": "none",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Propane (gallon)",
+      "field": "liquidity.exitPath",
+      "hand": "unknown (no resale market found for a household's stored propane)",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Propane (gallon)",
+      "field": "extractionCeiling.cap",
+      "hand": "unknown (bounded by tank capacity and delivery contract terms, not measured)",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Propane (gallon)",
+      "field": "extractionCeiling.antiBotRule",
+      "hand": "none found",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Propane (gallon)",
+      "field": "identityCost.kycRequired",
+      "hand": false,
+      "projected": "unknown"
+    },
+    {
+      "resource": "Propane (gallon)",
+      "field": "identityCost.perHumanSlot",
+      "hand": false,
+      "projected": "unknown"
+    },
+    {
+      "resource": "Propane (gallon)",
+      "field": "identityCost.detail",
+      "hand": "a delivery account and, for a pre-buy/fixed-price contract, a signed agreement with the distributor; no government-ID requirement found",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Propane (gallon)",
+      "field": "provenance.sourceUrl",
+      "hand": "public-financial-services-section/data/records/2026-09-05-propane-prebuy-northern-plains-measurement.json",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Propane (gallon)",
+      "field": "provenance.observedOn",
+      "hand": "2026-09-05",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Diesel / heating oil (gallon)",
+      "field": "identity.issuer",
+      "hand": "regional fuel distributors and retail pumps; no state energy-office weekly price survey was measured in this pass",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Diesel / heating oil (gallon)",
+      "field": "custody",
+      "hand": "self",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Diesel / heating oil (gallon)",
+      "field": "yieldForm",
+      "hand": "none",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Diesel / heating oil (gallon)",
+      "field": "laborForm",
+      "hand": "none",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Diesel / heating oil (gallon)",
+      "field": "extractionCeiling.antiBotRule",
+      "hand": "none found",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Diesel / heating oil (gallon)",
+      "field": "identityCost.kycRequired",
+      "hand": false,
+      "projected": "unknown"
+    },
+    {
+      "resource": "Diesel / heating oil (gallon)",
+      "field": "identityCost.perHumanSlot",
+      "hand": false,
+      "projected": "unknown"
+    },
+    {
+      "resource": "Diesel / heating oil (gallon)",
+      "field": "provenance.sourceUrl",
+      "hand": "561-group-solar-economics-services-section/README.md",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Diesel / heating oil (gallon)",
+      "field": "provenance.observedOn",
+      "hand": "2026-09-05",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Cordwood",
+      "field": "identity.issuer",
+      "hand": "unknown (no first-party cordwood price source measured in this pass)",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Cordwood",
+      "field": "custody",
+      "hand": "self",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Cordwood",
+      "field": "yieldForm",
+      "hand": "none",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Cordwood",
+      "field": "laborForm",
+      "hand": "harvesting and processing one's own woodpile, when self-harvested rather than purchased",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Cordwood",
+      "field": "liquidity.exitPath",
+      "hand": "unknown (informal local resale only; no first-party market page found)",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Cordwood",
+      "field": "extractionCeiling.cap",
+      "hand": "unknown (bounded by land access and permit rules on the specific woodlot, not measured)",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Cordwood",
+      "field": "identityCost.kycRequired",
+      "hand": false,
+      "projected": "unknown"
+    },
+    {
+      "resource": "Cordwood",
+      "field": "provenance.observedOn",
+      "hand": "2026-09-05",
+      "projected": "unknown"
+    },
+    {
+      "resource": "LIHEAP grant (federal, state-administered)",
+      "field": "identity.issuer",
+      "hand": "HHS Administration for Children and Families' Office of Community Services (federal block grant), administered locally by South Dakota's Department of Social Services (Pine Ridge non-tribal-member households) or Minnesota's Energy Assistance Program (Lake County/Duluth households)",
+      "projected": "LIHEAP (federal Low Income Home Energy Assistance Program)"
+    },
+    {
+      "resource": "LIHEAP grant (federal, state-administered)",
+      "field": "identity.rail",
+      "hand": "the state agency's own benefit-disbursement process; vendor-pay versus direct-pay was not confirmed for either state",
+      "projected": "the state agency's own benefit-disbursement process"
+    },
+    {
+      "resource": "LIHEAP grant (federal, state-administered)",
+      "field": "yieldForm",
+      "hand": "none",
+      "projected": "unknown"
+    },
+    {
+      "resource": "LIHEAP grant (federal, state-administered)",
+      "field": "laborForm",
+      "hand": "none (an entitlement claimed by application, not earned by labor)",
+      "projected": "unknown"
+    },
+    {
+      "resource": "LIHEAP grant (federal, state-administered)",
+      "field": "liquidity.exitPath",
+      "hand": "discharges a mismatch on the household's utility or fuel-delivery bill (the electricity or propane row), rather than converting to a separately tradeable resource",
+      "projected": "unknown"
+    },
+    {
+      "resource": "LIHEAP grant (federal, state-administered)",
+      "field": "extractionCeiling.cap",
+      "hand": "South Dakota FY2026 heating benefit reported as $668 minimum to $3,437 maximum per household, per secondary aggregators only (direct fetch of dss.sd.gov returned no usable content); Minnesota's benefit range was not found in the measured rows",
+      "projected": "unknown"
+    },
+    {
+      "resource": "LIHEAP grant (federal, state-administered)",
+      "field": "extractionCeiling.resetPeriod",
+      "hand": "once per program year (heating season)",
+      "projected": "unknown"
+    },
+    {
+      "resource": "LIHEAP grant (federal, state-administered)",
+      "field": "extractionCeiling.antiBotRule",
+      "hand": "full household income documentation for the prior three months and signatures from every household member 18 and over (South Dakota, per secondary aggregation); one month's income documentation (Minnesota, per the program README)",
+      "projected": "unknown"
+    },
+    {
+      "resource": "LIHEAP grant (federal, state-administered)",
+      "field": "identityCost.kycRequired",
+      "hand": true,
+      "projected": "unknown"
+    },
+    {
+      "resource": "LIHEAP grant (federal, state-administered)",
+      "field": "identityCost.detail",
+      "hand": "full household income documentation; signatures required from every household member 18 and over (South Dakota)",
+      "projected": "household income and identity documentation required by the administering state/tribal grantee (see SD and OST rows); full household income documentation and signatures"
+    },
+    {
+      "resource": "LIHEAP grant (federal, state-administered)",
+      "field": "witnesses",
+      "hand": "[]",
+      "projected": "[{\"observedOn\": \"2026-09-05\", \"source\": \"incumbent\", \"sourceUrl\": \"https://acf.gov/ocs/programs/liheap\"}, {\"observedOn\": \"2026-09-05\", \"source\": \"incumbent\", \"sourceUrl\": \"https://dss.sd.gov/economicassistance/energyassistance/lowincome.aspx\"}]"
+    },
+    {
+      "resource": "LIHEAP grant (federal, state-administered)",
+      "field": "provenance.sourceUrl",
+      "hand": "https://dss.sd.gov/economicassistance/energyassistance/lowincome.aspx",
+      "projected": "https://acf.gov/ocs/programs/liheap"
+    },
+    {
+      "resource": "LIHEAP grant (federal, state-administered)",
+      "field": "provenance.evidenceStatus",
+      "hand": "unknown",
+      "projected": "measured"
+    },
+    {
+      "resource": "Tribal LIHEAP grant (Oglala Sioux Tribe)",
+      "field": "identity.issuer",
+      "hand": "Oglala Sioux Tribe, a federally recognized direct LIHEAP tribal grantee (one of 149 direct-grantee tribes/tribal organizations nationally, per the LIHEAP Clearinghouse)",
+      "projected": "Oglala Sioux Tribe LIHEAP (tribal grantee, Pine Ridge)"
+    },
+    {
+      "resource": "Tribal LIHEAP grant (Oglala Sioux Tribe)",
+      "field": "identity.rail",
+      "hand": "the Tribe's own district service centers (in-person paper application), run in parallel to, not through, South Dakota's state DSS LIHEAP office",
+      "projected": "the Tribe's own district service centers, run in parallel to, not through, the state DSS LIHEAP office"
+    },
+    {
+      "resource": "Tribal LIHEAP grant (Oglala Sioux Tribe)",
+      "field": "yieldForm",
+      "hand": "none",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Tribal LIHEAP grant (Oglala Sioux Tribe)",
+      "field": "laborForm",
+      "hand": "none",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Tribal LIHEAP grant (Oglala Sioux Tribe)",
+      "field": "liquidity.exitPath",
+      "hand": "discharges a household's heating bill (the propane/diesel or electricity row), not separately tradeable",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Tribal LIHEAP grant (Oglala Sioux Tribe)",
+      "field": "extractionCeiling.cap",
+      "hand": "not found (no benefit dollar amount stated in the retrieved FY2025 Detailed Model Plan)",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Tribal LIHEAP grant (Oglala Sioux Tribe)",
+      "field": "extractionCeiling.resetPeriod",
+      "hand": "program period 2024-10-01 to 2025-09-30 per the retrieved FY2025 plan; the FY2026 plan was not separately retrieved",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Tribal LIHEAP grant (Oglala Sioux Tribe)",
+      "field": "extractionCeiling.antiBotRule",
+      "hand": "tribal membership or Pine Ridge Indian Reservation residency verification plus full income documentation, at one of nine district service centers",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Tribal LIHEAP grant (Oglala Sioux Tribe)",
+      "field": "identityCost.kycRequired",
+      "hand": true,
+      "projected": "unknown"
+    },
+    {
+      "resource": "Tribal LIHEAP grant (Oglala Sioux Tribe)",
+      "field": "identityCost.detail",
+      "hand": "tribal membership or reservation residency, plus a household listing and documentation of every income source",
+      "projected": "tribal membership or reservation residency plus full income documentation"
+    },
+    {
+      "resource": "Tribal LIHEAP grant (Oglala Sioux Tribe)",
+      "field": "witnesses",
+      "hand": "[{\"observedOn\": \"2026-09-05\", \"source\": \"tribal grantee's own filed federal plan\", \"sourceUrl\": \"https://liheapch.acf.gov/docs/2025/tribal_plans/SD_OglalaSioux_2025.pdf\"}]",
+      "projected": "[{\"observedOn\": \"2026-09-05\", \"source\": \"incumbent\", \"sourceUrl\": \"https://liheapch.acf.gov/docs/2025/tribal_plans/SD_OglalaSioux_2025.pdf\"}]"
+    },
+    {
+      "resource": "Federal residential clean-energy tax credit (Section 25D)",
+      "field": "identity.issuer",
+      "hand": "Internal Revenue Service / U.S. Treasury",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Federal residential clean-energy tax credit (Section 25D)",
+      "field": "custody",
+      "hand": "self",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Federal residential clean-energy tax credit (Section 25D)",
+      "field": "yieldForm",
+      "hand": "none",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Federal residential clean-energy tax credit (Section 25D)",
+      "field": "laborForm",
+      "hand": "none",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Federal residential clean-energy tax credit (Section 25D)",
+      "field": "liquidity.exitPath",
+      "hand": "reduces the household's own federal tax liability; unused credit carries forward to future tax years; not transferable or sellable",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Federal residential clean-energy tax credit (Section 25D)",
+      "field": "extractionCeiling.cap",
+      "hand": "the credit is terminated: per the IRS's own FAQ on Public Law 119-21 (the One Big Beautiful Bill Act, signed 2025-07-04), 'the credit will not be allowed for any expenditures made after December 31, 2025,' and an expenditure is treated as made 'when the original installation of the item is completed' -- so a Pine Ridge or Lake County household installing solar or battery storage after 2025-12-31 cannot claim this credit at all",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Federal residential clean-energy tax credit (Section 25D)",
+      "field": "extractionCeiling.resetPeriod",
+      "hand": "n/a (terminated, no step-down or transition period)",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Federal residential clean-energy tax credit (Section 25D)",
+      "field": "extractionCeiling.antiBotRule",
+      "hand": "n/a",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Federal residential clean-energy tax credit (Section 25D)",
+      "field": "identityCost.kycRequired",
+      "hand": false,
+      "projected": "unknown"
+    },
+    {
+      "resource": "Federal residential clean-energy tax credit (Section 25D)",
+      "field": "identityCost.perHumanSlot",
+      "hand": false,
+      "projected": "unknown"
+    },
+    {
+      "resource": "Federal residential clean-energy tax credit (Section 25D)",
+      "field": "identityCost.detail",
+      "hand": "a filed U.S. federal income tax return claiming the credit on Form 5695; no separate identity check beyond ordinary tax filing",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Federal residential clean-energy tax credit (Section 25D)",
+      "field": "witnesses",
+      "hand": "[{\"observedOn\": \"2026-09-05\", \"source\": \"first-party IRS program page\", \"sourceUrl\": \"https://www.irs.gov/credits-deductions/residential-clean-energy-credit\"}, {\"observedOn\": \"2026-09-05\", \"source\": \"first-party IRS FAQ on the terminating legislation\", \"sourceUrl\": \"https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21-139-stat-72-july-4-2025-commonly-known-as-the-one-big-beautiful-bill-obbb\"}]",
+      "projected": "[]"
+    },
+    {
+      "resource": "Federal residential clean-energy tax credit (Section 25D)",
+      "field": "provenance.sourceUrl",
+      "hand": "https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21-139-stat-72-july-4-2025-commonly-known-as-the-one-big-beautiful-bill-obbb",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Federal residential clean-energy tax credit (Section 25D)",
+      "field": "provenance.observedOn",
+      "hand": "2026-09-05",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Federal residential clean-energy tax credit (Section 25D)",
+      "field": "provenance.evidenceStatus",
+      "hand": "measured",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Renewable Energy Certificate (REC)",
+      "field": "identity.issuer",
+      "hand": "the generator (a rooftop solar owner) mints the certificate upon PUC-approved registration; tracked via M-RETS, rebranded CleanCounts, a nonprofit Energy Attribute Certificate registry",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Renewable Energy Certificate (REC)",
+      "field": "yieldForm",
+      "hand": "return on capital already invested in a rooftop system: a certificate per MWh generated, sellable on the registry or usable in a utility's own performance-based-incentive program (e.g. Xcel Energy's Solar*Rewards Community pays a stated performance-based incentive, but that program is specific to Xcel Energy customers, not Minnesota Power or Lake Country Power)",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Renewable Energy Certificate (REC)",
+      "field": "laborForm",
+      "hand": "none",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Renewable Energy Certificate (REC)",
+      "field": "liquidity.exitPath",
+      "hand": "sale on the CleanCounts/M-RETS registry, subject to Minnesota Public Utilities Commission approval to participate (excluding Xcel-Energy-attributed RECs); no independent SREC market exists in Minnesota and South Dakota has no state renewable-portfolio-standard obligation driving REC demand (this note's recollection, unverified in this pass)",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Renewable Energy Certificate (REC)",
+      "field": "extractionCeiling.cap",
+      "hand": "unknown; the registry's own page does not state whether individual residential solar owners can register, only that generators register generally",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Renewable Energy Certificate (REC)",
+      "field": "extractionCeiling.antiBotRule",
+      "hand": "Minnesota Public Utilities Commission approval required to participate in registry trading",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Renewable Energy Certificate (REC)",
+      "field": "identityCost.detail",
+      "hand": "a PUC-approved registration process; residential-scale eligibility not confirmed by the registry's own page",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Renewable Energy Certificate (REC)",
+      "field": "witnesses",
+      "hand": "[{\"observedOn\": \"2026-09-05\", \"source\": \"first-party registry page\", \"sourceUrl\": \"http://cleancounts.org/\"}]",
+      "projected": "[]"
+    },
+    {
+      "resource": "Renewable Energy Certificate (REC)",
+      "field": "provenance.sourceUrl",
+      "hand": "http://cleancounts.org/",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Renewable Energy Certificate (REC)",
+      "field": "provenance.observedOn",
+      "hand": "2026-09-05",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Renewable Energy Certificate (REC)",
+      "field": "provenance.evidenceStatus",
+      "hand": "self-reported",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Interconnection queue position (Oceti Sakowin Power Authority)",
+      "field": "identity.issuer",
+      "hand": "Southwest Power Pool (SPP), the transmission operator that administers the interconnection queue",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Interconnection queue position (Oceti Sakowin Power Authority)",
+      "field": "denomination.unit",
+      "hand": "one queue position per named generation project (Pass Creek; Ta'Teh Topah)",
+      "projected": "one queue position per named generation project"
+    },
+    {
+      "resource": "Interconnection queue position (Oceti Sakowin Power Authority)",
+      "field": "custody",
+      "hand": "custodial",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Interconnection queue position (Oceti Sakowin Power Authority)",
+      "field": "yieldForm",
+      "hand": "none directly; a held queue position is optionality on future interconnection rights, not an income stream itself",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Interconnection queue position (Oceti Sakowin Power Authority)",
+      "field": "laborForm",
+      "hand": "none",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Interconnection queue position (Oceti Sakowin Power Authority)",
+      "field": "liquidity.exitPath",
+      "hand": "withdrawal (OSPA withdrew both named positions in October 2022, per its own page); transferability under SPP tariff rules was not confirmed in this pass",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Interconnection queue position (Oceti Sakowin Power Authority)",
+      "field": "extractionCeiling.cap",
+      "hand": "bounded by SPP's own queue rules and available transmission capacity; not separately measured in this pass",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Interconnection queue position (Oceti Sakowin Power Authority)",
+      "field": "extractionCeiling.antiBotRule",
+      "hand": "n/a",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Interconnection queue position (Oceti Sakowin Power Authority)",
+      "field": "identityCost.kycRequired",
+      "hand": false,
+      "projected": "unknown"
+    },
+    {
+      "resource": "Interconnection queue position (Oceti Sakowin Power Authority)",
+      "field": "identityCost.perHumanSlot",
+      "hand": false,
+      "projected": "unknown"
+    },
+    {
+      "resource": "Interconnection queue position (Oceti Sakowin Power Authority)",
+      "field": "identityCost.detail",
+      "hand": "an SPP interconnection request filed by a qualified generation developer/authority (OSPA), not an individual identity check",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Interconnection queue position (Oceti Sakowin Power Authority)",
+      "field": "witnesses",
+      "hand": "[{\"observedOn\": \"2026-09-05\", \"source\": \"first-party inter-tribal power authority page\", \"sourceUrl\": \"https://www.ospower.org/the-project/\"}]",
+      "projected": "[]"
+    },
+    {
+      "resource": "Interconnection queue position (Oceti Sakowin Power Authority)",
+      "field": "provenance.sourceUrl",
+      "hand": "https://www.ospower.org/the-project/",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Interconnection queue position (Oceti Sakowin Power Authority)",
+      "field": "provenance.observedOn",
+      "hand": "2026-09-05",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Interconnection queue position (Oceti Sakowin Power Authority)",
+      "field": "provenance.evidenceStatus",
+      "hand": "self-reported",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Transmission access / corridor land along a route",
+      "field": "identity.issuer",
+      "hand": "the U.S. Department of Energy (federal transmission-corridor designation authority) and the developers seeking right-of-way; the proposed Tribal Energy Access Corridor across ND/SD/NE was cancelled by DOE on 2026-08-12",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Transmission access / corridor land along a route",
+      "field": "denomination.unit",
+      "hand": "linear route-miles of right-of-way across named reservations (Cheyenne River, Pine Ridge, Rosebud, Standing Rock, Yankton)",
+      "projected": "linear route-miles of right-of-way across named reservations"
+    },
+    {
+      "resource": "Transmission access / corridor land along a route",
+      "field": "yieldForm",
+      "hand": "none directly to the band; a granted easement or lease would be the yield, not yet exercised",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Transmission access / corridor land along a route",
+      "field": "laborForm",
+      "hand": "none",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Transmission access / corridor land along a route",
+      "field": "liquidity.exitPath",
+      "hand": "unknown; a corridor easement, once granted, could in principle be leased, but no such transaction was measured, and DOE's own cancellation of this proposed corridor means it does not currently exist to transact over",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Transmission access / corridor land along a route",
+      "field": "extractionCeiling.cap",
+      "hand": "bounded by the physical route length and the number of parcels a project must cross; the cancelled corridor's own scope named 'insufficient transmission access' as its constraint, per DOE Secretary Chris Wright's quoted statement",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Transmission access / corridor land along a route",
+      "field": "extractionCeiling.resetPeriod",
+      "hand": "n/a",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Transmission access / corridor land along a route",
+      "field": "extractionCeiling.antiBotRule",
+      "hand": "n/a",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Transmission access / corridor land along a route",
+      "field": "identityCost.kycRequired",
+      "hand": false,
+      "projected": "unknown"
+    },
+    {
+      "resource": "Transmission access / corridor land along a route",
+      "field": "identityCost.perHumanSlot",
+      "hand": false,
+      "projected": "unknown"
+    },
+    {
+      "resource": "Transmission access / corridor land along a route",
+      "field": "identityCost.detail",
+      "hand": "an easement or consent negotiated with each landholding entity (tribal government, allottee, or private owner) along the route; not a per-human identity cost",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Transmission access / corridor land along a route",
+      "field": "witnesses",
+      "hand": "[{\"observedOn\": \"2026-09-05\", \"source\": \"legal-scholarship blog covering DOE's own cancellation announcement\", \"sourceUrl\": \"https://turtletalk.blog/2026/09/04/doe-scraps-tribal-energy-corridor-intended-to-connect-reservation-power-to-the-grid/\"}]",
+      "projected": "[]"
+    },
+    {
+      "resource": "Transmission access / corridor land along a route",
+      "field": "provenance.sourceUrl",
+      "hand": "https://turtletalk.blog/2026/09/04/doe-scraps-tribal-energy-corridor-intended-to-connect-reservation-power-to-the-grid/",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Transmission access / corridor land along a route",
+      "field": "provenance.observedOn",
+      "hand": "2026-09-05",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Transmission access / corridor land along a route",
+      "field": "provenance.evidenceStatus",
+      "hand": "self-reported",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Water rights touched by a capital project",
+      "field": "identity.issuer",
+      "hand": "the band and its members hold treaty and other water rights; South Dakota's SB135 (signed 2026-03-24) adds water-usage regulation specifically for data centers",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Water rights touched by a capital project",
+      "field": "identity.rail",
+      "hand": "state permitting (SB135's water-usage regulation) and treaty/tribal water-rights law, not itself measured beyond the SB135 fact in this pass",
+      "projected": "state permitting and treaty/tribal water-rights law"
+    },
+    {
+      "resource": "Water rights touched by a capital project",
+      "field": "denomination.unit",
+      "hand": "unknown (no first-party figure for a specific plant's water draw or a specific water-rights allocation was measured)",
+      "projected": "unknown (no first-party figure for a specific plant's water draw or a specific water-rights allocation)"
+    },
+    {
+      "resource": "Water rights touched by a capital project",
+      "field": "yieldForm",
+      "hand": "none directly measured; a water-rights-based consent or fee is theoretically possible but not evidenced",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Water rights touched by a capital project",
+      "field": "laborForm",
+      "hand": "none",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Water rights touched by a capital project",
+      "field": "extractionCeiling.cap",
+      "hand": "SB135 'adds water-usage regulation' per secondary press coverage, but the bill's own specific volumetric limits were not independently retrieved in this pass",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Water rights touched by a capital project",
+      "field": "extractionCeiling.antiBotRule",
+      "hand": "n/a",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Water rights touched by a capital project",
+      "field": "identityCost.kycRequired",
+      "hand": false,
+      "projected": "unknown"
+    },
+    {
+      "resource": "Water rights touched by a capital project",
+      "field": "witnesses",
+      "hand": "[{\"observedOn\": \"2026-09-05\", \"source\": \"regional Native news outlet, citing SB135's legislative text and its own reporting\", \"sourceUrl\": \"https://www.buffalosfire.com/south-dakota-sets-limits-on-data-centers-rejects-moratorium\"}]",
+      "projected": "[]"
+    },
+    {
+      "resource": "Water rights touched by a capital project",
+      "field": "provenance.sourceUrl",
+      "hand": "https://www.buffalosfire.com/south-dakota-sets-limits-on-data-centers-rejects-moratorium",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Water rights touched by a capital project",
+      "field": "provenance.observedOn",
+      "hand": "2026-09-05",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Water rights touched by a capital project",
+      "field": "provenance.evidenceStatus",
+      "hand": "self-reported",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Consultation rights (structural claim held as an option)",
+      "field": "identity.issuer",
+      "hand": "the band and its tribal government, under federal trust responsibility, NEPA/NHPA-class review processes, and treaty rights",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Consultation rights (structural claim held as an option)",
+      "field": "identity.rail",
+      "hand": "federal/state environmental and permitting review processes (consultation requirements, PUC review under HB1038, treaty consultation)",
+      "projected": "federal/state environmental and permitting review processes (consultation requirements, PUC review, treaty rights)"
+    },
+    {
+      "resource": "Consultation rights (structural claim held as an option)",
+      "field": "denomination.unit",
+      "hand": "one consultation-rights claim per project/permitting proceeding, classed by the founder's own enforcement hierarchy (structural / aspirational / decorative, per the energy-descent note section 3.6)",
+      "projected": "one consultation-rights claim per project/permitting proceeding"
+    },
+    {
+      "resource": "Consultation rights (structural claim held as an option)",
+      "field": "custody",
+      "hand": "self",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Consultation rights (structural claim held as an option)",
+      "field": "yieldForm",
+      "hand": "a real option: its value is the delay it can impose on a capital project times that project's daily cost of delay (energy-descent note section 3.6), realized only if and when the band exercises or sells consent",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Consultation rights (structural claim held as an option)",
+      "field": "laborForm",
+      "hand": "none (a standing legal right, not earned by ongoing labor)",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Consultation rights (structural claim held as an option)",
+      "field": "liquidity.exitPath",
+      "hand": "sale of the option: a lease, royalty on generation, or community benefit agreement negotiated as the sale of a priced option, never as goodwill (energy-descent note section 3.6); every exercise is the band's, in council, never an agent's",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Consultation rights (structural claim held as an option)",
+      "field": "extractionCeiling.cap",
+      "hand": "bounded by which projects in the region are announced or likely and which of the band's claims are classed structural rather than aspirational or decorative; South Dakota's HB1038 (2026-03-24) was itself reported to lack tribal consultation before passage, which is evidence against this claim's current enforcement strength for data-center siting specifically",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Consultation rights (structural claim held as an option)",
+      "field": "extractionCeiling.resetPeriod",
+      "hand": "n/a (a standing right, not a resetting allowance)",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Consultation rights (structural claim held as an option)",
+      "field": "extractionCeiling.antiBotRule",
+      "hand": "n/a",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Consultation rights (structural claim held as an option)",
+      "field": "identityCost.kycRequired",
+      "hand": false,
+      "projected": "unknown"
+    },
+    {
+      "resource": "Consultation rights (structural claim held as an option)",
+      "field": "identityCost.perHumanSlot",
+      "hand": false,
+      "projected": "unknown"
+    },
+    {
+      "resource": "Consultation rights (structural claim held as an option)",
+      "field": "identityCost.detail",
+      "hand": "held collectively by the tribal government and its citizens, not rationed per individual",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Consultation rights (structural claim held as an option)",
+      "field": "witnesses",
+      "hand": "[{\"observedOn\": \"2026-09-05\", \"source\": \"regional Native news outlet, covering the legislative record, the Standing Rock Sioux Tribe's public hearing, and the Oceti Sakowin Treaty Council's resolution\", \"sourceUrl\": \"https://www.buffalosfire.com/south-dakota-sets-limits-on-data-centers-rejects-moratorium\"}]",
+      "projected": "[]"
+    },
+    {
+      "resource": "Consultation rights (structural claim held as an option)",
+      "field": "provenance.sourceUrl",
+      "hand": "https://www.buffalosfire.com/south-dakota-sets-limits-on-data-centers-rejects-moratorium",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Consultation rights (structural claim held as an option)",
+      "field": "provenance.observedOn",
+      "hand": "2026-09-05",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Consultation rights (structural claim held as an option)",
+      "field": "provenance.evidenceStatus",
+      "hand": "self-reported",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Wit",
+      "field": "identity.issuer",
+      "hand": "the house (561 Group), per the monetary-economics-science-services-section glossary; no minting or accounting script exists yet",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Wit",
+      "field": "identity.rail",
+      "hand": "none yet; theory only, per the program README's own finding ('The unit is in theory, not in code... no script mints or accounts a wit balance, measured 2026-09-05')",
+      "projected": "none yet; theory only"
+    },
+    {
+      "resource": "Wit",
+      "field": "denomination.unit",
+      "hand": "wit (one witnessed distinction-step; physically, kT ln 2 per erased bit, per the wit glossary term)",
+      "projected": "wit (one witnessed distinction-step; physically, kT ln 2 per erased bit)"
+    },
+    {
+      "resource": "Wit",
+      "field": "yieldForm",
+      "hand": "unknown (no yield mechanism coded)",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Wit",
+      "field": "laborForm",
+      "hand": "the act of settling/witnessing a distinction-step, per the wit glossary term's own definition; no accounting script exists yet to pay it out",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Wit",
+      "field": "liquidity.exitPath",
+      "hand": "none (no script mints or accounts a wit balance; not tradeable anywhere yet)",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Wit",
+      "field": "extractionCeiling.resetPeriod",
+      "hand": "n/a",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Wit",
+      "field": "extractionCeiling.antiBotRule",
+      "hand": "n/a",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Wit",
+      "field": "identityCost.kycRequired",
+      "hand": false,
+      "projected": "unknown"
+    },
+    {
+      "resource": "Wit",
+      "field": "witnesses",
+      "hand": "[{\"observedOn\": \"2026-08-21\", \"source\": \"house glossary term (the unit's own defining carrier)\", \"sourceUrl\": \"lib/emsenn/services/561-group/services/science-services-section/services/social-science-services-section/services/economics-and-business-science-services-section/services/monetary-economics-science-services-section/content/text/glossary/terms/wit.md\"}]",
+      "projected": "[]"
+    },
+    {
+      "resource": "Wit",
+      "field": "provenance.sourceUrl",
+      "hand": "lib/emsenn/services/561-group/services/science-services-section/services/social-science-services-section/services/economics-and-business-science-services-section/services/monetary-economics-science-services-section/content/text/glossary/terms/wit.md",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Wit",
+      "field": "provenance.observedOn",
+      "hand": "2026-08-21",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Wit",
+      "field": "provenance.evidenceStatus",
+      "hand": "self-reported",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Joule",
+      "field": "identity.issuer",
+      "hand": "n/a (a physical SI unit, not issued by any party); the house denominates its survival barrier and sizing schema in joules",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Joule",
+      "field": "identity.rail",
+      "hand": "the house's own sizing schema: position-sizing-service's barrierJoules field ({amount, unit: joules|kwh, usdPerKwh, asOf}), confirmed by direct reading of the package source (src/sleeve.mjs, function barrierUsdFromJoules)",
+      "projected": "the house's own sizing schema: position-sizing-service's barrierJoules field"
+    },
+    {
+      "resource": "Joule",
+      "field": "yieldForm",
+      "hand": "none (a valuation unit, not a yield-bearing instrument itself)",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Joule",
+      "field": "laborForm",
+      "hand": "none",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Joule",
+      "field": "liquidity.exitPath",
+      "hand": "conversion: a joule reading converts to USD at a declared usdPerKwh figure as of a stated date, per position-sizing-service's own barrierJoules schema",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Joule",
+      "field": "extractionCeiling.cap",
+      "hand": "n/a",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Joule",
+      "field": "extractionCeiling.resetPeriod",
+      "hand": "n/a",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Joule",
+      "field": "extractionCeiling.antiBotRule",
+      "hand": "n/a",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Joule",
+      "field": "identityCost.kycRequired",
+      "hand": false,
+      "projected": "unknown"
+    },
+    {
+      "resource": "Joule",
+      "field": "identityCost.perHumanSlot",
+      "hand": false,
+      "projected": "unknown"
+    },
+    {
+      "resource": "Joule",
+      "field": "identityCost.detail",
+      "hand": "n/a",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Joule",
+      "field": "witnesses",
+      "hand": "[{\"observedOn\": \"2026-09-06\", \"source\": \"direct reading of the position-sizing-service package source\", \"sourceUrl\": \"lib/emsenn/services/561-group/services/engineering-services-section/services/financial-engineering-services-section/services/position-sizing-service/src/sleeve.mjs\"}, {\"observedOn\": \"2026-09-05\", \"source\": \"program README's own citation of the same schema field\", \"sourceUrl\": \"lib/emsenn/services/561-group/services/561-group-services-section/services/561-group-operations-services-section/services/561-group-economic-operations-services-section/services/561-group-solar-economics-services-section/README.md\"}]",
+      "projected": "[]"
+    },
+    {
+      "resource": "Joule",
+      "field": "provenance.sourceUrl",
+      "hand": "lib/emsenn/services/561-group/services/engineering-services-section/services/financial-engineering-services-section/services/position-sizing-service/src/sleeve.mjs",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Joule",
+      "field": "provenance.observedOn",
+      "hand": "2026-09-06",
+      "projected": "unknown"
+    },
+    {
+      "resource": "Joule",
+      "field": "provenance.evidenceStatus",
+      "hand": "measured",
+      "projected": "unknown"
+    },
+    {
+      "resource": "USDC (x402 gateway settlement)",
+      "field": "identity.issuer",
+      "hand": "Circle (USDC issuer); settled via Coinbase's Base L2 network",
+      "projected": "paid-ephemeris-gateway (@red-cup-engineering/paid-ephemeris-gateway)"
+    },
+    {
+      "resource": "USDC (x402 gateway settlement)",
+      "field": "identity.rail",
+      "hand": "Base (Coinbase L2), via the x402 gateway; verified by two independent Base public RPC endpoints agreeing on a USDC Transfer log, per the tips-services-section's own verification design",
+      "projected": "Base (Coinbase L2), via the x402 gateway"
+    },
+    {
+      "resource": "USDC (x402 gateway settlement)",
+      "field": "custody",
+      "hand": "self",
+      "projected": "unknown"
+    },
+    {
+      "resource": "USDC (x402 gateway settlement)",
+      "field": "yieldForm",
+      "hand": "none (a settlement currency, not a yield-bearing position, in this program's usage)",
+      "projected": "unknown"
+    },
+    {
+      "resource": "USDC (x402 gateway settlement)",
+      "field": "laborForm",
+      "hand": "none directly; USDC is received as payment for the priced measures (joule valuation, yield projection, joules per settled row), not earned as labor pay per se, though the underlying work producing those measures is labor",
+      "projected": "providing device/compute/bandwidth"
+    },
+    {
+      "resource": "USDC (x402 gateway settlement)",
+      "field": "liquidity.exitPath",
+      "hand": "exchange listing / on-ramp-off-ramp; USDC trades against USD on numerous exchanges, not separately measured in this pass",
+      "projected": "unknown"
+    },
+    {
+      "resource": "USDC (x402 gateway settlement)",
+      "field": "extractionCeiling.cap",
+      "hand": "none found (no per-participant cap on USDC receipt found)",
+      "projected": "unknown"
+    },
+    {
+      "resource": "USDC (x402 gateway settlement)",
+      "field": "extractionCeiling.resetPeriod",
+      "hand": "n/a",
+      "projected": "unknown"
+    },
+    {
+      "resource": "USDC (x402 gateway settlement)",
+      "field": "extractionCeiling.antiBotRule",
+      "hand": "none found for receiving USDC via x402",
+      "projected": "unknown"
+    },
+    {
+      "resource": "USDC (x402 gateway settlement)",
+      "field": "identityCost.perHumanSlot",
+      "hand": false,
+      "projected": "unknown"
+    },
+    {
+      "resource": "USDC (x402 gateway settlement)",
+      "field": "witnesses",
+      "hand": "[{\"observedOn\": \"2026-09-05\", \"source\": \"house payment-rail catalog, describing its own two-independent-RPC-endpoint verification design\", \"sourceUrl\": \"lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/web-services-section/services/web-platform-services-section/services/web2-platform-services-section/services/web2-financial-platform-services-section/services/web2-payment-platform-services-section/services/tips-services-section/README.md\"}, {\"observedOn\": \"2026-09-05\", \"source\": \"solar-economics business plan's own citation of the same settlement address as the ephemeris gateway's\", \"sourceUrl\": \"lib/emsenn/services/561-group/services/561-group-services-section/services/561-group-operations-services-section/services/561-group-economic-operations-services-section/services/561-group-solar-economics-services-section/content/text/documents/articles/notes/2026/09/05/2026-09-05-note-on-the-soft-dyson-business-plan.md\"}]",
+      "projected": "[{\"observedOn\": \"2026-09-05\", \"source\": \"complement\", \"sourceUrl\": \"lib/emsenn/services/561-group/services/public-services-section/services/public-computer-services-section/services/public-web-services-section/services/public-web-divination-services-section/services/astrology-services-section/services/astrology-emphemeris-services-section\"}]"
+    },
+    {
+      "resource": "USDC (x402 gateway settlement)",
+      "field": "provenance.sourceUrl",
+      "hand": "lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/web-services-section/services/web-platform-services-section/services/web2-platform-services-section/services/web2-financial-platform-services-section/services/web2-payment-platform-services-section/services/tips-services-section/README.md",
+      "projected": "lib/emsenn/services/561-group/services/public-services-section/services/public-computer-services-section/services/public-web-services-section/services/public-web-divination-services-section/services/astrology-services-section/services/astrology-emphemeris-services-section"
+    },
+    {
+      "resource": "USDC (x402 gateway settlement)",
+      "field": "provenance.evidenceStatus",
+      "hand": "measured",
+      "projected": "self-reported"
+    }
+  ]
+}

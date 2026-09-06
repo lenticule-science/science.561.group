@@ -1,12 +1,3 @@
-// jcs-byte-equality — proves predicating/independent-evidence.mts's local `jcs` produces the exact
-// same bytes as @red-cup-engineering/json-codec-service's `canonical`, on a range of test vectors.
-//
-// The local copy exists because json-codec-service's root export transitively imports
-// @lenticule-science/articulating (via its jsonl/eavt subpath -- see
-// src/json/jsonl/eavt/index.mts), so importing it at RUNTIME from this package would close a
-// package-dependency cycle (articulating -> json-codec-service -> articulating). This test imports
-// json-codec-service only as a devDependency, never from the shipped source, to verify the two
-// canonicalizations never drift apart without paying for the cycle.
 import assert from "node:assert/strict";
 import * as discrete from "../dist/lib/articulating/predicating/positing/settling/analysis/discrete-set-number-graph.mjs";
 test("finite graph keys preserve string tuples and own numeric orders", () => {
@@ -34,7 +25,7 @@ test("finite posets preserve NUL labels and reject inherited map assignments", (
 import * as alexandrov from "../dist/lib/articulating/predicating/positing/settling/analysis/alexandrov-husainov.mjs";
 import { test } from "node:test";
 import { canonical } from "@red-cup-engineering/json-codec-service";
-import { jcs } from "../lib/articulating/predicating/independent-evidence.mts";
+import { canonicalJson as jcs } from "@red-cup-engineering/canonical-json-service";
 
 const vectors = [
   null,

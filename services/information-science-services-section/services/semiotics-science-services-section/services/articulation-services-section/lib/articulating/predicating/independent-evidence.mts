@@ -30,81 +30,27 @@
  * changes no observed behavior; it just closes a door the function's own
  * doc comment already said should not exist.
  *
- * jcs/rowId form ONE identity space with these functions (rowId = sha256(jcs(row))
- * hex). jcs here is a local, byte-verified copy of
- * `@red-cup-engineering/json-codec-service`'s `canonical` — not imported at
- * runtime, because that package's root export transitively imports
- * `@lenticule-science/articulating/utterance` and
- * `@lenticule-science/articulating/predicating/positing/bilattice-charge` (see
- * its `src/json/jsonl/eavt/index.mts`), so a runtime import here would close a
- * package-dependency cycle (articulating -> json-codec-service -> articulating).
- * The byte-equality is exercised as a devDependency-only test
- * (`test/jcs-byte-equality.test.mts`), never at runtime.
- *
- * The charge algebra composes through `@lenticule-science/metrologic` — never
+ * Row admission, identity, and grouping use the operational EAVT owner.
+ * The independent evidence fold remains scientific; knowledge join is not
  * reimplemented: `foldIndependentEvidence` joins per-cell evidence with
  * `metrologic/bilattice`'s `joinKnowledge`; `sectionSpace` presents the folded
  * fiber as an explicit Chu space over FOUR via `metrologic/chu` and
  * `metrologic/chu/four`, exactly as the original did.
  */
-import { createHash } from "node:crypto";
+import { assertRow, rowId, canonicalKey, type EavtRow } from "@red-cup-engineering/eavt";
+export { rowId } from "@red-cup-engineering/eavt";
 import { joinKnowledge } from "@lenticule-science/metrologic/bilattice";
 import { chuSpace } from "@lenticule-science/metrologic/chu";
 import { FOUR, fromCharge } from "@lenticule-science/metrologic/chu/four";
 import type { Charge, ChuSpace, Four } from "@lenticule-science/metrologic/chu";
 
-/** An exact EAVT row: subject, predicate (a gerund), object (any JSON), transaction/witness. */
-export interface EavtRow {
-  readonly e: string;
-  readonly a: string;
-  readonly v: unknown;
-  readonly t: unknown;
-}
-
-/**
- * The canonical serialization of a JSON-shaped value: object keys sorted, stable bytes.
- *
- * A local copy of `@red-cup-engineering/json-codec-service`'s `canonical()`
- * (`src/json/core.mts`), kept local per the circular-dependency note above.
- * Verified byte-identical to that function on a shared test vector by
- * `test/jcs-byte-equality.test.mts`. Typed over `unknown` (not a strict JSON
- * union) so it composes over EAVT rows without a second admission boundary;
- * the identity space it backs is content-addressed EAVT rows, not a free-form
- * JSON gate — that gate is json-codec-service's, upstream of these rows.
- */
-export function jcs(value: unknown): string {
-  if (value === null || typeof value === "boolean" || typeof value === "number") return JSON.stringify(value);
-  if (typeof value === "string") return JSON.stringify(value);
-  if (Array.isArray(value)) return `[${value.map((item) => jcs(item)).join(",")}]`;
-  const record = value as { readonly [key: string]: unknown };
-  const keys = Object.keys(record).sort();
-  return `{${keys.map((key) => `${JSON.stringify(key)}:${jcs(record[key])}`).join(",")}}`;
-}
-
-/** The canonical id of a row: identical content -> identical id. This IS the row's identity. */
-export function rowId(row: EavtRow): string {
-  return createHash("sha256").update(jcs(row), "utf8").digest("hex");
-}
-
-/** A row is exactly {e,a,v,t}. Lenient on values; throws otherwise. */
-function assertRow(row: unknown): EavtRow {
-  if (!row || typeof row !== "object" || Array.isArray(row)) {
-    throw new TypeError("independent-evidence: row must be a JSON object");
-  }
-  for (const key of ["e", "a", "v", "t"]) {
-    if (!(key in row)) throw new TypeError(`independent-evidence: row missing "${key}"`);
-  }
-  if (Object.keys(row).length !== 4) {
-    throw new TypeError(`independent-evidence: row must be exactly {e,a,v,t}, got ${Object.keys(row).join(",")}`);
-  }
-  return row as EavtRow;
-}
+export type { EavtRow } from "@red-cup-engineering/eavt";
 
 // === reified-row identity ===================================================================
 /** A reified row is a row ABOUT a base row: its subject `e` is the base row's content-id, prefixed. */
 export const REIFIED_PREFIX = "row:";
-/** reify(base) -> the content-address of a base row, prefixed (16-hex slice keeps it legible). */
-export const reify = (base: EavtRow): string => `${REIFIED_PREFIX}${rowId(base).slice(0, 16)}`;
+/** reify(base) -> the content-address of a base row, prefixed with the full canonical EAVT identity. */
+export const reify = (base: EavtRow): string => `${REIFIED_PREFIX}${rowId(base)}`;
 /** isReified(e) -> is this entity-id an attribution about a row (not a subject)? */
 export const isReified = (e: unknown): e is string => typeof e === "string" && e.startsWith(REIFIED_PREFIX);
 
@@ -231,7 +177,7 @@ export function foldIndependentEvidence(
     if (!claim || typeof claim !== "object" || Array.isArray(claim)) throw new TypeError(`foldIndependentEvidence: claims[${index}] must be an object`);
     if (claim.subject !== subject) throw new TypeError(`foldIndependentEvidence: claims[${index}].subject must equal the folded subject`);
     if (typeof claim.predicate !== "string" || claim.predicate === "") throw new TypeError(`foldIndependentEvidence: claims[${index}].predicate must be a non-empty string`);
-    const key = jcs([claim.predicate, claim.object]);
+    const key = canonicalKey([claim.predicate, claim.object]);
     cells.set(key, { predicate: claim.predicate, object: claim.object, charge: { value: [false, false], evidence: [[], []] } });
   }
 
@@ -247,13 +193,13 @@ export function foldIndependentEvidence(
     const contribution: Charge = side === "negative"
       ? { value: [false, true], evidence: [[], [id]] }
       : { value: [true, false], evidence: [[id], []] };
-    const key = jcs([r.a, r.v]);
+    const key = canonicalKey([r.a, r.v]);
     const prior = cells.get(key)?.charge ?? { value: [false, false], evidence: [[], []] };
     cells.set(key, { predicate: r.a, object: r.v, charge: joinKnowledge({ left: prior, right: contribution }) });
   }
 
   const fiber = [...cells.values()]
-    .sort((a, b) => jcs([a.predicate, a.object]).localeCompare(jcs([b.predicate, b.object])))
+    .sort((a, b) => canonicalKey([a.predicate, a.object]).localeCompare(canonicalKey([b.predicate, b.object])))
     .map(({ predicate, object, charge }): FoldedCell => ({
       predicate,
       object,
@@ -295,7 +241,7 @@ export interface SectionSpaceResult {
 /**
  * sectionSpace(folded, rows, opts?) — lift a folded fiber-algebra into an explicit Chu space over
  * FOUR (`@lenticule-science/metrologic/chu`): the rich sibling of `section()`. The POINTS are the
- * folded cells (keyed `jcs([predicate,object])`), the STATES are the witnessing coordinate
+ * folded cells (keyed `canonicalKey([predicate,object])`), the STATES are the witnessing coordinate
  * `stateOf(row)` (e.g. the party in `t.by`), and the value at (cell, state) is the FOUR face that
  * state witnesses: t if it charged the positive face, f the converse, ⊤ both, ⊥ (open-world absent)
  * neither. This is exactly the Chu presentation `Obsmetrologia.predicationChu` names: predications as
@@ -324,7 +270,7 @@ export function sectionSpace(folded: FoldedSection, rows: readonly EavtRow[] = [
   const stateSet = new Set<string>();
   for (const c of folded.fiber) {
     if (opts.predicate !== undefined && c.predicate !== opts.predicate) continue;
-    const key = jcs([c.predicate, c.object]);
+    const key = canonicalKey([c.predicate, c.object]);
     cells.set(key, { predicate: c.predicate, object: c.object, charge: c.value });
     const [posIds, negIds] = c.value.evidence;
     const pos = partiesOf(posIds);

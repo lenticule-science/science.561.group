@@ -1,0 +1,9 @@
+{
+  "name": "@lenticule-science/roadmap-science-services-section",
+  "version": "0.1.0",
+  "description": "The study of the roadmap: the plan as the unsaturated form read off the record of work, milestones and horizons derived, never asserted.",
+  "type": "module",
+  "keywords": [
+    "science"
+  ]
+}

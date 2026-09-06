@@ -17,7 +17,7 @@
     "@red-cup-engineering/relational-value-graph-service": "0.1.1",
     "@red-cup-engineering/resolve-filepath-service": "0.1.1",
     "@red-cup-engineering/semantic-content-identify-service": "0.2.7",
-    "@red-cup-engineering/semantic-record-journal-service": "0.1.6"
+    "@red-cup-engineering/semantic-record-journal-service": "0.1.11"
   },
   "license": "UNLICENSED",
   "exports": {

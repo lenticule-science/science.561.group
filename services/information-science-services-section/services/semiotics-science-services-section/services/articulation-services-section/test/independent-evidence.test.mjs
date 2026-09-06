@@ -1,3 +1,4 @@
+import { canonicalKey as jcs, rowId as operationalRowId } from "@red-cup-engineering/eavt";
 // independent-evidence — the predication-charge machinery's own test suite.
 //
 // Ports the behaviors exercised by @red-cup-engineering/computer's
@@ -12,7 +13,6 @@ import assert from "node:assert/strict";
 import { test } from "node:test";
 import { FOUR, row as chuRow, settleRow } from "@lenticule-science/metrologic/chu";
 import {
-  jcs,
   rowId,
   reify,
   isReified,
@@ -296,5 +296,21 @@ test('pointwise closure and reindexing preserve own prototype-sensitive point na
     const receipt = pointwiseClosureFamilyReceipt(knowledgeJoinClosure('potential'), seed);
     assert.equal(readValuationFiber(receipt.closed, point), 'potential');
     assert.throws(() => reindexMapCarrier([point], ['target'], Object.create({ [point]: 'target' })), { name: 'TypeError', message: `reindexMapCarrier: missing target for ${point}` });
+  }
+});
+
+test("scientific evidence uses full operational row identity and preserves witness custody", () => {
+  const positive = independentEvidenceRow({ subject: "s", predicate: "p", object: "o", side: "positive", by: "alice", witness: { observedAt: "2026-09-05T00:00:00Z", resource: "resource:one" } });
+  const negative = independentEvidenceRow({ subject: "s", predicate: "p", object: "o", side: "negative", by: "bob", witness: { observedAt: "2026-09-05T00:00:01Z", resource: "resource:two" } });
+  assert.equal(rowId(positive), operationalRowId(positive));
+  assert.equal(reify(positive), `row:${operationalRowId(positive)}`);
+  const folded = foldIndependentEvidence("s", [{ subject: "s", predicate: "p", object: "o" }], [positive, negative]);
+  assert.deepEqual(folded.fiber[0].evidence, [[operationalRowId(positive)], [operationalRowId(negative)]]);
+  assert.deepEqual(positive.t.witness, { observedAt: "2026-09-05T00:00:00Z", resource: "resource:one" });
+});
+
+test("independent evidence refuses values outside canonical row admission", () => {
+  for (const object of [NaN, Infinity, new Date(), [,], "\uD800"]) {
+    assert.throws(() => independentEvidenceRow({ subject: "s", predicate: "p", object, side: "positive", by: "alice", witness: "observed" }));
   }
 });

@@ -1,0 +1,639 @@
+{
+  "type": "SolarEconomyResourceRows",
+  "version": 1,
+  "projectedAt": "2026-09-06",
+  "projectedBy": "@red-cup-engineering/project-set-of-resource-rows-from-measurement-service@0.2.0",
+  "schema": "lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-economic-systems-engineering-services-section/data/records/schema/resource-row.schema.json",
+  "catalog": "lib/emsenn/services/561-group/services/science-services-section/services/social-science-services-section/services/economics-and-business-science-services-section/services/economics-science-services-section/services/solar-economics-science-services-section/data/records/2026-09-06-solar-economy-resource-catalog.json",
+  "sources": [
+    "lib/emsenn/services/561-group/services/561-group-services-section/services/561-group-operations-services-section/services/561-group-economic-operations-services-section/services/561-group-solar-economics-services-section/data/records/2026-09-05-solar-economics-incumbent-and-data-source-measurement.json"
+  ],
+  "validation": {
+    "validator": "@red-cup-engineering/validate-json-schema-instance-service (json-schema-cli validate-instance)",
+    "rows": 16,
+    "valid": 16
+  },
+  "rows": [
+    {
+      "identity": {
+        "name": "Electricity (kWh at utility tariff)",
+        "kind": "commodity",
+        "issuer": "OpenEI Utility Rate Database (URDB) API",
+        "rail": "the utility's own distribution grid and monthly billing account"
+      },
+      "denomination": {
+        "unit": "kWh, priced in USD per the utility's own tariff",
+        "witReading": null,
+        "emergyReading": null
+      },
+      "custody": "unknown",
+      "yieldForm": "savings interest",
+      "laborForm": "posting content",
+      "liquidity": {
+        "exitPath": "unknown",
+        "exitsToRow": null
+      },
+      "extractionCeiling": {
+        "cap": "unknown",
+        "resetPeriod": "unknown",
+        "antiBotRule": "unknown"
+      },
+      "identityCost": {
+        "kycRequired": false,
+        "perHumanSlot": "unknown",
+        "detail": "not found"
+      },
+      "witnesses": [
+        {
+          "source": "upstream-provider",
+          "sourceUrl": "https://developer.nlr.gov/docs/electricity/openei-utility-rates/",
+          "observedOn": "2026-09-05"
+        },
+        {
+          "source": "upstream-provider",
+          "sourceUrl": "https://www.genability.com/",
+          "observedOn": "2026-09-05"
+        }
+      ],
+      "provenance": {
+        "sourceUrl": "https://developer.nlr.gov/docs/electricity/openei-utility-rates/",
+        "observedOn": "2026-09-05",
+        "evidenceStatus": "measured"
+      }
+    },
+    {
+      "identity": {
+        "name": "Distributed-generation credit (net-metered kWh)",
+        "kind": "credit",
+        "issuer": "OpenEI Utility Rate Database (URDB) API",
+        "rail": "the utility's internal net-metering ledger, credited against the household's USD-denominated bill"
+      },
+      "denomination": {
+        "unit": "kWh credited against a future USD-denominated bill",
+        "witReading": null,
+        "emergyReading": null
+      },
+      "custody": "unknown",
+      "yieldForm": "savings interest",
+      "laborForm": "posting content",
+      "liquidity": {
+        "exitPath": "unknown",
+        "exitsToRow": null
+      },
+      "extractionCeiling": {
+        "cap": "unknown",
+        "resetPeriod": "unknown",
+        "antiBotRule": "unknown"
+      },
+      "identityCost": {
+        "kycRequired": false,
+        "perHumanSlot": "unknown",
+        "detail": "not found"
+      },
+      "witnesses": [
+        {
+          "source": "upstream-provider",
+          "sourceUrl": "https://developer.nlr.gov/docs/electricity/openei-utility-rates/",
+          "observedOn": "2026-09-05"
+        },
+        {
+          "source": "upstream-provider",
+          "sourceUrl": "https://www.lacreek.com/billing",
+          "observedOn": "2026-09-05"
+        }
+      ],
+      "provenance": {
+        "sourceUrl": "https://developer.nlr.gov/docs/electricity/openei-utility-rates/",
+        "observedOn": "2026-09-05",
+        "evidenceStatus": "measured"
+      }
+    },
+    {
+      "identity": {
+        "name": "Propane (gallon)",
+        "kind": "commodity",
+        "issuer": "unknown",
+        "rail": "physical delivery by tank truck to an on-site propane tank"
+      },
+      "denomination": {
+        "unit": "gallon, priced in USD per the distributor's posted or contracted rate",
+        "witReading": null,
+        "emergyReading": null
+      },
+      "custody": "unknown",
+      "yieldForm": "unknown",
+      "laborForm": "unknown",
+      "liquidity": {
+        "exitPath": "unknown",
+        "exitsToRow": null
+      },
+      "extractionCeiling": {
+        "cap": "unknown",
+        "resetPeriod": "unknown",
+        "antiBotRule": "unknown"
+      },
+      "identityCost": {
+        "kycRequired": "unknown",
+        "perHumanSlot": "unknown",
+        "detail": "unknown"
+      },
+      "witnesses": [],
+      "provenance": {
+        "sourceUrl": "unknown",
+        "observedOn": "unknown",
+        "evidenceStatus": "unknown"
+      }
+    },
+    {
+      "identity": {
+        "name": "Diesel / heating oil (gallon)",
+        "kind": "commodity",
+        "issuer": "unknown",
+        "rail": "physical delivery or retail pump purchase"
+      },
+      "denomination": {
+        "unit": "gallon, priced in USD",
+        "witReading": null,
+        "emergyReading": null
+      },
+      "custody": "unknown",
+      "yieldForm": "unknown",
+      "laborForm": "unknown",
+      "liquidity": {
+        "exitPath": "unknown",
+        "exitsToRow": null
+      },
+      "extractionCeiling": {
+        "cap": "unknown",
+        "resetPeriod": "unknown",
+        "antiBotRule": "unknown"
+      },
+      "identityCost": {
+        "kycRequired": "unknown",
+        "perHumanSlot": "unknown",
+        "detail": "unknown"
+      },
+      "witnesses": [],
+      "provenance": {
+        "sourceUrl": "unknown",
+        "observedOn": "unknown",
+        "evidenceStatus": "unknown"
+      }
+    },
+    {
+      "identity": {
+        "name": "Cordwood",
+        "kind": "commodity",
+        "issuer": "unknown",
+        "rail": "informal/local retail or self-harvested; physical delivery, no chain"
+      },
+      "denomination": {
+        "unit": "cord, priced in USD where sold; self-harvested wood carries no dollar price but a labor and land cost",
+        "witReading": null,
+        "emergyReading": null
+      },
+      "custody": "unknown",
+      "yieldForm": "unknown",
+      "laborForm": "unknown",
+      "liquidity": {
+        "exitPath": "unknown",
+        "exitsToRow": null
+      },
+      "extractionCeiling": {
+        "cap": "unknown",
+        "resetPeriod": "unknown",
+        "antiBotRule": "unknown"
+      },
+      "identityCost": {
+        "kycRequired": "unknown",
+        "perHumanSlot": "unknown",
+        "detail": "unknown"
+      },
+      "witnesses": [],
+      "provenance": {
+        "sourceUrl": "unknown",
+        "observedOn": "unknown",
+        "evidenceStatus": "unknown"
+      }
+    },
+    {
+      "identity": {
+        "name": "LIHEAP grant (federal, state-administered)",
+        "kind": "credit",
+        "issuer": "LIHEAP (federal Low Income Home Energy Assistance Program)",
+        "rail": "the state agency's own benefit-disbursement process"
+      },
+      "denomination": {
+        "unit": "USD per household per heating season",
+        "witReading": null,
+        "emergyReading": null
+      },
+      "custody": "unknown",
+      "yieldForm": "unknown",
+      "laborForm": "unknown",
+      "liquidity": {
+        "exitPath": "unknown",
+        "exitsToRow": null
+      },
+      "extractionCeiling": {
+        "cap": "unknown",
+        "resetPeriod": "unknown",
+        "antiBotRule": "unknown"
+      },
+      "identityCost": {
+        "kycRequired": "unknown",
+        "perHumanSlot": "unknown",
+        "detail": "household income and identity documentation required by the administering state/tribal grantee (see SD and OST rows); full household income documentation and signatures"
+      },
+      "witnesses": [
+        {
+          "source": "incumbent",
+          "sourceUrl": "https://acf.gov/ocs/programs/liheap",
+          "observedOn": "2026-09-05"
+        },
+        {
+          "source": "incumbent",
+          "sourceUrl": "https://dss.sd.gov/economicassistance/energyassistance/lowincome.aspx",
+          "observedOn": "2026-09-05"
+        }
+      ],
+      "provenance": {
+        "sourceUrl": "https://acf.gov/ocs/programs/liheap",
+        "observedOn": "2026-09-05",
+        "evidenceStatus": "measured"
+      }
+    },
+    {
+      "identity": {
+        "name": "Tribal LIHEAP grant (Oglala Sioux Tribe)",
+        "kind": "credit",
+        "issuer": "Oglala Sioux Tribe LIHEAP (tribal grantee, Pine Ridge)",
+        "rail": "the Tribe's own district service centers, run in parallel to, not through, the state DSS LIHEAP office"
+      },
+      "denomination": {
+        "unit": "USD per household per program period; specific benefit amount not found",
+        "witReading": null,
+        "emergyReading": null
+      },
+      "custody": "unknown",
+      "yieldForm": "unknown",
+      "laborForm": "unknown",
+      "liquidity": {
+        "exitPath": "unknown",
+        "exitsToRow": null
+      },
+      "extractionCeiling": {
+        "cap": "unknown",
+        "resetPeriod": "unknown",
+        "antiBotRule": "unknown"
+      },
+      "identityCost": {
+        "kycRequired": "unknown",
+        "perHumanSlot": "unknown",
+        "detail": "tribal membership or reservation residency plus full income documentation"
+      },
+      "witnesses": [
+        {
+          "source": "incumbent",
+          "sourceUrl": "https://liheapch.acf.gov/docs/2025/tribal_plans/SD_OglalaSioux_2025.pdf",
+          "observedOn": "2026-09-05"
+        }
+      ],
+      "provenance": {
+        "sourceUrl": "https://liheapch.acf.gov/docs/2025/tribal_plans/SD_OglalaSioux_2025.pdf",
+        "observedOn": "2026-09-05",
+        "evidenceStatus": "self-reported"
+      }
+    },
+    {
+      "identity": {
+        "name": "Federal residential clean-energy tax credit (Section 25D)",
+        "kind": "credit",
+        "issuer": "unknown",
+        "rail": "the household's own federal income tax return (Form 5695), nonrefundable, carried forward against future tax liability"
+      },
+      "denomination": {
+        "unit": "USD (30% of qualified solar/battery-storage installation expenditure), nonrefundable",
+        "witReading": null,
+        "emergyReading": null
+      },
+      "custody": "unknown",
+      "yieldForm": "unknown",
+      "laborForm": "unknown",
+      "liquidity": {
+        "exitPath": "unknown",
+        "exitsToRow": null
+      },
+      "extractionCeiling": {
+        "cap": "unknown",
+        "resetPeriod": "unknown",
+        "antiBotRule": "unknown"
+      },
+      "identityCost": {
+        "kycRequired": "unknown",
+        "perHumanSlot": "unknown",
+        "detail": "unknown"
+      },
+      "witnesses": [],
+      "provenance": {
+        "sourceUrl": "unknown",
+        "observedOn": "unknown",
+        "evidenceStatus": "unknown"
+      }
+    },
+    {
+      "identity": {
+        "name": "Renewable Energy Certificate (REC)",
+        "kind": "commodity",
+        "issuer": "unknown",
+        "rail": "the CleanCounts (M-RETS) electricity registry"
+      },
+      "denomination": {
+        "unit": "one REC per MWh generated from a qualifying renewable source",
+        "witReading": null,
+        "emergyReading": null
+      },
+      "custody": "unknown",
+      "yieldForm": "unknown",
+      "laborForm": "unknown",
+      "liquidity": {
+        "exitPath": "unknown",
+        "exitsToRow": null
+      },
+      "extractionCeiling": {
+        "cap": "unknown",
+        "resetPeriod": "unknown",
+        "antiBotRule": "unknown"
+      },
+      "identityCost": {
+        "kycRequired": "unknown",
+        "perHumanSlot": "unknown",
+        "detail": "unknown"
+      },
+      "witnesses": [],
+      "provenance": {
+        "sourceUrl": "unknown",
+        "observedOn": "unknown",
+        "evidenceStatus": "unknown"
+      }
+    },
+    {
+      "identity": {
+        "name": "Interconnection queue position (Oceti Sakowin Power Authority)",
+        "kind": "scarce-input",
+        "issuer": "unknown",
+        "rail": "SPP's own interconnection queue process; an administrative rail, not a chain or platform ledger"
+      },
+      "denomination": {
+        "unit": "one queue position per named generation project",
+        "witReading": null,
+        "emergyReading": null
+      },
+      "custody": "unknown",
+      "yieldForm": "unknown",
+      "laborForm": "unknown",
+      "liquidity": {
+        "exitPath": "unknown",
+        "exitsToRow": null
+      },
+      "extractionCeiling": {
+        "cap": "unknown",
+        "resetPeriod": "unknown",
+        "antiBotRule": "unknown"
+      },
+      "identityCost": {
+        "kycRequired": "unknown",
+        "perHumanSlot": "unknown",
+        "detail": "unknown"
+      },
+      "witnesses": [],
+      "provenance": {
+        "sourceUrl": "unknown",
+        "observedOn": "unknown",
+        "evidenceStatus": "unknown"
+      }
+    },
+    {
+      "identity": {
+        "name": "Transmission access / corridor land along a route",
+        "kind": "scarce-input",
+        "issuer": "unknown",
+        "rail": "federal/state permitting and right-of-way easement process along the physical corridor route"
+      },
+      "denomination": {
+        "unit": "linear route-miles of right-of-way across named reservations",
+        "witReading": null,
+        "emergyReading": null
+      },
+      "custody": "unknown",
+      "yieldForm": "unknown",
+      "laborForm": "unknown",
+      "liquidity": {
+        "exitPath": "unknown",
+        "exitsToRow": null
+      },
+      "extractionCeiling": {
+        "cap": "unknown",
+        "resetPeriod": "unknown",
+        "antiBotRule": "unknown"
+      },
+      "identityCost": {
+        "kycRequired": "unknown",
+        "perHumanSlot": "unknown",
+        "detail": "unknown"
+      },
+      "witnesses": [],
+      "provenance": {
+        "sourceUrl": "unknown",
+        "observedOn": "unknown",
+        "evidenceStatus": "unknown"
+      }
+    },
+    {
+      "identity": {
+        "name": "Water rights touched by a capital project",
+        "kind": "scarce-input",
+        "issuer": "unknown",
+        "rail": "state permitting and treaty/tribal water-rights law"
+      },
+      "denomination": {
+        "unit": "unknown (no first-party figure for a specific plant's water draw or a specific water-rights allocation)",
+        "witReading": null,
+        "emergyReading": null
+      },
+      "custody": "unknown",
+      "yieldForm": "unknown",
+      "laborForm": "unknown",
+      "liquidity": {
+        "exitPath": "unknown",
+        "exitsToRow": null
+      },
+      "extractionCeiling": {
+        "cap": "unknown",
+        "resetPeriod": "unknown",
+        "antiBotRule": "unknown"
+      },
+      "identityCost": {
+        "kycRequired": "unknown",
+        "perHumanSlot": "unknown",
+        "detail": "unknown"
+      },
+      "witnesses": [],
+      "provenance": {
+        "sourceUrl": "unknown",
+        "observedOn": "unknown",
+        "evidenceStatus": "unknown"
+      }
+    },
+    {
+      "identity": {
+        "name": "Consultation rights (structural claim held as an option)",
+        "kind": "scarce-input",
+        "issuer": "unknown",
+        "rail": "federal/state environmental and permitting review processes (consultation requirements, PUC review, treaty rights)"
+      },
+      "denomination": {
+        "unit": "one consultation-rights claim per project/permitting proceeding",
+        "witReading": null,
+        "emergyReading": null
+      },
+      "custody": "unknown",
+      "yieldForm": "unknown",
+      "laborForm": "unknown",
+      "liquidity": {
+        "exitPath": "unknown",
+        "exitsToRow": null
+      },
+      "extractionCeiling": {
+        "cap": "unknown",
+        "resetPeriod": "unknown",
+        "antiBotRule": "unknown"
+      },
+      "identityCost": {
+        "kycRequired": "unknown",
+        "perHumanSlot": "unknown",
+        "detail": "unknown"
+      },
+      "witnesses": [],
+      "provenance": {
+        "sourceUrl": "unknown",
+        "observedOn": "unknown",
+        "evidenceStatus": "unknown"
+      }
+    },
+    {
+      "identity": {
+        "name": "Wit",
+        "kind": "currency",
+        "issuer": "unknown",
+        "rail": "none yet; theory only"
+      },
+      "denomination": {
+        "unit": "wit (one witnessed distinction-step; physically, kT ln 2 per erased bit)",
+        "witReading": null,
+        "emergyReading": null
+      },
+      "custody": "unknown",
+      "yieldForm": "unknown",
+      "laborForm": "unknown",
+      "liquidity": {
+        "exitPath": "unknown",
+        "exitsToRow": null
+      },
+      "extractionCeiling": {
+        "cap": "unknown",
+        "resetPeriod": "unknown",
+        "antiBotRule": "unknown"
+      },
+      "identityCost": {
+        "kycRequired": "unknown",
+        "perHumanSlot": "unknown",
+        "detail": "unknown"
+      },
+      "witnesses": [],
+      "provenance": {
+        "sourceUrl": "unknown",
+        "observedOn": "unknown",
+        "evidenceStatus": "unknown"
+      }
+    },
+    {
+      "identity": {
+        "name": "Joule",
+        "kind": "commodity",
+        "issuer": "unknown",
+        "rail": "the house's own sizing schema: position-sizing-service's barrierJoules field"
+      },
+      "denomination": {
+        "unit": "joule (J); kWh is the practical household-scale unit, 1 kWh = 3.6 MJ",
+        "witReading": null,
+        "emergyReading": null
+      },
+      "custody": "unknown",
+      "yieldForm": "unknown",
+      "laborForm": "unknown",
+      "liquidity": {
+        "exitPath": "unknown",
+        "exitsToRow": null
+      },
+      "extractionCeiling": {
+        "cap": "unknown",
+        "resetPeriod": "unknown",
+        "antiBotRule": "unknown"
+      },
+      "identityCost": {
+        "kycRequired": "unknown",
+        "perHumanSlot": "unknown",
+        "detail": "unknown"
+      },
+      "witnesses": [],
+      "provenance": {
+        "sourceUrl": "unknown",
+        "observedOn": "unknown",
+        "evidenceStatus": "unknown"
+      }
+    },
+    {
+      "identity": {
+        "name": "USDC (x402 gateway settlement)",
+        "kind": "currency",
+        "issuer": "paid-ephemeris-gateway (@red-cup-engineering/paid-ephemeris-gateway)",
+        "rail": "Base (Coinbase L2), via the x402 gateway"
+      },
+      "denomination": {
+        "unit": "USDC (1:1 USD-pegged stablecoin)",
+        "witReading": null,
+        "emergyReading": null
+      },
+      "custody": "unknown",
+      "yieldForm": "unknown",
+      "laborForm": "providing device/compute/bandwidth",
+      "liquidity": {
+        "exitPath": "unknown",
+        "exitsToRow": null
+      },
+      "extractionCeiling": {
+        "cap": "unknown",
+        "resetPeriod": "unknown",
+        "antiBotRule": "unknown"
+      },
+      "identityCost": {
+        "kycRequired": "unknown",
+        "perHumanSlot": "unknown",
+        "detail": "unknown"
+      },
+      "witnesses": [
+        {
+          "source": "complement",
+          "sourceUrl": "lib/emsenn/services/561-group/services/public-services-section/services/public-computer-services-section/services/public-web-services-section/services/public-web-divination-services-section/services/astrology-services-section/services/astrology-emphemeris-services-section",
+          "observedOn": "2026-09-05"
+        }
+      ],
+      "provenance": {
+        "sourceUrl": "lib/emsenn/services/561-group/services/public-services-section/services/public-computer-services-section/services/public-web-services-section/services/public-web-divination-services-section/services/astrology-services-section/services/astrology-emphemeris-services-section",
+        "observedOn": "2026-09-05",
+        "evidenceStatus": "self-reported"
+      }
+    }
+  ]
+}

@@ -25,7 +25,7 @@
     "@red-cup-engineering/openai-compatible-chat-completion-service": "0.3.0",
     "@red-cup-engineering/position-sizing-service": "0.2.0",
     "@red-cup-engineering/resolve-filepath-service": "0.1.1",
-    "@red-cup-engineering/semantic-record-journal-service": "0.1.9"
+    "@red-cup-engineering/semantic-record-journal-service": "0.1.11"
   },
   "engines": {
     "node": ">=22"

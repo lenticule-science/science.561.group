@@ -234,7 +234,6 @@ export {
   reify,
   isReified,
   INDEPENDENT_EVIDENCE_WITNESS_KIND,
-  jcs,
   rowId,
   independentEvidenceRow,
   independentEvidenceSide,
@@ -255,3 +254,6 @@ export type {
   SectionSpaceCell,
   SectionSpaceResult,
 } from "./independent-evidence.mjs";
+
+export { eavtToCell, cellToEavt } from "./eavt.mjs";
+export type { ChargedCell } from "./eavt.mjs";

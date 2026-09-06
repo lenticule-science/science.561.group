@@ -1,0 +1,11 @@
+{
+  "name": "@lenticule-science/aplanat-research",
+  "version": "0.1.0",
+  "description": "Aplanat Research — Lenticule Science's gig-work research division: the study of American gig work, its net pay, costs, tax and benefit rules, and pay-floor laws, every figure cited to a first-party source with its date.",
+  "type": "module",
+  "keywords": [
+    "brand:aplanat-research",
+    "gig-work-science",
+    "lenticule-science"
+  ]
+}
