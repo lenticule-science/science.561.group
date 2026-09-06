@@ -28,12 +28,14 @@
   "devDependencies": {
     "typescript": "5.9.3",
     "@types/node": "22.20.1",
-    "@red-cup-engineering/validate-json-schema-service": "0.2.2"
+    "@red-cup-engineering/validate-json-schema-service": "0.2.2",
+    "@red-cup-engineering/canonical-json-service": "0.2.1"
   },
   "dependencies": {
     "@red-cup-engineering/transform-json-schema-to-typescript-service": "0.2.0",
     "@lenticule-science/metrologic": "0.1.1",
-    "@red-cup-engineering/json-codec-service": "0.2.0"
+    "@red-cup-engineering/json-codec-service": "0.2.0",
+    "@red-cup-engineering/eavt": "0.10.0"
   },
   "exports": {
     ".": {
