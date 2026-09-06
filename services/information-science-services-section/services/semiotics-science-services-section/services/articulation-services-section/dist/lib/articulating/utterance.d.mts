@@ -15,6 +15,7 @@
 import type { FromJsonSchema } from "@red-cup-engineering/transform-json-schema-to-typescript-service/types";
 /** The base admission carrier schema: one plain JSON-Schema literal with a bare `$id`. */
 export declare const utteranceSchema: {
+    readonly $schema: "https://json-schema.org/draft/2020-12/schema";
     readonly $id: "relating/articulating/utterance";
     readonly type: "object";
     readonly required: readonly ["kind", "token", "claim"];
@@ -79,6 +80,7 @@ export declare const utteranceSchema: {
 export type UtteranceCarrier = FromJsonSchema<typeof utteranceSchema>;
 /** The articulation cell carrier schema opened from an utterance. */
 export declare const articulationCellSchema: {
+    readonly $schema: "https://json-schema.org/draft/2020-12/schema";
     readonly $id: "relating/articulating/articulation-cell";
     readonly type: "object";
     readonly required: readonly ["kind", "potentialAperiodicArticulationCell"];
@@ -88,7 +90,8 @@ export declare const articulationCellSchema: {
         };
         potentialAperiodicArticulationCell: {
             type: string;
-            items: ({
+            prefixItems: ({
+                readonly $schema: "https://json-schema.org/draft/2020-12/schema";
                 readonly $id: "relating/articulating/utterance";
                 readonly type: "object";
                 readonly required: readonly ["kind", "token", "claim"];
@@ -150,9 +153,9 @@ export declare const articulationCellSchema: {
                 readonly description: "The base admission carrier: a token and a claim, each carrying a Mark.";
             } | {
                 type: string;
-                items: {
+                prefixItems: ({
                     type: string;
-                    items: {
+                    prefixItems: {
                         readonly type: "object";
                         readonly required: readonly ["kind", "hand", "mark"];
                         readonly properties: {
@@ -178,15 +181,21 @@ export declare const articulationCellSchema: {
                     }[];
                     minItems: number;
                     maxItems: number;
-                    additionalItems: boolean;
-                }[];
+                    items: boolean;
+                } | {
+                    type: string;
+                    minItems: number;
+                    maxItems: number;
+                    items: boolean;
+                    prefixItems?: never;
+                })[];
                 minItems: number;
                 maxItems: number;
-                additionalItems: boolean;
+                items: boolean;
             })[];
             minItems: number;
             maxItems: number;
-            additionalItems: boolean;
+            items: boolean;
         };
     };
     readonly additionalProperties: false;

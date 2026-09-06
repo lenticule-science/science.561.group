@@ -35,6 +35,7 @@ const utteranceShape = {
 };
 /** The base admission carrier schema: one plain JSON-Schema literal with a bare `$id`. */
 export const utteranceSchema = {
+    $schema: "https://json-schema.org/draft/2020-12/schema",
     $id: "relating/articulating/utterance",
     type: "object",
     required: ["kind", "token", "claim"],
@@ -48,26 +49,27 @@ const articulationCellShape = {
     kind: { const: "utterance.articulation.cell" },
     potentialAperiodicArticulationCell: {
         type: "array",
-        items: [
+        prefixItems: [
             utteranceSchema,
             {
                 type: "array",
-                items: [
-                    { type: "array", items: [TokenSchema], minItems: 1, maxItems: 1, additionalItems: false },
-                    { type: "array", items: [], minItems: 0, maxItems: 0, additionalItems: false },
+                prefixItems: [
+                    { type: "array", prefixItems: [TokenSchema], minItems: 1, maxItems: 1, items: false },
+                    { type: "array", minItems: 0, maxItems: 0, items: false },
                 ],
                 minItems: 2,
                 maxItems: 2,
-                additionalItems: false,
+                items: false,
             },
         ],
         minItems: 2,
         maxItems: 2,
-        additionalItems: false,
+        items: false,
     },
 };
 /** The articulation cell carrier schema opened from an utterance. */
 export const articulationCellSchema = {
+    $schema: "https://json-schema.org/draft/2020-12/schema",
     $id: "relating/articulating/articulation-cell",
     type: "object",
     required: ["kind", "potentialAperiodicArticulationCell"],

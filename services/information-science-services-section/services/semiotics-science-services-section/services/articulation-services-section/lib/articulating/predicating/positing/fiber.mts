@@ -105,20 +105,20 @@ const ChargeCarrierSchema = {
     kind: { const: "bilattice-charge.carrier" },
     value: {
       type: "array",
-      items: [ChargeSideSchema, ChargeSideSchema],
+      prefixItems: [ChargeSideSchema, ChargeSideSchema],
       minItems: 2,
       maxItems: 2,
-      additionalItems: false,
+      items: false,
     },
     evidence: {
       type: "array",
-      items: [
+      prefixItems: [
         { type: "array", items: MarkSchema },
         { type: "array", items: MarkSchema },
       ],
       minItems: 2,
       maxItems: 2,
-      additionalItems: false,
+      items: false,
     },
   },
   description: "A charge bearing evidence: the [truth, falsity] side coordinates and the witness Marks per side.",
@@ -134,6 +134,7 @@ const memeShape = {
 
 /** The meme carrier schema: one plain JSON-Schema literal with a bare `$id`. */
 export const memeSchema = {
+  $schema: "https://json-schema.org/draft/2020-12/schema",
   $id: "relating/articulating/predicating/positing/meme",
   type: "object",
   required: ["kind", "cell", "charge"],

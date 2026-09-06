@@ -1,6 +1,6 @@
 {
   "name": "@lenticule-science/articulating",
-  "version": "0.2.12",
+  "version": "0.3.0",
   "engines": {
     "forge": "1.7.1"
   },
@@ -28,11 +28,12 @@
   "devDependencies": {
     "typescript": "5.9.3",
     "@types/node": "22.20.1",
-    "@red-cup-engineering/json-codec-service": "0.1.8"
+    "@red-cup-engineering/validate-json-schema-service": "0.2.2"
   },
   "dependencies": {
-    "@red-cup-engineering/transform-json-schema-to-typescript-service": "0.1.0",
-    "@lenticule-science/metrologic": "0.1.1"
+    "@red-cup-engineering/transform-json-schema-to-typescript-service": "0.2.0",
+    "@lenticule-science/metrologic": "0.1.1",
+    "@red-cup-engineering/json-codec-service": "0.2.0"
   },
   "exports": {
     ".": {

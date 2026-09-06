@@ -21,6 +21,7 @@ import { type PositPresheaf } from "./settling/sheaf.mjs";
 import type { FromJsonSchema } from "@red-cup-engineering/transform-json-schema-to-typescript-service/types";
 /** The meme carrier schema: one plain JSON-Schema literal with a bare `$id`. */
 export declare const memeSchema: {
+    readonly $schema: "https://json-schema.org/draft/2020-12/schema";
     readonly $id: "relating/articulating/predicating/positing/meme";
     readonly type: "object";
     readonly required: readonly ["kind", "cell", "charge"];
@@ -137,7 +138,7 @@ export declare const memeSchema: {
                 };
                 readonly value: {
                     readonly type: "array";
-                    readonly items: readonly [{
+                    readonly prefixItems: readonly [{
                         readonly type: "object";
                         readonly required: readonly ["kind", "name"];
                         readonly properties: {
@@ -164,11 +165,11 @@ export declare const memeSchema: {
                     }];
                     readonly minItems: 2;
                     readonly maxItems: 2;
-                    readonly additionalItems: false;
+                    readonly items: false;
                 };
                 readonly evidence: {
                     readonly type: "array";
-                    readonly items: readonly [{
+                    readonly prefixItems: readonly [{
                         readonly type: "array";
                         readonly items: {
                             readonly type: "object";
@@ -197,7 +198,7 @@ export declare const memeSchema: {
                     }];
                     readonly minItems: 2;
                     readonly maxItems: 2;
-                    readonly additionalItems: false;
+                    readonly items: false;
                 };
             };
             readonly description: "A charge bearing evidence: the [truth, falsity] side coordinates and the witness Marks per side.";
