@@ -1,0 +1,224 @@
+{
+  "record_type": "first_party_market_measurement_rows",
+  "observed_at_utc": "2026-09-06",
+  "scope": "On-demand sticker production hardware and concrete Duluth, Minnesota consumer-goods opportunities.",
+  "rows": [
+    {
+      "subject": "Brother VC-500W Color Photo and Label Printer",
+      "classification": "upstream component; desktop printer requiring an integrator or attendant enclosure",
+      "source_title": "VC-500W Color Photo and Label Printer | Brother",
+      "source_url": "https://www.brother-usa.com/products/vc500w",
+      "observed_utc": "2026-09-06",
+      "observations": {
+        "print_medium": "ZINK adhesive-backed paper label rolls; Brother says printed images can be used as stickers",
+        "shape_handling": "automatic cutter; five roll widths; no contour cutting claimed",
+        "software": "Color Label Editor mobile app and P-touch Editor for Windows/Mac",
+        "connectivity": "Wi-Fi and USB",
+        "dimensions": "4.4 x 3.8 x 4.6 inches",
+        "weight": "1.45 lb",
+        "price_usd": "209.99 listed on source page",
+        "included_consumables": "25 mm roll cassette, 5 m; cleaning cassette, 2 m",
+        "payment": "no customer-payment or unattended-acquiring capability disclosed",
+        "vending_enclosure": "not disclosed",
+        "service": "one-year limited warranty disclosed"
+      },
+      "fit": "The print medium and autocutter make it a plausible component for pre-cut/roll-shaped sticker output, but this source does not establish a kiosk, a dispenser, or a customer checkout flow."
+    },
+    {
+      "subject": "Primera LX610 Color Label Printer with Plotter/Cutter",
+      "classification": "upstream component; desktop commercial printer/cutter",
+      "source_title": "LX610 Color Label Printer with Plotter/Cutter | Primera",
+      "source_url": "https://www.primera.com/lx610-color-printer-cutter-config.html",
+      "observed_utc": "2026-09-06",
+      "observations": {
+        "print_medium": "Primera-approved continuous label stock for digital die-cutting and pre-die-cut label stock",
+        "shape_handling": "built-in die-cutting knife blade and pizza-wheel cutter; maximum print width 4.1 inches for die-cutting and 5 inches for pre-die-cut labels",
+        "software": "PTCreate Pro bundle is listed as a product option; the exact required workflow was not established",
+        "dimensions": "not found on observed product page",
+        "power": "not found on observed product page",
+        "price_usd": "not found on observed product page",
+        "payment": "no customer-payment or unattended-acquiring capability disclosed",
+        "vending_enclosure": "not disclosed",
+        "service": "customer-support and replacement-parts categories are linked; service terms were not measured"
+      },
+      "fit": "This is proof that both print-onto-pre-die-cut stock and contour/die-cut label production are commercially available. It is not evidence of an unattended kiosk."
+    },
+    {
+      "subject": "Funspace / Guangzhou Fun Vending sticker-printing-machine lead",
+      "classification": "unverified manufacturer lead",
+      "source_title": "Photo Booth Vending Machine / Vending Machine | Funspace",
+      "source_url": "https://fun-space.com/entertainment-arcade-game-equipment/vending-machine",
+      "observed_utc": "2026-09-06",
+      "observations": {
+        "print_medium": "instant photo printing is claimed for its enclosed photo booth; adhesive sticker stock is not claimed",
+        "shape_handling": "unknown",
+        "dimensions": "unknown",
+        "power": "unknown",
+        "payment": "Funspace says customers choose by coin or payment for its cotton-candy vending example; it does not identify payment hardware or demonstrate that claim for the photo booth",
+        "us_unattended_acquiring": "unknown",
+        "service": "unknown"
+      },
+      "fit": "Funspace proves a manufacturer category adjacent to the requested job: customer-facing photo-booth vending with instant print output. It does not prove adhesive-sticker output, a countertop enclosure, dimensions, power, US acquiring, or dispensing of a purchased sticker."
+    },
+    {
+      "subject": "Funspace FS-007 Custom Instant Photo Booth",
+      "classification": "same-job-adjacent enclosed photo-booth vending product",
+      "source_title": "Custom Instant Photo Booth | Funspace",
+      "source_url": "https://fun-space.com/vending-machine/custom-instant-photo-booth.html",
+      "observed_utc": "2026-09-06",
+      "observations": {
+        "printer": "DNP DS-RX1HS photo printer",
+        "power": "450W",
+        "weight": "65KG",
+        "dimensions_as_literal_source_text": "100*520*195CM",
+        "customization_wording": "stickers, payment methods, booth appearance",
+        "print_medium": "adhesive stock not disclosed",
+        "payment": "payment-method customization is mentioned; hardware, processor, and US unattended-acquiring support are unknown",
+        "form_factor": "enclosed booth, not countertop"
+      },
+      "fit": "The source's word 'stickers' is ambiguous customization wording and is not evidence that FS-007 prints adhesive stickers. It is evidence of a photo-printing booth with a named printer and stated power/weight, not the requested countertop sticker machine."
+    },
+    {
+      "subject": "Duluth natural-surface trail use and seasonal closure",
+      "classification": "local demand-condition evidence",
+      "source_title": "Hiking Trails | City of Duluth, MN",
+      "source_url": "https://duluthmn.gov/parks/trail-pages-list/hiking-trails/",
+      "observed_utc": "2026-09-06",
+      "observations": {
+        "fact": "The City says Duluth has many miles of natural-surface trails for hiking, mountain biking, and cross-country skiing; it describes spring/fall wet-condition closures and winter use guidance.",
+        "concrete_offering_hypothesis": "Trailhead or local-retailer packs of weather-appropriate repair/comfort consumables and activity stickers, with a closure-aware QR card.",
+        "payer_hypothesis": "trail visitors; a host retailer or event organizer could be a distribution partner",
+        "named_location_prospects": "City trailheads and outdoor-oriented retailers are hypotheses only; no host has been contacted",
+        "unserved_demand": "unknown"
+      }
+    },
+    {
+      "subject": "Duluth parks activity mix",
+      "classification": "local demand-condition evidence",
+      "source_title": "Parks Listing | City of Duluth, MN",
+      "source_url": "https://duluthmn.gov/parks/parks-listing/",
+      "observed_utc": "2026-09-06",
+      "observations": {
+        "fact": "The City parks listing indexes hiking, biking, mountain biking, cross-country skiing, paved trails, snowmobiling, swimming, and beach/water activities.",
+        "concrete_offering_hypothesis": "Small activity-specific consumable packs: bike patches/chain wipes, lake-day sunscreen-and-dry-bag refill packs, or winter traction/reflection goods.",
+        "payer_hypothesis": "participants purchasing goods; host sites earn only if a later placement agreement establishes it",
+        "named_location_prospects": "City park facilities and nearby activity businesses are uncontacted hypotheses",
+        "unserved_demand": "unknown"
+      }
+    },
+    {
+      "subject": "Duluth visitor events",
+      "classification": "local demand-condition evidence",
+      "source_title": "Duluth Events: Festivals, Music & Fun | Visit Duluth",
+      "source_url": "https://visitduluth.com/events/",
+      "observed_utc": "2026-09-06",
+      "observations": {
+        "fact": "The destination-marketing organization publishes an events calendar and presents festivals, music, and attractions as visitor activity.",
+        "concrete_offering_hypothesis": "small event-specific sticker sheets or souvenir packs, sold by the event organizer or a nearby retailer; on-demand printing would avoid holding designs for every event.",
+        "payer_hypothesis": "event attendee or organizer purchasing a batch/service",
+        "named_location_prospects": "event organizers listed on the calendar are uncontacted prospects",
+        "unserved_demand": "unknown"
+      }
+    },
+    {
+      "subject": "Duluth Seaway Port Authority public site",
+      "classification": "local-source access result",
+      "source_title": "Duluth Seaway Port Authority",
+      "source_url": "https://duluthport.com/",
+      "observed_utc": "2026-09-06",
+      "observations": {
+        "fact": "The first-party site returned a Cloudflare access challenge in this pass, so no port statistic or ship-schedule claim was measured from it.",
+        "concrete_offering_hypothesis": "A freighter/bridge observation card or sticker series remains only a hypothesis pending accessible ship-movement and visitor-location evidence.",
+        "unserved_demand": "unknown"
+      }
+    },
+    {
+      "subject": "Aerial Lift Bridge, live harbor viewing, and ship watching",
+      "classification": "local visitor-attraction evidence",
+      "source_title": "Duluth's Aerial Lift Bridge: History, Ship Watching & More | Visit Duluth",
+      "source_url": "https://visitduluth.com/lake-superior/aerial-lift-bridge/",
+      "observed_utc": "2026-09-06",
+      "observations": {
+        "fact": "Visit Duluth describes live harbor webcams and ship watching. It gives the bridge dimensions as 138 feet tall and 390 feet wide, and says its lift permits ships to pass beneath it.",
+        "concrete_offering_hypothesis": "A buyer watches a specific passage, then receives a dated ship-and-bridge sticker only after an operator or a measured public source records the vessel name and passage. This is a witnessed collectible, not a promise of scheduled arrivals.",
+        "payer_hypothesis": "visitor purchasing a dated collectible",
+        "named_location_prospects": "Canal Park-area retailers and Great Lakes Aquarium are real places but uncontacted prospective hosts",
+        "unserved_demand": "unknown"
+      }
+    },
+    {
+      "subject": "Great Lakes Aquarium exhibits and event use",
+      "classification": "local visitor-and-education venue evidence",
+      "source_title": "Great Lakes Aquarium",
+      "source_url": "https://glaquarium.org/",
+      "observed_utc": "2026-09-06",
+      "observations": {
+        "fact": "The Aquarium lists freshwater exhibits including Lake Sturgeon Restoration and Namewag: A Lake Sturgeon Story, and offers groups, youth/family programs, birthday parties, overnights, meetings, weddings, and other events.",
+        "concrete_offering_hypothesis": "An aquarium-approved, non-specimen 'lake sturgeon observation' activity card plus an on-demand name/date sticker for a child's completed visit or event. It can use printed imagery and does not depend on collecting rocks or wildlife.",
+        "payer_hypothesis": "visiting family or event organizer",
+        "named_location_prospects": "Great Lakes Aquarium gift/event operations are an uncontacted prospect",
+        "unserved_demand": "unknown",
+        "license_or_approval": "unknown; any use of Aquarium marks, exhibit art, or event branding needs permission"
+      }
+    },
+    {
+      "subject": "Lake Superior Zoo as a regional family destination",
+      "classification": "local visitor-venue evidence",
+      "source_title": "Lake Superior Zoo - Animals First, Always",
+      "source_url": "https://lszoo.org/",
+      "observed_utc": "2026-09-06",
+      "observations": {
+        "fact": "The Zoo calls itself a regional center of protection and conservation and offers visits, rentals, birthdays, programs/camps, and memberships.",
+        "concrete_offering_hypothesis": "A reusable, weather-resistant family 'animal observation' card sleeve with a small blank sticker sheet that a visit station prints with the date and a visitor-selected non-trademarked animal observation. This fits an all-weather local family outing more closely than a generic souvenir rack.",
+        "payer_hypothesis": "visiting family or booked party organizer",
+        "named_location_prospects": "Lake Superior Zoo is an uncontacted prospect",
+        "unserved_demand": "unknown",
+        "license_or_approval": "unknown; any Zoo name, animal art, or program brand requires permission"
+      }
+    },
+    {
+      "subject": "Grandma's Marathon first-party access",
+      "classification": "local-event source access result",
+      "source_title": "Grandma's Marathon",
+      "source_url": "https://www.grandmasmarathon.com/",
+      "observed_utc": "2026-09-06",
+      "observations": {
+        "fact": "The first-party site returned a Cloudflare access challenge in this pass; no race date, route, attendance, or organizer sales claim was measured.",
+        "concrete_offering_hypothesis": "A race-specific spectator or finisher pack is plausible only as a future licensed/approved offering, not a current recommendation.",
+        "unserved_demand": "unknown",
+        "license_or_approval": "unknown"
+      }
+    },
+    {
+      "subject": "Lake Superior agate geology",
+      "classification": "local geology evidence",
+      "source_title": "Minnesota's State Gem | Minnesota DNR",
+      "source_url": "https://www.dnr.state.mn.us/education/geology/digging/agate.html",
+      "observed_utc": "2026-09-06",
+      "observations": {
+        "fact": "Minnesota DNR identifies the Lake Superior agate as Minnesota's official state gemstone; it attributes origin to lava flows and says material is exposed on the lake's north and south shores. It describes characteristic red, orange, and yellow iron colors.",
+        "concrete_offering_hypothesis": "An unpriced hotel or gift-shop pocket agate-identification kit: loupe, small wetting bottle, comparison card, and an optional clearly supplier-sourced example agate. The use is observing a rock, not collecting from a named site.",
+        "payer_hypothesis": "visitor purchasing a small interpretive good",
+        "host_prospects": "hotel or gift-shop category only; no specific host is supported by the present evidence",
+        "unserved_demand": "unknown",
+        "collection_rights": "not established by this source"
+      }
+    },
+    {
+      "subject": "Cedar & Stone Nordic Sauna",
+      "classification": "same-job provider for sauna experience; potential complementary goods distribution host",
+      "source_title": "Home - Cedar & Stone",
+      "source_url": "https://cedarandstonesauna.com/",
+      "observed_utc": "2026-09-06",
+      "observations": {
+        "fact": "The site presents Duluth session booking and events, a sauna/cold-plunge masterclass, and commercial/home sauna offerings.",
+        "concrete_offering_hypothesis": "A forgotten-items sauna retail pack containing hair ties, a wet bag, and shower sandals.",
+        "payer_hypothesis": "sauna visitor purchasing forgotten or convenient items",
+        "host_prospects": "Cedar & Stone Nordic Sauna is an uncontacted potential complementary-goods host",
+        "unserved_demand": "unknown",
+        "venue_permission": "unknown"
+      }
+    }
+  ],
+  "conclusion": "No first-party source found in this pass establishes a turnkey US unattended card-swipe machine that takes a buyer's sticker selection, prints it on adhesive stock, and dispenses it. The strongest buildable components measured are Brother VC-500W for pre-cut roll-label output and Primera LX610 for pre-die-cut or digitally die-cut label output."
+}

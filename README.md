@@ -3,7 +3,8 @@
 
 Operated by the [561 Group](https://561.group).
 
-*"Lenticule Science: we do what we can; we cannot not. For the truth of all of us, except the ones who are right."*
+*"Lenticule Science: we do what we can; we cannot not.
+For the truth of all of us, except the ones who are right."*
 
 Lenticule Science works with Red Cup Engineering, Coesite Operations, and Causeway Services to provide scientific research.
 
@@ -17,3 +18,5 @@ Lenticule Science works with Red Cup Engineering, Coesite Operations, and Causew
 - [`social-science-services-section`](services/social-science-services-section/README.md) — research on people, institutions, collective activity, and social relations.
 
 `natural-science-services-section` frames nature under the four settling regimes proved in Obsmetrologia — kinetic, quantum, causal, thermodynamic — gathered in its [four regimes of natural existence](services/natural-science-services-section/content/text/glossary/topics/four-regimes-of-natural-existence.md) topic.
+
+- [consumer-goods-science-services-section](services/consumer-goods-science-services-section/README.md) — research supporting the 561 Group consumer-goods program.
