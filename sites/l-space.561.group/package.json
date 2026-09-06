@@ -11,7 +11,7 @@
     "@red-cup-engineering/cairn": "0.1.0",
     "@red-cup-engineering/discord-rest-transport-service": "1.1.0",
     "@red-cup-engineering/drew": "0.1.1",
-    "@red-cup-engineering/exchange-google-callback-service": "0.1.1",
+    "@red-cup-engineering/exchange-google-callback-service": "0.1.2",
     "@red-cup-engineering/geode": "0.1.6",
     "@red-cup-engineering/judge-principal-admission-service": "0.1.1",
     "@red-cup-engineering/education-platform-service": "0.2.4",
@@ -22,8 +22,7 @@
     "@red-cup-engineering/render-markdown-inline-html-service": "0.1.2",
     "@red-cup-engineering/vaultmaze": "0.1.0",
     "@red-cup-engineering/victor": "0.1.10",
-    "@red-cup-engineering/web-tufte-gui-services-section": "0.8.2",
-    "jose": "6.2.10"
+    "@red-cup-engineering/web-tufte-gui-services-section": "0.8.2"
   },
   "exports": {
     ".": "./src/index.mjs",

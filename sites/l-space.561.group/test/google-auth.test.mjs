@@ -50,11 +50,8 @@ function googleCalls(claims = {}) {
         email: claims.email ?? READER,
         emailVerified: claims.emailVerified ?? true,
         subject: claims.subject ?? "google-subject-1",
-        claims: {},
-        idToken: "header.payload.signature",
       };
     },
-    async verifyIdToken() { return {}; },
   };
 }
 

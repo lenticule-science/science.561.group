@@ -9,7 +9,6 @@
  * secret, a missing allowlist, an empty allowlist, and an unverified email all
  * refuse, and none of them refuse quietly.
  */
-import { createRemoteJWKSet, jwtVerify } from "jose";
 import { OAuthError } from "@red-cup-engineering/oauth-services-section";
 import { exchangeGoogleCallback } from "@red-cup-engineering/exchange-google-callback-service";
 import {
@@ -28,17 +27,9 @@ import {
   TRANSACTION_COOKIE_NAME,
 } from "./session.mjs";
 
-export const GOOGLE_ISSUERS = Object.freeze(["https://accounts.google.com", "accounts.google.com"]);
-const GOOGLE_JWKS_URL = "https://www.googleapis.com/oauth2/v3/certs";
 export const LOGIN_PATH = "/oauth/login";
 export const CALLBACK_PATH = "/oauth/callback";
 export const LOGOUT_PATH = "/oauth/logout";
-
-let jwks;
-function googleKeySet() {
-  jwks ??= createRemoteJWKSet(new URL(GOOGLE_JWKS_URL));
-  return jwks;
-}
 
 function randomToken(bytes = 32) {
   return base64UrlEncode(crypto.getRandomValues(new Uint8Array(bytes)));
@@ -106,22 +97,12 @@ export function authSettings(env) {
 
 const admissionPolicy = (settings) => resolveAdmissionPolicy({ allowedEmails: settings.allowedEmails });
 
-/** Verify Google's id_token properly: signature, issuer, audience, expiry. */
-async function verifiedClaims(idToken, clientId) {
-  const { payload } = await jwtVerify(idToken, googleKeySet(), {
-    issuer: GOOGLE_ISSUERS,
-    audience: clientId,
-  });
-  return payload;
-}
-
 /**
  * The Google calls, injectable so tests exercise the real decision logic
  * without reaching the network. Production always uses the defaults.
  */
 export const defaultGoogleCalls = Object.freeze({
   exchange: exchangeGoogleCallback,
-  verifyIdToken: verifiedClaims,
 });
 
 export async function beginLogin(request, env, url, now = Date.now) {
@@ -185,7 +166,6 @@ export async function completeLogin(request, env, url, now = Date.now, calls = d
       redirectPath: CALLBACK_PATH,
       codeVerifier: transaction.codeVerifier,
       expectedNonce: transaction.nonce,
-      verifyIdToken: (idToken) => calls.verifyIdToken(idToken, settings.googleClientId),
     });
   } catch (error) {
     const code = error instanceof OAuthError ? error.code : "server_error";
