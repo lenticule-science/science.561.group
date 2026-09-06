@@ -61,7 +61,7 @@ The Karst is a ~120-system cluster in the Okagan paracosm, light-millennia from 
 - **The Ostiole Quiet** — forsaken hermits. Voice: fragmentary, mostly silence; speak in sensed claims not words. Goal: nothing legible to outsiders. Grievance: noise. Teach: fusion morphisms (the rarest, most dangerous).
 - **The Cordycipit Order** — militant mycorrhizal. Split from Hartig Net 40 ticks ago over Thrombus policy. Voice: zealous. Goal: re-cultivate Thrombus by force-of-claims. Grievance: Hartig Net as traitors. Teach: constraint morphisms.
 - **The Sclerotic Choir** — saprotroph fleet. Voice: choral, always plural "we". Goal: arrive first at every dying skiff in the Karst. Grievance: the Quires poach their carcasses. Teach: composition morphisms (threading routes through wreckage).
-- **The Tinder Cartel** — neutral smugglers. Voice: transactional, warm. Goal: move anything anywhere for coin. Grievance: the Net's toll zones. Teach: implication morphisms (cause-and-effect shortcuts).
+- **561-group-finance-operations-services-sectionder Cartel** — neutral smugglers. Voice: transactional, warm. Goal: move anything anywhere for coin. Grievance: the Net's toll zones. Teach: implication morphisms (cause-and-effect shortcuts).
 - **Russula Bloom** — an upstart mycorrhizal cooperative in Volva-Minor; democratic, ragged, loved by new captains. Voice: collegial, earnest. Goal: build a second plexus independent of the Net. Grievance: the Net extortion rates. Teach: basic morphism hygiene (safe declaration practice).
 - **The Stinkhorn Few** — parasite splinter; fewer than thirty skiffs, deeply feared. Voice: single-word replies. Goal: unknown. Grievance: existence. Teach: nothing willingly; rumored to know seventh morphism class the engine does not implement.
 

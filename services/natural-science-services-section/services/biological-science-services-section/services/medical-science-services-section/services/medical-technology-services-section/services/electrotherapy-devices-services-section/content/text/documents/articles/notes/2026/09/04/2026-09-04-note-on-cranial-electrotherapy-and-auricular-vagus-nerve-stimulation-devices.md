@@ -129,7 +129,7 @@ In Japan and South Korea, taVNS devices have received approval as medical device
 
 ## What the 561 Group's medical program may say
 
-**Regulatory gate:** Cranial electrotherapy stimulation devices are regulated by the FDA as medical devices under 21 CFR 882.5800. A CES device intended to treat insomnia or anxiety is classified as Class II, requiring special controls. The FDA's identification is by what the device does—applies current to the head to treat psychiatric conditions—not by marketing language alone. A device marketed as a wellness device or sleep aid remains regulated if it applies current to the head. CES devices cannot enter a Culvert Health kit or box.
+**Regulatory gate:** Cranial electrotherapy stimulation devices are regulated by the FDA as medical devices under 21 CFR 882.5800. A CES device intended to treat insomnia or anxiety is classified as Class II, requiring special controls. The FDA's identification is by what the device does—applies current to the head to treat psychiatric conditions—not by marketing language alone. A device marketed as a wellness device or sleep aid remains regulated if it applies current to the head. CES devices cannot enter a public-health-services-section kit or box.
 
 Transcutaneous auricular vagus nerve stimulation devices occupy a regulatory middle ground. External vagus nerve stimulators for headache treatment are regulated under 21 CFR 882.5892 as Class II devices. taVNS devices marketed without medical claims for non-headache indications (sleep, mood, anxiety) fall into a regulatory gray zone and are not explicitly classified when marketed as wellness devices. Given this uncertainty and the device's potential to affect cardiac function through vagal effects, the program's honest position is that a consumer taVNS clip is a device of uncertain regulatory status. The program studies such devices but does not kit them.
 
@@ -140,7 +140,7 @@ The program may describe the evidence base for these technologies as studied res
 > Cranial electrotherapy and auricular vagus nerve stimulation are technologies under study. Cranial electrotherapy mechanism is unclear, and evidence for efficacy is insufficient. Auricular vagus nerve stimulation has an anatomically documented pathway; early research suggests modest effects on autonomic tone and pain regulation through vagal activation. Individual responses vary widely. These devices are studied as research instruments, not marketed as treatments.
 
 **Boundaries:**
-- Neither CES nor taVNS devices may be included in a Culvert Health kit or box.
+- Neither CES nor taVNS devices may be included in a public-health-services-section kit or box.
 - The program does not make medical claims for any device in this class.
 - Research-grade study of these devices remains available to the organization; retail/consumer devices do not enter consumer-facing kits.
 

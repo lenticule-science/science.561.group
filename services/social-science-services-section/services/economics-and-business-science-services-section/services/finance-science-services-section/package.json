@@ -1,10 +1,9 @@
 {
-  "name": "@lenticule-science/spectroscope-finance-research",
+  "name": "@lenticule-science/finance-science-services-section",
   "version": "0.1.0",
-  "description": "Spectroscope Finance Research — Lenticule Science's finance research division: the science of booking value onto positions, sizing under an absorbing barrier, ruin, ergodicity, and the arenas strategies are defined over.",
+  "description": "Lenticule Science's finance research division: the science of booking value onto positions, sizing under an absorbing barrier, ruin, ergodicity, and the arenas strategies are defined over.",
   "type": "module",
   "keywords": [
-    "brand:spectroscope-finance-research",
     "finance-science",
     "lenticule-science"
   ]

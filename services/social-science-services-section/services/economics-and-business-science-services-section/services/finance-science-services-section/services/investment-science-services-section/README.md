@@ -1,6 +1,6 @@
 # Investment Science Services Section
 
-Spectroscope Finance Research's investment science, beneath
+finance-science-services-section's investment science, beneath
 [finance-science-services-section](../../README.md): the study of how a
 person invests with help, as distinct from the finance section's science
 of booking value onto positions and sizing under an absorbing barrier,

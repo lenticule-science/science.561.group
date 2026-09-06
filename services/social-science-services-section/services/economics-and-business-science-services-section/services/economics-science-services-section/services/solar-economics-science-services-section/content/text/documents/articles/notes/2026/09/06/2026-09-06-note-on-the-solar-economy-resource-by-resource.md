@@ -32,7 +32,7 @@ note. The sixteen resource rows this note cites live in
 validated against
 `computer-economic-systems-engineering-services-section/data/records/schema/resource-row.schema.json`
 — 16 of 16 valid, verbatim gate output below. Nothing measured by
-Pyranometer Research's field note or the business plan's incumbent
+This section's field note or the business plan's incumbent
 measurement is re-measured here; both are cited by row and by path. Money
 science (`monetary-economics-science-services-section`'s wit term) and
 economics science's sizing-without-a-bank note were read before this note
@@ -351,7 +351,7 @@ not re-deriving a yield figure by hand here.
   different source shape. The sixteen rows this note cites were
   hand-authored against the schema instead, per this office's own duty,
   and validated with `json-schema-cli`; a generalized or solar-specific
-  projector is engineering work for Cloche Solar Systems, not this
+  projector is engineering work for computer-solar-economic-systems-engineering-services-section, not this
   office's to build.
 - **An engineering package the program README's own 2026-09-05 "what
   the tree already holds" inventory does not name already exists**:

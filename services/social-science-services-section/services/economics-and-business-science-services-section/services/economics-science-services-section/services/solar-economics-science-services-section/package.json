@@ -1,10 +1,9 @@
 {
-  "name": "@lenticule-science/pyranometer-research",
+  "name": "@lenticule-science/solar-economics-science-services-section",
   "version": "0.1.0",
-  "description": "Pyranometer Research, a division of Lenticule Science: the study of solar energy as an economy, from energy return and the energy cliff to tariffs, assistance rules, and the plains' capital projects.",
+  "description": "The study of solar energy as an economy, from energy return and the energy cliff to tariffs, assistance rules, and the plains' capital projects.",
   "type": "module",
   "keywords": [
-    "brand:pyranometer-research",
     "science"
   ]
 }

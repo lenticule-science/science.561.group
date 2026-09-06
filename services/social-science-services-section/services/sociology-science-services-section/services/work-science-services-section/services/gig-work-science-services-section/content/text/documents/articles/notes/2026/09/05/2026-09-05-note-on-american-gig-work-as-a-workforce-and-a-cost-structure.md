@@ -1,6 +1,6 @@
 ---
 title: "American gig work as a workforce and a cost structure"
-description: "The founding research note of Aplanat Research (gig-work-science-services-section): who does American gig work, what it pays net of costs, the federal tax mechanics, the benefit interactions, the state and city pay-floor laws, the algorithmic-management literature, and the worker-owned data-cooperative precedent — every figure cited to a first-party source with its published date, its effective date, and the date this note observed it."
+description: "The founding research note of gig-work-science-services-section: who does American gig work, what it pays net of costs, the federal tax mechanics, the benefit interactions, the state and city pay-floor laws, the algorithmic-management literature, and the worker-owned data-cooperative precedent — every figure cited to a first-party source with its published date, its effective date, and the date this note observed it."
 date-created: 2026-09-05
 type: notes
 authors:
@@ -227,7 +227,7 @@ references:
     url: "https://company.instacart.com/shopper-community/with-instant-cashout-every-day-is-payday"
 ---
 
-This is Aplanat Research's founding note: the science of American gig
+This is gig-work-science-services-section's founding note: the science of American gig
 work that the [561 Group Work Services Section](../../../../../../../../../../../../../../../../../561-group-services-section/services/561-group-operations-services-section/services/561-group-work-services-section/README.md)
 names as the Reticle Research row's holding — who does gig work, what it
 pays net of costs, the tax mechanics, the benefit interactions, the

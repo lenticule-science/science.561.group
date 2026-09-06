@@ -1,10 +1,9 @@
 {
-  "name": "@lenticule-science/theodolite-research",
+  "name": "@lenticule-science/territorial-economy-science-services-section",
   "version": "0.1.0",
-  "description": "The science of territorial economies: how a territory's materials and knowledge become products in a distant population and who keeps the value, read from the commodity chains of the narcotics empires through their legal and industrial continuations; the seat of Theodolite Research, a division of Lenticule Science.",
+  "description": "The science of territorial economies: how a territory's materials and knowledge become products in a distant population and who keeps the value, read from the commodity chains of the narcotics empires through their legal and industrial continuations.",
   "type": "module",
   "keywords": [
-    "brand:theodolite-research",
     "science"
   ]
 }

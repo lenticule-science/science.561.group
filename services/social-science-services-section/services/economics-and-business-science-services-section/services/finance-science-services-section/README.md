@@ -1,11 +1,11 @@
 # Finance Science Services Section
 
-Spectroscope Finance Research, Lenticule Science's finance research
+finance-science-services-section, Lenticule Science's finance research
 division, beneath
 [economics-and-business-science-services-section](../../README.md): the
 science of booking value onto positions, sizing under an absorbing
 barrier, ruin, ergodicity, and the arenas strategies are defined over
-(`package.json`, `@lenticule-science/spectroscope-finance-research`; brand
+(`package.json`, `@lenticule-science/finance-science-services-section`; brand
 named 2026-09-04). It holds the finance glossary
 ([topic](content/text/glossary/topics/finance.md); terms such as risk of
 ruin, volatility drag, pattern-day trader, fractional share, T+1

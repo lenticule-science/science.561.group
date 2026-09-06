@@ -1,11 +1,10 @@
 {
-  "name": "@lenticule-science/aplanat-economics-research",
+  "name": "@lenticule-science/economics-science-services-section",
   "version": "0.1.0",
   "type": "module",
-  "description": "Aplanat Economics Research — Lenticule Science's economics research division: the study of the org's resources and commodities read as one thing, the glossary and notes every economic, business, and finance division cites, with the evidence status of every claim stated in plain words.",
+  "description": "Lenticule Science's economics research division: the study of the org's resources and commodities read as one thing, the glossary and notes every economic, business, and finance division cites, with the evidence status of every claim stated in plain words.",
   "license": "UNLICENSED",
   "keywords": [
-    "brand:aplanat-economics-research",
     "economics-science",
     "lenticule-science"
   ]

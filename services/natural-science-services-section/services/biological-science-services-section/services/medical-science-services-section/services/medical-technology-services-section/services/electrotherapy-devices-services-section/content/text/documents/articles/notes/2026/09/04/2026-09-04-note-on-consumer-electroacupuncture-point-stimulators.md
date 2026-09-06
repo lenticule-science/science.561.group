@@ -107,7 +107,7 @@ For electroacupuncture specifically, the evidence base consists largely of small
 
 ## What the 561 Group's medical program may say
 
-**Regulatory gate:** Point-locating electrical stimulators that apply current to the skin are regulated by the FDA as Class II transcutaneous electrical nerve stimulators (TENS) under 21 CFR 882.5890. The classification applies regardless of marketing language, alternative device names, or claims to be "[electroacupuncture](../../../../../../../../../../../traditional-chinese-medicine-services-section/content/text/glossary/terms/electroacupuncture.md) point stimulators" or "wellness devices." These devices cannot enter a Culvert Health kit or box.
+**Regulatory gate:** Point-locating electrical stimulators that apply current to the skin are regulated by the FDA as Class II transcutaneous electrical nerve stimulators (TENS) under 21 CFR 882.5890. The classification applies regardless of marketing language, alternative device names, or claims to be "[electroacupuncture](../../../../../../../../../../../traditional-chinese-medicine-services-section/content/text/glossary/terms/electroacupuncture.md) point stimulators" or "wellness devices." These devices cannot enter a public-health-services-section kit or box.
 
 **What the program may say about the underlying mechanism:**
 
@@ -116,6 +116,6 @@ The program may describe the evidence base as a studied technology:
 > Low-frequency electrical stimulation can modulate pain perception through activation of endogenous pain-relief pathways. This effect is not specific to traditional acupuncture point locations; any skin site stimulated with appropriate frequency and intensity produces similar physiological responses. The claim of "point location" via skin resistance is mechanistically unsupported; skin-resistance variation reflects normal skin physiology, not acupuncture points. The effect size is modest and individual responses vary widely.
 
 **Boundaries:**
-- Point-locating electrical stimulators cannot be included in a Culvert Health kit or box, as they are regulated Class II devices.
+- Point-locating electrical stimulators cannot be included in a public-health-services-section kit or box, as they are regulated Class II devices.
 - The program does not make medical claims for this device class.
 - The program may describe the mechanism and evidence as above when discussing electrical stimulation as a studied technology, without offering the device as a kit component.

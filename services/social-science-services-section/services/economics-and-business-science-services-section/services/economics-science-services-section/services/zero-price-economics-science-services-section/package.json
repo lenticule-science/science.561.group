@@ -1,10 +1,9 @@
 {
-  "name": "@lenticule-science/diaphragm-research",
+  "name": "@lenticule-science/zero-price-economics-science-services-section",
   "version": "0.1.0",
-  "description": "Diaphragm Research: the science of zero-price economics as it applies to AI inference, provider terms, and free-tier quota economics, the science root of No Buy AI.",
+  "description": "The science of zero-price economics as it applies to AI inference, provider terms, and free-tier quota economics, the science root of No Buy AI.",
   "type": "module",
   "keywords": [
-    "brand:diaphragm-research",
     "science"
   ]
 }

@@ -47,7 +47,7 @@ Applied to one issue as the engineering seat's schema and checker already shape 
   An issue's price at the border is its wit count: what it cost to establish that a play exists.
 - **ATT is what the reader spends.** Reading the issue is a jump.
   The return (a reading, a body practice, a person to tell) is the issue handing the reader something to do with the attention already spent, instead of soliciting the next jump.
-- **ACK is the continuation being taken and acknowledged by someone other than the house.** That is Tronto's responsiveness, and it is the responsiveness record the Crock's writer keeps; the gate that reads every issue as answered, open, or overdue is the ACK-side gate.
+- **ACK is the continuation being taken and acknowledged by someone other than the house.** That is Tronto's responsiveness, and it is the responsiveness record 561-group-territorial-economy-services-section's writer keeps; the gate that reads every issue as answered, open, or overdue is the ACK-side gate.
   "Talk about what you read" is the return soliciting the ACK, and the responsiveness record is the house's ATT taken of it: the spiral's third turn.
 
 The falsifier the acknowledgement note states for its own conjecture applies here and sharpens the product: "if a WIT can be minted with no possible corresponding ACK (no receiving party ever in position to acknowledge it)" the pairing is idle.
@@ -75,7 +75,7 @@ Composed, they are a hope readout over the rail, and none of it is hand-written:
 The last row is what the founder caught on 2026-09-06 across two sessions: seven hand-written roadmap cuts in a day, program carriers annotating every rung as landed, "no call paid yet" written where the ledger should be read.
 Those are the Group manufacturing hopium for itself, and the ruling that roadmaps are derived from journaled work is the hopeium discipline applied inward.
 The same session's other reading, that none of the 28 duties then ready on the production rail had a deterministic hand (stated by the concurrent session on 2026-09-06; not re-measured here), says the rail held 28 wishes and no hope in this exact sense.
-The Larder's four attention inputs (the founder's hands, frontier sessions, lots, production machinery) are the Group's ATT budget, and five programs founded in four days is cells opened faster than that budget can hold them: the presumption collapse is what an organization does when it has opened more ⊥ than it can pay to hold.
+561-group-economic-operations-services-section's four attention inputs (the founder's hands, frontier sessions, lots, production machinery) are the Group's ATT budget, and five programs founded in four days is cells opened faster than that budget can hold them: the presumption collapse is what an organization does when it has opened more ⊥ than it can pay to hold.
 
 So the business sense, stated once: **the Group's stock of hope is the count of open cells it can afford to hold with a continuation in hand, its revenue from hope is the ACKs its continuations earn at the border, and its cost of hope is the ATT it spends holding cells open.**
 Hopium, inward or outward, is the cheap substitute for all three: claims with no witness, "done" with no discharge, and jumps with no return.

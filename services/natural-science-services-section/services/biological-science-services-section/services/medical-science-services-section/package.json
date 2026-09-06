@@ -1,10 +1,9 @@
 {
-  "name": "@lenticule-science/achromat-research",
+  "name": "@lenticule-science/medical-science-services-section",
   "version": "0.1.0",
-  "description": "Achromat Research — Lenticule Science's medical research division: the literature syntheses, glossaries, and paradigm every other medical division cites, with the evidence status of every claim stated in plain words.",
+  "description": "Lenticule Science's medical research division: the literature syntheses, glossaries, and paradigm every other medical division cites, with the evidence status of every claim stated in plain words.",
   "type": "module",
   "keywords": [
-    "brand:achromat-research",
     "medical-science",
     "lenticule-science"
   ]

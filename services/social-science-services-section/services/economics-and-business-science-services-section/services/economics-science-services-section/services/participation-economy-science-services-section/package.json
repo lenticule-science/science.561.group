@@ -1,10 +1,9 @@
 {
-  "name": "@lenticule-science/condenser-research",
+  "name": "@lenticule-science/participation-economy-science-services-section",
   "version": "0.1.0",
-  "description": "Condenser Research: the study of the participation economy, the economy in which a person earns by participating rather than by wage, salary, contract, or gig, and of earning without buying as its first public services: the literatures that actually cover it, the surfaces and their rules, the anti-bot economics, and the labor-hour truth, every figure cited to a first-party source with its date.",
+  "description": "The study of the participation economy, the economy in which a person earns by participating rather than by wage, salary, contract, or gig, and of earning without buying as its first public services: the literatures that actually cover it, the surfaces and their rules, the anti-bot economics, and the labor-hour truth, every figure cited to a first-party source with its date.",
   "type": "module",
   "keywords": [
-    "brand:condenser-research",
     "science"
   ]
 }
