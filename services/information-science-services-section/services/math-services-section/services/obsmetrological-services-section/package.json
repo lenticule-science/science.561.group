@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "@red-cup-engineering/artifact-fabrication-specification-admission-service": "0.1.0",
-    "@red-cup-engineering/eavt": "0.9.0",
+    "@red-cup-engineering/eavt": "0.10.0",
     "@red-cup-engineering/execute-javascript-node-command-service": "0.2.1",
     "@red-cup-engineering/file-services": "0.2.1",
     "@red-cup-engineering/filepath-services-section": "0.1.0",
