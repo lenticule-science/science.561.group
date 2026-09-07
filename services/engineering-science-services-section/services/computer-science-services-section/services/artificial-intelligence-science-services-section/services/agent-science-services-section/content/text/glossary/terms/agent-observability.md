@@ -10,6 +10,13 @@ relations:
   requires: agent-orchestration
   enables: agent-evaluation, agent-self-improvement
   delivered-via: langgraph, pydantic-ai
+references:
+  opentelemetry2026genai:
+    authors: ["OpenTelemetry Authors"]
+    title: "Generative AI spans"
+    year: 2026
+    publication: "OpenTelemetry Semantic Conventions"
+    url: "https://opentelemetry.io/docs/specs/semconv/gen-ai/gen-ai-spans/"
 ---
 Agent observability is the practice of instrumenting [agentic systems](./agentic-system.md) to make their decisions, [tool calls](./tool-use.md), state transitions, and failure modes inspectable. In traditional software, observability means logs, metrics, and traces. In agentic systems, observability must additionally capture *why* the model made each decision — what context it saw, what alternatives it considered, and what state it was operating on.
 
@@ -30,6 +37,13 @@ The emerging standard for agent observability (2025) organizes instrumentation i
 ### What to measure
 
 **Token usage per step.** Anthropic's production data shows token usage explains 80% of performance variance on complex tasks. Tracking tokens per tool call, per agent, per workflow reveals where budget is spent and where compression would help.
+
+Token counts, request counts, elapsed time, and a provider's availability are
+observations, not interchangeable resource units. A usable availability record
+identifies its provider, account or principal scope when known, quota window,
+observation time, and reset or expiry when supplied. Missing usage or scope is
+unknown rather than zero; a caller must not compare or aggregate unlike units
+as though they were one balance [@opentelemetry2026genai].
 
 **Decision traces.** Record the model's reasoning at each branching point — what state it observed, what action it chose, what alternatives existed. [LangGraph](../../../../services/agent-orchestration-platform-science-services-section/content/text/glossary/terms/langgraph.md)'s checkpoint system provides this for graph-based workflows; PydanticAI's Logfire integration provides it through OpenTelemetry traces.
 

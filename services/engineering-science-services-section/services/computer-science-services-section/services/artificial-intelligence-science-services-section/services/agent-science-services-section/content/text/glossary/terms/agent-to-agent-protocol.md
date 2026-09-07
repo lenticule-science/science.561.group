@@ -10,6 +10,13 @@ relations:
   enables: multi-agent-system
   requires: json-schema
   acts-on: agentic-system
+references:
+  a2a2025tasks:
+    authors: ["Agent2Agent Protocol"]
+    title: "Life of a Task"
+    year: 2025
+    publication: "Agent2Agent Protocol Specification"
+    url: "https://a2a-protocol.org/latest/topics/life-of-a-task/"
 ---
 The Agent-to-Agent protocol (A2A) is an open, vendor-neutral protocol enabling communication and interoperability between opaque [agentic systems](./agentic-system.md). It is the inter-agent complement to [MCP](../../../../services/model-context-protocol-science-services-section/content/text/glossary/terms/model-context-protocol.md): MCP standardizes how an agent connects to tools; A2A standardizes how agents connect to each other.
 
@@ -20,6 +27,12 @@ A2A was announced by **Google Cloud** at Google Cloud Next on **April 9, 2025**,
 **Agent Cards.** A2A servers publish JSON metadata documents describing their identity, capabilities, skills, service endpoint, authentication requirements, and (as of v1.0) cryptographic signatures. Clients discover agents by fetching their Agent Cards. This is the discovery mechanism: before two agents can communicate, the client agent reads the server agent's Card to determine what it can do and how to talk to it.
 
 **Tasks.** The fundamental unit of work. Each task has a unique ID and progresses through a lifecycle: `working` → `completed` | `failed` | `canceled` | `rejected` | `input_required` | `auth_required`. Terminal states are completed, failed, canceled, and rejected. Tasks contain **Messages** (with a role of `user` or `agent` and one or more Parts: TextPart, FilePart, DataPart) and produce **Artifacts** (output documents, structured data, files).
+
+An A2A task ID identifies a remote protocol task. It is neither a grant to
+invoke a client's local function nor that function's call identity. A
+continuation must carry the task ID and the returned message or artifact that
+establishes its prior state; the receiving client retains the separate decision
+to authorize and execute any local tool operation [@a2a2025tasks].
 
 **Protocol bindings.** Three standard bindings: JSON-RPC 2.0 over HTTP, gRPC, and HTTP/REST with JSON. All maintain functional equivalence. Core methods include `SendMessage`, `SendStreamingMessage`, `GetTask`, `ListTasks`, `CancelTask`, and `SubscribeToTask`. Interaction patterns include synchronous request/response, streaming (SSE), asynchronous push notifications, and polling.
 
