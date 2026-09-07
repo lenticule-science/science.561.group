@@ -48,7 +48,7 @@ So this is a first attempt, not a recovery of settled doctrine, and it is scoped
   be confirmed at that path anywhere in the current tree. A differently-organized,
   differently-located package (`@red-cup-engineering/metroplat`, formerly `@emsenn/metroplat`,
   a real checkout at
-  `.../javascript-services-section/lib/legacy/metroplat/`) does exist, but its internal layout
+  `.../javascript-engineering-services-section/lib/legacy/metroplat/`) does exist, but its internal layout
   (no `src/evaluators/`, no `lib/persistence/index.mts`; the closest analogue is
   `src/lib/records/persistence.mts`, generic-over-EAVT and explicitly not
   witness-journal-specific) does not match this note's cited structure closely enough to

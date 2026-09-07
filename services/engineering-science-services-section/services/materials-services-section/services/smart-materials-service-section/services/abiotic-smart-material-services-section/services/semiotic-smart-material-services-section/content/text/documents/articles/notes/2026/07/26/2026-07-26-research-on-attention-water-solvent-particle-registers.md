@@ -191,7 +191,7 @@ markdown content document per `.claude/hooks/deny-raw-markdown-read.mjs`) is
 down repo-wide right now — `inference-work-lot-service` cannot resolve `zod`
 because no `node_modules` exists at the workspace root, and
 `pnpm-workspace.yaml`'s glob for
-`.../computer-code-services-section/services/computer-code-development-services-section/services/*` does not reach the
+`.../computer-code-engineering-services-section/services/computer-code-development-services-section/services/*` does not reach the
 nested `services/markdown-file-services-section/services/*` packages either,
 which is why this note's own filing instrument
 (`write-research-note.mjs`, dependent on

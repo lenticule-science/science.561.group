@@ -1350,7 +1350,7 @@ repeated. The paradigm-level ones:
   saturated (Fix σ), and settled (Fix σ ∩ Fix Δ) are different strata that
   must never be stored indistinguishably, which is why a person's baseline,
   their current trajectory, and their served surface are three derived
-  passes rather than one number ([package](../../../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-data-services-section/services/eavt-engineering-services-section/content/text/documents/articles/teaching-articles/explanations/what-is-eavt.md)).
+  passes rather than one number ([package](../../../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-data-engineering-services-section/services/eavt-engineering-services-section/content/text/documents/articles/teaching-articles/explanations/what-is-eavt.md)).
 - **The distal bypass** — local records with overlaps, an obstruction sheet
   derived from the overlaps, and damage classified apart from border, which
   is the whole geometry this paradigm applies to a body

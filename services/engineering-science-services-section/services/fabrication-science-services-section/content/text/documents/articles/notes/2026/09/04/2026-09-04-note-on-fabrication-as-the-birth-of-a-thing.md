@@ -123,7 +123,7 @@ quality-composition mechanism, late bound). Contributions merge additively
 (TAB v1's `additive-attributes` discipline)." The birth verbs are two:
 "`constitute`: schema-conformant, roster-installed" and "`induce`: a formation
 self-arises and is *witnessed* into the mesh." In code, `constituteEntity({
-kind, attributes, t })` in [eavt](../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-data-services-section/services/eavt-engineering-services-section/src/eavt.mjs) writes the genesis row
+kind, attributes, t })` in [eavt](../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-data-engineering-services-section/services/eavt-engineering-services-section/src/eavt.mjs) writes the genesis row
 whose content-address is the entity's address; LAGOON's `seed-world.mjs`
 constitutes the org's machines that way. Work order WO-7 of the LAGOON work
 orders ([work orders](../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/services/multi-agent-computer-system-engineering-services-section/content/text/documents/articles/specifications/2026-08-29-lagoon-work-orders.md)) names the acceptance: installing a

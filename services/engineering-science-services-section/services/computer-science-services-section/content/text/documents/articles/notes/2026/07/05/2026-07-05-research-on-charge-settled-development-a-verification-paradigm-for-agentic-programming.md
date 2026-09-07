@@ -139,7 +139,7 @@ per row.
 were written against a package this rewrite could not confirm at the cited
 paths. `lib/metroplat`/`@emsenn/metroplat` is not in the live tree; a legacy
 archive checkout survives (now `@red-cup-engineering/metroplat`, at
-`javascript-services-section/lib/legacy/metroplat/`, hidden from normal search
+`javascript-engineering-services-section/lib/legacy/metroplat/`, hidden from normal search
 by the repo's `**/legacy/**` ignore rule) which lacks the cited
 `lib/persistence/index.mts` but does carry a `path-term.mts` at a different
 path (`src/lib/addressing/path-term.mts`). The witness log's real current home is the

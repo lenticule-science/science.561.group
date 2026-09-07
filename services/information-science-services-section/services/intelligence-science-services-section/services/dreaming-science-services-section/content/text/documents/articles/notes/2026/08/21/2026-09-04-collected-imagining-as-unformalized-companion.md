@@ -7,7 +7,7 @@ collection-date: 2026-09-04
 science-owner: dreaming-science-services-section
 source-paths:
   - "lib/emsenn/services/561-group/services/561-group-services-section/services/561-group-science-services-section/lib/legacy/2026-08-17-triage-dev-research.561.group/dev/docs/planning/sessions/claude-code-harness-cognitive-layer.md"
-  - "lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-services-section/services/javascript-services-section/lib/legacy/operations-manifold/src/cognition.mts"
+  - "lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/lib/legacy/operations-manifold/src/cognition.mts"
 authors:
   - claude
 ---
@@ -37,7 +37,7 @@ outputs stay marked provisional; dreaming's outputs settle.
 ## The only implementation ever built
 
 `operations-manifold` (the June-2026 prototype behind this plan, now
-`lib/legacy/operations-manifold` in the javascript-services-section)
+`lib/legacy/operations-manifold` in the javascript-engineering-services-section)
 implements `imagineContext` in `src/cognition.mts` alongside sibling
 verbs `rememberContext`, `wonderContext`, `inquireContext`,
 `deriveContext`, `exploreContext`, `dreamContext`, and
