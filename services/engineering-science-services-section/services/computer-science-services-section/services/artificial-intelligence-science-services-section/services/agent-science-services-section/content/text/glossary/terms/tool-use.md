@@ -8,12 +8,11 @@ name: Tool Use
 provenance:
   date-created: 2026-03-29
   date-modified: 2026-03-29
-relations:
-  caller: language-model
-  executor: host-application
-  contract: function-schema
-  output-format: json
-  protocol: model-context-protocol
+caller: language-model
+executor: host-application
+contract: function-schema
+output-format: json
+protocol: model-context-protocol
 references:
   openai2026functioncalling:
     authors: ["OpenAI"]

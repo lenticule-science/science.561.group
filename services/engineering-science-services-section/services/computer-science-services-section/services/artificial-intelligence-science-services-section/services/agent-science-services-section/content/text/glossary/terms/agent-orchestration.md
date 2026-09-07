@@ -7,15 +7,14 @@ name: agent-orchestration
 provenance:
   date-created: 2026-03-29
   date-modified: 2026-08-29
-relations:
-  coordinates: [agentic-system, multi-agent-system]
-  built-from: tool-use
-  decisions: state-management, control-flow, communication, observability
-  patterns: prompt-chaining, routing, parallelization, orchestrator-workers
-  controlled-by: human-in-the-loop
-  assessed-by: agent-evaluation, agent-observability
-  frameworks: langgraph, pydantic-ai
-  protocols: model-context-protocol, agent-to-agent-protocol
+coordinates: [agentic-system, multi-agent-system]
+built-from: tool-use
+decisions: [state-management, control-flow, communication, observability]
+patterns: [prompt-chaining, routing, parallelization, orchestrator-workers]
+controlled-by: human-in-the-loop
+assessed-by: [agent-evaluation, agent-observability]
+frameworks: [langgraph, pydantic-ai]
+protocols: [model-context-protocol, agent-to-agent-protocol]
 references:
   hansen2021:
     authors: [Jakob Hansen, Robert Ghrist]

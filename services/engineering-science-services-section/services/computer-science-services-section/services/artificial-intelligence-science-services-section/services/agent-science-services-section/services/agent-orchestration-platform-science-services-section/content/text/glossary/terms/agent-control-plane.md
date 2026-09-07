@@ -6,8 +6,7 @@ provenance:
   date-created: 2026-08-29
   sources:
     - https://github.com/paperclipai/paperclip
-relations:
-  distinguished-from: agent-runtime, durable-work-ledger
+distinguished-from: [agent-runtime, durable-work-ledger]
 ---
 An agent control plane represents who agents are, how they relate to an
 organization, what goals and policies constrain them, what they may spend, and

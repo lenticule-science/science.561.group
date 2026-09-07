@@ -2,14 +2,13 @@
 description: A file convention for providing AI coding agents with project-specific instructions — a README for agents, stewarded by the Linux Foundation's Agentic AI Foundation since December 2025.
 identity: agents-md
 name: AGENTS.md
+contrasts-with: soul-md
 provenance:
   date-created: 2026-03-29
   date-modified: 2026-03-29
-relations:
-  instance-of: context-engineering
-  governs: agentic-system
-  delivered-via: system-prompt
-  contrasts-with: soul-md
+instance-of: context-engineering
+governs: agentic-system
+delivered-via: system-prompt
 ---
 AGENTS.md is a file convention for providing AI coding agents with project-specific instructions. It is a Markdown file placed in a project's root directory (or subdirectories in monorepos) that functions as a README for agents — a dedicated, predictable location for context that would clutter a human-oriented README: build commands, test procedures, code style rules, git workflow conventions, and security boundaries.
 

@@ -8,8 +8,7 @@ provenance:
   date-created: 2026-08-29
   sources:
     - https://github.com/openclaw/openclaw/blob/main/docs/concepts/agent.md
-relations:
-  distinguished-from: agent-control-plane, durable-work-ledger, memory-substrate
+distinguished-from: [agent-control-plane, durable-work-ledger, memory-substrate]
 ---
 An agent runtime is the execution layer that constructs context, invokes a
 model, interprets its output, and executes available tools under host policy.

@@ -8,14 +8,13 @@ name: multi-agent-system
 provenance:
   date-created: 2026-03-29
   date-modified: 2026-03-29
-relations:
-  composed-of: agentic-system
-  coordinated-by: agent-orchestration
-  communication-via: agent-to-agent-protocol
-  patterns: orchestrator-workers, peer-to-peer, pipeline, debate
-  cost: coordination-overhead
-  controlled-by: human-in-the-loop
-  assessed-by: agent-observability
+composed-of: agentic-system
+coordinated-by: agent-orchestration
+communication-via: agent-to-agent-protocol
+patterns: [orchestrator-workers, peer-to-peer, pipeline, debate]
+cost: coordination-overhead
+controlled-by: human-in-the-loop
+assessed-by: agent-observability
 references:
   hansen2021:
     authors: [Jakob Hansen, Robert Ghrist]

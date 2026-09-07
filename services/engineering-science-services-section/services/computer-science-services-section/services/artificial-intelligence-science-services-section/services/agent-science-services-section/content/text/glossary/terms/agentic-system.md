@@ -10,14 +10,13 @@ keywords:
 provenance:
   date-created: 2026-03-29
   date-modified: 2026-03-29
-relations:
-  conditions: environmental-action, goal-directed-planning, persistent-state
-  acts-through: tool-use
-  state-kept-by: agent-memory
-  coordinated-by: agent-orchestration
-  controlled-by: human-in-the-loop
-  assessed-by: agent-evaluation
-  workflow-variant: prompt-chaining
+conditions: [environmental-action, goal-directed-planning, persistent-state]
+acts-through: tool-use
+state-kept-by: agent-memory
+coordinated-by: agent-orchestration
+controlled-by: human-in-the-loop
+assessed-by: agent-evaluation
+workflow-variant: prompt-chaining
 ---
 An agentic system is a computational system that meets three conditions. It acts on its environment through [tool use](./tool-use.md) — it writes files, calls APIs, modifies databases. It pursues goals through multi-step planning — it decomposes objectives into sequences of actions and selects among alternatives. It maintains state that persists across interactions — it remembers what it has done and can resume after interruption.
 
