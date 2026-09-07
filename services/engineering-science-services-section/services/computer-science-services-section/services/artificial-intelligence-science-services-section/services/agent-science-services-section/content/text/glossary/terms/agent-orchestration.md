@@ -8,7 +8,7 @@ provenance:
   date-created: 2026-03-29
   date-modified: 2026-08-29
 relations:
-  coordinates: agentic-system
+  coordinates: [agentic-system, multi-agent-system]
   built-from: tool-use
   decisions: state-management, control-flow, communication, observability
   patterns: prompt-chaining, routing, parallelization, orchestrator-workers
@@ -16,6 +16,13 @@ relations:
   assessed-by: agent-evaluation, agent-observability
   frameworks: langgraph, pydantic-ai
   protocols: model-context-protocol, agent-to-agent-protocol
+references:
+  hansen2021:
+    authors: [Jakob Hansen, Robert Ghrist]
+    title: "Opinion Dynamics on Discourse Sheaves"
+    year: 2021
+    publication: "SIAM Journal on Applied Mathematics"
+    doi: "10.1137/20M1341088"
 ---
 Agent orchestration is the coordination of one or more [agentic systems](./agentic-system.md) through a defined execution topology. The topology determines which steps execute in what order, under what conditions, and with what state. Orchestration sits between the raw [tool use](./tool-use.md) primitive and the goal the system is pursuing.
 
@@ -32,5 +39,10 @@ Four design decisions define any orchestration:
 **Observability.** Can the orchestration be inspected, replayed, and debugged? This is not optional — without it, failures in multi-step workflows are opaque. Checkpoint-based systems enable time-travel debugging (restore any prior state). Event-sourced architectures enable deterministic replay.
 
 No existing framework provides formal compositional guarantees — region-restricted execution, provable non-interference between concurrent agents, or skill admissibility conditions. These remain open problems.
+
+Discourse sheaves provide one source-backed model of agents communicating through
+interface-specific transformations [@hansen2021]. That result does not make an
+orchestration topology a sheaf without declared cells, stalks, and restriction
+maps.
 
 See the current [comparative dossier on agent orchestration platforms](../../../../services/agent-orchestration-platform-science-services-section/content/text/documents/articles/notes/2026/08/29/2026-08-29-comparative-dossier-on-agent-orchestration-platforms.md) for source-indexed product and layer comparisons. The [March 2026 ecosystem survey](../../../../services/agent-orchestration-platform-science-services-section/content/text/documents/articles/notes/2026/03/07/2026-03-07-agent-orchestration-ecosystem.md) remains a historical field snapshot, and [Agent Reliability in Production](../../documents/articles/notes/2026/03/29/2026-03-29-agent-reliability-in-production.md) covers operational patterns.

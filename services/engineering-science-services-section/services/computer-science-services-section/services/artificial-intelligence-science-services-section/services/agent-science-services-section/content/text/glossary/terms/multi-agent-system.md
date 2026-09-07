@@ -15,6 +15,14 @@ relations:
   patterns: orchestrator-workers, peer-to-peer, pipeline, debate
   cost: coordination-overhead
   controlled-by: human-in-the-loop
+  assessed-by: agent-observability
+references:
+  hansen2021:
+    authors: [Jakob Hansen, Robert Ghrist]
+    title: "Opinion Dynamics on Discourse Sheaves"
+    year: 2021
+    publication: "SIAM Journal on Applied Mathematics"
+    doi: "10.1137/20M1341088"
 ---
 A multi-agent system is an architecture where two or more [agentic systems](./agentic-system.md) coordinate to accomplish a shared goal. Each agent has its own tools, state, and reasoning process. The agents communicate through defined protocols — shared state, message passing, or inter-agent protocols like A2A — and their joint behavior produces outcomes no single agent achieves alone.
 
@@ -35,5 +43,9 @@ Three open problems have no solutions in any existing framework:
 **Coordination cost.** [Coordination overhead](./coordination-overhead.md) can exceed the benefit of specialization. The saturation threshold is approximately 4 agents.
 
 **Accountability.** When a multi-agent system produces a wrong result, identifying which agent made the error requires tracing through inter-agent communication logs. Observability across agent boundaries is harder than within a single agent.
+
+Discourse-sheaf research is a source-backed example in which agents expose
+different projections through communication channels [@hansen2021]. It is not
+evidence that every multi-agent system has a sheaf model.
 
 See [Multi-Agent Failure Modes](../../documents/articles/notes/2026/03/29/2026-03-29-multi-agent-failure-modes.md) for the MASFT study's empirical findings on why multi-agent systems fail.

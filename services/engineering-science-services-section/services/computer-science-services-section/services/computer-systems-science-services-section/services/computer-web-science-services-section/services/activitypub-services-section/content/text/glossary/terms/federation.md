@@ -8,9 +8,19 @@ date-updated: 2026-03-03
 keywords:
   - Activitypub
   - Fediverse
+relations:
+  uses: activity
+  mediated-by: actor
+references:
+  activitypub2018:
+    authors: ["W3C Social Web Working Group"]
+    title: "ActivityPub"
+    year: 2018
+    publication: "W3C Recommendation"
+    url: "https://www.w3.org/TR/activitypub/"
 ---
 
-Federation is the network architecture in which autonomous servers exchange [activities](./activity.md) via a shared protocol — in this case, [ActivityPub](../index.md). Each server (instance) operates independently: it runs its own moderation policies, stores its own data, and decides which other instances to communicate with. Federation means these independent servers can interoperate, allowing users on one instance to follow, message, and interact with users on another.
+Federation is the network architecture in which autonomous servers exchange [activities](./activity.md) via a shared protocol — in this case, [ActivityPub](../index.md) [@activitypub2018]. Each server (instance) operates independently: it runs its own moderation policies, stores its own data, and decides which other instances to communicate with. Federation means these independent servers can interoperate, allowing users on one instance to follow, message, and interact with users on another.
 
 The key [property](../../../../../../sociology/terms/property.md) of federation is that no single server controls the network. An instance can join or leave the federation, block specific other instances, or modify how it processes incoming activities. This is what gave the early [fediverse](../../../fediverse/index.md) its character as an [insurgent infrastructure](../concepts/insurgent-infrastructure.md): anyone could spin up a server and participate on equal technical footing.
 

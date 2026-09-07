@@ -8,8 +8,16 @@ authors:
   - claude-opus-4-6
 keywords:
   - Accounting
-component-of: double-entry-bookkeeping
-aggregated-by: ledger
+relations:
+  component-of: double-entry-bookkeeping
+  uses: commodity
+references:
+  gnucash2026:
+    authors: ["GnuCash Documentation Team"]
+    title: "Transaction and Split Reference"
+    year: 2026
+    publication: "GnuCash Documentation"
+    url: "https://wiki.gnucash.org/docs/STABLE/group__Transaction.html"
 ---
 
 An account is a stable classification address that accumulates selected effects
@@ -36,3 +44,7 @@ a credit balance because of timing, offset policy, or error. The
 [chart of accounts](./chart-of-accounts.md) governs available account addresses,
 while subsidiary dimensions and source metadata can carry detail without
 creating a new account for every fact.
+
+An account uses a commodity to identify its counted unit. That accounting unit
+does not establish the account holder, custody, provider restrictions, or a
+right to transfer the underlying service [@gnucash2026].

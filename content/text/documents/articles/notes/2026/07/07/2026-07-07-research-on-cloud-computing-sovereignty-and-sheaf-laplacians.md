@@ -1,6 +1,8 @@
 ---
-title: "Against the Borderless Cloud: Sheaf Laplacians, Sovereign Compute, and the Topology of Digital Fortresses"
-subtitle: "A graduate-to-research level genealogy, mathematical introduction, and frontier map"
+title: "Against the Borderless Cloud: Sheaf Laplacians, Sovereign Compute, and
+  the Topology of Digital Fortresses"
+subtitle: "A graduate-to-research level genealogy, mathematical introduction,
+  and frontier map"
 author:
   - literal: "OpenAI GPT-5.5 Pro"
 date: "2026-07-07"
@@ -19,551 +21,320 @@ keywords:
   - topological data analysis
 link-citations: true
 references:
-  - id: leray1946
-    type: article-journal
-    author:
-      - family: Leray
-        given: Jean
-    issued:
-      date-parts:
-        - [1946]
-    title: "L'anneau d'homologie d'une représentation"
-    container-title: "Comptes Rendus de l'Académie des Sciences"
-    volume: "222"
-    page: "1366-1368"
-    language: "fr"
-  - id: cartan1950
-    type: book
-    editor:
-      - family: Cartan
-        given: Henri
-    issued:
-      date-parts:
-        - [1950]
-    title: "Séminaire Henri Cartan, 1950-1951: Cohomologie des groupes, suite spectrale, faisceaux"
-    publisher: "École Normale Supérieure"
-    publisher-place: "Paris"
-    language: "fr"
-  - id: godement1958
-    type: book
-    author:
-      - family: Godement
-        given: Roger
-    issued:
-      date-parts:
-        - [1958]
-    title: "Topologie algébrique et théorie des faisceaux"
-    publisher: "Hermann"
-    publisher-place: "Paris"
-    language: "fr"
-  - id: grothendieck1957
-    type: article-journal
-    author:
-      - family: Grothendieck
-        given: Alexander
-    issued:
-      date-parts:
-        - [1957]
-    title: "Sur quelques points d'algèbre homologique"
-    container-title: "Tôhoku Mathematical Journal"
-    volume: "9"
-    issue: "2"
-    page: "119-221"
-    DOI: "10.2748/tmj/1178244839"
-    language: "fr"
-  - id: hartshorne1977
-    type: book
-    author:
-      - family: Hartshorne
-        given: Robin
-    issued:
-      date-parts:
-        - [1977]
-    title: "Algebraic Geometry"
-    collection-title: "Graduate Texts in Mathematics"
-    collection-number: "52"
-    publisher: "Springer"
-    publisher-place: "New York"
-    ISBN: "978-0-387-90244-9"
-  - id: bredon1997
-    type: book
-    author:
-      - family: Bredon
-        given: Glen E.
-    issued:
-      date-parts:
-        - [1997]
-    title: "Sheaf Theory"
-    edition: "2"
-    collection-title: "Graduate Texts in Mathematics"
-    collection-number: "170"
-    publisher: "Springer"
-    publisher-place: "New York"
-    ISBN: "978-0-387-94905-5"
-  - id: kashiwaraSchapira1990
-    type: book
-    author:
-      - family: Kashiwara
-        given: Masaki
-      - family: Schapira
-        given: Pierre
-    issued:
-      date-parts:
-        - [1990]
-    title: "Sheaves on Manifolds"
-    collection-title: "Grundlehren der mathematischen Wissenschaften"
-    collection-number: "292"
-    publisher: "Springer"
-    publisher-place: "Berlin"
-    DOI: "10.1007/978-3-662-02661-8"
-  - id: hatcher2002
-    type: book
-    author:
-      - family: Hatcher
-        given: Allen
-    issued:
-      date-parts:
-        - [2002]
-    title: "Algebraic Topology"
-    publisher: "Cambridge University Press"
-    publisher-place: "Cambridge"
-    URL: "https://pi.math.cornell.edu/~hatcher/AT/ATpage.html"
-  - id: chung1997
-    type: book
-    author:
-      - family: Chung
-        given: Fan R. K.
-    issued:
-      date-parts:
-        - [1997]
-    title: "Spectral Graph Theory"
-    collection-title: "CBMS Regional Conference Series in Mathematics"
-    collection-number: "92"
-    publisher: "American Mathematical Society"
-    publisher-place: "Providence, RI"
-    ISBN: "978-0-8218-0315-8"
-  - id: grigor1986
-    type: book
-    author:
-      - family: Grigor'yan
-        given: Alexander
-    issued:
-      date-parts:
-        - [2009]
-    title: "Heat Kernel and Analysis on Manifolds"
-    publisher: "American Mathematical Society"
-    publisher-place: "Providence, RI"
-    ISBN: "978-0-8218-4935-4"
-  - id: singerWu2012
-    type: article-journal
-    author:
-      - family: Singer
-        given: Amit
-      - family: Wu
-        given: Hau-tieng
-    issued:
-      date-parts:
-        - [2012]
-    title: "Vector Diffusion Maps and the Connection Laplacian"
-    container-title: "Communications on Pure and Applied Mathematics"
-    volume: "65"
-    issue: "8"
-    page: "1067-1144"
-    DOI: "10.1002/cpa.21395"
-  - id: curry2014
-    type: thesis
-    author:
-      - family: Curry
-        given: Justin Michael
-    issued:
-      date-parts:
-        - [2014]
-    title: "Sheaves, Cosheaves and Applications"
-    genre: "PhD thesis"
-    publisher: "University of Pennsylvania"
-    URL: "https://arxiv.org/abs/1303.3255"
-  - id: robinson2014
-    type: book
-    author:
-      - family: Robinson
-        given: Michael
-    issued:
-      date-parts:
-        - [2014]
-    title: "Topological Signal Processing"
-    collection-title: "Mathematical Engineering"
-    publisher: "Springer"
-    publisher-place: "Berlin"
-    DOI: "10.1007/978-3-642-36104-0"
-  - id: ghristHiraoka2011
-    type: paper-conference
-    author:
-      - family: Ghrist
-        given: Robert
-      - family: Hiraoka
-        given: Yasuaki
-    issued:
-      date-parts:
-        - [2011]
-    title: "Applications of Sheaf Cohomology and Exact Sequences to Network Coding"
-    container-title: "Proceedings of the International Symposium on Nonlinear Theory and Its Applications"
-    page: "266-269"
-    URL: "https://www2.math.upenn.edu/~ghrist/preprints/networkcodingshort.pdf"
-  - id: hansenGhrist2019
-    type: article-journal
-    author:
-      - family: Hansen
-        given: Jakob
-      - family: Ghrist
-        given: Robert
-    issued:
-      date-parts:
-        - [2019, 8, 30]
-    title: "Toward a Spectral Theory of Cellular Sheaves"
-    container-title: "Journal of Applied and Computational Topology"
-    volume: "3"
-    issue: "4"
-    page: "315-358"
-    DOI: "10.1007/s41468-019-00038-7"
-    URL: "https://link.springer.com/article/10.1007/s41468-019-00038-7"
-  - id: hansenGhrist2019Learn
-    type: paper-conference
-    author:
-      - family: Hansen
-        given: Jakob
-      - family: Ghrist
-        given: Robert
-    issued:
-      date-parts:
-        - [2019]
-    title: "Learning Sheaf Laplacians from Smooth Signals"
-    container-title: "ICASSP 2019 - 2019 IEEE International Conference on Acoustics, Speech and Signal Processing"
-    page: "5446-5450"
-    publisher: "IEEE"
-    DOI: "10.1109/ICASSP.2019.8683709"
-    URL: "https://www.jakobhansen.org/publications/learningsheaves.pdf"
-  - id: hansen2020
-    type: thesis
-    author:
-      - family: Hansen
-        given: Jakob
-    issued:
-      date-parts:
-        - [2020]
+  leray1946:
+    authors:
+      - Jean Leray
+    title: L'anneau d'homologie d'une représentation
+    year: 1946
+    publication: Comptes Rendus de l'Académie des Sciences
+  cartan1950:
+    authors:
+      - Henri Cartan
+    title: "Séminaire Henri Cartan, 1950-1951: Cohomologie des groupes, suite
+      spectrale, faisceaux"
+    year: 1950
+    publisher: École Normale Supérieure
+  godement1958:
+    authors:
+      - Roger Godement
+    title: Topologie algébrique et théorie des faisceaux
+    year: 1958
+    publisher: Hermann
+  grothendieck1957:
+    authors:
+      - Alexander Grothendieck
+    title: Sur quelques points d'algèbre homologique
+    year: 1957
+    publication: Tôhoku Mathematical Journal
+    doi: 10.2748/tmj/1178244839
+  hartshorne1977:
+    authors:
+      - Robin Hartshorne
+    title: Algebraic Geometry
+    year: 1977
+    publisher: Springer
+  bredon1997:
+    authors:
+      - Glen E. Bredon
+    title: Sheaf Theory
+    year: 1997
+    publisher: Springer
+  kashiwara1990:
+    authors:
+      - Masaki Kashiwara
+      - Pierre Schapira
+    title: Sheaves on Manifolds
+    year: 1990
+    publisher: Springer
+    doi: 10.1007/978-3-662-02661-8
+    note: "source id: kashiwaraSchapira1990"
+  hatcher2002:
+    authors:
+      - Allen Hatcher
+    title: Algebraic Topology
+    year: 2002
+    publisher: Cambridge University Press
+    url: https://pi.math.cornell.edu/~hatcher/AT/ATpage.html
+  chung1997:
+    authors:
+      - Fan R. K. Chung
+    title: Spectral Graph Theory
+    year: 1997
+    publisher: American Mathematical Society
+  grigor1986:
+    authors:
+      - Alexander Grigor'yan
+    title: Heat Kernel and Analysis on Manifolds
+    year: 2009
+    publisher: American Mathematical Society
+  singer2012:
+    authors:
+      - Amit Singer
+      - Hau-tieng Wu
+    title: Vector Diffusion Maps and the Connection Laplacian
+    year: 2012
+    publication: Communications on Pure and Applied Mathematics
+    doi: 10.1002/cpa.21395
+    note: "source id: singerWu2012"
+  curry2014:
+    authors:
+      - Justin Michael Curry
+    title: Sheaves, Cosheaves and Applications
+    year: 2014
+    publisher: University of Pennsylvania
+    url: https://arxiv.org/abs/1303.3255
+  robinson2014:
+    authors:
+      - Michael Robinson
+    title: Topological Signal Processing
+    year: 2014
+    publisher: Springer
+    doi: 10.1007/978-3-642-36104-0
+  ghrist2011:
+    authors:
+      - Robert Ghrist
+      - Yasuaki Hiraoka
+    title: Applications of Sheaf Cohomology and Exact Sequences to Network Coding
+    year: 2011
+    publication: Proceedings of the International Symposium on Nonlinear Theory and
+      Its Applications
+    url: https://www2.math.upenn.edu/~ghrist/preprints/networkcodingshort.pdf
+    note: "source id: ghristHiraoka2011"
+  hansen2019:
+    authors:
+      - Jakob Hansen
+      - Robert Ghrist
+    title: Toward a Spectral Theory of Cellular Sheaves
+    year: 2019
+    publication: Journal of Applied and Computational Topology
+    doi: 10.1007/s41468-019-00038-7
+    url: https://link.springer.com/article/10.1007/s41468-019-00038-7
+    note: "source id: hansenGhrist2019"
+  hansen2019a:
+    authors:
+      - Jakob Hansen
+      - Robert Ghrist
+    title: Learning Sheaf Laplacians from Smooth Signals
+    year: 2019
+    publication: ICASSP 2019 - 2019 IEEE International Conference on Acoustics,
+      Speech and Signal Processing
+    publisher: IEEE
+    doi: 10.1109/ICASSP.2019.8683709
+    url: https://www.jakobhansen.org/publications/learningsheaves.pdf
+    note: "source id: hansenGhrist2019Learn"
+  hansen2020:
+    authors:
+      - Jakob Hansen
     title: "Laplacians of Cellular Sheaves: Theory and Applications"
-    genre: "PhD thesis"
-    publisher: "University of Pennsylvania"
-    URL: "https://repository.upenn.edu/bitstreams/d0719f4d-5bb3-4066-82df-158fceab9a11/download"
-  - id: hansenGhrist2021Opinion
-    type: article-journal
-    author:
-      - family: Hansen
-        given: Jakob
-      - family: Ghrist
-        given: Robert
-    issued:
-      date-parts:
-        - [2021]
-    title: "Opinion Dynamics on Discourse Sheaves"
-    container-title: "SIAM Journal on Applied Mathematics"
-    volume: "81"
-    issue: "5"
-    page: "2033-2060"
-    DOI: "10.1137/20M1341088"
-    URL: "https://epubs.siam.org/doi/10.1137/20M1341088"
-  - id: ghristRiess2022
-    type: article-journal
-    author:
-      - family: Ghrist
-        given: Robert
-      - family: Riess
-        given: Hans
-    issued:
-      date-parts:
-        - [2022]
-    title: "Cellular Sheaves of Lattices and the Tarski Laplacian"
-    container-title: "Homology, Homotopy and Applications"
-    volume: "24"
-    issue: "1"
-    page: "325-345"
-    DOI: "10.4310/HHA.2022.v24.n1.a16"
-    URL: "https://arxiv.org/abs/2007.04099"
-  - id: hansenGebhart2020
-    type: paper-conference
-    author:
-      - family: Hansen
-        given: Jakob
-      - family: Gebhart
-        given: Thomas
-    issued:
-      date-parts:
-        - [2020]
-    title: "Sheaf Neural Networks"
-    container-title: "NeurIPS 2020 Workshop on Topological Data Analysis and Beyond"
-    URL: "https://arxiv.org/abs/2012.06333"
-  - id: bodnar2022
-    type: paper-conference
-    author:
-      - family: Bodnar
-        given: Cristian
-      - family: Di Giovanni
-        given: Francesco
-      - family: Chamberlain
-        given: Benjamin Paul
-      - family: Liò
-        given: Pietro
-      - family: Bronstein
-        given: Michael M.
-    issued:
-      date-parts:
-        - [2022]
-    title: "Neural Sheaf Diffusion: A Topological Perspective on Heterophily and Oversmoothing in GNNs"
-    container-title: "Advances in Neural Information Processing Systems"
-    volume: "35"
-    URL: "https://arxiv.org/abs/2202.04579"
-  - id: barbero2022
-    type: paper-conference
-    author:
-      - family: Barbero
-        given: Federico
-      - family: Bodnar
-        given: Cristian
-      - family: de Ocáriz Borde
-        given: Haitz Sáez
-      - family: Bronstein
-        given: Michael M.
-      - family: Veličković
-        given: Petar
-      - family: Liò
-        given: Pietro
-    issued:
-      date-parts:
-        - [2022]
-    title: "Sheaf Neural Networks with Connection Laplacians"
-    container-title: "Topological, Algebraic and Geometric Learning Workshops 2022"
-    collection-title: "Proceedings of Machine Learning Research"
-    volume: "196"
-    page: "28-36"
-    URL: "https://proceedings.mlr.press/v196/barbero22a.html"
-  - id: nguyen2024
-    type: article
-    author:
-      - family: Nguyen
-        given: Bao
-      - family: Sani
-        given: Lorenzo
-      - family: Qiu
-        given: Xinchi
-      - family: Liò
-        given: Pietro
-      - family: Lane
-        given: Nicholas D.
-    issued:
-      date-parts:
-        - [2024]
-    title: "Sheaf HyperNetworks for Personalized Federated Learning"
-    URL: "https://arxiv.org/abs/2405.20882"
-  - id: choiPark2025
-    type: article
-    author:
-      - family: Choi
-        given: Seongjin
-      - family: Park
-        given: Junyeong
-    issued:
-      date-parts:
-        - [2025]
+    year: 2020
+    publisher: University of Pennsylvania
+    url: https://repository.upenn.edu/bitstreams/d0719f4d-5bb3-4066-82df-158fceab9a11/download
+  hansen2021:
+    authors:
+      - Jakob Hansen
+      - Robert Ghrist
+    title: Opinion Dynamics on Discourse Sheaves
+    year: 2021
+    publication: SIAM Journal on Applied Mathematics
+    doi: 10.1137/20M1341088
+    url: https://epubs.siam.org/doi/10.1137/20M1341088
+    note: "source id: hansenGhrist2021Opinion"
+  ghrist2022:
+    authors:
+      - Robert Ghrist
+      - Hans Riess
+    title: Cellular Sheaves of Lattices and the Tarski Laplacian
+    year: 2022
+    publication: Homology, Homotopy and Applications
+    doi: 10.4310/HHA.2022.v24.n1.a16
+    url: https://arxiv.org/abs/2007.04099
+    note: "source id: ghristRiess2022"
+  hansen2020a:
+    authors:
+      - Jakob Hansen
+      - Thomas Gebhart
+    title: Sheaf Neural Networks
+    year: 2020
+    publication: NeurIPS 2020 Workshop on Topological Data Analysis and Beyond
+    url: https://arxiv.org/abs/2012.06333
+    note: "source id: hansenGebhart2020"
+  bodnar2022:
+    authors:
+      - Cristian Bodnar
+      - Francesco Di Giovanni
+      - Benjamin Paul Chamberlain
+      - Pietro Liò
+      - Michael M. Bronstein
+    title: "Neural Sheaf Diffusion: A Topological Perspective on Heterophily and
+      Oversmoothing in GNNs"
+    year: 2022
+    publication: Advances in Neural Information Processing Systems
+    url: https://arxiv.org/abs/2202.04579
+  barbero2022:
+    authors:
+      - Federico Barbero
+      - Cristian Bodnar
+      - Haitz Sáez de Ocáriz Borde
+      - Michael M. Bronstein
+      - Petar Veličković
+      - Pietro Liò
+    title: Sheaf Neural Networks with Connection Laplacians
+    year: 2022
+    publication: Topological, Algebraic and Geometric Learning Workshops 2022
+    url: https://proceedings.mlr.press/v196/barbero22a.html
+  nguyen2024:
+    authors:
+      - Bao Nguyen
+      - Lorenzo Sani
+      - Xinchi Qiu
+      - Pietro Liò
+      - Nicholas D. Lane
+    title: Sheaf HyperNetworks for Personalized Federated Learning
+    year: 2024
+    url: https://arxiv.org/abs/2405.20882
+  choi2025:
+    authors:
+      - Seongjin Choi
+      - Junyeong Park
     title: "Hypergraph Neural Sheaf Diffusion: A Symmetric Simplicial Set Approach"
-    URL: "https://arxiv.org/abs/2505.05702"
-  - id: diNino2025
-    type: article
-    author:
-      - family: Di Nino
-        given: Lorenzo
-    issued:
-      date-parts:
-        - [2025]
-    title: "Learning Sheaf Laplacian Optimizing Restriction Maps"
-    URL: "https://arxiv.org/abs/2501.19207"
-  - id: starkWilkie2026
-    type: article
-    author:
-      - family: Stark
-        given: Justin
-      - family: Wilkie
-        given: Scott
-    issued:
-      date-parts:
-        - [2026]
-    title: "Sovereign 2.0: Control-Plane Sovereignty for Cloud Systems Under Disruption"
-    URL: "https://arxiv.org/abs/2604.14242"
-  - id: petersonGondreeBeverly2011
-    type: paper-conference
-    author:
-      - family: Peterson
-        given: Zachary N. J.
-      - family: Gondree
-        given: Mark
-      - family: Beverly
-        given: Robert
-    issued:
-      date-parts:
-        - [2011, 6]
-    title: "A Position Paper on Data Sovereignty: The Importance of Geolocating Data in the Cloud"
-    container-title: "3rd USENIX Workshop on Hot Topics in Cloud Computing (HotCloud 11)"
-    publisher: "USENIX Association"
-    publisher-place: "Portland, OR"
-    URL: "https://www.usenix.org/conference/hotcloud11/position-paper-data-sovereignty-importance-geolocating-data-cloud"
-  - id: irion2012
-    type: article-journal
-    author:
-      - family: Irion
-        given: Kristina
-    issued:
-      date-parts:
-        - [2012]
-    title: "Government Cloud Computing and National Data Sovereignty"
-    container-title: "Policy & Internet"
-    volume: "4"
-    issue: "3-4"
-    page: "40-71"
-    DOI: "10.1002/poi3.10"
-  - id: blancato2024
-    type: article-journal
-    author:
-      - family: Blancato
-        given: Filippo Gualtiero
-    issued:
-      date-parts:
-        - [2024]
-    title: "The Cloud Sovereignty Nexus: How the European Union Seeks to Reverse Strategic Dependencies in Its Digital Ecosystem"
-    container-title: "Policy & Internet"
-    volume: "16"
-    issue: "1"
-    DOI: "10.1002/poi3.358"
-    URL: "https://onlinelibrary.wiley.com/doi/abs/10.1002/poi3.358"
-  - id: awsGlobalInfrastructure2026
-    type: webpage
-    author:
-      - literal: "Amazon Web Services"
-    issued:
-      date-parts:
-        - [2026]
-    title: "AWS Global Infrastructure"
-    URL: "https://aws.amazon.com/about-aws/global-infrastructure/"
-    accessed:
-      date-parts:
-        - [2026, 7, 7]
-  - id: awsEuropeanSovereignCloud2026
-    type: webpage
-    author:
-      - literal: "Amazon Web Services"
-    issued:
-      date-parts:
-        - [2026, 1, 14]
-    title: "Opening the AWS European Sovereign Cloud"
-    URL: "https://aws.amazon.com/blogs/aws/opening-the-aws-european-sovereign-cloud/"
-    accessed:
-      date-parts:
-        - [2026, 7, 7]
-  - id: microsoftAzureRegions2026
-    type: webpage
-    author:
-      - literal: "Microsoft Learn"
-    issued:
-      date-parts:
-        - [2026, 6, 29]
-    title: "What Are Azure Regions?"
-    URL: "https://learn.microsoft.com/en-us/azure/reliability/regions-overview"
-    accessed:
-      date-parts:
-        - [2026, 7, 7]
-  - id: microsoftSovereignCloud2026
-    type: webpage
-    author:
-      - literal: "Microsoft Learn"
-    issued:
-      date-parts:
-        - [2026, 4, 1]
-    title: "What Is Microsoft Sovereign Cloud?"
-    URL: "https://learn.microsoft.com/en-us/azure/azure-sovereign-clouds/microsoft-sovereign-cloud"
-    accessed:
-      date-parts:
-        - [2026, 7, 7]
-  - id: googleDistributedCloud2026
-    type: webpage
-    author:
-      - literal: "Google Cloud"
-    issued:
-      date-parts:
-        - [2026]
-    title: "Google Distributed Cloud"
-    URL: "https://cloud.google.com/distributed-cloud"
-    accessed:
-      date-parts:
-        - [2026, 7, 7]
-  - id: europeanCommissionCADA2026
-    type: webpage
-    author:
-      - literal: "European Commission"
-    issued:
-      date-parts:
-        - [2026, 6, 3]
-    title: "Cloud and AI Development Act"
-    URL: "https://digital-strategy.ec.europa.eu/en/policies/cloud-and-ai-development-act"
-    accessed:
-      date-parts:
-        - [2026, 7, 7]
-  - id: europeanCommissionCloudFramework2026
-    type: webpage
-    author:
-      - literal: "European Commission"
-    issued:
-      date-parts:
-        - [2026, 6, 1]
-    title: "Sovereign Cloud Framework Explained"
-    URL: "https://commission.europa.eu/news-and-media/news/sovereign-cloud-framework-explained-2026-06-01_en"
-    accessed:
-      date-parts:
-        - [2026, 7, 7]
-  - id: europeanCommissionDataAct2026
-    type: webpage
-    author:
-      - literal: "European Commission"
-    issued:
-      date-parts:
-        - [2026]
-    title: "Data Act"
-    URL: "https://digital-strategy.ec.europa.eu/en/policies/data-act"
-    accessed:
-      date-parts:
-        - [2026, 7, 7]
-  - id: europeanCommissionNIS2
-    type: webpage
-    author:
-      - literal: "European Commission"
-    issued:
-      date-parts:
-        - [2026]
+    year: 2025
+    url: https://arxiv.org/abs/2505.05702
+    note: "source id: choiPark2025"
+  dinino2025:
+    authors:
+      - Lorenzo Di Nino
+    title: Learning Sheaf Laplacian Optimizing Restriction Maps
+    year: 2025
+    url: https://arxiv.org/abs/2501.19207
+    note: "source id: diNino2025"
+  stark2026:
+    authors:
+      - Justin Stark
+      - Scott Wilkie
+    title: "Sovereign 2.0: Control-Plane Sovereignty for Cloud Systems Under
+      Disruption"
+    year: 2026
+    url: https://arxiv.org/abs/2604.14242
+    note: "source id: starkWilkie2026"
+  peterson2011:
+    authors:
+      - Zachary N. J. Peterson
+      - Mark Gondree
+      - Robert Beverly
+    title: "A Position Paper on Data Sovereignty: The Importance of Geolocating Data
+      in the Cloud"
+    year: 2011
+    publication: 3rd USENIX Workshop on Hot Topics in Cloud Computing (HotCloud 11)
+    publisher: USENIX Association
+    url: https://www.usenix.org/conference/hotcloud11/position-paper-data-sovereignty-importance-geolocating-data-cloud
+    note: "source id: petersonGondreeBeverly2011"
+  irion2012:
+    authors:
+      - Kristina Irion
+    title: Government Cloud Computing and National Data Sovereignty
+    year: 2012
+    publication: Policy & Internet
+    doi: 10.1002/poi3.10
+  blancato2023:
+    authors:
+      - Filippo Gualtiero Blancato
+    title: "The Cloud Sovereignty Nexus: How the European Union Seeks to Reverse
+      Strategic Dependencies in Its Digital Ecosystem"
+    year: 2023
+    publication: Policy & Internet
+    doi: 10.1002/poi3.358
+    url: https://onlinelibrary.wiley.com/doi/abs/10.1002/poi3.358
+  amazonwebservices2026:
+    authors:
+      - Amazon Web Services
+    title: AWS Global Infrastructure
+    year: 2026
+    url: https://aws.amazon.com/about-aws/global-infrastructure/
+    note: "source id: awsGlobalInfrastructure2026"
+  amazonwebservices2026a:
+    authors:
+      - Amazon Web Services
+    title: Opening the AWS European Sovereign Cloud
+    year: 2026
+    url: https://aws.amazon.com/blogs/aws/opening-the-aws-european-sovereign-cloud/
+    note: "source id: awsEuropeanSovereignCloud2026"
+  microsoftlearn2026:
+    authors:
+      - Microsoft Learn
+    title: What Are Azure Regions?
+    year: 2026
+    url: https://learn.microsoft.com/en-us/azure/reliability/regions-overview
+    note: "source id: microsoftAzureRegions2026"
+  microsoftlearn2026a:
+    authors:
+      - Microsoft Learn
+    title: What Is Microsoft Sovereign Cloud?
+    year: 2026
+    url: https://learn.microsoft.com/en-us/azure/azure-sovereign-clouds/microsoft-sovereign-cloud
+    note: "source id: microsoftSovereignCloud2026"
+  googlecloud2026:
+    authors:
+      - Google Cloud
+    title: Google Distributed Cloud
+    year: 2026
+    url: https://cloud.google.com/distributed-cloud
+    note: "source id: googleDistributedCloud2026"
+  europeancommission2026:
+    authors:
+      - European Commission
+    title: Cloud and AI Development Act
+    year: 2026
+    url: https://digital-strategy.ec.europa.eu/en/policies/cloud-and-ai-development-act
+    note: "source id: europeanCommissionCADA2026"
+  europeancommission2026a:
+    authors:
+      - European Commission
+    title: Sovereign Cloud Framework Explained
+    year: 2026
+    url: https://commission.europa.eu/news-and-media/news/sovereign-cloud-framework-explained-2026-06-01_en
+    note: "source id: europeanCommissionCloudFramework2026"
+  europeancommission2026b:
+    authors:
+      - European Commission
+    title: Data Act
+    year: 2026
+    url: https://digital-strategy.ec.europa.eu/en/policies/data-act
+    note: "source id: europeanCommissionDataAct2026"
+  europeancommission2026c:
+    authors:
+      - European Commission
     title: "NIS2 Directive: Securing Network and Information Systems"
-    URL: "https://digital-strategy.ec.europa.eu/en/policies/nis2-directive"
-    accessed:
-      date-parts:
-        - [2026, 7, 7]
-  - id: eurohpcAiFactories2026
-    type: webpage
-    author:
-      - literal: "European High Performance Computing Joint Undertaking"
-    issued:
-      date-parts:
-        - [2026]
-    title: "AI Factories"
-    URL: "https://www.eurohpc-ju.europa.eu/ai-factories_en"
-    accessed:
-      date-parts:
-        - [2026, 7, 7]
+    year: 2026
+    url: https://digital-strategy.ec.europa.eu/en/policies/nis2-directive
+    note: "source id: europeanCommissionNIS2"
+  europeanhighperformancecomputingjointundertaking2026:
+    authors:
+      - European High Performance Computing Joint Undertaking
+    title: AI Factories
+    year: 2026
+    url: https://www.eurohpc-ju.europa.eu/ai-factories_en
+    note: "source id: eurohpcAiFactories2026"
 ---
-
 # Against the Borderless Cloud
 
 ## 1. Thesis: the cloud was never borderless
@@ -578,7 +349,7 @@ The thesis can be stated sharply:
 
 > **Borderless cloud is the low-energy fiction of a trivial sheaf. Sovereign compute is the deliberate construction of nontrivial sheaves whose local sections do not silently collapse into a single global control plane.**
 
-Current infrastructure already points in this direction. Public clouds are organized into named regions and availability zones, not a smooth placeless continuum. Microsoft describes Azure regions as physical facilities containing data centers and networking infrastructure, grouped within geographies that act as data-residency boundaries [@microsoftAzureRegions2026]. AWS reports a global infrastructure of dozens of geographic regions and more than a hundred availability zones [@awsGlobalInfrastructure2026]. The European Commission’s Cloud and AI Development Act explicitly frames over-reliance on non-EU cloud providers as a risk to digital autonomy and resilience, while seeking to triple EU data-center capacity within five to seven years and introduce a single sovereignty framework for cloud and AI [@europeanCommissionCADA2026]. EuroHPC’s AI Factories similarly turn compute into territorial industrial policy rather than abstract utility [@eurohpcAiFactories2026].
+Current infrastructure already points in this direction. Public clouds are organized into named regions and availability zones, not a smooth placeless continuum. Microsoft describes Azure regions as physical facilities containing data centers and networking infrastructure, grouped within geographies that act as data-residency boundaries [@microsoftlearn2026]. AWS reports a global infrastructure of dozens of geographic regions and more than a hundred availability zones [@amazonwebservices2026]. The European Commission’s Cloud and AI Development Act explicitly frames over-reliance on non-EU cloud providers as a risk to digital autonomy and resilience, while seeking to triple EU data-center capacity within five to seven years and introduce a single sovereignty framework for cloud and AI [@europeancommission2026]. EuroHPC’s AI Factories similarly turn compute into territorial industrial policy rather than abstract utility [@europeanhighperformancecomputingjointundertaking2026].
 
 The borderless cloud was always a business abstraction laid over a material topology. The question is how to model that topology without flattening away the local incompatibilities that sovereignty is precisely about.
 
@@ -661,7 +432,7 @@ The kernel
 
 is the space of **global sections**: assignments of local data that agree across every interface after restriction. In ordinary graph theory, agreement means \(f(u)=f(v)\). In sheaf theory, agreement means \(\rho_{u,e}x_u=\rho_{v,e}x_v\). That difference is the difference between “all nodes share one scalar” and “local regimes can be globally compatible only through explicitly modeled translations, projections, encryptions, redactions, or policy gates.”
 
-Hansen and Ghrist’s spectral theory of cellular sheaves generalizes spectral graph theory in exactly this way: the graph Laplacian is lifted to a Hodge Laplacian on sheaf cochains, allowing spectra, harmonicity, effective resistance, sparsification, interlacing, Cheeger-type questions, and approximation to be studied for cellular sheaves [@hansenGhrist2019].
+Hansen and Ghrist’s spectral theory of cellular sheaves generalizes spectral graph theory in exactly this way: the graph Laplacian is lifted to a Hodge Laplacian on sheaf cochains, allowing spectra, harmonicity, effective resistance, sparsification, interlacing, Cheeger-type questions, and approximation to be studied for cellular sheaves [@hansen2019].
 
 ### 2.3 Higher-dimensional sheaf Laplacians
 
@@ -729,15 +500,15 @@ The word “compatible” is doing the work. A sheaf is not merely a collection 
 
 Classical sheaves can be analytically and categorically sophisticated. To model networks, robotics, sensors, communications, and cloud systems, one wants a finite, computable version. Cellular sheaves do this by placing stalks on the cells of a finite cell complex and restriction maps on incidences.
 
-Justin Curry’s work on sheaves, cosheaves, and applications developed cellular sheaves and cosheaves as computable objects for topological data analysis, sensor networks, and level-set persistence [@curry2014]. Michael Robinson developed a sheaf-theoretic perspective on signal processing, sampling, and reconstruction [@robinson2014]. Ghrist and Hiraoka applied sheaf cohomology and exact sequences to network coding, showing how sheaf tools organize local information flows and global extendability [@ghristHiraoka2011].
+Justin Curry’s work on sheaves, cosheaves, and applications developed cellular sheaves and cosheaves as computable objects for topological data analysis, sensor networks, and level-set persistence [@curry2014]. Michael Robinson developed a sheaf-theoretic perspective on signal processing, sampling, and reconstruction [@robinson2014]. Ghrist and Hiraoka applied sheaf cohomology and exact sequences to network coding, showing how sheaf tools organize local information flows and global extendability [@ghrist2011].
 
 This is the first important shift toward infrastructure: a network can be more than a graph. It can carry structured local data, and the question becomes whether local constraints glue into a global behavior.
 
 ### 3.4 Spectral sheaf theory
 
-Hansen and Ghrist made the next decisive move: if a cellular sheaf has a cochain complex, then it has Hodge Laplacians; if it has Laplacians, it should have spectral theory [@hansenGhrist2019; @hansen2020]. This produces a direct generalization of spectral graph theory. The graph Laplacian appears as the sheaf Laplacian of a constant rank-one sheaf with identity restrictions. More general sheaves allow different stalk dimensions and nontrivial restriction maps.
+Hansen and Ghrist made the next decisive move: if a cellular sheaf has a cochain complex, then it has Hodge Laplacians; if it has Laplacians, it should have spectral theory [@hansen2019; @hansen2020]. This produces a direct generalization of spectral graph theory. The graph Laplacian appears as the sheaf Laplacian of a constant rank-one sheaf with identity restrictions. More general sheaves allow different stalk dimensions and nontrivial restriction maps.
 
-The consequences are substantial. Spectra can diagnose harmonicity, effective resistance, synchronization, approximation, and diffusion on sheaves. Learning sheaf Laplacians from smooth signals extends graph-learning methods from scalar smoothness to sheaf-valued smoothness [@hansenGhrist2019Learn]. Opinion dynamics on discourse sheaves models agents whose communications may selectively modulate, hide, or transform opinions before they reach others [@hansenGhrist2021Opinion]. Lattice-valued sheaves and the Tarski Laplacian extend the theory beyond vector spaces into order-theoretic settings more natural for constraints, access-control labels, and policy posets [@ghristRiess2022].
+The consequences are substantial. Spectra can diagnose harmonicity, effective resistance, synchronization, approximation, and diffusion on sheaves. Learning sheaf Laplacians from smooth signals extends graph-learning methods from scalar smoothness to sheaf-valued smoothness [@hansen2019Learn]. Opinion dynamics on discourse sheaves models agents whose communications may selectively modulate, hide, or transform opinions before they reach others [@hansen2021]. Lattice-valued sheaves and the Tarski Laplacian extend the theory beyond vector spaces into order-theoretic settings more natural for constraints, access-control labels, and policy posets [@ghrist2022].
 
 The genealogy therefore runs:
 
@@ -751,9 +522,9 @@ The genealogy therefore runs:
 
 ### 3.5 Neural sheaves and modern representation learning
 
-The recent machine-learning frontier treats graph neural networks as diffusion processes. Standard graph convolution implicitly assumes a trivial sheaf: each node has the same type of feature vector, and neighboring features are compared or averaged without interface-specific transformations. Neural sheaf diffusion replaces that trivial geometry with a learned sheaf geometry. Restriction maps become trainable or structured parameters, and diffusion occurs through a sheaf Laplacian [@hansenGebhart2020; @bodnar2022].
+The recent machine-learning frontier treats graph neural networks as diffusion processes. Standard graph convolution implicitly assumes a trivial sheaf: each node has the same type of feature vector, and neighboring features are compared or averaged without interface-specific transformations. Neural sheaf diffusion replaces that trivial geometry with a learned sheaf geometry. Restriction maps become trainable or structured parameters, and diffusion occurs through a sheaf Laplacian [@hansen2020a; @bodnar2022].
 
-This matters because many real graphs are **heterophilic**: connected nodes may have different labels, roles, or semantics. In such cases, ordinary smoothing can destroy signal. Sheaf diffusion can learn that disagreement across an edge is not necessarily noise; it may be the correct relation after an edge-specific transformation. Connection Laplacian variants, hypergraph sheaf diffusion, personalized federated learning via sheaf hypernetworks, and newer methods for learning restriction maps all push the same theme: local-to-global learning requires learning how local coordinate systems translate [@barbero2022; @nguyen2024; @choiPark2025; @diNino2025].
+This matters because many real graphs are **heterophilic**: connected nodes may have different labels, roles, or semantics. In such cases, ordinary smoothing can destroy signal. Sheaf diffusion can learn that disagreement across an edge is not necessarily noise; it may be the correct relation after an edge-specific transformation. Connection Laplacian variants, hypergraph sheaf diffusion, personalized federated learning via sheaf hypernetworks, and newer methods for learning restriction maps all push the same theme: local-to-global learning requires learning how local coordinate systems translate [@barbero2022; @nguyen2024; @choi2025; @dinino2025].
 
 The analogy to sovereign compute is direct. A hyperscaler wants global smoothing: one developer experience, one control plane, one identity fabric, one billing structure, one API grammar. Sovereignty introduces heterophily: adjacent domains are intentionally not identical. Sheaf methods were built for exactly this situation.
 
@@ -788,7 +559,7 @@ where:
 - \(R_v\) encodes resilience, disaster recovery, backup, continuity, and dependency on external control planes;
 - \(A_v\) encodes audit evidence, logs, attestations, and compliance proofs.
 
-This is not meant to claim these are naturally Euclidean variables. In practice, some are categorical, lattice-valued, probabilistic, or legal-textual. Linear sheaves are the tractable first approximation. Lattice sheaves and Tarski Laplacians are more natural for access-control classes, legal assurance levels, and policy partial orders [@ghristRiess2022].
+This is not meant to claim these are naturally Euclidean variables. In practice, some are categorical, lattice-valued, probabilistic, or legal-textual. Linear sheaves are the tractable first approximation. Lattice sheaves and Tarski Laplacians are more natural for access-control classes, legal assurance levels, and policy partial orders [@ghrist2022].
 
 ### 4.3 Restriction maps: the interface is the politics
 
@@ -838,7 +609,7 @@ for every interface. In cloud terms, a global section is an end-to-end architect
 
 For a trivial sheaf, global sections are easy: everyone uses the same scalar or vector coordinate system. This is the hyperscale ideal. The provider offers a universal cloud grammar; local differences are abstracted behind APIs; workloads become portable within the provider’s kingdom.
 
-For a nontrivial sovereign sheaf, global sections are rare and politically meaningful. They require explicit evidence that local legal regimes, operational controls, keys, data boundaries, and dependencies glue. This is why sovereign cloud procurement increasingly asks not only “where is the data?” but “who can operate the control plane, who can compel the provider, who can update the software, who holds keys, who sees metadata, and how can the service recover under geopolitical disruption?” Data sovereignty research has long emphasized the coupling of data to geographic location and legal authority [@petersonGondreeBeverly2011; @irion2012]. Newer cloud-sovereignty work stresses that strategic dependency on foreign cloud ecosystems is itself part of the problem [@blancato2024].
+For a nontrivial sovereign sheaf, global sections are rare and politically meaningful. They require explicit evidence that local legal regimes, operational controls, keys, data boundaries, and dependencies glue. This is why sovereign cloud procurement increasingly asks not only “where is the data?” but “who can operate the control plane, who can compel the provider, who can update the software, who holds keys, who sees metadata, and how can the service recover under geopolitical disruption?” Data sovereignty research has long emphasized the coupling of data to geographic location and legal authority [@peterson2011; @irion2012]. Newer cloud-sovereignty work stresses that strategic dependency on foreign cloud ecosystems is itself part of the problem [@blancato2023].
 
 ### 4.6 Fracture modes: reading the spectrum
 
@@ -895,7 +666,7 @@ Sovereign compute clusters reverse the goal. They do not simply disconnect. They
 - explicit exit and portability requirements;
 - local AI compute capacity for sensitive model training or inference.
 
-AWS’s European Sovereign Cloud, for example, is described as physically and logically separate infrastructure located entirely within the EU, with the first region in Brandenburg, Germany, operating independently from existing AWS regions and using an EU-focused operational model [@awsEuropeanSovereignCloud2026]. Microsoft frames its Sovereign Cloud around public sovereign regions and private or disconnected environments with enhanced controls [@microsoftSovereignCloud2026]. Google Distributed Cloud emphasizes on-premises and edge deployments for regulatory, local-processing, survivability, and low-latency needs, including air-gapped options that do not require connectivity to Google Cloud or the public internet [@googleDistributedCloud2026].
+AWS’s European Sovereign Cloud, for example, is described as physically and logically separate infrastructure located entirely within the EU, with the first region in Brandenburg, Germany, operating independently from existing AWS regions and using an EU-focused operational model [@amazonwebservices2026a]. Microsoft frames its Sovereign Cloud around public sovereign regions and private or disconnected environments with enhanced controls [@microsoftlearn2026a]. Google Distributed Cloud emphasizes on-premises and edge deployments for regulatory, local-processing, survivability, and low-latency needs, including air-gapped options that do not require connectivity to Google Cloud or the public internet [@googlecloud2026].
 
 These are not identical sovereignty models. They instantiate different sheaves. A sovereign hyperscaler region, a national partner cloud, an on-premises air-gapped stack, and a EuroHPC AI Factory may all satisfy some local goals while failing others. The sheaf formalism is useful precisely because it does not reduce them to a binary sovereign/non-sovereign label.
 
@@ -959,19 +730,19 @@ A sovereign cloud may require that privileged operations, support, and incident 
 
 ### 7.5 Exit boundary: portability and switching maps
 
-The EU Data Act, applicable from 12 September 2025, forms part of a policy push toward data access, cloud contract transparency, and reduced lock-in [@europeanCommissionDataAct2026]. In sheaf terms, switching rights are boundary maps that make it possible to transport local state from one provider stalk to another without losing semantics. Poor portability is high sheaf curvature: the data may exist, but it cannot be consistently re-expressed elsewhere.
+The EU Data Act, applicable from 12 September 2025, forms part of a policy push toward data access, cloud contract transparency, and reduced lock-in [@europeancommission2026b]. In sheaf terms, switching rights are boundary maps that make it possible to transport local state from one provider stalk to another without losing semantics. Poor portability is high sheaf curvature: the data may exist, but it cannot be consistently re-expressed elsewhere.
 
 ## 8. Current geopolitical-infrastructural frontiers
 
 ### 8.1 From data residency to control-plane sovereignty
 
-Early data-sovereignty debates often focused on where data is stored [@petersonGondreeBeverly2011]. That remains important, but it is insufficient. Sovereignty now increasingly concerns management authority: who can administer, patch, observe, suspend, decrypt, recover, and evidence a service under crisis conditions. The emerging “control-plane sovereignty” literature argues that sovereignty must be understood as enforceable control over governance, privileged access, cryptographic trust, observability, incident response, and recovery across federated environments [@starkWilkie2026].
+Early data-sovereignty debates often focused on where data is stored [@peterson2011]. That remains important, but it is insufficient. Sovereignty now increasingly concerns management authority: who can administer, patch, observe, suspend, decrypt, recover, and evidence a service under crisis conditions. The emerging “control-plane sovereignty” literature argues that sovereignty must be understood as enforceable control over governance, privileged access, cryptographic trust, observability, incident response, and recovery across federated environments [@stark2026].
 
 A sheaf model captures this shift naturally. Data location is one coordinate. Control-plane authority is another. If the restriction maps forget control-plane dependencies, the model will falsely report low energy. A serious sovereign sheaf must include management-plane, update-plane, identity-plane, and telemetry-plane variables.
 
 ### 8.2 AI factories and localized accelerator sovereignty
 
-AI has made compute itself politically visible. Training frontier models and serving high-volume inference require accelerators, power, cooling, networking, data pipelines, and specialized personnel. The European Commission’s Cloud and AI Development Act explicitly links cloud, AI, data-center capacity, open source, procurement, and sovereignty [@europeanCommissionCADA2026]. EuroHPC’s AI Factories are described as ecosystems built around AI-optimized supercomputers, offering compute resources and support for European industry and scientific users [@eurohpcAiFactories2026].
+AI has made compute itself politically visible. Training frontier models and serving high-volume inference require accelerators, power, cooling, networking, data pipelines, and specialized personnel. The European Commission’s Cloud and AI Development Act explicitly links cloud, AI, data-center capacity, open source, procurement, and sovereignty [@europeancommission2026]. EuroHPC’s AI Factories are described as ecosystems built around AI-optimized supercomputers, offering compute resources and support for European industry and scientific users [@europeanhighperformancecomputingjointundertaking2026].
 
 A sheaf model of AI sovereignty must include not only where model weights reside but also:
 
@@ -987,13 +758,13 @@ AI sovereignty is therefore not a scalar “local model” property. It is a she
 
 ### 8.3 Sovereign cloud procurement as metric design
 
-The European Commission’s Sovereign Cloud Framework translates sovereignty into measurable procurement criteria and was used in an April 2026 EUR 180 million sovereign-cloud contract for EU institutions [@europeanCommissionCloudFramework2026]. Whether or not one agrees with a particular scoring scheme, the conceptual move is sheaf-like: sovereignty becomes a family of objectives across legal, operational, strategic, environmental, supply-chain, openness, security, and compliance dimensions.
+The European Commission’s Sovereign Cloud Framework translates sovereignty into measurable procurement criteria and was used in an April 2026 EUR 180 million sovereign-cloud contract for EU institutions [@europeancommission2026a]. Whether or not one agrees with a particular scoring scheme, the conceptual move is sheaf-like: sovereignty becomes a family of objectives across legal, operational, strategic, environmental, supply-chain, openness, security, and compliance dimensions.
 
 The research challenge is to move from checklists to operators. A procurement framework gives dimensions. A sheaf Laplacian gives a way to ask how dimensions interact across an architecture. A provider might satisfy each criterion locally but still fail globally because the restrictions around a dependency loop do not commute.
 
 ### 8.4 Air-gapped and disconnected cloud
 
-Air-gapped cloud is a frontier because it reverses the historical cloud direction. Instead of moving workloads into a global provider region, cloud-like tooling is moved into a sovereign or disconnected environment. Google’s Distributed Cloud air-gapped offering, for example, is framed around isolation, local processing, survivability, and no need for public-internet connectivity [@googleDistributedCloud2026]. Microsoft also describes private, disconnected environments as part of its sovereignty spectrum [@microsoftSovereignCloud2026].
+Air-gapped cloud is a frontier because it reverses the historical cloud direction. Instead of moving workloads into a global provider region, cloud-like tooling is moved into a sovereign or disconnected environment. Google’s Distributed Cloud air-gapped offering, for example, is framed around isolation, local processing, survivability, and no need for public-internet connectivity [@googlecloud2026]. Microsoft also describes private, disconnected environments as part of its sovereignty spectrum [@microsoftlearn2026a].
 
 In sheaf terms, this is not an absence of cloud. It is a nontrivial local system with restricted boundary maps. The open problem is how to preserve enough compatibility for software maintenance, security updates, and workload portability without reintroducing the very remote dependencies that the air gap was meant to remove.
 
@@ -1003,7 +774,7 @@ In sheaf terms, this is not an absence of cloud. It is a nontrivial local system
 
 In applications, the hard part is rarely writing down \(\Delta_{\mathcal{F}}\) once \(\mathcal{F}\) is known. The hard part is learning or validating the sheaf. Which variables belong in which stalks? Which edge maps represent the real interface? Which restrictions are policy claims and which are empirically observed?
 
-Learning sheaf Laplacians from smooth signals initiated one route: infer a sheaf structure from data assumed to be smooth with respect to an unknown sheaf [@hansenGhrist2019Learn]. Later work on neural sheaf diffusion and restriction-map optimization extends this idea into representation learning [@bodnar2022; @diNino2025]. For sovereign compute, the analogous data could include latency telemetry, access logs, audit evidence, incident response records, dependency manifests, key-management events, egress flows, and procurement attestations.
+Learning sheaf Laplacians from smooth signals initiated one route: infer a sheaf structure from data assumed to be smooth with respect to an unknown sheaf [@hansen2019Learn]. Later work on neural sheaf diffusion and restriction-map optimization extends this idea into representation learning [@bodnar2022; @dinino2025]. For sovereign compute, the analogous data could include latency telemetry, access logs, audit evidence, incident response records, dependency manifests, key-management events, egress flows, and procurement attestations.
 
 The warning is that learned maps may reproduce hegemonic assumptions. If the training data comes from a hyperscale provider’s existing control plane, the learned sheaf may treat the provider’s coordinate system as natural. Sovereign sheaf learning must therefore distinguish empirical regularity from political legitimacy.
 
@@ -1011,13 +782,13 @@ The warning is that learned maps may reproduce hegemonic assumptions. If the tra
 
 Cloud infrastructure is directional. Data export differs from data import. Administrative access differs from customer access. Patch flow differs from telemetry flow. Legal compulsion differs from voluntary service invocation. An undirected graph is a simplification.
 
-Directed sheaf Laplacians, connection Laplacians, and hypergraph sheaf methods are therefore central frontiers. Hypergraph neural sheaf diffusion and symmetric-simplicial-set approaches attempt to represent higher-order interactions rather than only pairwise edges [@choiPark2025]. For sovereign compute, this is crucial: a dependency on a GPU vendor, firmware signing key, cloud marketplace image, identity provider, and regulator is not five independent edges. It is one higher-order institutional cell.
+Directed sheaf Laplacians, connection Laplacians, and hypergraph sheaf methods are therefore central frontiers. Hypergraph neural sheaf diffusion and symmetric-simplicial-set approaches attempt to represent higher-order interactions rather than only pairwise edges [@choi2025]. For sovereign compute, this is crucial: a dependency on a GPU vendor, firmware signing key, cloud marketplace image, identity provider, and regulator is not five independent edges. It is one higher-order institutional cell.
 
 ### 9.3 Non-vector-valued sheaves
 
 Many sovereignty variables are not vectors. Legal assurance levels may be ordered categories. Security labels form lattices. Access policies are logical formulas. Procurement constraints are partially ordered. Data-classification regimes often have joins and meets: combining two datasets may raise classification, while redaction may lower it.
 
-Ghrist and Riess’s Tarski Laplacian for cellular sheaves of lattices is important because it moves beyond vector-space assumptions while preserving a Laplacian-like fixed-point theory [@ghristRiess2022]. A sovereign cloud model likely needs both linear and order-theoretic parts: continuous telemetry for latency and capacity, lattice-valued stalks for classification and access control, categorical stalks for legal regimes, and probabilistic stalks for risk.
+Ghrist and Riess’s Tarski Laplacian for cellular sheaves of lattices is important because it moves beyond vector-space assumptions while preserving a Laplacian-like fixed-point theory [@ghrist2022]. A sovereign cloud model likely needs both linear and order-theoretic parts: continuous telemetry for latency and capacity, lattice-valued stalks for classification and access control, categorical stalks for legal regimes, and probabilistic stalks for risk.
 
 ### 9.4 Sheaf PDEs and control
 
@@ -1135,7 +906,27 @@ Fourth, fragmentation has costs. A highly nontrivial sheaf may protect autonomy 
 
 Finally, “localized digital fortresses” are not necessarily post-globalist in the sense of ending interdependence. They are post-globalist in the narrower sense that interdependence must now be negotiated through visible boundary maps rather than hidden behind a universal cloud abstraction.
 
-## 12. Conclusion: the Laplacian of autonomy
+## 12. Formalization boundary for federated operations
+
+This note supplies a modeling direction, not a theorem that a website, a
+federation, or a host fleet is already a Grothendieck site. A deployment may be
+modeled as a site only after it declares a small category of resources and
+interface morphisms plus a Grothendieck topology whose covering sieves satisfy
+maximality, pullback stability, and transitivity [@grothendieck1957]. A
+website's URLs, hyperlinks, or federation endpoints do not themselves supply
+those data.
+
+Likewise, a host-and-agent graph becomes a cellular-sheaf model only after it
+declares a finite cell complex, stalks, and restriction maps for every
+incidence. Computing a degree-zero sheaf Laplacian further requires the
+coboundary and the inner products that define its adjoint [@hansen2019]. A
+persistent or ephemeral host is therefore an operational lifecycle attribute
+that may enter a stalk; it is not proof of a site, a sheaf, or a spectral
+property. Any proposal connecting the Group's bilattice-valued fiber algebras
+to this model remains a conjectural composite until it specifies the relevant
+functors, restriction maps, and compatibility result.
+
+## 13. Conclusion: the Laplacian of autonomy
 
 The myth of the borderless cloud dissolves once we ask what must be true for local infrastructures to glue. A cloud region is a physical site. A control plane is an authority structure. An encryption key is a political object. A latency target is a territorial compromise. A data center is a node in energy, water, labor, chip, legal, and network systems. The cloud is not above geography; it is geography made programmable.
 
@@ -1145,4 +936,5 @@ For centralized cloud hegemony, the ideal is a trivial sheaf: one grammar, one p
 
 ## References
 
-The bibliography is embedded above as CSL-compatible YAML frontmatter. This file is ready for Pandoc-style citation processing.
+The bibliography is a citekey-keyed reference map in the frontmatter and can be
+projected to CSL-JSON for citation processing.
