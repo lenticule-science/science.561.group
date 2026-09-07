@@ -57,7 +57,7 @@ test("/ns/term and /ns/predicate are reachable without a session, and use l-spac
   assert.equal(term.status, 200);
   const document = await term.json();
   assert.equal(document["@id"], "https://l-space.561.group/ns/term/example-term");
-  assert.equal(document["https://l-space.561.group/ns/predicate/requires"], "something-else");
+  assert.deepEqual(document["https://l-space.561.group/ns/predicate/requires"], { "@id": "https://l-space.561.group/ns/term/something-else" });
   assert.equal(JSON.stringify(document).includes("ni:"), false);
 
   const predicate = await worker.fetch(request("/ns/predicate/requires", { headers: { accept: "application/ld+json" } }), env);

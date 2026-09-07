@@ -12,7 +12,7 @@
     "@red-cup-engineering/drew": "0.1.1",
     "@red-cup-engineering/education-platform-service": "0.2.4",
     "@red-cup-engineering/exchange-google-callback-service": "0.1.2",
-    "@red-cup-engineering/geode": "0.1.12",
+    "@red-cup-engineering/geode": "0.1.13",
     "@red-cup-engineering/judge-principal-admission-service": "0.1.1",
     "@red-cup-engineering/oauth-services-section": "0.1.0",
     "@red-cup-engineering/project-web-feed-artifacts-service": "0.1.0",
