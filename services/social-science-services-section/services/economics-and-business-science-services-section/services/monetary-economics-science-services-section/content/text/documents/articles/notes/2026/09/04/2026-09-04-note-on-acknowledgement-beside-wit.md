@@ -160,7 +160,7 @@ rail's own `admitWorkDischarge`
 literal replay guard: a discharge's `id` keys its append, and replaying
 the same discharge is a no-op — "`status: admission.appended === 0 ?
 "already-admitted" : "admitted"`" — the CLI over it
-([`admit-work-discharge.mjs`](../../../../../../../../../../../../../../../561-group-services-section/services/561-group-engineering-services-section/services/561-group-computer-engineering-services-section/services/computer-machine-services-section/services/persistent-computer-machine-services-section/services/bare-cedar-fog-services-section/services/bare-cedar-fog-inference-services-section/services/bare-cedar-fog-claude-services-section/scripts/admit-work-discharge.mjs)) defaults
+([`admit-work-discharge.mjs`](../../../../../../../../../../../../../../../561-group-services-section/services/561-group-computer-services-section/services/computer-machine-services-section/services/persistent-computer-machine-services-section/services/bare-cedar-fog-services-section/services/bare-cedar-fog-inference-services-section/services/bare-cedar-fog-claude-services-section/scripts/admit-work-discharge.mjs)) defaults
 that `id` deterministically from the scope being discharged
 (`discharge-${scope}`), so a duplicate discharge attempt is
 recognized as the same event rather than double-counted, precisely the

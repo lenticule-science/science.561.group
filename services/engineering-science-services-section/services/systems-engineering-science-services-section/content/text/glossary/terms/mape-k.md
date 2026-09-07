@@ -38,7 +38,7 @@ disturbances the Monitor stage can report.
 
 A live MAPE-K loop already runs beneath `561-group-services-section`, in
 [bare-cedar-fog-codex's agent
-skills](../../../../../../../../../561-group-services-section/services/561-group-engineering-services-section/services/561-group-computer-engineering-services-section/services/computer-machine-services-section/services/persistent-computer-machine-services-section/services/bare-cedar-fog-services-section/services/bare-cedar-fog-inference-services-section/services/bare-cedar-fog-codex-services-section/agents/skills):
+skills](../../../../../../../../../561-group-services-section/services/561-group-computer-services-section/services/computer-machine-services-section/services/persistent-computer-machine-services-section/services/bare-cedar-fog-services-section/services/bare-cedar-fog-inference-services-section/services/bare-cedar-fog-codex-services-section/agents/skills):
 `monitor-*`, `analyze-*`, `plan-*`, and `execute-*` skills, projected from a
 JSON registry of typed knowledge classes and stage dependencies. That loop
 governs the Codex actuation office's work — evaluating evidence, planning
