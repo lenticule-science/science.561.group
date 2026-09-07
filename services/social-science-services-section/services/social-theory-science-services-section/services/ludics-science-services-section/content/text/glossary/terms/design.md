@@ -50,6 +50,6 @@ prior to formulas in ludics' order of explanation, inverting the usual
 proof-theoretic order in which a proof is always a proof *of* something
 already given.
 
-See [daimon](./daimon.md) for the specific terminal action, unique to
+See [daimon](../../documents/terms/daimon.md) for the specific terminal action, unique to
 ludics, that lets a design end a branch without having answered every
 possible challenge.
