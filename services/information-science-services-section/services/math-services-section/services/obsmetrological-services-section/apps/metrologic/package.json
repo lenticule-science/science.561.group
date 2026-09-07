@@ -1,6 +1,6 @@
 {
   "name": "@lenticule-science/metrologic",
-  "version": "0.2.0",
+  "version": "0.2.3",
   "type": "module",
   "description": "Metrologic: a collection of four-valued evidence, graph, exact-arithmetic, fixed-point, and related mathematical utilities, addressed by explicit subpath exports. Import the four-valued evidence operations at @lenticule-science/metrologic/bilattice, graph and temporal obstruction operations at @lenticule-science/metrologic/obstruction, exact arithmetic at @lenticule-science/metrologic/number, and the other focused surfaces only when needed.",
   "keywords": [

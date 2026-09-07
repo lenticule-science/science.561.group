@@ -11,6 +11,8 @@ export type Natural = { readonly __natural: unique symbol };
 export type Integer = { readonly __integer: unique symbol };
 /** A rational — a canonical ratio num/den of integers, den > 0. */
 export type Rational = { readonly __rational: unique symbol };
+/** A reduced arbitrary-precision host-wire ratio. */
+export interface HostRatio { readonly numerator: string; readonly denominator: string; }
 /** A matrix of integers — a list of rows. */
 export type Matrix = Integer[][];
 
@@ -146,6 +148,20 @@ export namespace rational {
   export function fromRatio(n: number, d: number): Rational;
   /** The host floating value of q (a boundary read). */
   export function toNumber(q: Rational): number;
+  /** Constructs a reduced arbitrary-precision host-wire ratio. */
+  export function hostRatio(numerator: string | bigint | number, denominator?: string | bigint | number): HostRatio;
+  /** Validates an already-canonical host-wire ratio. */
+  export function admitHostRatio(value: HostRatio): HostRatio;
+  /** Constructs a nonnegative host-wire ratio. */
+  export function nonnegativeHostRatio(numerator: string | bigint | number, denominator?: string | bigint | number): HostRatio;
+  /** Constructs a positive host-wire ratio. */
+  export function positiveHostRatio(numerator: string | bigint | number, denominator?: string | bigint | number): HostRatio;
+  /** Adds two host-wire ratios exactly. */
+  export function addHostRatio(left: HostRatio, right: HostRatio): HostRatio;
+  /** Subtracts two host-wire ratios exactly. */
+  export function subtractHostRatio(left: HostRatio, right: HostRatio): HostRatio;
+  /** Compares two host-wire ratios exactly. */
+  export function compareHostRatio(left: HostRatio, right: HostRatio): -1 | 0 | 1;
 }
 
 // ── matrix — the exact integer-matrix layer over ℤ (det, charPoly, Smith normal form, rank) ──────────
