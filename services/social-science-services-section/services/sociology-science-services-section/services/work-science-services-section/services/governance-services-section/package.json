@@ -1,7 +1,25 @@
 {
   "name": "@lenticule-science/governance-services-section",
-  "version": "0.1.0",
+  "version": "0.1.4",
   "type": "module",
   "description": "Red Cup Science service section for governance.",
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "exports": {
+    ".": {
+      "types": "./src/corporate-authority.d.mts",
+      "import": "./src/corporate-authority.mjs"
+    }
+  },
+  "files": [
+    "src",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "@red-cup-engineering/relating": "0.1.9"
+  }
 }
