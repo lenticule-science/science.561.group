@@ -1,16 +1,22 @@
 ---
-id: procedure
-description: "Work whose meaning is settled but whose execution branches on conditions — you know what you're producing but the path depends on what you encounter."
-aliases: [procedures]
-meaning-settled: true
-execution-settled: false
-resolves-to: process
-contrasts-with: process, inquiry, derivation
-composes-into: workflow
-instance-of: work
-date-created: 2026-03-29
+aliases:
+  - procedures
+description: Work whose meaning is settled but whose execution branches on conditions — you know what you're producing but the path depends on what you encounter.
+identity: procedure
+name: Procedure
+provenance:
+  date-created: 2026-03-29
+relations:
+  instance-of: work
+  contrasts-with:
+    - process
+    - derivation
+    - inquiry
+  requires: flatfile-agent-resource-system-skill-result
+  properties:
+    - meaning-settled=true
+    - execution-settled=false
 ---
-
 A procedure is work whose meaning is settled but whose execution path is not. You know what you are trying to produce. You do not know which steps you will take to produce it, because that depends on conditions you evaluate as you go.
 
 A procedure branches. At each decision point, it inspects the current state, evaluates a condition, and routes to the appropriate next step. The output type is fixed — every branch produces a result of the same kind. But which branch fires depends on the input and the state encountered during execution.

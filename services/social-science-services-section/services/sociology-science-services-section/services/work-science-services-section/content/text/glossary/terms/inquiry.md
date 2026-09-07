@@ -1,16 +1,24 @@
 ---
-id: inquiry
-description: "Work where neither meaning nor execution is settled — open exploration directed by a question, not a specification."
-aliases: [inquiries, investigation, research]
-meaning-settled: false
-execution-settled: false
-resolves-to: procedure, derivation, process
-contrasts-with: process, procedure, derivation
-traditions: dewey, peirce, hintikka
-instance-of: work
-date-created: 2026-03-29
+aliases:
+  - inquiries
+  - investigation
+  - research
+description: Work where neither meaning nor execution is settled — open exploration directed by a question, not a specification.
+identity: inquiry
+name: Inquiry
+provenance:
+  date-created: 2026-03-29
+relations:
+  instance-of: work
+  contrasts-with:
+    - process
+    - procedure
+    - derivation
+  requires: flatfile-agent-resource-system-skill-result
+  properties:
+    - meaning-settled=false
+    - execution-settled=false
 ---
-
 An inquiry is work where neither the meaning nor the execution is settled. You do not fully know what you are looking for, and you do not know how to find it. The work is directed by a question, not by a specification.
 
 Inquiry is the most open form of work. A [process](./process.md) knows both what and how. A [procedure](./procedure.md) knows what but branches on how. A derivation knows how but not yet what it will produce. An inquiry knows neither — it is exploring.

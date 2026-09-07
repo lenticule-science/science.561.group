@@ -1,16 +1,22 @@
 ---
-id: derivation
-description: "Work whose execution is settled but whose meaning is not — follows fixed rules to produce a judgment whose content cannot be predicted from the input alone."
-aliases: [derivations]
-meaning-settled: false
-execution-settled: true
-resolves-to: process
-contrasts-with: process, procedure, inquiry
-output: judgment
-instance-of: work
-date-created: 2026-03-29
+aliases:
+  - derivations
+description: Work whose execution is settled but whose meaning is not — follows fixed rules to produce a judgment whose content cannot be predicted from the input alone.
+identity: derivation
+name: Derivation
+provenance:
+  date-created: 2026-03-29
+relations:
+  instance-of: work
+  contrasts-with:
+    - process
+    - procedure
+    - inquiry
+  requires: flatfile-agent-resource-system-skill-result
+  properties:
+    - meaning-settled=false
+    - execution-settled=true
 ---
-
 A derivation is work whose execution path is settled but whose meaning is not. You know exactly what steps to follow. You do not know what the steps will produce until you follow them. The output is a judgment — a named, typed result whose content could not have been predicted from the input alone.
 
 A derivation follows fixed inference rules. The rules are explicit and fully determined — there are no branches, no conditions to evaluate, no decisions to make about which rule to apply next. The rules are applied in order. But the result depends on the input in a way that cannot be shortcut: you must actually run the derivation to see what comes out.
