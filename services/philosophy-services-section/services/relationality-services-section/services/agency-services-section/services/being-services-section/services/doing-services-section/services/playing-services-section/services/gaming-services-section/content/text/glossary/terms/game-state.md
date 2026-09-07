@@ -6,6 +6,8 @@ aliases:
   - "game-state"
 date-created: 2026-03-06
 tags: []
+part-of: game
+controlled-by: rules
 references:
   osborne-rubinstein1994:
     authors: ["Martin J. Osborne", "Ariel Rubinstein"]

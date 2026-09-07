@@ -5,6 +5,9 @@ aliases:
   - "rule"
 date-created: 2026-03-06
 tags: []
+governs:
+  - game
+  - game-state
 references:
   suits1978:
     authors: ["Bernard Suits"]

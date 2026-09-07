@@ -5,6 +5,10 @@ aliases:
   - "gaming"
 date-created: 2026-08-30
 tags: []
+specialization: playing
+components:
+  - game
+  - player
 references:
   huizinga1938:
     authors: ["Johan Huizinga"]

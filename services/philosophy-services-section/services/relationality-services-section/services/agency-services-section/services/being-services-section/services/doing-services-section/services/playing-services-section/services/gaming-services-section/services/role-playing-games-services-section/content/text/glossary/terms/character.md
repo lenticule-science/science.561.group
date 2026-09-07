@@ -4,6 +4,8 @@ aliases:
   - "character"
 date-created: 2026-01-01
 tags: []
+mediated-by: player
+acts-on: game-state
 ---
 
 A character is the fictional persona a player portrays in a [role-playing game](../../../../README.md). Characters are the primary interface between player and fiction: the player decides what the character attempts, and the game's rules and [game master](./game-master.md) determine what happens as a result.

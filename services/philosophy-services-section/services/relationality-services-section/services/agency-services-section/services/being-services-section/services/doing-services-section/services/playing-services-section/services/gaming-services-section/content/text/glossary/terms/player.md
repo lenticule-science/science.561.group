@@ -5,6 +5,8 @@ aliases:
   - "player"
 date-created: 2026-03-06
 tags: []
+acts-on: game-state
+requires: rules
 references:
   salen-zimmerman2004:
     authors: ["Katie Salen", "Eric Zimmerman"]

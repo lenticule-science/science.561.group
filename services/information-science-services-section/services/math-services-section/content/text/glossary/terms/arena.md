@@ -1,6 +1,7 @@
 ---
 description: "An arena is a finite causal event structure whose events carry polarity and four-valued evidence, organized as a Grothendieck site whose local sections glue by the sheaf condition and closed by a settlement operator into one coherent object over which strategies are defined. It generalizes the classical Hyland–Ong game-semantics arena, which is recovered exactly when every finite configuration collapses to a single linearly ordered sequence of justified moves."
 date-created: 2026-08-21
+uses: strategy
 
 ---
 

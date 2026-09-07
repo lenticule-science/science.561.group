@@ -6,6 +6,12 @@ aliases:
   - "games"
 date-created: 2026-08-30
 tags: []
+components:
+  - rules
+  - player
+  - game-state
+  - mechanic
+  - win-condition
 references:
   suits1978:
     authors: ["Bernard Suits"]
@@ -15,11 +21,10 @@ references:
     note: "Game-playing as the voluntary attempt to overcome unnecessary obstacles; the constitutive-rules analysis."
   caillois2001:
     authors: ["Roger Caillois"]
-    translator: "Meyer Barash"
     title: "Man, Play and Games"
     publication: "University of Illinois Press"
     year: 2001
-    note: "English translation of Les Jeux et les hommes (1958); games classified by agon, alea, mimicry, ilinx."
+    note: "English translation by Meyer Barash of Les Jeux et les hommes (1958); games classified by agon, alea, mimicry, ilinx."
   salen-zimmerman2004:
     authors: ["Katie Salen", "Eric Zimmerman"]
     title: "Rules of Play: Game Design Fundamentals"

@@ -5,6 +5,12 @@ aliases:
   - "playing"
 date-created: 2026-08-30
 tags: []
+bounded-by:
+  - arena
+acts-through:
+  - design
+uses:
+  - strategy
 references:
   girard2001:
     authors: ["Jean-Yves Girard"]
