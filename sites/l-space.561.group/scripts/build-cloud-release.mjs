@@ -17,6 +17,23 @@ const publicRoot = resolve(vaultRoot, "public");
 
 const digest = (value) => createHash("sha256").update(value).digest("hex");
 
+// CI has a fixed memory envelope. These stderr-only markers identify the phase
+// holding memory when a release cannot complete without changing release bytes.
+const buildStartedAt = process.hrtime.bigint();
+function observeBuildPhase(phase) {
+  const memory = process.memoryUsage();
+  const elapsedMilliseconds = Number(process.hrtime.bigint() - buildStartedAt) / 1_000_000;
+  process.stderr.write(`${JSON.stringify({
+    type: "LSpaceCloudReleaseBuildObservation",
+    phase,
+    elapsedMilliseconds: Math.round(elapsedMilliseconds),
+    rssBytes: memory.rss,
+    heapUsedBytes: memory.heapUsed,
+    heapTotalBytes: memory.heapTotal,
+    externalBytes: memory.external,
+  })}\n`);
+}
+
 /** Canonical bytes: sorted keys, so an unchanged corpus produces an unchanged release. */
 const json = (value) => `${canonicalStringify(value)}\n`;
 
@@ -64,17 +81,21 @@ function rfc3339(value) {
 }
 
 const config = validateLSpaceConfig();
+observeBuildPhase("validated-config");
 await rm(outputRoot, { recursive: true, force: true });
 await mkdir(resolve(vaultRoot, "rooms"), { recursive: true });
 await mkdir(resolve(publicRoot, "rooms"), { recursive: true });
 await mkdir(viewRoot, { recursive: true });
 await cp(resolve(appRoot, "public"), outputRoot, { recursive: true });
+observeBuildPhase("prepared-output");
 
 const vault = await compileLSpace();
 const wing = vault.wings[0];
+observeBuildPhase("compiled-vault");
 
 // A compiled world that fails its own schema is a release that must not ship.
 validateWorld(wing.world);
+observeBuildPhase("validated-world");
 
 const gateByRoom = new Map(wing.passage.gates.map((gate) => [gate.roomId, gate]));
 const cardsByRoom = new Map(wing.world.rooms.map((room) => [room.id, []]));
@@ -84,12 +105,14 @@ for (const door of wing.world.doors) {
   doorsByRoom.get(door.from)?.push({ direction: "outgoing", ...door });
   doorsByRoom.get(door.to)?.push({ direction: "incoming", ...door });
 }
+observeBuildPhase("indexed-world-links");
 
 const index = [];
 const publicIndex = [];
 const publicRooms = [];
 const keyByRoomId = new Map();
 
+observeBuildPhase("serializing-rooms");
 for (let offset = 0; offset < wing.world.rooms.length; offset += 1) {
   const room = wing.world.rooms[offset];
   const key = digest(room.id);
@@ -129,6 +152,7 @@ for (let offset = 0; offset < wing.world.rooms.length; offset += 1) {
     await writeFile(resolve(publicRoot, "rooms", `${key}.json`), json(detail));
   }
 }
+observeBuildPhase("serialized-rooms");
 
 const indexDocument = {
   schemaVersion: "l-space-index/v1",
@@ -137,10 +161,12 @@ const indexDocument = {
   rooms: index,
 };
 const indexBytes = json(indexDocument);
+observeBuildPhase("serialized-index");
 const relationLedger = await projectLSpaceRelationLedger({
   root: config.wings[0].root,
   rooms: wing.world.rooms,
 });
+observeBuildPhase("projected-relation-ledger");
 const release = digest(json({
   schemaVersion: "l-space-release-identity/v2",
   index: indexDocument,
@@ -148,8 +174,10 @@ const release = digest(json({
   doorDigest: digest(json(wing.world.doors)),
   relationLedgerDigest: digest(json(relationLedger)),
 }));
+observeBuildPhase("derived-release-identity");
 const generatedAt = new Date().toISOString();
 const releaseGraph = projectLSpaceReleaseGraph({ release, generatedAt, wing, ledger: relationLedger });
+observeBuildPhase("projected-release-graph");
 
 // Victor observes the same admitted rooms upstream of VaultMaze. The complete
 // address-preserving projection is an authenticated release artifact; the
@@ -168,6 +196,7 @@ const victorRelease = createVaultMazeVictorReleaseFromResources({
   })),
   workspaceGraphShardSize: 32,
 });
+observeBuildPhase("projected-victor-release");
 const victorSummary = Object.freeze({
   schemaVersion: victorRelease.schemaVersion,
   catalogHash: victorRelease.catalog.hash,
@@ -200,6 +229,7 @@ const hallsDocument = {
   counts: { halls: halls.length, stable: halls.filter((hall) => hall.stable).length },
   halls,
 };
+observeBuildPhase("projected-halls");
 
 const collectionCounts = new Map();
 for (const room of index) collectionCounts.set(room.collection, (collectionCounts.get(room.collection) ?? 0) + 1);
@@ -293,6 +323,7 @@ const feeds = projectWebFeedArtifacts({
   updated: generatedAt,
   paths: { rss: "feed.xml", atom: "feed.atom", json: "feed.json" },
 });
+observeBuildPhase("projected-public-surface");
 
 const manifest = {
   schemaVersion: "l-space-cloud-release/v1",
@@ -337,5 +368,6 @@ await Promise.all([
   })),
   ...feeds.artifacts.map((artifact) => writeFile(resolve(publicRoot, artifact.path), artifact.body)),
 ]);
+observeBuildPhase("wrote-release");
 
 console.log(canonicalStringify(manifest));
