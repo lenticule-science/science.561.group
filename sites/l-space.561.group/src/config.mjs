@@ -140,7 +140,7 @@ export const lSpaceConfig = Object.freeze({
       tufte: Object.freeze({ strategy: "tiling-grid", columns: 96 }),
       excludeGlobs: Object.freeze(["legacy", "triage", "private", "dev", "test", "fixtures", "dist"]),
       attributeFields: Object.freeze([
-        "science-owner", "type", "kind", "tags", "cites", "relates-to",
+        "science-owner", "type", "kind", "tags", "keywords", "cites", "relates-to", "related-terms", "related-texts",
       ]),
     }),
   ]),

@@ -2,6 +2,8 @@
 description: The execution layer that constructs agent context, invokes models, selects or receives actions, and executes authorized tools.
 identity: agent-runtime
 name: agent-runtime
+keywords:
+  - agent-orchestration
 provenance:
   date-created: 2026-08-29
   sources:

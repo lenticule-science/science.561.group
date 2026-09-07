@@ -3,6 +3,13 @@ name: theory-of-flatfile-agentic-drone-resource-system-swarms-may-2026
 description: Survey of prior thought, 561-native and informant, on the formalization of swarms of flatfile agentic drone resource systems — what a FARS-shaped polity contributes that conventional multi-agent and swarm-intelligence framings lack, and where the polity's own predicated-drone-swarm sub-theory already takes the synthesis.
 status: draft
 date-modified: 2026-05-15
+keywords:
+  - agentic-orchestration
+  - drone-swarm
+  - bounded-autonomy
+  - capability-non-amplification
+  - resource-budget
+  - deterministic-computation
 ---
 
 # Theory of flatfile agentic drone resource system swarms

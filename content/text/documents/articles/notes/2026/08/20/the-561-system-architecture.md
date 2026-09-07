@@ -17,6 +17,12 @@ related-texts:
   - model-training-as-algebraic-closure
   - the-adjoint-structure-of-predication-on-bilattice-valued-fibers
   - continuous-learning-in-agentic-harnesses
+keywords:
+  - agentic-orchestration
+  - multi-agent-system
+  - deterministic-computation
+  - language-model-inference
+  - capability-cell
 sources:
   - "Belnap, N. D. (1977). A Useful Four-Valued Logic. Modern Uses of Multiple-Valued Logic, Reidel, 5–37."
   - "Busaniche, M. & Cignoli, R. (2014). The Subvariety of Commutative Residuated Lattices Represented by Twist-Products. Algebra Universalis, 71, 5–22."

@@ -5,6 +5,8 @@ aliases:
 description: A computational system that acts on its environment through tool use, pursues goals through multi-step planning, and maintains state across interactions.
 identity: agentic-system
 name: agentic-system
+keywords:
+  - agent-orchestration
 provenance:
   date-created: 2026-03-29
   date-modified: 2026-03-29

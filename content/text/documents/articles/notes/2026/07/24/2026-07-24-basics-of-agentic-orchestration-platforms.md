@@ -7,6 +7,9 @@ keywords:
   - agentic-orchestration
   - verification
   - capability-cells
+  - deterministic-computation
+  - language-model-inference
+  - independent-verification
 status: rewritten-2026-07-26
 declared-by: claude-interactive-session-supplying-lenticule-science
 ---
