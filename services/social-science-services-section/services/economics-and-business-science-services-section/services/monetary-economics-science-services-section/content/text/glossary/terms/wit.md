@@ -1,19 +1,19 @@
 ---
+description: "The unit of witnessed change: one witnessed distinction-step in the FOUR knowledge order. Its contractual long form is the witness bit; wit is the unit name in prices, ledgers, and speech."
+identity: wit
 name: Wit
-description: The unit of witnessed change -- one witnessed distinction-step in the FOUR knowledge order. The contractual long form is the witness bit; the wit is its unit name in prices, ledgers, and speech.
-domain: economy
-scheme: distinction-denomination
-prior-art: "witness-bit-commodity-assay-service contract (finance-and-market-services-section); Obsmetrologia LandauerEntropy/AntiLandauerEntropy modules and the index balance H0 - H1 = chi; the local proof law pricing Quot.sound as one unpriced collapsed distinction; Spencer-Brown's mark as the library's sole free primitive"
-authors:
-  - Claude Opus
-collection-provenance:
-  collected-by: claude-sonnet-5/money-science-section-standup
-  collected-on: 2026-08-21
-  collected-for: money-science-services-section standup (task money-science)
-  source-path: "lib/emsenn/services/561-group/services/561-group-services-section/services/561-group-operations-services-section/services/561-group-enterprise-services-section/services/561-group-board-of-directors/lib/legacy/2026-08-03-executive-office/content/glossary/terms/wit.md"
-  note: "Frozen legacy dump under lib/legacy/2026-08-03-executive-office; copied verbatim, source stays frozen. This is the estate's prior 'Landauer entropy as currency' thought: a wit is priced in Landauer erasure cost (kT ln 2 per bit), independently arriving at 'money is a witnessed distinction-step' months before the 2026-08-21 founding note arrived at 'money is witness-deletion.'"
+provenance:
+  domain: economy
+  scheme: distinction-denomination
+  authors:
+    - Claude Opus
+  sources:
+    - "prior-art: witness-bit-commodity-assay-service contract (finance-and-market-services-section); Obsmetrologia LandauerEntropy/AntiLandauerEntropy modules and the index balance H0 - H1 = chi; the local proof law pricing Quot.sound as one unpriced collapsed distinction; Spencer-Brown’s mark as the library’s sole free primitive"
+    - "collection-provenance: collected-by=claude-sonnet-5/money-science-section-standup; collected-on=2026-08-21; collected-for=money-science-services-section standup (task money-science); source-path=lib/emsenn/services/561-group/services/561-group-services-section/services/561-group-operations-services-section/services/561-group-enterprise-services-section/services/561-group-board-of-directors/lib/legacy/2026-08-03-executive-office/content/glossary/terms/wit.md; note=Frozen legacy dump under lib/legacy/2026-08-03-executive-office; copied verbatim, source stays frozen. This is the estate’s prior Landauer entropy as currency thought: a wit is priced in Landauer erasure cost (kT ln 2 per bit), independently arriving at money is a witnessed distinction-step months before the 2026-08-21 founding note arrived at money is witness-deletion."
+relations:
+  requires:
+    - tally
 ---
-
 A wit is the unit of witnessed change: one witnessed distinction-step in the FOUR knowledge
 order (bottom to true, bottom to false, a determinate value to both). The formal, contractual
 form of the same unit is the witness bit — one ordered token/claim payload together with its
