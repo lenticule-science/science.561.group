@@ -9,6 +9,13 @@ provenance:
     - anthropic-mcp-2024
     - aaif-2025
 references:
+  modelcontextprotocol2025tools:
+    authors:
+      - Model Context Protocol
+    title: Tools
+    publication: Model Context Protocol Specification
+    year: 2025
+    url: https://modelcontextprotocol.io/specification/2025-06-18/server/tools
   anthropic-mcp-2024:
     authors:
       - Anthropic
@@ -37,6 +44,14 @@ MCP follows a client-server architecture. The **MCP server** exposes capabilitie
 ### Core primitives
 
 **Tools.** Functions the model can invoke. Each tool has a name, description, and input schema defined in [JSON Schema](../../../../../../../../../../content/text/glossary/terms/json-schema.md). The model decides when to call a tool based on the conversation context; the client executes the call against the server and returns the result. This is the same [tool use](../../../../../../content/text/glossary/terms/tool-use.md) pattern that providers implement natively, but MCP makes tool definitions portable across providers and runtimes.
+
+A server's tool declaration and a client's `tools/call` request do not grant
+execution authority by themselves. The receiving client/server boundary
+validates the request and reports the tool result; a tool result marked as an
+error remains distinct from a transport or protocol failure
+[@modelcontextprotocol2025tools].
+MCP does not define a common token, quota, pricing, or account-window unit, so
+those measurements must remain provider- and observation-scoped.
 
 **Resources.** Data the model can read — files, database records, API responses, structured documents. Resources have URIs and MIME types. The client fetches resources on behalf of the model, injecting their content into the [context window](../../../../../../../../content/text/glossary/terms/context-window.md). Resources extend what the model can see; tools extend what the model can do.
 
