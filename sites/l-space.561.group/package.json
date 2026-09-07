@@ -34,6 +34,7 @@
     "build:worker": "esbuild lib/cloudflare/src/worker.mjs --bundle --platform=node --format=esm --minify --banner:js=\"import { createRequire as __createRequire } from 'node:module'; const require = __createRequire(import.meta.url);\" --outfile=dist/worker.mjs",
     "build:vps": "npm run build:cloud && npm run build:worker && esbuild lib/vps/authoring-entry.mjs --bundle --platform=node --format=esm --banner:js=\"import { createRequire as __createRequire } from 'node:module'; const require = __createRequire(import.meta.url);\" --outfile=dist/vps-authoring.mjs",
     "build:engine": "node scripts/build-browser-engine.mjs",
+    "build:mcp": "node scripts/build-mcp-runtime.mjs",
     "cloudflare:config": "node scripts/configure-cloudflare.mjs",
     "cloudflare:deploy": "npm run build:cloud && npm run cloudflare:config && wrangler d1 migrations apply lenticule-science-vaultmaze --remote --config lib/cloudflare/wrangler.generated.jsonc && wrangler deploy --config lib/cloudflare/wrangler.generated.jsonc",
     "vps:start": "node lib/vps/server.mjs",
@@ -42,6 +43,7 @@
     "test": "node --import tsx --test test/*.test.mjs"
   },
   "devDependencies": {
+    "@red-cup-engineering/node-runtime-release-materialization-service": "1.2.4",
     "esbuild": "0.28.2",
     "tsx": "4.23.13",
     "wrangler": "4.123.0"
