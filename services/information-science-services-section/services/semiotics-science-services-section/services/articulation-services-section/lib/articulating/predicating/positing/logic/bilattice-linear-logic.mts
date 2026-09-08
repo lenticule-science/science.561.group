@@ -8,14 +8,11 @@
  * are the consistent values. Self-contained over the charge algebra.
  */
 import {
-  charge,
-  chargeSide,
+  chargeTwist,
+  chargeValueAt,
   chargeValue,
   joinTruthValue,
   sameChargeValue,
-  valueOf,
-  type ChargeCarrier,
-  type ChargeSide,
   type ChargeValue,
 } from "../bilattice-charge.mjs";
 
@@ -57,22 +54,8 @@ export interface TruthOrderResiduationObstruction {
 /** The result of a truth-order residuation check. */
 export type TruthOrderResiduationJudgment = TruthOrderResiduationWitness | TruthOrderResiduationObstruction;
 
-const sidePresent = (side: ChargeSide): boolean => side.name === "present";
-const sideMeet = (left: ChargeSide, right: ChargeSide): ChargeSide => sidePresent(left) && sidePresent(right) ? chargeSide("present") : chargeSide("absent");
-const sideProduct = sideMeet;
-const sideImplication = (left: ChargeSide, right: ChargeSide): ChargeSide =>
-  sidePresent(left) && !sidePresent(right) ? chargeSide("absent") : chargeSide("present");
-
-const coordinates = (value: ChargeValue): readonly [truth: ChargeSide, falsity: ChargeSide] => charge(value).value;
-const valueFromCoordinates = (truth: ChargeSide, falsity: ChargeSide): ChargeValue =>
-  valueOf(Object.freeze({
-    kind: "bilattice-charge.carrier" as const,
-    value: Object.freeze([truth, falsity] as const),
-    evidence: Object.freeze([Object.freeze([]), Object.freeze([])] as const),
-  }) satisfies ChargeCarrier);
-
 /** The multiplicative unit: the "stable" value. */
-export const linearMultiplicativeUnit: ChargeValue = chargeValue("stable");
+export const linearMultiplicativeUnit: ChargeValue = chargeValueAt(chargeTwist.one);
 
 /** The consistent charge values: absurd, potential, active. */
 export const consistentChargeValues: readonly ChargeValue[] =
@@ -80,22 +63,12 @@ export const consistentChargeValues: readonly ChargeValue[] =
 
 /** Multiplicative conjunction (tensor ⊗) of two charge values. */
 export function linearFusionValue(left: ChargeValue, right: ChargeValue): ChargeValue {
-  const [leftTruth, leftFalsity] = coordinates(left);
-  const [rightTruth, rightFalsity] = coordinates(right);
-  return valueFromCoordinates(
-    sideProduct(leftTruth, rightTruth),
-    sideMeet(sideImplication(leftTruth, rightFalsity), sideImplication(rightTruth, leftFalsity)),
-  );
+  return chargeValueAt(chargeTwist.fuse({ left: left.coordinates, right: right.coordinates }));
 }
 
 /** Linear implication (residuum ⊸) of two charge values. */
 export function linearResiduumValue(left: ChargeValue, right: ChargeValue): ChargeValue {
-  const [leftTruth, leftFalsity] = coordinates(left);
-  const [rightTruth, rightFalsity] = coordinates(right);
-  return valueFromCoordinates(
-    sideMeet(sideImplication(leftTruth, rightTruth), sideImplication(rightFalsity, leftFalsity)),
-    sideProduct(leftTruth, rightFalsity),
-  );
+  return chargeValueAt(chargeTwist.imply({ left: left.coordinates, right: right.coordinates }));
 }
 
 /** Linear negation: the residuum against the multiplicative unit. */
@@ -110,8 +83,7 @@ export function linearParValue(left: ChargeValue, right: ChargeValue): ChargeVal
 
 /** Whether a charge value is consistent (truth and falsity not both present). */
 export function chargeConsistency(value: ChargeValue): ChargeConsistencyJudgment {
-  const [truth, falsity] = coordinates(value);
-  return !(sidePresent(truth) && sidePresent(falsity))
+  return chargeValueAt(value.coordinates).name !== "stable"
     ? Object.freeze({ kind: "bilattice.linearLogic.chargeConsistency:witness" as const, value })
     : Object.freeze({ kind: "bilattice.linearLogic.chargeConsistency-obstruction" as const, value });
 }

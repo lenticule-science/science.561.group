@@ -1,19 +1,8 @@
 import { assertRow, type EavtRow } from "@red-cup-engineering/eavt";
-import { mark } from "../utterance.mjs";
-import { witnessedPotential, type ChargeCarrier } from "./positing/bilattice-charge.mjs";
-
-/** The raw operational terms projected from an admitted EAVT row. */
-export interface Cell {
-  readonly subject: EavtRow["e"];
-  readonly predicate: EavtRow["a"];
-  readonly object: EavtRow["v"];
-}
-
-/** Operational cell terms with their scientific evidence carrier. */
-export interface ChargedCell {
-  readonly cell: Cell;
-  readonly charge: ChargeCarrier;
-}
+import { mark, token, claim } from "../utterance.mjs";
+import { chargeSideName, witnessedPotential } from "./positing/bilattice-charge.mjs";
+import { cell, predicateOfClaim } from "./predication.mjs";
+import { meme, type Meme } from "./positing/fiber.mjs";
 
 /**
  * Project one admitted positive EAVT assertion into its cell and witnessed charge.
@@ -21,9 +10,9 @@ export interface ChargedCell {
  * @returns Cell terms and the unchanged transaction as positive evidence.
  * @throws {TypeError} When the row is not admitted by the EAVT owner.
  */
-export function eavtToCell(row: EavtRow): ChargedCell {
+export function eavtToCell(row: EavtRow): Meme {
   assertRow(row);
-  return { cell: { subject: row.e, predicate: row.a, object: row.v }, charge: witnessedPotential(mark(row.t)) };
+  return meme(cell(token(mark(row.e)), predicateOfClaim(claim(mark(row.a))), token(mark(row.v))), witnessedPotential(mark(row.t)));
 }
 
 /**
@@ -32,10 +21,12 @@ export function eavtToCell(row: EavtRow): ChargedCell {
  * @returns One row per positive witness, retaining its complete transaction.
  * @throws {TypeError} When negative evidence is present or a row is inadmissible.
  */
-export function cellToEavt(charged: ChargedCell): EavtRow[] {
-  if (charged.charge.value[1] || charged.charge.evidence[1].length > 0) {
+export function cellToEavt(charged: Pick<Meme, "cell" | "charge">): EavtRow[] {
+  if (chargeSideName(charged.charge.value[1]) === "present" || charged.charge.evidence[1].length > 0) {
     throw new TypeError("cellToEavt: negative evidence requires independentEvidenceRow");
   }
-  const { subject: e, predicate: a, object: v } = charged.cell;
+  const e = charged.cell.subject.mark.value;
+  const a = charged.cell.predicate.claim.mark.value;
+  const v = charged.cell.object.mark.value;
   return charged.charge.evidence[0].map((witness) => assertRow({ e, a, v, t: witness.value }));
 }

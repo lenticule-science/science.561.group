@@ -12,7 +12,153 @@
  * still coincide. A term is a Token; a predicate carries a Claim; both compare by
  * their mark value, the one place the opaque payload is read (only to dedupe).
  */
+import type { FromJsonSchema } from "@red-cup-engineering/transform-json-schema-to-typescript-service/types";
 import { type ArticulationCell, type Claim, type Mark, type Token, type UtteranceCarrier } from "../utterance.mjs";
+export declare const PredicateSchema: {
+    readonly type: "object";
+    readonly required: readonly ["kind", "claim", "mark"];
+    readonly properties: {
+        readonly kind: {
+            readonly const: "predication.predicate";
+        };
+        readonly claim: {
+            readonly type: "object";
+            readonly required: readonly ["kind", "hand", "mark"];
+            readonly properties: {
+                readonly kind: {
+                    readonly const: "utterance.claim";
+                };
+                readonly hand: {
+                    readonly const: "right";
+                };
+                readonly mark: {
+                    readonly type: "object";
+                    readonly required: readonly ["kind", "value"];
+                    readonly properties: {
+                        readonly kind: {
+                            readonly const: "utterance.mark";
+                        };
+                        readonly value: {};
+                    };
+                    readonly additionalProperties: false;
+                };
+            };
+            readonly additionalProperties: false;
+        };
+        readonly mark: {
+            readonly type: "object";
+            readonly required: readonly ["kind", "value"];
+            readonly properties: {
+                readonly kind: {
+                    readonly const: "utterance.mark";
+                };
+                readonly value: {};
+            };
+            readonly additionalProperties: false;
+        };
+    };
+    readonly additionalProperties: false;
+};
+export declare const CellSchema: {
+    readonly type: "object";
+    readonly required: readonly ["subject", "predicate", "object"];
+    readonly properties: {
+        readonly subject: {
+            readonly type: "object";
+            readonly required: readonly ["kind", "hand", "mark"];
+            readonly properties: {
+                readonly kind: {
+                    readonly const: "utterance.token";
+                };
+                readonly hand: {
+                    readonly const: "left";
+                };
+                readonly mark: {
+                    readonly type: "object";
+                    readonly required: readonly ["kind", "value"];
+                    readonly properties: {
+                        readonly kind: {
+                            readonly const: "utterance.mark";
+                        };
+                        readonly value: {};
+                    };
+                    readonly additionalProperties: false;
+                };
+            };
+            readonly additionalProperties: false;
+        };
+        readonly predicate: {
+            readonly type: "object";
+            readonly required: readonly ["kind", "claim", "mark"];
+            readonly properties: {
+                readonly kind: {
+                    readonly const: "predication.predicate";
+                };
+                readonly claim: {
+                    readonly type: "object";
+                    readonly required: readonly ["kind", "hand", "mark"];
+                    readonly properties: {
+                        readonly kind: {
+                            readonly const: "utterance.claim";
+                        };
+                        readonly hand: {
+                            readonly const: "right";
+                        };
+                        readonly mark: {
+                            readonly type: "object";
+                            readonly required: readonly ["kind", "value"];
+                            readonly properties: {
+                                readonly kind: {
+                                    readonly const: "utterance.mark";
+                                };
+                                readonly value: {};
+                            };
+                            readonly additionalProperties: false;
+                        };
+                    };
+                    readonly additionalProperties: false;
+                };
+                readonly mark: {
+                    readonly type: "object";
+                    readonly required: readonly ["kind", "value"];
+                    readonly properties: {
+                        readonly kind: {
+                            readonly const: "utterance.mark";
+                        };
+                        readonly value: {};
+                    };
+                    readonly additionalProperties: false;
+                };
+            };
+            readonly additionalProperties: false;
+        };
+        readonly object: {
+            readonly type: "object";
+            readonly required: readonly ["kind", "hand", "mark"];
+            readonly properties: {
+                readonly kind: {
+                    readonly const: "utterance.token";
+                };
+                readonly hand: {
+                    readonly const: "left";
+                };
+                readonly mark: {
+                    readonly type: "object";
+                    readonly required: readonly ["kind", "value"];
+                    readonly properties: {
+                        readonly kind: {
+                            readonly const: "utterance.mark";
+                        };
+                        readonly value: {};
+                    };
+                    readonly additionalProperties: false;
+                };
+            };
+            readonly additionalProperties: false;
+        };
+    };
+    readonly additionalProperties: false;
+};
 /** A term in a predication: a token occupying a subject or object position. */
 export type PredicationTerm = Token;
 /** A predicate: an object of the predicate category, carrying a Claim's mark. */
@@ -30,11 +176,7 @@ export type PredicationBaseObject = PredicationTerm | PredicationPredicate | Pre
 /** A datum admitted when building a site: a cell or a specialization morphism. */
 export type PredicationDatum = Cell | SpecializationMorphism;
 /** A relational cell: a subject term, a predicate, and an object term. */
-export interface Cell {
-    readonly subject: PredicationTerm;
-    readonly predicate: PredicationPredicate;
-    readonly object: PredicationTerm;
-}
+export type Cell = FromJsonSchema<typeof CellSchema>;
 /** A directed edge in the base category. */
 export interface Edge<Domain = PredicationBaseObject, Codomain = PredicationBaseObject> {
     readonly domain: Domain;

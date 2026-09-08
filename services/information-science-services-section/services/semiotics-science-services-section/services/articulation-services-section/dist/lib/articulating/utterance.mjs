@@ -1,4 +1,4 @@
-const MarkSchema = {
+export const MarkSchema = {
     type: "object",
     required: ["kind", "value"],
     properties: {
@@ -7,7 +7,7 @@ const MarkSchema = {
     },
     additionalProperties: false,
 };
-const TokenSchema = {
+export const TokenSchema = {
     type: "object",
     required: ["kind", "hand", "mark"],
     properties: {
@@ -17,7 +17,7 @@ const TokenSchema = {
     },
     additionalProperties: false,
 };
-const ClaimSchema = {
+export const ClaimSchema = {
     type: "object",
     required: ["kind", "hand", "mark"],
     properties: {

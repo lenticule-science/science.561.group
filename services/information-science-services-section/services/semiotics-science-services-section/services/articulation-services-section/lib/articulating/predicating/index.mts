@@ -40,6 +40,8 @@
  */
 export {
   Predicate,
+  PredicateSchema,
+  CellSchema,
   predicate,
   predicateOfClaim,
   predicationSeed,
@@ -256,4 +258,3 @@ export type {
 } from "./independent-evidence.mjs";
 
 export { eavtToCell, cellToEavt } from "./eavt.mjs";
-export type { ChargedCell } from "./eavt.mjs";

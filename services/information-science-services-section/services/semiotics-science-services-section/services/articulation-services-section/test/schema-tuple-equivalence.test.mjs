@@ -1,7 +1,9 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { compileJsonSchema } from "@red-cup-engineering/validate-json-schema-service";
-import { articulationCellSchema, utteranceSchema } from "../dist/lib/articulating/utterance.mjs";
+import { articulationCellSchema, utteranceSchema, MarkSchema, TokenSchema, ClaimSchema } from "../dist/lib/articulating/utterance.mjs";
+import { CellSchema, PredicateSchema } from "../dist/lib/articulating/predicating/predication.mjs";
+import { ChargeCarrierSchema } from "../dist/lib/articulating/predicating/positing/bilattice-charge.mjs";
 import { memeSchema } from "../dist/lib/articulating/predicating/positing/fiber.mjs";
 
 const dialect = "https://json-schema.org/draft/2020-12/schema";
@@ -13,6 +15,18 @@ const side = { kind: "bilattice-charge.side", name: "present" };
 const outer = articulationCellSchema.properties.potentialAperiodicArticulationCell;
 const inner = outer.prefixItems[1];
 const charge = memeSchema.properties.charge.properties;
+
+test("composed carriers use their owners' exact semantic schemas", () => {
+  assert.strictEqual(memeSchema.properties.cell, CellSchema);
+  assert.strictEqual(memeSchema.properties.charge, ChargeCarrierSchema);
+  assert.strictEqual(CellSchema.properties.subject, TokenSchema);
+  assert.strictEqual(CellSchema.properties.object, TokenSchema);
+  assert.strictEqual(CellSchema.properties.predicate, PredicateSchema);
+  assert.strictEqual(PredicateSchema.properties.claim, ClaimSchema);
+  assert.strictEqual(TokenSchema.properties.mark, MarkSchema);
+  assert.strictEqual(ClaimSchema.properties.mark, MarkSchema);
+  assert.strictEqual(charge.evidence.prefixItems[0].items, MarkSchema);
+});
 const cases = [
   ["articulation pair", outer, [utterance, [[token], []]], [[token], utterance]],
   ["token and empty pair", inner, [[token], []], [[], [token]]],

@@ -13,6 +13,65 @@
  * law; this module supplies the declaration, constructors, and morphisms over it.
  */
 import type { FromJsonSchema } from "@red-cup-engineering/transform-json-schema-to-typescript-service/types";
+export declare const MarkSchema: {
+    readonly type: "object";
+    readonly required: readonly ["kind", "value"];
+    readonly properties: {
+        readonly kind: {
+            readonly const: "utterance.mark";
+        };
+        readonly value: {};
+    };
+    readonly additionalProperties: false;
+};
+export declare const TokenSchema: {
+    readonly type: "object";
+    readonly required: readonly ["kind", "hand", "mark"];
+    readonly properties: {
+        readonly kind: {
+            readonly const: "utterance.token";
+        };
+        readonly hand: {
+            readonly const: "left";
+        };
+        readonly mark: {
+            readonly type: "object";
+            readonly required: readonly ["kind", "value"];
+            readonly properties: {
+                readonly kind: {
+                    readonly const: "utterance.mark";
+                };
+                readonly value: {};
+            };
+            readonly additionalProperties: false;
+        };
+    };
+    readonly additionalProperties: false;
+};
+export declare const ClaimSchema: {
+    readonly type: "object";
+    readonly required: readonly ["kind", "hand", "mark"];
+    readonly properties: {
+        readonly kind: {
+            readonly const: "utterance.claim";
+        };
+        readonly hand: {
+            readonly const: "right";
+        };
+        readonly mark: {
+            readonly type: "object";
+            readonly required: readonly ["kind", "value"];
+            readonly properties: {
+                readonly kind: {
+                    readonly const: "utterance.mark";
+                };
+                readonly value: {};
+            };
+            readonly additionalProperties: false;
+        };
+    };
+    readonly additionalProperties: false;
+};
 /** The base admission carrier schema: one plain JSON-Schema literal with a bare `$id`. */
 export declare const utteranceSchema: {
     readonly $schema: "https://json-schema.org/draft/2020-12/schema";

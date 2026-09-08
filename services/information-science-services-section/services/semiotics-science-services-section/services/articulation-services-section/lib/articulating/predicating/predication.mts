@@ -12,7 +12,22 @@
  * still coincide. A term is a Token; a predicate carries a Claim; both compare by
  * their mark value, the one place the opaque payload is read (only to dedupe).
  */
-import { coincides, type ArticulationCell, type Claim, type Mark, type Token, type UtteranceCarrier } from "../utterance.mjs";
+import type { FromJsonSchema } from "@red-cup-engineering/transform-json-schema-to-typescript-service/types";
+import { MarkSchema, TokenSchema, ClaimSchema, coincides, type ArticulationCell, type Claim, type Mark, type Token, type UtteranceCarrier } from "../utterance.mjs";
+
+export const PredicateSchema = {
+  type: "object",
+  required: ["kind", "claim", "mark"],
+  properties: { kind: { const: "predication.predicate" }, claim: ClaimSchema, mark: MarkSchema },
+  additionalProperties: false,
+} as const;
+
+export const CellSchema = {
+  type: "object",
+  required: ["subject", "predicate", "object"],
+  properties: { subject: TokenSchema, predicate: PredicateSchema, object: TokenSchema },
+  additionalProperties: false,
+} as const;
 
 /** A term in a predication: a token occupying a subject or object position. */
 export type PredicationTerm = Token;
@@ -39,11 +54,7 @@ export type PredicationBaseObject = PredicationTerm | PredicationPredicate | Pre
 export type PredicationDatum = Cell | SpecializationMorphism;
 
 /** A relational cell: a subject term, a predicate, and an object term. */
-export interface Cell {
-  readonly subject: PredicationTerm;
-  readonly predicate: PredicationPredicate;
-  readonly object: PredicationTerm;
-}
+export type Cell = FromJsonSchema<typeof CellSchema>;
 
 /** A directed edge in the base category. */
 export interface Edge<Domain = PredicationBaseObject, Codomain = PredicationBaseObject> {

@@ -7,6 +7,9 @@
  */
 export {
   Mark,
+  MarkSchema,
+  TokenSchema,
+  ClaimSchema,
   Token,
   Claim,
   mark,

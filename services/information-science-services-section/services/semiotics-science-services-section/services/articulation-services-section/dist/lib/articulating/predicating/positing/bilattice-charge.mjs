@@ -1,21 +1,40 @@
-/**
- * positing/bilattice-charge — the four-valued bilattice of charge.
- *
- * Belnap's FOUR as a charge: a pair of independent sides (truth, falsity), each
- * "absent" or "present", naming `absurd` (neither), `potential` (truth only),
- * `active` (falsity only), `stable` (both). A `ChargeCarrier` also bears the
- * evidence — the witness Marks — accumulated on each side. Two orders share the
- * underlying sides: the KNOWLEDGE order grows both sides; the TRUTH order grows
- * truth and shrinks falsity. Negation swaps the sides; conflation complements and
- * swaps; together with identity and their composite they form the Klein-four
- * gauge group acting on the values.
- *
- * Charges are never admitted directly — they are constructed from evidence and
- * joined; positing/settling derive them. Evidence is deduped by STRUCTURAL
- * content coincidence (this package is content-addressed and boundary-first), so
- * two witnesses with equal payloads count once and survive a transport round-trip.
- */
-import { coincides, isMark, Mark } from "../../utterance.mjs";
+import { MarkSchema, coincides, isMark, Mark } from "../../utterance.mjs";
+import { twistProduct } from "./twist-product.mjs";
+export const ChargeSideSchema = {
+    type: "object",
+    required: ["kind", "name"],
+    properties: {
+        kind: { const: "bilattice-charge.side" },
+        name: { enum: ["absent", "present"] },
+    },
+    additionalProperties: false,
+};
+export const ChargeCarrierSchema = {
+    type: "object",
+    required: ["kind", "value", "evidence"],
+    properties: {
+        kind: { const: "bilattice-charge.carrier" },
+        value: {
+            type: "array",
+            prefixItems: [ChargeSideSchema, ChargeSideSchema],
+            minItems: 2,
+            maxItems: 2,
+            items: false,
+        },
+        evidence: {
+            type: "array",
+            prefixItems: [
+                { type: "array", items: MarkSchema },
+                { type: "array", items: MarkSchema },
+            ],
+            minItems: 2,
+            maxItems: 2,
+            items: false,
+        },
+    },
+    description: "A charge bearing evidence: the [truth, falsity] side coordinates and the witness Marks per side.",
+    additionalProperties: false,
+};
 /** All charge side names. */
 export const chargeSideNames = Object.freeze(["absent", "present"]);
 /** All charge value names. */
@@ -33,7 +52,7 @@ const chargeCoordinatesByName = {
  * @example
  * ```ts
  * chargeValue("active").coordinates.map(chargeSideName)
- * // ["present", "absent"]
+ * // ["absent", "present"]
  * ```
  */
 export function chargeValue(name) {
@@ -63,6 +82,17 @@ const joinSide = (left, right) => presentSide(left) || presentSide(right) ? char
 const meetSide = (left, right) => presentSide(left) && presentSide(right) ? chargeSide("present") : chargeSide("absent");
 const complementSide = (side) => presentSide(side) ? chargeSide("absent") : chargeSide("present");
 const leqSide = (left, right) => absentSide(left) || presentSide(right);
+/** The two-coordinate specialization of the shared twist-product program. */
+export const chargeTwist = twistProduct({
+    bottom: chargeSide("absent"),
+    top: chargeSide("present"),
+    one: chargeSide("present"),
+    leq: leqSide,
+    meet: meetSide,
+    join: joinSide,
+    fuse: meetSide,
+    imply: (left, right) => leqSide(left, right) ? chargeSide("present") : chargeSide("absent"),
+});
 /** Whether a string names a charge value. */
 export function isChargeValueName(value) {
     return Object.prototype.hasOwnProperty.call(chargeCoordinatesByName, value);
@@ -136,7 +166,10 @@ export function sameCharge(left, right) {
 }
 /** The charge value named by a carrier's coordinates. */
 export function valueOf(c) {
-    const [truth, falsity] = c.value;
+    return chargeValueAt(c.value);
+}
+/** Name a point of the finite charge specialization. */
+export function chargeValueAt([truth, falsity]) {
     if (presentSide(truth) && presentSide(falsity))
         return chargeValue("stable");
     if (presentSide(truth))
@@ -153,7 +186,7 @@ export const witnessedPotential = (witness) => charge(chargeValue("potential"), 
 export function negate(c) {
     return Object.freeze({
         kind: "bilattice-charge.carrier",
-        value: Object.freeze([c.value[1], c.value[0]]),
+        value: chargeTwist.negate(c.value),
         evidence: Object.freeze([c.evidence[1], c.evidence[0]]),
     });
 }
@@ -174,25 +207,25 @@ const mergeEvidence = (left, right) => {
             out.push(witness);
     return Object.freeze(out);
 };
-const combine = (truth, falsity) => (left, right) => Object.freeze({
+const combine = (operation) => (left, right) => Object.freeze({
     kind: "bilattice-charge.carrier",
-    value: Object.freeze([truth(left.value[0], right.value[0]), falsity(left.value[1], right.value[1])]),
+    value: operation({ left: left.value, right: right.value }),
     evidence: Object.freeze([mergeEvidence(left.evidence[0], right.evidence[0]), mergeEvidence(left.evidence[1], right.evidence[1])]),
 });
 /** Knowledge-order join: both sides grow. */
-export const joinKnowledge = combine(joinSide, joinSide);
+export const joinKnowledge = combine(chargeTwist.joinKnowledge);
 /** Knowledge-order meet: both sides shrink. */
-export const meetKnowledge = combine(meetSide, meetSide);
+export const meetKnowledge = combine(chargeTwist.meetKnowledge);
 /** Truth-order join: truth grows, falsity shrinks. */
-export const joinTruth = combine(joinSide, meetSide);
+export const joinTruth = combine(chargeTwist.joinTruth);
 /** Truth-order meet: truth shrinks, falsity grows. */
-export const meetTruth = combine(meetSide, joinSide);
+export const meetTruth = combine(chargeTwist.meetTruth);
 /** Knowledge-order join of values (evidence ignored).
  *
  * @example
  * ```ts
  * chargeValueName(joinKnowledgeValue(chargeValue("active"), chargeValue("stable")))
- * // "absurd"
+ * // "stable"
  * ```
  */
 export const joinKnowledgeValue = (left, right) => valueOf(joinKnowledge(charge(left), charge(right)));
@@ -297,7 +330,7 @@ export function knowledgeMeetOfCensus(census) {
 }
 /** Whether left ≤ right in the knowledge order. */
 export function leqKnowledge(left, right) {
-    return leqSide(left.value[0], right.value[0]) && leqSide(left.value[1], right.value[1]);
+    return chargeTwist.leqKnowledge({ left: left.value, right: right.value });
 }
 /** The right charge of a pair when left ≤ right in the knowledge order, else throw. */
 export function compareKnowledge(pair) {
@@ -310,7 +343,7 @@ export function compareKnowledge(pair) {
 export const aggregate = (pair) => joinKnowledge(pair.left, pair.right);
 /** Whether left ≤ right in the truth order (truth grows, falsity shrinks). */
 export function leqTruth(left, right) {
-    return leqSide(left.value[0], right.value[0]) && leqSide(right.value[1], left.value[1]);
+    return chargeTwist.leqTruth({ left: left.value, right: right.value });
 }
 const everyCharge = (predicate) => chargeValues.every(predicate);
 const everyChargePair = (predicate) => chargeValues.every((a) => chargeValues.every((b) => predicate(a, b)));

@@ -22,7 +22,7 @@ import {
   independentEvidenceSide,
   foldIndependentEvidence,
   sectionSpace,
-} from "../lib/articulating/predicating/independent-evidence.mts";
+} from "../dist/lib/articulating/predicating/independent-evidence.mjs";
 
 const cellOf = (folded, predicate, object) =>
   folded.fiber.find((c) => c.predicate === predicate && jcs(c.object) === jcs(object));
@@ -305,7 +305,7 @@ test("scientific evidence uses full operational row identity and preserves witne
   assert.equal(rowId(positive), operationalRowId(positive));
   assert.equal(reify(positive), `row:${operationalRowId(positive)}`);
   const folded = foldIndependentEvidence("s", [{ subject: "s", predicate: "p", object: "o" }], [positive, negative]);
-  assert.deepEqual(folded.fiber[0].evidence, [[operationalRowId(positive)], [operationalRowId(negative)]]);
+  assert.deepEqual(folded.fiber[0].value.evidence, [[operationalRowId(positive)], [operationalRowId(negative)]]);
   assert.deepEqual(positive.t.witness, { observedAt: "2026-09-05T00:00:00Z", resource: "resource:one" });
 });
 

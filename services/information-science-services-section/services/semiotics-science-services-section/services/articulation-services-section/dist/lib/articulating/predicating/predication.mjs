@@ -1,18 +1,16 @@
-/**
- * predicating/predication — the predication cell Φ = E × Π × E.
- *
- * Predicating consumes the potential aperiodic articulation cell, opens the
- * transfinite predication category around the token-schema and claim-schema its
- * utterance carries, and materializes that category as the predication site
- * positing consumes. A `Cell` is a subject term, a predicate, and an object
- * term; the base category adds specialization, converse, and projection edges.
- *
- * Coincidence is STRUCTURAL (value equality of the carried marks), not reference
- * identity: this package is boundary-first, so terms reconstructed from JSON must
- * still coincide. A term is a Token; a predicate carries a Claim; both compare by
- * their mark value, the one place the opaque payload is read (only to dedupe).
- */
-import { coincides } from "../utterance.mjs";
+import { MarkSchema, TokenSchema, ClaimSchema, coincides } from "../utterance.mjs";
+export const PredicateSchema = {
+    type: "object",
+    required: ["kind", "claim", "mark"],
+    properties: { kind: { const: "predication.predicate" }, claim: ClaimSchema, mark: MarkSchema },
+    additionalProperties: false,
+};
+export const CellSchema = {
+    type: "object",
+    required: ["subject", "predicate", "object"],
+    properties: { subject: TokenSchema, predicate: PredicateSchema, object: TokenSchema },
+    additionalProperties: false,
+};
 /** A predicate: an object of the predicate category, carrying a Claim's mark. */
 export class Predicate {
     kind = "predication.predicate";

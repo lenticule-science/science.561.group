@@ -39,10 +39,11 @@
  */
 import { assertRow, rowId, canonicalKey, type EavtRow } from "@red-cup-engineering/eavt";
 export { rowId } from "@red-cup-engineering/eavt";
-import { joinKnowledge } from "@lenticule-science/metrologic/bilattice";
+import { mark, type Mark } from "../utterance.mjs";
+import { bottom, chargeSideName, joinKnowledge, negate, witnessedPotential, type ChargeCarrier } from "./positing/bilattice-charge.mjs";
 import { chuSpace } from "@lenticule-science/metrologic/chu";
 import { FOUR, fromCharge } from "@lenticule-science/metrologic/chu/four";
-import type { Charge, ChuSpace, Four } from "@lenticule-science/metrologic/chu";
+import type { ChuSpace, Four } from "@lenticule-science/metrologic/chu";
 
 export type { EavtRow } from "@red-cup-engineering/eavt";
 
@@ -62,12 +63,12 @@ export const INDEPENDENT_EVIDENCE_WITNESS_KIND = "predication.independent-eviden
 export type IndependentEvidenceSideName = "positive" | "negative";
 
 /** The witness carried by an independent-evidence row's `t`. */
-export interface IndependentEvidenceWitness {
+export type IndependentEvidenceWitness = {
   readonly kind: typeof INDEPENDENT_EVIDENCE_WITNESS_KIND;
   readonly version: 1;
   readonly side: IndependentEvidenceSideName;
   readonly by: string;
-  readonly witness: unknown;
+  readonly witness: EavtRow["t"];
 }
 
 /** Input to `independentEvidenceRow`. */
@@ -147,7 +148,7 @@ export interface FoldIndependentEvidenceOptions {
  *
  * Claims seed the points, so a point with no evidence remains present at ⊥. Every evidence row is
  * exact EAVT; `independentEvidenceSide` names which independent coordinate it observed. A cell told
- * both sides settles to ⊤ (a HELD value, not an error) via `metrologic/bilattice`'s `joinKnowledge` —
+ * both sides settles to ⊤ (a HELD value, not an error) via the shared charge `joinKnowledge` —
  * nothing here re-derives the join.
  */
 export function foldIndependentEvidence(
@@ -172,13 +173,13 @@ export function foldIndependentEvidence(
     }
   }
 
-  const cells = new Map<string, { predicate: string; object: unknown; charge: Charge }>();
+  const cells = new Map<string, { predicate: string; object: unknown; charge: ChargeCarrier }>();
   for (const [index, claim] of claims.entries()) {
     if (!claim || typeof claim !== "object" || Array.isArray(claim)) throw new TypeError(`foldIndependentEvidence: claims[${index}] must be an object`);
     if (claim.subject !== subject) throw new TypeError(`foldIndependentEvidence: claims[${index}].subject must equal the folded subject`);
     if (typeof claim.predicate !== "string" || claim.predicate === "") throw new TypeError(`foldIndependentEvidence: claims[${index}].predicate must be a non-empty string`);
     const key = canonicalKey([claim.predicate, claim.object]);
-    cells.set(key, { predicate: claim.predicate, object: claim.object, charge: { value: [false, false], evidence: [[], []] } });
+    cells.set(key, { predicate: claim.predicate, object: claim.object, charge: bottom });
   }
 
   for (const r of rows) {
@@ -190,12 +191,11 @@ export function foldIndependentEvidence(
     const side = independentEvidenceSide(r);
     if (side === null) continue; // not an independent-evidence witness: no path to charge a cell
     const id = rowId(r);
-    const contribution: Charge = side === "negative"
-      ? { value: [false, true], evidence: [[], [id]] }
-      : { value: [true, false], evidence: [[id], []] };
+    const positive = witnessedPotential(mark(id));
+    const contribution = side === "negative" ? negate(positive) : positive;
     const key = canonicalKey([r.a, r.v]);
-    const prior = cells.get(key)?.charge ?? { value: [false, false], evidence: [[], []] };
-    cells.set(key, { predicate: r.a, object: r.v, charge: joinKnowledge({ left: prior, right: contribution }) });
+    const prior = cells.get(key)?.charge ?? bottom;
+    cells.set(key, { predicate: r.a, object: r.v, charge: joinKnowledge(prior, contribution) });
   }
 
   const fiber = [...cells.values()]
@@ -204,13 +204,19 @@ export function foldIndependentEvidence(
       predicate,
       object,
       value: {
-        pos: charge.value[0] ? 1 : 0,
-        neg: charge.value[1] ? 1 : 0,
-        evidence: charge.evidence as [string[], string[]],
+        pos: chargeSideName(charge.value[0]) === "present" ? 1 : 0,
+        neg: chargeSideName(charge.value[1]) === "present" ? 1 : 0,
+        evidence: [charge.evidence[0].map(rowIdentity), charge.evidence[1].map(rowIdentity)],
       },
     }));
 
   return deepFreeze({ entity: subject, fiber });
+}
+
+// The operational projection exposes row IDs; semantic evidence remains Marks.
+function rowIdentity(witness: Mark): string {
+  if (typeof witness.value !== "string") throw new TypeError("independent evidence must carry a row identity");
+  return witness.value;
 }
 
 /** Options accepted by `sectionSpace`. */

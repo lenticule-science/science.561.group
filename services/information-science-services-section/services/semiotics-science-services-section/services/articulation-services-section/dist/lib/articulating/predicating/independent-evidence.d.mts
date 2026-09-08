@@ -1,28 +1,49 @@
-import type { ChuSpace, Four } from "@lenticule-science/metrologic/chu";
-/** An exact EAVT row: subject, predicate (a gerund), object (any JSON), transaction/witness. */
-export interface EavtRow {
-    readonly e: string;
-    readonly a: string;
-    readonly v: unknown;
-    readonly t: unknown;
-}
 /**
- * The canonical serialization of a JSON-shaped value: object keys sorted, stable bytes.
+ * predicating/independent-evidence — the predication-charge machinery, reseated.
  *
- * A local copy of `@red-cup-engineering/json-codec-service`'s `canonical()`
- * (`src/json/core.mts`), kept local per the circular-dependency note above.
- * Verified byte-identical to that function on a shared test vector by
- * `test/jcs-byte-equality.test.mts`. Typed over `unknown` (not a strict JSON
- * union) so it composes over EAVT rows without a second admission boundary;
- * the identity space it backs is content-addressed EAVT rows, not a free-form
- * JSON gate — that gate is json-codec-service's, upstream of these rows.
+ * A Fregean predication fixes ONE oriented (subject, predicate, object) point;
+ * evidence FOR it and evidence AGAINST it are independent `Bool × Bool`
+ * coordinates — relational converse and subject/object reversal are never
+ * denial. This is the executable form of
+ * `Obsmetrologia.Language.Predicating.FregeanFourChu`
+ * (obsmetrological-services-section/lib/obsmetrologia/Obsmetrologia/Language/Predicating/FregeanFourChu.lean):
+ * `independentEvidenceCharge : Bool × Bool -> Charge` is exactly
+ * `independentEvidenceRow`/`independentEvidenceSide` feeding `foldIndependentEvidence`'s
+ * per-cell join, and `predicationChu` is exactly what `sectionSpace` presents —
+ * predications as points, witnessing parties as states, the FOUR-valued read as
+ * the matrix entry. See `teaching-articles/explanations/independent-evidence.md`
+ * for the full grounding (also the CHL/nuclear-quartet reading and glass-sponge
+ * §16.4's "independence is evidential, not organizational").
+ *
+ * Ported from `@red-cup-engineering/computer`'s `posix-holography/src/substrate.mjs`
+ * (a read-only deprecation inventory as of this port — write nothing there).
+ * That module built this on top of the general `fold`/`settle`/`supersede`/
+ * `relate` OS substrate (any predicate, any trace, functional or relational).
+ * This port carries ONLY the independent-evidence family: `foldIndependentEvidence`
+ * below is a self-contained fold restricted to claims seeded at ⊥ plus rows whose
+ * side is resolved by `independentEvidenceSide` — it does not open the legacy
+ * `opts.converse` remap (refused, as in the original) and, unlike the original's
+ * shared `fold`, does not scan the trace for incidental `has-converse`
+ * declarations either — a predication-charge fold has no path by which converse
+ * can define denial. Both real consumers of the original (workspace-content-graph,
+ * fae) only ever called it without that legacy path live, so this narrowing
+ * changes no observed behavior; it just closes a door the function's own
+ * doc comment already said should not exist.
+ *
+ * Row admission, identity, and grouping use the operational EAVT owner.
+ * The independent evidence fold remains scientific; knowledge join is not
+ * reimplemented: `foldIndependentEvidence` joins per-cell evidence with
+ * `metrologic/bilattice`'s `joinKnowledge`; `sectionSpace` presents the folded
+ * fiber as an explicit Chu space over FOUR via `metrologic/chu` and
+ * `metrologic/chu/four`, exactly as the original did.
  */
-export declare function jcs(value: unknown): string;
-/** The canonical id of a row: identical content -> identical id. This IS the row's identity. */
-export declare function rowId(row: EavtRow): string;
+import { type EavtRow } from "@red-cup-engineering/eavt";
+export { rowId } from "@red-cup-engineering/eavt";
+import type { ChuSpace, Four } from "@lenticule-science/metrologic/chu";
+export type { EavtRow } from "@red-cup-engineering/eavt";
 /** A reified row is a row ABOUT a base row: its subject `e` is the base row's content-id, prefixed. */
 export declare const REIFIED_PREFIX = "row:";
-/** reify(base) -> the content-address of a base row, prefixed (16-hex slice keeps it legible). */
+/** reify(base) -> the content-address of a base row, prefixed with the full canonical EAVT identity. */
 export declare const reify: (base: EavtRow) => string;
 /** isReified(e) -> is this entity-id an attribution about a row (not a subject)? */
 export declare const isReified: (e: unknown) => e is string;
@@ -31,13 +52,13 @@ export declare const INDEPENDENT_EVIDENCE_WITNESS_KIND = "predication.independen
 /** One side of independent predication evidence. */
 export type IndependentEvidenceSideName = "positive" | "negative";
 /** The witness carried by an independent-evidence row's `t`. */
-export interface IndependentEvidenceWitness {
+export type IndependentEvidenceWitness = {
     readonly kind: typeof INDEPENDENT_EVIDENCE_WITNESS_KIND;
     readonly version: 1;
     readonly side: IndependentEvidenceSideName;
     readonly by: string;
-    readonly witness: unknown;
-}
+    readonly witness: EavtRow["t"];
+};
 /** Input to `independentEvidenceRow`. */
 export interface IndependentEvidenceRowInput {
     readonly subject: string;
@@ -85,7 +106,7 @@ export interface FoldIndependentEvidenceOptions {
  *
  * Claims seed the points, so a point with no evidence remains present at ⊥. Every evidence row is
  * exact EAVT; `independentEvidenceSide` names which independent coordinate it observed. A cell told
- * both sides settles to ⊤ (a HELD value, not an error) via `metrologic/bilattice`'s `joinKnowledge` —
+ * both sides settles to ⊤ (a HELD value, not an error) via the shared charge `joinKnowledge` —
  * nothing here re-derives the join.
  */
 export declare function foldIndependentEvidence(subject: string, claims: readonly PredicationClaim[], rows: readonly EavtRow[], opts?: FoldIndependentEvidenceOptions & {
@@ -116,7 +137,7 @@ export interface SectionSpaceResult {
 /**
  * sectionSpace(folded, rows, opts?) — lift a folded fiber-algebra into an explicit Chu space over
  * FOUR (`@lenticule-science/metrologic/chu`): the rich sibling of `section()`. The POINTS are the
- * folded cells (keyed `jcs([predicate,object])`), the STATES are the witnessing coordinate
+ * folded cells (keyed `canonicalKey([predicate,object])`), the STATES are the witnessing coordinate
  * `stateOf(row)` (e.g. the party in `t.by`), and the value at (cell, state) is the FOUR face that
  * state witnesses: t if it charged the positive face, f the converse, ⊤ both, ⊥ (open-world absent)
  * neither. This is exactly the Chu presentation `Obsmetrologia.predicationChu` names: predications as

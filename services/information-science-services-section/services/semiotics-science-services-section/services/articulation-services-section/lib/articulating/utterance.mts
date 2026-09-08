@@ -14,7 +14,7 @@
  */
 import type { FromJsonSchema } from "@red-cup-engineering/transform-json-schema-to-typescript-service/types";
 
-const MarkSchema = {
+export const MarkSchema = {
   type: "object",
   required: ["kind", "value"],
   properties: {
@@ -24,7 +24,7 @@ const MarkSchema = {
   additionalProperties: false,
 } as const;
 
-const TokenSchema = {
+export const TokenSchema = {
   type: "object",
   required: ["kind", "hand", "mark"],
   properties: {
@@ -35,7 +35,7 @@ const TokenSchema = {
   additionalProperties: false,
 } as const;
 
-const ClaimSchema = {
+export const ClaimSchema = {
   type: "object",
   required: ["kind", "hand", "mark"],
   properties: {

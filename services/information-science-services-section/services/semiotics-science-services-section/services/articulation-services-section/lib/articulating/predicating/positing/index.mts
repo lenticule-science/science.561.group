@@ -11,6 +11,8 @@
  */
 export {
   chargeSide,
+  ChargeSideSchema,
+  ChargeCarrierSchema,
   chargeSideNames,
   chargeValue,
   chargeValues,
@@ -276,3 +278,6 @@ export type {
 
 export * as logic from "./logic/index.mjs";
 export * as settling from "./settling/index.mjs";
+
+export { twistProduct } from "./twist-product.mjs";
+export type { ResiduatedCoordinateAlgebra, TwistValue, TwistPair } from "./twist-product.mjs";

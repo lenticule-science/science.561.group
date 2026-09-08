@@ -1,6 +1,8 @@
 import { assertRow } from "@red-cup-engineering/eavt";
-import { mark } from "../utterance.mjs";
-import { witnessedPotential } from "./positing/bilattice-charge.mjs";
+import { mark, token, claim } from "../utterance.mjs";
+import { chargeSideName, witnessedPotential } from "./positing/bilattice-charge.mjs";
+import { cell, predicateOfClaim } from "./predication.mjs";
+import { meme } from "./positing/fiber.mjs";
 /**
  * Project one admitted positive EAVT assertion into its cell and witnessed charge.
  * @param row The canonical operational row.
@@ -9,7 +11,7 @@ import { witnessedPotential } from "./positing/bilattice-charge.mjs";
  */
 export function eavtToCell(row) {
     assertRow(row);
-    return { cell: { subject: row.e, predicate: row.a, object: row.v }, charge: witnessedPotential(mark(row.t)) };
+    return meme(cell(token(mark(row.e)), predicateOfClaim(claim(mark(row.a))), token(mark(row.v))), witnessedPotential(mark(row.t)));
 }
 /**
  * Project positive witnesses into canonical operational rows.
@@ -18,10 +20,12 @@ export function eavtToCell(row) {
  * @throws {TypeError} When negative evidence is present or a row is inadmissible.
  */
 export function cellToEavt(charged) {
-    if (charged.charge.value[1] || charged.charge.evidence[1].length > 0) {
+    if (chargeSideName(charged.charge.value[1]) === "present" || charged.charge.evidence[1].length > 0) {
         throw new TypeError("cellToEavt: negative evidence requires independentEvidenceRow");
     }
-    const { subject: e, predicate: a, object: v } = charged.cell;
+    const e = charged.cell.subject.mark.value;
+    const a = charged.cell.predicate.claim.mark.value;
+    const v = charged.cell.object.mark.value;
     return charged.charge.evidence[0].map((witness) => assertRow({ e, a, v, t: witness.value }));
 }
 //# sourceMappingURL=eavt.mjs.map

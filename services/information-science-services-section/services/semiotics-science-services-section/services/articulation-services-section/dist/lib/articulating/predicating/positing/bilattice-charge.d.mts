@@ -15,18 +15,17 @@
  * content coincidence (this package is content-addressed and boundary-first), so
  * two witnesses with equal payloads count once and survive a transport round-trip.
  */
+import type { FromJsonSchema } from "@red-cup-engineering/transform-json-schema-to-typescript-service/types";
 import { Mark } from "../../utterance.mjs";
+import { type TwistPair, type TwistValue } from "./twist-product.mjs";
 /** The four bilattice charge value names. */
 export type ChargeValueName = "potential" | "active" | "stable" | "absurd";
 /** A charge side coordinate name. */
 export type ChargeSideName = "absent" | "present";
 /** One side coordinate of a charge. */
-export interface ChargeSide {
-    readonly kind: "bilattice-charge.side";
-    readonly name: ChargeSideName;
-}
+export type ChargeSide = FromJsonSchema<typeof ChargeSideSchema>;
 /** A charge point: [truth, falsity] sides. */
-export type ChargeCoordinates = readonly [truth: ChargeSide, falsity: ChargeSide];
+export type ChargeCoordinates = TwistValue<ChargeSide>;
 /** A named point of the four-element bilattice. */
 export interface ChargeValue {
     readonly kind: "bilattice-charge.value";
@@ -34,11 +33,95 @@ export interface ChargeValue {
     readonly coordinates: ChargeCoordinates;
 }
 /** A charge bearing evidence: the side coordinates and the witness lists per side. */
-export interface ChargeCarrier {
-    readonly kind: "bilattice-charge.carrier";
-    readonly value: ChargeCoordinates;
-    readonly evidence: readonly [readonly Mark[], readonly Mark[]];
-}
+export type ChargeCarrier = FromJsonSchema<typeof ChargeCarrierSchema>;
+export declare const ChargeSideSchema: {
+    readonly type: "object";
+    readonly required: readonly ["kind", "name"];
+    readonly properties: {
+        readonly kind: {
+            readonly const: "bilattice-charge.side";
+        };
+        readonly name: {
+            readonly enum: readonly ["absent", "present"];
+        };
+    };
+    readonly additionalProperties: false;
+};
+export declare const ChargeCarrierSchema: {
+    readonly type: "object";
+    readonly required: readonly ["kind", "value", "evidence"];
+    readonly properties: {
+        readonly kind: {
+            readonly const: "bilattice-charge.carrier";
+        };
+        readonly value: {
+            readonly type: "array";
+            readonly prefixItems: readonly [{
+                readonly type: "object";
+                readonly required: readonly ["kind", "name"];
+                readonly properties: {
+                    readonly kind: {
+                        readonly const: "bilattice-charge.side";
+                    };
+                    readonly name: {
+                        readonly enum: readonly ["absent", "present"];
+                    };
+                };
+                readonly additionalProperties: false;
+            }, {
+                readonly type: "object";
+                readonly required: readonly ["kind", "name"];
+                readonly properties: {
+                    readonly kind: {
+                        readonly const: "bilattice-charge.side";
+                    };
+                    readonly name: {
+                        readonly enum: readonly ["absent", "present"];
+                    };
+                };
+                readonly additionalProperties: false;
+            }];
+            readonly minItems: 2;
+            readonly maxItems: 2;
+            readonly items: false;
+        };
+        readonly evidence: {
+            readonly type: "array";
+            readonly prefixItems: readonly [{
+                readonly type: "array";
+                readonly items: {
+                    readonly type: "object";
+                    readonly required: readonly ["kind", "value"];
+                    readonly properties: {
+                        readonly kind: {
+                            readonly const: "utterance.mark";
+                        };
+                        readonly value: {};
+                    };
+                    readonly additionalProperties: false;
+                };
+            }, {
+                readonly type: "array";
+                readonly items: {
+                    readonly type: "object";
+                    readonly required: readonly ["kind", "value"];
+                    readonly properties: {
+                        readonly kind: {
+                            readonly const: "utterance.mark";
+                        };
+                        readonly value: {};
+                    };
+                    readonly additionalProperties: false;
+                };
+            }];
+            readonly minItems: 2;
+            readonly maxItems: 2;
+            readonly items: false;
+        };
+    };
+    readonly description: "A charge bearing evidence: the [truth, falsity] side coordinates and the witness Marks per side.";
+    readonly additionalProperties: false;
+};
 /** The finite carrier of the charge bilattice: its sides and four values. */
 export interface ChargeFiniteAlgebraCarrier {
     readonly kind: "bilattice-charge.finiteAlgebra";
@@ -61,7 +144,7 @@ export declare const chargeSide: (name: ChargeSideName) => ChargeSide;
  * @example
  * ```ts
  * chargeValue("active").coordinates.map(chargeSideName)
- * // ["present", "absent"]
+ * // ["absent", "present"]
  * ```
  */
 export declare function chargeValue(name: ChargeValueName): ChargeValue;
@@ -73,6 +156,96 @@ export declare const chargeFiniteAlgebra: ChargeFiniteAlgebraCarrier;
 export declare const chargeSideName: (side: ChargeSide) => ChargeSideName;
 /** The name of a charge value. */
 export declare const chargeValueName: (value: ChargeValue) => ChargeValueName;
+/** The two-coordinate specialization of the shared twist-product program. */
+export declare const chargeTwist: Readonly<{
+    value: (positive: {
+        readonly kind: "bilattice-charge.side";
+        readonly name: "absent" | "present";
+    }, negative: {
+        readonly kind: "bilattice-charge.side";
+        readonly name: "absent" | "present";
+    }) => TwistValue<{
+        readonly kind: "bilattice-charge.side";
+        readonly name: "absent" | "present";
+    }>;
+    knowledgeBottom: TwistValue<{
+        readonly kind: "bilattice-charge.side";
+        readonly name: "absent" | "present";
+    }>;
+    knowledgeTop: TwistValue<{
+        readonly kind: "bilattice-charge.side";
+        readonly name: "absent" | "present";
+    }>;
+    truthBottom: TwistValue<{
+        readonly kind: "bilattice-charge.side";
+        readonly name: "absent" | "present";
+    }>;
+    truthTop: TwistValue<{
+        readonly kind: "bilattice-charge.side";
+        readonly name: "absent" | "present";
+    }>;
+    one: TwistValue<{
+        readonly kind: "bilattice-charge.side";
+        readonly name: "absent" | "present";
+    }>;
+    meetKnowledge: ({ left: a, right: b }: TwistPair<{
+        readonly kind: "bilattice-charge.side";
+        readonly name: "absent" | "present";
+    }>) => TwistValue<{
+        readonly kind: "bilattice-charge.side";
+        readonly name: "absent" | "present";
+    }>;
+    joinKnowledge: ({ left: a, right: b }: TwistPair<{
+        readonly kind: "bilattice-charge.side";
+        readonly name: "absent" | "present";
+    }>) => TwistValue<{
+        readonly kind: "bilattice-charge.side";
+        readonly name: "absent" | "present";
+    }>;
+    meetTruth: ({ left: a, right: b }: TwistPair<{
+        readonly kind: "bilattice-charge.side";
+        readonly name: "absent" | "present";
+    }>) => TwistValue<{
+        readonly kind: "bilattice-charge.side";
+        readonly name: "absent" | "present";
+    }>;
+    joinTruth: ({ left: a, right: b }: TwistPair<{
+        readonly kind: "bilattice-charge.side";
+        readonly name: "absent" | "present";
+    }>) => TwistValue<{
+        readonly kind: "bilattice-charge.side";
+        readonly name: "absent" | "present";
+    }>;
+    leqKnowledge: ({ left: a, right: b }: TwistPair<{
+        readonly kind: "bilattice-charge.side";
+        readonly name: "absent" | "present";
+    }>) => boolean;
+    leqTruth: ({ left: a, right: b }: TwistPair<{
+        readonly kind: "bilattice-charge.side";
+        readonly name: "absent" | "present";
+    }>) => boolean;
+    negate: (a: TwistValue<{
+        readonly kind: "bilattice-charge.side";
+        readonly name: "absent" | "present";
+    }>) => TwistValue<{
+        readonly kind: "bilattice-charge.side";
+        readonly name: "absent" | "present";
+    }>;
+    fuse: ({ left: a, right: b }: TwistPair<{
+        readonly kind: "bilattice-charge.side";
+        readonly name: "absent" | "present";
+    }>) => TwistValue<{
+        readonly kind: "bilattice-charge.side";
+        readonly name: "absent" | "present";
+    }>;
+    imply: ({ left: a, right: b }: TwistPair<{
+        readonly kind: "bilattice-charge.side";
+        readonly name: "absent" | "present";
+    }>) => TwistValue<{
+        readonly kind: "bilattice-charge.side";
+        readonly name: "absent" | "present";
+    }>;
+}>;
 /** Whether a string names a charge value. */
 export declare function isChargeValueName(value: string): value is ChargeValueName;
 /** Whether a string names a charge side. */
@@ -97,6 +270,8 @@ export declare const sameChargeValue: (left: ChargeValue, right: ChargeValue) =>
 export declare function sameCharge(left: ChargeCarrier, right: ChargeCarrier): boolean;
 /** The charge value named by a carrier's coordinates. */
 export declare function valueOf(c: ChargeCarrier): ChargeValue;
+/** Name a point of the finite charge specialization. */
+export declare function chargeValueAt([truth, falsity]: ChargeCoordinates): ChargeValue;
 /** The knowledge-order bottom: absurd with no evidence. */
 export declare const bottom: ChargeCarrier;
 /** A potential carrier whose positive side carries the given witness. */
@@ -118,7 +293,7 @@ export declare const meetTruth: (left: ChargeCarrier, right: ChargeCarrier) => C
  * @example
  * ```ts
  * chargeValueName(joinKnowledgeValue(chargeValue("active"), chargeValue("stable")))
- * // "absurd"
+ * // "stable"
  * ```
  */
 export declare const joinKnowledgeValue: (left: ChargeValue, right: ChargeValue) => ChargeValue;

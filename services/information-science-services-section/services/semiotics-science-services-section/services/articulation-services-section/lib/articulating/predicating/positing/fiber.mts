@@ -16,6 +16,7 @@
  * @packageDocumentation
  */
 import {
+  CellSchema,
   cellCoincides,
   entitySet,
   isCell,
@@ -30,6 +31,7 @@ import {
   type PredicationTerm,
 } from "../predication.mjs";
 import {
+  ChargeCarrierSchema,
   bottom,
   charge,
   chargeValue,
@@ -53,78 +55,6 @@ import type { FromJsonSchema } from "@red-cup-engineering/transform-json-schema-
 // supplies the runtime constructor and the morphisms over it. A charged
 // assignment within a fiber: one cell bound to a charge, the minimal
 // transmissible unit of meaning-with-evidence.
-const MarkSchema = {
-  type: "object",
-  required: ["kind", "value"],
-  properties: { kind: { const: "utterance.mark" }, value: {} },
-  additionalProperties: false,
-} as const;
-
-const TokenSchema = {
-  type: "object",
-  required: ["kind", "hand", "mark"],
-  properties: { kind: { const: "utterance.token" }, hand: { const: "left" }, mark: MarkSchema },
-  additionalProperties: false,
-} as const;
-
-const ClaimSchema = {
-  type: "object",
-  required: ["kind", "hand", "mark"],
-  properties: { kind: { const: "utterance.claim" }, hand: { const: "right" }, mark: MarkSchema },
-  additionalProperties: false,
-} as const;
-
-const PredicateSchema = {
-  type: "object",
-  required: ["kind", "claim", "mark"],
-  properties: { kind: { const: "predication.predicate" }, claim: ClaimSchema, mark: MarkSchema },
-  additionalProperties: false,
-} as const;
-
-const CellSchema = {
-  type: "object",
-  required: ["subject", "predicate", "object"],
-  properties: { subject: TokenSchema, predicate: PredicateSchema, object: TokenSchema },
-  additionalProperties: false,
-} as const;
-
-const ChargeSideSchema = {
-  type: "object",
-  required: ["kind", "name"],
-  properties: {
-    kind: { const: "bilattice-charge.side" },
-    name: { enum: ["absent", "present"] },
-  },
-  additionalProperties: false,
-} as const;
-
-const ChargeCarrierSchema = {
-  type: "object",
-  required: ["kind", "value", "evidence"],
-  properties: {
-    kind: { const: "bilattice-charge.carrier" },
-    value: {
-      type: "array",
-      prefixItems: [ChargeSideSchema, ChargeSideSchema],
-      minItems: 2,
-      maxItems: 2,
-      items: false,
-    },
-    evidence: {
-      type: "array",
-      prefixItems: [
-        { type: "array", items: MarkSchema },
-        { type: "array", items: MarkSchema },
-      ],
-      minItems: 2,
-      maxItems: 2,
-      items: false,
-    },
-  },
-  description: "A charge bearing evidence: the [truth, falsity] side coordinates and the witness Marks per side.",
-  additionalProperties: false,
-} as const;
-
 /** The meme carrier shape: one predication cell bound to one bilattice charge. */
 const memeShape = {
   kind: { const: "predication.fiber.meme" },
