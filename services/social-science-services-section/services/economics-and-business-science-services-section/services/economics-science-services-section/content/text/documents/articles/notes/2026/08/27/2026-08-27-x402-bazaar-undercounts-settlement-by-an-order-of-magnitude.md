@@ -29,35 +29,30 @@ The full record, with every number and its method shown, is persisted at [`data/
 
 ## The Bazaar catalog, measured directly
 
-The coordinator read the Bazaar's discovery catalog complete on 2026-08-27, via `GET api.cdp.coinbase.com/platform/v2/x402/discovery/resources` — the same endpoint the [agent-to-agent-commerce note](./2026-08-27-note-on-agent-to-agent-commerce-and-machine-payable-apis.md)'s source record had previously only reached by search synthesis.
-14,841 resources total, 14,781 live, 60 dormant.
-292,674 total calls and 42,316 unique payers over the trailing 30 days.
-Prices across live resources, in USDC, run from $0 (only 2 free resources) through a median of $0.01 to a $1,000 maximum outlier, with the bulk of the catalog — p25 to p75 — priced between $0.003 and $0.05.
+The coordinator read the Bazaar's discovery catalog complete via `GET api.cdp.coinbase.com/platform/v2/x402/discovery/resources` — the same endpoint the [agent-to-agent-commerce note](./2026-08-27-note-on-agent-to-agent-commerce-and-machine-payable-apis.md)'s source record had previously only reached by search synthesis. The catalog's total resource count, live/dormant split, trailing-30-day call and unique-payer totals, and full price distribution are carried in the source record cited above; broadly, live resources are priced from free through a four-figure outlier, with the bulk of the catalog priced in small fractions of a dollar.
 
-Revenue is sharply concentrated: an estimated $30,627 in total 30-day catalog revenue, of which a single Bitrefill gift-card payment rail — not a computation or data service — earns $21,000.
-The top ten resources combined take $23,791, or 78% of catalog revenue; the remaining 14,771 live resources (14,781 live minus those top ten) split the other $6,836, about $0.46 each per month.
-Read plainly: one consumer payment rail earns roughly two-thirds of everything the entire catalog earns, and the median listed resource earns under fifty cents a month — this is a market with one large commercial artery and a very long, very thin tail, not yet a broad marketplace of priced computation.
+Revenue is sharply concentrated — exact per-resource and aggregate figures are in the source record — with a single Bitrefill gift-card payment rail, not a computation or data service, earning roughly two-thirds of the catalog's total 30-day revenue, the top ten resources taking most of the rest, and the remaining live resources splitting a small remainder at well under a dollar each per month. This is a market with one large commercial artery and a very long, very thin tail, not a broad marketplace of priced computation.
 
-The highest-demand resources by unique payer count are, per the coordinator's read, thin wrappers over Ethereum JSON-RPC — ERC-20 balance lookup, ENS resolution, wallet balance, block height, transaction-by-hash — each drawing roughly 1,000 unique payers and roughly 1,000 calls over 30 days, a [calls-per-payer](../../../../../../glossary/terms/calls-per-payer.md) ratio near 1:1.
+The highest-demand resources by unique payer count are, per the coordinator's read, thin wrappers over Ethereum JSON-RPC — ERC-20 balance lookup, ENS resolution, wallet balance, block height, transaction-by-hash — each drawing a similar number of unique payers to calls over 30 days (exact counts in the source record), a [calls-per-payer](../../../../../../glossary/terms/calls-per-payer.md) ratio near 1:1.
 As that term explains in full, a ratio this close to one is diagnostic: it reads as roughly a thousand distinct agents each sampling the endpoint once, not as a smaller number of agents each integrating it into a repeated workflow.
-By distinct payers, demand skews heavily toward chain-data lookups (17,988) over search/web (5,589), market/price (5,356), identity/security (2,998), math/compute (1,920), ai/inference (1,493), and geo/time (769) — the catalog's actual demand is disproportionately blockchain-adjacent utility calls, not the AI-inference-marketplace framing the protocol sometimes gets in promotional writing.
+By distinct payers, demand skews heavily toward chain-data lookups, ahead of search/web, market/price, identity/security, math/compute, ai/inference, and geo/time, in that order (exact per-category counts and the unreconciled gap are in the source record) — the catalog's actual demand is disproportionately blockchain-adjacent utility calls, not the AI-inference-marketplace framing the protocol sometimes gets in promotional writing.
 
 ## On-chain settlement, measured directly
 
 Independently, the coordinator queried `eth_getLogs` against Base mainnet USDC (`0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913`) for the `AuthorizationUsed(address,bytes32)` event — the log [EIP-3009](../../../../../../glossary/terms/eip-3009.md)'s `transferWithAuthorization` mechanism emits on every completed gasless authorization, detailed in full at [`transfer-with-authorization`](../../../../../../glossary/terms/transfer-with-authorization.md).
-A 900-block window at block 50548585 — about 30 minutes of Base blocks — contained 2,279 such events from 645 distinct authorizer addresses.
+A single sampled window of Base blocks was read directly; the window size, block range, and raw event and distinct-address counts are in the source record.
 
-Event counts sum linearly across non-overlapping windows, so this rate extrapolates (under a stationarity assumption this note flags rather than hides) to roughly 109,392 authorizations per day and 3.28 million per 30 days.
-The 645-distinct-address figure is deliberately *not* extrapolated the same way — unique-address counts do not sum across windows the way discrete event counts do, since the same address can recur — so no 30-day unique-authorizer estimate is offered here; see the record for the full reasoning.
+Event counts sum linearly across non-overlapping windows, so the sampled rate extrapolates (under a stationarity assumption this note flags rather than hides) to a 30-day on-chain authorization-volume estimate; the day- and 30-day-rate figures behind that estimate are in the source record.
+The distinct-address count from the sample is deliberately *not* extrapolated the same way — unique-address counts do not sum across windows the way discrete event counts do, since the same address can recur — so no 30-day unique-authorizer estimate is offered here; see the record for the full reasoning.
 
 ## The finding
 
-$$292{,}674 \div 3{,}281{,}760 = 0.089$$
+The exact call-count and extrapolated on-chain-volume figures this finding divides are in the source record cited above.
 
 The Bazaar catalog's own reported 30-day call count is about **9%** of the volume the on-chain extrapolation implies.
 Inverted, the on-chain estimate runs about **11×** the Bazaar's own reported figure.
-**A market size derived from the Bazaar catalog alone — the only free, keyless, single-request aggregate the protocol currently publishes — understates the protocol's actual settlement activity by roughly an order of magnitude.**
-This is not a claim that this estate's existing x402 figures are wrong: the [agent-to-agent-commerce note](./2026-08-27-note-on-agent-to-agent-commerce-and-machine-payable-apis.md)'s companion record already carries an x402scan-derived figure — real (speculation-adjusted) volume near 3.69 million transactions per 30 days — that sits within about 12% of this note's own 3.28-million on-chain estimate, meaning x402scan (a chain explorer) already tracks something close to true on-chain volume, and is not the figure this finding corrects.
+**A market size derived from the Bazaar catalog alone — the only free, keyless, single-request aggregate the protocol publishes — understates the protocol's actual settlement activity by roughly an order of magnitude.**
+This is not a claim that this estate's existing x402 figures are wrong: the [agent-to-agent-commerce note](./2026-08-27-note-on-agent-to-agent-commerce-and-machine-payable-apis.md)'s companion record already carries an x402scan-derived 30-day volume figure that sits close to this note's own on-chain estimate (both figures in their respective records), meaning x402scan (a chain explorer) already tracks something close to true on-chain volume, and is not the figure this finding corrects.
 The specific trap this finding names is narrower and more concrete: the Bazaar discovery catalog specifically, whose registration is gated on a completed settlement through the CDP Facilitator (mechanic detailed in the [agent-to-agent-commerce note](./2026-08-27-note-on-agent-to-agent-commerce-and-machine-payable-apis.md) and its source record) rather than on deployment alone, is a curated opt-in subset of the underlying settlement rail — and its own aggregate call count, taken alone, is the wrong denominator for "how big is this market."
 
 ## The caveat this finding rests on, stated as prominently as the finding itself
