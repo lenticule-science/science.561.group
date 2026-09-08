@@ -29,7 +29,7 @@
     "@red-cup-engineering/javascript-file-main-guard-service": "0.1.3",
     "@red-cup-engineering/lean-blueprint-chart-service": "0.0.2",
     "@red-cup-engineering/ni-services-section": "0.1.2",
-    "@red-cup-engineering/path-walking-service": "1.3.1",
+    "@red-cup-engineering/path-walking-service": "0.5.0",
     "@red-cup-engineering/project-file-url-filepath-service": "0.1.0",
     "@red-cup-engineering/read-javascript-node-standard-input-text-service": "0.2.1",
     "@red-cup-engineering/remove-path-service": "0.1.0",

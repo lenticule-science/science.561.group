@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@red-cup-engineering/cairn": "0.1.0",
-    "@red-cup-engineering/discord-rest-transport-service": "1.1.0",
+    "@red-cup-engineering/discord-rest-transport-service": "0.2.0",
     "@red-cup-engineering/drew": "0.1.1",
     "@red-cup-engineering/education-platform-service": "0.2.4",
     "@red-cup-engineering/exchange-google-callback-service": "0.1.2",
@@ -43,7 +43,7 @@
     "test": "node --import tsx --test test/*.test.mjs"
   },
   "devDependencies": {
-    "@red-cup-engineering/node-runtime-release-materialization-service": "1.2.4",
+    "@red-cup-engineering/node-runtime-release-materialization-service": "0.6.0",
     "esbuild": "0.28.2",
     "tsx": "4.23.13",
     "wrangler": "4.123.0"
