@@ -3,9 +3,11 @@ name: "accounts payable"
 aliases:
   - "accounts payable"
   - "payables"
+  - "AP"
 date-created: 2026-03-06
 authors:
   - claude-opus-4-6
+description: "A present obligation to suppliers for received goods or services that has not yet been settled."
 keywords:
   - Accounting
 instance-of: account
@@ -27,5 +29,5 @@ Managing accounts payable means preserving the evidence for each obligation,
 tracking its due date and payment terms, and settling it without duplicate or
 late payment. Paying earlier than required trades away liquidity and is useful
 only when a discount, relationship, or other financing consideration justifies
-that cost. The timing of payables relative to receivable collection is one
-component of the entity's cash conversion cycle and working-capital need.
+that cost. The timing of payables relative to receivable collection helps
+determine the entity's cash conversion cycle and working-capital need.

@@ -20,6 +20,9 @@ references:
     year: 1990
     publication: The World Bank Economic Review 4(3)
     doi: 10.1093/wber/4.3.351
+relations:
+  uses:
+    - tally
 ---
 Tally credit is a line of credit whose limit is a function of the counterparty's record of matched tallies, the release and admission receipts that agree on each past crossing, and never of the balance the counterparty holds. A [tally](./tally.md) is the border-reconciled form of a [wit](./wit.md): not a unit held at a position but a matched pair of receipts held by two counterparties, and a counterparty with a long unbroken tally record has demonstrated circulation, not holdings. The limit is computed from that record alone: the count of matched pairs in the window times the median settled size, times a factor that falls to zero with any unmatched half-tally older than the settlement window.
 

@@ -3,11 +3,16 @@ name: "accounts receivable"
 aliases:
   - "accounts receivable"
   - "receivables"
+  - "AR"
 date-created: 2026-03-06
+description: "An enforceable right to consideration for delivered goods or services that has not yet been collected in cash."
 keywords:
   - Accounting
 instance-of: account
 component-of: balance-sheet
+requires:
+  - accrual-accounting
+  - revenue-recognition
 ---
 
 Accounts receivable is the money owed to an entity by its customers for goods or services delivered but not yet paid for.

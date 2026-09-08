@@ -50,7 +50,7 @@ Create a spreadsheet with one column per week, extending 8–12 weeks forward.
 
 **Inflows** (money coming in this week):
 - Daily sales (estimated from historical averages, adjusted for seasonality)
-- [Accounts receivable](../../../glossary/terms/accounts-receivable.md) collections (invoices you expect to be paid)
+- [Accounts receivable](../../../../../services/accounting-services-section/content/text/glossary/terms/accounts-receivable.md) collections (invoices you expect to be paid)
 - Other inflows (investor deposits, loan proceeds, tax refunds)
 
 **Outflows** (money going out this week):
@@ -105,7 +105,7 @@ Cash flow management is largely about timing — ensuring that inflows arrive be
 
 ### Accelerating inflows
 
-- **Collect at point of sale**: For walk-in customers, cash and card payment at the time of service eliminates [accounts receivable](../../../glossary/terms/accounts-receivable.md) entirely. This is why restaurants have better cash flow than consulting firms.
+- **Collect at point of sale**: For walk-in customers, cash and card payment at the time of service eliminates [accounts receivable](../../../../../services/accounting-services-section/content/text/glossary/terms/accounts-receivable.md) entirely. This is why restaurants have better cash flow than consulting firms.
 - **Invoice immediately**: For catering, events, and wholesale — send the invoice the day of service. Every day of delay pushes collection back by a day.
 - **Shorten payment terms**: Net 15 instead of Net 30 if the market allows it. Or offer a small discount for early payment: "2% discount if paid within 10 days" (known as 2/10 Net 30).
 - **Require deposits**: For large orders or events, require 50% up front. This shifts cash receipt earlier and reduces collection risk.
@@ -187,5 +187,5 @@ If the cash flow problem isn't a timing issue but a structural one — the busin
 ## Guidance
 
 - Build an 8-week cash flow forecast for a business you operate or are planning. Use actual numbers where available and realistic estimates where not. Identify the tightest week — what would push it into negative territory?
-- Review your [accounts receivable](../../../glossary/terms/accounts-receivable.md) aging. How much is outstanding over 30 days? What would collecting it this week do to your cash position?
+- Review your [accounts receivable](../../../../../services/accounting-services-section/content/text/glossary/terms/accounts-receivable.md) aging. How much is outstanding over 30 days? What would collecting it this week do to your cash position?
 - Calculate your reserve target (2–3 months of fixed costs). How far are you from it? Set a weekly savings amount to reach the target within 12 months.

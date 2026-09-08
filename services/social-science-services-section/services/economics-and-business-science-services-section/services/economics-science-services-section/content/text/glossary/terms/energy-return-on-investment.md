@@ -21,6 +21,7 @@ references:
 relations:
   distinguished-from:
     - energy-storage-return-on-investment
+    - cognitive-eroei
   enables:
     - energy-cliff
 ---

@@ -13,6 +13,7 @@ keywords:
 component-of: double-entry-bookkeeping
 produces: ledger
 contains: debit-and-credit
+requires: account
 ---
 
 A journal is the chronological record of admitted accounting entries. A journal

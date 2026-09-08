@@ -1,0 +1,9 @@
+{
+  "name": "@red-cup-engineering/feng-shui-services-section",
+  "version": "0.1.0",
+  "description": "Studies the Feng Shui traditions that ground the 561 Group Feng Shui program.",
+  "type": "module",
+  "keywords": [
+    "science"
+  ]
+}

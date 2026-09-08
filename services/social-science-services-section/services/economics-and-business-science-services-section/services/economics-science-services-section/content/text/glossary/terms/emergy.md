@@ -7,6 +7,9 @@ aliases:
   - "sej"
 description: "Howard Odum's accounting concept of the total amount of one form of available energy, usually solar, directly or indirectly required to make a product or service, letting energy sources of very different quality be compared on a common basis via a transformity factor."
 references: {}
+relations:
+  contrasts-with:
+    - energy-return-on-investment
 ---
 
 **Emergy** (a contraction of "embodied energy"), developed by Howard T. Odum and set out systematically in his 1996 book *Environmental Accounting: Emergy and Environmental Decision Making*, is the total amount of one form of available energy — by convention, solar energy — that was directly or indirectly required, at every upstream step, to make a given product or service. Emergy is measured in solar emjoules (sej) and is distinct from a simple energy tally (measured in ordinary joules) because it accounts for energy *quality*: a joule of concentrated, high-quality energy (electricity, refined fuel, human labor) required a much larger number of joules of lower-quality diffuse energy (raw sunlight) to produce, and Odum's **transformity** factor (sej per joule) states that ratio for each energy form, letting fundamentally different energy types and even non-energy inputs (labor, information, ecosystem services) be compared on one common accounting basis.

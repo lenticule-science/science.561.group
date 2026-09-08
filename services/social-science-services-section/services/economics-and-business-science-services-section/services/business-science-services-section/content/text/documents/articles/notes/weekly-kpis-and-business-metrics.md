@@ -71,7 +71,7 @@ The bank balance right now, compared to what the [cash flow forecast](./managing
 
 ---
 
-**3. [Accounts receivable](../../../glossary/terms/accounts-receivable.md) aging**
+**3. [Accounts receivable](../../../../../services/accounting-services-section/content/text/glossary/terms/accounts-receivable.md) aging**
 
 Total outstanding AR, broken into buckets: current (not yet due), 1–30 days past due, 31–60 days past due, 60+ days past due.
 

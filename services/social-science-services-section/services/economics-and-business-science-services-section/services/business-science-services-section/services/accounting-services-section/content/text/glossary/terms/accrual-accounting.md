@@ -6,7 +6,6 @@ aliases:
 date-created: 2026-03-06
 keywords:
   - Accounting
-restricts: double-entry-bookkeeping
 contrasts-with: cash-accounting
 enables: revenue-recognition
 ---
