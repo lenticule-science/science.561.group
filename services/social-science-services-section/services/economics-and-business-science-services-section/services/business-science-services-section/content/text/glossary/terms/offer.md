@@ -1,0 +1,18 @@
+---
+aliases:
+  - capability offer
+description: "An offer is what an enterprise sells: one operation with its contract, reached at one boundary, priced in terms stated per settlement rail, published to a named set of markets, booked to one ledger account, and consuming named resources. It is the unit of sale, one level below the capability it sells and one level above the individual settled call."
+identity: offer
+name: Offer
+provenance:
+  date-created: 2026-09-08
+---
+An offer is what an enterprise sells: one operation with its contract, reached at one boundary, priced in terms stated per settlement rail, published to a named set of markets, booked to one ledger account, and consuming named resources. Each of those six is part of the offer and not commentary on it: the operation says what is done, the contract says what goes in and what comes out, the boundary says where a buyer reaches it (a URL, a method, a body), the price terms say what is owed and in what asset on what network, the markets say where the offer is published so a buyer can find it, and the ledger account says where a settlement lands in the seller's books.
+
+It differs from a capability in that a capability is what an [enterprise](./enterprise.md) can do, while an offer is one bounded sale of that capability at one boundary and one price; one capability can carry several offers, framed and priced differently for different buyers, and an enterprise's capability that is reachable by nobody and priced at nothing is not yet an offer. It differs from a price list in that a price list is a projection of offers and not their source, and from an order in that an order is one buyer's acceptance while the offer stands open to whoever meets its terms. It differs from a product in scope: a product is a whole an enterprise sells itself by, and an offer is one operation the buyer can call.
+
+The offer is typed, and the operations on it are these. To declare an offer is to state those six parts once as data. To project an offer to a market is to derive that market's own form of it from the declaration, never to author a second statement of the same product. To assay an offer is to observe the live boundary and compare what it demands against what the declaration says. To settle a call is to take payment for one invocation of the operation. To withdraw an offer is to remove it from each market it was projected to, which is a set the declaration itself names.
+
+The house's executable model of an offer is `org.emsenn.capability-offer.v3`, published per provider through an ActivityPub outbox rather than held in any market's global catalog; it carries the operation, the provider, the law and agent card that identify the provider, the price as protocol, asset, amount, and network, and a coordinate for each thing a buyer would need to check before paying, each coordinate either a reference or a typed residual naming what is missing. A seller that needs an offer object uses that model; a second offer format is duplication, not a new capability.
+
+The engineering consequence is that a market listing, a discovery declaration, a catalog row, and a ledger account are all derivations of one offer declaration and never separate authorings, so a price quoted on an index, a price demanded at the boundary, and a price expected by the assay cannot disagree except by a defect in one derivation. That is what makes several independently deployed sellers legible as one business: they share the declaration's shape, so their offers can be listed, compared, assayed, and booked together, and a settlement can be attributed to the offer that earned it rather than to whichever seller happens to share the payout address.
