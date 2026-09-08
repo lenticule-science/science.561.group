@@ -12,17 +12,10 @@
  * `UtteranceCarrier` is derived from the plain schema literal. The schema is the carrier's identity and runtime
  * law; this module supplies the declaration, constructors, and morphisms over it.
  */
-import type { FromJsonSchema } from "@red-cup-engineering/transform-json-schema-to-typescript-service/types";
+import type { FromJsonSchema } from "@red-cup-engineering/computer-data-type-engine/types";
 
-export const MarkSchema = {
-  type: "object",
-  required: ["kind", "value"],
-  properties: {
-    kind: { const: "utterance.mark" },
-    value: {},
-  },
-  additionalProperties: false,
-} as const;
+import { Mark, MarkSchema, mark } from "@red-cup-engineering/computer-data-type-engine/mark";
+export { Mark, MarkSchema, mark };
 
 export const TokenSchema = {
   type: "object",
@@ -103,18 +96,6 @@ export const articulationCellSchema = {
   title: "ArticulationCell",
   description: "An utterance opened at its potential aperiodic articulation cell.",
 } as const;
-
-/** A mark: an immutable carrier wrapping a single present value. The opaque atom. */
-export class Mark {
-  readonly kind = "utterance.mark" as const;
-  readonly value: unknown;
-
-  constructor(value: unknown) {
-    if (value === undefined) throw new TypeError("Mark: value must be present");
-    this.value = value;
-    Object.freeze(this);
-  }
-}
 
 /** A token: the immutable left-hand utterance carrier holding one mark. */
 export class Token {
@@ -212,9 +193,7 @@ export type TokenIdentityJudgment = MarkCoincidenceWitness<Token> | MarkCoincide
 export type ClaimIdentityJudgment = MarkCoincidenceWitness<Claim> | MarkCoincidenceObstruction<Claim>;
 
 /** Constructs a Mark wrapping the given value. */
-export function mark(value: unknown): Mark {
-  return new Mark(value);
-}
+
 
 /** Constructs a Token from the given mark. */
 export function token(markCarrier: Mark): Token {

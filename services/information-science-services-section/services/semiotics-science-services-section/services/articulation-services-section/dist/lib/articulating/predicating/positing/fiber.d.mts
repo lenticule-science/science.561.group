@@ -18,7 +18,7 @@
 import { type Cell, type EntitySet, type PredicationPredicate, type PredicationSite, type PredicationSiteGenerators, type PredicationTerm } from "../predication.mjs";
 import { type ChargeCarrier, type ChargeValue } from "./bilattice-charge.mjs";
 import { type PositPresheaf } from "./settling/sheaf.mjs";
-import type { FromJsonSchema } from "@red-cup-engineering/transform-json-schema-to-typescript-service/types";
+import type { FromJsonSchema } from "@red-cup-engineering/computer-data-type-engine/types";
 /** The meme carrier schema: one plain JSON-Schema literal with a bare `$id`. */
 export declare const memeSchema: {
     readonly $schema: "https://json-schema.org/draft/2020-12/schema";

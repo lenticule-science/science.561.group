@@ -12,18 +12,9 @@
  * `UtteranceCarrier` is derived from the plain schema literal. The schema is the carrier's identity and runtime
  * law; this module supplies the declaration, constructors, and morphisms over it.
  */
-import type { FromJsonSchema } from "@red-cup-engineering/transform-json-schema-to-typescript-service/types";
-export declare const MarkSchema: {
-    readonly type: "object";
-    readonly required: readonly ["kind", "value"];
-    readonly properties: {
-        readonly kind: {
-            readonly const: "utterance.mark";
-        };
-        readonly value: {};
-    };
-    readonly additionalProperties: false;
-};
+import type { FromJsonSchema } from "@red-cup-engineering/computer-data-type-engine/types";
+import { Mark, MarkSchema, mark } from "@red-cup-engineering/computer-data-type-engine/mark";
+export { Mark, MarkSchema, mark };
 export declare const TokenSchema: {
     readonly type: "object";
     readonly required: readonly ["kind", "hand", "mark"];
@@ -261,12 +252,6 @@ export declare const articulationCellSchema: {
     readonly title: "ArticulationCell";
     readonly description: "An utterance opened at its potential aperiodic articulation cell.";
 };
-/** A mark: an immutable carrier wrapping a single present value. The opaque atom. */
-export declare class Mark {
-    readonly kind: "utterance.mark";
-    readonly value: unknown;
-    constructor(value: unknown);
-}
 /** A token: the immutable left-hand utterance carrier holding one mark. */
 export declare class Token {
     readonly kind: "utterance.token";
@@ -334,7 +319,6 @@ export type TokenIdentityJudgment = MarkCoincidenceWitness<Token> | MarkCoincide
 /** The result of judging two claim carriers coincident. */
 export type ClaimIdentityJudgment = MarkCoincidenceWitness<Claim> | MarkCoincidenceObstruction<Claim>;
 /** Constructs a Mark wrapping the given value. */
-export declare function mark(value: unknown): Mark;
 /** Constructs a Token from the given mark. */
 export declare function token(markCarrier: Mark): Token;
 /** Constructs a Claim from the given mark. */

@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { compileJsonSchema } from "@red-cup-engineering/validate-json-schema-service";
+import { compileJsonSchema } from "@red-cup-engineering/computer-data-type-engine";
 import { articulationCellSchema, utteranceSchema, MarkSchema, TokenSchema, ClaimSchema } from "../dist/lib/articulating/utterance.mjs";
 import { CellSchema, PredicateSchema } from "../dist/lib/articulating/predicating/predication.mjs";
 import { ChargeCarrierSchema } from "../dist/lib/articulating/predicating/positing/bilattice-charge.mjs";

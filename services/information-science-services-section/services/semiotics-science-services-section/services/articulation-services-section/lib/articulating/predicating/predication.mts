@@ -12,7 +12,7 @@
  * still coincide. A term is a Token; a predicate carries a Claim; both compare by
  * their mark value, the one place the opaque payload is read (only to dedupe).
  */
-import type { FromJsonSchema } from "@red-cup-engineering/transform-json-schema-to-typescript-service/types";
+import type { FromJsonSchema } from "@red-cup-engineering/computer-data-type-engine/types";
 import { MarkSchema, TokenSchema, ClaimSchema, coincides, type ArticulationCell, type Claim, type Mark, type Token, type UtteranceCarrier } from "../utterance.mjs";
 
 export const PredicateSchema = {

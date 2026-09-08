@@ -7,7 +7,7 @@
  * cohomology reader, and expose exactly the nonzero H¹ cells as coordination
  * obstructions. No protocol operation names participate in this certificate.
  */
-import type { FromJsonSchema } from "@red-cup-engineering/transform-json-schema-to-typescript-service/types";
+import type { FromJsonSchema } from "@red-cup-engineering/computer-data-type-engine/types";
 import { claim, mark, token } from "../../../utterance.mjs";
 import { cell as predicationCell, predicateOfClaim, type Cell } from "../../predication.mjs";
 import { natAdd, natZero, type Natural } from "./analysis/exact-number.mjs";

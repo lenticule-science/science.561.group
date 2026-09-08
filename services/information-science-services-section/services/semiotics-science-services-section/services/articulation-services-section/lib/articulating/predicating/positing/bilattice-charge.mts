@@ -15,7 +15,7 @@
  * content coincidence (this package is content-addressed and boundary-first), so
  * two witnesses with equal payloads count once and survive a transport round-trip.
  */
-import type { FromJsonSchema } from "@red-cup-engineering/transform-json-schema-to-typescript-service/types";
+import type { FromJsonSchema } from "@red-cup-engineering/computer-data-type-engine/types";
 import { MarkSchema, coincides, isMark, Mark } from "../../utterance.mjs";
 import { twistProduct, type TwistPair, type TwistValue } from "./twist-product.mjs";
 

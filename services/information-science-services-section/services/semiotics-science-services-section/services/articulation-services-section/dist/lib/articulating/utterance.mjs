@@ -1,12 +1,5 @@
-export const MarkSchema = {
-    type: "object",
-    required: ["kind", "value"],
-    properties: {
-        kind: { const: "utterance.mark" },
-        value: {},
-    },
-    additionalProperties: false,
-};
+import { Mark, MarkSchema, mark } from "@red-cup-engineering/computer-data-type-engine/mark";
+export { Mark, MarkSchema, mark };
 export const TokenSchema = {
     type: "object",
     required: ["kind", "hand", "mark"],
@@ -78,17 +71,6 @@ export const articulationCellSchema = {
     title: "ArticulationCell",
     description: "An utterance opened at its potential aperiodic articulation cell.",
 };
-/** A mark: an immutable carrier wrapping a single present value. The opaque atom. */
-export class Mark {
-    kind = "utterance.mark";
-    value;
-    constructor(value) {
-        if (value === undefined)
-            throw new TypeError("Mark: value must be present");
-        this.value = value;
-        Object.freeze(this);
-    }
-}
 /** A token: the immutable left-hand utterance carrier holding one mark. */
 export class Token {
     kind = "utterance.token";
@@ -118,9 +100,6 @@ export const markKindTwoKinds = (kind) => markKinds.includes(kind);
 /** `RelMath.Mark.Kind.token_ne_claim`: the two mark roles are distinct. */
 export const tokenNeClaim = () => true;
 /** Constructs a Mark wrapping the given value. */
-export function mark(value) {
-    return new Mark(value);
-}
 /** Constructs a Token from the given mark. */
 export function token(markCarrier) {
     return new Token(markCarrier);
