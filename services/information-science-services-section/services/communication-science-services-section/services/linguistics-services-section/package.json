@@ -9,24 +9,40 @@
     "invoke-service": "./src/contract-leader-message-parsing.js"
   },
   "scripts": {
-    "test": "node --test test/leader-message-parsing.test.js"
+    "check": "tsc --noEmit --allowImportingTsExtensions --module NodeNext --moduleResolution NodeNext --target ES2022 --strict src/compile-prompt-reading.mts src/compile-journal-prompt.mts test/prompt-reading.test.mts",
+    "build": "tsc --module NodeNext --moduleResolution NodeNext --target ES2022 --declaration --rootDir src --outDir dist src/compile-prompt-reading.mts src/compile-journal-prompt.mts",
+    "test": "node --test test/leader-message-parsing.test.js test/prompt-reading.test.mts"
   },
   "dependencies": {
     "@lenticule-science/communicating": "0.0.6",
     "@lenticule-science/english-language-algebra": "0.1.7",
+    "@red-cup-engineering/computer-data-type-engine": "0.7.0",
     "@red-cup-engineering/relational-value-graph-service": "0.1.1",
     "@red-cup-engineering/resolve-filepath-service": "0.1.1",
     "@red-cup-engineering/semantic-content-identify-service": "0.2.7",
     "@red-cup-engineering/semantic-record-journal-service": "0.1.11"
   },
   "license": "UNLICENSED",
+  "devDependencies": {
+    "@types/node": "22.20.1",
+    "typescript": "5.9.3"
+  },
   "exports": {
     ".": "./src/parse-leader-message.js",
+    "./prompt-reading": {
+      "types": "./dist/compile-prompt-reading.d.mts",
+      "import": "./dist/compile-prompt-reading.mjs"
+    },
+    "./journal-prompt": {
+      "types": "./dist/compile-journal-prompt.d.mts",
+      "import": "./dist/compile-journal-prompt.mjs"
+    },
     "./legacy-linguistics-relational-wire": "./src/legacy-linguistics-relational-wire.js",
     "./package.json": "./package.json"
   },
   "files": [
     "src",
+    "dist",
     "README.md",
     "content/capability-dependencies",
     "content/customer-relations",
