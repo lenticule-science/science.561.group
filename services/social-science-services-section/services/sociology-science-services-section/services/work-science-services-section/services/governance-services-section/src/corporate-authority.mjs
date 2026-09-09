@@ -34,6 +34,9 @@ export const authorityEvaluationDecisionSchema = {
   properties: { kind: { const: "governance.authority-evaluation-decision" }, allowed: { type: "boolean" }, reason: identifierSchema, snapshotRevision: { type: ["string", "null"] }, evidenceRefs: { type: "array", items: identifierSchema } },
 };
 
+/** Structural admission only. Snapshot provenance is admitted by the effect boundary;
+ * freshness, distinct identities, and grant ancestry are checked by evaluateAuthority. */
+export const trustedAuthorityStateCarrier = carrierFrom(trustedAuthorityStateSchema);
 export const authorityEvaluationRequestCarrier = carrierFrom(authorityEvaluationRequestSchema);
 export const authorityEvaluationDecisionCarrier = carrierFrom(authorityEvaluationDecisionSchema);
 

@@ -18,6 +18,8 @@ export type AuthorityEvaluationSpecialization<RequestKind extends string, Decisi
 export const authorityMembershipSchema: object;
 export const authorityGrantSchema: object;
 export const trustedAuthorityStateSchema: object;
+/** Validates structure; evaluateAuthority checks freshness, identities, and ancestry. */
+export const trustedAuthorityStateCarrier: AuthorityCarrier<TrustedAuthorityState>;
 export const authorityEvaluationRequestSchema: object;
 export const authorityEvaluationDecisionSchema: object;
 export const authorityEvaluationRequestCarrier: AuthorityCarrier<AuthorityEvaluationRequest>;

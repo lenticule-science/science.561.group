@@ -1,6 +1,6 @@
 {
   "name": "@lenticule-science/governance-services-section",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "type": "module",
   "description": "Red Cup Science service section for governance.",
   "license": "UNLICENSED",
