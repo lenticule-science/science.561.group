@@ -30,7 +30,7 @@
     "./release-observation": "./src/release-observation.mjs"
   },
   "scripts": {
-    "build:cloud": "npm run build:engine && node --stack-size=65500 --import tsx scripts/build-cloud-release.mjs",
+    "build:cloud": "npm run build:engine && node --max-old-space-size=2048 --stack-size=65500 --import tsx scripts/build-cloud-release.mjs",
     "build:worker": "esbuild lib/cloudflare/src/worker.mjs --bundle --platform=node --format=esm --minify --banner:js=\"import { createRequire as __createRequire } from 'node:module'; const require = __createRequire(import.meta.url);\" --outfile=dist/worker.mjs",
     "build:vps": "npm run build:cloud && npm run build:worker && esbuild lib/vps/authoring-entry.mjs --bundle --platform=node --format=esm --banner:js=\"import { createRequire as __createRequire } from 'node:module'; const require = __createRequire(import.meta.url);\" --outfile=dist/vps-authoring.mjs",
     "build:engine": "node scripts/build-browser-engine.mjs",

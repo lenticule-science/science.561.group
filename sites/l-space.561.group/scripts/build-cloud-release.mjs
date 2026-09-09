@@ -154,15 +154,15 @@ for (let offset = 0; offset < wing.world.rooms.length; offset += 1) {
 }
 observeBuildPhase("serialized-rooms");
 
-const indexDocument = {
+let indexDocument = {
   schemaVersion: "l-space-index/v1",
   vocabulary: vault.vocabulary,
   participation: vault.participation,
   rooms: index,
 };
-const indexBytes = json(indexDocument);
+let indexBytes = json(indexDocument);
 observeBuildPhase("serialized-index");
-const relationLedger = await projectLSpaceRelationLedger({
+let relationLedger = await projectLSpaceRelationLedger({
   root: config.wings[0].root,
   rooms: wing.world.rooms,
 });
@@ -175,14 +175,22 @@ const release = digest(json({
   relationLedgerDigest: digest(json(relationLedger)),
 }));
 observeBuildPhase("derived-release-identity");
+
+// The release identity has consumed these whole-carrier values. Persist the
+// index before building the independently large VICTOR and graph artifacts;
+// retaining every representation made the production compiler exceed Node's
+// heap even though each projection was individually admissible.
+await writeFile(resolve(vaultRoot, "index.json"), indexBytes);
+indexBytes = null;
+indexDocument = null;
+
 const generatedAt = new Date().toISOString();
-const releaseGraph = projectLSpaceReleaseGraph({ release, generatedAt, wing, ledger: relationLedger });
-observeBuildPhase("projected-release-graph");
 
 // Victor observes the same admitted rooms upstream of VaultMaze. The complete
 // address-preserving projection is an authenticated release artifact; the
 // manifest and editor carry only its bounded identity summary.
-const victorRelease = createVaultMazeVictorReleaseFromResources({
+relationLedger = null;
+let victorRelease = createVaultMazeVictorReleaseFromResources({
   hash: `ni:///sha-256;${Buffer.from(release, "hex").toString("base64url")}`,
   resources: wing.world.rooms.map((room) => ({
     path: room.id,
@@ -206,6 +214,21 @@ const victorSummary = Object.freeze({
   mappedCellCount: victorRelease.workspaceGraph.cellResources.length,
   href: "/api/v1/vault/victor-release",
 });
+await writeFile(resolve(vaultRoot, "victor-release.json"), json(victorRelease));
+victorRelease = null;
+
+// Re-read the deterministic ledger only after VICTOR has been persisted. This
+// avoids holding both full projections in the constrained production heap.
+relationLedger = await projectLSpaceRelationLedger({
+  root: config.wings[0].root,
+  rooms: wing.world.rooms,
+});
+let releaseGraph = projectLSpaceReleaseGraph({ release, generatedAt, wing, ledger: relationLedger });
+const releaseGraphSchemaVersion = releaseGraph.schemaVersion;
+await writeFile(resolve(vaultRoot, "graph.json"), json(releaseGraph));
+releaseGraph = null;
+relationLedger = null;
+observeBuildPhase("projected-release-graph");
 
 // Halls are the compiler's Formal Concept Analysis clusters: every set of rooms
 // sharing a closed set of attributes. They were computed on every build and
@@ -343,7 +366,7 @@ const manifest = {
     warnings: wing.world.warnings.length,
   },
   index: "/api/v1/vault/index",
-  graph: Object.freeze({ file: "graph.json", schemaVersion: releaseGraph.schemaVersion }),
+  graph: Object.freeze({ file: "graph.json", schemaVersion: releaseGraphSchemaVersion }),
   garden: "/api/v1/vault/garden",
   halls: "/api/v1/vault/halls",
   surface: "/api/v1/surface",
@@ -354,10 +377,7 @@ const manifest = {
 };
 
 await Promise.all([
-  writeFile(resolve(vaultRoot, "index.json"), indexBytes),
-  writeFile(resolve(vaultRoot, "graph.json"), json(releaseGraph)),
   writeFile(resolve(vaultRoot, "manifest.json"), json(manifest)),
-  writeFile(resolve(vaultRoot, "victor-release.json"), json(victorRelease)),
   writeFile(resolve(viewRoot, "garden.json"), json(garden)),
   writeFile(resolve(viewRoot, "halls.json"), json(hallsDocument)),
   writeFile(resolve(publicRoot, "surface.json"), json(surface)),
