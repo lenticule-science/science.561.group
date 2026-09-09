@@ -15,7 +15,7 @@ import {
   lunationOf,
   motionOf,
   signPlacement,
-} from "@lenticule-science/divining/dist/astrology/index.mjs";
+} from "@lenticule-science/divining/astrology";
 
 export const EPHEMERIS_RANGE = Object.freeze({ minYear: 1800, maxYear: 2050 });
 

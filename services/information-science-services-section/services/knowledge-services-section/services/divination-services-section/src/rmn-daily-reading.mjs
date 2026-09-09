@@ -1,5 +1,5 @@
-import { computeChart, signPlacement, aspectsInChart, lunationOf, BODIES } from "@lenticule-science/divining/dist/astrology/index.mjs";
-import { lectionFor } from "@lenticule-science/divining/dist/liturgy/index.mjs";
+import { computeChart, signPlacement, aspectsInChart, lunationOf, BODIES } from "@lenticule-science/divining/astrology";
+import { lectionFor } from "@lenticule-science/divining/liturgy";
 
 const MARK = Object.freeze(["mark"]);
 const UNIT = Object.freeze(["unit"]);

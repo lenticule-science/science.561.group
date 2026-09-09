@@ -2,7 +2,7 @@
   "name": "@lenticule-science/divining",
   "version": "0.4.2",
   "type": "module",
-  "description": "Sign-reading practice producers -- astrology, tarot, numerology, the computus, the lectionary, geomancy, the I Ching, Ifa, runes, the Numogram, and Lakota star knowledge -- as dependency-free domain mathematics, live and source-available at Divination. Ships without the legacy settled-Reading core (panelConsensus over the bilattice FOUR), which depended on the dead agential-relationality archive; see content/text/documents/sign-reading-as-settling.md.",
+  "description": "Sign-reading practice producers -- astrology, tarot, numerology, the computus, the lectionary, geomancy, the I Ching, Ifa, runes, the Numogram, and Lakota star knowledge -- with a clean shared FOUR Reading settlement, live and source-available at Divination. It intentionally does not reproduce the legacy panelConsensus, sigma-dual prediction, or D4 gauge-orbit APIs; see content/text/documents/sign-reading-as-settling.md.",
   "scripts": {
     "clean": "rm -rf dist",
     "check": "tsc --noEmit",

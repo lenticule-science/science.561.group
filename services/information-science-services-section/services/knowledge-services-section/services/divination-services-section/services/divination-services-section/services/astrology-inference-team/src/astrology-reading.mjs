@@ -6,7 +6,7 @@
 // the inference job; the tollbooth (payment) and LISS (inference) consume them.
 import {
   computeChart, aspectsInChart, signPlacement,
-} from "@lenticule-science/divining/dist/astrology/index.mjs";
+} from "@lenticule-science/divining/astrology";
 
 const BODIES_ORDER = [
   "sun", "moon", "mercury", "venus", "mars",

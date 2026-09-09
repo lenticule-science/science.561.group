@@ -1,20 +1,21 @@
 /**
  * @lenticule-science/divining -- sign-reading practice producers, live at Divination.
  *
- * This is the practice-producer half of the legacy @lenticule-science/divining package:
+ * This package carries the practice producers and a clean common Reading
+ * settlement for the live Divination service:
  * astrology, tarot/numerology, the computus, the lectionary, geomancy, the
  * I Ching, Ifa, runes, the Numogram, and Lakota star knowledge, each as
- * dependency-free domain mathematics. It ships source, not dist-only, and
- * depends on nothing outside this file tree.
+ * domain mathematics. It ships source, not dist-only, and its declared
+ * dependencies provide shared astronomy computation and FOUR charges without
+ * importing the dead agential-relationality archive.
  *
- * It replaces the legacy settled Reading core (`panelConsensus`, the
- * sigma-dual diagnosis/prediction, the D4 gauge orbit) that the legacy
- * package built over `@lenticule-science/{relating,knowing,playing,socializing,
- * communicating}` -- those packages sit in the dead agential-relationality
- * archive, and per the 2026-07-13 normalize-infography rule, resurrecting
- * that layer means rewriting it cleanly, not rewiring it back in. See
- * ../../../content/text/documents/sign-reading-as-settling.md for what was left
- * behind and why.
+ * `settleReading` is the clean replacement for the legacy core's basic
+ * panel settlement: it joins a panel of sign witnesses through the current
+ * Articulating FOUR provider. The legacy `panelConsensus`, sigma-dual
+ * prediction, and D4 gauge-orbit APIs remain unported. The legacy depended on
+ * `@lenticule-science/{relating,knowing,playing,socializing,communicating}` in
+ * the dead agential-relationality archive; this package does not rewire to it.
+ * See ../../../content/text/documents/sign-reading-as-settling.md.
  *
  * A consumer wanting a plain indicator set (a moon phase, a tarot card, a
  * numerological reduction, a lection) calls a domain's own producers

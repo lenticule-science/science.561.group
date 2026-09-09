@@ -43,24 +43,29 @@ cross-referenced Obsmetrologia by name.
 
 ## What is ported here, live
 
-`src/lib/divining/` carries the **practice-producer layer** — the
-dependency-free domain mathematics that builds a panel of signs from a
+`src/lib/divining/` carries the **practice-producer layer** — the domain
+mathematics that builds a panel of signs from a
 query: astrology (ephemeris, chart, aspects, lunation), cartomancy (the tarot
 deck and spreads), numerology (date reduction), the computus and liturgical
 calendars (RCL and Roman lectionary lookup), geomancy (the sixteen-figure
 shield), the I Ching (six-line hexagram casting), the public Ifá Opele
 casting structure, the Elder Futhark runes, the CCRU Numogram, and Lakota
-seasonal star knowledge. It ships source, typechecks clean, and depends on
-nothing outside its own file tree — confirmed by running it: a seeded tarot
-draw, a numerological reduction, and a lectionary lookup all produce real
-output.
+seasonal star knowledge. It ships source and is tested as domain mathematics;
+the package's declared shared dependencies provide astronomy computation and
+the current FOUR-charge provider.
 
-## What is deliberately not ported
+It also carries a live clean **Reading settlement**. `SignWitness` records a
+practice's source, label, and FOUR charge; `settleReading()` joins a nonempty
+question and cut's panel with Articulating's `joinKnowledge`, returning an
+immutable `Reading` whose value is the resulting FOUR charge name. Every live
+practice reader uses that common operation. The package tests exercise all of
+the restored readers and their practice-specific witness laws.
 
-The **settled Reading core** — `panelConsensus`, the sigma-dual
-diagnosis/prediction, the D4 gauge orbit, and each domain's own
-`reading.mts` that wired its producer into that core — is preserved here as
-design intent, not reimplemented. In the legacy package it depended on five
+## What remains deliberately unported
+
+The legacy **extended settlement surface** — its `panelConsensus` API, the
+sigma-dual diagnosis/prediction, and the D4 gauge orbit — is not reproduced by
+the current `Reading` operation. The legacy implementation depended on five
 upstream packages (`@emsenn/relating`, `knowing`, `playing`, `socializing`,
 `communicating`) that sit in the dead `2026-06-27-agential-relationality`
 archive under red-cup-engineering.
@@ -68,13 +73,11 @@ archive under red-cup-engineering.
 The 2026-07-13 `normalize-infography` rule, raised exactly against this
 package going dark, is explicit: broken firm code gets rewritten *off*
 infography, not re-wired into the dead archive it depended on. Resurrecting
-the settling core lawfully therefore means designing and writing a clean,
-standalone replacement for whatever of `relating`/`knowing`/`playing`/
-`socializing`/`communicating` it actually needs — not importing the archive
-wholesale. That design work has not been done yet. Until it is, a consumer
-of this library gets a panel of signs (a moon phase, a tarot card, a
-numerological reduction, a lection) directly from a domain's own producer,
-without a settled `Reading` verdict layered over it.
+an extended settlement surface lawfully therefore means designing and writing
+a clean replacement for the needed capability — not importing the archive
+wholesale. The live `Reading` settlement is the present common result for a
+panel of signs; a future extension must add its own declared semantics and
+acceptance evidence rather than claiming the legacy API has returned.
 
 ## Provenance
 
