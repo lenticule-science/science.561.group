@@ -10,7 +10,6 @@
  * Reflexive cells contribute nothing. Carrier-valued throughout.
  */
 import { termCoincides } from "../../../predication.mjs";
-import {} from "../section.mjs";
 import { charPoly, count, determinant, fromInteger, fromNatural, intAdd, intIsZero, intMultiply, intNegate, intOne, intZero, isNegative, magnitude, monus, rank, ratAdd, ratIsZero, ratMultiply, ratZero, } from "./exact-number.mjs";
 const sameTerm = (left, right) => termCoincides(left, right);
 /** The relation graph of a bare list of predication CELLS — distinct subject/object terms as
@@ -199,6 +198,47 @@ export function diffusionDirections(weights, values) {
 export function weightsOfEdges(vertexCount, edges) {
     const pairs = edges.filter(([left, right]) => left !== right);
     return Object.freeze(Array.from({ length: vertexCount }, (_row, row) => Object.freeze(Array.from({ length: vertexCount }, (_column, column) => fromNatural(count(pairs.filter(([left, right]) => (left === row && right === column) || (left === column && right === row))))))));
+}
+/** Independent cycles of an undirected multigraph, excluding self-loops as
+ * weightsOfEdges does. Union by size and iterative path compression avoid both
+ * a dense matrix and recursion proportional to the number of vertices. */
+export function graphFirstBettiNumberOfEdgeList(vertexCount, edges) {
+    if (!Number.isSafeInteger(vertexCount) || vertexCount < 0) {
+        throw new RangeError("vertexCount must be a non-negative safe integer");
+    }
+    const parent = Array.from({ length: vertexCount }, (_, index) => index);
+    const sizes = Array(vertexCount).fill(1);
+    const find = (vertex) => {
+        let root = vertex;
+        while (parent[root] !== root)
+            root = parent[root];
+        while (parent[vertex] !== vertex) {
+            const next = parent[vertex];
+            parent[vertex] = root;
+            vertex = next;
+        }
+        return root;
+    };
+    let cycles = 0;
+    for (const [left, right] of edges) {
+        for (const vertex of [left, right]) {
+            if (!Number.isSafeInteger(vertex) || vertex < 0 || vertex >= vertexCount) {
+                throw new RangeError("edge endpoints must be vertices of the graph");
+            }
+        }
+        if (left === right)
+            continue;
+        let a = find(left), b = find(right);
+        if (a === b) {
+            cycles += 1;
+            continue;
+        }
+        if (sizes[a] < sizes[b])
+            [a, b] = [b, a];
+        parent[b] = a;
+        sizes[a] = sizes[a] + sizes[b];
+    }
+    return cycles;
 }
 /** Read a bare undirected graph's spectral invariants (component count H⁰ + Matrix-Tree spanning-tree
  *  count) directly from a fixed vertex set and an edge list — for graphs whose vertices are NOT

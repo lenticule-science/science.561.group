@@ -45,5 +45,5 @@ export type MutuallyLocallyDerivableJudgment = MutuallyLocallyDerivableWitness |
 /** Compare two substitution incidence matrices by the finite MLD invariant. */
 export declare function mutuallyLocallyDerivable(left: SubstitutionIncidenceMatrix, right: SubstitutionIncidenceMatrix): MutuallyLocallyDerivableJudgment;
 /** Compare two substitution carriers by abelianizing over their own alphabets first. */
-export declare function carriersMutuallyLocallyDerivable(left: SubstitutionCarrier, right: SubstitutionCarrier): MutuallyLocallyDerivableJudgment;
+export declare function carriersMutuallyLocallyDerivable(left: Pick<SubstitutionCarrier, "rule" | "alphabet">, right: Pick<SubstitutionCarrier, "rule" | "alphabet">): MutuallyLocallyDerivableJudgment;
 //# sourceMappingURL=mld.d.mts.map

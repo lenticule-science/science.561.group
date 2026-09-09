@@ -10,7 +10,6 @@
  * Reflexive cells contribute nothing. Carrier-valued throughout.
  */
 import { type Cell, type PredicationTerm } from "../../../predication.mjs";
-import { type SectionCarrier } from "../section.mjs";
 import { type Integer, type Matrix, type Natural, type Rational } from "./exact-number.mjs";
 /** The relation graph of a section: distinct terms, weighted adjacency (exact). */
 export interface RelationGraphCarrier {
@@ -25,7 +24,11 @@ export interface RelationGraphCarrier {
  *  Laplacian geometry without first materializing a full `SectionCarrier`. */
 export declare function relationGraphOfCells(cells: readonly Cell[]): RelationGraphCarrier;
 /** The relation graph of a section (its entries' cells). Delegates to {@link relationGraphOfCells}. */
-export declare function relationGraph(section: SectionCarrier): RelationGraphCarrier;
+export declare function relationGraph(section: Readonly<{
+    entries: readonly Readonly<{
+        cell: Cell;
+    }>[];
+}>): RelationGraphCarrier;
 /** The combinatorial Laplacian L = D − W of a symmetric weighted adjacency matrix, exact integer
  *  entries. The bare-matrix core the graph readings delegate to. */
 export declare function laplacianOfWeights(weights: Matrix): Matrix;
@@ -116,6 +119,10 @@ export declare function diffusionDirections(weights: Matrix, values: readonly In
  *  vertices (`0 … vertexCount−1`), weighted by edge multiplicity; self-loops are ignored. Unlike
  *  {@link relationGraphOfCells}, the vertex set is FIXED, so isolated vertices are represented. */
 export declare function weightsOfEdges(vertexCount: number, edges: readonly (readonly [number, number])[]): Matrix;
+/** Independent cycles of an undirected multigraph, excluding self-loops as
+ * weightsOfEdges does. Union by size and iterative path compression avoid both
+ * a dense matrix and recursion proportional to the number of vertices. */
+export declare function graphFirstBettiNumberOfEdgeList(vertexCount: number, edges: readonly (readonly [number, number])[]): number;
 /** The spectral invariants of a bare undirected graph: its component count (H⁰, the zero-eigenvalue
  *  multiplicity) and its Matrix-Tree spanning-tree count. */
 export interface GraphSpectrum {

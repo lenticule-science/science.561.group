@@ -92,6 +92,6 @@ export function mutuallyLocallyDerivable(left: SubstitutionIncidenceMatrix, righ
 }
 
 /** Compare two substitution carriers by abelianizing over their own alphabets first. */
-export function carriersMutuallyLocallyDerivable(left: SubstitutionCarrier, right: SubstitutionCarrier): MutuallyLocallyDerivableJudgment {
+export function carriersMutuallyLocallyDerivable(left: Pick<SubstitutionCarrier, "rule" | "alphabet">, right: Pick<SubstitutionCarrier, "rule" | "alphabet">): MutuallyLocallyDerivableJudgment {
   return mutuallyLocallyDerivable(abelianize(left.rule, left.alphabet), abelianize(right.rule, right.alphabet));
 }
