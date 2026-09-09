@@ -1,6 +1,6 @@
 {
   "name": "@lenticule-science/divination-services-section",
-  "version": "0.2.0",
+  "version": "0.2.3",
   "private": false,
   "type": "module",
   "bin": {
@@ -26,18 +26,19 @@
     "@561-group/dispatching-a-task": "0.1.2",
     "@561-group/listing-open-obligations": "0.1.2",
     "@561-group/resolving-an-identifier": "0.2.0",
+    "@lenticule-science/astronomy-services-section": "0.4.2",
+    "@lenticule-science/divining": "0.4.2",
+    "@lenticule-science/wit-transition-assay": "0.4.0",
     "@red-cup-engineering/a2a-agent-card-key-service": "0.4.0",
     "@red-cup-engineering/a2a-contracted-agent-service": "0.5.0",
     "@red-cup-engineering/claude-harness-projection-service": "0.4.0",
     "@red-cup-engineering/http-server": "0.0.4",
     "@red-cup-engineering/json-schema-services-section": "0.1.7",
     "@red-cup-engineering/relation-model-notation-runtime": "0.2.0",
-    "@red-cup-engineering/semantic-content-identify-service": "0.2.8",
     "@red-cup-engineering/relation-model-notation-typing": "0.0.2",
+    "@red-cup-engineering/semantic-content-identify-service": "0.2.8",
     "@red-cup-engineering/witness-journal-entry-service": "0.1.7",
-    "@red-cup-engineering/witness-journal-log-service": "0.1.6",
-    "@lenticule-science/wit-transition-assay": "0.4.0",
-    "@lenticule-science/divining": "0.2.1"
+    "@red-cup-engineering/witness-journal-log-service": "0.1.6"
   },
   "keywords": [
     "divination",

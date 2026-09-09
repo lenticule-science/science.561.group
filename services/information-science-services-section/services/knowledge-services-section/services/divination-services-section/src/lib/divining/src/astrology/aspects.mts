@@ -7,7 +7,7 @@
 // applying (separation moving toward exact) or separating — read off the
 // bodies' relative speed, not guessed.
 
-import type { Body, BodyState } from "./chart.mts";
+import type { Body, BodyState } from "@lenticule-science/astronomy-services-section";
 import { angularSeparation, signedArc } from "./zodiac.mts";
 
 export type AspectName =

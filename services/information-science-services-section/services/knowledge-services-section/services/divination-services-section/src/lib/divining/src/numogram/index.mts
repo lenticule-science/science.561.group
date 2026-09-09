@@ -5,3 +5,4 @@
  * reduction). Ported into Divination without the settling-core reading layer.
  */
 export * from "./numogram.mts";
+export * from "./reading.mts";

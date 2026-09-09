@@ -3,8 +3,11 @@ import test from "node:test";
 
 import {
   DE440_SHA256,
+  computePrecisionAstronomyPositions,
   computePrecisionMoment,
+  normalizePrecisionAstronomyRequest,
   normalizePrecisionRequest,
+  PRECISION_RANGE,
 } from "../src/precision-moment.mjs";
 
 const BODIES = ["Sun", "Moon", "Mercury", "Venus", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune", "Pluto"];
@@ -47,10 +50,40 @@ test("normalizes the exact instant, location, and chart tradition before paid wo
 });
 
 test("refuses unsupported inputs before payment", () => {
+  assert.deepEqual(PRECISION_RANGE, { minYear: 1972, maxYear: 2050 });
   assert.throws(() => normalizePrecisionRequest("1900-01-01", { latitude: 0, longitude: 0 }), RangeError);
   assert.throws(() => normalizePrecisionRequest("2026-07-21", { latitude: 91, longitude: 0 }), RangeError);
   assert.throws(() => normalizePrecisionRequest("2026-07-21", { latitude: 70, longitude: 0 }), RangeError);
   assert.throws(() => normalizePrecisionRequest("2026-07-21", { latitude: 0, longitude: 0, houseSystem: "unknown" }), TypeError);
+});
+
+test("precision astronomy admits physical observation without astrology settings", async () => {
+  let observedRequest;
+  const result = await computePrecisionAstronomyPositions("2026-07-21", {
+    latitude: 70,
+    longitude: -87.6298,
+    houseSystem: "unknown",
+    sidereal: "lahiri",
+  }, {
+    execute: async (request) => {
+      observedRequest = request;
+      return supplierFixture(request);
+    },
+  });
+  assert.deepEqual(normalizePrecisionAstronomyRequest("2026-07-21", { latitude: 70, longitude: -87.6298 }), {
+    time: "2026-07-21T00:00:00.000Z",
+    latitude: 70,
+    longitude: -87.6298,
+  });
+  assert.deepEqual(observedRequest, {
+    time: "2026-07-21T00:00:00.000Z",
+    latitude: 70,
+    longitude: -87.6298,
+  });
+  assert.equal(result.tier, "astronomy-precision-positions");
+  assert.equal("configuration" in result, false);
+  assert.equal("houses" in result, false);
+  assert.equal(result.bodies[0].body, "Sun");
 });
 
 test("precision product preserves the supplier chart and adds deterministic metrological cross-checks", async () => {

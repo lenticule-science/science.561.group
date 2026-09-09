@@ -182,5 +182,5 @@ test("Divination rejects an effect whose operation commitment does not match its
   const roots = fixture(); t.after(() => { rmSync(roots.divination, { recursive: true, force: true }); });
   const source = proposal("2026-07-18", "rcl", (cell) => ({ ...cell, operation: termIdentity(["mark", "other-operation"], "divination.daily-reading-operation").token }));
   await assert.rejects(invokeDailyReading(source, { env: roots.env, now: AT }), /effect-operation-mismatch|does not identify/u);
-  assert.deepEqual(OPERATION_TYPE, ["prod", ["base"], ["base"]]);
+  assert.deepEqual(OPERATION_TYPE, ["product", ["mark"], ["mark"]]);
 });

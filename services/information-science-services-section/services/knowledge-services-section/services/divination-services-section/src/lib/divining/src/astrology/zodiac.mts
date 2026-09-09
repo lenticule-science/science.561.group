@@ -62,23 +62,13 @@ export const ZODIAC_SIGNS: readonly ZodiacSign[] = Object.freeze(
 );
 
 /** Fold any degree value onto the circle: the representative in [0, 360). */
-export function normalizeDegrees(degrees: number): number {
-  if (!Number.isFinite(degrees)) throw new TypeError("degrees must be a finite number");
-  const folded = degrees % 360;
-  return folded < 0 ? folded + 360 : folded;
-}
+import { normalizeDegrees, signedArc } from "@lenticule-science/astronomy-services-section";
+export { normalizeDegrees, signedArc };
 
 /**
  * The signed shortest arc from `from` to `to`, in (-180, 180]. Positive means
  * `to` lies counterclockwise (zodiacally forward) of `from`.
  */
-export function signedArc(from: number, to: number): number {
-  const difference = normalizeDegrees(to) - normalizeDegrees(from);
-  if (difference > 180) return difference - 360;
-  if (difference <= -180) return difference + 360;
-  return difference;
-}
-
 /** The unsigned shortest arc between two longitudes: [0, 180]. */
 export function angularSeparation(a: number, b: number): number {
   return Math.abs(signedArc(a, b));

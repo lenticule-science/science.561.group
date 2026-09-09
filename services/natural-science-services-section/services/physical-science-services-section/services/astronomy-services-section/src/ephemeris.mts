@@ -14,10 +14,9 @@
 //   ~0.17° within 1800–2050. Lunar event times good to ~3 minutes;
 //   slow-planet events to ~hours, as their motion near exactness is slow.
 
-import { BODIES, type Body, type BodyState, type Chart } from "./chart.mts";
-import { findCircleCrossings, findZeroCrossings, type ScanOptions } from "./events.mts";
+import { BODIES, type Body, type BodyState, type Chart } from "./positions.mts";
 import { isoFromJulianDay, julianCenturies, julianDayFromIso, terrestrialJulianDay } from "./time.mts";
-import { normalizeDegrees, signPlacement, ZODIAC_SIGNS, type ZodiacSign } from "./zodiac.mts";
+import { normalizeDegrees } from "./coordinates.mts";
 import {
   LUNAR_LATITUDE_SERIES,
   LUNAR_LONGITUDE_SERIES,
@@ -219,7 +218,8 @@ const SPEED_STEP_DAYS: Readonly<Record<Body, number>> = Object.freeze({
   pluto: 2,
 });
 
-function bodySpeed(body: Body, julianDayTt: number): number {
+/** The apparent geocentric ecliptic longitude derivative, in degrees per day. */
+export function bodyLongitudeSpeed(body: Body, julianDayTt: number): number {
   const step = SPEED_STEP_DAYS[body];
   const before = bodyLongitude(body, julianDayTt - step);
   const after = bodyLongitude(body, julianDayTt + step);
@@ -243,7 +243,7 @@ export function computeChart(isoUtc: string): Chart {
     states[body] = Object.freeze({
       longitude: bodyLongitude(body, julianDayTt),
       latitude: bodyLatitude(body, julianDayTt),
-      speed: bodySpeed(body, julianDayTt),
+      speed: bodyLongitudeSpeed(body, julianDayTt),
     });
   }
   return Object.freeze({
@@ -253,139 +253,3 @@ export function computeChart(isoUtc: string): Chart {
     provenance: EPHEMERIS_PROVENANCE,
   });
 }
-
-// — Events over an interval. All take and return ISO UTC timestamps. —
-
-const EVENT_SCAN_STEP_DAYS: Readonly<Record<Body, number>> = Object.freeze({
-  sun: 0.5,
-  moon: 0.2,
-  mercury: 0.5,
-  venus: 0.5,
-  mars: 1,
-  jupiter: 2,
-  saturn: 2,
-  uranus: 4,
-  neptune: 4,
-  pluto: 4,
-});
-
-function ttInterval(isoStart: string, isoEnd: string): readonly [number, number] {
-  return [terrestrialJulianDay(julianDayFromIso(isoStart)), terrestrialJulianDay(julianDayFromIso(isoEnd))];
-}
-
-export type IngressEvent = Readonly<{
-  body: Body;
-  time: string;
-  /** The sign whose cusp was crossed into (by the direction of motion). */
-  signTo: ZodiacSign;
-  signFrom: ZodiacSign;
-  direction: "direct" | "retrograde";
-}>;
-
-export function findIngresses(body: Body, isoStart: string, isoEnd: string): readonly IngressEvent[] {
-  const [jdStart, jdEnd] = ttInterval(isoStart, isoEnd);
-  const scan: ScanOptions = { stepDays: EVENT_SCAN_STEP_DAYS[body] };
-  const events: IngressEvent[] = [];
-  for (let cusp = 0; cusp < 360; cusp += 30) {
-    for (const crossing of findCircleCrossings((jd) => bodyLongitude(body, jd), cusp, jdStart, jdEnd, scan)) {
-      const enteringIndex = (cusp / 30) % 12;
-      const direct = crossing.direction === "increasing";
-      const signTo = ZODIAC_SIGNS[direct ? enteringIndex : (enteringIndex + 11) % 12] as ZodiacSign;
-      const signFrom = ZODIAC_SIGNS[direct ? (enteringIndex + 11) % 12 : enteringIndex] as ZodiacSign;
-      events.push(
-        Object.freeze({
-          body,
-          time: isoFromJulianDay(crossing.julianDay),
-          signTo,
-          signFrom,
-          direction: (direct ? "direct" : "retrograde") as IngressEvent["direction"],
-        }),
-      );
-    }
-  }
-  return Object.freeze(events.sort((a, b) => a.time.localeCompare(b.time)));
-}
-
-export type StationEvent = Readonly<{
-  body: Body;
-  time: string;
-  /** The motion the body turns toward at the station. */
-  stationTo: "retrograde" | "direct";
-  /** The body's longitude at the station. */
-  longitude: number;
-}>;
-
-export function findStations(body: Body, isoStart: string, isoEnd: string): readonly StationEvent[] {
-  if (body === "sun" || body === "moon") return Object.freeze([]);
-  const [jdStart, jdEnd] = ttInterval(isoStart, isoEnd);
-  const crossings = findZeroCrossings((jd) => bodySpeed(body, jd), jdStart, jdEnd, {
-    stepDays: EVENT_SCAN_STEP_DAYS[body],
-    toleranceDays: 0.001,
-  });
-  return Object.freeze(
-    crossings.map((crossing) =>
-      Object.freeze({
-        body,
-        time: isoFromJulianDay(crossing.julianDay),
-        stationTo: (crossing.direction === "decreasing" ? "retrograde" : "direct") as StationEvent["stationTo"],
-        longitude: bodyLongitude(body, crossing.julianDay),
-      }),
-    ),
-  );
-}
-
-export type ExactAspectEvent = Readonly<{
-  bodyA: Body;
-  bodyB: Body;
-  /** The aspect's angle, degrees. */
-  angle: number;
-  time: string;
-}>;
-
-export function findExactAspects(
-  bodyA: Body,
-  bodyB: Body,
-  angle: number,
-  isoStart: string,
-  isoEnd: string,
-): readonly ExactAspectEvent[] {
-  const [jdStart, jdEnd] = ttInterval(isoStart, isoEnd);
-  const stepDays = Math.min(EVENT_SCAN_STEP_DAYS[bodyA], EVENT_SCAN_STEP_DAYS[bodyB]);
-  const relative = (jd: number): number =>
-    normalizeDegrees(bodyLongitude(bodyB, jd) - bodyLongitude(bodyA, jd));
-  // A separation of `angle` is the relative longitude meeting angle or 360−angle.
-  const targets = angle === 0 || angle === 180 ? [angle] : [angle, 360 - angle];
-  const events: ExactAspectEvent[] = [];
-  for (const target of targets) {
-    for (const crossing of findCircleCrossings(relative, target, jdStart, jdEnd, { stepDays })) {
-      events.push(
-        Object.freeze({ bodyA, bodyB, angle, time: isoFromJulianDay(crossing.julianDay) }),
-      );
-    }
-  }
-  return Object.freeze(events.sort((a, b) => a.time.localeCompare(b.time)));
-}
-
-export type LunationQuarterEvent = Readonly<{
-  time: string;
-  quarter: "new moon" | "first quarter" | "full moon" | "last quarter";
-}>;
-
-const QUARTER_NAMES = ["new moon", "first quarter", "full moon", "last quarter"] as const;
-
-export function findLunationQuarters(isoStart: string, isoEnd: string): readonly LunationQuarterEvent[] {
-  const [jdStart, jdEnd] = ttInterval(isoStart, isoEnd);
-  const elongation = (jd: number): number =>
-    normalizeDegrees(bodyLongitude("moon", jd) - bodyLongitude("sun", jd));
-  const events: LunationQuarterEvent[] = [];
-  for (let index = 0; index < 4; index += 1) {
-    for (const crossing of findCircleCrossings(elongation, index * 90, jdStart, jdEnd, { stepDays: 0.2 })) {
-      events.push(
-        Object.freeze({ time: isoFromJulianDay(crossing.julianDay), quarter: QUARTER_NAMES[index] as LunationQuarterEvent["quarter"] }),
-      );
-    }
-  }
-  return Object.freeze(events.sort((a, b) => a.time.localeCompare(b.time)));
-}
-
-export { signPlacement };

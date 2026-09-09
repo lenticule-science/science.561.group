@@ -45,3 +45,4 @@ export {
 } from "./lectionary-data.mts";
 
 export { lectionFor, type LectionaryTradition, type LectionOutcome } from "./lection.mts";
+export { buildLectionPanel, readLections } from "./reading.mts";

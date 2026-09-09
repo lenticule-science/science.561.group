@@ -2,7 +2,7 @@
 //
 // The tarot deck and spreads (tarot), numerological reduction (numerology),
 // and the daily-indicators carrier (indicators). Ported into Divination
-// without the settling-core reading layer.
+// with typed readings settled through the shared Articulating FOUR algebra.
 
 export {
   TAROT_DECK,
@@ -20,6 +20,7 @@ export {
 } from "./tarot.mts";
 
 export { MASTER_NUMBERS, reduceDate, type DateReduction, type ReductionKind } from "./numerology.mts";
+export { buildSpreadPanel, buildReductionPanel, readSpread, readReduction } from "./reading.mts";
 
 export {
   type DailyIndicators,

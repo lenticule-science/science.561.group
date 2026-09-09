@@ -1,18 +1,22 @@
 {
   "name": "@lenticule-science/divining",
-  "version": "0.2.1",
+  "version": "0.4.2",
   "type": "module",
   "description": "Sign-reading practice producers -- astrology, tarot, numerology, the computus, the lectionary, geomancy, the I Ching, Ifa, runes, the Numogram, and Lakota star knowledge -- as dependency-free domain mathematics, live and source-available at Divination. Ships without the legacy settled-Reading core (panelConsensus over the bilattice FOUR), which depended on the dead agential-relationality archive; see content/text/documents/sign-reading-as-settling.md.",
   "scripts": {
     "clean": "rm -rf dist",
     "check": "tsc --noEmit",
+    "test": "node --test test/*.test.mjs",
     "build": "tsc -p tsconfig.build.json",
     "prepack": "npm run rebuild",
     "rebuild": "npm run clean && npm run build"
   },
   "main": "./dist/index.mjs",
   "types": "./dist/index.d.mts",
-  "files": ["dist", "package.json"],
+  "files": [
+    "dist",
+    "package.json"
+  ],
   "exports": {
     ".": {
       "types": "./dist/index.d.mts",
@@ -21,6 +25,10 @@
     "./astrology": {
       "types": "./dist/astrology/index.d.mts",
       "import": "./dist/astrology/index.mjs"
+    },
+    "./reading": {
+      "types": "./dist/reading.d.mts",
+      "import": "./dist/reading.mjs"
     },
     "./divination": {
       "types": "./dist/divination/index.d.mts",
@@ -67,6 +75,8 @@
     "./dist/liturgy/index.mjs": "./dist/liturgy/index.mjs"
   },
   "dependencies": {
+    "@lenticule-science/articulating": "0.4.1",
+    "@lenticule-science/astronomy-services-section": "0.4.2",
     "@red-cup-engineering/seeded-random": "0.1.0"
   },
   "devDependencies": {

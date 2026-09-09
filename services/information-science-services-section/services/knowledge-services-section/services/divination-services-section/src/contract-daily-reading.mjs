@@ -15,7 +15,7 @@ export const CONTEXT = "https://www.w3.org/ns/activitystreams";
 export const ACTOR = "urn:ame:divination-services-section";
 export const ACCOUNT = "eip155:31337:0x4fa4554223cb86713b2d8d8f1a6d40b0b1730689";
 export const CONTRACT = "ni:///sha-256;jGz3g3xPim5UlTYnC0M0y_B0zXcCvdneuJNAPCKVrd0";
-export const OPERATION_TYPE = Object.freeze(["prod", ["base"], ["base"]]);
+export const OPERATION_TYPE = Object.freeze(["product", ["mark"], ["mark"]]);
 const PRECONDITION = "ni:///sha-256;ntxOpkBcnbGVC6NeD1y4X54yLK7GmBmNf2ul7IhJV2I";
 const POSTCONDITION = "ni:///sha-256;am0o7fpff-A8Q_SdJFQDw0zJYBdAr8Q8EQEw4V0dWj4";
 const REFUSAL = "ni:///sha-256;IebXWZ-MmX6I7pLllQ4vNRHP9SdWr32AE_pC-w15YMk";
@@ -77,7 +77,7 @@ export async function invokeDailyReading(source, { env = process.env, now = new 
     evidence = reading.term;
     evidenceDoc = { type: "Document", id: reading.term, mediaType: "application/rmn+cbor", content: reading.canonicalBytesBase64, profile: "org.emsenn.divination.daily-reading.v1", profileCommitment: "ni:///sha-256;MGYe_PrTQlwEYjTev0F1q3qVwHLgJlRVXsu_OXJ0Rjg" };
   } catch (error) {
-    const refusal = identifyTerm(["pair", ["mark", "reading-computation-refused"], ["mark", error.message]], ["prod", ["base"], ["base"]], "divination.daily-reading-refusal");
+    const refusal = identifyTerm(["pair", ["mark", "reading-computation-refused"], ["mark", error.message]], ["product", ["mark"], ["mark"]], "divination.daily-reading-refusal");
     disposition = "refused";
     evidence = refusal.term;
     evidenceDoc = { type: "Document", id: refusal.term, mediaType: "application/rmn+cbor", content: refusal.canonicalBytesBase64, profile: "org.emsenn.divination.refusal.v1" };

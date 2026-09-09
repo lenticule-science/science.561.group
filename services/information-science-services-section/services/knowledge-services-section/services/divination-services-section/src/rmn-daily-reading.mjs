@@ -1,12 +1,12 @@
 import { computeChart, signPlacement, aspectsInChart, lunationOf, BODIES } from "@lenticule-science/divining/dist/astrology/index.mjs";
 import { lectionFor } from "@lenticule-science/divining/dist/liturgy/index.mjs";
 
-const MARK = Object.freeze(["base"]);
+const MARK = Object.freeze(["mark"]);
 const UNIT = Object.freeze(["unit"]);
 
 function productType(...members) {
   if (members.length < 2) throw new Error("an RMN product requires at least two members");
-  return members.slice(0, -1).reduceRight((right, left) => ["prod", left, right], members.at(-1));
+  return members.slice(0, -1).reduceRight((right, left) => ["product", left, right], members.at(-1));
 }
 
 function productTerm(...members) {

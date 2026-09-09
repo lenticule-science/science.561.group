@@ -7,7 +7,7 @@
  * dependency-free domain mathematics. It ships source, not dist-only, and
  * depends on nothing outside this file tree.
  *
- * It deliberately omits the settled Reading core (`panelConsensus`, the
+ * It replaces the legacy settled Reading core (`panelConsensus`, the
  * sigma-dual diagnosis/prediction, the D4 gauge orbit) that the legacy
  * package built over `@lenticule-science/{relating,knowing,playing,socializing,
  * communicating}` -- those packages sit in the dead agential-relationality
@@ -18,7 +18,8 @@
  *
  * A consumer wanting a plain indicator set (a moon phase, a tarot card, a
  * numerological reduction, a lection) calls a domain's own producers
- * directly; there is no settled `Reading` object yet.
+ * directly or uses the common Reading object, whose FOUR settlement comes
+ * from the current Articulating provider.
  */
 
 export * as astrology from "./astrology/index.mts";
@@ -32,3 +33,4 @@ export * as ifa from "./ifa/index.mts";
 export * as runes from "./runes/index.mts";
 export * as numogram from "./numogram/index.mts";
 export * as starknowledge from "./starknowledge/index.mts";
+export * from "./reading.mts";

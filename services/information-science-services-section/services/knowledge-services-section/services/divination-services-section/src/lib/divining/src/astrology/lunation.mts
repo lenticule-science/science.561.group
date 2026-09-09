@@ -7,7 +7,7 @@
 // first quarter = 90°, full = 180°, last quarter = 270°). The illuminated
 // fraction is the standard (1 − cos e)/2 reading of the same angle.
 
-import type { BodyState } from "./chart.mts";
+import type { BodyState } from "@lenticule-science/astronomy-services-section";
 import { normalizeDegrees } from "./zodiac.mts";
 
 export type LunarPhaseName =
