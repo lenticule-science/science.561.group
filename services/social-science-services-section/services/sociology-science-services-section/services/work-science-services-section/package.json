@@ -1,7 +1,32 @@
 {
   "name": "@lenticule-science/work-science-services-section",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "description": "Lenticule Science service section for work research.",
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "check": "tsc --noEmit",
+    "build": "tsc -p tsconfig.build.json",
+    "test": "npm run build && node --test test/*.test.mjs",
+    "prepack": "npm run build"
+  },
+  "main": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "devDependencies": {
+    "@types/node": "22.20.1",
+    "typescript": "5.9.3"
+  },
+  "sideEffects": false
 }

@@ -1,6 +1,6 @@
 {
   "name": "@lenticule-science/governance-services-section",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "type": "module",
   "description": "Red Cup Science service section for governance.",
   "license": "UNLICENSED",
@@ -8,18 +8,30 @@
     ".": {
       "types": "./src/corporate-authority.d.mts",
       "import": "./src/corporate-authority.mjs"
+    },
+    "./jural": {
+      "types": "./dist/jural.d.mts",
+      "import": "./dist/jural.mjs"
     }
   },
   "files": [
     "src",
     "package.json",
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    "dist"
   ],
   "scripts": {
-    "test": "node --test test/*.test.mjs"
+    "test": "node --test test/*.test.mjs",
+    "build": "tsc -p tsconfig.json",
+    "check": "tsc -p tsconfig.json --noEmit",
+    "prepack": "npm run check && npm run build"
   },
   "dependencies": {
-    "@red-cup-engineering/relating": "0.1.9"
+    "@red-cup-engineering/relating": "0.1.9",
+    "@lenticule-science/articulating": "0.4.0"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3"
   }
 }
