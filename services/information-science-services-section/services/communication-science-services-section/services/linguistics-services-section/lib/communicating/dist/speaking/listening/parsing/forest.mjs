@@ -111,7 +111,11 @@ function sentenceSpans(base) {
 }
 export function parseForestFromArticulation(base, bundle) {
     const readings = sentenceSpans(base).map((sentence, index) => readingFromParse(sentence, parse(sentence, base, bundle), index, base.spans));
-    const obstructions = Object.freeze(readings.flatMap((reading) => reading.obstructions));
+    // The document-level obstruction view repeats the semantic values, never
+    // object references from a sentence reading.  The forest is a data carrier,
+    // not an in-memory object graph, so it can be canonically encoded and
+    // content-addressed by every receiver.
+    const obstructions = Object.freeze(readings.flatMap((reading) => reading.obstructions.map((obstruction) => Object.freeze({ ...obstruction }))));
     const forest = Object.freeze({
         kind: "communicating.parse-forest",
         text: base.text,

@@ -1,0 +1,16 @@
+{
+  "name": "@lenticule-science/relationality-services-section",
+  "version": "0.1.0",
+  "description": "Portable science-owned Relationality schema carriers.",
+  "type": "module",
+  "license": "UNLICENSED",
+  "exports": {
+  },
+  "files": [
+    "package.json"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "pack:dry-run": "npm pack --dry-run --ignore-scripts"
+  }
+}

@@ -40,7 +40,7 @@ export const FINDING_CATEGORY = "red-cup-engineering.custody-finding";
  * semantic record journal.
  * @param {object} record
  * @param {{dataRoot?: string, recordedAt?: string}} [options]
- * @returns {{id: string, objectKind: string, contentAppended: number, claimsAppended: number, charge: {support: boolean, refutation: boolean}}} the journal's record receipt.
+ * @returns {{id: string, objectKind: string, appended: number, appended: number, charge: {support: boolean, refutation: boolean}}} the journal's record receipt.
  */
 export function recordCampaign(record, options = {}) {
   const dataRoot = resolveFilepath([options.dataRoot ?? NODE_ROOT]);
@@ -58,7 +58,7 @@ export function recordCampaign(record, options = {}) {
  * fixes the finding itself — this is observation only.
  * @param {object} record
  * @param {{dataRoot?: string, recordedAt?: string}} [options]
- * @returns {{id: string, objectKind: string, contentAppended: number, claimsAppended: number, charge: {support: boolean, refutation: boolean}}} the journal's record receipt.
+ * @returns {{id: string, objectKind: string, appended: number, appended: number, charge: {support: boolean, refutation: boolean}}} the journal's record receipt.
  */
 export function recordCrossSectionFinding(record, options = {}) {
   const dataRoot = resolveFilepath([options.dataRoot ?? COMPUTER_INFERENCE_SYSTEM_ROOT]);

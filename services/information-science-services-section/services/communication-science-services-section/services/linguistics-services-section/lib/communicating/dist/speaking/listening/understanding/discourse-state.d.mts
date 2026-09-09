@@ -260,16 +260,16 @@ export declare const discourseStateCarrier: import("@red-cup-engineering/relatin
         readonly mentions: readonly string[];
     }[];
     readonly references: readonly {
+        readonly status: "ambiguous" | "void" | "resolved";
         readonly antecedent: string | null;
         readonly readingId: string;
         readonly anaphor: string;
-        readonly status: "ambiguous" | "void" | "resolved";
         readonly candidates: readonly string[];
     }[];
     readonly presuppositions: readonly {
+        readonly status: "potential" | "active" | "stable" | "absurd";
         readonly readingId: string;
         readonly trigger: string;
-        readonly status: "potential" | "active" | "stable" | "absurd";
         readonly presupposed: string;
     }[];
     readonly commitments: readonly {

@@ -29,7 +29,7 @@
     "@red-cup-engineering/javascript-file-main-guard-service": "0.1.3",
     "@red-cup-engineering/json-codec-service": "0.2.0",
     "@red-cup-engineering/semantic-content-identify-service": "0.2.7",
-    "@red-cup-engineering/semantic-record-journal-service": "0.1.11"
+    "@red-cup-engineering/semantic-record-journal-service": "0.4.0"
   },
   "keywords": [
     "sovereign-state-enterprise",

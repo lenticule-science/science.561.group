@@ -1,7 +1,9 @@
 import { Buffer } from "node:buffer";
 
 import { seavt } from "@red-cup-engineering/witness-journal-entry-service";
+import { jsonToTerm } from "@red-cup-engineering/relation-model-notation-json-codec";
 import { appendSeavt } from "@red-cup-engineering/witness-journal-log-service";
+const directSeavt = (entity, attribute, value, time) => seavt(jsonToTerm(entity), jsonToTerm(attribute), jsonToTerm(value), time);
 
 function niSurface(role, token) {
   const match = /^ni:\/\/\/sha-256;([A-Za-z0-9_-]{43})$/u.exec(token);
@@ -12,11 +14,11 @@ function niSurface(role, token) {
 export function appendDailyReadingWitness(root, at, values) {
   const entity = niSurface("completion", values.completion);
   const rows = [
-    seavt(entity, "daily-reading:proposal", niSurface("proposal", values.proposal), at),
-    seavt(entity, "daily-reading:completion", niSurface("completion", values.completion), at),
-    seavt(entity, "daily-reading:evidence", niSurface("evidence", values.evidence), at),
-    seavt(entity, "daily-reading:transition-witness", niSurface("transition-witness", values.witness), at),
-    seavt(entity, "daily-reading:disposition", `daily-reading.disposition.${values.disposition}`, at),
+    directSeavt(entity, "daily-reading:proposal", niSurface("proposal", values.proposal), at),
+    directSeavt(entity, "daily-reading:completion", niSurface("completion", values.completion), at),
+    directSeavt(entity, "daily-reading:evidence", niSurface("evidence", values.evidence), at),
+    directSeavt(entity, "daily-reading:transition-witness", niSurface("transition-witness", values.witness), at),
+    directSeavt(entity, "daily-reading:disposition", `daily-reading.disposition.${values.disposition}`, at),
   ];
   return appendSeavt(root, "divination.daily-reading", rows, at);
 }

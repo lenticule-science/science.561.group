@@ -10,7 +10,7 @@ keywords:
   - Fediverse
 relations:
   uses: activity
-  mediated-by: actor
+  mediated-by: activitypub-actor
 references:
   activitypub2018:
     authors: ["W3C Social Web Working Group"]
@@ -29,7 +29,7 @@ In practice, federation is uneven. Large instances attract more users and carry 
 ## Related terms
 
 - [Activity](./activity.md) — what flows across the federation
-- [Actor](./actor.md) — who sends and receives within the federation
+- [ActivityPub Actor](./activitypub-actor.md) — who sends and receives within the federation
 - [Fediverse](../../../fediverse/index.md) — the broader network of federated services built on ActivityPub and related protocols
 
 

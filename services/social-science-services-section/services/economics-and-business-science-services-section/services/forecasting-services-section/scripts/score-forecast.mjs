@@ -40,7 +40,7 @@ export function findRecordedForecast(forecastId, options = {}) {
  * this record's original shape.
  * @param {{forecastId: string, outcome: (0|1), kind?: ("house"|"market"), referenceClass?: string}} input
  * @param {{dataRoot?: string, recordedAt?: string}} [options]
- * @returns {{id: string, objectKind: string, contentAppended: number, claimsAppended: number, charge: {support: boolean, refutation: boolean}}} the journal's record receipt for the calibration entry.
+ * @returns {{id: string, objectKind: string, appended: number, appended: number, charge: {support: boolean, refutation: boolean}}} the journal's record receipt for the calibration entry.
  * @throws {TypeError} when outcome is not exactly 0 or 1.
  */
 export function scoreForecast({ forecastId, outcome, kind, referenceClass }, options = {}) {

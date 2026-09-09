@@ -18,7 +18,7 @@ earnings and losses, distributions, and specified adjustments under the
 applicable reporting basis. Other entity forms may use members', partners', or
 proprietor capital accounts instead.
 
-It's an equity [account](./account.md) that appears on the [balance sheet](./balance-sheet.md). Retained earnings grows when the business earns a profit and shrinks when it distributes dividends or incurs net losses. At the end of each accounting period, net income (or net loss) from the [income statement](./income-statement.md) is closed into retained earnings through a closing entry. The balance carries forward from one period to the next, accumulating over the life of the business.
+It's an equity [accounting account](./accounting-account.md) that appears on the [balance sheet](./balance-sheet.md). Retained earnings grows when the business earns a profit and shrinks when it distributes dividends or incurs net losses. At the end of each accounting period, net income (or net loss) from the [income statement](./income-statement.md) is closed into retained earnings through a closing entry. The balance carries forward from one period to the next, accumulating over the life of the business.
 
 Retained earnings is a residual accounting claim, not a segregated fund and not
 proof that an equal amount was “reinvested.” Cash may have been distributed,

@@ -14,7 +14,7 @@ produced-by: journal
 verified-by: trial-balance
 ---
 
-A ledger is a record of financial transactions organized by [account](./account.md), as opposed to the [journal](./journal.md), which organizes transactions chronologically. The process of transferring entries from the journal to the ledger is called *posting*. After posting, each account in the ledger shows all the [debits and credits](./debit-and-credit.md) that have affected it, along with a running or periodic balance.
+A ledger is a record of financial transactions organized by [accounting account](./accounting-account.md), as opposed to the [journal](./journal.md), which organizes transactions chronologically. The process of transferring entries from the journal to the ledger is called *posting*. After posting, each accounting account in the ledger shows all the [debits and credits](./debit-and-credit.md) that have affected it, along with a running or periodic balance.
 
 The *general ledger* carries the posted accounts used to develop financial
 reports. Some accounts are *control accounts* backed by subsidiary records: an

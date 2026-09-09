@@ -13,6 +13,6 @@
     "@red-cup-engineering/a2a-rmn-part-service": "0.2.0",
     "@red-cup-engineering/a2a-rmn-task-client-service": "0.5.0",
     "@red-cup-engineering/semantic-content-identify-service": "0.2.10",
-    "@red-cup-engineering/semantic-record-journal-service": "0.1.11"
+    "@red-cup-engineering/semantic-record-journal-service": "0.4.0"
   }
 }

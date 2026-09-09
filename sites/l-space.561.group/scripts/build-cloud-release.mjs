@@ -366,7 +366,7 @@ const manifest = {
     warnings: wing.world.warnings.length,
   },
   index: "/api/v1/vault/index",
-  graph: Object.freeze({ file: "graph.json", schemaVersion: releaseGraphSchemaVersion }),
+  graph: Object.freeze({ file: "graph.json", href: "/api/v1/vault/graph", schemaVersion: releaseGraphSchemaVersion }),
   garden: "/api/v1/vault/garden",
   halls: "/api/v1/vault/halls",
   surface: "/api/v1/surface",

@@ -47,21 +47,21 @@ const lSpaceGraphTools = Object.freeze([
     }),
   }),
   Object.freeze({
-    name: "observe_l_space_fae_graph",
-    description: "Observe the admitted L-Space workspace after FAE composition, with DREW occurrence identity and provenance.",
+    name: "observe_l_space_feltos",
+    description: "Observe the admitted L-Space workspace through GEODE's FeltOS-native composition, with DREW occurrence identity and provenance.",
     inputSchema: Object.freeze({ type: "object", properties: Object.freeze({}), additionalProperties: false }),
   }),
   Object.freeze({
-    name: "query_l_space_fae_relations",
-    description: "Query bounded FAE-composed relations projected from GEODE's admitted L-Space Markdown graph.",
+    name: "query_l_space_feltos_relations",
+    description: "Query bounded FeltOS relations projected from GEODE's admitted L-Space Markdown graph.",
     inputSchema: Object.freeze({ type: "object", properties: Object.freeze({
       subject: Object.freeze({ type: "string" }), predicate: Object.freeze({ type: "string" }), object: Object.freeze({ type: "string" }),
       limit: Object.freeze({ type: "integer", minimum: 1, maximum: 500, default: 100 }),
     }), additionalProperties: false }),
   }),
   Object.freeze({
-    name: "query_l_space_fae_entity",
-    description: "Read a bounded incoming/outgoing FAE neighborhood for one L-Space document or graph term.",
+    name: "query_l_space_feltos_entity",
+    description: "Read a bounded incoming/outgoing FeltOS neighborhood for one L-Space document or graph term.",
     inputSchema: Object.freeze({ type: "object", required: Object.freeze(["term"]), properties: Object.freeze({
       term: Object.freeze({ type: "string", minLength: 1 }), predicate: Object.freeze({ type: "string" }),
       direction: Object.freeze({ enum: Object.freeze(["incoming", "outgoing", "both"]), default: "both" }),
@@ -69,8 +69,8 @@ const lSpaceGraphTools = Object.freeze([
     }), additionalProperties: false }),
   }),
   Object.freeze({
-    name: "observe_l_space_fae_diagnostics",
-    description: "Read bounded FAE/GEODE projection diagnostics without turning unresolved Markdown links into relations.",
+    name: "observe_l_space_feltos_diagnostics",
+    description: "Read bounded FeltOS/GEODE projection diagnostics without turning unresolved Markdown links into relations.",
     inputSchema: Object.freeze({ type: "object", properties: Object.freeze({ limit: Object.freeze({ type: "integer", minimum: 1, maximum: 500, default: 100 }) }), additionalProperties: false }),
   }),
 ]);
@@ -149,15 +149,15 @@ export async function callTool(name, input = {}) {
       ...(input.construct === undefined ? {} : { construct: sparqlPatterns(input.construct) }),
     }), { limit: input.limit ?? 100 });
   }
-  if (name === "observe_l_space_fae_graph") return authoring.faeSummary();
-  if (name === "query_l_space_fae_relations") {
+  if (name === "observe_l_space_feltos") return authoring.feltosSummary();
+  if (name === "query_l_space_feltos_relations") {
     const { limit = 100, ...relationPattern } = input;
-    return authoring.faeRelations(relationPattern, { limit });
+    return authoring.feltosRelations(relationPattern, { limit });
   }
-  if (name === "query_l_space_fae_entity") {
-    return authoring.faeEntity(input.term, { predicate: input.predicate, direction: input.direction ?? "both", limit: input.limit ?? 100 });
+  if (name === "query_l_space_feltos_entity") {
+    return authoring.feltosEntity(input.term, { predicate: input.predicate, direction: input.direction ?? "both", limit: input.limit ?? 100 });
   }
-  if (name === "observe_l_space_fae_diagnostics") return authoring.faeDiagnostics({ limit: input.limit ?? 100 });
+  if (name === "observe_l_space_feltos_diagnostics") return authoring.feltosDiagnostics({ limit: input.limit ?? 100 });
   if (drewMcpTools.some((tool) => tool.name === name)) return authoring.callGraphTool(name, input);
   throw new TypeError(`unknown L-Space MCP operation ${name}`);
 }

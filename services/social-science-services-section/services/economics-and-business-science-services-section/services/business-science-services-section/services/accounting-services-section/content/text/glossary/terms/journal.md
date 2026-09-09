@@ -17,7 +17,7 @@ requires: account
 ---
 
 A journal is the chronological record of admitted accounting entries. A journal
-entry carries the effective date, [accounts](./account.md),
+entry carries the effective date, [accounting accounts](./accounting-account.md),
 [debit and credit](./debit-and-credit.md) effects, description, and enough source
 provenance to recover the judgment. It is traditionally called the “book of
 original entry,” but it is not the original economic evidence: invoices, bank

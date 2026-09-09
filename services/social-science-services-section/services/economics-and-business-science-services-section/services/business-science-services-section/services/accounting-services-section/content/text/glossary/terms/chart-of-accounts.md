@@ -12,7 +12,7 @@ contains: account
 governs: ledger
 ---
 
-A chart of accounts is the controlled, structured list of [accounts](./account.md)
+A chart of accounts is the controlled, structured list of [accounting accounts](./accounting-account.md)
 an entity may use. It assigns stable names or codes, account classes, and any
 dimensions or constraints needed by the ledger. The chart governs available
 classification, but detail can also reside in counterparties, projects,

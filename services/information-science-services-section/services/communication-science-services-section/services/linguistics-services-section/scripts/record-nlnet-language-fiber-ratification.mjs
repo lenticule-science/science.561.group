@@ -18,7 +18,7 @@ export const RATIFICATION_CATEGORY = "linguistics.nlnet-language-fiber-ratificat
  * enterprise pursuit into this section's semantic record journal.
  * @param {object} record
  * @param {{dataRoot?: string, recordedAt?: string}} [options]
- * @returns {{id: string, objectKind: string, contentAppended: number, claimsAppended: number, charge: {support: boolean, refutation: boolean}}} the journal's record receipt.
+ * @returns {{id: string, objectKind: string, appended: number, appended: number, charge: {support: boolean, refutation: boolean}}} the journal's record receipt.
  */
 export function recordRatification(record, options = {}) {
   const dataRoot = resolveFilepath([options.dataRoot ?? NODE_ROOT]);

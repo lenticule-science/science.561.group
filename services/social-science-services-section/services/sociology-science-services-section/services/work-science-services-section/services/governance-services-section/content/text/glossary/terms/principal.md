@@ -5,11 +5,7 @@ extends: Entity
 date-created: 2026-03-19
 date-modified: 2026-04-28
 id: principal
-minimum-math: relational-history-fiber-saturating-nucleus
 component-of: relational-universe
-fiber-of: relational-universe
-base: t
-element-of: entity
 params:
   original-authority-fiber: relational-history-fiber-nuclear-heyting-doctrine
   action-domain: area

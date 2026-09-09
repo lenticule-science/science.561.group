@@ -65,7 +65,11 @@ export function parseLeaderMessage(text, { bundle = rawBundle, languageFiber = D
       "this parser neither applies interpretive frame maps nor writes customer territory",
     ]),
   };
-  return Object.freeze({ id: semanticJsonId(body, "lenticule.leader-message.parse/v2"), ...body });
+  // The source text has one canonical content identity.  A candidate reading
+  // is evidence derived from that source, not a second entity minted from a
+  // potentially large parse forest.  Storage owns any later chunking and
+  // content-addressing of the evidence it admits.
+  return Object.freeze(body);
 }
 
 function argumentsOf(argv) {

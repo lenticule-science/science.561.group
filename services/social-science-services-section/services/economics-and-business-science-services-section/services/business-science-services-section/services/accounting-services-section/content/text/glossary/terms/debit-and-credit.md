@@ -12,7 +12,7 @@ component-of: double-entry-bookkeeping
 acts-on: account
 ---
 
-A debit is an entry on the left side of an [account](./account.md); a credit is
+A debit is an entry on the left side of an [accounting account](./accounting-account.md); a credit is
 an entry on the right side. In [double-entry bookkeeping](./double-entry-bookkeeping.md),
 the admitted entry must close under its balancing basis. In a single-currency
 example, a \$500 debit is matched by \$500 of credits. Multi-commodity books must

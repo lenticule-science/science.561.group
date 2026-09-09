@@ -382,8 +382,8 @@ export declare const parseForestReadingCarrier: import("@red-cup-engineering/rel
     readonly obstructions: readonly {
         readonly kind: "void" | "conflict";
         readonly value: "potential" | "active" | "stable" | "absurd";
-        readonly label: string;
         readonly on: string;
+        readonly label: string;
     }[];
     readonly quotes?: readonly {
         readonly text: string;
@@ -410,8 +410,8 @@ export declare const parseForestCarrier: import("@red-cup-engineering/relating")
     readonly obstructions: readonly {
         readonly kind: "void" | "conflict";
         readonly value: "potential" | "active" | "stable" | "absurd";
-        readonly label: string;
         readonly on: string;
+        readonly label: string;
     }[];
     readonly readings: readonly {
         readonly kind: "communicating.parse-forest.reading";
@@ -431,8 +431,8 @@ export declare const parseForestCarrier: import("@red-cup-engineering/relating")
         readonly obstructions: readonly {
             readonly kind: "void" | "conflict";
             readonly value: "potential" | "active" | "stable" | "absurd";
-            readonly label: string;
             readonly on: string;
+            readonly label: string;
         }[];
         readonly quotes?: readonly {
             readonly text: string;

@@ -18,7 +18,7 @@ produces: financial-statements
 
 Double-entry bookkeeping records a settled transaction as equal
 [debits and credits](./debit-and-credit.md) across two or more
-[accounts](./account.md). A [trial balance](./trial-balance.md) tests the
+[accounting accounts](./accounting-account.md). A [trial balance](./trial-balance.md) tests the
 resulting debit-credit equality. A mismatch proves that something is wrong; a
 match does not prove that every event was recorded or correctly classified.
 

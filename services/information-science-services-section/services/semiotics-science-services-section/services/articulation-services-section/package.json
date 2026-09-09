@@ -23,7 +23,8 @@
     "check": "npm run check:node && forge build --force",
     "test": "npm run test:node && forge test",
     "test:node": "node --test \"test/**/*.test.mjs\"",
-    "prepack": "npm run check && npm run build:node"
+    "test:artifact": "node --test test/artifact-package.test.mjs",
+    "prepack": "npm run check && npm run build:node && npm run test:artifact"
   },
   "devDependencies": {
     "typescript": "5.9.3",

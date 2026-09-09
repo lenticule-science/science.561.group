@@ -8,7 +8,7 @@ const scienceNav = document.querySelector("#science-nav");
 const cardTemplate = document.querySelector("#room-card-template");
 const state = {
   anonymous: false, me: null, surface: null, publicIndex: null, manifest: null, index: null, garden: null, halls: null,
-  reviews: new Map(), byKey: new Map(), byName: new Map(), collections: [],
+  graph: null, reviews: new Map(), byId: new Map(), byKey: new Map(), byName: new Map(), collections: [],
 };
 
 async function beginDiscordCommandLogin(container) {
@@ -88,6 +88,7 @@ function collectionFor(room) {
 function indexCorpus(index) {
   const counts = new Map();
   for (const room of index.rooms) {
+    state.byId.set(room.id, room);
     state.byKey.set(room.key, room);
     for (const candidate of [room.title, room.id, room.id.split("/").at(-1)?.replace(/\.md$/i, "")]) {
       const name = candidate?.toLocaleLowerCase().trim();
@@ -235,6 +236,91 @@ function showHall(rawId) {
   for (const term of hall.intent ?? []) { const span = document.createElement("span"); span.className = "tag"; span.textContent = term; tags.append(span); }
   const rooms = hall.rooms.map((entry) => state.byKey.get(entry.key)).filter(Boolean);
   view.append(eyebrow, title, rigid, tags, sectionHead(`${rooms.length.toLocaleString()} rooms`, "Members of this concept hall"), roomList(rooms));
+}
+async function loadReleaseGraph() {
+  if (state.graph !== null) return state.graph;
+  const href = state.manifest?.graph?.href ?? "/api/v1/vault/graph";
+  const response = await fetch(href);
+  if (!response.ok) throw new Error(`The graph release did not open (${response.status}).`);
+  const graph = await response.json();
+  if (graph.release !== state.manifest.release) throw new Error("The graph and vault releases do not agree.");
+  state.graph = graph;
+  return graph;
+}
+function graphDocumentPath(value) {
+  if (typeof value === "string" && state.byId.has(value)) return value;
+  if (value && typeof value === "object") {
+    for (const key of ["path", "id", "sourcePath", "targetPath"]) {
+      if (typeof value[key] === "string" && state.byId.has(value[key])) return value[key];
+    }
+  }
+  return null;
+}
+function graphEdgesOf(graph) {
+  const edges = [];
+  for (const edge of graph.snapshot?.graph?.edges ?? []) {
+    const from = graphDocumentPath(edge.sourcePath); const to = graphDocumentPath(edge.targetPath);
+    if (from && to && from !== to) edges.push({ from, to, predicate: edge.predicate ?? edge.kind ?? "relation" });
+  }
+  for (const row of graph.ledger?.rows ?? []) {
+    const from = graphDocumentPath(row.e); const to = graphDocumentPath(row.v);
+    if (from && to && from !== to) edges.push({ from, to, predicate: row.a ?? "declared relation" });
+  }
+  const unique = new Map();
+  for (const edge of edges) unique.set(`${edge.from}\u0000${edge.to}\u0000${edge.predicate}`, edge);
+  return [...unique.values()];
+}
+function graphConstellation(focus, edges) {
+  const figure = document.createElement("figure"); figure.className = "graph-constellation";
+  const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg"); svg.setAttribute("viewBox", "0 0 640 380"); svg.setAttribute("role", "img");
+  const neighbors = [...new Set(edges.flatMap((edge) => edge.from === focus ? [edge.to] : edge.to === focus ? [edge.from] : []))].slice(0, 14);
+  svg.setAttribute("aria-label", `${state.byId.get(focus)?.title ?? focus} and ${neighbors.length.toLocaleString()} directly connected knowledge cells.`);
+  const center = { x: 320, y: 190 };
+  const make = (name, attributes = {}) => { const element = document.createElementNS("http://www.w3.org/2000/svg", name); for (const [key, value] of Object.entries(attributes)) element.setAttribute(key, String(value)); return element; };
+  const positions = new Map([[focus, center]]);
+  for (const [index, path] of neighbors.entries()) {
+    const angle = -Math.PI / 2 + (Math.PI * 2 * index) / neighbors.length;
+    positions.set(path, { x: center.x + Math.cos(angle) * 132, y: center.y + Math.sin(angle) * 132 });
+  }
+  for (const path of neighbors) {
+    const point = positions.get(path); svg.append(make("line", { x1: center.x, y1: center.y, x2: point.x, y2: point.y, class: "graph-edge" }));
+  }
+  for (const [path, point] of positions) {
+    const room = state.byId.get(path); const link = make("a", { href: roomHref(room) });
+    link.append(make("circle", { cx: point.x, cy: point.y, r: path === focus ? 39 : 26, class: path === focus ? "graph-node graph-focus" : "graph-node" }));
+    const label = make("text", { x: point.x, y: point.y + (path === focus ? 5 : 4), class: "graph-label", "text-anchor": "middle" });
+    const title = room?.title ?? path; label.textContent = title.length > 25 ? `${title.slice(0, 24)}…` : title; link.append(label); svg.append(link);
+  }
+  const caption = document.createElement("figcaption"); caption.className = "graph-caption"; caption.textContent = `Showing ${neighbors.length.toLocaleString()} of ${edges.filter((edge) => edge.from === focus || edge.to === focus).length.toLocaleString()} direct relations. Select a cell to enter its room.`;
+  figure.append(svg, caption); return figure;
+}
+async function showGraph() {
+  document.title = "Knowledge graph · L-Space"; view.replaceChildren(Object.assign(document.createElement("div"), { className: "loading", textContent: "Opening the released relation ledger…" }));
+  let graph;
+  try { graph = await loadReleaseGraph(); } catch (error) { view.replaceChildren(Object.assign(document.createElement("p"), { className: "empty", textContent: error.message })); return; }
+  const edges = graphEdgesOf(graph); const degree = new Map();
+  for (const edge of edges) { degree.set(edge.from, (degree.get(edge.from) ?? 0) + 1); degree.set(edge.to, (degree.get(edge.to) ?? 0) + 1); }
+  const ranked = [...degree.keys()].sort((left, right) => (degree.get(right) ?? 0) - (degree.get(left) ?? 0) || (state.byId.get(left)?.title ?? left).localeCompare(state.byId.get(right)?.title ?? right));
+  const eyebrow = document.createElement("p"); eyebrow.className = "eyebrow"; eyebrow.textContent = "GEODE relation ledger · VICTOR cell catalogue";
+  const title = document.createElement("h1"); title.className = "page-title"; title.textContent = "Knowledge graph";
+  const cells = state.manifest.victor?.cellCount ?? graph.snapshot?.documents?.length ?? state.index.rooms.length;
+  const measures = document.createElement("p"); measures.className = "hero-copy"; measures.textContent = `${cells.toLocaleString()} released knowledge cells · ${(graph.counts?.relationRows ?? 0).toLocaleString()} declared relations · ${edges.length.toLocaleString()} document-to-document passages. This view reads the immutable release; it never invents an edge in the browser.`;
+  const form = document.createElement("form"); form.className = "graph-search";
+  const label = document.createElement("label"); label.textContent = "Find a knowledge cell";
+  const input = document.createElement("input"); input.type = "search"; input.placeholder = "Type a title, path, or concept"; input.autocomplete = "off"; label.append(input); const submit = document.createElement("button"); submit.type = "submit"; submit.textContent = "Focus graph"; form.append(label, submit);
+  const canvas = document.createElement("section"); canvas.className = "graph-reading";
+  const showFocus = (offered) => {
+    const query = offered.trim().toLocaleLowerCase();
+    const exact = state.index.rooms.find((room) => room.id.toLocaleLowerCase() === query || room.title.toLocaleLowerCase() === query);
+    const result = exact ?? searchRooms(offered)[0] ?? state.byId.get(ranked[0]);
+    if (!result) { canvas.replaceChildren(Object.assign(document.createElement("p"), { className: "empty", textContent: "No released knowledge cell answers that description." })); return; }
+    const related = edges.filter((edge) => edge.from === result.id || edge.to === result.id);
+    const heading = sectionHead(result.title, `${related.length.toLocaleString()} direct relations · ${result.id}`);
+    const neighbors = [...new Set(related.flatMap((edge) => edge.from === result.id ? [edge.to] : [edge.from]))].map((path) => state.byId.get(path)).filter(Boolean);
+    canvas.replaceChildren(heading, graphConstellation(result.id, related), sectionHead(`${neighbors.length.toLocaleString()} connected cells`, "Direct relations in this release"), roomList(neighbors, { limit: 18 }));
+  };
+  form.addEventListener("submit", (event) => { event.preventDefault(); showFocus(input.value); });
+  view.replaceChildren(eyebrow, title, measures, form, canvas); showFocus("");
 }
 function searchRooms(query, filters = {}) {
   return searchImmutableRoomIndex(state.index.rooms, { query, ...filters }).results.map(({ room, exactTitle, score, reasons, evidence }) => ({
@@ -438,6 +524,7 @@ async function route() {
     else if (kind === "collection") showCollection(rest.join("/"));
     else if (kind === "halls") showHalls();
     else if (kind === "hall") showHall(rest.join("/"));
+    else if (kind === "graph") await showGraph();
     else if (kind === "search") { const query = decodeURIComponent(rest.join("/")); search.value = query; showSearch(query); }
     else showNotFound();
   }

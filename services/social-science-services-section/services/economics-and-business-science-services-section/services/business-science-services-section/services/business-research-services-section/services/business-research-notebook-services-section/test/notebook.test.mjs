@@ -35,8 +35,8 @@ test("business notebook records remain in their explicit root and replay without
   const first = recordJournalRecord(root, category, record, { recordedAt: AT, actor: ACTOR });
   const replay = recordJournalRecord(root, category, record, { recordedAt: AT, actor: ACTOR });
 
-  assert.equal(first.contentAppended, 1);
-  assert.equal(replay.contentAppended, 0);
+  assert.equal(first.appended, 1);
+  assert.equal(replay.appended, 0);
   assert.deepEqual(queryJournalRecords(root, category), [record]);
   assert.deepEqual(queryJournalRecords(foreignRoot, category), []);
 });

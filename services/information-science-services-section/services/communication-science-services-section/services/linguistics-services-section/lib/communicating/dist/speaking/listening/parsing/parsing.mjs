@@ -62,8 +62,15 @@ export function parse(sentenceSpan, base, bundle) {
         };
     });
     const { paths: compositions, tower } = fold(arcs);
-    const conflicts = parsedAnswers.filter((a) => a.status === "ambiguous");
-    const voids = parsedAnswers.filter((a) => a.status === "void");
+    // A parse is a portable data carrier.  These are projections of answers, not
+    // graph aliases into `answers`: content-addressed consumers require a tree
+    // with one canonical JSON representation.
+    const conflicts = parsedAnswers
+        .filter((answer) => answer.status === "ambiguous")
+        .map((answer) => Object.freeze({ ...answer }));
+    const voids = parsedAnswers
+        .filter((answer) => answer.status === "void")
+        .map((answer) => Object.freeze({ ...answer }));
     const quotes = spansInSentenceOfTier(sentenceSpan, base.spans, "quote");
     const attributions = attributionsFromWords(words, parsedArcs, quotes, base.text, bundle);
     const modality = modalityFromWords(words, bundle);

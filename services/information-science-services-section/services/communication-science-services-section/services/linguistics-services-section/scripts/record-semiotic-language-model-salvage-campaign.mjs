@@ -41,7 +41,7 @@ export const CAMPAIGN_CATEGORY = "semiotic-computer-system.semiotic-language-mod
  * tree at session death.
  * @param {object} record
  * @param {{dataRoot?: string, recordedAt?: string}} [options]
- * @returns {{id: string, objectKind: string, contentAppended: number, claimsAppended: number, charge: {support: boolean, refutation: boolean}}} the journal's record receipt.
+ * @returns {{id: string, objectKind: string, appended: number, appended: number, charge: {support: boolean, refutation: boolean}}} the journal's record receipt.
  */
 export function recordCampaign(record, options = {}) {
   const dataRoot = resolveFilepath([options.dataRoot ?? SEMIOTIC_COMPUTER_SYSTEM_ROOT]);

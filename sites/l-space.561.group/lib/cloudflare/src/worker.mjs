@@ -156,10 +156,10 @@ function graphBinding(env) {
     ? offered : null;
 }
 
-function faeBinding(env) {
+function feltosBinding(env) {
   const offered = graphBinding(env);
-  return offered && typeof offered.faeSummary === "function" && typeof offered.faeRelations === "function"
-    && typeof offered.faeEntity === "function" && typeof offered.faeDiagnostics === "function" ? offered : null;
+  return offered && typeof offered.feltosSummary === "function" && typeof offered.feltosRelations === "function"
+    && typeof offered.feltosEntity === "function" && typeof offered.feltosDiagnostics === "function" ? offered : null;
 }
 
 function sparqlTerm(value) {
@@ -186,10 +186,28 @@ async function jsonObject(request) {
 }
 
 export async function graphResponse(request, env, url) {
-  if (!url.pathname.startsWith("/api/v1/graph/")) return null;
-  const graph = graphBinding(env);
-  if (graph === null) return responseJson({ error: "graph-unavailable" }, 503);
+  const graphPath = url.pathname.startsWith("/api/v1/graph/") && url.pathname !== "/api/v1/graph/fae";
+  const feltosPath = url.pathname === "/api/feltos";
+  if (!graphPath && !feltosPath) return null;
   try {
+    if (feltosPath) {
+      if (request.method !== "POST") return responseJson({ error: "method-not-allowed" }, 405);
+      const feltos = feltosBinding(env);
+      if (feltos === null) return responseJson({ error: "feltos-unavailable" }, 503);
+      const offered = await jsonObject(request);
+      if (offered.operation === "summary") return responseJson(await feltos.feltosSummary());
+      if (offered.operation === "relations") {
+        return responseJson(await feltos.feltosRelations(offered.pattern ?? {}, { limit: offered.limit ?? 100 }));
+      }
+      if (offered.operation === "entity") {
+        if (typeof offered.term !== "string" || offered.term === "") return responseJson({ error: "feltos-term-required" }, 400);
+        return responseJson(await feltos.feltosEntity(offered.term, { predicate: offered.predicate, direction: offered.direction ?? "both", limit: offered.limit ?? 100 }));
+      }
+      if (offered.operation === "diagnostics") return responseJson(await feltos.feltosDiagnostics({ limit: offered.limit ?? 100 }));
+      return responseJson({ error: "unknown-feltos-operation" }, 400);
+    }
+    const graph = graphBinding(env);
+    if (graph === null) return responseJson({ error: "graph-unavailable" }, 503);
     if (url.pathname === "/api/v1/graph/concept" && request.method === "GET") {
       const name = url.searchParams.get("name");
       if (!name) return responseJson({ error: "concept-name-required" }, 400);
@@ -212,21 +230,6 @@ export async function graphResponse(request, env, url) {
         ...(offered.construct === undefined ? {} : { construct: sparqlPatterns(offered.construct) }),
       });
       return responseJson(await graph.sparql(query, { limit: offered.limit ?? 100 }));
-    }
-    if (url.pathname === "/api/v1/graph/fae" && request.method === "POST") {
-      const fae = faeBinding(env);
-      if (fae === null) return responseJson({ error: "fae-unavailable" }, 503);
-      const offered = await jsonObject(request);
-      if (offered.operation === "summary") return responseJson(await fae.faeSummary());
-      if (offered.operation === "relations") {
-        return responseJson(await fae.faeRelations(offered.pattern ?? {}, { limit: offered.limit ?? 100 }));
-      }
-      if (offered.operation === "entity") {
-        if (typeof offered.term !== "string" || offered.term === "") return responseJson({ error: "fae-term-required" }, 400);
-        return responseJson(await fae.faeEntity(offered.term, { predicate: offered.predicate, direction: offered.direction ?? "both", limit: offered.limit ?? 100 }));
-      }
-      if (offered.operation === "diagnostics") return responseJson(await fae.faeDiagnostics({ limit: offered.limit ?? 100 }));
-      return responseJson({ error: "unknown-fae-operation" }, 400);
     }
     return responseJson({ error: "not-found" }, 404);
   } catch (error) {
@@ -405,6 +408,9 @@ export default {
     }
     if (url.pathname === "/api/v1/vault/halls" && request.method === "GET") {
       return serveAsset(request, env, "/vault/views/halls.json");
+    }
+    if (url.pathname === "/api/v1/vault/graph" && request.method === "GET") {
+      return serveAsset(request, env, "/vault/graph.json");
     }
     if (url.pathname === "/api/v1/vault/victor-release" && request.method === "GET") {
       return serveAsset(request, env, "/vault/victor-release.json");

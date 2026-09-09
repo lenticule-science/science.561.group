@@ -82,7 +82,13 @@ test("the normalized TUFTE garden projection is served through the authenticated
   assert.equal(await response.text(), "/vault/views/garden.json");
 });
 
-test("authenticated graph reads share GEODE's DREW and bounded SPARQL capabilities", async () => {
+test("the immutable GEODE relation artifact is served through the authenticated API", async () => {
+  const response = await worker.fetch(await signedIn("/api/v1/vault/graph"), environment());
+  assert.equal(response.status, 200);
+  assert.equal(await response.text(), "/vault/graph.json");
+});
+
+test("authenticated graph reads share GEODE's DREW, bounded SPARQL, and FeltOS capabilities", async () => {
   const env = {
     ...environment(),
     VAULTMAZE_AUTHORING: {
@@ -90,10 +96,10 @@ test("authenticated graph reads share GEODE's DREW and bounded SPARQL capabiliti
       async concept(name) { return { type: "GeodeConceptReading", name, known: true }; },
       async callGraphTool(name, args) { return { structuredContent: { name, args, source: "drew" } }; },
       async sparql(query, options) { return { type: query.type, where: query.where, limit: options.limit }; },
-      async faeSummary() { return { type: "GeodeFaeWorkspaceGraphSummary", providers: ["geode"] }; },
-      async faeRelations(pattern, options) { return { type: "GeodeFaeRelationQuery", pattern, limit: options.limit }; },
-      async faeEntity(term, options) { return { type: "GeodeFaeEntityReading", term, direction: options.direction }; },
-      async faeDiagnostics(options) { return { type: "GeodeFaeDiagnostics", limit: options.limit }; },
+      async feltosSummary() { return { type: "GeodeFeltOSWorkspaceSummary", providers: ["geode"] }; },
+      async feltosRelations(pattern, options) { return { type: "GeodeFeltOSRelationQuery", pattern, limit: options.limit }; },
+      async feltosEntity(term, options) { return { type: "GeodeFeltOSEntityReading", term, direction: options.direction }; },
+      async feltosDiagnostics(options) { return { type: "GeodeFeltOSDiagnostics", limit: options.limit }; },
     },
   };
   const concept = await worker.fetch(await signedIn("/api/v1/graph/concept?name=order"), env);
@@ -114,11 +120,16 @@ test("authenticated graph reads share GEODE's DREW and bounded SPARQL capabiliti
   assert.equal(result.limit, 12);
   assert.deepEqual(result.where[0].s, { kind: "knowing.sparql.variable", name: "document" });
 
-  const fae = await worker.fetch(await signedIn("/api/v1/graph/fae", {
+  const feltos = await worker.fetch(await signedIn("/api/feltos", {
     method: "POST", headers: { "content-type": "application/json" },
     body: JSON.stringify({ operation: "relations", pattern: { predicate: "wikilink" }, limit: 7 }),
   }), env);
-  assert.deepEqual(await fae.json(), { type: "GeodeFaeRelationQuery", pattern: { predicate: "wikilink" }, limit: 7 });
+  assert.deepEqual(await feltos.json(), { type: "GeodeFeltOSRelationQuery", pattern: { predicate: "wikilink" }, limit: 7 });
+
+  const removed = await worker.fetch(await signedIn("/api/v1/graph/fae", {
+    method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ operation: "summary" }),
+  }), env);
+  assert.equal(removed.status, 404);
 });
 
 test("VaultMaze reviews are validated and stored under a pseudonymous subject", async () => {
@@ -168,6 +179,7 @@ test("the authenticated vault is unreachable without a session, by any spelling"
     "/vault/views/garden.json",
     "/api/v1/vault/index",
     `/api/v1/vault/rooms/${ROOM_KEY}`,
+    "/api/feltos",
     "/api/v1/me",
     "/api/v1/reviews",
     "/js/%2e%2e/vault/index.json",
