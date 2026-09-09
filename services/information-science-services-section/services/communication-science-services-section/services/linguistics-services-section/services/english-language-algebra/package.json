@@ -24,6 +24,7 @@
   "exports": {
     ".": "./src/bundle.mjs",
     "./bundle": "./src/bundle.mjs",
+    "./realizing": "./src/realizing.mjs",
     "./tag": "./src/tag.mjs",
     "./package.json": "./package.json",
     "./src/bundle.mjs": "./src/bundle.mjs"
@@ -39,6 +40,7 @@
   "files": [
     "content",
     "src/bundle.mjs",
+    "src/realizing.mjs",
     "src/english-die.mjs",
     "src/english-enterprise.mjs",
     "src/semantic-identity.mjs",
