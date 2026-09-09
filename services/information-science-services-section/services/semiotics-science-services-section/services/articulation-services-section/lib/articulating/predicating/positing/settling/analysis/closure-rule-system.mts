@@ -158,12 +158,11 @@ export function knowledgeLeastValuation(cells: readonly string[]): ValuationFibe
 }
 
 export function valuation(cells: readonly string[], values: Readonly<Record<string, ChargeValueName>>): ValuationFiberCarrier {
-  const filled: Record<string, ChargeValueName> = {};
-  for (const cell of cells) {
-    const value = values[cell] ?? "absurd";
+  const filled = Object.fromEntries(cells.map((cell) => {
+    const value = (Object.hasOwn(values, cell) ? values[cell] : undefined) ?? "absurd";
     requireChargeValue(value, "closureRule.valuation");
-    filled[cell] = value;
-  }
+    return [cell, value];
+  }));
   return valuationFiberCarrier(cells, freezeRecord(filled));
 }
 
@@ -245,17 +244,15 @@ const threeStepFromPredicationSystem = (
 ): ThreeStepClosureReceipt => threeStepClosureReceipt(system, seed);
 void threeStepFromPredicationSystem;
 
-function* valuationRecords(cells: readonly string[], index = 0, record: Record<string, ChargeValueName> = {}): Generator<Readonly<Record<string, ChargeValueName>>> {
+function* valuationRecords(cells: readonly string[], index = 0, record: Readonly<Record<string, ChargeValueName>> = {}): Generator<Readonly<Record<string, ChargeValueName>>> {
   if (index === cells.length) {
     yield freezeRecord(record);
     return;
   }
   const cell = cells[index] as string;
   for (const value of chargeValueNames) {
-    record[cell] = value;
-    yield* valuationRecords(cells, index + 1, record);
+    yield* valuationRecords(cells, index + 1, { ...record, [cell]: value });
   }
-  delete record[cell];
 }
 
 function allValuations(cells: readonly string[]): readonly ValuationFiberCarrier[] {

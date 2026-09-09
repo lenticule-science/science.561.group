@@ -26,7 +26,7 @@ export function admitTarskiSheafComplex(input) {
     for (const [edge, e] of value.edges.entries()) {
         if (e === null || typeof e !== 'object' || !value.vertices.includes(e.src)
             || !value.vertices.includes(e.tgt) || e.restrict === null || typeof e.restrict !== 'object'
-            || chargeValueNames.some(q => typeof e.restrict[q] !== 'string' || !isChargeValueName(e.restrict[q]))) {
+            || chargeValueNames.some(q => !Object.hasOwn(e.restrict, q) || typeof e.restrict[q] !== 'string' || !isChargeValueName(e.restrict[q]))) {
             return Object.freeze({ kind: 'refused', reason: 'invalid-edge', edge });
         }
         if (chargeValueNames.some(a => chargeValueNames.some(b => leq(a, b) && !leq(e.restrict[a], e.restrict[b])))) {

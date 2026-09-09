@@ -73,12 +73,11 @@ export function knowledgeLeastValuation(cells) {
     return valuationFiberCarrier(cells, Object.fromEntries(cells.map((cell) => [cell, "absurd"])));
 }
 export function valuation(cells, values) {
-    const filled = {};
-    for (const cell of cells) {
-        const value = values[cell] ?? "absurd";
+    const filled = Object.fromEntries(cells.map((cell) => {
+        const value = (Object.hasOwn(values, cell) ? values[cell] : undefined) ?? "absurd";
         requireChargeValue(value, "closureRule.valuation");
-        filled[cell] = value;
-    }
+        return [cell, value];
+    }));
     return valuationFiberCarrier(cells, freezeRecord(filled));
 }
 export function antecedentHolds(rule, carrier) {
@@ -151,10 +150,8 @@ function* valuationRecords(cells, index = 0, record = {}) {
     }
     const cell = cells[index];
     for (const value of chargeValueNames) {
-        record[cell] = value;
-        yield* valuationRecords(cells, index + 1, record);
+        yield* valuationRecords(cells, index + 1, { ...record, [cell]: value });
     }
-    delete record[cell];
 }
 function allValuations(cells) {
     return Object.freeze([...valuationRecords(cells)].map((values) => valuation(cells, values)));

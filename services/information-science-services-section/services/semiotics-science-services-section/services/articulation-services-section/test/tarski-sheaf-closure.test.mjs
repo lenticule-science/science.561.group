@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { admitTarskiSheafComplex, settleTarskiSheaf, isTarskiCompatible } from '../dist/lib/articulating/predicating/positing/settling/analysis/tarski-sheaf-closure.mjs';
-import { valuation } from '../dist/lib/articulating/predicating/positing/settling/analysis/closure-rule-system.mjs';
+import { valuation, alwaysRuleReceipt } from '../dist/lib/articulating/predicating/positing/settling/analysis/closure-rule-system.mjs';
 import { readValuationFiber } from '../dist/lib/articulating/predicating/positing/valuation-fiber-algebra.mjs';
 const values=['absurd','potential','active','stable'];
 const identity=Object.fromEntries(values.map(v=>[v,v]));
@@ -38,4 +38,46 @@ test('all monotone FOUR restrictions settle to the least compatible assignment f
   }
  }
  assert.equal(count,36);
+});
+
+
+test('serialized prototype-named vertices preserve seeds and directed closure', () => {
+ const vertices = ['__proto__', 'constructor', 'toString'];
+ const wire = JSON.parse(JSON.stringify({
+  complex: { vertices, edges: [
+   { src: '__proto__', tgt: 'constructor', restrict: identity },
+   { src: 'constructor', tgt: 'toString', restrict: identity },
+  ] },
+  seed: Object.fromEntries([['__proto__', 'potential'], ['constructor', 'active']]),
+ }));
+ const admission = admitTarskiSheafComplex(wire.complex);
+ assert.equal(admission.kind, 'admitted');
+ const result = settleTarskiSheaf(admission.complex, wire.seed);
+ assert.equal(result.compatible, true);
+ assert.deepEqual(JSON.parse(JSON.stringify(result.section.values)),
+  Object.fromEntries([['__proto__', 'potential'], ['constructor', 'stable'], ['toString', 'stable']]));
+ assert.deepEqual(read(settleTarskiSheaf(admission.complex, JSON.parse('{}')).section),
+  Object.fromEntries(vertices.map(point => [point, 'absurd'])));
+});
+
+test('omitted seeds never acquire inherited evidence', () => {
+ const vertices = ['__proto__', 'constructor', 'toString', 'office'];
+ const inheritedSeed = Object.create(Object.fromEntries(vertices.map(point => [point, 'potential'])));
+ const complex = admitted(vertices, []);
+ assert.deepEqual(read(settleTarskiSheaf(complex, inheritedSeed).section),
+  Object.fromEntries(vertices.map(point => [point, 'absurd'])));
+});
+
+test('exhaustive closure receipts retain each prototype-named coordinate', () => {
+ for (const point of ['__proto__', 'constructor', 'toString']) {
+  const receipt = alwaysRuleReceipt(point, 'potential');
+  assert.deepEqual(read(receipt.closed), Object.fromEntries([[point, 'potential']]));
+  assert.equal(receipt.leastClosed, true);
+ }
+});
+
+test('restriction admission requires its own complete table', () => {
+ const restriction = Object.create(identity);
+ assert.deepEqual(admitTarskiSheafComplex({vertices:['a'], edges:[{src:'a',tgt:'a',restrict:restriction}]}),
+  {kind:'refused',reason:'invalid-edge',edge:0});
 });
