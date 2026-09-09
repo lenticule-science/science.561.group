@@ -6,12 +6,15 @@
   "license": "UNLICENSED",
   "main": "public/js/app.mjs",
   "scripts": {
-    "build": "node ../../../../apps/weiqi-kernel/scripts/build-browser-kernel.mjs public/lib/kernel && node scripts/extract-content.mjs",
+    "build": "node scripts/build-kernel.mjs && node scripts/extract-content.mjs",
     "serve": "node scripts/serve.mjs",
     "test": "node --test 'test/*.test.mjs'",
     "check": "find public/js scripts test -name '*.mjs' -print0 | xargs -0 -n1 node --check"
   },
   "engines": {
     "node": ">=24"
+  },
+  "dependencies": {
+    "@lenticule-science/weiqi-kernel": "0.3.1"
   }
 }

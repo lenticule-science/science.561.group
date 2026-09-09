@@ -8,18 +8,18 @@ import { applyPass, applyStonePlacement, createEmptyPosition,               } fr
 import { getRuleset,                             } from "./rulesets.mjs";
 import { annotateMove, annotatePass,                    } from "./events.mjs";
 
-                           
-                
-               
-              
-             
-               
-                        
-                          
 
-                         
-                                                             
-                                         
+
+
+
+
+
+
+
+
+
+
+
 
 /**
  * Check a candidate resulting position against game history under the

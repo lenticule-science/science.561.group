@@ -1,4 +1,52 @@
 {
+  "aji-keshi": {
+    "slug": "aji-keshi",
+    "title": "aji-keshi",
+    "definition": "Aji-keshi (\"erasing the aji\") in weiqi is playing a move that forces the opponent to answer in a way that removes the player's own latent options — the residual aji a position was carrying. It is one of the most characteristic strong-player errors: the move usually gains something locally, but it spends a possibility that was worth more unspent.",
+    "elaboration": "As a proposal in the section's own Weiqi Strategic Theory (§4), aji-keshi is a premature settlement: a move that drives a cell held at an unwitnessed value (⊥) to true or false and thereby destroys the option that cell was carrying, so it is not a bad move because it loses points locally — it usually gains points locally — but because it collapses a ⊥ that was worth more open than closed. Status: proposal.",
+    "related": [
+      {
+        "slug": "aji",
+        "title": "aji",
+        "note": "Aji-keshi is the specific error of destroying aji rather than merely leaving it unused."
+      },
+      {
+        "slug": "gote",
+        "title": "gote",
+        "note": "Aji-keshi sequences are frequently gote: the local gain does not carry the initiative forward."
+      },
+      {
+        "slug": "honte",
+        "title": "honte",
+        "note": "Honte deliberately spends tempo instead of aji; aji-keshi spends aji instead of tempo."
+      }
+    ],
+    "path": "content/text/glossary/terms/aji-keshi.md"
+  },
+  "aji": {
+    "slug": "aji",
+    "title": "aji",
+    "definition": "Aji — literally \"taste\" — in weiqi is latent potential: the residual possibilities in dead or weak stones, or in a defect in the opponent's shape, that are not currently playable but that constrain what both sides can do. The standard maxim is that aji is used by not using it — a threat that has already been played is no longer a threat.",
+    "elaboration": "The section's Weiqi Strategic Theory note (§4) proposes the Obsmetrologia inconsistency sheaf as aji's formal home: aji as a cell held at an unwitnessed value (⊥) whose option value is a function of remaining unwitnessed, so that aji-keshi is the move that prematurely settles that cell and spends the option — status: proposal, that note's own.",
+    "related": [
+      {
+        "slug": "aji-keshi",
+        "title": "aji-keshi",
+        "note": "Aji-keshi is the error of spending aji's option value for a small, immediate, and usually forced gain."
+      },
+      {
+        "slug": "sente",
+        "title": "sente",
+        "note": "Unlike sente, whose value is spent the instant it is played, aji's value depends on staying unplayed."
+      },
+      {
+        "slug": "honte",
+        "title": "honte",
+        "note": "Honte is the move that trades away the aji a lighter move would have left behind."
+      }
+    ],
+    "path": "content/text/glossary/terms/aji.md"
+  },
   "area-scoring": {
     "slug": "area-scoring",
     "title": "area-scoring",
@@ -144,6 +192,35 @@
     ],
     "path": "content/text/glossary/terms/dame.md"
   },
+  "dango": {
+    "slug": "dango",
+    "title": "dango",
+    "definition": "Dango (\"dumpling\") in weiqi is a clump of stones bunched together with few liberties relative to their number, an overconcentrated shape that gains little board coverage for the stones spent on it. A dumpling shape is inefficient specifically because it duplicates work: several stones end up defending the same small set of liberties that fewer, better-placed stones would have secured.",
+    "elaboration": "Dango is not the same failure as being merely heavy. Thickness is also a concentration of stones, but a thick wall faces outward and does useful work on the position around it; a dumpling shape faces nowhere in particular and is judged a mistake independent of context. Avoiding dango is one of the standard reasons to prefer tobi or keima over a solid connection when either would hold the position.",
+    "related": [
+      {
+        "slug": "thickness",
+        "title": "thickness",
+        "note": "Thickness is a concentration of stones that still does useful outward-facing work; dango is the same concentration without it."
+      },
+      {
+        "slug": "tobi",
+        "title": "tobi",
+        "note": "Playing tobi instead of a solid connection is a standard way to avoid building dango."
+      },
+      {
+        "slug": "keima",
+        "title": "keima",
+        "note": "Keima, like tobi, covers ground a solid connection would spend into dango."
+      },
+      {
+        "slug": "sabaki",
+        "title": "sabaki",
+        "note": "Sabaki explicitly favors light shape over the heavy, clumped shape dango names."
+      }
+    ],
+    "path": "content/text/glossary/terms/dango.md"
+  },
   "dead-stones": {
     "slug": "dead-stones",
     "title": "dead-stones",
@@ -231,6 +308,78 @@
     ],
     "path": "content/text/glossary/terms/false-eye.md"
   },
+  "fuseki": {
+    "slug": "fuseki",
+    "title": "fuseki",
+    "definition": "Fuseki in weiqi is the opening considered as a whole board, as distinct from joseki, the memorized locally-balanced corner sequences a fuseki is built from. Where a joseki is judged by whether it is locally balanced, a fuseki is judged by whether the whole-board framework it builds serves the position — a joseki that is correct in isolation can still be the wrong choice for the fuseki around it.",
+    "elaboration": "Fuseki theory carries the same historical dispute as influence: territorial orthodoxy took the corners first, then the sides, then the centre; the New Fuseki (*Shinfuseki*) movement of Go Seigen and Kitani Minoru, 1933, argued for centre-facing, influence-first opening play instead, and permanently changed what counted as a reasonable opening even though parts of it were later shown to be wrong. Choosing between these is the \"direction of play\" judgment the section's Weiqi Strategic Theory note names as the concept most resistant to local analysis and the one professionals most consistently identify as the amateur's real weakness.",
+    "related": [
+      {
+        "slug": "joseki",
+        "title": "joseki",
+        "note": "A fuseki is built from joseki chosen to fit the whole board, not merely to be locally correct."
+      },
+      {
+        "slug": "influence",
+        "title": "influence",
+        "note": "The New Fuseki movement is the historical dispute over how much influence a fuseki should stake on, versus territory taken directly."
+      },
+      {
+        "slug": "thickness",
+        "title": "thickness",
+        "note": "A fuseki that builds thickness is choosing influence-first play over immediate territory."
+      }
+    ],
+    "path": "content/text/glossary/terms/fuseki.md"
+  },
+  "geta": {
+    "slug": "geta",
+    "title": "geta",
+    "definition": "Geta (\"net\") in weiqi is a technique for capturing a stone or small group by surrounding it loosely, from a distance, with a small number of stones placed so that any attempt to extend toward a liberty runs into a stone already in place. The captured stones are never chased liberty by liberty; the net is set once, and the group inside it cannot escape by any single move.",
+    "elaboration": "A net differs from a direct chase in exactly this way: it needs no follow-up reading once it is set correctly, whereas a ladder-style pursuit must be read all the way to its end to confirm it works. A poorly placed net leaves a gap the enclosed stones can escape through, so confirming a geta still requires reading the specific shape — it is a shape recognized and verified, not merely assumed from the general pattern.",
+    "related": [
+      {
+        "slug": "capture",
+        "title": "capture",
+        "note": "A net is one specific technique for forcing a capture without a direct chase."
+      },
+      {
+        "slug": "atari",
+        "title": "atari",
+        "note": "The enclosed stones need never be placed in atari for a net to work; the net closes off their escape before that stage."
+      },
+      {
+        "slug": "liberty",
+        "title": "liberty",
+        "note": "A net is set by occupying the liberties an escaping stone would otherwise extend toward."
+      }
+    ],
+    "path": "content/text/glossary/terms/geta.md"
+  },
+  "gote": {
+    "slug": "gote",
+    "title": "gote",
+    "definition": "Gote in weiqi is a move that ends the mover's turn because the opponent need not answer it. It is the complement of sente: where a sente sequence lets its player keep the initiative and play elsewhere next, a gote sequence hands the initiative to the opponent.",
+    "elaboration": "Gote is not simply a worse outcome than sente; it is a distinct position in Berlekamp and Wolfe's combinatorial-game-theory treatment of the endgame, where a position decomposes into a disjunctive sum of independent local games, each with a temperature, and the sente/gote distinction falls directly out of that temperature structure rather than being judged move by move. A large gote play can still be worth more than a small sente play; the two are compared by their values, not by category alone.",
+    "related": [
+      {
+        "slug": "sente",
+        "title": "sente",
+        "note": "Gote is the complementary state to sente: a move that ends the initiative rather than keeping it."
+      },
+      {
+        "slug": "miai",
+        "title": "miai",
+        "note": "Miai converts a point that would otherwise force a sente/gote choice into one that can be ignored by both sides."
+      },
+      {
+        "slug": "aji-keshi",
+        "title": "aji-keshi",
+        "note": "A gote move that spends latent potential for a small local gain is the classic aji-keshi error."
+      }
+    ],
+    "path": "content/text/glossary/terms/gote.md"
+  },
   "handicap": {
     "slug": "handicap",
     "title": "handicap",
@@ -255,6 +404,30 @@
     ],
     "path": "content/text/glossary/terms/handicap.md"
   },
+  "honte": {
+    "slug": "honte",
+    "title": "honte",
+    "definition": "Honte in weiqi is the solid, \"proper\" move — the one that leaves no aji behind, at the cost of a little tempo. Kageyama's *Lessons in the Fundamentals of Go* is the standard source on honte, alongside shape and direction of play, and the concept exists specifically to name the trade a greedier, more aji-leaving move refuses to make.",
+    "elaboration": "Honte is a judgment call rather than a rule: playing honte everywhere would waste tempo on threats the opponent could never have exploited, while never playing honte leaves aji that eventually costs more than the tempo it would have taken to remove.",
+    "related": [
+      {
+        "slug": "aji",
+        "title": "aji",
+        "note": "Honte is the move that spends tempo specifically to avoid leaving aji."
+      },
+      {
+        "slug": "aji-keshi",
+        "title": "aji-keshi",
+        "note": "Honte trades tempo for safety; aji-keshi trades aji for a smaller local gain, and is the error honte is meant to avoid on the other side."
+      },
+      {
+        "slug": "sabaki",
+        "title": "sabaki",
+        "note": "Honte and sabaki are opposite responses to local pressure: solidity everywhere versus expendable lightness."
+      }
+    ],
+    "path": "content/text/glossary/terms/honte.md"
+  },
   "hoshi": {
     "slug": "hoshi",
     "title": "hoshi",
@@ -278,6 +451,102 @@
       }
     ],
     "path": "content/text/glossary/terms/hoshi.md"
+  },
+  "influence": {
+    "slug": "influence",
+    "title": "influence",
+    "definition": "Influence (*seiryoku*) in weiqi is the effect a stone or group exerts on the space around it without enclosing it. It is not territory-in-waiting, and treating it as such is the classical beginner error: influence's value is that it constrains the opponent's options, making invasions in its neighbourhood expensive or unlivable, so the opponent must play elsewhere while the influence-holder collects the difference.",
+    "elaboration": "Influence has carried a genuine, unresolved theory dispute since the game's earliest written strategy. Territorial orthodoxy through the early twentieth century took the corners first, then the sides, then the centre, valuing the corner highest because the board edges do the enclosing work for free. The New Fuseki (*Shinfuseki*) movement of 1933 argued the opposite: centre-facing, influence-first opening play. The AI era beginning in 2016 rebalanced both camps' settled judgments without producing a single human-legible theory of why — professional play had undervalued influence in some positions and overvalued it in others, with no simple direction. A lesson that teaches only the pre-2016 evaluations as settled fact teaches several things now known to be wrong.",
+    "related": [
+      {
+        "slug": "thickness",
+        "title": "thickness",
+        "note": "Thickness is influence's settled, wall-shaped special case."
+      },
+      {
+        "slug": "territory",
+        "title": "territory",
+        "note": "Influence is not territory-in-waiting; the two are frequently confused and are strategically distinct."
+      },
+      {
+        "slug": "fuseki",
+        "title": "fuseki",
+        "note": "The New Fuseki movement is the historical dispute over how much influence a whole-board opening should stake on."
+      },
+      {
+        "slug": "joseki",
+        "title": "joseki",
+        "note": "Several long-canonical joseki were revalued in the AI era precisely on influence/territory balance."
+      }
+    ],
+    "path": "content/text/glossary/terms/influence.md"
+  },
+  "joseki": {
+    "slug": "joseki",
+    "title": "joseki",
+    "definition": "Joseki in weiqi are the memorized, locally-balanced corner sequences catalogued across the standard literature, most exhaustively by Ishida's three-volume *Dictionary of Basic Joseki*. Each joseki is a locally complete exchange in which neither side gains a clear local advantage; the players agree, in effect, to a fair local trade and both move on.",
+    "elaboration": "The essential caveat belongs with the definition: joseki are locally balanced and therefore whole-board-neutral by construction. That is why \"knowing joseki\" is famously worth little on its own — the sequence that is correct in one whole-board context can be the wrong one to play in another, and choosing which corner sequence fits the position in front of a player is a direction-of-play judgment the dictionary itself cannot make. The AI era additionally showed several long-canonical joseki to be slightly worse for one side than professional play had assumed for decades.",
+    "related": [
+      {
+        "slug": "fuseki",
+        "title": "fuseki",
+        "note": "Fuseki is the whole-board opening a joseki must be chosen to fit; a joseki correct in isolation can still be the wrong choice for the fuseki around it."
+      },
+      {
+        "slug": "influence",
+        "title": "influence",
+        "note": "AI-era analysis revalued several joseki specifically on the influence/territory balance they leave."
+      },
+      {
+        "slug": "miai",
+        "title": "miai",
+        "note": "Many joseki sequences end by leaving the two players a miai choice between equivalent local continuations."
+      }
+    ],
+    "path": "content/text/glossary/terms/joseki.md"
+  },
+  "keima": {
+    "slug": "keima",
+    "title": "keima",
+    "definition": "Keima (\"knight's move\") in weiqi is playing a stone one point away from an existing stone in one direction and two points away in the perpendicular direction, the same offset a knight moves on a chessboard. Like tobi, it is not a physical connection; it covers ground faster than a solid connection at the cost of a gap the opponent can, in principle, exploit.",
+    "elaboration": "The \"knight's move cut,\" playing directly into the gap keima leaves, is the standard test of the shape: whether it actually works depends on the surrounding position, since the cutting stone itself often lands in trouble the keima's owner can exploit in turn. A keima that cannot be cut without loss is, for practical purposes, as solid as a direct connection while covering more board.",
+    "related": [
+      {
+        "slug": "tobi",
+        "title": "tobi",
+        "note": "Tobi is the other standard light-extension shape, covering a straight-line offset rather than keima's diagonal one."
+      },
+      {
+        "slug": "sabaki",
+        "title": "sabaki",
+        "note": "Keima's speed over solid connection makes it a characteristic move of sabaki play."
+      }
+    ],
+    "path": "content/text/glossary/terms/keima.md"
+  },
+  "kikashi": {
+    "slug": "kikashi",
+    "title": "kikashi",
+    "definition": "Kikashi in weiqi is a forcing move played for the value of the response it compels rather than for the stone's own local worth, kept as a quick exchange rather than developed further. The player spends one move, the opponent must answer it in a fixed way, and the player keeps sente to play elsewhere — the exchange is judged complete the moment it is made.",
+    "elaboration": "Kikashi is the opposite outcome from aji-keshi: both are forcing moves, but a kikashi is worth more played than left unplayed, while an aji-keshi is worth less played than left unplayed. Distinguishing the two requires reading whether the forced response removes an option the player would rather have kept open; a move that looks like kikashi in one position is aji-keshi in another, depending on what the position still needs from the point being forced.",
+    "related": [
+      {
+        "slug": "sente",
+        "title": "sente",
+        "note": "Kikashi is specifically a forcing move whose value is realized entirely through keeping sente, not through the stone's local presence."
+      },
+      {
+        "slug": "aji-keshi",
+        "title": "aji-keshi",
+        "note": "Aji-keshi is the failure mode kikashi is judged against: the same forcing shape, spent when it should have stayed unplayed."
+      },
+      {
+        "slug": "sute-ishi",
+        "title": "sute-ishi",
+        "note": "A kikashi stone is frequently also a sacrifice stone, left to be captured once its forcing work is done."
+      }
+    ],
+    "path": "content/text/glossary/terms/kikashi.md"
   },
   "ko": {
     "slug": "ko",
@@ -395,6 +664,54 @@
     ],
     "path": "content/text/glossary/terms/life-and-death.md"
   },
+  "miai": {
+    "slug": "miai",
+    "title": "miai",
+    "definition": "Miai in weiqi are two points of equal value such that, if the opponent takes one, the player takes the other. Miai converts a contested point into a settled one: once two points are miai, a player can safely ignore both, playing elsewhere, and answer only after the opponent commits to one.",
+    "elaboration": "Miai is the most directly formalizable concept of the section's classical strategy vocabulary, and the section's own Weiqi Strategic Theory note explicitly declines to reach for a house formalism for it: a prior corpus note already rejected a sheaf-gluing reading of miai, so the entry defines it plainly rather than adding machinery.",
+    "related": [
+      {
+        "slug": "sente",
+        "title": "sente",
+        "note": "A miai point never needs to be taken in sente, since either side taking it settles the exchange."
+      },
+      {
+        "slug": "gote",
+        "title": "gote",
+        "note": "Miai removes the sente/gote choice a contested point would otherwise force."
+      },
+      {
+        "slug": "joseki",
+        "title": "joseki",
+        "note": "Many joseki sequences end by leaving the two players a miai choice between locally equivalent continuations."
+      }
+    ],
+    "path": "content/text/glossary/terms/miai.md"
+  },
+  "moyo": {
+    "slug": "moyo",
+    "title": "moyo",
+    "definition": "Moyo in weiqi is a large-scale framework of potential territory, outlined by stones' influence rather than enclosed by them. A moyo is influence organized at whole-board scale and aimed at a specific outcome — growing into secured space — where bare influence only constrains the opponent's options without claiming any of them.",
+    "elaboration": "A moyo is not territory. It remains open to invasion or reduction until the framework is actually closed, and a large moyo that cannot be defended once entered is the classical trap of the style: the framework looked large on the board but could not survive contact. Whether a given moyo is worth more than the territory an opponent secures while invading it is a genuine, position-dependent judgment, not a rule of thumb.",
+    "related": [
+      {
+        "slug": "influence",
+        "title": "influence",
+        "note": "Moyo is influence organized into one large, whole-board framework rather than a local effect."
+      },
+      {
+        "slug": "territory",
+        "title": "territory",
+        "note": "Moyo is territory-in-potential; it is not secured until the framework survives invasion."
+      },
+      {
+        "slug": "thickness",
+        "title": "thickness",
+        "note": "A moyo often grows outward from a thick wall, though the wall's value and the framework's value are judged separately."
+      }
+    ],
+    "path": "content/text/glossary/terms/moyo.md"
+  },
   "pass": {
     "slug": "pass",
     "title": "pass",
@@ -423,6 +740,30 @@
       }
     ],
     "path": "content/text/glossary/terms/pass.md"
+  },
+  "sabaki": {
+    "slug": "sabaki",
+    "title": "sabaki",
+    "definition": "Sabaki in weiqi is making a light, flexible, quickly-settled shape inside the opponent's sphere of influence, playing so that any individual stone is expendable. It contrasts with heavy (*omoi*) shape, which must be saved at all costs and therefore becomes a target the opponent can attack repeatedly for profit.",
+    "elaboration": "Sabaki is a posture more than a single move: a group played for sabaki accepts that some of its stones may be sacrificed, and treats that as acceptable so long as the group as a whole settles with enough shape to survive or to have profited elsewhere while the opponent was attacking it. It is a compressed way of getting an approximate answer to a local fight without doing the full life-and-death calculation a heavier group would demand.",
+    "related": [
+      {
+        "slug": "thickness",
+        "title": "thickness",
+        "note": "Sabaki is the light-shape alternative to confronting an opponent's thickness directly."
+      },
+      {
+        "slug": "influence",
+        "title": "influence",
+        "note": "Sabaki is specifically the posture for operating inside the opponent's influence rather than outside it."
+      },
+      {
+        "slug": "honte",
+        "title": "honte",
+        "note": "Honte and sabaki are opposite responses to the same pressure: honte spends a move to remove all weakness, sabaki accepts weakness as expendable."
+      }
+    ],
+    "path": "content/text/glossary/terms/sabaki.md"
   },
   "seki": {
     "slug": "seki",
@@ -457,6 +798,59 @@
       }
     ],
     "path": "content/text/glossary/terms/seki.md"
+  },
+  "semeai": {
+    "slug": "semeai",
+    "title": "semeai",
+    "definition": "Semeai (\"capturing race\") in weiqi is a contest between two adjacent groups, neither of which has secured two eyes, where each side fills the other's liberties as fast as possible and the group that runs out first is captured. It differs from an ordinary atari chase because both groups are mutually vulnerable at once — the racing side must count whether it can fill the opponent's last liberty before its own runs out, not merely whether it can force the opponent into atari.",
+    "elaboration": "Counting a semeai correctly is exact, countable work: shared liberties, approach moves, and whether either group has an eye that must be filled last all change the count in specific, computable ways rather than by rough estimation. A semeai miscounted by even one liberty reverses which side survives.",
+    "related": [
+      {
+        "slug": "liberty",
+        "title": "liberty",
+        "note": "A semeai is decided entirely by counting liberties on both sides of the race."
+      },
+      {
+        "slug": "atari",
+        "title": "atari",
+        "note": "A semeai is the mutual, two-sided generalization of the one-sided pressure atari names."
+      },
+      {
+        "slug": "life-and-death",
+        "title": "life-and-death",
+        "note": "A semeai is a life-and-death question between two groups at once, rather than one group reading against an empty board."
+      }
+    ],
+    "path": "content/text/glossary/terms/semeai.md"
+  },
+  "sente": {
+    "slug": "sente",
+    "title": "sente",
+    "definition": "Sente in weiqi is the initiative: a move the opponent must answer, so that the player who made it may play again elsewhere. Gote is its complement, a move that ends the mover's turn because the opponent need not answer. A sequence is sente for a player if that player retains the initiative through it.",
+    "elaboration": "Sente is already mathematized, and well. Berlekamp and Wolfe's combinatorial-game-theory treatment of the Go endgame decomposes a position into a disjunctive sum of independent local games; each has a *temperature*, roughly the value of moving there first; optimal play takes the hottest available game; and the sente/gote distinction falls out of that temperature structure rather than needing a separate definition. This is exact for the class of endgame positions the book treats, and the section's own research does not attempt to re-derive it: CGT owns this ground.",
+    "related": [
+      {
+        "slug": "gote",
+        "title": "gote",
+        "note": "Gote is the complementary state: a move the opponent need not answer."
+      },
+      {
+        "slug": "miai",
+        "title": "miai",
+        "note": "Miai points are settled precisely because neither side needs sente to secure one of them."
+      },
+      {
+        "slug": "honte",
+        "title": "honte",
+        "note": "Honte is the solid move played at the cost of the tempo sente would have kept."
+      },
+      {
+        "slug": "aji",
+        "title": "aji",
+        "note": "Unlike aji, sente's value is spent the moment the opponent answers, not held open."
+      }
+    ],
+    "path": "content/text/glossary/terms/sente.md"
   },
   "suicide": {
     "slug": "suicide",
@@ -515,6 +909,30 @@
       }
     ],
     "path": "content/text/glossary/terms/superko.md"
+  },
+  "sute-ishi": {
+    "slug": "sute-ishi",
+    "title": "sute-ishi",
+    "definition": "Sute-ishi (\"throw-away stones\") in weiqi are one or more stones deliberately played to be captured, because the exchange the capture forces is worth more than the stones would have been worth kept alive. The player plans the loss before the opponent takes it; the stones are bait, not a mistake later rationalized as sacrifice.",
+    "elaboration": "A sacrifice earns its keep in one of a few standard ways: it draws the opponent into spending moves capturing low-value stones while the sacrificing player builds thickness or territory elsewhere, it keeps sente by forcing a specific, predictable response, or it removes a cutting point the opponent would otherwise have exploited. Sute-ishi is a plan for the whole exchange, not a description of any single stone; the same stone that looks sacrificed in isolation may in fact need to survive if the surrounding reading changes.",
+    "related": [
+      {
+        "slug": "sabaki",
+        "title": "sabaki",
+        "note": "Sabaki treats a group's own stones as expendable in the same way sute-ishi treats bait stones as expendable, applied to settling a whole group rather than one exchange."
+      },
+      {
+        "slug": "aji",
+        "title": "aji",
+        "note": "A sacrificed stone frequently leaves aji behind even after capture, rather than disappearing from the position's latent options entirely."
+      },
+      {
+        "slug": "sente",
+        "title": "sente",
+        "note": "A well-timed sacrifice is a common way to keep sente: the opponent must answer by capturing rather than tenuki."
+      }
+    ],
+    "path": "content/text/glossary/terms/sute-ishi.md"
   },
   "territory-scoring": {
     "slug": "territory-scoring",
@@ -578,5 +996,82 @@
       }
     ],
     "path": "content/text/glossary/terms/territory.md"
+  },
+  "thickness": {
+    "slug": "thickness",
+    "title": "thickness",
+    "definition": "Thickness (*atsumi*) in weiqi is a strong, settled, outward-facing formation with no weakness the opponent can exploit locally. Three classical maxims describe what thickness is not: do not use it to enclose territory, since walling off space wastes the wall's real value; do not play close to thickness, yours or the opponent's, since stones near a thick wall are cheap for its owner to attack; and thickness is a property of the position, not of the stones, so the same wall is strong against an empty board and worthless once the opponent has a living group settled behind it.",
+    "elaboration": "That third maxim is the one with formal content: a wall's thickness can be destroyed without the wall itself being touched. If the opponent settles a group nearby, the stones of the wall are unchanged and its thickness is gone. A **wall** is the shape; thickness is the shape's value in context.",
+    "related": [
+      {
+        "slug": "influence",
+        "title": "influence",
+        "note": "Thickness is influence concentrated into one strong, settled wall."
+      },
+      {
+        "slug": "honte",
+        "title": "honte",
+        "note": "Building thickness and playing honte are both trades of tempo for a position with no local weakness."
+      },
+      {
+        "slug": "sabaki",
+        "title": "sabaki",
+        "note": "Sabaki is the light, expendable-stone strategy for operating near an opponent's thickness rather than confronting it directly."
+      },
+      {
+        "slug": "territory",
+        "title": "territory",
+        "note": "Enclosing territory with a thick wall is the classical waste of thickness's real value."
+      }
+    ],
+    "path": "content/text/glossary/terms/thickness.md"
+  },
+  "tobi": {
+    "slug": "tobi",
+    "title": "tobi",
+    "definition": "Tobi (\"jump\") in weiqi is playing a stone one empty point away from an existing stone along a line, leaving the intersection between them unoccupied. A two-space jump extends the same idea one point further; both are not physically connected the way an adjacent stone is, but are functionally connected in most fighting situations because the opponent cutting at the gap usually costs more than it gains.",
+    "elaboration": "Tobi is a light shape: it covers more of the board per stone than a solid connection does, at the cost of leaving a cutting point the opponent can sometimes exploit. Whether a given jump's gap is a real weakness or only a theoretical one is a local reading question, not something the shape settles by itself.",
+    "related": [
+      {
+        "slug": "keima",
+        "title": "keima",
+        "note": "Keima is the other standard light-extension shape, covering a different offset than tobi at a similar cost in connection strength."
+      },
+      {
+        "slug": "sabaki",
+        "title": "sabaki",
+        "note": "Jumps are the characteristic move of sabaki play, trading a firm connection for speed and flexibility."
+      },
+      {
+        "slug": "dango",
+        "title": "dango",
+        "note": "Tobi is the light alternative to the heavy, over-connected shape dango names."
+      }
+    ],
+    "path": "content/text/glossary/terms/tobi.md"
+  },
+  "zenkyoku": {
+    "slug": "zenkyoku",
+    "title": "zenkyoku",
+    "definition": "Zenkyoku (\"whole board\") in weiqi is evaluating a move by its effect on the balance of the entire board rather than judging the local exchange in isolation. A move read as locally correct can still be the wrong move once its effect on a distant, seemingly unrelated group is counted; zenkyoku is the discipline of checking that effect before playing.",
+    "elaboration": "As a proposal of this section's own Whole-Board Reading as a Gluing Problem, and Lineages as Signatures (§1, §4), zenkyoku names exactly the reading a purely regional strategy lacks: the article reads a regional strategy's failure to account for a distant effect as a cover-nerve coordination obstruction, and reads whole-board play as a distribution over the readout space that couples regions a local reading would treat as independent. Status: proposal.",
+    "related": [
+      {
+        "slug": "aji",
+        "title": "aji",
+        "note": "Zenkyoku frequently means holding a local option open specifically because of the effect it has elsewhere on the board."
+      },
+      {
+        "slug": "miai",
+        "title": "miai",
+        "note": "Recognizing miai points requires the same whole-board comparison zenkyoku names, applied to two equivalent points rather than one distant effect."
+      },
+      {
+        "slug": "sabaki",
+        "title": "sabaki",
+        "note": "Light, quickly-settled shape is what lets a player disengage from one region and act on a whole-board reading elsewhere."
+      }
+    ],
+    "path": "content/text/glossary/terms/zenkyoku.md"
   }
 }

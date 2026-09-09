@@ -8,8 +8,8 @@
 
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { Game } from "../../weiqi-kernel/src/game.mts";
-import * as kernel from "../../weiqi-kernel/src/index.mts";
+import { Game } from "@lenticule-science/weiqi-kernel";
+import * as kernel from "@lenticule-science/weiqi-kernel";
 // bot.mjs lives under public/js/ (not a separate src/) because it is
 // plain, already-browser-ready JS with no build step of its own -- the
 // SAME file the play page imports client-side (see public/js/play-app.mjs)

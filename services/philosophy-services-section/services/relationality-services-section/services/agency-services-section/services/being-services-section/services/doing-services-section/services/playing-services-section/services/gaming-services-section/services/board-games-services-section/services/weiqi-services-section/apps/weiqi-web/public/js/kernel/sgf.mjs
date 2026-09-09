@@ -15,14 +15,14 @@
 
 import { BLACK, WHITE, coordToPoint, pointToCoord,            } from "./board.mjs";
 
-                          
-                                       
- 
 
-                              
-                   
-                          
- 
+
+
+
+
+
+
+
 
 // --- Low-level tree parse/serialize ------------------------------------
 
@@ -168,19 +168,19 @@ function isSgfPass(size        , v        )          {
 
 // --- Game-record convenience layer --------------------------------------
 
-                          
-               
-                         
- 
 
-                                
-               
-                   
-                
-                                                                 
-                      
-                   
- 
+
+
+
+
+
+
+
+
+
+
+
+
 
 export function gameRecordToSgf(record               )         {
   const rootProps                           = {

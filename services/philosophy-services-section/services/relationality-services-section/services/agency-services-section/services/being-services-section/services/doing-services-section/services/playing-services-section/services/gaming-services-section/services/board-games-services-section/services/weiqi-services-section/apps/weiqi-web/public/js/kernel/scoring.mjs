@@ -12,13 +12,13 @@
 
 import { BLACK, WHITE, neighbors,            } from "./board.mjs";
 import { boardHash, situationalHash } from "./zobrist.mjs";
-                                               
-                                              
 
-                                  
-                         
-                         
- 
+
+
+
+
+
+
 
 export function computeTerritory(position          )                  {
   const { width, height, board } = position;
@@ -89,17 +89,17 @@ export function removeDeadStones(position          , deadPoints                 
   };
 }
 
-                              
-                      
-                      
-                         
-                         
-                         
-                         
-                     
-                     
-                 
- 
+
+
+
+
+
+
+
+
+
+
+
 
 function countStones(position          )                                               {
   let blackStones = 0;

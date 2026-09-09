@@ -53,7 +53,7 @@ import {
   pointToCoord,
   neighbors,
   findGroup,
-} from "../../weiqi-kernel/src/index.mts";
+} from "@lenticule-science/weiqi-kernel";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const appRoot = path.resolve(here, "..");

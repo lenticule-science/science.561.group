@@ -18,3 +18,15 @@ test("browser projection marks every emitted module as generated", async () => {
     rmSync(destination, { recursive: true, force: true });
   }
 });
+
+test("browser projection emits no trailing whitespace", async () => {
+  const destination = mkdtempSync(path.join(tmpdir(), "weiqi-browser-kernel-"));
+  try {
+    await buildBrowserKernel(destination);
+    for (const module of readdirSync(destination).filter((name) => name.endsWith(".mjs"))) {
+      assert.doesNotMatch(readFileSync(path.join(destination, module), "utf8"), /[^\S\r\n]+$/gmu);
+    }
+  } finally {
+    rmSync(destination, { recursive: true, force: true });
+  }
+});

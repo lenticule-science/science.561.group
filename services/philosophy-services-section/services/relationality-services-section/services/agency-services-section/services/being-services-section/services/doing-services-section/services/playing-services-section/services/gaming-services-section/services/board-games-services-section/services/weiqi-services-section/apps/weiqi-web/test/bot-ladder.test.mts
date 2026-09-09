@@ -11,8 +11,8 @@
 
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { Game } from "../../weiqi-kernel/src/game.mts";
-import * as kernel from "../../weiqi-kernel/src/index.mts";
+import { Game } from "@lenticule-science/weiqi-kernel";
+import * as kernel from "@lenticule-science/weiqi-kernel";
 import {
   chooseRandomLegalMove,
   chooseLibertyCountingMove,

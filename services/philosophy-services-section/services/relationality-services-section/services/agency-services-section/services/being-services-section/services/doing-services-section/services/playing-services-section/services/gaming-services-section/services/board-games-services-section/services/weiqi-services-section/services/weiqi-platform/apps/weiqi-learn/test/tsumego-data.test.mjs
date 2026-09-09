@@ -1,7 +1,5 @@
 // Machine verification of public/data/tsumego.json against the real
-// kernel — imported straight from its .mts source (native type stripping,
-// per the house rule that node tests may reach the kernel directly) rather
-// than the built public/lib/kernel/ tree, so this suite never depends on
+// kernel package rather than the built public/lib/kernel/ tree, so this suite never depends on
 // `npm run build` having been run first.
 //
 // Every problem is checked the same three ways:
@@ -40,7 +38,7 @@ import {
   getRuleset,
   scoreArea,
   scoreTerritory,
-} from "../../../../../apps/weiqi-kernel/src/index.mts";
+} from "@lenticule-science/weiqi-kernel";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const appRoot = path.resolve(here, "..");

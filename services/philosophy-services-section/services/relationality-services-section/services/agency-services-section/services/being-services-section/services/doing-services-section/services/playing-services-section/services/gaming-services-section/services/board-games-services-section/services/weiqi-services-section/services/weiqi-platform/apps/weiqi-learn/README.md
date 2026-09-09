@@ -2,14 +2,14 @@
 
 `@lenticule-science/weiqi-learn` — the Weiqi Platform's admitted Learn face: an interactive,
 entirely client-side curriculum (board, tutorial, tsumego player, glossary hover-cards) built
-on the pure [`weiqi-kernel`](../../../../apps/weiqi-kernel) and this section's own corpus. No
+on the exact-pinned pure [`weiqi-kernel`](../../../../apps/weiqi-kernel) and this section's own corpus. No
 accounts, no server state, no network operator at all — see the
 [Weiqi Learn Constitution](../../../../content/text/documents/articles/notes/weiqi-learn-constitution.md)
 for the full purpose/authority/refusal-conditions record.
 
-Plain browser-ready ESM (`.mjs`) throughout the app's own code — no TypeScript, no framework,
-no dependency, no build step for app code. The only build step strips the kernel's `.mts`
-sources into browser-loadable `.mjs` (below); JSDoc types are welcome, nothing is transpiled.
+Plain browser-ready ESM (`.mjs`) throughout the app's own code — no TypeScript or framework,
+and no build step for app code. The only build step invokes the kernel's shared browser
+projection into browser-loadable `.mjs` (below); JSDoc types are welcome, nothing is transpiled.
 
 ## Build
 
@@ -17,8 +17,8 @@ sources into browser-loadable `.mjs` (below); JSDoc types are welcome, nothing i
 npm run build
 ```
 
-Runs the Weiqi kernel's shared browser-projection operation, which strips every
-`apps/weiqi-kernel/src/*.mts` to `public/lib/kernel/<name>.mjs` using Node's native
+Runs the exact-pinned Weiqi kernel's shared browser-projection operation, which strips every
+kernel source module to `public/lib/kernel/<name>.mjs` using Node's native
 `node:module` type stripping (Node 24), rewrites intra-kernel `"./x.mts"` import specifiers
 to `"./x.mjs"`, and verifies the result by importing the built kernel and playing three moves
 of a 9x9 game. Copies nothing else; data JSON under `public/data/` is authored directly, not

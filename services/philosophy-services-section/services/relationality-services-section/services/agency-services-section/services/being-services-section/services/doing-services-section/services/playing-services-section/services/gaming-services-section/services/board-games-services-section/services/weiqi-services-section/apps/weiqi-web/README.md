@@ -3,7 +3,8 @@
 `@lenticule-science/weiqi-web` — the web face for `weiqi-services-section`: **Play** (a four-rung
 Capture Go onboarding ladder against a bot that gets smarter each rung), **Tsumego** (a graded,
 kernel-verified problem trainer with spaced-repetition review), **Learn** (an interactive lesson
-player), **Read** (the compiled glossary). Static, client-side, zero dependencies, per
+player), **Read** (the compiled glossary). Static and client-side, with one exact-pinned rules
+owner, per
 [the Weiqi Platform Plan](../../content/text/documents/articles/notes/weiqi-platform-plan.md) —
 "no accounts, no server state, deployable exactly like 561.group." All rules authority stays with
 [`@lenticule-science/weiqi-kernel`](../weiqi-kernel/README.md); this app renders what the kernel
@@ -33,8 +34,8 @@ npm run serve   # node scripts/serve.mjs -- static file server over ./public, ht
 npm test        # npm run check, then node --test 'test/*.test.mts'
 ```
 
-Run `npm run build` once before the first `npm run serve`, and again any time
-`../weiqi-kernel/src/*.mts` or `../../content/text/glossary/terms/*.md` changes — both
+Run `npm run build` once before the first `npm run serve`, and again after updating the
+exact-pinned kernel or when `../../content/text/glossary/terms/*.md` changes — both
 `public/js/kernel/` and `public/data/glossary.json` are build products, not hand-edited source.
 Everything else in `public/` is served as-is; there is no bundler and no other build step.
 
@@ -73,13 +74,14 @@ apps/weiqi-web/
                           leaves open; see the file's own doc comment for why
   README.md               this file
   scripts/
+    build-kernel.mjs       invokes the exact-pinned kernel's browser projection -> public/js/kernel/
     build-glossary.mjs     compiles ../../content/text/glossary/terms/*.md -> public/data/glossary.json
                             (title, definition, elaboration, related terms) -- a small targeted
                             frontmatter/markdown extraction, not a general parser
     serve.mjs              node:http static file server over public/, sandboxed to that directory
   test/
-    smoke.test.mts          node --test: imports the kernel (../../weiqi-kernel/src, relative .mts
-                            import) and the bot (../public/js/bot.mjs), plays 100 capture-go
+    smoke.test.mts          node --test: imports the exact-pinned kernel and the bot
+                            (../public/js/bot.mjs), plays 100 capture-go
                             self-play games (random-legal Black vs. greedy-capture White),
                             asserting the kernel never rejects a bot-chosen move
     stone-variance.test.mts DOM-free rendering-purity coverage: deterministic-hash.mjs and
@@ -150,8 +152,7 @@ apps/weiqi-web/
       tsumego-app.mjs          page glue for tsumego.html (the trainer)
       learn-app.mjs            page glue for learn.html
       glossary-app.mjs         page glue for glossary.html
-      kernel/                  BUILD PRODUCT (from weiqi-kernel's shared browser projection) -- browser-ready copies of
-                                every ../weiqi-kernel/src/*.mts module
+      kernel/                  BUILD PRODUCT (from the exact-pinned kernel's shared browser projection)
 ```
 
 ## The board component (`public/js/board.mjs`)

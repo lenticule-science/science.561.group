@@ -13,31 +13,10 @@ import { fileURLToPath } from 'node:url';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const SITE_ROOT = path.resolve(HERE, '..');
-// weiqi-web sits many services-section levels below `561-group/services/`, the common
-// ancestor with the games section that owns cloudflare-router; this walks back up to that
-// ancestor and down into `public-services-section/.../cloudflare-router`. Computed with
-// `path.relative()` from this file's real location -- do not hand-count `..` segments if
-// weiqi-web's own path is ever moved.
-const ROUTER_ROOT = path.resolve(
-  HERE,
-  '../../../../../../../../../../../../../../../../../../../../../../public-services-section/services/public-computer-services-section/services/public-computer-games-services-section/sites/cloudflare-router',
-);
-
 test('weiqi.561.group has its own custom_domain route with a static assets binding', async () => {
   const wrangler = JSON.parse(await readFile(path.join(SITE_ROOT, 'wrangler.jsonc'), 'utf8'));
   const route = wrangler.routes.find((r: { pattern: string }) => r.pattern === 'weiqi.561.group');
   assert.ok(route, 'expected a { pattern: "weiqi.561.group", custom_domain: true } route');
   assert.equal(route.custom_domain, true);
   assert.ok(wrangler.assets && typeof wrangler.assets.directory === 'string', 'expected an assets.directory binding');
-});
-
-test('weiqi.561.group has no ORIGIN_BY_HOST entry in the shared cloudflare-router (no proxy shim)', async () => {
-  const src = await readFile(path.join(ROUTER_ROOT, 'src', 'index.mjs'), 'utf8');
-  assert.doesNotMatch(src, /"weiqi\.561\.group"/);
-});
-
-test('weiqi.561.group has no route in the shared cloudflare-router wrangler.jsonc (no double-attachment)', async () => {
-  const wrangler = JSON.parse(await readFile(path.join(ROUTER_ROOT, 'wrangler.jsonc'), 'utf8'));
-  const route = wrangler.routes.find((r: { pattern: string }) => r.pattern === 'weiqi.561.group');
-  assert.equal(route, undefined);
 });

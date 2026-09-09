@@ -46,17 +46,17 @@
 
 import { findGroup, neighbors, opponent, pointToCoord,                        } from "./board.mjs";
 
-                               
-                 
-                   
-             
-                
-                 
-                
-                
-                  
-          
-                 
+
+
+
+
+
+
+
+
+
+
+
 
 /** Glossary term slug -> path to the term's markdown file, relative to this package's root. */
 export const TERM_PATH                                   = Object.freeze({
@@ -69,14 +69,14 @@ export const TERM_PATH                                   = Object.freeze({
   pass: "../../content/text/glossary/terms/pass.md",
 });
 
-                                
-                          
-                                                                           
-               
-                                                                                                           
-                  
-                                  
- 
+
+
+
+
+
+
+
+
 
 function mkEvent(type                   , term                        , detail                         )                {
   return { type, term, termRef: TERM_PATH[term], detail };
@@ -91,22 +91,22 @@ function isSimpleEye(board            , width        , height        , point    
   return true;
 }
 
-                                
-                
-                 
-                                      
-                                      
-                
-               
-                    
-                             
-                               
- 
 
-                                 
-                          
-                                   
- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 export function annotateMove(input               )                 {
   const { width, height, prevPosition, nextPosition, point, color, captured, selfCaptured, activeKoPoint } = input;

@@ -1,7 +1,6 @@
 // Pure content checks over public/data/glossary.json and lessons.json — no
 // DOM, no build step. Board/coordinate legality is checked with the
-// kernel's own coordToPoint (imported straight from its .mts source, per
-// the house rule that node tests may reach the kernel directly), so "in
+// kernel's own coordToPoint (imported from its published package), so "in
 // range" here means exactly what the kernel would accept, not a
 // reimplementation of its rules.
 
@@ -11,18 +10,14 @@ import { readFileSync, existsSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
-import { coordToPoint } from "../../../../../apps/weiqi-kernel/src/board.mts";
-import { TERM_PATH } from "../../../../../apps/weiqi-kernel/src/events.mts";
+import { coordToPoint, TERM_PATH } from "@lenticule-science/weiqi-kernel";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const appRoot = path.resolve(here, "..");
-const kernelSrcDir = path.resolve(appRoot, "../../../../apps/weiqi-kernel/src");
-// TERM_PATH's "../../content/text/..." strings are two levels of "../"
-// short of resolving from events.mts's own directory (src/) — they only
-// land on the real glossary.terms files when resolved from the *package*
-// root (apps/weiqi-kernel/), one level up from src/. That is the anchor a
-// termRef is documented against, so it's the anchor used here too.
-const kernelPackageRoot = path.resolve(kernelSrcDir, "..");
+// TERM_PATH is documented as relative to apps/weiqi-kernel. Its leading
+// ../../ therefore lands at this section's root, which this app can name
+// without reaching into the kernel package's implementation files.
+const sectionRoot = path.resolve(appRoot, "../../../..");
 
 const glossary = JSON.parse(readFileSync(path.resolve(appRoot, "public/data/glossary.json"), "utf8"));
 const lessons = JSON.parse(readFileSync(path.resolve(appRoot, "public/data/lessons.json"), "utf8"));
@@ -56,11 +51,7 @@ test("every glossary related name refers to a term that exists", () => {
 
 test("every glossary term's path resolves to a real file on disk", () => {
   for (const term of glossary) {
-    // `path` is documented as section-relative in the same shape as a
-    // kernel SemanticEvent's termRef — i.e. relative from a source file
-    // one level under the section root's apps/*/src, same as
-    // apps/weiqi-kernel/src/events.mts itself sits.
-    const resolved = path.resolve(kernelPackageRoot, term.path);
+    const resolved = path.resolve(sectionRoot, term.path.replace(/^\.\.\/\.\.\//, ""));
     assert.ok(existsSync(resolved), `"${term.name}" path "${term.path}" does not resolve to a file`);
   }
 });

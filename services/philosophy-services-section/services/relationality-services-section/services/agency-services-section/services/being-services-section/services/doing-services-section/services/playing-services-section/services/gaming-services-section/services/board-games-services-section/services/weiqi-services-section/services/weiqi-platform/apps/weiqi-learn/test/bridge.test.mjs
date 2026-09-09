@@ -8,7 +8,7 @@
 
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import * as kernel from "../../../../../apps/weiqi-kernel/src/index.mts";
+import * as kernel from "@lenticule-science/weiqi-kernel";
 import { createSessionFactory } from "../public/js/lib/kernel-bridge.mjs";
 
 const createSession = createSessionFactory(kernel);

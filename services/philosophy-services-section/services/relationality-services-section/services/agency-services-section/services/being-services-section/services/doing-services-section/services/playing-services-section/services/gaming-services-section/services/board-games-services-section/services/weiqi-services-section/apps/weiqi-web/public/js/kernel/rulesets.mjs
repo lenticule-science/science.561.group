@@ -6,22 +6,22 @@
 // tables ever change, this file should change to match, and vice versa:
 // the two are meant to cite each other.
 
-                                                                                  
-                                              
-                                                                     
-                                                                       
 
-                          
-                        
-                               
-                                
-                                
-                                                                                                                     
-                        
-                                                                                                                                            
-                                   
-                                                 
- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 export const RULESETS                                    = Object.freeze({
   chinese: Object.freeze({
@@ -67,7 +67,7 @@ export const RULESETS                                    = Object.freeze({
   }),
 });
 
-                                                
+
 
 export function getRuleset(name        )          {
   const r = RULESETS[name];

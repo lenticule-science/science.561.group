@@ -15,24 +15,24 @@ import {
   findGroup,
   neighbors,
   opponent,
-             
-             
+
+
 } from "./board.mjs";
 import { boardHash, situationalHash } from "./zobrist.mjs";
-                                                  
 
-                           
-                         
-                          
-                             
-                         
-                                                                                            
-                                       
-                                                                                            
-                                       
-                             
-                                   
- 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function finalize(
   width        ,
@@ -78,9 +78,9 @@ export function createPositionFromCells(
   return finalize(width, height, board, toMove, capturedBlackStones, capturedWhiteStones);
 }
 
-                             
-                                                                                   
-                                                                
+
+
+
 
 /**
  * Apply a single stone placement, resolving captures and suicide, but

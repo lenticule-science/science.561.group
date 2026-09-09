@@ -20,10 +20,10 @@ export const EMPTY = 0         ;
 export const BLACK = 1         ;
 export const WHITE = 2         ;
 
-                                                              
-                                                
+
+
 /** Officially supported competitive play sizes (the platform plan's matchmaking pools by board size). */
-                                    
+
 
 // Zobrist keys (zobrist.mts) are precomputed only up to 19x19 = 361 points,
 // so that is the hard upper bound on any square board this kernel can hash
@@ -81,11 +81,11 @@ export function neighbors(width        , height        , point        )         
   return out;
 }
 
-                        
-               
-                   
-                         
- 
+
+
+
+
+
 
 /** Flood-fill the connected group of same-colored stones containing `start`, and its liberties. */
 export function findGroup(board            , width        , height        , start        )        {
