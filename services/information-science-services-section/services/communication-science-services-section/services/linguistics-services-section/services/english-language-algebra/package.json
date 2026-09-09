@@ -29,7 +29,7 @@
     "./src/bundle.mjs": "./src/bundle.mjs"
   },
   "dependencies": {
-    "@lenticule-science/communicating": "0.0.6",
+    "@lenticule-science/communicating": "0.1.0",
     "@red-cup-engineering/semantic-content-identify-service": "0.2.7"
   },
   "devDependencies": {
