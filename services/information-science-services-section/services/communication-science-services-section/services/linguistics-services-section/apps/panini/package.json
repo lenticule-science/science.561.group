@@ -16,7 +16,7 @@
     "node": ">=22"
   },
   "dependencies": {
-    "@lenticule-science/communicating": "0.0.6",
+    "@lenticule-science/communicating": "0.1.0",
     "@lenticule-science/english-language-algebra": "0.1.7",
     "@lenticule-science/lakota-language-algebra": "0.1.4",
     "@lenticule-science/latin-language-algebra": "0.1.4",
