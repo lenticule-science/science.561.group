@@ -30,7 +30,7 @@ const wing = Object.freeze({ world: Object.freeze({
   warnings: Object.freeze([]),
 }) });
 
-test("the release ledger derives compound keywords, reverse backlinks, and no sibling relations", async (t) => {
+test("the release ledger derives term definitions, compound keywords, reverse backlinks, and no sibling relations", async (t) => {
   const root = await mkdtemp(join(tmpdir(), "l-space-release-ledger-"));
   t.after(() => rm(root, { recursive: true, force: true }));
   const paths = {
@@ -50,9 +50,14 @@ test("the release ledger derives compound keywords, reverse backlinks, and no si
   const rooms = [...carriers].map(([id]) => ({ id, title: id, frontmatter: {} }));
   const projected = await projectLSpaceRelationLedger({ root, rooms });
   assert.equal(projected.scanned, 3);
-  assert.equal(projected.documents, 1);
+  // An admitted term defines its own identity. Definitions are independent of
+  // compound keyword membership, so all three scoped terms are ledger documents.
+  assert.equal(projected.documents, 3);
   assert.deepEqual(projected.defects, []);
   assert.deepEqual(projected.rows.map(({ e, a, v }) => ({ e, a, v })), [
+    { e: paths.model, a: "defines", v: "model" },
+    { e: paths.bamboo, a: "defines", v: "bamboo" },
+    { e: paths.siblingOperation, a: "defines", v: "operation" },
     { e: paths.bamboo, a: "declares-keyword", v: "model" },
     {
       e: paths.bamboo,
