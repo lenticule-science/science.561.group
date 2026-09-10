@@ -32,8 +32,8 @@ test("no diagnostic ever carries a timestamp, random id, or other non-reproducib
 });
 
 test("file globbing order does not change the resulting diagnostic set (only its within-file order is file-path-sorted, not glob-order-sorted)", async () => {
-  const a = await runChecks({ sectionRoot: SECTION_ROOT, globs: ["content/**/*.md", "services/weiqi-platform/apps/weiqi-learn/public/data/*.json"] });
-  const b = await runChecks({ sectionRoot: SECTION_ROOT, globs: ["services/weiqi-platform/apps/weiqi-learn/public/data/*.json", "content/**/*.md"] });
+  const a = await runChecks({ sectionRoot: SECTION_ROOT, globs: ["content/**/*.md", "apps/weiqi-web/public/data/tsumego-foundations.json"] });
+  const b = await runChecks({ sectionRoot: SECTION_ROOT, globs: ["apps/weiqi-web/public/data/tsumego-foundations.json", "content/**/*.md"] });
   const sortKey = (d) => `${d.code}|${d.file}|${d.start?.line ?? 0}|${d.start?.column ?? 0}|${d.message}`;
   assert.deepEqual([...a.diagnostics].sort((x, y) => sortKey(x).localeCompare(sortKey(y))), [...b.diagnostics].sort((x, y) => sortKey(x).localeCompare(sortKey(y))));
 });

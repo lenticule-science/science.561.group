@@ -12,12 +12,14 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { createRequire, stripTypeScriptTypes } from "node:module";
 import { dirname, resolve } from "node:path";
+import { build } from "esbuild";
 
 const require = createRequire(import.meta.url);
 
 /** The import closure of `lightcone`, in dependency order. */
 export const ENGINE_MODULES = Object.freeze(["types", "srs", "stability", "lightcone"]);
 export const CAIRN_BROWSER_MODULE = "room-index-search";
+export const TUFTE_BROWSER_MODULE = "tufte-browser";
 
 export async function cairnSearchSourcePath() {
   const siteRoot = resolve(import.meta.dirname, "..");
@@ -33,6 +35,10 @@ export async function cairnSearchSourcePath() {
 
 function platformRuntimeRoot() {
   return dirname(require.resolve("@red-cup-engineering/education-platform-service/srs"));
+}
+
+export function tufteBrowserSourcePath() {
+  return require.resolve("@red-cup-engineering/web-tufte-gui-services-section/browser");
 }
 
 /** Rewrite compiled platform specifiers to browser `.mjs` files. */
@@ -55,6 +61,18 @@ export async function buildBrowserEngine(outputRoot) {
   const searchPath = resolve(outputRoot, `${CAIRN_BROWSER_MODULE}.mjs`);
   await writeFile(searchPath, searchSource);
   written.push({ name: CAIRN_BROWSER_MODULE, path: searchPath, bytes: searchSource.length });
+  const tuftePath = resolve(outputRoot, `${TUFTE_BROWSER_MODULE}.mjs`);
+  await build({
+    entryPoints: [tufteBrowserSourcePath()],
+    bundle: true,
+    format: "esm",
+    minify: true,
+    outfile: tuftePath,
+    platform: "browser",
+    target: "es2022",
+  });
+  const tufteSource = await readFile(tuftePath, "utf8");
+  written.push({ name: TUFTE_BROWSER_MODULE, path: tuftePath, bytes: tufteSource.length });
   return written;
 }
 

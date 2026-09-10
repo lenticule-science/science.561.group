@@ -23,6 +23,7 @@ import { GlossaryHoverCard, loadGlossary } from "./hover-card.mjs";
 import { WeiqiSound } from "./sound.mjs";
 import { reviewCard } from "./srs.mjs";
 import { epochDay, buildQueue } from "./tsumego-deck.mjs";
+import { foundationProblemForTrainer } from "./tsumego-foundations.mjs";
 
 const RULESET = "chinese"; // arbitrary but fixed, matching test/tsumego-data.test.mts -- none of these problems turn on ko regime or komi
 export const TSUMEGO_SRS_KEY = "weiqi-tsumego-srs";
@@ -43,10 +44,18 @@ const resetBtn = document.getElementById("reset-problem-btn");
 const skipBtn = document.getElementById("skip-problem-btn");
 
 async function loadProblems() {
-  const res = await fetch("data/tsumego.json");
-  if (!res.ok) throw new Error(`Failed to load tsumego.json: ${res.status}`);
-  const doc = await res.json();
-  return doc.problems;
+  const [currentRes, foundationsRes] = await Promise.all([
+    fetch("data/tsumego.json"),
+    fetch("data/tsumego-foundations.json"),
+  ]);
+  if (!currentRes.ok) throw new Error(`Failed to load tsumego.json: ${currentRes.status}`);
+  if (!foundationsRes.ok) throw new Error(`Failed to load tsumego-foundations.json: ${foundationsRes.status}`);
+  const current = await currentRes.json();
+  const foundations = await foundationsRes.json();
+  return [
+    ...current.problems,
+    ...foundations.problems.map(foundationProblemForTrainer),
+  ];
 }
 
 const glossary = await loadGlossary();
@@ -118,6 +127,7 @@ function rebuildQueue() {
 
 function sourceLine(problem) {
   if (problem.source === "original") return "Original problem, constructed for this trainer.";
+  if (problem.source === "foundation-curriculum") return "Foundational problem migrated from the original Weiqi Learn curriculum.";
   const shape = problem.source.replace(/^traditional-shape:/, "").replace(/-/g, " ");
   return `Traditional shape: ${shape} (public-domain Go vocabulary, not a reproduction of any single copyrighted diagram).`;
 }

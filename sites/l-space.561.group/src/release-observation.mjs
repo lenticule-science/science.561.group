@@ -126,7 +126,6 @@ export function observeLSpaceRelease({ releaseRoot, query = "", match = "any", l
       schemaVersion: snapshot.manifest.vaultSchemaVersion,
       participation: snapshot.index.participation,
       vocabulary: snapshot.index.vocabulary,
-      victor: snapshot.manifest.victor,
     }),
     query: query.trim(),
     filters: reading.filters,

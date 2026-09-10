@@ -1,6 +1,7 @@
 import { DEFAULT_TARGET_RETENTION, recallProbability, reviewCard } from "./js/srs.mjs";
 import { classifyStage } from "./js/lightcone.mjs";
 import { searchImmutableRoomIndex } from "./js/room-index-search.mjs";
+import { applyTufteProjectionPatch, diffTufteProjection, normalizeTufteModel } from "./js/tufte-browser.mjs";
 const view = document.querySelector("#view");
 const loading = document.querySelector("#loading");
 const search = document.querySelector("#search");
@@ -8,7 +9,7 @@ const scienceNav = document.querySelector("#science-nav");
 const cardTemplate = document.querySelector("#room-card-template");
 const state = {
   anonymous: false, me: null, surface: null, publicIndex: null, manifest: null, index: null, garden: null, halls: null,
-  graph: null, reviews: new Map(), byId: new Map(), byKey: new Map(), byName: new Map(), collections: [],
+  feltosRelations: null, indexPromise: null, hallsPromise: null, reviews: new Map(), byId: new Map(), byKey: new Map(), byName: new Map(), collections: [],
 };
 
 async function beginDiscordCommandLogin(container) {
@@ -101,6 +102,27 @@ function indexCorpus(index) {
   }
   state.collections = [...counts.values()].sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
 }
+async function loadIndex() {
+  if (state.index) return state.index;
+  if (state.indexPromise === null) {
+    state.indexPromise = fetch("/api/v1/vault/index").then(async (response) => {
+      if (!response.ok) throw new Error(`The catalogue did not open (${response.status}).`);
+      const index = await response.json();
+      state.index = index; indexCorpus(index); updateNavigation(); return index;
+    });
+  }
+  return state.indexPromise;
+}
+async function loadHalls() {
+  if (state.halls) return state.halls;
+  if (state.hallsPromise === null) {
+    state.hallsPromise = fetch("/api/v1/vault/halls").then(async (response) => {
+      if (!response.ok) throw new Error(`The halls did not open (${response.status}).`);
+      state.halls = await response.json(); return state.halls;
+    });
+  }
+  return state.hallsPromise;
+}
 const roomHref = (room) => `#/room/${room.key}`;
 const publicRoomHref = (room) => `#/public/${room.key}`;
 function roomCard(room, hrefFor = roomHref) {
@@ -172,18 +194,26 @@ function catalogueAtlas() {
   new ResizeObserver(draw).observe(canvas); requestAnimationFrame(draw); return figure;
 }
 function tufteGarden() {
-  const grid = document.createElement("div"); grid.className = "tufte-grid"; grid.dataset.tufte = ""; grid.dataset.revision = state.garden.revision;
-  for (const tile of state.garden.tiles) {
-    const section = document.createElement("section"); section.className = "tufte-tile"; section.id = tile.id;
-    section.dataset.role = tile.role; section.dataset.lifecycle = tile.lifecycle; section.dataset.confidence = tile.confidence; section.dataset.side = tile.side; section.style.setProperty("--tile-span", tile.span);
-    const header = document.createElement("header"); const eyebrow = document.createElement("p"); eyebrow.className = "eyebrow"; eyebrow.textContent = tile.view === "collection" ? "Science section" : tile.role === "now" ? "Macro view" : "Release evidence";
-    const title = document.createElement("h2"); title.textContent = tile.title; header.append(eyebrow, title); const body = document.createElement("div"); body.className = "tufte-tile-body";
-    if (tile.view === "atlas") body.append(catalogueAtlas());
-    else if (tile.view === "collection" || tile.view === "halls") { const anchor = document.createElement("a"); anchor.className = "tile-route"; anchor.href = tile.view === "halls" ? "#/halls" : `#/collection/${encodeURIComponent(tile.collectionId)}`; anchor.textContent = tile.content; body.append(anchor); }
-    else { const paragraph = document.createElement("p"); paragraph.textContent = tile.content; body.append(paragraph); }
-    section.append(header, body); grid.append(section);
+  const root = document.createElement("section"); root.dataset.tufte = ""; root.dataset.revision = state.garden.revision;
+  const grid = document.createElement("div"); grid.className = "tufte-grid"; root.append(grid);
+  const projection = normalizeTufteModel({
+    ...state.garden,
+    tiles: state.garden.tiles.map((tile) => ({
+      ...tile,
+      eyebrow: tile.view === "collection" ? "Science section" : tile.role === "now" ? "Macro view" : "Release evidence",
+    })),
+  });
+  applyTufteProjectionPatch(root, diffTufteProjection({ revision: projection.revision, tiles: [] }, projection));
+  for (const tile of projection.tiles) {
+    const body = root.querySelector(`#${CSS.escape(tile.id)} .tufte-tile-body`);
+    if (!body) continue;
+    if (tile.view === "atlas") {
+      const anchor = document.createElement("a"); anchor.className = "tile-route"; anchor.href = "#/catalogue"; anchor.textContent = `${tile.content} Open the addressable catalogue.`; body.replaceChildren(anchor);
+    } else if (tile.view === "collection" || tile.view === "halls") {
+      const anchor = document.createElement("a"); anchor.className = "tile-route"; anchor.href = tile.view === "halls" ? "#/halls" : `#/collection/${encodeURIComponent(tile.collectionId)}`; anchor.textContent = tile.content; body.replaceChildren(anchor);
+    }
   }
-  return grid;
+  return root;
 }
 function showHome() {
   document.title = "L-Space · Lenticule Science"; view.replaceChildren();
@@ -204,6 +234,13 @@ function showCollection(id) {
   const eyebrow = document.createElement("p"); eyebrow.className = "eyebrow"; eyebrow.textContent = "Knowledge collection";
   const title = document.createElement("h1"); title.className = "page-title"; title.textContent = name;
   view.append(eyebrow, title, sectionHead(`${rooms.length.toLocaleString()} rooms`, "Ordered by title"), roomList(rooms.sort((a, b) => a.title.localeCompare(b.title))));
+}
+function showCatalogue() {
+  document.title = "Catalogue atlas · L-Space"; view.replaceChildren();
+  const eyebrow = document.createElement("p"); eyebrow.className = "eyebrow"; eyebrow.textContent = "Addressable knowledge cells";
+  const title = document.createElement("h1"); title.className = "page-title"; title.textContent = "Catalogue atlas";
+  const measures = document.createElement("p"); measures.className = "hero-copy"; measures.textContent = `${state.index.rooms.length.toLocaleString()} released rooms in deterministic TUFTE positions. This detailed catalogue is requested only when a reader opens it.`;
+  view.append(eyebrow, title, measures, catalogueAtlas());
 }
 const hallHref = (hall) => `#/hall/${encodeURIComponent(hall.id)}`;
 function hallCard(hall) {

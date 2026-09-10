@@ -14,10 +14,10 @@ import { checkExpectedBlock } from "./expected-block.mjs";
 import { checkSgfFence } from "./sgf-check.mjs";
 import { checkRelativeLinks, checkKernelTermPaths } from "./links.mjs";
 import { checkFrontmatter } from "./frontmatter.mjs";
-import { checkTsumegoSchema, checkTsumegoLegality, checkLessonsSchema, checkLessonBoards } from "./app-data.mjs";
+import { checkTsumegoSchema, checkTsumegoLegality } from "./app-data.mjs";
 
 /** SPEC.md's "CLI contract" default globs when none are given on argv. */
-export const DEFAULT_GLOBS = ["content/**/*.md", "services/weiqi-platform/apps/weiqi-learn/public/data/*.json"];
+export const DEFAULT_GLOBS = ["content/**/*.md", "apps/weiqi-web/public/data/tsumego-foundations.json"];
 
 /**
  * A precondition weiqi-lsp itself could not evaluate at all: kernel import
@@ -130,11 +130,8 @@ export function checkMarkdownFile(text, file, absPath, sectionRoot, kernel) {
 /** @param {any} json @param {string} file @param {typeof import("../../weiqi-kernel/src/index.mts")} kernel */
 export function checkJsonFile(json, file, kernel) {
   const base = file.split("/").pop();
-  if (base === "tsumego.json") {
+  if (base === "tsumego-foundations.json") {
     return [...checkTsumegoSchema(json, file, kernel), ...checkTsumegoLegality(json, file, kernel)];
-  }
-  if (base === "lessons.json") {
-    return [...checkLessonsSchema(json, file, kernel), ...checkLessonBoards(json, file, kernel)];
   }
   return [];
 }

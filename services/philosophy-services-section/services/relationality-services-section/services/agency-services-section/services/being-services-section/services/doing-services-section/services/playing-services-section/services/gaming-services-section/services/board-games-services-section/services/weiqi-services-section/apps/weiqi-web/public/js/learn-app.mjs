@@ -37,6 +37,8 @@ const boardPanel = document.getElementById("board-panel");
 const LESSON_FILES = Object.freeze({
   "weiqi-overview": "data/lesson-weiqi-overview.json",
   "living-groups-and-eyes": "data/lesson-living-groups-and-eyes.json",
+  "weiqi-history": "data/lesson-weiqi-history.json",
+  "komi-and-handicap": "data/lesson-komi-and-handicap.json",
 });
 const requestedLesson = new URLSearchParams(location.search).get("lesson");
 const lessonFile = LESSON_FILES[requestedLesson] ?? LESSON_FILES["weiqi-overview"];

@@ -17,8 +17,8 @@
 
 import { makeDiagnostic } from "./diagnostic.mjs";
 
-const TSUMEGO_SOURCE = "services/weiqi-platform/apps/weiqi-learn/public/data/tsumego.json";
-const LESSONS_SOURCE = "services/weiqi-platform/apps/weiqi-learn/public/data/lessons.json";
+const TSUMEGO_SOURCE = "apps/weiqi-web/public/data/tsumego-foundations.json";
+const LESSONS_SOURCE = "apps/weiqi-web/public/data/lesson-*.json";
 const DEFAULT_RULESET = "chinese";
 
 function isValidCoord(pt, size, kernel) {

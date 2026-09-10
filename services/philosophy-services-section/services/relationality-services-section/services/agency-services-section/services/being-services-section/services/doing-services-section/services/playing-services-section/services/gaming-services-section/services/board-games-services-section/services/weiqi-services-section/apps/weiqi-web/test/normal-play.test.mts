@@ -3,6 +3,19 @@ import assert from "node:assert/strict";
 import { Game } from "@red-cup-engineering/weiqi-engine";
 import * as kernel from "@red-cup-engineering/weiqi-engine";
 import { chooseInfluenceMove } from "../public/js/bot.mjs";
+import { canAdmitHumanBoardMove } from "../public/js/play-turn-admission.mjs";
+
+test("a board event is admitted only while the human owns the engine turn", () => {
+  const opening = kernel.createWeiqiGameSession({ size: 9, ruleset: "chinese" });
+  assert.equal(canAdmitHumanBoardMove({ session: opening, finished: false, botThinking: false }, kernel), true);
+
+  const moved = kernel.admitWeiqiGameCommand(opening, opening.version, { kind: "play", move: "E5" });
+  assert.equal(moved.ok, true);
+  if (!moved.ok) return;
+  assert.equal(canAdmitHumanBoardMove({ session: moved.session, finished: false, botThinking: false }, kernel), false);
+  assert.equal(canAdmitHumanBoardMove({ session: opening, finished: false, botThinking: true }, kernel), false);
+  assert.equal(canAdmitHumanBoardMove({ session: opening, finished: true, botThinking: false }, kernel), false);
+});
 
 test("the public opponent makes a legal White reply in a normal 9x9 game", () => {
   const game = new Game(9, "chinese");

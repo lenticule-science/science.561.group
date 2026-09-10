@@ -2,7 +2,14 @@ import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
 import { resolve } from "node:path";
-import { CAIRN_BROWSER_MODULE, ENGINE_MODULES, cairnSearchSourcePath, retargetSpecifiers } from "../scripts/build-browser-engine.mjs";
+import {
+  CAIRN_BROWSER_MODULE,
+  ENGINE_MODULES,
+  TUFTE_BROWSER_MODULE,
+  cairnSearchSourcePath,
+  retargetSpecifiers,
+  tufteBrowserSourcePath,
+} from "../scripts/build-browser-engine.mjs";
 
 const engineRoot = resolve(import.meta.dirname, "..", "public", "js");
 const browser = await Promise.all(
@@ -71,6 +78,18 @@ test("the browser uses CAIRN room-index search unchanged", async () => {
   const upstream = await import(upstreamPath);
   const rooms = [{ id: "science/project.md", title: "Project", summary: "A mission", kind: "guide", collection: "science", space: { semanticPosition: { tags: ["task"] } } }];
   assert.deepEqual(projected.searchImmutableRoomIndex(rooms, { query: "project task" }), upstream.searchImmutableRoomIndex(rooms, { query: "project task" }));
+});
+
+test("the browser loads TUFTE's actual public binding instead of a local tile renderer", async () => {
+  const projectedSource = await readFile(resolve(engineRoot, `${TUFTE_BROWSER_MODULE}.mjs`), "utf8");
+  assert.ok(projectedSource.length > 0, "TUFTE browser binding must be materialized for the reader");
+  assert.match(tufteBrowserSourcePath(), /web-tufte-gui-services-section/u);
+  const projected = await import(resolve(engineRoot, `${TUFTE_BROWSER_MODULE}.mjs`));
+  const upstream = await import("@red-cup-engineering/web-tufte-gui-services-section/browser");
+  for (const name of ["normalizeTufteModel", "diffTufteProjection", "applyTufteProjectionPatch"]) {
+    assert.equal(typeof projected[name], "function", `${name} must reach the browser`);
+    assert.equal(typeof upstream[name], "function", `${name} must remain an upstream TUFTE capability`);
+  }
 });
 
 test("specifier retargeting rewrites only relative engine imports", () => {

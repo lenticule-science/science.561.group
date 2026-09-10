@@ -409,12 +409,6 @@ export default {
     if (url.pathname === "/api/v1/vault/halls" && request.method === "GET") {
       return serveAsset(request, env, "/vault/views/halls.json");
     }
-    if (url.pathname === "/api/v1/vault/graph" && request.method === "GET") {
-      return serveAsset(request, env, "/vault/graph.json");
-    }
-    if (url.pathname === "/api/v1/vault/victor-release" && request.method === "GET") {
-      return serveAsset(request, env, "/vault/victor-release.json");
-    }
     const room = url.pathname.match(/^\/api\/v1\/vault\/rooms\/([a-f0-9]{64})$/u);
     if (room && request.method === "GET") {
       return serveAsset(request, env, `/vault/rooms/${room[1]}.json`);

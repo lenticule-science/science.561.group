@@ -1,20 +1,31 @@
 #!/usr/bin/env node
 
 import { createInterface } from "node:readline";
+import { createGeodeAuthoring } from "@red-cup-engineering/geode/vault-authoring";
 import { drewMcpTools } from "@red-cup-engineering/drew/mcp";
+import { lSpaceConfig } from "../src/index.mjs";
 import { glossaryProvenanceOf, observeLSpaceRelease, traverseLSpaceRoom } from "../src/release-observation.mjs";
-import { openLSpaceReleaseGraph } from "../src/release-graph-reader.mjs";
 
-let releaseGraphPromise = null;
+let geodeAuthoringPromise = null;
 
-function releaseGraph() {
-  if (releaseGraphPromise === null) {
-    releaseGraphPromise = openLSpaceReleaseGraph().catch((error) => {
-      releaseGraphPromise = null;
+/**
+ * L-Space owns the immutable cell release, not a second workspace graph. A
+ * graph request opens GEODE at its CAIRN-backed owner only when needed; its
+ * query methods enforce their own bounded relation and neighborhood contracts.
+ */
+function geodeAuthoring() {
+  if (geodeAuthoringPromise === null) {
+    const wing = lSpaceConfig.wings[0];
+    geodeAuthoringPromise = createGeodeAuthoring({
+      root: wing.root,
+      region: "",
+      excludes: wing.excludeGlobs,
+    }).catch((error) => {
+      geodeAuthoringPromise = null;
       throw error;
     });
   }
-  return releaseGraphPromise;
+  return geodeAuthoringPromise;
 }
 
 const pattern = Object.freeze({
@@ -27,52 +38,35 @@ const pattern = Object.freeze({
 const lSpaceGraphTools = Object.freeze([
   Object.freeze({
     name: "query_l_space_concept",
-    description: "Read one concept from GEODE's live DREW-backed declared-relation index over the Lenticule Science corpus.",
+    description: "Read one concept through GEODE's live DREW-backed declared-relation index over the CAIRN-admitted Lenticule Science workspace.",
     inputSchema: Object.freeze({ type: "object", required: Object.freeze(["name"]), properties: Object.freeze({ name: Object.freeze({ type: "string", minLength: 1 }) }), additionalProperties: false }),
   }),
   Object.freeze({
     name: "query_l_space_sparql_bgp",
-    description: "Run a bounded structured SPARQL Basic Graph Pattern SELECT, ASK, or CONSTRUCT over GEODE's EAVT relation ledger. Variables are strings such as ?document. This is not a textual or standards-complete SPARQL endpoint.",
+    description: "Run a bounded structured SPARQL Basic Graph Pattern SELECT, ASK, or CONSTRUCT through GEODE. This is not a textual or standards-complete SPARQL endpoint.",
     inputSchema: Object.freeze({
-      type: "object",
-      required: Object.freeze(["type", "where"]),
+      type: "object", required: Object.freeze(["type", "where"]),
       properties: Object.freeze({
         type: Object.freeze({ enum: Object.freeze(["select", "ask", "construct"]) }),
         select: Object.freeze({ type: "array", maxItems: 16, items: Object.freeze({ type: "string", pattern: "^[A-Za-z][A-Za-z0-9_]*$" }) }),
         where: Object.freeze({ type: "array", minItems: 1, maxItems: 4, items: pattern }),
         construct: Object.freeze({ type: "array", minItems: 1, maxItems: 4, items: pattern }),
         limit: Object.freeze({ type: "integer", minimum: 1, maximum: 500, default: 100 }),
-      }),
-      additionalProperties: false,
+      }), additionalProperties: false,
     }),
   }),
-  Object.freeze({
-    name: "observe_l_space_feltos",
-    description: "Observe the admitted L-Space workspace through GEODE's FeltOS-native composition, with DREW occurrence identity and provenance.",
-    inputSchema: Object.freeze({ type: "object", properties: Object.freeze({}), additionalProperties: false }),
-  }),
+  Object.freeze({ name: "observe_l_space_feltos", description: "Observe GEODE's CAIRN-admitted L-Space workspace through FeltOS.", inputSchema: Object.freeze({ type: "object", properties: Object.freeze({}), additionalProperties: false }) }),
   Object.freeze({
     name: "query_l_space_feltos_relations",
-    description: "Query bounded FeltOS relations projected from GEODE's admitted L-Space Markdown graph.",
-    inputSchema: Object.freeze({ type: "object", properties: Object.freeze({
-      subject: Object.freeze({ type: "string" }), predicate: Object.freeze({ type: "string" }), object: Object.freeze({ type: "string" }),
-      limit: Object.freeze({ type: "integer", minimum: 1, maximum: 500, default: 100 }),
-    }), additionalProperties: false }),
+    description: "Query bounded FeltOS relations projected by GEODE from the admitted L-Space Markdown workspace.",
+    inputSchema: Object.freeze({ type: "object", properties: Object.freeze({ subject: Object.freeze({ type: "string" }), predicate: Object.freeze({ type: "string" }), object: Object.freeze({ type: "string" }), limit: Object.freeze({ type: "integer", minimum: 1, maximum: 500, default: 100 }) }), additionalProperties: false }),
   }),
   Object.freeze({
     name: "query_l_space_feltos_entity",
-    description: "Read a bounded incoming/outgoing FeltOS neighborhood for one L-Space document or graph term.",
-    inputSchema: Object.freeze({ type: "object", required: Object.freeze(["term"]), properties: Object.freeze({
-      term: Object.freeze({ type: "string", minLength: 1 }), predicate: Object.freeze({ type: "string" }),
-      direction: Object.freeze({ enum: Object.freeze(["incoming", "outgoing", "both"]), default: "both" }),
-      limit: Object.freeze({ type: "integer", minimum: 1, maximum: 500, default: 100 }),
-    }), additionalProperties: false }),
+    description: "Read a bounded GEODE/FeltOS neighborhood for one L-Space document or graph term.",
+    inputSchema: Object.freeze({ type: "object", required: Object.freeze(["term"]), properties: Object.freeze({ term: Object.freeze({ type: "string", minLength: 1 }), predicate: Object.freeze({ type: "string" }), direction: Object.freeze({ enum: Object.freeze(["incoming", "outgoing", "both"]), default: "both" }), limit: Object.freeze({ type: "integer", minimum: 1, maximum: 500, default: 100 }) }), additionalProperties: false }),
   }),
-  Object.freeze({
-    name: "observe_l_space_feltos_diagnostics",
-    description: "Read bounded FeltOS/GEODE projection diagnostics without turning unresolved Markdown links into relations.",
-    inputSchema: Object.freeze({ type: "object", properties: Object.freeze({ limit: Object.freeze({ type: "integer", minimum: 1, maximum: 500, default: 100 }) }), additionalProperties: false }),
-  }),
+  Object.freeze({ name: "observe_l_space_feltos_diagnostics", description: "Read bounded GEODE/FeltOS projection diagnostics.", inputSchema: Object.freeze({ type: "object", properties: Object.freeze({ limit: Object.freeze({ type: "integer", minimum: 1, maximum: 500, default: 100 }) }), additionalProperties: false }) }),
 ]);
 
 export const tools = Object.freeze([
@@ -121,10 +115,9 @@ function toolResult(value) {
 }
 
 function sparqlTerm(value) {
-  if (typeof value === "string" && /^\?[A-Za-z][A-Za-z0-9_]*$/u.test(value)) {
-    return Object.freeze({ kind: "knowing.sparql.variable", name: value.slice(1) });
-  }
-  return value;
+  return typeof value === "string" && /^\?[A-Za-z][A-Za-z0-9_]*$/u.test(value)
+    ? Object.freeze({ kind: "knowing.sparql.variable", name: value.slice(1) })
+    : value;
 }
 
 function sparqlPatterns(values) {
@@ -135,15 +128,11 @@ export async function callTool(name, input = {}) {
   if (name === "search_l_space") return observeLSpaceRelease(input);
   if (name === "observe_l_space_release") return observeLSpaceRelease(input);
   if (name === "traverse_l_space_room") return traverseLSpaceRoom(input);
-  const authoring = await releaseGraph();
-  if (name === "query_l_space_concept") {
-    const reading = await authoring.concept(input.name);
-    return { ...reading, provenance: glossaryProvenanceOf(input.name) };
-  }
+  const authoring = await geodeAuthoring();
+  if (name === "query_l_space_concept") return { ...(await authoring.concept(input.name)), provenance: glossaryProvenanceOf(input.name) };
   if (name === "query_l_space_sparql_bgp") {
     return authoring.sparql(Object.freeze({
-      kind: "knowing.sparql.query",
-      type: input.type,
+      kind: "knowing.sparql.query", type: input.type,
       ...(input.select === undefined ? {} : { select: Object.freeze([...input.select]) }),
       where: sparqlPatterns(input.where),
       ...(input.construct === undefined ? {} : { construct: sparqlPatterns(input.construct) }),
@@ -154,9 +143,7 @@ export async function callTool(name, input = {}) {
     const { limit = 100, ...relationPattern } = input;
     return authoring.feltosRelations(relationPattern, { limit });
   }
-  if (name === "query_l_space_feltos_entity") {
-    return authoring.feltosEntity(input.term, { predicate: input.predicate, direction: input.direction ?? "both", limit: input.limit ?? 100 });
-  }
+  if (name === "query_l_space_feltos_entity") return authoring.feltosEntity(input.term, { predicate: input.predicate, direction: input.direction ?? "both", limit: input.limit ?? 100 });
   if (name === "observe_l_space_feltos_diagnostics") return authoring.feltosDiagnostics({ limit: input.limit ?? 100 });
   if (drewMcpTools.some((tool) => tool.name === name)) return authoring.callGraphTool(name, input);
   throw new TypeError(`unknown L-Space MCP operation ${name}`);

@@ -67,16 +67,12 @@ export async function startServer({ env = process.env, port = Number(env.PORT ??
     const authoringModule = env.LSPACE_AUTHORING_MODULE
       ? pathToFileURL(resolve(env.LSPACE_AUTHORING_MODULE)).href
       : new URL("../../dist/vps-authoring.mjs", import.meta.url).href;
-    const victorRelease = readFile(resolve(distDirectory, "vault", "manifest.json"), "utf8")
-      .then((source) => JSON.parse(source)?.victor ?? null)
-      .catch(() => null);
     import(authoringModule)
       .then(async ({ createGeodeAuthoring }) => createGeodeAuthoring({
         root: resolve(env.VAULTMAZE_AUTHORING_ROOT),
         region: env.VAULTMAZE_AUTHORING_REGION ?? "",
         excludes: String(env.VAULTMAZE_AUTHORING_EXCLUDES ?? "legacy,triage,private,dev,test,fixtures,dist")
           .split(",").map((value) => value.trim()).filter(Boolean),
-        victorRelease: await victorRelease,
       }))
       .then((authoring) => {
         bindings.GEODE_APPLICATION = authoring;

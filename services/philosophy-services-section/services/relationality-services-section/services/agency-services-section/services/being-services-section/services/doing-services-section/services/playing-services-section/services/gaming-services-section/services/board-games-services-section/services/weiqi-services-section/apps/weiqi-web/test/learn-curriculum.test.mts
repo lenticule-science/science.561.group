@@ -40,3 +40,15 @@ test("the overview links to the migrated follow-on lesson", async () => {
   assert.ok(next);
   assert.equal(next.links.some((link: { href: string }) => link.href === "learn.html?lesson=living-groups-and-eyes"), true);
 });
+
+test("the public Learn receiver carries the former Learn-only history and handicap lessons with source provenance", async () => {
+  for (const [name, lessonId, sourcePath] of [
+    ["lesson-weiqi-history.json", "weiqi-history", "content/text/documents/articles/teaching-articles/tutorials/weiqi-history.md"],
+    ["lesson-komi-and-handicap.json", "komi-and-handicap", "content/text/documents/articles/teaching-articles/tutorials/komi-and-handicap.md"],
+  ]) {
+    const migrated = await lesson(name);
+    assert.equal(migrated.lessonId, lessonId);
+    assert.equal(migrated.sourcePath, sourcePath);
+    assert.ok(migrated.steps.some((step: { type: string }) => step.type === "exercise"));
+  }
+});

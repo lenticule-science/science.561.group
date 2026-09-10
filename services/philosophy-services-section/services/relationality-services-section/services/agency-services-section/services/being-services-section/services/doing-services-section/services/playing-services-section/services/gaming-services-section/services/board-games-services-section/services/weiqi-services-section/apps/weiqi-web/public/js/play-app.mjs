@@ -9,6 +9,7 @@ import { GlossaryHoverCard, loadGlossary } from "./hover-card.mjs";
 import { BOT_TIERS } from "./bot.mjs";
 import { WeiqiSound } from "./sound.mjs";
 import { ConceptToastStrip } from "./concept-toast.mjs";
+import { canAdmitHumanBoardMove } from "./play-turn-admission.mjs";
 
 const CAPTURE_GO = document.body.dataset.gameMode === "capture-go";
 const BOARD_SIZE = CAPTURE_GO ? 7 : 9;
@@ -175,7 +176,7 @@ async function playBotTurn() {
 }
 
 board.addEventListener("weiqi-move", async (event) => {
-  if (finished || botThinking || game.current.toMove !== kernel.BLACK) return;
+  if (!canAdmitHumanBoardMove({ session, finished, botThinking }, kernel)) return;
   if (applyMove(event.detail.coord) && !finished) await playBotTurn();
 });
 

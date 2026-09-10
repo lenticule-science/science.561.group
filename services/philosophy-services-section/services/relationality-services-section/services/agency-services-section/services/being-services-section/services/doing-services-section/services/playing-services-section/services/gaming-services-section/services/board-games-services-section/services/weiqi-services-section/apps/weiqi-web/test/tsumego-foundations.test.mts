@@ -1,4 +1,4 @@
-// Machine verification of public/data/tsumego.json against the real
+// Machine verification of public/data/tsumego-foundations.json against the real
 // kernel package rather than the built public/lib/kernel/ tree, so this suite never depends on
 // `npm run build` having been run first.
 //
@@ -44,7 +44,7 @@ const here = path.dirname(fileURLToPath(import.meta.url));
 const appRoot = path.resolve(here, "..");
 const RULESET = "chinese"; // arbitrary but fixed — none of these problems turn on ko regime or komi
 
-const { problems } = JSON.parse(readFileSync(path.resolve(appRoot, "public/data/tsumego.json"), "utf8"));
+const { problems } = JSON.parse(readFileSync(path.resolve(appRoot, "public/data/tsumego-foundations.json"), "utf8"));
 
 // ---------------------------------------------------------------------
 // Shared board construction and inspection helpers.
@@ -196,7 +196,7 @@ function eyeCount(position, size, color, anyStoneCoord) {
 // Structural checks every problem must satisfy, regardless of set.
 // ---------------------------------------------------------------------
 
-describe("tsumego.json structure", () => {
+describe("tsumego-foundations.json structure", () => {
   test("has twelve problems in the three graded sets the corpus's concept clusters name", () => {
     assert.equal(problems.length, 12);
     const bySet = {};
@@ -408,3 +408,4 @@ describe("endgame set", () => {
     assert.equal(passArea.blackScore, fillArea.blackScore, "self-filling settled territory should not change the area score");
   });
 });
+
