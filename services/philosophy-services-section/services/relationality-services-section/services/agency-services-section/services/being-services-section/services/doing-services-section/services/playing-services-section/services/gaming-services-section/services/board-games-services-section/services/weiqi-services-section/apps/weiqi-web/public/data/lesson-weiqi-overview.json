@@ -106,6 +106,7 @@
       "text": "The vocabulary from this lesson -- {{liberty}}, {{atari}}, {{capture}}, {{ko}} -- is exactly what the semantic event layer in the rules kernel recognizes during play. Try it yourself in Capture Go, or continue reading the glossary.",
       "links": [
         { "label": "Play Capture Go", "href": "play.html" },
+        { "label": "Continue to Living Groups and Eyes", "href": "learn.html?lesson=living-groups-and-eyes" },
         { "label": "Read the glossary", "href": "glossary.html" }
       ]
     }

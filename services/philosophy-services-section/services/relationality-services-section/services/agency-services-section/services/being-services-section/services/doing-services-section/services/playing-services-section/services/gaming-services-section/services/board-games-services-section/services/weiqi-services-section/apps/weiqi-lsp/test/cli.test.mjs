@@ -104,7 +104,7 @@ test("a glob scoped to a single, known-clean real file exits 0 with zero diagnos
   // shell's cwd) -- so an end-to-end fixture test scopes itself to one
   // real, already-known-clean file via a glob, rather than pointing the
   // binary at a synthetic tree outside the section it is built to check.
-  const result = runCli(["--json", "content/text/glossary/terms/ko.md"]);
+  const result = runCli(["--json", "content/text/documents/articles/notes/weiqi-platform-plan.md"]);
   assert.equal(result.status, 0, result.stderr);
   const parsed = JSON.parse(result.stdout);
   assert.equal(parsed.filesScanned, 1);

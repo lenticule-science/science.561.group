@@ -21,6 +21,16 @@ test("the public release contract binds Study Replay and the shared browser engi
   assert.deepEqual(release.channel.probes, WEIQI_PUBLIC_PROBES);
   assert.equal(release.target.receiver, "worker:weiqi-561-group");
   assert.equal(release.artifact.manifest.artifactCount, artifacts.size);
+  assert.deepEqual(
+    Object.fromEntries(release.channel.probes.map((probe) => [probe.id, probe.contentType])),
+    {
+      "browser-engine": "text/javascript",
+      home: "text/html",
+      play: "text/html",
+      "study-client": "text/javascript",
+      "study-replay": "text/html",
+    },
+  );
 
   const receipt = {
     kind: "public-release-receipt", version: 1, releaseDigest: release.digest,
@@ -35,6 +45,7 @@ test("the public release contract binds Study Replay and the shared browser engi
     observer: "external", origin: release.channel.canonicalOrigin, observedAt: "2026-09-10T01:00:00Z",
     probes: release.channel.probes.map((probe) => ({
       id: probe.id, status: probe.expectedStatus,
+      contentType: probe.contentType,
       digest: release.artifact.manifest.artifacts.find((artifact) => artifact.path === probe.artifactPath)?.digest,
     })),
   };

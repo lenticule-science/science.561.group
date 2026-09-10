@@ -31,9 +31,19 @@ const exerciseBox = document.getElementById("exercise-box");
 const nextLinks = document.getElementById("next-links");
 const boardPanel = document.getElementById("board-panel");
 
+// The lesson identifier is an authored curriculum choice, never an arbitrary
+// path supplied by the URL. This lets the one public Learn receiver carry
+// migrated lessons without reintroducing the legacy app's separate runtime.
+const LESSON_FILES = Object.freeze({
+  "weiqi-overview": "data/lesson-weiqi-overview.json",
+  "living-groups-and-eyes": "data/lesson-living-groups-and-eyes.json",
+});
+const requestedLesson = new URLSearchParams(location.search).get("lesson");
+const lessonFile = LESSON_FILES[requestedLesson] ?? LESSON_FILES["weiqi-overview"];
+
 const glossary = await loadGlossary();
 const hoverCard = new GlossaryHoverCard(glossary);
-const lesson = await (await fetch("data/lesson-weiqi-overview.json")).json();
+const lesson = await (await fetch(lessonFile)).json();
 
 document.getElementById("lesson-title").textContent = lesson.title;
 document.getElementById("lesson-audience").textContent = lesson.audience;

@@ -8,11 +8,11 @@ import {
 export const WEIQI_ORIGIN = "https://weiqi.561.group/";
 
 export const WEIQI_PUBLIC_PROBES = Object.freeze([
-  Object.freeze({ id: "browser-engine", method: "GET", path: "/js/kernel/index.mjs", expectedStatus: 200, artifactPath: "js/kernel/index.mjs" }),
-  Object.freeze({ id: "home", method: "GET", path: "/", expectedStatus: 200, artifactPath: "index.html" }),
-  Object.freeze({ id: "play", method: "GET", path: "/play.html", expectedStatus: 200, artifactPath: "play.html" }),
-  Object.freeze({ id: "study-client", method: "GET", path: "/js/review-app.mjs", expectedStatus: 200, artifactPath: "js/review-app.mjs" }),
-  Object.freeze({ id: "study-replay", method: "GET", path: "/review.html", expectedStatus: 200, artifactPath: "review.html" }),
+  Object.freeze({ id: "browser-engine", method: "GET", path: "/js/kernel/index.mjs", expectedStatus: 200, artifactPath: "js/kernel/index.mjs", contentType: "text/javascript" }),
+  Object.freeze({ id: "home", method: "GET", path: "/", expectedStatus: 200, artifactPath: "index.html", contentType: "text/html" }),
+  Object.freeze({ id: "play", method: "GET", path: "/play.html", expectedStatus: 200, artifactPath: "play.html", contentType: "text/html" }),
+  Object.freeze({ id: "study-client", method: "GET", path: "/js/review-app.mjs", expectedStatus: 200, artifactPath: "js/review-app.mjs", contentType: "text/javascript" }),
+  Object.freeze({ id: "study-replay", method: "GET", path: "/review.html", expectedStatus: 200, artifactPath: "review.html", contentType: "text/html" }),
 ]);
 
 export function releaseDigest(value) {

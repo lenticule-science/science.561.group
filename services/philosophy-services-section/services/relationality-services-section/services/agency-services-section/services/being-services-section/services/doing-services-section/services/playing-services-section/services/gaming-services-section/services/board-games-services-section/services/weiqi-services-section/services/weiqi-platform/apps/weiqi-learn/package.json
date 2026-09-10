@@ -15,6 +15,6 @@
     "node": ">=24"
   },
   "dependencies": {
-    "@red-cup-engineering/weiqi-engine": "0.1.0"
+    "@red-cup-engineering/weiqi-engine": "0.3.0"
   }
 }

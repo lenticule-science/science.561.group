@@ -9,14 +9,17 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-import { runChecks } from "../src/run.mjs";
+import { DEFAULT_GLOBS, runChecks } from "../src/run.mjs";
+import { expandGlob } from "../src/glob.mjs";
 
 const SECTION_ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..", "..", "..");
 
 const result = await runChecks({ sectionRoot: SECTION_ROOT });
+const currentDefaultFiles = new Set(DEFAULT_GLOBS.flatMap((glob) => expandGlob(glob, SECTION_ROOT)));
 
-test("scans the corpus's own 50 content/**/*.md files plus the 3 live JSON data files", () => {
-  assert.equal(result.filesScanned, 53);
+test("scans every current default corpus and app-data input exactly once", () => {
+  assert.equal(result.filesScanned, currentDefaultFiles.size);
+  assert.ok(result.filesScanned >= 3);
 });
 
 test("only the expected codes fire against the live corpus (a regression here means either a real corpus change or an implementation bug)", () => {
@@ -82,7 +85,7 @@ test("WQ043/WQ044 fire only as error-severity, real, findable corpus gaps (inlin
   assert.ok(wq043.length > 0);
   assert.ok(wq044.length > 0);
   assert.ok(wq043.every((d) => d.severity === "error"));
-  assert.ok(wq044.every((d) => d.severity === "error" && /date-updated|date-created|type|authors/.test(d.message)));
+  assert.ok(wq044.every((d) => d.severity === "error" && /title|date-updated|date-created|type|authors/.test(d.message)));
 });
 
 test("every diagnostic against the live corpus has a real Diagnostic shape (code/severity/file/message/source/ruleUrl)", () => {

@@ -13,3 +13,4 @@ export * from "./events.mjs";
 export { Game,                                      } from "./game.mjs";
 export * from "./scoring.mjs";
 export * from "./sgf.mjs";
+export * from "./session.mjs";
