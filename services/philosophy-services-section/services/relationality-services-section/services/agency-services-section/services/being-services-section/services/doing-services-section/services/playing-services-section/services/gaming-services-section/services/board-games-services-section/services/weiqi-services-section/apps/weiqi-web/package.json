@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@red-cup-engineering/education-platform-service": "0.2.5",
-    "@red-cup-engineering/weiqi-engine": "0.1.0"
+    "@red-cup-engineering/weiqi-engine": "0.2.0"
   },
   "devDependencies": {
     "wrangler": "4.123.0"

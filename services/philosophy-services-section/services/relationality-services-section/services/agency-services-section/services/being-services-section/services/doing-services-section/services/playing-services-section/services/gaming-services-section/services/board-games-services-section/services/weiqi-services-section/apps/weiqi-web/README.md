@@ -10,6 +10,10 @@ owner, per
 [`@red-cup-engineering/weiqi-engine`](../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-game-system-services-section/services/weiqi-engine/README.md); this app renders what the engine
 computes and never reimplements legality, scoring, or event recognition.
 
+The local game is an ordered, versioned engine session rather than page-owned
+mutable board state. Play can download that session as standard SGF, so a game
+started here has a portable record for replay or analysis elsewhere.
+
 Phase 1 shipped correctness (the complete Capture Go / lesson / glossary slice). A first Polish
 pass then shipped real stone presence and board texture, a misclick-resistant touch model with a
 magnified drag preview, synthesized sound, and a live concept-recognition toast strip. **This

@@ -23,6 +23,7 @@ const eventLog = document.getElementById("event-log");
 const newGameBtn = document.getElementById("new-game-btn");
 const passBtn = document.getElementById("pass-btn");
 const resignBtn = document.getElementById("resign-btn");
+const downloadSgfBtn = document.getElementById("download-sgf-btn");
 const botSelect = document.getElementById("bot-select");
 const soundToggleBtn = document.getElementById("sound-toggle-btn");
 const conceptTierSelect = document.getElementById("concept-tier-select");
@@ -58,7 +59,7 @@ for (const bot of BOT_TIERS) {
 }
 botSelect.value = "influence";
 
-let game = new kernel.Game(BOARD_SIZE, RULESET);
+let session = kernel.createWeiqiGameSession({ size: BOARD_SIZE, ruleset: RULESET });
 let botThinking = false;
 let finished = false;
 
@@ -101,10 +102,11 @@ function logEvent(ev, mover) {
 }
 
 function updateKoMarker() {
-  board.setKoPoint(game.activeKoPoint === null ? null : kernel.pointToCoord(game.size, game.activeKoPoint));
+  board.setKoPoint(session.state.activeKoPoint === null ? null : kernel.pointToCoord(session.config.size, session.state.activeKoPoint));
 }
 
 function render() {
+  const game = kernel.materializeWeiqiGame(session);
   board.setPosition(game.current.board, { toMove: game.current.toMove });
   board.setLegalityChecker((coord) => !finished && !botThinking && game.current.toMove === kernel.BLACK && game.isLegal(coord));
   passBtn.disabled = CAPTURE_GO || finished || botThinking || game.current.toMove !== kernel.BLACK;
@@ -115,6 +117,7 @@ function render() {
 
 function finishByScore() {
   finished = true;
+  const game = kernel.materializeWeiqiGame(session);
   const score = kernel.scoreArea(game.current, game.ruleset);
   resultEl.hidden = false;
   resultEl.textContent = `${score.margin}. Provisional Chinese area count: Black ${score.blackScore}, White ${score.whiteScore}. Dead stones are not adjudicated in this local match.`;
@@ -131,12 +134,15 @@ function finishByCapture(mover) {
 }
 
 function applyMove(coord) {
+  const game = kernel.materializeWeiqiGame(session);
   const mover = game.current.toMove;
-  const outcome = game.play(coord);
+  const command = coord === "pass" ? { kind: "pass" } : { kind: "play", move: coord };
+  const outcome = kernel.admitWeiqiGameCommand(session, session.version, command);
   if (!outcome.ok) {
     board.announce(`${coord} is not legal: ${outcome.reason}.`);
     return false;
   }
+  session = outcome.session;
   board.setLastMove(coord === "pass" ? null : coord);
   board.setAnnotations(outcome.events);
   updateKoMarker();
@@ -162,7 +168,7 @@ async function playBotTurn() {
   botThinking = true;
   render();
   await new Promise((resolve) => setTimeout(resolve, 260));
-  const move = selectedBot().chooser(game, kernel);
+  const move = selectedBot().chooser(kernel.materializeWeiqiGame(session), kernel);
   botThinking = false;
   applyMove(move);
 }
@@ -188,7 +194,7 @@ resignBtn.addEventListener("click", () => {
 });
 
 newGameBtn.addEventListener("click", () => {
-  game = new kernel.Game(BOARD_SIZE, RULESET);
+  session = kernel.createWeiqiGameSession({ size: BOARD_SIZE, ruleset: RULESET });
   botThinking = false;
   finished = false;
   eventLog.innerHTML = "";
@@ -200,6 +206,18 @@ newGameBtn.addEventListener("click", () => {
   render();
   board.announce(`New ${BOARD_SIZE} by ${BOARD_SIZE} ${CAPTURE_GO ? "Capture Go learning game" : "normal game"}. Black to move.`);
 });
+
+if (downloadSgfBtn) {
+  downloadSgfBtn.addEventListener("click", () => {
+    const sgf = kernel.gameRecordToSgf(kernel.weiqiSessionToSgfRecord(session));
+    const href = URL.createObjectURL(new Blob([sgf], { type: "application/x-go-sgf;charset=utf-8" }));
+    const link = document.createElement("a");
+    link.href = href;
+    link.download = `weiqi-${BOARD_SIZE}x${BOARD_SIZE}-v${session.version}.sgf`;
+    link.click();
+    setTimeout(() => URL.revokeObjectURL(href), 0);
+  });
+}
 
 soundToggleBtn.addEventListener("click", () => {
   const enabled = sound.toggle();
