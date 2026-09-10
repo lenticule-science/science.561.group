@@ -3,6 +3,19 @@
 All notable changes to `@lenticule-science/metrologic/bilattice` are documented here.
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Changed
+
+- `charge` no longer implements the Charge/FOUR bilattice. Every join, meet, involution and order is now `@lenticule-science/articulating/predicating/positing/bilattice-charge`'s — the one implementation, which enumerates and self-verifies its own bilattice laws (`chargeBilatticeLawReceipt`) and ties its Klein-four gauge to the Lean theorem `RelMath.KleinFour.K4.isGroup`. `charge.mjs` is now a representation binding only: side bit ⇄ `ChargeSide`, bare witness ⇄ mark payload. The public surface (`present`, `isTop`, `negate`, `conflate`, the four joins/meets, `leqKnowledge`, `compareKnowledge`, `aggregate`) and the `{ value, evidence }` shape are unchanged; 6041 differential comparisons against the superseded implementation, across every value pair and a battery of evidence carriers, agree exactly.
+- Evidence accumulation follows the owner's `mergeEvidence`, which merges by structural content coincidence rather than by `JSON.stringify`. Two readings change, both corrections: a carrier already holding a literal duplicate witness now collapses it (unreachable through this package's own API, which never produced such a carrier), and two objects differing only in key order now count as one witness (`coincides` is key-order insensitive, so coincidence survives a transport round trip).
+- `compareKnowledge`'s refusal is now the owner's `TypeError`, with the owner's message.
+
+### Removed
+
+- `internal.mjs`'s `union` — the local evidence-accumulation rule, superseded by the owner's `mergeEvidence`. `stringify` remains for structural keying in `descent`/`cone`/`void`.
+- The "zero dependencies" claim. The package now depends on `@lenticule-science/articulating`; the browser faces that vendor these sources must carry it too (see the section record `data/records/2026-09-10-metrologic-bilattice-charge-delegation.json`).
+
 ## [0.0.2] — unreleased
 
 ### Added

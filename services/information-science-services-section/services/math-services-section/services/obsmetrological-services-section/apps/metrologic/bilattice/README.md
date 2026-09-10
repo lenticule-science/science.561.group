@@ -1,8 +1,9 @@
 # @lenticule-science/metrologic/bilattice
 
-**The bilattice predication floor — the four-regime descent over a lossless evidence carrier, on zero dependencies.**
+**The bilattice predication floor — the four-regime descent over a lossless evidence carrier.**
 
 An utterance `[token, claim]` settles to a finite fixed point through `articulate → predicate → posit → settle`, and the bilattice supplies the charge value-operations — all as ordinary functions returning ordinary objects.
+The charge algebra itself is not defined here: `charge.mjs` binds this package's `{ value, evidence }` shape onto [`@lenticule-science/articulating/predicating/positing/bilattice-charge`](../../../../../../../semiotics-science-services-section/services/articulation-services-section/lib/articulating/predicating/positing/bilattice-charge.mts), the one implementation of Obsmetrologia's Charge/FOUR, which self-verifies its bilattice laws and ties its Klein-four gauge to the Lean theorem `RelMath.KleinFour.K4.isGroup`.
 Nothing is seeded: every cell's state is **measured** from what was given.
 `⊥` (absurd) is only ever *reached* (by the meet, under contradiction), never stamped; the evidence carrier only ever **grows** (knowledge never falls).
 

@@ -1,4 +1,5 @@
-// @lenticule-science/metrologic/bilattice — the bilattice predication floor, on zero dependencies.
+// @lenticule-science/metrologic/bilattice — the bilattice predication floor. Its charge algebra is
+// @lenticule-science/articulating/predicating/positing/bilattice-charge's; `charge.mjs` binds it.
 //
 // The barrel: the full public API. Narrower imports are available via subpaths —
 //   import { joinKnowledge } from "@lenticule-science/metrologic/bilattice/charge";
