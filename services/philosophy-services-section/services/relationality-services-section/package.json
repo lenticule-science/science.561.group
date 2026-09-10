@@ -4,8 +4,7 @@
   "description": "Portable science-owned Relationality schema carriers.",
   "type": "module",
   "license": "UNLICENSED",
-  "exports": {
-  },
+  "exports": {},
   "files": [
     "package.json"
   ],
