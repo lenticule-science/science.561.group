@@ -9,6 +9,7 @@ import * as kernel from "../public/js/kernel/index.mjs";
 import { chooseInfluenceMove } from "../public/js/bot.mjs";
 
 const playHtml = await readFile(new URL("../public/play.html", import.meta.url), "utf8");
+const captureGoHtml = await readFile(new URL("../public/learn/capture-go/index.html", import.meta.url), "utf8");
 const playApp = await readFile(new URL("../public/js/play-app.mjs", import.meta.url), "utf8");
 
 for (const requiredSurface of [
@@ -23,6 +24,24 @@ for (const requiredSurface of [
 assert.ok(!playHtml.includes("Capture Go"), "normal-play page still presents Capture Go");
 assert.ok(playApp.includes("You resigned. White wins."), "resignation result is not wired into the public app");
 assert.ok(playApp.includes("Provisional Chinese area count:"), "area-count result is not wired into the public app");
+
+for (const requiredSurface of [
+  "data-game-mode=\"capture-go\"",
+  "Capture Go",
+  "7&times;7 learning mode",
+  "id=\"pass-btn\" type=\"button\" disabled",
+  "src=\"../../js/play-app.mjs\"",
+]) {
+  assert.ok(captureGoHtml.includes(requiredSurface), `Capture Go page is missing ${requiredSurface}`);
+}
+assert.ok(!playHtml.includes("data-game-mode"), "normal play must not select a learning game mode");
+assert.ok(playApp.includes('const BOARD_SIZE = CAPTURE_GO ? 7 : 9;'), "page mode must select 7x7 only for Capture Go");
+assert.ok(playApp.includes('const RULESET = CAPTURE_GO ? "japanese" : "chinese";'), "page mode must retain Chinese rules for normal play");
+assert.ok(
+  playApp.includes('if (CAPTURE_GO && outcome.events.some((event) => event.type === "capture")) finishByCapture(mover);'),
+  "only Capture Go must finish on its first capture",
+);
+assert.ok(playApp.includes("made the first capture and wins this Capture Go learning game."), "Capture Go result is not wired into the public app");
 
 const replyGame = new kernel.Game(9, "chinese");
 assert.equal(replyGame.play("E5").ok, true, "the player opening must be legal");
@@ -40,6 +59,18 @@ for (const move of ["E4", "D4", "D3", "A1", "C4", "A2", "D5"]) {
 }
 assert.equal(captureGame.current.board[kernel.coordToPoint(9, 9, "D4")], kernel.EMPTY, "D4 must be captured");
 assert.equal(captureGame.mainPhaseEnded, false, "a capture must not end a normal match");
+
+const learningCaptureGame = new kernel.Game(7, "japanese");
+let learningCapture;
+for (const move of ["E4", "D4", "D3", "A1", "C4", "A2", "D5"]) {
+  learningCapture = learningCaptureGame.play(move);
+  assert.equal(learningCapture.ok, true, `${move} must be legal in Capture Go`);
+}
+assert.ok(
+  learningCapture.events.some((event) => event.type === "capture"),
+  "the Capture Go learning line must produce its first capture",
+);
+assert.equal(learningCaptureGame.mainPhaseEnded, false, "first-capture completion is a learning-mode UI outcome, not normal engine termination");
 
 const scoreGame = new kernel.Game(9, "chinese");
 assert.equal(scoreGame.play("C3").ok, true);
