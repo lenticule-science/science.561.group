@@ -63,11 +63,11 @@ Guix          -> realized profile, shell, or pack
 
 ## Relation to Pheží Ocháǧe
 
-A root `manifest.scm` should name the tools required to develop or operate the
-atlas—for example Guile and testing or encoding tools. It should not pretend to
-enumerate every document, service, person, or resource in Pheží Ocháǧe. Those
-belong to the atlas; the manifest selects the software environment used to work
-on it.
+A machine-owned `manifest.scm` should name the tools required to develop or
+operate that machine's atlas—for example Guile and testing or encoding tools.
+It should not pretend to enumerate every document, service, person, or resource
+in Pheží Ocháǧe. Those belong to the atlas; the manifest selects the software
+environment used to work on it.
 
 ## See also
 
