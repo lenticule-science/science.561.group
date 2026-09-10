@@ -1,9 +1,0 @@
-{
-  "name": "@lenticule-science/consumer-goods",
-  "version": "0.1.0",
-  "description": "Lenticule Science research supporting the 561 Group consumer-goods program.",
-  "type": "module",
-  "keywords": [
-    "science"
-  ]
-}
