@@ -3,13 +3,15 @@ import { readFile } from "node:fs/promises";
 import { resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
+import { activeWorkerVersion } from "./worker-deployments.mjs";
+
 const ROOT = fileURLToPath(new URL("..", import.meta.url));
-const baseline = await activeWorkerVersion();
+const baseline = await readActiveWorkerVersion();
 const revision = await command("git", ["rev-parse", "HEAD"]);
 const repository = await command("git", ["remote", "get-url", "origin"]);
 
 await command("npx", ["--no-install", "wrangler", "deploy"], { echo: true });
-const deployed = await activeWorkerVersion();
+const deployed = await readActiveWorkerVersion();
 if (deployed === baseline) throw new Error(`Cloudflare Worker version did not change from ${baseline}`);
 
 const status = await command(process.execPath, ["scripts/verify-public-release.mjs"], {
@@ -24,11 +26,9 @@ const status = await command(process.execPath, ["scripts/verify-public-release.m
 });
 if (!status) throw new Error("public receiver verification did not emit a receipt");
 
-async function activeWorkerVersion() {
+async function readActiveWorkerVersion() {
   const deployments = JSON.parse(await command("npx", ["--no-install", "wrangler", "deployments", "list", "--json"]));
-  const version = deployments[0]?.versions?.find(({ percentage }) => percentage === 100)?.version_id;
-  if (typeof version !== "string" || !version) throw new Error("Cloudflare did not report an active Worker version");
-  return version;
+  return activeWorkerVersion(deployments);
 }
 
 function command(executable, args, { echo = false, env = process.env } = {}) {
