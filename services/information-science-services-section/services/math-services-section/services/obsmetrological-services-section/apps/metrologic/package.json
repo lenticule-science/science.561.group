@@ -189,6 +189,9 @@
     "README.md"
   ],
   "sideEffects": false,
+  "dependencies": {
+    "@lenticule-science/articulating": "0.4.2"
+  },
   "scripts": {
     "test": "node --test"
   }

@@ -2,7 +2,7 @@
 
 import { createInterface } from "node:readline";
 import { createGeodeAuthoring } from "@red-cup-engineering/geode/vault-authoring";
-import { drewMcpTools } from "@red-cup-engineering/drew/mcp";
+import { relationWebMcpTools } from "@red-cup-engineering/geode/concept-index";
 import { lSpaceConfig } from "../src/index.mjs";
 import { glossaryProvenanceOf, observeLSpaceRelease, traverseLSpaceRoom } from "../src/release-observation.mjs";
 
@@ -107,7 +107,7 @@ export const tools = Object.freeze([
     }), additionalProperties: false }),
   }),
   ...lSpaceGraphTools,
-  ...drewMcpTools,
+  ...relationWebMcpTools,
 ]);
 
 function toolResult(value) {
@@ -145,7 +145,7 @@ export async function callTool(name, input = {}) {
   }
   if (name === "query_l_space_feltos_entity") return authoring.feltosEntity(input.term, { predicate: input.predicate, direction: input.direction ?? "both", limit: input.limit ?? 100 });
   if (name === "observe_l_space_feltos_diagnostics") return authoring.feltosDiagnostics({ limit: input.limit ?? 100 });
-  if (drewMcpTools.some((tool) => tool.name === name)) return authoring.callGraphTool(name, input);
+  if (relationWebMcpTools.some((tool) => tool.name === name)) return authoring.callGraphTool(name, input);
   throw new TypeError(`unknown L-Space MCP operation ${name}`);
 }
 
