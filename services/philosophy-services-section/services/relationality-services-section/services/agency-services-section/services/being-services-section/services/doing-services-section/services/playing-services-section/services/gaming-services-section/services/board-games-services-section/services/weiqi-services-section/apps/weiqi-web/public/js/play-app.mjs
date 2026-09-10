@@ -1,4 +1,5 @@
-// Page glue for a normal 9x9 game against a local heuristic opponent.
+// Page glue for the normal 9x9 game and its separate Capture Go learning
+// route. Both only present decisions made by the generated Weiqi engine.
 // Rules, scoring, ko, and semantic events come only from the generated
 // Weiqi engine. This module owns browser effects and presentation.
 
@@ -9,8 +10,9 @@ import { BOT_TIERS } from "./bot.mjs";
 import { WeiqiSound } from "./sound.mjs";
 import { ConceptToastStrip } from "./concept-toast.mjs";
 
-const BOARD_SIZE = 9;
-const RULESET = "chinese";
+const CAPTURE_GO = document.body.dataset.gameMode === "capture-go";
+const BOARD_SIZE = CAPTURE_GO ? 7 : 9;
+const RULESET = CAPTURE_GO ? "japanese" : "chinese";
 const TOUCH_MODE_KEY = "weiqi-touch-mode";
 
 const boardHost = document.getElementById("board-host");
@@ -105,7 +107,7 @@ function updateKoMarker() {
 function render() {
   board.setPosition(game.current.board, { toMove: game.current.toMove });
   board.setLegalityChecker((coord) => !finished && !botThinking && game.current.toMove === kernel.BLACK && game.isLegal(coord));
-  passBtn.disabled = finished || botThinking || game.current.toMove !== kernel.BLACK;
+  passBtn.disabled = CAPTURE_GO || finished || botThinking || game.current.toMove !== kernel.BLACK;
   resignBtn.disabled = finished || botThinking;
   botSelect.disabled = game.history.length > 1 && !finished;
   if (!finished) setStatus(`${playerLabel(game.current.toMove)} to move.${botThinking ? " (AI is thinking…)" : ""}`);
@@ -116,6 +118,14 @@ function finishByScore() {
   const score = kernel.scoreArea(game.current, game.ruleset);
   resultEl.hidden = false;
   resultEl.textContent = `${score.margin}. Provisional Chinese area count: Black ${score.blackScore}, White ${score.whiteScore}. Dead stones are not adjudicated in this local match.`;
+  sound.playGameEnd();
+  board.announce(resultEl.textContent);
+}
+
+function finishByCapture(mover) {
+  finished = true;
+  resultEl.hidden = false;
+  resultEl.textContent = `${playerLabel(mover)} made the first capture and wins this Capture Go learning game.`;
   sound.playGameEnd();
   board.announce(resultEl.textContent);
 }
@@ -141,7 +151,8 @@ function applyMove(coord) {
     if (ev.type === "atari-given") sound.playAtari();
   }
   board.announce(`${playerLabel(mover)} played ${coord}.`);
-  if (game.mainPhaseEnded) finishByScore();
+  if (CAPTURE_GO && outcome.events.some((event) => event.type === "capture")) finishByCapture(mover);
+  else if (game.mainPhaseEnded) finishByScore();
   render();
   return true;
 }
@@ -162,6 +173,7 @@ board.addEventListener("weiqi-move", async (event) => {
 });
 
 passBtn.addEventListener("click", async () => {
+  if (CAPTURE_GO) return;
   if (finished || botThinking || game.current.toMove !== kernel.BLACK) return;
   if (applyMove("pass") && !finished) await playBotTurn();
 });
@@ -186,7 +198,7 @@ newGameBtn.addEventListener("click", () => {
   board.setAnnotations([]);
   updateKoMarker();
   render();
-  board.announce("New 9 by 9 game. Black to move.");
+  board.announce(`New ${BOARD_SIZE} by ${BOARD_SIZE} ${CAPTURE_GO ? "Capture Go learning game" : "normal game"}. Black to move.`);
 });
 
 soundToggleBtn.addEventListener("click", () => {
