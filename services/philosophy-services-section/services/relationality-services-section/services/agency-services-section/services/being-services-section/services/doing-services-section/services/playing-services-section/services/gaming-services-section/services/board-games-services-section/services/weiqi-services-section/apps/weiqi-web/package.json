@@ -2,7 +2,7 @@
   "name": "@lenticule-science/weiqi-web",
   "version": "0.1.0",
   "type": "module",
-  "description": "Education-first MVP web face for weiqi-services-section: Play (Capture Go vs. a scripted bot), Learn (interactive lesson player), Read (compiled glossary) -- static, client-side, built on the exact-pinned @lenticule-science/weiqi-kernel.",
+  "description": "Static web face for a normal 9x9 Weiqi match, lessons, and glossary reading, built on the exact-pinned shared Weiqi engine.",
   "license": "UNLICENSED",
   "scripts": {
     "build": "node scripts/build-kernel.mjs && node scripts/build-glossary.mjs",
@@ -13,7 +13,7 @@
     "dev": "wrangler dev"
   },
   "dependencies": {
-    "@lenticule-science/weiqi-kernel": "0.3.1"
+    "@red-cup-engineering/weiqi-engine": "0.1.0"
   },
   "devDependencies": {
     "wrangler": "4.123.0"

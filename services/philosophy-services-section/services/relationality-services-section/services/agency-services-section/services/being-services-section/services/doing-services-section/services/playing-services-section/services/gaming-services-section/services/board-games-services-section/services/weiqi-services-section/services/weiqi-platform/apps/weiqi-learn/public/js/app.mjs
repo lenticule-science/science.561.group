@@ -97,7 +97,7 @@ const EVENT_LABELS = {
  * The event feed's own compact phrasing for one move's outcome.events —
  * the mechanism the plan calls "glossary-linked play": every phrase's
  * `term` is the kernel's own SemanticEvent.term, exactly as annotated
- * (see apps/weiqi-kernel/src/events.mts), not a locally-guessed mapping.
+ * (see weiqi-engine/src/events.mts), not a locally-guessed mapping.
  */
 function notableEventPhrases(events) {
   const out = [];

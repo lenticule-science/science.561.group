@@ -21,7 +21,7 @@ import {
   TOASTABLE_EVENT_TYPES,
 } from "../public/js/concept-tiers.mjs";
 
-// The kernel's own SemanticEventType union (apps/weiqi-kernel/src/events.mts)
+// The engine's own SemanticEventType union (weiqi-engine/src/events.mts)
 // -- kept as a literal list here (not imported) so this test fails loudly
 // if the kernel ever adds an event type this module hasn't made a
 // deliberate toast/no-toast decision about, rather than silently passing.

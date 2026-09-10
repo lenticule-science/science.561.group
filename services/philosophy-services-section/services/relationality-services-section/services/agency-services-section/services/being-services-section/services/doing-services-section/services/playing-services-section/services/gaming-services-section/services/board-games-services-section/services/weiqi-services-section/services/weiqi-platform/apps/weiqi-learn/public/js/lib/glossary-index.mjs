@@ -8,7 +8,7 @@
  * @property {string} title - display form, e.g. "life and death"
  * @property {string} definition
  * @property {string[]} related - names of other terms
- * @property {string} path - section-relative path, matching a kernel
+ * @property {string} path - portable science identifier, matching an engine
  *   SemanticEvent's `termRef` field exactly (see events.mts TERM_PATH).
  */
 

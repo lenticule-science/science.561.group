@@ -1,13 +1,13 @@
 # weiqi-web
 
-`@lenticule-science/weiqi-web` — the web face for `weiqi-services-section`: **Play** (a four-rung
-Capture Go onboarding ladder against a bot that gets smarter each rung), **Tsumego** (a graded,
+`@lenticule-science/weiqi-web` — the web face for `weiqi-services-section`: **Play** (a normal 9x9
+game against a local heuristic AI), **Tsumego** (a graded,
 kernel-verified problem trainer with spaced-repetition review), **Learn** (an interactive lesson
 player), **Read** (the compiled glossary). Static and client-side, with one exact-pinned rules
 owner, per
 [the Weiqi Platform Plan](../../content/text/documents/articles/notes/weiqi-platform-plan.md) —
 "no accounts, no server state, deployable exactly like 561.group." All rules authority stays with
-[`@lenticule-science/weiqi-kernel`](../weiqi-kernel/README.md); this app renders what the kernel
+[`@red-cup-engineering/weiqi-engine`](../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-game-system-services-section/services/weiqi-engine/README.md); this app renders what the engine
 computes and never reimplements legality, scoring, or event recognition.
 
 Phase 1 shipped correctness (the complete Capture Go / lesson / glossary slice). A first Polish
@@ -469,9 +469,8 @@ task's own instruction — not before.
 
 ## Test counts
 
-- `apps/weiqi-kernel`: **71/71** passing, unaffected by this app (re-run fresh as part of this
-  build; the kernel is a READ-ONLY dependency of this app — this app only imports it, never edits
-  it, and this build did not touch a single kernel file).
+- `@red-cup-engineering/weiqi-engine`: the exact-pinned rules and replay dependency; this app
+  imports it but does not duplicate legality, scoring, or event recognition.
 - `apps/weiqi-web`: **168/168** passing (`npm test` — `check-mts.mjs` against every
   `test/*.test.mts` file, then `node --test 'test/*.test.mts'`, ~15–20s, dominated by the 800
   seeded self-play games in `bot-ladder.test.mts`):

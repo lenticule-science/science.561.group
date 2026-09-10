@@ -8,7 +8,8 @@
       "sente",
       "honte"
     ],
-    "path": "../../content/text/glossary/terms/aji.md"
+    "path": "science://lenticule-science/weiqi/terms/aji",
+    "sourcePath": "content/text/glossary/terms/aji.md"
   },
   {
     "name": "aji-keshi",
@@ -19,7 +20,8 @@
       "gote",
       "honte"
     ],
-    "path": "../../content/text/glossary/terms/aji-keshi.md"
+    "path": "science://lenticule-science/weiqi/terms/aji-keshi",
+    "sourcePath": "content/text/glossary/terms/aji-keshi.md"
   },
   {
     "name": "area-scoring",
@@ -32,7 +34,8 @@
       "dead-stones",
       "pass"
     ],
-    "path": "../../content/text/glossary/terms/area-scoring.md"
+    "path": "science://lenticule-science/weiqi/terms/area-scoring",
+    "sourcePath": "content/text/glossary/terms/area-scoring.md"
   },
   {
     "name": "atari",
@@ -43,7 +46,8 @@
       "capture",
       "connection"
     ],
-    "path": "../../content/text/glossary/terms/atari.md"
+    "path": "science://lenticule-science/weiqi/terms/atari",
+    "sourcePath": "content/text/glossary/terms/atari.md"
   },
   {
     "name": "capture",
@@ -56,7 +60,8 @@
       "territory",
       "ko"
     ],
-    "path": "../../content/text/glossary/terms/capture.md"
+    "path": "science://lenticule-science/weiqi/terms/capture",
+    "sourcePath": "content/text/glossary/terms/capture.md"
   },
   {
     "name": "connection",
@@ -67,7 +72,8 @@
       "eye",
       "life-and-death"
     ],
-    "path": "../../content/text/glossary/terms/connection.md"
+    "path": "science://lenticule-science/weiqi/terms/connection",
+    "sourcePath": "content/text/glossary/terms/connection.md"
   },
   {
     "name": "dame",
@@ -79,7 +85,8 @@
       "komi",
       "capture"
     ],
-    "path": "../../content/text/glossary/terms/dame.md"
+    "path": "science://lenticule-science/weiqi/terms/dame",
+    "sourcePath": "content/text/glossary/terms/dame.md"
   },
   {
     "name": "dango",
@@ -91,7 +98,8 @@
       "keima",
       "sabaki"
     ],
-    "path": "../../content/text/glossary/terms/dango.md"
+    "path": "science://lenticule-science/weiqi/terms/dango",
+    "sourcePath": "content/text/glossary/terms/dango.md"
   },
   {
     "name": "dead-stones",
@@ -104,7 +112,8 @@
       "area-scoring",
       "territory-scoring"
     ],
-    "path": "../../content/text/glossary/terms/dead-stones.md"
+    "path": "science://lenticule-science/weiqi/terms/dead-stones",
+    "sourcePath": "content/text/glossary/terms/dead-stones.md"
   },
   {
     "name": "eye",
@@ -115,7 +124,8 @@
       "connection",
       "life-and-death"
     ],
-    "path": "../../content/text/glossary/terms/eye.md"
+    "path": "science://lenticule-science/weiqi/terms/eye",
+    "sourcePath": "content/text/glossary/terms/eye.md"
   },
   {
     "name": "false-eye",
@@ -127,7 +137,8 @@
       "connection",
       "liberty"
     ],
-    "path": "../../content/text/glossary/terms/false-eye.md"
+    "path": "science://lenticule-science/weiqi/terms/false-eye",
+    "sourcePath": "content/text/glossary/terms/false-eye.md"
   },
   {
     "name": "fuseki",
@@ -138,7 +149,8 @@
       "influence",
       "thickness"
     ],
-    "path": "../../content/text/glossary/terms/fuseki.md"
+    "path": "science://lenticule-science/weiqi/terms/fuseki",
+    "sourcePath": "content/text/glossary/terms/fuseki.md"
   },
   {
     "name": "geta",
@@ -149,7 +161,8 @@
       "atari",
       "liberty"
     ],
-    "path": "../../content/text/glossary/terms/geta.md"
+    "path": "science://lenticule-science/weiqi/terms/geta",
+    "sourcePath": "content/text/glossary/terms/geta.md"
   },
   {
     "name": "gote",
@@ -160,7 +173,8 @@
       "miai",
       "aji-keshi"
     ],
-    "path": "../../content/text/glossary/terms/gote.md"
+    "path": "science://lenticule-science/weiqi/terms/gote",
+    "sourcePath": "content/text/glossary/terms/gote.md"
   },
   {
     "name": "handicap",
@@ -171,7 +185,8 @@
       "territory",
       "connection"
     ],
-    "path": "../../content/text/glossary/terms/handicap.md"
+    "path": "science://lenticule-science/weiqi/terms/handicap",
+    "sourcePath": "content/text/glossary/terms/handicap.md"
   },
   {
     "name": "honte",
@@ -182,7 +197,8 @@
       "aji-keshi",
       "sabaki"
     ],
-    "path": "../../content/text/glossary/terms/honte.md"
+    "path": "science://lenticule-science/weiqi/terms/honte",
+    "sourcePath": "content/text/glossary/terms/honte.md"
   },
   {
     "name": "hoshi",
@@ -193,7 +209,8 @@
       "komi",
       "territory"
     ],
-    "path": "../../content/text/glossary/terms/hoshi.md"
+    "path": "science://lenticule-science/weiqi/terms/hoshi",
+    "sourcePath": "content/text/glossary/terms/hoshi.md"
   },
   {
     "name": "influence",
@@ -205,7 +222,8 @@
       "fuseki",
       "joseki"
     ],
-    "path": "../../content/text/glossary/terms/influence.md"
+    "path": "science://lenticule-science/weiqi/terms/influence",
+    "sourcePath": "content/text/glossary/terms/influence.md"
   },
   {
     "name": "joseki",
@@ -216,7 +234,8 @@
       "influence",
       "miai"
     ],
-    "path": "../../content/text/glossary/terms/joseki.md"
+    "path": "science://lenticule-science/weiqi/terms/joseki",
+    "sourcePath": "content/text/glossary/terms/joseki.md"
   },
   {
     "name": "keima",
@@ -226,7 +245,8 @@
       "tobi",
       "sabaki"
     ],
-    "path": "../../content/text/glossary/terms/keima.md"
+    "path": "science://lenticule-science/weiqi/terms/keima",
+    "sourcePath": "content/text/glossary/terms/keima.md"
   },
   {
     "name": "kikashi",
@@ -237,7 +257,8 @@
       "aji-keshi",
       "sute-ishi"
     ],
-    "path": "../../content/text/glossary/terms/kikashi.md"
+    "path": "science://lenticule-science/weiqi/terms/kikashi",
+    "sourcePath": "content/text/glossary/terms/kikashi.md"
   },
   {
     "name": "ko",
@@ -250,7 +271,8 @@
       "atari",
       "territory"
     ],
-    "path": "../../content/text/glossary/terms/ko.md"
+    "path": "science://lenticule-science/weiqi/terms/ko",
+    "sourcePath": "content/text/glossary/terms/ko.md"
   },
   {
     "name": "komi",
@@ -261,7 +283,8 @@
       "capture",
       "handicap"
     ],
-    "path": "../../content/text/glossary/terms/komi.md"
+    "path": "science://lenticule-science/weiqi/terms/komi",
+    "sourcePath": "content/text/glossary/terms/komi.md"
   },
   {
     "name": "liberty",
@@ -274,7 +297,8 @@
       "territory",
       "ko"
     ],
-    "path": "../../content/text/glossary/terms/liberty.md"
+    "path": "science://lenticule-science/weiqi/terms/liberty",
+    "sourcePath": "content/text/glossary/terms/liberty.md"
   },
   {
     "name": "life-and-death",
@@ -285,7 +309,8 @@
       "connection",
       "atari"
     ],
-    "path": "../../content/text/glossary/terms/life-and-death.md"
+    "path": "science://lenticule-science/weiqi/terms/life-and-death",
+    "sourcePath": "content/text/glossary/terms/life-and-death.md"
   },
   {
     "name": "miai",
@@ -296,7 +321,8 @@
       "gote",
       "joseki"
     ],
-    "path": "../../content/text/glossary/terms/miai.md"
+    "path": "science://lenticule-science/weiqi/terms/miai",
+    "sourcePath": "content/text/glossary/terms/miai.md"
   },
   {
     "name": "moyo",
@@ -307,7 +333,8 @@
       "territory",
       "thickness"
     ],
-    "path": "../../content/text/glossary/terms/moyo.md"
+    "path": "science://lenticule-science/weiqi/terms/moyo",
+    "sourcePath": "content/text/glossary/terms/moyo.md"
   },
   {
     "name": "pass",
@@ -319,7 +346,8 @@
       "territory-scoring",
       "seki"
     ],
-    "path": "../../content/text/glossary/terms/pass.md"
+    "path": "science://lenticule-science/weiqi/terms/pass",
+    "sourcePath": "content/text/glossary/terms/pass.md"
   },
   {
     "name": "sabaki",
@@ -330,7 +358,8 @@
       "influence",
       "honte"
     ],
-    "path": "../../content/text/glossary/terms/sabaki.md"
+    "path": "science://lenticule-science/weiqi/terms/sabaki",
+    "sourcePath": "content/text/glossary/terms/sabaki.md"
   },
   {
     "name": "seki",
@@ -343,7 +372,8 @@
       "area-scoring",
       "territory-scoring"
     ],
-    "path": "../../content/text/glossary/terms/seki.md"
+    "path": "science://lenticule-science/weiqi/terms/seki",
+    "sourcePath": "content/text/glossary/terms/seki.md"
   },
   {
     "name": "semeai",
@@ -354,7 +384,8 @@
       "atari",
       "life-and-death"
     ],
-    "path": "../../content/text/glossary/terms/semeai.md"
+    "path": "science://lenticule-science/weiqi/terms/semeai",
+    "sourcePath": "content/text/glossary/terms/semeai.md"
   },
   {
     "name": "sente",
@@ -366,7 +397,8 @@
       "honte",
       "aji"
     ],
-    "path": "../../content/text/glossary/terms/sente.md"
+    "path": "science://lenticule-science/weiqi/terms/sente",
+    "sourcePath": "content/text/glossary/terms/sente.md"
   },
   {
     "name": "suicide",
@@ -378,7 +410,8 @@
       "eye",
       "ko"
     ],
-    "path": "../../content/text/glossary/terms/suicide.md"
+    "path": "science://lenticule-science/weiqi/terms/suicide",
+    "sourcePath": "content/text/glossary/terms/suicide.md"
   },
   {
     "name": "superko",
@@ -390,7 +423,8 @@
       "liberty",
       "seki"
     ],
-    "path": "../../content/text/glossary/terms/superko.md"
+    "path": "science://lenticule-science/weiqi/terms/superko",
+    "sourcePath": "content/text/glossary/terms/superko.md"
   },
   {
     "name": "sute-ishi",
@@ -401,7 +435,8 @@
       "aji",
       "sente"
     ],
-    "path": "../../content/text/glossary/terms/sute-ishi.md"
+    "path": "science://lenticule-science/weiqi/terms/sute-ishi",
+    "sourcePath": "content/text/glossary/terms/sute-ishi.md"
   },
   {
     "name": "territory",
@@ -413,7 +448,8 @@
       "komi",
       "ko"
     ],
-    "path": "../../content/text/glossary/terms/territory.md"
+    "path": "science://lenticule-science/weiqi/terms/territory",
+    "sourcePath": "content/text/glossary/terms/territory.md"
   },
   {
     "name": "territory-scoring",
@@ -426,7 +462,8 @@
       "dead-stones",
       "capture"
     ],
-    "path": "../../content/text/glossary/terms/territory-scoring.md"
+    "path": "science://lenticule-science/weiqi/terms/territory-scoring",
+    "sourcePath": "content/text/glossary/terms/territory-scoring.md"
   },
   {
     "name": "thickness",
@@ -438,7 +475,8 @@
       "sabaki",
       "territory"
     ],
-    "path": "../../content/text/glossary/terms/thickness.md"
+    "path": "science://lenticule-science/weiqi/terms/thickness",
+    "sourcePath": "content/text/glossary/terms/thickness.md"
   },
   {
     "name": "tobi",
@@ -449,7 +487,8 @@
       "sabaki",
       "dango"
     ],
-    "path": "../../content/text/glossary/terms/tobi.md"
+    "path": "science://lenticule-science/weiqi/terms/tobi",
+    "sourcePath": "content/text/glossary/terms/tobi.md"
   },
   {
     "name": "zenkyoku",
@@ -460,6 +499,7 @@
       "miai",
       "sabaki"
     ],
-    "path": "../../content/text/glossary/terms/zenkyoku.md"
+    "path": "science://lenticule-science/weiqi/terms/zenkyoku",
+    "sourcePath": "content/text/glossary/terms/zenkyoku.md"
   }
 ]

@@ -1,4 +1,4 @@
-// Bridges the pure weiqi-kernel Game to what this app needs and the
+// Bridges the pure Weiqi engine Game to what this app needs and the
 // kernel deliberately does not provide (see the kernel's own doctrine:
 // Game.isLegal() is legal-or-not only, and there is no capture-go
 // ruleset — capture-go is a teaching *session* shape, not a rules

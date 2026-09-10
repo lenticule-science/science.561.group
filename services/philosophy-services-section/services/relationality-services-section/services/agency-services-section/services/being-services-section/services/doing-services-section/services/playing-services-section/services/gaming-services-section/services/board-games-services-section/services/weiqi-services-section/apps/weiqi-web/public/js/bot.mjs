@@ -1,4 +1,4 @@
-// The scripted bot ladder for the capture-go onboarding ladder
+// The scripted local Weiqi opponents.
 // (weiqi-platform-plan.md, "Engines and AI": "scripted weak bots first
 // (random-legal, greedy-capture, simple-heuristic)"). Four tiers now live
 // here, in ascending order: random-legal ("Wandering"), greedy-capture
@@ -16,13 +16,6 @@
 // logic. All legality is delegated to `game.isLegal` / `game.play`; this
 // module only *chooses* among moves the kernel has already certified legal.
 //
-// Capture-go's win condition ("first capture wins," per the plan's
-// onboarding ladder) is not a kernel ruleset -- the kernel's declared
-// RULESETS table has none, and rightly so: it is a scoring-free house rule
-// layered on top of the kernel's ordinary event vocabulary, not a new
-// rules capability. `wasCaptureMove` below is that one-line detector,
-// reading only the `capture` events the kernel's own annotator already
-// emits.
 
 /**
  * Every empty point's Go-notation coordinate on `game`'s board, in
@@ -79,12 +72,6 @@ export function chooseRandomLegalMove(game, kernel, rng = Math.random) {
   const legal = legalMoveCoords(game, kernel);
   if (legal.length === 0) return "pass";
   return legal[Math.floor(rng() * legal.length)];
-}
-
-/** True when `events` (a PlayOutcome's `.events`) includes at least one
- * `capture` event -- capture-go's entire win condition. */
-export function wasCaptureMove(events) {
-  return events.some((e) => e.type === "capture");
 }
 
 // -------------------------------------------------------------------------

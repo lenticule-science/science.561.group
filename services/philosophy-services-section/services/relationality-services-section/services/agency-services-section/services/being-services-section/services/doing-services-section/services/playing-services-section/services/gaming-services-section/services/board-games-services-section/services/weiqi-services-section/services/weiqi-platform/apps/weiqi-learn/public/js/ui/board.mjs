@@ -16,7 +16,7 @@
 //
 // Coordinates: points are the kernel's "A1"-style strings — column letters
 // A-T skipping "I", row numbers 1-indexed. The kernel numbers rows
-// top-to-bottom starting at 1 (see apps/weiqi-kernel/src/board.mts and
+// top-to-bottom starting at 1 (see weiqi-engine/src/board.mts and
 // content/.../notes/regression-positions.md, which that internal
 // convention is drawn from directly). This component displays the
 // Go-standard orientation instead, row 1 at the BOTTOM, so every point is

@@ -10,13 +10,10 @@ import { readFileSync, existsSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
-import { coordToPoint, TERM_PATH } from "@lenticule-science/weiqi-kernel";
+import { coordToPoint, TERM_PATH } from "@red-cup-engineering/weiqi-engine";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const appRoot = path.resolve(here, "..");
-// TERM_PATH is documented as relative to apps/weiqi-kernel. Its leading
-// ../../ therefore lands at this section's root, which this app can name
-// without reaching into the kernel package's implementation files.
 const sectionRoot = path.resolve(appRoot, "../../../..");
 
 const glossary = JSON.parse(readFileSync(path.resolve(appRoot, "public/data/glossary.json"), "utf8"));
@@ -32,6 +29,7 @@ test("glossary.json parses to a non-empty array of terms", () => {
     assert.ok(term.definition.length > 0);
     assert.ok(Array.isArray(term.related));
     assert.equal(typeof term.path, "string");
+    assert.equal(typeof term.sourcePath, "string");
   }
 });
 
@@ -49,14 +47,14 @@ test("every glossary related name refers to a term that exists", () => {
   }
 });
 
-test("every glossary term's path resolves to a real file on disk", () => {
+test("every glossary term's sourcePath resolves to a real file on disk", () => {
   for (const term of glossary) {
-    const resolved = path.resolve(sectionRoot, term.path.replace(/^\.\.\/\.\.\//, ""));
-    assert.ok(existsSync(resolved), `"${term.name}" path "${term.path}" does not resolve to a file`);
+    const resolved = path.resolve(sectionRoot, term.sourcePath);
+    assert.ok(existsSync(resolved), `"${term.name}" sourcePath "${term.sourcePath}" does not resolve to a file`);
   }
 });
 
-test("glossary path matches the kernel's own TERM_PATH for every term the kernel annotates events with", () => {
+test("glossary identity matches the engine's TERM_PATH for every term the engine annotates", () => {
   const byName = new Map(glossary.map((t) => [t.name, t]));
   for (const [slug, termPath] of Object.entries(TERM_PATH)) {
     const term = byName.get(slug);

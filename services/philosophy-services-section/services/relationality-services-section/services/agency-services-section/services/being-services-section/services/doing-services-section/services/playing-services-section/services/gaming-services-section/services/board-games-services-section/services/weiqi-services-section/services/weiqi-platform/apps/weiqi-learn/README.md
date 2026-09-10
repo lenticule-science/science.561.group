@@ -2,7 +2,7 @@
 
 `@lenticule-science/weiqi-learn` — the Weiqi Platform's admitted Learn face: an interactive,
 entirely client-side curriculum (board, tutorial, tsumego player, glossary hover-cards) built
-on the exact-pinned pure [`weiqi-kernel`](../../../../apps/weiqi-kernel) and this section's own corpus. No
+on the exact-pinned pure `@red-cup-engineering/weiqi-engine` and this section's own corpus. No
 accounts, no server state, no network operator at all — see the
 [Weiqi Learn Constitution](../../../../content/text/documents/articles/notes/weiqi-learn-constitution.md)
 for the full purpose/authority/refusal-conditions record.

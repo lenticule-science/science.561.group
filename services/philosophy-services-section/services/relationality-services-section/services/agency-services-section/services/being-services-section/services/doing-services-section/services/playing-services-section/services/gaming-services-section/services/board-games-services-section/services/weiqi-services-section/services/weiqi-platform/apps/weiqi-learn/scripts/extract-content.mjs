@@ -23,14 +23,12 @@ const sectionRoot = path.resolve(appRoot, "../../../../");
 const glossaryDir = path.resolve(sectionRoot, "content/text/glossary/terms");
 const outPath = path.resolve(appRoot, "public/data/glossary.json");
 
-// The path this script writes for every term must read identically to
-// TERM_PATH in apps/weiqi-kernel/src/events.mts, so a UI can look up a
-// semantic event's termRef straight against this field. That file only
-// lists the seven terms the kernel currently annotates moves with, but its
-// path *shape* — relative from a source file one section-level down from
-// content/ — is what every term here must match, not just those seven.
+// The public identifier must read identically to TERM_PATH in weiqi-engine,
+// so a UI can look up a semantic event's termRef straight against this
+// field. Source locations stay separate: an implementation path is not a
+// portable identity for a science term.
 function termRefPath(slug) {
-  return `../../content/text/glossary/terms/${slug}.md`;
+  return `science://lenticule-science/weiqi/terms/${slug}`;
 }
 
 function stripQuotes(s) {
@@ -105,6 +103,7 @@ async function extractTerm(fileName) {
     definition: firstParagraph(body),
     related: relatedNames(body),
     path: termRefPath(slug),
+    sourcePath: `content/text/glossary/terms/${fileName}`,
   };
 }
 

@@ -4,7 +4,7 @@
 
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import * as kernel from "@lenticule-science/weiqi-kernel";
+import * as kernel from "@red-cup-engineering/weiqi-engine";
 import { createSessionFactory } from "../public/js/lib/kernel-bridge.mjs";
 import { randomBot, greedyCaptureBot } from "../public/js/lib/bots.mjs";
 
@@ -43,7 +43,7 @@ test("randomBot and greedyCaptureBot both return a move session.legalMoves() act
 //
 // A plain linear congruential generator (Numerical Recipes' constants),
 // deterministic given its seed — any failure below reproduces exactly from
-// the printed seed. Mirrors the pattern weiqi-kernel/test/properties.test.mts
+// the printed seed. Mirrors the pattern weiqi-engine/test/properties.test.mts
 // uses for its own self-play fuzzing.
 
 function makeLcg(seed) {

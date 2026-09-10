@@ -8,7 +8,7 @@
 
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import * as kernel from "@lenticule-science/weiqi-kernel";
+import * as kernel from "@red-cup-engineering/weiqi-engine";
 import { createSessionFactory } from "../public/js/lib/kernel-bridge.mjs";
 
 const createSession = createSessionFactory(kernel);
@@ -17,7 +17,7 @@ const createSession = createSessionFactory(kernel);
 // one liberty per ply (White plays elsewhere each time, so it never
 // contests), then takes the last liberty on the 7th ply — the ply-by-ply
 // events are pinned against a direct kernel.Game run in the sibling
-// weiqi-kernel test suite's style (see properties.test.mts) before being
+// Weiqi engine test suite's style (see properties.test.mts) before being
 // relied on here.
 const SETUP_MOVES = ["B3", "C3", "D3", "A1", "C2", "A2"]; // 6 plies; Black to move next
 const CAPTURING_MOVE = "C4"; // Black's 7th ply: fills C3's last liberty
