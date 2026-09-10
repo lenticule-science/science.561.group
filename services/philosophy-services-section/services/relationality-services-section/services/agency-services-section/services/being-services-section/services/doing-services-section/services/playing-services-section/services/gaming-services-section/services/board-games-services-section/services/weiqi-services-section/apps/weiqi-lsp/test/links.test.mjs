@@ -6,6 +6,7 @@ import { join } from "node:path";
 import { checkRelativeLinks, checkSiteRootedTermPath, makeWq031Diagnostic, checkKernelTermPaths } from "../src/links.mjs";
 import { loadKernel, DEFAULT_KERNEL_PATH } from "../src/kernel.mjs";
 import { dirname, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
 
 const kernel = await loadKernel();
 
@@ -82,7 +83,7 @@ test("WQ031 -- a path outside the mounted prefix is out of scope (returns null, 
 
 test("WQ032 -- every real TERM_PATH entry resolves from the actual kernel package root", () => {
   const kernelPackageRoot = resolve(dirname(DEFAULT_KERNEL_PATH), "..");
-  const sectionRoot = resolve(kernelPackageRoot, "..", "..");
+  const sectionRoot = resolve(dirname(fileURLToPath(import.meta.url)), "..", "..", "..");
   const diagnostics = checkKernelTermPaths(kernel, kernelPackageRoot, sectionRoot);
   assert.deepEqual(diagnostics, []);
 });

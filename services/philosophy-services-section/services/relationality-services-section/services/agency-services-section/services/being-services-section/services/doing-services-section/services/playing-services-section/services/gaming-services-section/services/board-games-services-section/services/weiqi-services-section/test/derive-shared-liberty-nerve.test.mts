@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { BLACK, WHITE, EMPTY, createPositionFromCells, gameRecordToSgf } from "../apps/weiqi-kernel/src/index.mts";
+import { BLACK, WHITE, EMPTY, createPositionFromCells, gameRecordToSgf } from "@red-cup-engineering/weiqi-engine";
 import { libertyChuSpace, positionFromSgf } from "../scripts/derive-liberty-chu-space.mts";
 import { sharedLibertyNerve } from "../scripts/derive-shared-liberty-nerve.mts";
 import { extension, FOUR } from "@lenticule-science/metrologic/chu";

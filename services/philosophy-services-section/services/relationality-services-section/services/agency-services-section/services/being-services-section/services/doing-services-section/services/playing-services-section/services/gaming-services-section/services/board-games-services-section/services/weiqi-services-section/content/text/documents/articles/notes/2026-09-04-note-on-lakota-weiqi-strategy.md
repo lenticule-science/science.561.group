@@ -125,7 +125,7 @@ captures, the share won by net or loose enclosure
 ([geta](../../../glossary/terms/geta.md)) rather than by a direct
 [ladder](../../../glossary/terms/liberty.md) chase or forcing
 [atari](../../../glossary/terms/atari.md) sequence. The kernel's semantic
-event layer, [events.mts](../../../../../apps/weiqi-kernel/src/events.mts),
+event layer, [events.mts](https://registry.561.group/@red-cup-engineering/weiqi-engine/-/weiqi-engine-0.1.0.tgz),
 already fires a `capture` event per capture; classifying a given capture
 as encirclement rather than direct chase needs the readout-pullback
 distinction [Readouts as a Chu Space, Coordination as

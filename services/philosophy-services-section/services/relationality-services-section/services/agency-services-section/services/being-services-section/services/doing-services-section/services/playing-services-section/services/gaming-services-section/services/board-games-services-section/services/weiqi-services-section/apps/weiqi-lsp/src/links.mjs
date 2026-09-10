@@ -1,6 +1,6 @@
 // Family (d) -- markdown relative links and termRef resolution: WQ030-WQ032.
 // Normative source: scripts/check-links.mts (absorbed verbatim as WQ030)
-// plus weiqi-kernel's events.mts termRef convention (SPEC.md Family d).
+// plus the Weiqi engine's events module termRef convention (SPEC.md Family d).
 
 import { existsSync, statSync } from "node:fs";
 import { dirname, join, resolve, relative } from "node:path";
@@ -8,7 +8,8 @@ import { makeDiagnostic } from "./diagnostic.mjs";
 
 const CHECK_LINKS_SOURCE = "scripts/check-links.mts";
 const GLOSSARY_DIR_SOURCE = "content/text/glossary/terms/";
-const EVENTS_SOURCE = "apps/weiqi-kernel/src/events.mts";
+const EVENTS_SOURCE = "@red-cup-engineering/weiqi-engine/src/events.mts";
+const SCIENCE_TERM_PREFIX = "science://lenticule-science/weiqi/terms/";
 
 /** This section's own mounted site-rooted prefix for glossary terms, per WQ031. */
 const TERM_PREFIX = "/games/topics/board-games/weiqi/terms/";
@@ -89,18 +90,21 @@ export function makeWq031Diagnostic(pathStr, file, line) {
 }
 
 /**
- * WQ032: every value in weiqi-kernel's events.mts TERM_PATH table resolves,
- * from the kernel package root, to a real glossary file.
+ * WQ032: every value in the engine's TERM_PATH table resolves to a real
+ * glossary file. Published engines use the durable science:// term identity;
+ * a relative value remains supported for an explicit local override.
  *
- * @param {typeof import("../../weiqi-kernel/src/index.mts")} kernel
- * @param {string} kernelPackageRoot - apps/weiqi-kernel, i.e. two levels above src/index.mts.
+ * @param {typeof import("@red-cup-engineering/weiqi-engine")} kernel
+ * @param {string} kernelPackageRoot - package root for an explicit local override.
  * @param {string} sectionRoot
  * @returns {import("./diagnostic.mjs").Diagnostic[]}
  */
 export function checkKernelTermPaths(kernel, kernelPackageRoot, sectionRoot) {
   const diagnostics = [];
   for (const [term, relPath] of Object.entries(kernel.TERM_PATH)) {
-    const resolvedPath = resolve(kernelPackageRoot, relPath);
+    const resolvedPath = relPath.startsWith(SCIENCE_TERM_PREFIX)
+      ? join(sectionRoot, "content", "text", "glossary", "terms", `${relPath.slice(SCIENCE_TERM_PREFIX.length)}.md`)
+      : resolve(kernelPackageRoot, relPath);
     if (!existsSync(resolvedPath) || !statSync(resolvedPath).isFile()) {
       diagnostics.push(
         makeDiagnostic({

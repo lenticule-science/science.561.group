@@ -13,7 +13,7 @@
 
 import { makeDiagnostic } from "./diagnostic.mjs";
 
-const SGF_SOURCE = "apps/weiqi-kernel/src/sgf.mts";
+const SGF_SOURCE = "@red-cup-engineering/weiqi-engine/src/sgf.mts";
 const KERNEL_CONSTITUTION_SOURCE =
   "content/text/documents/articles/notes/weiqi-kernel-constitution.md";
 const RULESETS_SOURCE = "content/text/documents/articles/teaching-articles/references/rulesets.md";
@@ -147,7 +147,7 @@ export function checkSgfFence(fence, file, kernel) {
             severity: "error",
             file,
             message: `SGF main line move ${i + 1} ("${moveStr}") is illegal: ${outcome.reason}.`,
-            source: "apps/weiqi-kernel/src/game.mts",
+            source: "@red-cup-engineering/weiqi-engine/src/game.mts",
             start: at,
           }),
         );
@@ -161,7 +161,7 @@ export function checkSgfFence(fence, file, kernel) {
         severity: "error",
         file,
         message: `SGF main line could not be replayed: ${err instanceof Error ? err.message : String(err)}`,
-        source: "apps/weiqi-kernel/src/game.mts",
+        source: "@red-cup-engineering/weiqi-engine/src/game.mts",
         start: at,
       }),
     );

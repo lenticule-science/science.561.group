@@ -5,7 +5,7 @@
 //
 // Normative source: regression-positions.md's own "Each position carries
 // an id... and an expected: block" contract, recomputed (not merely
-// parsed) against @lenticule-science/weiqi-kernel (SPEC.md Family b).
+// parsed) against @red-cup-engineering/weiqi-engine (SPEC.md Family b).
 //
 // Scope decision, stated once here rather than re-derived per rule: this
 // module checks only the expected: block's own FLAT top-level keys (one
@@ -23,7 +23,7 @@ import { makeDiagnostic } from "./diagnostic.mjs";
 import { coordInRange, REGRESSION_POSITIONS_SOURCE } from "./diagram.mjs";
 
 const RULESETS_SOURCE = "content/text/documents/articles/teaching-articles/references/rulesets.md";
-const KERNEL_EVENTS_SOURCE = "apps/weiqi-kernel/src/events.mts";
+const KERNEL_EVENTS_SOURCE = "@red-cup-engineering/weiqi-engine/src/events.mts";
 
 function leadingSpaces(line) {
   const m = /^(\s*)/.exec(line);
@@ -281,7 +281,7 @@ export function checkExpectedBlock({ fence, file, diagram, kernel }) {
                 severity: "error",
                 file,
                 message: `${id}: ${key} claims ${claimed}, but computeTerritory reports ${actual}.`,
-                source: "apps/weiqi-kernel/src/scoring.mts",
+                source: "@red-cup-engineering/weiqi-engine/src/scoring.mts",
                 start: { line: entry.line, column: 1 },
               }),
             );
@@ -309,13 +309,13 @@ export function checkExpectedBlock({ fence, file, diagram, kernel }) {
         // komi back out of .whiteScore, so this never silently drifts if
         // scoring.mts's own formula ever changes.
         const scoreChecks = [
-          ["black_area_score", areaResult?.blackScore, "apps/weiqi-kernel/src/scoring.mts"],
-          ["white_area_score", areaResult ? areaResult.whiteStones + areaResult.whiteTerritory : undefined, "apps/weiqi-kernel/src/scoring.mts"],
-          ["black_territory_score", territoryResult?.blackScore, "apps/weiqi-kernel/src/scoring.mts"],
+          ["black_area_score", areaResult?.blackScore, "@red-cup-engineering/weiqi-engine/src/scoring.mts"],
+          ["white_area_score", areaResult ? areaResult.whiteStones + areaResult.whiteTerritory : undefined, "@red-cup-engineering/weiqi-engine/src/scoring.mts"],
+          ["black_territory_score", territoryResult?.blackScore, "@red-cup-engineering/weiqi-engine/src/scoring.mts"],
           [
             "white_territory_score",
             territoryResult ? territoryResult.whiteTerritory + territoryResult.whitePrisoners : undefined,
-            "apps/weiqi-kernel/src/scoring.mts",
+            "@red-cup-engineering/weiqi-engine/src/scoring.mts",
           ],
         ];
         for (const [key, actual] of scoreChecks) {
@@ -330,7 +330,7 @@ export function checkExpectedBlock({ fence, file, diagram, kernel }) {
                 severity: "error",
                 file,
                 message: `${id}: ${key} claims ${claimed}, but the kernel computes ${actual} under ruleset.${rulesetName}.`,
-                source: "apps/weiqi-kernel/src/scoring.mts",
+                source: "@red-cup-engineering/weiqi-engine/src/scoring.mts",
                 start: { line: entry.line, column: 1 },
               }),
             );
@@ -351,7 +351,7 @@ export function checkExpectedBlock({ fence, file, diagram, kernel }) {
                   severity: "error",
                   file,
                   message: `${id}: ${key} claims ${claimed}, but the kernel computes ${actual} under ruleset.${rulesetName} (${mode} scoring).`,
-                  source: "apps/weiqi-kernel/src/scoring.mts",
+                  source: "@red-cup-engineering/weiqi-engine/src/scoring.mts",
                   start: { line: entry.line, column: 1 },
                 }),
               );
@@ -419,7 +419,7 @@ export function checkExpectedBlock({ fence, file, diagram, kernel }) {
           severity: "info",
           file,
           message: `${id}: legality claim(s) gated by ko_point: ${koPointEntry.value} are NOT VERIFIED -- simple-ko/superko legality depends on game history (game.mts's checkKoViolation reads two prior positions back), which a single static diagram cannot encode. Only suicide/occupancy-governed claims are recomputed by this rule.`,
-          source: "apps/weiqi-kernel/src/game.mts",
+          source: "@red-cup-engineering/weiqi-engine/src/game.mts",
           start: { line: koPointEntry.line, column: 1 },
         }),
       );
@@ -449,7 +449,7 @@ export function checkExpectedBlock({ fence, file, diagram, kernel }) {
                 severity: "error",
                 file,
                 message: `${id}: ${key} claims ${claimedLegal ? "legal" : "illegal"} under ruleset.${rn}, but the kernel reports playing ${coord} would be ${actualLegal ? "legal" : "illegal"}.`,
-                source: "apps/weiqi-kernel/src/game.mts",
+                source: "@red-cup-engineering/weiqi-engine/src/game.mts",
                 start: { line: entry.line, column: 1 },
               }),
             );

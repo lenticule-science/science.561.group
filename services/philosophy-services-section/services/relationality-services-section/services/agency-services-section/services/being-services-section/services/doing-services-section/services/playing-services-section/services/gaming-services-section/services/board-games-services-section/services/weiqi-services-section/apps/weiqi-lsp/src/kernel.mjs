@@ -1,24 +1,18 @@
 // The single chokepoint every other module goes through to reach
-// @lenticule-science/weiqi-kernel. weiqi-kernel is consumed read-only, by a
-// plain relative import of its own .mts source -- exactly the pattern
-// apps/weiqi-web/test/smoke.test.mts already uses (Node's native
-// TypeScript-type-stripping handles the .mts extension at import time, no
-// build step). No other module in this package should import the kernel
-// directly; that keeps `--kernel-path` a one-line override here rather
-// than a search-and-replace across the codebase.
+// @red-cup-engineering/weiqi-engine. The published engine is consumed
+// read-only through its public entry point. No other module in this package
+// should import it directly; that keeps `--kernel-path` a one-line override
+// here rather than a search-and-replace across the codebase.
 
-import { resolve, dirname } from "node:path";
+import { resolve } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
-const THIS_DIR = dirname(fileURLToPath(import.meta.url));
-
 /**
- * Default kernel entry point: ../../weiqi-kernel/src/index.mts relative to
- * this file (apps/weiqi-lsp/src/kernel.mjs -> apps/weiqi-kernel/src/index.mts),
- * i.e. the sibling app under the same apps/ parent. SPEC.md's `--kernel-path`
- * flag overrides this for pinning against a specific checkout in tests.
+ * Default kernel entry point: the installed, exact-pinned public package.
+ * SPEC.md's `--kernel-path` flag remains an explicit local override for
+ * checking a specific checkout in tests.
  */
-export const DEFAULT_KERNEL_PATH = resolve(THIS_DIR, "..", "..", "weiqi-kernel", "src", "index.mts");
+export const DEFAULT_KERNEL_PATH = fileURLToPath(import.meta.resolve("@red-cup-engineering/weiqi-engine"));
 
 export class KernelImportError extends Error {
   constructor(kernelPath, cause) {
@@ -30,13 +24,13 @@ export class KernelImportError extends Error {
 }
 
 /**
- * Import the kernel's public surface (everything index.mts re-exports:
+ * Import the engine's public surface (everything its entry point re-exports:
  * board/zobrist/position/rulesets/events/scoring/sgf constants and
  * functions, plus Game). Never reimplemented locally -- every rule module
  * calls straight into what this returns.
  *
  * @param {string} [kernelPath] - defaults to DEFAULT_KERNEL_PATH.
- * @returns {Promise<typeof import("../../weiqi-kernel/src/index.mts")>}
+ * @returns {Promise<typeof import("@red-cup-engineering/weiqi-engine")>}
  */
 export async function loadKernel(kernelPath = DEFAULT_KERNEL_PATH) {
   const absolute = resolve(kernelPath);
@@ -55,8 +49,8 @@ export async function loadKernel(kernelPath = DEFAULT_KERNEL_PATH) {
  * Documented deviation from SPEC.md's WQ005 prose: SPEC.md's own text names
  * `COLUMN_LETTERS` as a kernel export ("board.mts, COLUMN_LETTERS"), but
  * board.mts's COLUMN_LETTERS is a module-private const -- it is not
- * exported from index.mts (confirmed by reading apps/weiqi-kernel/src/board.mts
- * and index.mts directly; index.mts's `export * from "./board.mts"` cannot
+ * exported from the engine's public entry point (confirmed by the published
+ * package surface; `export * from "./board.mjs"` cannot
  * re-export a binding that was never exported in the first place). The
  * kernel's own README carries the same skip-I convention in prose but does
  * not export the table either. `pointToCoord(width, point)` IS exported,

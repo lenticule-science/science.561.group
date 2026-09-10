@@ -117,7 +117,7 @@ move itself, and a postcondition (the resulting position's invariants).
 By §1's Chu-transform reading, `{P} move {Q}` is the lax Chu condition `P
 ≤ move*(Q)`: the precondition is bounded by the pullback, along the
 move, of the postcondition. As **inference**: the kernel's `Game.play`,
-[apps/weiqi-kernel/src/game.mts](../../../../../apps/weiqi-kernel/src/game.mts),
+[@red-cup-engineering/weiqi-engine@0.1.0 game.mts](https://registry.561.group/@red-cup-engineering/weiqi-engine/-/weiqi-engine-0.1.0.tgz),
 is the finite Boolean instance of this program — precondition =
 `isLegal` (occupied, suicide, ko regime), move = `applyStonePlacement`,
 postcondition = the position invariants the kernel's own test suite

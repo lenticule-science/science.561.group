@@ -20,7 +20,7 @@ import {
   type Color,
   type Group,
   type Position,
-} from "../apps/weiqi-kernel/src/index.mts";
+} from "@red-cup-engineering/weiqi-engine";
 
 export interface BoardGroup extends Group {
   /** Stable id: colour letter + the Go coordinate of the group's lowest stone index. */

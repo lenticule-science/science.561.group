@@ -11,7 +11,7 @@ import { parseArgs } from "node:util";
 import { cohomologyOfRelation } from "@lenticule-science/metrologic/obstruction/cochain";
 import { FOUR, row } from "@lenticule-science/metrologic/chu";
 import { libertyChuSpace, positionFromSgf, type LibertyChuSpace } from "./derive-liberty-chu-space.mts";
-import type { Position } from "../apps/weiqi-kernel/src/index.mts";
+import type { Position } from "@red-cup-engineering/weiqi-engine";
 
 export interface NerveCell {
   subject: string;

@@ -1,14 +1,12 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { existsSync } from "node:fs";
 import { loadKernel, deriveColumnLetters, DEFAULT_KERNEL_PATH, KernelImportError } from "../src/kernel.mjs";
 
-test("DEFAULT_KERNEL_PATH resolves to the sibling apps/weiqi-kernel/src/index.mts and exists", () => {
-  assert.match(DEFAULT_KERNEL_PATH, /weiqi-kernel[/\\]src[/\\]index\.mts$/);
-  assert.ok(existsSync(DEFAULT_KERNEL_PATH), `expected ${DEFAULT_KERNEL_PATH} to exist`);
+test("DEFAULT_KERNEL_PATH resolves to the installed @red-cup-engineering/weiqi-engine public entry point", () => {
+  assert.match(DEFAULT_KERNEL_PATH, /@red-cup-engineering[/\\]weiqi-engine[/\\]dist[/\\]index\.mjs$/);
 });
 
-test("loadKernel imports the kernel's public surface via a plain relative .mts import", async () => {
+test("loadKernel imports the exact-pinned engine's public surface", async () => {
   const kernel = await loadKernel();
   assert.equal(typeof kernel.Game, "function");
   assert.equal(typeof kernel.findGroup, "function");

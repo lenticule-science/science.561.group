@@ -277,14 +277,14 @@ construction depends on not happening.
 
 The kernel's `KoRegime`
 type,
-[`apps/weiqi-kernel/src/rulesets.mts`](../../../../../apps/weiqi-kernel/src/rulesets.mts):
+[`@red-cup-engineering/weiqi-engine@0.1.0` rulesets.mts](https://registry.561.group/@red-cup-engineering/weiqi-engine/-/weiqi-engine-0.1.0.tgz):
 
 ```text
 export type KoRegime = "simple_ko" | "positional_superko" | "situational_superko";
 ```
 
 is realized in
-[`apps/weiqi-kernel/src/game.mts`](../../../../../apps/weiqi-kernel/src/game.mts)'s
+[`@red-cup-engineering/weiqi-engine@0.1.0` game.mts](https://registry.561.group/@red-cup-engineering/weiqi-engine/-/weiqi-engine-0.1.0.tgz)'s
 `checkKoViolation`, which checks a candidate position against `history`
 under exactly three rules, quoted verbatim from that function's own
 comment:

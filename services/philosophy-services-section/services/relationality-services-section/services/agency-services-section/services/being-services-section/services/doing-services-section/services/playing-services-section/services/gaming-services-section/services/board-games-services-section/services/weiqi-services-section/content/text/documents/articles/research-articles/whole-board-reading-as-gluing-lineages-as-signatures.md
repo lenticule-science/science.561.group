@@ -167,7 +167,7 @@ would be the observation against this section.
 
 The kernel's semantic event layer already commits
 to one law, stated verbatim in its own header,
-[apps/weiqi-kernel/src/events.mts](../../../../../apps/weiqi-kernel/src/events.mts):
+[@red-cup-engineering/weiqi-engine@0.1.0 events.mts](https://registry.561.group/@red-cup-engineering/weiqi-engine/-/weiqi-engine-0.1.0.tgz):
 
 > the engine is the executable form of the glossary... Each event type
 > here corresponds to a named glossary term, and carries that term's
