@@ -10,14 +10,15 @@
     "test": "npm run check && node --test 'test/*.test.mts'",
     "verify:normal-play": "node scripts/verify-normal-play.mjs",
     "verify:release": "npm test && npm run build && npm run verify:normal-play",
-    "predeploy": "npm run verify:release",
+    "verify:public": "node scripts/verify-public-release.mjs",
     "serve": "node scripts/serve.mjs",
-    "deploy": "wrangler deploy",
+    "deploy": "npm run verify:release && node scripts/deploy-public-release.mjs",
     "dev": "wrangler dev"
   },
   "dependencies": {
     "@red-cup-engineering/education-platform-service": "0.2.5",
-    "@red-cup-engineering/weiqi-engine": "0.2.0"
+    "@red-cup-engineering/web-release-candidate-service": "0.3.0",
+    "@red-cup-engineering/weiqi-engine": "0.3.0"
   },
   "devDependencies": {
     "wrangler": "4.123.0"

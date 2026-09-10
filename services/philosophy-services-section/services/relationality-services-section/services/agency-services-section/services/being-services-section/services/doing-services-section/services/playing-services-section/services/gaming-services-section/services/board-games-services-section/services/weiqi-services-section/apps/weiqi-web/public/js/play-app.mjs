@@ -23,6 +23,7 @@ const eventLog = document.getElementById("event-log");
 const newGameBtn = document.getElementById("new-game-btn");
 const passBtn = document.getElementById("pass-btn");
 const resignBtn = document.getElementById("resign-btn");
+const studyGameBtn = document.getElementById("study-game-btn");
 const downloadSgfBtn = document.getElementById("download-sgf-btn");
 const botSelect = document.getElementById("bot-select");
 const soundToggleBtn = document.getElementById("sound-toggle-btn");
@@ -216,6 +217,15 @@ if (downloadSgfBtn) {
     link.download = `weiqi-${BOARD_SIZE}x${BOARD_SIZE}-v${session.version}.sgf`;
     link.click();
     setTimeout(() => URL.revokeObjectURL(href), 0);
+  });
+}
+
+if (studyGameBtn) {
+  studyGameBtn.addEventListener("click", () => {
+    // The review page receives an immutable, engine-admitted carrier through
+    // browser history. It owns no parser, persistence, or second game model.
+    history.pushState({ weiqiSession: session }, "", "review.html");
+    location.reload();
   });
 }
 

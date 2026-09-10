@@ -3,7 +3,7 @@
 `@lenticule-science/weiqi-web` — the web face for `weiqi-services-section`: **Play** (a normal 9x9
 game against a local heuristic AI), **Tsumego** (a graded,
 kernel-verified problem trainer with spaced-repetition review), **Learn** (an interactive lesson
-player), **Read** (the compiled glossary). Static and client-side, with one exact-pinned rules
+player), **Study** (a replay of an accepted local session), **Read** (the compiled glossary). Static and client-side, with one exact-pinned rules
 owner, per
 [the Weiqi Platform Plan](../../content/text/documents/articles/notes/weiqi-platform-plan.md) —
 "no accounts, no server state, deployable exactly like 561.group." All rules authority stays with
@@ -11,8 +11,10 @@ owner, per
 computes and never reimplements legality, scoring, or event recognition.
 
 The local game is an ordered, versioned engine session rather than page-owned
-mutable board state. Play can download that session as standard SGF, so a game
-started here has a portable record for replay or analysis elsewhere.
+mutable board state. Play can download that session as standard SGF, or hand it
+to Study Replay. Study derives every displayed position and rules observation
+by replaying the accepted session; it does not parse SGF, store a separate game,
+or claim AI move judgment.
 
 Phase 1 shipped correctness (the complete Capture Go / lesson / glossary slice). A first Polish
 pass then shipped real stone presence and board texture, a misclick-resistant touch model with a
@@ -53,12 +55,13 @@ outage). `.assetsignore` excludes everything that is not `public/` (source, test
 scripts, package files, this README).
 
 ```
-npm run build     # regenerate public/js/kernel/ and public/data/glossary.json first
-npm run deploy    # wrangler deploy
+npm run deploy    # source gates, build, deploy, then independent public artifact-hash readback
 ```
 
-`custom_domain: true` in `wrangler.jsonc` attaches `weiqi.561.group` and provisions its
-DNS record. `npm run dev` runs `wrangler dev` for a local preview of the deployed shape.
+The deploy wrapper records the prior and newly-active Worker versions, then binds the exact
+`public/` artifact manifest to independent probes of the canonical receiver. It fails unless
+the shared release decision accepts the receiver readback. `custom_domain: true` in
+`wrangler.jsonc` attaches `weiqi.561.group` and provisions its DNS record. `npm run dev` runs `wrangler dev` for a local preview of the deployed shape.
 `npm run serve` (`scripts/serve.mjs`) remains a plain `node:http` dev/test convenience
 only; it is never what production serves.
 
@@ -83,6 +86,7 @@ apps/weiqi-web/
                             (title, definition, elaboration, related terms) -- a small targeted
                             frontmatter/markdown extraction, not a general parser
     serve.mjs              node:http static file server over public/, sandboxed to that directory
+    deploy-public-release.mjs deploys the exact static artifact set and requires public receiver acceptance
   test/
     smoke.test.mts          node --test: imports the exact-pinned kernel and the bot
                             (../public/js/bot.mjs), plays 100 capture-go
