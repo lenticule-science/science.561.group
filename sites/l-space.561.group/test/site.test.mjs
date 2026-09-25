@@ -103,7 +103,7 @@ test('the site serves its shell and public surface anonymously and refuses the v
 
 test('the deployment unit serves the release through VICTOR and nothing else', async () => {
   const unit = await readFile(new URL('../deploy/l-space.service', import.meta.url), 'utf8');
-  assert.match(unit, /static-site-publisher serve .* --release/u);
+  assert.match(unit, /static-site-publisher(\.mjs)? serve .* --release/u);
   assert.match(unit, /--host=127\.0\.0\.1 --port=18848/u);
   assert.doesNotMatch(unit, /worker\.mjs|adapter\.mjs|LSPACE_WORKER_MODULE/u);
   assert.doesNotMatch(unit, /\/home\/emsenn\/services\/l-space\/victor\.config\.mjs/u);

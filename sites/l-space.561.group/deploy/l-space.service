@@ -8,7 +8,7 @@ Type=simple
 WorkingDirectory=/home/emsenn/info/lib/emsenn/services/561-group/services/science-services-section/sites/l-space.561.group
 # The site is its configuration. VICTOR builds the release from the science section at start and
 # serves it with the admission, VaultMaze, GEODE, the authorization server and /mcp.
-ExecStart=/home/emsenn/.local/bin/node node_modules/.bin/static-site-publisher serve ../.. --config=./static-site-publisher.config.mjs --release --host=127.0.0.1 --port=18848
+ExecStart=/home/emsenn/.local/bin/node node_modules/@red-cup-engineering/static-site-publisher/scripts/static-site-publisher.mjs serve ../.. --config=./static-site-publisher.config.mjs --release --host=127.0.0.1 --port=18848
 # Public origin, allowlists and provider credentials are in the environment file, mode 0600.
 EnvironmentFile=/home/emsenn/.config/561-group/l-space.env
 Environment=NODE_OPTIONS=--max-old-space-size=6144
