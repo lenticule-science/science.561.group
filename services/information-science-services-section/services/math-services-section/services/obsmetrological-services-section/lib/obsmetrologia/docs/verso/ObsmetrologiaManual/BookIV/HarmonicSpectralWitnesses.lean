@@ -219,14 +219,14 @@ example :
   triangular_chromaticNumber_bounded_attained
 
 example :
-    Colorable kingAdjacency Charge
+    Colorable kingAdjacency Reading
       ∧ ¬ Colorable kingAdjacency TriangularPhase :=
   king_chromaticNumber_bounded_attained
 
 example (r : CorpusTileAdjacencyConvention) :
     Colorable
       (CorpusTileAdjacencyConvention.graph r)
-      Charge :=
+      Reading :=
   corpus_planar_tile_patches_four_colorable r
 
 end Obsmetrologia.Combinatorics

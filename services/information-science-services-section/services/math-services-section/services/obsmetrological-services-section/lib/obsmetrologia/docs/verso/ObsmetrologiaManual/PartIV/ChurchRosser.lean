@@ -135,7 +135,7 @@ The three readings are collected into one bundle
 
 The type-formers themselves — terminal, product, exponential, and the dual — are a
 four-element index, {name Obsmetrologia.Predicating.CurryHowardLambek.TypeFormer}`TypeFormer`, and that index is the
-*same* {name Obsmetrologia.Articulating.Corner}`Articulating.Corner` the bilattice charge, the nuclear quartet, and
+*same* {name Obsmetrologia.Articulating.Corner}`Articulating.Corner` the bilattice reading, the nuclear quartet, and
 the modal four are read off (cf. the Part III keystone). The CHL quartet does not
 introduce a fifth structure; it re-meets the recurring four.
 

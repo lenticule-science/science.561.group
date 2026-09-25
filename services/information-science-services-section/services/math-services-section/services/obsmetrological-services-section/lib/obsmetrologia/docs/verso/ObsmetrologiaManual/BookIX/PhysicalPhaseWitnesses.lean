@@ -361,7 +361,7 @@ its own symmetry, which is worth carrying explicitly rather than leaving
 implicit.
 
 The cover's symmetry is the dihedral group of the pentagon, built the same way
-Book III built the charge square's D4 -- as a generated automorphism group, not
+Book III built the reading square's D4 -- as a generated automorphism group, not
 imported group theory:
 
 {docstring Obsmetrologia.QuantumContextuality.D5}

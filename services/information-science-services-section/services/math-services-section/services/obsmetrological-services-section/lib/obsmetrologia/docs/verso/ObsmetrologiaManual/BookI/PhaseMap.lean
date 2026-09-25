@@ -64,7 +64,7 @@ extra data, it is not an Obsmetrologia page yet.
 ## Language: Position And Value
 
 The language phase generates oriented predication sites and then values over
-those sites. This is where subject, predicate, object, charge, valuation, truth
+those sites. This is where subject, predicate, object, reading, valuation, truth
 order, and knowledge order become lawful.
 
 Checked:
@@ -75,8 +75,8 @@ example (u : Utterance) :
       ⟨u.token, u.claim, u.token⟩ :=
   rfl
 
-example : Valuation = (PredicationCell -> Charge) :=
-  Valuation.isClaimCharge
+example : Valuation = (PredicationCell -> Reading) :=
+  Valuation.isClaimReading
 ```
 
 Category, logic, equality, quantification, and hyperdoctrine language are
@@ -113,7 +113,7 @@ example : Articulating.Corner.all.length = 4 :=
 example (u : Utterance) :
     Articulating.FourCorner.toCorner
         (Articulating.Cell.unarticulated u).fourCorner =
-      Charge.kBot :=
+      Reading.kBot :=
   absurd_is_kBot u
 ```
 

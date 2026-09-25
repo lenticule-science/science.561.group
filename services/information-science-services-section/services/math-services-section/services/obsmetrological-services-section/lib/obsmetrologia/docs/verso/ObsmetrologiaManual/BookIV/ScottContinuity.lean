@@ -27,7 +27,7 @@ The claim-site carried here is:
 
 * claim-site: Scott-continuous closure;
 * phase: closure;
-* generating sites: charge, knowledge order, closure operator, directed join;
+* generating sites: reading, knowledge order, closure operator, directed join;
 * Lean carrier: `Obsmetrologia.Closure.Scott`;
 * familiar comparison: Scott-continuity from domain theory;
 * danger: treating Scott-continuity as imported background instead of as a
@@ -42,7 +42,7 @@ The chapter's job is to make one sentence precise:
 
 Before settling, there is no closure orbit whose limit behavior can be measured.
 Before the knowledge order, there is no directed knowledge-join for a closure to
-preserve. Before positing, there is no charge lattice on which this finite projection
+preserve. Before positing, there is no reading lattice on which this finite projection
 can be checked.
 
 So Scott-continuity is not an imported property of an ambient category. It is a
@@ -57,7 +57,7 @@ That is why this chapter belongs in the closure phase.
 
 ## Directed Families
 
-The finite model starts with directed families of charges.
+The finite model starts with directed families of readings.
 
 {docstring Obsmetrologia.Closure.Scott.DirectedFamily}
 
@@ -65,14 +65,14 @@ The directed family has a supremum:
 
 {docstring Obsmetrologia.Closure.Scott.DirectedFamily.sup}
 
-and, over the finite charge carrier, that supremum is attained by an element of
+and, over the finite reading carrier, that supremum is attained by an element of
 the family:
 
 {docstring Obsmetrologia.Closure.Scott.DirectedFamily.sup_mem}
 
 This theorem is the finite heart of the chapter. In the finite carrier, directed
 joins are not mysterious completed infinities; the join is already present in the
-directed family. That is why every finite charge-closure is Scott-continuous.
+directed family. That is why every finite reading-closure is Scott-continuous.
 
 ## The Scott Equation
 
@@ -87,11 +87,11 @@ The finite theorem is:
 Checked:
 
 ```lean
-example (c : Charge.Closure) : IsScottContinuous c :=
+example (c : Reading.Closure) : IsScottContinuous c :=
   finite_scott_continuous c
 ```
 
-The theorem says: for this finite charge model, every closure operator preserves
+The theorem says: for this finite reading model, every closure operator preserves
 directed joins. This is not the full transfinite story. It is the strict finite
 projection. But it is not a toy either: it is exactly the finite base case against
 which non-Scott behavior will later be recognized.
@@ -111,7 +111,7 @@ and proves that finite-antecedent rules commute with directed joins:
 Checked:
 
 ```lean
-example (ante concl : Charge) (S : DirectedFamily) :
+example (ante concl : Reading) (S : DirectedFamily) :
     fire ante concl (sup S.elems)
       = sup (S.elems.map (fire ante concl)) :=
   finite_antecedent_scott_continuous ante concl S
@@ -170,7 +170,7 @@ Finite-antecedent firing also transports to this face:
 Checked:
 
 ```lean
-example (ante concl : Charge) (S : DirectedFamily) :
+example (ante concl : Reading) (S : DirectedFamily) :
     fire ante concl (sup S.elems)
       = sup (S.elems.map (fire ante concl)) :=
   finite_antecedent_closure_scott_continuous ante concl S
@@ -295,7 +295,7 @@ example
 ```
 
 This is the current wiring Lean proves.  It is enough to say which theorem-proved
-ports and material-sector charges a future common carrier must identify.  For
+ports and material-sector readings a future common carrier must identify.  For
 the explicit carrier structure here, the two-adic cylinder-lift side is already
 constructed from the carry gap, so the remaining inhabitation gap is exactly no
 positive infinite barrier stream, equivalently the current Collatz frontier
@@ -308,25 +308,25 @@ Scott-continuity is tied to the closure-regime classifier.
 
 {docstring Obsmetrologia.Closure.Scott.scott_continuous_iff_omega_regime}
 
-The finite charge closure lands in the strict regime:
+The finite reading closure lands in the strict regime:
 
-{docstring Obsmetrologia.Closure.Scott.finite_charge_strict}
+{docstring Obsmetrologia.Closure.Scott.finite_reading_strict}
 
 Checked:
 
 ```lean
-example (c : Charge.Closure) (x : Charge) :
+example (c : Reading.Closure) (x : Reading) :
     classify spineData = ClosureRegime.strict
-      ∧ Charge.SettlesBy c.op x 3
+      ∧ Reading.SettlesBy c.op x 3
       ∧ IsScottContinuous c :=
-  finite_charge_strict c x
+  finite_reading_strict c x
 ```
 
 This proves the local phase relationship:
 
 * finite base implies strict behavior;
 * strict behavior implies finite settling;
-* finite charge closure is Scott-continuous;
+* finite reading closure is Scott-continuous;
 * cohomological obstruction vanishes in the strict/Scott side.
 
 Scott-continuity is therefore a regime condition, not a subject heading.
@@ -346,8 +346,8 @@ family, and regime classifier is importing the projection too early.
 
 If this chapter fails for a reader, use this route:
 
-1. Read `Obsmetrologia.Language.Positing.Charge` for the four-charge carrier.
-2. Read `Obsmetrologia.Closure.Operator` for closure operators on charges.
+1. Read `Obsmetrologia.Language.Positing.Reading` for the four-reading carrier.
+2. Read `Obsmetrologia.Closure.Operator` for closure operators on readings.
 3. Read `Obsmetrologia.Closure.Regime` for the four-regime classifier.
 4. Read `Obsmetrologia.Closure.Scott` for directed families and the Scott equation.
 5. Then read non-Scott firing and curvature as failures of this preservation.

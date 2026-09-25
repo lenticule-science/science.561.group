@@ -147,7 +147,7 @@ The reader closure is that Landauer and anti-Landauer are not two metaphors for
 entropy. They are the two sides of a finite index ledger: obstruction discarded
 by settling and harmonic content retained by settling. The pair-creation law
 proved here is an index law, not yet a dynamical temperature theorem: at fixed
-net charge, creating contradiction requires matching consensus creation.
+net reading, creating contradiction requires matching consensus creation.
 The closure-step theorem is also finite and ledger-level: once a step is
 projected to a cover-nerve transition that preserves `chi`, the `(H0,H1)`
 movement is forced to be balanced. The stronger Noether-current reading still

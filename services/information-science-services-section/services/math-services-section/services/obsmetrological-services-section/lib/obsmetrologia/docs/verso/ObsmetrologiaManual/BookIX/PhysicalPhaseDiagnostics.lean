@@ -121,7 +121,7 @@ chaos over a continuum gas is not.
 
 ## Plasma Diagnostics
 
-Plasma supplies three different tests: charge-neutral relaxation, screened
+Plasma supplies three different tests: reading-neutral relaxation, screened
 potential closure, and topological edge obstruction.
 
 Quasineutrality is the fixed point of screening:
@@ -365,7 +365,7 @@ scalar:
 Checked:
 
 ```lean
-example (a : Charge) :
+example (a : Reading) :
     gaugeTopCreationCount a * 4 = D4.D8.all.length :=
   gauge_top_creation_quarter a
 

@@ -22,7 +22,7 @@ positing tower.
 
 # Positing Symmetry Tower
 
-Charge is not the end of the language phase. Once charge exists, the manual may
+Reading is not the end of the language phase. Once reading exists, the manual may
 speak about the two orders on the same value object, the symmetries of that
 object, and the nuclear quartets that later pages use as cohomological and gauge
 projections. This page is upstream of those later uses.
@@ -30,9 +30,9 @@ projections. This page is upstream of those later uses.
 The claim-site carried here is:
 
 * claim-site: generated symmetry and bigraded nuclear tower inside positing;
-* phase: language, after predication and charge, before closure and gluing use
+* phase: language, after predication and reading, before closure and gluing use
   these structures as derived comparisons;
-* generating sites: `Charge`, knowledge order, truth order, negation,
+* generating sites: `Reading`, knowledge order, truth order, negation,
   conflation, order-swap, same-order nuclei, and valuation fibers;
 * downstream uses: recurring FOUR, valuation fiber algebra, bigraded
   cohomology, K4 and D4 gauge language, aperiodic moduli, and physical gauge
@@ -51,7 +51,7 @@ The claim-site carried here is:
   Heyting nuclei, fixed-point subalgebras, and graded cohomological axes;
 * reader closure: do not treat the truth order as a second knowledge nucleus;
   it enters the tower as a grade after the cross-order obstruction is proved;
-* frontier status: the page proves the finite charge-level tower. General
+* frontier status: the page proves the finite reading-level tower. General
   enriched, sheafified, or 2-categorical KZ versions remain frontier unless
   their carriers are built.
 
@@ -65,21 +65,21 @@ The governing sentence is:
 The order-swap `sigma` is not negation and not conflation. It is the map that
 transports the knowledge order to the truth order:
 
-{docstring Obsmetrologia.Charge.swap}
+{docstring Obsmetrologia.Reading.swap}
 
-{docstring Obsmetrologia.Charge.swap_kle_tle}
+{docstring Obsmetrologia.Reading.swap_kle_tle}
 
 Checked:
 
 ```lean
-example (a b : Charge) :
-    Charge.KLE a b
-      <-> Charge.TLE (Charge.swap a) (Charge.swap b) :=
-  Charge.swap_kle_tle a b
+example (a b : Reading) :
+    Reading.KLE a b
+      <-> Reading.TLE (Reading.swap a) (Reading.swap b) :=
+  Reading.swap_kle_tle a b
 ```
 
 This is the first lawful way to say that the two orders are related. It is still
-not a collapse. The same charge object carries both orders, and `sigma` explains
+not a collapse. The same reading object carries both orders, and `sigma` explains
 how facts move between them.
 
 ## Same-Order Nuclei
@@ -176,14 +176,14 @@ example (V : Type) (M N : NuclearFormula V) :
   NuclearFormula.nuclearW_R3_decreases M N
 ```
 
-Checked on the charge knowledge-Heyting algebra:
+Checked on the reading knowledge-Heyting algebra:
 
 ```lean
-example (c1 c2 a : Charge) :
-    (Charge.joinSquare c1 c2).pi a = a
-      <-> ((Charge.joinSquare c1 c2).j1.j a = a
-        ∧ (Charge.joinSquare c1 c2).j2.j a = a) :=
-  (Charge.joinSquare c1 c2).fix_pi_iff a
+example (c1 c2 a : Reading) :
+    (Reading.joinSquare c1 c2).pi a = a
+      <-> ((Reading.joinSquare c1 c2).j1.j a = a
+        ∧ (Reading.joinSquare c1 c2).j2.j a = a) :=
+  (Reading.joinSquare c1 c2).fix_pi_iff a
 ```
 
 This is why later "diamond" language is lawful only when a same-order nuclear
@@ -199,12 +199,12 @@ fibers:
 
 {docstring Obsmetrologia.SquareFamily.Varies}
 
-The library includes a concrete varying family on charge:
+The library includes a concrete varying family on reading:
 
 ```lean
 example :
-    SquareFamily.Varies Charge.varyingFamily :=
-  Charge.varyingFamily_varies
+    SquareFamily.Varies Reading.varyingFamily :=
+  Reading.varyingFamily_varies
 ```
 
 This matters for persistence. If the square never varies, later pages cannot
@@ -212,7 +212,7 @@ honestly use it to witness history separation, aperiodicity, or moduli.
 
 ## K4 Grading
 
-The Klein-four carrier is the finite generated gauge object of the charge square:
+The Klein-four carrier is the finite generated gauge object of the reading square:
 
 {docstring Obsmetrologia.Positing.Gauge.K4}
 
@@ -249,7 +249,7 @@ example :
         toFourCorner g = (knowledgeBit g, truthBit g))
     ∧ (exists v : Valuation,
         Not (Positing.FiberAlgebra.fLeK v
-          (fun phi => Charge.joinT Charge.kBot (v phi)))) :=
+          (fun phi => Reading.joinT Reading.kBot (v phi)))) :=
   tower_bigrading_is_two_orders
 ```
 
@@ -261,7 +261,7 @@ same kind of nucleus.
 ## D4 Completion
 
 After order-swap exists, the Klein-four gauge extends to the eight-element
-dihedral symmetry of the charge square:
+dihedral symmetry of the reading square:
 
 {docstring Obsmetrologia.D4.D8}
 
@@ -272,7 +272,7 @@ The action is a real action by composition:
 Checked:
 
 ```lean
-example (g h : D8) (a : Charge) :
+example (g h : D8) (a : Reading) :
     D8.act (D8.mul g h) a
       = D8.act g (D8.act h a) :=
   D8.act_mul g h a
@@ -285,7 +285,7 @@ projection of the four-valued positing square with the two orders kept visible.
 
 To read later gauge, cohomology, or physics pages:
 
-1. Start with charge, not a group.
+1. Start with reading, not a group.
 2. Distinguish knowledge order from truth order.
 3. Use `swap` to transport between orders.
 4. Use same-order commuting nuclei for the diamond.

@@ -2,7 +2,7 @@ import ObsmetrologiaManual.DocSetup
 import Obsmetrologia.CausalSets.Support.Microlocal
 import Obsmetrologia.CausalSets.Support.Causal
 import Obsmetrologia.CausalSets.Support.Cotangent
-import Obsmetrologia.CausalSets.Support.Charged
+import Obsmetrologia.CausalSets.Support.Valued
 import Obsmetrologia.CausalSets.Support.Polarization
 
 open Verso.Genre Manual InlineLean
@@ -11,7 +11,7 @@ open Obsmetrologia.CausalSets.Causal.Cone
 open Obsmetrologia.CausalSets.Causal.Laplacian
 open Obsmetrologia.CausalSets.Causal.Order
 open Obsmetrologia.CausalSets.Support.Causal
-open Obsmetrologia.CausalSets.Support.Charged
+open Obsmetrologia.CausalSets.Support.Valued
 open Obsmetrologia.CausalSets.Support.Cotangent
 open Obsmetrologia.CausalSets.Support.Microlocal
 open Obsmetrologia.CausalSets.Support.Polarization
@@ -31,10 +31,10 @@ can be supported by those cones before the operator/action/curvature page begins
 The claim-site carried here is:
 
 * claim-site: spacetime support, singular support, causal microsupport,
-  cotangent codirections, charged microsupport, and causal polarization;
+  cotangent codirections, valued microsupport, and causal polarization;
 * phase: relational spacetime;
 * generating sites: continuous closure flow, NSC firing, causal closure, closed
-  future cone, direct causal edge, edge cochain, FOUR-valued charge emission,
+  future cone, direct causal edge, edge cochain, FOUR-valued reading emission,
   proper coloring, and bipartite obstruction;
 * downstream uses: causal operators, curvature/action readings, spacetime
   cohomology, plasma and wavefront diagnostics, quantum support gluing,
@@ -42,13 +42,13 @@ The claim-site carried here is:
 * Lean carriers: `Obsmetrologia.CausalSets.Support.Microlocal`,
   `Obsmetrologia.CausalSets.Support.Causal`,
   `Obsmetrologia.CausalSets.Support.Cotangent`,
-  `Obsmetrologia.CausalSets.Support.Charged`, and
+  `Obsmetrologia.CausalSets.Support.Valued`, and
   `Obsmetrologia.CausalSets.Support.Polarization`;
 * Blueprint/proof-tree nodes: `thm:microlocal-support`,
   `thm:causal-microsupport`, `thm:cotangent-microsupport`,
-  `thm:charged-microsupport`, and `thm:causal-polarization`;
+  `thm:valued-microsupport`, and `thm:causal-polarization`;
 * provenance: the causal-spacetime frontier asks for a light-cone,
-  wavefront, charge, and polarization layer before continuum physics is read;
+  wavefront, reading, and polarization layer before continuum physics is read;
 * familiar comparison: microlocal singular support, propagation of singularities,
   AQFT locality, cotangent wavefront set, and symplectic polarization;
 * reader closure: read every classical term through the finite generated
@@ -60,7 +60,7 @@ The claim-site carried here is:
 The governing sentence is:
 
 > Support is causal closure with enough extra structure to remember where,
-> in which codirection, with which charge, and under which polarization.
+> in which codirection, with which reading, and under which polarization.
 
 ## Closure-Flow Singular Support
 
@@ -231,37 +231,37 @@ The frontier line is important. A codirection support can project to a base
 singularity. That is not yet a Hamiltonian bicharacteristic flow on a symplectic
 cotangent bundle.
 
-## Charged Microsupport
+## Valued Microsupport
 
 Causal support can now be valued in the FOUR:
 
-{docstring Obsmetrologia.CausalSets.Support.Charged.CSection}
+{docstring Obsmetrologia.CausalSets.Support.Valued.CSection}
 
-A source emits a charge into its causal future and bottom outside it:
+A source emits a reading into its causal future and bottom outside it:
 
-{docstring Obsmetrologia.CausalSets.Support.Charged.emit}
+{docstring Obsmetrologia.CausalSets.Support.Valued.emit}
 
 Two emissions merge by knowledge join:
 
-{docstring Obsmetrologia.CausalSets.Support.Charged.emit2}
+{docstring Obsmetrologia.CausalSets.Support.Valued.emit2}
 
 Outside the cone, a source tells nothing:
 
-{docstring Obsmetrologia.CausalSets.Support.Charged.emit_outside_cone}
+{docstring Obsmetrologia.CausalSets.Support.Valued.emit_outside_cone}
 
 Checked:
 
 ```lean
 example {E : Type} (le : E -> E -> Bool)
-    (a : E) (q : Charge) (z : E)
+    (a : E) (q : Reading) (z : E)
     (h : le a z = false) :
-    emit le a q z = Charge.kBot :=
+    emit le a q z = Reading.kBot :=
   emit_outside_cone le a q z h
 ```
 
 Contradictory emissions that meet in a common future hold conflict:
 
-{docstring Obsmetrologia.CausalSets.Support.Charged.collision_conflict}
+{docstring Obsmetrologia.CausalSets.Support.Valued.collision_conflict}
 
 Checked:
 
@@ -269,17 +269,17 @@ Checked:
 example {E : Type} (le : E -> E -> Bool)
     (a1 a2 z : E)
     (h1 : le a1 z = true) (h2 : le a2 z = true) :
-    emit2 le a1 Charge.tTop a2 Charge.tBot z
-      = Charge.kTop :=
+    emit2 le a1 Reading.tTop a2 Reading.tBot z
+      = Reading.kTop :=
   collision_conflict le a1 a2 z h1 h2
 ```
 
-The bundled charged theorem is:
+The bundled valued theorem is:
 
-{docstring Obsmetrologia.CausalSets.Support.Charged.charged_microsupport}
+{docstring Obsmetrologia.CausalSets.Support.Valued.valued_microsupport}
 
 This is the lawful place where the cone and the FOUR meet. It does not create
-new truth values; it transports the earlier charge carrier through causal
+new truth values; it transports the earlier reading carrier through causal
 support.
 
 ## Causal Polarization
@@ -333,11 +333,11 @@ split as a coloring carrier and its obstruction as a graph-theoretic class.
 If this page overreaches, demote the sentence until a carrier exists. The
 promotion path is:
 
-1. support claims must name the closure, section, codirection, charge, or color;
+1. support claims must name the closure, section, codirection, reading, or color;
 2. microlocal claims must be checked against `SingularAt`, `Microsupport`,
    `Wavefront`, or `SingSupport`;
 3. physical locality claims must pass through causal non-reachability or
-   charge-valued emission;
+   reading-valued emission;
 4. symplectic claims must pass through polarization and then wait for a genuine
    two-form and flow carrier;
 5. hole or shroud claims may use this support layer only after the finite

@@ -44,7 +44,7 @@ The manual therefore needs room for several kinds of exposition:
   as primitive.
 * *Descent* — the stepwise generation from mark through settling and beyond.
 * *Recurrence* — why the same four-corner coherence cell reappears as articulation
-  phase, bilattice charge, nuclear quartet, modal shape, and regime signature.
+  phase, bilattice reading, nuclear quartet, modal shape, and regime signature.
 * *Recovery* — how received mathematics is recovered in-chain: category, order,
   equality, modal logic, linear logic, sheaves, cohomology, dynamics, and geometry.
 * *Frontier* — how to state open claims without making them look proved.
@@ -76,7 +76,7 @@ should treat it as such. It should not merely assert that received mathematics i
 projection. It should show, case by case, how the projection is recovered and what is lost
 when it is mistaken for the foundation.
 
-For example, a Boolean truth value is a projection of a bilattice charge after
+For example, a Boolean truth value is a projection of a bilattice reading after
 discarding the independence of evidence-for and evidence-against. A classical
 equality predicate is a derived diagonal image in one adjoint system, not an
 ambient primitive. A category is a recovered structure of predication, not the

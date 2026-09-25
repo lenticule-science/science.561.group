@@ -155,7 +155,7 @@ One step decreases it:
 Checked:
 
 ```lean
-example (c : Charge.Closure)
+example (c : Reading.Closure)
     (seed : Valuation)
     (cells : List PredicationCell) (n : Nat) :
     Valuation.freeEnergy c seed cells (n + 1)

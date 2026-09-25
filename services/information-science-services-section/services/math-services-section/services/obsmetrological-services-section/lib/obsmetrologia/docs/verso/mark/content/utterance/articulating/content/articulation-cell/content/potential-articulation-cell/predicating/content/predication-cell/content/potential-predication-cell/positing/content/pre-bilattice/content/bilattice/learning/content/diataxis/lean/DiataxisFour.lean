@@ -16,7 +16,7 @@ The corpus already *uses* Diátaxis (tutorial / how-to / explanation / reference
 documentation discipline laid **over** the mathematics. This module proves the
 stronger claim of the companion paper: the Diátaxis quartet is **not an overlay**, it
 is *another incarnation of the same four-corner object* `Corner` already met as
-articulation phase, bilattice `Charge`, `Modal` `{neither,◇,□,both}`, and the
+articulation phase, bilattice `Reading`, `Modal` `{neither,◇,□,both}`, and the
 predicate `Generator`s (`QuartetRecurrence`).
 
 The bijection is **forced** by Diátaxis's own two axes. Daniele Procida splits the
@@ -27,18 +27,18 @@ four documents on two independent binary axes:
 * **action ↔ cognition** ("practical steps" vs "theoretical knowledge"):
   tutorials/how-to are practical; explanation/reference are theoretical.
 
-These are exactly the two articulation coordinates `(token, claim)` (= `Charge.pos`,
-`Charge.neg`): `token`-articulated **is** *application* (orienting to use/work) and
+These are exactly the two articulation coordinates `(token, claim)` (= `Reading.pos`,
+`Reading.neg`): `token`-articulated **is** *application* (orienting to use/work) and
 `claim`-articulated **is** *cognition* (orienting to the proposition/why). So:
 
-| Diátaxis     | `Corner`    | `(token, claim)` | `Charge` | Procida axes              |
+| Diátaxis     | `Corner`    | `(token, claim)` | `Reading` | Procida axes              |
 |--------------|-------------|------------------|----------|---------------------------|
 | `tutorial`   | `absurd`    | `(no, no)`       | `⊥ₖ`     | acquisition + action      |
 | `howTo`      | `potential` | `(yes, no)`      | `t`      | application + action      |
 | `explanation`| `active`    | `(no, yes)`      | `f`      | acquisition + cognition   |
 | `reference`  | `stable`    | `(yes, yes)`     | `⊤ₖ`     | application + cognition   |
 
-Because the bijection lands on `Charge`, Diátaxis inherits the **bilattice's two
+Because the bijection lands on `Reading`, Diátaxis inherits the **bilattice's two
 graded orders** — Procida draws a flat 2×2, but the four modes secretly carry:
 
 * the **knowledge order** `≤ₖ` (how decontextualized / how much is spelled out):
@@ -88,7 +88,7 @@ def all : List Diataxis := [tutorial, howTo, explanation, reference]
 
 /-! ## (1) Diátaxis IS `Corner` — the conflation bijection -/
 
-/-- Read a Diátaxis mode as its articulation/charge corner. -/
+/-- Read a Diátaxis mode as its articulation/reading corner. -/
 def toCorner : Diataxis → Corner
   | tutorial    => Corner.absurd
   | howTo       => Corner.potential
@@ -108,7 +108,7 @@ def ofCorner : Corner → Diataxis
   cases c <;> rfl
 
 /-- **`Diataxis ≃ Corner`.** The documentation quartet is the SAME object as the
-articulation phase / bilattice charge / modal four / predicate generators — re-met
+articulation phase / bilattice reading / modal four / predicate generators — re-met
 under documentation names. This is the `Bij` the recurrence record consumes. -/
 def cornerBij : Bij Diataxis Corner where
   to := toCorner
@@ -121,17 +121,17 @@ theorem card_four : all.length = 4 := rfl
 
 /-! ## (2) The two axes are Procida's two axes (faithfully)
 
-`token`-articulated (`Charge.pos`) is *application* (study↔work); `claim`-articulated
-(`Charge.neg`) is *cognition* (practical↔theoretical). The groupings below are
+`token`-articulated (`Reading.pos`) is *application* (study↔work); `claim`-articulated
+(`Reading.neg`) is *cognition* (practical↔theoretical). The groupings below are
 exactly Procida's compass. -/
 
 /-- The **application** coordinate (Procida's acquisition↔application axis): is the
 concrete task/`token` articulated? -/
-def application (d : Diataxis) : Bool := Charge.pos (toCorner d)
+def application (d : Diataxis) : Bool := Reading.pos (toCorner d)
 
 /-- The **cognition** coordinate (Procida's action↔cognition axis): is the
 proposition/`claim` articulated? -/
-def cognition (d : Diataxis) : Bool := Charge.neg (toCorner d)
+def cognition (d : Diataxis) : Bool := Reading.neg (toCorner d)
 
 /-- The application column is exactly `{howTo, reference}` — Procida's "work" side. -/
 theorem application_iff (d : Diataxis) :
@@ -152,18 +152,18 @@ theorem axes_eq_fourCorner (d : Diataxis) :
 
 /-! ## (3) The K₄ symmetry is the two Diátaxis diagonals
 
-`conflate` and `negate` (the bilattice's two order-dualities) act on `Charge = Corner`;
+`conflate` and `negate` (the bilattice's two order-dualities) act on `Reading = Corner`;
 transported along `cornerBij` they are the two diagonal swaps of the Diátaxis square. -/
 
 /-- The **learning↔lookup** duality `conflate −` (the main diagonal): swaps the
 fully-scaffolded `tutorial` with the fully-decontextualized `reference`, fixing the
 two middles. Reverses `≤ₖ`, preserves `≤ₜ`. -/
-def lookupDual (d : Diataxis) : Diataxis := ofCorner (Charge.conflate (toCorner d))
+def lookupDual (d : Diataxis) : Diataxis := ofCorner (Reading.conflate (toCorner d))
 
 /-- The **doing↔understanding** duality `negate ~` (the anti-diagonal): swaps the
 definite `howTo` with the discursive `explanation`, fixing `tutorial`/`reference`.
 Reverses `≤ₜ`, preserves `≤ₖ`. -/
-def doingDual (d : Diataxis) : Diataxis := ofCorner (Charge.negate (toCorner d))
+def doingDual (d : Diataxis) : Diataxis := ofCorner (Reading.negate (toCorner d))
 
 @[simp] theorem lookupDual_tutorial    : lookupDual tutorial    = reference   := rfl
 @[simp] theorem lookupDual_reference   : lookupDual reference   = tutorial    := rfl
@@ -177,18 +177,18 @@ def doingDual (d : Diataxis) : Diataxis := ofCorner (Charge.negate (toCorner d))
 
 /-- Both dualities are involutions, they commute, and their composite is the
 **antipode** (`negConf`, swapping both diagonals) — the Klein-four `K₄ = ℤ/2 × ℤ/2`
-of the documentation square, exactly `Charge.klein_four` re-met on `Diataxis`. -/
+of the documentation square, exactly `Reading.klein_four` re-met on `Diataxis`. -/
 theorem klein_four (d : Diataxis) :
     lookupDual (lookupDual d) = d
       ∧ doingDual (doingDual d) = d
       ∧ lookupDual (doingDual d) = doingDual (lookupDual d)
-      ∧ lookupDual (doingDual d) = ofCorner (Charge.negConf (toCorner d)) := by
+      ∧ lookupDual (doingDual d) = ofCorner (Reading.negConf (toCorner d)) := by
   cases d <;> decide
 
 /-! ## (4) The headline — Diátaxis is yet another face of the recurring four -/
 
 /-- The bundle certifying that `Diataxis` joins `quartet_recurrence`: it bijects with
-`Corner` (hence with `FourCorner`, `Charge`, `Modal`, `Generator`), it is exhaustively
+`Corner` (hence with `FourCorner`, `Reading`, `Modal`, `Generator`), it is exhaustively
 four, its two axes are Procida's two axes / the `(token, claim)` partition, and its
 two diagonals are the bilattice's K₄ dualities. -/
 structure DiataxisIsRecurringFour where
@@ -203,14 +203,14 @@ structure DiataxisIsRecurringFour where
   card_four : all.length = 4
   /-- The learning↔lookup diagonal is `conflate`. -/
   lookup_is_conflate : ∀ d : Diataxis,
-    lookupDual d = ofCorner (Charge.conflate (toCorner d))
+    lookupDual d = ofCorner (Reading.conflate (toCorner d))
   /-- The doing↔understanding diagonal is `negate`. -/
   doing_is_negate : ∀ d : Diataxis,
-    doingDual d = ofCorner (Charge.negate (toCorner d))
+    doingDual d = ofCorner (Reading.negate (toCorner d))
 
 /-- **THE DIÁTAXIS FACE.** The documentation quartet is the recurring FOUR: the same
 four-corner object `quartet_recurrence` exhibits as articulation phase, bilattice
-charge, modal four, and predicate generators is *also* the Diátaxis tetrad, with
+reading, modal four, and predicate generators is *also* the Diátaxis tetrad, with
 Procida's two axes the `(token, claim)` partition and Procida's two diagonals the
 bilattice K₄. No axioms. -/
 theorem diataxis_is_recurring_four : DiataxisIsRecurringFour where

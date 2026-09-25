@@ -19,7 +19,7 @@ The claim-site carried here is:
 
 * claim-site: closure-regime classifier;
 * phase: closure;
-* generating sites: charge closure, closure ordinal, finite base, Scott behavior;
+* generating sites: reading closure, closure ordinal, finite base, Scott behavior;
 * Lean carrier: `Obsmetrologia.Closure.Regime`;
 * familiar comparison: finite convergence, domain-theoretic Scott behavior,
   transfinite iteration, and aperiodicity;
@@ -120,7 +120,7 @@ maps.
 
 ## The Spine Is Strict
 
-The finite charge spine supplies canonical regime data:
+The finite reading spine supplies canonical regime data:
 
 {docstring Obsmetrologia.spineData}
 
@@ -138,14 +138,14 @@ Checked:
 example : classify spineData = ClosureRegime.strict :=
   spine_is_strict
 
-example (f : Charge -> Charge)
-    (hf : forall a, Charge.KLE a (f a))
-    (x : Charge) :
-    Charge.SettlesBy f x 3 :=
+example (f : Reading -> Reading)
+    (hf : forall a, Reading.KLE a (f a))
+    (x : Reading) :
+    Reading.SettlesBy f x 3 :=
   spine_settles_by_three f hf x
 ```
 
-This is why the finite charge lattice is not merely an example. It is the strict
+This is why the finite reading lattice is not merely an example. It is the strict
 base case of the regime story. Later non-Scott and aperiodic phenomena are read
 against this strict spine.
 
@@ -178,7 +178,7 @@ the obstruction becomes live.
 
 If this chapter fails for a reader, use this route:
 
-1. Read `Obsmetrologia.Closure.Operator` for closure operators on charges.
+1. Read `Obsmetrologia.Closure.Operator` for closure operators on readings.
 2. Read `Obsmetrologia.Closure.Ordinal.Finite` for the strict finite settling bound.
 3. Read `Obsmetrologia.Closure.Regime` for the four-way classifier.
 4. Read `Obsmetrologia.Closure.Scott` for the Scott-continuous side of the split.

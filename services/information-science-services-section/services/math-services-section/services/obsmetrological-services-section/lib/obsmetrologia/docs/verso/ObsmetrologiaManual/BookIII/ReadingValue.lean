@@ -5,23 +5,23 @@ open Verso.Genre Manual InlineLean
 open Obsmetrologia
 
 /-!
-A teaching chapter for charge as the first value object.
+A teaching chapter for reading as the first value object.
 -/
 
-#doc (Manual) "Charge as value" =>
+#doc (Manual) "Reading as value" =>
 
-# Charge As Value
+# Reading As Value
 
-Charge is the first lawful value object in Obsmetrologia.
+Reading is the first lawful value object in Obsmetrologia.
 
 The claim-site carried here is:
 
-* claim-site: bilattice charge;
+* claim-site: bilattice reading;
 * phase: language;
 * generating sites: articulation corner, predication cell, positing;
-* Lean carrier: `Obsmetrologia.Language.Positing.Charge`;
+* Lean carrier: `Obsmetrologia.Language.Positing.Reading`;
 * familiar comparison: four-valued bilattice, truth and knowledge orders;
-* danger: reading charge as Boolean truth.
+* danger: reading reading as Boolean truth.
 
 The governing sentence is:
 
@@ -32,27 +32,27 @@ The governing sentence is:
 
 Lean makes the strongest possible statement:
 
-{docstring Obsmetrologia.Charge}
+{docstring Obsmetrologia.Reading}
 
-`Charge` is definitionally the articulation corner:
+`Reading` is definitionally the articulation corner:
 
 ```lean
-example (c : Articulating.Corner) : (c : Charge) = c :=
+example (c : Articulating.Corner) : (c : Reading) = c :=
   rfl
 ```
 
 This is not analogy. The four-corner object first met as articulation status is
 met again as value.
 
-The four distinguished charges are:
+The four distinguished readings are:
 
-{docstring Obsmetrologia.Charge.kBot}
+{docstring Obsmetrologia.Reading.kBot}
 
-{docstring Obsmetrologia.Charge.tTop}
+{docstring Obsmetrologia.Reading.tTop}
 
-{docstring Obsmetrologia.Charge.tBot}
+{docstring Obsmetrologia.Reading.tBot}
 
-{docstring Obsmetrologia.Charge.kTop}
+{docstring Obsmetrologia.Reading.kTop}
 
 The readings are:
 
@@ -63,36 +63,36 @@ The readings are:
 
 ## Two Orders
 
-Charge has two orders.
+Reading has two orders.
 
 The knowledge order measures how much evidence is present:
 
-{docstring Obsmetrologia.Charge.leK}
+{docstring Obsmetrologia.Reading.leK}
 
 The truth order measures truth-like orientation:
 
-{docstring Obsmetrologia.Charge.leT}
+{docstring Obsmetrologia.Reading.leT}
 
-The knowledge bottom is below every charge:
+The knowledge bottom is below every reading:
 
-{docstring Obsmetrologia.Charge.kBot_leK}
+{docstring Obsmetrologia.Reading.kBot_leK}
 
 Checked:
 
 ```lean
-example (c : Charge) : Charge.leK Charge.kBot c = true :=
-  Charge.kBot_leK c
+example (c : Reading) : Reading.leK Reading.kBot c = true :=
+  Reading.kBot_leK c
 ```
 
-The truth bottom is below every charge in the truth order:
+The truth bottom is below every reading in the truth order:
 
-{docstring Obsmetrologia.Charge.tBot_le}
+{docstring Obsmetrologia.Reading.tBot_le}
 
 Checked:
 
 ```lean
-example (c : Charge) : Charge.TLE Charge.tBot c :=
-  Charge.tBot_le c
+example (c : Reading) : Reading.TLE Reading.tBot c :=
+  Reading.tBot_le c
 ```
 
 The repair lesson is simple: when a later page says "order," it must say which
@@ -102,26 +102,26 @@ order. Knowledge and truth are not two notations for the same comparison.
 
 The two orders have their own joins and meets:
 
-{docstring Obsmetrologia.Charge.joinK}
+{docstring Obsmetrologia.Reading.joinK}
 
-{docstring Obsmetrologia.Charge.meetK}
+{docstring Obsmetrologia.Reading.meetK}
 
-{docstring Obsmetrologia.Charge.joinT}
+{docstring Obsmetrologia.Reading.joinT}
 
-{docstring Obsmetrologia.Charge.meetT}
+{docstring Obsmetrologia.Reading.meetT}
 
 Knowledge join adds evidence:
 
 ```lean
-example (c : Charge) : Charge.joinK Charge.kBot c = c :=
-  Charge.joinK_kBot c
+example (c : Reading) : Reading.joinK Reading.kBot c = c :=
+  Reading.joinK_kBot c
 ```
 
 Truth join raises toward truth while treating negative evidence differently:
 
 ```lean
-example (c : Charge) : Charge.joinT c Charge.tBot = c :=
-  Charge.joinT_tBot c
+example (c : Reading) : Reading.joinT c Reading.tBot = c :=
+  Reading.joinT_tBot c
 ```
 
 This is why Boolean truth is a collapse. Boolean truth remembers only one axis
@@ -132,42 +132,42 @@ orders.
 
 Negation swaps the two evidence slots:
 
-{docstring Obsmetrologia.Charge.negate}
+{docstring Obsmetrologia.Reading.negate}
 
 It preserves knowledge order and reverses truth order:
 
-{docstring Obsmetrologia.Charge.negate_leK}
+{docstring Obsmetrologia.Reading.negate_leK}
 
-{docstring Obsmetrologia.Charge.negate_leT}
+{docstring Obsmetrologia.Reading.negate_leT}
 
 At the four-pole level:
 
 ```lean
-example : Charge.negate Charge.tTop = Charge.tBot := rfl
+example : Reading.negate Reading.tTop = Reading.tBot := rfl
 
-example : Charge.negate Charge.kTop = Charge.kTop := rfl
+example : Reading.negate Reading.kTop = Reading.kTop := rfl
 ```
 
 The capstone `Four` module adds conflation and the Klein-four symmetry:
 
-{docstring Obsmetrologia.Charge.klein_four}
+{docstring Obsmetrologia.Reading.klein_four}
 
 Checked:
 
 ```lean
-example (c : Charge) :
-    Charge.negate (Charge.negate c) = c
-      ∧ Charge.conflate (Charge.conflate c) = c
-      ∧ Charge.negConf (Charge.negConf c) = c
-      ∧ Charge.negate
-          (Charge.conflate c) = Charge.negConf c
-      ∧ Charge.conflate
-          (Charge.negate c) = Charge.negConf c :=
-  Charge.klein_four c
+example (c : Reading) :
+    Reading.negate (Reading.negate c) = c
+      ∧ Reading.conflate (Reading.conflate c) = c
+      ∧ Reading.negConf (Reading.negConf c) = c
+      ∧ Reading.negate
+          (Reading.conflate c) = Reading.negConf c
+      ∧ Reading.conflate
+          (Reading.negate c) = Reading.negConf c :=
+  Reading.klein_four c
 ```
 
 This is the group projection of the four-valued phase. It belongs here because
-positing has generated the four-valued charge object.
+positing has generated the four-valued reading object.
 
 ## Repair Path
 
@@ -175,11 +175,11 @@ If this chapter fails for a reader, use this route:
 
 1. Read `Obsmetrologia.Articulation.Articulating.FourCorner` for the four-corner
    status object.
-2. Read `Obsmetrologia.Language.Positing.Charge` for charge as value.
+2. Read `Obsmetrologia.Language.Positing.Reading` for reading as value.
 3. Read `Obsmetrologia.Language.Positing.TruthOrder` for the second order.
 4. Read `Obsmetrologia.Language.Positing.Four` for the recurring four and Klein-four
    symmetry.
 5. Then read valuation and fiber algebra.
 
-Do not explain charge as "truth value." Explain it as independent evidence for
+Do not explain reading as "truth value." Explain it as independent evidence for
 and against, with Boolean truth recovered only by collapse.

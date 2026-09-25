@@ -173,9 +173,9 @@ The record is the existing four-corner status:
 
 {docstring Obsmetrologia.Articulating.FourCorner}
 
-The bridge to charge is also existing Lean:
+The bridge to reading is also existing Lean:
 
-{docstring Obsmetrologia.articulation_phase_is_charge}
+{docstring Obsmetrologia.articulation_phase_is_reading}
 
 So the first honest bit is not a computer bit. It is the token/claim status
 record carried by the articulation cell.

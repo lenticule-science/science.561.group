@@ -57,7 +57,7 @@ A concept is the module-scale unit. It answers:
 * which Blueprint nodes depend on it?
 
 Examples include mark, utterance, articulating, articulation cell, predication
-cell, charge, valuation, closure, settling, sheaf, cohomology, and gauge.
+cell, reading, valuation, closure, settling, sheaf, cohomology, and gauge.
 
 Concept pages are where the main Explanations live. They should also include
 short Tutorials and How-to paths when a reader needs to learn by doing.

@@ -194,7 +194,7 @@ example (M : Valuation.ModalFrame) (seed : Valuation)
     ∧ H0 (M.settle seed) cells
       = cells.countP
         (fun φ =>
-          Charge.isTruthFiring ((M.settle seed) φ)) :=
+          Reading.isTruthFiring ((M.settle seed) φ)) :=
   lawvere_harmonic_section_classifying_invariant_zero
     M seed r hr c cells
 ```

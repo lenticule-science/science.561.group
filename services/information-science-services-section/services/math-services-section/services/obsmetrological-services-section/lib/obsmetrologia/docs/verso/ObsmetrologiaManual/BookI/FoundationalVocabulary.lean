@@ -124,12 +124,12 @@ it carries. `Valuation` is a carrier:
 Checked:
 
 ```lean
-example : Valuation = (PredicationCell -> Charge) :=
-  Valuation.isClaimCharge
+example : Valuation = (PredicationCell -> Reading) :=
+  Valuation.isClaimReading
 ```
 
 The claim-site is not the function type alone. It is the generated mathematical
-address: charge over predication cells after predication and positing are lawful.
+address: reading over predication cells after predication and positing are lawful.
 
 ## Predication Cell And Site Point
 
@@ -173,11 +173,11 @@ A generating site is an earlier claim-site whose carrier supplies the material
 needed by a later one. Generation is not citation. It is dependency with lawful
 transport.
 
-For example, the articulation corner is generated before charge:
+For example, the articulation corner is generated before reading:
 
 {docstring Obsmetrologia.Articulating.Corner.card_eq_four}
 
-and the un-articulated absurd articulation cell transports to the knowledge-bottom charge:
+and the un-articulated absurd articulation cell transports to the knowledge-bottom reading:
 
 {docstring Obsmetrologia.absurd_is_kBot}
 
@@ -190,7 +190,7 @@ example : Articulating.Corner.all.length = 4 :=
 example (u : Utterance) :
     Articulating.FourCorner.toCorner
         (Articulating.Cell.unarticulated u).fourCorner =
-      Charge.kBot :=
+      Reading.kBot :=
   absurd_is_kBot u
 ```
 
@@ -210,10 +210,10 @@ The test is strict:
 * if the familiar theorem is stronger than the carrier proves, the excess is
   frontier.
 
-The recurring FOUR is a typical comparison trap. The articulation corner and charge
+The recurring FOUR is a typical comparison trap. The articulation corner and reading
 meet, but the meeting is carried by a theorem:
 
-{docstring Obsmetrologia.articulation_phase_is_charge}
+{docstring Obsmetrologia.articulation_phase_is_reading}
 
 Without such a carrier, resemblance is not theorem.
 
@@ -353,8 +353,8 @@ example (u : Utterance) :
       ⟨u.token, u.claim, u.token⟩ :=
   rfl
 
-example : Valuation = (PredicationCell -> Charge) :=
-  Valuation.isClaimCharge
+example : Valuation = (PredicationCell -> Reading) :=
+  Valuation.isClaimReading
 
 example :
     classify spineData = ClosureRegime.strict :=

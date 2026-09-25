@@ -25,14 +25,14 @@ The claim-site carried here is:
 * claim-site: d-frame and quantale-enriched sites as promoted gluing carriers;
 * phase: fibered and cohomological matter, after ordinary site restriction and
   associated sheaf sections are lawful;
-* generating sites: clopen covers, valuation masks, Belnap charge, section
+* generating sites: clopen covers, valuation masks, Belnap reading, section
   restriction, consistency/totality, and degree-zero cohomology;
 * downstream uses: inconsistency sheaves, quantale-valued cohomology,
   contextuality witnesses, plasma wave sheaf criterions, and frontier descent
   diagnostics;
 * Lean declarations: `Obsmetrologia.DFrame.DFrame`,
   `Obsmetrologia.DFrame.dframe_valued_sheaf`,
-  `Obsmetrologia.QEnriched.chargeQuantale`,
+  `Obsmetrologia.QEnriched.readingQuantale`,
   `Obsmetrologia.QEnriched.QCat`,
   `Obsmetrologia.QEnriched.q_fuzzy_equivalence_composes`;
 * Blueprint/proof-tree nodes: no primitive proof-tree node generates these
@@ -106,32 +106,32 @@ example (m : PredicationCell -> Bool)
 The reader closure is to stop treating inconsistency as a side annotation.
 At this claim-site it is one side of the gluing carrier.
 
-## Charge Is The Quantale
+## Reading Is The Quantale
 
-Quantale enrichment begins from the generated FOUR/Charge value. It does not
+Quantale enrichment begins from the generated FOUR/Reading value. It does not
 import an arbitrary metric or topology.
 
 The concrete quantale is:
 
-{docstring Obsmetrologia.QEnriched.chargeQuantale}
+{docstring Obsmetrologia.QEnriched.readingQuantale}
 
 Checked:
 
 ```lean
 example :
-    QEnriched.chargeQuantale.one
-      = Charge.kTop :=
+    QEnriched.readingQuantale.one
+      = Reading.kTop :=
   rfl
 ```
 
 The familiar comparison is a commutative unital quantale. The generated carrier is
-more specific: multiplication is knowledge meet over the existing charge object.
+more specific: multiplication is knowledge meet over the existing reading object.
 
 ## Q-Categories And Fuzzy Equivalence
 
 The enriched category carrier is {name Obsmetrologia.QEnriched.QCat}`QCat`.
 Its functors are {name Obsmetrologia.QEnriched.QFunctor}`QFunctor`s.
-The structural theorem says the Charge quantale, one-object category, discrete
+The structural theorem says the Reading quantale, one-object category, discrete
 category, identity functor, and functor composition cohere:
 
 {docstring Obsmetrologia.QEnriched.qcat_is_quantale_category}
@@ -158,15 +158,15 @@ untyped analogy between physical systems.
 ## Degree-Zero Enriched Cohomology
 
 The present enriched cohomology carrier is intentionally small. It proves the
-degree-zero fixed-point core over the charge quantale:
+degree-zero fixed-point core over the reading quantale:
 
 {docstring Obsmetrologia.QEnriched.h0_laplacian_fixed_points}
 
 Checked:
 
 ```lean
-example (s : Charge) :
-    (forall x : Charge,
+example (s : Reading) :
+    (forall x : Reading,
         QEnriched.laplacian s
           (QEnriched.laplacian s x)
           = QEnriched.laplacian s x) :=
@@ -175,7 +175,7 @@ example (s : Charge) :
 
 The frontier boundary is explicit. Full enriched cohomology over arbitrary
 degrees and arbitrary sites is not claimed here. The carrier present today is
-degree-zero Laplacian fixedness over the generated charge quantale.
+degree-zero Laplacian fixedness over the generated reading quantale.
 
 ## Reader Closure
 

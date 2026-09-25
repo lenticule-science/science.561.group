@@ -90,7 +90,7 @@ example (a : Articulating) :
 
 **Ruled 2026-09-21.** It does not replace `Spine.predicate`, and no owner
 ruling remains pending on that point: the oriented cell is what *measuring*
-reads. `Obsmetrologia.measure k trace φ` (Book II's measured-charge page)
+reads. `Obsmetrologia.measure k trace φ` (Book II's measured-reading page)
 collects, for a claim `φ`, the head tokens of every articulating in a trace
 whose `orientedCell` equals `φ` — so it is articulating's own generated
 cells, oriented, that a measured valuation is built against, and this page's

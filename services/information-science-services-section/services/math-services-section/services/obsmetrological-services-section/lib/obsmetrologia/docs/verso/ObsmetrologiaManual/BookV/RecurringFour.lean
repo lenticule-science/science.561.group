@@ -40,7 +40,7 @@ The claim-site carried here is:
 
 * claim-site: recurring four-corner coherence cell;
 * phase: fourfold relational matter;
-* generating sites: articulation corner, charge, modal reading, nuclear quartet,
+* generating sites: articulation corner, reading, modal reading, nuclear quartet,
   commuting pair;
 * Lean carrier: `Obsmetrologia.Language.Positing.Quartet`;
 * familiar comparison: Klein-four symmetry, modal diamond/box, commuting nuclei;
@@ -108,16 +108,16 @@ The theorem is not merely cardinality. It says the four-corner reading through
 `Bool x Bool`, through modal vocabulary, and through the articulation phase all
 round-trip coherently.
 
-The articulation-to-charge field is especially important:
+The articulation-to-reading field is especially important:
 
 ```lean
 example (c : Articulating.Cell) :
     Articulating.FourCorner.toCorner c.fourCorner
       = c.corner :=
-  articulation_phase_is_charge c
+  articulation_phase_is_reading c
 ```
 
-That example is a small proof of the book's discipline. The charge reading is
+That example is a small proof of the book's discipline. The reading reading is
 not pasted onto articulation. It is reached by an explicit theorem.
 
 ## The Shared Coherence Cell
@@ -140,7 +140,7 @@ and the generic square is:
 Checked:
 
 ```lean
-example (P : CommutingPair Charge) (a : Charge) :
+example (P : CommutingPair Reading) (a : Reading) :
     P.cornerOp Articulating.Corner.stable a
       = (fun a => P.g (P.f a)) a :=
   P.square a
@@ -152,7 +152,7 @@ to the doubly-acted corner agree.
 
 ## Twistoring And Commutating
 
-At the charge depth, the commuting pair is twistoring:
+At the reading depth, the commuting pair is twistoring:
 
 {docstring Obsmetrologia.twistoringPair}
 
@@ -170,7 +170,7 @@ Checked:
 example : TwistoringEqCommutating :=
   twistoring_eq_commutating
 
-example (a : Charge) :
+example (a : Reading) :
     twistoringPair.cornerOp Articulating.Corner.stable a
       = (fun a =>
           twistoringPair.g
@@ -188,7 +188,7 @@ example (H : Order.HeytingAlgebra)
   (commutatingPair Q).square a
 ```
 
-This is the strongest form of restraint. At charge depth the two maps are
+This is the strongest form of restraint. At reading depth the two maps are
 involutions. At nuclear depth the two maps are idempotent nuclei. The shared
 object is not those extra laws. The shared object is the commuting-square
 coherence cell indexed by the four corners.
@@ -254,8 +254,8 @@ If this chapter fails for a reader, use this route:
 1. Read `Obsmetrologia.Articulation.Articulating.Cell` for the first four generated
    corners.
 2. Read `Obsmetrologia.Articulation.Articulating.FourCorner` for the first transport
-   from status pair to charge corner.
-3. Read `Obsmetrologia.Language.Positing.Four` for charge operations and Klein-four
+   from status pair to reading corner.
+3. Read `Obsmetrologia.Language.Positing.Four` for reading operations and Klein-four
    symmetry.
 4. Read `Obsmetrologia.Language.Positing.NucleusAndCommutingNuclei` for the nuclear
    quartet.

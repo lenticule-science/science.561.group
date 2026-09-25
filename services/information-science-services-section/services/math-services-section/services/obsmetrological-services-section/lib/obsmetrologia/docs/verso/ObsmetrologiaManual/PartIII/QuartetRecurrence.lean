@@ -37,7 +37,7 @@ _coherence square_ recorded separately as {name Obsmetrologia.twistoring_eq_comm
 We build the claim in five steps:
 
 1. the four-corner cell is _forced_ by two-sidedness — exactly four corners, not three or five;
-2. the same object carries _five readings_ (articulation phase, status pair, bilattice charge, nuclear quartet, modal four);
+2. the same object carries _five readings_ (articulation phase, status pair, bilattice reading, nuclear quartet, modal four);
 3. the _master conflation_ certifies those readings are one object;
 4. the _coherence 2-cell_ abstracts the commuting square the readings share;
 5. that square recurs at two genuinely different depths — the _honest scope_ of the claim.
@@ -72,8 +72,8 @@ Lean, so none of them is a _new_ object:
 * _Articulation phase_ — `{potential, active, stable, absurd}`, read off a cell's
   two articulation statuses ({name Obsmetrologia.Articulating.Cell.corner}`Articulating.Cell.corner`).
 * _Status pair_ — {name Obsmetrologia.Articulating.FourCorner}`FourCorner`, that is `Bool × Bool`.
-* _Bilattice charge_ — the four evidence values positing admits,
-  {name Obsmetrologia.Charge}`Charge`, which is definitionally {name Obsmetrologia.Articulating.Corner}`Corner`.
+* _Bilattice reading_ — the four evidence values positing admits,
+  {name Obsmetrologia.Reading}`Reading`, which is definitionally {name Obsmetrologia.Articulating.Corner}`Corner`.
 * _Nuclear quartet_ — the four sub-algebras `(A, Fix j₁, Fix j₂, A*)` of a settled
   fiber algebra.
 * _Modal four_ — `{neither, ◇, □, both}`: apply neither closure, `j₁` alone (◇),
@@ -98,7 +98,7 @@ The five readings are collected into one statement. {name Obsmetrologia.QuartetR
 bundles the round-trip identities — every reading's path back to
 {name Obsmetrologia.Articulating.Corner}`Corner` is the identity — together with the load-bearing
 identity that an articulation phase, read as a four-corner, already _is_ a
-bilattice charge, and with exhaustiveness.
+bilattice reading, and with exhaustiveness.
 
 {docstring Obsmetrologia.QuartetRecurrence}
 
@@ -119,16 +119,16 @@ example : Articulating.Corner.all.length = 4 :=
   Articulating.Corner.card_eq_four
 ```
 
-and the articulation-phase-is-charge field is the reused
-{name Obsmetrologia.articulation_phase_is_charge}`articulation_phase_is_charge`. The
-un-articulated (neither-slot-witnessed) cell sits at the knowledge-bottom charge
+and the articulation-phase-is-reading field is the reused
+{name Obsmetrologia.articulation_phase_is_reading}`articulation_phase_is_reading`. The
+un-articulated (neither-slot-witnessed) cell sits at the knowledge-bottom reading
 `⊥ₖ`, the start of the descent in _both_ readings at once:
 
 ```lean
 example (u : Utterance) :
     Articulating.FourCorner.toCorner
         (Articulating.Cell.unarticulated u).fourCorner
-      = Charge.kBot := rfl
+      = Reading.kBot := rfl
 ```
 
 ## 4. The coherence 2-cell
@@ -153,7 +153,7 @@ doubly-acted `absurd` corner is path-independent — `f (g a) = g (f a)`.
 The generic square is instantiated at two genuinely different depths of the spine:
 
 * {name Obsmetrologia.twistoringPair}`twistoringPair` — at the articulating birth-corner,
-  on {name Obsmetrologia.Charge}`Charge`, with `f` the slot negation `∼` and `g` the
+  on {name Obsmetrologia.Reading}`Reading`, with `f` the slot negation `∼` and `g` the
   conflation `−`, commuting by the Klein-four law;
 * {name Obsmetrologia.commutatingPair}`commutatingPair` — on a settled Heyting fiber,
   with `f, g` the two commuting nuclei `j₁, j₂` of an aperiodic settling.
@@ -162,11 +162,11 @@ The generic square is instantiated at two genuinely different depths of the spin
 
 {docstring Obsmetrologia.commutatingPair}
 
-Instantiated on {name Obsmetrologia.Charge}`Charge`, the coherence square is a concrete,
+Instantiated on {name Obsmetrologia.Reading}`Reading`, the coherence square is a concrete,
 checked identity:
 
 ```lean
-example (a : Charge) :
+example (a : Reading) :
     twistoringPair.cornerOp .absurd a
       = twistoringPair.g (twistoringPair.f a) :=
   twistoringPair.square a

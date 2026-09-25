@@ -71,9 +71,9 @@ the recovered maps are the originals.
 ## 5. The instances inside Obsmetrologia
 
 The thesis is then realized on Obsmetrologia's own structure. The thin *knowledge-presheaf
-category* over {name Obsmetrologia.Charge}`Charge` — objects are charges, an arrow `a ⟶ b` is
+category* over {name Obsmetrologia.Reading}`Reading` — objects are readings, an arrow `a ⟶ b` is
 a proof `a ≤ₖ b` — has the property that an iso of arrow-bundles forces equality of
-charges ({name Obsmetrologia.Yoneda.kp_object_is_its_arrows}`kp_object_is_its_arrows`). And
+readings ({name Obsmetrologia.Yoneda.kp_object_is_its_arrows}`kp_object_is_its_arrows`). And
 the predication category itself, whose objects are predication cells, satisfies the
 same ({name Obsmetrologia.Yoneda.predication_object_is_its_arrows}`predication_object_is_its_arrows`).
 

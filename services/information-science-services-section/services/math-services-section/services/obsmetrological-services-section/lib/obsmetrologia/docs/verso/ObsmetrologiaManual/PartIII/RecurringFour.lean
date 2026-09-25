@@ -23,7 +23,7 @@ it as a slogan. The manual needs a place where each occurrence is compared with
 the others:
 
 * articulation phase;
-* bilattice charge;
+* bilattice reading;
 * truth and knowledge orders;
 * negation and conflation;
 * Klein-four action;

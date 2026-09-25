@@ -274,7 +274,7 @@ Each cover member generates a local valuated reading:
 
   A valuated reading also gives the first honest bridge from topic covers to
   sheaf-style masks. A clopen is read through the valuation's positive and
-  negative charge slots:
+  negative reading slots:
 
   {docstring Obsmetrologia.PredicationCell.ValuatedTermReading.clopenPatch}
 
@@ -461,9 +461,9 @@ example {C D : PredicationCell.TermContext}
     (v : Valuation) {q : PredicationCell} {t : C.Term}
     (hsupport : forall q',
       PredicationCell.TermContext.profile D (F.termMap t) q' ->
-        Charge.isTruthFiring (v q') = true)
+        Reading.isTruthFiring (v q') = true)
     (h : PredicationCell.TermContext.profile C t q) :
-    Charge.isTruthFiring
+    Reading.isTruthFiring
       (PredicationCell.TermContext.Hom.pullbackValuation
         F v q) = true :=
   PredicationCell.TermContext.Hom.pullback_supports_profile
@@ -478,7 +478,7 @@ example {C D : PredicationCell.TermContext}
 
 example {C D : PredicationCell.TermContext}
     (F : PredicationCell.TermContext.Hom C D)
-    (c : Charge.Closure) (v : Valuation) :
+    (c : Reading.Closure) (v : Valuation) :
     PredicationCell.TermContext.Hom.pullbackValuation F
         (Valuation.liftOp c.op v) =
       Valuation.liftOp c.op
@@ -489,7 +489,7 @@ example {C D : PredicationCell.TermContext}
 example {C : PredicationCell.TermContext}
     (R : PredicationCell.ValuatedTermReading C) {q : PredicationCell}
     (h : PredicationCell.TermContext.profile C R.reading.term q) :
-    Charge.isTruthFiring (R.valuation q) = true :=
+    Reading.isTruthFiring (R.valuation q) = true :=
   PredicationCell.ValuatedTermReading.supports_profile R h
 
 example {C : PredicationCell.TermContext}
@@ -524,7 +524,7 @@ example {C : PredicationCell.TermContext}
       PredicationCell.TermContext.profile C
         (PredicationCell.ValuatedTermReading.restrict
           R f).reading.term q) :
-    Charge.isTruthFiring
+    Reading.isTruthFiring
         ((PredicationCell.ValuatedTermReading.restrict
           R f).valuation q) =
       true :=
@@ -561,7 +561,7 @@ example {C : PredicationCell.TermContext}
       PredicationCell.TermContext.profile C
         (PredicationCell.ValuatedTermReading.coverRestriction
           R Ui hUi).reading.term q) :
-    Charge.isTruthFiring
+    Reading.isTruthFiring
         ((PredicationCell.ValuatedTermReading.coverRestriction
           R Ui hUi).valuation q) =
       true :=
@@ -682,7 +682,7 @@ example {F : PredicationCell.IntensionalFrame}
     (hsupport : forall q,
       PredicationCell.TermContext.profile
         (F.context i) (T.termAt i) q ->
-        Charge.isTruthFiring (v q) = true) :
+        Reading.isTruthFiring (v q) = true) :
     (forall Ui,
         Ui ∈ (PredicationCell.IntensionalFrame.primaryValuatedReading
           T i point h v hsupport).reading.topic.cover ->
@@ -704,7 +704,7 @@ example {F : PredicationCell.IntensionalFrame}
     (hsupport : forall q,
       PredicationCell.TermContext.profile
         (F.context i) (T.termAt i) q ->
-        Charge.isTruthFiring (v q) = true) :
+        Reading.isTruthFiring (v q) = true) :
     PredicationCell.ValuatedTermReading.PatchFamily :=
   primaryPatchFamily T i point h v hsupport
 
@@ -718,7 +718,7 @@ example {F : PredicationCell.IntensionalFrame}
     (hsupport : forall q,
       PredicationCell.TermContext.profile
         (F.context i) (T.termAt i) q ->
-        Charge.isTruthFiring (v q) = true) :
+        Reading.isTruthFiring (v q) = true) :
     forall φ,
       (primaryPatchFamily
         T i point h v hsupport).support φ =
@@ -739,7 +739,7 @@ example {F : PredicationCell.IntensionalFrame}
     (hsupport : forall q,
       PredicationCell.TermContext.profile
         (F.context i) (T.termAt i) q ->
-        Charge.isTruthFiring (v q) = true)
+        Reading.isTruthFiring (v q) = true)
     (hfull : forall φ,
       PredicationCell.ValuatedTermReading.clopenPatch
         v point.U φ = true) :
@@ -790,11 +790,11 @@ example {F : PredicationCell.IntensionalFrame}
     (hsupport : forall q,
       PredicationCell.TermContext.profile
         (F.context A.actual) A.term q ->
-        Charge.isTruthFiring (v q) = true) :
+        Reading.isTruthFiring (v q) = true) :
     forall q,
       PredicationCell.TermContext.profile (F.context A.actual)
         ((A.transport A.actual).termMap A.term) q ->
-        Charge.isTruthFiring (v q) = true :=
+        Reading.isTruthFiring (v q) = true :=
   AnchoredTerm.actual_supports_transport A v hsupport
 
 example {F : PredicationCell.IntensionalFrame}
@@ -879,7 +879,7 @@ example {F : PredicationCell.IntensionalFrame}
     (hsupport : forall q,
       PredicationCell.TermContext.profile (F.context i)
         ((A.transport i).termMap A.term) q ->
-        Charge.isTruthFiring (v q) = true) :
+        Reading.isTruthFiring (v q) = true) :
     (forall Ui,
         Ui ∈ (secondaryValuatedReading
           A i point h v hsupport).reading.topic.cover ->
@@ -901,7 +901,7 @@ example {F : PredicationCell.IntensionalFrame}
     (hsupport : forall q,
       PredicationCell.TermContext.profile (F.context i)
         ((A.transport i).termMap A.term) q ->
-        Charge.isTruthFiring (v q) = true) :
+        Reading.isTruthFiring (v q) = true) :
     PredicationCell.ValuatedTermReading.PatchFamily :=
   secondaryPatchFamily A i point h v hsupport
 
@@ -915,7 +915,7 @@ example {F : PredicationCell.IntensionalFrame}
     (hsupport : forall q,
       PredicationCell.TermContext.profile (F.context i)
         ((A.transport i).termMap A.term) q ->
-        Charge.isTruthFiring (v q) = true) :
+        Reading.isTruthFiring (v q) = true) :
     forall φ,
       (secondaryPatchFamily
         A i point h v hsupport).support φ =
@@ -936,7 +936,7 @@ example {F : PredicationCell.IntensionalFrame}
     (hsupport : forall q,
       PredicationCell.TermContext.profile (F.context i)
         ((A.transport i).termMap A.term) q ->
-        Charge.isTruthFiring (v q) = true)
+        Reading.isTruthFiring (v q) = true)
     (hfull : forall φ,
       PredicationCell.ValuatedTermReading.clopenPatch
         v point.U φ = true) :
@@ -953,7 +953,7 @@ example {F : PredicationCell.IntensionalFrame}
     (hsupport : forall q,
       PredicationCell.TermContext.profile (F.context i)
         ((A.transport i).termMap A.term) q ->
-        Charge.isTruthFiring (v q) = true) :
+        Reading.isTruthFiring (v q) = true) :
     primaryPatchFamily
         (PredicationCell.IntensionalFrame.AnchoredTerm.termFamily A)
         i point h v hsupport =
@@ -970,7 +970,7 @@ example {F : PredicationCell.IntensionalFrame}
     (hsupport : forall q,
       PredicationCell.TermContext.profile (F.context i)
         ((A.transport i).termMap A.term) q ->
-        Charge.isTruthFiring (v q) = true)
+        Reading.isTruthFiring (v q) = true)
     (hfull : forall φ,
       PredicationCell.ValuatedTermReading.clopenPatch
         v point.U φ = true) :
@@ -994,7 +994,7 @@ example {F : PredicationCell.IntensionalFrame}
     (hsupport : forall q,
       PredicationCell.TermContext.profile (F.context i)
         ((A.transport i).termMap A.term) q ->
-        Charge.isTruthFiring (v q) = true) :
+        Reading.isTruthFiring (v q) = true) :
     (forall Ui,
         Ui ∈
           (secondaryActualPullbackValuatedReading
@@ -1016,7 +1016,7 @@ example {F : PredicationCell.IntensionalFrame}
     (hsupport : forall q,
       PredicationCell.TermContext.profile (F.context A.actual)
         ((A.transport A.actual).termMap A.term) q ->
-        Charge.isTruthFiring (v q) = true) :
+        Reading.isTruthFiring (v q) = true) :
     (secondaryActualPullbackValuatedReading
       A A.actual point h v hsupport).valuation = v :=
   secondaryActualPullbackValuation_at_actual
@@ -1032,7 +1032,7 @@ example {F : PredicationCell.IntensionalFrame}
     (hsupport : forall q,
       PredicationCell.TermContext.profile (F.context i)
         ((A.transport i).termMap A.term) q ->
-        Charge.isTruthFiring (v q) = true) :
+        Reading.isTruthFiring (v q) = true) :
     PredicationCell.ValuatedTermReading.PatchFamily :=
   secondaryActualPullbackPatchFamily A i point h v hsupport
 
@@ -1046,7 +1046,7 @@ example {F : PredicationCell.IntensionalFrame}
     (hsupport : forall q,
       PredicationCell.TermContext.profile (F.context A.actual)
         ((A.transport A.actual).termMap A.term) q ->
-        Charge.isTruthFiring (v q) = true) :
+        Reading.isTruthFiring (v q) = true) :
     (secondaryActualPullbackPatchFamily
         A A.actual point h v hsupport).support =
       (secondaryPatchFamily
@@ -1064,7 +1064,7 @@ example {F : PredicationCell.IntensionalFrame}
     (hsupport : forall q,
       PredicationCell.TermContext.profile (F.context A.actual)
         ((A.transport A.actual).termMap A.term) q ->
-        Charge.isTruthFiring (v q) = true) :
+        Reading.isTruthFiring (v q) = true) :
     (secondaryActualPullbackPatchFamily
         A A.actual point h v hsupport).patches =
       (secondaryPatchFamily
@@ -1082,7 +1082,7 @@ example {F : PredicationCell.IntensionalFrame}
     (hsupport : forall q,
       PredicationCell.TermContext.profile (F.context i)
         ((A.transport i).termMap A.term) q ->
-        Charge.isTruthFiring (v q) = true) :
+        Reading.isTruthFiring (v q) = true) :
     forall φ,
       (secondaryActualPullbackPatchFamily
         A i point h v hsupport).support φ = true ->
@@ -1103,7 +1103,7 @@ example {F : PredicationCell.IntensionalFrame}
     (hsupport : forall q,
       PredicationCell.TermContext.profile (F.context i)
         ((A.transport i).termMap A.term) q ->
-        Charge.isTruthFiring (v q) = true)
+        Reading.isTruthFiring (v q) = true)
     (hfull : forall φ,
       PredicationCell.ValuatedTermReading.clopenPatch
         (PredicationCell.TermContext.Hom.pullbackValuation
@@ -1138,7 +1138,7 @@ example {F : PredicationCell.IntensionalFrame}
     (hsupport : forall q,
       PredicationCell.TermContext.profile (F.context A.actual)
         ((A.transport A.actual).termMap A.term) q ->
-        Charge.isTruthFiring (v q) = true)
+        Reading.isTruthFiring (v q) = true)
     (hfull : forall φ,
       PredicationCell.ValuatedTermReading.clopenPatch
         (PredicationCell.TermContext.Hom.pullbackValuation

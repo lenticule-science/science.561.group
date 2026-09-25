@@ -426,7 +426,7 @@ example (n : Nat) (w : Fin (n + 1) → Bool) :
 
 This is the point where the finite spectrometer has a readout. What remains
 frontier is the analytic promotion: construct the Fourier transform of a
-translation-bounded charge autocorrelation measure and identify the
+translation-bounded reading autocorrelation measure and identify the
 Bombieri-Taylor component there.
 
 ## C-Lehmer Reduction

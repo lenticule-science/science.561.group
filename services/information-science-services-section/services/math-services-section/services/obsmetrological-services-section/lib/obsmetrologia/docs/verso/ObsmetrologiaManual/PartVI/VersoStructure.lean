@@ -119,7 +119,7 @@ Part II walks the descent: mark, utterance, articulating, predicating, positing,
 and settling.
 
 Part III follows recurrence: the four-corner cell as it reappears across phase,
-charge, gauge, modal shape, nuclear quartet, and regime.
+reading, gauge, modal shape, nuclear quartet, and regime.
 
 Part IV recovers received mathematics in-chain: category, order, equality,
 residuation, hyperdoctrine, sheaf, cohomology, dynamics, geometry, computation,

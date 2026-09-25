@@ -108,14 +108,14 @@ Checked:
 
 ```lean
 example :
-    Charge.KLE (Format.corner Format.bytes)
+    Reading.KLE (Format.corner Format.bytes)
         (Format.corner Format.json)
       /\ Format.cost Format.bytes <
         Format.cost Format.json :=
   Format.cost_can_rise
 
 example :
-    Charge.KLE (Format.corner Format.json)
+    Reading.KLE (Format.corner Format.json)
         (Format.corner Format.rdf)
       /\ Format.cost Format.rdf <
         Format.cost Format.json :=
@@ -123,10 +123,10 @@ example :
 
 example :
     (exists f g,
-      Charge.KLE (Format.corner f) (Format.corner g)
+      Reading.KLE (Format.corner f) (Format.corner g)
         /\ Format.cost f < Format.cost g)
     /\ (exists f g,
-      Charge.KLE (Format.corner f) (Format.corner g)
+      Reading.KLE (Format.corner f) (Format.corner g)
         /\ Format.cost g < Format.cost f) :=
   Format.cost_nonmonotone_in_kle
 ```
@@ -179,7 +179,7 @@ example :
 
 example :
     exists f g,
-      Charge.KLE (Format.corner f) (Format.corner g)
+      Reading.KLE (Format.corner f) (Format.corner g)
         /\ Format.cost f < Format.cost g :=
   Format.formats_closure_hierarchy.cost_rises
 

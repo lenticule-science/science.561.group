@@ -128,20 +128,20 @@ is a genuine involution that moves any non-symmetric cell
 ({name Obsmetrologia.PredicationCell.converse_ne}`converse_ne`). This is where category-like
 structure first appears — _downstream_ of predication, never assumed before it.
 
-## 6. Positing: value as the FOUR charge
+## 6. Positing: value as the FOUR reading
 
-{name Obsmetrologia.Charge}`Charge` is the four-point value structure positing admits — and
-it is _definitionally_ the same four-corner object, `Charge := Articulating.Corner`. The two
-lattice orders live on it as {name Obsmetrologia.Charge.joinK}`joinK` /
-{name Obsmetrologia.Charge.meetK}`meetK` (knowledge) with bounds
-{name Obsmetrologia.Charge.kBot}`kBot` and {name Obsmetrologia.Charge.kTop}`kTop`, and
-{name Obsmetrologia.Charge.negate}`negate` linking the two orders.
+{name Obsmetrologia.Reading}`Reading` is the four-point value structure positing admits — and
+it is _definitionally_ the same four-corner object, `Reading := Articulating.Corner`. The two
+lattice orders live on it as {name Obsmetrologia.Reading.joinK}`joinK` /
+{name Obsmetrologia.Reading.meetK}`meetK` (knowledge) with bounds
+{name Obsmetrologia.Reading.kBot}`kBot` and {name Obsmetrologia.Reading.kTop}`kTop`, and
+{name Obsmetrologia.Reading.negate}`negate` linking the two orders.
 
-That a bilattice charge _is_ an articulation phase is definitional at the carrier
-level, because `Charge := Articulating.Corner`:
+That a bilattice reading _is_ an articulation phase is definitional at the carrier
+level, because `Reading := Articulating.Corner`:
 
 ```lean
-example (c : Articulating.Corner) : (c : Charge) = c :=
+example (c : Articulating.Corner) : (c : Reading) = c :=
   rfl
 ```
 
@@ -151,9 +151,9 @@ The oriented claim has no intrinsic value coordinate.  A
 {name Obsmetrologia.Valuation}`Valuation` supplies standing while preserving
 evidence for and evidence against independently.  The two coordinates round-trip
 losslessly through FOUR by
-{name Obsmetrologia.independentEvidenceCharge_slots}`independentEvidenceCharge_slots`
+{name Obsmetrologia.independentEvidenceReading_slots}`independentEvidenceReading_slots`
 and
-{name Obsmetrologia.independentEvidenceCharge_exhaustive}`independentEvidenceCharge_exhaustive`.
+{name Obsmetrologia.independentEvidenceReading_exhaustive}`independentEvidenceReading_exhaustive`.
 
 The canonical evaluation matrix
 {name Obsmetrologia.predicationChu}`predicationChu` has claims as points,
@@ -170,11 +170,11 @@ example : FregeanPredicationForcesFourAndChu :=
 ## 8. Settling: closure to a fixed regime
 
 Settling turns evidence and closure into a fixed regime. The knowledge order becomes a
-partial order {name Obsmetrologia.Charge.KLE}`KLE` — reflexive, transitive, and antisymmetric
-({name Obsmetrologia.Charge.kle_antisymm}`kle_antisymm`). A
-{name Obsmetrologia.Charge.Closure}`Closure` is an extensive, monotone, idempotent operator;
-{name Obsmetrologia.Charge.settle}`settle` applies it to a seed, and the result is the
-_least_ fixed point above the seed ({name Obsmetrologia.Charge.settle_least}`settle_least`) —
+partial order {name Obsmetrologia.Reading.KLE}`KLE` — reflexive, transitive, and antisymmetric
+({name Obsmetrologia.Reading.kle_antisymm}`kle_antisymm`). A
+{name Obsmetrologia.Reading.Closure}`Closure` is an extensive, monotone, idempotent operator;
+{name Obsmetrologia.Reading.settle}`settle` applies it to a seed, and the result is the
+_least_ fixed point above the seed ({name Obsmetrologia.Reading.settle_least}`settle_least`) —
 the regime the seed settles into.
 
 ## 9. The recurring four, identified as one object
@@ -190,13 +190,13 @@ articulation phases and the predicate generators
 {name Obsmetrologia.cornerStatus}`cornerStatus` is the canonical identification. The
 load-bearing conflation — that the `(token, claim)` partition articulating produces
 and the four-point value positing admits are _one object_ — is
-{name Obsmetrologia.articulation_phase_is_charge}`articulation_phase_is_charge`:
+{name Obsmetrologia.articulation_phase_is_reading}`articulation_phase_is_reading`:
 
 ```lean
 example (c : Articulating.Cell) :
     Articulating.FourCorner.toCorner c.fourCorner
       = c.corner :=
-  articulation_phase_is_charge c
+  articulation_phase_is_reading c
 ```
 
 and the descent's start is a single point in both readings at once:
@@ -205,7 +205,7 @@ and the descent's start is a single point in both readings at once:
 example (u : Utterance) :
     Articulating.FourCorner.toCorner
         (Articulating.Cell.unarticulated u).fourCorner
-      = Charge.kBot := rfl
+      = Reading.kBot := rfl
 ```
 
 ## Reader warning

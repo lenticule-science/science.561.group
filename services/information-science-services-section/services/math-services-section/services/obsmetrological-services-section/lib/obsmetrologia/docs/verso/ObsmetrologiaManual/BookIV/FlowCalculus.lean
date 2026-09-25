@@ -30,7 +30,7 @@ The claim-site carried here is:
 
 * claim-site: flow calculus as generated closure motion;
 * phase: closure, after valuation lift and before cohomological gluing;
-* generating sites: charge closure, valuation closure, modal closure operator,
+* generating sites: reading closure, valuation closure, modal closure operator,
   closure regime, value category;
 * downstream uses: Lawvere Laplacian, harmonic kernel, stochastic settling,
   Maslov dequantization, spectral-gap witnesses, format completion hierarchy;

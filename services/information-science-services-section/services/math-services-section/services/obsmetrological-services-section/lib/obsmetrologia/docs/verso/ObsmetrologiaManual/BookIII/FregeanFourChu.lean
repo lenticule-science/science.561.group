@@ -42,25 +42,25 @@ For one claim there are two independently observable coordinates:
   (evidence for, evidence against) : Bool x Bool.
 ```
 
-Their lossless charge map is
-{name Obsmetrologia.independentEvidenceCharge}`independentEvidenceCharge`.
+Their lossless reading map is
+{name Obsmetrologia.independentEvidenceReading}`independentEvidenceReading`.
 Both round trips are proved:
 
 ```lean
 example (evidence : Bool × Bool) :
-    ((independentEvidenceCharge evidence).pos,
-      (independentEvidenceCharge evidence).neg)
+    ((independentEvidenceReading evidence).pos,
+      (independentEvidenceReading evidence).neg)
       = evidence :=
-  independentEvidenceCharge_slots evidence
+  independentEvidenceReading_slots evidence
 
-example (charge : Charge) :
-    independentEvidenceCharge
-        (charge.pos, charge.neg)
-      = charge :=
-  independentEvidenceCharge_exhaustive charge
+example (reading : Reading) :
+    independentEvidenceReading
+        (reading.pos, reading.neg)
+      = reading :=
+  independentEvidenceReading_exhaustive reading
 ```
 
-The four charges are therefore not an optional truth palette. They are the
+The four readings are therefore not an optional truth palette. They are the
 exhaustive carrier obtained by refusing to collapse absence into denial or
 contradiction into one selected side.
 
@@ -72,7 +72,7 @@ The canonical presentation is
 ```text
   points = PredicationCell,
   states = Valuation,
-  r claim valuation = valuation claim : Charge.
+  r claim valuation = valuation claim : Reading.
 ```
 
 One evidence pair placed at one claim is read unchanged by that matrix:
@@ -83,7 +83,7 @@ example
     (evidence : Bool × Bool) :
     predicationChu.r claim
         (valuationOfIndependentEvidence claim evidence)
-      = independentEvidenceCharge evidence :=
+      = independentEvidenceReading evidence :=
   predicationChu_reads_independent_evidence claim evidence
 ```
 

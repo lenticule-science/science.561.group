@@ -20,7 +20,7 @@ The claim-site carried here is:
 
 * claim-site: closure operator and settling step;
 * phase: closure;
-* generating sites: charge, knowledge order, joins, fixed points;
+* generating sites: reading, knowledge order, joins, fixed points;
 * Lean carrier: `Obsmetrologia.Language.Settling` and `Obsmetrologia.Closure.Operator`;
 * familiar comparison: closure operators, Knaster-Tarski, KZ monads;
 * danger: treating order theory as prior background instead of generated
@@ -35,30 +35,30 @@ The governing sentence is:
 
 The knowledge order becomes a `Prop` relation in settling:
 
-{docstring Obsmetrologia.Charge.KLE}
+{docstring Obsmetrologia.Reading.KLE}
 
 It is reflexive, transitive, and antisymmetric:
 
-{docstring Obsmetrologia.Charge.kle_refl}
+{docstring Obsmetrologia.Reading.kle_refl}
 
-{docstring Obsmetrologia.Charge.kle_trans}
+{docstring Obsmetrologia.Reading.kle_trans}
 
-{docstring Obsmetrologia.Charge.kle_antisymm}
+{docstring Obsmetrologia.Reading.kle_antisymm}
 
 Checked:
 
 ```lean
-example (a : Charge) : Charge.KLE a a :=
-  Charge.kle_refl a
+example (a : Reading) : Reading.KLE a a :=
+  Reading.kle_refl a
 
-example (a b : Charge)
-    (hab : Charge.KLE a b)
-    (hba : Charge.KLE b a) :
+example (a b : Reading)
+    (hab : Reading.KLE a b)
+    (hba : Reading.KLE b a) :
     a = b :=
-  Charge.kle_antisymm a b hab hba
+  Reading.kle_antisymm a b hab hba
 ```
 
-This is where order theory appears as generated mathematics. The charge object
+This is where order theory appears as generated mathematics. The reading object
 already had a knowledge comparison as data; settling turns it into the order on
 which closure can move.
 
@@ -66,20 +66,20 @@ which closure can move.
 
 Knowledge join is the least upper bound:
 
-{docstring Obsmetrologia.Charge.joinK_le}
+{docstring Obsmetrologia.Reading.joinK_le}
 
 Checked:
 
 ```lean
-example (a b : Charge) :
-    Charge.KLE a (Charge.joinK a b) :=
-  Charge.le_joinK_left a b
+example (a b : Reading) :
+    Reading.KLE a (Reading.joinK a b) :=
+  Reading.le_joinK_left a b
 
-example (a b c : Charge)
-    (ha : Charge.KLE a c)
-    (hb : Charge.KLE b c) :
-    Charge.KLE (Charge.joinK a b) c :=
-  Charge.joinK_le a b c ha hb
+example (a b c : Reading)
+    (ha : Reading.KLE a c)
+    (hb : Reading.KLE b c) :
+    Reading.KLE (Reading.joinK a b) c :=
+  Reading.joinK_le a b c ha hb
 ```
 
 The closure phase therefore does not merely "use" a lattice. It shows why the
@@ -88,39 +88,39 @@ operation that lets new evidence accumulate without forgetting old evidence.
 
 ## Closure And Fixed Point
 
-The closure object is {name Obsmetrologia.Charge.Closure}`Charge.Closure`: a charge
+The closure object is {name Obsmetrologia.Reading.Closure}`Reading.Closure`: a reading
 endomap with inflation, monotonicity, and idempotence.
 
 The fixed-point theorem is:
 
-{docstring Obsmetrologia.Charge.Closure.op_fixed}
+{docstring Obsmetrologia.Reading.Closure.op_fixed}
 
 and the least-fixed-point theorem is:
 
-{docstring Obsmetrologia.Charge.Closure.op_least}
+{docstring Obsmetrologia.Reading.Closure.op_least}
 
 The canonical example closes toward a knowledge bound:
 
-{docstring Obsmetrologia.Charge.joinClosure}
+{docstring Obsmetrologia.Reading.joinClosure}
 
 Settling is applying the closure to a seed:
 
-{docstring Obsmetrologia.Charge.settle}
+{docstring Obsmetrologia.Reading.settle}
 
-{docstring Obsmetrologia.Charge.settle_fixed}
+{docstring Obsmetrologia.Reading.settle_fixed}
 
-{docstring Obsmetrologia.Charge.settle_least}
+{docstring Obsmetrologia.Reading.settle_least}
 
 Checked:
 
 ```lean
-example (c : Charge.Closure) (seed : Charge) :
-    c.op (Charge.settle c seed) = Charge.settle c seed :=
-  Charge.settle_fixed c seed
+example (c : Reading.Closure) (seed : Reading) :
+    c.op (Reading.settle c seed) = Reading.settle c seed :=
+  Reading.settle_fixed c seed
 
-example (k : Charge) :
-    Charge.settle (Charge.joinClosure k) Charge.kBot = k :=
-  Charge.settle_kBot k
+example (k : Reading) :
+    Reading.settle (Reading.joinClosure k) Reading.kBot = k :=
+  Reading.settle_kBot k
 ```
 
 This is the closure-phase form of Knaster-Tarski: a settled value is fixed, and
@@ -130,23 +130,23 @@ it is least among the fixed points above the seed.
 
 The closure monad page names the operational step:
 
-{docstring Obsmetrologia.Charge.settleStep}
+{docstring Obsmetrologia.Reading.settleStep}
 
 The step is inflationary:
 
-{docstring Obsmetrologia.Charge.settleStep_infl}
+{docstring Obsmetrologia.Reading.settleStep_infl}
 
-and, over the finite charge carrier, it settles by step three:
+and, over the finite reading carrier, it settles by step three:
 
-{docstring Obsmetrologia.Charge.settleStep_settles}
+{docstring Obsmetrologia.Reading.settleStep_settles}
 
 Checked:
 
 ```lean
-example (c : Charge.Closure) (u v : Charge) :
-    Charge.iter (Charge.settleStep c u) 3 v
-      = Charge.iter (Charge.settleStep c u) 4 v :=
-  Charge.settleStep_settles c u v
+example (c : Reading.Closure) (u v : Reading) :
+    Reading.iter (Reading.settleStep c u) 3 v
+      = Reading.iter (Reading.settleStep c u) 4 v :=
+  Reading.settleStep_settles c u v
 ```
 
 The step reads: saturate under the closure, then merge the new increment by
@@ -157,26 +157,26 @@ of adding consequences until the process stops changing.
 
 The KZ and monad language is a projection of closure behavior on a thin order.
 
-{docstring Obsmetrologia.Charge.kz_iff_strict}
+{docstring Obsmetrologia.Reading.kz_iff_strict}
 
 The unit is inflation:
 
-{docstring Obsmetrologia.Charge.unit}
+{docstring Obsmetrologia.Reading.unit}
 
 and multiplication is nested-closure collapse:
 
-{docstring Obsmetrologia.Charge.mult}
+{docstring Obsmetrologia.Reading.mult}
 
 Checked:
 
 ```lean
-example (c : Charge.Closure) (v : Charge) :
-    Charge.KLE v (c.op v) :=
-  Charge.unit c v
+example (c : Reading.Closure) (v : Reading) :
+    Reading.KLE v (c.op v) :=
+  Reading.unit c v
 
-example (c : Charge.Closure) (v : Charge) :
+example (c : Reading.Closure) (v : Reading) :
     c.op (c.op v) = c.op v :=
-  Charge.mult c v
+  Reading.mult c v
 ```
 
 In a poset, lax idempotence collapses to strict idempotence by antisymmetry. The
@@ -205,26 +205,26 @@ and packages the pointwise family:
 Checked:
 
 ```lean
-example (c : Charge.Closure) (v : Valuation) :
+example (c : Reading.Closure) (v : Valuation) :
     Valuation.liftOp c.op v = fun phi => c.op (v phi) :=
   rfl
 
-example (c : Charge.Closure) :
+example (c : Reading.Closure) :
     Valuation.CNaturalFamily :=
   Valuation.pointwiseFamily c
 ```
 
 This is the local bridge from Book IV to Book VI. The closure operator first
-lives over charges; then it lifts pointwise to the valuation fiber. The reader
+lives over readings; then it lifts pointwise to the valuation fiber. The reader
 should not jump straight to fiber algebra before seeing this transport.
 
 ## Repair Path
 
 If this chapter fails for a reader, use this route:
 
-1. Read `Obsmetrologia.Language.Positing.Charge` for the charge carrier and joins.
-2. Read `Obsmetrologia.Language.Settling` for `Charge.KLE`, `Charge.Closure`, and
-   `Charge.settle`.
+1. Read `Obsmetrologia.Language.Positing.Reading` for the reading carrier and joins.
+2. Read `Obsmetrologia.Language.Settling` for `Reading.KLE`, `Reading.Closure`, and
+   `Reading.settle`.
 3. Read `Obsmetrologia.Closure.Monad` for `settleStep`, unit, and multiplication.
 4. Read `Obsmetrologia.Closure.Operator` for the pointwise valuation lift.
 5. Then read closure regimes and Scott-continuity.

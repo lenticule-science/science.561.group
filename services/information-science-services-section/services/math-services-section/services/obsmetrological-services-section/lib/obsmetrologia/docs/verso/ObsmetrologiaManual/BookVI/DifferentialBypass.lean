@@ -35,7 +35,7 @@ The claim-site carried here is:
   phase diagnostics that need an obstruction carrier rather than a metaphor;
 * Lean carriers: `Obsmetrologia.Cohomology.DifferentialBypass`,
   `Obsmetrologia.Cohomology.differential_bypass_sound`, and
-  `Obsmetrologia.Cohomology.obstruction_charged_iff`;
+  `Obsmetrologia.Cohomology.obstruction_valued_iff`;
 * Blueprint/proof-tree nodes: the differential-bypass nodes in the sheaf and
   cohomology chapter; the contextuality identification remains red frontier;
 * provenance: the local discussion of \(H^1\), held-\(\top\), contextuality,
@@ -112,9 +112,9 @@ The ordinal side is:
 
 {docstring Obsmetrologia.Cohomology.differential_bypass_regime}
 
-and the charged side of the regime table is:
+and the valued side of the regime table is:
 
-{docstring Obsmetrologia.Cohomology.obstruction_charged_iff}
+{docstring Obsmetrologia.Cohomology.obstruction_valued_iff}
 
 Checked:
 
@@ -123,7 +123,7 @@ example (r : ClosureRegime) :
     cohomologyVanishes r = false <->
       r = ClosureRegime.transfiniteBounded
         ∨ r = ClosureRegime.aperiodic :=
-  obstruction_charged_iff r
+  obstruction_valued_iff r
 ```
 
 This is the precise place where the \(H^1\) reading enters.  The bypass does
@@ -159,5 +159,5 @@ example {M : ModalFrame} {E : Valuation}
 
 This is now the safe manual sentence: the differential bypass mediates the
 closure-algebra and settling-coalgebra readings by a \(\kappa\)-route, and it
-identifies the charged obstruction side of the regime table.  The universal
+identifies the valued obstruction side of the regime table.  The universal
 contextuality theorem remains a frontier node until a common carrier is built.

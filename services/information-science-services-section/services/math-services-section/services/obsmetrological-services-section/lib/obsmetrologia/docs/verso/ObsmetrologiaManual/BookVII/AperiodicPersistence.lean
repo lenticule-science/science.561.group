@@ -40,7 +40,7 @@ The claim-site carried here is:
 * claim-site: aperiodic and persistent relational matter;
 * phase: persistence after non-Scott settling;
 * generating sites: direct limits, inverse hulls, classifying cohomology,
-  substitution towers, condensate charges, contact-network cycle rank,
+  substitution towers, condensate readings, contact-network cycle rank,
   step-depth colimits;
 * Lean carriers: `Obsmetrologia.AperiodicOrder.Tiling.AndersonPutnam`,
   `Obsmetrologia.AperiodicOrder.Tiling.InverseHull`,
@@ -207,7 +207,7 @@ example (c : Charger.Cell) :
   Charger.axes_commute c
 ```
 
-The algebra/coalgebra axis should not be confused with the older charge
+The algebra/coalgebra axis should not be confused with the older reading
 Klein-four operations. `OrderSwapDuality` already proves an involutive
 order-swap:
 
@@ -535,7 +535,7 @@ procedure for the question.
 ## Condensates And Material Topology
 
 Aperiodic matter is not only tiling cohomology. The same phase also carries
-material witnesses: port graphs, condensate charges, and load-bearing networks.
+material witnesses: port graphs, condensate readings, and load-bearing networks.
 
 A port graph begins with thread passes through lenticules:
 
@@ -553,7 +553,7 @@ Legality is threading through:
 
 {docstring Obsmetrologia.AperiodicOrder.Tiling.legal_iff_distinct}
 
-The condensate charge reads occupation count as relational value:
+The condensate reading reads occupation count as relational value:
 
 {docstring Obsmetrologia.AperiodicOrder.Tiling.condensate}
 
@@ -640,13 +640,13 @@ example (N : CoverNerve) :
     loadBearing N ↔ percolationThreshold N + 1 <= N.cells :=
   loadBearing_iff_critical N
 
-example (a : Charge) :
+example (a : Reading) :
     loadBearing (PlacementGraph.gaugeOrbitCyclic a).nerve :=
   PlacementGraph.gaugeOrbitCyclic_loadBearing a
 
 example :
     Landauer.landauerBits fundamentalNerve = 1
-      ∧ (forall a : Charge,
+      ∧ (forall a : Reading,
         (fundamentalCycle a).countP
           (fun c => c.isInconsistency) = 1) :=
   fundamental_cycle_one_bit
@@ -807,7 +807,7 @@ available in the finite core:
 {docstring Obsmetrologia.AperiodicOrder.Tiling.homometric_finiteDiffractionMass_eq}
 
 The same finite carrier now has a component classifier. It cuts a listed sample
-space into three disjoint event faces and then reads the existing charge,
+space into three disjoint event faces and then reads the existing reading,
 closure-regime, StepN, and H1 witnesses through those finite labels:
 
 {docstring Obsmetrologia.AperiodicOrder.Tiling.FiniteDiffractionKind}
@@ -818,7 +818,7 @@ closure-regime, StepN, and H1 witnesses through those finite labels:
 
 {docstring Obsmetrologia.AperiodicOrder.Tiling.finiteDiffractionDecomposition_mass}
 
-{docstring Obsmetrologia.AperiodicOrder.Tiling.chargeDiffractionKind}
+{docstring Obsmetrologia.AperiodicOrder.Tiling.readingDiffractionKind}
 
 {docstring Obsmetrologia.AperiodicOrder.Tiling.closureDiffractionKind}
 
@@ -893,7 +893,7 @@ example :
   salem_diffractionKind
 
 example :
-    chargeDiffractionKind (regimeOf true false)
+    readingDiffractionKind (regimeOf true false)
       = FiniteDiffractionKind.purePoint
       ∧ closureDiffractionKind (StepN.inflationRegime true)
         = FiniteDiffractionKind.singularContinuous :=
@@ -918,7 +918,7 @@ example {n : Nat} {w : Fin (n + 1) -> Bool}
 This proves a finite measured residue and a finite component classifier. The
 component words are justified here only as event labels in the finite counting
 measure. The new phase map proves exactly the current finite/predictor interface:
-diffraction component, bigraded charge, Pisot/Salem scaling, and closure regime
+diffraction component, bigraded reading, Pisot/Salem scaling, and closure regime
 share one value on that carrier. The missing layer is still a general primitive
 substitution object, Fourier transformation, spectral atoms, and the analytic
 readout theorem.

@@ -28,7 +28,7 @@ The claim-site carried here is:
 
 * claim-site: site, sheaf, and cohomology witnesses for settled valuation fibers;
 * phase: fibered and cohomological matter;
-* generating sites: predication cell, charge valuation, closure operator,
+* generating sites: predication cell, reading valuation, closure operator,
   valuation fiber, truth/knowledge designation masks;
 * downstream uses: local constancy, classifying invariants, inconsistency
   sheaves, contextuality, vortex obstruction, plasma reconnection, aperiodic
@@ -58,7 +58,7 @@ predication-cell base after valuation and closure have made sections meaningful.
 The basic sheaf carrier is {name Obsmetrologia.Sheaf}`Sheaf`: a settled
 valuation read as one coherent section.
 
-and designation is a property of the section's charge at a predication cell:
+and designation is a property of the section's reading at a predication cell:
 
 {docstring Obsmetrologia.Sheaf.designated}
 
@@ -87,11 +87,11 @@ its local pieces agree as evidence, not merely as derived presence. The
 ruling this chapter follows: the site weld follows the slot cell — a cover of
 predication cells is, underneath, a cover of witness slots, so patch
 agreement (`Sheaf.agreeOn`) is honest exactly when it is evidence agreement,
-and a designation mask that only compares derived charges without their
+and a designation mask that only compares derived readings without their
 evidence is reading a shadow of what the cover actually covers. This is a
 ruling on how the carriers should be read together, not a claim that
-`Obsmetrologia.Site.Sheaf` has itself been rebuilt over `Charged` in place of
-`Charge`; that reweld remains open work, tracked beside the rest of the site
+`Obsmetrologia.Site.Sheaf` has itself been rebuilt over `Valued` in place of
+`Reading`; that reweld remains open work, tracked beside the rest of the site
 and sheaf carriers.
 
 ## The Associated Sheaf Uses Masks
@@ -182,7 +182,7 @@ Checked:
 example (v : Valuation) (cells : List PredicationCell) :
     Cohomology.H0 v cells
       = cells.countP
-          (fun phi => Charge.isTruthFiring (v phi)) :=
+          (fun phi => Reading.isTruthFiring (v phi)) :=
   (Cohomology.h0_is_designated_count v cells).1
 ```
 
@@ -236,7 +236,7 @@ Checked:
 example (v : Valuation) (cells : List PredicationCell) :
     Obsmetrologia.InconSheaf.H0top v cells
       = cells.countP
-          (fun phi => Charge.isInconsistency (v phi)) :=
+          (fun phi => Reading.isInconsistency (v phi)) :=
   (Obsmetrologia.InconSheaf.h0top_is_inconsistency_count
     v cells).1
 ```
@@ -250,7 +250,7 @@ object witnesses it.
 
 If this chapter fails, repair in this order:
 
-1. Return to Book III for `PredicationCell`, `Charge`, and `Valuation`.
+1. Return to Book III for `PredicationCell`, `Reading`, and `Valuation`.
 2. Return to Book IV for closure and the pointwise valuation lift.
 3. Read Book VI's valuation-fiber page for the truth-order algebra.
 4. Then read `Obsmetrologia.Site.Sheaf` and `Obsmetrologia.Site.Section`.

@@ -21,7 +21,7 @@ points as relational physical carriers.
 
 The aggregate diagnostics page names kinetic, plasma, fluid, and liquid
 carriers. This page separates the claim-sites those names otherwise blur:
-finite collision invariants, charge-neutral relaxation, graph screening,
+finite collision invariants, reading-neutral relaxation, graph screening,
 degree-zero wave fixed points, circulation superposition, Ornstein-Zernike
 closure, and density-functional settling.
 
@@ -32,7 +32,7 @@ The claim-site carried here is:
 * phase: relational physical phases after closure, finite graph support,
   generated calculus, and cohomological gluing are lawful;
 * generating sites: finite populations, collision rules, Nat-indexed relaxation,
-  Tarski sheaf closure, charge quantale Laplacian, finite loop circulation, and
+  Tarski sheaf closure, reading quantale Laplacian, finite loop circulation, and
   internal-real Lyapunov descent;
 * downstream uses: kinetic invariants, plasma screening and edge-mode obstructions,
   vortex obstruction pages, liquid closure diagnostics, dense-matter analogies,
@@ -136,7 +136,7 @@ analysis remains frontier.
 
 ## Topological Plasma Waves
 
-The topological-wave carrier uses the already generated charge quantale
+The topological-wave carrier uses the already generated reading quantale
 Laplacian. Bulk modes are degree-zero fixed points:
 
 {docstring Obsmetrologia.KineticTheory.Plasma.laplacian_H0_modes_are_global_sections}
@@ -144,8 +144,8 @@ Laplacian. Bulk modes are degree-zero fixed points:
 Checked:
 
 ```lean
-example (s : Charge) :
-    forall x : Charge,
+example (s : Reading) :
+    forall x : Reading,
   KineticTheory.Plasma.IsBulkMode s
     (QEnriched.laplacian s x) :=
   (KineticTheory.Plasma.laplacian_H0_modes_are_global_sections

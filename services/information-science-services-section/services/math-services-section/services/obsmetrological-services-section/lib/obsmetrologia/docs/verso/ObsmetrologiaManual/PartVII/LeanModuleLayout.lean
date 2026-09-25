@@ -59,7 +59,7 @@ The present source modules fall into topic families:
 
 * primitives and first generators;
 * predication and categorical recovery;
-* positing, charge, valuation, and bilattice structure;
+* positing, reading, valuation, and bilattice structure;
 * settling, order, closure, and fixed points;
 * generated calculus order infrastructure;
 * generated calculus logic: residuation, Chu spaces, Lambek calculus, and the FCA-Lambek circle;

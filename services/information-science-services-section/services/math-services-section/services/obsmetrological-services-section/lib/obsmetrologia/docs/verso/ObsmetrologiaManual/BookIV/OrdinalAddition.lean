@@ -187,7 +187,7 @@ If this chapter fails for a reader, use this route:
    shape off an ordinal — it does not yet consume addition, but shares the
    same carrier.
 4. Read `Obsmetrologia.Closure.Ordinal.Finite` for the finite closure ordinal
-   over the charge lattice that motivates the whole `Ord` type.
+   over the reading lattice that motivates the whole `Ord` type.
 
 The next closure chapter is the four-way regime classifier built on this
 ordinal.

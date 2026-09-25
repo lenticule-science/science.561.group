@@ -180,7 +180,7 @@ example (u : Utterance) :
 
 The familiar comparison is "four-valued logic," but that phrase is not yet the
 phase. At this point the four corners are articulation statuses. The later
-charge object is a transported and deepened reading, not something that was
+reading object is a transported and deepened reading, not something that was
 secretly present from the beginning.
 
 ## Position Before Value
@@ -219,8 +219,8 @@ Only after predication can the book speak about valuations:
 The valuation fiber is over predication cells:
 
 ```lean
-example : Valuation = (PredicationCell -> Charge) :=
-  Valuation.isClaimCharge
+example : Valuation = (PredicationCell -> Reading) :=
+  Valuation.isClaimReading
 ```
 
 The knowledge-least valuation is the seed for later settling:
@@ -264,7 +264,7 @@ For the first spine, the concrete repair route is:
 3. `Articulating`: what one-way recursion acted?
 4. `Articulating.Cell`: what four statuses appeared?
 5. `PredicationCell`: what oriented claim-site was generated?
-6. `Valuation`: where can charge live?
+6. `Valuation`: where can reading live?
 
 That route is the template for the whole book. Later phases are larger, but the
 discipline is the same.

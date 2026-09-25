@@ -191,9 +191,9 @@ The certificate theorem is:
 Checked:
 
 ```lean
-example (cl : Charge.Closure) (seed : Charge)
+example (cl : Reading.Closure) (seed : Reading)
     {k : Nat} (hk : 1 <= k)
-    (hcycle : Charge.iter cl.op k seed = seed)
+    (hcycle : Reading.iter cl.op k seed = seed)
     (cert : Certificate)
     (hNoDeviation : cert.noProfitableDeviation)
     (hWitness : cert.dialecticaWitnessSurvives)
@@ -225,9 +225,9 @@ The theorem that assembles the runtime certificate from readings is:
 Checked:
 
 ```lean
-example (cl : Charge.Closure) (seed : Charge)
+example (cl : Reading.Closure) (seed : Reading)
     {k : Nat} (hk : 1 <= k)
-    (hcycle : Charge.iter cl.op k seed = seed)
+    (hcycle : Reading.iter cl.op k seed = seed)
     (ops : OperationalWitnesses)
     (reading : SurvivorReading)
     (hDialectica : ops.dialecticaObjectMap)

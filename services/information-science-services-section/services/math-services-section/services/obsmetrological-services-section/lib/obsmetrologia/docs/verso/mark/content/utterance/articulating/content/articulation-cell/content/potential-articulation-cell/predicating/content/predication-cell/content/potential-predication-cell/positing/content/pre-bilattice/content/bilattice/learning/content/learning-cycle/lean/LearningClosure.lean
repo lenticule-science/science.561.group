@@ -28,13 +28,13 @@ inflationariness (monotonicity is part of the learning-operator data but not use
 -/
 
 namespace Obsmetrologia
-namespace Charge
+namespace Reading
 
 /-- A **learning operator** on the knowledge lattice: monotone and inflationary (a
 single learning step; no idempotence assumed). -/
 structure LearningOperator where
   /-- The step. -/
-  f : Charge → Charge
+  f : Reading → Reading
   /-- Inflationary: a step never forgets. -/
   infl : ∀ a, KLE a (f a)
   /-- Monotone: more known in, more known out. -/
@@ -44,14 +44,14 @@ namespace LearningOperator
 variable (L : LearningOperator)
 
 /-- **The orbit ascends.** `iter f m v ≤ₖ iter f (m+d) v`. -/
-theorem ascends (v : Charge) (m d : Nat) :
+theorem ascends (v : Reading) (m d : Nat) :
     KLE (iter L.f m v) (iter L.f (m + d) v) :=
   iter_le_add L.f L.infl v m d
 
 /-- **No nontrivial periodic orbit — the spiral.** If iterating the learning step
 returns to the start, the start was already a fixed point: learning strictly ascends
 and cannot loop. -/
-theorem no_cycle (v : Charge) {k : Nat} (hk : 1 ≤ k) (h : iter L.f k v = v) :
+theorem no_cycle (v : Reading) {k : Nat} (hk : 1 ≤ k) (h : iter L.f k v = v) :
     L.f v = v := by
   have hge : KLE v (L.f v) := L.infl v
   have hle : KLE (L.f v) v := by
@@ -87,5 +87,5 @@ theorem four_depths (d : ClosureRegimeData) :
 /-- The four depths are exactly four (a bijection with the four-corner object). -/
 def depth_is_four : Bij LearningDepth Corner := regime_is_four_corner
 
-end Charge
+end Reading
 end Obsmetrologia

@@ -1629,7 +1629,7 @@ example :
   claimWithoutTokenIsFSideFiring
 
 example (after : Articulating.Corner)
-    (hle : Charge.leK
+    (hle : Reading.leK
       Articulating.Corner.active after = true)
     (hne : Not (after = Articulating.Corner.active)) :
     Blowup.cellType Articulating.Corner.active after =
@@ -1650,7 +1650,7 @@ example (after : Articulating.Corner) :
   Blowup.active_cellType_top_iff_stable after
 
 example {after : Articulating.Corner}
-    (hle : Charge.leK Articulating.Corner.potential after = true)
+    (hle : Reading.leK Articulating.Corner.potential after = true)
     (hne : Not (after = Articulating.Corner.potential)) :
     Blowup.cellType Articulating.Corner.potential after =
         some Blowup.FiringType.top /\

@@ -423,7 +423,7 @@ example (X : Crystals) (n : Nat)
     AperiodicOrder.Tiling.ThreadLegal
         X.beads.thread ∧
       X.beadCondensate.isInconsistency = true ∧
-        (Charge.negate X.beadCondensate).isInconsistency =
+        (Reading.negate X.beadCondensate).isInconsistency =
           X.beadCondensate.isInconsistency ∧
           X.beadAdjacency.tuple =
             X.beads.adjacencyTuple ∧

@@ -16,7 +16,7 @@ Modules: `ResiduatedLatticeStandalone`, `TwistProductResiduation`, `D4Gauge`,
 `ModalKripkeFourValued`.
 
 This family explains why FOUR keeps returning. The recurring four is not a
-decorative motif. It is the stable shape made visible by charges, truth and
+decorative motif. It is the stable shape made visible by readings, truth and
 knowledge orders, nuclei, gauges, recurrence, and modal readings.
 
 `TwistProductResiduation` and `ResiduatedLatticeStandalone`, housed in

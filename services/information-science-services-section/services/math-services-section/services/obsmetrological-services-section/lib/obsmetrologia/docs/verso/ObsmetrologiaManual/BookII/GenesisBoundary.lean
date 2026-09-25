@@ -272,11 +272,11 @@ The articulation phase of a cell is:
 {docstring Obsmetrologia.Articulating.Cell.fourCorner}
 
 and the first transport theorem says that the articulation phase, read as a
-four-corner, is the charge corner:
+four-corner, is the reading corner:
 
-{docstring Obsmetrologia.articulation_phase_is_charge}
+{docstring Obsmetrologia.articulation_phase_is_reading}
 
-The un-articulated cell is the knowledge-bottom charge:
+The un-articulated cell is the knowledge-bottom reading:
 
 {docstring Obsmetrologia.absurd_is_kBot}
 
@@ -286,7 +286,7 @@ Checked:
 example (u : Utterance) :
     Articulating.FourCorner.toCorner
         (Articulating.Cell.unarticulated u).fourCorner
-      = Charge.kBot :=
+      = Reading.kBot :=
   absurd_is_kBot u
 ```
 
@@ -307,4 +307,4 @@ If this chapter fails for a reader, use this route:
 5. Read `Obsmetrologia.Articulation.Articulating.FourCorner` for the first transport to
    the recurring FOUR.
 
-Only after that should the reader enter predication or charge.
+Only after that should the reader enter predication or reading.

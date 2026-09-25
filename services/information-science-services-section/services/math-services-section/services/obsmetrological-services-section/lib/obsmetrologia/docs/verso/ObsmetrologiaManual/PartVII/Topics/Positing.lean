@@ -27,8 +27,8 @@ chapter or become a hand-written declaration index.
 Topic coverage means:
 
 * namespace/topic: positing;
-* concept modules: charge, bilattice operations, valuation, truth order;
-* term nodes: the charge, evidence-slot, FOUR-bilattice, valuation,
+* concept modules: reading, bilattice operations, valuation, truth order;
+* term nodes: the reading, evidence-slot, FOUR-bilattice, valuation,
   knowledge-least, truth-order, truth-closure, and truth-settling declarations
   listed under `ch:positing` in generated coverage.
 
