@@ -140,8 +140,8 @@ namespace Beads
 def passCount (B : Beads) : BeadPassCount :=
   BeadPassCount.ofNat B.thread.length
 
-/-- The condensate charge carried by the bead layer's thread occupation. -/
-def condensate (B : Beads) : Charge :=
+/-- The condensate reading carried by the bead layer's thread occupation. -/
+def condensate (B : Beads) : Reading :=
   AperiodicOrder.Tiling.condensate B.passCount.count
 
 /-- The number of condensed contacts supplied by the bead placement. -/
@@ -226,14 +226,14 @@ theorem thread_pass_ports_distinct (B : Beads)
 
 /-- An empty bead thread carries the empty condensate pole. -/
 theorem condensate_empty_of_thread_nil (B : Beads)
-    (h : B.thread = []) : B.condensate = Charge.kBot := by
+    (h : B.thread = []) : B.condensate = Reading.kBot := by
   unfold condensate passCount
   rw [h]
   rfl
 
 /-- A singly occupied bead thread carries the definite truth pole. -/
 theorem condensate_single_of_passCount_eq_one (B : Beads)
-    (h : B.passCount.count = 1) : B.condensate = Charge.tTop := by
+    (h : B.passCount.count = 1) : B.condensate = Reading.tTop := by
   unfold condensate
   rw [h]
   rfl
@@ -248,7 +248,7 @@ theorem over_occupation_inconsistency (B : Beads) (n : Nat)
 
 /-- Mirroring a bead condensate preserves its contradiction content. -/
 theorem mirror_preserves_condensate_inconsistency (B : Beads) :
-    (Charge.negate B.condensate).isInconsistency =
+    (Reading.negate B.condensate).isInconsistency =
       B.condensate.isInconsistency := by
   unfold condensate
   exact AperiodicOrder.Tiling.mirror_fixes_condensate B.passCount.count

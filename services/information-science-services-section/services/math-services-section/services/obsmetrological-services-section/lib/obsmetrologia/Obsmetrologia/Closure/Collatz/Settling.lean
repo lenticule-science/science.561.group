@@ -11,7 +11,7 @@ import Obsmetrologia.Calculus.Order.SetNumberGraphTheory
 The corpus frames Collatz as the increment-driven settling `F_U(E)_τ = Cl(E) ∨ₖ u_τ`
 with `Cl = id`, one predicate `reached`, entities `ℕ₊` (corpus node
 `collatz-increment-sequence`/`collatz-settlement`). Obsmetrologia already builds that machinery
-generically: `Valuation = PredicationCell → Charge` hosts the infinite entity set
+generically: `Valuation = PredicationCell → Reading` hosts the infinite entity set
 (`Entity = Token`, a one-field wrapper of `Mark`, is string-backed), `ModalFrame.drive`
 is exactly `F_U`, and `Ord` +
 `regimeOfOrd` carry the transfinite closure ordinal κ. This module instantiates
@@ -65,7 +65,7 @@ theorem closureOp_discrete (v : Valuation) : discreteFrame.closureOp v = v := by
   funext φ
   simp only [ModalFrame.closureOp, ModalFrame.necessitate, ModalFrame.possibilize,
     existsF, forallF, discreteFrame, discreteFib, List.map_cons, List.map_nil,
-    Charge.joinList, Charge.meetList, List.foldr_cons, List.foldr_nil]
+    Reading.joinList, Reading.meetList, List.foldr_cons, List.foldr_nil]
   cases v φ <;> decide
 
 /-! ## The Collatz settling as an increment-driven flow -/
@@ -79,7 +79,7 @@ def reachedCell (n : Nat) : PredicationCell :=
 
 /-- The Collatz increment sequence for seed `m`: at step `τ` posit the cell for `orbit m τ`. -/
 def collatzIncrement (m : Nat) : Nat → Valuation :=
-  fun τ => fun φ => if φ = reachedCell (orbit m τ) then Charge.kTop else Charge.kBot
+  fun τ => fun φ => if φ = reachedCell (orbit m τ) then Reading.kTop else Reading.kBot
 
 /-- The Collatz settling of seed `m`: the `Cl = id` increment-driven flow over the
 reached-cell valuations — exactly the corpus `F_U` at the Collatz increment sequence. -/

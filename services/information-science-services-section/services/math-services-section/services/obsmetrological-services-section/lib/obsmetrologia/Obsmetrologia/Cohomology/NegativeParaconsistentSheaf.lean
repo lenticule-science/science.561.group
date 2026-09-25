@@ -16,7 +16,7 @@ This module formalizes the **negative-paraconsistent settling-associated sheaf**
   `{t, ⊤}`, the mask `dK`), the negative sheaf
   `F_U^{(k,−)}(q,τ,U) := ℤ^{Δ⁻,Belnap_τ(q) ∩ U}` tracks the **symmetric
   NEGATIVE-evidence** increments (cells gaining a falsity-component, settled value in
-  `{f, ⊤}`, the mask `dNeg`). The bilattice negation involution `∼` (`Charge.negate`,
+  `{f, ⊤}`, the mask `dNeg`). The bilattice negation involution `∼` (`Reading.negate`,
   `BigradedCohomology.negateVal` pointwise) carries the positive sheaf to the negative
   sheaf: it sends a `t`-cell to an `f`-cell and an `f`-cell to a `t`-cell, while
   **fixing** the `⊤` ("told both") cells (and the `⊥` empty cells). So `Δ⁻` is `negate`
@@ -36,13 +36,13 @@ are the inherited `restrict_id`/`restrict_comp`/`restrict_vanishes`.
 
 * **`negative_sheaf_is_negation_mirror`** — the negative sheaf is the
   NEGATION MIRROR of the positive paraconsistent sheaf. Bilattice negation
-  (`AssocSheaf` ... `Charge.negate`) swaps the truth-designation and the
+  (`AssocSheaf` ... `Reading.negate`) swaps the truth-designation and the
   falsity-designation: `negate` sends a `t`-cell to an `f`-cell and fixes `⊤`, so the
   `dNeg` mask of `v` equals the **positive** Belnap mask `dK` of `negate ∘ v`
   (`negateVal v`), cell by cell — `dNeg v φ = dK (negateVal v) φ`. The `⊤`-component is
   negation-fixed (`dTop (negateVal v) = dTop v`), the `f`-cells of `v` are the `t`-cells
   of `negate v`, and the involution `negate_negate` makes the mirror an involution on
-  the sheaves. Reuses `Charge.negate_negate` and the `negate_tTop/tBot/kTop/kBot` facts.
+  the sheaves. Reuses `Reading.negate_negate` and the `negate_tTop/tBot/kTop/kBot` facts.
 
 * **`negative_paraconsistent_split`** — the negative side has the analogous
   direct-sum / disjointness structure: `dNeg = dFonly ⊔ dTop`, the falsity-component
@@ -57,7 +57,7 @@ namespace Obsmetrologia
 namespace NegSheaf
 
 open Obsmetrologia.AssocSheaf
-open Obsmetrologia.Charge
+open Obsmetrologia.Reading
 
 /-! ## The negative-designation mask `dNeg` — the `f`-or-`⊤` mask `Δ⁻`
 
@@ -70,7 +70,7 @@ newly-falsity-designated cells. Reuses `DFrame.dF` (the falsehood mask), the exa
 mirror of `AssocSheaf.dK` on the negative side. `F_U^{(k,−)} = ℤ^{dNeg}`. -/
 def dNeg : Mask := DFrame.dF
 
-/-- `dNeg` is the `f`-or-`⊤` mask: a cell is negative-designated iff its settled charge
+/-- `dNeg` is the `f`-or-`⊤` mask: a cell is negative-designated iff its settled reading
 is `f` (`tBot`) or `⊤` (`kTop`). -/
 theorem dNeg_eq (v : Valuation) (φ : PredicationCell) :
     dNeg v φ = decide (v φ = tBot ∨ v φ = kTop) := rfl
@@ -97,7 +97,7 @@ theorem dFonly_iff (v : Valuation) (φ : PredicationCell) :
 
 /-! ### Disjointness and union of the negative split (mirroring `dK = dT ⊔ dTop`) -/
 
-/-- **Disjointness of the negative split.** No charge is both `f` and `⊤` (`tBot ≠
+/-- **Disjointness of the negative split.** No reading is both `f` and `⊤` (`tBot ≠
 kTop`): `dFonly` and `dTop` are pointwise disjoint — the negative mirror of
 `AssocSheaf.dT_dTop_disjoint`. -/
 theorem dFonly_dTop_disjoint (v : Valuation) (φ : PredicationCell) :
@@ -167,11 +167,11 @@ Bilattice negation `negate` (`negateVal` pointwise) swaps `t ↔ f` and fixes `�
 Hence the negative mask `dNeg` of `v` is the **positive** Belnap mask `dK` of `negate ∘
 v`, and likewise `dFonly v = dT (negateVal v)`, while the `⊤`-side is negation-fixed. -/
 
-/-- **Charge-level mirror facts** (the pure `Charge` exhaustion the mask correspondences
-run on): for every charge `a`, the `f`-or-`⊤` test of `a` matches the `t`-or-`⊤` test of
+/-- **Reading-level mirror facts** (the pure `Reading` exhaustion the mask correspondences
+run on): for every reading `a`, the `f`-or-`⊤` test of `a` matches the `t`-or-`⊤` test of
 `negate a`, the `f` test of `a` matches the `t` test of `negate a`, and the `⊤` test is
-negation-fixed. Proved by finite exhaustion over `Charge`. -/
-theorem negate_mask_facts (a : Charge) :
+negation-fixed. Proved by finite exhaustion over `Reading`. -/
+theorem negate_mask_facts (a : Reading) :
     (decide (a = tBot ∨ a = kTop) = decide (negate a = tTop ∨ negate a = kTop))
       ∧ (decide (a = tBot) = decide (negate a = tTop))
       ∧ (decide (negate a = kTop) = decide (a = kTop)) := by
@@ -201,13 +201,13 @@ theorem dTop_negateVal_eq (v : Valuation) (φ : PredicationCell) :
   exact (negate_mask_facts (v φ)).2.2
 
 /-- **The mirror is an involution.** Applying the negation twice returns the positive
-mask: `dK v φ = dK (negateVal (negateVal v)) φ`. This is `Charge.negate_negate` lifted
+mask: `dK v φ = dK (negateVal (negateVal v)) φ`. This is `Reading.negate_negate` lifted
 through the mask — the negation involution carries the sheaves back and forth. -/
 theorem dK_negateVal_negateVal (v : Valuation) (φ : PredicationCell) :
     dK (negateVal (negateVal v)) φ = dK v φ := by
   simp only [dK, negateVal, negate_negate]
 
-/-- **`negate` sends `t`-cells to `f`-cells and back, fixing `⊤`.** The pointwise charge
+/-- **`negate` sends `t`-cells to `f`-cells and back, fixing `⊤`.** The pointwise reading
 facts the mirror runs on, restated on the valuation: a `t`-cell of `v` is an `f`-cell of
 `negate v` and vice versa, and `⊤`/`⊥` are fixed. -/
 theorem negateVal_swaps_t_f (v : Valuation) (φ : PredicationCell) :

@@ -27,7 +27,7 @@ form a **Galois connection** between the two powersets ordered by inclusion: it 
 **antitone**, **extensive** (`A ⊆ primeB (primeA A)`), and satisfies the cancellation
 `primeA (primeB (primeA A)) = primeA A` (i.e. `A′ = A‴`). Hence
 `closeA A := primeB (primeA A)` is a **closure operator** (extensive, monotone,
-idempotent) — exactly the closure pattern `Settling` derives over `Charge`, here over
+idempotent) — exactly the closure pattern `Settling` derives over `Reading`, here over
 the powerset. **Formal concepts** are the closed pairs `(A, B)` with `primeA A = B`
 and `primeB B = A` (`A` the *extent*, `B` the *intent*); ordered by extent-inclusion
 they form a **complete lattice** (the fundamental theorem of FCA): every family of

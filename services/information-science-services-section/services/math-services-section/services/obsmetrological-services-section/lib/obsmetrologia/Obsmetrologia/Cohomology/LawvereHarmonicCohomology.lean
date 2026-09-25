@@ -69,7 +69,7 @@ theorem lawvere_harmonic_section_classifying_invariant_zero
         Coboundary (clInvDatum (M.settle seed) c) g' → g = g')
     -- (extent) H⁰ counts the truth-firing cells of the settled section
     ∧ H0 (M.settle seed) cells
-        = cells.countP (fun φ => Charge.isTruthFiring ((M.settle seed) φ)) := by
+        = cells.countP (fun φ => Reading.isTruthFiring ((M.settle seed) φ)) := by
   obtain ⟨hregime, hcocycle, hcoboundary, hunique⟩ :=
     classifying_invariant_zero_strict r hr (M.settle seed) c
   exact ⟨LawvereLaplacian.settle_isHarmonic M seed,

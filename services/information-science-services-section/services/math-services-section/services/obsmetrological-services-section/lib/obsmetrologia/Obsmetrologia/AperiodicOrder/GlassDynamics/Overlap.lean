@@ -8,7 +8,7 @@ replica overlap `q` of spin-glass theory (and of Hamming similarity). The full o
 variable with its Parisi order-parameter distribution needs probability and is out of this
 dependency-free core; the finite count is exactly in it.
 
-`overlapCount sites x y = #{ s ∈ sites | x s = y s }`. The canonical instance takes `State := Charge`
+`overlapCount sites x y = #{ s ∈ sites | x s = y s }`. The canonical instance takes `State := Reading`
 and `Site := PredicationCell`, i.e. configurations are `Valuation`s; the definition is kept generic so
 it serves any finite alphabet.
 
@@ -32,7 +32,7 @@ namespace Obsmetrologia
 namespace AperiodicOrder.GlassDynamics
 
 /-- A **configuration**: an assignment of a local `State` to each `Site`. The canonical instance is a
-`Valuation` (`State = Charge`, `Site = PredicationCell`). -/
+`Valuation` (`State = Reading`, `Site = PredicationCell`). -/
 abbrev Configuration (Site State : Type) := Site → State
 
 /-- The **overlap count** of two configurations over a finite site list: the number of sites on which

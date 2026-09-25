@@ -9,13 +9,13 @@ that the four verbs (articulating, predicating, positing, settling) are **one
 recurring four-corner coherence cell** read at successive depths:
 
   articulation phases {absurd, potential, active, stable}
-    ≅ bilattice charges {⊥ₖ, t, f, ⊤ₖ}
+    ≅ bilattice readings {⊥ₖ, t, f, ⊤ₖ}
     ≅ status pairs (Bool × Bool)
     ≅ nuclear-quartet corners {free, j₁-fix, j₂-fix, both}.
 
 This module pins the **canonical object** `Articulating.FourCorner := Bool × Bool` and proves the
 first *conflation theorem*: the articulation phase of a cell, read as a four-corner,
-**is** its bilattice charge (`Charge := Articulating.Corner`). Articulating and positing are the
+**is** its bilattice reading (`Reading := Articulating.Corner`). Articulating and positing are the
 same four-corner cell met at two depths — a theorem, not a comment.
 
 This is the seed of `QuartetRecurrence`, which extends the chain to
@@ -30,7 +30,7 @@ abbrev Articulating.FourCorner := Bool × Bool
 
 namespace Articulating.FourCorner
 
-/-- Read a four-corner as an articulation/charge corner. -/
+/-- Read a four-corner as an articulation/reading corner. -/
 def toCorner (s : Articulating.FourCorner) : Articulating.Corner := Articulating.Corner.ofStatus s.1 s.2
 /-- Read a corner as its slot-presence pair. -/
 def ofCorner (c : Articulating.Corner) : Articulating.FourCorner := Articulating.Corner.toStatus c
@@ -40,8 +40,8 @@ def ofCorner (c : Articulating.Corner) : Articulating.FourCorner := Articulating
 @[simp] theorem ofCorner_toCorner (s : Articulating.FourCorner) : ofCorner (toCorner s) = s := by
   obtain ⟨a, b⟩ := s; cases a <;> cases b <;> rfl
 
-/-- `Articulating.FourCorner ≃ Articulating.Corner` (a bijection), and since `Charge := Articulating.Corner`, also
-`Articulating.FourCorner ≃ Charge` — the canonical four-corner *is* the bilattice value object. -/
+/-- `Articulating.FourCorner ≃ Articulating.Corner` (a bijection), and since `Reading := Articulating.Corner`, also
+`Articulating.FourCorner ≃ Reading` — the canonical four-corner *is* the bilattice value object. -/
 def cornerBij : Bij Articulating.FourCorner Articulating.Corner where
   to := toCorner
   inv := ofCorner
@@ -55,28 +55,28 @@ def Articulating.Cell.fourCorner (c : Articulating.Cell) : Articulating.FourCorn
   (c.tokenArticulated, c.claimArticulated)
 
 /-- **Conflation theorem (articulating ≅ positing).** The articulation phase of a
-cell, read as a four-corner, is exactly its corner — and `Articulating.Corner = Charge`, so it is
-exactly its bilattice charge. The two-sided `(token, claim)` partition that
+cell, read as a four-corner, is exactly its corner — and `Articulating.Corner = Reading`, so it is
+exactly its bilattice reading. The two-sided `(token, claim)` partition that
 articulating produces and the four-point value positing admits are *one object*. -/
-theorem articulation_phase_is_charge (c : Articulating.Cell) :
+theorem articulation_phase_is_reading (c : Articulating.Cell) :
     Articulating.FourCorner.toCorner c.fourCorner = c.corner := rfl
 
-/-- Restated as a charge equality: the cell's articulation phase, as a four-corner,
-is a `Charge`. -/
-theorem articulation_phase_charge (c : Articulating.Cell) :
-    (Articulating.FourCorner.toCorner c.fourCorner : Charge) = c.corner := rfl
+/-- Restated as a reading equality: the cell's articulation phase, as a four-corner,
+is a `Reading`. -/
+theorem articulation_phase_reading (c : Articulating.Cell) :
+    (Articulating.FourCorner.toCorner c.fourCorner : Reading) = c.corner := rfl
 
 /-- The absurd (un-articulated) cell sits at `(false, false)` = `⊥ₖ` (the
-knowledge-bottom charge positing seeds). The descent's start is one point in both
+knowledge-bottom reading positing seeds). The descent's start is one point in both
 readings. This position is reached only by the value algebra (`meetK`), never by
 articulating. -/
 theorem absurd_is_kBot (u : Utterance) :
-    Articulating.FourCorner.toCorner (Articulating.Cell.unarticulated u).fourCorner = Charge.kBot := rfl
+    Articulating.FourCorner.toCorner (Articulating.Cell.unarticulated u).fourCorner = Reading.kBot := rfl
 
-/-- The articulated cell sits at `(true, false)` = `t` (the truth-top charge):
+/-- The articulated cell sits at `(true, false)` = `t` (the truth-top reading):
 articulating always tells true. Dual to `absurd_is_kBot`, this is where
 articulating *does* land. -/
 theorem articulate_is_tTop (u : Utterance) :
-    Articulating.FourCorner.toCorner (Articulating.Cell.articulate u).fourCorner = Charge.tTop := rfl
+    Articulating.FourCorner.toCorner (Articulating.Cell.articulate u).fourCorner = Reading.tTop := rfl
 
 end Obsmetrologia

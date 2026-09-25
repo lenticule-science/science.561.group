@@ -42,7 +42,7 @@ namespace Cohomology
 namespace ScottFace
 
 open Obsmetrologia.Closure.Scott
-open Obsmetrologia.Charge
+open Obsmetrologia.Reading
 open Obsmetrologia.AssocSheaf
 
 /-! ## The `ω`-indexed carrier -/
@@ -104,7 +104,7 @@ theorem classify_regime_is_scott : classify regimeData = ClosureRegime.scott := 
 theorem cohomology_vanishes : cohomologyVanishes (classify regimeData) = true := rfl
 
 /-- Finite-antecedent firing remains Scott-continuous at the face. -/
-theorem finite_antecedent_closure_scott_continuous (ante concl : Charge)
+theorem finite_antecedent_closure_scott_continuous (ante concl : Reading)
     (S : DirectedFamily) :
     fire ante concl (sup S.elems) = sup (S.elems.map (fire ante concl)) :=
   finite_antecedent_scott_continuous ante concl S

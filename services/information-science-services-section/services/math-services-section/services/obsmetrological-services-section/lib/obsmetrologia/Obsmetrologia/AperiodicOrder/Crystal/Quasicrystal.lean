@@ -39,8 +39,8 @@ namespace Quasicrystals
 def beadPassCount (Q : Quasicrystals) : BeadPassCount :=
   Q.crystals.beadPassCount
 
-/-- The bead condensate charge carried upward into a quasicrystal. -/
-def beadCondensate (Q : Quasicrystals) : Charge :=
+/-- The bead condensate reading carried upward into a quasicrystal. -/
+def beadCondensate (Q : Quasicrystals) : Reading :=
   Q.crystals.beadCondensate
 
 /-- The four bead adjacency graphs carried upward into a quasicrystal. -/
@@ -106,7 +106,7 @@ theorem bead_over_occupation_inconsistency (Q : Quasicrystals) (n : Nat)
 /-- Mirroring the bead condensate carried by a quasicrystal preserves
 contradiction content. -/
 theorem mirror_preserves_beadCondensate_inconsistency (Q : Quasicrystals) :
-    (Charge.negate Q.beadCondensate).isInconsistency =
+    (Reading.negate Q.beadCondensate).isInconsistency =
       Q.beadCondensate.isInconsistency :=
   Q.crystals.mirror_preserves_beadCondensate_inconsistency
 
@@ -133,7 +133,7 @@ readout. -/
 def BeadPhaseSpine (Q : Quasicrystals) : Prop :=
   AperiodicOrder.Tiling.ThreadLegal Q.crystals.beads.thread ∧
     Q.beadCondensate.isInconsistency = true ∧
-      (Charge.negate Q.beadCondensate).isInconsistency =
+      (Reading.negate Q.beadCondensate).isInconsistency =
         Q.beadCondensate.isInconsistency ∧
         Q.beadAdjacency.tuple = Q.crystals.beads.adjacencyTuple ∧
           Q.beadGeometricLenticle =

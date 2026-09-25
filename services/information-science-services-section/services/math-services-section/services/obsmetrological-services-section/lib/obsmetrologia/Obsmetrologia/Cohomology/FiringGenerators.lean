@@ -3,7 +3,7 @@ import Obsmetrologia.AperiodicOrder.Tiling.Classification
 import Obsmetrologia.Dynamics.Flow.NSCFiring
 import Obsmetrologia.Closure.Ordinal
 import Obsmetrologia.Closure.Scott
-import Obsmetrologia.Language.Positing.Charge
+import Obsmetrologia.Language.Positing.Reading
 
 /-!
 # `H¹`-generators at non-Scott-continuous firing ordinals — the transfinite-bounded witness
@@ -47,9 +47,9 @@ already represents a nonzero `H¹` class (`NonzeroH1Class`).
   case of a cokernel against the zero map) and nothing reaches it from an earlier one
   (the edges are the *newly-added* cells, disjoint by support). So `δ¹ = 0` identically:
   the jump-degree cokernel is realized as the whole of `C¹`.
-* **The jump value is derived, not posited.** `chargeLevel : Charge → Int` reads a
-  bilattice charge's level (`⊤ₖ ↦ 1`, else `0`); `jumpValue := chargeLevel ⊤ₖ −
-  chargeLevel (forallAnteOp ⊤ₖ)` is the integer size of `forallAnteOp`'s genuine
+* **The jump value is derived, not posited.** `readingLevel : Reading → Int` reads a
+  bilattice charge's level (`⊤ₖ ↦ 1`, else `0`); `jumpValue := readingLevel ⊤ₖ −
+  readingLevel (forallAnteOp ⊤ₖ)` is the integer size of `forallAnteOp`'s genuine
   retraction at the assembled top (`forallAnteOp ⊤ₖ = ⊥ₖ`,
   `Flow.NSCFiring.forallAnteOp_kTop`). We prove `jumpValue = 1 ≠ 0`
   (`jumpValue_eq_one`/`jumpValue_ne_zero`) — the nonzero-ness of every generator below
@@ -79,7 +79,7 @@ already represents a nonzero `H¹` class (`NonzeroH1Class`).
   *proven* nonzero `H¹` class (`clInv = [firingGen e0] ≠ 0`).
 * `scott_no_nonzero_h1_class` / `scott_flow_has_no_firing_edges` — the **vanishing
   contrast**: the same construction run over a Scott-continuous (no-firing) flow has
-  `L_ns(κ) = ∅` — over the finite charge carrier *every* closure has no NSC firing
+  `L_ns(κ) = ∅` — over the finite reading carrier *every* closure has no NSC firing
   (`Flow.NSCFiring.no_nsc_firing_of_closure`) — so the firing-edge set collapses to
   `Empty` and `scottComplex` admits no nonzero `H¹` class at all (not even the trivial
   one, since there is no edge to be nonzero at).
@@ -114,24 +114,24 @@ inductive FiringEdge | e0 | e1 | e2
 
 /-! ## (B) The jump value, derived from the concrete `forallAnteOp` NSC firing
 
-`chargeLevel` reads a bilattice charge as an integer level; `jumpValue` is the size of
+`readingLevel` reads a bilattice reading as an integer level; `jumpValue` is the size of
 `forallAnteOp`'s genuine retraction `⊤ₖ ↦ ⊥ₖ` at the assembled join — the finite-carrier
 witness (`Flow.NSCFiring.forallAnteOp_isNSC`) that the firing really jumps. -/
 
-/-- The charge level: `⊤ₖ ↦ 1`, every other charge `↦ 0`. Just enough to detect
+/-- The reading level: `⊤ₖ ↦ 1`, every other reading `↦ 0`. Just enough to detect
 `forallAnteOp`'s retraction `⊤ₖ ↦ ⊥ₖ` as a nonzero integer difference. -/
-def chargeLevel : Charge → Int
+def readingLevel : Reading → Int
   | Articulating.Corner.stable => 1
   | _ => 0
 
 /-- **The jump value** — the integer size of `forallAnteOp`'s retraction at the
-assembled top: `chargeLevel ⊤ₖ − chargeLevel (forallAnteOp ⊤ₖ)`. This is the quantity
+assembled top: `readingLevel ⊤ₖ − readingLevel (forallAnteOp ⊤ₖ)`. This is the quantity
 every firing generator below is built from; it is *derived* from the concrete NSC
 firing witness, not posited. -/
-def jumpValue : Int := chargeLevel Charge.kTop - chargeLevel (Flow.NSCFiring.forallAnteOp Charge.kTop)
+def jumpValue : Int := readingLevel Reading.kTop - readingLevel (Flow.NSCFiring.forallAnteOp Reading.kTop)
 
 /-- **The jump is exactly `1`.** `forallAnteOp ⊤ₖ = ⊥ₖ` (`forallAnteOp_kTop`), so
-`chargeLevel ⊤ₖ − chargeLevel ⊥ₖ = 1 − 0 = 1`. The firing genuinely jumps: the retracted
+`readingLevel ⊤ₖ − readingLevel ⊥ₖ = 1 − 0 = 1`. The firing genuinely jumps: the retracted
 value differs from the assembled join by a full unit. -/
 theorem jumpValue_eq_one : jumpValue = 1 := by
   unfold jumpValue
@@ -312,7 +312,7 @@ theorem tbWitness_clinv_nonzero : tbWitness.clInv ≠ H1Class.zero :=
 
 /-! ## (G) The vanishing contrast — a Scott-continuous (no-firing) flow
 
-Over the finite charge carrier **every** closure has no NSC firing
+Over the finite reading carrier **every** closure has no NSC firing
 (`Flow.NSCFiring.no_nsc_firing_of_closure`): `L_ns(κ) = ∅`. Read off through the same
 construction, the firing-edge set collapses to `Empty`, and the resulting complex admits
 no nonzero `H¹` class at all — not even a trivial one, since there is no edge left to be
@@ -341,12 +341,12 @@ theorem scott_no_nonzero_h1_class :
   rintro ⟨_, _, e, _⟩
   exact e.elim
 
-/-- The structural reason `scottComplex` has no firing edges: every charge-closure over
+/-- The structural reason `scottComplex` has no firing edges: every reading-closure over
 the finite carrier has no NSC firing (`Flow.NSCFiring.no_nsc_firing_of_closure`, from
 `Closure.Scott.finite_scott_continuous` — directed joins are attained, so closures commute
 with them). -/
 theorem scott_flow_has_no_firing_edges :
-    ∀ (cl : Obsmetrologia.Charge.Closure) (S : Obsmetrologia.Closure.Scott.DirectedFamily),
+    ∀ (cl : Obsmetrologia.Reading.Closure) (S : Obsmetrologia.Closure.Scott.DirectedFamily),
       ¬ Flow.NSCFiring.IsNSC cl.op S :=
   Flow.NSCFiring.no_nsc_firing_of_closure
 

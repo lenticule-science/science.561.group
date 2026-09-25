@@ -14,7 +14,7 @@ edge `(a,c)` is their composite. For a **cocycle** `φ` (a closed 1-cochain), `�
 
   `φ(a,c) = φ(a,b) + φ(b,c)`
 
-— the charge is **additive along every bicharacteristic**, the discrete "closed form integrates
+— the reading is **additive along every bicharacteristic**, the discrete "closed form integrates
 path-independently". That additivity is the coisotropy: the microlocal datum propagates consistently
 along null geodesics. From it, the **wavefront is involutive** — a singular composite edge `(a,c)`
 *decomposes*: at least one of its bicharacteristic segments is singular too (a covector in the
@@ -69,7 +69,7 @@ theorem edges_composable (t : TwoSimplex C) : Bichar C (edge01 C t) (edge12 C t)
 /-! ## (B) Coisotropy — a cocycle is additive along bicharacteristics -/
 
 /-- **Coisotropy / path-independence.** A cocycle is **additive along every bicharacteristic**: the
-charge on the composite edge `(a,c)` is the sum of the charges on the two legs `(a,b)`, `(b,c)`. This
+reading on the composite edge `(a,c)` is the sum of the readings on the two legs `(a,b)`, `(b,c)`. This
 is `δ¹ φ = 0` rearranged — the discrete closed-form integrates path-independently, the propagation
 content of involutivity. -/
 theorem cocycle_additive {φ : C1 C} (hφ : Cocycle C φ) (t : TwoSimplex C) :
@@ -112,7 +112,7 @@ discrete coisotropy of the wavefront:
 * **bicharacteristics compose** (`edges_composable`) — the legs of a 2-simplex are composable null
   segments;
 * **coisotropy** (`cocycle_additive`) — a cocycle is additive along every bicharacteristic, the
-  charge on a composite is the sum over its legs (path-independence);
+  reading on a composite is the sum over its legs (path-independence);
 * **involutivity** (`wavefront_involutive`) — the wavefront of a cocycle is closed under
   bicharacteristic decomposition: a singular composite edge has a singular leg;
 * **confinement** (`bicharacteristic_causal`) — the composite stays in the causal cone.

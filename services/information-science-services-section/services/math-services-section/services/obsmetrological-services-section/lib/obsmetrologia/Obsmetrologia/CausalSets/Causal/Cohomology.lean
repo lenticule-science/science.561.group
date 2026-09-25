@@ -126,7 +126,7 @@ def Wavefront (φ : C1 C) : OneSimplex C → Prop := fun e => φ e ≠ 0
 
 /-- **An empty wavefront forces a trivial class.** A 1-cochain with no wavefront vanishes, hence is
 the zero coboundary `δ⁰ 0`: its `H¹` class is trivial. Contrapositive — a nontrivial cohomology
-class (a `cl-inv ≠ 0`) has a nonempty wavefront: cohomological charge forces a singular causal pair.
+class (a `cl-inv ≠ 0`) has a nonempty wavefront: cohomological reading forces a singular causal pair.
 This is the microlocal/cohomology bridge on the causal set's own complex. -/
 theorem wavefront_empty_coboundary {φ : C1 C} (h : ∀ e, ¬ Wavefront C φ e) : Coboundary C φ := by
   have hz : φ = fun _ => 0 := by
@@ -139,7 +139,7 @@ theorem wavefront_empty_coboundary {φ : C1 C} (h : ∀ e, ¬ Wavefront C φ e) 
   simp [delta0, hz]
 
 /-- A nonzero `cl-inv` coordinate at a causal pair `e` **is** membership of `e` in the wavefront —
-the cohomological charge is the microlocal datum. -/
+the cohomological reading is the microlocal datum. -/
 theorem clinv_nonzero_wavefront {φ : C1 C} (e : OneSimplex C) (h : φ e ≠ 0) : Wavefront C φ e := h
 
 /-! ## (E) The bundled headline -/

@@ -8,27 +8,27 @@ import Obsmetrologia.Cohomology.InconsistencySheaf
 
 This module gives the first formal carrier for the lenticle frontier: a lenticle
 of two clopen patches is exactly their overlap, cover pullback restricts a
-two-member cover to that overlap, and a definite pair of local charges has
-inconsistent knowledge-join exactly when the two charges disagree.
+two-member cover to that overlap, and a definite pair of local readings has
+inconsistent knowledge-join exactly when the two readings disagree.
 
 ## Main definitions
 
 * `Lenticle` — the overlap `meet U₁ U₂`.
-* `DefiniteCharge` / `ChargeDisagreement` — the local charge-section condition used
+* `DefiniteReading` / `ReadingDisagreement` — the local reading-section condition used
   by the first tractable branch of the conjecture.
 
 ## Main results
 
 * `covers_pullback_to_lenticle` — the site-level pullback cover on the overlap.
 * `definite_joinK_inconsistency_iff_disagreement` — local disagreement is exactly
-  `Charge.isInconsistency` of the knowledge-join for definite charges.
+  `Reading.isInconsistency` of the knowledge-join for definite readings.
 * `lenticle_miscrossing_isInconsistency` — the lenticle-local mis-crossing bridge
   reuses `AperiodicOrder.Tiling.miscrossing_isInconsistency`.
-* `lenticleCrossingCharge_inconsistency_iff_both_over` — the lenticle crossing
+* `lenticleCrossingReading_inconsistency_iff_both_over` — the lenticle crossing
   is inconsistent exactly in the mis-crossing case where both strands assert
   over-crossing.
 * `lenticleSection_miscrossing_somewhere_iff_disagreement` — on a finite lenticle
-  support, two definite charge-valued sections disagree somewhere exactly when
+  support, two definite reading-valued sections disagree somewhere exactly when
   their pointwise knowledge-join is inconsistent somewhere.
 * `pairwiseLenticleCensus_eq_h0top` — a finite family of lenticle supports counts
   exactly as `H0top` on the flattened induced support.
@@ -38,7 +38,7 @@ inconsistent knowledge-join exactly when the two charges disagree.
 * `finiteSiteCover_pairwise_lenticle_census_eq_h0top` — the same census after
   extracting all pairwise lenticle supports from a finite cover list of a `SiteObj`.
 * `lenticleBranch_diffraction_iff_disagreement` — the refraction/diffraction branch
-  is determined by the local disagreement condition for definite charges.
+  is determined by the local disagreement condition for definite readings.
 * `SiteLenticleIdentificationRealization.conditional_carrier` — the raw
   `SiteObj` two-cover setup has the local, global, and dynamical carrier
   once the finite support, sections, compatible valuation, and singleton
@@ -210,100 +210,100 @@ theorem lenticle_nonempty {Q : Type} (C : OverlappingTwoCover Q) :
 
 end OverlappingTwoCover
 
-/-- A local charge is definite when it is one of the two truth poles. -/
-def DefiniteCharge (c : Charge) : Prop := c = Charge.tTop ∨ c = Charge.tBot
+/-- A local reading is definite when it is one of the two truth poles. -/
+def DefiniteReading (c : Reading) : Prop := c = Reading.tTop ∨ c = Reading.tBot
 
-/-- Two definite local charges disagree when they occupy opposite truth poles. -/
-def ChargeDisagreement (c₁ c₂ : Charge) : Prop :=
-  (c₁ = Charge.tTop ∧ c₂ = Charge.tBot) ∨
-    (c₁ = Charge.tBot ∧ c₂ = Charge.tTop)
+/-- Two definite local readings disagree when they occupy opposite truth poles. -/
+def ReadingDisagreement (c₁ c₂ : Reading) : Prop :=
+  (c₁ = Reading.tTop ∧ c₂ = Reading.tBot) ∨
+    (c₁ = Reading.tBot ∧ c₂ = Reading.tTop)
 
-/-- For definite local charges, knowledge-join is inconsistent exactly at disagreement. -/
+/-- For definite local readings, knowledge-join is inconsistent exactly at disagreement. -/
 theorem definite_joinK_inconsistency_iff_disagreement
-    (c₁ c₂ : Charge) (h₁ : DefiniteCharge c₁) (h₂ : DefiniteCharge c₂) :
-    Charge.isInconsistency (Charge.joinK c₁ c₂) = true ↔ ChargeDisagreement c₁ c₂ := by
+    (c₁ c₂ : Reading) (h₁ : DefiniteReading c₁) (h₂ : DefiniteReading c₂) :
+    Reading.isInconsistency (Reading.joinK c₁ c₂) = true ↔ ReadingDisagreement c₁ c₂ := by
   rcases h₁ with rfl | rfl <;> rcases h₂ with rfl | rfl <;>
-    simp [ChargeDisagreement, Charge.isInconsistency, Charge.joinK, Charge.tTop, Charge.tBot,
-      Charge.kTop, Charge.ofSlots, Charge.pos, Charge.neg, Articulating.Corner.toStatus,
+    simp [ReadingDisagreement, Reading.isInconsistency, Reading.joinK, Reading.tTop, Reading.tBot,
+      Reading.kTop, Reading.ofSlots, Reading.pos, Reading.neg, Articulating.Corner.toStatus,
       Articulating.Corner.ofStatus]
 
-/-- Boolean form of local charge disagreement for finite-support counts. -/
-def ChargeDisagreementBool (c₁ c₂ : Charge) : Bool :=
-  ((decide (c₁ = Charge.tTop)) && (decide (c₂ = Charge.tBot))) ||
-    ((decide (c₁ = Charge.tBot)) && (decide (c₂ = Charge.tTop)))
+/-- Boolean form of local reading disagreement for finite-support counts. -/
+def ReadingDisagreementBool (c₁ c₂ : Reading) : Bool :=
+  ((decide (c₁ = Reading.tTop)) && (decide (c₂ = Reading.tBot))) ||
+    ((decide (c₁ = Reading.tBot)) && (decide (c₂ = Reading.tTop)))
 
-/-- The boolean disagreement test is the computable form of `ChargeDisagreement`. -/
-theorem chargeDisagreementBool_iff (c₁ c₂ : Charge) :
-    ChargeDisagreementBool c₁ c₂ = true ↔ ChargeDisagreement c₁ c₂ := by
-  unfold ChargeDisagreementBool ChargeDisagreement
+/-- The boolean disagreement test is the computable form of `ReadingDisagreement`. -/
+theorem readingDisagreementBool_iff (c₁ c₂ : Reading) :
+    ReadingDisagreementBool c₁ c₂ = true ↔ ReadingDisagreement c₁ c₂ := by
+  unfold ReadingDisagreementBool ReadingDisagreement
   cases c₁ <;> cases c₂ <;> decide
 
-/-- Pointwise knowledge-join of two charge-valued local sections. -/
-def LenticleJoinSection (c₁ c₂ : PredicationCell → Charge) : Valuation :=
-  fun φ => Charge.joinK (c₁ φ) (c₂ φ)
+/-- Pointwise knowledge-join of two reading-valued local sections. -/
+def LenticleJoinSection (c₁ c₂ : PredicationCell → Reading) : Valuation :=
+  fun φ => Reading.joinK (c₁ φ) (c₂ φ)
 
-/-- Two local sections disagree at a cell when their charges occupy opposite truth poles. -/
-def LenticleSectionDisagreement (c₁ c₂ : PredicationCell → Charge) (φ : PredicationCell) :
+/-- Two local sections disagree at a cell when their readings occupy opposite truth poles. -/
+def LenticleSectionDisagreement (c₁ c₂ : PredicationCell → Reading) (φ : PredicationCell) :
     Bool :=
-  ChargeDisagreementBool (c₁ φ) (c₂ φ)
+  ReadingDisagreementBool (c₁ φ) (c₂ φ)
 
-/-- Restrict a charge-valued section to a mask, using a specified value off the mask.
+/-- Restrict a reading-valued section to a mask, using a specified value off the mask.
 The off-mask value is irrelevant for lenticle-local theorems that quantify only over
 the realized finite support. -/
-def RestrictChargeSection
-    (m : PredicationCell → Bool) (offMask : Charge) (s : PredicationCell → Charge) :
-    PredicationCell → Charge :=
+def RestrictReadingSection
+    (m : PredicationCell → Bool) (offMask : Reading) (s : PredicationCell → Reading) :
+    PredicationCell → Reading :=
   fun φ => if m φ then s φ else offMask
 
-/-- Restriction preserves a charge section at every cell selected by the mask. -/
-theorem restrictChargeSection_eq_of_mask
-    (m : PredicationCell → Bool) (offMask : Charge) (s : PredicationCell → Charge)
+/-- Restriction preserves a reading section at every cell selected by the mask. -/
+theorem restrictReadingSection_eq_of_mask
+    (m : PredicationCell → Bool) (offMask : Reading) (s : PredicationCell → Reading)
     {φ : PredicationCell} (hφ : m φ = true) :
-    RestrictChargeSection m offMask s φ = s φ := by
-  simp [RestrictChargeSection, hφ]
+    RestrictReadingSection m offMask s φ = s φ := by
+  simp [RestrictReadingSection, hφ]
 
 /-- Pointwise form: a joined section is inconsistent at exactly the disagreement
-cell, assuming the two charges at that cell are definite. -/
+cell, assuming the two readings at that cell are definite. -/
 theorem lenticleSection_inconsistency_eq_disagreement_at
-    (c₁ c₂ : PredicationCell → Charge) (φ : PredicationCell)
-    (h₁ : DefiniteCharge (c₁ φ)) (h₂ : DefiniteCharge (c₂ φ)) :
-    Charge.isInconsistency (LenticleJoinSection c₁ c₂ φ) =
+    (c₁ c₂ : PredicationCell → Reading) (φ : PredicationCell)
+    (h₁ : DefiniteReading (c₁ φ)) (h₂ : DefiniteReading (c₂ φ)) :
+    Reading.isInconsistency (LenticleJoinSection c₁ c₂ φ) =
       LenticleSectionDisagreement c₁ c₂ φ := by
   unfold LenticleJoinSection LenticleSectionDisagreement
   have hiff := definite_joinK_inconsistency_iff_disagreement (c₁ φ) (c₂ φ) h₁ h₂
-  cases hb : ChargeDisagreementBool (c₁ φ) (c₂ φ)
-  · have hn : ¬ ChargeDisagreement (c₁ φ) (c₂ φ) := fun h => by
-      have ht := (chargeDisagreementBool_iff (c₁ φ) (c₂ φ)).2 h
+  cases hb : ReadingDisagreementBool (c₁ φ) (c₂ φ)
+  · have hn : ¬ ReadingDisagreement (c₁ φ) (c₂ φ) := fun h => by
+      have ht := (readingDisagreementBool_iff (c₁ φ) (c₂ φ)).2 h
       rw [hb] at ht
       contradiction
-    cases hi : Charge.isInconsistency (Charge.joinK (c₁ φ) (c₂ φ))
+    cases hi : Reading.isInconsistency (Reading.joinK (c₁ φ) (c₂ φ))
     · rfl
     · exact False.elim (hn (hiff.1 hi))
-  · exact hiff.2 ((chargeDisagreementBool_iff (c₁ φ) (c₂ φ)).1 hb)
+  · exact hiff.2 ((readingDisagreementBool_iff (c₁ φ) (c₂ φ)).1 hb)
 
 /-- The pointwise joined section is inconsistent at exactly the disagreement cells. -/
 theorem lenticleSection_inconsistency_eq_disagreement
-    (c₁ c₂ : PredicationCell → Charge)
-    (h₁ : ∀ φ, DefiniteCharge (c₁ φ)) (h₂ : ∀ φ, DefiniteCharge (c₂ φ))
+    (c₁ c₂ : PredicationCell → Reading)
+    (h₁ : ∀ φ, DefiniteReading (c₁ φ)) (h₂ : ∀ φ, DefiniteReading (c₂ φ))
     (φ : PredicationCell) :
-    Charge.isInconsistency (LenticleJoinSection c₁ c₂ φ) =
+    Reading.isInconsistency (LenticleJoinSection c₁ c₂ φ) =
       LenticleSectionDisagreement c₁ c₂ φ :=
   lenticleSection_inconsistency_eq_disagreement_at c₁ c₂ φ (h₁ φ) (h₂ φ)
 
 /-- The joined section has a mis-crossing somewhere exactly when the sections disagree somewhere. -/
 def LenticleMiscrossingSomewhere
-    (cells : List PredicationCell) (c₁ c₂ : PredicationCell → Charge) : Bool :=
-  cells.any (fun φ => Charge.isInconsistency (LenticleJoinSection c₁ c₂ φ))
+    (cells : List PredicationCell) (c₁ c₂ : PredicationCell → Reading) : Bool :=
+  cells.any (fun φ => Reading.isInconsistency (LenticleJoinSection c₁ c₂ φ))
 
 /-- Two sections disagree somewhere on a finite lenticle support. -/
 def LenticleDisagreementSomewhere
-    (cells : List PredicationCell) (c₁ c₂ : PredicationCell → Charge) : Bool :=
+    (cells : List PredicationCell) (c₁ c₂ : PredicationCell → Reading) : Bool :=
   cells.any (fun φ => LenticleSectionDisagreement c₁ c₂ φ)
 
 /-- On finite supports, local mis-crossing somewhere is equivalent to section disagreement somewhere. -/
 theorem lenticleSection_miscrossing_somewhere_iff_disagreement
-    (cells : List PredicationCell) (c₁ c₂ : PredicationCell → Charge)
-    (h₁ : ∀ φ, DefiniteCharge (c₁ φ)) (h₂ : ∀ φ, DefiniteCharge (c₂ φ)) :
+    (cells : List PredicationCell) (c₁ c₂ : PredicationCell → Reading)
+    (h₁ : ∀ φ, DefiniteReading (c₁ φ)) (h₂ : ∀ φ, DefiniteReading (c₂ φ)) :
     LenticleMiscrossingSomewhere cells c₁ c₂ = true ↔
       LenticleDisagreementSomewhere cells c₁ c₂ = true := by
   have h :
@@ -320,9 +320,9 @@ theorem lenticleSection_miscrossing_somewhere_iff_disagreement
 /-- On finite supports, local mis-crossing somewhere is equivalent to section
 disagreement somewhere when definiteness is known only on that support. -/
 theorem lenticleSection_miscrossing_somewhere_iff_disagreement_on_support
-    (cells : List PredicationCell) (c₁ c₂ : PredicationCell → Charge)
-    (h₁ : ∀ φ, φ ∈ cells → DefiniteCharge (c₁ φ))
-    (h₂ : ∀ φ, φ ∈ cells → DefiniteCharge (c₂ φ)) :
+    (cells : List PredicationCell) (c₁ c₂ : PredicationCell → Reading)
+    (h₁ : ∀ φ, φ ∈ cells → DefiniteReading (c₁ φ))
+    (h₂ : ∀ φ, φ ∈ cells → DefiniteReading (c₂ φ)) :
     LenticleMiscrossingSomewhere cells c₁ c₂ = true ↔
       LenticleDisagreementSomewhere cells c₁ c₂ = true := by
   have h :
@@ -336,14 +336,14 @@ theorem lenticleSection_miscrossing_somewhere_iff_disagreement_on_support
     | cons φ rest ih =>
         intro h₁ h₂
         have hhead :
-            Charge.isInconsistency (LenticleJoinSection c₁ c₂ φ) =
+            Reading.isInconsistency (LenticleJoinSection c₁ c₂ φ) =
               LenticleSectionDisagreement c₁ c₂ φ :=
           lenticleSection_inconsistency_eq_disagreement_at c₁ c₂ φ
             (h₁ φ (by simp)) (h₂ φ (by simp))
-        have hrest₁ : ∀ ψ, ψ ∈ rest → DefiniteCharge (c₁ ψ) := by
+        have hrest₁ : ∀ ψ, ψ ∈ rest → DefiniteReading (c₁ ψ) := by
           intro ψ hψ
           exact h₁ ψ (List.mem_cons.2 (Or.inr hψ))
-        have hrest₂ : ∀ ψ, ψ ∈ rest → DefiniteCharge (c₂ ψ) := by
+        have hrest₂ : ∀ ψ, ψ ∈ rest → DefiniteReading (c₂ ψ) := by
           intro ψ hψ
           exact h₂ ψ (List.mem_cons.2 (Or.inr hψ))
         have hrest := ih hrest₁ hrest₂
@@ -351,63 +351,63 @@ theorem lenticleSection_miscrossing_somewhere_iff_disagreement_on_support
         simp only [List.any_cons, hhead, hrest]
   rw [h]
 
-/-- A lenticle-local crossing charge is the existing crossing charge read at the overlap. -/
-def lenticleCrossingCharge (_U₁ _U₂ : Site.Clopen) (warpOver weftOver : Bool) : Charge :=
-  AperiodicOrder.Tiling.crossingCharge warpOver weftOver
+/-- A lenticle-local crossing reading is the existing crossing reading read at the overlap. -/
+def lenticleCrossingReading (_U₁ _U₂ : Site.Clopen) (warpOver weftOver : Bool) : Reading :=
+  AperiodicOrder.Tiling.crossingReading warpOver weftOver
 
-/-- The lenticle-local crossing charge is definitionally the existing crossing charge;
+/-- The lenticle-local crossing reading is definitionally the existing crossing reading;
 the clopen parameters only record the overlap locus where it is read. -/
-@[simp] theorem lenticleCrossingCharge_eq_crossingCharge
+@[simp] theorem lenticleCrossingReading_eq_crossingReading
     (U₁ U₂ : Site.Clopen) (warpOver weftOver : Bool) :
-    lenticleCrossingCharge U₁ U₂ warpOver weftOver =
-      AperiodicOrder.Tiling.crossingCharge warpOver weftOver := rfl
+    lenticleCrossingReading U₁ U₂ warpOver weftOver =
+      AperiodicOrder.Tiling.crossingReading warpOver weftOver := rfl
 
 /-- The lenticle-local mis-crossing is the existing mis-crossing theorem at the overlap. -/
 theorem lenticle_miscrossing_isInconsistency (U₁ U₂ : Site.Clopen) :
-    Charge.isInconsistency (lenticleCrossingCharge U₁ U₂ true true) = true :=
+    Reading.isInconsistency (lenticleCrossingReading U₁ U₂ true true) = true :=
   by simpa using AperiodicOrder.Tiling.miscrossing_isInconsistency
 
-/-- The lenticle-local crossing charge is inconsistent exactly in the
+/-- The lenticle-local crossing reading is inconsistent exactly in the
 mis-crossing case: both strands assert the over-crossing. -/
-theorem lenticleCrossingCharge_inconsistency_iff_both_over
+theorem lenticleCrossingReading_inconsistency_iff_both_over
     (U₁ U₂ : Site.Clopen) (warpOver weftOver : Bool) :
-  Charge.isInconsistency (lenticleCrossingCharge U₁ U₂ warpOver weftOver) = true ↔
+  Reading.isInconsistency (lenticleCrossingReading U₁ U₂ warpOver weftOver) = true ↔
       warpOver = true ∧ weftOver = true := by
   cases warpOver <;> cases weftOver
-  · simp [lenticleCrossingCharge, AperiodicOrder.Tiling.hole_is_kBot, Charge.isInconsistency,
-      Charge.kBot, Charge.kTop]
-  · simp [lenticleCrossingCharge, AperiodicOrder.Tiling.crossingCharge, Charge.isInconsistency,
-      Charge.kTop, Articulating.FourCorner.toCorner, Articulating.Corner.ofStatus]
-  · simp [lenticleCrossingCharge, AperiodicOrder.Tiling.crossingCharge, Charge.isInconsistency,
-      Charge.kTop, Articulating.FourCorner.toCorner, Articulating.Corner.ofStatus]
+  · simp [lenticleCrossingReading, AperiodicOrder.Tiling.hole_is_kBot, Reading.isInconsistency,
+      Reading.kBot, Reading.kTop]
+  · simp [lenticleCrossingReading, AperiodicOrder.Tiling.crossingReading, Reading.isInconsistency,
+      Reading.kTop, Articulating.FourCorner.toCorner, Articulating.Corner.ofStatus]
+  · simp [lenticleCrossingReading, AperiodicOrder.Tiling.crossingReading, Reading.isInconsistency,
+      Reading.kTop, Articulating.FourCorner.toCorner, Articulating.Corner.ofStatus]
   · simpa using lenticle_miscrossing_isInconsistency U₁ U₂
 
 /-- A defect-free lenticle-local crossing carries no inconsistency. -/
 theorem lenticle_defectFree_consistent (U₁ U₂ : Site.Clopen) (b : Bool) :
-    Charge.isInconsistency (lenticleCrossingCharge U₁ U₂ b (!b)) = false := by
-  simpa [lenticleCrossingCharge] using AperiodicOrder.Tiling.defectFree_consistent b
+    Reading.isInconsistency (lenticleCrossingReading U₁ U₂ b (!b)) = false := by
+  simpa [lenticleCrossingReading] using AperiodicOrder.Tiling.defectFree_consistent b
 
 /-- The one-cell lenticle census is the `H⁰_⊤` inconsistency count. -/
 theorem lenticle_singleton_h0top_count (v : Valuation) (φ : PredicationCell) :
     InconSheaf.H0top v [φ] =
-      [φ].countP (fun ψ => Charge.isInconsistency (v ψ)) :=
+      [φ].countP (fun ψ => Reading.isInconsistency (v ψ)) :=
   (InconSheaf.h0top_is_inconsistency_count v [φ]).1
 
 /-! ## Finite lenticle census -/
 
 /-- The mis-crossing census over one finite lenticle support. -/
 def LenticleCensus (v : Valuation) (cells : List PredicationCell) : Nat :=
-  cells.countP (fun φ => Charge.isInconsistency (v φ))
+  cells.countP (fun φ => Reading.isInconsistency (v φ))
 
 /-- The number of disagreement cells between two local sections on a finite support. -/
 def LenticleDisagreementCount
-    (cells : List PredicationCell) (c₁ c₂ : PredicationCell → Charge) : Nat :=
+    (cells : List PredicationCell) (c₁ c₂ : PredicationCell → Reading) : Nat :=
   cells.countP (fun φ => LenticleSectionDisagreement c₁ c₂ φ)
 
 /-- The `H⁰_⊤` count of the joined section is exactly the section-disagreement count. -/
 theorem lenticleSection_h0top_eq_disagreement_count
-    (cells : List PredicationCell) (c₁ c₂ : PredicationCell → Charge)
-    (h₁ : ∀ φ, DefiniteCharge (c₁ φ)) (h₂ : ∀ φ, DefiniteCharge (c₂ φ)) :
+    (cells : List PredicationCell) (c₁ c₂ : PredicationCell → Reading)
+    (h₁ : ∀ φ, DefiniteReading (c₁ φ)) (h₂ : ∀ φ, DefiniteReading (c₂ φ)) :
     InconSheaf.H0top (LenticleJoinSection c₁ c₂) cells =
       LenticleDisagreementCount cells c₁ c₂ := by
   rw [(InconSheaf.h0top_is_inconsistency_count (LenticleJoinSection c₁ c₂) cells).1]
@@ -427,15 +427,15 @@ theorem h0top_append (v : Valuation) (xs ys : List PredicationCell) :
   rw [(InconSheaf.h0top_is_inconsistency_count v ys).1]
   exact List.countP_append
 
-/-- One finite pairwise lenticle support with the two charge-valued sections
+/-- One finite pairwise lenticle support with the two reading-valued sections
 whose knowledge-join induces its local inconsistency-sheaf valuation. -/
 structure LenticleSectionEntry where
   /-- The finite support of the pairwise lenticle. -/
   cells : List PredicationCell
-  /-- The left restricted charge-valued section. -/
-  left : PredicationCell → Charge
-  /-- The right restricted charge-valued section. -/
-  right : PredicationCell → Charge
+  /-- The left restricted reading-valued section. -/
+  left : PredicationCell → Reading
+  /-- The right restricted reading-valued section. -/
+  right : PredicationCell → Reading
 
 namespace LenticleSectionEntry
 
@@ -458,8 +458,8 @@ def SingletonSupport (E : LenticleSectionEntry) : Prop :=
 
 /-- Definiteness of both restricted sections on the finite lenticle support. -/
 def DefiniteOnSupport (E : LenticleSectionEntry) : Prop :=
-  (∀ φ, φ ∈ E.cells → DefiniteCharge (E.left φ)) ∧
-    (∀ φ, φ ∈ E.cells → DefiniteCharge (E.right φ))
+  (∀ φ, φ ∈ E.cells → DefiniteReading (E.left φ)) ∧
+    (∀ φ, φ ∈ E.cells → DefiniteReading (E.right φ))
 
 /-- A global induced valuation is compatible with an entry when it agrees with
 the joined restricted sections on that entry's finite support. -/
@@ -484,15 +484,15 @@ theorem h0top_eq_disagreement_count_of_compatible
   | cons φ rest ih =>
       have hv : v φ = LenticleJoinSection left right φ := hcompat φ (by simp)
       have hhead :
-          Charge.isInconsistency (v φ) =
+          Reading.isInconsistency (v φ) =
             LenticleSectionDisagreement left right φ := by
         rw [hv]
         exact lenticleSection_inconsistency_eq_disagreement_at left right φ
           (hleft φ (by simp)) (hright φ (by simp))
-      have hleft_rest : ∀ ψ, ψ ∈ rest → DefiniteCharge (left ψ) := by
+      have hleft_rest : ∀ ψ, ψ ∈ rest → DefiniteReading (left ψ) := by
         intro ψ hψ
         exact hleft ψ (List.mem_cons.2 (Or.inr hψ))
-      have hright_rest : ∀ ψ, ψ ∈ rest → DefiniteCharge (right ψ) := by
+      have hright_rest : ∀ ψ, ψ ∈ rest → DefiniteReading (right ψ) := by
         intro ψ hψ
         exact hright ψ (List.mem_cons.2 (Or.inr hψ))
       have hcompat_rest : ∀ ψ, ψ ∈ rest → v ψ = LenticleJoinSection left right ψ := by
@@ -526,7 +526,7 @@ theorem disagreementCount_eq_miscount_of_singleton
       subst hcells
       rcases hdef with ⟨hleft, hright⟩
       have hhead :
-          Charge.isInconsistency (LenticleJoinSection left right φ) =
+          Reading.isInconsistency (LenticleJoinSection left right φ) =
             LenticleSectionDisagreement left right φ :=
         lenticleSection_inconsistency_eq_disagreement_at left right φ
           (hleft φ (by simp)) (hright φ (by simp))
@@ -656,7 +656,7 @@ list. -/
 theorem pairwiseLenticleCensus_is_inconsistency_count
     (v : Valuation) (supports : List (List PredicationCell)) :
     PairwiseLenticleCensus v supports =
-      supports.flatten.countP (fun φ => Charge.isInconsistency (v φ)) := by
+      supports.flatten.countP (fun φ => Reading.isInconsistency (v φ)) := by
   rw [pairwiseLenticleCensus_eq_h0top v supports]
   exact (InconSheaf.h0top_is_inconsistency_count v supports.flatten).1
 
@@ -837,46 +837,46 @@ theorem restrict_lenticle_eq_restrict_pair (R : FiniteSupportRealization)
   rw [R.lenticle_mask]
   cases R.mask U₁ φ <;> cases R.mask U₂ φ <;> rfl
 
-/-- Restricting a charge-valued section to the lenticle mask preserves it on the
+/-- Restricting a reading-valued section to the lenticle mask preserves it on the
 realized finite lenticle support. -/
-theorem restrictChargeSection_eq_on_lenticleSupport
-    (R : FiniteSupportRealization) (U₁ U₂ : Site.Clopen) (offMask : Charge)
-    (s : PredicationCell → Charge) {φ : PredicationCell}
+theorem restrictReadingSection_eq_on_lenticleSupport
+    (R : FiniteSupportRealization) (U₁ U₂ : Site.Clopen) (offMask : Reading)
+    (s : PredicationCell → Reading) {φ : PredicationCell}
     (hφ : φ ∈ R.support (Lenticle U₁ U₂)) :
-    RestrictChargeSection (R.mask (Lenticle U₁ U₂)) offMask s φ = s φ :=
-  restrictChargeSection_eq_of_mask (R.mask (Lenticle U₁ U₂)) offMask s
+    RestrictReadingSection (R.mask (Lenticle U₁ U₂)) offMask s φ = s φ :=
+  restrictReadingSection_eq_of_mask (R.mask (Lenticle U₁ U₂)) offMask s
     ((R.support_complete (Lenticle U₁ U₂) φ).1 hφ)
 
-/-- The local lenticle mis-crossing theorem applied to charge-valued sections
+/-- The local lenticle mis-crossing theorem applied to reading-valued sections
 induced by restriction to the realized lenticle mask. -/
 theorem restricted_lenticleSection_miscrossing_somewhere_iff_disagreement
     (R : FiniteSupportRealization) (U₁ U₂ : Site.Clopen)
-    (off₁ off₂ : Charge) (c₁ c₂ : PredicationCell → Charge)
-    (h₁ : ∀ φ, φ ∈ R.support (Lenticle U₁ U₂) → DefiniteCharge (c₁ φ))
-    (h₂ : ∀ φ, φ ∈ R.support (Lenticle U₁ U₂) → DefiniteCharge (c₂ φ)) :
+    (off₁ off₂ : Reading) (c₁ c₂ : PredicationCell → Reading)
+    (h₁ : ∀ φ, φ ∈ R.support (Lenticle U₁ U₂) → DefiniteReading (c₁ φ))
+    (h₂ : ∀ φ, φ ∈ R.support (Lenticle U₁ U₂) → DefiniteReading (c₂ φ)) :
     LenticleMiscrossingSomewhere (R.support (Lenticle U₁ U₂))
-        (RestrictChargeSection (R.mask (Lenticle U₁ U₂)) off₁ c₁)
-        (RestrictChargeSection (R.mask (Lenticle U₁ U₂)) off₂ c₂) = true ↔
+        (RestrictReadingSection (R.mask (Lenticle U₁ U₂)) off₁ c₁)
+        (RestrictReadingSection (R.mask (Lenticle U₁ U₂)) off₂ c₂) = true ↔
       LenticleDisagreementSomewhere (R.support (Lenticle U₁ U₂))
-        (RestrictChargeSection (R.mask (Lenticle U₁ U₂)) off₁ c₁)
-        (RestrictChargeSection (R.mask (Lenticle U₁ U₂)) off₂ c₂) = true := by
+        (RestrictReadingSection (R.mask (Lenticle U₁ U₂)) off₁ c₁)
+        (RestrictReadingSection (R.mask (Lenticle U₁ U₂)) off₂ c₂) = true := by
   apply lenticleSection_miscrossing_somewhere_iff_disagreement_on_support
   · intro φ hφ
-    rw [restrictChargeSection_eq_on_lenticleSupport R U₁ U₂ off₁ c₁ hφ]
+    rw [restrictReadingSection_eq_on_lenticleSupport R U₁ U₂ off₁ c₁ hφ]
     exact h₁ φ hφ
   · intro φ hφ
-    rw [restrictChargeSection_eq_on_lenticleSupport R U₁ U₂ off₂ c₂ hφ]
+    rw [restrictReadingSection_eq_on_lenticleSupport R U₁ U₂ off₂ c₂ hφ]
     exact h₂ φ hφ
 
 end FiniteSupportRealization
 
-/-- Pull back a charge-valued section along a fixed-fiber site morphism by
+/-- Pull back a reading-valued section along a fixed-fiber site morphism by
 restricting it to the source support retained by the morphism. -/
-def FiberPullbackChargeSection
+def FiberPullbackReadingSection
     {Q : Type} {src dst : Site.SiteObj Q} (R : FiniteSupportRealization)
-    (f : Site.FiberHom Q src dst) (offMask : Charge)
-    (s : PredicationCell → Charge) : PredicationCell → Charge :=
-  RestrictChargeSection (R.mask f.support) offMask s
+    (f : Site.FiberHom Q src dst) (offMask : Reading)
+    (s : PredicationCell → Reading) : PredicationCell → Reading :=
+  RestrictReadingSection (R.mask f.support) offMask s
 
 namespace FiniteSiteCover
 
@@ -899,7 +899,7 @@ count on the flattened family of induced pairwise-overlap supports. -/
 theorem finiteSiteCover_pairwise_lenticle_census_is_inconsistency_count
     {Q : Type} (C : FiniteSiteCover Q) (v : Valuation) :
     PairwiseLenticleCensus v C.pairwiseSupports =
-      C.pairwiseSupports.flatten.countP (fun φ => Charge.isInconsistency (v φ)) :=
+      C.pairwiseSupports.flatten.countP (fun φ => Reading.isInconsistency (v φ)) :=
   pairwiseLenticleCensus_is_inconsistency_count v C.pairwiseSupports
 
 /-- For a finite site cover, a positive pairwise lenticle census is exactly
@@ -954,7 +954,7 @@ lenticle census theorem. -/
 theorem pairwise_lenticle_census_is_inconsistency_count
     {Q : Type} (C : RealizedFiniteSiteCover Q) (v : Valuation) :
     PairwiseLenticleCensus v C.pairwiseSupports =
-      C.pairwiseSupports.flatten.countP (fun φ => Charge.isInconsistency (v φ)) :=
+      C.pairwiseSupports.flatten.countP (fun φ => Reading.isInconsistency (v φ)) :=
   finiteSiteCover_pairwise_lenticle_census_is_inconsistency_count C.toFiniteSiteCover v
 
 /-- Realized finite covers inherit the positive-census/inconsistency-content
@@ -991,7 +991,7 @@ theorem two_lenticle_support_mem_iff
 
 end RealizedFiniteSiteCover
 
-/-- A realized finite cover equipped with the charge-valued section data on each
+/-- A realized finite cover equipped with the reading-valued section data on each
 pairwise lenticle support.  The `support_eq` field says the section entries are
 not a detached list: their supports are exactly the pairwise lenticle supports
 extracted from the realized cover. -/
@@ -1064,7 +1064,7 @@ theorem miscrossingCount_is_inconsistency_count
     {Q : Type} (C : SectionRealizedFiniteSiteCover Q) (v : Valuation)
     (hcompat : C.Compatible v) (hsingleton : C.SingletonSupports) :
     C.miscrossingCount =
-      C.cover.pairwiseSupports.flatten.countP (fun φ => Charge.isInconsistency (v φ)) := by
+      C.cover.pairwiseSupports.flatten.countP (fun φ => Reading.isInconsistency (v φ)) := by
   rw [← h0top_eq_miscrossing_count C v hcompat hsingleton]
   exact (InconSheaf.h0top_is_inconsistency_count v C.cover.pairwiseSupports.flatten).1
 
@@ -1129,7 +1129,7 @@ theorem global_carrier_is_inconsistency_count
     {Q : Type} (D : FiniteCoverLenticleCensusRealization Q) :
     D.cover.miscrossingCount =
       D.cover.cover.pairwiseSupports.flatten.countP
-        (fun φ => Charge.isInconsistency (D.valuation φ)) :=
+        (fun φ => Reading.isInconsistency (D.valuation φ)) :=
   SectionRealizedFiniteSiteCover.miscrossingCount_is_inconsistency_count
     D.cover D.valuation D.compatible D.singleton_supports
 
@@ -1145,20 +1145,20 @@ theorem global_carrier_pos_iff_inconsistencyContent
 
 end FiniteCoverLenticleCensusRealization
 
-/-- The single section entry induced by restricting two charge-valued local
+/-- The single section entry induced by restricting two reading-valued local
 sections to the lenticle of a two-member realized cover. -/
 def twoMemberSectionEntry
     (R : FiniteSupportRealization) (U₁ U₂ : Site.Clopen)
-    (off₁ off₂ : Charge) (c₁ c₂ : PredicationCell → Charge) :
+    (off₁ off₂ : Reading) (c₁ c₂ : PredicationCell → Reading) :
     LenticleSectionEntry where
   cells := R.support (Lenticle U₁ U₂)
-  left := RestrictChargeSection (R.mask (Lenticle U₁ U₂)) off₁ c₁
-  right := RestrictChargeSection (R.mask (Lenticle U₁ U₂)) off₂ c₂
+  left := RestrictReadingSection (R.mask (Lenticle U₁ U₂)) off₁ c₁
+  right := RestrictReadingSection (R.mask (Lenticle U₁ U₂)) off₂ c₂
 
 /-- The two-member section entry has exactly the realized lenticle support. -/
 @[simp] theorem twoMemberSectionEntry_cells
     (R : FiniteSupportRealization) (U₁ U₂ : Site.Clopen)
-    (off₁ off₂ : Charge) (c₁ c₂ : PredicationCell → Charge) :
+    (off₁ off₂ : Reading) (c₁ c₂ : PredicationCell → Reading) :
     (twoMemberSectionEntry R U₁ U₂ off₁ off₂ c₁ c₂).cells =
       R.support (Lenticle U₁ U₂) := rfl
 
@@ -1167,54 +1167,54 @@ local section along the lenticle-to-left-patch fiber morphism. -/
 theorem twoMemberSectionEntry_left_eq_fiberPullback
     {Q : Type} (S : Site.SiteObj Q) (R : FiniteSupportRealization)
     (U₁ U₂ : Site.Clopen)
-    (off₁ off₂ : Charge) (c₁ c₂ : PredicationCell → Charge) :
+    (off₁ off₂ : Reading) (c₁ c₂ : PredicationCell → Reading) :
     (twoMemberSectionEntry R U₁ U₂ off₁ off₂ c₁ c₂).left =
-      FiberPullbackChargeSection R (lenticleToLeftFiberHom S U₁ U₂) off₁ c₁ := rfl
+      FiberPullbackReadingSection R (lenticleToLeftFiberHom S U₁ U₂) off₁ c₁ := rfl
 
 /-- The right section of a two-member lenticle entry is the pullback of the right
 local section along the lenticle-to-right-patch fiber morphism. -/
 theorem twoMemberSectionEntry_right_eq_fiberPullback
     {Q : Type} (S : Site.SiteObj Q) (R : FiniteSupportRealization)
     (U₁ U₂ : Site.Clopen)
-    (off₁ off₂ : Charge) (c₁ c₂ : PredicationCell → Charge) :
+    (off₁ off₂ : Reading) (c₁ c₂ : PredicationCell → Reading) :
     (twoMemberSectionEntry R U₁ U₂ off₁ off₂ c₁ c₂).right =
-      FiberPullbackChargeSection R (lenticleToRightFiberHom S U₁ U₂) off₂ c₂ := rfl
+      FiberPullbackReadingSection R (lenticleToRightFiberHom S U₁ U₂) off₂ c₂ := rfl
 
 /-- Definiteness of the original local sections on the lenticle support gives
 definiteness of the restricted two-member section entry. -/
 theorem twoMemberSectionEntry_definite
     (R : FiniteSupportRealization) (U₁ U₂ : Site.Clopen)
-    (off₁ off₂ : Charge) (c₁ c₂ : PredicationCell → Charge)
-    (h₁ : ∀ φ, φ ∈ R.support (Lenticle U₁ U₂) → DefiniteCharge (c₁ φ))
-    (h₂ : ∀ φ, φ ∈ R.support (Lenticle U₁ U₂) → DefiniteCharge (c₂ φ)) :
+    (off₁ off₂ : Reading) (c₁ c₂ : PredicationCell → Reading)
+    (h₁ : ∀ φ, φ ∈ R.support (Lenticle U₁ U₂) → DefiniteReading (c₁ φ))
+    (h₂ : ∀ φ, φ ∈ R.support (Lenticle U₁ U₂) → DefiniteReading (c₂ φ)) :
     (twoMemberSectionEntry R U₁ U₂ off₁ off₂ c₁ c₂).DefiniteOnSupport := by
   constructor
   · intro φ hφ
     have hmem : φ ∈ R.support (Lenticle U₁ U₂) := by
       simpa [twoMemberSectionEntry] using hφ
-    change DefiniteCharge
-      (RestrictChargeSection (R.mask (Lenticle U₁ U₂)) off₁ c₁ φ)
-    rw [FiniteSupportRealization.restrictChargeSection_eq_on_lenticleSupport
+    change DefiniteReading
+      (RestrictReadingSection (R.mask (Lenticle U₁ U₂)) off₁ c₁ φ)
+    rw [FiniteSupportRealization.restrictReadingSection_eq_on_lenticleSupport
       R U₁ U₂ off₁ c₁ hmem]
     exact h₁ φ hmem
   · intro φ hφ
     have hmem : φ ∈ R.support (Lenticle U₁ U₂) := by
       simpa [twoMemberSectionEntry] using hφ
-    change DefiniteCharge
-      (RestrictChargeSection (R.mask (Lenticle U₁ U₂)) off₂ c₂ φ)
-    rw [FiniteSupportRealization.restrictChargeSection_eq_on_lenticleSupport
+    change DefiniteReading
+      (RestrictReadingSection (R.mask (Lenticle U₁ U₂)) off₂ c₂ φ)
+    rw [FiniteSupportRealization.restrictReadingSection_eq_on_lenticleSupport
       R U₁ U₂ off₂ c₂ hmem]
     exact h₂ φ hmem
 
-/-- A two-member realized finite cover, together with two local charge-valued
+/-- A two-member realized finite cover, together with two local reading-valued
 sections, induces a one-entry section-realized cover. -/
 def twoMemberSectionRealizedCover
     {Q : Type} (S : Site.SiteObj Q) (U₁ U₂ : Site.Clopen)
     (hcov : Site.Covers S.U [U₁, U₂])
     (R : FiniteSupportRealization)
-    (off₁ off₂ : Charge) (c₁ c₂ : PredicationCell → Charge)
-    (h₁ : ∀ φ, φ ∈ R.support (Lenticle U₁ U₂) → DefiniteCharge (c₁ φ))
-    (h₂ : ∀ φ, φ ∈ R.support (Lenticle U₁ U₂) → DefiniteCharge (c₂ φ)) :
+    (off₁ off₂ : Reading) (c₁ c₂ : PredicationCell → Reading)
+    (h₁ : ∀ φ, φ ∈ R.support (Lenticle U₁ U₂) → DefiniteReading (c₁ φ))
+    (h₂ : ∀ φ, φ ∈ R.support (Lenticle U₁ U₂) → DefiniteReading (c₂ φ)) :
     SectionRealizedFiniteSiteCover Q where
   cover := { site := S, patches := [U₁, U₂], covers := hcov, realization := R }
   entries := [twoMemberSectionEntry R U₁ U₂ off₁ off₂ c₁ c₂]
@@ -1232,9 +1232,9 @@ theorem twoMemberSectionRealizedCover_h0top_eq_disagreement_count
     {Q : Type} (S : Site.SiteObj Q) (U₁ U₂ : Site.Clopen)
     (hcov : Site.Covers S.U [U₁, U₂])
     (R : FiniteSupportRealization)
-    (off₁ off₂ : Charge) (c₁ c₂ : PredicationCell → Charge)
-    (h₁ : ∀ φ, φ ∈ R.support (Lenticle U₁ U₂) → DefiniteCharge (c₁ φ))
-    (h₂ : ∀ φ, φ ∈ R.support (Lenticle U₁ U₂) → DefiniteCharge (c₂ φ))
+    (off₁ off₂ : Reading) (c₁ c₂ : PredicationCell → Reading)
+    (h₁ : ∀ φ, φ ∈ R.support (Lenticle U₁ U₂) → DefiniteReading (c₁ φ))
+    (h₂ : ∀ φ, φ ∈ R.support (Lenticle U₁ U₂) → DefiniteReading (c₂ φ))
     (v : Valuation)
     (hcompat :
       (twoMemberSectionRealizedCover S U₁ U₂ hcov R off₁ off₂ c₁ c₂ h₁ h₂).Compatible v) :
@@ -1254,9 +1254,9 @@ sections, induces the corresponding section-realized finite cover. -/
 def overlappingTwoCoverSectionRealizedCover
     {Q : Type} (C : OverlappingTwoCover Q)
     (R : FiniteSupportRealization)
-    (off₁ off₂ : Charge) (c₁ c₂ : PredicationCell → Charge)
-    (h₁ : ∀ φ, φ ∈ R.support (Lenticle C.left C.right) → DefiniteCharge (c₁ φ))
-    (h₂ : ∀ φ, φ ∈ R.support (Lenticle C.left C.right) → DefiniteCharge (c₂ φ)) :
+    (off₁ off₂ : Reading) (c₁ c₂ : PredicationCell → Reading)
+    (h₁ : ∀ φ, φ ∈ R.support (Lenticle C.left C.right) → DefiniteReading (c₁ φ))
+    (h₂ : ∀ φ, φ ∈ R.support (Lenticle C.left C.right) → DefiniteReading (c₂ φ)) :
     SectionRealizedFiniteSiteCover Q :=
   twoMemberSectionRealizedCover C.site C.left C.right C.covers R off₁ off₂ c₁ c₂ h₁ h₂
 
@@ -1266,9 +1266,9 @@ disagreement census on that lenticle. -/
 theorem overlappingTwoCoverSection_h0top_eq_disagreement_count
     {Q : Type} (C : OverlappingTwoCover Q)
     (R : FiniteSupportRealization)
-    (off₁ off₂ : Charge) (c₁ c₂ : PredicationCell → Charge)
-    (h₁ : ∀ φ, φ ∈ R.support (Lenticle C.left C.right) → DefiniteCharge (c₁ φ))
-    (h₂ : ∀ φ, φ ∈ R.support (Lenticle C.left C.right) → DefiniteCharge (c₂ φ))
+    (off₁ off₂ : Reading) (c₁ c₂ : PredicationCell → Reading)
+    (h₁ : ∀ φ, φ ∈ R.support (Lenticle C.left C.right) → DefiniteReading (c₁ φ))
+    (h₂ : ∀ φ, φ ∈ R.support (Lenticle C.left C.right) → DefiniteReading (c₂ φ))
     (v : Valuation)
     (hcompat :
       (overlappingTwoCoverSectionRealizedCover C R off₁ off₂ c₁ c₂ h₁ h₂).Compatible v) :
@@ -1292,9 +1292,9 @@ for a mis-crossing lenticle and zero otherwise. -/
 theorem overlappingTwoCoverSection_h0top_eq_miscrossing_count_of_singleton
     {Q : Type} (C : OverlappingTwoCover Q)
     (R : FiniteSupportRealization)
-    (off₁ off₂ : Charge) (c₁ c₂ : PredicationCell → Charge)
-    (h₁ : ∀ φ, φ ∈ R.support (Lenticle C.left C.right) → DefiniteCharge (c₁ φ))
-    (h₂ : ∀ φ, φ ∈ R.support (Lenticle C.left C.right) → DefiniteCharge (c₂ φ))
+    (off₁ off₂ : Reading) (c₁ c₂ : PredicationCell → Reading)
+    (h₁ : ∀ φ, φ ∈ R.support (Lenticle C.left C.right) → DefiniteReading (c₁ φ))
+    (h₂ : ∀ φ, φ ∈ R.support (Lenticle C.left C.right) → DefiniteReading (c₂ φ))
     (v : Valuation)
     (hcompat :
       (overlappingTwoCoverSectionRealizedCover C R off₁ off₂ c₁ c₂ h₁ h₂).Compatible v)
@@ -1364,7 +1364,7 @@ of the lenticle census theorem. -/
 theorem pairwise_lenticle_census_is_inconsistency_count
     {Q : Type} (C : StoneRealizedFiniteSiteCover Q) (v : Valuation) :
     PairwiseLenticleCensus v C.pairwiseSupports =
-      C.pairwiseSupports.flatten.countP (fun φ => Charge.isInconsistency (v φ)) :=
+      C.pairwiseSupports.flatten.countP (fun φ => Reading.isInconsistency (v φ)) :=
   RealizedFiniteSiteCover.pairwise_lenticle_census_is_inconsistency_count
     C.toRealizedFiniteSiteCover v
 
@@ -1425,7 +1425,7 @@ end StoneRealizedFiniteSiteCover
 
 /-! ## Refraction/diffraction branch carrier -/
 
-/-- The dynamical branch selected by a lenticle-local charge. -/
+/-- The dynamical branch selected by a lenticle-local reading. -/
 inductive LenticleBranch
   | refraction
   | diffraction
@@ -1433,20 +1433,20 @@ inductive LenticleBranch
 
 namespace LenticleBranch
 
-/-- A local charge selects refraction when defect-free and diffraction when inconsistent. -/
-def ofCharge (c : Charge) : LenticleBranch :=
-  if Charge.isInconsistency c then .diffraction else .refraction
+/-- A local reading selects refraction when defect-free and diffraction when inconsistent. -/
+def ofReading (c : Reading) : LenticleBranch :=
+  if Reading.isInconsistency c then .diffraction else .refraction
 
 /-- A finite lenticle support selects refraction when the joined local sections
 are defect-free there, and diffraction when they mis-cross somewhere. -/
-def ofSections (cells : List PredicationCell) (c₁ c₂ : PredicationCell → Charge) :
+def ofSections (cells : List PredicationCell) (c₁ c₂ : PredicationCell → Reading) :
     LenticleBranch :=
   if LenticleMiscrossingSomewhere cells c₁ c₂ then .diffraction else .refraction
 
 /-- The support-level branch is diffraction exactly when the joined sections
 mis-cross somewhere on that support. -/
 theorem ofSections_diffraction_iff_miscrossing
-    (cells : List PredicationCell) (c₁ c₂ : PredicationCell → Charge) :
+    (cells : List PredicationCell) (c₁ c₂ : PredicationCell → Reading) :
     ofSections cells c₁ c₂ = .diffraction ↔
       LenticleMiscrossingSomewhere cells c₁ c₂ = true := by
   unfold ofSections
@@ -1455,7 +1455,7 @@ theorem ofSections_diffraction_iff_miscrossing
 /-- The support-level branch is refraction exactly when the joined sections are
 defect-free on that support. -/
 theorem ofSections_refraction_iff_no_miscrossing
-    (cells : List PredicationCell) (c₁ c₂ : PredicationCell → Charge) :
+    (cells : List PredicationCell) (c₁ c₂ : PredicationCell → Reading) :
     ofSections cells c₁ c₂ = .refraction ↔
       LenticleMiscrossingSomewhere cells c₁ c₂ = false := by
   unfold ofSections
@@ -1485,9 +1485,9 @@ end LenticleSectionEntry
 /-- For definite local sections on a finite support, the branch selector is
 diffraction exactly when the sections disagree somewhere. -/
 theorem lenticleBranch_ofSections_diffraction_iff_disagreement_on_support
-    (cells : List PredicationCell) (c₁ c₂ : PredicationCell → Charge)
-    (h₁ : ∀ φ, φ ∈ cells → DefiniteCharge (c₁ φ))
-    (h₂ : ∀ φ, φ ∈ cells → DefiniteCharge (c₂ φ)) :
+    (cells : List PredicationCell) (c₁ c₂ : PredicationCell → Reading)
+    (h₁ : ∀ φ, φ ∈ cells → DefiniteReading (c₁ φ))
+    (h₂ : ∀ φ, φ ∈ cells → DefiniteReading (c₂ φ)) :
     LenticleBranch.ofSections cells c₁ c₂ = .diffraction ↔
       LenticleDisagreementSomewhere cells c₁ c₂ = true := by
   constructor
@@ -1535,33 +1535,33 @@ namespace FiniteSupportRealization
 diffraction exactly when the restricted sections disagree somewhere. -/
 theorem restricted_lenticleBranch_diffraction_iff_disagreement
     (R : FiniteSupportRealization) (U₁ U₂ : Site.Clopen)
-    (off₁ off₂ : Charge) (c₁ c₂ : PredicationCell → Charge)
-    (h₁ : ∀ φ, φ ∈ R.support (Lenticle U₁ U₂) → DefiniteCharge (c₁ φ))
-    (h₂ : ∀ φ, φ ∈ R.support (Lenticle U₁ U₂) → DefiniteCharge (c₂ φ)) :
+    (off₁ off₂ : Reading) (c₁ c₂ : PredicationCell → Reading)
+    (h₁ : ∀ φ, φ ∈ R.support (Lenticle U₁ U₂) → DefiniteReading (c₁ φ))
+    (h₂ : ∀ φ, φ ∈ R.support (Lenticle U₁ U₂) → DefiniteReading (c₂ φ)) :
     LenticleBranch.ofSections (R.support (Lenticle U₁ U₂))
-        (RestrictChargeSection (R.mask (Lenticle U₁ U₂)) off₁ c₁)
-        (RestrictChargeSection (R.mask (Lenticle U₁ U₂)) off₂ c₂) = .diffraction ↔
+        (RestrictReadingSection (R.mask (Lenticle U₁ U₂)) off₁ c₁)
+        (RestrictReadingSection (R.mask (Lenticle U₁ U₂)) off₂ c₂) = .diffraction ↔
       LenticleDisagreementSomewhere (R.support (Lenticle U₁ U₂))
-        (RestrictChargeSection (R.mask (Lenticle U₁ U₂)) off₁ c₁)
-        (RestrictChargeSection (R.mask (Lenticle U₁ U₂)) off₂ c₂) = true := by
+        (RestrictReadingSection (R.mask (Lenticle U₁ U₂)) off₁ c₁)
+        (RestrictReadingSection (R.mask (Lenticle U₁ U₂)) off₂ c₂) = true := by
   apply lenticleBranch_ofSections_diffraction_iff_disagreement_on_support
   · intro φ hφ
-    rw [restrictChargeSection_eq_on_lenticleSupport R U₁ U₂ off₁ c₁ hφ]
+    rw [restrictReadingSection_eq_on_lenticleSupport R U₁ U₂ off₁ c₁ hφ]
     exact h₁ φ hφ
   · intro φ hφ
-    rw [restrictChargeSection_eq_on_lenticleSupport R U₁ U₂ off₂ c₂ hφ]
+    rw [restrictReadingSection_eq_on_lenticleSupport R U₁ U₂ off₂ c₂ hφ]
     exact h₂ φ hφ
 
 end FiniteSupportRealization
 
 /-- For definite local sections, the diffraction branch is exactly the disagreement branch. -/
 theorem lenticleBranch_diffraction_iff_disagreement
-    (c₁ c₂ : Charge) (h₁ : DefiniteCharge c₁) (h₂ : DefiniteCharge c₂) :
-    LenticleBranch.ofCharge (Charge.joinK c₁ c₂) = .diffraction ↔
-      ChargeDisagreement c₁ c₂ := by
+    (c₁ c₂ : Reading) (h₁ : DefiniteReading c₁) (h₂ : DefiniteReading c₂) :
+    LenticleBranch.ofReading (Reading.joinK c₁ c₂) = .diffraction ↔
+      ReadingDisagreement c₁ c₂ := by
   rcases h₁ with rfl | rfl <;> rcases h₂ with rfl | rfl <;>
-    simp [LenticleBranch.ofCharge, ChargeDisagreement, Charge.isInconsistency, Charge.joinK,
-      Charge.tTop, Charge.tBot, Charge.kTop, Charge.ofSlots, Charge.pos, Charge.neg,
+    simp [LenticleBranch.ofReading, ReadingDisagreement, Reading.isInconsistency, Reading.joinK,
+      Reading.tTop, Reading.tBot, Reading.kTop, Reading.ofSlots, Reading.pos, Reading.neg,
       Articulating.Corner.toStatus, Articulating.Corner.ofStatus]
 
 /-- An obstruction term for recovering absorption along the diffraction branch. -/
@@ -1742,7 +1742,7 @@ theorem frame_dichotomy (f : Nat → Bool) :
 /-- The branch selected by a finite lenticle support controls the chromatic
 refraction/diffraction dynamics. -/
 theorem selected_branch_dynamics
-    (cells : List PredicationCell) (c₁ c₂ : PredicationCell → Charge) (f : Nat → Bool) :
+    (cells : List PredicationCell) (c₁ c₂ : PredicationCell → Reading) (f : Nat → Bool) :
     let branch := LenticleBranch.ofSections cells c₁ c₂
     (branch = .refraction →
       frame.settle (propagate branch (f, false)) = frame.settle (f, false))
@@ -1961,12 +1961,12 @@ theorem realized_twoMember_lenticle_carrier
     {Q : Type} (S : Site.SiteObj Q) (U₁ U₂ : Site.Clopen)
     (hcov : Site.Covers S.U [U₁, U₂])
     (R : FiniteSupportRealization)
-    (off₁ off₂ : Charge) (c₁ c₂ : PredicationCell → Charge)
-    (h₁ : ∀ φ, φ ∈ R.support (Lenticle U₁ U₂) → DefiniteCharge (c₁ φ))
-    (h₂ : ∀ φ, φ ∈ R.support (Lenticle U₁ U₂) → DefiniteCharge (c₂ φ))
+    (off₁ off₂ : Reading) (c₁ c₂ : PredicationCell → Reading)
+    (h₁ : ∀ φ, φ ∈ R.support (Lenticle U₁ U₂) → DefiniteReading (c₁ φ))
+    (h₂ : ∀ φ, φ ∈ R.support (Lenticle U₁ U₂) → DefiniteReading (c₂ φ))
     (v : Valuation) (f : Nat → Bool) :
-    let rc₁ := RestrictChargeSection (R.mask (Lenticle U₁ U₂)) off₁ c₁
-    let rc₂ := RestrictChargeSection (R.mask (Lenticle U₁ U₂)) off₂ c₂
+    let rc₁ := RestrictReadingSection (R.mask (Lenticle U₁ U₂)) off₁ c₁
+    let rc₂ := RestrictReadingSection (R.mask (Lenticle U₁ U₂)) off₂ c₂
     let cells := R.support (Lenticle U₁ U₂)
     let branch := LenticleBranch.ofSections cells rc₁ rc₂
     (branch = .diffraction ↔ LenticleDisagreementSomewhere cells rc₁ rc₂ = true)
@@ -2000,8 +2000,8 @@ theorem realized_twoMember_lenticle_carrier
           RealizedFiniteSiteCover Q) v
     · exact LenticleChromatic.selected_branch_dynamics
         (R.support (Lenticle U₁ U₂))
-        (RestrictChargeSection (R.mask (Lenticle U₁ U₂)) off₁ c₁)
-        (RestrictChargeSection (R.mask (Lenticle U₁ U₂)) off₂ c₂) f
+        (RestrictReadingSection (R.mask (Lenticle U₁ U₂)) off₁ c₁)
+        (RestrictReadingSection (R.mask (Lenticle U₁ U₂)) off₂ c₂) f
 
 /-- The bundled two-member carrier specialized to a finite Stone-side support
 model, so the clopen masks and lenticle support are derived from a finite cell
@@ -2010,15 +2010,15 @@ theorem stoneSupport_twoMember_lenticle_carrier
     {Q : Type} (S : Site.SiteObj Q) (U₁ U₂ : Site.Clopen)
     (hcov : Site.Covers S.U [U₁, U₂])
     (M : FiniteStoneSupportModel)
-    (off₁ off₂ : Charge) (c₁ c₂ : PredicationCell → Charge)
+    (off₁ off₂ : Reading) (c₁ c₂ : PredicationCell → Reading)
     (h₁ :
-      ∀ φ, φ ∈ M.support (Lenticle U₁ U₂) → DefiniteCharge (c₁ φ))
+      ∀ φ, φ ∈ M.support (Lenticle U₁ U₂) → DefiniteReading (c₁ φ))
     (h₂ :
-      ∀ φ, φ ∈ M.support (Lenticle U₁ U₂) → DefiniteCharge (c₂ φ))
+      ∀ φ, φ ∈ M.support (Lenticle U₁ U₂) → DefiniteReading (c₂ φ))
     (v : Valuation) (f : Nat → Bool) :
     let R := M.toFiniteSupportRealization
-    let rc₁ := RestrictChargeSection (R.mask (Lenticle U₁ U₂)) off₁ c₁
-    let rc₂ := RestrictChargeSection (R.mask (Lenticle U₁ U₂)) off₂ c₂
+    let rc₁ := RestrictReadingSection (R.mask (Lenticle U₁ U₂)) off₁ c₁
+    let rc₂ := RestrictReadingSection (R.mask (Lenticle U₁ U₂)) off₂ c₂
     let cells := R.support (Lenticle U₁ U₂)
     let branch := LenticleBranch.ofSections cells rc₁ rc₂
     (branch = .diffraction ↔ LenticleDisagreementSomewhere cells rc₁ rc₂ = true)
@@ -2047,19 +2047,19 @@ theorem stoneSupport_twoMember_lenticle_carrier
     off₁ off₂ c₁ c₂ h₁ h₂ v f
 
 /-- The bundled carrier for the original overlapping two-cover setup, still
-requiring an explicit finite support realization for the charge sections.  The
+requiring an explicit finite support realization for the reading sections.  The
 first component keeps the non-bottom lenticle hypothesis visible; the remaining
 components are the realized local/global/dynamical carrier. -/
 theorem realized_overlappingTwoCover_lenticle_carrier
     {Q : Type} (C : OverlappingTwoCover Q)
     (R : FiniteSupportRealization)
-    (off₁ off₂ : Charge) (c₁ c₂ : PredicationCell → Charge)
-    (h₁ : ∀ φ, φ ∈ R.support (Lenticle C.left C.right) → DefiniteCharge (c₁ φ))
-    (h₂ : ∀ φ, φ ∈ R.support (Lenticle C.left C.right) → DefiniteCharge (c₂ φ))
+    (off₁ off₂ : Reading) (c₁ c₂ : PredicationCell → Reading)
+    (h₁ : ∀ φ, φ ∈ R.support (Lenticle C.left C.right) → DefiniteReading (c₁ φ))
+    (h₂ : ∀ φ, φ ∈ R.support (Lenticle C.left C.right) → DefiniteReading (c₂ φ))
     (v : Valuation) (f : Nat → Bool) :
     LenticleNonempty C.left C.right ∧
-    let rc₁ := RestrictChargeSection (R.mask (Lenticle C.left C.right)) off₁ c₁
-    let rc₂ := RestrictChargeSection (R.mask (Lenticle C.left C.right)) off₂ c₂
+    let rc₁ := RestrictReadingSection (R.mask (Lenticle C.left C.right)) off₁ c₁
+    let rc₂ := RestrictReadingSection (R.mask (Lenticle C.left C.right)) off₂ c₂
     let cells := R.support (Lenticle C.left C.right)
     let branch := LenticleBranch.ofSections cells rc₁ rc₂
     (branch = .diffraction ↔ LenticleDisagreementSomewhere cells rc₁ rc₂ = true)
@@ -2096,16 +2096,16 @@ the support masks from a finite active-cell universe and Stone incidence map. -/
 theorem stoneSupport_overlappingTwoCover_lenticle_carrier
     {Q : Type} (C : OverlappingTwoCover Q)
     (M : FiniteStoneSupportModel)
-    (off₁ off₂ : Charge) (c₁ c₂ : PredicationCell → Charge)
+    (off₁ off₂ : Reading) (c₁ c₂ : PredicationCell → Reading)
     (h₁ :
-      ∀ φ, φ ∈ M.support (Lenticle C.left C.right) → DefiniteCharge (c₁ φ))
+      ∀ φ, φ ∈ M.support (Lenticle C.left C.right) → DefiniteReading (c₁ φ))
     (h₂ :
-      ∀ φ, φ ∈ M.support (Lenticle C.left C.right) → DefiniteCharge (c₂ φ))
+      ∀ φ, φ ∈ M.support (Lenticle C.left C.right) → DefiniteReading (c₂ φ))
     (v : Valuation) (f : Nat → Bool) :
     LenticleNonempty C.left C.right ∧
     let R := M.toFiniteSupportRealization
-    let rc₁ := RestrictChargeSection (R.mask (Lenticle C.left C.right)) off₁ c₁
-    let rc₂ := RestrictChargeSection (R.mask (Lenticle C.left C.right)) off₂ c₂
+    let rc₁ := RestrictReadingSection (R.mask (Lenticle C.left C.right)) off₁ c₁
+    let rc₂ := RestrictReadingSection (R.mask (Lenticle C.left C.right)) off₂ c₂
     let cells := R.support (Lenticle C.left C.right)
     let branch := LenticleBranch.ofSections cells rc₁ rc₂
     (branch = .diffraction ↔ LenticleDisagreementSomewhere cells rc₁ rc₂ = true)
@@ -2145,21 +2145,21 @@ structure LenticleIdentificationRealization {Q : Type} (C : OverlappingTwoCover 
   /-- The finite support realization used to restrict clopen supports. -/
   realization : FiniteSupportRealization
   /-- Off-support value used to totalize the left restricted section. -/
-  offLeft : Charge
+  offLeft : Reading
   /-- Off-support value used to totalize the right restricted section. -/
-  offRight : Charge
-  /-- The left local charge-valued section before restriction to the lenticle. -/
-  leftSection : PredicationCell → Charge
-  /-- The right local charge-valued section before restriction to the lenticle. -/
-  rightSection : PredicationCell → Charge
+  offRight : Reading
+  /-- The left local reading-valued section before restriction to the lenticle. -/
+  leftSection : PredicationCell → Reading
+  /-- The right local reading-valued section before restriction to the lenticle. -/
+  rightSection : PredicationCell → Reading
   /-- The left section is definite on the realized lenticle support. -/
   definite_left :
     ∀ φ, φ ∈ realization.support (Lenticle C.left C.right) →
-      DefiniteCharge (leftSection φ)
+      DefiniteReading (leftSection φ)
   /-- The right section is definite on the realized lenticle support. -/
   definite_right :
     ∀ φ, φ ∈ realization.support (Lenticle C.left C.right) →
-      DefiniteCharge (rightSection φ)
+      DefiniteReading (rightSection φ)
   /-- The valuation induced by the joined restricted sections. -/
   valuation : Valuation
   /-- The induced valuation is compatible with the section-realized cover. -/
@@ -2193,9 +2193,9 @@ compatible induced valuation, and singleton lenticle support. -/
 theorem overlappingTwoCover_lenticleIdentification_conditional_carrier
     {Q : Type} (C : OverlappingTwoCover Q)
     (R : FiniteSupportRealization)
-    (off₁ off₂ : Charge) (c₁ c₂ : PredicationCell → Charge)
-    (h₁ : ∀ φ, φ ∈ R.support (Lenticle C.left C.right) → DefiniteCharge (c₁ φ))
-    (h₂ : ∀ φ, φ ∈ R.support (Lenticle C.left C.right) → DefiniteCharge (c₂ φ))
+    (off₁ off₂ : Reading) (c₁ c₂ : PredicationCell → Reading)
+    (h₁ : ∀ φ, φ ∈ R.support (Lenticle C.left C.right) → DefiniteReading (c₁ φ))
+    (h₂ : ∀ φ, φ ∈ R.support (Lenticle C.left C.right) → DefiniteReading (c₂ φ))
     (v : Valuation)
     (hcompat :
       (overlappingTwoCoverSectionRealizedCover C R off₁ off₂ c₁ c₂ h₁ h₂).Compatible v)
@@ -2206,10 +2206,10 @@ theorem overlappingTwoCover_lenticleIdentification_conditional_carrier
     let E := twoMemberSectionEntry R C.left C.right off₁ off₂ c₁ c₂
     let SC := overlappingTwoCoverSectionRealizedCover C R off₁ off₂ c₁ c₂ h₁ h₂
     (E.left =
-        FiberPullbackChargeSection R (lenticleToLeftFiberHom C.site C.left C.right) off₁ c₁
+        FiberPullbackReadingSection R (lenticleToLeftFiberHom C.site C.left C.right) off₁ c₁
       ∧
       E.right =
-        FiberPullbackChargeSection R (lenticleToRightFiberHom C.site C.left C.right) off₂ c₂)
+        FiberPullbackReadingSection R (lenticleToRightFiberHom C.site C.left C.right) off₂ c₂)
       ∧
     (E.branch = .diffraction ↔
       LenticleDisagreementSomewhere E.cells E.left E.right = true)
@@ -2262,11 +2262,11 @@ theorem LenticleIdentificationRealization.conditional_carrier
     let E := D.entry
     let SC := D.sectionCover
     (E.left =
-        FiberPullbackChargeSection D.realization
+        FiberPullbackReadingSection D.realization
           (lenticleToLeftFiberHom C.site C.left C.right) D.offLeft D.leftSection
       ∧
       E.right =
-        FiberPullbackChargeSection D.realization
+        FiberPullbackReadingSection D.realization
           (lenticleToRightFiberHom C.site C.left C.right) D.offRight D.rightSection)
       ∧
     (E.branch = .diffraction ↔
@@ -2306,19 +2306,19 @@ structure SiteLenticleIdentificationRealization
   /-- The finite support realization used to restrict clopen supports. -/
   realization : FiniteSupportRealization
   /-- Off-support value used to totalize the left restricted section. -/
-  offLeft : Charge
+  offLeft : Reading
   /-- Off-support value used to totalize the right restricted section. -/
-  offRight : Charge
-  /-- The left local charge-valued section before restriction to the lenticle. -/
-  leftSection : PredicationCell → Charge
-  /-- The right local charge-valued section before restriction to the lenticle. -/
-  rightSection : PredicationCell → Charge
+  offRight : Reading
+  /-- The left local reading-valued section before restriction to the lenticle. -/
+  leftSection : PredicationCell → Reading
+  /-- The right local reading-valued section before restriction to the lenticle. -/
+  rightSection : PredicationCell → Reading
   /-- The left section is definite on the realized lenticle support. -/
   definite_left :
-    ∀ φ, φ ∈ realization.support (Lenticle U₁ U₂) → DefiniteCharge (leftSection φ)
+    ∀ φ, φ ∈ realization.support (Lenticle U₁ U₂) → DefiniteReading (leftSection φ)
   /-- The right section is definite on the realized lenticle support. -/
   definite_right :
-    ∀ φ, φ ∈ realization.support (Lenticle U₁ U₂) → DefiniteCharge (rightSection φ)
+    ∀ φ, φ ∈ realization.support (Lenticle U₁ U₂) → DefiniteReading (rightSection φ)
   /-- The valuation induced by the joined restricted sections. -/
   valuation : Valuation
   /-- The induced valuation is compatible with the raw two-member section cover. -/
@@ -2373,11 +2373,11 @@ theorem conditional_carrier
     let E := D.entry
     let SC := D.sectionCover
     (E.left =
-        FiberPullbackChargeSection D.realization
+        FiberPullbackReadingSection D.realization
           (lenticleToLeftFiberHom S U₁ U₂) D.offLeft D.leftSection
       ∧
       E.right =
-        FiberPullbackChargeSection D.realization
+        FiberPullbackReadingSection D.realization
           (lenticleToRightFiberHom S U₁ U₂) D.offRight D.rightSection)
       ∧
     (E.branch = .diffraction ↔
@@ -2445,11 +2445,11 @@ theorem strengthened_conditional_carrier
     let E := D.entry
     let SC := D.sectionCover
     (E.left =
-        FiberPullbackChargeSection D.realization
+        FiberPullbackReadingSection D.realization
           (lenticleToLeftFiberHom S U₁ U₂) D.offLeft D.leftSection
       ∧
       E.right =
-        FiberPullbackChargeSection D.realization
+        FiberPullbackReadingSection D.realization
           (lenticleToRightFiberHom S U₁ U₂) D.offRight D.rightSection)
       ∧
     (E.branch = .diffraction ↔
@@ -2457,7 +2457,7 @@ theorem strengthened_conditional_carrier
       ∧
     PairwiseSectionMiscrossingCount SC.entries =
       SC.cover.pairwiseSupports.flatten.countP
-        (fun φ => Charge.isInconsistency (D.valuation φ))
+        (fun φ => Reading.isInconsistency (D.valuation φ))
       ∧
     (0 < PairwiseSectionMiscrossingCount SC.entries ↔
       inconsistencyContent SC.cover.pairwiseSupports.flatten D.valuation = true)
@@ -2535,11 +2535,11 @@ theorem LenticleIdentificationRealization.strengthened_conditional_carrier
     let E := D.entry
     let SC := D.sectionCover
     (E.left =
-        FiberPullbackChargeSection D.realization
+        FiberPullbackReadingSection D.realization
           (lenticleToLeftFiberHom C.site C.left C.right) D.offLeft D.leftSection
       ∧
       E.right =
-        FiberPullbackChargeSection D.realization
+        FiberPullbackReadingSection D.realization
           (lenticleToRightFiberHom C.site C.left C.right) D.offRight D.rightSection)
       ∧
     (E.branch = .diffraction ↔
@@ -2547,7 +2547,7 @@ theorem LenticleIdentificationRealization.strengthened_conditional_carrier
       ∧
     PairwiseSectionMiscrossingCount SC.entries =
       SC.cover.pairwiseSupports.flatten.countP
-        (fun φ => Charge.isInconsistency (D.valuation φ))
+        (fun φ => Reading.isInconsistency (D.valuation φ))
       ∧
     (0 < PairwiseSectionMiscrossingCount SC.entries ↔
       inconsistencyContent SC.cover.pairwiseSupports.flatten D.valuation = true)
@@ -2604,21 +2604,21 @@ structure StoneSiteLenticleIdentificationRealization
   /-- The finite Stone-side active-cell model realizing clopen support. -/
   supportModel : FiniteStoneSupportModel
   /-- Off-support value used to totalize the left restricted section. -/
-  offLeft : Charge
+  offLeft : Reading
   /-- Off-support value used to totalize the right restricted section. -/
-  offRight : Charge
-  /-- The left local charge-valued section before restriction to the lenticle. -/
-  leftSection : PredicationCell → Charge
-  /-- The right local charge-valued section before restriction to the lenticle. -/
-  rightSection : PredicationCell → Charge
+  offRight : Reading
+  /-- The left local reading-valued section before restriction to the lenticle. -/
+  leftSection : PredicationCell → Reading
+  /-- The right local reading-valued section before restriction to the lenticle. -/
+  rightSection : PredicationCell → Reading
   /-- The left section is definite on the realized lenticle support. -/
   definite_left :
     ∀ φ, φ ∈ supportModel.toFiniteSupportRealization.support (Lenticle U₁ U₂) →
-      DefiniteCharge (leftSection φ)
+      DefiniteReading (leftSection φ)
   /-- The right section is definite on the realized lenticle support. -/
   definite_right :
     ∀ φ, φ ∈ supportModel.toFiniteSupportRealization.support (Lenticle U₁ U₂) →
-      DefiniteCharge (rightSection φ)
+      DefiniteReading (rightSection φ)
   /-- The valuation induced by the joined restricted sections. -/
   valuation : Valuation
   /-- The induced valuation is compatible with the Stone-derived section cover. -/
@@ -2638,14 +2638,14 @@ def ofStoneSingletonSupport
     (hcov : Site.Covers S.U [U₁, U₂])
     (nonempty : LenticleNonempty U₁ U₂)
     (supportModel : FiniteStoneSupportModel)
-    (offLeft offRight : Charge)
-    (leftSection rightSection : PredicationCell → Charge)
+    (offLeft offRight : Reading)
+    (leftSection rightSection : PredicationCell → Reading)
     (definite_left :
       ∀ φ, φ ∈ supportModel.toFiniteSupportRealization.support (Lenticle U₁ U₂) →
-        DefiniteCharge (leftSection φ))
+        DefiniteReading (leftSection φ))
     (definite_right :
       ∀ φ, φ ∈ supportModel.toFiniteSupportRealization.support (Lenticle U₁ U₂) →
-        DefiniteCharge (rightSection φ))
+        DefiniteReading (rightSection φ))
     (valuation : Valuation)
     (compatible :
       (twoMemberSectionRealizedCover S U₁ U₂ hcov supportModel.toFiniteSupportRealization
@@ -2717,11 +2717,11 @@ theorem conditional_carrier
     let E := D.toSiteRealization.entry
     let SC := D.toSiteRealization.sectionCover
     (E.left =
-        FiberPullbackChargeSection D.supportModel.toFiniteSupportRealization
+        FiberPullbackReadingSection D.supportModel.toFiniteSupportRealization
           (lenticleToLeftFiberHom S U₁ U₂) D.offLeft D.leftSection
       ∧
       E.right =
-        FiberPullbackChargeSection D.supportModel.toFiniteSupportRealization
+        FiberPullbackReadingSection D.supportModel.toFiniteSupportRealization
           (lenticleToRightFiberHom S U₁ U₂) D.offRight D.rightSection)
       ∧
     (E.branch = .diffraction ↔
@@ -2755,11 +2755,11 @@ theorem strengthened_conditional_carrier
     let E := D.toSiteRealization.entry
     let SC := D.toSiteRealization.sectionCover
     (E.left =
-        FiberPullbackChargeSection D.supportModel.toFiniteSupportRealization
+        FiberPullbackReadingSection D.supportModel.toFiniteSupportRealization
           (lenticleToLeftFiberHom S U₁ U₂) D.offLeft D.leftSection
       ∧
       E.right =
-        FiberPullbackChargeSection D.supportModel.toFiniteSupportRealization
+        FiberPullbackReadingSection D.supportModel.toFiniteSupportRealization
           (lenticleToRightFiberHom S U₁ U₂) D.offRight D.rightSection)
       ∧
     (E.branch = .diffraction ↔
@@ -2767,7 +2767,7 @@ theorem strengthened_conditional_carrier
       ∧
     PairwiseSectionMiscrossingCount SC.entries =
       SC.cover.pairwiseSupports.flatten.countP
-        (fun φ => Charge.isInconsistency (D.valuation φ))
+        (fun φ => Reading.isInconsistency (D.valuation φ))
       ∧
     (0 < PairwiseSectionMiscrossingCount SC.entries ↔
       inconsistencyContent SC.cover.pairwiseSupports.flatten D.valuation = true)

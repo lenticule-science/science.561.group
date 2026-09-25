@@ -5,12 +5,12 @@ import Obsmetrologia.Language.Positing.BigradedCohomology
 
 The global aperiodic MLD classification (`thm:aperiodic-mld-classification`) asks whether equal
 classifying invariant forces a settling-morphism. Its converse is open at the transfinite height. At
-the **base** — a single bilattice charge, the FOUR — it is **complete**, converse included, and this
+the **base** — a single bilattice reading, the FOUR — it is **complete**, converse included, and this
 module proves it.
 
-The local **settling-morphism** is the bilattice gauge: Belnap negation `~` (`Charge.negate`), the
+The local **settling-morphism** is the bilattice gauge: Belnap negation `~` (`Reading.negate`), the
 over/under swap of the weave (`AperiodicOrder.Tiling.WeaveDraft.overUnder_swap_is_negate`) and the recto/verso
-mirror of the bead (`AperiodicOrder.Tiling.PortGraph`). Two charges are **locally mutually-locally-derivable**
+mirror of the bead (`AperiodicOrder.Tiling.PortGraph`). Two readings are **locally mutually-locally-derivable**
 (`gaugeEquiv`) when the gauge relates them: `a = b` or `~a = b`. Its orbits are exactly
 `{⊥}`, `{t, f}`, `{⊤}` — the hole, the two definite over/under readings (gauge-swapped `t ↔ f`), and
 the held contradiction (the mis-crossing / Bose-condensed superjam).
@@ -42,7 +42,7 @@ truth towers, where the converse becomes the transfinite frontier.
 ## References
 
 `content/.../mutually-locally-derivable`; the bilattice base of `thm:aperiodic-mld-classification`.
-Built on `Obsmetrologia.Positing.BigradedCohomology` (`Charge.isInconsistency`), realized on the weave/bead
+Built on `Obsmetrologia.Positing.BigradedCohomology` (`Reading.isInconsistency`), realized on the weave/bead
 carriers `Obsmetrologia.AperiodicOrder.Tiling.WeaveDraft` / `Obsmetrologia.AperiodicOrder.Tiling.PortGraph`.
 
 ## Tags
@@ -53,38 +53,38 @@ mutual local derivability, bilattice, FOUR, gauge, negation, classifying invaria
 namespace Obsmetrologia
 namespace Positing.LocalMld
 
-open Obsmetrologia (Charge)
+open Obsmetrologia (Reading)
 
 /-! ## (A) The local gauge and its invariant -/
 
-/-- **Local mutual-local-derivability**: two charges related by the bilattice gauge — equal, or
+/-- **Local mutual-local-derivability**: two readings related by the bilattice gauge — equal, or
 swapped by Belnap negation `~` (the weave over/under flip, the bead recto/verso mirror). The local
 settling-morphism between single bilattice values. -/
-def gaugeEquiv (a b : Charge) : Prop := a = b ∨ Charge.negate a = b
+def gaugeEquiv (a b : Reading) : Prop := a = b ∨ Reading.negate a = b
 
 /-- **The local classifying invariant**: the pair `(told-nothing?, held-contradiction?)` —
 `(c = ⊥ₖ, isInconsistency c)`. The two gauge-fixed coordinates of the bilattice: knowledge-vacuity and
 `⊤`-content. The hole is `(true, false)`, the held contradiction is `(false, true)`, the two definite
 readings `t, f` are both `(false, false)`. -/
-def localClInv (c : Charge) : Bool × Bool := (decide (c = Charge.kBot), Charge.isInconsistency c)
+def localClInv (c : Reading) : Bool × Bool := (decide (c = Reading.kBot), Reading.isInconsistency c)
 
 /-! ## (B) The gauge is an involution, hence an equivalence relation -/
 
 /-- **The gauge is an involution**: `~~a = a`. The over/under flip undoes itself. -/
-theorem negate_involutive (a : Charge) : Charge.negate (Charge.negate a) = a := by
+theorem negate_involutive (a : Reading) : Reading.negate (Reading.negate a) = a := by
   cases a <;> rfl
 
 /-- `gaugeEquiv` is reflexive (the identity gauge step). -/
-theorem gaugeEquiv_refl (a : Charge) : gaugeEquiv a a := Or.inl rfl
+theorem gaugeEquiv_refl (a : Reading) : gaugeEquiv a a := Or.inl rfl
 
 /-- `gaugeEquiv` is symmetric (the gauge inverts — negation is its own inverse). -/
-theorem gaugeEquiv_symm {a b : Charge} (h : gaugeEquiv a b) : gaugeEquiv b a := by
+theorem gaugeEquiv_symm {a b : Reading} (h : gaugeEquiv a b) : gaugeEquiv b a := by
   rcases h with h | h
   · exact Or.inl h.symm
   · exact Or.inr (by rw [← h, negate_involutive])
 
 /-- `gaugeEquiv` is transitive (gauge steps compose; two negations cancel). -/
-theorem gaugeEquiv_trans {a b c : Charge} (hab : gaugeEquiv a b) (hbc : gaugeEquiv b c) :
+theorem gaugeEquiv_trans {a b c : Reading} (hab : gaugeEquiv a b) (hbc : gaugeEquiv b c) :
     gaugeEquiv a c := by
   rcases hab with hab | hab <;> rcases hbc with hbc | hbc
   · exact Or.inl (hab.trans hbc)
@@ -95,13 +95,13 @@ theorem gaugeEquiv_trans {a b c : Charge} (hab : gaugeEquiv a b) (hbc : gaugeEqu
 
 /-! ## (C) The classification — the converse included -/
 
-/-- **The local MLD classification.** `gaugeEquiv a b ↔ localClInv a = localClInv b`: two charges are
+/-- **The local MLD classification.** `gaugeEquiv a b ↔ localClInv a = localClInv b`: two readings are
 locally mutually-locally-derivable **iff** they share the classifying invariant `(told-nothing?,
 held-contradiction?)`. Forward is gauge-invariance of the two coordinates (the local Step 3); the
 **converse** — equal invariant forces a gauge step — holds because the invariant's three fibers
 `{⊥}`, `{t, f}`, `{⊤}` are exactly the three gauge orbits. The MLD classification, converse included,
 at the bilattice base. Proved by exhaustion over the FOUR. -/
-theorem local_mld_classification (a b : Charge) :
+theorem local_mld_classification (a b : Reading) :
     gaugeEquiv a b ↔ localClInv a = localClInv b := by
   simp only [gaugeEquiv, localClInv]
   cases a <;> cases b <;> decide
@@ -117,10 +117,10 @@ three gauge orbits `{⊥}`, `{t, f}`, `{⊤}`. This is `thm:aperiodic-mld-classi
 base of the bilattice towers; the global node is the same statement raised through the knowledge `≤ₖ`
 and truth `≤ₜ` towers, where the converse becomes the transfinite frontier. -/
 theorem bilattice_base_mld :
-    (∀ a : Charge, gaugeEquiv a a)
-    ∧ (∀ a b : Charge, gaugeEquiv a b → gaugeEquiv b a)
-    ∧ (∀ a b c : Charge, gaugeEquiv a b → gaugeEquiv b c → gaugeEquiv a c)
-    ∧ (∀ a b : Charge, gaugeEquiv a b ↔ localClInv a = localClInv b) :=
+    (∀ a : Reading, gaugeEquiv a a)
+    ∧ (∀ a b : Reading, gaugeEquiv a b → gaugeEquiv b a)
+    ∧ (∀ a b c : Reading, gaugeEquiv a b → gaugeEquiv b c → gaugeEquiv a c)
+    ∧ (∀ a b : Reading, gaugeEquiv a b ↔ localClInv a = localClInv b) :=
   ⟨gaugeEquiv_refl,
    fun _ _ h => gaugeEquiv_symm h,
    fun _ _ _ h h' => gaugeEquiv_trans h h',

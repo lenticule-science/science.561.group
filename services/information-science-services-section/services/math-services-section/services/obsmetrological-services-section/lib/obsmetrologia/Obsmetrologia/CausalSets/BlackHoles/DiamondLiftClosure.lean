@@ -301,7 +301,7 @@ theorem dlHoleRegion_iff (x : DLChain) :
   rcases DLChain.cases x with hx | hx | hx <;> subst hx <;> decide
 
 /-- The FOUR-valued colouring: the top event alone carries the active phase. -/
-def dlColor : DLChain → Charge := fun x => if x = dlTop then Charge.tTop else Charge.kBot
+def dlColor : DLChain → Reading := fun x => if x = dlTop then Reading.tTop else Reading.kBot
 
 /-- `dlColor` properly colours the post-hole tile adjacency graph: the sole
 edge, between the two hole events `dlLevel1` and `dlTop`, gets distinct
@@ -349,7 +349,7 @@ exactly the top event's own principal future, and every hole event reaches
 the top. -/
 def dlAnchorCore : AnchoredPrincipalColorFutureCore dlCausalSet dlReadout dlColor where
   root := dlTop
-  phase := Charge.tTop
+  phase := Reading.tTop
   principal := by
     intro x
     rcases DLChain.cases x with hx | hx | hx <;> subst hx
@@ -404,7 +404,7 @@ def dlReadoutD : Region (DiamondPoint dlCausalSet) := fun p => dlReadout p.upper
 
 /-- The lifted colouring on diamond points: pull back `dlColor` along the
 upper endpoint, per the conjecture's `χ◊`. -/
-def dlColorD : DiamondPoint dlCausalSet → Charge := fun p => dlColor p.upper.point
+def dlColorD : DiamondPoint dlCausalSet → Reading := fun p => dlColor p.upper.point
 
 /-- Every diamond point lifts into the pulled-back hole region: no diamond
 point's upper endpoint can be the readout floor. -/
@@ -584,7 +584,7 @@ theorem DiamondPoint.cases_dl (p : DiamondPoint dlCausalSet) :
 def dlReadoutDLower : Region (DiamondPoint dlCausalSet) := fun p => dlReadout p.lower.point
 
 /-- The lifted colouring on diamond points, reading off the *lower* endpoint. -/
-def dlColorDLower : DiamondPoint dlCausalSet → Charge := fun p => dlColor p.lower.point
+def dlColorDLower : DiamondPoint dlCausalSet → Reading := fun p => dlColor p.lower.point
 
 /-- **The lower-pullback hole is exactly the singleton `{dlDPStep'}`.**
 Case-split over the three possible diamond points: `dlDPStep` and `dlDPJump`

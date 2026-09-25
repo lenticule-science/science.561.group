@@ -12,18 +12,18 @@ This module names that rigid vertex a **lenticule** and gives it its role. A len
 **Bose condensate of the relational hull**: the site where many thread-relations pile into one
 mode. In the bilattice that macroscopic coherent over-occupation is exactly `⊤` — "told both,"
 held without explosion — so a jammed, over-threaded lenticule (beadwork "superjamming") *is* a
-condensed `⊤`, not a crash. And the lenticule is not the mirror (`Charge.negate`, the over/under
+condensed `⊤`, not a crash. And the lenticule is not the mirror (`Reading.negate`, the over/under
 gauge) but **what settles out of it**: the mirror fixes the poles `{⊥, ⊤}`, and the condensate
 precipitates exactly at that fixed locus — the rigid residue the over/under oscillation leaves.
 *Lenticular*: a lens that focuses the thread-rays through its ports and carries the recto/verso
 faces of the mirror.
 
-The green content here is the carrier's local law and its condensate charge:
+The green content here is the carrier's local law and its condensate reading:
 
 * **A lenticule's hole is a weave crossing.** A single-hole bead routes the thread exactly when
   in- and out-ports differ — the *same* `warpAlt` SFT as a weave crossing (`holeTransition_eq_warpAlt`).
   Beadwork and weaving share one local rule; a bead is a crossing mounted on a rigid body.
-* **The condensate charge** of a lenticule occupied `n` times: `⊥ₖ` empty, a definite truth value
+* **The condensate reading** of a lenticule occupied `n` times: `⊥ₖ` empty, a definite truth value
   once, `⊤ₖ` for a Bose-condensed over-occupation (`over_occupation_inconsistency`).
 * **The condensate settles out of the mirror**: negation fixes the empty `⊥` and the condensed `⊤`
   (`mirror_fixes_empty`, `mirror_fixes_condensate_pole`), so the lenticule sits at the mirror's
@@ -81,19 +81,19 @@ def ThreadLegal {B : Type} (Γ : Thread B) : Prop := ∀ p ∈ Γ, Legal p
 @[simp] theorem threadLegal_nil {B : Type} : ThreadLegal ([] : Thread B) := by
   intro p hp; cases hp
 
-/-! ## The condensate charge -/
+/-! ## The condensate reading -/
 
-/-- The **condensate charge** of a lenticule the thread occupies `n` times: `⊥ₖ` empty, a definite
+/-- The **condensate reading** of a lenticule the thread occupies `n` times: `⊥ₖ` empty, a definite
 truth value once, `⊤ₖ` for a Bose-condensed over-occupation (`n ≥ 2`) — the macroscopic coherent
 held-`⊤` where many thread-relations pile into one mode (superjamming). -/
-def condensate : Nat → Charge
-  | 0 => Charge.kBot
-  | 1 => Charge.tTop
-  | _ => Charge.kTop
+def condensate : Nat → Reading
+  | 0 => Reading.kBot
+  | 1 => Reading.tTop
+  | _ => Reading.kTop
 
-@[simp] theorem condensate_zero : condensate 0 = Charge.kBot := rfl
-@[simp] theorem condensate_one : condensate 1 = Charge.tTop := rfl
-@[simp] theorem condensate_over (n : Nat) : condensate (n + 2) = Charge.kTop := rfl
+@[simp] theorem condensate_zero : condensate 0 = Reading.kBot := rfl
+@[simp] theorem condensate_one : condensate 1 = Reading.tTop := rfl
+@[simp] theorem condensate_over (n : Nat) : condensate (n + 2) = Reading.kTop := rfl
 
 /-- **The empty lenticule is the told-nothing `⊥`** — vacuum, consistent. -/
 theorem empty_consistent : (condensate 0).isInconsistency = false := rfl
@@ -110,20 +110,20 @@ theorem over_occupation_inconsistency (n : Nat) :
 /-! ## The condensate settles out of the mirror -/
 
 /-- **The empty pole is mirror-fixed.** The over/under gauge `~` leaves `⊥` where it is. -/
-theorem mirror_fixes_empty : Charge.negate (condensate 0) = condensate 0 := rfl
+theorem mirror_fixes_empty : Reading.negate (condensate 0) = condensate 0 := rfl
 
 /-- **The condensate pole is mirror-fixed.** Negation leaves the over-occupied `⊤` where it is:
 the condensate sits at the mirror's fixed locus — what *settles out of* the mirror, not it. -/
 theorem mirror_fixes_condensate_pole (n : Nat) :
-    Charge.negate (condensate (n + 2)) = condensate (n + 2) := rfl
+    Reading.negate (condensate (n + 2)) = condensate (n + 2) := rfl
 
 /-- **The mirror never creates or erases a condensate.** The contradiction content of a
-lenticule's charge is gauge-invariant (`Charge.isInconsistency_negate`): the over/under flip
+lenticule's reading is gauge-invariant (`Reading.isInconsistency_negate`): the over/under flip
 swaps the definite single-thread readings `t ↔ f` but fixes the `⊥`/`⊤` poles. The textile
 `overUnder_swap_fixes_defect`, now for the lenticular carrier. -/
 theorem mirror_fixes_condensate (n : Nat) :
-    (Charge.negate (condensate n)).isInconsistency = (condensate n).isInconsistency :=
-  Charge.isInconsistency_negate _
+    (Reading.negate (condensate n)).isInconsistency = (condensate n).isInconsistency :=
+  Reading.isInconsistency_negate _
 
 end AperiodicOrder.Tiling
 end Obsmetrologia

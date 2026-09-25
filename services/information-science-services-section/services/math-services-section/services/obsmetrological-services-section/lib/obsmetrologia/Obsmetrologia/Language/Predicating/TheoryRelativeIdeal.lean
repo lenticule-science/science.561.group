@@ -132,8 +132,8 @@ theorem relativeIdeal_mono (ι : PredicationCell → PredicationCell) {vT wT : V
 (the host already bounds it). The ideal is the settled state *restricted*, never a fresh value
 over `C_R`. -/
 theorem relativeIdeal_le_kTop (ι : PredicationCell → PredicationCell) (vT : Valuation)
-    (p : PredicationCell) : Charge.leK (relativeIdeal ι vT p) Charge.kTop = true :=
-  Charge.leK_kTop (vT (ι p))
+    (p : PredicationCell) : Reading.leK (relativeIdeal ι vT p) Reading.kTop = true :=
+  Reading.leK_kTop (vT (ι p))
 
 /-- **The host fixed point is preserved cellwise under reindexing.** If `vT` is settled
 (`Quiescent M vT`, i.e. `Cl_T vT = vT`), then for every resource cell `p` the ideal value is
@@ -163,7 +163,7 @@ structure IdealSettled (M : ModalFrame) (ι : PredicationCell → PredicationCel
   mono : ∀ {wT : Valuation}, leK vT wT →
     leK (relativeIdeal ι vT) (relativeIdeal ι wT)
   /-- No new content: every ideal value is bounded by the host top `⊤ₖ`. -/
-  bounded : ∀ p, Charge.leK (relativeIdeal ι vT p) Charge.kTop = true
+  bounded : ∀ p, Reading.leK (relativeIdeal ι vT p) Reading.kTop = true
   /-- The ideal value is the host closure restricted to the embedded cell (host fixed point
   preserved cellwise). -/
   fixed_cellwise : ∀ p, relativeIdeal ι vT p = M.closureOp vT (ι p)

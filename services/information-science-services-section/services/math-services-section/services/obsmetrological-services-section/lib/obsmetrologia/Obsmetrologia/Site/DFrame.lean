@@ -74,7 +74,7 @@ itself, which is the canonical bitopological one specialized to the Δ⁺/Δ⁻ 
   i.e. no cell is told both — the ⊤ co-witness). This is the d-frame node's
   `U ∩ V = ∅` read on the dual point sets.
 * `tot (A, B) := ∀ φ, mSettled φ = true → (A φ ∨ B φ)` — `A ∪ B` **covers the settled
-  cells** of `U` (the cells whose charge is not still `⊥`, i.e. in `{t,f,⊤}`). This
+  cells** of `U` (the cells whose reading is not still `⊥`, i.e. in `{t,f,⊤}`). This
   is the node's `U ∪ V = X` relativized to the settled support, exactly as the sheaf
   node specifies.
 
@@ -85,7 +85,7 @@ axioms are pure logic (sub-disjoint stays disjoint; super-covering stays coverin
 namespace Obsmetrologia
 namespace DFrame
 
-open Obsmetrologia.Charge
+open Obsmetrologia.Reading
 
 /-! ## Frames — complete distributive lattices with the infinite distributive law
 
@@ -427,18 +427,18 @@ is a `Bool` mask `mU` on `PredicationCell`. The point set of each frame is
   co-witnesses both a truth-positive and a falsehood-positive state at `τ` — the ⊤
   co-witness the node speaks of);
 * `tot (A,B) := ∀ φ, mSettled v mU φ = true → (A φ ∨ B φ)` — `A ∪ B` covers the
-  **settled** cells of `U` (cells whose charge is in `{t,f,⊤}`, not still `⊥`).
+  **settled** cells of `U` (cells whose reading is in `{t,f,⊤}`, not still `⊥`).
 
 This is the canonical bitopological reading specialized to the Δ⁺/Δ⁻ dual point sets
 and the settled support, exactly as the sheaf node specifies. -/
 
 /-- The **falsehood mask** `dF` — designated = `{f, ⊤}` = Δ⁻, the newly-falsehood-
 positive cells. The exact mirror of `AssocSheaf.dK` on the negative side: a cell is
-in Δ⁻ iff its settled charge has a negative component (`f` or `⊤`). -/
+in Δ⁻ iff its settled reading has a negative component (`f` or `⊤`). -/
 def dF : AssocSheaf.Mask := fun v φ => decide (v φ = tBot ∨ v φ = kTop)
 
 /-- The **settled mask** `mSettled` relative to a clopen `mU`: the cells in `U` whose
-charge is settled (not still `⊥ₖ`), i.e. in `{t, f, ⊤}`. These are the cells `tot`
+reading is settled (not still `⊥ₖ`), i.e. in `{t, f, ⊤}`. These are the cells `tot`
 must cover. -/
 def mSettled (v : Valuation) (mU : PredicationCell → Bool) (φ : PredicationCell) : Bool :=
   mU φ && !decide (v φ = kBot)

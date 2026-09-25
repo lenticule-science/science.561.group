@@ -32,17 +32,17 @@ requirement ("positive in the cell values") is precisely what makes `T_S`
 **monotone**; joining `v` makes it **inflationary**. The corpus's
 [closure-rule-language] notes that *quantifier-free* antecedents are
 Scott-continuous (finite-antecedent rules), pinning the strict / Scott regime
-`κ = ω` (here, over the finite `Charge`, strict-finite `κ ≤ 3` per `ClosureOrdinal`).
+`κ = ω` (here, over the finite `Reading`, strict-finite `κ ≤ 3` per `ClosureOrdinal`).
 
-We model rules concretely over `Valuation = PredicationCell → Charge` and `Charge`:
+We model rules concretely over `Valuation = PredicationCell → Reading` and `Reading`:
 the antecedent is a `≤ₖ`-monotone `Valuation → Bool` (positivity as a structure
 field, since the corpus language is positive-in-cell-values), and the consequent is
-a single `(cell, charge)` assertion. `Tstep` fires the whole system one step; `clS`
+a single `(cell, reading)` assertion. `Tstep` fires the whole system one step; `clS`
 iterates it to its fixed point. We reuse:
 
-* `Settling` — the `Charge` `≤ₖ` order, `joinK`, the `Closure` bundle and its
+* `Settling` — the `Reading` `≤ₖ` order, `joinK`, the `Closure` bundle and its
   least-fixed-point characterization `op_least` (the closure-to-fixed-point);
-* `ClosureOperatorFiber` — the pointwise lift of a charge-closure to a
+* `ClosureOperatorFiber` — the pointwise lift of a reading-closure to a
   valuation-closure and the valuation `≤ₖ` order with `liftOp_*` laws;
 * `ClosureOrdinal` — `iter` and `settles_by_three` (strict-finite termination);
 * `KnasterTarskiStandalone` — the abstract Knaster–Tarski lfp over a complete
@@ -57,7 +57,7 @@ Theorems (at exact names):
 namespace Obsmetrologia
 namespace ClosureRule
 
-open Charge
+open Reading
 open Valuation
 
 /-! ## Valuation order infrastructure reused from the fiber
@@ -66,18 +66,18 @@ The pointwise `≤ₖ` on valuations is `Valuation.leK`; it is a partial order. 
 its reflexivity, transitivity and antisymmetry to phrase "least". -/
 
 /-- Reflexivity of the valuation knowledge order — lifted fiberwise from
-`Charge.kle_refl`. -/
+`Reading.kle_refl`. -/
 theorem vle_refl (v : Valuation) : Valuation.leK v v :=
   fun φ => kle_refl (v φ)
 
 /-- Transitivity of the valuation knowledge order — lifted fiberwise from
-`Charge.kle_trans`. -/
+`Reading.kle_trans`. -/
 theorem vle_trans {u v w : Valuation} (h1 : Valuation.leK u v) (h2 : Valuation.leK v w) :
     Valuation.leK u w :=
   fun φ => kle_trans _ _ _ (h1 φ) (h2 φ)
 
 /-- Antisymmetry of the valuation knowledge order — lifted fiberwise from
-`Charge.kle_antisymm` through `funext`. So `Valuation.leK` is a partial
+`Reading.kle_antisymm` through `funext`. So `Valuation.leK` is a partial
 order (the receiver of "least"). -/
 theorem vle_antisymm {v w : Valuation} (h1 : Valuation.leK v w) (h2 : Valuation.leK w v) :
     v = w := by
@@ -89,15 +89,15 @@ A consequent `v'(p)(t₁,t₂) ≥ₖ V` asserts that cell `p=(t₁,p,t₂)` sit
 `V`. As a valuation it is the bump `⊥ₖ everywhere except V at the named cell`;
 joining it raises exactly that cell to at least `V`. -/
 
-/-- The valuation that asserts charge `V` at a single cell `c` and `⊥ₖ` elsewhere —
+/-- The valuation that asserts reading `V` at a single cell `c` and `⊥ₖ` elsewhere —
 the consequent `v'(c) ≥ₖ V` read as a valuation. Uses `DecidableEq PredicationCell`. -/
-def bump (c : PredicationCell) (V : Charge) : Valuation :=
+def bump (c : PredicationCell) (V : Reading) : Valuation :=
   fun φ => if φ = c then V else kBot
 
-@[simp] theorem bump_self (c : PredicationCell) (V : Charge) : bump c V c = V := by
+@[simp] theorem bump_self (c : PredicationCell) (V : Reading) : bump c V c = V := by
   simp [bump]
 
-theorem bump_le_of_cell {c : PredicationCell} {V : Charge} {w : Valuation}
+theorem bump_le_of_cell {c : PredicationCell} {V : Reading} {w : Valuation}
     (h : KLE V (w c)) : Valuation.leK (bump c V) w := by
   intro φ
   refine Decidable.byCases (p := φ = c) (fun hφ => ?_) (fun hφ => ?_)
@@ -112,7 +112,7 @@ values": as the state rises in `≤ₖ`, a fired antecedent stays fired. We carr
 a field because it is exactly what makes the generated `Tstep` monotone. -/
 
 /-- A **closure rule**: a monotone `≤ₖ`-positive antecedent test on the valuation,
-and the `(cell, charge)` consequent it asserts when the antecedent holds. The
+and the `(cell, reading)` consequent it asserts when the antecedent holds. The
 `antMono` field is the corpus language's positivity-in-cell-values constraint. -/
 structure ClosureRule where
   /-- The antecedent `φ(v)` — a positive (`≤ₖ`-monotone) test on the valuation. -/
@@ -122,7 +122,7 @@ structure ClosureRule where
   /-- The consequent cell `p=(t₁,p,t₂)`. -/
   cell : PredicationCell
   /-- The asserted knowledge-threshold `V` at that cell. -/
-  charge : Charge
+  reading : Reading
 
 /-- A **closure-rule system** `S` — a finite/countable set of closure rules. We take
 the finite (countable-list) presentation the corpus admits. -/
@@ -131,7 +131,7 @@ abbrev RuleSystem := List ClosureRule
 /-- The consequent contribution of one rule at valuation `v`: its `bump` when the
 antecedent holds in `v`, else the knowledge-least valuation (no contribution). -/
 def ruleFire (r : ClosureRule) (v : Valuation) : Valuation :=
-  if r.antecedent v = true then bump r.cell r.charge else Valuation.knowledgeLeast
+  if r.antecedent v = true then bump r.cell r.reading else Valuation.knowledgeLeast
 
 /-- The total **fired-consequent** valuation: the `≤ₖ`-join of every applicable
 rule's consequent at `v`. (`foldr` of `Valuation.joinK` over the system.) -/
@@ -212,7 +212,7 @@ def SClosed (S : RuleSystem) (v : Valuation) : Prop := Tstep S v = v
 theorem fire_le_self_of_closed (S : RuleSystem) {w : Valuation} (hw : SClosed S w) :
     Valuation.leK (fire S w) w := by
   intro φ
-  have e : Charge.joinK (w φ) (fire S w φ) = w φ := congrFun hw φ
+  have e : Reading.joinK (w φ) (fire S w φ) = w φ := congrFun hw φ
   have h2 := le_joinK_right (w φ) (fire S w φ)
   rw [e] at h2; exact h2
 
@@ -226,36 +226,36 @@ theorem fire_le_of_closed (S : RuleSystem) {v w : Valuation}
   vle_trans (fire_mono S hvw) (fire_le_self_of_closed S hw)
 
 /-- Every rule's consequent `bump` sits below the total firing of the system that
-contains it: `r ∈ S` and `r.antecedent w` ⟹ `bump r.cell r.charge ≤ₖ fire S w`.
+contains it: `r ∈ S` and `r.antecedent w` ⟹ `bump r.cell r.reading ≤ₖ fire S w`.
 Induction over `S`; the head case is `le_joinK_left`, the tail case `le_joinK_right`. -/
 theorem bump_le_fire {w : Valuation} (r : ClosureRule) (hant : r.antecedent w = true) :
-    ∀ {S : RuleSystem}, r ∈ S → Valuation.leK (bump r.cell r.charge) (fire S w)
+    ∀ {S : RuleSystem}, r ∈ S → Valuation.leK (bump r.cell r.reading) (fire S w)
   | [], hr => absurd hr List.not_mem_nil
   | s :: rest, hr => by
     rcases List.mem_cons.1 hr with hhead | htail
     · subst hhead
       intro φ
-      have hrf : ruleFire r w φ = bump r.cell r.charge φ := by simp [ruleFire, hant]
-      show KLE (bump r.cell r.charge φ) (Charge.joinK (ruleFire r w φ) (fire rest w φ))
+      have hrf : ruleFire r w φ = bump r.cell r.reading φ := by simp [ruleFire, hant]
+      show KLE (bump r.cell r.reading φ) (Reading.joinK (ruleFire r w φ) (fire rest w φ))
       rw [hrf]; exact le_joinK_left _ _
     · intro φ
       exact kle_trans _ _ _ (bump_le_fire r hant htail φ) (le_joinK_right _ _)
 
 /-- **Rule-respecting, made explicit.** If `w` is `S`-closed then for every rule
 `r ∈ S` whose antecedent holds in `w`, the consequent already holds: the cell sits
-at least at the asserted charge, `V ≤ₖ w(cell)`. This is the corpus axiom (iii). -/
+at least at the asserted reading, `V ≤ₖ w(cell)`. This is the corpus axiom (iii). -/
 theorem rule_respecting (S : RuleSystem) {w : Valuation} (hw : SClosed S w)
     (r : ClosureRule) (hr : r ∈ S) (hant : r.antecedent w = true) :
-    KLE r.charge (w r.cell) := by
+    KLE r.reading (w r.cell) := by
   have hfw : Valuation.leK (fire S w) w := fire_le_self_of_closed S hw
-  have hbump : Valuation.leK (bump r.cell r.charge) (fire S w) := bump_le_fire r hant hr
+  have hbump : Valuation.leK (bump r.cell r.reading) (fire S w) := bump_le_fire r hant hr
   have := vle_trans hbump hfw r.cell
   simpa using this
 
 /-! ## The generated closure `cl^S` as least fixed point of `T_S`
 
 We reuse the abstract least-fixed-point characterization. `Tstep` is monotone and
-inflationary; over the finite charge lattice each fiber settles in `≤ 3` steps
+inflationary; over the finite reading lattice each fiber settles in `≤ 3` steps
 (`ClosureOrdinal.settles_by_three`). We package `cl^S` as *any* fixed point reached
 above the seed and prove it is the **least** `S`-closed valuation above the seed —
 the corpus's existence+uniqueness via pointwise meet, here read through the lfp.
@@ -264,7 +264,7 @@ the corpus's existence+uniqueness via pointwise meet, here read through the lfp.
 statements below are its concrete settling-stage instance over `Valuation`, which is
 why received Knaster–Tarski is the degenerate specialization of *this* construction. -/
 
-/-- `cl^S v` is the iterate of `Tstep` to its fixed point. Over the finite `Charge`
+/-- `cl^S v` is the iterate of `Tstep` to its fixed point. Over the finite `Reading`
 lattice the fiberwise orbit settles by step 3 (`ClosureOrdinal`), so three steps
 reach a fixed point; we name the operator at that bound. -/
 def clS (S : RuleSystem) (v : Valuation) : Valuation :=
@@ -295,7 +295,7 @@ theorem clS_le_closed (S : RuleSystem) {v x : Valuation}
 /-! ### The scoping note
 
 `Tstep` is monotone and inflationary but not in general idempotent: a single firing
-may enable a further firing (cascade). On the **finite** charge lattice each fiber
+may enable a further firing (cascade). On the **finite** reading lattice each fiber
 nonetheless settles in `≤ 3` steps (`ClosureOrdinal.settles_by_three`), so for a
 system whose firing is *fiberwise* an inflationary endomap the three-fold iterate
 `clS` is a fixed point. The general `Datalog` cascade across infinitely many
@@ -306,7 +306,7 @@ content) unconditional, and prove the closure laws + leastness for any reached f
 point. -/
 
 /-- **`generated_closure_is_least`.** For a system whose three-fold
-iterate is already a fixed point (`SClosed S (clS S v)`, the finite-charge regime),
+iterate is already a fixed point (`SClosed S (clS S v)`, the finite-reading regime),
 `cl^S v` is a closure value of the seed and the **least** `S`-closed
 valuation above it:
 
@@ -337,7 +337,7 @@ theorem least_closed_unique (S : RuleSystem) (v c₁ c₂ : Valuation)
 
 /-- **`immediate_consequence_lfp`.** `cl^S v` **is the least fixed point of
 the immediate-consequence operator `T_S` above the seed `v`** — the van Emden–Kowalski
-/ Datalog theorem. Concretely, when the finite-charge orbit has settled
+/ Datalog theorem. Concretely, when the finite-reading orbit has settled
 (`SClosed S (clS S v)`):
 
 * `cl^S v` is a fixed point of `T_S`: `Tstep S (cl^S v) = cl^S v`;
@@ -362,24 +362,24 @@ over a single cell and show its three-fold iterate is a fixed point. The
 rule: *always fire, asserting `tTop` (truth-top, "evidence-for") at a fixed cell
 `c`.* (Antecedent `fun _ => true` is vacuously monotone.) -/
 
-/-- A trivial-antecedent rule asserting charge `V` at cell `c` — fires at every
+/-- A trivial-antecedent rule asserting reading `V` at cell `c` — fires at every
 valuation. The antecedent `fun _ => true` is monotone. -/
-def alwaysRule (c : PredicationCell) (V : Charge) : ClosureRule where
+def alwaysRule (c : PredicationCell) (V : Reading) : ClosureRule where
   antecedent := fun _ => true
   antMono := fun _ _ => rfl
   cell := c
-  charge := V
+  reading := V
 
 /-- The total firing of the one-rule always-system is the constant bump `bump c V`,
 at any state: the single rule always fires, and `joinK _ kBot` collapses the fold. -/
-theorem fire_alwaysRule (c : PredicationCell) (V : Charge) (u : Valuation) :
+theorem fire_alwaysRule (c : PredicationCell) (V : Reading) (u : Valuation) :
     fire [alwaysRule c V] u = bump c V := by
   funext φ
-  show Charge.joinK (bump c V φ) Charge.kBot = bump c V φ
+  show Reading.joinK (bump c V φ) Reading.kBot = bump c V φ
   rw [joinK_comm]; exact joinK_kBot (bump c V φ)
 
 /-- One immediate-consequence step of the always-system: `Tstep [r] u = u ∨ₖ bump c V`. -/
-theorem Tstep_alwaysRule (c : PredicationCell) (V : Charge) (u : Valuation) :
+theorem Tstep_alwaysRule (c : PredicationCell) (V : Reading) (u : Valuation) :
     Tstep [alwaysRule c V] u = Valuation.joinK u (bump c V) := by
   show Valuation.joinK u (fire [alwaysRule c V] u) = Valuation.joinK u (bump c V)
   rw [fire_alwaysRule]
@@ -387,34 +387,34 @@ theorem Tstep_alwaysRule (c : PredicationCell) (V : Charge) (u : Valuation) :
 /-- The closure of the seed under the always-system is exactly the bump `bump c V`:
 the first step raises cell `c` from `⊥ₖ` to `V`, and the two further steps are
 `joinK`-idempotent. -/
-theorem clS_alwaysRule (c : PredicationCell) (V : Charge) :
+theorem clS_alwaysRule (c : PredicationCell) (V : Reading) :
     clS [alwaysRule c V] Valuation.knowledgeLeast = bump c V := by
   have step1 : Tstep [alwaysRule c V] Valuation.knowledgeLeast = bump c V := by
     rw [Tstep_alwaysRule]; funext φ
-    show Charge.joinK Charge.kBot (bump c V φ) = bump c V φ
+    show Reading.joinK Reading.kBot (bump c V φ) = bump c V φ
     exact joinK_kBot (bump c V φ)
   show Tstep [alwaysRule c V] (Tstep [alwaysRule c V]
     (Tstep [alwaysRule c V] Valuation.knowledgeLeast)) = bump c V
   rw [step1, Tstep_alwaysRule, Tstep_alwaysRule]
   funext φ
-  show Charge.joinK (Charge.joinK (bump c V φ) (bump c V φ)) (bump c V φ) = bump c V φ
+  show Reading.joinK (Reading.joinK (bump c V φ) (bump c V φ)) (bump c V φ) = bump c V φ
   rw [joinK_idem, joinK_idem]
 
 /-- For the one-rule always-firing system, the three-fold `clS` is a fixed
 point: `Tstep [r] (bump c V) = bump c V` by `joinK`-idempotence. -/
-theorem alwaysRule_closed (c : PredicationCell) (V : Charge) :
+theorem alwaysRule_closed (c : PredicationCell) (V : Reading) :
     SClosed [alwaysRule c V] (clS [alwaysRule c V] Valuation.knowledgeLeast) := by
   show Tstep [alwaysRule c V] (clS [alwaysRule c V] Valuation.knowledgeLeast)
     = clS [alwaysRule c V] Valuation.knowledgeLeast
   rw [clS_alwaysRule, Tstep_alwaysRule]
   funext φ
-  show Charge.joinK (bump c V φ) (bump c V φ) = bump c V φ
+  show Reading.joinK (bump c V φ) (bump c V φ) = bump c V φ
   exact joinK_idem (bump c V φ)
 
 /-- The worked system instantiates `immediate_consequence_lfp`: the closure of the
 seed under the always-firing rule is the least fixed point of its immediate-
 consequence operator. A non-vacuous witness that the regime hypothesis is met. -/
-theorem alwaysRule_lfp (c : PredicationCell) (V : Charge) :
+theorem alwaysRule_lfp (c : PredicationCell) (V : Reading) :
     Tstep [alwaysRule c V] (clS [alwaysRule c V] Valuation.knowledgeLeast)
       = clS [alwaysRule c V] Valuation.knowledgeLeast ∧
     Valuation.leK Valuation.knowledgeLeast (clS [alwaysRule c V] Valuation.knowledgeLeast) ∧

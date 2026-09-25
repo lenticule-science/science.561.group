@@ -4,7 +4,7 @@ import Obsmetrologia.CausalSets.Continuum.Colimit
 /-!
 # The Chu geometry's information action is an attained colimit
 
-A causal geometry valued in the FOUR is a **Chu space** `⟨pts, sts, r : pts → sts → Charge⟩`
+A causal geometry valued in the FOUR is a **Chu space** `⟨pts, sts, r : pts → sts → Reading⟩`
 ([LinearLogicChu.lean](../../../Calculus/Logic/LinearLogicChu.lean)): the matrix `r` records, for each
 point/state pair, one of `⊥ₖ / t / f / ⊤ₖ` — spacelike/told-nothing, told-one-bit, or held
 contradiction. The would-be Riemannian manifold is this Chu space; its metric content is the
@@ -24,7 +24,7 @@ finite stage** (`chu_info_action_continuum_attained`) — a directed-join colimi
 
 **Scope.** What is green: the **information** action (the `≤ₖ`-monotone FOUR content) on the
 Chu refinement tower is an attained colimit. What stays **red** and is *not* claimed here: the Möbius
-gravitational Benincasa–Dowker action is *not* a `≤ₖ`-monotone single-`Charge` functional (it is a
+gravitational Benincasa–Dowker action is *not* a `≤ₖ`-monotone single-`Reading` functional (it is a
 Möbius sum over a growing poset), so it is **not** instantiable by this route — that instantiation, and
 the metric Ricci magnitude `−¼∫R√g`, remain the open frontier (`thm:bd-action-continuum-colimit`,
 `thm:sym-trace-is-ricci-scalar`). This closes construction (2) for the information action only,
@@ -32,8 +32,8 @@ demonstrating the colimit mechanism on a real functional read off the Chu geomet
 
 ## Main definitions
 
-* `kContent` — the FOUR information content of a charge (told-bits): `⊥↦0, t/f↦1, ⊤↦2`.
-* `ofMatrix` — a `Charge`-valued causal matrix as a Chu space over FOUR (the geometry as Chu space).
+* `kContent` — the FOUR information content of a reading (told-bits): `⊥↦0, t/f↦1, ⊤↦2`.
+* `ofMatrix` — a `Reading`-valued causal matrix as a Chu space over FOUR (the geometry as Chu space).
 * `observedKnowledge` — the join of a Chu space's matrix over a list of revealed cells.
 * `chuTower` — a refinement tower from a `⊆`-growing reveal sequence of cells.
 
@@ -58,16 +58,16 @@ Chu space, FOUR, information content, refinement tower, directed-join colimit, c
 namespace Obsmetrologia
 namespace CausalSets.Continuum.ChuActionColimit
 
-open Obsmetrologia.Charge
+open Obsmetrologia.Reading
 open Obsmetrologia.Closure.Scott
 open Obsmetrologia.CausalSets.Continuum.Colimit
 
 /-! ## (A) The FOUR information content — the monotone action functional -/
 
-/-- The **FOUR information content** of a charge: the number of bits it tells, `[q.pos] + [q.neg]`.
+/-- The **FOUR information content** of a reading: the number of bits it tells, `[q.pos] + [q.neg]`.
 `⊥ₖ ↦ 0` (told nothing), `t ↦ 1` / `f ↦ 1` (told one bit), `⊤ₖ ↦ 2` (told both — held contradiction).
 The Tiles measured content read as an integer action. -/
-def kContent (q : Charge) : Int := (if q.pos then 1 else 0) + (if q.neg then 1 else 0)
+def kContent (q : Reading) : Int := (if q.pos then 1 else 0) + (if q.neg then 1 else 0)
 
 /-- **The information content is `≤ₖ`-monotone.** Since `≤ₖ` is the coordinatewise order on the two
 slots `(pos, neg)`, climbing the knowledge order can only *add* told-bits — `KLE a b → kContent a ≤
@@ -78,10 +78,10 @@ theorem kContent_mono : ∀ a b, KLE a b → kContent a ≤ kContent b := by
 
 /-! ## (B) The geometry as a Chu space over FOUR -/
 
-/-- **A causal charge matrix as a Chu space over FOUR.** Any `Charge`-valued matrix `r : E → E →
-Charge` (a point's FOUR-valued influence at each event — `⊥` spacelike, `t/f` causal, `⊤` conflict) is
+/-- **A causal reading matrix as a Chu space over FOUR.** Any `Reading`-valued matrix `r : E → E →
+Reading` (a point's FOUR-valued influence at each event — `⊥` spacelike, `t/f` causal, `⊤` conflict) is
 a Chu space: the "Riemannian manifold" is the Chu space, its metric content the FOUR incidence. -/
-def ofMatrix (E : Type) (r : E → E → Charge) : ChuSpace where
+def ofMatrix (E : Type) (r : E → E → Reading) : ChuSpace where
   pts := E
   sts := E
   r := r
@@ -90,7 +90,7 @@ def ofMatrix (E : Type) (r : E → E → Charge) : ChuSpace where
 
 /-- The **observed knowledge** of a Chu space over a list of revealed point/state cells: the
 knowledge-join `⋁ₖ` of the FOUR entries seen. The total settled information of the revealed geometry. -/
-def observedKnowledge (C : ChuSpace) (cells : List (C.pts × C.sts)) : Charge :=
+def observedKnowledge (C : ChuSpace) (cells : List (C.pts × C.sts)) : Reading :=
   Obsmetrologia.Closure.Scott.sup (cells.map (fun p => C.r p.1 p.2))
 
 /-- **Revealing more cells only accretes knowledge.** If `cells₁ ⊆ cells₂`, the observed knowledge
@@ -122,7 +122,7 @@ refinement tower equals its value at a finite stage and is attained there — a 
 not an `ε–δ` limit. This realizes construction (2) of the continuum-colimit program for the *actual*
 (information) action functional, read off the Chu matrix.
 
-The Möbius gravitational Benincasa–Dowker action is not a `≤ₖ`-monotone single-`Charge` functional, so
+The Möbius gravitational Benincasa–Dowker action is not a `≤ₖ`-monotone single-`Reading` functional, so
 its continuum instantiation — and the metric Ricci magnitude — remain the open frontier; this is the
 information action only. -/
 theorem chu_info_action_continuum_attained (C : ChuSpace)

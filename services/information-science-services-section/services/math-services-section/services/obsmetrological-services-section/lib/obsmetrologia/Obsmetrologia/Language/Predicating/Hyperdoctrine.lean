@@ -20,7 +20,7 @@ left and right adjoint (`∃_converse = ∀_converse = reindex converse`). This 
 The **projection** generators (subject/object) collapse the entity pair and are not
 bijective; their `∃_f`/`∀_f` are fiber join/meet over `f⁻¹(–)`, which needs a
 completeness/finiteness assumption on the entity index (the fiber is the *finite*
-complete lattice `Charge`, but the index set may be infinite). That refinement is
+complete lattice `Reading`, but the index set may be infinite). That refinement is
 the next step; here we derive the part that is unconditionally constructive.
 -/
 
@@ -28,7 +28,7 @@ namespace Obsmetrologia
 namespace Valuation
 
 /-- Pointwise knowledge-meet of valuations (companion to `joinK`). -/
-def meetK (v w : Valuation) : Valuation := fun φ => Charge.meetK (v φ) (w φ)
+def meetK (v w : Valuation) : Valuation := fun φ => Reading.meetK (v φ) (w φ)
 
 /-- Reindexing along a base map: `f* v = v ∘ f`. -/
 def reindex (r : PredicationCell → PredicationCell) (v : Valuation) : Valuation :=

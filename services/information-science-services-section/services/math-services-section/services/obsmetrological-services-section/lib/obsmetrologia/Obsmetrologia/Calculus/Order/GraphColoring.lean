@@ -17,8 +17,8 @@ factor map" structural rather than a slogan, and it is the same vocabulary a sof
 uses (a substitution subshift is a factor of a shift of finite type).
 
 The four-colour case is special: the natural palette is **FOUR** — the Belnap bilattice
-`Charge = {⊥, t, f, ⊤}` that recurs through the corpus. The Four-Colour-Theorem palette and the four
-charges are one alphabet (`fourColouring`).
+`Reading = {⊥, t, f, ⊤}` that recurs through the corpus. The Four-Colour-Theorem palette and the four
+readings are one alphabet (`fourColouring`).
 
 ## Main results
 * `properColoring_iff_hom` — proper colouring ⟺ graph hom into the complete-graph colour shift.
@@ -91,14 +91,14 @@ theorem not_bipartite_of_odd_closed_walk {V : Type} (G : Graph V) (start : V) (v
   have := bipartite_no_odd_closed_walk hbip start vs hw hcl
   omega
 
-/-- **The four-colour palette is FOUR.** A `Charge`-valued proper colouring is a 4-colouring whose
+/-- **The four-colour palette is FOUR.** A `Reading`-valued proper colouring is a 4-colouring whose
 palette is the Belnap bilattice `{⊥, t, f, ⊤}` — the same FOUR that recurs through the corpus. The
-Four-Colour-Theorem palette and the four charges are one alphabet. -/
-def fourColouring {V : Type} (G : Graph V) : Prop := Colorable G Charge
+Four-Colour-Theorem palette and the four readings are one alphabet. -/
+def fourColouring {V : Type} (G : Graph V) : Prop := Colorable G Reading
 
-/-- A `Charge`-colouring is a factor map onto the complete graph on FOUR (`K₄` on the charges). -/
-theorem fourColouring_iff_hom {V : Type} (G : Graph V) (c : V → Charge) :
-    ProperColoring G c ↔ GraphHom G (completeGraph Charge) c :=
+/-- A `Reading`-colouring is a factor map onto the complete graph on FOUR (`K₄` on the readings). -/
+theorem fourColouring_iff_hom {V : Type} (G : Graph V) (c : V → Reading) :
+    ProperColoring G c ↔ GraphHom G (completeGraph Reading) c :=
   properColoring_iff_hom G c
 
 end Combinatorics

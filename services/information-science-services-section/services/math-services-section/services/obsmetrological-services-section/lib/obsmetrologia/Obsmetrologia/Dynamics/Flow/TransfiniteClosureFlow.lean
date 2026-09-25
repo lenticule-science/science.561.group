@@ -13,7 +13,7 @@ import Obsmetrologia.Calculus.Order.OrderInfra
 (`Closure/OrdinalCore.lean`), replacing `ClosureFlowDynamics`'s `Nat`-time orbit.
 `Monotone` is `≤ₖ`-monotonicity along `Ord.Le`. `ContinuousAt w f` states that
 `w (Ord.limit f)` is the `leK`-least upper bound of `{w (f n)}`. `tflowOf` is the
-concrete flow built from the finite `Charge` orbit; `tflowOf_continuousAt_of_reaches`
+concrete flow built from the finite `Reading` orbit; `tflowOf_continuousAt_of_reaches`
 proves it continuous at any fundamental sequence that reaches `M.settle seed`, via
 `Order.upperBound_of_reached_isLUB`. `continuous_no_nsc_firing` shows a continuous flow
 has no non-Scott-continuous firing at any limit.
@@ -25,7 +25,7 @@ namespace Obsmetrologia
 namespace Valuation
 namespace ModalFrame
 
-open Charge
+open Reading
 
 variable (M : ModalFrame)
 

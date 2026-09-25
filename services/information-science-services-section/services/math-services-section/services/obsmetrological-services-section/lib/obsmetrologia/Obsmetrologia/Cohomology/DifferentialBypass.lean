@@ -18,7 +18,7 @@ closure algebra and settling coalgebra over valuations:
 
 The proved content is deliberately finite: a bypass certificate collapses the
 zero-increment μ/ν gap, routes the ordinal to its regime, and uses the existing
-regime table to identify exactly where `H¹` is charged rather than vanished.
+regime table to identify exactly where `H¹` is valued rather than vanished.
 
 ## Main definitions
 
@@ -112,8 +112,8 @@ theorem differential_bypass_regime {M : ModalFrame} {E : Valuation}
     Ord.regimeOfOrd κ d.scottContinuous d.countableCofinality = classify d :=
   Ord.regime_of_ord_refines_classify d κ B.ordinal
 
-/-- Non-vanishing cohomology is exactly the charged non-strict, non-Scott side. -/
-theorem obstruction_charged_iff (r : ClosureRegime) :
+/-- Non-vanishing cohomology is exactly the valued non-strict, non-Scott side. -/
+theorem obstruction_valued_iff (r : ClosureRegime) :
     cohomologyVanishes r = false ↔
       r = ClosureRegime.transfiniteBounded ∨ r = ClosureRegime.aperiodic := by
   cases r <;> simp [cohomologyVanishes]
@@ -139,7 +139,7 @@ theorem differential_bypass_sound {M : ModalFrame} {E : Valuation}
     ∧ (cohomologyVanishes (classify d) = false ↔
         classify d = ClosureRegime.transfiniteBounded ∨ classify d = ClosureRegime.aperiodic) :=
   ⟨differential_bypass_agreement B, differential_bypass_regime B,
-    obstruction_charged_iff (classify d)⟩
+    obstruction_valued_iff (classify d)⟩
 
 end Cohomology
 end Obsmetrologia

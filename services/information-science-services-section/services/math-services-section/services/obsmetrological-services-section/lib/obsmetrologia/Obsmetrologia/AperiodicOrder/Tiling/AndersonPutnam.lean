@@ -155,13 +155,13 @@ cohomology is taken is the aperiodic nuclear quartet (a `NuclearSquare` on the k
 Heyting-algebra), realizing the `Fix(π) = Fix(j₁) ∩ Fix(j₂)` quartet at every fiber. We
 reuse `Positing.Bigraded`'s `SquareFamily` over `Nat` (the grade index): one quartet per stage,
 the settling-iterate carrying grade `n` to grade `n+1`. -/
-def gradeQuartet : SquareFamily Charge.heytingK Nat where
-  square _ := Charge.joinSquare Charge.tTop Charge.tBot
+def gradeQuartet : SquareFamily Reading.heytingK Nat where
+  square _ := Reading.joinSquare Reading.tTop Reading.tBot
 
 /-- **Each grade realizes the nuclear quartet** (`Fix(π) = Fix(j₁) ∩ Fix(j₂)`): the per-grade
 structure of the direct limit is exactly the aperiodic nuclear quartet at that grade. Reuses
 `SquareFamily.fiber_quartet` — the KZ diamond *commutating* produces at each grade. -/
-theorem gradeQuartet_fiber (n : Nat) (a : Charge) :
+theorem gradeQuartet_fiber (n : Nat) (a : Reading) :
     (gradeQuartet.square n).pi a = a ↔
       ((gradeQuartet.square n).j1.j a = a ∧ (gradeQuartet.square n).j2.j a = a) :=
   gradeQuartet.fiber_quartet n a
@@ -220,7 +220,7 @@ theorem aperiodic_direct_limit (S : DirectedSystem) :
     ∧ (∀ (m n : Nat) (h : m ≤ n) (x : S.stage m),
         DirectedSystem.Colimit.mk S ⟨m, x⟩ = DirectedSystem.Colimit.mk S ⟨n, S.map h x⟩)
     -- the per-grade structure is the aperiodic nuclear quartet (Fix(π) = Fix(j₁) ∩ Fix(j₂))
-    ∧ (∀ (n : Nat) (a : Charge),
+    ∧ (∀ (n : Nat) (a : Reading),
         (gradeQuartet.square n).pi a = a ↔
           ((gradeQuartet.square n).j1.j a = a ∧ (gradeQuartet.square n).j2.j a = a)) :=
   ⟨S.eventually_refl,

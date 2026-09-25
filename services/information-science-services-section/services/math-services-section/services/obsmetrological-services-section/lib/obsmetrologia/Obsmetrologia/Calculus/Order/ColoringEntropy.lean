@@ -65,23 +65,23 @@ theorem properTriangleColourings_count : properTriangleColourings.length = 6 := 
 
 /-! ### `K₄` on FOUR -/
 
-/-- The 256 colourings of `K₄`'s four charge vertices by the FOUR palette. -/
-def chargeColourings : List (Charge × Charge × Charge × Charge) :=
-  [Charge.kBot, Charge.tTop, Charge.tBot, Charge.kTop].flatMap fun a =>
-    [Charge.kBot, Charge.tTop, Charge.tBot, Charge.kTop].flatMap fun b =>
-      [Charge.kBot, Charge.tTop, Charge.tBot, Charge.kTop].flatMap fun c =>
-        [Charge.kBot, Charge.tTop, Charge.tBot, Charge.kTop].map fun d => (a, b, c, d)
+/-- The 256 colourings of `K₄`'s four reading vertices by the FOUR palette. -/
+def readingColourings : List (Reading × Reading × Reading × Reading) :=
+  [Reading.kBot, Reading.tTop, Reading.tBot, Reading.kTop].flatMap fun a =>
+    [Reading.kBot, Reading.tTop, Reading.tBot, Reading.kTop].flatMap fun b =>
+      [Reading.kBot, Reading.tTop, Reading.tBot, Reading.kTop].flatMap fun c =>
+        [Reading.kBot, Reading.tTop, Reading.tBot, Reading.kTop].map fun d => (a, b, c, d)
 
 /-- The proper `K₄` colourings by FOUR: every pair of vertices receives distinct
-charges. -/
-def properK4Colourings : List (Charge × Charge × Charge × Charge) :=
-  chargeColourings.filter (fun p =>
+readings. -/
+def properK4Colourings : List (Reading × Reading × Reading × Reading) :=
+  readingColourings.filter (fun p =>
     decide (p.1 ≠ p.2.1 ∧ p.1 ≠ p.2.2.1 ∧ p.1 ≠ p.2.2.2 ∧
       p.2.1 ≠ p.2.2.1 ∧ p.2.1 ≠ p.2.2.2 ∧ p.2.2.1 ≠ p.2.2.2))
 
 /-- **`K₄` on FOUR has `4! = 24` proper 4-colourings.** The extremal obstruction
 forces injectivity, and the finite count is the permutation count of the four
-charges. -/
+readings. -/
 theorem properK4Colourings_count : properK4Colourings.length = 24 := by decide
 
 end Combinatorics

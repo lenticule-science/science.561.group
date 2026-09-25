@@ -18,7 +18,7 @@ That is the whole frontier — not a general defect in core arithmetic but five 
 proofs that route through propositional rewriting. Each is re-derived below by plain
 induction, and each discharges with **no axioms whatsoever**. Every numeric module in the
 corpus stands on these five; taken from core they import `propext` before a line of
-corpus mathematics is written, which is why `Charge`, `Record`, `Ord`, and the rational
+corpus mathematics is written, which is why `Reading`, `Record`, `Ord`, and the rational
 tower all inherited it.
 
 `Nat` is not this corpus's ℕ — `Ord.Natural`, the finite fragment of the ordinal

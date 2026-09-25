@@ -32,7 +32,7 @@ temporal structure carrying two axes:
   Lean-core `Nat` specifically. (`Predicating` sits upstream of `Closure/Ordinal`'s
   `Ord`/`Natural` in the spine, so `λ` cannot be *that* derived ordinal here without a
   cycle; a downstream module may instantiate `λ` at `Ord.Natural`'s preorder once it is
-  in scope, the way `Cell.lean`'s `Bool` waits for `Charge` — see the root dictionary,
+  in scope, the way `Cell.lean`'s `Bool` waits for `Reading` — see the root dictionary,
   `content/notes/2026/06/26/...literal-faithfulness-root-dictionary.md`.)
 * **2-cells** are pseudo-morphisms compatible with both axes: a `C`-natural
   transformation `α_f` on the predicate side plus `h`-compatibility, which — since the

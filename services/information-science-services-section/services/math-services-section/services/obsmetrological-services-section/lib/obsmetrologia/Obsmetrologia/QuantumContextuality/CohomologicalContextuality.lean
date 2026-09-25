@@ -47,8 +47,8 @@ replacement exists in this core-only project.
   scenario, in either edge direction.
 * `ParityModel` — a scenario together with a required per-edge XOR target, and its underlying
   `Model` (support = "the two outcomes differ iff the target holds").
-* `outcomeCharge`, `localRecord`, `RealizingFamily`, `mergeRecord`, `topCount` — a Boolean local
-  section held as a charge record (outcome charges on the context's measurements, `⊥ₖ` off it),
+* `outcomeReading`, `localRecord`, `RealizingFamily`, `mergeRecord`, `topCount` — a Boolean local
+  section held as a reading record (outcome readings on the context's measurements, `⊥ₖ` off it),
   a family realizing a model, its pointwise knowledge-join merge, and the merge's held-`⊤` count.
 * `prWitnessFamily`, `prNerve` — the PR-box witness family and the Euler counts of the PR
   context graph.
@@ -332,27 +332,27 @@ theorem prBox_no_global_cohomological : ¬ HasGlobalSection prBox := by
 theorem prBox_strongly_contextual_cohomological : StronglyContextual prBox :=
   ⟨prBox_inhabited, prBox_no_global_cohomological⟩
 
-/-! ## (E) Local sections as charge records, and the knowledge-join merge
+/-! ## (E) Local sections as reading records, and the knowledge-join merge
 
-Local sections of a scenario, held as charge records and merged by the knowledge join, mint
+Local sections of a scenario, held as reading records and merged by the knowledge join, mint
 held `⊤` exactly at the measurements where the family disagrees. For a parity model with pair
 contexts this makes the two carriers of an unresolvable disagreement interconvertible: a family
 of `⊤`-free local records whose merge is again `⊤`-free exists iff the parity target is a
 `Coboundary` (corpus: `content/.../sheaf`, `content/.../inconsistency-sheaf`). -/
 
-/-- The charge of a Boolean outcome: `true ↦ t`, `false ↦ f`. -/
-def outcomeCharge (b : Bool) : Charge := if b then Charge.tTop else Charge.tBot
+/-- The reading of a Boolean outcome: `true ↦ t`, `false ↦ f`. -/
+def outcomeReading (b : Bool) : Reading := if b then Reading.tTop else Reading.tBot
 
-@[simp] theorem outcomeCharge_pos (b : Bool) : (outcomeCharge b).pos = b := by
+@[simp] theorem outcomeReading_pos (b : Bool) : (outcomeReading b).pos = b := by
   cases b <;> rfl
 
-@[simp] theorem outcomeCharge_neg (b : Bool) : (outcomeCharge b).neg = !b := by
+@[simp] theorem outcomeReading_neg (b : Bool) : (outcomeReading b).neg = !b := by
   cases b <;> rfl
 
-/-- A Boolean local section held as a charge record: outcome charges on the context's
+/-- A Boolean local section held as a reading record: outcome readings on the context's
 measurements, `⊥ₖ` off it. -/
-def localRecord [DecidableEq M] (C : List M) (g : M → Bool) : M → Charge :=
-  fun m => if m ∈ C then outcomeCharge (g m) else Charge.kBot
+def localRecord [DecidableEq M] (C : List M) (g : M → Bool) : M → Reading :=
+  fun m => if m ∈ C then outcomeReading (g m) else Reading.kBot
 
 /-- A family **realizes** a model when its section at each context lies in that
 context's support. -/
@@ -361,12 +361,12 @@ def RealizingFamily (E : Model M Bool) (F : Family M Bool) : Prop :=
 
 /-- The **merge** of a family: the pointwise knowledge-join of its local records over
 the scenario's contexts. -/
-def mergeRecord [DecidableEq M] (S : Scenario M) (F : Family M Bool) : M → Charge :=
-  fun m => Charge.joinList (S.contexts.map (fun C => localRecord C (F C) m))
+def mergeRecord [DecidableEq M] (S : Scenario M) (F : Family M Bool) : M → Reading :=
+  fun m => Reading.joinList (S.contexts.map (fun C => localRecord C (F C) m))
 
-/-- The number of held-`⊤` measurements of a charge record among `ms`. -/
-def topCount (v : M → Charge) (ms : List M) : Nat :=
-  ms.countP (fun m => Charge.isInconsistency (v m))
+/-- The number of held-`⊤` measurements of a reading record among `ms`. -/
+def topCount (v : M → Reading) (ms : List M) : Nat :=
+  ms.countP (fun m => Reading.isInconsistency (v m))
 
 /-! ## (F) The merge holds ⊤ exactly at disagreements -/
 
@@ -377,13 +377,13 @@ theorem mergeRecord_pos_iff [DecidableEq M] (S : Scenario M) (F : Family M Bool)
     (mergeRecord S F m).pos = true ↔
       ∃ C, C ∈ S.contexts ∧ m ∈ C ∧ F C m = true := by
   unfold mergeRecord
-  rw [Charge.joinList_pos, List.any_eq_true]
+  rw [Reading.joinList_pos, List.any_eq_true]
   constructor
   · rintro ⟨c, hc, hpos⟩
     obtain ⟨C, hC, rfl⟩ := List.mem_map.mp hc
     unfold localRecord at hpos
     by_cases hm : m ∈ C
-    · simp only [hm, if_true, outcomeCharge_pos] at hpos
+    · simp only [hm, if_true, outcomeReading_pos] at hpos
       exact ⟨C, hC, hm, hpos⟩
     · simp only [hm, if_false] at hpos
       exact absurd hpos (by decide)
@@ -398,13 +398,13 @@ theorem mergeRecord_neg_iff [DecidableEq M] (S : Scenario M) (F : Family M Bool)
     (mergeRecord S F m).neg = true ↔
       ∃ C, C ∈ S.contexts ∧ m ∈ C ∧ F C m = false := by
   unfold mergeRecord
-  rw [Charge.joinList_neg, List.any_eq_true]
+  rw [Reading.joinList_neg, List.any_eq_true]
   constructor
   · rintro ⟨c, hc, hneg⟩
     obtain ⟨C, hC, rfl⟩ := List.mem_map.mp hc
     unfold localRecord at hneg
     by_cases hm : m ∈ C
-    · simp only [hm, if_true, outcomeCharge_neg, Bool.not_eq_true'] at hneg
+    · simp only [hm, if_true, outcomeReading_neg, Bool.not_eq_true'] at hneg
       exact ⟨C, hC, hm, hneg⟩
     · simp only [hm, if_false] at hneg
       exact absurd hneg (by decide)
@@ -412,18 +412,18 @@ theorem mergeRecord_neg_iff [DecidableEq M] (S : Scenario M) (F : Family M Bool)
     refine ⟨localRecord C (F C) m, List.mem_map_of_mem hC, ?_⟩
     simp [localRecord, hm, hval]
 
-/-- A charge is `⊤ₖ` iff both slots fire. -/
-theorem eq_kTop_iff (c : Charge) : c = Charge.kTop ↔ (c.pos = true ∧ c.neg = true) := by
+/-- A reading is `⊤ₖ` iff both slots fire. -/
+theorem eq_kTop_iff (c : Reading) : c = Reading.kTop ↔ (c.pos = true ∧ c.neg = true) := by
   cases c <;> decide
 
 /-- **The merge holds `⊤` exactly at disagreements.** The merged record is inconsistent
 at `m` iff two contexts of the scenario containing `m` assign it different outcomes. -/
 theorem mergeRecord_inconsistency_iff [DecidableEq M] (S : Scenario M)
     (F : Family M Bool) (m : M) :
-    Charge.isInconsistency (mergeRecord S F m) = true ↔
+    Reading.isInconsistency (mergeRecord S F m) = true ↔
       ∃ C, C ∈ S.contexts ∧ ∃ C', C' ∈ S.contexts ∧
         m ∈ C ∧ m ∈ C' ∧ F C m ≠ F C' m := by
-  unfold Charge.isInconsistency
+  unfold Reading.isInconsistency
   rw [decide_eq_true_iff, eq_kTop_iff, mergeRecord_pos_iff, mergeRecord_neg_iff]
   constructor
   · rintro ⟨⟨C, hC, hm, htrue⟩, ⟨C', hC', hm', hfalse⟩⟩
@@ -446,7 +446,7 @@ of the merged record is inconsistent iff the family's sections agree on every sh
 measurement (`CompatibleFamily`). -/
 theorem mergeRecord_topfree_iff_compatible [DecidableEq M] (S : Scenario M)
     (F : Family M Bool) :
-    (∀ m, Charge.isInconsistency (mergeRecord S F m) = false) ↔
+    (∀ m, Reading.isInconsistency (mergeRecord S F m) = false) ↔
       CompatibleFamily S F := by
   constructor
   · intro h C hC C' hC' m hm hm'
@@ -457,7 +457,7 @@ theorem mergeRecord_topfree_iff_compatible [DecidableEq M] (S : Scenario M)
           rw [h m] at hinc
           exact absurd hinc (by decide)
   · intro hcomp m
-    cases hinc : Charge.isInconsistency (mergeRecord S F m) with
+    cases hinc : Reading.isInconsistency (mergeRecord S F m) with
     | false => rfl
     | true =>
       obtain ⟨C, hC, C', hC', hm, hm', hne⟩ :=
@@ -466,8 +466,8 @@ theorem mergeRecord_topfree_iff_compatible [DecidableEq M] (S : Scenario M)
 
 /-! ## (G) A compatible realizing family glues -/
 
-/-- The Boolean readout of a charge record: the positive slot. -/
-def readout (v : M → Charge) : M → Bool := fun m => (v m).pos
+/-- The Boolean readout of a reading record: the positive slot. -/
+def readout (v : M → Reading) : M → Bool := fun m => (v m).pos
 
 /-- On a compatible family, the merge's readout agrees with each local section on its
 context. -/
@@ -518,7 +518,7 @@ context graph. -/
 theorem topfree_realizing_family_iff_coboundary [DecidableEq M] (P : ParityModel M)
     (hpairs : ∀ C, C ∈ P.scenario.contexts → ∃ i j, C = [i, j]) :
     (∃ F : Family M Bool, RealizingFamily P.toModel F ∧
-        ∀ m, Charge.isInconsistency (mergeRecord P.scenario F m) = false) ↔
+        ∀ m, Reading.isInconsistency (mergeRecord P.scenario F m) = false) ↔
       Coboundary P.scenario P.target := by
   constructor
   · rintro ⟨F, hF, htop⟩
@@ -559,9 +559,9 @@ theorem prBox_realizing_family_mints_top (F : Family PRM Bool)
     (hF : RealizingFamily prBox F) :
     1 ≤ topCount (mergeRecord prScenario F) prMeasurements := by
   refine Nat.pos_of_ne_zero (fun hzero => ?_)
-  have htopfree : ∀ m, Charge.isInconsistency (mergeRecord prScenario F m) = false := by
+  have htopfree : ∀ m, Reading.isInconsistency (mergeRecord prScenario F m) = false := by
     intro m
-    cases hinc : Charge.isInconsistency (mergeRecord prScenario F m) with
+    cases hinc : Reading.isInconsistency (mergeRecord prScenario F m) with
     | false => rfl
     | true =>
       have hpos : 0 < topCount (mergeRecord prScenario F) prMeasurements :=
@@ -687,9 +687,9 @@ theorem fig8_realizing_family_mints_top (F : Family (Fin 5) Bool)
     (hF : RealizingFamily fig8ParityModel.toModel F) :
     1 ≤ topCount (mergeRecord fig8Scenario F) fig8Measurements := by
   refine Nat.pos_of_ne_zero (fun hzero => ?_)
-  have htopfree : ∀ m, Charge.isInconsistency (mergeRecord fig8Scenario F m) = false := by
+  have htopfree : ∀ m, Reading.isInconsistency (mergeRecord fig8Scenario F m) = false := by
     intro m
-    cases hinc : Charge.isInconsistency (mergeRecord fig8Scenario F m) with
+    cases hinc : Reading.isInconsistency (mergeRecord fig8Scenario F m) with
     | false => rfl
     | true =>
       have hpos : 0 < topCount (mergeRecord fig8Scenario F) fig8Measurements :=
@@ -840,7 +840,7 @@ theorem payFamily_top_bound [DecidableEq M] (P : ParityModel M) (f : M → Bool)
 at `m`, every context containing `m` recorded the readout's value there. -/
 theorem record_eq_readout_of_consistent [DecidableEq M] (S : Scenario M)
     (F : Family M Bool) {C : List M} {m : M} (hC : C ∈ S.contexts) (hm : m ∈ C)
-    (hcon : Charge.isInconsistency (mergeRecord S F m) = false) :
+    (hcon : Reading.isInconsistency (mergeRecord S F m) = false) :
     F C m = readout (mergeRecord S F) m := by
   cases hv : F C m with
   | true =>
@@ -854,8 +854,8 @@ theorem record_eq_readout_of_consistent [DecidableEq M] (S : Scenario M)
       exfalso
       have hneg : (mergeRecord S F m).neg = true :=
         (mergeRecord_neg_iff S F m).mpr ⟨C, hC, hm, hv⟩
-      have hktop : Charge.isInconsistency (mergeRecord S F m) = true := by
-        unfold Charge.isInconsistency
+      have hktop : Reading.isInconsistency (mergeRecord S F m) = true := by
+        unfold Reading.isInconsistency
         rw [decide_eq_true_iff]
         exact (eq_kTop_iff (mergeRecord S F m)).mpr ⟨hpos, hneg⟩
       rw [hcon] at hktop
@@ -867,11 +867,11 @@ theorem top_set_covers_frustrated [DecidableEq M] (P : ParityModel M)
     (F : Family M Bool) (hF : RealizingFamily P.toModel F)
     {i j : M} (hij : [i, j] ∈ P.scenario.contexts)
     (hfr : frustratedB P (readout (mergeRecord P.scenario F)) [i, j] = true) :
-    Charge.isInconsistency (mergeRecord P.scenario F i) = true
-    ∨ Charge.isInconsistency (mergeRecord P.scenario F j) = true := by
-  by_cases hi : Charge.isInconsistency (mergeRecord P.scenario F i) = true
+    Reading.isInconsistency (mergeRecord P.scenario F i) = true
+    ∨ Reading.isInconsistency (mergeRecord P.scenario F j) = true := by
+  by_cases hi : Reading.isInconsistency (mergeRecord P.scenario F i) = true
   · exact Or.inl hi
-  · by_cases hj : Charge.isInconsistency (mergeRecord P.scenario F j) = true
+  · by_cases hj : Reading.isInconsistency (mergeRecord P.scenario F j) = true
     · exact Or.inr hj
     · exfalso
       have hri := record_eq_readout_of_consistent P.scenario F hij
@@ -916,7 +916,7 @@ theorem two_le_countP_of_two_mem {α : Type} (p : α → Bool) :
 mints, so it is free in the cover weight. -/
 theorem top_measurement_two_contexts [DecidableEq M] (S : Scenario M)
     (F : Family M Bool) (m : M)
-    (h : Charge.isInconsistency (mergeRecord S F m) = true) :
+    (h : Reading.isInconsistency (mergeRecord S F m) = true) :
     2 ≤ S.contexts.countP (fun C => decide (m ∈ C)) := by
   obtain ⟨C, hC, C', hC', hmC, hmC', hne⟩ :=
     (mergeRecord_inconsistency_iff S F m).mp h
@@ -943,9 +943,9 @@ theorem merged_support_norm [DecidableEq M] (P : ParityModel M)
     ∧ (∀ F : Family M Bool, RealizingFamily P.toModel F →
         (∀ i j, [i, j] ∈ P.scenario.contexts →
           frustratedB P (readout (mergeRecord P.scenario F)) [i, j] = true →
-          Charge.isInconsistency (mergeRecord P.scenario F i) = true
-          ∨ Charge.isInconsistency (mergeRecord P.scenario F j) = true)
-        ∧ ∀ m, Charge.isInconsistency (mergeRecord P.scenario F m) = true →
+          Reading.isInconsistency (mergeRecord P.scenario F i) = true
+          ∨ Reading.isInconsistency (mergeRecord P.scenario F j) = true)
+        ∧ ∀ m, Reading.isInconsistency (mergeRecord P.scenario F m) = true →
             2 ≤ P.scenario.contexts.countP (fun C => decide (m ∈ C))) :=
   ⟨fun f pick hpick =>
     ⟨payFamily_realizing P f pick hpairs hpick,
@@ -956,7 +956,7 @@ theorem merged_support_norm [DecidableEq M] (P : ParityModel M)
 
 /-! ## (G) The counting merge — record coefficients and the ground-state energy
 
-Hold the local outcomes as records rather than charges and merge by counting:
+Hold the local outcomes as records rather than readings and merge by counting:
 one tick per context-incidence. The total contradiction mass of the merged
 record prices the obstruction with multiplicity, and the minimum over
 realizing families is the **ground-state energy** of the target — the least
@@ -2271,9 +2271,9 @@ at least one: both sides say some incident context told true and some told
 false. The idempotent merge is the counting merge crushed to a `0/1` indicator. -/
 theorem incons_iff_one_le_topMass [DecidableEq M] (S : Scenario M) (F : Family M Bool)
     (m : M) :
-    Charge.isInconsistency (mergeRecord S F m) = true
+    Reading.isInconsistency (mergeRecord S F m) = true
       ↔ 1 ≤ Record.topMass (mergeTally S F m) := by
-  rw [Charge.isInconsistency, decide_eq_true_iff, eq_kTop_iff,
+  rw [Reading.isInconsistency, decide_eq_true_iff, eq_kTop_iff,
     mergeRecord_pos_iff, mergeRecord_neg_iff]
   unfold Record.topMass mergeTally
   constructor
@@ -2298,7 +2298,7 @@ theorem topCount_le_massSum [DecidableEq M] (S : Scenario M) (F : Family M Bool)
   unfold topCount massSum
   rw [countP_eq_sumOver_indicator]
   refine sumOver_le_sumOver _ _ ms (fun m _ => ?_)
-  cases hi : Charge.isInconsistency (mergeRecord S F m) with
+  cases hi : Reading.isInconsistency (mergeRecord S F m) with
   | false => exact Nat.zero_le _
   | true =>
     show 1 ≤ Record.topMass (mergeTally S F m)

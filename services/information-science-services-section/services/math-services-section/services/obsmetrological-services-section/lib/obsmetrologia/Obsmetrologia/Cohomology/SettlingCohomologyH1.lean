@@ -30,7 +30,7 @@ nodes:
 valuation `v` lying in the clopen's cell support `cells` (`List.countP (AssocSheaf.dT v)`).
 This is `H⁰(T*, F_U)` realized — the extent of the designated cells the settling reaches,
 exactly the corpus's "count of designated cells". We reuse `AssocSheaf.dT` (= the truth-
-side mask, = `Charge.isTruthFiring ∘ v`, = `Sheaf.designated`) and `BigradedCohomology`'s
+side mask, = `Reading.isTruthFiring ∘ v`, = `Sheaf.designated`) and `BigradedCohomology`'s
 `truthContent` pattern. `h0_is_designated_count` ties the count to `truthContent` (the
 count is nonzero iff there is truth-content) and to the `dT`/`isTruthFiring` identity.
 
@@ -52,7 +52,7 @@ unique global section". The **gluing is pointwise on disjoint designated cells**
 the common value the agreeing locals assign there (`glue` reads off the first covering
 patch's local value). Existence is this pointwise read-off; **uniqueness reuses
 `AssocSheaf.cochain_separated` / `Sheaf.separated`** — we do not re-derive vanishing
-cohomology, we reuse `Sheaf`'s `H¹ = 0` (`Charge.joinList_congr`, the CRDT/CALM form).
+cohomology, we reuse `Sheaf`'s `H¹ = 0` (`Reading.joinList_congr`, the CRDT/CALM form).
 
 ## Tie to the regime dichotomy
 
@@ -104,13 +104,13 @@ def H0 (v : Valuation) (cells : List PredicationCell) : Nat :=
 @[simp] theorem H0_nil (v : Valuation) : H0 v [] = 0 := rfl
 
 /-- **`H⁰` is the designated-cell count.** `H0 v cells` counts
-exactly the `dT`-designated cells; equivalently, it counts the `Charge.isTruthFiring`
+exactly the `dT`-designated cells; equivalently, it counts the `Reading.isTruthFiring`
 cells (`dT v φ = isTruthFiring (v φ)`), and it is **positive iff** there is truth-content
 in `cells` (`BigradedCohomology.truthContent`) — `H⁰ = 0 ⟺ no designated cell`. So `H⁰`
 is the count of the designated cells, the global section settling reaches. -/
 theorem h0_is_designated_count (v : Valuation) (cells : List PredicationCell) :
     -- the count is by the truth-side mask, which is exactly isTruthFiring
-    H0 v cells = cells.countP (fun φ => Charge.isTruthFiring (v φ))
+    H0 v cells = cells.countP (fun φ => Reading.isTruthFiring (v φ))
     -- and it is positive iff there is some designated (truth-firing) cell in the support
     ∧ (0 < H0 v cells ↔ truthContent cells v = true) := by
   refine ⟨rfl, ?_⟩

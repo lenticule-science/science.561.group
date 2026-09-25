@@ -54,7 +54,7 @@ namespace Obsmetrologia
 namespace Valuation
 namespace ModalFrame
 
-open Charge
+open Reading
 
 variable (M : ModalFrame)
 
@@ -218,19 +218,19 @@ theorem drive_monotone (u : Nat → Valuation) (seed : Valuation) {m n : Nat} (h
       subst this; exact leK_refl _
 
 /-- **The empty increment recovers the plain closure orbit.** With `u ≡ ⊥` (the empty
-increment `fun _ _ => Charge.kBot`), `drive` is exactly the closure `orbit` of §1:
+increment `fun _ _ => Reading.kBot`), `drive` is exactly the closure `orbit` of §1:
 `drive ⊥ seed n = orbit seed n`. So the increment-driven flow `F_U` extends
 the closure flow — the closure flow is `F_U` with no new evidence. (Uses
 `joinK_kBot`: joining the empty increment is the identity on the running state.) -/
 theorem drive_empty_eq_orbit (seed : Valuation) (n : Nat) :
-    drive M (fun _ _ => Charge.kBot) seed n = orbit M seed n := by
+    drive M (fun _ _ => Reading.kBot) seed n = orbit M seed n := by
   induction n with
   | zero => rfl
   | succ k ih =>
     rw [drive_succ, orbit_succ, ih]
-    have hjoin : joinK (orbit M seed k) (fun _ => Charge.kBot) = orbit M seed k := by
+    have hjoin : joinK (orbit M seed k) (fun _ => Reading.kBot) = orbit M seed k := by
       funext φ
-      show Charge.joinK (orbit M seed k φ) Charge.kBot = orbit M seed k φ
+      show Reading.joinK (orbit M seed k φ) Reading.kBot = orbit M seed k φ
       cases orbit M seed k φ <;> rfl
     rw [hjoin]
 

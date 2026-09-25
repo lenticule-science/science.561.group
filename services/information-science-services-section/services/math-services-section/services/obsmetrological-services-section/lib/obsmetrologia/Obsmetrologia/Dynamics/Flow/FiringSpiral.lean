@@ -25,7 +25,7 @@ cut, **non-trivial** (strictly increasing, unbounded winding) above it.
   family `C`: a firing indicator `fires` together with a proof `correct` that it really does
   track `NSCFiringAt le w (C n)` at every candidate stage `n`. `SpiralDatum.winding` is
   `windingCount` applied to `fires`; `SpiralDatum.isTrivial` says the winding is identically
-  zero; `SpiralDatum.isCharged` says every candidate stage fires.
+  zero; `SpiralDatum.isValued` says every candidate stage fires.
 * **`inflationStep`** — the winding count's increment across one firing stage: `0` or `1`.
 
 ## The cut-alignment theorems
@@ -63,7 +63,7 @@ These three are bundled as the headline `firing_spiral_respects_the_cut`.
    governs the growth of a *multi-letter* substitution system (a growing alphabet with a
    nontrivial substitution matrix `M` and a Perron–Frobenius eigenvalue). A single
    `Bool`-valued NSC-firing indicator has exactly one "letter" — fires or doesn't — so there is
-   no substitution matrix to read off: `windingCount`'s growth in the charged case is the
+   no substitution matrix to read off: `windingCount`'s growth in the valued case is the
    flattest possible witness, linear (`windingCount fires n = n + 1`, `windingCount_of_all_true`),
    not Pisot. Forcing a substitution-matrix reading onto it would be exactly the kind of
    "hacking"-flagged, unproven, mistaken identification §6.2 of the note already warns against
@@ -125,25 +125,25 @@ theorem windingCount_of_all_false (fires : Nat → Bool) (hfalse : ∀ n, fires 
       have ih := windingCount_of_all_false fires hfalse n
       rw [windingCount_succ_def, hfalse (n + 1), ih]; decide
 
-/-- **Charged side, one step: firing everywhere increments the winding by exactly one per
+/-- **Valued side, one step: firing everywhere increments the winding by exactly one per
 stage.** -/
 theorem windingCount_true_succ (fires : Nat → Bool) (hall : ∀ n, fires n = true) (n : Nat) :
     windingCount fires (n + 1) = windingCount fires n + 1 := by
   rw [windingCount_succ_def, hall (n + 1)]; simp
 
-/-- **Charged side, closed form: firing everywhere gives `winding n = n + 1`.** -/
+/-- **Valued side, closed form: firing everywhere gives `winding n = n + 1`.** -/
 theorem windingCount_of_all_true (fires : Nat → Bool) (hall : ∀ n, fires n = true) :
     ∀ n, windingCount fires n = n + 1
   | 0 => by rw [windingCount_zero_def, hall 0]; decide
   | (n + 1) => by
       rw [windingCount_true_succ fires hall n, windingCount_of_all_true fires hall n]
 
-/-- **Charged side is strictly monotone.** -/
+/-- **Valued side is strictly monotone.** -/
 theorem windingCount_strict_step (fires : Nat → Bool) (hall : ∀ n, fires n = true) (n : Nat) :
     windingCount fires n < windingCount fires (n + 1) := by
   rw [windingCount_true_succ fires hall n]; omega
 
-/-- **Charged side is unbounded.** -/
+/-- **Valued side is unbounded.** -/
 theorem windingCount_unbounded (fires : Nat → Bool) (hall : ∀ n, fires n = true) (N : Nat) :
     ∃ n, N ≤ windingCount fires n :=
   ⟨N, by rw [windingCount_of_all_true fires hall N]; omega⟩
@@ -209,8 +209,8 @@ def winding (D : SpiralDatum le w C) : Nat → Nat := windingCount D.fires
 defect (the geometric reading of `μ = id`). -/
 def isTrivial (D : SpiralDatum le w C) : Prop := ∀ n, D.winding n = 0
 
-/-- **A spiral datum is charged**: every candidate stage fires. -/
-def isCharged (D : SpiralDatum le w C) : Prop := ∀ n, D.fires n = true
+/-- **A spiral datum is valued**: every candidate stage fires. -/
+def isValued (D : SpiralDatum le w C) : Prop := ∀ n, D.fires n = true
 
 end SpiralDatum
 
@@ -257,34 +257,34 @@ theorem zeroSpiral_below_cut_no_gap :
   · rw [gate_eq_cohomologyVanishes]; decide
   · rw [gate_eq_cohomologyVanishes]; decide
 
-/-! ## Part 5 — the charged witness: `spikeFlow`, above the cut -/
+/-! ## Part 5 — the valued witness: `spikeFlow`, above the cut -/
 
-/-- **The charged spiral datum**: `spikeFlow`'s spiral, relative to the constant candidates —
+/-- **The valued spiral datum**: `spikeFlow`'s spiral, relative to the constant candidates —
 the firing indicator is identically `true`, correctly so by
 `RegimeCofinality.spikeFlow_fires_everywhere_on_constantCandidates`. -/
 def spikeSpiral : SpiralDatum (· ≤ ·) spikeFlow constantCandidates where
   fires := fun _ => true
   correct := fun n => ⟨fun _ => spikeFlow_fires_everywhere_on_constantCandidates n, fun _ => rfl⟩
 
-theorem spikeSpiral_charged : spikeSpiral.isCharged := fun _ => rfl
+theorem spikeSpiral_valued : spikeSpiral.isValued := fun _ => rfl
 
-/-- The closed form of the charged spiral's winding: `winding n = n + 1`. -/
+/-- The closed form of the valued spiral's winding: `winding n = n + 1`. -/
 theorem spikeSpiral_winding_eq (n : Nat) : spikeSpiral.winding n = n + 1 :=
   windingCount_of_all_true spikeSpiral.fires (fun _ => rfl) n
 
-/-- **(b) Above the cut: the charged spiral datum is genuinely non-trivial.** -/
+/-- **(b) Above the cut: the valued spiral datum is genuinely non-trivial.** -/
 theorem spikeSpiral_not_trivial : ¬ spikeSpiral.isTrivial := by
   intro h
   have h0 := h 0
   rw [spikeSpiral_winding_eq 0] at h0
   omega
 
-/-- **(b) Above the cut: the charged spiral's winding is strictly increasing.** -/
+/-- **(b) Above the cut: the valued spiral's winding is strictly increasing.** -/
 theorem spikeSpiral_strict_step (n : Nat) :
     spikeSpiral.winding n < spikeSpiral.winding (n + 1) := by
   rw [spikeSpiral_winding_eq n, spikeSpiral_winding_eq (n + 1)]; omega
 
-/-- **(b) Above the cut: the charged spiral's winding is unbounded.** -/
+/-- **(b) Above the cut: the valued spiral's winding is unbounded.** -/
 theorem spikeSpiral_unbounded (N : Nat) : ∃ n, N ≤ spikeSpiral.winding n :=
   ⟨N, by rw [spikeSpiral_winding_eq N]; omega⟩
 

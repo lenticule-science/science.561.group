@@ -98,7 +98,7 @@ of `(1, 0)` (`frame_orbit_six`, `frame_orbit_not_before_six`), declared nowhere.
 six-coordinated site's boundary loop develops closed — flat, no defect. A
 five-coordinated site is a **disclination**: its loop returns the frame rotated —
 one quantum of rotational holonomy (curvature) — and the development first closes at
-the **sixth** traversal. A seven-site carries the opposite charge: a 5–7 pair at
+the **sixth** traversal. A seven-site carries the opposite reading: a 5–7 pair at
 zero separation **annihilates** (its circuit develops to the identity), while a
 5–7 pair held at positive separation is a **dislocation** — trivial rotational
 holonomy, nonzero translational holonomy — with Burgers vector growing linearly in
@@ -176,7 +176,7 @@ theorem five_loop_frame :
 theorem seven_loop_frame : (develop (coneLoop 7) start).1 = ((0 : Int), (1 : Int)) := rfl
 
 /-- **A zero-separation 5–7 pair annihilates**: traversing both boundary loops from
-one basepoint develops to the identity — opposite charges, no residue. -/
+one basepoint develops to the identity — opposite readings, no residue. -/
 theorem five_seven_annihilate :
     develop (coneLoop 5 ++ coneLoop 7) start = start := rfl
 
@@ -548,7 +548,7 @@ theorem disclination_holonomy_quantum :
   ⟨frame_orbit_six, hex_loop_closes, five_loop_frame.2, five_loop_does_a_six.1,
     five_seven_annihilate, ⟨rfl, dipole_burgers_ne_zero⟩⟩
 
-/-! ### Charge conservation: the rotational holonomy is the turn count
+/-! ### Reading conservation: the rotational holonomy is the turn count
 
 The developed frame of a walk depends only on the walk's total turn count —
 straight segments are invisible to it. The turn counts act through the frame
@@ -556,9 +556,9 @@ orbit, on which the derived rotation has order six
 (`rotPow_six_of_frameMem` — the orbit-wide form of `frame_orbit_six`), so a
 seven-cone is one quantum of excess, a five-cone one quantum of deficit, and
 a U-turn half a frame. A dipole circuit is frame-neutral at every separation
-because its charge word cancels — deficit against excess, half-turn against
+because its reading word cancels — deficit against excess, half-turn against
 half-turn (`dipole_frame_neutral`). The slide dynamics edits only straight
-segments, so a configuration's rotational charge is invariant along the whole
+segments, so a configuration's rotational reading is invariant along the whole
 descent: `slide_collapse` discharges the translational content, while an
 unpaired five-site's quantum has no discharge along the slide — only an
 opposite cone annihilates it. -/
@@ -622,7 +622,7 @@ theorem six_mul_of_rotPow_base : ∀ n : Nat,
     obtain ⟨k, rfl⟩ := six_mul_of_rotPow_base n h
     exact ⟨k + 1, rfl⟩
 
-/-- **The frame charge of a walk is its total turn.** The developed frame
+/-- **The frame reading of a walk is its total turn.** The developed frame
 depends only on the turn sum: straight segments do not move it. -/
 theorem develop_fst_eq_rotPow_sum : ∀ (w : List Nat) (f p : Vec),
     (develop w (f, p)).1 = rotPow w.sum f
@@ -633,7 +633,7 @@ theorem develop_fst_eq_rotPow_sum : ∀ (w : List Nat) (f p : Vec),
       (rotPow_add t w.sum f).symm
 
 /-- **A based walk's frame closes exactly when its turn count is a multiple
-of six** — the rotational charge is the turn count modulo six. -/
+of six** — the rotational reading is the turn count modulo six. -/
 theorem develop_frame_closed_iff (w : List Nat) :
     (develop w start).1 = start.1 ↔ ∃ k, w.sum = 6 * k :=
   (develop_fst_eq_rotPow_sum w (1, 0) (0, 0) ▸
@@ -670,7 +670,7 @@ theorem cone_frame_closed_iff (k : Nat) :
    fun ⟨m, hm⟩ =>
     (develop_frame_closed_iff (coneLoop k)).mpr ⟨m, (coneLoop_sum k).trans hm⟩⟩
 
-/-- The frame charge composes along concatenation: the second walk's turn
+/-- The frame reading composes along concatenation: the second walk's turn
 count acts on the first walk's developed frame. -/
 theorem develop_fst_append (w₁ w₂ : List Nat) (s : State) :
     (develop (w₁ ++ w₂) s).1 = rotPow w₂.sum (develop w₁ s).1 := by
@@ -700,7 +700,7 @@ theorem coneConfig_frame_closed_iff (ks : List Nat) :
     (develop_frame_closed_iff (coneConfig ks)).mpr ⟨m, (coneConfig_sum ks).trans hm⟩⟩
 
 /-- **A dipole is frame-neutral at every separation**: its circuit preserves
-every orbit frame. The charge word cancels — the five-cone's deficit quantum
+every orbit frame. The reading word cancels — the five-cone's deficit quantum
 closes against the seven-cone's excess quantum, and the two U-turns pair to
 a full frame; the straight segments are invisible. -/
 theorem dipole_frame_neutral (sep : Nat) (p : Vec) {v : Vec} (h : FrameMem v) :
@@ -736,7 +736,7 @@ theorem config_frame_neutral : ∀ (seps : List Nat) (p : Vec) {v : Vec},
 five-site's boundary loop followed by the configuration circuit. -/
 def unpairedLoop (seps : List Nat) : List Nat := coneLoop 5 ++ configLoop seps
 
-/-- **The unpaired rotational charge is invariant along the descent**: at
+/-- **The unpaired rotational reading is invariant along the descent**: at
 every slide stage the configuration's developed frame is the five-site's
 one quantum, because the dipole remainder is frame-neutral. -/
 theorem unpaired_frame_invariant (seps : List Nat) (k : Nat) :
@@ -746,7 +746,7 @@ theorem unpaired_frame_invariant (seps : List Nat) (k : Nat) :
   exact config_frame_neutral (slideIter k seps)
     (develop (coneLoop 5) start).2 (by decide)
 
-/-- An opposite cone annihilates the unpaired charge at any separation: the
+/-- An opposite cone annihilates the unpaired reading at any separation: the
 unpaired configuration followed by a seven-site's loop is frame-closed,
 because the seven-cone's excess quantum closes the five-site's deficit. -/
 theorem seven_neutralizes_unpaired (seps : List Nat) :
@@ -762,7 +762,7 @@ theorem seven_neutralizes_unpaired (seps : List Nat) :
 
 /-- **An unpaired disclination survives the descent.** Along the slide the
 dipole configuration discharges its whole translational content
-(`slide_collapse`), while an unpaired five-site's frame charge is the same
+(`slide_collapse`), while an unpaired five-site's frame reading is the same
 one quantum at every stage and never returns the frame: the descent's
 settled value carries a conserved rotational remainder. -/
 theorem unpaired_disclination_survives_descent (seps : List Nat) :

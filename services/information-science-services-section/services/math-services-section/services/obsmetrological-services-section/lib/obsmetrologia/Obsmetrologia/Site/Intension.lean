@@ -126,14 +126,14 @@ theorem pullbackValuation_eq_self_of_claimMap_eq {C D : TermContext}
 theorem pullback_supports_profile {C D : TermContext} (F : Hom C D)
     (v : Valuation) {q : PredicationCell} {t : C.Term}
     (hsupport : ∀ q', profile D (F.termMap t) q' ->
-      Charge.isTruthFiring (v q') = true)
+      Reading.isTruthFiring (v q') = true)
     (h : profile C t q) :
-    Charge.isTruthFiring (pullbackValuation F v q) = true :=
+    Reading.isTruthFiring (pullbackValuation F v q) = true :=
   hsupport (F.claimMap q) (profile_preserved F h)
 
 /-- Pullback along term-context transport commutes with pointwise valuation closure. -/
 theorem pullbackValuation_liftOp {C D : TermContext} (F : Hom C D)
-    (c : Charge.Closure) (v : Valuation) :
+    (c : Reading.Closure) (v : Valuation) :
     pullbackValuation F (Valuation.liftOp c.op v) =
       Valuation.liftOp c.op (pullbackValuation F v) :=
   (Valuation.liftOp_c_natural c F.claimMap v).symm
@@ -221,14 +221,14 @@ structure ValuatedTermReading (C : TermContext) where
   valuation : Valuation
   /-- Every claim in the term's direct profile fires truthwise under the valuation. -/
   supports : ∀ q, TermContext.profile C reading.term q ->
-    Charge.isTruthFiring (valuation q) = true
+    Reading.isTruthFiring (valuation q) = true
 
 namespace ValuatedTermReading
 
 /-- A valuated reading supports every claim in its direct term profile. -/
 theorem supports_profile {C : TermContext} (R : ValuatedTermReading C) {q : PredicationCell}
     (h : TermContext.profile C R.reading.term q) :
-    Charge.isTruthFiring (R.valuation q) = true :=
+    Reading.isTruthFiring (R.valuation q) = true :=
   R.supports q h
 
 /-- A valuated reading still carries the local cover of its underlying term reading. -/
@@ -258,7 +258,7 @@ def restrict {C : TermContext} (R : ValuatedTermReading C) {src : SitePoint}
 theorem restrict_supports_profile {C : TermContext} (R : ValuatedTermReading C)
     {src : SitePoint} (f : FiberHom src R.reading.topic.point) {q : PredicationCell}
     (h : TermContext.profile C (restrict R f).reading.term q) :
-    Charge.isTruthFiring ((restrict R f).valuation q) = true :=
+    Reading.isTruthFiring ((restrict R f).valuation q) = true :=
   supports_profile (restrict R f) h
 
 /-- Restricting a valuated reading preserves the fiber-local cover law at the source point. -/
@@ -284,7 +284,7 @@ theorem coverRestriction_supports_profile {C : TermContext}
     (R : ValuatedTermReading C) (Ui : Site.Clopen)
     (hUi : Ui ∈ R.reading.topic.cover) {q : PredicationCell}
     (h : TermContext.profile C (coverRestriction R Ui hUi).reading.term q) :
-    Charge.isTruthFiring ((coverRestriction R Ui hUi).valuation q) = true :=
+    Reading.isTruthFiring ((coverRestriction R Ui hUi).valuation q) = true :=
   supports_profile (coverRestriction R Ui hUi) h
 
 /-- A cover-restricted valuated reading is fiber-local over the cover member. -/
@@ -309,11 +309,11 @@ theorem coverRestriction_cover_is_fiber_local {C : TermContext}
   /-- The valuation-read cell mask induced by a pairwise-Stone clopen.
 
   A clopen has a positive and negative evidence slot; a valuation gives each
-  predication cell a charge with positive and negative slots. The induced patch
+  predication cell a reading with positive and negative slots. The induced patch
   admits a cell exactly when the clopen admits at least one slot present in the cell's
-  charge. -/
+  reading. -/
   def clopenPatch (v : Valuation) (U : Site.Clopen) : PredicationCell -> Bool :=
-    fun φ => (U.1 && Charge.pos (v φ)) || (U.2 && Charge.neg (v φ))
+    fun φ => (U.1 && Reading.pos (v φ)) || (U.2 && Reading.neg (v φ))
 
   /-- Reading a valuation through a clopen join is pointwise Boolean union of the
   corresponding patches. -/
@@ -323,7 +323,7 @@ theorem coverRestriction_cover_is_fiber_local {C : TermContext}
     obtain ⟨up, un⟩ := U
     obtain ⟨vp, vn⟩ := V
     cases up <;> cases un <;> cases vp <;> cases vn <;>
-      cases hpos : Charge.pos (v φ) <;> cases hneg : Charge.neg (v φ) <;>
+      cases hpos : Reading.pos (v φ) <;> cases hneg : Reading.neg (v φ) <;>
       simp [clopenPatch, Site.join, Stone.ClopenUp.join, hpos, hneg]
 
   /-- If a cell is admitted by the valuation-read join of a finite clopen family,
@@ -452,7 +452,7 @@ def primaryValuatedReading {F : IntensionalFrame} (T : TermFamily F) (i : F.Inde
     (point : SitePoint) (h : (primaryConcept T i).extent point.q)
     (v : Valuation)
     (hsupport : ∀ q, TermContext.profile (F.context i) (T.termAt i) q ->
-      Charge.isTruthFiring (v q) = true) :
+      Reading.isTruthFiring (v q) = true) :
     ValuatedTermReading (F.context i) where
   reading := primaryReading T i point h
   valuation := v
@@ -463,7 +463,7 @@ def primaryValuatedReading {F : IntensionalFrame} (T : TermFamily F) (i : F.Inde
       (T : TermFamily F) (i : F.Index) (point : SitePoint)
       (h : (primaryConcept T i).extent point.q) (v : Valuation)
       (hsupport : ∀ q, TermContext.profile (F.context i) (T.termAt i) q ->
-      Charge.isTruthFiring (v q) = true) :
+      Reading.isTruthFiring (v q) = true) :
     (∀ Ui ∈ (primaryValuatedReading T i point h v hsupport).reading.topic.cover,
       Ui ⊑ point.U) ∧
       Site.joinList (primaryValuatedReading T i point h v hsupport).reading.topic.cover =
@@ -476,7 +476,7 @@ def primaryValuatedReading {F : IntensionalFrame} (T : TermFamily F) (i : F.Inde
       (point : SitePoint) (h : (primaryConcept T i).extent point.q)
       (v : Valuation)
       (hsupport : ∀ q, TermContext.profile (F.context i) (T.termAt i) q ->
-        Charge.isTruthFiring (v q) = true) :
+        Reading.isTruthFiring (v q) = true) :
       ValuatedTermReading.PatchFamily :=
     ValuatedTermReading.topicPatchFamily (primaryValuatedReading T i point h v hsupport)
 
@@ -485,7 +485,7 @@ def primaryValuatedReading {F : IntensionalFrame} (T : TermFamily F) (i : F.Inde
       (i : F.Index) (point : SitePoint) (h : (primaryConcept T i).extent point.q)
       (v : Valuation)
       (hsupport : ∀ q, TermContext.profile (F.context i) (T.termAt i) q ->
-        Charge.isTruthFiring (v q) = true) :
+        Reading.isTruthFiring (v q) = true) :
       ∀ φ, (primaryPatchFamily T i point h v hsupport).support φ = true ->
         ∃ p, p ∈ (primaryPatchFamily T i point h v hsupport).patches ∧ p φ = true :=
     (primaryPatchFamily T i point h v hsupport).covers_support
@@ -496,7 +496,7 @@ def primaryValuatedReading {F : IntensionalFrame} (T : TermFamily F) (i : F.Inde
       (point : SitePoint) (h : (primaryConcept T i).extent point.q)
       (v : Valuation)
       (hsupport : ∀ q, TermContext.profile (F.context i) (T.termAt i) q ->
-        Charge.isTruthFiring (v q) = true)
+        Reading.isTruthFiring (v q) = true)
       (hfull : ∀ φ, ValuatedTermReading.clopenPatch v point.U φ = true) :
       Sheaf.Cover :=
     ValuatedTermReading.topicSheafCover (primaryValuatedReading T i point h v hsupport)
@@ -544,10 +544,10 @@ def primaryValuatedReading {F : IntensionalFrame} (T : TermFamily F) (i : F.Inde
       (v : Valuation)
       (hsupport : ∀ q,
         TermContext.profile (F.context A.actual) A.term q ->
-          Charge.isTruthFiring (v q) = true) :
+          Reading.isTruthFiring (v q) = true) :
       ∀ q,
         TermContext.profile (F.context A.actual) ((A.transport A.actual).termMap A.term) q ->
-          Charge.isTruthFiring (v q) = true := by
+          Reading.isTruthFiring (v q) = true := by
     intro q hq
     exact hsupport q (by simpa [A.transport_actual_term] using hq)
 
@@ -640,7 +640,7 @@ theorem secondary_profile_preserved_at_actual {F : IntensionalFrame} (A : Anchor
       (v : Valuation)
     (hsupport : ∀ q,
       TermContext.profile (F.context i) ((A.transport i).termMap A.term) q ->
-        Charge.isTruthFiring (v q) = true) :
+        Reading.isTruthFiring (v q) = true) :
     ValuatedTermReading (F.context i) where
   reading := secondaryReading A i point h
   valuation := v
@@ -653,7 +653,7 @@ theorem secondary_profile_preserved_at_actual {F : IntensionalFrame} (A : Anchor
       (v : Valuation)
       (hsupport : ∀ q,
         TermContext.profile (F.context i) ((A.transport i).termMap A.term) q ->
-          Charge.isTruthFiring (v q) = true) :
+          Reading.isTruthFiring (v q) = true) :
       primaryValuatedReading (AnchoredTerm.termFamily A) i point h v hsupport =
         secondaryValuatedReading A i point h v hsupport :=
     rfl
@@ -664,7 +664,7 @@ theorem secondary_profile_preserved_at_actual {F : IntensionalFrame} (A : Anchor
       (h : (secondaryConcept A i).extent point.q) (v : Valuation)
       (hsupport : ∀ q,
       TermContext.profile (F.context i) ((A.transport i).termMap A.term) q ->
-        Charge.isTruthFiring (v q) = true) :
+        Reading.isTruthFiring (v q) = true) :
     (∀ Ui ∈ (secondaryValuatedReading A i point h v hsupport).reading.topic.cover,
       Ui ⊑ point.U) ∧
       Site.joinList (secondaryValuatedReading A i point h v hsupport).reading.topic.cover =
@@ -678,7 +678,7 @@ theorem secondary_profile_preserved_at_actual {F : IntensionalFrame} (A : Anchor
       (v : Valuation)
       (hsupport : ∀ q,
         TermContext.profile (F.context i) ((A.transport i).termMap A.term) q ->
-          Charge.isTruthFiring (v q) = true) :
+          Reading.isTruthFiring (v q) = true) :
       ValuatedTermReading.PatchFamily :=
   ValuatedTermReading.topicPatchFamily
     (secondaryValuatedReading A i point h v hsupport)
@@ -690,7 +690,7 @@ theorem secondary_profile_preserved_at_actual {F : IntensionalFrame} (A : Anchor
       (v : Valuation)
       (hsupport : ∀ q,
         TermContext.profile (F.context i) ((A.transport i).termMap A.term) q ->
-          Charge.isTruthFiring (v q) = true) :
+          Reading.isTruthFiring (v q) = true) :
       primaryPatchFamily (AnchoredTerm.termFamily A) i point h v hsupport =
         secondaryPatchFamily A i point h v hsupport :=
     rfl
@@ -701,7 +701,7 @@ theorem secondary_profile_preserved_at_actual {F : IntensionalFrame} (A : Anchor
       (v : Valuation)
       (hsupport : ∀ q,
         TermContext.profile (F.context i) ((A.transport i).termMap A.term) q ->
-          Charge.isTruthFiring (v q) = true) :
+          Reading.isTruthFiring (v q) = true) :
       ∀ φ, (secondaryPatchFamily A i point h v hsupport).support φ = true ->
         ∃ p, p ∈ (secondaryPatchFamily A i point h v hsupport).patches ∧ p φ = true :=
     (secondaryPatchFamily A i point h v hsupport).covers_support
@@ -713,7 +713,7 @@ theorem secondary_profile_preserved_at_actual {F : IntensionalFrame} (A : Anchor
       (v : Valuation)
       (hsupport : ∀ q,
         TermContext.profile (F.context i) ((A.transport i).termMap A.term) q ->
-          Charge.isTruthFiring (v q) = true)
+          Reading.isTruthFiring (v q) = true)
       (hfull : ∀ φ, ValuatedTermReading.clopenPatch v point.U φ = true) :
       Sheaf.Cover :=
   ValuatedTermReading.topicSheafCover
@@ -726,7 +726,7 @@ theorem secondary_profile_preserved_at_actual {F : IntensionalFrame} (A : Anchor
       (v : Valuation)
       (hsupport : ∀ q,
         TermContext.profile (F.context i) ((A.transport i).termMap A.term) q ->
-          Charge.isTruthFiring (v q) = true)
+          Reading.isTruthFiring (v q) = true)
       (hfull : ∀ φ, ValuatedTermReading.clopenPatch v point.U φ = true) :
       primarySheafCover (AnchoredTerm.termFamily A) i point h v hsupport hfull =
         secondarySheafCover A i point h v hsupport hfull :=
@@ -738,7 +738,7 @@ theorem secondary_profile_preserved_at_actual {F : IntensionalFrame} (A : Anchor
     (h : (secondaryConcept A A.actual).extent point.q) (v : Valuation)
     (hsupport : ∀ q,
       TermContext.profile (F.context i) ((A.transport i).termMap A.term) q ->
-        Charge.isTruthFiring (v q) = true) :
+        Reading.isTruthFiring (v q) = true) :
     ValuatedTermReading (F.context A.actual) where
   reading := secondaryReading A A.actual point h
   valuation := TermContext.Hom.pullbackValuation (A.transport i) v
@@ -754,7 +754,7 @@ theorem secondaryActualPullbackValuation_at_actual {F : IntensionalFrame}
     (h : (secondaryConcept A A.actual).extent point.q) (v : Valuation)
     (hsupport : ∀ q,
       TermContext.profile (F.context A.actual) ((A.transport A.actual).termMap A.term) q ->
-        Charge.isTruthFiring (v q) = true) :
+        Reading.isTruthFiring (v q) = true) :
     (secondaryActualPullbackValuatedReading A A.actual point h v hsupport).valuation = v :=
   AnchoredTerm.actual_pullbackValuation A v
 
@@ -765,7 +765,7 @@ theorem secondaryActualPullbackReading_cover_is_fiber_local
     (v : Valuation)
     (hsupport : ∀ q,
       TermContext.profile (F.context i) ((A.transport i).termMap A.term) q ->
-        Charge.isTruthFiring (v q) = true) :
+        Reading.isTruthFiring (v q) = true) :
     (∀ Ui ∈
       (secondaryActualPullbackValuatedReading A i point h v hsupport).reading.topic.cover,
       Ui ⊑ point.U) ∧
@@ -781,7 +781,7 @@ theorem secondaryActualPullbackReading_cover_is_fiber_local
       (h : (secondaryConcept A A.actual).extent point.q) (v : Valuation)
       (hsupport : ∀ q,
         TermContext.profile (F.context i) ((A.transport i).termMap A.term) q ->
-          Charge.isTruthFiring (v q) = true) :
+          Reading.isTruthFiring (v q) = true) :
       ValuatedTermReading.PatchFamily :=
     ValuatedTermReading.topicPatchFamily
       (secondaryActualPullbackValuatedReading A i point h v hsupport)
@@ -793,7 +793,7 @@ theorem secondaryActualPullbackReading_cover_is_fiber_local
       (h : (secondaryConcept A A.actual).extent point.q) (v : Valuation)
       (hsupport : ∀ q,
         TermContext.profile (F.context A.actual) ((A.transport A.actual).termMap A.term) q ->
-          Charge.isTruthFiring (v q) = true) :
+          Reading.isTruthFiring (v q) = true) :
       (secondaryActualPullbackPatchFamily A A.actual point h v hsupport).support =
         (secondaryPatchFamily A A.actual point h v hsupport).support := by
     simp [secondaryActualPullbackPatchFamily, secondaryPatchFamily,
@@ -807,7 +807,7 @@ theorem secondaryActualPullbackReading_cover_is_fiber_local
       (h : (secondaryConcept A A.actual).extent point.q) (v : Valuation)
       (hsupport : ∀ q,
         TermContext.profile (F.context A.actual) ((A.transport A.actual).termMap A.term) q ->
-          Charge.isTruthFiring (v q) = true) :
+          Reading.isTruthFiring (v q) = true) :
       (secondaryActualPullbackPatchFamily A A.actual point h v hsupport).patches =
         (secondaryPatchFamily A A.actual point h v hsupport).patches := by
     simp [secondaryActualPullbackPatchFamily, secondaryPatchFamily,
@@ -822,7 +822,7 @@ theorem secondaryActualPullbackReading_cover_is_fiber_local
       (v : Valuation)
       (hsupport : ∀ q,
         TermContext.profile (F.context i) ((A.transport i).termMap A.term) q ->
-          Charge.isTruthFiring (v q) = true) :
+          Reading.isTruthFiring (v q) = true) :
       ∀ φ,
         (secondaryActualPullbackPatchFamily A i point h v hsupport).support φ = true ->
           ∃ p,
@@ -837,7 +837,7 @@ theorem secondaryActualPullbackReading_cover_is_fiber_local
       (h : (secondaryConcept A A.actual).extent point.q) (v : Valuation)
       (hsupport : ∀ q,
         TermContext.profile (F.context i) ((A.transport i).termMap A.term) q ->
-          Charge.isTruthFiring (v q) = true)
+          Reading.isTruthFiring (v q) = true)
       (hfull : ∀ φ,
         ValuatedTermReading.clopenPatch
           (TermContext.Hom.pullbackValuation (A.transport i) v) point.U φ = true) :
@@ -863,7 +863,7 @@ theorem secondaryActualPullbackReading_cover_is_fiber_local
       (h : (secondaryConcept A A.actual).extent point.q) (v : Valuation)
       (hsupport : ∀ q,
         TermContext.profile (F.context A.actual) ((A.transport A.actual).termMap A.term) q ->
-          Charge.isTruthFiring (v q) = true)
+          Reading.isTruthFiring (v q) = true)
       (hfull : ∀ φ,
         ValuatedTermReading.clopenPatch
           (TermContext.Hom.pullbackValuation (A.transport A.actual) v) point.U φ = true) :

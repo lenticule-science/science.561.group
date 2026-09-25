@@ -31,7 +31,7 @@ $\top$ is what a value carrier buys by demanding a bound.
 The tally increment \texttt{succPos} is knowledge-inflationary and monotone,
 yet no iterate is a settling stage: \texttt{iter succPos (k+1) r $\neq$ iter
 succPos k r} for every $k$ and seed (axiom-free).
-\texttt{Charge.settles\_by\_three} fails on records: the $\kappa \le 3$
+\texttt{Reading.settles\_by\_three} fails on records: the $\kappa \le 3$
 strict-finite collapse is a boundedness artifact of the four-element carrier,
 and the $\kappa = \omega$ regime is inhabited by a derived carrier rather than
 by asserted regime data. The counterpoint \texttt{joinClosure\_one\_step}:
@@ -40,7 +40,7 @@ unboundedness of the carrier, not failure of the closure laws, is what admits
 the escaping dynamic.
 \end{theorem}
 
-\begin{theorem}[The charge is the record's shadow]\label{thm:record-charge-shadow}\lean{Obsmetrologia.Record.charge_add_eq_charge_joinK}\leanok\uses{thm:record-carrier, thm:four-bilattice}
+\begin{theorem}[The charge is the record's shadow]\label{thm:record-charge-shadow}\lean{Obsmetrologia.Record.reading_add_eq_reading_joinK}\leanok\uses{thm:record-carrier, thm:four-bilattice}
 The readout \texttt{charge} (tally positivity) is a homomorphism for all four
 lattice operations (\texttt{charge\_joinK}/\texttt{meetK}/\texttt{joinT}/%
 \texttt{meetT}), surjective and not injective, and it cannot distinguish the
@@ -52,7 +52,7 @@ shadow forgets. Contradiction mass is the matched-pair count
 mass (\texttt{topMass\_add}) where the idempotent charge join collapses it.
 \end{theorem}
 
-\begin{theorem}[The collapse is forced]\label{thm:record-collapse-forced}\lean{Obsmetrologia.Record.bottom_reflecting_hom_eq_charge}\leanok\uses{thm:record-charge-shadow}
+\begin{theorem}[The collapse is forced]\label{thm:record-collapse-forced}\lean{Obsmetrologia.Record.bottom_reflecting_hom_eq_reading}\leanok\uses{thm:record-charge-shadow}
 Any map from records to charges that preserves the four lattice operations,
 sends the empty record to $\bot_k$, and sends only the empty record to
 $\bot_k$ is the charge readout, pointwise

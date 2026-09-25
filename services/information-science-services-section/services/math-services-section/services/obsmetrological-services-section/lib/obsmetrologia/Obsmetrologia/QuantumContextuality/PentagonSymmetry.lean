@@ -4,14 +4,14 @@ The KCBS pentagon (`content/.../imaging-kcbs-pentagon`, sibling module `Measurem
 puts its five measurements on the vertices of a 5-cycle, exclusivity running along the edges.
 That cycle's symmetry group is the dihedral group of order 10, `D₅ = ⟨r, s ∣ r⁵ = s² = 1, srs =
 r⁻¹⟩`. This module builds `D₅` as a first-class carrier acting on `Fin 5` (the pentagon
-vertices), mirroring `Language.Positing.D4Gauge`'s treatment of `D₄` on `Charge`.
+vertices), mirroring `Language.Positing.D4Gauge`'s treatment of `D₄` on `Reading`.
 
 Unlike `D₄` — whose eight elements each carry independent FOUR-specific meaning (negation,
 conflation, the order-swap …) — `D₅`'s ten elements are the generic rotations and reflections of
 a cycle, so the carrier here is the semidirect-product pair `(rot, flip) : Fin 5 × Bool` rather
 than a hand-named inductive: `act ⟨k, false⟩ i = k + i` (rotate by `k`), `act ⟨k, true⟩ i = k -
 i` (reflect through the axis at `k / 2`). Every group law reduces to a finite arithmetic fact
-over `Fin 5`, decided directly (`Fin` — unlike `Charge`/`Corner` — carries a decidable-forall
+over `Fin 5`, decided directly (`Fin` — unlike `Reading`/`Corner` — carries a decidable-forall
 instance in core, so `revert … ; decide` closes each case without hand-rolled case tables).
 
 ## Main definitions

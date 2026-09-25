@@ -27,13 +27,13 @@ This module formalizes the corpus node
   frontier node `thm:bigraded-truth-knowledge-les`, which needs the cohomology groups as
   objects and the induced-map machinery this dependency-free model does not carry.
 
-## The designation grade is a charge, not a number
+## The designation grade is a reading, not a number
 
 The old grade `m ∈ \{0, 1, ≥2\}` was a `Nat` standing in for a **bilattice designation**: the
-two designated charges of the wave-3 SES. Row `0` *was* the truth charge `t` (`Charge.tTop`),
-row `1` *was* the told-both charge `⊤` (`Charge.kTop`). The faithful index is therefore the
-two-element `Designation` (`truth`/`inconsistency`), with `toCharge` exhibiting each as its
-charge. The corpus's *two-row collapse* is then the **definitional** fact that `Designation`
+two designated readings of the wave-3 SES. Row `0` *was* the truth reading `t` (`Reading.tTop`),
+row `1` *was* the told-both reading `⊤` (`Reading.kTop`). The faithful index is therefore the
+two-element `Designation` (`truth`/`inconsistency`), with `toReading` exhibiting each as its
+reading. The corpus's *two-row collapse* is then the **definitional** fact that `Designation`
 has exactly two elements (`Designation.two`) — not a theorem that a `Nat` grade vanishes above
 `1`, and there is no `Unit` "zero row" to carry.
 
@@ -80,11 +80,11 @@ namespace Bigraded
 
 open Obsmetrologia.AssocSheaf
 
-/-! ## The designation grade — a 2-element charge designation, not a number -/
+/-! ## The designation grade — a 2-element reading designation, not a number -/
 
 /-- The **designation grade** `d`: which designated sheaf a row carries. It is *not* a number
 — it is the two-element designation of the wave-3 SES: `truth` is the truth side `F_U^{(t)}`
-(charge `t`), `inconsistency` the told-both side `F_U^{(⊤)}` (charge `⊤`). The corpus's
+(reading `t`), `inconsistency` the told-both side `F_U^{(⊤)}` (reading `⊤`). The corpus's
 "two-row" bicomplex has two rows because this type has two elements, full stop. -/
 inductive Designation
   | truth
@@ -93,12 +93,12 @@ inductive Designation
 
 namespace Designation
 
-/-- The designation **is a charge**: `truth ↦ t` (`Charge.tTop`), `inconsistency ↦ ⊤`
-(`Charge.kTop`). This exhibits the designation grade as the two designated charges of the
-bilattice — the `0`/`1` of the old `Nat` grade were these charges all along. -/
-def toCharge : Designation → Charge
-  | truth => Charge.tTop
-  | inconsistency => Charge.kTop
+/-- The designation **is a reading**: `truth ↦ t` (`Reading.tTop`), `inconsistency ↦ ⊤`
+(`Reading.kTop`). This exhibits the designation grade as the two designated readings of the
+bilattice — the `0`/`1` of the old `Nat` grade were these readings all along. -/
+def toReading : Designation → Reading
+  | truth => Reading.tTop
+  | inconsistency => Reading.kTop
 
 /-- There are **exactly two** designations — the corpus's two-row collapse as a fact about the
 index type, replacing the old `m ≥ 2 ⟹ 0`. -/
@@ -110,9 +110,9 @@ theorem two (d : Designation) : d = truth ∨ d = inconsistency := by
 /-- The two designations are distinct — the two rows are two. -/
 theorem truth_ne_inconsistency : truth ≠ inconsistency := by intro h; cases h
 
-/-- The two designations carry distinct charges (`t ≠ ⊤`): the rows separate 
+/-- The two designations carry distinct readings (`t ≠ ⊤`): the rows separate 
 different bilattice content. -/
-theorem toCharge_injective {a b : Designation} (h : toCharge a = toCharge b) : a = b := by
+theorem toReading_injective {a b : Designation} (h : toReading a = toReading b) : a = b := by
   cases a <;> cases b <;> first | rfl | (exact absurd h (by decide))
 
 end Designation

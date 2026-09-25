@@ -1,5 +1,5 @@
 import Obsmetrologia.Language.Positing.BigradedCohomology
-import Obsmetrologia.Language.Positing.ChargeTactic
+import Obsmetrologia.Language.Positing.ReadingTactic
 
 /-!
 # Positing.Gauge — K₄ = ⟨∼,−⟩ ≅ ℤ/2 × ℤ/2 as a first-class group object
@@ -10,7 +10,7 @@ complemented swap), their composite `∼∘−` (`negConf`, the coordinatewise
 complement), the involution laws, the commutation `∼∘− = −∘∼`, and each
 generator's effect on the two orders. This module **packages those facts as one
 group object**: a four-element carrier `K4 = {id, neg, conf, negConf}` with a
-multiplication, an action on `Charge`, and the full group laws proven over it.
+multiplication, an action on `Reading`, and the full group laws proven over it.
 
 The corpus node — `…/pre-bilattice/content/bilattice/content/klein-four-symmetry`
 — records:
@@ -34,7 +34,7 @@ under `−`, fixed by `∼`), and order-effects: `∼` preserves `≤ₖ` / reve
 
 We give:
 
-* the carrier `K4` and its action `act : K4 → Charge → Charge` (reusing `Four`'s
+* the carrier `K4` and its action `act : K4 → Reading → Reading` (reusing `Four`'s
   `negate`/`conflate`/`negConf`);
 * the **Cayley table** `mul : K4 → K4 → K4` (4×4, by `rfl`), proven to **realize
   composition** of the action (`act_mul`);
@@ -56,7 +56,7 @@ yielding a dihedral symmetry of the twist-product) is **deferred**: it needs
 namespace Obsmetrologia
 namespace Positing.Gauge
 
-open Charge
+open Reading
 
 /-! ## The carrier `K4 = {id, neg, conf, negConf}` -/
 
@@ -79,26 +79,26 @@ namespace K4
 def all : List K4 := [id, neg, conf, negConf]
 
 theorem mem_all (g : K4) : g ∈ all := by
-  charge
+  reading
 /-- `K₄` has exactly four elements. -/
 theorem card_eq_four : all.length = 4 := rfl
 
-/-! ## The action on `Charge`
+/-! ## The action on `Reading`
 
-Each group element acts on a charge by the corresponding `Four` map. -/
+Each group element acts on a reading by the corresponding `Four` map. -/
 
-/-- The action `K4 → Charge → Charge`: `id` fixes, `neg` is `∼` (`negate`), `conf`
+/-- The action `K4 → Reading → Reading`: `id` fixes, `neg` is `∼` (`negate`), `conf`
 is `−` (`conflate`), `negConf` is `∼∘−` (`negConf`). -/
-def act : K4 → Charge → Charge
+def act : K4 → Reading → Reading
   | K4.id,      a => a
   | K4.neg,     a => negate a
   | K4.conf,    a => conflate a
-  | K4.negConf, a => Charge.negConf a
+  | K4.negConf, a => Reading.negConf a
 
-@[simp] theorem act_id (a : Charge) : act K4.id a = a := rfl
-@[simp] theorem act_neg (a : Charge) : act K4.neg a = negate a := rfl
-@[simp] theorem act_conf (a : Charge) : act K4.conf a = conflate a := rfl
-@[simp] theorem act_negConf (a : Charge) : act K4.negConf a = Charge.negConf a := rfl
+@[simp] theorem act_id (a : Reading) : act K4.id a = a := rfl
+@[simp] theorem act_neg (a : Reading) : act K4.neg a = negate a := rfl
+@[simp] theorem act_conf (a : Reading) : act K4.conf a = conflate a := rfl
+@[simp] theorem act_negConf (a : Reading) : act K4.negConf a = Reading.negConf a := rfl
 
 /-! ## The Cayley table (4×4)
 
@@ -146,31 +146,31 @@ involution and commutation laws are used. -/
 
 /-- **The action is a homomorphism.** `act (mul g h) a = act g (act h a)` — the
 Cayley table is precisely composition of the `Four` maps. -/
-theorem act_mul (g h : K4) (a : Charge) : act (mul g h) a = act g (act h a) := by
-  charge
+theorem act_mul (g h : K4) (a : Reading) : act (mul g h) a = act g (act h a) := by
+  reading
 
 /-! ## The group laws -/
 
 /-- **Left identity.** -/
 @[simp] theorem id_mul (g : K4) : mul K4.id g = g := by
-  charge
+  reading
 /-- **Right identity.** -/
 @[simp] theorem mul_id (g : K4) : mul g K4.id = g := by
-  charge
+  reading
 
 /-- **Associativity** — by exhaustion over the 64 triples. -/
 theorem mul_assoc (g h k : K4) : mul (mul g h) k = mul g (mul h k) := by
-  charge
+  reading
 
 /-- **Commutativity (abelian).** `∼` and `−` commute, so all of `K₄` does:
 `g · h = h · g`. -/
 theorem mul_comm (g h : K4) : mul g h = mul h g := by
-  charge
+  reading
 
 /-- **Every element is its own inverse** — the defining `ℤ/2 × ℤ/2` shape: each
 generator is an involution, hence each of the four squares to `id`. -/
 theorem mul_self (g : K4) : mul g g = K4.id := by
-  charge
+  reading
 
 /-- **Two-sided inverses.** Taking `g⁻¹ := g`, each element inverts itself on both
 sides — `K₄` is a group with `inv = id`. -/
@@ -194,14 +194,14 @@ theorem isGroup :
       ∧ (∀ g : K4, mul K4.id g = g ∧ mul g K4.id = g)
       ∧ (∀ g : K4, mul g g = K4.id)
       ∧ (∀ g h : K4, mul g h = mul h g)
-      ∧ (∀ (g h : K4) (a : Charge), act (mul g h) a = act g (act h a)) :=
+      ∧ (∀ (g h : K4) (a : Reading), act (mul g h) a = act g (act h a)) :=
   ⟨mul_assoc, fun g => ⟨id_mul g, mul_id g⟩, mul_self, mul_comm, act_mul⟩
 
 /-- The two generators `∼` and `−` generate the whole group: every element is `id`,
 a generator, or their product. (Trivially: that is the carrier's enumeration.) -/
 theorem generated_by_neg_conf (g : K4) :
     g = K4.id ∨ g = K4.neg ∨ g = K4.conf ∨ mul K4.neg K4.conf = g := by
-  charge
+  reading
 
 /-! ## The orbits of `K₄` on `FOUR`
 
@@ -251,26 +251,26 @@ Reusing `Four`'s `_reverses`/`_preserves` lemmas: `∼` preserves `≤ₖ` / rev
 `≤ₜ`; `−` reverses `≤ₖ` / preserves `≤ₜ`; `∼∘−` reverses both. -/
 
 /-- `neg = ∼` **preserves** the knowledge order. -/
-theorem neg_preserves_kle (a b : Charge) : KLE (act K4.neg a) (act K4.neg b) ↔ KLE a b :=
+theorem neg_preserves_kle (a b : Reading) : KLE (act K4.neg a) (act K4.neg b) ↔ KLE a b :=
   negate_preserves_kle a b
 /-- `neg = ∼` **reverses** the truth order. -/
-theorem neg_reverses_tle (a b : Charge) : TLE (act K4.neg a) (act K4.neg b) ↔ TLE b a :=
+theorem neg_reverses_tle (a b : Reading) : TLE (act K4.neg a) (act K4.neg b) ↔ TLE b a :=
   negate_reverses_tle a b
 /-- `conf = −` **reverses** the knowledge order. -/
-theorem conf_reverses_kle (a b : Charge) : KLE (act K4.conf a) (act K4.conf b) ↔ KLE b a :=
+theorem conf_reverses_kle (a b : Reading) : KLE (act K4.conf a) (act K4.conf b) ↔ KLE b a :=
   conflate_reverses_kle a b
 /-- `conf = −` **preserves** the truth order. -/
-theorem conf_preserves_tle (a b : Charge) : TLE (act K4.conf a) (act K4.conf b) ↔ TLE a b :=
+theorem conf_preserves_tle (a b : Reading) : TLE (act K4.conf a) (act K4.conf b) ↔ TLE a b :=
   conflate_preserves_tle a b
 /-- `negConf = ∼∘−` **reverses both** orders. -/
-theorem negConf_reverses_kle (a b : Charge) :
+theorem negConf_reverses_kle (a b : Reading) :
     KLE (act K4.negConf a) (act K4.negConf b) ↔ KLE b a :=
-  Charge.negConf_reverses_kle a b
-theorem negConf_reverses_tle (a b : Charge) :
+  Reading.negConf_reverses_kle a b
+theorem negConf_reverses_tle (a b : Reading) :
     TLE (act K4.negConf a) (act K4.negConf b) ↔ TLE b a :=
-  Charge.negConf_reverses_tle a b
+  Reading.negConf_reverses_tle a b
 /-- `id` preserves **both** orders — the trivial element fixes the bilattice. -/
-theorem id_preserves (a b : Charge) :
+theorem id_preserves (a b : Reading) :
     (KLE (act K4.id a) (act K4.id b) ↔ KLE a b)
       ∧ (TLE (act K4.id a) (act K4.id b) ↔ TLE a b) :=
   ⟨Iff.rfl, Iff.rfl⟩
@@ -294,7 +294,7 @@ def inGauge : K4 → Bool
 `≅ ℤ/2` of `K₄`. -/
 theorem gauge_closed (g h : K4) (hg : inGauge g = true) (hh : inGauge h = true) :
     inGauge (mul g h) = true := by
-  charge
+  reading
 
 /-- The gauge action on valuations: the nontrivial element `neg` acts as
 `negateVal`, the identity acts trivially. -/

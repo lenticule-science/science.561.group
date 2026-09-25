@@ -8,12 +8,12 @@ under-determination that is real because the carrier is measured
 (\cref{thm:charged-measured}), not an artifact of where a value happened to
 be stamped. \texttt{CValuation} abbreviates \(\texttt{PredicationCell} \to
 \texttt{Charged}\); the cones below act pointwise, cell by cell, through
-\texttt{Charge.settle} on each cell's own value.
+\texttt{Reading.settle} on each cell's own value.
 
 \begin{definition}[The unit cone: settle]\label{thm:cvaluation-settle}\lean{Obsmetrologia.CValuation.settle}\leanok\uses{thm:closure-operator, thm:settling, thm:predication}
 \(\texttt{settle}\,c\,v\) is the valuation obtained by closing each cell's
 charged value under the closure \(c\), pointwise:
-\(\varphi \mapsto \texttt{Charge.settle}\,c\,(v\,\varphi).\mathrm{value}\).
+\(\varphi \mapsto \texttt{Reading.settle}\,c\,(v\,\varphi).\mathrm{value}\).
 This is the least the evidence in \(v\) forces: no free side is raised before
 closing.
 \end{definition}

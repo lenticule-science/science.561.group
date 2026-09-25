@@ -158,10 +158,10 @@ theorem hat_not_golden_quadratic :
 def hatMetatileChu : ChuSpace where
   pts := Fin 4
   sts := Fin 4
-  r := fun i j => Charge.ofSlots ((hatMetatileSubst i).count j != 0) false
+  r := fun i j => Reading.ofSlots ((hatMetatileSubst i).count j != 0) false
 
 /-- **The hat metatile matrix is the `pos`-incidence of its Chu `r`**: the entry is nonzero exactly
-where the FOUR relation carries positive charge (unlike Fibonacci and Padovan, the counts exceed
+where the FOUR relation carries positive reading (unlike Fibonacci and Padovan, the counts exceed
 `1`, so the incidence is the support of the matrix, not the matrix itself). -/
 theorem hatMetatileMatrix_chu_incidence :
     ∀ (i j : Fin 4), (if (hatMetatileChu.r i j).pos then (1 : Int) else 0)

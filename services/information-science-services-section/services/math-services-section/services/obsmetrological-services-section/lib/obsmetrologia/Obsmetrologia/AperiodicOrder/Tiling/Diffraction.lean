@@ -46,9 +46,9 @@ event.
 * `finiteDiffractionDecomposition_mass` decomposes total finite mass into the
   pure-point, singular-continuous, and absolutely-continuous component counts.
 * `finite_diffraction_classifier_agreement` records the finite agreement of the
-  charge, closure-regime, Pisot/Salem, and `H¹` witnesses.
+  reading, closure-regime, Pisot/Salem, and `H¹` witnesses.
 * `phaseType_readings_agree` proves the single finite/predictor-level phase map
-  shared by the current diffraction, charge, Pisot/Salem, and closure readings.
+  shared by the current diffraction, reading, Pisot/Salem, and closure readings.
 * `finiteFourierDual_color_readout` lifts the predictor-level color split to a
   finite measured spectral readout: Pisot is pure-point, Salem is
   singular-continuous, and the Salem component carries the trace-localized line.
@@ -222,8 +222,8 @@ theorem finiteDiffractionDecomposition_mass {Ω : Type}
 
 /-! ## Agreement with the existing classifiers -/
 
-/-- The finite diffraction component read from the four-valued charge regime. -/
-def chargeDiffractionKind : Regime → FiniteDiffractionKind
+/-- The finite diffraction component read from the four-valued reading regime. -/
+def readingDiffractionKind : Regime → FiniteDiffractionKind
   | .consistent => .purePoint
   | .paraconsistent => .singularContinuous
   | .mixed => .absolutelyContinuous
@@ -236,18 +236,18 @@ def closureDiffractionKind : ClosureRegime → FiniteDiffractionKind
   | .transfiniteBounded => .absolutelyContinuous
   | .aperiodic => .singularContinuous
 
-/-- The consistent charge face reads as finite pure-point. -/
+/-- The consistent reading face reads as finite pure-point. -/
 theorem regimeOf_purePoint :
-    chargeDiffractionKind (regimeOf true false) = FiniteDiffractionKind.purePoint := rfl
+    readingDiffractionKind (regimeOf true false) = FiniteDiffractionKind.purePoint := rfl
 
-/-- The paraconsistent charge face reads as finite singular-continuous. -/
+/-- The paraconsistent reading face reads as finite singular-continuous. -/
 theorem regimeOf_singularContinuous :
-    chargeDiffractionKind (regimeOf false true) =
+    readingDiffractionKind (regimeOf false true) =
       FiniteDiffractionKind.singularContinuous := rfl
 
-/-- The mixed charge face reads as finite absolutely-continuous. -/
+/-- The mixed reading face reads as finite absolutely-continuous. -/
 theorem regimeOf_absolutelyContinuous :
-    chargeDiffractionKind (regimeOf true true) =
+    readingDiffractionKind (regimeOf true true) =
       FiniteDiffractionKind.absolutelyContinuous := rfl
 
 /-- The Pisot side of the StepN split reads as finite pure-point. -/
@@ -283,13 +283,13 @@ theorem aperiodicWitness_singularContinuous :
       aperiodicWitness.clInv ≠ H1Class.zero := by
   exact ⟨rfl, aperiodicWitness_clinv_nonzero⟩
 
-/-- The finite diffraction classifier agrees with the already-proved charge,
+/-- The finite diffraction classifier agrees with the already-proved reading,
 closure-regime, Pisot/Salem, and `H¹` witnesses. -/
 theorem finite_diffraction_classifier_agreement :
-    chargeDiffractionKind (regimeOf true false) = FiniteDiffractionKind.purePoint ∧
-      chargeDiffractionKind (regimeOf false true) =
+    readingDiffractionKind (regimeOf true false) = FiniteDiffractionKind.purePoint ∧
+      readingDiffractionKind (regimeOf false true) =
         FiniteDiffractionKind.singularContinuous ∧
-        chargeDiffractionKind (regimeOf true true) =
+        readingDiffractionKind (regimeOf true true) =
           FiniteDiffractionKind.absolutelyContinuous ∧
           closureDiffractionKind (StepN.inflationRegime false) =
             FiniteDiffractionKind.purePoint ∧
@@ -357,7 +357,7 @@ theorem phaseType_nontrivial (s : PhaseSubstitution) :
     (by cases s <;> decide)
 
 /-- The current finite/predictor-level phase map is the common value of the
-finite diffraction component, bigraded charge, Pisot/Salem scaling, and
+finite diffraction component, bigraded reading, Pisot/Salem scaling, and
 closure-regime readings. -/
 theorem phaseType_readings_agree (s : PhaseSubstitution) :
     (lebesgueType (phaseDiffractionComponent s) = phaseType s)

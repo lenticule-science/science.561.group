@@ -1,6 +1,6 @@
 import Obsmetrologia.Calculus.Order.ResiduatedLatticeStandalone
 import Obsmetrologia.Language.Positing.Four
-import Obsmetrologia.Language.Positing.ChargeTactic
+import Obsmetrologia.Language.Positing.ReadingTactic
 
 /-!
 # TwistProductResiduation — the twist product `L^⊲` and `FOUR = Two^⊲`
@@ -43,8 +43,8 @@ two-coordinate `⟨a₊,a₋⟩` description is the universal one. Specializing 
 `L = Two` (the Boolean residuated lattice, `Obsmetrologia.Order.Two`) recovers the
 smallest non-trivial interlaced bilattice **FOUR** `:= TwistProduct Two`, with the
 four elements `⟨0,0⟩ = ⊥ₖ`, `⟨1,0⟩ = t`, `⟨0,1⟩ = f`, `⟨1,1⟩ = ⊤ₖ`. This module
-proves the already-built `Obsmetrologia.Charge` (= `Articulating.Corner`, the FOUR bilattice of the
-spine) **is** `TwistProduct Two`: the map `⟨a,b⟩ ↦ Charge.ofSlots a b` is an
+proves the already-built `Obsmetrologia.Reading` (= `Articulating.Corner`, the FOUR bilattice of the
+spine) **is** `TwistProduct Two`: the map `⟨a,b⟩ ↦ Reading.ofSlots a b` is an
 order-iso for both `≤ₖ` and `≤ₜ`, settled by `decide` over the finite carrier.
 -/
 
@@ -313,11 +313,11 @@ The corpus remark: `⟨1,1⟩ ≠ ⟨1,0⟩ = ⊤ₜ` in general, so `⟨L², �
 
 end TwistProduct
 
-/-! ## `FOUR := TwistProduct Two` and the iso `FOUR ≅ Charge`
+/-! ## `FOUR := TwistProduct Two` and the iso `FOUR ≅ Reading`
 
 Specializing to the Boolean residuated lattice `Two`, the twist-product carrier is
 `Bool × Bool`. We name it `FOUR` and identify it with the spine's already-built
-bilattice of charges `Charge` (= `Articulating.Corner`) via `⟨a,b⟩ ↦ Charge.ofSlots a b`. -/
+bilattice of readings `Reading` (= `Articulating.Corner`) via `⟨a,b⟩ ↦ Reading.ofSlots a b`. -/
 
 /-- **FOUR** — the twist product of the Boolean residuated lattice `Two`. Carrier
 `Bool × Bool`; this *is* the smallest non-trivial interlaced bilattice. -/
@@ -343,29 +343,29 @@ theorem four_elements (x : FOUR) :
   obtain ⟨p, n⟩ := x
   cases p <;> cases n <;> simp [kBot4, tTop4, tBot4, kTop4]
 
-/-- The forward map `FOUR → Charge`, `⟨a,b⟩ ↦ ofSlots a b` (positive→pos, negative→neg). -/
-def toCharge (x : FOUR) : Charge := Charge.ofSlots x.1 x.2
-/-- The inverse `Charge → FOUR`, `c ↦ ⟨c.pos, c.neg⟩`. -/
-def ofCharge (c : Charge) : FOUR := (c.pos, c.neg)
+/-- The forward map `FOUR → Reading`, `⟨a,b⟩ ↦ ofSlots a b` (positive→pos, negative→neg). -/
+def toReading (x : FOUR) : Reading := Reading.ofSlots x.1 x.2
+/-- The inverse `Reading → FOUR`, `c ↦ ⟨c.pos, c.neg⟩`. -/
+def ofReading (c : Reading) : FOUR := (c.pos, c.neg)
 
-/-- **The bijection `FOUR ≅ Charge`.** Both round-trips are identities (`decide` over
+/-- **The bijection `FOUR ≅ Reading`.** Both round-trips are identities (`decide` over
 the finite carriers). -/
-def chargeBij : Bij FOUR Charge where
-  to := toCharge
-  inv := ofCharge
-  left := fun a => by obtain ⟨p, n⟩ := a; charge
-  right := fun c => by charge
+def readingBij : Bij FOUR Reading where
+  to := toReading
+  inv := ofReading
+  left := fun a => by obtain ⟨p, n⟩ := a; reading
+  right := fun c => by reading
 
-/-- The four elements map to the four named charges:
+/-- The four elements map to the four named readings:
 `⟨0,0⟩ ↦ ⊥ₖ`, `⟨1,0⟩ ↦ t`, `⟨0,1⟩ ↦ f`, `⟨1,1⟩ ↦ ⊤ₖ`. -/
-theorem toCharge_table :
-    toCharge kBot4 = Charge.kBot ∧ toCharge tTop4 = Charge.tTop
-      ∧ toCharge tBot4 = Charge.tBot ∧ toCharge kTop4 = Charge.kTop :=
+theorem toReading_table :
+    toReading kBot4 = Reading.kBot ∧ toReading tTop4 = Reading.tTop
+      ∧ toReading tBot4 = Reading.tBot ∧ toReading kTop4 = Reading.kTop :=
   ⟨rfl, rfl, rfl, rfl⟩
 
 /-! ### The iso is an order-iso for **both** orders
 
-`FOUR`'s `≤ₖ`/`≤ₜ` (the twist orders over `Two`) match `Charge`'s `KLE`/`TLE`
+`FOUR`'s `≤ₖ`/`≤ₜ` (the twist orders over `Two`) match `Reading`'s `KLE`/`TLE`
 under the bijection — settled by `decide` over the 16 element pairs. This is the
 content of `FOUR ≅ Two^⊲` as **bilattices**, not just sets. -/
 
@@ -375,51 +375,51 @@ theorem twoLe_iff (x y : Bool) : ResiduatedLattice.le Two x y ↔ ((!x) || y) = 
   show Two.meet x y = x ↔ _
   cases x <;> cases y <;> simp [Two]
 
-/-- **Knowledge order matches.** `a ≤ₖ b` in FOUR `⟺` `KLE (toCharge a) (toCharge b)`. -/
-theorem toCharge_kle (a b : FOUR) :
-    TwistProduct.leK a b ↔ Charge.KLE (toCharge a) (toCharge b) := by
+/-- **Knowledge order matches.** `a ≤ₖ b` in FOUR `⟺` `KLE (toReading a) (toReading b)`. -/
+theorem toReading_kle (a b : FOUR) :
+    TwistProduct.leK a b ↔ Reading.KLE (toReading a) (toReading b) := by
   obtain ⟨p1, n1⟩ := a; obtain ⟨p2, n2⟩ := b
   show (ResiduatedLattice.le Two p1 p2 ∧ ResiduatedLattice.le Two n1 n2) ↔ _
   rw [twoLe_iff, twoLe_iff]
-  charge
+  reading
 
-/-- **Truth order matches.** `a ≤ₜ b` in FOUR `⟺` `TLE (toCharge a) (toCharge b)`. -/
-theorem toCharge_tle (a b : FOUR) :
-    TwistProduct.leT a b ↔ Charge.TLE (toCharge a) (toCharge b) := by
+/-- **Truth order matches.** `a ≤ₜ b` in FOUR `⟺` `TLE (toReading a) (toReading b)`. -/
+theorem toReading_tle (a b : FOUR) :
+    TwistProduct.leT a b ↔ Reading.TLE (toReading a) (toReading b) := by
   obtain ⟨p1, n1⟩ := a; obtain ⟨p2, n2⟩ := b
   show (ResiduatedLattice.le Two p1 p2 ∧ ResiduatedLattice.le Two n2 n1) ↔ _
   rw [twoLe_iff, twoLe_iff]
-  charge
+  reading
 
 /-! ### Negation and the bilattice operations match the spine
 
-`FOUR`'s twist negation/meets/joins (over `Two`) coincide with `Charge.negate`,
-`Charge.meetK/joinK/meetT/joinT` under `toCharge` — the already-built FOUR bilattice
+`FOUR`'s twist negation/meets/joins (over `Two`) coincide with `Reading.negate`,
+`Reading.meetK/joinK/meetT/joinT` under `toReading` — the already-built FOUR bilattice
 **is** `TwistProduct Two`, operation by operation. All `decide`. -/
 
-theorem toCharge_neg (a : FOUR) :
-    toCharge (TwistProduct.neg a) = Charge.negate (toCharge a) := by
-  obtain ⟨p, n⟩ := a; charge
+theorem toReading_neg (a : FOUR) :
+    toReading (TwistProduct.neg a) = Reading.negate (toReading a) := by
+  obtain ⟨p, n⟩ := a; reading
 
-theorem toCharge_meetK (a b : FOUR) :
-    toCharge (TwistProduct.meetK a b) = Charge.meetK (toCharge a) (toCharge b) := by
+theorem toReading_meetK (a b : FOUR) :
+    toReading (TwistProduct.meetK a b) = Reading.meetK (toReading a) (toReading b) := by
   obtain ⟨p1, n1⟩ := a; obtain ⟨p2, n2⟩ := b
-  charge
+  reading
 
-theorem toCharge_joinK (a b : FOUR) :
-    toCharge (TwistProduct.joinK a b) = Charge.joinK (toCharge a) (toCharge b) := by
+theorem toReading_joinK (a b : FOUR) :
+    toReading (TwistProduct.joinK a b) = Reading.joinK (toReading a) (toReading b) := by
   obtain ⟨p1, n1⟩ := a; obtain ⟨p2, n2⟩ := b
-  charge
+  reading
 
-theorem toCharge_meetT (a b : FOUR) :
-    toCharge (TwistProduct.meetT a b) = Charge.meetT (toCharge a) (toCharge b) := by
+theorem toReading_meetT (a b : FOUR) :
+    toReading (TwistProduct.meetT a b) = Reading.meetT (toReading a) (toReading b) := by
   obtain ⟨p1, n1⟩ := a; obtain ⟨p2, n2⟩ := b
-  charge
+  reading
 
-theorem toCharge_joinT (a b : FOUR) :
-    toCharge (TwistProduct.joinT a b) = Charge.joinT (toCharge a) (toCharge b) := by
+theorem toReading_joinT (a b : FOUR) :
+    toReading (TwistProduct.joinT a b) = Reading.joinT (toReading a) (toReading b) := by
   obtain ⟨p1, n1⟩ := a; obtain ⟨p2, n2⟩ := b
-  charge
+  reading
 
 /-- **FOUR is non-integral.** The monoidal unit `⟨1,1⟩` is *not* the truth-top
 `⟨1,0⟩` — witnessed on `Two`, the smallest case. This is the corpus remark made
@@ -430,16 +430,16 @@ theorem unit_ne_tTop : (TwistProduct.one : FOUR) ≠ TwistProduct.tTop (R := Two
   have : (true : Bool) = false := congrArg Prod.snd h
   exact Bool.noConfusion this
 
-/-- **The full FOUR iso.** `toCharge`/`ofCharge` is a bijection carrying both twist
-orders to `Charge`'s `KLE`/`TLE` and the negation to `Charge.negate`: the spine's
+/-- **The full FOUR iso.** `toReading`/`ofReading` is a bijection carrying both twist
+orders to `Reading`'s `KLE`/`TLE` and the negation to `Reading.negate`: the spine's
 FOUR bilattice **is** `TwistProduct Two`, as bilattices. -/
 theorem four_is_twist_two :
-    (∀ a : FOUR, ofCharge (toCharge a) = a)
-      ∧ (∀ c : Charge, toCharge (ofCharge c) = c)
-      ∧ (∀ a b : FOUR, TwistProduct.leK a b ↔ Charge.KLE (toCharge a) (toCharge b))
-      ∧ (∀ a b : FOUR, TwistProduct.leT a b ↔ Charge.TLE (toCharge a) (toCharge b))
-      ∧ (∀ a : FOUR, toCharge (TwistProduct.neg a) = Charge.negate (toCharge a)) :=
-  ⟨chargeBij.left, chargeBij.right, toCharge_kle, toCharge_tle, toCharge_neg⟩
+    (∀ a : FOUR, ofReading (toReading a) = a)
+      ∧ (∀ c : Reading, toReading (ofReading c) = c)
+      ∧ (∀ a b : FOUR, TwistProduct.leK a b ↔ Reading.KLE (toReading a) (toReading b))
+      ∧ (∀ a b : FOUR, TwistProduct.leT a b ↔ Reading.TLE (toReading a) (toReading b))
+      ∧ (∀ a : FOUR, toReading (TwistProduct.neg a) = Reading.negate (toReading a)) :=
+  ⟨readingBij.left, readingBij.right, toReading_kle, toReading_tle, toReading_neg⟩
 
 end FOUR
 

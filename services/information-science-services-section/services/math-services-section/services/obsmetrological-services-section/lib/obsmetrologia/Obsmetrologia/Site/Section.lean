@@ -47,7 +47,7 @@ do not re-derive vanishing cohomology; we tie the masked-cochain sheaf to the ex
 namespace Obsmetrologia
 namespace AssocSheaf
 
-open Obsmetrologia.Charge
+open Obsmetrologia.Reading
 
 /-! ## Cochains — the free ℤ-module on the cell base
 
@@ -64,7 +64,7 @@ def zeroCochain : Cochain := fun _ => 0
 
 /-! ## The designation masks (from the disjoint split `Δ⁺ = Δ⁺ᵗ ⊔ Δ⁺ᵀ`)
 
-A **mask** picks, per valuation, the cells whose settled charge is designated. The three
+A **mask** picks, per valuation, the cells whose settled reading is designated. The three
 masks are the truth side `{t}`, the paraconsistent side `{t, ⊤}`, and the `⊤`-only
 cokernel side. -/
 
@@ -72,7 +72,7 @@ cokernel side. -/
 def Mask : Type := Valuation → PredicationCell → Bool
 
 /-- **Truth-side mask** `dT` — designated = `{t}`. `F_U = ℤ^{dT}` is the
-settling-associated sheaf. (Agrees with `Charge.isTruthFiring` and `Sheaf.designated`.) -/
+settling-associated sheaf. (Agrees with `Reading.isTruthFiring` and `Sheaf.designated`.) -/
 def dT : Mask := fun v φ => decide (v φ = tTop)
 
 /-- **Paraconsistent (knowledge-side) mask** `dK` — designated = `{t, ⊤}`. `F_U^{(k)} =
@@ -81,12 +81,12 @@ def dK : Mask := fun v φ => decide (v φ = tTop ∨ v φ = kTop)
 
 /-- **`⊤`-only mask** `dTop` — designated = `{⊤}`. `F_U^{(⊤)} = ℤ^{dTop}` is the
 cokernel, the "told both" inconsistency increments. (Agrees with
-`Charge.isInconsistency`.) -/
+`Reading.isInconsistency`.) -/
 def dTop : Mask := fun v φ => decide (v φ = kTop)
 
 /-! ### Disjointness and union of the masks (the `Δ⁺ = Δ⁺ᵗ ⊔ Δ⁺ᵀ` split) -/
 
-/-- **Disjointness of the split.** No charge is both a `t`-designation and a `⊤`-
+/-- **Disjointness of the split.** No reading is both a `t`-designation and a `⊤`-
 designation (`tTop ≠ kTop`): `dT` and `dTop` are pointwise disjoint. -/
 theorem dT_dTop_disjoint (v : Valuation) (φ : PredicationCell) :
     ¬(dT v φ = true ∧ dTop v φ = true) := by
@@ -165,7 +165,7 @@ theorem restrict_of_vanishes (m m' : PredicationCell → Bool) (c : Cochain)
 The settling-associated sheaf's gluing/separation is inherited from the underlying
 settling `Sheaf` (the `{base, section}` sheaf with `H¹ = 0` in the strict regime). We
 reuse `Sheaf.separated`: a masked cochain that is determined on a cover is determined
-globally; and `Charge.joinList_congr` (the `H¹ = 0` CRDT form) for the section merge. -/
+globally; and `Reading.joinList_congr` (the `H¹ = 0` CRDT form) for the section merge. -/
 
 /-- **Cochain separation (sheaf condition, injectivity half) — reuses the cover from
 `Sheaf`.** Two `m`-supported cochains that agree on every patch of a cover (wherever the
@@ -178,11 +178,11 @@ theorem cochain_separated (c : Sheaf.Cover) (a b : Cochain)
   exact h p hp φ hpφ
 
 /-- **Gluing reuses `Sheaf`'s `H¹ = 0`.** The settling-associated sheaf's section merge
-is order/multiplicity-independent — exactly `Charge.joinList_congr` (`H¹ = 0`, the
+is order/multiplicity-independent — exactly `Reading.joinList_congr` (`H¹ = 0`, the
 CRDT/CALM form) — so we re-export it rather than re-deriving vanishing cohomology. -/
-theorem gluing_h1_zero (l l' : List Charge) (h : ∀ a, a ∈ l ↔ a ∈ l') :
-    Charge.joinList l = Charge.joinList l' :=
-  Charge.joinList_congr l l' h
+theorem gluing_h1_zero (l l' : List Reading) (h : ∀ a, a ∈ l ↔ a ∈ l') :
+    Reading.joinList l = Reading.joinList l' :=
+  Reading.joinList_congr l l' h
 
 /-! ## The settling-associated sheaf `F_U`
 
@@ -197,9 +197,9 @@ the mask `dT`. It is a **presheaf** on the bitopological settling site:
 * (presheaf identity) restriction by the full mask `U` is the identity;
 * (presheaf composition) restriction along `U₂ ⊆ U₁ ⊆ U` composes to the meet mask;
 * (designated support) the support is exactly the truth-designated cells `dT v`, which
-  is `Charge.isTruthFiring ∘ v` and agrees with `Sheaf.designated`;
+  is `Reading.isTruthFiring ∘ v` and agrees with `Sheaf.designated`;
 * (sheaf / gluing) it **glues** — sections are determined on a cover (`cochain_separated`)
-  and the merge is unobstructed, reusing `Sheaf`'s `H¹ = 0` (`Charge.joinList_congr`). -/
+  and the merge is unobstructed, reusing `Sheaf`'s `H¹ = 0` (`Reading.joinList_congr`). -/
 theorem settling_associated_sheaf :
     -- (restriction lands in the masked free module)
     (∀ (m : PredicationCell → Bool) (c : Cochain), Vanishes m (restrict m c))
@@ -210,17 +210,17 @@ theorem settling_associated_sheaf :
         restrict m₂ (restrict m₁ c) = restrict (fun φ => m₂ φ && m₁ φ) c)
     -- (the support is the truth-designated cells, = isTruthFiring, = Sheaf.designated)
     ∧ (∀ (v : Valuation) (φ : PredicationCell),
-        dT v φ = Charge.isTruthFiring (v φ)
+        dT v φ = Reading.isTruthFiring (v φ)
           ∧ (dT v φ = true ↔ Sheaf.designated ⟨v⟩ φ))
     -- (sheaf separation — gluing is determined on a cover, reusing H¹ = 0)
     ∧ (∀ (c : Sheaf.Cover) (a b : Cochain),
         (∀ p, p ∈ c.patches → ∀ φ, p φ = true → a φ = b φ) → a = b)
     -- (H¹ = 0 reused from Sheaf — the unobstructed section merge)
-    ∧ (∀ (l l' : List Charge), (∀ a, a ∈ l ↔ a ∈ l') →
-        Charge.joinList l = Charge.joinList l') :=
+    ∧ (∀ (l l' : List Reading), (∀ a, a ∈ l ↔ a ∈ l') →
+        Reading.joinList l = Reading.joinList l') :=
   ⟨restrict_vanishes, restrict_id, restrict_comp,
     fun v φ => ⟨rfl, by
-      show decide (v φ = tTop) = true ↔ ((⟨v⟩ : Sheaf).section_ φ = Charge.tTop)
+      show decide (v φ = tTop) = true ↔ ((⟨v⟩ : Sheaf).section_ φ = Reading.tTop)
       rw [decide_eq_true_iff]⟩,
     cochain_separated, gluing_h1_zero⟩
 

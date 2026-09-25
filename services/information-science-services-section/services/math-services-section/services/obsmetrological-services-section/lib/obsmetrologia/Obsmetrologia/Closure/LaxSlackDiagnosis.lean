@@ -3,12 +3,12 @@ import Obsmetrologia.Closure.Monad.KZ
 /-!
 # The lax-idempotence slack is exactly antisymmetry failure
 
-The contradiction-dynamics frontier (a stable "told-both" `⊤` charge, the non-settling aperiodic
+The contradiction-dynamics frontier (a stable "told-both" `⊤` reading, the non-settling aperiodic
 regime, the continuum that accretes from it) all need the closure 2-monad's multiplication `μ` to
 be a *non-identity 2-cell* — the **lax slack** `Cl(Cl v) <ₖ Cl v` with `Cl(Cl v) ≠ Cl v`.
 `Closure2MonadKZ` records that over the corpus's value carriers this slack collapses: on the
 *antisymmetric* knowledge order, the Kock–Zöberlein inequality forces strict idempotence
-(`Charge.kz_iff_strict`, `closureOp_kz_iff_strict`). This module isolates **why**: it abstracts the
+(`Reading.kz_iff_strict`, `closureOp_kz_iff_strict`). This module isolates **why**: it abstracts the
 collapse away from any particular order and shows the obstruction is *exactly antisymmetry*.
 
 ## Main results
@@ -27,7 +27,7 @@ collapse away from any particular order and shows the obstruction is *exactly an
 ## Implementation notes
 
 The abstract lemmas take the order as a bare relation `le` with antisymmetry / reflexivity / the
-inflation law as hypotheses; they are the order-parametric form of `Charge.kz_iff_strict`, which
+inflation law as hypotheses; they are the order-parametric form of `Reading.kz_iff_strict`, which
 bakes the (antisymmetric) knowledge order in. Nothing here introduces data — the abstract facts are
 one-line term proofs and the concrete instance reuses `closureOp_idem`.
 
@@ -78,7 +78,7 @@ theorem lax_slack_witnesses_antisymmetry_failure {α : Type} (le : α → α →
 namespace Valuation
 namespace ModalFrame
 
-open Charge
+open Reading
 
 variable (M : ModalFrame)
 

@@ -20,7 +20,7 @@ and a 1-cochain is an edge-value field — a discrete covector field. So:
   at it is in the wavefront — the discrete `WF(u) ↠ sing-supp(u)`;
 * the wavefront is the **edge-support of the `cl-inv` cochain**: `φ` at a generator edge is the
   cl-inv coordinate (the `H1Carrier.clInv = ⟨cochain gen⟩` shape of the classification rewire), so a
-  nonzero cl-inv forces a wavefront point, hence a singularity at its base — cohomological charge
+  nonzero cl-inv forces a wavefront point, hence a singularity at its base — cohomological reading
   *is* cotangent microlocal data.
 
 A **bridge, not an identity** with smooth microlocal sheaf theory: there is no symplectic cotangent
@@ -109,7 +109,7 @@ wavefront — the projection `π(WF)` of the wavefront to the base. -/
 def SingSupport (φ : EdgeCochain C) : E → Prop :=
   fun e => ∃ ξ : Codir C, codSource C ξ = e ∧ Wavefront C φ ξ
 
-/-! ## (C) The base projection and the charge bridge -/
+/-! ## (C) The base projection and the reading bridge -/
 
 /-- **Base singular support is the projection of the wavefront** (`sing-supp = π(WF)`): an event is
 singular exactly when some wavefront codirection sits over it. The cotangent layer determines the
@@ -117,7 +117,7 @@ base layer by forgetting the codirection. -/
 theorem singSupport_iff_projection (φ : EdgeCochain C) (e : E) :
     SingSupport C φ e ↔ ∃ ξ : Codir C, codSource C ξ = e ∧ φ ξ ≠ 0 := Iff.rfl
 
-/-- The wavefront is empty iff the cochain vanishes identically (no codirection carries charge). -/
+/-- The wavefront is empty iff the cochain vanishes identically (no codirection carries reading). -/
 theorem wavefront_empty_iff_zero (φ : EdgeCochain C) :
     (∀ ξ, ¬ Wavefront C φ ξ) ↔ φ = fun _ => 0 := by
   constructor
@@ -143,13 +143,13 @@ theorem wavefront_empty_coboundary (φ : EdgeCochain C) (h : ∀ ξ, ¬ Wavefron
 
 /-- **Nonzero `cl-inv` forces a wavefront point.** A nonzero value of `φ` at a generator codirection
 `gen` — the `cl-inv` coordinate, mirroring `H1Carrier.clInv = ⟨cochain gen⟩` — *is* membership of
-`gen` in the wavefront. Cohomological charge is a cotangent microlocal datum, by definition. -/
+`gen` in the wavefront. Cohomological reading is a cotangent microlocal datum, by definition. -/
 theorem clinv_nonzero_wavefront (φ : EdgeCochain C) (gen : Codir C) (h : φ gen ≠ 0) :
     Wavefront C φ gen := h
 
 /-- **Nonzero `cl-inv` forces a singularity at its base.** If the cl-inv coordinate `φ gen` is
 nonzero, the event at the base of the generator edge is in the singular support — the cohomological
-charge projects to a base singularity. This is the cl-inv ⟹ wavefront ⟹ sing-supp chain: a
+reading projects to a base singularity. This is the cl-inv ⟹ wavefront ⟹ sing-supp chain: a
 nontrivial class cannot have empty singular support. -/
 theorem clinv_nonzero_singular (φ : EdgeCochain C) (gen : Codir C) (h : φ gen ≠ 0) :
     SingSupport C φ (codSource C gen) :=
@@ -166,7 +166,7 @@ theorem clinv_nonzero_singular (φ : EdgeCochain C) (gen : Codir C) (h : φ gen 
 * **empty wavefront ⟹ trivial class** — no singular codirections means the cochain is a coboundary
   (`wavefront_empty_coboundary`);
 * **cl-inv ⟹ singularity** — a nonzero cl-inv coordinate at a generator forces a base singularity
-  (`clinv_nonzero_singular`): cohomological charge *is* cotangent microlocal data.
+  (`clinv_nonzero_singular`): cohomological reading *is* cotangent microlocal data.
 
 A bridge, not an identity: the symplectic bicharacteristic flow stays frontier. -/
 theorem cotangent_microsupport :

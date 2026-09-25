@@ -21,7 +21,7 @@ It formalizes two corpus nodes under the *knowledge-least valuation* settling su
   *closure-driven vs strategy-driven* settling. The corpus chooses (7a) to layer
   preference **on the bilattice values**: agent preference is the residuated value order
   `≤ₖ` itself, not an external real utility. So the natural Lyapunov potential is built
-  from the **knowledge-order height** of charges, and the four-regime dichotomy
+  from the **knowledge-order height** of readings, and the four-regime dichotomy
   *stratifies the equilibria* — *strict-regime games have an immediate equilibrium*.
   This is the **`T → 0` (Boolean / Datalog hard-closure) limit**: the rules fire
   deterministically (`closureAtZeroTemp`), no stochastic preference weighting.
@@ -38,7 +38,7 @@ It formalizes two corpus nodes under the *knowledge-least valuation* settling su
 The closure orbit **ascends** in `≤ₖ` toward its fixed point `w` (= the settled
 valuation / lfp). So the natural Lyapunov potential is the **deficit to the fixed point**:
 
-  `kHeight a` — the knowledge-order height of a charge (`kBot ↦ 0`, `tTop,tBot ↦ 1`,
+  `kHeight a` — the knowledge-order height of a reading (`kBot ↦ 0`, `tTop,tBot ↦ 1`,
   `kTop ↦ 2`), the distance up to `⊤ₖ`; `KLE a b → kHeight a ≤ kHeight b`.
 
   `deficit cells v w := Σ_{φ ∈ cells} (kHeight (w φ) − kHeight (v φ))`  (`Nat` subtraction)
@@ -72,27 +72,27 @@ Bundled as `stage_ledger`.
   `cells : List PredicationCell` — the clopen support the settling reaches. The
   strict-decrease/convergence statements are relative to a support that contains the cells
   that change (stated as hypotheses), exactly the finite-support pattern of `H⁰`.
-* `w` is taken to be a charge-closure fixed point (`liftOp c.op w = w`) reachable as the
+* `w` is taken to be a reading-closure fixed point (`liftOp c.op w = w`) reachable as the
   pointwise-lift lfp (`ClosureOperatorFiber.settleLift`), so the orbit toward it is the settling orbit of `ClosureOperatorFiber.iterV`.
 -/
 
 namespace Obsmetrologia
 namespace Valuation
 
-open Charge
+open Reading
 
 /-! ## (1) Per-cell knowledge-order height
 
-The knowledge order on `Charge` is the height-graded bilattice `⊥ₖ < {t, f} < ⊤ₖ`.
+The knowledge order on `Reading` is the height-graded bilattice `⊥ₖ < {t, f} < ⊤ₖ`.
 `kHeight a` is the distance from `⊥ₖ` up to `a` — `0` at the seed `⊥ₖ`, `1` at the two
 truth poles `t`/`f`, `2` at the held contradiction `⊤ₖ`. Climbing the knowledge order
 weakly increases height; a *strict* climb (a covering step `a < b`) increases it by ≥1.
-This is the integer "energy level" of a charge — the analytic invariant of its settling
+This is the integer "energy level" of a reading — the analytic invariant of its settling
 distance. -/
 
-/-- The **knowledge-order height** of a charge: its distance up the `≤ₖ` order from the
+/-- The **knowledge-order height** of a reading: its distance up the `≤ₖ` order from the
 seed `⊥ₖ`. `kBot ↦ 0`, `tTop ↦ 1`, `tBot ↦ 1`, `kTop ↦ 2`. -/
-def kHeight : Charge → Nat
+def kHeight : Reading → Nat
   | Articulating.Corner.absurd => 0      -- kBot: told none
   | Articulating.Corner.potential => 1   -- tTop: told true
   | Articulating.Corner.active => 1      -- tBot: told false
@@ -104,15 +104,15 @@ def kHeight : Charge → Nat
 @[simp] theorem kHeight_tBot : kHeight tBot = 1 := rfl
 
 /-- **The knowledge order increases height.** `KLE a b → kHeight a ≤ kHeight b`: climbing
-`≤ₖ` never lowers the energy level. Proven by exhaustion on the finite charge. -/
-theorem kHeight_mono {a b : Charge} (h : KLE a b) : kHeight a ≤ kHeight b := by
+`≤ₖ` never lowers the energy level. Proven by exhaustion on the finite reading. -/
+theorem kHeight_mono {a b : Reading} (h : KLE a b) : kHeight a ≤ kHeight b := by
   revert h; cases a <;> cases b <;> decide
 
 /-- **A strict knowledge climb strictly raises height.** If `a ≤ₖ b` and `a ≠ b`, then
 `kHeight a < kHeight b`: a covering step in the knowledge order is a firing that
 adds at least one unit of height. (`tTop`/`tBot` are `≤ₖ`-incomparable, so distinct equal-
-height charges are never `≤ₖ`-related — this is why a strict climb is a strict rise.) -/
-theorem kHeight_lt_of_lt {a b : Charge} (hle : KLE a b) (hne : a ≠ b) :
+height readings are never `≤ₖ`-related — this is why a strict climb is a strict rise.) -/
+theorem kHeight_lt_of_lt {a b : Reading} (hle : KLE a b) (hne : a ≠ b) :
     kHeight a < kHeight b := by
   revert hle hne; cases a <;> cases b <;> decide
 
@@ -236,26 +236,26 @@ We instantiate the abstract deficit at the settling orbit: `iterV (liftOp c.op)`
 ascending from `seed` toward the pointwise lfp `w := settleLift c seed = liftOp c.op seed`.
 `Φ n := deficit cells (iterV (liftOp c.op) n seed) w` is the free energy at settle-time `n`. -/
 
-/-- The settling **orbit** of the pointwise charge-closure from a seed: `clⁿ(seed)` with
+/-- The settling **orbit** of the pointwise reading-closure from a seed: `clⁿ(seed)` with
 `cl = liftOp c.op`. (Same shape as `ClosureOperatorFiber.iterV`, the fiberwise
 settling.) -/
-def fenOrbit (c : Charge.Closure) (seed : Valuation) (n : Nat) : Valuation :=
+def fenOrbit (c : Reading.Closure) (seed : Valuation) (n : Nat) : Valuation :=
   iterV (liftOp c.op) n seed
 
-@[simp] theorem fenOrbit_zero (c : Charge.Closure) (seed : Valuation) :
+@[simp] theorem fenOrbit_zero (c : Reading.Closure) (seed : Valuation) :
     fenOrbit c seed 0 = seed := rfl
 
-@[simp] theorem fenOrbit_succ (c : Charge.Closure) (seed : Valuation) (n : Nat) :
+@[simp] theorem fenOrbit_succ (c : Reading.Closure) (seed : Valuation) (n : Nat) :
     fenOrbit c seed (n + 1) = liftOp c.op (fenOrbit c seed n) := rfl
 
 /-- One orbit step **ascends**: `fenOrbit n ≤ₖ fenOrbit (n+1)` — each closure step is
 inflationary, so the free energy is heading downhill (toward the fixed point). -/
-theorem fenOrbit_le_succ (c : Charge.Closure) (seed : Valuation) (n : Nat) :
+theorem fenOrbit_le_succ (c : Reading.Closure) (seed : Valuation) (n : Nat) :
     leK (fenOrbit c seed n) (fenOrbit c seed (n + 1)) :=
   liftOp_infl c (fenOrbit c seed n)
 
 /-- The orbit is **`≤ₖ`-monotone**: `m ≤ n → fenOrbit m ≤ₖ fenOrbit n`. -/
-theorem fenOrbit_monotone (c : Charge.Closure) (seed : Valuation) {m n : Nat} (h : m ≤ n) :
+theorem fenOrbit_monotone (c : Reading.Closure) (seed : Valuation) {m n : Nat} (h : m ≤ n) :
     leK (fenOrbit c seed m) (fenOrbit c seed n) := by
   induction n with
   | zero => have : m = 0 := Nat.le_zero.1 h; subst this; exact leK_refl _
@@ -267,7 +267,7 @@ theorem fenOrbit_monotone (c : Charge.Closure) (seed : Valuation) {m n : Nat} (h
 /-- **The orbit settles by step 1 and stays there.** The pointwise closure is idempotent,
 so `fenOrbit c seed 1 = liftOp c.op seed = settleLift c seed` is already a fixed point, and
 the whole orbit from step 1 on is constant at it. We name the settled value `w`. -/
-theorem fenOrbit_fixed (c : Charge.Closure) (seed : Valuation) (n : Nat) :
+theorem fenOrbit_fixed (c : Reading.Closure) (seed : Valuation) (n : Nat) :
     fenOrbit c seed (n + 1) = settleLift c seed := by
   induction n with
   | zero => rfl
@@ -278,7 +278,7 @@ theorem fenOrbit_fixed (c : Charge.Closure) (seed : Valuation) (n : Nat) :
 /-- Every orbit valuation sits `≤ₖ` below the settled value `w = settleLift c seed`: the
 flow stays beneath its target the whole way. (Step `0` by inflation; later steps equal
 `w`.) -/
-theorem fenOrbit_le_settle (c : Charge.Closure) (seed : Valuation) (n : Nat) :
+theorem fenOrbit_le_settle (c : Reading.Closure) (seed : Valuation) (n : Nat) :
     leK (fenOrbit c seed n) (settleLift c seed) := by
   cases n with
   | zero => exact liftOp_infl c seed
@@ -288,14 +288,14 @@ theorem fenOrbit_le_settle (c : Charge.Closure) (seed : Valuation) (n : Nat) :
 orbit valuation to the settled value `w = settleLift c seed`. This is energy in the
 formal sense used here: a proved Lyapunov function of the settling flow, not an external
 real-valued thermodynamic primitive. -/
-def freeEnergy (c : Charge.Closure) (seed : Valuation) (cells : List PredicationCell)
+def freeEnergy (c : Reading.Closure) (seed : Valuation) (cells : List PredicationCell)
     (n : Nat) : Nat :=
   deficit cells (fenOrbit c seed n) (settleLift c seed)
 
 /-- **`Φ` is antitone along the orbit (H-theorem, weak form).** `Φ (n+1) ≤ Φ n`: the
 energy deficit never increases across a settling step — each step ascends `≤ₖ`
 toward `w`. -/
-theorem freeEnergy_antitone (c : Charge.Closure) (seed : Valuation)
+theorem freeEnergy_antitone (c : Reading.Closure) (seed : Valuation)
     (cells : List PredicationCell) (n : Nat) :
     freeEnergy c seed cells (n + 1) ≤ freeEnergy c seed cells n :=
   deficit_antitone cells (fenOrbit_le_succ c seed n)
@@ -303,7 +303,7 @@ theorem freeEnergy_antitone (c : Charge.Closure) (seed : Valuation)
 /-- **Strict decrease at a firing (H-theorem, strict form).** If step `n → n+1` actually
 changes a support cell `φ ∈ cells` (`fenOrbit n φ ≠ fenOrbit (n+1) φ`), the energy
 deficit strictly drops: `Φ (n+1) < Φ n`. A firing costs ≥ 1 unit of free energy. -/
-theorem freeEnergy_strict_of_fires (c : Charge.Closure) (seed : Valuation)
+theorem freeEnergy_strict_of_fires (c : Reading.Closure) (seed : Valuation)
     (cells : List PredicationCell) (n : Nat) (φ : PredicationCell) (hmem : φ ∈ cells)
     (hne : fenOrbit c seed n φ ≠ fenOrbit c seed (n + 1) φ) :
     freeEnergy c seed cells (n + 1) < freeEnergy c seed cells n :=
@@ -320,7 +320,7 @@ estimate). Concretely the pointwise closure already settles by step 1 (idempoten
 /-- The free energy is **zero at step 1**: `fenOrbit c seed 1 = settleLift c seed = w`, so
 its deficit to `w` is `0`. Equilibrium is reached (the pointwise closure settles in one
 firing). -/
-theorem freeEnergy_one_eq_zero (c : Charge.Closure) (seed : Valuation)
+theorem freeEnergy_one_eq_zero (c : Reading.Closure) (seed : Valuation)
     (cells : List PredicationCell) : freeEnergy c seed cells 1 = 0 := by
   unfold freeEnergy
   have : fenOrbit c seed 1 = settleLift c seed := fenOrbit_fixed c seed 0
@@ -334,7 +334,7 @@ settled value `w = settleLift c seed` — equilibrium. The initial free energy `
 the convergence time. (Witness `N = 1`: the pointwise closure settles in one firing, and
 `1 ≤ Φ 0` whenever the seed is below `w` on the support; in the already-settled
 case `Φ 0 = 0` and `N = 0` works, so we present the uniform bound.) -/
-theorem converges_in_bounded_steps (c : Charge.Closure) (seed : Valuation)
+theorem converges_in_bounded_steps (c : Reading.Closure) (seed : Valuation)
     (_cells : List PredicationCell) :
     ∃ N, fenOrbit c seed N = settleLift c seed := by
   exact ⟨1, fenOrbit_fixed c seed 0⟩
@@ -345,7 +345,7 @@ at `N = 1 ≤ Φ 0`. In both cases there is a settling step `N` with `N ≤ free
 cells 0 + 0`-style bound — here recorded as: a fixed point is reached, and the firing-step
 count is `≤ Φ 0 + 1`. The `Nat` free energy is a strictly decreasing bounded potential, so
 the orbit cannot fire more than `Φ 0` times. -/
-theorem firing_steps_bounded (c : Charge.Closure) (seed : Valuation)
+theorem firing_steps_bounded (c : Reading.Closure) (seed : Valuation)
     (cells : List PredicationCell) :
     ∃ N, fenOrbit c seed N = settleLift c seed ∧ N ≤ freeEnergy c seed cells 0 + 1 := by
   refine ⟨1, fenOrbit_fixed c seed 0, ?_⟩
@@ -362,7 +362,7 @@ closure `κ = 1` firing, well within `Φ 0 + 1`.) -/
 /-- **`κ` is bounded by the initial free energy.** The number of settling steps to the fixed
 point (here the single firing of the pointwise closure) is `≤ freeEnergy c seed cells 0 +
 1`: the ordinal invariant `κ` is dominated by the analytic invariant `Φ 0`. -/
-theorem kappa_bounded_by_initial_free_energy (c : Charge.Closure) (seed : Valuation)
+theorem kappa_bounded_by_initial_free_energy (c : Reading.Closure) (seed : Valuation)
     (cells : List PredicationCell) :
     ∃ N, fenOrbit c seed N = settleLift c seed ∧ N ≤ freeEnergy c seed cells 0 + 1 :=
   firing_steps_bounded c seed cells
@@ -382,11 +382,11 @@ endpoint. We do **not** fabricate a real-valued entropy `S`; a positive-temperat
 deterministic Boolean closure `liftOp c.op` — the corpus's *closure-driven* dynamics, with
 no entropic term. This is the regime the whole strict/Scott Obsmetrologia spine lives at, and the
 endpoint the free-energy minimization computes. -/
-def closureAtZeroTemp (c : Charge.Closure) : Valuation → Valuation := liftOp c.op
+def closureAtZeroTemp (c : Reading.Closure) : Valuation → Valuation := liftOp c.op
 
 /-- At `T = 0` the closure is exactly the inflationary/monotone/idempotent hard closure —
 its settling is the deterministic firing whose free energy we minimized. -/
-theorem closureAtZeroTemp_is_hard (c : Charge.Closure) :
+theorem closureAtZeroTemp_is_hard (c : Reading.Closure) :
     (∀ v, leK v (closureAtZeroTemp c v))
     ∧ (∀ {v w}, leK v w → leK (closureAtZeroTemp c v) (closureAtZeroTemp c w))
     ∧ (∀ v, closureAtZeroTemp c (closureAtZeroTemp c v) = closureAtZeroTemp c v) :=
@@ -417,7 +417,7 @@ estimate: the free energy both *certifies* convergence (finite, `≤ Φ 0 + 1` s
 *pins* the equilibrium (the lfp). -/
 theorem energy_gives_unique_equilibrium (r : ClosureRegime)
     (hr : Obsmetrologia.cohomologyVanishes r = true)
-    (c : Charge.Closure) (seed : Valuation) (cells : List PredicationCell) :
+    (c : Reading.Closure) (seed : Valuation) (cells : List PredicationCell) :
     (r = ClosureRegime.strict ∨ r = ClosureRegime.scott)
     ∧ (∃ N, fenOrbit c seed N = settleLift c seed ∧ N ≤ freeEnergy c seed cells 0 + 1)
     ∧ (liftOp c.op (settleLift c seed) = settleLift c seed
@@ -436,7 +436,7 @@ energy to its unique minimum — the corpus's settling *is* a free-energy / H-th
 -/
 
 /-- **Free energy is a Lyapunov function.** For a
-charge-closure `c`, seed valuation, and finite support `cells`, with `w := settleLift c
+reading-closure `c`, seed valuation, and finite support `cells`, with `w := settleLift c
 seed` the settled fixed point and `Φ n := freeEnergy c seed cells n`:
 
 * **(antitone — weak H-theorem)** `Φ (n+1) ≤ Φ n`: the free energy monotonically decreases
@@ -450,7 +450,7 @@ seed` the settled fixed point and `Φ n := freeEnergy c seed cells n`:
 This is the gradient-flow reading of settling — `F = E − T·S` over `Nat` at the `T → 0`
 hard-closure limit — and the H-theorem: a monotone potential strictly decreasing to the
 unique equilibrium. Depends only on `propext`/`Quot.sound`. -/
-theorem free_energy_is_lyapunov (c : Charge.Closure) (seed : Valuation)
+theorem free_energy_is_lyapunov (c : Reading.Closure) (seed : Valuation)
     (cells : List PredicationCell) :
     -- (antitone) the free energy never increases along the orbit
     (∀ n, freeEnergy c seed cells (n + 1) ≤ freeEnergy c seed cells n)
@@ -504,7 +504,7 @@ theorem ledger_step (cells : List PredicationCell) {v v' w : Valuation}
     omega
 
 /-- The **orbit flux** to horizon `N`: everything discharged in the first `N` steps. -/
-def orbitFlux (c : Charge.Closure) (seed : Valuation) (cells : List PredicationCell) :
+def orbitFlux (c : Reading.Closure) (seed : Valuation) (cells : List PredicationCell) :
     Nat → Nat
   | 0 => 0
   | n + 1 => orbitFlux c seed cells n
@@ -513,7 +513,7 @@ def orbitFlux (c : Charge.Closure) (seed : Valuation) (cells : List PredicationC
 /-- **The truncation ledger.** At every horizon `N`, the seed's energy is the flux so far
 plus the residue at `N`: `Φ 0 = orbitFlux N + Φ N`. A truncated cascade carries the
 datum's invariant as receipts plus residue. -/
-theorem ledger_total (c : Charge.Closure) (seed : Valuation)
+theorem ledger_total (c : Reading.Closure) (seed : Valuation)
     (cells : List PredicationCell) (N : Nat) :
     freeEnergy c seed cells 0 = orbitFlux c seed cells N + freeEnergy c seed cells N := by
   induction N with
@@ -533,7 +533,7 @@ theorem ledger_total (c : Charge.Closure) (seed : Valuation)
 
 /-- **The book closes at quiescence**: the seed's energy is exactly the total flux of the
 settling (the residue at any horizon past the fixed point is zero). -/
-theorem ledger_closes (c : Charge.Closure) (seed : Valuation)
+theorem ledger_closes (c : Reading.Closure) (seed : Valuation)
     (cells : List PredicationCell) :
     freeEnergy c seed cells 0 = orbitFlux c seed cells 1 := by
   have h := ledger_total c seed cells 1
@@ -541,20 +541,20 @@ theorem ledger_closes (c : Charge.Closure) (seed : Valuation)
   omega
 
 /-- A **commitment**: the cell left `⊥ₖ` for a truth pole. -/
-def commitB (a b : Charge) : Bool :=
-  decide (a = kBot) && (Charge.isTruthFiring b || Charge.isFalseFiring b)
+def commitB (a b : Reading) : Bool :=
+  decide (a = kBot) && (Reading.isTruthFiring b || Reading.isFalseFiring b)
 
 /-- A **mint**: a truth pole quenched into `⊤ₖ`. -/
-def mintB (a b : Charge) : Bool :=
-  (Charge.isTruthFiring a || Charge.isFalseFiring a) && Charge.isInconsistency b
+def mintB (a b : Reading) : Bool :=
+  (Reading.isTruthFiring a || Reading.isFalseFiring a) && Reading.isInconsistency b
 
 /-- A **jump**: `⊥ₖ` straight to `⊤ₖ` — both slots fire in one step, worth two units. -/
-def jumpB (a b : Charge) : Bool :=
-  decide (a = kBot) && Charge.isInconsistency b
+def jumpB (a b : Reading) : Bool :=
+  decide (a = kBot) && Reading.isInconsistency b
 
 /-- **Per cell, the flux is exactly one commitment, one mint, or one jump (worth two).**
 Along `≤ₖ`, no other transitions exist. -/
-theorem cellFlux_decomposition {a b : Charge} (h : KLE a b) :
+theorem cellFlux_decomposition {a b : Reading} (h : KLE a b) :
     kHeight b - kHeight a
       = (if commitB a b = true then 1 else 0)
         + (if mintB a b = true then 1 else 0)
@@ -603,15 +603,15 @@ register's losses are exactly the record register's gains from truth: a `t`-cell
 stops firing has become `⊤ₖ`. -/
 theorem truth_loss_is_record_gain (cells : List PredicationCell) {v v' : Valuation}
     (h : leK v v') :
-    cells.countP (fun φ => Charge.isTruthFiring (v φ) && !(Charge.isTruthFiring (v' φ)))
+    cells.countP (fun φ => Reading.isTruthFiring (v φ) && !(Reading.isTruthFiring (v' φ)))
       = cells.countP
-          (fun φ => Charge.isTruthFiring (v φ) && Charge.isInconsistency (v' φ)) := by
+          (fun φ => Reading.isTruthFiring (v φ) && Reading.isInconsistency (v' φ)) := by
   induction cells with
   | nil => rfl
   | cons φ cells ih =>
     rw [List.countP_cons, List.countP_cons, ih]
-    have hcell : (Charge.isTruthFiring (v φ) && !(Charge.isTruthFiring (v' φ)))
-        = (Charge.isTruthFiring (v φ) && Charge.isInconsistency (v' φ)) := by
+    have hcell : (Reading.isTruthFiring (v φ) && !(Reading.isTruthFiring (v' φ)))
+        = (Reading.isTruthFiring (v φ) && Reading.isInconsistency (v' φ)) := by
       have hφ := h φ
       revert hφ
       cases v φ <;> cases v' φ <;> decide
@@ -620,7 +620,7 @@ theorem truth_loss_is_record_gain (cells : List PredicationCell) {v v' : Valuati
 /-- **The stage ledger**, bundled: the truncation conservation law at every horizon; the
 book closing at quiescence; the flux itemized into commitments, mints, and jumps at every
 step; and the register transfer — truth losses are record gains. -/
-theorem stage_ledger (c : Charge.Closure) (seed : Valuation)
+theorem stage_ledger (c : Reading.Closure) (seed : Valuation)
     (cells : List PredicationCell) :
     (∀ N, freeEnergy c seed cells 0
         = orbitFlux c seed cells N + freeEnergy c seed cells N)
@@ -629,10 +629,10 @@ theorem stage_ledger (c : Charge.Closure) (seed : Valuation)
         = commits cells (fenOrbit c seed n) (fenOrbit c seed (n + 1))
           + mints cells (fenOrbit c seed n) (fenOrbit c seed (n + 1))
           + 2 * jumps cells (fenOrbit c seed n) (fenOrbit c seed (n + 1)))
-    ∧ (∀ n, cells.countP (fun φ => Charge.isTruthFiring (fenOrbit c seed n φ)
-            && !(Charge.isTruthFiring (fenOrbit c seed (n + 1) φ)))
-        = cells.countP (fun φ => Charge.isTruthFiring (fenOrbit c seed n φ)
-            && Charge.isInconsistency (fenOrbit c seed (n + 1) φ))) :=
+    ∧ (∀ n, cells.countP (fun φ => Reading.isTruthFiring (fenOrbit c seed n φ)
+            && !(Reading.isTruthFiring (fenOrbit c seed (n + 1) φ)))
+        = cells.countP (fun φ => Reading.isTruthFiring (fenOrbit c seed n φ)
+            && Reading.isInconsistency (fenOrbit c seed (n + 1) φ))) :=
   ⟨ledger_total c seed cells,
    ledger_closes c seed cells,
    fun n => stepFlux_decomposition cells (fenOrbit_le_succ c seed n),
@@ -695,7 +695,7 @@ theorem rule_ledger (S : ClosureRule.RuleSystem) (seed : Valuation)
     omega
 
 /-- A fired positive slot stays fired along `≤ₖ`. -/
-theorem KLE_pos_mono {a b : Charge} (h : KLE a b) (hp : a.pos = true) : b.pos = true := by
+theorem KLE_pos_mono {a b : Reading} (h : KLE a b) (hp : a.pos = true) : b.pos = true := by
   revert h hp
   cases a <;> cases b <;> decide
 
@@ -717,7 +717,7 @@ def chainRule (prev next : PredicationCell) : ClosureRule.ClosureRule where
   antecedent := fun v => (v prev).pos
   antMono := fun h hp => KLE_pos_mono (h _) hp
   cell := next
-  charge := Charge.tTop
+  reading := Reading.tTop
 
 /-- The three-rule chain `0 → 1 → 2 → 3`. -/
 def chainSystem : ClosureRule.RuleSystem :=
@@ -725,7 +725,7 @@ def chainSystem : ClosureRule.RuleSystem :=
    chainRule chainCell2 chainCell3]
 
 /-- The chain seed: `t` at the head cell, `⊥ₖ` elsewhere. -/
-def chainSeed : Valuation := ClosureRule.bump chainCell0 Charge.tTop
+def chainSeed : Valuation := ClosureRule.bump chainCell0 Reading.tTop
 
 /-- **The chain cascade's stage receipts.** The three-rule chain runs three genuine
 stages: the seed's energy to the stage-3 value is `3`; each of the three stages
@@ -757,12 +757,12 @@ def collisionSystem : ClosureRule.RuleSystem :=
   [chainRule chainCell0 chainCell1,
    { antecedent := fun v => (v chainCell0).pos
      antMono := fun h hp => KLE_pos_mono (h _) hp
-     cell := chainCell2, charge := Charge.tBot },
+     cell := chainCell2, reading := Reading.tBot },
    chainRule chainCell1 chainCell2,
    chainRule chainCell0 chainCell3,
    { antecedent := fun v => (v chainCell1).pos
      antMono := fun h hp => KLE_pos_mono (h _) hp
-     cell := chainCell3, charge := Charge.tBot }]
+     cell := chainCell3, reading := Reading.tBot }]
 
 /-- **The quench inside a running cascade.** Stage one pays three commitments (`t` at
 cell `1`, `f` at cell `2`, `t` at cell `3`); stage two pays two mints — the slow `t`
@@ -770,7 +770,7 @@ meets the held `f` at cell `2` and the slow `f` meets the held `t` at cell `3`, 
 quenching to `⊤ₖ` — with the truth register's stage-two loss equal to its quench count
 (cell `3`); stage three is quiescent on the support; and the seed's energy to the reached
 value is the five receipts. Held-`⊤` creation by collision
-(`CausalSets.Support.Charged.collision_conflict`, `Thermodynamics.Temperature`'s
+(`CausalSets.Support.Valued.collision_conflict`, `Thermodynamics.Temperature`'s
 `CollisionTopMint`) realized as ledger mints of a settling stage. -/
 theorem collision_cascade_receipts :
     deficit chainCells chainSeed (ruleOrbit collisionSystem chainSeed 2) = 5
@@ -787,18 +787,18 @@ theorem collision_cascade_receipts :
       ∧ mints chainCells (ruleOrbit collisionSystem chainSeed 1)
           (ruleOrbit collisionSystem chainSeed 2) = 2)
     ∧ (chainCells.countP (fun φ =>
-          Charge.isTruthFiring (ruleOrbit collisionSystem chainSeed 1 φ)
-            && !(Charge.isTruthFiring (ruleOrbit collisionSystem chainSeed 2 φ))) = 1
+          Reading.isTruthFiring (ruleOrbit collisionSystem chainSeed 1 φ)
+            && !(Reading.isTruthFiring (ruleOrbit collisionSystem chainSeed 2 φ))) = 1
       ∧ chainCells.countP (fun φ =>
-          Charge.isTruthFiring (ruleOrbit collisionSystem chainSeed 1 φ)
-            && Charge.isInconsistency (ruleOrbit collisionSystem chainSeed 2 φ)) = 1)
+          Reading.isTruthFiring (ruleOrbit collisionSystem chainSeed 1 φ)
+            && Reading.isInconsistency (ruleOrbit collisionSystem chainSeed 2 φ)) = 1)
     ∧ stepFlux chainCells (ruleOrbit collisionSystem chainSeed 2)
         (ruleOrbit collisionSystem chainSeed 3) = 0 := by
   refine ⟨?_, ⟨?_, ?_, ?_⟩, ⟨?_, ?_, ?_⟩, ⟨?_, ?_⟩, ?_⟩ <;> decide
 
 /-! ## (9) The ledger Noether pair — which gauge symmetries pay conserved currents
 
-The Klein-four gauge `⟨~, −⟩` acts on charges; the ledger sorts its two generators. The
+The Klein-four gauge `⟨~, −⟩` acts on readings; the ledger sorts its two generators. The
 knowledge-order-preserving generator `~` (negation: the truth poles swap, `⊥ₖ` and `⊤ₖ`
 fixed) **conserves every register**: flux, commitments, mints, and jumps are all invariant
 — the Noether current of the internal symmetry. The order-reversing generator `−`
@@ -809,12 +809,12 @@ descent's commitment book read backwards through `−` is the anti-descent's min
 mirror, in counting form. -/
 
 /-- Negation preserves the knowledge height. -/
-theorem kHeight_negate (a : Charge) : kHeight (Charge.negate a) = kHeight a := by
+theorem kHeight_negate (a : Reading) : kHeight (Reading.negate a) = kHeight a := by
   cases a <;> rfl
 
 /-- Conflation inverts the knowledge height: heights sum to the full climb. -/
-theorem kHeight_conflate_add (a : Charge) :
-    kHeight (Charge.conflate a) + kHeight a = 2 := by
+theorem kHeight_conflate_add (a : Reading) :
+    kHeight (Reading.conflate a) + kHeight a = 2 := by
   cases a <;> rfl
 
 /-- **Negation conserves the flux.** -/
@@ -823,16 +823,16 @@ theorem stepFlux_negate (cells : List PredicationCell) (v v' : Valuation) :
   induction cells with
   | nil => rfl
   | cons φ cells ih =>
-    show (kHeight (Charge.negate (v' φ)) - kHeight (Charge.negate (v φ)))
+    show (kHeight (Reading.negate (v' φ)) - kHeight (Reading.negate (v φ)))
         + stepFlux cells (negateVal v) (negateVal v')
       = (kHeight (v' φ) - kHeight (v φ)) + stepFlux cells v v'
     rw [kHeight_negate, kHeight_negate, ih]
 
 /-- Negation conserves each itemized register, cellwise. -/
-theorem registers_negate (a b : Charge) :
-    commitB (Charge.negate a) (Charge.negate b) = commitB a b
-    ∧ mintB (Charge.negate a) (Charge.negate b) = mintB a b
-    ∧ jumpB (Charge.negate a) (Charge.negate b) = jumpB a b := by
+theorem registers_negate (a b : Reading) :
+    commitB (Reading.negate a) (Reading.negate b) = commitB a b
+    ∧ mintB (Reading.negate a) (Reading.negate b) = mintB a b
+    ∧ jumpB (Reading.negate a) (Reading.negate b) = jumpB a b := by
   cases a <;> cases b <;> exact ⟨rfl, rfl, rfl⟩
 
 /-- **Negation conserves the itemized ledger**: commitments, mints, and jumps are each
@@ -856,7 +856,7 @@ theorem ledger_negate (cells : List PredicationCell) (v v' : Valuation) :
     · rw [List.countP_cons, List.countP_cons, hj', ihj]
 
 /-- The conflated valuation. -/
-def conflateVal (v : Valuation) : Valuation := fun φ => Charge.conflate (v φ)
+def conflateVal (v : Valuation) : Valuation := fun φ => Reading.conflate (v φ)
 
 /-- **Conflation is the ledger's time reversal**: the flux of the conflated, reversed step
 equals the flux of the step. -/
@@ -865,7 +865,7 @@ theorem stepFlux_conflate_reverse (cells : List PredicationCell) (v v' : Valuati
   induction cells with
   | nil => rfl
   | cons φ cells ih =>
-    show (kHeight (Charge.conflate (v φ)) - kHeight (Charge.conflate (v' φ)))
+    show (kHeight (Reading.conflate (v φ)) - kHeight (Reading.conflate (v' φ)))
         + stepFlux cells (conflateVal v') (conflateVal v)
       = (kHeight (v' φ) - kHeight (v φ)) + stepFlux cells v v'
     rw [ih]
@@ -874,10 +874,10 @@ theorem stepFlux_conflate_reverse (cells : List PredicationCell) (v v' : Valuati
     omega
 
 /-- Under the mirror, commitments and mints exchange and jumps are fixed, cellwise. -/
-theorem registers_conflate_reverse (a b : Charge) :
-    commitB (Charge.conflate b) (Charge.conflate a) = mintB a b
-    ∧ mintB (Charge.conflate b) (Charge.conflate a) = commitB a b
-    ∧ jumpB (Charge.conflate b) (Charge.conflate a) = jumpB a b := by
+theorem registers_conflate_reverse (a b : Reading) :
+    commitB (Reading.conflate b) (Reading.conflate a) = mintB a b
+    ∧ mintB (Reading.conflate b) (Reading.conflate a) = commitB a b
+    ∧ jumpB (Reading.conflate b) (Reading.conflate a) = jumpB a b := by
   cases a <;> cases b <;> exact ⟨rfl, rfl, rfl⟩
 
 /-- **The mirror exchanges the registers**: the conflated, reversed step's commitments are
@@ -903,7 +903,7 @@ theorem ledger_mirror (cells : List PredicationCell) (v v' : Valuation) :
 
 /-- Conflation does not preserve the height: the two generators are sorted. -/
 theorem conflate_not_height_preserving :
-    kHeight (Charge.conflate Charge.kBot) ≠ kHeight Charge.kBot := by decide
+    kHeight (Reading.conflate Reading.kBot) ≠ kHeight Reading.kBot := by decide
 
 /-- **The ledger Noether pair.** The order-preserving gauge generator conserves every
 register of the ledger; the order-reversing generator does not preserve the height and
@@ -919,7 +919,7 @@ theorem ledger_noether (cells : List PredicationCell) (v v' : Valuation) :
       ∧ commits cells (conflateVal v') (conflateVal v) = mints cells v v'
       ∧ mints cells (conflateVal v') (conflateVal v) = commits cells v v'
       ∧ jumps cells (conflateVal v') (conflateVal v) = jumps cells v v')
-    ∧ kHeight (Charge.conflate Charge.kBot) ≠ kHeight Charge.kBot :=
+    ∧ kHeight (Reading.conflate Reading.kBot) ≠ kHeight Reading.kBot :=
   ⟨⟨stepFlux_negate cells v v', (ledger_negate cells v v').1,
     (ledger_negate cells v v').2.1, (ledger_negate cells v v').2.2⟩,
    ⟨stepFlux_conflate_reverse cells v v', (ledger_mirror cells v v').1,
@@ -942,13 +942,13 @@ invariance `ledger_noether` proves is the held-`⊤` mass the merge prices. -/
 
 /-- Below `⊤`, an inconsistent target is reached by a mint or a jump. A `⊤`
 predecessor is excluded: an already-held `⊤` is neither minted nor jumped. -/
-theorem incons_eq_mint_or_jump {a b : Charge} (ha : a ≠ Charge.kTop) (h : Charge.KLE a b) :
-    Charge.isInconsistency b = (mintB a b || jumpB a b) := by
+theorem incons_eq_mint_or_jump {a b : Reading} (ha : a ≠ Reading.kTop) (h : Reading.KLE a b) :
+    Reading.isInconsistency b = (mintB a b || jumpB a b) := by
   revert ha h; cases a <;> cases b <;> decide
 
 /-- Mint and jump never fire together: a truth pole quenching and a `⊥`-to-`⊤`
 jump are exclusive predecessors. -/
-theorem incons_disjoint_mint_jump (a b : Charge) :
+theorem incons_disjoint_mint_jump (a b : Reading) :
     (mintB a b && jumpB a b) = false := by
   cases a <;> cases b <;> decide
 
@@ -971,19 +971,19 @@ When no predecessor cell already holds `⊤`, the target's inconsistency count �
 merge's `topCount` — is the ledger's mints plus jumps: every held `⊤` was reached
 this step, either by quenching a pole (mint) or by a `⊥`-to-`⊤` jump. -/
 theorem topSupport_eq_mints_add_jumps (cells : List PredicationCell) (v v' : Valuation)
-    (h : leK v v') (hne : ∀ φ ∈ cells, v φ ≠ Charge.kTop) :
-    cells.countP (fun φ => Charge.isInconsistency (v' φ))
+    (h : leK v v') (hne : ∀ φ ∈ cells, v φ ≠ Reading.kTop) :
+    cells.countP (fun φ => Reading.isInconsistency (v' φ))
       = mints cells v v' + jumps cells v v' := by
   unfold mints jumps
   exact countP_or_of_disjoint (fun φ => mintB (v φ) (v' φ)) (fun φ => jumpB (v φ) (v' φ))
-    (fun φ => Charge.isInconsistency (v' φ)) cells
+    (fun φ => Reading.isInconsistency (v' φ)) cells
     (fun φ hφ => incons_eq_mint_or_jump (hne φ hφ) (h φ))
     (fun φ _ => incons_disjoint_mint_jump (v φ) (v' φ))
 
 /-- From a definite pole the mint indicator is the target's inconsistency bit. -/
-theorem mintB_pole (a b : Charge)
-    (ha : Charge.isTruthFiring a = true ∨ Charge.isFalseFiring a = true) :
-    mintB a b = Charge.isInconsistency b := by
+theorem mintB_pole (a b : Reading)
+    (ha : Reading.isTruthFiring a = true ∨ Reading.isFalseFiring a = true) :
+    mintB a b = Reading.isInconsistency b := by
   unfold mintB
   rcases ha with h | h <;> rw [h] <;> simp
 
@@ -992,8 +992,8 @@ When every predecessor cell holds a definite truth pole, the ledger's mint
 register equals the count of inconsistent target cells — the merge's `topCount`
 of the target. -/
 theorem mints_eq_topSupport_of_poleSeed (cells : List PredicationCell) (v v' : Valuation)
-    (hv : ∀ φ ∈ cells, Charge.isTruthFiring (v φ) = true ∨ Charge.isFalseFiring (v φ) = true) :
-    mints cells v v' = cells.countP (fun φ => Charge.isInconsistency (v' φ)) := by
+    (hv : ∀ φ ∈ cells, Reading.isTruthFiring (v φ) = true ∨ Reading.isFalseFiring (v φ) = true) :
+    mints cells v v' = cells.countP (fun φ => Reading.isInconsistency (v' φ)) := by
   unfold mints
   apply List.countP_congr
   intro φ h
@@ -1118,7 +1118,7 @@ the irreversible spend exhausts it exactly when no reversible spend occurred
 /-- **The seed energy splits into reversible and irreversible closing flux.** At the
 closing step the free energy is the reversible registers `commits + mints` plus the
 irreversible `2·jumps` — `ledger_closes` read through the flux decomposition. -/
-theorem budget_splits (c : Charge.Closure) (seed : Valuation) (cells : List PredicationCell) :
+theorem budget_splits (c : Reading.Closure) (seed : Valuation) (cells : List PredicationCell) :
     freeEnergy c seed cells 0
       = (commits cells seed (fenOrbit c seed 1) + mints cells seed (fenOrbit c seed 1))
         + 2 * jumps cells seed (fenOrbit c seed 1) := by
@@ -1136,7 +1136,7 @@ it exactly at zero reversible spend.** The irreversible `2·jumps` and the rever
 `commits + mints` each sit under the seed energy, and the irreversible spend equals
 the seed energy iff the reversible spend is zero — a purely-decisive settling
 consumes its whole budget on unrecoverable jumps. -/
-theorem irreversible_within_budget (c : Charge.Closure) (seed : Valuation)
+theorem irreversible_within_budget (c : Reading.Closure) (seed : Valuation)
     (cells : List PredicationCell) :
     2 * jumps cells seed (fenOrbit c seed 1) ≤ freeEnergy c seed cells 0
     ∧ (commits cells seed (fenOrbit c seed 1) + mints cells seed (fenOrbit c seed 1))
@@ -1163,13 +1163,13 @@ spatial commits/mints. -/
 
 /-- **A jump is exactly the `⊥ₖ`-to-`⊤ₖ` step.** The irreversible register fires
 precisely on the maximal knowledge interval — the timelike causal generator. -/
-theorem jumpB_iff_bot_top (a b : Charge) : jumpB a b = true ↔ (a = kBot ∧ b = kTop) := by
+theorem jumpB_iff_bot_top (a b : Reading) : jumpB a b = true ↔ (a = kBot ∧ b = kTop) := by
   cases a <;> cases b <;> simp only [jumpB] <;> decide
 
 /-- **A jump is a knowledge climb of height two.** The timelike step spans the full
 `⊥ₖ`-to-`⊤ₖ` interval — `kHeight` gap two, the causal diameter. -/
-theorem jump_is_maximal_causal_step (a b : Charge) (h : jumpB a b = true) :
-    Charge.KLE a b = true ∧ kHeight b - kHeight a = 2 := by
+theorem jump_is_maximal_causal_step (a b : Reading) (h : jumpB a b = true) :
+    Reading.KLE a b = true ∧ kHeight b - kHeight a = 2 := by
   cases a <;> cases b <;> simp only [jumpB] at h <;>
     first
       | exact absurd h (by decide)
@@ -1179,13 +1179,13 @@ theorem jump_is_maximal_causal_step (a b : Charge) (h : jumpB a b = true) :
 gap: a jump is timelike (gap two), a commit or mint is null (gap one), a fixed cell
 is spacelike (gap zero). The register decomposition of the flux is the causal
 classification of the step. -/
-theorem cell_cone_trichotomy (a b : Charge) (h : Charge.KLE a b = true) :
+theorem cell_cone_trichotomy (a b : Reading) (h : Reading.KLE a b = true) :
     (jumpB a b = true ∧ kHeight b - kHeight a = 2)
     ∨ ((commitB a b = true ∨ mintB a b = true) ∧ kHeight b - kHeight a = 1)
     ∨ (a = b ∧ kHeight b - kHeight a = 0) := by
   cases a <;> cases b <;>
-    simp only [jumpB, commitB, mintB, Charge.isInconsistency, Charge.isTruthFiring,
-      Charge.isFalseFiring] at * <;>
+    simp only [jumpB, commitB, mintB, Reading.isInconsistency, Reading.isTruthFiring,
+      Reading.isFalseFiring] at * <;>
     first
       | exact absurd h (by decide)
       | (left; exact ⟨by decide, by decide⟩)
@@ -1198,11 +1198,11 @@ axiom bundle `CausalSets.Causal.Cone.causal_reachability_is_cone_geometry` prove
 the causal order on events. The ledger light cone and the causal cone are two
 instances of one cone geometry. -/
 theorem kle_is_cone_geometry :
-    (∀ a : Charge, Charge.KLE a a = true)
-    ∧ (∀ a b c : Charge, Charge.KLE a b = true → Charge.KLE b c = true → Charge.KLE a c = true)
-    ∧ (∀ a b : Charge, Charge.KLE a b = true → Charge.KLE b a = true → a = b)
-    ∧ (∀ a b : Charge, (Charge.KLE a b = false ∧ Charge.KLE b a = false)
-        → (Charge.KLE b a = false ∧ Charge.KLE a b = false)) := by
+    (∀ a : Reading, Reading.KLE a a = true)
+    ∧ (∀ a b c : Reading, Reading.KLE a b = true → Reading.KLE b c = true → Reading.KLE a c = true)
+    ∧ (∀ a b : Reading, Reading.KLE a b = true → Reading.KLE b a = true → a = b)
+    ∧ (∀ a b : Reading, (Reading.KLE a b = false ∧ Reading.KLE b a = false)
+        → (Reading.KLE b a = false ∧ Reading.KLE a b = false)) := by
   refine ⟨?_, ?_, ?_, ?_⟩
   · intro a; cases a <;> decide
   · intro a b c; cases a <;> cases b <;> cases c <;> decide

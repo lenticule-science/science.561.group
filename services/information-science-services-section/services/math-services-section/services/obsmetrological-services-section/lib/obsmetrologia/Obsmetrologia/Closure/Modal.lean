@@ -8,12 +8,12 @@ import Obsmetrologia.Closure.Monad
 This module derives the **modal pair** of the valuation, exactly as the corpus
 states it in `positing/.../valuation/{possibilizing,necessitating}`:
 
-* **possibilizing** (`possibilize`, ◇) raises each cell's charge to the
-  *knowledge-join* of the charges across the valuation's fiber — the bilattice
+* **possibilizing** (`possibilize`, ◇) raises each cell's reading to the
+  *knowledge-join* of the readings across the valuation's fiber — the bilattice
   join `∨ₖ` aggregated over a fiber. **Inflationary** ("what *could* become
   known"): `v ≤ₖ ◇v`.
-* **necessitating** (`necessitate`, □) lowers each cell's charge to the
-  *knowledge-meet* of the charges across the fiber — `∧ₖ` aggregated over a
+* **necessitating** (`necessitate`, □) lowers each cell's reading to the
+  *knowledge-meet* of the readings across the fiber — `∧ₖ` aggregated over a
   fiber. **Deflationary** ("what *must* hold"): `□v ≤ₖ v`.
 
 These are literally `Quantifying.existsF` / `Quantifying.forallF` — the fiber
@@ -46,21 +46,21 @@ We prove, faithful to the named corpus nodes:
 namespace Obsmetrologia
 namespace Valuation
 
-open Charge
+open Reading
 
 /-! ## Pointwise knowledge order on valuations — the order ◇/□ move along -/
 
 /-- The pointwise knowledge order is **reflexive**. -/
-theorem leK_refl (v : Valuation) : leK v v := fun φ => Charge.kle_refl (v φ)
+theorem leK_refl (v : Valuation) : leK v v := fun φ => Reading.kle_refl (v φ)
 
 /-- The pointwise knowledge order is **transitive**. -/
 theorem leK_trans {u v w : Valuation} (h1 : leK u v) (h2 : leK v w) : leK u w :=
-  fun φ => Charge.kle_trans _ _ _ (h1 φ) (h2 φ)
+  fun φ => Reading.kle_trans _ _ _ (h1 φ) (h2 φ)
 
 /-- The pointwise knowledge order is **antisymmetric** — a partial order
-on valuations, lifting `Charge.kle_antisymm`. -/
+on valuations, lifting `Reading.kle_antisymm`. -/
 theorem leK_antisymm {v w : Valuation} (h1 : leK v w) (h2 : leK w v) : v = w := by
-  funext φ; exact Charge.kle_antisymm _ _ (h1 φ) (h2 φ)
+  funext φ; exact Reading.kle_antisymm _ _ (h1 φ) (h2 φ)
 
 /-! ## The modal frame — an accessibility relation as a finite fibration -/
 
@@ -81,32 +81,32 @@ namespace ModalFrame
 variable (M : ModalFrame)
 
 /-- **Possibilizing** `◇` — the diamond: raise each cell to the *knowledge-join*
-of the charges over its fiber. Exactly `existsF` over the frame. -/
+of the readings over its fiber. Exactly `existsF` over the frame. -/
 def possibilize (v : Valuation) : Valuation := existsF M.toFiniteFibration v
 
 /-- **Necessitating** `□` — the box: lower each cell to the *knowledge-meet* of
-the charges over its fiber. Exactly `forallF` over the frame. -/
+the readings over its fiber. Exactly `forallF` over the frame. -/
 def necessitate (v : Valuation) : Valuation := forallF M.toFiniteFibration v
 
 theorem possibilize_apply (v : Valuation) (φ : PredicationCell) :
-    possibilize M v φ = Charge.joinList ((M.fiber φ).map v) := rfl
+    possibilize M v φ = Reading.joinList ((M.fiber φ).map v) := rfl
 
 theorem necessitate_apply (v : Valuation) (φ : PredicationCell) :
-    necessitate M v φ = Charge.meetList ((M.fiber φ).map v) := rfl
+    necessitate M v φ = Reading.meetList ((M.fiber φ).map v) := rfl
 
 /-! ### ◇ inflationary, □ deflationary (from reflexivity) -/
 
-/-- **◇ is inflationary** — `v ≤ₖ ◇v`. Possibilizing only moves a charge *up*
+/-- **◇ is inflationary** — `v ≤ₖ ◇v`. Possibilizing only moves a reading *up*
 the knowledge order (each cell is one of its own fiber's joinands). -/
 theorem le_possibilize (v : Valuation) : leK v (possibilize M v) := by
   intro φ
-  exact Charge.le_joinList (v φ) _ (List.mem_map.2 ⟨φ, M.refl φ, rfl⟩)
+  exact Reading.le_joinList (v φ) _ (List.mem_map.2 ⟨φ, M.refl φ, rfl⟩)
 
 /-- **□ is deflationary** — `□v ≤ₖ v`. Necessitating keeps each cell only to the
-floor its fellow assignments force (the cell's own charge is a meetand). -/
+floor its fellow assignments force (the cell's own reading is a meetand). -/
 theorem necessitate_le (v : Valuation) : leK (necessitate M v) v := by
   intro φ
-  exact Charge.meetList_le (v φ) _ (List.mem_map.2 ⟨φ, M.refl φ, rfl⟩)
+  exact Reading.meetList_le (v φ) _ (List.mem_map.2 ⟨φ, M.refl φ, rfl⟩)
 
 /-! ### Monotonicity of the modal operators -/
 
@@ -114,21 +114,21 @@ theorem necessitate_le (v : Valuation) : leK (necessitate M v) v := by
 theorem possibilize_mono {v w : Valuation} (h : leK v w) :
     leK (possibilize M v) (possibilize M w) := by
   intro φ
-  refine Charge.joinList_le _ _ ?_
+  refine Reading.joinList_le _ _ ?_
   intro a ha
   rcases List.mem_map.1 ha with ⟨ψ, hψ, rfl⟩
-  exact Charge.kle_trans _ _ _ (h ψ)
-    (Charge.le_joinList (w ψ) _ (List.mem_map.2 ⟨ψ, hψ, rfl⟩))
+  exact Reading.kle_trans _ _ _ (h ψ)
+    (Reading.le_joinList (w ψ) _ (List.mem_map.2 ⟨ψ, hψ, rfl⟩))
 
 /-- **□ is monotone** in the knowledge order. -/
 theorem necessitate_mono {v w : Valuation} (h : leK v w) :
     leK (necessitate M v) (necessitate M w) := by
   intro φ
-  refine Charge.le_meetList _ _ ?_
+  refine Reading.le_meetList _ _ ?_
   intro a ha
   rcases List.mem_map.1 ha with ⟨ψ, hψ, rfl⟩
-  exact Charge.kle_trans _ _ _
-    (Charge.meetList_le (v ψ) _ (List.mem_map.2 ⟨ψ, hψ, rfl⟩)) (h ψ)
+  exact Reading.kle_trans _ _ _
+    (Reading.meetList_le (v ψ) _ (List.mem_map.2 ⟨ψ, hψ, rfl⟩)) (h ψ)
 
 /-! ## The Galois adjunction ◇ ⊣ □ -/
 
@@ -140,21 +140,21 @@ theorem possibilize_adjoint_necessitate (v w : Valuation) :
     leK (possibilize M v) w ↔ leK v (necessitate M w) := by
   constructor
   · intro H ψ
-    refine Charge.le_meetList (v ψ) _ ?_
+    refine Reading.le_meetList (v ψ) _ ?_
     intro a ha
     rcases List.mem_map.1 ha with ⟨φ, hφ, rfl⟩
     have hψφ : ψ ∈ M.fiber φ := M.symm ψ φ hφ
-    have h1 : Charge.KLE (v ψ) (possibilize M v φ) :=
-      Charge.le_joinList (v ψ) _ (List.mem_map.2 ⟨ψ, hψφ, rfl⟩)
-    exact Charge.kle_trans _ _ _ h1 (H φ)
+    have h1 : Reading.KLE (v ψ) (possibilize M v φ) :=
+      Reading.le_joinList (v ψ) _ (List.mem_map.2 ⟨ψ, hψφ, rfl⟩)
+    exact Reading.kle_trans _ _ _ h1 (H φ)
   · intro H φ
-    refine Charge.joinList_le (w φ) _ ?_
+    refine Reading.joinList_le (w φ) _ ?_
     intro a ha
     rcases List.mem_map.1 ha with ⟨ψ, hψ, rfl⟩
     have hφψ : φ ∈ M.fiber ψ := M.symm φ ψ hψ
-    have h1 : Charge.KLE (necessitate M w ψ) (w φ) :=
-      Charge.meetList_le (w φ) _ (List.mem_map.2 ⟨φ, hφψ, rfl⟩)
-    exact Charge.kle_trans _ _ _ (H ψ) h1
+    have h1 : Reading.KLE (necessitate M w ψ) (w φ) :=
+      Reading.meetList_le (w φ) _ (List.mem_map.2 ⟨φ, hφψ, rfl⟩)
+    exact Reading.kle_trans _ _ _ (H ψ) h1
 
 /-- **Unit** `v ≤ₖ □◇v` of the Galois connection `◇ ⊣ □`. -/
 theorem adjunction_unit (v : Valuation) : leK v (necessitate M (possibilize M v)) :=
@@ -179,33 +179,33 @@ theorem fiber_mem_iff {φ ψ : PredicationCell} (h : ψ ∈ M.fiber φ) (χ : Pr
 constant on accessibility classes. -/
 theorem necessitate_const {v : Valuation} {φ ψ : PredicationCell}
     (h : ψ ∈ M.fiber φ) : necessitate M v ψ = necessitate M v φ := by
-  show Charge.meetList ((M.fiber ψ).map v) = Charge.meetList ((M.fiber φ).map v)
-  apply Charge.kle_antisymm
-  · refine Charge.le_meetList _ _ ?_
+  show Reading.meetList ((M.fiber ψ).map v) = Reading.meetList ((M.fiber φ).map v)
+  apply Reading.kle_antisymm
+  · refine Reading.le_meetList _ _ ?_
     intro a ha
     rcases List.mem_map.1 ha with ⟨χ, hχ, rfl⟩
-    exact Charge.meetList_le (v χ) _
+    exact Reading.meetList_le (v χ) _
       (List.mem_map.2 ⟨χ, (fiber_mem_iff M h χ).2 hχ, rfl⟩)
-  · refine Charge.le_meetList _ _ ?_
+  · refine Reading.le_meetList _ _ ?_
     intro a ha
     rcases List.mem_map.1 ha with ⟨χ, hχ, rfl⟩
-    exact Charge.meetList_le (v χ) _
+    exact Reading.meetList_le (v χ) _
       (List.mem_map.2 ⟨χ, (fiber_mem_iff M h χ).1 hχ, rfl⟩)
 
 /-- **The S5 collapse for the diamond**: `◇v ψ = ◇v φ` whenever `ψ ∈ R φ`. -/
 theorem possibilize_const {v : Valuation} {φ ψ : PredicationCell}
     (h : ψ ∈ M.fiber φ) : possibilize M v ψ = possibilize M v φ := by
-  show Charge.joinList ((M.fiber ψ).map v) = Charge.joinList ((M.fiber φ).map v)
-  apply Charge.kle_antisymm
-  · refine Charge.joinList_le _ _ ?_
+  show Reading.joinList ((M.fiber ψ).map v) = Reading.joinList ((M.fiber φ).map v)
+  apply Reading.kle_antisymm
+  · refine Reading.joinList_le _ _ ?_
     intro a ha
     rcases List.mem_map.1 ha with ⟨χ, hχ, rfl⟩
-    exact Charge.le_joinList (v χ) _
+    exact Reading.le_joinList (v χ) _
       (List.mem_map.2 ⟨χ, (fiber_mem_iff M h χ).1 hχ, rfl⟩)
-  · refine Charge.joinList_le _ _ ?_
+  · refine Reading.joinList_le _ _ ?_
     intro a ha
     rcases List.mem_map.1 ha with ⟨χ, hχ, rfl⟩
-    exact Charge.le_joinList (v χ) _
+    exact Reading.le_joinList (v χ) _
       (List.mem_map.2 ⟨χ, (fiber_mem_iff M h χ).2 hχ, rfl⟩)
 
 /-- **commutating** — the lax 2-cell `◇□v ≤ₖ □◇v`. The two ways of composing the
@@ -215,22 +215,22 @@ points, where each class is constant. -/
 theorem necessitate_possibilize_le (v : Valuation) :
     leK (possibilize M (necessitate M v)) (necessitate M (possibilize M v)) := by
   intro φ
-  show Charge.KLE (Charge.joinList ((M.fiber φ).map (necessitate M v)))
-      (Charge.meetList ((M.fiber φ).map (possibilize M v)))
-  refine Charge.joinList_le _ _ ?_
+  show Reading.KLE (Reading.joinList ((M.fiber φ).map (necessitate M v)))
+      (Reading.meetList ((M.fiber φ).map (possibilize M v)))
+  refine Reading.joinList_le _ _ ?_
   intro a ha
   rcases List.mem_map.1 ha with ⟨ψ, hψ, rfl⟩
-  refine Charge.le_meetList _ _ ?_
+  refine Reading.le_meetList _ _ ?_
   intro b hb
   rcases List.mem_map.1 hb with ⟨χ, hχ, rfl⟩
   -- `□v ψ ≤ v φ ≤ ◇v χ` : φ ∈ Rψ and φ ∈ Rχ by symmetry.
   have hφψ : φ ∈ M.fiber ψ := M.symm φ ψ hψ
   have hφχ : φ ∈ M.fiber χ := M.symm φ χ hχ
-  have h1 : Charge.KLE (necessitate M v ψ) (v φ) :=
-    Charge.meetList_le (v φ) _ (List.mem_map.2 ⟨φ, hφψ, rfl⟩)
-  have h2 : Charge.KLE (v φ) (possibilize M v χ) :=
-    Charge.le_joinList (v φ) _ (List.mem_map.2 ⟨φ, hφχ, rfl⟩)
-  exact Charge.kle_trans _ _ _ h1 h2
+  have h1 : Reading.KLE (necessitate M v ψ) (v φ) :=
+    Reading.meetList_le (v φ) _ (List.mem_map.2 ⟨φ, hφψ, rfl⟩)
+  have h2 : Reading.KLE (v φ) (possibilize M v χ) :=
+    Reading.le_joinList (v φ) _ (List.mem_map.2 ⟨φ, hφχ, rfl⟩)
+  exact Reading.kle_trans _ _ _ h1 h2
 
 /-! ## The closure settling iterates — *possibilize then necessitate* -/
 
@@ -245,14 +245,14 @@ theorem closureOp_eq_possibilize (v : Valuation) :
     closureOp M v = possibilize M v := by
   funext φ
   show necessitate M (possibilize M v) φ = possibilize M v φ
-  apply Charge.kle_antisymm
+  apply Reading.kle_antisymm
   · exact necessitate_le M (possibilize M v) φ
   · -- `◇v φ ≤ □◇v φ = ⨅_{ψ∈Rφ} ◇v ψ`; and `◇v ψ = ◇v φ` for ψ ∈ Rφ.
-    refine Charge.le_meetList _ _ ?_
+    refine Reading.le_meetList _ _ ?_
     intro a ha
     rcases List.mem_map.1 ha with ⟨ψ, hψ, rfl⟩
     rw [possibilize_const M hψ]
-    exact Charge.kle_refl _
+    exact Reading.kle_refl _
 
 /-- **The closure is extensive** — `v ≤ₖ cl v`. (It is `◇`, which is
 inflationary.) -/
@@ -273,26 +273,26 @@ theorem closureOp_idem (v : Valuation) : closureOp M (closureOp M v) = closureOp
   -- goal: `◇(◇v) = ◇v`
   funext φ
   show possibilize M (possibilize M v) φ = possibilize M v φ
-  apply Charge.kle_antisymm
+  apply Reading.kle_antisymm
   · -- `◇◇v φ = ⨆_{ψ∈Rφ} ◇v ψ ≤ ◇v φ` since `◇v ψ = ◇v φ`.
-    refine Charge.joinList_le _ _ ?_
+    refine Reading.joinList_le _ _ ?_
     intro a ha
     rcases List.mem_map.1 ha with ⟨ψ, hψ, rfl⟩
     rw [possibilize_const M hψ]
-    exact Charge.kle_refl _
+    exact Reading.kle_refl _
   · exact le_possibilize M (possibilize M v) φ
 
 /-! ## Tie to `Settling` / Knaster–Tarski — the closure as least fixed point -/
 
-/-- The pointwise-charge form of the closure, so it slots into the `Charge`-level
+/-- The pointwise-reading form of the closure, so it slots into the `Reading`-level
 settling machinery. On a frame this is the cell's class knowledge-join. -/
 theorem closureOp_apply (v : Valuation) (φ : PredicationCell) :
-    closureOp M v φ = Charge.joinList ((M.fiber φ).map v) :=
+    closureOp M v φ = Reading.joinList ((M.fiber φ).map v) :=
   congrFun (closureOp_eq_possibilize M v) φ
 
 /-- **Settling**: the fixed point reached from a seed valuation by the modal
 closure — for a closure the orbit stabilizes, so the settled value is `cl seed`.
-Mirrors `Charge.settle` lifted to valuations. -/
+Mirrors `Reading.settle` lifted to valuations. -/
 def settle (v : Valuation) : Valuation := closureOp M v
 
 /-- **The settled valuation is a fixed point** — nothing left to descend.

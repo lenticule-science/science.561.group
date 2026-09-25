@@ -47,7 +47,7 @@ same actual value, hence are equal blowups (isomorphic in the arrow category).
 
 As in `FiringBlowup`, the settling trajectory is modelled by the
 Nat-indexed closure orbit (every stage a successor); the limit-ordinal / NSC sub-class is
-documented there. The `Charge` carrier is the finite four-point FOUR, so the increment
+documented there. The `Reading` carrier is the finite four-point FOUR, so the increment
 table is a complete case analysis — there is nothing outside it. The consistency-failure
 datum `γ_μ` is, for a `⊤`-firing, exactly `some (predecessor φ)`; it is bundled as the
 third field of `LocalData` per the corpus, and is recoverable from the predecessor, so the
@@ -86,7 +86,7 @@ the cell does not fire. Because `after ≥ₖ before` always (`predecessor_le_ac
 the table's increment cases and the diagonal arise; every other `before/after` pair (a
 ≤ₖ-*decrease* or an incomparable pair) is impossible at a real firing and is mapped to
 `none` by the catch-all (it never occurs). -/
-def cellType (before after : Charge) : Option FiringType :=
+def cellType (before after : Reading) : Option FiringType :=
   match before, after with
   -- ⊥ₖ = absurd, t = potential, f = active, ⊤ₖ = stable
   | Articulating.Corner.absurd,    Articulating.Corner.potential => some FiringType.tSide -- ⊥ → t
@@ -101,8 +101,8 @@ increment (`before ≤ₖ after`, the standing direction), `cellType before afte
 `before = after` — i.e. the cell is **not** in the incidence pattern. The hypothesis
 `before ≤ₖ after` (always available cell-wise from `predecessor_le_actual`) rules out the
 ≤ₖ-decrease pairs, so the only `none` case is the diagonal. -/
-theorem cellType_none_iff (before after : Charge)
-    (h : Charge.leK before after = true) :
+theorem cellType_none_iff (before after : Reading)
+    (h : Reading.leK before after = true) :
     cellType before after = none ↔ before = after := by
   constructor
   · intro hnone; revert hnone h; cases before <;> cases after <;> decide
@@ -110,12 +110,12 @@ theorem cellType_none_iff (before after : Charge)
 
 /-- A non-firing cell (`before = after`) has `cellType = none` — the diagonal direction of
 `cellType_none_iff`, needing no ≤ₖ hypothesis. -/
-@[simp] theorem cellType_self (a : Charge) : cellType a a = none := by cases a <;> rfl
+@[simp] theorem cellType_self (a : Reading) : cellType a a = none := by cases a <;> rfl
 
 /-- From the active/false-only corner, every monotone nontrivial cell-wise firing is
 the consistency-failure row `active → stable`. -/
-theorem active_nontrivial_forward_cellType_top {after : Charge}
-    (hle : Charge.leK Articulating.Corner.active after = true)
+theorem active_nontrivial_forward_cellType_top {after : Reading}
+    (hle : Reading.leK Articulating.Corner.active after = true)
     (hne : after ≠ Articulating.Corner.active) :
     cellType Articulating.Corner.active after = some FiringType.top ∧
       after = Articulating.Corner.stable := by
@@ -123,15 +123,15 @@ theorem active_nontrivial_forward_cellType_top {after : Charge}
   cases after <;> decide
 
 /-- The active corner has a top firing exactly at the stable target. -/
-theorem active_cellType_top_iff_stable (after : Charge) :
+theorem active_cellType_top_iff_stable (after : Reading) :
     cellType Articulating.Corner.active after = some FiringType.top ↔
       after = Articulating.Corner.stable := by
   cases after <;> decide
 
 /-- From the potential/true-only corner, every monotone nontrivial cell-wise firing is
 the consistency-failure row `potential → stable`. -/
-theorem potential_nontrivial_forward_cellType_top {after : Charge}
-    (hle : Charge.leK Articulating.Corner.potential after = true)
+theorem potential_nontrivial_forward_cellType_top {after : Reading}
+    (hle : Reading.leK Articulating.Corner.potential after = true)
     (hne : after ≠ Articulating.Corner.potential) :
     cellType Articulating.Corner.potential after = some FiringType.top ∧
       after = Articulating.Corner.stable := by
@@ -192,19 +192,19 @@ by `before` and `τ_μ(φ)` alone. -/
 For the three increment kinds the after-value is the *bound* the firing rises to — the
 predecessor disappears from the data because the increment table is **deterministic** in
 its result column. -/
-def reconstruct (before : Charge) : Option FiringType → Charge
+def reconstruct (before : Reading) : Option FiringType → Reading
   | none                 => before
-  | some FiringType.tSide => Charge.tTop
-  | some FiringType.fSide => Charge.tBot
-  | some FiringType.top   => Charge.kTop
+  | some FiringType.tSide => Reading.tTop
+  | some FiringType.fSide => Reading.tBot
+  | some FiringType.top   => Reading.kTop
 
 /-- **Cell-wise completeness.** `reconstruct before (cellType before after) = after` for
 every firing increment (`before ≤ₖ after`). The predecessor together with the cell-wise
-firing type **reconstructs the actual value**. Proved by exhausting the finite `Charge`:
+firing type **reconstructs the actual value**. Proved by exhausting the finite `Reading`:
 the ≤ₖ hypothesis kills the off-table pairs, and each of the five table rows reconstructs
 its result column, while the diagonal rows reconstruct `before = after`. -/
-theorem reconstruct_cellType (before after : Charge)
-    (h : Charge.leK before after = true) :
+theorem reconstruct_cellType (before after : Reading)
+    (h : Reading.leK before after = true) :
     reconstruct before (cellType before after) = after := by
   cases before <;> cases after <;> revert h <;> decide
 
@@ -216,14 +216,14 @@ For a `⊤`-firing the corpus records the predecessor-side source `s = v^{→μ}
 /-- **The cell-wise consistency-failure source** `γ_μ(φ)`: when the firing type at `φ` is
 `top`, the predecessor value `before` that became `⊤ₖ` (the source of the consistency
 failure — `⊥` full firing, `t` falsity-acquired, `f` truth-acquired); otherwise `none`. -/
-def cellFailure (before after : Charge) : Option Charge :=
+def cellFailure (before after : Reading) : Option Reading :=
   match cellType before after with
   | some FiringType.top => some before
   | _                   => none
 
 /-- The consistency-failure source, when present, is exactly the predecessor value — so
 `γ_μ` carries no information beyond the predecessor and the firing type. -/
-theorem cellFailure_eq (before after : Charge)
+theorem cellFailure_eq (before after : Reading)
     (h : cellType before after = some FiringType.top) :
     cellFailure before after = some before := by
   unfold cellFailure; rw [h]
@@ -242,7 +242,7 @@ consistency-failure source `γ` — over the whole predication base, exactly the
 structure LocalData where
   incidence : PredicationCell → Bool
   firingType : PredicationCell → Option FiringType
-  consistencyFailure : PredicationCell → Option Charge
+  consistencyFailure : PredicationCell → Option Reading
 
 /-- **Extract the local data** of the firing at step `n` from its blowup
 `(predecessor, actual)`:
@@ -273,7 +273,7 @@ direction `predecessor φ ≤ₖ actual φ` from `predecessor_le_actual`. -/
 theorem firingType_none_iff_not_incident
     (M : ModalFrame) (seed : Valuation) (n : Nat) (φ : PredicationCell) :
     (localData M seed n).firingType φ = none ↔ (localData M seed n).incidence φ = false := by
-  have hle : Charge.leK (predecessor M seed n φ) (actual M seed n φ) = true :=
+  have hle : Reading.leK (predecessor M seed n φ) (actual M seed n φ) = true :=
     predecessor_le_actual M seed n φ
   simp only [localData]
   rw [cellType_none_iff _ _ hle, decide_eq_false_iff_not]

@@ -63,7 +63,7 @@ the directed family `history` of prior connectivity stages whose `≤ₖ`-join i
 configuration. The `FlowStep` on which reconnection is a predicate. -/
 structure FieldLineFlow where
   /-- The field-line connectivity-update operator at this stage. -/
-  update : Charge → Charge
+  update : Reading → Reading
   /-- The directed family of prior connectivity stages (the orbit-prefix). -/
   history : DirectedFamily
 
@@ -89,14 +89,14 @@ theorem reconnection_event_implies_firing (F : FieldLineFlow)
 /-- **An ideal field-line flow never reconnects.** When the update is a charge-closure (the
 idealized, frozen-in evolution), no stage-prefix is a reconnection event — over the finite carrier a
 closure is Scott-continuous, so frozen-in flux holds at every limit. -/
-theorem ideal_flow_has_no_reconnection (cl : Charge.Closure) (S : DirectedFamily) :
+theorem ideal_flow_has_no_reconnection (cl : Reading.Closure) (S : DirectedFamily) :
     ¬ ReconnectionEvent { update := cl.op, history := S } :=
   no_nsc_firing_of_closure cl S
 
 /-- **A flat regime forbids reconnection.** If the field-line flow's regime is flat (Scott-continuous,
 `κ ≤ ω` — ideal MHD, `H¹ = 0`), then no stage-prefix is a reconnection event: the frozen-in constraint
 holds throughout. The ideal-MHD prohibition, read off `vanishes_iff_flat`. -/
-theorem flat_regime_forbids_reconnection_event (cl : Charge.Closure) (d : ClosureRegimeData)
+theorem flat_regime_forbids_reconnection_event (cl : Reading.Closure) (d : ClosureRegimeData)
     (hmatch : d.scottContinuous = true ↔ IsScottContinuous cl)
     (hflat : IsFlat (classify d)) (S : DirectedFamily) :
     ¬ ReconnectionEvent { update := cl.op, history := S } := by
@@ -106,7 +106,7 @@ theorem flat_regime_forbids_reconnection_event (cl : Charge.Closure) (d : Closur
 /-- **Reconnection forces non-vanishing cohomology** (`H¹ ≠ 0`). A reconnection event at any
 stage-prefix places the closure flow in a curved regime: `cohomologyVanishes (classify d) = false`. The
 discontinuity carries a `H¹` generator — the curvature module is non-trivial. -/
-theorem reconnection_event_implies_H1_nonzero (cl : Charge.Closure) (d : ClosureRegimeData)
+theorem reconnection_event_implies_H1_nonzero (cl : Reading.Closure) (d : ClosureRegimeData)
     (hmatch : d.scottContinuous = true ↔ IsScottContinuous cl)
     (S : DirectedFamily) (hrec : ReconnectionEvent { update := cl.op, history := S }) :
     cohomologyVanishes (classify d) = false := by
@@ -116,7 +116,7 @@ theorem reconnection_event_implies_H1_nonzero (cl : Charge.Closure) (d : Closure
 
 /-- **Reconnection puts the flow in a curved regime.** The cohomological reading of
 `reconnection_event_implies_H1_nonzero`: a reconnection event forces `IsCurved (classify d)`. -/
-theorem reconnection_event_regime_curved (cl : Charge.Closure) (d : ClosureRegimeData)
+theorem reconnection_event_regime_curved (cl : Reading.Closure) (d : ClosureRegimeData)
     (hmatch : d.scottContinuous = true ↔ IsScottContinuous cl)
     (S : DirectedFamily) (hrec : ReconnectionEvent { update := cl.op, history := S }) :
     IsCurved (classify d) :=

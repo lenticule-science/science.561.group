@@ -45,7 +45,7 @@ import Obsmetrologia.CausalSets.Operator.BenincasaDowker
 import Obsmetrologia.CausalSets.Operator.Coefficients
 import Obsmetrologia.CausalSets.Operator.DAlembertian
 import Obsmetrologia.CausalSets.Support.Causal
-import Obsmetrologia.CausalSets.Support.Charged
+import Obsmetrologia.CausalSets.Support.Valued
 import Obsmetrologia.CausalSets.Support.Cotangent
 import Obsmetrologia.CausalSets.Support.Microlocal
 import Obsmetrologia.CausalSets.Support.Polarization

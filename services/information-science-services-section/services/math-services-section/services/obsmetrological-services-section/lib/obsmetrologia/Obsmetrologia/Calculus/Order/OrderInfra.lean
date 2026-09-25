@@ -13,9 +13,9 @@ algebras) builds on — dependency-free, in `namespace Order`.
 (algebraic, order `a ≤ b := a ⊓ b = a`, with `∧`/`∨` proven glb/lub and the two orders
 shown to agree); `CompleteLattice` (arbitrary `sSup`/`sInf` with universal properties —
 the substrate for Knaster–Tarski); `Monotone`; `Closure` (extensive/monotone/idempotent
-endomap on a `Preorder`). `Charge` populates `PartialOrder` and `BoundedLattice`
-(`chargePartialOrder`, `chargeLattice`), with the two order readings shown to agree
-(`chargeLattice_le_iff_KLE`). No free data.
+endomap on a `Preorder`). `Reading` populates `PartialOrder` and `BoundedLattice`
+(`readingPartialOrder`, `readingLattice`), with the two order readings shown to agree
+(`readingLattice_le_iff_KLE`). No free data.
 -/
 
 namespace Obsmetrologia
@@ -40,7 +40,7 @@ structure Monotone (P Q : Preorder) where
   mono : ∀ {a b}, P.le a b → Q.le (map a) (map b)
 
 /-- A closure operator on a preorder: extensive, monotone, idempotent
-(`Settling`'s `Charge.Closure`, generalized from the fixed carrier `Charge` to any
+(`Settling`'s `Reading.Closure`, generalized from the fixed carrier `Reading` to any
 `Preorder`). -/
 structure Closure (P : Preorder) where
   op : P.carrier → P.carrier
@@ -191,51 +191,51 @@ theorem le_sInf (S : C.carrier → Prop) (b : C.carrier) (h : ∀ a, S a → C.l
 
 end CompleteLattice
 
-/-! ## Charge, as an instance of the order hierarchy
+/-! ## Reading, as an instance of the order hierarchy
 
-`Settling` proves `Charge.KLE` a partial order and `Charge.joinK`/`meetK` its lub/glb
+`Settling` proves `Reading.KLE` a partial order and `Reading.joinK`/`meetK` its lub/glb
 by finite exhaustion, but never packages the result as an `Order.PartialOrder` or
-`Order.BoundedLattice` — the two developments were only comment-linked. Here `Charge`
+`Order.BoundedLattice` — the two developments were only comment-linked. Here `Reading`
 literally populates both structures, closing that gap. -/
 
-/-- `Charge.meetK a b = a ↔ Charge.KLE a b`: the lattice order `Order.Lattice.le`
+/-- `Reading.meetK a b = a ↔ Reading.KLE a b`: the lattice order `Order.Lattice.le`
 (defined as `meet a b = a`) agrees with the knowledge order `≤ₖ`, by exhaustion over
-the four charges. -/
-theorem Charge.meetK_eq_iff_KLE (a b : Charge) : Charge.meetK a b = a ↔ Charge.KLE a b := by
+the four readings. -/
+theorem Reading.meetK_eq_iff_KLE (a b : Reading) : Reading.meetK a b = a ↔ Reading.KLE a b := by
   cases a <;> cases b <;> decide
 
-/-- `Charge`, as an `Order.PartialOrder`: carrier `Charge`, order `Charge.KLE`. -/
-def chargePartialOrder : PartialOrder where
-  carrier := Charge
-  le := Charge.KLE
-  le_refl := Charge.kle_refl
-  le_trans := fun {a b c} => Charge.kle_trans a b c
-  le_antisymm := fun {a b} => Charge.kle_antisymm a b
+/-- `Reading`, as an `Order.PartialOrder`: carrier `Reading`, order `Reading.KLE`. -/
+def readingPartialOrder : PartialOrder where
+  carrier := Reading
+  le := Reading.KLE
+  le_refl := Reading.kle_refl
+  le_trans := fun {a b c} => Reading.kle_trans a b c
+  le_antisymm := fun {a b} => Reading.kle_antisymm a b
 
-/-- `Charge`, as an `Order.BoundedLattice`: `∧ = meetK`, `∨ = joinK`, `⊤ = kTop`,
-`⊥ = kBot`. Every law is a `Settling`/`Charge` lemma proved by finite exhaustion. -/
-def chargeLattice : BoundedLattice where
-  carrier := Charge
-  meet := Charge.meetK
-  join := Charge.joinK
-  meet_comm := Charge.meetK_comm
-  meet_assoc := Charge.meetK_assoc
-  meet_idem := Charge.meetK_idem
-  join_comm := Charge.joinK_comm
-  join_assoc := Charge.joinK_assoc
-  join_idem := Charge.joinK_idem
-  absorb_mj := Charge.absorbK₂
-  absorb_jm := Charge.absorbK₁
-  top := Charge.kTop
-  bot := Charge.kBot
-  meet_top := fun a => by rw [Charge.meetK_comm]; exact Charge.meetK_kTop a
-  join_bot := fun a => by rw [Charge.joinK_comm]; exact Charge.joinK_kBot a
+/-- `Reading`, as an `Order.BoundedLattice`: `∧ = meetK`, `∨ = joinK`, `⊤ = kTop`,
+`⊥ = kBot`. Every law is a `Settling`/`Reading` lemma proved by finite exhaustion. -/
+def readingLattice : BoundedLattice where
+  carrier := Reading
+  meet := Reading.meetK
+  join := Reading.joinK
+  meet_comm := Reading.meetK_comm
+  meet_assoc := Reading.meetK_assoc
+  meet_idem := Reading.meetK_idem
+  join_comm := Reading.joinK_comm
+  join_assoc := Reading.joinK_assoc
+  join_idem := Reading.joinK_idem
+  absorb_mj := Reading.absorbK₂
+  absorb_jm := Reading.absorbK₁
+  top := Reading.kTop
+  bot := Reading.kBot
+  meet_top := fun a => by rw [Reading.meetK_comm]; exact Reading.meetK_kTop a
+  join_bot := fun a => by rw [Reading.joinK_comm]; exact Reading.joinK_kBot a
 
-/-- `chargeLattice`'s derived order (`meetK a b = a`) agrees with `chargePartialOrder`'s
-`Charge.KLE` — the algebraic and relational readings of `Charge`'s order coincide. -/
-theorem chargeLattice_le_iff_KLE (a b : Charge) :
-    chargeLattice.toLattice.le a b ↔ chargePartialOrder.le a b :=
-  Charge.meetK_eq_iff_KLE a b
+/-- `readingLattice`'s derived order (`meetK a b = a`) agrees with `readingPartialOrder`'s
+`Reading.KLE` — the algebraic and relational readings of `Reading`'s order coincide. -/
+theorem readingLattice_le_iff_KLE (a b : Reading) :
+    readingLattice.toLattice.le a b ↔ readingPartialOrder.le a b :=
+  Reading.meetK_eq_iff_KLE a b
 
 end Order
 end Obsmetrologia

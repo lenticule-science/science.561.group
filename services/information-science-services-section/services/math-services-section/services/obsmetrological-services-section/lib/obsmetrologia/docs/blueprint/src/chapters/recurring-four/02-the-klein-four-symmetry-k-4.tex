@@ -2,23 +2,23 @@
 
 This section records claim nodes and dependency edges.
 
-\begin{proposition}[Conflation and its composite]\label{thm:conflate}\lean{Obsmetrologia.Charge.conflate}\leanok\uses{thm:four-object}
-\texttt{Charge.conflate}, written~$-$, is the knowledge-negation $\langle a, b\rangle \mapsto \langle \neg b, \neg a\rangle$: it swaps $\bot_k \leftrightarrow \top_k$ and fixes $t$ and $f$. Together with negation~$\sim$ it generates $K_4$. The companion \texttt{Charge.negConf} is the coordinatewise complement $\langle a, b\rangle \mapsto \langle \neg a, \neg b\rangle$, the third nontrivial element ${\sim}\circ{-}$.
+\begin{proposition}[Conflation and its composite]\label{thm:conflate}\lean{Obsmetrologia.Reading.conflate}\leanok\uses{thm:four-object}
+\texttt{Reading.conflate}, written~$-$, is the knowledge-negation $\langle a, b\rangle \mapsto \langle \neg b, \neg a\rangle$: it swaps $\bot_k \leftrightarrow \top_k$ and fixes $t$ and $f$. Together with negation~$\sim$ it generates $K_4$. The companion \texttt{Reading.negConf} is the coordinatewise complement $\langle a, b\rangle \mapsto \langle \neg a, \neg b\rangle$, the third nontrivial element ${\sim}\circ{-}$.
 \end{proposition}
-\begin{theorem}[The generators commute]\label{thm:negate-conflate-comm}\lean{Obsmetrologia.Charge.negate_conflate_comm}\leanok\uses{thm:conflate}
-\texttt{Charge.negate\_conflate\_comm} proves ${\sim}\circ{-} = {-}\circ{\sim}$: negation and conflation commute. \texttt{Charge.negate\_conflate} identifies their common value as \texttt{negConf}, the coordinatewise complement. Commutation is the hinge that makes the four composites close into a group rather than a larger structure.
+\begin{theorem}[The generators commute]\label{thm:negate-conflate-comm}\lean{Obsmetrologia.Reading.negate_conflate_comm}\leanok\uses{thm:conflate}
+\texttt{Reading.negate\_conflate\_comm} proves ${\sim}\circ{-} = {-}\circ{\sim}$: negation and conflation commute. \texttt{Reading.negate\_conflate} identifies their common value as \texttt{negConf}, the coordinatewise complement. Commutation is the hinge that makes the four composites close into a group rather than a larger structure.
 \end{theorem}
-\begin{theorem}[Negation's order-effects]\label{thm:negate-orders}\lean{Obsmetrologia.Charge.negate_preserves_kle}\leanok\uses{thm:conflate, thm:four-bilattice}
-\texttt{Charge.negate\_preserves\_kle} proves $\sim$ preserves the knowledge order ($\mathrm{KLE}\,({\sim}a)\,({\sim}b) \leftrightarrow \mathrm{KLE}\,a\,b$), while \texttt{Charge.negate\_reverses\_tle} proves $\sim$ reverses the truth order ($\mathrm{TLE}\,({\sim}a)\,({\sim}b) \leftrightarrow \mathrm{TLE}\,b\,a$). Negation is the symmetry that fixes knowledge and dualizes truth.
+\begin{theorem}[Negation's order-effects]\label{thm:negate-orders}\lean{Obsmetrologia.Reading.negate_preserves_kle}\leanok\uses{thm:conflate, thm:four-bilattice}
+\texttt{Reading.negate\_preserves\_kle} proves $\sim$ preserves the knowledge order ($\mathrm{KLE}\,({\sim}a)\,({\sim}b) \leftrightarrow \mathrm{KLE}\,a\,b$), while \texttt{Reading.negate\_reverses\_tle} proves $\sim$ reverses the truth order ($\mathrm{TLE}\,({\sim}a)\,({\sim}b) \leftrightarrow \mathrm{TLE}\,b\,a$). Negation is the symmetry that fixes knowledge and dualizes truth.
 \end{theorem}
-\begin{theorem}[Conflation's order-effects]\label{thm:conflate-orders}\lean{Obsmetrologia.Charge.conflate_reverses_kle}\leanok\uses{thm:conflate, thm:kle, thm:four-bilattice}
-Dually, \texttt{Charge.conflate\_reverses\_kle} proves $-$ reverses the knowledge order and \texttt{Charge.conflate\_preserves\_tle} proves $-$ preserves the truth order. The two generators partition the two orders' duties between them: each fixes one order and reverses the other.
+\begin{theorem}[Conflation's order-effects]\label{thm:conflate-orders}\lean{Obsmetrologia.Reading.conflate_reverses_kle}\leanok\uses{thm:conflate, thm:kle, thm:four-bilattice}
+Dually, \texttt{Reading.conflate\_reverses\_kle} proves $-$ reverses the knowledge order and \texttt{Reading.conflate\_preserves\_tle} proves $-$ preserves the truth order. The two generators partition the two orders' duties between them: each fixes one order and reverses the other.
 \end{theorem}
-\begin{theorem}[The composite reverses both]\label{thm:negconf-reverses}\lean{Obsmetrologia.Charge.negConf_reverses_kle}\leanok\uses{thm:negate-orders, thm:conflate-orders}
-\texttt{Charge.negConf\_reverses\_kle} (with its truth-order companion) proves ${\sim}\circ{-}$ reverses \emph{both} orders. The product of two symmetries each reversing exactly one order reverses both --- the $\mathbb{Z}/2 \times \mathbb{Z}/2$ structure read off the order-effects.
+\begin{theorem}[The composite reverses both]\label{thm:negconf-reverses}\lean{Obsmetrologia.Reading.negConf_reverses_kle}\leanok\uses{thm:negate-orders, thm:conflate-orders}
+\texttt{Reading.negConf\_reverses\_kle} (with its truth-order companion) proves ${\sim}\circ{-}$ reverses \emph{both} orders. The product of two symmetries each reversing exactly one order reverses both --- the $\mathbb{Z}/2 \times \mathbb{Z}/2$ structure read off the order-effects.
 \end{theorem}
-\begin{theorem}[The Klein-four group]\label{thm:klein-four-symmetry}\lean{Obsmetrologia.Charge.klein_four}\leanok\uses{thm:negate-conflate-comm, thm:negconf-reverses}
-\texttt{Charge.klein\_four} bundles the group facts of $\{\mathrm{id}, \sim, -, {\sim}\circ{-}\}$: each of the three nontrivial elements is an involution, and the products $\sim\circ- = {\sim}\circ{-} = -\circ\sim$ close the set. This is $K_4 \cong \mathbb{Z}/2 \times \mathbb{Z}/2$, the natural symmetry group of FOUR equipped with both negation and conflation --- the two orders' duality made a group.
+\begin{theorem}[The Klein-four group]\label{thm:klein-four-symmetry}\lean{Obsmetrologia.Reading.klein_four}\leanok\uses{thm:negate-conflate-comm, thm:negconf-reverses}
+\texttt{Reading.klein\_four} bundles the group facts of $\{\mathrm{id}, \sim, -, {\sim}\circ{-}\}$: each of the three nontrivial elements is an involution, and the products $\sim\circ- = {\sim}\circ{-} = -\circ\sim$ close the set. This is $K_4 \cong \mathbb{Z}/2 \times \mathbb{Z}/2$, the natural symmetry group of FOUR equipped with both negation and conflation --- the two orders' duality made a group.
 \end{theorem}
 
 This section records claim nodes and dependency edges.
@@ -44,10 +44,10 @@ This section records claim nodes and dependency edges.
 
 \subsection{The dihedral extension $D_4 = K_4 \sqcup K_4\cdot\sigma$}
 
-\begin{proposition}[The order-swap involution $\sigma$]\label{thm:swap-kle-tle}\lean{Obsmetrologia.Charge.swap, Obsmetrologia.Charge.swap_kle_tle}\leanok\uses{thm:four-bilattice}
-\texttt{Charge.swap}, written $\sigma$, is the fifth symmetry of FOUR that belongs to neither
+\begin{proposition}[The order-swap involution $\sigma$]\label{thm:swap-kle-tle}\lean{Obsmetrologia.Reading.swap, Obsmetrologia.Reading.swap_kle_tle}\leanok\uses{thm:four-bilattice}
+\texttt{Reading.swap}, written $\sigma$, is the fifth symmetry of FOUR that belongs to neither
 order's automorphism group: in slot coordinates $\sigma\langle a,b\rangle = \langle a, \neg
-b\rangle$, distinct from $\sim$ and $-$. \texttt{Charge.swap\_kle\_tle} proves $\sigma$ is an
+b\rangle$, distinct from $\sim$ and $-$. \texttt{Reading.swap\_kle\_tle} proves $\sigma$ is an
 order-isomorphism $(\mathrm{Charge},\le_k) \cong (\mathrm{Charge},\le_t)$: it carries the knowledge
 order onto the truth order and back, exchanging the two orders rather than preserving or reversing
 either one.
@@ -55,7 +55,7 @@ either one.
 \begin{proposition}[The carrier $D_8$]\label{thm:d8-carrier}\lean{Obsmetrologia.D4.D8}\leanok\uses{thm:k4-group, thm:swap-kle-tle}
 \texttt{D4.D8} is the eight-constructor inductive $\{\texttt{id}, \texttt{neg}, \texttt{conf},
 \texttt{negConf}, \texttt{swap}, \texttt{negSwap}, \texttt{confSwap}, \texttt{negConfSwap}\}$: the
-$K_4$ coset extended by the order-swap involution $\sigma$ (\texttt{Charge.swap}) and its three
+$K_4$ coset extended by the order-swap involution $\sigma$ (\texttt{Reading.swap}) and its three
 $K_4$-composites. \texttt{D4.D8.act\_extends\_K4} proves the first four elements act exactly as
 \texttt{Positing.Gauge.K4.act} does --- $D_8$ extends $K_4$, it does not redefine it.
 \end{proposition}
@@ -77,7 +77,7 @@ group to $D_4$ rather than $\mathbb{Z}/4\times\mathbb{Z}/2$ or $(\mathbb{Z}/2)^3
 \begin{theorem}[$D_4 = \mathrm{Aut}(\mathrm{FOUR}; \{\le_k, \le_t\})$]\label{thm:d4-is-aut-four}\lean{Obsmetrologia.D4.d4_is_aut_four}\leanok\uses{thm:d4-is-dihedral}
 \texttt{D4.d4\_is\_aut\_four} proves the semantic content: the $K_4$ coset preserves each order
 setwise (never exchanging $\le_k$ and $\le_t$, via $K_4$'s existing order-effect lemmas), the
-$\sigma$-coset exchanges $\le_k \leftrightarrow \le_t$ (via \texttt{Charge.swap\_kle\_tle}), and the
+$\sigma$-coset exchanges $\le_k \leftrightarrow \le_t$ (via \texttt{Reading.swap\_kle\_tle}), and the
 coset-membership bit is a homomorphism $D_8 \to \mathbb{Z}/2$ (\texttt{D4.D8.coset\_hom}), so $K_4$
 is normal of index 2 --- the stabilizer of the \emph{ordered} pair $(\le_k, \le_t)$, with $D_4$ the
 stabilizer of the \emph{unordered} pair $\{\le_k, \le_t\}$, the full dihedral symmetry of the
@@ -102,7 +102,7 @@ presentation of the existing Klein-four carrier.
 and \texttt{Charger.arrowDual\_toK4}, \texttt{Charger.finitenessDual\_toK4},
 and \texttt{Charger.composite\_toK4} identify the toggles with left
 multiplication by the three nontrivial elements of \(K_4\).  The existing
-\texttt{Charge.swap\_swap} order-swap duality is recorded only as an
+\texttt{Reading.swap\_swap} order-swap duality is recorded only as an
 arrow-reversal-shaped witness; it is distinct from the original charge \(K_4\)
 elements.
 \end{theorem}

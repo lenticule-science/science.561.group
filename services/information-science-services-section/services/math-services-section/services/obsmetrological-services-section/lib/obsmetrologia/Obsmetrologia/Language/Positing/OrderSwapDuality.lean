@@ -4,7 +4,7 @@ import Obsmetrologia.Language.Positing.Four
 # Order-swap duality — σ transports knowledge theory to truth theory
 
 `Settling` generated the **knowledge** order `≤ₖ` and `TruthOrder` the **truth**
-order `≤ₜ` on the *same* four charges. `Four` exhibited the Klein-four symmetry
+order `≤ₜ` on the *same* four readings. `Four` exhibited the Klein-four symmetry
 `⟨~, −⟩`, whose elements each preserve one order and reverse the other. There is a
 fifth symmetry of FOUR that neither group element is: the **order-swap involution**
 `σ`, which does not preserve either lattice individually — it **exchanges** the two
@@ -24,7 +24,7 @@ diagram.
 This module proves:
 
 1. **`σ` is involutive** — `σ(σ c) = c`.
-2. **`σ` is an order-iso `(Charge,≤ₖ) ≅ (Charge,≤ₜ)`** — `KLE a b ↔ TLE (σ a) (σ b)`
+2. **`σ` is an order-iso `(Reading,≤ₖ) ≅ (Reading,≤ₜ)`** — `KLE a b ↔ TLE (σ a) (σ b)`
    (and the inverse direction `TLE a b ↔ KLE (σ a) (σ b)`). So `σ` carries the
    knowledge order to the truth order and back; the two bounded lattices are
    isomorphic posets.
@@ -32,7 +32,7 @@ This module proves:
    and `σ(meetK a b) = meetT (σ a) (σ b)` (and the converses) — the `TruthOrder`
    module's `joinT`/`meetT` are literally the `σ`-images of `joinK`/`meetK`.
 4. **The transport meta-lemma** (the connective tissue): given *hypotheses* that
-   `j : Charge→Charge` is inflationary / monotone / idempotent in the **knowledge**
+   `j : Reading→Reading` is inflationary / monotone / idempotent in the **knowledge**
    order — NOT importing `Settling.Closure` — the conjugate `σ ∘ j ∘ σ` is
    inflationary / monotone / idempotent in the **truth** order. Hence every
    `≤ₖ`-closure σ-conjugates to a `≤ₜ`-closure (and, by `σ`-involutivity, conversely).
@@ -42,11 +42,11 @@ This module proves:
 -/
 
 namespace Obsmetrologia
-namespace Charge
+namespace Reading
 
 /-! ## The order-swap involution σ -/
 
-/-- The **order-swap involution** `σ : Charge → Charge`. In slot coordinates
+/-- The **order-swap involution** `σ : Reading → Reading`. In slot coordinates
 `σ⟨a,b⟩ = ⟨a, ¬b⟩`: keep the positive (evidence-for) slot, flip the negative
 (evidence-against) slot. This is the bijection that swaps the extremes of the two
 orders, `⊥ₖ ↔ f` and `t ↔ ⊤ₖ`.
@@ -55,14 +55,14 @@ Distinct from negation `negate ⟨a,b⟩ = ⟨b,a⟩` (which swaps `t ↔ f`) an
 conflation `conflate ⟨a,b⟩ = ⟨¬b,¬a⟩` (which swaps `⊥ₖ ↔ ⊤ₖ`): `σ` is the one
 symmetry of FOUR that belongs to *neither* order's automorphism group, because it
 exchanges the orders. -/
-def swap (a : Charge) : Charge := ofSlots a.pos (!a.neg)
+def swap (a : Reading) : Reading := ofSlots a.pos (!a.neg)
 
-@[simp] theorem swap_pos (a : Charge) : (swap a).pos = a.pos := by
+@[simp] theorem swap_pos (a : Reading) : (swap a).pos = a.pos := by
   simp [swap]
-@[simp] theorem swap_neg (a : Charge) : (swap a).neg = !a.neg := by
+@[simp] theorem swap_neg (a : Reading) : (swap a).neg = !a.neg := by
   simp [swap]
 
-/-! ### The action of σ on the four charges (the table σ : ⊥ₖ↔f, t↔⊤ₖ) -/
+/-! ### The action of σ on the four readings (the table σ : ⊥ₖ↔f, t↔⊤ₖ) -/
 
 @[simp] theorem swap_kBot : swap kBot = tBot := rfl
 @[simp] theorem swap_tBot : swap tBot = kBot := rfl
@@ -78,7 +78,7 @@ theorem swap_table :
 
 /-- **`σ` is an involution**: `σ(σ c) = c`. The order-swap is its own inverse, so it
 is a duality, not a one-way collapse. -/
-@[simp] theorem swap_swap (a : Charge) : swap (swap a) = a := by cases a <;> rfl
+@[simp] theorem swap_swap (a : Reading) : swap (swap a) = a := by cases a <;> rfl
 
 /-- `σ` is distinct from each Klein-four element: it agrees with none of
 `negate`, `conflate`, `negConf` on all of FOUR (witnessed at `⊥ₖ`). -/
@@ -87,23 +87,23 @@ theorem swap_ne_conflate : swap kBot ≠ conflate kBot := by decide
 theorem swap_ne_negConf : swap kBot ≠ negConf kBot := by decide
 theorem swap_ne_id : swap kBot ≠ kBot := by decide
 
-/-! ## (2) σ is an order-iso (Charge,≤ₖ) ≅ (Charge,≤ₜ) -/
+/-! ## (2) σ is an order-iso (Reading,≤ₖ) ≅ (Reading,≤ₜ) -/
 
 /-- **`σ` carries `≤ₖ` to `≤ₜ`.** `KLE a b ↔ TLE (σ a) (σ b)`: the order-swap is an
 order-isomorphism from the knowledge order to the truth order. Proven by
 cases-exhaustion then `decide` on the Boolean `leK`/`leT`. -/
-theorem swap_kle_tle (a b : Charge) : KLE a b ↔ TLE (swap a) (swap b) := by
+theorem swap_kle_tle (a b : Reading) : KLE a b ↔ TLE (swap a) (swap b) := by
   cases a <;> cases b <;> decide
 
 /-- **`σ` carries `≤ₜ` to `≤ₖ`.** `TLE a b ↔ KLE (σ a) (σ b)` — the inverse
 direction. Together with `swap_kle_tle` this is the full poset isomorphism
-`(Charge,≤ₖ) ≅ (Charge,≤ₜ)`. -/
-theorem swap_tle_kle (a b : Charge) : TLE a b ↔ KLE (swap a) (swap b) := by
+`(Reading,≤ₖ) ≅ (Reading,≤ₜ)`. -/
+theorem swap_tle_kle (a b : Reading) : TLE a b ↔ KLE (swap a) (swap b) := by
   cases a <;> cases b <;> decide
 
 /-- The same fact stated on the swapped arguments: `≤ₜ` of `σ`-images is exactly
 `≤ₖ` of the originals. -/
-theorem tle_swap_iff (a b : Charge) : TLE (swap a) (swap b) ↔ KLE a b :=
+theorem tle_swap_iff (a b : Reading) : TLE (swap a) (swap b) ↔ KLE a b :=
   (swap_kle_tle a b).symm
 
 /-- `σ` maps the knowledge-bottom/top to the truth-bottom/top: the bounds transport. -/
@@ -116,30 +116,30 @@ The `TruthOrder` operations `joinT`/`meetT` are literally the `σ`-images of the
 
 /-- **`σ(a ∨ₖ b) = (σ a) ∨ₜ (σ b)`** — `σ` carries the knowledge-join to the
 truth-join. So `joinT` *is* `σ`-conjugated `joinK`. -/
-theorem swap_joinK (a b : Charge) : swap (joinK a b) = joinT (swap a) (swap b) := by
+theorem swap_joinK (a b : Reading) : swap (joinK a b) = joinT (swap a) (swap b) := by
   cases a <;> cases b <;> rfl
 
 /-- **`σ(a ∧ₖ b) = (σ a) ∧ₜ (σ b)`** — `σ` carries the knowledge-meet to the
 truth-meet. -/
-theorem swap_meetK (a b : Charge) : swap (meetK a b) = meetT (swap a) (swap b) := by
+theorem swap_meetK (a b : Reading) : swap (meetK a b) = meetT (swap a) (swap b) := by
   cases a <;> cases b <;> rfl
 
 /-- The converse identity: `σ(a ∨ₜ b) = (σ a) ∨ₖ (σ b)`. By `σ`-involutivity the
 homomorphism runs both ways — the two bounded lattices are `σ`-conjugate. -/
-theorem swap_joinT (a b : Charge) : swap (joinT a b) = joinK (swap a) (swap b) := by
+theorem swap_joinT (a b : Reading) : swap (joinT a b) = joinK (swap a) (swap b) := by
   cases a <;> cases b <;> rfl
 
 /-- The converse meet identity: `σ(a ∧ₜ b) = (σ a) ∧ₖ (σ b)`. -/
-theorem swap_meetT (a b : Charge) : swap (meetT a b) = meetK (swap a) (swap b) := by
+theorem swap_meetT (a b : Reading) : swap (meetT a b) = meetK (swap a) (swap b) := by
   cases a <;> cases b <;> rfl
 
 /-- Stated as the matching identity the spec names: `joinT a b = σ (joinK (σ a) (σ b))`,
 i.e. truth-join is the `σ`-conjugate of knowledge-join (the form used to *transport*
 a `joinK` fact to a `joinT` fact). -/
-theorem joinT_eq_conj (a b : Charge) : joinT a b = swap (joinK (swap a) (swap b)) := by
+theorem joinT_eq_conj (a b : Reading) : joinT a b = swap (joinK (swap a) (swap b)) := by
   cases a <;> cases b <;> rfl
 
-theorem meetT_eq_conj (a b : Charge) : meetT a b = swap (meetK (swap a) (swap b)) := by
+theorem meetT_eq_conj (a b : Reading) : meetT a b = swap (meetK (swap a) (swap b)) := by
   cases a <;> cases b <;> rfl
 
 /-! ## (4) The transport meta-lemma — every ≤ₖ-closure σ-conjugates to a ≤ₜ-closure
@@ -149,16 +149,16 @@ conclude them in the truth order for the conjugate `σ ∘ j ∘ σ`. No `Settli
 is imported here: this is the pure transport principle. -/
 
 /-- The `σ`-conjugate of an endomap: `conj j := σ ∘ j ∘ σ`. -/
-def conj (j : Charge → Charge) : Charge → Charge := fun a => swap (j (swap a))
+def conj (j : Reading → Reading) : Reading → Reading := fun a => swap (j (swap a))
 
 /-- `conj` is involutive on endomaps: `conj (conj j) = j`. -/
-theorem conj_conj (j : Charge → Charge) : conj (conj j) = j := by
+theorem conj_conj (j : Reading → Reading) : conj (conj j) = j := by
   funext a; simp [conj, swap_swap]
 
 /-- **Transport of inflation.** If `j` is `≤ₖ`-inflationary (`∀ a, KLE a (j a)`) then
 its conjugate `σ∘j∘σ` is `≤ₜ`-inflationary. Apply `σ` to the knowledge inflation at
 `σ a` and read it back through the order-iso. -/
-theorem conj_infl (j : Charge → Charge)
+theorem conj_infl (j : Reading → Reading)
     (hj : ∀ a, KLE a (j a)) : ∀ a, TLE a (conj j a) := by
   intro a
   -- knowledge inflation at the point σ a:  KLE (σ a) (j (σ a))
@@ -171,7 +171,7 @@ theorem conj_infl (j : Charge → Charge)
 /-- **Transport of monotonicity.** If `j` is `≤ₖ`-monotone then `σ∘j∘σ` is
 `≤ₜ`-monotone. A `≤ₜ`-step `TLE a b` becomes a `≤ₖ`-step under `σ`, `j` preserves it,
 and `σ` carries it back to a `≤ₜ`-step. -/
-theorem conj_mono (j : Charge → Charge)
+theorem conj_mono (j : Reading → Reading)
     (hj : ∀ a b, KLE a b → KLE (j a) (j b)) :
     ∀ a b, TLE a b → TLE (conj j a) (conj j b) := by
   intro a b hab
@@ -185,7 +185,7 @@ theorem conj_mono (j : Charge → Charge)
 
 /-- **Transport of idempotence.** If `j` is idempotent (`∀ a, j (j a) = j a`) then so
 is `σ∘j∘σ`. Purely equational: the inner `σ∘σ` cancels. -/
-theorem conj_idem (j : Charge → Charge)
+theorem conj_idem (j : Reading → Reading)
     (hj : ∀ a, j (j a) = j a) : ∀ a, conj j (conj j a) = conj j a := by
   intro a
   simp only [conj, swap_swap, hj]
@@ -235,7 +235,7 @@ theorem toClosure_toTClosure_op (c : Closure) :
 `TruthOrder.joinTClosure (σ k)` (raise toward `σ k` by `∨ₜ`) — the concrete instance
 of the meta-lemma, witnessing that the canonical closures of the two orders are
 `σ`-images of one another. -/
-theorem toTClosure_joinClosure_op (k : Charge) :
+theorem toTClosure_joinClosure_op (k : Reading) :
     (Closure.toTClosure (joinClosure k)).op = (joinTClosure (swap k)).op := by
   funext a
   show swap (joinK k (swap a)) = joinT (swap k) a
@@ -243,9 +243,9 @@ theorem toTClosure_joinClosure_op (k : Charge) :
 
 /-- Consequently the `σ`-conjugate of knowledge-settling `⊥ₖ → k` is truth-settling
 `f → σ k`: transport carries the settled value `k` to its `σ`-image `σ k`. -/
-theorem swap_settle_joinClosure (k : Charge) :
+theorem swap_settle_joinClosure (k : Reading) :
     swap (settle (joinClosure k) kBot) = settleT (joinTClosure (swap k)) tBot := by
   rw [settle_kBot, settleT_tBot]
 
-end Charge
+end Reading
 end Obsmetrologia

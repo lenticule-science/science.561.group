@@ -22,7 +22,7 @@ The circle, with each edge a theorem or a documented model-theoretic fact:
 * **(1) FCA-closure = settling-closure.** The FCA derivation closure
   `closeA A := A″ = primeB (primeA A)` (`FormalConceptAnalysis`) is *extensive,
   monotone, idempotent* — the very shape of closure the **settling** morphism
-  iterates (`Settling`'s `Charge.Closure`: `infl`/`mono`/`idem`). So "computing formal
+  iterates (`Settling`'s `Reading.Closure`: `infl`/`mono`/`idem`). So "computing formal
   concepts" **is** "running the settling closure on a finite formal context"
   (the corpus's "computing concepts is computing closures"). Proved by `reuse` of
   FCA's own `subA_closeA` / `closeA_mono` / `closeA_idem`.
@@ -55,11 +55,11 @@ open Obsmetrologia.Order
 
 /-! ## Edge (1): the FCA derivation closure IS a settling-shape closure operator
 
-The settling morphism (`Settling`) iterates a `Charge.Closure`: an endomap that is
+The settling morphism (`Settling`) iterates a `Reading.Closure`: an endomap that is
 **inflationary/extensive, monotone, idempotent**. FCA's `closeA I` is an endomap on
 the powerset `ExtSet G` with *exactly* those three laws (`subA_closeA`,
 `closeA_mono`, `closeA_idem`). We package them as FCA's own `ClosureOp` — the
-powerset reading of `Charge.Closure` — establishing the identity at the abstract
+powerset reading of `Reading.Closure` — establishing the identity at the abstract
 closure-operator level: the FCA closure on a finite formal context is a settling
 closure. -/
 
@@ -69,7 +69,7 @@ closure `closeA I` (`A ↦ A″`) satisfies the three abstract closure-operator 
 **extensive** (`A ⊆ closeA A`), **monotone**, **idempotent**
 (`closeA (closeA A) = closeA A`) — bundled as FCA's `ClosureOp G`.
 
-These are exactly the laws of `Settling.Charge.Closure` (`infl`/`mono`/`idem`): both
+These are exactly the laws of `Settling.Reading.Closure` (`infl`/`mono`/`idem`): both
 are extensive + monotone + idempotent endomaps, so `closeA` on a finite context **is**
 the settling closure, and "computing formal concepts" is "running the settling closure"
 (the corpus's *computing concepts is computing closures*). The proof **reuses** FCA's
@@ -82,7 +82,7 @@ def fcaClosureOp {G M : Type} (I : G → M → Prop) :
   idem := FCA.closeA_idem I
 
 /-- The three closure laws, projected back out of the bundle, witnessing the
-extensive/monotone/idempotent shape shared with `Settling`'s `Charge.Closure`. -/
+extensive/monotone/idempotent shape shared with `Settling`'s `Reading.Closure`. -/
 theorem fca_closure_laws {G M : Type} (I : G → M → Prop) :
     (∀ A : FCA.ExtSet G, FCA.subA A (FCA.closeA I A))
       ∧ (∀ {A1 A2 : FCA.ExtSet G}, FCA.subA A1 A2 → FCA.subA (FCA.closeA I A1) (FCA.closeA I A2))

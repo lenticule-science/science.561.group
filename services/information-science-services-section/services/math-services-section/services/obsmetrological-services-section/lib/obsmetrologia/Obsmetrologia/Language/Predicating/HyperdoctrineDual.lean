@@ -17,7 +17,7 @@ Frobenius reciprocity, and Beck–Chevalley in BOTH the knowledge order `≤ₖ`
 (built in `Hyperdoctrine`/`Quantifying`) and the truth order `≤ₜ` (built in
 `Equality`). The corpus's claim is that the truth-order system is NOT a fresh
 construction but the **σ-conjugate** of the knowledge-order one, where `σ` is the
-order-swap involution of `OrderSwapDuality` carrying `(Charge,≤ₖ) ≅ (Charge,≤ₜ)`.
+order-swap involution of `OrderSwapDuality` carrying `(Reading,≤ₖ) ≅ (Reading,≤ₜ)`.
 
 We make σ act on whole valuations (`Valuation.swap = σ ∘ –`) and prove:
 
@@ -51,13 +51,13 @@ namespace Valuation
 /-! ## σ on valuations — the order-iso lifted pointwise -/
 
 /-- The order-swap `σ` acting on a whole valuation, pointwise:
-`(σ v) φ = Charge.swap (v φ)`. This is the lift of `OrderSwapDuality`'s order-iso
+`(σ v) φ = Reading.swap (v φ)`. This is the lift of `OrderSwapDuality`'s order-iso
 to the fibration's fibre objects (the valuations). -/
-def swap (v : Valuation) : Valuation := fun φ => Charge.swap (v φ)
+def swap (v : Valuation) : Valuation := fun φ => Reading.swap (v φ)
 
-/-- `σ` is involutive on valuations — the lift of `Charge.swap_swap`. -/
+/-- `σ` is involutive on valuations — the lift of `Reading.swap_swap`. -/
 @[simp] theorem swap_swap (v : Valuation) : swap (swap v) = v := by
-  funext φ; simp [swap, Charge.swap_swap]
+  funext φ; simp [swap, Reading.swap_swap]
 
 /-- **`σ` lifts to an order-iso on valuations.** `leK v w ↔ leT (σ v) (σ w)`: the
 valuation knowledge order maps onto the valuation truth order under `σ`, pointwise
@@ -66,18 +66,18 @@ by `OrderSwapDuality.swap_kle_tle`. (`Valuation.leT` is `Equality`'s pointwise
 theorem valSwap_leK_leT (v w : Valuation) : leK v w ↔ leT (swap v) (swap w) := by
   constructor
   · intro h φ
-    exact (Charge.swap_kle_tle (v φ) (w φ)).1 (h φ)
+    exact (Reading.swap_kle_tle (v φ) (w φ)).1 (h φ)
   · intro h φ
-    exact (Charge.swap_kle_tle (v φ) (w φ)).2 (h φ)
+    exact (Reading.swap_kle_tle (v φ) (w φ)).2 (h φ)
 
 /-- The inverse direction: `leT v w ↔ leK (σ v) (σ w)` — the full poset iso on
 valuations, by `OrderSwapDuality.swap_tle_kle`. -/
 theorem valSwap_leT_leK (v w : Valuation) : leT v w ↔ leK (swap v) (swap w) := by
   constructor
   · intro h φ
-    exact (Charge.swap_tle_kle (v φ) (w φ)).1 (h φ)
+    exact (Reading.swap_tle_kle (v φ) (w φ)).1 (h φ)
   · intro h φ
-    exact (Charge.swap_tle_kle (v φ) (w φ)).2 (h φ)
+    exact (Reading.swap_tle_kle (v φ) (w φ)).2 (h φ)
 
 /-! ## Generic σ-transport of a Galois connection (connective tissue #5) -/
 
@@ -111,23 +111,23 @@ theorem galoisK_to_galoisT (L R : Valuation → Valuation) (h : GaloisK L R) :
 
 /-- `σ` distributes over the knowledge fiber-join list as the truth fiber-join
 list: `σ (joinList l) = joinTList (l.map σ)`. The σ-image of a `≤ₖ` fiber join is
-the `≤ₜ` fiber join of the σ-imaged charges — the engine behind `existsF ↦ existsT`. -/
-theorem swap_joinList : ∀ l : List Charge,
-    Charge.swap (Charge.joinList l) = Charge.joinTList (l.map Charge.swap)
+the `≤ₜ` fiber join of the σ-imaged readings — the engine behind `existsF ↦ existsT`. -/
+theorem swap_joinList : ∀ l : List Reading,
+    Reading.swap (Reading.joinList l) = Reading.joinTList (l.map Reading.swap)
   | [] => rfl
   | a :: l => by
-      show Charge.swap (Charge.joinK a (Charge.joinList l))
-        = Charge.joinT (Charge.swap a) (Charge.joinTList (l.map Charge.swap))
-      rw [Charge.swap_joinK, swap_joinList l]
+      show Reading.swap (Reading.joinK a (Reading.joinList l))
+        = Reading.joinT (Reading.swap a) (Reading.joinTList (l.map Reading.swap))
+      rw [Reading.swap_joinK, swap_joinList l]
 
 /-- Dually, `σ (meetList l) = meetTList (l.map σ)`. -/
-theorem swap_meetList : ∀ l : List Charge,
-    Charge.swap (Charge.meetList l) = Charge.meetTList (l.map Charge.swap)
+theorem swap_meetList : ∀ l : List Reading,
+    Reading.swap (Reading.meetList l) = Reading.meetTList (l.map Reading.swap)
   | [] => rfl
   | a :: l => by
-      show Charge.swap (Charge.meetK a (Charge.meetList l))
-        = Charge.meetT (Charge.swap a) (Charge.meetTList (l.map Charge.swap))
-      rw [Charge.swap_meetK, swap_meetList l]
+      show Reading.swap (Reading.meetK a (Reading.meetList l))
+        = Reading.meetT (Reading.swap a) (Reading.meetTList (l.map Reading.swap))
+      rw [Reading.swap_meetK, swap_meetList l]
 
 /-- **`σ`-transport of the existential.** The σ-conjugate of the knowledge
 existential `∃_f` IS the truth existential `∃ᵗ_f` of `Equality`. So `existsT` is
@@ -135,31 +135,31 @@ NOT a fresh construction — it is `σ ∘ existsF ∘ σ`. -/
 theorem conj_existsF_eq_existsT (F : FiniteFibration) :
     conj (existsF F) = existsT F := by
   funext v φ
-  show Charge.swap (existsF F (swap v) φ) = existsT F v φ
-  show Charge.swap (Charge.joinList ((F.fiber φ).map (swap v)))
-      = Charge.joinTList ((F.fiber φ).map v)
+  show Reading.swap (existsF F (swap v) φ) = existsT F v φ
+  show Reading.swap (Reading.joinList ((F.fiber φ).map (swap v)))
+      = Reading.joinTList ((F.fiber φ).map v)
   rw [swap_joinList]
   congr 1
   rw [List.map_map]
   apply List.map_congr_left
   intro ψ _
-  show Charge.swap (Charge.swap (v ψ)) = v ψ
-  exact Charge.swap_swap (v ψ)
+  show Reading.swap (Reading.swap (v ψ)) = v ψ
+  exact Reading.swap_swap (v ψ)
 
 /-- **`σ`-transport of the universal.** Likewise `σ ∘ ∀_f ∘ σ = ∀ᵗ_f`. -/
 theorem conj_forallF_eq_forallT (F : FiniteFibration) :
     conj (forallF F) = forallT F := by
   funext v φ
-  show Charge.swap (forallF F (swap v) φ) = forallT F v φ
-  show Charge.swap (Charge.meetList ((F.fiber φ).map (swap v)))
-      = Charge.meetTList ((F.fiber φ).map v)
+  show Reading.swap (forallF F (swap v) φ) = forallT F v φ
+  show Reading.swap (Reading.meetList ((F.fiber φ).map (swap v)))
+      = Reading.meetTList ((F.fiber φ).map v)
   rw [swap_meetList]
   congr 1
   rw [List.map_map]
   apply List.map_congr_left
   intro ψ _
-  show Charge.swap (Charge.swap (v ψ)) = v ψ
-  exact Charge.swap_swap (v ψ)
+  show Reading.swap (Reading.swap (v ψ)) = v ψ
+  exact Reading.swap_swap (v ψ)
 
 /-- `σ`-transport of reindexing: reindexing is σ-self-conjugate, `σ ∘ f* ∘ σ = f*`,
 because `f*` acts in the base (precomposition) and σ acts in the fibre. So the
@@ -168,9 +168,9 @@ hyperdoctrine demands. -/
 theorem conj_reindex_eq (r : PredicationCell → PredicationCell) :
     conj (reindex r) = reindex r := by
   funext v φ
-  show Charge.swap (reindex r (swap v) φ) = reindex r v φ
-  show Charge.swap (Charge.swap (v (r φ))) = v (r φ)
-  exact Charge.swap_swap (v (r φ))
+  show Reading.swap (reindex r (swap v) φ) = reindex r v φ
+  show Reading.swap (Reading.swap (v (r φ))) = v (r φ)
+  exact Reading.swap_swap (v (r φ))
 
 /-- **HEADLINE (A): the dual adjoint system `∃ᵗ ⊣ f* ⊣ ∀ᵗ`.** Both halves of the
 truth-order triple are the σ-transports of `Quantifying`'s knowledge-order
@@ -216,7 +216,7 @@ single diagonal `diagFiber` is pushed through the knowledge existential to give
 `paraconsistentEq`, and σ-transport (which sends `∃ᵏ ↦ ∃ᵗ`, `kTop ↦ tTop`,
 `kBot ↦ tBot`) turns it into `classicalEq`. -/
 theorem classicalEq_eq_swap_paraconsistentEq (s o : Entity) :
-    classicalEq s o = Charge.swap (paraconsistentEq s o) := by
+    classicalEq s o = Reading.swap (paraconsistentEq s o) := by
   unfold classicalEq paraconsistentEq
   rw [Valuation.swap_joinList]
   rw [List.map_map]
@@ -235,12 +235,12 @@ diagonal they land at the respective bottoms. Equality is derived, not postulate
 and one diagonal yields both. -/
 theorem two_equalities_one_diagonal (s o : Entity) :
     -- both arise from the one diagonal via σ-conjugate adjoint systems
-    (classicalEq s o = Charge.swap (paraconsistentEq s o))
+    (classicalEq s o = Reading.swap (paraconsistentEq s o))
     -- reflexivity at the two orders' tops
-    ∧ (classicalEq s s = Charge.tTop ∧ paraconsistentEq s s = Charge.kTop)
+    ∧ (classicalEq s s = Reading.tTop ∧ paraconsistentEq s s = Reading.kTop)
     -- the explicit two-valued / two-polar readings on/off the diagonal
-    ∧ (classicalEq s o = if s = o then Charge.tTop else Charge.tBot)
-    ∧ (paraconsistentEq s o = if s = o then Charge.kTop else Charge.kBot) := by
+    ∧ (classicalEq s o = if s = o then Reading.tTop else Reading.tBot)
+    ∧ (paraconsistentEq s o = if s = o then Reading.kTop else Reading.kBot) := by
   refine ⟨classicalEq_eq_swap_paraconsistentEq s o,
           ⟨classicalEq_refl s, paraconsistentEq_refl s⟩,
           classicalEq_eq s o, paraconsistentEq_eq s o⟩
@@ -253,16 +253,16 @@ namespace Valuation
 `σ (v ∧ₖ w) = (σ v) ∧ₜ (σ w)` — the valuation lift of `OrderSwapDuality.swap_meetK`.
 (`meetT` here is the pointwise truth-meet of valuations, defined locally to match
 `Valuation.meetK`.) -/
-def meetT (v w : Valuation) : Valuation := fun φ => Charge.meetT (v φ) (w φ)
+def meetT (v w : Valuation) : Valuation := fun φ => Reading.meetT (v φ) (w φ)
 
 /-- `σ` carries the pointwise knowledge-meet to the pointwise truth-meet:
 `σ (v ∧ₖ w) = (σ v) ∧ₜ (σ w)` — the valuation lift of `OrderSwapDuality.swap_meetK`.
 This is the equation that transports `≤ₖ` meet-Frobenius to the `≤ₜ` order. -/
 theorem swap_meetK (v w : Valuation) : swap (meetK v w) = meetT (swap v) (swap w) := by
   funext φ
-  show Charge.swap (Charge.meetK (v φ) (w φ))
-      = Charge.meetT (Charge.swap (v φ)) (Charge.swap (w φ))
-  exact Charge.swap_meetK (v φ) (w φ)
+  show Reading.swap (Reading.meetK (v φ) (w φ))
+      = Reading.meetT (Reading.swap (v φ)) (Reading.swap (w φ))
+  exact Reading.swap_meetK (v φ) (w φ)
 
 /-- Reindexing preserves the pointwise truth-meet (the `meetT` companion of
 `Hyperdoctrine.reindex_meetK`), since it is pure precomposition in the base. -/

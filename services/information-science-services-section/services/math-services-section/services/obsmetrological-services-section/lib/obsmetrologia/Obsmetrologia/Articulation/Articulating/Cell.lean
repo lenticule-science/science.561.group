@@ -48,7 +48,7 @@ and are kept as honest history. See `docs/history/corner-naming-convention.md`.
 namespace Obsmetrologia
 
 /-- A slot: the witnesses carried on one side of a cell. Lossless: it only grows.
-Witnesses are tokens — "the mark is a token" (`charge.schema.json`, voidmath) —
+Witnesses are tokens — "the mark is a token" (`reading.schema.json`, voidmath) —
 on both the token side and the claim side. -/
 abbrev Slot := List Token
 
@@ -162,7 +162,7 @@ theorem engage_tokenArticulated (c : Articulating.Cell) (w : Token) :
 
 /-- **The un-articulated position**: both slots empty, ⊥. This is where a cell
 *would* be before any articulation; it is not articulating's output, only the
-value algebra's (`meetK`) — see `Positing.Charge`. Replaces `Cell.initial`. -/
+value algebra's (`meetK`) — see `Positing.Reading`. Replaces `Cell.initial`. -/
 def unarticulated (u : Utterance) : Articulating.Cell := ⟨u, [], []⟩
 
 @[simp] theorem unarticulated_corner (u : Utterance) :

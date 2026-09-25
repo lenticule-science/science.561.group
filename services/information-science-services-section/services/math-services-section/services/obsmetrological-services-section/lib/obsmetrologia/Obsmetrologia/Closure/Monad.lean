@@ -32,21 +32,21 @@ No free data.
 -/
 
 namespace Obsmetrologia
-namespace Charge
+namespace Reading
 
 /-- **KZ ⟺ strict, on a poset.** For a monotone-inflationary `f`, the Kock–Zöberlein
 inequality `f(f a) ≤ₖ f a` (lax-idempotence) is equivalent to strict idempotence —
 because the knowledge order is antisymmetric. This is the projection of *lax-idempotence
 + Scott-continuity ⟹ strict idempotence*: collapse happens exactly where the order
 is thin. -/
-theorem kz_iff_strict (f : Charge → Charge) (hf : ∀ a, KLE a (f a)) :
+theorem kz_iff_strict (f : Reading → Reading) (hf : ∀ a, KLE a (f a)) :
     (∀ a, KLE (f (f a)) (f a)) ↔ (∀ a, f (f a) = f a) := by
   constructor
   · intro hkz a; exact kle_antisymm _ _ (hkz a) (hf (f a))
   · intro hstrict a; rw [hstrict a]; exact kle_refl _
 
 /-- The orbit is monotone in the index: `iter f m v ≤ₖ iter f (m+d) v`. -/
-theorem iter_le_add (f : Charge → Charge) (hf : ∀ a, KLE a (f a)) (v : Charge) (m : Nat) :
+theorem iter_le_add (f : Reading → Reading) (hf : ∀ a, KLE a (f a)) (v : Reading) (m : Nat) :
     ∀ d, KLE (iter f m v) (iter f (m + d) v)
   | 0 => kle_refl _
   | d + 1 => kle_trans _ _ _ (iter_le_add f hf v m d) (iter_step_le f hf v (m + d))
@@ -54,7 +54,7 @@ theorem iter_le_add (f : Charge → Charge) (hf : ∀ a, KLE a (f a)) (v : Charg
 /-- **No non-trivial periodic orbits.** A closure operator has only period-1 orbits:
 if iterating returns to the start, the start was already a fixed point. (The
 dynamical face of lax-idempotence: the orbit ascends and cannot cycle.) -/
-theorem no_periodic_orbits (c : Closure) (v : Charge) {k : Nat} (hk : 1 ≤ k)
+theorem no_periodic_orbits (c : Closure) (v : Reading) {k : Nat} (hk : 1 ≤ k)
     (h : iter c.op k v = v) : c.op v = v := by
   have hge : KLE v (c.op v) := c.infl v
   have hle : KLE (c.op v) v := by
@@ -67,31 +67,31 @@ theorem no_periodic_orbits (c : Closure) (v : Charge) {k : Nat} (hk : 1 ≤ k)
 
 /-- One settling step: saturate under the closure, then knowledge-join the external
 increment `u`. The closure-2-monad is the inferential engine; `u` is the input. -/
-def settleStep (c : Closure) (u : Charge) (v : Charge) : Charge := joinK (c.op v) u
+def settleStep (c : Closure) (u : Reading) (v : Reading) : Reading := joinK (c.op v) u
 
 /-- The settling step is inflationary: each step only adds knowledge. -/
-theorem settleStep_infl (c : Closure) (u : Charge) (v : Charge) :
+theorem settleStep_infl (c : Closure) (u : Reading) (v : Reading) :
     KLE v (settleStep c u v) :=
   kle_trans _ _ _ (c.infl v) (le_joinK_left (c.op v) u)
 
 /-- **Settling terminates.** The settling-endofunctor reaches its fixed point in `≤ 3`
 steps — the strict-finite regime, via the closure-ordinal bound. -/
-theorem settleStep_settles (c : Closure) (u : Charge) (v : Charge) :
+theorem settleStep_settles (c : Closure) (u : Reading) (v : Reading) :
     iter (settleStep c u) 3 v = iter (settleStep c u) 4 v :=
   settles_by_three (settleStep c u) (settleStep_infl c u) v
 
 /-! ## The KZ monad data (η, μ) of a closure, and the K1 counit -/
 
 /-- The unit `η` of the closure monad: inclusion-into-closure (inflation). -/
-theorem unit (c : Closure) (v : Charge) : KLE v (c.op v) := c.infl v
+theorem unit (c : Closure) (v : Reading) : KLE v (c.op v) := c.infl v
 
 /-- The multiplication `μ` of the closure monad: nested-closure collapse
 (idempotence — the strict `μ`). -/
-theorem mult (c : Closure) (v : Charge) : c.op (c.op v) = c.op v := c.idem v
+theorem mult (c : Closure) (v : Reading) : c.op (c.op v) = c.op v := c.idem v
 
 /-- The Kelly–Lack (K1) counit triangle `μ · η_Cl = 1_Cl`: at `c v`, the composite
 `c v →^η c(c v) →^μ c v` is the identity. Here it is exactly idempotence at `c v`. -/
-theorem counit_triangle (c : Closure) (v : Charge) : c.op (c.op v) = c.op v := c.idem v
+theorem counit_triangle (c : Closure) (v : Reading) : c.op (c.op v) = c.op v := c.idem v
 
-end Charge
+end Reading
 end Obsmetrologia

@@ -969,7 +969,7 @@ theorem badBackwardSeedCell_nontrivial_forward_firing_isTop
     (hbad : BadFirstPassageBackwardSeed p n)
     {after : Articulating.Corner}
     (hle :
-      Charge.leK
+      Reading.leK
         (firstPassageBackwardSeedCell u p n hseed).corner after = true)
     (hne : after ≠
       (firstPassageBackwardSeedCell u p n hseed).corner) :
@@ -991,7 +991,7 @@ theorem badBackwardSeedCell_nontrivial_forward_realizedSeed_not_bad
     (hbad : BadFirstPassageBackwardSeed p n)
     (hseed' : FirstPassageBackwardSeed p m)
     (hle :
-      Charge.leK
+      Reading.leK
         (firstPassageBackwardSeedCell u p n hseed).corner
         (firstPassageBackwardSeedCell u p m hseed').corner = true)
     (hne :
@@ -1013,7 +1013,7 @@ theorem badBackwardSeedCell_nontrivial_forward_realizedSeed_carryPositive
     (hbad : BadFirstPassageBackwardSeed p n)
     (hseed' : FirstPassageBackwardSeed p m)
     (hle :
-      Charge.leK
+      Reading.leK
         (firstPassageBackwardSeedCell u p n hseed).corner
         (firstPassageBackwardSeedCell u p m hseed').corner = true)
     (hne :

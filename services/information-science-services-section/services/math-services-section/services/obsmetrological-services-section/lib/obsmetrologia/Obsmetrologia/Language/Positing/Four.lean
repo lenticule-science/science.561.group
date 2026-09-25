@@ -7,7 +7,7 @@ The number **four** recurs across the whole spine, and the corpus's claim is tha
 these are not analogies but **one four-element object met at successive depths**:
 
 * the four **articulation phases** `Articulating.Corner` — absurd / potential / active / stable;
-* the four **bilattice charges** `Charge` — ⊥ₖ / t / f / ⊤ₖ (here `Charge := Articulating.Corner`,
+* the four **bilattice readings** `Reading` — ⊥ₖ / t / f / ⊤ₖ (here `Reading := Articulating.Corner`,
   so this identity is *definitional*: the same object, re-met as value);
 * the four **status pairs** `Bool × Bool` — `(token, claim)` = `(positive, negative)`;
 * the four **predicate generators** — specialization / converse / subject- and
@@ -56,35 +56,35 @@ theorem card_eq_four : all.length = 4 := rfl
 end Generator
 
 /-- **The four-fold identity.** Every incarnation of the recurring four has exactly
-four elements: the articulation phases, the predicate generators — and the charges
-*are* the phases (`Charge := Articulating.Corner`, definitionally). One object, met at depth. -/
+four elements: the articulation phases, the predicate generators — and the readings
+*are* the phases (`Reading := Articulating.Corner`, definitionally). One object, met at depth. -/
 theorem four_fold : Articulating.Corner.all.length = 4 ∧ Generator.all.length = 4 := ⟨rfl, rfl⟩
 
-/-- The charge/phase identity is definitional: a bilattice charge **is** an
+/-- The reading/phase identity is definitional: a bilattice reading **is** an
 articulation phase, re-met as value. -/
-theorem charge_is_phase (c : Articulating.Corner) : (c : Charge) = c := rfl
+theorem reading_is_phase (c : Articulating.Corner) : (c : Reading) = c := rfl
 
 /-! ## The Klein-four symmetry K₄ = ⟨~, −⟩ -/
 
-namespace Charge
+namespace Reading
 
 /-- Conflation `−`: the knowledge-negation, `⟨a,b⟩ ↦ ⟨¬b, ¬a⟩`. Swaps ⊥↔⊤, fixes
 t and f. (Negation `~` = `negate`, the coordinate swap, is in `Positing`.) -/
-def conflate (a : Charge) : Charge := ofSlots (!a.neg) (!a.pos)
+def conflate (a : Reading) : Reading := ofSlots (!a.neg) (!a.pos)
 
 /-- `~∘−`: coordinatewise complement, `⟨a,b⟩ ↦ ⟨¬a, ¬b⟩` — the third nontrivial
 element of K₄. -/
-def negConf (a : Charge) : Charge := ofSlots (!a.pos) (!a.neg)
+def negConf (a : Reading) : Reading := ofSlots (!a.pos) (!a.neg)
 
 /-! ### The two generators are commuting involutions -/
 
-@[simp] theorem conflate_conflate (a : Charge) : conflate (conflate a) = a := by cases a <;> rfl
+@[simp] theorem conflate_conflate (a : Reading) : conflate (conflate a) = a := by cases a <;> rfl
 /-- The generators **commute**: `~∘− = −∘~`. -/
-theorem negate_conflate_comm (a : Charge) : negate (conflate a) = conflate (negate a) := by
+theorem negate_conflate_comm (a : Reading) : negate (conflate a) = conflate (negate a) := by
   cases a <;> rfl
 /-- Their composite is the coordinatewise complement. -/
-theorem negate_conflate (a : Charge) : negate (conflate a) = negConf a := by cases a <;> rfl
-@[simp] theorem negConf_negConf (a : Charge) : negConf (negConf a) = a := by cases a <;> rfl
+theorem negate_conflate (a : Reading) : negate (conflate a) = negConf a := by cases a <;> rfl
+@[simp] theorem negConf_negConf (a : Reading) : negConf (negConf a) = a := by cases a <;> rfl
 
 /-! ### The action of K₄ on FOUR (the table) -/
 
@@ -104,38 +104,38 @@ theorem conflate_orbit : conflate kBot = kTop ∧ conflate kTop = kBot
 /-! ### Each generator's effect on the two orders -/
 
 /-- `~` preserves the knowledge order. -/
-theorem negate_preserves_kle (a b : Charge) : KLE (negate a) (negate b) ↔ KLE a b := by
+theorem negate_preserves_kle (a b : Reading) : KLE (negate a) (negate b) ↔ KLE a b := by
   simp only [KLE, negate_leK]
 /-- `~` reverses the truth order. -/
-theorem negate_reverses_tle (a b : Charge) : TLE (negate a) (negate b) ↔ TLE b a := by
+theorem negate_reverses_tle (a b : Reading) : TLE (negate a) (negate b) ↔ TLE b a := by
   simp only [TLE, negate_leT]
 /-- `−` reverses the knowledge order. -/
-theorem conflate_reverses_kle (a b : Charge) : KLE (conflate a) (conflate b) ↔ KLE b a := by
+theorem conflate_reverses_kle (a b : Reading) : KLE (conflate a) (conflate b) ↔ KLE b a := by
   cases a <;> cases b <;> decide
 /-- `−` preserves the truth order. -/
-theorem conflate_preserves_tle (a b : Charge) : TLE (conflate a) (conflate b) ↔ TLE a b := by
+theorem conflate_preserves_tle (a b : Reading) : TLE (conflate a) (conflate b) ↔ TLE a b := by
   cases a <;> cases b <;> decide
 /-- `~∘−` reverses **both** orders. -/
-theorem negConf_reverses_kle (a b : Charge) : KLE (negConf a) (negConf b) ↔ KLE b a := by
+theorem negConf_reverses_kle (a b : Reading) : KLE (negConf a) (negConf b) ↔ KLE b a := by
   cases a <;> cases b <;> decide
-theorem negConf_reverses_tle (a b : Charge) : TLE (negConf a) (negConf b) ↔ TLE b a := by
+theorem negConf_reverses_tle (a b : Reading) : TLE (negConf a) (negConf b) ↔ TLE b a := by
   cases a <;> cases b <;> decide
 
 /-- **The Klein-four group.** `{id, ~, −, ~∘−}` is closed and every element is an
 involution: `K₄ ≅ ℤ/2 × ℤ/2`, the natural symmetry group of FOUR with both
 negation and conflation. (Closure: the product of any two is again one of the
 four — witnessed by `negate_conflate` and the involution laws.) -/
-theorem klein_four (a : Charge) :
+theorem klein_four (a : Reading) :
     negate (negate a) = a ∧ conflate (conflate a) = a ∧ negConf (negConf a) = a
       ∧ negate (conflate a) = negConf a ∧ conflate (negate a) = negConf a := by
   refine ⟨negate_negate a, conflate_conflate a, negConf_negConf a, negate_conflate a, ?_⟩
   rw [← negate_conflate_comm]; exact negate_conflate a
 
-end Charge
+end Reading
 
 /-! ## FOUR by universal property — initiality among bounded interlaced bilattices
 
-The identifications above are definitional (`Charge := Articulating.Corner`) or
+The identifications above are definitional (`Reading := Articulating.Corner`) or
 enumerated. This section states the structure those identifications rely on and
 proves it is forced: FOUR is **initial** among bounded interlaced bilattices.
 Every carrier bearing two bounded lattice structures whose operations are
@@ -384,25 +384,25 @@ end InterlacedBilattice
 /-! ### The bounds map and initiality -/
 
 /-- The canonical map from FOUR into any bounded interlaced bilattice: each
-charge to the like-named bound. -/
-def boundsMap (B : InterlacedBilattice) : Charge → B.carrier
+reading to the like-named bound. -/
+def boundsMap (B : InterlacedBilattice) : Reading → B.carrier
   | .absurd => B.kBot
   | .potential => B.tTop
   | .active => B.tBot
   | .stable => B.kTop
 
 @[simp] theorem boundsMap_kBot (B : InterlacedBilattice) :
-    boundsMap B Charge.kBot = B.kBot := rfl
+    boundsMap B Reading.kBot = B.kBot := rfl
 @[simp] theorem boundsMap_tTop (B : InterlacedBilattice) :
-    boundsMap B Charge.tTop = B.tTop := rfl
+    boundsMap B Reading.tTop = B.tTop := rfl
 @[simp] theorem boundsMap_tBot (B : InterlacedBilattice) :
-    boundsMap B Charge.tBot = B.tBot := rfl
+    boundsMap B Reading.tBot = B.tBot := rfl
 @[simp] theorem boundsMap_kTop (B : InterlacedBilattice) :
-    boundsMap B Charge.kTop = B.kTop := rfl
+    boundsMap B Reading.kTop = B.kTop := rfl
 
 /-- The bounds map preserves the knowledge join. -/
-theorem boundsMap_joinK (B : InterlacedBilattice) (a b : Charge) :
-    boundsMap B (Charge.joinK a b) = B.joinK (boundsMap B a) (boundsMap B b) := by
+theorem boundsMap_joinK (B : InterlacedBilattice) (a b : Reading) :
+    boundsMap B (Reading.joinK a b) = B.joinK (boundsMap B a) (boundsMap B b) := by
   cases a <;> cases b <;> simp only [boundsMap] <;>
     (first
       | rw [B.joinK_kBot]
@@ -414,8 +414,8 @@ theorem boundsMap_joinK (B : InterlacedBilattice) (a b : Charge) :
       | rw [B.joinK_tBot_tTop]) <;> rfl
 
 /-- The bounds map preserves the knowledge meet. -/
-theorem boundsMap_meetK (B : InterlacedBilattice) (a b : Charge) :
-    boundsMap B (Charge.meetK a b) = B.meetK (boundsMap B a) (boundsMap B b) := by
+theorem boundsMap_meetK (B : InterlacedBilattice) (a b : Reading) :
+    boundsMap B (Reading.meetK a b) = B.meetK (boundsMap B a) (boundsMap B b) := by
   cases a <;> cases b <;> simp only [boundsMap] <;>
     (first
       | rw [B.meetK_kTop]
@@ -427,8 +427,8 @@ theorem boundsMap_meetK (B : InterlacedBilattice) (a b : Charge) :
       | rw [B.meetK_tBot_tTop]) <;> rfl
 
 /-- The bounds map preserves the truth join. -/
-theorem boundsMap_joinT (B : InterlacedBilattice) (a b : Charge) :
-    boundsMap B (Charge.joinT a b) = B.joinT (boundsMap B a) (boundsMap B b) := by
+theorem boundsMap_joinT (B : InterlacedBilattice) (a b : Reading) :
+    boundsMap B (Reading.joinT a b) = B.joinT (boundsMap B a) (boundsMap B b) := by
   cases a <;> cases b <;> simp only [boundsMap] <;>
     (first
       | rw [B.joinT_tBot]
@@ -440,8 +440,8 @@ theorem boundsMap_joinT (B : InterlacedBilattice) (a b : Charge) :
       | rw [B.joinT_kBot_kTop]) <;> rfl
 
 /-- The bounds map preserves the truth meet. -/
-theorem boundsMap_meetT (B : InterlacedBilattice) (a b : Charge) :
-    boundsMap B (Charge.meetT a b) = B.meetT (boundsMap B a) (boundsMap B b) := by
+theorem boundsMap_meetT (B : InterlacedBilattice) (a b : Reading) :
+    boundsMap B (Reading.meetT a b) = B.meetT (boundsMap B a) (boundsMap B b) := by
   cases a <;> cases b <;> simp only [boundsMap] <;>
     (first
       | rw [B.meetT_tTop]
@@ -455,9 +455,9 @@ theorem boundsMap_meetT (B : InterlacedBilattice) (a b : Charge) :
 /-- Any map out of FOUR that sends the four bounds to the four bounds is the
 bounds map, pointwise. FOUR's elements are its bounds, so bound preservation
 alone forces the whole map. -/
-theorem boundsMap_unique (B : InterlacedBilattice) (g : Charge → B.carrier)
-    (h1 : g Charge.kBot = B.kBot) (h2 : g Charge.tTop = B.tTop)
-    (h3 : g Charge.tBot = B.tBot) (h4 : g Charge.kTop = B.kTop) :
+theorem boundsMap_unique (B : InterlacedBilattice) (g : Reading → B.carrier)
+    (h1 : g Reading.kBot = B.kBot) (h2 : g Reading.tTop = B.tTop)
+    (h3 : g Reading.tBot = B.tBot) (h4 : g Reading.kTop = B.kTop) :
     ∀ c, g c = boundsMap B c := by
   intro c
   cases c with
@@ -471,13 +471,13 @@ bounds map preserves both lattice structures (existence), and any
 bounds-preserving map out of FOUR is the bounds map (uniqueness). The recurring
 four-corner cell is forced on any depth exhibiting the structure, not chosen. -/
 theorem four_initial (B : InterlacedBilattice) :
-    (∀ a b, boundsMap B (Charge.joinK a b) = B.joinK (boundsMap B a) (boundsMap B b))
-    ∧ (∀ a b, boundsMap B (Charge.meetK a b) = B.meetK (boundsMap B a) (boundsMap B b))
-    ∧ (∀ a b, boundsMap B (Charge.joinT a b) = B.joinT (boundsMap B a) (boundsMap B b))
-    ∧ (∀ a b, boundsMap B (Charge.meetT a b) = B.meetT (boundsMap B a) (boundsMap B b))
-    ∧ (∀ g : Charge → B.carrier,
-        g Charge.kBot = B.kBot → g Charge.tTop = B.tTop →
-        g Charge.tBot = B.tBot → g Charge.kTop = B.kTop →
+    (∀ a b, boundsMap B (Reading.joinK a b) = B.joinK (boundsMap B a) (boundsMap B b))
+    ∧ (∀ a b, boundsMap B (Reading.meetK a b) = B.meetK (boundsMap B a) (boundsMap B b))
+    ∧ (∀ a b, boundsMap B (Reading.joinT a b) = B.joinT (boundsMap B a) (boundsMap B b))
+    ∧ (∀ a b, boundsMap B (Reading.meetT a b) = B.meetT (boundsMap B a) (boundsMap B b))
+    ∧ (∀ g : Reading → B.carrier,
+        g Reading.kBot = B.kBot → g Reading.tTop = B.tTop →
+        g Reading.tBot = B.tBot → g Reading.kTop = B.kTop →
         ∀ c, g c = boundsMap B c) :=
   ⟨boundsMap_joinK B, boundsMap_meetK B, boundsMap_joinT B, boundsMap_meetT B,
     fun g h1 h2 h3 h4 => boundsMap_unique B g h1 h2 h3 h4⟩
@@ -486,7 +486,7 @@ theorem four_initial (B : InterlacedBilattice) :
 theorem boundsMap_injective (B : InterlacedBilattice)
     (hbt : B.kBot ≠ B.tTop) (hbf : B.kBot ≠ B.tBot) (hbT : B.kBot ≠ B.kTop)
     (htf : B.tTop ≠ B.tBot) (htT : B.tTop ≠ B.kTop) (hfT : B.tBot ≠ B.kTop) :
-    ∀ a b : Charge, boundsMap B a = boundsMap B b → a = b := by
+    ∀ a b : Reading, boundsMap B a = boundsMap B b → a = b := by
   intro a b h
   cases a <;> cases b <;> first
     | rfl
@@ -498,13 +498,13 @@ theorem boundsMap_injective (B : InterlacedBilattice)
 /-- The bounds map is surjective when the carrier holds only the four bounds. -/
 theorem boundsMap_surjective (B : InterlacedBilattice)
     (hall : ∀ z : B.carrier, z = B.kBot ∨ z = B.tTop ∨ z = B.tBot ∨ z = B.kTop) :
-    ∀ z : B.carrier, ∃ c : Charge, boundsMap B c = z := by
+    ∀ z : B.carrier, ∃ c : Reading, boundsMap B c = z := by
   intro z
   rcases hall z with h | h | h | h
-  · exact ⟨Charge.kBot, h.symm⟩
-  · exact ⟨Charge.tTop, h.symm⟩
-  · exact ⟨Charge.tBot, h.symm⟩
-  · exact ⟨Charge.kTop, h.symm⟩
+  · exact ⟨Reading.kBot, h.symm⟩
+  · exact ⟨Reading.tTop, h.symm⟩
+  · exact ⟨Reading.tBot, h.symm⟩
+  · exact ⟨Reading.kTop, h.symm⟩
 
 /-- **Rigidity at four.** A bounded interlaced bilattice whose four bounds are
 pairwise distinct and whose carrier holds only the bounds receives the bounds
@@ -513,32 +513,32 @@ theorem four_rigid (B : InterlacedBilattice)
     (hbt : B.kBot ≠ B.tTop) (hbf : B.kBot ≠ B.tBot) (hbT : B.kBot ≠ B.kTop)
     (htf : B.tTop ≠ B.tBot) (htT : B.tTop ≠ B.kTop) (hfT : B.tBot ≠ B.kTop)
     (hall : ∀ z : B.carrier, z = B.kBot ∨ z = B.tTop ∨ z = B.tBot ∨ z = B.kTop) :
-    (∀ a b : Charge, boundsMap B a = boundsMap B b → a = b)
-    ∧ (∀ z : B.carrier, ∃ c : Charge, boundsMap B c = z) :=
+    (∀ a b : Reading, boundsMap B a = boundsMap B b → a = b)
+    ∧ (∀ z : B.carrier, ∃ c : Reading, boundsMap B c = z) :=
   ⟨boundsMap_injective B hbt hbf hbT htf htT hfT, boundsMap_surjective B hall⟩
 
 /-- FOUR itself is a bounded interlaced bilattice — the initial object is
 inhabited by the spine's own value carrier. -/
-def chargeInterlaced : InterlacedBilattice where
-  carrier := Charge
-  meetK := Charge.meetK
-  joinK := Charge.joinK
-  kBot := Charge.kBot
-  kTop := Charge.kTop
-  meetT := Charge.meetT
-  joinT := Charge.joinT
-  tBot := Charge.tBot
-  tTop := Charge.tTop
-  joinK_comm := Charge.joinK_comm
-  joinK_assoc := Charge.joinK_assoc
-  meetK_comm := Charge.meetK_comm
-  absorbK_join := Charge.absorbK₁
-  absorbK_meet := Charge.absorbK₂
-  joinK_kBot := Charge.joinK_kBot
-  meetK_kTop := Charge.meetK_kTop
-  joinT_comm := Charge.joinT_comm
-  joinT_assoc := Charge.joinT_assoc
-  meetT_comm := Charge.meetT_comm
+def readingInterlaced : InterlacedBilattice where
+  carrier := Reading
+  meetK := Reading.meetK
+  joinK := Reading.joinK
+  kBot := Reading.kBot
+  kTop := Reading.kTop
+  meetT := Reading.meetT
+  joinT := Reading.joinT
+  tBot := Reading.tBot
+  tTop := Reading.tTop
+  joinK_comm := Reading.joinK_comm
+  joinK_assoc := Reading.joinK_assoc
+  meetK_comm := Reading.meetK_comm
+  absorbK_join := Reading.absorbK₁
+  absorbK_meet := Reading.absorbK₂
+  joinK_kBot := Reading.joinK_kBot
+  meetK_kTop := Reading.meetK_kTop
+  joinT_comm := Reading.joinT_comm
+  joinT_assoc := Reading.joinT_assoc
+  meetT_comm := Reading.meetT_comm
   absorbT_join := fun a b => by cases a <;> cases b <;> rfl
   absorbT_meet := fun a b => by cases a <;> cases b <;> rfl
   joinT_tBot := fun a => by cases a <;> rfl
@@ -550,7 +550,7 @@ def chargeInterlaced : InterlacedBilattice where
 
 /-- The unique bounds-preserving map from FOUR to itself is the identity,
 pointwise: initiality pins the recurring four to itself. -/
-theorem boundsMap_charge (c : Charge) : boundsMap chargeInterlaced c = c := by
+theorem boundsMap_reading (c : Reading) : boundsMap readingInterlaced c = c := by
   cases c <;> rfl
 
 end Obsmetrologia

@@ -1,35 +1,35 @@
 \section{The truth order and truth-order closure}
 
-\begin{proposition}[The truth order as a relation]\label{thm:tle}\lean{Obsmetrologia.Charge.TLE}\leanok\uses{thm:four-bilattice}
+\begin{proposition}[The truth order as a relation]\label{thm:tle}\lean{Obsmetrologia.Reading.TLE}\leanok\uses{thm:four-bilattice}
 The truth order is the relation \texttt{TLE}, the \texttt{Prop}-valued form
 of the Boolean comparison \texttt{leT}. It is reflexive, transitive, and
 antisymmetric by finite charge analysis.
 \end{proposition}
 
-\begin{theorem}[$\vee_t$ and $\wedge_t$ are the truth lub and glb]\label{thm:truth-lattice}\lean{Obsmetrologia.Charge.joinT_le}\leanok\uses{thm:tle}
+\begin{theorem}[$\vee_t$ and $\wedge_t$ are the truth lub and glb]\label{thm:truth-lattice}\lean{Obsmetrologia.Reading.joinT_le}\leanok\uses{thm:tle}
 Truth join is the least upper bound and truth meet is the greatest lower
 bound for \texttt{TLE}. With $f$ least and $t$ greatest, this is the bounded
 truth lattice of FOUR.
 \end{theorem}
 
-\begin{theorem}[Negation is the order duality]\label{thm:negate-tle}\lean{Obsmetrologia.Charge.negate_tle}\leanok\uses{thm:truth-lattice, thm:negate-duality}
+\begin{theorem}[Negation is the order duality]\label{thm:negate-tle}\lean{Obsmetrologia.Reading.negate_tle}\leanok\uses{thm:truth-lattice, thm:negate-duality}
 As a relation, negation reverses the truth order and preserves the knowledge
 order. This is the order-dual reading of the same slot swap.
 \end{theorem}
 
-\begin{proposition}[Truth-order closure operator]\label{thm:tclosure}\lean{Obsmetrologia.Charge.TClosure}\leanok\uses{thm:tle}
+\begin{proposition}[Truth-order closure operator]\label{thm:tclosure}\lean{Obsmetrologia.Reading.TClosure}\leanok\uses{thm:tle}
 A truth-order closure is an operator on charges that is inflationary,
 monotone, and idempotent with respect to \texttt{TLE}.
 \end{proposition}
 
-\begin{proposition}[The canonical truth closure and truth-settling]\label{thm:settleT}\lean{Obsmetrologia.Charge.joinTClosure}\leanok\uses{thm:tclosure, thm:truth-lattice}
+\begin{proposition}[The canonical truth closure and truth-settling]\label{thm:settleT}\lean{Obsmetrologia.Reading.joinTClosure}\leanok\uses{thm:tclosure, thm:truth-lattice}
 The canonical truth closure raises a charge toward a chosen truth bound by
 truth join. Truth-settling is the fixed point reached by this closure.
 \end{proposition}
 
 \section{The light cone}
 
-\begin{theorem}[FOUR is the $1{+}1$ causal diamond in null coordinates]\label{thm:light-cone}\lean{Obsmetrologia.Charge.time, Obsmetrologia.Charge.space, Obsmetrologia.Charge.kle_iff_null, Obsmetrologia.Charge.tle_iff_null, Obsmetrologia.Charge.kle_iff_lightcone, Obsmetrologia.Charge.kle_time_mono, Obsmetrologia.Charge.kBot_past_tip, Obsmetrologia.Charge.kTop_future_tip, Obsmetrologia.Charge.tTop_tBot_spacelike, Obsmetrologia.Charge.coords_injective}\leanok\uses{thm:four-bilattice, thm:kBot-least, thm:tle, thm:negate-tle}
+\begin{theorem}[FOUR is the $1{+}1$ causal diamond in null coordinates]\label{thm:light-cone}\lean{Obsmetrologia.Reading.time, Obsmetrologia.Reading.space, Obsmetrologia.Reading.kle_iff_null, Obsmetrologia.Reading.tle_iff_null, Obsmetrologia.Reading.kle_iff_lightcone, Obsmetrologia.Reading.kle_time_mono, Obsmetrologia.Reading.kBot_past_tip, Obsmetrologia.Reading.kTop_future_tip, Obsmetrologia.Reading.tTop_tBot_spacelike, Obsmetrologia.Reading.coords_injective}\leanok\uses{thm:four-bilattice, thm:kBot-least, thm:tle, thm:negate-tle}
 Read the two evidence slots $(\mathrm{pos},\mathrm{neg})$ as the null coordinates
 $(u,v)$ of a two-dimensional Minkowski diamond. The knowledge order is the product
 order on $(u,v)$, which is the causal-future relation in null coordinates
@@ -46,7 +46,7 @@ are finite checks over the four charges, which is exactly what a $1{+}1$ diamond
 with one bit per null ray is.
 \end{theorem}
 
-\begin{theorem}[Negation is parity, conflation is time reversal: $K_4=\{1,P,T,PT\}$]\label{thm:light-cone-k4}\lean{Obsmetrologia.Charge.time_negate, Obsmetrologia.Charge.space_negate, Obsmetrologia.Charge.time_conflate, Obsmetrologia.Charge.space_conflate, Obsmetrologia.Charge.act_centered, Obsmetrologia.Charge.act_space, Obsmetrologia.Charge.signs_injective, Obsmetrologia.Charge.timeSign_mul, Obsmetrologia.Charge.spaceSign_mul, Obsmetrologia.Charge.k4_is_PT}\leanok\uses{thm:light-cone, thm:klein-four-symmetry, thm:k4-group}
+\begin{theorem}[Negation is parity, conflation is time reversal: $K_4=\{1,P,T,PT\}$]\label{thm:light-cone-k4}\lean{Obsmetrologia.Reading.time_negate, Obsmetrologia.Reading.space_negate, Obsmetrologia.Reading.time_conflate, Obsmetrologia.Reading.space_conflate, Obsmetrologia.Reading.act_centered, Obsmetrologia.Reading.act_space, Obsmetrologia.Reading.signs_injective, Obsmetrologia.Reading.timeSign_mul, Obsmetrologia.Reading.spaceSign_mul, Obsmetrologia.Reading.k4_is_PT}\leanok\uses{thm:light-cone, thm:klein-four-symmetry, thm:k4-group}
 Negation fixes time and reverses space; conflation reflects time through the middle
 of the diamond and fixes space. On the centred coordinates $(\mathrm{time}-1,
 \mathrm{space})$ the Klein four group acts as the sign-change group $\{1,P,T,PT\}$,
@@ -57,7 +57,7 @@ group $O(1,1)$, and equally of $O(3,1)$; the gauge of FOUR is the discrete part 
 any Lorentzian symmetry group, compatible with $3{+}1$ without selecting the $3$.
 \end{theorem}
 
-\begin{theorem}[Chu duality is the transpose composed with parity]\label{thm:light-cone-chu-dual}\lean{Obsmetrologia.Charge.chu_dual_time, Obsmetrologia.Charge.chu_dual_space}\leanok\uses{thm:light-cone-k4, thm:predication-chu}
+\begin{theorem}[Chu duality is the transpose composed with parity]\label{thm:light-cone-chu-dual}\lean{Obsmetrologia.Reading.chu_dual_time, Obsmetrologia.Reading.chu_dual_space}\leanok\uses{thm:light-cone-k4, thm:predication-chu}
 The dual of a FOUR-valued Chu space transposes the matrix and negates each entry;
 in light-cone coordinates it therefore fixes every entry's time and reverses its
 space. The space-for-time transpose of the monograph's spatiotemporal Chu space is

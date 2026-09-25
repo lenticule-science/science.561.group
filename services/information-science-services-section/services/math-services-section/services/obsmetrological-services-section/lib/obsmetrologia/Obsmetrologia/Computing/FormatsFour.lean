@@ -11,7 +11,7 @@ import Obsmetrologia.Closure.Regime
 A serialization format is classified by two independent coordinates, each an
 incarnation of the recurring FOUR:
 
-* its **content corner** `⟨addressability, assertivity⟩` — the Belnap charge
+* its **content corner** `⟨addressability, assertivity⟩` — the Belnap reading
   `Articulating.Corner` (`bytes = ⊥`, `json = t`, `plaintext = f`, `rdf/html/tex/markdown = ⊤`);
 * its **completion regime** — the closure-orbit class `ClosureRegime`
   (`strict`/`scott`/`transfiniteBounded`/`aperiodic`), itself `≃ Articulating.Corner`.
@@ -104,19 +104,19 @@ theorem regime_onto (r : ClosureRegime) : ∃ f : Format, regime f = r := by
 
 /-- A `⊑ₖ`-increase that **raises** cost: `bytes ⊑ₖ json`, yet json costs more
 (parsing gains non-monotone schema validation). -/
-theorem cost_can_rise : Charge.KLE (corner bytes) (corner json) ∧ cost bytes < cost json := by
+theorem cost_can_rise : Reading.KLE (corner bytes) (corner json) ∧ cost bytes < cost json := by
   decide
 
 /-- A `⊑ₖ`-increase that **lowers** cost: `json ⊑ₖ rdf`, yet rdf costs less (RDF's
 richer commitment is a monotone Scott closure). -/
-theorem cost_can_fall : Charge.KLE (corner json) (corner rdf) ∧ cost rdf < cost json := by
+theorem cost_can_fall : Reading.KLE (corner json) (corner rdf) ∧ cost rdf < cost json := by
   decide
 
 /-- **Completion cost is non-monotone in the knowledge order.** There is no single
 ladder: ascending `⊑ₖ` can raise or lower the completion cost. -/
 theorem cost_nonmonotone_in_kle :
-    (∃ f g, Charge.KLE (corner f) (corner g) ∧ cost f < cost g) ∧
-      (∃ f g, Charge.KLE (corner f) (corner g) ∧ cost g < cost f) :=
+    (∃ f g, Reading.KLE (corner f) (corner g) ∧ cost f < cost g) ∧
+      (∃ f g, Reading.KLE (corner f) (corner g) ∧ cost g < cost f) :=
   ⟨⟨bytes, json, cost_can_rise⟩, ⟨json, rdf, cost_can_fall⟩⟩
 
 /-- The `⊤` corner is occupied at three different regimes: markdown (`strict`),
@@ -146,9 +146,9 @@ structure FormatsClosureHierarchy where
   /-- The completion projection covers the four closure regimes. -/
   regime_onto : ∀ r : ClosureRegime, ∃ f : Format, regime f = r
   /-- Ascending `⊑ₖ` can raise the completion cost. -/
-  cost_rises : ∃ f g, Charge.KLE (corner f) (corner g) ∧ cost f < cost g
+  cost_rises : ∃ f g, Reading.KLE (corner f) (corner g) ∧ cost f < cost g
   /-- Ascending `⊑ₖ` can lower the completion cost. -/
-  cost_falls : ∃ f g, Charge.KLE (corner f) (corner g) ∧ cost g < cost f
+  cost_falls : ∃ f g, Reading.KLE (corner f) (corner g) ∧ cost g < cost f
   /-- Same `⊤` commitment, decidable under RMN, undecidable under general HTML. -/
   rmn_recovers_decidability :
     corner rmnHtml = corner html ∧

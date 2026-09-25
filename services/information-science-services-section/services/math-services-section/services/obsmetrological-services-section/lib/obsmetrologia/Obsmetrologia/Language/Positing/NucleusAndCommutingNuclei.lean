@@ -15,11 +15,11 @@ merely under `∧`,`∨`. Two **commuting** nuclei `j₁ ∘ j₂ = j₂ ∘ j�
 `π = j₁ ∘ j₂` a nucleus with `Fix(π) = Fix(j₁) ∩ Fix(j₂)`; the four sub-algebras
 `(A, Fix(j₁), Fix(j₂), A*)` form an exhaustive **commuting square** — "apply neither,
 `j₁` alone, `j₂` alone, or both" — the same four-corner shape the spine meets at the
-articulation phases and the bilattice charge, here as *sub-algebras under closure*.
+articulation phases and the bilattice reading, here as *sub-algebras under closure*.
 
 `Obsmetrologia.Order` previously had **no** Heyting algebra: `Positing.Bigraded` carries its OWN
-private `HeytingAlgebra`/`Nucleus`/`NuclearSquare` as the **in-situ (charge-level)**
-instance of this theory — two join-nuclei on the charge knowledge-Heyting-algebra. That
+private `HeytingAlgebra`/`Nucleus`/`NuclearSquare` as the **in-situ (reading-level)**
+instance of this theory — two join-nuclei on the reading knowledge-Heyting-algebra. That
 module is left untouched; this module is the abstract home it should be read as
 instantiating. We add:
 
@@ -410,7 +410,7 @@ def cornerOp (c : Articulating.Corner) (a : H.carrier) : H.carrier :=
 /-- **The four corners are the recurring FOUR.** The quartet's four corners — indexed
 here by their slot-presence pair `(j₁-applied?, j₂-applied?)` — biject with
 `Obsmetrologia.Articulating.Corner` (and hence, by `Articulating.FourCorner.cornerBij`, with `Articulating.FourCorner = Bool × Bool`
-and with `Charge = Articulating.Corner`). `(false,false) = absurd` (neither), `(true,false) =
+and with `Reading = Articulating.Corner`). `(false,false) = absurd` (neither), `(true,false) =
 potential` (`j₁`), `(false,true) = active` (`j₂`), `(true,true) = stable` (both). -/
 def cornerBij : Bij Articulating.Corner Articulating.FourCorner := Articulating.FourCorner.cornerBij.flip
 

@@ -161,7 +161,7 @@ theorem padovan_not_quadratic :
 /-! ## The matrix is the `r` of a Chu space valued in FOUR
 
 The substitution matrix is the `pos`-incidence projection of a FOUR-valued Chu relation
-(`Logic.LinearLogicChu.ChuSpace`): entry `i j` records the charge `t` ("present" — letter `j`
+(`Logic.LinearLogicChu.ChuSpace`): entry `i j` records the reading `t` ("present" — letter `j`
 occurs in the image of `i`) or `⊥` ("absent — unwitnessed", the open-world default). The integer
 matrix that carries the characteristic polynomial is the `pos`-bit reading of this relation. -/
 
@@ -171,16 +171,16 @@ FOUR-valued relation `r i j` is `t` when letter `j` occurs in the image of `i` u
 def padovanChu : ChuSpace where
   pts := Fin 3
   sts := Fin 3
-  r := fun i j => Charge.ofSlots ((padovanSubst i).count j != 0) false
+  r := fun i j => Reading.ofSlots ((padovanSubst i).count j != 0) false
 
 /-- The **Fibonacci Chu space over FOUR**, on the alphabet `Fin 2`. -/
 def fibonacciChu : ChuSpace where
   pts := Fin 2
   sts := Fin 2
-  r := fun i j => Charge.ofSlots ((fibonacciSubst i).count j != 0) false
+  r := fun i j => Reading.ofSlots ((fibonacciSubst i).count j != 0) false
 
 /-- **The Padovan substitution matrix is the `pos`-incidence of the Chu `r`-matrix over FOUR.**
-`padovanMatrix i j = 1` exactly when the FOUR relation `padovanChu.r i j` carries positive charge
+`padovanMatrix i j = 1` exactly when the FOUR relation `padovanChu.r i j` carries positive reading
 (`t`), `0` when it is `⊥`. The matrix on which Cayley–Hamilton is computed is the projection of the
 FOUR-valued Chu relation. -/
 theorem padovanMatrix_is_chu_incidence :

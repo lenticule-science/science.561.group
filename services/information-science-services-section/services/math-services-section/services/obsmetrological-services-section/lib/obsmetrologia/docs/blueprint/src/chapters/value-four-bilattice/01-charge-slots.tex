@@ -1,18 +1,18 @@
 \section{The charge carrier and its slots}
 
-\begin{proposition}[Charge]\label{thm:charge}\lean{Obsmetrologia.Charge}\leanok\uses{thm:floor, thm:corner}
+\begin{proposition}[Charge]\label{thm:charge}\lean{Obsmetrologia.Reading}\leanok\uses{thm:floor, thm:corner}
 A \emph{charge} is the four-point value object of positing. Formally it is
 the same four-corner object as \texttt{Articulating.Corner}, now read as
 value rather than articulation status.
 \end{proposition}
 
-\begin{proposition}[Evidence slots]\label{thm:charge-slots}\lean{Obsmetrologia.Charge.pos}\leanok\uses{thm:charge, thm:status-correspondence}
+\begin{proposition}[Evidence slots]\label{thm:charge-slots}\lean{Obsmetrologia.Reading.pos}\leanok\uses{thm:charge, thm:status-correspondence}
 Each charge has a positive and a negative Boolean slot. The maps
 \texttt{pos}, \texttt{neg}, and \texttt{ofSlots} identify the four charges
 with the two-slot object $\{0,1\}^2$.
 \end{proposition}
 
-\begin{proposition}[The four distinguished charges]\label{thm:four-charges}\lean{Obsmetrologia.Charge.kBot}\leanok\uses{thm:charge-slots}
+\begin{proposition}[The four distinguished charges]\label{thm:four-charges}\lean{Obsmetrologia.Reading.kBot}\leanok\uses{thm:charge-slots}
 The four slots receive their bilattice names:
 $\bot_k$, $\top_k$, $t$, and $f$. They are the same four points read by the
 knowledge and truth orders.

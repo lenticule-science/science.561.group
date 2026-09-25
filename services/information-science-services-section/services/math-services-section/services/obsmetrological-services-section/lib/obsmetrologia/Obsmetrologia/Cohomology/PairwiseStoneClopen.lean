@@ -47,13 +47,13 @@ We build the **finite** instance authoritatively:
   antichain every subset is an up-set, so a clopen up-set is a pair
   `(plus ∈ ?, minus ∈ ?) ∈ Bool × Bool = Articulating.FourCorner`. Lattice ops `∩` (meet) and
   `∪` (join) recorded.
-* **`four_priestley_dual`** — the bijection `ClopenUp FourDual ≃ Charge`:
-  finite Priestley duality for FOUR. The four charges ARE the four clopen up-sets:
+* **`four_priestley_dual`** — the bijection `ClopenUp FourDual ≃ Reading`:
+  finite Priestley duality for FOUR. The four readings ARE the four clopen up-sets:
   `∅ ↔ ⊥ₖ`, `{+} ↔ t (= tTop)`, `{−} ↔ f (= tBot)`, `{+,−} ↔ ⊤ₖ`. Built through
-  `FourCornerCell.cornerBij` to land in `Charge`, proven by exhaustion.
+  `FourCornerCell.cornerBij` to land in `Reading`, proven by exhaustion.
 * **`swap_is_z2_negation`** — the swap `σ` is an involution (the `ℤ/2`
   gauge, `Positing.Gauge.K4.neg`) and, transported across `four_priestley_dual`, the
-  `σ`-action on clopen up-sets is exactly `Charge.negate` (the bilattice negation /
+  `σ`-action on clopen up-sets is exactly `Reading.negate` (the bilattice negation /
   slot swap). `σ` swaps `+, −`, hence swaps the `(plus∈?, minus∈?)` slots = `negate`.
 
 The bitopological `(τ₊, τ₋)` pair (pairwise-Stone reading) is recorded as the
@@ -235,85 +235,85 @@ end ClopenUp
 
 /-! ## Finite Priestley duality for FOUR
 
-`ClopenUp FourDual ≃ Charge`. The four clopen up-sets of the two-point dual are
-exactly the four charges of `FOUR`:
+`ClopenUp FourDual ≃ Reading`. The four clopen up-sets of the two-point dual are
+exactly the four readings of `FOUR`:
 
-| up-set `(plus∈?, minus∈?)` | charge       |
+| up-set `(plus∈?, minus∈?)` | reading       |
 |----------------------------|--------------|
 | `∅      = (false,false)`    | `⊥ₖ = kBot`  |
 | `{+}    = (true, false)`    | `t  = tTop`  |
 | `{−}    = (false,true )`    | `f  = tBot`  |
 | `{+,−}  = (true, true )`    | `⊤ₖ = kTop`  |
 
-We land in `Charge` through `FourCornerCell.cornerBij` (recall `Articulating.FourCorner = Bool ×
-Bool = ClopenUp`, and `cornerBij : Bij Articulating.FourCorner Charge`). -/
+We land in `Reading` through `FourCornerCell.cornerBij` (recall `Articulating.FourCorner = Bool ×
+Bool = ClopenUp`, and `cornerBij : Bij Articulating.FourCorner Reading`). -/
 
-/-- The forward map `ClopenUp FourDual → Charge`: read the membership pair as a
+/-- The forward map `ClopenUp FourDual → Reading`: read the membership pair as a
 `(positive, negative)` slot pair (`plus ↦ positive`, `minus ↦ negative`). -/
-def toCharge (U : ClopenUp) : Charge := Articulating.FourCorner.toCorner U
+def toReading (U : ClopenUp) : Reading := Articulating.FourCorner.toCorner U
 
-/-- The inverse `Charge → ClopenUp FourDual`: read the charge's slot pair as
+/-- The inverse `Reading → ClopenUp FourDual`: read the charge's slot pair as
 `(plus∈?, minus∈?)`. -/
-def ofCharge (c : Charge) : ClopenUp := Articulating.FourCorner.ofCorner c
+def ofReading (c : Reading) : ClopenUp := Articulating.FourCorner.ofCorner c
 
-/-- **Finite Priestley/Stone duality for FOUR.** `ClopenUp FourDual ≃ Charge`: the
-four clopen up-sets of the two-point dual `{+, −}` ARE the four bilattice charges.
+/-- **Finite Priestley/Stone duality for FOUR.** `ClopenUp FourDual ≃ Reading`: the
+four clopen up-sets of the two-point dual `{+, −}` ARE the four bilattice readings.
 The bijection is `FourCornerCell.cornerBij` read on `ClopenUp = Articulating.FourCorner`. -/
-def four_priestley_dual : Bij ClopenUp Charge where
-  to := toCharge
-  inv := ofCharge
+def four_priestley_dual : Bij ClopenUp Reading where
+  to := toReading
+  inv := ofReading
   left := fun U => Articulating.FourCorner.ofCorner_toCorner U
   right := fun c => Articulating.FourCorner.toCorner_ofCorner c
 
-/-- The duality's table: the four clopen up-sets map to the four named charges. -/
+/-- The duality's table: the four clopen up-sets map to the four named readings. -/
 theorem four_priestley_dual_table :
-    four_priestley_dual.to ClopenUp.bot = Charge.kBot
-      ∧ four_priestley_dual.to (true, false) = Charge.tTop
-      ∧ four_priestley_dual.to (false, true) = Charge.tBot
-      ∧ four_priestley_dual.to ClopenUp.top = Charge.kTop :=
+    four_priestley_dual.to ClopenUp.bot = Reading.kBot
+      ∧ four_priestley_dual.to (true, false) = Reading.tTop
+      ∧ four_priestley_dual.to (false, true) = Reading.tBot
+      ∧ four_priestley_dual.to ClopenUp.top = Reading.kTop :=
   ⟨rfl, rfl, rfl, rfl⟩
 
 /-! ## The swap σ is the ℤ/2 bilattice negation
 
 `σ : + ↔ −` is an involution (the `ℤ/2` gauge generator `Positing.Gauge.K4.neg`). Its
-action on clopen up-sets swaps the two slots, which is exactly `Charge.negate`
+action on clopen up-sets swaps the two slots, which is exactly `Reading.negate`
 transported across `four_priestley_dual`. Concretely:
 
->  `toCharge (σ · U) = Charge.negate (toCharge U)`     (`swap_induces_negate`)
+>  `toReading (σ · U) = Reading.negate (toReading U)`     (`swap_induces_negate`)
 
 `σ` swaps `(plus∈?, minus∈?)`; `negate` swaps `(pos, neg)`; under
 `plus ↦ pos, minus ↦ neg` these coincide. -/
 
 /-- **`swap_induces_negate`.** Transporting the `σ`-action on clopen up-sets across
-the duality `four_priestley_dual` yields exactly `Charge.negate` — the swap on the
+the duality `four_priestley_dual` yields exactly `Reading.negate` — the swap on the
 spatial side **is** the bilattice negation on the lattice side. -/
 theorem swap_induces_negate (U : ClopenUp) :
-    toCharge (ClopenUp.sigmaAct U) = Charge.negate (toCharge U) := by
+    toReading (ClopenUp.sigmaAct U) = Reading.negate (toReading U) := by
   rw [ClopenUp.sigmaAct_swap]; obtain ⟨a, b⟩ := U; cases a <;> cases b <;> rfl
 
 /-- `σ` on the dual side is the `ℤ/2` gauge generator `Positing.Gauge.K4.neg`: its induced
-lattice action equals that generator's action on `Charge`. -/
+lattice action equals that generator's action on `Reading`. -/
 theorem swap_is_gauge_neg (U : ClopenUp) :
-    toCharge (ClopenUp.sigmaAct U) = Positing.Gauge.K4.act Positing.Gauge.K4.neg (toCharge U) := by
+    toReading (ClopenUp.sigmaAct U) = Positing.Gauge.K4.act Positing.Gauge.K4.neg (toReading U) := by
   rw [ClopenUp.sigmaAct_swap]; obtain ⟨a, b⟩ := U; cases a <;> cases b <;> rfl
 
 /-- **`swap_is_z2_negation`.** The swap `σ` is a `ℤ/2` involution AND induces the
-bilattice negation `Charge.negate` on the Priestley dual lattice (transported across
+bilattice negation `Reading.negate` on the Priestley dual lattice (transported across
 `four_priestley_dual`):
 
 * `σ ∘ σ = id` on `FourDual` (the `ℤ/2`), and its lattice action is self-inverse;
-* `toCharge (σ · U) = Charge.negate (toCharge U)` (`swap_induces_negate`);
+* `toReading (σ · U) = Reading.negate (toReading U)` (`swap_induces_negate`);
 * `σ`'s action realizes the gauge generator `K4.neg`, whose square is `id`
   (`Positing.Gauge.K4.mul_self K4.neg`).
 
-This is the spatial-side witness of `Charge.negate_negate`: the bilattice negation
+This is the spatial-side witness of `Reading.negate_negate`: the bilattice negation
 is the `ℤ/2` gauge of FOUR met on the dual `{+, −}`. -/
 theorem swap_is_z2_negation :
     (∀ x : FourDual, FourDual.sigma (FourDual.sigma x) = x)
       ∧ (∀ U : ClopenUp, ClopenUp.sigmaAct (ClopenUp.sigmaAct U) = U)
-      ∧ (∀ U : ClopenUp, toCharge (ClopenUp.sigmaAct U) = Charge.negate (toCharge U))
+      ∧ (∀ U : ClopenUp, toReading (ClopenUp.sigmaAct U) = Reading.negate (toReading U))
       ∧ (∀ U : ClopenUp,
-          toCharge (ClopenUp.sigmaAct U) = Positing.Gauge.K4.act Positing.Gauge.K4.neg (toCharge U))
+          toReading (ClopenUp.sigmaAct U) = Positing.Gauge.K4.act Positing.Gauge.K4.neg (toReading U))
       ∧ Positing.Gauge.K4.mul Positing.Gauge.K4.neg Positing.Gauge.K4.neg = Positing.Gauge.K4.id := by
   refine ⟨FourDual.sigma_invol, ?_, swap_induces_negate, swap_is_gauge_neg,
     Positing.Gauge.K4.mul_self Positing.Gauge.K4.neg⟩

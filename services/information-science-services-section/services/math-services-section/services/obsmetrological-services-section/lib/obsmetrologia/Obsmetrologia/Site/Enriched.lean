@@ -32,7 +32,7 @@ the **Q-functor**, and the **q-fuzzy equivalence** of the corpus nodes
   order `⪯`, and an arbitrary supremum `sSup` over decidable subsets `carrier → Bool`,
   the constructive lattice-valued supremum) with `mul`/`one`, associative/commutative/
   unital, and the quantale distributive law `p · ⋁_{p'} = ⋁ (p · ·)`. We give the
-  **concrete `chargeQuantale`**: carrier `Charge` (= `Articulating.Corner`, the FOUR object), `· =
+  **concrete `readingQuantale`**: carrier `Reading` (= `Articulating.Corner`, the FOUR object), `· =
   meetK` (the **knowledge meet** — a truth/knowledge-content meet), `1 = kTop` (the
   knowledge-top `⊤ₖ`, which is the `meetK`-unit), order `⪯ = leK` (the knowledge order),
   `sSup` = the `joinK`-fold over the four corners selected by the predicate. All quantale
@@ -120,9 +120,9 @@ theorem le_top (a : Q.carrier) : Q.le a Q.top := Q.le_sSup _ a rfl
 
 end Quantale
 
-/-! ### The concrete FOUR/Charge quantale
+/-! ### The concrete FOUR/Reading quantale
 
-Carrier `Charge` (= `Articulating.Corner`, the FOUR object met as value in `Positing`); multiplication
+Carrier `Reading` (= `Articulating.Corner`, the FOUR object met as value in `Positing`); multiplication
 the **knowledge meet** `meetK` (a knowledge/truth-content meet — `kTop` is its unit);
 order the **knowledge order** `leK`; supremum the `joinK`-fold over the four corners the
 selector picks out. This is a frame-as-quantale: a distributive complete lattice whose
@@ -130,69 +130,69 @@ multiplication is its own meet. (Lattice-valued.) -/
 
 /-- The knowledge supremum of a decidable subset: the `joinK`-fold over the four corners
 the selector marks `true`. (`Articulating.Corner.all = [absurd, potential, active, stable]`.) -/
-def chargeSSup (sel : Charge → Bool) : Charge :=
-  (Articulating.Corner.all.filter sel).foldr Charge.joinK Charge.kBot
+def readingSSup (sel : Reading → Bool) : Reading :=
+  (Articulating.Corner.all.filter sel).foldr Reading.joinK Reading.kBot
 
 /-- `leK` as a `Prop` (the bundled order needs `Prop`). Reducible (`abbrev`) so `decide`
 sees the underlying `Bool` equality — house style for finite-carrier relations. -/
-abbrev chargeLe (a b : Charge) : Prop := Charge.leK a b = true
+abbrev readingLe (a b : Reading) : Prop := Reading.leK a b = true
 
-theorem chargeLe_refl (a : Charge) : chargeLe a a := by cases a <;> decide
-theorem chargeLe_trans {a b c : Charge} (h1 : chargeLe a b) (h2 : chargeLe b c) :
-    chargeLe a c := by
+theorem readingLe_refl (a : Reading) : readingLe a a := by cases a <;> decide
+theorem readingLe_trans {a b c : Reading} (h1 : readingLe a b) (h2 : readingLe b c) :
+    readingLe a c := by
   revert h1 h2; cases a <;> cases b <;> cases c <;> decide
-theorem chargeLe_antisymm {a b : Charge} (h1 : chargeLe a b) (h2 : chargeLe b a) :
+theorem readingLe_antisymm {a b : Reading} (h1 : readingLe a b) (h2 : readingLe b a) :
     a = b := by
   revert h1 h2; cases a <;> cases b <;> decide
 
-/-- A charge is `leK`-below the `joinK` of it with anything (`joinK` is the ≤ₖ-lub). -/
-theorem leK_joinK_left (a b : Charge) : Charge.leK a (Charge.joinK a b) = true := by
+/-- A reading is `leK`-below the `joinK` of it with anything (`joinK` is the ≤ₖ-lub). -/
+theorem leK_joinK_left (a b : Reading) : Reading.leK a (Reading.joinK a b) = true := by
   cases a <;> cases b <;> decide
-theorem leK_joinK_right (a b : Charge) : Charge.leK b (Charge.joinK a b) = true := by
+theorem leK_joinK_right (a b : Reading) : Reading.leK b (Reading.joinK a b) = true := by
   cases a <;> cases b <;> decide
 /-- `joinK` is the least upper bound: if `a, b ⪯ c` then `joinK a b ⪯ c`. -/
-theorem joinK_leK {a b c : Charge} (h1 : Charge.leK a c = true) (h2 : Charge.leK b c = true) :
-    Charge.leK (Charge.joinK a b) c = true := by
+theorem joinK_leK {a b c : Reading} (h1 : Reading.leK a c = true) (h2 : Reading.leK b c = true) :
+    Reading.leK (Reading.joinK a b) c = true := by
   revert h1 h2; cases a <;> cases b <;> cases c <;> decide
-theorem kBot_leK_all (a : Charge) : Charge.leK Charge.kBot a = true := Charge.kBot_leK a
+theorem kBot_leK_all (a : Reading) : Reading.leK Reading.kBot a = true := Reading.kBot_leK a
 
 /-- Every member of a list is `≤ₖ` the `joinK`-fold of that list. -/
-theorem mem_leK_foldr {a : Charge} : ∀ {L : List Charge}, a ∈ L →
-    Charge.leK a (L.foldr Charge.joinK Charge.kBot) = true
+theorem mem_leK_foldr {a : Reading} : ∀ {L : List Reading}, a ∈ L →
+    Reading.leK a (L.foldr Reading.joinK Reading.kBot) = true
   | h :: t, hmem => by
     rw [List.foldr_cons]
     rcases List.mem_cons.mp hmem with rfl | htl
-    · exact leK_joinK_left a (t.foldr Charge.joinK Charge.kBot)
-    · exact chargeLe_trans (mem_leK_foldr htl)
-        (leK_joinK_right h (t.foldr Charge.joinK Charge.kBot))
+    · exact leK_joinK_left a (t.foldr Reading.joinK Reading.kBot)
+    · exact readingLe_trans (mem_leK_foldr htl)
+        (leK_joinK_right h (t.foldr Reading.joinK Reading.kBot))
 
 /-- If every member of a list is `≤ₖ b`, the `joinK`-fold is `≤ₖ b`. -/
-theorem foldr_leK {b : Charge} : ∀ {L : List Charge},
-    (∀ a ∈ L, Charge.leK a b = true) → Charge.leK (L.foldr Charge.joinK Charge.kBot) b = true
+theorem foldr_leK {b : Reading} : ∀ {L : List Reading},
+    (∀ a ∈ L, Reading.leK a b = true) → Reading.leK (L.foldr Reading.joinK Reading.kBot) b = true
   | [], _ => kBot_leK_all b
   | hd :: tl, hb => by
     rw [List.foldr_cons]
     exact joinK_leK (hb hd (List.mem_cons_self ..))
       (foldr_leK (fun a ha => hb a (List.mem_cons_of_mem hd ha)))
 
-/-- Each selected charge sits below the knowledge supremum. -/
-theorem chargeSSup_upper (sel : Charge → Bool) (a : Charge) (ha : sel a = true) :
-    chargeLe a (chargeSSup sel) :=
+/-- Each selected reading sits below the knowledge supremum. -/
+theorem readingSSup_upper (sel : Reading → Bool) (a : Reading) (ha : sel a = true) :
+    readingLe a (readingSSup sel) :=
   mem_leK_foldr (List.mem_filter.mpr ⟨Articulating.Corner.mem_all a, ha⟩)
 
 /-- The knowledge supremum is the least upper bound. -/
-theorem chargeSSup_least (sel : Charge → Bool) (b : Charge)
-    (h : ∀ a, sel a = true → chargeLe a b) : chargeLe (chargeSSup sel) b :=
+theorem readingSSup_least (sel : Reading → Bool) (b : Reading)
+    (h : ∀ a, sel a = true → readingLe a b) : readingLe (readingSSup sel) b :=
   foldr_leK (fun a ha => h a (List.mem_filter.mp ha).2)
 
 /-- The **image selector** `{meetK a z : sel z}` — constructive pushforward of `sel`
 along `meetK a -`, via the finite enumeration `Articulating.Corner.all`. -/
-def chargeMulImg (a : Charge) (sel : Charge → Bool) : Charge → Bool :=
-  fun y => (Articulating.Corner.all.filter sel).any (fun z => decide (Charge.meetK a z = y))
+def readingMulImg (a : Reading) (sel : Reading → Bool) : Reading → Bool :=
+  fun y => (Articulating.Corner.all.filter sel).any (fun z => decide (Reading.meetK a z = y))
 
-theorem chargeMulImg_spec (a : Charge) (sel : Charge → Bool) (y : Charge) :
-    chargeMulImg a sel y = true ↔ ∃ z, sel z = true ∧ Charge.meetK a z = y := by
-  unfold chargeMulImg
+theorem readingMulImg_spec (a : Reading) (sel : Reading → Bool) (y : Reading) :
+    readingMulImg a sel y = true ↔ ∃ z, sel z = true ∧ Reading.meetK a z = y := by
+  unfold readingMulImg
   rw [List.any_eq_true]
   constructor
   · rintro ⟨z, hz, hzy⟩
@@ -201,67 +201,67 @@ theorem chargeMulImg_spec (a : Charge) (sel : Charge → Bool) (y : Charge) :
     exact ⟨z, List.mem_filter.mpr ⟨Articulating.Corner.mem_all z, hz⟩, by simpa using hzy⟩
 
 /-- `meetK` is `≤ₖ`-monotone in its second argument. -/
-theorem meetK_mono_right (a : Charge) {z w : Charge} (h : Charge.leK z w = true) :
-    Charge.leK (Charge.meetK a z) (Charge.meetK a w) = true := by
+theorem meetK_mono_right (a : Reading) {z w : Reading} (h : Reading.leK z w = true) :
+    Reading.leK (Reading.meetK a z) (Reading.meetK a w) = true := by
   revert h; cases a <;> cases z <;> cases w <;> decide
 
 /-- `meetK` is `≤ₖ`-monotone in **both** arguments — the quantale's `mul_mono`. -/
-theorem meetK_mono {a a' b b' : Charge}
-    (h1 : chargeLe a a') (h2 : chargeLe b b') :
-    chargeLe (Charge.meetK a b) (Charge.meetK a' b') := by
+theorem meetK_mono {a a' b b' : Reading}
+    (h1 : readingLe a a') (h2 : readingLe b b') :
+    readingLe (Reading.meetK a b) (Reading.meetK a' b') := by
   revert h1 h2; cases a <;> cases a' <;> cases b <;> cases b' <;> decide
 
 /-- `meetK` distributes over the knowledge supremum — the quantale distributive law on the
 concrete carrier, proved by antisymmetry of `leK` (both directions are finite joins). -/
-theorem meetK_chargeSSup_distrib (a : Charge) (sel : Charge → Bool) :
-    Charge.meetK a (chargeSSup sel) = chargeSSup (chargeMulImg a sel) := by
-  apply chargeLe_antisymm
+theorem meetK_readingSSup_distrib (a : Reading) (sel : Reading → Bool) :
+    Reading.meetK a (readingSSup sel) = readingSSup (readingMulImg a sel) := by
+  apply readingLe_antisymm
   · -- meetK a (⋁ sel) ⪯ ⋁ (meetK a · over sel)
-    show Charge.leK _ _ = true
-    unfold chargeSSup
-    have key : ∀ L : List Charge, (∀ z ∈ L, sel z = true) →
-        Charge.leK (Charge.meetK a (L.foldr Charge.joinK Charge.kBot))
-          (chargeSSup (chargeMulImg a sel)) = true := by
+    show Reading.leK _ _ = true
+    unfold readingSSup
+    have key : ∀ L : List Reading, (∀ z ∈ L, sel z = true) →
+        Reading.leK (Reading.meetK a (L.foldr Reading.joinK Reading.kBot))
+          (readingSSup (readingMulImg a sel)) = true := by
       intro L
       induction L with
       | nil => intro _; cases a <;> rfl
       | cons hd tl ih =>
         intro hmem
-        rw [List.foldr_cons, Charge.meetK_joinK_distrib]
+        rw [List.foldr_cons, Reading.meetK_joinK_distrib]
         refine joinK_leK ?_ (ih (fun z hz => hmem z (List.mem_cons_of_mem hd hz)))
         have hsel : sel hd = true := hmem hd (List.mem_cons_self ..)
-        have : chargeMulImg a sel (Charge.meetK a hd) = true :=
-          (chargeMulImg_spec a sel _).mpr ⟨hd, hsel, rfl⟩
-        exact chargeSSup_upper _ (Charge.meetK a hd) this
+        have : readingMulImg a sel (Reading.meetK a hd) = true :=
+          (readingMulImg_spec a sel _).mpr ⟨hd, hsel, rfl⟩
+        exact readingSSup_upper _ (Reading.meetK a hd) this
     have := key (Articulating.Corner.all.filter sel) (fun z hz => (List.mem_filter.mp hz).2)
-    simpa [chargeSSup] using this
+    simpa [readingSSup] using this
   · -- ⋁ (meetK a · over sel) ⪯ meetK a (⋁ sel)
-    refine chargeSSup_least _ _ ?_
+    refine readingSSup_least _ _ ?_
     intro w hw
-    obtain ⟨z, hz, rfl⟩ := (chargeMulImg_spec a sel w).mp hw
-    show Charge.leK (Charge.meetK a z) (Charge.meetK a (chargeSSup sel)) = true
-    exact meetK_mono_right a (chargeSSup_upper sel z hz)
+    obtain ⟨z, hz, rfl⟩ := (readingMulImg_spec a sel w).mp hw
+    show Reading.leK (Reading.meetK a z) (Reading.meetK a (readingSSup sel)) = true
+    exact meetK_mono_right a (readingSSup_upper sel z hz)
 
-/-- **The FOUR/Charge quantale.** Carrier `Charge`, `· = meetK` (knowledge meet), `1 = kTop`
+/-- **The FOUR/Reading quantale.** Carrier `Reading`, `· = meetK` (knowledge meet), `1 = kTop`
 (`⊤ₖ`, the `meetK`-unit), order `leK`, supremum the `joinK`-fold. A frame-as-quantale on
 the FOUR object — lattice-valued. -/
-def chargeQuantale : Quantale where
-  carrier := Charge
-  le := chargeLe
-  le_refl := chargeLe_refl
-  le_trans := chargeLe_trans
-  le_antisymm := chargeLe_antisymm
-  sSup := chargeSSup
-  le_sSup := chargeSSup_upper
-  sSup_le := chargeSSup_least
-  mul := Charge.meetK
-  one := Charge.kTop
-  mul_assoc := Charge.meetK_assoc
-  mul_comm := Charge.meetK_comm
-  one_mul := Charge.meetK_kTop
-  mulImg := chargeMulImg
-  mulImg_spec := chargeMulImg_spec
-  mul_sSup_distrib := meetK_chargeSSup_distrib
+def readingQuantale : Quantale where
+  carrier := Reading
+  le := readingLe
+  le_refl := readingLe_refl
+  le_trans := readingLe_trans
+  le_antisymm := readingLe_antisymm
+  sSup := readingSSup
+  le_sSup := readingSSup_upper
+  sSup_le := readingSSup_least
+  mul := Reading.meetK
+  one := Reading.kTop
+  mul_assoc := Reading.meetK_assoc
+  mul_comm := Reading.meetK_comm
+  one_mul := Reading.meetK_kTop
+  mulImg := readingMulImg
+  mulImg_spec := readingMulImg_spec
+  mul_sSup_distrib := meetK_readingSSup_distrib
   mul_mono := meetK_mono
 
 /-! ## Q-enriched categories and Q-functors
@@ -347,39 +347,39 @@ def discreteQCat (Q : Quantale) (X : Type) [DecidableEq X] : QCat Q where
 
 /-! ## The Q-category structural theory is coherent
 
-Bundles: (1) `chargeQuantale` is a commutative unital quantale (assoc/comm/unit +
+Bundles: (1) `readingQuantale` is a commutative unital quantale (assoc/comm/unit +
 the distributive law over arbitrary suprema); (2) the one-object and discrete examples are
 Q-categories (refl + comp hold); (3) Q-functors carry an identity and compose. -/
 
-/-- **The Q-category structural theory is coherent.** The FOUR/Charge quantale
+/-- **The Q-category structural theory is coherent.** The FOUR/Reading quantale
 is a commutative unital quantale; the one-object Q-category and the discrete
 Q-category are Q-categories (the unit sits below each self-hom and composition is
 multiplicative); and Q-functors form a category — identity and composition exist with
 hom-preservation transported through the quantale order. -/
 theorem qcat_is_quantale_category :
-    -- (1) the concrete charge quantale satisfies the quantale laws
-    (∀ a b c : Charge, chargeQuantale.mul (chargeQuantale.mul a b) c
-        = chargeQuantale.mul a (chargeQuantale.mul b c))
-    ∧ (∀ a b : Charge, chargeQuantale.mul a b = chargeQuantale.mul b a)
-    ∧ (∀ a : Charge, chargeQuantale.mul chargeQuantale.one a = a)
-    ∧ (∀ (a : Charge) (sel : Charge → Bool),
-        chargeQuantale.mul a (chargeQuantale.sSup sel)
-          = chargeQuantale.sSup (chargeQuantale.mulImg a sel))
+    -- (1) the concrete reading quantale satisfies the quantale laws
+    (∀ a b c : Reading, readingQuantale.mul (readingQuantale.mul a b) c
+        = readingQuantale.mul a (readingQuantale.mul b c))
+    ∧ (∀ a b : Reading, readingQuantale.mul a b = readingQuantale.mul b a)
+    ∧ (∀ a : Reading, readingQuantale.mul readingQuantale.one a = a)
+    ∧ (∀ (a : Reading) (sel : Reading → Bool),
+        readingQuantale.mul a (readingQuantale.sSup sel)
+          = readingQuantale.sSup (readingQuantale.mulImg a sel))
     -- (2) the one-object and discrete Q-cats satisfy the Q-category laws
-    ∧ (∀ x, chargeQuantale.le chargeQuantale.one ((oneObjQCat chargeQuantale).hom x x))
-    ∧ (∀ x y z, chargeQuantale.le
-        (chargeQuantale.mul ((oneObjQCat chargeQuantale).hom x y) ((oneObjQCat chargeQuantale).hom y z))
-        ((oneObjQCat chargeQuantale).hom x z))
-    ∧ (∀ x, chargeQuantale.le chargeQuantale.one ((discreteQCat chargeQuantale Charge).hom x x))
+    ∧ (∀ x, readingQuantale.le readingQuantale.one ((oneObjQCat readingQuantale).hom x x))
+    ∧ (∀ x y z, readingQuantale.le
+        (readingQuantale.mul ((oneObjQCat readingQuantale).hom x y) ((oneObjQCat readingQuantale).hom y z))
+        ((oneObjQCat readingQuantale).hom x z))
+    ∧ (∀ x, readingQuantale.le readingQuantale.one ((discreteQCat readingQuantale Reading).hom x x))
     -- (3) Q-functors: identity preserves homs, composition preserves homs
-    ∧ (∀ (C : QCat chargeQuantale) (x y : C.obj),
-        chargeQuantale.le (C.hom x y) (C.hom ((QFunctor.id C).map x) ((QFunctor.id C).map y)))
-    ∧ (∀ (C D E : QCat chargeQuantale) (G : QFunctor D E) (F : QFunctor C D) (x y : C.obj),
-        chargeQuantale.le (C.hom x y) (E.hom ((G.comp F).map x) ((G.comp F).map y))) :=
-  ⟨chargeQuantale.mul_assoc, chargeQuantale.mul_comm, chargeQuantale.one_mul,
-    chargeQuantale.mul_sSup_distrib,
-    (oneObjQCat chargeQuantale).refl, (oneObjQCat chargeQuantale).comp,
-    (discreteQCat chargeQuantale Charge).refl,
+    ∧ (∀ (C : QCat readingQuantale) (x y : C.obj),
+        readingQuantale.le (C.hom x y) (C.hom ((QFunctor.id C).map x) ((QFunctor.id C).map y)))
+    ∧ (∀ (C D E : QCat readingQuantale) (G : QFunctor D E) (F : QFunctor C D) (x y : C.obj),
+        readingQuantale.le (C.hom x y) (E.hom ((G.comp F).map x) ((G.comp F).map y))) :=
+  ⟨readingQuantale.mul_assoc, readingQuantale.mul_comm, readingQuantale.one_mul,
+    readingQuantale.mul_sSup_distrib,
+    (oneObjQCat readingQuantale).refl, (oneObjQCat readingQuantale).comp,
+    (discreteQCat readingQuantale Reading).refl,
     fun C x y => (QFunctor.id C).mono x y,
     fun _ _ _ G F x y => (G.comp F).mono x y⟩
 
@@ -504,7 +504,7 @@ theorem q_fuzzy_equivalence_composes {Q : Quantale} :
 
 We record a **light** witness of the degree-0 Q-enriched cohomology of the corpus
 (`q-enriched-cohomology.md`): over the one-object Q-category (the simplest "one-cover"
-site), the **degree-0 coboundary** `δ⁰` sends a `C⁰`-cochain (here a single charge `x`,
+site), the **degree-0 coboundary** `δ⁰` sends a `C⁰`-cochain (here a single reading `x`,
 the global section over the one object) to the weighted meet of restrictions, which — in
 the one-object case with the bare restriction — is `meetK x (hom o o) = meetK x 1 = x`
 after the unit collapses... and the **closure/Laplacian** is the knowledge-meet against the
@@ -515,36 +515,36 @@ fixed points; the fixed points are a complete sub-lattice (closed under `joinK`)
 degree-0 to the corpus's Lawvere-Laplacian fixed-point characterization.
 
 This is the scope: the full enriched `δ^n`/`H^n` over a general site is heavy; we
-prove the degree-0 fixed-point core on the concrete charge quantale. -/
+prove the degree-0 fixed-point core on the concrete reading quantale. -/
 
-/-- The **degree-0 Lawvere–Laplacian** on the charge quantale at weight `s`: `L x = x · s`
+/-- The **degree-0 Lawvere–Laplacian** on the reading quantale at weight `s`: `L x = x · s`
 (the knowledge-meet against the self-hom/weight). The corpus's degree-0 coboundary's
 kernel is the fixed points of this closure. -/
-def laplacian (s : Charge) : Charge → Charge := fun x => Charge.meetK x s
+def laplacian (s : Reading) : Reading → Reading := fun x => Reading.meetK x s
 
-/-- **`H⁰_Q` is the Laplacian fixed points.** A charge `x` is a degree-0 cohomology class
+/-- **`H⁰_Q` is the Laplacian fixed points.** A reading `x` is a degree-0 cohomology class
 (`δ⁰ x = unit`, i.e. `x` is `L`-fixed) iff `L x = x`. The fixed points are closed under
 `joinK` (a complete weighted sub-lattice) — the corpus's "degree-0 = Lawvere Laplacian
 fixed points". We prove: (i) the Laplacian is idempotent (`L (L x) = L x`), so its image
 *is* its fixed-point set; (ii) the fixed points are closed under `joinK`. -/
-theorem h0_laplacian_fixed_points (s : Charge) :
+theorem h0_laplacian_fixed_points (s : Reading) :
     -- (i) L is idempotent: its image is exactly its fixed points
-    (∀ x : Charge, laplacian s (laplacian s x) = laplacian s x)
+    (∀ x : Reading, laplacian s (laplacian s x) = laplacian s x)
     -- (ii) fixed points are closed under joinK (a complete weighted sub-lattice)
-    ∧ (∀ x y : Charge, laplacian s x = x → laplacian s y = y →
-        laplacian s (Charge.joinK x y) = Charge.joinK x y) := by
+    ∧ (∀ x y : Reading, laplacian s x = x → laplacian s y = y →
+        laplacian s (Reading.joinK x y) = Reading.joinK x y) := by
   refine ⟨?_, ?_⟩
   · intro x
-    show Charge.meetK (Charge.meetK x s) s = Charge.meetK x s
+    show Reading.meetK (Reading.meetK x s) s = Reading.meetK x s
     cases x <;> cases s <;> rfl
   · intro x y hx hy
-    show Charge.meetK (Charge.joinK x y) s = Charge.joinK x y
+    show Reading.meetK (Reading.joinK x y) s = Reading.joinK x y
     -- meetK distributes over joinK; use the fixed-point hypotheses
-    have hd : Charge.meetK (Charge.joinK x y) s
-        = Charge.joinK (Charge.meetK x s) (Charge.meetK y s) := by
+    have hd : Reading.meetK (Reading.joinK x y) s
+        = Reading.joinK (Reading.meetK x s) (Reading.meetK y s) := by
       cases x <;> cases y <;> cases s <;> rfl
     rw [hd]
-    show Charge.joinK (laplacian s x) (laplacian s y) = Charge.joinK x y
+    show Reading.joinK (laplacian s x) (laplacian s y) = Reading.joinK x y
     rw [hx, hy]
 
 end QEnriched

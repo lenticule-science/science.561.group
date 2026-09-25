@@ -609,7 +609,7 @@ theorem vershikFinIter_cycle (n : Nat) (i : Fin (2 ^ n)) :
 
 /-- Any knowledge-monotone stage accumulation valued in a carrier with a top
 element is globally bounded by that top: it is the coefficient carrier's
-boundedness, not anything special to `Charge`, that makes stage
+boundedness, not anything special to `Reading`, that makes stage
 accumulations glue. -/
 theorem stage_datum_bounded_of_top {C : Type} {le : C → C → Prop}
     (top : C) (le_top : ∀ x, le x top) (c : Nat → C) :
@@ -617,10 +617,10 @@ theorem stage_datum_bounded_of_top {C : Type} {le : C → C → Prop}
   ⟨top, fun n => le_top (c n)⟩
 
 /-- Every FOUR-valued stage accumulation over the tower is globally bounded:
-the `Charge` instance of `stage_datum_bounded_of_top` at the top `⊤`. -/
-theorem charge_stage_datum_bounded (c : Nat → Charge) :
-    ∃ b, ∀ n, Charge.KLE (c n) b :=
-  stage_datum_bounded_of_top Charge.kTop Charge.le_kTop c
+the `Reading` instance of `stage_datum_bounded_of_top` at the top `⊤`. -/
+theorem reading_stage_datum_bounded (c : Nat → Reading) :
+    ∃ b, ∀ n, Reading.KLE (c n) b :=
+  stage_datum_bounded_of_top Reading.kTop Reading.le_kTop c
 
 /-- A record-valued stage accumulation over the tower with no global
 section: the tally climb is knowledge-monotone along refinement yet admits
@@ -640,39 +640,39 @@ cover settles, with topless coefficients gluing genuinely fails. The
 cohomology-vanishing regime gate distinguishes derived carriers for the
 first time. -/
 theorem tower_gluing_dichotomy :
-    (∀ c : Nat → Charge, ∃ b, ∀ n, Charge.KLE (c n) b)
+    (∀ c : Nat → Reading, ∃ b, ∀ n, Reading.KLE (c n) b)
     ∧ (∃ r : Nat → Record,
         (∀ n, Record.KLE (r n) (r (n + 1))) ∧ ¬ ∃ b, ∀ n, Record.KLE (r n) b) :=
-  ⟨charge_stage_datum_bounded, record_stage_datum_unbounded⟩
+  ⟨reading_stage_datum_bounded, record_stage_datum_unbounded⟩
 
 /-- **The ω-escape profile of the regime tower.** For each tower carrier,
 whether an ℕ-indexed stage accumulation can escape every global bound:
-charges never escape (`⊤` absorbs); records escape (the tally climb);
+readings never escape (`⊤` absorbs); records escape (the tally climb);
 completed records never escape (the double infinity absorbs); and germs
 never escape along ℕ — every ℕ-indexed family of germs is dominated —
 although the germ carrier has no top. Escape along ℕ happens at the topless
 ω-rung and nowhere else; at the aperiodic rung the obstruction (no top) is
 present but no ℕ-indexed accumulation witnesses it. -/
 theorem omega_escape_profile :
-    (∀ c : Nat → Charge, ∃ b, ∀ n, Charge.KLE (c n) b)
+    (∀ c : Nat → Reading, ∃ b, ∀ n, Reading.KLE (c n) b)
     ∧ (∃ r : Nat → Record,
         (∀ n, Record.KLE (r n) (r (n + 1))) ∧ ¬ ∃ b, ∀ n, Record.KLE (r n) b)
     ∧ (∀ c : Nat → ORecord, ∀ n, ORecord.OKLE (c n) ORecord.kTop)
     ∧ (∀ g : Nat → Nat → Record, ∃ h, ∀ m, Record.DomBy (g m) h)
     ∧ (∀ h : Nat → Record, ∃ g, ¬ Record.DomBy g h) :=
-  ⟨charge_stage_datum_bounded, record_stage_datum_unbounded,
+  ⟨reading_stage_datum_bounded, record_stage_datum_unbounded,
     fun c n => ORecord.okle_kTop (c n),
     Record.germ_omega_family_bounded, Record.germ_no_top⟩
 
 /-! ### The settling sheaf over the hull's cylinder covers -/
 
-/-- The knowledge preorder on charges as a pre-value carrier. -/
-def chargeKPreValue : Positing.Value.PreValueCategory where
-  carrier := Charge
-  le := Charge.KLE
-  le_refl := Charge.kle_refl
-  le_trans := fun {a b c} h1 h2 => Charge.kle_trans a b c h1 h2
-  bot := Charge.kBot
+/-- The knowledge preorder on readings as a pre-value carrier. -/
+def readingKPreValue : Positing.Value.PreValueCategory where
+  carrier := Reading
+  le := Reading.KLE
+  le_refl := Reading.kle_refl
+  le_trans := fun {a b c} h1 h2 => Reading.kle_trans a b c h1 h2
+  bot := Reading.kBot
 
 /-- The knowledge order on records as a pre-value carrier. -/
 def recordKPreValue : Positing.Value.PreValueCategory where
@@ -703,17 +703,17 @@ def CylinderDatum.GluesTo {V : Positing.Value.PreValueCategory}
 /-- Any knowledge-monotone cylinder datum valued in a carrier with a top
 element glues to the constant-`top` global section: it is boundedness of
 the coefficient carrier that forces gluing, uniformly over every
-`CylinderDatum`, not a fact special to `Charge`. -/
+`CylinderDatum`, not a fact special to `Reading`. -/
 theorem cylinder_datum_glues_of_top {V : Positing.Value.PreValueCategory}
     (top : V.carrier) (le_top : ∀ x, V.le x top) (D : CylinderDatum V) :
     ∃ g, D.GluesTo g :=
   ⟨fun _ => top, fun t n => le_top (D.at_ n (t.at_ n))⟩
 
-/-- Every charge-valued cylinder datum glues: the `Charge` instance of
+/-- Every reading-valued cylinder datum glues: the `Reading` instance of
 `cylinder_datum_glues_of_top` at the top `⊤`. -/
-theorem charge_cylinder_datum_glues (D : CylinderDatum chargeKPreValue) :
+theorem reading_cylinder_datum_glues (D : CylinderDatum readingKPreValue) :
     ∃ g, D.GluesTo g :=
-  cylinder_datum_glues_of_top Charge.kTop Charge.le_kTop D
+  cylinder_datum_glues_of_top Reading.kTop Reading.le_kTop D
 
 theorem replicate_false_length : ∀ n : Nat, (List.replicate n false).length = n
   | 0 => rfl
@@ -742,16 +742,16 @@ theorem record_cylinder_datum_not_glues :
   exact absurd (hg zeroThread ((g zeroThread).pos + 1)).1 (Nat.not_succ_le_self _)
 
 /-- **The settling sheaf over the hull's cylinder covers is gated by the
-coefficient carrier.** With charge coefficients every knowledge-monotone
+coefficient carrier.** With reading coefficients every knowledge-monotone
 cylinder datum glues to a global section over the hull; with record
 coefficients some cylinder datum glues to none. The obstruction is
 invisible to the equality-agreement Čech `H¹` (which vanishes for every
 datum, `Cohomology.h1_vanishes`); it lives in the order-valued reading of
 the cover, and it opens exactly at the topless coefficient carrier. -/
 theorem hull_settling_gluing_dichotomy :
-    (∀ D : CylinderDatum chargeKPreValue, ∃ g, D.GluesTo g)
+    (∀ D : CylinderDatum readingKPreValue, ∃ g, D.GluesTo g)
     ∧ (∃ D : CylinderDatum recordKPreValue, ¬ ∃ g, D.GluesTo g) :=
-  ⟨charge_cylinder_datum_glues, record_cylinder_datum_not_glues⟩
+  ⟨reading_cylinder_datum_glues, record_cylinder_datum_not_glues⟩
 
 /-! ### The Bernoulli cylinder law: the odometer's invariant mass -/
 

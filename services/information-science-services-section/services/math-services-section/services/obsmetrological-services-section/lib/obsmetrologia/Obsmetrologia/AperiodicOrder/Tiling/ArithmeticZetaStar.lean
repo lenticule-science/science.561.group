@@ -738,9 +738,9 @@ structure ZetaStarCoalgebraicPromotionApparatus : Prop where
   directedJoinAttained :
     ∀ S : Obsmetrologia.Closure.Scott.DirectedFamily,
       S.sup ∈ S.elems
-  /-- Every finite charge closure is Scott-continuous. -/
+  /-- Every finite reading closure is Scott-continuous. -/
   finiteScottContinuous :
-    ∀ c : Charge.Closure,
+    ∀ c : Reading.Closure,
       Obsmetrologia.Closure.Scott.IsScottContinuous c
   /-- Settling already has the algebra/coalgebra duality package. -/
   algebraCoalgebraDual :
@@ -822,9 +822,9 @@ structure ZetaStarAlgebraCoalgebraBoundary : Prop where
   metallizationBoundary : MetallizationAlgebraCoalgebraBoundary
   /-- The coalgebraic side is the existing Scott/coinductive apparatus. -/
   coalgebraicPromotion : ZetaStarCoalgebraicPromotionApparatus
-  /-- The Scott bridge: finite charge closures preserve directed joins. -/
+  /-- The Scott bridge: finite reading closures preserve directed joins. -/
   scottBridge :
-    ∀ c : Charge.Closure,
+    ∀ c : Reading.Closure,
       Obsmetrologia.Closure.Scott.IsScottContinuous c
 
 /-- The corpus already proves the finite algebra / analytic coalgebra boundary

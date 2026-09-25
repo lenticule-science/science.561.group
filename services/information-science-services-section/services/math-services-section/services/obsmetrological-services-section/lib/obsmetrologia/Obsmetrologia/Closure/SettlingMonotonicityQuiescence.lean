@@ -38,28 +38,28 @@ namespace Obsmetrologia
 namespace Valuation
 namespace ModalFrame
 
-open Charge
+open Reading
 
 /-! ## Pointwise join helpers on the valuation knowledge order
 
 The settle-indexed family lives in the pointwise knowledge order `leK`. We need two
 elementary facts about the pointwise `joinK` to run the cosettling proof: it is an
-upper bound of each side, and it is the least upper bound. Both lift the `Charge`
+upper bound of each side, and it is the least upper bound. Both lift the `Reading`
 lattice laws (`le_joinK_left/right`, `joinK_le`) fiberwise. (Frame-independent.) -/
 
 /-- `v ≤ₖ v ∨ₖ v'` — the pointwise join dominates its left argument. -/
 theorem le_joinK_left (v v' : Valuation) : leK v (joinK v v') :=
-  fun φ => Charge.le_joinK_left (v φ) (v' φ)
+  fun φ => Reading.le_joinK_left (v φ) (v' φ)
 
 /-- `v' ≤ₖ v ∨ₖ v'` — the pointwise join dominates its right argument. -/
 theorem le_joinK_right (v v' : Valuation) : leK v' (joinK v v') :=
-  fun φ => Charge.le_joinK_right (v φ) (v' φ)
+  fun φ => Reading.le_joinK_right (v φ) (v' φ)
 
 /-- `v ∨ₖ v'` is the **least** upper bound: if both sides sit below `w` then so does
 the join. -/
 theorem joinK_le {v v' w : Valuation} (h : leK v w) (h' : leK v' w) :
     leK (joinK v v') w :=
-  fun φ => Charge.joinK_le (v φ) (v' φ) (w φ) (h φ) (h' φ)
+  fun φ => Reading.joinK_le (v φ) (v' φ) (w φ) (h φ) (h' φ)
 
 variable (M : ModalFrame)
 

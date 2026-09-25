@@ -23,14 +23,14 @@ This module exhibits the plain weave as a carrier of that substrate, so the craf
   plain weave = a proper 2-colouring = the bipartite reading. Its one local rule is the
   no-float law (`warpAlt_forbids_float`); admissible warp words are sofic
   (`warp_sofic`, via `sft_is_sofic`).
-* **The crossing datum is a Belnap charge.** The two bits `(warp-over?, weft-over?)` are
-  a `Articulating.FourCorner`, hence a `Charge`. A hole (neither over) is `⊥ₖ` — told nothing; a
+* **The crossing datum is a Belnap reading.** The two bits `(warp-over?, weft-over?)` are
+  a `Articulating.FourCorner`, hence a `Reading`. A hole (neither over) is `⊥ₖ` — told nothing; a
   *mis-crossing* (both claim over) is `⊤ₖ` — a **held contradiction**, the textile
   defect that is a feature, not a crash. Exchanging which strand is over is exactly
   Belnap negation `~` (`overUnder_swap_is_negate`): it fixes the two defects (`⊥`, `⊤`)
   and swaps the two definite readings (`t ↔ f`). A defect-free fabric lives entirely in
   the definite truth pair (`defectFree_definite`).
-* **The charge-coloured draft is a sofic shift over FOUR** (`charge_coloured_sofic`) —
+* **The reading-coloured draft is a sofic shift over FOUR** (`reading_coloured_sofic`) —
   the Tiles "bilattice-coloured sofic tiling," here on a plain weave.
 
 The frontier (red) is the *two-dimensional* coherence: `plainWeave_entropy_collapse`
@@ -40,7 +40,7 @@ weave maximally coherent. It is stated at full strength and left unproven.
 
 ## References
 Corpus aperiodic-settling line; `dev/.../2026-06-26-survey-of-textile-mathematics.md`
-§V.6 (chart as subshift of finite type), §V.10 (defect as charge); the Tiles
+§V.6 (chart as subshift of finite type), §V.10 (defect as reading); the Tiles
 bilattice-sofic-tiling paper.
 -/
 
@@ -78,72 +78,72 @@ theorem warp_sofic (p : List Bool) (hp : Path warpAlt p) :
     SoficImage warpAlt (fun a => a) p :=
   sft_is_sofic warpAlt p hp
 
-/-! ## The crossing datum is a Belnap charge -/
+/-! ## The crossing datum is a Belnap reading -/
 
-/-- The over/under datum of one crossing as a four-corner charge: the two slot-presences
-`(warp-over?, weft-over?)`. Through `Articulating.FourCorner.toCorner` this lands in `Charge`, so a
+/-- The over/under datum of one crossing as a four-corner reading: the two slot-presences
+`(warp-over?, weft-over?)`. Through `Articulating.FourCorner.toCorner` this lands in `Reading`, so a
 crossing *is* a bilattice value. -/
-def crossingCharge (warpOver weftOver : Bool) : Charge :=
+def crossingReading (warpOver weftOver : Bool) : Reading :=
   Articulating.FourCorner.toCorner (warpOver, weftOver)
 
 /-- A **hole** (neither strand over the other) is `⊥ₖ`: the crossing told nothing. -/
-theorem hole_is_kBot : crossingCharge false false = Charge.kBot := rfl
+theorem hole_is_kBot : crossingReading false false = Reading.kBot := rfl
 
 /-- A **mis-crossing** (both strands claim to pass over) is `⊤ₖ`: a held contradiction —
 the textile defect carried *as a value*, not an error that explodes. -/
-theorem miscrossing_is_kTop : crossingCharge true true = Charge.kTop := rfl
+theorem miscrossing_is_kTop : crossingReading true true = Reading.kTop := rfl
 
 /-- **Exchanging which strand is "over" is Belnap negation `~`.** Swapping the warp/weft
-roles of a crossing is the coordinate-swap `Charge.negate`: it fixes the hole (`⊥`) and
+roles of a crossing is the coordinate-swap `Reading.negate`: it fixes the hole (`⊥`) and
 the mis-crossing (`⊤`) and swaps the two definite over/under readings (`t ↔ f`). The
 truth-order involution of the fabric is the over/under flip. -/
 theorem overUnder_swap_is_negate (w v : Bool) :
-    Charge.negate (crossingCharge w v) = crossingCharge v w := by
+    Reading.negate (crossingReading w v) = crossingReading v w := by
   cases w <;> cases v <;> rfl
 
 /-- **A defect-free crossing is a definite truth value.** When exactly one strand is over
-(`weftOver = ¬warpOver`), the charge is one of the two definite middles `{t, f}` — never
+(`weftOver = ¬warpOver`), the reading is one of the two definite middles `{t, f}` — never
 a knowledge-extreme. The two defect classes are exactly the two knowledge-extremes: a
 hole is the underinformed `⊥`, a mis-crossing the overinformed `⊤`. -/
 theorem defectFree_definite (b : Bool) :
-    crossingCharge b (!b) = Charge.tTop ∨ crossingCharge b (!b) = Charge.tBot := by
+    crossingReading b (!b) = Reading.tTop ∨ crossingReading b (!b) = Reading.tBot := by
   cases b
   · right; rfl
   · left; rfl
 
-/-- **A mis-crossing carries a held contradiction.** Its charge `⊤ₖ` is inconsistent in the
+/-- **A mis-crossing carries a held contradiction.** Its reading `⊤ₖ` is inconsistent in the
 bilattice sense (`isInconsistency`): a mis-crossing is a *monochromatic edge* of the crossing
 graph — the knowledge-join `∨ₖ` of the two clashing over-demands lands on `⊤` — and so a
 section of the inconsistency sheaf, the conflict the FOUR holds without explosion. -/
 theorem miscrossing_isInconsistency :
-    (crossingCharge true true).isInconsistency = true := rfl
+    (crossingReading true true).isInconsistency = true := rfl
 
 /-- **A defect-free crossing carries no contradiction.** Exactly one strand over gives a
 definite truth value, consistent (`isInconsistency = false`): a sound fabric is the
 consistent regime — a *proper* FOUR-colouring of the crossing graph, its inconsistency sheaf
 zero (`section_zero_of_consistent`). -/
 theorem defectFree_consistent (b : Bool) :
-    (crossingCharge b (!b)).isInconsistency = false := by cases b <;> rfl
+    (crossingReading b (!b)).isInconsistency = false := by cases b <;> rfl
 
 /-- **The over/under mirror is the bilattice gauge.** Exchanging warp/weft (Belnap negation
-`~`) leaves the contradiction content fixed (`Charge.isInconsistency_negate`), so the defect
+`~`) leaves the contradiction content fixed (`Reading.isInconsistency_negate`), so the defect
 locus is gauge-invariant — the mirror's fixed `⊤`-seam. The textile face of
 `gauge_fixes_inconsistency`: the mirror swaps `t ↔ f` but never creates or erases a `⊤`. -/
 theorem overUnder_swap_fixes_defect (w v : Bool) :
-    (Charge.negate (crossingCharge w v)).isInconsistency
-      = (crossingCharge w v).isInconsistency :=
-  Charge.isInconsistency_negate _
+    (Reading.negate (crossingReading w v)).isInconsistency
+      = (crossingReading w v).isInconsistency :=
+  Reading.isInconsistency_negate _
 
-/-- The **charge-colouring** of a defect-free draft: read each crossing as its Belnap
-charge. -/
-def chargeColour (b : Bool) : Charge := crossingCharge b (!b)
+/-- The **reading-colouring** of a defect-free draft: read each crossing as its Belnap
+reading. -/
+def readingColour (b : Bool) : Reading := crossingReading b (!b)
 
-/-- **The charge-coloured draft is a sofic shift over FOUR.** Relabelling each crossing of
-an admissible plain weave by its Belnap charge is a 1-block factor of the draft SFT, so
+/-- **The reading-coloured draft is a sofic shift over FOUR.** Relabelling each crossing of
+an admissible plain weave by its Belnap reading is a 1-block factor of the draft SFT, so
 the bilattice-coloured fabric is sofic — the Tiles substrate ("a bilattice-coloured
 sofic tiling") realized on a plain weave. -/
-theorem charge_coloured_sofic (p : List Bool) (hp : Path warpAlt p) :
-    SoficImage warpAlt chargeColour (p.map chargeColour) :=
+theorem reading_coloured_sofic (p : List Bool) (hp : Path warpAlt p) :
+    SoficImage warpAlt readingColour (p.map readingColour) :=
   ⟨p, hp, rfl⟩
 
 /-! ## Frontier: two-dimensional coherence (red)
@@ -231,15 +231,15 @@ def crossingModel : Model Bool Bool where
   scenario := crossingScenario
   support := fun _ g => ¬ (g false = true ∧ g true = true)
 
-/-- **A crossing's charge reads its two-slot assignment.** `crossingCharge` applied to
+/-- **A crossing's reading reads its two-slot assignment.** `crossingReading` applied to
 an assignment's two slot-readings is the same pairing `crossingModel`'s support
 constrains. -/
-theorem crossingCharge_eq_assignment (g : Bool → Bool) :
-    crossingCharge (g false) (g true) = Articulating.FourCorner.toCorner (g false, g true) := rfl
+theorem crossingReading_eq_assignment (g : Bool → Bool) :
+    crossingReading (g false) (g true) = Articulating.FourCorner.toCorner (g false, g true) := rfl
 
 /-- **Mis-crossing is exactly the unsupported assignment.** The constant-`true`
 assignment (both slots read "over") violates `crossingModel`'s support — the mis-crossing
-charge `⊤ₖ` is precisely the one assignment the crossing's measurement scenario
+reading `⊤ₖ` is precisely the one assignment the crossing's measurement scenario
 excludes. -/
 theorem miscrossing_not_supported :
     ¬ crossingModel.support [false, true] (fun _ => true) := by
@@ -248,7 +248,7 @@ theorem miscrossing_not_supported :
 /-- **Every non-mis-crossing assignment is supported.** The three assignments other than
 constant-`true` all satisfy the crossing's exclusivity constraint — `crossingModel`'s
 support is exactly "not both over," matching `hole_is_kBot`/`defectFree_definite`'s three
-non-`⊤ₖ` charges. -/
+non-`⊤ₖ` readings. -/
 theorem non_miscrossing_supported (g : Bool → Bool) (h : ¬ (g false = true ∧ g true = true)) :
     crossingModel.support [false, true] g := h
 

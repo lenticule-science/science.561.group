@@ -59,14 +59,14 @@ open Obsmetrologia.Flow.CurvatureRegime
 
 /-- A **bulk mode** at Laplacian weight `s`: a fixed point of the degree-0 Lawvere–Laplacian
 `L x = x ·ₖ s` — a degree-0 (`H⁰`) global band section. -/
-def IsBulkMode (s x : Charge) : Prop := laplacian s x = x
+def IsBulkMode (s x : Reading) : Prop := laplacian s x = x
 
 /-- **The bulk modes are an `H⁰` global-section subobject.** The degree-0 Lawvere-Laplacian modes are
 idempotent-closed (`L (L x) = L x`, so every `L x` is a bulk mode) and `∨ₖ`-closed (the join of two
 bulk modes is a bulk mode) — the harmonic kernel `ker L = H⁰` of the band sheaf. -/
-theorem laplacian_H0_modes_are_global_sections (s : Charge) :
-    (∀ x : Charge, IsBulkMode s (laplacian s x)) ∧
-      (∀ x y : Charge, IsBulkMode s x → IsBulkMode s y → IsBulkMode s (x.joinK y)) :=
+theorem laplacian_H0_modes_are_global_sections (s : Reading) :
+    (∀ x : Reading, IsBulkMode s (laplacian s x)) ∧
+      (∀ x y : Reading, IsBulkMode s x → IsBulkMode s y → IsBulkMode s (x.joinK y)) :=
   h0_laplacian_fixed_points s
 
 /-! ## (2) Approximate band equivalence composes -/
@@ -75,9 +75,9 @@ theorem laplacian_H0_modes_are_global_sections (s : Charge) :
 `p`- and `q`-approximately equivalent compose to a `(p ·ₖ q)`-approximate equivalence — the grades
 multiply in the charge quantale (approximate equivalence degrades under transit, exactly the Lawvere
 quantale-enriched composition). -/
-def fuzzy_band_equivalence_composes {p q : chargeQuantale.carrier}
-    {C D E : QCat chargeQuantale} (e₁ : QFuzzyEquiv p C D) (e₂ : QFuzzyEquiv q D E) :
-    QFuzzyEquiv (chargeQuantale.mul p q) C E :=
+def fuzzy_band_equivalence_composes {p q : readingQuantale.carrier}
+    {C D E : QCat readingQuantale} (e₁ : QFuzzyEquiv p C D) (e₂ : QFuzzyEquiv q D E) :
+    QFuzzyEquiv (readingQuantale.mul p q) C E :=
   e₁.compose e₂
 
 /-! ## (3) The bulk-edge correspondence: a protected edge mode is an `H¹ ≠ 0` projection -/
@@ -86,7 +86,7 @@ def fuzzy_band_equivalence_composes {p q : chargeQuantale.carrier}
 datum of its settling flow. The finite projection of a spectral band bundle. -/
 structure BandSheaf where
   /-- The degree-0 Lawvere–Laplacian weight (band self-coupling). -/
-  coupling : Charge
+  coupling : Reading
   /-- The regime of the band's settling flow. -/
   regime : ClosureRegimeData
 
@@ -110,7 +110,7 @@ theorem flat_band_forbids_edge_obstruction (B : BandSheaf) (h : IsFlat (classify
 /-- An **aperiodic spectral band**: its settling flow is non-Scott-continuous with uncountable closure
 ordinal — the regime classifies as `aperiodic`. Witnesses that a protected edge mode occurs. -/
 def canonicalEdgeBand : BandSheaf where
-  coupling := Charge.kBot
+  coupling := Reading.kBot
   regime :=
     { scottContinuous := false
       finiteBase := false

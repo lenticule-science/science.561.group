@@ -26,7 +26,7 @@ This module lifts that separation from bare ordinals to **firing sets of flows**
 * **(B)** A generic `OrdFlow α := Ord → α` with `ContinuousAt`/`NSCFiringAt`, following
   `Dynamics/Flow/TransfiniteClosureFlow.lean`'s design (its `OrdFlow := Ord → Valuation`,
   generalized off the concrete `Valuation` carrier) and `Dynamics/Flow/NSCFiring.lean`'s naming
-  (`IsNSC`/`L_ns`, generalized off the finite `Charge` carrier's directed-family join to the
+  (`IsNSC`/`L_ns`, generalized off the finite `Reading` carrier's directed-family join to the
   real `Ord.limit` LUB law). `CandidateStages`/`stageOf`/`FiringSet` present a flow's `L_ns`
   relative to a `Nat`-indexed family of fundamental sequences — the only kind of "which limit
   stages are under consideration" data `Ord.limit` can ever supply.
@@ -81,7 +81,7 @@ def ContinuousAt (le : α → α → Prop) (w : OrdFlow α) (f : Nat → Ord) : 
 /-- A **non-Scott-continuous (NSC) firing** of `w` at the fundamental sequence `f`:
 `ContinuousAt` fails — the value at the limit is not the LUB of the predecessors. Mirrors
 `TransfiniteClosureFlow.NSCFiringAt` / `NSCFiring.IsNSC`, now at the level of a general
-`Ord`-indexed flow rather than the finite `Charge` carrier's directed-family join. -/
+`Ord`-indexed flow rather than the finite `Reading` carrier's directed-family join. -/
 def NSCFiringAt (le : α → α → Prop) (w : OrdFlow α) (f : Nat → Ord) : Prop :=
   ¬ ContinuousAt le w f
 

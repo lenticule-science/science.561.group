@@ -7,8 +7,8 @@ import Obsmetrologia.Closure.SettlingMonotonicityQuiescence
 /-!
 # Settling over a value category — the universal `F_U` over `V`
 
-The spine settles **charges**: the closure `cl = ◇∘□` iterates on the FOUR bilattice
-`Charge` to its fixed point. The corpus's `continuous-valued-settling` node generalizes
+The spine settles **readings**: the closure `cl = ◇∘□` iterates on the FOUR bilattice
+`Reading` to its fixed point. The corpus's `continuous-valued-settling` node generalizes
 this: settling is parametric in a **value category** `V`, and the *same* settling
 dynamics run over any complete / residuated lattice of values — the Lawvere quantale,
 a continuous lattice, fuzzy `[0,1]`, the four-valued bilattice `FOUR`, or the Boolean
@@ -32,7 +32,7 @@ We model this dependency-free:
 * **`VClosure V`** — a `V`-enriched closure operator: an endo `op` on `V.carrier`
   that is monotone, inflationary, and idempotent in the `V`-order. Its fixed point is
   the settling — `settle v := op v` (idempotence makes it a fixed point, and the
-  least fixed point above `v`, exactly as `Charge.Closure` / `ModalFrame` settle).
+  least fixed point above `v`, exactly as `Reading.Closure` / `ModalFrame` settle).
 * **`four_regime_v_independent`** — for **any** `V` and `VClosure` on it,
   carrying its regime data `ClosureRegimeData` classifies it (via `classify`) into one
   of the four regimes, and the full `four_regime_dichotomy` holds *uniformly*: the
@@ -41,9 +41,9 @@ We model this dependency-free:
   inspects `V` or its `VClosure` — so the four-regime classification is `V`-parametric
   but the four cases are `V`-independent.
 * **`boolean_recovers_spine`** — `Order.Two` (Boolean `{0,1}`) **and**
-  `Charge` (FOUR) are `ValueCategory` instances, and the standard bilattice settling
-  is the `V = FOUR` case: a `Charge.Closure` lifts to a `VClosure chargeV` whose
-  `settle` **is** `Charge.settle`, recovering the spine's charge/valuation closure.
+  `Reading` (FOUR) are `ValueCategory` instances, and the standard bilattice settling
+  is the `V = FOUR` case: a `Reading.Closure` lifts to a `VClosure readingV` whose
+  `settle` **is** `Reading.settle`, recovering the spine's reading/valuation closure.
 -/
 
 namespace Obsmetrologia
@@ -91,14 +91,14 @@ def ValueCategory.toPartialOrder (V : ValueCategory) : Order.PartialOrder where
 
 A `VClosure` is the `V`-enriched closure the corpus iterates: an endo on `V.carrier`
 that is monotone, inflationary, and idempotent in the `V`-order. Its fixed point is
-the settling (the same closure-operator data as `Charge.Closure` / `CNaturalFamily`,
+the settling (the same closure-operator data as `Reading.Closure` / `CNaturalFamily`,
 now over an arbitrary `V`). -/
 
 /-- A **`V`-enriched closure operator**: an endomap `op` on the value category `V`
 that is **inflationary** (`v ≤_V op v` — the unit `η`, no value retracted),
 **monotone** (`v ≤_V w → op v ≤_V op w` — `2`-functoriality), and **idempotent**
 (`op (op v) = op v` — the multiplication `μ`). Its least fixed point is the settling
-`F_U` over `V`. The same closure-operator shape as the spine's `Charge.Closure`, now
+`F_U` over `V`. The same closure-operator shape as the spine's `Reading.Closure`, now
 generalized over the value category. -/
 structure VClosure (V : ValueCategory) where
   /-- The closure endomap `cl`. -/
@@ -124,7 +124,7 @@ theorem settle_fixed (T : VClosure V) (v : V.carrier) :
 
 /-- **The settling is the least fixed point above the seed.** Any fixed point
 `x ≥_V seed` of `cl` lies `≥_V` the settled value — the least-upper-bound character
-of the settling over `V`, exactly the `Charge.Closure` / `ModalFrame` least-fixed-point
+of the settling over `V`, exactly the `Reading.Closure` / `ModalFrame` least-fixed-point
 law lifted to an arbitrary value category. -/
 theorem settle_least (T : VClosure V) (seed x : V.carrier)
     (hsx : V.le seed x) (hfx : T.op x = x) : V.le (T.settle seed) x := by
@@ -203,10 +203,10 @@ theorem four_regime_v_independent (V : ValueCategory) (T : VClosure V) (d : Clos
 
 /-! ## (D) Boolean `{0,1}` and FOUR recover the spine
 
-`V = Order.Two` (Boolean `{0,1}`) and `V = Charge` (FOUR) are both `ValueCategory`
-instances, and the standard bilattice settling — the spine's `Charge`/`Valuation`
-closure — **is** the `V = FOUR` case: a `Charge.Closure` lifts to a `VClosure chargeV`
-whose `settle` *is* `Charge.settle`. -/
+`V = Order.Two` (Boolean `{0,1}`) and `V = Reading` (FOUR) are both `ValueCategory`
+instances, and the standard bilattice settling — the spine's `Reading`/`Valuation`
+closure — **is** the `V = FOUR` case: a `Reading.Closure` lifts to a `VClosure readingV`
+whose `settle` *is* `Reading.settle`. -/
 
 /-- **`V = {0,1}` is a value category.** `Order.Two` (the Boolean residuated lattice)
 read as a value category: carrier `Bool`, order `Two.le` (`a ≤ b ⇔ a ⊓ b = a`), seed
@@ -221,66 +221,66 @@ def booleanV : ValueCategory where
   le_antisymm := Two.le_antisymm
   bot := false
 
-/-- **`V = FOUR` is a value category.** The bilattice `Charge` (the recurring FOUR)
-read as a value category: carrier `Charge`, order the knowledge order `≤ₖ` (`KLE`),
-seed `⊥ₖ = kBot`. The partial-order laws are `Charge.kle_refl / kle_trans /
+/-- **`V = FOUR` is a value category.** The bilattice `Reading` (the recurring FOUR)
+read as a value category: carrier `Reading`, order the knowledge order `≤ₖ` (`KLE`),
+seed `⊥ₖ = kBot`. The partial-order laws are `Reading.kle_refl / kle_trans /
 kle_antisymm` from `Settling`. This is the value category the spine settles over. -/
-def chargeV : ValueCategory where
-  carrier := Charge
-  le := Charge.KLE
-  le_refl := Charge.kle_refl
-  le_trans := fun {a b c} => Charge.kle_trans a b c
-  le_antisymm := fun {a b} => Charge.kle_antisymm a b
-  bot := Charge.kBot
+def readingV : ValueCategory where
+  carrier := Reading
+  le := Reading.KLE
+  le_refl := Reading.kle_refl
+  le_trans := fun {a b c} => Reading.kle_trans a b c
+  le_antisymm := fun {a b} => Reading.kle_antisymm a b
+  bot := Reading.kBot
 
-/-- **Lift a charge closure to a `VClosure` over `V = FOUR`.** Any `Charge.Closure`
+/-- **Lift a reading closure to a `VClosure` over `V = FOUR`.** Any `Reading.Closure`
 (inflationary / monotone / idempotent in `≤ₖ`) *is* a `V`-enriched closure over
-`chargeV`: the closure-operator data transfers directly, since `chargeV.le = KLE` and
-`chargeV` is exactly the knowledge order the `Charge.Closure` laws live in. -/
-def chargeVClosure (c : Charge.Closure) : VClosure chargeV where
+`readingV`: the closure-operator data transfers directly, since `readingV.le = KLE` and
+`readingV` is exactly the knowledge order the `Reading.Closure` laws live in. -/
+def readingVClosure (c : Reading.Closure) : VClosure readingV where
   op := c.op
   infl := c.infl
   mono := fun {v w} h => c.mono v w h
   idem := c.idem
 
-/-- **The `V = FOUR` settling recovers the spine's charge closure.**
-For every `Charge.Closure c` and seed `x`, the `V`-enriched settling over FOUR equals
-the spine's charge settling: `(chargeVClosure c).settle x = Charge.settle c x`. The
+/-- **The `V = FOUR` settling recovers the spine's reading closure.**
+For every `Reading.Closure c` and seed `x`, the `V`-enriched settling over FOUR equals
+the spine's reading settling: `(readingVClosure c).settle x = Reading.settle c x`. The
 standard bilattice settling **is** the `V = FOUR` case of settling-over-`V`. -/
-theorem chargeV_recovers_settle (c : Charge.Closure) (x : Charge) :
-    (chargeVClosure c).settle x = Charge.settle c x := rfl
+theorem readingV_recovers_settle (c : Reading.Closure) (x : Reading) :
+    (readingVClosure c).settle x = Reading.settle c x := rfl
 
 /-- **Both `{0,1}` and FOUR are value categories, and FOUR recovers the spine
 .** Bundles the corpus's recovery claim:
 
-* **(a)** `booleanV` (Boolean `{0,1}` = `Order.Two`) and `chargeV` (FOUR = `Charge`)
+* **(a)** `booleanV` (Boolean `{0,1}` = `Order.Two`) and `readingV` (FOUR = `Reading`)
   are `ValueCategory` instances — exhibited as the two ends `V = {0,1}` and `V = FOUR`;
-* **(b)** the standard bilattice settling is the `V = FOUR` case: every `Charge.Closure`
-  lifts to `chargeVClosure c : VClosure chargeV`, and its settling **is** the spine's
-  `Charge.settle c` (`chargeV_recovers_settle`);
+* **(b)** the standard bilattice settling is the `V = FOUR` case: every `Reading.Closure`
+  lifts to `readingVClosure c : VClosure readingV`, and its settling **is** the spine's
+  `Reading.settle c` (`readingV_recovers_settle`);
 * **(c)** that settling is a least fixed point over `V = FOUR`
   (`VClosure.settle_lfp`), so the recovered closure carries the full settling
   semantics.
 
-Concretely: for every charge closure `c` and seed `x`, `(chargeVClosure c).settle x =
-Charge.settle c x`, and `(chargeVClosure c).settle x` is a fixed point of the lifted
+Concretely: for every reading closure `c` and seed `x`, `(readingVClosure c).settle x =
+Reading.settle c x`, and `(readingVClosure c).settle x` is a fixed point of the lifted
 closure and the least fixed point above `x`. So `V = {0,1}` and `V = FOUR` both
 recover the standard bilattice settling spine, as `continuous-valued-settling.md`
 claims. -/
 theorem boolean_recovers_spine :
     (∀ b : booleanV.carrier, booleanV.le b b)
-    ∧ (∀ a : chargeV.carrier, chargeV.le a a)
-    ∧ (∀ (c : Charge.Closure) (x : Charge),
-        (chargeVClosure c).settle x = Charge.settle c x
-        ∧ (chargeVClosure c).op ((chargeVClosure c).settle x) = (chargeVClosure c).settle x
-        ∧ (∀ y, chargeV.le x y → (chargeVClosure c).op y = y →
-            chargeV.le ((chargeVClosure c).settle x) y)) :=
+    ∧ (∀ a : readingV.carrier, readingV.le a a)
+    ∧ (∀ (c : Reading.Closure) (x : Reading),
+        (readingVClosure c).settle x = Reading.settle c x
+        ∧ (readingVClosure c).op ((readingVClosure c).settle x) = (readingVClosure c).settle x
+        ∧ (∀ y, readingV.le x y → (readingVClosure c).op y = y →
+            readingV.le ((readingVClosure c).settle x) y)) :=
   ⟨booleanV.le_refl,
-   chargeV.le_refl,
+   readingV.le_refl,
    fun c x =>
-     ⟨chargeV_recovers_settle c x,
-      (chargeVClosure c).settle_fixed x,
-      fun y => (chargeVClosure c).settle_least x y⟩⟩
+     ⟨readingV_recovers_settle c x,
+      (readingVClosure c).settle_fixed x,
+      fun y => (readingVClosure c).settle_least x y⟩⟩
 
 end Positing.Value
 end Obsmetrologia

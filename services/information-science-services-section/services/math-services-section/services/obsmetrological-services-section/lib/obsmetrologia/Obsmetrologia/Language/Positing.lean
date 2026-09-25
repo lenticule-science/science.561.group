@@ -3,8 +3,8 @@ import Obsmetrologia.Language.Positing.Batch
 import Obsmetrologia.Language.Positing.Bigraded
 import Obsmetrologia.Language.Positing.BigradedCohomology
 import Obsmetrologia.Language.Positing.BigradedTower
-import Obsmetrologia.Language.Positing.Charge
-import Obsmetrologia.Language.Positing.ChargeTactic
+import Obsmetrologia.Language.Positing.Reading
+import Obsmetrologia.Language.Positing.ReadingTactic
 import Obsmetrologia.Language.Positing.Meme
 import Obsmetrologia.Language.Positing.D4Gauge
 import Obsmetrologia.Language.Positing.Evidence

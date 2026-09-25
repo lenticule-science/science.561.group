@@ -22,7 +22,7 @@ over outgoing morphisms of the **round-trip `F(f) ∘ F(f)*` closure**. The exac
 black box; what matters structurally is: *`L` is a Q-functor and its fixed points are exactly
 the global sections*.
 
-In our setting the value Q-category is the FOUR/Charge knowledge order, the "outgoing
+In our setting the value Q-category is the FOUR/Reading knowledge order, the "outgoing
 restriction + its right adjoint" is **precisely the modal pair** `◇ ⊣ □` of
 `ModalPairAdjunction`: possibilizing `◇` is the fiber knowledge-join (the left adjoint, the
 restriction-direction join), necessitating `□` its right adjoint, and their composite
@@ -101,14 +101,14 @@ open Obsmetrologia.Valuation.ModalFrame
 /-! ## §3 — the Lawvere Laplacian as the modal round-trip closure
 
 The reference's Lawvere Laplacian `L : C⁰F → C⁰F` combines outgoing restrictions `F(f)` with
-their right Q-adjoints `F(f)*` into the round-trip `F(f)∘F(f)*` closure. Over the FOUR/Charge
+their right Q-adjoints `F(f)*` into the round-trip `F(f)∘F(f)*` closure. Over the FOUR/Reading
 value Q-category this round-trip is exactly the modal pair composite `□∘◇` of
 `ModalPairAdjunction` — the left adjoint `◇` (possibilize / fiber knowledge-join, the
 restriction-direction join) followed by its right adjoint `□` (necessitate). We *define* the
 Laplacian to be `M.closureOp`. -/
 
 /-- **The Lawvere Laplacian** `L` of a modal frame: the necessitate∘possibilize round-trip
-`closureOp = □∘◇`. This *is* the §3 round-trip `F(f)∘F(f)*` closure over the FOUR/Charge
+`closureOp = □∘◇`. This *is* the §3 round-trip `F(f)∘F(f)*` closure over the FOUR/Reading
 value category — `◇` the restriction-direction join (left adjoint), `□` its right Q-adjoint.
 In the strict regime it is the Tarski Laplacian of Ghrist–Riess (2022). -/
 def lawvereLaplacian (M : ModalFrame) (v : Valuation) : Valuation := M.closureOp v
@@ -278,13 +278,13 @@ theorem diffusion_stabilizes_iff_harmonic (seed : Valuation) (k : Nat) :
 
 /-- **The diffusion reaches the harmonic kernel in finitely many steps (spectral-gap bound).**
 At each cell, the Tarski ascent settles by step 3 (the strict-regime closure-ordinal bound on
-the pointwise diagonal): for the pointwise-charge closure of any `Charge.Closure`, `L³` and
+the pointwise diagonal): for the pointwise-reading closure of any `Reading.Closure`, `L³` and
 `L⁴` agree fiberwise, so the diffusion reaches its fixed point — the harmonic equilibrium — in
 `≤ 3` steps. The number of steps to reach the kernel **is** the spectral gap; this is its
-finite-cover / strict-regime specialization. (Stated for the pointwise-charge Laplacian
+finite-cover / strict-regime specialization. (Stated for the pointwise-reading Laplacian
 `liftOp c.op`, where the finite-ordinal bound is unconditional; the modal closure inherits the
 same ascending convergence by monotone inflation, documented in prose.) -/
-theorem diffusion_spectral_gap_bound (c : Charge.Closure) (v : Valuation) (φ : PredicationCell) :
+theorem diffusion_spectral_gap_bound (c : Reading.Closure) (v : Valuation) (φ : PredicationCell) :
     iterV (liftOp c.op) 3 v φ = iterV (liftOp c.op) 4 v φ :=
   lfp_reached_by_three c v φ
 

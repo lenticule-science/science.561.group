@@ -358,7 +358,7 @@ whose cells are all `⊥`/`⊤` (a paraconsistent — `⊤`-side — fiber point
 cohomological **invisibility** of the negation gauge (it moves nothing on the inconsistency
 side it sees). Reuses `Positing.Gauge.paraconsistent_gauge_stable`. -/
 theorem negation_gauge_invisible (g : K4) (hg : K4.inGauge g = true) (v : Valuation)
-    (h : ∀ φ, v φ = Charge.kBot ∨ v φ = Charge.kTop) : K4.gaugeAct g v = v :=
+    (h : ∀ φ, v φ = Reading.kBot ∨ v φ = Reading.kTop) : K4.gaugeAct g v = v :=
   K4.paraconsistent_gauge_stable g hg v h
 
 /-! ## The coarse moduli (cl-inv-classes), with the invisible negation gauge -/
@@ -378,7 +378,7 @@ theorem coarse_moduli_wellDefined_gauge_invisible (D : LocalDerivability) :
     ∧ (∀ g h : K4, K4.inGauge g = true → K4.inGauge h = true →
         K4.inGauge (K4.mul g h) = true)
     ∧ (∀ (g : K4), K4.inGauge g = true → ∀ (v : Valuation),
-        (∀ φ, v φ = Charge.kBot ∨ v φ = Charge.kTop) → K4.gaugeAct g v = v) :=
+        (∀ φ, v φ = Reading.kBot ∨ v φ = Reading.kTop) → K4.gaugeAct g v = v) :=
   ⟨fun _ r s h => toModuli_eq_of_clInv r s h,
    fun _ _ h => Quot.sound (mld_refines_cohEquiv D h),
    fun g h hg hh => negation_gauge_closed g h hg hh,

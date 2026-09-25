@@ -6,7 +6,7 @@ import Obsmetrologia.Calculus.Order.GraphColoring
 `GraphColoring` pinned the memo's thesis — a proper colouring **is** a factor map onto the
 complete-graph colour shift (`properColoring_iff_hom`). This module cashes that into **exact
 chromatic numbers** for the complete graphs `Kₙ = completeGraph (Fin n)` (and `K₄ = completeGraph
-Charge`), the worked §2 examples of the coloring-aperiodic-tiles memo.
+Reading`), the worked §2 examples of the coloring-aperiodic-tiles memo.
 
 A complete graph is the extremal case in both directions:
 * **upper bound** — the identity colours `K_C` with `C` (`completeGraph_colorable`): distinct
@@ -20,13 +20,13 @@ Together these give `χ(K_C) = |C|` exactly. The instances:
   2-chromatic for the same two reasons: it has an edge, and it is bipartite).
 * `χ(K₃) = 3` — the triangle, the first odd cycle: 3-colourable but not bipartite.
 * `χ(K₄) = 4 = FOUR` — and the lower bound says it tightly: every 4-colouring of `K₄` uses **all four
-  charges** `{⊥, t, f, ⊤}` distinctly. The Four-Colour palette is exactly the Belnap bilattice, and
+  readings** `{⊥, t, f, ⊤}` distinctly. The Four-Colour palette is exactly the Belnap bilattice, and
   `K₄` is what forces all four — the memo's "four colours = FOUR" made an extremal theorem.
 
 ## Main results
 * `completeGraph_colorable` / `proper_completeGraph_injective` — the two-sided bound `χ(K_C) = |C|`.
 * `K2_not_one_colorable`, `K3_not_bipartite`, `K3_three_colorable` — `χ(K₂)=2`, `χ(K₃)=3`.
-* `K4_requires_FOUR` — every proper colouring of `K₄` is injective on the four charges.
+* `K4_requires_FOUR` — every proper colouring of `K₄` is injective on the four readings.
 
 ## References
 Corpus `combinatorics.md`; the coloring-aperiodic-tiles memo §2 (concrete chromatic numbers).
@@ -97,13 +97,13 @@ theorem K3_not_bipartite : ¬ Colorable (completeGraph (Fin 3)) Bool :=
 /-! ### `χ(K₄) = 4 = FOUR` -/
 
 /-- **`K₄` is colourable by the Belnap FOUR** `{⊥, t, f, ⊤}`. -/
-theorem K4_four_colorable : Colorable (completeGraph Charge) Charge := completeGraph_colorable
+theorem K4_four_colorable : Colorable (completeGraph Reading) Reading := completeGraph_colorable
 
-/-- **`K₄` requires all four charges.** Every proper colouring of `K₄ = completeGraph Charge` is
-*injective* on the four charges — there is no slack, all of `{⊥, t, f, ⊤}` must appear. The
+/-- **`K₄` requires all four readings.** Every proper colouring of `K₄ = completeGraph Reading` is
+*injective* on the four readings — there is no slack, all of `{⊥, t, f, ⊤}` must appear. The
 Four-Colour palette is exactly the FOUR bilattice, and `K₄` is the extremal graph that forces it. -/
-theorem K4_requires_FOUR {D : Type} {c : Charge → D}
-    (hc : ProperColoring (completeGraph Charge) c) : Function.Injective c :=
+theorem K4_requires_FOUR {D : Type} {c : Reading → D}
+    (hc : ProperColoring (completeGraph Reading) c) : Function.Injective c :=
   proper_completeGraph_injective hc
 
 end Combinatorics

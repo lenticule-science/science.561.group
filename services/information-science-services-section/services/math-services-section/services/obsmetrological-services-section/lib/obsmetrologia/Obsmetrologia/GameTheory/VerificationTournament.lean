@@ -6,7 +6,7 @@ import Obsmetrologia.Closure.Monad
 This module records the Lean-backed part of the gaming verification-tournament
 certificate. It does not formalize libp2p transport, matchmaking, or the full
 Dialectica game semantics. Its scope is narrower and explicit: once the runtime
-tournament has witnessed a returned monotone closure orbit, `Charge.no_periodic_orbits`
+tournament has witnessed a returned monotone closure orbit, `Reading.no_periodic_orbits`
 turns that orbit into a fixed point, and the finite certificate obligations bundle
 Nash stability with survivor correspondence.
 -/
@@ -161,7 +161,7 @@ def runtimeObligationsOfReading
   equilibriumMatchesSurvivor := EquilibriumMatchesSurvivor reading
 
 /-- Stability for a dominance seed: closure fixed point plus Nash no-deviation. -/
-def StableFor (cl : Charge.Closure) (seed : Charge) (cert : Certificate) : Prop :=
+def StableFor (cl : Reading.Closure) (seed : Reading) (cert : Certificate) : Prop :=
   cl.op seed = seed /\ cert.noProfitableDeviation
 
 /-- Survivor correspondence: the surviving Dialectica witness is the equilibrium strategy. -/
@@ -169,11 +169,11 @@ def CorrespondsToSurvivor (cert : Certificate) : Prop :=
   cert.dialecticaWitnessSurvives /\ cert.equilibriumMatchesSurvivor
 
 /-- The certificate-level settled verdict. -/
-def SettledVerdict (cl : Charge.Closure) (seed : Charge) (cert : Certificate) : Prop :=
+def SettledVerdict (cl : Reading.Closure) (seed : Reading) (cert : Certificate) : Prop :=
   StableFor cl seed cert /\ CorrespondsToSurvivor cert
 
 /-- A runtime tournament whose operational witnesses have been carried into the certificate. -/
-structure RuntimeTournamentSettled (cl : Charge.Closure) (seed : Charge)
+structure RuntimeTournamentSettled (cl : Reading.Closure) (seed : Reading)
     (ops : RuntimeObligations) where
   /-- The closure/no-deviation/survivor certificate is settled. -/
   settled : SettledVerdict cl seed {
@@ -194,20 +194,20 @@ structure RuntimeTournamentSettled (cl : Charge.Closure) (seed : Charge)
 Certificate theorem for the verification tournament.
 
 If the dominance-seed closure orbit returns to its start after at least one step,
-`Charge.no_periodic_orbits` proves that the seed was already at a fixed point. With
+`Reading.no_periodic_orbits` proves that the seed was already at a fixed point. With
 the runtime no-deviation and survivor-correspondence obligations, the certificate is
 therefore stable and corresponds to the surviving claim.
 -/
 theorem settled_verdict_of_closure_certificate
-    (cl : Charge.Closure) (seed : Charge) {k : Nat} (hk : 1 <= k)
-    (hcycle : Charge.iter cl.op k seed = seed)
+    (cl : Reading.Closure) (seed : Reading) {k : Nat} (hk : 1 <= k)
+    (hcycle : Reading.iter cl.op k seed = seed)
     (cert : Certificate)
     (hNoDeviation : cert.noProfitableDeviation)
     (hWitness : cert.dialecticaWitnessSurvives)
     (hCorresponds : cert.equilibriumMatchesSurvivor) :
     SettledVerdict cl seed cert := by
   constructor
-  · exact ⟨Charge.no_periodic_orbits cl seed hk hcycle, hNoDeviation⟩
+  · exact ⟨Reading.no_periodic_orbits cl seed hk hcycle, hNoDeviation⟩
   · exact ⟨hWitness, hCorresponds⟩
 
 /--
@@ -220,8 +220,8 @@ a settled Nash certificate whose equilibrium strategy corresponds to the survivi
 Dialectica witness.
 -/
 theorem runtime_tournament_settled_of_obligations
-    (cl : Charge.Closure) (seed : Charge) {k : Nat} (hk : 1 <= k)
-    (hcycle : Charge.iter cl.op k seed = seed)
+    (cl : Reading.Closure) (seed : Reading) {k : Nat} (hk : 1 <= k)
+    (hcycle : Reading.iter cl.op k seed = seed)
     (ops : RuntimeObligations)
     (hDialectica : ops.dialecticaObjectMap)
     (hTransport : ops.transportRosterWitnessed)
@@ -308,8 +308,8 @@ play streams, but the Nash and survivor-correspondence obligations are derived
 from the finite settled claim/refutation reading.
 -/
 theorem runtime_tournament_settled_of_reading
-    (cl : Charge.Closure) (seed : Charge) {k : Nat} (hk : 1 <= k)
-    (hcycle : Charge.iter cl.op k seed = seed)
+    (cl : Reading.Closure) (seed : Reading) {k : Nat} (hk : 1 <= k)
+    (hcycle : Reading.iter cl.op k seed = seed)
     (ops : OperationalWitnesses)
     (reading : SurvivorReading)
     (hDialectica : ops.dialecticaObjectMap)
@@ -339,8 +339,8 @@ derives Nash/survivor correspondence from the survivor reading, and then assembl
 the settled runtime certificate.
 -/
 theorem runtime_tournament_settled_of_structural_reading
-    (cl : Charge.Closure) (seed : Charge) {k : Nat} (hk : 1 <= k)
-    (hcycle : Charge.iter cl.op k seed = seed)
+    (cl : Reading.Closure) (seed : Reading) {k : Nat} (hk : 1 <= k)
+    (hcycle : Reading.iter cl.op k seed = seed)
     (structural : StructuralOperationalReading)
     (reading : SurvivorReading)
     (hWitnesses : structural.dialecticaWitnesses = structural.claims)

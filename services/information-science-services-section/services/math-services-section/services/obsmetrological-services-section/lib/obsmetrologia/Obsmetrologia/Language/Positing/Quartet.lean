@@ -26,14 +26,14 @@ The math, as theorems:
 
 * **(A) The MODAL FOUR.** `{neither, ◇, □, both}` — apply neither nucleus, `j₁`
   (= ◇) alone, `j₂` (= □) alone, or both (= π). A fresh `inductive Modal` bijecting
-  with `Articulating.Corner` (and hence with `Articulating.FourCorner = Bool × Bool` and `Charge = Articulating.Corner`).
+  with `Articulating.Corner` (and hence with `Articulating.FourCorner = Bool × Bool` and `Reading = Articulating.Corner`).
 * **(B) The MASTER CONFLATION** `quartet_recurrence`: Articulating.Cell-phase,
-  `Articulating.FourCorner`, `Charge` (= `Articulating.Corner`), the NuclearQuartet corner index, and `Modal`
+  `Articulating.FourCorner`, `Reading` (= `Articulating.Corner`), the NuclearQuartet corner index, and `Modal`
   are all ONE object — the chain of bijections composes coherently to the identity.
 * **(C) The COHERENCE 2-CELL.** An abstract `CommutingPair` with a Articulating.Corner-indexed
   family of corner operators, whose generic `square` lemma (`f∘g = g∘f` from the free
   corner to the doubly-acted corner) is THE recurring coherence cell. Two instances —
-  `twistoringPair` (on `Charge`, `f = negate ∼`, `g = conflate −`, commuting by K₄)
+  `twistoringPair` (on `Reading`, `f = negate ∼`, `g = conflate −`, commuting by K₄)
   and `commutatingPair` (on a Heyting algebra, `f = j₁`, `g = j₂`, commuting by the
   nuclear square) — satisfy the *same* generic coherence: `twistoring_eq_commutating`.
 
@@ -68,7 +68,7 @@ inductive Modal where
 
 namespace Modal
 
-/-- The modal corner read as an articulation/charge corner:
+/-- The modal corner read as an articulation/reading corner:
 `neither ↦ absurd`, `dia ↦ potential`, `box ↦ active`, `both ↦ stable`. -/
 def toCorner : Modal → Articulating.Corner
   | neither => Articulating.Corner.absurd
@@ -89,7 +89,7 @@ def ofCorner : Articulating.Corner → Modal
   cases c <;> rfl
 
 /-- **`Articulating.Corner ≃ Modal`** (the `Bij` record the deps use). The modal four-corner is
-the SAME object as the articulation phase / bilattice charge / nuclear-quartet
+the SAME object as the articulation phase / bilattice reading / nuclear-quartet
 corner — re-met under modal names. -/
 def cornerBij : Bij Articulating.Corner Modal where
   to := ofCorner
@@ -110,7 +110,7 @@ structure QuartetRecurrence where
   corner_modal_bij : Bij Articulating.Corner Modal
 
 /-- **THE KEYSTONE — the master conflation.** Articulating.Cell-phase, `Articulating.FourCorner`
-(`Bool × Bool`), `Charge` (= `Articulating.Corner`), the NuclearQuartet corner index, and `Modal`
+(`Bool × Bool`), `Reading` (= `Articulating.Corner`), the NuclearQuartet corner index, and `Modal`
 are all one object: the recurrence carries the explicit bijections. -/
 def quartet_recurrence : QuartetRecurrence where
   corner_fourCorner_bij := Articulating.FourCorner.cornerBij.flip
@@ -169,17 +169,17 @@ end CommutingPair
 
 /-! ### Instance 1 — twistoring (articulating's birth-corner) -/
 
-open Charge in
-/-- **Twistoring** as a commuting pair on `Charge`: `f = negate` (∼, the slot swap),
+open Reading in
+/-- **Twistoring** as a commuting pair on `Reading`: `f = negate` (∼, the slot swap),
 `g = conflate` (−, the complemented swap). They commute by the K₄ law
-`negate (conflate a) = conflate (negate a)` (`Charge.negate_conflate_comm`, the same
+`negate (conflate a) = conflate (negate a)` (`Reading.negate_conflate_comm`, the same
 fact `Positing.Gauge.K4.act_mul` + `mul_comm` package as a group identity). At THIS depth
 the pair are INVOLUTIONS (∼∘∼ = id, −∘− = id) — but that extra law is not part of the
 shared coherence cell. -/
-def twistoringPair : CommutingPair Charge where
-  f := Charge.negate
-  g := Charge.conflate
-  comm := Charge.negate_conflate_comm
+def twistoringPair : CommutingPair Reading where
+  f := Reading.negate
+  g := Reading.conflate
+  comm := Reading.negate_conflate_comm
 
 /-! ### Instance 2 — commutating (aperiodic settling) -/
 
@@ -200,7 +200,7 @@ def commutatingPair {H : Order.HeytingAlgebra} (Q : Order.CommutingNuclei H) :
 coherence 2-cell: it carries both `CommutingPair` instances. -/
 structure TwistoringEqCommutating where
   /-- The twistoring pair at the articulating birth-corner. -/
-  twistoring_pair : CommutingPair Charge
+  twistoring_pair : CommutingPair Reading
   /-- The commutating pair on any settled fiber-algebra carrying commuting nuclei. -/
   commutating_pair : ∀ (H : Order.HeytingAlgebra), Order.CommutingNuclei H → CommutingPair H.carrier
 

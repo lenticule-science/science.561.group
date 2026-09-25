@@ -7,7 +7,7 @@ import Obsmetrologia.Language.Positing.Four
 # Closure-ordinal regime stratification — the FOUR regimes
 
 `ClosureOrdinal` proved the spine's **strict-finite regime**: every inflationary
-endomap on the charge lattice settles by step 3, the closure ordinal `κ ≤ 3`. The
+endomap on the reading lattice settles by step 3, the closure ordinal `κ ≤ 3`. The
 corpus's full picture is that the closure ordinal `κ` stratifies into **four
 mutually-exclusive, jointly-exhaustive regimes** at the ordinal boundaries `ω` and
 `ω₁` (formalizes
@@ -189,11 +189,11 @@ def regimeCornerBij : Bij ClosureRegime Articulating.Corner where
   right c := by cases c <;> rfl
 
 /-- **The four regimes ARE the recurring FOUR.** Not merely equinumerous: the `toCorner`/`ofCorner`
-assignment (`regimeCornerBij`) pins each regime to a *specific* charge — strict ↦ absurd (the
+assignment (`regimeCornerBij`) pins each regime to a *specific* reading — strict ↦ absurd (the
 descent's seed `⊥`), aperiodic ↦ stable (`⊤`, where the KZ diamond is fully alive) — and round-trips
 on both sides, so the κ-stratification is the FOUR met again, element for element. The deeper,
 *structured* conflation — folding the regime into the master `quartet_recurrence` beside
-Articulating.FourCorner/Charge/Modal/NuclearQuartet, and asking what bilattice structure the bijection transports
+Articulating.FourCorner/Reading/Modal/NuclearQuartet, and asking what bilattice structure the bijection transports
 (the κ-chain is **not** the ≤ₖ diamond, so it is the gauge, not the order) — is the open frontier. -/
 theorem regime_is_four_corner :
     (∀ r : ClosureRegime, ClosureRegime.ofCorner (ClosureRegime.toCorner r) = r)
@@ -202,15 +202,15 @@ theorem regime_is_four_corner :
 
 /-! ## (E) The spine sits in the strict regime
 
-`ClosureOrdinal.strict_finite` proved the spine's `κ ≤ 3` over the finite charge
+`ClosureOrdinal.strict_finite` proved the spine's `κ ≤ 3` over the finite reading
 lattice: the strict-finite regime. We exhibit its `ClosureRegimeData` (finite base, hence —
 by the corpus constraints — Scott-continuous and countable cofinality) and prove it
 classifies to `strict`, connecting the dichotomy to `ClosureOrdinal`. -/
 
-/-- The spine's regime data: the finite charge lattice is a **finite base**, so (by the
+/-- The spine's regime data: the finite reading lattice is a **finite base**, so (by the
 corpus constraints, discharged here since `finiteBase = true → · = true`) it is also
 Scott-continuous and of countable cofinality. This is the `ClosureRegimeData` of every
-inflationary charge endomap, whose `κ ≤ 3` is `ClosureOrdinal.strict_finite`. -/
+inflationary reading endomap, whose `κ ≤ 3` is `ClosureOrdinal.strict_finite`. -/
 def spineData : ClosureRegimeData where
   scottContinuous := true
   finiteBase := true
@@ -218,18 +218,18 @@ def spineData : ClosureRegimeData where
   fin_scott := fun _ => rfl
   fin_cof := fun _ => rfl
 
-/-- **The spine is strict.** The finite charge lattice's regime data classifies to
+/-- **The spine is strict.** The finite reading lattice's regime data classifies to
 `ClosureRegime.strict` — the strict-finite regime whose `κ ≤ 3` is
-`ClosureOrdinal.strict_finite` / `Charge.settles_by_three`. The decidable dichotomy
+`ClosureOrdinal.strict_finite` / `Reading.settles_by_three`. The decidable dichotomy
 recovers the spine's regime. -/
 theorem spine_is_strict : classify spineData = ClosureRegime.strict :=
   (classify_strict spineData).mpr rfl
 
-/-- The spine's strictness, witnessed concretely: `Charge.strict_finite` exhibits the
+/-- The spine's strictness, witnessed concretely: `Reading.strict_finite` exhibits the
 `κ ≤ 3` settling bound (`SettlesBy f x 3`) for every inflationary endomap on the
-charge lattice — the operational content of `classify spineData = strict`. -/
-theorem spine_settles_by_three (f : Charge → Charge) (hf : ∀ a, Charge.KLE a (f a))
-    (x : Charge) : Charge.SettlesBy f x 3 := Charge.strict_finite f hf x
+reading lattice — the operational content of `classify spineData = strict`. -/
+theorem spine_settles_by_three (f : Reading → Reading) (hf : ∀ a, Reading.KLE a (f a))
+    (x : Reading) : Reading.SettlesBy f x 3 := Reading.strict_finite f hf x
 
 /-! ## (F) ClosureRegime-dependent cohomology
 
@@ -272,8 +272,8 @@ antisymmetry fails (the aperiodic signature). Each regime is a deficiency of
 the carrier's bound structure, exhibited by derivation rather than asserted
 as regime data. -/
 theorem regime_tower :
-    (∀ f : Charge → Charge, (∀ a, Charge.KLE a (f a)) →
-        ∀ x, Charge.iter f 3 x = Charge.iter f 4 x)
+    (∀ f : Reading → Reading, (∀ a, Reading.KLE a (f a)) →
+        ∀ x, Reading.iter f 3 x = Reading.iter f 4 x)
     ∧ (∀ k r, Record.iter Record.succPos (k + 1) r ≠ Record.iter Record.succPos k r)
     ∧ ((∀ k, ORecord.iter ORecord.osuccPos k ORecord.kBot ≠ ORecord.omegaPos)
         ∧ (∀ k, ORecord.OKLE (ORecord.iter ORecord.osuccPos k ORecord.kBot) ORecord.omegaPos)
@@ -281,7 +281,7 @@ theorem regime_tower :
             ORecord.OKLE ORecord.omegaPos b)
         ∧ ORecord.osuccPos ORecord.omegaPos = ORecord.omegaPos)
     ∧ Positing.Value.HasLaxSlack Record.tallyLaxClosure Record.germPreValue.bot :=
-  ⟨Charge.settles_by_three, Record.iter_succPos_ne,
+  ⟨Reading.settles_by_three, Record.iter_succPos_ne,
     ⟨ORecord.iter_ne_omegaPos, ORecord.iter_le_omegaPos, ORecord.omegaPos_least,
       ORecord.osuccPos_omegaPos⟩,
     Record.tally_lax_slack⟩
@@ -295,8 +295,8 @@ finite stage reaches it; on the germ carrier the contradiction bump's orbit
 is a single point of the germ order while no stage equals the next. -/
 theorem unattained_settling_gate :
     (cohomologyVanishes ClosureRegime.strict = true
-      ∧ ∀ (f : Charge → Charge), (∀ a, Charge.KLE a (f a)) →
-          ∀ x, f (Charge.iter f 3 x) = Charge.iter f 3 x)
+      ∧ ∀ (f : Reading → Reading), (∀ a, Reading.KLE a (f a)) →
+          ∀ x, f (Reading.iter f 3 x) = Reading.iter f 3 x)
     ∧ (cohomologyVanishes ClosureRegime.scott = true
       ∧ ∀ r : Record, Record.succPos r ≠ r)
     ∧ (cohomologyVanishes ClosureRegime.transfiniteBounded = false

@@ -55,33 +55,33 @@ phases. -/
 def triangularAdjacency : Graph TriangularPhase := completeGraph TriangularPhase
 
 /-- King tile adjacency, read at the finite obstruction profile, is the complete graph on FOUR. -/
-def kingAdjacency : Graph Charge := completeGraph Charge
+def kingAdjacency : Graph Reading := completeGraph Reading
 
 /-! ## Palette embeddings into FOUR -/
 
 /-- The orthogonal two-phase palette embedded into FOUR. -/
-def orthogonalToCharge : OrthogonalPhase → Charge
-  | OrthogonalPhase.horizontal => Charge.kBot
-  | OrthogonalPhase.vertical => Charge.kTop
+def orthogonalToReading : OrthogonalPhase → Reading
+  | OrthogonalPhase.horizontal => Reading.kBot
+  | OrthogonalPhase.vertical => Reading.kTop
 
 /-- The triangular three-phase palette embedded into FOUR. -/
-def triangularToCharge : TriangularPhase → Charge
-  | TriangularPhase.north => Charge.kBot
-  | TriangularPhase.east => Charge.tTop
-  | TriangularPhase.west => Charge.tBot
+def triangularToReading : TriangularPhase → Reading
+  | TriangularPhase.north => Reading.kBot
+  | TriangularPhase.east => Reading.tTop
+  | TriangularPhase.west => Reading.tBot
 
 /-- The orthogonal palette embedding is injective. -/
-theorem orthogonalToCharge_injective : Function.Injective orthogonalToCharge := by
+theorem orthogonalToReading_injective : Function.Injective orthogonalToReading := by
   intro a b h
   cases a <;> cases b <;> try rfl
-  all_goals simp [orthogonalToCharge, Charge.kBot, Charge.kTop] at h
+  all_goals simp [orthogonalToReading, Reading.kBot, Reading.kTop] at h
 
 /-- The triangular palette embedding is injective. -/
-theorem triangularToCharge_injective : Function.Injective triangularToCharge := by
+theorem triangularToReading_injective : Function.Injective triangularToReading := by
   intro a b h
   cases a <;> cases b <;> try rfl
   all_goals
-    simp [triangularToCharge, Charge.kBot, Charge.tTop, Charge.tBot] at h
+    simp [triangularToReading, Reading.kBot, Reading.tTop, Reading.tBot] at h
 
 /-! ## Exact finite chromatic witnesses -/
 
@@ -130,33 +130,33 @@ theorem triangular_chromaticNumber_bounded_attained :
     Colorable triangularAdjacency TriangularPhase ∧ ¬ Colorable triangularAdjacency OrthogonalPhase :=
   ⟨triangular_three_colorable, triangular_not_two_colorable⟩
 
-/-- No injection `FOUR ↪ TriangularPhase`: four charges cannot fit three colours. -/
-theorem no_injection_charge_triangular :
-    ¬ ∃ f : Charge → TriangularPhase, Function.Injective f := by
+/-- No injection `FOUR ↪ TriangularPhase`: four readings cannot fit three colours. -/
+theorem no_injection_reading_triangular :
+    ¬ ∃ f : Reading → TriangularPhase, Function.Injective f := by
   rintro ⟨f, hf⟩
-  have h01 : f Charge.kBot ≠ f Charge.tTop := fun h => absurd (hf h) (by decide)
-  have h02 : f Charge.kBot ≠ f Charge.tBot := fun h => absurd (hf h) (by decide)
-  have h03 : f Charge.kBot ≠ f Charge.kTop := fun h => absurd (hf h) (by decide)
-  have h12 : f Charge.tTop ≠ f Charge.tBot := fun h => absurd (hf h) (by decide)
-  have h13 : f Charge.tTop ≠ f Charge.kTop := fun h => absurd (hf h) (by decide)
-  have h23 : f Charge.tBot ≠ f Charge.kTop := fun h => absurd (hf h) (by decide)
-  cases h0 : f Charge.kBot <;>
-    cases h1 : f Charge.tTop <;>
-    cases h2 : f Charge.tBot <;>
-    cases h3 : f Charge.kTop <;>
+  have h01 : f Reading.kBot ≠ f Reading.tTop := fun h => absurd (hf h) (by decide)
+  have h02 : f Reading.kBot ≠ f Reading.tBot := fun h => absurd (hf h) (by decide)
+  have h03 : f Reading.kBot ≠ f Reading.kTop := fun h => absurd (hf h) (by decide)
+  have h12 : f Reading.tTop ≠ f Reading.tBot := fun h => absurd (hf h) (by decide)
+  have h13 : f Reading.tTop ≠ f Reading.kTop := fun h => absurd (hf h) (by decide)
+  have h23 : f Reading.tBot ≠ f Reading.kTop := fun h => absurd (hf h) (by decide)
+  cases h0 : f Reading.kBot <;>
+    cases h1 : f Reading.tTop <;>
+    cases h2 : f Reading.tBot <;>
+    cases h3 : f Reading.kTop <;>
     simp_all
 
 /-- King adjacency is 4-colourable by FOUR. -/
-theorem king_four_colorable : Colorable kingAdjacency Charge :=
+theorem king_four_colorable : Colorable kingAdjacency Reading :=
   K4_four_colorable
 
 /-- King adjacency is not 3-colourable. -/
 theorem king_not_three_colorable : ¬ Colorable kingAdjacency TriangularPhase :=
-  not_colorable_completeGraph no_injection_charge_triangular
+  not_colorable_completeGraph no_injection_reading_triangular
 
 /-- King adjacency has its chromatic number bounded and attained at `4 = FOUR`. -/
 theorem king_chromaticNumber_bounded_attained :
-    Colorable kingAdjacency Charge ∧ ¬ Colorable kingAdjacency TriangularPhase :=
+    Colorable kingAdjacency Reading ∧ ¬ Colorable kingAdjacency TriangularPhase :=
   ⟨king_four_colorable, king_not_three_colorable⟩
 
 /-! ## The finite corpus patch theorem -/
@@ -177,7 +177,7 @@ namespace CorpusTileAdjacencyConvention
 def Vertex : CorpusTileAdjacencyConvention → Type
   | orthogonal => OrthogonalPhase
   | triangular => TriangularPhase
-  | king => Charge
+  | king => Reading
 
 /-- The finite graph of a realized corpus tile-adjacency convention. -/
 def graph : (r : CorpusTileAdjacencyConvention) → Graph r.Vertex
@@ -186,14 +186,14 @@ def graph : (r : CorpusTileAdjacencyConvention) → Graph r.Vertex
   | king => kingAdjacency
 
 /-- Every realized corpus tile-adjacency convention is FOUR-colourable. -/
-theorem four_colorable (r : CorpusTileAdjacencyConvention) : Colorable r.graph Charge := by
+theorem four_colorable (r : CorpusTileAdjacencyConvention) : Colorable r.graph Reading := by
   cases r with
   | orthogonal =>
-      exact Colorable.mono orthogonalToCharge
-        (fun {a b} h => orthogonalToCharge_injective h) orthogonal_two_colorable
+      exact Colorable.mono orthogonalToReading
+        (fun {a b} h => orthogonalToReading_injective h) orthogonal_two_colorable
   | triangular =>
-      exact Colorable.mono triangularToCharge
-        (fun {a b} h => triangularToCharge_injective h) triangular_three_colorable
+      exact Colorable.mono triangularToReading
+        (fun {a b} h => triangularToReading_injective h) triangular_three_colorable
   | king =>
       exact king_four_colorable
 
@@ -203,7 +203,7 @@ end CorpusTileAdjacencyConvention
 than FOUR colours.  This is the finite theorem: it ranges over the three realized convention
 carriers above, not over arbitrary planar graphs. -/
 theorem corpus_planar_tile_patches_four_colorable (r : CorpusTileAdjacencyConvention) :
-    Colorable (CorpusTileAdjacencyConvention.graph r) Charge :=
+    Colorable (CorpusTileAdjacencyConvention.graph r) Reading :=
   CorpusTileAdjacencyConvention.four_colorable r
 
 end Combinatorics

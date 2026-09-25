@@ -27,10 +27,10 @@ contact count at the spanning forest `entities − components`, so `H1rank` is e
   density realizes both a floppy forest and a load-bearing cycle (`density_not_sufficient`): the
   **percolation gap**, where placement, not count, decides. A realizable density `d` is anchored
   by `rigidity_replicate_two`.
-* **The gauge-canonical placement measure.** A placement is a `Charge`-colouring of the sites, and
+* **The gauge-canonical placement measure.** A placement is a `Reading`-colouring of the sites, and
   the gauge group of FOUR is `D₄ = Aut(FOUR; {≤ₖ, ≤ₜ})` (`D4Gauge`). `D₄` acts *transitively* on
   the four corners (`gauge_transitive` — `negSwap` is the 4-cycle through them), so the unique
-  gauge-invariant probability is uniform: over the eight gauge images of any charge each corner is
+  gauge-invariant probability is uniform: over the eight gauge images of any reading each corner is
   hit exactly twice (`gauge_orbit_equidistributes`), fixing the condensate (`⊤`) base-rate at the
   *derived* `2/8 = 1/4` (`condensate_baserate_quarter`). The placement measure is not external — it
   is forced by the gauge symmetry.
@@ -173,7 +173,7 @@ theorem density_not_sufficient (d : Nat) (hd : 1 ≤ d) :
 
 /-! ## The gauge-canonical placement measure: `D₄ = Aut(FOUR)` fixes the `⊤`-rate at `1/4`
 
-A *placement* is a `Charge`-colouring of the sites. The measure on placements is not external: it is
+A *placement* is a `Reading`-colouring of the sites. The measure on placements is not external: it is
 the unique probability invariant under the gauge group of FOUR, `D₄ = Aut(FOUR; {≤ₖ, ≤ₜ})`
 (`D4Gauge`). Because `D₄` acts transitively on the four corners, that invariant measure is uniform,
 and the condensate (`⊤`) base-rate it forces is the *derived* fraction `1/4`. -/
@@ -181,10 +181,10 @@ and the condensate (`⊤`) base-rate it forces is the *derived* fraction `1/4`. 
 open Obsmetrologia.D4 (D8)
 
 /-- **The four corners are one `D₄`-orbit.** The gauge group `Aut(FOUR; {≤ₖ, ≤ₜ})` acts transitively
-on `Charge`: any corner reaches any other under some gauge symmetry (`negSwap` is the 4-cycle through
+on `Reading`: any corner reaches any other under some gauge symmetry (`negSwap` is the 4-cycle through
 all four). A single orbit means there is *one* gauge class of placement value — so any
-gauge-invariant weighting must charge the four corners equally. -/
-theorem gauge_transitive (a b : Charge) : ∃ g : D8, D8.act g a = b := by
+gauge-invariant weighting must reading the four corners equally. -/
+theorem gauge_transitive (a b : Reading) : ∃ g : D8, D8.act g a = b := by
   cases a <;> cases b <;>
     first
       | exact ⟨D8.id, rfl⟩
@@ -196,10 +196,10 @@ theorem gauge_transitive (a b : Charge) : ∃ g : D8, D8.act g a = b := by
       | exact ⟨D8.confSwap, rfl⟩
       | exact ⟨D8.negConfSwap, rfl⟩
 
-/-- **The gauge orbit equidistributes the condensate.** Over the eight gauge images of any charge,
+/-- **The gauge orbit equidistributes the condensate.** Over the eight gauge images of any reading,
 exactly two are condensed (`⊤`): the orbit-stabilizer count `|D₄| / |orbit| = 8 / 4 = 2`. The
 uniform placement measure is the `D₄`-invariant one, and it is canonical, not assumed. -/
-theorem gauge_orbit_equidistributes (a : Charge) :
+theorem gauge_orbit_equidistributes (a : Reading) :
     (D8.all.map (fun g => D8.act g a)).countP (fun c => c.isInconsistency) = 2 := by
   cases a <;> decide
 
@@ -207,7 +207,7 @@ theorem gauge_orbit_equidistributes (a : Charge) :
 and its orbit of any placement value is condensed in exactly two of them: the `⊤`-fraction of the
 gauge-uniform placement is `2/8 = 1/4`, derived from `D₄ = Aut(FOUR)` with no external measure. This
 is the placement measure the critical-fraction frontier was missing. -/
-theorem condensate_baserate_quarter (a : Charge) :
+theorem condensate_baserate_quarter (a : Reading) :
     (D8.all.map (fun g => D8.act g a)).countP (fun c => c.isInconsistency) * 4 = D8.all.length := by
   rw [gauge_orbit_equidistributes]; rfl
 
@@ -225,15 +225,15 @@ structure PlacementGraph where
   /-- The contact topology whose H¹ decides load-bearing. -/
   nerve : CoverNerve
   /-- FOUR values placed on the finite contact sites. -/
-  siteCharges : List Charge
+  siteReadings : List Reading
   /-- The contact count is induced by the condensed/held-`⊤` placements. -/
-  cells_eq_condensed : nerve.cells = siteCharges.countP (fun c => c.isInconsistency)
+  cells_eq_condensed : nerve.cells = siteReadings.countP (fun c => c.isInconsistency)
 
 namespace PlacementGraph
 
 /-- The number of condensed held-`⊤` contacts in the FOUR placement. -/
 def condensedContacts (P : PlacementGraph) : Nat :=
-  P.siteCharges.countP (fun c => c.isInconsistency)
+  P.siteReadings.countP (fun c => c.isInconsistency)
 
 /-- **Finite placement onset.** If the placement-induced condensed contacts cross the spanning-forest
 threshold, the placed contact graph bears load. This is the smallest formal order-parameter test:
@@ -249,9 +249,9 @@ theorem loadBearing_of_condensed_crosses_threshold (P : PlacementGraph)
 /-- The finite contact graph induced by one `D₈` gauge orbit of a FOUR placement value. The orbit has
 two condensed values, so we wire it as the two-contact cyclic nerve. This is the smallest concrete
 graph-specific counting witness for the gauge-uniform placement measure. -/
-def gaugeOrbitCyclic (a : Charge) : PlacementGraph where
+def gaugeOrbitCyclic (a : Reading) : PlacementGraph where
   nerve := cyclicNerve 2 (by omega)
-  siteCharges := D8.all.map (fun g => D8.act g a)
+  siteReadings := D8.all.map (fun g => D8.act g a)
   cells_eq_condensed := by
     rw [gauge_orbit_equidistributes]
     rfl
@@ -259,7 +259,7 @@ def gaugeOrbitCyclic (a : Charge) : PlacementGraph where
 /-- **Gauge-orbit placement onset.** A single `D₈` gauge orbit supplies two condensed contacts, and
 the two-contact cyclic nerve crosses its spanning-forest threshold, so the induced placed graph bears
 load. This is a concrete finite counting test of held-`⊤` placement crossed with topology/H¹. -/
-theorem gaugeOrbitCyclic_loadBearing (a : Charge) : loadBearing (gaugeOrbitCyclic a).nerve := by
+theorem gaugeOrbitCyclic_loadBearing (a : Reading) : loadBearing (gaugeOrbitCyclic a).nerve := by
   apply loadBearing_of_condensed_crosses_threshold
   unfold gaugeOrbitCyclic condensedContacts
   rw [gauge_orbit_equidistributes]
@@ -270,7 +270,7 @@ end PlacementGraph
 /-! ## The fundamental cycle is the local model of the load-bearing cycle
 
 The cycling that makes matter load-bearing is not a separate construction: it is the intrinsic
-order-4 rotation of the predication-induced FOUR (`Positing` admits the `Charge` value to a
+order-4 rotation of the predication-induced FOUR (`Positing` admits the `Reading` value to a
 predication cell; `D4Gauge` carries its rotation). The generator `negSwap` — born when the two
 orders `≤ₖ, ≤ₜ` are allowed to exchange — cycles the four corners `⊥ → t → ⊤ → f → ⊥`, entrenching
 exactly one held-`⊤` per turn. As a contact network that single turn is one `Ȟ¹` generator, so the
@@ -278,30 +278,30 @@ fundamental cycle on FOUR *is* the local model of percolation's load-bearing cyc
 
 /-- One **spin** of the fundamental cycle: the order-4 rotation `negSwap` of FOUR (`negate ∘ swap`),
 the exchange-of-orders rotation. -/
-def spin (a : Charge) : Charge := D8.act D8.negSwap a
+def spin (a : Reading) : Reading := D8.act D8.negSwap a
 
-/-- The **fundamental cycle** through a charge: its full `ℤ/4` orbit under `spin`. -/
-def fundamentalCycle (a : Charge) : List Charge :=
+/-- The **fundamental cycle** through a reading: its full `ℤ/4` orbit under `spin`. -/
+def fundamentalCycle (a : Reading) : List Reading :=
   [a, spin a, spin (spin a), spin (spin (spin a))]
 
 /-- **The cycle closes after four spins** — `negSwap` has order 4 (`D4`'s `r_pow_four`). The rotation
 returns the corner to itself, so the orbit is a cycle. -/
-theorem spin_four (a : Charge) : spin (spin (spin (spin a))) = a := by cases a <;> rfl
+theorem spin_four (a : Reading) : spin (spin (spin (spin a))) = a := by cases a <;> rfl
 
 /-- **The cycle is an order-exchange.** The spin `negSwap` lies in the `σ`-coset `K₄·σ`: it exchanges
 `≤ₖ ↔ ≤ₜ`. The fundamental cycle exists precisely because the two orders may swap — it is absent from
 the base Klein-four, whose elements are all involutions. -/
 theorem spin_exchanges_orders : D4.D8.inSwapCoset D8.negSwap = true := rfl
 
-/-- **The fundamental cycle visits every corner.** Each of the four charges appears in one cycle: a
+/-- **The fundamental cycle visits every corner.** Each of the four readings appears in one cycle: a
 single turn of the rotation is one full FOUR (`⊥, t, ⊤, f`). -/
-theorem fundamentalCycle_complete (a c : Charge) : c ∈ fundamentalCycle a := by
+theorem fundamentalCycle_complete (a c : Reading) : c ∈ fundamentalCycle a := by
   cases a <;> cases c <;> decide
 
 /-- **Exactly one held-`⊤` per cycle.** Of the four corners a fundamental cycle visits, precisely one
 is condensed (`⊤`): one entrenched failure per turn of the rotation — the `1/4` condensate rate read
 as one-per-cycle. -/
-theorem one_failure_per_cycle (a : Charge) :
+theorem one_failure_per_cycle (a : Reading) :
     (fundamentalCycle a).countP (fun c => c.isInconsistency) = 1 := by cases a <;> decide
 
 /-- The **fundamental loop as a contact network**: four lenticules wired in one closed cycle (4
@@ -326,7 +326,7 @@ predication-induced FOUR (a) closes into a loop (`spin_four`), (b) is one `Ȟ¹`
 network and bears load (`fundamentalNerve_h1`, `_loadBearing`), and (c) entrenches exactly one held-`⊤`
 (`one_failure_per_cycle`). One fundamental cycle = one load-bearing loop = one mass quantum: FOUR's
 own rotation is the local model of percolation's load-bearing cycle. -/
-theorem fundamental_cycle_is_local_h1 (a : Charge) :
+theorem fundamental_cycle_is_local_h1 (a : Reading) :
     spin (spin (spin (spin a))) = a
       ∧ fundamentalNerve.H1rank = 1
       ∧ loadBearing fundamentalNerve
@@ -363,7 +363,7 @@ a bead becomes more informational. Mass, cycle, and bit are one object, and that
 source of one unit of discrete curvature. -/
 theorem fundamental_cycle_one_bit :
     Landauer.landauerBits fundamentalNerve = 1
-      ∧ (∀ a : Charge, (fundamentalCycle a).countP (fun c => c.isInconsistency) = 1) :=
+      ∧ (∀ a : Reading, (fundamentalCycle a).countP (fun c => c.isInconsistency) = 1) :=
   ⟨fundamentalNerve_h1, one_failure_per_cycle⟩
 
 /-! ## The fundamental cycle, read on the regimes

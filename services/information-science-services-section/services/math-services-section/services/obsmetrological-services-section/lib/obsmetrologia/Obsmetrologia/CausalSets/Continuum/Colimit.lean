@@ -11,17 +11,17 @@ against a *growing* sprinkling, and one would like the `V → ∞` continuum lim
 **colimit** (a limit *attained* at a finite stage, not an ε–δ limit). If that held, the continuum
 scaling would live in the order/settling machinery rather than in real analysis.
 
-**What is actually proved here is strictly weaker, and abstract.** Over the finite charge lattice, any
+**What is actually proved here is strictly weaker, and abstract.** Over the finite reading lattice, any
 `≤ₖ`-monotone `ℤ`-functional `F` on a `DirectedFamily` `S` commutes with the directed join, because the
 join is *attained* (`DirectedFamily.sup_mem`). The statements below quantify over an **arbitrary** `S`
 and `F`: they mention no sprinkling, no causal set, no Benincasa–Dowker action. They are general
-order-theoretic facts about `Charge`.
+order-theoretic facts about `Reading`.
 
 **Constructions (1) and (2) are built (in the finite-value reach); the magnitude and infinite volume
 are not.** The application to the actual continuum limit needs:
 
-1. **(BUILT below.)** the refinement tower as a *concrete* `DirectedFamily` of `Charge` — `RefinementTower`
-   (a `≤ₖ`-monotone charge sequence, the partial settlings of a refining sprinkling), `upto` (its first
+1. **(BUILT below.)** the refinement tower as a *concrete* `DirectedFamily` of `Reading` — `RefinementTower`
+   (a `≤ₖ`-monotone reading sequence, the partial settlings of a refining sprinkling), `upto` (its first
    `N+1` stages, a directed family), `upto_sup` (join attained at the top stage), with the
    settling-closure iteration `closureTower` as a concrete inhabitant. `tower_continuum_attained` feeds
    it to the abstract lemma, so the colimit interchange holds at a real tower, not just an arbitrary `S`.
@@ -31,7 +31,7 @@ are not.** The application to the actual continuum limit needs:
    the colimit. `F` is no longer abstract — it is the real action.
 
 What remains **red**: a tower with *unboundedly growing* action (the `V → ∞` sprinkling)
-cannot be encoded as a `Charge`-indexed family — at most four distinct values fit — so the attainment is a
+cannot be encoded as a `Reading`-indexed family — at most four distinct values fit — so the attainment is a
 feature of the finite carrier, not the infinite-volume limit; and beyond it the metric magnitude
 (`−¼√g`, the Ricci scalar's normalization). The geometric reading "the continuum Ricci scalar is an
 attained colimit" holds only for finite-value towers; the infinite-volume density is the real frontier.
@@ -52,7 +52,7 @@ poset; here the action varies `0 → 1` across a refinement.)
   continuum value over the tower is `F (stage N)`, attained.
 * `bd_tower_bridge` / `bd_construction_two` — **construction (2)**: `bdF` reads the *actual* Benincasa–Dowker
   action of the `∅ ⊆ diamond` causal-set tower at every stage (`0`, then `1`), carried through the colimit.
-  `F` is the action, within the finite-value reach of the charge lattice.
+  `F` is the action, within the finite-value reach of the reading lattice.
 * `constructive_continuum_colimit_attained_below_omega` — the bundled constructive-continuum
   certificate: finite tower attainment at the ordinal stage `ofNat N ≤ ω`, Bishop reals as the
   `κ=ω` completion, and the real stochastic interval as a value category.
@@ -71,13 +71,13 @@ namespace Obsmetrologia
 namespace CausalSets.Continuum.Colimit
 
 open Obsmetrologia.Closure.Scott
-open Obsmetrologia.Charge
+open Obsmetrologia.Reading
 
 /-- **(Abstract.)** A `≤ₖ`-monotone `ℤ`-functional `F` on a `DirectedFamily` `S` commutes with the
 directed join: `F (⋁ₖ S)` bounds every member value and is itself realized at a member. This is a
-general fact about `Charge` and an *arbitrary* `F` — it says nothing about any sprinkling or action;
+general fact about `Reading` and an *arbitrary* `F` — it says nothing about any sprinkling or action;
 instantiating `S`/`F` at the BD continuum tower is the unbuilt frontier (see the module header). -/
-theorem monotone_functional_commutes_with_join (S : DirectedFamily) (F : Charge → Int)
+theorem monotone_functional_commutes_with_join (S : DirectedFamily) (F : Reading → Int)
     (hmono : ∀ a b, KLE a b → F a ≤ F b) :
     (∀ x ∈ S.elems, F x ≤ F (sup S.elems)) ∧ F (sup S.elems) ∈ S.elems.map F := by
   refine ⟨fun x hx => hmono x (sup S.elems) (le_sup hx), ?_⟩
@@ -88,23 +88,23 @@ value `F (⋁ₖ S)` is attained at a member of `S` and dominates every member �
 not an ε–δ limit. The intended reading (`S` = the sprinkling tower, `F` = the action, so "the continuum
 limit is attained") requires the two unbuilt constructions in the module header; it is **not**
 established by this lemma. -/
-theorem monotone_functional_limit_attained (S : DirectedFamily) (F : Charge → Int)
+theorem monotone_functional_limit_attained (S : DirectedFamily) (F : Reading → Int)
     (hmono : ∀ a b, KLE a b → F a ≤ F b) :
     ∃ x ∈ S.elems, F x = F (sup S.elems) ∧ ∀ y ∈ S.elems, F y ≤ F x :=
   ⟨sup S.elems, S.sup_mem, rfl, fun y hy => hmono y (sup S.elems) (le_sup hy)⟩
 
 /-- A positive-scalar multiple of a `≤ₖ`-monotone functional is `≤ₖ`-monotone. -/
-theorem smul_mono (act : Charge → Int) (hmono : ∀ a b, KLE a b → act a ≤ act b) :
+theorem smul_mono (act : Reading → Int) (hmono : ∀ a b, KLE a b → act a ≤ act b) :
     ∀ a b, KLE a b → 2 * act a ≤ 2 * act b :=
   fun a b h => by have := hmono a b h; omega
 
 /-- **(Abstract.)** A doubled monotone functional `2·act` inherits the attained-colimit property. This
 is purely `monotone_functional_limit_attained` applied to `fun a => 2 * act a` for an **arbitrary**
-`act : Charge → ℤ`. It contains no Ricci, no action, no sprinkling: the `act` here is abstract. The
+`act : Reading → ℤ`. It contains no Ricci, no action, no sprinkling: the `act` here is abstract. The
 *intended* application — `act` = the real Benincasa–Dowker action, so `2·act` = the Ricci functional via
 `CausalSets.Curvature.Ricci.total_ricciScalar_eq_two_bdAction` — is the unbuilt program of the module header, **not**
 proved here. -/
-theorem smul_limit_attained (S : DirectedFamily) (act : Charge → Int)
+theorem smul_limit_attained (S : DirectedFamily) (act : Reading → Int)
     (hmono : ∀ a b, KLE a b → act a ≤ act b) :
     ∃ x ∈ S.elems, 2 * act x = 2 * act (sup S.elems)
       ∧ ∀ y ∈ S.elems, 2 * act y ≤ 2 * act x :=
@@ -113,24 +113,24 @@ theorem smul_limit_attained (S : DirectedFamily) (act : Charge → Int)
 /-! ## Construction (1): the refinement tower as a concrete `DirectedFamily`
 
 The first of the two constructions the header names as needed to make the abstract lemmas concrete. A
-**refinement tower** is a `≤ₖ`-monotone sequence of charges — the partial settlings of a growing
+**refinement tower** is a `≤ₖ`-monotone sequence of readings — the partial settlings of a growing
 sprinkling, knowledge accreting as the sprinkling refines. Its first `N+1` stages form a chain, hence a
 directed family, whose join is *attained* at the top stage (`upto`, `upto_sup`). This is a,
 concrete `DirectedFamily`, so the abstract `monotone_functional_limit_attained` now has a real instance
-(`tower_continuum_attained`). Modelled, as throughout `ScottClosure`, over the finite charge lattice; the
+(`tower_continuum_attained`). Modelled, as throughout `ScottClosure`, over the finite reading lattice; the
 canonical inhabitant is the settling-closure iteration (`closureTower`).
 
 This builds construction (1) only. The geometric BD/Ricci reading still needs construction (2) — the
 *actual* Benincasa–Dowker action / Ricci functional instantiated on this tower — and the metric
-magnitude (`−¼√g`); both remain unbuilt, and the finite-charge tower is the corpus's model of the
+magnitude (`−¼√g`); both remain unbuilt, and the finite-reading tower is the corpus's model of the
 refinement order, not an infinite-volume sprinkling. -/
 
-/-- A **refinement tower**: a `≤ₖ`-monotone sequence of charges. `stage n` is the partial settling at
+/-- A **refinement tower**: a `≤ₖ`-monotone sequence of readings. `stage n` is the partial settling at
 refinement level `n`; `refines` says each refinement only *adds* knowledge (`≤ₖ`-monotone) — the
 order-theoretic content of "a finer sprinkling witnesses more". -/
 structure RefinementTower where
   /-- The partial settling at refinement level `n`. -/
-  stage : Nat → Charge
+  stage : Nat → Reading
   /-- Each refinement adds knowledge: the stages are `≤ₖ`-monotone. -/
   refines : ∀ n, KLE (stage n) (stage (n + 1))
 
@@ -181,14 +181,14 @@ theorem upto_sup (N : Nat) : (T.upto N).sup = T.stage N := by
 end RefinementTower
 
 /-- The `n`-fold settling `cl^[n] x` (core-only iteration; no Mathlib `Function.iterate`). -/
-def iter (f : Charge → Charge) : Nat → Charge → Charge
+def iter (f : Reading → Reading) : Nat → Reading → Reading
   | 0, x => x
   | n + 1, x => f (iter f n x)
 
 /-- The **settling-closure iteration** as a concrete refinement tower: `stage n = cl^[n] x`, the
-`n`-fold settling of a seed `x` under an inflationary charge-closure `c`. The canonical inhabitant — the
+`n`-fold settling of a seed `x` under an inflationary reading-closure `c`. The canonical inhabitant — the
 corpus's "tower of sprinkled settlings, ordered by refinement" realized as closure iteration. -/
-def closureTower (c : Charge.Closure) (x : Charge) : RefinementTower where
+def closureTower (c : Reading.Closure) (x : Reading) : RefinementTower where
   stage n := iter c.op n x
   refines n := c.infl (iter c.op n x)
 
@@ -197,7 +197,7 @@ abstract colimit lemma at the concrete tower: for any `≤ₖ`-monotone `ℤ`-fu
 directed-join ("continuum") value over the tower's first `N+1` stages equals `F (stage N)` and is
 attained there. Construction (1) makes the colimit concrete; the geometric/BD reading still needs
 construction (2) and the metric magnitude. -/
-theorem tower_continuum_attained (T : RefinementTower) (N : Nat) (F : Charge → Int)
+theorem tower_continuum_attained (T : RefinementTower) (N : Nat) (F : Reading → Int)
     (hmono : ∀ a b, KLE a b → F a ≤ F b) :
     F ((T.upto N).sup) = F (T.stage N)
       ∧ ∃ s ∈ (T.upto N).elems,
@@ -237,14 +237,14 @@ def RealStochasticIntervalValueCategory : Prop :=
         Probability.RealStochastic.realUnitIntervalStochVC.le b a → a = b)
   ∧ Probability.RealStochastic.realUnitIntervalStochVC.bot = Probability.RealStochastic.zero
 
-/-- **Constructive continuum colimit, below `ω`.** For any finite `Charge` refinement tower and any
+/-- **Constructive continuum colimit, below `ω`.** For any finite `Reading` refinement tower and any
 `≤ₖ`-monotone integer functional, the directed-join value over the first `N+1` stages is attained at
 stage `N`; that stage is the finite ordinal `ofNat N` below `ω`. The same certificate records the two
 continuous carriers that make the surrounding continuum constructive: Bishop reals are the
 Scott-continuous `κ=ω` completion of the rationals, and the real stochastic interval `[0,1]` is a value
 category. -/
 theorem constructive_continuum_colimit_attained_below_omega
-    (T : RefinementTower) (N : Nat) (F : Charge → Int)
+    (T : RefinementTower) (N : Nat) (F : Reading → Int)
     (hmono : ∀ a b, KLE a b → F a ≤ F b) :
     Ord.Le (Ord.ofNat N) Ord.omega
     ∧ BishopRealScottCompletion
@@ -264,12 +264,12 @@ Construction (1) gave a concrete tower but kept `F` abstract. Here `F` is instan
 Benincasa–Dowker action of real causal sets. The refinement `∅ ⊆ diamond` is a sprinkling step:
 the empty causal set has BD action `0` (the empty fold), the causal diamond has BD action `1`
 (`CausalSets.Action.EinsteinHilbertAction.diamond_bdAction`). Encoding the two stages as `⊥ₖ` (empty) and `⊤ₖ` (diamond), the
-charge functional `bdF` reads off the *real* action at every stage (`bd_tower_bridge`), and its
+reading functional `bdF` reads off the *real* action at every stage (`bd_tower_bridge`), and its
 directed-join continuum value over the tower is attained at the diamond's action `1`.
 
 This realizes construction (2) for a tower whose action takes finitely many values — the reach of
-the 4-element charge lattice. A tower with *unboundedly growing* action (the `V → ∞` sprinkling)
-cannot be encoded as a `Charge`-indexed family (at most four distinct values), so the infinite-volume
+the 4-element reading lattice. A tower with *unboundedly growing* action (the `V → ∞` sprinkling)
+cannot be encoded as a `Reading`-indexed family (at most four distinct values), so the infinite-volume
 continuum density — and the metric magnitude `−¼√g` — remain the real frontier. The attainment is a
 feature of the finite carrier, not of the limit. -/
 
@@ -279,16 +279,16 @@ def bdCausalSet : Nat → List (Fin 4)
   | 0 => []
   | _ + 1 => CausalSets.Dimension.OrderingFraction.fourEvents
 
-/-- The stage charge: `⊥ₖ` (empty, action `0`) at stage `0`, `⊤ₖ` (the diamond, action `1`) after. -/
-def bdStage : Nat → Charge
+/-- The stage reading: `⊥ₖ` (empty, action `0`) at stage `0`, `⊤ₖ` (the diamond, action `1`) after. -/
+def bdStage : Nat → Reading
   | 0 => kBot
   | _ + 1 => kTop
 
-/-- The Benincasa–Dowker action transported onto the charge lattice: `1` at the diamond stage `⊤ₖ`,
+/-- The Benincasa–Dowker action transported onto the reading lattice: `1` at the diamond stage `⊤ₖ`,
 else `0`. The actual BD action read as a `≤ₖ`-monotone `ℤ`-functional. -/
-def bdF (c : Charge) : Int := if KLE kTop c then 1 else 0
+def bdF (c : Reading) : Int := if KLE kTop c then 1 else 0
 
-/-- `bdF` is `≤ₖ`-monotone (finite exhaustion over the four charges). -/
+/-- `bdF` is `≤ₖ`-monotone (finite exhaustion over the four readings). -/
 theorem bdF_mono : ∀ a b, KLE a b → bdF a ≤ bdF b := by
   intro a b; cases a <;> cases b <;> decide
 
@@ -316,7 +316,7 @@ theorem bd_tower_bridge (n : Nat) :
 /-- **Construction (2), realized.** For the `∅ ⊆ diamond` tower: (a) `bdF` reads the actual BD action at
 every stage (`bd_tower_bridge`); (b) its continuum (directed-join) value over the tower's first `N+1`
 stages is attained at the top stage, equal to the diamond's action `1` for `N ≥ 1`. The abstract colimit
-lemma now carries a Benincasa–Dowker functional — within the finite-value reach of the charge
+lemma now carries a Benincasa–Dowker functional — within the finite-value reach of the reading
 lattice (see the section header for what stays frontier). -/
 theorem bd_construction_two (N : Nat) :
     (∀ n, bdF (bdStage n) = CausalSets.Action.EinsteinHilbertAction.bdAction (bdCausalSet n) CausalSets.Dimension.OrderingFraction.diamondPrec)

@@ -10,18 +10,18 @@ bilattice, exactly as the corpus states it:
 
 * `…/world-set/content/bilattice-accessibility-relation/bilattice-accessibility-relation.md`
   — the accessibility relation `R : W × W → 𝐋^⋈` is *bilattice-valued*; when `𝐋 = 𝟐` it
-  takes values in `FOUR` (= `Charge`), and restricting to the consistent sub-algebra
+  takes values in `FOUR` (= `Reading`), and restricting to the consistent sub-algebra
   recovers a Boolean (classical) Kripke accessibility relation.
 * `…/bilattice-accessibility-relation/content/twist-modal-translation/twist-modal-translation.md`
   — the twist translation `ν(□φ) = (□₊ν₁ ∧ □₋∼ν₂, ∼□₊∼ν₂)` splitting the bilattice box
   into its two classical modal components.
 
 The carrier of accessibility is `Valuation.FiniteFibration`: each cell `φ` carries the
-finite list `fiber φ` of cells *accessible from* `φ`, and a charge per cell is the
+finite list `fiber φ` of cells *accessible from* `φ`, and a reading per cell is the
 four-valued reading. The modal operators are the fiber quantifiers of `Quantifying`:
 
-* **possibilize** `◇ = existsF` — the fiber knowledge-**join** (Charge.joinList);
-* **necessitate** `□ = forallF` — the fiber knowledge-**meet** (Charge.meetList).
+* **possibilize** `◇ = existsF` — the fiber knowledge-**join** (Reading.joinList);
+* **necessitate** `□ = forallF` — the fiber knowledge-**meet** (Reading.meetList).
 
 These are exactly `Valuation.ModalFrame.possibilize`/`necessitate` of `ModalPairAdjunction`,
 which are defined on the underlying `FiniteFibration`, so they apply verbatim to every
@@ -56,7 +56,7 @@ namespace Obsmetrologia
 namespace Kripke
 
 open Obsmetrologia.Valuation
-open Obsmetrologia.Charge
+open Obsmetrologia.Reading
 
 /-! ## The frame hierarchy K ⊇ T ⊇ S4 ⊇ S5
 
@@ -122,10 +122,10 @@ def KFrame.necessitate (M : KFrame) (v : Valuation) : Valuation :=
   forallF M.toFibration v
 
 theorem KFrame.possibilize_apply (M : KFrame) (v : Valuation) (φ : PredicationCell) :
-    M.possibilize v φ = Charge.joinList ((M.toFibration.fiber φ).map v) := rfl
+    M.possibilize v φ = Reading.joinList ((M.toFibration.fiber φ).map v) := rfl
 
 theorem KFrame.necessitate_apply (M : KFrame) (v : Valuation) (φ : PredicationCell) :
-    M.necessitate v φ = Charge.meetList ((M.toFibration.fiber φ).map v) := rfl
+    M.necessitate v φ = Reading.meetList ((M.toFibration.fiber φ).map v) := rfl
 
 /-! ### Monotonicity holds on the bare K-frame (no axioms needed) -/
 
@@ -133,21 +133,21 @@ theorem KFrame.necessitate_apply (M : KFrame) (v : Valuation) (φ : PredicationC
 theorem KFrame.possibilize_mono (M : KFrame) {v w : Valuation} (h : Valuation.leK v w) :
     Valuation.leK (M.possibilize v) (M.possibilize w) := by
   intro φ
-  refine Charge.joinList_le _ _ ?_
+  refine Reading.joinList_le _ _ ?_
   intro a ha
   rcases List.mem_map.1 ha with ⟨ψ, hψ, rfl⟩
-  exact Charge.kle_trans _ _ _ (h ψ)
-    (Charge.le_joinList (w ψ) _ (List.mem_map.2 ⟨ψ, hψ, rfl⟩))
+  exact Reading.kle_trans _ _ _ (h ψ)
+    (Reading.le_joinList (w ψ) _ (List.mem_map.2 ⟨ψ, hψ, rfl⟩))
 
 /-- **□ is monotone** on any K-frame. -/
 theorem KFrame.necessitate_mono (M : KFrame) {v w : Valuation} (h : Valuation.leK v w) :
     Valuation.leK (M.necessitate v) (M.necessitate w) := by
   intro φ
-  refine Charge.le_meetList _ _ ?_
+  refine Reading.le_meetList _ _ ?_
   intro a ha
   rcases List.mem_map.1 ha with ⟨ψ, hψ, rfl⟩
-  exact Charge.kle_trans _ _ _
-    (Charge.meetList_le (v ψ) _ (List.mem_map.2 ⟨ψ, hψ, rfl⟩)) (h ψ)
+  exact Reading.kle_trans _ _ _
+    (Reading.meetList_le (v ψ) _ (List.mem_map.2 ⟨ψ, hψ, rfl⟩)) (h ψ)
 
 /-! ### On a T-frame: ◇ inflationary, □ deflationary (from reflexivity only) -/
 
@@ -156,14 +156,14 @@ which needs only reflexivity. -/
 theorem TFrame.le_possibilize (M : TFrame) (v : Valuation) :
     Valuation.leK v (M.toKFrame.possibilize v) := by
   intro φ
-  exact Charge.le_joinList (v φ) _ (List.mem_map.2 ⟨φ, M.refl φ, rfl⟩)
+  exact Reading.le_joinList (v φ) _ (List.mem_map.2 ⟨φ, M.refl φ, rfl⟩)
 
 /-- **□ is deflationary** on a T-frame — `□v ≤ₖ v`. Reuses the corpus's `necessitate_le`,
 which needs only reflexivity. -/
 theorem TFrame.necessitate_le (M : TFrame) (v : Valuation) :
     Valuation.leK (M.toKFrame.necessitate v) v := by
   intro φ
-  exact Charge.meetList_le (v φ) _ (List.mem_map.2 ⟨φ, M.refl φ, rfl⟩)
+  exact Reading.meetList_le (v φ) _ (List.mem_map.2 ⟨φ, M.refl φ, rfl⟩)
 
 /-! ## S4 = closure algebra: the box is an interior operator
 
@@ -187,28 +187,28 @@ theorem S4Frame.box_mono (M : S4Frame) {v w : Valuation} (h : Valuation.leK v w)
 (`χ ∈ Rψ`) of `□v ψ` also a meetand of `□v φ`, hence `□v φ ≤ₖ □v ψ`. (Uses **trans only**.) -/
 theorem S4Frame.box_le_box_fiber (M : S4Frame) (v : Valuation)
     {φ ψ : PredicationCell} (h : ψ ∈ M.toFibration.fiber φ) :
-    Charge.KLE (M.toKFrame.necessitate v φ) (M.toKFrame.necessitate v ψ) := by
-  show Charge.KLE (Charge.meetList ((M.toFibration.fiber φ).map v))
-      (Charge.meetList ((M.toFibration.fiber ψ).map v))
-  refine Charge.le_meetList _ _ ?_
+    Reading.KLE (M.toKFrame.necessitate v φ) (M.toKFrame.necessitate v ψ) := by
+  show Reading.KLE (Reading.meetList ((M.toFibration.fiber φ).map v))
+      (Reading.meetList ((M.toFibration.fiber ψ).map v))
+  refine Reading.le_meetList _ _ ?_
   intro a ha
   rcases List.mem_map.1 ha with ⟨χ, hχ, rfl⟩
   -- χ ∈ Rψ and ψ ∈ Rφ ⟹ χ ∈ Rφ, so v χ is a meetand of □v φ.
   have hχφ : χ ∈ M.toFibration.fiber φ := M.trans φ ψ χ h hχ
-  exact Charge.meetList_le (v χ) _ (List.mem_map.2 ⟨χ, hχφ, rfl⟩)
+  exact Reading.meetList_le (v χ) _ (List.mem_map.2 ⟨χ, hχφ, rfl⟩)
 
 /-- **□ is idempotent on S4** — `□□v = □v`. The `≤` half is monotonicity of `□v ≤ v`; the
 `≥` half is `box_le_box_fiber` (transitivity). **Symmetry is not used.** -/
 theorem S4Frame.box_idem (M : S4Frame) (v : Valuation) :
     M.toKFrame.necessitate (M.toKFrame.necessitate v) = M.toKFrame.necessitate v := by
   funext φ
-  apply Charge.kle_antisymm
+  apply Reading.kle_antisymm
   · -- `□□v ≤ □v` : `□v ≤ v`, monotone `□`.
     exact M.box_mono (M.box_deflationary v) φ
   · -- `□v ≤ □□v φ = ⨅_{ψ∈Rφ} □v ψ`; each `□v φ ≤ □v ψ` by the 4-axiom.
-    show Charge.KLE (M.toKFrame.necessitate v φ)
-        (Charge.meetList ((M.toFibration.fiber φ).map (M.toKFrame.necessitate v)))
-    refine Charge.le_meetList _ _ ?_
+    show Reading.KLE (M.toKFrame.necessitate v φ)
+        (Reading.meetList ((M.toFibration.fiber φ).map (M.toKFrame.necessitate v)))
+    refine Reading.le_meetList _ _ ?_
     intro a ha
     rcases List.mem_map.1 ha with ⟨ψ, hψ, rfl⟩
     exact M.box_le_box_fiber v hψ
@@ -227,26 +227,26 @@ theorem S4Frame.diamond_mono (M : S4Frame) {v w : Valuation} (h : Valuation.leK 
 `v χ` (`χ ∈ Rψ`) of `◇v ψ` is a joinand of `◇v φ`, so `◇v ψ ≤ₖ ◇v φ`. (Trans only.) -/
 theorem S4Frame.diamond_fiber_le (M : S4Frame) (v : Valuation)
     {φ ψ : PredicationCell} (h : ψ ∈ M.toFibration.fiber φ) :
-    Charge.KLE (M.toKFrame.possibilize v ψ) (M.toKFrame.possibilize v φ) := by
-  show Charge.KLE (Charge.joinList ((M.toFibration.fiber ψ).map v))
-      (Charge.joinList ((M.toFibration.fiber φ).map v))
-  refine Charge.joinList_le _ _ ?_
+    Reading.KLE (M.toKFrame.possibilize v ψ) (M.toKFrame.possibilize v φ) := by
+  show Reading.KLE (Reading.joinList ((M.toFibration.fiber ψ).map v))
+      (Reading.joinList ((M.toFibration.fiber φ).map v))
+  refine Reading.joinList_le _ _ ?_
   intro a ha
   rcases List.mem_map.1 ha with ⟨χ, hχ, rfl⟩
   have hχφ : χ ∈ M.toFibration.fiber φ := M.trans φ ψ χ h hχ
-  exact Charge.le_joinList (v χ) _ (List.mem_map.2 ⟨χ, hχφ, rfl⟩)
+  exact Reading.le_joinList (v χ) _ (List.mem_map.2 ⟨χ, hχφ, rfl⟩)
 
 /-- **◇ is idempotent on S4** — `◇◇v = ◇v`. Dual to `box_idem`; the `≥` half is extensivity,
 the `≤` half is `diamond_fiber_le` (transitivity). -/
 theorem S4Frame.diamond_idem (M : S4Frame) (v : Valuation) :
     M.toKFrame.possibilize (M.toKFrame.possibilize v) = M.toKFrame.possibilize v := by
   funext φ
-  apply Charge.kle_antisymm
+  apply Reading.kle_antisymm
   · -- `◇◇v φ = ⨆_{ψ∈Rφ} ◇v ψ ≤ ◇v φ` since each `◇v ψ ≤ ◇v φ`.
-    show Charge.KLE
-        (Charge.joinList ((M.toFibration.fiber φ).map (M.toKFrame.possibilize v)))
+    show Reading.KLE
+        (Reading.joinList ((M.toFibration.fiber φ).map (M.toKFrame.possibilize v)))
         (M.toKFrame.possibilize v φ)
-    refine Charge.joinList_le _ _ ?_
+    refine Reading.joinList_le _ _ ?_
     intro a ha
     rcases List.mem_map.1 ha with ⟨ψ, hψ, rfl⟩
     exact M.diamond_fiber_le v hψ
@@ -341,21 +341,21 @@ pair `ν(□φ) = (ν₁, ν₂)` of classical bimodal formulas
     ν₂(□φ) = ∼ □₊ ∼ ν₂(φ),
 
 where `□₊`, `□₋` are the two classical modal operators for the positive / negative
-components of the bilattice accessibility relation `R`. On `Charge`, the positive component
-is `Charge.pos` and the negative `Charge.neg`; `∼` (truth negation) is `Charge.negate`, the
+components of the bilattice accessibility relation `R`. On `Reading`, the positive component
+is `Reading.pos` and the negative `Reading.neg`; `∼` (truth negation) is `Reading.negate`, the
 slot-swap, with `(negate a).pos = a.neg` and `(negate a).neg = a.pos`. We record the
 *algebraic shape* of the negation half of the translation — `∼` swaps the two evidence
 slots — the four-valued ground on which `ν₁/ν₂` split the box into `□₊/□₋`. -/
 
-/-- The **twist split** of a charge: its positive- and negative-evidence components
+/-- The **twist split** of a reading: its positive- and negative-evidence components
 `(ν₁, ν₂) = (pos, neg)` — the two classical-component readings of a bilattice value. -/
-def twistSplit (a : Charge) : Bool × Bool := (a.pos, a.neg)
+def twistSplit (a : Reading) : Bool × Bool := (a.pos, a.neg)
 
 /-- The translation's negation law, at the value level: truth-negation `∼` swaps the two
 classical components — `ν₁(∼a) = ν₂(a)` and `ν₂(∼a) = ν₁(a)`. This is the slot-swap that
 makes `□₋ ∼ ν₂` and `∼ □₊ ∼ ν₂` the negative-component modal clauses of `ν(□φ)`. -/
-theorem twistSplit_negate (a : Charge) :
-    twistSplit (Charge.negate a) = ((twistSplit a).2, (twistSplit a).1) := by
+theorem twistSplit_negate (a : Reading) :
+    twistSplit (Reading.negate a) = ((twistSplit a).2, (twistSplit a).1) := by
   cases a <;> rfl
 
 end Kripke

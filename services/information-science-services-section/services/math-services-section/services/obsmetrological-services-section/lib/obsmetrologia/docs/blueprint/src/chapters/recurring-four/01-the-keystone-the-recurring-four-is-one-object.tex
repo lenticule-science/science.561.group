@@ -14,7 +14,7 @@ The bijection $\texttt{cornerStatus} : \texttt{Bij}\;\texttt{Articulating.Corner
 \begin{theorem}[The four-fold identity]\label{thm:four-fold}\lean{Obsmetrologia.four_fold}\leanok\uses{thm:corner-status, thm:generator}
 \texttt{four\_fold} states that \texttt{Articulating.Corner.all} and \texttt{Generator.all} each have length four: every incarnation of the recurring four has exactly four elements, with no fifth reading.
 \end{theorem}
-\begin{theorem}[Charge is phase, definitionally]\label{thm:charge-is-phase}\lean{Obsmetrologia.charge_is_phase}\leanok\uses{thm:four-bilattice, def:articulating}
+\begin{theorem}[Charge is phase, definitionally]\label{thm:charge-is-phase}\lean{Obsmetrologia.reading_is_phase}\leanok\uses{thm:four-bilattice, def:articulating}
 \texttt{charge\_is\_phase} proves $(c : \texttt{Charge}) = c$ for every corner $c$ --- because \texttt{Charge} is \emph{defined} to be \texttt{Articulating.Corner}. A bilattice charge is not merely isomorphic to an articulation phase; it \emph{is} one, re-met as a value rather than as a stage of descent. This definitional collapse is the spine of the keystone.
 \end{theorem}
 \begin{proposition}[The canonical four-corner object]\label{thm:four-object}\lean{Obsmetrologia.Articulating.FourCorner}\leanok\uses{thm:corner-status, thm:charge-is-phase}
@@ -23,7 +23,7 @@ The bijection $\texttt{cornerStatus} : \texttt{Bij}\;\texttt{Articulating.Corner
 \begin{proposition}[A cell's four-corner]\label{thm:cell-fourcorner}\lean{Obsmetrologia.Articulating.Cell.fourCorner}\leanok\uses{thm:four-object, def:articulating}
 \texttt{Articulating.Cell.fourCorner} reads the articulation phase of a cell as the four-corner $(\text{tokenArticulated}, \text{claimArticulated})$ --- these two statuses are themselves derived, read off the presence of a witness in \texttt{tokenSlot} and \texttt{claimSlot} respectively, not carried as free Boolean data. It is the bridge across which a stage of the descent becomes a value of the canonical object, unchanged in form by the slot cell: the derived Bool pair is exactly the four-corner regardless of how many witnesses accumulate in either slot.
 \end{proposition}
-\begin{theorem}[Conflation: articulating $\cong$ positing]\label{thm:articulation-phase-is-charge}\lean{Obsmetrologia.articulation_phase_is_charge}\leanok\uses{thm:cell-fourcorner, thm:four-object}
+\begin{theorem}[Conflation: articulating $\cong$ positing]\label{thm:articulation-phase-is-charge}\lean{Obsmetrologia.articulation_phase_is_reading}\leanok\uses{thm:cell-fourcorner, thm:four-object}
 \texttt{articulation\_phase\_is\_charge} proves that \texttt{Articulating.FourCorner.toCorner} of a cell's four-corner equals the cell's corner --- and since \texttt{Articulating.Corner}~$=$~\texttt{Charge}, equals its bilattice charge. The two-sided $(\text{token}, \text{claim})$ partition that articulating produces and the four-point value that positing admits are one object. The two verbs are the same four-corner cell met at two depths --- a theorem, not a comment.
 \end{theorem}
 \begin{theorem}[The un-articulated position is one point]\label{thm:potential-is-kbot}\lean{Obsmetrologia.absurd_is_kBot}\leanok\uses{thm:articulation-phase-is-charge, thm:settling}

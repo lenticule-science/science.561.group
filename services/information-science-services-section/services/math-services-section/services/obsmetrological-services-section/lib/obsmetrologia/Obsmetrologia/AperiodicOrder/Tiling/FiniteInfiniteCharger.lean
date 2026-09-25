@@ -23,7 +23,7 @@ construction.
 * `Charger.toK4`, `Charger.ofK4` -- the equivalence with `Positing.Gauge.K4`.
 * `Charger.arrowDual`, `Charger.finitenessDual` -- the two commuting `Z/2`
   axes.
-* `Charger.soficCell`, `Charger.colimitCell` -- the charge assignments for the
+* `Charger.soficCell`, `Charger.colimitCell` -- the reading assignments for the
   two bridge mechanisms.
 
 ## Main results
@@ -40,7 +40,7 @@ construction.
 * `SoficShift`: decorated finite-type covers and `fib_deep_sofic`.
 * `AndersonPutnam`: directed systems and `DirectedSystem.Colimit`.
 * `OrderSwapDuality`: the existing order-swap involution is a distinct
-  arrow-reversal-shaped witness, not an element of the original charge `K4`.
+  arrow-reversal-shaped witness, not an element of the original reading `K4`.
 -/
 
 namespace Obsmetrologia
@@ -222,11 +222,11 @@ theorem colimit_cocone_lands_transfinite_algebra (S : DirectedSystem) :
 /-! ## Relation to the existing order-swap duality -/
 
 /-- `OrderSwapDuality` supplies the existing involutive order-swap witness. It is
-separate from the original charge `K4`, but it has the arrow-reversal shape needed
+separate from the original reading `K4`, but it has the arrow-reversal shape needed
 by the charger's algebra/coalgebra axis. -/
-theorem orderSwapDuality_witnesses_arrow_reversal_shape (a : Charge) :
+theorem orderSwapDuality_witnesses_arrow_reversal_shape (a : Reading) :
     a.swap.swap = a :=
-  Charge.swap_swap a
+  Reading.swap_swap a
 
 end Charger
 end AperiodicOrder.Tiling

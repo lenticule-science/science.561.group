@@ -103,23 +103,23 @@ theorem fuse_mono_right (a : R.carrier) {b b' : R.carrier} (h : R.le b b') :
 
 /-! ## Bonding — the residual as a saturating bond
 
-The residual `imp b a` is the charge a constraint `b` demands to deliver output `a`
+The residual `imp b a` is the reading a constraint `b` demands to deliver output `a`
 — the bond between two fragments. The adjunction gives the two triangle identities:
 the bond delivers at most the output (`bond_counit`, `fuse b (imp b a) ≤ a`, no free
-charge created) and a fragment always carries enough charge to bond
-(`bond_unit`, `a ≤ imp b (fuse b a)`). The bond saturates exactly — output charge
+reading created) and a fragment always carries enough reading to bond
+(`bond_unit`, `a ≤ imp b (fuse b a)`). The bond saturates exactly — output reading
 meeting input slot with no residue — when the counit is an equality
 (`bond_saturates_iff`), and bonds compose: the output of `a ⇒ b` fused with the
 output of `b ⇒ c` sits below `a ⇒ c` (`bonds_compose`), the covalent chain where each
 bond's output saturates the next slot. -/
 
 /-- **The bond counit.** Fusing the input slot `b` with the bond `imp b a` delivers at
-most the output `a`: `fuse b (imp b a) ≤ a`. No free charge is created by bonding. -/
+most the output `a`: `fuse b (imp b a) ≤ a`. No free reading is created by bonding. -/
 theorem bond_counit (a b : R.carrier) : R.le (R.fuse b (R.imp b a)) a := by
   rw [R.fuse_comm b (R.imp b a)]
   exact (R.fuse_le_iff (R.imp b a) b a).mpr (R.le_refl (R.imp b a))
 
-/-- **The bond unit.** A fragment `a` always carries enough charge to bond through `b`:
+/-- **The bond unit.** A fragment `a` always carries enough reading to bond through `b`:
 `a ≤ imp b (fuse b a)`. -/
 theorem bond_unit (a b : R.carrier) : R.le a (R.imp b (R.fuse b a)) := by
   rw [R.fuse_comm b a]
@@ -135,9 +135,9 @@ theorem bond_saturates_iff (a b : R.carrier) :
   · intro h
     exact R.le_antisymm (bond_counit R a b) h
 
-/-- **Bonds compose.** The output charge of the bond `a ⇒ b`, fused with the output of
+/-- **Bonds compose.** The output reading of the bond `a ⇒ b`, fused with the output of
 `b ⇒ c`, saturates the bond `a ⇒ c`: `fuse (imp a b) (imp b c) ≤ imp a c`. The stable
-bridge where one hub's output charges saturate the next hub's input slots — the
+bridge where one hub's output readings saturate the next hub's input slots — the
 covalent chain, residual transitivity from the adjunction alone. -/
 theorem bonds_compose (a b c : R.carrier) :
     R.le (R.fuse (R.imp a b) (R.imp b c)) (R.imp a c) := by

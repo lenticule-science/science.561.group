@@ -2,14 +2,14 @@ import Obsmetrologia.Language.Positing.Four
 import Obsmetrologia.Language.Positing.Value.PreCategory
 
 /-!
-# Record — the counting value carrier under the charge
+# Record — the counting value carrier under the reading
 
 The record sector: a value is a pair of tallies — how many times a cell has
 been told true, how many times told false — rather than a pair of flags
-(corpus: `content/.../sheaf`, `content/.../inconsistency-sheaf`; the charge is
+(corpus: `content/.../sheaf`, `content/.../inconsistency-sheaf`; the reading is
 the record's shadow under "is the tally positive?"). The carrier is the twist
 product of the unbounded lattice `(ℕ, min, max)` with itself, carrying the
-same two orders as `Charge`: knowledge `≤ₖ` (both tallies increasing) and
+same two orders as `Reading`: knowledge `≤ₖ` (both tallies increasing) and
 truth `≤ₜ` (positive up, negative down).
 
 ## Main definitions
@@ -18,7 +18,7 @@ truth `≤ₜ` (positive up, negative down).
 * `joinK`, `meetK`, `joinT`, `meetT` — the componentwise `max`/`min` lattice
   operations of the two orders.
 * `add` — the record merge: pointwise addition, carrying multiplicity.
-* `charge` — the readout `Record → Charge` by tally positivity.
+* `reading` — the readout `Record → Reading` by tally positivity.
 * `topMass` — the contradiction mass `min pos neg`.
 * `succPos`, `iter` — the tally-increment dynamic and finite iteration.
 
@@ -33,21 +33,21 @@ truth `≤ₜ` (positive up, negative down).
   places `⊤` as an artifact of demanding a bound.
 * `record_escapes_strict_finite` — `succPos` is `≤ₖ`-inflationary and
   monotone yet has no finite settling stage: `iter succPos (k+1) r ≠
-  iter succPos k r` for every `k`. `Charge.settles_by_three` fails on this
+  iter succPos k r` for every `k`. `Reading.settles_by_three` fails on this
   carrier; the strict-finite regime is a boundedness artifact, and the
   `κ = ω` regime is inhabited. `joinClosure_one_step` is the counterpoint:
   every join-bounded closure still settles in one step.
-* `charge_joinK`/`meetK`/`joinT`/`meetT` — the readout is a homomorphism for
-  all four operations; `charge_surjective`, `charge_not_injective` — it is a
+* `reading_joinK`/`meetK`/`joinT`/`meetT` — the readout is a homomorphism for
+  all four operations; `reading_surjective`, `reading_not_injective` — it is a
   proper collapse.
-* `charge_add_eq_charge_joinK` — the readout cannot distinguish the counting
+* `reading_add_eq_reading_joinK` — the readout cannot distinguish the counting
   merge from the idempotent join.
 * `topMass_add` — the counting merge is superadditive in contradiction mass:
-  merging never destroys held contradiction. (The idempotent `Charge` join
+  merging never destroys held contradiction. (The idempotent `Reading` join
   collapses it: `joinK ⊤ ⊤ = ⊤`.)
-* `bottom_reflecting_hom_eq_charge` — the collapse is forced: any map
-  `Record → Charge` preserving the four operations, sending the empty record
-  to `⊥ₖ`, and reflecting `⊥ₖ` is the charge readout, pointwise.
+* `bottom_reflecting_hom_eq_reading` — the collapse is forced: any map
+  `Record → Reading` preserving the four operations, sending the empty record
+  to `⊥ₖ`, and reflecting `⊥ₖ` is the reading readout, pointwise.
 
 ## References
 
@@ -57,13 +57,13 @@ bounded case over a residuated lattice.
 
 ## Tags
 
-record, bilattice, twist product, unbounded, charge, multiplicity
+record, bilattice, twist product, unbounded, reading, multiplicity
 -/
 
 namespace Obsmetrologia
 
 /-- A record: the pair of evidence tallies for one cell — told-true count and
-told-false count. The charge is this pair's positivity shadow. -/
+told-false count. The reading is this pair's positivity shadow. -/
 structure Record where
   /-- The told-true tally. -/
   pos : Nat
@@ -266,7 +266,7 @@ theorem iter_succPos_ne (k : Nat) (r : Record) :
 
 /-- **The record carrier escapes the strict-finite regime.** `succPos` is
 `≤ₖ`-inflationary and monotone, yet no iterate is a settling stage —
-`Charge.settles_by_three` (every inflationary endomap on the four-element
+`Reading.settles_by_three` (every inflationary endomap on the four-element
 carrier settles by stage 3) fails on records. The `κ = ω` regime is
 inhabited by a derived carrier, not by asserted regime data. -/
 theorem record_escapes_strict_finite :
@@ -286,12 +286,12 @@ theorem joinClosure_one_step (k r : Record) :
   · show max k.neg (max k.neg r.neg) = max k.neg r.neg
     rw [← Nat.max_assoc, Nat.max_self]
 
-/-! ## The charge readout -/
+/-! ## The reading readout -/
 
-/-- The charge of a record: the positivity of each tally. This is the map the
+/-- The reading of a record: the positivity of each tally. This is the map the
 corpus calls the shadow of the record sector — `Record`'s two counters
-flattened to `Charge`'s two flags. -/
-def charge (r : Record) : Charge := Charge.ofSlots (r.pos != 0) (r.neg != 0)
+flattened to `Reading`'s two flags. -/
+def reading (r : Record) : Reading := Reading.ofSlots (r.pos != 0) (r.neg != 0)
 
 theorem bne_zero_max (p q : Nat) : ((max p q) != 0) = ((p != 0) || (q != 0)) := by
   cases p <;> cases q <;> simp [Nat.succ_max_succ]
@@ -302,47 +302,47 @@ theorem bne_zero_min (p q : Nat) : ((min p q) != 0) = ((p != 0) && (q != 0)) := 
 theorem bne_zero_add (p q : Nat) : ((p + q) != 0) = ((p != 0) || (q != 0)) := by
   cases p <;> cases q <;> simp
 
-@[simp] theorem charge_kBot : charge kBot = Charge.kBot := rfl
+@[simp] theorem reading_kBot : reading kBot = Reading.kBot := rfl
 
 /-- The readout preserves the knowledge join. -/
-theorem charge_joinK (a b : Record) :
-    charge (joinK a b) = Charge.joinK (charge a) (charge b) := by
-  simp [charge, joinK, Charge.joinK, bne_zero_max]
+theorem reading_joinK (a b : Record) :
+    reading (joinK a b) = Reading.joinK (reading a) (reading b) := by
+  simp [reading, joinK, Reading.joinK, bne_zero_max]
 
 /-- The readout preserves the knowledge meet. -/
-theorem charge_meetK (a b : Record) :
-    charge (meetK a b) = Charge.meetK (charge a) (charge b) := by
-  simp [charge, meetK, Charge.meetK, bne_zero_min]
+theorem reading_meetK (a b : Record) :
+    reading (meetK a b) = Reading.meetK (reading a) (reading b) := by
+  simp [reading, meetK, Reading.meetK, bne_zero_min]
 
 /-- The readout preserves the truth join. -/
-theorem charge_joinT (a b : Record) :
-    charge (joinT a b) = Charge.joinT (charge a) (charge b) := by
-  simp [charge, joinT, Charge.joinT, bne_zero_max, bne_zero_min]
+theorem reading_joinT (a b : Record) :
+    reading (joinT a b) = Reading.joinT (reading a) (reading b) := by
+  simp [reading, joinT, Reading.joinT, bne_zero_max, bne_zero_min]
 
 /-- The readout preserves the truth meet. -/
-theorem charge_meetT (a b : Record) :
-    charge (meetT a b) = Charge.meetT (charge a) (charge b) := by
-  simp [charge, meetT, Charge.meetT, bne_zero_max, bne_zero_min]
+theorem reading_meetT (a b : Record) :
+    reading (meetT a b) = Reading.meetT (reading a) (reading b) := by
+  simp [reading, meetT, Reading.meetT, bne_zero_max, bne_zero_min]
 
-/-- Every charge is some record's readout. -/
-theorem charge_surjective (c : Charge) : ∃ r : Record, charge r = c := by
+/-- Every reading is some record's readout. -/
+theorem reading_surjective (c : Reading) : ∃ r : Record, reading r = c := by
   cases c with
   | absurd => exact ⟨⟨0, 0⟩, rfl⟩
   | potential => exact ⟨⟨1, 0⟩, rfl⟩
   | active => exact ⟨⟨0, 1⟩, rfl⟩
   | stable => exact ⟨⟨1, 1⟩, rfl⟩
 
-/-- The readout is a proper collapse: distinct records share a charge. -/
-theorem charge_not_injective :
-    ∃ a b : Record, charge a = charge b ∧ a ≠ b :=
+/-- The readout is a proper collapse: distinct records share a reading. -/
+theorem reading_not_injective :
+    ∃ a b : Record, reading a = reading b ∧ a ≠ b :=
   ⟨⟨1, 0⟩, ⟨2, 0⟩, rfl, by decide⟩
 
 /-- **The readout cannot tell the counting merge from the idempotent join.**
-Under `charge`, `add` and `joinK` are the same operation — multiplicity is
+Under `reading`, `add` and `joinK` are the same operation — multiplicity is
 exactly what the shadow forgets. -/
-theorem charge_add_eq_charge_joinK (a b : Record) :
-    charge (add a b) = charge (joinK a b) := by
-  simp [charge, add, joinK, bne_zero_add, bne_zero_max]
+theorem reading_add_eq_reading_joinK (a b : Record) :
+    reading (add a b) = reading (joinK a b) := by
+  simp [reading, add, joinK, bne_zero_add, bne_zero_max]
 
 /-! ## Contradiction mass -/
 
@@ -352,11 +352,11 @@ def topMass (r : Record) : Nat := min r.pos r.neg
 
 /-- A record reads out as held `⊤` exactly when it holds positive
 contradiction mass. -/
-theorem charge_eq_kTop_iff (r : Record) :
-    charge r = Charge.kTop ↔ 0 < topMass r := by
+theorem reading_eq_kTop_iff (r : Record) :
+    reading r = Reading.kTop ↔ 0 < topMass r := by
   cases r with
   | mk p n =>
-    cases p <;> cases n <;> simp [charge, topMass] <;> decide
+    cases p <;> cases n <;> simp [reading, topMass] <;> decide
 
 theorem topMass_le_pos (r : Record) : topMass r ≤ r.pos := by
   show min r.pos r.neg ≤ r.pos
@@ -386,7 +386,7 @@ theorem pos_le_topMass (r : Record) (h : r.pos ≤ r.neg) : r.pos ≤ topMass r 
   exact Nat.le_refl _
 
 /-- **The counting merge never destroys contradiction mass** — it is
-superadditive. The idempotent `Charge` join collapses mass
+superadditive. The idempotent `Reading` join collapses mass
 (`joinK ⊤ ⊤ = ⊤`); the record merge carries it. -/
 theorem topMass_add (a b : Record) :
     topMass a + topMass b ≤ topMass (add a b) :=
@@ -396,23 +396,23 @@ theorem topMass_add (a b : Record) :
 
 /-! ## The collapse is forced -/
 
-/-- **Any bottom-reflecting homomorphic readout is the charge.** A map
-`Record → Charge` that preserves the four lattice operations, sends the empty
-record to `⊥ₖ`, and sends only the empty record to `⊥ₖ` agrees with `charge`
+/-- **Any bottom-reflecting homomorphic readout is the reading.** A map
+`Record → Reading` that preserves the four lattice operations, sends the empty
+record to `⊥ₖ`, and sends only the empty record to `⊥ₖ` agrees with `reading`
 pointwise. The Belnap flags are the only bottom-faithful four-valued shadow
-of the tallies; the lossiness measured by `charge_not_injective` and
-`charge_add_eq_charge_joinK` is not a design choice in the readout but a
+of the tallies; the lossiness measured by `reading_not_injective` and
+`reading_add_eq_reading_joinK` is not a design choice in the readout but a
 property of reading records four-valuedly at all. -/
-theorem bottom_reflecting_hom_eq_charge (h : Record → Charge)
-    (hJK : ∀ a b, h (joinK a b) = Charge.joinK (h a) (h b))
-    (hMK : ∀ a b, h (meetK a b) = Charge.meetK (h a) (h b))
-    (hJT : ∀ a b, h (joinT a b) = Charge.joinT (h a) (h b))
-    (hMT : ∀ a b, h (meetT a b) = Charge.meetT (h a) (h b))
-    (hbot : h kBot = Charge.kBot)
-    (hrefl : ∀ r, h r = Charge.kBot → r = kBot) :
-    ∀ r, h r = charge r := by
+theorem bottom_reflecting_hom_eq_reading (h : Record → Reading)
+    (hJK : ∀ a b, h (joinK a b) = Reading.joinK (h a) (h b))
+    (hMK : ∀ a b, h (meetK a b) = Reading.meetK (h a) (h b))
+    (hJT : ∀ a b, h (joinT a b) = Reading.joinT (h a) (h b))
+    (hMT : ∀ a b, h (meetT a b) = Reading.meetT (h a) (h b))
+    (hbot : h kBot = Reading.kBot)
+    (hrefl : ∀ r, h r = Reading.kBot → r = kBot) :
+    ∀ r, h r = reading r := by
   -- the one-tick records are forced
-  have hone : h ⟨1, 0⟩ = Charge.tTop := by
+  have hone : h ⟨1, 0⟩ = Reading.tTop := by
     have hkey := hMT ⟨1, 0⟩ kBot
     rw [show meetT ⟨1, 0⟩ kBot = kBot from rfl, hbot] at hkey
     cases hx : h ⟨1, 0⟩ <;> rw [hx] at hkey
@@ -420,7 +420,7 @@ theorem bottom_reflecting_hom_eq_charge (h : Record → Charge)
     · rfl
     · exact absurd hkey (by decide)
     · exact absurd hkey (by decide)
-  have honeneg : h ⟨0, 1⟩ = Charge.tBot := by
+  have honeneg : h ⟨0, 1⟩ = Reading.tBot := by
     have hkey := hJT ⟨0, 1⟩ kBot
     rw [show joinT ⟨0, 1⟩ kBot = kBot from rfl, hbot] at hkey
     cases hx : h ⟨0, 1⟩ <;> rw [hx] at hkey
@@ -429,7 +429,7 @@ theorem bottom_reflecting_hom_eq_charge (h : Record → Charge)
     · rfl
     · exact absurd hkey (by decide)
   -- pure-positive and pure-negative records are forced
-  have hpos : ∀ p, h ⟨p + 1, 0⟩ = Charge.tTop := by
+  have hpos : ∀ p, h ⟨p + 1, 0⟩ = Reading.tTop := by
     intro p
     have k1 := hMK ⟨p + 1, 0⟩ ⟨1, 0⟩
     have e1 : meetK ⟨p + 1, 0⟩ ⟨1, 0⟩ = (⟨1, 0⟩ : Record) := by
@@ -444,7 +444,7 @@ theorem bottom_reflecting_hom_eq_charge (h : Record → Charge)
     · rfl
     · exact absurd k2 (by decide)
     · exact absurd k2 (by decide)
-  have hneg : ∀ n, h ⟨0, n + 1⟩ = Charge.tBot := by
+  have hneg : ∀ n, h ⟨0, n + 1⟩ = Reading.tBot := by
     intro n
     have k1 := hMK ⟨0, n + 1⟩ ⟨0, 1⟩
     have e1 : meetK ⟨0, n + 1⟩ ⟨0, 1⟩ = (⟨0, 1⟩ : Record) := by
@@ -697,8 +697,8 @@ def oRecordInterlaced : InterlacedBilattice where
 (the four bounds are pairwise distinct), and `⊤` lands on the double
 infinity. -/
 theorem four_embeds :
-    (∀ a b : Charge, boundsMap oRecordInterlaced a = boundsMap oRecordInterlaced b → a = b)
-    ∧ boundsMap oRecordInterlaced Charge.kTop = kTop :=
+    (∀ a b : Reading, boundsMap oRecordInterlaced a = boundsMap oRecordInterlaced b → a = b)
+    ∧ boundsMap oRecordInterlaced Reading.kTop = kTop :=
   ⟨boundsMap_injective oRecordInterlaced
       (show kBot ≠ tTop by decide) (show kBot ≠ tBot by decide)
       (show kBot ≠ kTop by decide) (show tTop ≠ tBot by decide)
@@ -778,7 +778,7 @@ increment is inflationary, reaches no fixed point at any finite stage, and
 the stage-ω value is its fixed point and the least upper bound of the orbit:
 the closure ordinal is exactly ω — the transfinite-bounded regime, inhabited
 by a derived carrier. The tower so far: FOUR settles by three
-(`Charge.settles_by_three` — the bounded quotient), the bare record never
+(`Reading.settles_by_three` — the bounded quotient), the bare record never
 settles (`Record.record_escapes_strict_finite` — the topless carrier), and
 the completed record settles at ω (this theorem — the bound restored at
 infinity). -/

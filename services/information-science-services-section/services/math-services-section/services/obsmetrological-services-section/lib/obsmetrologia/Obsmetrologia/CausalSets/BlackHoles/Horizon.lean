@@ -538,7 +538,7 @@ structure FiniteErgosphereExtraction (readout : Region E) where
   /-- The finite apparent boundary event where extraction is read. -/
   boundary : ApparentEvent C readout
   /-- The hard-closure dynamics supplying the energy functional. -/
-  closure : Charge.Closure
+  closure : Reading.Closure
   /-- The seed valuation for the finite settling orbit. -/
   seed : Valuation
   /-- The finite support over which free energy is measured. -/

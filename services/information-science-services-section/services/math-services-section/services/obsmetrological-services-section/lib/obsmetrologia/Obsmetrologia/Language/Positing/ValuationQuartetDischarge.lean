@@ -6,13 +6,13 @@ import Obsmetrologia.Language.Positing.NucleusAndCommutingNuclei
 # ValuationQuartetDischarge — discharging the abstract nuclear quartet at the Valuation fiber
 
 `Positing.FiberAlgebra` built the settling nuclear quartet **concretely and directly on
-the valuation fiber** `A_p = Valuation = PredicationCell → Charge`: its own
+the valuation fiber** `A_p = Valuation = PredicationCell → Reading`: its own
 `FiberHeyting`, its own `FiberNuclearSquare`, its own settling quartet value — with every
 order law, Heyting adjunction, and nucleus law PROVEN by pointwise reduction to the
-finite `Charge` facts. But it deliberately did *not* import the reusable abstract
+finite `Reading` facts. But it deliberately did *not* import the reusable abstract
 `Obsmetrologia.Order.*` hierarchy; it **deferred** discharging the abstract bundle at that
 fiber. `NuclearAutopoiesisCell` discharged the abstract `Order.HeytingAlgebra` /
-`Order.CommutingNuclei` only at the in-situ **charge** level.
+`Order.CommutingNuclei` only at the in-situ **reading** level.
 
 This module cashes out the deferred bridge: it gives the abstract
 `Order.HeytingAlgebra`, `Order.CommutingNuclei`, and `Order.NuclearQuartet` a **real
@@ -28,7 +28,7 @@ Concretely:
 * `valuationOrderHeyting : Order.HeytingAlgebra` — carrier `Valuation`, meet `fMeetT`,
   join `fJoinT`, top `fun _ => tTop`, bot `fun _ => tBot`, himp `fImpT`; every lattice
   law + `le_top`/`bot_le` + the Heyting adjunction `himp_adj` filled by `funext` + the
-  finite `Charge` exhaustions. This is the abstract Heyting algebra of the **settled fiber** `A_p`.
+  finite `Reading` exhaustions. This is the abstract Heyting algebra of the **settled fiber** `A_p`.
 * `valuationSettlingQuartet : Order.CommutingNuclei valuationOrderHeyting` — `j1` is the
   `Order.Nucleus` repackaging of the saturating `sigma`, `j2` of the transferring
   `delta`; their `infl`/`idem`/`meet` come *directly* from `FiberNuclearSquare`'s proven
@@ -51,8 +51,8 @@ open Obsmetrologia.Positing.FiberAlgebra
 /-! ## 1. The abstract Heyting algebra on the fiber
 
 We discharge `Order.HeytingAlgebra` at `A_p = Valuation`. The lattice laws are pointwise
-lifts of finite `Charge` facts; the Heyting adjunction reuses the Charge-level
-`Charge.heyting_adj`. Each law is `funext φ` then a concrete `Charge` exhaustion. -/
+lifts of finite `Reading` facts; the Heyting adjunction reuses the Reading-level
+`Reading.heyting_adj`. Each law is `funext φ` then a concrete `Reading` exhaustion. -/
 
 /-- The abstract `Order.HeytingAlgebra` discharged at the settled valuation fiber. Its
 carrier is `Valuation`, meet/join are the pointwise truth meet/join, top/bot are the
@@ -63,63 +63,63 @@ def valuationOrderHeyting : Order.HeytingAlgebra where
   carrier := Valuation
   meet := fMeetT
   join := fJoinT
-  top := fun _ => Obsmetrologia.Charge.tTop
-  bot := fun _ => Obsmetrologia.Charge.tBot
+  top := fun _ => Obsmetrologia.Reading.tTop
+  bot := fun _ => Obsmetrologia.Reading.tBot
   meet_comm a b := by
-    funext φ; show Obsmetrologia.Charge.meetT (a φ) (b φ) = Obsmetrologia.Charge.meetT (b φ) (a φ)
-    exact Charge.meetT_comm' (a φ) (b φ)
+    funext φ; show Obsmetrologia.Reading.meetT (a φ) (b φ) = Obsmetrologia.Reading.meetT (b φ) (a φ)
+    exact Reading.meetT_comm' (a φ) (b φ)
   meet_assoc a b c := by
     funext φ
-    show Obsmetrologia.Charge.meetT (Obsmetrologia.Charge.meetT (a φ) (b φ)) (c φ)
-        = Obsmetrologia.Charge.meetT (a φ) (Obsmetrologia.Charge.meetT (b φ) (c φ))
-    exact Charge.meetT_assoc' (a φ) (b φ) (c φ)
+    show Obsmetrologia.Reading.meetT (Obsmetrologia.Reading.meetT (a φ) (b φ)) (c φ)
+        = Obsmetrologia.Reading.meetT (a φ) (Obsmetrologia.Reading.meetT (b φ) (c φ))
+    exact Reading.meetT_assoc' (a φ) (b φ) (c φ)
   meet_idem a := by
-    funext φ; show Obsmetrologia.Charge.meetT (a φ) (a φ) = a φ
-    exact Charge.meetT_idem (a φ)
+    funext φ; show Obsmetrologia.Reading.meetT (a φ) (a φ) = a φ
+    exact Reading.meetT_idem (a φ)
   join_comm a b := by
-    funext φ; show Obsmetrologia.Charge.joinT (a φ) (b φ) = Obsmetrologia.Charge.joinT (b φ) (a φ)
+    funext φ; show Obsmetrologia.Reading.joinT (a φ) (b φ) = Obsmetrologia.Reading.joinT (b φ) (a φ)
     cases (a φ) <;> cases (b φ) <;> rfl
   join_assoc a b c := by
     funext φ
-    show Obsmetrologia.Charge.joinT (Obsmetrologia.Charge.joinT (a φ) (b φ)) (c φ)
-        = Obsmetrologia.Charge.joinT (a φ) (Obsmetrologia.Charge.joinT (b φ) (c φ))
+    show Obsmetrologia.Reading.joinT (Obsmetrologia.Reading.joinT (a φ) (b φ)) (c φ)
+        = Obsmetrologia.Reading.joinT (a φ) (Obsmetrologia.Reading.joinT (b φ) (c φ))
     cases (a φ) <;> cases (b φ) <;> cases (c φ) <;> rfl
   join_idem a := by
-    funext φ; show Obsmetrologia.Charge.joinT (a φ) (a φ) = a φ
+    funext φ; show Obsmetrologia.Reading.joinT (a φ) (a φ) = a φ
     cases (a φ) <;> rfl
   absorb_mj a b := by
     funext φ
-    show Obsmetrologia.Charge.meetT (a φ) (Obsmetrologia.Charge.joinT (a φ) (b φ)) = a φ
+    show Obsmetrologia.Reading.meetT (a φ) (Obsmetrologia.Reading.joinT (a φ) (b φ)) = a φ
     cases (a φ) <;> cases (b φ) <;> rfl
   absorb_jm a b := by
     funext φ
-    show Obsmetrologia.Charge.joinT (a φ) (Obsmetrologia.Charge.meetT (a φ) (b φ)) = a φ
+    show Obsmetrologia.Reading.joinT (a φ) (Obsmetrologia.Reading.meetT (a φ) (b φ)) = a φ
     cases (a φ) <;> cases (b φ) <;> rfl
   meet_top a := by
-    funext φ; show Obsmetrologia.Charge.meetT (a φ) Obsmetrologia.Charge.tTop = a φ
+    funext φ; show Obsmetrologia.Reading.meetT (a φ) Obsmetrologia.Reading.tTop = a φ
     cases (a φ) <;> rfl
   join_bot a := by
-    funext φ; show Obsmetrologia.Charge.joinT (a φ) Obsmetrologia.Charge.tBot = a φ
+    funext φ; show Obsmetrologia.Reading.joinT (a φ) Obsmetrologia.Reading.tBot = a φ
     cases (a φ) <;> rfl
   himp := fImpT
   himp_adj a b c := by
     -- abstract: meet (meet a b) c = meet a b ↔ meet b (himp a c) = b
-    -- pointwise via the verified Charge `impT` adjunction (per-charge `decide`).
+    -- pointwise via the verified Reading `impT` adjunction (per-reading `decide`).
     constructor
     · intro h
       funext φ
-      show Obsmetrologia.Charge.meetT (b φ) (Charge.impT (a φ) (c φ)) = b φ
-      have hφ : Obsmetrologia.Charge.meetT
-          (Obsmetrologia.Charge.meetT (a φ) (b φ)) (c φ)
-          = Obsmetrologia.Charge.meetT (a φ) (b φ) := congrFun h φ
-      -- reduce to the charge adjunction (slot order normalised by `decide`)
+      show Obsmetrologia.Reading.meetT (b φ) (Reading.impT (a φ) (c φ)) = b φ
+      have hφ : Obsmetrologia.Reading.meetT
+          (Obsmetrologia.Reading.meetT (a φ) (b φ)) (c φ)
+          = Obsmetrologia.Reading.meetT (a φ) (b φ) := congrFun h φ
+      -- reduce to the reading adjunction (slot order normalised by `decide`)
       revert hφ
       cases (a φ) <;> cases (b φ) <;> cases (c φ) <;> decide
     · intro h
       funext φ
-      show Obsmetrologia.Charge.meetT (Obsmetrologia.Charge.meetT (a φ) (b φ)) (c φ)
-          = Obsmetrologia.Charge.meetT (a φ) (b φ)
-      have hφ : Obsmetrologia.Charge.meetT (b φ) (Charge.impT (a φ) (c φ)) = b φ :=
+      show Obsmetrologia.Reading.meetT (Obsmetrologia.Reading.meetT (a φ) (b φ)) (c φ)
+          = Obsmetrologia.Reading.meetT (a φ) (b φ)
+      have hφ : Obsmetrologia.Reading.meetT (b φ) (Reading.impT (a φ) (c φ)) = b φ :=
         congrFun h φ
       revert hφ
       cases (a φ) <;> cases (b φ) <;> cases (c φ) <;> decide

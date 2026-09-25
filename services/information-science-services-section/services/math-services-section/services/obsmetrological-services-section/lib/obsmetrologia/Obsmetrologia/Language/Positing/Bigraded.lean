@@ -25,7 +25,7 @@ What this module derives (the 1-categorical reduction of the 2-categorical KZ di
    `Fix(π) = Fix(j₁) ∩ Fix(j₂)`, the commuting square, four corners indexed by the
    articulation phases `Articulating.Corner`.
 4. The **fiberwise family** `SquareFamily` and `Varies` — the recurrence — with a
-   concrete varying family on the charge knowledge-Heyting-algebra.
+   concrete varying family on the reading knowledge-Heyting-algebra.
 
 > The 2-categorical truth this projects: the closure-2-monad `Cl` (KZ, lax-idempotent;
 > strict only when Scott-continuous, κ=ω) and the Emmenegger fibration 2-comonad `ℕ`
@@ -203,17 +203,17 @@ theorem fiber_quartet (i : I) (a : H.carrier) :
 
 end SquareFamily
 
-/-! ## Instantiation on the charge knowledge-Heyting-algebra -/
+/-! ## Instantiation on the reading knowledge-Heyting-algebra -/
 
-namespace Charge
+namespace Reading
 
-/-- Knowledge-order implication: `Charge ≅ 2 × 2` (componentwise Boolean), so
+/-- Knowledge-order implication: `Reading ≅ 2 × 2` (componentwise Boolean), so
 `a ⇒ c = (¬a.pos ∨ c.pos, ¬a.neg ∨ c.neg)`. -/
-def impK (a c : Charge) : Charge := ofSlots ((!a.pos) || c.pos) ((!a.neg) || c.neg)
+def impK (a c : Reading) : Reading := ofSlots ((!a.pos) || c.pos) ((!a.neg) || c.neg)
 
-/-- The charge bilattice's knowledge order is a Heyting algebra (`⊓ = ∧ₖ`, `⇒ = impK`). -/
+/-- The reading bilattice's knowledge order is a Heyting algebra (`⊓ = ∧ₖ`, `⇒ = impK`). -/
 def heytingK : HeytingAlgebra where
-  carrier := Charge
+  carrier := Reading
   meet := meetK
   imp := impK
   meet_comm := meetK_comm
@@ -222,7 +222,7 @@ def heytingK : HeytingAlgebra where
   imp_adj a b c := by cases a <;> cases b <;> cases c <;> decide
 
 /-- Raising toward a bound `c` by `∨ₖ` is a nucleus of the knowledge-Heyting-algebra. -/
-def joinNucleusK (c : Charge) : Nucleus heytingK where
+def joinNucleusK (c : Reading) : Nucleus heytingK where
   j a := joinK c a
   infl a := by show meetK a (joinK c a) = a; cases c <;> cases a <;> rfl
   idem a := by cases c <;> cases a <;> rfl
@@ -231,7 +231,7 @@ def joinNucleusK (c : Charge) : Nucleus heytingK where
     cases c <;> cases a <;> cases b <;> rfl
 
 /-- Any two join-nuclei commute, so they form a nuclear square. -/
-def joinSquare (c1 c2 : Charge) : NuclearSquare heytingK where
+def joinSquare (c1 c2 : Reading) : NuclearSquare heytingK where
   j1 := joinNucleusK c1
   j2 := joinNucleusK c2
   comm a := by cases c1 <;> cases c2 <;> cases a <;> rfl
@@ -249,6 +249,6 @@ theorem varyingFamily_varies : varyingFamily.Varies := by
   have h2 : joinK tTop kBot = joinK kTop kBot := congrFun h kBot
   exact absurd h2 (by decide)
 
-end Charge
+end Reading
 
 end Obsmetrologia

@@ -5,7 +5,7 @@ import Obsmetrologia.Language.Settling
 
 `Settling` derived the **knowledge** order `≤ₖ` as a bounded lattice and its
 closure (adding *information*: cells move ⊥ → t/f → ⊤). The bilattice carries a
-second, orthogonal order on the *same* four charges — the **truth** order `≤ₜ`
+second, orthogonal order on the *same* four readings — the **truth** order `≤ₜ`
 (adding *truthfulness*: cells move f → ⊥/⊤ → t):
 
 * `≤ₖ` (knowledge): `⊥ ≤ₖ t,f ≤ₖ ⊤`   (bottom = no info, top = contradiction)
@@ -19,48 +19,48 @@ what makes it a bilattice.
 -/
 
 namespace Obsmetrologia
-namespace Charge
+namespace Reading
 
 /-! ## The truth order as a partial order -/
 
 /-- The truth order as a `Prop` relation (reducible, for `decide`). -/
-abbrev TLE (a b : Charge) : Prop := leT a b = true
+abbrev TLE (a b : Reading) : Prop := leT a b = true
 
-theorem tle_refl (a : Charge) : TLE a a := by cases a <;> rfl
-theorem tle_trans (a b c : Charge) : TLE a b → TLE b c → TLE a c := by
+theorem tle_refl (a : Reading) : TLE a a := by cases a <;> rfl
+theorem tle_trans (a b c : Reading) : TLE a b → TLE b c → TLE a c := by
   intro h1 h2; revert h1 h2; cases a <;> cases b <;> cases c <;> decide
-theorem tle_antisymm (a b : Charge) : TLE a b → TLE b a → a = b := by
+theorem tle_antisymm (a b : Reading) : TLE a b → TLE b a → a = b := by
   intro h1 h2; revert h1 h2; cases a <;> cases b <;> decide
 
 /-! ## `∨ₜ` is the lub, `∧ₜ` the glb, with bounds f/t -/
 
-theorem le_joinT_left (a b : Charge) : TLE a (joinT a b) := by cases a <;> cases b <;> rfl
-theorem le_joinT_right (a b : Charge) : TLE b (joinT a b) := by cases a <;> cases b <;> rfl
-theorem joinT_le (a b c : Charge) : TLE a c → TLE b c → TLE (joinT a b) c := by
+theorem le_joinT_left (a b : Reading) : TLE a (joinT a b) := by cases a <;> cases b <;> rfl
+theorem le_joinT_right (a b : Reading) : TLE b (joinT a b) := by cases a <;> cases b <;> rfl
+theorem joinT_le (a b c : Reading) : TLE a c → TLE b c → TLE (joinT a b) c := by
   intro h1 h2; revert h1 h2; cases a <;> cases b <;> cases c <;> decide
 
-theorem meetT_le_left (a b : Charge) : TLE (meetT a b) a := by cases a <;> cases b <;> rfl
-theorem meetT_le_right (a b : Charge) : TLE (meetT a b) b := by cases a <;> cases b <;> rfl
-theorem le_meetT (a b c : Charge) : TLE c a → TLE c b → TLE c (meetT a b) := by
+theorem meetT_le_left (a b : Reading) : TLE (meetT a b) a := by cases a <;> cases b <;> rfl
+theorem meetT_le_right (a b : Reading) : TLE (meetT a b) b := by cases a <;> cases b <;> rfl
+theorem le_meetT (a b c : Reading) : TLE c a → TLE c b → TLE c (meetT a b) := by
   intro h1 h2; revert h1 h2; cases a <;> cases b <;> cases c <;> decide
 
 /-- `f` (truth-bottom) is the least element; `t` (truth-top) the greatest. -/
-theorem tBot_le (a : Charge) : TLE tBot a := by cases a <;> rfl
-theorem le_tTop (a : Charge) : TLE a tTop := by cases a <;> rfl
+theorem tBot_le (a : Reading) : TLE tBot a := by cases a <;> rfl
+theorem le_tTop (a : Reading) : TLE a tTop := by cases a <;> rfl
 
 /-- `f` is the identity of `∨ₜ`, `t` the identity of `∧ₜ`. -/
-@[simp] theorem joinT_tBot (a : Charge) : joinT a tBot = a := by cases a <;> rfl
-@[simp] theorem meetT_tTop (a : Charge) : meetT a tTop = a := by cases a <;> rfl
+@[simp] theorem joinT_tBot (a : Reading) : joinT a tBot = a := by cases a <;> rfl
+@[simp] theorem meetT_tTop (a : Reading) : meetT a tTop = a := by cases a <;> rfl
 
 /-! ## Negation is the duality between the two orders -/
 
 /-- Negation **reverses** the truth order. -/
-theorem negate_tle (a b : Charge) : TLE (negate a) (negate b) ↔ TLE b a := by
+theorem negate_tle (a b : Reading) : TLE (negate a) (negate b) ↔ TLE b a := by
   simp only [TLE, negate_leT]
 
 /-- Negation **preserves** the knowledge order (companion fact, restated as an
 order iff). -/
-theorem negate_kle (a b : Charge) : KLE (negate a) (negate b) ↔ KLE a b := by
+theorem negate_kle (a b : Reading) : KLE (negate a) (negate b) ↔ KLE a b := by
   simp only [KLE, negate_leK]
 
 /-! ## The truth-order closure operator `T_t` -/
@@ -68,7 +68,7 @@ theorem negate_kle (a b : Charge) : KLE (negate a) (negate b) ↔ KLE a b := by
 /-- A **truth-order closure operator**: inflationary, monotone, idempotent in `≤ₜ`
 — the parallel of `Closure` for the second order. -/
 structure TClosure where
-  op : Charge → Charge
+  op : Reading → Reading
   infl : ∀ a, TLE a (op a)
   mono : ∀ a b, TLE a b → TLE (op a) (op b)
   idem : ∀ a, op (op a) = op a
@@ -76,10 +76,10 @@ structure TClosure where
 namespace TClosure
 
 /-- Knaster–Tarski (truth form): `op a` is a fixed point. -/
-theorem op_fixed (c : TClosure) (a : Charge) : c.op (c.op a) = c.op a := c.idem a
+theorem op_fixed (c : TClosure) (a : Reading) : c.op (c.op a) = c.op a := c.idem a
 
 /-- `op a` is the least fixed point above `a` in `≤ₜ`. -/
-theorem op_least (c : TClosure) (a x : Charge)
+theorem op_least (c : TClosure) (a x : Reading)
     (hax : TLE a x) (hfx : c.op x = x) : TLE (c.op a) x := by
   have h := c.mono a x hax
   rw [hfx] at h; exact h
@@ -87,7 +87,7 @@ theorem op_least (c : TClosure) (a x : Charge)
 end TClosure
 
 /-- The canonical truth-order closure: raise toward a truth bound `k` by `∨ₜ`. -/
-def joinTClosure (k : Charge) : TClosure where
+def joinTClosure (k : Reading) : TClosure where
   op a := joinT k a
   infl a := by
     have : TLE a (joinT a k) := le_joinT_left a k
@@ -98,16 +98,16 @@ def joinTClosure (k : Charge) : TClosure where
 
 /-- **Truth-order settling**: the fixed point reached from a seed under a truth
 closure. -/
-def settleT (c : TClosure) (seed : Charge) : Charge := c.op seed
+def settleT (c : TClosure) (seed : Reading) : Reading := c.op seed
 
-theorem settleT_fixed (c : TClosure) (seed : Charge) :
+theorem settleT_fixed (c : TClosure) (seed : Reading) :
     c.op (settleT c seed) = settleT c seed := c.idem seed
 
-/-- Truth-settling the truth-least charge `f` toward a bound `k` lands on `k` —
+/-- Truth-settling the truth-least reading `f` toward a bound `k` lands on `k` —
 the mirror of `settle_kBot`. -/
-@[simp] theorem settleT_tBot (k : Charge) : settleT (joinTClosure k) tBot = k := by
+@[simp] theorem settleT_tBot (k : Reading) : settleT (joinTClosure k) tBot = k := by
   cases k <;> rfl
 
-end Charge
+end Reading
 
 end Obsmetrologia

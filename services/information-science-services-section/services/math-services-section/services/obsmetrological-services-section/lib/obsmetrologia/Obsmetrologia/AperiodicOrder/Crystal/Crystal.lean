@@ -39,8 +39,8 @@ namespace Crystals
 def beadPassCount (X : Crystals) : BeadPassCount :=
   X.beads.passCount
 
-/-- The bead condensate charge carried upward into a crystal. -/
-def beadCondensate (X : Crystals) : Charge :=
+/-- The bead condensate reading carried upward into a crystal. -/
+def beadCondensate (X : Crystals) : Reading :=
   X.beads.condensate
 
 /-- The four bead adjacency graphs carried upward into a crystal. -/
@@ -103,7 +103,7 @@ theorem bead_over_occupation_inconsistency (X : Crystals) (n : Nat)
 /-- Mirroring the bead condensate carried by a crystal preserves contradiction
 content. -/
 theorem mirror_preserves_beadCondensate_inconsistency (X : Crystals) :
-    (Charge.negate X.beadCondensate).isInconsistency =
+    (Reading.negate X.beadCondensate).isInconsistency =
       X.beadCondensate.isInconsistency :=
   X.beads.mirror_preserves_condensate_inconsistency
 
@@ -126,7 +126,7 @@ theorem bead_phase_spine (X : Crystals) (n : Nat)
         X.beadCondensedContacts) :
     AperiodicOrder.Tiling.ThreadLegal X.beads.thread ∧
       X.beadCondensate.isInconsistency = true ∧
-        (Charge.negate X.beadCondensate).isInconsistency =
+        (Reading.negate X.beadCondensate).isInconsistency =
           X.beadCondensate.isInconsistency ∧
           X.beadAdjacency.tuple = X.beads.adjacencyTuple ∧
             X.beadGeometricLenticle =

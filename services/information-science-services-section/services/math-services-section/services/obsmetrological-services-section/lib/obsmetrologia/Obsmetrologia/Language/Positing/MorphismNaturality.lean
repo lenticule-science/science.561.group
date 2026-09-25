@@ -51,10 +51,10 @@ involution — nothing assumed), reindexing a posited valuation along `r` is the
 join of the reindexed valuation with `delta` evaluated at the pushed-forward
 point `r ψ`. Every naturality statement below is this fact plus a description
 of when `delta φ q (r ψ)` collapses to a single-posit shape. -/
-theorem reindex_posit_exchange (r : PredicationCell → PredicationCell) (φ : PredicationCell) (q : Charge)
+theorem reindex_posit_exchange (r : PredicationCell → PredicationCell) (φ : PredicationCell) (q : Reading)
     (v : Valuation) (ψ : PredicationCell) :
     Valuation.reindex r (posit φ q v) ψ
-      = Charge.joinK (Valuation.reindex r v ψ) (delta φ q (r ψ)) := rfl
+      = Reading.joinK (Valuation.reindex r v ψ) (delta φ q (r ψ)) := rfl
 
 /-! ## 2. The pull-back form of `delta`, and naturality for injective `r`
 
@@ -67,8 +67,8 @@ hypothesis. Nothing here uses an inverse of `r`. -/
 
 /-- **Pull-back form of `delta`.** Unconditional in `r` — a restatement of the
 definition of `delta` at the pushed-forward point `r ψ`. -/
-theorem delta_reindex_point (φ : PredicationCell) (q : Charge) (r : PredicationCell → PredicationCell) (ψ : PredicationCell) :
-    delta φ q (r ψ) = if r ψ = φ then q else Charge.kBot := rfl
+theorem delta_reindex_point (φ : PredicationCell) (q : Reading) (r : PredicationCell → PredicationCell) (ψ : PredicationCell) :
+    delta φ q (r ψ) = if r ψ = φ then q else Reading.kBot := rfl
 
 /-- **Naturality under injective reindexing.** When `r` is injective and the
 posited cell `φ` is itself `r`'s image of some `φ'`, reindexing the posit along
@@ -76,11 +76,11 @@ posited cell `φ` is itself `r`'s image of some `φ'`, reindexing the posit alon
 only use of `hr` is the cancellation direction `r ψ = r φ' → ψ = φ'`; no inverse
 of `r` is constructed or needed. -/
 theorem posit_reindex_natural_of_injective (r : PredicationCell → PredicationCell) (hr : Function.Injective r)
-    (φ' : PredicationCell) (q : Charge) (v : Valuation) (ψ : PredicationCell) :
+    (φ' : PredicationCell) (q : Reading) (v : Valuation) (ψ : PredicationCell) :
     Valuation.reindex r (posit (r φ') q v) ψ
       = posit φ' q (Valuation.reindex r v) ψ := by
   rw [reindex_posit_exchange, delta_reindex_point]
-  show Charge.joinK (Valuation.reindex r v ψ) (if r ψ = r φ' then q else Charge.kBot) = _
+  show Reading.joinK (Valuation.reindex r v ψ) (if r ψ = r φ' then q else Reading.kBot) = _
   unfold posit delta
   by_cases h : ψ = φ'
   · rw [if_pos (congrArg r h), if_pos h]
@@ -123,7 +123,7 @@ namespace Valuation
 injective on predicates, reindexing a `specialize f`-posit is a single posit at
 the pulled-back cell `φ'`. -/
 theorem posit_reindex_natural_of_specialize_injective (f : Predicate → Predicate)
-    (hf : Function.Injective f) (φ' : PredicationCell) (q : Charge) (v : Valuation) (ψ : PredicationCell) :
+    (hf : Function.Injective f) (φ' : PredicationCell) (q : Reading) (v : Valuation) (ψ : PredicationCell) :
     Valuation.reindex (PredicationCell.specialize f)
         (posit (PredicationCell.specialize f φ') q v) ψ
       = posit φ' q (Valuation.reindex (PredicationCell.specialize f) v) ψ :=
@@ -151,7 +151,7 @@ private def ψ₂ : PredicationCell := ⟨⟨⟨"s"⟩⟩, ⟨⟨"p"⟩⟩, ⟨�
 private theorem subjProj_ψ₁ : PredicationCell.subjProj ψ₁ = φ₀ := rfl
 private theorem subjProj_ψ₂ : PredicationCell.subjProj ψ₂ = φ₀ := rfl
 private theorem ψ₁_ne_ψ₂ : ψ₁ ≠ ψ₂ := by decide
-private theorem tTop_ne_kBot : Charge.tTop ≠ Charge.kBot := by decide
+private theorem tTop_ne_kBot : Reading.tTop ≠ Reading.kBot := by decide
 
 /-- **The single-posit naturality form fails for `subjProj`, in general.** No
 `φ'` makes `reindex subjProj (posit φ₀ q v) ψ = posit φ' q (reindex subjProj v) ψ`
@@ -163,8 +163,8 @@ injectivity that breaks the single-posit form. -/
 theorem posit_reindex_subjProj_not_natural :
     ¬ ∃ φ' : PredicationCell, ∀ ψ : PredicationCell,
         Valuation.reindex PredicationCell.subjProj
-            (posit φ₀ Charge.tTop Valuation.knowledgeLeast) ψ
-          = posit φ' Charge.tTop
+            (posit φ₀ Reading.tTop Valuation.knowledgeLeast) ψ
+          = posit φ' Reading.tTop
               (Valuation.reindex PredicationCell.subjProj Valuation.knowledgeLeast) ψ := by
   rintro ⟨φ', hφ'⟩
   have h1 := hφ' ψ₁
@@ -172,13 +172,13 @@ theorem posit_reindex_subjProj_not_natural :
   rw [reindex_posit_exchange, subjProj_ψ₁] at h1
   rw [reindex_posit_exchange, subjProj_ψ₂] at h2
   have hkl : ∀ χ : PredicationCell, Valuation.reindex PredicationCell.subjProj Valuation.knowledgeLeast χ
-      = Charge.kBot := fun _ => rfl
-  have hd0 : delta φ₀ Charge.tTop φ₀ = Charge.tTop := by unfold delta; rw [if_pos rfl]
-  rw [hkl ψ₁, hd0, Charge.joinK_kBot] at h1
-  rw [hkl ψ₂, hd0, Charge.joinK_kBot] at h2
+      = Reading.kBot := fun _ => rfl
+  have hd0 : delta φ₀ Reading.tTop φ₀ = Reading.tTop := by unfold delta; rw [if_pos rfl]
+  rw [hkl ψ₁, hd0, Reading.joinK_kBot] at h1
+  rw [hkl ψ₂, hd0, Reading.joinK_kBot] at h2
   unfold posit at h1 h2
-  rw [hkl ψ₁, Charge.joinK_kBot] at h1
-  rw [hkl ψ₂, Charge.joinK_kBot] at h2
+  rw [hkl ψ₁, Reading.joinK_kBot] at h1
+  rw [hkl ψ₂, Reading.joinK_kBot] at h2
   unfold delta at h1 h2
   have e1 : ψ₁ = φ' := by
     by_cases hne : ψ₁ = φ'
@@ -213,7 +213,7 @@ already on the diagonal, `subjProj` acts as the identity there
 `reindex subjProj v ψ` with no contribution from the posit, and the equation
 still holds trivially. This is the true, narrower fact that replaces the failed
 general claim. -/
-theorem posit_reindex_subjProj_diagonal (φ : PredicationCell) (q : Charge) (v : Valuation)
+theorem posit_reindex_subjProj_diagonal (φ : PredicationCell) (q : Reading) (v : Valuation)
     (ψ : PredicationCell) (hψ : ψ.subject = ψ.object) :
     Valuation.reindex PredicationCell.subjProj (posit φ q v) ψ
       = posit φ q (Valuation.reindex PredicationCell.subjProj v) ψ := by
@@ -221,7 +221,7 @@ theorem posit_reindex_subjProj_diagonal (φ : PredicationCell) (q : Charge) (v :
   rfl
 
 /-- **The honest positive form for `objProj`**, symmetrically. -/
-theorem posit_reindex_objProj_diagonal (φ : PredicationCell) (q : Charge) (v : Valuation)
+theorem posit_reindex_objProj_diagonal (φ : PredicationCell) (q : Reading) (v : Valuation)
     (ψ : PredicationCell) (hψ : ψ.subject = ψ.object) :
     Valuation.reindex PredicationCell.objProj (posit φ q v) ψ
       = posit φ q (Valuation.reindex PredicationCell.objProj v) ψ := by

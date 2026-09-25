@@ -1,20 +1,20 @@
 import Lean.Elab.Tactic
-import Obsmetrologia.Language.Positing.Charge
+import Obsmetrologia.Language.Positing.Reading
 
 /-!
-# Positing.ChargeTactic
+# Positing.ReadingTactic
 
-A small finite-table tactic for the Obsmetrologia `Charge`/FOUR/gauge stratum.
+A small finite-table tactic for the Obsmetrologia `Reading`/FOUR/gauge stratum.
 
-`charge` is intentionally humble: it repeatedly case-splits local variables whose
-types are the finite carriers used by the charge tables, then closes the resulting
+`reading` is intentionally humble: it repeatedly case-splits local variables whose
+types are the finite carriers used by the reading tables, then closes the resulting
 ground goals by definitional reduction, `decide`, or a curated simplification set
-for charge and gauge operations.
+for reading and gauge operations.
 -/
 
 namespace Obsmetrologia
 
-namespace ChargeTactic
+namespace ReadingTactic
 
 open Lean Elab Tactic Meta
 
@@ -27,10 +27,10 @@ def finiteTypeNames : List Name :=
    Name.str (Name.str (Name.str (Name.str Name.anonymous "Obsmetrologia") "Positing") "Gauge") "K4",
    Name.str (Name.str (Name.str Name.anonymous "Obsmetrologia") "D4") "D8"]
 
-/-- True when a type is one of the charge-adjacent finite carriers. -/
-def isFiniteChargeType (type : Expr) : MetaM Bool := do
+/-- True when a type is one of the reading-adjacent finite carriers. -/
+def isFiniteReadingType (type : Expr) : MetaM Bool := do
   let type <- whnf type
-  if <- isDefEq type (mkConst ``Charge) then
+  if <- isDefEq type (mkConst ``Reading) then
     return true
   if <- isDefEq type (mkConst ``Bool) then
     return true
@@ -53,12 +53,12 @@ def findFiniteLocal? : TacticM (Option Name) := withMainContext do
     | none =>
         if decl.isImplementationDetail then
           return none
-        else if <- isFiniteChargeType decl.type then
+        else if <- isFiniteReadingType decl.type then
           return some decl.userName
         else
           return none) (none : Option Name)
 
-/-- Repeatedly split finite charge-adjacent locals in every open goal. -/
+/-- Repeatedly split finite reading-adjacent locals in every open goal. -/
 partial def splitFiniteLocals : TacticM Unit := withMainContext do
   match <- findFiniteLocal? with
   | none => pure ()
@@ -77,30 +77,30 @@ partial def splitFiniteLocals : TacticM Unit := withMainContext do
 def closeGroundGoals : TacticM Unit := do
   evalTactic (← `(tactic|
     all_goals try simp_all [
-      Charge.pos, Charge.neg, Charge.ofSlots,
-      Charge.kBot, Charge.kTop, Charge.tTop, Charge.tBot,
-      Charge.joinK, Charge.meetK, Charge.joinT, Charge.meetT,
-      Charge.negate, Charge.leK, Charge.leT,
+      Reading.pos, Reading.neg, Reading.ofSlots,
+      Reading.kBot, Reading.kTop, Reading.tTop, Reading.tBot,
+      Reading.joinK, Reading.meetK, Reading.joinT, Reading.meetT,
+      Reading.negate, Reading.leK, Reading.leT,
       Articulating.Corner.toStatus, Articulating.Corner.ofStatus]))
   evalTactic (← `(tactic| all_goals first | rfl | decide | assumption))
 
-end ChargeTactic
+end ReadingTactic
 
-syntax "charge" : tactic
+syntax "reading" : tactic
 
 elab_rules : tactic
-  | `(tactic| charge) => do
-      ChargeTactic.splitFiniteLocals
-      ChargeTactic.closeGroundGoals
+  | `(tactic| reading) => do
+      ReadingTactic.splitFiniteLocals
+      ReadingTactic.closeGroundGoals
 
 section Examples
 
-example (a b : Charge) : Charge.joinK a b = Charge.joinK b a := by
-  charge
+example (a b : Reading) : Reading.joinK a b = Reading.joinK b a := by
+  reading
 
-example (a b c : Charge) :
-    Charge.meetK a (Charge.joinK b c) = Charge.joinK (Charge.meetK a b) (Charge.meetK a c) := by
-  charge
+example (a b c : Reading) :
+    Reading.meetK a (Reading.joinK b c) = Reading.joinK (Reading.meetK a b) (Reading.meetK a c) := by
+  reading
 
 end Examples
 

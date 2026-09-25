@@ -16,11 +16,11 @@ FOUR.  A valuation is therefore a FOUR-valued row assignment on claims.
 
 The canonical evaluation matrix
 
-`PredicationCell → Valuation → Charge`
+`PredicationCell → Valuation → Reading`
 
 is then a Chu matrix over FOUR: claims are points, valuations are states, and
 evaluation supplies the matrix entry.  This is not an analogy between three
-separately selected structures.  The same claim and the same assigned charge
+separately selected structures.  The same claim and the same assigned reading
 are carried through the whole construction.
 -/
 
@@ -30,30 +30,30 @@ namespace Obsmetrologia
 subject--predicate--object position at which standing can be observed. -/
 abbrev FregeanPredication := PredicationCell
 
-/-- The charge forced by preserving independent positive and negative evidence
+/-- The reading forced by preserving independent positive and negative evidence
 for one predication. -/
-def independentEvidenceCharge (evidence : Bool × Bool) : Charge :=
-  Charge.ofSlots evidence.1 evidence.2
+def independentEvidenceReading (evidence : Bool × Bool) : Reading :=
+  Reading.ofSlots evidence.1 evidence.2
 
 /-- Reading the two evidence coordinates back loses nothing. -/
-@[simp] theorem independentEvidenceCharge_slots (evidence : Bool × Bool) :
-    ((independentEvidenceCharge evidence).pos,
-      (independentEvidenceCharge evidence).neg) = evidence := by
+@[simp] theorem independentEvidenceReading_slots (evidence : Bool × Bool) :
+    ((independentEvidenceReading evidence).pos,
+      (independentEvidenceReading evidence).neg) = evidence := by
   cases evidence with
   | mk positive negative => cases positive <;> cases negative <;> rfl
 
-/-- Every charge is exactly the charge of its positive/negative evidence pair.
-Together with `independentEvidenceCharge_slots`, this is the explicit
+/-- Every reading is exactly the reading of its positive/negative evidence pair.
+Together with `independentEvidenceReading_slots`, this is the explicit
 `Bool × Bool ≃ FOUR` forced by independent predication evidence. -/
-@[simp] theorem independentEvidenceCharge_exhaustive (charge : Charge) :
-    independentEvidenceCharge (charge.pos, charge.neg) = charge := by
-  cases charge <;> rfl
+@[simp] theorem independentEvidenceReading_exhaustive (reading : Reading) :
+    independentEvidenceReading (reading.pos, reading.neg) = reading := by
+  cases reading <;> rfl
 
 /-- Put one independently observed evidence pair at one predication, starting
 from the knowledge-least valuation. -/
 def valuationOfIndependentEvidence
     (claim : FregeanPredication) (evidence : Bool × Bool) : Valuation :=
-  Valuation.posit claim (independentEvidenceCharge evidence)
+  Valuation.posit claim (independentEvidenceReading evidence)
     Valuation.knowledgeLeast
 
 /-- The canonical Chu presentation of predication over FOUR.  Predications are
@@ -74,34 +74,34 @@ canonical Chu matrix. -/
 @[simp] theorem predicationChu_reads_independent_evidence
     (claim : FregeanPredication) (evidence : Bool × Bool) :
     predicationChu.r claim (valuationOfIndependentEvidence claim evidence)
-      = independentEvidenceCharge evidence :=
+      = independentEvidenceReading evidence :=
   Valuation.phase_posit_knowledgeLeast claim
-    (independentEvidenceCharge evidence)
+    (independentEvidenceReading evidence)
 
 /-- **Fregean predication forces FOUR, and FOUR presents the predication Chu
 space.**  The first two fields are the lossless equivalence between independent
-positive/negative evidence and `Charge`; the third says that the canonical Chu
-matrix reads that same charge at the same claim.
+positive/negative evidence and `Reading`; the third says that the canonical Chu
+matrix reads that same reading at the same claim.
 
 This theorem is the compact formal statement of the lab result.  The standard
 ingredients have their own histories; their forced composition here is the
 Obsmetrologia result. -/
 structure FregeanPredicationForcesFourAndChu : Prop where
   evidence_roundtrip : ∀ evidence : Bool × Bool,
-    ((independentEvidenceCharge evidence).pos,
-      (independentEvidenceCharge evidence).neg) = evidence
-  charge_exhaustive : ∀ charge : Charge,
-    independentEvidenceCharge (charge.pos, charge.neg) = charge
-  chu_carries_charge : ∀ (claim : FregeanPredication)
+    ((independentEvidenceReading evidence).pos,
+      (independentEvidenceReading evidence).neg) = evidence
+  reading_exhaustive : ∀ reading : Reading,
+    independentEvidenceReading (reading.pos, reading.neg) = reading
+  chu_carries_reading : ∀ (claim : FregeanPredication)
       (evidence : Bool × Bool),
     predicationChu.r claim (valuationOfIndependentEvidence claim evidence)
-      = independentEvidenceCharge evidence
+      = independentEvidenceReading evidence
 
 /-- The canonical witness of the predication--FOUR--Chu law. -/
 theorem fregean_predication_forces_four_and_chu :
     FregeanPredicationForcesFourAndChu where
-  evidence_roundtrip := independentEvidenceCharge_slots
-  charge_exhaustive := independentEvidenceCharge_exhaustive
-  chu_carries_charge := predicationChu_reads_independent_evidence
+  evidence_roundtrip := independentEvidenceReading_slots
+  reading_exhaustive := independentEvidenceReading_exhaustive
+  chu_carries_reading := predicationChu_reads_independent_evidence
 
 end Obsmetrologia

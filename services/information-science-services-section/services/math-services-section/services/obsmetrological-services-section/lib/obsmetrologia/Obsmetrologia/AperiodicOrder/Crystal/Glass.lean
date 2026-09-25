@@ -125,12 +125,12 @@ def beads (G : Glass) : Beads :=
 def crystals (G : Glass) : Crystals :=
   G.quasicrystals.crystals
 
-/-- The bead condensate charge carried upward by the glass substance. -/
-def beadCondensate (G : Glass) : Charge :=
+/-- The bead condensate reading carried upward by the glass substance. -/
+def beadCondensate (G : Glass) : Reading :=
   G.beads.condensate
 
-/-- The bead condensate charge carried upward through the quasicrystal layer. -/
-def quasicrystalBeadCondensate (G : Glass) : Charge :=
+/-- The bead condensate reading carried upward through the quasicrystal layer. -/
+def quasicrystalBeadCondensate (G : Glass) : Reading :=
   G.quasicrystals.beadCondensate
 
 /-- The four bead adjacency graphs carried upward through the material spine. -/
@@ -263,7 +263,7 @@ theorem quasicrystal_bead_over_occupation_inconsistency (G : Glass) (n : Nat)
 /-- Mirroring the bead condensate carried by the quasicrystal layer preserves
 contradiction content. -/
 theorem quasicrystal_mirror_preserves_beadCondensate_inconsistency (G : Glass) :
-    (Charge.negate G.quasicrystalBeadCondensate).isInconsistency =
+    (Reading.negate G.quasicrystalBeadCondensate).isInconsistency =
       G.quasicrystalBeadCondensate.isInconsistency :=
   G.quasicrystals.mirror_preserves_beadCondensate_inconsistency
 
@@ -488,7 +488,7 @@ theorem h0_minus_h1_eq_ledgerAt {G : Glass}
   exact (Obsmetrologia.AntiLandauer.index_balance (β.nerveAt b)).trans
     (β.ledgerAt_eq_eulerChar b).symm
 
-/-- A basin support conducts/bears load exactly when its `H¹` matter charge is
+/-- A basin support conducts/bears load exactly when its `H¹` matter reading is
 positive. This is the material-state conductor reading inherited from the same `H¹`/Landauer
 proofs as `MatterTopology`, not the StepN metalization recurrence. -/
 theorem loadBearingAt_iff_positive_h1At {G : Glass}
@@ -675,7 +675,7 @@ theorem h1At_eq_landauerBitsAt {G : Glass}
   ρ.toBasinThermalization.h1At_eq_landauerBitsAt b
 
 /-- A rational basin support is load-bearing exactly when its `H¹` matter
-charge is positive. -/
+reading is positive. -/
 theorem loadBearingAt_iff_positive_h1At {G : Glass}
     (ρ : RatBasinThermalization G) (b : G.basins.Basin) :
     ρ.loadBearingAt b ↔ 0 < ρ.h1At b :=

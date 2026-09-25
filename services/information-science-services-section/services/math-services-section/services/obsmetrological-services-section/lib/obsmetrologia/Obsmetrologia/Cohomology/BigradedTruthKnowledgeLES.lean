@@ -35,15 +35,15 @@ connecting class: one coherent cell, one record cell, one truth edge, where the 
 image.
 
 **The quench: the connecting homomorphism on a settling stage (sections M–Q).** A **stage**
-is a step map on charged cells; the graded complex is the mapping-torus complex of the step —
+is a step map on valued cells; the graded complex is the mapping-torus complex of the step —
 degree 0 the cell cochains, degree 1 the transition cochains, `δ⁰ c = c ∘ step − c`
-(`delta0_temporal`). The truth grading is read from the charges (`Charge.isInconsistency`, the
+(`delta0_temporal`). The truth grading is read from the readings (`Reading.isInconsistency`, the
 `dTop` mask of `InconsistencySheaf`); an edge is a truth edge when either endpoint is a truth
-cell, which makes the truth cochains a subcomplex. `connecting_zero_of_charge_invariant` is
+cell, which makes the truth cochains a subcomplex. `connecting_zero_of_reading_invariant` is
 the degeneration criterion on this carrier: a stage whose step preserves the inconsistency
 mask — freezes nothing, thaws nothing — has zero connecting map. `quench_connecting_model` is
-the nonzero witness on charged cells: a record source feeding a truth cell that refreezes
-into a distinct record (`src → mid → sink`, charges `⊤, t, ⊤`) carries a record cocycle whose
+the nonzero witness on valued cells: a record source feeding a truth cell that refreezes
+into a distinct record (`src → mid → sink`, readings `⊤, t, ⊤`) carries a record cocycle whose
 connecting class is not a truth coboundary; `j_symmetry_breaking` contrasts it with the uncut
 `negSwap`-orbit carrier, where every connecting class is a coboundary.
 
@@ -54,8 +54,8 @@ connecting class is not a truth coboundary; `j_symmetry_breaking` contrasts it w
 * `GradedTwoTerm`, `GradedTwoTerm.delta0`, `GradedTwoTerm.connecting` — the graded two-term
   complex and its coboundary and connecting maps.
 * `measurementComplex`, `recordUnit` — the minimal nonzero-connecting instance.
-* `chargeTruth`, `temporalComplex` — the mapping-torus complex of a settling stage.
-* `QCell`, `qStep`, `qCharge`, `quenchStage`, `recordSrc`, `jStep`, `jCarrier` — the quench
+* `readingTruth`, `temporalComplex` — the mapping-torus complex of a settling stage.
+* `QCell`, `qStep`, `qReading`, `quenchStage`, `recordSrc`, `jStep`, `jCarrier` — the quench
   stage and the `negSwap`-orbit carrier.
 
 ## Main results
@@ -65,8 +65,8 @@ connecting class is not a truth coboundary; `j_symmetry_breaking` contrasts it w
 * `GradedTwoTerm.graded_two_term_les`, `GradedTwoTerm.connecting_zero_of_split` — the
   six-term LES in representative form and the split degeneration criterion.
 * `measurement_connecting_model` — the bundled minimal nonzero-connecting instance.
-* `delta0_temporal`, `connecting_zero_of_charge_invariant` — the mapping-torus differential
-  and the charge-invariance degeneration criterion.
+* `delta0_temporal`, `connecting_zero_of_reading_invariant` — the mapping-torus differential
+  and the reading-invariance degeneration criterion.
 * `quench_connecting_coboundary_iff_records_agree`, `j_symmetry_breaking`,
   `quench_connecting_model` — the quench obstruction and the orbit/cut dichotomy.
 * `GradedTwoTerm.six_term_les_objects` — the six-term sequence on cohomology objects:
@@ -545,22 +545,22 @@ theorem measurement_connecting_model :
 
 /-! ## (M) The mapping-torus complex of a settling stage -/
 
-/-- The truth mask of a charge: `true` off the inconsistency corner (the complement of the
+/-- The truth mask of a reading: `true` off the inconsistency corner (the complement of the
 `dTop` mask of `InconsistencySheaf`). -/
-def chargeTruth (a : Charge) : Bool := !(Charge.isInconsistency a)
+def readingTruth (a : Reading) : Bool := !(Reading.isInconsistency a)
 
 /-- The **mapping-torus complex of a settling stage**: cells in degree 0, one transition edge
 per cell (`x → step x`) in degree 1, incidence realizing `δ⁰ c = c ∘ step − c`
-(`delta0_temporal`), truth grading read from the charges. An edge is a truth edge when either
+(`delta0_temporal`), truth grading read from the readings. An edge is a truth edge when either
 endpoint is a truth cell, so truth cells are incident only to truth edges. -/
 def temporalComplex (Cell : Type) [DecidableEq Cell] (cells : List Cell)
-    (step : Cell → Cell) (q : Cell → Charge) : GradedTwoTerm where
+    (step : Cell → Cell) (q : Cell → Reading) : GradedTwoTerm where
   Cell := Cell
   Edge := Cell
   cells := cells
   d := fun y e => (if y = step e then 1 else 0) - (if y = e then 1 else 0)
-  tCell := fun x => chargeTruth (q x)
-  tEdge := fun e => chargeTruth (q e) || chargeTruth (q (step e))
+  tCell := fun x => readingTruth (q x)
+  tEdge := fun e => readingTruth (q e) || readingTruth (q (step e))
   truth_closed := by
     intro x e hx he
     obtain ⟨he1, he2⟩ := Bool.or_eq_false_iff.mp he
@@ -611,7 +611,7 @@ private theorem sum_indicator {α : Type} [DecidableEq α] :
 /-- **The mapping-torus differential.** Over a duplicate-free cell enumeration containing every
 cell, the coboundary of `temporalComplex` is `δ⁰ c = c ∘ step − c` on each transition edge. -/
 theorem delta0_temporal (Cell : Type) [DecidableEq Cell] (cells : List Cell)
-    (step : Cell → Cell) (q : Cell → Charge)
+    (step : Cell → Cell) (q : Cell → Reading)
     (hnodup : cells.Nodup) (hmem : ∀ x, x ∈ cells)
     (c : Cell → Int) (e : Cell) :
     (temporalComplex Cell cells step q).delta0 c e = c (step e) - c e := by
@@ -628,27 +628,27 @@ theorem delta0_temporal (Cell : Type) [DecidableEq Cell] (cells : List Cell)
     sum_indicator cells (step e) c hnodup (hmem (step e)),
     sum_indicator cells e c hnodup (hmem e)]
 
-/-! ## (N) The degeneration criterion on charges -/
+/-! ## (N) The degeneration criterion on readings -/
 
 /-- **A stage that preserves the inconsistency mask has zero connecting map.** If the step
 neither freezes a truth cell into a record nor thaws a record into a truth cell
-(`chargeTruth (q (step x)) = chargeTruth (q x)`), the mapping-torus complex splits as a direct
+(`readingTruth (q (step x)) = readingTruth (q x)`), the mapping-torus complex splits as a direct
 sum, and by `GradedTwoTerm.connecting_zero_of_split` the connecting cochain of every record
 cocycle vanishes. The static-mask model (`BigradedSettlingCohomology.dv_zero`) is this case. -/
-theorem connecting_zero_of_charge_invariant (Cell : Type) [DecidableEq Cell]
-    (cells : List Cell) (step : Cell → Cell) (q : Cell → Charge)
-    (hinv : ∀ x, chargeTruth (q (step x)) = chargeTruth (q x))
+theorem connecting_zero_of_reading_invariant (Cell : Type) [DecidableEq Cell]
+    (cells : List Cell) (step : Cell → Cell) (q : Cell → Reading)
+    (hinv : ∀ x, readingTruth (q (step x)) = readingTruth (q x))
     {c : Cell → Int} (hc : (temporalComplex Cell cells step q).TopCocycle c) :
     ∀ e, (temporalComplex Cell cells step q).connecting c e = 0 := by
-  have hsplit : ∀ x e : Cell, chargeTruth (q x) = false →
-      (chargeTruth (q e) || chargeTruth (q (step e))) = true →
+  have hsplit : ∀ x e : Cell, readingTruth (q x) = false →
+      (readingTruth (q e) || readingTruth (q (step e))) = true →
       ((if x = step e then (1 : Int) else 0) - (if x = e then 1 else 0)) = 0 := by
     intro x e hx' he'
-    have hce : chargeTruth (q e) = true := by
+    have hce : readingTruth (q e) = true := by
       rcases Bool.or_eq_true_iff.mp he' with h | h
       · exact h
       · exact (hinv e) ▸ h
-    have hcs : chargeTruth (q (step e)) = true := (hinv e).trans hce
+    have hcs : readingTruth (q (step e)) = true := (hinv e).trans hce
     have hxe : x ≠ e := fun h => by rw [h, hce] at hx'; cases hx'
     have hxs : x ≠ step e := fun h => by rw [h, hcs] at hx'; cases hx'
     rw [if_neg hxs, if_neg hxe]
@@ -668,22 +668,22 @@ def qStep : QCell → QCell
   | .mid => .sink
   | .sink => .sink
 
-/-- The charges of the quench stage: the source and sink are records (`⊤`), the carrier is a
+/-- The readings of the quench stage: the source and sink are records (`⊤`), the carrier is a
 truth cell. -/
-def qCharge : QCell → Charge
-  | .src => Charge.kTop
+def qReading : QCell → Reading
+  | .src => Reading.kTop
   | .mid => Articulating.Corner.potential
-  | .sink => Charge.kTop
+  | .sink => Reading.kTop
 
 /-- The quench stage as a mapping-torus complex. -/
 def quenchStage : GradedTwoTerm :=
-  temporalComplex QCell [QCell.src, QCell.mid, QCell.sink] qStep qCharge
+  temporalComplex QCell [QCell.src, QCell.mid, QCell.sink] qStep qReading
 
 /-- The coboundary of the quench stage is the mapping-torus differential
 (`delta0_temporal` at its enumeration). -/
 theorem quench_delta0 (c : QCell → Int) (e : QCell) :
     quenchStage.delta0 c e = c (qStep e) - c e :=
-  delta0_temporal QCell [QCell.src, QCell.mid, QCell.sink] qStep qCharge
+  delta0_temporal QCell [QCell.src, QCell.mid, QCell.sink] qStep qReading
     (by decide) (fun x => by cases x <;> decide) c e
 
 /-- The record source cochain: `1` on `src`, `0` elsewhere. -/
@@ -728,9 +728,9 @@ theorem recordSrc_class_not_truth_coboundary :
 
 /-! ## (P) The `negSwap`-orbit carrier and the cut -/
 
-/-- The quarter-turn step: the `negSwap` action on charges (`D4Gauge`), the order-4 rotation
-`⊥ → t → ⊤ → f → ⊥` of the charge diamond. -/
-def jStep (a : Charge) : Charge := D4.D8.act D4.D8.negSwap a
+/-- The quarter-turn step: the `negSwap` action on readings (`D4Gauge`), the order-4 rotation
+`⊥ → t → ⊤ → f → ⊥` of the reading diamond. -/
+def jStep (a : Reading) : Reading := D4.D8.act D4.D8.negSwap a
 
 @[simp] private theorem jStep_absurd :
     jStep Articulating.Corner.absurd = Articulating.Corner.potential := rfl
@@ -741,18 +741,18 @@ def jStep (a : Charge) : Charge := D4.D8.act D4.D8.negSwap a
 @[simp] private theorem jStep_stable :
     jStep Articulating.Corner.stable = Articulating.Corner.active := rfl
 
-/-- The mapping-torus complex of the `negSwap` rotation itself: cells are the four charges,
-each carrying its own charge, the step the quarter-turn. -/
+/-- The mapping-torus complex of the `negSwap` rotation itself: cells are the four readings,
+each carrying its own reading, the step the quarter-turn. -/
 def jCarrier : GradedTwoTerm :=
-  temporalComplex Charge
+  temporalComplex Reading
     [Articulating.Corner.absurd, Articulating.Corner.potential,
      Articulating.Corner.active, Articulating.Corner.stable]
     jStep (fun a => a)
 
 /-- The coboundary of the `negSwap`-orbit carrier is the mapping-torus differential. -/
-theorem jCarrier_delta0 (c : Charge → Int) (e : Charge) :
+theorem jCarrier_delta0 (c : Reading → Int) (e : Reading) :
     jCarrier.delta0 c e = c (jStep e) - c e :=
-  delta0_temporal Charge
+  delta0_temporal Reading
     [Articulating.Corner.absurd, Articulating.Corner.potential,
      Articulating.Corner.active, Articulating.Corner.stable]
     jStep (fun a => a) (by decide) (fun x => by cases x <;> decide) c e
@@ -761,13 +761,13 @@ theorem jCarrier_delta0 (c : Charge → Int) (e : Charge) :
 coboundary.** The rotation is invertible: what enters the record corner leaves it, the entry
 and exit contributions cancel, and the constant potential `−c(⊤)` off the record corner
 witnesses the coboundary. -/
-theorem jCarrier_connecting_coboundary {c : Charge → Int} (hc : jCarrier.TopCocycle c) :
+theorem jCarrier_connecting_coboundary {c : Reading → Int} (hc : jCarrier.TopCocycle c) :
     ∃ t, jCarrier.TruthCochain0 t ∧ jCarrier.delta0 t = jCarrier.connecting c := by
   have habs : c Articulating.Corner.absurd = 0 := hc.1 _ (by decide)
   have hpot : c Articulating.Corner.potential = 0 := hc.1 _ (by decide)
   have hact : c Articulating.Corner.active = 0 := hc.1 _ (by decide)
   refine ⟨((fun x => if x = Articulating.Corner.stable then 0
-      else -(c Articulating.Corner.stable)) : Charge → Int), ?_, ?_⟩
+      else -(c Articulating.Corner.stable)) : Reading → Int), ?_, ?_⟩
   · intro x hx
     cases x <;> first | exact absurd hx (by decide) | simp
   · funext e
@@ -1213,7 +1213,7 @@ orbit cut at the record — the class is a coboundary iff the record's two copie
 (`quench_connecting_coboundary_iff_records_agree`); `recordSrc` disagrees, so its class is the
 obstruction. -/
 theorem j_symmetry_breaking :
-    (∀ c : Charge → Int, jCarrier.TopCocycle c →
+    (∀ c : Reading → Int, jCarrier.TopCocycle c →
         ∃ t, jCarrier.TruthCochain0 t ∧ jCarrier.delta0 t = jCarrier.connecting c)
     ∧ (∀ c : QCell → Int, quenchStage.TopCocycle c →
         ((∃ t, quenchStage.TruthCochain0 t
@@ -1229,22 +1229,22 @@ theorem j_symmetry_breaking :
 
 /-- Bundles the quench stage: the record source is a record cocycle; its connecting class is
 truth-supported; it is not a truth coboundary; and a mask-preserving stage has zero connecting
-map (`connecting_zero_of_charge_invariant`). -/
+map (`connecting_zero_of_reading_invariant`). -/
 theorem quench_connecting_model :
     quenchStage.TopCocycle recordSrc
     ∧ quenchStage.TruthCochain1 (quenchStage.connecting recordSrc)
     ∧ (¬ ∃ t, quenchStage.TruthCochain0 t
         ∧ quenchStage.delta0 t = quenchStage.connecting recordSrc)
     ∧ (∀ (Cell : Type) (_ : DecidableEq Cell) (cells : List Cell)
-        (step : Cell → Cell) (q : Cell → Charge),
-        (∀ x, chargeTruth (q (step x)) = chargeTruth (q x)) →
+        (step : Cell → Cell) (q : Cell → Reading),
+        (∀ x, readingTruth (q (step x)) = readingTruth (q x)) →
         ∀ c : Cell → Int, (temporalComplex Cell cells step q).TopCocycle c →
         ∀ e, (temporalComplex Cell cells step q).connecting c e = 0) :=
   ⟨recordSrc_topCocycle,
    quenchStage.connecting_truth_supported recordSrc_topCocycle,
    recordSrc_class_not_truth_coboundary,
    fun Cell _ cells step q hinv _c hc e =>
-     connecting_zero_of_charge_invariant Cell cells step q hinv hc e⟩
+     connecting_zero_of_reading_invariant Cell cells step q hinv hc e⟩
 
 end Bigraded
 end Obsmetrologia

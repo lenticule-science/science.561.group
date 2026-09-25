@@ -19,17 +19,17 @@ future-facing **transferring** `Δ` — and asserts `σ∘Δ = Δ∘σ`, the ape
 coherence 2-cell (the KZ-diamond hinge).
 
 Here the carrier `A` is taken **concretely** as the truth-order fiber algebra: the
-valuation fiber `Valuation = PredicationCell → Charge` ordered pointwise by the
+valuation fiber `Valuation = PredicationCell → Reading` ordered pointwise by the
 **truth** order `≤ₜ`. We build that fiber's own order, its own Heyting structure, and
 its two commuting nuclei `σ`, `Δ` (as truth-closures `a ↦ joinT s a` toward two fixed
 poles), entirely on this fiber — *without* importing the abstract `Obsmetrologia.Order.*`
 infrastructure. Every nucleus law is proven by reducing pointwise to the finite
-`Charge`-level facts (each a `cases <;> decide` exhaustion).
+`Reading`-level facts (each a `cases <;> decide` exhaustion).
 
 We also prove **the finding** (`cross_order_not_knowledge_nucleus`): a *truth*-closure
 is **not** a *knowledge* nucleus — it is not even knowledge-inflationary. Concretely,
 on the fiber there is a valuation `v` with `¬ fLeK v (Δ-style truth-closure of v)`,
-witnessed by the sharp charge fact `meetK kTop (joinT kBot kTop) ≠ kTop`. This is why
+witnessed by the sharp reading fact `meetK kTop (joinT kBot kTop) ≠ kTop`. This is why
 the two bilattice orders enter the corpus's bigraded diamond as the **bigrading** — two
 *separate* Heyting structures, one per order — rather than as two nuclei inhabiting one
 Heyting square. The nuclear quartet lives **within** the truth order; the knowledge
@@ -39,106 +39,106 @@ order is the orthogonal grade, not a second nucleus on the same algebra.
 namespace Obsmetrologia
 namespace Positing.FiberAlgebra
 
-/-! ## 0. Charge-level lemmas (finite exhaustion)
+/-! ## 0. Reading-level lemmas (finite exhaustion)
 
-We first prove the handful of `Charge` facts we will lift pointwise. Each is a finite
-exhaustion over the four-point `Charge`. (`Charge.meetT`, `Charge.joinT`, `Charge.impT`
+We first prove the handful of `Reading` facts we will lift pointwise. Each is a finite
+exhaustion over the four-point `Reading`. (`Reading.meetT`, `Reading.joinT`, `Reading.impT`
 poles, adjunction, closure laws and commutation.) -/
 
-namespace Charge
-open Obsmetrologia.Charge
+namespace Reading
+open Obsmetrologia.Reading
 
-/-- The **truth-order Heyting implication** on charges:
+/-- The **truth-order Heyting implication** on readings:
 `impT a c = ofSlots ((¬a.pos)∨c.pos) ((¬a.neg)∧c.neg)`. -/
-def impT (a c : Obsmetrologia.Charge) : Obsmetrologia.Charge :=
-  Obsmetrologia.Charge.ofSlots ((!a.pos) || c.pos) ((!a.neg) && c.neg)
+def impT (a c : Obsmetrologia.Reading) : Obsmetrologia.Reading :=
+  Obsmetrologia.Reading.ofSlots ((!a.pos) || c.pos) ((!a.neg) && c.neg)
 
 /-- `meetT` is idempotent — the diagonal of the truth meet. -/
-theorem meetT_idem (a : Obsmetrologia.Charge) : meetT a a = a := by cases a <;> rfl
+theorem meetT_idem (a : Obsmetrologia.Reading) : meetT a a = a := by cases a <;> rfl
 
 /-- `meetT` is commutative (restated locally for the order proofs). -/
-theorem meetT_comm' (a b : Obsmetrologia.Charge) : meetT a b = meetT b a := by
+theorem meetT_comm' (a b : Obsmetrologia.Reading) : meetT a b = meetT b a := by
   cases a <;> cases b <;> rfl
 
 /-- `meetT` is associative (restated locally). -/
-theorem meetT_assoc' (a b c : Obsmetrologia.Charge) :
+theorem meetT_assoc' (a b c : Obsmetrologia.Reading) :
     meetT (meetT a b) c = meetT a (meetT b c) := by
   cases a <;> cases b <;> cases c <;> rfl
 
 /-- **Truth-meet antisymmetry data.** If `meetT a b = a` and `meetT b a = b` then
 `a = b`. -/
-theorem meetT_antisymm (a b : Obsmetrologia.Charge) :
+theorem meetT_antisymm (a b : Obsmetrologia.Reading) :
     meetT a b = a → meetT b a = b → a = b := by
   intro h1 h2; revert h1 h2; cases a <;> cases b <;> decide
 
-/-- **The truth Heyting adjunction at charge level** (the verified `impT` adjunction):
+/-- **The truth Heyting adjunction at reading level** (the verified `impT` adjunction):
 `meetT (meetT b a) c = meetT b a ↔ meetT b (impT a c) = b`. -/
-theorem heyting_adj (a b c : Obsmetrologia.Charge) :
+theorem heyting_adj (a b c : Obsmetrologia.Reading) :
     meetT (meetT b a) c = meetT b a ↔ meetT b (impT a c) = b := by
   cases a <;> cases b <;> cases c <;> decide
 
 /-- A truth-closure `fun a => joinT s a` is **truth-inflationary**:
 `meetT a (joinT s a) = a`. -/
-theorem joinT_infl (s a : Obsmetrologia.Charge) : meetT a (joinT s a) = a := by
+theorem joinT_infl (s a : Obsmetrologia.Reading) : meetT a (joinT s a) = a := by
   cases s <;> cases a <;> rfl
 
 /-- A truth-closure is **idempotent**: `joinT s (joinT s a) = joinT s a`. -/
-theorem joinT_clo_idem (s a : Obsmetrologia.Charge) : joinT s (joinT s a) = joinT s a := by
+theorem joinT_clo_idem (s a : Obsmetrologia.Reading) : joinT s (joinT s a) = joinT s a := by
   cases s <;> cases a <;> rfl
 
 /-- A truth-closure **preserves `meetT`**:
 `joinT s (meetT a b) = meetT (joinT s a) (joinT s b)`. -/
-theorem joinT_meetT (s a b : Obsmetrologia.Charge) :
+theorem joinT_meetT (s a b : Obsmetrologia.Reading) :
     joinT s (meetT a b) = meetT (joinT s a) (joinT s b) := by
   cases s <;> cases a <;> cases b <;> rfl
 
 /-- **Any two truth-closures commute**:
 `joinT s (joinT d a) = joinT d (joinT s a)`. -/
-theorem joinT_clo_comm (s d a : Obsmetrologia.Charge) :
+theorem joinT_clo_comm (s d a : Obsmetrologia.Reading) :
     joinT s (joinT d a) = joinT d (joinT s a) := by
   cases s <;> cases d <;> cases a <;> rfl
 
-/-- **The finding (sharp charge witness).** A truth-closure is **not**
+/-- **The finding (sharp reading witness).** A truth-closure is **not**
 knowledge-inflationary: `meetK kTop (joinT kBot kTop) ≠ kTop`. (`decide` proved that
 `∀ a, meetK a (joinT kBot a) = a` is *false*; this is the explicit counterexample.) -/
 theorem not_knowledge_infl_witness :
     meetK kTop (joinT kBot kTop) ≠ kTop := by decide
 
-end Charge
+end Reading
 
 /-! ## 1. Pointwise fiber operations
 
-The **fiber** `Valuation = PredicationCell → Charge` carries the pointwise lift of each
+The **fiber** `Valuation = PredicationCell → Reading` carries the pointwise lift of each
 truth-order operation. This is the algebraic fiber front: after `Site.Basic` supplies
 fiber-local covers, this module builds the internal Heyting/nuclear algebra on the
 valuation fiber itself. -/
 
-open Obsmetrologia.Charge in
+open Obsmetrologia.Reading in
 /-- Pointwise truth-meet of valuations. -/
 def fMeetT (v w : Valuation) : Valuation := fun φ => meetT (v φ) (w φ)
 
-open Obsmetrologia.Charge in
+open Obsmetrologia.Reading in
 /-- Pointwise truth-join of valuations. -/
 def fJoinT (v w : Valuation) : Valuation := fun φ => joinT (v φ) (w φ)
 
-open Obsmetrologia.Charge in
+open Obsmetrologia.Reading in
 /-- Pointwise truth-meet of valuations — the *knowledge* meet, used only to state the
 finding's pointwise knowledge order. -/
 def fMeetK (v w : Valuation) : Valuation := fun φ => meetK (v φ) (w φ)
 
 /-- Pointwise truth Heyting implication of valuations. -/
-def fImpT (v w : Valuation) : Valuation := fun φ => Charge.impT (v φ) (w φ)
+def fImpT (v w : Valuation) : Valuation := fun φ => Reading.impT (v φ) (w φ)
 
 /-- The fiber's truth-top: `tTop` everywhere. -/
-def fTop : Valuation := fun _ => Obsmetrologia.Charge.tTop
+def fTop : Valuation := fun _ => Obsmetrologia.Reading.tTop
 
 /-- The fiber's truth-bottom: `tBot` everywhere. -/
-def fBot : Valuation := fun _ => Obsmetrologia.Charge.tBot
+def fBot : Valuation := fun _ => Obsmetrologia.Reading.tBot
 
 /-! ## 2. The fiber's own truth order — a partial order
 
 `fLeT v w := fMeetT v w = v`: `v` is truth-below `w` iff the truth-meet absorbs `v`.
-We prove reflexivity, transitivity, antisymmetry by `funext` + the Charge truth-lattice
+We prove reflexivity, transitivity, antisymmetry by `funext` + the Reading truth-lattice
 lemmas. -/
 
 /-- The fiber truth order: `v ≤ₜ w` iff `fMeetT v w = v` (pointwise truth meet). -/
@@ -146,33 +146,33 @@ def fLeT (v w : Valuation) : Prop := fMeetT v w = v
 
 /-- **Reflexivity** of the fiber truth order. -/
 theorem fLeT_refl (v : Valuation) : fLeT v v := by
-  funext φ; exact Charge.meetT_idem (v φ)
+  funext φ; exact Reading.meetT_idem (v φ)
 
 /-- **Transitivity** of the fiber truth order. -/
 theorem fLeT_trans (u v w : Valuation) : fLeT u v → fLeT v w → fLeT u w := by
   intro huv hvw
   funext φ
-  have hu : Obsmetrologia.Charge.meetT (u φ) (v φ) = u φ := congrFun huv φ
-  have hv : Obsmetrologia.Charge.meetT (v φ) (w φ) = v φ := congrFun hvw φ
+  have hu : Obsmetrologia.Reading.meetT (u φ) (v φ) = u φ := congrFun huv φ
+  have hv : Obsmetrologia.Reading.meetT (v φ) (w φ) = v φ := congrFun hvw φ
   -- meetT (u φ) (w φ) = meetT (meetT (u φ) (v φ)) (w φ) = meetT (u φ) (meetT (v φ) (w φ))
   --                   = meetT (u φ) (v φ) = u φ
-  calc Obsmetrologia.Charge.meetT (u φ) (w φ)
-      = Obsmetrologia.Charge.meetT (Obsmetrologia.Charge.meetT (u φ) (v φ)) (w φ) := by rw [hu]
-    _ = Obsmetrologia.Charge.meetT (u φ) (Obsmetrologia.Charge.meetT (v φ) (w φ)) :=
-          Charge.meetT_assoc' (u φ) (v φ) (w φ)
-    _ = Obsmetrologia.Charge.meetT (u φ) (v φ) := by rw [hv]
+  calc Obsmetrologia.Reading.meetT (u φ) (w φ)
+      = Obsmetrologia.Reading.meetT (Obsmetrologia.Reading.meetT (u φ) (v φ)) (w φ) := by rw [hu]
+    _ = Obsmetrologia.Reading.meetT (u φ) (Obsmetrologia.Reading.meetT (v φ) (w φ)) :=
+          Reading.meetT_assoc' (u φ) (v φ) (w φ)
+    _ = Obsmetrologia.Reading.meetT (u φ) (v φ) := by rw [hv]
     _ = u φ := hu
 
 /-- **Antisymmetry** of the fiber truth order. -/
 theorem fLeT_antisymm (v w : Valuation) : fLeT v w → fLeT w v → v = w := by
   intro hvw hwv
   funext φ
-  exact Charge.meetT_antisymm (v φ) (w φ) (congrFun hvw φ) (congrFun hwv φ)
+  exact Reading.meetT_antisymm (v φ) (w φ) (congrFun hvw φ) (congrFun hwv φ)
 
 /-! ## 3. The fiber as its own Heyting algebra
 
 We prove the Heyting adjunction `fLeT (fMeetT b a) c ↔ fLeT b (fImpT a c)` pointwise,
-reducing to the verified Charge `impT` adjunction, and bundle the fiber data into a
+reducing to the verified Reading `impT` adjunction, and bundle the fiber data into a
 concrete `FiberHeyting` value (whose laws are all *proven*, not postulated). -/
 
 /-- **The fiber Heyting adjunction**: `(b ∧ₜ a) ≤ₜ c ↔ b ≤ₜ (a ⇒ₜ c)`, pointwise. -/
@@ -181,13 +181,13 @@ theorem fHeyting_adj (a b c : Valuation) :
   constructor
   · intro h
     funext φ
-    have hφ : Obsmetrologia.Charge.meetT (Obsmetrologia.Charge.meetT (b φ) (a φ)) (c φ)
-        = Obsmetrologia.Charge.meetT (b φ) (a φ) := congrFun h φ
-    exact (Charge.heyting_adj (a φ) (b φ) (c φ)).1 hφ
+    have hφ : Obsmetrologia.Reading.meetT (Obsmetrologia.Reading.meetT (b φ) (a φ)) (c φ)
+        = Obsmetrologia.Reading.meetT (b φ) (a φ) := congrFun h φ
+    exact (Reading.heyting_adj (a φ) (b φ) (c φ)).1 hφ
   · intro h
     funext φ
-    have hφ : Obsmetrologia.Charge.meetT (b φ) (Charge.impT (a φ) (c φ)) = b φ := congrFun h φ
-    exact (Charge.heyting_adj (a φ) (b φ) (c φ)).2 hφ
+    have hφ : Obsmetrologia.Reading.meetT (b φ) (Reading.impT (a φ) (c φ)) = b φ := congrFun h φ
+    exact (Reading.heyting_adj (a φ) (b φ) (c φ)).2 hφ
 
 /-- A **concrete Heyting-algebra bundle on a carrier** — our own small structure,
 laws-as-fields in house style; *not* `Obsmetrologia.Order.HeytingAlgebra`. Every instance
@@ -215,7 +215,7 @@ structure FiberHeyting (Carrier : Type) where
 
 /-- **The valuation fiber as a Heyting algebra** — every field proven concretely on the
 truth order. This is the algebraic meaning of **fiber** here: the carrier `A = H_t` of the
-corpus's bigraded diamond, built directly from `Valuation = PredicationCell → Charge`. -/
+corpus's bigraded diamond, built directly from `Valuation = PredicationCell → Reading`. -/
 def fiberHeyting : FiberHeyting Valuation where
   le := fLeT
   meet := fMeetT
@@ -239,39 +239,39 @@ Each nucleus is a pointwise truth-closure toward a fixed pole. We document:
 Both are instances of one schema `nucleusToward s`. We prove each is
 truth-inflationary, idempotent, `fMeetT`-preserving, and that any two commute. -/
 
-/-- The pointwise truth-closure toward a fixed charge pole `s`. -/
-def nucleusToward (s : Obsmetrologia.Charge) (v : Valuation) : Valuation :=
-  fun φ => Obsmetrologia.Charge.joinT s (v φ)
+/-- The pointwise truth-closure toward a fixed reading pole `s`. -/
+def nucleusToward (s : Obsmetrologia.Reading) (v : Valuation) : Valuation :=
+  fun φ => Obsmetrologia.Reading.joinT s (v φ)
 
 /-- **σ — the saturating nucleus** (past-facing), raising toward the active pole. -/
-def sigma (v : Valuation) : Valuation := nucleusToward Obsmetrologia.Charge.tTop v
+def sigma (v : Valuation) : Valuation := nucleusToward Obsmetrologia.Reading.tTop v
 
 /-- **Δ — the transferring nucleus** (future-facing), raising toward the absurd pole. -/
-def delta (v : Valuation) : Valuation := nucleusToward Obsmetrologia.Charge.kTop v
+def delta (v : Valuation) : Valuation := nucleusToward Obsmetrologia.Reading.kTop v
 
 /-- `nucleusToward s` is **truth-inflationary**: `fLeT v (nucleusToward s v)`. -/
-theorem nucleusToward_infl (s : Obsmetrologia.Charge) (v : Valuation) :
+theorem nucleusToward_infl (s : Obsmetrologia.Reading) (v : Valuation) :
     fLeT v (nucleusToward s v) := by
-  funext φ; exact Charge.joinT_infl s (v φ)
+  funext φ; exact Reading.joinT_infl s (v φ)
 
 /-- `nucleusToward s` is **idempotent**. -/
-theorem nucleusToward_idem (s : Obsmetrologia.Charge) (v : Valuation) :
+theorem nucleusToward_idem (s : Obsmetrologia.Reading) (v : Valuation) :
     nucleusToward s (nucleusToward s v) = nucleusToward s v := by
-  funext φ; exact Charge.joinT_clo_idem s (v φ)
+  funext φ; exact Reading.joinT_clo_idem s (v φ)
 
 /-- `nucleusToward s` **preserves the fiber meet**. -/
-theorem nucleusToward_meet (s : Obsmetrologia.Charge) (v w : Valuation) :
+theorem nucleusToward_meet (s : Obsmetrologia.Reading) (v w : Valuation) :
     nucleusToward s (fMeetT v w) = fMeetT (nucleusToward s v) (nucleusToward s w) := by
-  funext φ; exact Charge.joinT_meetT s (v φ) (w φ)
+  funext φ; exact Reading.joinT_meetT s (v φ) (w φ)
 
 /-- **Any two `nucleusToward` closures commute** on the fiber. -/
-theorem nucleusToward_comm (s d : Obsmetrologia.Charge) (v : Valuation) :
+theorem nucleusToward_comm (s d : Obsmetrologia.Reading) (v : Valuation) :
     nucleusToward s (nucleusToward d v) = nucleusToward d (nucleusToward s v) := by
-  funext φ; exact Charge.joinT_clo_comm s d (v φ)
+  funext φ; exact Reading.joinT_clo_comm s d (v φ)
 
 /-- **σ and Δ commute** on the fiber — the `commutating` coherence 2-cell, concretely. -/
 theorem sigma_delta_comm (v : Valuation) : sigma (delta v) = delta (sigma v) :=
-  nucleusToward_comm Obsmetrologia.Charge.tTop Obsmetrologia.Charge.kTop v
+  nucleusToward_comm Obsmetrologia.Reading.tTop Obsmetrologia.Reading.kTop v
 
 /-! ## 5. The nuclear quartet — concrete `FiberNuclearSquare`
 
@@ -308,12 +308,12 @@ structure FiberNuclearSquare where
 def settlingSquare : FiberNuclearSquare where
   j1 := sigma
   j2 := delta
-  j1_infl := nucleusToward_infl Obsmetrologia.Charge.tTop
-  j1_idem := nucleusToward_idem Obsmetrologia.Charge.tTop
-  j1_meet := nucleusToward_meet Obsmetrologia.Charge.tTop
-  j2_infl := nucleusToward_infl Obsmetrologia.Charge.kTop
-  j2_idem := nucleusToward_idem Obsmetrologia.Charge.kTop
-  j2_meet := nucleusToward_meet Obsmetrologia.Charge.kTop
+  j1_infl := nucleusToward_infl Obsmetrologia.Reading.tTop
+  j1_idem := nucleusToward_idem Obsmetrologia.Reading.tTop
+  j1_meet := nucleusToward_meet Obsmetrologia.Reading.tTop
+  j2_infl := nucleusToward_infl Obsmetrologia.Reading.kTop
+  j2_idem := nucleusToward_idem Obsmetrologia.Reading.kTop
+  j2_meet := nucleusToward_meet Obsmetrologia.Reading.kTop
   comm := sigma_delta_comm
 
 namespace FiberNuclearSquare
@@ -368,7 +368,7 @@ theorem fix_pi_iff (S : FiberNuclearSquare) (v : Valuation) :
 /-! ### The four corner operators indexed by `Articulating.Corner` -/
 
 /-- The corner operator: `{absurd ↦ id, potential ↦ j₁, active ↦ j₂, stable ↦ π}`.
-Reuses `Articulating.Corner` (= `Charge`): the four-corner shape the spine meets everywhere, here as
+Reuses `Articulating.Corner` (= `Reading`): the four-corner shape the spine meets everywhere, here as
 *sub-algebras under closure* (apply neither / j₁ alone / j₂ alone / both). -/
 def cornerOp (S : FiberNuclearSquare) : Articulating.Corner → (Valuation → Valuation)
   | Articulating.Corner.absurd    => id
@@ -418,7 +418,7 @@ structure FiberTruthQuartet where
   card : Articulating.Corner.all.length = 4
 
 /-- **The concrete settling nuclear quartet on the truth-order valuation fiber.**
-All four corpus facts, proven directly on `Valuation = PredicationCell → Charge`. -/
+All four corpus facts, proven directly on `Valuation = PredicationCell → Reading`. -/
 def fiber_truth_nuclear_quartet : FiberTruthQuartet where
   comm := sigma_delta_comm
   pi_infl := settlingSquare.pi_infl
@@ -443,21 +443,21 @@ def fLeK (v w : Valuation) : Prop := fMeetK v w = v
 /-- **The finding.** There is a valuation `v` whose truth-closure toward `kBot`
 (`fun φ => joinT kBot (v φ)`) is **not** knowledge-above `v` — a truth-closure fails to
 be a knowledge nucleus, since it is not knowledge-inflationary. Witnessed by the
-all-`kTop` valuation and the sharp charge fact `meetK kTop (joinT kBot kTop) ≠ kTop`.
+all-`kTop` valuation and the sharp reading fact `meetK kTop (joinT kBot kTop) ≠ kTop`.
 
 This is the structural reason the knowledge and truth orders cannot co-inhabit one
 Heyting algebra as the two commuting nuclei `σ, Δ`: the quartet's nuclei both live in
 the *truth* order, and the knowledge order is the orthogonal **grade** of the bigraded
 diamond, not a second nucleus on the same algebra. -/
 theorem cross_order_not_knowledge_nucleus :
-    ∃ v : Valuation, ¬ fLeK v (fun φ => Obsmetrologia.Charge.joinT Obsmetrologia.Charge.kBot (v φ)) := by
-  refine ⟨fun _ => Obsmetrologia.Charge.kTop, ?_⟩
+    ∃ v : Valuation, ¬ fLeK v (fun φ => Obsmetrologia.Reading.joinT Obsmetrologia.Reading.kBot (v φ)) := by
+  refine ⟨fun _ => Obsmetrologia.Reading.kTop, ?_⟩
   intro h
   -- fLeK says fMeetK v (clo v) = v, i.e. pointwise meetK kTop (joinT kBot kTop) = kTop
-  have hφ : Obsmetrologia.Charge.meetK Obsmetrologia.Charge.kTop
-      (Obsmetrologia.Charge.joinT Obsmetrologia.Charge.kBot Obsmetrologia.Charge.kTop)
-      = Obsmetrologia.Charge.kTop := congrFun h Inhabited.default
-  exact Charge.not_knowledge_infl_witness hφ
+  have hφ : Obsmetrologia.Reading.meetK Obsmetrologia.Reading.kTop
+      (Obsmetrologia.Reading.joinT Obsmetrologia.Reading.kBot Obsmetrologia.Reading.kTop)
+      = Obsmetrologia.Reading.kTop := congrFun h Inhabited.default
+  exact Reading.not_knowledge_infl_witness hφ
 
 end Positing.FiberAlgebra
 end Obsmetrologia

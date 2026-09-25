@@ -4,7 +4,7 @@ import Obsmetrologia.Dynamics.Flow.NSCFiring
 /-!
 # The regime gate — deriving `cohomologyVanishes` from the tower's carriers
 
-`Closure.Regime` proves `regime_tower`: one carrier per regime — `Charge` (strict), the bare
+`Closure.Regime` proves `regime_tower`: one carrier per regime — `Reading` (strict), the bare
 `Record` (scott), the completed `ORecord` (transfinite-bounded), the germ preorder of record
 sequences (aperiodic) — and `unattained_settling_gate`, which pairs each carrier's settling
 behaviour with `cohomologyVanishes` at that regime, calling the match "the derived invariant".
@@ -30,7 +30,7 @@ justified by the actual carrier fact (`gate_strict`/`gate_scott`/`gate_transfini
 `gate_aperiodic`), not by comparing two literal tables.
 
 `gate r = false` (an "unattained settling") is then linked to the corpus's non-Scott-continuous
-firing ordinals (`Flow.NSCFiring`): at `strict` the tower's own carrier `Charge` is exactly the
+firing ordinals (`Flow.NSCFiring`): at `strict` the tower's own carrier `Reading` is exactly the
 carrier `IsNSC`/`L_ns` are typed over, and the absence of a gap there **is** the literal absence
 of NSC firings (`no_nsc_firing_of_closure`). The other three rungs use carriers `IsNSC` is not
 typed over (`Record`, `ORecord`, `Nat → Record`); there we prove and name the *structural*
@@ -46,10 +46,10 @@ open Obsmetrologia.Closure.Scott (DirectedFamily)
 /-! ## Part 1 — the four carrier facts, restated directly from the tower's own lemmas -/
 
 /-- **`strict`/FOUR: the settled value exists and is attained at the finite stage 3.**
-Every inflationary endomap on the finite charge lattice fixes `Charge.iter f 3 x` — restates
-`Obsmetrologia.spine_settles_by_three` (itself `Charge.strict_finite`). -/
-theorem strict_settled_and_attained (f : Charge → Charge) (hf : ∀ a, Charge.KLE a (f a))
-    (x : Charge) : f (Charge.iter f 3 x) = Charge.iter f 3 x :=
+Every inflationary endomap on the finite reading lattice fixes `Reading.iter f 3 x` — restates
+`Obsmetrologia.spine_settles_by_three` (itself `Reading.strict_finite`). -/
+theorem strict_settled_and_attained (f : Reading → Reading) (hf : ∀ a, Reading.KLE a (f a))
+    (x : Reading) : f (Reading.iter f 3 x) = Reading.iter f 3 x :=
   spine_settles_by_three f hf x
 
 /-- **`scott`/Record: the increment map has no fixed point anywhere.** `Record.succPos` never
@@ -88,7 +88,7 @@ theorem aperiodic_weakly_quiescent (s : Nat → Record) (k : Nat) :
 /-! ## Part 2 — the gate, computed from the four carrier facts -/
 
 /-- **Does the carrier's canonical dynamic have a genuine (equality) fixed point at all?**
-`true` at `strict` (`Charge.iter f 3 x`, `strict_settled_and_attained`) and
+`true` at `strict` (`Reading.iter f 3 x`, `strict_settled_and_attained`) and
 `transfiniteBounded` (`ORecord.omegaPos`, `transfiniteBounded_settled_unattained`); `false` at
 `scott` (`scott_no_fixed_point`: `Record.succPos` has none) and `aperiodic`
 (`aperiodic_never_settles_as_data`: `Record.topBump`'s iteration has none). -/
@@ -136,8 +136,8 @@ def gate (r : ClosureRegime) : Bool :=
 justifies it: FOUR's inflationary orbit fixes at the finite stage 3. -/
 theorem gate_strict :
     gate ClosureRegime.strict = cohomologyVanishes ClosureRegime.strict
-    ∧ ∀ (f : Charge → Charge), (∀ a, Charge.KLE a (f a)) → ∀ x : Charge,
-        f (Charge.iter f 3 x) = Charge.iter f 3 x :=
+    ∧ ∀ (f : Reading → Reading), (∀ a, Reading.KLE a (f a)) → ∀ x : Reading,
+        f (Reading.iter f 3 x) = Reading.iter f 3 x :=
   ⟨rfl, strict_settled_and_attained⟩
 
 /-- `gate` matches `cohomologyVanishes` at `scott`, bundled with the carrier fact that
@@ -220,14 +220,14 @@ theorem gap_matches_nonvanishing :
   ⟨strict_no_gap, scott_no_gap, transfiniteBounded_has_gap, aperiodic_has_gap⟩
 
 /-- **At `strict` the gap-absence is not merely structural — it *is* the literal absence of
-NSC firings.** `Charge` is exactly the carrier `IsNSC`/`L_ns` are typed over, and
-`no_nsc_firing_of_closure` proves every charge-closure has none: the same finite carrier that
-forces `κ ≤ 3` (`Charge.strict_finite`) forces `L_ns(κ) = ∅`. The other three rungs use carriers
+NSC firings.** `Reading` is exactly the carrier `IsNSC`/`L_ns` are typed over, and
+`no_nsc_firing_of_closure` proves every reading-closure has none: the same finite carrier that
+forces `κ ≤ 3` (`Reading.strict_finite`) forces `L_ns(κ) = ∅`. The other three rungs use carriers
 (`Record`, `ORecord`, `Nat → Record`) `IsNSC` is not typed over, so `HasGap` is documented there
 instead as the honest structural analogue rather than a forced (fake) `IsNSC` instance. -/
 theorem strict_no_gap_is_no_nsc_firing :
     ¬ HasGap ClosureRegime.strict
-    ∧ ∀ (cl : Charge.Closure) (S : DirectedFamily), ¬ IsNSC cl.op S :=
+    ∧ ∀ (cl : Reading.Closure) (S : DirectedFamily), ¬ IsNSC cl.op S :=
   ⟨strict_no_gap, no_nsc_firing_of_closure⟩
 
 /-- The `aperiodic` gap coincides with the tower's own lax-slack witness

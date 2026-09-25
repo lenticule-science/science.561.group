@@ -18,25 +18,25 @@ This module derives the iteration `F^n` and proves that on the FOUR bilattice
 regime**: the residue drains to zero in boundedly many steps, with no transfinite
 tail. The other three regimes (Scott-continuous κ=ω, transfinite-bounded,
 aperiodic κ≥ω₁) are the refinements that appear once the index set is infinite;
-over the finite charge lattice the regime is always strict-finite.
+over the finite reading lattice the regime is always strict-finite.
 -/
 
 namespace Obsmetrologia
-namespace Charge
+namespace Reading
 
 /-- `iter f n x = fⁿ x` — the settling orbit. -/
-def iter (f : Charge → Charge) : Nat → Charge → Charge
+def iter (f : Reading → Reading) : Nat → Reading → Reading
   | 0, x => x
   | n + 1, x => f (iter f n x)
 
 /-- A fixed point stays fixed under all further iteration. -/
-theorem iter_fixed_of (f : Charge → Charge) (a : Charge) (h : f a = a) :
+theorem iter_fixed_of (f : Reading → Reading) (a : Reading) (h : f a = a) :
     ∀ n, iter f n a = a
   | 0 => rfl
   | n + 1 => by rw [iter, iter_fixed_of f a h n, h]
 
 /-- Iteration adds: `f^{n+m} x = f^m (f^n x)`. -/
-theorem iter_add (f : Charge → Charge) (m n : Nat) (x : Charge) :
+theorem iter_add (f : Reading → Reading) (m n : Nat) (x : Reading) :
     iter f (n + m) x = iter f m (iter f n x) := by
   induction m with
   | zero => rfl
@@ -46,17 +46,17 @@ theorem iter_add (f : Charge → Charge) (m n : Nat) (x : Charge) :
       _ = iter f (k + 1) (iter f n x) := rfl
 
 /-- Each step climbs the knowledge order — the orbit is a `≤ₖ`-chain. -/
-theorem iter_step_le (f : Charge → Charge) (hf : ∀ a, KLE a (f a)) (x : Charge) (n : Nat) :
+theorem iter_step_le (f : Reading → Reading) (hf : ∀ a, KLE a (f a)) (x : Reading) (n : Nat) :
     KLE (iter f n x) (iter f (n + 1) x) := hf (iter f n x)
 
-/-- **No ascending chain of four distinct charges.** The knowledge order has height
+/-- **No ascending chain of four distinct readings.** The knowledge order has height
 two, so any `a ≤ₖ b ≤ₖ c ≤ₖ d` collapses somewhere — a finite check. -/
-theorem kchain_height (a b c d : Charge) :
+theorem kchain_height (a b c d : Reading) :
     KLE a b → KLE b c → KLE c d → a = b ∨ b = c ∨ c = d := by
   cases a <;> cases b <;> cases c <;> cases d <;> decide
 
 /-- Once two consecutive iterates coincide at `k`, the orbit is constant from `k`. -/
-theorem iter_propagate (f : Charge → Charge) (k : Nat) (x : Charge)
+theorem iter_propagate (f : Reading → Reading) (k : Nat) (x : Reading)
     (h : iter f k x = iter f (k + 1) x) (j : Nat) :
     iter f (k + j) x = iter f k x := by
   have hfix : f (iter f k x) = iter f k x := h.symm
@@ -67,12 +67,12 @@ theorem iter_propagate (f : Charge → Charge) (k : Nat) (x : Charge)
 
 /-- `f` settles `x` by step `n`: the orbit is fixed from `n` on. The least such `n`
 is the closure ordinal κ; any such `n` is a settling bound λ. -/
-def SettlesBy (f : Charge → Charge) (x : Charge) (n : Nat) : Prop :=
+def SettlesBy (f : Reading → Reading) (x : Reading) (n : Nat) : Prop :=
   iter f (n + 1) x = iter f n x
 
-/-- **The settling bound, derived from the charge cardinality — not a literal.** A strictly
-ascending `≤ₖ`-chain visits at most `Articulating.Corner.all.length` distinct charges (`kchain_height`: no
-chain of four distinct charges), so settling climbs at most `Articulating.Corner.all.length - 1` times.
+/-- **The settling bound, derived from the reading cardinality — not a literal.** A strictly
+ascending `≤ₖ`-chain visits at most `Articulating.Corner.all.length` distinct readings (`kchain_height`: no
+chain of four distinct readings), so settling climbs at most `Articulating.Corner.all.length - 1` times.
 This is FOUR's knowledge-lattice height; its value `3` is `kHeight_eq_three`, not a magic
 number. -/
 def kHeight : Nat := Articulating.Corner.all.length - 1
@@ -81,10 +81,10 @@ def kHeight : Nat := Articulating.Corner.all.length - 1
 theorem kHeight_eq_three : kHeight = 3 := rfl
 
 /-- **Strict-finite termination, stated at `kHeight`.** Every inflationary endomap on the
-charge lattice reaches its fixed point by step `kHeight` (FOUR's knowledge-lattice height,
+reading lattice reaches its fixed point by step `kHeight` (FOUR's knowledge-lattice height,
 `= 3` by `kHeight_eq_three`, not asserted as a bare numeral): `f^kHeight x = f^(kHeight+1) x`.
 The closure ordinal is `≤ kHeight`. -/
-theorem settles_by_kHeight (f : Charge → Charge) (hf : ∀ a, KLE a (f a)) (x : Charge) :
+theorem settles_by_kHeight (f : Reading → Reading) (hf : ∀ a, KLE a (f a)) (x : Reading) :
     iter f kHeight x = iter f (kHeight + 1) x := by
   rw [kHeight_eq_three]
   have h01 := iter_step_le f hf x 0
@@ -98,48 +98,48 @@ theorem settles_by_kHeight (f : Charge → Charge) (hf : ∀ a, KLE a (f a)) (x 
 /-- **Strict-finite termination, at the literal `3`/`4`.** `settles_by_kHeight` read at
 `kHeight`'s computed value — kept for existing callers that state the bound as `3`/`4`
 directly; the derived form (`settles_by_kHeight`) is the honest statement. -/
-theorem settles_by_three (f : Charge → Charge) (hf : ∀ a, KLE a (f a)) (x : Charge) :
+theorem settles_by_three (f : Reading → Reading) (hf : ∀ a, KLE a (f a)) (x : Reading) :
     iter f 3 x = iter f 4 x := by
   have h := settles_by_kHeight f hf x
   rwa [kHeight_eq_three] at h
 
-/-- **The closure ordinal κ over the charge lattice, as an ordinal.** The corpus's κ
-is "the least *ordinal* `τ` with `Fᵗ⁺¹ = Fᵗ`" (bounded by `|PrFib|⁺`); over the finite charge
+/-- **The closure ordinal κ over the reading lattice, as an ordinal.** The corpus's κ
+is "the least *ordinal* `τ` with `Fᵗ⁺¹ = Fᵗ`" (bounded by `|PrFib|⁺`); over the finite reading
 class it is the **finite** ordinal `ofNat kHeight` — the strict case of a transfinite bound,
 surfaced as an `Ord` (our ℕ), not a bare `Nat`. -/
 def closureOrdinal : Ord := Ord.ofNat kHeight
 
-/-- κ over the charge lattice is a **finite** ordinal — the strict-finite regime read off the
+/-- κ over the reading lattice is a **finite** ordinal — the strict-finite regime read off the
 ordinal's own shape (`Ord.isFinite`), the witness `Closure/Ordinal.lean` classifies. -/
 theorem closureOrdinal_isFinite : Ord.isFinite closureOrdinal = true :=
   Ord.ofNat_isFinite kHeight
 
-/-- **The strict-finite regime: κ ≤ kHeight.** Every inflationary endomap on the charge
+/-- **The strict-finite regime: κ ≤ kHeight.** Every inflationary endomap on the reading
 lattice settles by step `kHeight` (`= Articulating.Corner.all.length - 1`, FOUR's lattice height) — a
-uniform finite settling bound derived from the charge cardinality, no transfinite tail. -/
-theorem strict_finite (f : Charge → Charge) (hf : ∀ a, KLE a (f a)) (x : Charge) :
+uniform finite settling bound derived from the reading cardinality, no transfinite tail. -/
+theorem strict_finite (f : Reading → Reading) (hf : ∀ a, KLE a (f a)) (x : Reading) :
     SettlesBy f x kHeight := (settles_by_kHeight f hf x).symm
 
 /-- The settled value is fixed: `f (f^kHeight x) = f^kHeight x`. -/
-theorem settled_fixed (f : Charge → Charge) (hf : ∀ a, KLE a (f a)) (x : Charge) :
+theorem settled_fixed (f : Reading → Reading) (hf : ∀ a, KLE a (f a)) (x : Reading) :
     f (iter f kHeight x) = iter f kHeight x := (settles_by_kHeight f hf x).symm
 
 /-- Every `Closure` (from `Settling`) is inflationary, so it too settles within `kHeight`
 steps — consistent with idempotent closures settling in one. -/
-theorem closure_strict_finite (c : Closure) (x : Charge) : SettlesBy c.op x kHeight :=
+theorem closure_strict_finite (c : Closure) (x : Reading) : SettlesBy c.op x kHeight :=
   strict_finite c.op c.infl x
 
 /-! ## The ω-limit stage: the strict-finite regime collapses the transfinite
 
 The corpus's settling is ordinal-indexed; at a **limit** ordinal the value is the directed
-`≤ₖ`-join of the prior stages (`Ord.limit_isLUB`). Over the **finite** charge lattice the orbit
+`≤ₖ`-join of the prior stages (`Ord.limit_isLUB`). Over the **finite** reading lattice the orbit
 stabilizes by step `kHeight` (`strict_finite`), so that limit join — in particular the value at
 `ω = Ord.limit ofNat` — is reached at the finite stage `kHeight`: the settled value
 `f^kHeight x` **is** `⨆ₖ fᵏx`. The transfinite limit collapses to the finite. -/
 
 /-- **The orbit is `≤ₖ`-monotone:** `k ≤ m ⟹ fᵏx ≤ₖ fᵐx`. Each step climbs (`iter_step_le`),
 composed along the gap. -/
-theorem iter_mono (f : Charge → Charge) (hf : ∀ a, KLE a (f a)) (x : Charge) :
+theorem iter_mono (f : Reading → Reading) (hf : ∀ a, KLE a (f a)) (x : Reading) :
     ∀ {k m : Nat}, k ≤ m → KLE (iter f k x) (iter f m x) := by
   intro k m
   induction m with
@@ -152,26 +152,26 @@ theorem iter_mono (f : Charge → Charge) (hf : ∀ a, KLE a (f a)) (x : Charge)
 
 /-- **Stabilization:** beyond the settling bound the orbit is constant — `fᵏx = f^kHeight x`
 for `k ≥ kHeight` (the strict-finite fixed point, `strict_finite` + `iter_propagate`). -/
-theorem iter_stable (f : Charge → Charge) (hf : ∀ a, KLE a (f a)) (x : Charge)
+theorem iter_stable (f : Reading → Reading) (hf : ∀ a, KLE a (f a)) (x : Reading)
     {k : Nat} (h : kHeight ≤ k) : iter f k x = iter f kHeight x := by
   obtain ⟨j, rfl⟩ := Nat.le.dest h
   exact iter_propagate f kHeight x (strict_finite f hf x).symm j
 
 /-- **Every orbit stage is below the settled value** `f^kHeight x`: for `k ≤ kHeight` by
 monotonicity, for `k ≥ kHeight` by stabilization. -/
-theorem iter_le_settled (f : Charge → Charge) (hf : ∀ a, KLE a (f a)) (x : Charge) (k : Nat) :
+theorem iter_le_settled (f : Reading → Reading) (hf : ∀ a, KLE a (f a)) (x : Reading) (k : Nat) :
     KLE (iter f k x) (iter f kHeight x) := by
   rcases Nat.le_total k kHeight with h | h
   · exact iter_mono f hf x h
   · rw [iter_stable f hf x h]; exact kle_refl _
 
 /-- `f^kHeight x` is the `≤ₖ`-least upper bound of `fun k => iter f k x`. -/
-theorem settled_is_omega_lub (f : Charge → Charge) (hf : ∀ a, KLE a (f a)) (x : Charge) :
+theorem settled_is_omega_lub (f : Reading → Reading) (hf : ∀ a, KLE a (f a)) (x : Reading) :
     (∀ k, KLE (iter f k x) (iter f kHeight x))
     ∧ (∀ w, (∀ k, KLE (iter f k x) w) → KLE (iter f kHeight x) w) :=
   Order.stable_value_isLUB KLE kle_refl (fun k => iter f k x) kHeight
     (iter_mono f hf x) (iter_stable f hf x)
 
-end Charge
+end Reading
 
 end Obsmetrologia

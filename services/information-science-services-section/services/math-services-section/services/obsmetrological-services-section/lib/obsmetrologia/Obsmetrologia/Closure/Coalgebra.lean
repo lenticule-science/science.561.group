@@ -81,8 +81,8 @@ def settlingEndofunctor (u v : Valuation) : Valuation :=
 @[simp] theorem settlingEndofunctor_zero (v : Valuation) :
     settlingEndofunctor M Valuation.knowledgeLeast v = M.closureOp v := by
   funext φ
-  show Charge.joinK (M.closureOp v φ) Charge.kBot = M.closureOp v φ
-  rw [Charge.joinK_comm]; exact Charge.joinK_kBot (M.closureOp v φ)
+  show Reading.joinK (M.closureOp v φ) Reading.kBot = M.closureOp v φ
+  rw [Reading.joinK_comm]; exact Reading.joinK_kBot (M.closureOp v φ)
 
 /-- **`F_U` is inflationary** — `v ≤ₖ F_U(v)`. The closure is inflationary
 (`closureOp_infl`) and joining the increment only moves further up the knowledge

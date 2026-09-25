@@ -215,7 +215,7 @@ law. -/
 theorem toBeads_condensate_empty_of_thread_nil
     [CausalLeDecision C] [DecidableRel C.reaches]
     (P : SequencingDiamondBeadPayload C) :
-    P.toBeads.thread = [] → P.toBeads.condensate = Charge.kBot :=
+    P.toBeads.thread = [] → P.toBeads.condensate = Reading.kBot :=
   P.toBeads.condensate_empty_of_thread_nil
 
 /-- The promoted diamond-bead layer reuses the existing single-pass condensate
@@ -223,7 +223,7 @@ law. -/
 theorem toBeads_condensate_single_of_passCount_eq_one
     [CausalLeDecision C] [DecidableRel C.reaches]
     (P : SequencingDiamondBeadPayload C) :
-    P.toBeads.passCount.count = 1 → P.toBeads.condensate = Charge.tTop :=
+    P.toBeads.passCount.count = 1 → P.toBeads.condensate = Reading.tTop :=
   P.toBeads.condensate_single_of_passCount_eq_one
 
 /-- The promoted diamond-bead layer reuses the existing over-occupation

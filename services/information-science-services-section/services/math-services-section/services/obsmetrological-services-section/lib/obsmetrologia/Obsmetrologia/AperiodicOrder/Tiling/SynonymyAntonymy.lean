@@ -22,7 +22,7 @@ import Obsmetrologia.Language.Positing.BigradedCohomology
 
 `τ^𝔻` (the per-firing stratum of `BigradedCohomology`'s trichotomy) is the three-constructor
 inductive `FiringType = truthOnly | falsityOnly | both`; the evidence-flip `flipFiring` is
-the action of `∼` on it, tied to `Charge.negate` via `Charge.isTruthFiring_negate`/
+the action of `∼` on it, tied to `Reading.negate` via `Reading.isTruthFiring_negate`/
 `isInconsistency_negate`. `StrongSettling` bundles a `Settling` with its `tau : FiringType`;
 `negTwist` applies `flipFiring` to `tau` and leaves the underlying cohomology class fixed
 (`gauge_fixes_inconsistency`). `StrongMLD s s' := CohEquiv s.base s'.base ∧ s.tau = s'.tau`.
@@ -70,8 +70,8 @@ theorem mem_all (τ : FiringType) : τ ∈ all := by cases τ <;> decide
 theorem card_eq_three : all.length = 3 := rfl
 
 /-- The **evidence-flip** `ε` — the action of bilattice negation `∼` on `τ^𝔻`: it swaps
-truth-only ↔ falsity-only (the `t`/`f` swap of `Charge.negate`) and **fixes** `⊤` (`⊤` is
-`∼`-fixed). The faithful three-valued projection of `Charge.negate` on the firing stratum. -/
+truth-only ↔ falsity-only (the `t`/`f` swap of `Reading.negate`) and **fixes** `⊤` (`⊤` is
+`∼`-fixed). The faithful three-valued projection of `Reading.negate` on the firing stratum. -/
 def flipFiring : FiringType → FiringType
   | truthOnly  => falsityOnly
   | falsityOnly => truthOnly
@@ -89,11 +89,11 @@ theorem flipFiring_swaps :
 /-- Witnesses antonymy as a refinement of synonymy. -/
 theorem flipFiring_moves_truthOnly : flipFiring truthOnly ≠ truthOnly := by decide
 
-/-- `flipFiring` agrees with `Charge.negate` on the `Charge`-level projection of firing type. -/
+/-- `flipFiring` agrees with `Reading.negate` on the `Reading`-level projection of firing type. -/
 theorem flipFiring_is_negate :
-    (Charge.negate Charge.tTop = Charge.tBot)   -- truthOnly ↦ falsityOnly
-    ∧ (Charge.negate Charge.tBot = Charge.tTop) -- falsityOnly ↦ truthOnly
-    ∧ (Charge.negate Charge.kTop = Charge.kTop) -- both (⊤) fixed
+    (Reading.negate Reading.tTop = Reading.tBot)   -- truthOnly ↦ falsityOnly
+    ∧ (Reading.negate Reading.tBot = Reading.tTop) -- falsityOnly ↦ truthOnly
+    ∧ (Reading.negate Reading.kTop = Reading.kTop) -- both (⊤) fixed
     ∧ flipFiring truthOnly = falsityOnly
     ∧ flipFiring falsityOnly = truthOnly
     ∧ flipFiring both = both :=
@@ -123,7 +123,7 @@ negation-invisibility at the carrier level: `∼` does not move the classifying 
     (negTwist s).tau = FiringType.flipFiring s.tau := rfl
 
 /-- **The negation-twist is an involution** `∼∼ = id` — reusing the evidence-flip involution
-(`flipFiring_flipFiring`), itself the projection of `Charge.negate_negate`. This is the
+(`flipFiring_flipFiring`), itself the projection of `Reading.negate_negate`. This is the
 `negation-involution-on-settling-category` fact `∼∼ = id` that powers antonymy's symmetry. -/
 @[simp] theorem negTwist_negTwist (s : StrongSettling) : negTwist (negTwist s) = s := by
   cases s with

@@ -18,7 +18,7 @@ introduces an `axiom`, `opaque`, or `constant`.
 * `Obsmetrologia.Articulating.Cell` — articulating's codomain; the derived four-cell partition.
 * `Obsmetrologia.Predicating`      — the morphism out of the potential cell; the predication
                                category and its object φ = (s, p, o). Category theory.
-* `Obsmetrologia.Positing`         — admits value: the FOUR bilattice of charges (= the four
+* `Obsmetrologia.Positing`         — admits value: the FOUR bilattice of readings (= the four
                                phases met as value), the valuation, the ⊥ₖ seed.
 * `Obsmetrologia.FregeanFourChu`   — the restored keystone theorem: independent
                                evidence on an oriented predication forces FOUR,
@@ -37,7 +37,7 @@ introduces an `axiom`, `opaque`, or `constant`.
 * `Obsmetrologia.Sheaf`            — settling's fixed point as a sheaf `{base, section}`;
                                **H¹ = 0** (CRDT/CALM convergence) + sheaf separation.
 * `Obsmetrologia.Four`             — the capstone: the recurring FOUR is one object (phases =
-                               charges = generators); the **Klein-four symmetry** `⟨~,−⟩`.
+                               readings = generators); the **Klein-four symmetry** `⟨~,−⟩`.
 * `Obsmetrologia.Positing.Bigraded`  — the first math structure *below* settling: two commuting
                                **nuclei** → the **nuclear quartet** (FOUR as sub-algebras).
 * `Obsmetrologia.Equality`         — the **second adjoint system** `∃^t⊣f*⊣∀^t` (truth order);

@@ -93,6 +93,6 @@ A \texttt{SquareFamily} over an index type $I$ assigns a \texttt{NuclearSquare} 
 \begin{proposition}[The family varies]\label{thm:varies}\lean{Obsmetrologia.SquareFamily.Varies}\leanok\uses{thm:square-family}
 \texttt{SquareFamily.Varies} asserts that some two fibers carry genuinely different nuclear pairs. Constant families leave automorphisms invisible; a varying family is what makes history-separation (aperiodicity) provable. \texttt{SquareFamily.fiber\_quartet} confirms that every fiber realizes the Nuclear Quartet Theorem regardless of variation.
 \end{proposition}
-\begin{example}[A concrete varying family]\label{ex:varying-family}\lean{Obsmetrologia.Charge.varyingFamily}\leanok\uses{thm:varies, thm:four-bilattice}
-On the charge knowledge-Heyting-algebra \texttt{Charge.heytingK} (with \texttt{Charge.joinNucleusK} the nucleus raising toward a bound by $\vee_k$), \texttt{Charge.varyingFamily} is a two-fiber family: fiber \texttt{true} raises toward $t$, fiber \texttt{false} toward $\top_k$. \texttt{Charge.varyingFamily\_varies} proves the $j_1$ nuclei genuinely differ --- a concrete bigraded-diamond recurrence over the finite charge bilattice.
+\begin{example}[A concrete varying family]\label{ex:varying-family}\lean{Obsmetrologia.Reading.varyingFamily}\leanok\uses{thm:varies, thm:four-bilattice}
+On the charge knowledge-Heyting-algebra \texttt{Reading.heytingK} (with \texttt{Reading.joinNucleusK} the nucleus raising toward a bound by $\vee_k$), \texttt{Reading.varyingFamily} is a two-fiber family: fiber \texttt{true} raises toward $t$, fiber \texttt{false} toward $\top_k$. \texttt{Reading.varyingFamily\_varies} proves the $j_1$ nuclei genuinely differ --- a concrete bigraded-diamond recurrence over the finite charge bilattice.
 \end{example}

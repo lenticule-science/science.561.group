@@ -8,16 +8,16 @@ import Obsmetrologia.Language.Settling.Cones
 
 **Owner ruling 2026-09-21.** Where `Evidence.lean` gave the *carrier* for a
 value plus its witnesses, this module gives the actual **measurement**: read
-a cell's charge off a trace of articulatings, by collecting which
+a cell's reading off a trace of articulatings, by collecting which
 articulatings' oriented cell (`Articulating.orientedCell`, ruled the reading
 `measure` uses — see `Predicating/Oriented.lean`) landed on the cell asked
 about, and which landed on its **contrary**.
 
 **Contrariety** (`Contrary`) is the codec's involution on predicate marks —
 "not-p" as a *different* predicate `k.c p`, not a negation operator on
-charges. A contrary *fact* is the articulation of the contrary predicate: an
+readings. A contrary *fact* is the articulation of the contrary predicate: an
 against-witness for `φ` is a for-witness of `contrary k φ`. There is **no
-denial** primitive: `no_denial` shows the only way a cell's charge ever
+denial** primitive: `no_denial` shows the only way a cell's reading ever
 carries a negative pole is that some articulating in the trace actually
 landed on the contrary cell.
 
@@ -100,24 +100,24 @@ theorem witnesses_cons_isEmpty_le (ψ : PredicationCell) (a : Articulating)
   · rw [if_neg hc]
     exact h
 
-/-! ## Measuring: the charge and evidence a trace actually shows -/
+/-! ## Measuring: the reading and evidence a trace actually shows -/
 
 /-- Measure a cell from a trace of articulatings: for-witnesses are the head
 tokens of the articulatings whose oriented cell is `φ`; against-witnesses
 those whose oriented cell is the contrary of `φ`. Always `Measured`, by
 construction. -/
-def measure (k : Contrary) (trace : List Articulating) (φ : PredicationCell) : Charged :=
-  ⟨Charge.ofSlots (!(witnesses φ trace).isEmpty) (!(witnesses (φ.contrary k) trace).isEmpty),
+def measure (k : Contrary) (trace : List Articulating) (φ : PredicationCell) : Valued :=
+  ⟨Reading.ofSlots (!(witnesses φ trace).isEmpty) (!(witnesses (φ.contrary k) trace).isEmpty),
     (witnesses φ trace, witnesses (φ.contrary k) trace)⟩
 
 /-- Measuring is always `Measured`: the value is built from exactly the
 witness lists it carries as evidence, by definition. -/
 theorem measure_measured (k : Contrary) (trace : List Articulating) (φ : PredicationCell) :
-    Charged.Measured (measure k trace φ) := rfl
+    Valued.Measured (measure k trace φ) := rfl
 
 /-- **Told nothing.** An empty trace measures ⊥ₖ everywhere. -/
 @[simp] theorem measure_nil (k : Contrary) (φ : PredicationCell) :
-    (measure k [] φ).value = Charge.kBot := rfl
+    (measure k [] φ).value = Reading.kBot := rfl
 
 /-- The value-component of `ofSlots` built from two witness-presence Bools
 combines via a knowledge-order comparison exactly when each coordinate does. -/
@@ -128,10 +128,10 @@ private theorem or_not_of_impl {p q : Bool} (h : p = true → q = true) : (!p ||
 
 private theorem leK_ofSlots_of_impl {p1 n1 p2 n2 : Bool}
     (hp : p1 = true → p2 = true) (hn : n1 = true → n2 = true) :
-    Charge.leK (Charge.ofSlots p1 n1) (Charge.ofSlots p2 n2) = true := by
-  show ((!(Charge.ofSlots p1 n1).pos || (Charge.ofSlots p2 n2).pos)
-      && (!(Charge.ofSlots p1 n1).neg || (Charge.ofSlots p2 n2).neg)) = true
-  rw [Charge.pos_ofSlots, Charge.pos_ofSlots, Charge.neg_ofSlots, Charge.neg_ofSlots,
+    Reading.leK (Reading.ofSlots p1 n1) (Reading.ofSlots p2 n2) = true := by
+  show ((!(Reading.ofSlots p1 n1).pos || (Reading.ofSlots p2 n2).pos)
+      && (!(Reading.ofSlots p1 n1).neg || (Reading.ofSlots p2 n2).neg)) = true
+  rw [Reading.pos_ofSlots, Reading.pos_ofSlots, Reading.neg_ofSlots, Reading.neg_ofSlots,
       or_not_of_impl hp, or_not_of_impl hn]
   rfl
 
@@ -140,7 +140,7 @@ can only add witnesses — for `φ` or for its contrary — never remove them, s
 the measured value only ever climbs the knowledge order. -/
 theorem measure_cons_le (k : Contrary) (a : Articulating) (trace : List Articulating)
     (φ : PredicationCell) :
-    Charge.KLE (measure k trace φ).value (measure k (a :: trace) φ).value :=
+    Reading.KLE (measure k trace φ).value (measure k (a :: trace) φ).value :=
   leK_ofSlots_of_impl (witnesses_cons_isEmpty_le φ a trace)
     (witnesses_cons_isEmpty_le (φ.contrary k) a trace)
 
@@ -152,20 +152,20 @@ theorem measure_self_pos (k : Contrary) (a : Articulating) :
     show (if a.orientedCell = a.orientedCell then a.head.token :: witnesses a.orientedCell []
         else witnesses a.orientedCell []) = a.head.token :: witnesses a.orientedCell []
     rw [if_pos rfl]
-  show (Charge.ofSlots (!(witnesses a.orientedCell [a]).isEmpty)
+  show (Reading.ofSlots (!(witnesses a.orientedCell [a]).isEmpty)
       (!(witnesses (a.orientedCell.contrary k) [a]).isEmpty)).pos = true
-  rw [hw, Charge.pos_ofSlots]
+  rw [hw, Reading.pos_ofSlots]
   rfl
 
-/-- **No denial.** The only way a measured charge ever carries a negative
+/-- **No denial.** The only way a measured reading ever carries a negative
 pole at `φ` is that some articulating in the trace actually landed on `φ`'s
 contrary — negation is never seeded, only measured. -/
 theorem no_denial (k : Contrary) (trace : List Articulating) (φ : PredicationCell)
     (h : (measure k trace φ).value.neg = true) :
     ∃ a ∈ trace, a.orientedCell = φ.contrary k := by
-  have h0 : (Charge.ofSlots (!(witnesses φ trace).isEmpty)
+  have h0 : (Reading.ofSlots (!(witnesses φ trace).isEmpty)
       (!(witnesses (φ.contrary k) trace).isEmpty)).neg = true := h
-  rw [Charge.neg_ofSlots] at h0
+  rw [Reading.neg_ofSlots] at h0
   cases hm : witnesses (φ.contrary k) trace with
   | nil => rw [hm] at h0; exact absurd h0 (by decide)
   | cons t ts =>
@@ -173,7 +173,7 @@ theorem no_denial (k : Contrary) (trace : List Articulating) (φ : PredicationCe
     obtain ⟨a, ha, hao, _⟩ := mem_witnesses (φ.contrary k) trace t hmem
     exact ⟨a, ha, hao⟩
 
-/-- The measured charged valuation: the whole trace, read pointwise as a
+/-- The measured valued valuation: the whole trace, read pointwise as a
 `CValuation` (value plus evidence at every cell). -/
 def measured (k : Contrary) (trace : List Articulating) : CValuation := measure k trace
 

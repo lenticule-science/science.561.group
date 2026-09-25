@@ -47,14 +47,14 @@ Takahashi method:
 **Curry–Howard.** `propOfTy : Valuation → PredicationCell → Ty → Prop` reads
 `arrow = →`, `prod = ∧`, `unit = True`, and its base case is not an arbitrary
 `Prop` but a real fact of the predication hyperdoctrine already built above:
-`Charge.pos (v φ) = true`, for a valuation `v : Valuation` (`PredicationCell →
-Charge`, `Charge` itself the abbrev for `Articulating.Corner`) at a cell
+`Reading.pos (v φ) = true`, for a valuation `v : Valuation` (`PredicationCell →
+Reading`, `Reading` itself the abbrev for `Articulating.Corner`) at a cell
 `φ : PredicationCell` (built from `Entity := Token`/`Predicate := Claim`, each a
 one-field wrapper of `Mark`). The base
 proposition is therefore rooted in `Mark`/`Articulating` through the same chain the
 rest of the corpus uses, not floated free. `curry_howard` exhibits a type-directed
 proof term: every closed type built from `→`,`×`,`unit` — over a cell the valuation
-charges positive — is inhabited as a proposition, the term structure (`lam`/`app`/
+readings positive — is inhabited as a proposition, the term structure (`lam`/`app`/
 `pair`/`fst`/`snd`/`star`) tracking the proof structure — terms ARE proofs.
 
 **Lambek.** The type structure is a **cartesian closed category**:
@@ -722,12 +722,12 @@ theorem church_rosser {t u v : Tm} (h1 : Red t u) (h2 : Red t v) :
 /-! ## Curry–Howard — types as propositions, terms as proofs -/
 
 /-- **Types as propositions** `propOfTy : Valuation → PredicationCell → Ty → Prop`:
-`arrow = →`, `prod = ∧`, `unit = True`, and the base case reads a real charge fact
-— `Charge.pos (v φ) = true` — instead of an arbitrary `Prop`. This is the
+`arrow = →`, `prod = ∧`, `unit = True`, and the base case reads a real reading fact
+— `Reading.pos (v φ) = true` — instead of an arbitrary `Prop`. This is the
 propositions-as-types half of Curry–Howard, grounded in the predication
 hyperdoctrine's own valuations. -/
 def propOfTy (v : Valuation) (φ : PredicationCell) : Ty → Prop
-  | Ty.base => Charge.pos (v φ) = true
+  | Ty.base => Reading.pos (v φ) = true
   | Ty.arrow A C => propOfTy v φ A → propOfTy v φ C
   | Ty.prod A C => propOfTy v φ A ∧ propOfTy v φ C
   | Ty.unit => True
@@ -739,12 +739,12 @@ def propOfTy (v : Valuation) (φ : PredicationCell) : Ty → Prop
 @[simp] theorem propOfTy_unit (v : Valuation) (φ : PredicationCell) :
     propOfTy v φ Ty.unit = True := rfl
 
-/-- **Curry–Howard inhabitation.** When the valuation `v` charges the cell `φ`
-positive (`Charge.pos (v φ) = true`), every type built from `→`, `×`, `unit` is
+/-- **Curry–Howard inhabitation.** When the valuation `v` readings the cell `φ`
+positive (`Reading.pos (v φ) = true`), every type built from `→`, `×`, `unit` is
 inhabited as a proposition — the proof is constructed by recursion on the type,
 mirroring the term constructors `lam`/`pair`/`star`. A type *is* a provable
 proposition; its proof IS a program. -/
-theorem curry_howard {v : Valuation} {φ : PredicationCell} (hB : Charge.pos (v φ) = true) :
+theorem curry_howard {v : Valuation} {φ : PredicationCell} (hB : Reading.pos (v φ) = true) :
     ∀ A : Ty, propOfTy v φ A
   | Ty.base => hB
   | Ty.arrow A C => fun _ => curry_howard hB C
@@ -821,11 +821,11 @@ Rosser confluence), and the CCC structure (terminal, product cone, exponential
 adjunction). Types ↔ propositions ↔ objects; terms ↔ proofs ↔ morphisms;
 β-reduction ↔ proof-normalization ↔ morphism-equality. -/
 structure CurryHowardLambek where
-  /-- **Types ↔ propositions** (Curry–Howard): when the valuation charges the cell
+  /-- **Types ↔ propositions** (Curry–Howard): when the valuation readings the cell
   positive, every `→/×/unit` type is an inhabited proposition; the proof is the
   program. -/
   types_are_props : ∀ {v : Valuation} {φ : PredicationCell},
-    Charge.pos (v φ) = true → ∀ A : Ty, propOfTy v φ A
+    Reading.pos (v φ) = true → ∀ A : Ty, propOfTy v φ A
   /-- **β ↔ normalization ↔ equality** (Church–Rosser): the reduction relation is
   confluent, so the normal form (the proof's normalized value / the morphism's
   canonical representative) is unique. -/
@@ -912,7 +912,7 @@ def ofCorner : Articulating.Corner → TypeFormer
   cases c <;> rfl
 
 /-- **`Articulating.Corner ≃ TypeFormer`.** The four type-formers ARE the recurring four corners —
-the same object the nuclear quartet, modal four, and bilattice charge are read as. -/
+the same object the nuclear quartet, modal four, and bilattice reading are read as. -/
 def cornerBij : Bij Articulating.Corner TypeFormer where
   to := ofCorner
   inv := toCorner
@@ -934,7 +934,7 @@ structure TypeFormerQuartetIsNuclear where
 the Curry–Howard–Lambek correspondence `{terminal=unit, product=×, exponential=→,
 dual=base}` biject with the recurring `Articulating.Corner` (the SAME four corners that index the
 nuclear quartet `(A, Fix j₁, Fix j₂, A*)`, the modal four `{neither,◇,□,both}`, and
-the bilattice charge): an explicit, proven `Bij Articulating.Corner TypeFormer`, both directions
+the bilattice reading): an explicit, proven `Bij Articulating.Corner TypeFormer`, both directions
 round-tripping to the identity, exhaustively four with no fifth corner, reusing the
 nuclear quartet's own `Articulating.Corner.card_eq_four`.
 

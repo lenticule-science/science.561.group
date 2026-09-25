@@ -6,7 +6,7 @@ import Obsmetrologia.Language.Positing.Value.PreCategory
 import Obsmetrologia.Dynamics.Flow.NSCFiring
 
 /-!
-# The KZ converse — `μ` carries content exactly where the gate is charged
+# The KZ converse — `μ` carries content exactly where the gate is valued
 
 `ClosureMonadKZ` proved the *strict* half of the weld: `mu_identity_of_cohomologyVanishes`
 collapses the closure-2-monad's multiplication `μ` to the identity wherever
@@ -22,8 +22,8 @@ This module closes the converse: it packages the antisymmetric-carrier impossibi
 maximal (`PreValueCategory`) generality, welds it to the regime/cohomology gate via the
 tower's inhabitants, and locates precisely how far the connection to `Flow.NSCFiring.IsNSC`
 (the directed-family commutation failure) can honestly be pushed — `IsNSC`'s equation is
-stated against `Closure.Scott.sup`, a *deterministic* fold that is well-posed on `Charge`
-only because `Charge.kle_antisymm` pins down least upper bounds uniquely; the germ carrier's
+stated against `Closure.Scott.sup`, a *deterministic* fold that is well-posed on `Reading`
+only because `Reading.kle_antisymm` pins down least upper bounds uniquely; the germ carrier's
 `DomBy` order has no such pin, and we prove exactly that (`germ_upper_bound_not_unique`)
 rather than force a fake bridge.
 
@@ -31,9 +31,9 @@ rather than force a fake bridge.
 
 * `no_laxSlack_of_antisymm` — the maximally general form of part (1): on **any**
   antisymmetric `PreValueCategory`, no `LaxVClosure` has lax slack anywhere. Subsumes
-  `Charge.kz_iff_strict` and `closureOp_kz_iff_strict`, phrased once at the level the
+  `Reading.kz_iff_strict` and `closureOp_kz_iff_strict`, phrased once at the level the
   germ carrier's `PreValueCategory` itself lives at.
-* `mu_content_exactly_at_charged_gate` — the biconditional-shaped bundle of part (2): the
+* `mu_content_exactly_at_valued_gate` — the biconditional-shaped bundle of part (2): the
   antisymmetric `ModalFrame` valuation carrier has identity `μ` at the vanishing-cohomology
   spine regime *and* can never realize lax slack at any regime (the gate is causally inert
   there), while the non-antisymmetric germ carrier has genuinely non-identity `μ`
@@ -43,8 +43,8 @@ rather than force a fake bridge.
 * `germ_upper_bound_not_unique` / `tally_lax_slack_is_sup_nonuniqueness` — part (3): the
   germ carrier's lax slack at the seed *is* a witnessed failure of upper-bound uniqueness —
   the directed-family-commutation-failure shape `IsNSC` needs — but `IsNSC` cannot be
-  literally instantiated there because its `sup` is a `Charge`-specific deterministic fold
-  whose good behaviour depends on `Charge.kle_antisymm`, which the germ carrier's `DomBy`
+  literally instantiated there because its `sup` is a `Reading`-specific deterministic fold
+  whose good behaviour depends on `Reading.kle_antisymm`, which the germ carrier's `DomBy`
   order does not have. Documented precisely rather than faked.
 
 ## References
@@ -59,7 +59,7 @@ namespace Obsmetrologia
 /-! ## (1) Antisymmetric carriers never carry lax slack — maximal generality
 
 `kz_strict_of_antisymm`/`kz_iff_strict_of_antisymm` (`LaxSlackDiagnosis`) already generalize
-`Charge.kz_iff_strict` to a bare relation. `Positing.Value.laxClosure_idem_of_antisymm`
+`Reading.kz_iff_strict` to a bare relation. `Positing.Value.laxClosure_idem_of_antisymm`
 restates the antisymmetric-collapse direction at the `PreValueCategory` level (the exact
 level the germ carrier's non-antisymmetric counterexample lives at). We record the direct
 corollary: on an antisymmetric `PreValueCategory`, `HasLaxSlack` is never inhabited,
@@ -70,7 +70,7 @@ instance. -/
 /-- **No lax slack on any antisymmetric pre-value carrier.** If `V.le` is antisymmetric,
 no `LaxVClosure` on `V` has lax slack at any value: the KZ inequality and inflation pin
 `T.op (T.op v) = T.op v` (`Positing.Value.laxClosure_idem_of_antisymm`), directly
-contradicting the second conjunct of `HasLaxSlack`. This subsumes `Charge.kz_iff_strict`,
+contradicting the second conjunct of `HasLaxSlack`. This subsumes `Reading.kz_iff_strict`,
 `closureOp_kz_iff_strict`, and `closureOp_no_lax_slack` as the one `PreValueCategory`-level
 statement they all specialize. -/
 theorem no_laxSlack_of_antisymm {V : Positing.Value.PreValueCategory}
@@ -89,7 +89,7 @@ theorem antisymm_of_no_laxSlack_everywhere {V : Positing.Value.PreValueCategory}
   intro hanti
   exact no_laxSlack_of_antisymm hanti T v h
 
-/-! ## (2) The gate bundle — `μ` carries content exactly where the gate is charged
+/-! ## (2) The gate bundle — `μ` carries content exactly where the gate is valued
 
 The `ModalFrame` valuation carrier's `leK` is always antisymmetric (`Valuation.leK_antisymm`),
 so by `no_laxSlack_of_antisymm`'s instance `closureOp_no_lax_slack` it can *never* realize lax
@@ -103,13 +103,13 @@ carrier and forbids slack there *at every* regime; the aperiodic corner (gate `f
 realized as genuine non-identity `μ` on the (non-antisymmetric) germ carrier. -/
 
 open Valuation Valuation.ModalFrame in
-/-- **`μ` carries content exactly where the gate is charged.** Four conjuncts, welding
+/-- **`μ` carries content exactly where the gate is valued.** Four conjuncts, welding
 `ClosureMonadKZ`'s strict half to `LaxSlackDiagnosis`/`Record`'s germ witness:
 
 1. at the vanishing-cohomology spine regime (`cohomologyVanishes (classify spineData) = true`),
    the `ModalFrame` carrier's `μ` is the identity everywhere (`closureOp_idem`);
 2. on that same (always-antisymmetric) carrier, lax slack is impossible *at every* valuation,
-   independent of which regime is fed in — the gate cannot ever charge there
+   independent of which regime is fed in — the gate cannot ever reading there
    (`closureOp_no_lax_slack`, an instance of `no_laxSlack_of_antisymm`);
 3. at the cohomology-non-vanishing aperiodic corner (`cohomologyVanishes aperiodic = false`),
    the germ carrier's `μ` (the tally closure) is genuinely non-identity at the seed
@@ -118,11 +118,11 @@ open Valuation Valuation.ModalFrame in
    (`Record.germ_order_not_antisymm`) — the exact obstruction `no_laxSlack_of_antisymm`
    identifies as necessary.
 
-So the lax `μ` is non-identity only where the carrier both sits at a cohomology-charged
+So the lax `μ` is non-identity only where the carrier both sits at a cohomology-valued
 regime corner *and* has stopped being antisymmetric — and every antisymmetric carrier in the
-corpus (`ModalFrame`'s valuations, `Charge`, `Record`) is immune to the gate regardless of
+corpus (`ModalFrame`'s valuations, `Reading`, `Record`) is immune to the gate regardless of
 regime. -/
-theorem mu_content_exactly_at_charged_gate (M : ModalFrame) :
+theorem mu_content_exactly_at_valued_gate (M : ModalFrame) :
     (cohomologyVanishes (classify spineData) = true
       ∧ ∀ v : Valuation, closureOp M (closureOp M v) = closureOp M v)
     ∧ (∀ v : Valuation,
@@ -140,15 +140,15 @@ theorem mu_content_exactly_at_charged_gate (M : ModalFrame) :
 
 `Flow.NSCFiring.IsNSC op S` compares `op (Closure.Scott.sup S.elems)` against
 `Closure.Scott.sup (S.elems.map op)` — a genuine equation between two applications of the
-*same* deterministic function `Closure.Scott.sup : List Charge → Charge`. That function is
-well-posed as "the" supremum (not merely *an* upper bound) because `Charge.kle_antisymm`
+*same* deterministic function `Closure.Scott.sup : List Reading → Reading`. That function is
+well-posed as "the" supremum (not merely *an* upper bound) because `Reading.kle_antisymm`
 forces any two mutual upper bounds of a family to coincide.
 
 The germ carrier's `DomBy` order does not have that. We prove the precise failure: a bounded
 family on the germ carrier can have **two distinct** upper bounds — so no order-theoretic
-selection of "the" supremum can be canonical there the way `Charge.kle_antisymm` makes
-`Closure.Scott.sup` canonical on `Charge`. `IsNSC` therefore has no honest instantiation at
-the germ carrier's type `Nat → Record`: not merely because the type differs from `Charge`,
+selection of "the" supremum can be canonical there the way `Reading.kle_antisymm` makes
+`Closure.Scott.sup` canonical on `Reading`. `IsNSC` therefore has no honest instantiation at
+the germ carrier's type `Nat → Record`: not merely because the type differs from `Reading`,
 but because the *shape* of equation it states — comparing two evaluations of a single
 deterministic sup-selecting function — presupposes exactly the antisymmetry the germ carrier
 lacks. What *does* transport is the underlying phenomenon: the germ closure's failure of
@@ -158,7 +158,7 @@ idempotence at the seed is itself an instance of the same mutual-upper-bound
 /-- **The germ carrier has no unique upper bound — the reason `IsNSC`'s `sup` cannot be
 canonically transported.** The two witnesses of `Record.germ_order_not_antisymm` are both
 upper bounds (via `DomBy`) of the two-element family containing them, yet distinct: unlike
-`Closure.Scott.sup` on `Charge` (canonical by `Charge.kle_antisymm`), no order-theoretic
+`Closure.Scott.sup` on `Reading` (canonical by `Reading.kle_antisymm`), no order-theoretic
 selection of "the" bound of a germ family is forced. -/
 theorem germ_upper_bound_not_unique :
     ∃ (S : List (Nat → Record)) (u v : Nat → Record),
@@ -181,7 +181,7 @@ theorem germ_upper_bound_not_unique :
 /-- **The germ carrier's lax slack at the seed is an `IsNSC`-shaped fact.** The tally
 closure's double and single iterate at the seed mutually dominate (`DomBy` both ways) yet
 differ — restating `tally_lax_slack` via `laxSlack_witnesses_nonantisymmetry`. This is
-exactly the failure-of-commutation-with-a-would-be-join shape `IsNSC` isolates on `Charge`
+exactly the failure-of-commutation-with-a-would-be-join shape `IsNSC` isolates on `Reading`
 (two mutually-bounding, non-equal candidates for "the" settled value at a stage), instanced
 on the one carrier in the corpus where it survives past the strict/Scott collapse. -/
 theorem tally_lax_slack_is_sup_nonuniqueness :
@@ -195,9 +195,9 @@ theorem tally_lax_slack_is_sup_nonuniqueness :
     Record.germPreValue.bot Record.tally_lax_slack
 
 /-- **Why `Flow.NSCFiring.IsNSC` stops at the germ carrier, precisely.** Bundles the
-boundary: `Charge`'s order is antisymmetric (`Charge.kle_antisymm`, imported transitively;
+boundary: `Reading`'s order is antisymmetric (`Reading.kle_antisymm`, imported transitively;
 recorded here via `no_laxSlack_of_antisymm`'s hypothesis being satisfiable there — every
-`Charge.Closure` has no NSC firing over the finite carrier, `no_nsc_firing_of_closure`), so
+`Reading.Closure` has no NSC firing over the finite carrier, `no_nsc_firing_of_closure`), so
 `Closure.Scott.sup` is a canonical deterministic fold and `IsNSC`'s equation is well-posed;
 the germ carrier's order is *not* antisymmetric and provably has non-unique upper bounds
 (`germ_upper_bound_not_unique`), so no canonical `sup : List (Nat → Record) → (Nat → Record)`
@@ -206,7 +206,7 @@ phenomenon (mutual, non-equal boundedness at a stage) is what the germ carrier's
 lax slack witnesses (`tally_lax_slack_is_sup_nonuniqueness`). The connection to `IsNSC` is
 real at the level of phenomenon and blocked at the level of literal type instantiation. -/
 theorem laxSlack_is_nsc_shaped_not_nsc_typed :
-    (∀ (cl : Charge.Closure) (S : Closure.Scott.DirectedFamily), ¬ Flow.NSCFiring.IsNSC cl.op S)
+    (∀ (cl : Reading.Closure) (S : Closure.Scott.DirectedFamily), ¬ Flow.NSCFiring.IsNSC cl.op S)
     ∧ (∃ (S : List (Nat → Record)) (u v : Nat → Record),
         (∀ x ∈ S, Record.DomBy x u) ∧ (∀ x ∈ S, Record.DomBy x v) ∧ u ≠ v)
     ∧ (Record.DomBy

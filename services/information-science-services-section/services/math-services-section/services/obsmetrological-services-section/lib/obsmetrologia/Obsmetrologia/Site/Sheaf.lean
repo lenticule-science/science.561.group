@@ -5,7 +5,7 @@ import Obsmetrologia.Language.Predicating.Quantifying
 
 Settling packages its fixed point as a **sheaf** `{base, section}`: the
 value-saturated base of cells together with the globally agreeing **section** — the
-settled charge at each cell. Its cohomology:
+settled reading at each cell. Its cohomology:
 
 * **H⁰** — the global section realized; a count of the *designated* (settled-true)
   cells, the fixed point settling reaches.
@@ -21,16 +21,16 @@ join-semilattice). This module derives precisely that, plus sheaf **separation**
 
 namespace Obsmetrologia
 
-/-- The settling sheaf: its global section is a charge at every cell of the base —
+/-- The settling sheaf: its global section is a reading at every cell of the base —
 H⁰ realized, the settled valuation read as one coherent whole. -/
 structure Sheaf where
   section_ : Valuation
 
 namespace Sheaf
 
-/-- A cell is **designated** when its settled charge is truth-top `t` (supported,
+/-- A cell is **designated** when its settled reading is truth-top `t` (supported,
 no counter-evidence). H⁰ is the extent of the designated cells. -/
-def designated (S : Sheaf) (φ : PredicationCell) : Prop := S.section_ φ = Charge.tTop
+def designated (S : Sheaf) (φ : PredicationCell) : Prop := S.section_ φ = Reading.tTop
 
 end Sheaf
 
@@ -39,34 +39,34 @@ end Sheaf
 namespace Valuation
 
 theorem joinK_comm' (v w : Valuation) : joinK v w = joinK w v := by
-  funext φ; exact Charge.joinK_comm (v φ) (w φ)
+  funext φ; exact Reading.joinK_comm (v φ) (w φ)
 theorem joinK_idem' (v : Valuation) : joinK v v = v := by
-  funext φ; exact Charge.joinK_idem (v φ)
+  funext φ; exact Reading.joinK_idem (v φ)
 theorem joinK_assoc' (v w u : Valuation) : joinK (joinK v w) u = joinK v (joinK w u) := by
-  funext φ; exact Charge.joinK_assoc (v φ) (w φ) (u φ)
+  funext φ; exact Reading.joinK_assoc (v φ) (w φ) (u φ)
 
 /-- Each section sits below the merge — the merge is an upper bound. -/
 theorem le_joinK_left (v w : Valuation) : leK v (joinK v w) :=
-  fun φ => Charge.le_joinK_left (v φ) (w φ)
+  fun φ => Reading.le_joinK_left (v φ) (w φ)
 theorem le_joinK_right (v w : Valuation) : leK w (joinK v w) :=
-  fun φ => Charge.le_joinK_right (v φ) (w φ)
+  fun φ => Reading.le_joinK_right (v φ) (w φ)
 
 /-- **Gluing = least upper bound.** The merge of two sections is the *least* section
 above both: local settlements glue to a unique global section, no obstruction. -/
 theorem section_lub (v w u : Valuation) (hv : leK v u) (hw : leK w u) : leK (joinK v w) u :=
-  fun φ => Charge.joinK_le (v φ) (w φ) (u φ) (hv φ) (hw φ)
+  fun φ => Reading.joinK_le (v φ) (w φ) (u φ) (hv φ) (hw φ)
 
 end Valuation
 
 /-! ## H¹ = 0 — CRDT/CALM convergence (order-independent merge) -/
 
-namespace Charge
+namespace Reading
 
 /-- **Vanishing H¹ (CRDT/CALM form).** The knowledge-join of a list of deltas
 depends only on the *set* of deltas — not their order or multiplicity: lists with
-the same membership merge to the same charge. Deltas integrate without
+the same membership merge to the same reading. Deltas integrate without
 coordination. This is exactly H¹ = 0 in the finite regime. -/
-theorem joinList_congr (l l' : List Charge) (h : ∀ a, a ∈ l ↔ a ∈ l') :
+theorem joinList_congr (l l' : List Reading) (h : ∀ a, a ∈ l ↔ a ∈ l') :
     joinList l = joinList l' := by
   apply kle_antisymm
   · exact joinList_le _ l (fun a ha => le_joinList a l' ((h a).1 ha))
@@ -74,7 +74,7 @@ theorem joinList_congr (l l' : List Charge) (h : ∀ a, a ∈ l ↔ a ∈ l') :
 
 /-- Merging a delta already absorbed changes nothing — idempotent integration: the
 list `a :: l` and `l` have the same element set when `a ∈ l`. -/
-theorem joinList_cons_mem (a : Charge) (l : List Charge) (ha : a ∈ l) :
+theorem joinList_cons_mem (a : Reading) (l : List Reading) (ha : a ∈ l) :
     joinList (a :: l) = joinList l :=
   joinList_congr (a :: l) l (fun b => by
     constructor
@@ -84,7 +84,7 @@ theorem joinList_cons_mem (a : Charge) (l : List Charge) (ha : a ∈ l) :
       · exact hb'
     · intro hb; exact List.mem_cons.2 (Or.inr hb))
 
-end Charge
+end Reading
 
 /-! ## Separation — a section is determined by a cover -/
 

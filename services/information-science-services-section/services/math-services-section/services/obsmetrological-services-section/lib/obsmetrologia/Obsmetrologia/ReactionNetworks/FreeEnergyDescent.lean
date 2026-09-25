@@ -14,7 +14,7 @@ total and the soup terminates. This discharges the survey's "thermodynamic cost 
 reaction" line in the discrete, count-only regime (no rates yet — those are
 `MassActionRate`).
 
-The carrier differs from `FreeEnergyLyapunov` (count states, not the `Charge` settling
+The carrier differs from `FreeEnergyLyapunov` (count states, not the `Reading` settling
 orbit), so this is the *reaction-regime instance* of the H-theorem, proved directly, not
 an import of its theorems.
 

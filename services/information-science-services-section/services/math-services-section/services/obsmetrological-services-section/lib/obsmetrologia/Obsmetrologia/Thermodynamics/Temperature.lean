@@ -1,5 +1,5 @@
 import Obsmetrologia.Dynamics.Flow.FreeEnergyLyapunov
-import Obsmetrologia.CausalSets.Support.Charged
+import Obsmetrologia.CausalSets.Support.Valued
 import Obsmetrologia.AperiodicOrder.Tiling.Percolation
 import Obsmetrologia.Cohomology.AntiLandauerEntropy
 import Obsmetrologia.Calculus.Probability.Stochastic
@@ -12,7 +12,7 @@ import Obsmetrologia.ReactionNetworks.DetailedBalance
 This module gives the first small bridge between the zero-temperature Lyapunov
 flow and stochastic settling. It keeps the construction at the level already
 available in the library: contradiction creation is counted by the gauge orbit or
-by a charged causal collision, discharge is the one-step drop of the `Nat`
+by a valued causal collision, discharge is the one-step drop of the `Nat`
 free-energy deficit, and positive temperature is represented as a value in an
 abstract stochastic carrier when creation and discharge are balanced.
 
@@ -58,31 +58,31 @@ open Probability.Stochastic
 
 /-! ## Creation and discharge -/
 
-/-- The per-gauge-orbit held-`⊤` creation count: the number of inconsistent charges
-seen across the D8 orbit of a charge. -/
-def gaugeTopCreationCount (a : Charge) : Nat :=
-  List.countP (fun c => Charge.isInconsistency c) (List.map (fun g => D4.D8.act g a) D4.D8.all)
+/-- The per-gauge-orbit held-`⊤` creation count: the number of inconsistent readings
+seen across the D8 orbit of a reading. -/
+def gaugeTopCreationCount (a : Reading) : Nat :=
+  List.countP (fun c => Reading.isInconsistency c) (List.map (fun g => D4.D8.act g a) D4.D8.all)
 
 /-- The D8 gauge orbit creates held-`⊤` at the quarter-rate already proved by the
 percolation front. -/
-theorem gauge_top_creation_quarter (a : Charge) :
+theorem gauge_top_creation_quarter (a : Reading) :
     gaugeTopCreationCount a * 4 = D4.D8.all.length := by
   unfold gaugeTopCreationCount
   exact AperiodicOrder.Tiling.condensate_baserate_quarter a
 
-/-- A causal collision of contradictory charges mints held `⊤` at the target event. -/
+/-- A causal collision of contradictory readings mints held `⊤` at the target event. -/
 theorem collision_top_minted {E : Type} (le : E → E → Bool) (a₁ a₂ z : E)
     (h₁ : le a₁ z = true) (h₂ : le a₂ z = true) :
-    CausalSets.Support.Charged.emit2 le a₁ Charge.tTop a₂ Charge.tBot z =
-      Charge.kTop :=
-  CausalSets.Support.Charged.collision_conflict le a₁ a₂ z h₁ h₂
+    CausalSets.Support.Valued.emit2 le a₁ Reading.tTop a₂ Reading.tBot z =
+      Reading.kTop :=
+  CausalSets.Support.Valued.collision_conflict le a₁ a₂ z h₁ h₂
 
 /-- A bundled causal-collision witness that keeps the event type and the two
 incoming contradictory sources. -/
 structure CollisionTopMint where
   /-- The event carrier of the causal collision. -/
   Event : Type
-  /-- The finite causal reachability test used by the charged support. -/
+  /-- The finite causal reachability test used by the valued support. -/
   le : Event → Event → Bool
   /-- The positive source. -/
   positive : Event
@@ -99,8 +99,8 @@ namespace CollisionTopMint
 
 /-- The bundled collision mints held `⊤` at its target. -/
 theorem mintsTop (m : CollisionTopMint) :
-    CausalSets.Support.Charged.emit2 m.le m.positive Charge.tTop
-        m.negative Charge.tBot m.target = Charge.kTop :=
+    CausalSets.Support.Valued.emit2 m.le m.positive Reading.tTop
+        m.negative Reading.tBot m.target = Reading.kTop :=
   collision_top_minted m.le m.positive m.negative m.target
     m.positive_reaches m.negative_reaches
 
@@ -109,8 +109,8 @@ end CollisionTopMint
 /-- Upstream evidence for held-`⊤` creation: either a D8 gauge orbit or a concrete
 causal collision. -/
 inductive TopCreationSource where
-  /-- Gauge-orbit creation from a charge. -/
-  | gauge (a : Charge)
+  /-- Gauge-orbit creation from a reading. -/
+  | gauge (a : Reading)
   /-- Causal collision creation from contradictory sources. -/
   | collision (m : CollisionTopMint)
 
@@ -123,14 +123,14 @@ def count : TopCreationSource → Nat
   | collision _ => 1
 
 /-- Gauge-source counts satisfy the D8 quarter-rate. -/
-theorem gauge_count_quarter (a : Charge) :
+theorem gauge_count_quarter (a : Reading) :
     count (gauge a) * 4 = D4.D8.all.length :=
   gauge_top_creation_quarter a
 
 /-- Collision-source evidence really mints held `⊤`. -/
 theorem collision_mintsTop (m : CollisionTopMint) :
-    CausalSets.Support.Charged.emit2 m.le m.positive Charge.tTop
-        m.negative Charge.tBot m.target = Charge.kTop :=
+    CausalSets.Support.Valued.emit2 m.le m.positive Reading.tTop
+        m.negative Reading.tBot m.target = Reading.kTop :=
   m.mintsTop
 
 /-- Every retained creation source has positive `Nat` creation count. -/
@@ -149,7 +149,7 @@ end TopCreationSource
 
 /-- The one-step discharge rate of the hard closure flow: the free-energy drop
 between step `n` and step `n + 1`. -/
-def freeEnergyDrop (c : Charge.Closure) (seed : Valuation)
+def freeEnergyDrop (c : Reading.Closure) (seed : Valuation)
     (cells : List PredicationCell) (n : Nat) : Nat :=
   Valuation.freeEnergy c seed cells n - Valuation.freeEnergy c seed cells (n + 1)
 
@@ -176,7 +176,7 @@ structure ZeroTemperatureFlow where
   /-- Zero temperature has no held-`⊤` creation. -/
   zero_creation : ZeroCreation creation
   /-- The hard closure being iterated. -/
-  closure : Charge.Closure
+  closure : Reading.Closure
   /-- The seed valuation. -/
   seed : Valuation
   /-- The finite support used by the free-energy ledger. -/
@@ -218,7 +218,7 @@ end ZeroTemperatureFlow
 /-- The canonical zero-temperature/no-creation endpoint recovers the
 Nat-valued monotone Lyapunov descent package. -/
 theorem zero_temperature_recovers_nat_lyapunov
-    (c : Charge.Closure) (seed : Valuation) (cells : List PredicationCell) :
+    (c : Reading.Closure) (seed : Valuation) (cells : List PredicationCell) :
     (∀ n, Valuation.freeEnergy c seed cells (n + 1) ≤
         Valuation.freeEnergy c seed cells n) ∧
       (∀ n φ, φ ∈ cells →
@@ -231,7 +231,7 @@ theorem zero_temperature_recovers_nat_lyapunov
   Valuation.free_energy_is_lyapunov c seed cells
 
 /-- A firing step has positive free-energy discharge. -/
-theorem freeEnergyDrop_pos_of_fires (c : Charge.Closure) (seed : Valuation)
+theorem freeEnergyDrop_pos_of_fires (c : Reading.Closure) (seed : Valuation)
     (cells : List PredicationCell) (n : Nat) (φ : PredicationCell)
     (hmem : φ ∈ cells)
     (hfire : Valuation.fenOrbit c seed n φ ≠ Valuation.fenOrbit c seed (n + 1) φ) :
@@ -244,7 +244,7 @@ theorem freeEnergyDrop_pos_of_fires (c : Charge.Closure) (seed : Valuation)
 time, and fired cell instead of projecting immediately to a scalar discharge. -/
 structure FreeEnergyFiring where
   /-- The hard closure being iterated. -/
-  closure : Charge.Closure
+  closure : Reading.Closure
   /-- The seed valuation. -/
   seed : Valuation
   /-- The finite support used by the free-energy ledger. -/
@@ -499,7 +499,7 @@ theorem stationary_transition_produces_landauer_and_discharge
     (K : MarkovKernel S V) (π : S → V.carrier) (s : S)
     (hstat : IsStationary K π) (N : Cohomology.CoverNerve)
     (hload : AperiodicOrder.Tiling.loadBearing N)
-    (c : Charge.Closure) (seed : Valuation) (cells : List PredicationCell)
+    (c : Reading.Closure) (seed : Valuation) (cells : List PredicationCell)
     (n : Nat) (φ : PredicationCell) (hmem : φ ∈ cells)
     (hfire : Valuation.fenOrbit c seed n φ ≠ Valuation.fenOrbit c seed (n + 1) φ) :
     Balanced (stationaryFlux K π s) ∧
@@ -518,7 +518,7 @@ theorem detailed_balance_transition_produces_landauer_and_discharge
     (hrev : ∀ z o, V.mul (π z) (K.P z o) = V.mul (π o) (K.P o z))
     (hrow : ∀ o, K.sum (fun z => K.P o z) = V.one) (s : S)
     (N : Cohomology.CoverNerve) (hload : AperiodicOrder.Tiling.loadBearing N)
-    (c : Charge.Closure) (seed : Valuation) (cells : List PredicationCell)
+    (c : Reading.Closure) (seed : Valuation) (cells : List PredicationCell)
     (n : Nat) (φ : PredicationCell) (hmem : φ ∈ cells)
     (hfire : Valuation.fenOrbit c seed n φ ≠ Valuation.fenOrbit c seed (n + 1) φ) :
     Balanced (stationaryFlux K π s) ∧

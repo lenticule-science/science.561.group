@@ -50,7 +50,7 @@ namespace Obsmetrologia
 namespace Valuation
 namespace ModalFrame
 
-open Charge
+open Reading
 
 variable (M : ModalFrame)
 
@@ -113,7 +113,7 @@ pin `μ` to the identity. -/
 /-- **KZ inequality ⟺ strict idempotence, on the thin valuation poset.** Given the KZ
 inequality `Cl(Cl v) ≤ₖ Cl v` (and inflation `Cl v ≤ₖ Cl(Cl v)`), antisymmetry of the
 valuation order forces strict idempotence `Cl(Cl v) = Cl v`, and conversely. The non-identity `μ` survives only where antisymmetry fails. Mirrors
-`Charge.kz_iff_strict` at the valuation level. -/
+`Reading.kz_iff_strict` at the valuation level. -/
 theorem closureOp_kz_iff_strict (v : Valuation) :
     leK (closureOp M (closureOp M v)) (closureOp M v)
       ↔ closureOp M (closureOp M v) = closureOp M v := by
@@ -220,7 +220,7 @@ The two headline theorems are exposed at the top-level `Obsmetrologia` namespace
 fully-qualified paths the corpus spec names. They restate the `ModalFrame`-scoped
 proofs verbatim. -/
 
-open Valuation Valuation.ModalFrame Charge in
+open Valuation Valuation.ModalFrame Reading in
 /-- **The closure 2-monad is KZ / lax-idempotent (Kelly–Lack K1).** See
 `Obsmetrologia.Valuation.ModalFrame.closure_kz_lax_idempotent_modal`: at every valuation
 `v`, the full 1-categorical KZ projection `(η inflation, μ collapse, the K1 unit-triangle

@@ -1,13 +1,13 @@
 \section{The contradiction core: a defect is a colouring conflict}
 
 This subgraph identifies two fibers over the same claim-site: bilattice
-inconsistency, carried by held $\top$ (\texttt{Charge.isInconsistency}), and
+inconsistency, carried by held $\top$ (\texttt{Reading.isInconsistency}), and
 graph conflict, carried by a monochromatic edge.  A proper colouring is the
 consistent regime; a clash lands in $\top$ by knowledge-join.  The first three
 nodes are green in the \texttt{WeaveDraft} carrier.
 
 \begin{theorem}[A mis-crossing is inconsistent]\label{thm:miscrossing-inconsistency}\lean{Obsmetrologia.AperiodicOrder.Tiling.miscrossing_isInconsistency}\leanok\uses{thm:miscrossing-top, thm:defect-is-inconsistency-sheaf}
-A mis-crossing's charge $\top_k$ satisfies \texttt{Charge.isInconsistency}: it is a
+A mis-crossing's charge $\top_k$ satisfies \texttt{Reading.isInconsistency}: it is a
 \emph{monochromatic edge} of the crossing graph --- the knowledge-join $\vee_k$ of the two
 clashing over-demands lands on $\top$ --- hence a section of the inconsistency sheaf, the
 conflict the FOUR holds without explosion. Proved (\texttt{miscrossing\_isInconsistency}).
@@ -22,7 +22,7 @@ whose inconsistency sheaf vanishes (\texttt{section\_zero\_of\_consistent}). Pro
 
 \begin{theorem}[The mirror is the bilattice gauge]\label{thm:mirror-is-gauge}\lean{Obsmetrologia.AperiodicOrder.Tiling.overUnder_swap_fixes_defect}\leanok\uses{thm:overunder-negate, thm:miscrossing-inconsistency}
 The over/under flip (Belnap negation $\sim$) leaves the contradiction content fixed
-(\texttt{Charge.isInconsistency\_negate}), so the defect locus is gauge-invariant --- the
+(\texttt{Reading.isInconsistency\_negate}), so the defect locus is gauge-invariant --- the
 mirror's fixed $\top$-seam. This is the textile face of \texttt{gauge\_fixes\_inconsistency}:
 the recto/verso mirror swaps $t \leftrightarrow f$ but never creates or erases a $\top$.
 Proved (\texttt{overUnder\_swap\_fixes\_defect}).

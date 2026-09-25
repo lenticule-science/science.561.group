@@ -170,7 +170,7 @@ theorem delta_mod_two (f g : Cochain E) (hfg : ∀ l, f l % 2 = g l % 2) :
 
 /-- **A purely-even obstruction is mod-two trivial in every degree.** The coboundary
 of a `2`-divisible cochain vanishes mod two everywhere: pure multiplicity — the record
-mass beyond the idempotent support — carries no parity charge at any degree. -/
+mass beyond the idempotent support — carries no parity reading at any degree. -/
 theorem even_obstruction_mod_two_trivial (ψ : Cochain E) (σ : List E) :
     delta (fun l => 2 * ψ l) σ % 2 = 0 := by
   rw [delta_mod_two (fun l => 2 * ψ l) (fun _ => 0) (fun l => by omega) σ, delta_zero]

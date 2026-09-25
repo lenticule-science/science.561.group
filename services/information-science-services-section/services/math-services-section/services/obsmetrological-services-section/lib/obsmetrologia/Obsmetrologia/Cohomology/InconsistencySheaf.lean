@@ -28,7 +28,7 @@ This module formalizes the **inconsistency sheaf**, the corpus node
 `F_U^{(⊤)}` is the `dTop`-side of the wave-3 split already built in
 `SettlingAssociatedSheaf`: a section is an `AssocSheaf.Cochain = PredicationCell → Int`
 (Lean-core `Int` = ℤ) that **vanishes off the `dTop` mask** (`AssocSheaf.dTop`, designated
-= `{⊤}`, agreeing with `Charge.isInconsistency`). We do **not** introduce a new cochain
+= `{⊤}`, agreeing with `Reading.isInconsistency`). We do **not** introduce a new cochain
 type or a new mask — `F_top := AssocSheaf.Cochain supported on dTop`. Restriction is
 `AssocSheaf.restrict (dTop v)` (= the projection `AssocSheaf.pi v`), inherited verbatim, so
 the presheaf laws are the inherited `restrict_id`/`restrict_comp`.
@@ -204,12 +204,12 @@ theorem topVoid_h0top_zero (v : Valuation) (cells : List PredicationCell)
   | nil => rfl
   | cons φ cells ih => simp [h φ, ih]
 
-/-- `H0top` counts exactly the `Charge.isInconsistency` cells, and is **positive iff** there
+/-- `H0top` counts exactly the `Reading.isInconsistency` cells, and is **positive iff** there
 is inconsistency-content (`BigradedCohomology.inconsistencyContent`) — `H⁰ = 0 ⟺ no ⊤-cell`,
 i.e. the consistent case where `F_top = 0`. -/
 theorem h0top_is_inconsistency_count (v : Valuation) (cells : List PredicationCell) :
     -- the count is by the ⊤-mask, which is exactly isInconsistency
-    H0top v cells = cells.countP (fun φ => Charge.isInconsistency (v φ))
+    H0top v cells = cells.countP (fun φ => Reading.isInconsistency (v φ))
     -- and it is positive iff there is some ⊤-cell in the support
     ∧ (0 < H0top v cells ↔ inconsistencyContent cells v = true) := by
   refine ⟨rfl, ?_⟩
@@ -255,7 +255,7 @@ theorem inconsistency_cohomology (r : ClosureRegime)
     (hr : Obsmetrologia.cohomologyVanishes r = true) (v : Valuation)
     (cells : List PredicationCell) :
     -- (H⁰ counts settled ⊤-cells, = isInconsistency count, positive iff inconsistency-content)
-    (H0top v cells = cells.countP (fun φ => Charge.isInconsistency (v φ))
+    (H0top v cells = cells.countP (fun φ => Reading.isInconsistency (v φ))
       ∧ (0 < H0top v cells ↔ inconsistencyContent cells v = true))
     -- (regime gate) cohomology vanishes ⟺ strict or scott
     ∧ (Obsmetrologia.cohomologyVanishes r = true ↔

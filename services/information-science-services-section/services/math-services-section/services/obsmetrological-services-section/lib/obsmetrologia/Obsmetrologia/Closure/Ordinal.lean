@@ -110,7 +110,7 @@ parameters, exactly as `ClosureRegimeData` did; only `finiteBase` was upgraded t
 specifically: `Ord.limit` only ever takes a `Nat`-indexed fundamental sequence, so
 *every* value this type can construct already carries a witness that its own cofinality
 is countable. Unlike `scottContinuous` (a property of the settling process being
-classified at a limit stage, external data — see `Charge.settled_is_omega_lub`
+classified at a limit stage, external data — see `Reading.settled_is_omega_lub`
 for a case where it is established), `countableCofinality` is not free: it is forced, and
 `false` never describes an `Ord` built in this system. Consequently
 `ClosureRegime.aperiodic` (`κ ≥ ω₁`, uncountable cofinality) is not merely unbuilt but

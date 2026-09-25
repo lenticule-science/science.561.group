@@ -32,7 +32,7 @@ Each link is a *reuse* of an already-derived corpus theorem, not a fresh postula
 
 * **`H¹ = 0`** is `Cohomology.h1_vanishes` — every agreeing family of local sections glues
   to a unique global section (`SettlingCohomologyH1`).
-* **order-independent merge** is `Charge.joinList_congr` — the knowledge-join of a list of
+* **order-independent merge** is `Reading.joinList_congr` — the knowledge-join of a list of
   deltas depends only on the *set* of deltas, not their order or multiplicity (`Sheaf`).
   This is exactly *"deltas integrate without coordination."*
 * **confluence** is `confluent_joinK` — for any two valuations the join `u ∨ₖ w` is a
@@ -47,7 +47,7 @@ Each link is a *reuse* of an already-derived corpus theorem, not a fresh postula
 ## CALM — monotone orbit and order-independent merge
 
 `calm_monotone_coordination_free` bundles `ModalFrame.orbit_monotone` (the closure orbit is
-`≤ₖ`-monotone — no retraction) with `Charge.joinList_congr` (order-independent merge) as a
+`≤ₖ`-monotone — no retraction) with `Reading.joinList_congr` (order-independent merge) as a
 conjunction, not an implication between the two — see `calm_convergence_facts`.
 `calm_fiber_merge_order_independent` derives the merge fact from the frame's own structure:
 `ModalFrame.closureOp_apply` shows the closure step at a cell literally *is* `joinList` over
@@ -98,17 +98,17 @@ theorem confluent_joinK (u w : Valuation) : Confluent u w :=
 /-! ## CRDT convergence — order-independent merge
 
 `settling-cohomology.md`: `H¹` vanishing *is* CRDT convergence. The merge of a list of
-deltas is independent of merge order/multiplicity — `Charge.joinList_congr` — so replicas
+deltas is independent of merge order/multiplicity — `Reading.joinList_congr` — so replicas
 that integrate the same set of deltas converge to the same value without coordination. -/
 
 /-- **CRDT convergence (order-independent delta merge).** The knowledge-join of a list of
 deltas depends only on the *set* of deltas, not the order or multiplicity in which they are
-integrated: lists with the same membership merge to the same charge. Re-export of
-`Charge.joinList_congr` — *"deltas integrate without coordination"* = `H¹ = 0` in the
+integrated: lists with the same membership merge to the same reading. Re-export of
+`Reading.joinList_congr` — *"deltas integrate without coordination"* = `H¹ = 0` in the
 finite regime. -/
-theorem crdt_merge_order_independent (l l' : List Charge)
-    (h : ∀ a, a ∈ l ↔ a ∈ l') : Charge.joinList l = Charge.joinList l' :=
-  Charge.joinList_congr l l' h
+theorem crdt_merge_order_independent (l l' : List Reading)
+    (h : ∀ a, a ∈ l ↔ a ∈ l') : Reading.joinList l = Reading.joinList l' :=
+  Reading.joinList_congr l l' h
 
 /-! ## The convergence readings of the confluent modal settling
 
@@ -130,7 +130,7 @@ model):
 * **(H¹ = 0)** every agreeing family of local `F_U`-sections glues to a unique global section
   (`Cohomology.h1_vanishes`);
 * **(order-independent merge)** the delta merge is independent of order/multiplicity
-  (`Charge.joinList_congr`) — the CRDT form of `H¹ = 0`;
+  (`Reading.joinList_congr`) — the CRDT form of `H¹ = 0`;
 * **(confluence)** for any `u`, `w` the join `u ∨ₖ w` is a common upper bound (`Confluent u w`);
   confluence is *total* because the lub always exists;
 * **(unique settled fixed point)** quiescence is being a closure fixed point
@@ -147,7 +147,7 @@ theorem calm_convergence_facts (M : ModalFrame) :
         (∃ g : Cochain, Coboundary D g)
           ∧ (∀ g g' : Cochain, Coboundary D g → Coboundary D g' → g = g'))
     -- (order-independent merge) the CRDT delta merge is order/multiplicity independent
-    ∧ (∀ (l l' : List Charge), (∀ a, a ∈ l ↔ a ∈ l') → Charge.joinList l = Charge.joinList l')
+    ∧ (∀ (l l' : List Reading), (∀ a, a ∈ l ↔ a ∈ l') → Reading.joinList l = Reading.joinList l')
     -- (confluence) divergent settling paths join at the knowledge-join (the lub witness)
     ∧ (∀ u w : Valuation, Confluent u w)
     -- (unique settled fixed point) quiescence = closure fixed point, and it is unique
@@ -155,7 +155,7 @@ theorem calm_convergence_facts (M : ModalFrame) :
     ∧ (∀ v v' : Valuation, M.closureOp v = v → M.closureOp v' = v' →
         leK v v' → leK v' v → v = v') :=
   ⟨fun D hcoc => h1_vanishes D hcoc,
-   fun l l' h => Charge.joinList_congr l l' h,
+   fun l l' h => Reading.joinList_congr l l' h,
    fun u w => confluent_joinK u w,
    fun _ => Iff.rfl,
    fun _ _ _ _ hle hle' => leK_antisymm hle hle'⟩
@@ -178,7 +178,7 @@ settling frame `M` and any seed:
   orbit m ≤ₖ orbit n` (`ModalFrame.orbit_monotone`): no information is retracted across
   settling steps (the CALM monotonicity hypothesis);
 * **(coordination-free)** the delta merge is order/multiplicity independent — lists with
-  equal membership join to the same charge (`Charge.joinList_congr`).
+  equal membership join to the same reading (`Reading.joinList_congr`).
 
 A conjunction of two facts that each hold unconditionally in this model, not an
 implication between them — see `calm_convergence_facts` and `thm:calm-convergence-equivalence`. -/
@@ -186,20 +186,20 @@ theorem calm_monotone_coordination_free (M : ModalFrame) (seed : Valuation) :
     -- (monotone) the closure orbit is ≤ₖ-monotone in the settle index — no retraction
     (∀ {m n : Nat}, m ≤ n → leK (orbit M seed m) (orbit M seed n))
     -- (coordination-free) the merge is order/multiplicity independent
-    ∧ (∀ (l l' : List Charge), (∀ a, a ∈ l ↔ a ∈ l') → Charge.joinList l = Charge.joinList l') :=
+    ∧ (∀ (l l' : List Reading), (∀ a, a ∈ l ↔ a ∈ l') → Reading.joinList l = Reading.joinList l') :=
   ⟨fun {_ _} h => orbit_monotone M seed h,
-   fun l l' h => Charge.joinList_congr l l' h⟩
+   fun l l' h => Reading.joinList_congr l l' h⟩
 
 /-- **Fiber-merge order independence.** At a cell `φ`, the closure step computes
 `joinList` over `φ`'s fiber (`ModalFrame.closureOp_apply`). So any two enumerations
 `l`, `l'` of `φ`'s fiber that agree on membership — e.g. two arrival orders of the
-same set of replica updates reaching `φ` — fold to the same charge: the frame's own
+same set of replica updates reaching `φ` — fold to the same reading: the frame's own
 merge is coordination-free because it is an instance of `joinList_congr`, not beside it. -/
 theorem calm_fiber_merge_order_independent (M : ModalFrame) (v : Valuation)
     (φ : PredicationCell) (l l' : List PredicationCell)
     (hl : ∀ ψ, ψ ∈ l ↔ ψ ∈ M.fiber φ) (hl' : ∀ ψ, ψ ∈ l' ↔ ψ ∈ M.fiber φ) :
-    Charge.joinList (l.map v) = Charge.joinList (l'.map v) := by
-  apply Charge.joinList_congr
+    Reading.joinList (l.map v) = Reading.joinList (l'.map v) := by
+  apply Reading.joinList_congr
   intro a
   simp only [List.mem_map]
   constructor

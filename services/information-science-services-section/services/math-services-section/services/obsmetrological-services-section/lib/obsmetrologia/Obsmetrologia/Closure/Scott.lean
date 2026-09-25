@@ -20,8 +20,8 @@ faithful to the corpus node
 > quantifier closures (`∀x∈E` over infinite `E`) are not.
 
 As `ClosureOrdinal` already does for `κ` (and `Closure.Ordinal` builds the ordinal),
-we model the corpus's structure here over the **finite charge lattice**
-`Charge` (the `≤ₖ` complete lattice of `Settling`/`OrderInfra`). A `≤ₖ`-directed subset is
+we model the corpus's structure here over the **finite reading lattice**
+`Reading` (the `≤ₖ` complete lattice of `Settling`/`OrderInfra`). A `≤ₖ`-directed subset is
 modelled concretely as a **nonempty, pairwise-upper-bounded list** `DirectedFamily`; its
 `⋁ₖ`-join is `sup = foldr joinK ⊥ₖ`. We prove:
 
@@ -29,15 +29,15 @@ modelled concretely as a **nonempty, pairwise-upper-bounded list** `DirectedFami
   join: `sup L ∈ L`. This is the finite-carrier content of directedness (a directed
   finite set has a greatest element), and the engine of everything below.
 * `IsScottContinuous` (the corpus equation) — `c.op (sup S) = sup (S.map c.op)` for every
-  directed `S`; and `finite_scott_continuous` proving **every** charge-closure satisfies it,
+  directed `S`; and `finite_scott_continuous` proving **every** reading-closure satisfies it,
   because the join is attained (`sup_mem`) so both sides equal `c.op` of the family's
   maximum. Over a finite carrier Scott-continuity is automatic — recovering the strict
   regime (`κ ≤ 3`).
 * `scott_continuous_iff_omega_regime` — ties the equation back to
   `ClosureOrdinalRegime`: a Scott-continuous closure's regime data classifies to `strict`
   or `scott` (the two regimes with `κ ≤ ω`, equivalently the cohomology-vanishing regimes),
-  and never to the non-Scott `transfiniteBounded`/`aperiodic` strata; the finite charge
-  closure lands in `strict`, witnessed by `Charge.settles_by_three`.
+  and never to the non-Scott `transfiniteBounded`/`aperiodic` strata; the finite reading
+  closure lands in `strict`, witnessed by `Reading.settles_by_three`.
 * `finite_antecedent_scott_continuous` — models a **finite-antecedent** firing
   operator (fire to `kTop` exactly when a fixed finite antecedent set is `≤ₖ`-covered by the
   input) and proves it commutes with directed joins, because the rule fires on `⋁ₖ S` iff it
@@ -48,24 +48,24 @@ modelled concretely as a **nonempty, pairwise-upper-bounded list** `DirectedFami
 namespace Obsmetrologia.Closure.Scott
 
 open Obsmetrologia
-open Obsmetrologia.Charge
+open Obsmetrologia.Reading
 
 /-! ## (A) The `⋁ₖ`-join of a finite family
 
-The join of a list of charges in the `≤ₖ` order — the directed-set supremum modelled over
+The join of a list of readings in the `≤ₖ` order — the directed-set supremum modelled over
 the finite carrier. `sup [] = ⊥ₖ` (the seed), `sup (a :: L) = a ∨ₖ sup L`. -/
 
-/-- The `≤ₖ`-supremum of a list of charges: `foldr` of the knowledge join `∨ₖ` over the
+/-- The `≤ₖ`-supremum of a list of readings: `foldr` of the knowledge join `∨ₖ` over the
 seed `⊥ₖ`. This is the `⋁ₖ S` of the corpus equation, with `S` enumerated as a list. -/
-def sup : List Charge → Charge
+def sup : List Reading → Reading
   | [] => kBot
   | a :: L => joinK a (sup L)
 
 @[simp] theorem sup_nil : sup [] = kBot := rfl
-@[simp] theorem sup_cons (a : Charge) (L : List Charge) : sup (a :: L) = joinK a (sup L) := rfl
+@[simp] theorem sup_cons (a : Reading) (L : List Reading) : sup (a :: L) = joinK a (sup L) := rfl
 
 /-- Every member of a list is `≤ₖ` its `sup`: `sup L` is an **upper bound** of `L`. -/
-theorem le_sup {a : Charge} : ∀ {L : List Charge}, a ∈ L → KLE a (sup L)
+theorem le_sup {a : Reading} : ∀ {L : List Reading}, a ∈ L → KLE a (sup L)
   | b :: L, h => by
     rcases List.mem_cons.mp h with h | h
     · subst h; exact le_joinK_left a (sup L)
@@ -73,7 +73,7 @@ theorem le_sup {a : Charge} : ∀ {L : List Charge}, a ∈ L → KLE a (sup L)
 
 /-- `sup L` is the **least** upper bound: any `c` that bounds every member of `L` bounds
 `sup L`. (`⊥ₖ ≤ c` seeds the empty case.) -/
-theorem sup_le {c : Charge} : ∀ {L : List Charge}, (∀ a ∈ L, KLE a c) → KLE (sup L) c
+theorem sup_le {c : Reading} : ∀ {L : List Reading}, (∀ a ∈ L, KLE a c) → KLE (sup L) c
   | [], _ => kBot_le c
   | a :: _, h =>
     joinK_le _ _ _ (h a (List.mem_cons_self ..))
@@ -82,8 +82,8 @@ theorem sup_le {c : Charge} : ∀ {L : List Charge}, (∀ a ∈ L, KLE a c) → 
 /-- Mapping a **monotone** map over a list sends its `sup` below the map's value at the
 `sup`: `sup (L.map f) ≤ₖ f (sup L)`. (One half of Scott-continuity, holding for any
 monotone `f`; the other half needs the join to be *attained*.) -/
-theorem sup_map_le {f : Charge → Charge} (hf : ∀ {x y}, KLE x y → KLE (f x) (f y))
-    (L : List Charge) : KLE (sup (L.map f)) (f (sup L)) := by
+theorem sup_map_le {f : Reading → Reading} (hf : ∀ {x y}, KLE x y → KLE (f x) (f y))
+    (L : List Reading) : KLE (sup (L.map f)) (f (sup L)) := by
   apply sup_le
   intro b hb
   rcases List.mem_map.mp hb with ⟨x, hx, rfl⟩
@@ -92,16 +92,16 @@ theorem sup_map_le {f : Charge → Charge} (hf : ∀ {x y}, KLE x y → KLE (f x
 /-! ## (B) `≤ₖ`-directed families over the finite carrier
 
 A directed subset, modelled concretely: a **nonempty** list whose every two members have a
-common upper bound *inside the list*. Over the finite charge carrier this concrete
+common upper bound *inside the list*. Over the finite reading carrier this concrete
 directedness is enough to prove the corpus equation, because a directed finite family
 **attains** its join (`sup_mem`). -/
 
-/-- A `≤ₖ`-**directed family**: a nonempty list of charges in which every two members have a
+/-- A `≤ₖ`-**directed family**: a nonempty list of readings in which every two members have a
 common upper bound that is itself a member. The finite-carrier model of a directed subset
 `S ⊆ A_p` in the knowledge order. -/
 structure DirectedFamily where
   /-- The enumerated members of the directed subset. -/
-  elems : List Charge
+  elems : List Reading
   /-- Directed subsets are nonempty (so the join is of an inhabited set). -/
   nonempty : elems ≠ []
   /-- Directedness: any two members are `≤ₖ`-bounded above by a member of the family. -/
@@ -110,7 +110,7 @@ structure DirectedFamily where
 namespace DirectedFamily
 
 /-- The `⋁ₖ`-join of a directed family. -/
-def sup (S : DirectedFamily) : Charge := Obsmetrologia.Closure.Scott.sup S.elems
+def sup (S : DirectedFamily) : Reading := Obsmetrologia.Closure.Scott.sup S.elems
 
 /-- **The join of any finite enumerated sub-family is bounded by a member.** For a list `sub`
 all of whose entries lie in the directed family `S`, the join `sup sub` is `≤ₖ` some member of
@@ -118,7 +118,7 @@ all of whose entries lie in the directed family `S`, the join `sup sub` is `≤�
 a single bounding member (`a ≤ c`, `sup sub ≤ c'≤ c`). This is the corpus's "fires on a finite
 sub-join iff on a single member" at the level of joins. -/
 theorem sup_sub_le (S : DirectedFamily) :
-    ∀ (sub : List Charge), sub ≠ [] → (∀ x ∈ sub, x ∈ S.elems) →
+    ∀ (sub : List Reading), sub ≠ [] → (∀ x ∈ sub, x ∈ S.elems) →
       ∃ c ∈ S.elems, KLE (Obsmetrologia.Closure.Scott.sup sub) c := by
   intro sub
   induction sub with
@@ -139,7 +139,7 @@ theorem sup_sub_le (S : DirectedFamily) :
       obtain ⟨c, hc, hac, hc₁c⟩ := S.directed a ha c₁ hc₁
       exact ⟨c, hc, joinK_le _ _ _ hac (kle_trans _ _ _ hsubc₁ hc₁c)⟩
 
-/-- **The join of a directed family is attained** — `sup S ∈ S`. Over the finite charge
+/-- **The join of a directed family is attained** — `sup S ∈ S`. Over the finite reading
 carrier, a `≤ₖ`-directed family has a greatest member, and that member *is* the join: every
 member is `≤ₖ sup S` (`le_sup`); and `sup_sub_le` (applied to the whole family) folds the
 family into a single member `c` with `sup S ≤ₖ c`. `≤ₖ`-antisymmetry then identifies `c` with
@@ -153,22 +153,22 @@ theorem sup_mem (S : DirectedFamily) : S.sup ∈ S.elems := by
 
 end DirectedFamily
 
-/-! ## (C) Scott-continuity of a charge-closure
+/-! ## (C) Scott-continuity of a reading-closure
 
 The corpus equation `cl(⋁ₖ S) = ⋁ₖ {cl(x) : x ∈ S}` for the finite-carrier directed `S`. -/
 
-/-- **Scott-continuity** (the corpus equation). A charge-closure `c` is Scott-continuous iff,
+/-- **Scott-continuity** (the corpus equation). A reading-closure `c` is Scott-continuous iff,
 for every `≤ₖ`-directed family `S`, applying `c.op` commutes with the directed join:
 `c.op (⋁ₖ S) = ⋁ₖ {c.op x : x ∈ S}`. -/
-def IsScottContinuous (c : Charge.Closure) : Prop :=
+def IsScottContinuous (c : Reading.Closure) : Prop :=
   ∀ S : DirectedFamily, c.op (sup S.elems) = sup (S.elems.map c.op)
 
-/-- **Every charge-closure is Scott-continuous (finite carrier).** The directed join is
+/-- **Every reading-closure is Scott-continuous (finite carrier).** The directed join is
 *attained* (`DirectedFamily.sup_mem`): `sup S = m` for a member `m`. Then `c.op (sup S) =
 c.op m`, and `c.op m ∈ S.map c.op` with `c.op x ≤ₖ c.op m` for all members (monotone), so
 the right-hand join also equals `c.op m`. Over a finite carrier Scott-continuity is automatic
 — the strict regime. -/
-theorem finite_scott_continuous (c : Charge.Closure) : IsScottContinuous c := by
+theorem finite_scott_continuous (c : Reading.Closure) : IsScottContinuous c := by
   intro S
   have hmem : sup S.elems ∈ S.elems := S.sup_mem
   apply kle_antisymm
@@ -182,11 +182,11 @@ theorem finite_scott_continuous (c : Charge.Closure) : IsScottContinuous c := by
 
 Tie to `ClosureOrdinalRegime`: a Scott-continuous closure's regime data is classified to a
 `κ ≤ ω` stratum (strict or scott), never to the non-Scott `transfiniteBounded`/`aperiodic`.
-For the finite charge carrier this is the **strict** regime, whose `κ ≤ 3` is
-`Charge.settles_by_three`. -/
+For the finite reading carrier this is the **strict** regime, whose `κ ≤ 3` is
+`Reading.settles_by_three`. -/
 
 /-- The regime data of a closure carrying a Scott-continuity verdict. We record the verdict
-as the `scottContinuous` flag; the finite charge carrier additionally forces `finiteBase`,
+as the `scottContinuous` flag; the finite reading carrier additionally forces `finiteBase`,
 discharging the corpus constraints. -/
 def regimeData (scott finite cof : Bool)
     (hsf : finite = true → scott = true) (hcf : finite = true → cof = true) :
@@ -237,15 +237,15 @@ theorem scott_continuous_iff_omega_regime (d : ClosureRegimeData) :
     · exact absurd ht hnt
     · exact absurd ha hna
 
-/-- **The finite charge closure sits in the strict regime, witnessed.** The finite carrier
+/-- **The finite reading closure sits in the strict regime, witnessed.** The finite carrier
 forces `finiteBase = true`, so its regime datum classifies to `strict` (`spine_is_strict`);
-its `κ ≤ 3` is `Charge.settles_by_three` for every inflationary endomap. Combined with
+its `κ ≤ 3` is `Reading.settles_by_three` for every inflationary endomap. Combined with
 `finite_scott_continuous`, this is the corpus's "finite ⟹ Scott-continuous ⟹ stabilizes",
 recovering the strict regime. -/
-theorem finite_charge_strict (c : Charge.Closure) (x : Charge) :
+theorem finite_reading_strict (c : Reading.Closure) (x : Reading) :
     classify spineData = ClosureRegime.strict ∧
-    Charge.SettlesBy c.op x 3 ∧ IsScottContinuous c :=
-  ⟨spine_is_strict, Charge.strict_finite c.op c.infl x, finite_scott_continuous c⟩
+    Reading.SettlesBy c.op x 3 ∧ IsScottContinuous c :=
+  ⟨spine_is_strict, Reading.strict_finite c.op c.infl x, finite_scott_continuous c⟩
 
 /-! ## (E) Finite-antecedent rules are Scott-continuous
 
@@ -255,22 +255,22 @@ over a directed family that finite sub-join is `≤ₖ` a single member. We mode
 finite-antecedent rule as a firing operator. -/
 
 /-- A **finite-antecedent firing operator**: it raises its input toward a conclusion `concl`
-exactly when the input `≤ₖ`-covers a fixed antecedent `ante` (a single charge standing for
+exactly when the input `≤ₖ`-covers a fixed antecedent `ante` (a single reading standing for
 the join of the rule's finitely many antecedents). `fire ante concl x = x ∨ₖ concl` if
-`ante ≤ₖ x`, else `x`. The antecedent is *finite* (one charge), so coverage is monotone and
+`ante ≤ₖ x`, else `x`. The antecedent is *finite* (one reading), so coverage is monotone and
 **join-reflecting**: `ante ≤ₖ ⋁ₖ S` for a directed `S` iff `ante ≤ₖ` some member. -/
-def fire (ante concl x : Charge) : Charge :=
+def fire (ante concl x : Reading) : Reading :=
   if KLE ante x then joinK x concl else x
 
 /-- Firing is **inflationary**: `x ≤ₖ fire ante concl x`. Proven by finite exhaustion over
-the four-element charge carrier (`decide` resolves the decidable `if`). -/
-theorem fire_infl (ante concl x : Charge) : KLE x (fire ante concl x) := by
+the four-element reading carrier (`decide` resolves the decidable `if`). -/
+theorem fire_infl (ante concl x : Reading) : KLE x (fire ante concl x) := by
   cases ante <;> cases concl <;> cases x <;> decide
 
 /-- Firing is **monotone** in the input. (`x ≤ₖ y` ⇒ `fire … x ≤ₖ fire … y`; the antecedent
 covers `y` whenever it covers `x`, and the conclusion is joined either way.) Proven by finite
-exhaustion over the four-element charge carrier. -/
-theorem fire_mono (ante concl : Charge) {x y : Charge} (h : KLE x y) :
+exhaustion over the four-element reading carrier. -/
+theorem fire_mono (ante concl : Reading) {x y : Reading} (h : KLE x y) :
     KLE (fire ante concl x) (fire ante concl y) := by
   revert h
   cases ante <;> cases concl <;> cases x <;> cases y <;> decide
@@ -279,7 +279,7 @@ theorem fire_mono (ante concl : Charge) {x y : Charge} (h : KLE x y) :
 antecedent covers the join `⋁ₖ S` iff it covers some member: `ante ≤ₖ sup S ↔ ∃ m ∈ S, ante ≤ₖ m`.
 This is the corpus's "fires on a `⋁ₖ`-join iff on some finite sub-join" — the join being
 attained (`sup_mem`) supplies the witnessing member. -/
-theorem fire_covers_directed (ante : Charge) (S : DirectedFamily) :
+theorem fire_covers_directed (ante : Reading) (S : DirectedFamily) :
     KLE ante (sup S.elems) ↔ ∃ m ∈ S.elems, KLE ante m := by
   constructor
   · intro h
@@ -295,7 +295,7 @@ The rule fires on `⋁ₖ S` iff it fires on the family's attained maximum `m = 
 join is pinned to it by monotonicity. This is exactly the corpus mechanism by which
 finite-antecedent inference (Fitting's LP closure, DL TBox closures) is Scott-continuous,
 whereas an infinitary `∀x∈E` antecedent — not coverable by any single member — would fail it. -/
-theorem finite_antecedent_scott_continuous (ante concl : Charge) (S : DirectedFamily) :
+theorem finite_antecedent_scott_continuous (ante concl : Reading) (S : DirectedFamily) :
     fire ante concl (sup S.elems) = sup (S.elems.map (fire ante concl)) := by
   have hmem : sup S.elems ∈ S.elems := S.sup_mem
   apply kle_antisymm

@@ -16,7 +16,7 @@ commutative residuated lattice, `C` the small predicate category with finite lim
 
 * **(A1) Fiber uniformity.** Each fiber `E_q := p⁻¹(q)` is canonically the
   predication fiber algebra `A_q = L^{⋈ E×E}`, i.e. **the valuation fiber**
-  `Valuation = PredicationCell → Charge`, represented by the generated predication cell and
+  `Valuation = PredicationCell → Reading`, represented by the generated predication cell and
   viewed as a thin category by its `≤ₖ` poset.
 * **(A2) Generator action.** For each of the four predicate-category generators —
   *specialization*, *converse*, *subject-projection*, *object-projection* — the
@@ -30,7 +30,7 @@ reindexings `r : PredicationCell → PredicationCell` of `Predicating` (the four
 generators are exactly `converse`, `subjProj`, `objProj`, and `specialize f`). The
 reindexing functor is `Valuation.reindex` of `Hyperdoctrine`, **precomposition**
 `f* v = v ∘ f`. Because every bilattice-residuated operation on `Valuation` is the
-*pointwise* lift of the `Charge` operation, precomposition commutes with each one by a
+*pointwise* lift of the `Reading` operation, precomposition commutes with each one by a
 single `rfl` (under `funext`): **reindexing is a strict homomorphism**, the sharp form
 of (A3). This is the no-free-data projection of the fact that a presheaf of bilattice
 algebras has bilattice-homomorphism reindexings.
@@ -54,37 +54,37 @@ open Obsmetrologia.Valuation
 
 /-! ## 0. The bilattice-residuated operations on the valuation fiber
 
-The fiber `Valuation = PredicationCell → Charge` carries the **pointwise** lift of each
-bilattice-residuated operation on `Charge`. `meetK` (from `Hyperdoctrine`) and `joinK`
+The fiber `Valuation = PredicationCell → Reading` carries the **pointwise** lift of each
+bilattice-residuated operation on `Reading`. `meetK` (from `Hyperdoctrine`) and `joinK`
 (from `Positing`) already exist; we add the truth meet/join, negation, fusion `⊙`, and
 the right residual `⇒`. Fusion and residual are the actual non-integral twist-product
-operations transported from `Carrier Two` to `Charge`; truth meet remains a distinct
+operations transported from `Carrier Two` to `Reading`; truth meet remains a distinct
 additive operation. In particular the fusion unit is `(1,1) = kTop`, not truth-top. -/
 
 /-- Pointwise truth-meet `∧ₜ` of valuations. -/
-def meetT (v w : Valuation) : Valuation := fun φ => Charge.meetT (v φ) (w φ)
+def meetT (v w : Valuation) : Valuation := fun φ => Reading.meetT (v φ) (w φ)
 
 /-- Pointwise truth-join `∨ₜ` of valuations. -/
-def joinT (v w : Valuation) : Valuation := fun φ => Charge.joinT (v φ) (w φ)
+def joinT (v w : Valuation) : Valuation := fun φ => Reading.joinT (v φ) (w φ)
 
-/-- Pointwise negation `∼` of valuations — swap the two charge slots. -/
-def negate (v : Valuation) : Valuation := fun φ => Charge.negate (v φ)
+/-- Pointwise negation `∼` of valuations — swap the two reading slots. -/
+def negate (v : Valuation) : Valuation := fun φ => Reading.negate (v φ)
 
 /-- The **twist-product fusion** `⊙` on the fiber, transported from
 `TwistProduct.fuse` over `Two` and lifted pointwise. This is not truth meet. -/
 def fusion (v w : Valuation) : Valuation := fun φ =>
-  Order.FOUR.toCharge
+  Order.FOUR.toReading
     (Order.TwistProduct.fuse
-      (Order.FOUR.ofCharge (v φ))
-      (Order.FOUR.ofCharge (w φ)))
+      (Order.FOUR.ofReading (v φ))
+      (Order.FOUR.ofReading (w φ)))
 
 /-- The **right residual** `⇒` on the fiber, transported from
 `TwistProduct.imp` over `Two` and lifted pointwise. -/
 def residual (v w : Valuation) : Valuation := fun φ =>
-  Order.FOUR.toCharge
+  Order.FOUR.toReading
     (Order.TwistProduct.imp
-      (Order.FOUR.ofCharge (v φ))
-      (Order.FOUR.ofCharge (w φ)))
+      (Order.FOUR.ofReading (v φ))
+      (Order.FOUR.ofReading (w φ)))
 
 /-! ## 1. The `Fibration` structure — total-space/fiber data with cleavage
 
@@ -154,7 +154,7 @@ theorem generator_specialize (f : Predicate → Predicate) (v : Valuation) :
 /-! ## 3. (A3) — reindexing is a bilattice-residuated homomorphism
 
 Each reindexing `f* = reindex r` is precomposition, and each bilattice-residuated
-operation is the pointwise lift of the corresponding `Charge` operation. Hence `f*`
+operation is the pointwise lift of the corresponding `Reading` operation. Hence `f*`
 distributes over every operation **pointwise**: `reindex r (op v w) = op (reindex r v)
 (reindex r w)`, and `reindex r (negate v) = negate (reindex r v)`. Each is `funext` +
 `rfl`. We prove the seven distribution laws, then bundle them. -/

@@ -5,7 +5,7 @@ import Obsmetrologia.Calculus.Logic.LinearLogicChu
 /-!
 # The light cone — FOUR as the 1+1 causal diamond in null coordinates
 
-A charge is the pair of evidence bits `(pos, neg)`. Read the two bits as the two
+A reading is the pair of evidence bits `(pos, neg)`. Read the two bits as the two
 **null coordinates** `(u, v)` of a two-dimensional Minkowski diamond. Then:
 
 * the **knowledge order** `≤ₖ` is the product order on `(u, v)`, which is exactly
@@ -37,22 +37,22 @@ Lorentz group `O(1,1)`, and equally of `O(3,1)`: the gauge group of FOUR is the
 discrete part of any Lorentzian symmetry group, compatible with `3+1` without
 selecting the `3`.
 
-Everything here is a finite statement about the four charges and the four gauge
+Everything here is a finite statement about the four readings and the four gauge
 elements; every declaration is axiom-free.
 -/
 
 namespace Obsmetrologia
-namespace Charge
+namespace Reading
 
 open Obsmetrologia.Positing.Gauge
 
 /-! ## Null coordinates: time and space -/
 
 /-- Time: the knowledge content `u + v`, how far along both null rays. -/
-def time (a : Charge) : Nat := a.pos.toNat + a.neg.toNat
+def time (a : Reading) : Nat := a.pos.toNat + a.neg.toNat
 
 /-- Space: `u − v`, evidence for minus evidence against. -/
-def space (a : Charge) : Int := (a.pos.toNat : Int) - (a.neg.toNat : Int)
+def space (a : Reading) : Int := (a.pos.toNat : Int) - (a.neg.toNat : Int)
 
 @[simp] theorem time_kBot : time kBot = 0 := rfl
 @[simp] theorem time_tTop : time tTop = 1 := rfl
@@ -65,10 +65,10 @@ def space (a : Charge) : Int := (a.pos.toNat : Int) - (a.neg.toNat : Int)
 @[simp] theorem space_kTop : space kTop = 0 := by decide
 
 /-- Time runs from the past tip to the future tip. -/
-theorem time_le_two (a : Charge) : time a ≤ 2 := by cases a <;> decide
+theorem time_le_two (a : Reading) : time a ≤ 2 := by cases a <;> decide
 
-/-- A charge is its two coordinates. -/
-theorem coords_injective (a b : Charge) (ht : time a = time b) (hx : space a = space b) :
+/-- A reading is its two coordinates. -/
+theorem coords_injective (a b : Reading) (ht : time a = time b) (hx : space a = space b) :
     a = b := by
   revert ht hx; cases a <;> cases b <;> decide
 
@@ -77,32 +77,32 @@ theorem coords_injective (a b : Charge) (ht : time a = time b) (hx : space a = s
 /-- **`≤ₖ` is the product order on the null coordinates**: each evidence bit may
 only switch on. This is the causal-future relation of 1+1 Minkowski space
 written in null coordinates. -/
-theorem kle_iff_null (a b : Charge) :
+theorem kle_iff_null (a b : Reading) :
     KLE a b ↔ ((a.pos = true → b.pos = true) ∧ (a.neg = true → b.neg = true)) := by
   cases a <;> cases b <;> decide
 
 /-- **`≤ₜ` raises the for-ray and lowers the against-ray**: the spacelike order. -/
-theorem tle_iff_null (a b : Charge) :
+theorem tle_iff_null (a b : Reading) :
     TLE a b ↔ ((a.pos = true → b.pos = true) ∧ (b.neg = true → a.neg = true)) := by
   cases a <;> cases b <;> decide
 
 /-- **The light cone.** `a ≤ₖ b` exactly when `b` lies in the future cone of `a`:
 `|space b − space a| ≤ time b − time a`. -/
-theorem kle_iff_lightcone (a b : Charge) :
+theorem kle_iff_lightcone (a b : Reading) :
     KLE a b ↔
       (space b - space a ≤ (time b : Int) - (time a : Int)
         ∧ space a - space b ≤ (time b : Int) - (time a : Int)) := by
   cases a <;> cases b <;> decide
 
 /-- Time is monotone along the causal order. -/
-theorem kle_time_mono (a b : Charge) (h : KLE a b) : time a ≤ time b := by
+theorem kle_time_mono (a b : Reading) (h : KLE a b) : time a ≤ time b := by
   revert h; cases a <;> cases b <;> decide
 
-/-- `⊥` is the past tip: it precedes every charge. -/
-theorem kBot_past_tip (a : Charge) : KLE kBot a := kBot_le a
+/-- `⊥` is the past tip: it precedes every reading. -/
+theorem kBot_past_tip (a : Reading) : KLE kBot a := kBot_le a
 
-/-- `⊤` is the future tip: every charge precedes it. -/
-theorem kTop_future_tip (a : Charge) : KLE a kTop := le_kTop a
+/-- `⊤` is the future tip: every reading precedes it. -/
+theorem kTop_future_tip (a : Reading) : KLE a kTop := le_kTop a
 
 /-- The two null rays out of the past tip: `t` lies on the for-ray, `f` on the
 against-ray. -/
@@ -119,32 +119,32 @@ theorem tTop_tBot_spacelike :
 /-! ## Parity and time reversal -/
 
 /-- Negation fixes time. -/
-@[simp] theorem time_negate (a : Charge) : time (negate a) = time a := by cases a <;> rfl
+@[simp] theorem time_negate (a : Reading) : time (negate a) = time a := by cases a <;> rfl
 
 /-- **Negation is parity**: it reverses space. -/
-@[simp] theorem space_negate (a : Charge) : space (negate a) = - space a := by
+@[simp] theorem space_negate (a : Reading) : space (negate a) = - space a := by
   cases a <;> decide
 
 /-- **Conflation is time reversal**: it reflects time through the middle. -/
-@[simp] theorem time_conflate (a : Charge) : time (conflate a) = 2 - time a := by
+@[simp] theorem time_conflate (a : Reading) : time (conflate a) = 2 - time a := by
   cases a <;> rfl
 
 /-- Conflation fixes space. -/
-@[simp] theorem space_conflate (a : Charge) : space (conflate a) = space a := by
+@[simp] theorem space_conflate (a : Reading) : space (conflate a) = space a := by
   cases a <;> decide
 
 /-- `∼∘−` reverses time. -/
-@[simp] theorem time_negConf (a : Charge) : time (negConf a) = 2 - time a := by
+@[simp] theorem time_negConf (a : Reading) : time (negConf a) = 2 - time a := by
   cases a <;> rfl
 
 /-- `∼∘−` reverses space. -/
-@[simp] theorem space_negConf (a : Charge) : space (negConf a) = - space a := by
+@[simp] theorem space_negConf (a : Reading) : space (negConf a) = - space a := by
   cases a <;> decide
 
 /-! ## `K₄` is the sign-change group `{1, P, T, PT}` -/
 
 /-- Time centred at the middle of the diamond: `time − 1 ∈ {−1, 0, 1}`. -/
-def centered (a : Charge) : Int := (time a : Int) - 1
+def centered (a : Reading) : Int := (time a : Int) - 1
 
 /-- The sign each gauge element puts on centred time: `1` for `id` and `neg`
 (parity), `−1` for `conf` and `negConf` (time reversal). -/
@@ -163,12 +163,12 @@ def spaceSign : K4 → Int
   | K4.negConf => -1
 
 /-- The gauge acts on centred time by its time sign. -/
-theorem act_centered (g : K4) (a : Charge) :
+theorem act_centered (g : K4) (a : Reading) :
     centered (K4.act g a) = timeSign g * centered a := by
   cases g <;> cases a <;> decide
 
 /-- The gauge acts on space by its space sign. -/
-theorem act_space (g : K4) (a : Charge) :
+theorem act_space (g : K4) (a : Reading) :
     space (K4.act g a) = spaceSign g * space a := by
   cases g <;> cases a <;> decide
 
@@ -209,5 +209,5 @@ theorem chu_dual_space (C : ChuSpace) (x : C.sts) (a : C.pts) :
     space ((ChuSpace.dual C).r x a) = - space (C.r a x) :=
   space_negate (C.r a x)
 
-end Charge
+end Reading
 end Obsmetrologia

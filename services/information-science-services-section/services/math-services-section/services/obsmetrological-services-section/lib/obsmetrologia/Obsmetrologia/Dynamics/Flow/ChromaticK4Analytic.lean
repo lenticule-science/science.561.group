@@ -8,7 +8,7 @@ import Obsmetrologia.AperiodicOrder.Tiling.Diffraction
 # K₄/FOUR and the finite analytic chromatic spine
 
 The complete-graph obstruction says that king adjacency is exactly
-FOUR-chromatic: the palette cannot collapse below the four charges.  The
+FOUR-chromatic: the palette cannot collapse below the four readings.  The
 Rayleigh and finite-diffraction modules chase the same finite chromatic carrier
 from the analytic side: sum-of-squares energy gives the Rayleigh floor, small
 tiles give exact gap witnesses, algebraic path gaps give root and bracket
@@ -43,10 +43,10 @@ def K4FourAnalyticSpine (v : List ChromaticRat) (n : Nat)
     (w : Fin (n + 1) → Bool) (side : Bool) : Prop :=
   Positing.Gauge.K4.all.length = 4 ∧
     (∀ g : Positing.Gauge.K4, Positing.Gauge.K4.mul g g = Positing.Gauge.K4.id) ∧
-      (∀ (g h : Positing.Gauge.K4) (a : Charge),
+      (∀ (g h : Positing.Gauge.K4) (a : Reading),
         Positing.Gauge.K4.act (Positing.Gauge.K4.mul g h) a =
           Positing.Gauge.K4.act g (Positing.Gauge.K4.act h a)) ∧
-        Combinatorics.Colorable Combinatorics.kingAdjacency Charge ∧
+        Combinatorics.Colorable Combinatorics.kingAdjacency Reading ∧
           ¬ Combinatorics.Colorable
             Combinatorics.kingAdjacency Combinatorics.TriangularPhase ∧
             Combinatorics.properK4Colourings.length = 24 ∧

@@ -28,7 +28,7 @@ family of nuclear squares over histories forces aperiodicity.
   coherent, carrying all 2-cell information of the KZ diamond.
 
 `(σ, Δ)` is modeled as an abstract `Order.CommutingNuclei H` (`σ = j₁`, `Δ = j₂`),
-reusing `NucleusAndCommutingNuclei` wholesale; `Charge.joinSquare` /
+reusing `NucleusAndCommutingNuclei` wholesale; `Reading.joinSquare` /
 `Positing.Bigraded` gives a worked instance. `history_separation_aperiodicity`
 exhibits `varyingFamily` as a witness that a history-separating family exists, and
 ties it to `AperiodicOrder.Tiling.aperiodicWitness` (`regime = aperiodic`,
@@ -60,13 +60,13 @@ theorem commutating {H : Order.HeytingAlgebra} (Q : Order.CommutingNuclei H) (a 
 
 /-! ### A concrete instance via the bigraded diamond -/
 
-/-- The charge knowledge-algebra as an `Order.HeytingAlgebra`. -/
-def chargeHeyting : Order.HeytingAlgebra where
-  carrier := Charge
-  meet := Charge.meetK
-  join := Charge.joinK
-  top := Charge.kTop
-  bot := Charge.kBot
+/-- The reading knowledge-algebra as an `Order.HeytingAlgebra`. -/
+def readingHeyting : Order.HeytingAlgebra where
+  carrier := Reading
+  meet := Reading.meetK
+  join := Reading.joinK
+  top := Reading.kTop
+  bot := Reading.kBot
   meet_comm := by intro a b; cases a <;> cases b <;> rfl
   meet_assoc := by intro a b c; cases a <;> cases b <;> cases c <;> rfl
   meet_idem := by intro a; cases a <;> rfl
@@ -77,33 +77,33 @@ def chargeHeyting : Order.HeytingAlgebra where
   absorb_jm := by intro a b; cases a <;> cases b <;> rfl
   meet_top := by intro a; cases a <;> rfl
   join_bot := by intro a; cases a <;> rfl
-  himp := Charge.impK
+  himp := Reading.impK
   himp_adj a b c := by cases a <;> cases b <;> cases c <;> decide
 
 /-- A worked `(σ, Δ)` example: raising toward `c₁` is `σ`, raising toward `c₂` is `Δ`,
-on `chargeHeyting` — two commuting join-nuclei, an `Order.CommutingNuclei`. (The abstract
+on `readingHeyting` — two commuting join-nuclei, an `Order.CommutingNuclei`. (The abstract
 `σ`/`Δ` of an aperiodic settling are *history*-filtration nuclei; this concrete pair is a
 faithful finite model of the commuting-square structure, the same one
-`Positing.Bigraded.Charge.joinSquare` instantiates.) -/
-def chargeNuclearPair (c1 c2 : Charge) : Order.CommutingNuclei chargeHeyting where
+`Positing.Bigraded.Reading.joinSquare` instantiates.) -/
+def readingNuclearPair (c1 c2 : Reading) : Order.CommutingNuclei readingHeyting where
   j1 :=
-    { j a := Charge.joinK c1 a
-      infl a := by show Charge.meetK a (Charge.joinK c1 a) = a; cases c1 <;> cases a <;> rfl
+    { j a := Reading.joinK c1 a
+      infl a := by show Reading.meetK a (Reading.joinK c1 a) = a; cases c1 <;> cases a <;> rfl
       idem a := by cases c1 <;> cases a <;> rfl
       meet a b := by
-        show Charge.joinK c1 (Charge.meetK a b)
-          = Charge.meetK (Charge.joinK c1 a) (Charge.joinK c1 b)
+        show Reading.joinK c1 (Reading.meetK a b)
+          = Reading.meetK (Reading.joinK c1 a) (Reading.joinK c1 b)
         cases c1 <;> cases a <;> cases b <;> rfl }
   j2 :=
-    { j a := Charge.joinK c2 a
-      infl a := by show Charge.meetK a (Charge.joinK c2 a) = a; cases c2 <;> cases a <;> rfl
+    { j a := Reading.joinK c2 a
+      infl a := by show Reading.meetK a (Reading.joinK c2 a) = a; cases c2 <;> cases a <;> rfl
       idem a := by cases c2 <;> cases a <;> rfl
       meet a b := by
-        show Charge.joinK c2 (Charge.meetK a b)
-          = Charge.meetK (Charge.joinK c2 a) (Charge.joinK c2 b)
+        show Reading.joinK c2 (Reading.meetK a b)
+          = Reading.meetK (Reading.joinK c2 a) (Reading.joinK c2 b)
         cases c2 <;> cases a <;> cases b <;> rfl }
   comm a := by
-    show Charge.joinK c1 (Charge.joinK c2 a) = Charge.joinK c2 (Charge.joinK c1 a)
+    show Reading.joinK c1 (Reading.joinK c2 a) = Reading.joinK c2 (Reading.joinK c1 a)
     cases c1 <;> cases c2 <;> cases a <;> rfl
 
 /-! ## (2) The autopoietic core `A*` and the autopoiesis cell -/
@@ -164,18 +164,18 @@ histories carry different nuclear pairs `(σ_t, Δ_t)`. -/
 def HistorySeparating {H : HeytingAlgebra} {I : Type} (family : SquareFamily H I) : Prop :=
   family.Varies
 
-theorem varyingFamily_historySeparating : HistorySeparating Charge.varyingFamily :=
-  Charge.varyingFamily_varies
+theorem varyingFamily_historySeparating : HistorySeparating Reading.varyingFamily :=
+  Reading.varyingFamily_varies
 
 /-- `AperiodicOrder.Tiling.aperiodicWitness`: `regime = aperiodic`, `cl-inv ≠ 0`. -/
 def separatedSettling : AperiodicOrder.Tiling.Settling := AperiodicOrder.Tiling.aperiodicWitness
 
-/-- A varying nuclear family exists (`Charge.varyingFamily.Varies`); the settling it
+/-- A varying nuclear family exists (`Reading.varyingFamily.Varies`); the settling it
 corresponds to (`separatedSettling`) is in `ClosureRegime.aperiodic` with `cl-inv ≠ 0`;
 and any settling in the `strict`/`scott` regime has `cl-inv = 0`. -/
 theorem history_separation_aperiodicity :
     -- a history-separating (varying) nuclear family exists — history separation is realizable
-    Charge.varyingFamily.Varies
+    Reading.varyingFamily.Varies
     -- to which corresponds a settling in the APERIODIC regime with cl-inv ≠ 0:
     -- varying ⟹ aperiodicity (cohomology nonzero, automorphisms visible)
     ∧ (separatedSettling.regime = ClosureRegime.aperiodic
@@ -185,24 +185,24 @@ theorem history_separation_aperiodicity :
     ∧ (∀ v : AperiodicOrder.Tiling.Settling,
         (v.regime = ClosureRegime.strict ∨ v.regime = ClosureRegime.scott) →
           v.clInv = AperiodicOrder.Tiling.H1Class.zero) :=
-  ⟨Charge.varyingFamily_varies,
+  ⟨Reading.varyingFamily_varies,
    ⟨rfl, AperiodicOrder.Tiling.aperiodicWitness_clinv_nonzero⟩,
    AperiodicOrder.Tiling.clinv_dichotomy.1⟩
 
 /-! ## (4) History-filtration nuclei are distinct from value-order nuclei -/
 
-/-- The bigraded diamond's value-order quartet (`Charge.joinSquare`) and the
+/-- The bigraded diamond's value-order quartet (`Reading.joinSquare`) and the
 history-filtration pair `(σ, Δ)` both satisfy the Nuclear Quartet law
 `Fix(π) = Fix(j₁) ∩ Fix(j₂)`, via different commuting-pair data on different axes. -/
 theorem history_filtration_distinct_from_value_order
-    (c1 c2 : Charge) {H : Order.HeytingAlgebra} (Q : Order.CommutingNuclei H) :
+    (c1 c2 : Reading) {H : Order.HeytingAlgebra} (Q : Order.CommutingNuclei H) :
     -- value-order quartet (bigraded diamond, two join-nuclei on the knowledge value order)
-    (∀ a : Charge, (Charge.joinSquare c1 c2).pi a = a ↔
-      ((Charge.joinSquare c1 c2).j1.j a = a ∧ (Charge.joinSquare c1 c2).j2.j a = a))
+    (∀ a : Reading, (Reading.joinSquare c1 c2).pi a = a ↔
+      ((Reading.joinSquare c1 c2).j1.j a = a ∧ (Reading.joinSquare c1 c2).j2.j a = a))
     -- history-filtration quartet (saturating σ / transferring Δ on one settled fiber H_t)
     ∧ (∀ a : H.carrier, autopoieticCore Q a ↔
         ((saturating Q).Fix a ∧ (transferring Q).Fix a)) :=
-  ⟨(Charge.joinSquare c1 c2).fix_pi_iff, autopoieticCore_iff Q⟩
+  ⟨(Reading.joinSquare c1 c2).fix_pi_iff, autopoieticCore_iff Q⟩
 
 end AperiodicOrder.Tiling.Autopoiesis
 end Obsmetrologia

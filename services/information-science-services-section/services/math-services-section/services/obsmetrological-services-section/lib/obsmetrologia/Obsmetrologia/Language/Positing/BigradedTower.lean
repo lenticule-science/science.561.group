@@ -31,11 +31,11 @@ What this derives:
    (`∼`-presence, i.e. `Positing.Gauge.K4.inGauge`), the SECOND is the **truth** axis
    (`−`-presence). `id ↔ (false,false)`, `neg ↔ (true,false)`, `conf ↔ (false,true)`,
    `negConf ↔ (true,true)`. Composed with `FourCornerCell.cornerBij` this is also
-   `K4 ≃ Articulating.Corner ≃ Charge` — the diamond's four corners `{free, j₁, j₂, both}`.
+   `K4 ≃ Articulating.Corner ≃ Reading` — the diamond's four corners `{free, j₁, j₂, both}`.
 
 2. **`bigraded_diamond_tower`** — a `K₄`-graded family of nuclear quartets:
-   `tower : K4 → NuclearSquare Charge.heytingK`, each grade a *same-order*
-   `Charge.joinSquare` (the proven nuclear square), every grade realizing the Nuclear
+   `tower : K4 → NuclearSquare Reading.heytingK`, each grade a *same-order*
+   `Reading.joinSquare` (the proven nuclear square), every grade realizing the Nuclear
    Quartet Theorem (`fix_pi_iff`); bundled with the grading group `= K₄`
    (`Positing.Gauge.K4.isGroup`), the corner exhaustion (`Articulating.Corner.card_eq_four`), and the
    `K₄ ≃ Articulating.FourCorner` bigrading bijection.
@@ -46,7 +46,7 @@ What this derives:
    finding `Obsmetrologia.Positing.FiberAlgebra.cross_order_not_knowledge_nucleus` as a field of the
    bundle: a truth-closure is not a knowledge-nucleus, so the second order MUST enter as
    a grading axis, not a co-nucleus. The proven quartet at each grade uses two
-   SAME-order nuclei (`Charge.joinSquare`); the OTHER order is the grade. This is the
+   SAME-order nuclei (`Reading.joinSquare`); the OTHER order is the grade. This is the
    formalization's reconciliation of the corpus's "(j_k, j_t)" prose with the proven
    structure — the pair `(j_k, j_t)` is NOT two nuclei in one square but one same-order
    square per `K₄`-grade, the grade being the cross-order axis.
@@ -115,7 +115,7 @@ def bigradingBij : Bij K4 Articulating.FourCorner where
   right := toFourCorner_ofFourCorner
 
 /-- Composed with `FourCornerCell.cornerBij`, the bigrading bijection also identifies a
-`K₄`-grade with a diamond **corner** (`= Charge`): `K4 ≃ Articulating.Corner`. -/
+`K₄`-grade with a diamond **corner** (`= Reading`): `K4 ≃ Articulating.Corner`. -/
 def gradeCornerBij : Bij K4 Articulating.Corner where
   to g := Articulating.FourCorner.toCorner (toFourCorner g)
   inv c := ofFourCorner (Articulating.FourCorner.ofCorner c)
@@ -155,41 +155,41 @@ theorem axes_independent (g : K4) :
 
 /-! ## 2. The tower — a `K₄`-graded family of nuclear quartets
 
-Each grade gets a **same-order** nuclear square (`Charge.joinSquare`) on the *proven*
-knowledge-Heyting-algebra `Charge.heytingK`. The grade chooses which two same-order
+Each grade gets a **same-order** nuclear square (`Reading.joinSquare`) on the *proven*
+knowledge-Heyting-algebra `Reading.heytingK`. The grade chooses which two same-order
 poles the diamond's nuclei raise toward; the OTHER order is the grade, not a nucleus.
 We index by `K4` and realize the Nuclear Quartet Theorem at every grade. -/
 
 /-- The pair of same-order poles assigned to each `K₄`-grade. The grade's two `ℤ/2`
-coordinates select the two charge poles the diamond raises toward (all four poles are
+coordinates select the two reading poles the diamond raises toward (all four poles are
 exhausted as the grade ranges over `K₄`); the nuclei stay in ONE order (`joinSquare`
 on `heytingK`), the cross-order distinction being the grade itself. -/
-def gradePoles : K4 → Charge × Charge
-  | K4.id      => (Charge.kBot, Charge.kBot)
-  | K4.neg     => (Charge.tTop, Charge.kBot)
-  | K4.conf    => (Charge.tBot, Charge.kBot)
-  | K4.negConf => (Charge.kTop, Charge.kBot)
+def gradePoles : K4 → Reading × Reading
+  | K4.id      => (Reading.kBot, Reading.kBot)
+  | K4.neg     => (Reading.tTop, Reading.kBot)
+  | K4.conf    => (Reading.tBot, Reading.kBot)
+  | K4.negConf => (Reading.kTop, Reading.kBot)
 
 /-- **The bigraded diamond tower** as a `K₄`-indexed family of nuclear squares on the
-proven knowledge-Heyting-algebra. Each grade is a `Charge.joinSquare` — two commuting
+proven knowledge-Heyting-algebra. Each grade is a `Reading.joinSquare` — two commuting
 SAME-order join-nuclei — so each grade IS a proven nuclear quartet. -/
-def towerSquare (g : K4) : NuclearSquare Charge.heytingK :=
-  Charge.joinSquare (gradePoles g).1 (gradePoles g).2
+def towerSquare (g : K4) : NuclearSquare Reading.heytingK :=
+  Reading.joinSquare (gradePoles g).1 (gradePoles g).2
 
 /-- Packaged as a `Positing.Bigraded.SquareFamily` over the index type `K4`: the stacked
 diamonds, one per grade. -/
-def towerFamily : SquareFamily Charge.heytingK K4 where
+def towerFamily : SquareFamily Reading.heytingK K4 where
   square := towerSquare
 
 /-- **Every grade realizes the Nuclear Quartet Theorem** (`fix_pi_iff`): at grade `g`,
-a charge is `π`-quiescent iff it is fixed by both same-order nuclei. -/
-theorem grade_fix_pi_iff (g : K4) (a : Charge) :
+a reading is `π`-quiescent iff it is fixed by both same-order nuclei. -/
+theorem grade_fix_pi_iff (g : K4) (a : Reading) :
     (towerSquare g).pi a = a ↔ ((towerSquare g).j1.j a = a ∧ (towerSquare g).j2.j a = a) :=
   (towerSquare g).fix_pi_iff a
 
 /-- The four diamond corners at each grade, read off `Articulating.Corner` via the quartet's
 `corner` operator (`absurd = free`, `potential = j₁`, `active = j₂`, `stable = π`). -/
-def gradeCorner (g : K4) (c : Articulating.Corner) (a : Charge) : Charge :=
+def gradeCorner (g : K4) (c : Articulating.Corner) (a : Reading) : Reading :=
   (towerSquare g).corner c a
 
 /-! ## 3. The `K₄`-graded bigraded diamond tower -/
@@ -198,13 +198,13 @@ def gradeCorner (g : K4) (c : Articulating.Corner) (a : Charge) : Charge :=
 quartets together with the `K₄ ≃ Articulating.FourCorner` bigrading bijection. -/
 structure BigradedTower where
   /-- The `K₄`-graded family of nuclear squares (the stacked diamonds). -/
-  family : SquareFamily Charge.heytingK K4
+  family : SquareFamily Reading.heytingK K4
   /-- The `K₄ ≃ Articulating.FourCorner` bigrading bijection. -/
   bigrading : Bij K4 Articulating.FourCorner
 
 /-- **The bigraded diamond tower.** The nuclear quartet (the diamond),
 graded by `K₄ ≅ ℤ/2(knowledge) × ℤ/2(truth)` and stacked: a `K₄`-indexed family of
-nuclear quartets on the proven knowledge-Heyting-algebra `Charge.heytingK`, together
+nuclear quartets on the proven knowledge-Heyting-algebra `Reading.heytingK`, together
 with the `K₄ ≃ Articulating.FourCorner` bigrading bijection. -/
 def bigraded_diamond_tower : BigradedTower where
   family := towerFamily
@@ -221,7 +221,7 @@ The two `ℤ/2` factors of `K₄` assemble each grade as the `(knowledge, truth)
 and there is a valuation whose truth-closure is not knowledge-above it. -/
 theorem tower_bigrading_is_two_orders :
     (∀ g : K4, toFourCorner g = (knowledgeBit g, truthBit g))
-    ∧ (∃ v : Valuation, ¬ Positing.FiberAlgebra.fLeK v (fun φ => Charge.joinT Charge.kBot (v φ))) :=
+    ∧ (∃ v : Valuation, ¬ Positing.FiberAlgebra.fLeK v (fun φ => Reading.joinT Reading.kBot (v φ))) :=
   ⟨fun _ => rfl, Positing.FiberAlgebra.cross_order_not_knowledge_nucleus⟩
 
 /-- A proof-carrying bundle witnessing the coherence: the two grading axes are the two
@@ -243,17 +243,17 @@ structure TwoOrdersBigrading where
       ∧ truth_axis (K4.mul K4.neg g) = truth_axis g)
     ∧ (knowledge_axis (K4.mul K4.conf g) = knowledge_axis g
       ∧ truth_axis (K4.mul K4.conf g) = !truth_axis g)
-  /-- Each grade's square uses two SAME-order nuclei (`Charge.joinSquare` on the single
+  /-- Each grade's square uses two SAME-order nuclei (`Reading.joinSquare` on the single
   knowledge-Heyting-algebra `heytingK`) — the OTHER order is the grade, not a nucleus. -/
   grade_same_order : ∀ g : K4,
-    towerSquare g = Charge.joinSquare (gradePoles g).1 (gradePoles g).2
+    towerSquare g = Reading.joinSquare (gradePoles g).1 (gradePoles g).2
   /-- **The cross-order finding** (`Positing.FiberAlgebra.cross_order_not_knowledge_nucleus`):
   there is a valuation whose truth-closure is NOT knowledge-above it — a truth-closure
   is not a knowledge nucleus. This is WHY the second order cannot be a co-nucleus in the
   same square and must enter as a grading axis. -/
   cross_order_forbids_co_nucleus :
     ∃ v : Valuation,
-      ¬ Positing.FiberAlgebra.fLeK v (fun φ => Charge.joinT Charge.kBot (v φ))
+      ¬ Positing.FiberAlgebra.fLeK v (fun φ => Reading.joinT Reading.kBot (v φ))
 
 /-- **The tower's bigrading is the two orders.** The two `ℤ/2` factors of
 `K₄` ARE the two orders (knowledge `∼`, truth `−`) as GRADING axes; each grade's square

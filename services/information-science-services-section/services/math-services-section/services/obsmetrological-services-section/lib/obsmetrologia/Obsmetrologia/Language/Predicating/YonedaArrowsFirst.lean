@@ -398,11 +398,11 @@ theorem isoToPshIso_pshIsoToIso (C : SmallCat) {X Y : C.Obj}
     isoToPshIso C (pshIsoToIso C e) = e :=
   Psh.IsoExt (yoneda_full C e.hom) (yoneda_full C e.inv)
 
-/-! ## 7. INSTANCE — the thin knowledge-presheaf category over `Charge`
+/-! ## 7. INSTANCE — the thin knowledge-presheaf category over `Reading`
 
 The knowledge-presheaf category `KP` is *thin*: `Hom(a,b)` is a singleton iff `a ≤ₖ b`,
-else empty. We realize a faithful finite fragment on the four-corner `Charge` poset
-(`Charge.KLE`), the value-bilattice at a point — objects are charges, an arrow `a ⟶ b`
+else empty. We realize a faithful finite fragment on the four-corner `Reading` poset
+(`Reading.KLE`), the value-bilattice at a point — objects are readings, an arrow `a ⟶ b`
 is a proof `KLE a b`. This is the predication/knowledge-presheaf base in
 miniature (one cell's fiber, ordered by knowledge), with the corpus's initial object
 `⊥ₖ` and terminal object `⊤ₖ` (`…-initial-terminal.md`). On a thin category `y` is
@@ -410,41 +410,41 @@ automatically fully faithful — `object_is_its_morphisms` says `a ≅ b ⇔ y(a
 since the category is a *poset* (antisymmetric), `a ≅ b ⇔ a = b`: the object is exactly
 its up-set of arrows. -/
 
-/-- The thin knowledge-presheaf category on the `Charge` knowledge poset: objects are
-charges, `Hom a b = PLift (KLE a b)` (proof-irrelevant singleton/empty), identities and
+/-- The thin knowledge-presheaf category on the `Reading` knowledge poset: objects are
+readings, `Hom a b = PLift (KLE a b)` (proof-irrelevant singleton/empty), identities and
 composition are reflexivity/transitivity of `≤ₖ`. -/
 def KnowledgePresheafCat : SmallCat where
-  Obj := Charge
-  Hom a b := PLift (Charge.KLE a b)
-  id a := ⟨Charge.kle_refl a⟩
-  comp {a b c} f g := ⟨Charge.kle_trans a b c f.down g.down⟩
+  Obj := Reading
+  Hom a b := PLift (Reading.KLE a b)
+  id a := ⟨Reading.kle_refl a⟩
+  comp {a b c} f g := ⟨Reading.kle_trans a b c f.down g.down⟩
   id_comp _ := rfl
   comp_id _ := rfl
   assoc _ _ _ := rfl
 
 /-- The corpus's **initial object** of `KP`: the knowledge-bottom `⊥ₖ` — a unique arrow to
 every object (`kBot_le`). -/
-def kpInitialArrow (a : Charge) : KnowledgePresheafCat.Hom Charge.kBot a :=
-  ⟨Charge.kBot_le a⟩
+def kpInitialArrow (a : Reading) : KnowledgePresheafCat.Hom Reading.kBot a :=
+  ⟨Reading.kBot_le a⟩
 
 /-- The corpus's **terminal object** of `KP`: the knowledge-top `⊤ₖ` — a unique arrow from
 every object (`le_kTop`). -/
-def kpTerminalArrow (a : Charge) : KnowledgePresheafCat.Hom a Charge.kTop :=
-  ⟨Charge.le_kTop a⟩
+def kpTerminalArrow (a : Reading) : KnowledgePresheafCat.Hom a Reading.kTop :=
+  ⟨Reading.le_kTop a⟩
 
 /-- In the thin knowledge-presheaf category, an **object iso is object equality**: `a ≅ b`
 forces `a = b` by antisymmetry of `≤ₖ`. Combined with `object_is_its_morphisms`, this is
-the sharpest arrows-first statement: the charge (object) is *literally* recovered from its
+the sharpest arrows-first statement: the reading (object) is *literally* recovered from its
 bundle of `≤ₖ`-arrows `y(a) = {x : KLE x a}`. -/
-theorem kp_iso_is_eq {a b : Charge} (e : KnowledgePresheafCat.Iso a b) : a = b :=
-  Charge.kle_antisymm a b e.hom.down e.inv.down
+theorem kp_iso_is_eq {a b : Reading} (e : KnowledgePresheafCat.Iso a b) : a = b :=
+  Reading.kle_antisymm a b e.hom.down e.inv.down
 
-/-- **The arrows-first reading, concretely.** In the knowledge-presheaf category, a charge
+/-- **The arrows-first reading, concretely.** In the knowledge-presheaf category, a reading
 `a` is recovered from its representable presheaf `y(a) = Hom(−, a) = {x | x ≤ₖ a}` (its
 down-set of knowledge-arrows): if `y(a) ≅ y(b)` as presheaves then `a = b`. The object is
 its system of incoming arrows — the corpus's initial/terminal `⊥ₖ`/`⊤ₖ` are then just the
 empty-information and full-information *arrow bundles*. -/
-theorem kp_object_is_its_arrows {a b : Charge}
+theorem kp_object_is_its_arrows {a b : Reading}
     (e : Psh.Iso (repr KnowledgePresheafCat a) (repr KnowledgePresheafCat b)) : a = b :=
   kp_iso_is_eq (pshIsoToIso KnowledgePresheafCat e)
 

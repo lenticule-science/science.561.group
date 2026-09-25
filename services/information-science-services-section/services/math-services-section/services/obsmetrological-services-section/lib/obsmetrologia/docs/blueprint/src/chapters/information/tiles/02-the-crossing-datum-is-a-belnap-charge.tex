@@ -1,6 +1,6 @@
 \section{The crossing datum is a Belnap charge}
 
-\begin{proposition}[Crossing charge]\label{thm:crossing-charge}\lean{Obsmetrologia.AperiodicOrder.Tiling.crossingCharge}\leanok\uses{thm:weave-draft, thm:four-object}
+\begin{proposition}[Crossing charge]\label{thm:crossing-charge}\lean{Obsmetrologia.AperiodicOrder.Tiling.crossingReading}\leanok\uses{thm:weave-draft, thm:four-object}
 The over/under datum of one crossing as a four-corner charge, the slot pair
 $(\text{warp-over?},\,\text{weft-over?})$. Through \texttt{Articulating.FourCorner.toCorner} it lands in
 \texttt{Charge}, so a crossing \emph{is} a bilattice value.
@@ -14,13 +14,13 @@ knowledge-extremes.
 \end{theorem}
 
 \begin{theorem}[Over/under exchange is Belnap negation]\label{thm:overunder-negate}\lean{Obsmetrologia.AperiodicOrder.Tiling.overUnder_swap_is_negate}\leanok\uses{thm:crossing-charge, thm:klein-four-symmetry}
-Swapping the warp/weft roles of a crossing is the coordinate-swap $\texttt{Charge.negate}$
+Swapping the warp/weft roles of a crossing is the coordinate-swap $\texttt{Reading.negate}$
 ($\sim$): it fixes the hole ($\bot$) and the mis-crossing ($\top$) and swaps the two
 definite over/under readings ($t \leftrightarrow f$). The truth-order involution of the
 fabric is the over/under flip.
 \end{theorem}
 
-\begin{theorem}[The charge-coloured draft is sofic over FOUR]\label{thm:charge-coloured-sofic}\lean{Obsmetrologia.AperiodicOrder.Tiling.charge_coloured_sofic}\leanok\uses{thm:weave-draft-sofic, thm:crossing-charge, thm:four-colour-palette-is-four}
+\begin{theorem}[The charge-coloured draft is sofic over FOUR]\label{thm:charge-coloured-sofic}\lean{Obsmetrologia.AperiodicOrder.Tiling.reading_coloured_sofic}\leanok\uses{thm:weave-draft-sofic, thm:crossing-charge, thm:four-colour-palette-is-four}
 Relabelling each crossing of an admissible plain weave by its Belnap charge is a $1$-block
 factor of the draft SFT, so the bilattice-coloured fabric is a sofic shift over
 \texttt{Charge} --- the Tiles ``bilattice-coloured sofic tiling,'' realized on a plain
