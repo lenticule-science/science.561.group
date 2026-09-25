@@ -205,7 +205,7 @@ async function invoke(store, activity, at) {
 
 export async function run(activity, op = "invoke-service", at = new Date().toISOString(), options = {}) {
   const dataRoot = resolve(options.dataRoot ?? process.env.OML_DATA_ROOT ?? join(NODE_ROOT, "data"));
-  const { createSettlementStore } = await import("@red-cup-engineering/computer-code-engineering-services-section/semiotic-eavt/record-semantic-record");
+  const { createSettlementStore } = await import("@red-cup-engineering/witness-journal-document-service/record-semantic-record");
   const store = createSettlementStore({ settlementRoot: dataRoot, objectKind: "lenticule.oml.change-bundle-qualification.record", actor: ACTOR });
   if (op === "solicit-service") return solicit(store, activity, at);
   if (op === "invoke-service") return invoke(store, activity, at);
