@@ -1,0 +1,80 @@
+---
+type: prose
+class: literature-survey
+status: draft
+title: Survey of algebraic theory
+description: A short survey of algebraic theory in the sense of Lawvere — the smallest, cleanest categorical notion of "a theory" — for use as the first encoding test against predication-theory.
+---
+
+# Survey of algebraic theory
+
+A short survey of *algebraic theory* in the sense of Lawvere — the smallest, cleanest categorical notion of "a theory" — for use as the first encoding test against [predication-theory](../../research/2026/07/objects/predication-theory.md).
+
+## Definition
+
+A **Lawvere algebraic theory** is a small category $\mathbf{T}$ with strict finite products and a distinguished generating object $X$ such that every object of $\mathbf{T}$ is a finite product $X^n$ for some $n \in \mathbb{N}$ (with $X^0 = 1$ the terminal object) (Lawvere 1963).
+
+Morphisms in $\mathbf{T}$ are read as **operations**:
+
+- A morphism $X^n \to X$ is an $n$-ary operation. The homset $\mathbf{T}(X^n, X)$ is the set of derivable $n$-ary operations of the theory.
+- A morphism $X^n \to X^m$ is, by the universal property of products, an $m$-tuple of $n$-ary operations.
+- The product projections $\pi_i : X^n \to X$ are the *variable projections* (the $i$-th of $n$ variables).
+- Composition $X^n \xrightarrow{\omega} X^k \xrightarrow{\nu} X$ is **substitution** of operations: $\nu$ applied to the $k$ outputs of $\omega$.
+
+Equational axioms enter through the *equalities of morphisms* in $\mathbf{T}$: an equation $\omega_1 = \omega_2$ between two operations of the same arity is the assertion that, in the theory's category, these two morphisms are literally equal.
+
+## Models
+
+A **model** (or **$\mathbf{T}$-algebra**) is a finite-product-preserving functor $A : \mathbf{T} \to \mathbf{Set}$. Unpacking:
+
+- $A(X) =: |A|$ is the **carrier set**.
+- $A(X^n) \cong |A|^n$ (finite-product preservation).
+- Each operation $\omega : X^n \to X$ in $\mathbf{T}$ becomes a function $A(\omega) : |A|^n \to |A|$.
+- Equations $\omega_1 = \omega_2$ in $\mathbf{T}$ become *literal* equalities $A(\omega_1) = A(\omega_2)$ as functions.
+
+The category of $\mathbf{T}$-algebras is the full subcategory $\mathbf{Mod}(\mathbf{T}) \subseteq \mathbf{Set}^{\mathbf{T}}$ of finite-product-preserving functors. Morphisms of models are natural transformations, which unpack to operation-preserving functions.
+
+## Standard example: the theory of groups
+
+$\mathbf{T}_{\mathrm{Grp}}$ has objects $X^n$ for $n \geq 0$. Among the morphisms:
+
+- $e : X^0 \to X$ (the unit; equivalently a chosen element)
+- $i : X \to X$ (inversion)
+- $m : X^2 \to X$ (multiplication)
+
+and all their derived combinations under composition and pairing. The group axioms are equations between morphisms:
+
+- $m \circ (m \times \mathrm{id}_X) = m \circ (\mathrm{id}_X \times m)$ (associativity, as morphisms $X^3 \to X$)
+- $m \circ (e \times \mathrm{id}_X) \circ \lambda^{-1} = \mathrm{id}_X$ (left unit, after the canonical iso $1 \times X \cong X$)
+- $m \circ (i, \mathrm{id}_X) \circ \Delta = e \circ !$ (left inverse)
+
+Plus their right-handed counterparts. A model is a group: $|A|$ is the underlying set, $A(e), A(i), A(m)$ are the unit, inversion, and multiplication.
+
+## Theory morphisms
+
+A **morphism of Lawvere theories** $\mathbf{T} \to \mathbf{T}'$ is a finite-product-preserving functor sending the generator to the generator. It induces, contravariantly, a functor on algebras $\mathbf{Mod}(\mathbf{T}') \to \mathbf{Mod}(\mathbf{T})$ (reduct: forget the new operations or impose the new equations).
+
+A **sub-theory** $\mathbf{T} \hookrightarrow \mathbf{T}'$ is a faithful generator-preserving finite-product-preserving inclusion: $\mathbf{T}'$ has all of $\mathbf{T}$'s operations and equations and possibly more. Standard examples: monoids $\hookrightarrow$ groups (forget inverses); abelian groups $\hookrightarrow$ groups (add commutativity).
+
+## Equivalence: Morita and the monad bridge
+
+Two Lawvere theories are **Morita equivalent** when their categories of algebras are equivalent. This is strictly weaker than isomorphism of theory-categories — different presentations of the same algebraic structure (with redundant operations, derived operations, choice of generators) yield Morita-equivalent but non-isomorphic theories.
+
+The classical bridge (Linton 1966; Manes 1976): the assignment $\mathbf{T} \mapsto $ (the finitary monad on $\mathbf{Set}$ whose algebras are $\mathbf{T}$-algebras) is an equivalence between Lawvere theories (up to Morita) and finitary monads on $\mathbf{Set}$. This is the reason "algebraic theory" and "finitary Set-monad" are used interchangeably in much of the literature.
+
+## What the data of an algebraic theory amounts to
+
+For the encoding question, the structural data of an algebraic theory reduces to:
+
+1. A **set of operation symbols** with arities (the morphisms $X^n \to X$ generated under substitution).
+2. A **set of equational axioms** (equations of derived operations).
+3. The free category generated by (1) modulo (2), with finite products — this is $\mathbf{T}$.
+
+Everything else — models, theory morphisms, sub-theories, Morita equivalence — is derived.
+
+## References
+
+- Lawvere, F. W. (1963). *Functorial semantics of algebraic theories.* PhD thesis, Columbia. Reprinted with commentary in *Reprints in Theory and Applications of Categories* 5 (2004).
+- Linton, F. E. J. (1966). "Some aspects of equational categories." *Proc. Conf. on Categorical Algebra (La Jolla, 1965)*, Springer, 84–94.
+- Manes, E. (1976). *Algebraic Theories.* Graduate Texts in Mathematics 26. Springer.
+- Adámek, J.; Rosický, J.; Vitale, E. M. (2011). *Algebraic Theories: A Categorical Introduction to General Algebra.* Cambridge Tracts in Mathematics 184.

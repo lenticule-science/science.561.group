@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "category-theory/category/scripts/functoring/content/functor/scripts/fibering/content/hyperdoctrine",
+  "title": "hyperdoctrine",
+  "description": "A functor P : C^op → Lat from a base category of contexts to fibers of propositions (Lawvere). Reindexing P(f) along a substitution f has adjoints ∃_f ⊣ f* ⊣ ∀_f — the quantifiers are adjoint functors. The corpus's predicate-category is the instance with fibers in the bilattice FOUR (a MALL-algebra), settling = least fixpoint of a fiber-wise nucleus. A functor refined to carry fibered logical structure.",
+  "allOf": [
+    {
+      "$ref": "category-theory/category/scripts/functoring/content/functor"
+    }
+  ],
+  "type": "object",
+  "required": [
+    "base",
+    "fibers",
+    "reindexing",
+    "quantifier-adjoints"
+  ],
+  "properties": {
+    "base": {
+      "description": "the base category C of contexts/entities",
+      "$ref": "category-theory/category"
+    },
+    "fibers": {
+      "description": "for each context, a lattice of propositions — in this corpus the bilattice FOUR as a MALL-algebra"
+    },
+    "reindexing": {
+      "description": "substitution f* : P(d) → P(c) along f : c → d, contravariantly functorial"
+    },
+    "quantifier-adjoints": {
+      "description": "∃_f ⊣ f* ⊣ ∀_f, with the Beck–Chevalley condition (witnessing is compositional)",
+      "const": true
+    }
+  }
+}

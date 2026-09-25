@@ -1,0 +1,76 @@
+---
+title: "Zheng Qi"
+type: "term"
+date-created: 2026-04-02
+---
+
+正气 — 'righteous qi,' the body's total functional capacity to maintain health, resist disease, and recover from illness — the concept that determines whether exposure to a pathogenic factor results in disease
+
+Requires
+
+- qi
+- xue
+- jing
+- shen
+
+Table of contents
+
+- [What Zheng Qi comprises](#what-zheng-qi-comprises)
+
+- [Zheng Qi and Xie Qi](#zheng-qi-and-xie-qi)
+
+- [Clinical significance](#clinical-significance)
+
+- [See also](#see-also)
+
+Zheng Qi (正气, &ldquo;righteous Qi&rdquo; or &ldquo;upright Qi&rdquo;) is [Traditional Chinese Medicine&rsquo;s](../../documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/medicine/_index.md) term for the body&rsquo;s total functional capacity to maintain health, resist pathogenic factors, and recover from illness. It encompasses all the body&rsquo;s defensive, regenerative, and self-regulating functions — what biomedicine distributes across concepts like immune function, homeostatic regulation, tissue repair, and physiological reserve.
+
+The *Huang Di Nei Jing* states the foundational principle: &ldquo;When Zheng Qi is sufficient internally, pathogenic factors cannot invade&rdquo; (正气存内，邪不可干). Disease, in this framework, is not caused by the pathogenic factor alone but by the interaction between the pathogenic factor (*xie qi* 邪气, &ldquo;evil Qi&rdquo;) and the body&rsquo;s Zheng Qi. A strong Zheng Qi can resist or expel a pathogen; a weak Zheng Qi allows the pathogen to establish and cause disease.
+
+## What Zheng Qi comprises
+
+Zheng Qi is not a separate substance. It is the aggregate functional capacity of all the body&rsquo;s vital substances and organ systems working together:
+
+- **[Qi](../../../../services/traditional-chinese-medicine-services-section/content/text/glossary/terms/qi.md)** — the circulating operational force (the body&rsquo;s potential capacity)
+
+- **[Blood (Xue)](../../../../services/traditional-chinese-medicine-services-section/content/text/glossary/terms/xue.md)** — the nourishing, moistening medium
+
+- **[Jing](../../../../services/traditional-chinese-medicine-services-section/content/text/glossary/terms/jing.md)** — the constitutional reserve (stored potential)
+
+- **[Shen](../../../../services/traditional-chinese-medicine-services-section/content/text/glossary/terms/shen.md)** — the awareness and adaptive capacity
+
+- **[Yin and Yang](../../../../services/traditional-chinese-medicine-services-section/content/text/glossary/terms/yin-yang.md)** in proper balance
+
+- **[Zang-Fu](../../../../services/traditional-chinese-medicine-services-section/content/text/glossary/terms/zang-fu.md)** organ systems functioning harmoniously
+
+When any of these components is deficient, Zheng Qi as a whole is weakened, and the body becomes vulnerable to disease.
+
+## Zheng Qi and Xie Qi
+
+TCM [etiology](../../../../services/traditional-chinese-medicine-services-section/content/text/documents/articles/notes/etiology.md) frames disease as the contest between Zheng Qi and Xie Qi (邪气, &ldquo;pathogenic Qi&rdquo; or &ldquo;evil Qi&rdquo;). The outcome depends on the relative strength of each:
+
+- **Strong Zheng Qi, weak Xie Qi**: The pathogen is expelled. No disease occurs, or illness is mild and brief.
+
+- **Weak Zheng Qi, strong Xie Qi**: The pathogen overwhelms the body&rsquo;s defenses. Disease occurs — severity depends on the degree of imbalance.
+
+- **Zheng Qi and Xie Qi in prolonged contest**: The struggle produces the signs and symptoms of disease — fever (the body&rsquo;s heat-generating defense), inflammation (Zheng Qi mobilizing to the site of invasion), fatigue (Zheng Qi being consumed in the fight).
+
+This framework has a clinical consequence: TCM treatment does not only target the pathogen (Xie Qi). It also supports the body&rsquo;s Zheng Qi — strengthening what is deficient, restoring what is depleted, ensuring the body has the functional capacity to complete its own recovery. The phrase &ldquo;support the righteous and expel the pathogenic&rdquo; (fu zheng qu xie 扶正祛邪) describes the dual treatment principle.
+
+## Clinical significance
+
+Zheng Qi determines prognosis. Two patients with the same pathogenic exposure may have dramatically different outcomes depending on their Zheng Qi. A person with robust Zheng Qi who encounters Wind-Cold (a common cold) mounts a brief defensive response and recovers quickly. A person with depleted Zheng Qi — from overwork, chronic illness, poor nutrition, emotional exhaustion — may develop a prolonged illness or see the pathogen penetrate to deeper levels (from exterior to interior pattern).
+
+This is why TCM places so much emphasis on tonification — strengthening Qi, nourishing Blood, enriching Yin, warming Yang — even in the treatment of apparently infectious conditions. Killing the pathogen is insufficient if the body lacks the capacity to heal the damage and prevent recurrence.
+
+## See also
+
+- [Qi](../../../../services/traditional-chinese-medicine-services-section/content/text/glossary/terms/qi.md) — the potential component of Zheng Qi
+
+- [Blood (Xue)](../../../../services/traditional-chinese-medicine-services-section/content/text/glossary/terms/xue.md) — the nourishing component
+
+- [Jing](../../../../services/traditional-chinese-medicine-services-section/content/text/glossary/terms/jing.md) — the constitutional reserve
+
+- [Etiology](../../../../services/traditional-chinese-medicine-services-section/content/text/documents/articles/notes/etiology.md) — how disease arises from the Zheng Qi / Xie Qi interaction
+
+- [Pattern Diagnosis](../../../../services/traditional-chinese-medicine-services-section/content/text/documents/articles/notes/pattern-diagnosis.md) — assessing whether the pattern is excess (Xie Qi strong) or deficient (Zheng Qi weak)

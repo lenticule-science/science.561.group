@@ -1,0 +1,23 @@
+\section{The knowledge lattice}
+\begin{theorem}[$\vee_k$ is an upper bound]\label{thm:le-joink}\lean{Obsmetrologia.Charge.le_joinK_left}\leanok\uses{thm:kle}
+$a \le_k a \vee_k b$. The companion \texttt{le\_joinK\_right} gives
+$b \le_k a \vee_k b$, so the knowledge join dominates both arguments.
+\end{theorem}
+\begin{theorem}[$\vee_k$ is the least upper bound]\label{thm:joink-le}\lean{Obsmetrologia.Charge.joinK_le}\leanok\uses{thm:le-joink, thm:kle-antisymm}
+If $a \le_k c$ and $b \le_k c$ then $a \vee_k b \le_k c$. Hence $\vee_k$ is the
+\emph{least} upper bound in the knowledge order.
+\end{theorem}
+\begin{theorem}[$\wedge_k$ is a lower bound]\label{thm:meetk-le}\lean{Obsmetrologia.Charge.meetK_le_left}\leanok\uses{thm:kle}
+$a \wedge_k b \le_k a$. The companion \texttt{meetK\_le\_right} gives
+$a \wedge_k b \le_k b$, so the knowledge meet is below both arguments.
+\end{theorem}
+\begin{theorem}[$\wedge_k$ is the greatest lower bound]\label{thm:le-meetk}\lean{Obsmetrologia.Charge.le_meetK}\leanok\uses{thm:meetk-le}
+If $c \le_k a$ and $c \le_k b$ then $c \le_k a \wedge_k b$. Hence $\wedge_k$ is
+the \emph{greatest} lower bound.
+\end{theorem}
+\begin{theorem}[Bounds $\bot_k$ and $\top_k$]\label{thm:kbot-ktop}\lean{Obsmetrologia.Charge.kBot_le}\leanok\uses{thm:kle, thm:kBot-least}
+$\bot_k$ is the least element, $\texttt{KLE}\,\bot_k\,a$ for every $a$ --- the
+knowledge-least seed settling climbs from --- and dually
+\texttt{le\_kTop} gives $a \le_k \top_k$. With the join and meet results this
+makes \texttt{Charge} a \emph{bounded lattice}, derived rather than assumed.
+\end{theorem}

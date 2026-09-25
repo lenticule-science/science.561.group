@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/bitopological-settling-site/content/quantale-enriched-sheaf",
+  "title": "quantale-enriched-sheaf",
+  "description": "A Q-enriched sheaf on a Grothendieck site: a contravariant functor from the site's indexing category into complete weighted lattices that satisfies the sheaf gluing condition. It generalizes graph-indexed quantale-enriched cellular sheaves so the framework applies to the bitopological settling site.",
+  "type": "object",
+  "required": ["quantale", "site", "presheaf", "sheafCondition"],
+  "properties": {
+    "quantale": {
+      "type": "object",
+      "description": "a commutative unital quantale Q = (Q, *, 1, <=): a complete lattice with an associative-commutative-unital product * distributing over arbitrary suprema",
+      "required": ["product", "unit", "distributesOverSuprema"],
+      "properties": {
+        "product": { "const": "binary-operation", "description": "the associative-commutative-unital multiplication *" },
+        "unit": { "description": "the unit element 1 of *" },
+        "distributesOverSuprema": { "const": true, "description": "p * (\\/_i q_i) = \\/_i (p * q_i) for arbitrary suprema" }
+      }
+    },
+    "site": {
+      "$ref": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/bitopological-settling-site",
+      "description": "the Grothendieck site (T, J) over which the sheaf is indexed; here the bitopological settling site"
+    },
+    "presheaf": {
+      "type": "object",
+      "description": "a Q-enriched presheaf F : T^op -> Q-Cat_cwl assigning each object a stalk and each morphism a contravariant Q-functor",
+      "required": ["stalk", "restriction"],
+      "properties": {
+        "stalk": { "const": "complete-weighted-lattice", "description": "F(sigma): a Q-category admitting all weighted meets and joins" },
+        "restriction": { "const": "q-functor", "description": "F(f) : F(tau) -> F(sigma) for each f : sigma -> tau, contravariant" }
+      }
+    },
+    "sheafCondition": {
+      "const": true,
+      "description": "for every covering family {f_i : U_i -> U} in J, F(U) -> Eq(prod_i F(U_i) => prod_{i,j} F(U_i x_U U_j)) is an equivalence of complete weighted lattices"
+    }
+  }
+}

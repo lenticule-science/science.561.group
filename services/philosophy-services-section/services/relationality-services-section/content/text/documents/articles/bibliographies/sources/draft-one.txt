@@ -1,0 +1,218 @@
+:PROPERTIES:
+:ID:       8d71ddf8-90e8-4af7-a34e-3ec113da0060
+:END:
+#+TITLE: RITM: Constructing and Reflecting a Relational ∞-Topos Modality
+#+AUTHOR: em senn
+#+DATE: 2025-10-13
+#+OPTIONS: toc:t num:t
+#+LATEX_HEADER: \usepackage{amsmath,amssymb,mathtools,stmaryrd}
+#+LATEX_HEADER: \newcommand{\Hom}{\mathrm{Hom}}
+#+LATEX_HEADER: \newcommand{\End}{\mathrm{End}}
+#+LATEX_HEADER: \newcommand{\id}{\mathrm{id}}
+#+LATEX_HEADER: \newcommand{\Boxr}{\Box^{\rightarrow}}
+#+LATEX_HEADER: \newcommand{\Diaml}{\Diamond^{\leftarrow}}
+
+* Abstract
+We define and construct a *Relational ∞-Topos Modality* (RITM): a quadruple of
+adjoint, idempotent endofunctors internal to a (Grothendieck) cohesive ∞-topos,
+encoding directed relationality.  
+Two concrete realizations are exhibited:
+(1) a presheaf ∞-topos on a directed poset (the *relational cell*), and  
+(2) a cohesive sheaf ∞-topos on smooth spaces (the *relational site*).  
+
+We further prove:
+- minimal and essential axiom sets and their logical independence,
+- constructive realization via *Lawvere–Tierney nuclei* corresponding to
+  Grothendieck topologies,
+- a recursive RITM on the functor ∞-category \(\End(\mathfrak E)\),
+- and a smooth cohesive model ensuring strict ∞-adjunctions.  
+All cohesivity claims are verified through (−1)-connected / effective epi
+arguments (HTT §6.5).
+
+* 1. Introduction
+Grothendieck’s theory of topoi situates sheaf semantics over sites (SGA4).  
+Lurie’s *Higher Topos Theory* upgrades this to ∞-topoi; Johnstone’s
+*Elephant* systematizes subtopoi via local operators.  
+Cohesive ∞-topoi (Lawvere; Schreiber) equip an adjoint chain
+\(\Pi\dashv\Delta\dashv\Gamma\dashv\nabla\).  
+RITM internalizes *directionality* by inserting a commuting middle pair into
+that cohesive paradigm. Our contributions:
+
+- Axiomatization (minimal vs. convenient) of RITM and a homotopy-invariant
+  notion of *directed ∞-connectedness*;
+- A *Grothendieck* construction in \(\mathrm{PSh}(\mathcal D)\) with commuting
+  nuclei \(j_f,j_b\) yielding essential geometric inclusions and an explicit
+  cohesive outer adjunction;
+- A *recursive* RITM on \(\End(\mathfrak E)\) via sandwich (whiskering)
+  modalities;
+- A smooth cohesive model ensuring internal mapping objects and strict
+  ∞-adjunctions.
+
+* 2. Axioms of the Relational ∞-Topos Modality
+** 2.1 Minimal Axioms (MA)
+#+begin_definition
+A *minimal RITM* on a cohesive ∞-topos 𝔈 is a quadruple
+\[
+\Pi^{→}\dashv\Boxr\dashv\Diaml\dashv\nabla^{←}
+\]
+satisfying:
+(MA1) \(\Pi^{→}\) (a left-exact localization) preserves all colimits and finite limits;  
+\(\nabla^{←}\) (a right-exact coreflection) preserves all limits and finite colimits.  
+These preservation conditions follow from their adjoint roles within the cohesive
+quadruple, though only the finite (co)limit cases are used in later proofs.
+(MA2) \(T:=\Boxr\Diaml\) and \(S:=\Diaml\Boxr\) are idempotent monads on 𝔈.  
+(MA3) There is a canonical equivalence \(\Boxr\Diaml\simeq\Diaml\Boxr\).  
+(MA4) *Cohesion (outer pair):* the unit
+\(\eta_X: X\to\nabla^{←}\Pi^{→}X\) is (−1)-connected (effective epi) and the
+counit \(\epsilon_X:\Pi^{→}\nabla^{←}X\to X\) is an effective mono (HTT §6.5).
+#+end_definition
+
+** 2.2 Essential / “Convenient” Axioms (EA)
+#+begin_definition
+A *convenient RITM* assumes additionally:  
+(EA1) \(\Boxr,\Diaml\) are fully faithful inverse-image functors of essential
+geometric inclusions of subtopoi \(a_f⊣i_f⊣\Pi_f\) and \(a_b⊣i_b⊣\Pi_b\);  
+(EA2) These arise from *Lawvere–Tierney nuclei* \(j_f,j_b\) on 𝔈.
+#+end_definition
+
+#+begin_proposition
+(EA) ⇒ (MA): essential inclusions yield left exact \(a_f\), limit-preserving
+\(\Pi_b\), fully faithful \(i_f,i_b\), and idempotent \(i_fa_f,i_b\Pi_b\).
+Cohesion then follows by (−1)-connected / effective epi stability.
+#+end_proposition
+
+** 2.3 Directed ∞-Connectedness
+#+begin_definition
+Fix a *directed interval object* \(I_d\) in a cohesive setting.
+Let \(\mathcal S_d\) be the class of *directed spheres*—finite colimits of
+iterated suspensions of \(I_d/\partial I_d\).  
+An object X is *directed ∞-connected* iff for all \(S∈\mathcal S_d\),
+\(\mathrm{Map}(S,X)\to\mathrm{Map}(\ast,X)\) is an equivalence.
+#+end_definition
+
+#+begin_proposition
+If (MA4) holds and \(I_d\) generates \(\mathcal S_d\), then
+\(X\) is directed ∞-connected ⇔ \(X\simeq\Pi^{→}X\simeq\nabla^{←}X\).
+#+end_proposition
+
+*Proof sketch.* Both shape and codiscretion fix X iff all directed homotopy
+groups vanish.
+
+* 3. Relational Morphisms
+#+begin_definition
+A *directed relation* \(x\rightsquigarrow y\) is a morphism \(r:x\to\Boxr\Diaml y\).
+Composition is the modal pull–push
+\[
+r_2\circ r_1:=(\Boxr r_2)\circ(\Diaml r_1),
+\]
+characterized by the universal 2-cell against the counit of
+\(\Diaml\dashv\nabla^{←}\). Associativity follows from (MA3).
+#+end_definition
+
+* 4. Constructive Presheaf Model (Relational Cell)
+** 4.1 Ambient Topos
+Let \(\mathcal D=\{0\to1\}\) (thin), \(\mathfrak E=\mathrm{PSh}(\mathcal D)\).
+
+** 4.2 Grothendieck Topologies and Commuting Nuclei
+Define \(J_f,J_b\) by sieves:
+- \(J_f(0)\): maximal; \(J_f(1)\): identity (forward cover),
+- \(J_b(1)\): maximal; \(J_b(0)\): identity (backward cover).  
+These yield Lawvere–Tierney nuclei \(j_f,j_b\) satisfying \(j_fj_b=j_bj_f\)
+(thinness ⇒ no 2-cell obstructions).
+
+** 4.3 Essential Inclusions and Adjunctions
+Let \(i_f:\mathrm{Sh}(\mathcal D^{op},J_f)\hookrightarrow\mathrm{PSh}(\mathcal D)\),
+\(i_b:\mathrm{Sh}(\mathcal D^{op},J_b)\hookrightarrow\mathrm{PSh}(\mathcal D)\),
+with left adjoints (sheafifications) \(a_f,a_b\) and right adjoints
+\(\Pi_f,\Pi_b\). Then:
+\[
+\Pi^{→}:=a_f,\quad \Boxr:=i_f,\quad \Diaml:=i_b,\quad \nabla^{←}:=\Pi_b
+\]
+define a convenient RITM.
+
+** 4.4 Cohesion in Presheaves
+#+begin_theorem
+The outer pair \(\Pi^{→}\dashv\nabla^{←}\) is cohesive on \(\mathfrak E\).
+#+end_theorem
+*Proof.* \(X\to i_fa_fX\) is objectwise surjective (−1)-connected);  
+\(\Pi_b\) preserves limits and (−1)-connectedness; hence
+\(\eta_X:X\to\Pi_ba_fX\) is an effective epi, and
+\(\epsilon:a_f\Pi_bX\to X\) is an effective mono. □
+
+** 4.5 Explicit Computation
+For \(X=(X_0,X_1,u:X_1→X_0)\):
+\[
+(a_fX)_0=\mathrm{coeq}(X_1\rightrightarrows X_0),\quad (a_fX)_1=X_1,
+\]
+dually for \(a_b\). This is the minimal nontrivial directed realization.
+
+* 5. Recursive RITM on \(\End(\mathfrak E)\)
+Let \(\End(\mathfrak E)=\mathrm{Fun}(\mathfrak E,\mathfrak E)\), presentable and enriched.
+
+** 5.1 Sandwich (Whiskering) Modalities
+Define
+\[
+\Pi^{→}_{\End}(F)=a_f∘F,\quad
+\Box^{→}_{\End}(F)=i_f∘F∘a_f,\quad
+\Diaml_{\End}(F)=i_b∘F∘\Pi_b,\quad
+\nabla^{←}_{\End}(F)=F∘\Pi_b.
+\]
+These form a minimal RITM on \(\End(\mathfrak E)\) by whiskering adjunctions.
+
+** 5.2 Stable Subcategories
+Let \(T:=i_f(-)a_f\), \(S:=i_b(-)\Pi_b\).  
+Both are idempotent monads/comonads.  
+Define fixed-point subcategories:
+\[
+\mathrm{RD}:=\{F\mid F∘i_f\simeq i_f∘F\},\quad
+\mathrm{RT}:=\{F\mid F∘i_b\simeq i_b∘F\}.
+\]
+RD is reflective, RT coreflective; restricted functors yield a *secondary RITM*
+whose inner adjunction  
+\[
+\Boxr_{RD}\dashv\Diaml_{RT}
+\]
+arises as the restriction of the sandwich modalities of §5.1 to the stable
+subcategories RD and RT. This makes explicit the adjunction internal to
+\(\End(\mathfrak E)\) that underlies the recursive RITM structure.
+
+* 6. Smooth Cohesive Model (Relational Site)
+Let \(\mathfrak E=\mathrm{Shv}_\infty(\mathcal C,J)\) for cartesian closed \(\mathcal C\)
+(e.g. CartSp). Let \(I_d\) be the directed unit interval.
+Define:
+\[
+\Pi^{→}(X)=\mathrm{colim}_{I_d→X}\!\Hom(I_d,X),\quad
+\Boxr(X)=\mathrm{Map}(I_d,X),\quad
+\Diaml(X)=\mathrm{Map}(X,I_d),\quad
+\nabla^{←}(X)=\mathrm{lim}_{X→I_d}\!\Hom(X,I_d).
+\]
+These satisfy (MA) and yield strict ∞-adjunctions (HTT §5.5.3).  
+Idempotence follows from concatenation \(I_d×I_d→I_d\);  
+cohesion from (−1)-connected stability. □
+
+* 7. Diagrammatic Summary
+Adjunction lattice (outer cohesive pair; inner commuting pair).  
+Recursive closure on \(\End(\mathfrak E)\) by sandwiching.  
+(In publication: include =tikz-cd= versions of triangles and whiskering squares.)
+
+* 8. Conclusion
+RITM provides a minimal yet fully constructive framework for directed
+relationality in ∞-topoi.  
+We gave minimal and essential axioms, explicit Grothendieck realization,
+recursive extension, and cohesive smooth model.  
+The RD/RT split is both algebraic (idempotent (co)monads) and geometric
+(directed shape/codiscretion).  
+Future directions: modal HoTT encodings, AWFS formulations, and enriched
+probabilistic topoi.
+
+* References
+- SGA4. *Théorie des topos et cohomologie étale des schémas.*  
+- Johnstone, P.T. (2002). *Sketches of an Elephant.* (C2.2, C3.3).  
+- Lurie, J. (2009). *Higher Topos Theory (HTT).* §§5.5,6.2,6.5.  
+- Lurie, J. (2017). *Higher Algebra (HA).* §4.7.  
+- Schreiber, U. (2013). *Cohesive ∞-Topoi and Physics.*  
+- Licata, D.; Shulman, M. (2013–2017). Interval/temporal modalities in HoTT.  
+- Riehl, E.; Verity, D. (2018). *Elements of ∞-Category Theory.*  
+- Gepner, D.; Kock, J. (2017). *Univalence in Higher Topos Theory.*  
+- Garner, R. (2009). *Understanding AWFS.*  
+- Cisinski, D.-C. (2006–2019). *Les préfaisceaux comme modèles des types.* 

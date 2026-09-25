@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mark/content/utterance",
+  "title": "utterance",
+  "description": "The ordered pair of one token and one claim - articulating's domain. Not an act of articulation but the structured carrier the act is applied to; its two-sidedness gives articulating's codomain its four-cell partition.",
+  "type": "object",
+  "required": [
+    "token",
+    "claim"
+  ],
+  "properties": {
+    "token": {
+      "$ref": "mark/content/token",
+      "description": "first coordinate - a mark carried on the left"
+    },
+    "claim": {
+      "$ref": "mark/content/claim",
+      "description": "second coordinate - a mark carried on the right"
+    }
+  }
+}

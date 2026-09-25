@@ -1,0 +1,6 @@
+---
+id: de71fc6d-68ef-410c-a9f3-f918c00b059b
+title: melancholic attunement
+date-created: 2025-09-03
+---
+

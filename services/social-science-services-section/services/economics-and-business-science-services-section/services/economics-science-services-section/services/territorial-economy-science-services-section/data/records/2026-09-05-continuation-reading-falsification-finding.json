@@ -1,0 +1,20 @@
+{
+  "type": "TerritorialEconomyScienceFinding",
+  "version": 1,
+  "recordedAt": "2026-09-06T04:30:00Z",
+  "finding": "hope-is-vacuous-in-the-closed-chronicle-substrate",
+  "statement": "The unbuilt-affects note's proposal for hope (a position at which a resolving continuation exists, is not yet reached, and whose outcome cell is held at ⊥) cannot be realized over @red-cup-engineering/agentic-play-engine as built: Chronicle carries Girard's maximality condition (Ch4), genre() takes only fully enumerated maximal chronicles, and resolves reads the last action of an already-terminated chronicle, so the outcome cell is always determined at read time and ⊥ never occurs. This is exactly the falsification path the note names in its section 3 (chronicles finite and fully enumerable at read time make condition 2 never hold), now measured rather than feared.",
+  "measuredIn": "lib/emsenn/services/561-group/services/science-services-section/services/social-science-services-section/services/economics-and-business-science-services-section/services/economics-science-services-section/services/territorial-economy-science-services-section/data/records/2026-09-05-playing-substrate-measurement.json",
+  "citedCode": [
+    {"path": "multi-agent-computer-system-engineering-services-section/apps/playing/src/structuring/concurrent-game/with-symmetry/ludicizing/chronicle.mts", "lines": "1-22, 45-48", "holds": "Chronicle defined by the four chronicle conditions including (Ch4) maximality; no partial, prefix, or open type"},
+    {"path": "multi-agent-computer-system-engineering-services-section/apps/playing/src/genre.mts", "lines": "21-24, 87", "holds": "resolves reads the last action of a terminated chronicle; genre() takes readonly Chronicle[]"}
+  ],
+  "package": {"name": "@red-cup-engineering/agentic-play-engine", "registryLatest": "0.1.2", "workingTree": "0.2.3", "genreAndAffectByteIdentical": true, "tests": "86 of 86"},
+  "consequence": "derive-continuation-reading cannot be fabricated over genre.mts and affect.mts alone. It needs a position (chronicle prefix) carrier over a non-maximal, growing event structure, the unclosed arena the 2026-08-22 obsmetrological note files as its open obligation, so that H(G, π) is open rather than enumerable. That carrier is upstream of this program: it belongs to the playing substrate's owning section and to the proof line, not to a leaf of this program.",
+  "theoryCarriers": [
+    "lib/emsenn/services/561-group/services/science-services-section/services/engineering-science-services-section/services/computer-science-services-section/content/text/documents/articles/notes/2026/08/29/2026-08-29-note-on-the-unbuilt-affects.md",
+    "the 2026-08-22 obsmetrological note on the growing, non-maximal event structure, named by the unbuilt-affects note section 3 as its open obligation"
+  ],
+  "charge": {"support": true, "refutation": false},
+  "recordedBy": "executive session b72aec4f (claude-fable-5.1), from the junior engineer's measurement lot"
+}

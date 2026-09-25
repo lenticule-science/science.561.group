@@ -1,0 +1,34 @@
+---
+title: Fiber Category
+id: fiber-category
+role: structure
+status: plan
+proof_refs: []
+derives-from: acts/judge-profile
+---
+
+
+
+## Definition
+- Carrier: for each context in the [Index Base](./index-base.md), the category whose objects are recognised terms, types, and judgements established by [ProfileRecognitions](./profile-recognitions.md).
+- Morphisms: judgemental morphisms between recognised objects that respect the profile’s typing and entailment rules.
+- Structure: inherits identities and composition from the judgemental data supplied by [JudgeProfile](./judge-profile.md).
+
+## Invariants
+- Every fibre is cartesian closed to the extent earned by the profile recognitions; morphisms preserve typing and recognised equalities.
+- Reindexing along context morphisms (defined separately) acts functorially between fibres, preserving identities and composition.
+
+## Proof
+- Derived from: [JudgeProfile](./judge-profile.md), which equips each context with recognised terms, types, and judgements.
+- Shows that: the judgemental data of the profile forms a category in each context; identities and composition follow from the profile’s typing and entailment closure, yielding the fibre categories used in indexed semantics.
+
+## Earlier material
+
+## Definition
+- Carrier: for each context in the [Index Base](index-base.md), the category whose objects are recognised terms, types, and judgements established by [ProfileRecognitions](profile-recognitions.md).
+- Morphisms: judgemental morphisms between recognised objects that respect the profile’s typing and entailment rules.
+- Structure: inherits identities and composition from the judgemental data supplied by [JudgeProfile](judge-profile.md).
+
+## Proof
+- Derived from: [JudgeProfile](judge-profile.md), which equips each context with recognised terms, types, and judgements.
+- Shows that: the judgemental data of the profile forms a category in each context; identities and composition follow from the profile’s typing and entailment closure, yielding the fibre categories used in indexed semantics.

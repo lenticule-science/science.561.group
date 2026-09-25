@@ -1,0 +1,6 @@
+---
+id: c24d9abe-dde1-4eb8-9ff0-0fb3d6bcb964
+title: white-passing
+date-created: 2025-09-25
+---
+

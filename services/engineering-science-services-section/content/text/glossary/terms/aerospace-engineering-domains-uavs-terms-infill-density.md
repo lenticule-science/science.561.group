@@ -1,0 +1,13 @@
+---
+title: "Infill Density"
+type: "term"
+date-created: 2026-03-06
+---
+
+The percentage of solid material filling the interior of a 3D-printed part, the primary lever controlling the weight-to-strength trade-off in FDM-manufactured airframe components.
+
+Infill density is the percentage of the interior volume of a 3D-printed part that is filled with material, as opposed to air. A part at 100% infill is solid plastic; a part at 0% infill is a hollow shell. Practical FDM parts for UAV airframes use 10–60% infill depending on structural requirements, with the lattice pattern (rectilinear, gyroid, triangular, honeycomb) determining how that material is distributed.
+
+Infill density is the single most consequential slicer parameter for [printed UAV airframes](../../../../services/aerospace-engineering-science-services-section/services/uavs-services-section/content/text/glossary/terms/additive-manufacturing-in-uav-airframes.md). Doubling infill density roughly doubles print time and material consumption while increasing compressive strength by only 50–80% (the relationship is sublinear). This means that a wing [spar](../../../../services/aerospace-engineering-science-services-section/services/uavs-services-section/content/text/glossary/terms/spar.md) printed at 50% gyroid infill is not twice as strong as one at 25% — it is perhaps 1.6× as strong at 1.9× the weight. The engineering problem is identifying the minimum infill density that provides adequate strength for the expected load case, because every gram of excess infill is a gram that could have been payload, fuel, or battery.
+
+The optimal infill depends on the platform&rsquo;s intended lifecycle. A reusable survey drone&rsquo;s wing [rib](../../../../services/aerospace-engineering-science-services-section/services/uavs-services-section/content/text/glossary/terms/rib.md) might need 40% infill to survive [fatigue](../../../../services/aerospace-engineering-science-services-section/services/uavs-services-section/content/text/glossary/terms/fatigue.md) cycling over hundreds of flights. An [expendable](../../../../services/aerospace-engineering-science-services-section/services/uavs-services-section/content/text/glossary/terms/expendable-airframe-design.md) strike drone&rsquo;s wing rib may need only 20% to survive a single catapult launch and a few hours of cruise. A racing quadcopter frame optimizes differently again — high infill at motor mounts (vibration and crash loads) with low infill elsewhere (weight savings for agility).

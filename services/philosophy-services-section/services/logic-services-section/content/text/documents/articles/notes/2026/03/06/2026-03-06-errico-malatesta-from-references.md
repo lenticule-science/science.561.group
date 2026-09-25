@@ -1,0 +1,36 @@
+---
+name: Errico Malatesta
+aliases:
+  - "Errico Malatesta"
+  - "Malatesta"
+date-created: 2026-03-06
+introduces: person
+keywords:
+  - anarchism
+description: "Errico Malatesta (1853–1932) was an Italian anarcho-communist whose lifelong organizing and writing emphasized the inseparability of theory and practice, the necessity of insurrection, and the organizational discipline required for effective anarchist action."
+title: Errico Malatesta
+---
+
+Errico Malatesta (1853–1932) was an Italian anarchist who spent over fifty years organizing, writing, and participating in revolutionary movements across Italy, Argentina, Egypt, and England. His work bridged [anarcho-communism](../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/anarcho-communism.md) and insurrectionary practice, insisting that anarchism must be both theoretically clear and practically effective.
+
+## Core ideas
+
+- **Anarchism as will, not inevitability**: Against the determinism of both Marxists (who expected capitalism to collapse under its own contradictions) and some anarchists (who expected [self-organization](../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/self-organization.md) to emerge spontaneously once the state was removed), Malatesta insisted that [revolution](../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/revolution.md) requires conscious effort, organization, and preparation. Freedom does not arrive automatically. It must be fought for and built.
+
+- **The insurrectionary moment**: Malatesta argued that insurrection — the forceful overthrow of existing [authority](../../../../research/2026/07/31/lenticule-import/yet-another-unsorted-archive-dump/predication-categories/_archive/bucket-4/articulating/library/aperiodic-articulation-category/library/aperiodic-articulation-cell/library/potential-aperiodic-articulation-cell/predicating/library/transfinite-predication-category/hacking/library/predicate-category/hacking/library/references/people/errico-malatesta/docs/terms/authority.md) — is a necessary component of revolution. Reform cannot dismantle [the state](../../../../../../../../../relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/the-state.md) because the state's function is to prevent exactly such dismantling. But insurrection is a moment, not a method: what matters is what comes after, and that depends on the [organizational](../../../../research/2026/07/31/lenticule-import/yet-another-unsorted-archive-dump/predication-categories/_archive/bucket-4/articulating/library/aperiodic-articulation-category/library/aperiodic-articulation-cell/library/potential-aperiodic-articulation-cell/predicating/library/transfinite-predication-category/hacking/library/predicate-category/hacking/library/references/people/errico-malatesta/docs/terms/federation.md) and [prefigurative](../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/prefigurative-politics.md) work done before.
+
+- **Anarchist organization**: Malatesta was a persistent advocate of organized anarchism — not formal parties, but disciplined networks of committed people coordinating through [federation](../../../../research/2026/07/31/lenticule-import/yet-another-unsorted-archive-dump/predication-categories/_archive/bucket-4/articulating/library/aperiodic-articulation-category/library/aperiodic-articulation-cell/library/potential-aperiodic-articulation-cell/predicating/library/transfinite-predication-category/hacking/library/predicate-category/hacking/library/references/people/errico-malatesta/docs/terms/federation.md). He criticized both the individualism that refused all organization and the [informal](../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/informal-organization.md) spontaneism that expected revolution without preparation.
+
+- **Gradualism of means, not of ends**: Malatesta accepted that the full realization of anarchy would take time, but rejected the idea that the goal itself should be moderated. The immediate task is always to extend [freedom](../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/freedom.md) and reduce [domination](../../../../research/2026/07/31/lenticule-import/yet-another-unsorted-archive-dump/predication-categories/_archive/bucket-4/articulating/library/aperiodic-articulation-category/library/aperiodic-articulation-cell/library/potential-aperiodic-articulation-cell/predicating/library/transfinite-predication-category/hacking/library/predicate-category/hacking/library/references/people/errico-malatesta/docs/terms/domination.md) by whatever means are available, without losing sight of the total transformation of social relations.
+
+- **Against violence as principle**: While accepting insurrection as sometimes necessary, Malatesta argued against treating violence as a revolutionary value. Violence is a tool of the world anarchists oppose; when it becomes necessary, it should be used minimally and without enthusiasm.
+
+## Significance for this research
+
+Malatesta's insistence on the relationship between will and structure is particularly important. He avoids both the authoritarian solution (organize a party to seize power) and the utopian one (wait for hierarchy to dissolve). Instead, he argues for a disciplined, federated, [voluntary](../../../../../../../../../relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/voluntary-association.md) movement that practices what it advocates while preparing for the ruptures that make transformation possible.
+
+## Key texts
+
+- *At the Café: Conversations on Anarchism* (1922)
+- *Anarchy* (1891)
+- *The Anarchist Programme* (1920)

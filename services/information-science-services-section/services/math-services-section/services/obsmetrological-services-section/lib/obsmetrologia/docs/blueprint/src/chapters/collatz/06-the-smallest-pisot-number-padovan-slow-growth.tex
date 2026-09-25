@@ -1,0 +1,56 @@
+\section{The smallest Pisot number: Padovan slow growth}
+
+\begin{proposition}[The Padovan and Fibonacci sequences]
+  \label{thm:collatz-padovan}
+  \lean{Obsmetrologia.Closure.Collatz.PadovanShape.padovan, Obsmetrologia.Closure.Collatz.PadovanShape.fibSeq}
+  \leanok
+  \uses{thm:collatz-kappa-stopping-time}
+  The \textbf{Padovan/Perrin} sequence $P(k)=P(k-2)+P(k-3)$ with $P(0)=P(1)=P(2)=1$
+  ($1,1,1,2,2,3,4,5,7,9,\dots$), and the \textbf{Fibonacci} sequence $F(k)=F(k-1)+F(k-2)$ in the
+  $1,1,2,3,5,\dots$ convention. Padovan is the integer-sequence certificate of the plastic number
+  ($\rho\approx1.3247$, root of $x^3=x+1$, the \emph{smallest Pisot number}); Fibonacci is the
+  projection of the golden ratio ($\varphi\approx1.6180$, the next Pisot up). The Padovan recurrence
+  \emph{skips} the previous term --- the signature of minimal-Pisot inflation.
+\end{proposition}
+\begin{theorem}[Extremal slow growth: $P\le F$ pointwise]
+  \label{thm:collatz-padovan-slow-growth}
+  \lean{Obsmetrologia.Closure.Collatz.PadovanShape.padovan_le_fibSeq}
+  \leanok
+  \uses{thm:collatz-padovan}
+  \textbf{Proved.} $P(k)\le F(k)$ for every $k$ (strong induction, via Fibonacci monotonicity).
+  This is the integer, kernel-checkable certificate of $\rho<\varphi$: the plastic sequence is everywhere
+  dominated by the golden one, so Padovan --- the smallest-Pisot substitution --- sits at the bottom
+  of the Pisot growth-rate ordering (the Pisot
+  order $\rho<\varphi<\alpha_3<\cdots$ runs slowest-growing to fastest-growing).
+\end{theorem}
+\begin{theorem}[$\rho$ is the smallest Pisot number]
+  \label{thm:collatz-settlement-spiral-extremal}
+  \notready
+  \uses{thm:collatz-padovan-slow-growth}
+  \emph{(Open algebraic-number frontier --- stated, not in-core formalizable.)} The Pisot spectrum has the plastic
+  number $\rho$ as its infimum: no Pisot number lies strictly between $1$ and $\rho$. So the Padovan
+  substitution is the \emph{slowest-growing} nontrivial primitive substitution, at the minimum of
+  the Pisot accumulation hierarchy ($\rho<\varphi<\tau_{\mathrm{trib}}<\cdots\to2$). A substitution
+  settling is \textbf{aperiodic} ($\kappa=\omega_1$); Padovan and Fibonacci settlings are in the
+  \emph{same} aperiodic regime.
+  The Pisot tower indexes aperiodic substitutions by step/alphabet size --- it is \emph{not} a map
+  across the four closure-ordinal regimes; the \texttt{settlement-spiral} node's regime$\to$Pisot
+  table (strict-finite$\leftrightarrow\rho$) is a \texttt{hacking/}-flagged, unproven, mistaken
+  identification, not used here. The infimum-of-the-Pisot-spectrum fact is about real algebraic
+  integers, outside this dependency-free core; \cref{thm:collatz-padovan-slow-growth} is its
+  provable integer-sequence certificate.
+\end{theorem}
+\begin{theorem}[Collatz shape-count is Padovan, not Fibonacci]
+  \label{thm:collatz-padovan-shape-law}
+  \notready
+  \uses{thm:collatz-settlement-spiral-extremal}
+  \emph{(Empirical frontier --- first evidence supports, not proved.)} The Collatz shortcut-\textbf{%
+  shape} system --- the admissible expand/contract parity-words --- is an aperiodic substitution
+  system; its shape count $S_k$ at depth $k$ is conjectured to grow by the plastic number,
+  $S_{k+1}/S_k\to\rho\approx1.3247$, following Padovan $P_k=P_{k-2}+P_{k-3}$, \emph{not} the prior
+  programme's failed golden/Fibonacci guess. This is a statement about the aperiodic \emph{shape} substitution and its
+  smallest-Pisot inflation --- distinct from, and not inferred from, the strict-finite per-seed
+  orbit settling ($\kappa=$ stopping time, \cref{thm:collatz-kappa-stopping-time}). It is a regime
+  correction on the shape combinatorics, not a step toward closure; the identification
+  $S_k\sim\rho^k$ is empirical, hence red.
+\end{theorem}

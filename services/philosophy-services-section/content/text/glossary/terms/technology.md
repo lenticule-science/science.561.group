@@ -1,0 +1,6 @@
+---
+id: cdb4981e-120c-40d4-8c5c-fa0793907ef9
+title: technology
+date-created: 2025-09-01
+---
+

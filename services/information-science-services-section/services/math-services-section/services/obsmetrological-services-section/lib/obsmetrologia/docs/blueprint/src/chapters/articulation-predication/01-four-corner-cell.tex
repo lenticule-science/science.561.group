@@ -1,0 +1,114 @@
+\section{The articulation four-cell}
+
+\begin{proposition}[Articulation cell]\label{thm:articulation-cell}\lean{Obsmetrologia.Articulating.Cell}\leanok\uses{def:utterance, def:articulating}
+An \emph{articulation cell} is articulating's codomain over an utterance: the
+utterance together with two \emph{witness slots}, \texttt{tokenSlot} and
+\texttt{claimSlot} (each a \texttt{List Token}), one per hand. A slot only
+grows --- nothing is ever removed from it --- so the cell's evidence is
+lossless. Presence in a slot (non-emptiness) is that hand's derived status;
+the cell introduces no free datum beyond the two slots themselves.
+\end{proposition}
+
+\begin{proposition}[The four corners]\label{thm:corner}\lean{Obsmetrologia.Articulating.Corner}\leanok\uses{thm:articulation-cell}
+The \emph{corners} are the four names for the four status pairs in
+$\mathrm{Bool}\times\mathrm{Bool}$: \texttt{absurd} (told none),
+\texttt{potential} (told true), \texttt{active} (told false), and
+\texttt{stable} (told both) — the evidence reading, the authoritative naming
+(see \texttt{docs/history/corner-naming-convention.md}). The partition is the
+two-slot shape of an utterance read as an incidence object, not an added
+taxonomy.
+\end{proposition}
+
+\begin{proposition}[Status correspondence]\label{thm:status-correspondence}\lean{Obsmetrologia.Articulating.Corner.ofStatus}\leanok\uses{thm:corner}
+The map \texttt{ofStatus} classifies a token/claim status pair as a corner,
+and \texttt{toStatus} reads the named corner back as that pair. This is the
+coordinate chart through which the four-corner cell is read.
+\end{proposition}
+
+\begin{lemma}[Corners biject with status pairs]\label{thm:corner-iso}\lean{Obsmetrologia.Articulating.Corner.ofStatus_toStatus}\leanok\uses{thm:corner, thm:status-correspondence}
+Reading a corner to its status pair and classifying back recovers the same
+corner. Together with the converse status round-trip, this says the named
+corners are exactly the points of $\mathrm{Bool}\times\mathrm{Bool}$.
+\end{lemma}
+
+\begin{theorem}[There are exactly four cells]\label{thm:corner-card}\lean{Obsmetrologia.Articulating.Corner.card_eq_four}\leanok\uses{thm:corner, thm:corner-iso}
+The list of all corners has length four. The cardinality is forced by the
+two independent witness slots: two hands give four corners. \cref{thm:orbital-exhaustive}
+is the keystone reading of this cardinality: the four corners are the same
+$2^2$ as the four generators of an oriented pair's natural reindexings, both
+forced by the utterance's own two-sidedness.
+\end{theorem}
+
+\begin{proposition}[The corner of a cell]\label{thm:articulation-cell-corner}\lean{Obsmetrologia.Articulating.Cell.corner}\leanok\uses{thm:articulation-cell, thm:corner, thm:status-correspondence}
+Every articulation cell has a unique corner, obtained by classifying the
+presence status of its two witness slots. This is the projection from
+articulating's codomain to the four-corner incidence base.
+\end{proposition}
+
+\begin{proposition}[Articulating measures: the token witnesses itself]\label{thm:cell-articulate-corner}\lean{Obsmetrologia.Articulating.Cell.articulate_corner}\leanok\uses{thm:articulation-cell-corner}
+To articulate an utterance $u$ is to place $u$'s own token in the token slot
+and leave the claim slot empty: $\texttt{articulate}\,u := \langle u, [u.\mathrm{token}], []\rangle$.
+The result always sits in the \texttt{potential} corner --- told true, never
+absurd. Articulating never produces the empty cell.
+\end{proposition}
+
+\begin{proposition}[Engaging reaches stable]\label{thm:cell-engage-corner}\lean{Obsmetrologia.Articulating.Cell.engage_articulate_corner}\leanok\uses{thm:cell-articulate-corner}
+\texttt{engage}~$c$~$w$ adds a witness $w$ to $c$'s claim slot without
+disturbing the token slot. Engaging a freshly articulated cell reaches the
+\texttt{stable} corner: both sides witnessed.
+\end{proposition}
+
+\begin{proposition}[The un-articulated position]\label{thm:articulation-cell-initial}\lean{Obsmetrologia.Articulating.Cell.unarticulated}\leanok\uses{thm:articulation-cell-corner}
+For an utterance $u$, \texttt{unarticulated}~$u$ has both slots empty. It is
+the \texttt{absurd} corner over $u$ --- told none, the claim constrained by
+nothing. This is where a cell \emph{would} sit before any articulation
+reaches it; it is \textbf{not} what articulating produces (that is
+\cref{thm:cell-articulate-corner}), only where the value algebra's knowledge
+meet lands two incompatible tellings (\cref{thm:cell-corner-ne-absurd}).
+Predicating departs one articulation later, from the potential (told-true)
+corner, once the token side has been articulated and the
+cell has something to seed from.
+\end{proposition}
+
+\begin{proposition}[Merge is slotwise union]\label{thm:cell-corner-merge}\lean{Obsmetrologia.Articulating.Cell.corner_merge}\leanok\uses{thm:articulation-cell-corner}
+\texttt{merge}~$c$~$d$ concatenates the two cells' slots on each hand. The
+corner of a merge is the presence-join of the two corners --- the knowledge
+join --- read off the disjunction of each hand's status; no witness is ever
+lost by merging (lossless on both hands).
+\end{proposition}
+
+\begin{theorem}[Only potential and stable are articulated]\label{thm:articulating-cell-corner-cases}\lean{Obsmetrologia.Articulating.cell_corner}\leanok\uses{thm:cell-articulate-corner, thm:cell-engage-corner}
+The cell an articulating produces, \texttt{Articulating.cell}, always sits at
+\texttt{potential} or \texttt{stable}: the floor articulates, and a pair
+engages the head's articulation with the tail's head token. Absurd and active
+are never articulating's own output.
+\end{theorem}
+
+\begin{corollary}[Never absurd]\label{thm:cell-corner-ne-absurd}\lean{Obsmetrologia.Articulating.cell_corner_ne_absurd}\leanok\uses{thm:articulating-cell-corner-cases, thm:articulation-cell-initial}
+The corner of \texttt{Articulating.cell}~$a$ is never \texttt{absurd}, for any
+$a$. The un-articulated position of \cref{thm:articulation-cell-initial} is
+reached, when it is reached at all, only by the value algebra downstream ---
+never by articulating.
+\end{corollary}
+
+\begin{corollary}[Never active]\label{thm:cell-corner-ne-active}\lean{Obsmetrologia.Articulating.cell_corner_ne_active}\leanok\uses{thm:articulating-cell-corner-cases}
+The corner of \texttt{Articulating.cell}~$a$ is never \texttt{active}, for any
+$a$. A claim witnessed with no prior token is reached only by negation or
+converse in the value algebra, never by articulating claiming ahead of its
+token.
+\end{corollary}
+
+\begin{proposition}[The cell's token witness is the head's token]\label{thm:head-token-mem-tokenslot}\lean{Obsmetrologia.Articulating.head_token_mem_tokenSlot}\leanok\uses{thm:articulating-cell-corner-cases}
+The head utterance's token is always a member of the token slot of the cell
+\texttt{Articulating.cell}~$a$ produces. What articulating measures always
+includes, among its witnesses, the very token it was given.
+\end{proposition}
+
+\begin{proposition}[No empty cell]\label{thm:corner-surjective}\lean{Obsmetrologia.Articulating.Cell.corner_surjective}\leanok\uses{thm:articulation-cell-corner, thm:corner-iso}
+Over any utterance, every corner is realized by some articulation cell ---
+exhibited directly by the un-articulated position, an articulated cell, an
+active cell built by fiat (value algebra, not articulation), and an engaged
+cell. The four-corner partition is therefore inhabited at every point of the
+utterance base, even though articulating itself (\cref{thm:articulating-cell-corner-cases})
+only ever reaches two of the four.
+\end{proposition}

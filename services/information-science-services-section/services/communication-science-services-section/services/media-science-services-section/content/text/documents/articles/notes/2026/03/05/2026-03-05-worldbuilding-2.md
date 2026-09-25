@@ -1,0 +1,15 @@
+---
+title: "Worldbuilding"
+description: "Worldbuilding is the practice of constructing an imagined world with sufficient internal structure to sustain narrative, play, simulation, or inquiry. It encompasses the invention of geography, history, cultures, languages, metaphysics, ecology, and social systems, as well as the design decisions that determine which of these elements receive elaboration and which remain implied."
+date-created: 2026-03-05
+date-modified: 2026-03-09
+keywords: ["fictional-worlds", "role-playing-games", "reproducible-paracosm", "multi-user-dungeons"]
+---
+
+Worldbuilding is the practice of constructing an imagined world with sufficient internal structure to sustain narrative, play, simulation, or inquiry. It encompasses the invention of geography, history, cultures, languages, metaphysics, ecology, and social systems, as well as the design decisions that determine which of these elements receive elaboration and which remain implied.
+
+The practice spans media forms. In literature, worldbuilding produces the [secondary worlds](../../../../../../../../services/worldbuilding-services-section/content/text/glossary/terms/secondary-world.md) that ground fantasy and science fiction. In [role-playing games](../../../../research/2026/07/31/lenticule-import/library/arts/engineering/theories/games/topics/role-playing-games/index.md), it produces [settings](../../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/setting.md) that provide the shared context for play. In interactive computing, [world-building and programming converge](../../../../../../../../../../../../../social-science-services-section/services/social-theory-science-services-section/services/ludics-science-services-section/services/game-ludics-services-section/content/text/glossary/topics/world-building-as-programming.md) in systems like MUDs, where constructing a virtual world and engineering software are the same act.
+
+Worldbuilding may be distinguished by method. Top-down worldbuilding begins with cosmology, geography, or deep history and works inward toward the particular. Bottom-up worldbuilding begins with a locale, community, or situation and expands outward as needed. Many practitioners combine both. The [Relational Worlding Grammar](../../../../../../../../services/worldbuilding-services-section/content/text/glossary/terms/relational-worlding.md) offers a third approach grounded in pressure and field dynamics rather than spatial or temporal hierarchy.
+
+The question of what makes a constructed world coherent across multiple tellings or uses is formalized in the [Reproducible Paracosm](../../../../research/2026/07/31/lenticule-import/library/arts/ludics/media/worldbuilding/disciplines/literature/reproducible-paracosm.md) framework, which identifies gluing, normalization, and bisimulation as the categorical conditions for world-reproducibility. The [Reproducible Paracosm Specification](../../../../research/2026/07/31/lenticule-import/library/arts/ludics/media/worldbuilding/disciplines/literature/reproducible-paracosm-specification.md) translates these conditions into a constructive standard.

@@ -1,0 +1,105 @@
+---
+title: "Describing Zen fascism as Californication"
+aliases:
+  - "Describing Zen fascism as Californication"
+  - "describing zen fascism as californication"
+  - Babble, [2025-09-03 Wed 09:54], On Zen Fascism and Californication
+  - Describing Zen Fascism as Californication
+  - On Zen Fascism and Californication
+date-created: 2025-09-03T09:54:00
+type: topic
+tags: []
+description: Zen Fascism can be seen as a mode of "californication" within the field of governance.[cite:@DescribingCalifornication]
+roam-refs: "@DescribingZenFascismCalifornication"
+date: 2025-09-03
+keywords:
+  - politics
+  - californication
+  - zen-fascism
+publish_to:
+  - emsenn-net
+publish-to:
+  - emsenn-net
+---
+
+Zen Fascism can be seen as a mode of "californication" within the field of governance.[cite:@DescribingCalifornication]
+
+# Word Salad
+
+- Zen fascism
+- californication
+- self as erotic savior-slave in crisis settlerism
+- there are constitutive contradictions in liberalism
+  - i.e. universalism and individualism
+  - stress (i.e. crisis, Collapse) exposes them
+- this creates the Liberalism Legitimacy Crisis:
+  - as these contradictions intensify, liberalism loses credibility\|validity as an [ideological](../../../../../../../../../../content/text/glossary/terms/ideology.md) system.
+    - it can't produce the resolutions it promises
+    - so it shifts to promising regulation
+    - see Foucault
+- California as projection zone: California Gold Rush, Misiones Californianas (the Patronato Real of California), psychedelic revolution, Hollywood, Esalen Institute, techno-utopianism
+- californication is a process of responding to systemic contradictions by performing personal coherence?
+  - doesn't address structural tension
+  - processes it as a material to be commodified
+    - aesthetic, affect
+    - Brian Wilson (and the Barenaked Ladies song)
+    - Valley of the Dolls
+    - On the Road
+  - californication as genre scripting: genre structures expectation ([Lauren Berlant](../../../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/lauren-berlant.md))
+  - platformal liberalism induces californication as the dominant genre of contradiction management
+    - crisis is trauma, mood, healing
+    - MASH television show, Red Hot Chili Peppers, skateboarding
+  - [cybernetic](../../../information/disciplines/cybernetics/index.md) settlerism, [cybernetic](../../../information/disciplines/cybernetics/index.md) subject
+    - you change the world by how you route events into mood, not with your beliefs or action (which come from mood)
+      - Calm app, Burning Man, lifehacking, microdosing
+- Zen
+  - don't fear Collapse: be serene
+  - detachmenet
+    - nonreactivity
+    - Apple advertisement (1984 novel)
+    - Starfleet and San Fransisco (Misiones Fransiscanas?)
+    - ayahuasca entrepreneurism
+    - stoicism, in late-season MASH
+    - eroticization of detachment
+      - crisis is desireable:
+    - source of good affect, source of good life
+    - crisis is the source of healing, spiritual growth, betterment of self
+    - liberalism is legitimate *because* it produces crisis
+    - trauma aesthetic and aesthetic trauma
+    - vagus nerve, self-regulation
+- savior-slave subject
+  - californicational subject is:
+    - savior
+      - personally responsible for managing global crises
+    - slave
+      - governed by external systems (and crises)
+    - Collapse as performable norm:
+      - collapse is not hidden or denied, it's:
+    - narrativized (healing arc)
+    - monetized (survivalism, resilience, adaptation)
+      - collapse becomes sustained because it is wanted
+    - this makes wanting to resolve it incommensurable
+      - more structures and incentive and power-force to sustain it than end it
+- RAND Institute, Summer of Love
+- shift from Trapper to BJ: critiquing to affecting
+  - therapeutic
+- Disneyland
+- Watts Rebellion
+- The Electric Kool-Aid Acid Test
+- California Über Alles
+- Reaganonimics
+- The Day AfterRodney King Uprising
+- doomscrolling, rageposting
+
+## Earlier material
+
+—
+
+\<!– source: content/critical-theory/domains/queer/domains/kyriarchism/on-zen-fascism.md –\>
+
+\## Imported source: content/critical-theory/domains/queer/domains/kyriarchism/on-zen-fascism.md
+
+— title: "Describing Zen fascism as Californication" aliases:
+
+- "Describing Zen fascism as Californication"
+- "describing zen fascism as californication"

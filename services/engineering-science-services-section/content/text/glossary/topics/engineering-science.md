@@ -1,0 +1,7 @@
+---
+title: Engineering Science
+description: Engineering Science is this repo's science-side mirror of engineering-services-section — the theory grounding the firm's engineering practice across every engineering domain (computer, fabrication, materials, technology).
+---
+# Engineering Science
+
+Engineering Science is this repo's science-side mirror of engineering-services-section — the theory grounding the firm's engineering practice across every engineering domain (computer, fabrication, materials, technology). It is organized by services/ subdomain (computer-science-services-section, fabrication-science-services-section, materials-services-section, technology-science-services-section, and siblings); this root holds only cross-cutting identity content, not domain-specific theory, which belongs to the relevant child section. Until 2026-08, this root's only content/text/glossary/terms/ entries were 108 misfiled horticulture/gardening files (unrelated to engineering science); they have been moved to biological-science-services-section/services/agricultural-science-services-section/services/gardening-services-section/content/text/glossary/terms/, the section that actually theorizes gardening.

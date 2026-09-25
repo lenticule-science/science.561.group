@@ -1,0 +1,16 @@
+---
+title: "Harm Reduction"
+type: "term"
+date-created: 2026-03-03
+---
+
+A public health approach that reduces negative consequences of risky behaviors without requiring abstinence, originally built as communal infrastructure against state abandonment.
+
+Requires
+access-intimacy
+
+Harm reduction is a public health approach that aims to reduce the negative consequences of risky behaviors — particularly drug use — without requiring abstinence as a precondition for care. Needle exchanges, naloxone distribution, supervised consumption sites, and safer supply programs all operate on harm reduction principles: meet people where they are, reduce the immediate dangers, and treat survival as the first priority rather than demanding behavioral transformation before offering help.
+
+The approach emerged from grassroots organizing in the 1980s and 1990s, built by communities facing the overlapping crises of drug criminalization and HIV/AIDS. What distinguishes harm reduction from clinical risk management is its origin as collective infrastructure. Needle exchanges were not designed by public health agencies and handed down; they were built by drug users, sex workers, and community organizers in direct resistance to state policies of criminalization and abandonment. [Dean Spade](../../documents/articles/research/2026/07/31/lenticule-import/humanities/domains/general/domains/people/dean-spade.md) documents this history in *Mutual Aid* (2020), and [Leah Lakshmi Piepzna-Samarasinha](../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/leah-lakshmi-piepzna-samarasinha.md) extends it in *Care Work* (2018) — both emphasizing that harm reduction programs were shared responses to structural conditions, not individualized coping strategies.
+
+emsenn critiques the misuse of the term in &ldquo;On white-supremacist covid-eugenicist queers&rdquo; (2025-09-23). The newsletter emsenn responds to redefines harm reduction as individual optimization — wear your own mask, make your own risk assessment, manage your own exposure. This strips harm reduction of its collective, infrastructural character and turns a practice of communal care into a vocabulary for privatized abandonment. When harm reduction becomes &ldquo;you do you,&rdquo; it has been emptied of the political commitment that gave it meaning.

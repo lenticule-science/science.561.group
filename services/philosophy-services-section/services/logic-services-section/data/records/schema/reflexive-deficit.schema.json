@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://active.development.561.group/articulating/library/aperiodic-articulation-category/commutating/library/aperiodic-nuclear-quartet-category/library/joint-quiescent-corner/library/aperiodic-autopoiesis-cell/library/operational-closure/library/reflexive-deficit/reflexive-deficit.schema.json",
+  "title": "reflexive-deficit",
+  "description": "The failure mode of operational-closure: a system whose operations refer to external states that the system itself does not internally represent. The system has blind spots in its own self-reference.",
+  "type": "object",
+  "properties": {
+    "name": { "type": "string", "const": "reflexive-deficit" }
+  },
+  "required": ["name"]
+}

@@ -1,0 +1,36 @@
+{
+  "term": "ziran",
+  "hanzi": "自然",
+  "pinyin": "zì rán",
+  "locus": [
+    "Daodejing 25"
+  ],
+  "translations": [
+    {
+      "citekey": "legge1891",
+      "translator": "James Legge",
+      "year": 1891,
+      "rendering": "The law of the Tao is its being what it is.",
+      "grounding": "checked-against-translation-comparison-aggregator"
+    },
+    {
+      "citekey": "waley1934",
+      "translator": "Arthur Waley",
+      "year": 1934,
+      "rendering": "the ways of Tao by the Self-so.",
+      "grounding": "checked-against-translation-comparison-aggregator"
+    },
+    {
+      "citekey": "ames2003",
+      "translator": "Roger T. Ames & David L. Hall",
+      "year": 2003,
+      "rendering": "Tao is self-derived.",
+      "grounding": "checked-against-translation-comparison-aggregator"
+    }
+  ],
+  "houseTranslation": {
+    "text": "Ziran is the chain running out, honestly, rather than being secretly infinite — the Daodejing naming the place its own explanatory chain stops.",
+    "grade": "FRAMING",
+    "isNewToThisGlossary": true
+  }
+}

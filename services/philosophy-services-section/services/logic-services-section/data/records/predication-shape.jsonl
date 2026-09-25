@@ -1,0 +1,4 @@
+{"e":"predication-shape","a":"describing","v":"The signature of a structure-form expressed as a list of characteristic cells (predicate, subject-sort, object-sort, cardinality). An entity inhabits the form iff its cell-graph supplies a witness for each characteristic cell at the prescribed cardinality.","t":"2026-05-19T23:00:00Z"}
+{"e":"predication-shape","a":"specializing","v":"signature","t":"2026-05-19T23:00:00Z"}
+{"e":"predication-shape","a":"characteristic-cells-of","v":"predication-cell","t":"2026-05-19T23:00:00Z"}
+{"e":"predication-shape","a":"checked-by-inhabiting","v":"inhabiting","t":"2026-05-19T23:00:00Z"}

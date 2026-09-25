@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/mutually-locally-derivable/content/synonymy/content/antonymy",
+  "title": "antonymy",
+  "description": "The strong-MLD relation that pairs two predication settlings v, v' when v is strong-MLD-equivalent to the negation-twisted settling of v' - the refinement of synonymy obtained by composing strong-MLD with bilattice negation, which flips truth-only and falsity-only firings while fixing top-firings.",
+  "allOf": [ { "$ref": "mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/mutually-locally-derivable/content/synonymy" } ],
+  "type": "object",
+  "required": ["criterion", "negation-twist", "symmetric", "anti-transitive"],
+  "properties": {
+    "criterion": { "const": true, "description": "v ~_ant v' iff v ~_sMLD ~(v'): strong-MLD-equivalence to the negation-twisted settling of v'" },
+    "negation-twist": { "const": true, "description": "negation flips truth-only <-> falsity-only firing-orbit types while fixing top-firings, so it acts non-trivially on strong-MLD classes (invisible to ordinary MLD synonymy)" },
+    "symmetric": { "const": true, "description": "v ~_ant v' implies v' ~_ant v, via the negation involution on the settling category" },
+    "anti-transitive": { "const": true, "description": "if v ~_ant v' and v' ~_ant v'' then v ~_sMLD v'': the antonym of an antonym is a strong-MLD synonym, not an antonym" },
+    "self-antonymous": { "type": "boolean", "description": "v ~_ant v' iff every NSC firing of v is a top-firing (both-sided, paraconsistent); generic settlings are not self-antonymous (orbit size 1 vs 2 under the negation involution)" }
+  }
+}

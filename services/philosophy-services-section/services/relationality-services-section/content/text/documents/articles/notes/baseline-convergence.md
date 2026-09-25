@@ -1,0 +1,47 @@
+---
+title: Baseline Convergence Test
+id: baseline-convergence
+role: operator
+status: plan
+inputs: []
+outputs: []
+transformation:
+- return
+- value
+proof_refs: []
+derives-from: acts/baseline-convergence
+description: The act baseline-convergence witnesses a test that detects exactly when a trace tail collapses to the void.
+---
+
+
+
+## Statement
+
+The act [`baseline-convergence`](./baseline-convergence.md) witnesses a
+test that detects exactly when a trace tail collapses to the void.
+
+## Definition
+- Inputs: [Baseline Remainder](./baseline-remainder.md), [Step Trace](./step-trace.md) context.
+- Outputs: updated [Baseline Remainder](./baseline-remainder.md) indicating collapse to baseline.
+- Behaviour: applies the act [Baseline Convergence](./baseline-convergence.md) to check iterative reflex steps on a trace tail; if the iteration stabilizes against `Nothing`, the tail collapses to the baseline.
+
+## Invariants
+- Detects collapse without altering the trace tail unless convergence is witnessed.
+- Resulting baseline remainder matches the earned convergence behaviour (indistinguishable from baseline).
+
+## Proof
+- Derived from: [Baseline Convergence](./baseline-convergence.md).
+- Shows that: comparing iterative reflex steps against `Nothing` on a trace tail yields a baseline remainder exactly when the tail collapses; uniqueness up to earned equivalence follows from the act.
+
+Given the earned trace relation and the convergence act, this test is fixed up
+to nucleus equivalence.
+
+## Earlier material
+
+The act [`baseline-convergence`](baseline-convergence.md) witnesses a
+test that detects exactly when a trace tail collapses to the void.
+
+## Definition
+- Inputs: [Baseline Remainder](baseline-remainder.md), [Step Trace](step-trace.md) context.
+- Outputs: updated [Baseline Remainder](baseline-remainder.md) indicating collapse to baseline.
+- Behaviour: applies the act [Baseline Convergence](baseline-convergence.md) to check iterative reflex steps on a trace tail; if the iteration stabilizes against `Nothing`, the tail collapses to the baseline.

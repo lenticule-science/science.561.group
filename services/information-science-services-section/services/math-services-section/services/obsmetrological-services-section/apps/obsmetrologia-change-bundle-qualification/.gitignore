@@ -1,0 +1,6 @@
+# Runtime state belongs outside source control.
+
+node_modules/
+data/logs/
+data/records/evm/
+

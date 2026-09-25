@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/category/library/opposite-category/opposite-category.schema.json",
+  "title": "Opposite category",
+  "description": "JSON Schema for an opposite category C^op — the category with the same objects as C and with arrows reversed (Mac Lane 1971 Ch. II §2; Awodey 2010 §1.3). Specializes category by carrying a single base-category cell — the C whose arrows are being reversed. Used to type contravariant functors as covariant functors from C^op.",
+  "allOf": [{ "$ref": "https://research-notes.561.group/hacking/library/predication-notes/object/library/thing/library/category/category.schema.json" }],
+  "type": "object",
+  "required": ["base-category"],
+  "properties": {
+    "base-category": {
+      "$dynamicRef": "#name-shape",
+      "description": "The base category C whose opposite this is. Ob(C^op) = Ob(C); for every f : A → B in C, there is f^op : B → A in C^op. Composition in C^op is composition in C reversed: g^op ∘^op f^op = (f ∘ g)^op."
+    }
+  }
+}

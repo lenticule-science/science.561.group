@@ -1,0 +1,3 @@
+Aaron Bushnell was an [[anti-colonial anarchist]] who [[self-immolating|self-immolated]] to [[Free Palestine]] on [[2024-02-25]]. He [[livestreaming|livestreamed]] the act, after informing [[Crimethinc]] and others.
+
+Prior to his death, he was a member of [[Serve the People Akron]] and an accomplice of [[Stop Cop City]]. He was an active participant in anarchist discourse on the [[Fediverse]], and a critic of the [[United States]] and [[capitalism]] on [[Reddit]].

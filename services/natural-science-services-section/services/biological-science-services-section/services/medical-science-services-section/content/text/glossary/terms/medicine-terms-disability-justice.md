@@ -1,0 +1,18 @@
+---
+title: "Disability Justice"
+type: "term"
+date-created: 2026-03-03
+---
+
+A framework developed by disabled activists of color that grounds disability in intersecting systems of oppression and insists on collective, infrastructural access.
+
+Requires
+
+- communitas
+- labor
+
+Disability justice is a political framework developed by disabled activists of color — particularly the performance collective Sins Invalid, [Mia Mingus](../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/mia-mingus.md), [Leah Lakshmi Piepzna-Samarasinha](../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/leah-lakshmi-piepzna-samarasinha.md), and [Patty Berne](../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/patty-berne.md) — that grounds disability in intersecting systems of oppression rather than treating it as an individual medical condition. Where the disability rights movement focused on legal inclusion and accommodation within existing institutions, disability justice insists that those institutions are themselves organized around ableism, racism, [capitalism](../../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/capitalism.md), and [settler colonialism](../../documents/articles/research/2026/07/31/lenticule-import/humanities/domains/sociology/topics/settler-colonialism/index.md). Access cannot be secured by adding ramps to structures built on exclusion.
+
+The framework holds that access is not a special provision for exceptional bodies but a condition that must be built into infrastructure, policies, and norms. Accommodation models place the burden on disabled individuals to request exceptions; disability justice places the burden on communities to build access as a baseline. This shifts the question from &ldquo;what do you need?&rdquo; (directed at the individual) to &ldquo;what have we failed to build?&rdquo; (directed at the collective).
+
+Piepzna-Samarasinha&rsquo;s *Care Work: Dreaming Disability Justice* (2018) documents how disability justice communities build care infrastructure through [mutual aid](../../documents/articles/research/2026/07/31/lenticule-import/humanities/domains/sociology/terms/mutual-aid.md), [access intimacy](access-intimacy.md), and collective [labor](../../documents/articles/research/2026/07/31/lenticule-import/humanities/domains/sociology/terms/labor.md) rather than through institutional channels. emsenn references disability justice in &ldquo;On white-supremacist covid-eugenicist queers&rdquo; (2025-09-23) alongside [Alison Kafer](../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/alison-kafer.md)&rsquo;s work on disability futures — the insistence that the future must be reimagined through access and interdependence rather than organized around the exclusion and abandonment of those deemed unproductive.

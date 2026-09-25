@@ -1,0 +1,63 @@
+### Star Trek <span class="tag" tag-name="StarTrek"><span class="smallcaps">StarTrek</span></span> <span class="tag" tag-name="@note"><span class="smallcaps">@note</span></span> {#star-trek}
+
+1.  Notes on Star Trek: The Next Generation <span class="tag" tag-name="@note"><span class="smallcaps">@note</span></span>
+
+    1.  Season 1
+
+        1.  Episode 25, "The Neutral Zone"
+
+            1.  \<2018-11-02 Fri\>
+
+                In *Star Trek: The Next Generation*, Season 1, Episode 25, "The Neutral Zone": The Enterprise, among other things, recovers three humans who have been stored in cryostasis since the late 20th century.
+
+                One, a woman, not knowing how she got in stasis, said, "It must have been my husband Donald… if it was new and foolish, he would've popped for it. Well, I'll say this for it - it's the first thing he's ever bought into that's worked."
+
+                You can't convince me this lady is not Donald Trump's ex-wife.
+
+    2.  Season 3
+
+        1.  Episode 5
+
+            1.  \<2018-11-10 Sat\>
+
+                I skipped this. I remember the plot from last time, and I remember not liking it.
+
+        2.  Episode 6
+
+            1.  "Booby Trap"
+
+                Geordi is so bad with women. I think it's because he probably picks a friend of a friend of a friend to cultivate an interest in, and then builds her up in his mind. He's like, kind of an incel. There's no hard evidence of it, but, there's barely any soft evidence against it.
+
+        3.  Episode 7
+
+            1.  "The Enemy"
+
+                This episode brings some more focus onto Geordi. While he's working with the Romulan to try and contact the *Enterprise*, he says: "I wouldn't need an accurate sampling, just a pointer. A neutrino geiger counter." A Geiger counter is for sampling, and does not indicate direction. This is why you're single.
+
+        4.  Episode 10
+
+            1.  \<2018-11-10 Sat\>
+
+                It's weird how Picard encourages Data to play the violin and views that as creative, but actively criticizes his acting skills. Dunning-Kruger?
+
+        5.  Episode 14
+
+            1.  \<2018-11-10 Sat\>
+
+                I noticed in S03E10 that Picard criticized Data's acting - in this one's cold open, Data gets him right back by giving some harsh feedback on his art.
+
+    3.  Season 6
+
+        1.  Episode 24, "Second Chances"
+
+            When I was young, my mom said something like, *"The people we hate tend to have qualities we dislike about ourselves."* I think about that every time I watch this episode.
+
+            Also, when she said it, *King of the Hill* was airing, and she always hated Peggy Hill, and I associate the two details in my memory.
+
+2.  Notes on Star Trek: Deep Space Nine
+
+    1.  Season 2
+
+        1.  Episode 23, "Family Business"
+
+            Quark looks good in a sweatervest - which I think is what he's wearing under his jacket most of the time, in other episodes.

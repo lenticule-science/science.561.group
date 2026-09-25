@@ -1,0 +1,191 @@
+{
+  "kind": "knowledge-systems-meet-then-beat-measurement",
+  "date": "2026-09-04",
+  "lot": "ks-11",
+  "arena": "the knowledge systems of the AI labs and the orchestration frameworks, LangChain and LangGraph first (per the office's founding note, sites/emsenn/.../2026-09-01-the-lenticule-research-substrate-program.md: 'GraphRAG, LlamaIndex property graphs, Neo4j's LLM graph builder, Zep, Mem0, LangGraph checkpointers, the labs' memory features; Datomic and ORKG as reference implementations' name the fuller portfolio still to measure)",
+  "incumbents": [
+    {
+      "name": "LangChain",
+      "surfaces": [
+        { "url": "https://docs.langchain.com/oss/python/langchain/overview", "fetchedAt": "2026-09-04T18:31:00Z" },
+        { "url": "https://reference.langchain.com/python/langchain-classic/retrievers/document_compressors/embeddings_filter/EmbeddingsFilter/similarity_threshold", "fetchedAt": "2026-09-04T18:34:00Z" }
+      ]
+    },
+    {
+      "name": "LangGraph",
+      "surfaces": [
+        { "url": "https://docs.langchain.com/oss/python/langgraph/persistence", "fetchedAt": "2026-09-04T18:32:30Z" },
+        { "url": "https://langchain-ai.github.io/langgraph/concepts/persistence/", "fetchedAt": "2026-09-04T18:29:00Z", "note": "resolved to a bare 'Redirecting...' stub, no substantive content; superseded by docs.langchain.com/oss/python/langgraph/persistence" }
+      ]
+    },
+    {
+      "name": "LangSmith",
+      "surfaces": [
+        { "url": "https://docs.langchain.com/langsmith/observability-concepts", "fetchedAt": "2026-09-04T18:29:30Z", "note": "reached via 308 redirect from https://docs.smith.langchain.com/observability/concepts" }
+      ]
+    }
+  ],
+  "jobs": [
+    {
+      "id": "1",
+      "job": "Answer a question about a stored claim with its evidence strata (asserted vs. what survived vs. what settled).",
+      "incumbent": {
+        "statement": "The LangGraph persistence docs describe only an undifferentiated 'Graph state snapshots' persisted per checkpoint ('checkpoints accumulate' during a long conversation); no strata distinction between asserted, surviving, and settled state is documented on the page.",
+        "source": "https://docs.langchain.com/oss/python/langgraph/persistence (fetched 2026-09-04)"
+      },
+      "house": {
+        "statement": "\"Answers one cell question over an eavt row array with the entity's asserted and saturated counts, its settled section, its proof tree, and the closure/regime of the answer's fold.\"",
+        "artifact": "@red-cup-engineering/ask-eavt-cell-service 0.3.0 README (also ask-eavt-trace-cell-service 0.3.0); served as metroplat 0.4.16's ask-eavt-cell / ask-eavt-trace-cell verbs on https://ops.561.group",
+        "served": true
+      },
+      "verdict": "beat",
+      "reason": "LangGraph's own docs expose one undifferentiated state snapshot per checkpoint; the house verb is deployed in production and returns asserted, saturated, and settled counts as three distinguishable strata for the same cell."
+    },
+    {
+      "id": "2",
+      "job": "Return the proof path (provenance chain) of an answer as a first-class, content-addressed object.",
+      "incumbent": {
+        "statement": "\"If you are familiar with OpenTelemetry, you can think of a run as a span.\" Runs/traces are described as hierarchical span-like data structures; no content-addressed identity (hash-based) for a run or trace is documented on the page.",
+        "source": "https://docs.langchain.com/langsmith/observability-concepts (fetched 2026-09-04)"
+      },
+      "house": {
+        "statement": "eavt 0.8.0's proof-tree citation resolution: \"a claim as a Merkle DAG of ni:/entity-address/metroplat-artifact references, resolved as a flat {root, nodes} map ... never inlined\"; ask-eavt-cell-service 0.3.0's example answer carries a proofTree object ({root, nodes, edges, missing, cycles, depth}).",
+        "artifact": "@red-cup-engineering/eavt 0.8.0 package.json description (citationsOf/resolveProofTree/verifyProofClosure) and @red-cup-engineering/ask-eavt-cell-service 0.3.0 README worked example; served in the same ask-eavt-cell / ask-eavt-trace-cell verbs on https://ops.561.group",
+        "served": true
+      },
+      "verdict": "beat",
+      "reason": "LangSmith documents runs as OpenTelemetry-comparable spans with no content-addressed identity; the house proof tree resolves a claim as a Merkle DAG of RFC 6920 ni: references, served in the same production verb that answers the cell question."
+    },
+    {
+      "id": "3",
+      "job": "Count and query held contradictions in the store.",
+      "incumbent": {
+        "statement": "no first-party statement found at https://docs.langchain.com/oss/python/langchain/overview, https://docs.langchain.com/oss/python/langgraph/persistence, https://docs.langchain.com/langsmith/observability-concepts",
+        "source": "pages checked 2026-09-04; none documents a contradiction-counting or contradiction-query capability over stored facts"
+      },
+      "house": {
+        "statement": "\"Reads one eavt trace file and counts the cells it settles as contradicted, or reports the trace absent.\" Production result cited in the 2026-09-01 founding note: \"Over the two production traces the count is zero (8,312 theorem entities in 4 s; 10,453 carrier entities in 6 s)\".",
+        "artifact": "@red-cup-engineering/count-eavt-trace-contested-cells-service 0.1.1 README (also count-eavt-contested-cells-service 0.2.0 over a bare row array); served as metroplat 0.4.16's count-eavt-trace-contested-cells verb on https://ops.561.group",
+        "served": true
+      },
+      "verdict": "beat",
+      "reason": "no checked first-party LangChain/LangGraph/LangSmith surface documents contradiction counting or querying at all; the house verb is deployed and returns a real production count over two live traces (zero, pending a converse-predicate ledger to turn contradiction detection on)."
+    },
+    {
+      "id": "4",
+      "job": "Say that two predicates or relations are the same, at a graded strength with a price (SKOS closeMatch/exactMatch or the framework's equivalent).",
+      "incumbent": {
+        "statement": "LangChain's own retriever reference documents a continuous, unpriced similarity control rather than two named graded relations: \"Threshold for determining when two documents are similar enough to be considered redundant. Defaults to `None`, must be specified if `k` is set to None.\" No first-party statement of a priced or two-tier (SKOS-equivalent) identification was found.",
+        "source": "https://reference.langchain.com/python/langchain-classic/retrievers/document_compressors/embeddings_filter/EmbeddingsFilter/similarity_threshold (fetched 2026-09-04)"
+      },
+      "house": {
+        "statement": "\"Prices the cheapest chain of mld or equal declarations identifying one predicate with another.\" GEODE's vocabulary generator: \"an 'mld' chain prices as skos:closeMatch, an all-'equal' chain as skos:exactMatch\", live at l-space.561.group/ns/predicate/part-of (skos:closeMatch and skos:exactMatch, 'the standard's own two strengths of match').",
+        "artifact": "@red-cup-engineering/price-predicate-identification-service 0.1.0 README; served by @red-cup-engineering/geode 0.1.6's vocabulary.mjs on https://l-space.561.group/ns/predicate/part-of, but price-predicate-identification-service itself is not wired as a metroplat/ops.561.group verb (2026-09-01 founding note: ks-04 'not yet metroplat verbs' though 'also live on l-space')",
+        "served": false
+      },
+      "verdict": "partial",
+      "reason": "the pricing and SKOS serving are live on l-space.561.group, but the pricing service has no metroplat/ops.561.group verb of its own, so it is not on the same production surface as the other served jobs; LangChain has no first-party graded/priced identification concept to compare it against at all."
+    },
+    {
+      "id": "5",
+      "job": "Tag an answer with the kind of settling that produced it (finite fold vs. limits vs. beyond).",
+      "incumbent": {
+        "statement": "no first-party statement found at https://docs.langchain.com/oss/python/langgraph/persistence: the page documents checkpoint storage backends (MemorySaver/SqliteSaver/PostgresSaver) and thread scoping but no tag naming the kind of process or closure that produced a given state.",
+        "source": "https://docs.langchain.com/oss/python/langgraph/persistence (fetched 2026-09-04)"
+      },
+      "house": {
+        "statement": "\"eavt 0.8.0's stratify returns closure ({saturation, transfer, kappa, regime}) ... ask-eavt-cell 0.3.0 and ask-eavt-trace-cell 0.3.0 carry it, every current answer reading kappa 1, strict.\" Worked example: `\"closure\": {\"saturation\": 1, \"transfer\": 1, \"kappa\": 1, \"regime\": \"strict\"}, \"regime\": \"strict\"`.",
+        "artifact": "@red-cup-engineering/eavt 0.8.0 (stratify) consumed by @red-cup-engineering/ask-eavt-cell-service 0.3.0 / ask-eavt-trace-cell-service 0.3.0 README; served in the same production ask-eavt-cell / ask-eavt-trace-cell verbs on https://ops.561.group",
+        "served": true
+      },
+      "verdict": "beat",
+      "reason": "LangGraph's own persistence docs tag a checkpoint with neither a process kind nor a closure classification; the house verb tags every answer with a closure ordinal and regime (strict, versus the honest classifier's unused aperiodic case), live in production."
+    },
+    {
+      "id": "6",
+      "job": "Filter query results by the consent of the data's owners (CARE or any consent model).",
+      "incumbent": {
+        "statement": "no first-party statement found at https://docs.langchain.com/oss/python/langchain/overview; a search for LangChain/LangGraph + consent/CARE surfaced only a community forum thread ('Governance/policy checkpoint node pattern for LangGraph agents', forum.langchain.com) proposing a design pattern, not first-party documentation of a shipped consent-filtering capability.",
+        "source": "pages checked 2026-09-04; forum.langchain.com is community content, not a first-party surface, so it is recorded as a discovery lead only"
+      },
+      "house": {
+        "statement": "\"Filters eavt rows to the entities whose latest consent row admits the audience, withholding the rest and reporting only their count.\" Founding note: \"absence withholds (CARE, Authority to control), and withheld entities reach the reader only as a count.\"",
+        "artifact": "@red-cup-engineering/filter-eavt-rows-by-consent-service 0.1.0 README; published and tested, not wired as a metroplat/ops.561.group verb (2026-09-01 founding note: ks-10 in the 'not yet metroplat verbs' list; audience vocabulary still open)",
+        "served": false
+      },
+      "verdict": "partial",
+      "reason": "the service is fabricated, tested, and directly encodes CARE's Authority-to-control principle, but it has no served verb yet; LangChain/LangGraph document no consent-based filtering capability at all in their first-party surfaces."
+    },
+    {
+      "id": "7",
+      "job": "Budget attention over what remains unreconciled (a read-next).",
+      "incumbent": {
+        "statement": "no first-party statement found at https://docs.langchain.com/oss/python/langchain/overview, https://docs.langchain.com/oss/python/langgraph/persistence: human-in-the-loop and thread-scoped memory are documented, but no benefit/cost-budgeted allocator over unresolved items was found on either page.",
+        "source": "pages checked 2026-09-04"
+      },
+      "house": {
+        "statement": "\"Selects obstructions to reconcile under an attention budget by greedy benefit-per-cost extension, reporting cost, benefit, residual, and the read-next order.\" Founding note: \"the Lean's invariants (feasibility downward closed, residual antitone) are what it keeps, optimality is not claimed.\"",
+        "artifact": "@red-cup-engineering/allocate-attention-over-obstructions-service 0.1.0 README, seated beside Obsmetrologia's AttentionAllocation.lean; published and tested, not wired as a metroplat/ops.561.group verb (2026-09-01 founding note: ks-07 in the 'not yet metroplat verbs' list)",
+        "served": false
+      },
+      "verdict": "partial",
+      "reason": "the solver is fabricated, tested, and proof-linked to a Lean invariant set, but has no served verb yet; no first-party LangChain/LangGraph surface documents a budgeted read-next allocator over unresolved items."
+    },
+    {
+      "id": "8",
+      "job": "Integrity accounting of the claim-source structure (Betti-number style or any global integrity check).",
+      "incumbent": {
+        "statement": "no first-party statement found at https://docs.langchain.com/oss/python/langchain/overview, https://docs.langchain.com/oss/python/langgraph/persistence, https://docs.langchain.com/langsmith/observability-concepts",
+        "source": "pages checked 2026-09-04; none documents any topological or global-integrity accounting over stored claims or their sources"
+      },
+      "house": {
+        "statement": "\"Computes the vertex and edge counts, components (H0), cycle rank (H1), and Euler characteristic of one relation attribute's bipartite graph over eavt rows.\" Run once by hand over the production theorem trace per the founding note: \"module is a forest (8,593 vertices, 8,308 edges, H⁰ 285, H¹ 0, χ 285: one component per module), identification-site has 811 vertices, 14,642 edges, H⁰ 3, H¹ 13,834\".",
+        "artifact": "@red-cup-engineering/count-eavt-relation-nerve-service 0.1.0 README; published and tested, not wired as a metroplat/ops.561.group verb and not referenced as a dependency by any other house package (confirmed: no package.json in the tree depends on it besides its own)",
+        "served": false
+      },
+      "verdict": "partial",
+      "reason": "the H0/H1/chi computation is fabricated, tested, and already run once over the production theorem trace by hand, but has no served verb yet; no first-party LangChain/LangGraph/LangSmith surface offers any topological or global integrity check over stored claims."
+    },
+    {
+      "id": "9",
+      "job": "Read latency for one question over ~100k facts on a production host.",
+      "incumbent": {
+        "statement": "not published: https://docs.langchain.com/langsmith/observability-concepts documents that runs carry timing ('threading keeps timing intact') but states no benchmark figure; LangGraph itself does not publish a single official latency benchmark. (Third-party benchmarks exist, e.g. a framework-overhead figure of roughly 10-14 ms per query reported by a 2026 aimultiple.com comparison, but that is a discovery lead, not first-party evidence, and the same source states most end-to-end latency is spent on model/tool I/O outside the framework, so it is not a comparable published number for this job.)",
+        "source": "https://docs.langchain.com/langsmith/observability-concepts (fetched 2026-09-04); third-party aimultiple.com benchmark noted but not used as incumbent evidence"
+      },
+      "house": {
+        "statement": "founding note (2026-09-01), quoting the production repair: \"metroplat 0.4.10 memoizes that read and the trace question answers in 0.5 s through the gateway\" and \"the night removed the per-call journal scans (a production question fell from 24 s to 0.5 s)\", measured against the 90,015-row theorem-facts trace.",
+        "artifact": "ask-eavt-trace-cell verb, metroplat 0.4.16, https://ops.561.group; the lot brief's stated range of 0.5-1.6 s (2026-09-04, covering both the 90,015-row and 162,870-row production traces) was not independently reproduced or found in a dated record this session -- the 0.5 s low end is verified against the 2026-09-01 note, the 1.6 s upper figure is reported by the commissioning brief and is unverified here",
+        "served": true
+      },
+      "verdict": "partial",
+      "reason": "the house has one verified, primary-sourced latency figure (0.5 s) and no dedicated, reusable latency-measurement verb or record producing the brief's full 0.5-1.6 s range; the incumbent publishes no comparable first-party number at all, so the comparison itself stays partial rather than a clean beat."
+    },
+    {
+      "id": "10",
+      "job": "Standards used on the wire and on disk.",
+      "incumbent": {
+        "statement": "LangSmith: \"If you are familiar with OpenTelemetry, you can think of a run as a span.\" LangChain: \"Use one interface for chat models, embeddings, and more across providers.\" JSON-shaped tool/model schemas and OpenTelemetry-comparable spans are the documented wire shapes; no RDF, SKOS, CBOR, or content-addressing standard is named on either checked page.",
+        "source": "https://docs.langchain.com/langsmith/observability-concepts and https://docs.langchain.com/oss/python/langchain/overview (fetched 2026-09-04)"
+      },
+      "house": {
+        "statement": "\"RFC 8949 core-deterministic CBOR codec.\" (cbor-codec-service); \"Names one CBOR byte string with its RFC 6920 ni URI.\" (cbor-ni-service); eavt 0.8.0 package description: \"the <kind>:<ni-digest> address rule\" and proof trees as \"a claim as a Merkle DAG of ni:/entity-address/metroplat-artifact references\"; GEODE 0.1.6 serves SKOS/Turtle/JSON-LD at l-space.561.group/ns/; JSON Schema files ship in eavt's own data/records/schema/glossary/terms/*.schema.json; MCP serves both l-space and metroplat.",
+        "artifact": "@red-cup-engineering/cbor-codec-service, @red-cup-engineering/cbor-ni-service (package.json descriptions), @red-cup-engineering/eavt 0.8.0, @red-cup-engineering/geode 0.1.6; these standards are structural properties of the already-served ask-eavt-cell/ask-eavt-trace-cell/count-eavt-trace-contested-cells verbs and of geode's l-space serving, not a separate queryable verb of their own",
+        "served": true
+      },
+      "verdict": "beat",
+      "reason": "the checked LangChain/LangGraph/LangSmith first-party surfaces document JSON tool schemas and OpenTelemetry-shaped spans only; the house wire/disk stack additionally uses RFC 8949 canonical CBOR, RFC 6920 ni content-addressing, and SKOS/Turtle/JSON-LD, each an independent open standard, already live in the served verbs and on l-space."
+    }
+  ],
+  "summary": {
+    "meet": 0,
+    "beat": 5,
+    "gap": 0,
+    "partial": 5
+  },
+  "notes": {
+    "served_status_source": "primary-sourced against lib/emsenn/services/561-group/services/science-services-section/content/text/documents/articles/notes/2026/09/01/2026-09-01-the-lenticule-research-substrate-program.md ('The campaign's edge after 2026-09-04: ks-01, ks-02, ks-03, ks-05, and ks-08 are served on ops.561.group and discharged on the production rail; ks-04, ks-06, ks-07, ks-09, and ks-10 exist as published, tested, fabricated services (ks-04 also live on l-space) but are not yet metroplat verbs; ks-11 has not run.') and independently confirmed by grepping metroplat's own package.json dependencies (apps/metroplat/package.json lists ask-eavt-cell-service, ask-eavt-trace-cell-service, and count-eavt-trace-contested-cells-service; none of price-predicate-identification-service, allocate-attention-over-obstructions-service, count-eavt-relation-nerve-service, or filter-eavt-rows-by-consent-service appear as a dependency of any house package other than their own)",
+    "registry_verification": "every house package version cited was verified fresh this session with `npm view <pkg> version --registry https://registry.561.group`: ask-eavt-cell-service 0.3.0, ask-eavt-trace-cell-service 0.3.0, count-eavt-contested-cells-service 0.2.0, count-eavt-trace-contested-cells-service 0.1.1, count-eavt-cell-dispositions-service 0.1.0, price-predicate-identification-service 0.1.0, allocate-attention-over-obstructions-service 0.1.0, count-eavt-relation-nerve-service 0.1.0, filter-eavt-rows-by-consent-service 0.1.0, eavt 0.8.0, geode 0.1.6, @red-cup-engineering/metroplat 0.4.16",
+    "arena_scope": "this measurement covers LangChain/LangGraph/LangSmith only, per the lot's own 'first' framing; GraphRAG, LlamaIndex property graphs, Neo4j's LLM graph builder, Zep, Mem0, Datomic, and ORKG remain unmeasured against these ten jobs and are named in the founding note as the fuller incumbent portfolio."
+  }
+}

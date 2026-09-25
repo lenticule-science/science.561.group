@@ -1,0 +1,67 @@
+\section{FOUR by universal property}
+
+The keystone identifications of this chapter are definitional
+(\texttt{Charge} $:=$ \texttt{Articulating.Corner}) or enumerated. This section
+records the structure those identifications rely on and the theorem that forces
+it: FOUR is initial among bounded interlaced bilattices, so a depth that
+exhibits the structure earns its four-corner identification rather than
+inheriting it by definition.
+
+\begin{proposition}[Bounded interlaced bilattice]\label{thm:interlaced-bilattice}\lean{Obsmetrologia.InterlacedBilattice}\leanok\uses{thm:four-bilattice}
+An \texttt{InterlacedBilattice} is one carrier with two bounded-lattice
+structures --- knowledge $(\wedge_k, \vee_k, \bot_k, \top_k)$ and truth
+$(\wedge_t, \vee_t, f, t)$ --- each of whose operations is monotone with
+respect to the other order. Order is algebraic
+($a \le_k b := a \vee_k b = b$, likewise for $\le_t$), and the four
+cross-monotonicity fields are stated in that form; own-order monotonicity is
+derivable from the lattice laws and is not a field.
+\end{proposition}
+
+\begin{theorem}[The bound-exchange identities]\label{thm:bound-exchange}\lean{Obsmetrologia.InterlacedBilattice.joinK_tTop_tBot}\leanok\uses{thm:interlaced-bilattice}
+In every bounded interlaced bilattice the bounds of each order are the lattice
+combinations of the other order's bounds: $t \vee_k f = \top_k$
+(\texttt{joinK\_tTop\_tBot}), $t \wedge_k f = \bot_k$
+(\texttt{meetK\_tTop\_tBot}), $\top_k \vee_t \bot_k = t$
+(\texttt{joinT\_kTop\_kBot}), and $\top_k \wedge_t \bot_k = f$
+(\texttt{meetT\_kTop\_kBot}). Interlacing alone forces these: monotonicity of
+the cross-order operations squeezes the combination between the target bound
+from both sides. The four bounds therefore form a sub-bilattice.
+\end{theorem}
+
+\begin{theorem}[FOUR is initial]\label{thm:four-initial}\lean{Obsmetrologia.four_initial}\leanok\uses{thm:bound-exchange, thm:four-object}
+Into every bounded interlaced bilattice $B$ the bounds map
+(\texttt{boundsMap}: each charge to the like-named bound) preserves both
+lattice structures --- all four binary operations, by
+\texttt{boundsMap\_joinK}/\texttt{meetK}/\texttt{joinT}/\texttt{meetT}, whose
+sixteen cases each reduce to a bound-exchange identity or a derived
+bound law --- and any map out of FOUR sending the four bounds to the four
+bounds is the bounds map pointwise (\texttt{boundsMap\_unique}): FOUR's
+elements are its bounds, so bound preservation forces the whole map. Existence
+and uniqueness together are initiality.
+\end{theorem}
+
+\begin{theorem}[Rigidity at four]\label{thm:four-rigid}\lean{Obsmetrologia.four_rigid}\leanok\uses{thm:four-initial}
+If the four bounds of $B$ are pairwise distinct, the bounds map is injective
+(\texttt{boundsMap\_injective}); if the carrier holds only the four bounds, it
+is surjective (\texttt{boundsMap\_surjective}). A bounded interlaced bilattice
+with exactly four pairwise-distinct bound elements receives the bounds map as
+a bijection: it is FOUR up to the unique bounds-preserving map.
+\end{theorem}
+
+\begin{proposition}[FOUR inhabits its own universal property]\label{thm:charge-interlaced}\lean{Obsmetrologia.chargeInterlaced}\leanok\uses{thm:interlaced-bilattice, thm:four-bilattice}
+\texttt{chargeInterlaced} equips \texttt{Charge} itself with the
+\texttt{InterlacedBilattice} structure, and \texttt{boundsMap\_charge} shows
+the unique bounds-preserving map from FOUR to itself is the identity,
+pointwise. All declarations of this section are axiom-free.
+\end{proposition}
+
+\begin{theorem}[Each depth earns its four]\label{thm:depth-earns-four}\notready\uses{thm:four-initial, thm:articulation-phase-is-charge}
+For each depth of the spine that meets the recurring four --- the nuclear
+quartet of fixed-point algebras, the bigraded tower, the modal corners, the
+regime lattice --- exhibit a bounded interlaced bilattice on that depth's
+carrier with pairwise-distinct bounds and derive the depth's four-corner
+identification from \ref{thm:four-initial} and \ref{thm:four-rigid}, replacing
+the enumerated bijections of the keystone section. A depth whose carrier
+provably cannot carry the structure (only one order, or coincident bounds) is
+a finding, not a failure: it locates where the recurrence genuinely stops.
+\end{theorem}

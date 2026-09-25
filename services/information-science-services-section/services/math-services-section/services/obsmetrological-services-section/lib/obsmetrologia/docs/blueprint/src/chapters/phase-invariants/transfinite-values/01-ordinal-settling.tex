@@ -1,0 +1,111 @@
+\subsection{Ordinal settling and derived integers}
+
+\begin{theorem}[The $\omega$-limit is the finite settled value (transfinite collapse)]\label{thm:omega-limit-is-finite-settled}\lean{Obsmetrologia.Charge.settled_is_omega_lub}\leanok\uses{thm:strict-finite}
+Over the finite charge lattice the settled value $f^{kHeight}x$ \emph{is} the value at the limit
+ordinal $\omega = \texttt{limit ofNat}$: it is the $\le_k$-LUB of the entire orbit
+$\bigsqcup_k f^k x$ (upper bound of every stage by $\le_k$-monotonicity, least by dominating stage
+$kHeight$). Because the strict-finite regime stabilizes by step $kHeight$
+(\cref{thm:strict-finite-regime}), that directed join --- which \texttt{Ord.limit\_isLUB} ranges
+over abstractly --- is reached at a \textbf{finite} stage. The transfinite limit collapses to the
+finite settled value: the charge lattice's finiteness makes $\bigsqcup_k$ finite
+(\texttt{settled\_is\_omega\_lub}, axiom-free).
+\end{theorem}
+
+\begin{theorem}[Ordinal-indexed transfinite settling orbit]\label{thm:ordinal-indexed-settling-orbit}\notready\uses{thm:omega-limit-is-finite-settled, thm:aperiodic-local-constancy-failure, thm:local-constancy-model, thm:aperiodic-unreachable-from-ordinal}
+\emph{(Open frontier --- stated, not formalized; the pieces exist.)} The settling orbit should be
+indexed by the genuine ordinal `Ord` (\texttt{Closure.OrdinalCore}), not by \texttt{Nat}:
+$v_0 = \texttt{knowledgeLeast}$, $v_{\sigma+1} = \mathrm{Cl}(v_\sigma)$, and at a \emph{limit}
+ordinal $v_{\lim f} = \bigsqcup_k v_{f(k)}$ --- the directed $\le_k$-join over the fundamental
+sequence, the settling-continuity equation $v_\mu = \bigvee\{v_\sigma : \sigma<\mu\}$.
+The current `\texttt{TransfiniteCellComplex.limitJoin}` is the \emph{finite-prefix projection}: it
+proves exactly this $\le_k$-LUB (\texttt{limitJoin\_is\_directed\_join}) but only over a
+\texttt{Nat} prefix $[0,\mu)$. All the pieces are already green: the ordinal `Ord` with its
+limit-as-supremum law (\texttt{Ord.limit\_isLUB}), the finite-ordinal order embedding
+(\texttt{Ord.ofNat\_mono}), and the finite-prefix LUB. The one missing construction is the
+limit-case **countable $\le_k$-join of valuations** --- which is well-defined and finite because
+`Charge` has only four elements, so $\bigsqcup_k v_{f(k)}$ takes finitely many values per cell.
+Assembling it discharges ``we already have transfinite numbers'': \texttt{Nat} iteration is then
+the proven finite-ordinal invariant of a genuine \texttt{Ord}-indexed orbit. The
+\textbf{strict-finite $\omega$-case is now green} (\cref{thm:omega-limit-is-finite-settled}): the
+$\omega$-limit value is the finite settled LUB. Red until the full \texttt{Ord}-recursive total
+orbit is built for the \textbf{strict/Scott/transfinite-bounded} regimes --- the ones
+\cref{thm:aperiodic-unreachable-from-ordinal} shows this ordinal encoding can actually reach. The
+aperiodic ($\kappa\ge\omega_1$) case is not merely unbuilt: it cannot be built from genuine `Ord`
+evidence in this system, by that same theorem, so it is now excluded from this node's scope rather
+than awaited.
+\end{theorem}
+
+\begin{theorem}[\texttt{aperiodic} is unreachable from genuine ordinal evidence]\label{thm:aperiodic-unreachable-from-ordinal}\lean{Obsmetrologia.Ord.IsCofinalWitness, Obsmetrologia.Ord.exists_countable_cofinal_witness, Obsmetrologia.Ord.regimeOfOrdHonest, Obsmetrologia.Ord.regimeOfOrdHonest_ne_aperiodic, Obsmetrologia.Ord.regimeOfOrdHonest_eq_regimeOfOrd_true}\leanok\uses{thm:omega-limit-is-finite-settled}
+\texttt{Closure.Ordinal}'s \texttt{regimeOfOrd} upgraded only the \texttt{finiteBase} flag of
+\texttt{ClosureRegimeData} to a genuine structural fact (\texttt{isFinite}, read off the ordinal's own
+shape); \texttt{scottContinuous} and \texttt{countableCofinality} remained free Booleans, exactly as
+underdetermined as before. This node closes that gap for \texttt{countableCofinality}: every
+\texttt{Ord} value this Brouwer/tree encoding can construct already carries a witness that its own
+cofinality is countable ---\texttt{zero}/\texttt{succ} trivially (a length-one witness), and
+\texttt{limit f} by its own fundamental sequence \texttt{f} itself
+(\texttt{exists\_countable\_cofinal\_witness}, via \texttt{fund\_le\_limit}/\texttt{limit\_isLUB}) ---
+because \texttt{limit} only ever takes a \texttt{Nat}-indexed sequence; the constructors never offer
+an uncountable one. Consequently the honest two-flag classifier \texttt{regimeOfOrdHonest} (reading
+\texttt{finiteBase} off \texttt{isFinite} and asking only for the genuinely external
+\texttt{scottContinuous} witness, in the spirit of \cref{thm:omega-limit-is-finite-settled}) has no
+branch that can produce \texttt{aperiodic} at all (\texttt{regimeOfOrdHonest\_ne\_aperiodic}), and it
+agrees with \texttt{regimeOfOrd} everywhere the honest \texttt{countableCofinality} value (\texttt{true})
+is supplied (\texttt{regimeOfOrdHonest\_eq\_regimeOfOrd\_true}). \textbf{Uncountable cofinality
+($\kappa\ge\omega_1$) is a genuine boundary of this dependency-free ordinal encoding, not a missing
+construction}: every downstream \texttt{regime := ClosureRegime.aperiodic} field (e.g.
+\texttt{AperiodicOrder.Tiling.aperiodicWitness}, \texttt{AperiodicCarrier.canonicalAperiodic}) is
+honest \emph{asserted} data on the same footing as the rest of those modules' abstract classifying-invariant
+models, never a claim derivable from a real closure ordinal here
+(\texttt{AperiodicCarrier.aperiodicWitness\_regime\_not\_ordinal\_derived}).
+\end{theorem}
+
+\begin{definition}[Ordinal addition]\label{def:ord-add}\lean{Obsmetrologia.Ord.add}\leanok
+\texttt{Ord.add}\ $a\ b$, by recursion on $b$: $a+0=a$, $a+\mathrm{succ}(b)=\mathrm{succ}(a+b)$,
+and $a+\mathrm{limit}(f)=\mathrm{limit}(n\mapsto a+f(n))$ --- the standard ordinal-arithmetic
+recursion on the right summand, over the Brouwer/tree encoding of \cref{thm:aperiodic-unreachable-from-ordinal}.
+\end{definition}
+
+\begin{theorem}[Addition is associative and has a two-sided identity]\label{thm:ord-add-assoc}\lean{Obsmetrologia.Ord.zero_add, Obsmetrologia.Ord.add_zero, Obsmetrologia.Ord.add_assoc}\leanok\uses{def:ord-add}
+$a+0=a$ is the defining equation; $0+a=a$ is proved by induction on $a$ (not definitional,
+since \texttt{add} recurses on its right argument); $(a+b)+c=a+(b+c)$ is proved by induction
+on $c$.
+\end{theorem}
+
+\begin{theorem}[Addition is monotone on both sides]\label{thm:ord-add-mono}\lean{Obsmetrologia.Ord.self_le_add_right, Obsmetrologia.Ord.add_right_mono, Obsmetrologia.Ord.add_left_mono}\leanok\uses{def:ord-add, thm:aperiodic-unreachable-from-ordinal}
+$a \le a+c$ for every $c$; $b\le c \Rightarrow a+b\le a+c$, by induction on the $\le$
+derivation; and $a\le a' \Rightarrow a+b\le a'+b$, by induction on $b$. Addition is not
+commutative over this encoding ($1+\omega=\omega\ne\omega+1$), so only the right argument's
+limit case is a genuine supremum of the left's --- the left-monotonicity theorem is strictly
+weaker than the right's continuity.
+\end{theorem}
+
+\begin{theorem}[Addition agrees with \texttt{Nat.add} on the finite fragment]\label{thm:ord-add-ofnat}\lean{Obsmetrologia.Ord.ofNat_add_ofNat}\leanok\uses{def:ord-add, thm:aperiodic-unreachable-from-ordinal}
+$\texttt{ofNat}\ m + \texttt{ofNat}\ n = \texttt{ofNat}\ (m+n)$: the finite-ordinal embedding is
+a homomorphism from $(\mathbb N,+)$ to $(\texttt{Ord},+)$, extending
+\cref{thm:aperiodic-unreachable-from-ordinal}'s order-embedding fact to the arithmetic.
+\end{theorem}
+
+\begin{theorem}[$\omega+\omega$ replaces the hand-rolled successor tower]\label{thm:ord-omega-shift}\lean{Obsmetrologia.Ord.omegaShift, Obsmetrologia.Ord.omegaShift_eq_limit}\leanok\uses{def:ord-add}
+\texttt{omegaShift} $=\omega+\omega$, built from the general \texttt{add} rather than an
+ad-hoc \texttt{Nat.rec} successor tower over $\omega$, and unfolds to
+$\mathrm{limit}(n\mapsto \omega + \texttt{ofNat}\ n)$ --- the fundamental sequence a by-hand
+construction would otherwise have to state as a separate recursion.
+\end{theorem}
+
+\begin{theorem}[The integer substrate should be a derived $\mathbb Z$]\label{thm:derived-integer-substrate}\notready\uses{thm:ordinal-indexed-settling-orbit}
+\emph{(Open frontier --- stated, not formalized.)} The aperiodic integer engines --- the metallic
+recurrence \texttt{metallicNum}, the substitution matrices, the Cassini unimodularity
+\texttt{metallic\_cassini} --- run on Lean core \texttt{Int}, a \emph{received-math specialization} used
+raw; their literals ($0,1,2,-1$ for the bases and $\det M=-1$) are honest arithmetic on that
+projection. The internal number carrier is ordinal (our $\mathbb N$ $=$ the finite fragment of `Ord`,
+\cref{thm:ordinal-indexed-settling-orbit}); the principled integer substrate is therefore a
+\emph{derived} $\mathbb Z$ --- the Grothendieck/difference completion of our $\mathbb N$ --- on
+which the recurrences and the determinant $-1$ are typed. Note the \emph{analytic} cap is already
+faithful: the metallic mean $\mu$ is built as a genuine derived real \texttt{RReal}
+(\texttt{Real.Multiplication}), not a \texttt{Float}. So the number tower is our-$\mathbb N$
+(finite `Ord`, green) $\to$ our-$\mathbb Z$ (this node, red) $\to$ our-$\mathbb Q$ $\to$ our-$\mathbb R$
+(\texttt{RReal}, partially green). Red until $\mathbb Z$ is derived in-chain from our $\mathbb N$ and
+the integer engines are ported onto it. (Lean core \texttt{Int} is not free data in the axiom sense
+--- it is an inductive, not an \texttt{axiom} --- so this is a faithfulness refinement, not a
+soundness defect.)
+\end{theorem}

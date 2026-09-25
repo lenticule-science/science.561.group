@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://561.group/swarm-intelligence/agentic-orchestration-platform/agentic-system/agentic-system.schema.json",
+  "title": "Agentic system (a kind of system whose members are agents)",
+  "description": "Per lab/.../thing/library/system/library/agentic-systems/ and AGENTIC-EMBEDDING §1: an agentic-system is a system whose members are agents (not arbitrary things). Carries memberSet of agent slugs, governanceProcess, governingSoul. Swarm is a kind of agentic-system; leader is a kind of office held inside an agentic-system.",
+  "kind": "object",
+  "type": "object",
+  "required": ["id", "memberSet", "governanceProcess", "governingSoul", "evidence"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$"
+    },
+    "memberSet": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "governanceProcess": { "type": "string", "minLength": 1 },
+    "governingSoul": { "type": "string", "minLength": 1 },
+    "emitsCommunityActs": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "evidence": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  }
+}

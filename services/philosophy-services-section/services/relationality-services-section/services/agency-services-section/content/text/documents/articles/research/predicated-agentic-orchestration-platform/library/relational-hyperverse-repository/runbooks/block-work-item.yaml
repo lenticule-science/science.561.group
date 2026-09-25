@@ -1,0 +1,18 @@
+id: block-work-item
+description: "Mark a WorkItem as blocked with a reason."
+skill-closure-kind: process
+
+inputs:
+  - name: unit_id
+    type: int
+  - name: reason
+    type: str
+
+steps:
+  - id: mark-blocked
+    type: update
+    unit_id: "{{inputs.unit_id}}"
+    flush: true
+    fields:
+      status: blocked
+      why_blocked: "{{inputs.reason}}"

@@ -1,0 +1,31 @@
+{
+  "term": "wu-wei",
+  "hanzi": "無為",
+  "pinyin": "wú wéi",
+  "locus": [
+    "Daodejing 37"
+  ],
+  "translations": [
+    {
+      "citekey": "waley1934",
+      "translator": "Arthur Waley",
+      "year": 1934,
+      "rendering": "Tao never does; Yet through it all things are done.",
+      "grounding": "checked-against-translation-comparison-aggregator"
+    },
+    {
+      "citekey": "ames2003",
+      "translator": "Roger T. Ames & David L. Hall",
+      "year": 2003,
+      "rendering": "Way-making is really nameless. Were the nobles and kings able to respect this, all things would…",
+      "grounding": "checked-against-translation-comparison-aggregator"
+    }
+  ],
+  "houseTranslation": {
+    "text": "Planning is 𝒮: goals are cone points; the plan is the reverse-emerged generative envelope; milestones are causal antichains; tasks are minimal causal steps. Off-cone goals are not moral failures but not-reachable-yet, with a computable envelope that brings them into view — wu wei stated as cone-following.",
+    "grade": "FRAMING",
+    "isNewToThisGlossary": false,
+    "citesCarrier": "content/text/documents/articles/books/2026-book-of-changes.md",
+    "formalAnchor": "reverse-lightcone emergence function 𝒮 (causal-cone planning)"
+  }
+}

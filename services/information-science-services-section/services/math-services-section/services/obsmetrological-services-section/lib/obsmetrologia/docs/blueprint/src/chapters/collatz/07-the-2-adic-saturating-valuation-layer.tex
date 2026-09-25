@@ -1,0 +1,458 @@
+\section{The 2-adic / saturating-projection layer}
+
+\begin{theorem}[Saturating run is the 2-adic depth]
+  \label{thm:collatz-saturating-depth}
+  \lean{Obsmetrologia.Closure.Collatz.shortcut_odd_part}
+  \leanok
+  \uses{thm:collatz-affine-trace}
+  Every positive number factors as $2^k$ times an odd number
+  (\texttt{two\_adic\_factor}); for odd $n$ the expansion $3n+1=2^k\cdot m$ has $k\ge1$ and $m$
+  odd. So the halving run after an expansion is nonempty and collapsing it lands on the odd full
+  shortcut successor $(3n+1)/2^{\,v_2(3n+1)}$. The accelerated step peels exactly one
+  halving (\cref{thm:collatz-affine-trace}); the full shortcut peels the whole run.
+\end{theorem}
+\begin{theorem}[The residue lock lives on the binary inverse hull]
+  \label{thm:collatz-two-adic-lock}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.twoAdicResidueSystem}
+  \leanok
+  \uses{thm:collatz-residue-gap-carry}
+  The aperiodic inverse-hull machinery now carries the Collatz residue lock's native
+  stage tower: \texttt{twoAdicResidueSystem} has stage \(\mathrm{Fin}(2^n)\) and
+  bonding maps given by reduction modulo lower powers of two. Lean proves the functor
+  laws using \texttt{Nat.mod\_mod\_of\_dvd} and \texttt{Nat.pow\_dvd\_pow}, and
+  constructs the coherent residue thread \texttt{twoAdicThreadOfNat} of every ordinary
+  natural number.
+\end{theorem}
+\begin{theorem}[Binary residue threads are stage-separated]
+  \label{thm:collatz-two-adic-stage-separated}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.twoAdicThreadOfNat_eq_iff_all_residues_eq}
+  \leanok
+  \uses{thm:collatz-two-adic-lock}
+  Two ordinary numbers have the same binary residue thread exactly when they agree
+  at every finite modulus \(2^n\). This is the precise inverse-hull content now
+  proved for the Collatz residue carrier: a future proof that pins high two-adic
+  digits may work stage-by-stage, because the thread contains no data beyond its
+  coherent finite binary prefixes.
+\end{theorem}
+\begin{theorem}[The binary odometer acts on the residue hull]
+  \label{thm:collatz-two-adic-odometer}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.twoAdicOdometer_threadOfNat}
+  \leanok
+  \uses{thm:collatz-two-adic-stage-separated}
+  The finite-stage map \(x\mapsto x+1 \bmod 2^n\) commutes with binary prefix
+  restriction, so Lean constructs a coherent odometer action
+  \texttt{twoAdicOdometer} on the whole binary residue hull. On the embedded
+  ordinary naturals, this odometer is exactly successor:
+  \(\texttt{twoAdicOdometer (twoAdicThreadOfNat x)}
+    = \texttt{twoAdicThreadOfNat (x+1)}\).
+  This is the native \(2\)-adic carrier promised by the reduction; it still does
+  not prove that the parent-barrier carry digit is forced.
+\end{theorem}
+\begin{theorem}[The parent residue is a unique binary inverse residue]
+  \label{thm:collatz-two-adic-unique-residue}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.parentBarrierTwoAdicCarryGap_iff_uniqueResidueGap}
+  \leanok
+  \uses{thm:collatz-two-adic-odometer, thm:collatz-residue-gap-carry}
+  For every parent barrier, Lean proves that \(\texttt{parentD p}\) is coprime to
+  the explicit binary modulus \(2^{|p|+1}\). Hence the congruence
+  \[
+    \texttt{parentD p}\cdot r \equiv \texttt{parentC p}
+      \pmod {2^{|p|+1}}
+  \]
+  has a unique residue \(r<2^{|p|+1}\). The carry gap is therefore equivalent to
+  saying that this unique inverse residue has carry at least the modulus. This is
+  the formal version of reading \(r\) as
+  \(\texttt{parentC p}\cdot\texttt{parentD p}^{-1}\) in the binary stage.
+\end{theorem}
+\begin{theorem}[The parent-barrier carry gap is the explicit two-adic carry gap]
+  \label{thm:collatz-two-adic-carry-gap}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.parentBarrierGap_iff_parentBarrierTwoAdicCarryGap}
+  \leanok
+  \uses{thm:collatz-two-adic-unique-residue, thm:collatz-residue-gap-carry}
+  Since \(\texttt{parentM p}=2^{|p|+1}\), the carry form of the parent-barrier gap is
+  equivalent to \texttt{ParentBarrierTwoAdicCarryGap}; Lean also proves the full
+  equivalence \(\texttt{ParentBarrierGap}\leftrightarrow
+  \texttt{ParentBarrierTwoAdicCarryGap}\). Thus the semigroup non-membership lock,
+  the residue inequality, the full-modulus carry, and the explicit \(2\)-adic
+  carry are four proved-equivalent faces of the same arithmetic frontier. The theorem
+  does not prove the frontier; it identifies the carrier and the exact two-adic face
+  that a future proof must close.
+\end{theorem}
+\begin{theorem}[The semigroup gap is the unique inverse-residue gap]
+  \label{thm:collatz-two-adic-unique-residue-gap}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.parentBarrierGap_iff_parentBarrierTwoAdicUniqueResidueGap}
+  \leanok
+  \uses{thm:collatz-two-adic-unique-residue, thm:collatz-two-adic-carry-gap}
+  The parent-barrier semigroup non-membership gap is equivalent to the unique
+  binary inverse-residue carry gap. Thus the arithmetic frontier can be named
+  without quantifying over all residues: for each nontrivial parent barrier, take
+  the unique \(r<2^{|p|+1}\) satisfying
+  \(\texttt{parentD p}\cdot r\equiv\texttt{parentC p}\); the open inequality is
+  exactly that this residue has carry at least the modulus.
+\end{theorem}
+\begin{theorem}[Stage projections are binary cylinders]
+  \label{thm:collatz-two-adic-stage-cylinder}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.twoAdicThreadOfNat_proj_eq_iff_mod_eq}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.twoAdicPositiveCylinderLift_iff_modulus_le_sub}
+  \leanok
+  \uses{thm:collatz-two-adic-stage-separated}
+  For ordinary naturals embedded as coherent two-adic residue threads, equality
+  of the stage-\(n\) projections is exactly equality of residues modulo \(2^n\).
+  This is the inverse-hull cylinder language needed by the lock: a finite binary
+  prefix is not represented by an external congruence predicate, but by equality
+  of projections in \texttt{twoAdicResidueSystem}. Lean also proves that a
+  positive lift inside such a cylinder is exactly this congruence together with
+  the inequality \(2^n\le x-y\).
+\end{theorem}
+\begin{theorem}[The semigroup gap is a positive carry quotient]
+  \label{thm:collatz-two-adic-carry-quotient-gap}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.parentBarrierGap_iff_parentBarrierTwoAdicCarryQuotientGap}
+  \leanok
+  \uses{thm:collatz-two-adic-unique-residue-gap, thm:collatz-two-adic-carry-gap}
+  The same lock has a quotient-state form. For each nontrivial parent barrier,
+  take the unique residue \(r<2^{|p|+1}\) with
+  \[
+    \texttt{parentD p}\cdot r\equiv \texttt{parentC p}
+      \pmod {2^{|p|+1}} .
+  \]
+  The gap is equivalent to existence of a natural carry quotient \(q\) such that
+  \[
+    \texttt{parentD p}\cdot r
+      = \texttt{parentC p}+2^{|p|+1}(q+1).
+  \]
+  This is the finite-state/transducer face of the two-adic lock: the remaining
+  arithmetic problem is to prove that the carry quotient is always positive, not
+  merely to construct a modular inverse.
+\end{theorem}
+\begin{theorem}[The audit margin is the two-adic carry quotient]
+  \label{thm:collatz-two-adic-carry-quotient-positive}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.parentBarrierTwoAdicCarryQuotientOrdinal}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.parentBarrierTwoAdicCarryQuotientOrdinal_eq_backwardCarryQuotient}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.parentBarrierTwoAdicCarryQuotientPositive_iff_ordinal}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.parentBarrierGap_iff_parentBarrierTwoAdicCarryQuotientPositive}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.parentBarrierTwoAdicCarryQuotientPositive_iff_backwardCarryQuotients_positive}
+  \leanok
+  \uses{thm:collatz-two-adic-carry-quotient-gap, thm:collatz-backward-margin-carry}
+  Lean also names the exact quotient value
+  \[
+    \texttt{parentBarrierTwoAdicCarryQuotient p r}
+      = \frac{\texttt{parentD p}\cdot r-\texttt{parentC p}}{2^{|p|+1}} .
+  \]
+  The same quotient is exposed as a finite ordinal, and Lean proves that it is
+  the same ordinal as the backward-margin carry quotient because
+  \(\texttt{parentM p}=2^{|p|+1}\). The parent-barrier semigroup gap is equivalent
+  to ordinal positivity of this quotient for every nontrivial parent-barrier
+  inverse residue, and equivalently to positivity of every first-passage backward
+  carry quotient. This is the formal version of the finite audit's margin column:
+  the audit computes
+  \(\texttt{parentD p}\cdot r-\texttt{parentC p}\), and the theorem says
+  the open arithmetic claim is exactly that this margin contains at least one
+  full binary modulus.
+\end{theorem}
+\begin{theorem}[The semigroup gap is a positive two-adic cylinder lift]
+  \label{thm:collatz-two-adic-cylinder-lift-gap}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.parentBarrierTwoAdicCylinderLiftGap_iff_carryGap}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.parentBarrierResidueCarryGap_iff_parentBarrierTwoAdicCylinderLiftGap}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.parentBarrierResidueGap_iff_parentBarrierTwoAdicCylinderLiftGap}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.parentBarrierGap_iff_parentBarrierTwoAdicCylinderLiftGap}
+  \leanok
+  \uses{thm:collatz-two-adic-stage-cylinder, thm:collatz-two-adic-carry-gap}
+  The same frontier now has the native inverse-hull form. For each nontrivial
+  parent barrier, the inverse residue \(r\) places
+  \(\texttt{parentD p}\cdot r\) in the same stage-\(|p|+1\) two-adic cylinder as
+  \(\texttt{parentC p}\), and the gap is exactly the assertion that this lift is
+  by a positive whole number of \(2^{|p|+1}\)-laps. This is now proved directly
+  from the carry inequality face: the cylinder projection gives congruence, and
+  the positive lift is the full-modulus lower bound \(2^{|p|+1}\le D r-C\).
+  The quotient state is therefore a derived numerical presentation of the same
+  inverse-limit carrier, not an extra assumption.
+\end{theorem}
+\begin{theorem}[Carry-quotient positivity is cylinder descent]
+  \label{thm:collatz-two-adic-carry-quotient-descent}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.parentBarrierTwoAdicCarryQuotientPositive_iff_cylinderSeeds_descend}
+  \leanok
+  \uses{thm:collatz-two-adic-carry-quotient-positive, thm:collatz-residue-gap-cylinder-descent}
+  Positivity of the exact carry quotient is equivalent to strict descent of the
+  least representatives of all nontrivial first-passage cylinders. Thus the
+  descent argument is now readable directly in the audit quotient state:
+  forcing \((D\cdot r-C)/2^{|p|+1}>0\) is the same finite statement as forcing
+  each first-passage cylinder seed to descend.
+\end{theorem}
+\begin{theorem}[Positive cylinder lift is cylinder descent]
+  \label{thm:collatz-two-adic-cylinder-lift-descent}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.parentBarrierTwoAdicCylinderLiftGap_iff_cylinderSeeds_descend}
+  \leanok
+  \uses{thm:collatz-two-adic-cylinder-lift-gap, thm:collatz-two-adic-carry-quotient-descent}
+  The same descent argument is available directly at the inverse-hull
+  cylinder-lift face. A positive whole-modulus lift inside the finite binary
+  cylinder over \(C\) is equivalent to strict descent of the least representatives
+  of all nontrivial first-passage cylinders.
+\end{theorem}
+\begin{theorem}[Two-adic carry gap plus no infinite barrier stream]
+  \label{thm:collatz-two-adic-no-infinite-stream}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.collatz_from_parentBarrierTwoAdicCarryGap_and_noPositiveInfiniteBarrierStream}
+  \leanok
+  \uses{thm:collatz-two-adic-cylinder-lift-descent, thm:collatz-residue-no-infinite-stream}
+  The explicit two-adic carry gap, together with
+  \texttt{NoPositiveInfiniteBarrierStream}, implies accelerated Collatz termination.
+  This is the same reduction as the residue-gap route, transported onto the
+  inverse-hull carrier where the modulus is visibly \(2^{|p|+1}\).
+\end{theorem}
+\begin{theorem}[Exact obstruction after the two-adic carry gap]
+  \label{thm:collatz-two-adic-exact-obstruction}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.acceleratedCollatz_iff_noPositiveInfiniteBarrierStream_of_twoAdicCarryGap}
+  \leanok
+  \uses{thm:collatz-two-adic-no-infinite-stream, thm:collatz-residue-exact-obstruction}
+  Once the explicit two-adic carry gap is supplied, accelerated Collatz termination
+  is equivalent to the absence of positive infinite barrier streams. The theorem is
+  a localization result: the two-adic lock removes the parent-barrier arithmetic
+  obstruction, and the remaining obstruction is exactly the barrier-stream one.
+\end{theorem}
+\begin{theorem}[Two-adic one-lock criterion]
+  \label{thm:collatz-two-adic-one-lock-criterion}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.twoAdicCarryGap_alone_solves_collatz_iff_twoAdicCarryGap_implies_noStream}
+  \leanok
+  \uses{thm:collatz-two-adic-exact-obstruction, thm:collatz-one-frontier-criterion}
+  A proof that the two-adic carry gap alone implies accelerated Collatz termination
+  is equivalent to proving that this same two-adic carry gap forces
+  \texttt{NoPositiveInfiniteBarrierStream}. This is the exact test for whether the
+  inverse-hull attack has collapsed the two-frontier graph to one lock.
+\end{theorem}
+\begin{theorem}[Two-adic frontier-package collapse]
+  \label{thm:collatz-two-adic-frontier-package-collapse}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.frontierInputs_iff_twoAdicCarryGap_of_twoAdicCarryGap_implies_noStream}
+  \leanok
+  \uses{thm:collatz-frontier-inputs-one-gap-collapse, thm:collatz-two-adic-carry-gap}
+  The packaged Collatz frontier inputs are equivalent to the explicit two-adic carry
+  gap exactly when that carry gap rules out positive infinite barrier streams. This
+  is the native inverse-hull statement of the desired one-lock collapse.
+\end{theorem}
+\begin{theorem}[Unique-residue frontier-package collapse]
+  \label{thm:collatz-two-adic-unique-frontier-package-collapse}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.frontierInputs_iff_twoAdicUniqueResidueGap_of_twoAdicUniqueResidueGap_implies_noStream}
+  \leanok
+  \uses{thm:collatz-two-adic-frontier-package-collapse, thm:collatz-two-adic-unique-residue-gap}
+  The packaged Collatz frontier inputs are equivalent to the unique binary
+  inverse-residue carry gap exactly when that unique-residue gap rules out
+  positive infinite barrier streams. This is the one-lock test in the
+  \(C\cdot D^{-1}\bmod 2^k\) language.
+\end{theorem}
+\begin{theorem}[Two-adic frontier package is gap plus named one-lock]
+  \label{thm:collatz-two-adic-frontier-gap-and-one-lock}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.frontierInputs_iff_twoAdicCarryGap_and_oneLock}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.frontierInputs_iff_twoAdicUniqueResidueGap_and_oneLock}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.frontierInputs_iff_twoAdicCarryQuotientPositive_and_oneLock}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.frontierInputs_iff_twoAdicCylinderLiftGap_and_oneLock}
+  \leanok
+  \uses{thm:collatz-frontier-inputs-gap-and-one-lock, thm:collatz-two-adic-cylinder-lift-gap, thm:collatz-two-adic-unique-one-lock-implication}
+  On the inverse-hull carrier, the honest frontier package is exactly the
+  explicit two-adic carry gap together with the named one-lock implication. In
+  the unique-residue formulation, it is exactly
+  \texttt{ParentBarrierTwoAdicUniqueResidueGap} together with
+  \texttt{ParentBarrierOneLockCollapse}. In the exact quotient formulation, it
+  is \texttt{ParentBarrierTwoAdicCarryQuotientPositive} together with the same
+  named implication. In the inverse-hull cylinder-lift formulation, it is
+  \texttt{ParentBarrierTwoAdicCylinderLiftGap} together with the same named
+  implication. This is the current proved accounting of the \(2\)-adic lock:
+  positive cylinder lift is one factor, and the named dynamical implication is
+  the remaining one-lock obligation.
+\end{theorem}
+\begin{theorem}[The named one-lock implication in carry-quotient form]
+  \label{thm:collatz-two-adic-carry-quotient-one-lock-implication}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.parentBarrierOneLockCollapse_iff_twoAdicCarryQuotientPositive_implies_noStream}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.parentBarrierOneLockCollapse_iff_twoAdicCarryQuotientPositive_implies_everyNonterminalContracts}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.parentBarrierOneLockCollapse_iff_twoAdicCarryQuotientPositive_implies_everyNonterminalHasCrossing}
+  \leanok
+  \uses{thm:collatz-two-adic-frontier-gap-and-one-lock, thm:collatz-parent-one-lock-collapse}
+  The named one-lock proposition is equivalent to saying that exact
+  carry-quotient positivity rules out positive infinite barrier streams. Lean
+  also proves the equivalent readings that the same quotient positivity forces
+  eventual coefficient contraction, or forces every nonterminal seed to have a
+  first coefficient crossing.
+\end{theorem}
+\begin{theorem}[The named one-lock implication in cylinder-lift form]
+  \label{thm:collatz-two-adic-cylinder-lift-one-lock-implication}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.parentBarrierOneLockCollapse_iff_twoAdicCylinderLiftGap_implies_noStream}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.parentBarrierOneLockCollapse_iff_twoAdicCylinderLiftGap_implies_everyNonterminalContracts}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.parentBarrierOneLockCollapse_iff_twoAdicCylinderLiftGap_implies_everyNonterminalHasCrossing}
+  \leanok
+  \uses{thm:collatz-two-adic-frontier-gap-and-one-lock, thm:collatz-two-adic-cylinder-lift-gap}
+  The named one-lock proposition is equivalently the assertion that the
+  positive two-adic cylinder-lift gap rules out positive infinite barrier
+  streams. Lean also proves the equivalent readings that the same cylinder-lift
+  gap forces eventual coefficient contraction, or forces every nonterminal seed
+  to have a first coefficient crossing.
+\end{theorem}
+\begin{theorem}[The named one-lock implication in unique-residue form]
+  \label{thm:collatz-two-adic-unique-one-lock-implication}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.parentBarrierOneLockCollapse_iff_twoAdicUniqueResidueGap_implies_noStream}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.parentBarrierOneLockCollapse_iff_twoAdicUniqueResidueGap_implies_everyNonterminalContracts}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.parentBarrierOneLockCollapse_iff_twoAdicUniqueResidueGap_implies_everyNonterminalHasCrossing}
+  \leanok
+  \uses{thm:collatz-two-adic-cylinder-lift-one-lock-implication, thm:collatz-two-adic-unique-frontier-package-collapse}
+  The named proposition \texttt{ParentBarrierOneLockCollapse} is equivalent to the
+  single implication
+  \[
+    \texttt{ParentBarrierTwoAdicUniqueResidueGap}
+      \Longrightarrow \texttt{NoPositiveInfiniteBarrierStream}.
+  \]
+  Thus the current one-lock statement is not an additional arithmetic claim:
+  it is exactly the assertion that the unique binary inverse-residue inequality
+  rules out positive infinite barrier streams. Lean also proves the equivalent
+  readings that the same unique-residue inequality forces eventual coefficient
+  contraction, or forces every nonterminal seed to have a first coefficient
+  crossing.
+\end{theorem}
+\begin{theorem}[Named collapse on the two-adic carry face]
+  \label{thm:collatz-two-adic-named-collapse}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.parentBarrierOneLockCollapse_iff_frontierInputs_twoAdicCarryGap}
+  \leanok
+  \uses{thm:collatz-parent-one-lock-collapse, thm:collatz-two-adic-frontier-package-collapse}
+  The named proposition \texttt{ParentBarrierOneLockCollapse} is equivalent to
+  collapsing \texttt{CollatzFrontierInputs} to the explicit two-adic carry gap.
+  This theorem is not a new proof of the lock; it proves that the semigroup,
+  residue, and inverse-hull faces carry the same named one-lock criterion.
+\end{theorem}
+\begin{theorem}[Named collapse on the unique-residue face]
+  \label{thm:collatz-two-adic-unique-named-collapse}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.parentBarrierOneLockCollapse_iff_frontierInputs_twoAdicUniqueResidueGap}
+  \leanok
+  \uses{thm:collatz-two-adic-named-collapse, thm:collatz-two-adic-unique-frontier-package-collapse}
+  The named proposition \texttt{ParentBarrierOneLockCollapse} is equivalent to
+  collapsing \texttt{CollatzFrontierInputs} to the unique binary inverse-residue
+  carry gap. This is the exact named version of the proposed \(2\)-adic lock.
+\end{theorem}
+\begin{theorem}[Named two-adic Collatz criterion]
+  \label{thm:collatz-two-adic-named-collatz-criterion}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.parentBarrierOneLockCollapse_iff_twoAdicCarryGap_alone_solves_collatz}
+  \leanok
+  \uses{thm:collatz-two-adic-one-lock-criterion, thm:collatz-two-adic-named-collapse}
+  The named one-lock collapse is also equivalent to saying that the explicit
+  two-adic carry gap alone implies accelerated Collatz termination for every
+  positive natural. This is the direct termination-facing form of the same lock.
+\end{theorem}
+\begin{theorem}[Named unique-residue Collatz criterion]
+  \label{thm:collatz-two-adic-unique-named-collatz-criterion}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.parentBarrierOneLockCollapse_iff_twoAdicUniqueResidueGap_alone_solves_collatz}
+  \leanok
+  \uses{thm:collatz-two-adic-named-collatz-criterion, thm:collatz-two-adic-unique-named-collapse}
+  The named one-lock collapse is equivalently the statement that the unique
+  binary inverse-residue carry gap alone implies accelerated Collatz termination
+  for every positive natural.
+\end{theorem}
+\begin{theorem}[Two-adic carry gap closure-ordinal stage]
+  \label{thm:collatz-two-adic-kappa-stage}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.closureOrdinalStage_exists_iff_reachesTerminal_of_twoAdicCarryGap_and_noPositiveInfiniteBarrierStream}
+  \leanok
+  \uses{thm:collatz-two-adic-no-infinite-stream, thm:collatz-residue-no-infinite-stream-kappa-stage}
+  The explicit two-adic carry gap plus absence of positive infinite barrier streams
+  identifies terminal reachability with existence of a finite
+  \texttt{ClosureOrdinalStage}. Thus the \(\kappa\)-stage settlement bridge is now
+  available directly on the inverse-hull face of the residue lock.
+\end{theorem}
+\begin{theorem}[Two-adic carry gap total stopping stage]
+  \label{thm:collatz-two-adic-total-stopping-stage}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.totalStoppingStage_exists_iff_reachesTerminal_of_twoAdicCarryGap_and_noPositiveInfiniteBarrierStream}
+  \leanok
+  \uses{thm:collatz-two-adic-kappa-stage, thm:collatz-frontier-inputs-total-stopping-stage}
+  In the same two-adic/no-stream language, terminal reachability is equivalent to
+  existence of a finite \texttt{TotalStoppingStage}. This is the proved form of
+  "total stopping time is the closure ordinal \(\kappa\)" over the native
+  two-adic lock, still conditional on the two explicit frontier inputs.
+\end{theorem}
+\begin{theorem}[Two-adic kappa package one-lock criterion]
+  \label{thm:collatz-two-adic-kappa-package-criterion}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.twoAdicCarryGap_alone_solves_kappa_package_iff_twoAdicCarryGap_implies_noStream}
+  \leanok
+  \uses{thm:collatz-two-adic-total-stopping-stage, thm:collatz-two-adic-one-lock-criterion}
+  Over the explicit two-adic carry face, the whole terminal/\(\kappa\)/total-stopping
+  package follows from the carry gap alone exactly when that same carry gap forces
+  \texttt{NoPositiveInfiniteBarrierStream}. This is the inverse-hull version of the
+  one-lock test.
+\end{theorem}
+\begin{theorem}[Named two-adic \(\kappa\)-package criterion]
+  \label{thm:collatz-two-adic-named-kappa-package}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.parentBarrierOneLockCollapse_iff_twoAdicCarryGap_alone_solves_kappa_package}
+  \leanok
+  \uses{thm:collatz-two-adic-kappa-package-criterion, thm:collatz-two-adic-named-collatz-criterion}
+  The named one-lock collapse is equivalent to saying that the explicit two-adic
+  carry gap alone gives terminal reachability together with finite
+  \texttt{ClosureOrdinalStage} and \texttt{TotalStoppingStage} witnesses. This is
+  the precise inverse-hull form of the total-stopping/closure-ordinal settlement
+  package, still conditional on closing the named lock.
+\end{theorem}
+\begin{theorem}[Named unique-residue \(\kappa\)-package criterion]
+  \label{thm:collatz-two-adic-unique-named-kappa-package}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.parentBarrierOneLockCollapse_iff_twoAdicUniqueResidueGap_alone_solves_kappa_package}
+  \leanok
+  \uses{thm:collatz-two-adic-named-kappa-package, thm:collatz-two-adic-unique-named-collatz-criterion}
+  The named one-lock collapse is equivalent to saying that the unique binary
+  inverse-residue carry gap alone gives terminal reachability together with finite
+  \texttt{ClosureOrdinalStage} and \texttt{TotalStoppingStage} witnesses. This is
+  the total-stopping/closure-ordinal package over the exact \(C\cdot D^{-1}\)
+  residue lock.
+\end{theorem}
+\begin{theorem}[Carry-quotient \(\kappa\)-package criterion]
+  \label{thm:collatz-two-adic-carry-quotient-kappa-package}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.twoAdicCarryQuotientPositive_alone_solves_kappa_package_iff_twoAdicCarryQuotientPositive_implies_noStream}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.parentBarrierOneLockCollapse_iff_twoAdicCarryQuotientPositive_alone_solves_kappa_package}
+  \leanok
+  \uses{thm:collatz-two-adic-carry-quotient-one-lock-implication, thm:collatz-two-adic-named-kappa-package}
+  Exact carry-quotient positivity gives the whole terminal/\(\kappa\)/total-stopping
+  package exactly when it rules out positive infinite barrier streams. Equivalently,
+  the named one-lock collapse is the statement that quotient positivity alone
+  supplies terminal reachability together with finite \texttt{ClosureOrdinalStage}
+  and \texttt{TotalStoppingStage} witnesses.
+\end{theorem}
+\begin{theorem}[Cylinder-lift \(\kappa\)-package criterion]
+  \label{thm:collatz-two-adic-cylinder-lift-kappa-package}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.twoAdicCylinderLiftGap_alone_solves_kappa_package_iff_twoAdicCylinderLiftGap_implies_noStream}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.parentBarrierOneLockCollapse_iff_twoAdicCylinderLiftGap_alone_solves_kappa_package}
+  \leanok
+  \uses{thm:collatz-two-adic-cylinder-lift-one-lock-implication, thm:collatz-two-adic-carry-quotient-kappa-package}
+  The same package is now stated in native inverse-hull form: positive
+  two-adic cylinder lift alone gives terminal reachability plus finite
+  closure-ordinal and total-stopping stages exactly when it rules out positive
+  infinite barrier streams. Thus the \(\kappa\)/total-stopping settlement bridge
+  is available at the cylinder-lift face of the one lock.
+\end{theorem}
+\begin{theorem}[Forward cylinder-lift \(\kappa\)-package]
+  \label{thm:collatz-two-adic-cylinder-lift-kappa-package-forward}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.kappaPackage_of_twoAdicCarryQuotientPositive_and_oneLock}
+  \lean{Obsmetrologia.AperiodicOrder.Tiling.kappaPackage_of_twoAdicCylinderLiftGap_and_oneLock}
+  \leanok
+  \uses{thm:collatz-two-adic-cylinder-lift-kappa-package, thm:collatz-two-adic-frontier-gap-and-one-lock}
+  Forward use of the named one-lock collapse is available at the exact quotient
+  and positive cylinder-lift faces: once either arithmetic face and
+  \texttt{ParentBarrierOneLockCollapse} are supplied, Lean gets terminal
+  reachability together with finite \texttt{ClosureOrdinalStage} and
+  \texttt{TotalStoppingStage} witnesses.
+\end{theorem}
+\begin{theorem}[Unique-residue one-lock frontier]
+  \label{thm:collatz-two-adic-unique-one-lock-frontier}
+  \notready
+  \uses{thm:collatz-two-adic-unique-one-lock-implication, thm:collatz-two-adic-cylinder-lift-kappa-package-forward, thm:collatz-eventual-contracts-no-infinite-stream}
+  \emph{(Open one-lock frontier --- stated, not proved.)} Prove
+  \[
+    \texttt{ParentBarrierTwoAdicUniqueResidueGap}
+      \Longrightarrow \texttt{NoPositiveInfiniteBarrierStream}.
+  \]
+  This is the precise theorem that would make the parent-barrier inequality
+  \(C<D\cdot r\), with \(r=C\cdot D^{-1}\bmod 2^{|p|+1}\), the single remaining
+  lock. Lean already proves that this implication is equivalent to the named
+  \texttt{ParentBarrierOneLockCollapse}, to the unique-residue gap forcing
+  eventual coefficient contraction, and to the unique-residue gap forcing a first
+  crossing for every nonterminal seed. Until this red node is proved, the live
+  graph still has the arithmetic frontier and the no-stream/crossing frontier as
+  separate open aliases.
+\end{theorem}
+\begin{theorem}[Geometric distribution of $v_2(3n+1)$]
+  \label{thm:collatz-v2-geometric}
+  \notready
+  \uses{thm:collatz-saturating-depth}
+  \emph{(Open probabilistic frontier --- empirical.)} Over uniformly random odd $n$,
+  $v_2(3n+1)$ is geometric, $P(v_2=k)=1/2^k$, with an observed trajectory-autocorrelation excess
+  at $k=4$. The deterministic stratification is \cref{thm:collatz-saturating-depth}; the
+  distributional claim needs counting/measure (the core's probability modules) and is not
+  formalized here.
+\end{theorem}

@@ -1,0 +1,46 @@
+\section{The adjunction shape and the converse system}
+
+This section records claim nodes and dependency edges.
+
+\begin{proposition}[Galois connection in the knowledge order]\label{thm:galoisK}\lean{Obsmetrologia.Valuation.GaloisK}\leanok\uses{thm:reindex}
+A pair $L \dashv R$ of valuation operators forms a knowledge-order Galois
+connection, $\texttt{GaloisK}\,L\,R$, when $L\,v \le_k w \iff v \le_k R\,w$ for
+all $v, w$. This is the exact adjunction shape an existential--reindexing or
+reindexing--universal pair must satisfy.
+\end{proposition}
+\begin{proposition}[Base isomorphism]\label{thm:baseIso}\lean{Obsmetrologia.Valuation.BaseIso}\leanok\uses{thm:predication}
+A base isomorphism packages a bijection on predication cells: a forward map, a
+backward map, and the two round-trip laws witnessing that they are mutually
+inverse. It is the data along which reindexing becomes an order-isomorphism.
+\end{proposition}
+\begin{theorem}[Reindexing along a bijection is self-dual adjoint]\label{thm:galois-reindex}\lean{Obsmetrologia.Valuation.galois_reindex}\leanok\uses{thm:galoisK, thm:baseIso}
+For a base isomorphism $e$, the pair $e_{\mathrm{fwd}}^{*} \dashv
+e_{\mathrm{bwd}}^{*}$ is a knowledge-order Galois connection. Swapping the roles
+gives $e_{\mathrm{bwd}}^{*} \dashv e_{\mathrm{fwd}}^{*}$ as well, so along a
+bijection the existential and universal quantifiers both coincide with reindexing
+along the inverse.
+\end{theorem}
+\begin{proposition}[Converse as a base isomorphism]\label{thm:converseIso}\lean{Obsmetrologia.Valuation.converseIso}\leanok\uses{thm:baseIso, thm:predication-converse, thm:converse-involution, thm:reindex}
+The converse generator --- which swaps subject and object --- is an involution on
+predication cells, and so packages directly as a base isomorphism whose forward
+and backward maps are both \texttt{converse}, with both round-trip laws supplied
+by the involutivity $\texttt{converse}\circ\texttt{converse} = \texttt{id}$.
+\end{proposition}
+\begin{theorem}[Converse quantifier adjunction]\label{thm:converse-adjunction}\lean{Obsmetrologia.Valuation.converse_adjunction}\leanok\uses{thm:galois-reindex, thm:converseIso}
+The converse quantifier adjunction $\exists_{\mathrm{converse}} \dashv
+\texttt{converse}^{*} \dashv \forall_{\mathrm{converse}}$ holds, with all three
+operators equal to $\texttt{reindex}\,\texttt{converse}$. This is the first of
+Lawvere's hyperdoctrine conditions (B1) realized for a concrete generator.
+\end{theorem}
+\begin{theorem}[Frobenius reciprocity for converse]\label{thm:converse-frobenius}\lean{Obsmetrologia.Valuation.converse_frobenius}\leanok\uses{thm:converse-adjunction, thm:valuation-meetK}
+Frobenius reciprocity holds for the converse quantifier:
+$\exists_{f}(f^{*}\alpha \sqcap_k \varphi) = \alpha \sqcap_k \exists_{f}\varphi$,
+where $\exists_{f} = f^{*} = \texttt{reindex}\,\texttt{converse}$. The quantifier
+commutes with knowledge-conjunction against a reindexed parameter --- condition
+(B2).
+\end{theorem}
+\begin{theorem}[Beck--Chevalley for bijections]\label{thm:beck-chevalley}\lean{Obsmetrologia.Valuation.beck_chevalley}\leanok\uses{thm:reindex-comp, thm:valuation}
+In the bijection case Beck--Chevalley (B3) reduces to the commutation of
+reindexings: if $s\circ r = r\circ s$ then $r^{*}(s^{*}v) = s^{*}(r^{*}v)$. Over
+a pullback of bijections the canonical comparison map is the identity.
+\end{theorem}

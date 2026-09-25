@@ -1,0 +1,72 @@
+---
+name: "Protocol-Aided Audience Analysis"
+aliases:
+  - "Protocol-Aided Audience Analysis"
+  - "protocol-aided audience analysis"
+date-created: 2026-03-06
+tags: []
+date-updated: 2026-03-09
+part-of: writing/topics/plain-language/terms
+type: morphism
+class: audience-method
+---
+
+***Protocol-aided audience analysis*** is [Karen Schriver](../../general/people/karen-schriver.md)'s method of using [think-aloud protocols](think-aloud-protocol.md) to study how real readers process documents — watching and listening as they read, noting where they hesitate, misread, backtrack, or give up [@schriver1997].
+
+Schriver distinguished three approaches to [audience](../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/glossary/concepts/audience.md) analysis:
+
+1. **Classification-based** — assigning demographic categories (age, education, job role). This is the easiest and least useful: knowing that readers are "college-educated adults" doesn't reveal what they'll misunderstand.
+2. **Intuition-based** — the writer imagines a reader and predicts their responses. This is better but unreliable: Schriver's research showed that writers systematically overestimate how well readers understand their text.
+3. **Feedback-based** — observing real readers using the document. Protocol-aided audience analysis is the most rigorous form of feedback-based analysis.
+
+In a protocol-aided session, a reader thinks aloud while using a document to accomplish a task. The writer (or researcher) observes without helping, recording where comprehension breaks down. The resulting data reveals problems that classification and intuition can't detect: a heading that misleads, a paragraph that readers skip, a term that readers misinterpret.
+
+Schriver's empirical research showed that this gap between what writers expect and what readers experience is not a matter of individual skill — it's systematic. Even experienced writers fail to predict reader difficulties without feedback data.
+
+The vault's [plain language specification](../topics/plain-language/index.md) operationalizes this through the paraphrase test (section 12.2) and task test (section 12.3) — simplified versions of protocol-aided testing adapted for practical use.
+
+## Related terms
+
+- [think-aloud protocol](think-aloud-protocol.md) — the research method underlying protocol-aided audience analysis
+- [audience](../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/glossary/concepts/audience.md) — protocol-aided analysis is the most reliable method of audience analysis
+- [document design](document-design.md) — Schriver's document design research depends on protocol-aided methods
+- [revision](./revision.md) — protocol data drives targeted revision
+
+---
+
+## Supplementary formulation
+
+```yaml
+---
+name: Protocol-Aided Audience Analysis
+aliases:
+- Protocol-Aided Audience Analysis
+- protocol-aided audience analysis
+date-created: 2026-03-06
+tags: []
+date-modified: 2026-03-09
+part-of: writing/topics/plain-language/terms
+---
+```
+
+***Protocol-aided audience analysis*** is [Karen Schriver](../../../../../../references/people/karen-schriver.md)'s method of using [think-aloud protocols](think-aloud-protocol.md) to study how real readers process documents — watching and listening as they read, noting where they hesitate, misread, backtrack, or give up [@schriver1997].
+
+Schriver distinguished three approaches to [audience](../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/glossary/concepts/audience.md) analysis:
+
+1. **Classification-based** — assigning demographic categories (age, education, job role). This is the easiest and least useful: knowing that readers are "college-educated adults" doesn't reveal what they'll misunderstand.
+2. **Intuition-based** — the writer imagines a reader and predicts their responses. This is better but unreliable: Schriver's research showed that writers systematically overestimate how well readers understand their text.
+3. **Feedback-based** — observing real readers using the document. Protocol-aided audience analysis is the most rigorous form of feedback-based analysis.
+
+In a protocol-aided session, a reader thinks aloud while using a document to accomplish a task. The writer (or researcher) observes without helping, recording where comprehension breaks down. The resulting data reveals problems that classification and intuition can't detect: a heading that misleads, a paragraph that readers skip, a term that readers misinterpret.
+
+Schriver's empirical research showed that this gap between what writers expect and what readers experience is not a matter of individual skill — it's systematic. Even experienced writers fail to predict reader difficulties without feedback data.
+
+The vault's [plain language specification](../topics/plain-language/index.md) operationalizes this through the paraphrase test (section 12.2) and task test (section 12.3) — simplified versions of protocol-aided testing adapted for practical use.
+
+## Earlier material
+
+Schriver distinguished three approaches to [audience](../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/glossary/concepts/audience.md) analysis:
+
+PTGAE operationalizes a simplified version of this method through the **paraphrase test** (ask a reader to explain a passage in their own words; if they can't, revise) and the **task test** (give a reader a realistic task and watch them use the document to complete it; note where they hesitate, reread, or fail).
+
+Schriver distinguished three approaches to [audience](../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/glossary/concepts/audience.md) analysis:

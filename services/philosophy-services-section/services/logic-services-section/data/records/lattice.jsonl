@@ -1,0 +1,5 @@
+{"e":"lattice","a":"defined-at","v":"library/variety/library/lattice/lattice.md","t":"2026-05-19T23:30:00Z"}
+{"e":"lattice","a":"having-data-shape","v":"library/variety/library/lattice/lattice.schema.json","t":"2026-05-19T23:30:00Z"}
+{"e":"lattice","a":"specializing","v":"poset","t":"2026-05-19T23:30:00Z"}
+{"e":"lattice","a":"having-as-object-of","v":"variety","t":"2026-05-19T23:30:00Z"}
+{"e":"lattice","a":"extended-by-pairing","v":"pre-bilattice","t":"2026-05-19T23:30:00Z"}

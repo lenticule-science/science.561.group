@@ -1,0 +1,12 @@
+{
+  "session_id": "unknown",
+  "started": "2026-04-05T17:27:10.334Z",
+  "records_created": 79,
+  "coordination_events": 54,
+  "mcp_tool_uses": 71,
+  "bash_graph_queries": 23,
+  "warnings_emitted": [
+    "bash-graph-query",
+    "record-overload"
+  ]
+}

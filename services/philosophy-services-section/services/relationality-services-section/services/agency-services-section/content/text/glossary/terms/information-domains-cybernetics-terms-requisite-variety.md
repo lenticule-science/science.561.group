@@ -1,0 +1,9 @@
+---
+title: "Requisite Variety"
+type: "term"
+date-created: 2026-03-03
+---
+
+***Requisite variety*** is a principle formulated by [W. Ross Ashby](../../documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/humanities/domains/general/domains/people/w-ross-ashby.md) in *An Introduction to Cybernetics* (1956) [cite:@ashby_IntroductionCybernetics_1956]. The law states that a system can only remain stable if it possesses enough internal complexity to match the complexity of its environment. Put formally: a controller can regulate a system only if the controller&rsquo;s variety — its range of possible responses — is at least equal to the variety of disturbances the system faces.
+
+This has consequences for governance and organizational design. A centralized authority with a narrow response repertoire cannot regulate a complex environment no matter how well-informed it is. Effective regulation requires distributed variety — multiple agents, at multiple scales, with overlapping but distinct response capacities.

@@ -1,0 +1,6 @@
+---
+id: 913eecab-9248-41d2-9dfa-20b518fb848b
+title: Org-babel
+date-created: 2025-09-15
+---
+

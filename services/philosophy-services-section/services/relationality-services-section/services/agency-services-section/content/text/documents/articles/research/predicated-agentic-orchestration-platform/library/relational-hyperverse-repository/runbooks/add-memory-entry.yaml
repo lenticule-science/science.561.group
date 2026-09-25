@@ -1,0 +1,22 @@
+id: add-memory-entry
+description: "Add a memory entry to a department's MEMORY.md."
+skill-closure-kind: process
+
+inputs:
+  - name: department
+    type: str
+  - name: topic
+    type: str
+  - name: body
+    type: str
+
+steps:
+  - id: write-entry
+    type: write
+    kind: MemoryEntry
+    department: "{{inputs.department}}"
+    flush: true
+    content:
+      date: "{{today}}"
+      topic: "{{inputs.topic}}"
+      body: "{{inputs.body}}"

@@ -1,0 +1,1519 @@
+{
+  "type": "ObsmetrologiaBlueprintPointerCensus",
+  "checkedAt": "2026-09-21T21:27:08.052Z",
+  "packageRoot": "/home/emsenn/info/lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia",
+  "blueprintSourceRoot": "/home/emsenn/info/lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/blueprint/src",
+  "leanSourcePath": "scratch (generated per run, see src/blueprint-pointer-census.mjs#buildBlueprintScratchLeanSource)",
+  "reading": "Every \\lean{...} pointer in the blueprint source names one or more Obsmetrologia declarations and lives inside a theorem-like environment carrying a status tag: \\leanok claims the pointer is settled by a genuine, sorry-free proof; \\notready marks a frontier claim awaiting formalization; no tag is untagged. This census checks each name against the live, built Lean environment and classifies the result into finding classes. leanok-missing: the \\leanok pointer names a declaration that does not exist -- a broken or renamed pointer, claiming settlement for nothing. leanok-def: the \\leanok pointer resolves to a def, structure, inductive, abbrev, or instance rather than a theorem -- reported, not judged: a def can genuinely witness a claim (e.g. a decision procedure), but the kind mismatch is a category signal worth a human's read, not a verdict. leanok-sorry: the \\leanok pointer's declaration depends on the sorryAx axiom -- claimed settled, not actually proved. leanok-outside-law: the \\leanok pointer's declaration depends on an axiom other than Quot.sound and other than sorryAx (sorryAx is leanok-sorry's to report, so a row never carries both) -- the owner's law for this library is that the only identification spent is Quot.sound, so propext or Classical.choice here means the claim rests on more than the law allows. notready-proved: the \\notready pointer nonetheless resolves to a theorem with no sorry in its axiom list -- a candidate for promotion to \\leanok, the blueprint prose lagging the Lean work already done. untagged: the pointer carries neither \\leanok nor \\notready. A \\leanok pointer resolving to a sorry-free theorem depending on nothing but Quot.sound gets no finding -- the paper's expected settled state; likewise a \\notready pointer not yet resolving to a proved theorem gets none.",
+  "summary": {
+    "totalPointers": 1227,
+    "totalNames": 1627,
+    "statusCounts": {
+      "leanok": 1551,
+      "notready": 76,
+      "none": 0
+    },
+    "findingCounts": {
+      "leanok-outside-law": 793,
+      "leanok-def": 327,
+      "notready-proved": 12
+    },
+    "byChapter": {
+      "chapters/aperiodic-classification/03-geometric-action.tex": {
+        "rows": 2,
+        "leanok": 2,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 2
+        }
+      },
+      "chapters/aperiodic-classification/05-hat-monotile-witness.tex": {
+        "rows": 1,
+        "leanok": 1,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 1
+        }
+      },
+      "chapters/aperiodic-classification/06-hat-reflection-frequency.tex": {
+        "rows": 1,
+        "leanok": 1,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 1
+        }
+      },
+      "chapters/aperiodic-classification/clinv-mld/01-invariant-and-dual.tex": {
+        "rows": 2,
+        "leanok": 2,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 1
+        }
+      },
+      "chapters/aperiodic-classification/clinv-mld/02-step-three-refinement.tex": {
+        "rows": 1,
+        "leanok": 1,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {}
+      },
+      "chapters/aperiodic-classification/clinv-mld/03-converse-and-reduction.tex": {
+        "rows": 2,
+        "leanok": 2,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 1
+        }
+      },
+      "chapters/aperiodic-classification/clinv-mld/04-common-base.tex": {
+        "rows": 1,
+        "leanok": 1,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 1
+        }
+      },
+      "chapters/aperiodic-classification/jeandel-rao-witness/01-decorated-witness.tex": {
+        "rows": 1,
+        "leanok": 1,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 1
+        }
+      },
+      "chapters/aperiodic-classification/jeandel-rao-witness/02-marker-ring-core.tex": {
+        "rows": 1,
+        "leanok": 1,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 1
+        }
+      },
+      "chapters/aperiodic-classification/jeandel-rao-witness/03-substitution-rung.tex": {
+        "rows": 1,
+        "leanok": 1,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 1
+        }
+      },
+      "chapters/aperiodic-classification/jeandel-rao-witness/04-direct-limit-persistence.tex": {
+        "rows": 10,
+        "leanok": 10,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 10
+        }
+      },
+      "chapters/aperiodic-classification/jeandel-rao-witness/05-decidable-core.tex": {
+        "rows": 6,
+        "leanok": 6,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 4,
+          "leanok-outside-law": 1
+        }
+      },
+      "chapters/aperiodic-classification/transfinite-carriers/01-crossbase-coinduction.tex": {
+        "rows": 2,
+        "leanok": 2,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 1
+        }
+      },
+      "chapters/aperiodic-classification/transfinite-carriers/02-ladder-climb.tex": {
+        "rows": 1,
+        "leanok": 1,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 1
+        }
+      },
+      "chapters/aperiodic-classification/transfinite-carriers/03-chromatic-lorentzian.tex": {
+        "rows": 1,
+        "leanok": 1,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {}
+      },
+      "chapters/aperiodic-classification/transfinite-carriers/04-aperiodic-frame.tex": {
+        "rows": 8,
+        "leanok": 8,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 3,
+          "leanok-def": 2
+        }
+      },
+      "chapters/aperiodic-classification/transfinite-carriers/05-geometric-complete.tex": {
+        "rows": 1,
+        "leanok": 1,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 1
+        }
+      },
+      "chapters/articulation-predication/01-four-corner-cell.tex": {
+        "rows": 15,
+        "leanok": 15,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 5
+        }
+      },
+      "chapters/articulation-predication/02-predication-seed.tex": {
+        "rows": 6,
+        "leanok": 6,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 5
+        }
+      },
+      "chapters/articulation-predication/03-predication-morphisms.tex": {
+        "rows": 8,
+        "leanok": 8,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 3,
+          "leanok-outside-law": 1
+        }
+      },
+      "chapters/articulation-predication/04-predicate-operator-syntax.tex": {
+        "rows": 4,
+        "leanok": 4,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 3
+        }
+      },
+      "chapters/articulation-predication/05-guarded-predicating.tex": {
+        "rows": 9,
+        "leanok": 9,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 3
+        }
+      },
+      "chapters/articulation-predication/06-sibling-seed-composition.tex": {
+        "rows": 24,
+        "leanok": 24,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 5,
+          "leanok-outside-law": 4
+        }
+      },
+      "chapters/articulation-predication/07-fregean-four-chu.tex": {
+        "rows": 3,
+        "leanok": 3,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 1
+        }
+      },
+      "chapters/articulation-predication/08-orbital-generators.tex": {
+        "rows": 8,
+        "leanok": 8,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {}
+      },
+      "chapters/collatz/01-the-affine-trace.tex": {
+        "rows": 3,
+        "leanok": 3,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 3
+        }
+      },
+      "chapters/collatz/02-first-passage-and-parent-barriers.tex": {
+        "rows": 3,
+        "leanok": 3,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 3
+        }
+      },
+      "chapters/collatz/03-the-semigroup-gap.tex": {
+        "rows": 58,
+        "leanok": 58,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 42,
+          "leanok-def": 10
+        }
+      },
+      "chapters/collatz/04-reduction-to-termination.tex": {
+        "rows": 25,
+        "leanok": 25,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 23
+        }
+      },
+      "chapters/collatz/05-the-frontier.tex": {
+        "rows": 31,
+        "leanok": 26,
+        "notready": 5,
+        "none": 0,
+        "findingCounts": {
+          "notready-proved": 2,
+          "leanok-outside-law": 23,
+          "leanok-def": 3
+        }
+      },
+      "chapters/collatz/06-the-smallest-pisot-number-padovan-slow-growth.tex": {
+        "rows": 3,
+        "leanok": 3,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 2,
+          "leanok-outside-law": 1
+        }
+      },
+      "chapters/collatz/07-the-2-adic-saturating-valuation-layer.tex": {
+        "rows": 54,
+        "leanok": 54,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 53,
+          "leanok-def": 2
+        }
+      },
+      "chapters/collatz/settlement-reading/01-reached-set-quiescence.tex": {
+        "rows": 19,
+        "leanok": 19,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 19
+        }
+      },
+      "chapters/collatz/settlement-reading/02-modular-frontier.tex": {
+        "rows": 8,
+        "leanok": 8,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 2,
+          "leanok-outside-law": 5
+        }
+      },
+      "chapters/collatz/settlement-reading/03-residue-gap-arithmetic.tex": {
+        "rows": 45,
+        "leanok": 43,
+        "notready": 2,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 42,
+          "leanok-def": 1,
+          "notready-proved": 2
+        }
+      },
+      "chapters/hyperdoctrine/01-reindexing-the-fibration.tex": {
+        "rows": 4,
+        "leanok": 4,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 2
+        }
+      },
+      "chapters/hyperdoctrine/02-the-adjunction-shape-and-the-converse-system.tex": {
+        "rows": 7,
+        "leanok": 7,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 3
+        }
+      },
+      "chapters/hyperdoctrine/03-fiber-quantifiers-for-the-projections.tex": {
+        "rows": 6,
+        "leanok": 6,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 3,
+          "leanok-outside-law": 3
+        }
+      },
+      "chapters/hyperdoctrine/truth-equality/01-truth-quantifiers.tex": {
+        "rows": 4,
+        "leanok": 4,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 2,
+          "leanok-outside-law": 2
+        }
+      },
+      "chapters/hyperdoctrine/truth-equality/02-diagonal-equality.tex": {
+        "rows": 7,
+        "leanok": 7,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 3,
+          "leanok-outside-law": 4
+        }
+      },
+      "chapters/information/04-format-carriers.tex": {
+        "rows": 7,
+        "leanok": 7,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 2
+        }
+      },
+      "chapters/information/05-it-bit-byte.tex": {
+        "rows": 22,
+        "leanok": 22,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 8,
+          "leanok-outside-law": 3
+        }
+      },
+      "chapters/information/beads/02-beadwork-is-a-ported-thread-walk-not-a-strand-link.tex": {
+        "rows": 8,
+        "leanok": 8,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 5
+        }
+      },
+      "chapters/information/beads/03-beadwork-the-lenticular-condensate-carrier.tex": {
+        "rows": 3,
+        "leanok": 3,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {}
+      },
+      "chapters/information/beads/04-lenticular-percolation-density-crosses-into-load-bearing-topology.tex": {
+        "rows": 9,
+        "leanok": 9,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 6,
+          "leanok-def": 1
+        }
+      },
+      "chapters/information/beads/05-mass-is-entrenched-failure-the-fundamental-cycle-is-its-load-bearing-l.tex": {
+        "rows": 6,
+        "leanok": 6,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 4
+        }
+      },
+      "chapters/information/hair/02-the-tiles-display-layer-s-quantitative-half-diffraction.tex": {
+        "rows": 7,
+        "leanok": 7,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 1,
+          "leanok-outside-law": 4
+        }
+      },
+      "chapters/information/hair/03-weaving-is-metallic-the-pisot-salem-diffraction-dichotomy.tex": {
+        "rows": 13,
+        "leanok": 13,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 6,
+          "leanok-def": 1
+        }
+      },
+      "chapters/information/hair/04-port-growth-the-levelwise-bratteli-tower.tex": {
+        "rows": 6,
+        "leanok": 6,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 5,
+          "leanok-def": 1
+        }
+      },
+      "chapters/information/hair/05-time-is-the-bratteli-level.tex": {
+        "rows": 2,
+        "leanok": 2,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 1
+        }
+      },
+      "chapters/information/hair/06-the-vershik-successor-the-serial-yarn-order.tex": {
+        "rows": 16,
+        "leanok": 16,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 3,
+          "leanok-outside-law": 2
+        }
+      },
+      "chapters/information/tiles/00-chromatic-carriers.tex": {
+        "rows": 15,
+        "leanok": 15,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 4,
+          "leanok-def": 1
+        }
+      },
+      "chapters/information/tiles/01-the-plain-weave-as-a-shift-of-finite-type.tex": {
+        "rows": 2,
+        "leanok": 2,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 1,
+          "leanok-outside-law": 1
+        }
+      },
+      "chapters/information/tiles/02-the-crossing-datum-is-a-belnap-charge.tex": {
+        "rows": 5,
+        "leanok": 5,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 1,
+          "leanok-outside-law": 1
+        }
+      },
+      "chapters/information/tiles/04-sticking-interlacement-is-causal-past-closure.tex": {
+        "rows": 3,
+        "leanok": 3,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 2
+        }
+      },
+      "chapters/information/tiles/05-the-mirror-recto-verso-and-the-held.tex": {
+        "rows": 2,
+        "leanok": 2,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 1
+        }
+      },
+      "chapters/information/tiles/08-defects-propagate-as-a-charge-holonomy-automaton.tex": {
+        "rows": 5,
+        "leanok": 5,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 4
+        }
+      },
+      "chapters/information/tiles/11-the-contradiction-core-a-defect-is-a-colouring-conflict.tex": {
+        "rows": 8,
+        "leanok": 8,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 4
+        }
+      },
+      "chapters/phase-invariants/01-runtime-gaming.tex": {
+        "rows": 1,
+        "leanok": 1,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {}
+      },
+      "chapters/phase-invariants/causal-spacetime/05-proper-time.tex": {
+        "rows": 4,
+        "leanok": 4,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 4
+        }
+      },
+      "chapters/phase-invariants/causal-spacetime/causal-order-observation/01-transitive-closure.tex": {
+        "rows": 1,
+        "leanok": 1,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 1
+        }
+      },
+      "chapters/phase-invariants/causal-spacetime/causal-order-observation/015-arrow-of-time.tex": {
+        "rows": 2,
+        "leanok": 2,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 1
+        }
+      },
+      "chapters/phase-invariants/causal-spacetime/causal-order-observation/02-cone-geometry.tex": {
+        "rows": 1,
+        "leanok": 1,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {}
+      },
+      "chapters/phase-invariants/causal-spacetime/causal-order-observation/03-alexandrov-topology.tex": {
+        "rows": 1,
+        "leanok": 1,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {}
+      },
+      "chapters/phase-invariants/causal-spacetime/causal-order-observation/04-light-observation.tex": {
+        "rows": 1,
+        "leanok": 1,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {}
+      },
+      "chapters/phase-invariants/causal-spacetime/causal-order-observation/05-causal-laplacian.tex": {
+        "rows": 1,
+        "leanok": 1,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 1
+        }
+      },
+      "chapters/phase-invariants/causal-spacetime/causal-order-observation/06-diamond-portrait.tex": {
+        "rows": 1,
+        "leanok": 1,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 1
+        }
+      },
+      "chapters/phase-invariants/causal-spacetime/cohomology-mld/cochain-complex/01-degree-one.tex": {
+        "rows": 2,
+        "leanok": 2,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 2
+        }
+      },
+      "chapters/phase-invariants/causal-spacetime/cohomology-mld/cochain-complex/02-degree-two.tex": {
+        "rows": 1,
+        "leanok": 1,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 1
+        }
+      },
+      "chapters/phase-invariants/causal-spacetime/cohomology-mld/cochain-complex/03-all-degrees.tex": {
+        "rows": 3,
+        "leanok": 3,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 3
+        }
+      },
+      "chapters/phase-invariants/causal-spacetime/cohomology-mld/cochain-complex/04-manifoldlikeness.tex": {
+        "rows": 1,
+        "leanok": 1,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 1
+        }
+      },
+      "chapters/phase-invariants/causal-spacetime/cohomology-mld/involutivity-net-mld/01-causal-involutivity.tex": {
+        "rows": 1,
+        "leanok": 1,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 1
+        }
+      },
+      "chapters/phase-invariants/causal-spacetime/cohomology-mld/involutivity-net-mld/02-causal-net.tex": {
+        "rows": 1,
+        "leanok": 1,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {}
+      },
+      "chapters/phase-invariants/causal-spacetime/cohomology-mld/involutivity-net-mld/03-causal-mld-classification.tex": {
+        "rows": 1,
+        "leanok": 1,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 1
+        }
+      },
+      "chapters/phase-invariants/causal-spacetime/cohomology-mld/involutivity-net-mld/04-cohomological-mld-groupoid.tex": {
+        "rows": 1,
+        "leanok": 1,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 1
+        }
+      },
+      "chapters/phase-invariants/causal-spacetime/dimension-curvature-continuum/01-dimension-estimators.tex": {
+        "rows": 2,
+        "leanok": 2,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 2
+        }
+      },
+      "chapters/phase-invariants/causal-spacetime/dimension-curvature-continuum/02-closure-flow-curvature-regime.tex": {
+        "rows": 8,
+        "leanok": 8,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 2,
+          "leanok-outside-law": 5
+        }
+      },
+      "chapters/phase-invariants/causal-spacetime/dimension-curvature-continuum/02-residual-curvature.tex": {
+        "rows": 4,
+        "leanok": 4,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 2
+        }
+      },
+      "chapters/phase-invariants/causal-spacetime/dimension-curvature-continuum/03-continuum-colimits.tex": {
+        "rows": 4,
+        "leanok": 4,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 4
+        }
+      },
+      "chapters/phase-invariants/causal-spacetime/support-symplectic/02-charged-support.tex": {
+        "rows": 4,
+        "leanok": 4,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 1
+        }
+      },
+      "chapters/phase-invariants/causal-spacetime/support-symplectic/microsupport/01-microlocal-support.tex": {
+        "rows": 1,
+        "leanok": 1,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 1
+        }
+      },
+      "chapters/phase-invariants/causal-spacetime/support-symplectic/microsupport/02-causal-cone-support.tex": {
+        "rows": 1,
+        "leanok": 1,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 1
+        }
+      },
+      "chapters/phase-invariants/causal-spacetime/support-symplectic/microsupport/03-cotangent-wavefront.tex": {
+        "rows": 1,
+        "leanok": 1,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 1
+        }
+      },
+      "chapters/phase-invariants/causal-spacetime/support-symplectic/microsupport/04-liouville-exact.tex": {
+        "rows": 1,
+        "leanok": 1,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 1
+        }
+      },
+      "chapters/phase-invariants/cohomological-splitting/01-bigraded-and-local-constancy.tex": {
+        "rows": 8,
+        "leanok": 8,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 8
+        }
+      },
+      "chapters/phase-invariants/cohomological-splitting/02-hodge-and-harmonic-sections.tex": {
+        "rows": 3,
+        "leanok": 3,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 3
+        }
+      },
+      "chapters/phase-invariants/cohomological-splitting/coordination-anti-landauer/01-cover-nerve-coordination.tex": {
+        "rows": 6,
+        "leanok": 6,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 2,
+          "leanok-outside-law": 4
+        }
+      },
+      "chapters/phase-invariants/cohomological-splitting/coordination-anti-landauer/02-anti-landauer-index.tex": {
+        "rows": 14,
+        "leanok": 14,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 3,
+          "leanok-outside-law": 11
+        }
+      },
+      "chapters/phase-invariants/spectral-tiles/01-substitution-growth.tex": {
+        "rows": 4,
+        "leanok": 4,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 2
+        }
+      },
+      "chapters/phase-invariants/spectral-tiles/moduli-universality/02-bilattice-hull-obstruction.tex": {
+        "rows": 2,
+        "leanok": 2,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 2
+        }
+      },
+      "chapters/phase-invariants/spectral-tiles/moduli-universality/04-shift-equivalence-universality.tex": {
+        "rows": 1,
+        "leanok": 1,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 1
+        }
+      },
+      "chapters/phase-invariants/spectral-tiles/rayleigh-gaps/01-dirichlet-and-rayleigh-floor.tex": {
+        "rows": 8,
+        "leanok": 8,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 1,
+          "leanok-outside-law": 8
+        }
+      },
+      "chapters/phase-invariants/spectral-tiles/rayleigh-gaps/03-k4-four-analytic-spine.tex": {
+        "rows": 1,
+        "leanok": 1,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 1
+        }
+      },
+      "chapters/phase-invariants/spectral-tiles/rayleigh-gaps/algebraic-gap-values/01-quadratic-tile-gaps.tex": {
+        "rows": 3,
+        "leanok": 3,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 3
+        }
+      },
+      "chapters/phase-invariants/spectral-tiles/rayleigh-gaps/algebraic-gap-values/02-quadratic-surd-engine.tex": {
+        "rows": 1,
+        "leanok": 1,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 1
+        }
+      },
+      "chapters/phase-invariants/spectral-tiles/rayleigh-gaps/algebraic-gap-values/03-cubic-gap.tex": {
+        "rows": 2,
+        "leanok": 2,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 1
+        }
+      },
+      "chapters/phase-invariants/transfinite-values/00-calculus-carriers.tex": {
+        "rows": 17,
+        "leanok": 17,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 6,
+          "leanok-outside-law": 7
+        }
+      },
+      "chapters/phase-invariants/transfinite-values/01-ordinal-settling.tex": {
+        "rows": 16,
+        "leanok": 16,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 4
+        }
+      },
+      "chapters/phase-invariants/transfinite-values/02-value-category-and-stochastic-reals.tex": {
+        "rows": 18,
+        "leanok": 18,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 1,
+          "leanok-outside-law": 16
+        }
+      },
+      "chapters/phase-invariants/transfinite-values/03-magnitude-and-transcendence.tex": {
+        "rows": 3,
+        "leanok": 3,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 1,
+          "leanok-outside-law": 3
+        }
+      },
+      "chapters/phase-invariants/transfinite-values/04-majorization-scott-descent.tex": {
+        "rows": 7,
+        "leanok": 7,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 2
+        }
+      },
+      "chapters/pixelization/01-the-sampling-fibration-and-its-adjoints.tex": {
+        "rows": 6,
+        "leanok": 0,
+        "notready": 6,
+        "none": 0,
+        "findingCounts": {}
+      },
+      "chapters/pixelization/02-the-pixelization-closure-and-the-corner-observable.tex": {
+        "rows": 7,
+        "leanok": 0,
+        "notready": 7,
+        "none": 0,
+        "findingCounts": {}
+      },
+      "chapters/pixelization/03-the-pixel-site-and-the-cech-bridge.tex": {
+        "rows": 3,
+        "leanok": 0,
+        "notready": 3,
+        "none": 0,
+        "findingCounts": {}
+      },
+      "chapters/pixelization/04-resolution-towers-and-the-regime-taxonomy.tex": {
+        "rows": 2,
+        "leanok": 0,
+        "notready": 2,
+        "none": 0,
+        "findingCounts": {}
+      },
+      "chapters/pixelization/05-voxels-and-the-adjacency-frontier.tex": {
+        "rows": 2,
+        "leanok": 0,
+        "notready": 2,
+        "none": 0,
+        "findingCounts": {}
+      },
+      "chapters/pixelization/06-the-lenticular-fiber-and-directional-sampling.tex": {
+        "rows": 4,
+        "leanok": 0,
+        "notready": 4,
+        "none": 0,
+        "findingCounts": {}
+      },
+      "chapters/pixelization/07-voxelizability-as-carving.tex": {
+        "rows": 7,
+        "leanok": 0,
+        "notready": 7,
+        "none": 0,
+        "findingCounts": {}
+      },
+      "chapters/pixelization/08-holographic-reconstruction.tex": {
+        "rows": 2,
+        "leanok": 0,
+        "notready": 2,
+        "none": 0,
+        "findingCounts": {}
+      },
+      "chapters/pixelization/09-the-failure-bilattice.tex": {
+        "rows": 5,
+        "leanok": 0,
+        "notready": 5,
+        "none": 0,
+        "findingCounts": {}
+      },
+      "chapters/pixelization/10-the-dual-fibration-and-spectral-nyquist.tex": {
+        "rows": 7,
+        "leanok": 0,
+        "notready": 7,
+        "none": 0,
+        "findingCounts": {}
+      },
+      "chapters/positing-morphism/01-articulation-measure.tex": {
+        "rows": 11,
+        "leanok": 11,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 4,
+          "leanok-outside-law": 1
+        }
+      },
+      "chapters/positing-morphism/02-positing-morphism.tex": {
+        "rows": 17,
+        "leanok": 17,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 7,
+          "leanok-outside-law": 1
+        }
+      },
+      "chapters/positing-morphism/03-positing-batch.tex": {
+        "rows": 11,
+        "leanok": 11,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 2,
+          "leanok-outside-law": 1
+        }
+      },
+      "chapters/positing-morphism/04-morphism-naturality.tex": {
+        "rows": 10,
+        "leanok": 10,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 6
+        }
+      },
+      "chapters/positing-morphism/05-cell-partition.tex": {
+        "rows": 12,
+        "leanok": 12,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 1,
+          "leanok-outside-law": 1
+        }
+      },
+      "chapters/positing-morphism/06-evidence-and-measure.tex": {
+        "rows": 17,
+        "leanok": 17,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 6
+        }
+      },
+      "chapters/primitives/01-marks-and-kinds.tex": {
+        "rows": 4,
+        "leanok": 4,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 2
+        }
+      },
+      "chapters/primitives/02-utterance-and-articulating.tex": {
+        "rows": 6,
+        "leanok": 6,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 5
+        }
+      },
+      "chapters/recurring-four/01-the-keystone-the-recurring-four-is-one-object.tex": {
+        "rows": 9,
+        "leanok": 9,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 5
+        }
+      },
+      "chapters/recurring-four/02-the-klein-four-symmetry-k-4.tex": {
+        "rows": 22,
+        "leanok": 22,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 5,
+          "leanok-outside-law": 6
+        }
+      },
+      "chapters/recurring-four/03-the-nuclear-quartet-two-commuting-nuclei.tex": {
+        "rows": 22,
+        "leanok": 22,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 11,
+          "leanok-outside-law": 5
+        }
+      },
+      "chapters/recurring-four/04-the-four-corner-coherence-cell-at-successive-depths.tex": {
+        "rows": 11,
+        "leanok": 11,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 5,
+          "leanok-outside-law": 2
+        }
+      },
+      "chapters/recurring-four/05-the-dervish-recurrence-conjecture.tex": {
+        "rows": 15,
+        "leanok": 15,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 6,
+          "leanok-outside-law": 14
+        }
+      },
+      "chapters/recurring-four/06-the-diamond-lift-closure-conjecture.tex": {
+        "rows": 34,
+        "leanok": 34,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 12,
+          "leanok-outside-law": 33
+        }
+      },
+      "chapters/recurring-four/08-four-by-universal-property.tex": {
+        "rows": 5,
+        "leanok": 5,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 2
+        }
+      },
+      "chapters/relational-physics/gauge-horizon-dense-matter.tex": {
+        "rows": 145,
+        "leanok": 144,
+        "notready": 1,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 38,
+          "leanok-outside-law": 83
+        }
+      },
+      "chapters/relational-physics/material-states/01-contact-locks.tex": {
+        "rows": 38,
+        "leanok": 38,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 11,
+          "leanok-outside-law": 20
+        }
+      },
+      "chapters/relational-physics/material-states/02-topology-and-glass.tex": {
+        "rows": 127,
+        "leanok": 127,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 65,
+          "leanok-def": 17
+        }
+      },
+      "chapters/relational-physics/material-states/03-kinetic-gas.tex": {
+        "rows": 3,
+        "leanok": 3,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 1
+        }
+      },
+      "chapters/relational-physics/material-states/04-liquid-closures.tex": {
+        "rows": 2,
+        "leanok": 2,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 1
+        }
+      },
+      "chapters/relational-physics/material-states/05-plasma-and-fluid-obstructions.tex": {
+        "rows": 5,
+        "leanok": 5,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 5
+        }
+      },
+      "chapters/relational-physics/material-states/07-fock-condensate-glass-overlap.tex": {
+        "rows": 13,
+        "leanok": 13,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 2
+        }
+      },
+      "chapters/relational-physics/quantum-contextuality/00-pentagon-symmetry.tex": {
+        "rows": 11,
+        "leanok": 11,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 3,
+          "leanok-outside-law": 7
+        }
+      },
+      "chapters/relational-physics/quantum-contextuality/01-support-models.tex": {
+        "rows": 3,
+        "leanok": 3,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 2
+        }
+      },
+      "chapters/relational-physics/quantum-contextuality/02-probabilistic-no-signaling.tex": {
+        "rows": 4,
+        "leanok": 4,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 1,
+          "leanok-outside-law": 2
+        }
+      },
+      "chapters/relational-physics/quantum-contextuality/03-logical-contextuality.tex": {
+        "rows": 4,
+        "leanok": 4,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 1,
+          "leanok-outside-law": 3
+        }
+      },
+      "chapters/relational-physics/quantum-contextuality/04-parity-and-temporal-witnesses.tex": {
+        "rows": 4,
+        "leanok": 4,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 4
+        }
+      },
+      "chapters/relational-physics/quantum-contextuality/05-analytic-frontier.tex": {
+        "rows": 2,
+        "leanok": 2,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 2
+        }
+      },
+      "chapters/relational-physics/quantum-contextuality/06-top-h1-exchange.tex": {
+        "rows": 8,
+        "leanok": 8,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 7
+        }
+      },
+      "chapters/relational-physics/quantum-contextuality/07-hypergraph-xor.tex": {
+        "rows": 11,
+        "leanok": 11,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 3,
+          "leanok-def": 1
+        }
+      },
+      "chapters/relational-physics/reaction-networks.tex": {
+        "rows": 12,
+        "leanok": 12,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 1,
+          "leanok-outside-law": 10
+        }
+      },
+      "chapters/relational-physics/settlement-genus.tex": {
+        "rows": 6,
+        "leanok": 6,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 5,
+          "leanok-outside-law": 2
+        }
+      },
+      "chapters/settling/01-order-generated-as-a-partial-order-on-charges.tex": {
+        "rows": 4,
+        "leanok": 4,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 1
+        }
+      },
+      "chapters/settling/02-the-knowledge-lattice.tex": {
+        "rows": 5,
+        "leanok": 5,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {}
+      },
+      "chapters/settling/03-the-closure-operator-and-its-least-fixed-point.tex": {
+        "rows": 13,
+        "leanok": 13,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 3
+        }
+      },
+      "chapters/settling/04-lifting-settling-to-valuations.tex": {
+        "rows": 2,
+        "leanok": 2,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 1
+        }
+      },
+      "chapters/settling/05-the-closure-ordinal-and-the-strict-finite-regime.tex": {
+        "rows": 17,
+        "leanok": 17,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 4,
+          "leanok-outside-law": 3
+        }
+      },
+      "chapters/settling/06-the-kz-lax-idempotence-reduction.tex": {
+        "rows": 9,
+        "leanok": 9,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 1
+        }
+      },
+      "chapters/settling/07-dynamics-on-rule-generators.tex": {
+        "rows": 7,
+        "leanok": 7,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 2,
+          "leanok-outside-law": 1
+        }
+      },
+      "chapters/settling/08-the-two-cones-and-the-void.tex": {
+        "rows": 8,
+        "leanok": 8,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 3
+        }
+      },
+      "chapters/sheaf-cohomology/00-bitopological-settling-site.tex": {
+        "rows": 72,
+        "leanok": 72,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 21,
+          "leanok-outside-law": 46
+        }
+      },
+      "chapters/sheaf-cohomology/01-the-settling-sheaf-and-its-crdt-section-merge.tex": {
+        "rows": 7,
+        "leanok": 7,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 3,
+          "leanok-outside-law": 1
+        }
+      },
+      "chapters/sheaf-cohomology/02-cech-cohomology-of-the-associated-sheaf.tex": {
+        "rows": 13,
+        "leanok": 13,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 7,
+          "leanok-def": 5
+        }
+      },
+      "chapters/sheaf-cohomology/03-convergence-crdt-calm-and-predicatory-confluence.tex": {
+        "rows": 6,
+        "leanok": 6,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 1,
+          "leanok-outside-law": 4
+        }
+      },
+      "chapters/sheaf-cohomology/03-differential-bypass.tex": {
+        "rows": 33,
+        "leanok": 12,
+        "notready": 21,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 2,
+          "leanok-outside-law": 8,
+          "notready-proved": 8
+        }
+      },
+      "chapters/sheaf-cohomology/04-alexandrov-topology-and-the-husainov-comparison.tex": {
+        "rows": 16,
+        "leanok": 14,
+        "notready": 2,
+        "none": 0,
+        "findingCounts": {
+          "leanok-outside-law": 11,
+          "leanok-def": 2
+        }
+      },
+      "chapters/sheaf-cohomology/05-dframe-and-q-enriched-refinements.tex": {
+        "rows": 7,
+        "leanok": 7,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 2,
+          "leanok-outside-law": 4
+        }
+      },
+      "chapters/value-four-bilattice/01-charge-slots.tex": {
+        "rows": 3,
+        "leanok": 3,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 3
+        }
+      },
+      "chapters/value-four-bilattice/02-knowledge-bilattice.tex": {
+        "rows": 5,
+        "leanok": 5,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 1
+        }
+      },
+      "chapters/value-four-bilattice/03-valuations.tex": {
+        "rows": 4,
+        "leanok": 4,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 2
+        }
+      },
+      "chapters/value-four-bilattice/04-truth-order.tex": {
+        "rows": 27,
+        "leanok": 27,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 5,
+          "leanok-outside-law": 1
+        }
+      },
+      "chapters/value-four-bilattice/05-local-mld-base.tex": {
+        "rows": 1,
+        "leanok": 1,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {}
+      },
+      "chapters/value-four-bilattice/06-the-record-sector.tex": {
+        "rows": 20,
+        "leanok": 20,
+        "notready": 0,
+        "none": 0,
+        "findingCounts": {
+          "leanok-def": 2,
+          "leanok-outside-law": 9
+        }
+      }
+    }
+  }
+}

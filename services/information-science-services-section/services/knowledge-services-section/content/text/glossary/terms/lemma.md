@@ -1,0 +1,6 @@
+---
+id: 3fa6fd97-4d8f-4f6f-b3aa-40ab8c93483d
+title: lemma
+date-created: 2025-10-09
+---
+

@@ -1,0 +1,14 @@
+---
+name: "HANDY Model"
+date-created: 2026-09-05
+aliases:
+  - "Human and Nature Dynamics model"
+description: "Motesharrei, Rivas, and Kalnay's 2014 predator-prey-style model in which inequality between an elite and a commoner population, not resource depletion alone, drives societal collapse: elites are insulated from early scarcity and keep consuming while the commoner labor base that harvests resources is depleted."
+references: {}
+---
+
+The **HANDY model** (Human And Nature DYnamics), published by Safa Motesharrei, Jorge Rivas, and Eugenia Kalnay in 2014 (*Ecological Economics*, "Human and Nature Dynamics (HANDY): Modeling Inequality and Use of Resources in the Collapse or Sustainability of Societies"), extends predator-prey population dynamics (in the Lotka-Volterra tradition) to a society split into two human populations — Elites and Commoners — that both draw on a shared renewable Nature stock and both draw down an accumulated Wealth stock. The model's central finding is that inequality in access to resources between the two populations, not resource depletion by itself, is what most reliably produces collapse: because Elites can continue consuming from accumulated Wealth even after Nature and Commoner welfare have begun to decline, they are insulated from the early warning signals of scarcity and have no structural incentive to change course; Commoners, who do the labor of harvesting Nature, are depleted (through starvation or economic pressure) faster than an equal-access population would be, and once the Commoner labor base collapses, the labor needed to harvest Nature sustainably collapses with it, even though Nature itself may not yet be exhausted.
+
+The model produces four qualitative outcomes depending on parameters: a soft landing to a sustainable steady state, an oscillatory approach to equilibrium, cyclical collapse and partial recovery, and full, irreversible collapse — with high inequality moving the outcome toward the more severe cases even when the resource-depletion parameters alone would predict sustainability.
+
+The house reads HANDY as a formal, equation-level companion to [structural-demographic theory](../../../../../../../../../history-and-archaeology-science-services-section/services/social-history-science-services-section/content/glossary/terms/structural-demographic-theory.md)'s elite-overproduction account of political stress: where Turchin's framework is calibrated to historical political and demographic time series, HANDY isolates the same elite/commoner asymmetry as a minimal mechanism sufficient to produce collapse on its own, and sits alongside [Limits to Growth](./limits-to-growth.md)'s World3 model as a second, differently structured system-dynamics argument that resource limits alone are not the whole story — distribution of access to what remains matters as much as how much remains.

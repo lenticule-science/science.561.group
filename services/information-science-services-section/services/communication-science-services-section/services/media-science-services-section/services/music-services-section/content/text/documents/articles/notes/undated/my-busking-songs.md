@@ -1,0 +1,77 @@
+---
+aliases: 
+tags: 
+created: 2019-04-29T22:17:35
+modified: 2025-07-13T22:19:04
+title: My busking songs
+---
+
+|                        |                                              |                                              |
+| ---------------------- | -------------------------------------------- | -------------------------------------------- |
+| Arcade Fire            | Wake Up                                      |                                              |
+| Aretha Franklin        | Chain of Fools                               | medley with Dylan's All Along the WatchTower |
+| Arlo Guthrie           | Alice's Restaurant                           |                                              |
+| Bob Dylan              | All Along the Watchtower                     | medley with Franklin's Chain of Fools        |
+| Bob Marley             | Three Lil Birds/One Love                     |                                              |
+| Dr. Dre                | Bitches Ain't Shit                           |                                              |
+| Gloria Gayner          | I Will Survive                               | medley with Nutini's Funky Cigarette         |
+| Gnarls Barkley         | Crazy                                        |                                              |
+| Green Day              | Basketcase                                   |                                              |
+| Harry Nilsson          | Everybody's Talkin                           |                                              |
+| Janis Joplin           | Me And Bobby McGee                           |                                              |
+| Jason Mraz             | Gypsy M.C.                                   |                                              |
+| Jason Mraz             | I'm Yours                                    |                                              |
+| Jason Mraz             | The Remedy                                   |                                              |
+| Jimi Hendrix           | Voodoo Chile                                 |                                              |
+| Junior Kimborough      | Meet Me In The City                          |                                              |
+| Justin Timberlake      | Cry Me A River                               |                                              |
+| MGMT                   | Kids                                         |                                              |
+| MGMT                   | Time To Pretend                              |                                              |
+| Michael Jackson        | Billie Jean                                  |                                              |
+| Michael Jackson        | I Want You Back                              |                                              |
+| Old Crow Medicine Show | Cocaine                                      |                                              |
+| Old Crow Medicine Show | Wagon Wheel                                  |                                              |
+| Paolo Nutini           | Funky Cigarette                              | medley with Gloria Gaynor's I Will Survive   |
+| Paolo Nutini           | Lovin You                                    |                                              |
+| Paul Simon             | Me & Julio                                   |                                              |
+| Paul Simon             | You Can Call Me Al                           |                                              |
+| Portugal, the Man      | Feel It Still                                |                                              |
+| Radiohead              | Creep                                        |                                              |
+| Randy Newman           | Mr. President (Have Pity on the Working Man) |                                              |
+| Randy Newman           | You've Got a Friend In Me                    |                                              |
+| Ray Charles            | I Don't Need No Doctor                       |                                              |
+| Ray Charles            | Them That Got                                |                                              |
+| Simon & Garfunkel      | The Boxer                                    |                                              |
+| Sixto Rodriguez        | Forget It                                    |                                              |
+| Sixto Rodriguez        | This Is Not a Song (It's an Outburst)        |                                              |
+| Sonny & Cher           | Bang Bang                                    |                                              |
+| The Band               | The Weight                                   |                                              |
+| The Jungle Book Movie  | I Wanna Be Like You                          |                                              |
+| The Kooks              | Naive                                        |                                              |
+| The Loving Spoonful    | Daydream                                     |                                              |
+| The Muppets            | Rainbow Connection                           |                                              |
+| The Police             | Message In A Bottle                          |                                              |
+| The View               | Covers                                       |                                              |
+| The View               | Gem of a Bird                                |                                              |
+| The White Stripes      | Fell In Love With A Girl                     |                                              |
+| Traditional?           | Caledonia                                    |                                              |
+| Traditional?           | Trouble So Hard                              |                                              |
+| Uncle Tupelo           | Gun                                          |                                              |
+| Uncle Tupelo           | No Depression                                |                                              |
+| Uncle Tupelo           | Screen Door                                  |                                              |
+| Vance Joy              | Riptide                                      |                                              |
+| Weezer                 | Say It Ain't So                              |                                              |
+| Wilco                  | I Got You                                    |                                              |
+| Woodie Guthrie         | 30,000                                       |                                              |
+| Woodie Guthrie         | Agin the Law                                 |                                              |
+| Woodie Guthrie         | Airline to Heaven                            |                                              |
+| Woodie Guthrie         | All You Fascists                             |                                              |
+| Woodie Guthrie         | California Stars                             |                                              |
+| Woodie Guthrie         | Christ for President                         |                                              |
+| Woodie Guthrie         | Hoodoo Voodoo                                |                                              |
+| Woodie Guthrie         | I'm Out To Get                               |                                              |
+| Woodie Guthrie         | Remember the Mountain Bed                    |                                              |
+| Woodie Guthrie         | Someday Somemorning Sometime                 |                                              |
+| Woodie Guthrie         | The Jolly Banker                             |                                              |
+| Woodie Guthrie         | Walt Whitman's Niece                         |                                              |
+| Woodie Guthrie         | When the Roses Bloom Again                   |                                              |

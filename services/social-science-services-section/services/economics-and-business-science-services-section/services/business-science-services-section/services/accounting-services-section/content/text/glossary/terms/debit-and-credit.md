@@ -1,0 +1,46 @@
+---
+name: "debit and credit"
+aliases:
+  - "debit and credit"
+  - "debits and credits"
+  - "debit"
+  - "credit"
+date-created: 2026-03-06
+keywords:
+  - Accounting
+component-of: double-entry-bookkeeping
+acts-on: account
+---
+
+A debit is an entry on the left side of an [accounting account](./accounting-account.md); a credit is
+an entry on the right side. In [double-entry bookkeeping](./double-entry-bookkeeping.md),
+the admitted entry must close under its balancing basis. In a single-currency
+example, a \$500 debit is matched by \$500 of credits. Multi-commodity books must
+also preserve native quantities and use evidenced cost or price weights rather
+than add unlike units as if they were one currency.
+
+Debits and credits don't inherently mean "increase" or "decrease." Their effect depends on the account type:
+
+| Account type | Debit effect | Credit effect |
+|---|---|---|
+| Asset | Increase | Decrease |
+| Liability | Decrease | Increase |
+| Equity | Decrease | Increase |
+| Revenue | Decrease | Increase |
+| Expense | Increase | Decrease |
+
+Historical debtor and creditor language helped name the sides, but modern debit
+and credit effects follow account structure rather than ordinary-language ideas
+of owing, trusting, receiving, or paying. The labels are directional operators,
+not positive and negative moral or economic values.
+
+A common source of confusion: in everyday language, "credit" suggests receiving money (a credit to your bank account). In accounting, a credit to your cash account means cash decreased — because cash is an asset, and credits decrease assets. The bank's perspective is the opposite of yours: your deposit is their liability, and crediting a liability increases it. Both sides use the same system correctly; the confusion arises from conflating the two perspectives.
+
+## Earlier material
+
+A debit is an entry on the left side of an [account](../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/2026/03/06/2026-03-06-account.md); a credit is an entry on the right side.
+In [double-entry bookkeeping](double-entry-bookkeeping.md), every transaction consists of equal debits and credits — if \$500 is debited somewhere, \$500 must be credited elsewhere.
+
+The terms derive from Latin: *debere* (to owe) and *credere* (to trust or believe).
+In Pacioli's original formulation, a debit recorded what someone owed you and a credit recorded what you owed someone else [citation needed].
+The modern usage is more abstract — debits and credits are simply the left and right sides of the accounting equation, and their meaning comes from context.

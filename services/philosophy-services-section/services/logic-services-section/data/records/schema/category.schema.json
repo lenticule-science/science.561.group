@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/category/category.schema.json",
+  "title": "Category",
+  "description": "JSON Schema for a category — a tuple (Ob, Hom, compose, id) of an object-collection, a morphism-collection, a composition operation, and an identity assignment (Eilenberg & Mac Lane 1945; Mac Lane 1971 Ch. I §1; Awodey 2010 §1.2). The schema captures the structural data: the objects array and the morphisms array. The category axioms — composition closure (codomain of f equals domain of g for any composite g∘f stored), associativity ((h∘g)∘f = h∘(g∘f)), and identity laws (id_A ∘ f = f and g ∘ id_B = g) — are not captured here; they are checked by category-axiom transformers operating over instances.",
+  "allOf": [{ "$ref": "https://research-notes.561.group/hacking/library/predication-notes/object/library/thing/thing.schema.json" }],
+  "type": "object",
+  "required": ["objects", "morphisms"],
+  "properties": {
+    "objects": {
+      "type": "array",
+      "description": "The object-collection Ob(C). Each element is an object instance with at least a name; objects in the collection are distinct (uniqueItems).",
+      "items": { "$ref": "https://research-notes.561.group/hacking/library/predication-notes/object/object.schema.json" },
+      "uniqueItems": true,
+      "minItems": 1
+    },
+    "morphisms": {
+      "type": "array",
+      "description": "The morphism-collection. Each element is a transformer instance with name, domain, and codomain. Identity morphisms id_A for each object A are stored as elements with domain = codomain = A's name. Composition closure (the array contains every composite of pairs whose codomain-domain match) is a category-axiom law checked by the category-closure transformer.",
+      "items": { "$ref": "https://research-notes.561.group/hacking/library/predication-notes/object/library/thing/library/transformer/transformer.schema.json" },
+      "uniqueItems": true
+    }
+  }
+}

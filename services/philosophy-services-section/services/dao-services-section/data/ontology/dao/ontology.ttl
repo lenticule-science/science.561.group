@@ -1,0 +1,127 @@
+# GENERATED — do not edit by hand.
+# Regenerate with json-schema-to-owl-shacl-service's project-json-schema-as-ontology
+# over /home/emsenn/info/lib/emsenn/services/561-group/services/science-services-section/services/philosophy-services-section/services/dao-services-section/data/records/schema/glossary/terms, after editing a *.schema.json file there.
+# Classes minted: glossary/terms/house-translation, glossary/terms/translation-rendering, glossary/terms/translation-variance-record.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+
+<https://emsenn.net/ns/schema/glossary/terms/house-translation>
+    rdf:type owl:Class ;
+    rdfs:label "house translation" ;
+    rdfs:comment "This section's own reading of one term, graded in the estate's own evidence vocabulary rather than asserted as a resolution of the translations it is compared against. A structural building block $ref'd by translation-variance-record.schema.json." .
+
+<https://emsenn.net/ns/schema/glossary/terms/house-translation#text>
+    rdf:type owl:DatatypeProperty ;
+    rdfs:domain <https://emsenn.net/ns/schema/glossary/terms/house-translation> ;
+    rdfs:comment "the house reading itself, quoted verbatim from its source carrier when one already exists, or newly stated here when none does" ;
+    rdfs:range xsd:string .
+
+<https://emsenn.net/ns/schema/glossary/terms/house-translation#grade>
+    rdf:type owl:DatatypeProperty ;
+    rdfs:domain <https://emsenn.net/ns/schema/glossary/terms/house-translation> ;
+    rdfs:comment "the estate's own evidence grade, from the 2026 book of changes' own vocabulary: [B] background fact inherited rather than made; PROVED mechanically checked; FRAMING an offered interpretive move; VALVE deliberately ungraded speculation" ;
+    rdfs:range xsd:string .
+
+<https://emsenn.net/ns/schema/glossary/terms/house-translation#isNewToThisGlossary>
+    rdf:type owl:DatatypeProperty ;
+    rdfs:domain <https://emsenn.net/ns/schema/glossary/terms/house-translation> ;
+    rdfs:comment "false when this reading is quoted from an existing carrier this section already held before this glossary was built; true when this glossary entry is the first place the estate states it" ;
+    rdfs:range xsd:boolean .
+
+<https://emsenn.net/ns/schema/glossary/terms/house-translation#citesCarrier>
+    rdf:type owl:DatatypeProperty ;
+    rdfs:domain <https://emsenn.net/ns/schema/glossary/terms/house-translation> ;
+    rdfs:comment "repo-relative path to the carrier this reading is quoted from, required when isNewToThisGlossary is false" ;
+    rdfs:range xsd:string .
+
+<https://emsenn.net/ns/schema/glossary/terms/house-translation#formalAnchor>
+    rdf:type owl:DatatypeProperty ;
+    rdfs:domain <https://emsenn.net/ns/schema/glossary/terms/house-translation> ;
+    rdfs:comment "when this reading extends the estate's own bilattice/causal-cone/settling-closure apparatus, the specific mechanism it extends; omitted when the reading is offered in plain prose without a formal anchor, which this glossary treats as an honest choice rather than a gap to be filled by force" ;
+    rdfs:range xsd:string .
+
+<https://emsenn.net/ns/schema/glossary/terms/translation-rendering>
+    rdf:type owl:Class ;
+    rdfs:label "translation rendering" ;
+    rdfs:comment "One named translator's exact rendering of one term at one locus, grounded to a citekey this section can trace to a source. Not itself a term — a structural building block $ref'd by translation-variance-record.schema.json, the same way category.schema.json is a building block $ref'd by functor.schema.json rather than a term in its own right." .
+
+<https://emsenn.net/ns/schema/glossary/terms/translation-rendering#citekey>
+    rdf:type owl:DatatypeProperty ;
+    rdfs:domain <https://emsenn.net/ns/schema/glossary/terms/translation-rendering> ;
+    rdfs:comment "the surnameYYYY citekey resolving to this section's content/text/documents/articles/bibliographies/<citekey>.md carrier and to the citing term's frontmatter references: map" ;
+    rdfs:range xsd:string .
+
+<https://emsenn.net/ns/schema/glossary/terms/translation-rendering#translator>
+    rdf:type owl:DatatypeProperty ;
+    rdfs:domain <https://emsenn.net/ns/schema/glossary/terms/translation-rendering> ;
+    rdfs:comment "the translator's name as credited on the cited edition" ;
+    rdfs:range xsd:string .
+
+<https://emsenn.net/ns/schema/glossary/terms/translation-rendering#year>
+    rdf:type owl:DatatypeProperty ;
+    rdfs:domain <https://emsenn.net/ns/schema/glossary/terms/translation-rendering> ;
+    rdfs:comment "first-publication year of the cited edition" ;
+    rdfs:range xsd:integer .
+
+<https://emsenn.net/ns/schema/glossary/terms/translation-rendering#rendering>
+    rdf:type owl:DatatypeProperty ;
+    rdfs:domain <https://emsenn.net/ns/schema/glossary/terms/translation-rendering> ;
+    rdfs:comment "the exact quoted English rendering, verbatim, of the locus this record is about" ;
+    rdfs:range xsd:string .
+
+<https://emsenn.net/ns/schema/glossary/terms/translation-rendering#note>
+    rdf:type owl:DatatypeProperty ;
+    rdfs:domain <https://emsenn.net/ns/schema/glossary/terms/translation-rendering> ;
+    rdfs:comment "an optional, honestly-scoped observation about this specific rendering — never a claim about a translator's intent this section has not sourced" ;
+    rdfs:range xsd:string .
+
+<https://emsenn.net/ns/schema/glossary/terms/translation-rendering#grounding>
+    rdf:type owl:DatatypeProperty ;
+    rdfs:domain <https://emsenn.net/ns/schema/glossary/terms/translation-rendering> ;
+    rdfs:comment "how this rendering was checked before being recorded here — named plainly so an ungrounded quote is never indistinguishable from a checked one" ;
+    rdfs:range xsd:string .
+
+<https://emsenn.net/ns/schema/glossary/terms/translation-variance-record>
+    rdf:type owl:Class ;
+    rdfs:label "translation variance record" ;
+    rdfs:comment "How one Daodejing/Yijing term is rendered across published English translations, set beside this section's own house reading. One shared shape for every term in this glossary that carries a translation-variance record, rather than one near-identical JSON Schema per term: dao, de, wu-wei, ziran, pu, and daodejing all instantiate this same structure, parameterized by `term`, `hanzi`, `pinyin`, `locus`, `translations`, and `houseTranslation` — the mechanics of comparing translators do not vary by which term is being compared. Each term's own thin schema (e.g. dao.schema.json) fixes `term` and $refs this file, mirroring how functor.schema.json $refs the shared category.schema.json rather than restating category structure per functor." .
+
+<https://emsenn.net/ns/schema/glossary/terms/translation-variance-record#term>
+    rdf:type owl:DatatypeProperty ;
+    rdfs:domain <https://emsenn.net/ns/schema/glossary/terms/translation-variance-record> ;
+    rdfs:comment "the glossary term identity this record is about; must equal the filename stem of the paired content/text/glossary/terms/<term>.md carrier" ;
+    rdfs:range xsd:string .
+
+<https://emsenn.net/ns/schema/glossary/terms/translation-variance-record#hanzi>
+    rdf:type owl:DatatypeProperty ;
+    rdfs:domain <https://emsenn.net/ns/schema/glossary/terms/translation-variance-record> ;
+    rdfs:comment "the term's Chinese characters as written in the received text" ;
+    rdfs:range xsd:string .
+
+<https://emsenn.net/ns/schema/glossary/terms/translation-variance-record#pinyin>
+    rdf:type owl:DatatypeProperty ;
+    rdfs:domain <https://emsenn.net/ns/schema/glossary/terms/translation-variance-record> ;
+    rdfs:comment "the term's pinyin romanization with tone marks" ;
+    rdfs:range xsd:string .
+
+<https://emsenn.net/ns/schema/glossary/terms/translation-variance-record#locus>
+    rdf:type owl:DatatypeProperty ;
+    rdfs:domain <https://emsenn.net/ns/schema/glossary/terms/translation-variance-record> ;
+    rdfs:comment "the Daodejing chapter(s), or other textual location, where the term is discussed" ;
+    rdfs:range xsd:string .
+
+<https://emsenn.net/ns/schema/glossary/terms/translation-variance-record#translations>
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain <https://emsenn.net/ns/schema/glossary/terms/translation-variance-record> ;
+    rdfs:comment "grounded renderings of the term by named published translators, most-central locus first" ;
+    rdfs:range <https://emsenn.net/ns/schema/glossary/terms/translation-rendering> .
+
+<https://emsenn.net/ns/schema/glossary/terms/translation-variance-record#houseTranslation>
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain <https://emsenn.net/ns/schema/glossary/terms/translation-variance-record> ;
+    rdfs:comment "this section's own reading of the term, graded in the estate's own [B]/PROVED/FRAMING/VALVE vocabulary rather than asserted as a resolution of the translations compared above" ;
+    rdfs:range <https://emsenn.net/ns/schema/glossary/terms/house-translation> .

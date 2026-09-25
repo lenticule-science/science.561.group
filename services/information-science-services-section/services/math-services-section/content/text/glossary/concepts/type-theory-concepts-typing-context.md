@@ -1,0 +1,24 @@
+---
+type: concept
+class: deductive-environment
+status: current
+depends-on: [variable]
+title: Typing context
+description: A typing context $\Gamma$ is a finite, ordered list of variable-type pairs
+---
+
+# Typing context
+
+*A typing context* $\Gamma$ is a finite, ordered list of [variable](../../documents/articles/research/2026/07/31/lenticule-import/_archive/variable.md)-type pairs
+
+$$
+\Gamma = x_1 : A_1, \; x_2 : A_2, \; \ldots, \; x_n : A_n
+$$
+
+with each $x_i$ distinct. The context records the assumptions in force when producing a [typing-judgment](../terms/typing-judgment.md) $\Gamma \vdash t : A$. A judgment with empty context, $\vdash t : A$, asserts that $t$ has type $A$ unconditionally — the *closed* terms of type $A$ are the [inhabitants](../terms/inhabitation.md) of $A$ in the empty context.
+
+In [dependent-type-theory](../terms/dependent-type-theory.md), the order matters in a stronger sense: each $A_i$ may depend on the variables $x_1, \ldots, x_{i-1}$ introduced earlier. A context is then a *telescope* — a sequence of types each living in the context of its predecessors.
+
+## Position
+
+Three structural rules describe how contexts may be manipulated: *weakening* (an unused variable may be added), *exchange* (the order of independent variables may be permuted), and *contraction* (two assumptions of the same type may be merged). Substructural type theories — linear, affine, ordered — are exactly those that drop one or more of these rules; the logic-side counterparts live at [logic/concepts/substructural-logic](../terms/substructural-logic.md). Reference: [Pierce 2002](../../documents/articles/bibliographies/pierce2002.md) §9.1, [Sørensen & Urzyczyn 2006](../../documents/articles/bibliographies/sorensen-urzyczyn2006.md) §3.4.

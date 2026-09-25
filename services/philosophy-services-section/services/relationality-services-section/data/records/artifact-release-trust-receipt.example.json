@@ -1,0 +1,10 @@
+{
+  "kind": "artifact-release-trust-receipt",
+  "sourceIdentity": { "kind": "source", "value": "source-example", "scheme": "repository-revision" },
+  "artifactContentIdentity": { "kind": "content", "value": "artifact-example", "scheme": "sha-256" },
+  "manifestExportClaimIdentity": { "kind": "assertion", "value": "manifest-example", "scheme": "content-address" },
+  "registryObservation": { "kind": "observation", "observer": "registry-observer", "observed": "registry-candidate", "outcome": "observed", "evidenceIdentity": { "kind": "evidence", "value": "registry-evidence", "scheme": "content-address" } },
+  "installationObservation": { "kind": "observation", "observer": "installation-observer", "observed": "installed-candidate", "outcome": "observed", "evidenceIdentity": { "kind": "evidence", "value": "installation-evidence", "scheme": "content-address" } },
+  "receiverAcceptance": { "kind": "receiver-acceptance", "receiver": "receiver", "outcome": "accepted", "evidenceIdentity": { "kind": "evidence", "value": "acceptance-evidence", "scheme": "content-address" } },
+  "evidenceWitnessIdentity": { "kind": "evidence", "value": "witness-example", "scheme": "content-address" }
+}

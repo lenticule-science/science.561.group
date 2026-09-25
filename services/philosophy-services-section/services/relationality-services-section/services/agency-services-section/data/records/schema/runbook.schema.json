@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://561.group/swarm-intelligence/agentic-orchestration-platform/runbook/runbook.schema.json",
+  "title": "Runbook (finite-settlement-algebra pre-settled step sequence; κ < ω)",
+  "description": "Regime: finite-settlement-algebra (settling-regime record, κ < ω). Derivation from CLAUDE.md four-regime grammar: a runbook is a finite, pre-determined sequence of steps — execution-settled before its trigger fires (per lab runbook.md: 'The runbook's step sequence is in Fix(Δ_t): execution-settled before the trigger fires'). A finite list-of-steps IS a finite artifact, sitting in the strict-finite regime. Individual STEPS may invoke morphisms in any regime (an aperiodic-articulating LLM call, a transfinite-predicating fiber composition, a Scott-continuous-positing stance commit, or a finite-settling closure step); each step's regime is tagged in the step's optional `regime` field. The runbook RECORD itself is finite-settlement-algebra; the steps it sequences span regimes — that's the structural definition of a runbook as cross-regime composition orchestrator. Per platform-opener (pre-stabilization but structurally correct): runbooks are entities; runbook execution is dispatched, ticked, and witnessed like any other entity.",
+  "kind": "object",
+  "type": "object",
+  "required": ["slug", "steps", "preconditions", "expectedWitnesses", "evidence"],
+  "additionalProperties": false,
+  "properties": {
+    "slug": { "type": "string", "pattern": "^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$" },
+    "regime": {
+      "const": "finite-settlement-algebra",
+      "description": "Declares the runbook record's regime (always finite-settlement-algebra; the record is a finite step sequence)."
+    },
+    "trigger": { "type": "string", "minLength": 1 },
+    "executorRole": { "type": "string", "minLength": 1 },
+    "goal": { "type": "string", "minLength": 1 },
+    "preconditions": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "steps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["order", "requiredSkill"],
+        "additionalProperties": false,
+        "properties": {
+          "order": { "type": "integer", "minimum": 0 },
+          "requiredSkill": { "type": "string", "minLength": 1 },
+          "expectedWitness": { "type": "string" },
+          "downgrade": { "type": "string" },
+          "regime": {
+            "enum": [
+              "aperiodic-articulation-category",
+              "transfinite-predication-category",
+              "scott-continuous-posit-category",
+              "finite-settlement-algebra",
+              "stable-aperiodic-articulation-cell"
+            ],
+            "description": "The regime the step's invoked morphism inhabits. Steps span regimes; the runbook record itself is finite-settlement-algebra."
+          }
+        }
+      },
+      "minItems": 1
+    },
+    "expectedWitnesses": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "evidence": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/library/system/library/operating-system/doing/working/running/https://research-notes.561.group/hacking/library/doing/working/hacking/doing/working/running/running.schema.json",
+  "title": "running (of an operating-system)",
+  "description": "EAVT cell schema for the running of any operating-system. Extends system's running with attributes for supervising subsystems, spawning child processes, and dispatching skills.",
+  "allOf": [{ "$ref": "https://research-notes.561.group/hacking/library/predication-notes/object/library/thing/library/system/doing/working/running/https://research-notes.561.group/hacking/library/doing/working/hacking/doing/working/running/running.schema.json" }],
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "e": { "type": "string" },
+    "a": { "type": "string", "enum": ["starting", "spawning", "supervising", "dispatching", "stopping"] },
+    "v": {},
+    "t": { "type": "string", "format": "date-time" }
+  },
+  "required": ["e", "a", "v", "t"]
+}

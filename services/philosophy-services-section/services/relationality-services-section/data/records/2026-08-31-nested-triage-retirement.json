@@ -1,0 +1,1285 @@
+{
+  "$schema": "ad-hoc",
+  "generated": "2026-08-31",
+  "purpose": "Earned-deletion manifest for content/text/triage/triage/ (nested triage copies) prior to git rm of faithfully-converted rows.",
+  "territory": "lib/emsenn/services/561-group/services/science-services-section/services/philosophy-services-section/services/relationality-services-section/content/text/triage/triage/",
+  "total_files": 159,
+  "counts_by_classification": {
+    "faithfully-converted": 22,
+    "no-md-sibling": 137
+  },
+  "rows": [
+    {
+      "nested_path": "triage/emsenn/txt/tbd/about-emsenn.org",
+      "sibling_path": "emsenn/txt/tbd/about-emsenn.md",
+      "classification": "faithfully-converted",
+      "verification_method": "full read of both files",
+      "note": "Light editorial polish only; all content and the mailto link preserved.",
+      "sha256": "6d8b1d07f5a4dc28acef0bff7f41fb5019119ac2020853dc1a0baa0a315a0e02"
+    },
+    {
+      "nested_path": "triage/emsenn/txt/tbd/reading-through-wet-cement.org",
+      "sibling_path": "emsenn/txt/tbd/reading-through-wet-cement.md",
+      "classification": "faithfully-converted",
+      "verification_method": "heading list match (14/14) + prose spot-read (opening ~40 lines both sides)",
+      "note": "Citations (klemperer_language_2006 etc.) and all section headings preserved; org * headings promoted to md ## consistently.",
+      "sha256": "b6d6768035d4fc2cd35d0be343fad35633be2a9a01ba7bb1f7cb88fb00468cbc"
+    },
+    {
+      "nested_path": "triage/emsenn/txt/tbd/why-emsenn-is-lowercase.org",
+      "sibling_path": "emsenn/txt/tbd/why-emsenn-is-lowercase.md",
+      "classification": "faithfully-converted",
+      "verification_method": "full read of both files",
+      "note": "Near-verbatim; only trivial punctuation change.",
+      "sha256": "c9954e100662c4b81a3e2fba3a9085b703207fb82b38d1320eedea4b772207d8"
+    },
+    {
+      "nested_path": "triage/hive/hal/hive-auto-ledger.org",
+      "sibling_path": "hive/hal/hive-auto-ledger.md",
+      "classification": "faithfully-converted",
+      "verification_method": "full read of both files (~450/820 lines)",
+      "note": "Flat org headings (mixed literal ## text plus * org headings) correctly promoted to proper nested md heading hierarchy; all prose and both Python code blocks (v0.0.1, v0.0.2) preserved verbatim; md even fixes a stray trailing \"H\" typo in the org source.",
+      "sha256": "7049970aa61f835cf3dfa09b1956b3c7e2d1ef71cbcd01095abae83b7c68b303"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/agents/structure/generated-personalities-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "1c47ad2f0aa291164a78fec7dac7dbf22030a2798345288a0ffd203313883092"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/agents/structure/multi-agent-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "2860d370d223063e35584e2c283790ded2f6f4e65fe87a9c0aa050be313bfaeb"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/analytics/structure/hypertensor-analytics-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "ba10fcf84822e15dbd41adfd264f463bfd48ee5fa252537f4e8214106339a62f"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/analytics/structure/mud-toy-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "603daa0c12d59925b81f88e0021854096e1fa136d60a154f164ae9ed6321dd26"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/analytics/structure/newsfeeds-analysis-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "0ccf0f9d98205a743a499bc6f4b79237bb7047c8e3447eb4381cda3cdc3e936f"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/analytics/structure/search-index-views-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "53590ffbd68337dd68f113085e77395291b169cbc2188b546f470b2d3dcc8814"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/client/structure/gui-graph-workbench-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "7ef5f4f6f5f03b8d27ffe75d441b4289b839151bc980ee085a91da15bd7295c9"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/client/structure/infinity-site-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "75919a61e994883b7dec7d1860c555f8258adfefa8969e28afc19f752b994b97"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/client/structure/personal-site-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "cfeadf5a5f849e3caf16e5209610f25e622487d855d6995402e04fccf848ee10"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/client/structure/terminal-client-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "e6f5eeb330c75a1cf9669dfba1dade01da7dce735ea64cfe25fb70f83f819bcd"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/deployment/structure/deployment-upgrade-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "80d4d5e73deb7edefd4445480c564423a88701a2056487aae27e6a2035479095"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/documentation/operator/documentation-measure.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "4eadea20d9182a292f0da64ac6614b8dcda0d2d1809733c098804e5a2be80a28"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/documentation/structure/documentation-command.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "e21b2dcf48349deb80abdcd5a47446b091500e4e3408996a49c21491fb734d72"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/documentation/structure/documentation-measurement-report.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "7c11298799e002f3da2b1187911dab2b4d497dc0693ba0ea1a6c98eed3323a22"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/documentation/structure/documentation-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "20b52c96b66b10e21d4444282a2e434f94dc3df3322967cf7ae9e9d44d74f624"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/documentation/structure/documentation-session.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "693f5f1dfc597f7067d6b34f07a9e78e74ec3a3dd17e76253ad3466bef4bfac6"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/documentation/structure/documentation-snapshot.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "13e50d7ef26da9abc124212d1a069d6a5a151edd69024bff755db9ca3382dd83"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/documentation/structure/documentation-transcript.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "273d90822ef7b542534adeb9def32c5c433b70e34e4832b2715e6c4d318c28b3"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/documentation/structure/documentation-workspace.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "33c5586ee92b2b51598dd6f1638b024224a123526bfc3b877402759f0437e056"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/engineering/structure/robotics-embodied-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "f90840d10bd337be36fae2a671f1e610861a975f09b4ee5c7770806f655876b6"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/environment/structure/mobile-devices-sensors-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "405fc850eef9112d894b4c3f0e20f50371d3f71b0ca7f0a5ad2e4b36ffa46877"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/environment/structure/repository-process-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "e95507dcaf175ca63979a66a90917061278176bda05fe7997b1b3057fb7334f6"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/identity/operator/authenticate-access.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "de334160ba16e75b80285f4a8db2682bb321a5905486abe93a7a602544c17871"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/ingestion/structure/ingestion-gateway-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "241d5929432cd5138d732570d08cfafbecadb508357a624c73c20a2812df1944"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/ingestion/structure/intake-stack-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "2289492750aee2b57426340929b571bb6f35dd5644aa84d81f400c8d04eee175"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/knowledge/structure/knowledge-graph-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "f884f8bf7f050c4fe72b7a2111abc8c8763ae824131722e72cfcc87e073c0b3d"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/knowledge/structure/language-learning-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "bbfe577601ed1d76c573b01c4fd6d947b781f2d7083740a748f31d3ed87f0a91"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/knowledge/structure/learning-curriculum-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "ebda9344437dbfb5d6bf919e635c39ac74d51b1ae41cba746a88274746a88780"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/knowledge/structure/mythic-archetypes-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "e8bb5d824ddd70be6aecb6b49b25a1ecf3c34e707e1e8a184f7b6b32097f51b7"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/knowledge/structure/personal-symbol-systems-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "9646269b944000e15a5417d172d8b6f564f71dc43f3a7d056a17b0aaf39d5e91"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/knowledge/structure/rdf-owl-alignment-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "d37ee09f1785aa567363a97e7f4cc8eef414102da5d47f0cbea76999b5ca7b65"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/knowledge/structure/reiki-system-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "2e899a54e6b4437877a821471740896511d6996578454b79c14a29ef5ad0cba0"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/knowledge/structure/relational-notebook-assistant-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "d70ca1c786a9c9d74cef228ab6ea43205da4353ec9fe99fced37454cbfbf59ff"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/knowledge/structure/relational-notebook-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "ea40fc9aee33ab92b3b156a65185f00476c03b48be36560b1225d866d166a2ab"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/knowledge/structure/research-reading-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "9bd19c1587f65b538d0ad28aa3ff7f5c21d337e59a15a2824bb09c741dc62ed8"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/measurement/structure/embeddings-representations-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "f68c40064a843ad3bde6783019a43bc188f5f88ba8a3a1cb84e065e5d61fc0e1"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/measurement/structure/fitness-movement-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "3e2e7695ecb7dedbfa128fd30719ef6c846a5215c56b11301ac8d26241b30f4c"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/measurement/structure/measurement-algebra-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "2eae968fb4c56ed7ec04fa8c0a265d57f34671957fef7241b53586c5cf0ca071"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/measurement/structure/measurement-fabric-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "482d4e4d17cdd4f6cc2f4c81da7921ad65156c60a748e7527b9f04623a30f9eb"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/measurement/structure/measurements-ecology-health-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "f5ba8a5044eeeeffffa4af3c0cdda5b53ad5e217f32bc1f675bcffd44685281b"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/measurement/structure/multimodal-signals-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "5657d195c0fc493347a153aa47fc2756a6d60d6acf57b01bc5fc7c8f3c1d3561"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/media/structure/generated-music-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "00e4b648e8e42d9c173fae1b38380a0e862ed4dc526a3e68cd698a342d5b4d44"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/media/structure/generated-visuals-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "a105d99baad568a79c2d8cec06410c38a8e195aea5cf5672b74f8b27e9accf5a"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/media/structure/generative-art-textures-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "3028f9a682472e0eb5a4bba3bf1463ceec805cf8cd2c081a551bb3f01bf0df2a"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/media/structure/generative-paracosms-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "dad3ccadea7c8b51de6bb783beb088d448b8222e6eb28385ff17c574a380fb1c"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/media/structure/museums-collections-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "52f698645984e0e4711458434542ae1c44c3109013cd64c87f35381335a1f691"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/media/structure/music-practice-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "02000e2c52bafae97f515c8e71b91ee19450df2819fd29459fb8e7e0eda417c7"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/media/structure/reading-media-queue-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "c5ba36bb4be6669466b64bb49eeea23c8b4165ce1da7a81d825248f7318d6a29"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/metadata/structure/data-catalog-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "f49489bb2e5df27b89d5b5e19249fac9a3c3d72f3dfac14bb6b8699a369290f6"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/metadata/structure/domain-definition-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "973fea511cf8959a8ba3f2f3e1dcfe0a11cf5a0b4ee0ea3172e26a252a62d5fe"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/monitoring/structure/introspection-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "3513b1fb078f263dac6e9644720f661c0b65a03b7fc47c6190b448259aafbcbd"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/monitoring/structure/ops-monitoring-dashboards-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "e2cfc51cbd5bb8d9d41ae84f4eec522835c1a25d6e178fe6488ebbc9cc88bbfd"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/network/structure/email-messaging-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "99c02014209ade70afe97a1fe6dab096b11e247dbb08af2937e9777b48f833c1"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/network/structure/multi-user-computer-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "e48242c510b0dd6d613b4e5bbe087bab5cef1361584f2ff5a1bf8bdb6ae68899"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/network/structure/network-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "73e802788282fe6c4282537a4ea4cce50744ba5f683ea84461b2e969c465fb66"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/network/structure/notifications-attention-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "b8491900d701d3b6f50ecf32a1d844643c5b4d3eec78dc25a310784d4e471e66"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/network/structure/socket-gateway-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "643ae52c9b0424a786bf50cb01d4425cc1252e814acf4d17fab4283498eef15f"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/operations/structure/disaster-response-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "df1f0747da20b95a8c475df5090484055f916b5cf352f7ba3740ffec33b17721"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/operations/structure/external-integrations-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "5a386beaa7d3f04375b6e397eb765f82e275dcf848b4619f1d5ad1dfe3d38576"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/operations/structure/home-automation-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "4760e030f7f3f88596615ac68914f18f2186e6c05941328ab1f545c8e64503eb"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/operations/structure/logistics-supply-chains-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "2f5a4d144af584bf13041f6cd5913620d65c75a4ec3c737d1b12249fc6a117ba"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/policy/structure/governance-community-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "94a0b47636c226ce53362ae3fb04f85f15ba25381c7bf7e29b14a075b7c20c35"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/policy/structure/government-decisions-measurement-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "9116ff9ec61c737e9f29b231ffef5b2c35032623f8c3af9d5cb2a6f07ed22239"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/policy/structure/inter-ontology-treaty-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "c7b94fdd2d06bf9797e4b445a1f02a1dbd1b9b692d16537ad24c7ecd7375cb03"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/policy/structure/legal-contracts-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "ff58f97134b63cfe1bf51411f44b8db694b1bea837c443fc2310b9ebc958c1b6"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/policy/structure/policy-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "545a999eac756a8f0911fdb47b407fa2b0886c2c8e8d83bf135a75809c262a78"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/productivity/operator/plan-schedule.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "ad107c8cabc0a086437f0d97076ef7da5b432f0467b5f6bd6723a0a3b607d9f6"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/productivity/operator/recognize-event.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "0d81c626f8ac1b251d3098f46a60c471db6a27277e96eced1f7f3be119a51521"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/productivity/structure/calendar-event.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "e702782fd7764fc055eb3219a7c7ccf2ec73e38cf67cc28aa4be5771289b615d"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/productivity/structure/calendar-schedule.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "7aa8a321ccc9c7c10722ee8c3b076cf9735465bd0ca31ed68e4efdebe3daf3dc"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/productivity/structure/calendar-scheduling-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "5adb90b5122ebe3a204a842403b3ea17dbe31583f0b48e7c70bf0601ec3f65d3"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/productivity/structure/calendar-service-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "04f0eab1823d6cc57166c0fe014648a96c3a5bfad4d5ce6fcf9c0d94ac56bcb0"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/productivity/structure/conflict-report.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "6688f2ccaf2a1be580b9a23552a474cac41dbb35e9986752a522024248b46173"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/productivity/structure/household-chores-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "c554f8fb1e6e17e2208dc258345fb208bde50aa2ceec989c157c11efa196285d"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/productivity/structure/job-search-career-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "a7cd5139f192ef28d722c155ab2f55184faa18d86f8aab8b104c03c618c8c756"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/productivity/structure/projects-coordination-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "e051b1e1b17485f487bfe6573ef56b0bd6575766e9a1d8befa98a8eb3994794f"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/productivity/structure/recurrence-rule.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "067a298af9bb6ca8813ccb6ce5daee579ea0a2b1fcf21eadb2277e3f4820da2f"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/productivity/structure/relational-spreadsheet-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "696a80e00f07f006ed30e30fa6feaa800ce57e4552d04c74eaab94dfd72a218e"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/productivity/structure/timezone-profile.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "e7e8c48a66b23ea47aefe38ac85d1495efc4b91f982af66ec0344c72dccdbe82"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/reasoning/structure/llm-interpretation-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "57f1988a12866ee31b38cc6795e48f60ad4d2fd5ab9a98d518a827c2aea70143"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/reasoning/structure/relational-free-quotient-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "a885d340ce78aed7c0434a5561e316085937fdcff2105506d03616d55f4bd767"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/reasoning/structure/selfworld-renormalization-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "96e1b326e8e1f2b499a197e4bb7bf86f39729dfa24e0829b815caca8c432f4d4"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/replication/structure/distributed-relationality-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "a70e326d9edea2f9a0a57d1d4bfe00694beea82065932926ed77720980f5632d"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/replication/structure/replication-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "fcb3e05c74b3ff9e857937b57257ec025de566d5e0724fac96db3017b1a4affa"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/resource/structure/finance-budget-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "b0f3a644e2866c583e20ad60d80b66515aecef00b05c6879b2e372ea8abc190e"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/resource/structure/markets-analysis-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "a5724294f1b051942572a731ed8b37d87240821ef790feb5c9e386e4198ca218"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/resource/structure/recipes-meal-planning-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "25c08b161e3dbc1342a2b41221d9cdaa38d52c77019c4e75dbe79a4a87721c66"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/resource/structure/relational-desktop-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "78b0acdd894c2ff20ad39402b4c58a6ec2006f0e53d80ac9b8929fc342f682af"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/resource/structure/resource-manager-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "17124f72ab79bc98799ad91854fd5e90a6a0d40215127e3aa9ea75826327f04f"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/runtime/structure/information-engine-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "2b6af00b283a2630807be02ef0e453db77f03e4f6fc23c5e1770a91b3b30a12c"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/runtime/structure/interpreter-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "b9e0b66f2a56bdfeb4ed9d02acc0b6bca58455580f5d746921cec60fef824481"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/runtime/structure/recognition-endpoint-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "00d5a063ab60ec629ccbace292797188080ae17c71d234dc571ee99cc0efcf47"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/runtime/structure/repl-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "b4808adfbc11c3650cf192a9269c99d5d3f7347089a7a0e5abe45b6a8e3ef38d"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/runtime/structure/semantics-checker-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "cde392bc1e7162ed7a8b8b2844f5628b828bfb4e16f41a5a849f088b46147f07"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/runtime/structure/virtual-machine-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "faa70b16a8bb719554d8ebe1a30af2dfe5602bf93c056bc651c12ab97282df7d"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/science/structure/dreams-inner-work-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "a55e94fdf2b1a175b15afd9f03f17d8cac5387eba4792a7875950baa3cdd376a"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/science/structure/earthsystem-flow-mapping-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "2abd1547b0bc34d2024274f97532b1679108e46a60717ca3948c0ec338bdd6b8"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/science/structure/freudian-psychology-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "f6e4e5986dabc12a0298ab58e1da1c1536bff967d481024f8f6fa0b985c5da76"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/science/structure/jungian-psychology-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "7690ad8eddbc1a4b5c6538e3f274b812238a71a406c69446ed5e0f28581e81b2"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/science/structure/lab-notebook-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "cb07ae8776e7e3cd3610f408b5b06192abd8494c597de532d192b553df488244"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/science/structure/lacanian-subjectivity-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "3b2bffe92600845fe86b7435d10a6dd054cd33613322090cc2f1c979e11078eb"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/science/structure/medical-data-care-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "39f3c4c4bfd24e6c7a18b611473c4060d58cd18b41429ec8177919d594516c25"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/science/structure/newtonian-physics-sim-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "d58cac133975259550c05a51239c8767031f84c2a1f9f0ee77a3568bcbc021bc"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/science/structure/physics-calculator-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "f061cea297af2467fa826d560da46603aac23461ed3cccf265d51c8c9b92ba44"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/science/structure/quantum-physics-sim-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "7d0882473939a5a8b9dbc05a60c7f699778e4bebf92870165a47a7fd4bcce72f"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/sheaf/structure/sheaf-topos-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "f223d400aa628cb7304308e005801499944efaedef57801c4aee49697b9e8185"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/social/structure/discourse-conversation-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "4b9dbea45fc0917ae8b5b9a47f006ace39e602814e7ff7daab89862884f2d4bc"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/social/structure/institutions-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "452b924cac5cf2e5177c97ccf2cc0f10401bb430b815ddae322183417f78a159"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/social/structure/interpersonal-communication-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "56a16eb21bb6cf1c16c89257060e28736633a51657f1badf25bf09ea5b64cc42"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/social/structure/micro-rituals-everyday-magic-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "8da92814efa6fbd95cd05a609faebc76d88ff1f5d3394bb93db651372f68e265"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/social/structure/open-source-communities-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "2d476c5684fe0ccbe6fddc38f8ff11ece8e89a50666d5e4e3e2db6f1d6e7d7f7"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/storage/structure/filesystem-adapter-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "c5407c26cf8e1d9c12b3cf0f21e7d99315dfb0a54941fa2f6b7c46134fcc4381"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/storage/structure/persistence-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "2f6757b0c1959028d0986bfa78ec52f53e975aabfb2658a309d354fbbb165bb2"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/storage/structure/subscriptions-bills-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "6da439d6aef42ef705d5a2d36dca83e0f8c31e66024f1e95f525cdf540428c6e"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/syntax/structure/error-repair-production-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "09783d484095f1c584efb53f4e11e52c21dd3809ab6a147b9f99a4752597eaf3"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/syntax/structure/heyting-algebra-simulation-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "9c0f721792e55af03873becd158ed89669fe5b5b355ea1ec91de94505466843b"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/syntax/structure/information-structure-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "0585c4be455811800410ceb2159d6bb9274fd4dc35ec989411ecb538f55b3b12"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/syntax/structure/judgment-calculus-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "af5218e8686bb30d39441908f025be9e7b6b9667dbf7095f59edf35c81acfc9a"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/syntax/structure/lexical-fields-thesaurus-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "ceb3362223e0fc881bdd0eb0ad56dc991c138f160c7cba65889839ba836d9fa1"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/syntax/structure/linguistic-structure-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "66691b0cf5a1c2c659a7a71c2bf119abb3f5bbb1ce7a71e4d824f36646195d1a"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/syntax/structure/metaphor-figurative-language-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "1fc8b2c46bb7f2f7b36a4c7e11655601add4ef5d22d20027b587dae8bf4df0b5"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/syntax/structure/parametric-semantics-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "75741524b9015857a7f0395921f0542def9a84509412311f4974ce857bc85f9d"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/syntax/structure/phonology-prosody-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "34e9822910cf5c9c35bc3b312038f9b92047611985c6ea3a0b68078560dc0364"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/syntax/structure/register-style-sociolect-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "1b7c3273cb79a19ad4d3bdf986820f0c356c96410a75d5980ab53f3b01347f4f"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/syntax/structure/semantics-frames-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "ac2dfa522d459dee98574e131935bb1397303959b56602c761ce7fb93cf213e5"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/syntax/structure/semiolinguistics-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "eea4733b532c97af596faaf64d76c83566520864406d7db2608b717120300bf9"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/syntax/structure/semiosis-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "7cd1ce4bfbccabbaa86a90e6b7b5feb71c82b08221871a27a1355aca062830c9"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/syntax/structure/sexp-template-language-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "42c536ed08cea1607590f7a4192212cb52cefff7362365c75ba7c3d706176723"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/testing/structure/testing-harness-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "d2682e6ccef89318e9d243de818ed325255d8fdf549c80c6d318b1c68221d4d2"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/topology/structure/directed-space-compiler-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "89be9340de429e472449f286c9bdf3221e36650bc9c6173dc54b543c35cb8d4e"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/topology/structure/fractal-dynamics-playground-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "0fd3dd2a9722ef46833e1b0405dd9984cef3b08815cb73b3188c2719bc10c36f"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/topology/structure/liminal-glitch-topology-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "9b203dff29af399dadbd7a3aed20507c5fd81bd94084aa7f78edaa5e45a9281b"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/topology/structure/markov-dynamics-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "514269423db2e7b09350dc12ab2b6f2502723eed0cd71a5f0ea43cd6e67e6776"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/topology/structure/topology-integration-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "c9212ae002971a0c7b37505c22410a6ee65fb497b6d63b5c8e1cf1ddc785e696"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/trace/structure/relational-activity-streams-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "c68f8fc60f016739f9680b440c624139e219ce1fd153b4c974d2f5a1d2ae9477"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/trace/structure/trace-renewal-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "a18a7ce927c31342b8d6cfef635e8415892c8d2df47c8ea1239b1dd95b0c8afc"
+    },
+    {
+      "nested_path": "triage/ideas-for-concept-computers/traceability/structure/traceability-service-program.md",
+      "sibling_path": null,
+      "classification": "no-md-sibling",
+      "verification_method": "structural: no top-level \"ideas-for-concept-computers\" directory exists under content/text/triage/; bulk basename-collision check against all 3203 top-level .md files (comm -12 intersection of 137 nested basenames vs full top-level basename set) returned zero matches",
+      "note": "Unique nest-only content, part of the ideas-for-concept-computers/ subtree; already .md (not an org original).",
+      "sha256": "a38a380aa07b92e7520f8b8a94c5ffdbd0a1de0e17800b3a93c8af05ae066a84"
+    },
+    {
+      "nested_path": "triage/internal-theory/deriving-a-reflexive-infinity-topos.md",
+      "sibling_path": "relational-infinity-topos/deriving-a-reflexive-infinity-topos.md",
+      "classification": "faithfully-converted",
+      "verification_method": "full diff",
+      "note": "Nested md is an intermediate draft of the same document (91/~700 diff lines); differences are frontmatter format (TOML +++ vs YAML ---) and light prose polish only.",
+      "sha256": "32561e0e1081789575bd8a31afd4b818079bd8f7e8b23604ca6a0d91cb99151f"
+    },
+    {
+      "nested_path": "triage/internal-theory/deriving-a-reflexive-infinity-topos.org",
+      "sibling_path": "relational-infinity-topos/deriving-a-reflexive-infinity-topos.md",
+      "classification": "faithfully-converted",
+      "verification_method": "heading list diff (368 org headings vs 362 md; 0 real losses after discounting bold-inline-text false positives in the org extraction)",
+      "note": "Corroborated: the compiled top-level file ./deriving-a-reflexive-infinity-topos.md separately embeds this exact org file verbatim (raw, unconverted) at its own \"## Imported source: archive/triage/triage/internal-theory/deriving-a-reflexive-infinity-topos.org\" marker (line 3064) - a second, independent top-level location preserving the same content.",
+      "sha256": "7492ecf2fedff388092a949bbd47154c1eba3578b8a4e800ed99661066ebbd4a"
+    },
+    {
+      "nested_path": "triage/internal-theory/foundations-of-relation.org",
+      "sibling_path": "foundations-of-relation.md",
+      "classification": "faithfully-converted",
+      "verification_method": "heading list diff (163 org headings; word-count proximity 4571 vs 4652, +1.8%) + spot content check",
+      "note": "Deep org headings (numbered subsections like \"2.1 From Closure to Relation\") demoted to bold inline labels in the md rather than dropped; spot-checked present verbatim in md body.",
+      "sha256": "4282c0bb42b7da10411637a24d60c5e1db7e08cbe22924b942924123b17e782a"
+    },
+    {
+      "nested_path": "triage/internal-theory/proposing-a-reflexive-existence.md",
+      "sibling_path": "relationality-2/human-draft-3/proposing-a-reflexive-existence.md",
+      "classification": "faithfully-converted",
+      "verification_method": "heading list diff (100% of nested file's 212 real headings present in target; target is a later, expanded draft with 46 additional headings)",
+      "note": "Target is a superset (19969 words vs 14741) - a later revision of the same document, not a lossy rewrite. Also independently imported raw into ./proposing-a-reflexive-existence.md at its \"Imported source\" marker (line 9360).",
+      "sha256": "ec885881beedbb35392d9abb674ef005fbfa63a59e44b00cb04c6eda23f92e6e"
+    },
+    {
+      "nested_path": "triage/koios-news/index.org",
+      "sibling_path": "koios-news/index.md",
+      "classification": "faithfully-converted",
+      "verification_method": "full read of both files",
+      "note": "Matching :ID: / id UUID (ae2908d5-...) confirms genuine pairing; all sections preserved.",
+      "sha256": "3ed38e63cb2360c44fdd67062ee538da18c05612c17343a4ff5b33dad88ffbb6"
+    },
+    {
+      "nested_path": "triage/per/enc/my-babbles.org",
+      "sibling_path": "per/enc/my-babbles.md",
+      "classification": "faithfully-converted",
+      "verification_method": "full read of both files",
+      "note": "Matching UUID (b8e0a03d-...). Also independently imported raw into ./my-babbles.md at its \"Imported source\" marker (line 16).",
+      "sha256": "2e1d0bee7c1220162cb2f20ed4a8c19227107b73d77423671db85871fc60d9e3"
+    },
+    {
+      "nested_path": "triage/per/enc/my-blog.org",
+      "sibling_path": "per/enc/my-blog.md",
+      "classification": "faithfully-converted",
+      "verification_method": "full read of both files",
+      "note": "Matching UUID (70da4a1e-...). The embedded elisp query (machinery to regenerate the entry list) is dropped, but its output - all 26 dated babble entries - is fully preserved as a markdown list.",
+      "sha256": "7249db4221af99daf9380ad7ad035e49faa43617dedda91ee74b9bf4b3db8dc8"
+    },
+    {
+      "nested_path": "triage/per/enc/my-ko-fi.org",
+      "sibling_path": "per/enc/my-ko-fi.md",
+      "classification": "faithfully-converted",
+      "verification_method": "full read of both files",
+      "note": "Matching UUID (586f1109-...). Also independently imported raw into ./my-ko-fi.md at its \"Imported source\" marker (line 22).",
+      "sha256": "190dc5f3913107ddd2ac862b9ee2ec28718963abe8ccdf6e42f7401a91ead0c8"
+    },
+    {
+      "nested_path": "triage/research-notes/physics-of-relational-infinity-topos-modality.org",
+      "sibling_path": "2026/06/17/wsl-home-relationality/research/math/physics-of-relational-infinity-topos-modality.md",
+      "classification": "faithfully-converted",
+      "verification_method": "heading list diff (full 8-section + Theorem A-E structure match; word-count proximity 4564 vs 4690, +2.8%)",
+      "note": "A same-named but truncated, unrelated copy exists at relational-infinity-topos/physics-of-relational-infinity-topos-modality.md (2871w, cuts off mid-section 5) - not the sibling, excluded by heading comparison.",
+      "sha256": "077758496bd14c268308f97b4b628a243d616996270c8309095862f96d02713c"
+    },
+    {
+      "nested_path": "triage/research/media/lit/wri/cur/write-for-a-month-fictional-memoir.org",
+      "sibling_path": "write-for-a-month-fictional-memoir.md",
+      "classification": "faithfully-converted",
+      "verification_method": "two-hop heading diff (org to nested md: 39/91 deep headings demoted to list items, spot-checked preserved as body text; nested md to root: \"Imported source\" breadcrumb, root line 837)",
+      "note": "Root file explicitly names the nested scientific-texts/.../write-for-a-month-fictional-memoir.md as its source, not this org directly, but content is equivalent at every hop.",
+      "sha256": "94df4ad6076e496b7a99639cb54d2df3727f0cd2892466a0948ba6877334c04f"
+    },
+    {
+      "nested_path": "triage/research/media/lit/wri/cur/write-for-a-month-zombie-novel.org",
+      "sibling_path": "write-for-a-month-zombie-novel.md",
+      "classification": "faithfully-converted",
+      "verification_method": "full diff (654 diff lines, all trailing-whitespace hard-line-break markers only; word count exact match 4665w = 4665w)",
+      "note": "A same-named but different, larger draft exists at scientific-texts/media/lit/wri/cur/write-for-a-month-zombie-novel.md (4860w) - not the sibling, excluded by the exact word-count match to the root file.",
+      "sha256": "9ba284dbe3167e1e234db8fdf997ff11f4a2d753ae10f78c4763bcb41980e07a"
+    },
+    {
+      "nested_path": "triage/research/relations/proposing-a-reflexive-existence.org",
+      "sibling_path": "relationality-2/ai-generated-relationality/relationality-slop-2026-03-03/texts/proposing-a-reflexive-existence.md",
+      "classification": "faithfully-converted",
+      "verification_method": "heading list diff (200/201 headings match; the 1 diff is an added glossary hyperlink, an enrichment not a loss)",
+      "note": "Also independently imported raw into ./proposing-a-reflexive-existence.md at its \"Imported source\" marker (line 12252). Distinct document from the internal-theory/proposing-a-reflexive-existence.md draft (different Part/section titles) despite the shared filename.",
+      "sha256": "2f3b18055b14e85504efb55a61d074777f18a675248295af53cbf8df455405c5"
+    },
+    {
+      "nested_path": "triage/research/relations/proposing-relationing.org",
+      "sibling_path": "proposing-relationing.md",
+      "classification": "faithfully-converted",
+      "verification_method": "\"Imported source\" breadcrumb (root file line 3718) + spot content check",
+      "note": "Root ./proposing-relationing.md is a compiled document that imports this org verbatim; deep org headings (Definition N / Lemma N / Corollary N) are demoted to markdown list items rather than dropped - spot-checked \"Definition 1 (Differentiation)\" and its full text present verbatim in the target.",
+      "sha256": "bb5a057abf32b9e732a0822fd2acc4c8594ee7caaf502c2c2e28f2099fd55bd2"
+    },
+    {
+      "nested_path": "triage/scientific-texts/media/lit/wri/cur/write-for-a-month-fictional-memoir.md",
+      "sibling_path": "write-for-a-month-fictional-memoir.md",
+      "classification": "faithfully-converted",
+      "verification_method": "\"Imported source\" breadcrumb (root file line 837)",
+      "note": "Direct 1-hop pairing, explicitly named by the compiled root document as its source.",
+      "sha256": "1ee2c36116c0e3d5ea5ed1cb24b196f1054198f024eb55fceafa8919617d8176"
+    },
+    {
+      "nested_path": "triage/scientific-texts/media/tel/describing-phineas-and-ferb-as-episodic-jouissance-within-corporate-liberation.md",
+      "sibling_path": "describing-phineas-and-ferb-as-episodic-jouissance-within-corporate-liberation.md",
+      "classification": "faithfully-converted",
+      "verification_method": "full diff",
+      "note": "Byte-identical apart from trailing hard-line-break whitespace markers in the target.",
+      "sha256": "9cb22a2231f84f9dd602cba61dc36faeddf2b73c0de9cba3149fb3dd7a7ca748"
+    },
+    {
+      "nested_path": "triage/scientific-texts/relations/headlines.txt",
+      "sibling_path": "headlines.md",
+      "classification": "faithfully-converted",
+      "verification_method": "full diff",
+      "note": "Byte-identical apart from trailing hard-line-break whitespace markers in the target.",
+      "sha256": "382c8f7a7c1fab6df1c785811d31803f56614acf92ab6e3e405012165f9e4e7c"
+    },
+    {
+      "nested_path": "triage/scientific-texts/relations/proposing-relationing.md",
+      "sibling_path": "proposing-relationing.md",
+      "classification": "faithfully-converted",
+      "verification_method": "\"Imported source\" breadcrumb (root file line 6384) + spot content check",
+      "note": "Same target document as the org original above (both imported into the same compiled root file at different offsets); \"Definition 1 (Differentiation)\" text block confirmed verbatim at target lines 160-190.",
+      "sha256": "e7373ac4660f5993da393744f3dfc5fbfdb0f73121eed431d55ea39e69f51881"
+    },
+    {
+      "nested_path": "triage/turntide-islands/index.org",
+      "sibling_path": "turntide-islands/index.md",
+      "classification": "faithfully-converted",
+      "verification_method": "full read of both files",
+      "note": "Matching :ID: / id UUID (6ecd3044-...) confirms genuine pairing; all sections preserved.",
+      "sha256": "1b8fe24bd0c0741927a06efe5f906b52c748df4c162cd72575bf12fc48f4d951"
+    }
+  ]
+}

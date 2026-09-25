@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://research-notes.561.group/hacking/library/predication-notes/composting/library/object/library/thing/thing.schema.json",
+  "title": "Thing",
+  "description": "JSON Schema for a thing — the polysemous wrapper for the categorical primitive when discussed in 561 OS contexts. Every thing IS an object (Lambek 1958; Mac Lane 1971 Ch. I); the polysemy is in which kind-name is in scope (structure, character, transformer, category, theory, object, directory, program, system, intelligence, carrier, cell, stratum). The schema specializes object via allOf with no additional cells: the polysemy lives in naming convention, not in schema content. Specializing structures (transformer, library, etc.) add their own cells via further allOf.",
+  "allOf": [{ "$ref": "https://research-notes.561.group/hacking/library/predication-notes/object/object.schema.json" }],
+  "type": "object"
+}

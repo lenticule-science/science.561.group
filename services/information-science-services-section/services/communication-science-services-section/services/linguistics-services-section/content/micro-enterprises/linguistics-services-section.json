@@ -1,0 +1,13 @@
+{
+  "id": "linguistics-services-section",
+  "name": "linguistics services section",
+  "kind": "agentic-metro-enterprise",
+  "organizational-kind": "ant-colony",
+  "customer": "leader-message-parsing-office",
+  "provides": [
+    "parsing-leader-messages",
+    "versioned-language-maps",
+    "source-preserving-frame-translation"
+  ],
+  "sovereignty-test": "can solicit, parse, refuse, attest, revise a language map, and repeat without the Platform Node Inducer or originating conversation"
+}

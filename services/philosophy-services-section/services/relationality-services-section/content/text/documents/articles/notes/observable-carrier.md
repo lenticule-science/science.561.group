@@ -1,0 +1,30 @@
+---
+title: Observable Carrier
+id: observable-carrier
+role: structure
+status: plan
+proof_refs: []
+derives-from: acts/measure
+---
+
+
+
+## Definition
+- Carrier: measured quantities obtained by applying the earned measurement act to recognised phenomena.
+- Components: each observable pairs a measurable phenomenon with its value in the profile measure space.
+- Source: earned from [Measure](./measure.md); profile-specific refinements from [Profile Measure](./profile-measure.md) constrain the value space.
+
+## Invariants
+- Observables are stable under profile measurement: re-measuring within the same profile yields the same value.
+- Composition of observables along traces respects the measurement functor induced by the profile measure.
+
+## Proof
+- Derived from: [Measure](./measure.md), which provides the act of assigning measured values.
+- Shows that: the measurement act induces a carrier of measured quantities; incorporating the profile-specific measure space yields the observable carrier as an earned structure.
+
+## Earlier material
+
+## Definition
+- Carrier: measured quantities obtained by applying the earned measurement act to recognised phenomena.
+- Components: each observable pairs a measurable phenomenon with its value in the profile measure space.
+- Source: earned from [Measure](../../../acts/measure.md); profile-specific refinements from [Profile Measure](profile-measure.md) constrain the value space.

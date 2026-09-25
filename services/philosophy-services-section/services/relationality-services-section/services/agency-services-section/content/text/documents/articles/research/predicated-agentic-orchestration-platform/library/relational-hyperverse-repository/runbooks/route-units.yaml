@@ -1,0 +1,42 @@
+id: route-units
+description: "Routes pre-classified PromptUnits to department queues. Deterministic — no LLM required. Claude classifies; this runbook writes. Use when you have a list of typed PromptUnits and need to persist them."
+skill-closure-kind: process
+
+inputs:
+  - name: units
+    type: list[PromptUnit]
+
+outputs:
+  - name: routing_report
+    from: "{{collect-report.result}}"
+
+steps:
+  - id: route-each
+    type: for-each
+    over: "{{inputs.units}}"
+    do:
+      - id: write-principle
+        type: write
+        condition: "{{item.type == 'Principle'}}"
+        kind: Principle
+        department: "{{item.department}}"
+        content:
+          name: "{{item.text | slugify | truncate:60}}"
+          body: "{{item.text}}"
+
+      - id: write-message
+        type: write
+        condition: "{{item.type != 'Principle'}}"
+        kind: Message
+        department: "{{item.department}}"
+        content:
+          from_department: root
+          date: "{{today}}"
+          msg_type: "{{item.type | to_msg_type}}"
+          urgency: "{{item.urgency | default:'Normal'}}"
+          subject: "{{item.text | truncate:200}}"
+          body: "{{item | unit_body}}"
+
+  - id: collect-report
+    type: collect
+    from: "{{route-each.result}}"

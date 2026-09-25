@@ -1,0 +1,36 @@
+\section{The crossing datum is a Belnap charge}
+
+\begin{proposition}[Crossing charge]\label{thm:crossing-charge}\lean{Obsmetrologia.AperiodicOrder.Tiling.crossingCharge}\leanok\uses{thm:weave-draft, thm:four-object}
+The over/under datum of one crossing as a four-corner charge, the slot pair
+$(\text{warp-over?},\,\text{weft-over?})$. Through \texttt{Articulating.FourCorner.toCorner} it lands in
+\texttt{Charge}, so a crossing \emph{is} a bilattice value.
+\end{proposition}
+
+\begin{theorem}[A mis-crossing is the held $\top$]\label{thm:miscrossing-top}\lean{Obsmetrologia.AperiodicOrder.Tiling.miscrossing_is_kTop}\leanok\uses{thm:crossing-charge}
+A mis-crossing (both strands claim to pass over) is $\top_k$: a held contradiction, the
+textile defect carried \emph{as a value}, not an error that explodes. A hole (neither over)
+is dually $\bot_k$ --- told nothing. The two defect classes are exactly the two
+knowledge-extremes.
+\end{theorem}
+
+\begin{theorem}[Over/under exchange is Belnap negation]\label{thm:overunder-negate}\lean{Obsmetrologia.AperiodicOrder.Tiling.overUnder_swap_is_negate}\leanok\uses{thm:crossing-charge, thm:klein-four-symmetry}
+Swapping the warp/weft roles of a crossing is the coordinate-swap $\texttt{Charge.negate}$
+($\sim$): it fixes the hole ($\bot$) and the mis-crossing ($\top$) and swaps the two
+definite over/under readings ($t \leftrightarrow f$). The truth-order involution of the
+fabric is the over/under flip.
+\end{theorem}
+
+\begin{theorem}[The charge-coloured draft is sofic over FOUR]\label{thm:charge-coloured-sofic}\lean{Obsmetrologia.AperiodicOrder.Tiling.charge_coloured_sofic}\leanok\uses{thm:weave-draft-sofic, thm:crossing-charge, thm:four-colour-palette-is-four}
+Relabelling each crossing of an admissible plain weave by its Belnap charge is a $1$-block
+factor of the draft SFT, so the bilattice-coloured fabric is a sofic shift over
+\texttt{Charge} --- the Tiles ``bilattice-coloured sofic tiling,'' realized on a plain
+weave.
+\end{theorem}
+
+\begin{theorem}[Entropy collapse of the plain weave]\label{thm:weave-entropy-collapse}\lean{Obsmetrologia.AperiodicOrder.Tiling.plainWeave_entropy_collapse}\leanok\uses{thm:weave-draft}
+In a both-directions plain-weave swatch (rows and columns both alternating) every row is
+equal to or the over/under complement of every other: the fabric realizes only two distinct
+row-states, so its configurational entropy is one bit, not extensive in the area. The
+maximal-coherence rigidity of plain weave --- the two-dimensional projection of \texttt{warpAlt}'s
+single local rule.
+\end{theorem}

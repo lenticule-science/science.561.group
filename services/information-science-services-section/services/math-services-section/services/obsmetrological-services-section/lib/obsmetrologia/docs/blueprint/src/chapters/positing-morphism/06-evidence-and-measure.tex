@@ -1,0 +1,145 @@
+\section{Evidence and measure: the charge with its witnesses, and the trace that measures it}
+
+Owner ruling 2026-09-21, ``the admission boundary, restored.'' A bare
+\texttt{Charge} (\cref{thm:charge}) is the presence pattern alone; positing
+does not admit one directly. What is admitted carries its witnesses:
+\texttt{Charged} pairs a value with the lossless evidence it was read off,
+and the trace-level \texttt{measure} builds that evidence from an
+articulating trace against a codec's contrariety, never by denial.
+
+\begin{proposition}[Charged: value with lossless evidence]\label{thm:charged}\lean{Obsmetrologia.Charged}\leanok\uses{thm:charge, thm:articulation-cell}
+A \emph{charged} value pairs a \texttt{value : Charge} with
+\texttt{evidence : Slot \(\times\) Slot} (for-witnesses, against-witnesses).
+\texttt{presence} reads the evidence pair back as a \texttt{Charge}, exactly
+as a cell's own slots are read as its corner. \texttt{ofCell} builds a
+\texttt{Charged} straight off an articulation cell: value its corner,
+evidence its two slots. \texttt{joinK}, \texttt{meetK}, \texttt{joinT},
+\texttt{meetT} apply the matching \texttt{Charge} operation to the value
+while unioning the evidence on each side regardless of which operation is
+applied --- combining evidence is never selective. \texttt{negate} swaps the
+two evidence sides along with the value; \texttt{conflate} may raise the
+value above what the evidence shows, the one operation licensed to do so.
+\end{proposition}
+
+\begin{proposition}[Measured]\label{thm:charged-measured}\lean{Obsmetrologia.Charged.Measured}\leanok\uses{thm:charged}
+A charged value is \emph{measured} when its value is exactly its evidence's
+presence pattern: \(x.\mathrm{value} = x.\mathrm{presence}\). This is the
+formal invariant behind ``measured, not seeded'': a measured value carries no
+more and no less than its witnesses show.
+\end{proposition}
+
+\begin{theorem}[A cell's own reading is measured]\label{thm:charged-ofcell-measured}\lean{Obsmetrologia.Charged.ofCell_measured}\leanok\uses{thm:charged-measured, thm:articulation-cell-corner}
+For any articulation cell \(c\), \(\texttt{ofCell}\,c\) is measured: a
+cell's corner is definitionally the presence pattern of its own two slots, so
+reading a \texttt{Charged} straight off a cell can never disagree with the
+cell's own evidence.
+\end{theorem}
+
+\begin{theorem}[Knowledge-join preserves measured]\label{thm:charged-joink-measured}\lean{Obsmetrologia.Charged.joinK_measured}\leanok\uses{thm:charged-measured}
+If \(x\) and \(y\) are both measured, so is \(\texttt{joinK}\,x\,y\): raising
+two honestly-read values by their honest union of evidence keeps the result
+honest.
+\end{theorem}
+
+\begin{theorem}[Absurd reached, witnesses kept: the meet can break measured]\label{thm:charged-meetk-not-measured}\lean{Obsmetrologia.Charged.meetK_not_measured}\leanok\uses{thm:charged-measured, thm:charged-joink-measured}
+There exist measured \(x\) and \(y\) with \(\texttt{meetK}\,x\,y\)
+\textbf{not} measured: the knowledge meet of a potential telling and an
+active telling drives the value down to \(\bot_k\) while keeping both
+witnesses on record. This is the formal difference between ``absurd, told
+nothing'' (\cref{thm:articulation-cell-initial}, no evidence at all) and
+``absurd, two tellings that cancelled'' (evidenced on both sides, value below
+what the evidence alone would license reading as neutral) --- the meet
+reaches a value the evidence has outrun, not a value the evidence supports.
+\end{theorem}
+
+\begin{theorem}[Presumption only ever raises]\label{thm:charged-presumefree-ge}\lean{Obsmetrologia.Charged.presumeFree_ge}\leanok\uses{thm:charged}
+\texttt{presumeFree} raises every evidence-free side of a charged value to
+present while leaving the evidence itself untouched. For any \(x\),
+\(x.\mathrm{value} \le_k \texttt{presumeFree}\,x.\mathrm{value}\): presumption
+is the one sanctioned breach of \cref{thm:charged-measured}, and it never
+lowers a value, only raises one that evidence has not yet pinned.
+\end{theorem}
+
+\begin{theorem}[A bare articulated cell presumes to stable]\label{thm:charged-presumefree-articulate}\lean{Obsmetrologia.Charged.presumeFree_articulate}\leanok\uses{thm:charged-presumefree-ge, thm:cell-articulate-corner}
+Presuming the charged reading of a freshly articulated cell reaches
+\(\top_k\): potential presumes up to stable. This is the pointwise fact the
+counit cone (\cref{thm:cvaluation-brim}) generalizes to every cell of a
+valuation.
+\end{theorem}
+
+\begin{definition}[Contrariety]\label{thm:contrary}\lean{Obsmetrologia.Contrary}\leanok\uses{def:claim}
+A \emph{contrariety} is an involution \(c : \texttt{Claim} \to
+\texttt{Claim}\) on claims, together with the proof \(c\,(c\,p) = p\) for
+every \(p\). It names the codec's own reading of ``the opposite claim,'' so
+that a contrary fact can be defined as the articulation of the contrary
+predicate rather than by any denial operation the theory does not have.
+\end{definition}
+
+\begin{definition}[Witnesses of a claim in a trace]\label{thm:witnesses}\lean{Obsmetrologia.witnesses}\leanok\uses{thm:oriented-cell, thm:predication}
+\(\texttt{witnesses}\,\psi\,\texttt{trace}\) collects, by explicit structural
+recursion over a list of articulatings, the head token of every articulating
+in the trace whose oriented cell (\cref{thm:oriented-cell}) equals \(\psi\).
+It is a \texttt{Slot}: a list, built without \texttt{filter} or \texttt{map},
+so that every lemma about it is a structural induction.
+\end{definition}
+
+\begin{definition}[Measuring a trace]\label{thm:trace-measure}\lean{Obsmetrologia.measure}\leanok\uses{thm:witnesses, thm:contrary, thm:charged}
+\(\texttt{measure}\,k\,\texttt{trace}\,\varphi\) reads a \texttt{Charged}
+value at the predication cell \(\varphi\) from a trace of articulatings and a
+contrariety \(k\): for-witnesses are \(\texttt{witnesses}\,\varphi\,
+\texttt{trace}\), against-witnesses are
+\(\texttt{witnesses}\,(\texttt{contrary}\,k\,\varphi)\,\texttt{trace}\), and
+the value is the presence pattern of that evidence pair. There is no
+operation asserting a charge directly; a claim is denied only by the
+contrary predicate itself having been articulated somewhere in the trace.
+\end{definition}
+
+\begin{theorem}[Measuring a trace is always measured]\label{thm:measure-measured}\lean{Obsmetrologia.measure_measured}\leanok\uses{thm:trace-measure, thm:charged-measured}
+\(\texttt{measure}\,k\,\texttt{trace}\,\varphi\) is measured for every \(k\),
+\texttt{trace}, and \(\varphi\): the value is built as the presence pattern
+of exactly the evidence \texttt{witnesses} collects, by construction.
+\end{theorem}
+
+\begin{theorem}[The empty trace tells nothing]\label{thm:measure-nil}\lean{Obsmetrologia.measure_nil}\leanok\uses{thm:trace-measure, thm:four-charges}
+Measuring the empty trace gives \(\bot_k\) at every claim: no articulating
+means no witnesses on either side, so the reading is the knowledge-least
+value by construction, not by a seeded default.
+\end{theorem}
+
+\begin{theorem}[Evidence never retracts]\label{thm:measure-cons-le}\lean{Obsmetrologia.measure_cons_le}\leanok\uses{thm:trace-measure, thm:kle}
+Extending a trace by one more articulating can only raise the measured value
+in \(\le_k\), never lower it: \(\texttt{measure}\,k\,\texttt{trace}\,\varphi
+\le_k \texttt{measure}\,k\,(a :: \texttt{trace})\,\varphi\). This is time's
+arrow at the level of measured evidence: knowledge is joined, never
+withdrawn.
+\end{theorem}
+
+\begin{theorem}[An articulating tells its own cell true]\label{thm:measure-self-pos}\lean{Obsmetrologia.measure_self_pos}\leanok\uses{thm:trace-measure, thm:oriented-cell}
+Measuring the singleton trace \([a]\) at \(a\)'s own oriented cell gives a
+positive reading: an articulating is always a for-witness of the cell it
+itself generates.
+\end{theorem}
+
+\begin{theorem}[No denial]\label{thm:no-denial}\lean{Obsmetrologia.no_denial}\leanok\uses{thm:trace-measure, thm:contrary}
+If measuring a trace at \(\varphi\) reads negative evidence, the contrary
+predicate was itself articulated somewhere in the trace: negative evidence
+exists only where the codec's contrary claim was actually told, never as a
+bare denial of \(\varphi\).
+\end{theorem}
+
+\begin{definition}[The measured composite of the spine]\label{thm:spine-runtrace}\lean{Obsmetrologia.Spine.runTrace}\leanok\uses{thm:trace-measure, thm:settling}
+\(\texttt{runTrace}\,\texttt{closure}\,k\,\texttt{trace}\,\varphi\) is
+articulate, predicate, \emph{measure}, settle: it settles the closure applied
+to the value of \(\texttt{measure}\,k\,\texttt{trace}\,\varphi\) at the locus
+\(\varphi\). Where \texttt{Spine.run} (\cref{thm:predicating-proper}'s
+chapter) admits a caller-supplied charge and documents that admission as not
+itself constituting admission of evidence, \texttt{runTrace} is the composite
+that actually measures.
+\end{definition}
+
+\begin{theorem}[The empty trace's spine is the knowledge-least valuation]\label{thm:spine-measure-nil-knowledgeleast}\lean{Obsmetrologia.Spine.measure_nil_knowledgeLeast}\leanok\uses{thm:measure-nil, thm:knowledge-least}
+For every claim \(\varphi\), measuring the empty trace and reading it as a
+valuation is exactly \texttt{Valuation.knowledgeLeast}~\(\varphi\). This
+anchors \cref{thm:knowledge-least}'s own reading --- the value at cells no
+articulating has reached --- as the special case of measuring nothing at all.
+\end{theorem}

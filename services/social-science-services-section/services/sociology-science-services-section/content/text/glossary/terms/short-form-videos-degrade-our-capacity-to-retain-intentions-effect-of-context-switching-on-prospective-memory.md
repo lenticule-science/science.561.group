@@ -1,0 +1,27 @@
+---
+id: 4e35e30e-ab4b-4d2a-a19c-f4e9cfa802a0
+roam-refs: "@chiossi_short-form_2023"
+title: "Short-Form Videos Degrade Our Capacity to Retain Intentions: Effect of Context Switching On Prospective Memory"
+date-created: 2025-10-08
+---
+
+# [resource code](../../../../../../../philosophy-services-section/content/text/glossary/terms/resource-code.md)
+
+## [BibTex entry](../../../../../../../engineering-science-services-section/services/computer-science-services-section/content/text/glossary/terms/bibtex-entry.md)
+
+
+    @inproceedings{chiossi_short-form_2023,
+        title = {Short-{Form} {Videos} {Degrade} {Our} {Capacity} to {Retain} {Intentions}: {Effect} of {Context} {Switching} {On} {Prospective} {Memory}},
+        shorttitle = {Short-{Form} {Videos} {Degrade} {Our} {Capacity} to {Retain} {Intentions}},
+        url = {http://arxiv.org/abs/2302.03714},
+        doi = {10.1145/3544548.3580778},
+        abstract = {Social media platforms use short, highly engaging videos to catch users' attention. While the short-form video feeds popularized by TikTok are rapidly spreading to other platforms, we do not yet understand their impact on cognitive functions. We conducted a between-subjects experiment (N=60) investigating the impact of engaging with TikTok, Twitter, and YouTube while performing a Prospective Memory task (i.e., executing a previously planned action). The study required participants to remember intentions over interruptions. We found that the TikTok condition significantly degraded the users' performance in this task. As none of the other conditions (Twitter, YouTube, no activity) had a similar effect, our results indicate that the combination of short videos and rapid context-switching impairs intention recall and execution. We contribute a quantified understanding of the effect of social media feed format on Prospective Memory and outline consequences for media technology designers to not harm the users' memory and wellbeing.},
+        urldate = {2025-10-08},
+        booktitle = {Proceedings of the 2023 {CHI} {Conference} on {Human} {Factors} in {Computing} {Systems}},
+        author = {Chiossi, Francesco and Haliburton, Luke and Ou, Changkun and Butz, Andreas and Schmidt, Albrecht},
+        month = apr,
+        year = {2023},
+        note = {arXiv:2302.03714 [cs]},
+        keywords = {Computer Science - Human-Computer Interaction},
+        pages = {1--15},
+    }

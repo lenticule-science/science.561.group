@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "glossary/terms/translation-rendering",
+  "title": "translation rendering",
+  "description": "One named translator's exact rendering of one term at one locus, grounded to a citekey this section can trace to a source. Not itself a term — a structural building block $ref'd by translation-variance-record.schema.json, the same way category.schema.json is a building block $ref'd by functor.schema.json rather than a term in its own right.",
+  "type": "object",
+  "required": ["citekey", "translator", "year", "rendering"],
+  "additionalProperties": false,
+  "properties": {
+    "citekey": {
+      "description": "the surnameYYYY citekey resolving to this section's content/text/documents/articles/bibliographies/<citekey>.md carrier and to the citing term's frontmatter references: map",
+      "type": "string",
+      "pattern": "^[a-z]+[0-9]{4}$"
+    },
+    "translator": {
+      "description": "the translator's name as credited on the cited edition",
+      "type": "string",
+      "minLength": 1
+    },
+    "year": {
+      "description": "first-publication year of the cited edition",
+      "type": "integer",
+      "minimum": 1800
+    },
+    "rendering": {
+      "description": "the exact quoted English rendering, verbatim, of the locus this record is about",
+      "type": "string",
+      "minLength": 1
+    },
+    "note": {
+      "description": "an optional, honestly-scoped observation about this specific rendering — never a claim about a translator's intent this section has not sourced",
+      "type": "string"
+    },
+    "grounding": {
+      "description": "how this rendering was checked before being recorded here — named plainly so an ungrounded quote is never indistinguishable from a checked one",
+      "type": "string",
+      "enum": ["verified-against-cited-edition", "checked-against-translation-comparison-aggregator", "not-independently-verified"]
+    }
+  }
+}

@@ -1,0 +1,690 @@
+---
+name: audit-filestore-2026-05-14T21-53-29
+description: Composite audit of all entity kinds in c:\Users\emsen\561\theories\theories\engineering\theories\tech\theories\computing\theories\artificial-intelligence\theories\agents\theories\agentic-orchestration-platforms\theories\predicated-agentic-orchestration-platform\theories\flatfile-agentic-resource-system on 2026-05-14.
+aliases:
+  - audit-filestore-2026-05-14T21-53-42
+  - audit-filestore-2026-05-14T21-53-46
+title: audit-filestore-2026-05-14T21-53-29
+---
+
+Audited 186 entities across 7 kinds.
+Filestore: `c:\Users\emsen\561\theories\theories\engineering\theories\tech\theories\computing\theories\artificial-intelligence\theories\agents\theories\agentic-orchestration-platforms\theories\predicated-agentic-orchestration-platform\theories\flatfile-agentic-resource-system`.
+
+## Kind counts
+
+- structures: 32
+- transformers: 37
+- concepts: 47
+- claims: 5
+- questions: 11
+- skills: 41
+- rules: 13
+
+## Findings
+
+- structures/agent-record.md: R7/R10: frontmatter key "type" is not a transformer slug
+- structures/agent-record.md: R7/R10: frontmatter key "class" is not a transformer slug
+- structures/agent-record.md: R7/R10: frontmatter key "instantiates" is not a transformer slug
+- structures/agent-record.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- structures/agent-record.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- structures/agent-record.md: R13: H1 heading in body: "# Agent record"
+- structures/channel.md: R7/R10: frontmatter key "type" is not a transformer slug
+- structures/channel.md: R7/R10: frontmatter key "class" is not a transformer slug
+- structures/channel.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- structures/channel.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- structures/channel.md: R13: H1 heading in body: "# Channel"
+- structures/closure-rule-record.md: R7/R10: frontmatter key "type" is not a transformer slug
+- structures/closure-rule-record.md: R7/R10: frontmatter key "class" is not a transformer slug
+- structures/closure-rule-record.md: R7/R10: frontmatter key "instantiates" is not a transformer slug
+- structures/closure-rule-record.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- structures/closure-rule-record.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- structures/closure-rule-record.md: R13: H1 heading in body: "# Closure rule record"
+- structures/closure-rule-system.md: R7/R10: frontmatter key "type" is not a transformer slug
+- structures/closure-rule-system.md: R7/R10: frontmatter key "class" is not a transformer slug
+- structures/closure-rule-system.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- structures/closure-rule-system.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- structures/closure-rule-system.md: R13: H1 heading in body: "# Closure rule system"
+- structures/edge.md: R7/R10: frontmatter key "type" is not a transformer slug
+- structures/edge.md: R7/R10: frontmatter key "class" is not a transformer slug
+- structures/edge.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- structures/edge.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- structures/edge.md: R13: H1 heading in body: "# Edge"
+- structures/event.md: R7/R10: frontmatter key "type" is not a transformer slug
+- structures/event.md: R7/R10: frontmatter key "class" is not a transformer slug
+- structures/event.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- structures/event.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- structures/event.md: R13: H1 heading in body: "# Event"
+- structures/federation-envelope-record.md: R7/R10: frontmatter key "type" is not a transformer slug
+- structures/federation-envelope-record.md: R7/R10: frontmatter key "class" is not a transformer slug
+- structures/federation-envelope-record.md: R7/R10: frontmatter key "instantiates" is not a transformer slug
+- structures/federation-envelope-record.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- structures/federation-envelope-record.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- structures/federation-envelope-record.md: R13: H1 heading in body: "# Federation envelope record"
+- structures/fiber.md: R7/R10: frontmatter key "type" is not a transformer slug
+- structures/fiber.md: R7/R10: frontmatter key "class" is not a transformer slug
+- structures/fiber.md: R7/R10: frontmatter key "instantiates" is not a transformer slug
+- structures/fiber.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- structures/fiber.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- structures/fiber.md: R13: H1 heading in body: "# Fiber"
+- structures/heartbeat-record.md: R7/R10: frontmatter key "type" is not a transformer slug
+- structures/heartbeat-record.md: R7/R10: frontmatter key "class" is not a transformer slug
+- structures/heartbeat-record.md: R7/R10: frontmatter key "instantiates" is not a transformer slug
+- structures/heartbeat-record.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- structures/heartbeat-record.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- structures/heartbeat-record.md: R13: H1 heading in body: "# Heartbeat record"
+- structures/instinct-record.md: R7/R10: frontmatter key "type" is not a transformer slug
+- structures/instinct-record.md: R7/R10: frontmatter key "class" is not a transformer slug
+- structures/instinct-record.md: R7/R10: frontmatter key "instantiates" is not a transformer slug
+- structures/instinct-record.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- structures/instinct-record.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- structures/instinct-record.md: R13: H1 heading in body: "# Instinct record"
+- structures/llm-endpoint-record.md: R7/R10: frontmatter key "type" is not a transformer slug
+- structures/llm-endpoint-record.md: R7/R10: frontmatter key "class" is not a transformer slug
+- structures/llm-endpoint-record.md: R7/R10: frontmatter key "instantiates" is not a transformer slug
+- structures/llm-endpoint-record.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- structures/llm-endpoint-record.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- structures/llm-endpoint-record.md: R13: H1 heading in body: "# LLM endpoint record"
+- structures/mode-record.md: R7/R10: frontmatter key "type" is not a transformer slug
+- structures/mode-record.md: R7/R10: frontmatter key "class" is not a transformer slug
+- structures/mode-record.md: R7/R10: frontmatter key "instantiates" is not a transformer slug
+- structures/mode-record.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- structures/mode-record.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- structures/mode-record.md: R13: H1 heading in body: "# Mode record"
+- structures/note.md: R7/R10: frontmatter key "type" is not a transformer slug
+- structures/note.md: R7/R10: frontmatter key "class" is not a transformer slug
+- structures/note.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- structures/note.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- structures/note.md: R13: H1 heading in body: "# Note"
+- structures/observation-record.md: R7/R10: frontmatter key "type" is not a transformer slug
+- structures/observation-record.md: R7/R10: frontmatter key "class" is not a transformer slug
+- structures/observation-record.md: R7/R10: frontmatter key "instantiates" is not a transformer slug
+- structures/observation-record.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- structures/observation-record.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- structures/observation-record.md: R13: H1 heading in body: "# Observation record"
+- structures/office-record.md: R7/R10: frontmatter key "type" is not a transformer slug
+- structures/office-record.md: R7/R10: frontmatter key "class" is not a transformer slug
+- structures/office-record.md: R7/R10: frontmatter key "instantiates" is not a transformer slug
+- structures/office-record.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- structures/office-record.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- structures/office-record.md: R13: H1 heading in body: "# Office record"
+- structures/peer-record.md: R7/R10: frontmatter key "type" is not a transformer slug
+- structures/peer-record.md: R7/R10: frontmatter key "class" is not a transformer slug
+- structures/peer-record.md: R7/R10: frontmatter key "instantiates" is not a transformer slug
+- structures/peer-record.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- structures/peer-record.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- structures/peer-record.md: R13: H1 heading in body: "# Peer record"
+- structures/runbook-record.md: R7/R10: frontmatter key "type" is not a transformer slug
+- structures/runbook-record.md: R7/R10: frontmatter key "class" is not a transformer slug
+- structures/runbook-record.md: R7/R10: frontmatter key "instantiates" is not a transformer slug
+- structures/runbook-record.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- structures/runbook-record.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- structures/runbook-record.md: R13: H1 heading in body: "# Runbook record"
+- structures/session-record.md: R7/R10: frontmatter key "type" is not a transformer slug
+- structures/session-record.md: R7/R10: frontmatter key "class" is not a transformer slug
+- structures/session-record.md: R7/R10: frontmatter key "instantiates" is not a transformer slug
+- structures/session-record.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- structures/session-record.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- structures/session-record.md: R13: H1 heading in body: "# Session record"
+- structures/skill-record.md: R7/R10: frontmatter key "type" is not a transformer slug
+- structures/skill-record.md: R7/R10: frontmatter key "class" is not a transformer slug
+- structures/skill-record.md: R7/R10: frontmatter key "instantiates" is not a transformer slug
+- structures/skill-record.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- structures/skill-record.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- structures/skill-record.md: R13: H1 heading in body: "# Skill record"
+- structures/witness.md: R7/R10: frontmatter key "type" is not a transformer slug
+- structures/witness.md: R7/R10: frontmatter key "class" is not a transformer slug
+- structures/witness.md: R7/R10: frontmatter key "instantiates" is not a transformer slug
+- structures/witness.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- structures/witness.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- structures/witness.md: R13: H1 heading in body: "# Witness"
+- transformers/admit-federation-envelope.md: R-gerund: transformer slug must end in -ing
+- transformers/advance-tick.md: R-gerund: transformer slug must end in -ing
+- transformers/apply-edit.md: R-gerund: transformer slug must end in -ing
+- transformers/assemble-kit.md: R-gerund: transformer slug must end in -ing
+- transformers/check-authorization.md: R7/R10: frontmatter key "source" is not a transformer slug
+- transformers/check-authorization.md: R7/R10: frontmatter key "target" is not a transformer slug
+- transformers/check-authorization.md: R7/R10: frontmatter key "type" is not a transformer slug
+- transformers/check-authorization.md: R7/R10: frontmatter key "class" is not a transformer slug
+- transformers/check-authorization.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- transformers/check-authorization.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- transformers/check-authorization.md: R13: H1 heading in body: "# check-authorization"
+- transformers/check-authorization.md: R-gerund: transformer slug must end in -ing
+- transformers/close-session.md: R7/R10: frontmatter key "source" is not a transformer slug
+- transformers/close-session.md: R7/R10: frontmatter key "target" is not a transformer slug
+- transformers/close-session.md: R7/R10: frontmatter key "type" is not a transformer slug
+- transformers/close-session.md: R7/R10: frontmatter key "class" is not a transformer slug
+- transformers/close-session.md: R7/R10: frontmatter key "instantiates" is not a transformer slug
+- transformers/close-session.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- transformers/close-session.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- transformers/close-session.md: R13: H1 heading in body: "# close-session"
+- transformers/close-session.md: R-gerund: transformer slug must end in -ing
+- transformers/compose.md: R7/R10: frontmatter key "source" is not a transformer slug
+- transformers/compose.md: R7/R10: frontmatter key "target" is not a transformer slug
+- transformers/compose.md: R7/R10: frontmatter key "type" is not a transformer slug
+- transformers/compose.md: R7/R10: frontmatter key "class" is not a transformer slug
+- transformers/compose.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- transformers/compose.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- transformers/compose.md: R13: H1 heading in body: "# compose"
+- transformers/compose.md: R-gerund: transformer slug must end in -ing
+- transformers/consolidate.md: R7/R10: frontmatter key "source" is not a transformer slug
+- transformers/consolidate.md: R7/R10: frontmatter key "target" is not a transformer slug
+- transformers/consolidate.md: R7/R10: frontmatter key "type" is not a transformer slug
+- transformers/consolidate.md: R7/R10: frontmatter key "class" is not a transformer slug
+- transformers/consolidate.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- transformers/consolidate.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- transformers/consolidate.md: R13: H1 heading in body: "# consolidate"
+- transformers/consolidate.md: R-gerund: transformer slug must end in -ing
+- transformers/dispatch.md: R7/R10: frontmatter key "source" is not a transformer slug
+- transformers/dispatch.md: R7/R10: frontmatter key "target" is not a transformer slug
+- transformers/dispatch.md: R7/R10: frontmatter key "type" is not a transformer slug
+- transformers/dispatch.md: R7/R10: frontmatter key "class" is not a transformer slug
+- transformers/dispatch.md: R7/R10: frontmatter key "instantiates" is not a transformer slug
+- transformers/dispatch.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- transformers/dispatch.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- transformers/dispatch.md: R13: H1 heading in body: "# dispatch"
+- transformers/dispatch.md: R-gerund: transformer slug must end in -ing
+- transformers/emit-event.md: R7/R10: frontmatter key "source" is not a transformer slug
+- transformers/emit-event.md: R7/R10: frontmatter key "target" is not a transformer slug
+- transformers/emit-event.md: R7/R10: frontmatter key "type" is not a transformer slug
+- transformers/emit-event.md: R7/R10: frontmatter key "class" is not a transformer slug
+- transformers/emit-event.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- transformers/emit-event.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- transformers/emit-event.md: R13: H1 heading in body: "# emit-event"
+- transformers/emit-event.md: R-gerund: transformer slug must end in -ing
+- transformers/emit-federation-envelope.md: R7/R10: frontmatter key "source" is not a transformer slug
+- transformers/emit-federation-envelope.md: R7/R10: frontmatter key "target" is not a transformer slug
+- transformers/emit-federation-envelope.md: R7/R10: frontmatter key "type" is not a transformer slug
+- transformers/emit-federation-envelope.md: R7/R10: frontmatter key "class" is not a transformer slug
+- transformers/emit-federation-envelope.md: R7/R10: frontmatter key "instantiates" is not a transformer slug
+- transformers/emit-federation-envelope.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- transformers/emit-federation-envelope.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- transformers/emit-federation-envelope.md: R13: H1 heading in body: "# emit-federation-envelope"
+- transformers/emit-federation-envelope.md: R-gerund: transformer slug must end in -ing
+- transformers/execute-runbook.md: R7/R10: frontmatter key "source" is not a transformer slug
+- transformers/execute-runbook.md: R7/R10: frontmatter key "target" is not a transformer slug
+- transformers/execute-runbook.md: R7/R10: frontmatter key "type" is not a transformer slug
+- transformers/execute-runbook.md: R7/R10: frontmatter key "class" is not a transformer slug
+- transformers/execute-runbook.md: R7/R10: frontmatter key "instantiates" is not a transformer slug
+- transformers/execute-runbook.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- transformers/execute-runbook.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- transformers/execute-runbook.md: R13: H1 heading in body: "# execute-runbook"
+- transformers/execute-runbook.md: R-gerund: transformer slug must end in -ing
+- transformers/has-slug.md: R9: missing or empty "name" in frontmatter
+- transformers/has-slug.md: R9: missing or empty "description" in frontmatter
+- transformers/has-slug.md: R7/R10: frontmatter key "slug" is not a transformer slug
+- transformers/has-slug.md: R7/R10: frontmatter key "type" is not a transformer slug
+- transformers/has-slug.md: R7/R10: frontmatter key "has-subject-type" is not a transformer slug
+- transformers/has-slug.md: R7/R10: frontmatter key "has-object-type" is not a transformer slug
+- transformers/has-slug.md: R7/R10: frontmatter key "status" is not a transformer slug
+- transformers/has-slug.md: R7/R10: frontmatter key "aliases" is not a transformer slug
+- transformers/has-slug.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- transformers/has-slug.md: R13: H1 heading in body: "# has-slug"
+- transformers/has-slug.md: R-gerund: transformer slug must end in -ing
+- transformers/has-type.md: R9: missing or empty "name" in frontmatter
+- transformers/has-type.md: R9: missing or empty "description" in frontmatter
+- transformers/has-type.md: R7/R10: frontmatter key "slug" is not a transformer slug
+- transformers/has-type.md: R7/R10: frontmatter key "type" is not a transformer slug
+- transformers/has-type.md: R7/R10: frontmatter key "has-subject-type" is not a transformer slug
+- transformers/has-type.md: R7/R10: frontmatter key "has-object-type" is not a transformer slug
+- transformers/has-type.md: R7/R10: frontmatter key "status" is not a transformer slug
+- transformers/has-type.md: R7/R10: frontmatter key "aliases" is not a transformer slug
+- transformers/has-type.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- transformers/has-type.md: R13: H1 heading in body: "# has-type"
+- transformers/has-type.md: R-gerund: transformer slug must end in -ing
+- transformers/heartbeat-cycle.md: R7/R10: frontmatter key "source" is not a transformer slug
+- transformers/heartbeat-cycle.md: R7/R10: frontmatter key "target" is not a transformer slug
+- transformers/heartbeat-cycle.md: R7/R10: frontmatter key "type" is not a transformer slug
+- transformers/heartbeat-cycle.md: R7/R10: frontmatter key "class" is not a transformer slug
+- transformers/heartbeat-cycle.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- transformers/heartbeat-cycle.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- transformers/heartbeat-cycle.md: R13: H1 heading in body: "# heartbeat-cycle"
+- transformers/heartbeat-cycle.md: R-gerund: transformer slug must end in -ing
+- transformers/interpret.md: R7/R10: frontmatter key "source" is not a transformer slug
+- transformers/interpret.md: R7/R10: frontmatter key "target" is not a transformer slug
+- transformers/interpret.md: R7/R10: frontmatter key "type" is not a transformer slug
+- transformers/interpret.md: R7/R10: frontmatter key "class" is not a transformer slug
+- transformers/interpret.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- transformers/interpret.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- transformers/interpret.md: R7/R10: frontmatter key "explores" is not a transformer slug
+- transformers/interpret.md: R13: H1 heading in body: "# interpret"
+- transformers/interpret.md: R-gerund: transformer slug must end in -ing
+- transformers/invoke-skill.md: R7/R10: frontmatter key "source" is not a transformer slug
+- transformers/invoke-skill.md: R7/R10: frontmatter key "target" is not a transformer slug
+- transformers/invoke-skill.md: R7/R10: frontmatter key "type" is not a transformer slug
+- transformers/invoke-skill.md: R7/R10: frontmatter key "class" is not a transformer slug
+- transformers/invoke-skill.md: R7/R10: frontmatter key "instantiates" is not a transformer slug
+- transformers/invoke-skill.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- transformers/invoke-skill.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- transformers/invoke-skill.md: R13: H1 heading in body: "# invoke-skill"
+- transformers/invoke-skill.md: R-gerund: transformer slug must end in -ing
+- transformers/load.md: R7/R10: frontmatter key "source" is not a transformer slug
+- transformers/load.md: R7/R10: frontmatter key "target" is not a transformer slug
+- transformers/load.md: R7/R10: frontmatter key "type" is not a transformer slug
+- transformers/load.md: R7/R10: frontmatter key "class" is not a transformer slug
+- transformers/load.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- transformers/load.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- transformers/load.md: R13: H1 heading in body: "# load"
+- transformers/load.md: R-gerund: transformer slug must end in -ing
+- transformers/merge-peer.md: R7/R10: frontmatter key "source" is not a transformer slug
+- transformers/merge-peer.md: R7/R10: frontmatter key "target" is not a transformer slug
+- transformers/merge-peer.md: R7/R10: frontmatter key "type" is not a transformer slug
+- transformers/merge-peer.md: R7/R10: frontmatter key "class" is not a transformer slug
+- transformers/merge-peer.md: R7/R10: frontmatter key "instantiates" is not a transformer slug
+- transformers/merge-peer.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- transformers/merge-peer.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- transformers/merge-peer.md: R13: H1 heading in body: "# merge-peer"
+- transformers/merge-peer.md: R-gerund: transformer slug must end in -ing
+- transformers/open-session.md: R7/R10: frontmatter key "source" is not a transformer slug
+- transformers/open-session.md: R7/R10: frontmatter key "target" is not a transformer slug
+- transformers/open-session.md: R7/R10: frontmatter key "type" is not a transformer slug
+- transformers/open-session.md: R7/R10: frontmatter key "class" is not a transformer slug
+- transformers/open-session.md: R7/R10: frontmatter key "instantiates" is not a transformer slug
+- transformers/open-session.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- transformers/open-session.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- transformers/open-session.md: R13: H1 heading in body: "# open-session"
+- transformers/open-session.md: R-gerund: transformer slug must end in -ing
+- transformers/projecting-to-object.md: R-gerund: transformer slug must end in -ing
+- transformers/projecting-to-subject.md: R-gerund: transformer slug must end in -ing
+- transformers/replay-from-peer.md: R7/R10: frontmatter key "source" is not a transformer slug
+- transformers/replay-from-peer.md: R7/R10: frontmatter key "target" is not a transformer slug
+- transformers/replay-from-peer.md: R7/R10: frontmatter key "type" is not a transformer slug
+- transformers/replay-from-peer.md: R7/R10: frontmatter key "class" is not a transformer slug
+- transformers/replay-from-peer.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- transformers/replay-from-peer.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- transformers/replay-from-peer.md: R13: H1 heading in body: "# replay-from-peer"
+- transformers/replay-from-peer.md: R-gerund: transformer slug must end in -ing
+- transformers/respond.md: R7/R10: frontmatter key "source" is not a transformer slug
+- transformers/respond.md: R7/R10: frontmatter key "target" is not a transformer slug
+- transformers/respond.md: R7/R10: frontmatter key "type" is not a transformer slug
+- transformers/respond.md: R7/R10: frontmatter key "class" is not a transformer slug
+- transformers/respond.md: R7/R10: frontmatter key "instantiates" is not a transformer slug
+- transformers/respond.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- transformers/respond.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- transformers/respond.md: R13: H1 heading in body: "# respond"
+- transformers/respond.md: R-gerund: transformer slug must end in -ing
+- transformers/restrict.md: R7/R10: frontmatter key "source" is not a transformer slug
+- transformers/restrict.md: R7/R10: frontmatter key "target" is not a transformer slug
+- transformers/restrict.md: R7/R10: frontmatter key "type" is not a transformer slug
+- transformers/restrict.md: R7/R10: frontmatter key "class" is not a transformer slug
+- transformers/restrict.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- transformers/restrict.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- transformers/restrict.md: R13: H1 heading in body: "# restrict"
+- transformers/restrict.md: R-gerund: transformer slug must end in -ing
+- transformers/resume-session.md: R7/R10: frontmatter key "source" is not a transformer slug
+- transformers/resume-session.md: R7/R10: frontmatter key "target" is not a transformer slug
+- transformers/resume-session.md: R7/R10: frontmatter key "type" is not a transformer slug
+- transformers/resume-session.md: R7/R10: frontmatter key "class" is not a transformer slug
+- transformers/resume-session.md: R7/R10: frontmatter key "instantiates" is not a transformer slug
+- transformers/resume-session.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- transformers/resume-session.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- transformers/resume-session.md: R13: H1 heading in body: "# resume-session"
+- transformers/resume-session.md: R-gerund: transformer slug must end in -ing
+- transformers/settle.md: R7/R10: frontmatter key "source" is not a transformer slug
+- transformers/settle.md: R7/R10: frontmatter key "target" is not a transformer slug
+- transformers/settle.md: R7/R10: frontmatter key "type" is not a transformer slug
+- transformers/settle.md: R7/R10: frontmatter key "class" is not a transformer slug
+- transformers/settle.md: R7/R10: frontmatter key "instantiates" is not a transformer slug
+- transformers/settle.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- transformers/settle.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- transformers/settle.md: R13: H1 heading in body: "# settle"
+- transformers/settle.md: R-gerund: transformer slug must end in -ing
+- transformers/specializes.md: R7/R10: frontmatter key "source" is not a transformer slug
+- transformers/specializes.md: R7/R10: frontmatter key "target" is not a transformer slug
+- transformers/specializes.md: R7/R10: frontmatter key "type" is not a transformer slug
+- transformers/specializes.md: R7/R10: frontmatter key "slug" is not a transformer slug
+- transformers/specializes.md: R7/R10: frontmatter key "title" is not a transformer slug
+- transformers/specializes.md: R7/R10: frontmatter key "status" is not a transformer slug
+- transformers/specializes.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- transformers/specializes.md: R7/R10: frontmatter key "realizes" is not a transformer slug
+- transformers/specializes.md: R13: H1 heading in body: "# specializes"
+- transformers/specializes.md: R-gerund: transformer slug must end in -ing
+- transformers/transition-mode.md: R7/R10: frontmatter key "source" is not a transformer slug
+- transformers/transition-mode.md: R7/R10: frontmatter key "target" is not a transformer slug
+- transformers/transition-mode.md: R7/R10: frontmatter key "type" is not a transformer slug
+- transformers/transition-mode.md: R7/R10: frontmatter key "class" is not a transformer slug
+- transformers/transition-mode.md: R7/R10: frontmatter key "instantiates" is not a transformer slug
+- transformers/transition-mode.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- transformers/transition-mode.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- transformers/transition-mode.md: R13: H1 heading in body: "# transition-mode"
+- transformers/transition-mode.md: R-gerund: transformer slug must end in -ing
+- concepts/algebra-as-protocol.md: R7/R10: frontmatter key "type" is not a transformer slug
+- concepts/algebra-as-protocol.md: R7/R10: frontmatter key "class" is not a transformer slug
+- concepts/algebra-as-protocol.md: R7/R10: frontmatter key "instantiates" is not a transformer slug
+- concepts/algebra-as-protocol.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- concepts/algebra-as-protocol.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- concepts/algebra-as-protocol.md: R13: H1 heading in body: "# Algebra-as-protocol"
+- concepts/anomaly-as-contradiction.md: R7/R10: frontmatter key "type" is not a transformer slug
+- concepts/anomaly-as-contradiction.md: R7/R10: frontmatter key "class" is not a transformer slug
+- concepts/anomaly-as-contradiction.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- concepts/anomaly-as-contradiction.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- concepts/anomaly-as-contradiction.md: R13: H1 heading in body: "# Anomaly as contradiction"
+- concepts/bilattice-graded-hook-intercept.md: R7/R10: frontmatter key "kind" is not a transformer slug
+- concepts/bilattice-graded-hook-intercept.md: R7/R10: frontmatter key "type" is not a transformer slug
+- concepts/bilattice-graded-hook-intercept.md: R7/R10: frontmatter key "title" is not a transformer slug
+- concepts/bilattice-graded-hook-intercept.md: R7/R10: frontmatter key "slug" is not a transformer slug
+- concepts/bilattice-graded-hook-intercept.md: R7/R10: frontmatter key "status" is not a transformer slug
+- concepts/bilattice-graded-hook-intercept.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- concepts/bilattice-graded-hook-intercept.md: R7/R10: frontmatter key "defines" is not a transformer slug
+- concepts/bilattice-graded-hook-intercept.md: R7/R10: frontmatter key "realizes" is not a transformer slug
+- concepts/bilattice-graded-hook-intercept.md: R7/R10: frontmatter key "references" is not a transformer slug
+- concepts/bilattice-graded-hook-intercept.md: R13: H1 heading in body: "# Bilattice-graded hook intercept"
+- concepts/bilattice-valued-witness.md: R7/R10: frontmatter key "type" is not a transformer slug
+- concepts/bilattice-valued-witness.md: R7/R10: frontmatter key "class" is not a transformer slug
+- concepts/bilattice-valued-witness.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- concepts/bilattice-valued-witness.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- concepts/bilattice-valued-witness.md: R7/R10: frontmatter key "references" is not a transformer slug
+- concepts/bilattice-valued-witness.md: R13: H1 heading in body: "# Bilattice-valued witness"
+- concepts/bounded-vocabulary-handshake.md: R7/R10: frontmatter key "type" is not a transformer slug
+- concepts/bounded-vocabulary-handshake.md: R7/R10: frontmatter key "class" is not a transformer slug
+- concepts/bounded-vocabulary-handshake.md: R7/R10: frontmatter key "instantiates" is not a transformer slug
+- concepts/bounded-vocabulary-handshake.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- concepts/bounded-vocabulary-handshake.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- concepts/bounded-vocabulary-handshake.md: R13: H1 heading in body: "# Bounded-vocabulary handshake"
+- concepts/commit-as-witness.md: R7/R10: frontmatter key "type" is not a transformer slug
+- concepts/commit-as-witness.md: R7/R10: frontmatter key "class" is not a transformer slug
+- concepts/commit-as-witness.md: R7/R10: frontmatter key "status" is not a transformer slug
+- concepts/commit-as-witness.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- concepts/commit-as-witness.md: R7/R10: frontmatter key "realizes" is not a transformer slug
+- concepts/commit-as-witness.md: R7/R10: frontmatter key "instantiates" is not a transformer slug
+- concepts/commit-as-witness.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- concepts/commit-as-witness.md: R13: H1 heading in body: "# Commit as witness"
+- concepts/confederation.md: R7/R10: frontmatter key "type" is not a transformer slug
+- concepts/confederation.md: R7/R10: frontmatter key "class" is not a transformer slug
+- concepts/confederation.md: R7/R10: frontmatter key "status" is not a transformer slug
+- concepts/confederation.md: R7/R10: frontmatter key "instantiates" is not a transformer slug
+- concepts/confederation.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- concepts/confederation.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- concepts/confederation.md: R13: H1 heading in body: "# Confederation"
+- concepts/consolidation-as-settlement.md: R7/R10: frontmatter key "type" is not a transformer slug
+- concepts/consolidation-as-settlement.md: R7/R10: frontmatter key "class" is not a transformer slug
+- concepts/consolidation-as-settlement.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- concepts/consolidation-as-settlement.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- concepts/consolidation-as-settlement.md: R13: H1 heading in body: "# Consolidation as settlement"
+- concepts/content-hash-addressing.md: R7/R10: frontmatter key "type" is not a transformer slug
+- concepts/content-hash-addressing.md: R7/R10: frontmatter key "class" is not a transformer slug
+- concepts/content-hash-addressing.md: R7/R10: frontmatter key "instantiates" is not a transformer slug
+- concepts/content-hash-addressing.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- concepts/content-hash-addressing.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- concepts/content-hash-addressing.md: R13: H1 heading in body: "# Content-hash addressing"
+- concepts/continuous-learning-loop.md: R7/R10: frontmatter key "type" is not a transformer slug
+- concepts/continuous-learning-loop.md: R7/R10: frontmatter key "class" is not a transformer slug
+- concepts/continuous-learning-loop.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- concepts/continuous-learning-loop.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- concepts/continuous-learning-loop.md: R7/R10: frontmatter key "references" is not a transformer slug
+- concepts/continuous-learning-loop.md: R13: H1 heading in body: "# Continuous-learning loop"
+- concepts/declared-dependency-ordering.md: R7/R10: frontmatter key "type" is not a transformer slug
+- concepts/declared-dependency-ordering.md: R7/R10: frontmatter key "class" is not a transformer slug
+- concepts/declared-dependency-ordering.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- concepts/declared-dependency-ordering.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- concepts/declared-dependency-ordering.md: R13: H1 heading in body: "# Declared dependency ordering"
+- concepts/derived-state-via-walks.md: R7/R10: frontmatter key "type" is not a transformer slug
+- concepts/derived-state-via-walks.md: R7/R10: frontmatter key "class" is not a transformer slug
+- concepts/derived-state-via-walks.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- concepts/derived-state-via-walks.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- concepts/derived-state-via-walks.md: R13: H1 heading in body: "# Derived state via walks"
+- concepts/dispatch-witnessed-workflow-step.md: R7/R10: frontmatter key "kind" is not a transformer slug
+- concepts/dispatch-witnessed-workflow-step.md: R7/R10: frontmatter key "type" is not a transformer slug
+- concepts/dispatch-witnessed-workflow-step.md: R7/R10: frontmatter key "title" is not a transformer slug
+- concepts/dispatch-witnessed-workflow-step.md: R7/R10: frontmatter key "slug" is not a transformer slug
+- concepts/dispatch-witnessed-workflow-step.md: R7/R10: frontmatter key "status" is not a transformer slug
+- concepts/dispatch-witnessed-workflow-step.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- concepts/dispatch-witnessed-workflow-step.md: R7/R10: frontmatter key "defines" is not a transformer slug
+- concepts/dispatch-witnessed-workflow-step.md: R7/R10: frontmatter key "realizes" is not a transformer slug
+- concepts/dispatch-witnessed-workflow-step.md: R7/R10: frontmatter key "references" is not a transformer slug
+- concepts/dispatch-witnessed-workflow-step.md: R13: H1 heading in body: "# Dispatch-witnessed workflow step"
+- concepts/entity-as-model.md: R7/R10: frontmatter key "type" is not a transformer slug
+- concepts/entity-as-model.md: R7/R10: frontmatter key "class" is not a transformer slug
+- concepts/entity-as-model.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- concepts/entity-as-model.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- concepts/entity-as-model.md: R13: H1 heading in body: "# Entity as model"
+- concepts/event-as-transaction.md: R7/R10: frontmatter key "type" is not a transformer slug
+- concepts/event-as-transaction.md: R7/R10: frontmatter key "class" is not a transformer slug
+- concepts/event-as-transaction.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- concepts/event-as-transaction.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- concepts/event-as-transaction.md: R13: H1 heading in body: "# Event as transaction"
+- concepts/event-sourcing.md: R7/R10: frontmatter key "type" is not a transformer slug
+- concepts/event-sourcing.md: R7/R10: frontmatter key "class" is not a transformer slug
+- concepts/event-sourcing.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- concepts/event-sourcing.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- concepts/event-sourcing.md: R13: H1 heading in body: "# Event-sourcing"
+- concepts/flatfile.md: R7/R10: frontmatter key "type" is not a transformer slug
+- concepts/flatfile.md: R7/R10: frontmatter key "class" is not a transformer slug
+- concepts/flatfile.md: R7/R10: frontmatter key "instantiates" is not a transformer slug
+- concepts/flatfile.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- concepts/flatfile.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- concepts/flatfile.md: R13: H1 heading in body: "# Flatfile"
+- concepts/formality-progression.md: R7/R10: frontmatter key "type" is not a transformer slug
+- concepts/formality-progression.md: R7/R10: frontmatter key "class" is not a transformer slug
+- concepts/formality-progression.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- concepts/formality-progression.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- concepts/formality-progression.md: R13: H1 heading in body: "# Formality progression"
+- concepts/four-layer-rule-architecture.md: R7/R10: frontmatter key "type" is not a transformer slug
+- concepts/four-layer-rule-architecture.md: R7/R10: frontmatter key "class" is not a transformer slug
+- concepts/four-layer-rule-architecture.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- concepts/four-layer-rule-architecture.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- concepts/four-layer-rule-architecture.md: R13: H1 heading in body: "# Four-layer rule architecture"
+- concepts/friction-log.md: R7/R10: frontmatter key "type" is not a transformer slug
+- concepts/friction-log.md: R7/R10: frontmatter key "class" is not a transformer slug
+- concepts/friction-log.md: R7/R10: frontmatter key "status" is not a transformer slug
+- concepts/friction-log.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- concepts/friction-log.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- concepts/friction-log.md: R13: H1 heading in body: "# Friction log"
+- concepts/frontmatter-as-presentation.md: R7/R10: frontmatter key "type" is not a transformer slug
+- concepts/frontmatter-as-presentation.md: R7/R10: frontmatter key "class" is not a transformer slug
+- concepts/frontmatter-as-presentation.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- concepts/frontmatter-as-presentation.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- concepts/frontmatter-as-presentation.md: R13: H1 heading in body: "# Frontmatter as presentation"
+- concepts/input-as-message-from-entity.md: R7/R10: frontmatter key "type" is not a transformer slug
+- concepts/input-as-message-from-entity.md: R7/R10: frontmatter key "class" is not a transformer slug
+- concepts/input-as-message-from-entity.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- concepts/input-as-message-from-entity.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- concepts/input-as-message-from-entity.md: R13: H1 heading in body: "# Input as message from entity"
+- concepts/kit-assembly.md: R7/R10: frontmatter key "type" is not a transformer slug
+- concepts/kit-assembly.md: R7/R10: frontmatter key "class" is not a transformer slug
+- concepts/kit-assembly.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- concepts/kit-assembly.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- concepts/kit-assembly.md: R13: H1 heading in body: "# Kit assembly"
+- concepts/modal-restriction.md: R7/R10: frontmatter key "type" is not a transformer slug
+- concepts/modal-restriction.md: R7/R10: frontmatter key "class" is not a transformer slug
+- concepts/modal-restriction.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- concepts/modal-restriction.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- concepts/modal-restriction.md: R13: H1 heading in body: "# Modal restriction"
+- concepts/observation-fiber-isolation.md: R7/R10: frontmatter key "type" is not a transformer slug
+- concepts/observation-fiber-isolation.md: R7/R10: frontmatter key "class" is not a transformer slug
+- concepts/observation-fiber-isolation.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- concepts/observation-fiber-isolation.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- concepts/observation-fiber-isolation.md: R13: H1 heading in body: "# Observation-fiber isolation"
+- concepts/office-as-fuzzy-cell.md: R7/R10: frontmatter key "type" is not a transformer slug
+- concepts/office-as-fuzzy-cell.md: R7/R10: frontmatter key "class" is not a transformer slug
+- concepts/office-as-fuzzy-cell.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- concepts/office-as-fuzzy-cell.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- concepts/office-as-fuzzy-cell.md: R13: H1 heading in body: "# Office as fuzzy cell"
+- concepts/referencing-entity-pattern.md: R7/R10: frontmatter key "type" is not a transformer slug
+- concepts/referencing-entity-pattern.md: R7/R10: frontmatter key "class" is not a transformer slug
+- concepts/referencing-entity-pattern.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- concepts/referencing-entity-pattern.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- concepts/referencing-entity-pattern.md: R13: H1 heading in body: "# Referencing-entity pattern"
+- concepts/scope-as-fiber.md: R7/R10: frontmatter key "type" is not a transformer slug
+- concepts/scope-as-fiber.md: R7/R10: frontmatter key "class" is not a transformer slug
+- concepts/scope-as-fiber.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- concepts/scope-as-fiber.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- concepts/scope-as-fiber.md: R13: H1 heading in body: "# Scope as fiber"
+- concepts/session-as-entity.md: R7/R10: frontmatter key "type" is not a transformer slug
+- concepts/session-as-entity.md: R7/R10: frontmatter key "class" is not a transformer slug
+- concepts/session-as-entity.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- concepts/session-as-entity.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- concepts/session-as-entity.md: R13: H1 heading in body: "# Session as entity"
+- concepts/seven-channel-decomposition.md: R7/R10: frontmatter key "type" is not a transformer slug
+- concepts/seven-channel-decomposition.md: R7/R10: frontmatter key "class" is not a transformer slug
+- concepts/seven-channel-decomposition.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- concepts/seven-channel-decomposition.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- concepts/seven-channel-decomposition.md: R13: H1 heading in body: "# Seven-channel decomposition"
+- concepts/six-spoke-channel-decomposition.md: R7/R10: frontmatter key "type" is not a transformer slug
+- concepts/six-spoke-channel-decomposition.md: R7/R10: frontmatter key "class" is not a transformer slug
+- concepts/six-spoke-channel-decomposition.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- concepts/six-spoke-channel-decomposition.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- concepts/six-spoke-channel-decomposition.md: R13: H1 heading in body: "# Six-spoke channel decomposition"
+- concepts/sovereign-node.md: R7/R10: frontmatter key "type" is not a transformer slug
+- concepts/sovereign-node.md: R7/R10: frontmatter key "class" is not a transformer slug
+- concepts/sovereign-node.md: R7/R10: frontmatter key "instantiates" is not a transformer slug
+- concepts/sovereign-node.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- concepts/sovereign-node.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- concepts/sovereign-node.md: R13: H1 heading in body: "# Sovereign node"
+- concepts/stages-as-readings.md: R7/R10: frontmatter key "type" is not a transformer slug
+- concepts/stages-as-readings.md: R7/R10: frontmatter key "class" is not a transformer slug
+- concepts/stages-as-readings.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- concepts/stages-as-readings.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- concepts/stages-as-readings.md: R13: H1 heading in body: "# Stages as readings"
+- concepts/swarm.md: R7/R10: frontmatter key "type" is not a transformer slug
+- concepts/swarm.md: R7/R10: frontmatter key "class" is not a transformer slug
+- concepts/swarm.md: R7/R10: frontmatter key "status" is not a transformer slug
+- concepts/swarm.md: R7/R10: frontmatter key "instantiates" is not a transformer slug
+- concepts/swarm.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- concepts/swarm.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- concepts/swarm.md: R13: H1 heading in body: "# Swarm"
+- concepts/temporal-lens.md: R7/R10: frontmatter key "type" is not a transformer slug
+- concepts/temporal-lens.md: R7/R10: frontmatter key "class" is not a transformer slug
+- concepts/temporal-lens.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- concepts/temporal-lens.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- concepts/temporal-lens.md: R7/R10: frontmatter key "references" is not a transformer slug
+- concepts/temporal-lens.md: R13: H1 heading in body: "# Temporal lens"
+- concepts/three-tier-memory.md: R7/R10: frontmatter key "type" is not a transformer slug
+- concepts/three-tier-memory.md: R7/R10: frontmatter key "class" is not a transformer slug
+- concepts/three-tier-memory.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- concepts/three-tier-memory.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- concepts/three-tier-memory.md: R13: H1 heading in body: "# Three-tier memory"
+- concepts/tick-as-iteration.md: R7/R10: frontmatter key "type" is not a transformer slug
+- concepts/tick-as-iteration.md: R7/R10: frontmatter key "class" is not a transformer slug
+- concepts/tick-as-iteration.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- concepts/tick-as-iteration.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- concepts/tick-as-iteration.md: R13: H1 heading in body: "# Tick as iteration"
+- concepts/transaction-lens.md: R7/R10: frontmatter key "type" is not a transformer slug
+- concepts/transaction-lens.md: R7/R10: frontmatter key "class" is not a transformer slug
+- concepts/transaction-lens.md: R7/R10: frontmatter key "status" is not a transformer slug
+- concepts/transaction-lens.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- concepts/transaction-lens.md: R7/R10: frontmatter key "instantiates" is not a transformer slug
+- concepts/transaction-lens.md: R7/R10: frontmatter key "realizes" is not a transformer slug
+- concepts/transaction-lens.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- concepts/transaction-lens.md: R13: H1 heading in body: "# Transaction lens"
+- concepts/validation-as-settlement.md: R7/R10: frontmatter key "type" is not a transformer slug
+- concepts/validation-as-settlement.md: R7/R10: frontmatter key "class" is not a transformer slug
+- concepts/validation-as-settlement.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- concepts/validation-as-settlement.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- concepts/validation-as-settlement.md: R13: H1 heading in body: "# Validation as settlement"
+- concepts/verb-as-bilattice-instrumented-slash-command.md: R7/R10: frontmatter key "kind" is not a transformer slug
+- concepts/verb-as-bilattice-instrumented-slash-command.md: R7/R10: frontmatter key "type" is not a transformer slug
+- concepts/verb-as-bilattice-instrumented-slash-command.md: R7/R10: frontmatter key "title" is not a transformer slug
+- concepts/verb-as-bilattice-instrumented-slash-command.md: R7/R10: frontmatter key "slug" is not a transformer slug
+- concepts/verb-as-bilattice-instrumented-slash-command.md: R7/R10: frontmatter key "status" is not a transformer slug
+- concepts/verb-as-bilattice-instrumented-slash-command.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- concepts/verb-as-bilattice-instrumented-slash-command.md: R7/R10: frontmatter key "defines" is not a transformer slug
+- concepts/verb-as-bilattice-instrumented-slash-command.md: R7/R10: frontmatter key "realizes" is not a transformer slug
+- concepts/verb-as-bilattice-instrumented-slash-command.md: R7/R10: frontmatter key "references" is not a transformer slug
+- concepts/verb-as-bilattice-instrumented-slash-command.md: R13: H1 heading in body: "# Verb as bilattice-instrumented slash command"
+- concepts/witness-routing.md: R7/R10: frontmatter key "type" is not a transformer slug
+- concepts/witness-routing.md: R7/R10: frontmatter key "class" is not a transformer slug
+- concepts/witness-routing.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- concepts/witness-routing.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- concepts/witness-routing.md: R7/R10: frontmatter key "references" is not a transformer slug
+- concepts/witness-routing.md: R13: H1 heading in body: "# Witness routing"
+- claims/flatfile-federation-equivalence.md: R7/R10: frontmatter key "type" is not a transformer slug
+- claims/flatfile-federation-equivalence.md: R7/R10: frontmatter key "class" is not a transformer slug
+- claims/flatfile-federation-equivalence.md: R7/R10: frontmatter key "status" is not a transformer slug
+- claims/flatfile-federation-equivalence.md: R7/R10: frontmatter key "instantiates" is not a transformer slug
+- claims/flatfile-federation-equivalence.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- claims/flatfile-federation-equivalence.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- claims/flatfile-federation-equivalence.md: R13: H1 heading in body: "# Flatfile-federation equivalence"
+- claims/heartbeat-converges-under-strict-regime.md: R7/R10: frontmatter key "type" is not a transformer slug
+- claims/heartbeat-converges-under-strict-regime.md: R7/R10: frontmatter key "class" is not a transformer slug
+- claims/heartbeat-converges-under-strict-regime.md: R7/R10: frontmatter key "status" is not a transformer slug
+- claims/heartbeat-converges-under-strict-regime.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- claims/heartbeat-converges-under-strict-regime.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- claims/heartbeat-converges-under-strict-regime.md: R13: H1 heading in body: "# The heartbeat converges under a strict-regime rule system: the active frontier reaches fixed-point in finitely many ticks"
+- claims/instinct-confidence-is-closure-fixpoint-measure.md: R7/R10: frontmatter key "type" is not a transformer slug
+- claims/instinct-confidence-is-closure-fixpoint-measure.md: R7/R10: frontmatter key "class" is not a transformer slug
+- claims/instinct-confidence-is-closure-fixpoint-measure.md: R7/R10: frontmatter key "status" is not a transformer slug
+- claims/instinct-confidence-is-closure-fixpoint-measure.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- claims/instinct-confidence-is-closure-fixpoint-measure.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- claims/instinct-confidence-is-closure-fixpoint-measure.md: R13: H1 heading in body: "# Instinct confidence is the closure fixed-point measure: learned equals zero $\leq_k$-distance to next-round output"
+- claims/rule-addition-is-substrate-local.md: R7/R10: frontmatter key "type" is not a transformer slug
+- claims/rule-addition-is-substrate-local.md: R7/R10: frontmatter key "class" is not a transformer slug
+- claims/rule-addition-is-substrate-local.md: R7/R10: frontmatter key "status" is not a transformer slug
+- claims/rule-addition-is-substrate-local.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- claims/rule-addition-is-substrate-local.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- claims/rule-addition-is-substrate-local.md: R13: H1 heading in body: "# Rule addition is substrate-local: new rules only re-settle entities within their match-radius"
+- claims/scope-composition-is-knowledge-order-monotone.md: R7/R10: frontmatter key "type" is not a transformer slug
+- claims/scope-composition-is-knowledge-order-monotone.md: R7/R10: frontmatter key "class" is not a transformer slug
+- claims/scope-composition-is-knowledge-order-monotone.md: R7/R10: frontmatter key "status" is not a transformer slug
+- claims/scope-composition-is-knowledge-order-monotone.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- claims/scope-composition-is-knowledge-order-monotone.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- claims/scope-composition-is-knowledge-order-monotone.md: R13: H1 heading in body: "# Effective scope composition is monotone in the knowledge-order"
+- questions/canonical-interpretation-rules.md: R7/R10: frontmatter key "type" is not a transformer slug
+- questions/canonical-interpretation-rules.md: R7/R10: frontmatter key "status" is not a transformer slug
+- questions/canonical-interpretation-rules.md: R7/R10: frontmatter key "explores" is not a transformer slug
+- questions/canonical-interpretation-rules.md: R13: H1 heading in body: "# What canonical interpretation rules does FARS commit to?"
+- questions/endpoint-as-outbound-swarm-participant.md: R7/R10: frontmatter key "type" is not a transformer slug
+- questions/endpoint-as-outbound-swarm-participant.md: R7/R10: frontmatter key "class" is not a transformer slug
+- questions/endpoint-as-outbound-swarm-participant.md: R7/R10: frontmatter key "status" is not a transformer slug
+- questions/endpoint-as-outbound-swarm-participant.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- questions/endpoint-as-outbound-swarm-participant.md: R7/R10: frontmatter key "splits-from" is not a transformer slug
+- questions/endpoint-as-outbound-swarm-participant.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- questions/endpoint-as-outbound-swarm-participant.md: R13: H1 heading in body: "# Are routable LLM endpoints federation-graph members, or some degenerate kind of confederation peer?"
+- questions/external-event-witness-binding.md: R7/R10: frontmatter key "type" is not a transformer slug
+- questions/external-event-witness-binding.md: R7/R10: frontmatter key "status" is not a transformer slug
+- questions/external-event-witness-binding.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- questions/external-event-witness-binding.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- questions/external-event-witness-binding.md: R13: H1 heading in body: "# External-event witness binding — what events become substrate witnesses, and how?"
+- questions/governance-agents-directory-structure.md: R7/R10: frontmatter key "type" is not a transformer slug
+- questions/governance-agents-directory-structure.md: R7/R10: frontmatter key "status" is not a transformer slug
+- questions/governance-agents-directory-structure.md: R7/R10: frontmatter key "explores" is not a transformer slug
+- questions/governance-agents-directory-structure.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- questions/governance-agents-directory-structure.md: R7/R10: frontmatter key "discharges-to" is not a transformer slug
+- questions/governance-agents-directory-structure.md: R13: H1 heading in body: "# Should `governance/agents/` be a flat directory or have subdirectories and if subdirectories what must those subdirectories be?"
+- questions/harness-as-deployment-substrate-projection.md: R7/R10: frontmatter key "type" is not a transformer slug
+- questions/harness-as-deployment-substrate-projection.md: R7/R10: frontmatter key "class" is not a transformer slug
+- questions/harness-as-deployment-substrate-projection.md: R7/R10: frontmatter key "status" is not a transformer slug
+- questions/harness-as-deployment-substrate-projection.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- questions/harness-as-deployment-substrate-projection.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- questions/harness-as-deployment-substrate-projection.md: R13: H1 heading in body: "# Do deployment-substrate harnesses share a section that all platform-specific harnesses refine?"
+- questions/mcp-client-as-swarm-participant.md: R7/R10: frontmatter key "type" is not a transformer slug
+- questions/mcp-client-as-swarm-participant.md: R7/R10: frontmatter key "class" is not a transformer slug
+- questions/mcp-client-as-swarm-participant.md: R7/R10: frontmatter key "status" is not a transformer slug
+- questions/mcp-client-as-swarm-participant.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- questions/mcp-client-as-swarm-participant.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- questions/mcp-client-as-swarm-participant.md: R13: H1 heading in body: "# What kind of substrate-thing is an MCP/A2A-client cloud agent?"
+- questions/monetary-cost-as-quantale-extension.md: R7/R10: frontmatter key "type" is not a transformer slug
+- questions/monetary-cost-as-quantale-extension.md: R7/R10: frontmatter key "class" is not a transformer slug
+- questions/monetary-cost-as-quantale-extension.md: R7/R10: frontmatter key "status" is not a transformer slug
+- questions/monetary-cost-as-quantale-extension.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- questions/monetary-cost-as-quantale-extension.md: R7/R10: frontmatter key "splits-from" is not a transformer slug
+- questions/monetary-cost-as-quantale-extension.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- questions/monetary-cost-as-quantale-extension.md: R13: H1 heading in body: "# Does the cost-discipline's quantale extend cleanly to dollar-denominated cost?"
+- questions/rate-limit-as-time-windowed-availability-predication.md: R7/R10: frontmatter key "type" is not a transformer slug
+- questions/rate-limit-as-time-windowed-availability-predication.md: R7/R10: frontmatter key "class" is not a transformer slug
+- questions/rate-limit-as-time-windowed-availability-predication.md: R7/R10: frontmatter key "status" is not a transformer slug
+- questions/rate-limit-as-time-windowed-availability-predication.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- questions/rate-limit-as-time-windowed-availability-predication.md: R7/R10: frontmatter key "splits-from" is not a transformer slug
+- questions/rate-limit-as-time-windowed-availability-predication.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- questions/rate-limit-as-time-windowed-availability-predication.md: R13: H1 heading in body: "# How does rate-limit availability fit in the substrate's algebra?"
+- questions/routable-llm-endpoint-as-swarm-participant.md: R7/R10: frontmatter key "type" is not a transformer slug
+- questions/routable-llm-endpoint-as-swarm-participant.md: R7/R10: frontmatter key "class" is not a transformer slug
+- questions/routable-llm-endpoint-as-swarm-participant.md: R7/R10: frontmatter key "status" is not a transformer slug
+- questions/routable-llm-endpoint-as-swarm-participant.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- questions/routable-llm-endpoint-as-swarm-participant.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- questions/routable-llm-endpoint-as-swarm-participant.md: R13: H1 heading in body: "# What kind of substrate-thing is a routable external LLM endpoint?"
+- questions/ships-harness-different-substrate-classes.md: R7/R10: frontmatter key "type" is not a transformer slug
+- questions/ships-harness-different-substrate-classes.md: R7/R10: frontmatter key "class" is not a transformer slug
+- questions/ships-harness-different-substrate-classes.md: R7/R10: frontmatter key "status" is not a transformer slug
+- questions/ships-harness-different-substrate-classes.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- questions/ships-harness-different-substrate-classes.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- questions/ships-harness-different-substrate-classes.md: R13: H1 heading in body: "# Ships harness different substrate-classes; the ship-record schema doesn't distinguish them"
+- questions/swarm-participation-handedness.md: R7/R10: frontmatter key "type" is not a transformer slug
+- questions/swarm-participation-handedness.md: R7/R10: frontmatter key "class" is not a transformer slug
+- questions/swarm-participation-handedness.md: R7/R10: frontmatter key "status" is not a transformer slug
+- questions/swarm-participation-handedness.md: R7/R10: frontmatter key "depends-on" is not a transformer slug
+- questions/swarm-participation-handedness.md: R7/R10: frontmatter key "see-also" is not a transformer slug
+- questions/swarm-participation-handedness.md: R13: H1 heading in body: "# Does the boundary fiber need a handedness coordinate to express directional asymmetry of swarm participation?"
+
+## Result
+
+false

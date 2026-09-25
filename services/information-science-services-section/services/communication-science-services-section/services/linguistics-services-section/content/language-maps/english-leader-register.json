@@ -1,0 +1,82 @@
+{
+  "kind": "communicating.language-manifest",
+  "id": "english-leader-register",
+  "version": "0.1.0",
+  "bundle": {
+    "meta": {
+      "name": "English — emsenn conversational register",
+      "code": "en-emsenn-leader-0.1",
+      "script": "Latin",
+      "direction": "ltr"
+    },
+    "lexicon": {
+      "determiners": ["a", "an", "the", "this", "that", "these", "those", "some", "each", "every", "our", "my"],
+      "prepositions": ["in", "on", "at", "to", "from", "with", "without", "between", "through", "across", "under", "over", "for", "of", "into", "toward", "as"],
+      "pronouns": ["i", "me", "my", "we", "us", "our", "you", "your", "it", "its", "they", "them", "their", "this", "that"],
+      "conjunctions": ["and", "or", "but", "because", "so", "then", "while", "regardless"],
+      "auxiliaries": ["can", "could", "should", "would", "will", "may", "might", "must", "do", "does", "did", "have", "has", "had"],
+      "copula": ["am", "is", "are", "was", "were", "be", "being", "been"]
+    },
+    "morphology": {
+      "suffixRules": [
+        {"pattern": "^(need|want|use|stand|take|provide|parse|set|profit|move|switch|miss|keep|derive|contract|own|map|recover|translate|preserve|reduce|increase)(s|ed|ing)?$", "tag": "verb"},
+        {"pattern": "(ed|ing)$", "tag": "verb"},
+        {"pattern": "(ous|ive|al|ic|able|ible|ful|less)$", "tag": "adjective"}
+      ],
+      "numberSuffixPattern": "s$",
+      "verbFormRules": [],
+      "numberWords": ["one", "two", "three", "four"]
+    },
+    "reference": {
+      "pronouns": {
+        "i": {"person": 1, "number": "sg"},
+        "we": {"person": 1, "number": "pl"},
+        "you": {"person": 2, "number": "unknown"},
+        "it": {"person": 3, "number": "sg"},
+        "they": {"person": 3, "number": "pl"}
+      },
+      "nameGender": {}
+    },
+    "wordOrder": "SVO",
+    "grammar": {
+      "kind": "communicating.language-grammar-profile",
+      "wordOrder": "SVO",
+      "alignment": "nominative-accusative",
+      "headDirectionality": {
+        "determiner": "left",
+        "adjective": "left",
+        "subject": "left",
+        "object": "right",
+        "adposition": "left"
+      },
+      "roleStrategies": [
+        {"relation": "nsubj", "by": "position", "direction": "left", "distance": "nearest"},
+        {"relation": "dobj", "by": "position", "direction": "right", "distance": "nearest"}
+      ],
+      "morphology": {
+        "type": "mixed",
+        "caseMarking": "none",
+        "agreement": "weak"
+      },
+      "segmentation": {
+        "sentenceBoundary": "punctuation",
+        "wordBoundary": "space"
+      }
+    },
+    "attachment": {
+      "determiner": "left",
+      "adjective": "left",
+      "subject": "left",
+      "object": "right"
+    },
+    "segmentation": {
+      "sentenceTerminatorPattern": "[.!?]",
+      "abbreviations": ["e.g", "i.e", "lol"]
+    }
+  },
+  "witnessJournal": [
+    {"entity": "register:emsenn-leader", "attribute": "preserves", "value": "frame-switching"},
+    {"entity": "register:emsenn-leader", "attribute": "preserves", "value": "explicit-vagueness"},
+    {"entity": "register:emsenn-leader", "attribute": "preserves", "value": "idea-vs-direction-distinction"}
+  ]
+}

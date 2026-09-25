@@ -1,0 +1,6 @@
+---
+id: 42aecdd9-69e1-48d4-8689-68f51159f1d1
+title: Biotic pump of atmospheric moisture as driver of the hydrological cycle on land
+date-created: 2025-10-06
+---
+

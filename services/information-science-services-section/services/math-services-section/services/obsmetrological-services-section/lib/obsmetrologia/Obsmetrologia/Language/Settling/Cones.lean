@@ -1,0 +1,121 @@
+import Obsmetrologia.Language.Settling
+import Obsmetrologia.Language.Positing.Evidence
+import Obsmetrologia.Language.Positing.Valuation
+
+/-!
+# The two cones and the void
+
+**Owner ruling 2026-09-21.** A charged valuation (`CValuation`) assigns each
+predication cell a `Charged`, not a bare `Charge`: value plus evidence.
+Settling a charged valuation under a closure can be read two ways, and they
+are genuinely different cones:
+
+* **`settle`**, the *unit* cone: close the value exactly as measured — the
+  least the givens force.
+* **`brim`**, the *counit* cone: first presume every free side to present
+  (`Charged.presumeFree`), *then* close — the most the givens allow.
+
+`Charge.Closure` (`Language/Settling.lean`) is a closure on one charge
+(`op`, `infl`, `mono`, `idem`), and `Charge.settle c seed := c.op seed`; there
+is no valuation-level closure operator here, so both cones are **pointwise**:
+apply the one-charge closure at each cell, to the cell's own `settle`/`brim`
+input value. `settle_le_brim` records that the unit cone never outruns the
+counit cone — presumption only climbs (`presumeFree_ge`), and closing is
+monotone (`c.mono`).
+
+**The void** (`Void`) is where the two cones disagree — the cells whose
+charge is still under-determined by what has actually been measured. A bare
+articulated cell is void on its claim side under the identity-ish closure
+`joinClosure kBot` (`articulate_void`): measured, it is only `potential`;
+presumed, it climbs to `stable`. A *cancelled* conflict — both sides
+witnessed, meeting to ⊥ₖ in value — is not void (`cancelled_not_void`):
+there is no free side left for presumption to raise, so the two cones agree
+on the spot. The monograph's reading (2026-06-17): **the void is space**
+(`Void`, the gap between the cones at a cell) and **the apex is time** (the
+settling chain climbing a cell from its unit toward its counit as more is
+measured).
+-/
+
+namespace Obsmetrologia
+
+/-- A charged valuation: each predication cell carries a `Charged` — value
+plus evidence — not a bare charge. -/
+abbrev CValuation := PredicationCell → Charged
+
+namespace CValuation
+
+/-- Forget the evidence: the bare-charge valuation underlying a charged one. -/
+def value (v : CValuation) : Valuation := fun φ => (v φ).value
+
+/-- **The unit cone**: close the measured value exactly — the least the
+givens force. Pointwise, since `Charge.Closure` closes one charge at a time. -/
+def settle (c : Charge.Closure) (v : CValuation) : Valuation :=
+  fun φ => Charge.settle c (v φ).value
+
+/-- **The counit cone**: presume every free side to present, then close — the
+most the givens allow. -/
+def brim (c : Charge.Closure) (v : CValuation) : Valuation :=
+  fun φ => Charge.settle c (Charged.presumeFree (v φ)).value
+
+/-- The unit cone never outruns the counit cone: presumption only climbs, and
+closing is monotone. -/
+theorem settle_le_brim (c : Charge.Closure) (v : CValuation) (φ : PredicationCell) :
+    Charge.KLE (settle c v φ) (brim c v φ) :=
+  c.mono (v φ).value (Charged.presumeFree (v φ)).value (Charged.presumeFree_ge (v φ))
+
+/-- **The void**: the cells the two cones disagree on — the slack, the
+under-determined. Space, in the monograph's reading. -/
+def Void (c : Charge.Closure) (v : CValuation) (φ : PredicationCell) : Prop :=
+  settle c v φ ≠ brim c v φ
+
+/-- A cell is void exactly when the counit cone fails to sit back down at the
+unit cone — since the unit cone is always below the counit cone, they differ
+exactly when the counit cone is not `≤ₖ` the unit cone. -/
+theorem void_iff (c : Charge.Closure) (v : CValuation) (φ : PredicationCell) :
+    Void c v φ ↔ ¬ Charge.KLE (brim c v φ) (settle c v φ) := by
+  constructor
+  · intro hvoid hle
+    exact hvoid (Charge.kle_antisymm _ _ (settle_le_brim c v φ) hle)
+  · intro hnle heq
+    apply hnle
+    rw [← heq]
+    exact Charge.kle_refl (settle c v φ)
+
+/-- When both sides already carry a witness, presumption changes nothing
+(`presumeFree_of_full`), so the two cones agree: a fully-witnessed cell is
+never void. -/
+theorem not_void_of_full (c : Charge.Closure) (v : CValuation) (φ : PredicationCell)
+    (h1 : (v φ).evidence.1 ≠ []) (h2 : (v φ).evidence.2 ≠ []) : ¬ Void c v φ := by
+  intro hvoid
+  apply hvoid
+  show Charge.settle c (v φ).value = Charge.settle c (Charged.presumeFree (v φ)).value
+  rw [Charged.presumeFree_of_full (v φ) h1 h2]
+
+/-- **A bare articulated cell is void on its claim side.** Measured, it is
+only `potential` (token witnessed, claim free); presumed, the free claim side
+climbs to `stable`. The constant valuation, under `joinClosure kBot`
+(closing changes nothing further once already climbed): unit = potential,
+counit = stable. -/
+theorem articulate_void (u : Utterance) (φ : PredicationCell) :
+    Void (Charge.joinClosure Charge.kBot)
+      (fun _ => Charged.ofCell (Articulating.Cell.articulate u)) φ := by
+  show Charge.tTop ≠ Charge.kTop
+  intro h
+  cases h
+
+/-- **A cancelled conflict is not void.** Both sides witnessed (the token
+side by the articulation, the claim side by the supplied counter-witness),
+meeting to ⊥ₖ in value — but there is no *free* side left for presumption to
+raise, so the two cones already agree. -/
+theorem cancelled_not_void (u : Utterance) (w : Token) (φ : PredicationCell) :
+    ¬ Void (Charge.joinClosure Charge.kBot)
+      (fun _ => Charged.meetK (Charged.ofCell (Articulating.Cell.articulate u))
+        ⟨.active, ([], [w])⟩) φ := by
+  apply not_void_of_full
+  · show u.token :: ([] : Slot) ≠ []
+    exact List.cons_ne_nil _ _
+  · show w :: ([] : Slot) ≠ []
+    exact List.cons_ne_nil _ _
+
+end CValuation
+end Obsmetrologia

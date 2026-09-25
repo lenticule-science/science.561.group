@@ -1,0 +1,82 @@
+\subsection{Majorization descent and the \(\kappa=\omega\) optimization regime}
+
+\begin{theorem}[The majorization scheme carrier]\label{thm:majorization-scheme}\lean{Obsmetrologia.Optimization.Majorization.MajorizationScheme}\leanok\uses{thm:value-category, thm:optimization-is-settling}
+A value into \(\mathcal{V}\), a two-argument minorant lying under that value and agreeing with it
+on the diagonal, and a step maximizing the minorant at its anchor. The improvement operator of
+\ref{thm:optimization-is-settling} is required idempotent; this carrier drops idempotence and
+generates the improvement from the minorant instead.
+\end{theorem}
+
+\begin{theorem}[The majorization step is inflationary]\label{thm:majorization-step-inflationary}\lean{Obsmetrologia.Optimization.Majorization.MajorizationScheme.value_le_step}\leanok\uses{thm:majorization-scheme}
+\(\mathrm{value}\,z \le_{\mathcal{V}} \mathrm{value}\,(\mathrm{step}\,z)\), by
+\(\mathrm{value}\,z = \mathrm{minorant}\,z\,z \le_{\mathcal{V}} \mathrm{minorant}\,(\mathrm{step}\,z)\,z
+\le_{\mathcal{V}} \mathrm{value}\,(\mathrm{step}\,z)\). The derivation uses the order alone.
+\end{theorem}
+
+\begin{theorem}[The orbit is a chain in the value order]\label{thm:majorization-orbit-chain}\lean{Obsmetrologia.Optimization.Majorization.MajorizationScheme.value_orbit_monotone}\leanok\uses{thm:majorization-step-inflationary}
+For \(m \le n\), \(\mathrm{value}\,(\mathrm{orbit}\,\mathrm{seed}\,m) \le_{\mathcal{V}}
+\mathrm{value}\,(\mathrm{orbit}\,\mathrm{seed}\,n)\).
+\end{theorem}
+
+\begin{theorem}[A quiescent point's orbit is constant]\label{thm:majorization-quiescent-orbit-const}\lean{Obsmetrologia.Optimization.Majorization.MajorizationScheme.orbit_of_quiescent}\leanok\uses{thm:majorization-scheme}
+If \(\mathrm{step}\,x = x\) then \(\mathrm{orbit}\,x\,n = x\) for every \(n\).
+\end{theorem}
+
+\begin{theorem}[The settled scheme carrier]\label{thm:settled-scheme-carrier}\lean{Obsmetrologia.Optimization.Majorization.MajorizationScheme.SettledScheme}\leanok\uses{thm:majorization-orbit-chain}
+A majorization scheme with a limit map whose value is a least upper bound of the orbit's values and
+which lands on a quiescent point. \(\mathcal{V}\) carries a partial order and a seed, not joins, so
+this least-upper-bound data is taken as fields rather than derived.
+\end{theorem}
+
+\begin{theorem}[Re-settling a settled seed fixes its value]\label{thm:settled-limit-value-idempotent}\lean{Obsmetrologia.Optimization.Majorization.MajorizationScheme.SettledScheme.limit_value_idempotent}\leanok\uses{thm:settled-scheme-carrier, thm:majorization-quiescent-orbit-const}
+\(\mathrm{value}\,(\mathrm{limit}\,(\mathrm{limit}\,\mathrm{seed})) =
+\mathrm{value}\,(\mathrm{limit}\,\mathrm{seed})\). The idempotence
+\ref{thm:optimization-is-settling} requires of its improvement operator holds at the \(\omega\)-limit
+for a step that does not have it.
+\end{theorem}
+
+\begin{theorem}[The \(\omega\)-orbit settles the scheme]\label{thm:settled-orbit-scott-regime}\lean{Obsmetrologia.Optimization.Majorization.MajorizationScheme.SettledScheme.settled_orbit_is_scott_regime}\leanok\uses{thm:settled-limit-value-idempotent, thm:majorization-orbit-chain, thm:reals-are-scott-settling-completion}
+The bundle: the orbit's values ascend; the seed lies under the limit; the limit is a step fixed
+point; the limit's value is the least upper bound of the orbit's values; and re-settling the limit
+fixes its value.
+\end{theorem}
+
+\begin{theorem}[The limit is monotone in the seed's value]\label{thm:majorization-limit-monotone}\notready\uses{thm:settled-scheme-carrier}
+\emph{(Open frontier.)} \(\mathrm{value}\,\mathrm{seed} \le_{\mathcal{V}}
+\mathrm{value}\,\mathrm{seed}'\) should give \(\mathrm{value}\,(\mathrm{limit}\,\mathrm{seed})
+\le_{\mathcal{V}} \mathrm{value}\,(\mathrm{limit}\,\mathrm{seed}')\). This does not follow from the
+\ref{thm:settled-scheme-carrier} fields and is not proved there; the missing content is a
+comparison of the two orbits step by step, which the step's maximizing property does not supply
+because the two orbits have different anchors.
+\end{theorem}
+
+\begin{theorem}[A settled scheme induces a value closure]\label{thm:majorization-yields-vclosure}\notready\uses{thm:majorization-limit-monotone, thm:settled-limit-value-idempotent, thm:optimization-is-settling}
+\emph{(Open frontier.)} With \ref{thm:majorization-limit-monotone} in hand, the settled limit should
+present a \(\mathcal{V}\)-closure on the reachable values, exhibiting a settled majorization scheme
+as an optimization problem in the sense of \ref{thm:optimization-is-settling} whose optimum is the
+\(\omega\)-limit. The obstruction is that the step acts on points, not on values, so the induced
+endomap on \(\mathcal{V}\) is well defined only on the image of the value map.
+\end{theorem}
+
+\begin{theorem}[Shortest-path distance is the \([0,\infty]\)-quantale settling]\label{thm:shortest-path-quantale-settling}\notready\uses{thm:optimization-is-settling, thm:internal-real-carrier}
+\emph{(Open frontier.)} The corpus's continuous-valued-settling node names the Lawvere-quantale case
+\(\mathcal{V}=[0,\infty]\) a metric settling whose closure operator is iterated relaxation to
+minimal distance. The all-pairs shortest-path distance on a finite graph should be that closure's
+fixed point over the internal reals.
+\end{theorem}
+
+\begin{theorem}[Kamada--Kawai stress is a majorization scheme]\label{thm:kk-stress-is-majorization-scheme}\notready\uses{thm:majorization-scheme, thm:shortest-path-quantale-settling, thm:internal-real-carrier}
+\emph{(Open frontier.)} For a finite graph with distances from
+\ref{thm:shortest-path-quantale-settling}, the stress \(\sigma(X)=\sum_{i<j} w_{ij}(\lVert x_i-x_j
+\rVert - d_{ij})^2\) with \(\mathcal{V}\) the reversed stress order, the Cauchy--Schwarz minorant
+of its cross term, and the Guttman transform as step, should instantiate
+\ref{thm:majorization-scheme}. The two obligations are the minorant inequality and the Guttman
+transform's maximizing property; both need the inner-product layer over the internal reals.
+\end{theorem}
+
+\begin{theorem}[The Kamada--Kawai layout is a \(\kappa=\omega\) settling]\label{thm:kk-layout-is-scott-settling}\notready\uses{thm:kk-stress-is-majorization-scheme, thm:settled-orbit-scott-regime, thm:majorization-yields-vclosure}
+\emph{(Open frontier.)} Composing the above, the Kamada--Kawai layout is the \(\omega\)-limit of the
+stress-majorization orbit, placing it in the Scott-continuous regime the continuous-valued-settling
+node admits as \(\kappa=\infty\) with explicit countable-rate convergence. The rate itself is not
+addressed by any node above.
+\end{theorem}
