@@ -1,3 +1,8 @@
+# On the public host: l-space.561.group is served from the repository machine over the tailnet.
 l-space.561.group {
-	reverse_proxy 127.0.0.1:18848
+	reverse_proxy 100.125.205.105:18848 {
+		transport http {
+			forward_proxy_url socks5://127.0.0.1:1055
+		}
+	}
 }

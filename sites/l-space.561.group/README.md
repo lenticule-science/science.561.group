@@ -6,7 +6,7 @@ The Lenticule Science knowledge garden, at `https://l-space.561.group`.
 - **SPACE** means **Semantic Position Arranging Conceptual Elements**.
 - **TUFTE** means **Tiling User Form Topology Engine**.
 
-L-Space is a VICTOR site. `victor.config.mjs`, pointed at the Lenticule Science
+L-Space is a VICTOR site. `static-site-publisher.config.mjs`, pointed at the Lenticule Science
 section, is the whole application; this package carries no code that belongs to
 L-Space. What it composes is owned elsewhere:
 
@@ -41,19 +41,31 @@ npm test
 The forest is 22,000 rooms. A build takes about two minutes inside six
 gigabytes; `NODE_OPTIONS=--max-old-space-size=6144` is set in the unit.
 
+## Assistants
+
+`/mcp` is the garden as an MCP server. To connect ChatGPT, Claude or any MCP client, give it the
+URL `https://l-space.561.group/mcp`. The client finds the garden's authorization server and
+registers itself. The reader signs in the same way as on the site (Google for allowlisted
+addresses, Discord for islanders) and then approves the client on a consent page. Every admitted
+reader can use `search` and `fetch`, the pair ChatGPT expects of a knowledge source, and the
+`vault_*` tools that read what the notes say. Only the author also sees the write tools.
+
 ## Deployment
 
-`deploy/l-space.service` runs `victor serve --release` on `127.0.0.1:18848` for
-the rootless Caddy service on `cold-red-gate` (`deploy/Caddyfile`). Its runtime
-environment file, mode `0600`, names the public origin and holds the provider
-credentials; nothing secret is committed. Per-reader state, review rows and
-Discord sessions, lives in one SQLite database at `LSPACE_DATABASE_PATH`,
-opened through the Cloudflare D1 contract so the same tables serve a D1
-deployment unchanged.
+`deploy/l-space.service` runs `static-site-publisher serve --release` on `127.0.0.1:18848` on
+the machine that holds the repository (`bare-cedar-fog`). A build of the forest needs about six
+gigabytes, more than the public host has. The public host's Caddy reaches the site over the
+tailnet (`deploy/Caddyfile`).
+
+The runtime environment file, mode `0600`, names the public origin and holds the provider
+credentials; nothing secret is committed. Per-reader state (review rows and Discord sessions)
+lives in one SQLite database at `LSPACE_DATABASE_PATH`. It is opened through the Cloudflare D1
+contract, so the same tables would serve a D1 deployment unchanged. The authorization server's
+grants live beside it in `oauth/` (or at `LSPACE_OAUTH_STATE`).
 
 | Variable | Meaning |
 | --- | --- |
-| `PUBLIC_BASE_URL` | The public origin identity providers redirect back to. |
+| `PUBLIC_BASE_URL` | The public origin identity providers redirect back to; also the issuer and the resource's origin. |
 | `SESSION_SECRET` | Signs sessions and seals confidential cookies; rotating it signs everyone out. |
 | `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET` | The Google OAuth client. |
 | `LSPACE_ALLOWED_EMAILS` | Comma-separated addresses admitted through Google. Empty admits nobody. |
@@ -62,8 +74,8 @@ deployment unchanged.
 | `DISCORD_GUILD_ID`, `TURNTIDE_ISLANDER_ROLE_ID` | The exact guild and role snowflakes; names are never authorization keys. |
 | `DISCORD_BOT_TOKEN`, `DISCORD_PUBLIC_KEY` | Re-observe membership for command sessions; verify Discord interactions. |
 | `LSPACE_DATABASE_PATH` | The SQLite database for per-reader state. |
-| `GEODE_AUTHORING_ROOT`, `GEODE_AUTHORING_REGION` | The live checkout GEODE admits Markdown from. |
+| `LSPACE_OAUTH_STATE` | Where the authorization server keeps clients and grants. |
+| `GEODE_AUTHORING_ROOT`, `GEODE_AUTHORING_REGION` | The live checkout GEODE admits Markdown from; `/mcp` reads the same archive. |
 
-Local source-corpus retrieval is a separate capability: the repository's
-`l-space` MCP entry runs the standalone Python/SQLite server documented in
-`dev/docs/science-knowledge.md`. It does not initialize or duplicate this site.
+Locally, the repository's `.mcp.json` `l-space` entry runs CAIRN's stdio MCP server
+(`knowledge-system-server/apps/mcp-stdio.mjs`), with the same tools over the whole services tree.

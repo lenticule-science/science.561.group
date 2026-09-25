@@ -1,27 +1,22 @@
 [Unit]
-Description=L-Space: the Lenticule Science knowledge garden, served by VICTOR
+Description=L-Space: the Lenticule Science knowledge garden, served by VICTOR, with its MCP endpoint
 After=network-online.target
 Wants=network-online.target
 
 [Service]
 Type=simple
-WorkingDirectory=/home/emsenn/services/l-space-source/lib/emsenn/services/561-group/services/science-services-section/sites/l-space.561.group
-# The site is its configuration. VICTOR builds the release from the science
-# section at start and serves it: no drafts, no watcher, nothing bespoke.
-ExecStart=/usr/bin/node node_modules/.bin/static-site-publisher serve ../.. --config=./static-site-publisher.config.mjs --release --host=127.0.0.1 --port=18848
-# Public origin, allowlists, provider credentials, and the state path are in
-# the runtime environment file, mode 0600. Nothing secret is in this unit.
-EnvironmentFile=/home/emsenn/services/l-space/runtime.env
+WorkingDirectory=/home/emsenn/info/lib/emsenn/services/561-group/services/science-services-section/sites/l-space.561.group
+# The site is its configuration. VICTOR builds the release from the science section at start and
+# serves it with the admission, VaultMaze, GEODE, the authorization server and /mcp.
+ExecStart=/home/emsenn/.local/bin/node node_modules/.bin/static-site-publisher serve ../.. --config=./static-site-publisher.config.mjs --release --host=127.0.0.1 --port=18848
+# Public origin, allowlists and provider credentials are in the environment file, mode 0600.
+EnvironmentFile=/home/emsenn/.config/561-group/l-space.env
 Environment=NODE_OPTIONS=--max-old-space-size=6144
-Environment=LSPACE_DATABASE_PATH=/home/emsenn/services/l-space/state/l-space.sqlite
-Environment=GEODE_AUTHORING_ROOT=/home/emsenn/services/l-space-source/lib/emsenn/services/561-group/services/science-services-section
-Restart=always
-RestartSec=2
-NoNewPrivileges=true
-PrivateTmp=true
-ProtectSystem=strict
-ProtectHome=read-only
-ReadWritePaths=/home/emsenn/services/l-space/state /home/emsenn/services/l-space-source
+Environment=LSPACE_DATABASE_PATH=/home/emsenn/.local/state/561-group/l-space/l-space.sqlite
+Environment=GEODE_AUTHORING_ROOT=/home/emsenn/info/lib/emsenn/services/561-group/services/science-services-section
+Restart=on-failure
+RestartSec=10
+TimeoutStartSec=600
 
 [Install]
 WantedBy=default.target

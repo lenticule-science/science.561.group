@@ -108,5 +108,5 @@ test('the deployment unit serves the release through VICTOR and nothing else', a
   assert.doesNotMatch(unit, /worker\.mjs|adapter\.mjs|LSPACE_WORKER_MODULE/u);
   assert.doesNotMatch(unit, /\/home\/emsenn\/services\/l-space\/victor\.config\.mjs/u);
   const caddy = await readFile(new URL('../deploy/Caddyfile', import.meta.url), 'utf8');
-  assert.match(caddy, /reverse_proxy 127\.0\.0\.1:18848/u);
+  assert.match(caddy, /reverse_proxy 100\.125\.205\.105:18848/u);
 });
