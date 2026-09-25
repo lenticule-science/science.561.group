@@ -10,9 +10,9 @@ import { applyMigrations } from '@red-cup-engineering/cloudflare-d1-service/migr
 import { createSqliteD1 } from '@red-cup-engineering/cloudflare-d1-service/sqlite';
 import { ADMISSION_MIGRATIONS } from '@red-cup-engineering/computer-web-server/admission/schema';
 import { createWebAdmissionApplication } from '@red-cup-engineering/computer-web-server/admission/application';
-import { createVaultMazeApplication } from '@red-cup-engineering/knowledge-vault-reader/application';
-import { createVaultMazeProjector } from '@red-cup-engineering/knowledge-vault-reader/projector';
-import { REVIEW_STORE_SCHEMA, createReviewStore } from '@red-cup-engineering/knowledge-vault-reader/review-store';
+import { createVaultMazeApplication } from '@red-cup-engineering/graphical-knowledge-game-server/application';
+import { createVaultMazeProjector } from '@red-cup-engineering/graphical-knowledge-game-server/projector';
+import { REVIEW_STORE_SCHEMA, createReviewStore } from '@red-cup-engineering/graphical-knowledge-game-server/review-store';
 
 /** The content root: the Lenticule Science section, every `content/` tree beneath it. */
 export const SCIENCE_ROOT = fileURLToPath(new URL('../../', import.meta.url));
@@ -114,8 +114,8 @@ export async function applications(context, environment = process.env) {
     // GEODE is loaded only where an authoring checkout is configured: a reading
     // deployment carries no workbench in memory.
     const [{ createGeodeVictorApplicationFactory }, { createGeodeAuthoring }] = await Promise.all([
-      import('@red-cup-engineering/knowledge-vault-web-server/server'),
-      import('@red-cup-engineering/knowledge-vault-web-server/authoring'),
+      import('@red-cup-engineering/graphical-knowledge-system-server/server'),
+      import('@red-cup-engineering/graphical-knowledge-system-server/authoring'),
     ]);
     const workspace = await createGeodeAuthoring({
       root: authoringRoot,
