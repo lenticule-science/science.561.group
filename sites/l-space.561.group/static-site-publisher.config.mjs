@@ -2,14 +2,23 @@
 // section, is the whole application: the vault catalog dialect admits every
 // note of the science forest, VaultMaze projects the reading experience and
 // keeps review state, GEODE is the workbench the author is admitted to, and
-// the admission service decides who may read what. Nothing here is code that
-// belongs to L-Space; it is what L-Space says about itself.
+// the admission service decides who may read what. The garden is also an MCP server at /mcp,
+// for assistants a reader connects (ChatGPT, Claude): its own authorization server signs them in
+// through the same admission, and every admitted reader may search and read while only the
+// author may write. Nothing here is code that belongs to L-Space; it is what L-Space says about
+// itself.
 
+import { createHash } from 'node:crypto';
+import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { applyMigrations } from '@red-cup-engineering/cloudflare-d1-service/migrations';
 import { createSqliteD1 } from '@red-cup-engineering/cloudflare-d1-service/sqlite';
 import { ADMISSION_MIGRATIONS } from '@red-cup-engineering/computer-web-server/admission/schema';
-import { createWebAdmissionApplication } from '@red-cup-engineering/computer-web-server/admission/application';
+import { SIGN_IN_PATH, createWebAdmissionApplication, defaultPublicRoute } from '@red-cup-engineering/computer-web-server/admission/application';
+import { openArchive } from '@red-cup-engineering/knowledge-system-server/archive';
+import { searchAndFetchTools, vaultMcpTools } from '@red-cup-engineering/knowledge-system-server/mcp-tools';
+import { mcpResource } from '@red-cup-engineering/mcp-engineering-services-section/http';
+import { createAuthorizationServer, createJsonFileGrantStore } from '@red-cup-engineering/oauth-services-section/authorization-server';
 import { createVaultMazeApplication } from '@red-cup-engineering/graphical-knowledge-game-server/application';
 import { createVaultMazeProjector } from '@red-cup-engineering/graphical-knowledge-game-server/projector';
 import { REVIEW_STORE_SCHEMA, createReviewStore } from '@red-cup-engineering/graphical-knowledge-game-server/review-store';
@@ -87,6 +96,13 @@ export function admissionProviders(environment = process.env) {
   return providers;
 }
 
+/** The routes the MCP and OAuth faces answer for themselves: a bearer token or a sign-in redirect, never the admission gate's 401. */
+const SELF_ADMITTING = new Set(['/mcp', '/oauth/authorize', '/oauth/token', '/oauth/register', '/oauth/revoke']);
+export const lSpacePublicRoute = (path, method) => SELF_ADMITTING.has(path) || path.startsWith('/.well-known/oauth-') || path === '/.well-known/openid-configuration' || defaultPublicRoute(path, method);
+
+/** Where a reader opens a room of the garden: VaultMaze addresses a room by the SHA-256 of its path. */
+export const roomUrl = (base, path) => `${base}/#/room/${createHash('sha256').update(path).digest('hex')}`;
+
 /** Per-reader state: review rows and Discord sessions, in one SQLite database at the configured path. */
 export async function openState(environment = process.env) {
   const database = createSqliteD1(setting('LSPACE_DATABASE_PATH', environment) ?? ':memory:');
@@ -104,12 +120,14 @@ export async function applications(context, environment = process.env) {
     // GEODE's writes are the author's; its reads are any admitted reader's; /ns/ is public by doctrine.
     authorRoute: (path, method) => method === 'POST' && (path === '/api/action' || path === '/api/refresh'),
     realm: 'l-space.561.group',
+    publicRoute: lSpacePublicRoute,
   });
   const composed = [
     admission,
     createVaultMazeApplication({ reviews: createReviewStore(database), subjectOf: (ctx) => admission.subjectOf(ctx) }),
   ];
   const authoringRoot = setting('GEODE_AUTHORING_ROOT', environment);
+  let archive;
   if (authoringRoot !== undefined) {
     // GEODE is loaded only where an authoring checkout is configured: a reading
     // deployment carries no workbench in memory.
@@ -123,8 +141,45 @@ export async function applications(context, environment = process.env) {
       excludes: [...EXCLUDED_SEGMENTS],
     });
     composed.push(createGeodeVictorApplicationFactory({ workspace })(context));
+    archive = workspace.archive;
   }
+  composed.push(...mcpApplications({ admission, environment, archive: () => (archive ??= openArchive({ root: SCIENCE_ROOT, excludes: [...EXCLUDED_SEGMENTS] })) }));
   return composed;
+}
+
+/**
+ * The garden's MCP server and the authorization server that admits assistants to it. A token is
+ * issued only to someone the admission service admits, is bound to this garden's /mcp, and
+ * carries whether its holder is the author; only the author sees the write tools.
+ */
+export function mcpApplications({ admission, environment = process.env, archive }) {
+  const base = publicBaseUrl(environment) ?? 'https://l-space.561.group';
+  const resource = `${base}/mcp`;
+  const stateDirectory = setting('LSPACE_OAUTH_STATE', environment)
+    ?? (setting('LSPACE_DATABASE_PATH', environment) ? join(dirname(setting('LSPACE_DATABASE_PATH', environment)), 'oauth') : undefined);
+  const authorization = createAuthorizationServer({
+    issuer: base,
+    name: 'L-Space',
+    resources: [resource],
+    ...(stateDirectory === undefined ? {} : { store: createJsonFileGrantStore(stateDirectory) }),
+    authenticate: async (context) => {
+      const principal = await admission.identifyContext(context);
+      return principal === null ? undefined : { subject: `${principal.provider}:${principal.subjectHash}`, name: principal.label, ...(principal.email === undefined ? {} : { email: principal.email }), author: principal.author === true };
+    },
+    loginUrl: (returnTo) => `${SIGN_IN_PATH}?return_to=${encodeURIComponent(returnTo)}`,
+  });
+  const mcp = mcpResource({
+    name: 'l-space',
+    title: 'L-Space',
+    version: '0.3.0',
+    instructions: 'L-Space is the Lenticule Science knowledge garden: some twenty thousand Markdown notes, glossary terms and articles. Use search then fetch to find and read notes; the vault_* tools read what the notes say as relations, cells and concepts, and (for the author) write them.',
+    tools: [...searchAndFetchTools({ documentUrl: (path) => roomUrl(base, path) }), ...vaultMcpTools],
+    realm: 'l-space.561.group',
+    resourceMetadataUrl: `${base}/.well-known/oauth-protected-resource/mcp`,
+    verifyToken: (token) => authorization.verifyToken(token, { resource }),
+    bind: ({ principal }) => ({ archive, canWrite: principal?.principal?.author === true }),
+  });
+  return [authorization.app, { resources: [mcp] }];
 }
 
 export default {
