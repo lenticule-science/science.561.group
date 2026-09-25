@@ -15,6 +15,7 @@ import { applyMigrations } from '@red-cup-engineering/cloudflare-d1-service/migr
 import { createSqliteD1 } from '@red-cup-engineering/cloudflare-d1-service/sqlite';
 import { ADMISSION_MIGRATIONS } from '@red-cup-engineering/computer-web-server/admission/schema';
 import { SIGN_IN_PATH, createWebAdmissionApplication, defaultPublicRoute } from '@red-cup-engineering/computer-web-server/admission/application';
+import { createPrincipalRegistry } from '@red-cup-engineering/computer-web-server/admission/principals';
 import { openArchive } from '@red-cup-engineering/knowledge-system-server/archive';
 import { searchAndFetchTools, vaultMcpTools } from '@red-cup-engineering/knowledge-system-server/mcp-tools';
 import { mcpResource } from '@red-cup-engineering/mcp-engineering-services-section/http';
@@ -36,6 +37,13 @@ export const ATTRIBUTE_FIELDS = Object.freeze([
 
 /** The one address that may author. Discord principals, including one belonging to the author, are readers. */
 export const AUTHOR_EMAIL = 'morgan.sennhauser@gmail.com';
+
+/** The author's own password and Hive sign-ins, which may author too. */
+export const AUTHOR_SUBJECTS = Object.freeze(['password:emsenn', 'hive:emsenn0']);
+
+/** Where the deployment keeps its state: principals.json, Hive login nonces, the authorization server's grants. */
+const stateDirectory = (environment) => setting('LSPACE_STATE_DIR', environment)
+  ?? (setting('LSPACE_DATABASE_PATH', environment) ? dirname(setting('LSPACE_DATABASE_PATH', environment)) : undefined);
 
 const setting = (name, environment = process.env) => {
   const value = environment[name];
@@ -63,6 +71,13 @@ export function admissionProviders(environment = process.env) {
       sessionCookie: 'l_space_session',
       transactionCookie: 'l_space_oauth',
     };
+  }
+  // A username and password, or a Hive Keychain signature, for the people principals.json admits.
+  const stateDir = stateDirectory(environment);
+  if (sessionSecret && stateDir !== undefined) {
+    const registry = createPrincipalRegistry({ stateDir });
+    providers.password = { sessionSecret, registry, publicBaseUrl: publicBaseUrl(environment), sessionCookie: 'l_space_password_session' };
+    providers.hive = { sessionSecret, stateDir, appName: 'l-space.561.group', registry, sessionCookie: 'l_space_hive_session' };
   }
   const guildId = setting('DISCORD_GUILD_ID', environment);
   const roleId = setting('TURNTIDE_ISLANDER_ROLE_ID', environment);
@@ -120,6 +135,7 @@ export async function applications(context, environment = process.env) {
     // GEODE's writes are the author's; its reads are any admitted reader's; /ns/ is public by doctrine.
     authorRoute: (path, method) => method === 'POST' && (path === '/api/action' || path === '/api/refresh'),
     realm: 'l-space.561.group',
+    authors: setting('LSPACE_AUTHOR_SUBJECTS', environment)?.split(',').map((subject) => subject.trim()) ?? [...AUTHOR_SUBJECTS],
     publicRoute: lSpacePublicRoute,
   });
   const composed = [
@@ -155,13 +171,12 @@ export async function applications(context, environment = process.env) {
 export function mcpApplications({ admission, environment = process.env, archive }) {
   const base = publicBaseUrl(environment) ?? 'https://l-space.561.group';
   const resource = `${base}/mcp`;
-  const stateDirectory = setting('LSPACE_OAUTH_STATE', environment)
-    ?? (setting('LSPACE_DATABASE_PATH', environment) ? join(dirname(setting('LSPACE_DATABASE_PATH', environment)), 'oauth') : undefined);
+  const grants = setting('LSPACE_OAUTH_STATE', environment) ?? (stateDirectory(environment) === undefined ? undefined : join(stateDirectory(environment), 'oauth'));
   const authorization = createAuthorizationServer({
     issuer: base,
     name: 'L-Space',
     resources: [resource],
-    ...(stateDirectory === undefined ? {} : { store: createJsonFileGrantStore(stateDirectory) }),
+    ...(grants === undefined ? {} : { store: createJsonFileGrantStore(grants) }),
     authenticate: async (context) => {
       const principal = await admission.identifyContext(context);
       return principal === null ? undefined : { subject: `${principal.provider}:${principal.subjectHash}`, name: principal.label, ...(principal.email === undefined ? {} : { email: principal.email }), author: principal.author === true };

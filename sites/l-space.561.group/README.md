@@ -21,11 +21,16 @@ L-Space. What it composes is owned elsewhere:
   says `visibility: public`. It also keeps each reader's review state.
 - **GEODE** is the workbench the author is admitted to, mounted as its own
   application over a live checkout when `GEODE_AUTHORING_ROOT` names one.
-- **The web admission service** decides who may read what: Google sign-in with
-  the `LSPACE_ALLOWED_EMAILS` allowlist, Discord admission for current Turntide
-  islanders through user OAuth or the `/l-space-login` command, signed sessions,
-  and the gate over the artifact trees. Only the verified Google principal named
-  by `LSPACE_AUTHOR_EMAIL` may write through GEODE.
+- **The web admission service** decides who may read what, and keeps signed sessions and the
+  gate over the artifact trees. Readers are admitted through:
+  - Google sign-in, for addresses on the `LSPACE_ALLOWED_EMAILS` allowlist;
+  - Discord, for current Turntide islanders, through user OAuth or the `/l-space-login` command;
+  - a username and password, or a Hive Keychain signature, for the people in the state
+    directory's `principals.json`.
+
+  Only the author may write through GEODE or `/mcp`: the verified Google principal named by
+  `LSPACE_AUTHOR_EMAIL`, or a local subject named in `LSPACE_AUTHOR_SUBJECTS` (by default the
+  founder's `password:emsenn` and `hive:emsenn0`).
 
 ## Commands
 
@@ -74,7 +79,9 @@ grants live beside it in `oauth/` (or at `LSPACE_OAUTH_STATE`).
 | `DISCORD_GUILD_ID`, `TURNTIDE_ISLANDER_ROLE_ID` | The exact guild and role snowflakes; names are never authorization keys. |
 | `DISCORD_BOT_TOKEN`, `DISCORD_PUBLIC_KEY` | Re-observe membership for command sessions; verify Discord interactions. |
 | `LSPACE_DATABASE_PATH` | The SQLite database for per-reader state. |
-| `LSPACE_OAUTH_STATE` | Where the authorization server keeps clients and grants. |
+| `LSPACE_STATE_DIR` | `principals.json`, Hive login nonces, and the authorization server's grants (default: beside the database). |
+| `LSPACE_AUTHOR_SUBJECTS` | Comma-separated local subjects who may author. |
+| `LSPACE_OAUTH_STATE` | Where the authorization server keeps clients and grants, when not in the state directory. |
 | `GEODE_AUTHORING_ROOT`, `GEODE_AUTHORING_REGION` | The live checkout GEODE admits Markdown from; `/mcp` reads the same archive. |
 
 Locally, the repository's `.mcp.json` `l-space` entry runs CAIRN's stdio MCP server
