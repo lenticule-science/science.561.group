@@ -8,7 +8,6 @@
     "node": ">=24"
   },
   "scripts": {
-    "start": "node scripts/serve.mjs",
     "test": "node --test test/*.test.mjs"
   },
   "dependencies": {
@@ -23,5 +22,8 @@
     "@red-cup-engineering/mcp-engineering-services-section": "0.1.0",
     "@red-cup-engineering/gemini-notebook-services-section": "0.6.0",
     "@red-cup-engineering/oauth-services-section": "0.1.0"
+  },
+  "exports": {
+    "./site": "./src/site.mjs"
   }
 }
