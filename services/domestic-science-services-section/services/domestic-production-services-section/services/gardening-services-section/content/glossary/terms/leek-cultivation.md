@@ -37,7 +37,3 @@ Freshly harvested leeks store 2-3 weeks in refrigerator in plastic bags. For lon
 ## See also
 
 - [Allium ampeloprasum botanical term](../../../../../../../../natural-science-services-section/services/biological-science-services-section/services/botany-services-section/content/text/glossary/terms/allium-ampeloprasum.md)
-
-## Earlier material
-
-- [Allium ampeloprasum botanical term](../../../../../../../../natural-science-services-section/services/biological-science-services-section/services/botany-services-section/content/text/glossary/terms/allium-ampeloprasum.md)

@@ -47,7 +47,3 @@ Standard walking onions produce white-purple bulbils and moderate foliage. Red E
 ## See also
 
 - [Allium × proliferum botanical term](../../../../../../../../natural-science-services-section/services/biological-science-services-section/services/botany-services-section/content/text/glossary/terms/allium-proliferum.md)
-
-## Earlier material
-
-- [Allium × proliferum botanical term](../../../../../../../../natural-science-services-section/services/biological-science-services-section/services/botany-services-section/content/text/glossary/terms/allium-proliferum.md)

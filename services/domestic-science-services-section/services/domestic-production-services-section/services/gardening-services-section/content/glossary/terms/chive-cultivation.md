@@ -35,7 +35,3 @@ Common chives (*A. schoenoprasum*) is the standard culinary type. Garlic chives 
 ## See also
 
 - [Allium schoenoprasum botanical term](../../../../../../../../natural-science-services-section/services/biological-science-services-section/content/text/documents/articles/notes/2026/04/02/2026-04-02-allium-schoenoprasum.md)
-
-## Earlier material
-
-- [Allium schoenoprasum botanical term](../../../../../../../../natural-science-services-section/services/biological-science-services-section/content/text/documents/articles/notes/2026/04/02/2026-04-02-allium-schoenoprasum.md)
