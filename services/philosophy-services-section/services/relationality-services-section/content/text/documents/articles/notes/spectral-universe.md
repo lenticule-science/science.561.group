@@ -97,7 +97,7 @@ The Spectral Universe is not derived from the [derivation](../../../../relationa
 
 - The derivation's [nucleus](../../../../slop/relationality/ai-generated-relationality/relationality-slop-2026-03-03/terms/index.md) (step 14) and [measurement](../../../../slop/relationality/ai-generated-relationality/relationality-slop-2026-03-03/terms/index.md) (step 17) concern the same domain — how things settle under closure and how observation extracts determinate content.
 - QCHTTopos's trace geometry and quasicrystalline order bear a resemblance to crystallographic structure and spectral decomposition.
-- The Categorical Noether theorem (Theorem 17.4 in the [incitement argument](../../../glossary/concepts/incitement.md)) — every symmetry of the nucleus preserves what is stable under flow — parallels Noether's theorem in physics, which connects symmetries to conserved quantities.
+- The Categorical Noether theorem (Theorem 17.4 in the [incitement argument](../../../glossary/terms/relational-derivation.md)) — every symmetry of the nucleus preserves what is stable under flow — parallels Noether's theorem in physics, which connects symmetries to conserved quantities.
 - If the Spectral Universe's axioms turn out to be structurally isomorphic to some fragment of the derivation or QCHTTopos, that is a result to be proved, not assumed.
 
 Establishing these correspondences is part of the long-term program of showing that all five mathematical systems cohere — that they are independent formalizations of a single relational reality, each approached from different empirical or mathematical ground.

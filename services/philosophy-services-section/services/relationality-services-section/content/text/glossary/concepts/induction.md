@@ -9,7 +9,7 @@ description: Induction is the phenomenon in which completed structure produces n
 
 Induction is the phenomenon in which completed structure produces new properties. When a relational configuration stabilizes, its [closure](closure.md) generates determinations that were not present in the original — new terms, new relations, new conditions that follow necessarily from what has been established.
 
-Induction is the becoming side of determination. Its complement is [incitement](incitement.md) — the being side, where incomplete structure compels further action. The two together form the engine of relational dynamics: incitement drives action forward; induction generates the new structure that results.
+Induction is the becoming side of determination. Its complement is [incitement](../terms/relational-derivation.md) — the being side, where incomplete structure compels further action. The two together form the engine of relational dynamics: incitement drives action forward; induction generates the new structure that results.
 
 In the formal system, induction corresponds to the output of the generative closure operator. Given existing acts and the constructors that operate on them, new acts are induced — earned as [recognitions](recognition.md) that pass all validation rules. The full universe of acts is the least fixed point of this inductive process.
 
@@ -21,6 +21,6 @@ Induction as a named phenomenon becomes visible in [Movement III: Directed Dynam
 
 ## Related
 
-- [Incitement](incitement.md) — the complementary phenomenon
+- [Incitement](../terms/relational-derivation.md) — the complementary phenomenon
 - [Closure](closure.md) — the operator through which induction occurs
 - [Recognition](recognition.md) — what induction produces

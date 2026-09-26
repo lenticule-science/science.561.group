@@ -25,14 +25,14 @@ This open-endedness is consistent with [relational ontology](../../../../../../c
 
 ## Connection to predictive determination
 
-Recursive domain unfolding is closely connected to [predictive determination](predictive-determination.md). Where recursive domain unfolding describes the *fact* that closure exposes new dynamics, predictive determination describes the *capacity* to forecast the shape of the next domain from the structure of the current one. The closed domain does not merely gesture vaguely at what comes next — it indicates the specific form that the next formal extension must take.
+Recursive domain unfolding is closely connected to [predictive determination](./relational-derivation.md). Where recursive domain unfolding describes the *fact* that closure exposes new dynamics, predictive determination describes the *capacity* to forecast the shape of the next domain from the structure of the current one. The closed domain does not merely gesture vaguely at what comes next — it indicates the specific form that the next formal extension must take.
 
 ## Related
 
 - [The Derivation](../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-04/the-derivation.md) — where recursive domain unfolding arises (Phase 9)
-- [Predictive determination](predictive-determination.md) — forecasting the shape of the next domain
+- [Predictive determination](./relational-derivation.md) — forecasting the shape of the next domain
 - [Reflexive equilibrium](../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-04/reflexive-equilibrium.md) — the stabilization within each domain
 - [Closure](../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/phenomena/closure.md) — the general phenomenon of settling
-- [Incitement](../concepts/incitement.md) — the phenomenon of incomplete structure compelling further action
+- [Incitement](./relational-derivation.md) — the phenomenon of incomplete structure compelling further action
 
 ---

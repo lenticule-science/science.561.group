@@ -24,4 +24,4 @@ Reflexion arises at the transition between [Movement II](../../../../services/re
 
 - [Closure](closure.md) — what reflexion settles into
 - [Recognition](recognition.md) — what reflexion produces
-- [Incitement](../../../../services/relationality-services-section/content/text/glossary/concepts/incitement.md) — what drives reflexion (the boundary's incompleteness)
+- [Incitement](../../../../services/relationality-services-section/content/text/glossary/terms/relational-derivation.md) — what drives reflexion (the boundary's incompleteness)

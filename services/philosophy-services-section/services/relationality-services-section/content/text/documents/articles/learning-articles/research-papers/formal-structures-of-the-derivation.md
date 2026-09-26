@@ -78,7 +78,7 @@ At step 14, the derivation produces two operations on the stable structures from
 
 Flow asks: how does this structure change? Nucleus asks: how does this structure settle? Their compatibility is not arbitrary. The derivation forces them into a residuation relationship: applying flow and then settling under nucleus yields the same result as settling first and then flowing. This commutation — which produces [geometry](../../notes/undated/geometry.md) at step 15 — is a consequence of the [adjunction](../../../../../../../../../information-science-services-section/services/math-services-section/services/topology-services-section/content/text/glossary/terms/adjunction.md) between the two operations.
 
-The residuation at the dynamic level recapitulates the residuation at the logical level. Meet combines; implication draws consequences from the combination. Flow transforms; nucleus consolidates the transformation. The structural positions are the same. This recurrence is an instance of what the derivation calls [predictive determination](../../../../glossary/terms/predictive-determination.md): the pattern at one level forecasts the pattern at the next.
+The residuation at the dynamic level recapitulates the residuation at the logical level. Meet combines; implication draws consequences from the combination. Flow transforms; nucleus consolidates the transformation. The structural positions are the same. This recurrence is an instance of what the derivation calls [predictive determination](../../../../glossary/terms/relational-derivation.md): the pattern at one level forecasts the pattern at the next.
 
 ### In the physics (step 17)
 

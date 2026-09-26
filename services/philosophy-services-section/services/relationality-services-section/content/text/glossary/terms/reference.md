@@ -1004,11 +1004,11 @@ Positional Invariance is a [property](../../../sociology/terms/property.md) of [
 
 Predictive Determination is the principle that each closed relational domain forecasts the shape of its successor.
 
-[Predictive Determination](predictive-determination.md) formalizes that each closed relational domain exposes implicit dynamics that compel the emergence of a new domain, and moreover that the architecture of the closing domain enables the system to forecast the necessary shape of its next formal extension. Closure does not merely reveal that something further is needed — it specifies what kind of thing is needed.
+[Predictive Determination](./relational-derivation.md) formalizes that each closed relational domain exposes implicit dynamics that compel the emergence of a new domain, and moreover that the architecture of the closing domain enables the system to forecast the necessary shape of its next formal extension. Closure does not merely reveal that something further is needed — it specifies what kind of thing is needed.
 
 This is visible throughout the derivation: [Coherence](../concepts/coherence.md) (step 1) does not merely leave something undetermined — it specifically leaves undetermined how coherence is sustained, which forecasts [Relating](../../triage/relating.md). [Closure](../concepts/closure.md) (step 3) specifically leaves undetermined what distinguishes the unit from its outside, which forecasts [Bounding](../../../../../../content/text/glossary/terms/bounding.md). Each step's residual undetermination is precise enough to predict the next step's character.
 
-Together with [Recursive Domain Unfolding](../../triage/recursive-domain-unfolding.md), [Predictive Determination](predictive-determination.md) establishes that the derivation is not a series of ad hoc additions but a self-generating sequence: each domain closes in a way that both requires and specifies the next.
+Together with [Recursive Domain Unfolding](../../triage/recursive-domain-unfolding.md), [Predictive Determination](./relational-derivation.md) establishes that the derivation is not a series of ad hoc additions but a self-generating sequence: each domain closes in a way that both requires and specifies the next.
 
 ---
 
@@ -1234,7 +1234,7 @@ The commutation of flow and nucleus — it does not matter whether you first flo
 
 Residuation appears three times because the derivation produces complementary pairs at each level: implication and meet (logic), flow and nucleus (dynamics), evolution and measurement (physics). In each case, one operation cannot be understood without the other, and their compatibility is governed by the same [adjunction](../../../mathematics/disciplines/higher-topos-theory/terms/adjunction.md) structure.
 
-This recurrence is an instance of [Predictive Determination](predictive-determination.md) — the pattern at one level forecasts the pattern at the next.
+This recurrence is an instance of [Predictive Determination](./relational-derivation.md) — the pattern at one level forecasts the pattern at the next.
 
 ---
 
@@ -1339,7 +1339,7 @@ These are not new derivation steps — they are aspects of [Tension](./tension.m
 
 A Term is a position that refers to something within a context.
 
-The derivation has now built a complete relational field: self-sustaining units with boundaries, reflexion, multiplicity, meta-structure, [Recursive Domain Unfolding](../../triage/recursive-domain-unfolding.md), and [Predictive Determination](predictive-determination.md). At this point the relational apparatus hardens into manipulable expressions.
+The derivation has now built a complete relational field: self-sustaining units with boundaries, reflexion, multiplicity, meta-structure, [Recursive Domain Unfolding](../../triage/recursive-domain-unfolding.md), and [Predictive Determination](./relational-derivation.md). At this point the relational apparatus hardens into manipulable expressions.
 
 The field has self-reference (through [Reflexive Sequence](../../triage/reflexive-sequence.md): relating can take itself as subject) and sequential composition (through [Composition](../../triage/composition.md) and [Chain](../../triage/chain.md): forms can be arranged in order). The capacity for self-reference within sequential structure produces [Term](../../documents/articles/notes/undated/term.md) — a position that refers to something within a context. This is where the relational machinery becomes syntax: structures that can be named, combined, and evaluated.
 
@@ -1818,7 +1818,7 @@ The derivation concerns the same domain as all four universes. Its movements pro
 - The geometric cohesion (Movement IV) produces [residuation](../../../../../../content/text/glossary/concepts/residuation.md) — the domain of **QCHTTopos**.
 - The emergent containment (Movement V) produces observables, states, evolution, and [measurement](../../../../../../content/text/glossary/concepts/measurement.md) — the domain of the **Dynamical Universe** (evolution, the Schrodinger picture) and the **Spectral Universe** (measurement, the Heisenberg picture).
 
-The derivation itself is not any of the four universes. It is the philosophical-mathematical argument that articulates why these concepts arise and what [incites](../concepts/incitement.md) each from the previous. The universes are independent formalizations that happen to concern the same domain.
+The derivation itself is not any of the four universes. It is the philosophical-mathematical argument that articulates why these concepts arise and what [incites](./relational-derivation.md) each from the previous. The universes are independent formalizations that happen to concern the same domain.
 
 ## Inducing and inciting
 
@@ -2272,7 +2272,7 @@ This concept is introduced in [Phase 9 (meta-relational coherence)](../../docume
 
 ## How it works
 
-Every phase of the derivation follows the same triadic pattern: an act of determination, a condition of relation, and a structure that formalizes their interplay. Each new structure leaves something undetermined — and that specific undetermined remainder [incites](../concepts/incitement.md) the next phase. The undetermined remainder is not arbitrary. It has a shape given by what was determined. The determination itself constrains what remains.
+Every phase of the derivation follows the same triadic pattern: an act of determination, a condition of relation, and a structure that formalizes their interplay. Each new structure leaves something undetermined — and that specific undetermined remainder [incites](./relational-derivation.md) the next phase. The undetermined remainder is not arbitrary. It has a shape given by what was determined. The determination itself constrains what remains.
 
 At the meta level, this same logic applies to domains as wholes. When a domain closes — when its structural form achieves [reflexive equilibrium](../../../../../../content/text/documents/articles/notes/2026/03/05/2026-03-05-reflexive-equilibrium.md) — the pattern of its closure reveals what kind of domain is needed next. The boundary of the closed domain, the acts of meta-reflexive relating and meta-transcendence, the conditions of meta-expansion — all of these constrain the form of the subsequent domain.
 
@@ -2286,7 +2286,7 @@ This is distinct from both infinite regress (where the same problem recurs witho
 
 - [The Derivation](../../documents/articles/notes/2026/03/02/2026-03-02-triage-the-derivation.md) — where predictive determination arises (Phase 9)
 - [Recursive domain unfolding](../../triage/recursive-domain-unfolding.md) — the phenomenon that predictive determination makes precise
-- [Incitement](../concepts/incitement.md) — the phase-level version of what predictive determination does at the domain level
+- [Incitement](./relational-derivation.md) — the phase-level version of what predictive determination does at the domain level
 - [Reflexive equilibrium](../../../../../../content/text/documents/articles/notes/2026/03/05/2026-03-05-reflexive-equilibrium.md) — the closure that reveals what comes next
 
 ---
@@ -2336,15 +2336,15 @@ This open-endedness is consistent with [relational ontology](../../../../../../c
 
 ## Connection to predictive determination
 
-Recursive domain unfolding is closely connected to [predictive determination](predictive-determination.md). Where recursive domain unfolding describes the *fact* that closure exposes new dynamics, predictive determination describes the *capacity* to forecast the shape of the next domain from the structure of the current one. The closed domain does not merely gesture vaguely at what comes next — it indicates the specific form that the next formal extension must take.
+Recursive domain unfolding is closely connected to [predictive determination](./relational-derivation.md). Where recursive domain unfolding describes the *fact* that closure exposes new dynamics, predictive determination describes the *capacity* to forecast the shape of the next domain from the structure of the current one. The closed domain does not merely gesture vaguely at what comes next — it indicates the specific form that the next formal extension must take.
 
 ## Related
 
 - [The Derivation](../../documents/articles/notes/2026/03/02/2026-03-02-triage-the-derivation.md) — where recursive domain unfolding arises (Phase 9)
-- [Predictive determination](predictive-determination.md) — forecasting the shape of the next domain
+- [Predictive determination](./relational-derivation.md) — forecasting the shape of the next domain
 - [Reflexive equilibrium](../../../../../../content/text/documents/articles/notes/2026/03/05/2026-03-05-reflexive-equilibrium.md) — the stabilization within each domain
 - [Closure](../../phenomena/closure.md) — the general phenomenon of settling
-- [Incitement](../concepts/incitement.md) — the phenomenon of incomplete structure compelling further action
+- [Incitement](./relational-derivation.md) — the phenomenon of incomplete structure compelling further action
 
 ---
 
@@ -2497,7 +2497,7 @@ Each phase follows a triple pattern. Given a structure whose coherence has been 
 2. That determination cannot not derive a **dynamic of relation** — a condition that stabilizes what the act produces.
 3. That relation cannot not derive a **dynamic of structure** — a minimal configuration that formalizes the interplay.
 
-The new structure leaves something undetermined. That undetermined remainder [incites](../concepts/incitement.md) the next phase.
+The new structure leaves something undetermined. That undetermined remainder [incites](./relational-derivation.md) the next phase.
 
 ## The nine phases
 
@@ -2525,7 +2525,7 @@ The nine phases organize into five movements that develop the formal vocabulary 
 
 1. [Logical Origination](../concepts/movements-logical-origination.md) (Phases 1–2) — from the primitive act of distinction through the logical structure of [recognition](../../phenomena/recognition.md)
 2. [Structural Stabilization](../concepts/movements-structural-stabilization.md) (Phases 3–4) — from sustained relating through [closure](../../phenomena/closure.md), boundary, and [balance](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md)
-3. [Directed Dynamics](../concepts/directed-dynamics.md) (Phase 5) — from reflexive relating through directed [flow](../../processes/flow.md) and the two modes of determination ([incitement](../concepts/incitement.md) and [induction](../../phenomena/induction.md))
+3. [Directed Dynamics](../concepts/directed-dynamics.md) (Phase 5) — from reflexive relating through directed [flow](../../processes/flow.md) and the two modes of determination ([incitement](./relational-derivation.md) and [induction](../../phenomena/induction.md))
 4. [Geometric Cohesion](../concepts/movements-geometric-cohesion.md) (Phases 6–7) — from co-presence through the architecture that binds local and global
 5. [Emergent Containment](../concepts/movements-emergent-containment.md) (Phases 8–9) — from the meta-boundary through states, evolution, and [measurement](../../../../../../content/text/glossary/concepts/measurement.md)
 
@@ -2535,7 +2535,7 @@ Each movement identifies correspondences to established mathematics — not as t
 
 - [Relational Ontology](../../../../../../content/text/glossary/terms/relational-ontology.md) — the philosophical claim the derivation demonstrates
 - [The Five Mathematical Systems](five-mathematical-systems.md) — how the derivation connects to four mathematical universes
-- [Incitement](../concepts/incitement.md) — the phenomenon that drives each phase forward
+- [Incitement](./relational-derivation.md) — the phenomenon that drives each phase forward
 - [Induction](../../phenomena/induction.md) — the complementary phenomenon of completed structure producing new properties
 
 ---

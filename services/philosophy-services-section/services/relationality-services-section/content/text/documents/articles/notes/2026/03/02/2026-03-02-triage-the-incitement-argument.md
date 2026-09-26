@@ -124,7 +124,7 @@ naturally in $A, B$. This [adjunction](../../../../../../../mathematics/discipli
 
 *Proof.* By Proposition 5.2, $R$ is idempotent, so $\mathcal{C}_c^R$ is a reflective subcategory. The inclusion $\mathcal{C}_c^R \hookrightarrow \mathcal{C}_c$ admits a left adjoint (restriction to $R$-stable [morphisms](../../../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/morphism.md)). This is the same [adjunction](../../../../../../../mathematics/disciplines/higher-topos-theory/terms/adjunction.md) pattern as in Theorem 3.2, applied one categorical level up. $\square$
 
-**Theorem 8.2** ([Predictive determination](../../../../../../glossary/terms/predictive-determination.md)). The structure of the $R$-stable subcategory is determined by the original category: $\mathcal{C}_c^R$ inherits all limits, colimits, and closure operations from $\mathcal{C}_c$, restricted to $R$-stable [morphisms](../../../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/morphism.md). Each closure at one level predicts the structure of the next.
+**Theorem 8.2** ([Predictive determination](../../../../../../glossary/terms/relational-derivation.md)). The structure of the $R$-stable subcategory is determined by the original category: $\mathcal{C}_c^R$ inherits all limits, colimits, and closure operations from $\mathcal{C}_c$, restricted to $R$-stable [morphisms](../../../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/morphism.md). Each closure at one level predicts the structure of the next.
 
 ---
 

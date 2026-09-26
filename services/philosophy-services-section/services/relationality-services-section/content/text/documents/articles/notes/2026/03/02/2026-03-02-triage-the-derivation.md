@@ -119,7 +119,7 @@ The field recapitulates the unit's journey. It must acquire a boundary (step 8),
 
 The meta-boundary distinguishes the field from what lies beyond it. Meta-folding incorporates that distinction into the field's own structure. The field becomes reflexive at the meta-level.
 
-This recurrence produces two properties that govern everything that follows. [Recursive domain unfolding](../../../../../../terms/recursive-domain-unfolding.md) --- each closure at one level exposes the next domain that must be formalized. The act of closing a structure does not end the derivation; it reveals what the closed structure has not yet addressed. [Predictive determination](../../../../../../glossary/terms/predictive-determination.md) --- each closure forecasts the shape of its successor. The derivation does not stumble blindly from step to step; the nature of each closure determines what must come next.
+This recurrence produces two properties that govern everything that follows. [Recursive domain unfolding](../../../../../../terms/recursive-domain-unfolding.md) --- each closure at one level exposes the next domain that must be formalized. The act of closing a structure does not end the derivation; it reveals what the closed structure has not yet addressed. [Predictive determination](../../../../../../glossary/terms/relational-derivation.md) --- each closure forecasts the shape of its successor. The derivation does not stumble blindly from step to step; the nature of each closure determines what must come next.
 
 These two properties --- unfolding and prediction --- are the engine of the derivation's middle and late stages. Every subsequent step is both exposed by the previous closure and anticipated by the previous closure's structure.
 

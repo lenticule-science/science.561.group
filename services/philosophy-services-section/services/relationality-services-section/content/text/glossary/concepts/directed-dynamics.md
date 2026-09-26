@@ -42,7 +42,7 @@ With flow defined and logical reasoning extended through dynamic residuation, be
 
 At this level, the two complementary modes of determination become visible. They are two sides of the same relational dynamic, distinguished by their direction.
 
-[Incitement](incitement.md) is the being side: what incomplete structure compels as the next act of determination. When a relational structure leaves something undetermined, that gap is not mere absence — it is an active demand for resolution. The incompleteness itself compels further action. This is why the derivation proceeds at all: each phase does not merely happen to be followed by the next; the incompleteness of each phase incites the next.
+[Incitement](../terms/relational-derivation.md) is the being side: what incomplete structure compels as the next act of determination. When a relational structure leaves something undetermined, that gap is not mere absence — it is an active demand for resolution. The incompleteness itself compels further action. This is why the derivation proceeds at all: each phase does not merely happen to be followed by the next; the incompleteness of each phase incites the next.
 
 [Induction](../../phenomena/induction.md) is the becoming side: what completed structure produces as output. When an act of determination is carried through, it produces new structure — structure that did not exist before the act. This new structure is not arbitrary; it is the specific resolution of the specific incompleteness that incited it.
 
@@ -54,7 +54,7 @@ Determining reflexive relating, reflexive relation, and reflexive form provides 
 
 **Terms:** [Flow](../../terms/flow.md), [Flow-Counit](../../terms/flow-counit.md), [Flow-Comult](../../terms/flow-comult.md), [KZ-Lax](../../terms/kz-lax.md), [Preserves-Core](../../terms/preserves-core.md)
 
-**Phenomena:** [Incitement](incitement.md) — what incomplete structure compels. [Induction](../../phenomena/induction.md) — what completed structure produces.
+**Phenomena:** [Incitement](../terms/relational-derivation.md) — what incomplete structure compels. [Induction](../../phenomena/induction.md) — what completed structure produces.
 
 **Processes:** [Flow](../../processes/flow.md) — directed continuation of stability.
 

@@ -96,8 +96,8 @@ These documents articulate the framework — not just what concepts exist but ho
 ### Cross-cutting (present at every level)
 
 - [coherence.md](../../../../../../glossary/terms/coherence.md) — the condition achieved at each level; its incompleteness incites the next
-- [incitement.md](../../../../../../glossary/concepts/incitement.md) — what incomplete structure compels ("it cannot not derive")
-- [predictive-determination.md](../../../../../../glossary/terms/predictive-determination.md) — the formal procedure for "it cannot not derive"
+- [incitement.md](../../../../../../glossary/terms/relational-derivation.md) — what incomplete structure compels ("it cannot not derive")
+- [predictive-determination.md](../../../../../../glossary/terms/relational-derivation.md) — the formal procedure for "it cannot not derive"
 - [irreducible-asymmetry.md](2026-03-05-irreducible-asymmetry.md) — the recursive dynamic preventing final closure
 - [reflexive-equilibrium.md](../../../../../../triage/relationality-2/ai-generated-relationality/relationality-slop-2026-03-05/reflexive-equilibrium.md) — form-stability across infinite reflexive layers
 - [domain-emergence.md](2026-03-05-domain-emergence.md) — new relational domains arising from closure of existing ones
@@ -110,8 +110,8 @@ These documents articulate the framework — not just what concepts exist but ho
 
 ### Organizational
 
-- [triadic-engine.md](../../../../../../glossary/terms/triadic-engine.md) — act → condition → structure
-- [five-movements.md](../../../../../../glossary/terms/five-movements.md) — the canonical organization
+- [triadic-engine.md](../../../../../../glossary/terms/relational-derivation.md) — act → condition → structure
+- [five-movements.md](../../../../../../glossary/terms/relational-derivation.md) — the canonical organization
 
 ### Cross-Reference
 

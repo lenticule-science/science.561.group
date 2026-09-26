@@ -44,7 +44,7 @@ The recurrence of boundary-then-reflexion at the field level is not a repetition
 
 Think of building a house. You finish the foundation (closure), and that exposes the need for walls (next domain). You finish the walls, and that exposes the need for a roof. Each completion is also a beginning.
 
-**[Predictive Determination](../../../../../../glossary/terms/predictive-determination.md):** Each closed relational domain forecasts the shape of its successor. The unit's journey from closure through boundary to reflexion *predicted* the field's journey through the same sequence. The pattern of resolution at one level tells you what to expect at the next.
+**[Predictive Determination](../../../../../../glossary/terms/relational-derivation.md):** Each closed relational domain forecasts the shape of its successor. The unit's journey from closure through boundary to reflexion *predicted* the field's journey through the same sequence. The pattern of resolution at one level tells you what to expect at the next.
 
 These two principles are why the derivation is not an arbitrary sequence. Each step is forced, and the pattern of forcing recurs across levels. The derivation has a fractal quality — the same structural motifs appear at different scales.
 
