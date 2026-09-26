@@ -87,6 +87,4 @@ By [settling-monotonicity](../../documents/articles/humanities/theories/math/the
 
 Capability revocation is simpler (any witness-producer can assert a negative capability witness). Authority revocation requires the revocation morphism's felicity condition (the revoker must hold the power to revoke), matching the governance structure's constraint that authority cannot be removed arbitrarily.
 
-## Earlier material
-
 $$\langle R_i, \texttt{active-holder}, O\rangle = \mathbf{t} \;\Longrightarrow\; \langle R_i^\iota, \texttt{active-holder}, A\rangle = \mathbf{t}.$$

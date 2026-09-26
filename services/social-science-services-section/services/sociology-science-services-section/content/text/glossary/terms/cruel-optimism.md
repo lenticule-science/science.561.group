@@ -27,9 +27,3 @@ visibility: public
     doi = {10.2307/j.ctv1220p4w},
 }
 ```
-
-## Earlier material
-
-\## Earlier material
-
-\`\`\` {.bibtex canonical="yes"}

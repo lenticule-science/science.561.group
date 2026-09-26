@@ -25,59 +25,16 @@ references:
     year: 2025
     publication: Mutual Aid Disaster Relief
     url: https://mutualaiddisasterrelief.org/about/
----
-
-Survival programs are practical programs that meet immediate needs while
-building collective capacity and political consciousness [@madrprograms2024].
-
-Within emergent disaster response, the term matters because it names a
-method that refuses the split between relief and organizing. Supplies
-distribution, community kitchens, wellness centers, infrastructure, and
-other practical supports are treated as ways of helping people survive
-while also strengthening self-determination and long-term resilience
-[@madrabout2025; @madrprograms2024].
-
-
----
-
-<!-- source: content/critical-theory/domains/anarchism/domains/disaster-response/domains/emergent-disaster-response/terms/survival-programs.md -->
-
-## Imported source: content/critical-theory/domains/anarchism/domains/disaster-response/domains/emergent-disaster-response/terms/survival-programs.md
-
-﻿---
 title: "Survival Programs"
-date-created: 2026-03-08T00:00:00
 authors:
   - claude
 type: term
-aliases:
-  - "survival program"
-  - "survival programs"
-tags:
-  - MutualAid
-  - DisasterStudies
-  - DirectAction
-  - PoliticalSociology
-description: "A mutual-aid term for practical programs that meet immediate needs while building collective capacity and consciousness."
 defines:
   - "survival program"
   - "survival programs"
 cites:
   - madrprograms2024
   - madrabout2025
-references:
-  madrprograms2024:
-    authors: ["Mutual Aid Disaster Relief"]
-    title: "Survival Programs"
-    publication: "Mutual Aid Disaster Relief"
-    year: 2024
-    url: "https://mutualaiddisasterrelief.org/programs/"
-  madrabout2025:
-    authors: ["Mutual Aid Disaster Relief"]
-    title: "About"
-    publication: "Mutual Aid Disaster Relief"
-    year: 2025
-    url: "https://mutualaiddisasterrelief.org/about/"
 ---
 
 Survival programs are practical programs that meet immediate needs while
@@ -89,8 +46,6 @@ distribution, community kitchens, wellness centers, infrastructure, and
 other practical supports are treated as ways of helping people survive
 while also strengthening self-determination and long-term resilience
 [@madrabout2025; @madrprograms2024].
-
-## Related terms
 
 - [Solidarity Not Charity](../../../../../../content/text/glossary/terms/solidarity-not-charity.md) - the principle
   that distinguishes survival programs from paternalistic aid

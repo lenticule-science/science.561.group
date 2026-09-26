@@ -11,6 +11,7 @@ featured-texts:
   - describing-genring-as-nationalist-identity-production
   - describing-the-lineage-of-evidentiary-structuration-of-state-repression-technologies
   - puritan-covenants-and-us-intelligence
+component-of: sociology
 ---
 
 The study of human society — its institutions, structures, power relations, and the forces that produce and contest social order. The library's sociological content is organized into domains that correspond to real disciplines, schools, lineages, and topics within the field. Each domain's `_index.md` declares what kind of domain it is.
@@ -28,17 +29,3 @@ The study of human society — its institutions, structures, power relations, an
 ## Charter alignment
 
 Sociology in this library is not neutral. The project's stated commitments — Black Liberation and Indigenous Sovereignty — are present substantively in the [black-radical-tradition](../../../../triage/theories/critical-theory/theories/black-radical-tradition), [abolition](../../../../triage/theories/critical-theory/theories/abolition), and [settler-colonialism](../../../../triage/theories/critical-theory/theories/povinellian/theories/settler-colonialism) subdomains, and gestured at in [indigenous-anarchism](../../../../triage/theories/critical-theory/theories/anarchism/theories/indigenous-anarchism).
-
-
----
-
-<!-- source: archive/texts/_index.from-library.md -->
-
-## Imported source: archive/texts/_index.from-library.md
-
----
-title: "Texts"
-component-of: sociology
----
-
-Long-form texts (essays, surveys, working notes) belonging to sociology. The current entries: [`activitypub-insurrection-deadzone`](../2025/12/05/2025-12-05-triage-activitypub-insurrection-deadzone.md), [`communitas-and-immunitas`](../../../../../../../../content/text/documents/articles/notes/communitas-and-immunitas.md), [`describing-genring-as-nationalist-identity-production`](../../../../triage/describing-genring-as-nationalist-identity-production.md), [`describing-the-lineage-of-evidentiary-structuration-of-state-repression-technologies`](describing-the-lineage-of-evidentiary-structuration-of-state-repression-technologies.md), [`diagnosing-continuity-fear-through-pre-holiday-retail-contraction`](../diagnosing-continuity-fear-through-pre-holiday-retail-contraction.md), [`discord-and-patreon-as-organization`](../../../../../../../../../engineering-science-services-section/services/computer-science-services-section/services/computer-systems-science-services-section/services/web-science-services-section/services/web-platform-science-services-section/services/web2-platform-science-services-section/services/web2-social-platform-science-services-section/services/discord-science-services-section/content/text/documents/articles/notes/discord-and-patreon-as-organization.md), [`discord-patreon-organization`](../../../../../../../../../engineering-science-services-section/services/computer-science-services-section/services/computer-systems-science-services-section/services/web-science-services-section/services/web-platform-science-services-section/services/web2-platform-science-services-section/services/web2-social-platform-science-services-section/services/discord-science-services-section/content/text/documents/articles/notes/undated/discord-patreon-organization.md), [`municipal-decisions-follow-capital-not-ideology`](../2026/03/31/2026-03-31-municipal-decisions-follow-capital-not-ideology.md), [`puritan-covenants-and-us-intelligence`](../puritan-covenants-and-us-intelligence.md).

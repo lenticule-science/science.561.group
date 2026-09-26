@@ -15,10 +15,3 @@ type: domain
 ---
 
 The study of human society — its institutions, structures, power relations, and the forces that produce and contest social order. The library's sociological content is organized into domains that correspond to real disciplines, schools, lineages, and topics within the field. Each domain's `_index.md` declares what kind of domain it is.
-
-## Earlier material
-
-Settled child domains live under [`content/`](../../../../services/sociology-science-services-section/content/text/triage/content). Material that is still
-source-shaped, duplicate, unmerged, or awaiting a settled proof path remains
-under [`archive/`](../../../../services/social-theory-science-services-section/content/text/documents/articles/notes/undated/index.md). The local filing rule is documented in
-[`docs/guides/organizing-sociology-by-proof-path.md`](../../../../services/sociology-science-services-section/content/text/triage/docs/guides/organizing-sociology-by-proof-path.md).

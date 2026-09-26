@@ -32,8 +32,6 @@ only when a discount, relationship, or other financing consideration justifies
 that cost. The timing of payables relative to receivable collection helps
 determine the entity's cash conversion cycle and working-capital need.
 
-## Earlier material
-
 It's a liability — the entity has an obligation to pay.
 On the balance sheet, accounts payable appears under current liabilities because these obligations typically come due within 30 to 90 days.
 Under [accrual accounting](accrual-accounting.md), the expense is recorded when the goods or services are received, not when the entity writes the check.

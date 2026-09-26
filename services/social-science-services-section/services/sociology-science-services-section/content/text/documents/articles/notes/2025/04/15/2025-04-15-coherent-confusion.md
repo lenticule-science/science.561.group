@@ -5,6 +5,17 @@ date-created: 2025-04-15T00:00:00
 aliases:
   - "coherent confusion"
 description: "The governance condition in which subjects are confused but functional, producing the interpretive labor that sustains the system precisely because it never resolves."
+type: "[[term]]"
+date: "[[2025-04-15]]"
+signal: true
+signals:
+  - "[[old-notes/Groundhog Autonomous Zone/tri/Governing by Confusion]]"
+method:
+  - "[[define emergent concept from signals]]"
+field:
+  - "[[telemetric paradigm]]"
+yield:
+  - "[[coherent confusion]]"
 ---
 
 After the April 2025 tariff announcement, commentators produced thousands of explanations: it was a negotiating tactic, a policy error, a deliberate shock, a market test, a distraction. These explanations contradicted each other, yet each felt plausible. People remained confused — but they kept interpreting, kept producing takes, kept engaging. The system did not need them to understand. It needed them to keep trying.
@@ -34,26 +45,3 @@ Interpretation does not just stabilize the system — it costs something. Franco
 [Georges Bataille](../../../../../../../../../../../references/people/georges-bataille.md)'s concept of the accursed share — surplus energy that must be expended — completes the picture. In cybernetic capitalism, what must be burned is sensemaking itself. The interpretive strain is not accidental. It is constitutive. The system needs it. The subject who endures interpretive pressure becomes more signal-rich, more visible to governance. Their burnout is not dysfunction — it is yield.
 
 This is why "Governing by confusion" concludes: "this piece didn't escape the loop, it executed it." The act of analyzing coherent confusion is itself an instance of coherent confusion. The writer who explains the mechanism is performing the interpretive labor the mechanism requires. Reading the explanation is performing it too. The loop closes when you feel it.
-
-
----
-
-<!-- source: content/politics/governance/archive/coherent-confusion.md -->
-
-## Imported source: content/politics/governance/archive/coherent-confusion.md
-
----
-type: "[[term]]"
-date: "[[2025-04-15]]"
-signal: true
-signals:
-  - "[[old-notes/Groundhog Autonomous Zone/tri/Governing by Confusion]]"
-method:
-  - "[[define emergent concept from signals]]"
-field:
-  - "[[telemetric paradigm]]"
-yield:
-  - "[[coherent confusion]]"
----
-
-***Coherent confusion*** is a [[governance condition]] which emerges under [[modulative governance]] in which [[ambiguity]] is used as a [[telemetric method|method]] of [[social control]]. It is a part of [[modulative governance]].

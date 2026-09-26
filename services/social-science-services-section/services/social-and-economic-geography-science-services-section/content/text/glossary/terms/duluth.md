@@ -9,7 +9,3 @@ locates: place
 Duluth, Minnesota sits at the western end of Lake Superior, on a steep ridge above the lake's shore. It is paired across the harbor with Superior, Wisconsin; together the two form the Duluth–Superior port, the busiest on the Great Lakes by tonnage. The city's drinking water, industry, climate, economy, and notably cool local conditions are shaped by the lake.
 
 This term collects empirical facts and open questions about Duluth specifically — civic infrastructure, water and weather, neighborhoods and institutions — sourced from city, state, and federal records and from local journalism. Generalizations that would apply to any port city or Lake Superior settlement belong in [Geography](./geography.md).
-
-## Earlier material
-
-This theory collects empirical facts and open questions about Duluth specifically — civic infrastructure, water and weather, neighborhoods and institutions — sourced from city, state, and federal records and from local journalism. Generalizations that would apply to any port city or any Lake Superior settlement belong upstream in [`geography/`](../../../../../../../natural-science-services-section/services/earth-science-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/land/continent/nation/_index.md), not here.

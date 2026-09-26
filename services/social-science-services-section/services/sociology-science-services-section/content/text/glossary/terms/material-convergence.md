@@ -22,50 +22,13 @@ references:
     issued:
       - year: 2010
     URL: https://udspace.udel.edu/items/d050fc11-cbbe-4ded-b4dd-79c3257e871c
----
-
-Material convergence is the influx of goods and supplies toward an
-impacted area after disaster [@wachtendorf2010].
-
-The term matters because incoming supplies can solve urgent problems
-while also creating reception, storage, sorting, and distribution
-bottlenecks. Wachtendorf and coauthors show that Katrina revealed how
-catastrophic conditions intensify this problem and force responders to
-manage convergence actively rather than assume that more goods always
-mean better relief [@wachtendorf2010].
-
-
----
-
-<!-- source: content/critical-theory/domains/anarchism/domains/disaster-response/domains/emergent-disaster-response/terms/material-convergence.md -->
-
-## Imported source: content/critical-theory/domains/anarchism/domains/disaster-response/domains/emergent-disaster-response/terms/material-convergence.md
-
-﻿---
-title: "Material Convergence"
-date-created: 2026-03-08T00:00:00
 authors:
   - claude
 type: term
-aliases:
-  - "material convergence"
-tags:
-  - DisasterStudies
-  - Logistics
-  - CollectiveBehavior
-  - EmergencyResponse
-description: "A disaster-response term for the influx of goods and supplies toward an impacted area."
 defines:
   - "material convergence"
 cites:
   - wachtendorf2010
-references:
-  wachtendorf2010:
-    authors: ["Tricia Wachtendorf", "Bethany Brown", "Jose Holguin-Veras", "Satish Ukkusuri"]
-    title: "Catastrophe Characteristics and Their Impact on Critical Supply Chains: Problematizing Material Convergence and Management Following Hurricane Katrina"
-    publication: "Disaster Research Center"
-    year: 2010
-    url: "https://udspace.udel.edu/items/d050fc11-cbbe-4ded-b4dd-79c3257e871c"
 ---
 
 Material convergence is the influx of goods and supplies toward an
@@ -77,8 +40,6 @@ bottlenecks. Wachtendorf and coauthors show that Katrina revealed how
 catastrophic conditions intensify this problem and force responders to
 manage convergence actively rather than assume that more goods always
 mean better relief [@wachtendorf2010].
-
-## Related terms
 
 - [Convergence Behavior](../../../../../../content/text/glossary/terms/convergence-behavior.md) - the broader movement
   of people, information, and things toward disaster zones

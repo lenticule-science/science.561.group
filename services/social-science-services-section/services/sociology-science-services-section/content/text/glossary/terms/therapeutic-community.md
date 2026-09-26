@@ -19,50 +19,13 @@ references:
     issued:
       - year: 1977
     URL: https://udspace.udel.edu/handle/19716/409
----
-
-Therapeutic community is a disaster-sociology term for the temporary
-emergence of intensified cooperation, mutual support, and shared purpose
-after catastrophe [@gurney1977].
-
-The term matters because it counters the image of disaster as automatic
-social breakdown. Patrick Gurney's review of the concept, building on
-Charles Fritz and Allen Barton, treats it as a way of naming the new
-social order that can arise when communities adapt to disaster-created
-needs [@gurney1977].
-
-
----
-
-<!-- source: content/critical-theory/domains/anarchism/domains/disaster-response/domains/emergent-disaster-response/terms/therapeutic-community.md -->
-
-## Imported source: content/critical-theory/domains/anarchism/domains/disaster-response/domains/emergent-disaster-response/terms/therapeutic-community.md
-
-﻿---
-title: "Therapeutic Community"
-date-created: 2026-03-08T00:00:00
 authors:
   - claude
 type: term
-aliases:
-  - "therapeutic community"
-tags:
-  - DisasterStudies
-  - CollectiveBehavior
-  - Community
-  - Recovery
-description: "A disaster-sociology term for the temporary emergence of intensified cooperation and shared purpose after catastrophe."
 defines:
   - "therapeutic community"
 cites:
   - gurney1977
-references:
-  gurney1977:
-    authors: ["Patrick J. Gurney"]
-    title: "The Therapeutic Community Revisited: Some Suggested Modifications And Their Implications"
-    publication: "Disaster Research Center"
-    year: 1977
-    url: "https://udspace.udel.edu/handle/19716/409"
 ---
 
 Therapeutic community is a disaster-sociology term for the temporary
@@ -74,8 +37,6 @@ social breakdown. Patrick Gurney's review of the concept, building on
 Charles Fritz and Allen Barton, treats it as a way of naming the new
 social order that can arise when communities adapt to disaster-created
 needs [@gurney1977].
-
-## Related terms
 
 - [Emergent citizen groups](../../../../../../content/text/glossary/terms/emergent-citizen-groups.md) - one form the
   therapeutic community can take in organized action

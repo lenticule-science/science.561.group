@@ -23,6 +23,9 @@ This sequence is not unique to any political position. emsenn identifies it recu
 
 [Fascist grammar](../../../glossary/terms/fascist-grammar.md) is a six-step rhetorical sequence:
 
+The steps need not appear in this order, and not all declared required need to be present in every instance.
+The grammar is recognizable by its pattern, not by a checklist.
+
 1. **Crisis**: The present is declared unbearable. Not merely imperfect — fundamentally broken.
 2. **Pure community**: There exists (or existed) a community of authentic belonging, uncorrupted by the forces that produced the crisis.
 3. **Corrupt enemy**: An identifiable group is responsible for the corruption of the community.
@@ -75,10 +78,3 @@ Both are responses to the same structural exposure: liberalism's constitutive co
 ## What comes next
 
 The next lesson, [Californication and affect](./californication-and-affect.md), examines how the affective mechanism closes the cybernetic loop — how structural contradiction is reframed as personal crisis through genre calibration, feeling rules, and the displacement of systemic incoherence into internal management.
-
-## Earlier material
-
-[Fascist grammar](../../../glossary/terms/fascist-grammar.md) is a six-step rhetorical sequence:
-
-The steps need not appear in this order, and not all declared required need to be present in every instance.
-The grammar is recognizable by its pattern, not by a checklist.

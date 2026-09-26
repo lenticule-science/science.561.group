@@ -79,10 +79,6 @@ Beyond the normative-operational coupling and four-state evidential structure no
 
 This narrative anchors the *parallel-formalisms* commitment of predicated-work. Subsequent narratives can pick specific translations to develop in detail (the Heyting-Bilattice translation is partially worked in [office-formalism-equivalence](../../research/2026/07/31/lenticule-import/library/social-sciences/working/theories/predicated-governance/theorems/office-formalism-equivalence.md); the Free-algebra-Bilattice translation is sketched here but not formalized; the Heyting-Free translation is left open). The charts are not in competition; they are the result of importing three mature traditions into one work vocabulary, and the synthesis work is to make their translations precise.
 
-## Earlier material
-
 - **Bilattice-substrate** sees temporal evolution and epistemic state best.
   Settling-monotonicity, four-regime classification, and the bilattice's four-valued evidence structure are first-class.
   Static-structure questions (offices, authorities, terms) require additional scaffolding (jural-relation entities, sub-bases for jurisdiction, etc.).
-
-- **Bilattice-substrate** sees temporal evolution and epistemic state best. Settling-monotonicity, four-regime classification, and the bilattice's four-valued evidence structure are first-class. Static-structure questions (offices, authorities, terms) require additional scaffolding (jural-relation entities, sub-bases for jurisdiction, etc.).

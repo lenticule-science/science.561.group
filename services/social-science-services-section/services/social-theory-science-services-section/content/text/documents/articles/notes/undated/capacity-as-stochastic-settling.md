@@ -15,7 +15,7 @@ The open question [capacity-as-substrate-property](capacity-as-substrate-propert
 The [capacity term](../../../../../../../../content/text/glossary/terms/capacity.md) gives two dimensions:
 
 - **Throughput capacity**: tasks completed per settling cycle.
-- **Concurrent capacity**: tasks in the potential state simultaneously.
+- **Concurrent capacity**: tasks in the active state simultaneously.
 
 Little's Law relates them: $L = \lambda W$ (average in-system count equals throughput rate times average cycle time). At high utilization, queue lengths grow nonlinearly; slack (uncommitted capacity) is required for variance absorption.
 
@@ -53,11 +53,6 @@ The work vocabulary's requirement for slack (uncommitted capacity to absorb vari
 ## Connection to quantale-enriched dispatch
 
 The [quantale-enriched-dispatch-for-work question](../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/quantale-enriched-dispatch-for-work.md) asks whether dispatch can use richer value domains (cost, latency, confidence). The stochastic capacity question is a specialization: the value domain is the probability semiring, and the richer match-strength is "probability of successful task completion given current agent load." These are the same extension applied to different aspects (dispatch-matching vs. capacity-estimation).
-
-## Earlier material
-
-- **Throughput capacity**: tasks completed per settling cycle.
-- **Concurrent capacity**: tasks in the active state simultaneously.
 
 - States $S$ = $\{\texttt{idle}, \texttt{active}_{T_1}, \ldots, \texttt{active}_{T_k}, \texttt{blocked}, \texttt{recovering}\}$ — the agent's operational states.
 - Transition kernel $P(s, s')$ = probability of moving from state $s$ to state $s'$ in one settling step.

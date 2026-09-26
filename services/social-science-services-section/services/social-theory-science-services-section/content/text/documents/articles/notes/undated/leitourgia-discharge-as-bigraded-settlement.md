@@ -39,6 +39,4 @@ The anomalous state "forward-active only" ($\mathrm{fs}(\Lambda) = \mathbf{t}$, 
 
 The office-as-double-settlement object requires recognition (backward) and induction (forward) to both settle at $\mathbf{t}$ for full incumbency. The leitourgia requires form-enactment (backward) and forward-stability (forward) to both settle at $\mathbf{t}$ for full discharge. The structural parallel is exact: both are bigraded settlement conditions with one backward and one forward predicate. The difference is the temporal direction of the obligation: office incumbency is a forward-looking obligation taken on; leitourgia discharge is a backward-accumulating recognition of past performance plus its forward propagation.
 
-## Earlier material
-
 $$v_{\tau^*}(\langle \iota, \texttt{form-enacted}\rangle) = \mathbf{t} \;\wedge\; v_{\tau^*}(\langle \iota, \texttt{forward-stable}\rangle) = \mathbf{t}$$

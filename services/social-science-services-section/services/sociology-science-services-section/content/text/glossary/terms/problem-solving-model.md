@@ -17,50 +17,14 @@ references:
     year: 1995
     publication: Disaster Research Center
     url: https://udspace.udel.edu/items/95207dd1-376d-4e2d-bce0-673e0471d32b
----
-
-Problem-solving model is E. L. Quarantelli's term for a disaster
-coordination approach oriented toward adaptive response to unfolding
-problems rather than rigid command and control [@quarantelli1995].
-
-The term matters because disaster environments generate novelty,
-organizational diversity, and emergent behavior that cannot be fully
-managed through predetermined chains of command. A problem-solving model
-therefore treats improvisation, information-sharing, and flexible role
-formation as necessary parts of effective coordination [@quarantelli1995].
-
-
----
-
-<!-- source: content/critical-theory/domains/anarchism/domains/disaster-response/domains/emergent-disaster-response/terms/problem-solving-model.md -->
-
-## Imported source: content/critical-theory/domains/anarchism/domains/disaster-response/domains/emergent-disaster-response/terms/problem-solving-model.md
-
-﻿---
 title: "Problem-Solving Model"
-date-created: 2026-03-08T00:00:00
 authors:
   - claude
 type: term
-aliases:
-  - "problem-solving model"
-tags:
-  - DisasterStudies
-  - Methods
-  - EmergencyResponse
-  - CollectiveBehavior
-description: "A disaster-management term for coordination oriented toward adaptive problem solving rather than rigid command."
 defines:
   - "problem-solving model"
 cites:
   - quarantelli1995
-references:
-  quarantelli1995:
-    authors: ["E. L. Quarantelli"]
-    title: "Disasters Are Different, Therefore Planning For And Managing Them Requires Innovative As Well As Traditional Behaviors"
-    publication: "Disaster Research Center"
-    year: 1995
-    url: "https://udspace.udel.edu/items/95207dd1-376d-4e2d-bce0-673e0471d32b"
 ---
 
 Problem-solving model is E. L. Quarantelli's term for a disaster
@@ -72,8 +36,6 @@ organizational diversity, and emergent behavior that cannot be fully
 managed through predetermined chains of command. A problem-solving model
 therefore treats improvisation, information-sharing, and flexible role
 formation as necessary parts of effective coordination [@quarantelli1995].
-
-## Related terms
 
 - [Studying Emergent Disaster Response](../../../../services/critical-theory-science-services-section/services/anarchism-services-section/services/disaster-response-services-section/services/emergent-disaster-response-services-section/content/text/documents/articles/notes/studying-emergent-disaster-response.md) -
   a methods text that uses this contrast to explain the school

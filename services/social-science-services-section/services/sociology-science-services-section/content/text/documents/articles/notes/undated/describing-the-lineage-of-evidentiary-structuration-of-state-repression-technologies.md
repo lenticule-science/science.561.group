@@ -1734,14 +1734,3 @@ For policymakers, organizations, and communities, this means that surveillance r
 \<div id="refs"\>
 
 \</div\>
-
-## Earlier material
-
-<style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
-  <div class="csl-entry">NO_ITEM_DATA:USAPATRIOTAct</div>
-  <div class="csl-entry">NO_ITEM_DATA:AGGuidelines2008</div>
-  <div class="csl-entry">NO_ITEM_DATA:FBIDIOG2008</div>
-  <div class="csl-entry">NO_ITEM_DATA:ChurchCommiteeReport</div>
-  <div class="csl-entry">NO_ITEM_DATA:FISA</div>
-  <div class="csl-entry">NO_ITEM_DATA:USAPATRIOTAct215_2001</div>
-</div>
