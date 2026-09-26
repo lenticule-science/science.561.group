@@ -1,6 +1,15 @@
 ---
 name: enrich-sociological-content
 description: Classify a sociological page (term / concept / school / lesson / text) and add the typed relations its content supports — `cites:`, `produces:`, `sustains:`, `integrates:`, etc.
+requires-capabilities:
+  - read
+  - path-corpus
+  - markdown-search-workbench
+  - term-intension
+  - read-term-catalog
+  - markdown-metadata-workbench
+  - relate-relations
+  - write
 ---
 
 # Enrich Sociological Content

@@ -1,6 +1,13 @@
 ---
 name: learn-logic
 description: Learn propositional and first-order logic — syntax, semantics, proof systems — sufficient to state which logic is in use and why its entry conditions apply.
+requires-capabilities:
+  - read
+  - path-corpus
+  - markdown-search-workbench
+  - term-intension
+  - read-term-catalog
+  - math-laws
 ---
 
 # Learn Logic

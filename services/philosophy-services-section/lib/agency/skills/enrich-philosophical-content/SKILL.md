@@ -1,6 +1,15 @@
 ---
 name: enrich-philosophical-content
 description: Classify a philosophical page (claim / argument / objection / response) and add the typed relations its content actually supports — without inventing relations.
+requires-capabilities:
+  - read
+  - path-corpus
+  - markdown-search-workbench
+  - term-intension
+  - read-term-catalog
+  - markdown-metadata-workbench
+  - relate-relations
+  - write
 ---
 
 # Enrich Philosophical Content

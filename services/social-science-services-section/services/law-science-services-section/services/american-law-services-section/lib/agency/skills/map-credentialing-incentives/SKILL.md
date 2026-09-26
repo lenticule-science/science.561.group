@@ -1,6 +1,15 @@
 ---
 name: map-credentialing-incentives
 description: Map the incentive structure a legal precedent creates across an institutional sector — adoption curve, displacement effects, intervention points.
+requires-capabilities:
+  - read
+  - path-corpus
+  - markdown-search-workbench
+  - term-intension
+  - read-term-catalog
+  - write
+  - markdown-file-workbench
+  - relate-relations
 ---
 
 # Map Credentialing Incentives

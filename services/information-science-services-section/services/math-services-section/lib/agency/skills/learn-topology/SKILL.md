@@ -1,6 +1,13 @@
 ---
 name: learn-topology
 description: Learn topological spaces and continuity from the formal axioms — sufficient to state a topology explicitly and verify its axioms.
+requires-capabilities:
+  - read
+  - path-corpus
+  - markdown-search-workbench
+  - term-intension
+  - read-term-catalog
+  - math-laws
 ---
 
 # Learn Topology

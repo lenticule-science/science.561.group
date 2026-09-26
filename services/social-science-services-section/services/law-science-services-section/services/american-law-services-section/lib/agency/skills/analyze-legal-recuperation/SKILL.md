@@ -1,6 +1,19 @@
 ---
 name: analyze-legal-recuperation
 description: Apply the full case-study pipeline to a legal proceeding — identify the evidentiary move, trace its formatting, assess propagation, predict structural effects, check for compounding.
+requires-capabilities:
+  - read
+  - path-corpus
+  - markdown-search-workbench
+  - term-intension
+  - read-term-catalog
+  - write
+  - markdown-file-workbench
+  - utter
+  - articulate
+  - predicate
+  - posit
+  - settle
 ---
 
 # Analyze Legal Recuperation

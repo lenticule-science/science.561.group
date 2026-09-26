@@ -1,6 +1,15 @@
 ---
 name: writing-curricula
 description: Conventions for educational prose — voice (second person and imperatives acceptable), citation that serves the learner, exercises that test application, prerequisites stated specifically.
+requires-capabilities:
+  - read
+  - path-corpus
+  - markdown-search-workbench
+  - term-intension
+  - read-term-catalog
+  - write
+  - markdown-file-workbench
+  - markdown-metadata-workbench
 ---
 
 # Writing Curricula

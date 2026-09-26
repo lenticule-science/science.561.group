@@ -1,6 +1,14 @@
 ---
 name: write-learn-skill
 description: Write a learn-* skill that defines a node in a curriculum's dependency graph — a learning result, prerequisite skills, lesson references, scope, and verification.
+requires-capabilities:
+  - read
+  - path-corpus
+  - markdown-search-workbench
+  - term-intension
+  - read-term-catalog
+  - write
+  - markdown-file-workbench
 ---
 
 # Write Learn Skill

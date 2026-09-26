@@ -1,6 +1,14 @@
 ---
 name: read-a-case-sociologically
 description: Read a legal proceeding as a social text — attend to what it produces (formatting, propagation, visibility gap) rather than what it decides.
+requires-capabilities:
+  - read
+  - path-corpus
+  - markdown-search-workbench
+  - term-intension
+  - read-term-catalog
+  - utter
+  - articulate
 ---
 
 # Read a Case Sociologically

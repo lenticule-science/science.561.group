@@ -1,6 +1,13 @@
 ---
 name: learn-enriched-categories
 description: Learn how enriched categories generalize ordinary ones over a monoidal base — hom-objects, enriched composition, unit conditions, and what enrichment buys.
+requires-capabilities:
+  - read
+  - path-corpus
+  - markdown-search-workbench
+  - term-intension
+  - read-term-catalog
+  - math-laws
 ---
 
 # Learn Enriched Categories

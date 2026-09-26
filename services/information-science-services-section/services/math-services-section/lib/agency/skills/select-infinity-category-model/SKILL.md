@@ -1,6 +1,13 @@
 ---
 name: select-infinity-category-model
 description: Compare common models of infinity categories and select one for a given task, recording the model and the reason it fits.
+requires-capabilities:
+  - read
+  - path-corpus
+  - markdown-search-workbench
+  - term-intension
+  - read-term-catalog
+  - write
 ---
 
 # Select Infinity Category Model

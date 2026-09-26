@@ -1,6 +1,14 @@
 ---
 name: learn-curriculum-design
 description: Analyze a subject as a dependency graph, define testable completion criteria for each node, annotate edges with what specifically the prerequisite supplies, and state scope honestly.
+requires-capabilities:
+  - read
+  - path-corpus
+  - markdown-search-workbench
+  - term-intension
+  - read-term-catalog
+  - markdown-corpus-workbench
+  - relate-relations
 ---
 
 # Learn Curriculum Design

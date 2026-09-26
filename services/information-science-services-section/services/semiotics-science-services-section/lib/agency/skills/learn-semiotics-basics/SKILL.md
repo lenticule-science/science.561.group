@@ -1,6 +1,15 @@
 ---
 name: learn-semiotics-basics
 description: Identify the components of a sign relation (representamen, object, interpretant), classify signs as icon / index / symbol, and describe semiosis as a process.
+requires-capabilities:
+  - read
+  - path-corpus
+  - markdown-search-workbench
+  - term-intension
+  - read-term-catalog
+  - utter
+  - articulate
+  - predicate
 ---
 
 # Learn Semiotics Basics

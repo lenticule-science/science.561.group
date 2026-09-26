@@ -1,6 +1,14 @@
 ---
 name: identify-evidentiary-formatting
 description: Recognize when an institution is adopting a community practice as a credentialing artifact rather than entering a community relation.
+requires-capabilities:
+  - read
+  - path-corpus
+  - markdown-search-workbench
+  - term-intension
+  - read-term-catalog
+  - utter
+  - articulate
 ---
 
 # Identify Evidentiary Formatting

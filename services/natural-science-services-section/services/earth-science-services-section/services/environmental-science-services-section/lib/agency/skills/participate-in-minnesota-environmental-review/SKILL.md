@@ -19,6 +19,14 @@ allowed-tools:
 - web.run
 - file_search.msearch
 - file_search.mclick
+requires-capabilities:
+  - read
+  - path-corpus
+  - markdown-search-workbench
+  - term-intension
+  - read-term-catalog
+  - write
+  - markdown-file-workbench
 ---
 
 ## Purpose

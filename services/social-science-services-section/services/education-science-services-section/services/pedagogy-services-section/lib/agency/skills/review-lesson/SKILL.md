@@ -1,6 +1,14 @@
 ---
 name: review-lesson
 description: Audit a lesson against pedagogical criteria — structure, concept introduction, engagement, connections, style — and report pass / partial / fail with specific quotes and suggestions.
+requires-capabilities:
+  - read
+  - path-corpus
+  - markdown-search-workbench
+  - term-intension
+  - read-term-catalog
+  - markdown-diff-workbench
+  - write
 ---
 
 # Review Lesson

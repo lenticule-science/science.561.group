@@ -1,6 +1,13 @@
 ---
 name: learn-linear-algebra
 description: Learn vector spaces, linear maps, and matrix representations — sufficient to reason about linearity, dimension, and computation.
+requires-capabilities:
+  - read
+  - path-corpus
+  - markdown-search-workbench
+  - term-intension
+  - read-term-catalog
+  - math-laws
 ---
 
 # Learn Linear Algebra

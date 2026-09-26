@@ -1,6 +1,11 @@
 ---
 name: check-enrichment-data
 description: Verify that proposed hom-objects and composition maps satisfy the axioms of a $\mathcal{V}$-enriched category — associativity and unit coherence in the base.
+requires-capabilities:
+  - read
+  - math-laws
+  - relate-relations
+  - settle
 ---
 
 # Check Enrichment Data

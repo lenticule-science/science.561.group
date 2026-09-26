@@ -1,6 +1,9 @@
 ---
 name: estimate-conditional-probability
 description: Estimate $P(A \mid B)$ from counted outcomes — define the sample space, count co-occurrences, divide by the count of the conditioning event.
+requires-capabilities:
+  - read
+  - write
 ---
 
 # Estimate Conditional Probability

@@ -1,6 +1,12 @@
 ---
 name: learn-lesson-design
 description: Design a single lesson — backward design from a desired result, concrete-before-abstract ordering, scaffolded prerequisites, exercises aligned to the goal.
+requires-capabilities:
+  - read
+  - path-corpus
+  - markdown-search-workbench
+  - term-intension
+  - read-term-catalog
 ---
 
 # Learn Lesson Design

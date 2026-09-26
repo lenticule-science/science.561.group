@@ -161,6 +161,3 @@ Name it by what it produces, not by what it does to get there.
 - `write-spec-file.md` ✓ — names the output
 - `critique-unit.md` ✓ — names the output (the critique)
 - `sharpen-node.md` ✗ — names a vibe
-- `improve-diagram.md` ✗ — names a feeling
-
-Place the file in the correct skills directory: - `skills/` — if any agent in the repo might need it - `[department]/skills/` — if it is specific to one part of the repo

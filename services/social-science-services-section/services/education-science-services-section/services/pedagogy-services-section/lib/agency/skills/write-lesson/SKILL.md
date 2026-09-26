@@ -1,6 +1,14 @@
 ---
 name: write-lesson
 description: Write a single lesson with sound pedagogical structure — motivation before definition, concrete before abstract, one core idea, worked example, self-check exercises, cited sources.
+requires-capabilities:
+  - read
+  - path-corpus
+  - markdown-search-workbench
+  - term-intension
+  - read-term-catalog
+  - write
+  - markdown-file-workbench
 ---
 
 # Write Lesson

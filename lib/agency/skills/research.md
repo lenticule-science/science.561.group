@@ -27,6 +27,20 @@ filled-by:
   - graph-analyst
 contrasts-with: [writing-role, analyst-role]
 date-created: 2026-04-27
+requires-capabilities:
+  - read
+  - path-corpus
+  - markdown-search-workbench
+  - term-intension
+  - read-term-catalog
+  - write
+  - markdown-file-workbench
+  - utter
+  - articulate
+  - predicate
+  - posit
+  - settle
+  - admit-term
 ---
 
 The **research role** is an agent role for investigating topics, reading sources, finding gaps, and producing knowledge — terms, texts, and surveys — that are grounded in real disciplinary theory and live as permanent artifacts in the library.

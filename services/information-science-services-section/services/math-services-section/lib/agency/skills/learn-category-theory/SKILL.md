@@ -1,6 +1,13 @@
 ---
 name: learn-category-theory
 description: Learn the core notions — category, functor, natural transformation — from first principles, sufficient to interpret or define categorical structures in working math.
+requires-capabilities:
+  - read
+  - path-corpus
+  - markdown-search-workbench
+  - term-intension
+  - read-term-catalog
+  - math-laws
 ---
 
 # Learn Category Theory

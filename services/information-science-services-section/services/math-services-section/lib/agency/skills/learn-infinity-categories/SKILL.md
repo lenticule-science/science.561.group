@@ -1,6 +1,13 @@
 ---
 name: learn-infinity-categories
 description: Learn the motivation for infinity categories and the basic vocabulary of higher morphisms, with quasi-categories as a working model.
+requires-capabilities:
+  - read
+  - path-corpus
+  - markdown-search-workbench
+  - term-intension
+  - read-term-catalog
+  - math-laws
 ---
 
 # Learn Infinity Categories

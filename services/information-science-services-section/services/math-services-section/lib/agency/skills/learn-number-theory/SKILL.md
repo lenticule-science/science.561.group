@@ -1,6 +1,13 @@
 ---
 name: learn-number-theory
 description: Learn divisibility, primes, and modular arithmetic — sufficient to reason about integer properties beyond basic computation.
+requires-capabilities:
+  - read
+  - path-corpus
+  - markdown-search-workbench
+  - term-intension
+  - read-term-catalog
+  - math-laws
 ---
 
 # Learn Number Theory

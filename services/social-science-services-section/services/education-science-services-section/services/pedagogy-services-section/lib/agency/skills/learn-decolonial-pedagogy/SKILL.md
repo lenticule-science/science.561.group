@@ -1,6 +1,12 @@
 ---
 name: learn-decolonial-pedagogy
 description: Identify the banking model in an educational practice, articulate problem-posing education, and evaluate a knowledge system for whose knowledge it centers.
+requires-capabilities:
+  - read
+  - path-corpus
+  - markdown-search-workbench
+  - term-intension
+  - read-term-catalog
 ---
 
 # Learn Decolonial Pedagogy

@@ -1,6 +1,13 @@
 ---
 name: learn-typed-lambda-calculus
 description: Learn the simply typed lambda calculus — typing rules, beta-reduction, the Curry–Howard correspondence between types and propositions.
+requires-capabilities:
+  - read
+  - path-corpus
+  - markdown-search-workbench
+  - term-intension
+  - read-term-catalog
+  - math-laws
 ---
 
 # Learn Typed Lambda Calculus
