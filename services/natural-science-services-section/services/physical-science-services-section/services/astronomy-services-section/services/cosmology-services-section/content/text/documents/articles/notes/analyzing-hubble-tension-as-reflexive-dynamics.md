@@ -180,7 +180,3 @@ This formulation bridges categorical logic and empirical cosmology, defining a p
 4.  Riess et al. 2022, ApJ, 934, L7
 5.  Cowan, G. (1998), **Statistical Data Analysis**, Oxford
 6.  $$Author$$, **Proposing a Reflexive Existence (v0.1)**, unpublished manuscript
-
-## Earlier material
-
-\$$

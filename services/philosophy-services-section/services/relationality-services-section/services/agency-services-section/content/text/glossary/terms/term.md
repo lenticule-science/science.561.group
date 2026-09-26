@@ -66,10 +66,3 @@ The denotation map ⟦-⟧_t : T_Σ(X) → H_t maps each term to an element of t
 ## Open questions
 
 - Whether terms at the hyperversal level (type Univ rather than Prop) require a separate spec entry or extend this one.
-
-## Earlier material
-
-1. Every variable x ∈ X is a term.
-2. Every constant c ∈ Σ (arity 0) is a term.
-3. If f ∈ Σ has arity n and t₁, …, tₙ are terms, then f(t₁, …, tₙ) is a term.
-4. Nothing else is a term.

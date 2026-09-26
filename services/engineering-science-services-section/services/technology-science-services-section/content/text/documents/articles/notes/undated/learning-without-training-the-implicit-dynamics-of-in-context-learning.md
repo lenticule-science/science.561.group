@@ -79,7 +79,3 @@ Large language models can learn from examples in their input ([in-context learni
 \[<sup>1</sup>\]: This may map near \[kyriontoeidonics\](../../../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/kyriontoeidonics.org.md)
 
 [^1]: This may map near [kyriontoeidonics](../../../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/kyriontoeidonics.md)
-
-## Earlier material
-
-``` bibtex

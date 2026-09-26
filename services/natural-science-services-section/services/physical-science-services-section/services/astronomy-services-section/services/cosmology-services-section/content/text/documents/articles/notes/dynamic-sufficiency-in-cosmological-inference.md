@@ -201,8 +201,3 @@ By quantifying dynamic imbalance through $g(z,\Delta z)$, this framework enables
 4.  Riess et al. 2022, ApJ, 934, L7
 5.  Kock, A. and Zöberlein, V. (1971). **Comonads and Lax Idempotence in Category Theory.**
 6.  $$Author$$, **Proposing a Reflexive Existence (v0.1)**, unpublished manuscript
-
-## Earlier material
-
-satisfying the coherence laws:
-\$$

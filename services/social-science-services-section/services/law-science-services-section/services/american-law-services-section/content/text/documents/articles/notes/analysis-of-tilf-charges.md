@@ -213,7 +213,3 @@ This is a generic sequence and may vary.
 - Identities/roles of “co-conspirators” beyond the four named defendants are not specified. **[GAP]** (Aff. ¶10–11; ¶15–17)
 
 - Confidential human source handling/validation documentation is absent beyond affidavit reliability assertions. **[GAP]** (Aff. ¶5 n.1; ¶4)
-
-## Earlier material
-
-- file: doj-criminal-complaint.pdf

@@ -40,7 +40,3 @@ Play is also the substrate of learning within games. Players learn [game states]
 - [player](../../../../services/gaming-services-section/content/text/glossary/terms/player.md)
 - [rules](../../../../services/gaming-services-section/content/text/glossary/terms/rules.md)
 - [paidia](../../../../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/paidia.md) and [ludus](../../../../../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/ludus.md), the cultural-theory axis
-
-## Earlier material
-
-The distinction matters because it marks a boundary. When an activity looks like a game but the [player](../../../../services/gaming-services-section/content/text/glossary/terms/player.md) doesn't experience it as play — mandatory gamified training, exploitative reward loops, compulsive gambling — something has shifted. The [mechanics](../../../../services/gaming-services-section/content/text/glossary/terms/mechanic.md) may be identical, but the relationship between participant and activity is different. Game studies and game design both benefit from keeping this distinction visible rather than collapsing everything with rules and points into "games."

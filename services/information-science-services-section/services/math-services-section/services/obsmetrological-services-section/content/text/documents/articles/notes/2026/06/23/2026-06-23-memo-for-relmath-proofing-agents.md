@@ -1060,11 +1060,3 @@ And it is the first formal brick in a RelMath-style path from local rules to per
   Husainov, *Čech cohomology of partially ordered sets*, arXiv:2310.05577, 2023. https://arxiv.org/abs/2310.05577
 
 11. emsenn, *RelMath attached Lean corpus*, especially `AlexandrovHusainov`, `AperiodicClassification`, `BitopologicalSettlingSite`, `ClosureRuleSystem`, and `NonScottContinuousFiring`, uploaded in this conversation.
-
-## Earlier material
-
-Acceptance criterion: - Lean compiles. - No axioms. - The theorem is scoped as finite witness only.
-
-Acceptance criterion: - theorem names follow RelMath style; - comments state honest scope.
-
-The attached RelMath system is careful about: - no free data below the initial primitive layers, - explicit scope, - avoiding claims beyond proved finite facts.

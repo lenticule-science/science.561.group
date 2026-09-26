@@ -17,8 +17,3 @@ title: On Relationality
 ![[retrieve all reflex relations from reflected relation]]
 
 ![[affirm relation membership in select reflex relations]]
-
-## Earlier material
-
-!
-[[reflect relation]]
