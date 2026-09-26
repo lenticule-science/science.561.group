@@ -40,7 +40,7 @@ The OR pattern introduces a structural asymmetry: once any $T_i$ settles the par
 
 ### Sequential decomposition
 
-Subtask $T_j$ becomes potential only after $T_i$ settles ($i < j$ in the sequence). This is realized by *activation guards* on $T_j$'s closure rules:
+Subtask $T_j$ becomes active only after $T_i$ settles ($i < j$ in the sequence). This is realized by *activation guards* on $T_j$'s closure rules:
 
 $$r_{\mathrm{seq}, i \to j}: \bigl[\bigwedge_{\phi \in G_{T_i}} v(\phi) = v^*_{T_i}(\phi)\bigr] \;\Longrightarrow\; v\bigl(\langle T_j, \texttt{activation-permitted}\rangle\bigr) = \mathbf{t}$$
 
@@ -112,7 +112,3 @@ The OR-parent's completion cell — $\langle T, \texttt{settled-by-completion}\r
 **OR + monotonicity.** The OR-decomposition's orphaned-settling subtasks interact with settling-monotonicity: once a subtask's goal cells start accumulating evidence, they continue to accumulate even if the parent has completed via a sibling. This is not a mathematical problem (monotonicity is preserved) but an operational one: work is being done by an agent on a subtask that is no longer needed. An explicit cancellation rule (asserting $\langle T_j, \texttt{cancelled}\rangle = \mathbf{t}$ when the parent settles via sibling) is substrate-expressible as a $\Pi_1$ rule, but requires the task-cell-system to include a `cancelled` predicate in its lifecycle states. The [task-cell-system object](../../../../glossary/terms/task-cell-system.md) does not currently include `cancelled` as a named lifecycle state — this is a gap.
 
 **Mixed decomposition.** Real tasks often combine patterns: an inquiry phase followed by a procedural execution phase. These are sequential compositions (per workflow-composition) of tasks with different decomposition types. The composed workflow's regime is the maximum regime of its components — Scott-continuous whenever an inquiry component is present.
-
-## Earlier material
-
-Subtask $T_j$ becomes active only after $T_i$ settles ($i < j$ in the sequence). This is realized by *activation guards* on $T_j$'s closure rules:

@@ -111,7 +111,7 @@ The remaining 10% of my HBD will be staked in savings, with that 15% APR returns
     
 - **Yield Tokens:** 15% split among YOLO, DRIP, and BBH.
     
-- **Savings:** 10% of HBD staked for active interest.
+- **Savings:** 10% of HBD staked for stable interest.
     
 
 Taking into account all the payouts and compounding mechanisms, this portfolio reaches an estimated annualized APR of approximately 148.895%. A significant portion of this is driven by the extraordinary returns on YOLO.
@@ -156,7 +156,3 @@ Compounding and Diversification: By allocating resources across DBOND, WORKERBEE
 Sustainability: Staking HBD provides stable, predictable returns that act as a foundational income, balancing out the volatility of high-yield strategies.
 
 This approach transforms Hive from just a publishing platform into a dynamic financial ecosystem where my stake grows not only in value but also in alignment with the communities I care about most. By combining active participation with strategic management, I am creating a self-sustaining cycle of growth and engagement that supports both my creative work and the broader Hive ecosystem.
-
-## Earlier material
-
-- **Savings:** 10% of HBD staked for stable interest.
