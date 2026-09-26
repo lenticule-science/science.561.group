@@ -20,14 +20,16 @@ A **regime** is the character of a closure, read off the height of its [closure 
 
 ## Each regime is one stage's
 
-The four regimes are not four kinds of settling. Each is the regime of one stage of the language spine (`Stage.regime`):
+The four regimes are not four kinds of settling. Each is the regime of one stage of the language spine:
 
-- **Settling** is finite. Settling proper runs over a finite reading lattice and stops by step three; Obsmetrologia proves the spine settles in this regime (`spine_settles_in_settling_regime`).
+- **Settling** is finite. Settling proper runs over a finite reading lattice and stops by step three; Obsmetrologia proves the spine is in this regime (`spine_is_strict`).
 - **Positing** is Scott-continuous. Evidence is admitted along directed finite prefixes, and the limit is the union of what the prefixes established.
 - **Predicating** is transfinite-bounded. A premise that quantifies over an infinite range can only be discharged once the whole range is in, so its rule fires at a limit stage no finite prefix reaches.
 - **Articulating** is aperiodic. Articulated traces carry aperiodic order: substitution recurrences whose cohomology is the direct limit Anderson and Putnam compute for substitution tilings, never stabilizing at a countable stage.
 
-Read along the spine, articulate → predicate → posit → settle, the regime descends. The classifier therefore tells which stage's work a closure is doing: a rule system run as settling whose premises carry ∀-blocks is doing predicating work, and one whose rules are step-n recurrences is articulating.
+Read along the spine, articulate → predicate → posit → settle, the regime descends.
+
+Obsmetrologia does not yet state this pairing. `Closure/Regime.lean` instead maps each regime to a corner of the four-valued reading (`regimeCornerBij`: strict to absurd, Scott to potential, transfinite-bounded to active, aperiodic to stable); that assignment identifies the four regimes with the four readings inside a stage and is not the pairing given here. The classifier therefore tells which stage's work a closure is doing: a rule system run as settling whose premises carry ∀-blocks is doing predicating work, and one whose rules are step-n recurrences is articulating.
 
 ## Engineering consequence
 
