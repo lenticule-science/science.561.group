@@ -22,9 +22,3 @@ The concept rests on a spatial metaphor: information exists in containers (compa
 - [Counterintelligence](./counterintelligence.md) — the discipline need-to-know serves
 - [Stovepiping](./stovepiping.md) — the organizational failure need-to-know inadvertently produces
 - [Intelligence cycle](./intelligence-cycle.md) — the process compartmentation fragments
-
-## Earlier material
-
-- [Counterintelligence](counterintelligence.md) — the discipline need-to-know serves
-- [Stovepiping](stovepiping.md) — the organizational failure need-to-know inadvertently produces
-- [Intelligence cycle](intelligence-cycle.md) — the process compartmentation fragments

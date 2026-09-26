@@ -19,8 +19,3 @@ Schleip directs the Fascia Research Group at Ulm University and has organized in
 
 - [tensegrity in movement](../../../../../../../../../../natural-science-services-section/services/biological-science-services-section/services/medical-science-services-section/services/somatics-services-section/content/text/glossary/terms/tensegrity-in-movement.md) — the structural model that Schleip's sensory findings complement
 - [proprioception](../../../../../../../../../../natural-science-services-section/services/biological-science-services-section/services/medical-science-services-section/services/somatics-services-section/content/text/glossary/terms/proprioception.md) — the sensory system fascia contributes to
-
-## Earlier material
-
-- [tensegrity in movement](../../../../../../../../../../natural-science-services-section/services/biological-science-services-section/services/medical-science-services-section/services/somatics-services-section/content/text/glossary/terms/tensegrity-in-movement.md) — the structural model that Schleip's sensory findings complement
-- [proprioception](../../../../../../../../../../natural-science-services-section/services/biological-science-services-section/services/medical-science-services-section/services/somatics-services-section/content/text/glossary/terms/proprioception.md) — the sensory system fascia contributes to

@@ -33,16 +33,3 @@ Decapitation rests on the assumption that removing leadership produces effects �
 
 - [Find-fix-finish](./find-fix-finish.md) — the targeting cycle decapitation operations instantiate
 - [Collection disciplines](./collection-disciplines.md) — the multi-source architecture decapitation requires
-
-## Earlier material
-
-A decapitation strike is a military operation targeting an adversary's senior leadership — political, military, or both — with the intent of disrupting command and control, collapsing organizational coherence, or forcing regime change. The intelligence requirements of decapitation are among the most demanding in the discipline: the target is typically the most protected individual in the adversary's system, requiring months or years of [HUMINT](humint.md), [SIGINT](sigint.md), and [IMINT](imint.md) collection to establish pattern of life, confirm identity, and identify vulnerability windows.
-
-The discipline's case literature includes several precedents: the targeting of Admiral Yamamoto (1943), where [SIGINT](sigint.md) intercepts provided the flight schedule; the raid on Osama bin Laden (2011), where years of HUMINT and SIGINT traced a courier network to the Abbottabad compound; the assassination of Qasem Soleimani (2020), where real-time tracking enabled a drone strike at Baghdad International Airport; and the assassination of Ali Khamenei (2026), where CIA surveillance, hacked traffic cameras, and SIGINT about a leadership meeting converged to create a targeting window that altered the strike campaign's timing from nighttime to [daytime operations](../../../../services/2026-iran-war-services-section/content/text/documents/articles/notes/decapitation-as-intelligence-operation.md).
-
-- [Targeting](targeting.md) — the broader discipline of which decapitation is a specialized case
-- [Counterintelligence](counterintelligence.md) — the adversary's defense against the collection that enables decapitation
-- [Operational security](operational-security.md) — the protective measures decapitation must penetrate
-
-- [Find-fix-finish](find-fix-finish.md) — the targeting cycle decapitation operations instantiate
-- [Collection disciplines](collection-disciplines.md) — the multi-source architecture decapitation requires

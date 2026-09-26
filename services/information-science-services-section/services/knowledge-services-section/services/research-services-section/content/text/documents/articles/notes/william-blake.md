@@ -36,9 +36,3 @@ Blake's relational ontology — where beings are constituted through relation ra
 - [Adversarial epistemology](../../../../../../../../intelligence-science-services-section/content/text/glossary/terms/adversarial-epistemology.md) — the epistemic condition Blake's work addresses
 - [James Angleton](./james-angleton.md) — the intelligence figure whose Eliot-derived epistemology Blake's framework supersedes
 - [Wilderness of mirrors](../../../../../../../../intelligence-science-services-section/content/text/glossary/terms/wilderness-of-mirrors.md) — the Angletonian concept Blake's fourfold vision is proposed to navigate
-
-## Earlier material
-
-- [Adversarial epistemology](../../../../../../../../intelligence-science-services-section/content/text/glossary/terms/adversarial-epistemology.md) — the epistemic condition Blake's work addresses
-- [James Angleton](../../../../../../../../../../philosophy-services-section/services/logic-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/yet-another-unsorted-archive-dump/predication-categories/_archive/bucket-4/articulating/library/aperiodic-articulation-category/library/aperiodic-articulation-cell/library/potential-aperiodic-articulation-cell/predicating/library/transfinite-predication-category/hacking/library/predicate-category/hacking/library/references/people/william-blake/james-angleton.md) — the intelligence figure whose Eliot-derived epistemology Blake's framework supersedes
-- [Wilderness of mirrors](../../../../../../../../intelligence-science-services-section/content/text/glossary/terms/wilderness-of-mirrors.md) — the Angletonian concept Blake's fourfold vision is proposed to navigate

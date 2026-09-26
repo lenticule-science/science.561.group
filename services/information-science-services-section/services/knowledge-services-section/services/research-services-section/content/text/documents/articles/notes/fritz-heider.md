@@ -26,8 +26,3 @@ Fritz Heider (1896–1988) was an Austrian-born American psychologist who founde
 
 - *The Psychology of Interpersonal Relations* (1958)
 - "Social Perception and Phenomenal Causality" (1944)
-
-## Earlier material
-
-- [Attribution theory](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/attribution-theory.md)
-- [Edward E. Jones](edward-e-jones.md)

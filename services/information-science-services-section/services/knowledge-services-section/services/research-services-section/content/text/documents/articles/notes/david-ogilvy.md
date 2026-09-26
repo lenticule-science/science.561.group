@@ -31,9 +31,3 @@ David Ogilvy (1911–1999) was a British-American advertising executive who foun
 - [copywriting](../../writing/disciplines/copywriting/index.md) — the discipline Ogilvy's work defines
 - [headline](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/headline.md) — Ogilvy's primary unit of analysis
 - [brand voice](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/brand-voice.md) — Ogilvy insisted on consistent brand personality
-
-## Earlier material
-
-- [copywriting](../../../../../../../../../../philosophy-services-section/services/logic-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/yet-another-unsorted-archive-dump/predication-categories/_archive/bucket-4/articulating/library/aperiodic-articulation-category/library/aperiodic-articulation-cell/library/potential-aperiodic-articulation-cell/predicating/library/transfinite-predication-category/hacking/library/predicate-category/hacking/library/references/writing/disciplines/copywriting/index.md) — the discipline Ogilvy's work defines
-- [headline](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/headline.md) — Ogilvy's primary unit of analysis
-- [brand voice](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/brand-voice.md) — Ogilvy insisted on consistent brand personality

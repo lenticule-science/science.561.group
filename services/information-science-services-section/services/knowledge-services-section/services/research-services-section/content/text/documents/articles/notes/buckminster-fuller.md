@@ -26,8 +26,3 @@ Fuller is also known for developing the geodesic dome, the Dymaxion map projecti
 
 - [tensegrity in movement](../../../../../../../../../../natural-science-services-section/services/biological-science-services-section/services/medical-science-services-section/services/somatics-services-section/content/text/glossary/terms/tensegrity-in-movement.md) — application of Fuller's tensegrity concept to living bodies
 - [Kenneth Snelson](./kenneth-snelson.md) — sculptor whose structures Fuller named "tensegrity"
-
-## Earlier material
-
-- [tensegrity in movement](../../../../../../../../../../natural-science-services-section/services/biological-science-services-section/services/medical-science-services-section/services/somatics-services-section/content/text/glossary/terms/tensegrity-in-movement.md) — application of Fuller's tensegrity concept to living bodies
-- [Kenneth Snelson](kenneth-snelson.md) — sculptor whose structures Fuller named "tensegrity"

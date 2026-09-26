@@ -41,9 +41,3 @@ The OSS bequeathed three things to American intelligence: the organizational mod
 - [Covert action](../../../glossary/terms/covert-action.md) — the operational function the OSS established
 - [Intelligence cycle](../../../glossary/terms/intelligence-cycle.md) — the workflow the OSS's organizational design instantiated
 - [Analyst-policymaker relationship](../../../glossary/terms/analyst-policymaker-relationship.md) — the tension the OSS's dual function created
-
-## Earlier material
-
-- [Covert action](../../../glossary/terms/covert-action.md) — the operational function the OSS established
-- [Intelligence cycle](../../../glossary/terms/intelligence-cycle.md) — the workflow the OSS's organizational design instantiated
-- [Analyst-policymaker relationship](../../../glossary/terms/analyst-policymaker-relationship.md) — the tension the OSS's dual function created

@@ -26,7 +26,3 @@ A quiver is *not* a [category](./category.md) — it has no composition and no i
 ## Position
 
 Quivers are the term used in representation theory and category theory for what graph theorists call a *directed multigraph*: same structure, different vocabulary fixed by different downstream uses. The categorical use is that a quiver is the underlying combinatorial datum from which a free category, a path algebra, or a representation of a quiver (a functor $Q \to \mathbf{Vect}$) is built. Whether the corpus should treat quiver and [directed-graph](directed-graph.md) as one note or two — terminological choice vs. structural distinction — is the subject of [questions/quiver-vs-digraph](../../documents/articles/research-articles/questions/quiver-vs-digraph.md). References: [Diestel 2017](../../documents/articles/bibliographies/diestel2017.md) §1.10, [Bondy–Murty 2008](../../documents/articles/bibliographies/bondy-murty2008.md) §2; the categorical use traces to the Bourbaki/MacLane lineage rather than the classical graph-theory texts.
-
-## Earlier material
-
-A quiver is *not* a [category](../../documents/articles/research/2026/07/31/lenticule-import/scripts/graphing/content/graph/scripts/directing/content/directed-graph/scripts/freeing/categories/theories/ordinary-categories/objects/category.md) — it has no composition and no identities. A category is a quiver *equipped with* an associative composition operation and an identity arrow at every vertex.

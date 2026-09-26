@@ -24,7 +24,3 @@ Key elements include:
 - a medium (cards, stars, lots, patterns),
 - a question or focus,
 - a method for interpreting results.
-
-## Earlier material
-
-Divination practices interpret patterns or [signs](../../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/science/theories/linguistics/theories/semiotics/terms/sign.md) as sources of insight.

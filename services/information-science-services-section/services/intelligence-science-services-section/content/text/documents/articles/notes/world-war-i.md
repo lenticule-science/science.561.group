@@ -47,11 +47,3 @@ The war also demonstrated intelligence failures that the discipline would later 
 ## What the period established
 
 World War I established SIGINT as a strategic intelligence source, IMINT as a tactical collection discipline, and the principle that intelligence must be institutionally organized and integrated with operational planning to produce its effects. It also demonstrated that intelligence could produce strategic consequences independent of military operations (the Zimmermann Telegram) — an insight that would shape the discipline's self-understanding and the arguments for centralized, national-level intelligence organizations in the interwar period and after.
-
-## Earlier material
-
-World War I transformed intelligence from a military staff function into a strategic instrument capable of shaping the course of a war. Three innovations define the period: the emergence of signals intelligence as a decisive source, the introduction of aerial reconnaissance (the ancestor of [IMINT](../../../glossary/terms/imint.md)), and the first demonstrations that intelligence could produce strategic effects independent of military operations.
-
-Room 40's greatest achievement was the decryption of the Zimmermann Telegram (January 1917) — the German Foreign Secretary's proposal to Mexico for a military alliance against the United States. The telegram's publication was instrumental in shifting American public opinion toward war entry — a case in which [SIGINT](../../../glossary/terms/sigint.md) produced a strategic political effect that no military intelligence operation could have matched.
-
-The introduction of aircraft created [IMINT](../../../glossary/terms/imint.md) as a collection discipline. By 1915, aerial photography was producing systematic coverage of the Western Front's trench systems, enabling [order of battle](../../../glossary/terms/order-of-battle.md) assessment, artillery targeting, and the detection of enemy preparations. Photo interpretation became a specialized skill — the first intelligence analysts whose expertise was technical rather than linguistic or regional.

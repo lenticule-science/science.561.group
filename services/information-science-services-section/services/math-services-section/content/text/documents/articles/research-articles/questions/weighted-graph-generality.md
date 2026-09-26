@@ -31,7 +31,3 @@ The open work is a *commitment*: choose one definition, write the consequences d
 ## Why this matters
 
 The choice constrains downstream graph-theory results: shortest-path algorithms need a semiring at minimum, capacity-bounded flow needs an ordered semiring, and the corpus's own integration with the bilattice substrate needs a residuated lattice. Picking the wrong level is recoverable; picking three at once is not. The question should be resolved before any algorithmic-graph-theory child theory is opened.
-
-## Earlier material
-
-The open work is a *commitment*: choose one definition, write the consequences down, and accept the others as derived or as separate objects. The corpus's [theory-discipline](../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/specifications/theory-discipline.md) treats this kind of unresolved generality as a *staging diagnostic*: a `weighted-graph` object that lists three possible definitions without committing to one is a smaller version of a staging area.

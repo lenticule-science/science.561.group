@@ -32,8 +32,3 @@ Sir Tim Berners-Lee (born 1955) is a British computer scientist who invented the
 
 - [linked data](../../../../../../knowledge-systems-services-section/services/semantic-web-services-section/content/text/glossary/terms/linked-data.md) — the principles he articulated for structured web data
 - [semantic HTML](../../../../../../../../../../engineering-science-services-section/services/design-engineering-science-services-section/services/web-design-services-section/content/text/glossary/terms/semantic-html.md) — the markup language he created
-
-## Earlier material
-
-- [linked data](../../../../../../knowledge-systems-services-section/services/semantic-web-services-section/content/text/glossary/terms/linked-data.md) — the principles he articulated for structured web data
-- [semantic HTML](../../../../../../../../../../engineering-science-services-section/services/design-engineering-science-services-section/services/web-design-services-section/content/text/glossary/terms/semantic-html.md) — the markup language he created

@@ -38,7 +38,3 @@ Because symbols are conventional, they are the most flexible type of [sign](./si
 - [sign](./sign.md) — the triadic relation in which symbol is one type
 
 **Source:** [Peirce](../../../../../../../../../knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/charles-sanders-peirce.md), Charles Sanders. *Collected Papers*. Harvard University Press, 1931–1958. See also Short, T. L. *[Peirce](../../../../../../../../../knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/charles-sanders-peirce.md)'s Theory of Signs*. Cambridge University Press, 2007.
-
-## Earlier material
-
-**Source:** [Peirce](../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/communicating/content/general/people/charles-sanders-peirce.md), Charles Sanders. *Collected Papers*. Harvard University Press, 1931–1958. See also Short, T. L. *[Peirce](../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/communicating/content/general/people/charles-sanders-peirce.md)'s Theory of Signs*. Cambridge University Press, 2007.

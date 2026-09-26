@@ -36,9 +36,3 @@ This transformation — from [Sherman Kent](./sherman-kent.md)'s independent ana
 - [Analyst-policymaker relationship](../../../glossary/terms/analyst-policymaker-relationship.md) — the relationship his "slam dunk" compromised
 - [Covert action](../../../glossary/terms/covert-action.md) — the function that expanded under his tenure
 - [Intelligence failure](../../../glossary/terms/intelligence-failure.md) — both 9/11 and Iraq WMD occurred on his watch
-
-## Earlier material
-
-- [Analyst-policymaker relationship](../../../glossary/terms/analyst-policymaker-relationship.md) — the relationship his "slam dunk" compromised
-- [Covert action](../../../glossary/terms/covert-action.md) — the function that expanded under his tenure
-- [Intelligence failure](../../../glossary/terms/intelligence-failure.md) — both 9/11 and Iraq WMD occurred on his watch

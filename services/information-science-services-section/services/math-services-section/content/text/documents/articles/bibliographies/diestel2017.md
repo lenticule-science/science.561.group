@@ -56,7 +56,3 @@ The author maintains a free open-availability electronic edition at <https://die
 ## Status
 
 The 5th edition (2017) is the current edition. The book is also available in open-access form from the author's website.
-
-## Earlier material
-
-Diestel is the corpus's default citation when a standard graph-theoretic result is invoked without qualification. The directory's [graph](../../../glossary/terms/graph.md), [directed-graph](../../../glossary/terms/directed-graph.md), [simple-graph](../../../glossary/terms/simple-graph.md), [tree](../../../glossary/terms/tree.md), [forest](../../../glossary/terms/forest.md), [bipartite-graph](../../../glossary/terms/bipartite-graph.md), [planar-graph](../../../glossary/terms/planar-graph.md), [subgraph](../../../glossary/terms/subgraph.md), and [complete-graph](../../../glossary/terms/complete-graph.md) objects all match Diestel's definitions; the [tree-equivalences](../research-articles/tree-equivalences.md), [bipartite-iff-no-odd-cycle](../research-articles/bipartite-iff-no-odd-cycle.md), [eulerian-circuit-criterion](../research-articles/eulerian-circuit-criterion.md), and [handshake-lemma](../research-articles/handshake-lemma.md) theorems follow Diestel's presentations.

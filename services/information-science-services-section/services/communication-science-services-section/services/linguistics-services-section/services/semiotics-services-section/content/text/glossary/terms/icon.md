@@ -42,9 +42,3 @@ Iconic [signs](./sign.md) are never purely iconic — a map uses conventional ma
 - [sign](./sign.md) — the triadic relation in which icon is one type
 
 **Source:** [Peirce](../../../../../../../../../knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/charles-sanders-peirce.md), Charles Sanders. *Collected Papers*. Harvard University Press, 1931–1958.
-
-## Earlier material
-
-[Peirce](../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/communicating/content/general/people/charles-sanders-peirce.md) distinguished three subtypes of icon [@peirce_CollectedPapers_1931]:
-
-**Source:** [Peirce](../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/communicating/content/general/people/charles-sanders-peirce.md), Charles Sanders. *Collected Papers*. Harvard University Press, 1931–1958.

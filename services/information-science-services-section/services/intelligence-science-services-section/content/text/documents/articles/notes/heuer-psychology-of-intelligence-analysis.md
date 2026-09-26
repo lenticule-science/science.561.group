@@ -32,9 +32,3 @@ Heuer's framework assumes that debiased analysis within the system's existing ca
 - [Analysis of competing hypotheses](../../../glossary/terms/analysis-of-competing-hypotheses.md) — his signature technique
 - [Key assumptions check](../../../glossary/terms/key-assumptions-check.md) — a complementary SAT he formalized
 - [Mirror-imaging](../../../glossary/terms/mirror-imaging.md) — the bias his methods address most directly
-
-## Earlier material
-
-- [Analysis of competing hypotheses](../../../glossary/terms/analysis-of-competing-hypotheses.md) — his signature technique
-- [Key assumptions check](../../../glossary/terms/key-assumptions-check.md) — a complementary SAT he formalized
-- [Mirror-imaging](../../../glossary/terms/mirror-imaging.md) — the bias his methods address most directly

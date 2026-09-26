@@ -80,10 +80,3 @@ The key assumptions check reveals that the strike campaign's strategic logic res
 
 - [Key assumptions check](../../../../../../../content/text/glossary/terms/key-assumptions-check.md) — the technique this analysis applies
 - [Intelligence failure](../../../../../../../content/text/glossary/terms/intelligence-failure.md) — the outcome if key assumptions prove false without having been monitored
-
-## Earlier material
-
-**Evidence undermining the assumption.** Oman's foreign minister announced on 27 February that a "breakthrough" had been reached, with Iran agreeing to halt uranium enrichment and accept full IAEA verification. If this agreement was genuine, the strikes destroyed not an impasse but a diplomatic achievement. The [diplomatic-intelligence paradox](../../../glossary/terms/diplomatic-intelligence-paradox.md) analysis examines the structural impossibility of evaluating this assumption from within the intelligence system when the policy process was running both tracks simultaneously.
-
-- [Key assumptions check](../../../../../../../content/text/glossary/terms/key-assumptions-check.md) — the technique this analysis applies
-- [Intelligence failure](../../../../../../../content/text/glossary/terms/intelligence-failure.md) — the outcome if key assumptions prove false without having been monitored

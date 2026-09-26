@@ -17,7 +17,3 @@ In media studies and literary theory, the term has come to denote any sustained 
 A paracosm is distinct from a [secondary world](./secondary-world.md) in emphasis: the paracosm foregrounds the phenomenology and psychology of world-creation (how the creator relates to and develops the imagined domain), while the secondary world foregrounds the literary and structural properties of the resulting artifact. A single creative project may be both. The [emsean paracosm](../../../../../../content/text/documents/articles/notes/undated/emsean-paracosm.md) exemplifies this overlap.
 
 The formal treatment of paracosms as categorical structures appears in the [Reproducible Paracosm](../../../../../literature-services-section/content/text/documents/articles/notes/reproducible-paracosm.md) framework, which models paracosms as sketches admitting modal endofunctors and defines conditions under which a paracosm remains invariant across retellings or re-enactments.
-
-## Earlier material
-
-A paracosm is distinct from a [secondary world](secondary-world.md) in emphasis: the paracosm foregrounds the phenomenology and psychology of world-creation (how the creator relates to and develops the imagined domain), while the secondary world foregrounds the literary and structural properties of the resulting artifact. A single creative project may be both. The [emsean paracosm](../../../../../../content/text/documents/articles/notes/undated/emsean-paracosm.md) exemplifies this overlap.

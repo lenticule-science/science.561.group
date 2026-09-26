@@ -111,20 +111,3 @@ This skill covers writing intelligence assessments for this vault's analyses sec
 ## Verification
 
 You have this skill if you can: (1) write an assessment that uses estimative language correctly and consistently, (2) present competing hypotheses with evidence for and against each, (3) identify your own mirror-imaging risks in the assessment, and (4) distinguish clearly between evidence, assessment, and assumption throughout.
-
-## Earlier material
-
-- Familiarity with the intelligence discipline's [core concepts](../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/concepts/index.md), particularly [intelligence failure](../../../glossary/terms/intelligence-failure.md), the [analyst-policymaker relationship](../../../glossary/terms/analyst-policymaker-relationship.md), and [perception and misperception](../../../glossary/terms/perception-and-misperception.md)
-- Familiarity with the discipline's [terms](../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/terms/index.md), particularly [estimative language](../../../glossary/terms/estimative-language.md), [source reliability](../../../glossary/terms/source-reliability.md), [analysis of competing hypotheses](../../../glossary/terms/analysis-of-competing-hypotheses.md), and the [collection disciplines](../../../glossary/terms/collection-disciplines.md)
-- Understanding of the vault's content types: assessments are filed as `type: text` under the relevant analysis subdirectory
-
-- [The Structural Expectation of Failure](the-structural-expectation-of-failure.md) — the epistemic constraints on all intelligence assessment
-- [Intelligence failure](../../../glossary/terms/intelligence-failure.md) — the recurring patterns that assessments should be designed to resist
-- [Estimative language](../../../glossary/terms/estimative-language.md) — the probabilistic vocabulary assessments must use
-- [Source reliability](../../../glossary/terms/source-reliability.md) — the framework for evaluating the evidence base
-- Existing analyses: [2026 Iran War](../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/analyses/2026-iran-war/index.md)
-
-Present the evidence organized by collection discipline. For each piece of evidence, note:
-- The collection discipline that produced it (HUMINT, SIGINT, IMINT, OSINT, etc.)
-- The source's reliability and access (using the [admiralty system](../../../glossary/terms/source-reliability.md) framework where applicable)
-- Whether the evidence supports, undermines, or is ambiguous with respect to the primary hypothesis

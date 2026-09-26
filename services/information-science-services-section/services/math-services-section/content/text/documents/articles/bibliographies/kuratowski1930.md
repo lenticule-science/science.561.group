@@ -28,7 +28,3 @@ This is the canonical citation for [kuratowski](../research-articles/kuratowski.
 ## Status
 
 The 1930 *Fundamenta Mathematicae* paper is the original, in French. English translations and modern presentations are available in any standard graph-theory text; [Diestel 2017](diestel2017.md) §4.4 is the corpus's preferred working reference.
-
-## Earlier material
-
-The original proof of [Kuratowski's planarity theorem](../research-articles/kuratowski.md): a finite [graph](../../../glossary/terms/graph.md) is [planar](../../../glossary/terms/planar-graph.md) iff it contains no [subgraph](../../../glossary/terms/subgraph.md) that is a subdivision of $K_5$ or $K_{3,3}$. The founding result of the *forbidden-substructure* characterization tradition in graph theory and topology.

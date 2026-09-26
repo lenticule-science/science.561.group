@@ -32,9 +32,3 @@ Amy J. Devitt is an American rhetoric and composition scholar at the University 
 - [Carolyn Miller](./carolyn-miller.md) — genre theory that Devitt extended
 - [genre](../../../../../../../../communication-science-services-section/services/writing-services-section/services/rhetoric-and-composition-services-section/content/text/glossary/terms/genre.md) — the concept Devitt's work develops
 - [discourse community](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/discourse-community.md) — genre repertoires are shaped by discourse community participation
-
-## Earlier material
-
-- [Carolyn Miller](../../../../../../../../../../philosophy-services-section/services/logic-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/yet-another-unsorted-archive-dump/predication-categories/_archive/bucket-4/articulating/library/aperiodic-articulation-category/library/aperiodic-articulation-cell/library/potential-aperiodic-articulation-cell/predicating/library/transfinite-predication-category/hacking/library/predicate-category/hacking/library/references/people/amy-devitt/carolyn-miller.md) — genre theory that Devitt extended
-- [genre](../../../../../../../../../../philosophy-services-section/services/logic-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/yet-another-unsorted-archive-dump/predication-categories/_archive/bucket-4/articulating/library/aperiodic-articulation-category/library/aperiodic-articulation-cell/library/potential-aperiodic-articulation-cell/predicating/library/transfinite-predication-category/hacking/library/predicate-category/hacking/library/references/writing/terms/genre.md) — the concept Devitt's work develops
-- [discourse community](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/discourse-community.md) — genre repertoires are shaped by discourse community participation

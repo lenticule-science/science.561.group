@@ -29,9 +29,3 @@ A graph is 2-colourable iff it is bipartite iff it has no odd cycle. So "2-colou
 ## Remarks
 
 This is the canonical example of a graph property characterized by a *forbidden substructure* — the entire research program of forbidden-subgraph and forbidden-minor characterizations (Kuratowski, Robertson–Seymour) traces its lineage to this kind of statement. References: [Diestel 2017](../bibliographies/diestel2017.md) §1.6, [Bondy–Murty 2008](../bibliographies/bondy-murty2008.md) §4.2.
-
-## Earlier material
-
-A [graph](../../../glossary/terms/graph.md) $G = (V, E)$ is [bipartite](../../../glossary/terms/bipartite-graph.md) if and only if it contains no [cycle](../research/2026/07/31/lenticule-import/scripts/graphing/content/graph/explanations/teaching/explanations/cycle.md) of odd length.
-
-This is the canonical example of a graph property characterized by a *forbidden substructure* — the entire research program of forbidden-subgraph and forbidden-minor characterizations (Kuratowski, Robertson–Seymour) traces its lineage to this kind of statement. References: [Diestel 2017](../bibliographies/diestel2017.md) §1.6, [Bondy–Murty 2008](../bibliographies/bondy-murty2008.md) §4.2.

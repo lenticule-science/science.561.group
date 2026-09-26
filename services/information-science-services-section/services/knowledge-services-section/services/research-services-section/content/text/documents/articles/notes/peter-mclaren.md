@@ -29,9 +29,3 @@ Peter McLaren (1948–) is a Canadian-born scholar who connected [critical pedag
 - [critical pedagogy](../../education/disciplines/pedagogy/schools/critical-pedagogy/index.md) — the tradition he belongs to
 - [Paulo Freire](./paulo-freire.md) — his primary intellectual predecessor
 - [Henry Giroux](./henry-giroux.md) — a collaborator in developing critical pedagogy
-
-## Earlier material
-
-- [critical pedagogy](../../../../../../../../../../philosophy-services-section/services/logic-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/yet-another-unsorted-archive-dump/predication-categories/_archive/bucket-4/articulating/library/aperiodic-articulation-category/library/aperiodic-articulation-cell/library/potential-aperiodic-articulation-cell/predicating/library/transfinite-predication-category/hacking/library/predicate-category/hacking/library/references/education/disciplines/pedagogy/schools/critical-pedagogy/index.md) — the tradition he belongs to
-- [Paulo Freire](../../../../../../../../../../philosophy-services-section/services/logic-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/yet-another-unsorted-archive-dump/predication-categories/_archive/bucket-4/articulating/library/aperiodic-articulation-category/library/aperiodic-articulation-cell/library/potential-aperiodic-articulation-cell/predicating/library/transfinite-predication-category/hacking/library/predicate-category/hacking/library/references/people/peter-mclaren/paulo-freire.md) — his primary intellectual predecessor
-- [Henry Giroux](henry-giroux.md) — a collaborator in developing critical pedagogy

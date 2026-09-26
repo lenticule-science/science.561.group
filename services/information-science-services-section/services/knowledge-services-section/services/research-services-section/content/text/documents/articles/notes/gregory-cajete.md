@@ -28,8 +28,3 @@ Gregory Cajete is a Tewa educator and scholar whose work describes Indigenous ed
 
 - [Indigenous pedagogies](../../education/disciplines/pedagogy/schools/indigenous-pedagogies/index.md) — the tradition his work belongs to
 - [land-based education](../../../../../../../../../../social-science-services-section/services/education-science-services-section/content/text/glossary/terms/land-based-education.md) — the framework his work develops
-
-## Earlier material
-
-- [Indigenous pedagogies](../../../../../../../../../../philosophy-services-section/services/logic-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/yet-another-unsorted-archive-dump/predication-categories/_archive/bucket-4/articulating/library/aperiodic-articulation-category/library/aperiodic-articulation-cell/library/potential-aperiodic-articulation-cell/predicating/library/transfinite-predication-category/hacking/library/predicate-category/hacking/library/references/education/disciplines/pedagogy/schools/indigenous-pedagogies/index.md) — the tradition his work belongs to
-- [land-based education](../../../../../../../../../../social-science-services-section/services/education-science-services-section/content/text/glossary/terms/land-based-education.md) — the framework his work develops

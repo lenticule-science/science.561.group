@@ -30,9 +30,3 @@ Wohlstetter's work shaped every subsequent study of intelligence failure, includ
 - [Signal-to-noise](../../../glossary/terms/signal-to-noise.md) — the foundational problem she identified
 - [Intelligence failure](../../../glossary/terms/intelligence-failure.md) — the phenomenon her work reframed as structural
 - [Indications and warning](../../../glossary/terms/indications-and-warning.md) — the operational system designed to address her problem
-
-## Earlier material
-
-- [Signal-to-noise](../../../glossary/terms/signal-to-noise.md) — the foundational problem she identified
-- [Intelligence failure](../../../glossary/terms/intelligence-failure.md) — the phenomenon her work reframed as structural
-- [Indications and warning](../../../glossary/terms/indications-and-warning.md) — the operational system designed to address her problem

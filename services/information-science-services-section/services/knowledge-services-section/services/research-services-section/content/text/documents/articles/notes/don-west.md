@@ -25,8 +25,3 @@ Don West (1906–1992) was an American poet, educator, labor organizer, and mini
 
 - [Myles Horton](./myles-horton.md) — co-founded Highlander Folk School
 - [popular education](../../../../../../../../../../social-science-services-section/services/education-science-services-section/content/text/glossary/terms/popular-education.md) — the tradition Highlander helped establish in the United States
-
-## Earlier material
-
-- [Myles Horton](myles-horton.md) — co-founded Highlander Folk School
-- [popular education](../../../../../../../../../../social-science-services-section/services/education-science-services-section/content/text/glossary/terms/popular-education.md) — the tradition Highlander helped establish in the United States

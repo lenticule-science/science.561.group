@@ -22,12 +22,3 @@ Vertices are classified by degree:
 - *Sink* (in a digraph) — out-degree zero.
 
 The [handshake lemma](../../documents/articles/research-articles/handshake-lemma.md) is the fundamental identity governing degrees; the [Eulerian-circuit criterion](../../documents/articles/research-articles/eulerian-circuit-criterion.md) characterizes Eulerian circuits in terms of every degree being even.
-
-## Earlier material
-
-- *Isolated* — degree zero.
-- *Leaf* — degree one (especially in a [tree](tree.md)).
-- *Source* (in a digraph) — in-degree zero.
-- *Sink* (in a digraph) — out-degree zero.
-
-The [handshake lemma](../../documents/articles/research-articles/handshake-lemma.md) is the fundamental identity governing degrees; the [Eulerian-circuit criterion](../../documents/articles/research-articles/eulerian-circuit-criterion.md) characterizes Eulerian circuits in terms of every degree being even.

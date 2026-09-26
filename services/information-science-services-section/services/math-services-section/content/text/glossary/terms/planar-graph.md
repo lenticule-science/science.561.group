@@ -32,10 +32,3 @@ Planar graphs sit at the intersection of graph theory and topology. The two foun
 - **[Four-colour theorem](../../documents/articles/research-articles/four-colour.md)** — every planar graph admits a proper vertex-colouring with four colours.
 
 Both are stated here with `status: sketch` and proofs deferred to citations. References: [Diestel 2017](../../documents/articles/bibliographies/diestel2017.md) Ch. 4; the four-colour proofs are [Appel–Haken 1977](../../documents/articles/bibliographies/appel-haken1977.md) and [Robertson–Sanders–Seymour–Thomas 1997](../../documents/articles/bibliographies/robertson-sanders-seymour-thomas1997.md); Kuratowski's theorem is [Kuratowski 1930](../../documents/articles/bibliographies/kuratowski1930.md).
-
-## Earlier material
-
-- **[Kuratowski's theorem](../../documents/articles/research-articles/kuratowski.md)** — a graph is planar iff it contains no subdivision of $K_5$ or $K_{3,3}$ as a subgraph.
-- **[Four-colour theorem](../../documents/articles/research-articles/four-colour.md)** — every planar graph admits a proper vertex-colouring with four colours.
-
-Both are stated here with `status: sketch` and proofs deferred to citations. References: [Diestel 2017](../../documents/articles/bibliographies/diestel2017.md) Ch. 4; the four-colour proofs are [Appel–Haken 1977](../../documents/articles/bibliographies/appel-haken1977.md) and [Robertson–Sanders–Seymour–Thomas 1997](../../documents/articles/bibliographies/robertson-sanders-seymour-thomas1997.md); Kuratowski's theorem is [Kuratowski 1930](../../documents/articles/bibliographies/kuratowski1930.md).

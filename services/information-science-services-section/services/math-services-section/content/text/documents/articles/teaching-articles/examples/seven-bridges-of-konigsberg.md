@@ -57,9 +57,3 @@ The result is verified by direct computation of the four degrees and direct appl
 ## What this exemplifies
 
 This is the *founding* example of graph theory. The structural moves it requires — abstract concrete geography into vertices and edges; recognize parallel edges (so the object is a multigraph, not a simple graph); compute a graph invariant (the degree sequence); apply a theorem characterizing the property of interest (Eulerian-circuit existence) in terms of the invariant — are the moves graph theory makes whenever it is applied to a concrete problem. Without this example as the anchor, the [Eulerian-circuit criterion](../../research-articles/eulerian-circuit-criterion.md) is an abstract claim; with it, the criterion is the answer to a question someone actually asked. See [Euler 1736](../../bibliographies/euler1736.md) and [Diestel 2017](../../bibliographies/diestel2017.md) §1.8.
-
-## Earlier material
-
-There are seven bridges. Each is an unordered pair of landmasses (multiple bridges may join the same pair, so this is a [multigraph](../../../../glossary/terms/multigraph.md), not a [simple graph](../../../../glossary/terms/simple-graph.md)). The historical configuration:
-
-Degree sum: $3 + 3 + 5 + 3 = 14 = 2 \cdot 7 = 2 |E|$, verifying the [handshake lemma](../../research-articles/handshake-lemma.md). All four vertices have odd degree.

@@ -43,7 +43,3 @@ This is not a failure of intelligence in the conventional sense (collection fail
 - [Strategic culture analysis](./strategic-culture-analysis.md) — the discipline's partial correction for legibility's destruction of the adversary's self-understanding
 - [Collection disciplines](./collection-disciplines.md) — the sensory apparatus through which legibility is produced
 - [Intelligence failure](./intelligence-failure.md) — which legibility analysis reframes as a structural property rather than a correctable error
-
-## Earlier material
-
-**Collection disciplines as simplifying grids.** Each [collection discipline](collection-disciplines.md) — [HUMINT](humint.md), [SIGINT](sigint.md), [IMINT](imint.md), [OSINT](osint.md) — captures the adversary through a specific sensory modality. IMINT sees physical infrastructure. SIGINT hears communications. HUMINT accesses human intention through recruited sources. Each discipline produces a partial view that its practitioners treat as authoritative within its domain. The adversary as known to the intelligence system is the sum of these partial views — but the summation itself is a legibility operation that assumes what is collected is what matters.

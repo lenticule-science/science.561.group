@@ -77,10 +77,3 @@ What can be said with reasonable confidence is that the strike required multi-di
 
 - [Collection disciplines](../../../../../../../content/text/glossary/terms/collection-disciplines.md) — the multi-source architecture this case demonstrates
 - [Intelligence cycle](../../../../../../../content/text/glossary/terms/intelligence-cycle.md) — the process compressed to near-real-time in targeting operations
-
-## Earlier material
-
-**[IMINT](../../../../../../../content/text/glossary/terms/imint.md) and [GEOINT](../../../../../../../content/text/glossary/terms/geoint.md).** Satellite surveillance confirmed routines and mapped the physical layout of the compound. CNN reported that intelligence agencies were "keeping tabs" on senior leaders who "rarely gathered in the same place" — a monitoring requirement that depends on persistent overhead imagery to track movements across multiple locations.
-
-- [Collection disciplines](../../../../../../../content/text/glossary/terms/collection-disciplines.md) — the multi-source architecture this case demonstrates
-- [Intelligence cycle](../../../../../../../content/text/glossary/terms/intelligence-cycle.md) — the process compressed to near-real-time in targeting operations

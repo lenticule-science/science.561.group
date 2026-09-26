@@ -19,9 +19,3 @@ The [2026 Iran war's post-strike disclosures](../../../../services/2026-iran-war
 - [Denial and deception](./denial-and-deception.md) — the adversarial complement to information operations
 - [Operational security](./operational-security.md) — the defensive function IO can compromise through disclosure
 - [Politicization](./politicization.md) — the institutional risk when IO objectives shape analytic outputs
-
-## Earlier material
-
-- [Denial and deception](denial-and-deception.md) — the adversarial complement to information operations
-- [Operational security](operational-security.md) — the defensive function IO can compromise through disclosure
-- [Politicization](politicization.md) — the institutional risk when IO objectives shape analytic outputs

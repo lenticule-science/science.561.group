@@ -59,11 +59,3 @@ since each directed edge contributes $1$ to one in-degree and $1$ to one out-deg
 ## Remarks
 
 The handshake lemma is the simplest non-trivial fact of graph theory and the prototype of all *double-counting* arguments. Its directed analogue is $\sum_v \deg^+(v) = \sum_v \deg^-(v) = |E|$, since each directed edge contributes $1$ to one out-degree and $1$ to one in-degree. The handshake lemma is what licenses the [Eulerian-circuit criterion](eulerian-circuit-criterion.md): an Eulerian circuit forces every vertex to have even degree.
-
-## Earlier material
-
-In any finite [graph](../../../glossary/terms/graph.md) $G = (V, E)$, the sum of [degrees](../../../glossary/terms/degree.md) equals twice the number of [edges](../research/2026/07/31/lenticule-import/scripts/graphing/content/graph/explanations/teaching/explanations/edge.md):
-
-For any finite undirected [graph](../../../glossary/terms/graph.md) $G = (V, E)$,
-
-For [directed graphs](../../../glossary/terms/directed-graph.md), the analogue is

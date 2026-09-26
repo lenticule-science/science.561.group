@@ -21,7 +21,3 @@ The grammar's core logic operates through signal resolution (emission resolved b
 The central design commitments of relational worlding distinguish it from conventional approaches: coherence is emergent rather than designed, narrative is local rather than world-determining, contradiction is history rather than failure, and [canon](../../../../../../content/text/glossary/terms/canon.md) is recursive. These commitments align with the broader project of [relationality](../../../../philosophy/domains/relationality/_index.md), which positions relations as ontologically prior to entities.
 
 The RWG has been applied in practice through the [Praxonic Worldbuilding Guide](./praxonic-worldbuilding.md), which elaborates the grammar into a recursive method for constructing worlds from pressure, and in the Hevî Mala storyworld guide, which demonstrates the approach in a specific fictional setting.
-
-## Earlier material
-
-The RWG has been applied in practice through the [Praxonic Worldbuilding Guide](praxonic-worldbuilding.md), which elaborates the grammar into a recursive method for constructing worlds from pressure, and in the Hevî Mala storyworld guide, which demonstrates the approach in a specific fictional setting.

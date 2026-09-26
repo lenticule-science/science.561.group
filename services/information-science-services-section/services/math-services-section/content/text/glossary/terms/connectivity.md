@@ -18,7 +18,3 @@ Refinements:
 - In a [directed graph](./directed-graph.md), *strong connectivity* requires a directed path in *both* directions between every pair; *weak connectivity* asks only that the underlying undirected graph be connected.
 
 Connectivity is one of the three defining properties of a [tree](./tree.md) (the other two being [acyclicity](acyclicity.md) and the edge-count $|E| = |V| - 1$ — see [tree-equivalences](../../documents/articles/research-articles/tree-equivalences.md)). It is the substrate of [reachability](reachability.md) in directed graphs and of network-robustness in applied settings.
-
-## Earlier material
-
-Connectivity is one of the three defining properties of a [tree](tree.md) (the other two being [acyclicity](acyclicity.md) and the edge-count $|E| = |V| - 1$ — see [tree-equivalences](../../documents/articles/research-articles/tree-equivalences.md)). It is the substrate of [reachability](reachability.md) in directed graphs and of network-robustness in applied settings.

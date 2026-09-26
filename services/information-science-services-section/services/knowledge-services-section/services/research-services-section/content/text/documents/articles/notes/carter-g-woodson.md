@@ -29,8 +29,3 @@ Carter Godwin Woodson (1875–1950) was an American historian, author, and educa
 
 - [Black radical pedagogies](../../education/disciplines/pedagogy/schools/black-radical-pedagogies/index.md) — the tradition his work helped establish
 - [banking model](../../../../../../../../../../social-science-services-section/services/education-science-services-section/content/text/glossary/terms/banking-model.md) — the pedagogical dynamic his critique anticipates
-
-## Earlier material
-
-- [Black radical pedagogies](../../../../../../../../../../philosophy-services-section/services/logic-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/yet-another-unsorted-archive-dump/predication-categories/_archive/bucket-4/articulating/library/aperiodic-articulation-category/library/aperiodic-articulation-cell/library/potential-aperiodic-articulation-cell/predicating/library/transfinite-predication-category/hacking/library/predicate-category/hacking/library/references/education/disciplines/pedagogy/schools/black-radical-pedagogies/index.md) — the tradition his work helped establish
-- [banking model](../../../../../../../../../../social-science-services-section/services/education-science-services-section/content/text/glossary/terms/banking-model.md) — the pedagogical dynamic his critique anticipates

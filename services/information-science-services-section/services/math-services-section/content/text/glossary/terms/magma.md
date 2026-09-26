@@ -20,7 +20,3 @@ The algebraic hierarchy builds from magmas by adding axioms one at a time. A mag
 Magmas are rarely studied in isolation. Their value is as the starting point for universal algebra — the study of algebraic structures defined by operations and equations. Every algebraic structure (group, ring, [lattice](./lattice.md)) is a magma with additional axioms. A [homomorphism](./homomorphism.md) between algebraic structures is a [function](./function.md) that preserves whatever operations and axioms are present. The magma level is where this generality begins: a homomorphism of magmas preserves the binary operation, and every stronger notion of homomorphism (group homomorphism, ring homomorphism) adds preservation of the additional structure.
 
 The word "magma" was introduced by Bourbaki to name this minimal structure. Before Bourbaki, it had no standard name — mathematicians jumped directly to semigroups or groups. Having a name for the starting point makes the hierarchy explicit and lets you see exactly what each axiom buys you.
-
-## Earlier material
-
-A magma is a [set](set.md) M equipped with a binary operation $\ast : M \times M \to M$. No axioms are imposed on the operation — it need not be associative, commutative, or have an [identity element](identity-element.md). A magma is the most general algebraic structure with a single binary operation. It says: there is a set, and there is a way to combine two elements into a third element. Nothing else.

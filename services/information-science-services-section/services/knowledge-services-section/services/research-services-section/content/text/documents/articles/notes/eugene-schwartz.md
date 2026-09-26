@@ -30,9 +30,3 @@ Eugene Schwartz (1927–1995) was an American copywriter and direct-response adv
 - [copywriting](../../writing/disciplines/copywriting/index.md) — the discipline Schwartz theorized
 - [value proposition](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/value-proposition.md) — must be calibrated to the reader's awareness level
 - [headline](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/headline.md) — Schwartz's awareness levels determine headline strategy
-
-## Earlier material
-
-- [copywriting](../../../../../../../../../../philosophy-services-section/services/logic-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/yet-another-unsorted-archive-dump/predication-categories/_archive/bucket-4/articulating/library/aperiodic-articulation-category/library/aperiodic-articulation-cell/library/potential-aperiodic-articulation-cell/predicating/library/transfinite-predication-category/hacking/library/predicate-category/hacking/library/references/writing/disciplines/copywriting/index.md) — the discipline Schwartz theorized
-- [value proposition](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/value-proposition.md) — must be calibrated to the reader's awareness level
-- [headline](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/headline.md) — Schwartz's awareness levels determine headline strategy

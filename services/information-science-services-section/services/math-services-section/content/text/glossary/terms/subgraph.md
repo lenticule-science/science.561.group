@@ -25,7 +25,3 @@ The inclusion $H \subseteq G$ is itself a [graph homomorphism](./graph-homomorph
 ## Position
 
 Subgraphs are how graph theory talks about *parts* of a graph. Spanning subgraphs are the substrate of spanning-tree problems; induced subgraphs are central to extremal graph theory and to the Kuratowski/planarity characterizations (a graph is planar iff it has no [Kuratowski subgraph](../../documents/articles/research-articles/kuratowski.md) — meaning no subgraph that is a subdivision of $K_5$ or $K_{3,3}$). Reference: [Diestel 2017](../../documents/articles/bibliographies/diestel2017.md) §1.1.
-
-## Earlier material
-
-The inclusion $H \subseteq G$ is itself a [graph homomorphism](graph-homomorphism.md), namely the [subgraph inclusion morphism](subgraph-inclusion.md).

@@ -35,12 +35,3 @@ The history of intelligence failures is in part a history of stovepiping failure
 ## Relation to the Stasi model
 
 The Stasi's analogue surveillance apparatus, documented in [Pattern Before Person](../../documents/articles/notes/pattern-before-person.md), operated without the formal INTs framework but practiced a functional equivalent: postal interception (analogous to SIGINT on communications), physical surveillance (analogous to IMINT), informant networks (analogous to HUMINT), forensic analysis (analogous to MASINT), and cross-departmental correlation (analogous to multi-INT fusion). The Stasi's blob-first epistemology — constructing patterns from heterogeneous fragments before identifying individuals — represents a model of multi-source fusion that modern computational surveillance systems have formalized and scaled.
-
-## Earlier material
-
-- **[HUMINT](humint.md)** (Human Intelligence) — information from human sources. The oldest discipline. High value for accessing intent and context; slow, difficult to verify, vulnerable to deception and manipulation.
-- **[SIGINT](sigint.md)** (Signals Intelligence) — information from intercepted communications and electronic emissions. Scalable and automatable; dependent on the adversary communicating electronically and on the collector's ability to decrypt or interpret intercepts.
-- **[IMINT](imint.md)** (Imagery Intelligence) — information from visual and multispectral imagery. Provides physical evidence of ground conditions; requires expert interpretation and is vulnerable to camouflage, concealment, and deception.
-- **[OSINT](osint.md)** (Open-Source Intelligence) — information from publicly available sources. Cheap and abundant; the challenge is filtering signal from volume and evaluating reliability without institutional controls.
-- **[MASINT](masint.md)** (Measurement and Signature Intelligence) — information from physical signatures. Highly specific and difficult to fabricate; narrow in scope and technically demanding.
-- **[GEOINT](geoint.md)** (Geospatial Intelligence) — integration of imagery with geospatial data. Provides the spatial framework within which other collection is situated.

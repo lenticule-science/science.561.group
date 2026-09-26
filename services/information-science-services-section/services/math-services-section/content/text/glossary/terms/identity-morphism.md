@@ -27,7 +27,3 @@ What the identity morphism looks like depends on the category. In Set, the ident
 Identity morphisms are what make [isomorphisms](./isomorphism.md) definable. A morphism $f : A \to B$ is an isomorphism exactly when there exists $g : B \to A$ such that both composites $g \circ f$ and $f \circ g$ equal the respective identity morphisms. "Round trip equals doing nothing" can only be stated if "doing nothing" has a name — and the identity morphism is that name.
 
 Identity morphisms are unique. If $e : A \to A$ satisfies $f \circ e = f$ for all $f$ out of A, then $e = \mathrm{id}_A$. The proof: $e = \mathrm{id}_A \circ e = \mathrm{id}_A$, using the identity law for $\mathrm{id}_A$ on the left. Uniqueness means each object has exactly one identity morphism, not just at least one.
-
-## Earlier material
-
-What the identity morphism looks like depends on the category. In Set, the identity morphism on a [set](set.md) A is the identity [function](../../documents/articles/research/2026/07/31/lenticule-import/_archive/morphism/scripts/terms/function.md) $x \mapsto x$. In a group viewed as a one-object category, the identity morphism is the group identity element. In a [partial order](partial-order.md), the identity morphism on a is the [reflexivity](reflexive.md) assertion $a \leq a$.

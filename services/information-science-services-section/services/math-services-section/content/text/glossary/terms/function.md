@@ -24,9 +24,3 @@ A function is not an [operation](./operation.md). An operation maps a set into i
 A function can be injective (different inputs always give different outputs), surjective (every element of the codomain is hit), or bijective (both). A bijection has an inverse: a function $f^{-1} : B \to A$ such that $f^{-1} \circ f = \mathrm{id}_A$ and $f \circ f^{-1} = \mathrm{id}_B$.
 
 In the category Set, sets are objects and functions are morphisms. Composition of functions is composition of morphisms. The identity function is the identity morphism. This is the standard example of a [category](./category.md) — and the reason category theory generalizes set-theoretic reasoning.
-
-## Earlier material
-
-In the category Set, sets are objects and functions are morphisms. Composition of functions is composition of morphisms. The identity function is the identity morphism. This is the standard example of a [category](../../documents/articles/research/2026/07/31/lenticule-import/_archive/morphism/_archive/theories/categories/theories/ordinary-categories/objects/category.md) — and the reason category theory generalizes set-theoretic reasoning.
-
-In the category Set, sets are objects and functions are morphisms. Composition of functions is composition of morphisms. The identity function is the identity morphism. This is the standard example of a [category](../../documents/articles/research/2026/07/31/lenticule-import/content/function/domains/objects/domains/categories/domains/ordinary-categories/terms/category.md) — and the reason category theory generalizes set-theoretic reasoning.

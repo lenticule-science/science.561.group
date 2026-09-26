@@ -32,9 +32,3 @@ Let $\mathcal{E}$ be an elementary topos with [subobject classifier](./subobject
 - *Trivial topologies:* On any topos $\mathcal{E}$, $j = \mathrm{id}_\Omega$ gives $\mathrm{Sh}_j(\mathcal{E}) = \mathcal{E}$, and the constant map $j = \top$ (sending everything to $\top$) gives $\mathrm{Sh}_j(\mathcal{E}) \simeq \mathbf{1}$ (the terminal topos).
 - *Double-negation topology:* On any topos, $j = \neg\neg: \Omega \to \Omega$ is a Lawvere-Tierney topology. The $\neg\neg$-sheaves form a Boolean subtopos. For $\mathrm{Sh}(X)$ with $X$ a topological space, this corresponds to the sheaves on the smallest dense sublocale of $X$.
 - *Spatial topologies:* On the topos $\mathrm{Sh}(X)$ for a topological space $X$, each Lawvere-Tierney topology corresponds to a sublocale of $X$.
-
-## Earlier material
-
-**Definition.** A *Lawvere-Tierney topology* (or *local operator*) on $\mathcal{E}$ is a [morphism](morphism.md) $j: \Omega \to \Omega$ satisfying:
-
-**Proposition.** *A Lawvere-Tierney topology $j$ is equivalently a [closure operator](../../../../../../../natural-science-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/library/science/mathematics/_archive/from-discourse-domain-locus-math/teaching/explanations/closure-operator/index.md) on the internal [Heyting algebra](../../../../../../../natural-science-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/library/science/mathematics/_archive/from-discourse-domain-locus-math/teaching/explanations/heyting-algebra/index.md) $\Omega$ that preserves finite meets. In particular, $p \leq j(p)$ for all $p$ (inflation), which follows from axioms (1) and (3): since $p = p \wedge \top$, we have $j(p) = j(p) \wedge j(\top) = j(p) \wedge \top = j(p) \geq p$.*

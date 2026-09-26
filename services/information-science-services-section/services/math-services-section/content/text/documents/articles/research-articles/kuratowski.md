@@ -25,7 +25,3 @@ The *sufficiency* direction is the deep half: given a graph with no $K_5$- or $K
 ## Why this matters
 
 Kuratowski's theorem is the prototype of a *forbidden-substructure characterization*: a graph property is captured by ruling out a finite list of obstructions. The Robertson–Seymour graph-minors theorem (a vast generalization) establishes that *every* minor-closed graph property has such a finite obstruction set — see [Robertson–Sanders–Seymour–Thomas 1997](../bibliographies/robertson-sanders-seymour-thomas1997.md) for the lineage. Kuratowski's theorem is the founding example of this entire research program.
-
-## Earlier material
-
-A finite [graph](../../../glossary/terms/graph.md) is [planar](../../../glossary/terms/planar-graph.md) if and only if it contains no [subgraph](../../../glossary/terms/subgraph.md) that is a *subdivision* of $K_5$ (the [complete graph](../../../glossary/terms/complete-graph.md) on five vertices) or $K_{3,3}$ (the complete [bipartite](../../../glossary/terms/bipartite-graph.md) graph on $3+3$ vertices).

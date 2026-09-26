@@ -32,7 +32,3 @@ Bondy & Murty serves as the corpus's secondary reference, useful when Diestel's 
 ## Status
 
 The 2008 Springer edition is the current edition. Errata are maintained on the authors' websites.
-
-## Earlier material
-
-Bondy & Murty serves as the corpus's secondary reference, useful when Diestel's treatment is sparse on a topic — particularly directed graphs (Bondy & Murty Ch. 2 is heavier than Diestel's §1.10), weighted graphs and shortest-path algorithmics (Ch. 7), and the algorithmic / matroid / connectivity perspective (Ch. 8 onwards). The [directed-graph](../../../glossary/terms/directed-graph.md), [weighted-graph](../../../glossary/terms/weighted-graph.md), [dag](../../../glossary/terms/dag.md), [topological-sort](../research/2026/07/31/lenticule-import/scripts/graphing/content/graph/morphisms/topological-sort.md), and [transitive-closure](../../../glossary/terms/transitive-closure.md) notes follow Bondy & Murty's conventions where they diverge from Diestel.

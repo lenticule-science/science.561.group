@@ -120,15 +120,3 @@ exampleAssociativityTest
   : numberAdd exampleOne (numberAdd exampleTwo exampleThree)
   ≡ numberAdd (numberAdd exampleOne exampleTwo) exampleThree
 exampleAssociativityTest = additionAssociative exampleOne exampleTwo exampleThree
-
-## Earlier material
-
------------------------------------------------------------------------- -- Arithmetic principles
-
------------------------------------------------------------------------- -- Order principles
-
------------------------------------------------------------------------- -- Well-foundedness
-
------------------------------------------------------------------------- -- Induction principles
-
------------------------------------------------------------------------- -- Infinity property

@@ -43,9 +43,3 @@ A graph with no cycles is *acyclic*. Acyclic structures are central to several g
 - A [tree](./tree.md) is a connected acyclic undirected graph.
 - A [DAG](./dag.md) (directed acyclic graph) is a directed graph with no directed cycles. DAGs admit a *topological order* on their vertices, in which every edge runs from an earlier vertex to a later one.
 - A *forest* is an acyclic undirected graph (a disjoint union of trees).
-
-## Earlier material
-
-In a [directed graph](directed-graph.md), a *directed cycle* requires every consecutive edge to be oriented forward. A digraph with no directed cycle is a [DAG](dag.md); the property of having no directed cycle is [acyclicity](acyclicity.md).
-
-The shortest cycle length in a graph is the *girth*; a graph with no cycle at all has *infinite girth* and is a [forest](forest.md). [Bipartite graphs](bipartite-graph.md) are exactly the graphs with no odd-length cycle (see [bipartite-iff-no-odd-cycle](../../documents/articles/research-articles/bipartite-iff-no-odd-cycle.md)). Eulerian circuits — cycles that traverse every edge exactly once — are characterized by [eulerian-circuit-criterion](../../documents/articles/research-articles/eulerian-circuit-criterion.md).

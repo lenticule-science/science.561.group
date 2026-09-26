@@ -34,7 +34,3 @@ The [Stasi's blob-first model](../../documents/articles/notes/pattern-before-per
 ## Implications
 
 Adversarial epistemology has implications beyond military intelligence. Any domain where knowledge production is contested — journalism, law, political organizing, scientific peer review — operates under some degree of adversarial epistemic pressure. The intelligence discipline's methods for operating under this pressure — structured analytic techniques, analysis of competing hypotheses, red teaming, source reliability assessment — are attempts to maintain cognitive function under conditions designed to degrade it. Whether these methods are adequate to the synthetic turn remains an open question.
-
-## Earlier material
-
-This condition creates recursive loops. If the analyst suspects deception, they may reject genuine intelligence. If they trust too readily, they may accept adversary plants. The [wilderness of mirrors](wilderness-of-mirrors.md) describes the endpoint of this recursion — a state where no interpretation can be confidently held because every interpretation may be exactly what the adversary intends the analyst to believe.

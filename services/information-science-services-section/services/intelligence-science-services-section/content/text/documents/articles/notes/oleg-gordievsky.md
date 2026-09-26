@@ -36,9 +36,3 @@ Gordievsky's case demonstrates the strategic value of [HUMINT](../../../glossary
 - [HUMINT](../../../glossary/terms/humint.md) — the collection discipline his case exemplifies
 - [Counterintelligence](../../../glossary/terms/counterintelligence.md) — both the function he assisted (Western CI) and the threat that exposed him (Ames)
 - [Liaison](../../../glossary/terms/liaison.md) — MI6's management of the case
-
-## Earlier material
-
-- [HUMINT](../../../glossary/terms/humint.md) — the collection discipline his case exemplifies
-- [Counterintelligence](../../../glossary/terms/counterintelligence.md) — both the function he assisted (Western CI) and the threat that exposed him (Ames)
-- [Liaison](../../../glossary/terms/liaison.md) — MI6's management of the case

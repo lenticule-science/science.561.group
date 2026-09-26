@@ -24,7 +24,3 @@ Sacks' case studies are relevant to [somatics](/medicine/concepts/somatics/index
 ## Related
 
 - [proprioception](../../../../../../../../../../natural-science-services-section/services/biological-science-services-section/services/medical-science-services-section/services/somatics-services-section/content/text/glossary/terms/proprioception.md) — the sense whose loss Sacks documented
-
-## Earlier material
-
-- [proprioception](../../../../../../../../../../natural-science-services-section/services/biological-science-services-section/services/medical-science-services-section/services/somatics-services-section/content/text/glossary/terms/proprioception.md) — the sense whose loss Sacks documented

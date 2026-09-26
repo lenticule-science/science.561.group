@@ -41,7 +41,3 @@ Dissemination delivers finished intelligence to decision-makers in time to affec
 The cycle is recursive. Analysis generates new collection requirements; collection reveals analytic gaps; dissemination prompts new questions from decision-makers. The cycle's value lies not in any single phase but in its speed and fidelity — how quickly raw signal becomes decision-relevant knowledge without distortion.
 
 The recursive nature of the cycle creates a structural similarity to the individual combatant's decision process documented in [Martial Gesture Grammar](../../../topics/combat-systems/martial-gesture-grammar/index.md): register pressure, interpret signal, select response, modulate under feedback. The intelligence cycle is this process scaled from the body to the institution — slower, mediated by more intermediaries, operating on more abstract signals, but governed by the same logic of perception-under-threat.
-
-## Earlier material
-
-Collection gathers raw information through multiple [disciplines](collection-disciplines.md), each with distinct methods, capabilities, and limitations: [HUMINT](humint.md), [SIGINT](sigint.md), [IMINT](imint.md), [OSINT](osint.md), [MASINT](masint.md), and [GEOINT](geoint.md). Collection is cued by direction and constrained by available sensors, access, and adversary countermeasures.

@@ -31,9 +31,3 @@ Claude Hopkins (1866–1932) was an American advertising pioneer who founded cop
 - [copywriting](../../writing/disciplines/copywriting/index.md) — the discipline Hopkins helped formalize
 - [A/B testing](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/ab-testing.md) — Hopkins's core method, now digital
 - [headline](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/headline.md) — Hopkins tested headlines systematically
-
-## Earlier material
-
-- [copywriting](../../../../../../../../../../philosophy-services-section/services/logic-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/yet-another-unsorted-archive-dump/predication-categories/_archive/bucket-4/articulating/library/aperiodic-articulation-category/library/aperiodic-articulation-cell/library/potential-aperiodic-articulation-cell/predicating/library/transfinite-predication-category/hacking/library/predicate-category/hacking/library/references/writing/disciplines/copywriting/index.md) — the discipline Hopkins helped formalize
-- [A/B testing](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/ab-testing.md) — Hopkins's core method, now digital
-- [headline](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/headline.md) — Hopkins tested headlines systematically

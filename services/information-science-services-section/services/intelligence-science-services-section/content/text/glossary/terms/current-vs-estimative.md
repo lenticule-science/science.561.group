@@ -26,7 +26,3 @@ The deepest form of this tension is epistemological. Current intelligence deals 
 - [National Intelligence Estimate](./national-intelligence-estimate.md) — the principal estimative product
 - [Intelligence cycle](./intelligence-cycle.md) — the process that produces both current and estimative intelligence
 - [Analyst-policymaker relationship](./analyst-policymaker-relationship.md) — the dynamic that shapes demand for each type
-
-## Earlier material
-
-[Estimative intelligence](estimative-intelligence.md), by contrast, is slower, more deliberate, and more uncertain. The [National Intelligence Estimate](national-intelligence-estimate.md) is its exemplary product — a coordinated community judgment on a major question, produced over weeks or months, employing [estimative language](estimative-language.md) to convey probability and confidence. Estimative intelligence answers questions like: will this government survive the next year? Is this weapons program intended for deterrence or first use? What would this adversary do if confronted with a specific contingency? These are the questions that matter most for strategic decision-making, and they are the questions intelligence is least equipped to answer with certainty.

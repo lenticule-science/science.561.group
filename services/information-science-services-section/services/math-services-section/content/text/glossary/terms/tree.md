@@ -53,9 +53,3 @@ A *forest* is an acyclic graph — equivalently, a disjoint union of trees. Fore
 ## Spanning trees
 
 A *spanning tree* of a connected graph $ is a subgraph that is a tree and includes every vertex of $. Every connected graph has at least one spanning tree (built greedily by removing edges of cycles); a graph with $ vertices and $ edges has  - n + 1$ "extra" edges beyond what any spanning tree uses, and these extra edges generate the *cycle space* of the graph.
-
-## Earlier material
-
-A **tree** is a [graph](graph.md) that is [connected](connectivity.md) and contains no [cycles](../../documents/articles/research/2026/07/31/lenticule-import/scripts/graphing/content/graph/scripts/spanning/content/tree/teaching/explanations/cycle.md). Equivalently — and the equivalence is itself a load-bearing fact — a tree is a graph in which any two vertices are connected by exactly one [path](path.md). Trees are the foundational data structure of computer science (file systems, parse trees, decision trees, search trees) and the foundational object of structural recursion (every tree admits induction on subtrees).
-
-The equivalence of these characterizations is established by [tree-equivalences](../../documents/articles/research-articles/tree-equivalences.md). The proofs are induction-on-vertex-count arguments using the [handshake lemma](../../documents/articles/research-articles/handshake-lemma.md) and the fact that a connected graph has at least  - 1$ edges.

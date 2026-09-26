@@ -30,7 +30,3 @@ Félix Guattari (1930–1992) was a French psychoanalyst, philosopher, and polit
 - *A Thousand Plateaus* (1980, with Gilles Deleuze)
 - *The Three Ecologies* (1989)
 - *Chaosmosis* (1992)
-
-## Earlier material
-
-- [Libidinal investment](/philosophy/terms/libidinal-investment.md)

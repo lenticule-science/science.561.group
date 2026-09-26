@@ -97,9 +97,3 @@ The [diplomatic-intelligence paradox](../../../../../services/2026-iran-war-serv
 - Apply these techniques to the [2026 Iran war analysis](../analyses/2026-iran-war/index.md) texts as worked exercises
 - Study the [intelligence failure](../../../glossary/terms/intelligence-failure.md) concept page for additional cases where structured techniques were or were not applied
 - Read [The Structural Expectation of Failure](./the-structural-expectation-of-failure.md) for the argument that no technique eliminates the structural vulnerability
-
-## Earlier material
-
-**Exercise:** Take the following assessment from the [prewar intelligence landscape](../../../../../services/2026-iran-war-services-section/content/text/documents/articles/notes/prewar-intelligence-landscape.md) analysis: "Iran did not preemptively escalate in response to U.S. military buildup indicators because Iranian leadership assessed the buildup as coercive signaling rather than genuine preparation."
-
-**Exercise:** The [diplomatic-intelligence paradox](../../../../../services/2026-iran-war-services-section/content/text/glossary/terms/diplomatic-intelligence-paradox.md) identifies three possible explanations for Iran's negotiating posture in Oman and Geneva while the U.S. was simultaneously preparing strikes:

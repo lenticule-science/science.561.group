@@ -62,21 +62,3 @@ A Formula becomes a Proposition by interpretation: the denotation map ⟦-⟧_t 
 ## Open questions
 
 - Whether there are individual-denoting terms in the relational universe that are not of type Prop — e.g., terms denoting histories, relations, or entities as individuals. If so, the term/formula distinction re-emerges at a higher level.
-
-## Earlier material
-
-A formula is distinct from a [Term](../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/triage/relational-history-fiber-doctrine-language-well-formed-prop-term-definition.md): a term denotes an individual; a formula expresses a truth condition. Terms appear inside formulas as arguments; formulas do not appear inside terms as sub-expressions (in classical first-order logic).
-
-A Formula is a **syntactic** object — a string or tree built by formation rules, prior to any interpretation. Its semantic counterpart is a [Proposition](../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/triage/relational-history-fiber-proposition-element-heyting-algebra-nucleus-input.md): the truth condition the formula expresses under a specific interpretation in a specific context.
-
-This parallels the term/value distinction: a [Term](../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/triage/relational-history-fiber-doctrine-language-well-formed-prop-term-definition.md) is syntactic and denotes a value under an assignment; a Formula is syntactic and denotes a truth value under an interpretation.
-
-- Has a denotation ⟦M⟧_t ∈ H_t under the interpretation at history t (an [Application](../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/application.md) of the denotation map)
-- Can be acted on by Saturate (σ_t) and Transfer (Δ_t)
-- Settles to a fixed point ⟦M⟧_t ∈ H*_t when both nuclei leave it unchanged
-- The settled formula corresponds to a stable [Proposition](../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/triage/relational-history-fiber-proposition-element-heyting-algebra-nucleus-input.md) — a claim that has passed nucleus evaluation
-
-| | Syntactic | Semantic |
-|---|---|---|
-| Individual-denoting | [Term](../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/triage/relational-history-fiber-doctrine-language-well-formed-prop-term-definition.md) | value in algebra A |
-| Truth-evaluable | **Formula** | [Proposition](../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/triage/relational-history-fiber-proposition-element-heyting-algebra-nucleus-input.md) — element of H_t |

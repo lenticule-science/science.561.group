@@ -107,9 +107,3 @@ The distinction depends on whether the policymaker "ignored" the assessment (kne
 - Read [The Structural Expectation of Failure](./the-structural-expectation-of-failure.md) for the argument that failure is irreducible
 - Apply the [structured analytic techniques curriculum](./structured-analytic-techniques.md) to these cases as diagnostic exercises
 - Follow the [2026 Iran war analysis](../analyses/2026-iran-war/index.md) as a developing case study
-
-## Earlier material
-
-**Key concept:** The tension between [covert action](../../../glossary/terms/covert-action.md) and objective analysis — when the organization that produces the assessment also conducts the operation, the assessment cannot be independent.
-
-**Key concept:** [Stovepiping](../../../glossary/terms/stovepiping.md) — information held by different agencies and divisions was not integrated. The FBI's criminal investigation division and the CIA's counterterrorism center each held pieces of the picture. Institutional boundaries prevented the picture from being assembled.

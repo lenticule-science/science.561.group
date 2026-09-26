@@ -19,8 +19,3 @@ Snelson's best-known sculpture, *Needle Tower* (1968), stands 18 meters tall at 
 
 - [Buckminster Fuller](./buckminster-fuller.md) — architect who coined the term "tensegrity" for Snelson's structural principle
 - [tensegrity in movement](../../../../../../../../../../natural-science-services-section/services/biological-science-services-section/services/medical-science-services-section/services/somatics-services-section/content/text/glossary/terms/tensegrity-in-movement.md) — the somatic application of this structural principle
-
-## Earlier material
-
-- [Buckminster Fuller](buckminster-fuller.md) — architect who coined the term "tensegrity" for Snelson's structural principle
-- [tensegrity in movement](../../../../../../../../../../natural-science-services-section/services/biological-science-services-section/services/medical-science-services-section/services/somatics-services-section/content/text/glossary/terms/tensegrity-in-movement.md) — the somatic application of this structural principle

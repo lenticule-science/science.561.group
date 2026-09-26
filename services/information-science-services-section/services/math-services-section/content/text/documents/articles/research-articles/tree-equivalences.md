@@ -37,14 +37,3 @@ A connected graph on $n$ vertices is a tree iff removing any edge disconnects it
 ## Remarks
 
 The equivalence of these characterizations is what makes "tree" robust as a definition: every textbook picks a different starting axiom and recovers the rest. References: [Diestel 2017](../bibliographies/diestel2017.md) §1.5, [Bondy–Murty 2008](../bibliographies/bondy-murty2008.md) §4.1.
-
-## Earlier material
-
-For a finite [graph](../../../glossary/terms/graph.md) $G = (V, E)$ with $n = |V| \geq 1$, the following four statements are equivalent:
-
-1. $G$ is connected and acyclic (the definition of a [tree](../../../glossary/terms/tree.md)).
-2. $G$ is connected and $|E| = n - 1$.
-3. $G$ is acyclic and $|E| = n - 1$.
-4. Any two vertices of $G$ are joined by a *unique* [path](../../../glossary/terms/path.md).
-
-The equivalence of these characterizations is what makes "tree" robust as a definition: every textbook picks a different starting axiom and recovers the rest. References: [Diestel 2017](../bibliographies/diestel2017.md) §1.5, [Bondy–Murty 2008](../bibliographies/bondy-murty2008.md) §4.1.

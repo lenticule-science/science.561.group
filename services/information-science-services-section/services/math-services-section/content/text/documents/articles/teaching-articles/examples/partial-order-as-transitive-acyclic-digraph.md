@@ -66,7 +66,3 @@ The reachability digraph of $E_H$ is the transitive closure plus the diagonal (s
 ## What this exemplifies
 
 This is the *correspondence* this directory's downstream `depends-on:` edge to [partial-order](../../../../glossary/terms/partial-order.md) records typographically. A partial order is a transitive antisymmetric DAG; the Hasse diagram is the edge-minimal DAG witnessing the order; the partial order is recovered by transitive closure of the Hasse diagram. The correspondence runs in both directions, and is what makes graph theory the structural underlayer of order theory in the corpus's layering of the math directory. See [graphs-underneath-categories-and-orders](../explanations/graphs-underneath-categories-and-orders.md) for the broader narrative.
-
-## Earlier material
-
-The resulting [directed graph](../../../../glossary/terms/directed-graph.md) $D = (V, E)$.

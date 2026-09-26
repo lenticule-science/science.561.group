@@ -23,7 +23,3 @@ Every vertex has an in-degree (how many edges point to it) and an out-degree (ho
 Directed graphs are the simplest way to represent asymmetric relationships. "A must happen before B" is an edge from A to B. "Data flows from producer to consumer" is an edge from producer to consumer. The predicate relations in this library's frontmatter form a directed graph: each page is a vertex, each `predicate: value` pair is a directed edge.
 
 A [partial order](./partial-order.md) is a directed graph with transitivity and antisymmetry. A [category](./category.md) is a directed graph with composition. A state machine is a directed graph with labeled edges representing transitions. The directed graph is the common foundation underneath all of them.
-
-## Earlier material
-
-A [partial order](partial-order.md) is a directed graph with transitivity and antisymmetry. A [category](../../documents/articles/research/2026/07/31/lenticule-import/scripts/graphing/content/graph/scripts/directing/content/directed-graph/domains/objects/domains/categories/domains/ordinary-categories/terms/category.md) is a directed graph with composition. A state machine is a directed graph with labeled edges representing transitions. The directed graph is the common foundation underneath all of them.

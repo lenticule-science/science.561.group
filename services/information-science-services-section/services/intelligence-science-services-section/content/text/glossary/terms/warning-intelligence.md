@@ -24,7 +24,3 @@ The 2026 Iran war presents the warning problem from both sides simultaneously. F
 - [Indications and warning](./indications-and-warning.md) — the institutional system that operationalizes warning
 - [Indicator](./indicator.md) — the observable signals warning intelligence monitors
 - [Signal-to-noise](./signal-to-noise.md) — the epistemic challenge warning intelligence confronts
-
-## Earlier material
-
-Warning intelligence operates at two scales. **Strategic warning** provides days to weeks of notice that an adversary is preparing a major action — mobilization, force repositioning, diplomatic preparation for war. **Tactical warning** provides minutes to hours of notice that an attack is underway or imminent — missile launch detection, border crossing, air defense activation. The two scales require different collection architectures: strategic warning depends on [IMINT](imint.md), [SIGINT](sigint.md), and [HUMINT](humint.md) integrated over time; tactical warning depends on persistent sensors, automated detection, and pre-delegated response authority.

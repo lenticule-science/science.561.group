@@ -45,7 +45,3 @@ It MUST accept any input — extensivity guarantees the input is already in the 
 
 - Whether every ClosureSystem must have a unique fixed point, or whether multiple fixed points are permitted.
   In lattice-theoretic closure operators, the fixed point is unique; in more general settings it may not be.
-
-## Earlier material
-
-This concept projects from [closure-operator](../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/math/closure-operator.md), which establishes three axioms:

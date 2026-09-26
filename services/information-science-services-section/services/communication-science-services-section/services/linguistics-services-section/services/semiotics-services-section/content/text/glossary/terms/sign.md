@@ -37,7 +37,3 @@ The [interpretant](./interpretant.md) is the crucial third term. It is the funct
 - [signifier](./signifier.md) / [signified](./signified.md) — Saussure's dyadic account of the sign
 
 **Source:** [Peirce](../../../../../../../../../knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/charles-sanders-peirce.md), Charles Sanders. *Collected Papers*. Harvard University Press, 1931–1958. See also Short, T. L. *[Peirce](../../../../../../../../../knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/charles-sanders-peirce.md)'s Theory of Signs*. Cambridge University Press, 2007.
-
-## Earlier material
-
-**Source:** [Peirce](../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/communicating/content/general/people/charles-sanders-peirce.md), Charles Sanders. *Collected Papers*. Harvard University Press, 1931–1958. See also Short, T. L. *[Peirce](../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/communicating/content/general/people/charles-sanders-peirce.md)'s Theory of Signs*. Cambridge University Press, 2007.

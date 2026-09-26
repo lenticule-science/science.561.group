@@ -31,9 +31,3 @@ A concrete proposal for *how* the toolkit cites the theorem: as a docstring refe
 ## Why this matters
 
 A theorem that the toolkit *uses* but does not *cite* is a corpus-level diagnostic of its own: the corpus has a load-bearing claim sitting in the source code without a typed link to the proof. Binding the FARS implementation to this directory's theorem closes that gap and demonstrates the corpus's promotion-from-staging discipline at the boundary between mathematics and engineering.
-
-## Earlier material
-
-- The [dependency-soundness-iff-dag](../dependency-soundness-iff-dag.md) theorem is proved.
-- The corpus spec [frontmatter-relations](../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/specifications/frontmatter-relations.md) already says "a `depends-on:` cycle is a soundness diagnostic", citing no theorem. This question proposes binding that line to the theorem.
-- The downstream `depends-on: [directed-graph]` edge added to [partial-order](../../../../glossary/terms/partial-order.md) demonstrates the binding pattern at the note level. The toolkit-level binding is the analogous step.

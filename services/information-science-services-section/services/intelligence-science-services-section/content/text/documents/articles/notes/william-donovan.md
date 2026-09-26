@@ -31,9 +31,3 @@ Donovan's vision contained the seeds of problems the American intelligence syste
 - [Intelligence cycle](../../../glossary/terms/intelligence-cycle.md) — the workflow Donovan's organizational design instantiated
 - [Covert action](../../../glossary/terms/covert-action.md) — the operational function he embedded in the intelligence organization
 - [Analyst-policymaker relationship](../../../glossary/terms/analyst-policymaker-relationship.md) — the tension his organizational design bequeathed
-
-## Earlier material
-
-- [Intelligence cycle](../../../glossary/terms/intelligence-cycle.md) — the workflow Donovan's organizational design instantiated
-- [Covert action](../../../glossary/terms/covert-action.md) — the operational function he embedded in the intelligence organization
-- [Analyst-policymaker relationship](../../../glossary/terms/analyst-policymaker-relationship.md) — the tension his organizational design bequeathed

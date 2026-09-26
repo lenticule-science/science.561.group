@@ -28,7 +28,3 @@ $L$ is functorial: $L(g \circ f) = L(g) \circ L(f)$. Iteration $L^k(G)$ produces
 ## Position
 
 The line graph functor is the canonical way of moving from "graph as set of vertices with edges between them" to "graph as set of edges with shared-incidence between them". An *Eulerian circuit* in $G$ corresponds to a *Hamiltonian cycle* in $L(G)$. The line-graph construction is one of the fundamental endofunctors on $\mathbf{Grph}$. Reference: [Bondy–Murty 2008](../../documents/articles/bibliographies/bondy-murty2008.md) §1.7, [Harary 1969](../../documents/articles/bibliographies/harary1969.md) Ch. 8.
-
-## Earlier material
-
-The **line graph** functor $L : \mathbf{Grph} \to \mathbf{Grph}$ sends a [graph](graph.md) $G = (V, E)$ to the graph $L(G)$ whose vertices are the edges of $G$ and whose edges are the [incidences](incidence.md) — two vertices of $L(G)$ are adjacent iff the corresponding edges of $G$ share an endpoint.

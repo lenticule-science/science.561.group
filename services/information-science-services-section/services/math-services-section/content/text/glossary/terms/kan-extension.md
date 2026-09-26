@@ -24,7 +24,3 @@ Lan_K(F)(e) = colim_{(K(c)→e)} F(c)
 taken over the comma category (K ↓ e). This computes the extension by gluing together all the values of F that K maps "near" e.
 
 In the semiotic universe formalism, Kan extensions appear in the construction of sheaf semantics: the extension of local semiotic structure to global coherent interpretations is a left Kan extension along the inclusion of local fragments into the global site.
-
-## Earlier material
-
-In the [semiotic](../../documents/articles/research/2026/07/31/lenticule-import/_archive/category/scripts/functoring/content/linguistics/topics/semiotics/index.md) universe formalism, Kan extensions appear in the construction of sheaf semantics: the extension of local [semiotic](../../documents/articles/research/2026/07/31/lenticule-import/_archive/category/scripts/functoring/content/linguistics/topics/semiotics/index.md) structure to global coherent interpretations is a left Kan extension along the inclusion of local fragments into the global site.

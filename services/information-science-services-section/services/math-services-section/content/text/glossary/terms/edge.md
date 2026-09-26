@@ -40,9 +40,3 @@ An edge whose two endpoints are the same vertex is a *self-loop*. Two edges with
 ## Edges and incidence
 
 A vertex $v$ is *incident* to an edge $e$ iff $v$ is an endpoint of $e$. The *incidence relation* between $V$ and $E$ is what makes a graph more than just a pair of sets — it tells you which vertices each edge connects. The [graph](./graph.md) object's $(V, E)$ presentation packages the incidence into the structure of $E$ (by making edges literally pairs of vertices); the alternative $(V, E, s, t)$ presentation (used in category theory's quiver framing) makes the incidence functions $s, t: E \to V$ explicit.
-
-## Earlier material
-
-An *edge* is **a connection between two [vertices](vertex.md) of a [graph](graph.md)**. In an undirected graph, an edge is an unordered pair $\{u, v\}$; in a [directed graph](directed-graph.md), an edge is an ordered pair $(u, v)$ with a designated source and target.
-
-An edge whose two endpoints are the same vertex is a *self-loop*. Two edges with the same endpoint pair are *parallel edges*; graphs admitting parallel edges are [multigraphs](multigraph.md), graphs forbidding both self-loops and parallel edges are [simple graphs](simple-graph.md).

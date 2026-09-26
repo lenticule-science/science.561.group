@@ -10,11 +10,3 @@ A ***knowledge economy*** is an [economic system](economic-system.md) [valuing](
 
 - [intellectual property](../../../../../../../philosophy-services-section/content/text/glossary/terms/intellectual-property.md)
   - [patent](patent.md)
-
-## Earlier material
-
-- [intellectual property](../../../../../../../social-science-services-section/services/social-theory-science-services-section/content/text/documents/articles/notes/2025/09/06/2025-09-06-intellectual-property.md)
-  - [patent](patent.md)
-
-- [intellectual property](../../../../../../../philosophy-services-section/content/text/glossary/terms/intellectual-property.md)
-  - [patent](patent.md)

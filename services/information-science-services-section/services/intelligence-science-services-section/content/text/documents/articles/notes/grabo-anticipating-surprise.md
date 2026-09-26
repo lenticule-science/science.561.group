@@ -33,9 +33,3 @@ Grabo's framework structures the warning function across the U.S. intelligence c
 - [Indications and warning](../../../glossary/terms/indications-and-warning.md) — the function her work systematized
 - [Signal-to-noise](../../../glossary/terms/signal-to-noise.md) — the problem warning methodology addresses
 - [Intelligence failure](../../../glossary/terms/intelligence-failure.md) — the consequence when warning fails
-
-## Earlier material
-
-- [Indications and warning](../../../glossary/terms/indications-and-warning.md) — the function her work systematized
-- [Signal-to-noise](../../../glossary/terms/signal-to-noise.md) — the problem warning methodology addresses
-- [Intelligence failure](../../../glossary/terms/intelligence-failure.md) — the consequence when warning fails

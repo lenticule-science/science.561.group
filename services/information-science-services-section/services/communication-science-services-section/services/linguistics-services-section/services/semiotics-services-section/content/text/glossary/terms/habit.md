@@ -43,12 +43,3 @@ In the [semiotic universe](../../../../../../../../../../../philosophy-services-
 - [abduction](./abduction.md) — the mode of inference that generates new hypotheses before habit stabilizes them
 
 **Source:** Peirce, Charles Sanders. *Collected Papers*. Harvard University Press, 1931-1958. See especially CP 5.476-5.491. See also Nöth, Winfried. "Habits, Habit Change, and the Habit of Habit Change According to Peirce." In *Consensus on Peirce's Concept of Habit*, edited by West and Anderson. Springer, 2016.
-
-## Earlier material
-
-Habit belongs to [Thirdness](peirces-categories.md) in Peirce's categories — it is a general rule or tendency, not a particular feeling (Firstness) or brute reaction (Secondness).
-
-- [interpretant](interpretant.md) — the product of semiosis; habit is the ultimate logical interpretant
-- [semiosis](../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/communicating/content/language/content/semiotics/_archive/semiosis.md) — the process that habit stabilizes
-- [Peirce's categories](peirces-categories.md) — habit as Thirdness
-- [abduction](abduction.md) — the mode of inference that generates new hypotheses before habit stabilizes them

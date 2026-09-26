@@ -29,7 +29,3 @@ A finite connected graph has an *Eulerian trail* (open walk using every edge exa
 ## Remarks
 
 Euler's 1736 analysis of the [seven bridges of Königsberg](../teaching-articles/examples/seven-bridges-of-konigsberg.md) is exactly the necessity direction of this theorem applied to the Königsberg multigraph: all four landmasses had odd degree, so no Eulerian circuit exists. This is the founding result of graph theory; see [Euler 1736](../bibliographies/euler1736.md).
-
-## Earlier material
-
-A finite connected [graph](../../../glossary/terms/graph.md) $G = (V, E)$ admits an *Eulerian circuit* — a closed walk that uses every edge exactly once — if and only if every vertex has even [degree](../../../glossary/terms/degree.md).

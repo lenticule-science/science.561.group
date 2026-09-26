@@ -23,7 +23,3 @@ Collection management also mediates the tension between responsiveness and persi
 - [Intelligence cycle](./intelligence-cycle.md) — the process within which collection management operates at the direction and collection phases
 - [Intelligence preparation of the battlefield](./intelligence-preparation.md) — the tactical process that generates collection requirements
 - [All-source analysis](./all-source-analysis.md) — the analytic function that depends on collection management's output
-
-## Earlier material
-
-The process begins with requirements. Priority intelligence requirements (PIRs) articulate what the commander most needs to know. These are translated into specific information requirements (SIRs) — observable, collectible facts that, if obtained, would answer the PIR. SIRs are then matched to the [collection disciplines](collection-disciplines.md) best positioned to obtain them: a question about adversary communications goes to [SIGINT](sigint.md), a question about facility construction goes to [IMINT](imint.md), a question about leadership intentions goes to [HUMINT](humint.md). The collection manager assigns tasks, monitors coverage, evaluates returns, and adjusts tasking as requirements evolve or as initial collection reveals new gaps.

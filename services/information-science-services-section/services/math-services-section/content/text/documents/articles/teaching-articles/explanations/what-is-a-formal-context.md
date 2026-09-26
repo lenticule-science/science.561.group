@@ -34,7 +34,3 @@ None of this requires imposing a schema. The concept lattice is extracted from w
 The concept lattice also reveals divergences: a file that has `type: paper` but lacks `authors` breaks the pattern of the "paper" concept. This isn't an error (there's no schema to violate) — it's a structural observation about where the data's implicit conventions break down.
 
 When the values in the spreadsheet are richer than yes/no — when each cell carries a value like "affirmed," "denied," "contested," or "unknown" — the concept lattice inherits richer algebraic structure. The mathematics of what happens in this case is the subject of the fiber algebra of typed feature structures.
-
-## Earlier material
-
-The set of all such concepts forms a hierarchy — a [lattice](what-is-a-lattice.md). More general concepts (fewer attributes, more things) sit above more specific ones (more attributes, fewer things). This hierarchy is the **concept lattice**, and it captures the organizational structure of the data.

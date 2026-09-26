@@ -37,9 +37,3 @@ What is new in the 2026 case is the *adversary's* use of economic warfare as a p
 - [Collection disciplines](./collection-disciplines.md) — the existing framework, optimized for military targets
 - [Asymmetric escalation](../../../../services/2026-iran-war-services-section/content/text/documents/articles/notes/asymmetric-escalation-and-intelligence-requirements.md) — the multi-domain response that includes economic warfare
 - [Indications and warning](./indications-and-warning.md) — the framework that must be extended to economic indicators
-
-## Earlier material
-
-- [Collection disciplines](collection-disciplines.md) — the existing framework, optimized for military targets
-- [Asymmetric escalation](../../../../services/2026-iran-war-services-section/content/text/documents/articles/notes/asymmetric-escalation-and-intelligence-requirements.md) — the multi-domain response that includes economic warfare
-- [Indications and warning](indications-and-warning.md) — the framework that must be extended to economic indicators

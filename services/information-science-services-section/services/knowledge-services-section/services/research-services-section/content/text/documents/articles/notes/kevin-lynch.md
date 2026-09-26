@@ -30,9 +30,3 @@ Kevin Lynch (1918–1984) was an American urban planner and author whose researc
 ## Related
 
 - [wayfinding](../../../../../../../../../../engineering-science-services-section/services/design-engineering-science-services-section/services/information-architecture-services-section/content/text/glossary/terms/wayfinding.md) — the design concept his work established
-
-## Earlier material
-
-Kevin Lynch (1918–1984) was an American urban planner and author whose research on how people perceive and navigate cities established [wayfinding](../../../../../../../../../../engineering-science-services-section/services/design-engineering-science-services-section/services/information-architecture-services-section/content/text/glossary/terms/wayfinding.md) as a design concern.
-
-- [wayfinding](../../../../../../../../../../engineering-science-services-section/services/design-engineering-science-services-section/services/information-architecture-services-section/content/text/glossary/terms/wayfinding.md) — the design concept his work established

@@ -19,9 +19,3 @@ The classical formulation of the gain/loss calculus assumes a single decision-ma
 - [Operational security](./operational-security.md) — the defensive function gain/loss protects
 - [Source reliability](./source-reliability.md) — the asset whose future value is at stake
 - [Need-to-know](./need-to-know.md) — the compartmentation principle that limits exposure
-
-## Earlier material
-
-- [Operational security](operational-security.md) — the defensive function gain/loss protects
-- [Source reliability](source-reliability.md) — the asset whose future value is at stake
-- [Need-to-know](need-to-know.md) — the compartmentation principle that limits exposure

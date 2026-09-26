@@ -134,22 +134,3 @@ This skill covers the application of legibility analysis to intelligence assessm
 ## Verification
 
 You have this skill if you can: (1) make explicit the simplifying categories an assessment uses, (2) identify what those categories exclude with specificity, (3) assess whether the exclusions are consequential for the assessment's key judgments, (4) map the boundary between legible and illegible as the zone of maximum analytical risk, and (5) integrate with constraint-based reasoning to bound the adversary's action space in the illegible zone.
-
-## Earlier material
-
-- Familiarity with [intelligence as legibility](../../../glossary/terms/intelligence-as-legibility.md) — the theoretical framework
-- Familiarity with [legibility](../../../../../../../../social-science-services-section/services/sociology/terms/legibility.md) — Scott's original concept
-- Familiarity with [mirror-imaging](../../../glossary/terms/mirror-imaging.md) — a specific form of legibility failure
-- Familiarity with [strategic culture analysis](../../../glossary/terms/strategic-culture-analysis.md) — the primary corrective for cultural-level legibility failure
-
-- **What entities does the assessment identify?** (Leaders, units, facilities, networks, capabilities)
-- **What relationships does the assessment map?** (Command structures, supply chains, communication networks)
-- **What dynamics does the assessment model?** (Decision processes, escalation logic, capability trajectories)
-- **What collection disciplines produced the evidence?** Each discipline sees through its own grid — [IMINT](../../../glossary/terms/imint.md) sees physical infrastructure, [SIGINT](../../../glossary/terms/sigint.md) hears communications, [HUMINT](../../../glossary/terms/humint.md) accesses intention through recruited sources
-
-- Surprise is most likely to originate
-- The adversary has the most freedom of action
-- Collection gaps are structural rather than correctable
-- [Constraint-based reasoning](../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/apply-constraint-based-reasoning/SKILL.md) should be applied to bound what the legible representation cannot see
-
-Legibility analysis and [constraint-based reasoning](../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/apply-constraint-based-reasoning/SKILL.md) are most powerful in combination:

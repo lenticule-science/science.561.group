@@ -34,8 +34,3 @@ Richard E. Mayer is an American educational psychologist at UC Santa Barbara who
 
 - [John Sweller](./john-sweller.md) — cognitive load theory, which Mayer's work complements and extends
 - [designing effective lessons](../../../../../../../../../../social-science-services-section/services/education-science-services-section/services/pedagogy-services-section/content/text/documents/articles/notes/designing-effective-lessons.md) — the vault's lesson design applies Mayer's principles
-
-## Earlier material
-
-- [John Sweller](john-sweller.md) — cognitive load theory, which Mayer's work complements and extends
-- [designing effective lessons](../../../../../../../../../../social-science-services-section/services/education-science-services-section/services/pedagogy-services-section/content/text/documents/articles/notes/designing-effective-lessons.md) — the vault's lesson design applies Mayer's principles

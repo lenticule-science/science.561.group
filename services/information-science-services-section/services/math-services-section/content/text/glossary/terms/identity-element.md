@@ -19,7 +19,3 @@ The presence or absence of an identity element is a basic structural feature of 
 In a [category](./category.md), every object has an identity [morphism](./morphism.md) — a morphism from the object to itself that does nothing. This is one of the axioms of a category: for every object $A$, there exists a morphism $\mathrm{id}_A: A \to A$ such that $f \circ \mathrm{id}_A = f$ and $\mathrm{id}_A \circ g = g$ for all composable morphisms $f$ and $g$. The categorical identity morphism generalizes the identity element from a single operation to the structure of composition across an entire category.
 
 In the semiotic universe, the identity operator on the [Heyting algebra](./heyting-algebra.md) $H$ maps every semantic value to itself — it is the trivial closure that stabilizes nothing, the semantic equivalent of "leaving the meaning unchanged."
-
-## Earlier material
-
-In the [semiotic](../../../../../../../natural-science-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/library/science/mathematics/linguistics/topics/semiotics/index.md) universe, the identity operator on the [Heyting algebra](../../../../../../../natural-science-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/library/science/mathematics/_archive/from-discourse-domain-locus-math/teaching/explanations/heyting-algebra/index.md) $H$ maps every semantic value to itself — it is the trivial closure that stabilizes nothing, the semantic equivalent of "leaving the meaning unchanged."

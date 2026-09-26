@@ -22,9 +22,3 @@ The book's directness, humor, and [refusal](../../../../../../../../../../social
 - [Vine Deloria Jr.](./vine-deloria-jr.md)
 - [Decolonization](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/povinellian-services-section/services/settler-colonialism-services-section/content/text/glossary/terms/decolonization.md)
 - [Refusal](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/refusal.md)
-
-## Earlier material
-
-- [Vine Deloria Jr.](vine-deloria-jr.md)
-- [Decolonization](/sociology/terms/decolonization.md)
-- [Refusal](../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/refusal.md)

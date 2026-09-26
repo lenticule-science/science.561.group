@@ -60,7 +60,3 @@ So from `dispatched` every state is reachable; from `merged` only `merged`; the 
 ## What this exemplifies
 
 This example demonstrates [labelled directed graph](../../../../glossary/terms/labelled-graph.md) as a load-bearing object: the labels are not decoration, they identify the trigger event for each transition. It also demonstrates the limits of acyclicity arguments: a digraph that *isn't* a DAG still admits useful structural analysis via reachability and strongly connected components. The corpus's own engineering uses this kind of analysis whenever it asks "can a task in state $X$ ever reach state $Y$?" — and the answer is read off the reachability table.
-
-## Earlier material
-
-The [reachability](../../../../glossary/terms/reachability.md) relation $\rightsquigarrow$ is computed by [transitive closure](../../../../glossary/terms/transitive-closure.md):

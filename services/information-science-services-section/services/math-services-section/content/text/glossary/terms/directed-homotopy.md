@@ -40,7 +40,3 @@ If such an $H$ exists, $\alpha$ and $\beta$ are *d-homotopic*, written $\alpha \
 - The directed interval $\vec{I} = ([0,1],\, \{\text{non-decreasing continuous maps } [0,1] \to [0,1]\})$ has fundamental category isomorphic to the [partial order](./partial-order.md) $([0,1], \leq)$: there is a unique morphism $a \to b$ when $a \leq b$ and none when $a > b$.
 - The directed circle $\vec{S}^1$, obtained by identifying the endpoints of $\vec{I}$, satisfies $\vec{\pi}_1(\vec{S}^1) \cong (\mathbb{N}, +)$ as a monoid with one object: every morphism is an iterate of the generating loop, and reversal of the loop is absent from $dX$.
 - In concurrency theory, the state space of a system of $n$ processes with mutual exclusion constraints carries a natural d-space structure. Execution traces are d-paths, and two interleavings reaching the same final state are d-homotopic. Directed obstructions (d-holes) correspond to deadlocks or unreachable states.
-
-## Earlier material
-
-*Proof sketch.* Associativity and unit laws hold up to reparametrization. A non-decreasing reparametrization of a d-path is again a d-path, so the standard reparametrization [homotopies](homotopy.md) used for ordinary paths yield d-homotopies here. $\square$

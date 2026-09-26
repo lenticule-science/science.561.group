@@ -17,7 +17,3 @@ A duality between two concepts means they occupy the same structural position vi
 Duality is symmetric. If A is dual to B, then B is dual to A. It is not the same as opposition or contrast — dual things share structure. Contrasting things may have nothing in common except being meaningfully different.
 
 When this library uses `dual-of` as a frontmatter predicate, it means the subject and object are the same shape seen from opposite directions. Reversing the perspective that defines one gives you the other.
-
-## Earlier material
-
-In category theory, every [category](../../../../../../../natural-science-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/library/science/mathematics/_archive/from-discourse-domain-locus-math/duality/theories/categories/theories/ordinary-categories/objects/category.md) has an opposite category formed by reversing all [morphisms](morphism.md). A statement that is true in a category is also true in the opposite category, but with all arrows reversed. Products become coproducts. Limits become colimits. Monomorphisms become epimorphisms. This is why duality is powerful — every theorem you prove gives you a second theorem for free.

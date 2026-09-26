@@ -52,9 +52,3 @@ A graph is *not* a directed graph: edges have no orientation, $\{u,v\}$ does not
 ## Historical origin
 
 Graphs were introduced by Euler in 1736 in his analysis of the [seven bridges of Königsberg](../../documents/articles/teaching-articles/examples/seven-bridges-of-konigsberg.md) (see [Euler 1736](../../documents/articles/bibliographies/euler1736.md)); the modern axiomatisation follows [Diestel 2017](../../documents/articles/bibliographies/diestel2017.md) §1.1 and [Bondy–Murty 2008](../../documents/articles/bibliographies/bondy-murty2008.md) §1.1.
-
-## Earlier material
-
-A **graph** is an ordered pair $G = (V, E)$ where $V$ is a set of [vertices](vertex.md) and $E$ is a set of [edges](../../documents/articles/research/2026/07/31/lenticule-import/scripts/graphing/content/graph/teaching/explanations/edge.md), each edge an unordered pair $\{u, v\}$ of vertices. The pair $\{u, v\}$ is the [incidence](incidence.md) of the edge with its endpoints; $u$ and $v$ are then [adjacent](../../documents/articles/research/2026/07/31/lenticule-import/scripts/graphing/content/graph/teaching/explanations/adjacency.md). Drawn on paper, vertices are dots and edges are lines.
-
-Graphs were introduced by Euler in 1736 in his analysis of the [seven bridges of Königsberg](../../documents/articles/teaching-articles/examples/seven-bridges-of-konigsberg.md) (see [Euler 1736](../../documents/articles/bibliographies/euler1736.md)); the modern axiomatisation follows [Diestel 2017](../../documents/articles/bibliographies/diestel2017.md) §1.1 and [Bondy–Murty 2008](../../documents/articles/bibliographies/bondy-murty2008.md) §1.1.

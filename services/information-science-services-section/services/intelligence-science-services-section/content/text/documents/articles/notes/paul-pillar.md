@@ -33,9 +33,3 @@ Pillar's work has been controversial within the intelligence community, where ma
 - [Analyst-policymaker relationship](../../../glossary/terms/analyst-policymaker-relationship.md) — the relationship Pillar reframed as structural disconnect rather than productive tension
 - [Politicization](../../../glossary/terms/politicization.md) — the corruption Pillar argued is less common than irrelevance
 - [Intelligence failure](../../../glossary/terms/intelligence-failure.md) — the case literature Pillar's framework reinterprets
-
-## Earlier material
-
-- [Analyst-policymaker relationship](../../../glossary/terms/analyst-policymaker-relationship.md) — the relationship Pillar reframed as structural disconnect rather than productive tension
-- [Politicization](../../../glossary/terms/politicization.md) — the corruption Pillar argued is less common than irrelevance
-- [Intelligence failure](../../../glossary/terms/intelligence-failure.md) — the case literature Pillar's framework reinterprets

@@ -41,7 +41,3 @@ F3EAD does not replace the classical [intelligence cycle](./intelligence-cycle.m
 - [Collection disciplines](./collection-disciplines.md) — the multi-source architecture F3EAD integrates at speed
 - [Current vs. estimative intelligence](./current-vs-estimative.md) — the institutional tension F3EAD intensifies
 - [Analyst-policymaker relationship](./analyst-policymaker-relationship.md) — reshaped when the analyst serves operators rather than policymakers
-
-## Earlier material
-
-**Find.** Identify the target through intelligence collection. This may involve [HUMINT](humint.md) source reporting, [SIGINT](sigint.md) intercepts, [IMINT](imint.md) pattern-of-life analysis, or [OSINT](osint.md) monitoring. The "find" phase draws on the full range of [collection disciplines](collection-disciplines.md) but is distinguished from routine collection by its directedness: the collection is organized around a specific target rather than a general intelligence requirement.

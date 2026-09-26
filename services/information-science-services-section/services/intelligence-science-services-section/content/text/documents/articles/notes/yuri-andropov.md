@@ -32,9 +32,3 @@ Andropov's career trajectory — from KGB chief to head of state — demonstrate
 - [Politicization](../../../glossary/terms/politicization.md) — the structural bias RYAN demonstrates
 - [Counterintelligence](../../../glossary/terms/counterintelligence.md) — integrated with domestic control in Andropov's KGB
 - [Indications and warning](../../../glossary/terms/indications-and-warning.md) — the function RYAN perverted through ideological distortion
-
-## Earlier material
-
-- [Politicization](../../../glossary/terms/politicization.md) — the structural bias RYAN demonstrates
-- [Counterintelligence](../../../glossary/terms/counterintelligence.md) — integrated with domestic control in Andropov's KGB
-- [Indications and warning](../../../glossary/terms/indications-and-warning.md) — the function RYAN perverted through ideological distortion

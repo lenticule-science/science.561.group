@@ -28,8 +28,3 @@ Alexander taught in London and New York, training teachers who continue the trad
 
 - [Alexander Technique](../../../../../../../../../../natural-science-services-section/services/biological-science-services-section/services/medical-science-services-section/services/somatics-services-section/content/text/documents/articles/notes/alexander-technique.md) — the school Alexander founded
 - [Thomas Hanna](./thomas-hanna.md) — later somatic thinker who named the field Alexander's work helped create
-
-## Earlier material
-
-- [Alexander Technique](../../../../../../../../../../natural-science-services-section/services/biological-science-services-section/services/medical-science-services-section/services/somatics-services-section/content/text/documents/articles/notes/alexander-technique.md) — the school Alexander founded
-- [Thomas Hanna](thomas-hanna.md) — later somatic thinker who named the field Alexander's work helped create

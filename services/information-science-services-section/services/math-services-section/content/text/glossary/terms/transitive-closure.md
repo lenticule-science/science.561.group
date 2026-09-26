@@ -39,9 +39,3 @@ Transitive closure is the closure operator (in the order-theoretic sense — see
 ## Position
 
 Transitive closure is what computes [reachability](./reachability.md) from local edge information. The corpus's `depends-on:` graph is implicitly closed under transitive closure when the renderer asks "what does this note transitively depend on?"; the [dependency-soundness-iff-dag](../../documents/articles/research-articles/dependency-soundness-iff-dag.md) result depends on the closure being a partial order, which forces the original graph to be a DAG. Reference: [Bondy–Murty 2008](../../documents/articles/bibliographies/bondy-murty2008.md) §2.2.
-
-## Earlier material
-
-The **transitive closure** of a [directed graph](directed-graph.md) $D = (V, E)$ is the digraph $D^+ = (V, E^+)$ where $(u, v) \in E^+$ iff there is a directed [path](path.md) of length $\geq 1$ from $u$ to $v$ in $D$. The closure is the smallest transitive digraph on $V$ containing $E$.
-
-Transitive closure is what computes [reachability](reachability.md) from local edge information. The corpus's `depends-on:` graph is implicitly closed under transitive closure when the renderer asks "what does this note transitively depend on?"; the [dependency-soundness-iff-dag](../../documents/articles/research-articles/dependency-soundness-iff-dag.md) result depends on the closure being a partial order, which forces the original graph to be a DAG. Reference: [Bondy–Murty 2008](../../documents/articles/bibliographies/bondy-murty2008.md) §2.2.

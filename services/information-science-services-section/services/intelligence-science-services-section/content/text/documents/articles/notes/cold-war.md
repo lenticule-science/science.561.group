@@ -76,13 +76,3 @@ This literature constitutes the discipline's theoretical foundation — the cano
 ## What the period established
 
 The Cold War established intelligence in its modern form: permanent institutions with global reach, technical collection capabilities of extraordinary power, a professional analytical tradition with its own methods and norms, and a history of failures that generates continuous institutional self-examination. Every subsequent development in the discipline — the post-Cold War reorientation, the post-9/11 reforms, the rise of cyber and open-source intelligence, the [2026 Iran war](../analyses/2026-iran-war/index.md) — operates within the institutional, methodological, and cultural framework the Cold War created.
-
-## Earlier material
-
-**The defector problem.** Major defectors — Anatoliy Golitsyn, Yuri Nosenko, Oleg Gordievsky — provided intelligence but also generated counterintelligence crises. [James Angleton](../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/people/james-angleton.md)'s obsessive pursuit of a Soviet mole, fueled by Golitsyn's claims, paralyzed CIA Soviet operations for years. The defector problem demonstrated the [wilderness of mirrors](../../../glossary/terms/wilderness-of-mirrors.md): each piece of intelligence from a human source raises the question of whether the source is genuine or controlled, and no analytical method can resolve the question definitively.
-
-- [Sherman Kent](sherman-kent.md)'s *Strategic Intelligence for American World Policy* (1949) defined the analyst's professional identity
-- [Roberta Wohlstetter](roberta-wohlstetter.md)'s *Pearl Harbor: Warning and Decision* (1962) identified the signal-to-noise problem
-- [Robert Jervis](robert-jervis.md)'s *Perception and Misperception in International Politics* (1976) demonstrated cognitive bias as structural
-- [Richards Heuer](richards-heuer.md)'s work on structured analytic techniques (published 1999, developed through the 1970s-80s) provided methodological corrections for cognitive bias
-- [Cynthia Grabo](cynthia-grabo.md)'s classified work on [warning intelligence](../../../glossary/terms/warning-intelligence.md) systematized the indications and warning function

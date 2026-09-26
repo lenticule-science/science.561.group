@@ -67,9 +67,3 @@ If this reading holds as more information becomes available, the case raises a q
 - [Analyst-policymaker relationship](../../../../../../../content/text/glossary/terms/analyst-policymaker-relationship.md) — the structural tension this case reconfigures
 - [Intelligence failure](../../../../../../../content/text/glossary/terms/intelligence-failure.md) — the case literature to which this analysis contributes
 - [Current vs. estimative intelligence](../../../../../../../content/text/glossary/terms/current-vs-estimative.md) — the institutional division this case dramatizes
-
-## Earlier material
-
-- [Analyst-policymaker relationship](../../../../../../../content/text/glossary/terms/analyst-policymaker-relationship.md) — the structural tension this case reconfigures
-- [Intelligence failure](../../../../../../../content/text/glossary/terms/intelligence-failure.md) — the case literature to which this analysis contributes
-- [Current vs. estimative intelligence](../../../../../../../content/text/glossary/terms/current-vs-estimative.md) — the institutional division this case dramatizes

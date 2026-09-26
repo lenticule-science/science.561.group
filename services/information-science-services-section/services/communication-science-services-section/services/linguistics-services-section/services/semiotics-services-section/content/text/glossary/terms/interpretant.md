@@ -48,9 +48,3 @@ This distinction matters for understanding how misunderstanding works: the dynam
 - [semiosis](./semiosis.md) — the process of sign-interpretant chains
 
 **Source:** [Peirce](../../../../../../../../../knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/charles-sanders-peirce.md), Charles Sanders. *Collected Papers*. Harvard University Press, 1931–1958. See also Short, T. L. *[Peirce](../../../../../../../../../knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/charles-sanders-peirce.md)'s Theory of Signs*. Cambridge University Press, 2007.
-
-## Earlier material
-
-[Peirce](../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/communicating/content/general/people/charles-sanders-peirce.md) distinguished multiple levels [@short_PeirceTheorySigns_2007]:
-
-**Source:** [Peirce](../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/communicating/content/general/people/charles-sanders-peirce.md), Charles Sanders. *Collected Papers*. Harvard University Press, 1931–1958. See also Short, T. L. *[Peirce](../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/communicating/content/general/people/charles-sanders-peirce.md)'s Theory of Signs*. Cambridge University Press, 2007.

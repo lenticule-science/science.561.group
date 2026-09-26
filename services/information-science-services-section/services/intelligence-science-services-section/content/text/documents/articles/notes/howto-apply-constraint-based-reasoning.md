@@ -136,9 +136,3 @@ This skill covers the application of constraint-based reasoning to adversary ana
 ## Verification
 
 You have this skill if you can: (1) analyze an adversary's action space without defaulting to intent assessment, (2) identify hard boundaries that genuinely constrain rather than soft preferences that might be overridden, (3) define invariants that hold across scenarios rather than assumptions that hold under specific conditions, and (4) produce constraint curves that identify the structural dynamics determining the conflict's trajectory.
-
-## Earlier material
-
-- Familiarity with [constraint-based reasoning](../../../glossary/terms/constraint-based-reasoning.md) — the theoretical framework
-- Familiarity with [analysis of competing hypotheses](../../../glossary/terms/analysis-of-competing-hypotheses.md) — the SAT that constraint-based reasoning extends
-- Understanding of [indications and warning](../../../glossary/terms/indications-and-warning.md) — the warning function that constraint monitoring reframes

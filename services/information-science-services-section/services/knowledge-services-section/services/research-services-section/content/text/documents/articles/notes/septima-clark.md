@@ -29,9 +29,3 @@ Septima Poinsette Clark (1898–1987) was an American educator and civil rights 
 - [freedom school](../../../../../../../../../../social-science-services-section/services/education-science-services-section/content/text/glossary/terms/freedom-school.md) — the tradition her citizenship schools helped establish
 - [popular education](../../../../../../../../../../social-science-services-section/services/education-science-services-section/content/text/glossary/terms/popular-education.md) — the broader approach her work exemplifies
 - [Black radical pedagogies](../../education/disciplines/pedagogy/schools/black-radical-pedagogies/index.md) — the tradition she belongs to
-
-## Earlier material
-
-- [freedom school](../../../../../../../../../../social-science-services-section/services/education-science-services-section/content/text/glossary/terms/freedom-school.md) — the tradition her citizenship schools helped establish
-- [popular education](../../../../../../../../../../social-science-services-section/services/education-science-services-section/content/text/glossary/terms/popular-education.md) — the broader approach her work exemplifies
-- [Black radical pedagogies](../../../../../../../../../../philosophy-services-section/services/logic-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/yet-another-unsorted-archive-dump/predication-categories/_archive/bucket-4/articulating/library/aperiodic-articulation-category/library/aperiodic-articulation-cell/library/potential-aperiodic-articulation-cell/predicating/library/transfinite-predication-category/hacking/library/predicate-category/hacking/library/references/education/disciplines/pedagogy/schools/black-radical-pedagogies/index.md) — the tradition she belongs to

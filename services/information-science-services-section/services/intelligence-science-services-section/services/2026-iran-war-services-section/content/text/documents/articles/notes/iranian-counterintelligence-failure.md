@@ -66,9 +66,3 @@ This analysis is necessarily speculative. The internal dynamics of Iranian count
 - [Counterintelligence](../../../../../../../content/text/glossary/terms/counterintelligence.md) — the function that failed
 - [IRGC](../../../../../../../content/text/glossary/terms/irgc.md) — the institutional actor responsible for protective intelligence
 - [Adversarial epistemology](../../../../../../../content/text/glossary/terms/adversarial-epistemology.md) — the framework within which counterintelligence operates
-
-## Earlier material
-
-- [Counterintelligence](../../../../../../../content/text/glossary/terms/counterintelligence.md) — the function that failed
-- [IRGC](../../../../../../../content/text/glossary/terms/irgc.md) — the institutional actor responsible for protective intelligence
-- [Adversarial epistemology](../../../../../../../content/text/glossary/terms/adversarial-epistemology.md) — the framework within which counterintelligence operates

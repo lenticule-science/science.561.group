@@ -106,9 +106,3 @@ This skill covers the application of structured techniques to existing or develo
 ## Verification
 
 You have this skill if you can: (1) select the appropriate technique for a given analytic problem, (2) apply it to produce findings that genuinely extend or challenge the initial assessment, (3) avoid common pitfalls (strawman hypotheses, projective red teaming, assumption lists that merely restate the assessment), and (4) integrate the technique's findings back into a refined assessment.
-
-## Earlier material
-
-- Completion of the [structured analytic techniques curriculum](structured-analytic-techniques.md)
-- Familiarity with [perception and misperception](../../../glossary/terms/perception-and-misperception.md) — the cognitive biases the techniques are designed to mitigate
-- Familiarity with the [write-intelligence-assessment](../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/write-intelligence-assessment/SKILL.md) skill — the assessment format the technique's output feeds back into

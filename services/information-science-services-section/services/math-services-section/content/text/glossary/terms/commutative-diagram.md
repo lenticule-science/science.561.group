@@ -19,7 +19,3 @@ Commutative diagrams are the primary language of category theory. Definitions, t
 The power of diagrammatic reasoning is that it makes the structure of an argument visible. Rather than tracking chains of equalities in formulas, the mathematician draws a diagram and checks that it commutes — reducing algebraic complexity to a spatial pattern.
 
 In higher category theory, strict commutativity is relaxed: diagrams commute up to specified higher [morphisms](./morphism.md) (2-[morphisms](./morphism.md) witnessing the commutativity, 3-[morphisms](./morphism.md) witnessing their coherence, and so on).
-
-## Earlier material
-
-Commutative diagrams are the primary language of [category theory](../../documents/articles/research/2026/07/31/lenticule-import/_archive/category/scripts/diagramming/index.md). Definitions, theorems, and constructions are stated as requirements that certain diagrams commute. The definition of a [natural transformation](../../documents/articles/research/2026/07/31/lenticule-import/_archive/category/scripts/diagramming/content/commutative-diagram/natural-transformation.md) requires that a square commutes for every [morphism](morphism.md) in the source category. The definition of a limit requires a universal commutative cone. The [sheaf condition](../../documents/articles/research/2026/07/31/lenticule-import/_archive/category/disciplines/higher-topos-theory/terms/sheaf-condition.md) is expressed as an equalizer diagram that must commute.

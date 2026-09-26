@@ -13,9 +13,3 @@ A ring $(R, +, \cdot, 0, 1)$ is a set equipped with two binary operations — ad
 The integers $\mathbb{Z}$, [polynomial](./polynomial.md) rings, and matrix rings are standard examples. A ring is commutative if $a \cdot b = b \cdot a$ for all elements. The study of commutative rings and their [ideals](./ideal.md) forms the foundation of algebraic geometry and algebraic number theory.
 
 Rings connect to lattice theory through the notion of [residuation](./residuated-lattice.md): the [Heyting implication](./heyting-implication.md) in a [Heyting algebra](./heyting-algebra.md) satisfies an adjunction analogous to the division-like operation in a ring.
-
-## Earlier material
-
-The integers $\mathbb{Z}$, [polynomial](polynomial.md) rings, and matrix rings are standard examples. A ring is commutative if $a \cdot b = b \cdot a$ for all elements. The study of commutative rings and their [ideals](ideal.md) forms the foundation of algebraic geometry and algebraic number theory.
-
-Rings connect to lattice theory through the notion of [residuation](../../../../../../../natural-science-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/library/science/mathematics/_archive/from-discourse-domain-locus-math/teaching/explanations/residuated-lattice/index.md): the [Heyting implication](heyting-implication.md) in a [Heyting algebra](../../../../../../../natural-science-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/library/science/mathematics/_archive/from-discourse-domain-locus-math/teaching/explanations/heyting-algebra/index.md) satisfies an adjunction analogous to the division-like operation in a ring.

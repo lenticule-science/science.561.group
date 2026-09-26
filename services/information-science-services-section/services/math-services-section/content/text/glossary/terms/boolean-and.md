@@ -41,7 +41,3 @@ This is the truth table of Boolean AND. Composition ($\wedge_k$) does not match:
 The derived claim has subject $X$ (the shared subject of the inputs), predicate `boolean-element` (the same fiber as the inputs), and a structured-pair object encoding both source SPOs sorted canonically. The value is $\odot$ of the source values.
 
 The structured object preserves contribution: a downstream query that reads this claim's object can drill into either source channel and recover the prior derivation, recursively, all the way back to the original message claims. The HOW of the AND is the structure of the object slot.
-
-## Earlier material
-
-`boolean-and` combines two [boolean-element](boolean-algebra.md) channels that share a subject into their conjunction. It is the operative realization of $\wedge$ on the [boolean algebra](boolean-algebra.md) defined in `terms/`.

@@ -26,8 +26,3 @@ The felt sense is central to [Somatic Experiencing](/medicine/concepts/somatics/
 
 - [somatic experiencing](/medicine/concepts/somatics/somatic-experiencing.md) — trauma method that uses Gendlin's felt-sense concept
 - [somatic awareness](../../../../../../../../../../natural-science-services-section/services/biological-science-services-section/services/medical-science-services-section/services/somatics-services-section/content/text/glossary/terms/somatic-awareness.md) — the broader capacity that Focusing trains
-
-## Earlier material
-
-- [somatic experiencing](/medicine/concepts/somatics/somatic-experiencing.md) — trauma method that uses Gendlin's felt-sense concept
-- [somatic awareness](../../../../../../../../../../natural-science-services-section/services/biological-science-services-section/services/medical-science-services-section/services/somatics-services-section/content/text/glossary/terms/somatic-awareness.md) — the broader capacity that Focusing trains

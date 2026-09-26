@@ -26,7 +26,3 @@ Labelled graphs are the natural object whenever the elements of a graph carry di
 - **Knowledge graphs** (RDF, Wikidata) are edge-labelled directed multigraphs whose labels name the relation type.
 
 A [weighted graph](weighted-graph.md) is the special case where the label set carries algebraic structure (a semiring, lattice, etc.). Reference: [Diestel 2017](../../documents/articles/bibliographies/diestel2017.md) (treats labels in passing); the labelled-graph perspective is more prominent in computer science treatments and in [Bondy–Murty 2008](../../documents/articles/bibliographies/bondy-murty2008.md) §15.
-
-## Earlier material
-
-A [weighted graph](weighted-graph.md) is the special case where the label set carries algebraic structure (a semiring, lattice, etc.). Reference: [Diestel 2017](../../documents/articles/bibliographies/diestel2017.md) (treats labels in passing); the labelled-graph perspective is more prominent in computer science treatments and in [Bondy–Murty 2008](../../documents/articles/bibliographies/bondy-murty2008.md) §15.

@@ -19,10 +19,3 @@ As an intelligence problem, the Hormuz closure represents a domain shift — fro
 
 - [Operation True Promise IV](./operation-true-promise-iv.md) — the broader Iranian retaliatory operation
 - [Operation Epic Fury](./operation-epic-fury.md) — the U.S. strikes that provoked the closure
-
-## Earlier material
-
-As an intelligence problem, the Hormuz closure represents a domain shift — from the military targeting that characterized the prewar intelligence requirement to the economic and maritime intelligence requirements of monitoring a blockade. Ship-tracking data, [OSINT](../../../../../../content/text/glossary/terms/osint.md) from maritime monitoring services, [SIGINT](../../../../../../content/text/glossary/terms/sigint.md) on IRGC naval communications, and [IMINT](../../../../../../content/text/glossary/terms/imint.md) of mine-laying and fast-attack-craft positioning all become priority collection requirements. The transition from a nuclear-focused prewar posture to a maritime-economic post-strike posture exemplifies the [collection management](../../../../../../content/text/glossary/terms/collection-management.md) challenge the [asymmetric escalation analysis](../../documents/articles/notes/asymmetric-escalation-and-intelligence-requirements.md) examines.
-
-- [Operation True Promise IV](operation-true-promise-iv.md) — the broader Iranian retaliatory operation
-- [Operation Epic Fury](operation-epic-fury.md) — the U.S. strikes that provoked the closure

@@ -16,10 +16,3 @@ Israeli Defence Minister Israel Katz disclosed on 4 March 2026 that Israel had i
 
 - [Operation Epic Fury](./operation-epic-fury.md) — the U.S. component of the joint campaign
 - [Operation True Promise IV](./operation-true-promise-iv.md) — Iran's retaliatory designation
-
-## Earlier material
-
-Israeli Defence Minister Israel Katz disclosed on 4 March 2026 that Israel had initially planned to strike Iran in mid-2026, and that Prime Minister Netanyahu had set the aim of assassinating Khamenei as early as November 2025. This timeline indicates that the intelligence collection operation supporting the assassination — months of CIA surveillance and Israeli source reporting — was running concurrently with the diplomatic negotiations in Oman and Geneva, a temporal overlap examined in the [diplomatic-intelligence paradox](diplomatic-intelligence-paradox.md).
-
-- [Operation Epic Fury](operation-epic-fury.md) — the U.S. component of the joint campaign
-- [Operation True Promise IV](operation-true-promise-iv.md) — Iran's retaliatory designation

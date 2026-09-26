@@ -12,7 +12,3 @@ visibility: public
 A ***note-taking system*** is a [system](../../../../../../../philosophy-services-section/services/logic-services-section/content/text/documents/articles/notes/undated/system.md) for [taking notes](../../../../../../../philosophy-services-section/content/text/glossary/terms/taking-notes.md).
 
 - [Zettelkasten](../../../../../../../engineering-science-services-section/services/computer-science-services-section/content/text/glossary/terms/zettelkasten.md)
-
-## Earlier material
-
-- [Zettelkasten](../../../../../../../engineering-science-services-section/services/computer-science-services-section/content/text/glossary/terms/zettelkasten.md)

@@ -35,9 +35,3 @@ John Gardner (1933–1982) was an American novelist and writing teacher whose *T
 - [fiction writing](../../writing/disciplines/fiction/index.md) — Gardner's *Art of Fiction* is a key text for the discipline
 - [scene](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/scene.md) — the fictional dream is sustained primarily through scene construction
 - [show don't tell](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/show-dont-tell.md) — Gardner's fictional dream concept underwrites the showing principle
-
-## Earlier material
-
-- [fiction writing](../../../../../../../../../../philosophy-services-section/services/logic-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/yet-another-unsorted-archive-dump/predication-categories/_archive/bucket-4/articulating/library/aperiodic-articulation-category/library/aperiodic-articulation-cell/library/potential-aperiodic-articulation-cell/predicating/library/transfinite-predication-category/hacking/library/predicate-category/hacking/library/references/writing/disciplines/fiction/index.md) — Gardner's *Art of Fiction* is a key text for the discipline
-- [scene](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/scene.md) — the fictional dream is sustained primarily through scene construction
-- [show don't tell](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/show-dont-tell.md) — Gardner's fictional dream concept underwrites the showing principle

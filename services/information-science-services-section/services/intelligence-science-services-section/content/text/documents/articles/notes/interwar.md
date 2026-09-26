@@ -36,7 +36,3 @@ The interwar period saw the maturation of the [Soviet-Russian intelligence tradi
 ## Seeds of transformation
 
 The interwar period planted the seeds of World War II's intelligence revolution without itself constituting one. The cryptanalytic groundwork (Polish Enigma work, Friedman's PURPLE break), the HUMINT networks (Soviet penetrations of Western governments), and the institutional failures (American fragmentation, the failure to create centralized assessment) all had their consequences in the war that followed. The period demonstrates that intelligence capabilities develop in peacetime for wartime employment — and that institutional design decisions made between wars determine the intelligence system's performance when war arrives.
-
-## Earlier material
-
-The Polish achievement demonstrates two principles the discipline would later formalize: the value of [liaison](../../../glossary/terms/liaison.md) (the knowledge transfer that made ULTRA possible) and the importance of mathematical and technical expertise in intelligence work (the shift from linguists to mathematicians as the primary cryptanalytic workforce).

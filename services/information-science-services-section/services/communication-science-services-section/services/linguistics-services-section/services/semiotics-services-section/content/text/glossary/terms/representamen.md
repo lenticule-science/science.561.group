@@ -32,7 +32,3 @@ The representamen is roughly analogous to Saussure's [signifier](./signifier.md)
 - [signifier](./signifier.md) — Saussure's corresponding concept
 
 **Source:** [Peirce](../../../../../../../../../knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/charles-sanders-peirce.md), Charles Sanders. *Collected Papers*. Harvard University Press, 1931–1958.
-
-## Earlier material
-
-**Source:** [Peirce](../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/communicating/content/general/people/charles-sanders-peirce.md), Charles Sanders. *Collected Papers*. Harvard University Press, 1931–1958.

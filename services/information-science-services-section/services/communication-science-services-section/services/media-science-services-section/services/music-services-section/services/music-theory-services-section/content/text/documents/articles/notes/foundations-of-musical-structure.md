@@ -39,7 +39,3 @@ This is not a rejection of analytical tools but a demand that they be used with 
 - [Music Theory Terms](../terms/index.md)
 - [Music Terms](../../../terms/index.md)
 - [Ethnomusicology](../../../topics/ethnomusicology/index.md) — the discipline that foregrounds these questions of cultural specificity
-
-## Earlier material
-
-Music is organized sound — but organized by whom, for whom, and according to what principles? This lesson introduces the basic structural parameters of music ([rhythm](../../../../../../../../../../../../../../philosophy-services-section/content/text/glossary/terms/rhythm.md), [melody](../../../../../../../content/text/glossary/terms/melody.md), [harmony](../../../../../../../content/text/glossary/terms/harmony.md), [timbre](../../../../../../../content/text/glossary/terms/timbre.md)) not as neutral, universal categories but as analytical tools with specific cultural origins and embedded assumptions.

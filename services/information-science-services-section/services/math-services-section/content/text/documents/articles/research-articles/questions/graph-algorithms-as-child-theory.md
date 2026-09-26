@@ -40,11 +40,3 @@ A captain decision plus a rationale: which home, with what scope, and under what
 
 - Out of scope: deciding *which specific algorithms* to author first. That is a per-author choice once the home is fixed.
 - Out of scope: implementation language (the discipline's notes are language-agnostic; runnable code lives in `predicated-computing`'s FARS subtree, not in the typed library).
-
-## Earlier material
-
-The discipline's [theory-discipline](../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/specifications/theory-discipline.md) commitment is that each theory is a coherent organisation locale: notes that belong together substantively belong in the same theory. Graph algorithms have two homes:
-
-1. Name the home (single-home) for the algorithmic content. Distributing it across multiple homes is admissible only if the discipline's [directory-tree-carries-meaning](../../research/2026/07/31/lenticule-import/science/theories/information/theories/knowledge-systems/theories/markdown-vault-knowledge-system/theories/predicated-markdown-vault-knowledge-system/concepts/directory-tree-carries-meaning.md) commitment can absorb the splitting (e.g., proofs of correctness here, complexity analyses there).
-2. State what `depends-on:` edges algorithm notes will declare into the graph-theory parent (concepts, objects, theorems).
-3. State whether the algorithmic notes are themselves typed `definition`, `morphism`, or a new note-type the discipline has not yet committed to.

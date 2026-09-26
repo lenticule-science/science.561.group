@@ -23,7 +23,3 @@ A monoid with inverses — where every element can be "undone" — is a [group](
 A monoid is a [category](./category.md) with exactly one object. The elements of the monoid are the morphisms. The monoid operation is composition. The identity element is the identity morphism. This is the bridge between algebra and category theory: a category generalizes a monoid by allowing multiple objects instead of one. The two axioms of a category — associativity and identity — are exactly the two axioms of a monoid. A category is a "monoid with many objects."
 
 A monoidal category generalizes the monoid concept to the categorical setting. Instead of a binary operation on elements, a monoidal category has a tensor product on objects. Instead of an identity element, it has a unit object. The coherence conditions (associator, unitor) ensure the tensor product behaves like a monoid operation up to natural isomorphism.
-
-## Earlier material
-
-A monoid is a [semigroup](semigroup.md) with an [identity element](identity-element.md): a [set](set.md) M with an associative binary operation $\ast$ and an element e such that $e \ast a = a \ast e = a$ for all $a \in M$. A monoid captures the idea of composable operations with a do-nothing option.

@@ -24,8 +24,3 @@ Sherrington's *The Integrative Action of the Nervous System* (1906) described ho
 
 - [proprioception](../../../../../../../../../../natural-science-services-section/services/biological-science-services-section/services/medical-science-services-section/services/somatics-services-section/content/text/glossary/terms/proprioception.md) — the term Sherrington coined
 - [interoception](../../../../../../../../../../natural-science-services-section/services/biological-science-services-section/services/medical-science-services-section/services/somatics-services-section/content/text/glossary/terms/interoception.md) — the complementary sense of internal state, also classified by Sherrington
-
-## Earlier material
-
-- [proprioception](../../../../../../../../../../natural-science-services-section/services/biological-science-services-section/services/medical-science-services-section/services/somatics-services-section/content/text/glossary/terms/proprioception.md) — the term Sherrington coined
-- [interoception](../../../../../../../../../../natural-science-services-section/services/biological-science-services-section/services/medical-science-services-section/services/somatics-services-section/content/text/glossary/terms/interoception.md) — the complementary sense of internal state, also classified by Sherrington

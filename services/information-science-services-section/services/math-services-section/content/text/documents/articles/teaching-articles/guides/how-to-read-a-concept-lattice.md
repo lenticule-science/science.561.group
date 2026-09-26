@@ -63,7 +63,3 @@ Level 4: 3 files share {type, date-created, authors, status, extends, requires}
 Reading this: every file has a type and creation date. Most also have an author. About half also have a status. A small group has rich relational frontmatter (extends, requires). The hierarchy tells you: your richest-attributed files are the core of your knowledge structure; the rest are less connected.
 
 The 5 files without authors might be auto-generated or imported without attribution. The 7 files with authors but no status might be drafts that were never given a status field. The lattice does not tell you which — it tells you WHERE to look.
-
-## Earlier material
-
-You have a [concept lattice](../../../../glossary/terms/concept-lattice.md) — maybe drawn by software, maybe [built by hand](../tutorials/building-a-concept-lattice-by-hand.md). It is a diagram of nodes connected by lines. Here is how to read it.

@@ -32,9 +32,3 @@ Kent's framework assumes that the policymaker needs and will use the analyst's a
 - [Analyst-policymaker relationship](../../../glossary/terms/analyst-policymaker-relationship.md) — the relationship Kent defined
 - [Estimative intelligence](../../../glossary/terms/estimative-intelligence.md) — the product type he formalized
 - [Politicization](../../../glossary/terms/politicization.md) — the corruption his framework was designed to prevent
-
-## Earlier material
-
-- [Analyst-policymaker relationship](../../../glossary/terms/analyst-policymaker-relationship.md) — the relationship Kent defined
-- [Estimative intelligence](../../../glossary/terms/estimative-intelligence.md) — the product type he formalized
-- [Politicization](../../../glossary/terms/politicization.md) — the corruption his framework was designed to prevent

@@ -32,9 +32,3 @@ MI5 does not conduct foreign intelligence collection (MI6's responsibility) or s
 - [Counterintelligence](../../../glossary/terms/counterintelligence.md) — the service's primary function
 - [Double agent](../../../glossary/terms/double-agent.md) — the wartime Double-Cross System's operational method
 - [Intelligence oversight](../../../glossary/terms/intelligence-oversight.md) — the accountability framework within which MI5 operates
-
-## Earlier material
-
-- [Counterintelligence](../../../glossary/terms/counterintelligence.md) — the service's primary function
-- [Double agent](../../../glossary/terms/double-agent.md) — the wartime Double-Cross System's operational method
-- [Intelligence oversight](../../../glossary/terms/intelligence-oversight.md) — the accountability framework within which MI5 operates

@@ -31,9 +31,3 @@ A single decision about presentation: commit either to the relation form (and tr
 ## Why this matters
 
 The downstream uses (small categories as quivers with composition; the corpus's `depends-on:` graph as a digraph) inherit whichever presentation the object note picks. A bad choice produces friction every time a theory wants to reuse the structure; a good choice produces a single object that both representation theorists and graph theorists recognize as their own. The question is corpus-shaped, not mathematical: the answer is a curation decision, not a theorem.
-
-## Earlier material
-
-- The current corpus has separate notes for [directed-graph](../../../../glossary/terms/directed-graph.md) (relation presentation, no parallel edges) and [quiver](../../../../glossary/terms/quiver.md) (pair-of-functions presentation, parallel edges natural).
-- The [multigraph](../../../../glossary/terms/multigraph.md) note uses the pair-of-functions presentation for the undirected case; quiver is its directed analogue.
-- The [predication fibration](../../research/2026/07/31/lenticule-import/scripts/graphing/content/categories/theories/predication-categories/objects/predication-fibration.md) acts on a quiver-shaped object (the predicate category's underlying graph of generators), not a digraph in the strict relation sense.

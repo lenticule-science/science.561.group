@@ -29,8 +29,3 @@ Friedman's contribution was both technical (specific cipher breaks) and institut
 
 - [SIGINT](../../../glossary/terms/sigint.md) — the collection discipline he founded in its American form
 - [Operational security](../../../glossary/terms/operational-security.md) — the defensive complement to his offensive cryptanalysis
-
-## Earlier material
-
-- [SIGINT](../../../glossary/terms/sigint.md) — the collection discipline he founded in its American form
-- [Operational security](../../../glossary/terms/operational-security.md) — the defensive complement to his offensive cryptanalysis

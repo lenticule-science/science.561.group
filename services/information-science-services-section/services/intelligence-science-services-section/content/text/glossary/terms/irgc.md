@@ -27,9 +27,3 @@ The IRGC is the primary intelligence target of the [2026 Iran war](../analyses/2
 - [Counterintelligence](./counterintelligence.md) — the function the IRGC failed to perform in protecting Khamenei
 - [Covert action](./covert-action.md) — the mode through which the Quds Force operates externally
 - [Liaison](./liaison.md) — the IRGC-proxy relationship as an adversary liaison network
-
-## Earlier material
-
-- [Counterintelligence](counterintelligence.md) — the function the IRGC failed to perform in protecting Khamenei
-- [Covert action](covert-action.md) — the mode through which the Quds Force operates externally
-- [Liaison](liaison.md) — the IRGC-proxy relationship as an adversary liaison network

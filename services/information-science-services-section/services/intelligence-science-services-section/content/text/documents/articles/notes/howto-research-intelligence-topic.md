@@ -124,15 +124,3 @@ This skill covers the research phase of intelligence analysis. It does not cover
 ## Verification
 
 You have this skill if you can: (1) distinguish primary from aggregated reporting and trace claims to originating sources, (2) evaluate source incentive structures without dismissing sources entirely, (3) identify collection gaps and articulate what disciplines could fill them, and (4) produce a structured brief that an assessment-writer can act on directly.
-
-## Earlier material
-
-- Familiarity with [OSINT](../../../glossary/terms/osint.md) — the capabilities and limitations of open-source intelligence
-- Familiarity with [source reliability](../../../glossary/terms/source-reliability.md) — the admiralty system and its application to open sources
-- Understanding of the intelligence discipline's [collection disciplines](../../../glossary/terms/collection-disciplines.md) — to identify what open sources cannot provide
-- Familiarity with the vault's content structure — to identify integration points
-
-- [OSINT](../../../glossary/terms/osint.md) — the open-source collection discipline
-- [Source reliability](../../../glossary/terms/source-reliability.md) — the framework for evaluating sources
-- [Collection disciplines](../../../glossary/terms/collection-disciplines.md) — the full collection architecture, to contextualize what OSINT can and cannot do
-- [Signal-to-noise](../../../glossary/terms/signal-to-noise.md) — the foundational problem research must navigate

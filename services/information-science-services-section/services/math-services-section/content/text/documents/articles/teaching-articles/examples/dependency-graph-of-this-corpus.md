@@ -56,11 +56,3 @@ The corpus-wide topological sort is computed by the renderer using the same algo
 ## What this exemplifies
 
 The [dependency-soundness-iff-dag](../../research-articles/dependency-soundness-iff-dag.md) theorem is abstract until it is exhibited on the graph the corpus actually has. This example does that: it names $D$, walks through small subgraphs of it, demonstrates within-directory acyclicity by inspection, and points at the toolkit-level check for the corpus-wide claim. It also makes visible *why* the theorem matters — a corpus whose dependency graph is not a DAG cannot be linearly read, which would defeat the renderer and the whole topological-reading discipline. The corpus's commitment to typed `depends-on:` is structurally underwritten by the fact that the graph it produces happens to be a DAG, and this example is the witness.
-
-## Earlier material
-
-The corpus's own `depends-on:` graph: a [directed graph](../../../../glossary/terms/directed-graph.md) $D$ whose vertices are the typed notes of the corpus and whose edges encode the `depends-on:` declarations in note frontmatter. This example exhibits $D$ as a concrete instantiation of [dag](../../../../glossary/terms/dag.md), [directed-graph](../../../../glossary/terms/directed-graph.md), and [dependency-soundness-iff-dag](../../research-articles/dependency-soundness-iff-dag.md): the graph is required to be a DAG, the toolkit checks acyclicity, and the renderer's linear reading order is the [topological sort](../../research/2026/07/31/lenticule-import/scripts/graphing/content/graph/morphisms/topological-sort.md) of $D^{\mathrm{op}}$.
-
-By [dag-topological-sort](../../research-articles/dag-topological-sort.md), $D^{\mathrm{op}}$ admits a topological sort. Within this directory, one valid topological reading order is:
-
-**Witness:** the corpus's `depends-on:` graph is a DAG (by toolkit check) and admits a topological sort (by [dag-topological-sort](../../research-articles/dag-topological-sort.md)) that produces a sound reading order (by [dependency-soundness-iff-dag](../../research-articles/dependency-soundness-iff-dag.md)).

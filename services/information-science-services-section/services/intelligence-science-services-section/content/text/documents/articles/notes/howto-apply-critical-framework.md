@@ -129,12 +129,3 @@ This skill covers the application of cross-disciplinary critical frameworks to i
 ## Verification
 
 You have this skill if you can: (1) identify a specific analytical gap that a critical framework addresses, (2) apply the framework to produce findings that extend the assessment's empirical content rather than replacing it, (3) avoid moralization, essentialism, and unfalsifiable claims, and (4) integrate the framework's findings with the standard assessment in a way that adds analytic value.
-
-## Earlier material
-
-- Familiarity with at least two of the available frameworks (see below)
-- Familiarity with [mirror-imaging](../../../glossary/terms/mirror-imaging.md) — the bias most critical frameworks are designed to interrupt
-- Familiarity with the [write-intelligence-assessment](../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/write-intelligence-assessment/SKILL.md) skill — the product format the framework's findings must integrate with
-
-**Legibility analysis:**
-See the dedicated [apply-legibility-analysis](../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/apply-legibility-analysis/SKILL.md) skill.

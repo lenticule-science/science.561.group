@@ -23,7 +23,3 @@ A graph is bipartite iff it contains no [cycle](./cycle.md) of odd length; this 
 ## Position
 
 Bipartite graphs are the natural object whenever vertices come in two distinguished kinds with relations only across the divide: assignment problems (workers to jobs), matching problems (men to women, donors to recipients), authorship graphs (people to papers), Petri nets (places to transitions). The [Kuratowski subgraph](../../documents/articles/research-articles/kuratowski.md) $K_{3,3}$ that obstructs planarity is the complete bipartite graph on $3+3$ vertices. References: [Diestel 2017](../../documents/articles/bibliographies/diestel2017.md) §1.6, [Bondy–Murty 2008](../../documents/articles/bibliographies/bondy-murty2008.md) §1.2.
-
-## Earlier material
-
-A graph is bipartite iff it contains no [cycle](../../documents/articles/research/2026/07/31/lenticule-import/scripts/graphing/content/graph/scripts/bipartitioning/content/bipartite-graph/teaching/explanations/cycle.md) of odd length; this characterization is established by [bipartite-iff-no-odd-cycle](../../documents/articles/research-articles/bipartite-iff-no-odd-cycle.md).

@@ -32,9 +32,3 @@ The signal-to-noise model treats the analytical challenge as fundamentally infor
 - [Signal-to-noise](../../../glossary/terms/signal-to-noise.md) — the problem she identified
 - [Intelligence failure](../../../glossary/terms/intelligence-failure.md) — the phenomenon she theorized
 - [Indications and warning](../../../glossary/terms/indications-and-warning.md) — the function her work examined
-
-## Earlier material
-
-- [Signal-to-noise](../../../glossary/terms/signal-to-noise.md) — the problem she identified
-- [Intelligence failure](../../../glossary/terms/intelligence-failure.md) — the phenomenon she theorized
-- [Indications and warning](../../../glossary/terms/indications-and-warning.md) — the function her work examined

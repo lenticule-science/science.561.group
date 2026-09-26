@@ -27,7 +27,3 @@ The construction in the sufficiency proof is *Kahn's algorithm*. Its output is a
 ## Remarks
 
 This theorem is the load-bearing fact behind every dependency-resolution system that uses a `depends-on:` relation. The corpus's `depends-on:` graph is required to be a DAG so that the renderer can topologically sort the corpus into a sound reading order; the [dependency-soundness-iff-dag](dependency-soundness-iff-dag.md) theorem makes this requirement explicit at the corpus level. Reference: [Bondy–Murty 2008](../bibliographies/bondy-murty2008.md) §2.1.
-
-## Earlier material
-
-A finite [directed graph](../../../glossary/terms/directed-graph.md) $D = (V, E)$ admits a [topological sort](../research/2026/07/31/lenticule-import/scripts/graphing/content/graph/morphisms/topological-sort.md) if and only if it is a [DAG](../../../glossary/terms/dag.md) (contains no directed [cycle](../research/2026/07/31/lenticule-import/scripts/graphing/content/graph/explanations/teaching/explanations/cycle.md)).

@@ -24,7 +24,3 @@ The paper argues that the appropriate response is not to seek clarity — which 
 - [Adversarial epistemology](./adversarial-epistemology.md) — the broader epistemic condition within which the wilding represents a phase transition
 - [Synthetic adversarial ecology](./synthetic-adversarial-ecology.md) — the computational substrate that generates the wilding
 - [Constraint-based reasoning](./constraint-based-reasoning.md) — the analytic methodology proposed for operating within the wilding
-
-## Earlier material
-
-Angletonian wilding, as developed in [Agents of Angletonian Wilding](../../documents/articles/notes/agents-of-angletonian-wilding.md), names the condition in which the [wilderness of mirrors](wilderness-of-mirrors.md) ceases to be a pathological edge case and becomes the permanent baseline of the intelligence environment. Where Angleton's wilderness was produced by human adversaries deploying deception as strategic craft, the wilding is produced by [synthetic adversarial ecologies](synthetic-adversarial-ecology.md) that generate ambiguity without gardener, goal, or guarantee. The mirrors are no longer held up by an adversary — they are grown algorithmically and proliferate on their own.

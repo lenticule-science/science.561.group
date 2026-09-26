@@ -32,9 +32,3 @@ Jervis's framework focuses on the analyst's cognitive limitations — how the an
 - [Perception and misperception](../../../glossary/terms/perception-and-misperception.md) — the concept he established
 - [Mirror-imaging](../../../glossary/terms/mirror-imaging.md) — the specific bias most relevant to cross-cultural intelligence
 - [Intelligence failure](../../../glossary/terms/intelligence-failure.md) — the phenomenon cognitive bias contributes to
-
-## Earlier material
-
-- [Perception and misperception](../../../glossary/terms/perception-and-misperception.md) — the concept he established
-- [Mirror-imaging](../../../glossary/terms/mirror-imaging.md) — the specific bias most relevant to cross-cultural intelligence
-- [Intelligence failure](../../../glossary/terms/intelligence-failure.md) — the phenomenon cognitive bias contributes to

@@ -24,8 +24,3 @@ The framework is used in manual therapy, movement education, and [somatic](/medi
 
 - [tensegrity in movement](../../../../../../../../../../natural-science-services-section/services/biological-science-services-section/services/medical-science-services-section/services/somatics-services-section/content/text/glossary/terms/tensegrity-in-movement.md) — the concept that Anatomy Trains maps in practice
 - [Stephen Levin](./stephen-levin.md) — orthopedic surgeon whose biotensegrity model underlies Anatomy Trains
-
-## Earlier material
-
-- [tensegrity in movement](../../../../../../../../../../natural-science-services-section/services/biological-science-services-section/services/medical-science-services-section/services/somatics-services-section/content/text/glossary/terms/tensegrity-in-movement.md) — the concept that Anatomy Trains maps in practice
-- [Stephen Levin](stephen-levin.md) — orthopedic surgeon whose biotensegrity model underlies Anatomy Trains

@@ -35,9 +35,3 @@ Asao B. Inoue is an American rhetoric and composition scholar at Arizona State U
 - [language and power](../../writing/topics/language-and-power/index.md) — Inoue's work makes explicit how writing conventions encode racial power
 - [discourse community](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/discourse-community.md) — his work shows how discourse community norms can function as exclusionary standards
 - [audience](../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/glossary/concepts/audience.md) — Inoue challenges whose language defines "clarity" and "correctness"
-
-## Earlier material
-
-- [language and power](../../../../../../../../../../philosophy-services-section/services/logic-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/yet-another-unsorted-archive-dump/predication-categories/_archive/bucket-4/articulating/library/aperiodic-articulation-category/library/aperiodic-articulation-cell/library/potential-aperiodic-articulation-cell/predicating/library/transfinite-predication-category/hacking/library/predicate-category/hacking/library/references/writing/topics/language-and-power/index.md) — Inoue's work makes explicit how writing conventions encode racial power
-- [discourse community](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/discourse-community.md) — his work shows how discourse community norms can function as exclusionary standards
-- [audience](../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/glossary/concepts/audience.md) — Inoue challenges whose language defines "clarity" and "correctness"

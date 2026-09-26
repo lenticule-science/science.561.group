@@ -18,10 +18,3 @@ The first twelve hours of Operation Epic Fury involved nearly 900 strikes on Ira
 
 - [Operation Roaring Lion](./operation-roaring-lion.md) — the Israeli component of the joint campaign
 - [Operation True Promise IV](./operation-true-promise-iv.md) — Iran's retaliatory designation
-
-## Earlier material
-
-The operation's name follows the convention of U.S. military operation naming — a two-word designation intended to be memorable and, in this case, unambiguously assertive. It is paired with Israel's [Operation Roaring Lion](operation-roaring-lion.md), the Israeli component of the same coordinated campaign. Iran designated its retaliatory operations [Operation True Promise IV](operation-true-promise-iv.md), continuing the naming sequence from prior Iranian retaliatory strikes against Israel.
-
-- [Operation Roaring Lion](operation-roaring-lion.md) — the Israeli component of the joint campaign
-- [Operation True Promise IV](operation-true-promise-iv.md) — Iran's retaliatory designation

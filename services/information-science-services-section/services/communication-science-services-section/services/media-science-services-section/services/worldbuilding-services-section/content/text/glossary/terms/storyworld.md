@@ -17,7 +17,3 @@ Ryan, in *Possible Worlds, Artificial Intelligence, and Narrative Theory* (1991)
 In the [Reproducible Paracosm](../../../../../literature-services-section/content/text/documents/articles/notes/reproducible-paracosm.md) framework, the storyworld corresponds to the paracosmic sketch $S$ and its model category $\mathbf{Mod}(S)$: the sketch encodes the fabula (the underlying story logic), and each model represents a particular sjužet (a specific discourse realization). The modal endofunctors formalize what narratology describes informally—viewpoint, epistemic framing, and the space of narrative possibility.
 
 The storyworld is distinguished from a [secondary world](./secondary-world.md) by scope: secondary worlds are self-contained fictional realities (typically associated with fantasy and science fiction), while a storyworld is any narrative's implied reality, including realist fiction. Every secondary world is a storyworld, but not every storyworld is a secondary world.
-
-## Earlier material
-
-The storyworld is distinguished from a [secondary world](secondary-world.md) by scope: secondary worlds are self-contained fictional realities (typically associated with fantasy and science fiction), while a storyworld is any narrative's implied reality, including realist fiction. Every secondary world is a storyworld, but not every storyworld is a secondary world.

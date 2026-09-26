@@ -34,9 +34,3 @@ Paul Ricoeur (1913–2005) was a French philosopher whose work on narrative, tim
 - [narrative identity](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/narrative-identity.md) — Ricoeur's central concept for writing studies
 - [memoir](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/memoir.md) — the genre most directly engaged with narrative identity
 - [fiction writing](../../writing/disciplines/fiction/index.md) — Ricoeur's mimesis theory applies to fiction's relationship with lived experience
-
-## Earlier material
-
-- [narrative identity](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/narrative-identity.md) — Ricoeur's central concept for writing studies
-- [memoir](../../../../../../../../../../social-science-services-section/content/text/glossary/terms/memoir.md) — the genre most directly engaged with narrative identity
-- [fiction writing](../../../../../../../../../../philosophy-services-section/services/logic-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/yet-another-unsorted-archive-dump/predication-categories/_archive/bucket-4/articulating/library/aperiodic-articulation-category/library/aperiodic-articulation-cell/library/potential-aperiodic-articulation-cell/predicating/library/transfinite-predication-category/hacking/library/predicate-category/hacking/library/references/writing/disciplines/fiction/index.md) — Ricoeur's mimesis theory applies to fiction's relationship with lived experience

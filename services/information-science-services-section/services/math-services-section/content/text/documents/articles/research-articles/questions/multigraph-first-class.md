@@ -30,10 +30,3 @@ A choice between three options: keep the umbrella (current state, honest about n
 ## Why this matters
 
 The choice affects the cleanest statement of half a dozen later theorems and almost every morphism. It also affects which textbook the corpus's notation matches; readers transferring in from one textbook tradition will find one choice transparent and another awkward. The current state is fine for the directory's first round of population, but the question should be revisited before a child theory of graph-theory is opened.
-
-## Earlier material
-
-Is [multigraph](../../../../glossary/terms/multigraph.md) the *primary* graph object, with [simple-graph](../../../../glossary/terms/simple-graph.md) the special case (no parallel edges, no loops), or is it the other way around? The current notes treat [graph](../../../../glossary/terms/graph.md) as the umbrella, simple as a refinement, multi as a generalization — but the choice of which direction is "the" generalization affects how morphisms, [quotient-graph](../../../../glossary/terms/quotient-graph.md), and [line-graph](../../../../glossary/terms/line-graph.md) are best stated.
-
-- The notes as currently written declare [graph](../../../../glossary/terms/graph.md) as the umbrella and place both refinements ([simple-graph](../../../../glossary/terms/simple-graph.md), [multigraph](../../../../glossary/terms/multigraph.md)) as `depends-on: [graph]`. This is a non-commitment.
-- The morphism work in `morphisms/` lands in $\mathbf{MultiGrph}$ when worked through carefully.

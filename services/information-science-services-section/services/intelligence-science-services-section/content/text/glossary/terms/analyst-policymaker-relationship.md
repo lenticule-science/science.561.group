@@ -27,7 +27,3 @@ The [estimative intelligence](./estimative-intelligence.md) tradition attempted 
 - [National Intelligence Estimate](./national-intelligence-estimate.md) — the product through which the relationship is most formally mediated
 - [Intelligence failure](./intelligence-failure.md) — what occurs when the relationship breaks down in either direction
 - [Intelligence cycle](./intelligence-cycle.md) — the process that structures the relationship's information flows
-
-## Earlier material
-
-The [estimative intelligence](estimative-intelligence.md) tradition attempted to formalize this balance through process: structured coordination, [estimative language](estimative-language.md), recorded dissent, and community review. But process cannot eliminate the underlying tension any more than judicial procedures can eliminate the tension between law and justice. The relationship remains adversarial in the functional sense — not because analyst and policymaker are enemies, but because their institutional incentives structurally diverge, and the discipline's integrity depends on maintaining that divergence without allowing it to produce irrelevance.

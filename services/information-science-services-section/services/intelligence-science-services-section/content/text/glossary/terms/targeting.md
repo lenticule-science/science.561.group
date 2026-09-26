@@ -26,7 +26,3 @@ Targeting also intersects with [attribution](./attribution.md) in ways that have
 - [Order of battle](./order-of-battle.md) — the adversary knowledge framework targeting draws upon
 - [Intelligence preparation of the battlefield](./intelligence-preparation.md) — the process that identifies target priorities
 - [Attribution](./attribution.md) — the analytic function that targeting decisions increasingly depend upon
-
-## Earlier material
-
-Target development — the process of building a target from initial identification to actionable intelligence — requires a convergence of multiple [collection disciplines](collection-disciplines.md). A facility identified through [IMINT](imint.md) must be confirmed through [SIGINT](sigint.md) or [HUMINT](humint.md) as operationally significant. Its function must be determined, its defenses assessed, its patterns of activity established, and its relationship to the adversary's broader operational network understood. The resulting target package — coordinates, imagery, functional analysis, collateral damage estimate, recommended weapon and delivery method — represents one of the most tightly integrated products of [all-source analysis](all-source-analysis.md).

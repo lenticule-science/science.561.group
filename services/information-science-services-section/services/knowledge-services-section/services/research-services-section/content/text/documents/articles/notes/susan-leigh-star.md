@@ -31,8 +31,3 @@ Susan Leigh Star (1954–2010) was an American scholar of science and technology
 
 - [Geoffrey Bowker](./geoffrey-bowker.md) — her primary collaborator on classification
 - [faceted classification](../../../../../../../../../../engineering-science-services-section/services/design-engineering-science-services-section/services/information-architecture-services-section/content/text/glossary/terms/faceted-classification.md) — one type of classification system she analyzed
-
-## Earlier material
-
-- [Geoffrey Bowker](geoffrey-bowker.md) — her primary collaborator on classification
-- [faceted classification](../../../../../../../../../../philosophy-services-section/services/logic-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/yet-another-unsorted-archive-dump/predication-categories/_archive/bucket-4/articulating/library/aperiodic-articulation-category/library/aperiodic-articulation-cell/library/potential-aperiodic-articulation-cell/predicating/library/transfinite-predication-category/hacking/library/predicate-category/hacking/library/references/design/disciplines/information-architecture/terms/faceted-classification.md) — one type of classification system she analyzed
