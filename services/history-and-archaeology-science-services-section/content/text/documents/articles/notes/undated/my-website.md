@@ -1,3 +1,12 @@
+---
+title: "my website"
+author: ["emsenn"]
+date: 2019-10-16
+lastmod: 2020-02-11T14:12:56-05:00
+tags: ["emsenn", "emsenn.net"]
+draft: false
+predecolonial: true
+---
 +++
 title = "My website"
 author = ["emsenn"]
@@ -728,18 +737,6 @@ soon = [
 
 [^fn:1]: you might call it whiteness, capitalism, the West, or imperialism
 
-## Earlier material
-
 I release as much of my work as I can for the _benefit of the commons_, so that anyone can use and change it however serves them best
 
 I currently accept support through the following platforms
-
-+++
-title = "my website"
-author = ["emsenn"]
-date = 2019-10-16
-lastmod = 2020-02-11T14:12:56-05:00
-tags = ["emsenn", "emsenn.net"]
-draft = false
-predecolonial = true
-+++

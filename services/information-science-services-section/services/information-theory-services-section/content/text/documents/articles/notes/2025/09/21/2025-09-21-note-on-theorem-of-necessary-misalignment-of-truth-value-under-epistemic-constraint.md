@@ -210,13 +210,7 @@ and situates alignment limits within classical rate–distortion theory and evol
 - Kolchinsky, A., & Wolpert, D. H. (2018). "Semantic Information and Its Measures." *Entropy*, 20(12), 884.
 - Hofbauer, J., & Sigmund, K. (1998). *Evolutionary Games and Population Dynamics*. Cambridge University Press.
 
-## Earlier material
-
 1.  ****Sufficiency.****
-
-1.  ****Scope of “necessary.”****
-
-1.  ****Why decoder-level information.****
 
 -   C. E. Shannon. **A Mathematical Theory of Communication.** Bell System Technical Journal 27 (1948).
 -   T. M. Cover & J. A. Thomas. **Elements of Information Theory.** Wiley (2006).

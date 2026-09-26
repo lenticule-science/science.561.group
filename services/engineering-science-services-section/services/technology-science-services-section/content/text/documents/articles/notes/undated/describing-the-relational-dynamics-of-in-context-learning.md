@@ -127,11 +127,4 @@ Every prompt, like every conversation, creates a temporary order of understandin
 
 \</div\>
 
-## Earlier material
-
 In 2025, David Dherin and other researchers at Google's DeepMind released a study titled *Learning Without Training: The Implicit Dynamics of In-Context Learning*.(NO_ITEM_DATA:dherin_learning_2025)
-
-<style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
-  <div class="csl-entry">NO_ITEM_DATA:dherin_learning_2025</div>
-  <div class="csl-entry">NO_ITEM_DATA:emsenn_introducing_relational_dynamics_2025</div>
-</div>

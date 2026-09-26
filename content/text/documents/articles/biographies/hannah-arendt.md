@@ -37,8 +37,6 @@ Hannah Arendt (1906–1975) was a German-American political theorist and statele
 - [Lauren Berlant](./lauren-berlant.md) — extends political affect theory into the present
 - [Hegemony](../../sociology/terms/hegemony.md) — the cultural domination her work on totalitarianism examines
 
-## Earlier material
-
 Hannah Arendt (1906–1975) was a German-American political theorist. A student of Heidegger and Jaspers who fled Nazi Germany in 1933, her work addresses the conditions for political life, the nature of totalitarianism, and the relationship between thought and action.
 
 - *The Origins of Totalitarianism* (1951)

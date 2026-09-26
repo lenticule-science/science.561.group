@@ -14,6 +14,19 @@ This record may be used as a [[telemetric lambda]] when creating or formating de
 ## Grammar of a Delta Record
 ### Typing
 Every record is given a `type` in its frontmatter, which may be one of the following, or something else:
+- [../../slop/relationality/ai-generated-relationality/relationality-slop-2026-03-02/strata/term](../../../../../../../philosophy-services-section/services/relationality-services-section/content/slop/relationality/ai-generated-relationality/relationality-slop-2026-03-02/strata/term)
+- [essay](../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/triage/essay)
+- etc.
+### Titling
+Every record must have a title. The grammar of the title is determined by record type:
+
+| type | standard voice |
+|-|-|
+| [../../slop/relationality/ai-generated-relationality/relationality-slop-2026-03-02/strata/term](../../../../../../../philosophy-services-section/services/relationality-services-section/content/slop/relationality/ai-generated-relationality/relationality-slop-2026-03-02/strata/term) | [structured reference voice](structured reference voice) |
+
+## Grammar of a Delta Record
+### Typing
+Every record is given a `type` in its frontmatter, which may be one of the following, or something else:
 - [[term]]
 - [[essay]]
 - etc.
@@ -42,22 +55,3 @@ Every record must have a voice.
 | type | standard voice |
 |-|-|
 | [[term]] | [[structured reference voice]] |
-
-## Earlier material
-
-To ***grammatize a telemetric record*** is to move information into the [format](../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/triage/format) of a [telemetric record](telemetric record), which is a [telemetric signal](telemetric signal) within a [telemetric register](telemetric register).
-
-This record may be used as a [telemetric lambda](../../../../../../../social-science-services-section/services/sociology-science-services-section/services/cybernetic-postliberalism-services-section/content/text/glossary/terms/telemetric-lambda.md) when creating or formating delta records in a register.
-
-## Grammar of a Delta Record
-### Typing
-Every record is given a `type` in its frontmatter, which may be one of the following, or something else:
-- [../../slop/relationality/ai-generated-relationality/relationality-slop-2026-03-02/strata/term](../../../../../../../philosophy-services-section/services/relationality-services-section/content/slop/relationality/ai-generated-relationality/relationality-slop-2026-03-02/strata/term)
-- [essay](../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/triage/essay)
-- etc.
-### Titling
-Every record must have a title. The grammar of the title is determined by record type:
-
-| type | standard voice |
-|-|-|
-| [../../slop/relationality/ai-generated-relationality/relationality-slop-2026-03-02/strata/term](../../../../../../../philosophy-services-section/services/relationality-services-section/content/slop/relationality/ai-generated-relationality/relationality-slop-2026-03-02/strata/term) | [structured reference voice](structured reference voice) |

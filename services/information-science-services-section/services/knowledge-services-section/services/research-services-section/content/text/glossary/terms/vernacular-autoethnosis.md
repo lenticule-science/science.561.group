@@ -27,26 +27,3 @@ Vernacular autoethnosis has particular relevance in contexts of cultural disrupt
 ## Related terms
 
 - [Synthetic Place of Ritualized Ethnosis](./synthetic-place-of-ritualized-ethnosis.md) — a virtual environment designed for vernacular autoethnosis practice
-
-
----
-
-## Consolidated triage formulation
-
-<!-- CONSOLIDATED-TRIAGE-SOURCE: vernacular-autoethnosis.md SHA256 3997daf11fe723953315c422678b89aea1e4c74017ee37289dc2059d81407cb0 -->
-
-This historical formulation was consolidated from `lib/emsenn/services/561-group/services/public-services-section/services/personal-services-section/emsenn-services-section/content/text/triage/vernacular-autoethnosis.md`. It is retained where its wording, links, provenance, or uncertainty differs from the active entry.
-
-<details>
-<summary>Recorded source metadata</summary>
-
-```yaml
-dg-publish: true
-type: "[[definition]]"
-```
-
-</details>
-
-### Retained formulation
-
-***Vernacular autoethnosis*** is (definition:: the [[practicing|practice]] of [[self-determining]] an [[ethos]] through [[creating]] and [[using]] chosen [[ritual|rituals]], [[narrative|stories]], [[language pattern|language patterns]], and [[word choice|word choices]]).
