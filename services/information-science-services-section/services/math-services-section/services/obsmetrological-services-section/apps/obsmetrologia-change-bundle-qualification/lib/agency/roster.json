@@ -3,7 +3,7 @@
   "offices": [
     {
       "id": "mathematical-library-steward",
-      "record": "content/offices/mathematical-library-steward.json"
+      "record": "lib/agency/offices/mathematical-library-steward.json"
     }
   ]
 }
