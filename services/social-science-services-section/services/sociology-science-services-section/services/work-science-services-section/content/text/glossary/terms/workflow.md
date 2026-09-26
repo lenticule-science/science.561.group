@@ -23,6 +23,9 @@ ast:
     - soundness-condition:
         - routing-logic
         - data-flow
+defines: Workflow
+related: Plan, Procedure, Process, Orchestration, PetriNet, BPELProcess
+date-modified: 2026-03-20
 ---
 
 A workflow is a composition of [work](./work.md) units with one algebraic constraint: the initial input type equals the final output type. The workflow takes something of type X and produces something of type X, regardless of what happens internally. The internal structure is unconstrained — flat sequence, branching web, parallel paths, nested sub-workflows. What matters is the boundary: same type in, same type out.
@@ -40,38 +43,6 @@ Petri nets formalize workflow analysis. A Petri net is a bipartite graph of plac
 A workflow is a partial order on its tasks. The dependency edges define a precedence relation: A must complete before B starts. This relation is reflexive (every task depends on itself trivially), antisymmetric (if A depends on B and B depends on A, they are the same task or there is a cycle, which is a design error), and transitive (if A before B before C, then A before C). A workflow without cycles is a directed acyclic graph — a DAG — and the dependency relation is a [partial order](../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/partial-order.md).
 
 Tasks in a workflow may be any of the four work types. A workflow of pure [processes](./process.md) is deterministic — run it and the outcome is fixed. A workflow containing [procedures](./procedure.md) branches on conditions. A workflow containing [inquiry](./inquiry.md) is adaptive — the graph may be modified during execution as inquiry reveals new information. The most rigid workflows are pure process chains. The most flexible are inquiry-containing workflows that rewrite their own structure.
-
-
----
-
-<!-- source: _archive/discipline-intake/business/terms/workflow.md -->
-
-## Imported source: _archive/discipline-intake/business/terms/workflow.md
-
----
-id: workflow
-description: "A Workflow is a tuple (P, T, F, M₀, M_f) — a Petri net with a distinguished source place P_s (no incoming arcs) and sink place P_e (no outgoing arcs), where every node lies on a directed path from P_s to P_e — that models a business process as a coordinated sequence of activities with explicit data and control flow. The defining structure: a workflow specifies how a set of activities is to be performed by specifying the conditions under which each activity becomes enabled, the dependencies between activities, and the routing logic (sequential, parallel, conditional, iterative) that governs execution. A workflow is not a plan (a plan is a static structure of intended actions; a workflow is a dynamic process that can be enacted by multiple cases) and not a procedure (a procedure has a single specification; a workflow orchestrates many procedures across many participants)."
-defines: Workflow
-related: Plan, Procedure, Process, Orchestration, PetriNet, BPELProcess
-date-created: 2026-03-20
-date-modified: 2026-03-20
-params:
-  activity-set: relational-universe
-  routing-logic: relational-universe-morphism
-  data-flow: relational-universe-morphism
-output: relational-universe
-ast:
-  workflow-net:
-    - activity-set
-    - routing-logic:
-        - activity-set
-        - activity-set
-    - soundness-condition:
-        - routing-logic
-        - data-flow
----
-
-# Workflow
 
 ## Formal definition
 
@@ -152,8 +123,3 @@ BPEL's formal semantics have been given in terms of both process algebras (Lanes
 - Whether the workflow net structure has a natural expression as a coalgebra — whether a workflow can be modeled as a coalgebra $(X, \alpha: X \to F(X))$ where $X$ is the marking space and $F$ encodes the firing rule, and whether soundness corresponds to a property of the final coalgebra.
 - Whether the Petri net composition operations (sequential, parallel, choice composition) form a monoidal category and whether workflow soundness is preserved under all monoidal operations — making soundness a property that can be verified compositionally from the soundness of components.
 - Whether BPEL's compensation mechanism — reversing previously committed work when a fault occurs — has a formal semantics in terms of history fibers: whether compensation corresponds to retracting elements from the execution-settled fiber $\mathrm{Fix}(\Delta_t)$ back to the history $H_t$.
-
-## Earlier material
-
-```yaml
----

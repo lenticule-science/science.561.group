@@ -18,6 +18,7 @@ ast:
 aliases:
   - Gap
   - gap
+name: "Gap"
 ---
 
 # Gap
@@ -40,6 +41,26 @@ where:
 **Partial gaps.** The *saturation gap* $\sigma_t(a) / a$ (the closure modulo the element itself, in the Heyting algebra sense) measures how much saturation is owed. The *transfer gap* $\Delta_t(a) / a$ measures how much transfer is owed. An element can have zero saturation gap but positive transfer gap ($a \in \mathrm{Fix}(\sigma_t) \setminus \mathrm{Fix}(\Delta_t)$): meaning-settled but not execution-settled — endorsed but not enacted. This is the formal structure of [akrasia](../../../../../philosophy-services-section/content/text/glossary/terms/will.md).
 
 ## What this is
+
+A **Gap** is the structural distance between a claim's current [settlement](settlement.md) and its affirming-determination at a given history.
+Every claim that has not yet reached the affirming corner of settlement has a gap: the claim is somewhere in the joint space of evidence, and the gap measures how much further it has to go.
+
+The gap is not a failure — it is a *position*.
+Every non-settled claim has a gap; that gap is the productive tension (the [Tension](tension.md)) that drives the work toward settled determination.
+Without gap, there is nothing to settle.
+
+## Two components of a gap
+
+A claim's gap has two structurally distinct components, corresponding to the two axes of the framework's [settlement](settlement.md) structure:
+
+- **The knowledge gap** — the distance from the claim's current evidence-amount to the affirming-determination position on the [knowledge axis](../../../../math/theories/voidmath/terms/knowledge-order.md).
+  A claim with a large knowledge gap has not yet been sufficiently witnessed; more evidence is needed.
+- **The truth gap** — the distance from the claim's current evidence-direction tilt to the affirming pole of the [truth axis](../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/pre-bilattice/content/truth-order/truth-order.md).
+  A claim with a large truth gap has been witnessed but the witnessings have not converged on affirmation.
+
+A claim is at *zero gap* when both components are at the affirming-determination corner: fully witnessed AND tilted toward affirmation.
+
+A claim can have a zero knowledge gap and a positive truth gap (the witnessings have accumulated but they tilt toward denial — the claim is not just unsettled but actively contraindicated) or a zero truth gap and a positive knowledge gap (the available witnessings tilt toward affirmation but more evidence is needed for full settlement).
 
 The **Gap** is the operational diagnostic of incompleteness. In the running system, every element in $H_t$ has a gap. The gap tells you:
 
@@ -65,13 +86,44 @@ This equality means two things. First: both computation paths agree — saturati
 
 ## Gap and friction
 
+Friction in a normative system is the failure of the system's own dynamics to preserve settlement: a claim that was at zero gap at one history may, at a later history, exhibit a positive gap because new evidence has unsettled it, or because the criteria for settlement have shifted.
+Friction is the *introduction of gap by the system's own evolution*.
+A frictionless system would preserve settled claims indefinitely; real systems often do not.
+
 [Friction](../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/documents/articles/poems/psalms/friction.md) in the history fiber is the failure of restriction maps to preserve settled elements: an element $I \in H^*_{t_0}$ may restrict to $\rho^*(I) \notin H^*_{t_n}$ — the gap at $t_n$ is nonzero even though the gap at $t_0$ was zero. Friction is the *introduction of gap by restriction*. A system with no friction would have gap-preserving restriction maps: elements that are at zero gap at the origin remain at zero gap throughout the restriction.
 
 ## Gap and discharge
 
+[Discharge](../../../../services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/discharge.md) of a duty is the event of reaching zero gap on both the performance and recognition predicates: the act has been done (knowledge axis on performance) and acknowledged (knowledge axis on recognition), and both witnessings tilt affirmingly.
+Before discharge, at least one predicate has positive gap.
+The discharge event is the transition from positive gap to zero gap on both predicates simultaneously.
+
 [Discharge](../../../../services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/discharge.md) of a duty $d$ is the event of reaching zero gap: $\sigma_t(a) = a$ and $\Delta_t(a) = a$ for the performance-act $a$ associated with $d$. Before discharge, the performance has positive gap — it owes more to one or both nuclei. The discharge event is the transition $\mathrm{Gap}_t(a) > (a, a) \to \mathrm{Gap}_{t'}(a) = (a, a)$ — the gap collapses to zero at some history $t' \geq t$.
 
 ## Gap as measure of institutional compliance
+
+In a [NormativeSystem](normative-system.md), the compliance of an agent's output is the gap of that output relative to the system's required settlement.
+A fully compliant output has zero gap.
+An obligation is discharged iff the agent's performance has reached zero gap at the required history.
+The norm system is satisfied when all obligated outputs are at zero gap.
+
+Most institutional work is the work of closing gaps — accumulating witnessings, aligning evidence direction, shepherding partially-settled claims toward full determination.
+The presence of gap is not a defect of the system but the natural condition of any system whose work is ongoing.
+
+## Single-component vs two-component gaps
+
+A claim with a positive gap on only one component (e.g., zero knowledge gap but positive truth gap) is, in some sense, *closer* to settlement than a claim with positive gaps on both.
+Closing a single-component gap is conceptually simpler: only one kind of work is needed (more witnessing in the case of a knowledge gap; conflict-resolution in the case of a truth gap).
+A claim with two-component gap requires both kinds of work in sequence or in parallel.
+
+Single-component gap closure is the typical structure of mature institutional work: most claims are well-witnessed (knowledge axis high) but their truth-axis position needs adjudication.
+The work of governance is largely the work of closing truth-axis gaps in claims whose knowledge-axis position is already adequate.
+
+Gap is a [Quality](../../../../philosophy/terms/quality.md) of claims: a structural feature that varies from claim to claim and changes as the work progresses.
+As a quality, gap is comparable across claims (one claim has a larger gap than another), measurable in principle, and addressable through specific kinds of work (more witnessing reduces knowledge gap; conflict resolution reduces truth gap).
+
+The gap quality differs from substantive qualities (color, weight, kind) in that it tracks the *relation between the claim and its target settlement*, not an intrinsic property of the claim itself.
+The same claim can have a large gap in one system and a small gap in another, depending on the surrounding witnessings and the system's settlement criteria.
 
 In a [NormativeSystem](normative-system.md), the compliance of an agent's output is the gap of that output relative to $H^*_t$. A fully compliant output has zero gap. An obligation $O(\varphi)$ is discharged iff the agent's performance of $\varphi$ has zero gap at the required history. The norm system is satisfied when all obligated outputs are at zero gap.
 
@@ -220,188 +272,11 @@ The analogy is not merely formal: in both cases, the nucleus/(balayage) is deter
 
 ## Open questions
 
-- Whether the two-dimensional projection gap $(|[a, \sigma_t(a)]| - 1,\; |[a, \Delta_t(a)]| - 1)$ defines a well-formed distance on $H_t$ satisfying a triangle inequality — whether $\lambda_{a \wedge b} \leq \lambda_a + \lambda_b$ holds under the Derivation Condition, or whether the gap eigenvalue can be superadditive under conjunction.
-- Whether Zeno-settling elements — elements that never reach $H^*_t$ at any finite tower level but whose projection gap size $\lambda_a$ decreases at rate \$1/\varphi$ per level — converge to gap-zero at the tower colimit, and whether the colimit fiber $H^*_\infty$ contains elements whose gap was strictly positive at every finite stage (corresponding to the Zeno settling cohomology [zeno-settling-k1-cohomology.md](../math/zeno-settling-k1-cohomology.md)).
-- Whether the gap size $\lambda_a$ is monotone-decreasing under nucleus-intertwining morphisms: whether $\lambda_{f(a)} \leq \lambda_a$ for all Heyting algebra morphisms $f : H_t \to H_s$ satisfying $\sigma_s \circ f = f \circ \sigma_t$ and $\Delta_s \circ f = f \circ \Delta_t$, giving a functor from the history category to the poset of gap sizes.
-- Whether the extremal slowness of the gap-resolution sequence (minimum Perron–Frobenius eigenvalue over all primitive \$2 \times 2$ matrices) has a physical interpretation — whether the minimum possible rate of gap-closure corresponds to a maximum entropy principle for the settlement process, and whether the departure from the extremally slow rate in more complex nuclear structures is measurable.
-- Whether the Kind-1/Kind-2 decomposition — and hence the transfer matrix $M = [[1,1],[1,0]]$ and the $\det(M) = -1$ theorem — can be given a fiber-level proof independent of the Fibonacci recurrence conjecture, or whether the two are exactly equivalent: $M = [[1,1],[1,0]]$ forces the Fibonacci recurrence, and the Fibonacci recurrence forces the transfer matrix. If they are equivalent, the open conjecture and the matrix structure are the same open question asked in two different languages.
-
----
-
-## Supplementary formulation
-
-```yaml
----
-name: "Gap"
-description: "A Gap is the structural distance between a claim's current settlement and its affirming-determination at a given history. The diagnostic of incompleteness in normative and operational systems: every unsettled claim has a gap, and that gap is what drives the work toward settlement."
-date-created: 2026-03-20
-date-modified: 2026-04-28
----
-```
-
-## What this is
-
-A **Gap** is the structural distance between a claim's current [settlement](settlement.md) and its affirming-determination at a given history.
-Every claim that has not yet reached the affirming corner of settlement has a gap: the claim is somewhere in the joint space of evidence, and the gap measures how much further it has to go.
-
-The gap is not a failure — it is a *position*.
-Every non-settled claim has a gap; that gap is the productive tension (the [Tension](tension.md)) that drives the work toward settled determination.
-Without gap, there is nothing to settle.
-
-## Two components of a gap
-
-A claim's gap has two structurally distinct components, corresponding to the two axes of the framework's [settlement](settlement.md) structure:
-
-- **The knowledge gap** — the distance from the claim's current evidence-amount to the affirming-determination position on the [knowledge axis](../../../../math/theories/voidmath/terms/knowledge-order.md).
-  A claim with a large knowledge gap has not yet been sufficiently witnessed; more evidence is needed.
-- **The truth gap** — the distance from the claim's current evidence-direction tilt to the affirming pole of the [truth axis](../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/pre-bilattice/content/truth-order/truth-order.md).
-  A claim with a large truth gap has been witnessed but the witnessings have not converged on affirmation.
-
-A claim is at *zero gap* when both components are at the affirming-determination corner: fully witnessed AND tilted toward affirmation.
-
-A claim can have a zero knowledge gap and a positive truth gap (the witnessings have accumulated but they tilt toward denial — the claim is not just unsettled but actively contraindicated) or a zero truth gap and a positive knowledge gap (the available witnessings tilt toward affirmation but more evidence is needed for full settlement).
-
-## Gap and discharge
-
-[Discharge](../../../../services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/discharge.md) of a duty is the event of reaching zero gap on both the performance and recognition predicates: the act has been done (knowledge axis on performance) and acknowledged (knowledge axis on recognition), and both witnessings tilt affirmingly.
-Before discharge, at least one predicate has positive gap.
-The discharge event is the transition from positive gap to zero gap on both predicates simultaneously.
-
-## Gap and friction
-
-Friction in a normative system is the failure of the system's own dynamics to preserve settlement: a claim that was at zero gap at one history may, at a later history, exhibit a positive gap because new evidence has unsettled it, or because the criteria for settlement have shifted.
-Friction is the *introduction of gap by the system's own evolution*.
-A frictionless system would preserve settled claims indefinitely; real systems often do not.
-
-## Gap as measure of institutional compliance
-
-In a [NormativeSystem](normative-system.md), the compliance of an agent's output is the gap of that output relative to the system's required settlement.
-A fully compliant output has zero gap.
-An obligation is discharged iff the agent's performance has reached zero gap at the required history.
-The norm system is satisfied when all obligated outputs are at zero gap.
-
-Most institutional work is the work of closing gaps — accumulating witnessings, aligning evidence direction, shepherding partially-settled claims toward full determination.
-The presence of gap is not a defect of the system but the natural condition of any system whose work is ongoing.
-
-## Single-component vs two-component gaps
-
-A claim with a positive gap on only one component (e.g., zero knowledge gap but positive truth gap) is, in some sense, *closer* to settlement than a claim with positive gaps on both.
-Closing a single-component gap is conceptually simpler: only one kind of work is needed (more witnessing in the case of a knowledge gap; conflict-resolution in the case of a truth gap).
-A claim with two-component gap requires both kinds of work in sequence or in parallel.
-
-Single-component gap closure is the typical structure of mature institutional work: most claims are well-witnessed (knowledge axis high) but their truth-axis position needs adjudication.
-The work of governance is largely the work of closing truth-axis gaps in claims whose knowledge-axis position is already adequate.
-
-## Gap as a quality
-
-Gap is a [Quality](../../../../philosophy/terms/quality.md) of claims: a structural feature that varies from claim to claim and changes as the work progresses.
-As a quality, gap is comparable across claims (one claim has a larger gap than another), measurable in principle, and addressable through specific kinds of work (more witnessing reduces knowledge gap; conflict resolution reduces truth gap).
-
-The gap quality differs from substantive qualities (color, weight, kind) in that it tracks the *relation between the claim and its target settlement*, not an intrinsic property of the claim itself.
-The same claim can have a large gap in one system and a small gap in another, depending on the surrounding witnessings and the system's settlement criteria.
-
-## Open questions
-
 - Whether the two gap components (knowledge gap and truth gap) admit a single combined measure that respects both — or whether they are genuinely orthogonal, with no canonical way to compare a claim with high knowledge gap to a claim with high truth gap.
 - Whether gap-closure has bounded rate in real institutional systems — whether there is a maximum rate at which knowledge gap can be reduced (witnessings come in at finite rate) or truth gap can be resolved (conflicts take real time to adjudicate), and whether these rates are universal or system-dependent.
 - Whether some claims have *irreducible* gap — claims whose knowledge or truth gap cannot be closed by any witnessing the system can perform, because the relevant evidence is structurally inaccessible.
   If such claims exist, the institution must learn to operate with permanent gap on them rather than treating gap as universally closable.
 - The formal relationship between gap and friction — whether friction is best understood as the introduction of gap, the failure to close gap, or both, and whether the distinction matters for designing institutions that minimize friction.
-
----
-
-## Supplementary formulation
-
-```yaml
----
-name: "Gap"
-description: "A Gap is the structural distance between a claim's current settlement and its affirming-determination at a given history. The diagnostic of incompleteness in normative and operational systems: every unsettled claim has a gap, and that gap is what drives the work toward settlement."
-date-created: 2026-03-20
-date-modified: 2026-04-28
----
-```
-
-## What this is
-
-A **Gap** is the structural distance between a claim's current [settlement](settlement.md) and its affirming-determination at a given history.
-Every claim that has not yet reached the affirming corner of settlement has a gap: the claim is somewhere in the joint space of evidence, and the gap measures how much further it has to go.
-
-The gap is not a failure — it is a *position*.
-Every non-settled claim has a gap; that gap is the productive tension (the [Tension](tension.md)) that drives the work toward settled determination.
-Without gap, there is nothing to settle.
-
-## Two components of a gap
-
-A claim's gap has two structurally distinct components, corresponding to the two axes of the framework's [settlement](settlement.md) structure:
-
-- **The knowledge gap** — the distance from the claim's current evidence-amount to the affirming-determination position on the [knowledge axis](../../../../math/theories/voidmath/terms/knowledge-order.md).
-  A claim with a large knowledge gap has not yet been sufficiently witnessed; more evidence is needed.
-- **The truth gap** — the distance from the claim's current evidence-direction tilt to the affirming pole of the [truth axis](../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/pre-bilattice/content/truth-order/truth-order.md).
-  A claim with a large truth gap has been witnessed but the witnessings have not converged on affirmation.
-
-A claim is at *zero gap* when both components are at the affirming-determination corner: fully witnessed AND tilted toward affirmation.
-
-A claim can have a zero knowledge gap and a positive truth gap (the witnessings have accumulated but they tilt toward denial — the claim is not just unsettled but actively contraindicated) or a zero truth gap and a positive knowledge gap (the available witnessings tilt toward affirmation but more evidence is needed for full settlement).
-
-## Gap and discharge
-
-[Discharge](../../../../services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/discharge.md) of a duty is the event of reaching zero gap on both the performance and recognition predicates: the act has been done (knowledge axis on performance) and acknowledged (knowledge axis on recognition), and both witnessings tilt affirmingly.
-Before discharge, at least one predicate has positive gap.
-The discharge event is the transition from positive gap to zero gap on both predicates simultaneously.
-
-## Gap and friction
-
-Friction in a normative system is the failure of the system's own dynamics to preserve settlement: a claim that was at zero gap at one history may, at a later history, exhibit a positive gap because new evidence has unsettled it, or because the criteria for settlement have shifted.
-Friction is the *introduction of gap by the system's own evolution*.
-A frictionless system would preserve settled claims indefinitely; real systems often do not.
-
-## Gap as measure of institutional compliance
-
-In a [NormativeSystem](normative-system.md), the compliance of an agent's output is the gap of that output relative to the system's required settlement.
-A fully compliant output has zero gap.
-An obligation is discharged iff the agent's performance has reached zero gap at the required history.
-The norm system is satisfied when all obligated outputs are at zero gap.
-
-Most institutional work is the work of closing gaps — accumulating witnessings, aligning evidence direction, shepherding partially-settled claims toward full determination.
-The presence of gap is not a defect of the system but the natural condition of any system whose work is ongoing.
-
-## Single-component vs two-component gaps
-
-A claim with a positive gap on only one component (e.g., zero knowledge gap but positive truth gap) is, in some sense, *closer* to settlement than a claim with positive gaps on both.
-Closing a single-component gap is conceptually simpler: only one kind of work is needed (more witnessing in the case of a knowledge gap; conflict-resolution in the case of a truth gap).
-A claim with two-component gap requires both kinds of work in sequence or in parallel.
-
-Single-component gap closure is the typical structure of mature institutional work: most claims are well-witnessed (knowledge axis high) but their truth-axis position needs adjudication.
-The work of governance is largely the work of closing truth-axis gaps in claims whose knowledge-axis position is already adequate.
-
-## Gap as a quality
-
-Gap is a [Quality](../../../../philosophy/terms/quality.md) of claims: a structural feature that varies from claim to claim and changes as the work progresses.
-As a quality, gap is comparable across claims (one claim has a larger gap than another), measurable in principle, and addressable through specific kinds of work (more witnessing reduces knowledge gap; conflict resolution reduces truth gap).
-
-The gap quality differs from substantive qualities (color, weight, kind) in that it tracks the *relation between the claim and its target settlement*, not an intrinsic property of the claim itself.
-The same claim can have a large gap in one system and a small gap in another, depending on the surrounding witnessings and the system's settlement criteria.
-
-## Open questions
-
-- Whether the two gap components (knowledge gap and truth gap) admit a single combined measure that respects both — or whether they are genuinely orthogonal, with no canonical way to compare a claim with high knowledge gap to a claim with high truth gap.
-- Whether gap-closure has bounded rate in real institutional systems — whether there is a maximum rate at which knowledge gap can be reduced (witnessings come in at finite rate) or truth gap can be resolved (conflicts take real time to adjudicate), and whether these rates are universal or system-dependent.
-- Whether some claims have *irreducible* gap — claims whose knowledge or truth gap cannot be closed by any witnessing the system can perform, because the relevant evidence is structurally inaccessible.
-  If such claims exist, the institution must learn to operate with permanent gap on them rather than treating gap as universally closable.
-- The formal relationship between gap and friction — whether friction is best understood as the introduction of gap, the failure to close gap, or both, and whether the distinction matters for designing institutions that minimize friction.
-
----
-
-## Supplementary formulation
-
-```yaml
----
-name: "Gap"
-description: "The unstated material between framed units that the reader must cross. The artifact-level counterpart to the gutter."
-date-created: 2026-05-02
-aliases: [gap]
----
-```
 
 A gap is whatever the artifact has not stated between two framed units. It is what closure crosses. In a comic, the gap is the [gutter](../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/glossary/concepts/gutter.md) — the white strip between panels where the depicted action is not depicted. In a proof, the gap is whatever the writer has not written down: the unmentioned algebraic step, the routine application of a named lemma, the unstated reason that two cases exhaust the possibilities. In a software tutorial, the gap is whatever the author assumes about the reader's environment, vocabulary, or prior project.
 
@@ -416,3 +291,9 @@ The same distinction applies outside mathematics. A signage system can omit "tur
 ## The artifact's responsibility
 
 An artifact is not responsible for closing every gap. It is responsible for governing them: making clear which gaps the reader is licensed to cross with what authority, and which gaps the artifact itself is responsible for closing. A practice that has no gap-discipline produces artifacts that look complete but require silent expertise to read; a practice that demands every gap be closed produces artifacts that no one can stand to read at all.
+
+- Whether the two-dimensional projection gap $(|[a, \sigma_t(a)]| - 1,\; |[a, \Delta_t(a)]| - 1)$ defines a well-formed distance on $H_t$ satisfying a triangle inequality — whether $\lambda_{a \wedge b} \leq \lambda_a + \lambda_b$ holds under the Derivation Condition, or whether the gap eigenvalue can be superadditive under conjunction.
+- Whether Zeno-settling elements — elements that never reach $H^*_t$ at any finite tower level but whose projection gap size $\lambda_a$ decreases at rate \$1/\varphi$ per level — converge to gap-zero at the tower colimit, and whether the colimit fiber $H^*_\infty$ contains elements whose gap was strictly positive at every finite stage (corresponding to the Zeno settling cohomology [zeno-settling-k1-cohomology.md](../math/zeno-settling-k1-cohomology.md)).
+- Whether the gap size $\lambda_a$ is monotone-decreasing under nucleus-intertwining morphisms: whether $\lambda_{f(a)} \leq \lambda_a$ for all Heyting algebra morphisms $f : H_t \to H_s$ satisfying $\sigma_s \circ f = f \circ \sigma_t$ and $\Delta_s \circ f = f \circ \Delta_t$, giving a functor from the history category to the poset of gap sizes.
+- Whether the extremal slowness of the gap-resolution sequence (minimum Perron–Frobenius eigenvalue over all primitive \$2 \times 2$ matrices) has a physical interpretation — whether the minimum possible rate of gap-closure corresponds to a maximum entropy principle for the settlement process, and whether the departure from the extremally slow rate in more complex nuclear structures is measurable.
+- Whether the Kind-1/Kind-2 decomposition — and hence the transfer matrix $M = [[1,1],[1,0]]$ and the $\det(M) = -1$ theorem — can be given a fiber-level proof independent of the Fibonacci recurrence conjecture, or whether the two are exactly equivalent: $M = [[1,1],[1,0]]$ forces the Fibonacci recurrence, and the Fibonacci recurrence forces the transfer matrix. If they are equivalent, the open conjecture and the matrix structure are the same open question asked in two different languages.

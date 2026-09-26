@@ -11,6 +11,40 @@ keywords:
 external_links: []
 description: Last updated from triage notes on 2025-08-26.
 created: 2025-08-26
+df: pd.DataFrame(processed_trades)
+    vwap = (df['price'] * df['hive_volume']).sum() / df['hive_volume'].sum()
+    logger.info(f"Calculated VWAP: {vwap:.3f}")
+    return vwap
+vwap_spread: market_status['ask'] - vwap
+    logger.info(f"VWAP Analysis - Current: {vwap:.3f}, Spread to Ask: {vwap_spread:.3f}")
+spread: market_status['ask'] - market_status['bid']
+    if spread <= TRADE_CONFIG['MIN_SPREAD']:
+        return None
+buy_price: market_status['ask']
+    sell_price = buy_price + TRADE_CONFIG['SELL_PRICE_INCREMENT']
+    min_trade_hive = TRADE_CONFIG['MIN_TRADE_AMOUNT_HBD'] / (sell_price - buy_price)
+    required_hbd = min_trade_hive * buy_price
+orderbook: get_orderbook(market, logger)
+    if orderbook:
+        store_orderbook(db_conn, orderbook)
+market_status: analyze_orderbook(orderbook, logger)
+trades: get_trade_history(market, logger)
+    if trades:
+        store_market_history(db_conn, trades)
+vwap: calculate_vwap(trades, logger)
+    balances = get_balances(account, logger)
+opportunity: analyze_opportunity(market_status, vwap, balances, logger)
+try:
+        while True:
+            trade_cycle(market, account, dryfire, logger, db_conn)
+            time.sleep(cycle_speed)
+    except KeyboardInterrupt:
+        logger.info("Shutting down...")
+rows: \[\] for trade in trades: if 'hive' in trade and 'non<sub>hive</sub>' in trade: hive<sub>data</sub> = trade\['hive'\] non<sub>hive</sub> = trade\['non<sub>hive</sub>'\]
+market: Market("HIVE:HBD", blockchain<sub>instance</sub>=self.hive<sub>instance</sub>) self.order<sub>analyzer</sub> = OrderAnalyzer(market) self.trade<sub>analyzer</sub> = TradeAnalyzer(market) self.wallet<sub>handler</sub> = WalletHandler(self.account) self.opportunity<sub>analyzer</sub> = OpportunityAnalyzer( self.order<sub>analyzer</sub>, self.trade<sub>analyzer</sub>, self.wallet<sub>handler</sub>)
+dryfire: not (args.dryfire.lower() == "false" and args.live.lower() == "true") cleanup<sub>mode</sub> = args.cleanup.lower() account<sub>name</sub> = args.account or os.environ.get('HIVE<sub>ACCOUNT</sub>') active<sub>key</sub> = args.key or os.environ.get('HIVE<sub>ACTIVEKEY</sub>')
+bot: HiveTradingBot(active<sub>key</sub>, account<sub>name</sub>, dryfire, cleanup<sub>mode</sub>) bot.run(cycle<sub>speed</sub>=CYCLE<sub>SPEED</sub>)
+args: parser.parse<sub>args</sub>() dryfire = not (args.dryfire.lower() == "false" and args.live.lower() == "true") cleanup<sub>mode</sub> = args.cleanup.lower() account<sub>name</sub> = args.account or os.environ.get('HIVE<sub>ACCOUNT</sub>') active<sub>key</sub> = args.key or os.environ.get('HIVE<sub>ACTIVEKEY</sub>')
 ---
 
 
@@ -591,18 +625,6 @@ def calculate_vwap(trades: Optional[List]) -> Optional[float]:
     return (df['price'] * df['hive_volume']).sum() / df['hive_volume'].sum()
 ```
 
-## Earlier material
-
-### Wallet Analyzer
-- A view of a wallet's HIVE/HBD holdings, staked and liquid.
-- Tier 2 subscribers get their account history turned into a double-booked ledger, where holdings have cost basis.
-- Tier 3 subscribers can use that, and info from the Market History Analyzer, to show wallet market value at cost over time and convert all value to HIVE or HBD for a given day.
-- Tier 3 subscribers can export wallet history as a Beancount file.
-
-### Wallet Engine Analyzer
-- Same as the other wallet analyzer, but for Engine tokens.
-- Same subscription structure as mainchain.
-
 ### Content Management
 - Allow users to draft, edit, and publish posts.
 - Allow for post templating and scheduling.
@@ -804,11 +826,6 @@ def calculate_vwap(trades: Optional[List], logger: logging.Logger) -> Optional[f
         logger.info("No trades in the last 3 minutes")
         return None
 
-df = pd.DataFrame(processed_trades)
-    vwap = (df['price'] * df['hive_volume']).sum() / df['hive_volume'].sum()
-    logger.info(f"Calculated VWAP: {vwap:.3f}")
-    return vwap
-
 def get_balances(account: Account, logger: logging.Logger) -> Optional[Dict]:
     try:
         balances = {
@@ -830,20 +847,8 @@ def analyze_opportunity(
     if not all([market_status, vwap, balances]):
         return None
 
-vwap_spread = market_status['ask'] - vwap
-    logger.info(f"VWAP Analysis - Current: {vwap:.3f}, Spread to Ask: {vwap_spread:.3f}")
-
 if not (market_status['ask'] <= vwap and vwap_spread <= TRADE_CONFIG['MAX_ASK_VWAP_SPREAD']):
         return None
-
-spread = market_status['ask'] - market_status['bid']
-    if spread <= TRADE_CONFIG['MIN_SPREAD']:
-        return None
-
-buy_price = market_status['ask']
-    sell_price = buy_price + TRADE_CONFIG['SELL_PRICE_INCREMENT']
-    min_trade_hive = TRADE_CONFIG['MIN_TRADE_AMOUNT_HBD'] / (sell_price - buy_price)
-    required_hbd = min_trade_hive * buy_price
 
 if balances['HIVE'] < min_trade_hive or balances['HBD'] < required_hbd:
         logger.info(f"Insufficient funds - Need {min_trade_hive:.3f} HIVE and {required_hbd:.3f} HBD")
@@ -871,21 +876,6 @@ def cleanup(market: Market, account: Account, cleanup_mode: str, dryfire: bool, 
     except Exception as e:
         logger.error(f"Error during cleanup: {str(e)}")
 
-orderbook = get_orderbook(market, logger)
-    if orderbook:
-        store_orderbook(db_conn, orderbook)
-
-market_status = analyze_orderbook(orderbook, logger)
-
-trades = get_trade_history(market, logger)
-    if trades:
-        store_market_history(db_conn, trades)
-
-vwap = calculate_vwap(trades, logger)
-    balances = get_balances(account, logger)
-
-opportunity = analyze_opportunity(market_status, vwap, balances, logger)
-
 if opportunity and not dryfire:
         execute_trade(market, opportunity, account, logger, db_conn)
     elif opportunity:
@@ -908,13 +898,6 @@ def create_bot(active_key: str, account_name: str) -> Tuple[Market, Account]:
 def run_bot(market: Market, account: Account, dryfire: bool, cycle_speed: int, logger: logging.Logger, db_conn: psycopg2.extensions.connection) -> None:
     logger.info("Beginning trade cycle")
     logger.info("Dryfire mode enabled." if dryfire else "LIVE TRADING MODE!!!")
-
-try:
-        while True:
-            trade_cycle(market, account, dryfire, logger, db_conn)
-            time.sleep(cycle_speed)
-    except KeyboardInterrupt:
-        logger.info("Shutting down...")
 
 def parse_args() -> Tuple[bool, str, Optional[str], Optional[str]]:
     parser = argparse.ArgumentParser(description="Hive Trading Bot")
@@ -951,8 +934,6 @@ market, account = create_bot(active_key, account_name)
 HiveMeta is a decentralized application on the Hive blockchain designed for community-driven curation of account metadata. Using proof-of-stake, users can delegate Hive Power (HP) to the HiveMeta Curation Bot (MCB) to propose and vote on metadata tags for Hive accounts, such as “tip bot,” “curation account,” or “vaporware.” Voting power grows progressively with the duration of HP delegation, ensuring that only sustained participants have significant influence, while undelegation triggers a gradual decay of voting rights to discourage opportunistic behavior.
 
 Metadata changes are time-locked for review, remaining provisional for 30 days to prevent manipulation and allow for disputes. Proposal fees, paid in HBD, discourage spam and fund rewards for long-term delegators and accurate voters. All metadata, proposals, and votes are transparently stored on-chain, enabling easy integration with other Hive dApps. HiveMeta fosters trust and accountability within the Hive ecosystem, empowering the community to collaboratively enhance transparency and improve the user experience.
-
-## Earlier material
 
 \## Overview
 
@@ -991,8 +972,6 @@ Metadata changes are time-locked for review, remaining provisional for 30 days t
 
 \### Wallet curation analytics
 
-- Look at a the metrics for a wallet's curation
-
 \### Content Management
 
 \### AI content analytics
@@ -1006,8 +985,6 @@ Metadata changes are time-locked for review, remaining provisional for 30 days t
 \##### HLPSWAPHIVE
 
 \### Layer 4 \#### Liquidity Pools
-
-Here'd be a potential token and its breakdown:
 
 Where HLP stands for HAL Liquid Derivative and HLP for HAL Liquidity Pair, SHAL for Staked HAL, SHP for Staked Hive Power, SHBD for Staked Hive Backed Dollar
 
@@ -1025,8 +1002,6 @@ def get<sub>tradehistory</sub>(self): \# Last 3 minutes try: return self.market.
 
 def calculate<sub>vwap</sub>(self): trades = self.get<sub>tradehistory</sub>() if not trades: return None
 
-rows = \[\] for trade in trades: if 'hive' in trade and 'non<sub>hive</sub>' in trade: hive<sub>data</sub> = trade\['hive'\] non<sub>hive</sub> = trade\['non<sub>hive</sub>'\]
-
 if float(hive<sub>data</sub>\['close'\]) \> 0: price = float(non<sub>hive</sub>\['close'\]) / float( hive<sub>data</sub>\['close'\]) hive<sub>volume</sub> = float(hive<sub>data</sub>\['volume'\]) rows.append({'price': price, 'hive<sub>volume</sub>': hive<sub>volume</sub>})
 
 if not df.empty: vwap = (df\['price'\] \* df\['hive<sub>volume</sub>'\]).sum() / df\['hive<sub>volume</sub>'\].sum() return vwap
@@ -1034,8 +1009,6 @@ if not df.empty: vwap = (df\['price'\] \* df\['hive<sub>volume</sub>'\]).sum() /
 def \_<sub>init</sub>\_<sub>(self, order<sub>analyzer</sub>, trade<sub>analyzer</sub>, wallet<sub>analyzer</sub>)</sub>: self.order<sub>analyzer</sub> = order<sub>analyzer</sub> self.trade<sub>analyzer</sub> = trade<sub>analyzer</sub> self.wallet<sub>analyzer</sub> = wallet<sub>analyzer</sub>
 
 def find<sub>opportunity</sub>(self): market<sub>status</sub> = self.order<sub>analyzer</sub>.analyze<sub>orderbook</sub>() if not market<sub>status</sub>: return None
-
-vwap = self.trade<sub>analyzer</sub>.calculate<sub>vwap</sub>() vwap<sub>spread</sub> = market<sub>status</sub>\['ask'\] - vwap console.print( f" \[cyan\]3mVWAP\[/cyan\] \[yellow\]{vwap:.3f}\[/yellow\] to \[red\]{market<sub>status</sub>\['ask'\]:.3f}\[/red\] \[cyan\]ask\[/cyan\]" ) console.print( f" \[cyan\]Spread:\[/cyan\] \[yellow\] {vwap<sub>spread</sub>:.3f}\[/yellow\]")
 
 if market<sub>status</sub>\['ask'\] \<= vwap: if vwap<sub>spread</sub> \<= 0.000: spread = market<sub>status</sub>\['ask'\] - market<sub>status</sub>\['bid'\] if spread \> 0.000: console.print( f"Spread of {market<sub>status</sub>\['spread'\]:.3f} is beyond precision tolerance…" ) buy<sub>price</sub> = market<sub>status</sub>\['ask'\] sell<sub>price</sub> = (buy<sub>price</sub> + 0.001) min<sub>tradehive</sub> = 0.001 / (sell<sub>price</sub> - buy<sub>price</sub>) balances = self.wallet<sub>analyzer</sub>.get<sub>balances</sub>() required<sub>hbd</sub> = min<sub>tradehive</sub> \* buy<sub>price</sub> if balances\['HIVE'\] \>= min<sub>tradehive</sub> and balances\['HBD'\] \>= required<sub>hbd</sub>: console.print( f"Minimum trade size of {min<sub>tradehive</sub>:.3f} HIVE and {required<sub>hbd</sub>:.3f} HBD is liquid in wallet…" ) console.print( f"OPPORTUNITY FOUND: Buy {min<sub>tradehive</sub>:.3f} at {buy<sub>price</sub>:.3f}, sell at {sell<sub>price</sub>:.3f}" ) return { 'buy': buy<sub>price</sub>, 'sell': sell<sub>price</sub>, 'volume': min<sub>tradehive</sub> } else: console.print( f"Insufficient funds. Need {min<sub>tradehive</sub>:.3f} HIVE and {required<sub>hbd</sub>:.3f} HBD, have {balances\['HIVE'\]:.3f} HIVE and {balances\['HBD'\]:.3f} HBD" ) else: console.print( f"Market spread of {spread} too narrow for precision tolerance. NO OPPORTUNITY." ) else: console.print( " \[yellow\]3mVWAP spread\[/yellow\] \<= \[yellow\]0.001\[/yellow\]" ) else: console.print( " \[yellow\]3mVWAP\[/yellow\] \<= \[red\]Ask\[/red\]") return None
 
@@ -1045,8 +1018,6 @@ def get<sub>balances</sub>(self): try: balances = { 'HIVE': float(self.account.g
 
 def \_<sub>init</sub>\_<sub>(self, active<sub>key</sub>, account<sub>name</sub>, dryfire, cleanup<sub>mode</sub>)</sub>: self.logger = setup<sub>logger</sub>() self.dryfire = dryfire self.cleanup<sub>mode</sub> = cleanup<sub>mode</sub> nodes = \[ "<https://api.hive.blog>", "<https://api.hivekings.com>", "<https://anyx.io>", "<https://api.openhive.network>" \] self.hive<sub>instance</sub> = Hive(nodes=nodes, keys=\[active<sub>key</sub>\]) self.account = Account(account<sub>name</sub>, blockchain<sub>instance</sub>=self.hive<sub>instance</sub>)
 
-market = Market("HIVE:HBD", blockchain<sub>instance</sub>=self.hive<sub>instance</sub>) self.order<sub>analyzer</sub> = OrderAnalyzer(market) self.trade<sub>analyzer</sub> = TradeAnalyzer(market) self.wallet<sub>handler</sub> = WalletHandler(self.account) self.opportunity<sub>analyzer</sub> = OpportunityAnalyzer( self.order<sub>analyzer</sub>, self.trade<sub>analyzer</sub>, self.wallet<sub>handler</sub>)
-
 def cleanup(self): """Cancel all open orders and perform cleanup""" try: if self.cleanup<sub>mode</sub> == 'all' and not self.dryfire: console.print("\[yellow\]Cancelling all open orders…\[/yellow\]") self.order<sub>analyzer</sub>.market.cancel<sub>all</sub>(account=self.account) console.print("\[green\]All orders cancelled\[/green\]") else: console.print("\[yellow\]Cleanup skipped - dryfire mode or cleanup not enabled\[/yellow\]") except Exception as e: console.print(f"\[red\]Error during cleanup: {str(e)}\[/red\]")
 
 def run(self, cycle<sub>speed</sub>): print("Beginning trade cycle") if self.dryfire: print("Dryfire mode enabled. No trades will be executed.") else: print("LIVE TRADING MODE!!! REAL FUNDS WILL BE USED!!!") try: while True: try: console.print( "Trade cycle beginning…\[/bold cyan\]") opportunity = self.opportunity<sub>analyzer</sub>.find<sub>opportunity</sub>() if opportunity: if not self.dryfire:
@@ -1055,11 +1026,7 @@ current<sub>balance</sub> = self.wallet<sub>handler</sub>.get<sub>balances</sub>
 
 def main(): parser = argparse.ArgumentParser(description="Hive Trading Bot") parser.add<sub>argument</sub>( "–dryfire", type=str, default="true", help= "Run in dryfire mode (default: true). Must set –dryfire=false and –live=true to execute trades." ) parser.add<sub>argument</sub>( "–live", type=str, default="false", help="Explicitly confirm live trading mode (default: false).") parser.add<sub>argument</sub>("–account", type=str, help="Hive account name for the bot to use.") parser.add<sub>argument</sub>("–key", type=str, help="Active key for the Hive account.") parser.add<sub>argument</sub>("–cleanup", type=str, default="none", help="Cleanup mode on shutdown: 'none' or 'all' (default: none)") args = parser.parse<sub>args</sub>()
 
-dryfire = not (args.dryfire.lower() == "false" and args.live.lower() == "true") cleanup<sub>mode</sub> = args.cleanup.lower() account<sub>name</sub> = args.account or os.environ.get('HIVE<sub>ACCOUNT</sub>') active<sub>key</sub> = args.key or os.environ.get('HIVE<sub>ACTIVEKEY</sub>')
-
 if not account<sub>name</sub> or not active<sub>key</sub>: console.print( "\[red\]Error: Hive account name and active key are required. Provide them using –account and –key arguments or set HIVE<sub>ACCOUNT</sub> and HIVE<sub>ACTIVEKEY</sub> as environment variables.\[/red\]" ) return
-
-bot = HiveTradingBot(active<sub>key</sub>, account<sub>name</sub>, dryfire, cleanup<sub>mode</sub>) bot.run(cycle<sub>speed</sub>=CYCLE<sub>SPEED</sub>)
 
 if <u><u>name</u></u> == "<u><u>main</u></u>": main() \`\`\` \## 0.0.2
 
@@ -1091,8 +1058,6 @@ def calculate<sub>vwap</sub>(trades: Optional\[List\]) -\> Optional\[float\]: if
 
 processed<sub>trades</sub> = list(filter(None, map(process<sub>trade</sub>, trades))) if not processed<sub>trades</sub>: return None
 
-df = pd.DataFrame(processed<sub>trades</sub>) return (df\['price'\] \* df\['hive<sub>volume</sub>'\]).sum() / df\['hive<sub>volume</sub>'\].sum()
-
 def get<sub>balances</sub>(account: Account) -\> Optional\[Dict\]: try: return { 'HIVE': float(account.get<sub>balance</sub>('available', 'HIVE')), 'HBD': float(account.get<sub>balance</sub>('available', 'HBD')) } except Exception as e: console.print(f"\[red\]Error retrieving balances: {str(e)}\[/red\]") return None
 
 def analyze<sub>opportunity</sub>( market<sub>status</sub>: Optional\[Dict\], vwap: Optional\[float\], balances: Optional\[Dict\] ) -\> Optional\[Dict\]: if not all(\[market<sub>status</sub>, vwap, balances\]): return None
@@ -1100,8 +1065,6 @@ def analyze<sub>opportunity</sub>( market<sub>status</sub>: Optional\[Dict\], vw
 vwap<sub>spread</sub> = market<sub>status</sub>\['ask'\] - vwap console.print(f" \[cyan\]3mVWAP\[/cyan\] \[yellow\]{vwap:.3f}\[/yellow\] to \[red\]{market<sub>status</sub>\['ask'\]:.3f}\[/red\] \[cyan\]ask\[/cyan\]") console.print(f" \[cyan\]Spread:\[/cyan\] \[yellow\] {vwap<sub>spread</sub>:.3f}\[/yellow\]")
 
 if not (market<sub>status</sub>\['ask'\] \<= vwap and vwap<sub>spread</sub> \<= 0.000): return None
-
-spread = market<sub>status</sub>\['ask'\] - market<sub>status</sub>\['bid'\] if spread \<= 0.000: return None
 
 buy<sub>price</sub> = market<sub>status</sub>\['ask'\] sell<sub>price</sub> = buy<sub>price</sub> + 0.001 min<sub>tradehive</sub> = 0.001 / (sell<sub>price</sub> - buy<sub>price</sub>) required<sub>hbd</sub> = min<sub>tradehive</sub> \* buy<sub>price</sub>
 
@@ -1115,8 +1078,6 @@ def cleanup(market: Market, account: Account, cleanup<sub>mode</sub>: str, dryfi
 
 def trade<sub>cycle</sub>( market: Market, account: Account, dryfire: bool ) -\> None: orderbook = get<sub>orderbook</sub>(market) market<sub>status</sub> = analyze<sub>orderbook</sub>(orderbook) trades = get<sub>tradehistory</sub>(market) vwap = calculate<sub>vwap</sub>(trades) balances = get<sub>balances</sub>(account)
 
-opportunity = analyze<sub>opportunity</sub>(market<sub>status</sub>, vwap, balances)
-
 if opportunity and not dryfire: execute<sub>trade</sub>(market, opportunity, account) elif opportunity: console.print("Dryfire mode enabled. Moving on.") else: console.print("\[bold cyan\]Cycle ending:\[/bold cyan\] \[cyan\]No move\[/cyan\]")
 
 def create<sub>bot</sub>(active<sub>key</sub>: str, account<sub>name</sub>: str) -\> Tuple\[Market, Account\]: nodes = \[ "<https://api.hive.blog>", "<https://api.hivekings.com>", "<https://anyx.io>", "<https://api.openhive.network>" \] hive<sub>instance</sub> = Hive(nodes=nodes, keys=\[active<sub>key</sub>\]) account = Account(account<sub>name</sub>, blockchain<sub>instance</sub>=hive<sub>instance</sub>) market = Market("HIVE:HBD", blockchain<sub>instance</sub>=hive<sub>instance</sub>) return market, account
@@ -1124,8 +1085,6 @@ def create<sub>bot</sub>(active<sub>key</sub>: str, account<sub>name</sub>: str)
 def run<sub>bot</sub>(market: Market, account: Account, dryfire: bool, cycle<sub>speed</sub>: int) -\> None: print("Beginning trade cycle") print("Dryfire mode enabled." if dryfire else "LIVE TRADING MODE!!!")
 
 def parse<sub>args</sub>() -\> Tuple\[bool, str, Optional\[str\], Optional\[str\]\]: parser = argparse.ArgumentParser(description="Hive Trading Bot") parser.add<sub>argument</sub>("–dryfire", type=str, default="true") parser.add<sub>argument</sub>("–live", type=str, default="false") parser.add<sub>argument</sub>("–account", type=str) parser.add<sub>argument</sub>("–key", type=str) parser.add<sub>argument</sub>("–cleanup", type=str, default="none")
-
-args = parser.parse<sub>args</sub>() dryfire = not (args.dryfire.lower() == "false" and args.live.lower() == "true") cleanup<sub>mode</sub> = args.cleanup.lower() account<sub>name</sub> = args.account or os.environ.get('HIVE<sub>ACCOUNT</sub>') active<sub>key</sub> = args.key or os.environ.get('HIVE<sub>ACTIVEKEY</sub>')
 
 return dryfire, cleanup<sub>mode</sub>, account<sub>name</sub>, active<sub>key</sub>
 
@@ -1136,8 +1095,6 @@ if not account<sub>name</sub> or not active<sub>key</sub>: console.print("\[red\
 market, account = create<sub>bot</sub>(active<sub>key</sub>, account<sub>name</sub>) try: run<sub>bot</sub>(market, account, dryfire, CYCLE<sub>SPEED</sub>) finally: cleanup(market, account, cleanup<sub>mode</sub>, dryfire)
 
 if <u><u>name</u></u> == "<u><u>main</u></u>": main()
-
-\`\`\`
 
 \## 0.0.3 \`\`\`python
 
@@ -1181,8 +1138,6 @@ def get<sub>tradehistory</sub>(market: Market, logger: logging.Logger) -\> Optio
 
 def calculate<sub>vwap</sub>(trades: Optional\[List\], logger: logging.Logger) -\> Optional\[float\]: if not trades: logger.info("No trades in the last 3 minutes") return None
 
-df = pd.DataFrame(processed<sub>trades</sub>) vwap = (df\['price'\] \* df\['hive<sub>volume</sub>'\]).sum() / df\['hive<sub>volume</sub>'\].sum() logger.info(f"Calculated VWAP: {vwap:.3f}") return vwap
-
 def get<sub>balances</sub>(account: Account, logger: logging.Logger) -\> Optional\[Dict\]: try: balances = { 'HIVE': float(account.get<sub>balance</sub>('available', 'HIVE')), 'HBD': float(account.get<sub>balance</sub>('available', 'HBD')) } logger.info(f"Account Balances - HIVE: {balances\['HIVE'\]:.3f}, HBD: {balances\['HBD'\]:.3f}") return balances except Exception as e: logger.error(f"Error retrieving balances: {str(e)}") return None
 
 def analyze<sub>opportunity</sub>( market<sub>status</sub>: Optional\[Dict\], vwap: Optional\[float\], balances: Optional\[Dict\], logger: logging.Logger ) -\> Optional\[Dict\]: if not all(\[market<sub>status</sub>, vwap, balances\]): return None
@@ -1190,8 +1145,6 @@ def analyze<sub>opportunity</sub>( market<sub>status</sub>: Optional\[Dict\], vw
 vwap<sub>spread</sub> = market<sub>status</sub>\['ask'\] - vwap logger.info(f"VWAP Analysis - Current: {vwap:.3f}, Spread to Ask: {vwap<sub>spread</sub>:.3f}")
 
 if not (market<sub>status</sub>\['ask'\] \<= vwap and vwap<sub>spread</sub> \<= TRADE<sub>CONFIG</sub>\['MAX<sub>ASKVWAPSPREAD</sub>'\]): return None
-
-spread = market<sub>status</sub>\['ask'\] - market<sub>status</sub>\['bid'\] if spread \<= TRADE<sub>CONFIG</sub>\['MIN<sub>SPREAD</sub>'\]: return None
 
 buy<sub>price</sub> = market<sub>status</sub>\['ask'\] sell<sub>price</sub> = buy<sub>price</sub> + TRADE<sub>CONFIG</sub>\['SELL<sub>PRICEINCREMENT</sub>'\] min<sub>tradehive</sub> = TRADE<sub>CONFIG</sub>\['MIN<sub>TRADEAMOUNTHBD</sub>'\] / (sell<sub>price</sub> - buy<sub>price</sub>) required<sub>hbd</sub> = min<sub>tradehive</sub> \* buy<sub>price</sub>
 
@@ -1205,15 +1158,7 @@ def cleanup(market: Market, account: Account, cleanup<sub>mode</sub>: str, dryfi
 
 def trade<sub>cycle</sub>( market: Market, account: Account, dryfire: bool, logger: logging.Logger, db<sub>conn</sub>: psycopg2.extensions.connection ) -\> None: logger.info("Trade cycle beginning…")
 
-orderbook = get<sub>orderbook</sub>(market, logger) if orderbook: store<sub>orderbook</sub>(db<sub>conn</sub>, orderbook)
-
 market<sub>status</sub> = analyze<sub>orderbook</sub>(orderbook, logger)
-
-trades = get<sub>tradehistory</sub>(market, logger) if trades: store<sub>markethistory</sub>(db<sub>conn</sub>, trades)
-
-vwap = calculate<sub>vwap</sub>(trades, logger) balances = get<sub>balances</sub>(account, logger)
-
-opportunity = analyze<sub>opportunity</sub>(market<sub>status</sub>, vwap, balances, logger)
 
 if opportunity and not dryfire: execute<sub>trade</sub>(market, opportunity, account, logger, db<sub>conn</sub>) elif opportunity: logger.info("Dryfire mode enabled. Moving on.") else: logger.info("No trading opportunity found")
 

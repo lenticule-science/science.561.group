@@ -6,6 +6,8 @@ date-created: 2026-03-18
 date-modified: 2026-04-03
 aliases:
   - WorkItem
+id: work-item
+defines: WorkItem
 ---
 
 A work item is an element of a [task](./task.md). It is either:
@@ -37,21 +39,6 @@ A work item is not the same as a task, though the terms are often used interchan
 - [workflow](./workflow.md) — the composite case
 - [task](./task.md) — the planning container
 - [queue](../../../../../../../../content/text/glossary/terms/queue.md) — where work items wait for dispatch
-
-
----
-
-<!-- source: _archive/discipline-intake/business/terms/work-item.md -->
-
-## Imported source: _archive/discipline-intake/business/terms/work-item.md
-
----
-id: work-item
-description: "A WorkItem is what appears inside a Task: either atomic Work (a parameterized WorkUnit) or a Workflow (a closed composition of Work). WorkItems are recursive: a Workflow is itself a WorkItem."
-defines: WorkItem
----
-
-# WorkItem
 
 *Spec-domain object*
 
@@ -114,8 +101,3 @@ A WorkItem with `**Status:** deferred` MUST include a reason: either a **Why blo
 ## Pending
 
 - No formal notion of WorkItem priority or ordering beyond document sequence. The improvement skill takes items in order; explicit priority marking may be needed once PLANS files become long.
-
-## Earlier material
-
-```yaml
----

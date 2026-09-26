@@ -43,50 +43,37 @@ enfolds:
 "authorial voice": emsenn's co-sourced telemetric critique essay voice
 visibility: public
 date-written: 2025-04-12
+authors:
+  - emsenn
+specialization: letter
+mirrors:
+  - https://emsenn.substack.com/p/citing-for-containment
+tags: []
 ---
 
 Citing for containment is emsenn's term, developed in the essay of the same name (2025-04-12), for the use of academic citation not to expand inquiry but to foreclose it. Citations deployed this way function as signals of depth rather than as engagements with the fields they reference. They stabilize an interpretation rather than holding it open to challenge.
 
 emsenn developed the concept through a close reading of how theoretical frameworks from [Lauren Berlant](../../../../../../../knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/lauren-berlant.md), [Edouard Glissant](../../../../../../../../../../content/text/documents/articles/biographies/edouard-glissant.md), [Ruth Wilson Gilmore](../../../../../../../../../../content/text/documents/articles/biographies/ruth-wilson-gilmore.md), and [Achille Mbembe](../../../../../../../knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/achille-mbembe.md) were used in academic writing about the Stop Cop City movement. In that writing, citations from these thinkers did not function as invitations to investigate the conditions [Berlant](../../../../../../../knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/lauren-berlant.md) or [Gilmore](../../../../../../../../../../content/text/documents/articles/biographies/ruth-wilson-gilmore.md) were describing. Instead, they confirmed pre-existing narrative arcs: the movement was already understood as an instance of crisis ordinariness or [necropolitical](../../../../../../../../../philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/necropolitics.md) governance, and the citations were marshalled to make that understanding feel rigorous.
 
+The story of unification replaces the reality of disagreement—not just after the fact, but as it was happening. Organizers and land stewards warned against specific tactics, named likely consequences, and tried to hold open alternatives. Those communications are explicitly erased in the text as "supported... unconditionally."
+
+\## Extraction As Structure
+
+\## Legibility Isn't Solidarity
+
+\## Form Is Value
+
+\## Necessary Omissions
+
+\## Navigating with Narrative
+
+The story of unification replaces the reality of disagreement, not just after the fact, but as it was happening. Organizers and land stewards warned against specific tactics, named likely consequences, and tried to hold open alternatives. Those communications are explicitly erased in the text as "supported... unconditionally."
+
 The mechanism operates through substitution. A citation replaces investigation. Where a writer might trace the actual relationships between land use, policing, and community resistance in a specific place, a reference to [Gilmore](../../../../../../../../../../content/text/documents/articles/biographies/ruth-wilson-gilmore.md)'s work on carceral geography is offered instead. The reference does not verify a causal claim — it stabilizes the interpretation by lending it theoretical weight.
 
 emsenn identifies the structural effect: when theory is used this way, it does not support struggle but supersedes it. The citation becomes the site of knowledge production, and the conditions being cited recede into background material. The framework displaces what it was meant to illuminate.
 
 This practice connects to [recursive governance](../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/cybernetic-postliberalism-services-section/content/text/glossary/terms/recursive-governance.md): citational containment is one of the feedback mechanisms through which interpretive volatility is absorbed and converted into stable institutional output.
-
-
----
-
-## Consolidated triage formulation
-
-<!-- CONSOLIDATED-TRIAGE-SOURCE: citing-for-containment.md SHA256 ade052cd2bd01460be9f19b8b7f64f578f6293a5f913bff200364a11c3c4d2b8 -->
-
-This historical formulation was consolidated from `lib/emsenn/services/561-group/services/public-services-section/services/personal-services-section/emsenn-services-section/content/text/triage/citing-for-containment.md`. It is retained where its wording, links, provenance, or uncertainty differs from the active entry.
-
-<details>
-<summary>Recorded source metadata</summary>
-
-```yaml
-
-name: citing-for-containment
-aliases:
-  - "Citing for containment"
-  - "citing for containment"
-authors:
-  - emsenn
-date-created: 2025-04-12
-specialization: letter
-mirrors:
-  - https://emsenn.substack.com/p/citing-for-containment
-tags: []
-```
-
-</details>
-
-### Retained formulation
-
-
 
 There is a gap between the story of Stop Cop City and the history of Weelaunee Forest. Not just a difference in emphasis, but a structural disconnect—between the shape of public sense-making and the uneven, often invisible [labor](../../../sociology/terms/labor.md) of holding ground, building trust, and adapting under pressure. For those who were materially entwined with Weelaunee before Cop City, and before Stop Cop City, it doesn't just feel like something got lost. It’s that something else got installed in its place.
 
@@ -200,23 +187,3 @@ This is how formatting becomes strategy. Not just for [the state](../../../../..
 None of that makes it malicious. That’s the problem. It doesn’t have to be.
 
 Kass didn’t invent the loop. She entered it. Like many before her, and many after, she brought a framework designed to make sense of capture—and proved its accuracy by performing it. Her citations are clean. Her analysis is compelling. Her prose is elegant. The piece circulates. And in circulating, it retrofits the forest into the arc it needed to confirm. That’s not a betrayal of the theory she cites. It’s the outcome they warned her about.
-
-## Earlier material
-
-emsenn developed the concept through a close reading of how theoretical frameworks from [Lauren Berlant](../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/communicating/content/general/people/lauren-berlant.md), [Edouard Glissant](../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/communicating/content/general/people/edouard-glissant.md), [Ruth Wilson Gilmore](../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/communicating/content/general/people/ruth-wilson-gilmore.md), and [Achille Mbembe](../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/communicating/content/general/people/achille-mbembe.md) were used in academic writing about the Stop Cop City movement. In that writing, citations from these thinkers did not function as invitations to investigate the conditions [Berlant](../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/communicating/content/general/people/lauren-berlant.md) or [Gilmore](../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/communicating/content/general/people/ruth-wilson-gilmore.md) were describing. Instead, they confirmed pre-existing narrative arcs: the movement was already understood as an instance of crisis ordinariness or [necropolitical](../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/communicating/content/sociology/terms/necropolitics.md) governance, and the citations were marshalled to make that understanding feel rigorous.
-
-## Earlier material
-
-The story of unification replaces the reality of disagreement—not just after the fact, but as it was happening. Organizers and land stewards warned against specific tactics, named likely consequences, and tried to hold open alternatives. Those communications are explicitly erased in the text as "supported... unconditionally."
-
-\## Extraction As Structure
-
-\## Legibility Isn't Solidarity
-
-\## Form Is Value
-
-\## Necessary Omissions
-
-\## Navigating with Narrative
-
-The story of unification replaces the reality of disagreement, not just after the fact, but as it was happening. Organizers and land stewards warned against specific tactics, named likely consequences, and tried to hold open alternatives. Those communications are explicitly erased in the text as "supported... unconditionally."

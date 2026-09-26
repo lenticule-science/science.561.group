@@ -166,6 +166,76 @@ Institutional invariance follows from Goguen–Burstall’s result that satisfac
 Factorization of $\mathsf{Encode}_\Box$ holds because $\Box_i$ commutes with the three equivalence-generating [functors](../../../mathematics/objects/categories/ordinary-categories/terms/functor.md) (preserving gluing, normalization, and observation).
 Uniqueness up to natural [isomorphism](../../../../../../../../../../math-services-section/services/categorical-services-section/services/ordinary-categories-services-section/content/text/glossary/terms/isomorphism.md) arises from the universal [property](../../../sociology/terms/property.md) of reflective localizations.
 
+<div class="definition" id="orgc2c35f7">
+<p>
+A <b><b>paracosmic sketch</b></b> $ S $ consists of:
+</p>
+
+<ol class="org-ol">
+<li>a small category $ \mathcal{C}_S $ of entities, events, and relations (the <b>diegetic ontology</b>);</li>
+<li>designated (co)limit cones encoding compositional constraints (causal, spatial, temporal);</li>
+<li>a finite family of <b><b>modal endofunctors</b></b>
+$$
+   \Box_i : \mathcal{C}_S \to \mathcal{C}_S,\quad i\in I,
+   $$
+representing modes of accessibility (knowledge, memory, speculation, agency).</li>
+</ol>
+
+<div class="remark" id="org00f1170">
+<p>
+In narratology, $ \mathcal{C}_S $ represents the <b>fabula</b> (story logic),  
+$ M $ a specific <b>sjužet</b> (discourse realization),  
+and $\Box_i$ modalities of viewpoint or epistemic framing.
+</p>
+
+<div class="definition" id="org208eb27">
+<p>
+A <b><b>paracosmic modality</b></b> is an endofunctor
+$$
+\Box_i : \mathbf{Mod}(S) \to \mathbf{Mod}(S)
+$$
+such that:
+</p>
+
+<ol class="org-ol">
+<li>it preserves finite limits and colimits;</li>
+<li>it commutes with canonical transformations expressing normalization and observation (to be defined below);</li>
+<li>it admits a right adjoint $\Diamond_i$ (possibility) with unit $\eta_i$ and counit $\varepsilon_i$.</li>
+</ol>
+
+<div class="theorem" id="orgff85c72">
+<p>
+(<b><b>Modal Encoding Theorem</b></b>)  
+If each $\Box_i$ is left exact, preserves colimits of connected diagrams, and admits an adjoint $\Diamond_i$, then:
+</p>
+
+<ol class="org-ol">
+<li>the projection $p:\int_I\mathcal{M}\to\mathbf{Mod}(S)$ is a fibration;</li>
+<li>each fibre $\mathsf{Mod}_{\Box_i}(S)$ is reflective in $\mathbf{Mod}(S)$;</li>
+<li>there exists a left adjoint <b><b>modal encoding functor</b></b>
+$$
+   \mathsf{Encode}_\Box : \mathbf{Mod}(S)\to\int_I\mathcal{M},
+   \quad M\mapsto\{(\Box_i M,\varepsilon_i)\}_{i\in I},
+   $$
+exhibiting $\int_I\mathcal{M}$ as a reflective localization of $\mathbf{Mod}(S)$.</li>
+</ol>
+
+<div class="theorem" id="org448eeca">
+<p>
+(<b><b>Reproducibility Theorem</b></b>)  
+If $S$ admits effective gluing, terminating confluent rewriting, and modal-preserving observation, then:
+</p>
+
+<ol class="org-ol">
+<li>$\mathsf{RP}(S)$ is complete, cocomplete, and institutionally invariant;</li>
+<li>the modal encoding functor $\mathsf{Encode}_\Box$ factors through the quotient:
+$$
+   \mathsf{Encode}_\Box : \mathsf{RP}(S) \to \int_I\mathsf{RP}_{\Box_i}(S),
+   $$
+where each $\mathsf{RP}_{\Box_i}(S)$ is the image of $\mathsf{Mod}_{\Box_i}(S)$ under the quotient functor;</li>
+<li>this factorization is an equivalence up to natural isomorphism.</li>
+</ol>
+
 # 5. Interpretation and Consequences
 
 ****Narrative interpretation.****
@@ -203,8 +273,6 @@ This establishes a formal standard for representing, sharing, and extending cohe
 - Juul, J. (2005). **Half-Real: Video Games Between Real Rules and Fictional Worlds.**
 - Genette, G. (1972). **Figures III.**
 - Rutten, J. (2000). **Universal Coalgebra: A Theory of Systems.**
-
-## Earlier material
 
 <div class="definition" id="orgc2c35f7">
 <p>
@@ -273,81 +341,5 @@ If \(S\) admits effective gluing, terminating confluent rewriting, and modal-pre
    \mathsf{Encode}_\Box : \mathsf{RP}(S) \to \int_I\mathsf{RP}_{\Box_i}(S),
    \]
 where each \(\mathsf{RP}_{\Box_i}(S)\) is the image of \(\mathsf{Mod}_{\Box_i}(S)\) under the quotient functor;</li>
-<li>this factorization is an equivalence up to natural isomorphism.</li>
-</ol>
-
-**Proof Sketch.**  
-Completeness and cocompleteness follow from local presentability and closure of reflective subcategories under localization.  
-Institutional invariance follows from Goguen–Burstall’s result that satisfaction commutes with signature morphisms.  
-Factorization of $\mathsf{Encode}_\Box$ holds because $\Box_i$ commutes with the three equivalence-generating functors (preserving gluing, normalization, and observation).  
-Uniqueness up to natural isomorphism arises from the universal property of reflective localizations.
-
-<div class="definition" id="orgc2c35f7">
-<p>
-A <b><b>paracosmic sketch</b></b> $ S $ consists of:
-</p>
-
-<ol class="org-ol">
-<li>a small category $ \mathcal{C}_S $ of entities, events, and relations (the <b>diegetic ontology</b>);</li>
-<li>designated (co)limit cones encoding compositional constraints (causal, spatial, temporal);</li>
-<li>a finite family of <b><b>modal endofunctors</b></b>
-$$
-   \Box_i : \mathcal{C}_S \to \mathcal{C}_S,\quad i\in I,
-   $$
-representing modes of accessibility (knowledge, memory, speculation, agency).</li>
-</ol>
-
-<div class="remark" id="org00f1170">
-<p>
-In narratology, $ \mathcal{C}_S $ represents the <b>fabula</b> (story logic),  
-$ M $ a specific <b>sjužet</b> (discourse realization),  
-and $\Box_i$ modalities of viewpoint or epistemic framing.
-</p>
-
-<div class="definition" id="org208eb27">
-<p>
-A <b><b>paracosmic modality</b></b> is an endofunctor
-$$
-\Box_i : \mathbf{Mod}(S) \to \mathbf{Mod}(S)
-$$
-such that:
-</p>
-
-<ol class="org-ol">
-<li>it preserves finite limits and colimits;</li>
-<li>it commutes with canonical transformations expressing normalization and observation (to be defined below);</li>
-<li>it admits a right adjoint $\Diamond_i$ (possibility) with unit $\eta_i$ and counit $\varepsilon_i$.</li>
-</ol>
-
-<div class="theorem" id="orgff85c72">
-<p>
-(<b><b>Modal Encoding Theorem</b></b>)  
-If each $\Box_i$ is left exact, preserves colimits of connected diagrams, and admits an adjoint $\Diamond_i$, then:
-</p>
-
-<ol class="org-ol">
-<li>the projection $p:\int_I\mathcal{M}\to\mathbf{Mod}(S)$ is a fibration;</li>
-<li>each fibre $\mathsf{Mod}_{\Box_i}(S)$ is reflective in $\mathbf{Mod}(S)$;</li>
-<li>there exists a left adjoint <b><b>modal encoding functor</b></b>
-$$
-   \mathsf{Encode}_\Box : \mathbf{Mod}(S)\to\int_I\mathcal{M},
-   \quad M\mapsto\{(\Box_i M,\varepsilon_i)\}_{i\in I},
-   $$
-exhibiting $\int_I\mathcal{M}$ as a reflective localization of $\mathbf{Mod}(S)$.</li>
-</ol>
-
-<div class="theorem" id="org448eeca">
-<p>
-(<b><b>Reproducibility Theorem</b></b>)  
-If $S$ admits effective gluing, terminating confluent rewriting, and modal-preserving observation, then:
-</p>
-
-<ol class="org-ol">
-<li>$\mathsf{RP}(S)$ is complete, cocomplete, and institutionally invariant;</li>
-<li>the modal encoding functor $\mathsf{Encode}_\Box$ factors through the quotient:
-$$
-   \mathsf{Encode}_\Box : \mathsf{RP}(S) \to \int_I\mathsf{RP}_{\Box_i}(S),
-   $$
-where each $\mathsf{RP}_{\Box_i}(S)$ is the image of $\mathsf{Mod}_{\Box_i}(S)$ under the quotient functor;</li>
 <li>this factorization is an equivalence up to natural isomorphism.</li>
 </ol>

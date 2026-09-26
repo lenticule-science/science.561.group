@@ -35,8 +35,6 @@ Within this [vault](./vault.md), every published [note](./note.md) requires at m
 - [note](./note.md) — a document in a knowledge management system
 - [vault](./vault.md) — a collection of notes organized as a knowledge base
 
-## Earlier material
-
 option "name<sub>income</sub>" "Input" option "name<sub>expenses</sub>" "Output" option "operating<sub>currency</sub>" "GAZ" option "booking<sub>method</sub>" "FIFO" 2021-01-01 commodity USD name: "United States Dollar" asset-class: "cash" 2021-01-01 commodity GAZ name: "GAZ token" asset-class: "token" 2021-01-01 commodity GAL-WAT name: "water, gallon" asset-class: "resource" 2021-01-01 commodity MIN name: "minute of labor" asset-class: "labor"
 
 2021-10-01 open Assets:Inventory:Ammo 2021-10-01 open Liabilities:Esther 2021-10-01 \* "Purchase BBs" Assets:Inventory:Ammo 6000 BB-177 {{14.99 USD}} Liabilities:Esther

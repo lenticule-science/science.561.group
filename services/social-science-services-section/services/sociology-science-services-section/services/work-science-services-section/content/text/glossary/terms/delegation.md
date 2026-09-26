@@ -18,6 +18,14 @@ ast:
         - grant
     - residual-accountability:
         - delegating-principal
+id: delegation
+defines: Delegation
+related: Principal, StaffOfficer, DutyOfficer, Proxy, Duty, Captain, Authority, Contract, Trust, HohfeldianPosition, Investiture
+where:
+- $Q$ is the **delegating principal** — the party who holds the authority being granted; $Q$ must hold $G$ in order to delegate it
+- $G \subseteq \mathrm{Authority}(Q)$ is the **grant** — the bounded subset of $Qs authority transferred to $B$; $G$ must be specific: "everything" is not a delegation but an abdication
+- $B$ is the **beneficiary** — the party who receives $G$ and may exercise it within its specified bounds
+- $\rho$ is the **residual** — what remains with $Q$ after delegating $G$: all authority not in $G$, plus all accountability for outcomes attributable to $G$
 ---
 
 A delegation is the transfer of bounded authority from a principal to a beneficiary, where accountability remains with the principal. The principal can give the beneficiary the power to act; the principal cannot give the beneficiary the duty to answer for outcomes.
@@ -46,6 +54,16 @@ This asymmetry is why delegation is not the same as transfer. A full transfer mo
 
 ## Delegation and trust
 
+Delegation always involves extending [Trust](../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/interactive-semioverse-services-section/services/agential-semioverse-services-section/services/semiotic-endeavor-services-section/content/text/glossary/terms/trust.md). When $Q$ delegates $G$ to $B$, $Q$ extends trust in the sense of the Trust triple $\mathcal{T} = (Q, B, G)$: $Q$ is the truster, $B$ is the entrusted party, and $G$ is the trust domain. $Q$ accepts vulnerability to $B$'s exercise of $G$ — $B$ could exploit the delegated authority in ways that harm $Q$'s interests. The `residual-accountability` component is what makes this an asymmetric exposure: $Q$ retains accountability even while depending on $B$'s goodwill within $G$.
+
+This connection makes explicit why delegation to a [Fiduciary](../../../../../../../economics-and-business-science-services-section/services/finance-science-services-section/content/text/glossary/terms/fiduciary.md) carries the strongest legal protections: when the delegated grant $G$ concerns a critical resource, and the trust exposure is maximal (the beneficiary cannot be monitored), the law imposes fiduciary duties on top of the bare delegation structure.
+
+## Open questions
+
+- Whether the boundedness invariant (3) admits fuzzy specification — whether "broad but non-total" delegations (e.g., "handle all operational matters during my absence") are valid delegations or structural abdications; and whether the `scope-specificity-predicate` opcode in the AST can be weakened to admit probabilistic scope specifications.
+- Whether [Contract](contract.md) and Delegation are formally separable: whether a delegation backed by consideration (a paid agency arrangement) is a contract with a delegation as its subject matter, or whether the contractual frame changes the delegation's structure (particularly the revocability condition — an agency contract may limit $Q$'s revocability).
+- Whether irrevocable delegations (trust deed, statutory powers, power of attorney coupled with an interest) are genuine delegations or substitutions — and whether the `revocability-condition` opcode should be a required or optional child of the `bounded-grant` node.
+
 Delegation always involves extending trust. When a principal delegates to a beneficiary, the principal accepts vulnerability to the beneficiary's exercise of the grant — the beneficiary could exploit the delegated authority in ways that harm the principal's interests. The residual accountability is what makes this an asymmetric exposure.
 
 ## Delegation as a Hohfeldian power
@@ -62,48 +80,11 @@ When a beneficiary sub-delegates to a third party, the derivativity invariant co
 - [assignment](./assignment.md) — the act of connecting work to an agent, which involves delegation of execution authority
 - [The Formal Structure of Delegation](../../documents/notes/2026-04-03-note-on-formal-structure-of-delegation.md) — presheaf model, Heyting algebra proofs, and the correspondence with Roman legal doctrine
 
-
----
-
-<!-- source: _archive/discipline-intake/business/terms/delegation.md -->
-
-## Imported source: _archive/discipline-intake/business/terms/delegation.md
-
----
-id: delegation
-description: "A Delegation is a four-tuple (Q, G, B, ρ) — a principal Q, a bounded grant G of authority or capacity, a beneficiary B who receives G, and a residual accountability ρ that remains with Q. The defining structure: authority transfers, accountability does not. Q can give B the power to act; Q cannot give B the duty to answer."
-defines: Delegation
-related: Principal, StaffOfficer, DutyOfficer, Proxy, Duty, Captain, Authority, Contract, Trust, HohfeldianPosition, Investiture
-date-created: 2026-03-19
-date-modified: 2026-03-19
-params:
-  delegating-principal: person
-  grant: authority
-  beneficiary: person
-  residual-accountability: relational-universe-morphism
-output: relational-universe
-ast:
-  authority-transfer:
-    - delegating-principal:
-        - grant
-    - beneficiary:
-        - grant
-    - residual-accountability:
-        - delegating-principal
----
-
-
 ## Formal definition
 
 A **Delegation** is a four-tuple $\mathcal{L} = (Q, G, B, \rho)$:
 
 $$\mathcal{L} = (Q : \mathrm{Principal},\; G \subseteq \mathrm{Authority}(Q),\; B : \mathrm{Beneficiary},\; \rho : \mathrm{Authority}(Q) \setminus G \cup \mathrm{Accountability}(Q))$$
-
-where:
-- $Q$ is the **delegating principal** — the party who holds the authority being granted; $Q$ must hold $G$ in order to delegate it
-- $G \subseteq \mathrm{Authority}(Q)$ is the **grant** — the bounded subset of $Q$'s authority transferred to $B$; $G$ must be specific: "everything" is not a delegation but an abdication
-- $B$ is the **beneficiary** — the party who receives $G$ and may exercise it within its specified bounds
-- $\rho$ is the **residual** — what remains with $Q$ after delegating $G$: all authority not in $G$, plus all accountability for outcomes attributable to $G$
 
 **Four invariants.** $\mathcal{L}$ is a delegation iff it satisfies:
 
@@ -182,15 +163,3 @@ Staff officers receive functional domain delegations; duty officers receive posi
 The [HohfeldianPosition](../../../../../../../../content/text/glossary/terms/hohfeldian-position.md) spec resolves the open question about delegation's normative type: a delegation is exactly the exercise of a **Power** (second quartet) by $Q$. A Hohfeldian Power is the capacity to create new normative relations — to bring about a change in another party's normative position by performing a voluntary act. When $Q$ delegates $G$ to $B$, $Q$ exercises a Power: $Q$'s voluntary act (the delegation) creates a new normative relation in which $B$ now has the authority to act within $G$, and $B$'s counterpart position is a **Liability** — $B$ is liable to have their normative position changed by $Q$'s exercise of the delegating power (and also by $Q$'s revocation).
 
 The `authority-transfer` opcode in this spec's AST corresponds to the Power-Liability pair in the [HohfeldianPosition](../../../../../../../../content/text/glossary/terms/hohfeldian-position.md) first-to-second-quartet structure: delegation is a Power (second quartet) and the beneficiary's reception of the grant is a Liability (the correlative of Power).
-
-## Delegation and Trust
-
-Delegation always involves extending [Trust](../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/interactive-semioverse-services-section/services/agential-semioverse-services-section/services/semiotic-endeavor-services-section/content/text/glossary/terms/trust.md). When $Q$ delegates $G$ to $B$, $Q$ extends trust in the sense of the Trust triple $\mathcal{T} = (Q, B, G)$: $Q$ is the truster, $B$ is the entrusted party, and $G$ is the trust domain. $Q$ accepts vulnerability to $B$'s exercise of $G$ — $B$ could exploit the delegated authority in ways that harm $Q$'s interests. The `residual-accountability` component is what makes this an asymmetric exposure: $Q$ retains accountability even while depending on $B$'s goodwill within $G$.
-
-This connection makes explicit why delegation to a [Fiduciary](../../../../../../../economics-and-business-science-services-section/services/finance-science-services-section/content/text/glossary/terms/fiduciary.md) carries the strongest legal protections: when the delegated grant $G$ concerns a critical resource, and the trust exposure is maximal (the beneficiary cannot be monitored), the law imposes fiduciary duties on top of the bare delegation structure.
-
-## Open questions
-
-- Whether the boundedness invariant (3) admits fuzzy specification — whether "broad but non-total" delegations (e.g., "handle all operational matters during my absence") are valid delegations or structural abdications; and whether the `scope-specificity-predicate` opcode in the AST can be weakened to admit probabilistic scope specifications.
-- Whether [Contract](contract.md) and Delegation are formally separable: whether a delegation backed by consideration (a paid agency arrangement) is a contract with a delegation as its subject matter, or whether the contractual frame changes the delegation's structure (particularly the revocability condition — an agency contract may limit $Q$'s revocability).
-- Whether irrevocable delegations (trust deed, statutory powers, power of attorney coupled with an interest) are genuine delegations or substitutions — and whether the `revocability-condition` opcode should be a required or optional child of the `bounded-grant` node.

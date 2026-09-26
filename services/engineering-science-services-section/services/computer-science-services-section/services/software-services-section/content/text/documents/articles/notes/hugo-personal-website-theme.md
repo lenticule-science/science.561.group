@@ -407,6 +407,124 @@ tags.
 -   [README](#orgdf1ec8d)
 -   [Source](#org2b245d0)
 
+<a id="orgafe98dd"></a>
+
+<a id="org79092cb"></a>
+
+<a id="org890145b"></a>
+
+```org
+#+TITLE: Hugo Personal Website Theme
+#+EXPORT_FILE_NAME: ../hugo-personal-website-theme
+#+MACRO: document-type /Hugo/ theme
+#+TOC: headlines 3
+* Introduction
+  :PROPERTIES:
+  :CUSTOM_ID: introduction
+  :END:
+{{{document-is-software-prototype}}}
+
+{{- end -}}
+#+END_SRC
+*** Media Package List Layout
+    :PROPERTIES:
+    :header-args: :tangle ../layouts/_default/media-package-list.html
+    :END:
+#+BEGIN_SRC html
+  {{ define "main" }}
+    {{ with .Content }}{{ . }}{{ end }}
+    {{ partial "media-package-listing" . }}
+  {{ end }}
+#+END_SRC
+** Partial Layouts
+*** Pages Listing
+    :PROPERTIES:
+    :header-args: :tangle ../layouts/partials/pages-listing.html
+    :END:
+#+begin_src html
+    {{ with .Pages }}
+      <ul>
+	{{ range . }}
+	  <li>
+	    <a href="{{ .Permalink}}"><strong>
+	      {{- if (eq .Kind "taxonomy") -}}
+		{{- .Title | pluralize -}}
+	  {{- else -}}{{- .Title -}}{{- end -}}
+	  </strong></a><br/>
+	</li>
+      {{ end }}
+    </ul>
+  {{ end }}
+#+end_src
+*** Index Menu Listing
+    :PROPERTIES:
+    :header-args: :tangle ../layouts/partials/index-menu-listing.html
+    :END:
+#+begin_src html
+  {{ with .Site.Menus.index }}
+    <ul>
+      {{ range . }}
+	<li><a href="{{ .URL }}">{{ .Name }}</a></li>
+      {{ end }}
+    </ul>
+  {{ end }}
+#+end_src
+*** Media Package Listing
+    :PROPERTIES:
+    :header-args: :tangle ../layouts/partials/media-package-listing.html
+    :END:
+#+begin_src html
+  {{ with .Params.mediaPackages }}
+    <ul>
+      {{ range . }}
+	{{ with getJSON . }}
+	  {{ range $packageID, $packageDetails := . }}
+	    <li>{{ $packageDetails.name }}</li> - Created by
+	    {{ $packageDetails.creator }}, {{ $packageDetails.name }} is
+	    {{ $packageDetails.description }} released under the
+	    {{ $packageDetails.license }}.
+	    {{ if $packageDetails.versions.current }}
+	      The current version is available through the following
+	      locations and formats:
+	      {{ with $packageDetails.versions.current }}
+		<ul>
+		  {{ range $originName, $originDetails := . }}
+		    <li>
+		      <strong>{{ $originName | title }}</strong>:
+		      {{ range $originDetails.formats }}
+			<a href="{{ $originDetails.location }}{{ $packageID }}.{{ . }}">
+			  {{ . }}
+			</a>
+		      {{ end }}
+		    </li>
+		  {{ end }}
+		</ul>
+	      {{ end }}
+	    {{ end }}
+	  {{ end }}
+	{{ end }}
+      {{ end }}
+    </ul>
+  {{ end }}
+#+end_src
+* Supplements
+#+TOC: headlines 1 local
+** Index
+- JSON :: {{{ref(json)}}}
+- HTML :: {{{ref(html)}}}
+- Markdown :: {{{ref(markdown)}}}
+- Hugo :: {{{ref(hugo)}}}
+** README
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: ../README
+   :END:
+#+INCLUDE: "./index.org::#introduction" :only-contents t
+** Source
+The following is the source of this document as it was written by the
+author.
+#+INCLUDE:  "./index.org" src org
+```
+
 
 <a id="orgb2fd0b4"></a>
 
@@ -737,13 +855,6 @@ author.
     author.
     #+INCLUDE:  "./index.org" src
 
-## Earlier material
-
-The theme is written primarily for my personal use, on
-    [[https://emsenn.net][https://emsenn.net]].
-
-## Earlier material
-
 <a id="introduction"></a>
 
 <a id="org55b6867"></a>
@@ -866,125 +977,3 @@ license = "CC0"
 ```
 
 <a id="org4490f9e"></a>
-
--   [Index](#orgafe98dd)
--   [README](#org79092cb)
--   [Source](#org890145b)
-
-<a id="orgafe98dd"></a>
-
-<a id="org79092cb"></a>
-
-<a id="org890145b"></a>
-
-```org
-#+TITLE: Hugo Personal Website Theme
-#+EXPORT_FILE_NAME: ../hugo-personal-website-theme
-#+MACRO: document-type /Hugo/ theme
-#+TOC: headlines 3
-* Introduction
-  :PROPERTIES:
-  :CUSTOM_ID: introduction
-  :END:
-{{{document-is-software-prototype}}}
-
-{{- end -}}
-#+END_SRC
-*** Media Package List Layout
-    :PROPERTIES:
-    :header-args: :tangle ../layouts/_default/media-package-list.html
-    :END:
-#+BEGIN_SRC html
-  {{ define "main" }}
-    {{ with .Content }}{{ . }}{{ end }}
-    {{ partial "media-package-listing" . }}
-  {{ end }}
-#+END_SRC
-** Partial Layouts
-*** Pages Listing
-    :PROPERTIES:
-    :header-args: :tangle ../layouts/partials/pages-listing.html
-    :END:
-#+begin_src html
-    {{ with .Pages }}
-      <ul>
-	{{ range . }}
-	  <li>
-	    <a href="{{ .Permalink}}"><strong>
-	      {{- if (eq .Kind "taxonomy") -}}
-		{{- .Title | pluralize -}}
-	  {{- else -}}{{- .Title -}}{{- end -}}
-	  </strong></a><br/>
-	</li>
-      {{ end }}
-    </ul>
-  {{ end }}
-#+end_src
-*** Index Menu Listing
-    :PROPERTIES:
-    :header-args: :tangle ../layouts/partials/index-menu-listing.html
-    :END:
-#+begin_src html
-  {{ with .Site.Menus.index }}
-    <ul>
-      {{ range . }}
-	<li><a href="{{ .URL }}">{{ .Name }}</a></li>
-      {{ end }}
-    </ul>
-  {{ end }}
-#+end_src
-*** Media Package Listing
-    :PROPERTIES:
-    :header-args: :tangle ../layouts/partials/media-package-listing.html
-    :END:
-#+begin_src html
-  {{ with .Params.mediaPackages }}
-    <ul>
-      {{ range . }}
-	{{ with getJSON . }}
-	  {{ range $packageID, $packageDetails := . }}
-	    <li>{{ $packageDetails.name }}</li> - Created by
-	    {{ $packageDetails.creator }}, {{ $packageDetails.name }} is
-	    {{ $packageDetails.description }} released under the
-	    {{ $packageDetails.license }}.
-	    {{ if $packageDetails.versions.current }}
-	      The current version is available through the following
-	      locations and formats:
-	      {{ with $packageDetails.versions.current }}
-		<ul>
-		  {{ range $originName, $originDetails := . }}
-		    <li>
-		      <strong>{{ $originName | title }}</strong>:
-		      {{ range $originDetails.formats }}
-			<a href="{{ $originDetails.location }}{{ $packageID }}.{{ . }}">
-			  {{ . }}
-			</a>
-		      {{ end }}
-		    </li>
-		  {{ end }}
-		</ul>
-	      {{ end }}
-	    {{ end }}
-	  {{ end }}
-	{{ end }}
-      {{ end }}
-    </ul>
-  {{ end }}
-#+end_src
-* Supplements
-#+TOC: headlines 1 local
-** Index
-- JSON :: {{{ref(json)}}}
-- HTML :: {{{ref(html)}}}
-- Markdown :: {{{ref(markdown)}}}
-- Hugo :: {{{ref(hugo)}}}
-** README
-   :PROPERTIES:
-   :EXPORT_FILE_NAME: ../README
-   :END:
-#+INCLUDE: "./index.org::#introduction" :only-contents t
-** Source
-The following is the source of this document as it was written by the
-author.
-#+INCLUDE:  "./index.org" src org
-```

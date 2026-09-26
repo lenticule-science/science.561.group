@@ -20,6 +20,8 @@ ast:
   relational-universe-morphism:
     - goal
     - plans
+id: project
+defines: Project
 ---
 
 A project is a named container of related [plans](./plan.md) oriented toward a single stated goal. It is the highest-level grouping of work below organizational goals — a project says "this is the thing we are trying to accomplish" and the plans within it say how.
@@ -59,29 +61,6 @@ Projects serve as coordination boundaries. Different agents can work on differen
 - [plan](./plan.md) — the structured commitment within a project
 - [task](./task.md) — the unit of work within a plan
 - [work](./work.md) — the base concept
-
-
----
-
-<!-- source: _archive/discipline-intake/business/terms/project.md -->
-
-## Imported source: _archive/discipline-intake/business/terms/project.md
-
----
-id: project
-description: "A Project is a named set of Plans with a stated goal and an optional DefaultPlan list. The top-level container for all work in a locale or across the system."
-defines: Project
-uses: Plan
-params:
-  goal: relational-universe
-  plans: relational-universe
-output: relational-universe
-ast:
-  relational-universe-morphism:
-    - goal
-    - plans
----
-
 
 ## What it is
 
@@ -140,8 +119,3 @@ Making Projects explicit allows:
 
 - Formal serialization format for Project metadata (currently implicit in directory structure; may become a `PROJECT.md` file per locale or a root-level registry)
 - Whether the repo-level "work anywhere when queue is empty" policy should be a single root Project or a cross-cutting DefaultPlan designation
-
-## Earlier material
-
-```yaml
----

@@ -105,12 +105,6 @@ The oversaturated feel of the “feminine normie romance + perfume” persona ca
 
 ✅ **In short:** The differentiated persona is the Romance Perfume Philosopher: feminine, cozy, and normie-friendly, with enough reflection to stand out. She frames romance novels and perfumes as gateways into universal feelings — longing, memory, comfort, desire — making the content more enduring and less replaceable.
 
-## Earlier material
-
-1.  Persona Definition
-
-1.  Content Characteristics
-
 Hook (funny or dramatic book/perfume anecdote).
 
 Short review (why she loved it, how it made her feel).
@@ -121,11 +115,7 @@ Conversational close (question to readers, e.g., “Which romance trope is your 
 
 Not lyrical or heavy — fun and casual, but with moments of sincerity.
 
-1.  Cadence & Rhythm
-
 Closing Cadence: Invitation to chat: “Reply and tell me your current scent obsession!”
-
-1.  Branding Integration
 
 Pastel palettes, hearts, florals.
 
@@ -133,11 +123,7 @@ Book stacks, perfume bottles, cozy bedroom corners.
 
 Instagram/TikTok: Perfume hauls, GRWM (get ready with me) videos, book recs.
 
-1.  Reader Experience
-
 A social, communal vibe — readers want to chat back.
-
-1.  Long-Term Growth & Sustainability
 
 Would you like me to now compare the two personas side by side (Lakota Sage-Caregiver vs. Feminine Normie Enthusiast), showing how each produces different content but fits the same Substack performance economy?
 
@@ -174,8 +160,6 @@ Softer than BookTok pastel chaos — elegant minimalism. Clean flat-lays of book
 Aesthetic closer to lifestyle magazine than teenage fandom.
 
 TikTok/Fediverse: short musings, not just “hauls.”
-
-Readers expect:
 
 The same cozy feminine vibe, but with a sense of depth and reflection missing from oversaturated normie spaces.
 

@@ -25,6 +25,9 @@ ast:
     - result:
         - capacity
         - situation
+defines: Work
+related: Process, Application, Procedure, Inquiry, Derivation, Activity, Operation
+date-modified: 2026-03-20
 ---
 
 Work is an episode of doing with a defined output. Work is characterized entirely by what it produces, not by what happens inside it. The output may be an artifact, a judgment, a transformed state, or a report that nothing was found — but it must be something nameable. An episode of doing that produces nothing nameable is not work; it is time spent.
@@ -36,38 +39,6 @@ A work unit is a concrete instance of work: it names what it acts on (domain), w
 Work composes. A [workflow](./workflow.md) is a set of work units with the constraint that the initial input type equals the final output type — the workflow takes something of type X and produces something of type X. A [task](./task.md) is a named planning container for work units with a completion condition. Workflows are algebraic (they compose); tasks are organizational (they group work for planning and tracking).
 
 Work is the thing that [practice](./practice.md) does and [method](./method.md) governs. Practice without work is idle; method without work is shelfware; work without method is improvisation; work without practice is a plan that never executes.
-
-
----
-
-<!-- source: _archive/discipline-intake/business/terms/work.md -->
-
-## Imported source: _archive/discipline-intake/business/terms/work.md
-
----
-id: work
-description: "Work is a triple (a, κ, r) — an agent a, a capacity κ that a possesses, and a situation r in which κ is actualized — that produces a result through the exercise of the capacity. The defining structure: work is the actualization of a potential. Work is not the capacity itself (which is what the agent can do, independent of any particular exercise) and not the result alone (which is what the work leaves behind). Work is the act — the transition from potentiality to actuality — that produces the result. An agent who possesses a capacity and does not exercise it in a situation has not worked; an agent who exercises a capacity in a situation has worked regardless of whether the result is good or poor."
-defines: Work
-related: Process, Application, Procedure, Inquiry, Derivation, Activity, Operation
-date-created: 2026-03-20
-date-modified: 2026-03-20
-params:
-  agent: relational-universe
-  capacity: relational-universe-morphism
-  situation: relational-universe
-output: relational-universe
-ast:
-  capacity-actualization:
-    - agent
-    - capacity:
-        - agent
-        - situation
-    - result:
-        - capacity
-        - situation
----
-
-# Work
 
 ## Formal definition
 
@@ -133,8 +104,6 @@ Physical work formalizes the intuition that effort applied in a direction produc
 - Whether Davidson's causal requirement (the right causal history from intention to action) is formalizable in the nuclear framework — whether "caused in the right way by the agent's intention" corresponds to the work's proposition being meaning-settled ($\sigma_t$-fixed) as well as execution-settled ($\Delta_t$-fixed), so that accidental results are those in $\mathrm{Fix}(\Delta_t) \setminus \mathrm{Fix}(\sigma_t)$.
 - Whether there is a category of works — with works as morphisms (an agent applying a capacity to a situation) and situations as objects — and whether composition of works (sequential work, then work on the output) forms a proper category (with associativity and identity).
 - Whether physical work ($W = \vec{F} \cdot \vec{d}$) and computational work (Kleisli morphism execution) can be unified under the formal definition — whether both are instances of the same abstract structure and whether the work-energy theorem has an analogue in the category of Kleisli morphisms.
-
-## Earlier material
 
 Work is an [act](../../../../../../../../../philosophy/terms/act.md) with a defined output. It restricts the general concept of action — what a [thing](../../../../../../../../../philosophy/terms/thing.md) does that produces change — to episodes with nameable results. An act that produces nothing nameable is not work; it is time spent. Work inherits from act the structure of capacity realization: something has the potential to produce an output, and work is the episode where that potential is realized.
 

@@ -49,8 +49,6 @@ A workflow is *sound* (every input that arrives eventually produces a settled ou
 
 For the strict regime, workflow soundness reduces to the Petri-net-style reachability/liveness analysis the work vocabulary already names: every task is reachable, no task is dead, every settled input drives the workflow to a settled output.
 
-## Earlier material
-
 A workflow $W: \tau \to \tau'$ is *sound* iff it sends every quiescent input state to a quiescent output state. By [completion-as-quiescence](completion-as-quiescence.md), quiescence is the fixed-point condition. The soundness condition has a precise statement in terms of the [settling internal Hom](../../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/references/settling-internal-hom.md):
 
 **Proposition (soundness as inhabited internal Hom).** $W: \tau \to \tau'$ is sound iff the internal Hom $\mathcal{H}om_{\mathrm{settle}}(v^{\mathrm{in}}_\tau, v^{\mathrm{out}}_{\tau'})$ has a $\mathbf{t}$-valued global section — i.e., $H^0(\mathcal{H}om_{\mathrm{settle}}(v^{\mathrm{in}}, v^{\mathrm{out}})) \neq 0$ — at the input-output settling pair.
@@ -94,47 +92,3 @@ The $t$-symmetry (truth negation: $\mathbf{t} \leftrightarrow \mathbf{f}$, $\bot
 The $c$-symmetry ($c = k \circ t$: fixes $\mathbf{t} \leftrightarrow \mathbf{f}$ but also $\bot \leftrightarrow \top$) leaves branch activation unchanged but swaps blocking and repair. Operationally: $c$-dual workflows are those where the conditions for being blocked and being in repair are interchanged.
 
 **Significance for workflow design.** A workflow designer who asks "what happens if the guard is wrong?" is asking about the $\top$-case (contradicted guard). The Klein-four analysis shows this is the $t$-dual of the $\bot$-case (unknown guard): "guard contradicted" and "guard unknown" are structurally symmetric under truth-negation. Both require resolution before the workflow can proceed cleanly; they are resolved by different means (adjudication vs. additional evidence), but their substrate structure is symmetric. This symmetry is invisible in a Boolean guard model; the bilattice makes it structurally explicit.
-
-A workflow $W: \tau \to \tau'$ is *sound* iff it sends every quiescent input state to a quiescent output state.
-By [completion-as-quiescence](completion-as-quiescence.md), quiescence is the fixed-point condition.
-The soundness condition has a precise statement in terms of the [settling internal Hom](../../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/references/settling-internal-hom.md):
-
-The internal Hom value $\mathcal{H}om_{\mathrm{settle}}(v^{\mathrm{in}}, v^{\mathrm{out}})(\sigma)$ at each cell $\sigma$ measures how much the input's content at $\sigma$ implies the output's.
-For a sound workflow, every cell that matters to the output is determined by the input via the workflow's closure rules: the implication is $\mathbf{t}$ at each such cell.
-
-**Regime-dependent consequences:** - *Strict regime:* $H^0(\mathcal{H}om_{\mathrm{settle}})$ is finitely computable.
-Soundness is decidable in finite time (Petri-net-style reachability/liveness analysis — the work vocabulary's standard method). - *Scott-continuous regime:* $H^0$ is computable in $\omega$ steps.
-Soundness is semi-decidable. - *Transfinite-bounded or aperiodic regime:* $H^1(\mathcal{H}om_{\mathrm{settle}})$ may be non-trivial, and soundness becomes a cohomological condition — there may be local implication (each cell-by-cell the workflow advances toward the output) without global settledness.
-
-The no-tunneling theorem for settling paths applies: the cohomological classifying invariant $\mathrm{cl}\text{-}\mathrm{inv}(W_t)$ is *locally constant* along any workflow deformation path.
-Two workflows in different MLD-classes (different cohomological invariants) cannot be connected by a smooth deformation path — crossing MLD-class boundaries requires a *discontinuous jump*.
-
-**Operational interpretation.** A workflow that is refactored gradually — tasks added, edges reconnected, gating conditions adjusted — stays within its original MLD-class as long as the refactoring is incremental (each step is a first-order deformation).
-A radical restructuring (completely different dependency graph, different regime) is a discontinuous jump — it changes the workflow's MLD-class and cannot be achieved by smooth iterative edits.
-
-Furthermore, **regime can shift only upward along deformations** — a workflow refactoring can increase complexity (strict → Scott-continuous → transfinite-bounded → aperiodic) but not decrease it via smooth deformation.
-Simplifying a workflow (removing tasks, straightening dependencies, eliminating non-monotone conditions) corresponds to a discontinuous jump to a lower-regime MLD-class, not a smooth deformation.
-
-is an isomorphism.
-Operationally: for a workflow $W = W_1 \circ W_2$ composed from two sub-workflows, the query "is there some intermediate-state cell $\phi$ in $W_1$'s output satisfying condition $X$?" produces the same answer whether computed from $W$'s perspective (quantifying over $W_1$'s outputs as seen from $W$'s end) or from $W_1$'s perspective (quantifying over $W_1$'s outputs directly).
-Workflow composition is existentially coherent across boundaries.
-
-This is what ensures workflow-level monitoring and tracking is consistent: a tracking system that monitors intermediate workflow stages does not need to re-derive its intermediate-stage queries from scratch at the workflow-composition boundary.
-The temporal BC guarantees that the query's answer is preserved under workflow composition and decomposition.
-
-The bilattice $\mathbf{FOUR}$'s Klein-four symmetry group $\{\mathrm{id}, k, t, c\}$ — knowledge negation $k$, truth negation $t$, conflation $c = k \circ t$ — acts on the guard cell $\gamma$ of a branch workflow $W_1 + W_2$.
-The four $\gamma$-values correspond to the four orbits:
-
-The $k$-symmetry (knowledge negation: $\mathbf{t} \leftrightarrow \mathbf{f}$, $\bot \leftrightarrow \top$) exchanges the two branches' activation conditions: applying $k$ to $\gamma$ swaps $W^A$ and $W^B$, leaving the $\bot$-blocking and $\top$-repair behaviors unchanged.
-This is the substrate-algebraic content of "the choice between $W^A$ and $W^B$ is symmetric under branch-swap": the Klein-four $k$-action is the symmetry that interchanges the two branches.
-
-The $t$-symmetry (truth negation: $\mathbf{t} \leftrightarrow \mathbf{f}$, $\bot \leftrightarrow \top$ — same combinatorics as $k$ for a single cell but different semantics) exchanges $\bot$ (no information) with $\top$ (too much information).
-In operational terms: truth-negation of the guard maps a blocking (unsettled) guard to a repair condition (contradicted) and vice versa — the "we don't know which branch" state and the "both branches fire" state are $t$-dual.
-
-The $c$-symmetry ($c = k \circ t$: fixes $\mathbf{t} \leftrightarrow \mathbf{f}$ but also $\bot \leftrightarrow \top$) leaves branch activation unchanged but swaps blocking and repair.
-Operationally: $c$-dual workflows are those where the conditions for being blocked and being in repair are interchanged.
-
-**Significance for workflow design.** A workflow designer who asks "what happens if the guard is wrong?" is asking about the $\top$-case (contradicted guard).
-The Klein-four analysis shows this is the $t$-dual of the $\bot$-case (unknown guard): "guard contradicted" and "guard unknown" are structurally symmetric under truth-negation.
-Both require resolution before the workflow can proceed cleanly; they are resolved by different means (adjudication vs. additional evidence), but their substrate structure is symmetric.
-This symmetry is invisible in a Boolean guard model; the bilattice makes it structurally explicit.

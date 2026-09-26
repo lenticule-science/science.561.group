@@ -20,8 +20,6 @@ A skill has three components. Knowledge: the facts and distinctions the agent ne
 
 The maturation of a skill follows a progression observed across human expertise research. Stuart Edward Dreyfus and Hubert Lederer Dreyfus described five stages in *Mind Over Machine* (1986): novice (follows rules rigidly), advanced beginner (recognizes situational elements), competent (plans and prioritizes), proficient (sees patterns intuitively), and expert (acts fluidly without deliberation). An agentic skill file encodes competence at one level of this progression — typically the competent or proficient stage, where the knowledge can be articulated as guidelines and criteria rather than rigid rules or inarticulate intuition.
 
-## Earlier material
-
 Creates a new specification by:
 1. Running the scaffold script to generate the directory and template
 2. Guiding the agent through filling each TODO section
@@ -111,7 +109,5 @@ State:
 - If a part is a choking hazard, emboss a warning on the part or include the warning in packaging notes.
 - Note sharp edges, pinch points, or heat risks if the part will be handled during use.
 - Record hazards and mitigations in the project notes before sharing or printing.
-
-## Earlier material
 
 Create a specification: $ARGUMENTS

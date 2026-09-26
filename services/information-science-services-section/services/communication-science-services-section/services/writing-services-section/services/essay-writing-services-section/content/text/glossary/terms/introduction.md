@@ -25,18 +25,6 @@ The introduction has three jobs:
 - [thesis](../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/thesis.md) — typically stated or implied in the introduction
 - [hook](./hook.md) — the device that earns the reader's attention in the opening sentences
 
-
----
-
-## Consolidated triage formulation
-
-<!-- CONSOLIDATED-TRIAGE-SOURCE: introduction.md SHA256 1c8a3b99c5af27ec132eb0b9fe8fd97771bbdcccdb1ca1bc8692e7723eb481df -->
-
-This historical formulation was consolidated from `lib/emsenn/services/561-group/services/public-services-section/services/personal-services-section/emsenn-services-section/content/text/triage/introduction.md`. It is retained where its wording, links, provenance, or uncertainty differs from the active entry.
-
-### Retained formulation
-
-
 On September 21, 2025, Stephen Miller stood in State Farm Stadium in Glendale, Arizona, before tens of thousands gathered to honor Charlie Kirk.
 
 His premise was mourning, but his content was aggressive and threatening:
@@ -290,8 +278,6 @@ This is the principle of prefiguration: living as if the world we want already e
 This anarchist grammar is not simply defensive. It is generative. Fascism glorifies builders but builds nothing. It feeds parasitically on the life of the commons, on solidarity and care, on the very practices it denounces as weakness. Anarchist grammar, by contrast, actually produces futures. It makes worlds. It is the hidden force beneath every fascist fantasy: the sublated labor of those who cook, heal, teach, strike, care, and commune.
 
 This is why fascist grammar always returns to crisis: without the generativity of anarchist life, fascism would collapse into the nothingness it projects onto others. The storm survives only by consuming the worlds that anarchism and its kin generate. To recognize this is to see that anarchism is not antifascist by design, but as an emergent consequence of its foundations.
-
-# Conclusion
 
 The storm is coming, has arrived, and never left, in the reconstituted grammar of crisis, purity, and inevitability that now animates the public sphere. The historical triumph over fascism was, in this sense, a tactical victory that left the rhetorical infrastructure intact, allowing it to be rearticulated in the idiom of postliberalism. The essay has argued that our liberal institutions, in their anxious effort to counter this grammar dialectically (toleration against enmity, compromise against sacrifice) remain entangled in a struggle they cannot win, for they accept the very terms of conflict they seek to negate.
 

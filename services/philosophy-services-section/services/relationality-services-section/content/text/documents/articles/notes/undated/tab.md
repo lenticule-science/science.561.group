@@ -238,11 +238,6 @@ thing
   tab
 ```
 
-## Earlier material
-
-``` {#tab-configuration .fennel tangle="./src/tab/conf.fnl"}
-```
-
 1.  Logging
 
 2.  Strings

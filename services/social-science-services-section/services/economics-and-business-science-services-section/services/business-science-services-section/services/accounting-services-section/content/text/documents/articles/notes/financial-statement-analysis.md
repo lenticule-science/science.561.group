@@ -32,6 +32,78 @@ Horizontal analysis compares the same line item across two or more periods. You 
 
 **Worked example.** Here's a simplified [income statement](../../../glossary/terms/income-statement.md) for two years:
 
+Revenue grew 25%, which looks good.
+But [cost of goods sold](../../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/content/individual/content/agent/endeavoring/content/endeavor/organizing/content/organization/resourcing/content/resource/recording/content/record/accounting/content/terms/cost-of-goods-sold.md) grew 33.3% — faster than revenue.
+That squeezed the gross profit margin.
+Operating expenses rose 15%, which is slower than revenue growth — that's a positive sign.
+Net income grew only 8.3%, much less than revenue, because the cost increases ate into the gain.
+Without horizontal analysis, "\$65,000 in net income" doesn't tell you any of this.
+
+Vertical analysis expresses every line item as a percentage of a base figure.
+For income statements, the base is revenue.
+For [balance sheets](../../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/content/individual/content/agent/endeavoring/content/endeavor/organizing/content/organization/resourcing/content/resource/recording/content/record/accounting/content/terms/balance-sheet.md), the base is total assets.
+This produces "common-size" statements that make companies of different sizes comparable.
+
+Now you can compare this business to a competitor that has \$2 million in revenue.
+If the competitor's COGS is 70% of revenue and this business's is 64%, this business is more efficient at production or purchasing — regardless of their size difference.
+
+This measures whether the business has enough short-term assets to cover short-term debts.
+Example: a company with \$150,000 in current assets and \$100,000 in current liabilities has a current ratio of 1.5.
+That means \$1.50 of current assets for every \$1.00 of current liabilities.
+
+**Quick ratio** = (Current Assets − Inventory) / Current Liabilities
+
+The quick ratio is more conservative.
+It strips out inventory because inventory might not convert to cash quickly — especially if it's seasonal, perishable, or specialized.
+Using the same company with \$40,000 in inventory: (\$150,000 − \$40,000) / \$100,000 = 1.1.
+
+**Interpretation.** A current ratio below 1.0 means current liabilities exceed current assets, which is a warning sign.
+But "good" ratios vary by industry [citation needed].
+A grocery store with fast inventory turnover can operate comfortably with a lower current ratio than a furniture manufacturer with slow-moving stock.
+
+**Gross profit margin** = (Revenue − COGS) / Revenue = (\$500,000 − \$320,000) / \$500,000 = 36.0%.
+This measures production and purchasing efficiency — how much of each revenue dollar survives after direct costs.
+
+**Return on assets (ROA)** = Net Income / Total Assets = \$65,000 / \$400,000 = 16.3%.
+This measures how effectively the business uses its assets to generate profit.
+
+**Return on equity (ROE)** = Net Income / Total Equity = \$65,000 / \$250,000 = 26.0%.
+This measures the return generated for the owners on their investment.
+
+Notice that ROE (26.0%) is higher than ROA (16.3%).
+That gap exists because the company uses debt financing in addition to equity.
+When a business earns more on borrowed money than it pays in interest, the extra return flows to the owners — this is the effect of leverage.
+
+**Debt ratio** = Total Liabilities / Total Assets = \$150,000 / \$400,000 = 37.5%.
+Just over a third of the company's assets are financed by debt.
+
+Debt isn't inherently bad.
+Borrowing can amplify returns for owners (leverage) because the business can invest more than the owners put in.
+But leverage also amplifies risk — if the business hits a downturn, those debt payments don't shrink.
+A highly leveraged company can go from profitable to insolvent faster than a conservatively financed one.
+
+- **Historical cost.** Financial statements report what assets cost when they were acquired, not what they're worth today.
+  A building bought for \$200,000 twenty years ago might be worth \$1 million, but the balance sheet doesn't reflect that.
+- **Accounting standards.** Different companies might make different (but equally valid) choices about [depreciation](../../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/content/individual/content/agent/endeavoring/content/endeavor/organizing/content/organization/resourcing/content/resource/recording/content/record/accounting/content/terms/depreciation.md) methods, [revenue recognition](../../../glossary/terms/revenue-recognition.md) timing, or inventory costing.
+  These choices affect the numbers ratios are built on.
+- **Non-financial factors.** Ratios don't capture management quality, employee morale, pending lawsuits, competitive dynamics, or technological shifts.
+- **Industry differences.** A 2:1 current ratio is strong for a retailer but irrelevant for a software company with no inventory.
+  A 50% debt ratio is normal in real estate but alarming in consulting [citation needed].
+  Always compare within the same industry and over multiple periods.
+
+**Current ratio** = \$140,000 / \$90,000 = 1.56.
+The business has \$1.56 of current assets for every \$1.00 of current liabilities — it can cover its short-term obligations.
+
+**Quick ratio** = (\$140,000 − \$35,000) / \$90,000 = \$105,000 / \$90,000 = 1.17.
+Even after excluding inventory, the business has enough liquid assets to cover current liabilities, though with less margin.
+
+The gap between the two ratios (\$0.39) tells you that inventory makes up a meaningful portion of current assets.
+If that inventory is hard to sell quickly, the quick ratio gives a more realistic picture of short-term liquidity.
+
+The gap between them (35.0% − 10.5% = 24.5 percentage points) represents operating expenses as a share of revenue.
+The business keeps 35 cents of every revenue dollar after direct costs, but operating expenses consume another 24.5 cents, leaving 10.5 cents as profit.
+If the business wants to improve net margin, it needs to examine those operating expenses — the production side is already delivering a solid gross margin.
+
 | | Year 1 | Year 2 | $ Change | % Change |
 |---|---|---|---|---|
 | Revenue | \$400,000 | \$500,000 | \$100,000 | 25.0% |
@@ -255,81 +327,5 @@ The business retains 40 cents of every revenue dollar after COGS. Salaries are t
 
 You now have the tools to read and analyze [financial statements](../../../glossary/terms/financial-statements.md). The next lesson covers bank reconciliation — the process of matching a company's cash records against the bank's records to catch errors and unauthorized transactions.
 
-## Earlier material
-
 Financial statement analysis converts raw numbers into relationships and trends that allow comparison — across time periods, across competitors, and across industries.
 The three main tools are horizontal analysis, vertical analysis, and ratio analysis.
-
-**Worked example.** Here's a simplified [income statement](../../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/content/individual/content/agent/endeavoring/content/endeavor/organizing/content/organization/resourcing/content/resource/recording/content/record/accounting/content/terms/income-statement.md) for two years:
-
-Revenue grew 25%, which looks good.
-But [cost of goods sold](../../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/content/individual/content/agent/endeavoring/content/endeavor/organizing/content/organization/resourcing/content/resource/recording/content/record/accounting/content/terms/cost-of-goods-sold.md) grew 33.3% — faster than revenue.
-That squeezed the gross profit margin.
-Operating expenses rose 15%, which is slower than revenue growth — that's a positive sign.
-Net income grew only 8.3%, much less than revenue, because the cost increases ate into the gain.
-Without horizontal analysis, "\$65,000 in net income" doesn't tell you any of this.
-
-Vertical analysis expresses every line item as a percentage of a base figure.
-For income statements, the base is revenue.
-For [balance sheets](../../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/content/individual/content/agent/endeavoring/content/endeavor/organizing/content/organization/resourcing/content/resource/recording/content/record/accounting/content/terms/balance-sheet.md), the base is total assets.
-This produces "common-size" statements that make companies of different sizes comparable.
-
-Now you can compare this business to a competitor that has \$2 million in revenue.
-If the competitor's COGS is 70% of revenue and this business's is 64%, this business is more efficient at production or purchasing — regardless of their size difference.
-
-This measures whether the business has enough short-term assets to cover short-term debts.
-Example: a company with \$150,000 in current assets and \$100,000 in current liabilities has a current ratio of 1.5.
-That means \$1.50 of current assets for every \$1.00 of current liabilities.
-
-**Quick ratio** = (Current Assets − Inventory) / Current Liabilities
-
-The quick ratio is more conservative.
-It strips out inventory because inventory might not convert to cash quickly — especially if it's seasonal, perishable, or specialized.
-Using the same company with \$40,000 in inventory: (\$150,000 − \$40,000) / \$100,000 = 1.1.
-
-**Interpretation.** A current ratio below 1.0 means current liabilities exceed current assets, which is a warning sign.
-But "good" ratios vary by industry [citation needed].
-A grocery store with fast inventory turnover can operate comfortably with a lower current ratio than a furniture manufacturer with slow-moving stock.
-
-**Gross profit margin** = (Revenue − COGS) / Revenue = (\$500,000 − \$320,000) / \$500,000 = 36.0%.
-This measures production and purchasing efficiency — how much of each revenue dollar survives after direct costs.
-
-**Return on assets (ROA)** = Net Income / Total Assets = \$65,000 / \$400,000 = 16.3%.
-This measures how effectively the business uses its assets to generate profit.
-
-**Return on equity (ROE)** = Net Income / Total Equity = \$65,000 / \$250,000 = 26.0%.
-This measures the return generated for the owners on their investment.
-
-Notice that ROE (26.0%) is higher than ROA (16.3%).
-That gap exists because the company uses debt financing in addition to equity.
-When a business earns more on borrowed money than it pays in interest, the extra return flows to the owners — this is the effect of leverage.
-
-**Debt ratio** = Total Liabilities / Total Assets = \$150,000 / \$400,000 = 37.5%.
-Just over a third of the company's assets are financed by debt.
-
-Debt isn't inherently bad.
-Borrowing can amplify returns for owners (leverage) because the business can invest more than the owners put in.
-But leverage also amplifies risk — if the business hits a downturn, those debt payments don't shrink.
-A highly leveraged company can go from profitable to insolvent faster than a conservatively financed one.
-
-- **Historical cost.** Financial statements report what assets cost when they were acquired, not what they're worth today.
-  A building bought for \$200,000 twenty years ago might be worth \$1 million, but the balance sheet doesn't reflect that.
-- **Accounting standards.** Different companies might make different (but equally valid) choices about [depreciation](../../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/content/individual/content/agent/endeavoring/content/endeavor/organizing/content/organization/resourcing/content/resource/recording/content/record/accounting/content/terms/depreciation.md) methods, [revenue recognition](../../../glossary/terms/revenue-recognition.md) timing, or inventory costing.
-  These choices affect the numbers ratios are built on.
-- **Non-financial factors.** Ratios don't capture management quality, employee morale, pending lawsuits, competitive dynamics, or technological shifts.
-- **Industry differences.** A 2:1 current ratio is strong for a retailer but irrelevant for a software company with no inventory.
-  A 50% debt ratio is normal in real estate but alarming in consulting [citation needed].
-  Always compare within the same industry and over multiple periods.
-
-**Current ratio** = \$140,000 / \$90,000 = 1.56.
-The business has \$1.56 of current assets for every \$1.00 of current liabilities — it can cover its short-term obligations.
-
-**Quick ratio** = (\$140,000 − \$35,000) / \$90,000 = \$105,000 / \$90,000 = 1.17.
-Even after excluding inventory, the business has enough liquid assets to cover current liabilities, though with less margin.
-
-The gap between the two ratios (\$0.39) tells you that inventory makes up a meaningful portion of current assets.
-If that inventory is hard to sell quickly, the quick ratio gives a more realistic picture of short-term liquidity.
-
-The gap between them (35.0% − 10.5% = 24.5 percentage points) represents operating expenses as a share of revenue.
-The business keeps 35 cents of every revenue dollar after direct costs, but operating expenses consume another 24.5 cents, leaving 10.5 cents as profit.
-If the business wants to improve net margin, it needs to examine those operating expenses — the production side is already delivering a solid gross margin.

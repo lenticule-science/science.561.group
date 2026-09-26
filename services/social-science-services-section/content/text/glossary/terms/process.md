@@ -34,6 +34,7 @@ relations:
     - execution-settled=true
 type: sequence
 visibility: public
+date-created: 2026-03-29
 ---
 
 # Process
@@ -92,24 +93,6 @@ An operation whose purpose is still being established is not yet σ-closed — i
 
 - Formal proof that σ-closure and Δ-closure together imply determinism for skill work — blocked by: skill-algebra construction.
 
----
-
-## Supplementary formulation
-
-```yaml
----
-id: process
-description: "A fully determined transformation — same input always produces same output, no decisions, no branches, no judgment."
-aliases: [processes]
-meaning-settled: true
-execution-settled: true
-contrasts-with: procedure, inquiry, derivation
-composes-into: workflow
-instance-of: work
-date-created: 2026-03-29
----
-```
-
 A process is a fully determined transformation.
 Given the same input, it always produces the same output.
 There are no decisions to make, no conditions to evaluate, no branches to take.
@@ -153,8 +136,6 @@ The four types of work form a lattice based on what is settled:
 A process sits at the top of this lattice — both dimensions settled.
 All other work types are on a path toward becoming processes as their open questions get resolved.
 
-## Earlier material
-
 A **process** is a defined, repeatable transformation: given the same input, it always produces the same output. No decisions, no branches, no judgment. The specification fully determines the behavior.
 
 This is what "process" means in business process management (ISO 9000), formal methods, and manufacturing: a transformation whose complete behavior is determined by its specification before it runs. Baking a recipe with exact measurements. Running a build script. Executing a SQL query. Multiplying two matrices. In each case, the input and the specification together determine the output.
@@ -172,8 +153,6 @@ A process is the doubly-settled position: both meaning (what it produces) and ex
 
 - Whether the meaning-settled/execution-settled split is the right two-axis classification of work, or whether a different decomposition (e.g., novelty/repetition × autonomy/direction) is more useful in practice.
 - Whether the boundary between process and procedure is empirically sharp — whether real operations cleanly fall into one of the four cells, or whether most actual work is somewhere on a continuum between them.
-
-## Earlier material
 
 Processes compose into workflows. A workflow arranges process steps as a directed graph while preserving each step's fully determined execution.
 

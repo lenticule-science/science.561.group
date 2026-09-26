@@ -107,6 +107,18 @@ From the standpoint of information geometry, alignment requires $\nabla D_{\math
 
 Persistent misalignment yields **[ontological](../../../../../../../../../../../philosophy-services-section/services/western-services-section/services/metaphysics-services-section/services/ontology-services-section/content/text/glossary/terms/ontology.md) drift**, a slow divergence between the system’s generative model and the causal structure of its environment. Formally,
 
+<a id="org23be3dd"></a>
+
+-   **Liberalism as cybernetic pathology:** Liberal subjectivity, and constituents such as Whiteness (Fanon 1967) and Man (Wynter 2003), exemplifies over-stabilization: a regime in which control feedback overwhelms adaptation, paralleling overfitting in machine learning and metabolic rigidity in physiology.
+-   **Entropic ethics.:** Maintaining informational openness requires nonzero entropy production—accepting bounded instability as the cost of adaptation (Ashby 1956; Beer 1979).
+-   **Implications for sociotechnical design.:** Systems engineered to remain indefinitely stable without external calibration will eventually diverge from reality; resilience demands controlled instability.
+
+<a id="org3bd1a59"></a>
+
+<a id="org68a9b96"></a>
+
+<a id="org03cb60d"></a>
+
 $$
 \frac{d}{dt} D_{\mathrm{KL}}(E_t||b_t) > 0
 $$
@@ -115,11 +127,23 @@ despite $\partial_t D_{\mathrm{KL}}(b_{t+\delta}||b_t) \approx 0$. This drift re
 
 # Discussion
 
+-  Liberalism as cybernetic pathology :: Liberal subjectivity, and constituents such as Whiteness (Fanon 1967) and Man (Wynter 2003), exemplifies over-stabilization: a regime in which control feedback overwhelms adaptation, paralleling overfitting in machine learning and metabolic rigidity in physiology.  
+- Entropic ethics. :: Maintaining informational openness requires nonzero entropy production—accepting bounded instability as the cost of adaptation (Ashby 1956; Beer 1979).  
+- Implications for sociotechnical design. :: Systems engineered to remain indefinitely stable without external calibration will eventually diverge from reality; resilience demands controlled instability.
+
 Liberalism as [cybernetic](../../../information/disciplines/cybernetics/index.md) pathology
 Liberal subjectivity, and constituents such as Whiteness ([Fanon](../../../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/frantz-fanon.md) 1967) and Man ([Wynter](../../../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/sylvia-wynter.md) 2003), exemplifies over-stabilization: a regime in which control feedback overwhelms adaptation, paralleling overfitting in machine learning and metabolic rigidity in physiology.
 
 Entropic ethics.
 Maintaining informational openness requires nonzero entropy production—accepting bounded instability as the cost of adaptation ([Ashby](../../../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/w-ross-ashby.md) 1956; [Beer](../../../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/stafford-beer.md) 1979).
+
+:PROPERTIES:
+:ID:       14d2f535-647d-48d3-a8f9-d3dab54ed4bb
+:NODE-RELATIONS: ()
+:END:
+#+title: Liberal Subjectivity as Information-Theoretic Malfunction
+#+date: [2025-10-11 Sat 14:46]
+#+author: emsenn
 
 Implications for sociotechnical design.
 Systems engineered to remain indefinitely stable without external calibration will eventually diverge from reality; resilience demands controlled instability.
@@ -146,8 +170,6 @@ Liberal subjectivity can be formalized as an information-theoretic malfunction: 
 - [Wiener](../../../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/norbert-wiener.md), N. (1948). **Cybernetics: Or Control and Communication in the Animal and the Machine.** MIT Press.
 - [Fanon](../../../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/frantz-fanon.md), F. (1967). **Black Skin, White Masks.** Trans. C. L. Markmann. New York: Grove Press.
 - [Wynter](../../../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/sylvia-wynter.md), S. (2003). **Unsettling the Coloniality of Being/Power/Truth/Freedom: Towards the Human, After Man, Its Overrepresentation—An Argument.** CR: The New Centennial Review, 3(3), 257–337.
-
-## Earlier material
 
 -   [Abstract](#org347cbf2)
 -   [Introduction](#org063ab73)
@@ -195,74 +217,3 @@ Liberal subjectivity can be formalized as an information-theoretic malfunction: 
 <a id="org19a7f13"></a>
 
 <a id="org0470358"></a>
-
-Persistent misalignment yields **ontological drift**, a slow divergence between the system’s generative model and the causal structure of its environment.  Formally,
-
-<a id="org23be3dd"></a>
-
--   **Liberalism as cybernetic pathology:** Liberal subjectivity, and constituents such as Whiteness (Fanon 1967) and Man (Wynter 2003), exemplifies over-stabilization: a regime in which control feedback overwhelms adaptation, paralleling overfitting in machine learning and metabolic rigidity in physiology.
--   **Entropic ethics.:** Maintaining informational openness requires nonzero entropy production—accepting bounded instability as the cost of adaptation (Ashby 1956; Beer 1979).
--   **Implications for sociotechnical design.:** Systems engineered to remain indefinitely stable without external calibration will eventually diverge from reality; resilience demands controlled instability.
-
-<a id="org3bd1a59"></a>
-
-<a id="org68a9b96"></a>
-
-<a id="org03cb60d"></a>
-
-Liberalism as [cybernetic](../../../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/content/individual/content/agent/actuating/content/actuator/embodying/content/body/integrating/content/drone/swarming/content/swarm/content/social/_archive/sociology/content/critical-theory/domains/information/disciplines/cybernetics/index.md) pathology Liberal subjectivity, and constituents such as Whiteness ([Fanon](../../../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/content/individual/content/agent/actuating/content/actuator/embodying/content/body/integrating/content/drone/swarming/content/swarm/content/social/_archive/sociology/content/critical-theory/domains/general/people/frantz-fanon.md) 1967) and Man ([Wynter](../../../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/content/individual/content/agent/actuating/content/actuator/embodying/content/body/integrating/content/drone/swarming/content/swarm/content/social/_archive/sociology/content/critical-theory/domains/general/people/sylvia-wynter.md) 2003), exemplifies over-stabilization: a regime in which control feedback overwhelms adaptation, paralleling overfitting in machine learning and metabolic rigidity in physiology.
-
-Entropic ethics.
-Maintaining informational openness requires nonzero entropy production—accepting bounded instability as the cost of adaptation ([Ashby](../../../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/content/individual/content/agent/actuating/content/actuator/embodying/content/body/integrating/content/drone/swarming/content/swarm/content/social/_archive/sociology/content/critical-theory/domains/general/people/w-ross-ashby.md) 1956; [Beer](../../../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/content/individual/content/agent/actuating/content/actuator/embodying/content/body/integrating/content/drone/swarming/content/swarm/content/social/_archive/sociology/content/critical-theory/domains/general/people/stafford-beer.md) 1979).
-
-Liberalism as [cybernetic](../../../../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/social-sciences/sociology/content/critical-theory/domains/information/disciplines/cybernetics/index.md) pathology  
-Liberal subjectivity, and constituents such as Whiteness ([Fanon](../../../../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/social-sciences/sociology/content/critical-theory/domains/general/people/frantz-fanon.md) 1967) and Man ([Wynter](../../../../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/social-sciences/sociology/content/critical-theory/domains/general/people/sylvia-wynter.md) 2003), exemplifies over-stabilization: a regime in which control feedback overwhelms adaptation, paralleling overfitting in machine learning and metabolic rigidity in physiology.
-
-Entropic ethics.  
-Maintaining informational openness requires nonzero entropy production—accepting bounded instability as the cost of adaptation ([Ashby](../../../../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/social-sciences/sociology/content/critical-theory/domains/general/people/w-ross-ashby.md) 1956; [Beer](../../../../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/social-sciences/sociology/content/critical-theory/domains/general/people/stafford-beer.md) 1979).
-
-:PROPERTIES:
-:ID:       14d2f535-647d-48d3-a8f9-d3dab54ed4bb
-:NODE-RELATIONS: ()
-:END:
-#+title: Liberal Subjectivity as Information-Theoretic Malfunction
-#+date: [2025-10-11 Sat 14:46]
-#+author: emsenn
-
-#+toc: headlines 2 local
-
-* Introduction
-
-* Background: Stability and Malfunction
-
-** Definition of Malfunction
-
-** Architecture
-
-** Positive Feedback Amplification
-
-* Systemic Consequences
-
-** Entropic Inversion
-
-** Social Feedback Loops
-
-** Alignment Failure
-
-** Ontological Drift
-
-Persistent misalignment yields *ontological drift*, a slow divergence between the system’s generative model and the causal structure of its environment.  Formally,
-
-* Discussion
-
--  Liberalism as cybernetic pathology :: Liberal subjectivity, and constituents such as Whiteness (Fanon 1967) and Man (Wynter 2003), exemplifies over-stabilization: a regime in which control feedback overwhelms adaptation, paralleling overfitting in machine learning and metabolic rigidity in physiology.  
-- Entropic ethics. :: Maintaining informational openness requires nonzero entropy production—accepting bounded instability as the cost of adaptation (Ashby 1956; Beer 1979).  
-- Implications for sociotechnical design. :: Systems engineered to remain indefinitely stable without external calibration will eventually diverge from reality; resilience demands controlled instability.
-
-* Conclusion
-
-Liberalism as [cybernetic](../../../../../../../../../../information/disciplines/cybernetics/index.md) pathology  
-Liberal subjectivity, and constituents such as Whiteness ([Fanon](../../../../../../../../../../general/people/frantz-fanon.md) 1967) and Man ([Wynter](../../../../../../../../../../general/people/sylvia-wynter.md) 2003), exemplifies over-stabilization: a regime in which control feedback overwhelms adaptation, paralleling overfitting in machine learning and metabolic rigidity in physiology.
-
-Entropic ethics.  
-Maintaining informational openness requires nonzero entropy production—accepting bounded instability as the cost of adaptation ([Ashby](../../../../../../../../../../general/people/w-ross-ashby.md) 1956; [Beer](../../../../../../../../../../general/people/stafford-beer.md) 1979).

@@ -23,6 +23,14 @@ ast:
     - progress-metric:
         - target
         - relational-history-fiber-fixed-layer
+id: objective
+defines: Objective
+related: Goal, Teleology, Intent, Endeavor, Will, Report, Discharge
+where:
+- $o$ is the **specific target element** — a concrete, measurable element of $H_t$ whose settlement in $H^*_\tau$ constitutes achievement; $o$ is more specific than the goal $g$ it serves: where $g$ may be broad ("improve operational effectiveness"), $o$ is bounded and decidable ("complete this specific inspection by this date")
+- $g$ is the **goal** the objective serves — $o \leq g$ in the fiber order, so that driving $o$ to settlement contributes to driving $g$ toward settlement; the objective is a decomposition of the goal into a specific, tractable sub-target
+- $m : H_t \to [0,1]$ is the **progress metric** — a function that tracks how close $o$ is to settlement at the current history; $m(o) = 0$ means no progress; $m(o) = 1$ means achieved ($o \in H^*_t$); $m$ is what makes the objective *measurable* in the SMART sense — without $m$, there is no way to track progress toward $\tau$
+- $\tau$ is the **deadline** — the specific target history at which $o$ must be in $H^*_\tau$; $\tau$ converts the objective into a time-bounded commitment; without $\tau$, a goal can be perpetually deferred; $\tau$ makes deferral a failure
 ---
 
 An objective is a specific, measurable, time-bounded target that serves a broader goal. It has four parts: a target (what counts as achieved), a goal it serves (the broader direction), a progress metric (how to track movement), and a deadline (when it must be achieved by).
@@ -37,6 +45,24 @@ An objective is:
 ## The SMART criteria
 
 SMART objectives (Doran, 1981) formalize the conditions under which an objective functions as an actionable target rather than a vague aspiration:
+
+**Specific** ($o$ is determinate): $o$ is a specific element of $H_t$, not a family of elements or a vague region. The achievement condition "$o \in H^*_\tau$" must have a determinate fact of the matter — no room for interpretive dispute about whether $o$ is achieved.
+
+**Measurable** ($m$ is defined and computable): the progress metric $m$ exists and can be evaluated at each history step. Without a computable $m$, the objective is present in the fiber but invisible to the tracking system.
+
+**Achievable** (there exists a path $\pi: t \to \tau$ such that $\pi^*(o) \in H^*_\tau$): the objective is achievable if the fiber's structure permits a history path that carries $o$ to settlement by $\tau$. An objective for which no such path exists is aspirational at best, delusional at worst.
+
+**Relevant** ($o \leq g$): the objective genuinely contributes to the goal. If $o$ settles independently of $g$, it is a task but not an objective in the goal-serving sense. Relevance requires that driving $o$ to $H^*_\tau$ creates conditions that advance $g$ toward $H^*_{>τ}$.
+
+**Time-bounded** ($\tau$ is determinate): the deadline is specific. Without a determinate $\tau$, the progress metric $m$ has no reference point against which to assess whether progress is sufficient.
+
+## The OKR bipartite: Objective as direction, Key Result as objective
+
+The OKR framework (Grove, Intel 1970s; Doerr, Google 1999) introduces a bipartite structure:
+- **Objective** (in OKR's informal sense): qualitative, aspirational, directional — "Build the most reliable navigation system in the fleet"
+- **Key Result** (KR): quantitative, measurable milestone — "Achieve 99.97% uptime across all navigation systems by Q3"
+
+The bipartite insight: the goal provides the purpose (connects to [Teleology](../../../../../../../../../philosophy-services-section/content/text/glossary/terms/teleology.md) and [Intent](intent.md)); the objectives operationalize it as decidable milestones (elements of $H_t$ with computable progress metrics and specific deadlines). Neither alone is sufficient: a goal without objectives has no operational traction; objectives without a goal are tasks with no direction.
 
 - **Specific**: the target is determinate — no room for interpretive dispute about whether it is achieved
 - **Measurable**: the progress metric exists and can be evaluated — without measurement, progress is invisible
@@ -57,98 +83,11 @@ Neither alone is sufficient: a goal without objectives has no operational tracti
 
 ## Objectives and reporting
 
-An objective generates a natural reporting structure: at each check-in, the progress metric either shows movement toward the target or it doesn't. A periodic report on an objective answers: "How much has progress changed this period, and is the current trajectory sufficient to achieve the target by the deadline?"
-
-## Objectives under friction
-
-Achieved objectives can regress. An objective met at one point may become unmet if conditions change — a system that was compliant becomes non-compliant when requirements shift. This means objectives require monitoring, not just one-time assessment. Achievement must be assessed at the deadline, not earlier.
-
-The appropriate response to friction is not to abandon the objective (unless achievability fails) but to exercise judgment: determine what actions will advance the target given current conditions.
-
-## Related
-
-- [Task](./task.md) — a goal-directed unit of work; an objective is more specific (metric + deadline)
-- [Plan](./plan.md) — a structured set of operations; objectives are what plans aim to achieve
-- [Endeavor](./endeavor.md) — self-commissioned striving; objectives operationalize endeavor into decidable milestones
-
-
----
-
-<!-- source: _archive/discipline-intake/business/terms/objective.md -->
-
-## Imported source: _archive/discipline-intake/business/terms/objective.md
-
----
-id: objective
-description: "An Objective is a four-tuple (o, g, m, τ) — a specific measurable target element o in the RelationalHistoryFiber, a goal g that o serves (o ≤ g in the fiber order), a progress metric m tracking how close o is to RelationalHistoryFixedFiber, and a deadline τ by which o must be in RelationalHistoryFixedFiber at τ. The defining structure: decidability. Unlike a goal (which specifies a direction) or an intent (which specifies a reconstruction operator), an objective has a binary achievement condition: o in RelationalHistoryFixedFiber at τ or not — settled or not. The OKR insight: an OKR Objective names the direction (qualitative, purposive); its Key Results are objectives in this formal sense. The SMART criteria are formal well-formedness conditions: an objective is well-formed iff o is specific (achievement is deterministic), m is defined, achievement is structurally possible (there exists a history path to τ that carries o to RelationalHistoryFixedFiber), o is on a path to g (o ≤ g in the fiber order), and τ is determinate. The natural progress metric for any objective whose target has a defined telos is the fraction of the instability interval that has been closed."
-defines: Objective
-related: Goal, Teleology, Intent, Endeavor, Will, Report, Discharge
-date-created: 2026-03-20
-date-modified: 2026-03-21
-params:
-  target: relational-universe
-  goal: relational-universe
-  progress-metric: relational-universe-morphism
-  deadline: relational-history
-output: relational-history-fiber-fixed-layer
-ast:
-  relational-universe-morphism:
-    - target:
-        - goal
-        - deadline
-    - progress-metric:
-        - target
-        - relational-history-fiber-fixed-layer
----
-
-# Objective
-
-## Formal definition
-
-An **Objective** is a four-tuple $\mathcal{O} = (o, g, m, \tau)$:
-
-$$\mathcal{O} = (o \in H_t,\; g : \mathrm{Goal},\; m : H_t \to [0,1],\; \tau : \mathrm{Deadline})$$
-
-where:
-- $o$ is the **specific target element** — a concrete, measurable element of $H_t$ whose settlement in $H^*_\tau$ constitutes achievement; $o$ is more specific than the goal $g$ it serves: where $g$ may be broad ("improve operational effectiveness"), $o$ is bounded and decidable ("complete this specific inspection by this date")
-- $g$ is the **goal** the objective serves — $o \leq g$ in the fiber order, so that driving $o$ to settlement contributes to driving $g$ toward settlement; the objective is a decomposition of the goal into a specific, tractable sub-target
-- $m : H_t \to [0,1]$ is the **progress metric** — a function that tracks how close $o$ is to settlement at the current history; $m(o) = 0$ means no progress; $m(o) = 1$ means achieved ($o \in H^*_t$); $m$ is what makes the objective *measurable* in the SMART sense — without $m$, there is no way to track progress toward $\tau$
-- $\tau$ is the **deadline** — the specific target history at which $o$ must be in $H^*_\tau$; $\tau$ converts the objective into a time-bounded commitment; without $\tau$, a goal can be perpetually deferred; $\tau$ makes deferral a failure
-
-**The objective is:**
-- **Achieved** when $o \in H^*_\tau$: the target element is fully settled (meaning-settled and execution-settled) at the deadline history
-- **Missed** when $\tau$ passes and $o \notin H^*_\tau$: the deadline history has passed without settlement
-- **On track** when $m(o)$ is on a trajectory that will reach $m(o) = 1$ by $\tau$
-
-## The SMART criteria as well-formedness conditions
-
-SMART objectives (Doran, 1981) formalize the conditions under which an objective functions as an actionable target rather than a vague aspiration:
-
-**Specific** ($o$ is determinate): $o$ is a specific element of $H_t$, not a family of elements or a vague region. The achievement condition "$o \in H^*_\tau$" must have a determinate fact of the matter — no room for interpretive dispute about whether $o$ is achieved.
-
-**Measurable** ($m$ is defined and computable): the progress metric $m$ exists and can be evaluated at each history step. Without a computable $m$, the objective is present in the fiber but invisible to the tracking system.
-
-**Achievable** (there exists a path $\pi: t \to \tau$ such that $\pi^*(o) \in H^*_\tau$): the objective is achievable if the fiber's structure permits a history path that carries $o$ to settlement by $\tau$. An objective for which no such path exists is aspirational at best, delusional at worst.
-
-**Relevant** ($o \leq g$): the objective genuinely contributes to the goal. If $o$ settles independently of $g$, it is a task but not an objective in the goal-serving sense. Relevance requires that driving $o$ to $H^*_\tau$ creates conditions that advance $g$ toward $H^*_{>τ}$.
-
-**Time-bounded** ($\tau$ is determinate): the deadline is specific. Without a determinate $\tau$, the progress metric $m$ has no reference point against which to assess whether progress is sufficient.
-
-## The OKR bipartite: Objective as direction, Key Result as objective
-
-The OKR framework (Grove, Intel 1970s; Doerr, Google 1999) introduces a bipartite structure:
-- **Objective** (in OKR's informal sense): qualitative, aspirational, directional — "Build the most reliable navigation system in the fleet"
-- **Key Result** (KR): quantitative, measurable milestone — "Achieve 99.97% uptime across all navigation systems by Q3"
-
-In the formal vocabulary: the OKR *Objective* corresponds to a [Goal](goal.md) (directional, purpose-stating); the OKR *Key Results* are **objectives** in the formal sense — specific, measurable, time-bounded sub-targets.
-
-The bipartite insight: the goal provides the purpose (connects to [Teleology](../../../../../../../../../philosophy-services-section/content/text/glossary/terms/teleology.md) and [Intent](intent.md)); the objectives operationalize it as decidable milestones (elements of $H_t$ with computable progress metrics and specific deadlines). Neither alone is sufficient: a goal without objectives has no operational traction; objectives without a goal are tasks with no direction.
-
-## Objectives and reporting
-
 An objective $(o, g, m, \tau)$ generates a natural [Report](../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/glossary/terms/report.md) structure: at each history step, the findings-differential $\Delta^* = \Gamma(H^*_{t'}) \setminus \Gamma(H^*_t)$ either contains evidence of progress toward $o$ (newly settled elements that are components of $o$) or it doesn't. The progress metric $m$ maps the differential to a $[0,1]$ value.
 
 A periodic report on an objective answers: "How much has $m(o)$ changed this period, and is the current trajectory sufficient to achieve $o \in H^*_\tau$ by deadline?" This is the formal structure of status reporting: not a narrative but a measurement of the target element's progress toward the fixed fiber.
+
+An objective generates a natural reporting structure: at each check-in, the progress metric either shows movement toward the target or it doesn't. A periodic report on an objective answers: "How much has progress changed this period, and is the current trajectory sufficient to achieve the target by the deadline?"
 
 ## Objectives under friction
 
@@ -203,7 +142,25 @@ Driving $o$ to RelationalHistoryFixedFiber contributes toward driving $g$ to Rel
 - Whether the progress metric can always be derived from the nuclear dynamics — whether the fraction of the instability interval closed is always a well-defined metric, and whether there are objectives whose instability interval has no natural length measure (incomparable elements in a non-linear lattice), requiring an external scale.
 - Whether the friction-induced regression of achieved objectives (Proposition 5) can be bounded — whether there is a class of objectives that are friction-resistant in the sense that once achieved, their restriction maps preserve RelationalHistoryFixedFiber-membership along certain paths, and whether this class corresponds to elements at the top of the lattice (close to the maximum of the fiber) or to elements with specific structural properties in the nuclear quartet.
 
-## Earlier material
+Achieved objectives can regress. An objective met at one point may become unmet if conditions change — a system that was compliant becomes non-compliant when requirements shift. This means objectives require monitoring, not just one-time assessment. Achievement must be assessed at the deadline, not earlier.
 
-```yaml
----
+The appropriate response to friction is not to abandon the objective (unless achievability fails) but to exercise judgment: determine what actions will advance the target given current conditions.
+
+## Related
+
+- [Task](./task.md) — a goal-directed unit of work; an objective is more specific (metric + deadline)
+- [Plan](./plan.md) — a structured set of operations; objectives are what plans aim to achieve
+- [Endeavor](./endeavor.md) — self-commissioned striving; objectives operationalize endeavor into decidable milestones
+
+## Formal definition
+
+An **Objective** is a four-tuple $\mathcal{O} = (o, g, m, \tau)$:
+
+$$\mathcal{O} = (o \in H_t,\; g : \mathrm{Goal},\; m : H_t \to [0,1],\; \tau : \mathrm{Deadline})$$
+
+**The objective is:**
+- **Achieved** when $o \in H^*_\tau$: the target element is fully settled (meaning-settled and execution-settled) at the deadline history
+- **Missed** when $\tau$ passes and $o \notin H^*_\tau$: the deadline history has passed without settlement
+- **On track** when $m(o)$ is on a trajectory that will reach $m(o) = 1$ by $\tau$
+
+## The SMART criteria as well-formedness conditions

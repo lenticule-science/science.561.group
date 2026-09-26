@@ -366,8 +366,6 @@ Invariance)
 3.  **Directed Simplicial Sets**: $\mathrm{Exit}_\infty$ interpreted as
     Grandis’ $d$-spaces.
 
-## Earlier material
-
 #### 5.3 Corollaries
 1. $F$ coherent iff $F^{\vee}$ coherent.
 2. Dualization induces a contravariant equivalence

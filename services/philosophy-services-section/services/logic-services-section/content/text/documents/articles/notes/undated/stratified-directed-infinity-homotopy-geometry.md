@@ -851,8 +851,6 @@ are coherent aspects of one dynamic, stratified field.
       url          = {https://emsenn.net/introducing-existential-stratified-directed-infinity-homotopy-geometry},
     }
 
-## Earlier material
-
 Its internal diagram records how relations cohere to form a stable unit of existence.
 
 Inside this environment, entities are modeled not as atomic points but as coherent diagrams whose homotopy colimits are inhabited.
@@ -1098,9 +1096,6 @@ In this way, the ESDIHG provides not only a static geometry of being but a *moda
 ```text
 (A₁)  Stratified Foundation.  
        Every coherent configuration lives in a stratified directed cohesive ∞-site (𝓧, ▸).
-
-Thus “to exist’’ means *to persist as a coherent fixed-point of the cohesive modality*.
-Ontology becomes a branch of cohesive geometry, not a separate logical layer.
 
 ### 8.5 Final Statement
 ```text

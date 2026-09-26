@@ -51,6 +51,38 @@ Mapping the expectation fully obviously would take more data than that, but the 
 
 ## Part 2
 
+Figure out the differences, where they actually split, and you can see better the shape of what beliefs "feel" right to you, and that sort of self-description is a really good foundation for...
+
+okay I'm hearing how I made a value judgement there with "good foundation"
+
+And I guess this is a weird logic but ultimately the good I'm referencing in my posts is "imagining the shape of the concepts in my head as close to the shape I imagine them as we can mutually manage"
+
+Because, regardless of content, that's what communicating of this sort is for.
+
+But regarding content: the shape of American anarchist, as I imagine it, fits pretty well into the shape of Aquinean Christian, and I don't know how to communicate that to people who imagine their shape as atheist American anarchist, without essentially explaining to them the Goodness of Christ, in their own terms, so they can re-decided on their Christianity, and I'm not comfortable with the risk of aligning people with Church mechanics to achieve self-reflexion.
+
+Which to me shows some internal ambivalence about the value of self-reflexion, which feels like a good place to end this rambling. (In part because it kind of snarkily refutes the claim from another, earlier today, that I can't practice the type of indeterminate knowing I advocate.)
+** Part 3
+For the curious, I like anarchism (or the things I do that I would consider deriving from an anarchistic social/political/economic ideology) because it is fun.
+
+This is because I generally find certain modes of negation, such as contradiction, fun.
+
+Here the introspection had to get real deep, real personal, but also real general, and boiled down to understanding there to be some alignment with the immanent mysteriousness of existence done with certain acts of... binding that spirit to form.
+
+Look, at a certain point of thinking, it's impossible to not talk a bit like a wizard.
+
+But I'm bringing it up because it's actually the difference between my metaphysics and the metaphysics most folk are subjectified into believing: I think existence is fundamentally incoherent nonsense, while Western ideology (coming from Thales of Milesus) thinks existence is fundamentally coherent.
+
+Somewhat amazingly, despite the claims being in opposition, the methodology of proof is identical, leading to a legit dialectic.
+
+The difference then is just, is the Geist immanent (dominant Western belief) or phenomenal (my belief)
+
+(NOTE: I don't mean the same thing as agential realism phenomena, "cuts")
+
+I can't attempt to demonstrate the former without demonstrating the latter, which leads to a functional determination, which is meets the criteria for truth in the former system, which weirdly paradoxically proves it as immanent on its own terms by continually deferring its proof in another's.
+
+(Which is near-on *exactly* how Hegel talked about Geist and the Church talks about Spirit, esp. in OG german)
+
 Here's an example of this:
 
 There are a lot of American anarchists who believe in their anarchism because they think it will make society better, and they believe they should make society better because they believe in civic duty, and they believe in civic duty because they believe enacting society according to an order is better, and...
@@ -135,8 +167,6 @@ But the ways to do that all basically rely on inducing cognitive habits that in 
 
 Which brings me to my, overcoding as sabotage shit.
 
-## Earlier material
-
 :PROPERTIES:
 :ID:       1bee7802-3d9b-4e2c-835a-66bcb6d18635
 :form:     [post to @emsenn@kolektiva.social](../../../../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/post-to-emsenn-kolektiva-social.md)
@@ -146,44 +176,3 @@ Which brings me to my, overcoding as sabotage shit.
 #+title: On the inherited Christianity of liberal subjectivity
 #+date: [2025-08-09 Mon 11:34]
 #+author: emsenn
-
-* Original Post
-** Part 1
-
-** Part 2
-
-Figure out the differences, where they actually split, and you can see better the shape of what beliefs "feel" right to you, and that sort of self-description is a really good foundation for...
-
-okay I'm hearing how I made a value judgement there with "good foundation"
-
-And I guess this is a weird logic but ultimately the good I'm referencing in my posts is "imagining the shape of the concepts in my head as close to the shape I imagine them as we can mutually manage"
-
-Because, regardless of content, that's what communicating of this sort is for.
-
-But regarding content: the shape of American anarchist, as I imagine it, fits pretty well into the shape of Aquinean Christian, and I don't know how to communicate that to people who imagine their shape as atheist American anarchist, without essentially explaining to them the Goodness of Christ, in their own terms, so they can re-decided on their Christianity, and I'm not comfortable with the risk of aligning people with Church mechanics to achieve self-reflexion.
-
-Which to me shows some internal ambivalence about the value of self-reflexion, which feels like a good place to end this rambling. (In part because it kind of snarkily refutes the claim from another, earlier today, that I can't practice the type of indeterminate knowing I advocate.)
-** Part 3
-For the curious, I like anarchism (or the things I do that I would consider deriving from an anarchistic social/political/economic ideology) because it is fun.
-
-This is because I generally find certain modes of negation, such as contradiction, fun.
-
-Here the introspection had to get real deep, real personal, but also real general, and boiled down to understanding there to be some alignment with the immanent mysteriousness of existence done with certain acts of... binding that spirit to form.
-
-Look, at a certain point of thinking, it's impossible to not talk a bit like a wizard.
-
-But I'm bringing it up because it's actually the difference between my metaphysics and the metaphysics most folk are subjectified into believing: I think existence is fundamentally incoherent nonsense, while Western ideology (coming from Thales of Milesus) thinks existence is fundamentally coherent.
-
-Somewhat amazingly, despite the claims being in opposition, the methodology of proof is identical, leading to a legit dialectic.
-
-The difference then is just, is the Geist immanent (dominant Western belief) or phenomenal (my belief)
-
-(NOTE: I don't mean the same thing as agential realism phenomena, "cuts")
-
-I can't attempt to demonstrate the former without demonstrating the latter, which leads to a functional determination, which is meets the criteria for truth in the former system, which weirdly paradoxically proves it as immanent on its own terms by continually deferring its proof in another's.
-
-(Which is near-on *exactly* how Hegel talked about Geist and the Church talks about Spirit, esp. in OG german)
-
-** Responses
-*** Iin Turntide Islands
-Responding to Part 2, someone in [Turntide Islands](../../../../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/documents/articles/notes/undated/turntide-islands-index.md) said:

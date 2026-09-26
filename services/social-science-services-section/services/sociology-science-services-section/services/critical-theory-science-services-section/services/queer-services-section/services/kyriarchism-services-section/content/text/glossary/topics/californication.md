@@ -143,112 +143,6 @@ The system's credibility is sustained by the subject’s willingness to repeat c
 
 \### ****IV. Determination of [Californication](./californication.md) as Worlding System****
 
-\#### 4.1 The Savior-Slave Subject
-
-The liberal subject is produced as both:
-
-- ****Savior****: charged with maintaining coherence at the personal and social level.
-
-- ****Slave****: structurally incapable of transforming the conditions that produce incoherence.
-  This dual role preserves the system’s continuity through deferred transformation.
-
-\#### 4.2 Crisis as Operable Field Condition
-
-Crisis becomes ordinary and enduring.
-[Californication](./californication.md) supplies the techniques by which subjects can operate affectively under persistent contradiction.
-Collapse becomes actionable not through solution, but through internal modulation.
-
-\#### 4.3 Legitimacy via Recursive Coherence
-
-Liberal legitimacy is no longer based on structural resolution, but on the subject’s performance of affective and narrative coherence.
-The political horizon shifts from transformation to endurance.
-The subject does not overcome collapse but continues through it in regulated form.
-
-—
-
-\### ****V. Schematic Summary****
-
-| Structural Function | Californicated Expression                          |
-|---------------------|----------------------------------------------------|
-| Contradiction       | Reframed as personal crisis                        |
-| Resolution          | Displaced onto mood, behavior, aesthetic style     |
-| Governance          | Executed through genre, therapeutic infrastructure |
-| Collapse            | Formatted as narrativized and stylized affect      |
-| Subject             | Feedback-loop coherence manager                    |
-| Legitimacy          | Sustained via coherence, not justice               |
-| Transformation      | Deferred; replaced by recursive self-regulation    |
-
-—
-
-\### ****Determined Definition****
-
-\*\*[Californication](./californication.md)\*\* is a recursive liberal worlding system that operationalizes structural contradiction as affectively manageable content.
-It enables liberal governance to persist under collapse by displacing systemic incoherence into aestheticized and libidinally reinforced personal regulation.
-Crisis becomes governable when it is formatted as mood; liberal legitimacy is maintained when the subject can be seen managing that mood.
-
-## Earlier material
-
-- California serves a place where liberal contradictions are formatted into fantasy
-- Hollywood, suburbia, cul-de-sac, surfing (Charlie don't surf), Silicon Valley, Palo Alto
-  - aesthetic infrastructure of modern liberalism
-- liberal worlding, mode of liberal worlding
-- [Michel Foucault](../../../../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/social-sciences/sociology/content/critical-theory/domains/general/people/michel-foucault.md), productive power
-  - subjection, subjectivation
-  - liberal subject who has libidinal affect toward liberal norms
-- [Antonio Gramsci](../../../../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/social-sciences/sociology/content/critical-theory/domains/general/people/antonio-gramsci.md), organic intellectual naturalizes from social body
-  - californication naturalizes liberal subjectivity as common-sense good life
-- Korean War, Vietnam War, MASH television show
-- [Lauren Berlant](../../../../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/social-sciences/sociology/content/critical-theory/domains/general/people/lauren-berlant.md), genring, genre expectation, anticipation, genre expectation, genre of continuity: narrativizing crisis as the resolution of anxiety (see anxiety, liberal anxiety, neurotic intellectual)
-  - Margaret Wetherell, Arlie Russell Hochschild, affect theory, [feeling rules](../../../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/feeling-rules.md), routinization, leisure, recreation, youth, wellness
-  - californication is inciting subjects into performing contradiction coherently thorugh affect
-- libidinal: drive to inhabit order
-  - realized through aesthetic and affective control
-  - repressive desublimation: pleasure becomes governance: amplifying desiring by producing it into commodity
-  - aesthetic intimacy
-  - temporal displacement
-  - indentificatory subjectivation
-- liberalism has constitutive contradiction(s)
-  - [Lauren Berlant](../../../../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/social-sciences/sociology/content/critical-theory/domains/general/people/lauren-berlant.md), [cruel optimism](../../../../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/social-sciences/sociology/content/critical-theory/domains/queer/terms/cruel-optimism.md), [Foucault](../../../../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/social-sciences/sociology/content/critical-theory/domains/general/people/michel-foucault.md), prohibition to incitement:
-    - formatted confession:
-      - crisis and collapse as vibe and mood
-      - Zen fascism
-- Generation X
-  - irony, detachment
-- Millennial Generation
-  - sincerity, platformal authenticity
-- neurotic platformal intellectual
-- [Fredric Jameson](../../../../../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/fredric-jameson.md), [Herbert Marcuse](../../../../../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/herbert-marcuse.md), [Guy Debord](../../../../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/social-sciences/sociology/content/critical-theory/domains/general/people/guy-debord.md), Richard Barbrook, Andy Cameron, [Stuart Hall](../../../../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/social-sciences/sociology/content/critical-theory/domains/general/people/stuart-hall.md), Nikolas Rose, Luc Boltanski, Ève Chiapello, Shoshana Zuboff, José van Dijck, [Mike Davis](../../../../../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/mike-davis.md), Raymond Williams, [Fred Turner](../../../../../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/fred-turner.md), Eva Illouz
-
-[Californication](../../../../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/social-sciences/sociology/content/critical-theory/domains/queer/schools/cybernetic-postliberalism/terms/californication.md) is a conjunctural process for producing structural crises into authenticity.
-
-\### ****II. Early Formation of [Californication](../../../../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/social-sciences/sociology/content/critical-theory/domains/queer/schools/cybernetic-postliberalism/terms/californication.md)****
-
-Following [Berlant](../../../../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/social-sciences/sociology/content/critical-theory/domains/general/people/lauren-berlant.md), genre structures the field of expectation and [legibility](../../../../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/social-sciences/sociology/content/critical-theory/domains/queer/terms/legibility.md).
-[Californication](../../../../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/social-sciences/sociology/content/critical-theory/domains/queer/schools/cybernetic-postliberalism/terms/californication.md) develops as a dominant genre in which collapse is formatted as personal narrative (e.g., trauma, healing, redemption).
-The genre enables contradiction to be lived as mood, rather than recognized as structure.
-
-\### ****III. Stabilization of [Californication](../../../../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/social-sciences/sociology/content/critical-theory/domains/queer/schools/cybernetic-postliberalism/terms/californication.md) as a Governance Apparatus****
-
-\### ****IV. Determination of [Californication](../../../../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/social-sciences/sociology/content/critical-theory/domains/queer/schools/cybernetic-postliberalism/terms/californication.md) as Worlding System****
-
-Crisis becomes ordinary and enduring.
-[Californication](../../../../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/social-sciences/sociology/content/critical-theory/domains/queer/schools/cybernetic-postliberalism/terms/californication.md) supplies the techniques by which subjects can operate affectively under persistent contradiction.
-Collapse becomes actionable not through solution, but through internal modulation.
-
-## Earlier material
-
-***Californication***
-
-**Californication** is an [ambiguous term](../../../../../../../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/ambiguous-term.md), that is, a term which may [refer](../../../../../../../../../../../../../information-science-services-section/services/communication-science-services-section/services/linguistics-services-section/services/semantics-services-section/content/text/glossary/terms/referring.md) to or [signify](../../../../../../../../../../../../../information-science-services-section/services/communication-science-services-section/services/linguistics-services-section/services/semiotics-services-section/content/text/glossary/terms/signifying.md) more than one [concepts](../../../../../../../../../../../../../information-science-services-section/content/text/glossary/terms/concept.md).
-
-- \[\[id:fa3440f9-9ee1-4133-b0bc-d240808fc1b0\]\[Babble, \[2025-09-02 Tue 20:03\], On Californication\]\]
-
-\### ****III. Stabilization of Californication as a Governance Apparatus****
-
-\### ****IV. Determination of Californication as Worlding System****
-
-## Earlier material
-
 Californication is the process by which liberal governance sustains itself under structural contradiction by formatting crisis as personally manageable affect. The term names what happens when a political system cannot resolve its own contradictions but can teach its subjects to experience those contradictions as personal conditions -- as mood, trauma, growth opportunity, or lifestyle. The subject who meditates through a housing crisis, journals through a pandemic, or microdoses through ecological collapse is not failing to respond politically. They are doing exactly what the system requires: converting structural incoherence into self-regulatory behavior.
 
 No conspiracy is needed. No ideology department coordinates this. The process is cybernetic: feedback loops between bodies, platforms, economy, and affect produce and sustain it without anyone steering.
@@ -301,14 +195,51 @@ On platforms specifically, californication produces the [neurotic platformal int
 
 The full circuit: structural contradiction produces crisis. Crisis is formatted by genre into personal narrative. Feeling rules prescribe the appropriate affect. The subject self-regulates. Platforms distribute the self-regulation as content. The content calibrates other subjects' genres. The system absorbs the deviation and continues. No one is in charge. The feedback is the governance.
 
-:PROPERTIES:
-:ID:       7ae00144-f028-4b25-a533-c64d081de2bd
-:END:
-#+title: californication
-#+date: [2025-08-14 Thu 08:27]
-
 */Californication/*
 
-* Babbles
+\#### 4.1 The Savior-Slave Subject
 
-* AI Slop
+The liberal subject is produced as both:
+
+- ****Savior****: charged with maintaining coherence at the personal and social level.
+
+- ****Slave****: structurally incapable of transforming the conditions that produce incoherence.
+  This dual role preserves the system’s continuity through deferred transformation.
+
+\#### 4.2 Crisis as Operable Field Condition
+
+Crisis becomes ordinary and enduring.
+[Californication](./californication.md) supplies the techniques by which subjects can operate affectively under persistent contradiction.
+Collapse becomes actionable not through solution, but through internal modulation.
+
+**Californication** is an [ambiguous term](../../../../../../../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/ambiguous-term.md), that is, a term which may [refer](../../../../../../../../../../../../../information-science-services-section/services/communication-science-services-section/services/linguistics-services-section/services/semantics-services-section/content/text/glossary/terms/referring.md) to or [signify](../../../../../../../../../../../../../information-science-services-section/services/communication-science-services-section/services/linguistics-services-section/services/semiotics-services-section/content/text/glossary/terms/signifying.md) more than one [concepts](../../../../../../../../../../../../../information-science-services-section/content/text/glossary/terms/concept.md).
+
+- \[\[id:fa3440f9-9ee1-4133-b0bc-d240808fc1b0\]\[Babble, \[2025-09-02 Tue 20:03\], On Californication\]\]
+
+\#### 4.3 Legitimacy via Recursive Coherence
+
+Liberal legitimacy is no longer based on structural resolution, but on the subject’s performance of affective and narrative coherence.
+The political horizon shifts from transformation to endurance.
+The subject does not overcome collapse but continues through it in regulated form.
+
+—
+
+\### ****V. Schematic Summary****
+
+| Structural Function | Californicated Expression                          |
+|---------------------|----------------------------------------------------|
+| Contradiction       | Reframed as personal crisis                        |
+| Resolution          | Displaced onto mood, behavior, aesthetic style     |
+| Governance          | Executed through genre, therapeutic infrastructure |
+| Collapse            | Formatted as narrativized and stylized affect      |
+| Subject             | Feedback-loop coherence manager                    |
+| Legitimacy          | Sustained via coherence, not justice               |
+| Transformation      | Deferred; replaced by recursive self-regulation    |
+
+—
+
+\### ****Determined Definition****
+
+\*\*[Californication](./californication.md)\*\* is a recursive liberal worlding system that operationalizes structural contradiction as affectively manageable content.
+It enables liberal governance to persist under collapse by displacing systemic incoherence into aestheticized and libidinally reinforced personal regulation.
+Crisis becomes governable when it is formatted as mood; liberal legitimacy is maintained when the subject can be seen managing that mood.

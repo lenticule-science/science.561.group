@@ -44,6 +44,12 @@ instances:
   - partial-order-plan
   - pddl-plan
 introduced-by: fikes-nilsson-1971
+id: plan
+defines: Plan
+related: Procedure, Process, Task, Inquiry, Intention, STRIPS, PDDL
+where:
+- $\mathcal{O}$ is the **operation set** — the finite collection of **steps** (intended actions, operations, or tasks) that the plan consists of; each step $o \in \mathcal{O}$ has its own preconditions (what must hold before $o$ executes) and effects (what $o$ changes in the state when it executes)
+- $\prec$ is the **ordering constraint** — a strict partial order on $\mathcal{O}$ specifying which steps must precede which; $o_1 \prec o_2$ means "step $o_1$ must be completed before step $o_2$ begins"; $\prec$ is the plan's causal and temporal skeleton; steps not related by $\prec$ may execute in any order (or concurrently)
 ---
 
 A plan is a structured commitment to a finite set of intended actions, connected by dependencies, aimed at transforming a current situation toward a goal. A plan says what must happen and what must happen before what — but it does not dictate every detail of execution.
@@ -98,37 +104,6 @@ Bratman's philosophical account (*Intention, Plans, and Practical Reason*, 1987)
 - [Planning and Scheduling Survey](../../documents/notes/2026-04-03-note-on-planning-and-scheduling-survey.md) — how planning has been understood across disciplines
 - [Formal Planning Theory](../../documents/notes/2026-04-03-note-on-formal-planning-theory.md) — STRIPS, partial-order plans, PDDL, and the plan refinement preorder
 
-
----
-
-<!-- source: _archive/discipline-intake/business/terms/plan.md -->
-
-## Imported source: _archive/discipline-intake/business/terms/plan.md
-
----
-id: plan
-description: "A Plan is a pair (O, ≺) — a finite set O of intended operations and a partial order ≺ on O encoding temporal and causal dependencies — that, when executed from an initial state satisfying the plan's precondition, transforms that state into a final state satisfying the plan's goal. The defining structure: a plan is a partially ordered set of intended actions structured by causal dependencies, not merely a sequential list. A plan is not a procedure (which specifies a single specification with guard-based execution) and not a process (which is a deterministic state-machine with no intentional structure). A plan's execution may leave open which of several orderings consistent with ≺ is followed — the plan commits only to what must happen before what, not to a total sequence."
-defines: Plan
-related: Procedure, Process, Task, Inquiry, Intention, STRIPS, PDDL
-date-created: 2026-03-20
-date-modified: 2026-03-20
-params:
-  operation-set: relational-universe
-  dependency-order: relational-universe-morphism
-  goal-condition: relational-universe
-output: relational-universe
-ast:
-  partial-order-of-operations:
-    - operation-set
-    - dependency-order:
-        - operation-set
-        - operation-set
-    - causal-structure:
-        - operation-set
-        - dependency-order
----
-
-
 ## Formal definition
 
 A **Plan** is a pair $(\mathcal{O}, \prec)$:
@@ -138,10 +113,6 @@ $$(\mathcal{O} : \mathrm{FinSet}(\mathrm{Operation}),\; \prec \subseteq \mathcal
 together with:
 - A **precondition** $\mathrm{pre} : \mathrm{State} \to \mathrm{Bool}$ specifying the states from which the plan applies
 - A **goal condition** $\mathrm{goal} : \mathrm{State} \to \mathrm{Bool}$ specifying the states the plan aims to achieve
-
-where:
-- $\mathcal{O}$ is the **operation set** — the finite collection of **steps** (intended actions, operations, or tasks) that the plan consists of; each step $o \in \mathcal{O}$ has its own preconditions (what must hold before $o$ executes) and effects (what $o$ changes in the state when it executes)
-- $\prec$ is the **ordering constraint** — a strict partial order on $\mathcal{O}$ specifying which steps must precede which; $o_1 \prec o_2$ means "step $o_1$ must be completed before step $o_2$ begins"; $\prec$ is the plan's causal and temporal skeleton; steps not related by $\prec$ may execute in any order (or concurrently)
 
 The plan $(\mathcal{O}, \prec)$ is **valid** iff: there exists a total ordering $o_1, o_2, \ldots, o_n$ of $\mathcal{O}$ extending $\prec$ such that, starting from any state satisfying $\mathrm{pre}$, sequentially executing $o_1, \ldots, o_n$ produces a state satisfying $\mathrm{goal}$.
 
@@ -222,8 +193,3 @@ PDDL's **action schemas** are parameterized STRIPS operators: $\mathrm{action}(\
 - Whether there is a coalgebraic account of planning — whether a planner is a coalgebra that maps problem states to plan extensions, and whether the planning problem's solution corresponds to a final coalgebra (the complete plan).
 - Whether partial-order plans have a sheaf-theoretic characterization — whether a partial plan is a local section of the "possible plan" presheaf, and whether plan extension (adding steps and causal links) is the gluing of local sections into a global section that covers all open goals.
 - Whether Bratman's reconsideration norm (defeasible but not arbitrary plan abandonment) can be formalized as a refinement relation on plans — whether a revised plan is a refinement of the original in some appropriate sense, and whether the conditions for legitimate reconsideration correspond to the conditions for refinement.
-
-## Earlier material
-
-```yaml
----

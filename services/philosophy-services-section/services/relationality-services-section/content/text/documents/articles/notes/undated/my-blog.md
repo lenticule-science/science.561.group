@@ -47,8 +47,6 @@ This blog is a babble catalog of informal public posts and sits within the broad
 - 2025-07-12 — Complaining about wildfire smoke
 - 2023-12-09 — On hospicing humanity as a mechanism of total liberation
 
-## Earlier material
-
 This is my [blog](../../../../../../../../../engineering-science-services-section/services/computer-science-services-section/content/text/glossary/terms/blog--002222.md), which here stands for "babble catalog": a [catalog](../../../../../../services/agency-services-section/content/text/documents/articles/notes/2025/07/28/2025-07-28-classification-terms-catalogs-catalog.md) of babbles.
 
 This blog may be considered one of the most informal, yet still public, parts of [emsean thought](../../../../../../services/agency-services-section/content/text/documents/articles/notes/2025/09/26/2025-09-26-systems-library-relational-analysis-concepts-emsean-thought-emsean-thought.md).

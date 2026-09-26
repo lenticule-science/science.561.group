@@ -33,6 +33,9 @@ resolves-to: process
 contrasts-with: process, inquiry, derivation
 composes-into: workflow
 instance-of: work
+id: procedure
+defines: Procedure
+date-modified: 2026-03-19
 ---
 A procedure is work whose meaning is settled but whose execution path is not. You know what you are trying to produce. You do not know which steps you will take to produce it, because that depends on conditions you evaluate as you go.
 
@@ -55,32 +58,10 @@ The four types of work:
 
 A procedure sits in the meaning-settled, execution-open quadrant. Resolving the execution questions (which branch?) under specific conditions collapses it to a process.
 
+## Related
 
----
-
-<!-- source: _archive/discipline-intake/business/terms/procedure.md -->
-
-## Imported source: _archive/discipline-intake/business/terms/procedure.md
-
----
-id: procedure
-description: "A Procedure is an operation whose meaning is settled but whose execution path is not: it branches on conditions to determine which named output to produce. Corresponds to Fix(σ)∖H* in the nuclear quartet."
-defines: Procedure
-extends: FlatfileAgentResourceSystemSkillfulWork
-date-modified: 2026-03-19
-params:
-  output-type: relational-universe
-  branching-condition: relational-universe-morphism
-output: relational-universe
-ast:
-  meaning-settled-element:
-    - relational-history-saturating-nucleus:
-        - output-type
-    - branching-condition:
-        - output-type
----
-
-# Procedure
+- [Derivation](./derivation.md) — execution-closed, meaning-open: applies fixed inference rules; a Procedure applies conditional routing.
+- [FlatfileAgentResourceSystemSkillfulWork](../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/services/agent-computer-platform-system-engineering-services-section/services/flatfile-agent-resource-system-engineering-services-section/content/text/glossary/terms/flatfile-agent-resource-system-skillful-work.md) — all four positions partition the nuclear quartet.
 
 ## Formal definition
 
@@ -119,11 +100,6 @@ It reads diagnostic state, evaluates criteria, and routes accordingly.
 The execution path is not fixed before it runs — it is determined during the run.
 
 ## The other three positions
-
-- [Process](./process.md) — both closures applied: the result of closing all branches of a Procedure into fixed execution paths.
-- [Derivation](./derivation.md) — execution-closed, meaning-open: applies fixed inference rules; a Procedure applies conditional routing.
-- [Inquiry](./inquiry.md) — neither closure applied: a Procedure with settled meaning is further along than an Inquiry.
-- [FlatfileAgentResourceSystemSkillfulWork](../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/services/agent-computer-platform-system-engineering-services-section/services/flatfile-agent-resource-system-engineering-services-section/content/text/glossary/terms/flatfile-agent-resource-system-skillful-work.md) — all four positions partition the nuclear quartet.
 
 ## Open questions
 

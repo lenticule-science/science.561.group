@@ -131,8 +131,6 @@ The Tolstoyan tragic arc is formally the **absence of a commuting post-fixed-poi
 - **Reproducible Paracosm Specification** (RPS v0.1): minimal constructive configuration and corollary. :contentReference$$oaicite:43$${index=43} :contentReference$$oaicite:44$${index=44}
 - Classical sources: Lawvere (Functorial Semantics), Ehresmann (Sketches), Goguen–Burstall (Institutions), Lurie (Higher Topos Theory) $$as cited within RPM$$. :contentReference$$oaicite:45$${index=45}
 
-## Earlier material
-
 1.  [Abstract](#org10e486b)
 2.  [1. Introduction](#orgc2402a3)
 3.  [2. Preliminaries](#orga4bb0fe)
@@ -211,46 +209,6 @@ Let \(S_{\text{AK}}^\ast\) be the Tolstoyan sub-sketch with modalities \(\Box_K,
 Let $S_{\text{AK}}^\ast$ be the Tolstoyan sub-sketch with modalities $\Box_K,\Box_M,\Box_D$ and compact constraints $\Theta$ as in §§3–4.  Suppose the /public sanction/ fact $\mathsf{AffairPublic}$ and /custody duty/ $\mathsf{CareChild}$ persist in $b\cup m$, while desire remains anchored at $d\vdash \mathsf{Together}(\mathsf{Anna},\mathsf{Vronsky})$.  Then there exists no coalgebra map $\mu:F(x)\to x$ that is a post-fixed point $\mu\circ F(\mu)=\mu$ and commutes with the RP equivalences $J,N,O$.  Consequently, the normalization system $N$ reduces $x$ to the unique absorbing normal form $\bot$ (the collapse outcome), and the resulting run defines the same world in $\mathsf{RP}(S_{\text{AK}}^\ast)$.
 \end{theorem}
 
-## Earlier material
-
-- [1. Abstract](#org0a2c336)
-
-- [2. 1. Introduction](#org8ee9bca)
-
-- [3. 2. Preliminaries](#orga910525)
-
-[3.1. 2.1. RP background](#org525f653)
-
-- [3.2. 2.2. RPS minimal configuration](#orgffd955d)
-
-[4.1. 3.1. Objects, morphisms, cones](#org816a510)
-
-- [4.2. 3.2. Modalities](#orgb7f98d2)
-
-- [4.3. 3.3. Character state-space](#orgaed2928)
-
-- [4.4. 3.4. Compact constraint set \(\Theta\)](#orgad9f9fb)
-
-- [5. 4. Dynamics and observation](#org3bff284)
-
 [5.1. 4.1. Normalization system \(N\) (terminating, locally confluent)](#orgfc39040)
 
-- [5.2. 4.2. Observation functor \(O\) (reader bisimulation)](#org8bbc9c0)
-
 [6.1. 5.1. Statement](#org6cba3cb)
-
-- [6.2. 5.2. Proof (sketch)](#org8fac277)
-
-- [6.3. 5.3. Corollaries](#orgd57bf83)
-
-- [7. 6. Verification checklist (RPS v0.1)](#org7f2c5b8)
-
-- [8. 7. Consequences and analytic uses](#org9aa066f)
-
-- [9. 8. Related work](#orge7e3f06)
-
-- [10. 9. Conclusion](#orgfcfa005)
-
-- [11. References](#org3b3d172)
-
-- [12. Backlinks](#org45b7d98)

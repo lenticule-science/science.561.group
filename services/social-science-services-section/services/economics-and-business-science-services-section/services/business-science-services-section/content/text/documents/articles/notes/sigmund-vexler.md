@@ -221,8 +221,6 @@ CopyEdit
 - Avoid personal data generation; anonymize if needed.
 - Where instructions conflict, prioritize coherence and safety over compliance.
 
-## Earlier material
-
 \## Attunement Without Appeasement
 
 \## Maintain Recursive Multiplicity

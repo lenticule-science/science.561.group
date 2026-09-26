@@ -61,7 +61,39 @@ This skill covers conceptual understanding of airway assessment and the logic of
 
 You have this skill if you can: (1) given a clinical scenario with respiratory distress, distinguish whether the primary problem is oxygenation or ventilation and explain why; (2) localize obstruction as upper or lower airway based on clinical signs; (3) select an appropriate intervention from the staged escalation framework and justify why you chose that level; and (4) describe what you would check and anticipate in the first five minutes after intubation.
 
-## Earlier material
+## Related
+
+- [Introduction to the Human Body](../../notes/introduction-to-the-human-body.md) — the introductory lesson
+- [The Nervous System](../../../../../../services/human-body-services-section/content/text/documents/articles/notes/the-nervous-system.md) — neural integration and autonomic regulation
+- [The Cardiovascular System](../../../../../../services/human-body-services-section/content/text/documents/articles/notes/the-cardiovascular-system.md) — transport and circulation
+- [The Respiratory System](../../../../../../services/human-body-services-section/content/text/documents/articles/notes/the-respiratory-system.md) — gas exchange
+- [The Musculoskeletal System](../../../../../../services/human-body-services-section/content/text/documents/articles/notes/the-musculoskeletal-system.md) — structure and movement
+- [The Digestive System](../../../../../../services/human-body-services-section/content/text/documents/articles/notes/the-digestive-system.md) — nutrition, immunity, and the gut-brain axis
+- [The Immune System](../../../../../../services/human-body-services-section/content/text/documents/articles/notes/the-immune-system.md) — defense and inflammation
+- [Zang-Fu (Organ-Function Systems)](../../../../../../services/traditional-chinese-medicine-services-section/content/text/glossary/terms/zang-fu.md) — TCM&rsquo;s functional alternative to anatomical organ systems
+- [Introduction to Pain Science](../../notes/introduction-to-pain-science.md) — the introductory lesson
+- [Pain Neurophysiology](../../../../../../services/pain-services-section/content/text/documents/articles/notes/pain-neurophysiology.md) — the full neural mechanism
+- [The Biopsychosocial Model of Pain](../../../../../../services/pain-services-section/content/text/documents/articles/notes/biopsychosocial-model.md) — the comprehensive framework
+- [Chronic Pain and Disability Justice](../../../../../../services/pain-services-section/content/text/documents/articles/notes/chronic-pain-and-disability-justice.md) — structural conditions and pain
+- [Central Sensitization](../../../../../../services/pain-services-section/content/text/glossary/terms/central-sensitization.md) — when the nervous system itself changes
+- [The Nervous System](../../../../../../services/human-body-services-section/content/text/documents/articles/notes/the-nervous-system.md) — foundational neuroanatomy
+- [Introduction to Somatic Awareness](../../notes/introduction-to-somatic-awareness.md) — the introductory lesson
+- [Somatic Awareness](../../../../../../services/somatics-services-section/content/text/glossary/terms/somatic-awareness.md) — the full concept
+- [Interoception](../../../../../../services/somatics-services-section/content/text/glossary/terms/interoception.md) — the body&rsquo;s internal sense
+- [Proprioception](../../../../../../services/somatics-services-section/content/text/glossary/terms/proprioception.md) — the sense of position and movement
+- [Pandiculation](../../../../../../services/somatics-services-section/content/text/glossary/terms/pandiculation.md) — the somatic alternative to stretching
+- [Clinical Somatic Education](../../../../../../services/somatics-services-section/content/text/documents/articles/notes/clinical-somatic-education.md) — Hanna&rsquo;s clinical method
+- [Introduction to Pharmacology](../../notes/introduction-to-pharmacology.md) — the introductory lesson
+- [How Drugs Work](../../../../../../services/pharmacology-services-section/content/text/documents/articles/notes/how-drugs-work.md) — receptors, enzymes, ion channels
+- [Dose-Response Relationships](../../../../../../services/pharmacology-services-section/content/text/documents/articles/notes/dose-response-relationships.md) — potency, efficacy, therapeutic window
+- [Drug Metabolism and Clearance](../../../../../../services/pharmacology-services-section/content/text/documents/articles/notes/drug-metabolism-and-clearance.md) — CYP enzymes, genetic variation
+- [Pharmacology and Harm Reduction](../../../../../../services/pharmacology-services-section/content/text/documents/articles/notes/pharmacology-and-harm-reduction.md) — applied pharmacology as survival infrastructure
+- [Harm Reduction](../../../../../../services/public-health-services-section/content/text/glossary/terms/harm-reduction.md) — the communal practice that pharmacological literacy supports
+- [Introduction to Psychological Defenses](../../notes/introduction-to-psychological-defenses.md) — the introductory lesson
+- [Psychopathology](../../../../../../services/psychology-services-section/content/text/documents/articles/notes/psychopathology.md) — defense mechanisms in the context of psychological suffering
+- [Psychotherapy](../../../../../../services/psychology-services-section/content/text/documents/articles/notes/psychotherapy.md) — how therapy works with defenses
+- [Theoretical Traditions](../../../../../../services/psychology-services-section/content/text/documents/articles/notes/theoretical-traditions.md) — the psychodynamic tradition that developed these concepts
+- [Somatic Awareness](../../../../../../services/somatics-services-section/content/text/glossary/terms/somatic-awareness.md) — the somatic dimension of defensive patterns
 
 Learn to trace how dysfunction propagates across the body's organ systems — understanding the body as an integrated, self-organizing system rather than a collection of independent parts.
 
@@ -80,22 +112,6 @@ Learn to trace how dysfunction propagates across the body's organ systems — un
 - No formal prerequisites. The introductory curriculum provides the conceptual foundation.
 
 - Familiarity with the foundational terms (cell, tissue, organ, neuron, receptor, homeostasis, inflammation) is helpful and can be acquired through the human body module&rsquo;s term files.
-
-- [Introduction to the Human Body](../../notes/introduction-to-the-human-body.md) — the introductory lesson
-
-- [The Nervous System](../../../../../../services/human-body-services-section/content/text/documents/articles/notes/the-nervous-system.md) — neural integration and autonomic regulation
-
-- [The Cardiovascular System](../../../../../../services/human-body-services-section/content/text/documents/articles/notes/the-cardiovascular-system.md) — transport and circulation
-
-- [The Respiratory System](../../../../../../services/human-body-services-section/content/text/documents/articles/notes/the-respiratory-system.md) — gas exchange
-
-- [The Musculoskeletal System](../../../../../../services/human-body-services-section/content/text/documents/articles/notes/the-musculoskeletal-system.md) — structure and movement
-
-- [The Digestive System](../../../../../../services/human-body-services-section/content/text/documents/articles/notes/the-digestive-system.md) — nutrition, immunity, and the gut-brain axis
-
-- [The Immune System](../../../../../../services/human-body-services-section/content/text/documents/articles/notes/the-immune-system.md) — defense and inflammation
-
-- [Zang-Fu (Organ-Function Systems)](../../../../../../services/traditional-chinese-medicine-services-section/content/text/glossary/terms/zang-fu.md) — TCM&rsquo;s functional alternative to anatomical organ systems
 
 This skill covers conceptual understanding of organ system integration. It does not cover:
 
@@ -122,18 +138,6 @@ Learn the biopsychosocial model of pain — how biological, psychological, and s
 - Familiarity with basic neurophysiology is helpful but not required — the introductory curriculum covers the necessary foundations.
 
 - No clinical experience required. The skill is designed for anyone encountering pain science for the first time.
-
-- [Introduction to Pain Science](../../notes/introduction-to-pain-science.md) — the introductory lesson
-
-- [Pain Neurophysiology](../../../../../../services/pain-services-section/content/text/documents/articles/notes/pain-neurophysiology.md) — the full neural mechanism
-
-- [The Biopsychosocial Model of Pain](../../../../../../services/pain-services-section/content/text/documents/articles/notes/biopsychosocial-model.md) — the comprehensive framework
-
-- [Chronic Pain and Disability Justice](../../../../../../services/pain-services-section/content/text/documents/articles/notes/chronic-pain-and-disability-justice.md) — structural conditions and pain
-
-- [Central Sensitization](../../../../../../services/pain-services-section/content/text/glossary/terms/central-sensitization.md) — when the nervous system itself changes
-
-- [The Nervous System](../../../../../../services/human-body-services-section/content/text/documents/articles/notes/the-nervous-system.md) — foundational neuroanatomy
 
 This skill covers understanding and applying the biopsychosocial model as an analytical framework for pain. It does not cover:
 
@@ -163,20 +167,6 @@ Learn to recognize somatic patterns — habitual muscular tension, sensory-motor
 
 - Personal experience of attending to bodily sensation (even briefly, as in the opening exercise of the curriculum) is helpful for grounding the concepts experientially.
 
-- [Introduction to Somatic Awareness](../../notes/introduction-to-somatic-awareness.md) — the introductory lesson
-
-- [Somatic Awareness](../../../../../../services/somatics-services-section/content/text/glossary/terms/somatic-awareness.md) — the full concept
-
-- [Interoception](../../../../../../services/somatics-services-section/content/text/glossary/terms/interoception.md) — the body&rsquo;s internal sense
-
-- [Proprioception](../../../../../../services/somatics-services-section/content/text/glossary/terms/proprioception.md) — the sense of position and movement
-
-- [Pandiculation](../../../../../../services/somatics-services-section/content/text/glossary/terms/pandiculation.md) — the somatic alternative to stretching
-
-- [Clinical Somatic Education](../../../../../../services/somatics-services-section/content/text/documents/articles/notes/clinical-somatic-education.md) — Hanna&rsquo;s clinical method
-
-- [Somatic Experiencing](../../research/2026/07/31/lenticule-import/library/applied-sciences/concepts/somatics/somatic-experiencing.md) — Levine&rsquo;s trauma resolution approach
-
 This skill covers recognition and conceptual understanding of somatic patterns. It does not cover:
 
 - Performing somatic techniques (pandiculation, Feldenkrais lessons, SE sessions) — these require supervised practice
@@ -202,18 +192,6 @@ Learn the pharmacological concepts — receptor dynamics, pharmacokinetics, ther
 - Articulate how pharmacological knowledge functions as harm reduction infrastructure — why understanding half-life, potency, and bioavailability makes rational risk management possible and why withholding this knowledge costs lives.
 
 - Familiarity with basic cell biology ([cell](../../../../../../../../content/text/glossary/terms/cell.md), [receptor](../../../../../../services/human-body-services-section/content/text/glossary/terms/receptor.md)) is helpful but not required.
-
-- [Introduction to Pharmacology](../../notes/introduction-to-pharmacology.md) — the introductory lesson
-
-- [How Drugs Work](../../../../../../services/pharmacology-services-section/content/text/documents/articles/notes/how-drugs-work.md) — receptors, enzymes, ion channels
-
-- [Dose-Response Relationships](../../../../../../services/pharmacology-services-section/content/text/documents/articles/notes/dose-response-relationships.md) — potency, efficacy, therapeutic window
-
-- [Drug Metabolism and Clearance](../../../../../../services/pharmacology-services-section/content/text/documents/articles/notes/drug-metabolism-and-clearance.md) — CYP enzymes, genetic variation
-
-- [Pharmacology and Harm Reduction](../../../../../../services/pharmacology-services-section/content/text/documents/articles/notes/pharmacology-and-harm-reduction.md) — applied pharmacology as survival infrastructure
-
-- [Harm Reduction](../../../../../../services/public-health-services-section/content/text/glossary/terms/harm-reduction.md) — the communal practice that pharmacological literacy supports
 
 This skill covers pharmacological literacy — the conceptual foundation for understanding how drugs interact with living systems. It does not cover:
 
@@ -242,18 +220,6 @@ Learn to identify psychological defense mechanisms — automatic processes that 
 - Apply the concept of defenses to understand why symptoms sometimes serve protective functions — and why simply removing a symptom without understanding its defensive function may produce worse outcomes.
 
 - Familiarity with [somatic awareness](../../../../../../services/somatics-services-section/content/text/glossary/terms/somatic-awareness.md) concepts will enrich understanding of how defenses are embodied but is not required.
-
-- [Introduction to Psychological Defenses](../../notes/introduction-to-psychological-defenses.md) — the introductory lesson
-
-- [Psychopathology](../../../../../../services/psychology-services-section/content/text/documents/articles/notes/psychopathology.md) — defense mechanisms in the context of psychological suffering
-
-- [Psychotherapy](../../../../../../services/psychology-services-section/content/text/documents/articles/notes/psychotherapy.md) — how therapy works with defenses
-
-- [Theoretical Traditions](../../../../../../services/psychology-services-section/content/text/documents/articles/notes/theoretical-traditions.md) — the psychodynamic tradition that developed these concepts
-
-- [Somatic Awareness](../../../../../../services/somatics-services-section/content/text/glossary/terms/somatic-awareness.md) — the somatic dimension of defensive patterns
-
-- [Somatic Experiencing](../../research/2026/07/31/lenticule-import/library/applied-sciences/concepts/somatics/somatic-experiencing.md) — working with the body&rsquo;s defensive responses
 
 This skill covers recognition and conceptual understanding of defense mechanisms. It does not cover:
 
