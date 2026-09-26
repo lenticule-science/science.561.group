@@ -84,6 +84,8 @@ theorem four_depths (d : ClosureRegimeData) :
         (d.scottContinuous = false ∧ d.countableCofinality = false)) :=
   four_regime_dichotomy d
 
+/-- The four depths are exactly four (a bijection with the four-corner object). -/
+def depth_is_four : Bij LearningDepth Corner := regime_is_four_corner
 
 end Reading
 end Obsmetrologia

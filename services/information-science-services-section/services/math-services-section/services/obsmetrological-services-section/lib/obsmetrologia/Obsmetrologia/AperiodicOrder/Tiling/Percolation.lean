@@ -1,6 +1,7 @@
 import Obsmetrologia.AperiodicOrder.Tiling.MatterTopology
 import Obsmetrologia.Language.Positing.D4Gauge
 import Obsmetrologia.Cohomology.LandauerEntropy
+import Obsmetrologia.Closure.Regime
 
 /-!
 # Lenticular percolation: condensate density crosses into conduction/load-bearing topology
@@ -364,6 +365,48 @@ theorem fundamental_cycle_one_bit :
     Landauer.landauerBits fundamentalNerve = 1
       ∧ (∀ a : Reading, (fundamentalCycle a).countP (fun c => c.isInconsistency) = 1) :=
   ⟨fundamentalNerve_h1, one_failure_per_cycle⟩
+
+/-! ## The fundamental cycle, read on the regimes
+
+`spin` and `regimeCornerBij` (`Closure.Regime`) were built independently, in different modules,
+for different reasons -- one for percolation's load-bearing cycle, the other for the
+four-regime/four-corner conflation. Composed, they say something neither says alone. -/
+
+/-- **The fundamental cycle, transported onto the regimes.** `spin` read through the
+`ClosureRegime ≃ Articulating.Corner` bijection: one turn of percolation's load-bearing rotation,
+relabelled as a map on the four closure-ordinal regimes. -/
+def regimeSpin (r : ClosureRegime) : ClosureRegime :=
+  ClosureRegime.ofCorner (spin (ClosureRegime.toCorner r))
+
+/-- **The transported cycle is not κ-height order.** One `regimeSpin` sends strict to scott, scott
+to aperiodic -- skipping transfinite-bounded entirely -- aperiodic to transfinite-bounded, and
+transfinite-bounded back to strict. The naive "climb `κ`" order (strict, scott,
+transfinite-bounded, aperiodic) is a different cycle from the one `spin` actually generates. -/
+theorem regimeSpin_cycle :
+    regimeSpin ClosureRegime.strict = ClosureRegime.scott
+      ∧ regimeSpin ClosureRegime.scott = ClosureRegime.aperiodic
+      ∧ regimeSpin ClosureRegime.aperiodic = ClosureRegime.transfiniteBounded
+      ∧ regimeSpin ClosureRegime.transfiniteBounded = ClosureRegime.strict := by
+  refine ⟨?_, ?_, ?_, ?_⟩ <;> rfl
+
+/-- **The regime spin closes after four turns**, inherited directly from `spin_four` through the
+bijection. -/
+theorem regimeSpin_four (r : ClosureRegime) :
+    regimeSpin (regimeSpin (regimeSpin (regimeSpin r))) = r := by
+  cases r <;> rfl
+
+/-- **Two spins is the extremes-with-extremes, middles-with-middles involution.** Squaring the
+4-cycle pairs strict with aperiodic -- the two regimes `Closure.Regime`'s own bijection already
+reads as the bilattice's extremes, `⊥ₖ` and the fully-alive `⊤ₖ` -- and pairs scott with
+transfinite-bounded, the two -infinite-but-not-extremal regimes. This is the same
+order-exchanging symmetry (`spin_exchanges_orders`) that generates the fundamental cycle in the
+first place, not a new one chosen to make the pairing come out this way. -/
+theorem regimeSpin_regimeSpin :
+    regimeSpin (regimeSpin ClosureRegime.strict) = ClosureRegime.aperiodic
+      ∧ regimeSpin (regimeSpin ClosureRegime.aperiodic) = ClosureRegime.strict
+      ∧ regimeSpin (regimeSpin ClosureRegime.scott) = ClosureRegime.transfiniteBounded
+      ∧ regimeSpin (regimeSpin ClosureRegime.transfiniteBounded) = ClosureRegime.scott := by
+  refine ⟨?_, ?_, ?_, ?_⟩ <;> rfl
 
 end AperiodicOrder.Tiling
 end Obsmetrologia

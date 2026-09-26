@@ -88,21 +88,35 @@ example (d : ClosureRegimeData) :
 This is the closure-phase version of "four" as a real partition. The regimes are
 jointly exhaustive and each one has its own generated condition.
 
-## Each Regime Is The Regime Of One Stage
+## The Regime Is Another Four-Corner Reading
 
-The regimes pair with the four stages of the language spine: articulating is
-aperiodic, predicating transfinite-bounded, positing Scott-continuous, settling
-strict-finite. Along the spine the regime descends, each stage's closure tamer
-than the one before it.
+The regimes are transported to the articulation corner object:
 
-{docstring Obsmetrologia.Stage}
+{docstring Obsmetrologia.ClosureRegime.toCorner}
 
-{docstring Obsmetrologia.Stage.regime}
+{docstring Obsmetrologia.ClosureRegime.ofCorner}
 
-{docstring Obsmetrologia.regimeStageBij}
+The round-trip theorem is:
 
-A regime is the character of one stage's closure; a corner of the four-valued
-reading is a value inside a stage. The two fours are different objects.
+{docstring Obsmetrologia.regime_is_four_corner}
+
+Checked:
+
+```lean
+example :
+    (forall r : ClosureRegime,
+        ClosureRegime.ofCorner
+          (ClosureRegime.toCorner r) = r)
+    /\ (forall c : Articulating.Corner,
+        ClosureRegime.toCorner
+          (ClosureRegime.ofCorner c) = c) :=
+  regime_is_four_corner
+```
+
+This is not license to identify every four-point object with every other
+four-point object. It is a specific transport: strict, Scott,
+transfinite-bounded, and aperiodic are pinned to specific corners by explicit
+maps.
 
 ## The Spine Is Strict
 
@@ -123,9 +137,6 @@ Checked:
 ```lean
 example : classify spineData = ClosureRegime.strict :=
   spine_is_strict
-
-example : classify spineData = Stage.regime Stage.settling :=
-  spine_settles_in_settling_regime
 
 example (f : Reading -> Reading)
     (hf : forall a, Reading.KLE a (f a))
