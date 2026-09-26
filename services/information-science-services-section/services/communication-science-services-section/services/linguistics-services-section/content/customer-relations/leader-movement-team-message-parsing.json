@@ -19,6 +19,6 @@
   "semanticWebPath": {
     "current": ["digest-bound JSON", "ActivityStreams boundary activities", "append-only EAVT-compatible evidence"],
     "next": ["explicit JSON-LD context", "RDF projection", "priced external boundary crossing with receipt"],
-    "constraint": "an external product claim requires witnessed demand, a settled price, licensing authority, and an external contract"
+    "sellingPath": "price it, license the package, list it, and sell it to the first external buyer; the sale is the witnessed demand"
   }
 }

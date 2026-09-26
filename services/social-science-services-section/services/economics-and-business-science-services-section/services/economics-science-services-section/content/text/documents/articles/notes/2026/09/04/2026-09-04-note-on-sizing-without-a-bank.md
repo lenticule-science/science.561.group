@@ -25,17 +25,16 @@ keywords:
 
 # Sizing without a bank
 
-Owner-stated on the evening of 2026-09-04, in the owner's shorthand: the house's
-finance code says "Kelly" a lot, and that is good in some ways, but the work has
-to generalize to moves, proof trees, strategies, and arenas, because modern
+The house's finance code uses Kelly sizing, but the method must generalize to
+moves, proof trees, strategies, and arenas, because modern
 theory shows growth-optimal sizing is not available to an actor genuinely at
 risk of ruin; and settler colonialism makes infinite growth look real (replenish
 from the bank), which biases business practice toward a safety norm that is not
 ours. The question underneath: how does a small group of poor, disabled,
 struggling people turn every bit of capital they can get their hands on, and do
 not need to spend at once, into as much liquid capital as they can, in the best
-ways they can. Every claim below is marked as the owner's ruling, a corpus
-carrier, an outside source already on disk, or this note's reading.
+ways they can. The claims below distinguish corpus material, outside sources
+already on disk, and this note's readings.
 
 ## 1. What Kelly is, and what it quietly assumes
 
@@ -81,7 +80,7 @@ many parallel trajectories average at one moment. Wealth growth generally lacks
 ergodicity, so the two differ, and expected-value reasoning is ensemble
 reasoning.
 
-This note's reading of the owner's point about settlerism, grounded in the
+This reading of settlerism is grounded in the
 carriers the corpus already holds
 (`2026-08-16-note-on-561-group-as-watersheds.md`: flatness as the settler
 geometry, "boundless, unpressured, settler-infinite";
@@ -105,8 +104,7 @@ costs. For a subfair arena with a barrier, the same mathematics says timid play
 converges to certain ruin, and the goal-probability-maximizing policy is bold:
 concentrate, and take the shot once. The safety norm is therefore not
 conservative for the poor. It is the policy that guarantees the barrier is
-reached, slowly. This is the owner's "biases business practice toward safety"
-stated as a theorem about who has a bank.
+reached, slowly. This means business practice without access to a bank should bias toward bold play: find the superfair bets, concentrate on them, and take the shot.
 
 The corpus's own correction of the same error, already ruled: the 2026-09-01
 growth-policy note ("Poor people don't need to risk ruin." Kelly protects a
@@ -138,8 +136,7 @@ This note's reading, in those terms:
   absorbing barrier and its own settlement: the risk stake of the 2026-09-01
   note is a sleeve whose barrier is its own zero, and whose zero is *not*
   absorbing for the arena above it.
-- **The org's capital is a tree of sleeves**, and that tree is the proof tree
-  the owner asked for: the root's barrier is survival capital, walled off; each
+- **The org's capital is a tree of sleeves**, and that tree is the proof tree: the root's barrier is survival capital, walled off; each
   child sleeve is a subproof whose failure discharges into its parent as a
   bounded loss, never as absorption. Bold or timid is decided per sleeve, by
   that sleeve's fairness sign and goal (Dubins-Savage), never once for the whole.
@@ -201,8 +198,7 @@ pool as a sleeve. The house gap is the sleeve tree and the two-witness books.
 
 ## 5. The rising barrier
 
-The owner named the tide as relevant literally: climate breakdown raises the
-water. In the arena reading, the absorbing barrier is not a constant. Survival
+Climate breakdown raises the water. In the arena reading, the absorbing barrier is not a constant. Survival
 capital is a function of time and place that rises with hazard (a storm, a heat
 month, an eviction wave), and a sizing rule that reads a fixed barrier is wrong
 in the direction that kills. Every sleeve therefore carries its barrier as a
@@ -233,6 +229,6 @@ term). For the people the group serves:
    internal-market peg ladder) as leaf sleeves of the tree, each with its own
    barrier and each booking fills as rows, so the tree can be read.
 
-The size of today's balances gates none of this (owner-ruled 2026-09-04): the
+The size of today's balances gates none of this (specified 2026-09-04): the
 tree is built so it holds when capital arrives, and a pool of small sleeves is
 the one instrument that is larger for being shared.

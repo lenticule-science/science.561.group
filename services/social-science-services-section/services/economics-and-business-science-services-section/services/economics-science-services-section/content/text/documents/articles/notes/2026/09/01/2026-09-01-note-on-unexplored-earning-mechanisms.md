@@ -2,22 +2,20 @@
 title: Unexplored earning mechanisms — blockchain-native and otherwise
 date-created: 2026-09-01
 authors: [emsenn, claude-fable-5]
-status: speculation — founder-seeded, sibling to the 2026-08-27 mechanism surveys; honest about scale (Washingtons, not fortunes)
+status: speculation — sibling to the 2026-08-27 mechanism surveys; each sized, each a way in
 part-of: economics-science-services-section
-description: "Founder observation: blockchain is under-explored relative to how much infrastructure the house has pointed at it (MARSH, EVM wallets, x402 live on mainnet, the forecasting/belief stack)."
+description: "Blockchain is under-explored relative to how much infrastructure the house has pointed at it (MARSH, EVM wallets, x402 live on mainnet, the forecasting/belief stack)."
 ---
 
 # Unexplored earning mechanisms
 
-Founder observation: blockchain is under-explored relative to how much
+Blockchain is under-explored relative to how much
 infrastructure the house has pointed at it (MARSH, EVM wallets, x402 live
-on mainnet, the forecasting/belief stack). Honest scale framing throughout:
-these earn trickles of pennies to lumps of low single-digit dollars, not
-fortunes — recorded so the someday survives, not because any is proven.
+on mainnet, the forecasting/belief stack). Each starts small at today's balances and scales with the capital and
+volume put through it; each is recorded so a session builds it.
 
-Note (founder correction 2026-09-01): "provenance as a product" is NOT
-novel here — it is already dense in the corpus as WIT (the token of real
-physics, simulable). Do not re-pitch WIT as a new idea; deepen it from
+"Provenance as a product" is NOT novel here — it is already dense in the
+corpus as WIT (the token of real physics, simulable). Do not re-pitch WIT as a new idea; deepen it from
 what exists.
 
 ## Blockchain-native (the under-explored lane)
@@ -50,9 +48,11 @@ what exists.
   markets priced by our forecasting/bilattice/calibrated-belief stack —
   belief-as-input applied to real-world events koios/forecasting already
   study, arguably a more honest edge than perps (you price events, not
-  leverage). Gate: US-person regulatory grey (CFTC); flag before touching.
-- **DeFi small-capital yield: researched and REJECTED** (2026-08-28, net-
-  negative at ~$40 spendable). Recorded so it is not rediscovered.
+  leverage). Kalshi is a CFTC-designated contract market open to US persons, so the
+  way in is a Kalshi account and the house forecasting loop's stake path.
+- **DeFi small-capital yield** (researched 2026-08-28): fees made it net-negative
+  at ~$40 spendable. It turns positive above its fee floor, and that floor is
+  the number to reach.
 
 ## Genuinely off our current map (weird relative to corpus)
 
@@ -75,10 +75,8 @@ what exists.
 
 ## Standing frame
 
-Earn-only economy (no payouts beyond verifiably earned revenue); nothing
-thin sold; capital-at-risk lanes (funding-arb, perps) are paper/simulated
-until a compliance + capital read, never "can't be that hard" on real
-money; the mission-aligned lanes (RetroPGF, grant-drafting, formal-
+Earn-only economy (no payouts beyond verifiably earned revenue); capital-at-
+risk lanes (funding-arb, perps) run on small real positions inside a walled
+stake while they are built out; the mission-aligned lanes (RetroPGF, grant-drafting, formal-
 verification) build the founder's nation-leader image and rank above the
-pseudonymous grind lanes. Validate demand before seating any of these
-(foundry law).
+pseudonymous grind lanes. Each is validated by selling it.

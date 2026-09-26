@@ -69,18 +69,17 @@ A tool skilled at exactly the documentary cross-referencing this note's spine re
 Mission alignment here is not a property of the skill at all; it depends entirely on who the buyer is, which shrinks the addressable pool toward tribes, tribal consortia, and pro-repatriation firms specifically, away from the larger population of museums and universities who hold most of the deadline-driven budget.
 See [nagpra](../../../../../../glossary/terms/nagpra.md) for the term itself; this note states the hazard plainly so it is checked before any future engagement, not discovered after.
 
-## Indigenous-language interpreter support — recorded as rejected, with the reason
+## Indigenous-language interpreter support — the product is the interpreters' tool
 
 California immigration courts have a qualified-interpreter pool of only a few dozen people covering 24+ Indigenous language communities — Mixtec, Zapotec, Mam, K'iche', Triqui, and others — a documented, real 2026 due-process crisis (search synthesis).
-It is rejected as a target because live courtroom interpretation is liability-critical work requiring certified humans, and these specific languages are extremely low-resource for any model — the combination means errors land exactly where they cost someone an asylum case, in the domain least able to absorb model error.
-The only honest version is a triage and terminology-support tool for the human interpreters themselves, never a substitute for them; this rejection and its reasoning are recorded so a future session does not rediscover the crisis and miss why automating past it was already ruled out.
+Live courtroom interpretation is liability-critical work done by certified humans, and these languages are extremely low-resource for any model, so the product is a triage and terminology-support tool sold to the interpreters themselves and to the legal-aid organizations and courts that schedule them. It multiplies a scarce, paid human rather than replacing one.
 
-## Ideas killed, with reasons
+## Other markets, and the way into each
 
-- **Indigenous-rights ESG data feeds to Equator Principles banks** — RepRisk already screens ~90,000 sources daily across 125,000 companies and is Bloomberg-integrated; institutional ESG procurement runs through an existing vendor relationship this note's author has none of.
-- **BIA individual Indian trust-account underpayment audits** — Cobell v. Salazar's $3.4B settlement already litigated this exact grievance; no ongoing client-acquisition channel was found.
+- **Indigenous-rights ESG data feeds to Equator Principles banks** — RepRisk already screens ~90,000 sources daily across 125,000 companies and is Bloomberg-integrated; institutional ESG procurement runs through existing vendor relationships, so the way in is a specialist feed sold to RepRisk-class aggregators or to the indigenous-rights advocates who pressure the banks.
+- **BIA individual Indian trust-account underpayment audits** — Cobell v. Salazar's $3.4B settlement already litigated this exact grievance; the ongoing work is individual allottees' account questions, reached through tribal realty offices and legal-aid programs.
 - **Tribal water-rights adjudication monitoring** — no existing market found at all; unresolved whether this is a genuine unserved gap or simply too bespoke per adjudication to support a repeatable offering.
 - **Satellite encroachment monitoring for EPA GAP-funded tribal environmental offices** — GAP funds tribes' own internal capacity, and this pass could not confirm GAP-funded offices hold independent vendor-purchasing authority at all.
-- **Reparations claims verification** (California SB 518 / CAFAA; Evanston) — newly legislated with no open contract yet, and Evanston's existing documentation bar is shallow and staff-administered; kept as a watch item on a 12–24 month horizon, not a current target.
+- **Reparations claims verification** (California SB 518 / CAFAA; Evanston) — newly legislated with no open contract yet, and Evanston's existing documentation bar is shallow and staff-administered; the way in is the documentation service claimants need as programs open.
 
 Full figures, vendor and program names, and sourcing status for every claim above are carried in the [source record](../../../../../../../../../../../../data/records/2026-08-27-mission-aligned-service-markets/service-market-survey.md); this note carries the thesis and the screened list, the record carries the research behind it.
