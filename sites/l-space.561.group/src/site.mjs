@@ -1,8 +1,7 @@
-// L-Space is a VICTOR site. This file, pointed at the Lenticule Science
-// section, is the whole application: the vault catalog dialect admits every
-// note of the science forest, VaultMaze projects the reading experience and
-// keeps review state, GEODE is the workbench the author is admitted to, and
-// the admission service decides who may read what. Media (video, audio, images, documents) lives
+// L-Space is the Lenticule Science knowledge garden, served over the science section's files as
+// they are: VaultMaze answers the reading experience live (the world read once, a room rendered
+// when it is opened) and keeps each reader's reviews in the house journal, GEODE is the workbench
+// the author is admitted to, and the admission service decides who may read what. Media (video, audio, images, documents) lives
 // in an ni-addressed store beside the state and is served at /.well-known/ni/ to admitted
 // readers; notes embed it by name. The author also browses the Gemini notebooks at /buckets/ as
 // S3 buckets. The garden is also an MCP server at /mcp,
@@ -12,11 +11,8 @@
 // itself.
 
 import { timingSafeEqual } from 'node:crypto';
-import { dirname, join } from 'node:path';
+import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { applyMigrations } from '@red-cup-engineering/cloudflare-d1-service/migrations';
-import { createSqliteD1 } from '@red-cup-engineering/cloudflare-d1-service/sqlite';
-import { ADMISSION_MIGRATIONS } from '@red-cup-engineering/computer-web-server/admission/schema';
 import { SIGN_IN_PATH, createWebAdmissionApplication, defaultPublicRoute } from '@red-cup-engineering/computer-web-server/admission/application';
 import { createPrincipalRegistry } from '@red-cup-engineering/computer-web-server/admission/principals';
 import { openArchive } from '@red-cup-engineering/knowledge-system-server/archive';
@@ -24,8 +20,10 @@ import { gardenPrompts, noteResourceTemplates, searchAndFetchTools, vaultMcpTool
 import { mcpResource } from '@red-cup-engineering/mcp-engineering-services-section/http';
 import { createAuthorizationServer, createJsonFileGrantStore } from '@red-cup-engineering/oauth-services-section/authorization-server';
 import { createVaultMazeApplication } from '@red-cup-engineering/graphical-knowledge-game-server/application';
-import { createVaultMazeProjector } from '@red-cup-engineering/graphical-knowledge-game-server/projector';
-import { REVIEW_STORE_SCHEMA, createReviewStore } from '@red-cup-engineering/graphical-knowledge-game-server/review-store';
+import { createVaultMazeRuntime } from '@red-cup-engineering/graphical-knowledge-game-server/runtime';
+import { createReviewStore } from '@red-cup-engineering/graphical-knowledge-game-server/review-store';
+import { mergeApps } from '@red-cup-engineering/computer-web-server/compose';
+import { healthResources } from '@red-cup-engineering/computer-web-server/edge/health';
 import { sha256Hex } from "@red-cup-engineering/cryptographic-computer-data-engineering-services-section/integrity";
 import { createImmutableContentCustody } from '@red-cup-engineering/immutable-content-custody-service';
 import { createFileStore, createPathContent } from '@red-cup-engineering/immutable-content-custody-service/file-store';
@@ -33,7 +31,7 @@ import { niResource } from '@red-cup-engineering/http-services-section/ni';
 import { s3Resource } from '@red-cup-engineering/http-services-section/s3';
 
 /** The content root: the Lenticule Science section, every `content/` tree beneath it. */
-export const SCIENCE_ROOT = fileURLToPath(new URL('../../', import.meta.url));
+export const SCIENCE_ROOT = fileURLToPath(new URL('../../../', import.meta.url));
 
 /** Path segments that are custody, triage, private, or working strata, never rooms. */
 export const EXCLUDED_SEGMENTS = Object.freeze(['legacy', 'triage', 'private', 'dev', 'test', 'fixtures', 'dist', 'sites', 'lib']);
@@ -49,9 +47,8 @@ export const AUTHOR_EMAIL = 'morgan.sennhauser@gmail.com';
 /** The author's own password and Hive sign-ins, which may author too. */
 export const AUTHOR_SUBJECTS = Object.freeze(['password:emsenn', 'hive:emsenn0']);
 
-/** Where the deployment keeps its state: principals.json, Hive login nonces, the authorization server's grants. */
-const stateDirectory = (environment) => setting('LSPACE_STATE_DIR', environment)
-  ?? (setting('LSPACE_DATABASE_PATH', environment) ? dirname(setting('LSPACE_DATABASE_PATH', environment)) : undefined);
+/** Where the deployment keeps its state: principals.json, Hive login nonces, the authorization server's grants, reviews. */
+const stateDirectory = (environment) => setting('LSPACE_STATE_DIR', environment);
 
 const setting = (name, environment = process.env) => {
   const value = environment[name];
@@ -148,19 +145,30 @@ export const lSpacePublicRoute = (path, method) => SELF_ADMITTING.has(path) || p
 /** Where a reader opens a room of the garden: VaultMaze addresses a room by the SHA-256 of its path. */
 export const roomUrl = (base, path) => `${base}/#/room/${sha256Hex(path)}`;
 
-/** Per-reader state: review rows and Discord sessions, in one SQLite database at the configured path. */
-export async function openState(environment = process.env) {
-  const database = createSqliteD1(setting('LSPACE_DATABASE_PATH', environment) ?? ':memory:');
-  await applyMigrations(database, [...ADMISSION_MIGRATIONS, { name: '0003_vaultmaze_reviews', sql: REVIEW_STORE_SCHEMA }]);
-  return database;
-}
+/** The vault catalog settings VaultMaze reads the forest with. */
+export const LSPACE_CATALOG = Object.freeze({ wing: 'lenticule-science', source: 'house', exclude: [...EXCLUDED_SEGMENTS], attributeFields: [...ATTRIBUTE_FIELDS] });
 
-/** The composed applications: admission first, then VaultMaze, then GEODE when a live checkout is configured. */
-export async function applications(context, environment = process.env) {
-  const database = await openState(environment);
+/** How VaultMaze presents the garden. */
+export const LSPACE_PROJECTION = Object.freeze({
+  title: 'L-Space',
+  subtitle: 'A living projection of the Lenticule Science knowledge forest.',
+  eyebrow: 'Authenticated digital garden',
+  description: 'L-Space: the authenticated Lenticule Science knowledge garden.',
+  vocabulary: { lSpace: 'Lenticule Space' },
+  participation: {
+    directReadClaims: ['l-space:direct-read', 'l-space:curator'],
+    accessibilityBypassClaims: ['l-space:accessibility-bypass'],
+    targetRetention: 0.9,
+    familiar: { enabled: true, retrievalMode: 'delegated-copy', costPolicy: 'lenticule-science/familiar-cost/v1' },
+  },
+});
+
+/** The garden as one application of the web server: admission first, then VaultMaze, media, GEODE and MCP. */
+export async function lSpaceApplication(environment = process.env) {
+  const stateDir = stateDirectory(environment);
+  if (stateDir === undefined) throw new TypeError('L-Space needs LSPACE_STATE_DIR');
   const admission = createWebAdmissionApplication({
     providers: admissionProviders(environment),
-    database,
     authorEmail: setting('LSPACE_AUTHOR_EMAIL', environment) ?? AUTHOR_EMAIL,
     // GEODE's writes are the author's; its reads are any admitted reader's; /ns/ is public by doctrine.
     // The notebook buckets read the author's own Google account, so they are the author's alone.
@@ -169,19 +177,22 @@ export async function applications(context, environment = process.env) {
     authors: setting('LSPACE_AUTHOR_SUBJECTS', environment)?.split(',').map((subject) => subject.trim()) ?? [...AUTHOR_SUBJECTS],
     publicRoute: lSpacePublicRoute,
   });
+  const site = { baseIri: `${publicBaseUrl(environment) ?? 'https://l-space.561.group'}/`, language: 'en' };
+  const vaultMaze = await createVaultMazeRuntime({ root: SCIENCE_ROOT, catalog: LSPACE_CATALOG, site, projection: { ...LSPACE_PROJECTION, sourceRevision: setting('GITHUB_SHA', environment) ?? setting('LENTICULE_SCIENCE_SOURCE_REVISION', environment) ?? null } });
   const media = mediaContent(environment);
   const composed = [
+    { resources: healthResources({ now: () => new Date() }) },
     admission,
-    createVaultMazeApplication({ reviews: createReviewStore(database), subjectOf: (ctx) => admission.subjectOf(ctx) }),
-    // Media is the store's, or a file beside a note that the release's catalog named by its content.
-    { resources: [niResource([...(media === undefined ? [] : [media]), createPathContent((ni) => context.getBuild?.()?.catalog?.vault?.media?.get(ni))]), ...(setting('LSPACE_NOTEBOOK_BUCKETS', environment) === 'false' ? [] : [notebookBuckets()])] },
+    createVaultMazeApplication({ reviews: createReviewStore({ root: stateDir }), subjectOf: (ctx) => admission.subjectOf(ctx) }),
+    vaultMaze.application,
+    // Media is the store's, or a file beside a note a rendered room named by its content.
+    { resources: [niResource([...(media === undefined ? [] : [media]), createPathContent((ni) => vaultMaze.media.get(ni))]), ...(setting('LSPACE_NOTEBOOK_BUCKETS', environment) === 'false' ? [] : [notebookBuckets()])] },
   ];
   const authoringRoot = setting('GEODE_AUTHORING_ROOT', environment);
   let archive;
   if (authoringRoot !== undefined) {
-    // GEODE is loaded only where an authoring checkout is configured: a reading
-    // deployment carries no workbench in memory.
-    const [{ createGeodeVictorApplicationFactory }, { createGeodeAuthoring }] = await Promise.all([
+    // GEODE is loaded only where an authoring checkout is configured.
+    const [{ geodeApplication }, { createGeodeAuthoring }] = await Promise.all([
       import('@red-cup-engineering/graphical-knowledge-system-server/server'),
       import('@red-cup-engineering/graphical-knowledge-system-server/authoring'),
     ]);
@@ -190,17 +201,12 @@ export async function applications(context, environment = process.env) {
       region: setting('GEODE_AUTHORING_REGION', environment) ?? '',
       excludes: [...EXCLUDED_SEGMENTS],
     });
-    composed.push(createGeodeVictorApplicationFactory({ workspace })(context));
+    composed.push(geodeApplication({ workspace }));
     archive = workspace.archive;
   }
   const openedArchive = () => (archive ??= openArchive({ root: SCIENCE_ROOT, excludes: [...EXCLUDED_SEGMENTS] }));
   composed.push(...mcpApplications({ admission, environment, archive: openedArchive }));
-  // The first search builds the full-text index (about half a minute over the forest): build it
-  // now, so an assistant's first question is answered within its tool timeout.
-  if (setting('LSPACE_WARM_SEARCH', environment) !== 'false') {
-    void Promise.resolve(openedArchive()).then((opened) => opened.search('garden', { mode: 'text', limit: 1 })).catch(() => undefined);
-  }
-  return composed;
+  return mergeApps(...composed);
 }
 
 /**
@@ -257,47 +263,3 @@ export function mcpApplications({ admission, environment = process.env, archive 
   });
   return [authorization.app, { resources: [mcp] }];
 }
-
-export default {
-  configVersion: 1,
-  site: {
-    name: 'L-Space',
-    baseIri: `${publicBaseUrl(process.env) ?? 'https://l-space.561.group'}/`,
-    language: 'en',
-    license: 'All rights reserved',
-    menu: [{ label: 'Garden entrance', href: '/' }],
-  },
-  catalog: {
-    dialect: 'vault',
-    source: 'house',
-    wing: 'lenticule-science',
-    exclude: [...EXCLUDED_SEGMENTS],
-    attributeFields: [...ATTRIBUTE_FIELDS],
-  },
-  // VaultMaze owns the root; VICTOR's publication archives, search, and atlas
-  // are for publication sites, and a forest of twenty thousand rooms is not one.
-  home: false,
-  archives: false,
-  search: false,
-  tufte: false,
-  // The forest releases as a page and a room record for each of 22,000 notes:
-  // about a gigabyte, above the release verifier's default sanity limit.
-  release: { maxBytes: 4 * 1024 ** 3, maxFiles: 250_000 },
-  projectors: [
-    createVaultMazeProjector({
-      title: 'L-Space',
-      subtitle: 'A living projection of the Lenticule Science knowledge forest.',
-      eyebrow: 'Authenticated digital garden',
-      description: 'L-Space: the authenticated Lenticule Science knowledge garden.',
-      vocabulary: { lSpace: 'Lenticule Space' },
-      participation: {
-        directReadClaims: ['l-space:direct-read', 'l-space:curator'],
-        accessibilityBypassClaims: ['l-space:accessibility-bypass'],
-        targetRetention: 0.9,
-        familiar: { enabled: true, retrievalMode: 'delegated-copy', costPolicy: 'lenticule-science/familiar-cost/v1' },
-      },
-      sourceRevision: setting('GITHUB_SHA') ?? setting('LENTICULE_SCIENCE_SOURCE_REVISION') ?? null,
-    }),
-  ],
-  applications: (context) => applications(context),
-};

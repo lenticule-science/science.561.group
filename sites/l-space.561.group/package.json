@@ -2,20 +2,16 @@
   "name": "@lenticule-science/l-space",
   "version": "0.2.0",
   "type": "module",
-  "description": "L-Space: the Lenticule Science knowledge garden, a VICTOR site configured over the science section.",
+  "description": "L-Space: the Lenticule Science knowledge garden, VaultMaze and GEODE served live over the science section's files.",
   "license": "UNLICENSED",
   "engines": {
     "node": ">=24"
   },
   "scripts": {
-    "check": "static-site-publisher check ../.. --config=./static-site-publisher.config.mjs",
-    "build": "static-site-publisher build ../.. dist --config=./static-site-publisher.config.mjs",
-    "serve": "static-site-publisher serve ../.. --config=./static-site-publisher.config.mjs --port=8561",
-    "start": "static-site-publisher serve ../.. --config=./static-site-publisher.config.mjs --release --host=127.0.0.1 --port=18848",
+    "start": "node scripts/serve.mjs",
     "test": "node --test test/*.test.mjs"
   },
   "dependencies": {
-    "@red-cup-engineering/cloudflare-d1-service": "0.1.0",
     "@red-cup-engineering/computer-web-server": "0.6.0",
     "@red-cup-engineering/cryptographic-computer-data-engineering-services-section": "0.3.0",
     "@red-cup-engineering/education-platform-service": "0.2.5",
@@ -26,7 +22,6 @@
     "@red-cup-engineering/knowledge-system-server": "0.1.0",
     "@red-cup-engineering/mcp-engineering-services-section": "0.1.0",
     "@red-cup-engineering/gemini-notebook-services-section": "0.6.0",
-    "@red-cup-engineering/oauth-services-section": "0.1.0",
-    "@red-cup-engineering/static-site-publisher": "0.1.15"
+    "@red-cup-engineering/oauth-services-section": "0.1.0"
   }
 }
