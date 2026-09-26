@@ -94,6 +94,8 @@ The omníčiye-installed-zuya is wakȟáŋ-marked ($w_\mathrm{lak}(Z) = 1$ when 
 
 The revocation morphism is built into the scope-completion structure (cf. [akicita-revocation-at-scope-completion](../../../philB/prose/learning/claims/akicita-revocation-at-scope-completion.md)):
 
+$$\langle X, \texttt{completed}\rangle \geq_k \mathbf{t} \;\Longrightarrow\; \langle Z, \texttt{scope-potential}\rangle = \bot$$
+
 $$\langle X, \texttt{completed}\rangle \geq_k \mathbf{t} \;\Longrightarrow\; \langle Z, \texttt{scope-active}\rangle = \bot$$
 
 with all enabled war-permissions retracted by the BC-naturality of scope-completion.
@@ -138,23 +140,3 @@ The Battle of the Little Bighorn (Pȟeháŋ Wakpá kičizapi, 1876) was the resu
 - *Wars for the West* materials — comparative Plains-nation war-coordination scholarship.
 - Estes, *Our History is the Future* (2019) — twentieth- and twenty-first-century zuya-form in continued political resistance (NoDAPL as defensive-zuya in modified form).
 - Pekka Hämäläinen, *Lakota America* (2019) — zuya in the pre-reservation Lakota political economy.
-
-## Earlier material
-
-A *zuya* (also *ozuye*) is a war-expedition: a scope-bounded closure-rule subsystem $\mathcal{S}_\mathrm{zuya}^X$ that overlays on $\mathcal{S}_\mathrm{wolak}$ for the duration of a specific scope-action $X$.
-The overlay *adds* firing-permissions on cells classified as enemy-engagement; it does not suspend or replace any rule of $\mathcal{S}_\mathrm{wolak}$.
-A zuya carries its own offices ([blotáhuŋka](blotahunka.md)), its own akicita-installation (the war-akicita), and a built-in scope-completion that automatically retracts the overlay when $X$ ends.
-
-- The *enemy-cells*: $\langle Z, \texttt{enemy}, \cdot\rangle$ at the zuya level; $\langle w, \texttt{engaging-as-enemy}, e\rangle$ at the warrior-enemy level.
-- The *coup-honor cells*: $\langle w, \texttt{counted-coup-on}, e\rangle$ at the four grades (see [count-coup](../../../philB/code/transformers/count-coup.md)).
-- The *war-harm cells*: $\langle w, \texttt{killed-in-war}, e\rangle$ — these fire as harm-cells with mandatory pairing to purification-required cells.
-- The *war-party-internal cells*: $\langle Z, \texttt{member}, w\rangle$, the chain-of-command cells under the blotáhuŋka.
-
-- Closure rules permitting raid-on-enemy-property and capture-of-enemy-resources (specifically, horses; some recordings include captives).
-- Closure rules installing counted-coup-on cells (see [count-coup](../../../philB/code/transformers/count-coup.md)).
-- The blotáhuŋka's command authority over war-party-internal cells, via [military-command-chain-as-modal-composition](../../../../../../../../../../../../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/triage/military-command-chain-as-modal-composition.md) specialized to the zuya scope.
-- The war-akicita's enforcement-authority for war-party discipline.
-
-The revocation morphism is built into the scope-completion structure (cf. [akicita-revocation-at-scope-completion](../../../philB/prose/learning/claims/akicita-revocation-at-scope-completion.md)):
-
-$$\langle X, \texttt{completed}\rangle \geq_k \mathbf{t} \;\Longrightarrow\; \langle Z, \texttt{scope-potential}\rangle = \bot$$

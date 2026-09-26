@@ -30,12 +30,4 @@ The shift to process thinking matters because it makes relations constitutive ra
 
 Check for understanding: What does it mean to say that becoming is prior to being?
 
-## Earlier material
-
 [Alfred North Whitehead](../../../../../../../../../../../content/text/documents/articles/references/people/alfred-north-whitehead.md) diagnosed the tendency to treat abstractions as concrete realities as the [fallacy of misplaced concreteness](../../../../../../../../../../../content/text/glossary/terms/fallacy-of-misplaced-concreteness.md). When we say "the rock," we are abstracting a stable pattern from an ongoing [process](../../../../../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/philosophy-general/_archive/terms/process.md) and treating the abstraction as though it were the fundamental reality. This move is useful — we need stable names for active patterns — but mistaking the abstraction for the reality leads to philosophical problems that process thinking dissolves.
-
-Learning goal: explain the basic shift from substance thinking to process thinking and why it matters for [relational ontology](../../../../../../../../../../../content/text/glossary/terms/relational-ontology.md).
-
-[Alfred North Whitehead](../../../../../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/philosophy-general/archive/domains/western/domains/general/people/alfred-north-whitehead.md) diagnosed the tendency to treat abstractions as concrete realities as the [fallacy of misplaced concreteness](../../../../../../../../../../../content/text/glossary/terms/fallacy-of-misplaced-concreteness.md). When we say "the rock," we are abstracting a stable pattern from an ongoing [process](../../../../../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/philosophy-general/archive/domains/western/domains/metaphysics/domains/process-philosophy/terms/process.md) and treating the abstraction as though it were the fundamental reality. This move is useful — we need stable names for active patterns — but mistaking the abstraction for the reality leads to philosophical problems that process thinking dissolves.
-
-Learning goal: explain the basic shift from substance thinking to process thinking and why it matters for [relational ontology](../../../../../../../../../../../content/text/glossary/terms/relational-ontology.md).

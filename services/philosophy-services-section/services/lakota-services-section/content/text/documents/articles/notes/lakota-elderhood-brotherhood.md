@@ -225,6 +225,4 @@ The question is not simply whether Elder Brother exists in the way Western scien
 
 Conversely, to remember our elder brothers – buffalo, thunder, stones, forest beings – is to remember that we are not alone, not in charge, and not finished. We are the younger ones, still capable of learning how to walk correctly in a world held in place by older wisdom.
 
-## Earlier material
-
 1. Zoological Reduction ("Bigfoot")

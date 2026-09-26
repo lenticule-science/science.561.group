@@ -43,8 +43,6 @@ aliases:
 			- fungibility, presence, ???
 	- practices of self-governance for platformized web life?
 
-## Earlier material
-
 :PROPERTIES:
 :ID:       c1b7b4a6-652c-4bc9-8a05-b8a55c79a521
 :form:     [essay](../../../../../services/agency-services-section/content/text/documents/articles/notes/undated/essay.md)

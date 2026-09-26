@@ -33,8 +33,6 @@ profile.
 
 {{ act_nav(page.meta) }}
 
-## Earlier material
-
 [FixFlowNucleus](fix-flow-nucleus.md) already records recognitions fixed by both
 [Flow](../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/docs/math/acts/flow.md) and [Nucleate](nucleate.md).  [CollapseShuffle](collapse-shuffle.md)
 records which trace differences vanish under the nucleus: admissible shuffles.

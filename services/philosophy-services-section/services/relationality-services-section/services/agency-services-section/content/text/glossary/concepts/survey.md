@@ -157,19 +157,5 @@ The event model must accommodate all three cases.
 - [The Ontology of Work Operations](../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/content/text/documents/notes/2026-04-03-note-on-ontology-of-work-operations.md) â€” the base mapping
 - All five stage-specific surveys â€” planning, dispatch, execution, tracking, review, feedback
 
-## Earlier material
-
-Some concepts don't belong to one stage of the operations loop — they span all six. Events, state machines, flow, cadence, and records are the connective tissue that makes the loop one integrated system rather than six disconnected tools.
-
-Cadence is the rhythm of recurring events. A daily standup. A weekly review. A monthly retrospective. A quarterly planning cycle. Cadence provides predictability — everyone knows when things happen — and creates natural checkpoints for the operations loop.
-
-Cadence operates at multiple time scales simultaneously:
-- **Session cadence** — each agent session is a micro-cycle: orient, execute, review
-- **Daily cadence** — standup, task progress, blocker identification
-- **Weekly cadence** — plan review, WIP adjustment, priority reassessment
-- **Monthly cadence** — project health review, resource reallocation
-- **Quarterly cadence** — goal review, strategy adjustment
-- **Annual cadence** — charter review, organizational assessment
-
 - [The Ontology of Work Operations](../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/content/text/documents/articles/notes/ontology-of-work-operations.md) — the base mapping
 - All five stage-specific surveys — planning, dispatch, execution, tracking, review, feedback

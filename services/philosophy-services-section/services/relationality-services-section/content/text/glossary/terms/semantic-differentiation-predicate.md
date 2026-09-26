@@ -38,9 +38,4 @@ This function identifies:
 - Stabilized non-equivalence  
 - Structural identity divergence within completed domains
 
-## Earlier material
-
 The ***semantic differentiation function*** (`Δ[s]`) is [induce|induced](../../triage/induce|induced) by the [constraint completion function](constraint completion function) (`Ω`) and [constrain|constrains](../../triage/constrain|constrains) whether two stabilized points remain **irreducibly distinct** under constraint completion.
-
-Let `Ω` be the [completed constraint function](completed constraint function)  
-Let `x, x′ ∈ dom(Ω)`

@@ -28,6 +28,4 @@ For the corpus's [failure-event moduli](../../research/2026/07/31/lenticule-impo
 
 - [failure-event-moduli-stack](../../research/2026/07/31/lenticule-import/yet-another-unsorted-archive-dump/predication-categories/_archive/bucket-3/questions/failure-event-moduli-stack.md) — persistence-diagram space as moduli precedent.
 
-## Earlier material
-
 For predication categories' [typed-barcoding question](../../research/2026/07/31/lenticule-import/yet-another-unsorted-archive-dump/predication-categories/_archive/bucket-2/questions/typed-barcoding-of-settling-cohomology.md): persistence diagrams are the natural target of predication categories' classifying invariants when re-presented over the ordinal filtration. The Cohen-Steiner–Edelsbrunner–Harer stability theorem is the established analog predication categories' deformation-theoretic stability would parallel.

@@ -1212,8 +1212,6 @@ You now have everything you need to begin—not a story, but a recursion.
 
 Let your world emit.
 
-## Earlier material
-
 #### ➤ Field  
 The sum of all potential trace.  
 A dynamic, living pressure environment.  

@@ -24,8 +24,4 @@ Develops paraconsistent reasoning procedures for OWL — a four-valued semantics
 
 - [Description logics, RDF, FCA](../notes/undated/description-logics-rdf-fca.md)
 
-## Earlier material
-
 Develops paraconsistent reasoning procedures for OWL — a four-valued semantics that lets inconsistent ABox assertions coexist without trivializing inference. For the program, an existing application of four-valued semantics in the Semantic Web tradition that the spatiotemporal knowledge presheaf generalizes: the OWL-ABox + paraconsistent-reasoning combination is structurally a special case of the SKP machinery applied to a description-logic predicate category.
-
-- [Description logics, RDF, FCA](../notes/undated/narratives-description-logics-rdf-fca.md)

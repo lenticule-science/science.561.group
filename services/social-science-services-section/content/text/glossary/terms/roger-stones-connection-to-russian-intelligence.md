@@ -4,6 +4,11 @@ aliases:
 created: 2018-11-28T22:21:35
 modified: 2025-07-13T22:23:05
 specialization: research
+title: "Roger Stone's Connection to Russian Intelligence"
+author: ["emsenn"]
+date: 2018-11-28
+tags: ["Roger-Stone", "Russia"]
+draft: false
 ---
 ~~+~~ title = "Roger Stone's Connection to Russian Intelligence" author = \["emsenn"\] description = "This file is a contemporary record of emsenn's personal information." date = 2018-11-28 lastmod = 2018-11-28T23:00:07-05:00 tags = \["the-2016-presidential-election"\] categories = \["essay"\] draft = false weight = 3012 ~~+~~
 
@@ -42,15 +47,3 @@ Considering that…
 - …Sam Patten, a Republican operative, pleaded guilty to not registering as a foreign agent.
 
 …I'm left wondering what preparations he attempted.
-
-## Earlier material
-
-+++
-title = "Roger Stone's Connection to Russian Intelligence"
-author = ["emsenn"]
-date = 2018-11-28
-tags = ["Roger-Stone", "Russia"]
-draft = false
-+++
-
-Considering that...

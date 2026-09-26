@@ -57,8 +57,6 @@ ADRs MUST NOT be edited after acceptance except to mark them
 `status: superseded` and add a `superseded-by` field pointing to the
 newer ADR. The body is permanent.
 
-## Earlier material
-
 ADRs MUST live in a `decisions/` directory within the Thing they
 govern. A decision about the knowing-semioverse standard goes in
 `knowing-semioverse/decisions/`. A decision about the ADR standard

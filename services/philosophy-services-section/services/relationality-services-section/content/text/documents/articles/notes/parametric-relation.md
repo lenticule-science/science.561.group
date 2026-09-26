@@ -26,8 +26,3 @@ to state parametricity.
 - Uses: [Indexed Category](./indexed-category.md) and
   [Parametric Semantics](parametric-semantics.md) to define fibrewise relations.
 - Shows that: parametric relations capture uniform behaviour across contexts.
-
-## Earlier material
-
-Family of relations active under all reindexings in an indexed category, used
-to state parametricity.

@@ -127,14 +127,7 @@ Rendering the matches inline:
 - Planning March 28th, 2025
 ```
 
-## Earlier material
-
 ```text
 - [[id:442470fd-62e2-4378-903f-6ed3ba005d10][Testing predicate graphs with GnoponEmacs]]
 - [[id:1abdc5ad-2bb7-448d-af49-3e257c915685][Planning March 28th, 2025]]
 ```
-
-## Earlier material
-
-#+RESULTS:
-: gpe/ritm/render-list-of-matches

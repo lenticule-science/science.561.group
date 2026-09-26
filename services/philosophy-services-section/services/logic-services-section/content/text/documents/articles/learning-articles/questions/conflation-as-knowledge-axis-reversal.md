@@ -58,6 +58,4 @@ Either way, conflation is the corpus's natural candidate for "knowledge-axis tim
 - [Sigma as axis-rotation](sigma-as-axis-rotation.md): the inter-axis rotation, contrasted with conflation's intra-axis reflection.
 - [Three backward structures and their symmetry](three-backward-structures-and-their-symmetry.md): meta-question.
 
-## Earlier material
-
 Either way, conflation is predication categories' natural candidate for "knowledge-axis time-reversal," distinct from $\sigma$ (which rotates axes) and from the cosettling (which reverses ordinal time).

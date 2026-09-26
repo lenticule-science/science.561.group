@@ -27,7 +27,3 @@ Since *Witness* is established, the composition `(Reflex Witness)` applies refle
 {{ act_info(page.meta) }}
 
 {{ act_nav(page.meta) }}
-
-## Earlier material
-
-Structured claims from source frontmatter:

@@ -735,7 +735,3 @@ This domain serves as the **foundational architecture** upon which all further f
 - Determining meta-reflexive relating, meta-transcendence, meta-reflexive relation, meta-expansion, meta-reflexive form, and meta-extension provides the minimal dynamic determination for cohering the meta-relational unit, but leaves unresolved dynamics which must be derived:
 
     - What determines the coherence of the meta-relational unit?
-
-## Earlier material
-
-**What mechanism performs the active work of structuring differentiation into positionality, without relying on pre-existing relational scaffolding?**

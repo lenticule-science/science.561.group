@@ -383,12 +383,6 @@ probabilistic and enriched ∞-topoi.
 -   Grandis, M.; Fajstrup, L. (2001). “Directed Homotopy.” **J. Pure Appl. Alg.** 181.
 -   Johnstone, P.T. (2002). **Sketches of an Elephant.** Oxford UP.
 
-## Earlier material
-
-\$$
-
-1.  Clarification of Cohesion
-
 For G∈End(𝔈), define D:=a<sub>f</sub>∘G, F:=i<sub>f</sub>. Then η<sub>f</sub>:G⇒F∘D yields a reflective factorization: $$
 \require{AMScd}
 \begin{CD}
@@ -397,5 +391,3 @@ G @>{η_f}>> i_fa_fG\\
 F∘D @>>> i_fa_f .
 \end{CD}
 $$ Because i<sub>f</sub>,a<sub>f</sub> instantiate (, ), every endofunctor decomposes as a composition of a dynamic (-stable) and a topologic (-stable) part.
-
-<div class="theorem">

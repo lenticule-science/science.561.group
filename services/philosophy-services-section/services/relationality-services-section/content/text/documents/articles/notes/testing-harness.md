@@ -65,8 +65,6 @@ Provides automated CI/CD testing for relational modules.
 - Results must be reproducible (trace spine preserved) and carry telemetry +
   traceability metadata.
 
-## Earlier material
-
 2. **Runner Service.**
    Compiles tests using STLC spec, queues them via scheduler, and executes
    against modules (runtime, storage, etc.).

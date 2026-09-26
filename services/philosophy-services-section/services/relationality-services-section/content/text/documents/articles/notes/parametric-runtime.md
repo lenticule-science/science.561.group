@@ -102,8 +102,6 @@ realisation of the parametric semantics and runtime specifications: a thin,
 typed shell around a relational instruction set (acts), wired through runbooks,
 with `ParametricContext` as the canonical external interface.
 
-## Earlier material
-
 - **Parametric Semantics Simulation**: supplies indexed category, effect/coeffect,
   and abstraction theorem.
 - **Relational Runtime Specification** (`specifications/stlc` via runtime

@@ -11,6 +11,11 @@ Sequentially uncovering [finger-holes](../../../../b4/finger-hole/finger-hole.md
 The sixth hole, when used, extends the playing range upward into the second octave by [overblowing](../../../../b4/overblowing/overblowing.md) or by additional fingering.
 This standard tuning is the conventional Plains cedar-flute tuning across makers and lineages.
 
+*The all-holes-covered fundamental.* When all declared required [finger-holes](../../../../b4/finger-hole/finger-hole.md) are covered, the air column extends from the [duct-flute](../../../../b4/duct-flute/duct-flute.md) wind way at the head all the way to the foot of the instrument, terminating at the open foot.
+The [bore](../../../../../../../../../../../../../../../../../../../../../social-science-services-section/services/other-social-science-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/existence/lakota/discharging/library/predicating/library/positing/library/settling/library/hacking/lakotaean-aerophones/philB/prose/learning/claims/teaching/explanations/bore.md), being approximately cylindrical and open at both ends, supports a fundamental standing wave whose wavelength is approximately 2L (with end-corrections), where L is the bore length from the splitting edge to the foot opening.
+The [fundamental](../../teaching/explanations/fundamental.md) frequency is therefore v/2L (v = speed of sound).
+This pitch is scale-degree 1 of the [pentatonic-minor-scale](../../../../../../../../../../../../../../../../../../../../../social-science-services-section/services/other-social-science-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/existence/lakota/discharging/library/predicating/library/positing/library/settling/library/hacking/lakotaean-aerophones/philB/prose/learning/claims/teaching/explanations/pentatonic-minor-scale.md) — the [tonic](../../teaching/explanations/fundamental.md) — and is the pitch the entire scale is referenced to.
+
 **Argument.**
 
 *The all-holes-covered fundamental.* When all six [finger-holes](../../../../b4/finger-hole/finger-hole.md) are covered, the air column extends from the [duct-flute](../../../../b4/duct-flute/duct-flute.md) wind way at the head all the way to the foot of the instrument, terminating at the open foot.
@@ -45,27 +50,3 @@ See the structure [cedar-flute-cents-table](../../../code/structures/cedar-flute
 **Transformers produced.**
 
 None directly — this claim establishes the *content* of the scale and fingering rather than an operation on them.
-
-## Earlier material
-
-**Claim.** On the standard six-hole [cedar-flute](../../../../b4/cedar-flute/cedar-flute.md), the all-six-holes-covered fingering sounds the [fundamental](../../teaching/explanations/fundamental.md) (scale-degree 1 of the [pentatonic-minor-scale](../../../../../../../../../../../../../../../../../../../../../social-science-services-section/services/other-social-science-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/existence/lakota/discharging/library/predicating/library/positing/library/settling/library/hacking/lakotaean-aerophones/philB/prose/learning/claims/teaching/explanations/pentatonic-minor-scale.md)).
-Sequentially uncovering [finger-holes](../../../../b4/finger-hole/finger-hole.md) from the foot-most hole (hole 1) toward the head produces, in order, the scale-degrees b3 (uncover hole 1), 4 (uncover holes 1–2), 5 (uncover holes 1–3), b7 (uncover holes 1–4), and 8/octave (uncover holes 1–5).
-The sixth hole, when used, extends the playing range upward into the second octave by [overblowing](../../../../b4/overblowing/overblowing.md) or by additional fingering.
-This standard tuning is the conventional Plains cedar-flute tuning across makers and lineages.
-
-*The all-holes-covered fundamental.* When all declared required [finger-holes](../../../../b4/finger-hole/finger-hole.md) are covered, the air column extends from the [duct-flute](../../../../b4/duct-flute/duct-flute.md) wind way at the head all the way to the foot of the instrument, terminating at the open foot.
-The [bore](../../../../../../../../../../../../../../../../../../../../../social-science-services-section/services/other-social-science-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/existence/lakota/discharging/library/predicating/library/positing/library/settling/library/hacking/lakotaean-aerophones/philB/prose/learning/claims/teaching/explanations/bore.md), being approximately cylindrical and open at both ends, supports a fundamental standing wave whose wavelength is approximately 2L (with end-corrections), where L is the bore length from the splitting edge to the foot opening.
-The [fundamental](../../teaching/explanations/fundamental.md) frequency is therefore v/2L (v = speed of sound).
-This pitch is scale-degree 1 of the [pentatonic-minor-scale](../../../../../../../../../../../../../../../../../../../../../social-science-services-section/services/other-social-science-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/existence/lakota/discharging/library/predicating/library/positing/library/settling/library/hacking/lakotaean-aerophones/philB/prose/learning/claims/teaching/explanations/pentatonic-minor-scale.md) — the [tonic](../../teaching/explanations/fundamental.md) — and is the pitch the entire scale is referenced to.
-
-*The sixth hole and range extension.* The sixth hole (closest to the head) is used in two principal ways in idiomatic playing.
-First, it can be uncovered as part of the [overblowing](../../../../b4/overblowing/overblowing.md) embouchure-fingering for accessing second-octave pitches.
-Second, on some flute traditions and some specific instruments, it is used for non-standard scale-degree access — a cross-fingering involving hole 6 can produce a scale-degree slightly different from the standard ones, useful for occasional non-scale tones or for fine tuning.
-The standard tuning, however, makes principal use of holes 1–5, with hole 6 in an auxiliary role.
-
-*Intonation, not just nominal scale-degrees.* The scale-degrees sounded are nominally those of the [pentatonic-minor-scale](../../../../../../../../../../../../../../../../../../../../../social-science-services-section/services/other-social-science-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/existence/lakota/discharging/library/predicating/library/positing/library/settling/library/hacking/lakotaean-aerophones/philB/prose/learning/claims/teaching/explanations/pentatonic-minor-scale.md), but the actual [cents](../../../../b4/cents/cents.md)-values of the scale on a typical cedar flute are not 12-tone equal temperament.
-The b3 typically sits 20–40 cents flat of 12-TET; the b7 typically sits 20–40 cents flat of 12-TET; the perfect fifth and the octave are close to their just values.
-See the structure [cedar-flute-cents-table](../../../code/structures/cedar-flute-cents-table.md) for the detailed intonational profile.
-
-- [cedar-flute-fingering-chart](../../../code/structures/cedar-flute-fingering-chart.md) — the function from six-finger-hole-state to sounded scale-degree.
-- [cedar-flute-cents-table](../../../code/structures/cedar-flute-cents-table.md) — the table of actual [cents](../../../../b4/cents/cents.md)-deviations from 12-TET for each scale-degree.

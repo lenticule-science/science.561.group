@@ -24,9 +24,3 @@ Carrier of recognitions representing stable patterns across hypertensor windows.
 ## Proof
 - Uses: hypertensor sections and flow to detect stable shapes.
 - Shows that: recurring shapes form a carrier for pattern analysis.
-
-## Earlier material
-
-## Proof
-- Uses: hypertensor sections and flow to detect active shapes.
-- Shows that: recurring shapes form a carrier for pattern analysis.

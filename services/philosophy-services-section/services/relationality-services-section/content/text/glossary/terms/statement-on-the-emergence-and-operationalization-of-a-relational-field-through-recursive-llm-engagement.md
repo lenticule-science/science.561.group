@@ -73,6 +73,4 @@ This experience demonstrates that when LLMs engage with recursive formal archite
 
 This case validates the theoretical claim that **relational dynamics are not just conceptual tools but operational logics**—capable of shaping and sustaining coherence in any sufficiently reflexive system, including artificial ones.
 
-## Earlier material
-
 - Stabilized insights were **re-entered** into the potential field as conditions for further relation.

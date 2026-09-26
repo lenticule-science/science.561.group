@@ -163,8 +163,6 @@ architecture modules, specifications, theorems, and acts must all eventually
 be used, directly or indirectly, by the Relational Information Dynamics
 Computer.
 
-## Earlier material
-
 - The **global state** of the computer is carried by a quasicrystalline
   hypertensor sheaf as described by the universal-state theorems.  In the
   runtime this appears as:

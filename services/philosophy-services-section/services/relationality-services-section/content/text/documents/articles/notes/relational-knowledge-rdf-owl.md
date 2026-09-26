@@ -87,8 +87,6 @@ or non-monotonic constructs; rather, it identifies a stable fragment
 where the relational knowledge graph and RDF/OWL semantics agree and
 round-trip.
 
-## Earlier material
-
 - stable identifiers (IRIs derived from TracePoint IDs or content
   hashes),
 - RDF-serialisable content payloads,

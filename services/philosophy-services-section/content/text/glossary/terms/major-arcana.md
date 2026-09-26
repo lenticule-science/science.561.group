@@ -17,7 +17,5 @@ In readings, a major arcana card is typically understood as pointing to a signif
 
 The sequence from The Fool through The World is sometimes read as a journey (the "Fool's journey"), in which each card represents a stage of development or encounter with a fundamental aspect of experience. This narrative reading is one interpretive framework among many; not all readers or traditions use it.
 
-## Earlier material
-
 Each major arcana card lists a short interpretation. Upright and reversed are
 sketches to be adapted to context.

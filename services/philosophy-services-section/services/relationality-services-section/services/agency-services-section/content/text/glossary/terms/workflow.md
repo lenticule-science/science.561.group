@@ -129,8 +129,6 @@ The work vocabulary's distinction (workflow = algebraic, plan = planning) render
 - A workflow $W$ is just the type-bounded composition; it has no name or completion condition without being attached to a task or plan.
 - Plans contain workflows as their internal task-graph; workflows are content within plans.
 
-## Earlier material
-
 - $T_W$ — a finite set of work units (each a [task cell system](../../../../../../../../../social-science-services-section/services/social-theory-science-services-section/content/text/glossary/terms/task-cell-system.md) or a sub-workflow).
 - $E_W$ — directed edges between elements of $T_W$. Two edge kinds: *dependency edges* (forcing ordering, as in [plan](../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/glossary/terms/plan.md)) and *information-flow edges* (an output cell of $T_i$ is referenced by an antecedent in $\mathcal{S}_{T_j}$).
 - $\tau_{\mathrm{in}}$ — the *input cell-pattern type*: the cells the workflow consumes, characterized by their predicate-fiber slots and required initial bilattice values.

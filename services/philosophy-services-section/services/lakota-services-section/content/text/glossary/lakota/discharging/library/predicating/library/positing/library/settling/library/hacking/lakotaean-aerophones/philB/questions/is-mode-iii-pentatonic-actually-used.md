@@ -15,6 +15,4 @@ If only a subset is used, the active modal set is a sub-structure of the full C�
 
 Sub-survey needed: tonal-center analysis on a representative repertoire sample.
 
-## Earlier material
-
 If only a subset is used, the potential modal set is a sub-structure of the full C₅ action — itself a music-theoretic object.

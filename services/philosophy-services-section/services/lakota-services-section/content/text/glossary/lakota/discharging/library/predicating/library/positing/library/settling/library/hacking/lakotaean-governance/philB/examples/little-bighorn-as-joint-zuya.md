@@ -44,6 +44,11 @@ The deliberation on whether to engage U.S. military approaching the encampment f
 - Multiple blotáhuŋka were identified per-contingent for the war-akicita-coordination: Crazy Horse for the Oglala, Gall (Phizí) for the Húŋkpapȟa, Lame White Man for the Cheyenne, others.
 - The structural-form was *coproduct of per-contingent command-chains*, not a unified single-commander chain (per [blotahunka](../../philA/code/structures/blotahunka.md) §"Multiple blotáhuŋka").
 
+- The encampment dispersed — the joint zuya's scope completed with the engagement-conclusion.
+- $\langle Z_\mathrm{LBH}, \texttt{scope-potential}\rangle$ dropped to $\bot$.
+- Per [akicita-revocation-at-scope-completion](../prose/learning/claims/akicita-revocation-at-scope-completion.md), the blotáhuŋka's command-authorities lapsed at scope-end.
+- The contingents separated and headed in different directions.
+
 ## The engagement firings
 
 When the 7th Cavalry under Custer attacked the southern end of the encampment in mid-afternoon June 25:
@@ -115,26 +120,3 @@ The Little Bighorn example exercises:
   Utley, *The Lance and the Shield: The Life and Times of Sitting Bull* (1993).
 - Peter Powell, *People of the Sacred Mountain* (1981) — Cheyenne perspective.
 - Battlefield archaeology by Richard Allen Fox, *Archaeology, History, and Custer's Last Battle* (1993).
-
-## Earlier material
-
-The June 25–26, 1876 engagement at the Little Bighorn River (Lakota: *Pȟeháŋ Wakpá* or *Peží Slá Wakpá*, "Greasy Grass") was a joint zuya at confederacy-and-Cheyenne-and-Arapaho scope.
-The substrate-firings exercise [zuya](../../philA/code/structures/zuya.md), [blotahunka](../../philA/code/structures/blotahunka.md), [count-coup](../code/transformers/count-coup.md), confederacy-scope coordination via [oceti-sakowin](../../../../../../../../../../../../../../../../../../../social-science-services-section/services/other-social-science-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/existence/lakota/discharging/library/predicating/library/positing/library/settling/library/hacking/lakotaean-governance/philB/objects/oceti-sakowin.md), and downstream [war-purification](../../philA/code/transformers/war-purification.md) for participants who killed.
-
-- Sitting Bull's sun-dance vision provided wakȟáŋ-marked substrate-context: the polity's response would be defensive.
-- The omníčiye-deliberation reached consensus-by-withdrawal on defensive-engagement-if-attacked.
-- Multiple blotáhuŋka were identified per-contingent for the war-akicita-coordination: Crazy Horse for the Oglala, Gall (Phizí) for the Húŋkpapȟa, Lame White Man for the Cheyenne, others.
-- The structural-form was *coproduct of per-contingent command-chains*, not a unified single-commander chain (per [blotahunka](../../philA/code/structures/blotahunka.md) §"Multiple blotáhuŋka").
-
-- The encampment dispersed — the joint zuya's scope completed with the engagement-conclusion.
-- $\langle Z_\mathrm{LBH}, \texttt{scope-potential}\rangle$ dropped to $\bot$.
-- Per [akicita-revocation-at-scope-completion](../prose/learning/claims/akicita-revocation-at-scope-completion.md), the blotáhuŋka's command-authorities lapsed at scope-end.
-- The contingents separated and headed in different directions.
-
-- [zuya](../../philA/code/structures/zuya.md) as scope-bounded closure-rule overlay with multiple-contingent coordination.
-- [blotahunka](../../philA/code/structures/blotahunka.md) at multiple-contingent-confederation scope — *not* unified-single-commander.
-- [count-coup](../code/transformers/count-coup.md) at scale, with the bilattice-residue argument visible in the post-engagement substrate-state.
-- [war-purification](../../philA/code/transformers/war-purification.md) at scale for participants who killed.
-- [oceti-sakowin](../../../../../../../../../../../../../../../../../../../social-science-services-section/services/other-social-science-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/existence/lakota/discharging/library/predicating/library/positing/library/settling/library/hacking/lakotaean-governance/philB/objects/oceti-sakowin.md) confederacy-scope omníčiye decision-making, with Cheyenne and Arapaho coproduct-compatibility.
-- [omniciye-deliberation](../code/transformers/omniciye-deliberation.md) on the engagement-decision.
-- Wahúŋkpa-work cells firing in the encampment (per [wahunkpa-work](../../../../../../hacking/lakotaean-politics/predicated-philA/theories/predicated-lakotaean-work/code/structures/wahunkpa-work.md)).

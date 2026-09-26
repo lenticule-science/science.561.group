@@ -58,7 +58,5 @@ Same primary sources as [iyan-hanhepi](../iyan-hanhepi.md), [iyan](../library/iy
 The morphism-name "discharging" is a captain's term for the cosmogonic self-emptying act; the primary Lakota sources do not abstract the act as a named morphism — they recount the emptying narratively.
 The abstraction-as-morphism is the Curry-Howard-Yoneda re-presentation in the predication-categories tree.
 
-## Earlier material
-
 Discharging's codomain is the four-times-four structure [tóbtób kiŋ](../../../../../../../../../../../social-science-services-section/services/other-social-science-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/existence/lakota/discharging/docs/dev/notes/library/tobtob-kin/tobtob-kin.md).
 The four superior wakhan land at the four bilattice positions of the post-cosmogonic field: Škáŋ at ⊥ (absurd-aperiodic-articulation-cell), Wí at t (potential-aperiodic-articulation-cell), Makȟá at f (active-aperiodic-articulation-cell), Íŋyaŋ-residual at ⊤ (stable-aperiodic-articulation-cell, where discharging itself takes place — the cell where the contradiction discharges *from* and where the residue remains).

@@ -25,6 +25,8 @@ publish-to:
 
 When considering [GnoponEmacs](../../../../../../../../../../../engineering-science-services-section/content/text/documents/articles/notes/2025/08/08/2025-08-08-gnoponemacs.md) as a [research tool](../../../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/glossary/terms/research-tool.md) for [Relational Infinity-Topos Modality](../../../../../../../../../logic-services-section/content/text/documents/articles/notes/undated/github-internal-theory.md), I want it to be what lets me, essentially, simulate coKleisli action on my research archive as a relational topology.
 
+When considering [[id:edc48bf0-336b-4b63-8505-a3730b328c9d][GnoponEmacs]] as a [[id:0f795c39-f0fc-423f-a0f8-ca370a5750ce][research tool]] for [[id:e12123c1-2796-4058-affd-b786753be972][Relational Infinity-Topos Modality]], I want it to be what lets me, essentially, simulate coKleisli action on my research archive as a relational topology.
+
 Starting at what's immutable and unique:  the :ID: property every Org-roam node has.
 
 We're going to start with one node, called "node" representing what a node at its most general is in this modality, and so it will have a property, :node-relations:, that works like the following:
@@ -141,11 +143,3 @@ Tested query — every node whose `:node-relations:` names the pair (`instantiat
 - [Testing predicate graphs with GnoponEmacs](../../../undated/testing-predicate-graphs-with-gnoponemacs.md)
 - [Planning March 28th, 2025](../../../../../../../../../../../engineering-science-services-section/content/text/documents/articles/notes/2025/03/28/2025-03-28-babble-20250328080000-0500.md)
 ```
-
-## Earlier material
-
-When considering [GnoponEmacs](../../../../../../../../../../../engineering-science-services-section/content/text/documents/articles/notes/2025/08/08/2025-08-08-gnoponemacs.md) as a [research tool](../../../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/glossary/terms/research-tool.md) for [Relational Infinity-Topos Modality](relational-infinity-topos-modality.org.md), I want it to be what lets me, essentially, simulate coKleisli action on my research archive as a relational topology.
-
-## Earlier material
-
-When considering [[id:edc48bf0-336b-4b63-8505-a3730b328c9d][GnoponEmacs]] as a [[id:0f795c39-f0fc-423f-a0f8-ca370a5750ce][research tool]] for [[id:e12123c1-2796-4058-affd-b786753be972][Relational Infinity-Topos Modality]], I want it to be what lets me, essentially, simulate coKleisli action on my research archive as a relational topology.

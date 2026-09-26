@@ -101,8 +101,6 @@ Deskilling is the signature concept of the Bravermanian moment in the [labor-pro
 It is the consequence-side of [real subsumption](real-subsumption.md) when real subsumption proceeds through Taylorist methods, and it is the negative referent against which the [immaterial-labor-and-post-operaismo-survey](../texts/immaterial-labor-and-post-operaismo-survey.md)'s claims about cognitive capitalism are formulated.
 Contemporary algorithmic-management deskilling is treated in the [platform-and-algorithmic-work-survey](../texts/platform-and-algorithmic-work-survey.md).
 
-## Earlier material
-
 :PROPERTIES:
 :ID:       dd04f88f-a63c-48f8-9021-dc0f1a9bf979
 :node-relations: (([negating](../../../../../philosophy-services-section/content/text/glossary/terms/negating.md) . [skilling](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/skilling.md)) ([cause](../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/cause.md) . [automation](../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/automation.md)))

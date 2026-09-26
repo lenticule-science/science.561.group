@@ -23,7 +23,3 @@ Set of recognitions that flow into a stable fixed shape.
 ## Proof
 - Uses: flow and nucleus to define convergence.
 - Shows that: attractor basins exist and can be collected as carriers.
-
-## Earlier material
-
-Set of recognitions that flow into a active fixed shape.

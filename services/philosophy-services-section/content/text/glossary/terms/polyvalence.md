@@ -37,10 +37,9 @@ defines:
   - "polyvalent"
 contrasts-with: [bivalence, ambiguity]
 acts-on: sign
----
 
-## Earlier material
-
-***Polyvalence*** is when a [thing](thing.org.md) has three or more [valence](../../../../../social-science-services-section/content/text/glossary/terms/valence.md), which is to say, when it has three more ways of interacting with other things.
+## Related
 
 - [relational polyvalence](relational-polyvalence.md)
+
+***Polyvalence*** is when a [thing](thing.org.md) has three or more [valence](../../../../../social-science-services-section/content/text/glossary/terms/valence.md), which is to say, when it has three more ways of interacting with other things.

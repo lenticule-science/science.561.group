@@ -100,6 +100,4 @@ So, lack of material structuration derived from epistemic structuration that was
 
 [^1]: Postliberalism is a perhaps interesting case study here, because it was taken up by Europeans who did a similar translation, resulting in using an antagonist thought as structuring thought, which is a demonstration of a certain dynamic of this phenomenon, in which American codes are taken into the European or global code but in doing so limit the code's potential results to what the American code facilitates.
 
-## Earlier material
-
 This induces a connotative drift in the [[id:8ffcdaaf-748c-4c0a-bb9d-444350785f5d][idiom of A…4943 chars truncated…, producing synthesis. American liberal thought, though its conceptual lineage was in European thought, usually truncated that move: contradiction wasn't used as generative tension, but a sorting operation.

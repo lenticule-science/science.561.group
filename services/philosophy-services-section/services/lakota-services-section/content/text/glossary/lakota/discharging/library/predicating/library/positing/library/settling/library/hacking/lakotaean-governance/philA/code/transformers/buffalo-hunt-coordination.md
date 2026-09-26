@@ -87,15 +87,5 @@ The Buffalo Field Campaign, the Tanka Bar enterprise, the buffalo reintroduction
 - Estes, *Our History is the Future* (2019) — the extermination's continuing substrate-effects and contemporary buffalo-restoration.
 - *Bring the Buffalo Home: Restoring American Indian Foodways and Lifeways through the Reintroduction of Bison*, various sources from the InterTribal Buffalo Council (since 1991).
 
-## Earlier material
-
 **Akicita-installation step.** A hunt-akicita-band is installed (cf. [akicita-band](../../../philB/code/structures/akicita-band.md)) with scope-action $X = \mathrm{this\text{-}hunt}$.
 The band's $\langle B, \texttt{scope-potential}\rangle$ cell goes to $\mathbf{t}$; its $\langle B, \texttt{enforcement-authority}\rangle$ cell follows.
-
-**Distribution step.** Once the herd is taken, the kill is distributed.
-The distribution-rule is structurally non-property-based: the kill belongs to *whoever made it*, but the kill *flows* through the oyate by the gift-economy redistribution morphism (see [gift-economy-redistribution](gift-economy-redistribution.md)) — the kill-maker shares with their kin, who share with their kin, until the whole oyate has received.
-The wówačhantognaka (generosity) virtue is the distribution-shaping force.
-
-**Akicita-revocation step.** When the hunt completes, the scope-potential cell drops automatically (cf. [akicita-band](../../../philB/code/structures/akicita-band.md) §"Revocation at scope-completion").
-The akicita's enforcement-authority lapses.
-Any sanctions issued during the scope drop with it: a hunter whose bow was broken is *not* under continuing sanction after the hunt.

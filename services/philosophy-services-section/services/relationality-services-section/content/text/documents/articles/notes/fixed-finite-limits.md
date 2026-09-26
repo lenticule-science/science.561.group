@@ -21,11 +21,3 @@ lattice,
 {{ act_info(page.meta) }}
 
 {{ act_nav(page.meta) }}
-
-## Earlier material
-
-[ProfileFiniteLimits](profile-finite-limits.md) already witnesses finite limits
-inside the potential profile.  Restricting those limits to the fixed invariant
-lattice,
-`(ProfileFiniteLimits FixedInvariantLattice)`, earns
-***FixedFiniteLimits***.

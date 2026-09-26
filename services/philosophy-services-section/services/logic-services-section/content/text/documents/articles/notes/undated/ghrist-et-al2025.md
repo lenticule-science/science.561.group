@@ -37,6 +37,4 @@ The paper's identified future direction — extension to "arbitrary base spaces 
 
 The structural resonance with the corpus is strong: the corpus's [closure 2-monad](../../research/2026/07/31/lenticule-import/yet-another-unsorted-archive-dump/predication-categories/_archive/bucket-3/morphisms/closure-2-monad.md) is KZ lax-idempotent — Tarski-style and Tarski–Lawvere-style fixed points are the same machinery the Lawvere Laplacian uses. The cellular extension is plausibly a natural step that respects the corpus's existing fixed-point infrastructure.
 
-## Earlier material
-
 The structural resonance with the corpus is strong: predication categories' [closure 2-monad](../../research/2026/07/31/lenticule-import/yet-another-unsorted-archive-dump/predication-categories/_archive/bucket-2/morphisms/closure-2-monad.md) is KZ lax-idempotent — Tarski-style and Tarski–Lawvere-style fixed points are the same machinery the Lawvere Laplacian uses. The cellular extension is plausibly a natural step that respects predication categories' existing fixed-point infrastructure.

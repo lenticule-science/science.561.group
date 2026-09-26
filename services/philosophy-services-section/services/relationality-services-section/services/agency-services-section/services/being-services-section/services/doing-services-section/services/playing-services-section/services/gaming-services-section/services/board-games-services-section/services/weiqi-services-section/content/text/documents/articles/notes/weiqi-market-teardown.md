@@ -152,8 +152,3 @@ Measured 2026-09-04 by the meet-then-beat procedure: six arenas, each read from 
 | identity, mascot, lineages | no incumbent has a mascot that teaches during play (BadukPop's Aji is decorative), none has lineages or styles as a feature, none recognizes a player's style (unverified this pass) | **source-only**: Keya, the opponent cast, the lineage graph, lineages as signatures, the Lakota hypothesis, all specified; nothing on the live site | Keya names a concept during play; a lineage recruits a player from their measured signature | weiqi-web and the signature instrument; depends on games existing (the play arena) |
 
 BEAT hypotheses after this pass: concept recognition at move time holds (re-confirmed, deployed); concept-named review holds as an unoccupied surface (source-only); lineages as measured signatures holds against every surface checked (unverified pass, no product exists). The wedge that completes a real handoff and makes the beat more testable is the review face: SGF in, engine readouts through the FOUR envelope, mistakes named by the kernel's semantic events, on the live site. It is the smallest gap closure that no incumbent can copy without a glossary the engine executes, and it is the same instrument the research program needs for the cycle-space experiment.
-
-## Earlier material
-
-Sourced with URLs inline. Companion to the [Weiqi Platform Plan](weiqi-platform-plan.md) —
-this document is the evidence base for the feature-parity checklist below.

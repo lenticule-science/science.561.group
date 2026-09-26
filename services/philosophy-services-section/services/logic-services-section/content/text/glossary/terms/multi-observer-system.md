@@ -80,9 +80,4 @@ Open downstream:
 
 Pairs forward with the [agentic-multi-observer-disagreement example](../../documents/articles/notes/undated/benchmark-multi-observer-disagreement.md) (a small computed instance, queued in tasks).
 
-## Earlier material
-
 The multi-observer system is the corpus's first object explicitly modelling **agency at the level of perspectives** rather than within a single closure dynamics. The [multi-observer settlings question](../../documents/articles/research/2026/07/31/lenticule-import/yet-another-unsorted-archive-dump/predication-categories/_archive/bucket-3/questions/multi-observer-settlings.md) asked for this; this definition operationalises it.
-
-The multi-observer system is the corpus's first object explicitly modelling **agency at the level of perspectives** rather than within a single closure dynamics.
-The [multi-observer settlings question](../../../../../relationality-services-section/services/agency-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/knowing/content/spatiotemporal-knowledge-presheaf/content/knowledge-presheaf-category/content/questions/multi-observer-settlings.md) asked for this; this definition operationalises it.

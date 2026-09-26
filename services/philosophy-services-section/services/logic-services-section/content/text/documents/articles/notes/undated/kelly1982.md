@@ -29,6 +29,4 @@ Specialized to the case $\mathbf{V} = \mathsf{Q}$ for $\mathsf{Q}$ a commutative
 
 Foundational reference for the Q-enriched-sheaves-on-Grothendieck-sites work. Cited where the proof argument relies on standard enriched category theory facts (Q-functor preserving weighted limits, etc.).
 
-## Earlier material
-
 The canonical reference for enriched category theory. Used in predication categories' [bilattice-valued cohomology chapter](../../research/2026/07/31/lenticule-import/yet-another-unsorted-archive-dump/predication-categories/_archive/bucket-2/narratives/bilattice-cohomology-opener.md) for two structural facts that ground the [Lawvere Laplacian extension theorem](../../research/2026/07/31/lenticule-import/yet-another-unsorted-archive-dump/predication-categories/_archive/bucket-2/theorems/lawvere-laplacian-grothendieck-sites.md):

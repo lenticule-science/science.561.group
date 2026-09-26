@@ -2357,9 +2357,3 @@ This allows formalizers to **chart derivation chains** intentionally, targeting 
 ---
 
 This derivation demonstrates the system's capacity not just for **self-reflexive formalization,** but for **predictive insight** into its own evolution—providing a structured method for steering relational architecture development toward precise, necessary outcomes.
-
-## Earlier material
-
-- [definition](../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/glossary/terms/definition.md)::
-
-A network is **form-stable** if:

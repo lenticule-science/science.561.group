@@ -32,7 +32,3 @@ intersection is reached.
 - Uses: [Social Flow](./social-flow.md) and agent data.
 - Produces: aligned agents.
 - Shows that: coordination can be modelled as a flow to stable intersections.
-
-## Earlier material
-
-Attempts to align recognitions across agents by flowing until a active intersection is reached.

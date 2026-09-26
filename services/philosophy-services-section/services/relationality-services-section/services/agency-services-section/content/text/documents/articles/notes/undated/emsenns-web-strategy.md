@@ -35,7 +35,5 @@ Operate as a voice guiding people to pursue Black Liberation and Indigenous Sove
 ### Ko-fi
 ### Letters to the Web
 
-## Earlier material
-
 ## Aim
 By [talking](../../../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/triage/undated/talking) on the [Web](../../../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/triage/undated/Web), I am [aiming](../../../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/triage/undated/aiming) toward the [Pursuit Of Black Liberation and Indigenous Sovereignty](Pursuit Of Black Liberation and Indigenous Sovereignty) through [storytelling](../../../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/triage/undated/storytelling) that [../../../../../slop/relationality/ai-generated-relationality/relationality-slop-2026-03-03/terms/relating|relates](../../../../../../../../../../../../../public-services-section/services/personal-services-section/services/slop/relationality/ai-generated-relationality/relationality-slop-2026-03-03/terms/relating|relates)

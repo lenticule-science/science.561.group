@@ -514,7 +514,3 @@ The **Domain of Relating:**
     
 
 This domain serves as the **foundational architecture** upon which all further formal relational systems must be built.
-
-## Earlier material
-
-**What mechanism performs the potential work of structuring differentiation into positionality, without relying on pre-existing relational scaffolding?**
