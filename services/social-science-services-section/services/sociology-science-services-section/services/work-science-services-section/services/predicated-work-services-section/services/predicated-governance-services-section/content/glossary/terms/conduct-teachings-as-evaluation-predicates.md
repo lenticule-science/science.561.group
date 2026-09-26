@@ -66,7 +66,7 @@ What this requires structurally: the closure-rule subsystem $\mathcal{S}_{\mathr
 
 This is the structural commitment community-judgment carries: the community's witnessing-practice *is* the operationalization. The closure-rule subsystem's content is built up by the community's accumulated history of witnessing, naming, and accepting "this counts as bravery, that does not." The substrate-algebraic content of "community judgment" is exactly this accumulated witnessing.
 
-## Settling regime
+## Regime
 
 A conduct-teachings discipline is typically Scott-continuous: each conduct-witness fires the relevant teaching cell finitely; the standing cell aggregates finitely-many teaching cells via $\bigwedge$. Closure ordinal $\kappa = \omega$.
 

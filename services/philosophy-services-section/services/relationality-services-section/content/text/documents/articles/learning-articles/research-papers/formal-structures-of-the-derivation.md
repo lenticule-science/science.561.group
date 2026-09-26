@@ -102,7 +102,7 @@ Commutation is a strong condition. In general, two operations on an algebraic st
 
 Step 16 produces the derivation's most striking structural consequence.
 
-A [discipline](../../notes/discipline.md) is a structural pattern that respects both flow and nucleus. It does not disrupt either operation: disciplined structures flow to disciplined structures, and the nucleus of a disciplined structure is disciplined. A [regime](../../../../../../../../../../../engineering-services-section/content/text/glossary/terms/regime.md) is the collection of structures that a discipline stabilizes.
+A [discipline](../../notes/discipline.md) is a structural pattern that respects both flow and nucleus. It does not disrupt either operation: disciplined structures flow to disciplined structures, and the nucleus of a disciplined structure is disciplined. A [regime](../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/regime.md) is the collection of structures that a discipline stabilizes.
 
 A [filter](../../notes/filter.md) is a discipline that goes further: it commutes not just with the specific flow and nucleus of the ambient geometry, but with all possible flows and all possible nuclei. A filter is maximally well-behaved — it is compatible with every way of transforming and every way of consolidating.
 

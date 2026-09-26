@@ -1,10 +1,10 @@
 ---
 title: "Four Regimes of Natural Existence"
-description: "The four mutually-exclusive, jointly-exhaustive settling regimes Obsmetrologia proves over the closure ordinal κ, read as nature: thermodynamic, causal, quantum, and kinetic existence — a descent from genuine novelty at the aperiodic top to full settlement at the finite floor."
+description: "The four mutually-exclusive, jointly-exhaustive regimes Obsmetrologia proves over the closure ordinal κ, read as nature — each the regime of one stage of the language: thermodynamic, causal, quantum, and kinetic existence — a descent from genuine novelty at the aperiodic top to full settlement at the finite floor."
 contains: [thermodynamic-existence, causal-existence, quantum-existence, kinetic-existence]
 ---
 
-This topic gathers the four terms that name natural existence's four settling
+This topic gathers the four terms that name natural existence's four
 regimes — [thermodynamic existence](../terms/thermodynamic-existence.md),
 [causal existence](../terms/causal-existence.md),
 [quantum existence](../terms/quantum-existence.md), and
@@ -48,12 +48,12 @@ regime ladder
 (`lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/services/multi-agent-computer-system-engineering-services-section/apps/lagoon/content/text/documents/articles/notes/2026/08/29/2026-08-29-lagoon-architecture.md`,
 "The regime ladder", around line 1444):
 
-| regime (natural existence) | κ | H¹ | Lean sub-corpus | proof kind (LAGOON) | spacetime field | physics register |
-|---|---|---|---|---|---|---|
-| kinetic | `κ ≥ ω₁` (aperiodic) | `≠ 0`, never drains | `KineticTheory/` | witnessed execution | informational | "it from bit" |
-| quantum | `ω < κ < ω₁` (transfinite-bounded) | `≠ 0` | `QuantumContextuality/` | obstruction witness | quantum | quantum mechanics |
-| causal | `κ = ω` (Scott) | `= 0` | `CausalSets/` (`Causal/RegimeSection.lean`) | settlement | classical | classical mechanics |
-| thermodynamic | `κ < ω` (strict) | `= 0` | `Thermodynamics/` | exhaustion | thermal | thermodynamics |
+| regime (natural existence) | κ | stage | H¹ | Lean sub-corpus | proof kind (LAGOON) | spacetime field | physics register |
+|---|---|---|---|---|---|---|---|
+| kinetic | `κ ≥ ω₁` (aperiodic) | articulating | `≠ 0`, never drains | `KineticTheory/` | witnessed execution | informational | "it from bit" |
+| quantum | `ω < κ < ω₁` (transfinite-bounded) | predicating | `≠ 0` | `QuantumContextuality/` | obstruction witness | quantum | quantum mechanics |
+| causal | `κ = ω` (Scott) | positing | `= 0` | `CausalSets/` (`Causal/RegimeSection.lean`) | settlement | classical | classical mechanics |
+| thermodynamic | `κ < ω` (strict) | settling | `= 0` | `Thermodynamics/` | exhaustion | thermal | thermodynamics |
 
 The last two columns come from the monograph
 `lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/math-services-section/services/obsmetrological-services-section/content/text/documents/articles/notes/2026/06/17/2026-06-17-mysterious-spacetime-geometries-of-the-void.md`,
@@ -64,7 +64,9 @@ register, not a second theory.
 
 ## The descent
 
-The four regimes are ordered, and the order runs one way. `Regime.lean`'s
+The four regimes are ordered, and the order runs one way: it is the order of the language spine, articulate → predicate → posit → settle, read as nature. Kinetic existence articulates, producing genuine novelty that can only be witnessed; quantum existence predicates, and contextuality is the question whether one global section holds across every context; causal existence posits, evidence propagating along light cones by directed finite prefixes; thermodynamic existence settles, and settling stops.
+
+The regimes are not four kinds of settling; each is one stage's (see [regime](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/regime.md)). `Regime.lean`'s
 own implications (`fin_scott`, `fin_cof`) make a finite base the most
 constrained case — it forces both Scott-continuity and countable
 cofinality — so the strict-finite regime is nested inside the wider
@@ -124,7 +126,7 @@ modules — `Thermodynamics/`, `QuantumContextuality/`, `ReactionNetworks/`,
 `DenseMatter/` — carry zero regime-bearing theorems; `KineticTheory/`
 (11), `CausalSets/` (8), and `AperiodicOrder/` (42) are populated.
 
-## Lineage
+## Grounding
 
 This four-regime ladder is read as nature within Lenticule Science's own
 metaphysical research program, relationality — the Leader's single-author

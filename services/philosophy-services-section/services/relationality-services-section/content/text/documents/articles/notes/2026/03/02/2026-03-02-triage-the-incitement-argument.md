@@ -226,7 +226,7 @@ This is residuation: the *residual* (right adjoint) of flow-then-closure is clos
 
 **Definition 16.1** ([Discipline](../../../../../../terms/discipline.md)). An endomorphism $d : H \to H$ on the [Heyting](../../../../../../../general/people/arend-heyting.md) algebra is a *discipline* if it commutes with some flows and some nuclei: $d \circ F = F \circ d$ and $d \circ J = J \circ d$ for specific flow operators $F$ and nucleus operators $J$.
 
-**Definition 16.2** ([Regime](../../../../../../../../../../../../../engineering-services-section/content/text/glossary/terms/regime.md)). The *regime* of a discipline $d$ is its fixed-point set: $\mathrm{Fix}(d) = \{a \in H \mid d(a) = a\}$.
+**Definition 16.2** ([Regime](../../../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/regime.md)). The *regime* of a discipline $d$ is its fixed-point set: $\mathrm{Fix}(d) = \{a \in H \mid d(a) = a\}$.
 
 **Definition 16.3** ([Filter](../../../filter.md)). A discipline that commutes with *all* flows and *all* nuclei is a *filter*. Formally, $d$ is a filter if $d \circ F = F \circ d$ for every flow $F$ and $d \circ J = J \circ d$ for every [nucleus](../../../../../../../../services/agency-services-section/content/text/documents/articles/research/predicated-agentic-orchestration-platform/library/relational-hyperverse-repository/math/nucleus.md) $J$.
 

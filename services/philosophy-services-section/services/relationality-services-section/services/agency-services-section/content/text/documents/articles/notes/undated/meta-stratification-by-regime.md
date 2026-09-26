@@ -32,7 +32,7 @@ Then exactly one of the following holds:
 
 The classification is determined by the *rule-language fragment* of $\mathcal{S}$ — a syntactic invariant.
 
-## Why "supremum-of-settling-regime"
+## Why "supremum-of-realized-regime"
 
 A closure-rule system $\mathcal{S}$ admits *many* settlings $v_\mathcal{S}^U$, one per increment sequence $U$.
 The settlings can have different closure ordinals depending on $U$.
@@ -55,18 +55,18 @@ The rule-language fragment of $\mathcal{S}$ — which formulas $\phi$ are allowe
 - **$\Pi_2$-fragment or higher** (alternating quantifiers, etc.): the closure operator can have $L_{\mathrm{ns}}$ uncountable. $\mathcal{S} \in \mathscr{M}^{\mathrm{meta}}_{\mathrm{aper}}$.
 
 This is the syntactic-side characterization.
-The semantic-side characterization (via supremum-of-settling-regime) agrees by the [closure-rule language theorem](../../research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/knowing/content/spatiotemporal-knowledge-presheaf/content/parameter-base-category/content/parameter-base-topology/content/settling-moduli-prestack/content/meta-moduli-prestack/concepts/closure-rule-language.md): rule-language fragment determines achievable settling regimes.
+The semantic-side characterization (via supremum-of-realized-regime) agrees by the [closure-rule language theorem](../../research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/knowing/content/spatiotemporal-knowledge-presheaf/content/parameter-base-category/content/parameter-base-topology/content/settling-moduli-prestack/content/meta-moduli-prestack/concepts/closure-rule-language.md): rule-language fragment determines achievable regimes.
 
 ## Proof
 
 The proof has three pieces: stratification well-definedness, mutual disjointness, and covering completeness.
 
 **Well-definedness.** Each closure-rule system $\mathcal{S}$ has a well-defined rule-language fragment (the smallest fragment containing all rules of $\mathcal{S}$).
-By the [closure-rule language theorem](../../research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/knowing/content/spatiotemporal-knowledge-presheaf/content/parameter-base-category/content/parameter-base-topology/content/settling-moduli-prestack/content/meta-moduli-prestack/concepts/closure-rule-language.md), this fragment determines the maximum settling-regime $\mathcal{S}$ can produce.
+By the [closure-rule language theorem](../../research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/knowing/content/spatiotemporal-knowledge-presheaf/content/parameter-base-category/content/parameter-base-topology/content/settling-moduli-prestack/content/meta-moduli-prestack/concepts/closure-rule-language.md), this fragment determines the maximum realized regime $\mathcal{S}$ can produce.
 Hence the meta-regime assignment is well-defined and depends only on the closure-equivalence class of $\mathcal{S}$ (closure-equivalent systems have the same generated closure operator, hence the same achievable settlings, hence the same maximum regime).
 
 **Mutual disjointness.** The four rule-language fragments are nested: strict $\subset$ SC $\subset$ $\Pi_1$ $\subset$ $\Pi_2$.
-The meta-regime is the *finest* fragment $\mathcal{S}$ requires — equivalently, the *highest* settling-regime $\mathcal{S}$ can produce.
+The meta-regime is the *finest* fragment $\mathcal{S}$ requires — equivalently, the *highest* realized regime $\mathcal{S}$ can produce.
 This assignment is unique: a rule system is in exactly one meta-stratum.
 
 **Covering completeness.** Every closure-rule system has *some* rule-language fragment (the trivial fragment covers all rules).
@@ -103,7 +103,7 @@ The meta-stratification and the settling-level regime stratification are *compat
 | Meta | rule system $\mathcal{S}$ | maximum $\kappa$ over all $U$ |
 
 The settling-level dichotomy classifies *one settling at a time*; the meta-level classification asks "what's the worst-case regime for this rule system, ranging over $U$?"
-The two are related by: meta-regime of $\mathcal{S}$ is the supremum of settling-regimes of $v_\mathcal{S}^U$ as $U$ varies.
+The two are related by: meta-regime of $\mathcal{S}$ is the supremum of realized regimes of $v_\mathcal{S}^U$ as $U$ varies.
 
 ## Connection to the realizability program
 

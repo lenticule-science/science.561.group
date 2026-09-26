@@ -40,5 +40,5 @@ brought in, not read off this review alone.
 
 ## Bridges
 
-- To [the note on the glass transition as a settling regime change](../notes/2026/09/04/2026-09-04-note-on-the-glass-transition-as-a-settling-regime-change.md)
+- To [the note on the glass transition as a regime change](../notes/2026/09/04/2026-09-04-note-on-the-glass-transition-as-a-regime-change.md)
   — the note that states the problem from this review's own framing (§1).

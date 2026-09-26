@@ -67,7 +67,7 @@ description: The liberalism legitimacy crisis is the structural-condition object
 **The liberalism legitimacy crisis** is the structural-condition object that arises when liberalism's constitutive contradictions can no longer be routed into institutional management — when the closure rules of the late-liberal social settling can no longer resolve the contradictions they produce fast enough to prevent their accumulation as experienced incoherence.
 It is the object-instance of [destabilization](../../../undated/destabilization.md) in the contemporary late-liberal formation: what destabilization looks like in the specific predicate-fiber space of liberal political life.
 
-In predication-categories terms: the liberalism legitimacy crisis is the settling $\mathcal{S}_{LLC}$ — a sub-configuration of the late-liberal social base — characterized by an aperiodic fiber-settling regime in the political-legitimacy predicate dimensions.
+In predication-categories terms: the liberalism legitimacy crisis is the settling $\mathcal{S}_{LLC}$ — a sub-configuration of the late-liberal social base — characterized by an aperiodic fiber regime in the political-legitimacy predicate dimensions.
 Specifically:
 
 - The predicates *liberalism delivers on its promises* and *liberalism can manage its contradictions* are held at $\top$ (overdetermined: simultaneously affirmed in official discourse and denied in experienced reality)
@@ -92,7 +92,7 @@ If the $\top$-valued predicates can be kept at [coherent confusion](../../../../
 ## Historical instances
 
 **The 1970s rupture.** The end of Bretton Woods, the 1973 oil shocks, and the breakdown of the welfare-state consensus mark the onset of the contemporary liberalism-legitimacy-crisis settling.
-Streeck (2014) reads the subsequent response — inflation management, then debt expansion, then austerity — as a series of crisis-management instruments rather than resolutions: each instrument addresses the crisis's symptoms while the underlying settling regime remains aperiodic.
+Streeck (2014) reads the subsequent response — inflation management, then debt expansion, then austerity — as a series of crisis-management instruments rather than resolutions: each instrument addresses the crisis's symptoms while the underlying regime remains aperiodic.
 
 **The 2008 collapse and non-resolution.** The 2008 financial crisis exposed the structural unsustainability of the post-1970s management regime.
 The institutional response (bank rescue, quantitative easing, austerity) addressed symptoms without resolving the contradictions; the post-2008 decade continued the destabilized settling under successive management instruments, confirming the aperiodic-regime characterization.

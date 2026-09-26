@@ -46,7 +46,7 @@ $$r_{\mathrm{seq}, i \to j}: \bigl[\bigwedge_{\phi \in G_{T_i}} v(\phi) = v^*_{T
 
 Each rule in $\mathcal{S}_{T_j}$ has $v(\langle T_j, \texttt{activation-permitted}\rangle) = \mathbf{t}$ added to its antecedent. Until $T_i$ settles, $T_j$'s rules are syntactically present in $\mathcal{S}_{\mathrm{op}}$ but never fire. After $T_i$ settles, the activation-permitted cell reaches $\mathbf{t}$, and $T_j$'s rules become eligible to fire.
 
-This remains $\Pi_1$: activation guards are additional conjuncts. The settling regime is the same as AND-decomposition plus one additional closure-step per sequencing edge. For a chain of $n$ tasks, the closure ordinal of the composed system is the sum of component ordinals plus $n$ (one activation step per edge), still within the strict regime for finite $n$ with strict components.
+This remains $\Pi_1$: activation guards are additional conjuncts. The regime is the same as AND-decomposition plus one additional closure-step per sequencing edge. For a chain of $n$ tasks, the closure ordinal of the composed system is the sum of component ordinals plus $n$ (one activation step per edge), still within the strict regime for finite $n$ with strict components.
 
 Note: sequential ordering at the *subtask* level is distinct from the dependency-edge mechanism of [workflow-composition](../../../../../../../sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/glossary/concepts/workflow-composition.md). Workflow edges encode data flow (output cells of $T_i$ are inputs to $T_j$); sequential activation guards encode temporal ordering without necessarily transferring cell content. Both mechanisms can coexist.
 

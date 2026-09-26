@@ -64,7 +64,7 @@ A restorative response unfolds across stages:
 4. *Reparation acts.* The harming party performs reparation; witnesses settle reparation-cells. The substrate accumulates evidence of restoration.
 5. *Reintegration.* When reparation-cells are settled at $\mathbf{t}$, a closure rule retires the `repair-needed` cell and asserts `relation-restored` at $\mathbf{t}$. The harming party is reintegrated into the community; their `community-member-in-good-standing` cell settles back at $\mathbf{t}$.
 
-The process is *multi-cycle*: each stage may take multiple operational-loop cycles before its cells settle. The settling regime is typically Scott-continuous (each stage's settling depends on finite prior history) but can lift to transfinite-bounded for harms whose restoration requires intergenerational repair (e.g., colonial harms requiring restoration across many generations).
+The process is *multi-cycle*: each stage may take multiple operational-loop cycles before its cells settle. The regime is typically Scott-continuous (each stage's settling depends on finite prior history) but can lift to transfinite-bounded for harms whose restoration requires intergenerational repair (e.g., colonial harms requiring restoration across many generations).
 
 ## Restorative accountability and Hohfeldian relations
 

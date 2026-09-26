@@ -178,7 +178,7 @@ being part of how we like, distribute software between inferential and
 deterministic software. like, grading processes and stuff is all critical in
 agentic programming, agentic operating systems." The corpus states that ladder
 formally in one place, Layer 3.5 of the [LAGOON architecture](../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/apps/computer-deployment-engine/content/text/documents/articles/notes/2026/08/29/2026-08-29-lagoon-architecture.md):
-the four proved settling regimes, "thermodynamic, causal, quantum, kinetic,
+the four proved regimes, "thermodynamic, causal, quantum, kinetic,
 corresponding in order to finite/strict, Scott, transfinite-bounded,
 aperiodic," each determining what kind of proof is possible there.
 Thermodynamic is proof by exhaustion; causal is proof by settlement, "monotone

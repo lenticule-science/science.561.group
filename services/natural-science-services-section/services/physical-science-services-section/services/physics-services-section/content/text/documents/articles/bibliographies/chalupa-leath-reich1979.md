@@ -40,6 +40,6 @@ this section's measurement actually uses is a separate, later result (Holroyd 20
 
 ## Bridges
 
-- To [the note on the glass transition as a settling regime change](../notes/2026/09/04/2026-09-04-note-on-the-glass-transition-as-a-settling-regime-change.md)
+- To [the note on the glass transition as a regime change](../notes/2026/09/04/2026-09-04-note-on-the-glass-transition-as-a-regime-change.md)
   — §1 introduces bootstrap percolation from this paper; §3 reads this section's
   `bootstrap2` measurement against it and against Holroyd's 2D threshold.

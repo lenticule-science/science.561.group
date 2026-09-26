@@ -46,7 +46,7 @@ Geometry carves internal structure:
 
 **[Discipline](../../../discipline.md)** is a structural pattern that respects both flow and nucleus. A discipline is a consistent way of organizing the relational field — a pattern that does not conflict with how things move or how things settle.
 
-**[Regime](../../../../../../../../../../../../../engineering-services-section/content/text/glossary/terms/regime.md)** is what a discipline stabilizes — the set of structures that a discipline holds fixed.
+**[Regime](../../../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/regime.md)** is what a discipline stabilizes — the set of structures that a discipline holds fixed.
 
 **[Filter](../../../filter.md)** is a discipline that commutes with *all* nuclei and *all* flows. A filter is the strongest kind of discipline — one so compatible with the dynamics that it can carve out a self-contained world.
 

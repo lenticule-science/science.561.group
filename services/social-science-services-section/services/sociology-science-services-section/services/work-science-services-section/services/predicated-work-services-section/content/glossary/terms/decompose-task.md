@@ -24,7 +24,7 @@ $$r_{\mathrm{compose}}: \bigwedge_{i=1}^{n} \bigl(\bigwedge_{\phi \in G_{T_i}} v
 
 The decomposition graph (parent → subtasks → sub-subtasks → ...) must be acyclic — the math's settling-monotonicity property forces this: a cyclic decomposition would require a cell's value to depend on itself through closure, which is admissible only as a fixed-point condition (which collapses to "no progress"). Acyclicity is a structural commitment of the work vocabulary's [task](../../../../../../../../../../library/theories/humanities/theories/sociology/theories/work/terms/task.md) (subtasks compose hierarchically), realized as a math property here.
 
-## Settling regime under decomposition
+## Regime under decomposition
 
 Decomposition preserves regime: if every $\mathcal{S}_{T_i}$ is in the strict regime and $\mathcal{S}_T$ is in the strict regime, the composed system $\mathcal{S}_T \cup \bigcup_i \mathcal{S}_{T_i} \cup \{r_{\mathrm{compose}}\}$ is in the strict regime (finite union of finite-stabilization systems, plus one finitary composition rule). For Scott-continuous, transfinite-bounded, and aperiodic regimes, the regime of the composed system is the maximum regime of any component plus the regime of $r_{\mathrm{compose}}$.
 

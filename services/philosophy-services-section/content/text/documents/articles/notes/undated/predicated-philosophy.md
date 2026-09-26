@@ -1,12 +1,12 @@
 ---
 derives-methods-from-theory: [predication-categories, philosophy]
 title: Predicated Philosophy
-description: "A theory of philosophy on the predication-categories mathematics: philosophical traditions as predicate-category configurations, closure-rule disciplines, and settling regimes over the entities the tradition holds to populate the world."
+description: "A theory of philosophy on the predication-categories mathematics: philosophical traditions as predicate-category configurations, closure-rule disciplines, and regimes over the entities the tradition holds to populate the world."
 ---
 
 # Predicated Philosophy
 
-A theory of [philosophy](../../../../../_index.md) on the [predication-categories](../../../../../../math/theories/categories/theories/predication-categories) mathematics: philosophical traditions as predicate-category configurations, closure-rule disciplines, and settling regimes over the entities the tradition holds to populate the world. Metaphysical ontologies, epistemic stances, ethical systems, and cosmologies are exhibited as specific structures on this substrate.
+A theory of [philosophy](../../../../../_index.md) on the [predication-categories](../../../../../../math/theories/categories/theories/predication-categories) mathematics: philosophical traditions as predicate-category configurations, closure-rule disciplines, and regimes over the entities the tradition holds to populate the world. Metaphysical ontologies, epistemic stances, ethical systems, and cosmologies are exhibited as specific structures on this substrate.
 
 Sibling-as-approach to the tradition-organized subtheories of [philosophy/theories/](../../../..) ([western/](../../../../western), [buddhist/](../../../../buddhist), [caribbean/](../../../../caribbean), [indigenous/](../../../../indigenous), [logic/](../../../../logic), [ontological-turn/](../../../../ontological-turn), [relationality/](../../../../relationality)). Predicated-philosophy is not itself a tradition; it is the substrate-algebraic shape that traditions take when formalized on the predication mathematics.
 

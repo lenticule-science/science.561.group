@@ -17,6 +17,6 @@ Lenticule Science works with Red Cup Engineering, Coesite Operations, and Causew
 - [`philosophy-services-section`](services/philosophy-services-section/README.md) — philosophical material, including relationality, the Group's own metaphysical research program.
 - [`social-science-services-section`](services/social-science-services-section/README.md) — research on people, institutions, collective activity, and social relations.
 
-`natural-science-services-section` frames nature under the four settling regimes proved in Obsmetrologia — kinetic, quantum, causal, thermodynamic — gathered in its [four regimes of natural existence](services/natural-science-services-section/content/text/glossary/topics/four-regimes-of-natural-existence.md) topic.
+`natural-science-services-section` frames nature under the four regimes proved in Obsmetrologia — kinetic, quantum, causal, thermodynamic — gathered in its [four regimes of natural existence](services/natural-science-services-section/content/text/glossary/topics/four-regimes-of-natural-existence.md) topic.
 
 - [consumer-goods-science-services-section](services/consumer-goods-science-services-section/README.md) — research supporting the 561 Group consumer-goods program.

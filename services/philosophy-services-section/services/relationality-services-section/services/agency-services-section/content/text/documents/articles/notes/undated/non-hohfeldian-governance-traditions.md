@@ -11,7 +11,7 @@ description: The library's indigenous-governance-traditions survey and black-rad
 The library's [indigenous-governance-traditions survey](../../research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/content/individual/content/agent/actuating/content/actuator/embodying/content/body/integrating/content/drone/swarming/content/swarm/library/theories/humanities/theories/sociology/theories/work/theories/governance/texts/indigenous-governance-traditions-survey.md) and [black-radical-governance survey](../../../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/triage/black-radical-governance-survey.md) document governance traditions that operate by structurally different principles than the Hohfeldian rights-and-duties frame.
 This narrative names what predicated-governance imports from each — substrate-algebraic patterns the math admits but the Hohfeldian apparatus alone does not surface.
 
-The math program is *frame-neutral*: it provides closure-rule subsystems, jural-relation entities, settling regimes, cohomological invariants.
+The math program is *frame-neutral*: it provides closure-rule subsystems, jural-relation entities, regimes, cohomological invariants.
 What governance pattern a community implements is a choice of which closure rules go in $\mathcal{S}_{\mathrm{op}}$; the math discriminates patterns by their cohomology but does not privilege any.
 
 This means non-Hohfeldian patterns are not "exceptions to" the framework; they are *first-class citizens* of it.

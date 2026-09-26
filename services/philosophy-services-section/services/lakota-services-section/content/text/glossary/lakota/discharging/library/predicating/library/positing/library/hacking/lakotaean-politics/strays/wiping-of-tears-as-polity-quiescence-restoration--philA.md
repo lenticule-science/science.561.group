@@ -47,7 +47,7 @@ The polity does not require a punitive apparatus to maintain itself across loss;
 The contrast with punitive substrate machinery is sharp.
 A punitive operation produces cells of the form $\langle \text{offender}, \texttt{liable-for}, \text{harm}\rangle$ and downstream cells over sanction, separation, and confinement.
 A restorative operation like the wiping-of-tears produces cells of the form $\langle \text{relation}, \texttt{repaired}\rangle$ and downstream cells over re-integration of the affected parties into the polity's settling.
-Different cells, different closure-rule subsystems, different settling regimes.
+Different cells, different closure-rule subsystems, different regimes.
 
 ## Polity-scale application
 

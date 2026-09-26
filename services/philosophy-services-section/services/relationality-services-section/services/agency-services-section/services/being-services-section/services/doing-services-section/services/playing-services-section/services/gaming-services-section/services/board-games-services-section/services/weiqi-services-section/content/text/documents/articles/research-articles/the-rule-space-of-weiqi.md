@@ -10,7 +10,7 @@ what-is-proved:
   - "WeiqiObsmetrologia.Admission: legality as a HoareProgram precondition, invariant transported along composition, for one fixed point of the rule space (positional superko, suicide illegal)"
   - "Obsmetrologia/CausalSets/Causal/Cone.lean and Order.lean: future and past cones over a finite causal order, a proved partial order; finite causal sets settle in the strict regime"
   - "Obsmetrologia/Language/Predicating/CurryHowardLambek.lean: the simply-typed correspondence and chl_quartet_is_nuclear"
-  - "the closure-rule language (obsmetrological section, closure-rule/): a rule's fragment determines its settling regime"
+  - "the closure-rule language (obsmetrological section, closure-rule/): a rule's fragment determines its regime"
   - "Outside the house: multiway systems with rule inclusions are n-fold categories (Arsiwalla, Gorard, Elshatlawy 2022); global confluence is necessary and not sufficient for causal invariance (Gorard 2020)"
 description: Swept 2026-09-04, one reader per lineage, one refuter per claim, 35 claims verified.
 ---

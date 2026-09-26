@@ -126,7 +126,7 @@ It includes:
 - `Flow.*` reads closure as dynamics: firing blowups, curvature regimes, free-energy Lyapunov descent, Lawvere Laplacian spectral gap, and transfinite closure flow.
 
 `Real.
-InternalReals` is a large constructive module deriving rationals and Cauchy reals internally, tying completion to the Scott-continuous settling regime.
+InternalReals` is a large constructive module deriving rationals and Cauchy reals internally, tying completion to the Scott-continuous regime.
 It is explicit about constructive scope and avoids claiming classical trichotomy.
 
 ## Aperiodicity and Finite Witnesses

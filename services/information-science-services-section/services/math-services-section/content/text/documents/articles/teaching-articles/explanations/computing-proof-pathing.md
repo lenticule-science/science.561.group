@@ -29,7 +29,7 @@ Two cautions. First, *uses* is not *is*: algebraic geometry uses algebra but is 
 
 When the morphism is genuinely contested, leave the material in its interim topical (Library of Congress) home and record the contest, rather than forcing a placement you cannot prove.
 
-**Derive from the research, not from source code.** The library's categorization is established from the *contents of the research library* — its surveys, claims, references, and explanations — together with first-class reasoning from established scholarship. It is never derived from any program's source code. The corpus holds detailed research on its own generative theory (predication categories, the four settling regimes, the illocutionary-body account of speech acts, the category of work-acting); read *that* to place a concept. A `.mts`/`.ts` file is an implementation of the theory, not the authority for it, and a path that cites code as its justification is filing on the wrong ground.
+**Derive from the research, not from source code.** The library's categorization is established from the *contents of the research library* — its surveys, claims, references, and explanations — together with first-class reasoning from established scholarship. It is never derived from any program's source code. The corpus holds detailed research on its own generative theory (predication categories, the four regimes, the illocutionary-body account of speech acts, the category of work-acting); read *that* to place a concept. A `.mts`/`.ts` file is an implementation of the theory, not the authority for it, and a path that cites code as its justification is filing on the wrong ground.
 
 ## State of the unfolding
 

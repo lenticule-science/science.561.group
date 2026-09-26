@@ -1,9 +1,9 @@
 ---
-title: "The Glass Transition as a Settling Regime Change"
-description: "A regrounding note reading the glass transition — Anderson 1995's flagship unsolved problem of solid-state theory — through the house's four settling regimes: states the field's own literature (Berthier-Biroli, RFOT, dynamical facilitation, kinetically constrained models, bootstrap percolation), what the house Lean glass line (KCM.lean facilitation closure, Basin.lean, Overlap.lean, Heterogeneity.lean, Crystal/Glass.lean) actually proves today, grades the provenance of the house's own regime-ladder-as-nature framing (machine-checked math versus agent-interpreted physics, several removes from any locatable owner statement), reads the 2026-09-04 deterministic facilitation-closure measurement model by model including the East model as a negative control, and states — as a hypothesis (H1) the measurement tests rather than a premise it assumes — that jamming may be a Scott-continuity failure of the facilitation closure at the infinite-lattice limit while the glass transition proper lives in the rates, with falsifiers (including H1's own refutation condition, named as a result rather than a failure) and the next instruments (an immediate density-grid rerun, then a stochastic rate-bearing instrument) named."
+title: "The Glass Transition as a Regime Change"
+description: "A regrounding note reading the glass transition — Anderson 1995's flagship unsolved problem of solid-state theory — through the house's four regimes: states the field's own literature (Berthier-Biroli, RFOT, dynamical facilitation, kinetically constrained models, bootstrap percolation), what the house Lean glass line (KCM.lean facilitation closure, Basin.lean, Overlap.lean, Heterogeneity.lean, Crystal/Glass.lean) actually proves today, grades the provenance of the house's own regime-ladder-as-nature framing (machine-checked math versus agent-interpreted physics, several removes from any locatable owner statement), reads the 2026-09-04 deterministic facilitation-closure measurement model by model including the East model as a negative control, and states — as a hypothesis (H1) the measurement tests rather than a premise it assumes — that jamming may be a Scott-continuity failure of the facilitation closure at the infinite-lattice limit while the glass transition proper lives in the rates, with falsifiers (including H1's own refutation condition, named as a result rather than a failure) and the next instruments (an immediate density-grid rerun, then a stochastic rate-bearing instrument) named."
 date-created: 2026-09-04
 type: notes
-name: 2026-09-04-note-on-the-glass-transition-as-a-settling-regime-change
+name: 2026-09-04-note-on-the-glass-transition-as-a-regime-change
 keywords:
   - glass-transition
   - kinetically-constrained-model
@@ -91,7 +91,7 @@ and the boundary between what the skeleton can and cannot see is stated
 honestly rather than talked past. Per an owner correction received while
 this note was being written (below, §3 of this note — not to be confused
 with the regrounding program's own §3 just cited): the placement of glass on
-any house settling regime is itself a hypothesis this note's measurement
+any house regime is itself a hypothesis this note's measurement
 tests, never a premise it assumes.
 
 ## 1. The problem, as the field states it
@@ -265,7 +265,7 @@ passages in this same corpus do carry it:
 - The LAGOON architecture specification's "regime ladder" section
   (`.../multi-agent-computer-system-engineering-services-section/content/text/documents/articles/specifications/2026-08-29-lagoon-architecture.md`,
   dated 2026-08-29, `authors: [claude-fable-5]` per its own frontmatter)
-  states that the four Obsmetrologia settling regimes "correspond... to"
+  states that the four Obsmetrologia regimes "correspond... to"
   four physics — thermodynamic, causal, quantum, kinetic. Read directly:
   this same document elsewhere tags other specific claims explicitly
   "(owner-stated 2026-08-30)" and "(owner-ruled 2026-09-02)" — so its

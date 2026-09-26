@@ -39,5 +39,5 @@ Berthier & Biroli's later review states directly.
 
 ## Bridges
 
-- To [the note on the glass transition as a settling regime change](../notes/2026/09/04/2026-09-04-note-on-the-glass-transition-as-a-settling-regime-change.md)
+- To [the note on the glass transition as a regime change](../notes/2026/09/04/2026-09-04-note-on-the-glass-transition-as-a-regime-change.md)
   — §1 surveys the KCM family from this review.

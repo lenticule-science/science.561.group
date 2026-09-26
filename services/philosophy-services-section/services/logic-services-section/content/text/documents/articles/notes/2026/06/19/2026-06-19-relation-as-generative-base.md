@@ -23,6 +23,6 @@ Each `content/` step down the tree is the application of the next morphism, and 
 
 ## Orientation
 
-Read [the generative unfolding](../../../../research/2026/07/31/lenticule-import/yet-another-unsorted-archive-dump/docs/explanations/the-generative-unfolding-of-mathematics.md) first: it derives the whole chain and shows why order theory sits under settling rather than beside category theory. Then descend the path — each directory is a morphism you apply, each file the proof the generator built it. This same chain is set out in the corpus's own research on predication categories and the four settling regimes; the library is organized from that research and from first-class reasoning, never from any program that implements it.
+Read [the generative unfolding](../../../../research/2026/07/31/lenticule-import/yet-another-unsorted-archive-dump/docs/explanations/the-generative-unfolding-of-mathematics.md) first: it derives the whole chain and shows why order theory sits under settling rather than beside category theory. Then descend the path — each directory is a morphism you apply, each file the proof the generator built it. This same chain is set out in the corpus's own research on predication categories and the four regimes; the library is organized from that research and from first-class reasoning, never from any program that implements it.
 
 This branch is the first slice of the library reorganized from a flat subject taxonomy into the generative proof-path; the remaining domains migrate onto the same spine as their derivations are worked out.

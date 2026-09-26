@@ -36,5 +36,5 @@ technical content.
 
 ## Bridges
 
-- To [the note on the glass transition as a settling regime change](../notes/2026/09/04/2026-09-04-note-on-the-glass-transition-as-a-settling-regime-change.md)
+- To [the note on the glass transition as a regime change](../notes/2026/09/04/2026-09-04-note-on-the-glass-transition-as-a-regime-change.md)
   — the note this flagship framing opens.

@@ -117,7 +117,7 @@ fold.
 
 ---
 
-## 3. Folding regimes are settling regimes
+## 3. Folding regimes are closure regimes
 
 `Regime.lean` classifies every settling by how far its closure must iterate to
 reach the fixed point (`four_regime_dichotomy`, `cohomologyVanishes_iff`:

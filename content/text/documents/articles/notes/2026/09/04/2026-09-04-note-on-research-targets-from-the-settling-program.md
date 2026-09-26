@@ -506,7 +506,7 @@ energy diverge in trend across settling.
 - **The OWL layer over `/ns/`** (not yet located as a dated record under
   `data/records/` at the time of this note; a gap, not a claim).
 - **The glass instrument's larger rerun** — the
-  [2026-09-04 note on the glass transition as a settling regime change](../../../../../../../../services/natural-science-services-section/services/physical-science-services-section/services/physics-services-section/content/text/documents/articles/notes/2026/09/04/2026-09-04-note-on-the-glass-transition-as-a-settling-regime-change.md)
+  [2026-09-04 note on the glass transition as a regime change](../../../../../../../../services/natural-science-services-section/services/physical-science-services-section/services/physics-services-section/content/text/documents/articles/notes/2026/09/04/2026-09-04-note-on-the-glass-transition-as-a-regime-change.md)
   states its own next instruments (an immediate density-grid rerun, then
   a stochastic rate-bearing instrument) and its H1 falsifier condition;
   it is carried here as the fifth regime-science-adjacent target still

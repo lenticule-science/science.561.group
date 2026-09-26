@@ -43,6 +43,6 @@ distinct (if related) phenomenon — the question this section's note takes up d
 
 ## Bridges
 
-- To [the note on the glass transition as a settling regime change](../notes/2026/09/04/2026-09-04-note-on-the-glass-transition-as-a-settling-regime-change.md)
+- To [the note on the glass transition as a regime change](../notes/2026/09/04/2026-09-04-note-on-the-glass-transition-as-a-regime-change.md)
   — §3 reads this section's `spiral` measurement against this paper; §4 reads its jamming
   transition as a Scott-continuity failure of the facilitation closure.

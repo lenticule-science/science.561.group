@@ -42,7 +42,7 @@ None of this makes the music good. It changes what kind of claim can be made abo
 
 **What it actually proves:** any settling process falls into exactly one of four mutually exclusive, jointly exhaustive regimes — `strict`, `scott`, `transfiniteBounded`, `aperiodic` — decided by three booleans via a decidable `classify()`, with a proved dichotomy theorem. Separately, `Operator.lean` proves the closure operator is inflationary, monotone, idempotent, admits no non-trivial periodic orbits under iteration, and reaches its least fixed point above any seed within a small finite bound (`kHeight = 3`). `SettlementSpiral.lean` proves a genuine strict growth tower — Padovan < Fibonacci < Tribonacci < 2^n, and the general k-bonacci family bounded above by 2^n — while explicitly disavowing (and in one checked case actively refuting) the legacy claim that these recurrences correspond one-to-one with the four regimes.
 
-**One-line translation:** [regime](../../../../../../../../../../../../../../../../engineering-services-section/content/text/glossary/terms/regime.md) — the current section's classification, which selects both its duration and its onset-timing generator, never claimed to *be* anything about the section beyond that classification.
+**One-line translation:** [regime](../../../../../../../../../../../../math-services-section/content/text/glossary/terms/regime.md) — the current section's classification, which selects both its duration and its onset-timing generator, never claimed to *be* anything about the section beyond that classification.
 
 ### Site / Sheaf
 
@@ -148,7 +148,7 @@ This is the honest ledger, and it matters exactly because the source material pr
 
 - [Foundations of Musical Structure](./foundations-of-musical-structure.md) — the source note's caution about treating musical parameters as culturally-situated tools applies here too: regime, cover, and temperature are analytical tools this project has adopted, not neutral facts about what music is.
 - [harmony](../../../../../../../content/text/glossary/terms/harmony.md), [dissonance](../../../../../../../content/text/glossary/terms/dissonance.md) — the existing glossary terms this document's cover-and-regime vocabulary sits alongside without replacing.
-- [regime](../../../../../../../../../../../../../../../../engineering-services-section/content/text/glossary/terms/regime.md) — term to be coined: the four-way settling classification used as section logic.
+- [regime](../../../../../../../../../../../../math-services-section/content/text/glossary/terms/regime.md) — term to be coined: the four-way settling classification used as section logic.
 - [cover](../../../../../../../../../../../../math-services-section/content/text/glossary/terms/cover.md) — term to be coined: the sheaf-theoretic admission test used as a polyphony gate.
 - [temperature](../../glossary/terms/temperature.md) — term to be coined: the mints/flux ratio used as this engine's humanization source.
 - [chord-merge](../../glossary/terms/chord-merge.md) — term to be coined: the CRDT fold used to make concurrent voice events converge deterministically.

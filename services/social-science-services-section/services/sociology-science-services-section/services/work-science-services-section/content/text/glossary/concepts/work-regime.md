@@ -20,19 +20,19 @@ Work regime is determined by the closure ordinal $\kappa$ of the relevant closur
 | Transfinite-bounded | $\omega < \kappa < \omega_1$ | Cycle-aggregating work — closure rules that quantify across all prior cycles, with countable cofinality. Generational reviews, multi-period audits. |
 | Aperiodic | $\kappa \geq \omega_1$ | Function-class work — the [function](../../theorems/function-as-aperiodic-settling.md), aim-generative enterprises, pursuits whose aim-set evolves under their own pursuit. |
 
-## Operator-regime vs. settling-regime
+## Operator-regime vs. realized regime
 
-The four-regime dichotomy classifies *closure operators* (more precisely: the worst-case closure ordinal over all possible increment sequences). This is the *operator-regime*. But the actual settling of a specific operational run may have a *settling-regime* strictly lower than the operator-regime.
+The four-regime dichotomy classifies *closure operators* (more precisely: the worst-case closure ordinal over all possible increment sequences). This is the *operator-regime*. But the actual settling of a specific operational run may have a *realized regime* strictly lower than the operator-regime.
 
 **Operator-regime** $\rho(\mathrm{cl})$: the supremum over all increment sequences of the closure ordinal. Determined by the structural properties of $\mathcal{S}_{\mathrm{op}}$ — whether it contains limit-aggregating rules, uncountable-cofinality aggregations, etc.
 
-**Settling-regime** $\rho(v^{\mathrm{op}}, u)$: the closure ordinal of the specific orbit $v_0, v_1, v_2, \ldots$ under the given increment sequence $u = (u_\tau)$.
+**Realized regime** $\rho(v^{\mathrm{op}}, u)$: the closure ordinal of the specific orbit $v_0, v_1, v_2, \ldots$ under the given increment sequence $u = (u_\tau)$.
 
 The relationship: $\rho(v^{\mathrm{op}}, u) \leq \rho(\mathrm{cl})$ always. A settling's actual regime is bounded above by the operator-regime but may be lower if the increment sequence never triggers the rules responsible for the worst-case behavior.
 
-**Example.** The operations settling's $\mathcal{S}_{\mathrm{op}}$ includes aim-settling rules (aperiodic-class) and task-lifecycle rules (strict-class). The operator-regime is aperiodic. But for a specific bounded operational period with no aim-settling activity — only task dispatch, completion, and charter-rule checks — all fired rules are strict-class. The settling-regime for that period is strict.
+**Example.** The operations settling's $\mathcal{S}_{\mathrm{op}}$ includes aim-settling rules (aperiodic-class) and task-lifecycle rules (strict-class). The operator-regime is aperiodic. But for a specific bounded operational period with no aim-settling activity — only task dispatch, completion, and charter-rule checks — all fired rules are strict-class. The realized regime for that period is strict.
 
-This means: the regime classification theorems — [regime-of-task](../../../../services/predicated-work-services-section/content/glossary/concepts/regime-of-task.md), [regime-of-recurrent-practice](../../../../services/predicated-work-services-section/content/glossary/concepts/regime-of-recurrent-practice.md) — give *upper bounds* (operator-regimes) on what any execution of the described work-unit can require. A specific execution may be in a lower settling-regime if the relevant high-regime rules never fire.
+This means: the regime classification theorems — [regime-of-task](../../../../services/predicated-work-services-section/content/glossary/concepts/regime-of-task.md), [regime-of-recurrent-practice](../../../../services/predicated-work-services-section/content/glossary/concepts/regime-of-recurrent-practice.md) — give *upper bounds* (operator-regimes) on what any execution of the described work-unit can require. A specific execution may be in a lower realized regime if the relevant high-regime rules never fire.
 
 See [regime-classification-scope](../../triage/questions/regime-classification-scope.md) for the full treatment.
 
@@ -87,5 +87,5 @@ The [truth-knowledge long exact sequence](../../../../../../../../../information
 - [regime-of-task](../../../../services/predicated-work-services-section/content/glossary/concepts/regime-of-task.md), [regime-of-recurrent-practice](../../../../services/predicated-work-services-section/content/glossary/concepts/regime-of-recurrent-practice.md) — characterization theorems for specific work-unit types.
 - [completion-as-quiescence](../../../../services/predicated-work-services-section/content/glossary/concepts/completion-as-quiescence.md) — completion's regime-dependent existence.
 - [function-as-aperiodic-settling](../../theorems/function-as-aperiodic-settling.md) — the function lives in the aperiodic regime.
-- [regime-classification-scope](../../triage/questions/regime-classification-scope.md) — the operator/settling regime distinction.
+- [regime-classification-scope](../../triage/questions/regime-classification-scope.md) — the operator/realized regime distinction.
 - [aim-generativity-iff-aperiodic](../../../../../../../social-theory-science-services-section/content/text/documents/articles/notes/undated/aim-generativity-iff-aperiodic.md) — the formal connection between aim-generativity and aperiodic regime.

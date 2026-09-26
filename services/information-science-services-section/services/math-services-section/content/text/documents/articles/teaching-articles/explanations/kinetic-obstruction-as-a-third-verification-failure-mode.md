@@ -308,7 +308,7 @@ cover *nearly* carries $H^1 \ne 0$ â€” one that is unfrustrated but only just â€
 inherits the slowness without inheriting the impossibility. That near-frustrated
 band is where kinetically obstructed verifications live.
 
-**Remark 4.7 (a stratification, asserted not proved).** The settling regimes may
+**Remark 4.7 (a stratification, asserted not proved).** The regimes may
 be stratified by closure ordinal: $\kappa < \omega$ (finite settling), $\kappa =
 \omega$ (settling in the limit), $\omega < \kappa < \omega_1$, and $\kappa \ge
 \omega_1$. The gluing obstruction is claimed to vanish exactly in the first two.

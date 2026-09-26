@@ -36,7 +36,7 @@ Each is a local symptom of the same underlying dynamics: the closure rules are f
 
 ## Regime-theoretic characterization
 
-On the predication-categories substrate, saturation marks a phase transition in settling regime.
+On the predication-categories substrate, saturation marks a phase transition in regime.
 Below the saturation threshold the settling operates in the *strict regime*: contradictions introduced at time $t$ are resolved by time $t+k$ for some bounded $k$.
 At the saturation threshold the settling enters an *aperiodic regime*: resolution time becomes unbounded, and new contradictions arrive faster than old ones clear.
 The saturated settling is not broken — it continues to iterate — but it is no longer restabilizing.

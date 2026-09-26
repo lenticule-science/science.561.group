@@ -41,6 +41,6 @@ Garrahan) takes up.
 
 ## Bridges
 
-- To [the note on the glass transition as a settling regime change](../notes/2026/09/04/2026-09-04-note-on-the-glass-transition-as-a-settling-regime-change.md)
+- To [the note on the glass transition as a regime change](../notes/2026/09/04/2026-09-04-note-on-the-glass-transition-as-a-regime-change.md)
   — §1 and §4 read this paper's hierarchical argument as nested facilitation-acknowledgement
   chains; §6 proposes testing it against a stochastic instrument's ACK counts.

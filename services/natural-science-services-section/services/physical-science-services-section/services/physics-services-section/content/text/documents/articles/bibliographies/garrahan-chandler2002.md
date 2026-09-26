@@ -41,6 +41,6 @@ an open question in the field it surveys.
 
 ## Bridges
 
-- To [the note on the glass transition as a settling regime change](../notes/2026/09/04/2026-09-04-note-on-the-glass-transition-as-a-settling-regime-change.md)
+- To [the note on the glass transition as a regime change](../notes/2026/09/04/2026-09-04-note-on-the-glass-transition-as-a-regime-change.md)
   — §1 states dynamical facilitation from this paper; §2 reads the house's `KCM.lean`
   facilitation closure as this theory's rate-free skeleton.

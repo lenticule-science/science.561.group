@@ -70,7 +70,7 @@ The choir condition itself is the pedagogy note's zone constraint inverted: deli
 The flinch note's two-level object — startle and premature closure — is the ⊥→f collapse of §2 executed reflexively:
 **the flinch is somatic early settlement**, and overgeneralized fear is a collapse whose stimulus class has widened (calibration debt).
 Fear's budget behavior in the trinities note (the non-resolving allocation, the leak) gets its regime reading here:
-[target] classify fear-allocations by whether their closure terminates — checkable fear as a settling allocation, unverifiable fear as non-terminating — over the settling-regime machinery [module: the closure-regime dichotomy; green].
+[target] classify fear-allocations by whether their closure terminates — checkable fear as a settling allocation, unverifiable fear as non-terminating — over the regime machinery [module: the closure-regime dichotomy; green].
 The play-frame argument shared by the flinch and pedagogy notes — frames suspend the consequence-structure that punishes sustained uncertainty — is formally:
 **a play frame is a local modality under which the ⊥→f collapse is suspended**, and the zone of proximal development is the region of *safely-held ⊥*.
 [target] state the frame as a modal operator on the settlement site; derive that learning capacity (threshold passage) is monotone in safely-held-⊥ duration; Vygotsky's head-taller finding is the intended corollary.

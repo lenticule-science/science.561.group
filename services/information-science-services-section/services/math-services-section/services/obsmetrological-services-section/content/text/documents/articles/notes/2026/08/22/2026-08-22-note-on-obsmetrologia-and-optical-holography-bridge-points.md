@@ -100,7 +100,7 @@ This connection between the corpus's Pisot/Salem material and opal's photonic st
 
 ## 7. A terminology trap worth recording so it is not rediscovered the hard way
 
-The blueprint's chapter 10, "Aperiodic phase invariants and boundary dynamics," uses the word "phase" to mean *settling-regime phase* — which of the corpus's four regimes, strict, Scott, transfinite-bounded, or aperiodic, a given settling falls into — and not optical or wave phase in any sense.
+The blueprint's chapter 10, "Aperiodic phase invariants and boundary dynamics," uses the word "phase" to mean *regime phase* — which of the corpus's four regimes, strict, Scott, transfinite-bounded, or aperiodic, a given settling falls into — and not optical or wave phase in any sense.
 This is a pure terminology collision, not a substantive one, but it is exactly the kind of collision that costs real time if it is not flagged up front.
 Any note that goes on to bridge obsmetrologia to optical holography's phase-via-interference mechanism, of the kind the metrology companion note above works through in detail, needs to disambiguate the two uses of "phase" explicitly at the point where both vocabularies are first used together, rather than assuming context will do the disambiguating work on its own.
 

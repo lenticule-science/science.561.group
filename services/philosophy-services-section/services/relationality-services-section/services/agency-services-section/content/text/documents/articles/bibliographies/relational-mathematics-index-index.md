@@ -66,7 +66,7 @@ current trace begins with the origination steps:
 - [Nucleus](../research/predicated-agentic-orchestration-platform/library/relational-hyperverse-repository/math/nucleus.md)
 - [Flow](../research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/knowing/content/knowledge-science/systems/archive/acts/flow.md)
 - [Discipline](../research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/knowing/content/knowledge-science/systems/archive/acts/discipline.md)
-- [Regime](../../../../../../../../../../../../engineering-services-section/content/text/glossary/terms/regime.md)
+- [Regime](../../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/regime.md)
 - [Regime Structure](../research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/knowing/content/knowledge-science/systems/archive/acts/regime_structure.md)
 - [Composite Discipline](../research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/knowing/content/knowledge-science/systems/archive/acts/composite_discipline.md)
 - [Composite Regime](../research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/knowing/content/knowledge-science/systems/archive/acts/composite_regime.md)

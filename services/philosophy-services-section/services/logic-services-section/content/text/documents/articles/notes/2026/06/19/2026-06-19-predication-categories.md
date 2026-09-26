@@ -23,7 +23,7 @@ This research is the ground the rest of the library stands on, and it is the cor
 
 ## The Diátaxis documents
 
-- **Explanations** — [`docs/explanations`](../../../../research/2026/07/31/lenticule-import/yet-another-unsorted-archive-dump/predication-categories/docs/explanations) — atomic, understanding-oriented treatments synthesized from the research: what a predication category is, the four settling regimes, settling-as-computation, the two orders and the bilattice, the inconsistency sheaf and cohomology, work as iterated settling, why predication is not simply Fregean, and the predicated computer among established theory.
+- **Explanations** — [`docs/explanations`](../../../../research/2026/07/31/lenticule-import/yet-another-unsorted-archive-dump/predication-categories/docs/explanations) — atomic, understanding-oriented treatments synthesized from the research: what a predication category is, the four regimes, settling-as-computation, the two orders and the bilattice, the inconsistency sheaf and cohomology, work as iterated settling, why predication is not simply Fregean, and the predicated computer among established theory.
 
 ## Orientation
 

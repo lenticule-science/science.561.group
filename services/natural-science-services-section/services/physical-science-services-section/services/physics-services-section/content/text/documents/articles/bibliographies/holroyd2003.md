@@ -38,6 +38,6 @@ a separate combinatorial object from the KCM family, related by mechanism, not i
 
 ## Bridges
 
-- To [the note on the glass transition as a settling regime change](../notes/2026/09/04/2026-09-04-note-on-the-glass-transition-as-a-settling-regime-change.md)
+- To [the note on the glass transition as a regime change](../notes/2026/09/04/2026-09-04-note-on-the-glass-transition-as-a-regime-change.md)
   — §3 reads this section's `bootstrap2` crossing against this paper's asymptotic
   threshold and its slow finite-size convergence.

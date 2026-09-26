@@ -70,5 +70,5 @@ The corollary gives a structural diagnostic: if a working community's enterprise
 
 - [function-as-aperiodic-settling](../../research/2026/07/31/lenticule-import/library/social-sciences/working/_archive/function-as-aperiodic-settling.md) — recovered as a corollary.
 - [enterprise](../../../../../../../economics-and-business-science-services-section/services/business-science-services-section/content/text/glossary/terms/enterprise.md) — the object whose distinguishing property is captured here.
-- [regime-classification-scope](../../research/2026/07/31/lenticule-import/library/social-sciences/working/_archive/questions/regime-classification-scope.md) — the operator/settling regime distinction invoked in the reverse direction.
+- [regime-classification-scope](../../research/2026/07/31/lenticule-import/library/social-sciences/working/_archive/questions/regime-classification-scope.md) — the operator/realized regime distinction invoked in the reverse direction.
 - [operational-evidence](../../../../../../../sociology-science-services-section/services/work-science-services-section/content/text/glossary/concepts/operational-evidence.md) — must formalize **P1** (finite evidence per cadence step) to complete the proof.

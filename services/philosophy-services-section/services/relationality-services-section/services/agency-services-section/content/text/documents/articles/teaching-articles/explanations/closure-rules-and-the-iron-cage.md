@@ -79,7 +79,7 @@ The management's closure-rule system becomes visible throughout the task's execu
 This is the [hypernudge](../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/hypernudge.md) applied at the rule-system level: the design of closure-rule antecedents to make certain behaviors trigger rule-firings (positive or negative) constitutes the nudge architecture.
 
 Formally: high-density monitoring rules increase the rule system's *closure rule count on behavioral cells*, not its closure ordinal.
-The settling regime is not changed (monitoring rules are strict-regime rules: they fire once when the threshold cell crosses).
+The regime is not changed (monitoring rules are strict-regime rules: they fire once when the threshold cell crosses).
 But the monitoring apparatus' presence throughout execution affects worker behavior — which is the point of the management strategy, and the content of the critical diagnosis.
 
 ## Contested terrain: $\top$-state zones in the operations settling

@@ -89,7 +89,7 @@ The violence approaching the surface is both a symptom of the legitimation-throu
 Crisis settlerism is structurally triggered by [destabilization](../../documents/articles/notes/undated/destabilization.md).
 When the late-liberal settling enters its aperiodic regime — when the routine legitimation operations fail to maintain convergent settlement — the settler formation cannot rely on the background naturalization that stable settling provided.
 The same destabilization that produces [coherent confusion](../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/cybernetic-postliberalism-services-section/content/text/glossary/terms/coherent-confusion.md) in the epistemic register, the [liberalism-legitimacy-crisis](../../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/documents/articles/notes/2026/04/27/2026-04-27-liberalism-legitimacy-crisis.md) in the political register, and the [savior-slave subject](../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/cybernetic-postliberalism-services-section/content/text/glossary/terms/savior-slave-subject.md) in the subject-formation register produces crisis settlerism in the colonial register.
-All are manifestations of the same underlying settling-regime transition.
+All are manifestations of the same underlying regime transition.
 
 ## Relation to fascist grammar
 

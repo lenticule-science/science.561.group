@@ -21,7 +21,7 @@ The memo had one slogan and one boundary:
 
 - **Slogan:** *coloring = factor map = information.* A proper coloring of a structure is the same datum as a factor map onto a finite shift, and the number of bits to specify one is a logarithm.
   We turn each "=" into a theorem and then make the logarithm an actual real number.
-- **Boundary:** the **Pisot/Salem** dichotomy of substitution inflations is the same dichotomy as the corpus's **settling-regime** stratification — contraction settles, a neutral rotation does not.
+- **Boundary:** the **Pisot/Salem** dichotomy of substitution inflations is the same dichotomy as the corpus's **regime** stratification — contraction settles, a neutral rotation does not.
 
 Four threads, matching the memo's sections.
 
@@ -91,7 +91,7 @@ Several facts are pinned down:
   Division-free, with `z = 2μ = n + √(n²+4)`, the metallic mean satisfies `z² = 2n·z + 4` (`metallic_root`, all `n`); the golden and Salem roots are the `n=1` and Salem instances.
   These rest on a constructive square root `√c` for the Bishop reals with `(√c)² = c`.
 - The Salem companion satisfies its own characteristic polynomial, `M⁴ = M³ + M² + M − I` (`salemCompanion_cayley_hamilton`), the matrix form of the Salem recurrence.
-- **The Salem/Pisot split is the settling-regime split** (`salem_vs_pisot_regime`).
+- **The Salem/Pisot split is the regime split** (`salem_vs_pisot_regime`).
   The corpus stratifies closure dynamics by ordinal `κ` into strict / Scott / transfinite-bounded / aperiodic.
   A contracting (off-circle, Pisot) direction settles at a finite stage — the **strict** regime.
   A neutral (on-circle, Salem) direction never contracts and settles only at `κ ≥ ω₁` — the **aperiodic ⊤-regime**.

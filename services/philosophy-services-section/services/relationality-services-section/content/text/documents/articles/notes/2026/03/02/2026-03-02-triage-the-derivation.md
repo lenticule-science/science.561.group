@@ -171,7 +171,7 @@ Their commutation produces [geometry](../../../undated/geometry.md) --- the rela
 
 ### Step 16: disciplines, filters, profiles
 
-Geometry carves internal structure. A [discipline](../../../../../../terms/discipline.md) is a pattern that respects both flow and nucleus. A [regime](../../../../../../../../../../../../../engineering-services-section/content/text/glossary/terms/regime.md) is what a discipline stabilizes. A [filter](../../../filter.md) is a discipline that commutes with all nuclei and all flows --- a pattern so thoroughly compatible with the system's dynamics that it can carve out a self-contained region.
+Geometry carves internal structure. A [discipline](../../../../../../terms/discipline.md) is a pattern that respects both flow and nucleus. A [regime](../../../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/regime.md) is what a discipline stabilizes. A [filter](../../../filter.md) is a discipline that commutes with all nuclei and all flows --- a pattern so thoroughly compatible with the system's dynamics that it can carve out a self-contained region.
 
 What a filter carves out is a [profile](../../../undated/profile.md) --- a complete relational universe inside the larger one. Within a profile, the entire derivation reconstructs itself. Terms, judgements, order, flow, nucleus, geometry --- the whole tower, internally. A profile is not a fragment or a partial view. It is a full relational structure, as complete as the one that contains it, produced by the same logic of forced determination.
 

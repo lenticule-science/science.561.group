@@ -113,7 +113,7 @@ communicating's falsifiable completeness check is Jakobson's six functions. know
 - **attention** → `attend` (base-change / specialization);
 - **memory** → `remember` (the held ≤_k lower bound; the comonad context);
 - **learning** → `learn` (a ≤_k-strict settling step);
-- **intelligence** → `gauge` (the settling regime / firing ordinal);
+- **intelligence** → `gauge` (the regime / firing ordinal);
 - **reflection** → `reflect` (δ, the convergent reflexive orbit) — with **rumination** as its divergent shadow (`ruminate`), kept *visible*, never silently dropped.
 
 The bet (a checkable one, not a corpus citation): the cognitive faculties are the **closure of this finite generating set on the meme's ≤_k axis**, because each faculty is one of these moves or a composite, and the meme's section-nesting gives reflection unbounded depth — just as semiosis gives communicating unbounded depth on the meaning axis.
@@ -161,7 +161,7 @@ The surface, each leg grounded in a named corpus region:
 |---|---|---|---|---|
 | `knowing/knowledge-standing` | `assess` | the ≤_k FOUR standing (ε read-out) | charge two-sides over FOUR; `two-orders-duality` | **built** |
 | (meme, reused) | `cognize` `absorb` `reflect` `ruminate` | unit · learning · reflection · the named non-settling shadow | `settling-coalgebra-structure`; neuroreflexivity essay | **built** |
-| `knowing/settling-regime` | `gauge` | **intelligence** — the regime / firing ordinal of the orbit | `settling-continuity`, `settling-monotonicity`, `aperiodic-settling` (κ≥ω₁), `closure-ordinal`; firing-blowup | wave 2 |
+| `knowing/regime` | `gauge` | **intelligence** — the regime / firing ordinal of the orbit | `settling-continuity`, `settling-monotonicity`, `aperiodic-settling` (κ≥ω₁), `closure-ordinal`; firing-blowup | wave 2 |
 | `knowing/doubt` | `doubt` `forget` | the **dual** direction — restrict to confirming points, descend ≤_k | `dual-predication-hyperdoctrine` (closure 2-**comonad** `Cl*`, settling algebra) | wave 2 |
 | `knowing/identity` | `same-knowledge` `distinguish` | meme **identity** — the two equalities | `paraconsistent-equality` (⊤ on Δ, merge-stable), `classical-equality` (t/f) | wave 2 |
 | `knowing/knowledge-state` = `C(Meme)` | `recollect` `attend` | **memory** + **attention** — the held section; base-change `f*` | `sheaf`, `d-frame-valued-sheaf`, `world-set`; "the depth is the memory" | wave 3 |
@@ -194,7 +194,7 @@ Needs a world-indexed family of sections. - **graded knowing** — `continuous-v
 
 ## Provenance
 
-Corpus-grounded: the meme/charge carrier and the two bilattice orders (`positing/fiber.mts`, `positing/content/pre-bilattice/content/bilattice`, `two-orders-duality`); the **settling-coalgebra-structure**, **predication- hyperdoctrine**, and **dual-predication-hyperdoctrine** (the closure 2-monad and its dual closure 2-comonad, the ≤_k-monotone orbit); the settling regimes (`settling-continuity`, `non-scott-continuous-firing-ordinal/firing-blowup`, `aperiodic-settling`); `content/CLAUDE.md` ("the depth is the memory"); and the neuroreflexivity essay on rumination vs self-reflection ("self-directed cognition"; the oscillation-without-resolution vs process-focused-reflection fork).
+Corpus-grounded: the meme/charge carrier and the two bilattice orders (`positing/fiber.mts`, `positing/content/pre-bilattice/content/bilattice`, `two-orders-duality`); the **settling-coalgebra-structure**, **predication- hyperdoctrine**, and **dual-predication-hyperdoctrine** (the closure 2-monad and its dual closure 2-comonad, the ≤_k-monotone orbit); the regimes (`settling-continuity`, `non-scott-continuous-firing-ordinal/firing-blowup`, `aperiodic-settling`); `content/CLAUDE.md` ("the depth is the memory"); and the neuroreflexivity essay on rumination vs self-reflection ("self-directed cognition"; the oscillation-without-resolution vs process-focused-reflection fork).
 The existing `lib/knowing` already commits to a comonad C / coKleisli `r : X → C Y` and reads the "static ≤_k" with a "factors through a C-coalgebra" certification — this note sharpens that intent onto the meme carrier and names the convergence fork.
 
 The "same carrier, dual structure (monoid ↔ comonad; ≤_t ↔ ≤_k)" framing, the

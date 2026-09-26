@@ -13,7 +13,7 @@ The math's [four-regime dichotomy](../../../../../../../../../../../information-
 
 But a settling depends on both the closure operator and the increment sequence: $v_{\tau+1} = \mathrm{cl}(v_\tau \vee_k u_\tau)$. Two operations runs on the same closure-rule system but different event logs could behave differently.
 
-## Resolution: operator-regime vs. settling-regime
+## Resolution: operator-regime vs. realized regime
 
 The key distinction is between two levels of regime classification:
 
@@ -23,9 +23,9 @@ $$\rho(\mathrm{cl}) \;=\; \sup_{(u_\tau)} \kappa(v^{\mathrm{op}}, u)$$
 
 This is the worst-case classification: it measures how complex the settling can be under adversarially chosen increments. It is a structural property of the closure-rule system, computable from $\mathcal{S}$ without running any specific event log.
 
-**Settling-regime** $\rho(v^{\mathrm{op}}, u)$: a property of the specific settling $(v^{\mathrm{op}}, u_\tau)$, defined as the actual closure ordinal $\kappa$ of the orbit $v_0, v_1, v_2, \ldots$ under the given increment sequence $u = (u_\tau)$.
+**Realized regime** $\rho(v^{\mathrm{op}}, u)$: a property of the specific settling $(v^{\mathrm{op}}, u_\tau)$, defined as the actual closure ordinal $\kappa$ of the orbit $v_0, v_1, v_2, \ldots$ under the given increment sequence $u = (u_\tau)$.
 
-The operator-regime is an upper bound on all settling-regimes: $\rho(v^{\mathrm{op}}, u) \leq \rho(\mathrm{cl})$ for any $u$.
+The operator-regime is an upper bound on all realized regimes: $\rho(v^{\mathrm{op}}, u) \leq \rho(\mathrm{cl})$ for any $u$.
 
 ## The four-regime dichotomy as an operator-regime theorem
 
@@ -38,13 +38,13 @@ The [four-regime dichotomy](../../../../../../../../../../../information-science
 
 The four-regime dichotomy is a partition of closure operators, not a claim about any specific settling.
 
-## Settling-regime refinement
+## Realized regime refinement
 
 A settling's actual regime may be strictly lower than its operator's class:
 
-**Example 1 (aperiodic-class operator, strict settling).** $\mathcal{S}_{\mathrm{op}}$ contains limit-aggregating rules. These place the operator in the aperiodic class. But if the event log $u$ never fires the cells those rules aggregate over, the limit-aggregating rules never contribute to any settling step. The actual orbit is determined only by non-aggregating rules (possibly strict or Scott-continuous). Settling-regime: strict or Scott-continuous despite aperiodic operator-regime.
+**Example 1 (aperiodic-class operator, strict settling).** $\mathcal{S}_{\mathrm{op}}$ contains limit-aggregating rules. These place the operator in the aperiodic class. But if the event log $u$ never fires the cells those rules aggregate over, the limit-aggregating rules never contribute to any settling step. The actual orbit is determined only by non-aggregating rules (possibly strict or Scott-continuous). Realized regime: strict or Scott-continuous despite aperiodic operator-regime.
 
-**Example 2 (Scott-continuous operator, strict settling).** All rules have finite antecedents (Scott-continuous-class operator). If the event log $u$ is finitely supported (finitely many increments total, then silence), the settling reaches a fixed point in finitely many steps. Settling-regime: strict.
+**Example 2 (Scott-continuous operator, strict settling).** All rules have finite antecedents (Scott-continuous-class operator). If the event log $u$ is finitely supported (finitely many increments total, then silence), the settling reaches a fixed point in finitely many steps. Realized regime: strict.
 
 The general principle: $\rho(v^{\mathrm{op}}, u) = \min(\rho(\mathrm{cl}),\; \kappa_u)$ where $\kappa_u$ is the closure ordinal required given the increment sequence's specific interaction with the rule system.
 
@@ -56,7 +56,7 @@ $$|\mathrm{KP}^{\mathrm{vis}}(B)| \;=\; |\mathrm{KP}^{\mathrm{vis}}(B)|_{\mathrm
 
 where each stratum contains MLD-classes with the given operator-regime. By [regime MLD-invariance](../../../../../../../../../../../../humanities/theories/math/theories/categories/theories/predication-categories/theorems/regime-mld-invariance.md), the operator-regime is constant across each MLD-class (component of the settling fiber groupoid). The decomposition is set-theoretic, not topological: by [regime stratification non-semicontinuity](../../../../../../../../../../../../humanities/theories/math/theories/categories/theories/predication-categories/theorems/regime-stratification-non-semicontinuity.md), the strata are not locally closed under any topology on the moduli, which means there is no continuous path (in the deformation sense) from one regime-stratum to another — regime changes require a discontinuous jump in the settling path. Regime can only shift *upward* along formal deformations (strict → SC → TB → aperiodic), never downward.
 
-The settling-regime of a specific operational run is a *per-orbit* refinement within each stratum: two settlings in the same MLD-class (same operator-regime) can differ in their settling-regime depending on which increment sequences arrive.
+The realized regime of a specific operational run is a *per-orbit* refinement within each stratum: two settlings in the same MLD-class (same operator-regime) can differ in their realized regime depending on which increment sequences arrive.
 
 ## Implications for predicated-work
 
@@ -64,11 +64,11 @@ The operations settling $v^{\mathrm{op}}$ of a working community has $\mathcal{S
 
 **Operator-regime of $\mathcal{S}_{\mathrm{op}}$**: aperiodic, because the function's aim-settling rules place the combined system there.
 
-**Settling-regime of a specific operational run** depends on which rules actually fire:
-- Bounded operational period (finite tasks, agents, predicates; no aim-settling activity): only strict and Scott-continuous rules fire; settling-regime is strict.
-- Ongoing run with aim-settling occasionally active: settling-regime may lift to Scott-continuous, transfinite-bounded, or aperiodic depending on the aggregation structure of the aim-rules that fire.
+**Realized regime of a specific operational run** depends on which rules actually fire:
+- Bounded operational period (finite tasks, agents, predicates; no aim-settling activity): only strict and Scott-continuous rules fire; realized regime is strict.
+- Ongoing run with aim-settling occasionally active: realized regime may lift to Scott-continuous, transfinite-bounded, or aperiodic depending on the aggregation structure of the aim-rules that fire.
 
-**Practical consequence for regime-of-task theorem.** The [regime-of-task theorem](../../../../../../services/predicated-work-services-section/content/glossary/concepts/regime-of-task.md) classifies the *operator-regime* of a task's local closure-rule subsystem $\mathcal{S}_T$ — the worst-case regime over all possible event logs for that task. The actual settling-regime of a specific task execution is bounded above by this operator-regime and bounded below by the strict regime (some rule-firings are always needed). "Task $T$ is in the Scott-continuous regime" means: for every possible event log, $T$'s goal cells converge by the $\omega$-th stage. Not that any specific execution takes $\omega$ steps.
+**Practical consequence for regime-of-task theorem.** The [regime-of-task theorem](../../../../../../services/predicated-work-services-section/content/glossary/concepts/regime-of-task.md) classifies the *operator-regime* of a task's local closure-rule subsystem $\mathcal{S}_T$ — the worst-case regime over all possible event logs for that task. The actual realized regime of a specific task execution is bounded above by this operator-regime and bounded below by the strict regime (some rule-firings are always needed). "Task $T$ is in the Scott-continuous regime" means: for every possible event log, $T$'s goal cells converge by the $\omega$-th stage. Not that any specific execution takes $\omega$ steps.
 
 ## The increment-sequence complexity measure
 
@@ -76,10 +76,10 @@ A finer classification uses the interaction between the operator and the specifi
 
 $$\kappa_{\mathrm{interact}}(\mathrm{cl}, u) \;:=\; \kappa(v^{\mathrm{op}}_0, u, \mathrm{cl})$$
 
-— the actual closure ordinal of the orbit under $(u_\tau)$ and $\mathrm{cl}$. This is a joint property. The operator-regime is $\sup_u \kappa_{\mathrm{interact}}(\mathrm{cl}, u)$; the settling-regime is $\kappa_{\mathrm{interact}}(\mathrm{cl}, u^{\mathrm{actual}})$ for the specific event log $u^{\mathrm{actual}}$ that the working community produces.
+— the actual closure ordinal of the orbit under $(u_\tau)$ and $\mathrm{cl}$. This is a joint property. The operator-regime is $\sup_u \kappa_{\mathrm{interact}}(\mathrm{cl}, u)$; the realized regime is $\kappa_{\mathrm{interact}}(\mathrm{cl}, u^{\mathrm{actual}})$ for the specific event log $u^{\mathrm{actual}}$ that the working community produces.
 
-Two increment sequences that agree on which closure rules fire — $\omega$-equivalent increment sequences — produce orbits with the same closure ordinal. The equivalence classes under $\omega$-equivalence partition possible executions into settling-regime classes. The four-regime dichotomy coarsens this partition to the operator alone by taking the supremum; the predicated-work theory uses both:
+Two increment sequences that agree on which closure rules fire — $\omega$-equivalent increment sequences — produce orbits with the same closure ordinal. The equivalence classes under $\omega$-equivalence partition possible executions into realized regime classes. The four-regime dichotomy coarsens this partition to the operator alone by taking the supremum; the predicated-work theory uses both:
 - **Operator-regime**: for structural claims about what a task or practice *can* require (worst case).
-- **Settling-regime**: for claims about what a *specific* operational run *does* require (given observed events).
+- **Realized regime**: for claims about what a *specific* operational run *does* require (given observed events).
 
-The [regime-of-recurrent-practice theorem](../../../../../../services/predicated-work-services-section/content/glossary/concepts/regime-of-recurrent-practice.md) is an operator-regime theorem. The operations-settling's strict-regime claim for bounded periods is a settling-regime claim. Both are correct and neither contradicts the other.
+The [regime-of-recurrent-practice theorem](../../../../../../services/predicated-work-services-section/content/glossary/concepts/regime-of-recurrent-practice.md) is an operator-regime theorem. The operations-settling's strict-regime claim for bounded periods is a realized regime claim. Both are correct and neither contradicts the other.

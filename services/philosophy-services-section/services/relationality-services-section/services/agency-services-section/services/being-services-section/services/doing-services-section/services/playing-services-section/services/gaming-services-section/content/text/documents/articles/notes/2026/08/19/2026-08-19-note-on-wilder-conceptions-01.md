@@ -81,7 +81,7 @@ literally a stoichiometric matrix. The Carrier Audit is assigned to the standing
 **The conception.** One of the imported research notes in the semiotic-smart-material corpus —
 written for an unrelated Wuxia-flavored engineering synthesis — already proves the mapping the
 fleet needs and nobody has cited into a game document yet: Caillois' four play categories (Agon,
-Alea, Mimicry, Ilinx) are literally the four settling regimes the SHRIMP brief's proved math
+Alea, Mimicry, Ilinx) are literally the four regimes the SHRIMP brief's proved math
 already names (strict/finite κ<ω H¹=0, Scott-continuous κ=ω H¹=0, transfinite-bounded, aperiodic
 κ≥ω₁ H¹≠0). If that mapping holds generally — and it is stated as a proved regime taxonomy in two
 independent places, not invented for the Wuxia note — then a game's *genre*, in the Caillois
@@ -95,7 +95,7 @@ happen to feel vertiginous.
 **Why only this house could do it.** `@lenticule-science/metrologic`'s obstruction engine already computes H¹
 rank and regime for real inputs (`equivo-design.md` §5.3's worked example literally prints
 `"regime": "transfinite"` and an H¹ rank from real code, not a genre label chosen by a designer).
-The SHRIMP brief (`shrimp-ecology-brief-v2.md` §1, "Settling regimes (proved)") and the Ludic
+The SHRIMP brief (`shrimp-ecology-brief-v2.md` §1, "Regimes (proved)") and the Ludic
 Architecture note
 (`.../semiotic-smart-material-services-section/.../2026/07/28/...ludic-architecture-and-the-semiotic-substrate...md`
 §4, "The Four Regimes of Play: Cohomological Obstructions in the Tower") independently land on

@@ -45,7 +45,7 @@ They share **one carrier — `proof` (the settlement)**:
 
 - **directed relational research (DRR)** *builds* the proof: it settles the directed relations (facts) among terms into a `SettlementFiltration` — the ≤_k-monotone settling orbit.
   `research/know/study/explain/learn/teach/tutor` are nested derivatives of that one proof (`research` = the base coKleisli act `r : X → C Y`).
-- **neuroreflexivity** *reads* the proof's **convergence**: `reflect` = the proof that settles to a known fixpoint (the convergent orbit); `ruminate` = the proof that never settles (aperiodic / `firing-blowup`); `gauge` = the settling regime / firing ordinal (intelligence).
+- **neuroreflexivity** *reads* the proof's **convergence**: `reflect` = the proof that settles to a known fixpoint (the convergent orbit); `ruminate` = the proof that never settles (aperiodic / `firing-blowup`); `gauge` = the regime / firing ordinal (intelligence).
   These are values of one faculty over the same proof.
 
 This is precisely the settling-coalgebra orbit `c : E → F_U(E)` the comonad note already proves; the vocabulary makes it one spine: **facts-about-terms** (the carrier grain) → **proof** (the orbit, built by DRR) → **convergence reading** (neuroreflexivity).

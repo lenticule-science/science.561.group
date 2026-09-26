@@ -11,7 +11,7 @@ authors:
 keywords:
   - biosemiotics
   - spirulina
-  - settling-regime
+  - regime
   - closure-ordinal
   - helix
   - attention-water
@@ -127,9 +127,9 @@ never named). What distinguishes a spirulina regime from that failure mode
 is exactly the monotone coordinate: turn count strictly increases, and
 nothing is claimed to be regenerated for free.
 
-### 2.3 Relation to the four settling regimes
+### 2.3 Relation to the four regimes
 
-The corpus's settling-regime apparatus is not a five-way classification
+The corpus's regime apparatus is not a five-way classification
 with "helical" as a fifth member alongside strict, Scott, transfinite-bounded,
 and aperiodic. It is a **theorem-shaped**, proved dichotomy — mutually
 exclusive, jointly exhaustive — over a single closure ordinal $\kappa$, in
@@ -324,7 +324,7 @@ that learns.
 - **House grading discipline and sibling same-day synthesis.**
   `services/561-group-services-section/content/text/documents/articles/notes/2026/08/16/2026-08-16-note-on-stringing-glass-a-synthesis-of-the-561-group-thesis.md`
   — source of the theorem-shaped/conjecture/rhyme grading convention this
-  note reuses, and of the adjacent "glass" settling-regime reading (glass
+  note reuses, and of the adjacent "glass" regime reading (glass
   as disordered-but-rigid, the corpus's LLM emblem) that spirulina is
   proposed as a counterpart to: glass is matter that froze *without*
   metabolizing; spirulina is life that metabolizes *without* (yet)
