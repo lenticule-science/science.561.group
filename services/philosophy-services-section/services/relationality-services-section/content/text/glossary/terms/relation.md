@@ -1,142 +1,114 @@
 ---
 name: "Relation"
-description: "The structural form a relating produces when it stabilizes — a directed triadic shape with subject, predicate, and object. Distinct from relating: relating is the activity, the relation is the structural residue. The static face of the same primitive."
-contrasts-with: ["relating (activity)", "substance-based relation"]
+description: "The unsaturated predicate between a subject and an object: Frege's concept with two empty places, directed by the order of those places, which a subject and an object fill to make a claim. In the relationality framework its values are evidence readings, not true and false. What it is true of, its extension, is a saturated object and not the relation itself."
+aliases: [relations]
+contrasts-with: [link, adjacency, "substance-based relation"]
 date-created: 2026-04-29
-aliases:
-  - Derivation
-introduces: "[condition](condition)"
-domain: "[domain of relating](domain of relating)"
-date-introduced: "[2025-05-03](2025-05-03)"
-date-last-modified: "[2025-05-03](2025-05-03)"
+references:
+  frege1891:
+    authors: ["Gottlob Frege"]
+    title: "Function and Concept"
+    year: 1891
+  frege1892:
+    authors: ["Gottlob Frege"]
+    title: "On Concept and Object"
+    publication: "Vierteljahrsschrift für wissenschaftliche Philosophie"
+    year: 1892
+  lambek1958:
+    authors: ["Joachim Lambek"]
+    title: "The Mathematics of Sentence Structure"
+    publication: "American Mathematical Monthly"
+    year: 1958
+  aristotle-categories:
+    authors: ["Aristotle"]
+    title: "Categories"
+    note: "Chapter 7 on relatives (pros ti)"
+  bradley1893:
+    authors: ["F. H. Bradley"]
+    title: "Appearance and Reality"
+    publication: "George Allen & Unwin"
+    year: 1893
+  russell1903:
+    authors: ["Bertrand Russell"]
+    title: "The Principles of Mathematics"
+    publication: "Cambridge University Press"
+    year: 1903
+  james1912:
+    authors: ["William James"]
+    title: "Essays in Radical Empiricism"
+    publication: "Longmans, Green, and Co."
+    year: 1912
+  whitehead1929:
+    authors: ["Alfred North Whitehead"]
+    title: "Process and Reality"
+    publication: "Macmillan"
+    year: 1929
+  peirce1931:
+    authors: ["Charles Sanders Peirce"]
+    title: "Collected Papers"
+    publication: "Harvard University Press"
+    year: 1931
+  nagarjuna:
+    authors: ["Nāgārjuna"]
+    title: "Mūlamadhyamakakārikā"
+    note: "c. 150 CE, trans. Garfield 1995"
 ---
 
-A **relation** in the [relationality](../_index.md) framework is the structural form a [relating](relating.md) produces when it stabilizes. Where relating is the activity, the relation is what relating *leaves behind*: a directed triadic shape with [subject](subject.md), predicate, and [object](object.md), recording that the relating has happened and is now part of the system of relations.
+A **relation** is the unsaturated predicate that stands between a subject and an object. In Frege's terms it is a concept with two empty places, "— is parent of —", "— is taller than —": incomplete on its own, and completed into a claim when a subject fills the first place and an object the second (Frege 1891, 1892).
 
-A relation is not a connection between pre-existing entities. It is the structural shape that constitutes the entities-as-related, present in the system once the relating has gone through. Before the relating: no entities, no relation. After the relating: a directed triple in which the entities are the relata and the predicate is what holds between them.
+## Direction without prior relata
 
-## Relation and relating
+A relation's direction is the order of its empty places, not an arrow drawn between things that were already there. It has a first place and a second before anything fills either, so it is directed without presupposing its relata; the relata are whatever comes to fill it. The converse is the same predicate with its places exchanged. Symmetry, a converse that agrees with the original, is a property to establish, not a default supplied by the word.
 
-The distinction between a relation and relating is grammatical first and structural second. *Relating* is the verb form — the activity. *Relation* is the noun form — the standing structural fact that the activity produces. They name the same primitive at two different aspects:
+The same fact answers Bradley's regress (1893). Bradley asked what binds a relation to its terms, and whether that binder needs a binder of its own. An unsaturated predicate needs none: its incompleteness is the binding. The terms do not attach to the relation; they fill it.
 
-- **Relating** is the potential aspect: the directed act constituting its terms, ongoing or completed.
-- **A relation** is the structural aspect: the directed triple that stands once the relating has occurred, with definite subject, predicate, and object positions.
+## Values are evidence, not truth
 
-In ordinary speech, *relation* sometimes means a connection between independently existing things — a friendship between two people who already exist, a contract between two parties already constituted. The relationality framework's reading is more austere: a relation is what the relating produces, not a link added to pre-existing relata. The relata are products of the relating, not its inputs.
+Frege's concept returns a truth value when filled. In the relationality framework a filled relation returns an evidence reading: evidence for and evidence against, independently, so a claim can be supported, denied, both, or neither. This is the framework's departure from the Boolean reading of the Fregean predicate, not from its unsaturatedness.
 
-## Relations are directed
+The math glossary keeps the two apart by name. The [predicate](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/predicate.md) $p$ is the named element in the middle coordinate of a [predication cell](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/predication-cell.md) $(s, p, o)$; the valuation $v(p)$ is the function that takes a subject and an object to a reading. On this entry's reading the relation is the valuation with its places open, and $p$ is its name. Saturating it is the act of predicating ([unsaturated function](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/unsaturated-function.md)).
 
-Every relation in the framework is *directed*: its subject coordinate and object coordinate are structurally distinct, even when the predicate is symmetric in its content. A relation in which $A$ is related to $B$ is structurally different from one in which $B$ is related to $A$, related by the *converse*. Symmetric relations — where the converse equals the original — are special cases, not the general structure.
+## Extension is not the relation
 
-This directedness is what lets relations encode hierarchies, processes, asymmetric dependencies, and irreversible changes. A symmetric primitive could not represent these without imposing additional structure; the framework's directed primitive accommodates them by default.
+What a relation is true of, the pairs that fill it truly, is its extension: a subset $R \subseteq A \times B$ in Set, a subobject of $A \times B$ in a category, a morphism $A \times B \to \Omega$ into a subobject classifier. The extension is saturated. It is an object, with a domain, a codomain, and members.
 
-## Relations are not links
+Frege met this boundary as "the concept *horse* is not a concept" (1892): any name for a predicate names an object, so speech about a relation always lands on something saturated. The predicate $p$ in a cell is such a name. The relation itself shows up in use, as a predicate with its places open.
 
-A common misreading: that a relation is a *link* between two terms — an edge in a graph, a wire between nodes. The framework's relation is more than a link. A link presupposes the terms it connects; a relation in this framework constitutes its terms. There is no node-then-edge progression; the directed triple is the unit, and the entities are extracted from it as positions, not added to it as inputs.
+## Formal faces
 
-This is the structural content of the relationality commitment: relations are ontologically prior to entities. Saying *there is a relation between $A$ and $B$* in this framework is not naming a connection that runs between $A$-as-pre-existing and $B$-as-pre-existing; it is naming the directed triadic shape from which $A$ and $B$ emerge as the relation's relata.
+- **Lambek calculus.** A two-place predicate has type $(np \backslash s)/np$: it takes an object on its right, then a subject on its left, and yields a sentence. The slashes are the relation's direction (Lambek 1958).
+- **Typed λ-calculus.** A predicate of type $S \to O \to V$, $V$ the value logic. Unsaturatedness is the arrow type; saturation is application.
+- **Predication cell.** The cell $(s, p, o)$ records one filling of $p$, valued in the evidence bilattice.
 
-## Relations and predication
+## Storing and transporting relations
 
-The framework's mathematical layer formalizes the relation as a [predication cell](../../../../math/domains/voidmath/terms/predication-cell.md): the triple $(s, p, o)$ with subject, predicate, object as its three coordinates. The cell is the formal articulation of what a relation *is* once the philosophy is written down with mathematical precision. Relations and predication cells are co-extensive; the difference is voice.
+A system that stores or transports relations keeps the subject role, the predicate's identity, and the object role together as one unit. Flattening the unit to an untyped or undirected link loses what is needed to represent asymmetric dependencies, processes, hierarchies, and irreversible changes. A relation is not adjacency: a graph edge presupposes the nodes it joins, and discards both the order of the places and what the predicate means.
 
-## Relation as generative base
+## Grounding
 
-The earlier predication corpus gives the relation a useful *generative* reading:
+The 561 Group's relationality is rooted in Lakota epistemology. In *mitákuye oyás'iŋ*, "all my relatives", relating is prior to things: what exists are acts of relating sustained in kinship with land, ancestors, other-than-human beings, and ceremony. The Western tradition below is contrast material, useful for triangulating how European metaphysics arrived at neighbouring but distinct positions; it is not the foundation. (Recorded 2026-04-05.)
 
-`articulate → predicate → posit → settle`
+## The tradition
 
-This is not a second taxonomy of relations. It names the successive operations by
-which a relation becomes a usable mathematical object: articulation brings a
-related shape into view, predication gives it a claim, positing assigns evidence
-in the value logic, and settling carries that value toward a fixed point. Category
-theory, type theory, order theory, and sheaf theory are consequently treated as
-restrictions of this unfolding rather than unrelated neighbouring subjects.
+- **Aristotle** called relations relatives, *pros ti*: "that which is said to be what it is of or than something else" (*Categories* 7). A parent cannot be conceived except in relation to a child.
+- **Bradley** (1893) argued that if relations are real, what binds a relation to its terms needs a further relation, without end, so relations are appearance.
+- **Russell** (1903) held relations irreducible and real: "Relations are not adjectives, and therefore cannot be subsumed under the category of qualities." He distinguished internal relations, grounded in the nature of their terms, from external ones, contingent on circumstance.
+- **Peirce** distinguished dyadic from triadic relations; "A is between B and C" cannot be decomposed into pairs. His *rheme*, a predicate with blanks, is the same unsaturated form as Frege's concept, counted by its number of blanks.
+- **James** (1912) held relations directly experienced, not inferred: the "and" between two things is as real as the things.
+- **Whitehead** (1929) held every actual entity constituted by its prehensions, its grasps of other entities; relations are internal all the way down.
+- **Nāgārjuna** (c. 150 CE) held that nothing has own-being (*svabhāva*); everything is by dependent origination (*pratītyasamutpāda*): "When this is, that is; when this is not, that is not."
 
-The source formulation is retained in the dated relational-predication corpus;
-this paragraph is the canonical relationality summary of that chain.
+## Earlier formulations
 
-## Relations versus the broader philosophical concept
+Dated formulations from the relationality corpus, superseded by the reading above:
 
-The [philosophy/relation](../../../terms/relation.md) entry surveys the broader philosophical tradition of *relation* in Aristotle, Bradley, Russell, Whitehead, Peirce, and others. That entry is the contrast material — how Western metaphysics has conceived relations across its history. The current entry is the relationality-specific reading: relation as the structural face of the framework's primitive, distinct from the surveyed traditions that the framework draws from but does not reduce to.
+- **2025-05-03.** Relation is the condition that specifies the binding of a thing to its own ongoing existing through the act of relating; it holds open the connection between a thing and the dynamic of its own inclusion and exclusion. Every relative, the first and minimal structure, depends on it.
+- **Same corpus, undated.** Relation is the condition of being different in the same domain.
+- **Relationality derivation, draft 4.** Relation = (Differentiate Relationlessness Relationlessness): differentiating relationlessness from itself produces its complement, the full relational field, Top. Every further concept is a recognition between Bottom (no relation) and Top (all relation).
+- **2025-08-30, org-roam.** A relation is a thing that does any relating to another thing: a thing is a relation of another if it is relating to that thing.
+- **2026, agent-written.** A relation is the structural form a relating produces when it stabilizes, the residue relating leaves behind.
 
+## Related
 
----
-
-## Consolidated triage formulation
-
-<!-- CONSOLIDATED-TRIAGE-SOURCE: relation.md SHA256 59f88ad6568ff36859e9f1ed19cf6144b717f213b2a6a2b95d1d46764cd4b1d5 -->
-
-This historical formulation was consolidated from `lib/emsenn/services/561-group/services/public-services-section/services/personal-services-section/emsenn-services-section/content/text/triage/relation.md`. It is retained where its wording, links, provenance, or uncertainty differs from the active entry.
-
-<details>
-<summary>Recorded source metadata</summary>
-
-```yaml
-type: "[[condition]]"
-domain: "[[domain of relating]]"
-date-introduced: "[[2025-05-03]]"
-date-last-modified: "[[2025-05-03]]"
-```
-
-</details>
-
-### Retained formulation
-
-
-- [[define]]:: [[relation]] is the [[condition]] that specifies the binding of a [[triage/thing]] to its own ongoing [[exist|existing]] through the act of [[relate|relating]]. It holds open the connection between a [[triage/thing]] and the dynamic of its own inclusion and exclusion.
-
-## Derivation
-
-- In the derivation of [[exist|existing]]:
-    - A [[triage/thing]] must be held in ongoing [[tension]] between [[inclusion]] and [[exclusion]];
-    - This tension is sustained by the act of [[relate|relating]].
-
-- However, [[relate|relating]] alone is insufficient unless it:
-    - Not only performs the act but also establishes a **clear, determinate binding** between the [[triage/thing]] and its acts of [[include|including]] and [[exclude|excluding]].
-
-- This determinate binding is what we name [[relation]]:
-    - It is the minimal [[condition]] that ensures that the [[triage/thing]] is **not merely acted upon** abstractly but is **bound into a coherent and sustained dynamic** of its own [[exist|existing]].
-
-- [[relation]] arises as soon as:
-    - The act of [[relate|relating]] positions the [[triage/thing]] within the dynamic, specifying how the [[triage/thing]] is connected to its own [[inclusion]] and [[exclusion]];
-    - Without this, the dynamic remains transient and unstable.
-
-## Implications
-
-- [[relation]] is necessary for any coherent system of [[relational dynamics]]:
-    - Without [[relation]], there is no determinate holding of a [[triage/thing]] within its own dynamic of [[exist|existing]];
-    - [[relation]] provides the clarity and specification that allows [[relate|relating]] to stabilize the dynamic rather than merely activate it.
-
-- Every [[relative]]—the first and minimal [[structure]]—depends on the presence of [[relation]]:
-    - [[relation]] is the [[condition]] that the [[relative]] holds open durably;
-    - It is the anchor point that allows the architecture of [[exist|existing]] to achieve closure.
-
-- [[relation]] generalizes beyond individual [[triage/thing|things]]:
-    - Any binding between [[act|acts]], [[condition|conditions]], or [[structure|structures]] within the system is formalized through specific [[relation|relations]];
-    - This makes [[relation]] a foundational component of all higher-order dynamics in the system.
-
----
-
-## Earlier org-roam formulation (2025-08-30)
-
-<!-- CONSOLIDATED-ORG-SOURCE: relation.org, org-roam id 81791140-d846-43cc-88b0-f66f951b3576 -->
-
-An earlier, terser org-roam note defined relation as "a thing that does any relating to another thing," glossed in relational dynamics as: "a thing is a relation of another if it is relating to that thing." Retained here as the dated source formulation this entry has since superseded: the current framing above reads relation as the stabilized structural residue relating leaves behind, not as an active thing that itself relates.
-
-## Earlier material
-
-- [Relating](../../../../../../content/text/glossary/terms/relating.md) — the activity that produces relations as its structural residue.
-- [Subject](../../../../../../content/text/glossary/terms/subject.md), [Object](../../../../../../content/text/glossary/terms/object.md) — the two relata-side positions of a relation.
-- [Predication cell](../../../../../../math/theories/voidmath/terms/predication-cell.md) — the math articulation; the formal structure of a relation.
-- [Relationality](../../../../../../content/text/glossary/_index.md) — the framework that takes relations as ontologically prior.
-
-- [Relating](../../../../../../content/text/glossary/terms/relating.md) — the activity that produces relations as its structural residue.
-- [Subject](../../../../../../content/text/glossary/terms/subject.md), [Object](../../../../../../content/text/glossary/terms/object.md) — the two relata-side positions of a relation.
-- [Predication cell](../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/predication-cell.md) — the math articulation; the formal structure of a relation.
-- [Relationality](../../../../../../content/text/glossary/_index.md) — the framework that takes relations as ontologically prior.
-
-- [Relating](../../../../../../../social-science-services-section/content/text/glossary/terms/relating.md) — the activity that produces relations as its structural residue.
-- [Subject](../../../../../../../social-science-services-section/content/text/glossary/terms/subject.md), [Object](../../../../../../../social-science-services-section/content/text/glossary/terms/object.md) — the two relata-side positions of a relation.
-- [Predication cell](../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/predication-cell.md) — the math articulation; the formal structure of a relation.
-- [Relationality](../../../../../../../../../lib/legacy/2026-07-31-lenticule-science-corpus/animating/content/becoming/doing/working/governing/content/individual/content/agent/actuating/content/actuator/embodying/content/body/integrating/content/drone/swarming/content/swarm/content/social/_archive/relationality-repo/relationality/_index.md) — the framework that takes relations as ontologically prior.
+- [Relating](relating.md)
+- [Relationality](../../../../README.md)

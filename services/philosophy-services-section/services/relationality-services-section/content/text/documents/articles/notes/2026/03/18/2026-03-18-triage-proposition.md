@@ -52,7 +52,7 @@ Entity, Relation, Proposition, and Observation are the four ontological primitiv
 | Primitive | What it is | Role in R |
 |---|---|---|
 | [Entity](../../../../../../../../../../content/text/documents/articles/notes/2026/03/18/2026-03-18-entity.md) | Named, addressable individual | Node in the graph |
-| [Relation](../../../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/glossary/terms/relation.md) | Named connection between entities | Edge label — itself a node (condition 4) |
+| [Relation](../../../../../../glossary/terms/relation.md) | Named connection between entities | Edge label — itself a node (condition 4) |
 | Proposition | Truth-evaluable statement in H_t | Element the nuclei act on |
 | [Observation](../../../undated/observation.md) | Witnessed, grounded fact — local section | The backing that nucleates a Proposition |
 

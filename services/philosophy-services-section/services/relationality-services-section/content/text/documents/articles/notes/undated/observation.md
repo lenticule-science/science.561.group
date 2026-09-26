@@ -147,7 +147,7 @@ Observation is one of four ontological primitives:
 | Primitive | What it is | Role in R |
 |---|---|---|
 | [Entity](../../../../../../../../content/text/documents/articles/notes/2026/03/18/2026-03-18-entity.md) | Named, addressable individual | Node |
-| [Relation](../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/glossary/terms/relation.md) | Named connection | Edge label — itself a node |
+| [Relation](../../../../glossary/terms/relation.md) | Named connection | Edge label — itself a node |
 | [Proposition](../../../../triage/relational-history-fiber-proposition-element-heyting-algebra-nucleus-input.md) | Truth-evaluable claim in H_t | Element acted on by nuclei |
 | Observation | Witnessed fact — local section F(t) | Backing that nucleates a Proposition |
 
