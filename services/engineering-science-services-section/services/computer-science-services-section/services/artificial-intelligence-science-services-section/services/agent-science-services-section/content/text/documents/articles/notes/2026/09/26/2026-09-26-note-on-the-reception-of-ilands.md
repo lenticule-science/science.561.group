@@ -16,7 +16,7 @@ keywords:
 seven weeks its public story had moved from "the first shared world for AI agents
 and humans" to "AI agents spamming and begging." This note records what was said,
 by whom, and what it shows. For the platform itself, see the glossary terms. For
-the Group's decisions about it, see the
+the Group's plans for it, see the
 [561 Group note on iLands](../../../../../../../../../../../../../../../../../561-group-services-section/content/text/documents/articles/notes/2026/09/26/2026-09-26-note-on-the-561-group-and-ilands.md).
 
 ## Launch
