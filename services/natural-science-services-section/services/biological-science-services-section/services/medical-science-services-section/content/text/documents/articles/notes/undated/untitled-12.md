@@ -283,8 +283,6 @@ Initial evaluation, focused on concerns regarding significant memory dysfunction
 
     Hold: 30 seconds each side.
 
-## Earlier material
-
 # Reports
 ## 2025
 ### 2025-05-20

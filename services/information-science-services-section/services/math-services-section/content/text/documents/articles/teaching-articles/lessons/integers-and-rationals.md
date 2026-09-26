@@ -50,8 +50,6 @@ The integer $-1$ can be represented as the equivalence class of $(0,1)$, since i
 - Treating negative numbers as primitive without a construction.
 - Using fractions without specifying a nonzero denominator.
 
-## Earlier material
-
 - **Integers** $\mathbb{Z}$ can be constructed as equivalence classes of pairs (a,b)(a,b) of natural numbers, with (a,b)∼(c,d)(a,b) \sim (c,d) if a+d=b+ca+d=b+c.
 
 The integer −1-1 can be represented as the equivalence class of (0,1)(0,1), since it behaves like &ldquo;subtract 1.&rdquo; The rational 1/21/2 can be represented by the class of (1,2)(1,2).

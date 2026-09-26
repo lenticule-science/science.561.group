@@ -106,8 +106,6 @@ These constraints ensure that syntax formation and quotienting remain faithful
 to the earned structures and operators and cannot drift into hand-written,
 non-relational behaviour.
 
-## Earlier material
-
 - **Free and Quotient Act Simulation**: describes formation, reduction, and
   congruence maintenance for algebraic structures.
 - **STLC Simulation**: supplies typing/evaluation rules used when forming

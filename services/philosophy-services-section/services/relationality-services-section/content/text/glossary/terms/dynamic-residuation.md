@@ -69,8 +69,6 @@ This confirms Dynamic Residuation is a genuine structural law, not an automatic 
 
 The law Flow(a ∧ b) ≤ c ⟺ a ≤ Flow(b ⇒ c) — is this the DEFINING property of Flow's interaction with the logical core, or a consequence of the KZ-comonadic structure? Draft 10 states it as a law; the treatise treats it as earned from the structure.
 
-## Earlier material
-
 Dynamic residuation states that flowing a context and then testing implication
 is equivalent to testing implication against a closed context.  We express this
 by composing [FlowIndexImplication](../../documents/articles/notes/flow-index-implication.md) with
@@ -80,7 +78,3 @@ by composing [FlowIndexImplication](../../documents/articles/notes/flow-index-im
 
 The act records that the law “`c ≤ a ⇒_F b` iff `F(c ∧ a) ≤ b`” continues to
 hold when both sides are restricted to the context flow and nucleus.
-
-{{ act_info(page.meta) }}
-
-{{ act_nav(page.meta) }}

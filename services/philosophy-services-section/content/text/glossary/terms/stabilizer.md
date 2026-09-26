@@ -13,17 +13,6 @@ The stabilizer is one half of the recognition dynamics in the [GFRTU](../../../.
 
 The stabilizer in the GFRTU is analogous to the [modality](../../../../services/relationality-services-section/content/text/glossary/terms/modality.md) j in the [semiotic](../../../../../linguistics/topics/semiotics/index.md) universe: both are idempotent, monotone closure-like operators whose [fixed points](../../../../concepts/fixed-point/index.md) form a well-behaved subalgebra. In the [semiotic](../../../../../linguistics/topics/semiotics/index.md) universe, the j-stable elements form a complete [Heyting](../../../../../general/people/arend-heyting.md) subalgebra; in the GFRTU, the σ-stable elements at each trace form the local active fragment.
 
----
-
-## Supplementary formulation
-
-```yaml
----
-name: "Stabilizer"
-tags: []
----
-```
-
 A **stabilizer** is a monotone endomorphism $\sigma_t : H_t \to H_t$ on a [recognition fiber](recognition-fiber.md) that implements stabilization dynamics within the [Quasicrystalline Hypertensor Topos](../index.md). The stabilizer determines which elements of the fiber are active (those satisfying $\sigma(a) = a$) and interacts with the drift operator to produce the fixed fiber $H_t^*$.
 
 Axiom A2 of the [QCHTTopos specification](../../../../services/relationality-services-section/services/quasicrystalline-hypertensor-topos-services-section/content/text/documents/articles/notes/quasicrystalline-hypertensor-topos-specification.md) defines stabilizers and drift operators.

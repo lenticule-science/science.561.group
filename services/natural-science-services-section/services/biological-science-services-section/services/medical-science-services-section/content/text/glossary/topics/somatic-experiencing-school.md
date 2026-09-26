@@ -117,16 +117,4 @@ SE's focus on autonomic regulation means it may not address the cognitive and so
 
 The training model's emphasis on practitioner self-regulation, while sound in principle, creates a subjective quality threshold that's difficult to assess from outside. What constitutes adequate practitioner regulation isn't standardized.
 
-## Earlier material
-
-Peter Levine's body-oriented trauma resolution tradition, treating trauma as incomplete physiological response rather than cognitive memory.
-
-For the detailed account of SE&rsquo;s biological basis, method (titration, pendulation, felt sense, discharge), and relation to other somatic concepts, see the [Somatic Experiencing concept note](../../documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/medicine/somatic-experiencing.md).
-
 - **Felt sense as primary data.** SE draws on [Eugene Gendlin](../../documents/articles/research/2026/07/humanities/domains/general/domains/people/eugene-gendlin.md)&rsquo;s concept of the &ldquo;felt sense&rdquo; [@gendlin1978] — the holistic, bodily sense of a situation — as its primary perceptual tool. Other somatic methods attend to proprioceptive detail; SE attends to the whole-body gestalt of activation and settling.
-
-SE training is a three-year professional program. Trainees learn to track autonomic indicators (breath, color, muscle tone, eye movement, postural shifts), practice titration and pendulation in supervised clinical work, and develop their own [somatic awareness](../../../../services/somatics-services-section/content/text/glossary/terms/somatic-awareness.md) capacity. The training emphasizes the practitioner&rsquo;s own nervous system regulation — the premise being that a dysregulated practitioner can&rsquo;t effectively support another person&rsquo;s regulation process.
-
-SE also connects to the vault&rsquo;s [harm reduction](../../../../services/public-health-services-section/content/text/glossary/terms/harm-reduction.md) and [disability justice](../../documents/articles/research/2026/07/31/lenticule-import/library/terms/disability-justice.md) frameworks. SE doesn&rsquo;t demand narrative coherence, emotional readiness, or therapeutic alliance as preconditions for treatment. It meets the nervous system where it is. This is harm reduction applied to trauma work — and it aligns with disability justice&rsquo;s insistence that people shouldn&rsquo;t have to meet institutional requirements before receiving care.
-
-The training model&rsquo;s emphasis on practitioner self-regulation, while sound in principle, creates a subjective quality threshold that&rsquo;s difficult to assess from outside. What constitutes adequate practitioner regulation isn&rsquo;t standardized.

@@ -44,8 +44,6 @@ A description travels with the node as the frontmatter `description:` field, mak
 
 - Whether descriptions in this system correspond formally to sections of a sheaf of predicates over the type-indexed nodes.
 
-## Earlier material
-
 A ***description*** is an [intension](../../../../../../../../../information-science-services-section/services/communication-science-services-section/services/linguistics-services-section/services/semantics-services-section/content/text/glossary/terms/intension.md) of relating [meaning](../../../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/meaning.md) to a [thing](../../../../../../../../content/text/glossary/terms/thing.md) by [describing](../../../../../../content/text/glossary/terms/describing.md), the [constructing](../../../../../../content/text/glossary/terms/constructing.md) of a [text](../../../../../../../../../information-science-services-section/content/text/glossary/terms/text.md) containing one or more [claim](../../../../../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/essay-writing-services-section/content/text/glossary/terms/claim.md) of relation between the thing and itself or the thing and one or more other thing.
 
 It is the [result](../../../../../../content/text/glossary/terms/result.md) of [describing](../../../../../../content/text/glossary/terms/describing.md). It is used by [interpreting](../../../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/interpreting.md).

@@ -32,12 +32,4 @@ aliases:
 - Thus:
 	- reflect-induced-relation(p, n) = reflex-induced-relation(reflect-induced-relation(p, 1, n)) for p  ≥ 2
 
-## Earlier material
-
-- Definition:: ***reflecting an induced relation*** is the [../../../../../slop/relationality/human-draft-7/system/acts/act](../../../../slop/relationality/human-draft-7/system/acts/act) of inducing a [relational structure](relational structure) formed from multiple [reflex induced relation|reflexed induced relations](reflex induced relation|reflexed induced relations) at a shared reflexive iteration.
-
-- Definition:: ***reflecting an induced relation*** is the [act](../../../../services/relationality-services-section/content/text/triage/act) of inducing a [relational structure](relational structure) formed from multiple [reflex induced relation|reflexed induced relations](reflex induced relation|reflexed induced relations) at a shared reflexive iteration.
-
-- Definition:: ***reflecting an induced relation*** is the [../../../../../slop/relationality/human-draft-7/system/acts/act](../../../../services/relationality-services-section/slop/relationality/human-draft-7/system/acts/act) of inducing a [relational structure](relational structure) formed from multiple [reflex induced relation|reflexed induced relations](reflex induced relation|reflexed induced relations) at a shared reflexive iteration.
-
 - Definition:: ***reflecting an induced relation*** is the [act](../../../../services/relationality-services-section/content/text/triage/relationality/relationality-slop-2025-05/derivations/act) of inducing a [relational structure](relational structure) formed from multiple [reflex induced relation|reflexed induced relations](reflex induced relation|reflexed induced relations) at a shared reflexive iteration.

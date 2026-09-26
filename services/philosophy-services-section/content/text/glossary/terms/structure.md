@@ -47,8 +47,6 @@ introduces: "[structure](structure)"
 - No [[condition]] achieves full coherence unless it is stabilized by a corresponding [[structure]].
 [[exist|existing]]
 
-## Earlier material
-
 A ***structure*** is what results from [structuring](structuring.md).
 
 ``` {#structure-org-roam-capture-template .elisp tangle="./src/gpe/org-roam-capture-templates/ts.el"}

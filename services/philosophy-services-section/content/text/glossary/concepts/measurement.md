@@ -38,8 +38,6 @@ Measurement arises in [Movement V: Emergent Containment](emergent-containment.md
 - [Flow](flow.md) — the dynamics that measurement must respect
 - [Balance](../../../../services/relationality-services-section/content/text/glossary/concepts/balance.md) — the constraint on measurement's interaction with structure
 
-## Earlier material
-
 Carrier for measured quantities over observables/profiles, earned from the act
 [Measure](../../../../services/relationality-services-section/content/text/acts/measure.md). Packages the measured value, its unit/normalization,
 and provenance.

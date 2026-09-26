@@ -34,8 +34,6 @@ OAuth-style authentication payload described below.
 - Scopes are declared and policy-checked before issuance of tokens.
 - All provenance fields are present for audit.
 
-## Earlier material
-
 Concrete credential carrier for OAuth-style authentication at the computer
 layer. Encodes client identity and proof material as a recognised payload.
 

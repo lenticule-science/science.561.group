@@ -36,8 +36,6 @@ respect that structure. Specification and architecture documents describe how
 concrete modules, services, and runbooks implement these policy constraints in
 practice.
 
-## Earlier material
-
 3. **Enforcement.**  
    Since module wiring and distribution respect these structures, every module
    interaction can be checked against the discipline/filter rules before data is
@@ -45,8 +43,3 @@ practice.
 
 Thus the calculus already provides a policy stack: policies are earned acts,
 modules must obey them, and the distribution/scheduling layers enforce them.
-
-3. **Enforcement.**
-   Since module wiring and distribution respect these structures, every module
-   interaction can be checked against the discipline/filter rules before data is
-   forwarded.

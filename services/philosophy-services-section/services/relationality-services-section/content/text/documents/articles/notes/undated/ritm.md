@@ -165,8 +165,6 @@ Existence of RITM structure via mapping objects with oriented interval \(I_d\).
 ### Constraints
 - law: cohesive pair Π ⊣ ∇
 
-## Earlier material
-
 # Function: Commutation of nuclei
 ## Statement
 $j_f j_b = j_b j_f$ in PSh({0→1}).

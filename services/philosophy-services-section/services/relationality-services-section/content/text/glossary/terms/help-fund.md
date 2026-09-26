@@ -6,6 +6,32 @@ aliases:
 
 ## Principles
 - Hive is messy
+	- the rate of technical debt outpaces the rate of repair & development.
+	- Yield comes from odd places
+- No Tribe is good enough to beat the messiness
+- Keep value within Hive liquid, diversified, and as de-coupled from HIVE as possible.
+- If a token doesn't have a liquidity pool, swap it for one that does
+## Strategies
+- Focus on providing liquidity to bridge tokens
+	- SWAP.BTC, SWAP.ETH
+- Limit positioning within any tribal tokens to 0.1% share of pool.
+- Shares may be redeemed for HIVE, HBD, or in-kind
+
+| Pool               | Token 1     | Token 2    | Value (USD) | % of Pool |
+| ------------------ | ----------- | ---------- | ----------- | --------- |
+| SWAP.HIVE:SWAP.BTC | 16.95533879 | 0.00004526 | 7.332       | 0.004     |
+| TOTAL              |             |            | 7.332       |           |
+## History
+### 2025
+- [2025-03-24](../../../../../../../social-science-services-section/services/economics-and-business-science-services-section/services/business-science-services-section/content/text/documents/articles/notes/2025-03-24)
+	- [Sigmund Vexler](Sigmund Vexler) has the idea to set up a separate account for his investment portfolio on Hive.
+- [2024-04-03](../../../../../../../social-science-services-section/services/economics-and-business-science-services-section/services/business-science-services-section/content/text/documents/articles/notes/2024-04-03)
+	- [Sigmund Vexler](Sigmund Vexler) sets up the [HELP Fund](HELP Fund)
+	- [Michael Marmot](Michael Marmot) delegates 3 [HIVE](../../../../../../../social-science-services-section/services/economics-and-business-science-services-section/services/business-science-services-section/content/text/documents/articles/notes/HIVE) to [HELP Fund](HELP Fund)
+	- [Michael Marmot](Michael Marmot) makes the first deposit to [HELP Fund](HELP Fund), \$7.44 for 1 share.
+
+## Principles
+- Hive is messy
 	- the rate of [[technical debt]] outpaces the rate of [[repairing|repair]] & [[developing|development]].
 	- [[profit|Yield]] comes from odd places
 - No [[Hive Tribe|Tribe]] is good enough to beat the messiness
@@ -79,33 +105,3 @@ The `Value` of liquidity positions is reported from TribalDex's interface.
 	- [[Sigmund Vexler]] sets up the [[HELP Fund]]
 	- [[Michael Marmot]] delegates 3 [[HIVE]] to [[HELP Fund]]
 	- [[Michael Marmot]] makes the first deposit to [[HELP Fund]], $7.44 for 1 share.
-
-## Earlier material
-
-***Vexler's Liquid Vault*** (VLV) is an private investment portfolio on [Hive](../../../../../../../social-science-services-section/services/economics-and-business-science-services-section/services/business-science-services-section/content/text/documents/articles/notes/Hive) managed by [Sigmund Vexler](Sigmund Vexler) open to members of the [Turntide Islands](Turntide Islands) and [AGRODAO](../../../../../../../social-science-services-section/services/economics-and-business-science-services-section/services/business-science-services-section/content/text/documents/articles/notes/AGRODAO).
-
-## Principles
-- Hive is messy
-	- the rate of technical debt outpaces the rate of repair & development.
-	- Yield comes from odd places
-- No Tribe is good enough to beat the messiness
-- Keep value within Hive liquid, diversified, and as de-coupled from HIVE as possible.
-- If a token doesn't have a liquidity pool, swap it for one that does
-## Strategies
-- Focus on providing liquidity to bridge tokens
-	- SWAP.BTC, SWAP.ETH
-- Limit positioning within any tribal tokens to 0.1% share of pool.
-- Shares may be redeemed for HIVE, HBD, or in-kind
-
-| Pool               | Token 1     | Token 2    | Value (USD) | % of Pool |
-| ------------------ | ----------- | ---------- | ----------- | --------- |
-| SWAP.HIVE:SWAP.BTC | 16.95533879 | 0.00004526 | 7.332       | 0.004     |
-| TOTAL              |             |            | 7.332       |           |
-## History
-### 2025
-- [2025-03-24](../../../../../../../social-science-services-section/services/economics-and-business-science-services-section/services/business-science-services-section/content/text/documents/articles/notes/2025-03-24)
-	- [Sigmund Vexler](Sigmund Vexler) has the idea to set up a separate account for his investment portfolio on Hive.
-- [2024-04-03](../../../../../../../social-science-services-section/services/economics-and-business-science-services-section/services/business-science-services-section/content/text/documents/articles/notes/2024-04-03)
-	- [Sigmund Vexler](Sigmund Vexler) sets up the [HELP Fund](HELP Fund)
-	- [Michael Marmot](Michael Marmot) delegates 3 [HIVE](../../../../../../../social-science-services-section/services/economics-and-business-science-services-section/services/business-science-services-section/content/text/documents/articles/notes/HIVE) to [HELP Fund](HELP Fund)
-	- [Michael Marmot](Michael Marmot) makes the first deposit to [HELP Fund](HELP Fund), \$7.44 for 1 share.

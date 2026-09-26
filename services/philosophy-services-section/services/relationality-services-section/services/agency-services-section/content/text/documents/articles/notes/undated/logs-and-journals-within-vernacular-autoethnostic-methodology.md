@@ -20,10 +20,6 @@ Maintaining this bifurcation between logs and journals is not about policing the
 
 Together, logs and journals form a **vernacular autoethnostic methodology**: a writing system through which I generate knowledge about myself, my relations, and the world I move through—not as a detached observer, but as a participant in an unfolding and recursive relational field. This bifurcated structure enables me to hold complexity, to build a living archive of presence and transformation, and to meet the labor of mystical study with the rigor and coherence it demands.
 
-## Earlier material
-
 Within [my Obsidian Vault](my Obsidian Vault), writing about my [personal experience|personal experiences](personal experience|personal experiences) and my [subjective interpretation](subjective interpretation) of them generally falls into one of two types of writing: [log|logs](../../../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/triage/undated/log|logs) and [journal|journals](../../../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/triage/undated/journal|journals).
 
 Their distiction is functional, reflecting two different modes of using [write|writing](../../../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/triage/undated/write|writing) to engage with [my world](my world) through [ontologize|ontologizing](../../../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/triage/undated/ontologize|ontologizing).
-
-Both modes are situated within my [vernacular autoethnostic methodology](vernacular autoethnostic methodology), an [epistemic methodology](epistemic methodology) derived from [relational dynamics](relational dynamics). Logs serve a reflexive role, situating experience within a field of what is known, while journals allow for generative exploration of ideas.

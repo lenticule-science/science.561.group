@@ -61,12 +61,6 @@ The pattern "determines X but cannot determine Y, so must derive Z" is the forma
 - Pattern: "determines coexistence but cannot determine which carries the act" → the pattern of incitement
 - Corresponds to: the Exclusion Recognition in the treatise's Articulation Theorem
 
-## Earlier material
-
 Relation and its negation coexist in tension, so we must record the act that testifies to both at once.
 
 The trace `(NotRelate Relate)` takes the already defined act *Not Relate* as its witness and *Relate* as its object.  Because both constituents exist, this composition simultaneously cites affirmation and denial, so we name it *Witness*.
-
-{{ act_info(page.meta) }}
-
-{{ act_nav(page.meta) }}

@@ -94,11 +94,3 @@ space, identifying what types should exist by structural necessity, and
 producing the specifications to fill the gaps. When the closure engine is
 operational, S_syn will automate part of this cycle. Until then, the
 spiral is how we close the gap manually.
-
-## Earlier material
-
-**Artifacts consulted**: library/triage/, theories/, git history,
-  prior slop files
-
-**Artifacts consulted**: library/triage/, library/theories/, git history,
-  prior slop files

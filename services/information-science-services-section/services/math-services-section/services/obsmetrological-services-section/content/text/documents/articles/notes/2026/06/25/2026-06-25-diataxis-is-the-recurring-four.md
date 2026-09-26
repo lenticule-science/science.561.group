@@ -603,8 +603,6 @@ not about stable individual styles.
 - Depends on `RelMath.Positing.QuartetRecurrence` (`quartet_recurrence`,
   `twistoring_eq_commutating`) and `RelMath.Positing.Four` (`Charge.klein_four`).
 
-## Earlier material
-
 Procida's Diátaxis @procida2026 places four documentation
 modes on two independent binary axes:
 

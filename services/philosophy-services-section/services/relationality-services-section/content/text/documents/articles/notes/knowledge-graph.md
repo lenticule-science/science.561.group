@@ -102,8 +102,6 @@ interface becomes a protocol adapter around this internal knowledge graph,
 while the graph itself remains an explicit realisation of the relational
 mathematics.
 
-## Earlier material
-
 - **TracePoints** be the triadic runtime points produced by the recognition,
   trace, and measurement acts (observation, judgement, witness, context,
   trace).

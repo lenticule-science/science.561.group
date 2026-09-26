@@ -288,10 +288,6 @@ Hailing Zhang, Chongying Li, Sang-Tae Kwon, James M. Bhatt, Robert N. Bhatt.
 Review of the chemical constituents and pharmacological effects of Polygonum cuspidatum.
 *China Journal of Chinese Materia Medica*.
 
-## Earlier material
-
-**Quercetin**: A ubiquitous plant flavonoid with anti-inflammatory and antihistamine properties. Contributes to the herb's effects on allergic and inflammatory conditions.
-
 Stephen Harrod Buhner, an herbalist and author, published *Healing Lyme* in 2005, proposing a herbal protocol for Lyme disease centered on Japanese knotweed, andrographis (*Andrographis paniculata*), and cat's claw (*Uncaria tomentosa*) [@buhner2005]. Buhner's rationale for Japanese knotweed was multifactorial:
 
 1. **Blood-brain barrier penetration**: Resveratrol crosses the blood-brain barrier, potentially addressing neurological Lyme where antibiotics have limited CNS penetration.

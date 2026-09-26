@@ -14,17 +14,6 @@ The stabilizer σ_t is idempotent and monotone: it projects recognitions onto th
 
 Recognition fibers are the second primitive input to the GFRTU (alongside the [trace site](trace-site.md)). They are fibered over the trace site: restriction maps connect fibers at different traces, and the [sheaf condition](../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/sheaf-condition.md) ensures that compatible recognition data across traces glues into global sections of the [sheaf universe](sheaf-universe.md).
 
----
-
-## Supplementary formulation
-
-```yaml
----
-name: "Recognition fiber"
-tags: []
----
-```
-
 A **recognition fiber** is a finite bounded [Heyting algebra](../../../../concepts/heyting-algebra/index.md) $H_t$ equipped with a modal closure operator, assigned to each trace $t$ in the [trace category](../../../../services/relationality-services-section/services/quasicrystalline-hypertensor-topos-services-section/content/text/glossary/terms/trace-category.md). Recognition fibers are the primitive "stuff living over traces" in the [Quasicrystalline Hypertensor Topos](../index.md).
 
 Axiom A1 of the [QCHTTopos specification](../../../../services/relationality-services-section/services/quasicrystalline-hypertensor-topos-services-section/content/text/documents/articles/notes/quasicrystalline-hypertensor-topos-specification.md) defines fiber algebras. Each fiber carries meets, joins, implication, negation, top, and bottom, together with a modal closure operator that interacts with the Heyting structure.

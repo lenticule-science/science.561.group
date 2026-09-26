@@ -112,8 +112,6 @@ The settler-state's pretension to have *terminated* the 1868 treaty by the 1877 
 - Edward Lazarus, *Black Hills, White Justice* (1991) — confederation-scale treaty-defense and the 1980 Supreme Court ruling.
 - *We Are the Land*, ed. Damon Akins and William Bauer Jr. (UC Press, 2021) — pan-Indigenous polity-history context.
 
-## Earlier material
-
 - $\langle \Omega, \texttt{division-member}, D_i\rangle$ for each of the seven divisions $D_1, \ldots, D_7$.
 - $\langle \Omega, \texttt{council-fire-place}, p_i\rangle$ for each division's council-fire location; the seven fires give the confederacy its name.
 - $\langle \Omega, \texttt{constituent-power}, C_\Omega\rangle$ where $C_\Omega$ is the cosmogonic-and-historical founding: see §"Constituent power" below.
@@ -123,9 +121,3 @@ The settler-state's pretension to have *terminated* the 1868 treaty by the 1877 
 
 **(Ω3) Treaty-bearing.** $\langle \Omega, \texttt{great-council-potential}\rangle \geq_k \mathbf{t} \;\wedge\; \langle \Omega, \texttt{treaty-with-party-}P\rangle \geq_k \mathbf{t} \;\wedge\; w_\mathrm{lak}(\cdot) = 1 \;\Longrightarrow\; \langle \Omega, \texttt{bound-by-treaty-with}, P\rangle$ settles.
 The wakȟáŋ-marking is essential: a treaty is binding *as wakȟáŋ-bearing declaration* (cf. [treaty-as-wakhan-declaration](../../../philB/code/transformers/treaty-as-wakhan-declaration.md)).
-
-- **Treaty** ([treaty-as-wakhan-declaration](../../../philB/code/transformers/treaty-as-wakhan-declaration.md)) for ceremonially-binding covenants.
-  The 1851 and 1868 Fort Laramie treaties are the central instances with the United States.
-- **Diplomatic visit and gift exchange** (the substrate-form of recognition between sovereigns) for ongoing relations.
-- **War** (the bounded akicita-scope at confederacy-scale) for hostilities.
-- **Adoption** (huŋkápi at polity-scale) for incorporation of allies or dependents.

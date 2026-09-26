@@ -95,13 +95,3 @@ The saturating and transferring nuclei are **acts** (they do something to a prop
 `relational-history-saturating-nucleus` and `relational-history-transferring-nucleus` are **derived constructions**: they prove the saturating and transferring nuclei exist by sheafification / intersection-of-restriction-images respectively, and require hyperverse structure. Their headings say "Construction —", not "Definition —".
 
 All fiber-level ASTs that reference the saturating or transferring nucleus must point to the axiomatic files, not the derived ones, to remain non-circular.
-
----
-
-## Earlier material
-
-All 179 definition-class units (Definition, Construction, Axiom headings) had `defines:` added to their frontmatter.
-Prior to this pass, 0 units had `defines:`.
-The `name` value is `CamelCase(id)` mechanically.
-
-All 13 active IDEAS were promoted to PLANS and completed (unit files written): relational-intelligence-criterion, commutation-density-dimension, cohomological-dimension-bound, restriction-curvature, holographic-boundary, entanglement-spectral-mass, normal-form-fibonacci-growth, entanglement-cohomology-shadow, hubble-fibonacci-step, two-temperature-duality, phase-normalization-constant, relational-kramers-kronig, dissolved-fml-quantum-correspondence (now five separate conjecture units).

@@ -22,8 +22,6 @@ Third, observation cells across different observer-instruments combine via the b
 
 See also [calibration link](calibration-link.md), [astronomical settling](../../documents/articles/notes/astronomical-settling.md).
 
-## Earlier material
-
 An **observation cell** is a triple $(b, p, o)$ — a celestial body $b$, a predicate $p$, and an [observer-instrument](../../../../../../../../../../../philosophy-services-section/services/logic-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/yet-another-unsorted-archive-dump/predication-categories/_archive/bucket-4/articulating/library/aperiodic-articulation-category/library/aperiodic-articulation-cell/library/potential-aperiodic-articulation-cell/predicating/library/transfinite-predication-category/library/transfinite-predication-cell/library/potential-transfinite-predication-cell/positing/library/scott-continuous-posit-category/library/scott-continuous-posit-cell/library/potential-scott-continuous-posit-cell/settling/library/finite-settlement-algebra/hacking/library/settlement/library/observer-instrument/observer-instrument.md) $o$ — together with the bilattice value $v(b, p, o) \in \mathbf{L}$ recording the evidence the observation provides.
 
 **Indexed by the observer-instrument.** This makes the question "what does the observed universe look like *to this instrument*?" a structurally precise question — it is the restriction of the astronomical settlement to that instrument's admissible-value sub-bilattice (a fiber-restriction sub-settlement).

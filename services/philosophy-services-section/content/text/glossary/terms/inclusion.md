@@ -38,8 +38,6 @@ introduces: "[condition](condition)"
     - Without [[inclusion]], no [[triage/thing]] can be marked as present within the field of what is;
 - [[inclusion]] participates in the fundamental [[relational dynamics]] that generate and sustain [[exist|existing]] and all further relational architectures.
 
-## Earlier material
-
 ***Inclusion*** is the [condition](../../../../services/relationality-services-section/services/agency-services-section/content/text/glossary/terms/condition.md) [induced](../../../../services/relationality-services-section/services/agency-services-section/content/text/glossary/terms/inducing.md) by [including](../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/including.md). It describes whether a [thing](thing.org.md) is held within what is; it is true when some thing is present within the [domain of relating](../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/domain-of-relating.md).
 
 - Every [thing](thing.org.md) that [exists](existing.md) is [conditioned](../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/conditioning.md) by both [inclusion](../../../../services/relationality-services-section/services/agency-services-section/content/text/glossary/concepts/inclusion.md) and [exclusion](../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/exclusion.md).

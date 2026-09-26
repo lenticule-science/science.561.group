@@ -40,14 +40,7 @@ aliases:
     - Each new [[condition]] or [[structure]] that is derived can itself become the basis for further derivations;
     - This supports the system’s capacity for ongoing, self-consistent expansion.
 
-## Earlier material
-
-- [define](../../../../services/relationality-services-section/content/text/triage/define):: To [derive](../../../../services/relationality-services-section/content/text/triage/derive) is the [act](../../../../services/relationality-services-section/content/text/triage/act) of bringing out what is **compelled** by a given [../conditions/condition](../../../../services/relationality-services-section/content/text/conditions/condition) or [../structures/structure](../../../../services/relationality-services-section/content/text/structures/structure). [derive|Deriving](../../../../services/relationality-services-section/content/text/triage/derive|Deriving) is how the system moves forward: identifying what must follow to maintain coherence within the relational dynamic.
-
-- [relational dynamics](relational dynamics) require that nothing be introduced arbitrarily:
-    - Every new [act](../../../../services/relationality-services-section/content/text/triage/act), [../conditions/condition](../../../../services/relationality-services-section/content/text/conditions/condition), or [../structures/structure](../../../../services/relationality-services-section/content/text/structures/structure) must be shown to follow from what has already been established.
-
-- Each of these steps is not optional or speculative but is brought forward through the [act](../../../../services/relationality-services-section/content/text/triage/act) of [derive|deriving](../../../../services/relationality-services-section/content/text/triage/derive|deriving).
+## Related
 
 - [define](define.md):: To [derive](derive.md) is the [act](../../../../services/relationality-services-section/content/text/triage/relationality-2/human-draft-7/system/acts/act.md) of bringing out what is **compelled** by a given [../conditions/condition](../../../../services/relationality-services-section/content/text/triage/relationality-2/human-draft-7/system/conditions/condition.md) or [../structures/structure](../../../../services/relationality-services-section/content/text/triage/relationality-2/human-draft-7/system/structures/structure.md). [derive|Deriving](../../../../services/relationality-services-section/content/text/triage/relationality-2/human-draft-7/system/acts/derive|Deriving) is how the system moves forward: identifying what must follow to maintain coherence within the relational dynamic.
 
