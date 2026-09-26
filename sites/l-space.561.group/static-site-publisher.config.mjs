@@ -16,7 +16,7 @@ import { ADMISSION_MIGRATIONS } from '@red-cup-engineering/computer-web-server/a
 import { SIGN_IN_PATH, createWebAdmissionApplication, defaultPublicRoute } from '@red-cup-engineering/computer-web-server/admission/application';
 import { createPrincipalRegistry } from '@red-cup-engineering/computer-web-server/admission/principals';
 import { openArchive } from '@red-cup-engineering/knowledge-system-server/archive';
-import { searchAndFetchTools, vaultMcpTools } from '@red-cup-engineering/knowledge-system-server/mcp-tools';
+import { gardenPrompts, noteResourceTemplates, searchAndFetchTools, vaultMcpTools } from '@red-cup-engineering/knowledge-system-server/mcp-tools';
 import { mcpResource } from '@red-cup-engineering/mcp-engineering-services-section/http';
 import { createAuthorizationServer, createJsonFileGrantStore } from '@red-cup-engineering/oauth-services-section/authorization-server';
 import { createVaultMazeApplication } from '@red-cup-engineering/graphical-knowledge-game-server/application';
@@ -195,6 +195,8 @@ export function mcpApplications({ admission, environment = process.env, archive 
     version: '0.3.0',
     instructions: 'L-Space is the Lenticule Science knowledge garden: some twenty thousand Markdown notes, glossary terms and articles. Use search then fetch to find and read notes; the vault_* tools read what the notes say as relations, cells and concepts, and (for the author) write them.',
     tools: [...searchAndFetchTools({ documentUrl: (path) => roomUrl(base, path) }), ...vaultMcpTools],
+    resourceTemplates: noteResourceTemplates({ scheme: 'l-space', title: 'L-Space notes', documentUrl: (path) => roomUrl(base, path) }),
+    prompts: gardenPrompts(),
     realm: 'l-space.561.group',
     resourceMetadataUrl: `${base}/.well-known/oauth-protected-resource/mcp`,
     verifyToken: (token) => authorization.verifyToken(token, { resource }),
