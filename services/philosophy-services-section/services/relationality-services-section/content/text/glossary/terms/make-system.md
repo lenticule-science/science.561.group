@@ -17,6 +17,6 @@ This lifting to the meta level is what makes self-reference structurally possibl
 - [Meta-Iterate](../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-04/meta-iterate.md) — self-application at the system level
 - [Meta-Flow](../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-04/meta-flow.md) — evolution on systems
 - [Meta-Balance](../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-04/meta-balance.md) — coherence condition for systems
-- [Balance](../concepts/balance.md) — the object-level analogue that Meta-Balance generalizes
+- [Balance](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) — the object-level analogue that Meta-Balance generalizes
 
 ---

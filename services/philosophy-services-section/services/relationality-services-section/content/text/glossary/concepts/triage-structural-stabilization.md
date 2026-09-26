@@ -44,7 +44,7 @@ Given that the condition of relational negation is determined by how it structur
 
 ### Balance
 
-The dual motions of closure and interior must be compatible. What is closed inward must cohere with what is opened outward. This compatibility is [balance](balance.md): a dynamic equilibrium rather than a static compromise. In this state of balance, each act of necessity both limits and enables an act of possibility, and vice versa. The two modalities reflect into each other, sustaining coherence through their mutual counter-action. This reflexive equilibrium is the metabolic rhythm of the relational field — a law of simultaneous fortification and openness.
+The dual motions of closure and interior must be compatible. What is closed inward must cohere with what is opened outward. This compatibility is [balance](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md): a dynamic equilibrium rather than a static compromise. In this state of balance, each act of necessity both limits and enables an act of possibility, and vice versa. The two modalities reflect into each other, sustaining coherence through their mutual counter-action. This reflexive equilibrium is the metabolic rhythm of the relational field — a law of simultaneous fortification and openness.
 
 The compatibility condition (the Frobenius law) is not assumed but earned: applying an interior to the combination of a recognition with a closed recognition produces the same result as combining the interior of the first with the closed second. In plain terms, the operations of consolidation and release do not interfere with each other. They can be performed in either order without distorting the structure.
 
@@ -60,9 +60,9 @@ Determining boundary-excluding, relational negation, and relational boundary pro
 
 ## What arises
 
-**Terms:** [Close](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md), [Open](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md), [Include](../../terms/include.md), [Balance](balance.md), [Stabilizes-Between](../../terms/stabilizes-between.md), [Must](../../terms/must.md), [May](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/may.md), [Identity](../../terms/identity.md), [Maintains-Balance](../../terms/maintains-balance.md)
+**Terms:** [Close](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md), [Open](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md), [Include](../../terms/include.md), [Balance](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md), [Stabilizes-Between](../../terms/stabilizes-between.md), [Must](../../terms/must.md), [May](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/may.md), [Identity](../../terms/identity.md), [Maintains-Balance](../../terms/maintains-balance.md)
 
-**Phenomena:** [Closure](../../phenomena/closure.md) — settling under iteration. [Reflexion](../../../../../../content/text/glossary/concepts/reflexion.md) — structure turning back on itself. [Balance](balance.md) — compatibility of dual containments.
+**Phenomena:** [Closure](../../phenomena/closure.md) — settling under iteration. [Reflexion](../../../../../../content/text/glossary/concepts/reflexion.md) — structure turning back on itself. [Balance](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) — compatibility of dual containments.
 
 **Processes:** [Stabilization](../../processes/stabilization.md) — the process by which structure settles into fixed points.
 

@@ -28,7 +28,7 @@ This is not global termination. There is always more [relating](relating.md) tha
 
 [True](true.md) and [false](false.md) are the truth-valued shapes a determination can take. A determined claim may be determined-true (the witnessing structure affirms the claim), determined-false (the witnessing structure denies the claim), or both (in the paraconsistent case, where evidence is registered in both directions and the framework records the conflict rather than collapsing it). [Absurd](absurd.md) claims do not yet take a stable truth value because no witnessing structure yet shapes them — true and false are positions on the truth axis, and that axis only resolves once the knowledge axis has moved off the absurd corner.
 
-The two axes — true/false on the truth axis, absurd/determined on the knowledge axis — are independent. They compose to give the four-cornered [settlement](settlement.md) shape that runs through both the philosophical articulation and the framework's mathematical layer.
+The two axes — true/false on the truth axis, absurd/determined on the knowledge axis — are independent. They compose to give the four-cornered [settlement](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/settlement.md) shape that runs through both the philosophical articulation and the framework's mathematical layer.
 
 ## Determination and the math layer
 
@@ -42,6 +42,6 @@ Determination is not the same as certainty. A determined claim is one whose rela
 
 - [Absurd](absurd.md) — the contrasting mode; the un-witnessed assertion.
 - [True](true.md), [False](false.md) — the truth-valued shapes a determination can take.
-- [Settlement](settlement.md) — the joint four-cornered structure of which determination is one corner.
+- [Settlement](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/settlement.md) — the joint four-cornered structure of which determination is one corner.
 - [Relating](relating.md) — the activity by which absurd claims become determined.
 - [Predication fiber algebra](../../../../math/theories/voidmath/terms/predication-fiber-algebra.md) — the math articulation of the two-axis structure.

@@ -72,13 +72,13 @@ These documents articulate the framework — not just what concepts exist but ho
 
 - [close.md](../../../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) — stabilizing closure
 - [open.md](../../../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) — interior operator
-- [balance.md](../../../../../../glossary/concepts/balance.md) — equilibrium of Close and Open
+- [balance.md](../../../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) — equilibrium of Close and Open
 - [necessary-possible.md](../../../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/modal-logic.md) — modal operators
 
 ### Dynamics (Movement III)
 
-- [flow.md](../../../../../../glossary/terms/flow.md) — directed comonadic dynamics
-- [dynamic-residuation.md](../../../../../../glossary/terms/dynamic-residuation.md) — Flow-Indexed Implication (treatise/drafts 4, 10)
+- [flow.md](../../../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/flow.md) — directed comonadic dynamics
+- [dynamic-residuation.md](../../../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/nucleus.md) — Flow-Indexed Implication (treatise/drafts 4, 10)
 - [discipline-regime-filter-profile.md](../../../../../../glossary/terms/discipline-regime-filter-profile.md) — constraint hierarchy (treatise/draft 4)
 
 ### Geometry (Movement IV)
@@ -91,7 +91,7 @@ These documents articulate the framework — not just what concepts exist but ho
 
 - [states-observables.md](../../../../../../glossary/terms/states-observables.md) — physical reading of relation
 - [conserving.md](../../../../../../../../../../content/text/glossary/terms/conserving.md) — coherence is redistributed, not created or destroyed; Noether correspondence
-- [stable-envelope.md](../../../../../../../../../../content/text/glossary/terms/stable-envelope.md) — the bandwidth of stable variation: Env_F(a) = □F(a) ∧ ◇F(a)
+- [stable-envelope.md](../../../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/nucleus.md) — the bandwidth of stable variation: Env_F(a) = □F(a) ∧ ◇F(a)
 
 ### Cross-cutting (present at every level)
 

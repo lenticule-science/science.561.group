@@ -101,7 +101,7 @@ This commutation produces:
 
 In the [presheaf](../../../../research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/mathematics/disciplines/sheaf-theory/terms/presheaf.md) model, the commutation is verified by explicit computation on components. In the abstract setting, it is axiom 3 of the RITM definition.
 
-See [Flow and Nucleus](../../../../../../../../services/relationality-services-section/content/text/glossary/concepts/flow-nucleus.md).
+See [Flow and Nucleus](../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/nucleus.md).
 
 ---
 

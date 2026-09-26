@@ -34,13 +34,13 @@ id: relational-state
 date-modified: 2026-03-19
 ---
 
-A **relational state** is the configuration that a [relational entity](relational-entity.md) occupies at a given moment of inquiry. Where the entity is the stable pattern, the state is the specific position the pattern is at right now: the witnessings that have been performed, the [settlement](settlement.md) the entity has reached, the constraints the entity is under given current evidence.
+A **relational state** is the configuration that a [relational entity](relational-entity.md) occupies at a given moment of inquiry. Where the entity is the stable pattern, the state is the specific position the pattern is at right now: the witnessings that have been performed, the [settlement](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/settlement.md) the entity has reached, the constraints the entity is under given current evidence.
 
 The state is not a smaller version of the entity; it is the entity's position in the framework's evolving structure of relations. An entity has many states across the course of its life — it enters into new relations, has old ones dissolved, has its settlement shift as evidence accumulates. The entity persists across these states because its underlying configuration of relating persists, but each state is a distinct momentary configuration.
 
 ## State and settlement
 
-A relational state corresponds, formally, to a position in the four-cornered [settlement](settlement.md) structure: a joint position on the truth axis ([true](true.md) ↔ [false](false.md)) and the knowledge axis ([absurd](absurd.md) ↔ [determination](determination.md)). The entity's state at a given moment is its settlement at that moment — the joint position the framework has reached for the relations that constitute the entity, given the witnessing that has so far been performed.
+A relational state corresponds, formally, to a position in the four-cornered [settlement](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/settlement.md) structure: a joint position on the truth axis ([true](true.md) ↔ [false](false.md)) and the knowledge axis ([absurd](absurd.md) ↔ [determination](determination.md)). The entity's state at a given moment is its settlement at that moment — the joint position the framework has reached for the relations that constitute the entity, given the witnessing that has so far been performed.
 
 States change as [relating](relating.md) continues. Each act of relating moves the settlement: adding evidence raises the knowledge-axis position; the direction of evidence tilts the truth-axis position; some acts dissolve evidence and lower the knowledge axis. The trajectory of states across moments is the entity's *history* — but the framework does not require time to be linear or states to accumulate in a fixed order. What it requires is that each state be a coherent settlement position.
 
@@ -94,5 +94,5 @@ The flat-set projection of a RelationalState is just the carrier set of the curr
 - [Relational entity](relational-entity.md) — the stable pattern whose configuration a state describes.
 - [Relating](relating.md) — the act that produces and transforms states.
 - [Relational field](relational-field.md) — the totality of states across all moments and entities.
-- [Settlement](settlement.md) — the joint structure within which a state is a position.
+- [Settlement](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/settlement.md) — the joint structure within which a state is a position.
 - [Predication fiber algebra](../../../../math/theories/voidmath/terms/predication-fiber-algebra.md) — the mathematical structure that holds settlement values across cells.

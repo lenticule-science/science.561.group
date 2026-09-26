@@ -15171,7 +15171,7 @@ coherently; calculus instances import this theorem.
 [Indexed Category](../indexed-category.md) equips the context layer
 with reindexing functors.  [Context Flow](../context-flow.md),
 [Context Nucleus](../context-nucleus.md), and
-[Dynamic Residuation](../../../../glossary/terms/dynamic-residuation.md) form the adjoint
+[Dynamic Residuation](../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/nucleus.md) form the adjoint
 pair used for reindexing, and
 [Context Adjunction Witness](../context-adjunction-witness.md)
 records the unit/counit equations.
@@ -15219,7 +15219,7 @@ that indistinguishability, so the parametric relation is contained within it. âˆ
 
 | Feature | Witnessing acts |
 | ------- | ---------------- |
-| Indexed contexts | [`Indexed Category`](../indexed-category.md), [`ContextFlow`](../context-flow.md), [`ContextNucleus`](../context-nucleus.md), [`DynamicResiduation`](../../../../glossary/terms/dynamic-residuation.md), [`ContextAdjunctionWitness`](../context-adjunction-witness.md) |
+| Indexed contexts | [`Indexed Category`](../indexed-category.md), [`ContextFlow`](../context-flow.md), [`ContextNucleus`](../context-nucleus.md), [`DynamicResiduation`](../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/nucleus.md), [`ContextAdjunctionWitness`](../context-adjunction-witness.md) |
 | Modal structure | [`Modal Structure`](../modal-structure.md) |
 | Abstraction theorem | this doc |
 | Link to contextual equivalence | this doc + [`Relational Equivalence`](../2026/03/04/2026-03-04-relational-equivalence.md) |

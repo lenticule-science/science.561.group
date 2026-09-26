@@ -40,7 +40,7 @@ The concept operates at every scale:
 - **Field coherence**: multiple units stabilize within a shared field (seventh phase)
 - **Meta-coherence**: the integrated field stabilizes its own boundary (ninth phase)
 
-[Closure](closure.md) is the formal mechanism that produces coherence: applying the closure operator settles a configuration into its coherent form. [Balance](balance.md) is the specific pattern coherence takes when dual containments (closure and interior) are involved.
+[Closure](closure.md) is the formal mechanism that produces coherence: applying the closure operator settles a configuration into its coherent form. [Balance](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) is the specific pattern coherence takes when dual containments (closure and interior) are involved.
 
 ## Derivational context
 
@@ -49,7 +49,7 @@ Coherence is required by the very first act and drives the entire [derivation](.
 ## Related
 
 - [Closure](closure.md) — the mechanism that produces coherence
-- [Balance](balance.md) — coherence between dual containments
+- [Balance](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) — coherence between dual containments
 - [Incitement](incitement.md) — what coherence's incompleteness produces
 - [Recognition](recognition.md) — the stable content of coherent structure
 

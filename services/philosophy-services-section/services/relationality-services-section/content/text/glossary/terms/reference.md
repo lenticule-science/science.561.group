@@ -1499,7 +1499,7 @@ Three properties define Close:
 - Closing a recognition that is already closed produces the same result — there is no further consolidation to do (idempotent)
 - Closing the combination of two recognitions is the same as combining their closures — consolidation respects combining (stable under [Together](../../triage/together.md))
 
-Close has a dual: [Open](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md). Where Close consolidates inward, Open releases outward. Together they express the dual motions of [stabilization](../../processes/stabilization.md) — the "breathing" of being described in Movement II. Their compatibility is [balance](../concepts/balance.md): closing an opened recognition is the same as closing the original, and opening a closed recognition is the same as opening the original. The two motions do not interfere.
+Close has a dual: [Open](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md). Where Close consolidates inward, Open releases outward. Together they express the dual motions of [stabilization](../../processes/stabilization.md) — the "breathing" of being described in Movement II. Their compatibility is [balance](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md): closing an opened recognition is the same as closing the original, and opening a closed recognition is the same as opening the original. The two motions do not interfere.
 
 The fixed points of Close — the recognitions that are already closed — form the stable configurations of the relational field. These are the recognitions that have achieved self-maintenance. The modality [Must](../../triage/must.md) picks out what is necessarily the case by identifying what survives closure.
 
@@ -1510,7 +1510,7 @@ Close corresponds to a closure operator (or nucleus) on a Heyting algebra. Its f
 ## Related
 
 - [Open](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) — the dual: outward release
-- [Balance](../concepts/balance.md) — the compatibility condition between Close and Open
+- [Balance](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) — the compatibility condition between Close and Open
 - [Include](../../documents/articles/notes/undated/include.md) — mediates between Close and Open
 - [Must](../../triage/must.md) — the necessity modality, defined through Close
 - [Iterate](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure.md) — Close is the stable endpoint of iteration
@@ -1848,7 +1848,7 @@ Flow arises in [Movement III: Directed Dynamics](../concepts/directed-dynamics.m
 
 The defining property of Flow is self-limitation: flowing twice goes no further than flowing once. The first step of directed evolution takes you as far as direction can carry you. Further application cannot compound the determination. This prevents runaway determination — the system cannot spiral out of control through its own directed motion.
 
-Self-limitation also means that Flow preserves the modal core. What [must](../../triage/must.md) be stays stable under Flow. What [may](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/may.md) be remains accessible. Directed motion respects the boundaries of necessity and possibility, never violating either. This is the law that [flow preserves the modal core](../concepts/flow-preserves-the-modal-core.md): change happens within the space defined by what is necessary and what is possible.
+Self-limitation also means that Flow preserves the modal core. What [must](../../triage/must.md) be stays stable under Flow. What [may](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/may.md) be remains accessible. Directed motion respects the boundaries of necessity and possibility, never violating either. This is the law that [flow preserves the modal core](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/flow.md): change happens within the space defined by what is necessary and what is possible.
 
 Flow comes with two complementary operations: resolution (the [counit](../../triage/flow-counit.md), returning to the origin) and propagation (the [comultiplication](../../triage/flow-comult.md), extending forward). Together with the self-limitation condition ([KZ-Lax](../../triage/kz-lax.md)), these give Flow the structure needed for directed but convergent evolution.
 
@@ -1982,14 +1982,14 @@ Include is self-persistence: holding a [recognition](../../phenomena/recognition
 
 Include arises in [Movement II: Structural Stabilization](../../../../../../content/text/glossary/concepts/structural-stabilization.md) as the recognition that something can persist as itself between the dual motions of [closure](../../phenomena/closure.md) and interior. Include is the formal expression of the idea that a thing can be recognized as itself without yet being reduced to its stable core (Open) or expanded to its full closure (Close).
 
-Because [Open](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md)(a) is contained in a and a is contained in [Close](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md)(a), Include sits at the midpoint of the Open-Close pair. It is the identity — it does not transform its input. What makes Include non-trivial is its structural position: it satisfies the [Stabilizes-Between](../../triage/stabilizes-between.md) condition, holding the thing steady between both poles. This mediating position is only possible because [balance](../concepts/balance.md) holds — because the dual motions do not interfere with each other.
+Because [Open](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md)(a) is contained in a and a is contained in [Close](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md)(a), Include sits at the midpoint of the Open-Close pair. It is the identity — it does not transform its input. What makes Include non-trivial is its structural position: it satisfies the [Stabilizes-Between](../../triage/stabilizes-between.md) condition, holding the thing steady between both poles. This mediating position is only possible because [balance](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) holds — because the dual motions do not interfere with each other.
 
 ## Related
 
 - [Close](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) — the upper pole that Include mediates toward
 - [Open](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) — the lower pole that Include mediates toward
 - [Stabilizes-Between](../../triage/stabilizes-between.md) — the condition that Include satisfies
-- [Balance](../concepts/balance.md) — the compatibility between Open and Close that makes mediation possible
+- [Balance](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) — the compatibility between Open and Close that makes mediation possible
 
 ---
 
@@ -2046,14 +2046,14 @@ Maintains-Balance is the condition that a dynamic process respects the modal str
 
 Maintains-Balance bridges [Movement II: Structural Stabilization](../../../../../../content/text/glossary/concepts/structural-stabilization.md) and [Movement III: Directed Dynamics](../concepts/directed-dynamics.md). Once the modal structure (Must and May) has been established through [stabilization](../../processes/stabilization.md), directed motion must be expressed without collapsing it. A dynamic process that maintains balance evolves the system without distorting the distinction between necessity and possibility.
 
-In practice, maintaining balance means that applying the dynamic and then extracting necessity yields the same result as extracting necessity and then applying the dynamic — and likewise for possibility. The operations commute. This is the key constraint on [Flow](../../documents/articles/notes/undated/flow.md): it is the formal content of the law that [flow preserves the modal core](../concepts/flow-preserves-the-modal-core.md).
+In practice, maintaining balance means that applying the dynamic and then extracting necessity yields the same result as extracting necessity and then applying the dynamic — and likewise for possibility. The operations commute. This is the key constraint on [Flow](../../documents/articles/notes/undated/flow.md): it is the formal content of the law that [flow preserves the modal core](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/flow.md).
 
 ## Related
 
 - [Must](../../triage/must.md) — one of the modalities that must be preserved
 - [May](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/may.md) — the other modality that must be preserved
 - [Flow](../../documents/articles/notes/undated/flow.md) — the primary dynamic whose balance is checked
-- [Balance](../concepts/balance.md) — the related compatibility condition at the stabilization layer
+- [Balance](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) — the related compatibility condition at the stabilization layer
 
 ---
 
@@ -2073,7 +2073,7 @@ This lifting to the meta level is what makes self-reference structurally possibl
 - [Meta-Iterate](../../triage/meta-iterate.md) — self-application at the system level
 - [Meta-Flow](../../triage/meta-flow.md) — evolution on systems
 - [Meta-Balance](../../triage/meta-balance.md) — coherence condition for systems
-- [Balance](../concepts/balance.md) — the object-level analogue that Meta-Balance generalizes
+- [Balance](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) — the object-level analogue that Meta-Balance generalizes
 
 ---
 
@@ -2087,9 +2087,9 @@ May arises in [Movement II: Structural Stabilization](../../../../../../content/
 
 Applying May twice changes nothing beyond the first application — what is possibly the case is possibly possibly the case. This self-consistency mirrors the idempotence of the [Open](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) operator from which May arises.
 
-Must and May interlock: what is necessarily possible is possible, and what is possibly necessary is necessary. This interlocking is the modal expression of the [balance](../concepts/balance.md) between [Close](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) and [Open](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) — the two operators whose compatibility ensures that being can both consolidate and release without contradiction.
+Must and May interlock: what is necessarily possible is possible, and what is possibly necessary is necessary. This interlocking is the modal expression of the [balance](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) between [Close](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) and [Open](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) — the two operators whose compatibility ensures that being can both consolidate and release without contradiction.
 
-Directed motion ([Flow](../../documents/articles/notes/undated/flow.md)) must preserve both Must and May — this is the law that [flow preserves the modal core](../concepts/flow-preserves-the-modal-core.md). Change happens within the space defined by what is necessary and what is possible, never violating either boundary.
+Directed motion ([Flow](../../documents/articles/notes/undated/flow.md)) must preserve both Must and May — this is the law that [flow preserves the modal core](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/flow.md). Change happens within the space defined by what is necessary and what is possible, never violating either boundary.
 
 ## Mathematical correspondence
 
@@ -2110,14 +2110,14 @@ May corresponds to the possibility modality (◇) in S4 modal logic, arising fro
 
 Meta-Balance is the coherence condition for [systems](../../triage/make-system.md): the condition that all three components of a triad are mutually balanced, each pair compatible and each component mediating coherently for the other two. A system satisfying Meta-Balance is not merely a collection of three operations but a unified triadic structure whose components are constituted through their mutual relations.
 
-Meta-Balance arises in [Movement V: Emergent Containment](../../../../../../content/text/glossary/concepts/emergent-containment.md) as the highest-level expression of the relational principle that coherence is constitutive. Where [Balance](../concepts/balance.md) ensures compatibility between two dual operations at the object level, Meta-Balance extends this to the full triad. For a system of three components A, B, and C: A and B are balanced with C mediating, B and C are balanced with A mediating, and C and A are balanced with B mediating. The system sustains itself as a whole — each part supports and is supported by the others.
+Meta-Balance arises in [Movement V: Emergent Containment](../../../../../../content/text/glossary/concepts/emergent-containment.md) as the highest-level expression of the relational principle that coherence is constitutive. Where [Balance](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) ensures compatibility between two dual operations at the object level, Meta-Balance extends this to the full triad. For a system of three components A, B, and C: A and B are balanced with C mediating, B and C are balanced with A mediating, and C and A are balanced with B mediating. The system sustains itself as a whole — each part supports and is supported by the others.
 
 Meta-Balance presupposes both Balance (the dual compatibility condition) and [Stabilizes-Between](../../triage/stabilizes-between.md) (the mediating-identity condition). It combines them at the system level, requiring that every pair-and-mediator combination in the triad satisfies both. [Meta-Flow](../../triage/meta-flow.md) must preserve Meta-Balance, ensuring that systemic evolution does not distort this triadic coherence.
 
 ## Related
 
 - [Make System](../../triage/make-system.md) — constructs the systems that Meta-Balance evaluates
-- [Balance](../concepts/balance.md) — the object-level compatibility condition
+- [Balance](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) — the object-level compatibility condition
 - [Stabilizes-Between](../../triage/stabilizes-between.md) — the mediating-identity condition
 - [Meta-Flow](../../triage/meta-flow.md) — evolution that must preserve Meta-Balance
 
@@ -2193,7 +2193,7 @@ Applying Must twice changes nothing beyond the first application — what is nec
 
 Must and [May](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/may.md) interlock: what is necessarily possible is possible, and what is possibly necessary is necessary. Every recognition carries two boundaries — a necessary boundary that secures its [coherence](../../phenomena/coherence.md), and a possible boundary that secures its openness. Understanding how these boundaries interact allows one to discern what holds firmly in a relational system from what remains open to further determination.
 
-Directed motion ([Flow](../../documents/articles/notes/undated/flow.md)) must preserve both Must and May — this is the law that [flow preserves the modal core](../concepts/flow-preserves-the-modal-core.md). Directed evolution respects the boundaries of necessity and possibility, never collapsing either.
+Directed motion ([Flow](../../documents/articles/notes/undated/flow.md)) must preserve both Must and May — this is the law that [flow preserves the modal core](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/flow.md). Directed evolution respects the boundaries of necessity and possibility, never collapsing either.
 
 ## Mathematical correspondence
 
@@ -2246,7 +2246,7 @@ Three properties define Open:
 - Opening a recognition that is already open produces the same result — there is no further release to do (idempotent)
 - Opening the combination of two recognitions is the same as combining their openings — release respects combining (stable under [Together](../../triage/together.md))
 
-Together, Close and Open express the dual motions of [stabilization](../../processes/stabilization.md), and their compatibility ([balance](../concepts/balance.md)) ensures that the system consolidates and releases without contradiction. The fixed points of Open — the recognitions that are already open — are the configurations that remain available for exploration. The modality [May](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/may.md) picks out what is possibly the case by identifying what survives opening.
+Together, Close and Open express the dual motions of [stabilization](../../processes/stabilization.md), and their compatibility ([balance](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md)) ensures that the system consolidates and releases without contradiction. The fixed points of Open — the recognitions that are already open — are the configurations that remain available for exploration. The modality [May](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/may.md) picks out what is possibly the case by identifying what survives opening.
 
 ## Mathematical correspondence
 
@@ -2255,7 +2255,7 @@ Open corresponds to an interior operator on a Heyting algebra. Its fixed points 
 ## Related
 
 - [Close](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) — the dual: inward consolidation
-- [Balance](../concepts/balance.md) — the compatibility condition between Close and Open
+- [Balance](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) — the compatibility condition between Close and Open
 - [Include](../../documents/articles/notes/undated/include.md) — mediates between Close and Open
 - [May](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/may.md) — the possibility modality, defined through Open
 - [Iterate](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure.md) — Open is the stable endpoint of iteration from below
@@ -2301,7 +2301,7 @@ Preserves-Core arises in [Movement III: Directed Dynamics](../concepts/directed-
 
 Without this constraint, motion could destroy the stability that makes motion meaningful. A flow that does not preserve core would erase the difference between what is necessary and what is merely possible, undoing the work of structural stabilization. Preserves-Core ensures that directed becoming is evolution within a framework, not the dissolution of that framework.
 
-The condition is equivalent to [Maintains-Balance](../../triage/maintains-balance.md) applied to Flow with respect to May and Must. It is the formal content of the law that [flow preserves the modal core](../concepts/flow-preserves-the-modal-core.md).
+The condition is equivalent to [Maintains-Balance](../../triage/maintains-balance.md) applied to Flow with respect to May and Must. It is the formal content of the law that [flow preserves the modal core](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/flow.md).
 
 ## Related
 
@@ -2449,7 +2449,7 @@ Shape corresponds to the left adjoint in a quadruple adjunction characteristic o
 
 Stabilizes-Between is the condition for self-persistence between dual poles. It names when something can persist as itself rather than collapsing to one extreme or the other — bounded by [closure](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) above and interior ([Open](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md)) below, with these bounds compatible.
 
-Stabilizes-Between arises in [Movement II: Structural Stabilization](../../../../../../content/text/glossary/concepts/structural-stabilization.md) as the full condition on [Include](../../documents/articles/notes/undated/include.md). Where [Balance](../concepts/balance.md) ensures that [Close](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) and [Open](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) do not interfere with each other, Stabilizes-Between ensures that the mediating identity (Include) sits coherently between them. A [recognition](../../phenomena/recognition.md), taken as it is, occupies a stable position: its interior lies below it, its closure lies above it, and these bounds are compatible.
+Stabilizes-Between arises in [Movement II: Structural Stabilization](../../../../../../content/text/glossary/concepts/structural-stabilization.md) as the full condition on [Include](../../documents/articles/notes/undated/include.md). Where [Balance](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) ensures that [Close](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) and [Open](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) do not interfere with each other, Stabilizes-Between ensures that the mediating identity (Include) sits coherently between them. A [recognition](../../phenomena/recognition.md), taken as it is, occupies a stable position: its interior lies below it, its closure lies above it, and these bounds are compatible.
 
 This condition presupposes Balance — without the compatibility of the dual pair, there is no coherent midpoint to occupy. It recurs at every level of the derivation wherever triadic structure appears: at the stabilization layer (Open, Include, Close), the modal layer ([May](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/may.md), [Identity](../../triage/identity.md), [Must](../../triage/must.md)), and the meta level.
 
@@ -2458,7 +2458,7 @@ This condition presupposes Balance — without the compatibility of the dual pai
 - [Include](../../documents/articles/notes/undated/include.md) — the mediating operator that satisfies this condition
 - [Open](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) — the lower pole (interior)
 - [Close](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) — the upper pole (closure)
-- [Balance](../concepts/balance.md) — the prerequisite compatibility condition on the dual pair
+- [Balance](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) — the prerequisite compatibility condition on the dual pair
 
 ---
 
@@ -2524,7 +2524,7 @@ The new structure leaves something undetermined. That undetermined remainder [in
 The nine phases organize into five movements that develop the formal vocabulary of relationality:
 
 1. [Logical Origination](../../../../../../content/text/glossary/concepts/logical-origination.md) (Phases 1–2) — from the primitive act of distinction through the logical structure of [recognition](../../phenomena/recognition.md)
-2. [Structural Stabilization](../../../../../../content/text/glossary/concepts/structural-stabilization.md) (Phases 3–4) — from sustained relating through [closure](../../phenomena/closure.md), boundary, and [balance](../concepts/balance.md)
+2. [Structural Stabilization](../../../../../../content/text/glossary/concepts/structural-stabilization.md) (Phases 3–4) — from sustained relating through [closure](../../phenomena/closure.md), boundary, and [balance](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md)
 3. [Directed Dynamics](../concepts/directed-dynamics.md) (Phase 5) — from reflexive relating through directed [flow](../../processes/flow.md) and the two modes of determination ([incitement](../concepts/incitement.md) and [induction](../../phenomena/induction.md))
 4. [Geometric Cohesion](../../../../../../content/text/glossary/concepts/geometric-cohesion.md) (Phases 6–7) — from co-presence through the architecture that binds local and global
 5. [Emergent Containment](../../../../../../content/text/glossary/concepts/emergent-containment.md) (Phases 8–9) — from the meta-boundary through states, evolution, and [measurement](../../../../../../content/text/glossary/concepts/measurement.md)

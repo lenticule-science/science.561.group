@@ -228,7 +228,7 @@ date-created: 2026-04-27
 date-modified: 2026-04-28
 ---
 
-Under the [relationality](../_index.md) commitment, **false** cannot be defined merely as the negation of [true](true.md), because the underlying ontology does not provide bivalent propositions to negate. False must be located in the structure of derivation itself: it is the negative position on the truth axis of [settlement](settlement.md) — the case where the iteration that would compose relational presence has produced denial, or where the relation is structurally absent from the system of relations.
+Under the [relationality](../_index.md) commitment, **false** cannot be defined merely as the negation of [true](true.md), because the underlying ontology does not provide bivalent propositions to negate. False must be located in the structure of derivation itself: it is the negative position on the truth axis of [settlement](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/settlement.md) — the case where the iteration that would compose relational presence has produced denial, or where the relation is structurally absent from the system of relations.
 
 This makes *false* a positive datum, not a default. A relation is not false because nothing has affirmed it; it is false because the derivation that would have established it failed to go through, or because the active denial of it has been reflexively affirmed in turn.
 
@@ -264,7 +264,7 @@ Mathematically, *false* corresponds to the truth-order bottom $\mathbf{f}$ in th
 - [True](true.md) — the affirming pair on the truth axis.
 - [Absurd](absurd.md) — the un-witnessed mode on the knowledge axis (where the *absence reading* of false sits).
 - [Determination](determination.md) — the witnessed mode on the knowledge axis (where the *active denial reading* of false sits).
-- [Settlement](settlement.md) — the joint four-cornered structure.
+- [Settlement](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/settlement.md) — the joint four-cornered structure.
 - [False (logic)](../../logic/terms/false.md) — the classical bivalent value.
 - [Predication fiber algebra](../../../../math/theories/voidmath/terms/predication-fiber-algebra.md) — the math articulation.
 
@@ -297,7 +297,7 @@ date-created: 2026-04-27
 date-modified: 2026-04-28
 ---
 
-Under the [relationality](../_index.md) commitment, **false** cannot be defined merely as the negation of [true](true.md), because the underlying ontology does not provide bivalent propositions to negate. False must be located in the structure of derivation itself: it is the negative position on the truth axis of [settlement](settlement.md) — the case where the iteration that would compose relational presence has produced denial, or where the relation is structurally absent from the system of relations.
+Under the [relationality](../_index.md) commitment, **false** cannot be defined merely as the negation of [true](true.md), because the underlying ontology does not provide bivalent propositions to negate. False must be located in the structure of derivation itself: it is the negative position on the truth axis of [settlement](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/settlement.md) — the case where the iteration that would compose relational presence has produced denial, or where the relation is structurally absent from the system of relations.
 
 This makes *false* a positive datum, not a default. A relation is not false because nothing has affirmed it; it is false because the derivation that would have established it failed to go through, or because the active denial of it has been reflexively affirmed in turn.
 
@@ -547,7 +547,7 @@ date-modified: 2026-04-28
 ---
 ```
 
-Under the [relationality](../_index.md) commitment, **false** cannot be defined merely as the negation of [true](true.md), because the underlying ontology does not provide bivalent propositions to negate. False must be located in the structure of derivation itself: it is the negative position on the truth axis of [settlement](settlement.md) — the case where the iteration that would compose relational presence has produced denial, or where the relation is structurally absent from the system of relations.
+Under the [relationality](../_index.md) commitment, **false** cannot be defined merely as the negation of [true](true.md), because the underlying ontology does not provide bivalent propositions to negate. False must be located in the structure of derivation itself: it is the negative position on the truth axis of [settlement](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/settlement.md) — the case where the iteration that would compose relational presence has produced denial, or where the relation is structurally absent from the system of relations.
 
 This makes *false* a positive datum, not a default. A relation is not false because nothing has affirmed it; it is false because the derivation that would have established it failed to go through, or because the potential denial of it has been reflexively affirmed in turn.
 
@@ -583,7 +583,7 @@ Mathematically, *false* corresponds to the truth-order bottom $\mathbf{f}$ in th
 - [True](true.md) — the affirming pair on the truth axis.
 - [Absurd](absurd.md) — the un-witnessed mode on the knowledge axis (where the *absence reading* of false sits).
 - [Determination](determination.md) — the witnessed mode on the knowledge axis (where the *potential denial reading* of false sits).
-- [Settlement](settlement.md) — the joint four-cornered structure.
+- [Settlement](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/settlement.md) — the joint four-cornered structure.
 - [False (logic)](false.md) — the classical bivalent value.
 - [Predication fiber algebra](../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/predication-fiber-algebra.md) — the math articulation.
 
@@ -606,7 +606,7 @@ date-modified: 2026-04-28
 ---
 ```
 
-Under the [relationality](../_index.md) commitment, **false** cannot be defined merely as the negation of [true](true.md), because the underlying ontology does not provide bivalent propositions to negate. False must be located in the structure of derivation itself: it is the negative position on the truth axis of [settlement](settlement.md) — the case where the iteration that would compose relational presence has produced denial, or where the relation is structurally absent from the system of relations.
+Under the [relationality](../_index.md) commitment, **false** cannot be defined merely as the negation of [true](true.md), because the underlying ontology does not provide bivalent propositions to negate. False must be located in the structure of derivation itself: it is the negative position on the truth axis of [settlement](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/settlement.md) — the case where the iteration that would compose relational presence has produced denial, or where the relation is structurally absent from the system of relations.
 
 This makes *false* a positive datum, not a default. A relation is not false because nothing has affirmed it; it is false because the derivation that would have established it failed to go through, or because the potential denial of it has been reflexively affirmed in turn.
 

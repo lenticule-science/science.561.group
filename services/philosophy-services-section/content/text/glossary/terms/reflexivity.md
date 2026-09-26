@@ -63,4 +63,4 @@ The framework's mathematical articulation makes reflexivity precise via the *clo
 - [Relating](relating.md) — the primitive activity that has reflexivity as a structural feature.
 - [Relationlessness](../../../../services/relationality-services-section/content/text/glossary/terms/relationlessness.md) — the originating paradox where reflexivity first does its work.
 - [Witnessing](../../../../services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/witnessing.md) — the act whose recursive structure depends on reflexivity.
-- [Settlement](settlement.md) — the determined positions that reflexive iteration produces.
+- [Settlement](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/settlement.md) — the determined positions that reflexive iteration produces.

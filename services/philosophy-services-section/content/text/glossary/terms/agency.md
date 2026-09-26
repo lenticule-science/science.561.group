@@ -19,7 +19,7 @@ related:
   - subject
 ---
 
-**Agency** in the [relationality](../_index.md) framework is the capacity to enact [relating](relating.md) — to perform [witnessings](../../../../services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/witnessing.md) that contribute to [settlement](settlement.md). An agent is whatever is positioned to enact relating: a person, an institution, a sensor, a computational process, a community, a legal entity. What makes something an agent is not what it is *made of* but what it is *positioned to do* within the system of relations.
+**Agency** in the [relationality](../_index.md) framework is the capacity to enact [relating](relating.md) — to perform [witnessings](../../../../services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/witnessing.md) that contribute to [settlement](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/settlement.md). An agent is whatever is positioned to enact relating: a person, an institution, a sensor, a computational process, a community, a legal entity. What makes something an agent is not what it is *made of* but what it is *positioned to do* within the system of relations.
 
 The relationality reading of agency is *deflationary*: it does not posit a substantive self behind the acts. The agent is the stable configuration that performs the relating, not a substrate that pre-exists it. Agency, like the rest of the framework's categories, is constituted by its role in the relational structure — not added to that structure as a separate metaphysical fact.
 

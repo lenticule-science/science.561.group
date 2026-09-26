@@ -12,7 +12,7 @@ In formal terms: Open(a ∧ Close(b)) = Open(a) ∧ Close(b). Applying interior 
 
 ## Derivational context
 
-This law arises in [Movement II: Structural Stabilization](structural-stabilization.md) as the [balance](../../../../services/relationality-services-section/content/text/glossary/concepts/balance.md) condition — the requirement that the dual motions of inward consolidation and outward release cohere. It is not assumed but earned from the requirement that self-sustaining relational structure must both consolidate and release without contradiction. Without this compatibility, the relational structure would tear itself apart: closure and interior would produce incompatible results, and the metabolic rhythm of being — the alternation between securing form and preserving freedom — would be incoherent.
+This law arises in [Movement II: Structural Stabilization](structural-stabilization.md) as the [balance](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) condition — the requirement that the dual motions of inward consolidation and outward release cohere. It is not assumed but earned from the requirement that self-sustaining relational structure must both consolidate and release without contradiction. Without this compatibility, the relational structure would tear itself apart: closure and interior would produce incompatible results, and the metabolic rhythm of being — the alternation between securing form and preserving freedom — would be incoherent.
 
 ## Mathematical correspondence
 
@@ -20,6 +20,6 @@ The Frobenius law for closure and interior operators on a Heyting algebra.
 
 ## Related
 
-- [Balance](../../../../services/relationality-services-section/content/text/glossary/concepts/balance.md) — the phenomenon this law formalizes
+- [Balance](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) — the phenomenon this law formalizes
 - [Closure](closure.md) — one of the dual motions
-- [Flow preserves the modal core](../../../../services/relationality-services-section/content/text/glossary/concepts/flow-preserves-the-modal-core.md) — the downstream law ensuring dynamics respect this compatibility
+- [Flow preserves the modal core](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/flow.md) — the downstream law ensuring dynamics respect this compatibility

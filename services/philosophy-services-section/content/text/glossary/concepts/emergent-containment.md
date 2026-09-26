@@ -59,7 +59,7 @@ Conservation emerges as a direct consequence of relational coherence. Every cons
 
 ### Measurement
 
-[Measurement](measurement.md) extracts determinate content from a configuration. It is not a primitive act but a derived one — a specific kind of [observation](observation.md) constrained by the full relational architecture. Measurement is constrained by [balance](../../../../services/relationality-services-section/content/text/glossary/concepts/balance.md): the compatibility between closure and interior governs what can be measured and how measurement affects what is measured. The act of measuring participates in the relational dynamics of what is measured.
+[Measurement](measurement.md) extracts determinate content from a configuration. It is not a primitive act but a derived one — a specific kind of [observation](observation.md) constrained by the full relational architecture. Measurement is constrained by [balance](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md): the compatibility between closure and interior governs what can be measured and how measurement affects what is measured. The act of measuring participates in the relational dynamics of what is measured.
 
 ### Predictive determination
 

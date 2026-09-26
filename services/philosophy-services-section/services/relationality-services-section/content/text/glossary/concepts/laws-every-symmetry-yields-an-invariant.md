@@ -22,6 +22,6 @@ A categorical analogue of Noether's theorem: symmetries of the action functional
 ## Related
 
 - [Dual motions do not interfere](laws-dual-motions-do-not-interfere.md) — a specific symmetry that yields a specific invariant
-- [Flow preserves the modal core](laws-flow-preserves-the-modal-core.md) — a specific instance where the modal operators are the symmetry
+- [Flow preserves the modal core](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/flow.md) — a specific instance where the modal operators are the symmetry
 - [Assembly and analysis commute under coherence](laws-assembly-and-analysis-commute-under-coherence.md) — the cohesion law whose symmetry contributes here
 - [Measurement](../../../../../../content/text/glossary/concepts/measurement.md) — the process through which invariants become observable

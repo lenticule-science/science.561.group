@@ -62,7 +62,7 @@ A closure operator can be given syntactically by a closure-rule system: a family
 
 The dual of a closure operator is an **interior operator** $o : P \to P$: deflationary ($o(x) \leq x$), monotone, and idempotent. Its fixed points are the **open** elements. Closure and interior play the roles of possibility and necessity in S4 ([modal logic](./modal-logic.md)).
 
-Relationality calls closure *close*, the stabilizing move that secures what has been established, and interior *open*, the move that keeps what remains available for refinement. It calls a closure–interior pair *balanced* when neither disturbs the other, $\operatorname{cl}(o(x)) = \operatorname{cl}(x)$ and $o(\operatorname{cl}(x)) = o(x)$; this holds for some pairs, not for every pair.
+Relationality calls closure *close*, the stabilizing move that secures what has been established, and interior *open*, the move that keeps what remains available for refinement. It calls a closure–interior pair *balanced* when neither disturbs the other, $\operatorname{cl}(o(x)) = \operatorname{cl}(x)$ and $o(\operatorname{cl}(x)) = o(x)$; this holds for some pairs, not for every pair. Balance is also stated as the Frobenius condition $o(a \wedge \operatorname{cl}(b)) = o(a) \wedge \operatorname{cl}(b)$: taking the interior of a meet with something closed is taking the meet of the interior with it. With closure alone, relations would rigidify; with interior alone, they would dissolve; a structure persists by keeping the two in balance, and [flow](flow.md) must preserve that balance.
 
 ## See also
 

@@ -12,7 +12,7 @@ Stabilization is not a single event but a recurring process at every level of re
 
 Stabilization takes different forms depending on what is settling. Under [Close](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md), it produces the stable configurations that have been secured by inward consolidation. Under [Open](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md), it produces the configurations that remain available for further differentiation. Under [Flow](../../documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-04/domains/terms/flow.md), it produces the objects where evolution has run its course. And in the generative process that produces all acts, stabilization is the least fixed point — the complete universe of recognitions that the derivation can earn.
 
-The condition [Stabilizes-Between](../../documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-04/domains/terms/stabilizes-between.md) captures what it means for a mediator to sit stably between dual operators. [Balance](../../../../services/relationality-services-section/content/text/glossary/concepts/balance.md) is the specific form stabilization takes when dual containments are involved.
+The condition [Stabilizes-Between](../../documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-04/domains/terms/stabilizes-between.md) captures what it means for a mediator to sit stably between dual operators. [Balance](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) is the specific form stabilization takes when dual containments are involved.
 
 ## Derivational context
 
@@ -22,5 +22,5 @@ Stabilization is the central process of [Movement II: Structural Stabilization](
 
 - [Iteration](iteration.md) — the process that produces stabilization
 - [Closure](closure.md) — the phenomenon of having stabilized
-- [Balance](../../../../services/relationality-services-section/content/text/glossary/concepts/balance.md) — stabilization between dual operators
+- [Balance](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) — stabilization between dual operators
 - [Flow](flow.md) — directed dynamics that must stabilize without breaking coherence

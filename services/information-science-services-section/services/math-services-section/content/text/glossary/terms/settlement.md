@@ -31,6 +31,10 @@ The bilattice has four extremal elements, each occupying a corner of the joint s
 
 Classical bivalent logic recognizes only $\mathbf{t}$ and $\mathbf{f}$. Three-valued logics (Kleene, intuitionistic) admit $\bot$ as a third value. Bilattice logic admits all four corners as positive structural data — none of them is a defective version of another, and every value in the bilattice is a position in this joint space.
 
+## Beyond bivalence
+
+Classical bivalent logic admits only the told-true and told-false corners; three-valued logics such as Kleene's add the no-evidence corner as a special non-classical value. Here all four corners are positive structural data, the extremal positions of one joint structure rather than a longer list of truth values.
+
 ## Settlement as accumulation
 
 In a temporal setting — where [predication valuations](#) evolve as evidence accumulates — settlement is the dynamic at the joint level: each step adds witnessing, raising the knowledge-axis position and possibly tilting the truth-axis position. The *settling monotonicity* condition formalizes this: knowledge values rise monotonically in $\leq_k$ over time, never retracting.

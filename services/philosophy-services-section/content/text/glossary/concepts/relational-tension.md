@@ -37,4 +37,4 @@ Relational tension is central to [Movement IV: Geometric Cohesion](geometric-coh
 - [Movement IV: Geometric Cohesion](geometric-cohesion.md) — where relational tension drives the derivation of cohesive architecture
 - [The Derivation](../../documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-04/domains/concepts/the-derivation.md) — where relational tension arises (Phase 6)
 - [Coherence](coherence.md) — the broader phenomenon of holding together
-- [Balance](../../../../services/relationality-services-section/content/text/glossary/concepts/balance.md) — the compatibility of dual motions, a related but distinct phenomenon from Movement II
+- [Balance](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) — the compatibility of dual motions, a related but distinct phenomenon from Movement II

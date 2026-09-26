@@ -23,4 +23,4 @@ The Frobenius law for closure and interior operators on a Heyting algebra.
 
 - [Balance](phenomena-balance.md) — the phenomenon this law formalizes
 - [Closure](phenomena-closure.md) — one of the dual motions
-- [Flow preserves the modal core](laws-flow-preserves-the-modal-core.md) — the downstream law ensuring dynamics respect this compatibility
+- [Flow preserves the modal core](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/flow.md) — the downstream law ensuring dynamics respect this compatibility

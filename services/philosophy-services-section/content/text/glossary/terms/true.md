@@ -241,7 +241,7 @@ date-created: 2026-04-27
 date-modified: 2026-04-28
 ---
 
-Under the [relationality](../_index.md) commitment — that things exist through acts of relating, not as substances bearing properties — **true** cannot mean what it means in a correspondence theory of truth. There is no substance whose state of affairs a proposition is to match. *True* must be reformulated as a position on the truth axis of [settlement](settlement.md): the positive case in which a relation has been *affirmed* by the witnessing structure. *True* names what a [determined](determination.md) claim looks like when its determination tilts toward presence rather than absence.
+Under the [relationality](../_index.md) commitment — that things exist through acts of relating, not as substances bearing properties — **true** cannot mean what it means in a correspondence theory of truth. There is no substance whose state of affairs a proposition is to match. *True* must be reformulated as a position on the truth axis of [settlement](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/settlement.md): the positive case in which a relation has been *affirmed* by the witnessing structure. *True* names what a [determined](determination.md) claim looks like when its determination tilts toward presence rather than absence.
 
 In relationality, a relation does not pre-exist as a static link between independent terms; it is constituted by the act of [relating](relating.md), and stabilizes through reflexive iteration. The minimal positive case — one reflexive act that composes a first presence of relation — is the relationality reading of *true*: the affirmation that follows from a derivation that has gone once. *True* is not a verdict imposed on a relation from outside; it is what the reflexive act produces when it goes through.
 
@@ -253,7 +253,7 @@ This makes the relationality reading of *true* close to what process and constru
 
 ## True on the truth axis
 
-True is one position on one of the two axes that compose the four-cornered [settlement](settlement.md). The truth axis runs from [false](false.md) (denial) at one extreme to true (affirmation) at the other, with intermediate positions where a claim has not yet tilted to either extreme. The truth axis is *independent* of the knowledge axis (which runs from [absurd](absurd.md) to [determination](determination.md)) — a claim can be true and absurd (affirmed but un-witnessed by other claims; *axiomatically* true), true and determined (affirmed and structurally witnessed; *settled* true), or anywhere in between.
+True is one position on one of the two axes that compose the four-cornered [settlement](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/settlement.md). The truth axis runs from [false](false.md) (denial) at one extreme to true (affirmation) at the other, with intermediate positions where a claim has not yet tilted to either extreme. The truth axis is *independent* of the knowledge axis (which runs from [absurd](absurd.md) to [determination](determination.md)) — a claim can be true and absurd (affirmed but un-witnessed by other claims; *axiomatically* true), true and determined (affirmed and structurally witnessed; *settled* true), or anywhere in between.
 
 The four extremal corners of the joint structure — true-only (true and determined toward affirmation), false-only (false and determined toward denial), both (determined with evidence in both directions), neither (absurd, neither affirmed nor denied) — are the four positions a claim can reach. True-only is the corner the classical correspondence theory of truth recognizes; the other three are positions classical bivalence collapses or refuses, and which relationality treats as positive structural data.
 
@@ -278,7 +278,7 @@ Mathematically, *true* corresponds to the truth-order top $\mathbf{t}$ in the [p
 - [False](false.md) — the corresponding negation pole on the truth axis.
 - [Absurd](absurd.md) — the un-witnessed mode on the knowledge axis; orthogonal to true.
 - [Determination](determination.md) — the witnessed mode on the knowledge axis; the structural pair to absurd.
-- [Settlement](settlement.md) — the joint four-cornered structure.
+- [Settlement](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/settlement.md) — the joint four-cornered structure.
 - [Relating](relating.md) — the reflexive act that produces affirmation.
 - [True (logic)](../../logic/terms/true.md) — the classical bivalent truth-value.
 - [Predication fiber algebra](../../../../math/theories/voidmath/terms/predication-fiber-algebra.md) — the math articulation.
@@ -311,7 +311,7 @@ date-created: 2026-04-27
 date-modified: 2026-04-28
 ---
 
-Under the [relationality](../_index.md) commitment — that things exist through acts of relating, not as substances bearing properties — **true** cannot mean what it means in a correspondence theory of truth. There is no substance whose state of affairs a proposition is to match. *True* must be reformulated as a position on the truth axis of [settlement](settlement.md): the positive case in which a relation has been *affirmed* by the witnessing structure. *True* names what a [determined](determination.md) claim looks like when its determination tilts toward presence rather than absence.
+Under the [relationality](../_index.md) commitment — that things exist through acts of relating, not as substances bearing properties — **true** cannot mean what it means in a correspondence theory of truth. There is no substance whose state of affairs a proposition is to match. *True* must be reformulated as a position on the truth axis of [settlement](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/settlement.md): the positive case in which a relation has been *affirmed* by the witnessing structure. *True* names what a [determined](determination.md) claim looks like when its determination tilts toward presence rather than absence.
 
 In relationality, a relation does not pre-exist as a static link between independent terms; it is constituted by the act of [relating](relating.md), and stabilizes through reflexive iteration. The minimal positive case — one reflexive act that composes a first presence of relation — is the relationality reading of *true*: the affirmation that follows from a derivation that has gone once. *True* is not a verdict imposed on a relation from outside; it is what the reflexive act produces when it goes through.
 
@@ -323,7 +323,7 @@ This makes the relationality reading of *true* close to what process and constru
 
 ## True on the truth axis
 
-True is one position on one of the two axes that compose the four-cornered [settlement](settlement.md). The truth axis runs from [false](false.md) (denial) at one extreme to true (affirmation) at the other, with intermediate positions where a claim has not yet tilted to either extreme. The truth axis is *independent* of the knowledge axis (which runs from [absurd](absurd.md) to [determination](determination.md)) — a claim can be true and absurd (affirmed but un-witnessed by other claims; *axiomatically* true), true and determined (affirmed and structurally witnessed; *settled* true), or anywhere in between.
+True is one position on one of the two axes that compose the four-cornered [settlement](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/settlement.md). The truth axis runs from [false](false.md) (denial) at one extreme to true (affirmation) at the other, with intermediate positions where a claim has not yet tilted to either extreme. The truth axis is *independent* of the knowledge axis (which runs from [absurd](absurd.md) to [determination](determination.md)) — a claim can be true and absurd (affirmed but un-witnessed by other claims; *axiomatically* true), true and determined (affirmed and structurally witnessed; *settled* true), or anywhere in between.
 
 The four extremal corners of the joint structure — true-only (true and determined toward affirmation), false-only (false and determined toward denial), both (determined with evidence in both directions), neither (absurd, neither affirmed nor denied) — are the four positions a claim can reach. True-only is the corner the classical correspondence theory of truth recognizes; the other three are positions classical bivalence collapses or refuses, and which relationality treats as positive structural data.
 
@@ -577,7 +577,7 @@ date-modified: 2026-04-28
 ---
 ```
 
-Under the [relationality](../_index.md) commitment — that things exist through acts of relating, not as substances bearing properties — **true** cannot mean what it means in a correspondence theory of truth. There is no substance whose state of affairs a proposition is to match. *True* must be reformulated as a position on the truth axis of [settlement](settlement.md): the positive case in which a relation has been *affirmed* by the witnessing structure. *True* names what a [determined](determination.md) claim looks like when its determination tilts toward presence rather than absence.
+Under the [relationality](../_index.md) commitment — that things exist through acts of relating, not as substances bearing properties — **true** cannot mean what it means in a correspondence theory of truth. There is no substance whose state of affairs a proposition is to match. *True* must be reformulated as a position on the truth axis of [settlement](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/settlement.md): the positive case in which a relation has been *affirmed* by the witnessing structure. *True* names what a [determined](determination.md) claim looks like when its determination tilts toward presence rather than absence.
 
 In relationality, a relation does not pre-exist as a static link between independent terms; it is constituted by the act of [relating](relating.md), and stabilizes through reflexive iteration. The minimal positive case — one reflexive act that composes a first presence of relation — is the relationality reading of *true*: the affirmation that follows from a derivation that has gone once. *True* is not a verdict imposed on a relation from outside; it is what the reflexive act produces when it goes through.
 
@@ -589,7 +589,7 @@ This makes the relationality reading of *true* close to what process and constru
 
 ## True on the truth axis
 
-True is one position on one of the two axes that compose the four-cornered [settlement](settlement.md). The truth axis runs from [false](false.md) (denial) at one extreme to true (affirmation) at the other, with intermediate positions where a claim has not yet tilted to either extreme. The truth axis is *independent* of the knowledge axis (which runs from [absurd](absurd.md) to [determination](determination.md)) — a claim can be true and absurd (affirmed but un-witnessed by other claims; *axiomatically* true), true and determined (affirmed and structurally witnessed; *settled* true), or anywhere in between.
+True is one position on one of the two axes that compose the four-cornered [settlement](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/settlement.md). The truth axis runs from [false](false.md) (denial) at one extreme to true (affirmation) at the other, with intermediate positions where a claim has not yet tilted to either extreme. The truth axis is *independent* of the knowledge axis (which runs from [absurd](absurd.md) to [determination](determination.md)) — a claim can be true and absurd (affirmed but un-witnessed by other claims; *axiomatically* true), true and determined (affirmed and structurally witnessed; *settled* true), or anywhere in between.
 
 The four extremal corners of the joint structure — true-only (true and determined toward affirmation), false-only (false and determined toward denial), both (determined with evidence in both directions), neither (absurd, neither affirmed nor denied) — are the four positions a claim can reach. True-only is the corner the classical correspondence theory of truth recognizes; the other three are positions classical bivalence collapses or refuses, and which relationality treats as positive structural data.
 
@@ -614,7 +614,7 @@ Mathematically, *true* corresponds to the truth-order top $\mathbf{t}$ in the [p
 - [False](false.md) — the corresponding negation pole on the truth axis.
 - [Absurd](absurd.md) — the un-witnessed mode on the knowledge axis; orthogonal to true.
 - [Determination](determination.md) — the witnessed mode on the knowledge axis; the structural pair to absurd.
-- [Settlement](settlement.md) — the joint four-cornered structure.
+- [Settlement](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/settlement.md) — the joint four-cornered structure.
 - [Relating](relating.md) — the reflexive act that produces affirmation.
 - [True (logic)](true.md) — the classical bivalent truth-value.
 - [Predication fiber algebra](../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/predication-fiber-algebra.md) — the math articulation.
@@ -637,7 +637,7 @@ date-modified: 2026-04-28
 ---
 ```
 
-Under the [relationality](../_index.md) commitment — that things exist through acts of relating, not as substances bearing properties — **true** cannot mean what it means in a correspondence theory of truth. There is no substance whose state of affairs a proposition is to match. *True* must be reformulated as a position on the truth axis of [settlement](settlement.md): the positive case in which a relation has been *affirmed* by the witnessing structure. *True* names what a [determined](determination.md) claim looks like when its determination tilts toward presence rather than absence.
+Under the [relationality](../_index.md) commitment — that things exist through acts of relating, not as substances bearing properties — **true** cannot mean what it means in a correspondence theory of truth. There is no substance whose state of affairs a proposition is to match. *True* must be reformulated as a position on the truth axis of [settlement](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/settlement.md): the positive case in which a relation has been *affirmed* by the witnessing structure. *True* names what a [determined](determination.md) claim looks like when its determination tilts toward presence rather than absence.
 
 In relationality, a relation does not pre-exist as a static link between independent terms; it is constituted by the act of [relating](relating.md), and stabilizes through reflexive iteration. The minimal positive case — one reflexive act that composes a first presence of relation — is the relationality reading of *true*: the affirmation that follows from a derivation that has gone once. *True* is not a verdict imposed on a relation from outside; it is what the reflexive act produces when it goes through.
 
@@ -649,7 +649,7 @@ This makes the relationality reading of *true* close to what process and constru
 
 ## True on the truth axis
 
-True is one position on one of the two axes that compose the four-cornered [settlement](settlement.md). The truth axis runs from [false](false.md) (denial) at one extreme to true (affirmation) at the other, with intermediate positions where a claim has not yet tilted to either extreme. The truth axis is *independent* of the knowledge axis (which runs from [absurd](absurd.md) to [determination](determination.md)) — a claim can be true and absurd (affirmed but un-witnessed by other claims; *axiomatically* true), true and determined (affirmed and structurally witnessed; *settled* true), or anywhere in between.
+True is one position on one of the two axes that compose the four-cornered [settlement](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/settlement.md). The truth axis runs from [false](false.md) (denial) at one extreme to true (affirmation) at the other, with intermediate positions where a claim has not yet tilted to either extreme. The truth axis is *independent* of the knowledge axis (which runs from [absurd](absurd.md) to [determination](determination.md)) — a claim can be true and absurd (affirmed but un-witnessed by other claims; *axiomatically* true), true and determined (affirmed and structurally witnessed; *settled* true), or anywhere in between.
 
 The four extremal corners of the joint structure — true-only (true and determined toward affirmation), false-only (false and determined toward denial), both (determined with evidence in both directions), neither (absurd, neither affirmed nor denied) — are the four positions a claim can reach. True-only is the corner the classical correspondence theory of truth recognizes; the other three are positions classical bivalence collapses or refuses, and which relationality treats as positive structural data.
 

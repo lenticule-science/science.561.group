@@ -41,6 +41,6 @@ A claim is not absurd merely because it has not yet been examined — that is *u
 
 - [Determination](determination.md) — the contrasting mode; the structurally-witnessed outcome.
 - [True](true.md), [False](false.md) — the truth-valued shapes a determined claim can take.
-- [Settlement](settlement.md) — the joint four-cornered structure of which absurd is one corner.
+- [Settlement](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/settlement.md) — the joint four-cornered structure of which absurd is one corner.
 - [Relationlessness](../../../../services/relationality-services-section/content/text/glossary/terms/relationlessness.md) — the originating paradox; the limit of absurdity.
 - [Relating](relating.md) — the activity that moves a claim from absurd toward determination.

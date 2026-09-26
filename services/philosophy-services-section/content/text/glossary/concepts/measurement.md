@@ -24,7 +24,7 @@ Measurement is the process of extracting determinate content from a relational c
 
 In [Movement V: Emergent Containment](emergent-containment.md), measurement emerges alongside states, observables, invariants, and the stable envelope. An observable is a way of asking a yes-or-no question of a state — a determinate inquiry that yields a determinate answer. Measurement is the act of applying an observable to a state and obtaining that answer.
 
-Measurement is constrained by [balance](../../../../services/relationality-services-section/content/text/glossary/concepts/balance.md). The kernel of an observation — what measurement cannot distinguish — must be compatible with [flow](flow.md) dynamics. Deviation from the kernel measures how far a configuration is from equilibrium. These constraints ensure that measurement respects the relational structure rather than imposing external criteria.
+Measurement is constrained by [balance](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md). The kernel of an observation — what measurement cannot distinguish — must be compatible with [flow](flow.md) dynamics. Deviation from the kernel measures how far a configuration is from equilibrium. These constraints ensure that measurement respects the relational structure rather than imposing external criteria.
 
 The derivation formalizes measurement's interaction with observables, states, evolution, and the broader physical semantics of the relational system through a substantial body of acts in the physics stratum.
 
@@ -36,7 +36,7 @@ Measurement arises in [Movement V: Emergent Containment](emergent-containment.md
 
 - [Observation](observation.md) — the formal precursor to measurement
 - [Flow](flow.md) — the dynamics that measurement must respect
-- [Balance](../../../../services/relationality-services-section/content/text/glossary/concepts/balance.md) — the constraint on measurement's interaction with structure
+- [Balance](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) — the constraint on measurement's interaction with structure
 
 Carrier for measured quantities over observables/profiles, earned from the act
 [Measure](../../../../services/relationality-services-section/content/text/acts/measure.md). Packages the measured value, its unit/normalization,

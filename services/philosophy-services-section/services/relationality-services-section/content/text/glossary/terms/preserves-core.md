@@ -11,7 +11,7 @@ Preserves-Core arises in [Movement III: Directed Dynamics](../concepts/directed-
 
 Without this constraint, motion could destroy the stability that makes motion meaningful. A flow that does not preserve core would erase the difference between what is necessary and what is merely possible, undoing the work of structural stabilization. Preserves-Core ensures that directed becoming is evolution within a framework, not the dissolution of that framework.
 
-The condition is equivalent to [Maintains-Balance](../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-04/maintains-balance.md) applied to Flow with respect to May and Must. It is the formal content of the law that [flow preserves the modal core](../concepts/flow-preserves-the-modal-core.md).
+The condition is equivalent to [Maintains-Balance](../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-04/maintains-balance.md) applied to Flow with respect to May and Must. It is the formal content of the law that [flow preserves the modal core](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/flow.md).
 
 ## Related
 
