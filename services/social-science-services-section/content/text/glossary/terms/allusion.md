@@ -22,7 +22,7 @@ Allusion operates differently across writing disciplines:
 
 - In **poetry**, allusion is a primary structural device. Poems routinely reference other poems, creating a conversation across time.
 - In **fiction**, allusion can establish a character's intellectual world, create thematic resonance, or signal the story's relationship to literary tradition.
-- In **essay writing**, allusion serves [argument](argument.md): referencing a well-known text or event can provide [evidence](evidence.md), establish authority, or create a point of comparison.
+- In **essay writing**, allusion serves [argument](argument.md): referencing a well-known text or event can provide [evidence](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/evidence.md), establish authority, or create a point of comparison.
 - In **[technical writing](../disciplines/technical-writing/index.md)**, allusion is generally avoided — technical documents should be self-contained, not dependent on the reader's cultural knowledge.
 
 ## Related terms

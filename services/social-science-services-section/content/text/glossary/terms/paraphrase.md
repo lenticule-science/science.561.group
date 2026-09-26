@@ -22,7 +22,7 @@ Paraphrase always requires attribution. The writer who paraphrases without citin
 
 ## Related terms
 
-- [evidence](evidence.md) — paraphrase is one way to present evidence from sources
+- [evidence](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/evidence.md) — paraphrase is one way to present evidence from sources
 - [analysis](analysis.md) — paraphrase often precedes analytical commentary
 - [signal phrase](signal-phrase.md) — introduces the paraphrase and attributes it
 - [synthesis](synthesis.md) — paraphrasing multiple sources is a step toward synthesis

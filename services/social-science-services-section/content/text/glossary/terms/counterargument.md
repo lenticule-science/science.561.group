@@ -1,7 +1,7 @@
 ---
 
 name: "Counterargument"
-description: "A ***counterargument*** is an objection to the writer's [thesis](thesis.md) — a reason someone might disagree, an alternative explanation, or [evidence](evidence.md) that cuts against the claim. A **concession** is the writer's acknowledgment that the counterargument has some validity."
+description: "A ***counterargument*** is an objection to the writer's [thesis](thesis.md) — a reason someone might disagree, an alternative explanation, or [evidence](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/evidence.md) that cuts against the claim. A **concession** is the writer's acknowledgment that the counterargument has some validity."
 aliases:
   - "Counterargument"
   - "counterargument"
@@ -11,7 +11,7 @@ date-created: 2026-03-06
 tags: []
 ---
 
-A ***counterargument*** is an objection to the writer's [thesis](thesis.md) — a reason someone might disagree, an alternative explanation, or [evidence](evidence.md) that cuts against the claim. A **concession** is the writer's acknowledgment that the counterargument has some validity.
+A ***counterargument*** is an objection to the writer's [thesis](thesis.md) — a reason someone might disagree, an alternative explanation, or [evidence](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/evidence.md) that cuts against the claim. A **concession** is the writer's acknowledgment that the counterargument has some validity.
 
 Addressing counterarguments strengthens an essay rather than weakening it. A writer who anticipates objections and responds to them demonstrates that they've thought the problem through, not just past it. A writer who ignores obvious objections appears either ignorant of them or afraid to face them — either way, the reader's trust drops.
 

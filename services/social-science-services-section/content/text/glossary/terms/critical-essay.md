@@ -16,7 +16,7 @@ The critical essay is the dominant form in academic humanities. A literary criti
 
 The form requires two things the writer must balance: **fidelity to the subject** (representing it accurately, quoting it fairly, not distorting it to fit the argument) and **independent thinking** (saying something about the subject that goes beyond what anyone can see without the essay's analytical work). A critical essay that only summarizes the subject hasn't done its work; one that distorts the subject to serve the argument has done dishonest work.
 
-The critical essay's [evidence](evidence.md) is typically drawn from the subject itself — close reading, textual analysis, detailed description. The [warrant](warrant.md) connecting evidence to [claim](claim.md) is supplied by the analytical framework: "this detail matters because this theory tells us it matters." Making that warrant explicit is essential, because readers who don't share the analytical framework won't see why the evidence supports the claim.
+The critical essay's [evidence](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/evidence.md) is typically drawn from the subject itself — close reading, textual analysis, detailed description. The [warrant](warrant.md) connecting evidence to [claim](claim.md) is supplied by the analytical framework: "this detail matters because this theory tells us it matters." Making that warrant explicit is essential, because readers who don't share the analytical framework won't see why the evidence supports the claim.
 
 ## Related
 

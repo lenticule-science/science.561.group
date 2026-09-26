@@ -15,7 +15,7 @@ date-modified: 2026-03-09
 
 Logos operates through:
 
-- **Evidence** — facts, data, examples, testimony, and observation that support claims. In [essay writing](../disciplines/essay-writing/index.md), [evidence](evidence.md) and [analysis](analysis.md) are the primary vehicles for logos. In [copywriting](../disciplines/copywriting/index.md), specificity and proof serve the same function.
+- **Evidence** — facts, data, examples, testimony, and observation that support claims. In [essay writing](../disciplines/essay-writing/index.md), [evidence](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/evidence.md) and [analysis](analysis.md) are the primary vehicles for logos. In [copywriting](../disciplines/copywriting/index.md), specificity and proof serve the same function.
 - **Structure** — the order of ideas. A [well-structured argument](argument.md) makes its reasoning visible: this claim because of this evidence, connected by this [warrant](warrant.md). The reader can follow the chain.
 - **Consistency** — the argument doesn't contradict itself. Claims made early hold up later. Definitions stay stable. Qualifications are honored.
 - **Validity** — the reasoning follows accepted logical patterns. The conclusion actually follows from the premises, rather than merely appearing to.
@@ -30,4 +30,4 @@ In [technical writing](../disciplines/technical-writing/index.md), logos is the 
 - [ethos](ethos.md) — the credibility appeal
 - [pathos](pathos.md) — the emotional appeal
 - [argument](argument.md) — the essay-level structure that logos supports
-- [evidence](evidence.md) — the material that logos reasons from
+- [evidence](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/evidence.md) — the material that logos reasons from

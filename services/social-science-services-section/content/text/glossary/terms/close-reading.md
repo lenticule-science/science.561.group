@@ -19,5 +19,5 @@ Close reading is also a writing skill, not just a reading skill. The close reade
 
 - [analysis](analysis.md) — close reading produces the evidence that analysis interprets
 - [critical essay](critical-essay.md) — the essay form built on close reading
-- [evidence](evidence.md) — close reading generates textual evidence from passages
+- [evidence](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/evidence.md) — close reading generates textual evidence from passages
 - [diction](diction.md) — word choice is one of the primary objects of close reading

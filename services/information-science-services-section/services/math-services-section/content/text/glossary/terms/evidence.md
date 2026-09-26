@@ -41,6 +41,20 @@ These four corners are the bilattice's extremal positions; everything else is in
 
 A value's [settlement](settlement.md) position is its joint coordinate on the two axes — what evidence it carries and in what direction. Settlement is not an abstract truth-value attached to the value; it is the joint shape of the value's evidence. Reporting a value's settlement and reporting its evidence are the same act, viewed at the joint and component levels.
 
+## What produces evidence
+
+Witnessing produces evidence: a [witness](witness.md) recorded for a claim is evidence for it, and one recorded against it is evidence against. Evidence is a positive achievement on both sides. The absence of evidence for a claim is not evidence against it, only absence: the absurd corner, where nothing has been witnessed either way. A refuted claim (evidence against recorded) and an unexamined one (nothing recorded) are structurally different, and keeping them apart is the point of carrying two sides rather than one signed quantity.
+
+Evidence is claim-relative. The same record can support one claim, refute another and bear on a third not at all, so an evidence record names the claim it bears on, the direction of its contribution, its source, and how it was interpreted.
+
+## Evidence has an arrow of time
+
+Evidence accumulates monotonically: under settling, positions rise in the knowledge order and never fall. Once recorded, evidence is not erased. New evidence can shift the tilt on the truth axis, and a claim settled toward affirmation becomes told-both if evidence against arrives, but nothing returns a claim to the unwitnessed state. In Obsmetrologia this is the measurement law that extending a trace can only add witnesses ([positing](positing.md)).
+
+## Keeping evidence in a system
+
+A system that bears evidence aggregates the two sides independently and preserves conflict instead of collapsing it to one Boolean or treating contradiction as failure. Silence, support alone, refutation alone and conflict are four materially different conditions, and a system that keeps them apart can report which one it is in.
+
 ## See also
 
 - [Twist product](../../../../services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/residuated-lattice/content/twist-product/twist-product.md) — the construction whose components carry the two evidence kinds.
@@ -48,4 +62,6 @@ A value's [settlement](settlement.md) position is its joint coordinate on the tw
 - [Knowledge order](../../../../services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/pre-bilattice/content/knowledge-order/knowledge-order.md), [Truth order](../../../../services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/pre-bilattice/content/truth-order/truth-order.md) — the two axes evidence is read along.
 - [Negation](negation.md) — swaps positive and negative evidence.
 - [Four-bilattice](../../../../services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/pre-bilattice/content/bilattice/content/four-bilattice/four-bilattice.md) — the canonical small bilattice exhibiting the four evidence configurations.
+- [Witness](witness.md) — the record whose presence is evidence.
+- [Positing](positing.md) — the stage at which evidence is admitted.
 - [Settlement](settlement.md) — the joint structure within which evidence configurations are positioned.

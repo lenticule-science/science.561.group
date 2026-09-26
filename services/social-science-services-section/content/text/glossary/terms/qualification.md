@@ -29,4 +29,4 @@ The failure mode of qualification is hedging — qualifying so heavily that the 
 - [claim](claim.md) — what qualification refines
 - [warrant](warrant.md) — the logical bridge that qualification specifies the limits of
 - [concession](concession.md) — acknowledging limits of the argument, a related move
-- [evidence](evidence.md) — the strength of evidence determines the appropriate level of qualification
+- [evidence](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/evidence.md) — the strength of evidence determines the appropriate level of qualification

@@ -25,7 +25,7 @@ Signal phrases also prevent the "floating quotation" — a quotation dropped int
 
 ## Related terms
 
-- [evidence](evidence.md) — signal phrases introduce evidence from sources
+- [evidence](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/evidence.md) — signal phrases introduce evidence from sources
 - [paraphrase](paraphrase.md) — requires attribution through signal phrases
 - [analysis](analysis.md) — often follows the signal phrase and quotation
 - [ethos](ethos.md) — signal phrases build ethos by showing engagement with sources

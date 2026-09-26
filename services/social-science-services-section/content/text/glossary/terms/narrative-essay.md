@@ -8,7 +8,7 @@ date-created: 2026-03-06
 tags: []
 ---
 
-A ***narrative essay*** is an [essay](essay.md) that uses storytelling as its primary method of developing an idea. The essay's [argument](argument.md) emerges from the story rather than being stated as a [thesis](thesis.md) and defended with [evidence](evidence.md) — the narrative *is* the evidence, and the reader draws the conclusion from the experience of reading it.
+A ***narrative essay*** is an [essay](essay.md) that uses storytelling as its primary method of developing an idea. The essay's [argument](argument.md) emerges from the story rather than being stated as a [thesis](thesis.md) and defended with [evidence](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/evidence.md) — the narrative *is* the evidence, and the reader draws the conclusion from the experience of reading it.
 
 The narrative essay borrows techniques from fiction — [scene](scene.md) construction, [dialogue](dialogue.md), [pacing](pacing.md), concrete detail — but deploys them in service of essayistic thinking. The difference from a short story is intent: a story creates an experience; a narrative essay uses an experience to think through a question.
 

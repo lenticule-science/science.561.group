@@ -7,7 +7,7 @@ date-created: 2026-03-06
 tags: []
 ---
 
-***Synthesis*** is the integration of multiple sources, ideas, or pieces of [evidence](evidence.md) into a unified [argument](argument.md). Where [analysis](analysis.md) works on a single piece of evidence, synthesis works across several, showing how they relate to each other and to the essay's [thesis](thesis.md).
+***Synthesis*** is the integration of multiple sources, ideas, or pieces of [evidence](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/evidence.md) into a unified [argument](argument.md). Where [analysis](analysis.md) works on a single piece of evidence, synthesis works across several, showing how they relate to each other and to the essay's [thesis](thesis.md).
 
 Synthesis is not summary. Summarizing three sources in sequence ("Smith says X. Jones says Y. Lee says Z.") is a list, not a synthesis. Synthesis puts the sources in conversation: "Smith and Jones agree that X, but they disagree about its cause — Smith attributes it to A, while Jones argues for B. Lee's data complicates both positions by showing C."
 
@@ -22,6 +22,6 @@ Synthesis is where the essay writer's thinking is most visible. Anyone can repor
 ## Related terms
 
 - [analysis](analysis.md) — the interpretation of individual evidence that synthesis builds on
-- [evidence](evidence.md) — the material that synthesis integrates
+- [evidence](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/evidence.md) — the material that synthesis integrates
 - [argument](argument.md) — the structure that synthesis supports
 - [thesis](thesis.md) — the central claim that synthesis serves

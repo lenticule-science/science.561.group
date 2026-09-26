@@ -1,7 +1,7 @@
 ---
 
 name: "burden of proof"
-description: "The burden of proof determines which party must prove what, and how convincingly, in a legal proceeding. It has two components: the burden of production (who must present [evidence](evidence.md)) and the burden of persuasion (who loses if the evidence is inconclusive)."
+description: "The burden of proof determines which party must prove what, and how convincingly, in a legal proceeding. It has two components: the burden of production (who must present [evidence](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/evidence.md)) and the burden of persuasion (who loses if the evidence is inconclusive)."
 date-created: 2026-03-06
 keywords:
   - legalism
@@ -10,7 +10,7 @@ see-also:
 ---
 
 The burden of proof determines which party must prove what, and how convincingly, in a legal proceeding.
-It has two components: the burden of production (who must present [evidence](evidence.md)) and the burden of persuasion (who loses if the evidence is inconclusive).
+It has two components: the burden of production (who must present [evidence](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/evidence.md)) and the burden of persuasion (who loses if the evidence is inconclusive).
 
 The standard of proof — how convincing the evidence must be — varies by context.
 "Beyond a reasonable doubt" is the highest standard, reserved for criminal cases.
