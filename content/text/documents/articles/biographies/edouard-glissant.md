@@ -28,7 +28,11 @@ date-created: 2026-04-28
 
 Glissant is foundational for [opacity](../../../../../services/philosophy-services-section/content/text/glossary/terms/opacity.md), [creolization](../../theories/humanities/theories/philosophy/theories/caribbean/theories/creolization/_index.md), and the broader [caribbean](../../theories/humanities/theories/philosophy/theories/caribbean/_index.md) philosophical subdomain. His analysis of relation is upstream of the school's [relationality](../../theories/humanities/theories/philosophy/theories/relationality/_index.md) work and figures in the cybernetic-postliberal critique of [genring](../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/glossary/terms/genring.md) and [genre-coherence](../../theories/humanities/theories/sociology/theories/cybernetic-postliberalism/terms/genre-coherence.md).
 
-## Earlier material
+## Related
+
+- [Relational ontology](../../../../../services/philosophy-services-section/content/text/glossary/terms/relational-ontology.md) — the position his work articulates
+- [Refusal](../../../../../services/social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/refusal.md) — the broader practice of declining imposed [legibility](../../../../../services/philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md)
+- [Recuperation](../../../../../services/social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/recuperation.md) — the process [opacity](../../../../../services/philosophy-services-section/content/text/glossary/terms/opacity.md) resists
 
 Édouard Glissant (21 September 1928 – 3 February 2011) was a Martinican writer, [poet](../../../../../services/information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/writing/disciplines/poetry/index.md), and philosopher whose work on creolization, relation, and [opacity](../../../../../services/philosophy-services-section/content/text/glossary/terms/opacity.md) has been foundational for postcolonial thought, Caribbean philosophy, and the critique of universalism. A student of Aimé Césaire and interlocutor of [Frantz Fanon](frantz-fanon.md), Gilles Deleuze, and [Félix Guattari](../../../../../services/information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/felix-guattari.md), Glissant developed a philosophical vocabulary for thinking about cultural contact, mixture, and difference that refuses both assimilation and separatism.
 
@@ -45,9 +49,3 @@ His concept of [opacity](../../../../../services/philosophy-services-section/con
 - *Poetics of Relation* (*Poétique de la Relation*, 1990) [cite:@glissant_PoeticsRelation_1997]
 - *Tout-monde* (1993)
 - *Treatise on the Whole-World* (*Traité du tout-monde*, 1997)
-
-- [Opacity](../../../../../services/philosophy-services-section/content/text/glossary/terms/opacity.md) — the concept he develops
-- [Relational ontology](../../../../../services/philosophy-services-section/content/text/glossary/terms/relational-ontology.md) — the position his work articulates
-- [Refusal](../../../../../services/social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/refusal.md) — the broader practice of declining imposed [legibility](../../../../../services/philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md)
-- [Linguistic extraction](../../../../../services/information-science-services-section/services/communication-science-services-section/services/linguistics-services-section/content/text/glossary/terms/linguistic-extraction.md) — what [opacity](../../../../../services/philosophy-services-section/content/text/glossary/terms/opacity.md) refuses
-- [Recuperation](../../../../../services/social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/recuperation.md) — the process [opacity](../../../../../services/philosophy-services-section/content/text/glossary/terms/opacity.md) resists

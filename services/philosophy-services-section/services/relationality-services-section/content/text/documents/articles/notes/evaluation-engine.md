@@ -97,8 +97,6 @@ runtimes must realise: any concrete evaluator must provide carriers and
 operations instantiating `(State, step, norm)` in a way that respects the
 evaluation-context, substitution, and reduction/normalization theorems.
 
-## Earlier material
-
 The acts governing evaluation contexts, substitution, and normalization form a
 coherent engine for executing relational terms.
 

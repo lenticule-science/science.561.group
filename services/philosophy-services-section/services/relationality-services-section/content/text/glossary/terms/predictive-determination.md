@@ -32,7 +32,9 @@ This makes the "incitement" concept (what incomplete structure compels) into a f
 - Present in: draft 0 (explicit algorithm), draft 7 (named principle)
 - Absent from: most other drafts (they use "it cannot not derive" informally)
 
-## Earlier material
+## Related
+
+- [Incitement](../concepts/incitement.md) — the phase-level version of what predictive determination does at the domain level
 
 Predictive determination is the principle that each closed relational domain exposes implicit dynamics that compel the emergence of a new domain, enabling the architecture to forecast the necessary shape of its next formal extension. It is not a vague openness to further development. It is a specific structural capacity: the closed domain contains enough information, in the pattern of its closure, to determine what must come next.
 
@@ -45,8 +47,3 @@ At the meta level, this same logic applies to domains as wholes. When a domain c
 Predictive determination means that the derivation is not just an open-ended sequence where anything could happen next. It is a directed unfolding where each step constrains the next. The architecture has internal teleology — not in the sense of a preordained destination, but in the sense that each completed form generates determinate requirements for what must follow.
 
 This is distinct from both infinite regress (where the same problem recurs without progress) and arbitrary extension (where new domains could take any form). Predictive determination ensures progress — each domain goes further than the last — and directedness — the direction is determined by the structure, not by external choice.
-
-- [The Derivation](../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-04/the-derivation.md) — where predictive determination arises (Phase 9)
-- [Recursive domain unfolding](../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-04/recursive-domain-unfolding.md) — the phenomenon that predictive determination makes precise
-- [Incitement](../concepts/incitement.md) — the phase-level version of what predictive determination does at the domain level
-- [Reflexive equilibrium](../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-04/reflexive-equilibrium.md) — the closure that reveals what comes next

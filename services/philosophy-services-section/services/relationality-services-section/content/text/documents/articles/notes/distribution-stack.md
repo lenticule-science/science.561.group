@@ -66,8 +66,6 @@ and orchestration layers must realise: they provide carriers for `Packets`
 and `Channels` and an implementation of `Route` consistent with the wiring,
 intake, and storage theorems.
 
-## Earlier material
-
 To move recognitions between modules (evaluation, measurement, simulation, etc.)
 we need a routing layer that respects intake, storage, and wiring constraints.
 This theorem states that such a distribution stack already exists.

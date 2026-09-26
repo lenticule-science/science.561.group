@@ -26,8 +26,6 @@ Where the [major arcana](major-arcana.md) point to large-scale forces and life t
 
 The numbered cards (Ace through Ten) trace a progression within each suit's domain — from the seed potential of the Ace through the completion or culmination of the Ten. The court cards represent people, aspects of personality, or modes of engaging with the suit's theme. Whether a court card refers to an external person or an internal quality depends on the reading context and the reader's interpretive approach.
 
-## Earlier material
-
 Minor arcana interpretations combine suit themes with rank themes.
 
 - Wands: drive, growth, creative force.

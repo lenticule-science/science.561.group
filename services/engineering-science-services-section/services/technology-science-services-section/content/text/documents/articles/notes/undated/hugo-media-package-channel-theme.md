@@ -687,8 +687,6 @@ author.
   ,#+INCLUDE:  "./index.org" src
 #+end_src
 
-## Earlier material
-
 ``` {.bash org-language="sh"}
 rm -r ./build/
 mkdir ./build/
@@ -714,7 +712,4 @@ Located at `./build/layouts/_default/baseof.html`{.verbatim}, this *layout* serv
 {{- define "main" -}}
 
 {{- end -}}
-```
-
-Blah blah blah
 ```

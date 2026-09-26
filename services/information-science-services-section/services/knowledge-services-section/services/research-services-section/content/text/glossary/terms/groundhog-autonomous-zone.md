@@ -4,6 +4,10 @@ aliases:
   - "groundhog autonomous zone"
 date-created: 2025-04-01
 tags: []
+dg-home: true
+dg-publish: true
+dg-permalink: index
+type: "[[project-as-command-term]]"
 ---
 
 
@@ -430,32 +434,6 @@ What\'s the best - in terms of energy - way to heat up some water for washing di
 ### Tree-weight batteries?
 
 ### Soil-batteries
-
-
----
-
-## Consolidated triage formulation
-
-<!-- CONSOLIDATED-TRIAGE-SOURCE: groundhog-autonomous-zone.md SHA256 494d22dbf9c1c4686ce56df1e211d0f49c9792dca30dd9524578147e02f46055 -->
-
-This historical formulation was consolidated from `lib/emsenn/services/561-group/services/public-services-section/services/personal-services-section/emsenn-services-section/content/text/triage/groundhog-autonomous-zone.md`. It is retained where its wording, links, provenance, or uncertainty differs from the active entry.
-
-<details>
-<summary>Recorded source metadata</summary>
-
-```yaml
-dg-home: true
-dg-publish: true
-aliases:
-  - homepage
-  - GAZ
-dg-permalink: index
-type: "[[project-as-command-term]]"
-```
-
-</details>
-
-### Retained formulation
 
 The ***Groundhog Autonomous Zone*** is a (method:: [[synthetic-place-of-ritualized-ethnosis]]) made for (method:: [[vernacular-autoethnosis]]) in (function:: [[pursuit-of-total-liberation]]). It is guided by (method:: [[Indigenous insurrectionary anarcho-nihilism]]) and oriented in [[antagonising|antagonism]] and [[negating|negation]] of [[settler-colonialism]]'s fundamental need for [[death]].
 

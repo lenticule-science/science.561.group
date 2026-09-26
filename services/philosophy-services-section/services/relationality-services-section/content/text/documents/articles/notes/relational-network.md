@@ -57,8 +57,6 @@ computer: concrete deployment and orchestration systems must realise
 `Network`—ports, channels, tasks, edges, and schedules—in a way that preserves
 its induced dataflow and dependency relations.
 
-## Earlier material
-
 The final structural piece for a relational computer is the network that connects
 modules, routes data, and schedules execution.  This theorem states that the
 module wiring, distribution, and scheduling stacks together witness such a

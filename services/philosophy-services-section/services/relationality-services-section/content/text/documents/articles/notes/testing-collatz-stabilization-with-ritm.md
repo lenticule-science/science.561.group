@@ -1123,10 +1123,6 @@ description: from sim import import matplotlib.pyplot as plt
           print(rec)
 ```
 
-## Earlier material
-
-#+begin_src python :tangle ./src/ritm/collatz-stabilizer-0.1.0.py
-
 #+begin_src python :tangle ./src/ritm/collatz-stabilizer-0.1.1.py
   # RITM-Collatz Experiment Simulator
   # Requires: sim.py in the same directory
@@ -1134,8 +1130,6 @@ description: from sim import import matplotlib.pyplot as plt
 #+begin_src python :tangle ./src/ritm/collatz-stabilizer-0.1.2.py
   # RITM-Collatz Experiment Simulator (Stepwise Comonadic Version)
   # Requires: sim.py in the same directory
-
-#+begin_src python :tangle ./src/ritm/collatz-stabilizer-0.1.3.py
 
 #+begin_src python :tangle ./src/ritm/collatz-stabilizer-0.1.4.py
   # RITM-Collatz Experiment Simulator with Residue-Class Analysis & Decay Rates

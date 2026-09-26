@@ -216,8 +216,6 @@ This view unifies gravitational thermodynamics, quantum information, and statist
 - ‘t Hooft, G. (1993). “Dimensional Reduction in Quantum Gravity.” *arXiv:gr-qc/9310026*.
 - Susskind, L. (1995). “The World as a Hologram.” *Journal of Mathematical Physics*, 36(11), 6377–6396.
 
-## Earlier material
-
 We propose that black holes can be modeled as information-theoretic stability optimizers: physical systems that maximize entropy while minimizing divergence between interior and exterior information distributions.  
 Using the definition of stability as the rate of divergence minimization (Senn 2025a), we reformulate the laws of black-hole thermodynamics as expressions of global informational equilibrium.  
 The event horizon is interpreted as a stability boundary where entropy flux across the surface balances the internal rate of informational compression.  

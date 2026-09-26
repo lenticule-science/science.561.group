@@ -65,8 +65,6 @@ Therefore we can replicate relational data across multiple stores without
 losing consistency: replication is captured by the `Replication` structure and
 its relation to storage, distribution, and concurrency.
 
-## Earlier material
-
 Replication requires that multiple copies of a snapshot remain in sync despite
 concurrent updates.  The storage, distribution, and concurrency stacks already
 provide these guarantees.

@@ -21,6 +21,7 @@ contains: cargo
 requires:
   - captain
   - crew
+date-modified: 2026-03-29
 ---
 
 A ship is a chartered venture — a bounded undertaking commissioned by a higher authority, given a specific purpose, crewed for that purpose, and placed under a captain's command.
@@ -107,23 +108,6 @@ When coordinated action was needed — a diplomatic mission, a military campaign
 The venture operated hierarchically under its commission; the confederacy that issued the commission did not.
 This is the ship pattern: hierarchy within the venture, equality among the venturers.
 
----
-
-## Supplementary formulation
-
-```yaml
----
-description: "A large vessel built to travel on water, carrying people and goods."
-aliases: [ships]
-extends: vessel
-contains: cargo
-requires: [captain, crew]
-governed-by: flag-state
-date-created: 2026-03-20
-date-modified: 2026-03-29
----
-```
-
 A ship is a large [vessel](../../../../../philosophy-services-section/content/text/glossary/terms/vessel.md) built to travel on water, carrying people and goods.
 Boats are small enough for one person to handle.
 Ships are big enough to need a [crew](../../../../services/political-science-services-section/services/military-science-services-section/content/text/glossary/terms/crew.md).
@@ -158,17 +142,3 @@ The word comes from Old English *scip*, from Proto-Germanic *skipą*.
 Every maritime culture has a word for this because ships are among the oldest complex technologies — large, expensive, dangerous objects that require coordinated human effort to build and operate.
 A ship is not a metaphor for an organization.
 It is the original case of one.
-
-## Earlier material
-
-- [captain](../../../../services/sociology-science-services-section/content/text/glossary/terms/captain.md) — the person who commands the ship under its charter
-- [confederacy](../../../../services/sociology-science-services-section/content/terms/confederacy.md) — the commissioning authority that charters ships and confers their identity
-- [company](../../../../services/economics-and-business-science-services-section/services/business-science-services-section/content/text/glossary/terms/company.md) — the perpetual entity, contrasted with the bounded ship
-- [staff](../../../../services/economics-and-business-science-services-section/services/business-science-services-section/content/text/glossary/terms/staff.md) — ongoing personnel, contrasted with voyage-bounded crew
-- [office](../../../../services/sociology-science-services-section/content/text/glossary/terms/office.md) — the normative position that persists independently of its holder, as the ship persists independently of its captain
-
-- [captain](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/captain.md) — the person who commands the ship under its charter
-- [confederacy](../../../../services/sociology-science-services-section/services/work-science-services-section/content/terms/confederacy.md) — the commissioning authority that charters ships and confers their identity
-- [company](../../../../services/economics-and-business-science-services-section/services/business-science-services-section/content/text/glossary/terms/company.md) — the perpetual entity, contrasted with the bounded ship
-- [staff](../../../../services/economics-and-business-science-services-section/services/business-science-services-section/content/text/glossary/terms/staff.md) — ongoing personnel, contrasted with voyage-bounded crew
-- [office](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/office.md) — the normative position that persists independently of its holder, as the ship persists independently of its captain

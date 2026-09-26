@@ -28,20 +28,6 @@ In a [category](./category.md), subsets generalize to subobjects: a subobject of
 
 A subset of a [set](./set.md) S is a set A whose [elements](./element.md) all belong to S. Written $A \subseteq S$: for every x, if $x \in A$ then $x \in S$. Every set is a subset of itself. The empty set is a subset of every set.
 
-Subset is not the same as [element](./element.md). The number 3 is an element of {1, 2, 3}. The set {3} is a subset of {1, 2, 3}. An element belongs to a set; a subset is contained within a set. These are different relations — $3 \in \{1, 2, 3\}$ but $3 \not\subseteq \{1, 2, 3\}$, and $\{3\} \subseteq \{1, 2, 3\}$ but $\{3\} \notin \{1, 2, 3\}$ (unless 3 itself happens to be the set {3}).
-
-The collection of all subsets of S is the power set $\mathcal{P}(S)$. If S has n elements, $\mathcal{P}(S)$ has $2^n$ elements. The power set is ordered by inclusion: $A \subseteq B$ defines a [partial order](./partial-order.md) on $\mathcal{P}(S)$. Under this ordering, [intersection](./intersection.md) is the [meet](./meet.md) (greatest lower bound) and [union](./union.md) is the [join](./join.md) (least upper bound). Every subset has a complement $S \setminus A$, making $\mathcal{P}(S)$ a Boolean algebra.
-
-A [binary relation](./binary-relation.md) from A to B is defined as a subset of $A \times B$. So subset is the concept that connects sets to relations: a relation IS a subset of a product. This makes subset one of the load-bearing concepts in the chain from sets to categories — without it, you cannot define relations, and without relations, you cannot define functions.
-
-In a [category](./category.md), subsets generalize to subobjects: a subobject of an object A is an equivalence class of monomorphisms into A. Each subset of S corresponds to a characteristic [function](./function.md) $S \to \{0, 1\}$ that says yes or no for each element. In categories beyond Set, this characteristic function targets a richer object — the subobject classifier — which may have more values than just true and false.
-
-## Earlier material
-
-A set whose elements all belong to another set — the basic containment relation between sets.
-
-A subset of a [set](set.md) S is a set A whose [elements](element.md) all belong to S. Written $A \subseteq S$: for every x, if $x \in A$ then $x \in S$. Every set is a subset of itself. The empty set is a subset of every set.
-
 Subset is not the same as [element](element.md). The number 3 is an element of {1, 2, 3}. The set {3} is a subset of {1, 2, 3}. An element belongs to a set; a subset is contained within a set. These are different relations — 3∈{1,2,3}3 \in \{1, 2, 3\} but 3⊈{1,2,3}3 \not\subseteq \{1, 2, 3\}, and {3}⊆{1,2,3}\{3\} \subseteq \{1, 2, 3\} but {3}∉{1,2,3}\{3\} \notin \{1, 2, 3\} (unless 3 itself happens to be the set {3}).
 
 The collection of all subsets of S is the power set $\mathcal{P}(S)$. If S has n elements, $\mathcal{P}(S)$ has 2n2^n elements. The power set is ordered by inclusion: $A \subseteq B$ defines a [partial order](partial-order.md) on $\mathcal{P}(S)$. Under this ordering, [intersection](intersection.md) is the [meet](../../documents/articles/research/2026/07/31/lenticule-import/order/terms/meet.md) (greatest lower bound) and [union](union.md) is the [join](../../documents/articles/research/2026/07/31/lenticule-import/order/terms/join.md) (least upper bound). Every subset has a complement $S \setminus A$, making $\mathcal{P}(S)$ a Boolean algebra.
@@ -53,3 +39,13 @@ The collection of all subsets of $S$ is the power set $\mathcal{P}(S)$. If $S$ h
 The subset relation $\subseteq$ defines a [partial order](partial-order.md) on $\mathcal{P}(S)$. It is reflexive ($A \subseteq A$), antisymmetric (if $A \subseteq B$ and $B \subseteq A$ then A=BA = B), and transitive (if $A \subseteq B$ and $B \subseteq C$ then $A \subseteq C$). Under this ordering, the power set is a [lattice](../../documents/articles/research/2026/07/31/posets/terms/lattice.md): the [meet](../../documents/articles/research/2026/07/31/lenticule-import/order/terms/meet.md) (greatest lower bound) of two subsets is their [intersection](intersection.md), and the [join](../../documents/articles/research/2026/07/31/lenticule-import/order/terms/join.md) (least upper bound) is their [union](union.md). Every subset has a complement S∖A={x∈S:x∉A}S \setminus A = \{x \in S : x \notin A\}, making $\mathcal{P}(S)$ a Boolean algebra — the canonical example of one.
 
 In a [category](../../documents/articles/research/2026/07/31/lenticule-import/categories/domains/ordinary-categories/terms/category.md), subsets generalize to subobjects: a subobject of an object $A$ is an equivalence class of monomorphisms (injective morphisms) into $A$. Each subset of $S$ corresponds to a characteristic function S→{0,1}S \to \{0, 1\} that answers yes or no for each element. In categories beyond **Set**, this characteristic function targets a richer object — the subobject classifier $\Omega$ — which may carry truth values beyond just true and false, modeling the internal logic of the category.
+
+Subset is not the same as [element](./element.md). The number 3 is an element of {1, 2, 3}. The set {3} is a subset of {1, 2, 3}. An element belongs to a set; a subset is contained within a set. These are different relations — $3 \in \{1, 2, 3\}$ but $3 \not\subseteq \{1, 2, 3\}$, and $\{3\} \subseteq \{1, 2, 3\}$ but $\{3\} \notin \{1, 2, 3\}$ (unless 3 itself happens to be the set {3}).
+
+The collection of all subsets of S is the power set $\mathcal{P}(S)$. If S has n elements, $\mathcal{P}(S)$ has $2^n$ elements. The power set is ordered by inclusion: $A \subseteq B$ defines a [partial order](./partial-order.md) on $\mathcal{P}(S)$. Under this ordering, [intersection](./intersection.md) is the [meet](./meet.md) (greatest lower bound) and [union](./union.md) is the [join](./join.md) (least upper bound). Every subset has a complement $S \setminus A$, making $\mathcal{P}(S)$ a Boolean algebra.
+
+A [binary relation](./binary-relation.md) from A to B is defined as a subset of $A \times B$. So subset is the concept that connects sets to relations: a relation IS a subset of a product. This makes subset one of the load-bearing concepts in the chain from sets to categories — without it, you cannot define relations, and without relations, you cannot define functions.
+
+In a [category](./category.md), subsets generalize to subobjects: a subobject of an object A is an equivalence class of monomorphisms into A. Each subset of S corresponds to a characteristic [function](./function.md) $S \to \{0, 1\}$ that says yes or no for each element. In categories beyond Set, this characteristic function targets a richer object — the subobject classifier — which may have more values than just true and false.
+
+A set whose elements all belong to another set — the basic containment relation between sets.

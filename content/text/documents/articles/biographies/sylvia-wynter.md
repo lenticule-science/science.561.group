@@ -30,7 +30,10 @@ Wynter is a foundational upstream source for the framework. The genring operatio
 - "The Re-Enchantment of Humanism: An Interview with Sylvia Wynter" (with David Scott, *Small Axe* 8, 2000)
 - *Sylvia Wynter: On Being Human as Praxis* (Katherine McKittrick, ed., 2015)
 
-## Earlier material
+## Related
+
+- [Substance metaphysics](../../../../../services/philosophy-services-section/content/text/glossary/terms/substance-metaphysics.md) — the [ontological](../../../../../services/philosophy-services-section/services/western-services-section/services/metaphysics-services-section/services/ontology-services-section/content/text/glossary/terms/ontology.md) framework Man requires
+- [Relational ontology](../../../../../services/philosophy-services-section/content/text/glossary/terms/relational-ontology.md) — a different genre of being
 
 Sylvia Wynter (born 1928) is a Jamaican writer, philosopher, and cultural theorist whose work reframes the entire project of Western humanism as a genre — a historically specific mode of being human that has been mistaken for the human itself. A professor emerita at Stanford University, Wynter's career spans literature, theater, and philosophy, and her later work has become central to Black studies, decolonial thought, and the critique of Western universalism.
 
@@ -46,9 +49,3 @@ Her concept of overrepresentation appears in emsenn's letters-to-the-web in the 
 - "1492: A New World View" (1995)
 - "On How We Mistook the Map for the Territory" (2006)
 - "The Ceremony Must Be Found: After Humanism" (1984)
-
-- [Settler colonialism](../../../../../services/information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/sociology/terms/settler-colonialism.md) — the political structure that installs Man
-- [Substance metaphysics](../../../../../services/philosophy-services-section/content/text/glossary/terms/substance-metaphysics.md) — the [ontological](../../../../../services/philosophy-services-section/services/western-services-section/services/metaphysics-services-section/services/ontology-services-section/content/text/glossary/terms/ontology.md) framework Man requires
-- [Relational ontology](../../../../../services/philosophy-services-section/content/text/glossary/terms/relational-ontology.md) — a different genre of being
-- [Ontological turn](../../../../../services/information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/philosophy/terms/ontological-turn.md) — the movement challenging Man's overrepresentation
-- [Decolonization](../../../../../services/social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/povinellian-services-section/services/settler-colonialism-services-section/content/text/glossary/terms/decolonization.md) — the project of unseating Man's genre

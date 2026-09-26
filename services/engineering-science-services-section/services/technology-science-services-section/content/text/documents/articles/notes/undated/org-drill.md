@@ -956,23 +956,17 @@ or give it different tags or properties, for example.
 
 Org-Drill is written by Paul Sexton.
 
-## Earlier material
-
-Org-Drill is an extension for [Org mode](http://orgmode.org/). Org-Drill uses a [spaced repetition](http://en.wikipedia.org/wiki/Spaced_repetition) algorithm to conduct interactive "drill sessions", using org files as sources of facts to be memorised. Each topic is treated as a "flash card". The material to be remembered is presented to the student in random order. The student rates his or her recall of each item, and this information is used to schedule the item for later revision.
+## Related
 
 - [SuperMemo](http://supermemo.com/index.htm) (see descriptions of the SM2, SM5 and SM8 algorithms)
 - [Anki](http://ichi2.net/anki/)
 - [Mnemosyne](http://mnemosyne-proj.org/index.php)
 
-``` example
-(require 'org-drill)
-```
+Org-Drill is an extension for [Org mode](http://orgmode.org/). Org-Drill uses a [spaced repetition](http://en.wikipedia.org/wiki/Spaced_repetition) algorithm to conduct interactive "drill sessions", using org files as sources of facts to be memorised. Each topic is treated as a "flash card". The material to be remembered is presented to the student in random order. The student rates his or her recall of each item, and this information is used to schedule the item for later revision.
 
 Load the file [spanish.org](../../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/technology/archive/library/org-mode/references/packages/org-drill/spanish.org). Press `M-x`{.verbatim} and run the function `org-drill`{.verbatim}. Follow the prompts at the bottom of the screen.
 
 When the drill finishes, you can look at `spanish.org`{.verbatim} to get some idea of how drill topics are written.
-
-Org-Drill uses org mode topics as 'drill items'. To be used as a drill item, the topic must have a tag that matches the value of `org-drill-question-tag`{.verbatim}. This is `:drill:`{.verbatim} by default. Any other org topics will be ignored.
 
 - <span class="spurious-link" target="Two-sided cards">*Two-sided cards*</span>
 - <span class="spurious-link" target="Multi-sided cards">*Multi-sided cards*</span>
@@ -1031,3 +1025,4 @@ Another important component of incremental reading is the ability to save your e
 Using these templates and `org-protocol`{.verbatim}, you can set up buttons in your web browser to:
 
 For example, suppose you are reading the Wikipedia entry on tuberculosis [here](http://en.wikipedia.org/wiki/Tuberculosis).
+

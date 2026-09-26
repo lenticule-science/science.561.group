@@ -8,6 +8,12 @@ tags: []
 description: "A small autonomous group organized by mutual trust and shared analysis rather than formal membership, constituting the basic organizational unit of insurrectionary anarchism."
 date-modified: 2026-03-09
 part-of: sociology/schools/anarchism/topics/organization/terms
+title: "Affinity Group"
+type: term
+defines:
+  - "Affinity Group"
+  - "affinity groups"
+date-updated: 2026-03-09
 ---
 
 An affinity group is a small, autonomous group organized by mutual trust and shared analysis rather than formal membership, bylaws, or hierarchy. Affinity groups are the basic organizational unit of [insurrectionary anarchism](../../../terms/insurrectionary-anarchism.md) and are used across [anarchist](../schools/anarchism/index.md) and direct-action movements for coordinating [direct action](direct-action.md).
@@ -15,61 +21,6 @@ An affinity group is a small, autonomous group organized by mutual trust and sha
 The affinity group model reflects [anarchist](../schools/anarchism/index.md) organizational principles: decisions are made by those who carry them out, trust is built through shared experience rather than institutional position, and the group exists to act rather than to perpetuate itself. Groups typically range from three to fifteen people who know each other personally and can make decisions quickly without formal process. Multiple affinity groups may coordinate through spokescouncils for larger actions while maintaining their internal autonomy.
 
 The strength of the model is its resistance to infiltration and co-optation — there is no central leadership to compromise, no membership list to subpoena, no organizational continuity that depends on any single person. This is also why state [counterinsurgency](counterinsurgency.md) programs like [COINTELPRO](cointelpro.md) invested heavily in [snitch-jacketing](snitch-jacketing.md): when trust is the organizational principle, destroying trust is the most effective attack.
-
-
----
-
-<!-- source: content/critical-theory/domains/anarchism/domains/organization/terms/affinity-group.md -->
-
-## Imported source: content/critical-theory/domains/anarchism/domains/organization/terms/affinity-group.md
-
----
-title: "Affinity Group"
-date-created: 2026-03-02
-type: term
-aliases:
-  - "affinity group"
-  - "affinity groups"
-tags: []
-description: "A small autonomous group organized by mutual trust and shared analysis rather than formal membership, constituting the basic organizational unit of insurrectionary anarchism."
-defines:
-  - "Affinity Group"
-  - "affinity groups"
-date-updated: 2026-03-09
-part-of: sociology/schools/anarchism/topics/organization/terms
----
-
-An affinity group is a small, autonomous group organized by mutual trust and shared analysis rather than formal membership, bylaws, or hierarchy. Affinity groups are the basic organizational unit of [insurrectionary anarchism](/sociology/terms/insurrectionary-anarchism.md) and are used across [anarchist](../schools/anarchism/index.md) and direct-action movements for coordinating [direct action](direct-action.md).
-
-The affinity group model reflects [anarchist](../schools/anarchism/index.md) organizational principles: decisions are made by those who carry them out, trust is built through shared experience rather than institutional position, and the group exists to act rather than to perpetuate itself. Groups typically range from three to fifteen people who know each other personally and can make decisions quickly without formal process. Multiple affinity groups may coordinate through spokescouncils for larger actions while maintaining their internal autonomy.
-
-The strength of the model is its resistance to infiltration and co-optation — there is no central leadership to compromise, no membership list to subpoena, no organizational continuity that depends on any single person. This is also why state [counterinsurgency](counterinsurgency.md) programs like [COINTELPRO](cointelpro.md) invested heavily in [snitch-jacketing](snitch-jacketing.md): when trust is the organizational principle, destroying trust is the most effective attack.
-
-## Related terms
-
-- [Insurrectionary anarchism](/sociology/terms/insurrectionary-anarchism.md)
-- [Direct action](direct-action.md)
-- [Anarchism](/sociology/terms/anarchism.md)
-
-
----
-
-<!-- source: content/critical-theory/domains/anarchism/terms/affinity-group.md -->
-
-## Imported source: content/critical-theory/domains/anarchism/terms/affinity-group.md
-
----
-title: "Affinity Group"
-date-created: 2026-03-06
-type: term
-aliases:
-  - "affinity group"
-  - "affinity groups"
-tags: []
-description: "A small group of people — usually 3 to 15 — organized by mutual trust and shared analysis rather than formal membership, constituting the basic unit of anarchist organizing."
-defines:
-  - "Affinity Group (anarchist)"
----
 
 An affinity group is a small group of people — usually three to fifteen — organized by mutual trust and shared analysis rather than by formal membership, bylaws, or [hierarchy](./hierarchy.md). It is the basic organizational unit of [anarchist](../index.md) practice, particularly [insurrectionary anarchism](../../../terms/insurrectionary-anarchism.md).
 
@@ -81,13 +32,10 @@ Multiple affinity groups coordinate through *spokescouncils*: each group sends a
 
 The affinity group model is also resistant to repression. There is no central leadership to arrest, no membership list to subpoena, no organizational treasury to seize, no office to raid. When [the state](../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/the-state.md) targets anarchist organizing, it often resorts to [counterinsurgency](counterinsurgency.md) tactics designed to destroy trust itself — infiltrators, informants, and the practice of [snitch-jacketing](snitch-jacketing.md) (falsely accusing group members of being informants). Trust is both the affinity group's greatest strength and its greatest vulnerability.
 
-## Related terms
+## Related
 
 - [Consensus](./consensus.md) — how affinity groups make decisions
 - [Informal organization](./informal-organization.md) — the organizational principle affinity groups embody
 - [Federation](./federation.md) — how affinity groups coordinate at scale
-- [Direct action](./direct-action.md) — what affinity groups organize to do
-- [Hierarchy](./hierarchy.md) — what affinity groups refuse to reproduce
 - [Self-organization](../../../../services/critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/self-organization.md) — the capacity affinity groups express
-- [Solidarity](./solidarity.md) — the commitment that sustains affinity groups
 - [The state](../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/the-state.md) — the institution that targets affinity groups for repression

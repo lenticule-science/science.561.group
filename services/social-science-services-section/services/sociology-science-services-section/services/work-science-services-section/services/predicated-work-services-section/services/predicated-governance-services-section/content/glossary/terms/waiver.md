@@ -51,8 +51,6 @@ Waiver of $R^C$ does not affect:
 
 The audit log can reconstruct: $R^C$ existed, $Q$ waived it on date $\tau$, the relation retired. Subsequent normative state proceeds as if $R^C$ had not been operative beyond $\tau$, but the historical record persists.
 
-## Earlier material
-
 The single-party waiver structure assumes that $Q$ holds $R^C$ as an individual entitlement — something $Q$ can dispose of unilaterally. Many governance traditions recognize a category of jural relations that are not individually held but are held *in trust* — for the community, for future generations, for non-human kin. These cannot be individually waived.
 
 The substrate representation: if $\langle R^C, \texttt{held-in-trust}, C\rangle = \mathbf{t}$ (claim $R^C$ is held in trust for community $C$), then the voluntariness-and-authority pre-condition for waiver adds a requirement: $\langle Q, \texttt{individual-disposal-standing}, R^C\rangle = \mathbf{t}$. For trust-held claims, this standing cell is $\mathbf{f}$ — $Q$ lacks individual disposal authority over a claim held for others.

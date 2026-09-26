@@ -15,6 +15,24 @@ description: After completing this lesson, you'll be able to record simple busin
 
 After completing this lesson, you'll be able to record simple business transactions as double-entry [journal entries](../../../glossary/terms/journal.md), explain why every transaction affects at least two [accounts](../../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/2026/03/06/2026-03-06-account.md), and verify your entries by checking that [debits equal credits](../../../glossary/terms/trial-balance.md).
 
+Suppose you start a business with \$10,000 of your own money.
+Before any system of recording, you know two things: the business has \$10,000 in cash, and that cash came from you — the business owes it to you, in a sense, as the owner.
+One event, two facts.
+
+Now the business buys a \$3,000 laptop.
+Again, two facts: the business has a new piece of equipment worth \$3,000, and the business has \$3,000 less cash.
+The total value of what the business owns hasn't changed — it shifted from one form (cash) to another (equipment).
+
+- **Assets** are what the business owns (cash, equipment, inventory, money owed to it by customers).
+- **Liabilities** are what the business owes to others (loans, bills, wages owed to employees).
+- **Equity** is what the business owes to its owners — the residual after subtracting liabilities from assets.
+
+Totals match.
+The system is internally consistent.
+
+**Exercise 3**: A client pays the business \$4,000 for services rendered.
+Record the journal entry.
+
 ## A transaction before the system
 
 Suppose an owner contributes \$10,000 cash to a business and the governing facts
@@ -180,25 +198,3 @@ Cash: \$12,000 - \$1,200 + \$4,000 = \$14,800. Totals balance at \$21,000.
 ## What comes next
 
 This lesson covered the core mechanism: every transaction recorded as equal debits and credits across at least two accounts. The next step is learning how the [chart of accounts](../../../glossary/terms/chart-of-accounts.md) is structured and how to choose the right level of detail for an entity's needs.
-
-## Earlier material
-
-After completing this lesson, you'll be able to record simple business transactions as double-entry [journal entries](../../../glossary/terms/journal.md), explain why every transaction affects at least two [accounts](../../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/2026/03/06/2026-03-06-account.md), and verify your entries by checking that [debits equal credits](../../../glossary/terms/trial-balance.md).
-
-Suppose you start a business with \$10,000 of your own money.
-Before any system of recording, you know two things: the business has \$10,000 in cash, and that cash came from you — the business owes it to you, in a sense, as the owner.
-One event, two facts.
-
-Now the business buys a \$3,000 laptop.
-Again, two facts: the business has a new piece of equipment worth \$3,000, and the business has \$3,000 less cash.
-The total value of what the business owns hasn't changed — it shifted from one form (cash) to another (equipment).
-
-- **Assets** are what the business owns (cash, equipment, inventory, money owed to it by customers).
-- **Liabilities** are what the business owes to others (loans, bills, wages owed to employees).
-- **Equity** is what the business owes to its owners — the residual after subtracting liabilities from assets.
-
-Totals match.
-The system is internally consistent.
-
-**Exercise 3**: A client pays the business \$4,000 for services rendered.
-Record the journal entry.

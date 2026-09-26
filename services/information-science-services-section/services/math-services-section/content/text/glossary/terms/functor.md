@@ -66,8 +66,6 @@ The central functor in the relational universe is the contravariant **fiber doct
 
 - Whether the spec-level concept of Functor needs to track the full (full, faithful, essentially surjective, equivalence) classification, or whether the basic definition suffices for spec-file purposes.
 
-## Earlier material
-
 A functor $F : C \to D$ is a map from one [category](../../documents/articles/research/2026/07/31/lenticule-import/_archive/category/scripts/functoring/content/functor/objects/category.md) to another that preserves the structure. It sends [objects](../../documents/articles/research/2026/07/31/lenticule-import/_archive/category/scripts/functoring/content/functor/_archive/teaching/explanations/object.md) to objects and [morphisms](morphism.md) to morphisms. It does not break [composition](../../documents/articles/research/2026/07/31/lenticule-import/_archive/category/scripts/functoring/content/functor/_archive/composition.md) or identities: if $f$ and $g$ compose to $h$ in C, then $F(f)$ and $F(g)$ compose to $F(h)$ in D. If $\mathrm{id}_A$ is an [identity morphism](../../documents/articles/research/2026/07/31/lenticule-import/_archive/category/scripts/functoring/content/functor/_archive/identity-morphism.md), then $F(\mathrm{id}_A) = \mathrm{id}_{F(A)}$.
 
 That is the whole definition. A functor maps things and arrows between things, and it respects how arrows chain together. A functor is to categories what a homomorphism is to groups or a continuous map is to topological spaces — a structure-preserving translation between structured worlds.

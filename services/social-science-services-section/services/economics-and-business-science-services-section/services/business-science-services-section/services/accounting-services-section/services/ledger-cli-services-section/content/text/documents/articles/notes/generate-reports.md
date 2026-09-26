@@ -77,8 +77,6 @@ and generated-posting distinctions. Reconcile any report used for close to its
 source population and cutoff. The official [Ledger 3 manual](https://ledger-cli.org/doc/ledger3.html#Reporting-Commands)
 defines current command and option behavior.
 
-## Earlier material
-
 Ledger's two fundamental reports are `balance` and `register`.
 
 This shows the balance of every account.

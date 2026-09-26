@@ -17,6 +17,12 @@ tags:
   - monitoring
   - introspection
   - invariants
+date-created: "2026-03-04T00:00:00"
+depends_on:
+  - theorem/internal/intake-stack
+  - theorem/internal/measurement-stack
+  - theorem/internal/scheduling-stack
+  - theorem/internal/relational-network
 ---
 
 # Introspection Structure
@@ -55,30 +61,6 @@ normal work without destabilising the execution order, and the intake stack
 ensures monitoring inputs are treated like any other data. This introspection
 structure is the mathematical foundation for operational tools (debuggers,
 profilers, dashboards) built on top of the relational computer.
-
-
----
-
-<!-- source: archive/triage/relationality/domains/relationality-slop-2025-04/domains/internal/introspection-stack.md -->
-
-## Imported source: archive/triage/relationality/domains/relationality-slop-2025-04/domains/internal/introspection-stack.md
-
----
-title: Introspection Stack
-aliases:
-  - Introspection Stack
-  - introspection stack
-date-created: "2026-03-04T00:00:00"
-tags:
-  - monitoring
-  - introspection
-  - invariants
-depends_on:
-  - theorem/internal/intake-stack
-  - theorem/internal/measurement-stack
-  - theorem/internal/scheduling-stack
-  - theorem/internal/relational-network
----
 
 # Theorem (Introspection Stack)
 

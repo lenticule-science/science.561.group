@@ -97,28 +97,6 @@ storage layer.
    recognitions. Because the persistence stack guarantees reachability, the
    resulting `State` is nucleus-equivalent to the saved one.
 
-4. **Uniqueness.**
-   Any storage operator respecting the intake/persistence semantics and the
-   trace reconstruction must produce the same `SnapContent` and inverse
-   round-trip up to nucleus equivalence. Hence `Storage = (Snapshots, save,
-   load)` is unique in the earned sense.
-
-## Earlier material
-
-1. **Baseline and intake.**  
-   [`BaselineLimit`](baseline-limit.md) isolates the stabilized tail
-   of a trace. The intake stack theorem guarantees that observations are
-   normalized and validated; the persistence stack theorem earns the selection
-   of fixed recognitions. Together they determine `SnapContent = (obs,
-   baseline, fixed)` uniquely from a `State`.
-
-3. **Loading.**  
-   Given `SnapId`, retrieve its `(obs, baseline, fixed)`, reconstruct context
-   via [`RetraceContext`](retrace-context.md) from the trace
-   infrastructure, reattach the baseline tail, and reinstall fixed
-   recognitions. Because the persistence stack guarantees reachability, the
-   resulting `State` is nucleus-equivalent to the saved one.
-
 This theorem isolates the requirements for storing and loading relational data
 in a general storage system.  It depends on the persistence/intake stacks and
 the module-wiring theorem.
@@ -144,3 +122,9 @@ Therefore the relational calculus supports a storage substrate in which every
 snapshot is a combination of intake data, baseline limit, and fixed recognitions,
 and loading a snapshot is just reapplying the persistence/intake acts.  This
 provides the mathematical basis for a “relational database” layer.
+
+4. **Uniqueness.**
+   Any storage operator respecting the intake/persistence semantics and the
+   trace reconstruction must produce the same `SnapContent` and inverse
+   round-trip up to nucleus equivalence. Hence `Storage = (Snapshots, save,
+   load)` is unique in the earned sense.

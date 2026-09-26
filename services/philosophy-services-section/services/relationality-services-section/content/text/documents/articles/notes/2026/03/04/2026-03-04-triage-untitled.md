@@ -2,6 +2,15 @@
 title: "**Title:** _Mutualism as Phenomenon, Mutual Aid as Platform_"
 date-created: 2026-03-04T00:00:00
 description: Mutualism should be understood as a phenomenon that emerges from shared constraint and relational necessity—not as a fixed form or moral code.
+type: "[derivation](../../../../../../triage/derivation)"
+derivative-status: "[draft derivative|draft](draft derivative|draft)"
+derivative-stabilized-on: "[2025-04-28](../../../../../../triage/2025-04-28)"
+derives-from:
+  - [derivations/oldreflect](../../../../../../triage/derivations/oldreflect)
+domain: "[induce relationality](../../../undated/induce-relationality.md)"
+derivative-introduced-on: "[2025-04-28](../../../../../../triage/2025-04-28)"
+aliases:
+  - enact-induced-relation
 ---
 ## **Title:** _Mutualism as Phenomenon, Mutual Aid as Platform_
 
@@ -159,23 +168,6 @@ Mutualism should be understood as a phenomenon that emerges from shared constrai
         
     - **Governing by Confusion**: Explanation isn’t outside governance—it **completes the loop**
 
-
----
-
-<!-- source: archive/triage/relationality-slop-2025-04-28/Untitled.md -->
-
-## Imported source: archive/triage/relationality-slop-2025-04-28/Untitled.md
-
----
-title: Untitled
-date-created: "2026-03-05T00:00:00"
-type: "[derivation](../../../../../../triage/derivation)"
-derivative-status: "[draft derivative|draft](draft derivative|draft)"
-derivative-stabilized-on: "[2025-04-28](../../../../../../triage/2025-04-28)"
-derives-from:
-  - [derivations/oldreflect](../../../../../../triage/derivations/oldreflect)
----
-
 - [postulate](../../../../../../triage/postulate):: Multiple [derivations/oldreflect](../../../../../../triage/derivations/oldreflect)(p, n) at the same reflexive depth n cannot not compose an ordered relational structure, because they arise from stabilization of reflexions at the same layer of reflexive depth.
 - [derivation](../../../../../../triage/derivation):: Stabilized reflects naturally induce ordered bundling: a grouping into coherent, relational composites. Composition is thus the necessary structuring of multiple stabilized reflections at the same reflexive depth.
 - [example](../../../../../../triage/example)::
@@ -184,29 +176,9 @@ derives-from:
   - Generally, composing p stabilized reflexions gives a relative structure of arity p at depth n.
 - [relational expression](relational expression):: [../../../slop/relationality/human-draft-7/system/structures/relative](../../../../../../../../slop/relationality/human-draft-7/system/structures/relative)(p, [r₁, r₂, ..., rₚ], n) :: [derivations/oldreflect](../../../../../../triage/derivations/oldreflect)(p, n)
 
-
----
-
-<!-- source: archive/triage/relationality/domains/relationality-slop-2025-05/domains/derivations/Untitled.md -->
-
-## Imported source: archive/triage/relationality/domains/relationality-slop-2025-05/domains/derivations/Untitled.md
-
----
-type: "[act](../../../../../../triage/act)"
-domain: "[induce relationality](../../../undated/induce-relationality.md)"
-derivative-introduced-on: "[2025-04-28](../../../../../../triage/2025-04-28)"
-derives-from:
-  - "[bind-induced-relation](../../../../../../triage/bind-induced-relation)"
-aliases:
-  - enact-induced-relation
----
-
 - Definition:: ***enacting a bound induced relation*** is the **act** of realizing the expressive output of a binding, by inducing the relational result emergent from its structured pair.
 
 ## Derivation
-
-- [postulate](../../../../../../triage/postulate):: If two [reflex-induced-relation](../../../../../../triage/reflex-induced-relation)s are [bind-induced-relation|bound](../../../../../../triage/bind-induced-relation|bound) into a structured pair, it cannot not be derived that the structure expresses a new, enacted relational output. This output emerges not from either constituent alone, but from their **ordered** and **differentiated** relation.
-- [derivation](../../../../../../triage/derivation):: A [bind-induced-relation](../../../../../../triage/bind-induced-relation) is itself a reflected structure — which means it is a coherent act that can be further reflexed. By reflexing the bound pair, their relational interplay becomes a new act: an **enacted induced relation**. This enaction is not just a computation; it is the realization of a new relation as a consequence of the existing structure.
 
 - example:
 	- Let a = select-induced-relation(i, reflect(p, n))  
@@ -214,8 +186,6 @@ aliases:
 	- Let pair = bind-induced-relation(a, b, n)
 	- Then:
 		- enact-induced-relation(pair, n) = reflex-induced-relation(pair)
-
-- [relational expression](relational expression):: enact-bound-induced-relations(a, b, n) = reflex-induced-relation(bind-induced-relations(a, b, n))
 
 ## Formalism
 

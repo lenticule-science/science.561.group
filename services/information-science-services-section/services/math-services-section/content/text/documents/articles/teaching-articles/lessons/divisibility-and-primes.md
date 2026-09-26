@@ -58,8 +58,6 @@ The prime factorizations are $48 = 2^4 \cdot 3$ and $18 = 2 \cdot 3^2$. The GCD 
 - Calling $1$ a prime. By convention, $1$ is neither prime nor composite.
 - Forgetting that the fundamental theorem requires uniqueness *up to order* of factors.
 
-## Earlier material
-
 A **[prime](../../../../glossary/terms/prime.md)** is an integer $p > 1$ whose only positive divisors are 11 and $p$ itself. An integer greater than 11 that is not prime is **composite**.
 
 The **[greatest common divisor](../../../../glossary/terms/greatest-common-divisor.md)** gcd⁡(a,b)\gcd(a, b) is the largest positive integer dividing both $a$ and $b$. The **least common multiple** lcm⁡(a,b)\operatorname{lcm}(a, b) is the smallest positive integer divisible by both.

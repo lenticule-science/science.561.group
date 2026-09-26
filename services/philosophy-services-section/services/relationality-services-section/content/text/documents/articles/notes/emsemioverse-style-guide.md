@@ -510,9 +510,6 @@ and scarf, but you may not directly mention the snake, slinkies, or
 scarves.
 
 ## Supplements
-<!-- Originally included license content from ./mit-license.org::#license. -->
-
-## Earlier material
 
 For the *file format* and *syntax* of concept-writing in this repository (frontmatter conventions, link/transclusion syntax, callouts, math delimiters, etc.), see the [Semiotic Markdown Specification](../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/documents/articles/notes/undated/semiotic-markdown.md). This style guide is the upstream voice/tone/prose guidance; Semiotic Markdown is the downstream realization of that guidance in a concrete Markdown dialect.
 

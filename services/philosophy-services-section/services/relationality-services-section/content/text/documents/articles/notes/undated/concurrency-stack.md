@@ -17,6 +17,12 @@ tags:
   - concurrency
   - commutation
   - flow
+date-created: "2026-03-04T00:00:00"
+depends_on:
+  - commute-flow-and-nucleus
+  - distribute-flow
+  - flow-index-implication
+  - theorem/internal/scheduling-stack
 ---
 
 # Concurrency Structure
@@ -52,30 +58,6 @@ Executing tasks in parallel within each subset and respecting the precedence
 relation yields the same observable outcome as any deterministic sequential
 execution consistent with `Precedes`. This concurrency structure is the
 mathematical guarantee for safe parallel execution.
-
-
----
-
-<!-- source: archive/triage/relationality/domains/relationality-slop-2025-04/domains/internal/concurrency-stack.md -->
-
-## Imported source: archive/triage/relationality/domains/relationality-slop-2025-04/domains/internal/concurrency-stack.md
-
----
-title: Concurrency Stack
-aliases:
-  - Concurrency Stack
-  - concurrency stack
-date-created: "2026-03-04T00:00:00"
-tags:
-  - concurrency
-  - commutation
-  - flow
-depends_on:
-  - commute-flow-and-nucleus
-  - distribute-flow
-  - flow-index-implication
-  - theorem/internal/scheduling-stack
----
 
 # Theorem (Concurrency Stack)
 

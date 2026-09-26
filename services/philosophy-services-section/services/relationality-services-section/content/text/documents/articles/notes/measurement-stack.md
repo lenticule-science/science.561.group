@@ -56,8 +56,6 @@ used elsewhere (Markov specifications, measurement simulations, etc.): they
 provide a single measurement object that specs and implementations must
 instantiate.
 
-## Earlier material
-
 Observables, measures, and kernels form a coherent stack:
 
 1. **Observables and integration.**  

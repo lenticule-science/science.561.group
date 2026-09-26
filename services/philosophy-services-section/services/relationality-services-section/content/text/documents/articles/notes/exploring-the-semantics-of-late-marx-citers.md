@@ -217,14 +217,6 @@ if __name__ == "__main__":
     main()
 ```
 
-## Earlier material
-
-:PROPERTIES:
-:ID:       dbecf5eb-906b-4766-9e98-288c91c34d87
-:END:
-#+title: Exploring the semantics of The Late Marx citers
-#+date: [2025-10-17 Fri 11:12]
-
 #+begin_src python :tangle ./src/python/grab-anderson-citations.py
   import csv, json, re, time, random
   import requests

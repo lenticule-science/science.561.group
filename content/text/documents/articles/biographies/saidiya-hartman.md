@@ -26,8 +26,6 @@ University Professor at Columbia and a 2019 MacArthur Fellow.
 
 Hartman's BRT-side page is at [`black-radical-tradition/figures/saidiya-hartman`](saidiya-hartman.md). Her concept of fugitivity converges with [Fred Moten](../../../../../services/social-science-services-section/services/sociology-science-services-section/content/text/documents/articles/notes/undated/fred-moten.md)'s. Her methodological refusal of recovery converges with [Hortense Spillers](hortense-spillers.md)'s analytic of flesh and the ungendering of the captive. No reference note at [`library/references/people/`](../../../../../services/social-science-services-section/services/sociology-science-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/library/references/people/_index.md) yet.
 
-## Earlier material
-
 Saidiya V. Hartman (b. 1961) is the figure through whom the [black-radical-tradition](../../../../../services/social-science-services-section/services/sociology-science-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/library/social-sciences/sociology/archive/library/critical-theory/theories/black-radical-tradition/_index.md) holds its analysis of how slavery did not end — how its grammar, its categories, its distributions of life and death persist as the structuring conditions of Black life in the post-emancipation present. University Professor at Columbia and a 2019 MacArthur Fellow.
 
 - **The afterlife of slavery.** Hartman's framing in *Lose Your Mother* (2007): "If slavery persists as an issue in the political life of black America, it is not because of an antiquarian obsession with bygone days or the burden of a too-long memory, but because black lives are still imperiled and devalued by a racial calculus and a political arithmetic that were entrenched centuries ago. This is the afterlife of slavery — skewed life chances, limited access to health and education, premature death, incarceration, and impoverishment." The phrase has become one of the subdomain's central organizing claims.
@@ -44,16 +42,3 @@ Saidiya Hartman is a scholar of African American literature and history at Colum
 - **Scenes of subjection**: in *Scenes of Subjection* (1997), Hartman analyzed how slavery operated not only through spectacular violence but through the everyday — through the forced performance of pleasure, the extraction of enjoyment, and the constitution of the enslaved as beings whose suffering could not register as injury. The scene of subjection is the mundane operation of power, not its exceptional display.
 - **Critical fabulation**: Hartman developed critical fabulation as a method for writing about lives that appear in the archive only as commodities, defendants, or bodies. The archive of slavery is an archive of violence — it records the enslaved only through the instruments of their captivity. Critical fabulation works with and against the archive, telling stories that the archive makes impossible but that the evidence demands.
 - **The chorus and wayward lives**: in *Wayward Lives, Beautiful Experiments* (2019), Hartman recovered the lives of young Black women in the early twentieth century who created forms of freedom — sexual, spatial, aesthetic — within conditions of severe constraint. These lives are not heroic resistance narratives but experiments in living otherwise, conducted at the scale of the ordinary.
-
-- [Frantz Fanon](../../../../../services/information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/frantz-fanon.md) — parallel analysis of how colonial structures constitute subjects
-- [Fred Moten](../../../../../services/information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/fred-moten.md) — fellow theorist of Black radical tradition and fugitivity
-- [Sylvia Wynter](../../../../../services/information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/sylvia-wynter.md) — parallel critique of who counts as human
-- [Hortense Spillers](hortense-spillers.md) — foundational theorist of flesh and captive body
-
-<!-- source: archive/library/critical-theory/theories/feminism/theories/black-feminism/figures/saidiya-hartman.md -->
-
----
-title: "Saidiya Hartman"
-component-of: black-feminism
-description: "American literary scholar and historian (b. 1961). Theorist of the afterlife of slavery, critical fabulation, and the wayward; one of the central methodological voices for both contemporary Black feminism and the Black radical tradition."
----

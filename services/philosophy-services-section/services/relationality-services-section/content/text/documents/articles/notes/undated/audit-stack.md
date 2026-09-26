@@ -16,6 +16,11 @@ tags:
   - audit
   - traceability
   - governance
+date-created: "2026-03-04T00:00:00"
+depends_on:
+  - theorem/internal/introspection-stack
+  - theorem/internal/relational-storage
+  - theorem/internal/distribution-stack
 ---
 
 # Audit Structure
@@ -54,29 +59,6 @@ Given any observable, the audit structure allows us to construct a report
 linking it to the exact recognitions, contexts, and dataflow paths involved.
 This provides the mathematical backbone for audit and governance features in
 the relational computer.
-
-
----
-
-<!-- source: archive/triage/relationality/domains/relationality-slop-2025-04/domains/internal/audit-stack.md -->
-
-## Imported source: archive/triage/relationality/domains/relationality-slop-2025-04/domains/internal/audit-stack.md
-
----
-title: Audit Stack
-aliases:
-  - Audit Stack
-  - audit stack
-date-created: "2026-03-04T00:00:00"
-tags:
-  - audit
-  - traceability
-  - governance
-depends_on:
-  - theorem/internal/introspection-stack
-  - theorem/internal/relational-storage
-  - theorem/internal/distribution-stack
----
 
 # Theorem (Audit Stack)
 

@@ -80,8 +80,6 @@ relational computer.
 - Audit recognitions describing policy decisions and schema versions.
 - Measurement recognitions (e.g., acceptance rates) for the measurement fabric.
 
-## Earlier material
-
 Before data can enter the relational calculus, it must be presented as
 observations within recognized contexts and immediately satisfy the earned
 equivalences.  This theorem summarises the necessary acts.

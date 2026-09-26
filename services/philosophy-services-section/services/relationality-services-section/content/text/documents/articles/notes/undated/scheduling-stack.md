@@ -17,6 +17,12 @@ tags:
   - scheduling
   - execution
   - trace
+date-created: "2026-03-04T00:00:00"
+depends_on:
+  - theorem/internal/trace-infrastructure
+  - theorem/internal/evaluation-engine
+  - theorem/internal/distribution-stack
+  - theorem/internal/module-wiring
 ---
 
 # Scheduling Structure
@@ -50,30 +56,6 @@ set of tasks derived from the earned acts, executing them in any order
 consistent with `Precedes` yields the same observable result, subject to the
 commutation laws already proven. This scheduling structure underpins runtime
 queues and task dispatchers in the relational computer.
-
-
----
-
-<!-- source: archive/triage/relationality/domains/relationality-slop-2025-04/domains/internal/scheduling-stack.md -->
-
-## Imported source: archive/triage/relationality/domains/relationality-slop-2025-04/domains/internal/scheduling-stack.md
-
----
-title: Scheduling Stack
-aliases:
-  - Scheduling Stack
-  - scheduling stack
-date-created: "2026-03-04T00:00:00"
-tags:
-  - scheduling
-  - execution
-  - trace
-depends_on:
-  - theorem/internal/trace-infrastructure
-  - theorem/internal/evaluation-engine
-  - theorem/internal/distribution-stack
-  - theorem/internal/module-wiring
----
 
 # Theorem (Scheduling Stack)
 
