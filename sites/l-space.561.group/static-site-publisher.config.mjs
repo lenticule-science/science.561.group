@@ -11,6 +11,7 @@
 // author may write. Nothing here is code that belongs to L-Space; it is what L-Space says about
 // itself.
 
+import { timingSafeEqual } from 'node:crypto';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { applyMigrations } from '@red-cup-engineering/cloudflare-d1-service/migrations';
@@ -203,6 +204,25 @@ export async function applications(context, environment = process.env) {
 }
 
 /**
+ * The platforms whose territory tiles with the garden's, by the credential each presents:
+ * `LSPACE_GATEWAY_TOKENS` lists `name=token` pairs (ops.561.group=...). A gateway carries the
+ * garden to everyone its own admission admits, so its calls read the garden as an admitted
+ * reader; writing stays with the garden's authors.
+ */
+export function gatewayPrincipal(token, environment = process.env) {
+  const presented = Buffer.from(String(token));
+  for (const entry of (setting('LSPACE_GATEWAY_TOKENS', environment) ?? '').split(',')) {
+    const at = entry.indexOf('=');
+    if (at <= 0) continue;
+    const name = entry.slice(0, at).trim(), secret = Buffer.from(entry.slice(at + 1).trim());
+    if (secret.length > 0 && secret.length === presented.length && timingSafeEqual(secret, presented)) {
+      return { subject: `gateway:${name}`, name, author: false, gateway: true };
+    }
+  }
+  return undefined;
+}
+
+/**
  * The garden's MCP server and the authorization server that admits assistants to it. A token is
  * issued only to someone the admission service admits, is bound to this garden's /mcp, and
  * carries whether its holder is the author; only the author sees the write tools.
@@ -232,7 +252,7 @@ export function mcpApplications({ admission, environment = process.env, archive 
     prompts: gardenPrompts(),
     realm: 'l-space.561.group',
     resourceMetadataUrl: `${base}/.well-known/oauth-protected-resource/mcp`,
-    verifyToken: (token) => authorization.verifyToken(token, { resource }),
+    verifyToken: async (token) => gatewayPrincipal(token, environment) ?? authorization.verifyToken(token, { resource }),
     bind: ({ principal }) => ({ archive, canWrite: principal?.principal?.author === true }),
   });
   return [authorization.app, { resources: [mcp] }];
