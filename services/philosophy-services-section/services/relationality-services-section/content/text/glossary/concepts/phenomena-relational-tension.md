@@ -16,7 +16,7 @@ Relational tension is introduced in [Phase 6 (multirelational coherence)](../../
 
 The derivation does not treat relational tension as a mere byproduct of co-presence. It is the structure of Phase 6 — the minimal structural configuration that formalizes and stabilizes the interplay between reflexive relational units, ensuring both their distinctness and their mutual relational [coherence](phenomena-coherence.md).
 
-As structure, relational tension supports the composition of multiple units into ordered configurations. It is the relational binding through which distinct units assemble into broader architectures. The [cohesive chain](../terms/cohesive-chain.md) and [stratification](../../triage/relationality-2/ai-generated-relationality/relationality-slop-2026-03-04/terms/stratify.md) earned in [Movement IV](movements-geometric-cohesion.md) formalize how these architectures translate between local and global perspectives.
+As structure, relational tension supports the composition of multiple units into ordered configurations. It is the relational binding through which distinct units assemble into broader architectures. The [cohesive chain](../terms/cohesion.md) and [stratification](../../triage/relationality-2/ai-generated-relationality/relationality-slop-2026-03-04/terms/stratify.md) earned in [Movement IV](movements-geometric-cohesion.md) formalize how these architectures translate between local and global perspectives.
 
 ## Operation types
 
@@ -30,7 +30,7 @@ These operation types remain invariant even as structures deepen reflexively. Th
 
 ## Derivational context
 
-Relational tension is central to [Movement IV: Geometric Cohesion](movements-geometric-cohesion.md). It is the dynamic that makes the architecture of local-to-global translation necessary: because units are held in tension, there must be a way to relate what happens locally (between specific units) to what holds globally (across the entire field). The [cohesive chain](../terms/cohesive-chain.md) and [stratification](../../triage/relationality-2/ai-generated-relationality/relationality-slop-2026-03-04/terms/stratify.md) are the structures that manage this translation.
+Relational tension is central to [Movement IV: Geometric Cohesion](movements-geometric-cohesion.md). It is the dynamic that makes the architecture of local-to-global translation necessary: because units are held in tension, there must be a way to relate what happens locally (between specific units) to what holds globally (across the entire field). The [cohesive chain](../terms/cohesion.md) and [stratification](../../triage/relationality-2/ai-generated-relationality/relationality-slop-2026-03-04/terms/stratify.md) are the structures that manage this translation.
 
 ## Related
 

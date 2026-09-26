@@ -44,7 +44,7 @@ The concept operates at every scale:
 
 ## Derivational context
 
-Coherence is required by the very first act and drives the entire [derivation](../../concepts/the-derivation.md). It first appears in [Movement I: Logical Origination](../../../../../../content/text/glossary/concepts/logical-origination.md) when the claim that something exists requires including and excluding to stabilize consistently. Each subsequent movement establishes coherence at a new scale — relational, structural, dynamic, geometric, physical — and each achievement of coherence leaves something undetermined that [incites](incitement.md) the next movement.
+Coherence is required by the very first act and drives the entire [derivation](../../concepts/the-derivation.md). It first appears in [Movement I: Logical Origination](./movements-logical-origination.md) when the claim that something exists requires including and excluding to stabilize consistently. Each subsequent movement establishes coherence at a new scale — relational, structural, dynamic, geometric, physical — and each achievement of coherence leaves something undetermined that [incites](incitement.md) the next movement.
 
 ## Related
 

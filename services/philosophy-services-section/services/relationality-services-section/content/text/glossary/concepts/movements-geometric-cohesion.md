@@ -66,7 +66,7 @@ The result of these dual necessities is an architecture for translating between 
 
 [Global](../../triage/relationality-2/ai-generated-relationality/relationality-slop-2026-03-04/terms/global.md) extracts what holds everywhere — the content that is invariant across all local perspectives.
 
-These four operations form the [cohesive chain](../terms/cohesive-chain.md): a sequence of adjunctions that governs the translation between immediate and extended perspectives. The chain satisfies compatibility conditions ensuring that the operations commute over finite combinations, and flow commutes with each operation — directed processes traverse the cohesive field without breaking its symmetries.
+These four operations form the [cohesive chain](../terms/cohesion.md): a sequence of adjunctions that governs the translation between immediate and extended perspectives. The chain satisfies compatibility conditions ensuring that the operations commute over finite combinations, and flow commutes with each operation — directed processes traverse the cohesive field without breaking its symmetries.
 
 ### Stratification and ambidexterity
 
@@ -82,7 +82,7 @@ Determining inter-unit relating, field-integrating, mutual relationality, field 
 
 ## What arises
 
-**Terms:** [Shape](../../../../services/agency-services-section/content/text/documents/articles/research/predicated-agentic-orchestration-platform/scope/shape/shape.md), [Discrete](../../triage/relationality-2/ai-generated-relationality/relationality-slop-2026-03-04/terms/discrete.md), [Codiscrete](../../triage/relationality-2/ai-generated-relationality/relationality-slop-2026-03-04/terms/codiscrete.md), [Global](../../triage/relationality-2/ai-generated-relationality/relationality-slop-2026-03-04/terms/global.md), [Cohesive-Chain](../terms/cohesive-chain.md), [Stratify](../../triage/relationality-2/ai-generated-relationality/relationality-slop-2026-03-04/terms/stratify.md), [Constructible](../../triage/relationality-2/ai-generated-relationality/relationality-slop-2026-03-04/terms/constructible.md), [Ambidextrous](../../triage/relationality-2/ai-generated-relationality/relationality-slop-2026-03-04/terms/ambidextrous.md)
+**Terms:** [Shape](../../../../services/agency-services-section/content/text/documents/articles/research/predicated-agentic-orchestration-platform/scope/shape/shape.md), [Discrete](../../triage/relationality-2/ai-generated-relationality/relationality-slop-2026-03-04/terms/discrete.md), [Codiscrete](../../triage/relationality-2/ai-generated-relationality/relationality-slop-2026-03-04/terms/codiscrete.md), [Global](../../triage/relationality-2/ai-generated-relationality/relationality-slop-2026-03-04/terms/global.md), [Cohesive-Chain](../terms/cohesion.md), [Stratify](../../triage/relationality-2/ai-generated-relationality/relationality-slop-2026-03-04/terms/stratify.md), [Constructible](../../triage/relationality-2/ai-generated-relationality/relationality-slop-2026-03-04/terms/constructible.md), [Ambidextrous](../../triage/relationality-2/ai-generated-relationality/relationality-slop-2026-03-04/terms/ambidextrous.md)
 
 **Phenomena:** [Residuation](../../../../../../content/text/glossary/concepts/residuation.md) — the adjunction connecting dual operations.
 

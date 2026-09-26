@@ -111,4 +111,4 @@ This is the highest export ratio of any stratum: 75% of its acts are exports. Co
 
 ## Connection to the derivation
 
-Context corresponds to the derivation's transition from local to global structure — the beginning of [Movement IV](../../../../../../../../content/text/glossary/concepts/geometric-cohesion.md). By threading contexts through the flow-closure architecture, this stratum establishes that environments of meaning are not static frames but participants in relational dynamics.
+Context corresponds to the derivation's transition from local to global structure — the beginning of [Movement IV](../../../../glossary/concepts/movements-geometric-cohesion.md). By threading contexts through the flow-closure architecture, this stratum establishes that environments of meaning are not static frames but participants in relational dynamics.

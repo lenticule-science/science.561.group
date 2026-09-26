@@ -19,7 +19,7 @@ Differentiation is the act. Its products are [recognitions](../../phenomena/reco
 
 ## Derivational context
 
-Differentiation is the starting act of the entire [derivation](../../concepts/the-derivation.md), opening [Movement I: Logical Origination](../../../../../../content/text/glossary/concepts/logical-origination.md). To claim that something exists is to distinguish it from what it is not — and this claim incites the dynamics of including and excluding that generate all subsequent relational structure. Differentiation recurs at higher levels: external differentiation (distinguishing one relational unit from another) drives [Movement IV](../../../../../../content/text/glossary/concepts/geometric-cohesion.md), and meta-boundary excluding (distinguishing the relational field from what lies beyond it) drives [Movement V](../../../../../../content/text/glossary/concepts/emergent-containment.md).
+Differentiation is the starting act of the entire [derivation](../../concepts/the-derivation.md), opening [Movement I: Logical Origination](./movements-logical-origination.md). To claim that something exists is to distinguish it from what it is not — and this claim incites the dynamics of including and excluding that generate all subsequent relational structure. Differentiation recurs at higher levels: external differentiation (distinguishing one relational unit from another) drives [Movement IV](./movements-geometric-cohesion.md), and meta-boundary excluding (distinguishing the relational field from what lies beyond it) drives [Movement V](./movements-emergent-containment.md).
 
 ## Related
 

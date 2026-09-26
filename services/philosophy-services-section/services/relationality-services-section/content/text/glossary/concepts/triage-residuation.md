@@ -21,7 +21,7 @@ The phenomenon matters because it means that dual aspects of relational structur
 
 ## Derivational context
 
-Residuation first appears implicitly in [Movement I](../../../../../../content/text/glossary/concepts/logical-origination.md) when the operations of combining and conditional relating (Together and Implies) are earned as adjoint partners. It becomes the primary connective structure in [Movement IV: Geometric Cohesion](../../../../../../content/text/glossary/concepts/geometric-cohesion.md), where the interplay between doing-then-stabilizing and stabilizing-then-doing governs how local and global structure translate into each other. At the physical level ([Movement V](../../../../../../content/text/glossary/concepts/emergent-containment.md)), residuation governs the commutation of evolution and measurement.
+Residuation first appears implicitly in [Movement I](./movements-logical-origination.md) when the operations of combining and conditional relating (Together and Implies) are earned as adjoint partners. It becomes the primary connective structure in [Movement IV: Geometric Cohesion](./movements-geometric-cohesion.md), where the interplay between doing-then-stabilizing and stabilizing-then-doing governs how local and global structure translate into each other. At the physical level ([Movement V](./movements-emergent-containment.md)), residuation governs the commutation of evolution and measurement.
 
 ## Related
 

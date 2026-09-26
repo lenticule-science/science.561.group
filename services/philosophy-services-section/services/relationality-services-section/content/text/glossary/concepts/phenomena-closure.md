@@ -19,7 +19,7 @@ The [Close](../../../../../../../information-science-services-section/services/m
 
 ## Derivational context
 
-Closure is central to [Movement II: Structural Stabilization](../../../../../../content/text/glossary/concepts/structural-stabilization.md). It arises when the self-sustaining relational unit requires a structure that formalizes the self-maintenance of relation through relating. The derivation's third phase produces relating-relation, relational self-coherence, and the structure of relational closure. Closure's dual — interior — and their compatibility ([balance](phenomena-balance.md)) are earned in the same movement.
+Closure is central to [Movement II: Structural Stabilization](./movements-structural-stabilization.md). It arises when the self-sustaining relational unit requires a structure that formalizes the self-maintenance of relation through relating. The derivation's third phase produces relating-relation, relational self-coherence, and the structure of relational closure. Closure's dual — interior — and their compatibility ([balance](phenomena-balance.md)) are earned in the same movement.
 
 ## Related
 

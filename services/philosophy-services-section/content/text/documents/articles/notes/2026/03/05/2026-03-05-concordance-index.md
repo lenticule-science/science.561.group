@@ -47,7 +47,7 @@ These documents articulate the framework — not just what concepts exist but ho
 - [reflex.md](../../../../../../../../services/relationality-services-section/content/text/glossary/terms/relationlessness.md) — the primitive act (distinct from its product)
 - [relation.md](../../../../research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-05/relation.md) — the full field / Top (complement of Relationlessness)
 - [witness.md](../../../../research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-05/witness.md) — the first observation (draft 9's opening sequence)
-- [minimal-cohesion.md](../../../../../../../../services/relationality-services-section/content/text/glossary/terms/minimal-cohesion.md) — the elementary coherent unit (HIT in Cubical Agda, draft 7)
+- [minimal-cohesion.md](../../../../../../../../services/relationality-services-section/content/text/glossary/terms/cohesion.md) — the elementary coherent unit (HIT in Cubical Agda, draft 7)
 
 ### Early Movement I (phenomenological layer)
 
@@ -79,18 +79,18 @@ These documents articulate the framework — not just what concepts exist but ho
 
 - [flow.md](../../../../research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-05/flow.md) — directed comonadic dynamics
 - [dynamic-residuation.md](../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/nucleus.md) — Flow-Indexed Implication (treatise/drafts 4, 10)
-- [discipline-regime-filter-profile.md](../../../../../../../../services/relationality-services-section/content/text/glossary/terms/discipline-regime-filter-profile.md) — constraint hierarchy (treatise/draft 4)
+- [discipline-regime-filter-profile.md](../../../../../../../../services/relationality-services-section/content/text/glossary/terms/profile.md) — constraint hierarchy (treatise/draft 4)
 
 ### Geometry (Movement IV)
 
-- [cohesive-chain.md](../../../../../../../../services/relationality-services-section/content/text/glossary/terms/cohesive-chain.md) — Shape ⊣ Flat ⊣ Sharp ⊣ Crisp
+- [cohesive-chain.md](../../../../../../../../services/relationality-services-section/content/text/glossary/terms/cohesion.md) — Shape ⊣ Flat ⊣ Sharp ⊣ Crisp
 - [ritm.md](../../../../../../../../services/relationality-services-section/content/text/documents/articles/notes/undated/ritm.md) — RITM: the adjoint quadruple encoding the framework as a single geometric structure
 - [stratifying.md](../../../../../../../../services/relationality-services-section/content/text/documents/articles/notes/undated/stratifying.md) — directed assembly via forward/backward propagation; Constructible condition
 
 ### Physics (Movement V)
 
-- [states-observables.md](../../../../../../../../services/relationality-services-section/content/text/glossary/terms/states-observables.md) — physical reading of relation
-- [conserving.md](../../../../../../glossary/terms/conserving.md) — coherence is redistributed, not created or destroyed; Noether correspondence
+- [states-observables.md](../../../../../../../../services/relationality-services-section/content/text/glossary/terms/relational-physics.md) — physical reading of relation
+- [conserving.md](../../../../../../../../services/relationality-services-section/content/text/glossary/terms/relational-physics.md) — coherence is redistributed, not created or destroyed; Noether correspondence
 - [stable-envelope.md](../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/nucleus.md) — the bandwidth of stable variation: Env_F(a) = □F(a) ∧ ◇F(a)
 
 ### Cross-cutting (present at every level)

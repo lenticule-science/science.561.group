@@ -66,4 +66,4 @@ The formal structure of flow corresponds to a lax-idempotent monad (or KZ monad)
 
 All motion so far occurs within a single relational field. But being is not uniform: relations cluster into local regions and also extend across them. The reflexive relational unit must be differentiated not only from non-relation but from other distinct reflexive relational units within the relational field. The architecture that connects local behavior to global structure has not yet been derived.
 
-See [Movement IV: Geometric Cohesion](../../../../../../content/text/glossary/concepts/geometric-cohesion.md).
+See [Movement IV: Geometric Cohesion](./movements-geometric-cohesion.md).

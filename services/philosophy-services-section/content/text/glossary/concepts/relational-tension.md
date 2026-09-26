@@ -15,7 +15,7 @@ Relational tension is introduced in [Phase 6 (multirelational coherence)](../../
 
 The derivation does not treat relational tension as a mere byproduct of co-presence. It is the structure of Phase 6 — the minimal structural configuration that formalizes and stabilizes the interplay between reflexive relational units, ensuring both their distinctness and their mutual relational [coherence](coherence.md).
 
-As structure, relational tension supports the composition of multiple units into ordered configurations. It is the relational binding through which distinct units assemble into broader architectures. The [cohesive chain](../../../../services/relationality-services-section/content/text/glossary/terms/cohesive-chain.md) and [stratification](../../documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-04/domains/terms/stratify.md) earned in [Movement IV](geometric-cohesion.md) formalize how these architectures translate between local and global perspectives.
+As structure, relational tension supports the composition of multiple units into ordered configurations. It is the relational binding through which distinct units assemble into broader architectures. The [cohesive chain](../../../../services/relationality-services-section/content/text/glossary/terms/cohesion.md) and [stratification](../../documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-04/domains/terms/stratify.md) earned in [Movement IV](../../../../services/relationality-services-section/content/text/glossary/concepts/movements-geometric-cohesion.md) formalize how these architectures translate between local and global perspectives.
 
 ## Operation types
 
@@ -29,12 +29,12 @@ These operation types remain invariant even as structures deepen reflexively. Th
 
 ## Derivational context
 
-Relational tension is central to [Movement IV: Geometric Cohesion](geometric-cohesion.md). It is the dynamic that makes the architecture of local-to-global translation necessary: because units are held in tension, there must be a way to relate what happens locally (between specific units) to what holds globally (across the entire field). The [cohesive chain](../../../../services/relationality-services-section/content/text/glossary/terms/cohesive-chain.md) and [stratification](../../documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-04/domains/terms/stratify.md) are the structures that manage this translation.
+Relational tension is central to [Movement IV: Geometric Cohesion](../../../../services/relationality-services-section/content/text/glossary/concepts/movements-geometric-cohesion.md). It is the dynamic that makes the architecture of local-to-global translation necessary: because units are held in tension, there must be a way to relate what happens locally (between specific units) to what holds globally (across the entire field). The [cohesive chain](../../../../services/relationality-services-section/content/text/glossary/terms/cohesion.md) and [stratification](../../documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-04/domains/terms/stratify.md) are the structures that manage this translation.
 
 ## Related
 
 - [Co-presence](co-presence.md) — the condition that enables relational tension
-- [Movement IV: Geometric Cohesion](geometric-cohesion.md) — where relational tension drives the derivation of cohesive architecture
+- [Movement IV: Geometric Cohesion](../../../../services/relationality-services-section/content/text/glossary/concepts/movements-geometric-cohesion.md) — where relational tension drives the derivation of cohesive architecture
 - [The Derivation](../../documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-04/domains/concepts/the-derivation.md) — where relational tension arises (Phase 6)
 - [Coherence](coherence.md) — the broader phenomenon of holding together
 - [Balance](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) — the compatibility of dual motions, a related but distinct phenomenon from Movement II

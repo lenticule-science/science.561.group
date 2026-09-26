@@ -17,7 +17,7 @@ The condition [Stabilizes-Between](../../terms/stabilizes-between.md) captures w
 
 ## Derivational context
 
-Stabilization is the central process of [Movement II: Structural Stabilization](../../../../../../content/text/glossary/concepts/structural-stabilization.md), where the relational unit must sustain its own coherence through the dual motions of closure and interior. But it recurs at every level: each of the derivation's nine phases ends with a stabilization, and the settled configuration becomes the ground from which the next phase's [incitement](incitement.md) arises.
+Stabilization is the central process of [Movement II: Structural Stabilization](./movements-structural-stabilization.md), where the relational unit must sustain its own coherence through the dual motions of closure and interior. But it recurs at every level: each of the derivation's nine phases ends with a stabilization, and the settled configuration becomes the ground from which the next phase's [incitement](incitement.md) arises.
 
 ## Related
 

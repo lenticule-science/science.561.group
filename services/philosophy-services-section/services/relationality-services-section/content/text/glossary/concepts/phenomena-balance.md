@@ -17,7 +17,7 @@ Balance recurs at the meta level. [MetaBalance](../../triage/relationality-2/ai-
 
 ## Derivational context
 
-Balance arises in [Movement II: Structural Stabilization](../../../../../../content/text/glossary/concepts/structural-stabilization.md) when inward consolidation (closure) and outward release (interior) must cohere. The self-sustaining relational unit breathes through both motions, and balance is the condition that ensures the breathing is consistent. This compatibility is not assumed but earned from the requirement that relating and its boundary-excluding dual stabilize jointly.
+Balance arises in [Movement II: Structural Stabilization](./movements-structural-stabilization.md) when inward consolidation (closure) and outward release (interior) must cohere. The self-sustaining relational unit breathes through both motions, and balance is the condition that ensures the breathing is consistent. This compatibility is not assumed but earned from the requirement that relating and its boundary-excluding dual stabilize jointly.
 
 ## Related
 

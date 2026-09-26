@@ -12,7 +12,7 @@ This law is a relational conservation law. It requires no metric, no energy, and
 
 ## Derivational context
 
-This law arises in [Movement V: Emergent Containment](emergent-containment.md) when the relational structures receive their physical reading. Every symmetry of the stable core preserves what is stable under [flow](flow.md). Conservation is not a law imposed on nature; it is the physical expression of the logical consistency earned throughout the derivation. Every relational invariant — every balanced relationship between dual operations, every idempotent modality, every commutation between flow and the cohesive chain — corresponds to a measurable quantity that persists through change.
+This law arises in [Movement V: Emergent Containment](../../../../services/relationality-services-section/content/text/glossary/concepts/movements-emergent-containment.md) when the relational structures receive their physical reading. Every symmetry of the stable core preserves what is stable under [flow](flow.md). Conservation is not a law imposed on nature; it is the physical expression of the logical consistency earned throughout the derivation. Every relational invariant — every balanced relationship between dual operations, every idempotent modality, every commutation between flow and the cohesive chain — corresponds to a measurable quantity that persists through change.
 
 ## Mathematical correspondence
 

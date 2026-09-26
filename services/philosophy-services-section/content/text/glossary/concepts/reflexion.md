@@ -18,7 +18,7 @@ Reflexion is what makes the relational system self-constituting rather than exte
 
 ## Derivational context
 
-Reflexion arises at the transition between [Movement II](structural-stabilization.md) and [Movement III](../../../../services/relationality-services-section/content/text/glossary/concepts/directed-dynamics.md). The relational boundary — earned in Movement II's fourth phase — must itself be related. This necessity drives the derivation's fifth phase (reflexive relational coherence), producing reflexive relating, reflexive relation, and reflexive form. The boundary folds into the system it bounds, and from this folding arises directed [flow](flow.md).
+Reflexion arises at the transition between [Movement II](../../../../services/relationality-services-section/content/text/glossary/concepts/movements-structural-stabilization.md) and [Movement III](../../../../services/relationality-services-section/content/text/glossary/concepts/directed-dynamics.md). The relational boundary — earned in Movement II's fourth phase — must itself be related. This necessity drives the derivation's fifth phase (reflexive relational coherence), producing reflexive relating, reflexive relation, and reflexive form. The boundary folds into the system it bounds, and from this folding arises directed [flow](flow.md).
 
 ## Related
 

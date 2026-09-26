@@ -13,7 +13,7 @@ In formal terms: Open(a ∧ Close(b)) = Open(a) ∧ Close(b). Applying interior 
 
 ## Derivational context
 
-This law arises in [Movement II: Structural Stabilization](../../../../../../content/text/glossary/concepts/structural-stabilization.md) as the [balance](phenomena-balance.md) condition — the requirement that the dual motions of inward consolidation and outward release cohere. It is not assumed but earned from the requirement that self-sustaining relational structure must both consolidate and release without contradiction. Without this compatibility, the relational structure would tear itself apart: closure and interior would produce incompatible results, and the metabolic rhythm of being — the alternation between securing form and preserving freedom — would be incoherent.
+This law arises in [Movement II: Structural Stabilization](./movements-structural-stabilization.md) as the [balance](phenomena-balance.md) condition — the requirement that the dual motions of inward consolidation and outward release cohere. It is not assumed but earned from the requirement that self-sustaining relational structure must both consolidate and release without contradiction. Without this compatibility, the relational structure would tear itself apart: closure and interior would produce incompatible results, and the metabolic rhythm of being — the alternation between securing form and preserving freedom — would be incoherent.
 
 ## Mathematical correspondence
 

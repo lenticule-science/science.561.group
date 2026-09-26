@@ -89,6 +89,6 @@ The dead ends fall into three groups:
 
 ## Connection to the derivation
 
-The Profile stratum enacts [Movement IV](../../../../glossary/concepts/geometric-cohesion.md) — geometric cohesion. Multiple relational units coexist, each with its own internal dynamics and structure, connected by the shared geometric architecture. The tower construction corresponds to the philosophical claim that local relational perspectives are complete — what is true locally is true in its own right, not merely a shadow of a global truth.
+The Profile stratum enacts [Movement IV](../../../../../../services/relationality-services-section/content/text/glossary/concepts/movements-geometric-cohesion.md) — geometric cohesion. Multiple relational units coexist, each with its own internal dynamics and structure, connected by the shared geometric architecture. The tower construction corresponds to the philosophical claim that local relational perspectives are complete — what is true locally is true in its own right, not merely a shadow of a global truth.
 
 The [Physics](strata-physics.md) and [Dynamics](../../../../../../services/relationality-services-section/content/text/documents/articles/notes/2026/02/28/2026-02-28-dynamics.md) strata consume Profile's exports and develop the physical conclusions of the derivation — states, evolution, measurement, invariants, mixing, and ergodicity.

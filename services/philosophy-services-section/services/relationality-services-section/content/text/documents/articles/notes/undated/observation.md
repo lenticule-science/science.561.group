@@ -272,7 +272,7 @@ Observation produces equivalence structures. When two recognitions are observed 
 
 ## Derivational context
 
-Observation arises in [Movement IV: Geometric Cohesion](../../../../../../../../content/text/glossary/concepts/geometric-cohesion.md) when the cohesive architecture — the chain connecting local and global perspectives — makes it possible to extract determinate content from a relational configuration. The translation between immediate and extended perspectives (through [Shape](../../../../../../services/agency-services-section/content/text/documents/articles/research/predicated-agentic-orchestration-platform/scope/shape/shape.md), [Discrete](../../../../terms/discrete.md), [Codiscrete](../../../../terms/codiscrete.md), [Global](../../../../terms/global.md)) provides the framework within which witnessing becomes a coherent act.
+Observation arises in [Movement IV: Geometric Cohesion](../../../../glossary/concepts/movements-geometric-cohesion.md) when the cohesive architecture — the chain connecting local and global perspectives — makes it possible to extract determinate content from a relational configuration. The translation between immediate and extended perspectives (through [Shape](../../../../../../services/agency-services-section/content/text/documents/articles/research/predicated-agentic-orchestration-platform/scope/shape/shape.md), [Discrete](../../../../terms/discrete.md), [Codiscrete](../../../../terms/codiscrete.md), [Global](../../../../terms/global.md)) provides the framework within which witnessing becomes a coherent act.
 
 ## Related
 

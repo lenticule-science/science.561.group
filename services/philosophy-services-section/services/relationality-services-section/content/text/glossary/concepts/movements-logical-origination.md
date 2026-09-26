@@ -69,4 +69,4 @@ The structure earned here corresponds to what mathematicians call a complete [He
 
 Relational form has been earned, but what coheres relational form itself remains undetermined. The interplay between relating and relation must be self-sustaining — and the dynamics of that self-sustenance have not yet been derived.
 
-See [Movement II: Structural Stabilization](../../../../../../content/text/glossary/concepts/structural-stabilization.md).
+See [Movement II: Structural Stabilization](./movements-structural-stabilization.md).

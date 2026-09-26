@@ -17,7 +17,7 @@ Iteration at the meta level produces [MetaIterate](../../triage/relationality-2/
 
 ## Derivational context
 
-Iteration arises in [Movement I: Logical Origination](movements-logical-origination.md) when recognitions relate to themselves. The primitive Reflex — distinction turning back on its own products — is applied repeatedly, producing deeper relational structure that converges toward fixed points. This convergent self-application is what makes [closure](phenomena-closure.md) possible and bridges Movement I into [Movement II: Structural Stabilization](../../../../../../content/text/glossary/concepts/structural-stabilization.md).
+Iteration arises in [Movement I: Logical Origination](movements-logical-origination.md) when recognitions relate to themselves. The primitive Reflex — distinction turning back on its own products — is applied repeatedly, producing deeper relational structure that converges toward fixed points. This convergent self-application is what makes [closure](phenomena-closure.md) possible and bridges Movement I into [Movement II: Structural Stabilization](./movements-structural-stabilization.md).
 
 ## Related
 

@@ -13,7 +13,7 @@ This law expresses [ambidexterity](../../terms/ambidextrous.md): the deepest sym
 
 ## Derivational context
 
-This law arises in [Movement IV: Geometric Cohesion](../../../../../../content/text/glossary/concepts/geometric-cohesion.md). In a stratified cohesive field, local recognitions build global structures through assembly, while global recognitions analyze local structures through disassembly. Ordinarily, these two operations do not commute — the order of composing and decomposing can matter. Yet coherence demands that, under suitable conditions, the order does not alter the essential content. This coincidence is earned from the requirements of relational field coherence: all participating units must be coherently engaged, and the integrated field must be closed under the operations of local construction and global analysis.
+This law arises in [Movement IV: Geometric Cohesion](./movements-geometric-cohesion.md). In a stratified cohesive field, local recognitions build global structures through assembly, while global recognitions analyze local structures through disassembly. Ordinarily, these two operations do not commute — the order of composing and decomposing can matter. Yet coherence demands that, under suitable conditions, the order does not alter the essential content. This coincidence is earned from the requirements of relational field coherence: all participating units must be coherently engaged, and the integrated field must be closed under the operations of local construction and global analysis.
 
 ## Mathematical correspondence
 

@@ -29,7 +29,7 @@ Formally, incitement corresponds to the gap between a current fixed point and th
 
 ## Derivational context
 
-Incitement is present at every transition in the [derivation](../../concepts/the-derivation.md). Each of the nine phases ends by identifying what remains undetermined — and that undetermined remainder incites the next phase. Each of the [five movements](../../movements/index.md) ends with a statement of what incites the next. Incitement is not specific to one movement; it is the engine that drives the derivation forward from [Movement I](../../../../../../content/text/glossary/concepts/logical-origination.md) through [Movement V](../../../../../../content/text/glossary/concepts/emergent-containment.md). The complementary phenomenon — [induction](induction.md) — becomes formally visible in [Movement III](directed-dynamics.md).
+Incitement is present at every transition in the [derivation](../../concepts/the-derivation.md). Each of the nine phases ends by identifying what remains undetermined — and that undetermined remainder incites the next phase. Each of the [five movements](../../movements/index.md) ends with a statement of what incites the next. Incitement is not specific to one movement; it is the engine that drives the derivation forward from [Movement I](./movements-logical-origination.md) through [Movement V](./movements-emergent-containment.md). The complementary phenomenon — [induction](induction.md) — becomes formally visible in [Movement III](directed-dynamics.md).
 
 ## Related
 
