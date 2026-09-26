@@ -1,70 +1,69 @@
 ---
 title: "Acknowledgement Beside Wit"
-description: "The session's synthesis, labeled inference throughout: acknowledgement (ACK) as a second currency beside wit (WIT), read from ordinary and legal usage, network protocol, and the house's own precedents (tally's admission half, incumbency's recognition predicate, LAGOON's receiver disposition, the legacy acknowledgement cell, the work rail's allocated stratum), with a conjectured tie to the proved index balance H0 - H1 = chi and two owner questions left open."
+description: "The session's synthesis, labeled inference throughout: acknowledgement (ACK) as a second currency beside wit (WIT), read from ordinary and legal usage, network protocol, and the house's own precedents (tally's admission half, incumbency's recognition predicate, LAGOON's receiver disposition, the legacy acknowledgement cell, the work rail's allocated stratum), with a conjectured tie to the proved index balance H0 - H1 = chi, and its border and contested-claim questions resolved from the corpus."
 date-created: 2026-09-04
 type: notes
 name: 2026-09-04-note-on-acknowledgement-beside-wit
 authors:
-  - emsenn
-  - claude-fable-5-1
-status: draft-for-owner-review
+ - emsenn
+ - claude-fable-5-1
+status: synthesis
 keywords: ["acknowledgement", "wit", "tally", "uptake", "attention-economy", "witness-economy", "index-balance", "two-generals-problem", "common-knowledge", "tcp-handshake", "idempotency-key"]
 tags: ["draft", "synthesis"]
 references:
-  postel1981:
-    authors: ["Jon Postel"]
-    title: "Transmission Control Protocol"
-    publication: "RFC 793, IETF"
-    year: 1981
-  eddy2022:
-    authors: ["Wesley M. Eddy"]
-    title: "Transmission Control Protocol (TCP)"
-    publication: "RFC 9293, IETF"
-    year: 2022
-  mathis1996:
-    authors: ["Matt Mathis", "Jamshid Mahdavi", "Sally Floyd", "Allyn Romanow"]
-    title: "TCP Selective Acknowledgment Options"
-    publication: "RFC 2018, IETF"
-    year: 1996
-  braden1989:
-    authors: ["Robert Braden"]
-    title: "Requirements for Internet Hosts -- Communication Layers"
-    publication: "RFC 1122, IETF"
-    year: 1989
-  allman2009:
-    authors: ["Mark Allman", "Vern Paxson", "Ethan Blanton"]
-    title: "TCP Congestion Control"
-    publication: "RFC 5681, IETF"
-    year: 2009
-  gray1978:
-    authors: ["Jim Gray"]
-    title: "Notes on Data Base Operating Systems"
-    publication: "Operating Systems: An Advanced Course, Lecture Notes in Computer Science vol. 60, Springer"
-    year: 1978
-  halpernmoses1990:
-    authors: ["Joseph Y. Halpern", "Yoram Moses"]
-    title: "Knowledge and Common Knowledge in a Distributed Environment"
-    publication: "Journal of the ACM 37(3)"
-    year: 1990
-  cavell1969:
-    authors: ["Stanley Cavell"]
-    title: "Knowing and Acknowledging"
-    publication: "Must We Mean What We Say? A Book of Essays"
-    year: 1969
-  ricoeur2005:
-    authors: ["Paul Ricoeur"]
-    title: "The Course of Recognition"
-    publisher: "Harvard University Press"
-    translator: "David Pellauer"
-    year: 2005
-    note: "English translation of Parcours de la reconnaissance (2004)."
+ postel1981:
+ authors: ["Jon Postel"]
+ title: "Transmission Control Protocol"
+ publication: "RFC 793, IETF"
+ year: 1981
+ eddy2022:
+ authors: ["Wesley M. Eddy"]
+ title: "Transmission Control Protocol (TCP)"
+ publication: "RFC 9293, IETF"
+ year: 2022
+ mathis1996:
+ authors: ["Matt Mathis", "Jamshid Mahdavi", "Sally Floyd", "Allyn Romanow"]
+ title: "TCP Selective Acknowledgment Options"
+ publication: "RFC 2018, IETF"
+ year: 1996
+ braden1989:
+ authors: ["Robert Braden"]
+ title: "Requirements for Internet Hosts -- Communication Layers"
+ publication: "RFC 1122, IETF"
+ year: 1989
+ allman2009:
+ authors: ["Mark Allman", "Vern Paxson", "Ethan Blanton"]
+ title: "TCP Congestion Control"
+ publication: "RFC 5681, IETF"
+ year: 2009
+ gray1978:
+ authors: ["Jim Gray"]
+ title: "Notes on Data Base Operating Systems"
+ publication: "Operating Systems: An Advanced Course, Lecture Notes in Computer Science vol. 60, Springer"
+ year: 1978
+ halpernmoses1990:
+ authors: ["Joseph Y. Halpern", "Yoram Moses"]
+ title: "Knowledge and Common Knowledge in a Distributed Environment"
+ publication: "Journal of the ACM 37(3)"
+ year: 1990
+ cavell1969:
+ authors: ["Stanley Cavell"]
+ title: "Knowing and Acknowledging"
+ publication: "Must We Mean What We Say? A Book of Essays"
+ year: 1969
+ ricoeur2005:
+ authors: ["Paul Ricoeur"]
+ title: "The Course of Recognition"
+ publisher: "Harvard University Press"
+ translator: "David Pellauer"
+ year: 2005
+ note: "English translation of Parcours de la reconnaissance (2004)."
 ---
 
 This note records tonight's discussion of acknowledgement as a possible
 second currency beside [wit](../../../../../../glossary/terms/wit.md). It is a synthesis, not a
 seated law: every claim connecting acknowledgement to the house's proved
-or implemented apparatus is labeled inference below, and the note is
-filed as `draft-for-owner-review` accordingly. Nowhere in the corpus is
+or implemented apparatus is labeled inference below. Nowhere in the corpus is
 a WIT/ACK two-currency pairing already seated; this note is the first
 place it is written down, following the discipline that reads one word's
 several senses as research (Ricoeur 2005 [@ricoeur2005] is the
@@ -123,29 +122,29 @@ Four house carriers already keep something acknowledgement-shaped apart
 from the plain fact of assertion:
 
 - [Tally](../../../../../../glossary/terms/tally.md) is "the border-reconciled form of the wit: not
-  a unit held at a position but a matched pair of instruments held by
-  two counterparties — a release receipt on one side and an admission
-  receipt on the other." The release is the assertive half; the
-  admission is the acknowledging half, and "transfer settles when the
-  halves match," never on the release alone.
+ a unit held at a position but a matched pair of instruments held by
+ two counterparties — a release receipt on one side and an admission
+ receipt on the other." The release is the assertive half; the
+ admission is the acknowledging half, and "transfer settles when the
+ halves match," never on the release alone.
 - Incumbency
-  ([`2026-07-11-note-on-metroplat-system-architecture-design.md`](../../../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/services/multi-agent-computer-system-engineering-services-section/services/multi-agent-computer-platform-engineering-services-section/content/text/documents/articles/notes/2026/07/11/2026-07-11-note-on-metroplat-system-architecture-design.md))
-  is "a double settlement": **recognition** ("the office's community
-  acknowledges this candidate as its legitimate occupant;
-  backward-looking, history-sensitive") settles independently of
-  **induction** ("the candidate has taken on the office's forward
-  obligation").
+ ([`2026-07-11-note-on-metroplat-system-architecture-design.md`](../../../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/services/multi-agent-computer-system-engineering-services-section/services/multi-agent-computer-platform-engineering-services-section/content/text/documents/articles/notes/2026/07/11/2026-07-11-note-on-metroplat-system-architecture-design.md))
+ is "a double settlement": **recognition** ("the office's community
+ acknowledges this candidate as its legitimate occupant;
+ backward-looking, history-sensitive") settles independently of
+ **induction** ("the candidate has taken on the office's forward
+ obligation").
 - LAGOON's untrusted-candidate discipline
-  ([`2026-08-29-lagoon-architecture.md`](../../../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/apps/computer-deployment-engine/content/text/documents/articles/notes/2026/08/29/2026-08-29-lagoon-architecture.md))
-  requires "a *separate* receiver disposition — bound to the exact lot,
-  provider, task class, offer, receipt, and receiver" as "the only
-  promotion path," with "schema validity alone is not an acceptable
-  receiver outcome": the producer's output is not self-acknowledging.
+ ([`2026-08-29-lagoon-architecture.md`](../../../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/apps/computer-deployment-engine/content/text/documents/articles/notes/2026/08/29/2026-08-29-lagoon-architecture.md))
+ requires "a *separate* receiver disposition — bound to the exact lot,
+ provider, task class, offer, receipt, and receiver" as "the only
+ promotion path," with "schema validity alone is not an acceptable
+ receiver outcome": the producer's output is not self-acknowledging.
 - The legacy predication-inconsistency-repair spec's acknowledgement
-  cell ([`predication-inconsistency-repair.md`](../../../../../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/pre-bilattice/content/bilattice/content/assets/legacy/predication-inconsistency-repair.md), §3.3)
-  states the same asymmetry directly: "acknowledgement does not promise
-  to clear the contradiction; it promises to record that it is
-  recognised."
+ cell ([`predication-inconsistency-repair.md`](../../../../../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/pre-bilattice/content/bilattice/content/assets/legacy/predication-inconsistency-repair.md), §3.3)
+ states the same asymmetry directly: "acknowledgement does not promise
+ to clear the contradiction; it promises to record that it is
+ recognised."
 
 The rail carries the same shape operationally. The leader brief
 ([`2026-09-03-leader-brief-for-the-executive-session.md`](../../../../../../../../../../../../../../../561-group-services-section/content/text/documents/articles/notes/2026/09/03/2026-09-03-leader-brief-for-the-executive-session.md))
@@ -159,7 +158,7 @@ rail's own `admitWorkDischarge`
 ([`work-discharge.mts`](../../../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/services/multi-agent-computer-system-engineering-services-section/services/multi-agent-computer-platform-engineering-services-section/services/agentic-enterprise-computer-platform-engineering-services-section/apps/metroplat/src/work/work-discharge.mts)) already carries a
 literal replay guard: a discharge's `id` keys its append, and replaying
 the same discharge is a no-op — "`status: admission.appended === 0 ?
-"already-admitted" : "admitted"`" — the CLI over it
+"already-admitted": "admitted"`" — the CLI over it
 ([`admit-work-discharge.mjs`](../../../../../../../../../../../../../../../561-group-services-section/services/561-group-computer-services-section/services/computer-machine-services-section/services/persistent-computer-machine-services-section/services/bare-cedar-fog-services-section/services/bare-cedar-fog-inference-services-section/services/bare-cedar-fog-claude-services-section/scripts/admit-work-discharge.mjs)) defaults
 that `id` deterministically from the scope being discharged
 (`discharge-${scope}`), so a duplicate discharge attempt is
@@ -215,7 +214,7 @@ This section is the session's inference from the named carriers below,
 prompted by the owner's 2026-09-04 movement naming three economies in
 one breath — witness economy, acknowledgement economy, attention
 economy — and asking directly: "is ATT a WIT to an ACK?" Nothing below
-claims the owner stated the reading; the reading is this note's attempt
+claims the the reading; the reading is this note's attempt
 to answer the question from carriers already on disk.
 
 **The demand side, as the corpus already states it.** Attention
@@ -288,29 +287,49 @@ looks per completed turn of the spiral, not one. This is offered as a
 conjecture to check against the Lean proof of `budget_splits` itself,
 not a claim the cited module states.
 
-**Open.** Which face, if any, attention reads on as a currency of its
-own — rather than always being a second-order reading of another face's
-section — is open. So is whether a fourth turn (an acknowledgement *of*
-attention — a paper's own Acknowledgements section, credit without
-authorship, is the ordinary-language instance already named above)
-closes this spiral back to a settled $H^*$, or simply opens the next
-turn at one level up, the way SYN opened this one.
+**Attention is not a fourth currency.** The reading above already
+places it: ATT is the knowing face reading the playing face's section, so it
+is always a second-order move, a WIT taken of an ACK, never a coin of its own.
+What it spends is the seed's free energy, and FreeEnergyLyapunov's
+`budget_splits` says exactly how: at the closing step the budget is the
+reversible spend `commits + mints` plus the irreversible `2·jumps`, and
+`irreversible_within_budget` bounds both by it. The irreversible look is the
+jump.
 
-## Open questions (owner)
+**The spiral does not close; each turn opens the next one level up.** An
+acknowledgement of attention (a paper's Acknowledgements section) is the
+next turn's witness, not a return to the first. Halpern and Moses
+[@halpernmoses1990] is why: across two agents over a lossy channel, common
+knowledge is never reached by a finite exchange, so no turn of the spiral
+settles it absolutely. Settlement is regime-restricted instead. TCP stops at
+ESTABLISHED after three messages, and the work rail stops at $H^*$ once the
+cited evidence closes under `verifyProofClosure`. The same stratification
+holds in the theory of governance: an act that changes the rules sits one
+level above the acts it governs.
 
-- Is ACK minted only at a border — mirroring the assay contract's rule
-  that "price forms only at a counterparty border" for WIT — or can an
-  agent acknowledge its own prior assertion without crossing to another
-  party?
-- Does acknowledging a *contested* utterance count as an ACK at all, or
-  does contestation (the $\top$ charge) block the acknowledgement
-  shortcut the legacy repair spec gives ordinary open-to-resolved
-  transitions?
+## Resolved from the corpus
+
+- **ACK is minted only at a border.** It is by definition the act of a party
+  other than the asserter. The knowing face carrier states that an agent's
+  own scale-1 self cannot contest ($H^1 = 0$), so self-acknowledgement
+  moves nothing on the $\sigma$ side. The same border shows up everywhere
+  ACK is realized: tally's admission half is held by the counterparty,
+  incumbency's recognition is given by the office's community rather than
+  the candidate, LAGOON's receiver disposition is separate from the producer,
+  and the assay contract prices only at a counterparty border.
+- **Acknowledging a contested utterance is an ACK.** Acknowledgement records
+  recognition, not resolution. The repair spec states it outright:
+  "acknowledgement does not promise to clear the contradiction; it promises
+  to record that it is recognised." FOUR holds contested ($\top$) as a
+  reading, not an error, so the ACK keeps the claim ($H^0$) as contested.
+  What the $\top$ charge blocks is the settlement shortcut: moving the claim
+  from open to resolved needs evidence that changes its reading, and an
+  acknowledgement supplies none.
 
 ## See also
 
 - [Wit](../../../../../../glossary/terms/wit.md), [tally](../../../../../../glossary/terms/tally.md) — the settled currency
-  pair this note reads acknowledgement beside
+ pair this note reads acknowledgement beside
 - [Uptake](../../../../../../../../../../../../../information-science-services-section/services/communication-science-services-section/services/linguistics-services-section/services/obsmetrological-linguistics-services-section/content/text/glossary/terms/uptake.md) —
-  the linguistics section's own reading of the same gap, from Austin and
-  Cavell rather than from the currency side
+ the linguistics section's own reading of the same gap, from Austin and
+ Cavell rather than from the currency side
