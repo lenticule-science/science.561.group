@@ -110,7 +110,7 @@ Physics is nearly terminal: only StabilizeInvariant feeds back into the [Profile
 
 **Evolve** `(FlowProfile, PhysicsState)` — Flow applied to states defines evolution: how the system changes over time. **Dead end**: evolution is the fundamental physical concept, but nothing further is built from it as a component. It is consumed by the [Dynamics](../2026/02/28/2026-02-28-dynamics.md) stratum (ProfileDynamics references FlowProfile, not Evolve directly).
 
-**Measure** `(NucleateProfile, PhysicsState)` — The profile [closure](../../../../phenomena/closure.md) ([Close](../../../../glossary/terms/close.md)) applied to states defines [measurement](../../../../../../../../content/text/glossary/concepts/measurement.md): what can be determined about a state. **Dead end**: measurement is the second fundamental physical concept. Like evolution, it is an endpoint.
+**Measure** `(NucleateProfile, PhysicsState)` — The profile [closure](../../../../phenomena/closure.md) ([Close](../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md)) applied to states defines [measurement](../../../../../../../../content/text/glossary/concepts/measurement.md): what can be determined about a state. **Dead end**: measurement is the second fundamental physical concept. Like evolution, it is an endpoint.
 
 ### Invariants and reachability (2 acts)
 

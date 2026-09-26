@@ -11,7 +11,7 @@ Either arises in [Movement I: Logical Origination](../../../../../../content/tex
 
 Choosing through Either is commutative (choosing between A and B is the same as choosing between B and A), associative, and idempotent (choosing between a recognition and itself produces itself). Either and Together interact through the distribution laws that any coherent field of recognitions must satisfy.
 
-The presence of both Together and Either — both ways of combining — is what makes conditional relating ([Implies](../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-04/implies.md)) and denial ([Negate](negate.md)) possible. Without Either, the logical core would lack the expressive range to formalize what it means for one recognition to conditionally relate to another.
+The presence of both Together and Either — both ways of combining — is what makes conditional relating ([Implies](../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-04/implies.md)) and denial ([Negate](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/complement.md)) possible. Without Either, the logical core would lack the expressive range to formalize what it means for one recognition to conditionally relate to another.
 
 ## Mathematical correspondence
 

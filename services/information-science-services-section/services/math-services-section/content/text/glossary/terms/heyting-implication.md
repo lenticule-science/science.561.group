@@ -55,14 +55,6 @@ $$c \leq (a \to b) \quad \Longleftrightarrow \quad a \wedge c \leq b.$$
 - In any Boolean algebra: $a \to b = \neg a \vee b$.
 - The Heyting implication is the internal hom of the [lattice](./lattice.md) viewed as a category. In a topos, the Heyting implication on the [subobject classifier](./subobject-classifier.md) $\Omega$ gives the internal implication of the topos's logic.
 
-## Earlier material
+## Sufficiency
 
-Let $H$ be a [Heyting algebra](../../../../../../../natural-science-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/library/science/mathematics/_archive/from-discourse-domain-locus-math/teaching/explanations/heyting-algebra/index.md).
-
-**Definition.** The *[Heyting](../../../../../../../natural-science-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/library/references/people/arend-heyting.md) implication* (or *relative pseudocomplement*) is the binary operation $\to$ on $H$ defined by
-
-**Proposition.** *For each $a \in H$, the [functor](../../../../../../../natural-science-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/library/science/mathematics/_archive/from-discourse-domain-locus-math/categories/theories/ordinary-categories/morphisms/functor.md) $(a \wedge -)$ is left adjoint to $(a \to -)$. That is, $\wedge$ and $\to$ form an [adjunction](../../../../../../../natural-science-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/library/science/mathematics/_archive/from-discourse-domain-locus-math/topology/morphisms/adjunction.md) in the poset category $H$.*
-
-- In $\mathcal{O}(X)$, the open-set [lattice](../../../../../../../natural-science-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/library/science/mathematics/_archive/from-discourse-domain-locus-math/order/objects/lattice.md) of a topological space $X$: $U \to V = \mathrm{int}(U^c \cup V)$.
-- In any Boolean algebra: $a \to b = \neg a \vee b$.
-- The [Heyting](../../../../../../../natural-science-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/library/references/people/arend-heyting.md) implication is the internal hom of the [lattice](../../../../../../../natural-science-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/library/science/mathematics/_archive/from-discourse-domain-locus-math/order/objects/lattice.md) viewed as a category. In a topos, the [Heyting](../../../../../../../natural-science-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/library/references/people/arend-heyting.md) implication on the [subobject classifier](../../../../../../../natural-science-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/library/science/mathematics/_archive/from-discourse-domain-locus-math/topology/objects/subobject-classifier.md) $\Omega$ gives the internal implication of the topos's logic.
+Relationality reads residual implication as sufficiency and calls it *induces*: $a \to b$ is what must be added to $a$ for $b$ to hold, not "if $a$ then $b$" as a proposition. The residuation law says exactly this: $c$ suffices, together with $a$, for $b$ precisely when $c \leq a \to b$. Modus ponens is $a \wedge (a \to b) \leq b$.

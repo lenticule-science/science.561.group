@@ -13,7 +13,7 @@ Every ontology begins by assuming something is. Relationality takes one step ear
 
 In Lakota cosmology, creation begins with a great dividing act, mirroring this notion that existence emerges through an initial separation. The remainder of relational structure unfolds from the [coherence](../../phenomena/coherence.md) of this single act.
 
-The collection of all distinctions that can be drawn within a given domain forms an ordered structure — distinctions can be finer or coarser, more or less inclusive. This ordered collection is the first appearance of logical structure — the raw material on which all further operations ([Together](../../terms/together.md), [Either](../../terms/either.md), [Implies](../../terms/implies.md), [Negate](../terms/negate.md)) are built.
+The collection of all distinctions that can be drawn within a given domain forms an ordered structure — distinctions can be finer or coarser, more or less inclusive. This ordered collection is the first appearance of logical structure — the raw material on which all further operations ([Together](../../terms/together.md), [Either](../../terms/either.md), [Implies](../../terms/implies.md), [Negate](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/complement.md)) are built.
 
 Differentiation is the act. Its products are [recognitions](../../phenomena/recognition.md) — the stable patterns within the relational field that can be re-distinguished. The [Distinguish](../../terms/distinguish.md) term captures this act in the formal vocabulary.
 

@@ -26,9 +26,9 @@ Determining relating-relation, relational self-coherence, and relational closure
 
 ### Closure and interior
 
-The self-sustaining relational unit requires two complementary containments to cohere. [Closure](../terms/close.md) is inward consolidation: it gathers what belongs together, securing form. When you close a relational structure, you determine what is definitively inside — what the structure includes, settled and stable. Closure is inflationary (it always includes at least what you started with), monotone (closing more includes more), and idempotent (closing what is already closed produces no further change). What has been consolidated stays consolidated.
+The self-sustaining relational unit requires two complementary containments to cohere. [Closure](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) is inward consolidation: it gathers what belongs together, securing form. When you close a relational structure, you determine what is definitively inside — what the structure includes, settled and stable. Closure is inflationary (it always includes at least what you started with), monotone (closing more includes more), and idempotent (closing what is already closed produces no further change). What has been consolidated stays consolidated.
 
-[Interior](../terms/open.md) is outward release: it preserves freedom by maintaining what can be opened from within. When you take the interior of a relational structure, you find what is genuinely open — what has room for further determination. Interior is deflationary (it never exceeds what you started with), monotone, and idempotent (opening what is already open produces no further change).
+[Interior](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) is outward release: it preserves freedom by maintaining what can be opened from within. When you take the interior of a relational structure, you find what is genuinely open — what has room for further determination. Interior is deflationary (it never exceeds what you started with), monotone, and idempotent (opening what is already open produces no further change).
 
 Each operator identifies a sublattice of fixed recognitions — its modal locus. The closed recognitions are those that closure leaves unchanged; the open recognitions are those that interior leaves unchanged. These two sublattices carve the relational field into regions of settled form and regions of available freedom.
 
@@ -60,7 +60,7 @@ Determining boundary-excluding, relational negation, and relational boundary pro
 
 ## What arises
 
-**Terms:** [Close](../terms/close.md), [Open](../terms/open.md), [Include](../../terms/include.md), [Balance](balance.md), [Stabilizes-Between](../../terms/stabilizes-between.md), [Must](../../terms/must.md), [May](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/may.md), [Identity](../../terms/identity.md), [Maintains-Balance](../../terms/maintains-balance.md)
+**Terms:** [Close](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md), [Open](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md), [Include](../../terms/include.md), [Balance](balance.md), [Stabilizes-Between](../../terms/stabilizes-between.md), [Must](../../terms/must.md), [May](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/may.md), [Identity](../../terms/identity.md), [Maintains-Balance](../../terms/maintains-balance.md)
 
 **Phenomena:** [Closure](../../phenomena/closure.md) — settling under iteration. [Reflexion](../../../../../../content/text/glossary/concepts/reflexion.md) — structure turning back on itself. [Balance](balance.md) — compatibility of dual containments.
 

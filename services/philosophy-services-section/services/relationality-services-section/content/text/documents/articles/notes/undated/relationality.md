@@ -5266,7 +5266,7 @@ status: plan
 
 ## Interpretation
 
-Negating applies implication into the bottom recognition.  *Imply Recognition* witnessing *Ground Recognition* produces the act ***Negate*** ([Negate](../../../../glossary/terms/negate.md)).
+Negating applies implication into the bottom recognition.  *Imply Recognition* witnessing *Ground Recognition* produces the act ***Negate*** ([Negate](../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/complement.md)).
 
 The composition uses only previously earned recognitions to encode the negation expression “not a” as “a implies *Ground Recognition*,” so *Negate* follows.
 
@@ -11410,7 +11410,7 @@ Implements negation on earned recognitions as the pseudocomplement.
 - Monotone: if `a ≤ b` then `¬b ≤ ¬a`.
 
 ## Proof
-- Derived from: [Negate](../../../../glossary/terms/negate.md).
+- Derived from: [Negate](../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/complement.md).
 - Shows that: negation is the pseudocomplement operation in the recognition
   lattice, consistent with Heyting algebra laws.
 ---

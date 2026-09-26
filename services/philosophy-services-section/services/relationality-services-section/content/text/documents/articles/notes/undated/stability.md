@@ -91,9 +91,9 @@ Of 9 acts, 2 are **exports**, 6 are **intermediates**, and 1 is a **dead end**.
 | Export | External use | What it provides |
 |--------|-------------|------------------|
 | **StabilizeTrace** | 1 | Frozen trace — feeds FixFlow in Geometry |
-| **StabilizeContext** | 1 | Frozen context — feeds FixNucleus (fixing under [Close](../../../../glossary/terms/close.md)) in Geometry |
+| **StabilizeContext** | 1 | Frozen context — feeds FixNucleus (fixing under [Close](../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md)) in Geometry |
 
-The export structure is remarkably clean. Two acts export, each to exactly one target, and those two targets are the two foundational operations of the [Geometry](geometry.md) stratum: fixing [flow](../../../../terms/flow.md) and fixing [closure](../../../../glossary/terms/close.md). Stability is a lens that focuses four kinds of [stabilization](../../../../processes/stabilization.md) into two geometric invariants.
+The export structure is remarkably clean. Two acts export, each to exactly one target, and those two targets are the two foundational operations of the [Geometry](geometry.md) stratum: fixing [flow](../../../../terms/flow.md) and fixing [closure](../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md). Stability is a lens that focuses four kinds of [stabilization](../../../../processes/stabilization.md) into two geometric invariants.
 
 ## How the exports are earned
 

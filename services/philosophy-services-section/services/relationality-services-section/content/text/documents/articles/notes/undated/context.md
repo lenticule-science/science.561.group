@@ -103,7 +103,7 @@ This is the highest export ratio of any stratum: 75% of its acts are exports. Co
 
 **ContextFlow** `(FlowProfile, RecognizeContext)` — [Flow](../../../../terms/flow.md) restricted to the profile, applied to recognized contexts. Contexts evolve: they change as flow carries their content forward. Export (2 external: ContextAdjunctionWitness, ContextNat).
 
-**ContextNucleus** `(NucleateProfile, RecognizeContext)` — [Close](../../../../glossary/terms/close.md) restricted to the profile, applied to recognized contexts. Contexts settle: the closure operator identifies equivalent positions. Export (1 external: ContextAdjunctionWitness).
+**ContextNucleus** `(NucleateProfile, RecognizeContext)` — [Close](../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) restricted to the profile, applied to recognized contexts. Contexts settle: the closure operator identifies equivalent positions. Export (1 external: ContextAdjunctionWitness).
 
 **ContextGeometry** `(ContextFlow, ContextNucleus)` — Context flow witnessing context closure: the full geometry of contexts, coupling evolution and settlement. Export (3 external: DynamicResiduation, IndexBase, Presheaf). This act bridges relational dynamics and the indexing, [residuation](../../../../../../../../content/text/glossary/concepts/residuation.md), and presheaf constructions that the later derivation uses for cohesion.
 

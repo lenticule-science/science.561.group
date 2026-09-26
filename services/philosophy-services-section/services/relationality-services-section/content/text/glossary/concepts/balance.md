@@ -81,7 +81,7 @@ Draft 12 §II.2: "If only closure operated, relations would rigidify into immobi
 
 ## Earlier material
 
-Balance is the compatibility between [Close](../terms/close.md) and [Open](../terms/open.md) — the condition that inward consolidation and outward release do not interfere with each other. It is not a static compromise between two forces but a dynamic equilibrium: each act of necessity both limits and enables an act of possibility, and vice versa. Being "breathes" through this duality, and balance is the condition that ensures the breathing is coherent.
+Balance is the compatibility between [Close](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) and [Open](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) — the condition that inward consolidation and outward release do not interfere with each other. It is not a static compromise between two forces but a dynamic equilibrium: each act of necessity both limits and enables an act of possibility, and vice versa. Being "breathes" through this duality, and balance is the condition that ensures the breathing is coherent.
 
 Balance arises in [Movement II: Structural Stabilization](../../../../../../content/text/glossary/concepts/structural-stabilization.md) when the dual motions of [stabilization](../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/processes/stabilization.md) must cohere. It is not enough for both Close and Open to exist — their interaction must be consistent. Two conditions express this consistency:
 
@@ -96,8 +96,8 @@ The law that [dual motions do not interfere](../../../../../../content/text/glos
 
 Balance corresponds to Frobenius compatibility between a closure operator and an interior operator on a Heyting algebra. The two conditions are the Frobenius laws. This compatibility is a well-studied condition in order theory and modal logic that ensures the two operators form a coherent dual pair rather than merely a pair of dual operators.
 
-- [Close](../terms/close.md) — inward consolidation, the inflationary pole
-- [Open](../terms/open.md) — outward release, the deflationary pole
+- [Close](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) — inward consolidation, the inflationary pole
+- [Open](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) — outward release, the deflationary pole
 - [Include](../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-04/include.md) — the mediating condition that balance makes possible
 - [Must](../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-04/must.md) — the necessity modality arising from the closed pole
 - [May](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/may.md) — the possibility modality arising from the open pole

@@ -12,9 +12,9 @@ Closure is not a single event but a pattern that recurs at every level of relati
 
 A closure operator has three defining characteristics: it never loses what was already present (it only adds), it respects the ordering of [recognitions](recognition.md) (more inclusive inputs produce more inclusive outputs), and applying it twice is the same as applying it once (once settled is settled). The recognitions that are already closed — the fixed points — are the stable configurations, the ones that have settled.
 
-Closure has a dual: **interior** (the [Open](../../../../services/relationality-services-section/content/text/glossary/terms/open.md) operator). Where closure consolidates inward, interior opens outward. Together they produce [balance](../../../../services/relationality-services-section/content/text/glossary/concepts/balance.md) — the "breathing" of being described in the second movement.
+Closure has a dual: **interior** (the [Open](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) operator). Where closure consolidates inward, interior opens outward. Together they produce [balance](../../../../services/relationality-services-section/content/text/glossary/concepts/balance.md) — the "breathing" of being described in the second movement.
 
-The [Close](../../../../services/relationality-services-section/content/text/glossary/terms/close.md) operator formalizes closure as a term in the canonical lexicon. The phenomenon itself is broader: it is the pattern of settling that appears wherever relational structures stabilize.
+The [Close](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) operator formalizes closure as a term in the canonical lexicon. The phenomenon itself is broader: it is the pattern of settling that appears wherever relational structures stabilize.
 
 ## Derivational context
 

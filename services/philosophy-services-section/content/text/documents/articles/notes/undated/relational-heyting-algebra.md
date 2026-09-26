@@ -58,7 +58,7 @@ sketch records the adjunction, so residuation between meets and implication is
 forced. ∎
 
 **Theorem 3 (Negation).**  
-[Negate](../../../../../../services/relationality-services-section/content/text/glossary/terms/negate.md) yields the pseudocomplement operator
+[Negate](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/complement.md) yields the pseudocomplement operator
 `¬a = (a ⇒ ⊥)` in the earned lattice.
 
 *Proof.* The act witnesses `JoinRecognition` through the reflex trace, giving an

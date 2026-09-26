@@ -15,8 +15,8 @@ date-created: 2026-04-06
 Blocked is the state of a unit of [work](work.md) that cannot proceed.
 Something it [depends on](relation.md) is not yet met — another task is incomplete, a resource is unavailable, an external condition prevents progress.
 
-Blocked can follow either [open](../../../../../philosophy-services-section/services/relationality-services-section/content/text/glossary/terms/open.md) (a task that was available but became blocked when a dependency regressed) or [in-progress](../../../../services/sociology-science-services-section/content/text/documents/articles/notes/2026/04/06/2026-04-06-in-progress.md) (work that was underway but hit an obstacle).
-It precedes [open](../../../../../philosophy-services-section/services/relationality-services-section/content/text/glossary/terms/open.md) — when the blocking condition resolves, the task returns to open.
+Blocked can follow either [open](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) (a task that was available but became blocked when a dependency regressed) or [in-progress](../../../../services/sociology-science-services-section/content/text/documents/articles/notes/2026/04/06/2026-04-06-in-progress.md) (work that was underway but hit an obstacle).
+It precedes [open](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) — when the blocking condition resolves, the task returns to open.
 The transition happens when the dependency is met, which is itself a settlement event: the depended-on entity reaching [completed](completed.md) settles the blocker.
 
 When a task is blocked, its container (the [plan](plan.md) it is part-of) may also become blocked — but only if the blocked task is on the critical path.

@@ -23,3 +23,5 @@ Join corresponds to disjunction ("or") in logic. If the elements of the partial 
 Meet and join are dual. Every statement about meets becomes a statement about joins if you reverse the ordering. The meet is the greatest lower bound; the join is the least upper bound. Meet corresponds to conjunction; join corresponds to disjunction. Meet corresponds to intersection; join corresponds to union. This duality runs through all of order theory and category theory — it is the simplest instance of the general principle that reversing all arrows produces a valid dual structure.
 
 Join generalizes from pairs to arbitrary collections. The join of a set $S$ of elements is the least upper bound of all of $S$ simultaneously — the smallest element above everything in $S$. A lattice where arbitrary joins exist is a complete lattice. In a complete lattice, arbitrary meets also exist — completeness for joins implies completeness for meets.
+
+Relationality calls the join *either*: the holding of at least one operand.

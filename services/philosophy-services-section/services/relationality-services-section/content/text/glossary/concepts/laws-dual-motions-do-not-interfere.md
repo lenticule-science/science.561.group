@@ -7,7 +7,7 @@ keywords:
 description: Consolidating and releasing can be performed in either order without distorting the structure.
 ---
 
-Consolidating and releasing can be performed in either order without distorting the structure. If you consolidate a recognition and then release it, the result is the same as if you had first combined the consolidation and the release. The dual motions of [closure](../terms/close.md) and [interior](../terms/open.md) are compatible — they do not interfere with each other.
+Consolidating and releasing can be performed in either order without distorting the structure. If you consolidate a recognition and then release it, the result is the same as if you had first combined the consolidation and the release. The dual motions of [closure](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) and [interior](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) are compatible — they do not interfere with each other.
 
 In formal terms: Open(a ∧ Close(b)) = Open(a) ∧ Close(b). Applying interior to the combination of a recognition with a closed recognition produces the same result as combining the interior of the first with the closed second.
 

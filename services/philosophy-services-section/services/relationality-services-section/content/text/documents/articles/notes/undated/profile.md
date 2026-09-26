@@ -136,7 +136,7 @@ Of the 30 documented acts, 10 are **exports**, 9 are **intermediates**, and 11 a
 |--------|--------------|------------------|
 | **ProfileRecognitions** | 7 | The recognitions stable under a filter — the material of a profile |
 | **FlowProfile** | 7 | Flow restricted to the profile — how the profile evolves |
-| **NucleateProfile** | 5 | [Close](../../../../glossary/terms/close.md) restricted to the profile — how the profile settles |
+| **NucleateProfile** | 5 | [Close](../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) restricted to the profile — how the profile settles |
 | **TraceProfile** | 3 | Complete traces inside the profile |
 | **PhysicsProfile** | 3 | Physical semantics of the profile |
 | **JudgeProfile** | 2 | Judgements inside the profile |
@@ -167,7 +167,7 @@ This is the heart of the stratum: the compositional chain from geometric commuta
 
 **FlowProfile** `(Flow, ProfileRecognitions)` — [Flow](../../../../terms/flow.md) restricted to the profile. How the profile's recognitions evolve. Export (7 external: ContextFlow, [May](../../../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/may.md), Evolve, PathType, PhysicsState, ProfileDynamics, ProfileReach).
 
-**NucleateProfile** `(Close, ProfileRecognitions)` — [Close](../../../../glossary/terms/close.md) restricted to the profile. How the profile's recognitions settle. Export (5 external: [Must](../../../../terms/must.md), ContextNucleus, Measure, ProfileEntropyMeasure, ProfileMeasure).
+**NucleateProfile** `(Close, ProfileRecognitions)` — [Close](../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) restricted to the profile. How the profile's recognitions settle. Export (5 external: [Must](../../../../terms/must.md), ContextNucleus, Measure, ProfileEntropyMeasure, ProfileMeasure).
 
 **GeometryProfile** `(FlowProfile, NucleateProfile)` — The profile's full geometry: flow coupled with closure. Export (2 external: ProfileInvariantGeometry, SoundProfileGeometry).
 

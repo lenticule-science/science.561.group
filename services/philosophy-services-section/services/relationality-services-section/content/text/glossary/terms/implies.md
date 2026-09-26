@@ -11,7 +11,7 @@ Implies arises in [Movement I: Logical Origination](../../../../../../content/te
 
 The structural signature of conditional relating is the residuation law: asking whether combining A with B [entails](../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-04/entails.md) C is the same as asking whether A alone entails that B implies C. This connection between combining, ordering, and conditional relating is what gives the relational logic its constructive character. Not every question has a determinate answer — some matters remain genuinely indeterminate until relational activity resolves them.
 
-Implies also provides the internal structure for [Negate](negate.md): denial is the special case of conditional relating where the consequent is [Bottom](../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-04/bottom.md) — the empty recognition. To deny A is to find the strongest recognition that, when combined with A, produces nothing.
+Implies also provides the internal structure for [Negate](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/complement.md): denial is the special case of conditional relating where the consequent is [Bottom](../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-04/bottom.md) — the empty recognition. To deny A is to find the strongest recognition that, when combined with A, produces nothing.
 
 ## Mathematical correspondence
 
@@ -21,6 +21,6 @@ Implies corresponds to the internal hom (residuated implication) of a Heyting al
 
 - [Together](../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-04/together.md) — combining, connected to Implies through residuation
 - [Entails](../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-04/entails.md) — the external ordering that Implies internalizes
-- [Negate](negate.md) — denial, defined as Implies(a, [Bottom](../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-04/bottom.md))
+- [Negate](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/complement.md) — denial, defined as Implies(a, [Bottom](../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-04/bottom.md))
 
 ---

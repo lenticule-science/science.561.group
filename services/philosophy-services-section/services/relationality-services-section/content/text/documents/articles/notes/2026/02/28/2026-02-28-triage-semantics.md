@@ -79,7 +79,7 @@ tags:
 description: "The sixth stratum: 125 acts that earn the relational logic — entailment, combining, choosing, conditional relating, denial, morphisms, and the metatheory that validates them."
 ---
 
-The Semantics stratum is the largest in the derivation — 125 acts. It transforms the judgemental machinery earned in strata 1–5 into a full relational logic: [entailment](../../../../../../terms/entails.md), combining ([Together](../../../../../../terms/together.md)), choosing ([Either](../../../../../../terms/either.md)), conditional relating ([Implies](../../../../../../terms/implies.md)), denial ([Negate](../../../../../../glossary/terms/negate.md)), morphisms, and the typing interpretations that make [coherent](../../../../../../phenomena/coherence.md) distinguishing possible. Mathematicians recognize this structure as a complete Heyting algebra, but it is earned here from the requirements of consistent distinction. The stratum also earns the standard metatheoretic results (preservation, progress, soundness, confluence, normalization) that validate the syntactic theory.
+The Semantics stratum is the largest in the derivation — 125 acts. It transforms the judgemental machinery earned in strata 1–5 into a full relational logic: [entailment](../../../../../../terms/entails.md), combining ([Together](../../../../../../terms/together.md)), choosing ([Either](../../../../../../terms/either.md)), conditional relating ([Implies](../../../../../../terms/implies.md)), denial ([Negate](../../../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/complement.md)), morphisms, and the typing interpretations that make [coherent](../../../../../../phenomena/coherence.md) distinguishing possible. Mathematicians recognize this structure as a complete Heyting algebra, but it is earned here from the requirements of consistent distinction. The stratum also earns the standard metatheoretic results (preservation, progress, soundness, confluence, normalization) that validate the syntactic theory.
 
 Of the 125 acts, the strata source files document 44 in detail. The analysis below covers these 44. The remaining 81 acts are constructive intermediate steps whose full catalog has not yet been compiled.
 
@@ -97,7 +97,7 @@ Of the 44 documented acts, 13 are **exports**, 12 are **intermediates**, and 19 
 | **[Implies](../../../../../../terms/implies.md)** | 3 | Conditional relating — feeds flow-index and Profile |
 | **Morph** | 3 | Morphisms between recognitions — feeds transport and Profile |
 | **[Include](../../../../../../terms/include.md)** | 2 | Mediation — feeds residuation and closure distribution |
-| **[Negate](../../../../../../glossary/terms/negate.md)** | 2 | Denial — feeds interior dualization and Profile |
+| **[Negate](../../../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/complement.md)** | 2 | Denial — feeds interior dualization and Profile |
 | **JudgeTyping** | 2 | Typing judgements — feeds Profile syntax calculations |
 | **SubstituteReducibility** | 2 | The substitution lemma — feeds reindexing and [Term](../../../undated/term.md) |
 | **[Entails](../../../../../../terms/entails.md)** | 1 | Subsumption ordering — feeds Profile invariant order |
@@ -165,7 +165,7 @@ The logical structure is built from Foundation and Trace exports through a chain
 
 **[Implies](../../../../../../terms/implies.md)** `(Either, FormFunctionTerm)` — The largest recognition whose combination with A is subsumed by B. Export (3 external). The function type from [Term](../../../undated/term.md) provides the internal structure; the combined scope provides the completeness. This is where the relational logic becomes *constructive* — conditional relating exists but not every question has a determinate answer.
 
-**[Negate](../../../../../../glossary/terms/negate.md)** `(Implies, Bottom)` — The largest recognition that combines with A to give nothing. Export (2 external). Denial in the relational logic is not classical — double denial does not return to the original. This reflects the relational stance that some matters are genuinely indeterminate.
+**[Negate](../../../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/complement.md)** `(Implies, Bottom)` — The largest recognition that combines with A to give nothing. Export (2 external). Denial in the relational logic is not classical — double denial does not return to the original. This reflects the relational stance that some matters are genuinely indeterminate.
 
 **[Shape](../../../../../../../../services/agency-services-section/content/text/documents/articles/research/predicated-agentic-orchestration-platform/scope/shape/shape.md)** `(Implies, Entails)` — The form of the conditional-relating/entailment interaction. Intermediate — feeds RecognizeFixedPoint.
 
@@ -207,7 +207,7 @@ The strata source files document 44 of the Semantics stratum's 125 acts. The rem
 
 ## What the Semantics stratum earns
 
-**The relational logic.** [Entailment](../../../../../../terms/entails.md), [combining](../../../../../../terms/together.md), [choosing](../../../../../../terms/either.md), [conditional relating](../../../../../../terms/implies.md), [denial](../../../../../../glossary/terms/negate.md) — the logical structure that makes [coherent](../../../../../../phenomena/coherence.md) distinguishing possible. This is the formal content of [Movement I](../../../../../../../../../../content/text/glossary/concepts/logical-origination.md): what begins as the act of distinction ends as a complete constructive logic. Mathematicians recognize this as a Heyting algebra.
+**The relational logic.** [Entailment](../../../../../../terms/entails.md), [combining](../../../../../../terms/together.md), [choosing](../../../../../../terms/either.md), [conditional relating](../../../../../../terms/implies.md), [denial](../../../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/complement.md) — the logical structure that makes [coherent](../../../../../../phenomena/coherence.md) distinguishing possible. This is the formal content of [Movement I](../../../../../../../../../../content/text/glossary/concepts/logical-origination.md): what begins as the act of distinction ends as a complete constructive logic. Mathematicians recognize this as a Heyting algebra.
 
 **Morphisms.** Structure-preserving maps between recognitions, their [identity](../../../../../../terms/identity.md), and their [composition](../../../../../../terms/compose.md). These are the arrows that let the logic describe transformation as well as structure.
 

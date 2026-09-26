@@ -15,7 +15,7 @@ The canonical instance in relationality is the law connecting [Together](../../t
 
 This says: "a and b together entail c" is the same statement as "a alone entails that b implies c." The meet operation and the implication operation are residuated partners — each is the adjoint of the other.
 
-Residuation appears wherever dual containments arise. [Close](../terms/close.md) and [Open](../terms/open.md) are related by residuation. [Flow](../../terms/flow.md) and its resolution morphism form a residuated pair. At the meta level, systems of [balanced](balance.md) operators exhibit residuation between their components.
+Residuation appears wherever dual containments arise. [Close](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) and [Open](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) are related by residuation. [Flow](../../terms/flow.md) and its resolution morphism form a residuated pair. At the meta level, systems of [balanced](balance.md) operators exhibit residuation between their components.
 
 The phenomenon matters because it means that dual aspects of relational structure are not independent. If you know the closure, the interior is determined. If you know how things combine, implication follows. Residuation is the formal expression of the relational claim that things exist through their relations — dual operations co-determine each other.
 

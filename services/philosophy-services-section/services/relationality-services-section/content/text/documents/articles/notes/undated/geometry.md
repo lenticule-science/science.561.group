@@ -108,7 +108,7 @@ tags:
 description: "The eighth stratum: 34 acts that earn relational geometry — flow, closure, fixed points, commutation, and the laws governing directed motion through settlement."
 ---
 
-The Geometry stratum couples the two fundamental operations that the prior strata converge on — **[flow](../../../../processes/flow.md)** (directed motion) and **[closure](../../../../phenomena/closure.md)** (settlement) — and earns the fixed-point theory, [residuation](../../../../../../../../content/text/glossary/concepts/residuation.md) laws, and commutation properties that make them a geometry. This is where the derivation transitions from logic to dynamics: [recognitions](../../../../phenomena/recognition.md) can now *move* (flow) and *settle* ([close](../../../../glossary/terms/close.md)), and these two operations are compatible.
+The Geometry stratum couples the two fundamental operations that the prior strata converge on — **[flow](../../../../processes/flow.md)** (directed motion) and **[closure](../../../../phenomena/closure.md)** (settlement) — and earns the fixed-point theory, [residuation](../../../../../../../../content/text/glossary/concepts/residuation.md) laws, and commutation properties that make them a geometry. This is where the derivation transitions from logic to dynamics: [recognitions](../../../../phenomena/recognition.md) can now *move* (flow) and *settle* ([close](../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md)), and these two operations are compatible.
 
 Of the 34 acts in the Geometry stratum, the strata source files document 22. The analysis below covers these 22. Like [Semantics](../2026/02/28/2026-02-28-triage-semantics.md), Geometry has a high dead-end ratio — 12 of 22 listed acts are dead ends. These dead ends are law verifications: they prove that flow and closure satisfy specific properties but do not feed into further construction.
 
@@ -118,7 +118,7 @@ Of the 22 documented acts, 7 are **exports**, 3 are **intermediates**, and 12 ar
 
 | Export | External uses | What it provides |
 |--------|--------------|------------------|
-| **[Close](../../../../glossary/terms/close.md)** | 6 | The unified closure operator — feeds Discipline, Profile, composites |
+| **[Close](../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md)** | 6 | The unified closure operator — feeds Discipline, Profile, composites |
 | **[Flow](../../../../terms/flow.md)** | 5 | The unified directed motion — feeds Profile, Physics, Context |
 | **EnsureFixedPoint** | 5 | Fixed point existence — feeds harmonics, kernels, shapes, orbits |
 | **FixFlowNucleus** | 5 | What is stable under both flow and closure — feeds Profile and regimes |
@@ -128,11 +128,11 @@ Of the 22 documented acts, 7 are **exports**, 3 are **intermediates**, and 12 ar
 
 ## The two convergence points
 
-The most structurally important acts in the stratum — arguably in the entire derivation — are [Flow](../../../../terms/flow.md) and [Close](../../../../glossary/terms/close.md). Both are convergence points where parallel channels from earlier strata merge.
+The most structurally important acts in the stratum — arguably in the entire derivation — are [Flow](../../../../terms/flow.md) and [Close](../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md). Both are convergence points where parallel channels from earlier strata merge.
 
 **Flow** `(FlowObservation, FlowJudgement)` — FlowObservation (from [Observation](observation.md)) witnesses FlowJudgement (from [Judgement](judgement.md)). This is where the two kinds of relational dynamics — observational flow and judgemental flow — merge into a single operation. Flow is directed motion that preserves logical structure. It is the formal content of what the [derivation](../../../../concepts/the-derivation.md) calls "the reflexive act that folds the boundary into the system it bounds." Export: 5 external children spanning Profile, Physics, and Context.
 
-**[Close](../../../../glossary/terms/close.md)** `(NormalizeObservationEquivalence, NormalizedJudgementEquivalence)` — Observation equivalence (from [Observation](observation.md)) witnesses judgement equivalence (from [Judgement](judgement.md)). This is where the two kinds of relational [closure](../../../../phenomena/closure.md) — observational normalization and judgemental normalization — merge into a single closure operator. The closure identifies recognitions that are equivalent under both kinds of normalization. Export: 6 external children spanning Profile, Geometry itself, and Discipline.
+**[Close](../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md)** `(NormalizeObservationEquivalence, NormalizedJudgementEquivalence)` — Observation equivalence (from [Observation](observation.md)) witnesses judgement equivalence (from [Judgement](judgement.md)). This is where the two kinds of relational [closure](../../../../phenomena/closure.md) — observational normalization and judgemental normalization — merge into a single closure operator. The closure identifies recognitions that are equivalent under both kinds of normalization. Export: 6 external children spanning Profile, Geometry itself, and Discipline.
 
 The compositional structure is symmetric: both Flow and Close are composed from one Observation export witnessing one Judgement export. The system treats observation and judgement as twin inputs to a single geometric operation, then separates the result into motion (Flow) and settlement (Close).
 
@@ -169,7 +169,7 @@ The remaining 12 acts verify that Flow and Close satisfy specific laws. None are
 **Closure laws:**
 - **NucleusSemantics** — Closure-closed recognitions inherit the logical structure
 - **AbsorbClosure** — Closure absorbs combining: Together(x, Close(y)) collapses inside Close(Together(x, y))
-- **DistributeInterior** — The [Open](../../../../glossary/terms/open.md) (interior) operator distributes over [Together](../../../../terms/together.md) and contracts [Either](../../../../terms/either.md)
+- **DistributeInterior** — The [Open](../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) (interior) operator distributes over [Together](../../../../terms/together.md) and contracts [Either](../../../../terms/either.md)
 - **EqualizeNucleusDistribution** — Distribution equalization laws hold
 
 **Interaction laws:**
@@ -177,7 +177,7 @@ The remaining 12 acts verify that Flow and Close satisfy specific laws. None are
 - **TransportFlowFix**, **TransportNucleusFix** — Morphisms preserve flow-fixed and closure-fixed recognitions
 - **ResidueDynamically** — The dynamic [residuation](../../../../../../../../content/text/glossary/concepts/residuation.md) law can be used for internal reasoning
 - **CloseTemporally** — Idempotent flows produce temporal modalities (always/eventually)
-- **DualizeInterior** — [Negate](../../../../glossary/terms/negate.md) dualizes principal [Close](../../../../glossary/terms/close.md) into an [Open](../../../../glossary/terms/open.md) operator
+- **DualizeInterior** — [Negate](../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/complement.md) dualizes principal [Close](../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) into an [Open](../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) operator
 
 These 12 dead ends are not accidents or oversights. They are the *properties* of the geometric construction — the laws that Flow, Close, and their interaction satisfy. Like the metatheoretic dead ends in [Semantics](../2026/02/28/2026-02-28-triage-semantics.md), they certify the construction without contributing constructive material. The derivation proves them because they must be provable; nothing further is built from the proofs.
 
@@ -187,6 +187,6 @@ Geometry confirms the pattern first seen in [Semantics](../2026/02/28/2026-02-28
 
 ## Connection to the derivation
 
-The Geometry stratum enacts the core of [Movement II](../../../../../../../../content/text/glossary/concepts/structural-stabilization.md): earning [closure](../../../../phenomena/closure.md) and interior ([Open](../../../../glossary/terms/open.md)) operators, their compatibility with [flow](../../../../processes/flow.md), and the modal structure that arises — [Must](../../../../terms/must.md) (what survives all closure) and [May](../../../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/may.md) (what can be opened from within). The absorption and distribution laws earned as dead ends here correspond to the claim that inward consolidation (Close) and outward release (Open) must cohere — the [balance](../../../../glossary/concepts/balance.md) condition.
+The Geometry stratum enacts the core of [Movement II](../../../../../../../../content/text/glossary/concepts/structural-stabilization.md): earning [closure](../../../../phenomena/closure.md) and interior ([Open](../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md)) operators, their compatibility with [flow](../../../../processes/flow.md), and the modal structure that arises — [Must](../../../../terms/must.md) (what survives all closure) and [May](../../../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/may.md) (what can be opened from within). The absorption and distribution laws earned as dead ends here correspond to the claim that inward consolidation (Close) and outward release (Open) must cohere — the [balance](../../../../glossary/concepts/balance.md) condition.
 
 The [Profile](profile.md) stratum takes Geometry's exports — especially FixFlowNucleus and the commuting flow-closure pair — and builds the discipline-filter-tower architecture that carves nested relational universes.

@@ -24,3 +24,5 @@ Meet corresponds to conjunction ("and") in logic. If the elements of the partial
 The Heyting implication is defined through meet by the residuation law: $c \leq (a \to b)$ if and only if $c \wedge a \leq b$. This says: "c implies a → b" is the same as "c together with a entails b." Meet and implication constrain each other — implication is right adjoint to meet. This adjunction is what makes a [lattice](./lattice.md) into a Heyting algebra.
 
 Meet generalizes from pairs to arbitrary collections. The meet of a set $S$ of elements is the greatest lower bound of all of $S$ simultaneously — the largest element below everything in $S$. A lattice where arbitrary meets exist (not just pairwise) is a complete lattice.
+
+Relationality calls the meet *together*: the joint holding of both operands.

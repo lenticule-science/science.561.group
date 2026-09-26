@@ -1434,7 +1434,7 @@ Ambidexterity corresponds to the coincidence of homotopy colimits and homotopy l
 
 **defines:** Balance
 
-Balance is the compatibility between [Close](close.md) and [Open](open.md) — the condition that inward consolidation and outward release do not interfere with each other. It is not a static compromise between two forces but a dynamic equilibrium: each act of necessity both limits and enables an act of possibility, and vice versa. Being "breathes" through this duality, and balance is the condition that ensures the breathing is coherent.
+Balance is the compatibility between [Close](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) and [Open](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) — the condition that inward consolidation and outward release do not interfere with each other. It is not a static compromise between two forces but a dynamic equilibrium: each act of necessity both limits and enables an act of possibility, and vice versa. Being "breathes" through this duality, and balance is the condition that ensures the breathing is coherent.
 
 Balance arises in [Movement II: Structural Stabilization](../../../../../../content/text/glossary/concepts/structural-stabilization.md) when the dual motions of [stabilization](../../processes/stabilization.md) must cohere. It is not enough for both Close and Open to exist — their interaction must be consistent. Two conditions express this consistency:
 
@@ -1453,8 +1453,8 @@ Balance corresponds to Frobenius compatibility between a closure operator and an
 
 ## Related
 
-- [Close](close.md) — inward consolidation, the inflationary pole
-- [Open](open.md) — outward release, the deflationary pole
+- [Close](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) — inward consolidation, the inflationary pole
+- [Open](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) — outward release, the deflationary pole
 - [Include](../../documents/articles/notes/undated/include.md) — the mediating condition that balance makes possible
 - [Must](../../triage/must.md) — the necessity modality arising from the closed pole
 - [May](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/may.md) — the possibility modality arising from the open pole
@@ -1468,7 +1468,7 @@ Balance corresponds to Frobenius compatibility between a closure operator and an
 
 Bottom is the empty [recognition](../../phenomena/recognition.md) — the one that nothing satisfies. It is the absurd, the recognition with no content. Bottom [entails](../../triage/entails.md) everything, because from nothing, anything follows.
 
-Bottom arises in [Movement I: Logical Origination](../../../../../../content/text/glossary/concepts/logical-origination.md) as a boundary condition of exclusion. Together with [Top](../../triage/top.md), Bottom marks the full extent of the relational field. Bottom also serves as the target of [denial](negate.md): to negate a recognition is to find the strongest recognition whose [combining](../../triage/together.md) with it yields Bottom — the strongest thing incompatible with it.
+Bottom arises in [Movement I: Logical Origination](../../../../../../content/text/glossary/concepts/logical-origination.md) as a boundary condition of exclusion. Together with [Top](../../triage/top.md), Bottom marks the full extent of the relational field. Bottom also serves as the target of [denial](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/complement.md): to negate a recognition is to find the strongest recognition whose [combining](../../triage/together.md) with it yields Bottom — the strongest thing incompatible with it.
 
 Choosing ([Either](../../triage/either.md)) with Bottom leaves any recognition unchanged — Bottom contributes nothing. This makes Bottom the identity element of Either, just as Top is the identity element of Together.
 
@@ -1480,7 +1480,7 @@ Bottom is the least element (bottom, ⊥) of the lattice — the identity elemen
 
 - [Top](../../triage/top.md) — the dual: the universal recognition that everything satisfies
 - [Either](../../triage/either.md) — Bottom is the identity element of choosing
-- [Negate](negate.md) — Bottom is the consequent in the definition of denial
+- [Negate](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/complement.md) — Bottom is the consequent in the definition of denial
 - [Entails](../../triage/entails.md) — Bottom entails every recognition
 
 ---
@@ -1499,7 +1499,7 @@ Three properties define Close:
 - Closing a recognition that is already closed produces the same result — there is no further consolidation to do (idempotent)
 - Closing the combination of two recognitions is the same as combining their closures — consolidation respects combining (stable under [Together](../../triage/together.md))
 
-Close has a dual: [Open](open.md). Where Close consolidates inward, Open releases outward. Together they express the dual motions of [stabilization](../../processes/stabilization.md) — the "breathing" of being described in Movement II. Their compatibility is [balance](../concepts/balance.md): closing an opened recognition is the same as closing the original, and opening a closed recognition is the same as opening the original. The two motions do not interfere.
+Close has a dual: [Open](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md). Where Close consolidates inward, Open releases outward. Together they express the dual motions of [stabilization](../../processes/stabilization.md) — the "breathing" of being described in Movement II. Their compatibility is [balance](../concepts/balance.md): closing an opened recognition is the same as closing the original, and opening a closed recognition is the same as opening the original. The two motions do not interfere.
 
 The fixed points of Close — the recognitions that are already closed — form the stable configurations of the relational field. These are the recognitions that have achieved self-maintenance. The modality [Must](../../triage/must.md) picks out what is necessarily the case by identifying what survives closure.
 
@@ -1509,11 +1509,11 @@ Close corresponds to a closure operator (or nucleus) on a Heyting algebra. Its f
 
 ## Related
 
-- [Open](open.md) — the dual: outward release
+- [Open](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) — the dual: outward release
 - [Balance](../concepts/balance.md) — the compatibility condition between Close and Open
 - [Include](../../documents/articles/notes/undated/include.md) — mediates between Close and Open
 - [Must](../../triage/must.md) — the necessity modality, defined through Close
-- [Iterate](iterate.md) — Close is the stable endpoint of iteration
+- [Iterate](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure.md) — Close is the stable endpoint of iteration
 
 ---
 
@@ -1575,7 +1575,7 @@ Cohesive-Chain corresponds to the quadruple adjunction characteristic of Lawvere
 
 Compose is the basic mechanism for combining operations: applying one and then the other. It is the structural glue that turns individual operations into a coherent system.
 
-Compose operates across all five movements as a utility term. Every compound operation in the relational framework is built from composition. [Close](close.md) is composed from simpler operations; [Iterate](iterate.md) feeds an operation back into itself through composition; [Flow](../../documents/articles/notes/undated/flow.md) is defined by composing resolution and propagation. Compose appears as early as [Movement I: Logical Origination](../../../../../../content/text/glossary/concepts/logical-origination.md), where the logical operations ([Together](../../triage/together.md), [Either](../../triage/either.md), [Implies](../../triage/implies.md), [Negate](negate.md)) are combined to form more complex recognitions, and it remains active through [Movement V: Emergent Containment](../../../../../../content/text/glossary/concepts/emergent-containment.md) where meta-level operations are composed.
+Compose operates across all five movements as a utility term. Every compound operation in the relational framework is built from composition. [Close](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) is composed from simpler operations; [Iterate](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure.md) feeds an operation back into itself through composition; [Flow](../../documents/articles/notes/undated/flow.md) is defined by composing resolution and propagation. Compose appears as early as [Movement I: Logical Origination](../../../../../../content/text/glossary/concepts/logical-origination.md), where the logical operations ([Together](../../triage/together.md), [Either](../../triage/either.md), [Implies](../../triage/implies.md), [Negate](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/complement.md)) are combined to form more complex recognitions, and it remains active through [Movement V: Emergent Containment](../../../../../../content/text/glossary/concepts/emergent-containment.md) where meta-level operations are composed.
 
 Composition is associative — grouping does not matter — and has an identity element (the operation that returns its input unchanged). These two properties ensure that the order of doing things is well-defined, even as the framework builds increasingly complex structures from simple parts.
 
@@ -1612,9 +1612,9 @@ Constructibility corresponds to the condition that, after Reedy fibrant replacem
 
 Define is the act of naming: introducing a binding that makes an expression available for subsequent use. It operates at the meta level — shaping the specification itself rather than transforming objects within it.
 
-Define operates across all five movements as a meta-level utility. Every named term in the relational framework — [Distinguish](../../triage/distinguish.md), [Entails](../../triage/entails.md), [Close](close.md), [Flow](../../documents/articles/notes/undated/flow.md), and so on — exists because a Define introduced it. The derivation proceeds by progressively defining new terms as each phase's coherence requirements make them necessary: the nine phases of [the derivation](../../concepts/the-derivation.md) are a sequence of definitions whose order is forced by the logic of relational coherence.
+Define operates across all five movements as a meta-level utility. Every named term in the relational framework — [Distinguish](../../triage/distinguish.md), [Entails](../../triage/entails.md), [Close](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md), [Flow](../../documents/articles/notes/undated/flow.md), and so on — exists because a Define introduced it. The derivation proceeds by progressively defining new terms as each phase's coherence requirements make them necessary: the nine phases of [the derivation](../../concepts/the-derivation.md) are a sequence of definitions whose order is forced by the logic of relational coherence.
 
-Define is idempotent: defining the same name with the same expression twice has no additional effect. Redefining a name with a different expression shadows the earlier binding. Because Define shapes the language rather than computing values, it is not an operation in the same sense as [Compose](../../triage/compose.md) or [Iterate](iterate.md) — but without it, no operation would have a name.
+Define is idempotent: defining the same name with the same expression twice has no additional effect. Redefining a name with a different expression shadows the earlier binding. Because Define shapes the language rather than computing values, it is not an operation in the same sense as [Compose](../../triage/compose.md) or [Iterate](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure.md) — but without it, no operation would have a name.
 
 ## Related
 
@@ -1656,7 +1656,7 @@ Distinguish is the starting act of the entire derivation, opening [Movement I: L
 
 Distinguish does not assert that the two sides differ in any property. It asserts only that a boundary has been introduced between them. Properties emerge from patterns of distinction, not the other way around. A thing is what it is because of the distinctions that constitute it — not the reverse.
 
-The products of distinction are [recognitions](../../phenomena/recognition.md): the stable patterns that result from acts of distinguishing. Recognitions can then be compared ([Entails](../../triage/entails.md)), combined ([Together](../../triage/together.md)), extended ([Either](../../triage/either.md)), conditionally related ([Implies](../../triage/implies.md)), and denied ([Negate](negate.md)). The entire logical core of relationality unfolds from the requirements of consistent distinguishing.
+The products of distinction are [recognitions](../../phenomena/recognition.md): the stable patterns that result from acts of distinguishing. Recognitions can then be compared ([Entails](../../triage/entails.md)), combined ([Together](../../triage/together.md)), extended ([Either](../../triage/either.md)), conditionally related ([Implies](../../triage/implies.md)), and denied ([Negate](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/complement.md)). The entire logical core of relationality unfolds from the requirements of consistent distinguishing.
 
 ## Mathematical correspondence
 
@@ -1681,7 +1681,7 @@ Either arises in [Movement I: Logical Origination](../../../../../../content/tex
 
 Choosing through Either is commutative (choosing between A and B is the same as choosing between B and A), associative, and idempotent (choosing between a recognition and itself produces itself). Either and Together interact through the distribution laws that any coherent field of recognitions must satisfy.
 
-The presence of both Together and Either — both ways of combining — is what makes conditional relating ([Implies](../../triage/implies.md)) and denial ([Negate](negate.md)) possible. Without Either, the logical core would lack the expressive range to formalize what it means for one recognition to conditionally relate to another.
+The presence of both Together and Either — both ways of combining — is what makes conditional relating ([Implies](../../triage/implies.md)) and denial ([Negate](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/complement.md)) possible. Without Either, the logical core would lack the expressive range to formalize what it means for one recognition to conditionally relate to another.
 
 ## Mathematical correspondence
 
@@ -1709,7 +1709,7 @@ The properties of Entails are not assumed but follow from what it means for dist
 - If A entails B and B entails C, then A entails C (transitivity — inclusion composes)
 - If A entails B and B entails A, then A and B are the same recognition (antisymmetry — mutual inclusion is identity)
 
-Entails organizes the entire field of recognitions into a structure where any two recognitions can be compared. It is the ordering that [Together](../../triage/together.md), [Either](../../triage/either.md), [Implies](../../triage/implies.md), and [Negate](negate.md) all respect and build on. The residuation law — the central structural relationship of the logical core — connects combining (Together), conditional relating (Implies), and this ordering.
+Entails organizes the entire field of recognitions into a structure where any two recognitions can be compared. It is the ordering that [Together](../../triage/together.md), [Either](../../triage/either.md), [Implies](../../triage/implies.md), and [Negate](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/complement.md) all respect and build on. The residuation law — the central structural relationship of the logical core — connects combining (Together), conditional relating (Implies), and this ordering.
 
 ## Mathematical correspondence
 
@@ -1717,7 +1717,7 @@ Entails gives the relation algebra its partial-order structure. In set-theoretic
 
 ## Related
 
-- [Excludes](../../triage/excludes.md) — exclusion, equivalent to Entails(r, [Negate](negate.md)(s))
+- [Excludes](../../triage/excludes.md) — exclusion, equivalent to Entails(r, [Negate](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/complement.md)(s))
 - [Implies](../../triage/implies.md) — conditional relating, defined via Entails and [Together](../../triage/together.md)
 - [Distinguish](../../triage/distinguish.md) — produces the recognitions that Entails orders
 
@@ -1729,7 +1729,7 @@ Entails gives the relation algebra its partial-order structure. In set-theoretic
 
 Equal is strict identity: the condition that two expressions denote exactly the same thing, with no room for structural variation or contextual relativity. It is the strongest notion of sameness in the relational framework.
 
-Equal operates across all five movements as a utility condition. It provides the strict identity used throughout the derivation whenever two expressions must be the same thing — as in the idempotence of [Close](close.md) (closing what is already closed changes nothing), the cubic return of [Iterate](iterate.md) (three self-applications restore the original), and the [KZ-Lax](../../triage/kz-lax.md) inequalities governing [Flow](../../documents/articles/notes/undated/flow.md).
+Equal operates across all five movements as a utility condition. It provides the strict identity used throughout the derivation whenever two expressions must be the same thing — as in the idempotence of [Close](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) (closing what is already closed changes nothing), the cubic return of [Iterate](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure.md) (three self-applications restore the original), and the [KZ-Lax](../../triage/kz-lax.md) inequalities governing [Flow](../../documents/articles/notes/undated/flow.md).
 
 Equal is reflexive (a thing is always equal to itself), symmetric (if a equals b then b equals a), and transitive (if a equals b and b equals c then a equals c). In a relational framework where things are constituted through their relations, strict extensional equality is a strong condition. The weaker notion [Equivalent](../../../../../../content/text/glossary/terms/equivalent.md) is often more natural, since it respects structural sameness — two things can play the same role without being literally the same object.
 
@@ -1763,12 +1763,12 @@ Excludes expresses incompatibility between two [recognitions](../../phenomena/re
 
 Excludes arises in [Movement I: Logical Origination](../../../../../../content/text/glossary/concepts/logical-origination.md) as the complement of inclusion. [Distinguishing](../concepts/differentiation.md) produces not only what is included but also what is excluded — the two dynamics are inseparable. To recognize something as A is simultaneously to exclude it from not-A. Excludes formalizes this inseparability.
 
-Two recognitions exclude each other precisely when one [entails](../../triage/entails.md) the [negation](negate.md) of the other. Equivalently, their [combining](../../triage/together.md) yields [Bottom](../../triage/bottom.md) — the empty recognition. These are not two separate conditions but two ways of saying the same thing, reflecting the internal consistency of the logical core.
+Two recognitions exclude each other precisely when one [entails](../../triage/entails.md) the [negation](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/complement.md) of the other. Equivalently, their [combining](../../triage/together.md) yields [Bottom](../../triage/bottom.md) — the empty recognition. These are not two separate conditions but two ways of saying the same thing, reflecting the internal consistency of the logical core.
 
 ## Related
 
 - [Entails](../../triage/entails.md) — Excludes reduces to Entails via negation
-- [Negate](negate.md) — exclusion is entailing the negation
+- [Negate](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/complement.md) — exclusion is entailing the negation
 - [Together](../../triage/together.md) — if two recognitions exclude, their combining is [Bottom](../../triage/bottom.md)
 
 ---
@@ -1938,7 +1938,7 @@ Global corresponds to the rightmost functor in a quadruple adjunction (cohesive 
 
 Identity is the condition of being fully determinate — neither necessarily restricted nor merely possible, but exactly what it is. It returns its input unchanged and mediates between the necessity modality ([Must](../../triage/must.md)) and the possibility modality ([May](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/may.md)).
 
-Identity arises in [Movement II: Structural Stabilization](../../../../../../content/text/glossary/concepts/structural-stabilization.md) as the modal analogue of [Include](../../documents/articles/notes/undated/include.md). Just as Include mediates between [Close](close.md) and [Open](open.md) at the stabilization layer, Identity mediates between Must and May at the modal layer. This triadic structure — necessity, identity, possibility — mirrors the triadic pattern at every level of the derivation: there is always an upper pole (consolidation, necessity), a lower pole (release, possibility), and a mediating position (self-persistence, identity) between them.
+Identity arises in [Movement II: Structural Stabilization](../../../../../../content/text/glossary/concepts/structural-stabilization.md) as the modal analogue of [Include](../../documents/articles/notes/undated/include.md). Just as Include mediates between [Close](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) and [Open](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) at the stabilization layer, Identity mediates between Must and May at the modal layer. This triadic structure — necessity, identity, possibility — mirrors the triadic pattern at every level of the derivation: there is always an upper pole (consolidation, necessity), a lower pole (release, possibility), and a mediating position (self-persistence, identity) between them.
 
 Applying Identity to itself changes nothing — what is fully determinate is fully determinately fully determinate. This trivial idempotence reflects the fact that Identity names the condition of being exactly what one is, which requires no further elaboration.
 
@@ -1960,7 +1960,7 @@ Implies arises in [Movement I: Logical Origination](../../../../../../content/te
 
 The structural signature of conditional relating is the residuation law: asking whether combining A with B [entails](../../triage/entails.md) C is the same as asking whether A alone entails that B implies C. This connection between combining, ordering, and conditional relating is what gives the relational logic its constructive character. Not every question has a determinate answer — some matters remain genuinely indeterminate until relational activity resolves them.
 
-Implies also provides the internal structure for [Negate](negate.md): denial is the special case of conditional relating where the consequent is [Bottom](../../triage/bottom.md) — the empty recognition. To deny A is to find the strongest recognition that, when combined with A, produces nothing.
+Implies also provides the internal structure for [Negate](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/complement.md): denial is the special case of conditional relating where the consequent is [Bottom](../../triage/bottom.md) — the empty recognition. To deny A is to find the strongest recognition that, when combined with A, produces nothing.
 
 ## Mathematical correspondence
 
@@ -1970,7 +1970,7 @@ Implies corresponds to the internal hom (residuated implication) of a Heyting al
 
 - [Together](../../triage/together.md) — combining, connected to Implies through residuation
 - [Entails](../../triage/entails.md) — the external ordering that Implies internalizes
-- [Negate](negate.md) — denial, defined as Implies(a, [Bottom](../../triage/bottom.md))
+- [Negate](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/complement.md) — denial, defined as Implies(a, [Bottom](../../triage/bottom.md))
 
 ---
 
@@ -1978,16 +1978,16 @@ Implies corresponds to the internal hom (residuated implication) of a Heyting al
 
 **defines:** Include
 
-Include is self-persistence: holding a [recognition](../../phenomena/recognition.md) as it is, between the dual motions of inward consolidation and outward release. While [Close](close.md) gathers inward and [Open](open.md) releases outward, Include names the recognition as itself — bounded above by its closure and below by its interior, occupying a stable position between the two.
+Include is self-persistence: holding a [recognition](../../phenomena/recognition.md) as it is, between the dual motions of inward consolidation and outward release. While [Close](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) gathers inward and [Open](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) releases outward, Include names the recognition as itself — bounded above by its closure and below by its interior, occupying a stable position between the two.
 
 Include arises in [Movement II: Structural Stabilization](../../../../../../content/text/glossary/concepts/structural-stabilization.md) as the recognition that something can persist as itself between the dual motions of [closure](../../phenomena/closure.md) and interior. Include is the formal expression of the idea that a thing can be recognized as itself without yet being reduced to its stable core (Open) or expanded to its full closure (Close).
 
-Because [Open](open.md)(a) is contained in a and a is contained in [Close](close.md)(a), Include sits at the midpoint of the Open-Close pair. It is the identity — it does not transform its input. What makes Include non-trivial is its structural position: it satisfies the [Stabilizes-Between](../../triage/stabilizes-between.md) condition, holding the thing steady between both poles. This mediating position is only possible because [balance](../concepts/balance.md) holds — because the dual motions do not interfere with each other.
+Because [Open](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md)(a) is contained in a and a is contained in [Close](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md)(a), Include sits at the midpoint of the Open-Close pair. It is the identity — it does not transform its input. What makes Include non-trivial is its structural position: it satisfies the [Stabilizes-Between](../../triage/stabilizes-between.md) condition, holding the thing steady between both poles. This mediating position is only possible because [balance](../concepts/balance.md) holds — because the dual motions do not interfere with each other.
 
 ## Related
 
-- [Close](close.md) — the upper pole that Include mediates toward
-- [Open](open.md) — the lower pole that Include mediates toward
+- [Close](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) — the upper pole that Include mediates toward
+- [Open](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) — the lower pole that Include mediates toward
 - [Stabilizes-Between](../../triage/stabilizes-between.md) — the condition that Include satisfies
 - [Balance](../concepts/balance.md) — the compatibility between Open and Close that makes mediation possible
 
@@ -2003,7 +2003,7 @@ Iterate arises at the close of [Movement I: Logical Origination](../../../../../
 
 Iteration is not mere redundancy — it is self-confirmation. One tests an operation against itself, feeding its output back into its input, until stability appears. Where this self-application stabilizes, a law or invariant emerges. In oral traditions, a story told and retold, if it stays consistent, carries truth. Reflexive stability is the point at which relation becomes lawful: the patterns of relation that survive iteration are those that structure reality.
 
-The operators [Close](close.md) and [Open](open.md) capture the stable endpoints of iteration — Close is the least stable configuration that contains the original, and Open is the greatest stable configuration contained within it.
+The operators [Close](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) and [Open](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) capture the stable endpoints of iteration — Close is the least stable configuration that contains the original, and Open is the greatest stable configuration contained within it.
 
 ## Mathematical correspondence
 
@@ -2011,8 +2011,8 @@ Iterate corresponds to a monotone, inflationary operator satisfying a cubic retu
 
 ## Related
 
-- [Close](close.md) — the least Iterate-stable recognition that contains the original
-- [Open](open.md) — the greatest Iterate-stable recognition contained in the original
+- [Close](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) — the least Iterate-stable recognition that contains the original
+- [Open](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) — the greatest Iterate-stable recognition contained in the original
 
 ---
 
@@ -2063,7 +2063,7 @@ In practice, maintaining balance means that applying the dynamic and then extrac
 
 Make System is the act of packaging a triad of operations into a single entity that can be manipulated as a whole. It lifts individual operations to the meta level, where the system can relate to its own structure.
 
-Make System arises in [Movement V: Emergent Containment](../../../../../../content/text/glossary/concepts/emergent-containment.md) when the entire relational field must be distinguished from what lies beyond it. The meta-boundary — the distinction between relation and non-relation — produces meta-level operations that act on triads as wholes. Make System packages a triad of operations (such as [Open](open.md)–[Include](../../documents/articles/notes/undated/include.md)–[Close](close.md) or [May](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/may.md)–[Identity](../../triage/identity.md)–[Must](../../triage/must.md)) into a single entity, enabling the relational field to treat its own triadic structures as objects of manipulation.
+Make System arises in [Movement V: Emergent Containment](../../../../../../content/text/glossary/concepts/emergent-containment.md) when the entire relational field must be distinguished from what lies beyond it. The meta-boundary — the distinction between relation and non-relation — produces meta-level operations that act on triads as wholes. Make System packages a triad of operations (such as [Open](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md)–[Include](../../documents/articles/notes/undated/include.md)–[Close](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) or [May](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/may.md)–[Identity](../../triage/identity.md)–[Must](../../triage/must.md)) into a single entity, enabling the relational field to treat its own triadic structures as objects of manipulation.
 
 This lifting to the meta level is what makes self-reference structurally possible. Rather than reasoning about three separate operations and their pairwise interactions, the framework can rotate ([Meta-Rotate](../../triage/meta-rotate.md)), iterate ([Meta-Iterate](../../triage/meta-iterate.md)), evolve ([Meta-Flow](../../triage/meta-flow.md)), and check the coherence ([Meta-Balance](../../triage/meta-balance.md)) of the system as a unit. States, evolution, and [measurement](../../../../../../content/text/glossary/concepts/measurement.md) emerge when the system relates to its own triadic organization.
 
@@ -2085,9 +2085,9 @@ May is possibility: what can be opened from within. When May is applied to a [re
 
 May arises in [Movement II: Structural Stabilization](../../../../../../content/text/glossary/concepts/structural-stabilization.md) as the dual of [Must](../../triage/must.md). Where Must picks out what survives all [closure](../../phenomena/closure.md), May picks out what survives all opening. It identifies not what is secured but what is genuinely available — the recognition's horizon of further determination.
 
-Applying May twice changes nothing beyond the first application — what is possibly the case is possibly possibly the case. This self-consistency mirrors the idempotence of the [Open](open.md) operator from which May arises.
+Applying May twice changes nothing beyond the first application — what is possibly the case is possibly possibly the case. This self-consistency mirrors the idempotence of the [Open](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) operator from which May arises.
 
-Must and May interlock: what is necessarily possible is possible, and what is possibly necessary is necessary. This interlocking is the modal expression of the [balance](../concepts/balance.md) between [Close](close.md) and [Open](open.md) — the two operators whose compatibility ensures that being can both consolidate and release without contradiction.
+Must and May interlock: what is necessarily possible is possible, and what is possibly necessary is necessary. This interlocking is the modal expression of the [balance](../concepts/balance.md) between [Close](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) and [Open](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) — the two operators whose compatibility ensures that being can both consolidate and release without contradiction.
 
 Directed motion ([Flow](../../documents/articles/notes/undated/flow.md)) must preserve both Must and May — this is the law that [flow preserves the modal core](../concepts/flow-preserves-the-modal-core.md). Change happens within the space defined by what is necessary and what is possible, never violating either boundary.
 
@@ -2098,7 +2098,7 @@ May corresponds to the possibility modality (◇) in S4 modal logic, arising fro
 ## Related
 
 - [Must](../../triage/must.md) — the dual: necessity, what survives all closure
-- [Open](open.md) — the interior operator from which May is derived
+- [Open](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) — the interior operator from which May is derived
 - [Identity](../../triage/identity.md) — the trivial modality mediating between Must and May
 - [Maintains-Balance](../../triage/maintains-balance.md) — the condition that a dynamic preserves Must and May
 
@@ -2151,7 +2151,7 @@ Meta-Flow carries the structure of a comonad on systems, with meta-counit (resol
 
 Meta-Iterate is systemic self-renewal: the act of applying a [system](../../triage/make-system.md) to itself, transforming the triad as a whole. Three applications return the system to its starting configuration — the system grows through self-application but does not depart from itself.
 
-Meta-Iterate arises in [Movement V: Emergent Containment](../../../../../../content/text/glossary/concepts/emergent-containment.md) as the system-level counterpart of [Iterate](iterate.md). Where Iterate applies an operation to its own output on individual [recognitions](../../phenomena/recognition.md), Meta-Iterate applies the entire triadic system to itself. The result is not an accumulation of changes but a cycle of renewal: after three steps, the system returns to where it started.
+Meta-Iterate arises in [Movement V: Emergent Containment](../../../../../../content/text/glossary/concepts/emergent-containment.md) as the system-level counterpart of [Iterate](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure.md). Where Iterate applies an operation to its own output on individual [recognitions](../../phenomena/recognition.md), Meta-Iterate applies the entire triadic system to itself. The result is not an accumulation of changes but a cycle of renewal: after three steps, the system returns to where it started.
 
 This triple-return law parallels [Meta-Rotate](../../triage/meta-rotate.md)'s cyclic behavior and reflects the deeper pattern that triadic structure in relationality is governed by three-fold symmetry at every level — from the cubic return of object-level iteration to the cyclic exchange of system-level roles.
 
@@ -2159,7 +2159,7 @@ This triple-return law parallels [Meta-Rotate](../../triage/meta-rotate.md)'s cy
 
 - [Make System](../../triage/make-system.md) — constructs the systems that Meta-Iterate acts on
 - [Meta-Rotate](../../triage/meta-rotate.md) — also has a triple-return property
-- [Iterate](iterate.md) — the object-level counterpart
+- [Iterate](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure.md) — the object-level counterpart
 
 ---
 
@@ -2171,13 +2171,13 @@ Meta-Rotate is cyclic exchange: the act of shifting the roles within a [system](
 
 Meta-Rotate arises in [Movement V: Emergent Containment](../../../../../../content/text/glossary/concepts/emergent-containment.md) as a meta-level operation on systems. When the relational field relates to its own structure, the roles within a triad become interchangeable — no component is privileged. The first can serve as the second, the second as the third, the third as the first. This cyclic symmetry expresses a deep feature of triadic relational structure: the coherence of the triad comes from the mutual relations among its parts, not from the labeling of positions.
 
-The same three-fold symmetry appears at the object level in [Iterate](iterate.md)'s cubic return law: three self-applications bring a recognition back to itself. Meta-Rotate lifts this pattern to systems, showing that the three-fold rhythm is not a surface feature but a structural invariant of relational triadic organization.
+The same three-fold symmetry appears at the object level in [Iterate](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure.md)'s cubic return law: three self-applications bring a recognition back to itself. Meta-Rotate lifts this pattern to systems, showing that the three-fold rhythm is not a surface feature but a structural invariant of relational triadic organization.
 
 ## Related
 
 - [Make System](../../triage/make-system.md) — constructs the systems that Meta-Rotate acts on
 - [Meta-Iterate](../../triage/meta-iterate.md) — also has a triple-return property at the system level
-- [Iterate](iterate.md) — the object-level counterpart with cubic return
+- [Iterate](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure.md) — the object-level counterpart with cubic return
 
 ---
 
@@ -2187,7 +2187,7 @@ The same three-fold symmetry appears at the object level in [Iterate](iterate.md
 
 Must is necessity: what survives all [closure](../../phenomena/closure.md). When Must is applied to a [recognition](../../phenomena/recognition.md), it picks out the part that persists under every consolidation — the core that cannot be undone by further distinction. What Must identifies is what the structure's own inward consolidation secures.
 
-Must arises in [Movement II: Structural Stabilization](../../../../../../content/text/glossary/concepts/structural-stabilization.md) when the equilibrium between [Close](close.md) and [Open](open.md) gives rise to two ways of qualifying what holds of a recognition. The inward motion — consolidating relation until no further addition changes its form — manifests as necessity. The outward motion manifests as [possibility](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/may.md). These are not imposed logical categories. They emerge from the structure's own self-[stabilization](../../processes/stabilization.md).
+Must arises in [Movement II: Structural Stabilization](../../../../../../content/text/glossary/concepts/structural-stabilization.md) when the equilibrium between [Close](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) and [Open](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) gives rise to two ways of qualifying what holds of a recognition. The inward motion — consolidating relation until no further addition changes its form — manifests as necessity. The outward motion manifests as [possibility](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/may.md). These are not imposed logical categories. They emerge from the structure's own self-[stabilization](../../processes/stabilization.md).
 
 Applying Must twice changes nothing beyond the first application — what is necessarily the case is necessarily necessarily the case. This self-consistency reflects the idempotence of the [closure](../../phenomena/closure.md) from which Must arises.
 
@@ -2202,7 +2202,7 @@ Must corresponds to the necessity modality (□) in S4 modal logic, arising from
 ## Related
 
 - [May](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/may.md) — the dual: possibility, what survives all opening
-- [Close](close.md) — the closure from which Must is derived
+- [Close](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) — the closure from which Must is derived
 - [Identity](../../triage/identity.md) — the trivial modality mediating between Must and May
 - [Maintains-Balance](../../triage/maintains-balance.md) — the condition that a dynamic preserves Must and May
 
@@ -2236,7 +2236,7 @@ Negate corresponds to the Heyting pseudocomplement — defined as [Implies](../.
 
 **defines:** Open
 
-Open is outward release: preserving what remains available for further [differentiation](../concepts/differentiation.md). Where [Close](close.md) secures form through inward consolidation, Open preserves freedom — the part of a [recognition](../../phenomena/recognition.md) that admits refinement without losing its identity. What is open is stable in the other direction: not by being completed, but by being genuinely available.
+Open is outward release: preserving what remains available for further [differentiation](../concepts/differentiation.md). Where [Close](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) secures form through inward consolidation, Open preserves freedom — the part of a [recognition](../../phenomena/recognition.md) that admits refinement without losing its identity. What is open is stable in the other direction: not by being completed, but by being genuinely available.
 
 Open arises in [Movement II: Structural Stabilization](../../../../../../content/text/glossary/concepts/structural-stabilization.md) as the complement of Close. If only closure operated, relations would rigidify into immobility. If only opening operated, they would dissolve into indeterminacy. The persistence of any structured being depends on a continuous interplay of both. Open captures the outward pole of this interplay.
 
@@ -2254,11 +2254,11 @@ Open corresponds to an interior operator on a Heyting algebra. Its fixed points 
 
 ## Related
 
-- [Close](close.md) — the dual: inward consolidation
+- [Close](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) — the dual: inward consolidation
 - [Balance](../concepts/balance.md) — the compatibility condition between Close and Open
 - [Include](../../documents/articles/notes/undated/include.md) — mediates between Close and Open
 - [May](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/may.md) — the possibility modality, defined through Open
-- [Iterate](iterate.md) — Open is the stable endpoint of iteration from below
+- [Iterate](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure.md) — Open is the stable endpoint of iteration from below
 
 ---
 
@@ -2358,7 +2358,7 @@ Reflexive equilibrium is introduced in [Phase 7 (relational field coherence)](..
 
 ## Relation to closure and iteration
 
-Reflexive equilibrium is the field-level version of what [closure](../../phenomena/closure.md) and [iteration](../../../../../../content/text/glossary/concepts/iteration.md) do at the level of individual recognitions. When a [closure](close.md) operator is applied to a recognition and the result is unchanged, the recognition has reached a fixed point — it is closed. When [iteration](iterate.md) is applied to a recognition and the result is unchanged, the recognition has stabilized.
+Reflexive equilibrium is the field-level version of what [closure](../../phenomena/closure.md) and [iteration](../../../../../../content/text/glossary/concepts/iteration.md) do at the level of individual recognitions. When a [closure](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) operator is applied to a recognition and the result is unchanged, the recognition has reached a fixed point — it is closed. When [iteration](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure.md) is applied to a recognition and the result is unchanged, the recognition has stabilized.
 
 Reflexive equilibrium extends this to the entire relational field. The field itself — including all the layered acts of relating, differentiating, field-integrating, and reflexive deepening — reaches a fixed point. No further internal [differentiation](../concepts/differentiation.md) is induced. The closure criteria of the integrated field are satisfied: all participating units are coherently engaged, and the system's structural form has settled.
 
@@ -2383,9 +2383,9 @@ Reflexive equilibrium does not stop the derivation from continuing. It stops the
 
 Relational [ontology](../../../philosophy/terms/ontology.md) is the philosophical claim at the foundation of relationality: relations are ontologically prior to entities. Things do not exist first and then enter into relations. Rather, things are constituted through their relations — what something *is* reduces to how it relates.
 
-This is not merely an alternative philosophical stance adopted for its consequences. The derivation demonstrates it: beginning from Relationlessness, the primitive act of [differentiation](../concepts/differentiation.md) produces [recognition](../../phenomena/recognition.md) before any entity-like structure exists. [Closure](../../phenomena/closure.md) produces self-maintaining units, but those units are constituted by the [closure](close.md) of relational activity, not by substance or [property](../../../sociology/terms/property.md).
+This is not merely an alternative philosophical stance adopted for its consequences. The derivation demonstrates it: beginning from Relationlessness, the primitive act of [differentiation](../concepts/differentiation.md) produces [recognition](../../phenomena/recognition.md) before any entity-like structure exists. [Closure](../../phenomena/closure.md) produces self-maintaining units, but those units are constituted by the [closure](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) of relational activity, not by substance or [property](../../../sociology/terms/property.md).
 
-The derivation's logic is intuitionistic (a [Heyting algebra](../../../mathematics/concepts/heyting-algebra/index.md) with [Together](../../terms/together.md), [Either](../../terms/either.md), [Implies](../../terms/implies.md), and [Negate](negate.md)), not classical. This reflects the relational stance: not every question has a determinate answer. Some matters are genuinely indeterminate until relational activity resolves them. The [law of excluded middle](../../../../../../content/text/glossary/terms/law-of-excluded-middle.md) fails because existence is relational, not substantial — there is no fact of the matter independent of the relations that constitute it.
+The derivation's logic is intuitionistic (a [Heyting algebra](../../../mathematics/concepts/heyting-algebra/index.md) with [Together](../../terms/together.md), [Either](../../terms/either.md), [Implies](../../terms/implies.md), and [Negate](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/complement.md)), not classical. This reflects the relational stance: not every question has a determinate answer. Some matters are genuinely indeterminate until relational activity resolves them. The [law of excluded middle](../../../../../../content/text/glossary/terms/law-of-excluded-middle.md) fails because existence is relational, not substantial — there is no fact of the matter independent of the relations that constitute it.
 
 Relational [ontology](../../../philosophy/terms/ontology.md) is grounded in Lakota epistemologies, where the primacy of relations over entities is not a theoretical innovation but a lived understanding. The derivation formalizes what that understanding requires: that relating precedes and constitutes what is related.
 
@@ -2447,17 +2447,17 @@ Shape corresponds to the left adjoint in a quadruple adjunction characteristic o
 
 **defines:** Stabilizes-Between
 
-Stabilizes-Between is the condition for self-persistence between dual poles. It names when something can persist as itself rather than collapsing to one extreme or the other — bounded by [closure](close.md) above and interior ([Open](open.md)) below, with these bounds compatible.
+Stabilizes-Between is the condition for self-persistence between dual poles. It names when something can persist as itself rather than collapsing to one extreme or the other — bounded by [closure](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) above and interior ([Open](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md)) below, with these bounds compatible.
 
-Stabilizes-Between arises in [Movement II: Structural Stabilization](../../../../../../content/text/glossary/concepts/structural-stabilization.md) as the full condition on [Include](../../documents/articles/notes/undated/include.md). Where [Balance](../concepts/balance.md) ensures that [Close](close.md) and [Open](open.md) do not interfere with each other, Stabilizes-Between ensures that the mediating identity (Include) sits coherently between them. A [recognition](../../phenomena/recognition.md), taken as it is, occupies a stable position: its interior lies below it, its closure lies above it, and these bounds are compatible.
+Stabilizes-Between arises in [Movement II: Structural Stabilization](../../../../../../content/text/glossary/concepts/structural-stabilization.md) as the full condition on [Include](../../documents/articles/notes/undated/include.md). Where [Balance](../concepts/balance.md) ensures that [Close](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) and [Open](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) do not interfere with each other, Stabilizes-Between ensures that the mediating identity (Include) sits coherently between them. A [recognition](../../phenomena/recognition.md), taken as it is, occupies a stable position: its interior lies below it, its closure lies above it, and these bounds are compatible.
 
 This condition presupposes Balance — without the compatibility of the dual pair, there is no coherent midpoint to occupy. It recurs at every level of the derivation wherever triadic structure appears: at the stabilization layer (Open, Include, Close), the modal layer ([May](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/may.md), [Identity](../../triage/identity.md), [Must](../../triage/must.md)), and the meta level.
 
 ## Related
 
 - [Include](../../documents/articles/notes/undated/include.md) — the mediating operator that satisfies this condition
-- [Open](open.md) — the lower pole (interior)
-- [Close](close.md) — the upper pole (closure)
+- [Open](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) — the lower pole (interior)
+- [Close](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) — the upper pole (closure)
 - [Balance](../concepts/balance.md) — the prerequisite compatibility condition on the dual pair
 
 ---

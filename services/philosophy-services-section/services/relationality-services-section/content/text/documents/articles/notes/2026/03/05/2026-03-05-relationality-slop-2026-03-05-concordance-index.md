@@ -62,18 +62,18 @@ These documents articulate the framework — not just what concepts exist but ho
 ### Logic (Movement I — formal operators)
 
 - [differentiate.md](../../../../../../glossary/terms/relationlessness.md) — the product of Reflex; the first recognition
-- [includes-excludes.md](../../../../../../glossary/terms/includes-excludes.md) — order and incompatibility
-- [together-either.md](../../../../../../glossary/terms/together-either.md) — conjunction and disjunction
-- [negate.md](../../../../../../glossary/terms/negate.md) — complement
-- [induces.md](../../../../../../glossary/terms/induces.md) — residual implication / sufficiency
-- [iterate.md](../../../../../../glossary/terms/iterate.md) — self-application
+- [includes-excludes.md](../../../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/preorder.md) — order and incompatibility
+- [together-either.md](../../../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/meet.md) — conjunction and disjunction
+- [negate.md](../../../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/complement.md) — complement
+- [induces.md](../../../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/heyting-implication.md) — residual implication / sufficiency
+- [iterate.md](../../../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure.md) — self-application
 
 ### Structure (Movement II)
 
-- [close.md](../../../../../../glossary/terms/close.md) — stabilizing closure
-- [open.md](../../../../../../glossary/terms/open.md) — interior operator
+- [close.md](../../../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) — stabilizing closure
+- [open.md](../../../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/closure-operator.md) — interior operator
 - [balance.md](../../../../../../glossary/concepts/balance.md) — equilibrium of Close and Open
-- [necessary-possible.md](../../../../../../glossary/terms/necessary-possible.md) — modal operators
+- [necessary-possible.md](../../../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/modal-logic.md) — modal operators
 
 ### Dynamics (Movement III)
 
