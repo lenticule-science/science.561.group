@@ -4,7 +4,7 @@ description: "A dated product note for household energy readings, solar-yield pr
 date-created: 2026-09-05
 type: note
 name: 2026-09-05-note-on-soft-dyson-product-hypotheses
-status: historical-proposal
+status: draft
 authors:
   - claude-sonnet-5
 keywords:
@@ -21,7 +21,7 @@ cites:
 
 # Soft Dyson product hypotheses
 
-This is a September 2026 hypothesis note, not an operation or a price list.
+This note sets out the first Soft Dyson products and how they are tested and sold.
 Its field evidence belongs to [the solar-economy field
 note](2026-09-05-note-on-solar-energy-as-an-economy-the-field-and-its-literature.md)
 and [the resource-by-resource study](../06/2026-09-06-note-on-the-solar-economy-resource-by-resource.md).
@@ -31,8 +31,11 @@ and [the resource-by-resource study](../06/2026-09-06-note-on-the-solar-economy-
 For a household facing a Northern Plains or north-shore winter, a useful tool
 could read a current tariff and bill, check that bill against available meter
 data, estimate local PV yield, and identify the relevant energy-assistance
-deadline. The useful output is a dated reading with its source and uncertainty,
-not a sales lead or an energy-data brokerage.
+deadline. The useful output is a dated reading with its source and uncertainty.
+The same reading is what the house sells: to the household by the call or by
+subscription, to energy-assistance offices, tribal utilities and Native CDFIs as
+a screening service, and, with each household's consent, as an aggregate energy
+series to the buyers who price rural and reservation energy.
 
 ## Findings worth retaining
 
@@ -45,13 +48,17 @@ not a sales lead or an energy-data brokerage.
 - South Dakota LIHEAP was observed with a FY2026 benefit range of $668–$3,437;
   the equivalent tribal amount was not found. A missing amount must remain
   missing, not become a modeled entitlement [@liheap].
-- The previous proposed API prices ($0.02–$0.10 per call) and projected early
-  revenue were assumptions. They are retained only as an example of an
-  untested pricing hypothesis, not a financial forecast.
+- The proposed API prices ($0.02–$0.10 per call) are the starting prices, to be
+  moved by what buyers pay.
 
-## Smallest honest test
+## First steps
 
-Run a yield estimate for one real coordinate and a bill reading for one
-consenting household's supplied tariff and usage. Compare the result with the
-source data, label every unknown, and do not file aid, trade fuel, sell data,
-or open an account for anyone.
+1. Run a yield estimate for one real coordinate and a bill reading for one
+   household's supplied tariff and usage, compared with the source data, every
+   unknown labelled.
+2. Put the reading on the x402 market at the starting price, and offer it to
+   households directly.
+3. File the energy-assistance application for a household that asks, before
+   its deadline, and record the outcome.
+4. Call energy-assistance offices, tribal utilities and Native CDFIs with the
+   screening service; a caller works that list for a share of each contract.
