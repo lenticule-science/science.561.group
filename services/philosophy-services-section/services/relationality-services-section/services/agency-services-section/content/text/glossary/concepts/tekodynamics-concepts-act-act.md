@@ -25,7 +25,7 @@ A [process](../../../../../../../../../social-science-services-section/services/
 - [imagining](../../../../../../content/text/glossary/terms/imagining.md)
 - [hospicing](../../../../../../content/text/glossary/terms/hospicing.md)
 - [healing](../../../../../../content/text/glossary/terms/healing.md)
-- [existing](../../../../../../../../content/text/glossary/terms/existing.md)
+- [existing](../../../../../../content/text/glossary/terms/existing.md)
 - [excluding](../../../../../../../../content/text/glossary/terms/excluding.md)
 - [constructing](../../../../../../content/text/glossary/terms/constructing.md)
 - [being](../../../../../../../../content/text/glossary/terms/being.md)

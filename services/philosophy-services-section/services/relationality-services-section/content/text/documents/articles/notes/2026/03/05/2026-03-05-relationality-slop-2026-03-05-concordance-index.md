@@ -53,7 +53,7 @@ These documents articulate the framework — not just what concepts exist but ho
 
 - [existing.md](../../../../../../glossary/terms/existing.md) — the first philosophical act: claiming something is; earns including/excluding
 - [tension.md](../../../../../../glossary/terms/tension.md) — the condition of mutual opposition between inclusion and exclusion
-- [difference.md](../../../../../../glossary/terms/relationality-slop-2026-03-05-difference.md) — the condition of being set apart (induced by tension)
+- [difference.md](../../../../../../glossary/terms/difference.md) — the condition of being set apart (induced by tension)
 - [relating.md](../../../undated/relating.md) — the act sustaining tension (distinct from include/exclude)
 - [unrelating.md](../../../../../../glossary/terms/unrelating.md) — the complement of relating: minimal act of exclusion
 - [relative.md](../../../../../../glossary/terms/relative.md) — the first structure (holds relation open durably)

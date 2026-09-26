@@ -11,15 +11,15 @@ description: Inclusion is the condition induced by including.
 
 ## Derivation
 
-- [deriving](../../../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/deriving.md) [existing](../../../../../../../../content/text/glossary/terms/existing.md) determines that a thing:
+- [deriving](../../../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/deriving.md) [existing](../../../../../../content/text/glossary/terms/existing.md) determines that a thing:
   - Be included in what it is (inducing inclusion)
   - Be [excluded](../../../../../../../../content/text/glossary/terms/excluding.md) from what it is not (inducing [exclusion](../../../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/exclusion.md))
 - The [act](tekodynamics-concepts-act-act.md) of including induces the condition of inclusion:
   - This condition describes the thing as a [member](../../../../../../../../content/text/glossary/terms/member.md) of a set.
-- [Deriving](../../../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/deriving.md) [existing](../../../../../../../../content/text/glossary/terms/existing.md) requires that a [thing](../../../../../../../../content/text/glossary/terms/thing.md):
+- [Deriving](../../../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/deriving.md) [existing](../../../../../../content/text/glossary/terms/existing.md) requires that a [thing](../../../../../../../../content/text/glossary/terms/thing.md):
   - Be included in what it is (inducing inclusion);
   - And be excluded from what it is not (inducing [exclusion](../../../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/exclusion.md)).
 
 ## Derived Truths
 
-- Every [thing](../../../../../../../../content/text/glossary/terms/thing.md) that [exists](../../../../../../../../content/text/glossary/terms/existing.md) is [conditioned](../../../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/conditioning.md) by both inclusion and [exclusion](../../../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/exclusion.md).
+- Every [thing](../../../../../../../../content/text/glossary/terms/thing.md) that [exists](../../../../../../content/text/glossary/terms/existing.md) is [conditioned](../../../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/conditioning.md) by both inclusion and [exclusion](../../../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/exclusion.md).

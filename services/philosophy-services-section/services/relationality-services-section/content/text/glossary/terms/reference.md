@@ -75,9 +75,9 @@ The derivation has seen exclusion before: [Excluding](../../../../../../content/
 
 A Chain is a linear sequence of composites or relational units, ordered and connected at a shared depth to propagate relational dynamics across the sequence.
 
-[Chain](../../triage/chain.md) arises from [Tension](triage-tension.md) — the structure that stabilizes distinct units in interplay. When multiple tension units are assembled into sequenced composites, the simplest configuration is a [Chain](../../triage/chain.md): a linear ordering where each unit connects to the next at a shared reflexive depth.
+[Chain](../../triage/chain.md) arises from [Tension](./tension.md) — the structure that stabilizes distinct units in interplay. When multiple tension units are assembled into sequenced composites, the simplest configuration is a [Chain](../../triage/chain.md): a linear ordering where each unit connects to the next at a shared reflexive depth.
 
-Where [Composition](../../triage/composition.md) (from step 2) established that relational forms can be placed side by side into ordered wholes, [Chain](../../triage/chain.md) extends this to multiple units held in [Tension](triage-tension.md). A [Chain](../../triage/chain.md) propagates relational dynamics across its length — what happens at one end can be carried through to the other.
+Where [Composition](../../triage/composition.md) (from step 2) established that relational forms can be placed side by side into ordered wholes, [Chain](../../triage/chain.md) extends this to multiple units held in [Tension](./tension.md). A [Chain](../../triage/chain.md) propagates relational dynamics across its length — what happens at one end can be carried through to the other.
 
 When [Chain](../../triage/chain.md)s interconnect in non-linear or branching patterns, they assemble into [Network](../concepts/network.md)s.
 
@@ -147,9 +147,9 @@ Co-Presence is a condition: multiple units in differentiated yet shared existenc
 
 Given that [Differentiating](../../../../../../../natural-science-services-section/services/biological-science-services-section/content/text/documents/articles/notes/undated/differentiating.md) positions units relative to each other, it cannot not derive a dynamic of relation: [Co-Presence](../../../../../../content/text/glossary/concepts/co-presence.md). This is the condition in which multiple reflexive relational units are maintained in differentiated yet shared existence within the relational field.
 
-[Co-Presence](../../../../../../content/text/glossary/concepts/co-presence.md) means units exist together, each distinct, but sharing the same relational space. They are not isolated — differentiation requires a shared context in which to be different. [Co-Presence](../../../../../../content/text/glossary/concepts/co-presence.md) enables relational [Tension](triage-tension.md): distinct units held in co-presence generate structured tension, which preserves both their differentiation and their mutual relationality.
+[Co-Presence](../../../../../../content/text/glossary/concepts/co-presence.md) means units exist together, each distinct, but sharing the same relational space. They are not isolated — differentiation requires a shared context in which to be different. [Co-Presence](../../../../../../content/text/glossary/concepts/co-presence.md) enables relational [Tension](./tension.md): distinct units held in co-presence generate structured tension, which preserves both their differentiation and their mutual relationality.
 
-[Co-Presence](../../../../../../content/text/glossary/concepts/co-presence.md) leads to [Tension](triage-tension.md) — the structure that stabilizes how these co-present units interact.
+[Co-Presence](../../../../../../content/text/glossary/concepts/co-presence.md) leads to [Tension](./tension.md) — the structure that stabilizes how these co-present units interact.
 
 ---
 
@@ -540,7 +540,7 @@ Given that [Bounding](../../../../../../content/text/glossary/terms/bounding.md)
 
 An Edge is a relational binding that links [Node](../../triage/node.md)s together within a [Network](../concepts/network.md), typically realized as a tension composite.
 
-An [Edge](../../triage/edge.md) connects two [Node](../../triage/node.md)s at a shared reflexive depth, forming the structural framework of a [Network](../concepts/network.md). [Edge](../../triage/edge.md)s are not abstract connectors imposed from outside — they are realized as tension composites: actual relational structures held in [Tension](triage-tension.md) that bind one unit to another.
+An [Edge](../../triage/edge.md) connects two [Node](../../triage/node.md)s at a shared reflexive depth, forming the structural framework of a [Network](../concepts/network.md). [Edge](../../triage/edge.md)s are not abstract connectors imposed from outside — they are realized as tension composites: actual relational structures held in [Tension](./tension.md) that bind one unit to another.
 
 Node/edge role invariance ensures that [Edge](../../triage/edge.md)s maintain their function as bindings (distinct from [Node](../../triage/node.md)s as positional elements) under reflexive and meta-reflexive deepening.
 
@@ -1320,16 +1320,16 @@ Given that [Relational Form](../../triage/relational-form.md) is determined by d
 
 Tension is a structure: the minimal structure stabilizing distinct units in interplay, preserving both their distinctness and their mutual relation.
 
-Given that [Co-Presence](../../../../../../content/text/glossary/concepts/co-presence.md) must sustain both differentiation and relational coherence between multiple units, it cannot not derive a dynamic of structure: [Tension](triage-tension.md). This is the minimal structure that formalizes and stabilizes the interplay between reflexive relational units, ensuring both their distinctness and their mutual relational coherence.
+Given that [Co-Presence](../../../../../../content/text/glossary/concepts/co-presence.md) must sustain both differentiation and relational coherence between multiple units, it cannot not derive a dynamic of structure: [Tension](./tension.md). This is the minimal structure that formalizes and stabilizes the interplay between reflexive relational units, ensuring both their distinctness and their mutual relational coherence.
 
-[Tension](triage-tension.md) supports ordered chain composition: multiple tension units can be assembled into sequenced composites. From [Tension](triage-tension.md) arise the first topological structures:
+[Tension](./tension.md) supports ordered chain composition: multiple tension units can be assembled into sequenced composites. From [Tension](./tension.md) arise the first topological structures:
 
 - [Chain](../../triage/chain.md) — a linear sequence of composites or relational units, ordered and connected at a shared depth to propagate relational dynamics across the sequence
 - [Network](../concepts/network.md) — what forms when multiple chains and composites interconnect in non-linear or branching patterns: an integrated web of connections
 - [Node](../../triage/node.md) — each distinct relational unit or composite functioning as a positional element within a network
 - [Edge](../../triage/edge.md) — the relational bindings that link nodes together, typically realized as tension composites
 
-These are not new derivation steps — they are aspects of [Tension](triage-tension.md), ways of describing the configurations that co-present interplay produces.
+These are not new derivation steps — they are aspects of [Tension](./tension.md), ways of describing the configurations that co-present interplay produces.
 
 ---
 

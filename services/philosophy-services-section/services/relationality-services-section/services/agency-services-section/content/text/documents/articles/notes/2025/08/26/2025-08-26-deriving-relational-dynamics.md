@@ -6,11 +6,11 @@ date-created: 2025-08-26
 description: This derivation explores the consequences of the claim that some thing is existing.
 ---
 
-This derivation explores the consequences of the [claim](../../../../../../../../../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/essay-writing-services-section/content/text/glossary/terms/claim.md) that some [thing](../../../../../../../../../../../../content/text/glossary/terms/thing.md) is [existing](../../../../../../../../../../../../content/text/glossary/terms/existing.md).
+This derivation explores the consequences of the [claim](../../../../../../../../../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/essay-writing-services-section/content/text/glossary/terms/claim.md) that some [thing](../../../../../../../../../../../../content/text/glossary/terms/thing.md) is [existing](../../../../../../../../../../content/text/glossary/terms/existing.md).
 
 # Deriving Existential Coherence
 
-- [Claiming](../../../../../../../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/claiming.md) that any [thing](../../../../../../../../../../../../content/text/glossary/terms/thing.md) [exists](../../../../../../../../../../../../content/text/glossary/terms/existing.md) is not trivial.
+- [Claiming](../../../../../../../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/claiming.md) that any [thing](../../../../../../../../../../../../content/text/glossary/terms/thing.md) [exists](../../../../../../../../../../content/text/glossary/terms/existing.md) is not trivial.
   - It is to claim:
     - Any thing is different no thing, or at a minimum
     - Any thing is not what it is not.
