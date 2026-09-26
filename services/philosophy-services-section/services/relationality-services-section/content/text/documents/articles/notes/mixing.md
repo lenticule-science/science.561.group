@@ -21,11 +21,3 @@ profile.  Restricting it to the entropy,
 {{ act_info(page.meta) }}
 
 {{ act_nav(page.meta) }}
-
-## Earlier material
-
-A system is mixing if states eventually become independent under long flow.
-[ProfileMixing](profile-mixing.md) already records this property for any
-profile.  Restricting it to the entropy,
-`(ProfileMixing Entropy)`, earns
-***Mixing***.

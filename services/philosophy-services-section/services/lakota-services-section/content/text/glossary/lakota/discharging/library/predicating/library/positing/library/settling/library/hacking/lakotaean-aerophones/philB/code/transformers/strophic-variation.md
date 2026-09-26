@@ -34,16 +34,3 @@ The resulting realized strophe is one of many possible variants of the underlyin
 ## Source claim
 
 [ornament-vocabulary](../../prose/learning/claims/ornament-vocabulary.md) (the source of [ornament-substitution](./ornament-substitution.md), the principal mechanism of strophic-variation).
-
-## Earlier material
-
-The operation taking a [strophe](../../prose/teaching/explanations/strophe.md)-template and a variation specification, and producing a realized strophe by applying [ornament-substitutions](ornament-substitution.md) and small rhythmic shifts at selected positions.
-
-where a *strophe-template* is a sequence of phrase-templates (each instantiating an entry from the [phrase-archetype-set](../structures/phrase-archetype-set.md)) with cadence selections from the [cadence-set](../structures/cadence-set.md), a *variation specification* is a mapping from positions-within-the-strophe to substitution-instructions (ornament-substitutions to apply at each named position, and rhythmic-shift parameters for designated phrase positions), and a *realized strophe* is a concrete sequence of phrases each consisting of concrete flute-note triples ready for performance.
-
-1. **Materialize the template**: Realize the strophe-template Σ as a sequence of plain phrases (each phrase a sequence of (scale-degree, duration, plain) triples instantiating its phrase-archetype, with the cadence-position phrase ending on the cadence-selection's terminal scale-degree).
-2. **Apply ornament substitutions**: For each (position, orn-spec) entry in ν, apply [ornament-substitution](ornament-substitution.md) at the named position with the named ornament(s).
-3. **Apply rhythmic shifts**: For each (phrase-position, shift-spec) entry in ν, adjust the durations of notes within the phrase per the shift specification (typically: elongation of melodic peaks, compression of stepwise passages, syncopation of selected interior beats).
-4. **Apply cadential reinforcement**: For the strophe-final phrase, ensure that the cadence carries its conventional terminal [warble](../../../b4/warble/warble.md) (this is done by default; ν may specify alternative cadential ornaments).
-
-[ornament-vocabulary](../../prose/learning/claims/ornament-vocabulary.md) (the source of [ornament-substitution](ornament-substitution.md), the principal mechanism of strophic-variation).

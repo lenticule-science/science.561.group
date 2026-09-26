@@ -11,9 +11,3 @@ IGORR is a [music artist](music-artist.md).
 ## "ADHD" {#c34e7690-4227-425f-88f8-fce0a6385cc5}
 
 [music track](../../../../../information-science-services-section/services/communication-science-services-section/services/media-science-services-section/services/music-services-section/content/text/documents/articles/notes/2025/07/21/2025-07-21-music-track.md), [electronic](electronic.md), [metal](metal.md)
-
-## Earlier material
-
-[music track](../../../../../information-science-services-section/services/communication-science-services-section/services/media-science-services-section/services/music-services-section/content/text/documents/articles/notes/2025/07/21/2025-07-21-music-track.md), [electronic](electronic.md), [metal](metal.md)
-
-[music track](../../../../../information-science-services-section/services/communication-science-services-section/services/media-science-services-section/services/music-services-section/content/text/documents/articles/notes/2025/07/21/2025-07-21-music-track.md), [electronic](electronic--002311.md), [metal](metal.md)

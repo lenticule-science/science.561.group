@@ -24,10 +24,3 @@ acts on this harmonic, yielding a spectral seed.
 {{ act_info(page.meta) }}
 
 {{ act_nav(page.meta) }}
-
-## Earlier material
-
-[ObservationKernel](2026/03/04/2026-03-04-observation-kernel.md) evolves states and attaches
-observational distributions, while [HarmonicMode](harmonic-mode.md)
-is a stable oscillatory pattern.  Their composition records how the kernel
-acts on this harmonic, yielding a spectral seed.

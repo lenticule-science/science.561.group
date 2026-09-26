@@ -21,11 +21,3 @@ Dynamics describe how the phase space evolves.  Starting from the general
 {{ act_info(page.meta) }}
 
 {{ act_nav(page.meta) }}
-
-## Earlier material
-
-Dynamics describe how the phase space evolves.  Starting from the general
-[ProfileDynamics](profile-dynamics.md), restricting to
-[FixedPhaseSpace](fixed-phase-space.md) yields the fixed dynamics:
-`(ProfileDynamics FixedPhaseSpace)` earns
-***FixedDynamics***.

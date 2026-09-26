@@ -24,11 +24,3 @@ Law governing when a flow step is reversible (entropy-neutral) or irreversible.
 ## Proof
 - Uses: flow context and entropy to classify reversibility.
 - Shows that: reversibility can be formally characterised with entropy bounds.
-
-## Earlier material
-
-## Definition
-- Criteria: a flow on recognitions is reversible if entropy (from
-  [Entropy Functional](entropy-functional.md)) is preserved and an
-  inverse flow exists on admissible states.
-- Data: witness of inverse flow or entropy-neutrality.

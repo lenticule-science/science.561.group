@@ -40,9 +40,3 @@ It detects cycles, then negates the cycle witness.
 - Shows that: if detection yields no cycles, negation yields the top predicate;
   if cycles are present, the predicate captures the failure, enabling
   topological ordering preconditions in wiring plans.
-
-## Earlier material
-
-Predicate over the [Recognition Carrier](../../../structure/recognition.md)
-asserting that the [Edge Set](edge-set.md) has no directed cycles.
-It detects cycles, then negates the cycle witness.

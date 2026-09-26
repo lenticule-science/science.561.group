@@ -28,14 +28,3 @@ Unit natural transformation for the flow–nucleus adjunction.
 - Uses: [Flow–Nucleus Adjunction](./flow-nucleus-adjunction.md) to
   supply the unit.
 - Shows that: unit maps exist and satisfy the adjunction laws.
-
-## Earlier material
-
-## Definition
-- Inputs: a [Context](../../../structure/context.md).
-- Outputs: unit map `eta: Id → nucleus ∘ flow` at that context.
-
-## Proof
-- Uses: [Flow–Nucleus Adjunction](flow-nucleus-adjunction.md) to
-  supply the unit.
-- Shows that: unit maps exist and satisfy the adjunction laws.

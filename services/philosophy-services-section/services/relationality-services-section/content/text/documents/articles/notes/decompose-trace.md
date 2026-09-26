@@ -33,14 +33,3 @@ continuation.
 {{ act_info(page.meta) }}
 
 {{ act_nav(page.meta) }}
-
-## Earlier material
-
-`StartTrace`, `AdvanceTrace`, `ContinueTrace`, and `CompleteTrace` record how a
-trace grows step by step, but nothing yet states the recursive *shape* of an
-arbitrary completed trace.  The head–tail recognitions
-([HeadTrace](head-trace.md), [TailTrace](tail-trace.md),
-[TraceStep](trace-step.md), [ReheadTrace](rehead-trace.md),
-[RetailTrace](retail-trace.md)) jointly witness the full record of
-[CompleteTrace](complete-trace.md), so letting `HeadTrace` observe `TailTrace`
-forces the decomposition of a trace into its left and right predecessors.

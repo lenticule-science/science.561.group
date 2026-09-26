@@ -33,14 +33,3 @@ Applies a Bayesian kernel to reweight epistemic profiles given an observation.
 - Uses: Bayesian kernel mechanics plus observation evidence.
 - Shows that: kernel-based Bayesian updates are realisable in the recognition
   framework.
-
-## Earlier material
-
-## Definition
-- Inputs: a [Bayesian Kernel](bayesian-kernel.md), an
-  [Epistemic Profile](epistemic-profile.md), and an
-  [Observation](../../../structure/observation.md).
-- Output: updated [Epistemic Profile](epistemic-profile.md)
-  reweighted and renormalised.
-- Behaviour: evaluate observation likelihoods, apply kernel transition, and
-  normalise via nucleus/entropy.

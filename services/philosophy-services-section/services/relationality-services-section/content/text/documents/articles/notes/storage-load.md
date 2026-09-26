@@ -43,12 +43,3 @@ Because `SnapContent` is fixed by the earned carriers and retrace/renew acts
 determine reconstruction, any operator respecting these produces the same
 `Section` up to nucleus equivalence; `load_snapshot` is unique in the earned
 sense.
-
-## Earlier material
-
-- Given `SnapId`, retrieve its `SnapContent` (observations, baseline remainder,
-  fixed recognitions).
-- Use [`retrace-context`](retrace-context.md) to replay the stored
-  context and [`renew-context`](renew-context.md) to reintroduce the
-  baseline remainder and fixed recognitions.
-- Produce a `Section` nucleus-equivalent to the one that was saved.

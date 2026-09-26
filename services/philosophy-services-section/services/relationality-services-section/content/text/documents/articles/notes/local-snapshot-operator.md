@@ -32,18 +32,3 @@ Captures local state with baseline remainder; no global context required.
 - Produces: [Memory Carrier](./memory-carrier.md).
 - Shows that: local snapshots are well-defined building blocks for distributed
   consistency.
-
-## Earlier material
-
-## Definition
-- Inputs: local [Persistent Context Carrier](persistent-context-carrier.md)
-  and [Persistent Recognition Carrier](../../../structure/persistent-recognition.md).
-- Output: local [Memory Carrier](memory-carrier.md) snapshot.
-- Behaviour: record local contexts/recognitions, compute baseline remainder, and
-  package for later global composition.
-
-## Proof
-- Uses: persistent carriers to build local snapshot.
-- Produces: [Memory Carrier](memory-carrier.md).
-- Shows that: local snapshots are well-defined building blocks for distributed
-  consistency.

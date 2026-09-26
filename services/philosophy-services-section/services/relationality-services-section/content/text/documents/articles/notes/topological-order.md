@@ -27,8 +27,3 @@ Fails if cycles remain.
 ## Invariants
 - Ordering is valid only if the plan is acyclic; cycles surface as failures upstream.
 - Pure read of plan edges; does not mutate the plan.
-
-## Earlier material
-
-Computes a topological ordering of steps in a [Wiring Plan](wiring-plan.md).
-Fails if cycles remain.

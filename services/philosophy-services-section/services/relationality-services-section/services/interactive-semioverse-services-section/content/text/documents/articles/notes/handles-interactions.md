@@ -33,9 +33,3 @@ A [handle](../../../glossary/terms/handle.md) is a persistent [indexical](../../
 ## Interaction surfaces
 
 An [interaction surface](../../../glossary/terms/interaction-surface.md) assigns a finite set of [interaction terms](../../../glossary/terms/interaction-term.md) to each handle. It is the relational boundary across which a handle's engagement with what lies outside the sign system generates meaning within it.
-
-## Earlier material
-
-[Interaction terms](../../../glossary/terms/interaction-term.md) are structured acts of [semiosis](../../../../../../../../../linguistics/topics/semiotics/terms/semiosis.md): expressions built from [handles](../../../../../../../content/text/terms/handle.md) and definable operators whose interpretation produces elements of $H$. They are the [semiotic](../../../../../../../../../linguistics/topics/semiotics/index.md) encounters through which handles generate meaning.
-
-An [interaction surface](../../../glossary/terms/interaction-surface.md) assigns a finite set of [interaction terms](../../../glossary/terms/interaction-term.md) to each handle. It is the relational boundary across which a handle's engagement with what lies outside the sign system generates meaning within it.

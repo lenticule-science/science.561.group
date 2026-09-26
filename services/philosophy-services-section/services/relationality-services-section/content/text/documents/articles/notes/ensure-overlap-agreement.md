@@ -37,8 +37,3 @@ agree on all overlaps defined by the [Coverage Site](./coverage-site.md).
   restricted sections via `validate-overlaps`.
 - Shows that: the family satisfies pairwise/triple coherence, a prerequisite
   for sheaf gluing.
-
-## Earlier material
-
-Verifies that the sections in a [Matching Family](matching-family.md)
-agree on all overlaps defined by the [Coverage Site](coverage-site.md).

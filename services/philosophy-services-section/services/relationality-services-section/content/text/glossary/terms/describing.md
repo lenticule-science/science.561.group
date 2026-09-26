@@ -24,7 +24,3 @@ describing is (a\|an\|the) [act](../../../../services/agency-services-section/co
    (description (format "%s is (a|an|the) %s" title form)))
     (if insert (insert description) description)))
 ```
-
-## Earlier material
-
-describing is (a\|an\|the) [act](../../../../services/agency-services-section/content/text/glossary/concepts/tekodynamics-concepts-act-act.md)

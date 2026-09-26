@@ -23,7 +23,3 @@ The W3C Recommendation for RDF 1.1 semantics: model-theoretic semantics for trip
 ## Where used
 
 - [Description logics, RDF, FCA](narratives-description-logics-rdf-fca.md)
-
-## Earlier material
-
-- [Description logics, RDF, FCA](description-logics-rdf-fca.md)

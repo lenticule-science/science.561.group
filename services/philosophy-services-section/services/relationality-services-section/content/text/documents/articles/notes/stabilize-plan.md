@@ -35,18 +35,3 @@ Adjusts a program wiring plan to resolve conflicts and maintain invariants.
 - Derived from: [Computer Evaluate Step](./evaluate-step.md).
 - Shows that: stabilising plans via evaluation yields a corrected plan or
   explicit failure, preserving kernel semantics.
-
-## Earlier material
-
-## Definition
-- Inputs: [Program Wiring Plan](program-wiring-plan.md).
-- Outputs: updated [Program Wiring Plan](program-wiring-plan.md) or
-  [Computer Failure](computer-failure.md).
-- Behaviour: rewrites the plan (reorder, adjust edges) to satisfy typing,
-  dependency, and policy constraints; emits failure if stabilization cannot
-  be achieved.
-
-## Proof
-- Derived from: [Computer Evaluate Step](evaluate-step.md).
-- Shows that: stabilising plans via evaluation yields a corrected plan or
-  explicit failure, preserving kernel semantics.

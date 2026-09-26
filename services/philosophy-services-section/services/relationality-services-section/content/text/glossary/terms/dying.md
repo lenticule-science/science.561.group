@@ -11,7 +11,3 @@ visibility: public
 ***Dying*** is [stopping](../../../../../../content/text/glossary/terms/stopping.md) [living](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/living.md).
 
 That is, dying is any [mode of stopping](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/mode-of-stopping.md) that [operates](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/operating.md) on the [mode of living](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/mode-of-living.md) of a thing that the [result](result.md) is [dead](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/dead.md) is a [condition](../../../../services/agency-services-section/content/text/glossary/terms/condition.md) of the thing.
-
-## Earlier material
-
-***Dying*** is [stopping](../../../../../../content/text/glossary/terms/stopping.md) [living](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/living.md).

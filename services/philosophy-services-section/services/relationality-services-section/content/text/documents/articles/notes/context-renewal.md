@@ -26,14 +26,3 @@ derives-from: acts/renew-context
 ## Proof
 - Derived from: [Renew Context](./renew-context.md).
 - Shows that: renewing contexts with baseline tails yields contexts consistent with future extensions and bindings, preserving the baseline remainder.
-
-## Earlier material
-
-## Definition
-- Inputs: baseline remainder from [Baseline Remainder](baseline-remainder.md) and a context to renew.
-- Outputs: renewed context carrying the baseline remainder forward.
-- Behaviour: renews a context (via [Renew Context](renew-context.md)) while preserving bindings and baseline tail.
-
-## Proof
-- Derived from: [Renew Context](renew-context.md).
-- Shows that: renewing contexts with baseline tails yields contexts consistent with future extensions and bindings, preserving the baseline remainder.

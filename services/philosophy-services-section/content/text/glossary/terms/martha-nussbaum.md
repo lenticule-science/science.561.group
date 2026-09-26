@@ -14,10 +14,3 @@ date-created: 2025-09-01
 
 [name](../../../../services/logic-services-section/content/text/documents/articles/notes/undated/name.md)  
 Martha Nussbaum
-
-## Earlier material
-
-- [person](person.org.md)
-
-[name](../../../../services/logic-services-section/content/text/documents/articles/notes/undated/name.md)  
-[Martha Nussbaum](martha-nussbaum.md)

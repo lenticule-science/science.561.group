@@ -23,7 +23,3 @@ It acts trivially on the scale-degree coordinate and multiplicatively on the fun
 ## Source claim
 
 [pitch-space-factors-as-scale-times-fundamental](../../prose/learning/claims/pitch-space-factors-as-scale-times-fundamental.md).
-
-## Earlier material
-
-[pitch-space-factors-as-scale-times-fundamental](../../prose/learning/claims/pitch-space-factors-as-scale-times-fundamental.md).

@@ -41,8 +41,3 @@ environment maps `name` to `value` (shadowing any prior binding).
 ## Invariants
 - Functional update: produces a new state; original bindings remain unchanged.
 - Shadowing: new binding for `name` overwrites prior mapping while preserving others.
-
-## Earlier material
-
-Returns a new [Evaluation State](evaluation-state.md) whose binding
-environment maps `name` to `value` (shadowing any prior binding).

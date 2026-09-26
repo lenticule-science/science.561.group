@@ -31,13 +31,3 @@ The **practical range** is therefore the union of the n=1 series and the n=2 ser
 ## Specification
 
 [harmonic-series.spec](../../work/governance/rules/specifications/harmonic-series.spec.md).
-
-## Earlier material
-
-- **All-harmonics**: every integer multiple of f₀ is a theoretically-supported partial (open-open bore).
-- **Sparse practical access**: only n=1 and n=2 are stable on the cedar flute.
-- **Overblowing**: the [overblow](../transformers/overblow.md) transformer realizes the shift from n=1 to n=2.
-
-[cylindrical-bore-admits-full-harmonic-series](../../prose/learning/claims/cylindrical-bore-admits-full-harmonic-series.md).
-
-[harmonic-series.spec](../../work/governance/rules/specifications/harmonic-series.spec.md).

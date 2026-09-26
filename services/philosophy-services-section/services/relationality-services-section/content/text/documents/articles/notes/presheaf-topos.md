@@ -27,9 +27,3 @@ profile site, with finite limits and exponentials as given by
 ## Proof
 Directly derived from `acts/presheaf-topos`, which constructs the presheaf
 category and exhibits its topos structure.
-
-## Earlier material
-
-The **Presheaf Topos** is the earned category of presheaves on the relational
-profile site, with finite limits and exponentials as given by
-[`acts/presheaf-topos`](presheaf-topos.md).

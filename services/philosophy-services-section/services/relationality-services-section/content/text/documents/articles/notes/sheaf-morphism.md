@@ -26,11 +26,3 @@ restriction/gluing structure.
 ## Proof
 - Uses: sheaf structure and restriction algebra to define natural transformations.
 - Shows that: morphisms preserve earned sheaf structure on the hypertensor site.
-
-## Earlier material
-
-## Definition
-- Components: natural transformation between functors underlying
-  [Hypertensor Sheaf](hypertensor-sheaf.md) objects on the
-  [Hypertensor Site](hypertensor-site.md).
-- Preservation: commutes with restrictions and gluing/locality laws.

@@ -33,12 +33,3 @@ topos.
   and the recognition classifier.
 - Shows that: recognitions/subobjects can be transported along morphisms while
   preserving classifier semantics.
-
-## Earlier material
-
-## Definition
-- Inputs: a morphism `f: X → Y` and a subobject/recognition on `Y` expressed via
-  the [Recognition Classifier](recognition-classifier.md).
-- Outputs: the pullback recognition/subobject on `X`.
-- Behaviour: composes the characteristic map with `f` to obtain the pulled-back
-  recognition.

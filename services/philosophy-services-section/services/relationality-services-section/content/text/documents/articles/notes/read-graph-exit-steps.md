@@ -24,8 +24,3 @@ Computes the list of exit steps (no outgoing edges) in a
 
 ## Invariants
 - Returns identifiers of steps with no outgoing edges; pure graph query.
-
-## Earlier material
-
-Computes the list of exit steps (no outgoing edges) in a
-[Connection Graph](connection-graph.md).

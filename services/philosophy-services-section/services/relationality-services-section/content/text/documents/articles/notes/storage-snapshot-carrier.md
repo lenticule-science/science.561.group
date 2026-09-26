@@ -47,17 +47,3 @@ that capture the minimal data needed to store and reload a sheaf section.
 Any carriers that capture exactly these earned pieces and support fresh
 identifiers are nucleus-equivalent; `SnapId` and `SnapContent` are unique up to
 earned equivalence.
-
-## Earlier material
-
-- [`baseline-limit`](baseline-limit.md) yields the earned
-  `BaselineRemainder` for a trace.
-- Fixed recognitions eligible for storage come from
-  [`fixed-invariant`](fixed-invariant.md) and reachability via
-  [`reach`](reach.md); these form `PersistentRecognitionCarrier`.
-- Intake-normalised observations populate `Observations` (from the intake
-  stack, implied here).
-- `SnapContent` packages `(Observations, BaselineRemainder,
-  PersistentRecognitionCarrier)`.
-- `SnapId` is an earned identifier for pairing with `SnapContent` (freshness
-  comes from the persistence discipline; see persistence carriers).

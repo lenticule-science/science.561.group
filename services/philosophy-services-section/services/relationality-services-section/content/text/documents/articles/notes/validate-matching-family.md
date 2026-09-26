@@ -38,9 +38,3 @@ coherence conditions required for sheaf gluing.
   pairwise and triple-overlap agreement.
 - Shows that: only matching data passes through to gluing; mismatches are
   rejected.
-
-## Earlier material
-
-Checks that a [Matching Family](matching-family.md) over a cover in
-a [Coverage Site](coverage-site.md) satisfies the overlap and
-coherence conditions required for sheaf gluing.

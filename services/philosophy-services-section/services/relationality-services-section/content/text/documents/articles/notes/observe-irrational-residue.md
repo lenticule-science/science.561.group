@@ -25,8 +25,3 @@ structure for use in other operators.
 ## Invariants
 - Pure projection: does not mutate the source structure.
 - Returned recognition is exactly the packaged residue.
-
-## Earlier material
-
-Projects the stabilized residue from an [Irrational Mystery](irrational-mystery.md)
-structure for use in other operators.

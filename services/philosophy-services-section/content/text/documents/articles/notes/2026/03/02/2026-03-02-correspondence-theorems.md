@@ -169,19 +169,3 @@ See [Relational Physics](../../../../../../../../services/relationality-services
 The self-containment theorem $\mathsf{R}_{**} \simeq \mathsf{R}_*$ (Theorem 6.2 of [The Modal Structure](../../../../research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-03/texts/the-modal-structure.md)) corresponds to the *reflexivity* [property](../../../../research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/sociology/terms/property.md) of the $\infty$-topos: the modality tower stabilizes, and the structure is a [fixed point](../../../../research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/mathematics/concepts/fixed-point/index.md) of its own construction.
 
 See [Relational Infinity-Topos](../../../../../../../../services/relationality-services-section/content/text/glossary/concepts/infinity-topos.md).
-
-## Earlier material
-
-See [Relational Lambda Calculus](../../../../../../../../services/relationality-services-section/content/text/disciplines/mathematics/concepts/lambda-calculus.md).
-
-See [Relational Modal Operators](../../../../../../../../services/relationality-services-section/content/text/glossary/concepts/modal-operators.md).
-
-See [Flow and Nucleus](../../../../../../../../services/relationality-services-section/content/text/glossary/concepts/flow-nucleus.md).
-
-See [Relational Residuated Lattices](../../../../../../../../services/relationality-services-section/content/text/glossary/concepts/residuated-lattices.md).
-
-See [Relational Sheaf Semantics](../../../../../../../../services/relationality-services-section/content/text/disciplines/mathematics/concepts/sheaf-semantics.md).
-
-See [Relational Physics](../../../../../../../../services/relationality-services-section/content/text/glossary/concepts/relational-physics.md).
-
-See [Relational Infinity-Topos](../../../../../../../../services/relationality-services-section/content/text/glossary/concepts/infinity-topos.md).

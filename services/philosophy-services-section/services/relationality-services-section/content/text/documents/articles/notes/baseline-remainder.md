@@ -21,12 +21,3 @@ derives-from: acts/baseline-limit
 ## Proof
 - Derived from: [Baseline Limit](./baseline-limit.md).
 - Shows that: applying baseline convergence to tail traces yields a stabilized remainder, unique up to earned equivalence.
-
-## Earlier material
-
-- Carrier: the stabilized tail of a trace.
-- Source: earned via [Baseline Limit](baseline-limit.md), using convergence of [Baseline Convergence](baseline-convergence.md) on [Tail Trace](tail-trace.md).
-
-## Proof
-- Derived from: [Baseline Limit](baseline-limit.md).
-- Shows that: applying baseline convergence to tail traces yields a stabilized remainder, unique up to earned equivalence.

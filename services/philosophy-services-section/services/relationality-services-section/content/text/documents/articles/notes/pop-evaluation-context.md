@@ -35,8 +35,3 @@ Removes the top evaluation frame from the context stack inside an
 ## Invariants
 - Removes exactly one frame from the head of the context stack.
 - Stack remains well-formed; no mutation beyond dropping the head.
-
-## Earlier material
-
-Removes the top evaluation frame from the context stack inside an
-[Evaluation State](evaluation-state.md), returning the updated state.

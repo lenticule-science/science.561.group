@@ -62,10 +62,3 @@ Implements the audit guarantees of **Theorem (Audit Stack)**.
 - **Alerts.**
   Recognitions emitted when provenance cannot be reconstructed (indicating
   misconfiguration).
-
-## Earlier material
-
-- **Provenance records.**  
-  Audit entries persisted as recognitions in the relational state, each
-  referencing a `SnapId` (see [Relational Storage Simulation](storage.md)) and
-  the relevant routing metadata.

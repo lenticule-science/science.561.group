@@ -27,8 +27,3 @@ associated with an operator id from the interpreter’s registry.
 ## Proof
 - Uses: the registry mapping operator ids to their signatures.
 - Shows that: signatures are available to enforce typing before execution.
-
-## Earlier material
-
-Kernel lookup that retrieves the [Operator Signature](operator-signature.md)
-associated with an operator id from the interpreter’s registry.

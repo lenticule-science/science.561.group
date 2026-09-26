@@ -31,9 +31,3 @@ interactions and constraints.
 ## Proof
 - Derived from: [Documentation Interpreter](./documentation-interpreter.md).
 - Shows that: this program explores modality towers atop the documentation interpreter without extending machine semantics.
-
-## Earlier material
-
-## Proof
-- Derived from: [Documentation Interpreter](documentation-interpreter.md).
-- Shows that: this program explores modality towers atop the documentation interpreter without extending machine semantics.

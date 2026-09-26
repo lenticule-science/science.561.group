@@ -63,7 +63,3 @@ return the corresponding component of a quadruple.
 `x` such that any re-application of the same recognition act and policy to
 `π_state(x)` returns a point `y` with the same payload and state and with
 `ExtendsTrace(x, y)` and/or `RefinesPolicy(x, y)` true.
-
-## Earlier material
-
-whose points are quadruples `(r, c, (tau), p)` earned exactly when one of the recognition acts [Recognize Observation](recognize-observation.md), [Recognize Judgement Triad](recognize-judgement-triad.md), or [Recognize Context](recognize-context.md) succeeds on a `State` value `r` (from [Relational Quasicrystalline Hypertensor Sheaf](universal-state-hypertensor.md)), producing payload `c`, trace `(tau)`, and policy snapshot `p` (from [Policy Stack](policy-stack.md)).

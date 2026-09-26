@@ -31,8 +31,3 @@ Projects the [Edge Set](./edge-set.md) from a
 - Uses: the edge declarations embedded in the connection graph.
 - Shows that: edges can be extracted for downstream checks without primitive
   opcodes.
-
-## Earlier material
-
-Projects the [Edge Set](edge-set.md) from a
-[Connection Graph](connection-graph.md).

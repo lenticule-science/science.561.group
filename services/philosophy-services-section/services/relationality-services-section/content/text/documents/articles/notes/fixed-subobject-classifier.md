@@ -22,12 +22,3 @@ inside the fixed profile we restrict that classifier to
 {{ act_info(page.meta) }}
 
 {{ act_nav(page.meta) }}
-
-## Earlier material
-
-The profile already carries an internal truth object via
-[ProfileSubobjectClassifier](profile-subobject-classifier.md).  To reason purely
-inside the fixed profile we restrict that classifier to
-[FixedProfileRecognitions](fixed-profile-recognitions.md):
-`(ProfileSubobjectClassifier FixedProfileRecognitions)` earns
-***FixedSubobjectClassifier***.

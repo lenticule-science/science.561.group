@@ -24,10 +24,3 @@ Markov evolution).
 ## Proof
 - Uses: flow context to define deterministic evolution.
 - Shows that: time kernels can be defined apart from stochastic kernels.
-
-## Earlier material
-
-## Definition
-- Transition: time-indexed operator on recognitions driven by
-  [Flow Context](flow-context.md) without probabilistic weighting.
-- Purpose: model deterministic or schedulable time evolution.

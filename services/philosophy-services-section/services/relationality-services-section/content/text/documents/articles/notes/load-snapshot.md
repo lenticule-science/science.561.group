@@ -33,7 +33,3 @@ Reconstructs recognitions and evaluation state from a stored [Snapshot](./snapsh
 - Uses: decode/reconstruction primitive.
 - Shows that: loading is explicit; failures are surfaced when reconstruction
   cannot satisfy invariants.
-
-## Earlier material
-
-Reconstructs recognitions and evaluation state from a stored [Snapshot](snapshot.md).

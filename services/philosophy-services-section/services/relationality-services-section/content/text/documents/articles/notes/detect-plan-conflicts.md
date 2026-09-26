@@ -34,17 +34,3 @@ Analyzes a program wiring plan for overlaps or constraint violations.
 - Derived from: [Computer Evaluate Step](./evaluate-step.md).
 - Shows that: conflict detection can be performed as an evaluation step yielding
   explicit failures without altering state.
-
-## Earlier material
-
-## Definition
-- Inputs: [Program Wiring Plan](program-wiring-plan.md).
-- Outputs: success (no conflicts) or [Computer Failure](computer-failure.md)
-  describing conflicts.
-- Behaviour: checks typing, dependency ordering, and policy/trace constraints;
-  emits failure if conflicts are found.
-
-## Proof
-- Derived from: [Computer Evaluate Step](evaluate-step.md).
-- Shows that: conflict detection can be performed as an evaluation step yielding
-  explicit failures without altering state.

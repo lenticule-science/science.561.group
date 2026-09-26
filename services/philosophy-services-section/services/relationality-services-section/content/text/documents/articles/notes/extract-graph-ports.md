@@ -26,9 +26,3 @@ signatures into typed input/output ports.
 ## Proof
 - Uses: step signatures in the graph to enumerate ports.
 - Shows that: port data can be separated for independent typing/wiring checks.
-
-## Earlier material
-
-Extracts the [Port Set](port-set.md) from a
-[Connection Graph](connection-graph.md), expanding operator
-signatures into typed input/output ports.

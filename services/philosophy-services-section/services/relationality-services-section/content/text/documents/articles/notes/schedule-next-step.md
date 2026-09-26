@@ -31,9 +31,3 @@ and marks it in-flight for execution.
 ## Proof
 - Uses: ready queue and plan topology to pick a ready step.
 - Shows that: scheduling advances deterministically or produces failure if no ready steps remain.
-
-## Earlier material
-
-Removes the head of the ready queue in an [Evaluation State](evaluation-state.md),
-checks its input bindings from the [Wiring Plan](wiring-plan.md),
-and marks it in-flight for execution.

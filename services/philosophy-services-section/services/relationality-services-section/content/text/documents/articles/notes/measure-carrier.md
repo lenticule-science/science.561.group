@@ -28,8 +28,3 @@ of measures/integrals over observables.
 ## Uniqueness
 
 Given these acts, `Measures` is unique up to earned equivalence.
-
-## Earlier material
-
-The acts [`measure`](../../../acts/measure.md) and
-[`profile-integral`](profile-integral.md) earn a carrier

@@ -31,11 +31,3 @@ context.
   context from [Trace Carrier](undated/trace.md).
 - Shows that: lifting policy acts into calculus yields a parameterised policy
   carrier usable by recognition and system scheduling.
-
-## Earlier material
-
-## Proof
-- Derived from: [Govern Regime](govern-regime.md) with trace
-  context from [Trace Carrier](undated/trace.md).
-- Shows that: lifting policy acts into calculus yields a parameterised policy
-  carrier usable by recognition and system scheduling.

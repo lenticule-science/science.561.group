@@ -30,13 +30,3 @@ along the earned profile flow.
 By construction from [`acts/context-flow`](./context-flow.md), this
 operator is the earned flow on contexts. It preserves the admissible structure
 of contexts while advancing them along the induced profile flow.
-
-## Earlier material
-
-The **Flow Context** operator evolves a [Context](../../../triage/docs/math/structure/context.md)
-along the earned profile flow.
-
-## Proof
-By construction from [`acts/context-flow`](context-flow.md), this
-operator is the earned flow on contexts. It preserves the admissible structure
-of contexts while advancing them along the induced profile flow.

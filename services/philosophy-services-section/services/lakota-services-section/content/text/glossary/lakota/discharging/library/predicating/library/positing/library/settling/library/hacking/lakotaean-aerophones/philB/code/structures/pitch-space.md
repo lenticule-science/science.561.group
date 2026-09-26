@@ -31,9 +31,3 @@ The first projection π_S : P → S extracts the scale-degree; the second projec
 ## Specification
 
 [pitch-space.spec](../../work/governance/rules/specifications/pitch-space.spec.md).
-
-## Earlier material
-
-[pitch-space-factors-as-scale-times-fundamental](../../prose/learning/claims/pitch-space-factors-as-scale-times-fundamental.md).
-
-[pitch-space.spec](../../work/governance/rules/specifications/pitch-space.spec.md).

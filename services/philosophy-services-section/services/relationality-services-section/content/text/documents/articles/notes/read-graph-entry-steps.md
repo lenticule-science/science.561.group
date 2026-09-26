@@ -24,8 +24,3 @@ Computes the list of entry steps (no incoming edges) in a
 
 ## Invariants
 - Returns identifiers of steps with no incoming edges; pure graph query.
-
-## Earlier material
-
-Computes the list of entry steps (no incoming edges) in a
-[Connection Graph](connection-graph.md).

@@ -30,11 +30,3 @@ Provides the identity (constant) path at a recognition/context.
 Uses the directed-path structure to form constant paths and the groupoid data
 to supply unit homotopies. Shows that identity paths act as units for path
 composition in the directed path/fundamental groupoid.
-
-## Earlier material
-
-## Definition
-- Inputs: a point/recognition `x` in the
-  [Recognition Carrier](../../../structure/recognition.md).
-- Outputs: identity path `id_x: x → x` in
-  [Directed Path](directed-path.md).

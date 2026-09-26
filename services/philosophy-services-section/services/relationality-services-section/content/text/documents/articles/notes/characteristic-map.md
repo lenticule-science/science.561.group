@@ -37,21 +37,3 @@ classifier (Omega) in the relational sheaf topos.
   characteristic maps.
 - Shows that: every subobject admits a unique characteristic map satisfying the
   classifier property, stable under base change.
-
-## Earlier material
-
-## Definition
-- Inputs: a monomorphism/subobject in the relational sheaf topos, expressed via
-  the [Subobject Classifier](../../../structure/subobject-classifier.md).
-- Outputs: its characteristic morphism into the
-  [Recognition Classifier](recognition-classifier.md).
-- Behaviour: assigns to each element/section the recognition (truth value)
-  indicating membership in the subobject; compatible with base change via
-  [Base Change Square](base-change-square.md).
-
-## Proof
-- Uses: [Subobject Classifier](../../../structure/subobject-classifier.md) and
-  [Recognition Classifier](recognition-classifier.md) to define
-  characteristic maps.
-- Shows that: every subobject admits a unique characteristic map satisfying the
-  classifier property, stable under base change.

@@ -32,9 +32,3 @@ observation layer.
 ## Proof
 Derived from [`acts/observe-judgement`](./observe-judgement.md),
 which ensures observed witnesses match the stabilized judgment classification.
-
-## Earlier material
-
-## Proof
-Derived from [`acts/observe-judgement`](observe-judgement.md),
-which ensures observed witnesses match the stabilized judgment classification.

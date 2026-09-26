@@ -51,9 +51,3 @@ These are the same adjunction:
 The product side combines, generates, extends. The implication side tests, constrains, restricts. Every [subject-predicate-object](../../../../../../../../../information-science-services-section/content/text/glossary/terms/subject-predicate-object.md) assertion has both readings, connected by the residuation: asserting that S extends toward O through P is the same as asserting that O restricts S through P.
 
 The bridge between these fields is the theorem that the Lambek calculus is the logic of residuated lattices (Galatos et al. 2007). Grammar, logic, and algebra are studying the same mathematical object. The object is predication.
-
-## Earlier material
-
-Lawvere (1969) found the same structure in categorical logic. The two fundamental operations on predicates in a [hyperdoctrine](../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/hyperdoctrine.md) are:
-
-Busaniche & Cignoli (2014) proved that the [twist product](../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/residuated-lattice/content/twist-product/twist-product.md) $L \otimes L$ of any commutative residuated lattice inherits a residuation. Instantiating on $\mathbf{2} \otimes \mathbf{2}$ — the four-valued [bilattice](../../../../../../services/agency-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/knowing/content/knowledge-science/archive/prose/math/theories/algebra/terms/bilattice.md) — gives explicit operations $\odot$ (extending) and $\Rightarrow$ (restricting) with:

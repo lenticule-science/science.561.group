@@ -33,19 +33,3 @@ Rollback the current relational state to a given time slice.
 - Produces: [Hypertensor Section](./hypertensor-section.md).
 - Shows that: rollback reconstructs an earlier state without violating earned
   causality constraints.
-
-## Earlier material
-
-## Definition
-- Inputs: a [Time Slice](time-slice.md) and access to
-  [Load Context](../../../triage/load-context.md).
-- Output: restored [Hypertensor Section](hypertensor-section.md)
-  consistent with the saved memory carrier.
-- Behaviour: load saved contexts/recognitions from the slice, replace current
-  section, and discard morphisms that do not factor through the slice.
-
-## Proof
-- Uses: [Time Slice](time-slice.md) and [Load Context](../../../triage/load-context.md).
-- Produces: [Hypertensor Section](hypertensor-section.md).
-- Shows that: rollback reconstructs an earlier state without violating earned
-  causality constraints.

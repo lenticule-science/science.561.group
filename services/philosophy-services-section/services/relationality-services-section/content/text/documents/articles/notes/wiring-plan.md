@@ -47,28 +47,3 @@ operators and ports.
   and entry/exit steps.
 - Shows that: a wiring plan is a typed, acyclic refinement of the connection
   graph with designated entry/exit, ready for evaluation.
-
-## Earlier material
-
-## Definition
-- Steps: finite set of operator invocations drawn from
-  [Recognition](../../../operator/recognition.md), [Evaluation Step](evaluate-step.md),
-  [Storage](storage.md), and [Wiring](wiring.md).
-- Ports: typed input/output ports for each step, labelled by earned carriers
-  (`RecognitionCarrier`, `EvaluationState`, `Snapshot`, `WiringPlan`,
-  `FailureCarrier`).
-- Edges: directed connections from output ports to input ports respecting the
-  carrier types and acyclicity (no cycles).
-- Entry/exit: designated source steps with no inputs and sink steps whose
-  outputs are observed externally.
-
-## Proof
-- Uses: [Connection Graph](connection-graph.md) plus extraction/typing/acyclicity
-  checks ([extract-graph-ports](extract-graph-ports.md),
-  [extract-graph-edges](extract-graph-edges.md),
-  [are-graph-ports-well-typed](are-graph-ports-well-typed.md),
-  [are-graph-edges-well-typed](are-graph-edges-well-typed.md),
-  [is-graph-acyclic](is-graph-acyclic.md)) to validate ports/edges
-  and entry/exit steps.
-- Shows that: a wiring plan is a typed, acyclic refinement of the connection
-  graph with designated entry/exit, ready for evaluation.

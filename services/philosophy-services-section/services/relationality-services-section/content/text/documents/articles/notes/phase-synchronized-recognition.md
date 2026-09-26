@@ -24,11 +24,3 @@ Recognitions that maintain phase coherence under flow disruptions.
 ## Proof
 - Uses: harmonic flow analysis on sections.
 - Shows that: synchronizable patterns form a recognisable carrier.
-
-## Earlier material
-
-## Definition
-- Elements: recognitions/sections whose harmonic components remain in fixed
-  phase relationships under [Harmonic Flow](harmonic-flow.md) and
-  perturbations.
-- Role: signal synchronizable patterns.

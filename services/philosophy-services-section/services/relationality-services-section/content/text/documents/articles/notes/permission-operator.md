@@ -35,13 +35,3 @@ Recognises the actions/recognitions allowed under a norm regime.
   denoting permission.
 - Shows that: permissions are expressible as projections in the recognition
   lattice under the norm regime.
-
-## Earlier material
-
-## Proof
-- Uses: [Norm Regime](norm-regime.md) and
-  [Recognition Carrier](../../../structure/recognition.md).
-- Produces: [Recognition Carrier](../../../structure/recognition.md) element
-  denoting permission.
-- Shows that: permissions are expressible as projections in the recognition
-  lattice under the norm regime.

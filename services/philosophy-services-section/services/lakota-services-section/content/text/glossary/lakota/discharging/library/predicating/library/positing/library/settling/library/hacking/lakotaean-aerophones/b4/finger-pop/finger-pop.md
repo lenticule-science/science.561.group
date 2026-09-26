@@ -40,19 +40,3 @@ It differs from the [finger-slide](../finger-slide/finger-slide.md) in being a d
 These four ornaments together — pop, cut, slide, trill — constitute the principal finger-controlled ornament vocabulary of the cedar flute.
 
 See also: [ornament](../../philB/prose/teaching/explanations/ornament.md), [finger-hole](../finger-hole/finger-hole.md), [cut](../cut/cut.md), [trill](../../philB/prose/teaching/explanations/trill.md), [finger-slide](../finger-slide/finger-slide.md), [cedar-flute](../cedar-flute/cedar-flute.md).
-
-## Earlier material
-
-The finger pop is a rapid open-then-close action on a single [finger-hole](../finger-hole/finger-hole.md) of the [cedar-flute](../cedar-flute/cedar-flute.md), producing a momentary lift of the sounding pitch before the held pitch resumes.
-The pop is one of the most identifiable [ornaments](../../philB/prose/teaching/explanations/ornament.md) of the cedar-flute idiom: it produces a sharp articulative chirp on top of an otherwise sustained tone, and its presence-or-absence and placement within a phrase are key markers of a player's style.
-
-The pop's placement within a phrase varies by performer and song.
-Some players use pops sparingly, reserving them for specific structural moments (the start of a held tone, or a beat-accent within a sustained melodic figure); others use them more prolifically as part of a continuous ornamental texture.
-The [ornament-substitution](../../philB/code/transformers/ornament-substitution.md) transformer, which generates ornamental variants across strophes of a [courting-song](../courting-song/courting-song.md), uses the pop as one of its principal substitution candidates: a plain held tone in one strophe may become a tone with one or more pops in the next strophe.
-
-The pop differs from the [trill](../../philB/prose/teaching/explanations/trill.md) in being a single brief event (the finger lifts once and returns) rather than a sustained alternation.
-It differs from the [cut](../cut/cut.md) in being a *lift* of a covered hole (producing an upward pitch deviation) rather than a *brush* of an uncovered hole.
-It differs from the [finger-slide](../finger-slide/finger-slide.md) in being a discrete on-off event rather than a continuous-coverage event.
-These four ornaments together — pop, cut, slide, trill — constitute the principal finger-controlled ornament vocabulary of the cedar flute.
-
-See also: [ornament](../../philB/prose/teaching/explanations/ornament.md), [finger-hole](../finger-hole/finger-hole.md), [cut](../cut/cut.md), [trill](../../philB/prose/teaching/explanations/trill.md), [finger-slide](../finger-slide/finger-slide.md), [cedar-flute](../cedar-flute/cedar-flute.md).

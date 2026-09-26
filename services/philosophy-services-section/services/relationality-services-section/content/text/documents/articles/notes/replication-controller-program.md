@@ -41,26 +41,3 @@ carriers/operators.
 Refines the computer [Kernel](./documentation-interpreter.md) by
 specialising wiring to replication tasks over snapshot carriers, preserving
 failure semantics and acyclicity while enforcing replication invariants.
-
-## Earlier material
-
-## Carrier
-- **Snapshot recognitions:** identifiers and metadata for primary and replica
-  snapshots as [Computer Snapshot](computer-snapshot.md) plus
-  [Computer Recognition](computer-recognition.md) for policy.
-- **Replication wiring:** steps to ship, validate, and apply snapshots across
-  regions/strata.
-- **Failure carriers:** emitted on divergence, policy violations, or topology
-  conflicts.
-
-## Behaviour
-1. Trigger snapshot creation per schedule or policy.
-2. Transfer and apply snapshots to replicas via [Computer Storage](storage.md); validate integrity.
-3. Monitor lag/health via measurement fabric; reconcile discrepancies.
-4. Emit [Computer Failure](computer-failure.md) on
-   integrity failures or constraint violations.
-
-## Proof
-Refines the computer [Kernel](documentation-interpreter.md) by
-specialising wiring to replication tasks over snapshot carriers, preserving
-failure semantics and acyclicity while enforcing replication invariants.

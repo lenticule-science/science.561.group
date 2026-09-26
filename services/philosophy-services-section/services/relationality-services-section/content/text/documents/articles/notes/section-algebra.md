@@ -26,12 +26,3 @@ Algebra of hypertensor sections: sum/product/tensor and convolution/composition.
 ## Proof
 - Uses: internal hom and (co)limit structures to define algebraic operations.
 - Shows that: sections form a rich algebra suitable for program/data composition.
-
-## Earlier material
-
-## Definition
-- Operations: coproduct/product of sections, tensor-like combination when
-  admissible, and composition via internal hom.
-- Convolution: section-level convolution induced by flow/gluing (aligning with
-  [Recognition Convolution](recognition-convolution.md) lifted to
-  sections).

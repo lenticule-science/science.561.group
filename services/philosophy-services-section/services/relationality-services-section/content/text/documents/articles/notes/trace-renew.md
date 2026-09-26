@@ -32,17 +32,3 @@ trace without altering earned history, acting on `TraceCarrier`.
   re-entry of stabilized tails.
 - Shows that: renewal/restep operators re-enter tails without altering earned
   history, preserving trace carrier invariants.
-
-## Earlier material
-
-## Definition
-- Inputs: [Trace Carrier](undated/trace.md).
-- Outputs: renewed/restep traces within the same carrier.
-- Behaviour: reintroduces stabilised tails into the trace, preserving earned
-  prefix history.
-
-## Proof
-- Uses: [Renew Trace](renew-trace.md) and `restep-trace` acts to manage
-  re-entry of stabilized tails.
-- Shows that: renewal/restep operators re-enter tails without altering earned
-  history, preserving trace carrier invariants.

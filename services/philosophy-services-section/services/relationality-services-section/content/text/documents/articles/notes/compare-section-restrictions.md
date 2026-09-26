@@ -32,9 +32,3 @@ equality of all restrictions, yielding an equality witness when they coincide.
   cover elements, then compare.
 - Shows that: agreement on a cover implies global equality, supporting the
   sheaf locality property.
-
-## Earlier material
-
-Restricts two [Hypertensor Sections](hypertensor-section.md) along
-a cover in the [Hypertensor Site](hypertensor-site.md) and checks
-equality of all restrictions, yielding an equality witness when they coincide.

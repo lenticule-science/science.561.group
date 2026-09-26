@@ -33,23 +33,3 @@ The idea is a part of [emsean thought](../../../../../../../../../../../../../pu
 
 [Introducing Relational Dynamics](../../01/01/2025-01-01-introducing-relational-dynamics.md)  
 [essay](../../../../../../../../services/agency-services-section/content/text/documents/articles/notes/undated/essay.md)
-
-## Earlier material
-
-[relational polyvalence](../../../../../../../../services/agency-services-section/content/text/documents/articles/notes/2025/09/29/2025-09-29-relational-polyvalence.md)  
-[polyvalence](../../../../../../../../../../content/text/glossary/terms/polyvalence.md)
-
-relational dynamics  
-[metaphysical framework](../../../../../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/metaphysical-framework.md)
-
-[relational dynamic](../../../../../../../../services/agency-services-section/content/text/documents/articles/notes/2025/09/26/2025-09-26-relational-dynamic.md)  
-[dynamic](../../../../../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/dynamic.md)
-
-[inciting](../../../../../../../../services/agency-services-section/content/text/documents/articles/notes/2025/09/04/2025-09-04-relational-systems-concepts-incitement-inciting.md)  
-[act](../../../../../../../../services/agency-services-section/content/text/glossary/concepts/tekodynamics-concepts-act-act.md)
-
-[existence](../../../../../../../../services/agency-services-section/content/text/documents/articles/notes/2025/08/29/2025-08-29-relational-systems-concepts-existence-existence.md)  
-[structure](../../../../../../../../../../content/text/glossary/terms/structure.md)
-
-[Introducing Relational Dynamics](../../01/01/2025-01-01-introducing-relational-dynamics.md)  
-[essay](../../../../../../../../services/agency-services-section/content/text/documents/articles/notes/undated/essay.md)

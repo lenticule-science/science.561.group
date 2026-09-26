@@ -21,9 +21,3 @@ derives-from: acts/observation-kernel
 ## Proof
 - Derived from: [Observation Kernel](2026/03/04/2026-03-04-observation-kernel.md), which establishes the existence of flow–measure kernels.
 - Shows that: the observation kernel act already furnishes the transition operators; enforcing flow-observation coherence yields a well-defined carrier of measurement kernels.
-
-## Earlier material
-
-## Invariants
-- Kernel composition follows the flow composition law; identities act as measure-preserving kernels.
-- Measures pushed through the kernel respect observation coherence from [Flow Observation](flow-observation.md).

@@ -30,9 +30,3 @@ derives-from: machine/structure/snapshot
 ## Proof
 - Derived from: [Machine Snapshot](./snapshot.md).
 - Shows that: lifting snapshots to the computer layer yields a persistence carrier suitable for SDKs while preserving machine invariants.
-
-## Earlier material
-
-## Proof
-- Derived from: [Machine Snapshot](snapshot.md).
-- Shows that: lifting snapshots to the computer layer yields a persistence carrier suitable for SDKs while preserving machine invariants.

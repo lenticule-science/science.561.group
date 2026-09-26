@@ -34,13 +34,3 @@ Recognises recognitions that violate norms.
   prohibition.
 - Shows that: prohibitions are recognisable as operators within the earned
   logic algebra.
-
-## Earlier material
-
-## Proof
-- Uses: [Norm Regime](norm-regime.md) and
-  [Recognition Carrier](../../../structure/recognition.md).
-- Produces: [Recognition Carrier](../../../structure/recognition.md) marking
-  prohibition.
-- Shows that: prohibitions are recognisable as operators within the earned
-  logic algebra.

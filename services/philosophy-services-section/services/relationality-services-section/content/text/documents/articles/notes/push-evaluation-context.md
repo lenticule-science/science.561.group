@@ -38,8 +38,3 @@ inside the [Evaluation State](./evaluation-state.md).
 ## Invariants
 - Stack grows by one frame; previous frames remain ordered below.
 - New frame becomes the head of the context stack for subsequent stepping.
-
-## Earlier material
-
-Pushes a new evaluation frame onto the [Evaluation Context Stack](evaluation-context-stack.md)
-inside the [Evaluation State](evaluation-state.md).

@@ -35,14 +35,3 @@ Derived from [`acts/baseline-limit`](./baseline-limit.md) and the
 intake/persistence acts that earn the observation and fixed-recognition
 carriers. This system structure lifts the math carriers into a storage payload
 usable by system/machine storage operators.
-
-## Earlier material
-
-## Definition
-- Elements: triples `(obs, baseline, fixed)` where
-  - `obs` ∈ [Intake Observation](intake-observation.md),
-  - `baseline` ∈ [Baseline Remainder](baseline-remainder.md),
-  - `fixed` ∈ [Persistent Recognition Carrier](../../../triage/docs/math/structure/persistent-recognition.md).
-- `acts/baseline-limit` earns the baseline component; intake/persistence acts
-  earn the observation and fixed recognitions. This structure lifts those math
-  carriers into the system context.

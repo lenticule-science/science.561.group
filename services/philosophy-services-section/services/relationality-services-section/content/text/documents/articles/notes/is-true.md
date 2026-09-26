@@ -27,8 +27,3 @@ to a truthy/falsy recognition value for branching in the interpreter.
 - Uses: check for top/bottom (or equivalent truth ordering) on recognitions.
 - Shows that: branching relies only on the earned recognition lattice without
   introducing an unearned logic algebra.
-
-## Earlier material
-
-Converts a predicate in the [Recognition Carrier](../../../structure/recognition.md)
-to a truthy/falsy recognition value for branching in the interpreter.

@@ -41,8 +41,3 @@ operator against the [Coverage Runtime Type](./coverage-runtime.md).
   by exposing its call signature and failure contracts as a stable SDK function.
 - Shows that: programs can compose paths through the coverage runtime without
   bypassing computer-layer abstractions.
-
-## Earlier material
-
-SDK-level function that invokes the kernel [Path Compose Runtime](path-compose-runtime.md)
-operator against the [Coverage Runtime Type](coverage-runtime.md).

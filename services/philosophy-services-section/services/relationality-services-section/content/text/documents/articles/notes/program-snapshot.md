@@ -38,10 +38,3 @@ state/workspace for persistence.
 - Derived from: [Computer Snapshot](./computer-snapshot.md).
 - Shows that: lifting computer snapshots to program payloads yields a reusable
   snapshot carrier for program persistence.
-
-## Earlier material
-
-## Proof
-- Derived from: [Computer Snapshot](computer-snapshot.md).
-- Shows that: lifting computer snapshots to program payloads yields a reusable
-  snapshot carrier for program persistence.

@@ -26,15 +26,3 @@ invariant under all admissible reindexings.
 - Uses: [Parametric Relation](./parametric-relation.md) to characterise
   insensitivity and [Judgment Term](./judgment-term.md) as the program carrier.
 - Shows that: programs captured here are context-invariant by construction.
-
-## Earlier material
-
-## Definition
-- Carrier: [Judgment Terms](judgment-term.md) or interpretations related by all
-  [Parametric Relations](parametric-relation.md).
-- Property: behaviour unchanged under any reindexing in the index base.
-
-## Proof
-- Uses: [Parametric Relation](parametric-relation.md) to characterise
-  insensitivity and [Judgment Term](judgment-term.md) as the program carrier.
-- Shows that: programs captured here are context-invariant by construction.

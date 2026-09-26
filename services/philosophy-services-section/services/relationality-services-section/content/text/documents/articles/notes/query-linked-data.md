@@ -32,18 +32,3 @@ Executes queries over the internal [Linked Data Graph](./linked-data-graph.md).
 ## Proof
 - Derived from: [Computer Evaluate Step](./evaluate-step.md),
   restricting to pure query evaluation over linked data.
-
-## Earlier material
-
-Executes queries over the internal [Linked Data Graph](linked-data-graph.md).
-
-## Definition
-- Inputs: graph reference and query (e.g., SPARQL pattern).
-- Outputs: results encoded as a [Linked Data Graph](linked-data-graph.md)
-  fragment or [Computer Failure](computer-failure.md).
-- Behaviour: evaluates the query against stored triples/quads, producing a
-  recognised subgraph or failure on malformed queries/policy violations.
-
-## Proof
-- Derived from: [Computer Evaluate Step](evaluate-step.md),
-  restricting to pure query evaluation over linked data.

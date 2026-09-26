@@ -30,8 +30,3 @@ forms as defined in [`Admissible Normal Form`](./admissible-normal-form.md).
 
 Sketch: follows from the earned strong normalization/reducibility acts; define
 `N∞` by normalising and collapsing via the admissible normal-form structure.
-
-## Earlier material
-
-Operator `N∞ : Adm → Adm` mapping admissible morphisms to canonical normal
-forms as defined in [`Admissible Normal Form`](admissible-normal-form.md).

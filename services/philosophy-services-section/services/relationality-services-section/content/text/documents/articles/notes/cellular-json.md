@@ -211,28 +211,3 @@ Minimal Boolean recognition cell (abbreviated):
 ```
 
 CCE accepts any RTL judgment whose evaluation lies in `fixed_layer.sections`; violations trigger the error codes above.
-
-## Earlier material
-
-```jsonc
-{
-  "objects": [ {"id": "string", "cover": ["string", ...]} , ...],
-  "morphisms": [ {"src": "string", "tgt": "string", "id": "string"}, ...],
-  "topology": [ ["string", ...], ... ],
-  "heyting_table": {"meet": [["string"]], "join": [["string"]], "imp": [["string"]]}
-}
-```
-
-```jsonc
-{
-  "recognition": {
-    "carrier": "string",
-    "sigma": {"table": [["string"]]},
-    "delta": {"table": [["string"]]},
-    "heyting": {"meet": [["string"]], "join": [["string"]], "imp": [["string"]]}
-  },
-  "sections": [
-    {"object": "string", "elements": ["string", ...]}
-  ]
-}
-```

@@ -14,7 +14,3 @@ visibility: public
 ## "Boogieman Sam" {#87b1c430-0209-4e5d-9a2c-eec6fb218a99}
 
 [music track](../../../../../../../information-science-services-section/services/communication-science-services-section/services/media-science-services-section/services/music-services-section/content/text/documents/articles/notes/2025/07/21/2025-07-21-music-track.md), [blues](../../../../glossary/terms/blues.md), [rock](../../../../glossary/terms/rock.md)
-
-## Earlier material
-
-[music track](../../../../../../../information-science-services-section/services/communication-science-services-section/services/media-science-services-section/services/music-services-section/content/text/documents/articles/notes/2025/07/21/2025-07-21-music-track.md), [blues](../../../../glossary/terms/blues.md), [rock](../../../../glossary/terms/rock.md)

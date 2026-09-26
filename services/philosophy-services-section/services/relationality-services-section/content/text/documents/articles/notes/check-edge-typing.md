@@ -34,10 +34,3 @@ compatible, otherwise a counterexample).
 - Uses: port carrier assignments to compare each edge’s source/target types via
   `graph-edge-type-check`.
 - Shows that: wiring plans only proceed when every edge respects port typing.
-
-## Earlier material
-
-Validates that every edge in an [Edge Set](edge-set.md) connects
-ports with matching carrier types from the [Port Set](port-set.md).
-Returns a predicate recognition witnessing well-typedness (top if all edges are
-compatible, otherwise a counterexample).

@@ -47,16 +47,3 @@ from the acts [Seed Evaluation Context](./seed-evaluation-context.md) and
   frames, plug, and neutral elements; sheaf/topos acts for admissible glue.
 - Shows that: frames form the basis for evaluation contexts with well-defined
   plug/compose operations and a neutral element over hypertensor sections.
-
-## Earlier material
-
-Frame with a single distinguished hole over a hypertensor section. Generated
-from the acts [Seed Evaluation Context](seed-evaluation-context.md) and
-[Build Evaluation Context](build-evaluation-context.md).
-
-## Proof
-- Uses: acts [Seed Evaluation Context](seed-evaluation-context.md) and
-  [Build Evaluation Context](build-evaluation-context.md) to generate
-  frames, plug, and neutral elements; sheaf/topos acts for admissible glue.
-- Shows that: frames form the basis for evaluation contexts with well-defined
-  plug/compose operations and a neutral element over hypertensor sections.

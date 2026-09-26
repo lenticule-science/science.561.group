@@ -40,13 +40,3 @@ or synchronous product (combined geometry/logical structure).
 - Produces: [Relational World](./relational-world.md) realising sum
   or product with inherited invariants.
 - Shows that: multi-world combinations respect earned geometry and logic.
-
-## Earlier material
-
-## Proof
-- Uses: [Relational World](relational-world.md) structure and
-  [World Morphism](world-morphism.md) to define categorical
-  constructions.
-- Produces: [Relational World](relational-world.md) realising sum
-  or product with inherited invariants.
-- Shows that: multi-world combinations respect earned geometry and logic.

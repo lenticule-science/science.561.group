@@ -33,8 +33,3 @@ from a [Matching Family](./matching-family.md).
   on the covered window, respecting overlaps.
 - Shows that: an amalgam exists when matching holds; the primitive stands in
   for the constructive amalgamation until fully derived.
-
-## Earlier material
-
-Primitive witness that produces the glued [Hypertensor Section](hypertensor-section.md)
-from a [Matching Family](matching-family.md).

@@ -24,9 +24,3 @@ Groups of agents sharing recognitions stable under mutual flow.
 ## Proof
 - Uses: [Agent](./agent.md) set and [Coordination Operator](./coordination-operator.md).
 - Shows that: coalitions are recognisable as stable alignment groups.
-
-## Earlier material
-
-## Proof
-- Uses: [Agent](../../../triage/agent.md) set and [Coordination Operator](coordination-operator.md).
-- Shows that: coalitions are recognisable as stable alignment groups.

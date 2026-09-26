@@ -39,9 +39,3 @@ failure via the [Failure Carrier](./failure-carrier.md).
 
 ## Proof
 - TODO: fill proof.
-
-## Earlier material
-
-The earned guard that takes a predicate in the [Logic Algebra](2026/03/04/2026-03-04-logic-algebra.md)
-and, if it holds, yields it as a witnessed assertion; otherwise it produces a
-failure via the [Failure Carrier](failure-carrier.md).

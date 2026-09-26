@@ -28,8 +28,3 @@ Pops the head frame after it has been applied, yielding the remaining
 ## Proof
 - Uses: stack/frame discipline to push/pop as needed.
 - Shows that: stack evolution after a step can be expressed without violating context invariants.
-
-## Earlier material
-
-Pops the head frame after it has been applied, yielding the remaining
-[Evaluation Context Stack](evaluation-context-stack.md).

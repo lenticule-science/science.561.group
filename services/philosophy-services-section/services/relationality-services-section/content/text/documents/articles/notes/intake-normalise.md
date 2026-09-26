@@ -35,9 +35,3 @@ that enforces earned contextual equivalences on intake data.
 
 Given `IntakeContexts`, `Observations`, and the equate act, `Normalise` is fixed
 up to nucleus equivalence.
-
-## Earlier material
-
-- [`equate-contexts`](equate-contexts.md) induces normalization over
-  contexts and linked observations, ensuring no intake path produces conflicting
-  recognitions.

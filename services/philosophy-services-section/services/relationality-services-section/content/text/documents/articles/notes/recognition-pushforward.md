@@ -33,12 +33,3 @@ topos.
   and the recognition classifier.
 - Shows that: recognitions/subobjects can be transported forward along
   morphisms while preserving classifier semantics.
-
-## Earlier material
-
-## Definition
-- Inputs: a morphism `f: X → Y` and a subobject/recognition on `X` expressed via
-  the [Recognition Classifier](recognition-classifier.md).
-- Outputs: the direct image recognition/subobject on `Y`.
-- Behaviour: constructs the smallest recognition on `Y` whose pullback along
-  `f` contains the given recognition.

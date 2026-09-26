@@ -33,19 +33,3 @@ Agents alter behaviour to improve utility recognitions.
 - Produces: updated [Agent](./agent.md).
 - Shows that: strategic updates can be modelled recognitionally, keeping
   consistency with flow/norm structure.
-
-## Earlier material
-
-## Definition
-- Inputs: an [Agent](../../../structure/agent.md) and utility assessments from
-  [Utility Recognition](utility-recognition.md).
-- Output: updated [Agent](../../../structure/agent.md) with adjusted epistemic/norm
-  choices to improve utility.
-- Behaviour: adjust beliefs/strategies along directions that increase utility
-  recognitions while respecting norms/flow.
-
-## Proof
-- Uses: [Agent](../../../structure/agent.md) and [Utility Recognition](utility-recognition.md).
-- Produces: updated [Agent](../../../structure/agent.md).
-- Shows that: strategic updates can be modelled recognitionally, keeping
-  consistency with flow/norm structure.

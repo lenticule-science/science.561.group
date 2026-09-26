@@ -25,11 +25,3 @@ storage.
 ## Proof
 - Uses: compressibility recognition to assign costs.
 - Shows that: compressibility can be quantified as a cost metric.
-
-## Earlier material
-
-## Definition
-- Measure: maps traces/recognitions to a cost based on
-  [Compressibility Recognition](compressibility-recognition.md):
-  incompressible items have higher cost.
-- Role: informs scheduling/storage decisions.

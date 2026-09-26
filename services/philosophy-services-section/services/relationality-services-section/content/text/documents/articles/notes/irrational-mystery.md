@@ -53,13 +53,3 @@ flow+nucleus, collapse commutation, and the stabilized eigen-direction.
 - Shows that: combining irrationally scaled flow-index implication with fixed
   nucleus and collapse yields an eigen-residue that remains stable under those
   dynamics.
-
-## Earlier material
-
-## Proof
-- Uses: acts [Irrational Modality](irrational-modality.md),
-  [Irrational Commutation](irrational-commutation.md), and
-  [Residuating Dynamically](residue-dynamically.md).
-- Shows that: combining irrationally scaled flow-index implication with fixed
-  nucleus and collapse yields an eigen-residue that remains stable under those
-  dynamics.

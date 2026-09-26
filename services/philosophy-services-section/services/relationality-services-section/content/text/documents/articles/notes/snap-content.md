@@ -26,16 +26,3 @@ to reconstruct a [RelationalState](relational-state.md):
 
 `SnapContent` is derived directly from the live `RelationalState`; it is not an
 independent store.
-
-## Earlier material
-
-`SnapContent` is the stored payload associated with a `SnapId`. It captures the
-minimal data required by [Relational Storage](relational-storage.md)
-to reconstruct a [RelationalState](../../../triage/relational-state.md):
-
-- `observations`: intake-normalised observations present in the state when
-  saved, consistent with [Intake Stack](intake-stack.md).
-- `baseline_remainder`: the stabilized tail recognised by
-  [Baseline and Renewal Mechanics](../../../../../../../content/text/documents/articles/notes/undated/baseline-renewal.md).
-- `fixed`: the list of fixed recognitions/invariants eligible for persistence,
-  each encoded as a [RecognitionCarrier](recognition-carrier.md).

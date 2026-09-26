@@ -35,13 +35,3 @@ test that detects exactly when a trace tail collapses to the void.
 
 Given the earned trace relation and the convergence act, this test is fixed up
 to nucleus equivalence.
-
-## Earlier material
-
-The act [`baseline-convergence`](baseline-convergence.md) witnesses a
-test that detects exactly when a trace tail collapses to the void.
-
-## Definition
-- Inputs: [Baseline Remainder](baseline-remainder.md), [Step Trace](step-trace.md) context.
-- Outputs: updated [Baseline Remainder](baseline-remainder.md) indicating collapse to baseline.
-- Behaviour: applies the act [Baseline Convergence](baseline-convergence.md) to check iterative reflex steps on a trace tail; if the iteration stabilizes against `Nothing`, the tail collapses to the baseline.

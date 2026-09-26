@@ -51,16 +51,3 @@ functions and constraining ports to telemetry/audit carriers. The refinement
 preserves acyclicity and failure semantics while ensuring every success path
 maintains the monitoring and audit invariants and every error path produces a
 [Computer Failure](./computer-failure.md).
-
-## Earlier material
-
-## Carrier
-- **Wiring plan:** finite acyclic wiring of monitoring/audit operators over
-  computer carriers (recognition, evaluation, failure, snapshots) using
-  [Computer Wiring Plan](computer-wiring-plan.md).
-- **Telemetry inputs:** streams of observables conforming to measurement
-  schemas; carried as [Computer Recognition](computer-recognition.md).
-- **Audit outputs:** persisted recognitions and snapshots that record
-  tamper-evident audit events via [Computer Snapshot](computer-snapshot.md).
-- **Failure carriers:** emitted when schemas are invalid or invariants fail as
-  [Computer Failure](computer-failure.md).

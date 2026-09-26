@@ -27,8 +27,3 @@ Returns the list of exit step ids in a [Connection Graph](./connection-graph.md)
 ## Proof
 - Uses: graph edge relation to find sinks.
 - Shows that: exit points are computable as a primitive query.
-
-## Earlier material
-
-Returns the list of exit step ids in a [Connection Graph](connection-graph.md)
-(steps with no outgoing edges).

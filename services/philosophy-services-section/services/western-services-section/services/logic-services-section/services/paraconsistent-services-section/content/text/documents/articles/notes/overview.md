@@ -60,7 +60,3 @@ This table shows that the space of possible logics is structured by independent 
 For the classical position that paraconsistency contests, see the [Philosophical Foundations of Classical Logic](../../../../../../classical-services-section/content/text/documents/articles/notes/philosophical-foundations.md), especially the section on explosion and consistency. For the intuitionistic alternative, which weakens different principles, see the [Intuitionistic Logic Overview](./overview.md).
 
 Check for understanding: Why is the failure of disjunctive syllogism (from A ∨ B and ¬A, infer B) a consequence of rejecting explosion?
-
-## Earlier material
-
-For the classical position that paraconsistency contests, see the [Philosophical Foundations of Classical Logic](../../../../../../classical-services-section/content/text/documents/articles/notes/philosophical-foundations.md), especially the section on explosion and consistency. For the intuitionistic alternative, which weakens different principles, see the [Intuitionistic Logic Overview](../../../../../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/philosophy-general/archive/domains/western/domains/logic/domains/intuitionistic/curricula/overview.md).

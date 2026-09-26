@@ -31,16 +31,3 @@ conditions and stability requirements. This structure packages those earned
 states for use by operators such as
 [Compute Fixed Reach](./compute-fixed-reach.md) and
 [Measure Fixed Invariant](./measure-fixed-invariant.md).
-
-## Earlier material
-
-The **Fixed Invariant State** carrier is earned from
-[`acts/fixed-invariant`](fixed-invariant.md). It represents
-states that are stabilised by a fixed profile of recognitions.
-
-## Proof
-Directly derived from `acts/fixed-invariant`, which provides the admissibility
-conditions and stability requirements. This structure packages those earned
-states for use by operators such as
-[Compute Fixed Reach](compute-fixed-reach.md) and
-[Measure Fixed Invariant](measure-fixed-invariant.md).

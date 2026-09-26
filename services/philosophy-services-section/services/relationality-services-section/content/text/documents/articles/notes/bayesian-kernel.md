@@ -27,11 +27,3 @@ recognitions survive observation collapses.
 - Uses: epistemic profiles and entropy to define stochastic transitions.
 - Shows that: Bayesian-style updates can be represented as kernels on earned
   recognition carriers.
-
-## Earlier material
-
-## Definition
-- Carrier: transition map from an [Epistemic Profile](epistemic-profile.md) to a
-  probability/weighting over profiles, guided by the [Entropy Functional](entropy-functional.md).
-- Acts like a Markov kernel on recognitions: reweights and normalises according
-  to observation likelihood.

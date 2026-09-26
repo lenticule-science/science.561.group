@@ -31,11 +31,3 @@ Collapses two modal layers (e.g., □ and ◇) into a mixed operator when admiss
 - Produces: folded modal structure.
 - Shows that: modal layers can be identified when admissible without breaking
   modal coherence.
-
-## Earlier material
-
-## Definition
-- Inputs: modal operators from [Modal Structure](modal-structure.md).
-- Output: folded modal structure where selected layers are identified.
-- Behaviour: define a mixed modality combining necessity/possibility; collapse
-  recognitions accordingly.

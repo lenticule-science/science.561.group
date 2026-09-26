@@ -36,18 +36,3 @@ Detects overlaps and constraint violations in a calendar schedule.
 - Derived from: [Computer Evaluate Step](./evaluate-step.md).
 - Shows that: conflict detection can be realised as a computer evaluation step
   producing conflict recognitions/failures without altering state.
-
-## Earlier material
-
-## Definition
-- Inputs: [Calendar Schedule](undated/calendar-schedule.md).
-- Outputs: [Conflict Report](undated/conflict-report.md) or
-  [Computer Failure](computer-failure.md).
-- Behaviour: scans schedule for overlapping events, violated dependencies, or
-  policy conflicts; emits conflict report or failure if analysis cannot
-  complete.
-
-## Proof
-- Derived from: [Computer Evaluate Step](evaluate-step.md).
-- Shows that: conflict detection can be realised as a computer evaluation step
-  producing conflict recognitions/failures without altering state.

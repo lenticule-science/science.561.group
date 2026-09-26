@@ -25,9 +25,3 @@ This is the Gaming Log of [emsenn](../../../../../../../../services/relationalit
 ### Gaming Log, 2025-07-22 {#a13083b2-7576-48d5-a3d4-4e8731aa579c}
 
 1.  [The Outer Worlds](../../../../../../../../../social-science-services-section/services/social-theory-science-services-section/services/ludics-science-services-section/services/game-ludics-services-section/content/text/glossary/terms/the-outer-worlds.md)
-
-## Earlier material
-
-2.  [The Outer Worlds](../../../../../../../../../social-science-services-section/services/social-theory-science-services-section/services/ludics-science-services-section/services/game-ludics-services-section/content/text/glossary/terms/the-outer-worlds.md)
-
-1.  [The Outer Worlds](../../../../../../../../../social-science-services-section/services/social-theory-science-services-section/services/ludics-science-services-section/services/game-ludics-services-section/content/text/glossary/terms/the-outer-worlds.md)

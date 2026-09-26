@@ -41,13 +41,3 @@ and the subobject classifier.
 - Shows that: characteristic maps constructed from recognitions satisfy the
   subobject classifier axioms, enabling classification of subobjects by
   earned recognitions.
-
-## Earlier material
-
-## Proof
-- Uses: [Relational Logic Algebra](relational-logic-algebra.md)
-  to interpret membership as recognition; [Subobject Classifier](../../../structure/subobject-classifier.md)
-  to target characteristic maps.
-- Shows that: characteristic maps constructed from recognitions satisfy the
-  subobject classifier axioms, enabling classification of subobjects by
-  earned recognitions.

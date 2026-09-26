@@ -35,13 +35,3 @@ The [warble](../../../../b4/warble/warble.md) cadential ornament is the principa
 The [cadence-set](../../../code/structures/cadence-set.md) structure formalizes this vocabulary.
 
 See also: [phrase](./phrase.md), [scale-degree](./scale-degree.md), [warble](../../../../b4/warble/warble.md), [fundamental](./fundamental.md), [pentatonic-minor-scale](./pentatonic-minor-scale.md).
-
-## Earlier material
-
-- The *descending minor third* cadence — the canonical cadence — in which the phrase concludes on the scale-degree b3 (the minor third above the tonic), followed by a descent to the fundamental scale-degree 1. The b3-to-1 motion is the most idiomatic cadential gesture in the repertoire, and it is the cadence that the typical [courting-song](../../../../b4/courting-song/courting-song.md) phrase resolves on.
-
-- The *held tonic with warble* cadence, in which the phrase concludes on the fundamental scale-degree 1, held for an extended duration, with a [warble](../../../../b4/warble/warble.md) ornament applied to the held tonic. This cadence can stand alone or can follow one of the descending-to-tonic motions above; it is the most characteristic cadential figure of the cedar-flute idiom in its full expressive form, and it provides a natural decay shape for the phrase as the breath fades through the warble.
-
-The cadence concept extends naturally to the vocal [wiilowan](../../../../b4/wiilowan/wiilowan.md) repertoire, where the same cadential motions appear — and where the cedar-flute cadential vocabulary is partly inherited from the vocal source. The [warble](../../../../b4/warble/warble.md) cadential ornament is the principal flute-specific cadential figure without a direct vocal analogue (vocal music has cadential figures, but the warble's specific jet-instability mechanism is flute-idiomatic). The [cadence-set](../../../code/structures/cadence-set.md) structure formalizes this vocabulary.
-
-See also: [phrase](phrase.md), [scale-degree](scale-degree.md), [warble](../../../../b4/warble/warble.md), [fundamental](fundamental.md), [pentatonic-minor-scale](../../../../../../../../../../../../../../../../../../../../../information-science-services-section/services/communication-science-services-section/services/media-science-services-section/services/music-services-section/content/text/triage/pentatonic-minor-scale.md).

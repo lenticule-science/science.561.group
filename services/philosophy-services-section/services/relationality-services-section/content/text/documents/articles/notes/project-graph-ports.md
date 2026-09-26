@@ -31,8 +31,3 @@ Projects the [Port Set](./port-set.md) from a
 - Uses: the port declarations embedded in the connection graph.
 - Shows that: ports can be extracted for typing/policy checks without primitive
   opcodes.
-
-## Earlier material
-
-Projects the [Port Set](port-set.md) from a
-[Connection Graph](connection-graph.md).

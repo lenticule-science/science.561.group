@@ -45,9 +45,3 @@ so the relational computer can reason about and orchestrate its own substrate.
 ## Proof
 - Derived from: [Documentation Interpreter](./documentation-interpreter.md).
 - Shows that: this program instantiates the documentation interpreter to realise the described behaviour without extending machine semantics.
-
-## Earlier material
-
-## Proof
-- Derived from: [Documentation Interpreter](documentation-interpreter.md).
-- Shows that: this program instantiates the documentation interpreter to realise the described behaviour without extending machine semantics.

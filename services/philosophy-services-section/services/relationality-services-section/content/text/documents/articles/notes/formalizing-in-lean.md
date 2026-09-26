@@ -433,22 +433,3 @@ instantiate are coherent.
 The practical path: complete Step 1, verify it compiles, then assess
 which of Steps 2-5 to tackle next based on what the repository most
 needs verified.
-
-## Earlier material
-
-- The
-  [semantic domain](semantic-ambient.md)
-  lesson (what H, j, G are mathematically)
-- The
-  [Heyting algebras](../../../../../posets/curricula/heyting-algebras.md)
-  curriculum (meets, joins, implication, the residuation adjunction)
-- The
-  [closure operators](../../../../../posets/curricula/closure-operators.md)
-  curriculum (extensive, monotone, idempotent)
-- The
-  [monads and comonads](../../../../../../../../information-science-services-section/services/math-services-section/content/text/documents/articles/teaching-articles/explanations/monads-and-comonads.md)
-  curriculum (counit, comultiplication, Heyting-comonadic coherence)
-- The Lean curricula:
-  [types and propositions](../../../../../../../../engineering-science-services-section/services/computer-science-services-section/services/software-services-section/services/lean-services-section/content/text/documents/articles/notes/types-and-propositions-in-lean.md)
-  and
-  [tactics](../../../../../../../../engineering-science-services-section/services/computer-science-services-section/services/software-services-section/services/lean-services-section/content/text/documents/articles/notes/tactics-in-lean.md)

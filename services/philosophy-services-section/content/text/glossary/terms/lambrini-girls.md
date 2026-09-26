@@ -15,7 +15,3 @@ Lambrini Girls is a [music artist](music-artist.md).
 ## "White Van" {#dcfeada1-a82d-47cc-ab42-1dbf33a513bc}
 
 [music track](../../../../../information-science-services-section/services/communication-science-services-section/services/media-science-services-section/services/music-services-section/content/text/documents/articles/notes/2025/07/21/2025-07-21-music-track.md), [punk](punk.md)
-
-## Earlier material
-
-[music track](../../../../../information-science-services-section/services/communication-science-services-section/services/media-science-services-section/services/music-services-section/content/text/documents/articles/notes/2025/07/21/2025-07-21-music-track.md), [punk](punk.md)

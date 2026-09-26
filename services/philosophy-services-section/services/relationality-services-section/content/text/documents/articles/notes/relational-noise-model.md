@@ -26,10 +26,3 @@ observations.
 - Uses: [Flow Context](./flow-context.md) and [Observation](./observation.md)
   to define perturbations.
 - Shows that: noise can be modelled structurally within the relational system.
-
-## Earlier material
-
-## Proof
-- Uses: [Flow Context](flow-context.md) and [Observation](../../../structure/observation.md)
-  to define perturbations.
-- Shows that: noise can be modelled structurally within the relational system.

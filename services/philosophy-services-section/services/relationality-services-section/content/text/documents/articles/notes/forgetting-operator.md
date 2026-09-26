@@ -34,13 +34,3 @@ profiles and drops ephemeral parts.
 - Produces: pruned temporal recognizers.
 - Shows that: forgetting can be formalised as projection onto persistent
   profiles.
-
-## Earlier material
-
-## Definition
-- Inputs: [Temporal Recognizers](temporal-recognizer.md) and
-  [Persistent Recognition Carrier](../../../structure/persistent-recognition.md).
-- Output: pruned [Temporal Recognizers](temporal-recognizer.md)
-  retaining only persistent components.
-- Behaviour: identify non-persistent details, discard them, and stabilise the
-  remaining recognitions.

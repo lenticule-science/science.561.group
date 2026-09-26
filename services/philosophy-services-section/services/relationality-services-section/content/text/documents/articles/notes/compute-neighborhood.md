@@ -32,12 +32,3 @@ Computes the relational neighborhood (open ball) of a recognition.
 - Produces: [Relational Neighborhood](./relational-neighborhood.md).
 - Shows that: neighborhoods are computable and form the basis for relational
   topology/metric definitions.
-
-## Earlier material
-
-## Definition
-- Inputs: a recognition in the [Recognition Carrier](../../../structure/recognition.md).
-- Output: a [Relational Neighborhood](relational-neighborhood.md)
-  consisting of flow-successors within one nucleus class.
-- Behaviour: apply one-step [Flow Context](flow-context.md), close under
-  nucleus, collect resulting recognitions.

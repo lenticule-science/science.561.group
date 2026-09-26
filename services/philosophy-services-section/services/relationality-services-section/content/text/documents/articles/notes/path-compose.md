@@ -30,9 +30,3 @@ Concatenates directed paths when endpoints match.
 Uses the directed-path structure to define concatenation and the groupoid data
 to supply associator/unit homotopies. Shows that: concatenation yields a
 well-defined morphism in the directed path/fundamental groupoid.
-
-## Earlier material
-
-## Definition
-- Inputs: paths `p: x → y`, `q: y → z` in [Directed Path](directed-path.md).
-- Output: concatenated path `q ∘ p: x → z` modulo homotopy.

@@ -25,14 +25,3 @@ proof_refs: []
 ## Proof
 - Uses: [Recognition Carrier](./recognition.md) plus [Policy Regime](./policy-regime.md) and [Trace Carrier](undated/trace.md) to parameterize judgement recognition.
 - Shows that: judgement recognition with explicit policy/trace parameters produces earned recognition carrier elements and preserves soundness, idempotence, and policy monotonicity.
-
-## Earlier material
-
-## Definition
-- Inputs: [Recognition Carrier](../../../structure/recognition.md) context, [Policy Regime](policy-regime.md), [Trace Carrier](undated/trace.md).
-- Outputs: [Recognition Carrier](../../../structure/recognition.md) with recognized judgement triad.
-- Behaviour: refines [Recognize Judgement Triad](recognize-judgement-triad.md) with explicit policy/trace parameters to make judgement recognition reproducible and traceable.
-
-## Proof
-- Uses: [Recognition Carrier](../../../structure/recognition.md) plus [Policy Regime](policy-regime.md) and [Trace Carrier](undated/trace.md) to parameterize judgement recognition.
-- Shows that: judgement recognition with explicit policy/trace parameters produces earned recognition carrier elements and preserves soundness, idempotence, and policy monotonicity.

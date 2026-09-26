@@ -37,19 +37,3 @@ Persists or restores a program wiring plan and session via computer storage.
 - Derived from: [Computer Storage](./storage.md).
 - Shows that: persisting/restoring program plans via computer storage preserves
   semantics and provides reusable persistence for runbooks.
-
-## Earlier material
-
-## Definition
-- Inputs: [Program Wiring Plan](program-wiring-plan.md) and
-  snapshot descriptor.
-- Outputs: [Program Snapshot](program-snapshot.md),
-  [Program Transcript](program-transcript.md), or
-  [Computer Failure](computer-failure.md).
-- Behaviour: serializes plan/session to snapshot; on restore, verifies integrity
-  and reconstructs plan/session; emits failure on integrity errors.
-
-## Proof
-- Derived from: [Computer Storage](storage.md).
-- Shows that: persisting/restoring program plans via computer storage preserves
-  semantics and provides reusable persistence for runbooks.

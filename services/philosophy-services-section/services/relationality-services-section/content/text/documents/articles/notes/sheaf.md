@@ -43,18 +43,3 @@ packageable through the sheafification act.
   sheaf structure is the smallest stable subcategory closed under pullbacks and
   the gluing/locality laws, providing the logical substrate for classifiers and
   base change.
-
-## Earlier material
-
-Earned subcategory of presheaves that satisfy the
-[SheafCondition](../../../acts/sheaf-condition.md) over a [Coverage Site](coverage-site.md),
-packageable through the sheafification act.
-
-## Proof
-- Derived from: [Sheafification](sheafification.md) which freely enforces
-  the [SheafCondition](../../../acts/sheaf-condition.md) on presheaves over the chosen
-  coverage.
-- Shows that: once coverage, restrictions, and matching families are fixed, the
-  sheaf structure is the smallest stable subcategory closed under pullbacks and
-  the gluing/locality laws, providing the logical substrate for classifiers and
-  base change.

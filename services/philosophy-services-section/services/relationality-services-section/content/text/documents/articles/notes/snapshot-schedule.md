@@ -37,18 +37,3 @@ Persists or restores a calendar schedule via the computer storage operator.
 - Derived from: [Computer Storage](./storage.md).
 - Shows that: persisting/restoring schedules via computer storage preserves
   kernel semantics and schedule integrity.
-
-## Earlier material
-
-## Definition
-- Inputs: [Calendar Schedule](undated/calendar-schedule.md) and snapshot
-  descriptor.
-- Outputs: saved [Computer Snapshot](computer-snapshot.md)
-  or restored schedule, or [Computer Failure](computer-failure.md).
-- Behaviour: serialize schedule to snapshot; on restore, verify integrity and
-  reconstruct schedule.
-
-## Proof
-- Derived from: [Computer Storage](storage.md).
-- Shows that: persisting/restoring schedules via computer storage preserves
-  kernel semantics and schedule integrity.

@@ -49,11 +49,3 @@ dispatcher consults signatures before evaluating transformations.
   to encode operator domains/codomains as judgments.
 - Shows that: packaging typing evidence into a signature allows the dispatcher
   to validate arity/types mechanically before applying a transformation.
-
-## Earlier material
-
-## Proof
-- Uses: [Judgment Typing](judgment-typing.md) and [Judgment Triad](judgment-triad.md)
-  to encode operator domains/codomains as judgments.
-- Shows that: packaging typing evidence into a signature allows the dispatcher
-  to validate arity/types mechanically before applying a transformation.

@@ -30,15 +30,3 @@ Checks/enforces quasicrystalline local rules on hypertensor sections.
 - Uses: [Quasicrystalline Constraint](./quasicrystalline-constraint.md).
 - Shows that: local rules can be enforced/checked on sections, yielding the
   quasicrystalline subclass.
-
-## Earlier material
-
-## Definition
-- Inputs: a section over a window and a set of local rules from
-  [Quasicrystalline Constraint](quasicrystalline-constraint.md).
-- Outputs: verified/annotated constraint satisfaction.
-
-## Proof
-- Uses: [Quasicrystalline Constraint](quasicrystalline-constraint.md).
-- Shows that: local rules can be enforced/checked on sections, yielding the
-  quasicrystalline subclass.

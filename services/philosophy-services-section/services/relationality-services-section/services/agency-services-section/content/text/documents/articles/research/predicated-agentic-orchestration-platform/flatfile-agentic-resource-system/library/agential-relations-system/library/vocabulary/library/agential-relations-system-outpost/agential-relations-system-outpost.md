@@ -60,12 +60,3 @@ An ARS outpost satisfies this at the skill level: the skills are nodes in the gr
 But self-generation at the full locale level requires that the governing principles and agent community are also representable as units within the scope — which the outpost does not yet provide.
 
 ## Open questions
-
-## Earlier material
-
-An AgentialRelationsSystemOutpost MUST satisfy all requirements of [RelationsSystemOutpost](../../../../../../../../../../../../../../../../../../engineering-science-services-section/services/computer-science-services-section/content/text/glossary/terms/relational-system-outpost.md).
-It CANNOT declare an agent community (that belongs to [AgentialRelationsSystemCharter](../agential-relations-system-charter/agential-relations-system-charter.md)) or have a governing soul (that belongs to the full [AgentialRelationsSystemLocale](../agential-relations-system-locale/agential-relations-system-locale.md) stage).
-
-This is not a defective state.
-An outpost is valid at its depth.
-It may grow toward an [AgentialRelationsSystemBlueprint](../agential-relations-system-blueprint/agential-relations-system-blueprint.md) by acquiring governing axioms, or it may remain an outpost if a lightly governed operational surface is what is needed at this scope.

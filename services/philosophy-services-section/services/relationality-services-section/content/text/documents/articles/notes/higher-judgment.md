@@ -23,10 +23,3 @@ Recognitions of judgments themselves—judgments about judgments.
 ## Proof
 - Uses: judgment terms and recognition carrier to form higher-level judgments.
 - Shows that: meta-judgments can be handled within the recognition framework.
-
-## Earlier material
-
-## Definition
-- Carrier: [Judgment Terms](judgment-term.md) lifted into the
-  [Recognition Carrier](../../../triage/recognition.md) as higher-order elements.
-- Structure: supports inference/recognition at a higher level.

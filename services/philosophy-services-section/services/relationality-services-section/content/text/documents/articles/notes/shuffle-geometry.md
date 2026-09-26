@@ -32,14 +32,3 @@ shuffle geometry.
 {{ act_info(page.meta) }}
 
 {{ act_nav(page.meta) }}
-
-## Earlier material
-
-A geometry is the semantic structure equipped with compatible nuclei and flow.
-We already formed [FormGeometry](form-geometry.md) by letting
-[StructureSemantics](structure-semantics.md) witness `CommuteFlowAndNucleus`.
-To specialize this to the shuffle trace dynamics, we let the same semantic
-structure witness the derived compatibility of
-[ShuffleFlow](shuffle-flow.md) with [Nucleate](nucleate.md):
-`(StructureSemantics CommuteShuffleFlowAndNucleus)` earns
-***ShuffleGeometry***.

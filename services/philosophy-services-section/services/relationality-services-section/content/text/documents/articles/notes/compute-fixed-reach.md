@@ -33,10 +33,3 @@ become reachable under the earned fixed flow.
 By construction from `acts/fixed-reach`, this operator restricts the earned flow
 to fixed invariant states. The act ensures reachability stays inside the fixed
 profile, so inputs and outputs remain in the carrier.
-
-## Earlier material
-
-## Definition
-- Inputs: [Fixed Invariant State](fixed-invariant-state.md).
-- Outputs: [Fixed Invariant State](fixed-invariant-state.md) that is reachable by the fixed flow.
-- Behaviour: applies the fixed flow induced by [Fixed Reach](fixed-reach.md) to evolve invariant states while staying within the fixed profile.

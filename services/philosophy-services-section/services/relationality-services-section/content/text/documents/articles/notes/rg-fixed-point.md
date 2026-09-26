@@ -25,15 +25,3 @@ Sections or profiles invariant under repeated renormalisation steps.
 - Uses: [RG Step](./rg-step.md) to define invariance.
 - Shows that: fixed points of renormalisation form a carrier capturing
   large-scale phases.
-
-## Earlier material
-
-## Invariants
-- Stability: applying [RG Step](rg-step.md) leaves the element
-  unchanged up to earned equivalence.
-- Attraction: nearby sections may flow toward the fixed point under RG.
-
-## Proof
-- Uses: [RG Step](rg-step.md) to define invariance.
-- Shows that: fixed points of renormalisation form a carrier capturing
-  large-scale phases.

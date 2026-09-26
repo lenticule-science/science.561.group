@@ -39,22 +39,3 @@ states that survive all earned observations of an agent.
   under knowledge for agent `a`.
 - Shows that: epistemic necessity is an interior/closure operator on epistemic
   recognitions satisfying modal laws.
-
-## Earlier material
-
-## Definition
-- Inputs: an [Epistemic Profile](epistemic-profile.md) for agent
-  `a` and its inherited [Modal Structure](modal-structure.md).
-- Output: the same epistemic profile restricted to states known by `a`.
-- Behaviour: take the meet of all observations available to `a` in the profile,
-  then apply the nucleus (necessity) to close under earned inference; produce
-  the resulting epistemic subprofile.
-
-## Proof
-- Uses: [Epistemic Profile](epistemic-profile.md) and modal
-  operators from [Modal Structure](modal-structure.md) to form the
-  necessity operator.
-- Produces: an [Epistemic Profile](epistemic-profile.md) closed
-  under knowledge for agent `a`.
-- Shows that: epistemic necessity is an interior/closure operator on epistemic
-  recognitions satisfying modal laws.

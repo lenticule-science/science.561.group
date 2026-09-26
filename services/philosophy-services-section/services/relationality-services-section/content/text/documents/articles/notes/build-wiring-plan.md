@@ -103,11 +103,3 @@ failed.
   the graph.
 - Shows that: only well-typed, acyclic graphs yield wiring plans; otherwise a
   failure is produced.
-
-## Earlier material
-
-Assembles a [Wiring Plan](wiring-plan.md) from a
-[Connection Graph](connection-graph.md) by extracting ports/edges,
-checking typing, and ensuring acyclicity. Returns either the constructed plan
-or a [Failure Carrier](failure-carrier.md) explaining why wiring
-failed.

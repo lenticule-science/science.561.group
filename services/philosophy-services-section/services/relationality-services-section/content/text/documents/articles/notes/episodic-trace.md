@@ -28,17 +28,3 @@ Recognised trace segment with contextualisation marks for persistence.
   contextualisation from [Contextualize Trace](./contextualize-trace.md).
 - Shows that: trace segments can be isolated as episodes suitable for memory
   persistence.
-
-## Earlier material
-
-## Definition
-- Components: slice of the earned [Complete Trace](complete-trace.md)
-  annotated by [Contextualize Trace](contextualize-trace.md) to anchor
-  entry/exit points for persistence.
-- Marks: save/load anchors indicating where snapshots can capture/replay.
-
-## Proof
-- Derived from: [Complete Trace](complete-trace.md) with
-  contextualisation from [Contextualize Trace](contextualize-trace.md).
-- Shows that: trace segments can be isolated as episodes suitable for memory
-  persistence.

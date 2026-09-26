@@ -32,10 +32,3 @@ Incoming MCP command invocation as a recognised computer-layer payload.
 - Derived from: [Computer Recognition](./computer-recognition.md).
 - Shows that: treating MCP invocations as recognitions keeps dispatch within
   the computer recognition model while adding concrete command fields.
-
-## Earlier material
-
-## Proof
-- Derived from: [Computer Recognition](computer-recognition.md).
-- Shows that: treating MCP invocations as recognitions keeps dispatch within
-  the computer recognition model while adding concrete command fields.

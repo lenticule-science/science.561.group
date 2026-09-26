@@ -30,8 +30,3 @@ Extracts the source steps (no incoming edges) from a
 - Uses: the edge relation in the connection graph to find nodes with in-degree
   zero.
 - Shows that: entry steps can be exposed without primitive opcodes.
-
-## Earlier material
-
-Extracts the source steps (no incoming edges) from a
-[Connection Graph](connection-graph.md).

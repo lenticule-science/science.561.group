@@ -33,8 +33,3 @@ evaluation state, or failure if reconstruction is impossible.
 ## Invariants
 - Verifies snapshot integrity and schema before reconstruction.
 - Produces recognitions/state or a failure; inputs remain unchanged.
-
-## Earlier material
-
-Decodes a stored [Snapshot](snapshot.md) into recognitions and
-evaluation state, or failure if reconstruction is impossible.

@@ -28,9 +28,3 @@ derives-from: machine/structure/failure-carrier
 ## Proof
 - Derived from: [Machine Failure Carrier](./failure-carrier.md).
 - Shows that: carrying failures at the computer layer preserves machine diagnostics while enabling program-level handling.
-
-## Earlier material
-
-## Proof
-- Derived from: [Machine Failure Carrier](failure-carrier.md).
-- Shows that: carrying failures at the computer layer preserves machine diagnostics while enabling program-level handling.

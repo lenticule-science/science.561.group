@@ -27,10 +27,3 @@ to reconstruct a [RelationalState](./storage-relational-state.md):
 
 `SnapContent` is derived directly from the live `RelationalState`; it is not an
 independent store.
-
-## Earlier material
-
-`SnapContent` is the stored payload associated with a
-[SnapId](storage-snap-id.md). It captures the minimal data required by
-[Relational Storage](relational-storage.md)
-to reconstruct a [RelationalState](storage-relational-state.md):

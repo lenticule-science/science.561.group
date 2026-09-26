@@ -60,31 +60,3 @@ stepping them deterministically, and persisting checkpoints.
   through kernel operators yields a proof engine that preserves machine
   semantics, surfaces failures explicitly, and remains replayable under
   snapshot/restore without adding new computational effects.
-
-## Earlier material
-
-## Definition
-- Inputs:
-  - Proof scripts/runbooks recognised into
-    [Computer Wiring Plans](computer-wiring-plan.md)
-    via [Recognition](../../../../../computer/function/recognition.md).
-  - Initial [Computer Evaluation State](computer-evaluation-state.md)
-    seeded with obligations, environments, and goal queue.
-- Execution (reduction semantics):
-  1. Validate the plan for acyclicity, typing, and required witnesses.
-  2. Iterate [Evaluate Step](evaluate-step.md) over
-     the plan, invoking machine-level reductions through computer carriers.
-  3. For each goal, require a recognised witness; unfulfilled goals emit
-     [Computer Failure](computer-failure.md) tagged
-     with the offending obligation and environment.
-- Persistence:
-  - Checkpoint intermediate states and certificates through
-    [Computer Storage](storage.md) into
-    [Computer Snapshots](computer-snapshot.md) to
-    allow replay, bisimulation, and audit.
-- Outputs:
-  - Updated wiring plans that encode remaining goals or extracted lemmas.
-  - Updated evaluation state capturing bindings and ready queues.
-  - Success as a proof certificate embedded in the evaluation bindings; failure
-    as [Computer Failure](computer-failure.md)
-    without mutating committed bindings.

@@ -34,19 +34,3 @@ Evaluates the free energy functional on a thermodynamic state.
   [Thermodynamic State](./thermodynamic-state.md).
 - Shows that: free-energy evaluation is well-defined over earned thermodynamic
   carriers.
-
-## Earlier material
-
-## Definition
-- Inputs: a [Free Energy Functional](free-energy-functional.md) and
-  a [Thermodynamic State](thermodynamic-state.md).
-- Output: free-energy valuation (numeric or relational) suitable for comparing
-  states.
-- Behaviour: combines entropy and observables from the state per the functional
-  (e.g., `F = E - T·S` in numeric semantics).
-
-## Proof
-- Uses: [Free Energy Functional](free-energy-functional.md) and
-  [Thermodynamic State](thermodynamic-state.md).
-- Shows that: free-energy evaluation is well-defined over earned thermodynamic
-  carriers.

@@ -76,9 +76,3 @@ The interpretation turns the syntactic algebra into a layer of the semantic doma
 This is stronger than a typical semantics-of-programming-languages setup. There, interpretation preserves types and equality. Here, interpretation also preserves modality (which computations are stable), trace (which computations preserve provenance), and fragment structure (which computations are local). The [semiotic universe](../index.md) demands that syntax and semantics agree not just on what things compute, but on how they relate to stability, history, and locality.
 
 The next lesson — [Fragments and Fusion](./fragments-fusion.md) — shows how the semantic and syntactic sides are brought into coherence through fragmentwise reasoning and the fusion [closure operator](../../../../concepts/closure-operator/index.md).
-
-## Earlier material
-
-Semiotically, the [typed lambda calculus](../../../../../../../../information-science-services-section/services/math-services-section/content/text/documents/articles/teaching-articles/explanations/typed-lambda-calculus.md) plays the role of **grammar** — the rules by which [signs](../../../../../../../linguistics/topics/semiotics/terms/sign.md) combine. Each operator is a combinatory rule: a way of taking [signs](../../../../../../../linguistics/topics/semiotics/terms/sign.md) and producing new [signs](../../../../../../../linguistics/topics/semiotics/terms/sign.md). The type system ensures that combinations respect the kinds of [signs](../../../../../../../linguistics/topics/semiotics/terms/sign.md) involved — you can't apply a rule that expects a proposition to something that isn't one.
-
-2. **[Heyting](../../../../../../../general/people/arend-heyting.md) compatibility**: the operators for $\wedge$, $\vee$, $\Rightarrow$, $\bot$, $\top$ on the base type are interpreted as the [Heyting](../../../../../../../general/people/arend-heyting.md) operations on $H$. The logical connectives mean what they should mean.

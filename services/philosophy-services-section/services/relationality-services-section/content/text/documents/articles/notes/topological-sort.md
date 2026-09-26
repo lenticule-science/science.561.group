@@ -24,7 +24,3 @@ Performs a topological sort over the steps/edges of a [Wiring Plan](./wiring-pla
 ## Invariants
 - Returns an ordering only when plan is acyclic; otherwise yields failure upstream.
 - Purely reads the wiring plan edge relation.
-
-## Earlier material
-
-Performs a topological sort over the steps/edges of a [Wiring Plan](wiring-plan.md).

@@ -31,11 +31,3 @@ Computes recognitions that are Pareto-superior across agents’ preference profi
 - Produces: [Recognition Carrier](./recognition.md) marking
   Pareto-superior recognitions.
 - Shows that: multi-agent rankings can be combined via Pareto criteria.
-
-## Earlier material
-
-## Definition
-- Inputs: a collection of [Preference Profiles](preference-profile.md).
-- Output: recognition of states that no agent strictly prefers less (Pareto
-  front).
-- Behaviour: intersect preference orders to identify non-dominated recognitions.

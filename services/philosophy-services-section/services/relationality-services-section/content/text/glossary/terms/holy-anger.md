@@ -15,9 +15,3 @@ visibility: public
 ## Unary Conditions
 
 - [holy](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/holy.md)
-
-## Earlier material
-
-- [anger](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/anger.md)
-
-- [holy](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/holy.md)

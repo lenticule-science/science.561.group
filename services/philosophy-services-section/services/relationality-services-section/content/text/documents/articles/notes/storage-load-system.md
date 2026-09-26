@@ -28,7 +28,3 @@ Reconstructs machine state from a [Storage Snapshot](./storage-snapshot.md).
 - Uses: snapshot reading, context retracing, and persistent recognition reload.
 - Shows that: reconstructing state yields machine carriers or a failure when
   reconstruction is invalid.
-
-## Earlier material
-
-Reconstructs machine state from a [Storage Snapshot](storage-snapshot.md).

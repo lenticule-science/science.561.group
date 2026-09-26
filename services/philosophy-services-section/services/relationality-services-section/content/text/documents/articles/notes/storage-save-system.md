@@ -38,15 +38,3 @@ System-level operator to extract a storage snapshot from machine state.
 Refines the storage snapshot structure into an operator that saves machine
 state. Pairs with `Storage Load` to provide round-trip semantics up to nucleus
 equivalence.
-
-## Earlier material
-
-## Definition
-- Input: machine recognition and evaluation state.
-- Output: a [Storage Snapshot](storage-snapshot.md).
-- Behaviour: isolate baseline remainder, collect intake-normalised observations
-  and persistent recognitions, and package them as a storage snapshot.
-
-## Failure
-- Emits [`FailureCarrier`](failure-carrier.md) at the
-  machine layer on errors.

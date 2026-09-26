@@ -21,9 +21,3 @@ derives-from: acts/collapse-shuffle
 ## Proof
 - Derived from: [Collapse Shuffle](./collapse-shuffle.md), which establishes admissible shuffles of traces.
 - Shows that: combining decomposition and shuffle acts yields well-defined equivalence classes of trace reorderings, forming the trace shuffle class carrier.
-
-## Earlier material
-
-## Proof
-- Derived from: [Collapse Shuffle](collapse-shuffle.md), which establishes admissible shuffles of traces.
-- Shows that: combining decomposition and shuffle acts yields well-defined equivalence classes of trace reorderings, forming the trace shuffle class carrier.

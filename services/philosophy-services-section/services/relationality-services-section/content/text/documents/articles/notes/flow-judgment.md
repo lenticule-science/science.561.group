@@ -32,9 +32,3 @@ contexts.
 ## Proof
 Derived from [`acts/flow-judgement`](./flow-judgement.md), which
 defines how judgment traces evolve under evaluation context flow.
-
-## Earlier material
-
-## Proof
-Derived from [`acts/flow-judgement`](flow-judgement.md), which
-defines how judgment traces evolve under evaluation context flow.

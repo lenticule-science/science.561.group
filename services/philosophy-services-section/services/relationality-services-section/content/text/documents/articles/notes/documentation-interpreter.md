@@ -48,20 +48,3 @@ that execute nested-array transformations over earned math structures.
 - Shows that: a minimal documentation interpreter suffices to execute the nested-array
   transformations defined in frontmatter without additional primitives; operators listed
   above are sufficient to interpret documented transformations.
-
-## Earlier material
-
-## Definition
-- Carriers: minimal runtime state and data:
-  - [Recognition](../../../triage/recognition.md)
-  - [Evaluation State](evaluation-state.md)
-  - [Snapshot](snapshot.md)
-  - [Wiring Plan](wiring-plan.md)
-  - [Failure Carrier](failure-carrier.md)
-- Operators (interpreter opcodes):
-  - Expression-based control/dispatch has been removed; only earned section/
-    recognition evaluation remains.
-  - [`identity`](../../../operator/identity.md) and [`last`](../../../operator/last.md)
-    provide minimal flow where needed.
-- API surface: the interpreter is defined entirely by these carriers/operators;
-  no external primitives are assumed.

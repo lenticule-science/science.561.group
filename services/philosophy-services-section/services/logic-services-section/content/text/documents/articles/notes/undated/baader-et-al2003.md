@@ -23,7 +23,3 @@ The canonical reference on description logics — the model-theoretic family of 
 ## Where used
 
 - [Description logics, RDF, FCA](narratives-description-logics-rdf-fca.md)
-
-## Earlier material
-
-- [Description logics, RDF, FCA](description-logics-rdf-fca.md)

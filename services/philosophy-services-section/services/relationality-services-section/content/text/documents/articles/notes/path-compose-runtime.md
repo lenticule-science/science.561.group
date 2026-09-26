@@ -45,9 +45,3 @@ composite path payload or a [FailureCarrier](failure-carrier.md).
   concatenation.
 - Shows that: composing paths in runtime yields updated coverage runtime or an
   explicit failure while maintaining runtime consistency.
-
-## Earlier material
-
-Kernel operator that executes distributed path composition using the
-[Coverage Runtime Carrier](coverage-runtime.md) and emits either a
-composite path payload or a [FailureCarrier](failure-carrier.md).

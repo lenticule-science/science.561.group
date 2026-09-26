@@ -94,9 +94,3 @@ The polity's natural defense against unauthorized office-installation is the big
 - [recognition-as-bigraded-common-knowledge](../../../theorems/recognition-as-bigraded-common-knowledge.md) — the predicated-governance specialization.
 - Walker 1982, *Lakota Society* — recorded office-recognition patterns.
 - Ella Deloria, *Speaking of Indians* (1944) — recognition as polity-substrate.
-
-## Earlier material
-
-**Case B: $C^k$ holds, $C^t$ does not.** Everyone *knows* the polity-state on the office (the knowledge-axis is at $\top$ — the question has been substrate-settled), but the truth-class is not $\mathbf{t}$ — it is $\top$ (contested) or $\mathbf{f}$ (the populace knows the naca is *not* recognized but the substrate has not retracted the office-cell yet).
-Substrate-content: the office is procedurally-in-place but substantively-failed.
-Typically precedes recognition-withdrawal-succession (Case C of [naca-succession](../../../code/transformers/naca-succession.md)).

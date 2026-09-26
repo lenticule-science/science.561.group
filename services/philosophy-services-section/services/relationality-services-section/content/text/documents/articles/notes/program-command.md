@@ -34,10 +34,3 @@ Generic command carrier for program-layer actions over the documentation interpr
 - Derived from: [Computer Recognition](./computer-recognition.md).
 - Shows that: normalising program actions as recognitions yields a reusable
   command carrier for program-layer operators.
-
-## Earlier material
-
-## Proof
-- Derived from: [Computer Recognition](computer-recognition.md).
-- Shows that: normalising program actions as recognitions yields a reusable
-  command carrier for program-layer operators.

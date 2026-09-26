@@ -51,15 +51,3 @@ Refines the documentation interpreter by specialising the wiring to network chan
 API intake. The refinement preserves acyclicity and failure semantics while
 constraining carriers to network registries, channels, and policy/topology
 recognitions.
-
-## Earlier material
-
-## Carrier
-- **Module registry:** recognitions describing modules, inputs/outputs, and
-  dependencies as [Computer Recognition](computer-recognition.md).
-- **Channel graph:** wiring plan describing queues/streams and their
-  connections as [Computer Wiring Plan](computer-wiring-plan.md).
-- **Policy and topology constraints:** recognitions that annotate channels with
-  allowed scopes and placement.
-- **Failure carriers:** emitted when routing or registration violates policy,
-  topology, or wiring constraints as [Computer Failure](computer-failure.md).

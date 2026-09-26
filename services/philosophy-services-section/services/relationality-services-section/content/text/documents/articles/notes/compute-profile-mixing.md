@@ -32,11 +32,3 @@ entropy forward along a profile kernel chain until stationarity.
 ## Proof
 Direct application of `acts/profile-mixing`; inherits mixing properties and
 preserves the chain carrier.
-
-## Earlier material
-
-## Definition
-- Input: a [Profile Kernel Chain](profile-kernel-chain.md).
-- Output: an updated chain reflecting mixing towards stationarity.
-- Behaviour: composes profile dynamics and profile entropy per
-  [`acts/profile-mixing`](profile-mixing.md).

@@ -45,14 +45,3 @@ producing an audit report.
   `assemble-audit-report` to build the report carrier.
 - Shows that: combining routed packets/channels with the audit event yields a
   deterministic audit report witnessing provenance.
-
-## Earlier material
-
-## Definition
-- Inputs: [Audit Event](audit-event-carrier.md),
-  [Distribution Packet](distribution-packet-carrier.md)
-  collection, [Distribution Channel](distribution-channel-carrier.md)
-  collection.
-- Behaviour: route packets, reconcile channel metadata, and assemble an audit
-  report summarising provenance.
-- Outputs: [Audit Report](audit-report-carrier.md).

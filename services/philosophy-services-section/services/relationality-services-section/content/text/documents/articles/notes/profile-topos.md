@@ -28,16 +28,3 @@ presheaf topos, preserving limits and exponentials.
 ## Proof
 Derived from [`acts/profile-topos`](./profile-topos.md), which
 constructs the embedding and exhibits preservation of topos structure.
-
-## Earlier material
-
-## Definition
-- Objects: fixed-profile recognitions viewed as presheaves.
-- Morphisms: profile morphisms mapped to natural transformations.
-- Embedding: a functor from the profile category into the
-  [Presheaf Topos](presheaf-topos.md) that preserves the
-  earned topos structure.
-
-## Proof
-Derived from [`acts/profile-topos`](profile-topos.md), which
-constructs the embedding and exhibits preservation of topos structure.

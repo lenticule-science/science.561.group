@@ -40,7 +40,3 @@ Reindexing $H(n)$ is the identity.
 ## Closure Sequence
 
 See `goldens/toy-trace-universe-closure.md` for expected $U_0, U_1, U_2$.
-
-## Earlier material
-
-Both fibers are the chain $\{\bot < m < \top\}$ with the standard [Heyting](../../../../../../../general/people/arend-heyting.md) structure.

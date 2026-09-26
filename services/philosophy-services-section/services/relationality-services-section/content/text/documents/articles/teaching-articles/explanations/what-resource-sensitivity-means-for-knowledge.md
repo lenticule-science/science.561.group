@@ -26,7 +26,3 @@ Applied to a knowledge system valued in the four-valued [bilattice](../../../../
 **Contradiction consumes evidence.** The state $\top$ (contested) means both affirmation and denial are present. Arriving at $\top$ consumes the individual affirmation and denial — they are no longer separable. The system knows there is a conflict, but the individual pieces of evidence that produced the conflict have been fused into the contestation.
 
 This is what linear logic's resource sensitivity means for knowledge: reasoning with evidence uses the evidence. Affirming something and then denying it does not leave you where you started — it leaves you in a state of contestation ($\top$) that is qualitatively different from ignorance ($\bot$). The four values track this: $\bot$ is having nothing, $t$ and $f$ are having something, $\top$ is having too much. Each state is a different kind of epistemic resource, and the [residuation](../../../../../../../../../information-science-services-section/services/math-services-section/services/algebra-services-section/content/text/glossary/terms/residuated-lattice.md) tracks how they combine and constrain each other.
-
-## Earlier material
-
-Applied to a knowledge system valued in the four-valued [bilattice](../../../../../../services/agency-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/knowing/content/knowledge-science/archive/prose/math/theories/algebra/terms/bilattice.md):

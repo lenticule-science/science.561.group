@@ -89,7 +89,3 @@ History level truncation from the catalog's structural observation.
 Status: the settling triad at the language and universe levels is established; the hyperversal triad is open pending second-turn content. $\square$
 
 ## Open questions
-
-## Earlier material
-
-**Source:** [Relational Universe Triad Catalog Settling Adjoint Patterns](../../../../2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/content/individual/content/agent/science/domains/math/relational-universe-triad-catalog-settling-adjoint-patterns.md), [Relational Universe Triad Free Quotient Fixed Progression](../../../../2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/content/individual/content/agent/science/domains/math/relational-universe-triad-free-quotient-fixed-progression.md).

@@ -37,18 +37,3 @@ Applies timezone/offset rules to calendar events, yielding normalized instants.
 - Derived from: [Computer Evaluate Step](./evaluate-step.md).
 - Shows that: applying timezone rules via computer evaluation yields normalized
   events or failures without bypassing kernel semantics.
-
-## Earlier material
-
-## Definition
-- Inputs: [Calendar Event](undated/calendar-event.md),
-  [Timezone Profile](undated/timezone-profile.md).
-- Outputs: normalised [Calendar Event](undated/calendar-event.md) or
-  [Computer Failure](computer-failure.md).
-- Behaviour: rewrites event instants/durations using timezone rules; fails on
-  invalid/ambiguous transitions.
-
-## Proof
-- Derived from: [Computer Evaluate Step](evaluate-step.md).
-- Shows that: applying timezone rules via computer evaluation yields normalized
-  events or failures without bypassing kernel semantics.

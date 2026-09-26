@@ -40,7 +40,3 @@ Effects:
 
 - records load provenance in [Audit](./audit.md) tied to the `SnapId` and the
   calling context.
-
-## Earlier material
-
-- a [SnapId](snap-id.md) referencing stored [SnapContent](snap-content.md).

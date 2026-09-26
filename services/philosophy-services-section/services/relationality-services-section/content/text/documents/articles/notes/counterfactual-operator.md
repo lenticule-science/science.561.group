@@ -36,22 +36,3 @@ Constructs the closest alternative world consistent with a hypothetical.
   the counterfactual.
 - Shows that: counterfactual reasoning fits within earned temporal branching and
   flow semantics.
-
-## Earlier material
-
-## Definition
-- Inputs: a [Branching Time World](branching-time-world.md) and a
-  hypothetical modification to a [Time Slice](time-slice.md).
-- Output: modified [Relational World](relational-world.md) pushed
-  forward under flow from the altered slice.
-- Behaviour: modify the slice, apply [Flow Context](flow-context.md) forward
-  along the branch, and collapse via nucleus to obtain the counterfactual
-  world.
-
-## Proof
-- Uses: [Branching Time World](branching-time-world.md) and
-  [Flow Context](flow-context.md).
-- Produces: [Relational World](relational-world.md) representing
-  the counterfactual.
-- Shows that: counterfactual reasoning fits within earned temporal branching and
-  flow semantics.

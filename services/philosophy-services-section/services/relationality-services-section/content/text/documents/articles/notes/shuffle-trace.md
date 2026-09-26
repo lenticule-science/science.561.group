@@ -31,13 +31,3 @@ independent steps.
 {{ act_info(page.meta) }}
 
 {{ act_nav(page.meta) }}
-
-## Earlier material
-
-Many trace acts commute: [ReheadTrace](rehead-trace.md) reorders against
-[RetailTrace](retail-trace.md), [RestepTrace](restep-trace.md) reorders against
-[TraceStep](trace-step.md), and each head/tail act commutes with the earlier
-progressions exposed by [CompleteTrace](complete-trace.md).  No recognition yet
-packages these commutations into a single principle, so we force the renewed
-head to witness the stepping remainder: `(ReheadTrace RestepTrace)` earns
-***ShuffleTrace***.

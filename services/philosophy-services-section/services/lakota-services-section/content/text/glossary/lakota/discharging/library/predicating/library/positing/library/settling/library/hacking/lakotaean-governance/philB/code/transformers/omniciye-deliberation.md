@@ -91,8 +91,3 @@ A council that settles such a question *without* wakȟáŋ-witness produces a no
   13 — confederacy-scope deliberation and the seven-divisions great-council.
 - Estes, *Our History is the Future* (2019) — contemporary deliberation practice at Standing Rock and in other twenty-first-century convocations.
 - White Hat, *Life's Journey — Zuya* (2012) — contemporary Sicangu council practice and partial reconstitution under tribal-government overlay.
-
-## Earlier material
-
-**Withdrawal step (iyúhá-šni).** A council member who cannot consent to an emerging direction exercises [iyúhá-šni](../../../philA/code/transformers/iyuha-sni-withdrawal.md) from the question-engagement.
-Their participation-cell drops to $\bot$; subsequent merge steps operate over the *engaged remainder* $O_K^\mathrm{eng} = O_K \setminus \mathrm{withdrawn}(K, q)$.

@@ -39,10 +39,3 @@ recognitions.
 Because `PersistentContextCarrier`/`PersistentRecognitionCarrier` and the baseline are
 fixed by the earning acts, any operator respecting these yields the same triple
 up to nucleus equivalence; thus `save_context` is unique in the earned sense.
-
-## Earlier material
-
-- Takes a context in `PersistentContextCarrier` and extracts its baseline remainder
-  via [`baseline-limit`](baseline-limit.md).
-- Collects fixed recognitions from `PersistentRecognitionCarrier`.
-- Emits the triple `(PersistentContext, BaselineRemainder, PersistentRecognitionCarrier)`.

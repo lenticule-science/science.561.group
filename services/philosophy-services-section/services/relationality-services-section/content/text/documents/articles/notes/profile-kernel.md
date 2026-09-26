@@ -53,21 +53,3 @@ recognitions via the observation kernel.
 - Shows that: lifting the observation kernel along the profile tower yields a
   well-defined profile stochastic chain compatible with tower projections and
   admitting fixed/mixing properties.
-
-## Earlier material
-
-## Definition
-- Step: earned by [Profile Kernel Step](profile-kernel-step.md), lifting
-  the [Observation Kernel](2026/03/04/2026-03-04-observation-kernel.md) through the
-  [Profile Tower](profile-tower.md) to map a profile to its successor.
-- Chain: [Profile Kernel Chain](profile-kernel-chain.md) composes steps
-  to yield an iterated profile-level stochastic chain.
-
-## Proof
-- Derived from: [Profile Kernel Step](profile-kernel-step.md) and
-  [Profile Kernel Chain](profile-kernel-chain.md).
-- Uses: [Observation Kernel](2026/03/04/2026-03-04-observation-kernel.md) and
-  [Profile Tower](profile-tower.md) to define profile evolution.
-- Shows that: lifting the observation kernel along the profile tower yields a
-  well-defined profile stochastic chain compatible with tower projections and
-  admitting fixed/mixing properties.

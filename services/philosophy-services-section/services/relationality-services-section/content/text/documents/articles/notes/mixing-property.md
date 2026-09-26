@@ -32,12 +32,3 @@ evolution makes states asymptotically independent of initial conditions.
 - Uses: [Observation Kernel](2026/03/04/2026-03-04-observation-kernel.md) as the underlying dynamic.
 - Shows that: the mixing act induces a well-defined property carrier for kernels
   used by entropy and spectral fixed-point arguments.
-
-## Earlier material
-
-## Proof
-- Derived from: [Mixing](mixing.md) act, which witnesses decay of
-  correlations under the kernel.
-- Uses: [Observation Kernel](2026/03/04/2026-03-04-observation-kernel.md) as the underlying dynamic.
-- Shows that: the mixing act induces a well-defined property carrier for kernels
-  used by entropy and spectral fixed-point arguments.

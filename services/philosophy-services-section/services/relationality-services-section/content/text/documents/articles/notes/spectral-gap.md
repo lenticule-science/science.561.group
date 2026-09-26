@@ -27,17 +27,3 @@ bounding mixing/relaxation rates.
   the gap.
 - Shows that: the gap data can bound convergence in
   [Entropy Spectral Fixed Point](./entropy-spectral-fixed-point.md) scenarios.
-
-## Earlier material
-
-## Definition
-- Data: ordered [Spectrum](spectrum.md) with distinguished leading
-  [Harmonic Mode](harmonic-mode.md); gap witness between the first and second
-  modes (numeric or relational).
-- Role: controls convergence rates in stochastic evolutions and entropy decay.
-
-## Proof
-- Uses: [Spectrum](spectrum.md) and [Harmonic Mode](harmonic-mode.md) to define
-  the gap.
-- Shows that: the gap data can bound convergence in
-  [Entropy Spectral Fixed Point](entropy-spectral-fixed-point.md) scenarios.

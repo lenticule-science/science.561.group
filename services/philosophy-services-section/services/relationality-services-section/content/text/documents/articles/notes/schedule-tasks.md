@@ -39,11 +39,3 @@ produces an execution order respecting dependencies.
   [Connection Graph](./connection-graph.md) to derive a precedence
   relation from wiring and trace constraints, then linearises it.
 - Shows that: scheduling derived from the graph preserves dependency invariants.
-
-## Earlier material
-
-## Proof
-- Uses: [Task Carrier](task-carrier.md) and
-  [Connection Graph](connection-graph.md) to derive a precedence
-  relation from wiring and trace constraints, then linearises it.
-- Shows that: scheduling derived from the graph preserves dependency invariants.

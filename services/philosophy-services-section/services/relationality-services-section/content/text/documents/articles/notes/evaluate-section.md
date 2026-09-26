@@ -47,12 +47,3 @@ flow/nucleus rules.
 ## Proof
 - Uses: small-step semantics over sections to compose big-step.
 - Shows that: big-step evaluation is well-defined and respects section/gluing invariants.
-
-## Earlier material
-
-## Definition
-- Inputs: a [Hypertensor Section](hypertensor-section.md) and an
-  [Evaluation Context Stack](evaluation-context-stack.md).
-- Outputs: section in normal form (or failure), with stack emptied.
-- Behaviour: iterate [Evaluate Section Step](evaluate-section-step.md) until
-  normal form or failure per failure algebra.

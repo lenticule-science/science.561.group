@@ -35,15 +35,3 @@ Discovers and validates exposed endpoints/ports in a computer wiring plan.
   policy regime to decide validity.
 - Shows that: identifying and validating endpoints is a read-only analysis of
   the wiring plan, producing annotations or failures without altering topology.
-
-## Earlier material
-
-## Definition
-- Inputs: [Wiring Plan](wiring-plan.md) and ambient
-  [Policy Regime](policy-regime.md).
-- Outputs: annotated wiring plan with endpoint metadata, or
-  [Failure Algebra](failure-algebra.md) element on invalid/unknown
-  endpoints.
-- Behaviour: traverses the plan to identify source/sink ports, validates their
-  types/policies, and annotates them; emits failure for mismatches or missing
-  bindings.

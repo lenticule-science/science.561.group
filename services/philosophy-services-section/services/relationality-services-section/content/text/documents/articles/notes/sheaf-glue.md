@@ -60,25 +60,3 @@ global section, enforcing the sheaf condition.
   `construct-glued-section`.
 - Shows that: the earned sheaf condition holds by producing unique amalgams
   from matching families over covers.
-
-## Earlier material
-
-## Definition
-- Inputs:
-  - A cover of a window by sub-windows in [Hypertensor Site](hypertensor-site.md).
-  - A [Matching Family](matching-family.md) of sections in
-    [Hypertensor Section](hypertensor-section.md) agreeing on overlaps.
-- Output: a unique global section over the covered window in
-  [Hypertensor Section](hypertensor-section.md).
-- Behaviour:
-  1. Check matching on pairwise overlaps.
-  2. Construct the amalgamated section.
-  3. Verify uniqueness up to earned equivalence.
-
-## Proof
-- Uses: [Hypertensor Site](hypertensor-site.md) coverage and
-  restriction structure plus [Matching Family](matching-family.md)
-  witnesses; validation via `check-matching-family`; construction via
-  `construct-glued-section`.
-- Shows that: the earned sheaf condition holds by producing unique amalgams
-  from matching families over covers.

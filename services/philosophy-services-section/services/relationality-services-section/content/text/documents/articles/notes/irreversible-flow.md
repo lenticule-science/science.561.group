@@ -33,11 +33,3 @@ Flow with entropy monotonicity constraints enforcing time’s direction.
 - Produces: constrained [Flow Context](./flow-context.md).
 - Shows that: irreversibility can be enforced by restricting flow to entropy
   monotone steps.
-
-## Earlier material
-
-## Proof
-- Uses: [Flow Context](flow-context.md) and [Entropy Functional](entropy-functional.md).
-- Produces: constrained [Flow Context](flow-context.md).
-- Shows that: irreversibility can be enforced by restricting flow to entropy
-  monotone steps.

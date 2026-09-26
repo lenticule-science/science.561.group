@@ -34,13 +34,3 @@ snapshots.
 - Produces: recognition of channel consistency.
 - Shows that: channel correctness can be validated recognitionally for snapshot
   assembly.
-
-## Earlier material
-
-## Definition
-- Inputs: [Message Channel](../../../structure/message-channel.md) and
-  [Channel State](channel-state.md).
-- Output: recognition indicating whether channel state is consistent with
-  snapshots (no lost/duplicated messages).
-- Behaviour: compare send/receive records within the channel state; ensure
-  unmatched messages are captured appropriately.

@@ -48,25 +48,3 @@ specialising wiring to operations/control tasks and constraining ports to
 config/approval/maintenance carriers plus failure handling. Shows that
 successful executions maintain policy/traceability invariants; failures yield
 [Computer Failure](./computer-failure.md).
-
-## Earlier material
-
-## Carrier
-- **Config recognitions:** declarative configs (routing, policies, resource
-  limits) expressed as [Computer Recognition](computer-recognition.md)
-  with traceability and topology metadata.
-- **Approval workflow:** recognition/state capturing multi-step approvals in
-  [Computer Evaluation State](computer-evaluation-state.md).
-- **Maintenance tasks:** wiring of scheduler, storage/replication, and testing
-  steps for drains, rollouts, and backups encoded as
-  [Computer Wiring Plan](computer-wiring-plan.md) over computer
-  operators.
-- **Failure carriers:** emitted when policy, topology, or wiring constraints are
-  violated, as [Computer Failure](computer-failure.md).
-
-## Proof
-Refines the computer [Kernel](documentation-interpreter.md) by
-specialising wiring to operations/control tasks and constraining ports to
-config/approval/maintenance carriers plus failure handling. Shows that
-successful executions maintain policy/traceability invariants; failures yield
-[Computer Failure](computer-failure.md).

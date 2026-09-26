@@ -28,10 +28,3 @@ objects in this programme.
 Directly derived from [`acts/structure`](./structure.md), which
 introduces the general notion of relational structure used throughout the
 repository.
-
-## Earlier material
-
-## Proof
-Directly derived from [`acts/structure`](../../../triage/docs/math/acts/structure.md), which
-introduces the general notion of relational structure used throughout the
-repository.

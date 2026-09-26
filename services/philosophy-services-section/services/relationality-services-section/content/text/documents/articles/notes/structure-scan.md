@@ -36,14 +36,3 @@ current evaluation state.
   with policy/trace constraints.
 - Shows that: discovery/validation over evaluation bindings yields either
   recognitions or failure witnesses without mutating the evaluation state.
-
-## Earlier material
-
-## Definition
-- Inputs: [Evaluation State](evaluation-state.md),
-  [Recognition Carrier](../../../structure/recognition.md) criteria, ambient
-  policy/trace.
-- Outputs: recognised structure inventory or [Failure Algebra](failure-algebra.md).
-- Behaviour: inspects evaluation bindings, validates against recognition
-  criteria using earned recognition operators, emits recognitions for
-  discovered structures; failures on malformed or policy-forbidden bindings.

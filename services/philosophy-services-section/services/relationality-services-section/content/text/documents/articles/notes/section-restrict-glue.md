@@ -73,19 +73,3 @@ sheaf.
   assemble the section.
 - Shows that: applying restriction/glue to quasicrystalline sections preserves
   sheaf axioms and flow–nucleus dynamics on the section.
-
-## Earlier material
-
-- [`presheaf`](../../../../../../logic-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/yet-another-unsorted-archive-dump/predication-categories/_archive/bucket-4/articulating/library/aperiodic-articulation-category/library/aperiodic-articulation-cell/library/potential-aperiodic-articulation-cell/predicating/library/transfinite-predication-category/hacking/library/predication-cell-set/docs/dev/scraps/from-stable-cell-stale-chain/library/predicate-set/library/predicate-category/hacking/library/object/library/thing/library/category/hacking/library/category/topos-theory/library/math/acts/presheaf.md) supplies restriction maps over
-  admissible windows.
-- [`sheaf-condition`](../../../../../../logic-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/yet-another-unsorted-archive-dump/predication-categories/_archive/bucket-4/articulating/library/aperiodic-articulation-category/library/aperiodic-articulation-cell/library/potential-aperiodic-articulation-cell/predicating/library/transfinite-predication-category/hacking/library/predication-cell-set/docs/dev/scraps/from-stable-cell-stale-chain/library/predicate-set/library/predicate-category/hacking/library/object/library/thing/library/category/hacking/library/category/topos-theory/library/math/acts/sheaf-condition.md) and
-  [`sheafification`](sheafification.md) earn the gluing
-  operation for compatible local sections.
-
-## Proof
-- Uses: [Coverage Site](coverage-site.md) covers/restrictions,
-  [Hypertensor Site](hypertensor-site.md) as the underlying site,
-  `check-matching-family` to validate compatibility, and `sheaf-glue` to
-  assemble the section.
-- Shows that: applying restriction/glue to quasicrystalline sections preserves
-  sheaf axioms and flow–nucleus dynamics on the section.

@@ -41,12 +41,3 @@ that takes a sheaf `Section` and produces snapshot content paired with a fresh
 Because `SnapContent` and `SnapId` are fixed by the earned carriers and the
 freshness discipline, any operator respecting these yields the same result up
 to nucleus equivalence; `save_snapshot` is unique in the earned sense.
-
-## Earlier material
-
-- From a `Section`, extract observations, the baseline remainder via
-  [`baseline-limit`](baseline-limit.md), and fixed recognitions eligible
-  for storage (`PersistentRecognitionCarrier`).
-- Package these into `SnapContent` (see
-  [`storage-snapshot-carrier`](storage-snapshot-carrier.md)).
-- Allocate a fresh `SnapId` and return `(SnapContent, SnapId)`.

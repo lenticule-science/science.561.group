@@ -25,16 +25,3 @@ Special observation that tags the start/end of a snapshot on a channel.
   [Seed Observation](./seed-observation.md).
 - Shows that: snapshot boundaries can be marked recognitionally without
   perturbing message semantics.
-
-## Earlier material
-
-## Definition
-- Components: marker observations from [Seed Observation](seed-observation.md)
-  inserted into [Message Channels](../../../triage/message-channel.md).
-- Role: delineate snapshot windows without altering channel semantics.
-
-## Proof
-- Uses: [Message Channel](../../../triage/message-channel.md) and marker act
-  [Seed Observation](seed-observation.md).
-- Shows that: snapshot boundaries can be marked recognitionally without
-  perturbing message semantics.

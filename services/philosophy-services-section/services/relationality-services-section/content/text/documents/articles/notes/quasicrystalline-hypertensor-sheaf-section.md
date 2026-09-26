@@ -73,29 +73,3 @@ Sheafification forces uniqueness: any sheaf over the same coverage and
 carriers is nucleus-equivalent. Flow–nucleus compatibility further fixes the
 earned dynamics. Therefore the section carrier `Section` is unique up to
 earned equivalence.
-
-## Earlier material
-
-- **Window.** Earned by [`decompose-trace`](decompose-trace.md),
-  [`shuffle-trace`](shuffle-trace.md),
-  [`collapse-shuffle`](collapse-shuffle.md), and the fixed
-  substitution flow from [`ensure-fixed-point`](ensure-fixed-point.md),
-  subject to the external quasicrystal constraints.
-- **Fiber.** Earned by [`profile-recognitions`](profile-recognitions.md)
-  over the trace infrastructure.
-- **Tower.** Earned by [`build-profile-tower`](build-profile-tower.md)
-  and [`build-composite-profile-tower`](build-composite-profile-tower.md)
-  attached to each `Fiber`.
-- **Coverage.** Earned by [`discipline`](../../../../math/acts/discipline.md),
-  [`filter`](filter.md), and
-  [`compose-filter`](compose-filter.md) to define admissible
-  overlaps.
-- **Sheaf.** Applying [`presheaf`](../../../../math/acts/presheaf.md),
-  [`sheaf-condition`](../../../../math/acts/sheaf-condition.md), and
-  [`sheafification`](sheafification.md) to `(Window, Fiber, Tower)`
-  over the earned coverage yields `(Section, restrict, glue)`.
-- **Dynamics.** Flow–nucleus compatibility is enforced by
-  [`flow`](../../../../math/acts/flow.md), [`nucleate`](nucleate.md),
-  [`commute-flow-and-nucleus`](commute-flow-and-nucleus.md), and
-  [`flow-composite-profile`](flow-composite-profile.md), keeping
-  `Section` stable up to nucleus under the earned dynamics.

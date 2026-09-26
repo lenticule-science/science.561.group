@@ -36,10 +36,3 @@ requests at the computer layer.
 - Derived from: [Computer Recognition](./computer-recognition.md).
 - Shows that: issuing tokens as recognitions maintains the recognition model
   while adding concrete OAuth fields for computer-level auth.
-
-## Earlier material
-
-## Proof
-- Derived from: [Computer Recognition](computer-recognition.md).
-- Shows that: issuing tokens as recognitions maintains the recognition model
-  while adding concrete OAuth fields for computer-level auth.

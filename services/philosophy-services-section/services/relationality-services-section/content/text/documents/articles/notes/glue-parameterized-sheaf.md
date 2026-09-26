@@ -45,20 +45,3 @@ matching family of parameterized sections into a global
   cover, matching, and restriction data with parameterized executable forms.
 - Shows that: the earned sheaf condition can be executed in calculus, producing
   concrete sections from compatible local data.
-
-## Earlier material
-
-Executable gluing operator for parameterized sheaves: amalgamates a validated
-matching family of parameterized sections into a global
-[Parameterized Section](parameterized-section.md).
-
-## Definition
-- Inputs:
-  - A cover `{Ui → U}` in the [Parameterized Coverage Site](parameterized-coverage-site.md).
-  - A [Parameterized Matching Family](parameterized-matching-family.md)
-    of section payloads agreeing on overlaps.
-- Output: a [Parameterized Section](parameterized-section.md)
-  over `U` produced by calling the sheaf’s executable gluing routine.
-- Behaviour: reuses cached coherence witnesses, invokes the parameterized
-  sheaf’s amalgamation API, and emits the resulting section with provenance for
-  replay or distribution.

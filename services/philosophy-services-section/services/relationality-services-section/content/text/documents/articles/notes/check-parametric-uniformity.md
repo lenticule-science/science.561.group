@@ -42,25 +42,3 @@ reindexings of the context geometry.
 - Shows that: when reindexing is governed by the adjunction witness, the
   parametric semantics remain invariant across base morphisms, yielding the
   uniformity certificate.
-
-## Earlier material
-
-## Definition
-- Inputs: an [Indexed Category](indexed-category.md) over the
-  [Index Base](index-base.md) and its corresponding
-  [Parametric Semantics](parametric-semantics.md) carrier.
-- Behaviour: checks, using the [Context Adjunction Witness](context-adjunction-witness.md),
-  that reindexing along any base morphism preserves the parametric semantic
-  relations.
-- Outputs: the same [Parametric Semantics](parametric-semantics.md)
-  equipped with a uniformity witness.
-
-## Proof
-- Derived from: [Context Adjunction Witness](context-adjunction-witness.md),
-  which supplies the unit/counit equations for reindexing.
-- Uses: [Indexed Category](indexed-category.md) to transport
-  contexts and [Parametric Semantics](parametric-semantics.md) as
-  the relations being preserved.
-- Shows that: when reindexing is governed by the adjunction witness, the
-  parametric semantics remain invariant across base morphisms, yielding the
-  uniformity certificate.

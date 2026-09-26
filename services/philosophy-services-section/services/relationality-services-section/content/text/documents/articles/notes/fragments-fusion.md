@@ -133,9 +133,3 @@ The interplay of the three closures produces a structure where syntax and semant
 - All of this is compatible with the modal structure ($j$), the trace structure ($G$), and the fragment structure (locality).
 
 The final lesson — [The Semiotic Universe](./semantics-semiotics-bridge.md) — shows that this [fixed point](../../../../concepts/fixed-point/index.md) has a universal [property](../../../../../sociology/terms/property.md): it is the initial object in a 2-category of [semiotic structures](../../../glossary/terms/semiotic-structure.md), making it the free modal–comonadic [Heyting](../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/arend-heyting.md) structure with interpreted syntax.
-
-## Earlier material
-
-1. The [Heyting](../../../../../../../general/people/arend-heyting.md) operations: $\wedge$, $\vee$, $\Rightarrow$, $\bot$, $\top$.
-2. The modality $j$.
-3. The trace $G$.

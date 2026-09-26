@@ -36,12 +36,3 @@ by name (port id or variable).
 ## Proof
 - Uses: the state’s [Binding Environment](./binding-environment.md).
 - Shows that: name resolution is available as a documented lookup over the binding environment.
-
-## Earlier material
-
-Retrieves a bound runtime value from the [Evaluation State](evaluation-state.md)
-by name (port id or variable).
-
-## Proof
-- Uses: the state’s [Binding Environment](binding-environment.md).
-- Shows that: name resolution is available as a documented lookup over the binding environment.

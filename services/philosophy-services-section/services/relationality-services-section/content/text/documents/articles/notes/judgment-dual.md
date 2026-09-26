@@ -24,10 +24,3 @@ reversal.
 ## Proof
 - Uses: judgment triads and flow reversal to define duals.
 - Shows that: judgments admit a dual structure capturing reverse entailment.
-
-## Earlier material
-
-## Definition
-- Carrier: [Judgment Triad](judgment-triad.md) transformed by reversing flow
-  direction, interchanging premise/conclusion roles.
-- Structure: includes dual flow/nucleus behaviour.

@@ -41,13 +41,3 @@ constraints.
   trace/integrity.
 - Shows that: routing packets along compatible ports with trace/integrity
   constraints refines the distribution acts.
-
-## Earlier material
-
-## Definition
-- Inputs: [Distribution Packet](distribution-packet-carrier.md).
-- Outputs: updated [Distribution Channel](distribution-channel-carrier.md)
-  with packet queued, or no-op if incompatible.
-- Behaviour: select channels whose ports are compatible with the packet
-  endpoints and whose trace/storage constraints are satisfied; enqueue packet
-  preserving trace order and integrity.

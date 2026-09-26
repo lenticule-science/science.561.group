@@ -39,14 +39,3 @@ pushforward commute on subobjects/recognitions.
   the commutation holds.
 - Shows that: the given square satisfies Base-Change, yielding the condition
   witness used for substitution and logical relations.
-
-## Earlier material
-
-## Definition
-- Inputs: a pullback square in the [Relational Sheaf Topos](../../../structure/relational-sheaf-topos.md),
-  and subobjects expressed via [Subobject Classifier](../../../structure/subobject-classifier.md).
-- Outputs: a [Base-Change Condition](base-change-condition.md)
-  witness for that square.
-- Behaviour: constructs characteristic maps, applies the pushforward/pullback
-  adjunctions available in the sheaf topos, and checks that the two routes
-  coincide.

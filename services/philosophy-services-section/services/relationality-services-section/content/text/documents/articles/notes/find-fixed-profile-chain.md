@@ -31,13 +31,3 @@ The **Find Fixed Profile Chain** operator computes a fixed distribution for the
 ## Proof
 Derived from `acts/ensure-fixed-point`, which guarantees existence/uniqueness
 of a fixed distribution for the chain under the earned conditions.
-
-## Earlier material
-
-The **Find Fixed Profile Chain** operator computes a fixed distribution for the
-[Profile Kernel Chain](profile-kernel-chain.md).
-
-## Definition
-- Inputs: [Profile Kernel Chain](profile-kernel-chain.md).
-- Outputs: stabilised [Profile Kernel Chain](profile-kernel-chain.md) representing the fixed point.
-- Behaviour: applies fixed-point machinery from [Ensure Fixed Point](ensure-fixed-point.md) to the profile kernel chain to compute its fixed distribution.

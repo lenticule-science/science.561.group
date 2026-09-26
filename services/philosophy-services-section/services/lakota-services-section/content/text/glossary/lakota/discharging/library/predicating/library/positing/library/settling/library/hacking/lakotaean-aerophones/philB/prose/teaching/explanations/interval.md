@@ -30,7 +30,3 @@ The *perfect fifth* between 5 and 1 is the strongest stable interval; melodic as
 The *minor seventh* between b7 and 1 is the largest stable interval within the octave; b7 is the phrase's typical peak, descending through 5 and 4 to b3 and 1 across the course of the phrase.
 
 See also: [pentatonic-minor-scale](./pentatonic-minor-scale.md), [cents](../../../../b4/cents/cents.md), [scale-degree](./scale-degree.md), [cadence](./cadence.md).
-
-## Earlier material
-
-See also: [pentatonic-minor-scale](../../../../../../../../../../../../../../../../../../../../../information-science-services-section/services/communication-science-services-section/services/media-science-services-section/services/music-services-section/content/text/triage/pentatonic-minor-scale.md), [cents](../../../../b4/cents/cents.md), [scale-degree](scale-degree.md), [cadence](../../../../../../../../../../../../../../../../../../../../../information-science-services-section/services/communication-science-services-section/services/media-science-services-section/services/music-services-section/content/text/triage/cadence.md).

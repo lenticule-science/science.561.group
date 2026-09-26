@@ -24,8 +24,3 @@ profiles, earned by [`acts/build-profile-tower`](./build-profile-tower.md).
 
 ## Proof
 Direct from `build-profile-tower`, which constructs the tower and its maps.
-
-## Earlier material
-
-The **Profile Tower** is the tower of recognitions built by repeatedly stacking
-profiles, earned by [`acts/build-profile-tower`](build-profile-tower.md).

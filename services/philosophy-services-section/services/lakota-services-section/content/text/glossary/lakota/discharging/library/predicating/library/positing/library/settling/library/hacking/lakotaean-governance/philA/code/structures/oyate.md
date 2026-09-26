@@ -89,8 +89,3 @@ The oyate-cell-system continues to fire on each: the Oglala on Pine Ridge Reserv
 - White Hat, *Life's Journey — Zuya* (2012) — Sicangu Lakota oyate-life in contemporary Sicangu voice.
 - DeMallie, *The Sioux at the Time of European Contact*, in *Handbook of North American Indians* vol.
   13 — historical oyate enumeration and migration.
-
-## Earlier material
-
-**(O5) Akicita installation for hunt or war.** When a hunt or war party is to be formed, the oyate's omniciye settles which akicita-band has the scope: $\langle B, \texttt{scope}, X\rangle \geq_k \mathbf{t}$ for $X$ the action under akicita-authority.
-The akicita-band's authority is in force until $X$ completes; see [akicita-band](../../../philB/code/structures/akicita-band.md), [akicita-delegation](../../../../../../../../../../../../../../../../../../../../social-science-services-section/services/other-social-science-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/existence/lakota/discharging/library/predicating/library/positing/library/settling/library/hacking/lakotaean-governance/philA/code/morphisms/akicita-delegation.md), and [akicita-revocation-at-scope-completion](../../../philB/prose/learning/claims/akicita-revocation-at-scope-completion.md).

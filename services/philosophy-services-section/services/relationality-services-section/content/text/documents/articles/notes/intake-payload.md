@@ -20,13 +20,3 @@ derives-from: acts/seed-observation
 ## Proof
 - Derived from: [Seed Observation](./seed-observation.md), which establishes payloads as observation inputs.
 - Shows that: the seeding act induces a carrier of payloads suitable for intake observations.
-
-## Earlier material
-
-## Definition
-- Carrier: raw intake data that can be seeded into observations.
-- Source: earned from [Seed Observation](seed-observation.md), which introduces payloads for observation seeding.
-
-## Proof
-- Derived from: [Seed Observation](seed-observation.md), which establishes payloads as observation inputs.
-- Shows that: the seeding act induces a carrier of payloads suitable for intake observations.

@@ -94,8 +94,3 @@ sorry represents in a comment.
 4. **Interpretation** — done (`Interpretation.lean`)
 5. **Fusion and closure operators** — `SemioticUniverse/Fusion.lean`
 6. **Initiality theorem** — `SemioticUniverse/Initiality.lean`
-
-## Earlier material
-
-Lean 4 + Mathlib formalization of the
-[semiotic universe](../../content/text/documents/articles/notes/semiotic-universe.md) specification.

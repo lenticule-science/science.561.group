@@ -31,19 +31,3 @@ consumers, preserving trace semantics and storage invariants.
   [Introspection Probe](./introspection-probe.md) to define endpoints/payloads.
 - Shows that: specialising distribution channels to introspection payloads yields
   an introspection channel carrier ready for monitoring flows.
-
-## Earlier material
-
-## Definition
-- Carrier: specialised [Distribution Channel](distribution-channel-carrier.md)
-  dedicated to introspection payloads emitted by [Introspection Probe](introspection-probe.md).
-- Fields: channel endpoints, packet queue of probe outputs, trace span, storage
-  metadata.
-
-## Proof
-- Derived from: [Trace Carrier](undated/trace.md) to attach
-  ordered trace spans.
-- Uses: [Distribution Channel Carrier](distribution-channel-carrier.md) and
-  [Introspection Probe](introspection-probe.md) to define endpoints/payloads.
-- Shows that: specialising distribution channels to introspection payloads yields
-  an introspection channel carrier ready for monitoring flows.

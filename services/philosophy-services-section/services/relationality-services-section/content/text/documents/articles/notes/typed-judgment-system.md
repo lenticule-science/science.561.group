@@ -26,11 +26,3 @@ Typed judgments over hypertensor sections with derivation histories.
 - Uses: judgment terms, section types, and proof traces to define the typing
   system.
 - Shows that: typing is coherent and supports derivation tracking for DSL specs.
-
-## Earlier material
-
-## Definition
-- Components: typing contexts, [Judgment Terms](judgment-term.md) annotated with
-  [Hypertensor Section](hypertensor-section.md) types, and [Proof Traces](proof-trace.md).
-- Rules: inference rules assigning types to terms/sections; derivations recorded
-  as proof traces.

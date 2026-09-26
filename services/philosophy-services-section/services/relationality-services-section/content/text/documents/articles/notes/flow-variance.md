@@ -32,12 +32,3 @@ Computes how recognitions diverge under iterative flow—variance of uncertainty
 - Uses: uncertainty profile and flow dynamics.
 - Shows that: divergence/spread under flow is measurable in the relational
   setting.
-
-## Earlier material
-
-## Definition
-- Inputs: an [Uncertainty Profile](uncertainty-profile.md) and
-  [Flow Context](flow-context.md).
-- Output: updated [Uncertainty Profile](uncertainty-profile.md)
-  reflecting spread after flow steps.
-- Behaviour: iterate flow, measure change in entropy/dispersion, update profile.

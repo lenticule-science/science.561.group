@@ -36,11 +36,3 @@ that typed substitutions stay reducible.
 
 Given the earned environment and substitution acts, reducible substitution is
 fixed up to nucleus equivalence.
-
-## Earlier material
-
-The earned acts
-[`select-reducibility-candidate`](select-reducibility-candidate.md) and
-[`substitute-reducibility`](substitute-reducibility.md) show that
-substituting typed reducible terms into a `ReducibleEnvironment` preserves
-reducibility.

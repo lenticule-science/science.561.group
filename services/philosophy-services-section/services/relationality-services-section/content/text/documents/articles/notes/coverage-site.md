@@ -56,9 +56,3 @@ support sheaves and path gluing.
 - Shows that: the coverage site is the structural layer supporting restrictions,
   matching families, sheaf checks, and path composition across local patches;
   coverage stability and overlap data are explicit, not assumed.
-
-## Earlier material
-
-Carrier turning the sparse traces of [Relationlessness](../../../../../../logic-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/yet-another-unsorted-archive-dump/predication-categories/_archive/bucket-4/articulating/library/aperiodic-articulation-category/library/aperiodic-articulation-cell/library/potential-aperiodic-articulation-cell/predicating/library/transfinite-predication-category/hacking/library/predication-cell-set/docs/dev/scraps/from-stable-cell-stale-chain/library/predicate-set/library/predicate-category/hacking/library/object/library/thing/library/category/hacking/library/category/topos-theory/library/quasicrystalline-hypertensor-topos/library/acts/relationlessness.md)
-into a site equipped with covers, restrictions, and matching conditions that
-support sheaves and path gluing.

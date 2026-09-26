@@ -29,8 +29,3 @@ are consistent with their inducing operator signatures and carrier types.
 - Uses: port declarations versus operator signatures to validate directions and
   carrier ids via `check-port-typing`.
 - Shows that: port-level typing holds before wiring proceeds to edge checks.
-
-## Earlier material
-
-Predicate asserting that all ports in a [Port Set](port-set.md)
-are consistent with their inducing operator signatures and carrier types.

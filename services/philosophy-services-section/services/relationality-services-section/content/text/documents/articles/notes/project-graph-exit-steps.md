@@ -30,8 +30,3 @@ Extracts the sink steps (no outgoing edges) from a
 - Uses: the edge relation in the connection graph to find nodes with out-degree
   zero.
 - Shows that: exit steps can be exposed without primitive opcodes.
-
-## Earlier material
-
-Extracts the sink steps (no outgoing edges) from a
-[Connection Graph](connection-graph.md).

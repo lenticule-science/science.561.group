@@ -24,10 +24,3 @@ Measures spread/instability of recognitions under flow via entropy/variance.
 - Uses: epistemic profile and entropy to quantify uncertainty.
 - Shows that: uncertainty can be treated as a first-class structure for flow
   analysis.
-
-## Earlier material
-
-## Definition
-- Components: an [Epistemic Profile](epistemic-profile.md) with attached entropy
-  or variance scores from the [Entropy Functional](entropy-functional.md).
-- Tracks how recognitions disperse under flow iterations.

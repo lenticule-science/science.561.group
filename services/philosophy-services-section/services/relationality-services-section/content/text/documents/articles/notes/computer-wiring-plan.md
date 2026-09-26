@@ -33,9 +33,3 @@ derives-from: machine/structure/wiring-plan
 ## Proof
 - Derived from: [Machine Wiring Plan](./wiring-plan.md).
 - Shows that: lifting machine wiring to the computer layer yields a runbook format programs can author while respecting machine constraints.
-
-## Earlier material
-
-## Proof
-- Derived from: [Machine Wiring Plan](wiring-plan.md).
-- Shows that: lifting machine wiring to the computer layer yields a runbook format programs can author while respecting machine constraints.

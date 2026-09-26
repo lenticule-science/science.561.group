@@ -55,8 +55,3 @@ or emits a [Failure Carrier](./failure-carrier.md) on error.
   a snapshot.
 - Shows that: snapshot persistence is expressed entirely via earned operators
   over earned carriers; failures are explicit.
-
-## Earlier material
-
-Persists recognitions and evaluation state into a durable [Snapshot](snapshot.md),
-or emits a [Failure Carrier](failure-carrier.md) on error.

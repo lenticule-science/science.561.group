@@ -30,8 +30,3 @@ bindings map is extended with the supplied binding map.
 ## Proof
 - Uses: the binding map structure in `evaluation-state`.
 - Shows that: local bindings can be layered without mutating the original state.
-
-## Earlier material
-
-Produces a new [Evaluation State](evaluation-state.md) whose
-bindings map is extended with the supplied binding map.

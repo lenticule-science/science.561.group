@@ -26,10 +26,3 @@ naturality with respect to the hypertensor site.
 - Uses: sheaf axioms on the hypertensor site to derive restriction laws.
 - Shows that: restrictions form a functor from the site to sets/sections with
   naturality under site morphisms.
-
-## Earlier material
-
-## Definition
-- Carrier: restriction maps of [Hypertensor Sheaf](hypertensor-sheaf.md) over
-  [Hypertensor Site](hypertensor-site.md).
-- Structure: identities on each window; composition along chains of inclusions.

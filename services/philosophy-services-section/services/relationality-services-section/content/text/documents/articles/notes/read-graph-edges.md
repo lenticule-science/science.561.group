@@ -25,9 +25,3 @@ ids and carrier types.
 
 ## Invariants
 - Reads edge data without mutation; preserves ordering from the graph representation.
-
-## Earlier material
-
-Extracts the [Edge Set](edge-set.md) from a
-[Connection Graph](connection-graph.md), retaining endpoint port
-ids and carrier types.

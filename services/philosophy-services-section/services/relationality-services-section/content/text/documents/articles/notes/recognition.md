@@ -67,13 +67,3 @@ topos/flow/nucleus invariants.
 - Shows that: packaging predicate, support, evidence, scope, provenance, and
   stability yields an earned, portable carrier for recognition operations in
   the quasicrystalline hypertensor topos.
-
-## Earlier material
-
-## Proof
-- Uses: earned act [Recognize](recognize.md) for the predicate, lattice
-  acts (meet/join/negate) for combination, sheaf/coverage acts for locality,
-  and flow/nucleus acts for stability.
-- Shows that: packaging predicate, support, evidence, scope, provenance, and
-  stability yields an earned, portable carrier for recognition operations in
-  the quasicrystalline hypertensor topos.

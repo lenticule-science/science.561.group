@@ -27,7 +27,3 @@ Its interpretation maps well-formed terms and judgments to internal objects and 
 - It provides a precise syntax for stating recognition claims.
 - It links symbolic expressions to sheaf-theoretic semantics.
 - It determines part of what generative closure must include.
-
-## Earlier material
-
-Its interpretation maps well-formed terms and judgments to internal objects and [morphisms](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/morphism.md), with naturality and sheaf-compatibility constraints inherited from the topos semantics.

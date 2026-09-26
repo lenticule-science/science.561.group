@@ -13,7 +13,3 @@ M&O is a [music artist](music-artist.md).
 [music album](../../../../../information-science-services-section/services/communication-science-services-section/services/media-science-services-section/services/music-services-section/content/text/documents/articles/notes/2025/07/21/2025-07-21-music-album.md)
 
 # Tracks
-
-## Earlier material
-
-[music album](../../../../../information-science-services-section/services/communication-science-services-section/services/media-science-services-section/services/music-services-section/content/text/documents/articles/notes/2025/07/21/2025-07-21-music-album.md)

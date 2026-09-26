@@ -23,9 +23,3 @@ derives-from: theorem/internal/stratified-site-structure
 ## Proof
 - Derived from: [`stratified-site-structure`](./stratified-site-structure.md) which earns the site, coverage, and stratification data.
 - Shows that: the earned site structure determines the admissible class with polarity, locality, and factorisation properties; uniqueness up to earned equivalence follows from the site derivation.
-
-## Earlier material
-
-- Carrier: admissible morphisms `Adm ⊂ Mor(C)` in a stratified ∞-site.
-- Source: induced by the stratified site structure
-  [`stratified-site-structure`](stratified-site-structure.md).

@@ -28,14 +28,3 @@ Counit natural transformation for the flow–nucleus adjunction.
 - Uses: [Flow–Nucleus Adjunction](./flow-nucleus-adjunction.md) to
   supply the counit.
 - Shows that: counit maps exist and satisfy the adjunction laws.
-
-## Earlier material
-
-## Definition
-- Inputs: a [Context](../../../structure/context.md).
-- Outputs: counit map `epsilon: flow ∘ nucleus → Id` at that context.
-
-## Proof
-- Uses: [Flow–Nucleus Adjunction](flow-nucleus-adjunction.md) to
-  supply the counit.
-- Shows that: counit maps exist and satisfy the adjunction laws.

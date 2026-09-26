@@ -39,9 +39,3 @@ higher cells using flow/nucleus operations and profile towers.
 ## Proof
 - Derived from: [Documentation Interpreter](./documentation-interpreter.md).
 - Shows that: this program simulates directed homotopy concepts atop the documentation interpreter without extending machine semantics.
-
-## Earlier material
-
-## Proof
-- Derived from: [Documentation Interpreter](documentation-interpreter.md).
-- Shows that: this program simulates directed homotopy concepts atop the documentation interpreter without extending machine semantics.

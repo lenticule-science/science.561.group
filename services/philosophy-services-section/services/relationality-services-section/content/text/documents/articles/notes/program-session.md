@@ -39,10 +39,3 @@ Generic session carrier binding a program workspace to an evaluation context.
 - Derived from: [Computer Evaluation State](./computer-evaluation-state.md).
 - Shows that: specialising evaluation state to program tasks yields a reusable
   session carrier for program runbooks.
-
-## Earlier material
-
-## Proof
-- Derived from: [Computer Evaluation State](computer-evaluation-state.md).
-- Shows that: specialising evaluation state to program tasks yields a reusable
-  session carrier for program runbooks.

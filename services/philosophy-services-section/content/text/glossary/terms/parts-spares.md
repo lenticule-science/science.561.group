@@ -13,9 +13,3 @@ Parts & Spares is a [music artist](music-artist.md).
 ## "SALT" {#0e6a8853-4374-469d-becc-00038da95422}
 
 [music track](../../../../../information-science-services-section/services/communication-science-services-section/services/media-science-services-section/services/music-services-section/content/text/documents/articles/notes/2025/07/21/2025-07-21-music-track.md), [electronic](electronic.md), [synthwave](synthwave.md)
-
-## Earlier material
-
-[music track](../../../../../information-science-services-section/services/communication-science-services-section/services/media-science-services-section/services/music-services-section/content/text/documents/articles/notes/2025/07/21/2025-07-21-music-track.md), [electronic](electronic.md), [synthwave](synthwave.md)
-
-[music track](../../../../../information-science-services-section/services/communication-science-services-section/services/media-science-services-section/services/music-services-section/content/text/documents/articles/notes/2025/07/21/2025-07-21-music-track.md), [electronic](electronic--002311.md), [synthwave](synthwave.md)

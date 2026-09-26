@@ -41,9 +41,3 @@ programmable inside calculus flows.
   fixing computational parameters for intervals and metrics.
 - Shows that: the abstract homotopical composition can be executed in calculus
   settings where discretization and reparameterization are explicit.
-
-## Earlier material
-
-Parameterized lift of [Path Compose](path-compose.md)
-that fixes interval discretizations, metrics, or step bounds so concatenation is
-programmable inside calculus flows.

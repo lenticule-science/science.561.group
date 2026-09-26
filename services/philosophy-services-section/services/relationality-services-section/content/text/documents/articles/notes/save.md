@@ -36,12 +36,3 @@ Effects:
 
 - records an audit entry as described in [Audit](./audit.md) linking the
   `SnapId`, input state hash/identifier, and caller context.
-
-## Earlier material
-
-- validates and normalises observations via the intake/persistence stacks;
-- extracts `baseline_remainder` using
-  [Baseline and Renewal Mechanics](../../../../../../../content/text/documents/articles/notes/undated/baseline-renewal.md);
-- collects fixed recognitions via the persistence structure;
-- allocates a fresh [SnapId](snap-id.md);
-- emits [SnapContent](snap-content.md) paired with the new `SnapId`.

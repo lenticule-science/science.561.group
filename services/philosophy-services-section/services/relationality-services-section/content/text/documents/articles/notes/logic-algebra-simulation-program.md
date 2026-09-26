@@ -38,10 +38,3 @@ engine or additional truth values.
 - Derived from: [Computer Kernel](./documentation-interpreter.md).
 - Shows that: this program simulates logic-algebra behaviour atop the computer
   kernel without extending machine semantics.
-
-## Earlier material
-
-## Proof
-- Derived from: [Computer Kernel](documentation-interpreter.md).
-- Shows that: this program simulates logic-algebra behaviour atop the computer
-  kernel without extending machine semantics.

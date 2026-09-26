@@ -43,17 +43,3 @@ protecting commands with OAuth authentication.
 - Shows that: exposing the computer via MCP + OAuth can be expressed as a
   computer-layer program using earned carriers/operators without extending
   machine semantics.
-
-## Earlier material
-
-## Definition
-- Inputs: endpoint specification as [MCP Endpoint](mcp-endpoint.md);
-  incoming [MCP Request](mcp-request.md) plus optional
-  [OAuth Credential](../../../glossary/terms/oauth-credential.md).
-- Operators:
-  - [OAuth Validate](oauth-validate.md) to issue/validate tokens.
-  - [MCP Handle Request](mcp-handle-request.md) to dispatch commands.
-- Carriers: evaluation state/wiring from the documentation interpreter to execute handler
-  steps.
-- Outputs: [MCP Response](mcp-response.md) or
-  [Computer Failure](computer-failure.md).

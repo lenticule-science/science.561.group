@@ -32,7 +32,3 @@ A related but distinct two-voice configuration is the *whistle-drum pair* (a sin
 See [whistle-drum-heterophony](../../code/structures/whistle-drum-heterophony.md) for that case.
 
 See also: [voice](./voice.md), [cedar-flute](../../../../b4/cedar-flute/cedar-flute.md), [instrumentalization](./instrumentalization.md), [heterophony](./heterophony.md), [flute-voice-duet](../../../code/structures/flute-voice-duet.md).
-
-## Earlier material
-
-See also: [voice](../../../../../../../../../../../../../../../../../../../../../information-science-services-section/services/communication-science-services-section/services/media-science-services-section/services/music-services-section/content/text/triage/voice.md), [cedar-flute](../../../../b4/cedar-flute/cedar-flute.md), [instrumentalization](../../../../../../../../../../../../../../../../../../../../../information-science-services-section/services/communication-science-services-section/services/media-science-services-section/services/music-services-section/content/text/triage/instrumentalization.md), [heterophony](heterophony.md), [flute-voice-duet](../../../code/structures/flute-voice-duet.md).

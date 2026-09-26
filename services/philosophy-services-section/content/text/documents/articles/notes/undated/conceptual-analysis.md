@@ -14,7 +14,3 @@ Conceptual analysis has [utility](../../../../glossary/terms/utility.md) because
 Conceptual analysis essentially involves [examining](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/examining.md) a concept's [relationships](../../../../glossary/terms/relationship.md) to other concepts. There are different [modes of conceptual analysis](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/mode-of-conceptual-analysis.md):
 
 - [two-dimensionalist conceptual analysis](../../../../../../../information-science-services-section/services/communication-science-services-section/services/linguistics-services-section/services/semantics-services-section/content/text/glossary/terms/two-dimensionalist-conceptual-analysis.md)
-
-## Earlier material
-
-- [two-dimensionalist conceptual analysis](../../../../../../../information-science-services-section/services/communication-science-services-section/services/linguistics-services-section/services/semantics-services-section/content/text/glossary/terms/two-dimensionalist-conceptual-analysis.md)

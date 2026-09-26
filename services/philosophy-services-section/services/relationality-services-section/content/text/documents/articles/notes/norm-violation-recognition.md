@@ -39,21 +39,3 @@ or neutral element if compliant.
   violation.
 - Shows that: normative predicates can be expressed as recognition operations
   consistent with earned lattice/logic structure.
-
-## Earlier material
-
-## Definition
-- Inputs: a [Norm Regime](norm-regime.md) and a recognition in the
-  [Recognition Carrier](../../../../../../logic-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/yet-another-unsorted-archive-dump/predication-categories/_archive/bucket-4/articulating/library/aperiodic-articulation-category/library/aperiodic-articulation-cell/library/potential-aperiodic-articulation-cell/predicating/library/transfinite-predication-category/hacking/library/predication-cell-set/docs/dev/scraps/from-stable-cell-stale-chain/library/predicate-set/library/predicate-category/hacking/library/object/library/thing/library/category/hacking/library/information/library/recognition/structure/recognition.md).
-- Outputs: recognition of violation (or neutral if compliant).
-- Behaviour: evaluate the recognition against the regime’s admissibility
-  predicate; if outside, return a violation recognition (e.g., bottom or tagged
-  violation); otherwise return neutral/top.
-
-## Proof
-- Uses: [Norm Regime](norm-regime.md) as policy, and
-  [Recognition Carrier](../../../../../../logic-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/yet-another-unsorted-archive-dump/predication-categories/_archive/bucket-4/articulating/library/aperiodic-articulation-category/library/aperiodic-articulation-cell/library/potential-aperiodic-articulation-cell/predicating/library/transfinite-predication-category/hacking/library/predication-cell-set/docs/dev/scraps/from-stable-cell-stale-chain/library/predicate-set/library/predicate-category/hacking/library/object/library/thing/library/category/hacking/library/information/library/recognition/structure/recognition.md) as domain/codomain.
-- Produces: [Recognition Carrier](../../../../../../logic-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/yet-another-unsorted-archive-dump/predication-categories/_archive/bucket-4/articulating/library/aperiodic-articulation-category/library/aperiodic-articulation-cell/library/potential-aperiodic-articulation-cell/predicating/library/transfinite-predication-category/hacking/library/predication-cell-set/docs/dev/scraps/from-stable-cell-stale-chain/library/predicate-set/library/predicate-category/hacking/library/object/library/thing/library/category/hacking/library/information/library/recognition/structure/recognition.md) marking
-  violation.
-- Shows that: normative predicates can be expressed as recognition operations
-  consistent with earned lattice/logic structure.

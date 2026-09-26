@@ -35,13 +35,3 @@ the earned nucleus for the fixed profile.
 By construction from `acts/fixed-measure`, this operator computes the nucleus of
 fixed invariant states. It collapses variations that the fixed profile
 identifies while keeping results within the same carrier.
-
-## Earlier material
-
-## Definition
-- Input: a [Fixed Invariant State](fixed-invariant-state.md).
-- Output: a [Fixed Invariant State](fixed-invariant-state.md)
-  representing the nucleus-equivalence class of the input.
-- Behaviour: applies the nucleus induced by
-  [`acts/fixed-measure`](fixed-measure.md) to restrict the state
-  to its fixed-profile measurement.

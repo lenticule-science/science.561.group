@@ -37,13 +37,3 @@ Predicate asserting that every edge connects compatible ports from the
 - Uses: [Edge Set](./edge-set.md) endpoints and the [Port Set](./port-set.md) typing/policy constraints to validate compatibility.
 - Shows that: the resulting predicate witnesses edge well-typedness, required
   before acyclicity and wiring assembly.
-
-## Earlier material
-
-Predicate asserting that every edge connects compatible ports from the
-[Port Set](port-set.md).
-
-## Proof
-- Uses: [Edge Set](edge-set.md) endpoints and the [Port Set](port-set.md) typing/policy constraints to validate compatibility.
-- Shows that: the resulting predicate witnesses edge well-typedness, required
-  before acyclicity and wiring assembly.

@@ -29,9 +29,3 @@ the graph is acyclic.
 - Uses: depth-first/back-edge detection over the directed edges.
 - Shows that: cycle presence can be witnessed as a recognition for higher-level
   acyclicity predicates.
-
-## Earlier material
-
-Primitive cycle finder over an [Edge Set](edge-set.md) that
-produces a recognition witness when a directed cycle exists, or bottom when
-the graph is acyclic.

@@ -50,8 +50,3 @@ Orchestrates the parameterized path composition lift across a
   operators on the distributional coverage site to refine/glue paths.
 - Shows that: refining both paths to a common overlap and gluing yields a
   composed path with recorded provenance, suitable for downstream execution.
-
-## Earlier material
-
-Orchestrates the parameterized path composition lift across a
-[Distributional Coverage Site](distributional-coverage-site.md).

@@ -27,12 +27,3 @@ states, forming the harmonic basis.
 {{ act_info(page.meta) }}
 
 {{ act_nav(page.meta) }}
-
-## Earlier material
-
-Harmonic modes span the oscillatory recognitions of the fixed profile.
-To collect all modes we let
-[HarmonicMode](harmonic-mode.md) witness
-[FixedInvariantLattice](fixed-invariant-lattice.md):
-`(HarmonicMode FixedInvariantLattice)` earns
-***HarmonicBasis***.

@@ -41,11 +41,3 @@ an earned persistent context up to nucleus equivalence.
 Because the inputs are earned carriers and the replay/renew acts fix the
 behaviour, any operator respecting these produces a nucleus-equivalent
 persistent context; thus `load_context` is unique in the earned sense.
-
-## Earlier material
-
-- Uses [`retrace-context`](retrace-context.md) to replay the stored
-  context on a trace.
-- Uses [`renew-context`](renew-context.md) to reintroduce the baseline
-  remainder.
-- Reattaches fixed recognitions from `PersistentRecognitionCarrier`.

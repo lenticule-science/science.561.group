@@ -34,19 +34,3 @@ Given a norm regime and a recognition, produce the obligation it imposes.
   [Recognition Carrier](./recognition.md) as domain/codomain.
 - Shows that: obligations can be expressed as recognition-level operators
   consistent with the lattice/logic structure.
-
-## Earlier material
-
-## Definition
-- Inputs: [Norm Regime](norm-regime.md) and a recognition in the
-  [Recognition Carrier](../../../structure/recognition.md).
-- Output: recognition representing the minimal action/condition required to
-  avoid violation.
-- Behaviour: map each recognition to the closest admissible recognition under
-  the regime (interior/closure depending on discipline/filter).
-
-## Proof
-- Uses: [Norm Regime](norm-regime.md) as policy and
-  [Recognition Carrier](../../../structure/recognition.md) as domain/codomain.
-- Shows that: obligations can be expressed as recognition-level operators
-  consistent with the lattice/logic structure.

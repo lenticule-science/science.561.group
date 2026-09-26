@@ -33,11 +33,3 @@ The [footprint](../../../glossary/terms/footprint.md) of a handle is the closure
 ## Subtraction
 
 [Subtraction](../../../glossary/terms/subtraction.md) formalizes semiotic forgetting — disciplined removal of semantic influence. It is defined using [Heyting](../../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/arend-heyting.md) pseudo-complement and fragment generation so that removal stays within intuitionistic logic and the closure discipline.
-
-## Earlier material
-
-With [interaction surfaces](../../../glossary/terms/interaction-surface.md) in place, we can define how a handle affects the meaning domain and how to compare or remove that influence. These three operations formalize the pragmatic dimension of [semiosis](../../../../../../../../../linguistics/topics/semiotics/terms/semiosis.md): meanings have consequences (footprints), those consequences can be compared (delta), and influence can be disciplinedly removed (subtraction).
-
-[Delta](../../../../../../../../../content/text/glossary/terms/delta.md) formalizes semiotic difference at three levels: syntactic (which interactions differ), semantic-local (which fragment elements differ), and semantic-closed (what difference remains after closure). This captures how [signs](../../../../../../../../../linguistics/topics/semiotics/terms/sign.md) acquire value through contrast.
-
-[Subtraction](../../../../../../../content/text/terms/subtraction.md) formalizes semiotic forgetting — disciplined removal of semantic influence. It is defined using [Heyting](../../../../../../../../../general/people/arend-heyting.md) pseudo-complement and fragment generation so that removal stays within intuitionistic logic and the closure discipline.

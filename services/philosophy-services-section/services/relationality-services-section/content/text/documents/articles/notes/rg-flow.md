@@ -33,12 +33,3 @@ Iterates renormalisation steps toward fixed points.
 - Produces: [RG Fixed Point](./rg-fixed-point.md) when convergence
   occurs.
 - Shows that: RG iteration is a well-defined flow toward large-scale phases.
-
-## Earlier material
-
-## Definition
-- Inputs: initial [Scale Window](scale-window.md) and section.
-- Outputs: candidate [RG Fixed Point](rg-fixed-point.md) or an
-  evolving sequence approaching one.
-- Behaviour: repeatedly apply [RG Step](rg-step.md) along coarser embeddings
-  until convergence or cycle; collect fixed-point witnesses.

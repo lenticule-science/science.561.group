@@ -36,9 +36,3 @@ Intended to be negated to assert acyclicity.
   or bottom if none.
 - Shows that: any returned witness certifies the presence of a cycle; absence
   (bottom) is the condition used by [`is-graph-acyclic`](./is-graph-acyclic.md).
-
-## Earlier material
-
-Produces a recognition witness of a directed cycle in an
-[Edge Set](edge-set.md), or the bottom recognition if none exist.
-Intended to be negated to assert acyclicity.

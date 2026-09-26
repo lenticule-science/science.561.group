@@ -23,10 +23,3 @@ Classification of defects/boundaries in quasicrystalline hypertensor sections.
 ## Proof
 - Uses: boundary and holonomy to detect/classify defects.
 - Shows that: quasicrystal defects can be recognised and typed.
-
-## Earlier material
-
-## Definition
-- Defects: deviations in [Boundary Recognition](boundary-recognition.md) or
-  nontrivial holonomy/curvature from [Holonomy Operator](holonomy-operator.md).
-- Types: edge, corner, dislocation recognitions with associated invariants.

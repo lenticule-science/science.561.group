@@ -35,13 +35,3 @@ between traces and contexts: anchoring, extending, and replaying contexts along
   to anchor, extend, and replay contexts.
 - Shows that: lifting context-seeding/extension/retracing yields a bridge
   operator over the trace carrier with trace-order consistency.
-
-## Earlier material
-
-## Definition
-- Inputs: [Trace Carrier](undated/trace.md) and earned context
-  acts (seed/extend/retrace).
-- Outputs: updated [Trace Carrier](undated/trace.md) reflecting
-  context anchoring/extension/replay.
-- Behaviour: seeds the first context, extends along trace steps, and retraces
-  to replay contexts, ensuring compatibility with trace ordering.

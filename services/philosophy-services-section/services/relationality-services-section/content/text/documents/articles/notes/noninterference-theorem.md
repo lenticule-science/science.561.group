@@ -27,11 +27,3 @@ noninterference between high and low channels/ports.
   regardless of high inputs.
 - Shows that: the policy enforces noninterference at the math level, aligning
   with security requirements for runtime.
-
-## Earlier material
-
-## Definition
-- Premise: labelled channels/ports and an
-  [Information Flow Constraint](info-flow-constraint.md) validated by
-  [Check Noninterference](check-noninterference.md).
-- Claim: low-observable outputs are independent of high inputs.

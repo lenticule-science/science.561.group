@@ -30,12 +30,3 @@ Refines [`acts/context-geometry`](./context-geometry.md) by
 assembling the earned flow and nucleus operators into a coherent structure and
 recording their commutation law. The act ensures the required coherence, so the
 geometry is well-formed.
-
-## Earlier material
-
-## Definition
-- Components: the [Flow Context](flow-context.md) and
-  [Get Context Nucleus](get-context-nucleus.md) operators, with the
-  coherence laws earned by [`acts/context-geometry`](context-geometry.md).
-- Relation: flow and nucleus commute on contexts; the geometry records this
-  compatibility.

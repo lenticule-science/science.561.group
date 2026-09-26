@@ -25,10 +25,3 @@ Two profiles whose recognitions stand in an adjunction via flow/nucleus.
 - Uses: interprofile functor data and flow/nucleus adjunction.
 - Shows that: profile pairs can be related via adjoint functors in the
   relational setting.
-
-## Earlier material
-
-## Definition
-- Components: a pair of [Interprofile Functors](interprofile-functor.md) `L ⊣ R`
-  with unit/counit compatible with [Flow–Nucleus Adjunction](flow-nucleus-adjunction.md).
-- Behaviour: transport recognitions between profiles with adjoint structure.

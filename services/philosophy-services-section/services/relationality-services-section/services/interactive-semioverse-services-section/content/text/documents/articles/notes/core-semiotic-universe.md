@@ -29,15 +29,3 @@ The [interactive semioverse](../index.md) extends a [semiotic universe](../../..
 - fragments (bounded interpretive contexts) and a composite [closure operator](../../../../concepts/closure-operator/index.md) $\mathcal{S}$.
 
 This layer ensures that all semantic work is closed under logic, [habit](../../../../../../../../../../information-science-services-section/services/communication-science-services-section/services/linguistics-services-section/services/semiotics-services-section/content/text/glossary/terms/habit.md)-formation, and semiotic provenance before any handle-facing interaction is added.
-
-## Earlier material
-
-The [interactive semioverse](../../../../../../../content/text/index.md) extends a [semiotic universe](../../../../../../../content/text/documents/articles/notes/semiotic-universe.md) — a self-sustaining [sign](../../../../../../../../../linguistics/topics/semiotics/terms/sign.md) system in which everything sayable is meaningful and everything meaningful is sayable. The base layer provides:
-
-- a meaning domain $H$ that is a complete [Heyting algebra](../../../../../../../../concepts/heyting-algebra/index.md) (intuitionistic, because not every question about a [sign](../../../../../../../../../linguistics/topics/semiotics/terms/sign.md)'s meaning resolves to yes or no),
-- a modal [closure operator](../../../../../../../../concepts/closure-operator/index.md) $j$ formalizing [habit](../../../../../../../../../../information-science-services-section/services/communication-science-services-section/services/linguistics-services-section/services/semiotics-services-section/content/text/glossary/terms/habit.md)-formation,
-- a [trace comonad](../../../../../../../content/semiotic-universe/terms/trace-comonad.md) $G$ formalizing semiotic provenance — the [sign](../../../../../../../../../linguistics/topics/semiotics/terms/sign.md) chains that produced each meaning,
-- definable operators interpreted into $H$ (the grammar of the sign system),
-- fragments (bounded interpretive contexts) and a composite [closure operator](../../../../../../../../concepts/closure-operator/index.md) $\mathcal{S}$.
-
-This layer ensures that all semantic work is closed under logic, [habit](../../../../../../../../../../information-science-services-section/services/communication-science-services-section/services/linguistics-services-section/services/semiotics-services-section/content/text/glossary/terms/habit.md)-formation, and semiotic provenance before any handle-facing interaction is added.

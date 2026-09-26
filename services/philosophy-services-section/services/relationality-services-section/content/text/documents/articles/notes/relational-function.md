@@ -33,16 +33,3 @@ Sketch: the function and application acts introduce the corresponding
 constructors in `JudgmentTerm`; the exponential profiling act equates those
 constructors with `A ⇒ B` recognitions. Together these acts generate the
 function structure over the term carrier.
-
-## Earlier material
-
-- [`FormFunctionTerm`](form-function-term.md) — earns the
-  function-term constructor by abstracting over a trace context.
-- [`FormApplicationTerm`](form-application-term.md) — earns the
-  application-term constructor by applying a function term to an argument term
-  along the trace.
-- [`ProfileExponential`](profile-exponential.md) — earns the
-  exponential profile `A ⇒ B` and identifies function terms with that profile.
-- Function and application terms inhabit
-  [`JudgmentTerm`](judgment-term.md); they are specific
-  constructors induced by the acts above.

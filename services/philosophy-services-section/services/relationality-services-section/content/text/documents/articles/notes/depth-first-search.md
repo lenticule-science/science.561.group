@@ -32,8 +32,3 @@ producing a recognition of the traversal order with back-edge detection hooks.
   nodes and back-edges.
 - Shows that: the traversal output can be consumed by cycle detection operators
   to witness cycles or confirm acyclicity.
-
-## Earlier material
-
-Performs a depth-first traversal over an [Edge Set](edge-set.md),
-producing a recognition of the traversal order with back-edge detection hooks.

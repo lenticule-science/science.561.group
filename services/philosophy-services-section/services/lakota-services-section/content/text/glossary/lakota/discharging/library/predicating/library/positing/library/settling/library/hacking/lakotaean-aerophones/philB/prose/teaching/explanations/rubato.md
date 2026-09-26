@@ -36,9 +36,3 @@ A skilled player's rubato is internally coherent and recognizably idiomatic; an 
 The rubato of the cedar flute is therefore a *structured* freedom rather than a literal freedom — the player has discretion over note-durations within a tradition that constrains the range of acceptable choices.
 
 See also: [phrase](./phrase.md), [breath-pulse](../../../../b4/breath-pulse/breath-pulse.md), [cedar-flute](../../../../b4/cedar-flute/cedar-flute.md), [non-metric-temporal-substrate](../../../code/structures/non-metric-temporal-substrate.md).
-
-## Earlier material
-
-This contrasts sharply with the metric organization of [drum](../../../../b4/drum/drum.md)-anchored ensemble music. In a [honor-song](../../../../b4/honor-song/honor-song.md) performance, the drum supplies a regular metric pulse, and the [voice](../../../../../../../../../../../../../../../../../../../../../information-science-services-section/services/communication-science-services-section/services/media-science-services-section/services/music-services-section/content/text/triage/voice.md) and whistle aerophones must align their articulations to that pulse at structural moments. The drum-ensemble music is *metric*, not rubato. The cedar-flute solo idiom and the drum-ensemble idiom therefore occupy different temporal regimes within the same broad musical tradition: the cedar flute is non-metric, drum ensembles are metric. The [non-metric-temporal-substrate](../../../code/structures/non-metric-temporal-substrate.md) structure formalizes this distinction.
-
-See also: [phrase](phrase.md), [breath-pulse](../../../../b4/breath-pulse/breath-pulse.md), [cedar-flute](../../../../b4/cedar-flute/cedar-flute.md), [non-metric-temporal-substrate](../../../code/structures/non-metric-temporal-substrate.md).

@@ -26,9 +26,3 @@ epistemic/norm profile unilaterally.
 ## Proof
 - Uses: [Social Flow](./social-flow.md) over [Agents](./agent.md).
 - Shows that: the configuration is a fixed point for social interaction.
-
-## Earlier material
-
-## Proof
-- Uses: [Social Flow](social-flow.md) over [Agents](../../../triage/agent.md).
-- Shows that: the configuration is a fixed point for social interaction.

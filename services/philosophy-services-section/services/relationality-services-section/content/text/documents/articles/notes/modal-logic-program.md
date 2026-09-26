@@ -30,9 +30,3 @@ recognitions.
 ## Proof
 - Derived from: [Documentation Interpreter](./documentation-interpreter.md).
 - Shows that: this program evaluates modal logic over the documentation interpreter without extending machine semantics.
-
-## Earlier material
-
-## Proof
-- Derived from: [Documentation Interpreter](documentation-interpreter.md).
-- Shows that: this program evaluates modal logic over the documentation interpreter without extending machine semantics.

@@ -25,9 +25,3 @@ signatures.
 
 ## Invariants
 - Reads port definitions without mutation; preserves typing from the graph.
-
-## Earlier material
-
-Expands a [Connection Graph](connection-graph.md) into its
-[Port Set](port-set.md), inducing typed ports from operator
-signatures.

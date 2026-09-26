@@ -31,9 +31,3 @@ lies in the reducibility relation in any `ReducibleEnvironment`.
 
 Because the reducibility relation and environment are fixed by the earned acts,
 this fundamental property is unique in the earned sense.
-
-## Earlier material
-
-The act [`establish-fundamental-reducibility`](establish-fundamental-reducibility.md)
-earns that every well-typed term is reducible in every reducible environment,
-closing the logical-relations argument.

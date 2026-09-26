@@ -24,15 +24,3 @@ Stable but revisable set of recognitions representing an agent’s beliefs.
 - Uses: [Epistemic Profile](./epistemic-profile.md) as the ambient belief space.
 - Shows that: beliefs can be packaged as a revisable base for revision/AGM
   style operations.
-
-## Earlier material
-
-## Definition
-- Carrier: subset of an [Epistemic Profile](epistemic-profile.md) designated as
-  current beliefs.
-- Structure: closed under earned inference but subject to revision.
-
-## Proof
-- Uses: [Epistemic Profile](epistemic-profile.md) as the ambient belief space.
-- Shows that: beliefs can be packaged as a revisable base for revision/AGM
-  style operations.

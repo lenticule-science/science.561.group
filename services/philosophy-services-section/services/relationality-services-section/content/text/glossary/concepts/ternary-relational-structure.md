@@ -62,9 +62,3 @@ title: Ternary relational structure
     - Binding (relating, unrelating);
     
     - Together achieving the internal [[coherence]] necessary for the relational system to sustain itself and extend further.
-
-## Earlier material
-
-- an [[act]] that can bind [[relating|relating]] and [[system/acts/unrelate|unrelating]] into a unified and sustainable [[structure]].
-
-- Therefore, the binding act is: **[[relating|relating]] applied to [[relating|relating]] and [[system/acts/unrelate|unrelating]]**, holding them in a durable configuration.

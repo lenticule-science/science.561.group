@@ -166,19 +166,3 @@ This is the Music Log of [emsenn](../../../../triage/emsenn/index.org.md)
 1.  [Wilco](../../../../../../../../content/text/glossary/terms/wilco.md) - Sky Blue Sky
 
 2.  [Wilco](../../../../../../../../content/text/glossary/terms/wilco.md) - Yankee Hotel Foxtrot
-
-## Earlier material
-
-3.  [koad](../../../../../../../../content/text/glossary/terms/koad.md) - "dirty"
-
-4.  [IGORR](../../../../../../../../content/text/glossary/terms/igorr.md) - "ADHD"
-
-5.  [Partiboy69](../../../../../../../../content/text/glossary/terms/partiboy69.md) - "Ketamine Dreams"
-
-6.  [Parts & Spares](../../../../../../../../content/text/glossary/terms/parts-spares.md) - "SALT"
-
-8.  [Kazdoura](../../../../../../../../content/text/glossary/terms/kazdoura.md) - "Khayal""
-
-15. [Cindy Lee](../../../../../../../../content/text/glossary/terms/cindy-lee.md) - "Dracula"
-
-1.  [Pollyanna](../../../../../../../../content/text/glossary/terms/pollyanna.md) - "Boygirl"

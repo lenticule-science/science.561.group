@@ -35,12 +35,3 @@ approximate reflexive awareness.
 - Produces: refined [Reflexive Profile](./reflexive-profile.md).
 - Shows that: self-witnessing is expressible within the earned logic/nucleus
   framework.
-
-## Earlier material
-
-## Proof
-- Uses: [Reflexive Profile](reflexive-profile.md) and
-  [Nucleus](../../../../../services/agency-services-section/content/text/documents/articles/research/predicated-agentic-orchestration-platform/library/relational-hyperverse-repository/math/nucleus.md).
-- Produces: refined [Reflexive Profile](reflexive-profile.md).
-- Shows that: self-witnessing is expressible within the earned logic/nucleus
-  framework.

@@ -31,20 +31,3 @@ Witness that finite local rules plus an aperiodic germ generate global sections
   recognizability/subshift property.
 - Shows that: finite local rules suffice to determine the quasicrystalline
   section.
-
-## Earlier material
-
-## Definition
-- Components: [Tiling Constraint](tiling-constraint.md) and
-  [Aperiodic Germ](aperiodic-germ.md) guaranteeing unique extension to a global
-  section.
-- Statement: any section satisfying the local rules is reconstructible from the
-  germ; local rules are complete.
-
-## Proof
-- Uses: [Tiling Constraint](tiling-constraint.md) plus germ extraction/extension
-  ([Extract Aperiodic Germ](extract-aperiodic-germ.md),
-  [Aperiodic Extension](aperiodic-extension.md)) to prove
-  recognizability/subshift property.
-- Shows that: finite local rules suffice to determine the quasicrystalline
-  section.

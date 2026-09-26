@@ -38,19 +38,3 @@ Adjusts a calendar schedule to resolve conflicts and maintain invariants.
 - Derived from: [Computer Evaluate Step](./evaluate-step.md).
 - Shows that: resolving conflicts via evaluation yields a stabilized schedule
   or explicit failure, preserving kernel semantics.
-
-## Earlier material
-
-## Definition
-- Inputs: [Calendar Schedule](undated/calendar-schedule.md),
-  [Conflict Report](undated/conflict-report.md).
-- Outputs: updated [Calendar Schedule](undated/calendar-schedule.md) or
-  [Computer Failure](computer-failure.md).
-- Behaviour: applies conflict resolutions (reorder, defer, cancel) consistent
-  with policy/trace constraints; emits failure if stabilization cannot satisfy
-  invariants.
-
-## Proof
-- Derived from: [Computer Evaluate Step](evaluate-step.md).
-- Shows that: resolving conflicts via evaluation yields a stabilized schedule
-  or explicit failure, preserving kernel semantics.

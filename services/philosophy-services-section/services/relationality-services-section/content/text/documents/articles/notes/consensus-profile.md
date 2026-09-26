@@ -24,10 +24,3 @@ Fixed point of multi-agent dialogue updates where epistemic states agree.
 - Uses: [Agent](./agent.md) and [Dialogue Update](./dialogue-update.md).
 - Shows that: a dialogue-induced fixed point yields collective knowledge across
   the agent set.
-
-## Earlier material
-
-## Proof
-- Uses: [Agent](../../../triage/agent.md) and [Dialogue Update](dialogue-update.md).
-- Shows that: a dialogue-induced fixed point yields collective knowledge across
-  the agent set.

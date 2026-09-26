@@ -30,9 +30,3 @@ fixed profile, the normalization is internal to that profile.
 
 Given `FixedObservationCarrier` and the normalization act, this property is
 fixed up to earned equivalence.
-
-## Earlier material
-
-The act [`fixed-normalize-observation`](fixed-normalize-observation.md)
-applied to fixed observables earns that their associated reduction traces
-stabilize along `StepTrace`.

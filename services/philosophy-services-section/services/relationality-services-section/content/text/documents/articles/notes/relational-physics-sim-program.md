@@ -34,18 +34,3 @@ state and dynamics as recognitions.
 ## Proof
 - Derived from: [Documentation Interpreter](./documentation-interpreter.md).
 - Shows that: this program instantiates the documentation interpreter to realise the described behaviour without extending machine semantics.
-
-## Earlier material
-
-- Represent physical entities, interactions, and states as
-  [Computer Recognition](computer-recognition.md) with provenance.
-- Plan simulations as [Computer Wiring Plans](computer-wiring-plan.md);
-  drive execution via [Evaluate Step](evaluate-step.md).
-- Snapshot simulation state via [Computer Storage](storage.md)
-  and [Computer Snapshot](computer-snapshot.md).
-- Record traces/measurements and compare against observations; surface failures
-  as [Computer Failure](computer-failure.md).
-
-## Proof
-- Derived from: [Documentation Interpreter](documentation-interpreter.md).
-- Shows that: this program instantiates the documentation interpreter to realise the described behaviour without extending machine semantics.

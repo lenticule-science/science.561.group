@@ -32,10 +32,3 @@ Monitoring tasks scheduled alongside normal work:
   to integrate monitoring into the task carrier.
 - Shows that: monitoring tasks are scheduled with computed metrics while
   preserving task-carrier invariants.
-
-## Earlier material
-
-Monitoring tasks scheduled alongside normal work:
-- read from [Introspection Channel](introspection-channel.md),
-- compute derived metrics or checks,
-- optionally inject monitoring results back into intake and scheduling.

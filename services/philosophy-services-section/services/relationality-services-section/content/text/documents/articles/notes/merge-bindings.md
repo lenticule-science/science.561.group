@@ -27,8 +27,3 @@ binding mappings.
 ## Proof
 - Uses: state binding map to merge new entries.
 - Shows that: binding extension is available as an explicit operator update.
-
-## Earlier material
-
-Extends an [Evaluation State](evaluation-state.md) with additional
-binding mappings.

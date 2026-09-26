@@ -38,9 +38,3 @@ pullback and pushforward for subobjects/recognitions.
   executable routines from the parameterized sheaf.
 - Shows that: substitution/logical predicates remain stable under reindexing in
   the calculus setting, with concrete witnesses for commuting diagrams.
-
-## Earlier material
-
-Executable lift of the [Base-Change Condition](base-change-condition.md)
-to the parameterized coverage/sheaf setting, providing code-level stability of
-pullback and pushforward for subobjects/recognitions.

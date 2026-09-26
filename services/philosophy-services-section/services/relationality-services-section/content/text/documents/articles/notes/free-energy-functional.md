@@ -31,19 +31,3 @@ relational/stochastic setting.
   [Observable Algebra](../../../triage/relationality/relationality-slop-2025-04/internal/observable-algebra.md) to define the functional.
 - Shows that: free-energy reasoning can be expressed within earned relational
   observables without introducing external semantics.
-
-## Earlier material
-
-## Definition
-- Inputs: entropy from [Entropy Functional](entropy-functional.md) and chosen
-  observables from [Observable Algebra](../../../triage/observable-algebra.md).
-- Output: free-energy valuation (numeric `F = E - T·S` in semantic models or
-  relational inequality in purely recognitional form).
-- Behaviour: evaluates observables under the current state and combines with
-  entropy to guide equilibrium reasoning.
-
-## Proof
-- Uses: [Entropy Functional](entropy-functional.md) and
-  [Observable Algebra](../../../triage/observable-algebra.md) to define the functional.
-- Shows that: free-energy reasoning can be expressed within earned relational
-  observables without introducing external semantics.

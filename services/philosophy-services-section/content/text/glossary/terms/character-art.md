@@ -13,8 +13,3 @@ character art
 
 [representing](representing.md)  
 [fiction character](fiction-character.md)
-
-## Earlier material
-
-[representing](representing.md)  
-[fiction character](fiction-character--002338.md)

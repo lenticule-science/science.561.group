@@ -25,8 +25,3 @@ Returns the `head` evaluation frame from the
 ## Proof
 - Uses: stack structure.
 - Shows that: the current evaluation frame can be selected for stepping.
-
-## Earlier material
-
-Returns the `head` evaluation frame from the
-[Evaluation Context Stack](evaluation-context-stack.md).

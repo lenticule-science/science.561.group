@@ -26,9 +26,3 @@ Property witnessing that an observation kernel is fixed under its own action.
   fixed-point equation.
 - Shows that: the act induces a property carrier used when checking mixing and
   ergodicity.
-
-## Earlier material
-
-## Definition
-- Carrier: predicates asserting `K * K = K` for an [Observation Kernel](2026/03/04/2026-03-04-observation-kernel.md) `K`.
-- Data: fixed-point equation and stability under iteration.

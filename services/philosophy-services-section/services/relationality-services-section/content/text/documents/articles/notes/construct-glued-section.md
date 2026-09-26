@@ -34,8 +34,3 @@ a validated [Matching Family](./matching-family.md) over a cover.
 - Shows that: when matching conditions hold, an amalgamated section exists and
   is unique up to earned equivalence, satisfying the gluing half of the sheaf
   condition.
-
-## Earlier material
-
-Builds a global [Hypertensor Section](hypertensor-section.md) from
-a validated [Matching Family](matching-family.md) over a cover.

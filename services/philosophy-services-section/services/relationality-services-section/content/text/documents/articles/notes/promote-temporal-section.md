@@ -33,13 +33,3 @@ Promotes a section into a temporal section by binding recognitions to time.
 - Produces: temporal section ready for time-aware operations.
 - Shows that: sections can be given temporal structure without violating sheaf
   invariants.
-
-## Earlier material
-
-## Definition
-- Inputs: a [Hypertensor Section](hypertensor-section.md) and
-  [Temporal Recognizers](temporal-recognizer.md) describing time
-  anchoring.
-- Output: time-annotated [Hypertensor Section](hypertensor-section.md).
-- Behaviour: annotate section recognitions with timestamps/time slices; enforce
-  consistency with temporal flow.

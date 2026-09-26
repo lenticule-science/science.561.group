@@ -63,7 +63,3 @@ Compiled reports from Fūsus, Banjo, Clearview, and platform moderation tools ar
 Fusion centers insert names, locations, and footage into **Suspicious Activity Reports (SARs)**. These entries justify continued surveillance and allow information sharing across jurisdictions.
 
 These systems do not wait for violent incidents. They act when enough signal overlaps to match threat pattern criteria. April 19 protest activity will be processed across these systems in parallel. Each signal increases the probability of designation, suppression, or legal action.
-
-## Earlier material
-
-[[Clearview AI]]

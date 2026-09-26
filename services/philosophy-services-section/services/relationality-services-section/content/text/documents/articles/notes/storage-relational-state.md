@@ -22,9 +22,3 @@ Requirements:
 - is the sole mutable state manipulated by
   [StorageSave](storage-save.md) and
   [StorageLoad](storage-load.md).
-
-## Earlier material
-
-`RelationalState` is the machine-level carrier that realises the mathematical
-`State` from
-[State Structure](state-structure.md).

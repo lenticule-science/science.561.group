@@ -26,14 +26,3 @@ derives-from: acts/ensure-confluence
 ## Proof
 - Derived from: [Ensure Confluence](./ensure-confluence.md).
 - Shows that: with complete traces and step observations, divergent reductions rejoin, establishing confluence of the earned reduction relation.
-
-## Earlier material
-
-## Definition
-- Inputs: divergent reduction traces witnessed by [Complete Trace](complete-trace.md) and [Step Observation](step-observation.md).
-- Outputs: evidence that the traces rejoin, recorded by [Ensure Confluence](ensure-confluence.md).
-- Behaviour: asserts that any pair of reductions from a common source has a common successor (Church–Rosser).
-
-## Proof
-- Derived from: [Ensure Confluence](ensure-confluence.md).
-- Shows that: with complete traces and step observations, divergent reductions rejoin, establishing confluence of the earned reduction relation.

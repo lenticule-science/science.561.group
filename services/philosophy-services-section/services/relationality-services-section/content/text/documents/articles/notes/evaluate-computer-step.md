@@ -57,17 +57,3 @@ the [Failure Algebra](./failure-algebra.md).
 - Shows that: one-step evaluation following the wiring plan preserves typing
   and either advances the evaluation state or records a failure without
   mutating bindings.
-
-## Earlier material
-
-Single-step evaluator over an earned [Evaluation State](evaluation-state.md)
-following a [Wiring Plan](wiring-plan.md), with failures recorded in
-the [Failure Algebra](failure-algebra.md).
-
-## Proof
-- Uses: [Wiring Plan](wiring-plan.md) for ordering, earned
-  evaluation operators for computation, and [Failure Algebra](failure-algebra.md)
-  for error accumulation.
-- Shows that: one-step evaluation following the wiring plan preserves typing
-  and either advances the evaluation state or records a failure without
-  mutating bindings.

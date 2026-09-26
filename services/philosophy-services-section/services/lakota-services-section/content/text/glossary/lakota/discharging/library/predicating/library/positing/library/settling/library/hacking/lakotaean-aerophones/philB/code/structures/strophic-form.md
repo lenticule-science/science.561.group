@@ -34,16 +34,3 @@ A strophic-form realization R is the sequence of strophes R_1, R_2, …, R_n, wh
 ## Specification
 
 [strophic-form.spec](../../work/governance/rules/specifications/strophic-form.spec.md).
-
-## Earlier material
-
-A song-form structure in which a single melodic unit (the [strophe](../../prose/teaching/explanations/strophe.md)) is presented and then repeated with [ornament-substitution](../transformers/ornament-substitution.md) variation between repetitions — the principal form of the [cedar-flute](../../../b4/cedar-flute/cedar-flute.md) [courting-song](../../../b4/courting-song/courting-song.md) repertoire.
-
-where:
-- Σ is the *strophe-template* — a sequence of [phrases](../../prose/teaching/explanations/phrase.md), each of which instantiates a [phrase-archetype](phrase-archetype-set.md), together with cadence selections for each phrase position from the [cadence-set](cadence-set.md);
-- n ∈ ℕ⁺ is the *strophe count* — the number of times Σ is realized in the performance (typically 2 ≤ n ≤ 6 for solo [cedar-flute](../../../b4/cedar-flute/cedar-flute.md) [courting-song](../../../b4/courting-song/courting-song.md); other conventions apply in ensemble contexts);
-- V : {1, …, n} → Variation is the *variation function* — for each strophe instance, a specification of which [ornament-substitutions](../transformers/ornament-substitution.md) and rhythmic shifts are applied to Σ to produce that strophe's realized form.
-
-[phrase-bounded-by-single-breath](../../prose/learning/claims/phrase-bounded-by-single-breath.md), [cadence-vocabulary](../../prose/learning/claims/cadence-vocabulary.md), [ornament-vocabulary](../../prose/learning/claims/ornament-vocabulary.md). (Strophic-form is composite, drawing on all three.)
-
-[strophic-form.spec](../../work/governance/rules/specifications/strophic-form.spec.md).

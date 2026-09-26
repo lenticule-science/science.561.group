@@ -25,15 +25,3 @@ Normative specification of a correct realization of [cedar-flute-fingering-chart
 1. The fingering chart MUST NOT produce the major-third scale-degree (4 semitones above fundamental) in any of the standard sequential fingerings — this would indicate a major-pentatonic instrument, which is not the Lakotaean cedar flute.
 2. The fingering chart MUST NOT contradict the [cedar-flute-cents-table](../../../../code/structures/cedar-flute-cents-table.md) at any scale-degree: the scale-degree produced by a given fingering must have a frequency consistent with the cents-table's range for that scale-degree.
 3. The fingering chart MUST NOT require more than six holes; instruments with more than six holes are not standard cedar flutes and are not in scope for this fingering chart.
-
-## Earlier material
-
-Normative specification of a correct realization of [cedar-flute-fingering-chart](../../../../code/structures/cedar-flute-fingering-chart.md).
-
-1. A fingering chart SHOULD support a second-octave register accessed by [overblowing](../../../../../b4/overblowing/overblowing.md), with each first-octave fingering's pitch being doubled to its octave in the second-octave register.
-2. A fingering chart SHOULD admit cross-fingerings (non-sequential coverings) as partial extensions to the standard chart, with cross-fingered scale-degrees recognized as instrument-specific alternative pitches.
-3. Hole 6 SHOULD be available for cross-fingering and for overblowing-related fingerings, even when not used in the standard sequential pattern for scale-degree access.
-
-1. The fingering chart MUST NOT produce the major-third scale-degree (4 semitones above fundamental) in any of the standard sequential fingerings — this would indicate a major-pentatonic instrument, which is not the Lakotaean cedar flute.
-2. The fingering chart MUST NOT contradict the [cedar-flute-cents-table](../../../../code/structures/cedar-flute-cents-table.md) at any scale-degree: the scale-degree produced by a given fingering must have a frequency consistent with the cents-table's range for that scale-degree.
-3. The fingering chart MUST NOT require more than six holes; instruments with more than six holes are not standard cedar flutes and are not in scope for this fingering chart.

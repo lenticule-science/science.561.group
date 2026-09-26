@@ -30,11 +30,3 @@ identifications from the loop HIT.
 - Uses: [Directed Path](./directed-path.md) to form loops.
 - Shows that: loops form a homotopy-algebraic structure supporting composition,
   unit, and associativity witnesses.
-
-## Earlier material
-
-## Definition
-- Basepoint: a chosen recognition/context `x`.
-- Loops: directed paths `p: x → x` modulo homotopy given by
-  [LoopHIT](loop-hit.md).
-- Operations: composition, unit loop, associator/unitor homotopies.

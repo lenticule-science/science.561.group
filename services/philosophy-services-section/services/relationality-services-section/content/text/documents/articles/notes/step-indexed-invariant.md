@@ -33,12 +33,3 @@ tracked by `reach` and `stabilize-invariant`.
   level-by-level.
 - Shows that: stepwise refinement along the tower yields limit invariants
   stable under reach/stabilize acts.
-
-## Earlier material
-
-## Proof
-- Uses: [Stabilize Invariant](stabilize-invariant.md) over the
-  [Profile Tower](profile-tower.md) to refine equivalence
-  level-by-level.
-- Shows that: stepwise refinement along the tower yields limit invariants
-  stable under reach/stabilize acts.

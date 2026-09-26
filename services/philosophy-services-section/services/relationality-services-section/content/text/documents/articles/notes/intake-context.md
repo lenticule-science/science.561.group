@@ -20,9 +20,3 @@ derives-from: acts/recognize-context
 ## Proof
 - Derived from: [Recognize Context](./recognize-context.md), which witnesses intake contexts.
 - Shows that: recognising contexts and collecting their instances yields the intake context carrier linking observations to recognised contexts/types.
-
-## Earlier material
-
-## Definition
-- Carrier: links intake observations to recognised contexts and types.
-- Source: earned from [Recognize Context](recognize-context.md); supporting acts [Collect Contexts](collect-contexts.md) and [Collect Types](collect-types.md) populate the carrier.

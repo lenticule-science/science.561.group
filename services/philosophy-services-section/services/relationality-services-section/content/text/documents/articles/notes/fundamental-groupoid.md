@@ -42,18 +42,3 @@ paths between them, earned from the higher-inductive path data supplied by
 - Shows that: directed paths and their homotopies assemble into a fundamental
   groupoid over contexts, giving the base homotopical carrier for path
   composition, transports, and coverings.
-
-## Earlier material
-
-Groupoid-like carrier of contexts/recognitions and homotopy classes of directed
-paths between them, earned from the higher-inductive path data supplied by
-[LoopHIT](loop-hit.md).
-
-## Definition
-- Objects: contexts/recognitions carved out of
-  [Relationlessness](../../../acts/relationlessness.md) and its first recognitions.
-- Morphisms: homotopy classes of [Directed Paths](directed-path.md) between
-  objects, with composition from [Path Compose](path-compose.md)
-  when endpoints match.
-- Identities: constant paths from [Identify Path](path-identity.md).
-- Associator/unitor: homotopies witnessing associativity/unit laws.

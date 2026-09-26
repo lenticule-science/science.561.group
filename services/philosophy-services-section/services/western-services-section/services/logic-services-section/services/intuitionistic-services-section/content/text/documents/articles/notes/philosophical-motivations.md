@@ -74,9 +74,3 @@ The computational motivation does not replace the philosophical ones — it supp
 For the realist position that intuitionism contests, see the [Classical Logic Overview](./overview.md) and [Philosophical Foundations of Classical Logic](../../../../../../classical-services-section/content/text/documents/articles/notes/philosophical-foundations.md), which articulate the commitments to bivalence, excluded middle, and truth-functionality that the constructivist tradition rejects.
 
 Check for understanding: How does Dummett's meaning-theoretic argument for intuitionism differ from Brouwer's original motivation?
-
-## Earlier material
-
-For the realist position that intuitionism contests, see the [Classical Logic Overview](../../../../../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/philosophy-general/archive/domains/western/domains/logic/domains/classical/curricula/overview.md) and [Philosophical Foundations of Classical Logic](../../../../../../classical-services-section/content/text/documents/articles/notes/philosophical-foundations.md), which articulate the commitments to bivalence, excluded middle, and truth-functionality that the constructivist tradition rejects.
-
-For the realist position that intuitionism contests, see the [Classical Logic Overview](../../../../../../../../../../../content/classical/curricula/overview.md) and [Philosophical Foundations of Classical Logic](../../../../../../classical-services-section/content/text/documents/articles/notes/philosophical-foundations.md), which articulate the commitments to bivalence, excluded middle, and truth-functionality that the constructivist tradition rejects.

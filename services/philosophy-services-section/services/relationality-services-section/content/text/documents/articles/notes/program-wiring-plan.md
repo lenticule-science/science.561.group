@@ -29,10 +29,3 @@ Reusable wiring plan for program runbooks over computer operators/carriers.
 - Derived from: [Computer Wiring Plan](./computer-wiring-plan.md).
 - Shows that: specialising wiring plans to program commands yields a reusable
   plan carrier for program execution.
-
-## Earlier material
-
-## Proof
-- Derived from: [Computer Wiring Plan](computer-wiring-plan.md).
-- Shows that: specialising wiring plans to program commands yields a reusable
-  plan carrier for program execution.

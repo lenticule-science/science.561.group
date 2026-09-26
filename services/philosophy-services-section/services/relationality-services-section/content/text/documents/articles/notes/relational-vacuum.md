@@ -24,10 +24,3 @@ Ground-like state: recognition with minimal shape, entropy, and flow amplitude.
 - Uses: entropy functional and hypertensor section to define minima.
 - Shows that: a ground state exists as a reference point in the relational
   system.
-
-## Earlier material
-
-## Definition
-- Elements: sections/recognitions with minimal entropy from the
-  [Entropy Functional](entropy-functional.md) and minimal flow variation.
-- Role: baseline state for perturbation/energy comparisons.

@@ -27,8 +27,3 @@ Returns the list of entry step ids in a [Connection Graph](./connection-graph.md
 ## Proof
 - Uses: graph edge relation to find sources.
 - Shows that: entry points are computable as a primitive query.
-
-## Earlier material
-
-Returns the list of entry step ids in a [Connection Graph](connection-graph.md)
-(steps with no incoming edges).

@@ -41,21 +41,3 @@ policy/topology constraints.
 Refines the documentation interpreter by introducing parameter binding before execution.
 Shows that only admissible bindings produce a valid plan and that failures are
 captured as [Computer Failure](./computer-failure.md).
-
-## Earlier material
-
-## Carrier
-- **Runbook parameters:** recognitions describing parameter sets and admissible
-  bindings.
-- **Execution wiring:** a [Computer Wiring Plan](computer-wiring-plan.md)
-  instantiated with those parameters.
-- **Failure carriers:** emitted when bindings are invalid or evaluation fails as
-  [Computer Failure](computer-failure.md).
-
-## Behaviour
-1. Validate parameter bindings against policy and topology constraints.
-2. Instantiate the wiring plan with the bindings.
-3. Execute evaluation steps over computer carriers via
-   [Evaluate Step](evaluate-step.md); persist snapshots as needed.
-4. Emit [Computer Failure](computer-failure.md) on invalid
-   parameters, wiring errors, or evaluation failures.

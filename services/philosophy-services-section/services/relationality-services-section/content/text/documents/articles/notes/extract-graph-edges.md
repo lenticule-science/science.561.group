@@ -27,9 +27,3 @@ ids and carrier types.
 - Uses: edge data stored in the graph.
 - Shows that: edges can be validated and checked for acyclicity separately from
   other graph data.
-
-## Earlier material
-
-Extracts the [Edge Set](edge-set.md) from a
-[Connection Graph](connection-graph.md), capturing endpoint port
-ids and carrier types.

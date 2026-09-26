@@ -50,12 +50,3 @@ logic and classifier structure.
 - Uses: hypertensor site and sheaf condition to ensure objects are sheaves.
 - Shows that: hypertensor sheaves form a topos with earned internal logic and
   flow/nucleus compatibility.
-
-## Earlier material
-
-## Definition
-- Objects: hypertensor sheaves over [Hypertensor Site](hypertensor-site.md)
-  satisfying [Hypertensor Sheaf Condition](hypertensor-sheaf-condition.md).
-- Morphisms: natural transformations between such sheaves.
-- Internal logic: from [Recognition Classifier](recognition-classifier.md)
-  and relational logic.

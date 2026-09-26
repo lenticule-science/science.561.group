@@ -23,10 +23,3 @@ Number of nucleus applications required to reach normal form.
 ## Proof
 - Uses: normalization process to count steps.
 - Shows that: collapse depth is well-defined and finite for admissible sections.
-
-## Earlier material
-
-## Definition
-- Metric: counts collapse steps from a section to its
-  [Section Normal Form](section-normal-form.md).
-- Role: measures simplification complexity.

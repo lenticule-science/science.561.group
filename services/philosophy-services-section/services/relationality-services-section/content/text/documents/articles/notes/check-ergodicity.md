@@ -33,13 +33,3 @@ equating time and space averages.
 Uses the [Ergodicity](./ergodicity.md) act applied to a fixed kernel with
 mixing property to yield the ergodicity property. Shows that ergodicity is
 earned without leaving the fixed-kernel carrier.
-
-## Earlier material
-
-## Definition
-- Inputs: [Fixed Kernel](fixed-kernel.md) with
-  [Mixing Property](mixing-property.md).
-- Outputs: [Ergodicity Property](ergodicity-property.md) and the
-  same fixed kernel.
-- Behaviour: checks that mixing implies ergodicity: time averages equal space
-  averages for observables under this kernel.

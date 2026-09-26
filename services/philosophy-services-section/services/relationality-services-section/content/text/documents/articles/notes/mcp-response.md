@@ -33,10 +33,3 @@ Outgoing MCP command response as a recognised computer-layer payload.
 - Derived from: [Computer Recognition](./computer-recognition.md).
 - Shows that: MCP outputs can be expressed as recognitions with concrete fields
   while remaining within computer-layer semantics.
-
-## Earlier material
-
-## Proof
-- Derived from: [Computer Recognition](computer-recognition.md).
-- Shows that: MCP outputs can be expressed as recognitions with concrete fields
-  while remaining within computer-layer semantics.

@@ -29,16 +29,3 @@ traceability queries under strict access control using computer carriers.
 ## Proof
 Refines the [Computer Kernel](./documentation-interpreter.md) by constraining
 wiring to policy/audit queries and enforcing access/failure semantics.
-
-## Earlier material
-
-## Behaviour
-- Ingest audit/policy recognitions; validate access credentials via
-  [Computer Recognition](computer-recognition.md).
-- Serve queries over policy state and audit logs; attach traceability.
-- Emit [Computer Failure](computer-failure.md) on auth or
-  policy violations.
-
-## Proof
-Refines the [Computer Kernel](documentation-interpreter.md) by constraining
-wiring to policy/audit queries and enforcing access/failure semantics.

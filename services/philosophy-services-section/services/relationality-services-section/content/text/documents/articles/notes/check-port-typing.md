@@ -29,9 +29,3 @@ recognition witnessing well-typedness.
 - Uses: operator signatures associated with ports to check carrier/direction
   assignments via the port type check.
 - Shows that: ports are individually well-typed before edge wiring proceeds.
-
-## Earlier material
-
-Validates that each port’s carrier and direction match the inducing operator
-signature in the [Port Set](port-set.md). Returns a predicate
-recognition witnessing well-typedness.

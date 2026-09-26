@@ -26,14 +26,3 @@ proof_refs: []
 ## Proof
 - Uses: [Recognition Carrier](./recognition.md), [Policy Regime](./policy-regime.md), and [Trace Carrier](undated/trace.md) to parameterize the recognition.
 - Shows that: recognition of contexts with explicit policy/trace inputs yields earned recognition carrier elements stable under reapplication with the same parameters.
-
-## Earlier material
-
-## Definition
-- Inputs: [Recognition Carrier](../../../structure/recognition.md) context, [Policy Regime](policy-regime.md), [Trace Carrier](undated/trace.md).
-- Outputs: [Recognition Carrier](../../../structure/recognition.md) with recognized context/state/policy/trace.
-- Behaviour: refines [Recognize Context](recognize-context.md) with explicit policy and trace parameters so context recognition is reproducible and traceable.
-
-## Proof
-- Uses: [Recognition Carrier](../../../structure/recognition.md), [Policy Regime](policy-regime.md), and [Trace Carrier](undated/trace.md) to parameterize the recognition.
-- Shows that: recognition of contexts with explicit policy/trace inputs yields earned recognition carrier elements stable under reapplication with the same parameters.

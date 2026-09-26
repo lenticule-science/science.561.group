@@ -38,15 +38,3 @@ explicit policy/trace guardrails.
 - Shows that: executing only permitted internal steps preserves evaluation
   invariants; violations are captured in the failure algebra without mutating
   state.
-
-## Earlier material
-
-## Definition
-- Inputs: [Evaluation State](evaluation-state.md),
-  [Wiring Plan](wiring-plan.md) marking eligible self-directed
-  steps, ambient [Policy Regime](policy-regime.md), and
-  [Trace Carrier](undated/trace.md).
-- Outputs: updated evaluation state or [Failure Algebra](failure-algebra.md).
-- Behaviour: selects permitted internal steps (maintenance, scans), executes
-  them via evaluate-step semantics, and records failures when guardrails are
-  violated.

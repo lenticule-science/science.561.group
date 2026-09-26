@@ -34,13 +34,3 @@ reach along the levels of a [Modality Tower](./modality-tower.md).
 Built from [`acts/flow-profile`](./flow-profile.md) and
 [`acts/reach`](./reach.md), applied levelwise to the modality
 tower. The acts ensure compatibility with tower laws.
-
-## Earlier material
-
-The **Propagate Flow and Reach on Tower** operator applies the earned flow and
-reach along the levels of a [Modality Tower](modality-tower.md).
-
-## Proof
-Built from [`acts/flow-profile`](flow-profile.md) and
-[`acts/reach`](reach.md), applied levelwise to the modality
-tower. The acts ensure compatibility with tower laws.

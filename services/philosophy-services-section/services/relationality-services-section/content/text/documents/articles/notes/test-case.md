@@ -31,17 +31,3 @@ fragment.
   sequencing to define test traces.
 - Shows that: defining tests as finite trace fragments yields executable test
   cases aligned with earned evaluation semantics.
-
-## Earlier material
-
-## Definition
-- Carrier: a finite [Trace Carrier](undated/trace.md)
-  fragment with associated contexts/program steps to execute for validation.
-- Fields: initial context/state, sequence of steps, expected observations or
-  equivalences.
-
-## Proof
-- Derived from: [Trace Carrier](undated/trace.md), using its
-  sequencing to define test traces.
-- Shows that: defining tests as finite trace fragments yields executable test
-  cases aligned with earned evaluation semantics.
