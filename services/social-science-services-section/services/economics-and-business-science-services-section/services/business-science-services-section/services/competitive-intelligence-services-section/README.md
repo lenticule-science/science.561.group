@@ -51,7 +51,7 @@ term names the pattern itself and traces this lineage in full.
 different, deliberately narrow charter: it is the research-production
 back office for one specific "modern business curriculum" product line,
 manufacturing citation-grounded evidence packets for named curriculum
-lessons that must be piped downstream into NotebookLM explainer content
+lessons that must be piped downstream into Gemini Notebook explainer content
 and a public YouTube release. Its `validateResearchDraft` schema hard-
 requires every citation to be a `primary-*`-kind, `https://`-sourced,
 peer-reviewed-style source with a named author and publication year, and

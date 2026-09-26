@@ -3,8 +3,8 @@ title: "The Quantum Genealogy of Proof: From Static Scripts to Physical States"
 date-created: 2026-07-29
 type: research-article
 keywords:
-  - notebooklm
-  - notebooklm-studio
+  - gemini-notebook
+  - gemini-notebook-studio
   - imported-report
 description: At the heart of every claim lies a fundamental imbalance known as the Proof-Checking Asymmetry.
 ---

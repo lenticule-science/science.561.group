@@ -244,7 +244,7 @@ O_{\mathrm{authority}}
 Hard inertia requires law, administrative technique, and positional power together:
 
 - **Fa — law:** transformations have earned proof-path addresses; operations have typed domains and codomains; chain settlement is canonical; cloud consumers do not depend on a laptop workspace; a new locus requires evidence that no adequate basis already exists.
-- **Shu — technique:** inexpensive clerks assay bytes; NotebookLM and inference endpoints recover dimensions; deterministic tools compare generations; registry and cloud runners fabricate and distribute; receipts expose what changed.
+- **Shu — technique:** inexpensive clerks assay bytes; Gemini Notebook and inference endpoints recover dimensions; deterministic tools compare generations; registry and cloud runners fabricate and distribute; receipts expose what changed.
 - **Shi — positional power:** consumers, releases, deployments, and protocol routes point to the corrected owner, while obsolete paths disappear. Correct behavior follows from graph position rather than exhortation.
 
 Prose laws without positional force do not govern the body. Renaming a rejected doctrine while executable gates continue enforcing it is not repeal. Naming a canonical package while other plausible implementations remain is not consolidation. Adding a wrapper while consumers retain old imports is not repair.
@@ -296,8 +296,8 @@ Net line count is not sufficient. Tests or a temporarily larger owner can be jus
 
 - A root Codex process consumed approximately 8.2 GiB resident memory and exhausted 3 GiB of swap after broad repository discovery, including a roughly 44,000-token submodule result. Corpus energy became heat in a premium administrator rather than a durable capability.
 - HTML behavior existed across XML, Relating, Markdown, Semantic Hypertext Packet, feed, microformat, and legacy generations. Merely creating an HTML package without absorbing those generations would have added a monomer.
-- NotebookLM chat existed through a local client but lacked its swarm-facing conversation operation. The capability was present in one chart and frozen at a missing transition.
-- A NotebookLM provider returned the same conversation identifier in two notebook contexts, demonstrating that `conversationId` alone was an under-dimensional address; notebook/source topology is required when the task must distinguish them.
+- Gemini Notebook chat existed through a local client but lacked its swarm-facing conversation operation. The capability was present in one chart and frozen at a missing transition.
+- A Gemini Notebook provider returned the same conversation identifier in two notebook contexts, demonstrating that `conversationId` alone was an under-dimensional address; notebook/source topology is required when the task must distinguish them.
 - The GUI source depended on stale local workspace links after an intentional cloud-package cutover. Restoring laptop workspace membership would have moved the organism backward; the release graph must be completed instead.
 - Rejected author/provider-exclusion doctrine survived in executable Academy and RMN gates after prose cleanup, demonstrating that law without dependency and consumer cutover has no inertia.
 - Multiple three-dimensional browser/world implementations, MMORPG systems, content mills, gateways, memories, and orchestration generations remain scattered. The live generation is not privileged; every byte-bearing generation must be assayed for unique dimensions before condensation.

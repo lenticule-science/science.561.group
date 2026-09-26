@@ -6,12 +6,12 @@ keywords:
   - research
   - notebook
   - agents
-description: Bundle collections of sources into dedicated research workspaces with bound agents that summarize, query, and extend the graph—NotebookLM-style, but backed by the universal relational computer.
+description: Bundle collections of sources into dedicated research workspaces with bound agents that summarize, query, and extend the graph—Gemini Notebook-style, but backed by the universal relational computer.
 ---
 # Idea: Relational Notebook Assistant
 
 Bundle collections of sources into dedicated research workspaces with bound
-agents that summarize, query, and extend the graph—NotebookLM-style, but backed
+agents that summarize, query, and extend the graph—Gemini Notebook-style, but backed
 by the universal relational computer.
 
 ## 1. Core recognitions

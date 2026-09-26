@@ -3,8 +3,8 @@ title: "The Algebraic Tower: A Progressive Guide from Magmas to Fields"
 date-created: 2026-06-22
 type: guide
 keywords:
-  - notebooklm
-  - notebooklm-studio
+  - gemini-notebook
+  - gemini-notebook-studio
   - imported-report
 description: In our formalization, the "Algebraic Tower" is not merely a collection of definitions, but a hierarchical architecture where each floor represents the addition of a specific mathematical law or "quiescent corner." As we ascend, we…
 ---

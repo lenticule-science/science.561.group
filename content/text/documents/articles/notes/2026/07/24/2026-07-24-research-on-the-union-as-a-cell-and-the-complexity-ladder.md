@@ -55,7 +55,7 @@ package == repo` as a settled equivalence and `capability == skill == script` as
 equivalence — but nothing in the record identifies "capability" with "die." Row 2's atom-as-capability
 reading and row 3's molecule-as-nation reading are this note's own analogy across two settled-but-distinct
 equivalence classes, not a corpus identity. Rung 6 had claimed "one machine == colony." The actual record
-(`tools/transcript-to-notebooklm/out/claude-024.md:16504`) shows "1 chain = 1 colony, Union as macrocolony"
+(`tools/transcript-to-gemini-notebook/out/claude-024.md:16504`) shows "1 chain = 1 colony, Union as macrocolony"
 is a Leader position from a same-day session, explicitly logged as revising an earlier "ONE CHAIN" stance
 and flagged there as **contested, not settled** — "treat the second as the more considered, later
 position, but flag the tension explicitly rather than silently resolving it." Restating it here as

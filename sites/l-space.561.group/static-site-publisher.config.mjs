@@ -132,11 +132,11 @@ export function mediaContent(environment = process.env) {
 export const BUCKETS_PATH = '/buckets';
 export function notebookBuckets() {
   let opened;
-  const buckets = () => (opened ??= import('@red-cup-engineering/notebooklm-services-section/notebooklm-buckets')
-    .then(({ createNotebookLmBuckets }) => createNotebookLmBuckets())
+  const buckets = () => (opened ??= import('@red-cup-engineering/gemini-notebook-services-section/gemini-notebook-buckets')
+    .then(({ createGeminiNotebookBuckets }) => createGeminiNotebookBuckets())
     .catch((error) => { opened = undefined; throw error; }));
   const delegate = (name) => async (...args) => (await buckets())[name](...args);
-  return s3Resource({ listBuckets: delegate('listBuckets'), listObjects: delegate('listObjects'), headObject: delegate('headObject'), getObject: delegate('getObject') }, { mount: BUCKETS_PATH, id: 'notebooklm-buckets', title: 'Gemini Notebook' });
+  return s3Resource({ listBuckets: delegate('listBuckets'), listObjects: delegate('listObjects'), headObject: delegate('headObject'), getObject: delegate('getObject') }, { mount: BUCKETS_PATH, id: 'gemini-notebook-buckets', title: 'Gemini Notebook' });
 }
 const isBucketsRoute = (path) => path === BUCKETS_PATH || path.startsWith(`${BUCKETS_PATH}/`);
 

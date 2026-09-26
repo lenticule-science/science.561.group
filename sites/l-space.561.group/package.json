@@ -25,7 +25,7 @@
     "@red-cup-engineering/immutable-content-custody-service": "0.3.0",
     "@red-cup-engineering/knowledge-system-server": "0.1.0",
     "@red-cup-engineering/mcp-engineering-services-section": "0.1.0",
-    "@red-cup-engineering/notebooklm-services-section": "0.5.1",
+    "@red-cup-engineering/gemini-notebook-services-section": "0.6.0",
     "@red-cup-engineering/oauth-services-section": "0.1.0",
     "@red-cup-engineering/static-site-publisher": "0.1.15"
   }

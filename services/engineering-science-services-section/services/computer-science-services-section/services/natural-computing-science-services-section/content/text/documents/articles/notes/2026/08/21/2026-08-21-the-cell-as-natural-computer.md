@@ -34,7 +34,7 @@ and replication mechanism (DNA, division), and a failure mode with its own
 executed shutdown sequence (programmed cell death). The estate's own
 eight-rung Informational Complexity Ladder names this directly: rung 6,
 Cell, is glossed as "a machine hosting live services behind a membrane,"
-anchored to the Rendanheyi border concept (`2026-07-28` NotebookLM imports,
+anchored to the Rendanheyi border concept (`2026-07-28` Gemini Notebook imports,
 `services/science-services-section/content/text/documents/articles/notes/2026/07/28/`).
 This note is a synthesis, not new mathematics: two prior surveys did the
 finding work (`the engine's dev/research/estate-cell-math.md`
@@ -397,7 +397,7 @@ Stiles & Bartol, MCell (1991); Andrews, Smoldyn (2004); Agmon et al.,
 
 Estate: full path index in `estate-cell-math.md`
 (`natural-computer-simulation-engine/dev/research/estate-cell-math.md`);
-the complexity-ladder rung-6 claim, `2026-07-28-notebooklm-studio-report-
+the complexity-ladder rung-6 claim, `2026-07-28-gemini-notebook-studio-report-
 the-sovereign-actor-...md` and its Unionification-tower companion,
 `services/science-services-section/content/text/documents/articles/notes/2026/07/28/`;
 the natural-computing-science topic document and its founding note, this

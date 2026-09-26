@@ -114,7 +114,7 @@ game has no real settling computation, the field is honestly absent, per the hou
 **Staircase.** Next — the math exists and runs in at least two packages; the missing piece is one
 manifest field and the discipline of computing it rather than picking a marketing genre tag.
 
-**Honest reason this might be wrong.** The Ludic Architecture note is explicitly a NotebookLM
+**Honest reason this might be wrong.** The Ludic Architecture note is explicitly a Gemini Notebook
 Studio import — "provider-generated source-grounded analysis; it carries no execution,
 governance, publication, or truth authority," per its own frontmatter — so its Caillois mapping,
 however sharp, is not itself house-authored theory; it's a second, independent hit on the same

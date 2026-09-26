@@ -1,12 +1,12 @@
 ---
 title: "Working paper: a semiotic coordinate system as an atlas of carrier assays"
 date-created: 2026-07-29
-description: "Date: 2026-07-29 Status: explicitly speculative working paper for a NotebookLM research notebook."
+description: "Date: 2026-07-29 Status: explicitly speculative working paper for a Gemini Notebook research notebook."
 ---
 # Working paper: a semiotic coordinate system as an atlas of carrier assays
 
 **Date:** 2026-07-29
-**Status:** explicitly speculative working paper for a NotebookLM research notebook. It proposes an assay programme; it does **not** introduce a software ontology, package, protocol, or claim that a universal fixed coordinate tuple exists.
+**Status:** explicitly speculative working paper for a Gemini Notebook research notebook. It proposes an assay programme; it does **not** introduce a software ontology, package, protocol, or claim that a universal fixed coordinate tuple exists.
 
 ## Reading key
 
