@@ -8,7 +8,6 @@
 // author may write. Nothing here is code that belongs to L-Space; it is what L-Space says about
 // itself.
 
-import { createHash } from 'node:crypto';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { applyMigrations } from '@red-cup-engineering/cloudflare-d1-service/migrations';
@@ -23,6 +22,7 @@ import { createAuthorizationServer, createJsonFileGrantStore } from '@red-cup-en
 import { createVaultMazeApplication } from '@red-cup-engineering/graphical-knowledge-game-server/application';
 import { createVaultMazeProjector } from '@red-cup-engineering/graphical-knowledge-game-server/projector';
 import { REVIEW_STORE_SCHEMA, createReviewStore } from '@red-cup-engineering/graphical-knowledge-game-server/review-store';
+import { sha256Hex } from "@red-cup-engineering/cryptographic-computer-data-engineering-services-section/integrity";
 
 /** The content root: the Lenticule Science section, every `content/` tree beneath it. */
 export const SCIENCE_ROOT = fileURLToPath(new URL('../../', import.meta.url));
@@ -116,7 +116,7 @@ const SELF_ADMITTING = new Set(['/mcp', '/oauth/authorize', '/oauth/token', '/oa
 export const lSpacePublicRoute = (path, method) => SELF_ADMITTING.has(path) || path.startsWith('/.well-known/oauth-') || path === '/.well-known/openid-configuration' || defaultPublicRoute(path, method);
 
 /** Where a reader opens a room of the garden: VaultMaze addresses a room by the SHA-256 of its path. */
-export const roomUrl = (base, path) => `${base}/#/room/${createHash('sha256').update(path).digest('hex')}`;
+export const roomUrl = (base, path) => `${base}/#/room/${sha256Hex(path)}`;
 
 /** Per-reader state: review rows and Discord sessions, in one SQLite database at the configured path. */
 export async function openState(environment = process.env) {
