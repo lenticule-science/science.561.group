@@ -27,7 +27,7 @@ import { createVaultMazeProjector } from '@red-cup-engineering/graphical-knowled
 import { REVIEW_STORE_SCHEMA, createReviewStore } from '@red-cup-engineering/graphical-knowledge-game-server/review-store';
 import { sha256Hex } from "@red-cup-engineering/cryptographic-computer-data-engineering-services-section/integrity";
 import { createImmutableContentCustody } from '@red-cup-engineering/immutable-content-custody-service';
-import { createFileStore } from '@red-cup-engineering/immutable-content-custody-service/file-store';
+import { createFileStore, createPathContent } from '@red-cup-engineering/immutable-content-custody-service/file-store';
 import { niResource } from '@red-cup-engineering/http-services-section/ni';
 import { s3Resource } from '@red-cup-engineering/http-services-section/s3';
 
@@ -172,7 +172,8 @@ export async function applications(context, environment = process.env) {
   const composed = [
     admission,
     createVaultMazeApplication({ reviews: createReviewStore(database), subjectOf: (ctx) => admission.subjectOf(ctx) }),
-    { resources: [...(media === undefined ? [] : [niResource(media)]), ...(setting('LSPACE_NOTEBOOK_BUCKETS', environment) === 'false' ? [] : [notebookBuckets()])] },
+    // Media is the store's, or a file beside a note that the release's catalog named by its content.
+    { resources: [niResource([...(media === undefined ? [] : [media]), createPathContent((ni) => context.getBuild?.()?.catalog?.vault?.media?.get(ni))]), ...(setting('LSPACE_NOTEBOOK_BUCKETS', environment) === 'false' ? [] : [notebookBuckets()])] },
   ];
   const authoringRoot = setting('GEODE_AUTHORING_ROOT', environment);
   let archive;
