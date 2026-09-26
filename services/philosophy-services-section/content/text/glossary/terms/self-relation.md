@@ -39,20 +39,7 @@ introduces: "[condition](condition)"
 
 - [[system/conditions/self-relation]] thus acts as the **base condition** for all further developments in reflexive depth, recursivity, and higher-order relational structures.
 
-## Earlier material
+## Related
 
 - [../acts/define](define.md):: [self-relation](self-relation.md) is the minimal [condition](../../../../services/relationality-services-section/content/text/triage/relationality-2/human-draft-7/system/conditions/condition.md) induced by [reflecting](../../../../services/relationality-services-section/content/text/glossary/terms/reflecting.md), wherein a [relational structure](relational structure) is positioned as both the source and target of its own relation. It holds open the dynamic in which a [triage/thing](../../../../services/relationality-services-section/content/text/triage/relationality-2/human-draft-7/system/structures/thing.md) relates to itself, sustaining the coherence of reflexive operations within the [reflexive relational system](reflexive relational system).
-
 - [reflecting](../../../../services/relationality-services-section/content/text/glossary/terms/reflecting.md) performs the [../acts/act](../../../../services/relationality-services-section/content/text/triage/relationality-2/human-draft-7/system/acts/act.md) of relating a [../structures/structure](../../../../services/relationality-services-section/content/text/triage/relationality-2/human-draft-7/system/structures/structure.md) to itself.
-
-- To sustain this, a **minimal condition** must be induced:
-    - [self-relation](self-relation.md): the holding-open of positional identity between a structure and itself within the act of relating.
-
-- [self-relation](self-relation.md) thus acts as the **base condition** for all further developments in reflexive depth, recursivity, and higher-order relational structures.
-
-- [../acts/define](../../../../services/relationality-services-section/content/text/acts/define):: [self-relation](../../../../services/relationality-services-section/content/text/triage/self-relation) is the minimal [condition](../../../../services/relationality-services-section/content/text/triage/condition) induced by [reflecting](../../../../services/relationality-services-section/content/text/glossary/terms/reflecting.md), wherein a [relational structure](relational structure) is positioned as both the source and target of its own relation. It holds open the dynamic in which a [triage/thing](../../../../services/relationality-services-section/content/text/triage/triage/thing) relates to itself, sustaining the coherence of reflexive operations within the [reflexive relational system](reflexive relational system).
-
-- [reflecting](../../../../services/relationality-services-section/content/text/glossary/terms/reflecting.md) performs the [../acts/act](../../../../services/relationality-services-section/content/text/acts/act) of relating a [../structures/structure](../../../../services/relationality-services-section/content/text/structures/structure) to itself.
-
-- To sustain this, a **minimal condition** must be induced:
-    - [self-relation](../../../../services/relationality-services-section/content/text/triage/self-relation): the holding-open of positional identity between a structure and itself within the act of relating.

@@ -4,6 +4,8 @@ title: Why Clickbait Will Save Journalism
 aliases:
   - why-clickbait-will-save-journalism
 specialization: research
+tags: ["journalism"]
+draft: false
 ---
 
 Earlier in the week, Jeffrey Dvorkin wrote an article for NPR’s blog called “[Why click-bait will be the death of journalism”](http://www.pbs.org/newshour/making-sense/what-you-dont-know-about-click-bait-journalism-could-kill-you/). (For someone who clearly yearns for the good ol’ days of daily bugles and newsreels, you’d think Dvorkin would be more particular about his headline casing, but whatever.)
@@ -37,12 +39,3 @@ Contary to what Dvorkin seems to believe, clickbait is helping restore journalis
 # Footnotes
 
 [^1]: There used to be a link to an interview I did with one of the people who popularized the *Ted Cruz is the Zodiac Killer* meme, but it has been lost to time.
-
-## Earlier material
-
-+++
-title = "Why Clickbait Will Save Journalism"
-author = ["emsenn"]
-tags = ["journalism"]
-draft = false
-+++

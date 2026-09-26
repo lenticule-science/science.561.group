@@ -4,6 +4,8 @@ title: Thoughts on Copyleft
 aliases:
   - thoughts-on-copyleft
 specialization: research
+tags: ["property"]
+draft: false
 ---
 
 So I've been chewing over copyleft stuff, cause it's been a thread of conversation around me, and I've been of the opinion that public domain is better than copyleft.
@@ -21,12 +23,3 @@ And I feel like, maybe, the conversation got shifted toward fighting against com
 Spelling it out like this, it sounds like the movement has become deradicalized and is largely blind to it. Which I feel is a trend across a lots of what-could-be counterculture.
 
 Anyway, all that to say, I've given it some thought, and I'll still be releasing my work under the "Creative Commons Zero" license, which does its best to release ownership of the work into the public.
-
-## Earlier material
-
-+++
-title = "Thoughts on Copyleft"
-author = ["emsenn"]
-tags = ["property"]
-draft = false
-+++

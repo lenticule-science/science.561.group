@@ -3,6 +3,9 @@ title: You Need a Holistic Action Plan
 aliases:
   - you-need-a-holistic-action-plan
 specialization: research
+author: ["emsenn"]
+tags: ["business"]
+draft: false
 ---
 
 # Introduction
@@ -39,12 +42,3 @@ In the ["Procedures for Managing an Action"](business-manual.org::#procedures-fo
 # Supplements
 
 ## License {#supplements-license}
-
-## Earlier material
-
-+++
-title = "You Need a Holistic Action Plan"
-author = ["emsenn"]
-tags = ["business"]
-draft = false
-+++
