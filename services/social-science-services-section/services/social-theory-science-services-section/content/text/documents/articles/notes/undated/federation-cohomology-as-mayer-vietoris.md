@@ -28,7 +28,7 @@ A **jurisdictional cover** of a federated jurisdiction $\mathcal{J} = \mathcal{J
 
 The **federation settling** $v^J$ is the polity's full predication settling restricted to $\mathcal{C}_J$. The **constituent settlings** $v^{J_i}$ are restrictions to $\mathcal{C}_{J_i}$. The **overlap settling** $v^{J_{12}}$ is the restriction to $\mathcal{C}_{J_{12}}$.
 
-The associated [settling-associated sheaves](../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agentic-relation-engine/lib/relating/docs/settling-associated-sheaf.md) $\mathcal{F}^{J}, \mathcal{F}^{J_i}, \mathcal{F}^{J_{12}}$ inherit the cover structure.
+The associated [settling-associated sheaves](../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agent-organization-engine/lib/relating/docs/settling-associated-sheaf.md) $\mathcal{F}^{J}, \mathcal{F}^{J_i}, \mathcal{F}^{J_{12}}$ inherit the cover structure.
 
 ## Statement
 

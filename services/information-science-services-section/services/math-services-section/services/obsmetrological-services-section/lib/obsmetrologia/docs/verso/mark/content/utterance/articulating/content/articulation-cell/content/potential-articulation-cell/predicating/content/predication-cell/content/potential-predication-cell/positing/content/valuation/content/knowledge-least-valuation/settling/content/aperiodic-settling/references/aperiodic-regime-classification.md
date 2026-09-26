@@ -11,7 +11,7 @@ Then
 
 $$v \sim_{\mathrm{MLD}} v' \;\iff\; \mathrm{cl}\text{-}\mathrm{inv}(v) \,=\, \mathrm{cl}\text{-}\mathrm{inv}(v') \;\text{ in } H^1(\mathbf{T}^*_{\leq \omega_1}, \mathcal{F}_U^{\mathrm{univ}}),$$
 
-where $\mathcal{F}_U^{\mathrm{univ}} := \mathcal{F}_U \oplus \mathcal{F}_{U'}$ is the universal [settling-associated sheaf](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agentic-relation-engine/lib/relating/docs/settling-associated-sheaf.md) on $\mathbf{T}^*_{\leq \omega_1}$ taken as ambient for the joint comparison, and $\sim_{\mathrm{MLD}}$ is [mutually-locally-derivable](../concepts/mutually-locally-derivable.md) equivalence.
+where $\mathcal{F}_U^{\mathrm{univ}} := \mathcal{F}_U \oplus \mathcal{F}_{U'}$ is the universal [settling-associated sheaf](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agent-organization-engine/lib/relating/docs/settling-associated-sheaf.md) on $\mathbf{T}^*_{\leq \omega_1}$ taken as ambient for the joint comparison, and $\sim_{\mathrm{MLD}}$ is [mutually-locally-derivable](../concepts/mutually-locally-derivable.md) equivalence.
 
 ## Proof
 

@@ -6,7 +6,7 @@ depends-on: [settling-associated-sheaf, kz-coherent-sheaf, bitopological-settlin
 
 # The settling-associated sheaf is a well-defined KZ-coherent sheaf
 
-The [settling-associated sheaf](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agentic-relation-engine/lib/relating/docs/settling-associated-sheaf.md) $\mathcal{F}_U$ is a well-defined KZ-coherent sheaf on $(\mathbf{T}^*, J)$.
+The [settling-associated sheaf](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agent-organization-engine/lib/relating/docs/settling-associated-sheaf.md) $\mathcal{F}_U$ is a well-defined KZ-coherent sheaf on $(\mathbf{T}^*, J)$.
 
 ## Proof
 

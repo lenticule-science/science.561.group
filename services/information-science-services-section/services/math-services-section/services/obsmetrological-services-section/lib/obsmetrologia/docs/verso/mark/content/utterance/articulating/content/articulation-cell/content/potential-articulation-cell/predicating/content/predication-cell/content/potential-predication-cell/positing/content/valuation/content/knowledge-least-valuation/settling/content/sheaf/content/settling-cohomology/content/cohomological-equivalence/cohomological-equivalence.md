@@ -12,7 +12,7 @@ Two settlings $v, v'$ over $(\mathbf{L}, \mathcal{C}, E, \lambda)$ are **cohomol
 
 $$\mathcal{F}_U \;\cong\; \mathcal{F}_{U'}[\delta]$$
 
-on the [bitopological settling site](../../../../../bitopological-settling-site/bitopological-settling-site.md), where $\mathcal{F}_{U'}[\delta]$ is the [settling-associated sheaf](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agentic-relation-engine/lib/relating/docs/settling-associated-sheaf.md) of $v'$ shifted by $\delta$.
+on the [bitopological settling site](../../../../../bitopological-settling-site/bitopological-settling-site.md), where $\mathcal{F}_{U'}[\delta]$ is the [settling-associated sheaf](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agent-organization-engine/lib/relating/docs/settling-associated-sheaf.md) of $v'$ shifted by $\delta$.
 
 ## Why sheaf-iso, not $H^n$-agreement
 

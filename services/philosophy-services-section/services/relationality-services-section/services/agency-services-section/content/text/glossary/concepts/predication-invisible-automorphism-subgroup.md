@@ -9,7 +9,7 @@ description: The kernel of the action of the settling-automorphism group on the 
 
 # Invisible automorphism subgroup
 
-The kernel of the action of the settling-automorphism group on the [settling-associated sheaf](../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agentic-relation-engine/lib/relating/docs/settling-associated-sheaf.md).
+The kernel of the action of the settling-automorphism group on the [settling-associated sheaf](../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agent-organization-engine/lib/relating/docs/settling-associated-sheaf.md).
 
 For a settling $v$ with [settling-morphism](../../documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/knowing/content/spatiotemporal-knowledge-presheaf/content/settling-fiber-groupoid/content/invisible-automorphism-subgroup/_archive/settling-morphism.md) automorphism group $\mathrm{Aut}^\simeq(v)$ ([1-truncated by the automorphism 1-truncation theorem](../../documents/articles/notes/undated/settling-automorphism-1-truncation.md)), the **invisible automorphism subgroup** is
 

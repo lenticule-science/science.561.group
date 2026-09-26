@@ -36,7 +36,7 @@ The [predication settling](../../../humanities/theories/math/theories/categories
 
 ## Newly-designated cells
 
-The cells that have ever been moved off $\bot$ during the settling are the **newly-designated cells** — the codebase's recorded content. Their values at the current stage constitute the [settling-associated sheaf](../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agentic-relation-engine/lib/relating/docs/settling-associated-sheaf.md) $\mathcal{F}^{\mathrm{code}}_U$.
+The cells that have ever been moved off $\bot$ during the settling are the **newly-designated cells** — the codebase's recorded content. Their values at the current stage constitute the [settling-associated sheaf](../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agent-organization-engine/lib/relating/docs/settling-associated-sheaf.md) $\mathcal{F}^{\mathrm{code}}_U$.
 
 The set of newly-designated cells is the substrate-algebraic content of "what the codebase is doing." Two codebase settlings with the same $\mathcal{F}^{\mathrm{code}}_U$ are observationally indistinguishable; the action of an automorphism of $v^{\mathrm{code}}$ on $\mathcal{F}^{\mathrm{code}}_U$ is what makes the automorphism *visible* or *invisible*.
 

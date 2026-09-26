@@ -19,7 +19,7 @@ The [paraconsistent settling-associated sheaf](../paraconsistent-settling-associ
 
 $$\mathcal{F}_U^{(k)} \;\cong\; \mathcal{F}_U^{(t)} \,\oplus\, \mathcal{F}_U^{(\top)},$$
 
-where $\mathcal{F}_U^{(t)} = \mathcal{F}_U$ is the [truth-side settling-associated sheaf](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agentic-relation-engine/lib/relating/docs/settling-associated-sheaf.md) and the **inconsistency sheaf**
+where $\mathcal{F}_U^{(t)} = \mathcal{F}_U$ is the [truth-side settling-associated sheaf](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agent-organization-engine/lib/relating/docs/settling-associated-sheaf.md) and the **inconsistency sheaf**
 
 $$\mathcal{F}_U^{(\top)}(q, \tau, U) \;:=\; \mathbb{Z}^{\Delta^{+, *, \top}_\tau(q) \,\cap\, U}$$
 

@@ -6,7 +6,7 @@ depends-on: [settling-cohomology, finite-settling-h0-polynomial-time, strict-reg
 
 # Cohomology class equality in polynomial time (strict regime)
 
-For finite knowledge presheaves in the [strict regime](strict-regime-cohomology-vanishing.md), equality of cohomology classes in $H^0$ and $H^1$ of the [settling-associated sheaf](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agentic-relation-engine/lib/relating/docs/settling-associated-sheaf.md) is decidable in time polynomial in the encoded parameters.
+For finite knowledge presheaves in the [strict regime](strict-regime-cohomology-vanishing.md), equality of cohomology classes in $H^0$ and $H^1$ of the [settling-associated sheaf](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agent-organization-engine/lib/relating/docs/settling-associated-sheaf.md) is decidable in time polynomial in the encoded parameters.
 
 ## Proof
 

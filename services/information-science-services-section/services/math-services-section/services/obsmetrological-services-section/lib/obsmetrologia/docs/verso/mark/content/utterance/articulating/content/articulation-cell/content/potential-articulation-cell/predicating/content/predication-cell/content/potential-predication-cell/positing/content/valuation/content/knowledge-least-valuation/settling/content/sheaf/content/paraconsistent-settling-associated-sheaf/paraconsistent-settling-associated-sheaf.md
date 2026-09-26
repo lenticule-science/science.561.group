@@ -8,7 +8,7 @@ depends-on: [settling-associated-sheaf, knowledge-order, four-bilattice]
 
 # Paraconsistent settling-associated sheaf
 
-The Belnap-designated parallel of the [settling-associated sheaf](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agentic-relation-engine/lib/relating/docs/settling-associated-sheaf.md) $\mathcal{F}_U$, using the full designated set $\{\mathbf{t}, \top\} \subseteq \mathbf{FOUR}$ instead of just $\{\mathbf{t}\}$.
+The Belnap-designated parallel of the [settling-associated sheaf](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agent-organization-engine/lib/relating/docs/settling-associated-sheaf.md) $\mathcal{F}_U$, using the full designated set $\{\mathbf{t}, \top\} \subseteq \mathbf{FOUR}$ instead of just $\{\mathbf{t}\}$.
 
 For each $(q, \tau)$, define the **set of newly-added Belnap-designated cells**:
 
@@ -36,4 +36,4 @@ induces the long exact sequence in cohomology that connects the truth-order and 
 
 ## Reading
 
-Where [$\mathcal{F}_U$](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agentic-relation-engine/lib/relating/docs/settling-associated-sheaf.md) tracks classical $\mathbf{t}/\mathbf{f}$-style designations cell-by-cell, $\mathcal{F}_U^{(k)}$ also tracks paraconsistent $\top$ contributions — making it the right object when the application treats inconsistency ($\top$) as non-trivializing information rather than excluding it.
+Where [$\mathcal{F}_U$](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agent-organization-engine/lib/relating/docs/settling-associated-sheaf.md) tracks classical $\mathbf{t}/\mathbf{f}$-style designations cell-by-cell, $\mathcal{F}_U^{(k)}$ also tracks paraconsistent $\top$ contributions — making it the right object when the application treats inconsistency ($\top$) as non-trivializing information rather than excluding it.

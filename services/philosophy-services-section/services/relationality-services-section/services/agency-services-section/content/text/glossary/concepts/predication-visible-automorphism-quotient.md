@@ -13,7 +13,7 @@ For a settling $v$ with [settling-automorphism](../../documents/articles/notes/u
 
 $$\mathrm{Aut}^{\mathrm{vis}}(v) \;:=\; \mathrm{Aut}^\simeq(v) / N(v).$$
 
-This is the group of automorphisms modulo those that act trivially on the [settling-associated sheaf](../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agentic-relation-engine/lib/relating/docs/settling-associated-sheaf.md) — equivalently, the group of automorphism-induced actions on $\mathcal{F}_U$ itself.
+This is the group of automorphisms modulo those that act trivially on the [settling-associated sheaf](../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agent-organization-engine/lib/relating/docs/settling-associated-sheaf.md) — equivalently, the group of automorphism-induced actions on $\mathcal{F}_U$ itself.
 
 ## Why singled out
 

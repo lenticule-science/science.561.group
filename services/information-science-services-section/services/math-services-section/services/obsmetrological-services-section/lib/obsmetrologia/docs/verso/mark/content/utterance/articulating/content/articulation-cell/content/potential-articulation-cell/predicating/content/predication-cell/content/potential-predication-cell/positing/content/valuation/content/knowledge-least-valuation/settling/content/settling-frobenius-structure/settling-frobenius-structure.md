@@ -26,7 +26,7 @@ Commutative Frobenius algebras over $R$ are equivalent to 2D TQFTs valued in $\m
 
 ## The settling Frobenius structure
 
-For a boundary predication system $\mathcal{B}$, define $Z(\mathcal{B}) := H^\bullet(\mathcal{F}_{v_\mathcal{B}})$ — the cohomology of the [settling-associated sheaf](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agentic-relation-engine/lib/relating/docs/settling-associated-sheaf.md) at the boundary valuation.
+For a boundary predication system $\mathcal{B}$, define $Z(\mathcal{B}) := H^\bullet(\mathcal{F}_{v_\mathcal{B}})$ — the cohomology of the [settling-associated sheaf](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agent-organization-engine/lib/relating/docs/settling-associated-sheaf.md) at the boundary valuation.
 The Frobenius operations come from the special cobordisms in [settling-cobordism-category](../objects/settling-cobordism-category.md).
 
 ### Unit $\eta$: from the disk cobordism

@@ -18,7 +18,7 @@ is an isomorphism for every pairwise-Stone clopen $U$.
 Equivalently, $F$ depends on $q$ only through the underlying [paired Priestley space](../../../../../../pre-bilattice/content/bilattice/content/predication-fiber-algebra/content/priestley-space/content/paired-priestley-space/paired-priestley-space.md) structure, not through the predicate's identity.
 
 The constant sheaf $\underline{A}$ is predicate-locally-constant for any $A$.
-The [settling-associated sheaf](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agentic-relation-engine/lib/relating/docs/settling-associated-sheaf.md) $\mathcal{F}_U$ is predicate-locally-constant iff settling stabilization is predicate-uniform — typically false in real settlings, but a reasonable hypothesis for the simplest examples.
+The [settling-associated sheaf](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agent-organization-engine/lib/relating/docs/settling-associated-sheaf.md) $\mathcal{F}_U$ is predicate-locally-constant iff settling stabilization is predicate-uniform — typically false in real settlings, but a reasonable hypothesis for the simplest examples.
 
 ## Settling-local-constancy
 

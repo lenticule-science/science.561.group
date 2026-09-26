@@ -6,7 +6,7 @@ depends-on: [settling-cohomology, settling-associated-sheaf, paraconsistent-sett
 
 # Settling cohomology vanishes above degree 1
 
-For the [settling-associated sheaf](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agentic-relation-engine/lib/relating/docs/settling-associated-sheaf.md) $\mathcal{F}_U$ (and its paraconsistent variant $\mathcal{F}_U^{(k)}$) on the [bitopological settling site](../../../../bitopological-settling-site/bitopological-settling-site.md), under the hypothesis that the base poset $\mathcal{C}^{\mathrm{op}}$ (treated via its Alexandrov topology) has cohomological dimension $\leq 1$,
+For the [settling-associated sheaf](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agent-organization-engine/lib/relating/docs/settling-associated-sheaf.md) $\mathcal{F}_U$ (and its paraconsistent variant $\mathcal{F}_U^{(k)}$) on the [bitopological settling site](../../../../bitopological-settling-site/bitopological-settling-site.md), under the hypothesis that the base poset $\mathcal{C}^{\mathrm{op}}$ (treated via its Alexandrov topology) has cohomological dimension $\leq 1$,
 
 $$H^n(\mathbf{T}^*, \mathcal{F}_U) \;=\; 0 \qquad \text{for all } n \geq 2.$$
 
@@ -33,7 +33,7 @@ We prove vanishing of $E_2^{p,q}$ outside $\{(p,q) : p+q \leq 1\}$, which forces
 Fix $(q_0, \tau_0)$ in the base.
 The stalk of $R^q \pi_* \mathcal{F}_U$ there is $H^q(X_{q_0}^{\tau_0}, \mathcal{F}_U|_{(q_0, \tau_0)})$, where the sheaf is restricted to the pairwise-Stone clopens of the [paired Priestley space](../../../../../../../../../pre-bilattice/content/bilattice/content/predication-fiber-algebra/content/priestley-space/content/paired-priestley-space/paired-priestley-space.md) $X_{q_0}^{\tau_0}$.
 
-By construction of the [settling-associated sheaf](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agentic-relation-engine/lib/relating/docs/settling-associated-sheaf.md), the restriction is
+By construction of the [settling-associated sheaf](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agent-organization-engine/lib/relating/docs/settling-associated-sheaf.md), the restriction is
 
 $$\mathcal{F}_U(q_0, \tau_0, U) \;=\; \mathbb{Z}^{\Delta^{+,*}_{\tau_0}(q_0) \cap U}$$
 

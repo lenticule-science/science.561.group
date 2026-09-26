@@ -15,7 +15,7 @@ The **aperiodic classifying invariant** of $v$ is
 
 $$\mathrm{cl}\text{-}\mathrm{inv}(v) \;:=\; [\mathbf{1}_{\mathcal{F}_U}] \;\in\; H^1(\mathbf{T}^*_{\leq \kappa}, \mathcal{F}_U),$$
 
-where $\mathbf{1}_{\mathcal{F}_U}$ is the canonical *identity class* of the [settling-associated sheaf](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agentic-relation-engine/lib/relating/docs/settling-associated-sheaf.md) — the cohomology class of the identity cochain assigning to each object $(q, \tau, U) \in \mathbf{T}^*_{\leq \kappa}$ the sum of generator elements in $\mathcal{F}_U(q, \tau, U)$ indexed by newly-added designated cells at stage $\tau$.
+where $\mathbf{1}_{\mathcal{F}_U}$ is the canonical *identity class* of the [settling-associated sheaf](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agent-organization-engine/lib/relating/docs/settling-associated-sheaf.md) — the cohomology class of the identity cochain assigning to each object $(q, \tau, U) \in \mathbf{T}^*_{\leq \kappa}$ the sum of generator elements in $\mathcal{F}_U(q, \tau, U)$ indexed by newly-added designated cells at stage $\tau$.
 
 ## Why this lives where it does
 

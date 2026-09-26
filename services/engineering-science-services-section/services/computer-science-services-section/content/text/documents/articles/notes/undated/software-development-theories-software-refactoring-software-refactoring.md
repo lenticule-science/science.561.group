@@ -23,7 +23,7 @@ Three reasons.
 
 Observable behavior is not absolute — it is relative to a *witness language*: the predicates that observers (tests, users, downstream code, monitoring) use to tell what the program does. Renaming a private variable is invisible to all sane witness languages. Renaming a public-API function is visible to callers who name it; if no caller does, the rename collapses back to invisible. The witness language is therefore a parameter of the refactoring discipline, not a fact about the code. Most ambiguity in real refactoring is ambiguity about which witness language is in scope.
 
-This relativity is fully reflected in the predicated form: the [settling-associated sheaf](../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agentic-relation-engine/lib/relating/docs/settling-associated-sheaf.md) is parameterized by the cell-positions deemed "newly designated" — exactly the witness-language choice — and the visible/invisible dichotomy follows.
+This relativity is fully reflected in the predicated form: the [settling-associated sheaf](../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agent-organization-engine/lib/relating/docs/settling-associated-sheaf.md) is parameterized by the cell-positions deemed "newly designated" — exactly the witness-language choice — and the visible/invisible dichotomy follows.
 
 ## Layout
 

@@ -12,7 +12,7 @@ $$H^n(\mathbf{T}^*, \mathcal{F}_U^{(\bullet)}) \;\cong\; \begin{cases} \displays
 
 ## Proof
 
-Scott-continuity gives that the [settling-associated sheaf](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agentic-relation-engine/lib/relating/docs/settling-associated-sheaf.md) on the $\omega$-limit is the filtered colimit of the finite-stage sheaves:
+Scott-continuity gives that the [settling-associated sheaf](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agent-organization-engine/lib/relating/docs/settling-associated-sheaf.md) on the $\omega$-limit is the filtered colimit of the finite-stage sheaves:
 
 $$\mathcal{F}_U|_\omega \;\cong\; \varinjlim_{n < \omega} \mathcal{F}_U|_n.$$
 

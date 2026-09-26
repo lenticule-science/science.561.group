@@ -23,7 +23,7 @@ State-compatibility $\phi(v_\tau) = v_\tau$ at each diagonal cell $(\alpha, \alp
 Hence $g$ fixes the diagonal pointwise: $g(\alpha, \alpha) = (\alpha, \alpha)$ for every $\alpha < \omega_1$.
 Off-diagonal, $g$ may be an arbitrary bijection — the settling imposes no constraint on $\bot$-cells.
 
-The [settling-associated sheaf](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agentic-relation-engine/lib/relating/docs/settling-associated-sheaf.md) $\mathcal{F}_U$ is the free abelian group on *newly-designated* cells, which for this settling are exactly the diagonal cells $\{(\alpha, \alpha) : \alpha < \omega_1\}$.
+The [settling-associated sheaf](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agent-organization-engine/lib/relating/docs/settling-associated-sheaf.md) $\mathcal{F}_U$ is the free abelian group on *newly-designated* cells, which for this settling are exactly the diagonal cells $\{(\alpha, \alpha) : \alpha < \omega_1\}$.
 Every natural auto fixes the diagonal pointwise, hence fixes every generator of $\mathcal{F}_U$, hence acts as the identity on $\mathcal{F}_U$.
 So $\mathrm{Aut}^\simeq_{\mathrm{nat}}(v) = N_{\mathrm{nat}}(v)$, and $\mathrm{Aut}^{\mathrm{vis}}_{\mathrm{nat}}(v) = \mathrm{Aut}^\simeq_{\mathrm{nat}}(v) / N_{\mathrm{nat}}(v) = \{1\}$. $\square$
 

@@ -16,7 +16,7 @@ $$\underline{H}^{(0, 1)}(B) \;=\; H^0(\mathbf{T}^*(B), \mathcal{F}_U) \,\oplus\,
 
 ## The target stack
 
-$\underline{H}^{(0, 1)}$ is constructed as the stack of $(H^0 \oplus H^1)$-cohomology classes for [settling-associated sheaves](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agentic-relation-engine/lib/relating/docs/settling-associated-sheaf.md) on the [bitopological settling site](../../../../bitopological-settling-site/bitopological-settling-site.md).
+$\underline{H}^{(0, 1)}$ is constructed as the stack of $(H^0 \oplus H^1)$-cohomology classes for [settling-associated sheaves](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agent-organization-engine/lib/relating/docs/settling-associated-sheaf.md) on the [bitopological settling site](../../../../bitopological-settling-site/bitopological-settling-site.md).
 Descent for cohomology classes follows from Vistoli-descent applied to sheaves of abelian groups — a standard special case where the sheaf condition on $\mathbf{Ab}$-valued sheaves transports to a stack condition on cohomology classes.
 
 ## Proof

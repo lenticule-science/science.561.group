@@ -21,7 +21,7 @@ $$\mathrm{gr}(\mathrm{Void}_v) \;:=\; \bigoplus_{\tau < \kappa} \mathbb{Z}^{V_{<
 *with one summand $\mathbb{Z}$ per non-Scott-continuous firing ordinal, recording the cell removed from the void at $\mu$.*
 
 2. *(Cosheaf-homology identification.)
-  Let $\check{\mathcal{F}}_v$ be the Verdier dual of the [settling-associated sheaf](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agentic-relation-engine/lib/relating/docs/settling-associated-sheaf.md), the* void cosheaf *whose stalks count cell-removal-from-void events.
+  Let $\check{\mathcal{F}}_v$ be the Verdier dual of the [settling-associated sheaf](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agent-organization-engine/lib/relating/docs/settling-associated-sheaf.md), the* void cosheaf *whose stalks count cell-removal-from-void events.
   Then*
 
 $$H_1(\check{\mathcal{F}}_v) \;\cong\; \mathrm{gr}(\mathrm{Void}_v) \;\cong\; \bigoplus_{\mu \in L_{\mathrm{ns}}(\kappa)} \mathbb{Z}.$$

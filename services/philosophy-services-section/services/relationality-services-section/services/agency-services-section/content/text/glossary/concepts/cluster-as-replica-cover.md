@@ -21,7 +21,7 @@ A [cluster-record](../../documents/articles/research/2026/07/31/lenticule-import
 - The cover condition $U = \bigcup_i U_i$ is the substrate's discipline that *every* substrate region the cluster is responsible for is observed by *some* member.
 - The overlap region $U_i \cap U_j$ is the shared-evidence region between members $i$ and $j$ — substrate-recorded as the cross-references in their witness chains.
 
-The pair $(\{U_i\}_i, \mathcal{F}_U|_U)$, where $\mathcal{F}_U$ is the [settling-associated sheaf](../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agentic-relation-engine/lib/relating/docs/settling-associated-sheaf.md), is the cluster's *cohomological surface* — the structure on which the platform's safety, termination, and partition-tolerance properties are cohomological invariants.
+The pair $(\{U_i\}_i, \mathcal{F}_U|_U)$, where $\mathcal{F}_U$ is the [settling-associated sheaf](../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agent-organization-engine/lib/relating/docs/settling-associated-sheaf.md), is the cluster's *cohomological surface* — the structure on which the platform's safety, termination, and partition-tolerance properties are cohomological invariants.
 
 ## Why this concept exists at the substrate level
 

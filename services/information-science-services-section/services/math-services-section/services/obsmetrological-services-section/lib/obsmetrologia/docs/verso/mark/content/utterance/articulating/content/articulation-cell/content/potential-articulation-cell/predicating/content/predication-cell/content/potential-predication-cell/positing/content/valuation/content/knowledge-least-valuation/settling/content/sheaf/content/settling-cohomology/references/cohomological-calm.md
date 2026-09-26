@@ -6,7 +6,7 @@ depends-on: [crdt-convergence-via-mayer-vietoris, replica-mayer-vietoris, settli
 
 # Cohomological CALM for knowledge presheaves
 
-For a [settling-associated sheaf](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agentic-relation-engine/lib/relating/docs/settling-associated-sheaf.md) $\mathcal{F}_U$:
+For a [settling-associated sheaf](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agent-organization-engine/lib/relating/docs/settling-associated-sheaf.md) $\mathcal{F}_U$:
 
 1. **Coordination-freeness.** For every pairwise-Stone cover $\{U_i \to U\}$ in the [bitopological settling site](../../../../bitopological-settling-site/bitopological-settling-site.md), all [Mayer–Vietoris](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/replica-mayer-vietoris.md) connecting homomorphisms $\delta^n : H^n(\cap_j U_j, \mathcal{F}_U) \to H^{n+1}(U, \mathcal{F}_U)$ vanish for $n = 0$.
   Higher-degree vanishing follows from [settling cohomology vanishes above degree 1](settling-cohomology-vanishes-above-degree-1.md).

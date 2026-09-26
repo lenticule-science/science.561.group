@@ -11,7 +11,7 @@ Distinct chain of reasoning: where the Leray approach uses derived functors and 
 
 ## Statement
 
-The same statement: for the [settling-associated sheaf](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agentic-relation-engine/lib/relating/docs/settling-associated-sheaf.md) $\mathcal{F}_U$ (and its paraconsistent variant) on the [bitopological settling site](../../../../bitopological-settling-site/bitopological-settling-site.md), under the standing hypothesis $\mathrm{cd}(\mathcal{C}^{\mathrm{op}}) \leq 1$,
+The same statement: for the [settling-associated sheaf](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agent-organization-engine/lib/relating/docs/settling-associated-sheaf.md) $\mathcal{F}_U$ (and its paraconsistent variant) on the [bitopological settling site](../../../../bitopological-settling-site/bitopological-settling-site.md), under the standing hypothesis $\mathrm{cd}(\mathcal{C}^{\mathrm{op}}) \leq 1$,
 
 $$H^n(\mathbf{T}^*, \mathcal{F}_U) \;=\; 0 \qquad \text{for all } n \geq 2.$$
 
@@ -28,7 +28,7 @@ For a cover $\{U_i \to U\}$ at $(q, \tau)$ and a sheaf $\mathcal{F}_U$, the Čec
 
 $$\check{C}^n(\{U_i\}, \mathcal{F}_U) \;=\; \prod_{i_0 < \cdots < i_n} \mathcal{F}_U(q, \tau, U_{i_0} \cap \cdots \cap U_{i_n}).$$
 
-By the [settling-associated sheaf](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agentic-relation-engine/lib/relating/docs/settling-associated-sheaf.md)'s definition, $\mathcal{F}_U(q, \tau, V) = \mathbb{Z}^{\Delta^{+,*}_\tau(q) \cap V}$ — free abelian on the *discrete* set of newly-added designated points lying in $V$.
+By the [settling-associated sheaf](../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agent-organization-engine/lib/relating/docs/settling-associated-sheaf.md)'s definition, $\mathcal{F}_U(q, \tau, V) = \mathbb{Z}^{\Delta^{+,*}_\tau(q) \cap V}$ — free abelian on the *discrete* set of newly-added designated points lying in $V$.
 
 For a discrete subset $S \subseteq X_q^\tau$ and a pairwise-Stone cover $\{U_i \to U\}$ of $U$, the Čech complex of the sheaf $V \mapsto \mathbb{Z}^{S \cap V}$ decomposes as a direct sum over points of $S \cap U$:
 

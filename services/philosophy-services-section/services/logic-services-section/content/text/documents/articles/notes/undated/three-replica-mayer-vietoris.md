@@ -29,7 +29,7 @@ $$\cdots \to H^{n-1}\Bigl(\bigcap_i U_i, \mathcal{F}_U\Bigr) \to H^n\Bigl(\bigcu
 
 ## Connecting homomorphism vanishes
 
-By [CRDT convergence via Mayer–Vietoris](../../../../glossary/concepts/crdt-convergence-via-mayer-vietoris.md), $\delta^0 : H^0\bigl(\bigcap_i U_i, \mathcal{F}_U\bigr) \to H^1\bigl(\bigcup_i U_i, \mathcal{F}_U\bigr)$ is identically zero on the [settling-associated sheaf](../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agentic-relation-engine/lib/relating/docs/settling-associated-sheaf.md).
+By [CRDT convergence via Mayer–Vietoris](../../../../glossary/concepts/crdt-convergence-via-mayer-vietoris.md), $\delta^0 : H^0\bigl(\bigcap_i U_i, \mathcal{F}_U\bigr) \to H^1\bigl(\bigcup_i U_i, \mathcal{F}_U\bigr)$ is identically zero on the [settling-associated sheaf](../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agent-organization-engine/lib/relating/docs/settling-associated-sheaf.md).
 
 Concretely: the section at the triple intersection — "Alice either likes Bob (per replicas 1, 2) or does not (per replica 3)" — merges into a global section on $U$ via the [knowledge-order](../../research/2026/07/31/lenticule-import/yet-another-unsorted-archive-dump/predication-categories/_archive/bucket-2/concepts/knowledge-order.md) merge:
 
