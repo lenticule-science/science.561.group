@@ -38,8 +38,6 @@ complete only when required adjustments, reconciliations, worklist disposition,
 and report review are also complete; zeroing temporary accounts is not evidence
 that the period is substantively correct.
 
-## Earlier material
-
 A closing entry is a [journal entry](journal.md) made at the end of an accounting period that transfers the balances of temporary [accounts](../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/2026/03/06/2026-03-06-account.md) — revenue, expense, and dividend accounts — to [retained earnings](retained-earnings.md), a permanent equity account.
 
 After closing, all temporary accounts have zero balances, ready for the next period.

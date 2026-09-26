@@ -53,8 +53,6 @@ The British Classification Research Group extended Ranganathan's work, refining 
 - Ranganathan, S.R., *Prolegomena to Library Classification* (3rd ed., 1967)
 - Vickery, B.C., *Faceted Classification: A Guide to Construction and Use of Special Schemes* (1960)
 
-## Earlier material
-
 *Faceted-classification* is the method of knowledge organization developed by S. R. Ranganathan in his Colon Classification (1933) and elaborated by Ranganathan, the British Classification Research Group, and B. C. Vickery through the mid-20th century. Instead of enumerating every possible subject in a fixed schedule (as Dewey and the Library of Congress systems do), faceted-classification analyzes any subject into a small set of fundamental **facets** that combine freely to express compound subjects.
 
 The load-bearing move is **compositional analysis**: subjects are not atomic units to be listed but composite structures to be decomposed into orthogonal dimensions. Any new subject can be classified by analysis into its facet components without revising the classification schedule.

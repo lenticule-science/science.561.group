@@ -292,8 +292,6 @@ This specification serves as the canonical interface between theoretical world m
 
 # Backlinks
 
-## Earlier material
-
 | Theorem Component                   | Constructive Artifact  | Description                                                                    |
 |-------------------------------------|------------------------|--------------------------------------------------------------------------------|
 | $S$ (existence of model category)   | \`signature.sketch\`   | Defines entities, relations, and constructors; basis for functorial semantics. |
@@ -303,8 +301,6 @@ This specification serves as the canonical interface between theoretical world m
 | $O$ (bisimulation invariance)       | \`observables.modal\`  | Defines observable distinctions and perspectives.                              |
 | $\Box_i$ (internal modalities)      | \`modalities.def\`     | Left-exact endofunctors capturing necessity, possibility, or accessibility.    |
 | Institutional invariance            | \`verification.suite\` | Finite mechanical tests ensuring logic-agnostic satisfaction.                  |
-
-<div class="definition">
 
 (****Reproducible Paracosm Specification (RPS v0.1)****) A valid RPS configuration is a 7-tuple $$
 \mathcal{C}_{\text{RPS}} = (S,\Theta,J,N,O,\Box,\Diamond)
@@ -326,5 +322,3 @@ $$ satisfying the following **constructive correspondences**:
 | ****Observation****              | Bisimulation invariance of $O$          | Verify that equivalent models yield identical observations. |
 | ****Modal Stability****          | Commutation of $\Box_i$ with $J,N,O$    | Check that modal transforms preserve reproducibility.       |
 | ****Institutional Invariance**** | Functorial satisfaction preservation    | Verify that changes of syntax preserve semantic truth.      |
-
-<div class="theorem">

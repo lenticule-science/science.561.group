@@ -50,8 +50,6 @@ In $\mathbb{Z}/7\mathbb{Z}$: $3 + 5 = 1$ (since $8 \equiv 1 \pmod{7}$), and $3 \
 - Confusing $\mathbb{Z}/n\mathbb{Z}$ as a ring with $\mathbb{Z}/n\mathbb{Z}$ as a field. It is always a ring; it is a field only when $n$ is prime.
 - Forgetting that congruence is an equivalence relation, not just a computational shortcut.
 
-## Earlier material
-
 Two integers $a$ and $b$ are **[congruent](../../../../glossary/terms/congruence.md)** modulo $n$ (written a≡b(modn)a \equiv b \pmod{n}) if $n$ divides a−ba - b.
 
 - **Congruent modulo nn**: two numbers that leave the same remainder when divided by $n$.

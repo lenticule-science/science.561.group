@@ -40,23 +40,15 @@ Draft 1: Phase 7 discusses "inter-unit relating" (local coherence between distin
 - Flow = □◇ (composition of the middle two)
 - Mathematical correspondence: Lawvere's axiomatic cohesion
 
-## Earlier material
+## Related
+
+- [Shape](../../../../services/agency-services-section/content/text/documents/articles/research/predicated-agentic-orchestration-platform/scope/shape/shape.md) sees overall form — how things are glued together
+- [Shape](../../../../services/agency-services-section/content/text/documents/articles/research/predicated-agentic-orchestration-platform/scope/shape/shape.md) — overall form; leftmost in the chain
 
 Cohesive-Chain is the architecture that binds local and global perspectives into a single framework. It is the condition that four operations — [Shape](../../../../services/agency-services-section/content/text/documents/articles/research/predicated-agentic-orchestration-platform/scope/shape/shape.md), [Discrete](../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-04/discrete.md), [Codiscrete](../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-04/codiscrete.md), [Global](../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-04/global.md) — form a connected chain of canonical transformations, ensuring that any relational configuration can be viewed at every level of connectivity.
 
 Cohesive-Chain arises in [Movement IV: Geometric Cohesion](../../../../../../content/text/glossary/concepts/geometric-cohesion.md) as the structural signature of cohesive coexistence. When multiple relational units must coexist, local and global perspectives must translate without loss. The chain of four operations provides exactly this translation:
 
-- [Shape](../../../../services/agency-services-section/content/text/documents/articles/research/predicated-agentic-orchestration-platform/scope/shape/shape.md) sees overall form — how things are glued together
-- [Discrete](../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-04/discrete.md) sees maximal separation — each element standing alone
-- [Codiscrete](../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-04/codiscrete.md) sees maximal connection — every element bonded to every other
-- [Global](../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-04/global.md) sees what survives external observation
-
 Each operation connects canonically to the next, and each preserves the [stabilization](../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-04/stabilizes-between.md) conditions earned in earlier movements. The chain ensures that passage between perspectives is structurally governed — not arbitrary — and that viewing a configuration at one level of connectivity determines its appearance at every other level.
 
 Cohesive-Chain corresponds to the quadruple adjunction characteristic of Lawvere's axiomatic cohesion (cohesive toposes). Each functor satisfies specific preservation axioms: Shape preserves colimits, Discrete preserves finite limits, Codiscrete preserves finite colimits, Global preserves limits.
-
-- [Shape](../../../../services/agency-services-section/content/text/documents/articles/research/predicated-agentic-orchestration-platform/scope/shape/shape.md) — overall form; leftmost in the chain
-- [Discrete](../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-04/discrete.md) — maximal separation
-- [Codiscrete](../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-04/codiscrete.md) — maximal connection
-- [Global](../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-04/global.md) — external observation; rightmost in the chain
-- [Stabilizes-Between](../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-04/stabilizes-between.md) — the mediating-identity condition preserved by the chain

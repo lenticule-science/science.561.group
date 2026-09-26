@@ -78,8 +78,6 @@ The closure-cover formulation:
 - **Makes the count combinatorial.** $|T^{-1}(w)|$ = number of closure-covers of $H_w$, computable directly from $H_w$'s structure rather than by enumerating subsets of $w$.
 - **Suggests classifications** by hypergraph type (tree-shaped, diamond, conjunctive bottleneck, etc.) — see [closure-cover hypergraph classification question](../../documents/articles/learning-articles/questions/closure-cover-hypergraph-classification.md).
 
-## Earlier material
-
 Companion proof to [pre-image characterization](../../documents/articles/notes/undated/backward-closure-recovers-forward-trajectory.md). Same theorem, two presentations:
 
 - *Local form*: each cell of $w \setminus v$ has a satisfied-at-$v$ producing rule.

@@ -302,8 +302,6 @@ This Reinstantiates Abstract(n): a binary Relation resolving generalized behavio
 
 > Reinstantiate(n) = (Relate Abstract(n) Relation(n))
 
-## Earlier material
-
 Deriving Reinstantiate(n), it cannot not derive that Reinstantiate(n) Relates to Abstract(n), deriving Reflect(n), a binary Relation derived from a Reinstantiation(n) Relating to its Abstract(n).
 
 > Reflect(n) = (Relate Reinstantiate(n) Abstract(n))

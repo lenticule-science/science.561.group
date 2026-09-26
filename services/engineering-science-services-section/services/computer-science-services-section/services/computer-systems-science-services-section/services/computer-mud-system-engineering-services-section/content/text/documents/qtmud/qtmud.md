@@ -298,7 +298,15 @@ The above copyright notice and this permission notice shall be included in all c
 
 The Document is provided "as is," without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, or noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort, or otherwise, arising from, out of or in connection with the Document or the use or other dealings in the Document. \`\`\`
 
-## Earlier material
+## Related
+
+- [Install](https://emsenn.neocities.org/qtmud#install)
+- [Configure](https://emsenn.neocities.org/qtmud#configure)
+- [Test](https://emsenn.neocities.org/qtmud#test)
+- [Install from Org-mode](https://emsenn.neocities.org/qtmud#install-from-org-mode)
+- [Test All](https://emsenn.neocities.org/qtmud#test-all)
+- [Developer Logs](https://emsenn.neocities.org/qtmud#org9f27c3a)
+- [emsenn](https://emsenn.neocities.org/qtmud#org1c105ff)
 
 license: MIT
 ```
@@ -328,21 +336,7 @@ end
 ```
 Copyright 2019 emsenn
 
-## Earlier material
-
-- [Install](https://emsenn.neocities.org/qtmud#install)
-- [Configure](https://emsenn.neocities.org/qtmud#configure)
-- [Test](https://emsenn.neocities.org/qtmud#test)
-
-- [Install from Org-mode](https://emsenn.neocities.org/qtmud#install-from-org-mode)
-
-- [Test All](https://emsenn.neocities.org/qtmud#test-all)
-
 crystal spec spec/qtmud_spec.cr:7 # Qtmud works
-
-- [Developer Logs](https://emsenn.neocities.org/qtmud#org9f27c3a)
-
-- [emsenn](https://emsenn.neocities.org/qtmud#org1c105ff)
 
 1. For each MUD library,
     1. add its services to the list it has already prepared
@@ -352,9 +346,3 @@ crystal spec spec/qtmud_spec.cr:7 # Qtmud works
     2. Some services have their own _tick_ function, which is added to a list. (More on that shortly, as well.)
     3. Services often have their own variables and stuff to configure; that's usually done at this point, too.
 3. Once the services are loaded, the enabled optional services are. What this means depends on the service, but it might mean replacing a subscription with a different one.
-
-1. Run (`Ctrl-c, Ctrl-c` in Emacs) the script in ["Install from Org-mode"](https://emsenn.neocities.org/qtmud#install-from-org-mode) to delete the old version and make the necessary new directories.
-2. Do `org-babel-tangle` in Emacs anywhere in the qtMUD file.
-3. Run the script in ["Test All"](https://emsenn.neocities.org/qtmud#test-all).
-
-**

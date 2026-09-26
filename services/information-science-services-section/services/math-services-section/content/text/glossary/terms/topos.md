@@ -115,26 +115,6 @@ The settled subtopos RelationalHistoryFixedFiber = Sh_π(R) is the joint fixed-p
 
 *Source.* Nuclear Verlinde eigenvalue correspondence theorem from Nuclear Verlinde Eigenvalue Correspondence §Theorem. Binet formula as Verlinde prediction from §Corollary — The Binet Formula. Scope and limitations from §Scope and Limitations. Status: the ring isomorphism is proved; the full MTC correspondence is ring-level only. $\square$
 
-## Open questions
-
-- Whether R = Sh(T, J) is a Boolean topos (whether Ω is Boolean), and if not, which propositions in the internal logic fail excluded middle — the answer would characterize the undecidable propositions of the system.
-- Whether the subtopos H* = Sh_{π}(R) has a direct description in terms of the original site (T, J), or whether it requires the full Lawvere-Tierney machinery.
-- Whether every FlatfileAgentialResourceSystemLocale generates a well-defined subtopos of R, and if so whether the inclusion-projection pair gives the `component-of` relation a precise categorical witness.
-
-## Earlier material
-
-The topos is the [Vessel](../../../../../../../philosophy-services-section/content/text/glossary/terms/vessel.md) in its full mathematical precision: the ambient container that bears all objects and defines all legal operations on them.
-
-**Source:** [Nuclear Verlinde Eigenvalue Correspondence](../../../../../../../philosophy-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/domains/math/domains/math/relational-history-fiber-nuclear-verlinde-eigenvalue-correspondence.md), [Nuclear Fusion Ring Isomorphism](../../../../../../../philosophy-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/domains/math/domains/math/relational-history-fiber-nuclear-fusion-ring-isomorphism.md).
-
-*Source.* Nuclear Verlinde eigenvalue correspondence theorem from [Nuclear Verlinde Eigenvalue Correspondence §Theorem](../../../../../../../philosophy-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/domains/math/domains/math/relational-history-fiber-nuclear-verlinde-eigenvalue-correspondence.md#verlinde-correspondence-theorem). Binet formula as Verlinde prediction from [§Corollary — The Binet Formula](../../../../../../../philosophy-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/domains/math/domains/math/relational-history-fiber-nuclear-verlinde-eigenvalue-correspondence.md#verlinde-binet-prediction). Scope and limitations from [§Scope and Limitations](../../../../../../../philosophy-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/domains/math/domains/math/relational-history-fiber-nuclear-verlinde-eigenvalue-correspondence.md#verlinde-scope). Status: the ring isomorphism is proved; the full MTC correspondence is ring-level only. $\square$
-
-The topos is the [Vessel](../../../../../../../philosophy-services-section/content/text/glossary/terms/vessel.md) in its full mathematical precision: the ambient container that bears all objects and defines all legal operations on them.
-
-**Source:** [Nuclear Verlinde Eigenvalue Correspondence](../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/math/relational-history-fiber-nuclear-verlinde-eigenvalue-correspondence.md), [Nuclear Fusion Ring Isomorphism](../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/math/relational-history-fiber-nuclear-fusion-ring-isomorphism.md).
-
-*Source.* Nuclear Verlinde eigenvalue correspondence theorem from [Nuclear Verlinde Eigenvalue Correspondence §Theorem](../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/math/relational-history-fiber-nuclear-verlinde-eigenvalue-correspondence.md#verlinde-correspondence-theorem). Binet formula as Verlinde prediction from [§Corollary — The Binet Formula](../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/math/relational-history-fiber-nuclear-verlinde-eigenvalue-correspondence.md#verlinde-binet-prediction). Scope and limitations from [§Scope and Limitations](../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/math/relational-history-fiber-nuclear-verlinde-eigenvalue-correspondence.md#verlinde-scope). Status: the ring isomorphism is proved; the full MTC correspondence is ring-level only. $\square$
-
 The fixed profile category equipped with `FixedFiniteLimits`,
 `FixedExponential`, and `FixedSubobjectClassifier` forms a Heyting-style topos
 internally, recorded by `ProfileTopos`.
@@ -150,3 +130,9 @@ The limit and exponential structure came from the function-term and lattice
 operations; the classifier from negation and implication.  Their compatibility
 follows from the recognition algebra already established and restricted to
 `FixedProfileRecognitions`.
+
+## Open questions
+
+- Whether R = Sh(T, J) is a Boolean topos (whether Ω is Boolean), and if not, which propositions in the internal logic fail excluded middle — the answer would characterize the undecidable propositions of the system.
+- Whether the subtopos H* = Sh_{π}(R) has a direct description in terms of the original site (T, J), or whether it requires the full Lawvere-Tierney machinery.
+- Whether every FlatfileAgentialResourceSystemLocale generates a well-defined subtopos of R, and if so whether the inclusion-projection pair gives the `component-of` relation a precise categorical witness.

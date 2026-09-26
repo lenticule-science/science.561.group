@@ -61,14 +61,4 @@ Facebook has early investment ties to Russian financiers and openly worked with 
 
 It was not an accidental failure of a novel invention.
 
-## Earlier material
-
 Seven years ago, I wrote this essay to piece together the connective tissue between [[Facebook]], [[Russian finance|Russian financial networks]], and the [[Donald J. Trump Presidential Campaign, 2016]] campaign’s [[digital strategy]]. At the time, the conversation was focused on [[Cambridge Analytica]], [[disinformation]], and the fallout of the [[2016 United States Presidential Election]]. Since then, we’ve lived through another [[United States Presidential Election cycle]] shaped by [[platformized governance]], [[Elon Musk|a billionaire]] takeover of [[Twitter]], and a fresh wave of [[information warfare]] that makes [[2016]] look almost quaint by comparison.
-
-![[Facebook Did Not Accidentally Fail#Text]]
-
-## Earlier material
-
-Seven years ago, I wrote this essay to piece together the connective tissue between [Facebook](../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/documents/articles/essays/Facebook), [Russian finance|Russian financial networks](Russian finance|Russian financial networks), and the [Donald J. Trump Presidential Campaign, 2016](Donald J. Trump Presidential Campaign, 2016) campaign’s [digital strategy](digital strategy). At the time, the conversation was focused on [Cambridge Analytica](Cambridge Analytica), [disinformation](../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/documents/articles/essays/disinformation), and the fallout of the [2016 United States Presidential Election](2016 United States Presidential Election). Since then, we’ve lived through another [United States Presidential Election cycle](United States Presidential Election cycle) shaped by [platformized governance](platformized governance), [Elon Musk|a billionaire](Elon Musk|a billionaire) takeover of [Twitter](../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/documents/articles/essays/Twitter), and a fresh wave of [information warfare](information warfare) that makes [2016](../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/documents/articles/essays/2016) look almost quaint by comparison.
-
-![Facebook Did Not Accidentally Fail#Text](Facebook Did Not Accidentally Fail#Text)

@@ -34,8 +34,6 @@ aliases:
 	- reflex-induced-relation(n) = reflex-induced(relation(n-1))
 	- where n is any non-negative integer
 
-## Earlier material
-
 - Definition:: ***reflexing an induced relation*** is the [../../../../../slop/relationality/human-draft-7/system/acts/act](../../../../services/relationality-services-section/slop/relationality/human-draft-7/system/acts/act) of [induce|inducing](../../../../services/relationality-services-section/content/text/triage/relationality-slop-2025-06-11/00-probably-redundant/induce|inducing) a [../../../../../../mathematics/objects/sets/terms/relation](../../../../services/mathematics/objects/sets/terms/relation) between a relation and [../../../../../../mathematics/objects/sets/terms/relation](../../../../services/mathematics/objects/sets/terms/relation).
 
 ## Derivation

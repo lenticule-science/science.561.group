@@ -240,8 +240,6 @@ Lean), which is available but not automatic.
 
 - A type checker that verifies terms against their types.
 
-## Earlier material
-
 This says: "for any type $A$, a function from $A$ to $A$." The identity function
 $\lambda A.\; \lambda x.\; x$ inhabits this type.
 
@@ -250,9 +248,6 @@ $\exists x : A.\; P(x)$. A term of type $\Sigma(x : A).\; P(x)$ is a pair: a wit
 $a : A$ together with a proof that $P(a)$ holds.
 
 **Example.** The type of "a natural number that is even":
-
-**Example.** The type of "a group": a carrier set $G$, an operation, an identity element,
-and proofs of the group axioms — all bundled in nested Sigma-types.
 
 - A type universe $\mathsf{Type}$ (stratified into levels).
 - Pi-types $\Pi(x : A).\; B(x)$ for dependent functions.

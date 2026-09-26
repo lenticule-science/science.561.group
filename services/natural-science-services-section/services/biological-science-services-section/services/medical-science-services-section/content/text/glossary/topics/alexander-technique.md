@@ -102,18 +102,10 @@ AT's claim that the head-neck relationship constitutes the body's "primary" orga
 
 The tradition has historically been associated with performing arts education (actors, musicians, dancers) and tends toward a genteel, studio-based pedagogy that limits its accessibility. Cost and availability remain barriers, as with most specialized somatic work.
 
-## Earlier material
-
 F. Matthias Alexander's method for recognizing and releasing habitual patterns of unnecessary muscular effort through conscious inhibition and direction.
 
 Once the habitual response is inhibited, AT uses &ldquo;direction&rdquo; — conscious mental instructions to the body. Alexander&rsquo;s primary directions address the head-neck-back relationship:
 
-These directions aren&rsquo;t muscular commands (&ldquo;do this with your muscles&rdquo;). They&rsquo;re invitations to the nervous system to release unnecessary effort. The distinction matters: trying to position the head &ldquo;correctly&rdquo; through muscular effort reproduces the problem in a new form. Direction works through intention and attention, not through force.
-
-Alexander proposed that the relationship between the head, neck, and spine — what he called &ldquo;primary control&rdquo; — organizes the body&rsquo;s overall coordination. When primary control is functioning well, the head balances freely on the spine, the spine lengthens, and the body moves with minimal effort. When primary control is disturbed (by habitual tension, startle responses, or the effort of trying too hard), the entire body&rsquo;s coordination degrades.
-
 - Alexander, F. M. (1910). *Man&rsquo;s Supreme Inheritance.* Methuen [@alexander1910].
 
 AT&rsquo;s concept of inhibition — pausing the automatic response to create space for conscious choice — connects to the vault&rsquo;s broader interest in how habitual patterns become invisible to the systems that produce them. The [Martial Gesture Grammar](../../documents/articles/research/2026/07/humanities/domains/militarism/topics/combat-systems/martial-gesture-grammar/index.md) module trains a similar capacity: the ability to register pressure without automatically reacting to it. MGG calls this &ldquo;preserving decision space&rdquo;; Alexander called it inhibition. Both name the same neural achievement: maintaining cortical control when the situation invites reflexive reaction.
-
-AT&rsquo;s language is idiosyncratic and can obscure rather than clarify. Terms like &ldquo;primary control,&rdquo; &ldquo;use of the self,&rdquo; and &ldquo;direction&rdquo; don&rsquo;t map cleanly onto anatomical or neuroscientific vocabulary, which makes the method difficult to study empirically and difficult to integrate with other clinical approaches. The research base is modest — a 2008 BMJ trial showed effectiveness for chronic back pain [citation needed], but the overall body of evidence is small relative to the method&rsquo;s 130-year history.

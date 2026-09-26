@@ -260,10 +260,6 @@ Compliance with this checklist produces RTL judgments that are deterministic
 artifacts of the GFRTU mathematics and safe to embed in CDS or transport via ABI
 and RPC surfaces.
 
----
-
-## Earlier material
-
 If $p$ and $q$ are recognition variables, RTL can build terms like $p\wedge q$, $p\vee q$, and $p\Rightarrow q$. In GFRTU, these are not just symbols: each term gets interpreted as an internal arrow in the sheaf topos.
 
 The **Recognition Term Language (RTL)** is a typed formal language for recognition expressions whose semantics is interpreted in $R=\mathbf{Sh}(T,J)$.
