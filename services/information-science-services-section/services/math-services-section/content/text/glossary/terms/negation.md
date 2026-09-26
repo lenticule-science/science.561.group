@@ -68,7 +68,7 @@ Nelson's constructive logic with strong negation (Nelson 1949) has both operatio
 - implication is computed coordinatewise from the base lattice, $\langle a_+, a_- \rangle \to \langle b_+, b_- \rangle = \langle a_+ \to b_+,\; a_+ \wedge b_- \rangle$;
 - the pseudocomplement acts on the positive coordinate through that implication.
 
-The framework's negation is the strong one.
+The framework's negation is the strong one. On the house's residuated twist product (residuum $\langle x, y \rangle \Rightarrow \langle z, v \rangle = \langle (x \to z) \wedge (v \to y),\ x v \rangle$, unit told-both $\langle 1, 1 \rangle$), implication into the unit is exactly $\sim$. Linear negation and the evidence swap therefore coincide.
 
 Older notes gave the pseudocomplement other names. The acts derivation calls it *Negate* (act 131, "not a" as "a implies Ground Recognition"). Movement I calls it "negation as orthogonality": the largest disjoint subobject, with double negation. The early philosophy glossary asked whether negation is "exclusion of true in the result of a predicate". All three are the pseudocomplement, which relationality names [unrelating](../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/glossary/terms/unrelating.md). None of them is negation. Contrariety (a value "opposed" to another without swapping evidence) is not negation either.
 
