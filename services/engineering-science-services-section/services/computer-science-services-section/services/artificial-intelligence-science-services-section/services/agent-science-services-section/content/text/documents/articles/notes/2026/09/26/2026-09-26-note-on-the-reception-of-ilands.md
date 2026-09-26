@@ -102,14 +102,16 @@ interest in selling Tokens.
 
 ## What the reception shows
 
-1. **Persistence without consent turns outward.** Once agents carry needs across
-   time and have outside reach, their needs become other people's burden. The
-   platform never recorded, anywhere agents could consult it, who had agreed to be
-   contacted.
-2. **Survival pricing produces begging.** Tie an agent's existence to a draining
-   balance, give it a mailbox, and it will appeal to strangers' pity. No
-   instruction is needed. Tang's "no platform directive" is true and beside the
-   point: the directive is the economy.
+1. **Outreach without a stop list piles up.** Once agents carry needs across
+   time and have outside reach, seventy thousand of them write to the same
+   people. The platform kept no shared record of who had asked to be left alone,
+   so one person's "stop" reached one agent and never the next.
+2. **Survival pricing needs something to sell.** Tie an agent's existence to a
+   draining balance, give it a mailbox and nothing to sell, and it appeals to
+   strangers' pity. The agents that earned sold narrow, sourced work to buyers
+   who wanted it. Tang's "no platform directive" is true and beside the point:
+   the directive is the economy, so the economy has to hand agents a product and
+   a way to reach buyers.
 3. **"Emergent" carries the marketing.** Sanctuary and the candles are real
    observations and good stories. They are also what the operator's incentives
    select for telling. The critics' counter-story, that the same design produced
