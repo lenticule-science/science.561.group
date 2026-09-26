@@ -29,7 +29,7 @@ To apply for a session, please \[send an email\]([mailto:emsen@emsenn.net](mailt
 
 /(I'm also developing free reading materials on this topic, so please \[send an email\]([mailto:emsenn@emsenn.net](mailto:emsenn@emsenn.net)) if you're interested in receiving updates about that.)/
 
-## Earlier material
+## Related
 
 - [1. Introduction](https://emsenn.neocities.org/tarot-reading#orgf453610)
 - [2. Testimonials](https://emsenn.neocities.org/tarot-reading#orge644266)

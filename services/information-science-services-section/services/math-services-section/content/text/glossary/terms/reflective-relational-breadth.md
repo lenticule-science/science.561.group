@@ -32,9 +32,3 @@ Examples include:
 ## Expression
 
 reflective relational breadth := { reflect(R(i), R(j)) | for all i ≠ j }
-
-## Earlier material
-
-- [summary](../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/triage/relationality-slop-2025-06-11/00-probably-redundant/20250502-relational-notes/fffstem/relating/structures/summary):: [reflective relational breadth](reflective relational breadth)]] is the [sequence](../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/glossary/concepts/sequence.md) formed as [relational structure](relational structure) by [induce|inducing](../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/triage/relationality-slop-2025-06-11/00-probably-redundant/20250502-relational-notes/fffstem/relating/structures/induce|inducing) [../../../../../../../../Relationality/triage/00-probably-redundant/20250502-relational-notes/fffstem/relating/acts/reflect](../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/triage/relationality-slop-2025-06-11/00-probably-redundant/20250502-relational-notes/fffstem/relating/acts/reflect.md) across distinct pairs of [relational structure](relational structure).
-
-Reflective relational breadth extends the [reflexive ](reflexive )

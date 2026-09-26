@@ -3,6 +3,9 @@ title: Consumer Cost of the Bullshit Web
 aliases:
   - consumer-cost-of-the-bullshit-web
 specialization: research
+author: ["emsenn"]
+tags: ["web-development", "technology", "economics"]
+draft: false
 ---
 
 # Introduction
@@ -45,12 +48,3 @@ I've downloaded 84 pages on my phone today.
 ## Contribute {#supplements-contribute}
 
 ## License {#supplements-license}
-
-## Earlier material
-
-+++
-title = "Consumer Cost of the Bullshit Web"
-author = ["emsenn"]
-tags = ["web-development", "technology", "economics"]
-draft = false
-+++
