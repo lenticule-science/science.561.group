@@ -73,7 +73,3 @@ The beneficiary is the one to whom good is done.
 The word entered English law through the ecclesiastical benefice — a church office held for the benefit of a parish.
 The parish is the beneficiary; the priest is the officeholder.
 The structure exists to serve the parish, not the priest.
-
-## Earlier material
-
-A beneficiary is the party whose interests an institutional structure is constituted to serve. The [trustee](../../../../services/sociology-science-services-section/content/text/triage/trustee.md) manages property for the beneficiary's benefit. The [steward](steward.md) manages a household for the owner's benefit. The [office](../../../../services/sociology-science-services-section/terms/office.md) exists to serve a function that benefits a determinate set of people. The [ship](ship.md) sails for the benefit of whoever the [charter](charter.md) names.

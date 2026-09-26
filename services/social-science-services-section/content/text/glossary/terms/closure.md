@@ -18,7 +18,3 @@ This is the term *closure*. The corresponding parametric pattern is the concept 
 Closure fails in two directions. It can be impossible — the reader has no way to perform it because the artifact has not provided enough constraint, and the gap is not licensed by shared training the audience has. This is [unaccountable-closure](unaccountable-closure.md): the artifact extracts work the reader cannot do correctly. It can also be unnecessary — the artifact has framed adjacent units so identical that no completion is required, and the page becomes a wall of restatement that exhausts the [closure-budget](closure-budget.md) without earning it.
 
 The discipline lives between these failures: the artifact must demand closure that is performable, license the closures it asks for, and not extract closure-work it has not earned.
-
-## Earlier material
-
-Closure fails in two directions. It can be impossible — the reader has no way to perform it because the artifact has not provided enough constraint, and the gap is not licensed by shared training the audience has. This is [unaccountable-closure](unaccountable-closure.md): the artifact extracts work the reader cannot do correctly. It can also be unnecessary — the artifact has framed adjacent units so identical that no completion is required, and the page becomes a wall of restatement that exhausts the [closure-budget](closure-budget.md) without earning it.

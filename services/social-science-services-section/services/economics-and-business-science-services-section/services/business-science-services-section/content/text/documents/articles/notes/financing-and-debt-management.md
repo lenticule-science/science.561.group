@@ -197,9 +197,3 @@ Total debt service (all loan payments combined) should not exceed 25–30% of gr
 - Calculate your total startup funding need from your [use of funds](../../../../../../finance-science-services-section/content/text/glossary/terms/use-of-funds.md) and [financial projections](../../../../../../finance-science-services-section/content/text/glossary/terms/financial-projections.md). What portion can you fund from equity (personal savings, investor)? What portion requires debt?
 - For the debt portion, compare three options: a conventional term loan, an SBA 7(a) loan, and equipment financing for the equipment portion. Calculate the total cost of borrowing for each.
 - Calculate the DSCR for your projected business at month 6 and month 12. Is it above 1.25? If not, your projections either need more equity or less debt.
-
-## Earlier material
-
-**Monthly payment**: Can the business afford this payment from operating cash flow? Check against your [cash flow forecast](managing-cash-flow.md).
-
-Check the DSCR using your [financial projections](../../../../../../../../sociology-science-services-section/services/work-science-services-section/content/text/theories/finance/terms/financial-projections.md) — not just at steady state, but during the ramp-up period. If DSCR drops below 1.0 in months 2–4 (common for new businesses), you need enough [working capital](../../../../../../../../sociology-science-services-section/services/work-science-services-section/content/text/theories/finance/terms/working-capital.md) to cover the gap.

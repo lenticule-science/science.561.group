@@ -20,9 +20,3 @@ The book's arguments are contested, but its framing of professionalism and insti
 - [Service branches](../../../glossary/terms/service-branches.md)
 - [Force development](../../../glossary/terms/force-development.md)
 - [Joint operations](../../../glossary/terms/joint-operations.md)
-
-## Earlier material
-
-- [Service branches](../../../glossary/terms/service-branches.md)
-- [Force development](../../../glossary/terms/force-development.md)
-- [Joint operations](../../../glossary/terms/joint-operations.md)

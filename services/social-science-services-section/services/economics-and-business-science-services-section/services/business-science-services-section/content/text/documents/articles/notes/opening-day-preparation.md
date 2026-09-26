@@ -215,9 +215,3 @@ Opening day is not the finish line — it's the start of the hardest period. The
 - Create a 90-day countdown calendar for your specific business. Assign a responsible person and due date to every task. Which tasks are on the critical path (delay here delays opening)?
 - Design your soft opening: how many days, what capacity percentage, what menu, who's invited? What are the three most important systems you need to test?
 - Write your opening day briefing to the team. What tone do you want to set? What's the one thing you want everyone to remember when things get difficult?
-
-## Earlier material
-
-Label everything with receipt dates. Organize storage by category with [FIFO](../../../../../../../../sociology-science-services-section/services/work-science-services-section/content/text/theories/accounting/terms/fifo.md) positioning from day one.
-
-Label everything with receipt dates. Organize storage by category with [FIFO](../../../../../../../../sociology-science-services-section/services/work-science-services-section/content/text/terms/fifo.md) positioning from day one.

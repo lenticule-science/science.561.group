@@ -25,9 +25,3 @@ The western tradition's recurring tension is between control and adaptability. E
 - [Mission command](../../../glossary/terms/mission-command.md)
 - [Staff work](../../../glossary/terms/staff-work.md)
 - [Orders](../../../glossary/terms/orders.md)
-
-## Earlier material
-
-- [Mission command](../../../glossary/terms/mission-command.md)
-- [Staff work](../../../glossary/terms/staff-work.md)
-- [Orders](../../../../../../../../../../sociology-science-services-section/content/text/terms/orders.md)

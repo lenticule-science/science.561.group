@@ -179,19 +179,3 @@ It is too open-ended and does not target a specific concept. A reader could writ
 ## What comes next
 
 The principles here apply to any lesson in this vault. The next step is applying them: reviewing existing lessons against these criteria and rewriting where needed. The review-lesson skill provides a structured checklist for this.
-
-## Earlier material
-
-[Decolonial Pedagogy](decolonial-pedagogy.md) — especially the sections on the [banking model](../../../../../../../content/text/glossary/terms/banking-model.md) and problem-posing education.
-
-Suppose you are writing a lesson on [closure operators](../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/social-sciences/education/humanities/theories/math/theories/order/texts/closure-operators.md). Here is how backward design reshapes the lesson.
-
-[Decolonial Pedagogy](decolonial-pedagogy.md) — especially the sections on the [banking model](../../../../../../../content/text/glossary/terms/banking-model.md) and problem-posing education.
-
-Suppose you are writing a lesson on [closure operators](../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/social-sciences/education/mathematics/objects/posets/curricula/closure-operators.md). Here is how backward design reshapes the lesson.
-
-[Decolonial Pedagogy](decolonial-pedagogy.md) — especially the sections on the [banking model](../../../../../../../content/text/glossary/terms/banking-model.md) and problem-posing education.
-
-Suppose you are writing a lesson on [closure operators](../../../../../../../../mathematics/objects/posets/curricula/closure-operators.md). Here is how backward design reshapes the lesson.
-
-Suppose you are writing a lesson on [closure operators](../../../../../../../../../humanities/theories/math/theories/order/texts/closure-operators.md). Here is how backward design reshapes the lesson.

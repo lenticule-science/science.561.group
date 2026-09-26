@@ -24,9 +24,3 @@ Learning goal: describe [Povinelli](../../../../../../../../../references/people
 Her work is grounded in decades of collaborative engagement with Indigenous Australians, particularly the Karrabing Film Collective, which means her theoretical framework is not abstracted from politics but emerges from the concrete conditions of [settler-colonial](../../../../../../sociology/topics/settler-colonialism/index.md) governance, land management, and Indigenous persistence.
 
 Check for understanding: What is the distinction [Povinelli](../../../../../../../../../references/people/elizabeth-povinelli.md) identifies as more fundamental than biopolitics?
-
-## Earlier material
-
-Learning goal: describe [Povinelli](../../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/social-sciences/general/people/elizabeth-povinelli.md)'s central question and how her framework extends Foucauldian analysis.
-
-Check for understanding: What is the distinction [Povinelli](../../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/social-sciences/general/people/elizabeth-povinelli.md) identifies as more fundamental than biopolitics?

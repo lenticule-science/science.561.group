@@ -87,7 +87,3 @@ Pick a historical operation, crisis, or long-duration security campaign and prod
 5. 3 decision points with the information each needs.
 
 Then ask: which parts of this packet become planning inputs, and which parts must remain living design artifacts during execution?
-
-## Earlier material
-
-A design effort is successful when it produces portable outputs for planning paradigms like [MDMP](../../../glossary/terms/mdmp.md) and [JOPP](../../../glossary/terms/jopp.md):

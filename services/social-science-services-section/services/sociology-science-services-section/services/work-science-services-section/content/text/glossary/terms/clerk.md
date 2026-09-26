@@ -123,8 +123,3 @@ In framework terms: before $A$ is applied, the institutional decision $d$ has re
 - Whether the three-seal chain (Signet → Privy Seal → Great Seal) has a formal correlate as sequential authentication stages — each advancing the document's recognition predicate further toward affirming settlement before the final stage completes joint settlement.
 - Whether the enrolled-bill doctrine (the clerk's authentication is conclusive and courts cannot look behind it) corresponds to a separation of levels in the tower — the authenticated record inhabits a higher fiber layer that is inaccessible to inquiry from below.
 - The formal relationship between the clerk's non-delegable core $X$ and the duty-officer's non-delegable duties $\Lambda$ — whether both are instances of duties whose discharge condition requires the specific office-holder's personal act.
-
-## Earlier material
-
-```yaml
----

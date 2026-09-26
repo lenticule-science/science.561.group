@@ -158,7 +158,3 @@ SOPs are living documents. They degrade if they aren't maintained:
 - Choose one operational area in a business you know (opening, closing, customer service, food handling) and write a complete SOP following the template above.
 - After writing it, hand it to someone unfamiliar with the operation and ask them to tell you what they would do. Where they get confused, the SOP is unclear.
 - Compare your SOP to the [risk mitigation](../../../../../../../../sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/risk-mitigation.md) concerns you've identified. Does every significant operational risk have a corresponding procedure that addresses it?
-
-## Earlier material
-
-[POS](../../../glossary/terms/point-of-sale.md) procedures cover the daily operation of the transaction system:

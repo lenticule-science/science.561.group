@@ -84,14 +84,3 @@ Not directly, but through the institutional landscape. When formal organizations
 ## What comes next
 
 The intermediate track begins with [The adversarial structure](./adversarial-structure.md), which examines how the American courtroom's contest model works in detail — and why the contest structure matters for understanding everything that follows.
-
-## Earlier material
-
-1. **Rules** aren't just descriptions — they are forces that create categories, shape behavior, and determine what is visible ([What are rules](what-are-rules.md))
-2. **Courts** translate disputes into legal categories, produce institutional facts, and propagate those facts through the system ([What courts do](what-courts-do.md))
-3. **Prosecutors** decide what enters the system, creating patterns that determine whose lives are subject to legal formatting ([Who decides](who-decides.md))
-4. **Compliance** carries legal expectations into institutional behavior, reshaping the environment even for people who never enter court (this lesson)
-
-The intermediate track that follows examines each of these dynamics in more detail, with specific attention to the mechanisms — [adversarial procedure](../../../../../../../../../content/text/glossary/terms/adversarial-procedure.md), [character evidence](../../../../../../../../sociology-science-services-section/content/text/glossary/terms/character-evidence.md), [precedent](../../../../../../../../../content/text/glossary/terms/legal-precedent.md), [legal personhood](../../../../../../../../sociology-science-services-section/content/text/terms/legal-personhood.md) — that make the American legal system work the way it does.
-
-The intermediate track begins with [The adversarial structure](adversarial-structure.md), which examines how the American courtroom's contest model works in detail — and why the contest structure matters for understanding everything that follows.

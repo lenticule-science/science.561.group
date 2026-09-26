@@ -35,9 +35,3 @@ not as a discretionary extra.
 - [Rehearsal](../../../glossary/terms/rehearsal.md)
 - [After-action review](../../../glossary/terms/after-action-review.md)
 - [Assessment](../../../glossary/terms/assessment.md)
-
-## Earlier material
-
-- [Rehearsal](../../../../../../../../../../sociology-science-services-section/content/terms/rehearsal.md)
-- [After-action review](../../../glossary/terms/after-action-review.md)
-- [Assessment](../../../glossary/terms/assessment.md)

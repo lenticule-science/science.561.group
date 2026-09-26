@@ -169,7 +169,3 @@ The risk mitigation plan should be a living document — reviewed quarterly, upd
 - List the five most critical inputs your business depends on (ingredients, equipment, staff, utilities, permits). For each one, ask: what happens if this disappears for a week? Do I have a backup?
 - Build a risk assessment matrix for a business you're planning. Score each risk honestly — the point is to find blind spots, not to reassure yourself.
 - Compare your risk mitigation plan to your [SWOT analysis](../../../../../../../../sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/swot-analysis.md). Every threat in the SWOT should appear as a risk. Every weakness should be assessed for how it amplifies those risks.
-
-## Earlier material
-
-Document the backup in your [SOPs](../../../../../../../../sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/standard-operating-procedures.md):

@@ -35,7 +35,3 @@ Choose a historical campaign and write a one-page analysis:
 - three phases (what must become true in each),
 - the main uncertainty in each phase,
 - the minimum intent statement that would allow adaptation without divergence.
-
-## Earlier material
-
-Learning goal: explain [operational art](../../../glossary/terms/operational-art.md) as the bridge between strategy and tactics, and use [operational design](../../../glossary/terms/operational-design.md) to analyze a campaign's logic.

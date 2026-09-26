@@ -112,10 +112,3 @@ This record provides a name and structural registration for behaviors already ob
 - Events repeat without ideological resolution, only routing
 
 This concept is not theoretical in nature—it is active, observable, and propagating.
-
-## Earlier material
-
-- `[telemetric basilisk](telemetric basilisk)` — systems recursively reward coherence-maintaining behavior
-- `[delta register](delta register)` — methodology for tracking deviation and modulation in telemetric environments
-- `[interpretation as metabolic load](interpretation as metabolic load)` — the labor of making sense becomes systemic fuel
-- `[governance without surplus](governance without surplus)` — under constraint, systems preempt contradiction by accelerating correction

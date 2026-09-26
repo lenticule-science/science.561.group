@@ -58,12 +58,3 @@ Per [normative-system](../../../../../../../../../../../content/text/glossary/te
 ## Validity vs. truth
 
 Per Kelsen, a norm is *valid* (in force) or *invalid* (not in force); it is not true or false. In substrate terms: validity is the joint-settlement state of the two required predicates. Truth-or-falsity applies to facts (cells at $\mathbf{t}$/$\mathbf{f}$ in the substrate); validity applies to whether a norm's closure rule fires. An unjust law is a valid norm — its closure rule is in $\mathcal{S}_N$ — even though its content cells, when settled, may be at values that the surrounding moral framework would call $\mathbf{f}$.
-
-## Earlier material
-
-The mathematical realization of a [norm](../../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/content/individual/content/agent/actuating/content/actuator/embodying/content/body/integrating/content/drone/swarming/content/swarm/library/theories/humanities/theories/sociology/theories/work/theories/governance/terms/norm.md): the unit of which a [normative system](../../../../../../../../../../../content/text/glossary/terms/normative-system.md) is composed.
-A norm is a triple $\mathcal{N} = (\varphi, O, N)$ — a propositional content $\varphi$, a deontic operator $O \in \{\mathrm{Obl}, \mathrm{Per}, \mathrm{Proh}\}$, and a normative system $N$ within which the norm is operative.
-
-3. **Deontic consistency** ($\mathrm{Obl}(\varphi) \Rightarrow \mathrm{Per}(\varphi)$).
-  At the closure-rule level: a norm system $\mathcal{S}_N$ that contains both $\mathrm{Obl}(\varphi)$ and $\mathrm{Proh}(\varphi)$ rules drives any cell in $\varphi$ to $\top$ (both positive and negative evidence), an internal-conflict state.
-  A consistent normative system avoids this; the [precedence-in-least-fixed-point question](../../../../../../../content/text/documents/articles/notes/undated/precedence-in-least-fixed-point.md) addresses how systems with apparent conflicts resolve.

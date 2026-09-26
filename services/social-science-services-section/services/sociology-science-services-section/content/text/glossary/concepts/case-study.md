@@ -19,7 +19,3 @@ The method's commitments. The case must be bounded — what is and is not part o
 Critiques. The method is sometimes dismissed as anecdotal, but the dismissal usually rests on the assumption that statistical generalization is the only legitimate form of inference; case studies aim at structural inference, which is a different question. The method genuinely struggles with claims about *frequencies* in a population — if the question is how common something is, a case study cannot answer it.
 
 The case study sits at the intersection of [ethnography](./ethnography.md) (when conducted through participant observation), [archival method](./archival-method.md) (when historical), [comparative-historical analysis](./comparative-historical-analysis.md) (when the unit of comparison), and [discourse analysis](./discourse-analysis.md) (when the textual record is central). It is less a discrete method than a mode of organizing the others around a bounded object of study.
-
-## Earlier material
-
-The case study sits at the intersection of [ethnography](ethnography.md) (when conducted through participant observation), [archival method](archival-method.md) (when historical), [comparative-historical analysis](comparative-historical-analysis.md) (when the unit of comparison), and [discourse analysis](discourse-analysis.md) (when the textual record is central). It is less a discrete method than a mode of organizing the others around a bounded object of study.

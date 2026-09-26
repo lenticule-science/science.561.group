@@ -25,10 +25,3 @@ COGS can be calculated two ways:
 - **From sales**: Sum of (recipe cost × units sold) for every item — this is theoretical COGS
 
 The difference between these two numbers is the food cost variance — waste, theft, portioning errors, and recording mistakes. See [Food Costing and Waste Reduction](../../documents/articles/notes/food-costing-and-waste-reduction.md).
-
-## Earlier material
-
-COGS does not include indirect costs like rent, utilities, marketing, or administrative salaries — those are [operating expenses](../../../../../../../sociology-science-services-section/content/text/triage/theories/accounting/terms/operating-expenses.md). The distinction matters because:
-
-- **From purchases**: Beginning [inventory](inventory.md) + Purchases − Ending inventory = COGS
-- **From sales**: Sum of (recipe cost × units sold) for every item — this is theoretical COGS

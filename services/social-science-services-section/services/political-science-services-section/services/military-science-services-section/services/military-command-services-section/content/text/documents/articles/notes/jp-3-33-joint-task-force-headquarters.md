@@ -35,9 +35,3 @@ management rather than only battlefield leadership.
 - [Liaison officer](../../../glossary/terms/liaison-officer.md)
 - [Command and control](../../../glossary/terms/command-and-control.md)
 - [Joint operations](../../../glossary/terms/joint-operations.md)
-
-## Earlier material
-
-- [Liaison officer](../../../glossary/terms/liaison-officer.md)
-- [Command and control](../../../glossary/terms/command-and-control.md)
-- [Joint operations](../../../glossary/terms/joint-operations.md)

@@ -24,9 +24,3 @@ Helmuth von Moltke the Elder's writings and directives shaped the Prussian (and 
 - [Mission command](../../../glossary/terms/mission-command.md)
 - [Staff work](../../../glossary/terms/staff-work.md)
 - [Commander's intent](../../../glossary/terms/commanders-intent.md)
-
-## Earlier material
-
-- [Mission command](../../../glossary/terms/mission-command.md)
-- [Staff work](../../../glossary/terms/staff-work.md)
-- [Commander's intent](../../../glossary/terms/commanders-intent.md)

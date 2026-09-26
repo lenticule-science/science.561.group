@@ -21,7 +21,3 @@ Standing orders from the [captain](./captain.md) define what the duty officer ca
 The duty officer is the captain's authority operating in shifts. The captain cannot be awake 24 hours a day, so command is exercised through a rotation of officers who each take full responsibility for their slice of time. The captain remains ultimately accountable, but during the watch, the duty officer IS the exercise of command.
 
 The key distinction: a duty officer has assumed the watch. An [on-call officer](./on-call-officer.md) has not — they are available but not actively in charge. A [staff officer](./staff-officer.md) advises but does not command. The duty officer commands.
-
-## Earlier material
-
-The key distinction: a duty officer has assumed the watch. An [on-call officer](on-call-officer.md) has not — they are available but not actively in charge. A [staff officer](staff-officer.md) advises but does not command. The duty officer commands.

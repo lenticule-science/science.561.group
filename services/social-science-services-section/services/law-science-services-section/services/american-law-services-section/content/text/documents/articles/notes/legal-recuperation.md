@@ -95,9 +95,3 @@ Market commercialization creates the infrastructure for institutional adoption (
 ## What comes next
 
 The final lesson, [Law as governmentality](./law-as-governmentality.md), steps back from the specific mechanisms to examine how the American legal system operates as a broader technology of social governance — how it shapes the field in which communities, institutions, and cultural practices exist.
-
-## Earlier material
-
-The prairieland trial reveals a second pathway that operates through the state rather than the market. Legal recuperation doesn't commodify the subcultural form; it [credentials](../../../../../../../../sociology-science-services-section/content/text/glossary/terms/evidentiary-credentialing.md) it. The form isn't absorbed by making it profitable but by making it [legible](../../../../../../../../sociology-science-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/library/social-sciences/sociology/archive/library/legalism/theories/american-law/critical-theory/theories/abolition/theories/state-repression/terms/legibility.md) — by translating it into an indicator of institutional character that the legal system can process.
-
-The prairieland trial reveals a second pathway that operates through the state rather than the market. Legal recuperation doesn't commodify the subcultural form; it [credentials](../../../../../../../../sociology-science-services-section/content/text/glossary/terms/evidentiary-credentialing.md) it. The form isn't absorbed by making it profitable but by making it [legible](../../../../../../../../critical-theory/theories/abolition/theories/state-repression/terms/legibility.md) — by translating it into an indicator of institutional character that the legal system can process.

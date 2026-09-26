@@ -22,7 +22,3 @@ Inventory is cash in physical form. Money spent on inventory is unavailable for 
 Key inventory concepts: **par levels** (the target quantity to keep on hand), **FIFO** (first in, first out — use the oldest stock first), **inventory turnover** (how many times inventory is sold and replaced per period — higher is generally better), and **shrinkage** (inventory loss from waste, theft, spoilage, or recording errors).
 
 See [Supply Chain and Risk Management](../../../../content/text/documents/articles/notes/supply-chain-and-risk-management.md) and [Food Costing and Waste Reduction](../../../../content/text/documents/articles/notes/food-costing-and-waste-reduction.md).
-
-## Earlier material
-
-See [Supply Chain and Risk Management](../../documents/articles/notes/supply-chain-and-risk-management.md) and [Food Costing and Waste Reduction](../../documents/articles/notes/food-costing-and-waste-reduction.md).

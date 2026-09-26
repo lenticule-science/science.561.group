@@ -24,9 +24,3 @@ The point is not cynicism. Institutions are how complex capabilities persist. Th
 - [Service branches](../../../glossary/terms/service-branches.md)
 - [Force development](../../../glossary/terms/force-development.md)
 - [Joint operations](../../../glossary/terms/joint-operations.md)
-
-## Earlier material
-
-- [Service branches](../../../glossary/terms/service-branches.md)
-- [Force development](../../../glossary/terms/force-development.md)
-- [Joint operations](../../../glossary/terms/joint-operations.md)

@@ -14,7 +14,3 @@ A ***mutual follower on social media*** is a [social media
 follower](social-media-follower.org.md) that is [followed on
 social media](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/following-on-social-media.org.md) by the [social
 media user](social-media-user.md) they follow.
-
-## Earlier material
-
-A ***mutual follower on social media*** is a [social media follower](social-media-follower.md) that is [followed on social media](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/following-on-social-media.md) by the [social media user](social-media-user.md) they follow.

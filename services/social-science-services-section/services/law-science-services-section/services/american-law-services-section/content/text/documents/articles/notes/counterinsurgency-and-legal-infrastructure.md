@@ -104,30 +104,3 @@ Productive because it correctly identifies the structural dynamics — separatio
 ## What comes next
 
 The [Open problems](./open-problems.md) lesson examines the research questions the infrastructure thesis leaves unresolved — including questions about community response, adaptation, and the limits of structural analysis.
-
-## Earlier material
-
-The more productive framing: the American legal system operates as **infrastructure** that produces counterinsurgency-like effects without counterinsurgency-like intent. The effects are structural, not strategic. They are produced by the routine operation of [adversarial procedure](../../../../../../../../../content/text/glossary/terms/adversarial-procedure.md), [character evidence](../../../../../../../../sociology-science-services-section/content/text/glossary/terms/character-evidence.md), [precedent](../../../../../../../../../content/text/glossary/terms/legal-precedent.md), and [prosecutorial discretion](../../../../../../../../sociology-science-services-section/content/text/glossary/terms/prosecutorial-discretion.md) — not by a program of deliberate disruption.
-
-- The [adversarial structure](adversarial-structure.md) translates social realities into legal material
-- [Evidence rules](evidence-as-translation.md) format cultural practices into institutional credentials
-- [Precedent](precedent-and-propagation.md) propagates these credentials across the institutional landscape
-- [Legal personhood](legal-and-social-persons.md) ensures that communities whose practices are being formatted can't contest the formatting
-- The resulting [governmentality](law-as-governmentality.md) reshapes the conditions of subcultural practice without legislation, regulation, or direct suppression
-- The structural effects parallel [counterinsurgency](../../../../../../../../sociology-science-services-section/content/text/glossary/terms/counterinsurgency.md) without replicating its intentionality
-
-The more productive framing: the American legal system operates as **infrastructure** that produces counterinsurgency-like effects without counterinsurgency-like intent. The effects are structural, not strategic. They are produced by the routine operation of [adversarial procedure](../../../../../../../../../content/text/glossary/terms/adversarial-procedure.md), [character evidence](../../../../../../../../sociology-science-services-section/content/text/glossary/terms/character-evidence.md), [precedent](../../../../../../../../../content/text/glossary/terms/legal-precedent.md), and [prosecutorial discretion](../../../../../../../../sociology-science-services-section/content/text/glossary/terms/prosecutorial-discretion.md) — not by a program of deliberate disruption.
-
-- The [adversarial structure](adversarial-structure.md) translates social realities into legal material
-- [Evidence rules](evidence-as-translation.md) format cultural practices into institutional credentials
-- [Precedent](precedent-and-propagation.md) propagates these credentials across the institutional landscape
-- [Legal personhood](legal-and-social-persons.md) ensures that communities whose practices are being formatted can't contest the formatting
-- The resulting [governmentality](law-as-governmentality.md) reshapes the conditions of subcultural practice without legislation, regulation, or direct suppression
-- The structural effects parallel [counterinsurgency](../../../../../../../../sociology-science-services-section/content/text/glossary/terms/counterinsurgency.md) without replicating its intentionality
-
-- The [adversarial structure](adversarial-structure.md) translates social realities into legal material
-- [Evidence rules](evidence-as-translation.md) format cultural practices into institutional credentials
-- [Precedent](precedent-and-propagation.md) propagates these credentials across the institutional landscape
-- [Legal personhood](legal-and-social-persons.md) ensures that communities whose practices are being formatted can't contest the formatting
-- The resulting [governmentality](law-as-governmentality.md) reshapes the conditions of subcultural practice without legislation, regulation, or direct suppression
-- The structural effects parallel [counterinsurgency](../../../../../../../../sociology-science-services-section/content/text/glossary/terms/counterinsurgency.md) without replicating its intentionality

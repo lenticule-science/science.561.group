@@ -47,8 +47,3 @@ The work vocabulary's distinction lives in the cell-level structure: assignment 
 ## Notice as a witness
 
 The notice condition makes assignment a *two-stage* operation: stage 1 is the assignor-side increment moving the claim; stage 2 is the obligor-notice increment. The full assignment effect requires both stages settled. This is parallel to the [installation](../../../../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/glossary/terms/installation.md) two-stage structure (recognition then induction), but with a different second axis: notice rather than forward-stability.
-
-## Earlier material
-
-The Hohfeldian operation that transfers a *claim* from one holder to another while leaving the correlative duty unchanged.
-Per the library's [hohfeldian-assignment term](../../../../../../../../../../../content/text/glossary/terms/hohfeldian-assignment.md), an assignment is a triple $\mathcal{A} = (Q, C, B)$ with assignor $Q$, assigned claim $C$, assignee $B$, and an assignment act $\alpha$ that moves $C$'s section from $Q$'s authority domain to $B$'s.

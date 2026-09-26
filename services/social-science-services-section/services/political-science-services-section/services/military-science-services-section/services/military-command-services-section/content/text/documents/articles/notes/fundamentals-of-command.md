@@ -38,7 +38,3 @@ Write a one-paragraph description of a situation where:
 - the environment changes faster than information can travel.
 
 Then list the minimum information that must be shared for the group to act coherently.
-
-## Earlier material
-
-Now add [command and control](../../../glossary/terms/command-and-control.md): decisions only matter if they become coordinated action. Control is the translation layer: communications, staffs, orders, rhythms, and feedback.

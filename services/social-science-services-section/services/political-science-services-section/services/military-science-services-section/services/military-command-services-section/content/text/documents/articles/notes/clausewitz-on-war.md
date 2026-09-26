@@ -24,9 +24,3 @@ description: "Clausewitz's foundational theory of war as political instrument, d
 - [Command](../../../glossary/terms/command.md)
 - [Command and control](../../../glossary/terms/command-and-control.md)
 - [Orders](../../../glossary/terms/orders.md)
-
-## Earlier material
-
-- [Command](../../../../../../../../../../sociology-science-services-section/content/terms/command.md)
-- [Command and control](../../../glossary/terms/command-and-control.md)
-- [Orders](../../../../../../../../../../sociology-science-services-section/content/terms/orders.md)

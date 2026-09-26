@@ -81,7 +81,3 @@ This is the substrate-algebraic content of "the means change but the function do
 The operations loop's substrate-algebraic specification is the *application-layer* spec for an operations-management implementation. The corresponding engineering side — [predicated-computing](../../../../../../../../engineering/theories/tech/theories/computing/theories/predicated-computing/) — provides the substrate runtime: the predication-graph store, the event log, the closure-rule firing machinery, the witness format. The operations loop here is *what should run*; predicated-computing is *what runs it*.
 
 A working implementation: closure rules for each phase encoded in the engineering substrate; agent invocations producing increments; the substrate's settling propagating the loop forward cycle by cycle.
-
-## Earlier material
-
-By the [regime-of-recurrent-practice theorem](../concepts/regime-of-recurrent-practice.md) applied to operations loops with *Markov* aggregation: Scott-continuous regime. $\kappa = \omega$. Cohomology trivial.

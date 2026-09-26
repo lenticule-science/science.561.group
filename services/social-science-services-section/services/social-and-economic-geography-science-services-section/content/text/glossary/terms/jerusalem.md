@@ -14,7 +14,3 @@ date-created: 2025-09-13
 
 - [Hebraic](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/hebraic.md)
 - [reproductive](../../../../../../../philosophy-services-section/content/text/glossary/terms/reproductive.md)
-
-## Earlier material
-
-- [city](city.md)

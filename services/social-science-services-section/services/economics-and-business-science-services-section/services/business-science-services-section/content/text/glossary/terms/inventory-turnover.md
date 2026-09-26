@@ -27,11 +27,3 @@ If annual COGS is \$156,000 and average inventory on hand is \$3,000, turnover i
 Inventory turnover varies by item type: proteins and produce should turn multiple times per week; dry goods and paper supplies might turn monthly. Tracking turnover by category (not just overall) reveals which items are moving and which are sitting. Items with very low turnover are candidates for menu removal, par level reduction, or order frequency adjustment.
 
 See [Food Costing and Waste Reduction](../../../../content/text/documents/articles/notes/food-costing-and-waste-reduction.md) and [Weekly KPIs and Business Metrics](../../../../content/text/documents/articles/notes/weekly-kpis-and-business-metrics.md).
-
-## Earlier material
-
-See [Food Costing and Waste Reduction](../../documents/articles/notes/food-costing-and-waste-reduction.md) and [Weekly KPIs and Business Metrics](../../documents/articles/notes/weekly-kpis-and-business-metrics.md).
-
-**Inventory turnover = [Cost of goods sold](../../../../../../../sociology-science-services-section/terms/cost-of-goods-sold.md) ÷ Average inventory value**
-
-See [Food Costing and Waste Reduction](../../documents/articles/notes/food-costing-and-waste-reduction.md) and [Weekly KPIs and Business Metrics](../../documents/articles/notes/weekly-kpis-and-business-metrics.md).

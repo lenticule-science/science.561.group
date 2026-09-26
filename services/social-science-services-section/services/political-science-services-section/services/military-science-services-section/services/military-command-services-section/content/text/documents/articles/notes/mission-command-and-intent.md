@@ -37,7 +37,3 @@ Draft a commander's intent for a fictional operation:
 - End state: what must be true when the operation ends.
 
 Then ask: if the plan fails, does the intent still guide a coherent next move?
-
-## Earlier material
-
-Learning goal: explain [mission command](../../../glossary/terms/mission-command.md) as a tradeoff, and draft a usable [commander's intent](../../../glossary/terms/commanders-intent.md).

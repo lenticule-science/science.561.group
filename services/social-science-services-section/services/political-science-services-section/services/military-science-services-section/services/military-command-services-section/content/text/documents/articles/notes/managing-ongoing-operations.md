@@ -76,9 +76,3 @@ Pick a historical operation or crisis (military or otherwise). Write:
 - what information each decision point needs,
 - one way the process could become ritual (producing artifacts without decisions),
 - one change that would keep decisions honest.
-
-## Earlier material
-
-The [operations process](../../../glossary/terms/operations-process.md) is the high-level paradigm: plan, prepare, execute, assess, and then do it again [@usarmy2019adp5_0].
-
-A [battle rhythm](../../../glossary/terms/battle-rhythm.md) turns continuous reality into discrete decision moments [@usarmy2014fm6].

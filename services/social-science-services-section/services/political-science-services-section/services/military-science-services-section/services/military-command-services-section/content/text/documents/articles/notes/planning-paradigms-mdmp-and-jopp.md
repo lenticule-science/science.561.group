@@ -77,7 +77,3 @@ Pick a scenario and do a minimalist pipeline:
 - wargame each in three moves,
 - write the decision you would need to make under time pressure,
 - list the one synchronization rule that must hold for the plan to work.
-
-## Earlier material
-
-MDMP and JOPP are planning paradigms [@jointchiefs2011jp5; @usarmy2014fm6]. They work best when fed by a clear problem frame and an operational approach from [operational design](../../../glossary/terms/operational-design.md).

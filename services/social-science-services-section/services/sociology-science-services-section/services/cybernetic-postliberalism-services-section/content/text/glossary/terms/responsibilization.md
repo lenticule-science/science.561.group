@@ -31,8 +31,3 @@ Responsibilization is distinct from personal responsibility in the ordinary sens
 - [Feeling rules](../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/feeling-rules.md) — the affective prescriptions that enforce responsibilized conduct
 - [Cruel optimism](../../../../../critical-theory-science-services-section/services/affect-theory-services-section/services/berlantian-services-section/content/text/glossary/terms/cruel-optimism.md) — the attachment to conditions that responsibilization sustains
 - [Neoliberalism](../../../../../critical-theory-science-services-section/services/marxism-services-section/services/political-economy-services-section/content/text/glossary/terms/neoliberalism.md) — the political-economic formation that generalized responsibilization
-
-## Earlier material
-
-```yaml
----

@@ -97,8 +97,3 @@ date-modified: 2026-03-19
 
 - The **base case** is a [WorkUnit](./work-unit.md) — a ground term, fully specified, atomic, not further decomposable.
 - The **recursive case** is a [Workflow](./workflow.md) — a list of OperationItems, each of which may itself be atomic or composite.
-
-## Earlier material
-
-```yaml
----

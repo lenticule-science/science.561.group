@@ -160,7 +160,3 @@ You've found a 1,400 SF former restaurant space. The landlord offers:
 - Visit three commercial spaces for lease in your target area. Note the asking rent, condition, and how the space does or doesn't fit your operation. Talk to the listing agent — even if you're not ready to lease, the conversation teaches you how the market works.
 - Get a copy of a standard commercial lease (your broker or an attorney can provide one) and read it. Flag every term you don't understand.
 - Calculate your total occupancy cost under a sample lease: base rent + NNN + insurance + build-out amortized over the lease term. What percentage of your projected revenue does occupancy consume? For most restaurants, 6–10% of revenue is the target range.
-
-## Earlier material
-
-Get insurance quotes before signing the lease so you know the cost and can include it in your [financial projections](../../../../../../../../sociology-science-services-section/services/work-science-services-section/content/text/theories/finance/terms/financial-projections.md).

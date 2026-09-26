@@ -19,10 +19,3 @@ This produces [epistemic overclosure](./epistemic-overclosure.md): the system re
 Informational malfunction provides a formal account of how [ideological](../../../../../../content/text/glossary/terms/ideology.md) self-maintenance operates as an information-processing pathology rather than a failure of rationality or intelligence. The malfunction is structural: the reward architecture is wrong, not the inferential capacity.
 
 See [Describing Liberal Subjectivity as Informational Malfunction](../../documents/articles/notes/describing-liberal-subjectivity-as-informational-malfunction.md).
-
-## Earlier material
-
-This produces [epistemic overclosure](epistemic-overclosure.md): the system reaches a locally stable equilibrium that is globally misaligned.
-It feels coherent from the inside — beliefs are consistent, predictions are stable — but external surprise steadily increases.
-
-See [Describing Liberal Subjectivity as Informational Malfunction](../../documents/articles/notes/describing-liberal-subjectivity-as-informational-malfunction.md).

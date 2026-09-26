@@ -136,8 +136,3 @@ The political stakes are significant. If social order is maintained not just thr
 \## Earlier material
 
 An ******affective process****** is a \[process\](../../../../services/work-science-services-section/content/text/glossary/terms/process.org.md) that \[changes\](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/changing.md) \[affect\](../../../../../../../natural-science-services-section/services/biological-science-services-section/services/medical-science-services-section/services/psychology-services-section/content/text/glossary/terms/affect.org.md).
-
-## Earlier material
-
-```yaml
----

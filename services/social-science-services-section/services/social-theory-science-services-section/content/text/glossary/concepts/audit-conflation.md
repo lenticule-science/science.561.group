@@ -70,7 +70,3 @@ Without a substrate-internal involution carrying the charitable / skeptical dist
 ## Relation to inconsistency-sheaf and adjudication
 
 The [truth-knowledge LES](../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/sheaf/content/settling-cohomology/references/truth-knowledge-cohomology-long-exact-sequence.md) on the charitable settling tracks $\top$-cells (contradicted witnesses) as the inconsistency sheaf $\mathcal F^{(\top)}$. Under the skeptical conflation $v^{\mathrm{op},-}$, the same sheaf-construction reads the *unwitnessed* cells of the charitable settling: $\mathcal F^{(\top)}(v^{\mathrm{op},-})$ is the $\bot$-shadow of $\mathcal F^{(\top)}(v^{\mathrm{op}})$. Adjudication therefore has a dual reading: charitable adjudication resolves witnessed contradictions; skeptical adjudication resolves unwitnessed-but-required cells. Both are repair operations; they target dual sub-sheaves of the same substrate.
-
-## Earlier material
-
-By the [conflation morphism](../../../../../../../../humanities/theories/math/theories/categories/theories/predication-categories/morphisms/conflation.md):

@@ -13,7 +13,3 @@ A ***liberal university town*** is a
 university](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/liberal-university.org.md), which usually
 strongly [influences](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/influencing.md) the [town
 culture](../../../../../sociology-science-services-section/content/text/glossary/terms/town-culture.org.md).
-
-## Earlier material
-
-A ***liberal university town*** is a [town](../../../../../../../philosophy-services-section/content/text/glossary/terms/town.md) with a [liberal university](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/liberal-university.md), which usually strongly [influences](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/influencing.md) the [town culture](../../../../../sociology-science-services-section/content/text/glossary/terms/town-culture.md).

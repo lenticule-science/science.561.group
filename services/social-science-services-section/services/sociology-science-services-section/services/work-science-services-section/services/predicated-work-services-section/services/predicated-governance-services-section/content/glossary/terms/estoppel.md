@@ -80,7 +80,3 @@ Estoppel's substrate-algebraic structure differs from the other Hohfeldian opera
 - [Estoppel](./estoppel.md): operates on *the path from a jural relation to settled state in a forum* — not on the relation itself.
 
 This is the substrate-algebraic content of the equity vs. law distinction the library names: equitable estoppel is *forum-relative path-blocking*, distinct from the law-relative claim-modification that the other operations effect.
-
-## Earlier material
-
-Per the library's [hohfeldian-estoppel term](../../../../../../governance-services-section/services/hohfeldian-services-section/content/text/glossary/terms/hohfeldian-estoppel.md), an estoppel is a quadruple $\mathcal{E} = (Q, R, \rho, \delta)$ — an estopped party, a relying party, a representation, and a detriment.

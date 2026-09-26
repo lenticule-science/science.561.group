@@ -90,9 +90,3 @@ Any answer that identifies a category produced by specific institutional practic
 ## What comes next
 
 The next lesson, [Biopower and Governmentality](./biopower-governmentality.md), extends power/knowledge to the governance of whole populations — the level at which modern states manage life itself.
-
-## Earlier material
-
-[Michel Foucault](../../../../../../../../../../../../../../references/people/michel-foucault.md)'s concept of [power/knowledge](../../../../../../../../../content/text/terms/power-knowledge.md) challenges both assumptions — not by saying that knowledge is bad, but by showing that the production of knowledge is never separable from the exercise of power.
-
-[Michel Foucault](../../../../../../../../../../../../general/people/michel-foucault.md)'s concept of [power/knowledge](../../../../../../../../../content/text/terms/power-knowledge.md) challenges both assumptions — not by saying that knowledge is bad, but by showing that the production of knowledge is never separable from the exercise of power.

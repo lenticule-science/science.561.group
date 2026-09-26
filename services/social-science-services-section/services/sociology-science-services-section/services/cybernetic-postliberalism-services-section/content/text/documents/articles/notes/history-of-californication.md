@@ -220,29 +220,3 @@ In sum:
   Economic failure        Minimalism, breathwork, gratitude
   Epistemic crisis        Mood curation, genre saturation
   Ecological apocalypse   Lifestyle coherence, nervous system healing
-
-## Earlier material
-
-- \*\*1984\*\* -- Apple's \"1984\" ad: [Californication](../../../triage/exploring-californication/terms/californication.md) of resistance---techno-utopia offered as personal escape from authoritarian conformity.
-
-- \*\*1992\*\* -- LA Uprising (Rodney King): racial contradiction erupts again; [Californication](../../../triage/exploring-californication/terms/californication.md) fails, then recovers through multiculturalist affective messaging in mass media.
-
-- \*\*2012--2015\*\* -- Trauma [discourse](../../../../../../../../../content/text/glossary/terms/discourse.md) spreads on social media: affective contradiction is aestheticized.
-  "Healing" becomes an image economy.
-
-- \*\*2021\*\* -- Mass adoption of breathwork, somatics, and polyvagal [discourse](../../../../../../../../../content/text/glossary/terms/discourse.md): regulation of nervous system becomes primary political ethic.
-  Collapse managed through vagal tone.
-
-\### ****I.
-Missionary Capture and the Proto-Form of [Californication](../../../triage/exploring-californication/terms/californication.md) (1769--1849)****
-
-\> [Foucault](../../../../general/people/michel-foucault.md)'s later work on \*\*[biopower](../../../../philosophy/disciplines/critical-theory/schools/foucault/terms/biopower.md)\*\* and \*\*the care of the self\*\* shows how liberal governance becomes invested not in command, but in the self's capacity to regulate itself in relation to risk.
-
-\### ****VII.
-2000--2020: [Californication](../../../triage/exploring-californication/terms/californication.md) Becomes Infrastructure****
-
-This is where [Berlant](../../../../general/people/lauren-berlant.md)'s ~cruel~ optimism\_ operates at full strength: we are attached to the genres that ruin us, because they are the only ones offered.
-
-Post-COVID, the nervous system becomes the new frontier.
-Polyvagal theory, breathwork, resilience [discourse](../../../../../../../../../content/text/glossary/terms/discourse.md)---all teach the subject to survive the world with ~coherence~\_.
-Institutions ask for affective [labor](../../../terms/labor.md), not structural change.

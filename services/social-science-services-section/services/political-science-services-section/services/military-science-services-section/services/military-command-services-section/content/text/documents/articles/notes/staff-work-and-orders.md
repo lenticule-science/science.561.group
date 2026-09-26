@@ -44,7 +44,3 @@ Write a one-page mini-order:
 - communications (how updates flow).
 
 Then give it to someone else and ask what they think their freedom to improvise is.
-
-## Earlier material
-
-Learning goal: explain [staff work](../../../glossary/terms/staff-work.md) as translation, and outline an order that carries intent and synchronization.

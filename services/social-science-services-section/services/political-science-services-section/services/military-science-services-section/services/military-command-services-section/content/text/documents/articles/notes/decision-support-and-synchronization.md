@@ -71,7 +71,3 @@ Create a minimal DSM:
 - what action follows.
 
 Then create a minimal synchronization matrix with three phases and three units or functions.
-
-## Earlier material
-
-A disciplined way to express information requirements is through [CCIR](../../../glossary/terms/ccir.md): a small set of [PIR](../../../glossary/terms/pir.md) and [FFIR](../../../glossary/terms/ffir.md) tightly tied to decision points.

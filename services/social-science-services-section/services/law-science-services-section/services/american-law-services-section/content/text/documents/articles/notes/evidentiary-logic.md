@@ -75,9 +75,3 @@ Not through the legal system itself. The adversarial structure only processes wh
 ## What comes next
 
 The next lesson, [Legal recuperation](./legal-recuperation.md), examines how the evidentiary formatting described here operates as a specific pathway of [recuperation](../../../../../../../../sociology-science-services-section/content/text/glossary/terms/recuperation.md) — one that bypasses the market and works through the state's demand for [legibility](../../../../../../../../../../philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md).
-
-## Earlier material
-
-The next lesson, [Legal recuperation](legal-recuperation.md), examines how the evidentiary formatting described here operates as a specific pathway of [recuperation](../../../../../../../../sociology-science-services-section/content/text/glossary/terms/recuperation.md) — one that bypasses the market and works through the state's demand for [legibility](../../../../../../../../sociology-science-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/library/social-sciences/sociology/archive/library/legalism/theories/american-law/critical-theory/theories/abolition/theories/state-repression/terms/legibility.md).
-
-The next lesson, [Legal recuperation](legal-recuperation.md), examines how the evidentiary formatting described here operates as a specific pathway of [recuperation](../../../../../../../../sociology-science-services-section/content/text/glossary/terms/recuperation.md) — one that bypasses the market and works through the state's demand for [legibility](../../../../../../../../critical-theory/theories/abolition/theories/state-repression/terms/legibility.md).

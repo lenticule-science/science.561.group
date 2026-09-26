@@ -112,19 +112,3 @@ The second researcher is correct. The five-step method analyzes structural press
 ## What comes next
 
 The next lesson, [Structural comparison](./structural-comparison.md), formalizes the comparison between legal and market recuperation, examining the structural properties of each pathway and the conditions under which they interact.
-
-## Earlier material
-
-The first analytical step is to identify the specific moment at which a cultural practice enters the legal system. In the prairieland case, this moment is the presentation of [zine](../../../../../../../../../../information-science-services-section/services/communication-science-services-section/services/media-science-services-section/services/zines-services-section/content/text/glossary/terms/zine.md) production as [character evidence](../../../../../../../../sociology-science-services-section/content/text/glossary/terms/character-evidence.md) by educational and NGO executives.
-
-The formatted practice propagates through the channels identified in the [precedent](precedent-and-propagation.md) lesson:
-
-- **Legal recuperation** (introduced by the prairieland trial): The evidentiary credentialing of zines creates a second, independent pathway that bypasses the market and operates through the state's demand for [legibility](../../../../../../../../sociology-science-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/library/social-sciences/sociology/archive/library/legalism/theories/american-law/critical-theory/theories/abolition/theories/state-repression/terms/legibility.md).
-
-The first analytical step is to identify the specific moment at which a cultural practice enters the legal system. In the prairieland case, this moment is the presentation of [zine](../../../../../../../../../../information-science-services-section/services/communication-science-services-section/services/media-science-services-section/services/zines-services-section/content/text/glossary/terms/zine.md) production as [character evidence](../../../../../../../../sociology-science-services-section/content/text/glossary/terms/character-evidence.md) by educational and NGO executives.
-
-The first analytical step is to identify the specific moment at which a cultural practice enters the legal system. In the prairieland case, this moment is the presentation of [zine](../../../../../../../../../../information-science-services-section/services/communication-science-services-section/services/media-science-services-section/services/zines-services-section/content/text/glossary/terms/zine.md) production as [character evidence](../../../../../../../../sociology-science-services-section/content/text/glossary/terms/character-evidence.md) by educational and NGO executives.
-
-- **Legal recuperation** (introduced by the prairieland trial): The evidentiary credentialing of zines creates a second, independent pathway that bypasses the market and operates through the state's demand for [legibility](../../../../../../../../critical-theory/theories/abolition/theories/state-repression/terms/legibility.md).
-
-The first analytical step is to identify the specific moment at which a cultural practice enters the legal system. In the prairieland case, this moment is the presentation of [zine](../../../../../../../../../../information-science-services-section/services/communication-science-services-section/services/media-science-services-section/services/zines-services-section/content/text/glossary/terms/zine.md) production as [character evidence](../../../../../../../../sociology-science-services-section/content/text/glossary/terms/character-evidence.md) by educational and NGO executives.

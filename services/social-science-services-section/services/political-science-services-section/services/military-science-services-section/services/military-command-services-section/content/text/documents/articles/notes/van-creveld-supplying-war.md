@@ -20,9 +20,3 @@ For the command school, the value is analytic: it explains why large plans often
 - [Campaign](../../../glossary/terms/campaign.md)
 - [Theater of operations](../../../glossary/terms/theater-of-operations.md)
 - [Operational art](../../../glossary/terms/operational-art.md)
-
-## Earlier material
-
-- [Campaign](../../../../../../../../../../sociology-science-services-section/content/terms/campaign.md)
-- [Theater of operations](../../../glossary/terms/theater-of-operations.md)
-- [Operational art](../../../glossary/terms/operational-art.md)

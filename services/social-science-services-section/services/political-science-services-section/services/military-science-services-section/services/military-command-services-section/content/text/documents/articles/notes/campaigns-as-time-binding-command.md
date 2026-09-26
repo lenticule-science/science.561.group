@@ -26,9 +26,3 @@ In this school, campaigns are studied as organizational and governance problems 
 - [Operational art](../../../glossary/terms/operational-art.md)
 - [Campaign](../../../glossary/terms/campaign.md)
 - [Force generation](../../../glossary/terms/force-generation.md)
-
-## Earlier material
-
-- [Operational art](../../../glossary/terms/operational-art.md)
-- [Campaign](../../../../../../../../../../sociology-science-services-section/content/text/terms/campaign.md)
-- [Force generation](../../../glossary/terms/force-generation.md)

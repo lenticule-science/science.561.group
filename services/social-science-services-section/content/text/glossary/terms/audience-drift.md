@@ -22,7 +22,3 @@ The wrong repair — common in practice — is to leave the declared audience as
 ## Why audience honesty matters
 
 The audience the artifact declares is a commitment to readers about what they will and will not have to do. Honoring the commitment is what makes [audience](../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/glossary/concepts/audience.md) a load-bearing parameter and not a piece of cosmetic framing. An artifact that honors its audience commitment is one that, on inspection, asks for the closures the declared audience can perform — no more and not noticeably fewer. Audience drift is the systemic erosion of that commitment.
-
-## Earlier material
-
-The wrong repair — common in practice — is to leave the declared audience as it stands and add a disclaimer that some readers may find parts of the document challenging. The disclaimer does not pay down the [legibility-debt](legibility-debt.md). It only formalizes the artifact's refusal to address its declared audience.

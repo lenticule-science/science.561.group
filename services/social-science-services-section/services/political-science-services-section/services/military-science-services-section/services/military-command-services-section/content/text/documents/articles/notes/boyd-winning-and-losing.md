@@ -26,8 +26,3 @@ The best-known element is the OODA loop (observe–orient–decide–act), which
 
 - [Command and control](../../../glossary/terms/command-and-control.md)
 - [Mission command](../../../glossary/terms/mission-command.md)
-
-## Earlier material
-
-- [Command and control](../../../glossary/terms/command-and-control.md)
-- [Mission command](../../../glossary/terms/mission-command.md)
