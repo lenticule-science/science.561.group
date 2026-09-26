@@ -159,7 +159,13 @@ export async function applications(context, environment = process.env) {
     composed.push(createGeodeVictorApplicationFactory({ workspace })(context));
     archive = workspace.archive;
   }
-  composed.push(...mcpApplications({ admission, environment, archive: () => (archive ??= openArchive({ root: SCIENCE_ROOT, excludes: [...EXCLUDED_SEGMENTS] })) }));
+  const openedArchive = () => (archive ??= openArchive({ root: SCIENCE_ROOT, excludes: [...EXCLUDED_SEGMENTS] }));
+  composed.push(...mcpApplications({ admission, environment, archive: openedArchive }));
+  // The first search builds the full-text index (about half a minute over the forest): build it
+  // now, so an assistant's first question is answered within its tool timeout.
+  if (setting('LSPACE_WARM_SEARCH', environment) !== 'false') {
+    void Promise.resolve(openedArchive()).then((opened) => opened.search('garden', { mode: 'text', limit: 1 })).catch(() => undefined);
+  }
   return composed;
 }
 
