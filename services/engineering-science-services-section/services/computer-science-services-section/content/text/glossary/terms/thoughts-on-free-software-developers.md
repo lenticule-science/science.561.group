@@ -4,6 +4,8 @@ title: Thoughts on Free Software Developers
 aliases:
   - thoughts-on-free-software-developers
 specialization: research
+tags: ["free-software"]
+draft: false
 ---
 
 I'm noticing huge chunks of the free-software world is largely ignorant to the philosophical motivates behind free software, and view their participation in it more as participation in a sort of majority-run corporation, which… makes sense in hindsight, and explains a lot of the contradiction I see in people's views.
@@ -13,12 +15,3 @@ They aren't rejecting property rights, they're trying to become a part of the "w
 I've been thinking about this because in response to a few *microblog* posts I made saying so, people told me free software was not a rejection of intellectual property rights.
 
 And it's interesting to me as someone who's sided with open-, not free-, source, even after giving it some recent consideration. I think the open-source community is ignorant too, and their actions denote a similar amount of ignorance to their roots, but generally I view open-source people as less philosophically pedantic, so I'm a bit more forgiving of their contradictions.
-
-## Earlier material
-
-+++
-title = "Thoughts on Free Software Developers"
-author = ["emsenn"]
-tags = ["free-software"]
-draft = false
-+++

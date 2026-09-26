@@ -8,6 +8,9 @@ description: Also - and this is important - I don't really mean Mastodon.
 keywords:
   - "[]"
 specialization: research
+author: ["emsenn"]
+date: 2016-05-01
+draft: false
 ---
 
 ## 1 Introduction
@@ -65,13 +68,3 @@ I dont' think Mr. Rochko is the right developer to maintain a lemon curd. but I 
 But - one closing thought. I've participated, in some way or another, in a *lot* of online communities in my 28-year-long life. I think a lot of the conversations that are being had are being had with much too narrow a lens, and have very little to do with Mastodon, the Fediverse, or even the Internet.
 
 Communication is communication, and I think if conducting it successfully is truly important to you, it's a more worthwhile to develop your personal best-practices, and bend the tools you use to best-fit that.
-
-## Earlier material
-
-+++
-title = "Mastodon is a Bake Fair (and Crumbles are a Part)"
-author = ["emsenn"]
-date = 2016-05-01
-tags = ["Mastodon", "Fediverse"]
-draft = false
-+++
