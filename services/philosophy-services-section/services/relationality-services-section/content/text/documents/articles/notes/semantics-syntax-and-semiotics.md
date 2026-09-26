@@ -8,12 +8,18 @@ keywords:
 type: doc
 status: draft
 created: 2025-12-08
-description: This note clarifies how syntax, semantics, and semiotics relate to each other, and how each one shows up in the Semiotic Publisher and the Semiotic Universe.
+description: This note clarifies how syntax, semantics, and semiotics relate, using a historical publishing proposal as an example.
 ---
 
 ## Three Lenses on Meaningful Structure
 
-This note clarifies how **syntax**, **semantics**, and **semiotics** relate to each other, and how each one shows up in the **Semiotic Publisher** and the **Semiotic Universe**.
+This note clarifies how **syntax**, **semantics**, and **semiotics** relate to
+each other, using a historical publishing proposal and the **Semiotic Universe**
+as examples.
+
+> Historical and exploratory note: its publisher-specific passages are a
+> proposed interpretation of the theory, not a description of current software.
+> The implemented boundary is recorded in the engineering corpus.
 
 It is intentionally practical: the goal is to help you read and write vault content in a way that makes the most of the semiotic tooling.
 
@@ -105,9 +111,10 @@ From a semiotic perspective, a concept is not just a statement with a truth valu
 
 ---
 
-## 4. How the Publisher Integrates the Three
+## 4. How a Publisher Can Integrate the Three
 
-The Semiotic Publisher is a small engine that brings all three lenses together.
+A publisher can bring all three lenses together, but the scientific distinction
+does not prescribe a particular engine or semantic algorithm.
 
 ### 4.1 Syntax in the Publisher
 
@@ -184,6 +191,8 @@ For deeper background:
 
 - [The Semiotic Universe](The Semiotic Universe) explains the fixed‑point construction in a Heyting–modal–comonadic setting.
 - [The Stewardable Semiotic Concept Universe](The Stewardable Semiotic Concept Universe) shows how stewardship, failure semantics, and provenance fit into this picture.
-- [The Semiotic Publisher](The Semiotic Publisher) documents how the theory is approximated in code.
+
+An implementation record should distinguish its actual transformations from
+the broader mathematical theory it explores.
 
 This note is intentionally informal. It is meant to be an on‑ramp for working concretely with the publisher, not a replacement for the formal papers.

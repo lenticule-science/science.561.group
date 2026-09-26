@@ -11,6 +11,11 @@ created: 2025-12-08
 description: Semiotics is the study of signs and sense‑making.
 ---
 
+> Historical and exploratory note: references below to a “publisher,” atoms,
+> closure, scoring, or exports describe a proposed application of the theory,
+> not a claim about the current software. The implemented boundary is recorded
+> in the engineering corpus.
+
 ## Studying Signs, Not Just Symbols
 
 Semiotics is the study of **signs** and **sense‑making**.
@@ -62,11 +67,10 @@ People often confuse **semiotics**, **semantics**, and **syntax**.
   - how interpretation is constrained by context, power, and history;
   - how people and systems *use* signs to coordinate, explain, and decide.
 
-The **Semiotic Publisher** lives at the boundary:
-
-- it reads **syntactic** structures from a Markdown vault,
-- it approximates **semantic** structure via atoms and closure,
-- and it keeps the whole thing anchored in a **semiotic** perspective: concepts as stewardable, interpretable, revisable sign‑bundles.
+Publication software can live at the boundary: it reads **syntactic** Markdown
+structures and carries declared concepts as stewardable, interpretable, and
+revisable sign-bundles. The theory does not by itself entail any particular
+closure, index, export format, or publishing implementation.
 
 For a focused comparison of semantics, syntax, and semiotics, see [Semantics, Syntax, and Semiotics](Semantics, Syntax, and Semiotics).
 
@@ -95,7 +99,8 @@ Working with a semiotic universe makes it possible to:
 - **evaluate** how ready, rich, or connected a concept is;
 - **steward** concepts through revisions without losing structure.
 
-The publisher gives us a finite, computable playground for all of this.
+An application can provide a finite, computable playground for exploring these
+questions; the choice of carrier and operations remains engineering work.
 
 ---
 
@@ -105,17 +110,11 @@ In this repository, “semiotics” is implemented in a very concrete way:
 
 - A Markdown file with frontmatter becomes a **concept**.
 - Tags, folders, status, type, aliases, and facts become **atoms**.
-- A graph of implications (the `j`‑modality) and a trace (`G`) approximate the **closure structure** of the theory.
-- The result is a **semiotic universe** that we can export as:
-  - a static site,
-  - a static JSON API,
-  - an RDF graph,
-  - an OpenAPI description,
-  - and Pandoc documents.
-
-In other words, semiotics here is not only a philosophical stance; it is also a **data model and tooling layer** for working with concepts as stewardable signs.
-
-For the concrete implementation details, see [The Semiotic Publisher](The Semiotic Publisher).
+The relation between a graph modality (`j`), a trace (`G`), and a concrete
+implementation remains an engineering question. Semiotics here is a
+philosophical and scientific stance that can inform data models and tools for
+working with concepts as stewardable signs; it does not certify particular
+exports or algorithms.
 
 ---
 
@@ -137,7 +136,8 @@ If you want to write documents that fit naturally into this semiotic universe:
    - Use `subjects` and `facts` in frontmatter when there is explicit relational structure you care about;
    - Treat these as a small, concrete semiotic calculus you can query later.
 
-The key idea: every annotation you add is not just “decorative metadata”; it becomes part of a semiotic structure that the publisher can compute with.
+The key idea: an annotation need not be merely “decorative metadata”; an
+application may make it part of a semiotic structure that it can compute with.
 
 ---
 
@@ -147,7 +147,7 @@ If you are new to these ideas and want to deepen your understanding:
 
 - Read [Semantics, Syntax, and Semiotics](Semantics, Syntax, and Semiotics) for a more systematic comparison.
 - Read [The Semiotic Universe](The Semiotic Universe) for the mathematical fixed‑point construction.
-- Read [The Semiotic Publisher](The Semiotic Publisher) to see how the theory is approximated in code.
-- Experiment by adding new tags, folders, and facts, then re‑running the publisher to see how the universe changes.
+- Compare a concrete implementation against its engineering record before
+  treating a mathematical approximation as an implemented semantic operation.
 
 Semiotics becomes most interesting when it is not only **described**, but **computed with**. That is what this project is for.

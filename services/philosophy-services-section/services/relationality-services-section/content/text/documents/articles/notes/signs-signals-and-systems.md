@@ -11,6 +11,10 @@ created: 2025-12-08
 description: This note connects the abstract language of signs with the practical language of signals and systems.
 ---
 
+> Historical and exploratory note: publisher-specific passages describe a
+> proposed use of this theory, not a current implementation. The engineering
+> corpus records the implemented Markdown-to-concept publication boundary.
+
 ## How Semiotic Structure Shows Up in Practice
 
 This note connects the abstract language of **signs** with the practical language of **signals** and **systems**.
@@ -52,12 +56,11 @@ Semiotics becomes powerful when we consider **systems of signs**:
 - how certain link patterns (e.g. hubs, bridges) change the interpretation of concepts;
 - how statuses and types cluster in different parts of a vault.
 
-The Semiotic Publisher treats a vault as such a system:
-
-- each Markdown file is a **concept**;
-- each concept carries a finite set of **atoms** (signs);
-- closure under `j` and `G` turns local annotations into global structure;
-- indices and exports reveal both **local** and **global** patterns.
+A publication application can treat a vault as such a system: each Markdown
+file can declare a concept, and a chosen application model can relate those
+declarations into local and global patterns. Whether a particular closure,
+index, or export expresses the theory must be established by that
+implementation, not assumed from this description.
 
 ---
 
@@ -97,9 +100,9 @@ These signals are not just decorative. Once they are atoms in a semiotic univers
 
 ---
 
-## 4. Systems Thinking with the Semiotic Publisher
+## 4. Systems Thinking with a Publishing Application
 
-The Semiotic Publisher quietly encourages a **systems** view of knowledge.
+A publishing application can encourage a **systems** view of knowledge.
 
 Instead of asking only:
 
