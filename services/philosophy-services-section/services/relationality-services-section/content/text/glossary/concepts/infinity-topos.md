@@ -15,7 +15,7 @@ In standard mathematics, an [∞-topos](infinity-topos.md) (Lurie) is a higher-c
 The derivation arrives at topos-like structure through the following chain:
 
 1. The [Heyting algebra](../../triage/relationality-2/ai-generated-relationality/relationality-slop-2026-03-03/mathematics/terms/heyting-algebra/index.md) of [Judgement](../../triage/relationality-2/ai-generated-relationality/terms/judgement.md)s (step 12) provides a constructive internal logic — the subobject classifier of the topos.
-2. The [typed lambda calculus](lambda-calculus.md) of [Term](../../triage/relationality-2/ai-generated-relationality/terms/term.md)s (step 10) provides the internal language.
+2. The [typed lambda calculus](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/lambda-calculus.md) of [Term](../../triage/relationality-2/ai-generated-relationality/terms/term.md)s (step 10) provides the internal language.
 3. [Closure operators](closure-operators.md) at three scales (steps 3, 7, 18) provide the topological structure — Lawvere-Tierney topologies on the internal logic.
 4. [Flow and Nucleus](flow-nucleus.md) (steps 15-16) provide commuting endofunctors whose composites are [modal operators](modal-operators.md) — the cohesive modalities.
 5. [Residuation](../../../../../../content/text/glossary/concepts/residuation.md) governs the interaction of complementary operations at every level: logic (Implication), dynamics (Flow/Nucleus), physics (Evolution/Measurement). Each residuation is an [adjunction](../../../../../../../information-science-services-section/services/math-services-section/services/topology-services-section/content/text/glossary/terms/adjunction.md).

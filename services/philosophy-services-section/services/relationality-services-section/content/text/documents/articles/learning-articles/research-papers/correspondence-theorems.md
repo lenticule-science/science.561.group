@@ -12,7 +12,7 @@ description: "Proofs that the structures the derivation produces correspond to e
 
 ## What this text is
 
-[The Forcing Argument](../../../../../../../../content/text/documents/articles/notes/2026/03/02/2026-03-02-the-incitement-argument.md) shows that each step of the derivation is forced. [The Modal Structure](../../notes/2026/03/02/2026-03-02-the-modal-structure.md) develops the central adjoint quadruple. This text proves that the structures produced at each step *correspond* to established mathematical objects — that the derivation's [Heyting algebra](../../../../triage/relationality-2/ai-generated-relationality/relationality-slop-2026-03-03/disciplines/mathematics/concepts/heyting-algebra/index.md) is a genuine [Heyting algebra](../../../../triage/relationality-2/ai-generated-relationality/relationality-slop-2026-03-03/disciplines/mathematics/concepts/heyting-algebra/index.md), its [lambda calculus](../../../../glossary/concepts/lambda-calculus.md) is a genuine simply [typed lambda calculus](../../../../../../../../../information-science-services-section/services/math-services-section/content/text/documents/articles/teaching-articles/explanations/typed-lambda-calculus.md), and so on.
+[The Forcing Argument](../../../../../../../../content/text/documents/articles/notes/2026/03/02/2026-03-02-the-incitement-argument.md) shows that each step of the derivation is forced. [The Modal Structure](../../notes/2026/03/02/2026-03-02-the-modal-structure.md) develops the central adjoint quadruple. This text proves that the structures produced at each step *correspond* to established mathematical objects — that the derivation's [Heyting algebra](../../../../triage/relationality-2/ai-generated-relationality/relationality-slop-2026-03-03/disciplines/mathematics/concepts/heyting-algebra/index.md) is a genuine [Heyting algebra](../../../../triage/relationality-2/ai-generated-relationality/relationality-slop-2026-03-03/disciplines/mathematics/concepts/heyting-algebra/index.md), its [lambda calculus](../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/lambda-calculus.md) is a genuine simply [typed lambda calculus](../../../../../../../../../information-science-services-section/services/math-services-section/content/text/documents/articles/teaching-articles/explanations/typed-lambda-calculus.md), and so on.
 
 Each section states a correspondence theorem and gives a proof or proof sketch.
 
@@ -65,7 +65,7 @@ Specifically:
 
 The fixed-point operator $\mathsf{fix}$ permits non-termination (as in any language with general recursion). Normalization holds for the fixed-point-free fragment; the full language has the weaker [property](../../../../triage/relationality-2/ai-generated-relationality/sociology/terms/property.md) that every reduction sequence from a well-typed term is either finite or passes through a $\mathsf{fix}$ unfolding.
 
-See [Relational Lambda Calculus](../../../../glossary/concepts/lambda-calculus.md).
+See [Relational Lambda Calculus](../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/lambda-calculus.md).
 
 ---
 
