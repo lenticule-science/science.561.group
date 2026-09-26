@@ -196,8 +196,6 @@ This is precisely why flexible budgets exist — they separate the volume effect
 
 Budgeting connects accounting to planning and decision-making — it's where the record-keeping discipline starts to become a management tool. With the foundational topics covered, subsequent lessons can explore specialized areas: [cost behavior](../../../glossary/terms/cost-behavior.md) and how costs respond to changes in volume, managerial accounting decisions, or the standards frameworks ([GAAP](../../../glossary/terms/gaap.md), [IFRS](../../../glossary/terms/ifrs.md)) that govern financial reporting.
 
-## Earlier material
-
 Budgeting is where accounting shifts from recording the past to shaping the future.
 Every number in a budget is a prediction, and predictions are wrong — but the process of making them forces the business to think through its assumptions, identify risks, and coordinate across departments.
 
@@ -226,6 +224,3 @@ Yes — if the department's costs are variable (meaning they rise and fall with 
 Under a flexible budget comparison, the manager has zero variance.
 The apparent \$2,000 overspend was entirely caused by higher volume, not inefficiency.
 The static budget made the manager look bad by comparing actual costs at one volume level to budgeted costs at a different volume level.
-
-Budgeting connects accounting to planning and decision-making — it's where the record-keeping discipline starts to become a management tool.
-With the foundational topics covered, subsequent lessons can explore specialized areas: [cost behavior](../../../glossary/terms/cost-behavior.md) and how costs respond to changes in volume, managerial accounting decisions, or the standards frameworks ([GAAP](../../../glossary/terms/gaap.md), [IFRS](../../../glossary/terms/ifrs.md)) that govern financial reporting.

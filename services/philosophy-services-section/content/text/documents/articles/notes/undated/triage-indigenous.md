@@ -9,20 +9,6 @@ Philosophical traditions of Indigenous peoples. These are not pre-philosophical 
 
 The library's grounding in Lakota epistemologies means Indigenous philosophy is not a peripheral addition but a structuring commitment. The formal architecture (the relational universe) is built on relational ontology arrived at through Indigenous thought, not on Western substance metaphysics.
 
-
----
-
-<!-- source: archive/library/indigenous/indigenous.md -->
-
-## Imported source: archive/library/indigenous/indigenous.md
-
----
-title: "Indigenous Philosophy"
-description: "Philosophical traditions of Indigenous peoples — organized so each people's tradition stands on its own terms rather than being collapsed into a pan-Indian category."
-contains: [lakotaean-philosophy]
----
-
-
 The philosophy/_index.md declares `contains: [..., indigenous, ...]` and this directory occupies that slot. The intermediate exists to host the philosophical traditions of Indigenous peoples — each tradition held under the custodial authority of the people whose tradition it is — without collapsing them into a single "Indigenous philosophy" category that flattens real distinctions.
 
 ## Why an intermediate at all
@@ -32,8 +18,6 @@ The library's philosophy domain is organized by tradition of origin (buddhist, c
 The intermediate `indigenous/` exists as an organizational convenience — Indigenous philosophical traditions belong together in the library's tree because they share certain structural features (relational ontologies, place-based metaphysics, kinship-cosmological organization, oral-traditional transmission) and because they share a political situation (operating under settler-colonial pressure, generally less represented in academic philosophy than Western traditions) — but each child subtheory speaks for itself.
 
 ## What is here
-
-- [`lakotaean-philosophy/`](../../../../triage/theories/lakotaean-philosophy) — the philosophical tradition of the Lakota people, authored under the captain's vested authority as a Lakota person.
 
 ## What might come here later
 

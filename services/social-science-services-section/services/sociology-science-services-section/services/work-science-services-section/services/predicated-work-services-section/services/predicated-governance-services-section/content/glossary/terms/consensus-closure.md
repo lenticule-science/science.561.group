@@ -85,8 +85,6 @@ Per the [aperiodic-regime classification](../../../../../../../../../../../../in
 
 This is the substrate-algebraic content of the survey's "different governance traditions are not interchangeable": the math shows they produce different cohomological invariants. The choice of decision-rule tradition is a structural choice with substrate-algebraic consequences.
 
-## Earlier material
-
 By the [predication-settling CALM corollary](../../../../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/formalization/infomaterial/lib/infomaterial/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/sheaf/content/settling-cohomology/references/settling-calm-corollary.md), any $\leq_k$-monotone query on the operations settling is coordination-free: it can be answered at any replica without cross-replica communication.
 
 The "has consensus settled?" query — $v(\langle \phi, \texttt{settled-by-consensus}, \mathcal{P}\rangle) \geq_k \mathbf{t}$ — is $\leq_k$-monotone: the consensus-settlement cell can only advance upward in $\leq_k$ once it fires (by settling-monotonicity).
@@ -116,23 +114,3 @@ The inconsistency sheaf $\mathcal{F}^{(\top)}_{\mathrm{align}}$ tracks the dispu
 
 Disputed alignment is structurally different from active dissent ($\mathbf{f}$): dissent is coherent and blocks consensus cleanly; disputed alignment ($\top$) indicates a *breach of deliberative coherence* — the participant's expressed position is internally contradicted.
 Clan-mother intervention or other governance-repair mechanisms address this differently from ordinary deliberation.
-
-The "has consensus settled?" query — $v(\langle \phi, \texttt{settled-by-consensus}, \mathcal{P}\rangle) \geq_k \mathbf{t}$ — is $\leq_k$-monotone: the consensus-settlement cell can only advance upward in $\leq_k$ once it fires (by settling-monotonicity). Any distributed replica that observes the consensus cell at $\mathbf{t}$ can answer "yes, consensus reached" without coordination. The consensus settlement, once achieved, is read locally.
-
-However, the "is consensus still pending?" query — "has any populace member failed to align?" — is **not** $\leq_k$-monotone. Checking that *all* alignment cells are $\mathbf{t}$ (the universal antecedent) requires reading *all* cells in $\{a \in \mathrm{Pop}_\mathcal{P}\}$, and the *absence* of a $\mathbf{t}$ on any one cell is a non-monotone fact (it could be resolved by a future increment). Determining that consensus is blocked, or computing which members have not yet aligned, requires either full-replica coordination or a designated aggregator with access to all alignment cells.
-
-This asymmetry is structurally significant:
-- **Settlement monitoring is coordination-free.** Any replica can detect achieved consensus instantly.
-- **Blockage analysis requires coordination.** Determining *who* is blocking consensus, or whether consensus is achievable, requires aggregating non-monotone information.
-
-The practical implication for distributed polity operations: a consensus-governed community can decentralize the *confirmation* of reached consensus (coordination-free reads), but must centralize (or coordinate) the *deliberation management* process (tracking alignment states across all participants). The substrate-algebraic analysis makes this tradeoff precise.
-
-The [truth-knowledge long exact sequence](../../../../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/sheaf/content/settling-cohomology/references/truth-knowledge-cohomology-long-exact-sequence.md) gives the cohomological account:
-
-For a *non-disputed* deliberation (all alignment cells at $\mathbf{t}$ or $\bot$, none at $\top$), $\mathcal{F}^{(\top)}_{\mathrm{align}} = 0$ and $H^n_t \cong H^n_k$. Truth-order and knowledge-order cohomologies of the alignment sheaf coincide: there is no gap between "what is positively aligned" and "what is settled as knowledge."
-
-For a *disputed* deliberation, $\mathcal{F}^{(\top)}_{\mathrm{align}} \neq 0$ and the LES separates $H^n_t$ and $H^n_k$. The inconsistency sheaf $\mathcal{F}^{(\top)}_{\mathrm{align}}$ tracks the disputed alignment cells. $H^0(\mathcal{F}^{(\top)}_{\mathrm{align}})$ is a free abelian group on the persistently disputed alignment cells — a structural count of the participants in irresolvable alignment conflict.
-
-Disputed alignment is structurally different from active dissent ($\mathbf{f}$): dissent is coherent and blocks consensus cleanly; disputed alignment ($\top$) indicates a *breach of deliberative coherence* — the participant's expressed position is internally contradicted. Clan-mother intervention or other governance-repair mechanisms address this differently from ordinary deliberation.
-
-The [truth-knowledge long exact sequence](../../../../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/sheaf/content/settling-cohomology/references/truth-knowledge-cohomology-long-exact-sequence.md) gives the cohomological account:

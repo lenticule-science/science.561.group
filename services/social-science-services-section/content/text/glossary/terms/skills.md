@@ -4,6 +4,11 @@ name: "Skill"
 description: "Compiled procedural knowledge — a named, repeatable unit of method that an agent can invoke without deliberating about how to do it."
 extends: Entity
 satisfies: RelationalSystemSkill
+id: skills
+where:
+- $k$ is the **closure-kind** — which position in the nuclear quartet the skill occupies
+- $A$ is the **input type** and $B$ the **output type** — types of elements in fibers of $H$
+- $f$ is the **judgment** — a map from input to output within the fiber at history $t$
 ---
 
 A **skill** is compiled procedural knowledge — a named, repeatable unit of method that an agent can invoke reliably.
@@ -77,31 +82,11 @@ Whether this gives a useful category (skills as morphisms, runbooks as paths) is
 - What is the relationship between skill maturity (observation → instinct → skill → hook) and work-type position?
   Does maturity correspond to moving from inquiry toward process?
 
----
-
-## Supplementary formulation
-
-```yaml
----
-id: skills
-description: "A Skill is a named, documented method for one unit of agent judgment. It packages what an agent reasons about in one step, occupying exactly one position in the nuclear quartet."
-extends: Entity
-satisfies: RelationalSystemSkill
----
-```
-
-# Skill
-
 ## Formal definition
 
 A **Skill** is a triple $(k, A, f)$:
 
 $$\text{Skill} = (k \in \{P, Q, D, I\},\; A,\; f : [A]_t \to [B]_t)$$
-
-where:
-- $k$ is the **closure-kind** — which position in the nuclear quartet the skill occupies
-- $A$ is the **input type** and $B$ the **output type** — types of elements in fibers of $H$
-- $f$ is the **judgment** — a map from input to output within the fiber at history $t$
 
 The closure-kind $k$ constrains the nuclear position of $f$'s output:
 
@@ -137,19 +122,3 @@ A Runbook sequences skills.
 A Skill does not sequence itself — it does not know what comes before or after.
 The same Skill can appear in multiple Runbooks without duplication.
 This decouples judgment (Skill) from structure (Runbook).
-
-## Location
-
-Skills live as close to their content as possible:
-
-| Path | Who uses it |
-|------|-------------|
-| `skills/` | any agent in the repo |
-| `spec/skills/` | agents working on spec content |
-| `math/skills/` | agents working on math content |
-| `src/skills/` | agents working on engine code |
-
-A Skill MAY be a single `.md` file or a directory with a main file plus supporting files.
-Name a skill by what it produces — full rules in [name](../../../../../philosophy-services-section/services/logic-services-section/content/text/documents/articles/notes/undated/name.md).
-
-## Open questions

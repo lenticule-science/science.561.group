@@ -25,7 +25,13 @@ Hortense J. Spillers (b. 1942) is an American literary critic and Black feminist
 
 Spillers is foundational for the [black-radical-tradition](../theories/humanities/theories/sociology/theories/critical-theory/theories/black-radical-tradition/_index.md) subdomain. Her analysis of grammar — the structural-symbolic substrate of meaning — is upstream of cybernetic postliberalism's [fascist-grammar](../../../../../services/social-science-services-section/services/sociology-science-services-section/services/cybernetic-postliberalism-services-section/content/text/glossary/terms/fascist-grammar.md) and [anarchist-grammar](../../../../../services/social-science-services-section/services/sociology-science-services-section/content/text/documents/articles/notes/2026/04/27/2026-04-27-anarchist-grammar.md) accounts.
 
-## Earlier material
+## Related
+
+- [Saidiya Hartman](saidiya-hartman.md) — extends Spillers's analysis into the afterlife of slavery
+- [Sylvia Wynter](sylvia-wynter.md) — parallel analysis of how dominant categories produce human and non-human
+- [Fred Moten](fred-moten.md) — develops Black radical tradition from Spillers's foundations
+- [Frantz Fanon](frantz-fanon.md) — parallel [phenomenology](../../../../../services/philosophy-services-section/content/text/glossary/terms/phenomenology.md) of racialized embodiment
+- [C. Riley Snorton](../../../../../services/information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/c-riley-snorton.md) — extends the body/flesh distinction into trans studies and the co-constitution of Blackness and transness
 
 Hortense Spillers is a literary theorist and critic whose work examines the relationship between language, race, and embodiment in American culture. She is Gertrude Conaway Vanderbilt Professor Emerita at Vanderbilt University. Her essay "Mama's Baby, Papa's Maybe: An American Grammar Book" (1987) is one of the most influential texts in Black feminist theory.
 
@@ -35,14 +41,6 @@ Hortense Spillers is a literary theorist and critic whose work examines the rela
 
 - "Mama's Baby, Papa's Maybe: An American Grammar Book" (1987)
 - *Black, White, and in Color: Essays on American Literature and Culture* (2003)
-
-- [Saidiya Hartman](saidiya-hartman.md) — extends Spillers's analysis into the afterlife of slavery
-- [Sylvia Wynter](sylvia-wynter.md) — parallel analysis of how dominant categories produce human and non-human
-- [Fred Moten](fred-moten.md) — develops Black radical tradition from Spillers's foundations
-- [Linguistic extraction](../../../../../services/information-science-services-section/services/communication-science-services-section/services/linguistics-services-section/content/text/glossary/terms/linguistic-extraction.md) — Spillers's grammar analysis shows how language encodes domination
-- [Frantz Fanon](frantz-fanon.md) — parallel [phenomenology](../../../../../services/philosophy-services-section/content/text/glossary/terms/phenomenology.md) of racialized embodiment
-- [Queer-of-color critique](../../../../../services/information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/sociology/schools/queer/schools/queer-of-color/index.md) — the tradition her analysis of ungendering informs
-- [C. Riley Snorton](../../../../../services/information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/c-riley-snorton.md) — extends the body/flesh distinction into trans studies and the co-constitution of Blackness and transness
 
 Hortense J. Spillers (b. 1942) is the figure through whom the [black-feminism](../../../../../services/social-science-services-section/services/sociology-science-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/library/social-sciences/sociology/archive/library/critical-theory/theories/feminism/theories/black-feminism/_index.md) subdomain holds its analysis of how the symbolic-political grammar of American kinship is constituted by slavery's ungendering of the captive, and of why the inherited categories of "woman," "mother," "kinship," and "gender" cannot be applied to Black flesh without remaking what those categories mean. Gertrude Conaway Vanderbilt Professor of English at Vanderbilt University.
 

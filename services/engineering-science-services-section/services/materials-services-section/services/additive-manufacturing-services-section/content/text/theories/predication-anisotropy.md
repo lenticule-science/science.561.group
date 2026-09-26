@@ -31,22 +31,6 @@ Process-specific notes:
 
 Reporting AM mechanical data without specifying build orientation is a common error in the published literature.
 
-
----
-
-<!-- source: fabrication/material-science/archive/predication-anisotropy.md -->
-
-## Imported source: fabrication/material-science/archive/predication-anisotropy.md
-
----
-type: concept
-class: mechanical-property
-depends-on: []
-see-also: []
----
-
-# Anisotropy (in materials)
-
 Direction-dependence of a material property. A property $P$ is **isotropic** if its measured value is independent of direction in the material; **anisotropic** if it varies. Anisotropy is rarely binary — most engineering materials are *transversely isotropic* (one weak direction, isotropic plane perpendicular) or *orthotropic* (three mutually perpendicular axes with distinct properties).
 
 **Sources of anisotropy.**
@@ -74,7 +58,3 @@ Direction-dependence of a material property. A property $P$ is **isotropic** if 
 **Design implication.** Orient the part so that the dominant load is in the strong direction. For AM, this is the [build-orientation](./predication-build-orientation.md) choice; for composites, this is the lay-up sequence; for forged parts, this is the orientation in the die.
 
 **Anisotropy does not always shrink to zero.** Even ideally-isotropic processes (powder-bed fully fused, post-HIP DMLS) retain trace anisotropy from texture, residual stress, or solidification gradients. The engineering question is whether the residual anisotropy is small enough relative to design margins.
-
-## Earlier material
-
-Anisotropy is *not* a defect — it is structural to the process. The corresponding design rule (see [build-orientation](../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/technology/fabrication/material-science/additive-manufacturing/archive/build-orientation.md) and [build-orientation-aligns-load-with-xy](../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/technology/fabrication/material-science/additive-manufacturing/theorems/build-orientation-aligns-load-with-xy.md)) is to orient the part so that the dominant tensile load runs in-plane.

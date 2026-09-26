@@ -276,8 +276,6 @@ Adopting semantic frontmatter is incremental:
 
 Each phase is independently useful. The vault functions without any of them, and each addition makes the vault's semantic structure more explicit and more machine-readable.
 
-## Earlier material
-
 These typed relation fields are the vocabulary from which the
 [predicate graph](../../../../../../content/text/documents/articles/notes/predicate-graph.md) is built. Each field defined
 here generates triplets in the graph; each triplet carries a predicate
@@ -335,10 +333,3 @@ The `mirrors` and `references` predicates emerged in practice without
 being specified. `mirrors` appears to mark parallel content across
 disciplines; `references` marks non-intellectual citations. Both need
 specification if they are to participate in axiom evaluation.
-
-Current domain-specific extensions:
-- [Mathematical ASR](../../mathematics/specifications/mathematical-agential-semioverse-repository/index.md) — adds types `theorem`, `proof`, `axiom`, `definition`, `conjecture`, `lemma`, `corollary`, `proposition` and relations `proven-by`, `proves`, `notation`
-- [Philosophical ASR](../../philosophy/specifications/philosophical-agential-semioverse-repository/index.md) — adds types `claim`, `argument`, `objection`, `position`, `tradition` and relations `argued-by`, `supports`, `targets`, `contested-by`
-- [Sociological ASR](../../sociology/specifications/sociological-agential-semioverse-repository/index.md) — adds relations `school`, `integrates`, `produces`, `sustains`, `contests`, `uses-concepts`, `emerges-under`
-- [Ludic ASR](../../games/specifications/ludic-agential-semioverse-repository/index.md) — adds type `specification` and relations `uses-mechanic`, `classifies`, `boundary-with`, `models`
-- [Educational ASR](../../education/specifications/educational-agential-semioverse-repository/index.md) — adds types `curriculum`, `skill`, `transmission-mode` and relations `practiced-through`, `scaffolds`, `builds-on`

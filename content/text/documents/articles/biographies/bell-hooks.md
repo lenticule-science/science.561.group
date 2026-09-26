@@ -18,7 +18,12 @@ bell hooks (Gloria Jean Watkins) wrote at the intersection of race, class, gende
 - *Teaching to Transgress* (1994)
 - *All About Love: New Visions* (2000)
 
-## Earlier material
+## Related
+
+- [Paulo Freire](../../../../../services/information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/paulo-freire.md) — her primary intellectual predecessor in pedagogy
+- [engaged pedagogy](../../../../../services/social-science-services-section/services/education-science-services-section/content/text/glossary/terms/engaged-pedagogy.md) — her distinct framework for teaching as a practice of freedom
+- [dialogic education](../../../../../services/social-science-services-section/services/education-science-services-section/content/text/glossary/terms/dialogic-education.md) — the Freirean tradition she extended and transformed
+- [dialogic education](../../../../../services/social-science-services-section/services/education-science-services-section/content/text/glossary/terms/dialogic-education.md) — the tradition she extended
 
 bell hooks (Gloria Jean Watkins, 1952–2021) wrote the books of contemporary U.S. Black feminism that reach the broadest readership, in the prose style she insisted feminism had to develop if it was to be more than an academic tradition. The lowercased name (her great-grandmother's, taken to put the focus on the work rather than on the writer) is the politics in miniature.
 
@@ -54,11 +59,3 @@ bell hooks (1952–2021) was an American scholar, cultural critic, and educator.
 - *Teaching Community: A Pedagogy of Hope* (2003)
 - *Feminist Theory: From Margin to Center* (1984)
 - *All About Love: New Visions* (2000)
-
-- [Paulo Freire](../../../../../services/information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/paulo-freire.md) — her primary intellectual predecessor in pedagogy
-- [engaged pedagogy](../../../../../services/social-science-services-section/services/education-science-services-section/content/text/glossary/terms/engaged-pedagogy.md) — her distinct framework for teaching as a practice of freedom
-- [dialogic education](../../../../../services/social-science-services-section/services/education-science-services-section/content/text/glossary/terms/dialogic-education.md) — the Freirean tradition she extended and transformed
-- [Black radical pedagogies](../../../../../services/information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/education/disciplines/pedagogy/schools/black-radical-pedagogies/index.md) — the tradition her work belongs to alongside critical pedagogy
-- [dialogic education](../../../../../services/social-science-services-section/services/education-science-services-section/content/text/glossary/terms/dialogic-education.md) — the tradition she extended
-- [Feminist queer theory](../../../../../services/information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/sociology/schools/queer/schools/feminist/index.md) — hooks's insistence that feminism address race, class, and sexuality together anticipates this current
-- [Queer-of-color critique](../../../../../services/information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/sociology/schools/queer/schools/queer-of-color/index.md) — hooks's "margin to center" framework parallels this critique's insistence on centering race

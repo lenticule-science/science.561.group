@@ -14,6 +14,46 @@ authorial-voice: civic education
 
 We're habituated to think of attention as a little bit of [property](../../sociology/terms/property.md): something you either don't have, or if you have it, you're at risk of losing it.
 
+* [Resource Codes](../../../../../../../../../../philosophy-services-section/content/text/glossary/terms/resource-code.md)
+** [BibTex Entry](../../../../../../../../../../engineering-science-services-section/services/computer-science-services-section/content/text/glossary/terms/bibtex-entry.md)
+#+begin_src bibtex :canonical yes
+  @online{emsenn_attention_neurocognitive_system_2025,
+  author       = {emsenn},
+  title        = {Review of attention as a neurocognitive system},
+  year         = {2025},
+  url          = {https://emsenn.net/review-of-attention-as-a-neurocognitive-system},
+}
+#+end_src
+
+The dorsal attention network maintains voluntary focus on goals or tasks, while the ventral attention network orients the organism toward unexpected events.(NO_ITEM_DATA:vossel_dorsal_2014)
+
+The comprehension process is metabolically demanding at first but becomes energetically efficient as coherence develops.(NO_ITEM_DATA:godbersen_task_evoked_2023)
+
+This efficiency allows ideas to integrate over longer timescales.(NO_ITEM_DATA:change_information_2022)
+
+By contrast, reading consuming larger discrete media provides the continuous context those processes depend on.(NO_ITEM_DATA:song_cognitive_2021)
+
+Studies show that introducing friction, specifically replacing infinite scrolling with other interfaces, lead to better content recall.(NO_ITEM_DATA:ruiz_design_2024)
+
+<style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
+  <div class="csl-entry">NO_ITEM_DATA:vossel_dorsal_2014</div>
+  <div class="csl-entry">NO_ITEM_DATA:ahn_altered_2021</div>
+  <div class="csl-entry">NO_ITEM_DATA:zioga_naturalistic_2023</div>
+  <div class="csl-entry">NO_ITEM_DATA:godbersen_task_evoked_2023</div>
+  <div class="csl-entry">NO_ITEM_DATA:change_information_2022</div>
+  <div class="csl-entry">NO_ITEM_DATA:ophir_cognitive_2009</div>
+  <div class="csl-entry">NO_ITEM_DATA:farah_structural_202</div>
+  <div class="csl-entry">NO_ITEM_DATA:hill-bowen_cue-reactivity_2021</div>
+  <div class="csl-entry">NO_ITEM_DATA:chiossi_short-form_2023</div>
+  <div class="csl-entry">NO_ITEM_DATA:song_cognitive_2021</div>
+  <div class="csl-entry">NO_ITEM_DATA:ruiz_design_2024</div>
+  <div class="csl-entry">NO_ITEM_DATA:nau_neural_2025</div>
+  <div class="csl-entry">NO_ITEM_DATA:yan_mobile_2024</div>
+  <div class="csl-entry">NO_ITEM_DATA:shafi_exploratory_2021</div>
+  <div class="csl-entry">NO_ITEM_DATA:lehne_reading_2015</div>
+  <div class="csl-entry">NO_ITEM_DATA:castelo_blocking_2025</div>
+</div>
+
 Yet the more closely neuroscientists examine the phenomenon we call "paying attention," the less it behaves like a static resource and more it resembles a dynamic system of relations, only ever existing because the environment it's in **makes** it exist.
 
 That is, attention is a loop between what we're perceiving and our emotions, thoughts, and actions.
@@ -98,6 +138,8 @@ Attention systems recalibrate quickly when environmental demands change.
 
 ## In Closing
 
+Educational and technological design therefore shape not only personal cognition but collective reasoning capacity.
+
 The environments that hold our focus also hold the template of how focus functions.
 
 Digital and textual media are not external influences on an otherwise stable brain: they are part of the loop through which neural and cultural forms co-evolve.
@@ -118,8 +160,6 @@ How that field evolves depends on how we balance its reactive and reflective arc
 
 </div>
 
-## Earlier material
-
 :PROPERTIES:
 :ID:       309649c0-d1b9-4e3b-80e7-5e1f4907a711
 :resource-description: (([instantiates](../../../../../../../../../content/text/glossary/terms/instantiating.md). [essay](../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/essay.md)) ([author](../../../../../../../../../../philosophy-services-section/content/text/glossary/terms/author.md) . [emsenn](../../../../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/emsenn.md)) (subject . [human attention](../../../../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/glossary/terms/human-attention.md)) (subject . [neurocognition](../../../../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/neurocognition.md)) ([creation date](../../../../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/creation-date.md) . 2025-10-08) ([authorial voice](../../../../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/authorial-voice.md) . [civic education](../../../../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/civic-education.md)))
@@ -131,79 +171,3 @@ How that field evolves depends on how we balance its reactive and reflective arc
 We're habituated to think of attention as a little bit of property: something you either don't have, or if you have it, you're at risk of losing it.
 
 That is, attention is not some thing we have that we point outward, like a flashlight of perception, but a loop between what we're perceiving and our emotions, thoughts, and actions.
-
-** The Reactive Mode
-
-** The Reflective Mode
-
-** Task Switching and Fragmentation
-
-** Structural Adaptation
-
-** Memory and Temporal Depth
-
-** Affective Regulation
-
-** Plasticity and Reversibility
-
-** In Closing
-
-Educational and technological design therefore shape not only personal cognition but collective reasoning capacity.
-
-#+print_bibliography:
-
-We're habituated to think of attention as a little bit of [property](../../../../../../../../../../humanities/theories/philosophy/terms/property.md): something you either don't have, or if you have it, you're at risk of losing it.
-
-* [Resource Codes](../../../../../../../../../../philosophy-services-section/content/text/glossary/terms/resource-code.md)
-** [BibTex Entry](../../../../../../../../../../engineering-science-services-section/services/computer-science-services-section/content/text/glossary/terms/bibtex-entry.md)
-#+begin_src bibtex :canonical yes
-  @online{emsenn_attention_neurocognitive_system_2025,
-  author       = {emsenn},
-  title        = {Review of attention as a neurocognitive system},
-  year         = {2025},
-  url          = {https://emsenn.net/review-of-attention-as-a-neurocognitive-system},
-}
-#+end_src
-
-The dorsal attention network maintains voluntary focus on goals or tasks, while the ventral attention network orients the organism toward unexpected events.(NO_ITEM_DATA:vossel_dorsal_2014)
-
-During sustained processes of comprehension, dispersed cortical regions synchronize their activity; the brain forms a rhythm linking perception to the early processes of conceptualization.(NO_ITEM_DATA:zioga_naturalistic_2023)
-
-The comprehension process is metabolically demanding at first but becomes energetically efficient as coherence develops.(NO_ITEM_DATA:godbersen_task_evoked_2023)
-
-This efficiency allows ideas to integrate over longer timescales.(NO_ITEM_DATA:change_information_2022)
-
-A study of media multitaskers at Stanford found that individuals accustomed to rapid switching were slower and less accurate at filtering irrelevant information even in controlled settings.(NO_ITEM_DATA:ophir_cognitive_2009)
-
-Diffusion-tensor imaging shows that frequent readers exhibit greater integrity in white-matter pathways connecting language, vision, and executive control regions: the anatomical basis of sustained integration.(NO_ITEM_DATA:farah_structural_202)
-
-Frequent engagement with highly salient or reactive media strengthens coupling among attentional, salience, and reward networks, promoting vigilance and heightened sensitivity to external cues.(NO_ITEM_DATA:hill-bowen_cue-reactivity_2021)
-
-By contrast, reading consuming larger discrete media provides the continuous context those processes depend on.(NO_ITEM_DATA:song_cognitive_2021)
-
-Studies show that introducing friction, specifically replacing infinite scrolling with other interfaces, lead to better content recall.(NO_ITEM_DATA:ruiz_design_2024)
-
-Rapid alternation of novelty and reward produces frequent arousal peaks. In studies of short-video and social-media use, this pattern correlates with reduced executive control and elevated stress Yesindicators.(NO_ITEM_DATA:yan_mobile_2024, NO_ITEM_DATA:shafi_exploratory_2021)
-
-Long-form reading, by contrast, has been shown to elicit a gradual modulation of arousal and is associated with strengthened coupling between narrative and empathy networks.(NO_ITEM_DATA:lehne_reading_2015)
-
-A 2025 field experiment restricting social-media exposure for two weeks produced measurable improvements in sustained attention and self-reported well-being.(NO_ITEM_DATA:castelo_blocking_2025)
-
-<style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
-  <div class="csl-entry">NO_ITEM_DATA:vossel_dorsal_2014</div>
-  <div class="csl-entry">NO_ITEM_DATA:ahn_altered_2021</div>
-  <div class="csl-entry">NO_ITEM_DATA:zioga_naturalistic_2023</div>
-  <div class="csl-entry">NO_ITEM_DATA:godbersen_task_evoked_2023</div>
-  <div class="csl-entry">NO_ITEM_DATA:change_information_2022</div>
-  <div class="csl-entry">NO_ITEM_DATA:ophir_cognitive_2009</div>
-  <div class="csl-entry">NO_ITEM_DATA:farah_structural_202</div>
-  <div class="csl-entry">NO_ITEM_DATA:hill-bowen_cue-reactivity_2021</div>
-  <div class="csl-entry">NO_ITEM_DATA:chiossi_short-form_2023</div>
-  <div class="csl-entry">NO_ITEM_DATA:song_cognitive_2021</div>
-  <div class="csl-entry">NO_ITEM_DATA:ruiz_design_2024</div>
-  <div class="csl-entry">NO_ITEM_DATA:nau_neural_2025</div>
-  <div class="csl-entry">NO_ITEM_DATA:yan_mobile_2024</div>
-  <div class="csl-entry">NO_ITEM_DATA:shafi_exploratory_2021</div>
-  <div class="csl-entry">NO_ITEM_DATA:lehne_reading_2015</div>
-  <div class="csl-entry">NO_ITEM_DATA:castelo_blocking_2025</div>
-</div>

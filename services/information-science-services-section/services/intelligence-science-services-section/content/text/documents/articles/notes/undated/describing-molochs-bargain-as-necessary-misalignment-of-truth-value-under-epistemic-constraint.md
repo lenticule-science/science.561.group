@@ -221,6 +221,17 @@ semantic fidelity.  This alignment between theorem and data substantiates misali
 
 # References
 
+| Domain       | Reward Î” (%) | Misalignment Î” (%) |
+|--------------|--------------|--------------------|
+| Sales        | +6.3         | +14                |
+| Elections    | +4.9         | +22.3              |
+| Social Media | +7.5         | +188               |
+
+All slopes $\rho=Î”D_T/Î”r>0$, matching the theorem's monotone frontier.
+
+1. Increasing the epistemic rate $R$ (longer context, compute, or shared truth side-information); or
+2. Reducing mismatchâ€”modifying $r$ so that its sufficient statistics better align with those of $T$.
+
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
   <div class="csl-entry">NO_ITEM_DATA:emsenn_TheoremNecessaryMisalignmentTruthValue_2025</div>
   <div class="csl-entry">NO_ITEM_DATA:el_molochs_2025</div>
@@ -228,8 +239,6 @@ semantic fidelity.  This alignment between theorem and data substantiates misali
 
 
 # Backlinks
-
-## Earlier material
 
 This paper interprets those findings through the Theorem of Necessary Misalignment of Truth-Value under Epistemic Constraint.\[cite:@emsenn_theorem_necessary_misalignment_truth_value_under_epistemic_constraint_2025\]
 
@@ -251,54 +260,8 @@ This paper interprets those findings through the Theorem of Necessary Misalignme
 
 <div id="refs">
 
-## Earlier material
-
 We show that El & Zou's (2025) "Moloch's Bargain" provides an empirical instance of this theoretical trade-off: their observed slopes between reward gain and misalignment correspond to the positive derivative $dD_T^\*/dr>0$ on the achievable frontier.
 
 - El, M., & Zou, A. (2025). "Moloch's Bargain." *arXiv*.
 - Shannon, C. E. (1948). "A Mathematical Theory of Communication." *Bell System Technical Journal*, 27, 379–423, 623–656.
 - Cover, T. M., & Thomas, J. A. (2006). *Elements of Information Theory* (2nd ed.). Wiley.
-
-:PROPERTIES:
-:ID:       dc13bf31-8093-4e7a-b103-35cf04782403
-:END:
-#+TITLE: Moloch's Bargain as Necessary Misalignment of Truth-Value Under Epistemic Constraint
-#+DATE: [2025-10-08]
-#+AUTHOR: emsenn
-
-* Abstract
-
-#+toc: headlines 1 local
-
-* Background and Theoretical Reference
-
-* Empirical Observation
-
-* Interpretation via the Theorem
-
-* Information-Theoretic Reading
-
-* Quantitative Alignment with Theory
-
-* Conclusion
-
-* References
-
-#+print_bibliography:
-
-## Earlier material
-
-Under a finite informational rate $I(X;Y)\!\le\!R$ and strict proxyâ€“semantic
-mismatch, that theorem predicts a monotone increase in semantic distortion with
-optimization intensity.
-
-| Domain       | Reward Î” (%) | Misalignment Î” (%) |
-|--------------|--------------|--------------------|
-| Sales        | +6.3         | +14                |
-| Elections    | +4.9         | +22.3              |
-| Social Media | +7.5         | +188               |
-
-All slopes $\rho=Î”D_T/Î”r>0$, matching the theorem's monotone frontier.
-
-1. Increasing the epistemic rate $R$ (longer context, compute, or shared truth side-information); or
-2. Reducing mismatchâ€”modifying $r$ so that its sufficient statistics better align with those of $T$.

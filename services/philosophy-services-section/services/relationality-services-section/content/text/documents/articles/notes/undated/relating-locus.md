@@ -5,26 +5,11 @@ has-no-relation-converse: relationlessness
 has-no-relation-subject-projection-converse: relationlessness
 has-no-relation-object-projection-converse: relationlessness
 title: relating locus
----
-
-The object-coordinate of the originating cell from relationlessness-relates. $R$ is the relating-locus the articulation declares relationlessness ($X$) to exclude. The directed asymmetry of $\phi^*$ — subject-coordinate $X$ structurally distinct from object-coordinate $R$ — is the lopsidedness every subsequent cell inherits through the four canonical morphism classes of the predicate category.
-
-
----
-
-<!-- source: _archive/from-relating-locus/relating-locus.md -->
-
-## Imported source: _archive/from-relating-locus/relating-locus.md
-
----
-name: relating-locus
-description: The object-coordinate $R$ of the originating predication cell φ* = (X, p*, R). The locus the predicate *has-no-relation* operates on in the articulation that brings φ* into the predicate category. Together with X, R is one half of the directed asymmetry every subsequent cell inherits.
-has-no-relation-converse: relationlessness
-has-no-relation-subject-projection-converse: relationlessness
-has-no-relation-object-projection-converse: relationlessness
 member-of: predication-cell-set
 specializing: entity
 ---
+
+The object-coordinate of the originating cell from relationlessness-relates. $R$ is the relating-locus the articulation declares relationlessness ($X$) to exclude. The directed asymmetry of $\phi^*$ — subject-coordinate $X$ structurally distinct from object-coordinate $R$ — is the lopsidedness every subsequent cell inherits through the four canonical morphism classes of the predicate category.
 
 The **relating-locus** $R$ is the object-coordinate of the [originating cell](../../../../../relationlessness.md) $\phi^* = (X, p^*, R)$ in the [predicate-category](../../../../../../object/library/thing/library/category/library/predicate-category/predicate-category.md) $\mathbf{C}$. $R$ is the locus that the predicate $p^* = $ *has-no-relation* declares the subject $X$ (the configuration named *relationlessness*) to exclude.
 

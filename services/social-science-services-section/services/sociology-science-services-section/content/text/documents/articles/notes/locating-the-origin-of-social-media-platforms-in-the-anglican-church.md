@@ -145,46 +145,9 @@ This operationalization grounds metaphoric correspondence in structural features
 
 # 10. Conclusion
 
-John Winthrop’s **A Model of Christian Charity** marks the moment when religion became social media. Anglicanism’s reformation of Catholic hierarchy provided the federated infrastructure; covenantal settlements implemented the first decentralized participatory platforms; Winthrop’s sermon was their inaugural post.
-
-Modern social networks perpetuate this lineage: visibility remains virtue, participation remains ontology, and algorithmic grace replaces divine favor. To understand platforms historically is to recognize them as secularized covenants—recursive systems demanding faith in the fairness of mediation itself.
-
-# References
-
-- Berlant, L. (2008). *The Female Complaint*. Duke University Press.
-- Eisenstein, E. (1979). *The Printing Press as an Agent of Change*. Cambridge University Press.
-- Foucault, M. (2007). *Security, Territory, Population*. Palgrave Macmillan.
-- Gillespie, T. (2014). “The Relevance of Algorithms.” In **Media Technologies**, MIT Press.
-- Kittler, F. (1990). *Discourse Networks 1800/1900*. Stanford University Press.
-- McLuhan, M. (1964). *Understanding Media: The Extensions of Man*. McGraw-Hill.
-- Seaver, N. (2022). *Computing Taste*. University of Chicago Press.
-- Weber, M. (1905/2001). *The Protestant Ethic and the Spirit of Capitalism*. Routledge.
-- Winthrop, J. (1838). **A Model of Christian Charity**, in Collections of the Massachusetts Historical Society, 3rd Series, Vol. 7.
-- The **Book of Common Prayer** (1549, 1559, 1662 editions).
-- The **Cambridge Platform of Church Discipline** (1648).
-
-## Earlier material
-
-:PROPERTIES:
-:ID:       4360d556-7722-46df-b188-82785ed31d20
-:END:
-#+title: Covenant Platform: A Model of Christian Charity as the First Social Media
-#+date: [2025-07-26 Sat]
-#+author: emsenn
-
-* Abstract
-
-* 1. Introduction
-
-* 7. Providence as Algorithm
-
-* 10. Conclusion
-
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 <colgroup>
-<col  class="org-left" />
-
 <col  class="org-left" />
 
 <col  class="org-left" />
@@ -239,26 +202,22 @@ The [genealogy](../../../../../../../../philosophy-services-section/services/rel
 Following McLuhan (1964) and Kittler (1990), this study argues that platforms inherit theological grammars of mediation.
 The English Reformation transformed religious communication into participatory infrastructure: Catholicismâ€™s broadcast hierarchy gave way to Anglicanismâ€™s federated replication, and Puritan covenantalism extended that replication into decentralized self-governing networks.
 
-Within this lineage, John Winthropâ€™s **A Model of Christian Charity** (1630), recorded as delivered aboard the **Arbella** en route to Massachusetts Bay (Winthrop 1838), functions as the first â€œpostâ€: a founding act of public moral articulation inaugurating a self-mediating society.
+<col  class="org-left" />
 
-Anglicanism thus established an early clientâ€“server model of mediation: the Crown remained the root authority, but each parish handled local computation.
-Participation became permitted and requiredâ€”the congregationâ€™s spoken responses and hymns forming a synchronized input-output loop across the realm.
+John Winthrop’s **A Model of Christian Charity** marks the moment when religion became social media. Anglicanism’s reformation of Catholic hierarchy provided the federated infrastructure; covenantal settlements implemented the first decentralized participatory platforms; Winthrop’s sermon was their inaugural post.
 
-1. ****Relational Cohesion as Architecture:**** â€œWe must be knit together in this work as one man.â€ This defines the network topologyâ€”a mesh of mutual relation forming the mediumâ€™s substrate.
-2. ****Visibility as Governance:**** â€œWe shall be as a City upon a Hill.â€ Here Winthrop establishes the performative logic of visibility: virtue verified through exposure to divine and human spectatorship.
-3. ****Engagement as Algorithm:**** Divine favor circulates through reciprocal acts of charity; grace becomes a feedback system allocating reward according to observable participation.
+Modern social networks perpetuate this lineage: visibility remains virtue, participation remains ontology, and algorithmic grace replaces divine favor. To understand platforms historically is to recognize them as secularized covenants—recursive systems demanding faith in the fairness of mediation itself.
 
-Modern feed algorithms replicate this epistemology: unseen systems distribute visibility according to engagement metrics, promising fairness while enforcing hierarchy.
-Both rely on faith in the neutrality of orderâ€”the assumption that the systemâ€™s logic is just because it is invisible.
+# References
 
-| Media Element | Historical Artifact                   | Platform Analogue         |
-|---------------|---------------------------------------|---------------------------|
-| Protocol      | **Book of Common Prayer** (1549â€“1662) | Platform UI/API standard  |
-| Node          | Parish / Congregation                 | Local server or instance  |
-| Verification  | Parish Register (1538â€“)               | User authentication / KYC |
-| Moderation    | Ecclesiastical & covenant discipline  | Content governance        |
-| Algorithm     | Providence                            | Feed-ranking function     |
-| Post          | Sermon / Confession / Record Entry    | User-generated update     |
-
-John Winthropâ€™s **A Model of Christian Charity** marks the moment when religion became social media.
-Anglicanismâ€™s reformation of Catholic hierarchy provided the federated infrastructure; covenantal settlements implemented the first decentralized participatory platforms; Winthropâ€™s sermon was their inaugural post.
+- Berlant, L. (2008). *The Female Complaint*. Duke University Press.
+- Eisenstein, E. (1979). *The Printing Press as an Agent of Change*. Cambridge University Press.
+- Foucault, M. (2007). *Security, Territory, Population*. Palgrave Macmillan.
+- Gillespie, T. (2014). “The Relevance of Algorithms.” In **Media Technologies**, MIT Press.
+- Kittler, F. (1990). *Discourse Networks 1800/1900*. Stanford University Press.
+- McLuhan, M. (1964). *Understanding Media: The Extensions of Man*. McGraw-Hill.
+- Seaver, N. (2022). *Computing Taste*. University of Chicago Press.
+- Weber, M. (1905/2001). *The Protestant Ethic and the Spirit of Capitalism*. Routledge.
+- Winthrop, J. (1838). **A Model of Christian Charity**, in Collections of the Massachusetts Historical Society, 3rd Series, Vol. 7.
+- The **Book of Common Prayer** (1549, 1559, 1662 editions).
+- The **Cambridge Platform of Church Discipline** (1648).

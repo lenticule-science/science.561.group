@@ -15,6 +15,18 @@ depends-on:
   - theorem/internal/intake-stack
   - theorem/internal/measurement-stack
   - theorem/internal/tower-interaction
+date-created: "2026-03-04T00:00:00"
+tags:
+  - integration
+  - module
+  - dependency
+depends_on:
+  - theorem/internal/trace-infrastructure
+  - theorem/internal/evaluation-engine
+  - theorem/internal/persistence-stack
+  - theorem/internal/intake-stack
+  - theorem/internal/measurement-stack
+  - theorem/internal/tower-interaction
 ---
 title: Wiring Structure
 tags:
@@ -76,32 +88,6 @@ This wiring structure is the single object that system-level architecture must
 instantiate: concrete runtimes and deployment diagrams are required to provide
 ports and connections that realise `Wiring` and preserve its compatibility
 relation.
-
-
----
-
-<!-- source: archive/triage/relationality/domains/relationality-slop-2025-04/domains/internal/module-wiring.md -->
-
-## Imported source: archive/triage/relationality/domains/relationality-slop-2025-04/domains/internal/module-wiring.md
-
----
-title: Module Wiring
-aliases:
-  - Module Wiring
-  - module wiring
-date-created: "2026-03-04T00:00:00"
-tags:
-  - integration
-  - module
-  - dependency
-depends_on:
-  - theorem/internal/trace-infrastructure
-  - theorem/internal/evaluation-engine
-  - theorem/internal/persistence-stack
-  - theorem/internal/intake-stack
-  - theorem/internal/measurement-stack
-  - theorem/internal/tower-interaction
----
 
 # Theorem (Module Wiring)
 

@@ -57,56 +57,9 @@ The legal realism tradition critiques law-as-control from within, showing how ap
 - [Recursive governance](./recursive-governance.md) — the feedback containment system that operates beyond law-as-control
 - [Coherent confusion](./coherent-confusion.md) — a condition impossible under law-as-control but productive under modulative governance
 
-
----
-
-## Consolidated triage formulation
-
-<!-- CONSOLIDATED-TRIAGE-SOURCE: law-as-control.md SHA256 3169c95e101b7e1a22addf182c3c612d18373b9365d53131357457b39e990ea3 -->
-
-This historical formulation was consolidated from `lib/emsenn/services/561-group/services/public-services-section/services/personal-services-section/emsenn-services-section/content/text/triage/law-as-control.md`. It is retained where its wording, links, provenance, or uncertainty differs from the active entry.
-
-<details>
-<summary>Recorded source metadata</summary>
-
-```yaml
-type: "[[concept]]"
-date: "[[2025-04-13]]"
-voice: "[[structured reference record]]"
-
-delta:
-  - "[[noncompliance as deviation]]"
-  - "[[symbolic authority structures]]"
-  - "[[discrete power application]]"
-
-lambda:
-  - "[[command-based governance modeling]]"
-  - "[[legibility through codification]]"
-  - "[[state-mediated coherence enforcement]]"
-
-adjoint:
-  - "[[law-as-control]]"
-  - "[[symbolic authority regime]]"
-  - "[[governance through declaration]]"
-
-enfolds:
-  - "[[representational governance]]"
-  - "[[legalist epistemology]]"
-  - "[[institutional authority systems]]"
-  - "[[fixed-ontology regulation]]"
-```
-
-</details>
-
-### Retained formulation
-
 **[[law-as-control]]** describes a [[governance structure]] in which systems exert power through **[[symbolic declaration]] and [[formal response]]**. It treats [[deviation]] as [[noncompliance]] and organizes participation through the lens of [[legal legibility]]. The [[law]] is not simply a [[rule]]—it is the framework through which the system defines *what counts as [[reality]]*.
 
 This logic underpins most state and institutional frameworks. It descends from [[Max Weber]]’s [[theory of rational-legal authority]], in which legitimacy is tied to formal process, and echoes [[James C. Scott]]’s critique of [[administrative legibility]], where state power simplifies complexity to make it governable. In practice, this means that what cannot be legibly declared cannot be governed—**and so is excluded.**
-
----
-
-## Structural Behavior
 
 - Law declares structure
 - Deviations are framed as violations
@@ -119,8 +72,6 @@ Where [[Foucault]]’s [[disciplinary logic]] centers on normalization through s
 
 The [[legal realism]] tradition critiques this from within, showing how application often diverges from declared principle. [[Giorgio Agamben]] pushes further: the law defines who is included, but also who can be excluded, legally.
 
----
-
 ## Contrast
 
 | law-as-control        | [[modulative-governance]] |
@@ -130,17 +81,3 @@ The [[legal realism]] tradition critiques this from within, showing how applicat
 | Illegibility excluded | Illegibility can trigger recursion  |
 | Stability enforced    | Coherence discovered                |
 | Rule enforcement      | System adaptation                   |
-
-## Earlier material
-
-**[law-as-control](law-as-control.md)** describes a [governance structure](governance structure) in which systems exert power through **[symbolic declaration](symbolic declaration) and [formal response](formal response)**. It treats [deviation](../../../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/triage/delta-register/deviation) as [noncompliance](../../../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/triage/delta-register/noncompliance) and organizes participation through the lens of [legal legibility](legal legibility). The [law](../../../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/triage/delta-register/law) is not simply a [rule](../../../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/triage/delta-register/rule)—it is the framework through which the system defines *what counts as [reality](../../../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/triage/delta-register/reality)*.
-
-This logic underpins most state and institutional frameworks. It descends from [Max Weber](Max Weber)’s [theory of rational-legal authority](theory of rational-legal authority), in which legitimacy is tied to formal process, and echoes [James C. Scott](James C. Scott)’s critique of [administrative legibility](administrative legibility), where state power simplifies complexity to make it governable. In practice, this means that what cannot be legibly declared cannot be governed—**and so is excluded.**
-
-Where [Foucault](../../../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/triage/delta-register/Foucault)’s [disciplinary logic](disciplinary logic) centers on normalization through surveillance, law-as-control centers on **symbolic coherence** through static reference. It seeks not just behavior compliance, but **ontological agreement**.
-
-The [legal realism](legal realism) tradition critiques this from within, showing how application often diverges from declared principle. [Giorgio Agamben](Giorgio Agamben) pushes further: the law defines who is included, but also who can be excluded, legally.
-
-**[law-as-control](../../../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/triage/law-as-control)** describes a [governance structure](governance structure) in which systems exert power through **[symbolic declaration](symbolic declaration) and [formal response](formal response)**. It treats [deviation](../../../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/triage/deviation) as [noncompliance](../../../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/triage/noncompliance) and organizes participation through the lens of [legal legibility](legal legibility). The [law](../../../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/triage/law) is not simply a [rule](../../../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/triage/rule)—it is the framework through which the system defines *what counts as [reality](../../../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/triage/reality)*.
-
-Where [Foucault](../../../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/triage/Foucault)’s [disciplinary logic](disciplinary logic) centers on normalization through surveillance, law-as-control centers on **symbolic coherence** through static reference. It seeks not just behavior compliance, but **ontological agreement**.

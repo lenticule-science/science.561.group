@@ -285,8 +285,6 @@ lesson covers the accounting cycle and adjusting entries: the process used to
 bring recognition, measurement, classification, and cutoff to the selected
 reporting basis before statements are prepared.
 
-## Earlier material
-
 A trial balance proves that debits equal credits, but it doesn't tell you much at a glance.
 Financial statements reorganize the same data into three views, each answering a different question:
 

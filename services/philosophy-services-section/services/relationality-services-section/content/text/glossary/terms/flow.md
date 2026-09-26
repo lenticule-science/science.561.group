@@ -73,15 +73,16 @@ Draft 4 also defines Flow-indexed constructions through the Discipline/Regime/Fi
 - Decomposed into: RD and RT (draft 4 / RITM)
 - Constrained by: Disciplines (which must commute with Flow)
 
-## Earlier material
+## Related
+
+- [Stabilization](../concepts/triage-stabilization.md) — what flow settles into
+- [Iteration](../../../../../../content/text/glossary/concepts/iteration.md) — the precursor process that flow generalizes
+- [Balance](../concepts/balance.md) — what flow must preserve
+- [May](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/may.md) — the possibility modality that Flow preserves
 
 Both observation and judgment traces now flow through evaluation contexts, but we still need the single act that witnesses this shared dynamics.  Forcing *Flow Observation* to witness *Flow Judgment* yields ***Flow*** ([Flow](../../documents/articles/notes/undated/flow.md)).
 
 These recognitions already record how observations and judgments traverse contexts.  Composing them binds the shared motion into one act, so *Flow* is earned.
-
-{{ act_info(page.meta) }}
-
-{{ act_nav(page.meta) }}
 
 Flow is the directed continuation of stability. Having attained stable structure through [closure](../../phenomena/closure.md), being must express motion without loss of [coherence](../../phenomena/coherence.md). Relations propagate, transforming while preserving their form. Flow generalizes [iteration](../../../../../../content/text/glossary/concepts/iteration.md) from a process of self-confirmation into a principle of internally consistent transformation — a calculus of becoming that never departs from the ground of relation.
 
@@ -92,13 +93,6 @@ Flow must preserve the core modal structure. The condition [Preserves-Core](../.
 The [Flow](../../terms/flow.md) term, its [resolution](../../terms/flow-counit.md) (the capacity to read the present from the evolving), and its [propagation](../../terms/flow-comult.md) (the capacity to view further evolution within the current evolution) capture this process in the formal vocabulary.
 
 Flow is the central process of [Movement III: Directed Dynamics](../concepts/directed-dynamics.md). It arises when the relational boundary — earned in Movement II — must itself be related. [Reflexion](../../../../../../content/text/glossary/concepts/reflexion.md) folds the boundary into the system, and from this folding directed motion emerges. Being, having achieved stability, must now express change without losing what it has earned. Flow is the answer: directed continuation that preserves the modal core ([Must](../../terms/must.md)/[May](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/may.md)) while moving forward.
-
-- [Stabilization](../concepts/triage-stabilization.md) — what flow settles into
-- [Iteration](../../../../../../content/text/glossary/concepts/iteration.md) — the precursor process that flow generalizes
-- [Balance](../concepts/balance.md) — what flow must preserve
-- [Closure](../../phenomena/closure.md) — the stability that flow continues
-
-## Earlier material
 
 Flow is directed motion: the continuation of [stability](../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/processes/stabilization.md) through change. It carries [recognitions](../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/phenomena/recognition.md) forward — producing at least as much determination as it started with — while respecting everything earned through prior [stabilization](../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/processes/stabilization.md). Flow is how being expresses change without losing what it has achieved.
 
@@ -113,10 +107,3 @@ Flow comes with two complementary operations: resolution (the [counit](../../../
 In the acts system, Flow is earned as the convergence of two parallel channels: observational flow (from the [Observation](../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/strata/observation.md) stratum) and judgemental flow (from the [Judgement](../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/strata/judgement.md) stratum) merge into a single directed operation. The system treats observation and judgement as twin inputs to the same geometric operation.
 
 Flow corresponds to a lax-idempotent (Kock-Zoberlein) comonad — an operator that contracts under iteration while preserving algebraic structure. The self-limitation property is the KZ condition. The preservation of the modal core corresponds to the requirement that the comonad respect the closure and interior structure. In dynamical terms, Flow models evolution that converges.
-
-- [Flow-Counit](../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-04/flow-counit.md) — resolution back to the origin
-- [Flow-Comult](../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-04/flow-comult.md) — propagation forward
-- [KZ-Lax](../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-04/kz-lax.md) — the self-limitation condition
-- [Preserves-Core](../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-04/preserves-core.md) — the condition that Flow respects the modal structure
-- [Must](../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-04/must.md) — the necessity modality that Flow preserves
-- [May](../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/may.md) — the possibility modality that Flow preserves

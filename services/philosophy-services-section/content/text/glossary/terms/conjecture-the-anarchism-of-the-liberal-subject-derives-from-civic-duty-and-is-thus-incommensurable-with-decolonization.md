@@ -14,17 +14,6 @@ The [anarchism](../../../../../social-science-services-section/services/sociolog
 [Proof](../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/proof.md)  
 [unproven](unproven.md)
 
-[claims](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/essay-writing-services-section/content/text/glossary/terms/claim.md)  
-- Given that [liberal anarchism](../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/liberal-anarchism.md), that is, anarchism of the liberal subject, requires itself be functional within [liberalism](liberalism.md) and thus a part of [liberal worlding](../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/liberal-worlding.md), it must maintain [compatibility](../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/compatibility.md) with liberalism.
-- Given the [lineage of liberal anarchism](../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/lineage-of-liberal-anarchism.md) is [deviation](../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/deviation.md) of the [lineage of liberal individualism](../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/lineage-of-liberal-individualism.md), its [a priori determinations](a-priori-determination.md) may be [derived](../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/deriving.md) from that lineage.
-
-## Earlier material
-
-[Proof](../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/proof.md)  
-[unproven](unproven.md)
-
-—
-
 \<!– source: archive/library/critical-theory/theories/anarchism/theories/indigenous-anarchism/prose/learning/claims/liberal-anarchism-is-incommensurate-with-decolonization.md –\>
 
 \## Imported source: archive/library/critical-theory/theories/anarchism/theories/indigenous-anarchism/prose/learning/claims/liberal-anarchism-is-incommensurate-with-decolonization.md
@@ -37,10 +26,14 @@ The [anarchism](../../../../../social-science-services-section/services/sociolog
 
 publish<sub>to</sub>:
 
-- emsenn-net
+- emsenn
 
-Proof  
-unproven
+\<!– source: content/critical-theory/domains/povinellian/domains/settler-colonialism/texts/liberal-anarchism-is-incommensurate-with-decolonization.md –\>
+
+\## Imported source: content/critical-theory/domains/povinellian/domains/settler-colonialism/texts/liberal-anarchism-is-incommensurate-with-decolonization.md
+
+- Liberalism
+- Decolonization-net
 
 \<!– source: content/critical-theory/domains/anarchism/domains/indigenous-anarchism/texts/liberal-anarchism-is-incommensurate-with-decolonization.md –\>
 
@@ -50,9 +43,6 @@ unproven
 
 - emsenn
 
-\<!– source: content/critical-theory/domains/povinellian/domains/settler-colonialism/texts/liberal-anarchism-is-incommensurate-with-decolonization.md –\>
-
-\## Imported source: content/critical-theory/domains/povinellian/domains/settler-colonialism/texts/liberal-anarchism-is-incommensurate-with-decolonization.md
-
-- Liberalism
-- Decolonization
+[claims](../../../../../information-science-services-section/services/communication-science-services-section/services/writing-services-section/services/essay-writing-services-section/content/text/glossary/terms/claim.md)  
+- Given that [liberal anarchism](../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/liberal-anarchism.md), that is, anarchism of the liberal subject, requires itself be functional within [liberalism](liberalism.md) and thus a part of [liberal worlding](../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/liberal-worlding.md), it must maintain [compatibility](../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/compatibility.md) with liberalism.
+- Given the [lineage of liberal anarchism](../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/lineage-of-liberal-anarchism.md) is [deviation](../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/deviation.md) of the [lineage of liberal individualism](../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/lineage-of-liberal-individualism.md), its [a priori determinations](a-priori-determination.md) may be [derived](../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/deriving.md) from that lineage.

@@ -70,23 +70,6 @@ Per the library's enterprise-vs-contract distinction, both involve commitments b
 
 Per the [hohfeldian-position](../../../../../../../../../../../content/text/glossary/terms/hohfeldian-position.md) text, contract formation is a second-quartet phenomenon. The substrate-algebraic content:
 
-1. *Offer* — $P_1$ exercises a power to create a power-and-liability in $P_2$. Substrate increment: cell `offer-from-P_1-to-P_2-on-Φ` at $\mathbf{t}$, plus a new jural-relation $R^P_{\mathrm{accept}}$ with `kind: power`, `active-holder: P_2`, `scope-action: accept-or-reject-the-offer`.
-2. *Acceptance* — $P_2$ exercises the just-created power. Substrate increment: cell `acceptance-by-P_2-of-offer` at $\mathbf{t}$. A closure rule fires: if both offer and acceptance cells are at $\mathbf{t}$ and $V$ holds, instantiate the four contractual jural relations.
-3. *Formation* — the four jural relations settle at $\mathbf{t}$ jointly. The contract is now formed and operative.
-
-Formation is *not* the same as performance: the relations exist (cells settled) regardless of whether either party has yet performed. The substrate-algebraic distinction between *being bound* and *having performed* is exactly the bilattice value at the duty cell ($\mathbf{t}$, contract-bound) vs. at the promise cell ($\bot$, not yet performed; $\mathbf{t}$, performed; $\mathbf{f}$, breached).
-
-## Contract within an institution
-
-Most contracts are formed within an [institution](./institution.md) — a normative system whose rules define what counts as a valid contract, what consideration counts, what discharge means, etc. The contract's $V$ is *institution-relative*: the same offer-acceptance pattern that forms a contract under common-law fails to form one under civil-law if `cause` (rather than `consideration`) is absent. As substrate-condition: $V$ is a closure-rule subsystem of the relevant institution's $\mathcal{S}_I$, not a stand-alone validity check.
-
-This is the substrate-algebraic content of "contracts are creatures of legal systems": the binding force comes from the institution; the contract is one form the institution's rules generate.
-
-## Earlier material
-
-Per the [hohfeldian-position](../../../../../../../../../../../content/text/glossary/terms/hohfeldian-position.md) text, contract formation is a second-quartet phenomenon.
-The substrate-algebraic content:
-
 The four contractual jural relations — once formed by the offer-acceptance closure rule — are $\leq_k$-monotone at $\mathbf{t}$.
 By the [predication-settling CALM corollary](../../../../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/formalization/infomaterial/lib/infomaterial/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/sheaf/content/settling-cohomology/references/settling-calm-corollary.md):
 
@@ -110,20 +93,14 @@ The $H^1_t$ class is the substrate-algebraic signature of *unresolved contractua
 Resolution (adjudication by an institution, or mutual agreement): the dispute is settled in one direction; the breach cell or the performance cell is definitively established; $\mathcal{F}^{(\top)}_\mathcal{C}$ returns to zero; the LES collapses.
 The substrate-algebraic content of "the dispute has been resolved" is: $\mathcal{F}^{(\top)}_\mathcal{C} = 0$ after adjudication, $H^1_t$-obstruction class becomes trivial.
 
-Per the [hohfeldian-position](../../../../../../../../../../../content/text/glossary/terms/hohfeldian-position.md) text, contract formation is a second-quartet phenomenon. The substrate-algebraic content:
+1. *Offer* — $P_1$ exercises a power to create a power-and-liability in $P_2$. Substrate increment: cell `offer-from-P_1-to-P_2-on-Φ` at $\mathbf{t}$, plus a new jural-relation $R^P_{\mathrm{accept}}$ with `kind: power`, `active-holder: P_2`, `scope-action: accept-or-reject-the-offer`.
+2. *Acceptance* — $P_2$ exercises the just-created power. Substrate increment: cell `acceptance-by-P_2-of-offer` at $\mathbf{t}$. A closure rule fires: if both offer and acceptance cells are at $\mathbf{t}$ and $V$ holds, instantiate the four contractual jural relations.
+3. *Formation* — the four jural relations settle at $\mathbf{t}$ jointly. The contract is now formed and operative.
 
-The four contractual jural relations — once formed by the offer-acceptance closure rule — are $\leq_k$-monotone at $\mathbf{t}$. By the [predication-settling CALM corollary](../../../../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/formalization/infomaterial/lib/infomaterial/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/sheaf/content/settling-cohomology/references/settling-calm-corollary.md):
+Formation is *not* the same as performance: the relations exist (cells settled) regardless of whether either party has yet performed. The substrate-algebraic distinction between *being bound* and *having performed* is exactly the bilattice value at the duty cell ($\mathbf{t}$, contract-bound) vs. at the promise cell ($\bot$, not yet performed; $\mathbf{t}$, performed; $\mathbf{f}$, breached).
 
-For distributed commercial substrates (distributed trade platforms, multi-party smart-contract systems): confirming that a contract is in force and that no breach has been witnessed is the combination of two coordination-free positive queries. Disputing breach — "did the party *not* breach?" — requires coordination.
+## Contract within an institution
 
-The [truth-knowledge long exact sequence](../../../../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/sheaf/content/settling-cohomology/references/truth-knowledge-cohomology-long-exact-sequence.md) applied to the contract's jural-relation sheaf $\mathcal{F}_\mathcal{C}$:
+Most contracts are formed within an [institution](./institution.md) — a normative system whose rules define what counts as a valid contract, what consideration counts, what discharge means, etc. The contract's $V$ is *institution-relative*: the same offer-acceptance pattern that forms a contract under common-law fails to form one under civil-law if `cause` (rather than `consideration`) is absent. As substrate-condition: $V$ is a closure-rule subsystem of the relevant institution's $\mathcal{S}_I$, not a stand-alone validity check.
 
-**Clean contract (no breach):** $\mathcal{F}^{(\top)}_\mathcal{C} = 0$. The four jural relations are consistently settled; the LES collapses to $H^n_t \cong H^n_k$. No cohomological obstruction.
-
-**Contested breach** (one party asserts breach, the other asserts performance): The breach-witness cell and performance-witness cell are both asserted — $\langle \texttt{breach-by-P_1}\rangle = \mathbf{t}$ and $\langle \texttt{performed-by-P_1}\rangle = \mathbf{t}$ — driving the relevant cell toward $\top$. The inconsistency sheaf $\mathcal{F}^{(\top)}_\mathcal{C}$ is non-zero; the connecting morphism $\partial: H^0(\mathcal{F}^{(\top)}) \to H^1_t$ is non-zero. The $H^1_t$ class is the substrate-algebraic signature of *unresolved contractual dispute*: a degree-1 cohomological obstruction encoding the contradiction between breach-assertion and performance-assertion.
-
-Resolution (adjudication by an institution, or mutual agreement): the dispute is settled in one direction; the breach cell or the performance cell is definitively established; $\mathcal{F}^{(\top)}_\mathcal{C}$ returns to zero; the LES collapses. The substrate-algebraic content of "the dispute has been resolved" is: $\mathcal{F}^{(\top)}_\mathcal{C} = 0$ after adjudication, $H^1_t$-obstruction class becomes trivial.
-
-Per the [hohfeldian-position](../../../../../../../../../../../content/text/glossary/terms/hohfeldian-position.md) text, contract formation is a second-quartet phenomenon. The substrate-algebraic content:
-
-The [truth-knowledge long exact sequence](../../../../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/sheaf/content/settling-cohomology/references/truth-knowledge-cohomology-long-exact-sequence.md) applied to the contract's jural-relation sheaf $\mathcal{F}_\mathcal{C}$:
+This is the substrate-algebraic content of "contracts are creatures of legal systems": the binding force comes from the institution; the contract is one form the institution's rules generate.

@@ -10,6 +10,9 @@ draft-names:
   draft-9: "(implicit — each S-expression is a stabilized relative)"
 stability: medium — named explicitly only in draft 7; the concept is present everywhere
 description: The minimal structure that holds a relation open durably.
+domain: "[../../../Relationality/triage/00-probably-redundant/20250502-relational-notes/fffstem/relating/structures/domain of relating](../../../Relationality/triage/00-probably-redundant/20250502-relational-notes/fffstem/relating/structures/domain of relating)"
+date-introduced: "[2025-05-03](../../triage/2025-05-03)"
+date-last-modified: "[2025-05-03](../../triage/2025-05-03)"
 ---
 
 The minimal structure that holds a relation open durably. The relative is the first stabilized form within the relational field. It ensures that the relation between a thing and its own existing is coherent, persistent, and self-sustaining.
@@ -36,24 +39,6 @@ This means: every thing that exists is, at minimum, a relative — a stabilized 
 - Part of: the first triad's structural closure (Differentiate → Tension → Relative)
 - Corresponds to: an element of the Heyting algebra (in formal language)
 - Present in: draft 7 (explicitly), draft 0 (as ternary structure), all others (implicitly)
-
-
----
-
-<!-- source: archive/triage/relationality-2/domains/human-draft-7/domains/system/domains/structures/relative.md -->
-
-## Imported source: archive/triage/relationality-2/domains/human-draft-7/domains/system/domains/structures/relative.md
-
----
-type: "[structure](../../triage/structure)"
-domain: "[../../../Relationality/triage/00-probably-redundant/20250502-relational-notes/fffstem/relating/structures/domain of relating](../../../Relationality/triage/00-probably-redundant/20250502-relational-notes/fffstem/relating/structures/domain of relating)"
-date-introduced: "[2025-05-03](../../triage/2025-05-03)"
-date-last-modified: "[2025-05-03](../../triage/2025-05-03)"
----
-
-- [../acts/define](../../acts/define):: A [relative](../../triage/relative) is the minimal [structure](../../triage/structure) that holds a [../../../../../mathematics/objects/sets/terms/relation](../../../../../../mathematics/objects/sets/terms/relation) open durably. It is the first stabilized form within the [../../../Relationality/triage/00-probably-redundant/20250502-relational-notes/fffstem/relating/structures/domain of relating](../../../Relationality/triage/00-probably-redundant/20250502-relational-notes/fffstem/relating/structures/domain of relating), ensuring that the [../../../../../mathematics/objects/sets/terms/relation](../../../../../../mathematics/objects/sets/terms/relation) between a [triage/thing](../../triage/triage/thing) and its own [../acts/exist|existing](../../acts/exist|existing) is coherent, persistent, and self-sustaining.
-
-## Derivation
 
 - In the derivation of [../acts/exist|existing](../../acts/exist|existing):
     - The act of [../../../ai-generated-relationality/relationality-slop-2026-03-02/acts/relate|relating](../../../../ai-generated-relationality/relationality-slop-2026-03-02/acts/relate|relating) sustains the [../../../ai-generated-relationality/relationality-slop-2026-03-03/terms/tension](../../../../ai-generated-relationality/relationality-slop-2026-03-03/terms/tension) between [../../../ai-generated-relationality/relationality-slop-2026-03-03/terms/inclusion](../../../../ai-generated-relationality/relationality-slop-2026-03-03/terms/inclusion) and [../../../ai-generated-relationality/relationality-slop-2026-03-03/terms/exclusion](../../../../ai-generated-relationality/relationality-slop-2026-03-03/terms/exclusion);

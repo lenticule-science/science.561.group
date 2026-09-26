@@ -15,8 +15,6 @@ Sets are extensional: two sets are equal exactly when they have the same element
 
 Formal set theories specify which collections exist and how they may be constructed, avoiding contradictions caused by unrestricted comprehension.
 
-## Earlier material
-
 A set is a collection of distinct objects, called [elements](element.md), with a definite membership criterion: for any candidate object, either it belongs to the set or it does not. Sets are specified by listing their elements ({1, 2, 3}) or by a property ({x : x is even}). Two sets are equal if and only if they have the same elements — a set is determined entirely by its membership, not by how it is described.
 
 The axioms of set theory (Zermelo-Fraenkel with Choice, ZFC) regulate which collections count as sets, avoiding paradoxes like Russell's (the set of all sets not containing themselves). Without these axioms, unrestricted set formation leads to contradictions — the set of all sets not containing themselves both contains and does not contain itself.

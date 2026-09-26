@@ -82,8 +82,6 @@ operator algebra besides the one defined by the acts.
   - Spectral projections for each observable.
   - Diagnostics for orthogonality, reconstruction error, and spectral radius.
 
-## Earlier material
-
 With acts
 
 - `HarmonicMode = (EnsureFixedPoint HarmonicStep)`,

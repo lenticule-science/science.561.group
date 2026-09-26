@@ -10,6 +10,12 @@ date-created: 2025-12-26
 type: concept
 tags: []
 description: You have two overlapping local traces and assign a meaning to a recognition term on each one.
+depends_on:
+  - presheaf
+  - presheaf-topos
+  - sheaf-condition
+  - sheafification
+  - profile-topos
 ---
 
 ## Concrete example first
@@ -29,31 +35,6 @@ So **sheaf semantics** is the requirement that interpretation respects locality,
 - It turns trace-indexed data into coherent global semantics.
 - It prevents contradictory local interpretations from entering the universe.
 - It is one of the three closure principles used to generate GFRTU.
-
-
----
-
-<!-- source: archive/triage/relationality/domains/relationality-slop-2025-04/domains/internal/sheaf-semantics.md -->
-
-## Imported source: archive/triage/relationality/domains/relationality-slop-2025-04/domains/internal/sheaf-semantics.md
-
----
-title: Sheaf Semantics
-aliases:
-  - Sheaf Semantics
-  - sheaf semantics
-date-created: "2026-03-04T00:00:00"
-tags:
-  - sheaf
-  - presheaf
-  - topos
-depends_on:
-  - presheaf
-  - presheaf-topos
-  - sheaf-condition
-  - sheafification
-  - profile-topos
----
 
 # Theorem (Sheaf Semantics)
 

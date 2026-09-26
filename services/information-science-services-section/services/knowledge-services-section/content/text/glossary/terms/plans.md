@@ -20,8 +20,6 @@ where type = [personal log entry](personal log entry) AND
   contains(file.outlinks, [Migration to Pine Ridge](Migration to Pine Ridge))
 ```
 
-## Earlier material
-
 Then I can know which faucets specifically to open in the winter.
 
 General criteria:

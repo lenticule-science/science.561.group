@@ -48,6 +48,35 @@ This is the substrate-algebraic content of "cumulative wisdom" — wisdom that e
 
 By the [regime-of-recurrent-practice theorem](./regime-of-recurrent-practice.md):
 
+The generational review uses *all-prior aggregation* ($\alpha_R$ = limit-aggregating).
+A structurally different review would use *$n$-generation look-back* ($\alpha_R$ = finite-history, depth $n$): "take stock of the prior $n$ generations only."
+This depth-$n$ variant is a [step-$n$ recurrent practice](../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/content/individual/content/agent/actuating/content/actuator/embodying/content/body/integrating/content/drone/swarming/content/swarm/humanities/theories/math/theories/categories/theories/predication-categories/objects/step-n-substitution-rule.md) in the sense of the math program:
+
+- Its closure rule has antecedents depending on at most $n$ prior cycles — a finite-history, Scott-continuous rule.
+- Its substitution matrix $M$ (how cycle-$i$'s cell-count depends on cycles $i-1, \ldots, i-n$) has a Perron-Frobenius eigenvalue governing the long-term frequency distribution of different pattern cells.
+- Its classifying invariant is $\mathrm{cl}\text{-}\mathrm{inv}^{(n)} \in \mathbb{Z}^n$ with rank exactly $n$.
+
+| Review pattern | Aggregation $\alpha_R$ | Regime | $H^1$ structure |
+|---|---|---|---|
+| Depth-$n$ look-back (step-$n$) | Finite-history depth $n$ | Scott-continuous | $\mathbb{Z}^n$ (step-$n$ classifying invariant) |
+| All-prior (limit-aggregating) | Limit-aggregating | Transfinite-bounded | Non-trivial, LES-computed |
+| Uncountable cofinality | Limit-aggregating, uncountable | Aperiodic | Firing-ordinal class |
+
+The Haudenosaunee seven-generation principle (see [consensus-closure](../../../services/predicated-governance-services-section/content/glossary/terms/consensus-closure.md)) sits at the depth-$7$ variant: each decision is evaluated against its consequences seven generations forward.
+As a recurrent practice, the seven-generation review has depth-$7$ antecedents (finite-history, $n = 7$) and is Scott-continuous — but its step-$7$ combinatorial dynamics produce a Perron-Frobenius-governed long-term frequency pattern, giving non-trivial step-$7$ classifying invariant $\mathrm{cl}\text{-}\mathrm{inv}^{(7)} \in \mathbb{Z}^7$.
+This is a structurally distinct $H^1$-class from the all-prior limit-aggregating generational review: two routes to non-trivial cohomology via different mechanisms.
+
+The CALM corollary does not apply at the non-Scott-continuous firing ordinals.
+At each $\mu \in L_\mathrm{ns}(\kappa, v)$ — the non-Scott-continuous firing ordinals of the transfinite-bounded settling — the closure operator adds cells whose antecedents quantify over *all prior stages*, not a finite prefix.
+The query "has the $\mu$-stage limit content settled?" is not $\leq_k$-monotone in the standard sense: it cannot be confirmed by any single prior-stage replica, because the $\mu$-stage content is not the filtered-colimit value of any prior finite collection.
+
+Concretely: "has the generational review's pattern-detection cell settled at the $\omega$-stage?" requires confirming that *all* prior-cycle lesson-learned cells have been aggregated and that the pattern-detection rule has fired on the limit aggregate.
+No single prior-stage log record can confirm this; the confirmation requires access to the *full transfinite sequence* of cycle records up to $\omega$.
+
+This is the CALM-theoretic cost of limit-aggregating closure rules: the resulting coordination requirement is not a failure of the substrate design but an accurate reflection of the work's structural demand.
+A community that commits to limit-aggregating generational review genuinely needs coordination across all prior records at each limit stage.
+The substrate-algebraic analysis makes this requirement structurally precise — and distinguishes it from the coordination-free in-between stages (where the CALM corollary applies normally at each finite prior cycle).
+
 - Cofinality of the limit-aggregation: countable (each cycle's aggregation is over a countable set of prior cycles; the meta-aggregation across cycles uses ordinal $\omega$ and beyond, but stays countable for any finite-time reach).
 - $\kappa$: the closure ordinal exceeds $\omega$ (because of the non-Scott-continuous step) but stays below $\omega_1$ (because cofinality is countable).
 
@@ -88,52 +117,3 @@ This is the third worked example in [`predicated-work/examples/`](./) and the fi
 - Transfinite-bounded regime: generational review.
 
 Aperiodic-regime examples would require concrete worked-out functions — see [function-closure-rules](../questions/function-closure-rules.md) for the open question.
-
-## Earlier material
-
-By the [regime-of-recurrent-practice theorem](regime-of-recurrent-practice.md):
-
-The generational review uses *all-prior aggregation* ($\alpha_R$ = limit-aggregating).
-A structurally different review would use *$n$-generation look-back* ($\alpha_R$ = finite-history, depth $n$): "take stock of the prior $n$ generations only."
-This depth-$n$ variant is a [step-$n$ recurrent practice](../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/content/individual/content/agent/actuating/content/actuator/embodying/content/body/integrating/content/drone/swarming/content/swarm/humanities/theories/math/theories/categories/theories/predication-categories/objects/step-n-substitution-rule.md) in the sense of the math program:
-
-- Its closure rule has antecedents depending on at most $n$ prior cycles — a finite-history, Scott-continuous rule.
-- Its substitution matrix $M$ (how cycle-$i$'s cell-count depends on cycles $i-1, \ldots, i-n$) has a Perron-Frobenius eigenvalue governing the long-term frequency distribution of different pattern cells.
-- Its classifying invariant is $\mathrm{cl}\text{-}\mathrm{inv}^{(n)} \in \mathbb{Z}^n$ with rank exactly $n$.
-
-| Review pattern | Aggregation $\alpha_R$ | Regime | $H^1$ structure |
-|---|---|---|---|
-| Depth-$n$ look-back (step-$n$) | Finite-history depth $n$ | Scott-continuous | $\mathbb{Z}^n$ (step-$n$ classifying invariant) |
-| All-prior (limit-aggregating) | Limit-aggregating | Transfinite-bounded | Non-trivial, LES-computed |
-| Uncountable cofinality | Limit-aggregating, uncountable | Aperiodic | Firing-ordinal class |
-
-The Haudenosaunee seven-generation principle (see [consensus-closure](../../../services/predicated-governance-services-section/content/glossary/terms/consensus-closure.md)) sits at the depth-$7$ variant: each decision is evaluated against its consequences seven generations forward.
-As a recurrent practice, the seven-generation review has depth-$7$ antecedents (finite-history, $n = 7$) and is Scott-continuous — but its step-$7$ combinatorial dynamics produce a Perron-Frobenius-governed long-term frequency pattern, giving non-trivial step-$7$ classifying invariant $\mathrm{cl}\text{-}\mathrm{inv}^{(7)} \in \mathbb{Z}^7$.
-This is a structurally distinct $H^1$-class from the all-prior limit-aggregating generational review: two routes to non-trivial cohomology via different mechanisms.
-
-The CALM corollary does not apply at the non-Scott-continuous firing ordinals.
-At each $\mu \in L_\mathrm{ns}(\kappa, v)$ — the non-Scott-continuous firing ordinals of the transfinite-bounded settling — the closure operator adds cells whose antecedents quantify over *all prior stages*, not a finite prefix.
-The query "has the $\mu$-stage limit content settled?" is not $\leq_k$-monotone in the standard sense: it cannot be confirmed by any single prior-stage replica, because the $\mu$-stage content is not the filtered-colimit value of any prior finite collection.
-
-Concretely: "has the generational review's pattern-detection cell settled at the $\omega$-stage?" requires confirming that *all* prior-cycle lesson-learned cells have been aggregated and that the pattern-detection rule has fired on the limit aggregate.
-No single prior-stage log record can confirm this; the confirmation requires access to the *full transfinite sequence* of cycle records up to $\omega$.
-
-This is the CALM-theoretic cost of limit-aggregating closure rules: the resulting coordination requirement is not a failure of the substrate design but an accurate reflection of the work's structural demand.
-A community that commits to limit-aggregating generational review genuinely needs coordination across all prior records at each limit stage.
-The substrate-algebraic analysis makes this requirement structurally precise — and distinguishes it from the coordination-free in-between stages (where the CALM corollary applies normally at each finite prior cycle).
-
-By the [regime-of-recurrent-practice theorem](regime-of-recurrent-practice.md):
-
-The generational review uses *all-prior aggregation* ($\alpha_R$ = limit-aggregating). A structurally different review would use *$n$-generation look-back* ($\alpha_R$ = finite-history, depth $n$): "take stock of the prior $n$ generations only." This depth-$n$ variant is a [step-$n$ recurrent practice](../../../../../../../../social-theory-science-services-section/content/text/documents/articles/humanities/theories/math/theories/categories/theories/predication-categories/objects/step-n-substitution-rule.md) in the sense of the math program:
-
-The Haudenosaunee seven-generation principle (see [consensus-closure](../../../services/predicated-governance-services-section/content/glossary/terms/consensus-closure.md)) sits at the depth-$7$ variant: each decision is evaluated against its consequences seven generations forward. As a recurrent practice, the seven-generation review has depth-$7$ antecedents (finite-history, $n = 7$) and is Scott-continuous — but its step-$7$ combinatorial dynamics produce a Perron-Frobenius-governed long-term frequency pattern, giving non-trivial step-$7$ classifying invariant $\mathrm{cl}\text{-}\mathrm{inv}^{(7)} \in \mathbb{Z}^7$. This is a structurally distinct $H^1$-class from the all-prior limit-aggregating generational review: two routes to non-trivial cohomology via different mechanisms.
-
-The CALM corollary does not apply at the non-Scott-continuous firing ordinals. At each $\mu \in L_\mathrm{ns}(\kappa, v)$ — the non-Scott-continuous firing ordinals of the transfinite-bounded settling — the closure operator adds cells whose antecedents quantify over *all prior stages*, not a finite prefix. The query "has the $\mu$-stage limit content settled?" is not $\leq_k$-monotone in the standard sense: it cannot be confirmed by any single prior-stage replica, because the $\mu$-stage content is not the filtered-colimit value of any prior finite collection.
-
-This is the CALM-theoretic cost of limit-aggregating closure rules: the resulting coordination requirement is not a failure of the substrate design but an accurate reflection of the work's structural demand. A community that commits to limit-aggregating generational review genuinely needs coordination across all prior records at each limit stage. The substrate-algebraic analysis makes this requirement structurally precise — and distinguishes it from the coordination-free in-between stages (where the CALM corollary applies normally at each finite prior cycle).
-
-By the [regime-of-recurrent-practice theorem](regime-of-recurrent-practice.md):
-
-The generational review uses *all-prior aggregation* ($\alpha_R$ = limit-aggregating). A structurally different review would use *$n$-generation look-back* ($\alpha_R$ = finite-history, depth $n$): "take stock of the prior $n$ generations only." This depth-$n$ variant is a [step-$n$ recurrent practice](../../../../../../../../../../../humanities/theories/math/theories/categories/theories/predication-categories/objects/step-n-substitution-rule.md) in the sense of the math program:
-
-The Haudenosaunee seven-generation principle (see [consensus-closure](../../../services/predicated-governance-services-section/content/glossary/terms/consensus-closure.md)) sits at the depth-$7$ variant: each decision is evaluated against its consequences seven generations forward. As a recurrent practice, the seven-generation review has depth-$7$ antecedents (finite-history, $n = 7$) and is Scott-continuous — but its step-$7$ combinatorial dynamics produce a Perron-Frobenius-governed long-term frequency pattern, giving non-trivial step-$7$ classifying invariant $\mathrm{cl}\text{-}\mathrm{inv}^{(7)} \in \mathbb{Z}^7$. This is a structurally distinct $H^1$-class from the all-prior limit-aggregating generational review: two routes to non-trivial cohomology via different mechanisms.

@@ -35,6 +35,35 @@ For a [predicate-category morphism](../../../../../../../../../library/theories/
 
 Per (B2k) of the [predication hyperdoctrine](../../../../../../../../../library/theories/humanities/theories/math/theories/categories/theories/predication-categories/objects/predication-hyperdoctrine.md):
 
+The [predication-settling CALM corollary](../../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/formalization/infomaterial/lib/infomaterial/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/sheaf/content/settling-cohomology/references/settling-calm-corollary.md) connects directly to the hyperdoctrine's adjoint structure: **all $\leq_k$-monotone queries are coordination-free**.
+The $\leq_k$-adjoints on work fibers are exactly the $\leq_k$-monotone maps:
+
+- $f^*: A_p \to A_q$ is $\leq_k$-monotone (reindexing preserves $\leq_k$).
+- $\exists_f^k: A_q \to A_p$ is $\leq_k$-monotone (it is the left adjoint, which preserves joins).
+- $\forall_f^k: A_q \to A_p$ is $\leq_k$-monotone (right adjoint of a monotone map is monotone in the poset sense).
+
+Operational consequences: - "Is there an agent providing capability $c$?"
+($\exists_f^k$ on the capability fiber) is coordination-free: any replica with a local snapshot of the capability cells can answer this. - "Are all subtasks of $T$ settled?"
+($\forall_f^k$ on the subtask-goal fiber) is coordination-free: any replica with local goal-cell state can check the universal. - "What capabilities are currently held by agents in jurisdiction $\mathcal{J}$?"
+(composition $f^* \circ \exists_g^k$) is coordination-free by composition of monotone maps.
+
+The *non-coordination-free* queries are those using $\exists_f^t$ with *negation* or *anti-monotone* combination — "is this the *only* agent providing $c$?" or "is there *no* agent providing $c$?"
+These require reading the *absence* of positive evidence, which is anti-monotone and not expressible using $\exists_f^k$ alone.
+
+The practical upshot: the hyperdoctrine's $\leq_k$-adjoint system systematically identifies which quantifier-shaped operational queries can be answered by a distributed operations system without coordination.
+Queries using only $f^*$, $\exists_f^k$, $\forall_f^k$ are safe for decentralized evaluation; queries requiring negation or $\leq_t$-universal quantification require either coordination or a fresh-replica read.
+
+This object's (B3) Beck-Chevalley is the *structural* (hyperdoctrine-level) BC: existential quantification commutes with reindexing along pullback squares in the predicate category $\mathcal{C}_{\mathrm{op}}$.
+This covers cross-jurisdictional queries ("same existential, different subject") and subtask-aggregation queries ("same predicate, different scope").
+
+The [temporal Beck-Chevalley theorem](../../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/temporal-2-category/references/temporal-beck-chevalley.md) is a distinct (though related) result: it applies to pseudo-pullback squares in the *temporal 2-category* $\mathbf{T}(\mathcal{C}_{\mathrm{op}}, \lambda)$, where the morphisms are 1-cells advancing the settling across ordinal stages.
+The temporal BC ensures that queries about sub-events within a time window commute with the window's temporal advance — "did something happen during cycle $n$?" produces the same answer whether computed from the cycle's beginning or end.
+
+The two BC results cover complementary aspects: - **Structural BC**: "same query, different scope/subject" → queries commute with reindexing along predicate-category morphisms. - **Temporal BC**: "same query, different time-window boundary" → queries commute with advancement of the settling's temporal stage.
+
+A query that combines both — "did any agent in jurisdiction $\mathcal{J}$ acquire capability $c$ during cycle $n$?" — uses both BC results: structural BC for the jurisdiction restriction ($f^*$) and temporal BC for the cycle-window commutation.
+Composing both BC invertible cells gives the composite coherence.
+
 $$\exists_f^k(f^*(\alpha) \wedge_k \phi) \cong \alpha \wedge_k \exists_f^k(\phi)$$
 
 Operationally: the existential of (a substituted condition AND a fiber value) equals (the condition AND the existential of the fiber value). In dispatch language: "is there an agent (with property $\alpha$) providing capability $c$?" decomposes into "(property $\alpha$) AND (some agent provides $c$)" — the existential commutes with the property-conjunction. This makes complex queries factor into simpler steps.
@@ -69,63 +98,3 @@ This is why [dispatch](../morphisms/dispatch.md) prefers $\Rightarrow$ (the resi
 The hyperdoctrine layer is the second chapter of the math program's derivation chain; predicated-work inherits the structure rather than re-deriving it. This object's job is to *expose* the inherited adjoints in operational vocabulary, so that quantifier-shaped operational queries — "exists an agent…", "for all tasks…", "carve out the sub-collection of…" — translate to substrate-algebraic operations the implementation can directly compute.
 
 Without the hyperdoctrine layer, predicated-work could only state cell-level facts. With it, the theory speaks the language of first-order quantification over the substrate, which is what most operational reasoning actually needs.
-
-## Earlier material
-
-Per (B2k) of the [predication hyperdoctrine](../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/content/individual/content/agent/actuating/content/actuator/embodying/content/body/integrating/content/drone/swarming/content/swarm/content/social/humanities/theories/math/theories/categories/theories/predication-categories/objects/predication-hyperdoctrine.md):
-
-The [predication-settling CALM corollary](../../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/formalization/infomaterial/lib/infomaterial/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/sheaf/content/settling-cohomology/references/settling-calm-corollary.md) connects directly to the hyperdoctrine's adjoint structure: **all $\leq_k$-monotone queries are coordination-free**.
-The $\leq_k$-adjoints on work fibers are exactly the $\leq_k$-monotone maps:
-
-- $f^*: A_p \to A_q$ is $\leq_k$-monotone (reindexing preserves $\leq_k$).
-- $\exists_f^k: A_q \to A_p$ is $\leq_k$-monotone (it is the left adjoint, which preserves joins).
-- $\forall_f^k: A_q \to A_p$ is $\leq_k$-monotone (right adjoint of a monotone map is monotone in the poset sense).
-
-Operational consequences: - "Is there an agent providing capability $c$?"
-($\exists_f^k$ on the capability fiber) is coordination-free: any replica with a local snapshot of the capability cells can answer this. - "Are all subtasks of $T$ settled?"
-($\forall_f^k$ on the subtask-goal fiber) is coordination-free: any replica with local goal-cell state can check the universal. - "What capabilities are currently held by agents in jurisdiction $\mathcal{J}$?"
-(composition $f^* \circ \exists_g^k$) is coordination-free by composition of monotone maps.
-
-The *non-coordination-free* queries are those using $\exists_f^t$ with *negation* or *anti-monotone* combination — "is this the *only* agent providing $c$?" or "is there *no* agent providing $c$?"
-These require reading the *absence* of positive evidence, which is anti-monotone and not expressible using $\exists_f^k$ alone.
-
-The practical upshot: the hyperdoctrine's $\leq_k$-adjoint system systematically identifies which quantifier-shaped operational queries can be answered by a distributed operations system without coordination.
-Queries using only $f^*$, $\exists_f^k$, $\forall_f^k$ are safe for decentralized evaluation; queries requiring negation or $\leq_t$-universal quantification require either coordination or a fresh-replica read.
-
-This object's (B3) Beck-Chevalley is the *structural* (hyperdoctrine-level) BC: existential quantification commutes with reindexing along pullback squares in the predicate category $\mathcal{C}_{\mathrm{op}}$.
-This covers cross-jurisdictional queries ("same existential, different subject") and subtask-aggregation queries ("same predicate, different scope").
-
-The [temporal Beck-Chevalley theorem](../../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/temporal-2-category/references/temporal-beck-chevalley.md) is a distinct (though related) result: it applies to pseudo-pullback squares in the *temporal 2-category* $\mathbf{T}(\mathcal{C}_{\mathrm{op}}, \lambda)$, where the morphisms are 1-cells advancing the settling across ordinal stages.
-The temporal BC ensures that queries about sub-events within a time window commute with the window's temporal advance — "did something happen during cycle $n$?" produces the same answer whether computed from the cycle's beginning or end.
-
-The two BC results cover complementary aspects: - **Structural BC**: "same query, different scope/subject" → queries commute with reindexing along predicate-category morphisms. - **Temporal BC**: "same query, different time-window boundary" → queries commute with advancement of the settling's temporal stage.
-
-A query that combines both — "did any agent in jurisdiction $\mathcal{J}$ acquire capability $c$ during cycle $n$?" — uses both BC results: structural BC for the jurisdiction restriction ($f^*$) and temporal BC for the cycle-window commutation.
-Composing both BC invertible cells gives the composite coherence.
-
-Per (B2k) of the [predication hyperdoctrine](../../../../../../../../social-theory-science-services-section/content/text/documents/articles/research/humanities/theories/math/theories/categories/theories/predication-categories/objects/predication-hyperdoctrine.md):
-
-The [predication-settling CALM corollary](../../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/formalization/infomaterial/lib/infomaterial/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/sheaf/content/settling-cohomology/references/settling-calm-corollary.md) connects directly to the hyperdoctrine's adjoint structure: **all $\leq_k$-monotone queries are coordination-free**. The $\leq_k$-adjoints on work fibers are exactly the $\leq_k$-monotone maps:
-
-Operational consequences:
-- "Is there an agent providing capability $c$?" ($\exists_f^k$ on the capability fiber) is coordination-free: any replica with a local snapshot of the capability cells can answer this.
-- "Are all subtasks of $T$ settled?" ($\forall_f^k$ on the subtask-goal fiber) is coordination-free: any replica with local goal-cell state can check the universal.
-- "What capabilities are currently held by agents in jurisdiction $\mathcal{J}$?" (composition $f^* \circ \exists_g^k$) is coordination-free by composition of monotone maps.
-
-The *non-coordination-free* queries are those using $\exists_f^t$ with *negation* or *anti-monotone* combination — "is this the *only* agent providing $c$?" or "is there *no* agent providing $c$?" These require reading the *absence* of positive evidence, which is anti-monotone and not expressible using $\exists_f^k$ alone.
-
-The practical upshot: the hyperdoctrine's $\leq_k$-adjoint system systematically identifies which quantifier-shaped operational queries can be answered by a distributed operations system without coordination. Queries using only $f^*$, $\exists_f^k$, $\forall_f^k$ are safe for decentralized evaluation; queries requiring negation or $\leq_t$-universal quantification require either coordination or a fresh-replica read.
-
-This object's (B3) Beck-Chevalley is the *structural* (hyperdoctrine-level) BC: existential quantification commutes with reindexing along pullback squares in the predicate category $\mathcal{C}_{\mathrm{op}}$. This covers cross-jurisdictional queries ("same existential, different subject") and subtask-aggregation queries ("same predicate, different scope").
-
-The [temporal Beck-Chevalley theorem](../../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/temporal-2-category/references/temporal-beck-chevalley.md) is a distinct (though related) result: it applies to pseudo-pullback squares in the *temporal 2-category* $\mathbf{T}(\mathcal{C}_{\mathrm{op}}, \lambda)$, where the morphisms are 1-cells advancing the settling across ordinal stages. The temporal BC ensures that queries about sub-events within a time window commute with the window's temporal advance — "did something happen during cycle $n$?" produces the same answer whether computed from the cycle's beginning or end.
-
-The two BC results cover complementary aspects:
-- **Structural BC**: "same query, different scope/subject" → queries commute with reindexing along predicate-category morphisms.
-- **Temporal BC**: "same query, different time-window boundary" → queries commute with advancement of the settling's temporal stage.
-
-A query that combines both — "did any agent in jurisdiction $\mathcal{J}$ acquire capability $c$ during cycle $n$?" — uses both BC results: structural BC for the jurisdiction restriction ($f^*$) and temporal BC for the cycle-window commutation. Composing both BC invertible cells gives the composite coherence.
-
-Per (B2k) of the [predication hyperdoctrine](../../../../../../../../../../humanities/theories/math/theories/categories/theories/predication-categories/objects/predication-hyperdoctrine.md):
-
-The [temporal Beck-Chevalley theorem](../../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/temporal-2-category/references/temporal-beck-chevalley.md) is a distinct (though related) result: it applies to pseudo-pullback squares in the *temporal 2-category* $\mathbf{T}(\mathcal{C}_{\mathrm{op}}, \lambda)$, where the morphisms are 1-cells advancing the settling across ordinal stages. The temporal BC ensures that queries about sub-events within a time window commute with the window's temporal advance — "did something happen during cycle $n$?" produces the same answer whether computed from the cycle's beginning or end.

@@ -97,21 +97,6 @@ This means:
 - [Dark Forest](../../../../../../../philosophy-services-section/services/logic-services-section/content/text/documents/articles/notes/2026/04/05/2026-04-05-dark-forest-zero-knowledge-games.md) — pioneering use of ZKPs in gaming
 - [Imminent Solace](../../../../../../../philosophy-services-section/services/logic-services-section/content/text/documents/articles/notes/2026/04/05/2026-04-05-mud-games.md) — modern MUD game using ZK fog of war
 
----
-
-## Supplementary formulation
-
-```yaml
----
-name: Zero-Knowledge Proof
-description: A cryptographic protocol where a prover demonstrates a statement is true without revealing any information beyond that truth.
-date-created: 2026-04-05
-sources:
-  - url: https://medium.com/@bhaskark2/understanding-zero-knowledge-proofs-part-1-verifiable-computation-with-zk-snarks-ba6cbb8e6001
-  - url: https://en.wikipedia.org/wiki/Zero-knowledge_proof
----
-```
-
 A zero-knowledge proof is a cryptographic protocol in which one party (the prover) convinces another party (the verifier) that a statement is true without conveying any information beyond the truth of that statement.
 
 **Properties**:

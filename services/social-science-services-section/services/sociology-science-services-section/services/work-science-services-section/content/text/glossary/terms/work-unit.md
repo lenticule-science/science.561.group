@@ -6,6 +6,8 @@ date-created: 2026-03-18
 date-modified: 2026-04-03
 extends: Work
 component-of: OperationItem
+id: work-unit
+defines: WorkUnit
 ---
 
 A work unit is a concrete, fully specified instance of [work](./work.md). All parameters are bound to specific values: who does it, what they do it to, what operation they perform, and what output they produce. Nothing is left open.
@@ -27,6 +29,13 @@ A [task](./task.md) becomes a work unit when all of its parameters are bound. Ma
 
 ## Atomicity
 
+A WorkUnit is the most atomic executable thing in the system. It cannot be decomposed further without losing what makes it a unit: a single named output produced by a single named operation on named inputs. Decomposition that preserves the ground-term property produces sub-WorkUnits, not the same WorkUnit.
+
+## Open questions
+
+- Whether WorkUnit parameters correspond to the substitution σ: X → T(Σ, ∅) in the free algebra — i.e., whether parameterization is formally a substitution homomorphism.
+- Whether a WorkUnit IS the Term kind for executable work, making the term/work-unit distinction a typing distinction within T(Σ, ∅).
+
 A work unit is the most atomic executable thing in the work hierarchy. It cannot be decomposed further without losing its identity as a single operation producing a single output. If decomposition is needed, the result is multiple work units, not subdivisions of the original.
 
 ## Work type
@@ -39,23 +48,6 @@ Every work unit has a [work type](./work.md) — it is either a [process](./proc
 - [task](./task.md) — the planning-level container that may or may not be fully specified
 - [work-item](./work-item.md) — the tracking-level representation of work in a queue
 - [The Algebraic Structure of Work](../../documents/articles/notes/algebraic-structure-of-work.md) — free algebras, ground terms, and how the settlement path maps to substitution closure
-
-
----
-
-<!-- source: _archive/discipline-intake/business/terms/work-unit.md -->
-
-## Imported source: _archive/discipline-intake/business/terms/work-unit.md
-
----
-id: work-unit
-description: "A WorkUnit is a ground term in the free algebra over the operational signature — a fully instantiated Work invocation with no free variables, where all parameters are bound to concrete values."
-defines: WorkUnit
-extends: Work
-component-of: OperationItem
-date-created: 2026-03-18
-date-modified: 2026-03-18
----
 
 # WorkUnit
 
@@ -75,8 +67,6 @@ A WorkUnit is **completely determined**: it names exactly one invocation of exac
 
 A WorkUnit with free variables is a **template** (an open term in T(Σ, X)), not a WorkUnit. Templates are skill definitions; WorkUnits are instances.
 
-## Structure
-
 Every WorkUnit is characterized by four fields, corresponding to the ground term's components:
 
 - **takes**: the input type — what goes in (the domain of the operation)
@@ -85,17 +75,3 @@ Every WorkUnit is characterized by four fields, corresponding to the ground term
 - **parameters**: the concrete values c₁,...,cₙ instantiating this invocation — what closes the open term into a ground term
 
 A WorkUnit without fully specified parameters is not yet a WorkUnit; it is an open term awaiting substitution.
-
-## Atomicity
-
-A WorkUnit is the most atomic executable thing in the system. It cannot be decomposed further without losing what makes it a unit: a single named output produced by a single named operation on named inputs. Decomposition that preserves the ground-term property produces sub-WorkUnits, not the same WorkUnit.
-
-## Open questions
-
-- Whether WorkUnit parameters correspond to the substitution σ: X → T(Σ, ∅) in the free algebra — i.e., whether parameterization is formally a substitution homomorphism.
-- Whether a WorkUnit IS the Term kind for executable work, making the term/work-unit distinction a typing distinction within T(Σ, ∅).
-
-## Earlier material
-
-```yaml
----

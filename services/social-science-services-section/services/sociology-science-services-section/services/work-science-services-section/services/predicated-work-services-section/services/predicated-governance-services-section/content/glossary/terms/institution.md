@@ -13,6 +13,32 @@ aliases:
 
 The mathematical realization of an [institution](../../../../../../governance-services-section/content/glossary/terms/institution.md) per the library's quintuple definition: a system of *constitutive rules* of the form "X counts as Y in context C" maintained by collective recognition. Per Searle's [status-function-declaration](../../../../../../../../../../../content/text/glossary/terms/status-function-declaration.md), institutions create institutional facts by collective acceptance.
 
+The aggregated recognition cell $\mathrm{Rec}_\tau(I)$ is $\leq_k$-monotone: once it reaches $\mathbf{t}$ (enough members are providing recognition), settling-monotonicity ensures it stays there until potential retraction.
+By the [predication-settling CALM corollary](../../../../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/formalization/infomaterial/lib/infomaterial/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/sheaf/content/settling-cohomology/references/settling-calm-corollary.md), the query "is institution $I$ operative?" is therefore coordination-free on the positive side — any replica with a local snapshot of the recognition cells can locally confirm operativity.
+
+The *lapse* of recognition is anti-monotone: confirming that recognition has dropped below the threshold requires coordination across all recognition-providing agents.
+Distributed institutional monitoring therefore has an asymmetry: - Confirming operativity → coordination-free. - Confirming institutional failure (recognition lapse) → requires coordination.
+
+This matches real institutional behavior: it is easy to establish that an institution is operative (observe its rules firing, observe its deontic-profile assignments); it is difficult to establish that it has collapsed (requires evidence of widespread recognition withdrawal).
+
+The [truth-knowledge long exact sequence](../../../../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/sheaf/content/settling-cohomology/references/truth-knowledge-cohomology-long-exact-sequence.md) applies to the institution's constitutive-rule sheaf $\mathcal{F}_I$:
+
+$$\cdots \to H^{n-1}(\mathcal{F}^{(\top)}_I) \xrightarrow{\partial} H^n_t(\mathcal{F}^{(t)}_I) \to H^n_k(\mathcal{F}^{(k)}_I) \to H^n(\mathcal{F}^{(\top)}_I) \to \cdots$$
+
+The inconsistency sheaf $\mathcal{F}^{(\top)}_I$ is non-zero precisely on constitutive-rule cells where the rule both fires (consequent at $\mathbf{t}$) and is blocked by a conflicting rule (consequent at $\mathbf{f}$).
+Institution health diagnostics:
+
+| Condition | $\mathcal{F}^{(\top)}_I$ | LES | Interpretation |
+|---|---|---|---|
+| Consistent, operative | $= 0$ | Collapses to $H^n_t \cong H^n_k$ | No constitutive-rule conflicts |
+| Inconsistent (conflicting CR) | $\neq 0$ | Full LES, non-trivial $\partial$ | At least one rule-pair fires incompatibly |
+| Self-referential recognition (corrupt) | Non-zero only on $\mathrm{Rec}$ cells | $\partial$ non-trivial at $n=1$ | Recognition decoupled from substantive firings |
+
+The MacIntyre corruption signature — recognition cells settled only by other recognition cells — produces a distinctive LES pattern: $H^0(\mathcal{F}^{(\top)}_I)$ is non-trivial at the recognition sheaf (because $\mathrm{Rec}$ cells are both "recognized" and "contested" when external valuation withdraws), and $\partial: H^0(\mathcal{F}^{(\top)}_I) \to H^1_t(\mathcal{F}^{(t)}_I)$ is non-zero, producing an $H^1_t$-class that records the structural obstruction introduced by self-referential recognition.
+This $H^1_t$-class is the substrate-algebraic trace of institutional corruption: non-trivial cohomology in the truth-order at degree 1, sourced from contradicted recognition cells.
+
+The aggregated recognition cell $\mathrm{Rec}_\tau(I)$ is $\leq_k$-monotone: once it reaches $\mathbf{t}$ (enough members are providing recognition), settling-monotonicity ensures it stays there until active retraction. By the [predication-settling CALM corollary](../../../../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/formalization/infomaterial/lib/infomaterial/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/sheaf/content/settling-cohomology/references/settling-calm-corollary.md), the query "is institution $I$ operative?" is therefore coordination-free on the positive side — any replica with a local snapshot of the recognition cells can locally confirm operativity.
+
 ## Data
 
 An institution $I$ is a quintuple
@@ -76,52 +102,3 @@ The MacIntyre/[enterprise](../../../../../../../../../../economics-and-business-
 ## Connection to polity
 
 A *polity* (forthcoming object) is an institution whose positions include a *populace* — a collective of natural persons who are simultaneously the recognition-providers and the subjects of the institution's rules. Polities are the special case where $\mathrm{Rec}$ is generated by the same agents who are bound by the institution. Most polities are institutions; not all institutions are polities (a corporation has positions but its recognition can come from outside its membership, e.g., from regulators).
-
-## Earlier material
-
-The mathematical realization of an [institution](../../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/content/individual/content/agent/actuating/content/actuator/embodying/content/body/integrating/content/drone/swarming/content/swarm/content/humanities/theories/sociology/theories/work/theories/governance/terms/institution.md) per the library's quintuple definition: a system of *constitutive rules* of the form "X counts as Y in context C" maintained by collective recognition.
-Per Searle's [status-function-declaration](../../../../../../../../../../../content/text/glossary/terms/status-function-declaration.md), institutions create institutional facts by collective acceptance.
-
-The aggregated recognition cell $\mathrm{Rec}_\tau(I)$ is $\leq_k$-monotone: once it reaches $\mathbf{t}$ (enough members are providing recognition), settling-monotonicity ensures it stays there until potential retraction.
-By the [predication-settling CALM corollary](../../../../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/formalization/infomaterial/lib/infomaterial/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/sheaf/content/settling-cohomology/references/settling-calm-corollary.md), the query "is institution $I$ operative?" is therefore coordination-free on the positive side — any replica with a local snapshot of the recognition cells can locally confirm operativity.
-
-The *lapse* of recognition is anti-monotone: confirming that recognition has dropped below the threshold requires coordination across all recognition-providing agents.
-Distributed institutional monitoring therefore has an asymmetry: - Confirming operativity → coordination-free. - Confirming institutional failure (recognition lapse) → requires coordination.
-
-This matches real institutional behavior: it is easy to establish that an institution is operative (observe its rules firing, observe its deontic-profile assignments); it is difficult to establish that it has collapsed (requires evidence of widespread recognition withdrawal).
-
-The [truth-knowledge long exact sequence](../../../../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/sheaf/content/settling-cohomology/references/truth-knowledge-cohomology-long-exact-sequence.md) applies to the institution's constitutive-rule sheaf $\mathcal{F}_I$:
-
-$$\cdots \to H^{n-1}(\mathcal{F}^{(\top)}_I) \xrightarrow{\partial} H^n_t(\mathcal{F}^{(t)}_I) \to H^n_k(\mathcal{F}^{(k)}_I) \to H^n(\mathcal{F}^{(\top)}_I) \to \cdots$$
-
-The inconsistency sheaf $\mathcal{F}^{(\top)}_I$ is non-zero precisely on constitutive-rule cells where the rule both fires (consequent at $\mathbf{t}$) and is blocked by a conflicting rule (consequent at $\mathbf{f}$).
-Institution health diagnostics:
-
-| Condition | $\mathcal{F}^{(\top)}_I$ | LES | Interpretation |
-|---|---|---|---|
-| Consistent, operative | $= 0$ | Collapses to $H^n_t \cong H^n_k$ | No constitutive-rule conflicts |
-| Inconsistent (conflicting CR) | $\neq 0$ | Full LES, non-trivial $\partial$ | At least one rule-pair fires incompatibly |
-| Self-referential recognition (corrupt) | Non-zero only on $\mathrm{Rec}$ cells | $\partial$ non-trivial at $n=1$ | Recognition decoupled from substantive firings |
-
-The MacIntyre corruption signature — recognition cells settled only by other recognition cells — produces a distinctive LES pattern: $H^0(\mathcal{F}^{(\top)}_I)$ is non-trivial at the recognition sheaf (because $\mathrm{Rec}$ cells are both "recognized" and "contested" when external valuation withdraws), and $\partial: H^0(\mathcal{F}^{(\top)}_I) \to H^1_t(\mathcal{F}^{(t)}_I)$ is non-zero, producing an $H^1_t$-class that records the structural obstruction introduced by self-referential recognition.
-This $H^1_t$-class is the substrate-algebraic trace of institutional corruption: non-trivial cohomology in the truth-order at degree 1, sourced from contradicted recognition cells.
-
-The mathematical realization of an [institution](../../../../../../../../../../social-theory-science-services-section/content/text/humanities/theories/sociology/theories/work/theories/governance/terms/institution.md) per the library's quintuple definition: a system of *constitutive rules* of the form "X counts as Y in context C" maintained by collective recognition. Per Searle's [status-function-declaration](../../../../../../../../../../../content/text/glossary/terms/status-function-declaration.md), institutions create institutional facts by collective acceptance.
-
-The aggregated recognition cell $\mathrm{Rec}_\tau(I)$ is $\leq_k$-monotone: once it reaches $\mathbf{t}$ (enough members are providing recognition), settling-monotonicity ensures it stays there until potential retraction. By the [predication-settling CALM corollary](../../../../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/formalization/infomaterial/lib/infomaterial/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/sheaf/content/settling-cohomology/references/settling-calm-corollary.md), the query "is institution $I$ operative?" is therefore coordination-free on the positive side — any replica with a local snapshot of the recognition cells can locally confirm operativity.
-
-The *lapse* of recognition is anti-monotone: confirming that recognition has dropped below the threshold requires coordination across all recognition-providing agents. Distributed institutional monitoring therefore has an asymmetry:
-- Confirming operativity → coordination-free.
-- Confirming institutional failure (recognition lapse) → requires coordination.
-
-The [truth-knowledge long exact sequence](../../../../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/sheaf/content/settling-cohomology/references/truth-knowledge-cohomology-long-exact-sequence.md) applies to the institution's constitutive-rule sheaf $\mathcal{F}_I$:
-
-The inconsistency sheaf $\mathcal{F}^{(\top)}_I$ is non-zero precisely on constitutive-rule cells where the rule both fires (consequent at $\mathbf{t}$) and is blocked by a conflicting rule (consequent at $\mathbf{f}$). Institution health diagnostics:
-
-The MacIntyre corruption signature — recognition cells settled only by other recognition cells — produces a distinctive LES pattern: $H^0(\mathcal{F}^{(\top)}_I)$ is non-trivial at the recognition sheaf (because $\mathrm{Rec}$ cells are both "recognized" and "contested" when external valuation withdraws), and $\partial: H^0(\mathcal{F}^{(\top)}_I) \to H^1_t(\mathcal{F}^{(t)}_I)$ is non-zero, producing an $H^1_t$-class that records the structural obstruction introduced by self-referential recognition. This $H^1_t$-class is the substrate-algebraic trace of institutional corruption: non-trivial cohomology in the truth-order at degree 1, sourced from contradicted recognition cells.
-
-The mathematical realization of an [institution](../../../../../../../../../../../../../../../humanities/theories/sociology/theories/work/theories/governance/terms/institution.md) per the library's quintuple definition: a system of *constitutive rules* of the form "X counts as Y in context C" maintained by collective recognition. Per Searle's [status-function-declaration](../../../../../../../../../../../content/text/glossary/terms/status-function-declaration.md), institutions create institutional facts by collective acceptance.
-
-The aggregated recognition cell $\mathrm{Rec}_\tau(I)$ is $\leq_k$-monotone: once it reaches $\mathbf{t}$ (enough members are providing recognition), settling-monotonicity ensures it stays there until active retraction. By the [predication-settling CALM corollary](../../../../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/formalization/infomaterial/lib/infomaterial/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/sheaf/content/settling-cohomology/references/settling-calm-corollary.md), the query "is institution $I$ operative?" is therefore coordination-free on the positive side — any replica with a local snapshot of the recognition cells can locally confirm operativity.
-
-The [truth-knowledge long exact sequence](../../../../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/sheaf/content/settling-cohomology/references/truth-knowledge-cohomology-long-exact-sequence.md) applies to the institution's constitutive-rule sheaf $\mathcal{F}_I$:

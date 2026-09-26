@@ -30,6 +30,7 @@ enfolds:
 surfaced-in:
   - "[The Politics of Signal Memory (and Why Governance Might Not Be Real)](The Politics of Signal Memory (and Why Governance Might Not Be Real))"
 date: 2025-04-13
+status: active
 ---
 
 
@@ -55,56 +56,17 @@ Loss, in this framework, is not erasure but interruption of feedback. A signal t
 
 ## Related concepts
 
+- `[[modulation over moderation]]`
+- `[[telemetric chain protocol]]`
+- `[[resonance-weighted record value]]`
+- `[[recursive epistemology]]`
+- `[[signal containment theory]]`
+
 - [Modulative governance](./modulative-governance.md) — the governance structure signal memory operates within
 - [Coherent confusion](./coherent-confusion.md) — a condition in which contradictory signals propagate without resolution
 - [Recursive governance](./recursive-governance.md) — the feedback containment system that generates signal memory
 - [Cybernetic feedback](../../../../../../../../../information-science-services-section/services/cybernetics-services-section/content/text/glossary/terms/cybernetic-feedback.md) — the formal model of signal propagation
 - [Affective infrastructure](../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/affective-infrastructure.md) — the emotional frameworks through which signals are processed
-
-
----
-
-## Consolidated triage formulation
-
-<!-- CONSOLIDATED-TRIAGE-SOURCE: signal-memory.md SHA256 6068192276921c752f064c1ff951cbcf74d3dfa9776b3bae4a706945b763bf70 -->
-
-This historical formulation was consolidated from `lib/emsenn/services/561-group/services/public-services-section/services/personal-services-section/emsenn-services-section/content/text/triage/signal-memory.md`. It is retained where its wording, links, provenance, or uncertainty differs from the active entry.
-
-<details>
-<summary>Recorded source metadata</summary>
-
-```yaml
-type: "[[concept]]"
-date: "[[2025-04-13]]"
-voice: "[[structured reference record]]"
-status: active
-delta:
-  - "[[performance-based memory]]"
-  - "[[coherence as control]]"
-  - "[[viral flattening of contribution]]"
-lambda:
-  - "[[recursive signal traceability]]"
-  - "[[modulation lineage mapping]]"
-  - "[[non-chronological memory models]]"
-adjoint:
-  - "[[modulation over moderation]]"
-  - "[[retroactive epistemic value]]"
-enfolds:
-  - "[[telemetricism]]"
-  - "[[telemetric chain protocol]]"
-  - "[[archive systems]]"
-  - "[[visibility as governance]]"
-  - "[[digital forgetting]]"
-surfaced-in:
-  - "[[The Politics of Signal Memory (and Why Governance Might Not Be Real)]]"
-```
-
-</details>
-
-### Retained formulation
-
-
-**Signal memory** is a non-linear, non-hierarchical model of memory in which what is remembered is determined not by volume, virality, or coherence, but by **recursive propagation**. A signal is remembered not because it was popular or official, but because it **modulated other signals**, leaving a traceable pattern of resonance and transformation.
 
 Signal memory does not track *what was said* in isolation.  
 It tracks:
@@ -113,10 +75,6 @@ It tracks:
 - **What became possible**
 
 This makes it not archival, but **topological**: a map of modulation paths.
-
----
-
-## Functional Behavior
 
 In signal memory:
 
@@ -127,19 +85,7 @@ In signal memory:
 
 Signal memory can contain contradiction, silence, and partiality—because it **does not require coherence to propagate**.
 
----
-
 ## Differentiation
-
-| Traditional Memory | Signal Memory |
-|--------------------|---------------|
-| Stores content     | Stores modulation |
-| Prioritizes clarity | Accepts contradiction |
-| Privileges origin  | Privileges propagation |
-| Seeks closure      | Expects recursion |
-| Static archive     | Recursive lineage |
-
----
 
 ## Use in the Delta Register
 
@@ -152,21 +98,3 @@ Agents and analysts working within this framework must consider that:
 - Influence is recursive
 - Memory is a modulation structure
 - Loss is not erasure, but interruption of feedback
-
----
-
-## Related Concepts
-
-- `[[modulation over moderation]]`
-- `[[telemetric chain protocol]]`
-- `[[resonance-weighted record value]]`
-- `[[recursive epistemology]]`
-- `[[signal containment theory]]`
-
-## Earlier material
-
-- `[modulation over moderation](modulation over moderation)`
-- `[telemetric chain protocol](telemetric chain protocol)`
-- `[resonance-weighted record value](resonance-weighted record value)`
-- `[recursive epistemology](recursive epistemology)`
-- `[signal containment theory](signal containment theory)`

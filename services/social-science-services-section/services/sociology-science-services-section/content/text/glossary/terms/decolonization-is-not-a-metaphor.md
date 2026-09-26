@@ -43,10 +43,6 @@ cites:
 }
 ```
 
-## Earlier material
-
-—
-
 \<!– source: archive/library/indigenous-studies/bibliography/decolonization-is-not-a-metaphor.md –\>
 
 \## Imported source: archive/library/indigenous-studies/bibliography/decolonization-is-not-a-metaphor.md

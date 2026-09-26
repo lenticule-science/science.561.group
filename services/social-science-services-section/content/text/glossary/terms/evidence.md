@@ -76,21 +76,13 @@ The framework's evolution under settling is irreversible in this sense.
 - [Settlement](settlement.md) — the joint structure where evidence configurations are positioned.
 - [True](true.md), [False](false.md) — the truth-axis poles evidence tilts toward.
 - [Evidence (voidmath)](evidence.md) — the mathematical articulation; the role borne by twist-product components.
-
----
-
-## Supplementary formulation
-
-```yaml
----
-name: "evidence"
-date-created: 2026-03-06
-keywords:
-  - Legalism
-references:
-  - /sociology/disciplines/legalism/index.md
----
-```
+- [Burden of proof](../../../../services/sociology-science-services-section/content/text/glossary/terms/burden-of-proof.md) — the standard that determines how much evidence is enough
+- [Legal formatting](../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/legal-formatting.md) — the translation of social realities into legally admissible form
+- [Evidentiary credentialing](../../../../services/sociology-science-services-section/content/text/glossary/terms/evidentiary-credentialing.md) — how evidence rules transform cultural practices into institutional credentials
+- [Due process](../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/due-process.md) — the procedural rights that govern how evidence is collected and used
+- [thesis](thesis.md) — the claim that evidence supports
+- [counterargument](counterargument.md) — evidence that challenges the thesis, which the writer must address
+- [audience](../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/glossary/concepts/audience.md) — what counts as convincing evidence depends on the audience
 
 Evidence is the material that legal proceedings accept as the basis for determining facts.
 Testimony, documents, physical objects, photographs, expert opinions, and digital records can all serve as evidence — but only if they satisfy the procedural requirements of the legal system in which they're offered.
@@ -114,122 +106,6 @@ The burden of proof determines how much evidence is enough.
 In criminal cases, the prosecution must prove guilt "beyond a reasonable doubt" — a high threshold reflecting the gravity of criminal [sanctions](sanction.md).
 In civil cases, the standard is usually "preponderance of the evidence" — more likely than not.
 These standards shape outcomes: the same set of facts may be sufficient for civil liability but insufficient for criminal conviction, as the O.J. Simpson cases famously demonstrated.
-
-## Related terms
-
-- [Adjudication](adjudication.md) — the process within which evidence is presented and evaluated
-- [Burden of proof](../../../../services/sociology-science-services-section/content/text/glossary/terms/burden-of-proof.md) — the standard that determines how much evidence is enough
-- [Legal formatting](../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/legal-formatting.md) — the translation of social realities into legally admissible form
-- [Evidentiary credentialing](../../../../services/sociology-science-services-section/content/text/glossary/terms/evidentiary-credentialing.md) — how evidence rules transform cultural practices into institutional credentials
-- [Due process](../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/due-process.md) — the procedural rights that govern how evidence is collected and used
-
----
-
-## Supplementary formulation
-
-```yaml
----
-name: "evidence"
-date-created: 2026-03-06
-keywords:
-  - Legalism
-references:
-  - /sociology/disciplines/legalism/index.md
----
-```
-
-Evidence is the material that legal proceedings accept as the basis for determining facts. Testimony, documents, physical objects, photographs, expert opinions, and digital records can all serve as evidence — but only if they satisfy the procedural requirements of the legal system in which they're offered. The rules of evidence determine what a court can hear, and in doing so they determine what it can know.
-
-Every legal system filters evidence. The hearsay rule excludes most out-of-court statements offered for their truth. The relevance requirement excludes material that doesn't bear on the issues in dispute. Privilege rules exclude communications between spouses, attorneys and clients, doctors and patients. Authentication requirements demand proof that a document is what it claims to be. These filters aren't arbitrary — each responds to a real concern about reliability, fairness, or policy — but their cumulative effect is to produce a highly selective account of events. The legal record of what happened is always a subset of what happened.
-
-This selectivity is where evidence becomes a sociological concept. Evidence rules don't just filter information; they format it. A lived experience — being harassed at work, practicing a cultural tradition, maintaining a community relationship — must be translated into legally admissible form before a court can consider it. That translation is what [legal formatting](../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/legal-formatting.md) names: the process by which social realities become legal artifacts. What gets lost in translation — context, affect, relational meaning, the parts of experience that don't fit legal categories — may be exactly what mattered most to the people involved.
-
-The burden of proof determines how much evidence is enough. In criminal cases, the prosecution must prove guilt "beyond a reasonable doubt" — a high threshold reflecting the gravity of criminal [sanctions](sanction.md). In civil cases, the standard is usually "preponderance of the evidence" — more likely than not. These standards shape outcomes: the same set of facts may be sufficient for civil liability but insufficient for criminal conviction, as the O.J. Simpson cases famously demonstrated.
-
-## Related terms
-
-- [Adjudication](adjudication.md) — the process within which evidence is presented and evaluated
-- [Burden of proof](../../../../services/sociology-science-services-section/content/text/glossary/terms/burden-of-proof.md) — the standard that determines how much evidence is enough
-- [Legal formatting](../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/legal-formatting.md) — the translation of social realities into legally admissible form
-- [Evidentiary credentialing](../../../../services/sociology-science-services-section/content/text/glossary/terms/evidentiary-credentialing.md) — how evidence rules transform cultural practices into institutional credentials
-- [Due process](../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/due-process.md) — the procedural rights that govern how evidence is collected and used
-
----
-
-## Supplementary formulation
-
-```yaml
----
-name: "Evidence"
-aliases:
-  - "Evidence"
-  - "evidence"
-  - "supporting evidence"
-date-created: 2026-03-06
-tags: []
----
-```
-
-***Evidence*** is the material a writer presents to support a claim — the facts, examples, data, quotations, and reasoning that give a [thesis](thesis.md) its credibility. An essay without evidence is an assertion; an essay with evidence is an argument.
-
-Evidence comes in several forms:
-
-- **Facts and data** — verifiable information: statistics, dates, measurements, documented events. Strong because they're checkable; weak when presented without context or interpretation.
-- **Examples** — specific instances that illustrate a general claim. "Social media affects attention spans" is a claim; a study showing that average reading time on articles dropped by 40% between 2010 and 2020 is evidence.
-- **Quotation** — direct words from a source. Useful when the source's exact language matters or carries authority. Overused when the writer is outsourcing the argument to someone else instead of developing it themselves.
-- **Reasoning** — logical argument that connects premises to conclusions. Sometimes the evidence is not external material but the internal structure of the argument itself.
-- **Anecdote** — a brief story from experience. Vivid and engaging but limited: a single experience doesn't prove a general claim. Anecdotes illustrate; they don't demonstrate.
-
-The writer's job is not just to present evidence but to analyze it — to explain what it means and how it supports the claim. Evidence that is dropped into the text without interpretation ("According to Smith, X. According to Jones, Y.") is evidence without argument. The reader doesn't need a list of sources; they need to see the writer's mind at work on the material.
-
-Different disciplines have different evidence standards. A philosophy essay uses arguments and counterexamples; a sociology paper uses empirical data and case studies; a literary analysis uses close readings of texts. Knowing what counts as evidence in your field is part of knowing how to write in it.
-
-## Related terms
-
-- [thesis](thesis.md) — the claim that evidence supports
-- [counterargument](counterargument.md) — evidence that challenges the thesis, which the writer must address
-- [audience](../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/glossary/concepts/audience.md) — what counts as convincing evidence depends on the audience
-
----
-
-## Supplementary formulation
-
-```yaml
----
-
-name: "evidence"
-date-created: 2026-03-06
-keywords:
-  - legalism
-see-also:
-  - "/sociology/disciplines/legalism/index.md"
----
-```
-
-Evidence is the material that legal proceedings accept as the basis for determining facts. Testimony, documents, physical objects, photographs, expert opinions, and digital records can all serve as evidence — but only if they satisfy the procedural requirements of the legal system in which they're offered. The rules of evidence determine what a court can hear, and in doing so they determine what it can know.
-
-Every legal system filters evidence. The hearsay rule excludes most out-of-court statements offered for their truth. The relevance requirement excludes material that doesn't bear on the issues in dispute. Privilege rules exclude communications between spouses, attorneys and clients, doctors and patients. Authentication requirements demand proof that a document is what it claims to be. These filters aren't arbitrary — each responds to a real concern about reliability, fairness, or policy — but their cumulative effect is to produce a highly selective account of events. The legal record of what happened is always a subset of what happened.
-
-This selectivity is where evidence becomes a sociological concept. Evidence rules don't just filter information; they format it. A lived experience — being harassed at work, practicing a cultural tradition, maintaining a community relationship — must be translated into legally admissible form before a court can consider it. That translation is what [legal formatting](../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/legal-formatting.md) names: the process by which social realities become legal artifacts. What gets lost in translation — context, affect, relational meaning, the parts of experience that don't fit legal categories — may be exactly what mattered most to the people involved.
-
-The burden of proof determines how much evidence is enough. In criminal cases, the prosecution must prove guilt "beyond a reasonable doubt" — a high threshold reflecting the gravity of criminal [sanctions](sanction.md). In civil cases, the standard is usually "preponderance of the evidence" — more likely than not. These standards shape outcomes: the same set of facts may be sufficient for civil liability but insufficient for criminal conviction, as the O.J. Simpson cases famously demonstrated.
-
----
-
-## Supplementary formulation
-
-```yaml
----
-
-name: "Evidence"
-aliases:
-  - "Evidence"
-  - "evidence"
-  - "supporting evidence"
-date-created: 2026-03-06
-tags: []
----
-```
 
 ***Evidence*** is the material a writer presents to support a claim — the facts, examples, data, quotations, and reasoning that give a [thesis](thesis.md) its credibility. An essay without evidence is an assertion; an essay with evidence is an argument.
 

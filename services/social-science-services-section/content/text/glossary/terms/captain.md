@@ -20,6 +20,7 @@ instance-of: office
 component-of: ship
 governs: crew
 requires: investiture
+date-modified: 2026-03-29
 ---
 
 A captain is the person invested with operational command of a [ship](ship.md) — the holder of the ship's command [office](../../../../../services/economics-and-business-science-services-section/services/business-science-services-section/content/text/glossary/terms/office.md), bearing absolute authority aboard within the bounds of the ship's [charter](confederacy.md).
@@ -111,21 +112,9 @@ In naval practice, the formal ceremony of relieving command makes the structure 
 The ship's operations are continuous across the transition.
 The crew's obligations shift from one holder to the other without interruption, because the obligations attach to the office, not to the person.
 
----
+## Related
 
-## Supplementary formulation
-
-```yaml
----
-description: "The person in command of a ship, aircraft, or military unit."
-aliases: [captains, commanding officer, master, skipper]
-component-of: ship
-governs: crew
-requires: investiture
-date-created: 2026-03-19
-date-modified: 2026-03-29
----
-```
+- [staff](../../../../services/economics-and-business-science-services-section/services/business-science-services-section/content/text/glossary/terms/staff.md) — ongoing personnel of a perpetual institution, contrasted with the captain's venture-bounded command
 
 A captain is the person in command of a [ship](ship.md), aircraft, or military unit.
 The captain makes the decisions, bears the responsibility, and answers for what happens.
@@ -166,17 +155,3 @@ The naval sense (commander of a ship) and the military rank (O-3 in the US Army,
 An Army captain may or may not command a company.
 A Navy captain may or may not command a ship.
 The rank and the position are separate.
-
-## Earlier material
-
-- [ship](ship.md) — the chartered venture that the captain commands
-- [office](../../../../services/sociology-science-services-section/content/text/glossary/terms/office.md) — the normative position that persists independently of its holder
-- [confederacy](../../../../services/sociology-science-services-section/content/terms/confederacy.md) — the commissioning authority that appoints and relieves captains
-- [delegation](../../../../services/sociology-science-services-section/content/text/glossary/terms/delegation.md) — the transfer of bounded authority from a higher to a lower office
-- [staff](../../../../services/economics-and-business-science-services-section/services/business-science-services-section/content/text/glossary/terms/staff.md) — ongoing personnel of a perpetual institution, contrasted with the captain's venture-bounded command
-
-- [ship](ship.md) — the chartered venture that the captain commands
-- [office](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/office.md) — the normative position that persists independently of its holder
-- [confederacy](../../../../services/sociology-science-services-section/services/work-science-services-section/content/terms/confederacy.md) — the commissioning authority that appoints and relieves captains
-- [delegation](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/delegation.md) — the transfer of bounded authority from a higher to a lower office
-- [staff](../../../../services/economics-and-business-science-services-section/services/business-science-services-section/content/text/glossary/terms/staff.md) — ongoing personnel of a perpetual institution, contrasted with the captain's venture-bounded command

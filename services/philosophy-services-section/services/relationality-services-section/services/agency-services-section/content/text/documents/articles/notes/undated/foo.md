@@ -271,8 +271,6 @@ So the first and final task is not one of defense, but of creation. It is to cea
 
 > Thank you for reading to the end! Subscribe if you'd like to receive my next letter in your inbox.
 
-## Earlier material
-
 The resemblance is not incidental, and looking at the similarities is useful. It demonstrates something about fascism itself: fascism can be a process of giving a grammar and vocabulary to things that forces fascistic beliefs.
 
 The vocabulary in Miller's speech differs, but that difference in vocabulary is ultimately superficial: a consequence of fascism needing to rearticulate itself after its own vocabulary became taboo after 1945.
@@ -287,18 +285,12 @@ The continuity is direct: where Goebbels used humilation for the basis of destin
 
 The continuity could not be clearer. Only the civilizational unit is generative; the enemy is sterile, barren, destructive.
 
-When fascism promises destiny, liberalism replies with progress. From Dewey’s faith in social learning to Rawls’s incremental justice, liberal theorists made history itself the guarantor of betterment. Where Goebbels insisted rebirth was assured, liberals insisted improvement was inevitable. Walter Benjamin’s critique of social democracy targeted exactly this saying that the faith that history already leaned toward justice was a mirror image of fascism’s fatalism.
-
 Critical theory has long shown how this counter-grammar sustains the fascist one. Hannah Arendt famously pointed to liberal proceduralism as generating the isolation and abstraction that fascism exploited in its day-to-day operations. Theodor Adorno and Max Horkheimer saw how liberal optimism, by aestheticizing progress, prepared subjects for authoritarian aesthetics. Benjamin argued that the “faith in progress” was itself fascist in form.
 
 Fascist grammar begins by declaring crisis:  existential collapse demanding salvation. But as Benjamin observed in his Theses on the Philosophy of History, catastrophe is not the justification for a retaliatory storm, but the condition of living with fascism itself: “the storm we call progress.” Where fascism turns crisis into a stage for authoritarian redemption, anarchist grammar recognizes it as a condition induced by the ongoing violence of capitalism, empire, and the state.
-
-Here Mbembe again matters. Necropolitics names how power distributes death. Anarchist solidarity refuses to let death be monopolized as fascist martyrdom. It insists on sustaining life together in the face of abandonment, turning another part of what fascism calls weakness into another site of strength.
 
 The storm is coming, has arrived, and never left, in the continually-refining grammar of crisis, purity, and inevitability that now animates the public life. The historical "triumph over fascism" was a tactical victory in certain political spheres, but only strengthened the epistemic infrastructure, increasing its self-derived legitimacy in the idiom of postliberalism. In their effort to resist this process, liberal institutions and those aligned with their thinking remain entangled in a struggle they both cannot and do not want to win, because they accept the premise that the conflict is what creates progress.
 
 <div class="aside">
 
 </div>
-
-Fascist grammar begins by declaring crisis: existential collapse demanding salvation. But as Benjamin observed in his Theses on the Philosophy of History, catastrophe is not the justification for a retaliatory storm, but the condition of living with fascism itself: “the storm we call progress.” Where fascism turns crisis into a stage for authoritarian redemption, anarchist grammar recognizes it as a condition induced by the ongoing violence of capitalism, empire, and the state.

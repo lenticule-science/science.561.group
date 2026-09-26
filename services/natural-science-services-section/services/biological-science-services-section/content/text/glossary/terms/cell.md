@@ -21,6 +21,9 @@ enables:
 produces:
   - protein
   - atp
+description: "The basic structural and functional unit of all living organisms, containing a membrane, cytoplasm, and nucleus."
+authors:
+  - claude-opus-4-6
 ---
 
 The cell is the basic structural and functional unit of life. All known living organisms are composed of one or more cells, and all cells arise from preexisting cells by division. This is cell theory, one of the foundational principles of biology, established by Matthias Schleiden and Theodor Schwann in the 1830s and extended by Rudolf Virchow in 1855 with the principle *omnis cellula e cellula* — every cell from a cell.
@@ -38,29 +41,11 @@ A cell maintains itself through [metabolism](../../../../services/physiology-ser
 - [Organism](./organism.md) — a living system composed of one or more cells
 - [Symbiosis](../../../../services/ecology-services-section/content/text/glossary/terms/symbiosis.md) — the endosymbiotic origin of eukaryotic organelles
 
----
+## Related
 
-## Additional formulation
-
-```yaml
----
-name: "Cell"
-description: "The basic structural and functional unit of all living organisms, containing a membrane, cytoplasm, and nucleus."
-date-created: 2026-03-06
-authors:
-  - claude-opus-4-6
-aliases:
-  - "cell"
-  - "cells"
-keywords:
-  - Biology
-  - Physiology
-contains: [receptor, mitochondria, nucleus, ribosome]
-component-of: tissue
-enables: [homeostasis, drug-metabolism]
-produces: [protein, atp]
----
-```
+- [Tissue](../../../../services/medical-science-services-section/services/human-body-services-section/content/text/glossary/terms/tissue.md) — groups of similar cells organized for a shared function
+- [Organ](../../../../services/medical-science-services-section/services/human-body-services-section/content/text/glossary/terms/organ.md) — structures composed of multiple tissue types
+- [Receptor](../../../../services/medical-science-services-section/services/human-body-services-section/content/text/glossary/terms/receptor.md) — a membrane protein that cells use to detect signals
 
 The **cell** is the basic structural and functional unit of all living organisms. Every process in the human body — movement, sensation, thought, digestion, immunity, reproduction — is performed by cells or depends on what cells produce.
 
@@ -95,10 +80,3 @@ The human body contains approximately 200 distinct cell types, each specialized 
 ## Cells as the unit of drug action
 
 Drugs do not act on "the body" in the abstract. They act on cells — binding to [receptors](../../../../services/medical-science-services-section/services/human-body-services-section/content/text/glossary/terms/receptor.md) on cell membranes, inhibiting enzymes inside cells, or blocking [ion channels](../../../../services/medical-science-services-section/services/human-body-services-section/content/text/glossary/terms/action-potential.md) that control electrical signaling. Understanding cellular structure is what makes [pharmacology](../../pharmacology/index.md) intelligible: a drug must reach its target cell, cross (or interact with) the cell membrane, and interact with a specific molecular target within or on that cell. Every step in this process is governed by the cell's structure.
-
-## Related terms
-
-- [Tissue](../../../../services/medical-science-services-section/services/human-body-services-section/content/text/glossary/terms/tissue.md) — groups of similar cells organized for a shared function
-- [Organ](../../../../services/medical-science-services-section/services/human-body-services-section/content/text/glossary/terms/organ.md) — structures composed of multiple tissue types
-- [Receptor](../../../../services/medical-science-services-section/services/human-body-services-section/content/text/glossary/terms/receptor.md) — a membrane protein that cells use to detect signals
-- [Neuron](neuron.md) — a specialized cell type central to this module

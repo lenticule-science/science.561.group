@@ -21,6 +21,11 @@ references:
     container-title: Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics
     issued:
       - year: 2016
+sources:
+  - title: "ERC-20 Token Standard"
+    url: https://eips.ethereum.org/EIPS/eip-20
+  - title: "ERC-721 Non-Fungible Token Standard"
+    url: https://eips.ethereum.org/EIPS/eip-721
 ---
 
 A token is the atomic unit of text that a [large language model](large-language-model.md) processes. Models do not operate on characters or words directly; they operate on tokens — subword fragments produced by a tokenizer that splits text into pieces from a fixed vocabulary. The word "unbelievable" might be tokenized as ["un", "believ", "able"]; common words like "the" are single tokens; rare words or code identifiers are split into multiple tokens.
@@ -42,24 +47,6 @@ Different providers use different tokenizers with different vocabularies, so the
 - [Transformer](transformer.md) — the architecture that processes token sequences
 - [Context window](context-window.md) — the maximum number of tokens a model can process at once
 - [Large language model](large-language-model.md) — the systems whose behavior tokens determine
-
----
-
-## Supplementary formulation
-
-```yaml
----
-name: Token
-description: A unit of value on a blockchain, implemented as a smart contract that tracks balances and transfers according to a standard interface.
-aliases: [tokens, crypto token]
-date-created: 2026-04-05
-sources:
-  - title: "ERC-20 Token Standard"
-    url: https://eips.ethereum.org/EIPS/eip-20
-  - title: "ERC-721 Non-Fungible Token Standard"
-    url: https://eips.ethereum.org/EIPS/eip-721
----
-```
 
 A token is a unit of value represented by a [smart contract](smart-contract.md) on a blockchain. The contract maintains a ledger of balances and exposes functions for transferring ownership. Tokens are not native to the blockchain's protocol (those are coins, like ETH on Ethereum); they are programs that run on top of it.
 

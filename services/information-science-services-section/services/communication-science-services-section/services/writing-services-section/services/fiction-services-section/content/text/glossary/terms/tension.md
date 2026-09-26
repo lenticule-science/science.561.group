@@ -11,6 +11,7 @@ introduces: "[condition](condition)"
 domain: "[domain of relating](domain of relating)"
 date-introduced: "[2025-05-03](2025-05-03)"
 date-last-modified: "[2025-05-03](2025-05-03)"
+type: "[[condition]]"
 ---
 
 ***Tension*** is the quality that makes a reader want to keep reading — the sense that something is unresolved, that the outcome matters, that the next page might change everything. Tension is what turns information into story.
@@ -32,34 +33,6 @@ Tension operates at multiple scales:
 - [subtext](../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/subtext.md) — creates tension through the gap between surface and meaning
 - [foreshadowing](../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/foreshadowing.md) — builds tension by hinting at what's coming
 - [plot](../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/plot.md) — tension drives plot forward; plot structure manages tension
-
-
----
-
-## Consolidated triage formulation
-
-<!-- CONSOLIDATED-TRIAGE-SOURCE: tension.md SHA256 6b63ad633accc019d930737e1de5e2eb2e21218cba94a5d50b10407e2935da35 -->
-
-This historical formulation was consolidated from `lib/emsenn/services/561-group/services/public-services-section/services/personal-services-section/emsenn-services-section/content/text/triage/tension.md`. It is retained where its wording, links, provenance, or uncertainty differs from the active entry.
-
-<details>
-<summary>Recorded source metadata</summary>
-
-```yaml
-type: "[[condition]]"
-domain: "[[domain of relating]]"
-date-introduced: "[[2025-05-03]]"
-date-last-modified: "[[2025-05-03]]"
-```
-
-</details>
-
-### Retained formulation
-
-
-- [[define]]:: [[tension]] is the [[condition]] that holds [[inclusion]] and [[exclusion]] in mutual, active opposition. It is the minimal dynamic by which a [[triage/thing]] is coherently sustained as both what it is and not what it is not, ensuring that [[exist|existing]] remains open and stable.
-
-## Derivation
 
 - [[derive|Deriving]] [[exist|existing]] shows that:
     - A [[triage/thing]] must be [[include|included]] in what it is;
@@ -95,8 +68,3 @@ date-last-modified: "[[2025-05-03]]"
 - Though [[tension]] is a [[condition]], it points to the necessity of sustained [[act|acts]]:
     - Only through continued [[relate|relating]] can [[tension]] persist durably;
     - To stabilize [[tension]] as part of a broader architecture, it must be held within a [[relative]] or other [[structure]].
-
-## Earlier material
-
-```yaml
----

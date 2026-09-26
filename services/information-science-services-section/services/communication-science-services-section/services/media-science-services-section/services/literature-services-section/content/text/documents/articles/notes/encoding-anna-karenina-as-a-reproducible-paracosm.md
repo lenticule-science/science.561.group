@@ -98,70 +98,9 @@ embedding each reproducible realization into its modal closure.
 
 These modalities commute with the equivalence-generating [functors](../../../../../humanities/domains/math/domains/categories/domains/ordinary-categories/terms/functor.md) $J, N, O$, ensuring **modal stability**.
 
-# 6. Verification Conditions
-
-Following RPS v0.1, validity of $\mathcal{C}_{\text{RPS}}=(S_{\text{AK}},\Theta,J,N,O,\Box,\Diamond)$ requires six finite verifications:
-
-| Verification             | Mathematical Form                       | Narrative Interpretation                              |
-|--------------------------|-----------------------------------------|-------------------------------------------------------|
-| Coherence                | Compactness of $\Theta$                 | Every moral law applies consistently across contexts. |
-| Descent                  | Effective gluing under $J$              | Rural and urban narratives cohere.                    |
-| Normalization            | Terminating, confluent $N$              | All moral arcs resolve finitely.                      |
-| Observation              | Bisimulation invariance $O$             | Reader-equivalent tellings are equal.                 |
-| Modal Stability          | $\Box_i$ commute with $J,N,O$           | Knowledge and duty evolve consistently.               |
-| Institutional Invariance | Functorial preservation of satisfaction | Adaptations preserve world truth.                     |
-
-Each can be finitely tested via narrative logic sampling or computational simulation.
-
-# 7. Derived Guarantees
-
-From the **Reproducibility Theorem**:
-
-1.  ****Existence**** – $\mathsf{RP}(S_{\text{AK}})$ exists as a complete, cocomplete, invariant category.
-2.  ****Completeness**** – Every consistent fragment extends to a full telling.
-3.  ****Cocompleteness**** – Adaptations colimit coherently.
-4.  ****Modal Closure**** – Necessity and possibility internalized.
-5.  ****Institutional Portability**** – Truth preserved under translation (film, theatre).
-6.  ****Determinacy**** – Moral rewrite system converges to unique normal forms.
-
-# 8. Discussion: Tolstoyan Coherence as Reflective Localization
-
-Tolstoy’s realism emerges as a **reflective localization** of human moral structure. The moral and epistemic modalities act as adjoint pairs between possible and necessary worlds, producing a closed system of ethical inference. Characters are coalgebraic objects whose behaviors satisfy the normalization of internal contradiction. The novel’s tragedy, then, is the convergence of modal [functors](../../../../../humanities/domains/math/domains/categories/domains/ordinary-categories/terms/functor.md)—desire and morality—into an inconsistent fixpoint.
-
-This reading reinterprets classical realism as a categorical condition: **a complete, modal, reproducible world** in the sense of RPS. The world’s truth is preserved not by realism’s mimesis but by \*functorial reproducibility\*—its ability to reinstantiate coherence across any interpretive institution.
-
-# 9. Conclusion
-
-Under the Reproducible Paracosm framework, **Anna Karenina** can be rigorously understood as the canonical model of moral-epistemic reproducibility. Its narrative satisfies the categorical sufficiency conditions for existence, closure, and invariance. Thus Tolstoy’s art is psychological realism and **categorical realism**: the realization of a world object whose internal modalities guarantee that it can be endlessly retold and remain itself.
-
-# References
-
-- Lawvere, F.W. (1963). **Functorial Semantics of Algebraic Theories.**
-- Ehresmann, C. (1966). **Sketches of Algebraic Structures.**
-- Goguen, J.A. & Burstall, R.M. (1984). **Institutions: Abstract Model Theory for Specification and Programming.**
-- Adámek, J. & Rosický, J. (1994). **Locally Presentable and Accessible Categories.**
-- Lurie, J. (2009). **Higher Topos Theory.**
-- Ryan, M.-L. (1991). **Possible Worlds, Artificial Intelligence, and Narrative Theory.**
-- Rutten, J. (2000). **Universal Coalgebra: A Theory of Systems.**
-- Tolstoy, L. (1877). **Anna Karenina.**
-
-## Earlier material
-
-Narratologically, objects correspond to the **fabula**, [functors](../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/arts/ludics/mathematics/objects/categories/ordinary-categories/terms/functor.md) to **sjužet** transformations, and modalities to epistemic and ethical perspectives.
-
-A **model** of $S_{\text{AK}}$ is a [functor](../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/arts/ludics/mathematics/objects/categories/ordinary-categories/terms/functor.md) $M:\mathcal{C}_S\to\mathbf{Set}$ assigning to each character a set of states and to each relation a [morphism](../../../../../../../../../../math-services-section/content/text/glossary/terms/morphism.md) preserving the causal (co)limits. The category $\mathbf{Mod}(S_{\text{AK}})$ of all such models is locally presentable, complete, and cocomplete.
-
-These modalities commute with the equivalence-generating [functors](../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/arts/ludics/mathematics/objects/categories/ordinary-categories/terms/functor.md) $J, N, O$, ensuring **modal stability**.
-
-Narratologically, objects correspond to the **fabula**, functors to **sjužet** transformations, and modalities to epistemic and ethical perspectives.
-
-These modalities commute with the equivalence-generating functors $J, N, O$, ensuring **modal stability**.
-
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 <colgroup>
-<col  class="org-left" />
-
 <col  class="org-left" />
 
 <col  class="org-left" />
@@ -251,3 +190,52 @@ These modalities commute with the equivalence-generating functors $J, N, O$, ens
 <td class="org-left">$\Box_i$ commute with $J,N,O$</td>
 <td class="org-left">Knowledge and duty evolve consistently.</td>
 </tr>
+
+<col  class="org-left" />
+
+# 6. Verification Conditions
+
+Following RPS v0.1, validity of $\mathcal{C}_{\text{RPS}}=(S_{\text{AK}},\Theta,J,N,O,\Box,\Diamond)$ requires six finite verifications:
+
+| Verification             | Mathematical Form                       | Narrative Interpretation                              |
+|--------------------------|-----------------------------------------|-------------------------------------------------------|
+| Coherence                | Compactness of $\Theta$                 | Every moral law applies consistently across contexts. |
+| Descent                  | Effective gluing under $J$              | Rural and urban narratives cohere.                    |
+| Normalization            | Terminating, confluent $N$              | All moral arcs resolve finitely.                      |
+| Observation              | Bisimulation invariance $O$             | Reader-equivalent tellings are equal.                 |
+| Modal Stability          | $\Box_i$ commute with $J,N,O$           | Knowledge and duty evolve consistently.               |
+| Institutional Invariance | Functorial preservation of satisfaction | Adaptations preserve world truth.                     |
+
+Each can be finitely tested via narrative logic sampling or computational simulation.
+
+# 7. Derived Guarantees
+
+From the **Reproducibility Theorem**:
+
+1.  ****Existence**** – $\mathsf{RP}(S_{\text{AK}})$ exists as a complete, cocomplete, invariant category.
+2.  ****Completeness**** – Every consistent fragment extends to a full telling.
+3.  ****Cocompleteness**** – Adaptations colimit coherently.
+4.  ****Modal Closure**** – Necessity and possibility internalized.
+5.  ****Institutional Portability**** – Truth preserved under translation (film, theatre).
+6.  ****Determinacy**** – Moral rewrite system converges to unique normal forms.
+
+# 8. Discussion: Tolstoyan Coherence as Reflective Localization
+
+Tolstoy’s realism emerges as a **reflective localization** of human moral structure. The moral and epistemic modalities act as adjoint pairs between possible and necessary worlds, producing a closed system of ethical inference. Characters are coalgebraic objects whose behaviors satisfy the normalization of internal contradiction. The novel’s tragedy, then, is the convergence of modal [functors](../../../../../humanities/domains/math/domains/categories/domains/ordinary-categories/terms/functor.md)—desire and morality—into an inconsistent fixpoint.
+
+This reading reinterprets classical realism as a categorical condition: **a complete, modal, reproducible world** in the sense of RPS. The world’s truth is preserved not by realism’s mimesis but by \*functorial reproducibility\*—its ability to reinstantiate coherence across any interpretive institution.
+
+# 9. Conclusion
+
+Under the Reproducible Paracosm framework, **Anna Karenina** can be rigorously understood as the canonical model of moral-epistemic reproducibility. Its narrative satisfies the categorical sufficiency conditions for existence, closure, and invariance. Thus Tolstoy’s art is psychological realism and **categorical realism**: the realization of a world object whose internal modalities guarantee that it can be endlessly retold and remain itself.
+
+# References
+
+- Lawvere, F.W. (1963). **Functorial Semantics of Algebraic Theories.**
+- Ehresmann, C. (1966). **Sketches of Algebraic Structures.**
+- Goguen, J.A. & Burstall, R.M. (1984). **Institutions: Abstract Model Theory for Specification and Programming.**
+- Adámek, J. & Rosický, J. (1994). **Locally Presentable and Accessible Categories.**
+- Lurie, J. (2009). **Higher Topos Theory.**
+- Ryan, M.-L. (1991). **Possible Worlds, Artificial Intelligence, and Narrative Theory.**
+- Rutten, J. (2000). **Universal Coalgebra: A Theory of Systems.**
+- Tolstoy, L. (1877). **Anna Karenina.**

@@ -13,6 +13,9 @@ draft-names:
   draft-9: "tension (the tension of Nothing — NotRelating and Relating coexist but cannot determine which carries the act)"
 stability: medium — named explicitly only in drafts 0 and 7; implicit elsewhere
 description: The condition of mutual opposition between inclusion and exclusion.
+domain: "[../../../Relationality/triage/00-probably-redundant/20250502-relational-notes/fffstem/relating/structures/domain of relating](../../../Relationality/triage/00-probably-redundant/20250502-relational-notes/fffstem/relating/structures/domain of relating)"
+date-introduced: "[2025-05-03](../../triage/2025-05-03)"
+date-last-modified: "[2025-05-03](../../triage/2025-05-03)"
 ---
 
 The condition of mutual opposition between inclusion and exclusion. Tension is not a third act but the dynamic holding that binds two opposed conditions in coherent opposition. Without tension, difference cannot be induced or maintained.
@@ -41,24 +44,6 @@ In the formal language of PRE, tension corresponds to the fact that the Heyting 
 - Precedes: coherence (the condition of stable self-sufficiency)
 - Corresponds to: non-Boolean gap in the Heyting algebra
 - Part of: the first triad of the triadic engine (Differentiate → Tension → minimal coherence)
-
-
----
-
-<!-- source: archive/triage/relationality-2/domains/human-draft-7/domains/system/domains/conditions/tension.md -->
-
-## Imported source: archive/triage/relationality-2/domains/human-draft-7/domains/system/domains/conditions/tension.md
-
----
-type: "[condition](../../triage/condition)"
-domain: "[../../../Relationality/triage/00-probably-redundant/20250502-relational-notes/fffstem/relating/structures/domain of relating](../../../Relationality/triage/00-probably-redundant/20250502-relational-notes/fffstem/relating/structures/domain of relating)"
-date-introduced: "[2025-05-03](../../triage/2025-05-03)"
-date-last-modified: "[2025-05-03](../../triage/2025-05-03)"
----
-
-- [../acts/define](../../acts/define):: [tension](../../triage/tension) is the [condition](../../triage/condition) that holds [inclusion](../../triage/inclusion) and [exclusion](../../triage/exclusion) in mutual, active opposition. It is the minimal dynamic by which a [triage/thing](../../triage/triage/thing) is coherently sustained as both what it is and not what it is not, ensuring that [../acts/exist|existing](../../acts/exist|existing) remains open and stable.
-
-## Derivation
 
 - [../acts/derive|Deriving](../../acts/derive|Deriving) [../acts/exist|existing](../../acts/exist|existing) shows that:
     - A [triage/thing](../../triage/triage/thing) must be [../acts/include|included](../../acts/include|included) in what it is;

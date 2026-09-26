@@ -170,24 +170,6 @@ The action cycle makes explicit that a task is not just an execution sequence bu
 - Whether the HTA hierarchy corresponds to the tower structure in the relational universe — whether each level of decomposition maps to a tower level, with atomic operations at the base and the overall goal at the top, and whether task correctness (plan-goal coherence) is a property of how these levels connect.
 - Whether the stopping criterion $p \times c$ (probability of failure times cost) has a formal representation as a decision-theoretic threshold on the fiber — whether it corresponds to a condition on the Heyting algebra value of the subtask's completion proposition, making the $p \times c$ threshold a formal boundedness condition on the fiber.
 
----
-
-## Supplementary formulation
-
-```yaml
----
-id: task
-description: "A goal-directed unit of work — decomposable into subtasks, terminating when the goal is achieved, failed, or abandoned."
-aliases: [tasks]
-composes: goal, subtasks, plan
-decomposes-to: task, operation
-composes-into: workflow
-terminates-on: goal-achieved, goal-failed, goal-abandoned
-work-types: process, procedure, derivation, inquiry
-date-created: 2026-03-29
----
-```
-
 A task is a unit of work organized around a goal.
 It has three parts: a goal (what counts as done), a set of subtasks or operations (what must happen to get there), and a plan (the order and conditions under which subtasks execute).
 
@@ -220,8 +202,6 @@ Annett and Duncan's $p \times c$ rule: stop decomposing when the probability of 
 High-risk operations get decomposed further.
 Low-risk operations are treated as atomic.
 The grain of decomposition matches the stakes, not any abstract standard of atomicity.
-
-## Earlier material
 
 When a task is composite — when its work-type is procedure or it requires multiple capabilities that no single agent provides — its subtasks become first-class entities. The parent task's frontmatter declares `subtasks: [<subtask-id>, ...]` and each subtask is its own file with its own atomic work-type, requires-capabilities, and assigned-to.
 

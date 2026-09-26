@@ -231,8 +231,6 @@ The untyped lambda calculus is maximally expressive but allows nonsense — self
 
 - Church-Rosser theorem: reduction order does not affect the result (when a result exists).
 
-## Earlier material
-
 1. **Variable**: $x$ — a name that stands for a value.
 2. **Abstraction**: $\lambda x.\, M$ — a function. Read: "the function that takes $x$ and returns $M$." The $\lambda$ marks the beginning of a function definition, $x$ names the input, and $M$ is the body.
 3. **Application**: $M\; N$ — apply function $M$ to argument $N$.

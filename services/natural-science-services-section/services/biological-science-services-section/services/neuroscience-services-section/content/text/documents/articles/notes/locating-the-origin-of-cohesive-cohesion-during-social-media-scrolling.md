@@ -306,14 +306,6 @@ Future research should empirically quantify these stratified projections by meas
 - Author (2024b). **Why Doomscrolling Feels Easy and Reading Feels Hard: How Doomscrolling Makes Thinking Hard and Reading Makes It Easy.**
 - Author (2025). **The Reflexive Water Cycle.**
 
-## Earlier material
-
-:PROPERTIES:
-:ID:       55f2f3e3-8307-4228-8e3e-718181487f1b
-:END:
-#+title: Locating the origin of cognitive cohesion during social media scrolling
-#+date: [2025-10-08 Wed 17:28]
-
 **6.3. Inequalities**
 1) *Continuity monotonicity*:
 \[
@@ -369,10 +361,6 @@ $$
 $$
 </p>
 
-<p>
-$$
-</p>
-
 <div class="theorem" id="orgb43a640">
 <p>
 (Externalization of Cohesion) If $\lambda>\beta$ and the continuity–cohesion inequalities hold across at least two independent strata $k\neq k'$, then the minimal ESDIHG model consistent with data is one in which $\mathcal{D}_P$ supplies a <b>nontrivial</b> pullback $\phi_{\mathcal{F},k}>0$ on each of those strata, hence the platform is the <b>proximal</b> source of cohesion during scrolling.
@@ -388,9 +376,3 @@ $$
 [3] Author (2024a). **Review of Attention as Neurocognitive System.**  
 [4] Author (2024b). **Why Doomscrolling Feels Easy and Reading Feels Hard: How Doomscrolling Makes Thinking Hard and Reading Makes It Easy.**  
 [5] Author (2025). **The Reflexive Water Cycle.**
-
-## Earlier material
-
-<p>
-\]
-</p>

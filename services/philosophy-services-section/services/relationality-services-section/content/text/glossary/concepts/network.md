@@ -27,13 +27,6 @@ Network analysis is also a method — see [methodology/network-analysis](../../.
 
 The critical sociologies have warned that networks are not innocent: who is in a network, who is excluded, and which network properties get optimized are political questions. Platform capitalism's reorganization of social life around networks readable to corporate measurement (Han's transparency society, Zuboff's surveillance capitalism) is one current site of that politics.
 
-
----
-
-<!-- source: archive/docs/app/spec/network.md -->
-
-## Imported source: archive/docs/app/spec/network.md
-
 ---
 title: Relational Network Simulation
 tags:

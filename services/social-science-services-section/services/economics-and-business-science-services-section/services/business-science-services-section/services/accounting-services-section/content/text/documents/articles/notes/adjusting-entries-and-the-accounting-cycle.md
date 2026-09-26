@@ -245,8 +245,6 @@ Notice that Cash didn't change in any of the adjustments, two new accounts appea
 
 You now understand the full cycle from recording a transaction to producing financial statements — including the adjusting entries that make those statements accurate. The next step is learning how to *analyze* financial statements: using ratios and comparisons to extract meaning from the numbers and evaluate a business's performance, liquidity, and financial health.
 
-## Earlier material
-
 After completing this lesson, you'll be able to explain why end-of-period adjustments are necessary, record the four main types of adjusting entries (plus depreciation), and describe the full accounting cycle from the moment a transaction occurs through the preparation of financial statements.
 
 Neither version reflects what actually happened in January.

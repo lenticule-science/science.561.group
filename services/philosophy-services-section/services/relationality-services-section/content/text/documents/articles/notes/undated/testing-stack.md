@@ -15,6 +15,12 @@ aliases:
 tags:
   - testing
   - validation
+date-created: "2026-03-04T00:00:00"
+depends_on:
+  - theorem/internal/evaluation-engine
+  - theorem/internal/measurement-stack
+  - theorem/internal/scheduling-stack
+  - theorem/internal/module-wiring
 ---
 
 # Testing Structure
@@ -51,29 +57,6 @@ generated traces and produce outputs for comparison. Thus the calculus induces
 an explicit testing structure: for every admissible component, we can generate
 test cases, execute them deterministically (up to commutation), and assert on
 observables, all using earned acts.
-
-
----
-
-<!-- source: archive/triage/relationality/domains/relationality-slop-2025-04/domains/internal/testing-stack.md -->
-
-## Imported source: archive/triage/relationality/domains/relationality-slop-2025-04/domains/internal/testing-stack.md
-
----
-title: Testing Stack
-aliases:
-  - Testing Stack
-  - testing stack
-date-created: "2026-03-04T00:00:00"
-tags:
-  - testing
-  - validation
-depends_on:
-  - theorem/internal/evaluation-engine
-  - theorem/internal/measurement-stack
-  - theorem/internal/scheduling-stack
-  - theorem/internal/module-wiring
----
 
 # Theorem (Testing Stack)
 
