@@ -4247,7 +4247,7 @@ DQUOTE         = %x22
 
 ## Deriving Relationality
 ![../../../../../tags/Relationality](./relationality.md)
-![../../../../../../triage/relations/reflex](../../../glossary/terms/reflex.md)
+![../../../../../../triage/relations/reflex](../../../glossary/terms/relationlessness.md)
 
 
 ## Old Notes

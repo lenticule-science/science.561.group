@@ -6,4 +6,4 @@ predication-fiber-functor: predication-fiber-algebra
 title: has no relation converse
 ---
 
-The converse of [has-no-relation](has-no-relation.md), induced by the swap $(s, o) \mapsto (o, s)$ on the entity-pair index. Its fiber-algebra map pulls back: $v(p^{*c})(s, o) = v(p^*)(o, s)$. Applied to the originating cell, this generates the cell $(R, p^{*c}, X)$ — the converse cell — with value above the knowledge-order bottom.
+The converse of [has-no-relation](../../../../../../../relationality-services-section/content/text/glossary/terms/relationlessness.md), induced by the swap $(s, o) \mapsto (o, s)$ on the entity-pair index. Its fiber-algebra map pulls back: $v(p^{*c})(s, o) = v(p^*)(o, s)$. Applied to the originating cell, this generates the cell $(R, p^{*c}, X)$ — the converse cell — with value above the knowledge-order bottom.

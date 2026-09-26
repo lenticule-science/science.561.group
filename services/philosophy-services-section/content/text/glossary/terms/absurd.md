@@ -16,7 +16,7 @@ The two roles are connected. The absurdities present at the start are the absurd
 
 ## Relation to relationlessness
 
-[Relationlessness](relationlessness.md) is the maximally-absurd configuration: the claim that *nothing relates*, which holds absurdly because it cannot, on its own terms, be related to anything that would constrain it. The framework's originating paradox is that this maximally-absurd configuration is already, structurally, a directed [relating](relating.md) once articulated — the absurdity does not stay absurd when written out, because writing it out is already a relation. Relationlessness is the limit-case of absurdity; the absurdities that ground ordinary claims are local, partial counterparts to this limit.
+[Relationlessness](../../../../services/relationality-services-section/content/text/glossary/terms/relationlessness.md) is the maximally-absurd configuration: the claim that *nothing relates*, which holds absurdly because it cannot, on its own terms, be related to anything that would constrain it. The framework's originating paradox is that this maximally-absurd configuration is already, structurally, a directed [relating](relating.md) once articulated — the absurdity does not stay absurd when written out, because writing it out is already a relation. Relationlessness is the limit-case of absurdity; the absurdities that ground ordinary claims are local, partial counterparts to this limit.
 
 ## Absurd and the math layer
 
@@ -31,7 +31,7 @@ A claim is not absurd merely because it has not yet been examined — that is *u
 - [Determination](determination.md) — the contrasting mode; the structurally-witnessed outcome.
 - [True](true.md), [False](false.md) — the truth-valued shapes a determined claim can take.
 - [Settlement](settlement.md) — the joint four-cornered structure of which absurd is one corner.
-- [Relationlessness](relationlessness.md) — the originating paradox; the limit of absurdity.
+- [Relationlessness](../../../../services/relationality-services-section/content/text/glossary/terms/relationlessness.md) — the originating paradox; the limit of absurdity.
 - [Relating](relating.md) — the activity that moves a claim from absurd toward determination.
 
 
@@ -69,7 +69,7 @@ The two roles are connected. The absurdities present at the start are the absurd
 
 ## Relation to relationlessness
 
-[Relationlessness](relationlessness.md) is the maximally-absurd configuration: the claim that *nothing relates*, which holds absurdly because it cannot, on its own terms, be related to anything that would constrain it. The framework's originating paradox is that this maximally-absurd configuration is already, structurally, a directed [relating](relating.md) once articulated — the absurdity does not stay absurd when written out, because writing it out is already a relation. Relationlessness is the limit-case of absurdity; the absurdities that ground ordinary claims are local, partial counterparts to this limit.
+[Relationlessness](../../../../services/relationality-services-section/content/text/glossary/terms/relationlessness.md) is the maximally-absurd configuration: the claim that *nothing relates*, which holds absurdly because it cannot, on its own terms, be related to anything that would constrain it. The framework's originating paradox is that this maximally-absurd configuration is already, structurally, a directed [relating](relating.md) once articulated — the absurdity does not stay absurd when written out, because writing it out is already a relation. Relationlessness is the limit-case of absurdity; the absurdities that ground ordinary claims are local, partial counterparts to this limit.
 
 ## Absurd and the math layer
 
@@ -103,7 +103,7 @@ The two roles are connected. The absurdities present at the start are the absurd
 
 ## Relation to relationlessness
 
-[Relationlessness](relationlessness.md) is the maximally-absurd configuration: the claim that *nothing relates*, which holds absurdly because it cannot, on its own terms, be related to anything that would constrain it. The framework's originating paradox is that this maximally-absurd configuration is already, structurally, a directed [relating](relating.md) once articulated — the absurdity does not stay absurd when written out, because writing it out is already a relation. Relationlessness is the limit-case of absurdity; the absurdities that ground ordinary claims are local, partial counterparts to this limit.
+[Relationlessness](../../../../services/relationality-services-section/content/text/glossary/terms/relationlessness.md) is the maximally-absurd configuration: the claim that *nothing relates*, which holds absurdly because it cannot, on its own terms, be related to anything that would constrain it. The framework's originating paradox is that this maximally-absurd configuration is already, structurally, a directed [relating](relating.md) once articulated — the absurdity does not stay absurd when written out, because writing it out is already a relation. Relationlessness is the limit-case of absurdity; the absurdities that ground ordinary claims are local, partial counterparts to this limit.
 
 ## Absurd and the math layer
 
@@ -118,7 +118,7 @@ A claim is not absurd merely because it has not yet been examined — that is *u
 - [Determination](determination.md) — the contrasting mode; the structurally-witnessed outcome.
 - [True](true.md), [False](false.md) — the truth-valued shapes a determined claim can take.
 - [Settlement](settlement.md) — the joint four-cornered structure of which absurd is one corner.
-- [Relationlessness](relationlessness.md) — the originating paradox; the limit of absurdity.
+- [Relationlessness](../../../../services/relationality-services-section/content/text/glossary/terms/relationlessness.md) — the originating paradox; the limit of absurdity.
 - [Relating](relating.md) — the activity that moves a claim from absurd toward determination.
 
 ---
@@ -145,7 +145,7 @@ The two roles are connected. The absurdities present at the start are the absurd
 
 ## Relation to relationlessness
 
-[Relationlessness](relationlessness.md) is the maximally-absurd configuration: the claim that *nothing relates*, which holds absurdly because it cannot, on its own terms, be related to anything that would constrain it. The framework's originating paradox is that this maximally-absurd configuration is already, structurally, a directed [relating](relating.md) once articulated — the absurdity does not stay absurd when written out, because writing it out is already a relation. Relationlessness is the limit-case of absurdity; the absurdities that ground ordinary claims are local, partial counterparts to this limit.
+[Relationlessness](../../../../services/relationality-services-section/content/text/glossary/terms/relationlessness.md) is the maximally-absurd configuration: the claim that *nothing relates*, which holds absurdly because it cannot, on its own terms, be related to anything that would constrain it. The framework's originating paradox is that this maximally-absurd configuration is already, structurally, a directed [relating](relating.md) once articulated — the absurdity does not stay absurd when written out, because writing it out is already a relation. Relationlessness is the limit-case of absurdity; the absurdities that ground ordinary claims are local, partial counterparts to this limit.
 
 ## Absurd and the math layer
 

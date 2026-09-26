@@ -54,7 +54,7 @@ Think of it this way: coherence is like a bridge between two riverbanks (inclusi
 
 Relating can relate to itself. This produces [Reflexive Sequence](../../../../../../triage/relationality-2/ai-generated-relationality/terms/reflexive-sequence.md) — indefinitely deep self-relation. Each time relating relates to itself, it produces a deeper structure. There is no natural stopping point.
 
-Given how relating engages inclusion and exclusion, it cannot not derive [Relation](../../../../../../glossary/terms/relationality-slop-2026-03-05-relation.md) — the stabilized condition in which they are coherently maintained. Relation induces [Positional Invariance](../../../../../../triage/relationality-2/ai-generated-relationality/terms/positional-invariance.md): inclusion and exclusion stay distinct and ordered no matter how deep you go.
+Given how relating engages inclusion and exclusion, it cannot not derive [Relation](../../../../../../glossary/terms/relation.md) — the stabilized condition in which they are coherently maintained. Relation induces [Positional Invariance](../../../../../../triage/relationality-2/ai-generated-relationality/terms/positional-invariance.md): inclusion and exclusion stay distinct and ordered no matter how deep you go.
 
 Given that relation relies on relating for its persistence, it cannot not derive [Relational Form](../../../../../../triage/relationality-2/ai-generated-relationality/terms/relational-form.md) — the minimal structure formalizing their interplay. Relational form establishes [Composition](../../../../../../triage/relationality-2/ai-generated-relationality/terms/composition.md): forms can be placed side by side into ordered wholes.
 

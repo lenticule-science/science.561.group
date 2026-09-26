@@ -17,7 +17,7 @@ Reflexivity is not self-reference in the paradox-of-the-liar sense. It is the st
 
 ## Reflexivity and relationlessness
 
-The framework's originating paradox — that [relationlessness](relationlessness.md) is itself a relation when articulated — is reflexivity in its primal form. The attempted self-reference *nothing relates* fails because asserting it is itself a relation. The failure does not collapse the framework; it produces the directed [predication](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/predication.md) structure that the rest of the framework develops. Reflexivity is what makes this productive: the failed self-reference *is the relating that produces relating*.
+The framework's originating paradox — that [relationlessness](../../../../services/relationality-services-section/content/text/glossary/terms/relationlessness.md) is itself a relation when articulated — is reflexivity in its primal form. The attempted self-reference *nothing relates* fails because asserting it is itself a relation. The failure does not collapse the framework; it produces the directed [predication](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/predication.md) structure that the rest of the framework develops. Reflexivity is what makes this productive: the failed self-reference *is the relating that produces relating*.
 
 ## Reflexivity is what makes determination possible
 
@@ -36,7 +36,7 @@ The framework's mathematical articulation makes reflexivity precise via the *clo
 ## See also
 
 - [Relating](relating.md) — the primitive activity that has reflexivity as a structural feature.
-- [Relationlessness](relationlessness.md) — the originating paradox where reflexivity first does its work.
+- [Relationlessness](../../../../services/relationality-services-section/content/text/glossary/terms/relationlessness.md) — the originating paradox where reflexivity first does its work.
 - [Witnessing](../../../../services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/witnessing.md) — the act whose recursive structure depends on reflexivity.
 - [Settlement](settlement.md) — the determined positions that reflexive iteration produces.
 
@@ -67,7 +67,7 @@ Reflexivity is not self-reference in the paradox-of-the-liar sense. It is the st
 
 ## Reflexivity and relationlessness
 
-The framework's originating paradox — that [relationlessness](relationlessness.md) is itself a relation when articulated — is reflexivity in its primal form. The attempted self-reference *nothing relates* fails because asserting it is itself a relation. The failure does not collapse the framework; it produces the directed [predication](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/predication.md) structure that the rest of the framework develops. Reflexivity is what makes this productive: the failed self-reference *is the relating that produces relating*.
+The framework's originating paradox — that [relationlessness](../../../../services/relationality-services-section/content/text/glossary/terms/relationlessness.md) is itself a relation when articulated — is reflexivity in its primal form. The attempted self-reference *nothing relates* fails because asserting it is itself a relation. The failure does not collapse the framework; it produces the directed [predication](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/predication.md) structure that the rest of the framework develops. Reflexivity is what makes this productive: the failed self-reference *is the relating that produces relating*.
 
 ## Reflexivity is what makes determination possible
 
@@ -141,7 +141,7 @@ Reflexivity is not self-reference in the paradox-of-the-liar sense. It is the st
 
 ## Reflexivity and relationlessness
 
-The framework's originating paradox — that [relationlessness](relationlessness.md) is itself a relation when articulated — is reflexivity in its primal form. The attempted self-reference *nothing relates* fails because asserting it is itself a relation. The failure does not collapse the framework; it produces the directed [predication](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/predication.md) structure that the rest of the framework develops. Reflexivity is what makes this productive: the failed self-reference *is the relating that produces relating*.
+The framework's originating paradox — that [relationlessness](../../../../services/relationality-services-section/content/text/glossary/terms/relationlessness.md) is itself a relation when articulated — is reflexivity in its primal form. The attempted self-reference *nothing relates* fails because asserting it is itself a relation. The failure does not collapse the framework; it produces the directed [predication](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/predication.md) structure that the rest of the framework develops. Reflexivity is what makes this productive: the failed self-reference *is the relating that produces relating*.
 
 ## Reflexivity is what makes determination possible
 
@@ -160,7 +160,7 @@ The framework's mathematical articulation makes reflexivity precise via the *clo
 ## See also
 
 - [Relating](relating.md) — the primitive activity that has reflexivity as a structural feature.
-- [Relationlessness](relationlessness.md) — the originating paradox where reflexivity first does its work.
+- [Relationlessness](../../../../services/relationality-services-section/content/text/glossary/terms/relationlessness.md) — the originating paradox where reflexivity first does its work.
 - [Witnessing](../../../../services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/witnessing.md) — the act whose recursive structure depends on reflexivity.
 - [Settlement](settlement.md) — the determined positions that reflexive iteration produces.
 
@@ -182,7 +182,7 @@ Reflexivity is not self-reference in the paradox-of-the-liar sense. It is the st
 
 ## Reflexivity and relationlessness
 
-The framework's originating paradox — that [relationlessness](relationlessness.md) is itself a relation when articulated — is reflexivity in its primal form. The attempted self-reference *nothing relates* fails because asserting it is itself a relation. The failure does not collapse the framework; it produces the directed [predication](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/predication.md) structure that the rest of the framework develops. Reflexivity is what makes this productive: the failed self-reference *is the relating that produces relating*.
+The framework's originating paradox — that [relationlessness](../../../../services/relationality-services-section/content/text/glossary/terms/relationlessness.md) is itself a relation when articulated — is reflexivity in its primal form. The attempted self-reference *nothing relates* fails because asserting it is itself a relation. The failure does not collapse the framework; it produces the directed [predication](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/predication.md) structure that the rest of the framework develops. Reflexivity is what makes this productive: the failed self-reference *is the relating that produces relating*.
 
 ## Reflexivity is what makes determination possible
 

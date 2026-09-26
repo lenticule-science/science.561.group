@@ -645,12 +645,12 @@ This maps to what PRE calls the relational field (Rel, Includes) — the ordered
 - [Relationality](../../../../../../content/text/glossary/_index.md) — the framework itself.
 - [Relational ontology](../../../../../../content/text/glossary/terms/relational-ontology.md) — the philosophical position.
 - [Predication](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/predication.md) — the mathematical-voice counterpart.
-- [Relationlessness](../../../../../../content/text/glossary/terms/relationlessness.md) — the originating paradox from which relating arises.
+- [Relationlessness](relationlessness.md) — the originating paradox from which relating arises.
 
 - [Relationality](../../../../../../content/text/glossary/_index.md) — the framework itself.
 - [Relational ontology](../../../../../../content/text/glossary/terms/relational-ontology.md) — the philosophical position.
 - [Predication](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/predication.md) — the mathematical-voice counterpart.
-- [Relationlessness](../../../../../../content/text/glossary/terms/relationlessness.md) — the originating paradox from which relating arises.
+- [Relationlessness](relationlessness.md) — the originating paradox from which relating arises.
 
 - [Relationality](../../../../../../../../../lib/legacy/2026-07-31-lenticule-science-corpus/animating/content/becoming/doing/working/governing/content/individual/content/agent/actuating/content/actuator/embodying/content/body/integrating/content/drone/swarming/content/swarm/content/social/_archive/relationality-repo/relationality/_index.md) — the framework itself.
 - [Relational ontology](../../../../../../content/text/glossary/terms/relational-ontology.md) — the philosophical position.

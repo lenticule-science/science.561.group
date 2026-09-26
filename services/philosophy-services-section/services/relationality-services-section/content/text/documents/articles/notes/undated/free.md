@@ -23,7 +23,7 @@ Acts presented in the **free** phase grouped by stratum.
 | 0002 | `Articulate` | [Articulating](../articulate.md) |
 | 0003 | `EmergeReflex` | [Emerging Reflex](0003-emerge-reflex.md) |
 | 0004 | `FirstRecognize` | [First Recognizing](0004-first-recognize.md) |
-| 0005 | `Reflex` | [Recognizing Reflex](../../../../glossary/terms/reflex.md) |
+| 0005 | `Reflex` | [Recognizing Reflex](../../../../glossary/terms/relationlessness.md) |
 | 0006 | `IterateReflex` | [Iterating Reflex](0006-iterate-reflex.md) |
 | 0007 | `Relate` | [Relating](../0007-relate.md) |
 | 0008 | `NotRelate` | [Negating Relation](0008-not-relate.md) |

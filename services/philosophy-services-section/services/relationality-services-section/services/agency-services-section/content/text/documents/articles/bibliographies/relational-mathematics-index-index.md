@@ -16,7 +16,7 @@ by the existing proofs and cites the recognitions it depends on. The
 current trace begins with the origination steps:
 
 - [Relationlessness](../research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/knowing/content/knowledge-science/systems/archive/acts/relationlessness.md)
-- [Reflex](../../../../../../../content/text/glossary/terms/reflex.md)
+- [Reflex](../../../../../../../content/text/glossary/terms/relationlessness.md)
 - [Articulation](../research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/knowing/content/knowledge-science/systems/archive/acts/articulation.md)
 - [Exclusion Recognition](../research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/knowing/content/knowledge-science/systems/archive/acts/exclusion_recognition.md)
 - [Reflex Emergence](../research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/knowing/content/knowledge-science/systems/archive/acts/reflex_emergence.md)

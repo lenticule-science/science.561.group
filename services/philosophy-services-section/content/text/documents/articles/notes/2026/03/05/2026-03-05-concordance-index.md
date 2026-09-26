@@ -44,7 +44,7 @@ These documents articulate the framework — not just what concepts exist but ho
 ### Prior to Movement I (genesis)
 
 - [relationlessness.md](../../../../research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-05/relationlessness.md) — the void / Bottom
-- [reflex.md](../../../../../../../../services/relationality-services-section/content/text/glossary/terms/reflex.md) — the primitive act (distinct from its product)
+- [reflex.md](../../../../../../../../services/relationality-services-section/content/text/glossary/terms/relationlessness.md) — the primitive act (distinct from its product)
 - [relation.md](../../../../research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-05/relation.md) — the full field / Top (complement of Relationlessness)
 - [witness.md](../../../../research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-05/witness.md) — the first observation (draft 9's opening sequence)
 - [minimal-cohesion.md](../../../../../../../../services/relationality-services-section/content/text/glossary/terms/minimal-cohesion.md) — the elementary coherent unit (HIT in Cubical Agda, draft 7)
@@ -61,7 +61,7 @@ These documents articulate the framework — not just what concepts exist but ho
 
 ### Logic (Movement I — formal operators)
 
-- [differentiate.md](../../../../../../../../services/relationality-services-section/content/text/glossary/terms/differentiate.md) — the product of Reflex; the first recognition
+- [differentiate.md](../../../../../../../../services/relationality-services-section/content/text/glossary/terms/relationlessness.md) — the product of Reflex; the first recognition
 - [includes-excludes.md](../../../../../../../../services/relationality-services-section/content/text/glossary/terms/includes-excludes.md) — order and incompatibility
 - [together-either.md](../../../../../../../../services/relationality-services-section/content/text/glossary/terms/together-either.md) — conjunction and disjunction
 - [negate.md](../../../../../../../../services/relationality-services-section/content/text/glossary/terms/negate.md) — complement

@@ -48,7 +48,7 @@ act simultaneously testifies to affirmation and denial.  This provides the
 **Theorem 2 (Relational duality).**  
 [Relating](../../../../../../services/relationality-services-section/content/text/documents/articles/notes/undated/relate.md) and
 [Negating Relation](../../../../../../services/relationality-services-section/content/text/documents/articles/notes/not-relate.md) are both earned from
-[Recognizing Reflex](../../../../../../services/relationality-services-section/content/text/glossary/terms/reflex.md).  They form a complementary pair whose
+[Recognizing Reflex](../../../../../../services/relationality-services-section/content/text/glossary/terms/relationlessness.md).  They form a complementary pair whose
 composite is `Witness`.
 
 *Proof sketch.* `Relate` is the reflex self-observation; `NotRelate` forces the

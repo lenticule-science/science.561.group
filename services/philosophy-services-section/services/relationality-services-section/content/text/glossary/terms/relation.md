@@ -98,17 +98,8 @@ The 561 Group's relationality is rooted in Lakota epistemology. In *mitákuye oy
 - **Whitehead** (1929) held every actual entity constituted by its prehensions, its grasps of other entities; relations are internal all the way down.
 - **Nāgārjuna** (c. 150 CE) held that nothing has own-being (*svabhāva*); everything is by dependent origination (*pratītyasamutpāda*): "When this is, that is; when this is not, that is not."
 
-## Earlier formulations
-
-Dated formulations from the relationality corpus, superseded by the reading above:
-
-- **2025-05-03.** Relation is the condition that specifies the binding of a thing to its own ongoing existing through the act of relating; it holds open the connection between a thing and the dynamic of its own inclusion and exclusion. Every relative, the first and minimal structure, depends on it.
-- **Same corpus, undated.** Relation is the condition of being different in the same domain.
-- **Relationality derivation, draft 4.** Relation = (Differentiate Relationlessness Relationlessness): differentiating relationlessness from itself produces its complement, the full relational field, Top. Every further concept is a recognition between Bottom (no relation) and Top (all relation).
-- **2025-08-30, org-roam.** A relation is a thing that does any relating to another thing: a thing is a relation of another if it is relating to that thing.
-- **2026, agent-written.** A relation is the structural form a relating produces when it stabilizes, the residue relating leaves behind.
-
 ## Related
 
 - [Relating](relating.md)
+- [Relationlessness](relationlessness.md)
 - [Relationality](../../../../README.md)

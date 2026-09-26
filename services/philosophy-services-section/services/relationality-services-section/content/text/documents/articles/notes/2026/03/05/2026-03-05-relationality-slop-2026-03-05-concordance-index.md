@@ -44,8 +44,8 @@ These documents articulate the framework — not just what concepts exist but ho
 ### Prior to Movement I (genesis)
 
 - [relationlessness.md](../../../../../../triage/relationality-2/ai-generated-relationality/relationality-slop-2026-03-05/relationlessness.md) — the void / Bottom
-- [reflex.md](../../../../../../glossary/terms/reflex.md) — the primitive act (distinct from its product)
-- [relation.md](../../../../../../glossary/terms/relationality-slop-2026-03-05-relation.md) — the full field / Top (complement of Relationlessness)
+- [reflex.md](../../../../../../glossary/terms/relationlessness.md) — the primitive act (distinct from its product)
+- [relation.md](../../../../../../glossary/terms/relation.md) — the full field / Top (complement of Relationlessness)
 - [witness.md](../../../../../../glossary/terms/witness.md) — the first observation (draft 9's opening sequence)
 - [minimal-cohesion.md](../../../../../../glossary/terms/minimal-cohesion.md) — the elementary coherent unit (HIT in Cubical Agda, draft 7)
 
@@ -61,7 +61,7 @@ These documents articulate the framework — not just what concepts exist but ho
 
 ### Logic (Movement I — formal operators)
 
-- [differentiate.md](../../../../../../glossary/terms/differentiate.md) — the product of Reflex; the first recognition
+- [differentiate.md](../../../../../../glossary/terms/relationlessness.md) — the product of Reflex; the first recognition
 - [includes-excludes.md](../../../../../../glossary/terms/includes-excludes.md) — order and incompatibility
 - [together-either.md](../../../../../../glossary/terms/together-either.md) — conjunction and disjunction
 - [negate.md](../../../../../../glossary/terms/negate.md) — complement
