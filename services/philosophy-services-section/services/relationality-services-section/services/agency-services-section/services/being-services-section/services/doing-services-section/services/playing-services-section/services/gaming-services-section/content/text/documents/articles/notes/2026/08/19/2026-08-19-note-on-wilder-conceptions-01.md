@@ -92,7 +92,7 @@ triple-ko fight, or Crucible's hardest daily tangle, or a SHRIMP colony's void-c
 all Ilinx for the identical structural reason — H¹≠0, unsettleable from within — not because they
 happen to feel vertiginous.
 
-**Why only this house could do it.** `@lenticule-science/metrologic`'s obstruction engine already computes H¹
+**Why only this house could do it.** `@red-cup-engineering/metrologic`'s obstruction engine already computes H¹
 rank and regime for real inputs (`equivo-design.md` §5.3's worked example literally prints
 `"regime": "transfinite"` and an H¹ rank from real code, not a genre label chosen by a designer).
 The SHRIMP brief (`shrimp-ecology-brief-v2.md` §1, "Regimes (proved)") and the Ludic
@@ -249,7 +249,7 @@ as the actual growth rate and the eigenvector as what's conserved. An idle game'
 mechanic is structurally identical: a player builds a production graph (this building feeds that
 one), resets, and keeps a multiplier. Today that multiplier is authored (a designer picks curve
 shapes). The wild version: let the player's actual production graph be a real matrix, run
-`@lenticule-science/metrologic` (or a small port of the same linear algebra) to find its dominant eigenvalue and
+`@red-cup-engineering/metrologic` (or a small port of the same linear algebra) to find its dominant eigenvalue and
 eigenvector, and price the prestige multiplier as literally λ, with the "prestige loadout" being
 literally which mixture (the eigenvector) the player chose to hold fixed. Two players with the
 same total output but different production topology get genuinely different, honestly computed
@@ -257,14 +257,14 @@ multipliers — the "kind incremental, honest numbers" instinct (vision note §3
 can go: not just no dark patterns, but no *invented* numbers at all.
 
 **Why only this house could do it.** The math is already proven and already running
-(`@lenticule-science/metrologic/obstruction` and its neighboring linear-algebra packages compute real spectral
+(`@red-cup-engineering/metrologic/obstruction` and its neighboring linear-algebra packages compute real spectral
 objects for other games today, per `equivo-design.md`'s worked examples). No other idle-game
 studio has a zero-dependency, tested spectral math package sitting one repo away and a design
 culture that already treats "the math is load-bearing, honestly labeled" as a house standard
 section (§13 of `2026-08-19-note-on-house-specification-standard.md`).
 
 **Smallest real step.** A tiny solo prototype, off to the side of any real fleet lane: a
-production graph of 3-5 nodes, a matrix, `@lenticule-science/metrologic`'s existing eigen-tooling (or a small
+production graph of 3-5 nodes, a matrix, `@red-cup-engineering/metrologic`'s existing eigen-tooling (or a small
 new pure module if none of the 13 packages exposes it directly — this needs a real check against
 the package list before claiming it's zero-effort), and one printed worked example showing a real
 λ for a real hand-built graph, in the same "worked example, honest surprise kept" discipline
@@ -281,7 +281,7 @@ nonnegative just to keep the math honest could make for a *worse* idle game than
 authored curves — the theorem is real, but "real math" and "good game feel" are not guaranteed to
 coincide here, and this is worth prototyping specifically to find out where they diverge.
 
-**Outcome.** Adopted as the idle-game seed. `@lenticule-science/metrologic` does export a `./spectral`
+**Outcome.** Adopted as the idle-game seed. `@red-cup-engineering/metrologic` does export a `./spectral`
 subpath, so the Perron–Frobenius spike is genuinely cheap; this becomes phase 1 of the
 kind-incremental lane. On the feel-vs-math question, the resolution is the house disclosure
 discipline itself: display λ as the computed number, let designers add authored bonuses on top,

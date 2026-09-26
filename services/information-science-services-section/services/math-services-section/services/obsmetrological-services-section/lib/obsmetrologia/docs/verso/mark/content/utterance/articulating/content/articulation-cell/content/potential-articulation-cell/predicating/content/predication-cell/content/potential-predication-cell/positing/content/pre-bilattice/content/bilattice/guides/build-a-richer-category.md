@@ -13,9 +13,9 @@ assignment is `{ cell: {subject, predicate, object}, charge }`.
 ## A 2-entity, 1-predicate category (4 cells, all potential)
 
 ```js
-import { settle } from "@lenticule-science/metrologic/bilattice";
-import { brim } from "@lenticule-science/metrologic/bilattice";
-import { vanish } from "@lenticule-science/metrologic/bilattice";
+import { settle } from "@red-cup-engineering/metrologic/bilattice";
+import { brim } from "@red-cup-engineering/metrologic/bilattice";
+import { vanish } from "@red-cup-engineering/metrologic/bilattice";
 import { id } from "./tests/_construct-utterance.mjs";
 
 const p = id(), e = [id(), id()];                       // one predicate, two entities

@@ -13,10 +13,10 @@ This is how an assertion looks once it's there.)
 3. Run `settle` (or `brim`) — the closure combines the assignments.
 
 ```js
-import { articulate } from "@lenticule-science/metrologic/bilattice";
-import { predicate } from "@lenticule-science/metrologic/bilattice";
-import { posit } from "@lenticule-science/metrologic/bilattice";
-import { settle } from "@lenticule-science/metrologic/bilattice";
+import { articulate } from "@red-cup-engineering/metrologic/bilattice";
+import { predicate } from "@red-cup-engineering/metrologic/bilattice";
+import { posit } from "@red-cup-engineering/metrologic/bilattice";
+import { settle } from "@red-cup-engineering/metrologic/bilattice";
 import mkUtterance, { witness } from "./tests/_construct-utterance.mjs";
 
 const cat = posit(predicate(articulate(mkUtterance())));

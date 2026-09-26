@@ -21,7 +21,7 @@ console.log(u);            // e.g. [ '3af9c1', 'd02e77' ]  — a token (left), a
 ## 2. Articulate — witness it into a cell
 
 ```js
-import { articulate } from "@lenticule-science/metrologic/bilattice";
+import { articulate } from "@red-cup-engineering/metrologic/bilattice";
 
 const c0 = articulate(u);
 console.log(c0);           // { potential: [ '3af9c1', 'd02e77' ] }
@@ -33,7 +33,7 @@ cell. (Hand it `[]` or `[token]` and it throws: an utterance must give both side
 ## 3. Predicate — spread into the relational cells
 
 ```js
-import { predicate } from "@lenticule-science/metrologic/bilattice";
+import { predicate } from "@red-cup-engineering/metrologic/bilattice";
 
 const c1 = predicate(c0);
 console.log(c1["cell-set"]["entity-set"]);     // { entities: [ '3af9c1' ] }   — left read as the object
@@ -47,7 +47,7 @@ charge yet, just the site.
 ## 4. Posit — *measure* the cell
 
 ```js
-import { posit } from "@lenticule-science/metrologic/bilattice";
+import { posit } from "@red-cup-engineering/metrologic/bilattice";
 
 const c2 = posit(c1);
 console.log(c2.traces[0].valuations[0]["fiber-algebras"][0].assignments[0].charge);
@@ -62,7 +62,7 @@ Nothing was seeded — the state was read off what's there.
 ## 5. Settle — reach the fixed point
 
 ```js
-import { settle } from "@lenticule-science/metrologic/bilattice";
+import { settle } from "@red-cup-engineering/metrologic/bilattice";
 
 const { sheaf } = settle(c2);
 console.log(sheaf.section["fiber-algebras"][0].assignments[0].charge.value);  // [ true, false ]

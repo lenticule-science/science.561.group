@@ -34,7 +34,7 @@ sources:
 
 ## Definition
 
-**Bilattice predication** is the construct the owner's `@lenticule-science/metrologic/bilattice` package calls "the bilattice predication floor — the four-regime descent over a lossless evidence carrier" (`triage/2026/06/06/math-core/bilattice/README.md:3-4`). It has two layers.
+**Bilattice predication** is the construct the owner's `@red-cup-engineering/metrologic/bilattice` package calls "the bilattice predication floor — the four-regime descent over a lossless evidence carrier" (`triage/2026/06/06/math-core/bilattice/README.md:3-4`). It has two layers.
 
 **Layer 1 — the charge algebra over FOUR.** A *charge* is a plain pair-of-pairs:
 

@@ -1007,7 +1007,7 @@ What is **proved**, in the house's Lean development
   N.components)`: the coordination obstruction's rank counted as erased
   bits, one per independent cycle [@landauer1961].
 
-What is **implemented**, in `@lenticule-science/metrologic`
+What is **implemented**, in `@red-cup-engineering/metrologic`
 (`../../../../../../../../../../../../../../services/information-science-services-section/services/math-services-section/services/obsmetrological-services-section/apps/metrologic/`):
 the `obstruction` module exports `settling`, `increments`, `firings`,
 `nscFirings`, `h1`, `clInv`, `mldEquivalent`, `classify`, `depth`,

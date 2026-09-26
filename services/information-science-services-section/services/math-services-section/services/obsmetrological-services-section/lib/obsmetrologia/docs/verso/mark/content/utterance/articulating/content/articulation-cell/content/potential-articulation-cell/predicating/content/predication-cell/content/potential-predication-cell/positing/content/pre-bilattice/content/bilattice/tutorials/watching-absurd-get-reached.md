@@ -20,7 +20,7 @@ console.log(potential.value, active.value);   // [ true, false ] [ false, true ]
 ## 2. Meet them — and watch absurd appear
 
 ```js
-import { meetKnowledge as meetK } from "@lenticule-science/metrologic/bilattice";
+import { meetKnowledge as meetK } from "@red-cup-engineering/metrologic/bilattice";
 
 const reconciled = meetK({ left: potential, right: active });
 console.log(reconciled.value);          // [ false, false ]  ← absurd, REACHED
@@ -43,9 +43,9 @@ nothing at all" — the value is the same, the evidence is not.
 ## 4. Contrast: nothing seeds absurd
 
 ```js
-import { articulate } from "@lenticule-science/metrologic/bilattice";
-import { predicate } from "@lenticule-science/metrologic/bilattice";
-import { posit } from "@lenticule-science/metrologic/bilattice";
+import { articulate } from "@red-cup-engineering/metrologic/bilattice";
+import { predicate } from "@red-cup-engineering/metrologic/bilattice";
+import { posit } from "@red-cup-engineering/metrologic/bilattice";
 import mkUtterance from "./tests/_construct-utterance.mjs";
 
 const measured = posit(predicate(articulate(mkUtterance())))

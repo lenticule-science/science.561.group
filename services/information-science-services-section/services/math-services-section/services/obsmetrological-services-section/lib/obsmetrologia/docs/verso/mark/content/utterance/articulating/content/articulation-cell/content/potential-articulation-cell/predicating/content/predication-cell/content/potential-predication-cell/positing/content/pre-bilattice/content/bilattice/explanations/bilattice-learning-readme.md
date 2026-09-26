@@ -1,6 +1,6 @@
-# @lenticule-science/metrologic/bilattice — learning docs (Diátaxis)
+# @red-cup-engineering/metrologic/bilattice — learning docs (Diátaxis)
 
-Documentation for `@lenticule-science/metrologic/bilattice`, organized by the [Diátaxis](https://diataxis.fr) four quadrants.
+Documentation for `@red-cup-engineering/metrologic/bilattice`, organized by the [Diátaxis](https://diataxis.fr) four quadrants.
 Every doc here explains the **math and the software side by side**: the mathematical object (the
 bilattice, the orders, the cones, the cohomology) and the morphism that realizes it (a named export in `src/`),
 in the same breath.

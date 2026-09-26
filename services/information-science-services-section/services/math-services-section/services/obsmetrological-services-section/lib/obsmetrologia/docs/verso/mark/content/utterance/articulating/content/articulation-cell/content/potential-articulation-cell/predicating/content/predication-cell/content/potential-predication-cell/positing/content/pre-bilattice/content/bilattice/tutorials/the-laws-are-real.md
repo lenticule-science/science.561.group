@@ -22,7 +22,7 @@ Nothing here fixes an expected output — `rand()` is a *probe*, not a baked cas
 ## 2. Check a law: join is commutative
 
 ```js
-import { joinKnowledge as joinK } from "@lenticule-science/metrologic/bilattice";
+import { joinKnowledge as joinK } from "@red-cup-engineering/metrologic/bilattice";
 
 const V = (c) => `${+c.value[0]}${+c.value[1]}`;
 let ok = true;
@@ -41,7 +41,7 @@ the op were wrong on some state, a random run would eventually catch it.
 The truth ops are the knowledge ops seen through the order-swap σ. Verify it:
 
 ```js
-import { joinTruth as joinT } from "@lenticule-science/metrologic/bilattice";
+import { joinTruth as joinT } from "@red-cup-engineering/metrologic/bilattice";
 
 const sigma = (c) => ({ value: [c.value[0], !c.value[1]], evidence: c.evidence });
 ok = true;

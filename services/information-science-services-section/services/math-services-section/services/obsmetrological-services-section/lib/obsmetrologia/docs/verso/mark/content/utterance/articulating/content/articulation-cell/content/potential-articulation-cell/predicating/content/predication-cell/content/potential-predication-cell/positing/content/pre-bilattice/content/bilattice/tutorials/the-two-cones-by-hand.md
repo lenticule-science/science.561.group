@@ -7,9 +7,9 @@ root.
 ## 1. Build the carrier
 
 ```js
-import { articulate } from "@lenticule-science/metrologic/bilattice";
-import { predicate } from "@lenticule-science/metrologic/bilattice";
-import { posit } from "@lenticule-science/metrologic/bilattice";
+import { articulate } from "@red-cup-engineering/metrologic/bilattice";
+import { predicate } from "@red-cup-engineering/metrologic/bilattice";
+import { posit } from "@red-cup-engineering/metrologic/bilattice";
 import mkUtterance from "./tests/_construct-utterance.mjs";
 
 const cat = posit(predicate(articulate(mkUtterance())));
@@ -19,8 +19,8 @@ const value = (s) => s["fiber-algebras"][0].assignments[0].charge.value;
 ## 2. The knowledge cones — least and greatest
 
 ```js
-import { settle } from "@lenticule-science/metrologic/bilattice";
-import { brim } from "@lenticule-science/metrologic/bilattice";
+import { settle } from "@red-cup-engineering/metrologic/bilattice";
+import { brim } from "@red-cup-engineering/metrologic/bilattice";
 
 console.log("settle (LFP):", value(settle(cat).sheaf.section));   // [ true, false ]  potential
 console.log("brim   (GFP):", value(brim(cat).cone.section));      // [ true, true  ]  stable
@@ -33,7 +33,7 @@ free bit ranges).
 ## 3. The void is the slack
 
 ```js
-import { vanish } from "@lenticule-science/metrologic/bilattice";
+import { vanish } from "@red-cup-engineering/metrologic/bilattice";
 
 const v = vanish(cat);
 console.log("void cells:", v.apex.length);                                           // 1
@@ -48,8 +48,8 @@ Here the whole cell is void on its activity bit — exactly the slack you saw in
 The truth order has its own pair, reading the *same* carrier:
 
 ```js
-import { adjudicate } from "@lenticule-science/metrologic/bilattice";
-import { presume } from "@lenticule-science/metrologic/bilattice";
+import { adjudicate } from "@red-cup-engineering/metrologic/bilattice";
+import { presume } from "@red-cup-engineering/metrologic/bilattice";
 
 console.log("adjudicate (truth-LFP):", value(adjudicate(cat).verdict.section));     // [ true, false ]
 console.log("presume    (truth-GFP):", value(presume(cat).presumption.section));    // [ true, false ]

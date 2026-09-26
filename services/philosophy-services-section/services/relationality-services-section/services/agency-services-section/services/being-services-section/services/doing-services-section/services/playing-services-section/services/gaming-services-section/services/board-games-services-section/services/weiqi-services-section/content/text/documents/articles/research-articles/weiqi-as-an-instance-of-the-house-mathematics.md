@@ -8,8 +8,8 @@ keywords: ["weiqi", "predication", "resolution-floor", "transfinite", "ko", "gau
 what-is-proved:
   - "WeiqiObsmetrologia.Board.positionalSuperko_length_le (the 3^n bound: Go is finite globally)"
   - "WeiqiObsmetrologia.Evidence.knowledge_monotone_of_evidence, evidence_not_truth_monotone"
-  - "@lenticule-science/metrologic/obstruction: rank H¹ = number of cells first designated at a limit stage (the transfinite regime)"
-  - "@lenticule-science/metrologic/verdier/gauge: the Klein-four gauge on FOUR (GAUGE_ORDER, fixedSet, inducedPermutation)"
+  - "@red-cup-engineering/metrologic/obstruction: rank H¹ = number of cells first designated at a limit stage (the transfinite regime)"
+  - "@red-cup-engineering/metrologic/verdier/gauge: the Klein-four gauge on FOUR (GAUGE_ORDER, fixedSet, inducedPermutation)"
 description: The owner's statements this week were literal and this section had been reading them as analogies.
 ---
 
@@ -119,7 +119,7 @@ that forbids immediate recapture, none exists.
 The owner ruled that relations are directed arrows with orientation, angle,
 and magnitude. Section 3 of the honeycomb article read angle as the
 rotation order of the transport. The house has a more exact object:
-`@lenticule-science/metrologic/verdier/gauge` carries the d-frame
+`@red-cup-engineering/metrologic/verdier/gauge` carries the d-frame
 Klein-four gauge on FOUR (`GAUGE_ORDER = [⊥, t, f, ⊤]`, `fixedSet`,
 `inducedPermutation`, `firingPatternSelfDual`). A gauge element is what an
 arrow does to a charge as it crosses a face: identity, the truth flip, the

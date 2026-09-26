@@ -8,10 +8,10 @@ The void cone is the cells a descent leaves *open* — where the unit cone (leas
 `vanish` runs both knowledge cones and returns their gap:
 
 ```js
-import { articulate } from "@lenticule-science/metrologic/bilattice";
-import { predicate } from "@lenticule-science/metrologic/bilattice";
-import { posit } from "@lenticule-science/metrologic/bilattice";
-import { vanish } from "@lenticule-science/metrologic/bilattice";
+import { articulate } from "@red-cup-engineering/metrologic/bilattice";
+import { predicate } from "@red-cup-engineering/metrologic/bilattice";
+import { posit } from "@red-cup-engineering/metrologic/bilattice";
+import { vanish } from "@red-cup-engineering/metrologic/bilattice";
 import mkUtterance from "./tests/_construct-utterance.mjs";
 
 const cat = posit(predicate(articulate(mkUtterance())));
@@ -30,11 +30,11 @@ console.log(v.evidence[0]);   // { cell, least: <settle charge>, greatest: <brim
 `vanish` is the knowledge void (`gap(settle, brim)`). For the truth void, call `gap` yourself:
 
 ```js
-import { settle } from "@lenticule-science/metrologic/bilattice";
-import { brim } from "@lenticule-science/metrologic/bilattice";
-import { adjudicate } from "@lenticule-science/metrologic/bilattice";
-import { presume } from "@lenticule-science/metrologic/bilattice";
-import { gap } from "@lenticule-science/metrologic/bilattice";
+import { settle } from "@red-cup-engineering/metrologic/bilattice";
+import { brim } from "@red-cup-engineering/metrologic/bilattice";
+import { adjudicate } from "@red-cup-engineering/metrologic/bilattice";
+import { presume } from "@red-cup-engineering/metrologic/bilattice";
+import { gap } from "@red-cup-engineering/metrologic/bilattice";
 
 const knowledgeVoid = gap({ least: settle(cat).sheaf.section, greatest: brim(cat).cone.section });
 const truthVoid     = gap({ least: adjudicate(cat).verdict.section, greatest: presume(cat).presumption.section });

@@ -606,7 +606,7 @@ answerable.
 |---|---|
 | A state is a global section exactly when it is settling-fixed; settling is the drive's least fixed point | proved — `harmonic_kernel_h0_iso`, `mem_h0_iff_harmonic`, `harmonic_imp_compatible`, `settle_fixed` (TarskiSheafClosure.lean) |
 | The baseline (Fix σ) and the transfer (Fix Δ) are commuting nuclei with a common fixed point | proved — `sigma_delta_comm`, `fix_pi_iff`, `settlingSquare` (FiberAlgebra.lean) |
-| H¹ and its bigraded refinement are computable over settlings given as data | implemented — `@lenticule-science/metrologic/obstruction`, `@lenticule-science/metrologic/dframe` |
+| H¹ and its bigraded refinement are computable over settlings given as data | implemented — `@red-cup-engineering/metrologic/obstruction`, `@red-cup-engineering/metrologic/dframe` |
 | Single-channel deviation from a person's own baseline | implemented — `@red-cup-engineering/pacing-intelligence-services-section` 0.1.1 |
 | Damage/border classification; certify borders; price erasure | documented — the distal bypass note |
 | PACE-S is MAPE-K positionally | documented — the paradigm note, founder-stated 2026-09-02 |

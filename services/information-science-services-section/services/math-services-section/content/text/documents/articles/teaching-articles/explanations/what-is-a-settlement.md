@@ -117,5 +117,5 @@ reader should understand the parameters.
 - Whether the settling this code reaches agrees with
   `Cohomology.SettlingCohomologyH1`'s reading of the same settling (its
   firing structure, its `H¹`) is unaddressed. That reading lives in
-  `@lenticule-science/metrologic/obstruction/settling`, over a different
+  `@red-cup-engineering/metrologic/obstruction/settling`, over a different
   presentation of a settling entirely; the two have not been related.

@@ -4,8 +4,8 @@ Each morphism is a **named export**, grouped into four modules by layer —
 [`charge`](../../../src/charge.mjs) (the value-algebra), [`descent`](../../../src/descent.mjs) (the
 four-regime pipeline + modal pairs), [`cone`](../../../src/cone.mjs) (the cone duals), and
 [`void`](../../../src/void.mjs) (the void reads + monad). All are re-exported from the package root, so
-`import { settle } from "@lenticule-science/metrologic/bilattice"` reaches any of them; the subpaths
-(`@lenticule-science/metrologic/bilattice/descent`, etc.) reach one module. Each entry below gives **what it
+`import { settle } from "@red-cup-engineering/metrologic/bilattice"` reaches any of them; the subpaths
+(`@red-cup-engineering/metrologic/bilattice/descent`, etc.) reach one module. Each entry below gives **what it
 realizes** (math) and **its shape** (in → out). Charges are [as specified here](the-charge.md).
 
 ## The descent — module [`descent`](../../../src/descent.mjs)

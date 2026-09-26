@@ -20,7 +20,7 @@ status: proposal
 what-is-proved:
   - "Obsmetrologia/Calculus/Logic/LinearLogicChu.lean: ChuSpace (r : pts → sts → Charge) and ChuMap's forward/backward adjointness D.r (fwd a) y = C.r a (bwd y) — §1's Chu-transform reading of a move is this article's application of that Lean object to weiqi, not a new theorem."
   - "weiqi-obsmetrologia-services-section/lib/weiqi-obsmetrologia/WeiqiObsmetrologia/Admission.lean: WeiqiObsmetrologia.boolPredicateChu, WeiqiObsmetrologia.functionPredicateChuMap, and WeiqiObsmetrologia.boolean_hoare_is_lax_chu — the 2026-07-18 gyrobifastigial Chu–Hoare Territory Audit's predicate-Chu bridge, lean-checked there but explicitly not committed, is now committed here, axiom-free, against the library's ChuSpace/ChuMap (Obsmetrologia/Calculus/Logic/LinearLogicChu.lean). The same module's MoveInput/Legal/admission gives a weiqi move the literal HoareProgram shape §2 describes (precondition = the legality conjunction, postcondition = the ko regime holding on the extended trace) — this is still inference from the kernel's own Game.play, which is not itself restated as this Lean term; what changed is that the target shape now exists as a checked Lean object, not only as this article's description of one."
-  - "apps/weiqi-kernel/src/game.mts (Game.play, isLegal) and scripts/derive-liberty-chu-space.mts (chuSpace over @lenticule-science/metrologic/chu 0.2.0): working code computing an honest liberty Chu space from a replayed SGF record, tested by this section's npm test (4/4 pass)."
+  - "apps/weiqi-kernel/src/game.mts (Game.play, isLegal) and scripts/derive-liberty-chu-space.mts (chuSpace over @red-cup-engineering/metrologic/chu 0.2.0): working code computing an honest liberty Chu space from a replayed SGF record, tested by this section's npm test (4/4 pass)."
 description: One of the three lineage articles named in Weiqi as Arena, Chu Space, Predication, and Manifold §4.
 ---
 
@@ -38,7 +38,7 @@ value: `r : pts → sts → Charge`. The Lean carrier,
 defines exactly this: `ChuSpace` with `r : pts → sts → Charge`, and
 `ChuMap` between two Chu spaces with a forward point map and a backward
 state map satisfying the adjointness `D.r (fwd a) y = C.r a (bwd y)`. The
-Node carrier is `@lenticule-science/metrologic/chu`
+Node carrier is `@red-cup-engineering/metrologic/chu`
 (`chuSpace(points, states, valueAt)` over FOUR, with `row`, `extension`,
 `dual`, `chuTransform`). The glass-sponge note states the same pair in
 game-semantic language,

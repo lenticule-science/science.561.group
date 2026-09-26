@@ -113,7 +113,7 @@ Layer 1 abstractly proved; Layers 2–3 open. - **citation:** `.../bucket-3/theo
 
 ### B7 — Void-cone cohomology and the apex–void match The void cone carries the associated graded of the void filtration `⊕_{μ ∈ L_ns} ℤ` (one generator per non-Scott-continuous firing), isomorphic via Verdier duality to the dual cosheaf homology `H₁(F̌_v)` and matching the apex `H¹(F_v)` with firing-ordinal indexing on both sides.
 The chain-level identity `rank H¹(apex) = rank gr(Void)` holds independently of the categorical Verdier gap.
-(This is what the live `@lenticule-science/metrologic/obstruction` `apexVoidMatch` checks.)
+(This is what the live `@red-cup-engineering/metrologic/obstruction` `apexVoidMatch` checks.)
 An alternative route is the void-filtration spectral sequence. - **citations:** `.../bucket-1/prose/learning/claims/void-cone-cohomology.md`, `.../bucket-1/prose/learning/claims/void-cone-via-filtration-ss.md`
 
 ### B8 — Dihedral D₄ symmetry on twist products For any de Morgan algebra `L`, the order-swap `σ⟨a,b⟩ = ⟨a, ¬b⟩` intertwines the two orders (`≤_k` ↔ `≤_t`); with the Klein-four `K₄ = ⟨∼,−⟩` it generates the dihedral group `G₈ ≅ D₄`.

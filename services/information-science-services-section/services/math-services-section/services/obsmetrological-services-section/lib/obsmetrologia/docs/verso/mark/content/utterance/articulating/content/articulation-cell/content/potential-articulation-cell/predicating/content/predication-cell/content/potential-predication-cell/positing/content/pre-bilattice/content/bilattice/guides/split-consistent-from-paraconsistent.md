@@ -7,8 +7,8 @@ locus). This is the `F^(k) ≅ F^(t) ⊕ F^(⊤)` decomposition.
 ## Do it
 
 ```js
-import { compare } from "@lenticule-science/metrologic/bilattice";
-import { settle } from "@lenticule-science/metrologic/bilattice";
+import { compare } from "@red-cup-engineering/metrologic/bilattice";
+import { settle } from "@red-cup-engineering/metrologic/bilattice";
 // ... build `cat` via articulate→predicate→posit ...
 
 const { consistent, paraconsistent } = compare(settle(cat).sheaf.section);

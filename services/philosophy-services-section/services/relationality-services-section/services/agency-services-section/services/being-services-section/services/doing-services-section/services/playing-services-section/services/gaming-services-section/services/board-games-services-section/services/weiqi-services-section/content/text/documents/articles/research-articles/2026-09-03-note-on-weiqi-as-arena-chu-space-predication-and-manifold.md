@@ -116,7 +116,7 @@ files §17 as "design correspondence, not proved theorem".
   (2026-07-18, Leader-prompted, provisional synthesis). That audit's type
   correction binds here: "A Chu space is an evaluation object; it is not by
   itself a geometric base or a tiling."
-- The Node carrier: `@lenticule-science/metrologic/chu` (registry 0.2.0),
+- The Node carrier: `@red-cup-engineering/metrologic/chu` (registry 0.2.0),
   `chuSpace(points, states, valueAt)` over FOUR with `row`, `extension`,
   `dual`, `chuTransform`.
 - The manifold link: the MASH note (§1.3 below) records Jakl's
@@ -316,7 +316,7 @@ over) is itself addressed evidence rather than silence.
 
 Two single-transformation scripts in this section, tested by `npm test`
 (4 tests, 4 pass, counted 2026-09-03), composing the kernel with
-`@lenticule-science/metrologic@0.2.0` (exact pin; the section's first house
+`@red-cup-engineering/metrologic@0.2.0` (exact pin; the section's first house
 dependency, closing the "island" shape named in org-layering):
 
 - `scripts/derive-liberty-chu-space.mts`: position → the liberty Chu space over
