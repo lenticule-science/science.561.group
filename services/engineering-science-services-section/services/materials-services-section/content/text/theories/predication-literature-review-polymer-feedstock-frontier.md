@@ -86,7 +86,3 @@ The deeper shift is treating feedstock as a *design variable* of the part rather
 4. Brenken et al. (2018) — fiber-reinforced FFF.
 5. Yang et al. (2017) — PEEK and crystallinity-control.
 6. Cruz Sanchez et al. (2020) — recycling frontier.
-
-## Earlier material
-
-- **Multi-material FFF** (Bambu AMS, Prusa MMU3, Prusa XL): part contains multiple polymers in different regions. Design problem: which material where, and how to engineer the interface (see [multi-material-interface-strength](../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/technology/fabrication/additive-manufacturing/theories/fused-filament-fabrication/questions/multi-material-interface-strength.md)).

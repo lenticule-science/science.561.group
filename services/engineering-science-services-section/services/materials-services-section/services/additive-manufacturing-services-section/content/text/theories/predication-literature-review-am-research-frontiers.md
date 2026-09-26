@@ -82,9 +82,3 @@ Without certification frameworks, AM remains a low-volume technology in the regu
 ## What this review does not cover
 
 Construction-scale AM (Buswell et al. 2018), bio-printing (Murphy & Atala 2014), food printing, and ceramic AM each deserve their own review. They are excluded here because the AM theory in this library currently focuses on polymer (FFF, vat photopolymerization) and metal (PBF, DED) for engineered components.
-
-## Earlier material
-
-The corresponding library frontier: a [generative-design-for-am](../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/technology/fabrication/material-science/additive-manufacturing/learning/questions/generative-design-for-am.md) entry asking when ML-generated geometry will reach engineering acceptability.
-
-The [multi-material-interface-strength](../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/technology/fabrication/material-science/additive-manufacturing/theories/fused-filament-fabrication/questions/multi-material-interface-strength.md) question covers the FFF case.

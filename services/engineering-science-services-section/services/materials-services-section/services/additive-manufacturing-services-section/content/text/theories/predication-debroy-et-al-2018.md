@@ -27,7 +27,3 @@ Definitive review of the **process–structure–property (PSP) chain in metal A
 **Why it matters here.** Sets the model for how a "mature" AM science should look: physics-based, predictive, and tied to controllable process parameters. The polymer-AM (FFF) literature is a decade behind on this PSP framing; Brenken et al. (2018) and Phan et al. (2020) are the FFF analogs in progress.
 
 **Cited from.** [process-structure-property linkage](./predication-process-structure-property-linkage.md), residual-stress concept, [predictive-warping-model](./predication-predictive-warping-model.md) open question.
-
-## Earlier material
-
-**Cited from.** [process-structure-property linkage](../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/technology/fabrication/material-science/additive-manufacturing/archive/teaching/explanations/process-structure-property-linkage.md), residual-stress concept, [predictive-warping-model](../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/technology/fabrication/material-science/additive-manufacturing/archive/questions/predictive-warping-model.md) open question.

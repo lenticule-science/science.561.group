@@ -30,7 +30,3 @@ Patterns:
 - **Honeycomb / hex:** strong, slow.
 - **Gyroid:** isotropic, smooth toolpath, no stress concentrators, prints fast at moderate density. Generally the default for functional parts.
 - **Cubic / octet:** 3D-isotropic; useful when load direction is uncertain.
-
-## Earlier material
-
-For load-bearing parts, infill is a poor substitute for designed-in [ribs](../../../../../../aerospace-engineering-science-services-section/services/uavs-services-section/content/text/glossary/terms/rib.md) and gussets: a $\rho = 0.40$ infill is mechanically inferior to a $\rho = 0.15$ infill plus rib geometry of equal mass.

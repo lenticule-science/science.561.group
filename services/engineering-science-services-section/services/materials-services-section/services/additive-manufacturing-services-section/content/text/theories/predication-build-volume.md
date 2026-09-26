@@ -21,7 +21,3 @@ When a part exceeds build volume, options are (in roughly preferred order):
 The build volume's *usable* fraction is smaller than nominal: a margin near the build plate edges is conventionally avoided (poor first-layer adhesion at the plate corners, uneven first-layer due to plate flatness tolerances), and on FFF the topmost few millimeters may be inaccessible due to nozzle-to-Z-stop clearance. A practical rule is to design within $X - 10, Y - 10, Z - 5$ of the nominal envelope.
 
 Build volume is independent of part complexity — geometry can be arbitrary within the envelope, with the only further constraint being whether [supports](./predication-support.md) can be removed from internal cavities.
-
-## Earlier material
-
-Build volume is independent of part complexity — geometry can be arbitrary within the envelope, with the only further constraint being whether [supports](../../../../../../../../history-and-archaeology-science-services-section/content/text/documents/articles/notes/undated/support.md) can be removed from internal cavities.

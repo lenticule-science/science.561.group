@@ -36,10 +36,3 @@ These approaches compose: a model can be fine-tuned for JSON output, constrained
 ### Scope
 
 Structured output extends beyond tool use. It applies to any case where an application needs machine-readable model output: extracting entities from text into typed records, classifying inputs into predefined categories, generating API payloads, or producing configuration files. In [agentic systems](../../../../../../content/text/glossary/terms/agentic-system.md), structured output is the interface between the statistical text generator and the deterministic execution environment.
-
-## Earlier material
-
-**Post-hoc validation with retry.** The model generates output freely, and a validator checks it against the schema afterward.
-If validation fails, the errors are fed back to the model and it tries again.
-[PydanticAI](../../../../../agent-orchestration-platform-science-services-section/content/text/glossary/terms/pydantic-ai.md) uses this approach: Pydantic models validate the output, and validation errors become part of the next prompt.
-This is more flexible (works with any model) but does not guarantee first-attempt conformance.

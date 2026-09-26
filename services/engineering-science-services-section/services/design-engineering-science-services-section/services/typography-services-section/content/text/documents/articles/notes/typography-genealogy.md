@@ -18,8 +18,3 @@ description: This genealogy traces how typographic practices evolved to support 
 
 This [genealogy](../../../../philosophy/disciplines/critical-theory/schools/foucault/terms/genealogy.md) traces how typographic practices evolved to support [legibility](../../../../../../../../../../philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/legibility.md),
 annotation, and structured reading.
-
-## Earlier material
-
-This [genealogy](../../../../../../../../../../philosophy/disciplines/critical-theory/schools/foucault/terms/genealogy.md) traces how typographic practices evolved to support [legibility](../../../../../../../../../../sociology/terms/legibility.md),
-annotation, and structured reading.

@@ -17,7 +17,3 @@ visibility: public
 A ***graphical user interface*** is a [user
 interface](user-interface.md) that uses
 [graphics](../../../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/graphics.md).
-
-## Earlier material
-
-A ***graphical user interface*** is a [user interface](user-interface.md) that uses [graphics](../../../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/graphics.md).

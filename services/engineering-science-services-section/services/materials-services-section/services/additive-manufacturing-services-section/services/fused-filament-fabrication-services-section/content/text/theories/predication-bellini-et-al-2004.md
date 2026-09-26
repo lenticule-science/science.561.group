@@ -21,7 +21,3 @@ The first end-to-end physical model of an FFF (then "FDM") hot-end. Couples thre
 **Limitations.** Treats only steady-state flow; does not address the transient dynamics during acceleration/deceleration that pressure-advance corrects. Newtonian-equivalent rheology used in some closed-form steps; modern revisits use full Cross/Carreau models.
 
 **Cited from.** [`melt-flow-rheology`](./predication-melt-flow-rheology.md), [`max-volumetric-flow-rate-bounds-print-speed`](./predication-max-volumetric-flow-rate-bounds-print-speed.md).
-
-## Earlier material
-
-**Cited from.** [`melt-flow-rheology`](../../../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/technology/fabrication/material-science/additive-manufacturing/fused-filament-fabrication/archive/teaching/explanations/melt-flow-rheology.md), [`max-volumetric-flow-rate-bounds-print-speed`](../../../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/technology/fabrication/material-science/additive-manufacturing/fused-filament-fabrication/theorems/max-volumetric-flow-rate-bounds-print-speed.md).

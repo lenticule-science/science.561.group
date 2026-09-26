@@ -25,7 +25,3 @@ Status review and roadmap for AM standards (ASTM F42, ISO TC261), focused on the
 **Why it matters.** The standards story is the choke-point preventing AM from displacing conventional manufacturing in safety-critical applications. Without a qualification framework, AM remains a prototyping and low-volume technology in regulated sectors.
 
 **Cited from.** [qualification-and-certification](./predication-qualification-and-certification.md) open question.
-
-## Earlier material
-
-**Cited from.** [qualification-and-certification](../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/technology/fabrication/material-science/additive-manufacturing/archive/questions/qualification-and-certification.md) open question.

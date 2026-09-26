@@ -18,9 +18,3 @@ Common tag patterns:
 - **Instruct/chat tags** (`llama3.1:8b-instruct`) — select the instruction-tuned variant (most models default to instruct)
 
 The model files Ollama downloads are in [GGUF](../../../../../../../content/text/glossary/terms/gguf.md) format. They cannot be used by tools expecting [ONNX](../../../../../../on-device-inference-services-section/content/text/glossary/terms/onnx.md) format (like Foundry Local), and vice versa. This means Ollama and Foundry Local require separate model downloads even for the same underlying model.
-
-## Earlier material
-
-When no tag is given, Ollama defaults to `:latest`, which is typically the model's recommended size and [quantization](../../../../../../../content/text/glossary/terms/quantization.md). For most model families, `:latest` points to the mid-range size at Q4_K_M quantization.
-
-The model files Ollama downloads are in [GGUF](../../../../../../../content/text/glossary/terms/gguf.md) format. They cannot be used by tools expecting [ONNX](../../../../../../../../technology-science-services-section/content/topics/on-device-inference/terms/onnx.md) format (like Foundry Local), and vice versa. This means Ollama and Foundry Local require separate model downloads even for the same underlying model.

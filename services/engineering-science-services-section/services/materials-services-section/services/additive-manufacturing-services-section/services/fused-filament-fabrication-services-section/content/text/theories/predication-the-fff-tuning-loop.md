@@ -31,7 +31,3 @@ After steps 0–6 the (machine, material, profile) triple is calibrated. Subsequ
 **The loop is not a one-time event.** Hardware drifts: nozzle wear, extruder gear wear, bed-leveling drift, thermistor drift. A revisit every 50–100 print hours catches drift before it produces failures.
 
 The corpus equivalent: each tuning step writes a small piece of state into the printer's effective profile. Running the loop in a different order can produce inconsistent results because steps interact (e.g. retraction tuning depends on temperature, which depends on flow). The order above is the de facto standard.
-
-## Earlier material
-
-**Step 4: [Retraction](../../../../../../../../../../../../engineering-services-section/content/text/glossary/terms/retraction.md) tuning.** Print a stringing test (tall narrow towers with travel between them). Sweep retraction distance ($0.5$–$2$ mm direct-drive, $3$–$6$ mm Bowden) in $0.2$ mm steps. Pick the lowest distance with no visible strings.

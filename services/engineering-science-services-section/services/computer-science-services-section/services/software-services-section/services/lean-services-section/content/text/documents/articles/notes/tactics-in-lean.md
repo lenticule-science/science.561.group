@@ -197,14 +197,3 @@ would close the goal directly. The explicit proof shows the tactic structure.
   Names document the proof's logic.
 - **Build incrementally.** Write one tactic, inspect [the state](../../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/the-state.md), write the next. Do not
   try to write a complete tactic block from memory.
-
-## Earlier material
-
-A [tactic](../../../glossary/terms/tactic.md) transforms a proof goal into simpler subgoals. The proof
-state consists of:
-
-[Mathlib](../../../glossary/terms/mathlib.md) extends Lean's tactic set with specialized automation:
-
-Prove that meet is commutative in a [lattice](../../../../../../../../../../../../mathematics/objects/posets/terms/lattice.md):
-
-Prove that meet is commutative in a [lattice](../../../../../../../../../../../../philosophy-services-section/services/logic-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/yet-another-unsorted-archive-dump/predication-categories/_archive/bucket-4/articulating/library/aperiodic-articulation-category/library/aperiodic-articulation-cell/library/potential-aperiodic-articulation-cell/predicating/library/transfinite-predication-category/hacking/library/predication-cell-set/docs/dev/scraps/from-stable-cell-stale-chain/library/predicate-set/library/predicate-category/hacking/library/object/library/thing/library/category/hacking/library/computing/theories/humanities/theories/math/theories/order/terms/lattice.md):

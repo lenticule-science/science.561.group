@@ -35,10 +35,3 @@ Slicers ramp the part fan up over the first 2–3 layers (the **first-layer fan-
 Hardware: blower (squirrel-cage) fans direct flow more precisely than axial fans and are standard on printers built since ~2018. The blower's duct geometry (the "fang" or "manifold") matters as much as the fan: a poorly-designed duct can deliver $40\%$ of nominal airflow to the bead. Voron, Stealthburner, and CNC Kitchen ducts are well-characterized open designs.
 
 A printer with marginal part-cooling cannot print PLA at high speed; it cannot print ABS without an enclosure. Cooling capacity is a hardware ceiling that profile tuning cannot lift.
-
-## Earlier material
-
-Part cooling controls the [cooling-warping-tradeoff](../../../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/technology/fabrication/material-science/theorems/cooling-warping-tradeoff.md):
-
-- **More cooling** → crisper [overhangs](../../../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/technology/fabrication/material-science/additive-manufacturing/teaching/explanations/overhang.md), shorter [bridges](../../../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/technology/fabrication/material-science/additive-manufacturing/teaching/explanations/bridging.md), better detail, but weaker [layer adhesion](../../../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/technology/fabrication/material-science/additive-manufacturing/fused-filament-fabrication/archive/teaching/explanations/layer-adhesion.md) and severe warping on amorphous engineering polymers (ABS, ASA, PC).
-- **Less cooling** → strong layer adhesion, low warping, but droopy overhangs and failed bridges.

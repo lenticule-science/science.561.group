@@ -49,9 +49,3 @@ Computer use matters for [agentic systems](./agentic-system.md) because it exten
 - [Tool use](./tool-use.md) — the API-based mechanism computer use extends
 - [Agentic system](./agentic-system.md) — systems whose action space computer use expands
 - [Human-in-the-loop](./human-in-the-loop.md) — review pattern for high-risk computer use actions
-
-## Earlier material
-
-- [Tool use](../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/content/individual/content/agent/acting/content/tool/extending/content/computer/_archive/tool-use.md) — the API-based mechanism computer use extends
-- [Agentic system](../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/content/individual/content/agent/acting/content/tool/extending/content/computer/_archive/agentic-system.md) — systems whose action space computer use expands
-- [Human-in-the-loop](human-in-the-loop.md) — review pattern for high-risk computer use actions

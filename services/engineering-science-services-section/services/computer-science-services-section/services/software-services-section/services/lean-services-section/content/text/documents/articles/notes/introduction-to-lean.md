@@ -122,12 +122,3 @@ after each step, and adjusting. The VS Code extension shows [the state](../../..
   system encodes mathematical structures and logical statements
 - Tactics in Lean — the tactic language for building proofs
   interactively
-
-## Earlier material
-
-In tactic mode, Lean displays the current **proof state**: a list of hypotheses (what
-you know) and goals (what you need to prove). Each tactic transforms [the state](../../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/the-state.md) — it may
-close a goal, split it into subgoals, or introduce new hypotheses.
-
-Interactive development means writing one tactic at a time, inspecting the proof state
-after each step, and adjusting. The VS Code extension shows [the state](../../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/the-state.md) live as you type.

@@ -38,7 +38,3 @@ Each arrow is a separable subsystem; the modularity of this chain is the source 
 **Why it is a morphism, not an object.** Monitoring is *what happens* during the build, not *what exists*. Sensors and software are objects; the act of measuring is the morphism.
 
 **Open challenge.** The detect-decide-act loop is mature for catastrophic failures (spaghetti, recoater jam). It is not mature for *subtle* defects (small porosity, sub-surface crack initiation) which require offline analysis. Closing this loop is the [in-situ-defect-detection](./predication-in-situ-defect-detection.md) frontier.
-
-## Earlier material
-
-**Sensors used.** Catalog in [in-situ-monitoring](../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/technology/fabrication/material-science/additive-manufacturing/archive/teaching/explanations/in-situ-monitoring.md). The morphism abstracts over sensor choice.

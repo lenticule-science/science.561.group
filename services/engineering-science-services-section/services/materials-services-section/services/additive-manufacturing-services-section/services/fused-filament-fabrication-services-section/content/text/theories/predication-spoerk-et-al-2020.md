@@ -25,7 +25,3 @@ Despite the polypropylene-specific title, the most thorough modern review of FFF
 - The "nucleating agent for PP" trick that lets PP — historically un-printable on FFF — print with PA or PVA-coated build sheets.
 
 **Cited from.** [`inter-bead-voids`](./predication-inter-bead-voids.md), [`cooling-warping-tradeoff`](../../../../../content/text/theories/predication-cooling-warping-tradeoff.md), [`adhesion`](../../../../../content/text/theories/predication-adhesion.md).
-
-## Earlier material
-
-**Cited from.** [`inter-bead-voids`](../../../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/technology/fabrication/material-science/additive-manufacturing/fused-filament-fabrication/archive/teaching/explanations/inter-bead-voids.md), [`cooling-warping-tradeoff`](../../../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/technology/fabrication/material-science/theorems/cooling-warping-tradeoff.md), [`adhesion`](../../../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/technology/fabrication/material-science/additive-manufacturing/teaching/explanations/adhesion.md).

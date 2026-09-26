@@ -38,9 +38,3 @@ teaches:
 - PLA: easy to print, lower heat resistance.
 - PETG: tougher, more stringing.
 - ABS: strong, prone to warping without enclosure.
-
-## Earlier material
-
-- PLA: easy to print, lower heat resistance.
-- PETG: tougher, more stringing.
-- ABS: strong, prone to warping without [enclosure](../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/enclosure.md).

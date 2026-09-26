@@ -31,9 +31,3 @@ description: Claim.
 **Related rules.**
 - [Build-plate type sets adhesion characteristic](./predication-build-plate-type-sets-adhesion.md) — *not yet written; in scope.*
 - [First-layer line width should exceed nominal extrusion width](./predication-first-layer-width.md) — *not yet written.*
-
-## Earlier material
-
-**Related rules.**
-- [Build-plate type sets adhesion characteristic](../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/technology/fabrication/material-science/additive-manufacturing/archive/build-plate-type-sets-adhesion.md) — *not yet written; in scope.*
-- [First-layer line width should exceed nominal extrusion width](../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/technology/fabrication/material-science/additive-manufacturing/archive/theories/fused-filament-fabrication/theorems/first-layer-width.md) — *not yet written.*

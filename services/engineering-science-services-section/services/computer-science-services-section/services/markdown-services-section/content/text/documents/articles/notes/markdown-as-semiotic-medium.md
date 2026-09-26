@@ -152,15 +152,3 @@ through links, semantic annotation through frontmatter, durable format, and diff
 history — make it well suited to knowledge work that accumulates over time and involves
 multiple contributors. The markup syntax is itself a [sign](../../../../../../../../../../information-science-services-section/services/communication-science-services-section/services/linguistics-services-section/services/semiotics-services-section/content/text/glossary/terms/sign.md) system: a minimal grammar that
 makes the structure of knowledge visible to both human and machine readers.
-
-## Earlier material
-
-The claim is not merely that markdown files *contain* [signs](../../../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/technology/linguistics/topics/semiotics/terms/sign.md). It is that markdown's syntax
-*is itself* a [sign](../../../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/technology/linguistics/topics/semiotics/terms/sign.md) system — a second layer of meaning on top of the prose.
-
-When an author writes `## Definitions`, the heading is a [sign](../../../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/technology/linguistics/topics/semiotics/terms/sign.md) with three roles:
-
-The same marks carry different [interpretants](../../../../../../../../../../information-science-services-section/services/communication-science-services-section/services/linguistics-services-section/services/semiotics-services-section/content/text/glossary/terms/interpretant.md) for different interpreters.
-This is [Peirce](../../../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/technology/general/people/charles-sanders-peirce.md)'s triadic [sign](../../../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/technology/linguistics/topics/semiotics/terms/sign.md) structure in action: the [representamen](../../../../../../../../../../information-science-services-section/services/communication-science-services-section/services/linguistics-services-section/services/semiotics-services-section/content/text/glossary/terms/representamen.md) (the `##` syntax),
-the object (the structural role of a definitions section), and the [interpretant](../../../../../../../../../../information-science-services-section/services/communication-science-services-section/services/linguistics-services-section/services/semiotics-services-section/content/text/glossary/terms/interpretant.md) (what
-the reader, renderer, or agent does with that information).

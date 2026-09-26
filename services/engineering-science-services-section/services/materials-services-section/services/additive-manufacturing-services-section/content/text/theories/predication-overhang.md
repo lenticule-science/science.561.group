@@ -33,10 +33,3 @@ When $\theta > \theta_{\max}$ the design choices are:
 4. Redesign the geometry to eliminate the overhang (chamfer the underside, add a fillet).
 
 Choice (4) is the design-for-AM move and is preferred when the part is one's own design.
-
-## Earlier material
-
-1. Reorient the part to bring the surface within $\theta_{\max}$.
-2. Add [supports](../../../../../../../../history-and-archaeology-science-services-section/content/text/documents/articles/notes/undated/support.md) (sacrificial structures the slicer generates and removes after print).
-3. Bridge: if the overhang is short ($< 50$ mm in FFF) and supported on both ends, span it as a [bridge](../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/technology/fabrication/material-science/additive-manufacturing/archive/bridging.md).
-4. Redesign the geometry to eliminate the overhang (chamfer the underside, add a fillet).

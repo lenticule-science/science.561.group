@@ -30,15 +30,3 @@ Good for: functional prototypes, jigs and fixtures, small-batch end-use parts in
 Fails at: small fine features below ~2× nozzle diameter, fully isotropic mechanical performance, smooth as-printed surfaces, parts requiring fluid-tightness without post-processing, parts loaded primarily along the build axis.
 
 The theorems in this sub-theory enumerate the failure modes one by one: warping, layer delamination, under-extrusion, over-extrusion, stringing, blobbing, elephant's foot, ringing/ghosting, salmon-skin, layer-shift, first-layer adhesion failure. Each has a named mechanism, scope conditions, and a documented mitigation.
-
-## Earlier material
-
-- `concepts/` — FFF-specific recurring anchors: the bead, retraction, stringing, layer adhesion, extrusion multiplier, pressure advance, the first-layer regime.
-- `objects/` — machine components and feedstock: hotend, nozzle, extruder (Bowden vs. direct-drive), filament, build plate, part-cooling fan, motion system.
-- `morphisms/` — FFF process steps: extrusion, retraction, travel, layer change, ironing.
-- `theorems/` — FFF-specific empirical laws: nozzle-temperature-vs-layer-adhesion tradeoff, print-speed-vs-quality tradeoff, retraction-vs-stringing tradeoff, overhang-angle rule, bridging-distance limit.
-- `examples/` — print profiles, failure-mode case studies.
-- `questions/` — open FFF engineering questions.
-- `references/` — Marlin, Klipper, PrusaSlicer, OrcaSlicer, SuperSlicer documentation; Stratasys patents (now expired); peer-reviewed literature on FFF mechanics.
-- `prose/teaching/explanations/` — through-line documents.
-- `texts/` — legacy curriculum-style material being progressively atomized: [3d-printing-quickstart](../documents/articles/notes/3d-printing-quickstart.md), [what-is-3d-printing](../../../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/technology/fabrication/material-science/additive-manufacturing/fused-filament-fabrication/archive/texts/what-is-3d-printing.md), [material-behavior-fdm](../documents/articles/notes/material-behavior-fdm.md), [apply-3d-printing-safety-checks](../documents/articles/notes/apply-3d-printing-safety-checks.md).

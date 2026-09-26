@@ -8,7 +8,3 @@ index:
 
 
 [Ethereum Virtual Machine](ethereum-virtual-machine.md) [vault](../../../../../../../markdown-services-section/content/text/glossary/terms/vault.md)
-
-## Earlier material
-
-[Ethereum Virtual Machine](../../../../../../../../content/text/glossary/terms/ethereum-virtual-machine--002324.md) [vault](../../../../../../../markdown-services-section/content/text/glossary/terms/vault.md)

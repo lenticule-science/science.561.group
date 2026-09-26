@@ -41,9 +41,3 @@ by itself prove an external effect. Effect evidence remains an observation made
 by the receiver that owns execution [@temporal2026workflowexecution].
 
 Durable execution enables two other patterns. [Human-in-the-loop](./human-in-the-loop.md) depends on it: the agent pauses at a checkpoint, the human reviews, and the agent resumes from that exact state. Time-travel debugging depends on it: any prior checkpoint can be restored to inspect what the agent was doing at that moment.
-
-## Earlier material
-
-Durable execution enables two other patterns.
-[Human-in-the-loop](human-in-the-loop.md) depends on it: the agent pauses at a checkpoint, the human reviews, and the agent resumes from that exact state.
-Time-travel debugging depends on it: any prior checkpoint can be restored to inspect what the agent was doing at that moment.

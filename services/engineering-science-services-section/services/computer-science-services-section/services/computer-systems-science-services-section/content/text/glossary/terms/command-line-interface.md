@@ -12,7 +12,3 @@ visibility: public
 A ***command line interface*** is a [user
 interface](user-interface.md) that presents a…
 terminal? shell? It's a dance of metaphors all around, here.
-
-## Earlier material
-
-A ***command line interface*** is a [user interface](user-interface.md) that presents a… terminal? shell? It's a dance of metaphors all around, here.

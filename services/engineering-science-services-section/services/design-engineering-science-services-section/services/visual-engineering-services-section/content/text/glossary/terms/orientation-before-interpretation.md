@@ -30,9 +30,3 @@ Orientation before interpretation must not become "coercion before understanding
 - [Premature Closure](./premature-closure.md) — the shared enemy that orientation before interpretation resists
 - [Glance-Direction](./glance-direction.md) — the operational outcome that orientation before interpretation produces
 - [Non-Linear Reading](./non-linear-reading.md) — the routing behavior that follows successful orientation
-
-## Earlier material
-
-- [Premature Closure](premature-closure.md) — the shared enemy that orientation before interpretation resists
-- [Glance-Direction](../../../../../../../../../philosophy-services-section/content/text/terms/glance-direction.md) — the operational outcome that orientation before interpretation produces
-- [Non-Linear Reading](../../../../../../../../../philosophy-services-section/content/text/terms/non-linear-reading.md) — the routing behavior that follows successful orientation

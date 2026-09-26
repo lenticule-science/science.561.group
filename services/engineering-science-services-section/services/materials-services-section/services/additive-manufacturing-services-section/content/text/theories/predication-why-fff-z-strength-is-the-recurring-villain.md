@@ -23,12 +23,3 @@ The reason traces all the way back to physics: FFF deposits material above $T_g$
 The deep consequence: FFF with current architecture cannot achieve isotropic strength. To reach isotropy you need either (a) a process with bidirectional fusion (powder-bed, photopolymer crosslinking through depth, ultrasonic bonding) or (b) a non-planar slicing strategy that puts inter-layer interfaces in compression. The former is a different modality; the latter is the open-research [non-planar-toolpath-planning](../../../services/fused-filament-fabrication-services-section/content/text/theories/predication-non-planar-toolpath-planning.md) frontier.
 
 So Z-strength keeps recurring because it is the chosen-architecture limit of FFF, not a tuning failure. A fully-tuned FFF print is anisotropic on purpose.
-
-## Earlier material
-
-- [Anisotropy](../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/technology/fabrication/material-science/additive-manufacturing/teaching/explanations/anisotropy.md) — the conceptual definition of the problem.
-- [Build-orientation aligns load with XY](../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/technology/fabrication/material-science/theorems/build-orientation-aligns-load-with-xy.md) — the design rule it forces.
-- [Cooling-warping tradeoff](../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/technology/fabrication/material-science/theorems/cooling-warping-tradeoff.md) — the process-control consequence.
-- [Healing-time determines Z-strength](../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/technology/fabrication/material-science/additive-manufacturing/theories/fused-filament-fabrication/theorems/healing-time-determines-z-strength.md) — the underlying polymer-physics theorem.
-- [Inter-bead voids](../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/technology/fabrication/material-science/additive-manufacturing/theories/fused-filament-fabrication/concepts/inter-bead-voids.md) — the geometric mechanism.
-- [Layer adhesion](../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/technology/fabrication/material-science/additive-manufacturing/theories/fused-filament-fabrication/concepts/layer-adhesion.md) — the foundational concept.

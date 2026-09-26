@@ -60,7 +60,3 @@ Make the culture of the Fediverse something you want to be exposed to - follow p
 
 - `#UseCapsInYourHashtags` so people who have their screen-text read to them hear it sensibly.
 - If you use emoji or weird unicode in your display name or change it too often, I don't like you.
-
-## Earlier material
-
-(The "Fediverse" is a federation of [[networked communication platform|networked communication platforms]] - [[Wikipedia]] has [an article on the Fediverse](https://en.wikipedia.org/wiki/Fediverse).)

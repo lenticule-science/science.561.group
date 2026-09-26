@@ -13,7 +13,3 @@ visibility: public
 [software](../../../../../computer-code-science-services-section/services/programming-services-section/content/text/glossary/terms/software.md) with [source
 code](../../../../../../content/text/glossary/terms/source-code.org.md) that is
 [private](../../../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/private.md).
-
-## Earlier material
-
-***Closed-source software*** is [software](../../../../../computer-code-science-services-section/services/programming-services-section/content/text/glossary/terms/software.md) with [source code](../../../../../../content/text/glossary/terms/source-code.md) that is [private](../../../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/private.md).

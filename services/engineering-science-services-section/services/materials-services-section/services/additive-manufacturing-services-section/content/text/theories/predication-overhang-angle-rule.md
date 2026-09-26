@@ -32,10 +32,3 @@ The "$45°$" number is a useful round-number average across these conditions for
 
 **Related rules.**
 - [Bridges shorter than $\sim 50$ mm print without supports in PLA](../../../services/fused-filament-fabrication-services-section/content/text/theories/predication-bridge-length-limit.md) — *not yet written; in scope.*
-
-## Earlier material
-
-**Claim.** For desktop FFF with active part-cooling and well-tuned profile, surfaces with overhang angle $\theta \leq 45°$ from vertical print successfully without [supports](../../../../../../../../history-and-archaeology-science-services-section/content/text/documents/articles/notes/undated/support.md). Surfaces with $\theta > 45°$ require supports, and surfaces with $\theta > 60°$–$70°$ either require supports or fail.
-
-**Related rules.**
-- [Bridges shorter than $\sim 50$ mm print without supports in PLA](../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/technology/fabrication/material-science/additive-manufacturing/archive/theories/fused-filament-fabrication/theorems/bridge-length-limit.md) — *not yet written; in scope.*

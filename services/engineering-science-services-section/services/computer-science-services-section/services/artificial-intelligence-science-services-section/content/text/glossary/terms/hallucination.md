@@ -46,7 +46,3 @@ Hallucination matters more in [agentic systems](../domains/agents/terms/agentic-
 - [Structured output](../../../../services/agent-science-services-section/services/agent-content-science-services-section/content/text/glossary/terms/structured-output.md) — catches structural hallucinations through schema validation
 - [RLHF](./rlhf.md) — training method that reduces hallucination rates
 - [Human-in-the-loop](../../../../services/agent-science-services-section/content/text/glossary/terms/human-in-the-loop.md) — review pattern that catches hallucinations before they become actions
-
-## Earlier material
-
-Hallucination matters more in [agentic systems](../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/content/individual/content/agent/content/artificial-intelligence/machine-learning/neural-network/language-models/hallucination/archive/theories/agents/terms/agentic-system.md) than in conversational use because agents act on their outputs. A hallucinated fact in a conversation is a wrong answer. A hallucinated tool call in an agent is a wrong action — a file written with incorrect content, an API called with fabricated parameters, a plan based on a nonexistent capability. [Human-in-the-loop](../../../../services/agent-science-services-section/content/text/glossary/terms/human-in-the-loop.md) review and structured output validation are the primary defenses.

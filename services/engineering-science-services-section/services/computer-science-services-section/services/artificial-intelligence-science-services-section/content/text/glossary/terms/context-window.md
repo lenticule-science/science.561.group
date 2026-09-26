@@ -44,9 +44,3 @@ Context window size is a binding constraint on agent capability. A larger window
 - [Transformer](./transformer.md) — the architecture whose attention mechanism creates the constraint
 - [System prompt](./system-prompt.md) — a major consumer of context window budget
 - [Agentic system](../domains/agents/terms/agentic-system.md) — systems whose architecture is shaped by context limits
-
-## Earlier material
-
-2. **Prompt budgeting.** A system prompt, tool definitions, conversation history, and instruction files ([AGENTS.md](../../../../services/agent-science-services-section/services/agent-content-science-services-section/services/agent-markdown-file-science-services-section/content/text/glossary/terms/agents-md.md), [SOUL.md](../../../../services/agent-science-services-section/services/agent-content-science-services-section/services/agent-markdown-file-science-services-section/content/text/glossary/terms/soul-md.md)) all compete for the same token budget. Longer instructions leave less room for the task itself.
-
-Even at one million tokens, the context window is finite and shapes the design of [agentic systems](../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/content/individual/content/agent/content/artificial-intelligence/machine-learning/neural-network/language-models/archive/theories/agents/terms/agentic-system.md) in three ways:

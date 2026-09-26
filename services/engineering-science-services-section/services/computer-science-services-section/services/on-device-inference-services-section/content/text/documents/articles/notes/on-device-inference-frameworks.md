@@ -38,7 +38,3 @@ The dominant local LLM runtime as of 2026. Uses llama.cpp as its inference backe
 ## WebNN
 
 A W3C web standard for neural network inference in the browser, backed by Windows ML underneath. Enables NPU-accelerated AI in web applications without native code.
-
-## Earlier material
-
-A survey of software frameworks for running machine learning models locally on consumer hardware, focusing on Windows and [NPU](../../../../../../../content/text/glossary/terms/neural-processing-unit.md) support as of early 2026.

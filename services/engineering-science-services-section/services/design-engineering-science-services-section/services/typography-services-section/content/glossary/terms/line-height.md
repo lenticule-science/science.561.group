@@ -15,7 +15,3 @@ Line height affects readability directly. When lines are too tightly set, ascend
 As a general principle, longer [line lengths](../../text/glossary/terms/line-length.md) require greater line height, because the eye must travel farther horizontally and needs a clearer vertical gap to find the next line. Shorter line lengths tolerate tighter spacing. Body text in most contexts reads well at roughly 1.4 to 1.6 times the font size, though the optimal value depends on the typeface, the [line length](../../text/glossary/terms/line-length.md), and the reading context.
 
 In web design, line height is set with the CSS `line-height` [property](../../../../../../../lib/legacy/2026-06-17-archive-emsenn-net/content/emsenn-archive-org/gibwodgit/archive/flowif/library/theories/humanities/theories/philosophy/terms/property.md), which can be specified as a unitless multiplier (e.g., `1.5`), a fixed length (e.g., `24px`), or a percentage. A unitless multiplier is generally preferred because it scales with the font size of child elements.
-
-## Earlier material
-
-As a general principle, longer [line lengths](../../text/glossary/terms/line-length.md) require greater line height, because the eye must travel farther horizontally and needs a clearer vertical gap to find the next line. Shorter line lengths tolerate tighter spacing. Body text in most contexts reads well at roughly 1.4 to 1.6 times the font size, though the optimal value depends on the typeface, the [line length](../../text/glossary/terms/line-length.md), and the reading context.

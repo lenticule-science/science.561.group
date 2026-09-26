@@ -33,7 +33,3 @@ Conventional manufacturing (machining, casting) cannot make complex internal lat
 - Manufacturability constraints (minimum strut size for FFF/LPBF, support requirements for unsupported lattice nodes) are still poorly integrated into design tools.
 
 **See also.** [topology-optimization](./predication-topology-optimization.md), [generative-design-for-am](./predication-generative-design-for-am.md).
-
-## Earlier material
-
-**See also.** [topology-optimization](../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/technology/fabrication/material-science/additive-manufacturing/archive/topology-optimization.md), [generative-design-for-am](../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/technology/fabrication/material-science/additive-manufacturing/archive/questions/generative-design-for-am.md).

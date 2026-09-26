@@ -43,9 +43,3 @@ The Snapdragon X Elite uses shared LPDDR5x memory for CPU, GPU, and NPU. LLM inf
 5. **llama.cpp QNN backend** — experimental, not yet suitable for daily use.
 
 The second-generation Snapdragon X2 Elite (80 TOPS, improved memory bandwidth) may shift these assessments significantly.
-
-## Earlier material
-
-An assessment of running large language models on [neural processing units](../../../../../../../content/text/glossary/terms/neural-processing-unit.md), with particular attention to the Qualcomm Snapdragon X Elite (45 [TOPS](../../../../../../../content/text/glossary/terms/tops.md)), as of early 2026.
-
-An assessment of running large language models on [neural processing units](../../../../../../../content/text/glossary/terms/neural-processing-unit.md), with particular attention to the Qualcomm Snapdragon X Elite (45 [TOPS](../../../../../../../content/text/glossary/terms/tops.md)), as of early 2026.

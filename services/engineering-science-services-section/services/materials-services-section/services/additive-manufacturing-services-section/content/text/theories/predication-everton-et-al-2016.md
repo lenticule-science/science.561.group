@@ -34,7 +34,3 @@ Foundational review of in-situ monitoring sensor modalities for metal PBF and DE
 **The unsolved problem (still open in 2026).** Mapping sensor signal → defect → mechanical-property impact in a closed loop. Sensors generate the data; turning that into a real-time corrective action (or a certifiable post-build pedigree) is the open frontier.
 
 **Cited from.** [in-situ-defect-detection](./predication-in-situ-defect-detection.md) open question, [in-situ-monitoring](./predication-in-situ-monitoring.md) concept, [qualification-and-certification](./predication-qualification-and-certification.md).
-
-## Earlier material
-
-**Cited from.** [in-situ-defect-detection](../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/technology/fabrication/material-science/additive-manufacturing/archive/questions/in-situ-defect-detection.md) open question, [in-situ-monitoring](../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/technology/fabrication/material-science/additive-manufacturing/archive/teaching/explanations/in-situ-monitoring.md) concept, [qualification-and-certification](../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/technology/fabrication/material-science/additive-manufacturing/archive/questions/qualification-and-certification.md).

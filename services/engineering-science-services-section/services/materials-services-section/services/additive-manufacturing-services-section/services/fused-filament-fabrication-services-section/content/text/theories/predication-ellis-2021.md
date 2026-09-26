@@ -21,7 +21,3 @@ The de-facto standard practitioner reference for FFF calibration: a maintained, 
 - Active maintenance: updates reflect new firmware features (input-shaper, beacon probes).
 
 **Cited from.** [`max-volumetric-flow-rate-bounds-print-speed`](./predication-max-volumetric-flow-rate-bounds-print-speed.md), [`pressure-advance`](./predication-pressure-advance.md), the FFF tuning narrative.
-
-## Earlier material
-
-**Cited from.** [`max-volumetric-flow-rate-bounds-print-speed`](../../../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/technology/fabrication/material-science/additive-manufacturing/fused-filament-fabrication/theorems/max-volumetric-flow-rate-bounds-print-speed.md), [`pressure-advance`](../../../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/technology/fabrication/material-science/additive-manufacturing/fused-filament-fabrication/morphisms/pressure-advance.md), the FFF tuning narrative.

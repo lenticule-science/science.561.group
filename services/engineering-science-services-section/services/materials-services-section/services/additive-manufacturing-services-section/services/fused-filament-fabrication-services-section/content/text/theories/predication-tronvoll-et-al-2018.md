@@ -24,7 +24,3 @@ The canonical study of inter-bead void geometry in FFF and its statistical effec
 **Why it matters here.** The empirical foundation for [inter-bead-voids](./predication-inter-bead-voids.md) and the FFF analog of the metal-AM porosity-fatigue rule. The probabilistic framing is the bridge to qualification: a part with measured void distribution has a predictable strength distribution.
 
 **Cited from.** [`inter-bead-voids`](./predication-inter-bead-voids.md), [`porosity`](../../../../../content/text/theories/predication-porosity.md), [`porosity-determines-fatigue-life`](../../../../../content/text/theories/predication-porosity-determines-fatigue-life.md).
-
-## Earlier material
-
-**Cited from.** [`inter-bead-voids`](../../../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/technology/fabrication/material-science/additive-manufacturing/fused-filament-fabrication/archive/teaching/explanations/inter-bead-voids.md), [`porosity`](../../../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/technology/fabrication/material-science/additive-manufacturing/teaching/explanations/porosity.md), [`porosity-determines-fatigue-life`](../../../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/technology/fabrication/material-science/theorems/porosity-determines-fatigue-life.md).

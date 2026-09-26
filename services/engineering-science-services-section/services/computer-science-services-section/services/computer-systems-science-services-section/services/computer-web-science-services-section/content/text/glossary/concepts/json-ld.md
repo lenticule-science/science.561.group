@@ -60,13 +60,3 @@ emsenn.net emits per-page JSON-LD in the `<head>` element, generated at build ti
 Multi-level pages also emit a `BreadcrumbList` so search engines and AI systems understand the hierarchical structure (e.g., Mathematics → Objects → Posets → Curricula → [Heyting](../../../../../../../../references/people/arend-heyting.md) Algebras).
 
 See also: [robots.txt](./robots-txt.md), [structured data](../../../../../../../../content/text/glossary/concepts/structured-data.md), [Schema.org](../../../../../../../../content/text/glossary/concepts/schema-org.md).
-
-## Earlier material
-
-See also: [robots.txt](robots-txt.md), [structured data](../../../../../../../../content/text/glossary/concepts/structured-data.md), [Schema.org](../../../../../../../../content/text/glossary/concepts/schema-org.md).
-
-JSON-LD (JavaScript Object Notation for Linked Data) is a method of encoding [structured data](../../../../../../../../content/text/glossary/concepts/structured-data.md) using JSON syntax. It allows web pages to embed machine-readable descriptions of their content — what kind of thing a page describes, who created it, when it was published — alongside the human-readable HTML.
-
-[Schema.org](../../../../../../../../content/text/glossary/concepts/schema-org.md) provides the vocabulary that JSON-LD uses. Schema.org defines types (`Article`, `DefinedTerm`, `Person`, `LearningResource`, `WebSite`, `BreadcrumbList`) and properties (`headline`, `author`, `datePublished`, `description`). JSON-LD is the encoding format; Schema.org is the dictionary.
-
-See also: [robots.txt](robots-txt.md), [structured data](../../../../../../../../content/text/glossary/concepts/structured-data.md), [Schema.org](../../../../../../../../content/text/glossary/concepts/schema-org.md).

@@ -24,7 +24,3 @@ Review of fiber-reinforced FFF covering feedstock formulation (matrix selection,
 - Discussion of the unsolved Z-strength problem: fibers reinforce in-bead, do nothing for the layer interface.
 
 **Cited from.** [`fiber-reinforcement`](./predication-fiber-reinforcement.md), [`anisotropy`](../../../../../content/text/theories/predication-anisotropy.md).
-
-## Earlier material
-
-**Cited from.** [`fiber-reinforcement`](../../../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/technology/fabrication/material-science/additive-manufacturing/fused-filament-fabrication/archive/teaching/explanations/fiber-reinforcement.md), [`anisotropy`](../../../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/technology/fabrication/material-science/additive-manufacturing/teaching/explanations/anisotropy.md).

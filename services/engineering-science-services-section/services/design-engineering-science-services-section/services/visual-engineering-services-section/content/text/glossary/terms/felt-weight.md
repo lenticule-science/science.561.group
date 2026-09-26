@@ -36,7 +36,3 @@ The concept is related to how the visual system uses coarse structure to guide s
 - [Glance-Direction](./glance-direction.md) — the orientation that felt weight enables
 - [Peripheral Uptake](./peripheral-uptake.md) — the field-level detection of weight and mass
 - [Non-Linear Reading](./non-linear-reading.md) — the navigation that weight structures support
-
-## Earlier material
-
-Felt weight arises from [Bauhaus](../../../../../../content/text/documents/articles/notes/bauhaus-pedagogy.md) constructive typography (type as mass), structured ground (void as beam), and [brutalist](../../../../../../content/text/documents/articles/notes/brutalism.md) bluntness (blocks that declare their load-bearing role). Weight is then constrained by [Tuftean](../../../../../../content/text/documents/articles/notes/tuftean-information-design.md) honesty: weight must correspond to structural priority, not hype.

@@ -26,7 +26,3 @@ a tool with a well-specified contract rather than an implicit side-effect.
 
 This keeps inference interchangeable (LLM or human), observable, and composable with
 other skills in an [agential semioverse](../../../../../../../../content/text/glossary/topics/agential-semioverse.md).
-
-## Earlier material
-
-This keeps inference interchangeable (LLM or human), observable, and composable with other skills in an [agential semioverse](../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/content/individual/content/mathematics/objects/universes/agential-semioverse/index.md).
