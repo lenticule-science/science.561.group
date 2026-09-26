@@ -54,44 +54,8 @@ The distinction from declarative governance is structural, not merely tactical:
 - [Californication](./californication.md) — the affective mechanism that closes the modulative loop
 - [Viable system model](../../../../../../../../../information-science-services-section/services/cybernetics-services-section/content/text/glossary/terms/viable-system-model.md) — Beer's formal precursor
 
-
----
-
-## Consolidated triage formulation
-
-<!-- CONSOLIDATED-TRIAGE-SOURCE: modulative-governance.md SHA256 f2837a230dbbe18d26e7c1d758e531516ece67a62f7d2e85451fdfe6c272abb9 -->
-
-This historical formulation was consolidated from `lib/emsenn/services/561-group/services/public-services-section/services/personal-services-section/emsenn-services-section/content/text/triage/modulative-governance.md`. It is retained where its wording, links, provenance, or uncertainty differs from the active entry.
-
-<details>
-<summary>Recorded source metadata</summary>
-
-```yaml
-type: "[[concept]]"
-date: "[[2025-04-13]]"
-dates-modified:
-  - "[[2025-05-15]]"
-signal: true
-signals:
-  - "[[Governing by Confusion]]"
-method:
-  - "[[define emergent concept from signals]]"
-field:
-  - "[[telemetric-paradigm]]"
-  - "[[emsenn thought]]"
-yield:
-  - "[[modulative-governance]]"
-```
-
-</details>
-
-### Retained formulation
-
-
 ***Modulative governance*** is a [[governance structure]] that [[operate|operates]] by shaping which [[signal|signals]] are [[register signal|registered]] by the [[telemetric system|system]]. Contrast with [[declarative governance]].
 
 Modulative governance prioritizes **recursive signal response** over symbolic assertion. Systems structured this way govern by **what they register and respond to**, rather than by rules they declare.
-
-## Earlier material
 
 ***Modulative governance*** is a [governance structure](governance structure) that [operate|operates](../../../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/triage/operate|operates) by shaping which [signal|signals](../../../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/triage/signal|signals) are [register signal|registered](register signal|registered) by the [telemetric system|system](telemetric system|system). Contrast with [declarative governance](declarative governance).

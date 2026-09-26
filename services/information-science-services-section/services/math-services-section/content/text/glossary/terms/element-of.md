@@ -56,8 +56,6 @@ A single entity may carry all three with different objects.
 - Formal specification of what counts as a "nameable" evaluation map in the flatfile context.
 - Whether the coarseness ordering is always a chain or can branch (e.g., an entity that is simultaneously an element of two incomparable algebras).
 
-## Earlier material
-
 A positional frontmatter relation declaring that the subject is a named element of the object, identified by an explicit evaluation term [τ](../../research/2026/07/31/lenticule-import/_archive/τ) under the evaluation map for the object. The evaluation map MUST be nameable. Coarsest valid answer: entity.
 
 `entity`

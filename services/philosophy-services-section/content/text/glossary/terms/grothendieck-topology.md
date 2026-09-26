@@ -14,17 +14,6 @@ A category equipped with a Grothendieck topology is a [site](../../../../../info
 
 In the [GFRTU](../../../../services/relationality-services-section/content/text/documents/articles/notes/generative-fibered-recognition-trace-universe.md), the Grothendieck topology on the [trace site](trace-site.md) specifies which families of trace refinements constitute covers. This determines how local recognition data at individual [traces](../../../../services/relationality-services-section/content/text/documents/articles/notes/undated/trace.md) assembles into global sections of the [sheaf universe](sheaf-universe.md). A [Lawvere-Tierney topology](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/lawvere-tierney-topology.md) on the [subobject classifier](../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/subobject-classifier.md) of the sheaf topos internalizes this notion of covering within the topos itself.
 
----
-
-## Supplementary formulation
-
-```yaml
----
-name: "Grothendieck topology"
-tags: []
----
-```
-
 A **Grothendieck topology** $J$ on the [trace category](../../../../services/relationality-services-section/services/quasicrystalline-hypertensor-topos-services-section/content/text/glossary/terms/trace-category.md) $T$ is a coverage that regulates which families of morphisms constitute admissible covers. It determines when local data on [recognition fibers](recognition-fiber.md) can be glued into global data — the sheaf condition.
 
 Axiom A3 of the [QCHTTopos specification](../../../../services/relationality-services-section/services/quasicrystalline-hypertensor-topos-services-section/content/text/documents/articles/notes/quasicrystalline-hypertensor-topos-specification.md) defines the Grothendieck topology. The pair $(T, J)$ forms the *trace site*, the foundational geometric structure of the topos.

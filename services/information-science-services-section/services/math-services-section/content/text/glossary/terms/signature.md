@@ -162,6 +162,10 @@ with $ar(\sigma) = (\mathrm{H}, \mathrm{H})$ and $ar(\Delta) = (\mathrm{H}, \mat
 | **Institution** | Category of signatures + Sen + Mod + $\models$ | No — axioms live in theories | Institution morphism | Goguen & Burstall (1992) |
 | **NormativeSystem** | Roles + norms + deontic constraints | Yes | Normative morphism | This system |
 
+- Whether **amalgamation** holds in a given institution — given a pushout $\mathbf{S}_1 \sqcup_{\mathbf{S}_0} \mathbf{S}_2$ and models $M_1, M_2$ that agree on $\mathbf{S}_0$ via their reducts, whether there exists a model of the pushout signature whose reducts to $\mathbf{S}_1$ and $\mathbf{S}_2$ are $M_1$ and $M_2$. Amalgamation is the key tool for combining theories by specification union.
+- Whether **derived signature morphisms** — where an operation in $\mathbf{S}_1$ maps to a term built from $\mathbf{S}_2$-operations rather than to a single operation — preserve the satisfaction condition or require a stronger version (the term-translation variant studied in Mossakowski et al. 2016).
+- Whether the **Grothendieck institution** construction (Diaconescu 2002) is the right way to combine indexed institutions $(i \mapsto \mathbf{I}_i)$ into a single global institution that captures multi-level signature structure.
+
 A **signature** is the syntactic skeleton; a **theory** is the signature plus axioms; a **specification** is a theory intended for implementation (possibly open/parameterized); a **normative system** is a theory whose axioms are deontic (obligation, permission, prohibition).
 
 ## Open questions
@@ -172,20 +176,6 @@ A **signature** is the syntactic skeleton; a **theory** is the signature plus ax
 - Whether the **Grothendieck institution** construction (Diaconescu 2002) applies: given that our system has multiple "levels" of signature (0-ary for FARS specs, 1-ary for nuclear pairs, higher for general algebraic structures), whether there is an indexed institution $(i \mapsto \mathbf{I}_i)$ that is flattened into a single global institution via the Grothendieck construction — and whether the resulting global signature category captures the multi-level structure of the system.
 - Whether the **initial algebra** $T_\mathbf{S}$ (the term algebra over signature $\mathbf{S}$) has a nuclear representation — whether $T_\mathbf{S}$ corresponds to the least doubly-settled implementation: $\mathrm{impl}_{T_\mathbf{S},\mathbf{S}} \in H^*_t$ and for any other $M$ with $\mathrm{impl}_{M,\mathbf{S}} \in H^*_t$, there is a unique implementation morphism $T_\mathbf{S} \to M$ that is doubly-settled.
 
-## Earlier material
-
 A signature category $\mathbf{Sig}$ is the syntactic core of an **institution** in the sense of Goguen and Burstall (*JACM* 39(1), 1992). An institution $\mathbf{I} = (\mathbf{Sig}, \mathrm{Sen}, \mathrm{Mod}, \models)$ consists of:
 
 $$M' \models_{\mathbf{S}_2} \mathrm{Sen}(\varphi)(\rho) \iff \varphi^*(M') \models_{\mathbf{S}_1} \rho$$
-
-| Concept | What it specifies | Has axioms? | Morphisms | Key source |
-|---|---|---|---|---|
-| **Signature** | Sort names + operation profiles | No | Sort-map + operation-map preserving profiles | Goguen & Burstall (1992) |
-| **[CapabilitySignature](../../../../../../../natural-science-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/library/science/mathematics/engineering/theories/tech/terms/capability-signature.md)** | 0-ary signature over $\mathrm{Types}$ | No | Subsumption inclusion $\iota : \kappa_1 \hookrightarrow \kappa_2$ | This system; RBAC (Sandhu 1996) |
-| **Theory** | Signature + axiom set | Yes | Theory morphism (sig morphism preserving consequence) | Goguen & Burstall (1992) |
-| **Institution** | Category of signatures + Sen + Mod + $\models$ | No — axioms live in theories | Institution morphism | Goguen & Burstall (1992) |
-| **[NormativeSystem](../../../../../../../social-science-services-section/content/text/glossary/terms/normative-system.md)** | Roles + norms + deontic constraints | Yes | Normative morphism | This system |
-
-- Whether **amalgamation** holds in a given institution — given a pushout $\mathbf{S}_1 \sqcup_{\mathbf{S}_0} \mathbf{S}_2$ and models $M_1, M_2$ that agree on $\mathbf{S}_0$ via their reducts, whether there exists a model of the pushout signature whose reducts to $\mathbf{S}_1$ and $\mathbf{S}_2$ are $M_1$ and $M_2$. Amalgamation is the key tool for combining theories by specification union.
-- Whether **derived signature morphisms** — where an operation in $\mathbf{S}_1$ maps to a term built from $\mathbf{S}_2$-operations rather than to a single operation — preserve the satisfaction condition or require a stronger version (the term-translation variant studied in Mossakowski et al. 2016).
-- Whether the **Grothendieck institution** construction (Diaconescu 2002) is the right way to combine indexed institutions $(i \mapsto \mathbf{I}_i)$ into a single global institution that captures multi-level signature structure.

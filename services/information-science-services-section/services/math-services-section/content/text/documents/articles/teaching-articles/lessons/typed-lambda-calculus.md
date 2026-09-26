@@ -182,13 +182,9 @@ Apply $f$ to $x$ to get a $B$; apply $g$ to that $B$ to get a $C$. The result is
 
 - Computation rule: $\beta$-reduction.
 
-## Earlier material
-
 1. **Variables**: $x$, $y$, $z$, ... — names that stand for values.
 2. **Abstraction**: $\lambda x.\, M$ — a function that takes $x$ and returns $M$. Read "the function of $x$ that gives $M$."
 3. **Application**: $M\; N$ — apply function $M$ to argument $N$.
-
-A **typing context** $\Gamma$ is a list of variable-type assignments: $x_1 : A_1, \; x_2 : A_2, \; \ldots$
 
 A **typing judgment** $\Gamma \vdash t : A$ states: "in context $\Gamma$, term $t$ has type $A$."
 

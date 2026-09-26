@@ -31,6 +31,10 @@ Annual depreciation = (\$50,000 - \$5,000) / 10 = \$4,500 per year.
 
 The [journal entry](../../../glossary/terms/journal.md) each year:
 
+**When to use which:** Straight-line is simpler and spreads cost evenly.
+Accelerated methods make sense when an asset loses most of its productive capacity early (vehicles, technology).
+Tax rules may require or incentivize a specific method — in the US, businesses often use MACRS (modified accelerated cost recovery system) for tax purposes and straight-line for financial reporting `[citation needed]`.
+
 | Account | Debit | Credit |
 |---|---|---|
 | Depreciation Expense | \$4,500 | |
@@ -76,15 +80,7 @@ describes which property uses MACRS, the applicable systems, recovery periods,
 methods, conventions, elections, and exceptions. A book method must not be
 silently reused as a tax conclusion, or vice versa.
 
-## Earlier material
-
 [Depreciation](../../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/content/individual/content/agent/endeavoring/content/endeavor/organizing/content/organization/resourcing/content/resource/recording/content/record/accounting/terms/depreciation.md) allocates the cost of a long-lived asset over its useful life.
 There are several methods; the two most common are straight-line and declining balance.
 
 **Key terms:** - **Cost**: what the business paid for the asset - **Salvage value** (residual value): the estimated value at the end of its useful life - **Depreciable base**: cost minus salvage value - **Useful life**: how long the business expects to use the asset
-
-The [journal entry](../../../glossary/terms/journal.md) each year:
-
-**When to use which:** Straight-line is simpler and spreads cost evenly.
-Accelerated methods make sense when an asset loses most of its productive capacity early (vehicles, technology).
-Tax rules may require or incentivize a specific method — in the US, businesses often use MACRS (modified accelerated cost recovery system) for tax purposes and straight-line for financial reporting `[citation needed]`.

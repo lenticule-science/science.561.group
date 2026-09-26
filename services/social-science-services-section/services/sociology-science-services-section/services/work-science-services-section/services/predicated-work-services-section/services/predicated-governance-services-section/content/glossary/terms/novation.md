@@ -47,14 +47,8 @@ Novation can be reached by composition: assignment of the claim from $Q$ to $Q'$
 
 The library's hohfeldian-position text identifies contract formation as a second-quartet phenomenon: an offer is the exercise of a power creating a power-and-liability in the offeree. A novation is structurally a contract that *replaces* an existing contract — the consent of all three parties is the joint exercise of their respective powers (to release / to undertake / to receive) producing the new claim-duty pair while extinguishing the old.
 
-## Earlier material
-
 In [ayni-reciprocity](../../../../../../../../../../social-theory-science-services-section/content/text/documents/articles/notes/undated/ayni-reciprocity.md), the Andean ayllu's *minka* pattern produces collective labor obligation: the polity takes on work that would otherwise fall on individual members. Structurally, minka is a multi-party novation where the "new obligor" is not a single agent but the polity $\mathrm{Pop}$ acting collectively.
 
 The three-party consent structure is preserved: the obligee (the community project or need), the original individual obligor being relieved, and the polity-as-collective-new-obligor must all affirm. The polity's consent is settled via the ayllu's [consensus-closure](consensus-closure.md) rule — when all members' alignment cells settle, the collective consent cell settles. The new duty cell $\langle R^{D'}, \texttt{passive-party}, \mathrm{Pop}\rangle = \mathbf{t}$ distributes the burden according to the ayllu's contribution-allocation closure rules.
 
 This is the substrate-algebraic content of collective labor as a governance-pattern alternative to individual obligation assignment: the polity *takes on* work as a collective act of novation rather than receiving assignment from an authority.
-
-In [ayni-reciprocity](../../../../../../../../../../social-theory-science-services-section/content/text/documents/articles/notes/undated/ayni-reciprocity.md), the Andean ayllu's *minka* pattern produces collective labor obligation: the polity takes on work that would otherwise fall on individual members. Structurally, minka is a multi-party novation where the "new obligor" is not a single agent but the polity $\mathrm{Pop}$ acting collectively.
-
-The three-party consent structure is preserved: the obligee (the community project or need), the original individual obligor being relieved, and the polity-as-collective-new-obligor must all affirm. The polity's consent is settled via the ayllu's [consensus-closure](consensus-closure.md) rule — when all members' alignment cells settle, the collective consent cell settles. The new duty cell $\langle R^{D'}, \texttt{passive-party}, \mathrm{Pop}\rangle = \mathbf{t}$ distributes the burden according to the ayllu's contribution-allocation closure rules.

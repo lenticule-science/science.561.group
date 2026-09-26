@@ -124,13 +124,9 @@ You learn to see relation. You tend to it. You act with awareness of consequence
 
 And you help build a culture that measures success by what it creates and by what it sustains.
 
-## Earlier material
-
 Personal “climate practice” includes learning to regulate not only energy use, but emotional energy.
 
 And you help build a culture that measures success not only by what it creates, but by what it sustains.
-
-## Earlier material
 
 ``` {.bibtex canonical="yes"}
   @online{emsenn_making_sense_climate_change_personal_2025,

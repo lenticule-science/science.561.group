@@ -357,8 +357,6 @@ The claim is not that standardization is inherently detrimental, or that insurge
 For standards bodies, this suggests a need to confront the political implications of scoping and domestication. For decentralized movements, it underscores the importance of being deliberate about when and how to seek institutional recognition. For scholars, it opens a lens onto the subtle ways in which infrastructures that once embodied alternative futures become stabilized as managed, low-energy residues.
 The future of the social web will not be determined solely in code repositories or standards documents. It will also be shaped by how communities and institutions negotiate the tension between legibility and autonomy, between interoperability and control, between the desire to be recognized and the need to remain partially illegible in order to stay alive.
 
-## Earlier material
-
 - Emergence: `X` exists outside `S`. Communities develop and deploy it in pursuit of their own aims.
 - Recognition: `S` acknowledges `X` as relevant. This is often visible in the creation of a working group, community group, or charter that names the technology or its problem domain.
 - Translation: Within `S`, the political and social aims associated with `X` are translated into a set of â€œtechnicalâ€ problems and scoping decisions. Certain concerns (e.g., community governance, economic models, power relations) are explicitly bracketed as â€œout of scope,â€ while others (message formats, endpoints, error semantics) are considered legitimate topics for standardization.

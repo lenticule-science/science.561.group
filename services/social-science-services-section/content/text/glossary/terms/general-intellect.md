@@ -50,6 +50,9 @@ aliases:
   - general intellect
 tags: []
 part-of: sociology/schools/autonomism/terms
+name: "General Intellect"
+date-updated: 2026-03-09
+date-modified: 2026-03-09
 ---
 
 **General intellect** is Marx's term, appearing in the famous "Fragment on Machines" of the [Grundrisse](marx1857) (composed 1857–1858, first published 1939–1941, English translation [1973](marx1973)), for the socialized knowledge, scientific capacity, technical skill, and accumulated cooperative intelligence of humanity considered as a *direct productive force*.
@@ -113,21 +116,11 @@ The general-intellect concept is, on the post-operaismo tradition's own self-pre
 The general intellect is the foundational Marxian textual reference for the [immaterial-labor-and-post-operaismo-survey](../texts/immaterial-labor-and-post-operaismo-survey.md).
 It supplies the substrate on which [immaterial-labor](immaterial-labor.md) draws, the ground on which Vercellone develops his contemporary qualification of [real-subsumption](real-subsumption.md), and the social-cooperative productive force whose political analysis the post-operaismo tradition develops as its alternative to capitalist organization of work.
 
----
+## Related
 
-## Supplementary formulation
-
-```yaml
----
-name: "General Intellect"
-date-created: 2026-03-03T00:00:00
-aliases:
-  - "general intellect"
-tags: []
-date-updated: 2026-03-09
-part-of: sociology/schools/autonomism/terms
----
-```
+- [Class composition](../../../../services/sociology-science-services-section/content/text/glossary/terms/class-composition.md)
+- [Primitive accumulation](../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/primitive-accumulation.md)
+- [Precarity](../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/precarity.md)
 
 General intellect is [Karl Marx](../../general/people/karl-marx.md)'s term, from the *Grundrisse* (1858), for the collective knowledge, skills, and social cooperation that become embedded in productive forces.
 [Marx](../../general/people/karl-marx.md) argued that as production depends less on individual [labor](./labor.md) time and more on the general state of science and technology — on knowledge that is inherently social — the [labor](./labor.md) theory of value enters crisis.
@@ -139,114 +132,3 @@ Knowledge, language, and cooperation are both the means of production and the pr
 This makes the general intellect a primary site of value extraction and of struggle: capital must capture and enclose what is inherently common.
 
 The concept connects to questions of [knowledge sovereignty](/sociology/terms/knowledge-sovereignty.md): if the general intellect is produced collectively, then its private [enclosure](../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/enclosure.md) — through intellectual [property](./property.md), platform monopolies, and proprietary data — is a form of [primitive accumulation](../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/primitive-accumulation.md) directed at the [commons](./commons.md) of shared knowledge.
-
-## Related terms
-
-- [Operaismo](/sociology/terms/operaismo.md)
-- [Class composition](../../../../services/sociology-science-services-section/content/text/glossary/terms/class-composition.md)
-- [Knowledge sovereignty](/sociology/terms/knowledge-sovereignty.md)
-- [Primitive accumulation](../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/primitive-accumulation.md)
-- [Precarity](../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/precarity.md)
-
----
-
-## Supplementary formulation
-
-```yaml
----
-name: "General Intellect"
-date-created: 2026-03-03T00:00:00
-aliases:
-  - "general intellect"
-tags: []
-date-updated: 2026-03-09
-part-of: sociology/schools/autonomism/terms
----
-```
-
-General intellect is [Karl Marx](../../general/people/karl-marx.md)'s term, from the *Grundrisse* (1858), for the collective knowledge, skills, and social cooperation that become embedded in productive forces. [Marx](../../general/people/karl-marx.md) argued that as production depends less on individual [labor](./labor.md) time and more on the general state of science and technology — on knowledge that is inherently social — the [labor](./labor.md) theory of value enters crisis. Value becomes harder to measure by time when the productive force is collective intelligence rather than individual exertion.
-
-[Operaismo](/sociology/terms/operaismo.md) and [autonomist](/sociology/schools/autonomism/index.md) thinkers — particularly Paolo Virno and Antonio Negri — revived and extended the concept. Under what they term cognitive [capitalism](../../../../services/sociology-science-services-section/content/text/glossary/terms/capitalism.md), the general intellect is no longer fixed in machinery (as [Marx](../../general/people/karl-marx.md) primarily imagined) but lives in the communicative, affective, and cognitive capacities of workers themselves. Knowledge, language, and cooperation are both the means of production and the product. This makes the general intellect a primary site of value extraction and of struggle: capital must capture and enclose what is inherently common.
-
-The concept connects to questions of [knowledge sovereignty](/sociology/terms/knowledge-sovereignty.md): if the general intellect is produced collectively, then its private [enclosure](../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/enclosure.md) — through intellectual [property](./property.md), platform monopolies, and proprietary data — is a form of [primitive accumulation](../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/primitive-accumulation.md) directed at the [commons](./commons.md) of shared knowledge.
-
-## Related terms
-
-- [Operaismo](/sociology/terms/operaismo.md)
-- [Class composition](../../../../services/sociology-science-services-section/content/text/glossary/terms/class-composition.md)
-- [Knowledge sovereignty](/sociology/terms/knowledge-sovereignty.md)
-- [Primitive accumulation](../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/primitive-accumulation.md)
-- [Precarity](../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/precarity.md)
-
----
-
-## Supplementary formulation
-
-```yaml
----
-name: "General Intellect"
-date-created: 2026-03-03T00:00:00
-aliases:
-  - "general intellect"
-tags: []
-date-modified: 2026-03-09
----
-```
-
-General intellect is [Karl Marx](../../../../../../../../../../../references/people/karl-marx.md)'s term, from the *Grundrisse* (1858), for the collective knowledge, skills, and social cooperation that become embedded in productive forces.
-[Marx](../../../../../../../../../../../references/people/karl-marx.md) argued that as production depends less on individual [labor](labor.md) time and more on the general state of science and technology — on knowledge that is inherently social — the [labor](labor.md) theory of value enters crisis.
-Value becomes harder to measure by time when the productive force is collective intelligence rather than individual exertion.
-
-[Operaismo](./operaismo.md) and [autonomist](/sociology/schools/autonomism/index.md) thinkers — particularly Paolo Virno and Antonio Negri — revived and extended the concept.
-Under what they term cognitive [capitalism](../../../../services/sociology-science-services-section/content/text/glossary/terms/capitalism.md), the general intellect is no longer fixed in machinery (as [Marx](../../../../../../../../../../../references/people/karl-marx.md) primarily imagined) but lives in the communicative, affective, and cognitive capacities of workers themselves.
-Knowledge, language, and cooperation are both the means of production and the product.
-This makes the general intellect a primary site of value extraction and of struggle: capital must capture and enclose what is inherently common.
-
-The concept connects to questions of [knowledge sovereignty](knowledge-sovereignty.md): if the general intellect is produced collectively, then its private [enclosure](../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/enclosure.md) — through intellectual [property](property.md), platform monopolies, and proprietary data — is a form of [primitive accumulation](../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/primitive-accumulation.md) directed at the [commons](commons.md) of shared knowledge.
-
----
-
-## Supplementary formulation
-
-```yaml
----
-name: "General Intellect"
-date-created: 2026-03-03T00:00:00
-aliases:
-  - "general intellect"
-tags: []
-date-modified: 2026-03-09
----
-```
-
-General intellect is [Karl Marx](../../../../../../../../../../references/people/karl-marx.md)'s term, from the *Grundrisse* (1858), for the collective knowledge, skills, and social cooperation that become embedded in productive forces.
-[Marx](../../../../../../../../../../references/people/karl-marx.md) argued that as production depends less on individual [labor](labor.md) time and more on the general state of science and technology — on knowledge that is inherently social — the [labor](labor.md) theory of value enters crisis.
-Value becomes harder to measure by time when the productive force is collective intelligence rather than individual exertion.
-
-[Operaismo](operaismo.md) and [autonomist](/sociology/schools/autonomism/index.md) thinkers — particularly Paolo Virno and Antonio Negri — revived and extended the concept.
-Under what they term cognitive [capitalism](../../../../services/sociology-science-services-section/content/text/glossary/terms/capitalism.md), the general intellect is no longer fixed in machinery (as [Marx](../../../../../../../../../../references/people/karl-marx.md) primarily imagined) but lives in the communicative, affective, and cognitive capacities of workers themselves.
-Knowledge, language, and cooperation are both the means of production and the product.
-This makes the general intellect a primary site of value extraction and of struggle: capital must capture and enclose what is inherently common.
-
-The concept connects to questions of [knowledge sovereignty](knowledge-sovereignty.md): if the general intellect is produced collectively, then its private [enclosure](../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/enclosure.md) — through intellectual [property](property.md), platform monopolies, and proprietary data — is a form of [primitive accumulation](../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/primitive-accumulation.md) directed at the [commons](commons.md) of shared knowledge.
-
----
-
-## Supplementary formulation
-
-```yaml
----
-name: "General Intellect"
-date-created: 2026-03-03T00:00:00
-aliases:
-  - "general intellect"
-tags: []
-date-modified: 2026-03-09
----
-```
-
-General intellect is [Karl Marx](../../../../../../../../../../references/people/karl-marx.md)'s term, from the *Grundrisse* (1858), for the collective knowledge, skills, and social cooperation that become embedded in productive forces. [Marx](../../../../../../../../../../references/people/karl-marx.md) argued that as production depends less on individual [labor](labor.md) time and more on the general state of science and technology — on knowledge that is inherently social — the [labor](labor.md) theory of value enters crisis. Value becomes harder to measure by time when the productive force is collective intelligence rather than individual exertion.
-
-[Operaismo](operaismo.md) and [autonomist](/sociology/schools/autonomism/index.md) thinkers — particularly Paolo Virno and Antonio Negri — revived and extended the concept. Under what they term cognitive [capitalism](../../../../services/sociology-science-services-section/content/text/glossary/terms/capitalism.md), the general intellect is no longer fixed in machinery (as [Marx](../../../../../../../../../../references/people/karl-marx.md) primarily imagined) but lives in the communicative, affective, and cognitive capacities of workers themselves. Knowledge, language, and cooperation are both the means of production and the product. This makes the general intellect a primary site of value extraction and of struggle: capital must capture and enclose what is inherently common.
-
-The concept connects to questions of [knowledge sovereignty](knowledge-sovereignty.md): if the general intellect is produced collectively, then its private [enclosure](../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/enclosure.md) — through intellectual [property](property.md), platform monopolies, and proprietary data — is a form of [primitive accumulation](../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/primitive-accumulation.md) directed at the [commons](commons.md) of shared knowledge.

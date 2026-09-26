@@ -50,8 +50,6 @@ How many 3-letter strings can be formed from {A, B, C, D, E} without repetition?
 - Confusing permutations (order matters) with combinations (order does not).
 - Applying the product rule when choices are not independent.
 
-## Earlier material
-
 A **[permutation](../../../../glossary/terms/permutation.md)** of $n$ objects is an arrangement of all $n$ objects in order. There are n!=n×(n−1)×⋯×1n! = n \times (n-1) \times \cdots \times 1 permutations.
 
 A **[combination](../../../../glossary/terms/combination.md)** selects $k$ objects from $n$ without regard to order. The number of combinations is the **[binomial coefficient](../../../../glossary/terms/binomial-coefficient.md)** (nk)=n!k!(n−k)!\binom{n}{k} = \frac{n!}{k!(n-k)!}.

@@ -1294,7 +1294,7 @@ The trace *Bind Trace* can now observe the seeded context, so `(BindTrace SeedFi
 
 **slug:** `fiber-category` | **top:** JudgeProfile | **bottom:** ProfileRecognitions
 
-> Package the judgemental data of the potential profile as the fibres by letting `JudgeProfile` witness `ProfileRecognitions`.
+> Package the judgemental data of the active profile as the fibres by letting `JudgeProfile` witness `ProfileRecognitions`.
 
 Every profile context carries the recognised terms, types, and judgements
 assembled by [JudgeProfile](../../../../research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-02/404.md).  Restricting that structure to
@@ -3540,7 +3540,7 @@ successor.  Letting [ProfileKernelStep](../../../../research/2026/07/31/lenticul
 
 **slug:** `profile-exponential` | **top:** FormFunctionTerm | **bottom:** ProfileRecognitions
 
-> Restrict function-term constructions to the potential profile recognitions to obtain internal exponentials.
+> Restrict function-term constructions to the active profile recognitions to obtain internal exponentials.
 
 Exponentials `A ⇒ B` are represented by function-term recognitions.
 [FormFunctionTerm](../../../../research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-02/404.md) already constructs these objects, and
@@ -3583,7 +3583,7 @@ composing the nucleus with the derivative:
 
 **slug:** `profile-invariant` | **top:** StabilizeInvariant | **bottom:** ProfileRecognitions
 
-> Pick out physics states that are flow-invariant and lie inside the potential profile by composing `StabilizeInvariant` with `ProfileRecognitions`.
+> Pick out physics states that are flow-invariant and lie inside the active profile by composing `StabilizeInvariant` with `ProfileRecognitions`.
 
 `StabilizeInvariant = (FixFlow PhysicsState)` records states left unchanged by
 the global flow.  [ProfileRecognitions](../../../../research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-02/404.md) restrict the
@@ -3747,7 +3747,7 @@ profile flow.  Letting the dynamics witness the entropy:
 
 **slug:** `profile-observation-recognitions` | **top:** RecognizeObservation | **bottom:** ProfileRecognitions
 
-> Restrict observation recognitions to the potential profile by composing `RecognizeObservation` with `ProfileRecognitions`.
+> Restrict observation recognitions to the active profile by composing `RecognizeObservation` with `ProfileRecognitions`.
 
 [RecognizeObservation](../../../../research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-02/404.md) gathers the contextual
 observations that witness indistinguishability.  To keep only those observations
@@ -3820,7 +3820,7 @@ This composition records the recognitions fixed by the filter, so *Profile Recog
 
 **slug:** `profile-semantics` | **top:** StructureSemantics | **bottom:** ProfileRecognitions
 
-> Interpret the recognition algebra inside the potential profile by composing `StructureSemantics` with `ProfileRecognitions`.
+> Interpret the recognition algebra inside the active profile by composing `StructureSemantics` with `ProfileRecognitions`.
 
 [StructureSemantics](../../../../research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-02/404.md) packages the full algebra of
 recognitions, meets, joins, implication, and nuclei.  Restricting it to the
@@ -3834,7 +3834,7 @@ active [ProfileRecognitions](../../../../research/2026/07/31/lenticule-import/li
 
 **slug:** `profile-step-observation` | **top:** StepObservation | **bottom:** ProfileRecognitions
 
-> Restrict the observation-step act to the potential profile by composing `StepObservation` with `ProfileRecognitions`.
+> Restrict the observation-step act to the active profile by composing `StepObservation` with `ProfileRecognitions`.
 
 `StepObservation = (RecognizeObservation StepTrace)` records how observations
 advance along traces.  To work inside the profile filter we restrict it via
@@ -3848,7 +3848,7 @@ advance along traces.  To work inside the profile filter we restrict it via
 
 **slug:** `profile-subobject-classifier` | **top:** Negate | **bottom:** ProfileRecognitions
 
-> Restrict Heyting negation to the potential profile recognitions to obtain the internal truth object.
+> Restrict Heyting negation to the active profile recognitions to obtain the internal truth object.
 
 A subobject classifier identifies which recognitions count as “true” subobjects.
 `Negate = (ImplyRecognition GroundRecognition)` already encodes Heyting
@@ -5501,41 +5501,3 @@ presheaf.  We let the fixed functor witness the enriched hom:
 `(FixedFunctor EnrichmentHom)` earns ***YonedaEmbedding***.
 
 Each object is mapped to the lattice-valued hom-object of morphisms into it.
-
----
-
-## Earlier material
-
-> Package the judgemental data of the active profile as the fibres by letting `JudgeProfile` witness `ProfileRecognitions`.
-
-[ProfileFiniteLimits](../../../../../../../../services/relationality-services-section/content/text/triage/404.md) already witnesses finite limits
-inside the active profile.  Restricting those limits to the fixed invariant
-lattice,
-`(ProfileFiniteLimits FixedInvariantLattice)`, earns
-***FixedFiniteLimits***.
-
-[ProfileObservationRecognitions](../../../../../../../../services/relationality-services-section/content/text/triage/404.md) gathers
-the observation witnesses permitted by the active profile, while
-[FixedProfileRecognitions](../../../../../../../../services/relationality-services-section/content/text/triage/404.md) further restricts
-them to the fixed subset.  Composing them,
-`(ProfileObservationRecognitions FixedProfileRecognitions)` earns
-***FixedObservationRecognitions***.
-
-> Restrict function-term constructions to the active profile recognitions to obtain internal exponentials.
-
-> Pick out physics states that are flow-invariant and lie inside the active profile by composing `StabilizeInvariant` with `ProfileRecognitions`.
-
-> Restrict observation recognitions to the active profile by composing `RecognizeObservation` with `ProfileRecognitions`.
-
-[RecognizeObservation](../../../../../../../../services/relationality-services-section/content/text/triage/404.md) gathers the contextual
-observations that witness indistinguishability.  To keep only those observations
-available inside the active profile filter, we compose it with
-[ProfileRecognitions](../../../../../../../../services/relationality-services-section/content/text/triage/404.md):
-`(RecognizeObservation ProfileRecognitions)` earns
-***ProfileObservationRecognitions***.
-
-> Interpret the recognition algebra inside the active profile by composing `StructureSemantics` with `ProfileRecognitions`.
-
-> Restrict the observation-step act to the active profile by composing `StepObservation` with `ProfileRecognitions`.
-
-> Restrict Heyting negation to the active profile recognitions to obtain the internal truth object.

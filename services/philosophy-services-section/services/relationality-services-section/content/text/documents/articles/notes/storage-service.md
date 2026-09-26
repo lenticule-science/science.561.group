@@ -73,8 +73,6 @@ stored recognitions.
 - Every operation is logged, policy-compliant, and observable via measurement
   fabric schemas.
 
-## Earlier material
-
 1. **Snapshot Manager.**
    Performs save/load operations using the storage spec (baseline, context,
    fixed recognitions).

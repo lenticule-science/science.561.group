@@ -32,22 +32,10 @@ The identity relation on A is $\{(a, a) : a \in A\}$ — every element related o
 
 Relations compose. If $R \subseteq A \times B$ and $S \subseteq B \times C$, the composition $S \circ R \subseteq A \times C$ contains $(a, c)$ whenever there exists $b \in B$ with $(a, b) \in R$ and $(b, c) \in S$. Composition is associative. The identity relation is neutral under composition.
 
-In the category Set, a relation from A to B is equivalently a [function](./function.md) $A \times B \to \{0, 1\}$ — a characteristic function that says yes or no for each pair. In a topos, this generalizes: a relation is a morphism $A \times B \to \Omega$ into the subobject classifier, where $\Omega$ may have more truth values than just true and false.
+In the category Set, a relation from A to B is equivalently a [function](../../documents/articles/research/2026/07/31/lenticule-import/_archive/function.md) A×B→{0,1}A \times B \to \{0, 1\} — a characteristic function that says yes or no for each pair. In a topos, this generalizes: a relation is a morphism $A \times B \to \Omega$ into the subobject classifier, where $\Omega$ may have more truth values than just true and false.
 
-## Earlier material
+In the category Set, a relation from A to B is equivalently a [function](./function.md) $A \times B \to \{0, 1\}$ — a characteristic function that says yes or no for each pair. In a topos, this generalizes: a relation is a morphism $A \times B \to \Omega$ into the subobject classifier, where $\Omega$ may have more truth values than just true and false.
 
 A subset of the Cartesian product of two sets — a collection of ordered pairs specifying which elements of one set are related to which elements of another.
 
 A binary relation from a [set](set.md) A to a [set](set.md) B is a [subset](subset.md) $R \subseteq A \times B$. It is a collection of [ordered pairs](ordered-pair.md) $(a, b)$ where $a \in A$ and $b \in B$. When $(a, b) \in R$, we say a is related to b by R, written aRba \mathrel{R} b.
-
-- [**Reflexive**](reflexive.md): every element is related to itself. $\forall a \in A : a \mathrel{R} a$.
-
-- **Symmetric**: if a is related to b then b is related to a. $a \mathrel{R} b \Rightarrow b \mathrel{R} a$.
-
-- [**Antisymmetric**](antisymmetric.md): if a is related to b and b is related to a, then they are the same. $a \mathrel{R} b \wedge b \mathrel{R} a \Rightarrow a = b$.
-
-- [**Transitive**](transitive.md): if a is related to b and b is related to c, then a is related to c. $a \mathrel{R} b \wedge b \mathrel{R} c \Rightarrow a \mathrel{R} c$.
-
-Relations compose. If $R \subseteq A \times B$ and $S \subseteq B \times C$, the composition $S \circ R \subseteq A \times C$ contains $(a, c)$ whenever there exists $b \in B$ with $(a, b) \in R$ and $(b, c) \in S$. Composition is associative. The identity relation is neutral under composition.
-
-In the category Set, a relation from A to B is equivalently a [function](../../documents/articles/research/2026/07/31/lenticule-import/_archive/function.md) A×B→{0,1}A \times B \to \{0, 1\} — a characteristic function that says yes or no for each pair. In a topos, this generalizes: a relation is a morphism $A \times B \to \Omega$ into the subobject classifier, where $\Omega$ may have more truth values than just true and false.

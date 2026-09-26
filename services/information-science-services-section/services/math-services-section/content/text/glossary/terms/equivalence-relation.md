@@ -24,8 +24,6 @@ An equivalence relation contrasts with a [partial order](./partial-order.md). Bo
 
 The quotient set $S / {\sim}$ is the set of equivalence classes. A [function](./function.md) $f : S \to T$ that respects the equivalence — $a \sim b \Rightarrow f(a) = f(b)$ — descends to a function on the quotient: $\bar{f} : S/{\sim} \to T$. This is how equivalence relations interact with functions: they define which inputs a function is allowed to distinguish.
 
-## Earlier material
-
 A binary relation that is reflexive, symmetric, and transitive — partitioning a set into classes of elements that are all related to each other.
 
 An equivalence relation contrasts with a [partial order](partial-order.md). Both are [reflexive](reflexive.md) and [transitive](transitive.md). A partial order adds [antisymmetry](antisymmetric.md) — if $a \leq b$ and $b \leq a$ then $a = b$ — which ranks elements. An equivalence relation adds [symmetry](symmetric.md) — if a∼ba \sim b then b∼ab \sim a — which groups elements. Ranking and grouping are the two basic things you can do with a reflexive transitive relation.

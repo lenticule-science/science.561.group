@@ -153,8 +153,6 @@ behaviour can appear outside that chain.
 - Observables for measurement and introspection modules, with complete
   traceability to the acts and specifications that produced them.
 
-## Earlier material
-
 1. **Evaluator.**
    Implements STLC evaluation per the spec: parses terms, checks types, and
    produces reduction tasks.

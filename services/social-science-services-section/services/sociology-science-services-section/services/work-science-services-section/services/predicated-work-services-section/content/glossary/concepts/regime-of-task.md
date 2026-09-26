@@ -21,6 +21,12 @@ By the [four-regime dichotomy](../../../../../../../../../../information-science
 
 By [predicate-generator exhaustiveness](../../../../../../../../../../library/theories/humanities/theories/math/theories/categories/theories/predication-categories/theorems/predicate-generator-exhaustiveness.md), the task-restricted closure operator's regime depends on:
 
+The theorem classifies the *operator-regime* of the task-restricted closure operator $\mathrm{cl}^{\mathcal{S}_T}$: the worst-case closure ordinal over all possible increment sequences interacting with $\mathcal{S}_T$. A specific execution of task $T$ under a concrete increment sequence $u$ may achieve a *settling-regime* strictly below the operator-regime.
+
+**Example.** A task whose $\mathcal{S}_T$ contains a "if every prior attempt has failed, escalate" rule is classified as transfinite-bounded by the theorem (the rule has a limit-aggregating antecedent). But if the task succeeds on the first attempt (no prior failures), the escalation rule's antecedent is never satisfied, and the settling-regime for that execution is strict. The operator-regime is an upper bound; the settling-regime is the actual behavior.
+
+For practical dispatch and scheduling, the operator-regime tells the community *what kind of work this is* (its structural complexity class). The settling-regime of a specific run tells the community *what actually happened*. Both levels of classification are useful; they answer different questions. See [regime-classification-scope](../../../../../../../../social-theory-science-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/library/social-sciences/working/_archive/questions/regime-classification-scope.md) for the full treatment.
+
 1. The cardinality of the task's predication-cell sub-set ($|G_T| + $ ancestor cells in the antecedents).
 2. The Scott-continuity of $\mathcal{S}_T$'s closure-rule-language fragment.
 3. The cofinality of the antecedent-aggregation if non-Scott-continuous.
@@ -46,15 +52,3 @@ The work vocabulary's [task lifecycle](../../../../../../../../../content/text/g
 ## Corollary — recurrence is non-strict
 
 A [recurrent practice](../../../../../../../../../content/text/glossary/terms/recurrence.md) (return of a pattern with novelty across cycles, per Prigogine's irreversible-time arrow) is *not* a single task but a closure rule that fires once per cycle, with the cycles indexed by a countable ordinal sequence. The recurrent practice's settling lives in the Scott-continuous regime if the cycles' content is independent (each cycle's settling depends on the increment for that cycle alone) and in the transfinite-bounded regime if cycles' content depends on aggregations of prior cycles (e.g., a cumulative review).
-
-## Earlier material
-
-By [predicate-generator exhaustiveness](../../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/pre-bilattice/content/bilattice/content/predication-fiber-algebra/content/predication-fibration/explanations/exhaustiveness-of-four-predication-cell-complex-site-generators.md), the task-restricted closure operator's regime depends on:
-
-The theorem classifies the *operator-regime* of the task-restricted closure operator $\mathrm{cl}^{\mathcal{S}_T}$: the worst-case closure ordinal over all possible increment sequences interacting with $\mathcal{S}_T$. A specific execution of task $T$ under a concrete increment sequence $u$ may achieve a *settling-regime* strictly below the operator-regime.
-
-**Example.** A task whose $\mathcal{S}_T$ contains a "if every prior attempt has failed, escalate" rule is classified as transfinite-bounded by the theorem (the rule has a limit-aggregating antecedent). But if the task succeeds on the first attempt (no prior failures), the escalation rule's antecedent is never satisfied, and the settling-regime for that execution is strict. The operator-regime is an upper bound; the settling-regime is the actual behavior.
-
-For practical dispatch and scheduling, the operator-regime tells the community *what kind of work this is* (its structural complexity class). The settling-regime of a specific run tells the community *what actually happened*. Both levels of classification are useful; they answer different questions. See [regime-classification-scope](../../../../../../../../social-theory-science-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/library/social-sciences/working/_archive/questions/regime-classification-scope.md) for the full treatment.
-
-For practical dispatch and scheduling, the operator-regime tells the community *what kind of work this is* (its structural complexity class). The settling-regime of a specific run tells the community *what actually happened*. Both levels of classification are useful; they answer different questions. See [regime-classification-scope](../../../../../content/text/triage/questions/regime-classification-scope.md) for the full treatment.

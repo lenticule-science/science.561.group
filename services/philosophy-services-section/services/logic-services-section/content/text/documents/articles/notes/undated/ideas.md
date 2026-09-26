@@ -4350,8 +4350,6 @@ constructing the comparison functor between the nuclear coproduct in
 $\mathbf{Sh}(T,J)$ and the fusion coproduct in the Fibonacci modular
 tensor category, or proving no such functor exists.
 
-## Earlier material
-
 **Workflow:** 1.
 Add ideas here in freeform prose — no frontmatter required 2.
 Run `python src/scripts/query_math.py --query statement-frontier` to see which objects need to be defined first 3.
@@ -4385,10 +4383,6 @@ Once formalized, delete the idea from this file and add it to the Done section b
 | Hyperversal Coordinate System | `hyperversal-coordinate.md` |
 | Zeno Settling Gap (SN failure at colimit + $H^1$ obstruction) | `zeno-settling.md` |
 | Entanglement Combinatorics (additivity, Sat multiplies ent, Trans-neutrality, NF characterization, depth bound) | `entanglement-combinatorics.md` |
-
-**Depends on:** golden-stability conjecture, depth-filtration, strong-normalization.
-
-**Depends on:** strong-normalization, modal-weight-duality, golden-hyperverse-criterion.
 
 A cluster of correspondences between FML₀ rewriting and quantum mechanics.
 Not yet precise enough to triage individually — record here for future formalization.

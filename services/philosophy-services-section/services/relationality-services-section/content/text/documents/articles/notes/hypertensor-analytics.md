@@ -62,8 +62,6 @@ measurements (entropy, densities) for downstream planning modules.
 - Exported data references the exact substitution stage that produced it and the
   traceability DAG node for audit.
 
-## Earlier material
-
 1. **Window Manager.**
    Maintains simulated lattice windows, applies flow/nucleus operators, and
    schedules substitution inflations.

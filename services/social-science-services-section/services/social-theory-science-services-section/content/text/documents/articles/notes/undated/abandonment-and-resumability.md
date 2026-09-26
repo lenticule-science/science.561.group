@@ -128,8 +128,6 @@ This gives the cohomological trace of abandoned work precise structure:
 
 Whether abandoned tasks' partial settling inflates or deflates $H^1_k$ depends on whether the abandonment-state partial settling is MLD-equivalent to a complete settling (of a smaller task) or is a genuinely new cohomological class. The inconsistency sheaf route above is the most tractable direction: abandoned-with-contradiction tasks contribute strictly positive-rank $\mathcal{F}^{(\top)}_T$ and therefore genuinely inflate the LES's non-trivial terms.
 
-## Earlier material
-
 $$v\bigl(\langle T, \texttt{active-rules-suspended}\rangle\bigr) = \mathbf{f} \;\text{ or }\; v\bigl(\langle T, \texttt{active-rules-suspended}\rangle\bigr) = \bot$$
 
 $$r_{\mathrm{suspend}}: v\bigl(\langle T, \texttt{abandoned-by}, A^*\rangle\bigr) = \mathbf{t} \;\Longrightarrow\; v\bigl(\langle T, \texttt{active-rules-suspended}\rangle\bigr) = \mathbf{t}$$
