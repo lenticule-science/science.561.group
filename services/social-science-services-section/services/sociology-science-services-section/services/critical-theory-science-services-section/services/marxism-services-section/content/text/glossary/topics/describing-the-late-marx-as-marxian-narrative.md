@@ -128,8 +128,6 @@ Lakatos, Imre. 1978. **The Methodology of Scientific Research Programmes.** Camb
 Simpson, Leanne Betasamosake. 2017. **As We Have Always Done: Indigenous Freedom through Radical Resistance.** Minneapolis: University of Minnesota Press.
 [Wynter](../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/sylvia-wynter.md), Sylvia. 2003. “Unsettling the Coloniality of Being/Power/Truth/Freedom: Toward the Human, After Man, Its Overrepresentation—An Argument.” **CR: The New Centennial Review** 3 (3): 257–337.
 
-## Earlier material
-
 These steps would not only complete the research that Marx and Anderson began but also shift Marxism from confession back to investigation.
 
 :PROPERTIES:

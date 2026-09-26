@@ -16,11 +16,3 @@ visibility: public
 
 
 ## Bibliography
-
-## Earlier material
-
-<div class="bibliography">
-
-<div id="refs">
-
-</div>

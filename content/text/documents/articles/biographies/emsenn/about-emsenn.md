@@ -20,8 +20,6 @@ My current focus is on research and writing, but this draws on a long experience
 
 Unfortunately, it's easier to say that than explain those experiences in any coherent way. If you're a brand consultant and want to help, [reach out](mailto:emsenn@emsenn.net), please.
 
-## Earlier material
-
 My name is **_emsenn_**, and I research and analyze relational dynamics.
 
 To understand what that means, it helps to know a bit about me. My current focus is on research and writing, built on a long history of practice in the fields I now write about.

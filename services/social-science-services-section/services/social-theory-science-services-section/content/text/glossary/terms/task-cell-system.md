@@ -53,8 +53,6 @@ The state machine over these states, expressed as closure rules:
 | Active or Open | Cancelled | Parent settles via sibling (OR-decomposition) or explicit cancel increment |
 | Abandoned | — | Terminal; only $T'$ with `resumes: T` can continue the work |
 
-## Earlier material
-
 The work vocabulary's [task lifecycle](../../../../../../content/text/glossary/terms/lifecycle.md) — open → active → completed — is the bilattice valuation of the task's `assigned-to` and goal cells:
 
 - **Open**: $v(\langle T, \texttt{assigned-to}, A\rangle) = \bot$ for all $A$. No assignment witness has arrived.
@@ -62,5 +60,3 @@ The work vocabulary's [task lifecycle](../../../../../../content/text/glossary/t
 - **Completed**: $v|_{G_T} = v^*_T$ at quiescence (target valuation reached and stable). See [completion-as-quiescence](../../../../../sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/glossary/concepts/completion-as-quiescence.md).
 - **Failed**: $v|_{G_T}$ contains an $\mathbf{f}$-valued goal cell at quiescence.
 - **Abandoned**: $v(\langle T, \texttt{abandoned-by}, A^*\rangle) = \mathbf{t}$ for some $A^*$, regardless of goal cell values.
-
-The work vocabulary's [task lifecycle](../../../../../../content/text/glossary/terms/lifecycle.md) — open → active → completed — is the bilattice valuation of the task's `assigned-to` and goal cells:

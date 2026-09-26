@@ -36,8 +36,6 @@ not positive and negative moral or economic values.
 
 A common source of confusion: in everyday language, "credit" suggests receiving money (a credit to your bank account). In accounting, a credit to your cash account means cash decreased — because cash is an asset, and credits decrease assets. The bank's perspective is the opposite of yours: your deposit is their liability, and crediting a liability increases it. Both sides use the same system correctly; the confusion arises from conflating the two perspectives.
 
-## Earlier material
-
 A debit is an entry on the left side of an [account](../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/2026/03/06/2026-03-06-account.md); a credit is an entry on the right side.
 In [double-entry bookkeeping](double-entry-bookkeeping.md), every transaction consists of equal debits and credits — if \$500 is debited somewhere, \$500 must be credited elsewhere.
 

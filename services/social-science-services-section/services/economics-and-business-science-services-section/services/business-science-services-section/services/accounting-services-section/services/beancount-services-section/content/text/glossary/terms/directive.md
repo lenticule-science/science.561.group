@@ -43,8 +43,6 @@ plugins, and versions—not only its visible transaction lines.
 See the official [Beancount language syntax](https://beancount.github.io/docs/beancount_language_syntax/)
 for the complete grammar and date semantics.
 
-## Earlier material
-
 A directive is any dated entry in a Beancount file.
 Unlike [Ledger](../../../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/content/individual/content/agent/endeavoring/content/endeavor/organizing/content/organization/resourcing/content/resource/recording/content/record/accounting/content/accounting-software/content/beancount/content/ledger-cli.md), where directives are optional configuration, Beancount treats everything as a directive — transactions, account openings, balance assertions, price entries, and metadata all follow the same pattern: a date followed by a directive type.
 

@@ -12,8 +12,6 @@ description: "Capitalism and Schizophrenia is a two-volume work by Gilles Deleuz
 
 *A Thousand Plateaus* extends this framework through a series of independent "plateaus" — essays that develop concepts including the rhizome, assemblage, deterritorialization, the body without organs, the war machine, and smooth and striated space. The work resists linear reading and proposes a mode of thought organized by connection and heterogeneity rather than hierarchy and sequence.
 
-## Earlier material
-
 :PROPERTIES:
 :ID:       ceb3806d-86b8-453c-b469-82f524992817
 :public:   true

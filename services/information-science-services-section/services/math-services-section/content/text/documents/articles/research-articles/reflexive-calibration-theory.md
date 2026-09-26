@@ -102,6 +102,21 @@ This condition generalizes standard cross-calibration criteria by
 embedding them in a lattice structure, ensuring that coherence and
 stability coincide.
 
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+<colgroup>
+    <col  class="org-left" />
+
+<col  class="org-left" />
+    </colgroup>
+    <tbody>
+    <tr>
+    <td class="org-left">V(Together)-V(Either)&times;(1-g)</td>
+    <td class="org-left">&lt;&epsilon;.</td>
+    </tr>
+    </tbody>
+    </table>
+
 # 5. Relation to Statistical Inference
 
 When $E_1,E_2$ are posterior distributions, the operations are realized
@@ -176,35 +191,3 @@ as the closure of mutual recognition.
 3.  \[Author\], **Proposing a Reflexive Existence (v0.1)**, unpublished
     manuscript.
 4.  ISO/IEC Guide 98-3, **Uncertainty of Measurement (GUM)**, 2008.
-
-## Earlier material
-
-This condition generalizes standard cross-calibration criteria by embedding them in a [lattice](../../../../../../../../philosophy-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/mathematics/objects/posets/terms/lattice.md) structure, ensuring that coherence and stability coincide.
-
-\$$
-
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-<colgroup>
-    <col  class="org-left" />
-
-<col  class="org-left" />
-    </colgroup>
-    <tbody>
-    <tr>
-    <td class="org-left">V(Together)-V(Either)&times;(1-g)</td>
-    <td class="org-left">&lt;&epsilon;.</td>
-    </tr>
-    </tbody>
-    </table>
-
-This condition generalizes standard cross-calibration criteria by embedding them in a [lattice](../../../../../../../../philosophy-services-section/services/relationality-services-section/content/mathematics/objects/posets/terms/lattice.md) structure, ensuring that coherence and stability coincide.
-
-Conventional calibration methods quantify the agreement between two measurement systems by external correction or overlap of uncertainty regions.
-However, these procedures presuppose a fixed background relation and do not formally describe how systems recognize or stabilize one another.
-A reflexive formulation allows calibration to be treated as an internal [morphism](../../../glossary/terms/morphism.md) of sufficiency within a shared logical environment.
-In this setting, consistency arises from the commutation of inclusion and residuation, rather than from mere numerical proximity.
-
-This condition generalizes standard cross-calibration criteria by embedding them in a [lattice](../../../../../services/order-services-section/content/text/glossary/terms/lattice.md) structure, ensuring that coherence and stability coincide.
-
-\\]

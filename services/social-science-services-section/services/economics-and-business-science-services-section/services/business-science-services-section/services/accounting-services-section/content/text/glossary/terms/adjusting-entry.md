@@ -34,8 +34,6 @@ movement, because that movement belongs to its source transaction. Corrections
 discovered during close must still be classified by their substance rather
 than forced into a supposed no-cash rule.
 
-## Earlier material
-
 An adjusting entry is a [journal entry](journal.md) made at the end of an accounting period to update account balances before [financial statements](../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/content/individual/content/agent/endeavoring/content/endeavor/organizing/content/organization/resourcing/content/resource/recording/content/record/accounting/content/adjusting-entry/financial-statements.md) are prepared.
 
 The common thread is timing.

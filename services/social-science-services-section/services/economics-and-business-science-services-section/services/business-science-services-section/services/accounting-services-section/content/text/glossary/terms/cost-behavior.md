@@ -37,8 +37,6 @@ managerial assumption, not an intrinsic label permanently attached to the cost.
 
 **The relevant range**: Fixed costs are only "fixed" within a range of activity. If the bakery needs to lease a second oven to handle increased volume, fixed costs step up. Cost behavior analysis assumes the business is operating within a range where the cost relationships hold.
 
-## Earlier material
-
 Understanding how costs behave — how they change (or don't) as business activity changes — is the foundation of managerial accounting and budgeting.
 Costs aren't monolithic; they respond to volume in predictable patterns.
 

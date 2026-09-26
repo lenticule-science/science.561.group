@@ -29,7 +29,12 @@ Fanon is foundational. The sociogenic principle is the upstream source for Wynte
 - *The Wretched of the Earth* (1961)
 - *Toward the African Revolution* (posthumous, 1964)
 
-## Earlier material
+## Related
+
+- [Sylvia Wynter](sylvia-wynter.md) — extends Fanon's sociogeny into a critique of "Man" as genre of being
+- [Achille Mbembe](../../../../../services/information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/achille-mbembe.md) — extends Fanon into [necropolitics](../../../../../services/philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/necropolitics.md)
+- [Vine Deloria Jr.](../../../../../services/information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/vine-deloria-jr.md) — parallel critique of Western [epistemology](../../../../../services/information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/philosophy/terms/epistemology.md) from Indigenous standpoint
+- [Glen Coulthard](glen-coulthard.md) — reads Fanon through Indigenous political philosophy
 
 Frantz Fanon (1925–1961) was a Martinican psychiatrist, philosopher, and revolutionary. Born in Fort-de-France, he studied medicine and psychiatry in France, practiced in Algeria during the war of independence, and joined the Algerian National Liberation Front. He died of leukemia at 36, leaving behind a body of work that remains central to decolonial thought, critical race theory, and postcolonial philosophy.
 
@@ -41,12 +46,3 @@ Frantz Fanon (1925–1961) was a Martinican psychiatrist, philosopher, and revol
 - *Black Skin, White Masks* (1952)
 - *A Dying Colonialism* (1959)
 - *The Wretched of the Earth* (1961) [cite:@fanon_WretchedEarth_1963]
-
-- [Sylvia Wynter](sylvia-wynter.md) — extends Fanon's sociogeny into a critique of "Man" as genre of being
-- [Achille Mbembe](../../../../../services/information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/achille-mbembe.md) — extends Fanon into [necropolitics](../../../../../services/philosophy-services-section/services/black-philosophy-services-section/services/abolition-services-section/services/state-repression-services-section/content/text/glossary/terms/necropolitics.md)
-- [Vine Deloria Jr.](../../../../../services/information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/vine-deloria-jr.md) — parallel critique of Western [epistemology](../../../../../services/information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/philosophy/terms/epistemology.md) from Indigenous standpoint
-- [Settler colonialism](../../../../../services/information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/sociology/terms/settler-colonialism.md) — the colonial structure Fanon's work addresses
-- [Decolonization](../../../../../services/social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/povinellian-services-section/services/settler-colonialism-services-section/content/text/glossary/terms/decolonization.md) — the process Fanon theorizes
-- [Glen Coulthard](glen-coulthard.md) — reads Fanon through Indigenous political philosophy
-- [Non-Western pedagogies](../../../../../services/information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/education/disciplines/pedagogy/schools/non-western-pedagogies/index.md) — Fanon's analysis of colonial education as displacement of communal pedagogies
-- [Black radical pedagogies](../../../../../services/information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/education/disciplines/pedagogy/schools/black-radical-pedagogies/index.md) — Fanon's work informs the insistence on self-determined knowledge production

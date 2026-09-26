@@ -36,8 +36,6 @@ renaming does not silently rewrite historical meaning.
 
 A chart of accounts is an architectural decision. Too few accounts and the entity can't see where its money goes. Too many and the system becomes unwieldy, with transactions routinely posted to the wrong account because the distinctions are too fine. The chart should reflect the level of detail the entity needs for decision-making and reporting — no more, no less.
 
-## Earlier material
-
 A chart of accounts is the complete, structured list of all [accounts](../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/2026/03/06/2026-03-06-account.md) an entity uses to record financial transactions.
 It assigns each account a name, a number, and a type (asset, liability, equity, revenue, or expense).
 The chart defines what the entity can track and report — an expense that doesn't have its own account gets lumped into a broader category, invisible to anyone reviewing the financial statements.

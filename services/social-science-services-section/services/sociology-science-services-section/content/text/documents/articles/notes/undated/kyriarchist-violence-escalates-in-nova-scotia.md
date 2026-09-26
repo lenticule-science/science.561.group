@@ -55,9 +55,3 @@ One key in good planning is awareness. Events like these are contemporary coloni
     
 
 If you have any suggestions for further reading, or would simply like to share your thoughts and prayers, please reply to this email: I’ll (anonymously) compile responses to share in a possible follow-up.
-
-## Earlier material
-
-](../../../../../../services/critical-theory-science-services-section/content/text/triage/2025-emsvault/root-import/<https:/substackcdn.com/image/fetch/$s_!Fzum!,f_auto,q_auto>:good,fl_progressive:steep/https:/bucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com/public/images/d57eebbd-a764-40ee-9448-836a761a902f_982x768.jpeg)
-
-](../../../../../../services/critical-theory-science-services-section/content/text/triage/2025-emsvault/root-import/<https:/substackcdn.com/image/fetch/$s_!OEFj!,f_auto,q_auto>:good,fl_progressive:steep/https:/bucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com/public/images/2e38c2bb-e572-4688-ae6b-13cdf450f01c_590x589.png)
