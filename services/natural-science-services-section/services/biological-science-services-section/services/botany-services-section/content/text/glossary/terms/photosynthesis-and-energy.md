@@ -44,9 +44,3 @@ Three strategies plants have evolved to manage the trade-off. C3 is the default.
 ## Why this matters
 
 Photosynthesis is the energetic foundation of nearly all life on Earth. Understanding it explains plant growth, agricultural productivity, and the carbon cycle.
-
-## Earlier material
-
-Photosynthesis occurs in [chloroplasts](chloroplast.md), specifically in the thylakoid membranes (light reactions) and the stroma (Calvin cycle).
-
-[Stomata](stomata.md) must open to admit CO2 but lose water when they do. Plants constantly balance carbon gain against water loss. This is especially challenging in hot, dry environments.

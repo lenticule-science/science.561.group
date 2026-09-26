@@ -74,7 +74,3 @@ Modern research on astragalus has demonstrated immunomodulatory effects — incr
 - [Etiology](../../documents/articles/notes/etiology.md) — the external pathogenic factors Wei Qi resists
 - [Lung](zang-fu.md) — the organ system that distributes Wei Qi
 - [Yang Deficiency](yang-deficiency.md) — deeper warmth deficiency, distinguished from surface Wei Qi weakness
-
-## Earlier material
-
-Wei Qi (卫气, "defensive Qi" or "protective Qi") is the aspect of [Qi](qi.md) that circulates on the body's surface, between the skin and muscles, protecting against invasion by external pathogenic factors. It is TCM's concept of the body's first line of defense — analogous to what biomedicine calls innate immunity and barrier function, though broader in scope.

@@ -42,11 +42,3 @@ Populations of organisms change over generations through natural selection and o
 ## Why this matters
 
 These characteristics provide the conceptual foundation for everything that follows in biology.
-
-## Earlier material
-
-Life requires continuous chemical activity. Organisms take in energy and materials from their environment, transform them through chemical reactions catalyzed by [enzymes](../../../glossary/terms/enzyme.md), and use the products to maintain themselves, grow, and reproduce. This network of chemical reactions is [metabolism](../../../../../services/physiology-services-section/content/text/glossary/terms/metabolism.md).
-
-Organisms maintain stable internal conditions despite changing external environments. Body temperature, blood pH, water balance — all regulated through feedback mechanisms. This is [homeostasis](../research/2026/07/31/lenticule-import/_archive/atom/scripts/bonding/content/molecule/scripts/assembling/content/cell/scripts/integrating/content/organism/_archive/organism-rest/theories/physiology/terms/homeostasis.md).
-
-Populations of organisms change over generations through natural selection and other mechanisms. This is [evolution](../../../../../services/adaptation-services-section/content/text/glossary/terms/evolution.md) — the process that produced the diversity of life on Earth.

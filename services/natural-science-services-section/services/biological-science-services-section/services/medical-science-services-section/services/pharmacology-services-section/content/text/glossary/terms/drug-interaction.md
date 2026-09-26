@@ -63,9 +63,3 @@ Interactions are not limited to prescription drugs. Grapefruit juice inhibits in
 - [Pharmacokinetics](./pharmacokinetics.md) — the ADME processes where pharmacokinetic interactions occur
 - [Pharmacodynamics](./pharmacodynamics.md) — the receptor-level mechanisms where pharmacodynamic interactions occur
 - [Therapeutic Index](./therapeutic-index.md) — the margin of safety that drug interactions can narrow or eliminate
-
-## Earlier material
-
-These occur when one drug alters the [pharmacokinetics](pharmacokinetics.md) of another:
-
-[Harm reduction](../../../../../public-health-services-section/content/text/glossary/terms/harm-reduction.md) programs address this interaction through:

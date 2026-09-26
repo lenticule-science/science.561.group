@@ -130,7 +130,3 @@ The DSM's problems: it treats dimensional phenomena (anxiety exists on a continu
 The [ICD](https://www.who.int/standards/classifications/classification-of-diseases) (International Classification of Diseases, published by the World Health Organization) is the global alternative. Its mental health chapter covers similar territory but with different category boundaries and cultural assumptions.
 
 Neither system is wrong. Both are tools — useful for some purposes, distorting for others. The critical question is whether the diagnosis serves the person (by enabling understanding, treatment, and access to resources) or constrains them (by reducing complex experience to a label that determines how they are seen and treated). This is the question [disability justice](../../../../../../../content/text/glossary/terms/disability-justice.md) asks of all diagnostic systems.
-
-## Earlier material
-
-Depression and chronic pain frequently co-occur — not coincidentally but mechanistically. Both involve altered descending modulation in the [nervous system](../../../../../../human-body-services-section/content/text/documents/articles/notes/the-nervous-system.md), both involve [central sensitization](../../../../../../pain-services-section/content/text/glossary/terms/central-sensitization.md), and both involve the same neurotransmitter systems (serotonin, norepinephrine). Antidepressants that increase serotonin and norepinephrine activity treat both conditions — not because pain is "really" depression but because the neural mechanisms overlap.

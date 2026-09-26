@@ -106,10 +106,3 @@ A massage therapist manipulates tissue — applying pressure, stretching muscle,
 
 - [Reiki Overview](./reiki-overview.md) — the practice's theoretical framework and degree structure
 - [History of Reiki](./reiki-history.md) — how the practice developed and spread
-
-## Earlier material
-
-A Reiki session begins before the recipient arrives. The [practitioner](../../../glossary/terms/practitioner.md) prepares by settling their own attention — a process typically called grounding. This may involve:
-
-- [Reiki Overview](reiki-overview.md) — the practice's theoretical framework and degree structure
-- [History of Reiki](reiki-history.md) — how the practice developed and spread

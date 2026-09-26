@@ -61,9 +61,3 @@ Efficient gas exchange requires three things: adequate ventilation (fresh air re
 ## The respiratory system and preoxygenation
 
 [Preoxygenation](../../../../../../airway-services-section/content/text/glossary/terms/preoxygenation.md) exploits the lung's gas reservoir. The functional residual capacity (FRC) — the volume of gas remaining in the lungs at the end of a normal breath — is approximately 2.5 liters in an adult. On room air, this volume is mostly nitrogen (~78%). By breathing 100% oxygen, the patient replaces nitrogen with oxygen, creating a much larger oxygen reserve that sustains the body during the apneic period of intubation.
-
-## Earlier material
-
-The respiratory system is divided into upper and lower [airways](../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/medicine/_archive/from-discourse-domain-locus-medicine/airway/terms/airway.md):
-
-The respiratory system is divided into upper and lower [airways](../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/medicine/archive/domains/airway/terms/airway.md):

@@ -36,9 +36,3 @@ The plant offers three edible harvests: underground bulblets (immature bulbs at 
 - [Allium cepa (common onion)](../../../../../../content/text/documents/articles/notes/2026/04/02/2026-04-02-allium-cepa.md)
 - [Allium fistulosum (bunching onion)](./allium-fistulosum.md)
 - [Egyptian walking onion cultivation](../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/glossary/terms/walking-onion-cultivation.md)
-
-## Earlier material
-
-- [Allium cepa (common onion)](../../../../../../content/text/documents/articles/notes/2026/04/02/2026-04-02-allium-cepa.md)
-- [Allium fistulosum (bunching onion)](allium-fistulosum.md)
-- [Egyptian walking onion cultivation](../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/glossary/terms/walking-onion-cultivation.md)

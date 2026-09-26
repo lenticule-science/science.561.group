@@ -42,9 +42,3 @@ In [harm reduction](../../../../../public-health-services-section/content/text/g
 - [Pharmacokinetics](./pharmacokinetics.md) — the broader framework of which bioavailability is one component
 - [Half-Life](./half-life.md) — how long the drug remains in the body once it has reached circulation
 - [Therapeutic Index](./therapeutic-index.md) — the margin of safety that bioavailability variability can narrow
-
-## Earlier material
-
-- [Pharmacokinetics](pharmacokinetics.md) — the broader framework of which bioavailability is one component
-- [Half-Life](half-life.md) — how long the drug remains in the body once it has reached circulation
-- [Therapeutic Index](therapeutic-index.md) — the margin of safety that bioavailability variability can narrow

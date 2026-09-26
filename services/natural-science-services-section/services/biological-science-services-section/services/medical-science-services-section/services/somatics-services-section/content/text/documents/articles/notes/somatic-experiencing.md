@@ -101,9 +101,3 @@ The training model's emphasis on practitioner self-regulation, while sound in pr
 - [Clinical Somatic Education](./clinical-somatic-education.md) — addresses habitual contraction patterns that may overlap with trauma residue
 - [Feldenkrais Method](./feldenkrais-method.md) — shares the commitment to nervous system education but doesn't specialize in trauma
 - [Structural Integration](./structural-integration.md) — works on the fascial tissue that may hold postural residues of trauma
-
-## Earlier material
-
-- [Peter Levine](../../../../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/peter-levine.md) — founder
-- [Stephen Porges](../../../../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/stephen-porges.md) — polyvagal theory provides the neuroanatomical framework
-- [Eugene Gendlin](../../../../../../../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/documents/articles/notes/eugene-gendlin.md) — the felt-sense concept that SE uses as its primary perceptual tool

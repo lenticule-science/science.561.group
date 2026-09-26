@@ -112,7 +112,3 @@ This is why soil amended with compost every few years remains productive without
 ---
 
 See also: [Nitrogen fixation in legumes](../../../../../../../../../content/text/documents/articles/notes/2026/04/02/2026-04-02-nitrogen-fixation.md), [Mycorrhizal symbiosis](../../../../../../../../mycology-services-section/content/text/glossary/terms/mycorrhiza.md), [Three Sisters polyculture](./three-sisters-polyculture.md), [Guild planting and companion planting](../../../../../../../../../../../../philosophy-services-section/services/logic-services-section/content/text/documents/articles/notes/2026/04/02/2026-04-02-guild-planting-and-companion-planting.md)
-
-## Earlier material
-
-See also: [Nitrogen fixation in legumes](../../../../../../../../../content/text/documents/articles/notes/2026/04/02/2026-04-02-nitrogen-fixation.md), [Mycorrhizal symbiosis](../../../../../../../../mycology-services-section/content/text/glossary/terms/mycorrhiza.md), [Three Sisters polyculture](three-sisters-polyculture.md), [Guild planting and companion planting](../../../../../../../../../../../../philosophy-services-section/services/logic-services-section/content/text/documents/articles/notes/2026/04/02/2026-04-02-guild-planting-and-companion-planting.md)

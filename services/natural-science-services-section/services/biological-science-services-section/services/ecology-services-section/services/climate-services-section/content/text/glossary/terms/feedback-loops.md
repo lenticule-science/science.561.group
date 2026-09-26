@@ -21,9 +21,3 @@ These feedbacks interact. Permafrost thaw releases methane, which intensifies wa
 - [Greenhouse effect](./greenhouse-effect.md)
 - [Tipping points](./tipping-points.md)
 - [Radiative forcing](./radiative-forcing.md)
-
-## Earlier material
-
-- [Greenhouse effect](/ecology/disciplines/climate/terms/greenhouse-effect.md)
-- [Tipping points](tipping-points.md)
-- [Radiative forcing](radiative-forcing.md)

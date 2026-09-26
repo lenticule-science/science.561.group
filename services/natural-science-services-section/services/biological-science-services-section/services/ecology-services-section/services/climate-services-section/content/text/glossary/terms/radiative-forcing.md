@@ -19,9 +19,3 @@ Radiative forcing translates directly into temperature change through climate se
 - [Greenhouse effect](./greenhouse-effect.md)
 - [Feedback loops](./feedback-loops.md)
 - [Tipping points](./tipping-points.md)
-
-## Earlier material
-
-- [Greenhouse effect](/ecology/disciplines/climate/terms/greenhouse-effect.md)
-- [Feedback loops](feedback-loops.md)
-- [Tipping points](tipping-points.md)

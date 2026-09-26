@@ -37,7 +37,3 @@ Use this sequence when evaluating any Free Open-Access Medicine (FOAM) post, thr
 - Advice that conflicts with local protocol without explanation.
 
 See [How to evaluate Free Open-Access Medicine (FOAM) quality](../../../glossary/topics/how-to-evaluate-foam-quality.md) for an expanded checklist.
-
-## Earlier material
-
-See [How to evaluate Free Open-Access Medicine (FOAM) quality](../../../glossary/topics/how-to-evaluate-foam-quality.md) for an expanded checklist.

@@ -37,7 +37,3 @@ Trauma history is a significant factor in [chronic pain](../../../../../pain-ser
 - [Somatic Experiencing](../concepts/somatics/somatic-experiencing.md) — resolving trauma through the autonomic nervous system
 - [The Biopsychosocial Model of Pain](../../../../../pain-services-section/content/text/documents/articles/notes/biopsychosocial-model.md) — trauma as a factor in chronic pain
 - [Disability Justice](../../../../../../content/text/glossary/terms/disability-justice.md) — structural conditions that produce and compound trauma
-
-## Earlier material
-
-Trauma history is a significant factor in [chronic pain](../../../../../pain-services-section/content/text/documents/articles/notes/biopsychosocial-model.md): ACEs alter stress-axis regulation, immune function, and pain processing, contributing to conditions the biomedical model cannot explain through tissue damage alone.

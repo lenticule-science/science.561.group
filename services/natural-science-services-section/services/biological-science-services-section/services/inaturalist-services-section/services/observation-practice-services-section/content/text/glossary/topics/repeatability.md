@@ -81,8 +81,3 @@ If observations are opportunistic and inconsistent, the data cannot distinguish 
 
 - Observer bias
 - Spatial clumping
-
-## Earlier material
-
-- [Observer bias](../../../../../../content/text/glossary/topics/observer-bias.md)
-- [Spatial clumping](../../../../../../content/text/glossary/topics/spatial-clumping.md)

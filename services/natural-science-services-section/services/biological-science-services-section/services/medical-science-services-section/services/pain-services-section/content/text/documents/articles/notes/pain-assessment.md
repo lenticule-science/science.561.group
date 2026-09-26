@@ -90,8 +90,3 @@ Most chronic pain involves more than one mechanism. A patient with chronic low b
 How pain is assessed affects pain itself. A clinician who listens carefully, takes the report seriously, explains the mechanisms, and communicates a plan activates the patient's sense of being understood — which, through descending modulation and therapeutic alliance effects, can itself reduce pain. A clinician who rushes through the assessment, expresses skepticism, or attributes pain to psychological causes without explanation produces the opposite effect: threat perception increases, descending modulation shifts toward facilitation, and pain amplifies.
 
 The assessment is the first intervention.
-
-## Earlier material
-
-- **What makes it worse?** Movement-related aggravation suggests mechanical or inflammatory components. Stress-related aggravation suggests descending facilitation. Touch-related aggravation ([allodynia](../../../glossary/terms/allodynia.md)) suggests central sensitization.
-- **What helps?** Rest, heat, ice, medication, distraction, movement, social support — each relieving factor provides mechanistic information.

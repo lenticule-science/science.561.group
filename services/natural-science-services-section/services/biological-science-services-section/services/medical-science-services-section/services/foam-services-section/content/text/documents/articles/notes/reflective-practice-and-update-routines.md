@@ -34,7 +34,3 @@ Free Open-Access Medicine (FOAM) value compounds when you maintain a disciplined
 - Convert durable insights into checklists or teaching points.
 
 Use [the safe workflow text](../../../glossary/topics/building-a-safe-foam-learning-workflow.md) as your operating template.
-
-## Earlier material
-
-Use [the safe workflow text](../../../glossary/topics/building-a-safe-foam-learning-workflow.md) as your operating template.

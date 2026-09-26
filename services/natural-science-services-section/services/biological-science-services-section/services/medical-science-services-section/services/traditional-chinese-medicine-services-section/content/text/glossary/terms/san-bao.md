@@ -102,7 +102,3 @@ The diagnostic value is in identifying which layer is compromised, not in assert
 - [Traditional Chinese Medicine](traditional-chinese-medicine.md) — the medical tradition that uses this framework
 - [Single-loop and double-loop learning](../../../../../../../../../information-science-services-section/services/cybernetics-services-section/content/text/glossary/terms/single-loop-double-loop-learning.md) — the Western vocabulary closest to the Qi/Shen distinction
 - [Second-order cybernetics](../../../../../../../../../../../information-science-services-section/services/cybernetics-services-section/content/text/glossary/terms/second-order-cybernetics.md) — reflexive observation as a capacity distinct from first-order operation
-
-## Earlier material
-
-The San Bao (三寶), the Three Treasures, are [Jing](jing.md) (essence), [Qi](qi.md) (vital energy), and [Shen](shen.md) (spirit). Together they form a diagnostic framework for describing layers of vitality in a living system.

@@ -107,13 +107,3 @@ This is the body's own relational process: structure, sensation, and motor respo
 - Ingber, D.E. (1998).
   "The architecture of life."
   *Scientific American*, 278(1), 48–57 [@ingber1998].
-
-## Earlier material
-
-- [Proprioception](proprioception.md) — the sensory system that monitors the tensegrity structure's state
-- [Somatic Awareness](somatic-awareness.md) — the trained capacity to attend to tensegrity dynamics from within
-- [Pandiculation](pandiculation.md) — a neuromuscular mechanism for rebalancing the tension network
-
-- [Proprioception](proprioception.md) — the sensory system that monitors the tensegrity structure's state
-- [Somatic Awareness](somatic-awareness.md) — the trained capacity to attend to tensegrity dynamics from within
-- [Pandiculation](pandiculation.md) — a neuromuscular mechanism for rebalancing the tension network

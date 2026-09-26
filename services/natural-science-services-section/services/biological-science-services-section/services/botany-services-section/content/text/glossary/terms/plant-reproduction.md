@@ -40,7 +40,3 @@ Plants alternate between a diploid sporophyte generation (the visible plant) and
 ## Why this matters
 
 Understanding reproduction explains seed saving, plant breeding, and why pollinators matter for agriculture and ecosystems.
-
-## Earlier material
-
-[Flowers](flower.md) are the reproductive organs of angiosperms. A flower contains male parts (stamens producing pollen) and/or female parts (carpels containing ovules).

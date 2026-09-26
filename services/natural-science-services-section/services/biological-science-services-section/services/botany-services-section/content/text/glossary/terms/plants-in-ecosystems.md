@@ -41,9 +41,3 @@ Plants modify their environments — stabilizing soil with roots, changing soil 
 ## Why this matters
 
 Understanding plants in their ecological context explains why biodiversity matters, how forests function, and how agriculture can work with rather than against ecological processes.
-
-## Earlier material
-
-Over 90% of plant species form symbiotic associations with fungi. The fungus extends the plant's root system, enhancing nutrient uptake (especially phosphorus). The plant provides the fungus with sugars. These networks connect multiple plants and even different species. See [mycorrhiza](../../../../../mycology-services-section/content/text/glossary/terms/mycorrhiza.md) and [mycelial networks](../../../../../mycology-services-section/content/text/glossary/terms/mycelial-networks.md).
-
-Plants are not passive. They produce chemical defenses against herbivores, emit volatile compounds that attract predators of their attackers, and communicate through mycorrhizal networks. See [plant signaling](plant-signaling.md).

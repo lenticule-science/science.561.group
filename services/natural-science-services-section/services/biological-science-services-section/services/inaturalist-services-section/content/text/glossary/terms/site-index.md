@@ -56,11 +56,3 @@ Use this index to navigate by practice area and data outcome rather than by sect
 
 - Practitioner model
 - [Glossary](./glossary.md)
-
-## Earlier material
-
-- [Practitioner model](practitioner-model.md)
-- [Glossary](../topics/glossary.md)
-
-- [Practitioner model](practitioner-model.md)
-- [Glossary](../../documents/articles/notes/glossary.md)

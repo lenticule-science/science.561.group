@@ -55,7 +55,3 @@ Neurons do not operate alone. Glial cells — which outnumber neurons roughly 1:
 - [Action Potential](./action-potential.md) — the electrical signal neurons generate
 - [Synapse](./synapse.md) — where neurons communicate with their targets
 - [Receptor](./receptor.md) — proteins that neurons (and other cells) use to detect signals
-
-## Earlier material
-
-**Cell body (soma)** — contains the nucleus and most of the cell's metabolic machinery. The soma integrates incoming signals from other neurons and determines whether to fire an [action potential](action-potential.md).

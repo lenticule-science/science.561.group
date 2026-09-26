@@ -76,11 +76,3 @@ Many drugs affect blood pressure through these mechanisms. Beta-blockers reduce 
 ## Cardiovascular system in TCM
 
 In [traditional Chinese medicine](../../../../../../traditional-chinese-medicine-services-section/content/text/glossary/terms/traditional-chinese-medicine.md), the Heart (心) is a [Zang-Fu](../../../../../../traditional-chinese-medicine-services-section/content/text/glossary/terms/zang-fu.md) organ system that governs blood circulation but also houses [Shen](../../../../../../traditional-chinese-medicine-services-section/content/text/glossary/terms/shen.md) — awareness, coherence, and relational presence. The biomedical heart is a pump. The TCM Heart is both a pump and the seat of reflective consciousness. This dual function is not as foreign to biomedicine as it might seem — the relationship between cardiovascular health and cognitive function, between heart rate variability and emotional regulation, between cardiac events and psychological outcomes is well-documented, even if Western medicine has no single concept that unifies them.
-
-## Earlier material
-
-The heart is a muscular [organ](../../../glossary/terms/organ.md) roughly the size of a fist, located in the center of the chest. It has four chambers:
-
-Blood is a fluid [tissue](../../../glossary/terms/tissue.md) composed of:
-
-Blood is a fluid [tissue](../../../glossary/terms/tissue.md) composed of:

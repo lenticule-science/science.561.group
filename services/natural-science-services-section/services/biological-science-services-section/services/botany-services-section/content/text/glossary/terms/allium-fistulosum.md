@@ -37,8 +37,3 @@ Japanese agricultural and horticultural traditions preserve dozens of *A. fistul
 
 - [Allium cepa (common bulbing onion)](../../../../../../content/text/documents/articles/notes/2026/04/02/2026-04-02-allium-cepa.md)
 - [Japanese bunching onion cultivation](../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/glossary/terms/bunching-onion-cultivation.md)
-
-## Earlier material
-
-- [Allium cepa (common bulbing onion)](../../../../../../content/text/documents/articles/notes/2026/04/02/2026-04-02-allium-cepa.md)
-- [Japanese bunching onion cultivation](../../../../../../../../../domestic-science-services-section/services/domestic-production-services-section/services/gardening-services-section/content/glossary/terms/bunching-onion-cultivation.md)

@@ -66,9 +66,3 @@ Social factors affect pain through the same neurophysiological mechanisms — th
 The biopsychosocial model is not three separate assessments added together. It is a single integrated framework in which biological, psychological, and social factors interact continuously, each modifying the others through shared neural, endocrine, and immune pathways. Treating any one domain in isolation — prescribing medication without addressing catastrophizing, or providing cognitive therapy without addressing economic precarity — misses the interacting mechanisms that sustain chronic pain.
 
 This integration aligns with [disability justice](../../../../../../../content/text/glossary/terms/disability-justice.md)'s insistence that individual-level interventions without structural change are insufficient. A chronic pain patient whose pain is driven partly by poverty, discrimination, and social isolation will not be adequately treated by analgesics alone — not because the analgesics don't work on the biological component, but because the social and psychological components continue to drive the sensitization that the medication is trying to suppress.
-
-## Earlier material
-
-The model fails for [chronic pain](../../../glossary/terms/chronic-pain.md). Consider:
-
-The model fails for [chronic pain](../../../glossary/terms/chronic-pain.md). Consider:

@@ -39,11 +39,3 @@ Two transport systems run through the plant body. [Xylem](./xylem.md) carries wa
 ## Why this matters
 
 Understanding plant anatomy is prerequisite to understanding how plants grow, reproduce, and interact with their environment.
-
-## Earlier material
-
-Plants have three primary organs — roots, stems, and leaves. [Roots](root.md) anchor the plant and absorb water and minerals from the soil. Stems provide structural support and house the vascular system. [Leaves](leaf.md) are the primary sites of photosynthesis.
-
-Two transport systems run through the plant body. [Xylem](xylem.md) carries water and minerals upward from roots to leaves. [Phloem](phloem.md) carries sugars and signaling molecules from leaves to the rest of the plant. Together they connect every part of the plant into a coordinated whole.
-
-[Stomata](stomata.md) are pores on leaf surfaces that regulate gas exchange — admitting CO2 for photosynthesis while managing water loss.

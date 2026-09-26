@@ -40,11 +40,3 @@ Photosynthesis captures light energy to build sugars from CO2 and water. Cellula
 ## Why this matters
 
 The cell is where biology's abstract principles become concrete chemistry. Understanding cells and metabolism is the foundation for understanding how organisms work.
-
-## Earlier material
-
-All organisms are composed of [cells](../../../glossary/terms/cell.md); all cells come from preexisting cells.
-
-DNA in the nucleus (or nucleoid) encodes the organism's genetic information ([DNA](../../../../../services/genetics-services-section/content/text/glossary/terms/dna.md)). Ribosomes translate genetic information into proteins. The cell membrane controls what enters and exits. Mitochondria generate energy through cellular respiration. Chloroplasts (in plants) capture light energy through [photosynthesis](../research/2026/07/31/lenticule-import/_archive/atom/scripts/bonding/content/molecule/scripts/assembling/content/cell/_archive/cell-biology/theories/botany/terms/photosynthesis.md).
-
-The network of [enzyme](../../../glossary/terms/enzyme.md)-catalyzed chemical reactions that sustain a cell. [Metabolism](../../../../../services/physiology-services-section/content/text/glossary/terms/metabolism.md) has two broad categories: catabolism breaks down molecules to release energy; anabolism uses energy to build complex molecules. ATP (adenosine triphosphate) is the cell's primary energy currency.

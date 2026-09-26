@@ -60,8 +60,3 @@ Missing or misleading evidence can lock in incorrect IDs and propagate to shared
 
 - Data quality
 - [Glossary](ecology/topics/citizen-science/inaturalist/terms/glossary.md)
-
-## Earlier material
-
-- [Data quality](../../../../../../content/text/glossary/terms/data-quality.md)
-- [Glossary](../../documents/glossary.md)

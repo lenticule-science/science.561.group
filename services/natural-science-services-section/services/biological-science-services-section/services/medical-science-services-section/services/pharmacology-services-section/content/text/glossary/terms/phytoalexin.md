@@ -36,9 +36,3 @@ The phytoalexin concept has a practical implication for herbalism and pharmacogn
 - [Resveratrol](resveratrol.md) — the most studied phytoalexin
 - [Polyphenol](polyphenol.md) — the chemical class most phytoalexins belong to
 - [Japanese Knotweed](../../../../../../../botany-services-section/content/text/glossary/terms/japanese-knotweed.md) — a major phytoalexin producer
-
-## Earlier material
-
-- [Resveratrol](resveratrol.md) — the most studied phytoalexin
-- [Polyphenol](polyphenol.md) — the chemical class most phytoalexins belong to
-- [Japanese Knotweed](../../../../../../../botany-services-section/content/text/glossary/terms/japanese-knotweed.md) — a major phytoalexin producer

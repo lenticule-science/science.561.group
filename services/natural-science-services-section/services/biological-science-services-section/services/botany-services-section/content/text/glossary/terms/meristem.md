@@ -26,7 +26,3 @@ The meristem also illustrates a deep point about biological [parts and wholes](.
 - [Phloem](./phloem.md) — the transport tissue carrying hormonal signals that coordinate meristematic activity
 - [Tropism](./tropism.md) — directional growth responses mediated through meristems
 - [Phenotype](../../../../../genetics-services-section/content/text/glossary/terms/phenotype.md) — the observable forms that meristematic activity produces
-
-## Earlier material
-
-The meristem also illustrates a deep point about biological [parts and wholes](../../../../../../../../../philosophy-services-section/content/text/glossary/terms/mereology.md). Each meristem is a semi-autonomous unit — it can, under the right conditions, regenerate an entire plant. Yet in the intact organism, meristems are coordinated into a larger developmental pattern through long-range hormonal signaling, particularly by auxin flowing through the [phloem](phloem.md). The whole plant is thus a federation of generative centers, each locally responsive yet systemically integrated.

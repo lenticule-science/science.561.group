@@ -78,7 +78,3 @@ This capacity is what the jiangshi lacks, and it is what no amount of operationa
 - [San Bao](./san-bao.md) — the Three Treasures as a diagnostic system
 - [Second-order cybernetics](../../../../../../../../../../../information-science-services-section/services/cybernetics-services-section/content/text/glossary/terms/second-order-cybernetics.md) — the Western vocabulary closest to Shen
 - [Single-loop and double-loop learning](../../../../../../../../../information-science-services-section/services/cybernetics-services-section/content/text/glossary/terms/single-loop-double-loop-learning.md) — reflexive capacity at the organizational level
-
-## Earlier material
-
-This makes Shen a diagnostic category, not a metaphysical claim. The practitioner is not asserting the existence of a soul. They are noting whether the patient's engagement with the world is responsive and coherent or mechanical and diminished. A person in deep coma has [Jing](jing.md) (their body persists) and residual [Qi](qi.md) (metabolic processes continue), but their Shen has withdrawn. The body operates at a substrate level; it does not respond to its situation as a situation.

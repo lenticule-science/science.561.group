@@ -49,7 +49,3 @@ A trait that has been shaped by natural selection ([adaptation](../domains/adapt
 ## Why this matters
 
 Genetics and evolution explain both the unity and the diversity of life — why all organisms share basic molecular machinery, and why they differ in form and function.
-
-## Earlier material
-
-DNA is a double helix of nucleotide bases (A, T, G, C) ([DNA](../../../../../services/genetics-services-section/content/text/glossary/terms/dna.md)). The sequence of bases encodes genetic information. DNA replication copies this information before cell division.

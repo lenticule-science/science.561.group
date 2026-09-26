@@ -136,17 +136,3 @@ This is harm reduction applied to trauma treatment: reduce the immediate physiol
 - Porges, S.W. (2011).
   *The Polyvagal Theory.*
   Norton [@porges2011].
-
-## Earlier material
-
-- [Somatic Awareness](somatic-awareness.md) — the foundational capacity that SE trains and depends on
-- [Interoception](interoception.md) — the sensory channel through which SE tracks nervous system state
-- [Pandiculation](pandiculation.md) — a related but distinct mechanism for releasing held muscular patterns
-- [Harm reduction](../../../../../public-health-services-section/content/text/glossary/terms/harm-reduction.md) — the principle of meeting people where they are, which SE applies to trauma treatment
-- [Disability justice](../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/medicine/_archive/from-discourse-domain-locus-medicine/terms/disability-justice.md) — framework for understanding how trauma and embodiment intersect with structural conditions
-
-- [Somatic Awareness](somatic-awareness.md) — the foundational capacity that SE trains and depends on
-- [Interoception](interoception.md) — the sensory channel through which SE tracks nervous system state
-- [Pandiculation](pandiculation.md) — a related but distinct mechanism for releasing held muscular patterns
-- [Harm reduction](../../../../../public-health-services-section/content/text/glossary/terms/harm-reduction.md) — the principle of meeting people where they are, which SE applies to trauma treatment
-- [Disability justice](../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/medicine/archive/terms/disability-justice.md) — framework for understanding how trauma and embodiment intersect with structural conditions

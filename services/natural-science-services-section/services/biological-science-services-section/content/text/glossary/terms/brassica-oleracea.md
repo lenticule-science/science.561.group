@@ -53,9 +53,3 @@ Wild *Brassica oleracea* populations occupy cliff edges and maritime habitats in
 - [Brassicaceae](../../../../services/botany-services-section/content/text/glossary/terms/brassicaceae.md)
 - [Glucosinolates](../chemistry/terms/glucosinolates.md)
 - [Cabbage cultivation](brassica-oleracea.md)
-
-## Earlier material
-
-- [Brassicaceae](../../../../services/botany-services-section/content/text/glossary/terms/brassicaceae.md)
-- [Glucosinolates](../../../../services/botany-services-section/content/text/glossary/chemistry/terms/glucosinolates.md)
-- [Cabbage cultivation](../../../../services/botany-services-section/content/text/glossary/terms/brassica-oleracea.md)

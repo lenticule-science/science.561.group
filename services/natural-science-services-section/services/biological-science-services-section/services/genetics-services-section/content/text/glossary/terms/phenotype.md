@@ -25,9 +25,3 @@ For this vault's research, the phenotype illustrates the relational constitution
 - [Homeostasis](./homeostasis.md) — the regulatory processes that maintain phenotypic stability
 - [Morphogenesis](../../../../../../content/text/glossary/concepts/morphogenesis.md) — the developmental process that generates phenotypic form
 - [Niche Construction](../../../../../../content/text/glossary/terms/niche-construction.md) — how organisms shape the environments that shape their phenotypes
-
-## Earlier material
-
-- [Homeostasis](../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/_archive/atom/scripts/bonding/content/molecule/scripts/assembling/content/cell/scripts/integrating/content/organism/scripts/inheriting/content/genetics/scripts/encoding/content/gene/scripts/expressing/content/phenotype/homeostasis.md) — the regulatory processes that maintain phenotypic stability
-- [Morphogenesis](../../../../../../content/text/glossary/concepts/morphogenesis.md) — the developmental process that generates phenotypic form
-- [Niche Construction](../../../../../../content/text/glossary/terms/niche-construction.md) — how organisms shape the environments that shape their phenotypes

@@ -65,9 +65,3 @@ Before fungi evolved efficient lignin-degrading enzymes, dead trees accumulated 
 ## Why this matters
 
 Understanding how fungi feed explains why they occupy such critical ecological positions. Every term in this lesson — extracellular digestion, cellulose, lignin, white rot, brown rot — appears throughout the mycology module because fungal nutrition is not a peripheral detail. It is the chemical basis of everything fungi do: decomposition, symbiosis, soil formation, and the nutrient cycling that sustains terrestrial life.
-
-## Earlier material
-
-Fungi feed by [extracellular digestion](extracellular-digestion.md): they secrete digestive [enzymes](../../../../../../content/text/glossary/terms/enzyme.md) into the surrounding [substrate](substrate.md), break down complex molecules outside their bodies, and absorb the resulting small molecules through their [hyphal](hyphae.md) walls. The fungus eats by growing through its food. Its digestive field extends beyond its body into the material around it.
-
-[Mycorrhizal](mycorrhiza.md) fungi obtain carbon not from dead matter but from living plant partners, in exchange for delivering mineral nutrients. They still use extracellular enzymes — proteases and phosphatases — to access organic nitrogen and phosphorus from soil, but their primary carbon source is plant-derived sugars and lipids transferred through [arbuscules](arbuscule.md) or the [Hartig net](hartig-net.md).

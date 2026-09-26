@@ -23,9 +23,3 @@ See [Combinatorial Scent Mereology](../../documents/articles/notes/combinatorial
 ## Related concepts
 
 - [Combinatorial Scent Mereology](../../documents/articles/notes/combinatorial-scent-mereology.md) — the full framework treating odor percepts as [mereological](../../../../../../../../../philosophy-services-section/content/text/glossary/terms/mereology.md) composites within this hyperbolic space
-
-## Earlier material
-
-See [Combinatorial Scent Mereology](../../../../../medical-science-services-section/content/biology/concepts/combinatorial-scent-mereology.md) in the [biology](../../../../../medical-science-services-section/content/biology/index.md) module for the full mathematical treatment.
-
-- [Combinatorial Scent Mereology](../../../../../medical-science-services-section/content/biology/concepts/combinatorial-scent-mereology.md) — the full framework treating odor percepts as [mereological](../../../../../../../../../philosophy-services-section/content/text/glossary/terms/mereology.md) composites within this hyperbolic space

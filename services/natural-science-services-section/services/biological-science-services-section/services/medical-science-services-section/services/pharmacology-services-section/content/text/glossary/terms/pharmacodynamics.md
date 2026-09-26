@@ -56,7 +56,3 @@ Tolerance and sensitization can occur simultaneously for different effects of th
 - [Pharmacokinetics](./pharmacokinetics.md) — what the body does to the drug
 - [Therapeutic Index](./therapeutic-index.md) — the margin between therapeutic and toxic doses
 - [Drug Interaction](./drug-interaction.md) — how drugs modify each other's pharmacodynamics
-
-## Earlier material
-
-**Pharmacodynamics** is the study of what a drug does to the body — the mechanisms through which a drug produces its effects. Where [pharmacokinetics](pharmacokinetics.md) asks how a drug reaches its target, pharmacodynamics asks what happens when it gets there.

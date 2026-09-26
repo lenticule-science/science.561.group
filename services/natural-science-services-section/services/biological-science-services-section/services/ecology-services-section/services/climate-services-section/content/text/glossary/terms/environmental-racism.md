@@ -20,9 +20,3 @@ The concept connects [settler colonialism](/sociology/terms/settler-colonialism.
 - [Climate justice](./climate-justice.md)
 - [Extractivism](./extractivism.md)
 - [Settler colonialism](/sociology/terms/settler-colonialism.md)
-
-## Earlier material
-
-- [Climate justice](climate-justice.md)
-- [Extractivism](extractivism.md)
-- [Settler colonialism](/sociology/terms/settler-colonialism.md)

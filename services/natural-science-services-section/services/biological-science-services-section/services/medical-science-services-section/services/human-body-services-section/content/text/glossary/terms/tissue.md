@@ -57,7 +57,3 @@ When tissue is damaged (by trauma, infection, ischemia, or chemical injury), the
 - [Cell](../../../../../../../../content/text/glossary/terms/cell.md) — the unit of which tissues are composed
 - [Organ](./organ.md) — the structures that tissues compose
 - [Inflammation](../../../../../../../../content/text/glossary/terms/inflammation.md) — the tissue response to damage
-
-## Earlier material
-
-A **tissue** is a group of similar [cells](../../../../../../../../content/text/glossary/terms/cell.md) organized to perform a shared function. Tissues are the level of organization between individual cells and [organs](organ.md) — cells assemble into tissues, tissues assemble into organs, organs assemble into organ systems.

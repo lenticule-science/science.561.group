@@ -128,7 +128,3 @@ Somatic awareness makes these discrepancies articulable.
 - Porges, S.W. (2011).
   *The Polyvagal Theory.*
   Norton [@porges2011].
-
-## Earlier material
-
-These patterns compound over time. A person who has accumulated green-light, red-light, and trauma reflexes doesn't feel tense — they feel normal. The tension has become invisible to their own nervous system. Somatic awareness practices make it visible again, and [pandiculation](pandiculation.md) provides the mechanism for releasing it.
