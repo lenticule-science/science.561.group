@@ -38,7 +38,7 @@ The philosophical significance of constructive proof extends beyond technical lo
 
 ## Related terms
 
-- [Witness](./witness.md) — the object that a constructive existence proof must produce
+- [Witness](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/witness.md) — the object that a constructive existence proof must produce
 - [Decidability](./decidability.md) — when a proposition admits constructive excluded middle
 - [Mathematical Constructivism](mathematical-constructivism.md) — the philosophical tradition that demands constructive proof
 - [Law of Excluded Middle](law-of-excluded-middle.md) — the classical principle that constructive proof cannot generally validate

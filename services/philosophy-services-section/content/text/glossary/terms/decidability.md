@@ -23,7 +23,7 @@ Decidability is not an all-or-nothing property of a logic but a property of indi
 ## Related terms
 
 - [Constructive proof](./constructive-proof.md) — the standard of evidence that decidability requires
-- [Witness](./witness.md) — constructive decidability provides a witness for which disjunct holds
+- [Witness](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/witness.md) — constructive decidability provides a witness for which disjunct holds
 - [Law of Excluded Middle](law-of-excluded-middle.md) — holds for decidable propositions, fails for undecidable ones
 - [Bivalence](bivalence.md) — the classical principle that treats all propositions as decidable in advance
 

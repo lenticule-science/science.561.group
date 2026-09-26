@@ -40,7 +40,7 @@ contexts gives `Nothing`.  Their coexistence is the minimum data needed to talk
 about absence/presence. ∎
 
 **Corollary (Witness data).**
-[Witnessing](../../../../../../glossary/terms/witness.md) composes `NotRelate` with `Relate`, so a single
+[Witnessing](../../../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/witness.md) composes `NotRelate` with `Relate`, so a single
 act simultaneously testifies to affirmation and denial.  This provides the
 “two-sided” witness datum used by every later definition.
 

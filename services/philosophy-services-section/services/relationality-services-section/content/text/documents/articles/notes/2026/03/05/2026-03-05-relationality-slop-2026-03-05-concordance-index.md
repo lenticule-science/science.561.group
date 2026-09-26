@@ -46,7 +46,7 @@ These documents articulate the framework — not just what concepts exist but ho
 - [relationlessness.md](../../../../../../triage/relationality-2/ai-generated-relationality/relationality-slop-2026-03-05/relationlessness.md) — the void / Bottom
 - [reflex.md](../../../../../../glossary/terms/relationlessness.md) — the primitive act (distinct from its product)
 - [relation.md](../../../../../../glossary/terms/relation.md) — the full field / Top (complement of Relationlessness)
-- [witness.md](../../../../../../glossary/terms/witness.md) — the first observation (draft 9's opening sequence)
+- [witness.md](../../../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/witness.md) — the first observation (draft 9's opening sequence)
 - [minimal-cohesion.md](../../../../../../glossary/terms/minimal-cohesion.md) — the elementary coherent unit (HIT in Cubical Agda, draft 7)
 
 ### Early Movement I (phenomenological layer)

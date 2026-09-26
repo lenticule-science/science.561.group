@@ -4,4 +4,4 @@ title: apically articulating
 type: articulating
 ---
 
-***Apically articulating*** is [articulating](../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/articulating.md) done *apically*, or with the tip of the tongue.
+***Apically articulating*** is [articulating](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/articulating.md) done *apically*, or with the tip of the tongue.
