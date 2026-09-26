@@ -8,7 +8,7 @@ inputs:
   alias: predicate
 outputs:
 - id: recognition
-  alias: negation
+  alias: pseudocomplement
 transformation:
 - let
   - neg_predicate
@@ -35,6 +35,6 @@ whose meet with the input yields bottom, preserving support/window/scope via
 structural sharing.
 
 ## Proof
-- Derived from: negation act on predicates.
-- Shows that: recognition negation can be expressed by negating the predicate
+- Derived from: the Negate act (pseudocomplement) on predicates.
+- Shows that: the recognition pseudocomplement can be expressed by taking the pseudocomplement of the predicate
   while preserving support/window/scope and flow/nucleus data.

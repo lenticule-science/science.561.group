@@ -5,7 +5,7 @@ date-created: 2025-08-31
 visibility: public
 ---
 
-***Secular*** is the [condition](../../../../services/relationality-services-section/services/agency-services-section/content/text/glossary/terms/condition.md) of being [not](negation.md) [religious](religious.md).
+***Secular*** is the [condition](../../../../services/relationality-services-section/services/agency-services-section/content/text/glossary/terms/condition.md) of being [not](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/negation.md) [religious](religious.md).
 
 # Relational Mapping
 
@@ -19,7 +19,7 @@ Secular is true when religious is not true.
 
 | Condition                                            | Value                                          |
 |------------------------------------------------------|------------------------------------------------|
-| [religious](religious.md) | [not](negation.md) |
+| [religious](religious.md) | [not](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/negation.md) |
 
 # Formalization
 

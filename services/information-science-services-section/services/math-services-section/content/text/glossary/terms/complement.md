@@ -1,7 +1,7 @@
 ---
 
-description: "An element ¬a such that a ∧ ¬a = ⊥ and a ∨ ¬a = ⊤. Every element of a Boolean algebra has a complement; in a Heyting algebra, not every element does."
-aliases: [ complement, complements, complementation, complemented, Complement ]
+description: "An element ¬a such that a ∧ ¬a = ⊥ and a ∨ ¬a = ⊤. Every element of a Boolean algebra has a complement; in a Heyting algebra only the pseudocomplement ¬a = a → ⊥ exists in general. Neither is the framework negation, which is the evidence swap ~."
+aliases: [ complement, complements, complementation, complemented, Complement, pseudocomplement, pseudo-complement, Heyting complement, intuitionistic negation, weak negation, negate (act) ]
 applies-to: [bounded-lattice, boolean-algebra]
 contrasts-with: negation
 date-created: 2026-03-31
@@ -16,6 +16,16 @@ The meet gives non-contradiction: $a$ and its complement have nothing in common.
 
 In a [Boolean algebra](./boolean-algebra.md), every element has a unique complement, and $\neg\neg a = a$. In a [Heyting algebra](./heyting-algebra.md), the pseudo-complement $\neg a = a \to \bot$ exists but may not satisfy excluded middle: $a \vee \neg a = \top$ can fail. This is the algebraic gap between classical and constructive logic.
 
-Complementation is different from negation on a [bilattice](./bilattice.md). Negation $\mathord{\sim}$ on the four-valued bilattice swaps $t \leftrightarrow f$ and fixes $\bot, \top$. It is an [involution](./involution.md) ($\mathord{\sim}\mathord{\sim} a = a$) but it is not a complement: $t \wedge_t \mathord{\sim} t = t \wedge_t f = f \neq \bot$. Bilattice negation reverses truth; it does not produce the lattice-theoretic complement.
+Complementation is different from negation on a [bilattice](./bilattice.md). Negation $\mathord{\sim}$ on the four-valued bilattice swaps $t \leftrightarrow f$ and fixes $\bot, \top$. It is an [involution](./involution.md) ($\mathord{\sim}\mathord{\sim} a = a$) but it is not a complement in the truth lattice, whose bottom is $f$ and top is $t$: $\bot \wedge_t \mathord{\sim}\bot = \bot \neq f$ and $\bot \vee_t \mathord{\sim}\bot = \bot \neq t$. The truth-lattice complement is $\mathord{\sim}$ composed with [conflation](./conflation.md), which also exchanges $\bot$ and $\top$. Bilattice negation reverses truth; it does not produce the lattice-theoretic complement.
 
-Relationality's *negate* is the Heyting pseudocomplement $\neg a = a \to \bot$, the strongest element incompatible with $a$: what a distinction leaves unmarked. It satisfies $a \leq \neg\neg a$ and not the converse, so it is not an involution. It is not the framework's [negation](./negation.md), which is the swap of evidence for and evidence against.
+## The pseudocomplement is not negation
+
+The literature calls the pseudocomplement $\neg a = a \to \bot$ intuitionistic or weak negation. In this knowledge base it is always called the **pseudocomplement**, and "negation" is kept for the [evidence swap](./negation.md) $\sim$ (Nelson's strong negation). The pseudocomplement is the strongest element incompatible with $a$: what a distinction leaves unmarked. It satisfies $a \leq \neg\neg a$ and not the converse, so it is not an involution, and $\neg\neg$ is a [nucleus](./nucleus.md), the double-negation nucleus.
+
+Older notes give the pseudocomplement other names:
+
+- The acts derivation calls it *Negate* (act 131, `Negate = ImplyRecognition GroundRecognition`: "not a" encoded as "a implies Ground Recognition"). *Negate Recognition* is the same operation on the recognition lattice.
+- Movement I calls it "negation as orthogonality": the largest subobject disjoint from $a$.
+- The early philosophy glossary asked whether negation is "exclusion of true in the result of a predicate".
+
+Relationality's name for it is [unrelating](../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/glossary/terms/unrelating.md). On a twist product the pseudocomplement acts on the positive coordinate, through the implication $\langle a_+, a_- \rangle \to \langle b_+, b_- \rangle = \langle a_+ \to b_+,\ a_+ \wedge b_- \rangle$. The negative coordinate is carried by $\sim$.

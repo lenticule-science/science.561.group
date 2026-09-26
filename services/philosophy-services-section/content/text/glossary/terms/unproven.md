@@ -6,4 +6,4 @@ type: condition
 visibility: public
 ---
 
-For a [thing](thing.md) to be ***unproven*** is to be [not](negation.md) [proven](proven.md).
+For a [thing](thing.md) to be ***unproven*** is to be [not](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/negation.md) [proven](proven.md).

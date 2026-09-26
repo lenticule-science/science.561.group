@@ -103,7 +103,7 @@ Contemporary algorithmic-management deskilling is treated in the [platform-and-a
 
 :PROPERTIES:
 :ID:       dd04f88f-a63c-48f8-9021-dc0f1a9bf979
-:node-relations: (([negating](../../../../../philosophy-services-section/content/text/glossary/terms/negating.md) . [skilling](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/skilling.md)) ([cause](../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/cause.md) . [automation](../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/automation.md)))
+:node-relations: (([negating](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/negation.md) . [skilling](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/skilling.md)) ([cause](../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/cause.md) . [automation](../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/automation.md)))
 :END:
 #+title: deskilling
 #+date: [2025-09-27 Sat 10:21]

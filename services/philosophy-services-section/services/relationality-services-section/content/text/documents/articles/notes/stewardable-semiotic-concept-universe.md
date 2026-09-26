@@ -925,7 +925,7 @@ $$
 a\ominus b := a \wedge (b \Rightarrow \bot).
 $$
 
-This uses the Heyting pseudo-complement $b\Rightarrow\bot$ as a “negation” of $b$.
+This uses the Heyting pseudocomplement $b\Rightarrow\bot$ on $b$ (this is not the evidence-swap negation).
 
 **Lemma 17.1.**
 For all $a,b\in H$:

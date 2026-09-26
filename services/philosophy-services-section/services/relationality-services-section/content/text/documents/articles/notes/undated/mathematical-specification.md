@@ -133,7 +133,7 @@ Proof. By induction on n. Base n=0: S^0(x)=x ∈ R. Step: if S^n(x) ∈ R, then 
 
 
 - Iterative Persistence states that Persist_S(x) holds, so x eventually becomes S-stable.
-- Baseline Limit names the eventual result of the S-sequence when x converges to the ⊥-baseline; notation x↘ (defined only when baseline convergence holds). This limit is distinct from Relational Negation (Definition — Relational Negation) because ¬x := (x ⇒ ⊥) describes a relative implication rather than a limit along S.
+- Baseline Limit names the eventual result of the S-sequence when x converges to the ⊥-baseline; notation x↘ (defined only when baseline convergence holds). This limit is distinct from Relational Pseudocomplement (Definition — Relational Pseudocomplement) because ¬x := (x ⇒ ⊥) describes a relative implication rather than a limit along S.
 - Eventual Equivalence writes x ≡_S y when there exists an N such that beyond that stage the S-iterates of x and y are identical, capturing shared long-term behavior even if their early dynamics differ.
 
 ### Eventual Equivalence is an Equivalence Relation
@@ -233,9 +233,9 @@ Proof. Immediate from the definition of ⇒ as the greatest such c; the two ineq
 
 
 
-### Relational Negation
+### Relational Pseudocomplement
 
-***Relational Negation*** (`RelationalNegation`) takes any recognition α and forms the implication from α to ⊥. The resulting recognition, written ¬α, captures “anything whose coexistence with α forces contradiction.” Because this construction lives entirely inside the Recognition Structure, it does not assume classical double-negation collapse.
+***Relational Pseudocomplement*** (`RelationalPseudocomplement`) takes any recognition α and forms the implication from α to ⊥. The resulting recognition, written ¬α, captures “anything whose coexistence with α forces contradiction.” Because this construction lives entirely inside the Recognition Structure, it does not assume classical double-negation collapse.
 
 
 

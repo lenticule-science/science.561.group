@@ -1363,7 +1363,7 @@ CalculateSemantics = (ImplyRecognition RecognizeContext)
 Negate = (ImplyRecognition GroundRecognition)
 
 
-*Proof Sketch.*  The composition uses only previously earned recognitions to encode the negation expression “not a” as “a implies *Ground Recognition*,” so *Negate* follows.
+*Proof Sketch.*  The composition uses only previously earned recognitions to encode the pseudocomplement “not a” as “a implies *Ground Recognition*,” so *Negate* follows.
 ### Shaping Shape
 
 *Story.*  Flows and nuclei rely on internal shapes that preserve ordering.  *Imply Recognition* witnessing *Order Recognition* yields ***Shape Recognition*** (`ShapeRecognition`).

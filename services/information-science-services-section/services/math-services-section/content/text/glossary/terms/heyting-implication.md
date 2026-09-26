@@ -41,7 +41,7 @@ $$c \leq (a \to b) \quad \Longleftrightarrow \quad a \wedge c \leq b.$$
 
 *Proof sketch.* In a Boolean algebra, complementation gives $\neg a \vee b = \max\{c : a \wedge c \leq b\}$. In a non-Boolean Heyting algebra (e.g., $\mathcal{O}(\mathbb{R})$), choose $a$ with $\neg a \vee a \neq \top$ to exhibit strict inequality. $\square$
 
-**Proposition (Intuitionistic negation).** *Define $\neg a = a \to \bot$. Then:*
+**Proposition (Pseudocomplement).** *Define the [pseudocomplement](./complement.md) $\neg a = a \to \bot$ (intuitionistic negation in the literature; not the evidence-swap [negation](./negation.md)). Then:*
 1. *$a \wedge \neg a = \bot$.*
 2. *$a \leq \neg\neg a$.*
 3. *$\neg\neg\neg a = \neg a$.*

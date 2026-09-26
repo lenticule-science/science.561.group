@@ -221,13 +221,13 @@ axioms hold; we have a distributive lattice with \$\wedge, \vee\$ and
 bounds. At this stage it is a “pre-logic” because we have not yet
 introduced implication (that will come next). ∎
 
-**Lemma 3 (Negation and Orthogonality).** There is a notion of
-**negation** (or orthocomplement) in this lattice of recognitions.
+**Lemma 3 (Pseudocomplement and Orthogonality).** There is a
+**pseudocomplement** (here called the orthocomplement) in this lattice of recognitions.
 Define, for each subobject \$m \in \mathrm{Sub}(Y)\$, the
 **orthocomplement** \$\neg m\$ to be the largest subobject \$n \in
 \mathrm{Sub}(Y)\$ (if it exists) such that \$m \wedge n = \bot\$. Then
 one has: (i) \$m \perp n\$ if and only if \$n \le \neg m\$ (i.e. \$n\$
-is included in the negation of \$m\$), and (ii) double negation is
+is included in the pseudocomplement of \$m\$), and (ii) double negation is
 expansive: \$\neg\neg m \ge m\$ for all \$m\$.
 
 *Proof.* By definition, \$\neg m\$ can be constructed as the join of
@@ -255,7 +255,7 @@ By means of Inclusion and Exclusion, we have identified the first
 logical connectives native to the relational field of \$\mathcal{R}\$:
 **conjunction** is realized as the meet \$\wedge\$ (common part of
 recognitions) and **disjunction** as the join \$\vee\$ (combined
-recognition), while a form of **negation** is given by orthogonal
+recognition), while the **pseudocomplement** is given by orthogonal
 complement \$\neg\$. In doing so, we also introduce an elemental *ethic*
 of recognition: to recognize something is always to choose what it goes
 together with and what it must be distinguished from. The logical
@@ -748,7 +748,7 @@ relation types:
         {
           "@id": "Lem3",
           "@type": "Lemma",
-          "@title": "Negation and Orthogonality",
+          "@title": "Pseudocomplement and Orthogonality",
           "@pass": 1,
           "@depth": 2,
           "@status": "proven",
@@ -1049,7 +1049,7 @@ in Movement I, alongside its proof status:
 | **Lemma 1** – *Subobject Classifier emergence*      | **Fulfilled** | Proof provided (construction of Ω\<sub\>Y\</sub\> and χ\<sub\>m\</sub\>). |
 | **Corollary 1** – *First Induction of Order*        | **Fulfilled** | Follows from Definition 1 (order) and Lemma 1 (pullbacks); proven.        |
 | **Lemma 2** – *Heyting Pre-algebra (Lattice)*       | **Fulfilled** | Proof given (meet/join form lattice of subobjects).                       |
-| **Lemma 3** – *Negation and Orthogonality*          | **Fulfilled** | Proof provided (largest disjoint subobject and double negation).          |
+| **Lemma 3** – *Pseudocomplement and Orthogonality*          | **Fulfilled** | Proof provided (largest disjoint subobject and double negation).          |
 | **Corollary 2** – *Closure of Recognition*          | **Fulfilled** | Established (closed under ∧, ∨, ¬ operations).                            |
 | **Lemma 4** – *Galois Connection (Adjointness)*     | **Fulfilled** | Proof provided (Induce is right adjoint to ∧).                            |
 | **Lemma 5** – *Monotonicity and Composition*        | **Fulfilled** | Proof provided (properties of Induce in both arguments).                  |

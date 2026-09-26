@@ -2956,7 +2956,7 @@ phenomenon geometrically.
 
 <tr>
 <td class="org-left">¬</td>
-<td class="org-left">Negation = (– ⇒ ⊥)</td>
+<td class="org-left">Pseudocomplement = (– ⇒ ⊥)</td>
 </tr>
 
 <tr>
@@ -5405,7 +5405,7 @@ phenomenon geometrically.
 | ≤ | Inclusion / order |
 | ∧, ∨ | Meet, join |
 | ⇒ | Residual (implication) |
-| ¬ | Negation = (– ⇒ ⊥) |
+| ¬ | Pseudocomplement = (– ⇒ ⊥) |
 | j | Nucleus / closure operator |
 | Itr | Iteration operator |
 | L,R,I | Left/right adjoints and inclusion for RT |
@@ -5520,7 +5520,7 @@ f' f ↓ ↓ A ——→ B
 | ≤              | Inclusion / order                        |
 | ∧, ∨           | Meet, join                               |
 | ⇒              | Residual (implication)                   |
-| ¬              | Negation = (– ⇒ ⊥)                       |
+| ¬              | Pseudocomplement = (– ⇒ ⊥)                       |
 | j              | Nucleus / closure operator               |
 | Itr            | Iteration operator                       |
 | L,R,I          | Left/right adjoints and inclusion for RT |

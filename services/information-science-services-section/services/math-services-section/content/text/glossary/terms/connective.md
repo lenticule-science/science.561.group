@@ -54,7 +54,7 @@ Let $H$ be a [Heyting algebra](./heyting-algebra.md).
 1. **Conjunction** ($\wedge$): the binary meet. For $a, b \in H$, $a \wedge b = \inf\{a, b\}$.
 2. **Disjunction** ($\vee$): the binary join. For $a, b \in H$, $a \vee b = \sup\{a, b\}$.
 3. **Implication** ($\to$): the [Heyting implication](./heyting-implication.md). For $a, b \in H$, $a \to b = \max\{c \in H : a \wedge c \leq b\}$.
-4. **Negation** ($\neg$): defined by $\neg a = a \to \bot$, where $\bot$ is the least element of $H$.
+4. **Pseudocomplement** ($\neg$), called intuitionistic negation in the literature: defined by $\neg a = a \to \bot$, where $\bot$ is the least element of $H$. It is not the bilattice [negation](./negation.md) $\sim$, which swaps evidence; see [complement](./complement.md).
 5. **Biconditional** ($\leftrightarrow$): defined by $a \leftrightarrow b = (a \to b) \wedge (b \to a)$.
 
 **Proposition.** *The connectives $\wedge$ and $\to$ form an adjunction: for all $a, b, c \in H$,*

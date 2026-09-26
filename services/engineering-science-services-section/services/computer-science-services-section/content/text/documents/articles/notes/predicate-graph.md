@@ -261,7 +261,7 @@ universe's H is a continuous complete lattice. The losses:
   finite sets of triplets but cannot compute implications without a
   concrete representation of the full lattice.
 
-- **No pseudocomplement.** The negation ~a = (a => bottom) requires
+- **No pseudocomplement.** The pseudocomplement ¬a = (a => bottom) requires
   implication. Without it, the graph cannot express "the absence of a
   property" as a positive truth value.
 

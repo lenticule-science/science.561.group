@@ -2895,7 +2895,7 @@ it by composing the nucleus with the context recognitions:
 
 Negating applies implication into the bottom recognition.  *Imply Recognition* witnessing *Ground Recognition* produces the act ***Negate*** ([Negate](../../../../research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-02/404.md)).
 
-The composition uses only previously earned recognitions to encode the negation expression “not a” as “a implies *Ground Recognition*,” so *Negate* follows.
+The composition uses only previously earned recognitions to encode the pseudocomplement “not a” as “a implies *Ground Recognition*,” so *Negate* follows.
 
 ---
 

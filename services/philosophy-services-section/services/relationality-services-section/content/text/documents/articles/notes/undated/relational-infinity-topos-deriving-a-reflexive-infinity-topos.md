@@ -2953,7 +2953,7 @@ phenomenon geometrically.
 
 <tr>
 <td class="org-left">¬</td>
-<td class="org-left">Negation = (– ⇒ ⊥)</td>
+<td class="org-left">Pseudocomplement = (– ⇒ ⊥)</td>
 </tr>
 
 <tr>

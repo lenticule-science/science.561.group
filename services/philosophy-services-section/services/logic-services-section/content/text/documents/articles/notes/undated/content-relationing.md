@@ -23,7 +23,7 @@ description = "+++ id = \"relational-posets\" title = \"===== IDENTITY =====\" a
 ## 1.1 Complete Heyting algebra and nuclei
 
 Data: a complete Heyting algebra $H=(H,\le,\wedge,\vee,\Rightarrow,\bot,\top)$.  
-Define negation $\neg x := (x \Rightarrow \bot)$.
+Define the pseudocomplement $\neg x := (x \Rightarrow \bot)$.
 
 
 ### Definition 1.1 (nucleus / closure operator)

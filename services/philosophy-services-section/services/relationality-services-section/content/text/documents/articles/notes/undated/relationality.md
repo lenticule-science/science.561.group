@@ -5268,7 +5268,7 @@ status: plan
 
 Negating applies implication into the bottom recognition.  *Imply Recognition* witnessing *Ground Recognition* produces the act ***Negate*** ([Negate](../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/complement.md)).
 
-The composition uses only previously earned recognitions to encode the negation expression “not a” as “a implies *Ground Recognition*,” so *Negate* follows.
+The composition uses only previously earned recognitions to encode the pseudocomplement “not a” as “a implies *Ground Recognition*,” so *Negate* follows.
 
 
 {{ act_info(page.meta) }}
@@ -11396,14 +11396,14 @@ produces:
 used_by: []
 produced_by: []
 ---
-# Recognition Negation
+# Recognition Pseudocomplement
 
-Implements negation on earned recognitions as the pseudocomplement.
+Implements Negate on earned recognitions: the pseudocomplement.
 
 ## Definition
 - Inputs: a recognition in the [Recognition Carrier](../recognition-carrier.md).
-- Outputs: its negation `¬a := (a ⇒ ⊥)`.
-- Behaviour: yields the least recognition whose meet with `a` is bottom.
+- Outputs: its pseudocomplement `¬a := (a ⇒ ⊥)`.
+- Behaviour: yields the largest recognition whose meet with `a` is bottom.
 
 ## Invariants
 - `a ∧ ¬a = ⊥` and if `a ∧ x = ⊥` then `x ≤ ¬a`.
@@ -11411,7 +11411,7 @@ Implements negation on earned recognitions as the pseudocomplement.
 
 ## Proof
 - Derived from: [Negate](../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/complement.md).
-- Shows that: negation is the pseudocomplement operation in the recognition
+- Shows that: Negate is the pseudocomplement operation in the recognition
   lattice, consistent with Heyting algebra laws.
 ---
 title: Recognize Context

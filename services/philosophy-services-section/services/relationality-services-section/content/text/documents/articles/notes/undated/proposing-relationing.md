@@ -197,7 +197,7 @@ Let Sub(Y) be the ordered set of distinctions on Y, defined in Step 1.
     (Sub(Y), ∧, ∨, ⊥, ⊤) forms a bounded lattice with order ≤ defined by Inclusion and ⊥ the empty recognition.  
     **Proof sketch.**  Pullbacks and unions in Sub(Y) satisfy commutativity, associativity, and absorption; monomorphisms compose associatively. Hence (Sub(Y), ≤) is a Heyting pre-algebra.
 
--   Lemma 3 (Negation and Orthogonality)
+-   Lemma 3 (Pseudocomplement and Orthogonality)
 
     Define the orthocomplement ¬m as the largest subobject n such that m ∧ n = ⊥.  
     Then m ⊥ n ⇔ n ≤ ¬m, and ¬¬m ≥ m.  
@@ -206,7 +206,7 @@ Let Sub(Y) be the ordered set of distinctions on Y, defined in Step 1.
 
 ### Consequence
 
-Inclusion and Exclusion define the first logical connectives of the relational field: conjunction as meet, disjunction as join, negation as orthogonality.  
+Inclusion and Exclusion define the first logical connectives of the relational field: conjunction as meet, disjunction as join, the pseudocomplement as orthogonality.  
 They also introduce a primitive ethic of relation: to recognize is to decide co-presence or separation.
 
 -   Corollary 2 (Closure of Recognition)
@@ -3754,13 +3754,13 @@ These relations induce meet and join operations on Sub(Y):
 (Sub(Y), ∧, ∨, ⊥, ⊤) forms a bounded lattice with order ≤ defined by Inclusion and ⊥ the empty recognition.  
 *Proof sketch.*  Pullbacks and unions in Sub(Y) satisfy commutativity, associativity, and absorption; monomorphisms compose associatively. Hence (Sub(Y), ≤) is a Heyting pre-algebra.
 
-**** Lemma 3 (Negation and Orthogonality)
+**** Lemma 3 (Pseudocomplement and Orthogonality)
 Define the orthocomplement ¬m as the largest subobject n such that m ∧ n = ⊥.  
 Then m ⊥ n ⇔ n ≤ ¬m, and ¬¬m ≥ m.  
 *Proof.*  From the Galois connection m ∧ n ≤ ⊥ ⇔ n ≤ ¬m. Double negation arises by closure under inclusion.
 
 *** Consequence
-Inclusion and Exclusion define the first logical connectives of the relational field: conjunction as meet, disjunction as join, negation as orthogonality.  
+Inclusion and Exclusion define the first logical connectives of the relational field: conjunction as meet, disjunction as join, the pseudocomplement as orthogonality.  
 They also introduce a primitive ethic of relation: to recognize is to decide co-presence or separation.
 
 **** Corollary 2 (Closure of Recognition)
@@ -6582,7 +6582,7 @@ Let Sub(Y) be the ordered set of distinctions on Y, defined in Step 1.
     (Sub(Y), ∧, ∨, ⊥, ⊤) forms a bounded lattice with order ≤ defined by Inclusion and ⊥ the empty recognition.  
     **Proof sketch.**  Pullbacks and unions in Sub(Y) satisfy commutativity, associativity, and absorption; monomorphisms compose associatively. Hence (Sub(Y), ≤) is a Heyting pre-algebra.
 
--   Lemma 3 (Negation and Orthogonality)
+-   Lemma 3 (Pseudocomplement and Orthogonality)
 
     Define the orthocomplement ¬m as the largest subobject n such that m ∧ n = ⊥.  
     Then m ⊥ n ⇔ n ≤ ¬m, and ¬¬m ≥ m.  
@@ -6591,7 +6591,7 @@ Let Sub(Y) be the ordered set of distinctions on Y, defined in Step 1.
 
 ### Consequence
 
-Inclusion and Exclusion define the first logical connectives of the relational field: conjunction as meet, disjunction as join, negation as orthogonality.  
+Inclusion and Exclusion define the first logical connectives of the relational field: conjunction as meet, disjunction as join, the pseudocomplement as orthogonality.  
 They also introduce a primitive ethic of relation: to recognize is to decide co-presence or separation.
 
 -   Corollary 2 (Closure of Recognition)
@@ -10061,7 +10061,7 @@ To model is to care, to predict is to maintain, to calculate is to belong.
 
 2.  Lemma 2 (Heyting Pre-algebra)
 
-3.  Lemma 3 (Negation and Orthogonality)
+3.  Lemma 3 (Pseudocomplement and Orthogonality)
 
 1.  Corollary 2 (Closure of Recognition)
 

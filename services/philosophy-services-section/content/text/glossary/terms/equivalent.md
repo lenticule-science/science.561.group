@@ -4,7 +4,7 @@ title: equivalent
 date-created: 2025-08-26
 ---
 
-***Equivalent*** is the [condition](../../../../services/relationality-services-section/services/agency-services-section/content/text/glossary/terms/condition.md) of a [thing](thing.md) having conditions or [structure](structure.md) that is [not](negation.md) [different](../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/different.md) from another [thing](thing.md).
+***Equivalent*** is the [condition](../../../../services/relationality-services-section/services/agency-services-section/content/text/glossary/terms/condition.md) of a [thing](thing.md) having conditions or [structure](structure.md) that is [not](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/negation.md) [different](../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/different.md) from another [thing](thing.md).
 
 ## Related
 

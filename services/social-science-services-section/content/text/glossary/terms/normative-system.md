@@ -180,7 +180,7 @@ The three deontic modalities map onto nuclear positions:
 |---|---|---|
 | Obligation O(φ) | TrShadowType: φ is transfer-fixed, saturation-not-yet | φ is execution-committed (carries forward in every extension) but not yet meaning-recognized; the gap σ_t(φ) − φ is the outstanding obligation |
 | Permission P(φ) | SatShadowType or RelationalHistoryFixedFiber | The saturation nucleus does not demand anything beyond φ; φ is not normatively below the recognition threshold |
-| Prohibition F(φ) | ¬φ ∈ RelationalHistoryFixedFiber | The negation is doubly-stable; any act-instance of type φ is incompatible with the settled norm by the Heyting algebra structure of RelationalHistoryFixedFiber |
+| Prohibition F(φ) | ¬φ ∈ RelationalHistoryFixedFiber | The pseudocomplement is doubly-stable; any act-instance of type φ is incompatible with the settled norm by the Heyting algebra structure of RelationalHistoryFixedFiber |
 
 **Proposition (Normative system as model of geometric theory).** Any normative system N = ⟨Ag, R, Sc, Π, Δ⟩ satisfying the nucleus commutation axiom is a model of RelationalUniverseGeometricTheory in the topos of presheaves on the scene category.
 The classifying topos of RelationalUniverseGeometricTheory is the syntactic relational universe RelationalUniverseSyntactic — the initial model — and geometric morphisms into it classify parametrized families of normative systems.
@@ -417,7 +417,7 @@ The three deontic operators in $\Delta$ correspond to fixed-point conditions:
   The weakest sufficient condition for permission is $\varphi \in H^*_t \cup \mathrm{SatShadow}_t$: the saturation nucleus does not demand anything beyond $\varphi$ (the act is not normatively below the recognition threshold backward).
 
 - **Prohibition** $F(\varphi)$: the norm forbids $\varphi$.
-  Formally, $\neg\varphi \in H^*_t$ — the negation of $\varphi$ is doubly-stable, so $\varphi$ is excluded from the institutionally valid region.
+  Formally, $\neg\varphi \in H^*_t$ — the pseudocomplement of $\varphi$ is doubly-stable, so $\varphi$ is excluded from the institutionally valid region.
   By the Heyting algebra structure of $H^*_t$: if $\neg\varphi \in H^*_t$ and $a \leq \varphi$, then $a \wedge \neg\varphi = \bot$ forces any act-instance of type $\varphi$ to be incompatible with the settled norm.
   The joint retraction $\pi_t(\varphi) \geq \pi_t(\neg\varphi \Rightarrow \bot) = \top$ confirms $\varphi$ exceeds all permitted bounds.
 

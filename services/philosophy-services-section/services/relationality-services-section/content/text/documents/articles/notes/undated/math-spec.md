@@ -97,7 +97,7 @@ Say x collapses (relative to ⊥) under S if there exists N ∈ ℕ such that fo
 #### Definition — Iterative Persistence, Baseline Limit, Eventual Equivalence
 
 - Iterative Persistence: Persist_S(x) holds.
-- Baseline Limit: the eventual limit of the S-sequence when x converges to the ⊥-baseline; notation x↘ (defined only when baseline convergence holds). This limit is distinct from Heyting negation ¬x := (x ⇒ ⊥).
+- Baseline Limit: the eventual limit of the S-sequence when x converges to the ⊥-baseline; notation x↘ (defined only when baseline convergence holds). This limit is distinct from the Heyting pseudocomplement ¬x := (x ⇒ ⊥).
 - Eventual Equivalence: x ≡_S y if there exists N such that for all n ≥ N, S^n(x) = S^n(y).
 
 #### Proposition — Eventual Equivalence is an Equivalence Relation
@@ -167,7 +167,7 @@ If R admits finite meets/joins and residuation for all pairs, then (R, ≤, ∧,
 (i) a ∧ (a ⇒ b) ≤ b; (ii) c ≤ (a ⇒ b) iff (c ∧ a ≤ b); (iii) a ⇒ a = ⊤; (iv) ⊥ ⇒ a = ⊤; (v) a ⇒ ⊥ is the relative negation of a.
 Proof. (i) Take c := (a ⇒ b) and apply the Residuation Law Lemma. (ii) This is the Residuation Law Lemma. (iii) From the Residuation Law with b := a, c := ⊤, since ⊤ ∧ a = a ≤ a. (iv) Since ⊤ ∧ ⊥ = ⊥ ≤ a. (v) Definition.
 
-#### Definition — Relational Negation
+#### Definition — Relational Pseudocomplement
 
 Define ¬a ≔ (a ⇒ ⊥). No classical principles are assumed; double negation need not collapse.
 

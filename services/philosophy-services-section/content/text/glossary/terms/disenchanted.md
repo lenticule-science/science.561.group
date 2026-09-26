@@ -5,7 +5,7 @@ date-created: 2025-09-13
 visibility: public
 ---
 
-***Disenchanted*** is the condition of being [not](negation.md) [enchanted](../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/enchanted.md).
+***Disenchanted*** is the condition of being [not](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/negation.md) [enchanted](../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/enchanted.md).
 
 Depending on use, it might relate to [Max Weber](../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/max-weber.md)'s idea of [Entzauberung](../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/entzauberung.md), or disenchantment, who borrowed the term from [Friedrich Schiller](../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/friedrich-schiller.md), to describe the cultural rationalization and devaluation of religion in modernized, bureaucratic, industrial, secular, Western society.
 

@@ -37,7 +37,7 @@ description: "Data: a complete Heyting algebra $H=(H,\\le,\\wedge,\\vee,\\Righta
 
 ### 1.1 Complete Heyting algebra and nuclei
 
-Data: a complete Heyting algebra $H=(H,\le,\wedge,\vee,\Rightarrow,\bot,\top)$. Define negation $\neg x := (x \Rightarrow \bot)$.
+Data: a complete Heyting algebra $H=(H,\le,\wedge,\vee,\Rightarrow,\bot,\top)$. Define the pseudocomplement $\neg x := (x \Rightarrow \bot)$.
 
 **Definition 1.1 (nucleus / closure operator).** A map $c:H\to H$ is a nucleus if it is monotone, inflationary, idempotent, and meet-preserving:
 $$
