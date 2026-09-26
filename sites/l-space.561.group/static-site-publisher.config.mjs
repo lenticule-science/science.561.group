@@ -2,7 +2,10 @@
 // section, is the whole application: the vault catalog dialect admits every
 // note of the science forest, VaultMaze projects the reading experience and
 // keeps review state, GEODE is the workbench the author is admitted to, and
-// the admission service decides who may read what. The garden is also an MCP server at /mcp,
+// the admission service decides who may read what. Media (video, audio, images, documents) lives
+// in an ni-addressed store beside the state and is served at /.well-known/ni/ to admitted
+// readers; notes embed it by name. The author also browses the Gemini notebooks at /buckets/ as
+// S3 buckets. The garden is also an MCP server at /mcp,
 // for assistants a reader connects (ChatGPT, Claude): its own authorization server signs them in
 // through the same admission, and every admitted reader may search and read while only the
 // author may write. Nothing here is code that belongs to L-Space; it is what L-Space says about
@@ -23,6 +26,10 @@ import { createVaultMazeApplication } from '@red-cup-engineering/graphical-knowl
 import { createVaultMazeProjector } from '@red-cup-engineering/graphical-knowledge-game-server/projector';
 import { REVIEW_STORE_SCHEMA, createReviewStore } from '@red-cup-engineering/graphical-knowledge-game-server/review-store';
 import { sha256Hex } from "@red-cup-engineering/cryptographic-computer-data-engineering-services-section/integrity";
+import { createImmutableContentCustody } from '@red-cup-engineering/immutable-content-custody-service';
+import { createFileStore } from '@red-cup-engineering/immutable-content-custody-service/file-store';
+import { niResource } from '@red-cup-engineering/http-services-section/ni';
+import { s3Resource } from '@red-cup-engineering/http-services-section/s3';
 
 /** The content root: the Lenticule Science section, every `content/` tree beneath it. */
 export const SCIENCE_ROOT = fileURLToPath(new URL('../../', import.meta.url));
@@ -111,6 +118,28 @@ export function admissionProviders(environment = process.env) {
   return providers;
 }
 
+/** Where media bytes live, named by their ni URIs: LSPACE_MEDIA_ROOT, else media/ in the state directory. */
+export const mediaRoot = (environment = process.env) => setting('LSPACE_MEDIA_ROOT', environment)
+  ?? (stateDirectory(environment) === undefined ? undefined : join(stateDirectory(environment), 'media'));
+
+/** The media store as a content store (head, read) for /.well-known/ni/, or undefined when no root is configured. */
+export function mediaContent(environment = process.env) {
+  const root = mediaRoot(environment);
+  return root === undefined ? undefined : createImmutableContentCustody({ store: createFileStore(root), maximumBytes: 1024 ** 3 });
+}
+
+/** The author's view of the Gemini notebooks as S3 buckets, signed in with this machine's notebooklm login on first use. */
+export const BUCKETS_PATH = '/buckets';
+export function notebookBuckets() {
+  let opened;
+  const buckets = () => (opened ??= import('@red-cup-engineering/notebooklm-services-section/notebooklm-buckets')
+    .then(({ createNotebookLmBuckets }) => createNotebookLmBuckets())
+    .catch((error) => { opened = undefined; throw error; }));
+  const delegate = (name) => async (...args) => (await buckets())[name](...args);
+  return s3Resource({ listBuckets: delegate('listBuckets'), listObjects: delegate('listObjects'), headObject: delegate('headObject'), getObject: delegate('getObject') }, { mount: BUCKETS_PATH, id: 'notebooklm-buckets', title: 'Gemini Notebook' });
+}
+const isBucketsRoute = (path) => path === BUCKETS_PATH || path.startsWith(`${BUCKETS_PATH}/`);
+
 /** The routes the MCP and OAuth faces answer for themselves: a bearer token or a sign-in redirect, never the admission gate's 401. */
 const SELF_ADMITTING = new Set(['/mcp', '/oauth/authorize', '/oauth/token', '/oauth/register', '/oauth/revoke']);
 export const lSpacePublicRoute = (path, method) => SELF_ADMITTING.has(path) || path.startsWith('/.well-known/oauth-') || path === '/.well-known/openid-configuration' || defaultPublicRoute(path, method);
@@ -133,14 +162,17 @@ export async function applications(context, environment = process.env) {
     database,
     authorEmail: setting('LSPACE_AUTHOR_EMAIL', environment) ?? AUTHOR_EMAIL,
     // GEODE's writes are the author's; its reads are any admitted reader's; /ns/ is public by doctrine.
-    authorRoute: (path, method) => method === 'POST' && (path === '/api/action' || path === '/api/refresh'),
+    // The notebook buckets read the author's own Google account, so they are the author's alone.
+    authorRoute: (path, method) => isBucketsRoute(path) || (method === 'POST' && (path === '/api/action' || path === '/api/refresh')),
     realm: 'l-space.561.group',
     authors: setting('LSPACE_AUTHOR_SUBJECTS', environment)?.split(',').map((subject) => subject.trim()) ?? [...AUTHOR_SUBJECTS],
     publicRoute: lSpacePublicRoute,
   });
+  const media = mediaContent(environment);
   const composed = [
     admission,
     createVaultMazeApplication({ reviews: createReviewStore(database), subjectOf: (ctx) => admission.subjectOf(ctx) }),
+    { resources: [...(media === undefined ? [] : [niResource(media)]), ...(setting('LSPACE_NOTEBOOK_BUCKETS', environment) === 'false' ? [] : [notebookBuckets()])] },
   ];
   const authoringRoot = setting('GEODE_AUTHORING_ROOT', environment);
   let archive;
