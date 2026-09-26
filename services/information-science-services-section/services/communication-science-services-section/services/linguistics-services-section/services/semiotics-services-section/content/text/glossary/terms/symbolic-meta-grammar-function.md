@@ -47,9 +47,3 @@ This enables:
 - recursive evolution of symbolic generativity  
 - structural transformation of grammar under modulation  
 - meta-systemic convergence toward emergent symbolic architectures
-
----
-
-## Earlier material
-
-The ***symbolic meta-grammar function*** (`G_meta`) is [induce|induced](../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/triage/induce|induced) by the [recursive symbolic grammar function](recursive symbolic grammar function) (`G_rec`), the [symbolic anticipation function](symbolic anticipation function) (`𝒜`), and the [constraint desire function](../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/documents/articles/notes/undated/constraint-desire-function.md) (`𝔇`).

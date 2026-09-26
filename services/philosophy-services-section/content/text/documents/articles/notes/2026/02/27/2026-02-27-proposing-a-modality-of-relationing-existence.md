@@ -215,7 +215,3 @@ Lawvere & Schreiber – **Cohesive Toposes** (1989 → 2013).
 Ayala & Francis – **Factorization Homology of Stratified Spaces** (2017).
 Cisinski – **Les préfaisceaux comme modèles des types homotopiques** (2006).
 Tarski – **Fixed-Point Theorem for Monotone Operators** (1939).
-
-## Earlier material
-
-Transfinite chain C₀ = id, C~α+1~ = C ∘ C~α~, C~λ~ = ∨~β\<λ~ C~β~; stabilizes at κ. Equivalence: accessible idempotent monads (Lurie HTT §5.5.7). Explanation: Accessibility ensures eventual convergence; deepest closure defines maximal stability.

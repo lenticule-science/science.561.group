@@ -55,9 +55,3 @@ This enables:
 - formal recursive symbolic cognition  
 - structure-seeking modulation across unresolved fields  
 - symbolic system evolution through recursive desire resolution
-
----
-
-## Earlier material
-
-The ***symbolic desire completion operator*** (`𝒪`) is [induce|induced](../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/triage/induce|induced) by the [constraint desire function](../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/documents/articles/notes/undated/constraint-desire-function.md) (`𝔇`), the [symbolic anticipation function](symbolic anticipation function) (`𝒜`), the [recursive constraint modulation function](recursive constraint modulation function) (`Ω_rec`), and the [symbolic meta-grammar function](symbolic meta-grammar function) (`G_meta`).

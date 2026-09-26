@@ -354,9 +354,3 @@ proof, morphism, and element are one content's four shadows.
 - `/home/emsenn/561-group/lib/communicating/src/speaking/listening/algebra/charge.mts`
 - `/home/emsenn/561-group/lib/communicating/src/holography/index.mts`
 - `/home/emsenn/561-group/content/library/README.md`
-
-## Earlier material
-
-**Bilattice FOUR / charges.** Evidence pairs `(pos, neg)` with two orders: knowledge
-(both up) and truth (pos up, neg down). Named absurd `⊥`, potential `t`, active `f`,
-stable `⊤`; `⊤` is a held contradiction, not explosion (paraconsistency).

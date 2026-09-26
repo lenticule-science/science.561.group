@@ -37,16 +37,3 @@ exposing stable fields and failure signalling for programs.
   by freezing field names, failure channels, and access patterns for SDK use.
 - Shows that: programs can orchestrate cover refinement, restriction, and
   matching/gluing without referencing machine internals directly.
-
-## Earlier material
-
-SDK-facing projection of the kernel [Coverage Runtime Carrier](coverage-runtime.md)
-exposing stable fields and failure signalling for programs.
-
-## Invariants
-- Backwards compatibility: field names and failure codes remain active across
-  kernel revisions.
-- Safety: `restrict` returns either updated sections or explicit
-  [FailureCarrier](failure-carrier.md) payloads, never
-  silent drops.
-- Observability: snapshots expose provenance for auditing coverage propagation.

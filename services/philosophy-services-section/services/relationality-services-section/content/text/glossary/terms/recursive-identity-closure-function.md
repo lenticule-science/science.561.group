@@ -43,9 +43,3 @@ This enables:
 - recursive identity inheritance  
 - symbolic identity convergence  
 - recursive resolution of symbolic modulation across belief-encoded contrast
-
----
-
-## Earlier material
-
-The ***recursive identity closure function*** (`I_closure`) is [induce|induced](../../triage/induce|induced) by the [recursive symbolic belief field function](recursive symbolic belief field function) (`B_rec`), the [symbolic modulation coherence function](symbolic modulation coherence function) (`M_cohere`), and the [constraint desire function](../../documents/articles/notes/undated/constraint-desire-function.md) (`𝔇`).

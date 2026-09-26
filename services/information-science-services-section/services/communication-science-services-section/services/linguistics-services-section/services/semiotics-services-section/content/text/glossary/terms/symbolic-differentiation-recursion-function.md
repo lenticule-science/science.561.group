@@ -48,9 +48,3 @@ This enables:
 - branching symbolic evolution  
 - recursive propagation of modulation grammar  
 - emergence of symbolic replication from coherent constraint
-
----
-
-## Earlier material
-
-The ***symbolic differentiation recursion function*** (`Δ_rec`) is [induce|induced](../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/triage/induce|induced) by the [symbolic inheritance field function](symbolic inheritance field function) (`H_inherit`), the [desire-contrast alignment propagation function](desire-contrast alignment propagation function) (`A_align`), and the [symbolic anticipation function](symbolic anticipation function) (`𝒜`).

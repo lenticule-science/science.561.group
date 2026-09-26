@@ -24,11 +24,3 @@ within the chosen profile.
 {{ act_info(page.meta) }}
 
 {{ act_nav(page.meta) }}
-
-## Earlier material
-
-`StabilizeInvariant = (FixFlow PhysicsState)` records states left unchanged by
-the global flow.  [ProfileRecognitions](profile-recognitions.md) restrict the
-system to the recognitions preserved by the potential filter.  Composing them,
-`(StabilizeInvariant ProfileRecognitions)` earns
-***ProfileInvariant***.

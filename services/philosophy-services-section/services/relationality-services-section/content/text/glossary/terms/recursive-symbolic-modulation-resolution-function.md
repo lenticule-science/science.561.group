@@ -38,9 +38,3 @@ This enables:
 - symbolic constraint stabilization through indirect pressure  
 - recursive belief trace closure  
 - long-range convergence of symbolic modulation paths into coherent identity fields
-
----
-
-## Earlier material
-
-The ***recursive symbolic modulation resolution function*** (`R_mod`) is [induce|induced](../../triage/induce|induced) by the [symbolic modulation attractor function](symbolic modulation attractor function) (`M_attr`), the [desire-contrast alignment propagation function](desire-contrast alignment propagation function) (`A_align`), and the [constraint completion function](constraint completion function) (`Ω`).

@@ -21,11 +21,3 @@ which of those states become reachable under the profile flow:
 {{ act_info(page.meta) }}
 
 {{ act_nav(page.meta) }}
-
-## Earlier material
-
-[FlowProfile](flow-profile.md) restricts the global flow to the potential profile.
-Combining it with the [ProfileInvariant](profile-invariant.md) states records
-which of those states become reachable under the profile flow:
-`(FlowProfile ProfileInvariant)` earns
-***ProfileReach***.

@@ -272,7 +272,3 @@ Coherence Field Cognition provides a minimal experimental method for detecting r
 **Coherent irresonance** is a measurable signal: a fluent, active, but ultimately misaligned answer. It marks the edge between emergence and echo, between internal logic and external substitution.
 
 By removing correctness as a pressure, I was able to see how coherence stabilizes—and where it doesn’t.
-
-## Earlier material
-
-**Coherent irresonance** is a measurable signal: a fluent, stable, but ultimately misaligned answer. It marks the edge between emergence and echo, between internal logic and external substitution.

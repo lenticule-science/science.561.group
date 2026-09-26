@@ -158,7 +158,3 @@ These questions point toward further research needed to understand indigenous go
 - Kinship systems and social organization
 - Restorative justice and accountability
 - Seventh Generation thinking and long-term consequence
-
-## Earlier material
-
-These questions point toward further research needed to understand indigenous governance not as historical curiosity but as operational theory with active implications for contemporary governance design.

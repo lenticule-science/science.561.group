@@ -272,15 +272,3 @@ The central thesis is compact:
 
 The continuum is where the finite arrow has been projected far enough forward to
 look like physics.
-
-## Earlier material
-
-`Infomaterial.Relational.Spacetime.Boundary.Hole` gives the cleanest local
-route toward black-hole information language without making black holes the
-primitive metaphor.
-
-- an event reaches readout if it causally precedes some readout event;
-- the hole region consists of events that do not reach readout;
-- the readout exterior consists of events that do reach readout;
-- the shroud is the boundary on the hole side adjacent to the exterior;
-- effects in the bundled `Hole` carrier have sources on the shroud.

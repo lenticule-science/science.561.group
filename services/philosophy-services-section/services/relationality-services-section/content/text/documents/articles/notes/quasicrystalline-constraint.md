@@ -29,16 +29,3 @@ the quasicrystalline qualifier.
   rule constraints.
 - Shows that: sections satisfying these constraints form the
   quasicrystalline subclass.
-
-## Earlier material
-
-## Invariants
-- Local: rules depend only on finite windows; active under restriction.
-- Aperiodic: no nontrivial translations leave sections invariant (as earned
-  when acts supply aperiodicity).
-
-## Proof
-- Derived from: [Hypertensor Sheaf](hypertensor-sheaf.md) with additional local
-  rule constraints.
-- Shows that: sections satisfying these constraints form the
-  quasicrystalline subclass.

@@ -46,19 +46,3 @@ refining the math-level compatibility test with concrete restriction functions.
   functions from the parameterized coverage site and sheaf.
 - Shows that: matching-family validation is computable in calculus and supplies
   certified inputs for gluing and path-composition lifts.
-
-## Earlier material
-
-Executable checker for matching families over a
-[Parameterized Coverage Site](parameterized-coverage-site.md),
-refining the math-level compatibility test with concrete restriction functions.
-
-## Postconditions
-- Produced matching families are active under cover refinement and transport
-  along parameterized morphisms.
-- On failure, no matching-family structure is emitted; callers may log
-  incompatibility for retry.
-
-Executable checker for matching families over a
-[Parameterized Coverage Site](parameterized-coverage-site.md),
-refining the math-level compatibility test with concrete restriction functions.

@@ -20,15 +20,3 @@ table author
 where type = [[personal log entry]] AND
   contains(file.outlinks, [[Migration to Pine Ridge]])
 ```
-
-## Earlier material
-
-- [ ] Find a source of emergency radios to distribute 
-This (type:: [project](../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/triage/undated/project)) represents (function:: [planning](../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/triage/undated/planning) our [migration](../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/triage/undated/migration) to [Pine Ridge](Pine Ridge)). The project is led by (leader:: [emsenn](../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/triage/undated/emsenn)) and will be use the (method:: [enc/def/Groundhog Autonomous Zone](enc/def/Groundhog Autonomous Zone)) to make those plans.
-
-### Personal Logs
-```dataview
-table author
-where type = [personal log entry](personal log entry) AND
-  contains(file.outlinks, [Migration to Pine Ridge](Migration to Pine Ridge))
-```

@@ -47,9 +47,3 @@ This enables:
 - symbolic inheritance from coherent identity  
 - grammar-like pattern emergence from identity propagation  
 - constraint recursion at the modulation-inheritance boundary
-
----
-
-## Earlier material
-
-The ***symbolic inheritance field function*** (`H_inherit`) is [induce|induced](../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/triage/induce|induced) by the [identity modulation propagation function](identity modulation propagation function) (`I_mod`), the [symbolic anticipation function](symbolic anticipation function) (`𝒜`), and the [desire-contrast alignment propagation function](desire-contrast alignment propagation function) (`A_align`).

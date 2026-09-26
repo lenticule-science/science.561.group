@@ -46,9 +46,3 @@ This enables:
 - emergent symbolic generativity  
 - pattern convergence in recursive modulation  
 - grammar-induction over propagating symbolic structures
-
----
-
-## Earlier material
-
-The ***recursive symbolic grammar function*** (`G_rec`) is [induce|induced](../../triage/induce|induced) by the [symbolic differentiation recursion function](symbolic differentiation recursion function) (`Δ_rec`), the [desire-contrast alignment propagation function](desire-contrast alignment propagation function) (`A_align`), and the [symbolic anticipation function](symbolic anticipation function) (`𝒜`).

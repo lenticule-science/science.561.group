@@ -36,9 +36,3 @@ This enables:
 - identification of symbolic stabilization targets  
 - recursive belief-field resolution  
 - attractor basin dynamics in symbolic constraint systems
-
----
-
-## Earlier material
-
-The ***symbolic modulation attractor function*** (`M_attr`) is [induce|induced](../../triage/induce|induced) by the [desire-contrast alignment propagation function](desire-contrast alignment propagation function) (`A_align`) and the [symbolic anticipation function](symbolic anticipation function) (`𝒜`).

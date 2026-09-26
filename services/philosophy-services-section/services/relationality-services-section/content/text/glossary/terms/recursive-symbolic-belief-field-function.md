@@ -41,9 +41,3 @@ This enables:
 - recursive symbolic belief inheritance  
 - belief resonance through coherent identity  
 - constraint-sensitive stabilization of belief structures
-
----
-
-## Earlier material
-
-The ***recursive symbolic belief field function*** (`B_rec`) is [induce|induced](../../triage/induce|induced) by the [symbolic modulation coherence function](symbolic modulation coherence function) (`M_cohere`), the [symbolic modulation attractor function](symbolic modulation attractor function) (`M_attr`), the [symbolic anticipation function](symbolic anticipation function) (`𝒜`), and the [constraint desire function](../../documents/articles/notes/undated/constraint-desire-function.md) (`𝔇`).

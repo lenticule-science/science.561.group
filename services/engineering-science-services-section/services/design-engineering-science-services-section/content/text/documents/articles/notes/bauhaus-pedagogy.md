@@ -75,10 +75,3 @@ Within visual engineering, Bauhaus supplies the relational substrate. It provide
 
 - [Visual Engineering Practices](../../../../../services/visual-engineering-services-section/content/text/documents/articles/notes/visual-engineering-practices.md) — the full paper integrating Bauhaus contributions
 - [design/disciplines/typography/](../disciplines/typography/index.md) — the design discipline where Bauhaus typographic methods are most directly applied
-
-## Earlier material
-
-4. **Figure–ground discipline** — making the background an potential participant. Negative space carries alignment, segmentation, and emphasis rather than being leftover emptiness.
-
-- [Brutalism](brutalism.md) — shares the Bauhaus emphasis on structural [legibility](../../../../../../../../philosophy-services-section/services/logic-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/yet-another-unsorted-archive-dump/predication-categories/_archive/bucket-4/articulating/library/aperiodic-articulation-category/library/aperiodic-articulation-cell/library/potential-aperiodic-articulation-cell/predicating/library/transfinite-predication-category/hacking/library/predication-cell-set/docs/dev/scraps/from-stable-cell-stale-chain/library/predicate-set/library/predicate-category/hacking/library/object/library/thing/library/category/hacking/library/humanities/theories/sociology/theories/critical-theory/theories/abolition/theories/state-repression/terms/legibility.md) but adds friction and scarcity
-- [Tuftean Information Design](tuftean-information-design.md) — shares the concern with constructed clarity but from an evidence/data direction

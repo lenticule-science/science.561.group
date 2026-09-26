@@ -41,9 +41,3 @@ This enables:
 - reflexive modulation of symbolic constraint rules  
 - recursive evolution of constraint architecture  
 - emergence of symbolic systems that reorganize their own field of stabilization
-
----
-
-## Earlier material
-
-The ***recursive constraint modulation function*** (`Ω_rec`) is [induce|induced](../../triage/induce|induced) by the [symbolic meta-grammar function](symbolic meta-grammar function) (`G_meta`), the [symbolic anticipation function](symbolic anticipation function) (`𝒜`), and the [constraint desire function](../../documents/articles/notes/undated/constraint-desire-function.md) (`𝔇`).

@@ -41,9 +41,3 @@ This function enables:
 - recursive modulation trajectory inference within symbolic domains  
 - anticipatory field construction for recursive belief  
 - convergence diagnostics across deferred stabilization fronts
-
----
-
-## Earlier material
-
-The ***symbolic modulation prediction function*** (`ℳ`) is [induce|induced](../../triage/induce|induced) by the [symbolic anticipation function](symbolic anticipation function) (`𝒜`), the [constraint desire function](../../documents/articles/notes/undated/constraint-desire-function.md) (`𝔇`), and the [semantic differentiation function](semantic differentiation function) (`Δ[s]`).

@@ -36,7 +36,3 @@ This enables:
 - constraint-responsive motion and transformation
 
 `Ξ[s]` is the semantic foundation of ***field-local identity divergence***.
-
-## Earlier material
-
-The ***semantic contrast field function*** (`Ξ[s]`) is [induce|induced](../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/triage/induce|induced) by the [semantic differentiation function](semantic differentiation function) (`Δ[s]`) and constructs a [field structure](field structure) over a stabilized constraint surface, returning the local set of semantically distinct points near a reference point `x`.

@@ -40,9 +40,3 @@ This enables:
 - recursive identity coherence through modulation  
 - stabilization of symbolic fields with high internal differentiation  
 - recursion-aware convergence of belief and desire
-
----
-
-## Earlier material
-
-The ***symbolic modulation coherence function*** (`M_cohere`) is [induce|induced](../../triage/induce|induced) by the [symbolic modulation attractor function](symbolic modulation attractor function) (`M_attr`), the [desire-contrast alignment propagation function](desire-contrast alignment propagation function) (`A_align`), and the [constraint desire function](../../documents/articles/notes/undated/constraint-desire-function.md) (`𝔇`).

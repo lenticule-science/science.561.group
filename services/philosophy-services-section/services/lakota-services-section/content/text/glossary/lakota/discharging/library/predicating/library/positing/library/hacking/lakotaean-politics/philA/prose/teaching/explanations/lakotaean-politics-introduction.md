@@ -56,17 +56,3 @@ The sources cited here are starting points, not the closed canon.
 Readers should approach Walker through DeMallie's editorial work, read non-Lakota ethnographic sources critically, and treat contemporary Lakota voices (Marshall, Estes, White Hat, Vine Deloria Jr. and Ella Deloria where they remain in print) as the primary authorities.
 Lakota knowledge holders in living tradition — at Sinte Gleska University, at Oglala Lakota College, on each of the Oceti Sakowin's reservations and in the urban Lakota communities — hold the deeper authority than any printed text.
 This subtheory's content is consistent with what such knowledge holders teach; for any specific claim, their authority is higher than the printed-source citations above.
-
-## Earlier material
-
-**Two.
-Authority is distributed and conditional on conduct.** No single office holds all authority.
-The [naca](../../../../b4/naca/naca.md) council deliberates; the wakichunza (shirt-wearers) hold delegated executive standing; the [omniciye](../../../../b4/omniciye/omniciye.md) is the assembly around the council fire; the [akicita](../../../../b4/akicita/akicita.md) hold bounded enforcement during specific occasions; the wičháša wakȟáŋ hold ceremonial standing; the eyapaha (criers) move information through the camp.
-Authority in each role is conditional on demonstrated conduct in the virtues — wówačhantognaka, wóksape, wóohitika, wówačhiŋtȟaŋka ([Marshall 2002](../../../../philB/references/marshall2002.md); see also [lakotaean-philosophy/four-virtues](../../../../../../../../../../../../../../../../../../../social-science-services-section/services/other-social-science-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/existence/lakota/discharging/library/predicating/library/positing/library/philosophy/theories/indigenous/theories/lakotaean-philosophy/concepts/four-virtues.md)).
-Leadership is not hereditary, not contractual, not procedurally assigned.
-It is recognized.
-
-**Three.
-Decisions bind through consensus, with withdrawal as the structural limit.** A council operates by consensus orientation; a tiyospaye or person who does not consent can [withdraw](../../../../b4/consensus-by-withdrawal/consensus-by-withdrawal.md) rather than be coerced.
-Withdrawal is rare because the kinship pressure toward agreement is intense; but it is structurally available, and its availability is what makes coercive command impossible.
-This is the procedural mechanism by which the Lakota polity exemplifies what Pierre Clastres ([clastres1974](../../../../../../../../../../../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/documents/articles/reference-articles/bibliographies/clastres1974.md)) called state-refusal — not the absence of a state, but the potential organization of a polity to prevent the consolidation of one.

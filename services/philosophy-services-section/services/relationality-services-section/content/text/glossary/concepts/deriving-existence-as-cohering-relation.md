@@ -156,7 +156,3 @@ This definition highlights that the coherence of S is conditional upon, and sole
 ### 8. Conclusion
 
 This derivation establishes the **Existential Tekarc** as the irreducible and fundamental force necessary for any entity S to achieve and maintain coherent existence, defined by its distinctness from its negation (S=¬S). The Tekarc operates by co-inducing the primary teknic acts of Include(S) and Exclude(¬S), thereby actively constituting the boundaries and internal consistency of S. The condition S=¬S thus necessitates a dynamic, operative principle, the Tekarc, which underpins all coherent distinctions. This foundational analysis suggests that existence, far from being a passive state, is continually enacted by this intrinsic differentiating force.
-
-## Earlier material
-
-This text, beginning by [[claiming]] that some [[old-notes/Relationality/system/structures/thing]] is [[existing]], [[deriving|derives]] a [[sequence]] of [[necessary]] [[act|acts]] ([[including]] and [[excluding]]), [[condition|conditions]] ([[inclusion]] and [[exclusion]]), and [[structure]] ([[form]]) which are [[determining]] [[existence]] while [[inducing]] further necessary [[derivation|derivations]], creating a [[dynamic]] I name here [[tekodynamics]].
