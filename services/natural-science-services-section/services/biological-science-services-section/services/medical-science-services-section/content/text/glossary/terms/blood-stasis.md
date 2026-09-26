@@ -110,10 +110,7 @@ This convergence does not mean blood stasis "is" microcirculatory dysfunction �
 
 The pharmacology of blood-invigorating herbs aligns with this correspondence. [Hu Zhang's](../../../../services/traditional-chinese-medicine-services-section/content/text/glossary/terms/hu-zhang.md) [resveratrol](../../../../services/pharmacology-services-section/content/text/glossary/terms/resveratrol.md) inhibits platelet aggregation and improves endothelial function. Dan Shen's tanshinones are anticoagulant and anti-inflammatory. Chuan Xiong's tetramethylpyrazine improves microcirculation. The herbs that TCM selected over centuries for "invigorating blood" turn out to contain compounds that address the biomedical correlates of impaired circulation.
 
-## Earlier material
+## Related
 
-- [Qi](../../../../services/traditional-chinese-medicine-services-section/content/text/glossary/terms/qi.md) — the motive force whose stagnation is the most common cause of blood stasis
-- [Hu Zhang](../../../../services/traditional-chinese-medicine-services-section/content/text/glossary/terms/hu-zhang.md) — a blood-invigorating herb that also clears damp-heat
-- [Damp-Heat](../../../../services/traditional-chinese-medicine-services-section/content/text/glossary/terms/damp-heat.md) — the pathological pattern that commonly co-occurs with blood stasis in Hu Zhang's clinical applications
 - [Pattern Diagnosis](../../../../services/traditional-chinese-medicine-services-section/content/text/documents/articles/notes/pattern-diagnosis.md) — the diagnostic method that identifies blood stasis
 - [Zang-Fu](../../../../services/traditional-chinese-medicine-services-section/content/text/glossary/terms/zang-fu.md) — the organ systems through which blood stasis manifests

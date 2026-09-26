@@ -54,9 +54,7 @@ Channel entry is essential to [formula](../../../../services/traditional-chinese
 
 When [Hu Zhang](../../../../services/traditional-chinese-medicine-services-section/content/text/glossary/terms/hu-zhang.md) is combined with Yin Chen Hao (Artemisia capillaris) for jaundice, both herbs enter the Liver/Gallbladder channel — their therapeutic actions converge on the same target system. When Hu Zhang is combined with Bei Mu (Fritillaria) for phlegm-heat cough, both enter the Lung channel. The formula's coherence depends on channel entry alignment.
 
-## Earlier material
+## Related
 
-- [Meridians](../../../../services/traditional-chinese-medicine-services-section/content/text/glossary/terms/meridians.md) — the channel system that herbs "enter"
 - [Zang-Fu](../../../../services/traditional-chinese-medicine-services-section/content/text/glossary/terms/zang-fu.md) — the organ-function systems targeted by channel entry
 - [Herbal Medicine](../../../../services/traditional-chinese-medicine-services-section/content/text/documents/articles/notes/herbal-medicine.md) — the therapeutic system that uses channel entry for formula design
-- [Hu Zhang](../../../../services/traditional-chinese-medicine-services-section/content/text/glossary/terms/hu-zhang.md) — enters Liver, Gallbladder, and Lung channels

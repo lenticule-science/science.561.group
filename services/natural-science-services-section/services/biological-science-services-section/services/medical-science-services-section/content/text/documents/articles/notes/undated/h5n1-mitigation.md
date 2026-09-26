@@ -12,6 +12,6 @@ aliases:
 
 - [[https://www.aaha.org/publications/newstat/articles/2024-4/h5n1-influenza-from-avian-to-bovine-to-feline-and-beyond/|H5N1 Influenza from Avian to Bovine to Feline and Beyond]] from the [[American Animal Hospital Association]]
 
-## Earlier material
+## Related
 
 - [https://www.aaha.org/publications/newstat/articles/2024-4/h5n1-influenza-from-avian-to-bovine-to-feline-and-beyond/|H5N1 Influenza from Avian to Bovine to Feline and Beyond](https://www.aaha.org/publications/newstat/articles/2024-4/h5n1-influenza-from-avian-to-bovine-to-feline-and-beyond/|H5N1 Influenza from Avian to Bovine to Feline and Beyond) from the [American Animal Hospital Association](American Animal Hospital Association)
