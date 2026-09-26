@@ -60,7 +60,10 @@ reader can use `search` and `fetch`, the pair ChatGPT expects of a knowledge sou
 `deploy/l-space.service` runs `static-site-publisher serve --release` on `127.0.0.1:18848` on
 the machine that holds the repository (`bare-cedar-fog`). A build of the forest needs about six
 gigabytes, more than the public host has. The public host's Caddy reaches the site over the
-tailnet (`deploy/Caddyfile`).
+tailnet (`deploy/Caddyfile`). It runs from a release checkout of the repository
+(`~/.local/share/561-group/releases/info/checkout`), so work in progress in the live tree never
+stops the site. The garden therefore publishes the science section as of that release. GEODE
+authors the live tree, and its edits appear once a new commit is checked out there and installed.
 
 The runtime environment file, mode `0600`, names the public origin and holds the provider
 credentials; nothing secret is committed. Per-reader state (review rows and Discord sessions)

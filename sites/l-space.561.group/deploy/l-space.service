@@ -5,8 +5,10 @@ Wants=network-online.target
 
 [Service]
 Type=simple
-WorkingDirectory=/home/emsenn/info/lib/emsenn/services/561-group/services/science-services-section/sites/l-space.561.group
-# The site is its configuration. VICTOR builds the release from the science section at start and
+WorkingDirectory=/home/emsenn/.local/share/561-group/releases/info/checkout/lib/emsenn/services/561-group/services/science-services-section/sites/l-space.561.group
+# The code runs from a release checkout of the repository (updated by checking out a commit and
+# installing), so work in progress in the live tree never stops the site; GEODE authors the live
+# science section. The site is its configuration. VICTOR builds the release from the science section at start and
 # serves it with the admission, VaultMaze, GEODE, the authorization server and /mcp.
 ExecStart=/home/emsenn/.local/bin/node node_modules/@red-cup-engineering/static-site-publisher/scripts/static-site-publisher.mjs serve ../.. --config=./static-site-publisher.config.mjs --release --host=127.0.0.1 --port=18848
 # Public origin, allowlists and provider credentials are in the environment file, mode 0600.
