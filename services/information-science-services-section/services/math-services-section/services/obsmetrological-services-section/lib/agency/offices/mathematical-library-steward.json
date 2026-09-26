@@ -16,7 +16,8 @@
     "decline-to-judge-a-financial-application-of-an-obsmetrologia-result": "deontic-immunity"
   },
   "provides-skill": [
-    "build-the-semiotic-language-model"
+    "research",
+    "check-enrichment-data"
   ],
   "authority-scope": [
     "lib/emsenn/services/561-group/services/science-services-section/services/information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/obsmetrologia/",

@@ -18,5 +18,9 @@
   "jurisdiction": "oml",
   "part-of": "obsmetrological-services-section",
   "reports-to": [],
-  "founded": "2026-07-18"
+  "founded": "2026-07-18",
+  "provides-skill": [
+    "research",
+    "check-enrichment-data"
+  ]
 }

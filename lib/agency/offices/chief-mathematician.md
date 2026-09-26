@@ -1,6 +1,9 @@
 ---
 type: office
 charter: "Own the mathematics domain of the polity's library — the chief mathematician's endorsements, working problems, and F_χ derive from that substrate."
+provides-skill:
+  - research
+  - check-enrichment-data
 ---
 
 # Office of the Chief Mathematician

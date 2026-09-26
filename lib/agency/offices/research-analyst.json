@@ -17,7 +17,7 @@
     "refuse-a-figure-whose-only-source-is-a-third-party-snippet-or-a-model-s-recall": "deontic-immunity"
   },
   "provides-skill": [
-    "meet-then-beat"
+    "research"
   ],
   "authority-scope": [
     "lib/emsenn/services/561-group/services/science-services-section/",

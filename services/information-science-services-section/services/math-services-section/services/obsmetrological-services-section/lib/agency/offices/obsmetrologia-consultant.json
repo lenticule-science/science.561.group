@@ -19,7 +19,8 @@
   "part-of": "emsenn",
   "reports-to": [],
   "provides-skill": [
-    "build-the-semiotic-language-model"
+    "research",
+    "check-enrichment-data"
   ],
   "distinguished-from": [
     "quantitative-methods-lead"

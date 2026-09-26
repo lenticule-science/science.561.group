@@ -1,6 +1,9 @@
 ---
 type: office
 charter: "Own the sociology domain of the polity's library — the chief sociologist's endorsements, working problems, and F_χ derive from that substrate."
+provides-skill:
+  - research
+  - enrich-sociological-content
 ---
 
 # Office of the Chief Sociologist

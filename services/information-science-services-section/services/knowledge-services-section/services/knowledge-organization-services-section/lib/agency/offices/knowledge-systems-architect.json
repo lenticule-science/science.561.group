@@ -26,8 +26,7 @@
   "part-of": "emsenn",
   "reports-to": [],
   "provides-skill": [
-    "meet-then-beat",
-    "write-markdown"
+    "research"
   ],
   "distinguished-from": [
     "system-architect",
@@ -38,7 +37,7 @@
     "lib/emsenn/services/561-group/services/561-group-services-section/services/561-group-science-services-section/content/text/documents/articles/specifications/2026-08-30-science-topic-section-model.md sections \"Ontology\" and \"Citation: one channel, three depths\"",
     "lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/services/multi-agent-computer-system-engineering-services-section/apps/lagoon/content/text/documents/articles/notes/2026/08/29/2026-08-29-lagoon-architecture.md \"The regime ladder\"",
     ".claude/skills/meet-then-beat/SKILL.md",
-    "lib/emsenn/services/561-group/services/engineering-services-section/content/text/documents/articles/notes/2026/08/01/2026-08-01-note-on-the-content-addressed-glass-sponge-semantic-compute-complex.md \u00a716.4",
+    "lib/emsenn/services/561-group/services/engineering-services-section/content/text/documents/articles/notes/2026/08/01/2026-08-01-note-on-the-content-addressed-glass-sponge-semantic-compute-complex.md §16.4",
     "lib/emsenn/services/561-group/services/science-services-section/content/text/documents/articles/notes/2026/09/01/2026-09-01-the-lenticule-research-substrate-program.md doctrine D5 and Lots 4, 6, 7",
     ".claude/rules/working-discipline.md \"Check what exists first\""
   ],
