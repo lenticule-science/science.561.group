@@ -85,6 +85,4 @@ The categorical tree is the durable composition of its morphisms. Filing is
 inhabiting a type by traversal, and a correctly placed node is a proof that the
 document carries the type its complete path asserts.
 
-## Earlier material
-
 The tree is not the truth — the morphisms are. Filing is inhabiting a type by traversal, and a correctly placed node is a proof that the document carries the type its path asserts.

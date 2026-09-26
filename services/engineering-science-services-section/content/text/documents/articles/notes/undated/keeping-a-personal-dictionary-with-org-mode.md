@@ -7,6 +7,8 @@ modified: 2025-07-13T11:20:01
 title: Keeping a Personal Dictionary with Org mode
 description: This document was written by me, emsenn, and is released for the benefit of the public under the terms included in the "License" supplement.
 specialization: research
+author: ["emsenn"]
+draft: false
 ---
 
 ## Introduction
@@ -87,15 +89,6 @@ The above copyright notice and this permission notice shall be included in all c
 The Document is provided "as is," without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, or noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort, or otherwise, arising from, out of or in connection with the Document or the use or other dealings in the Document.
 
 **
-
-## Earlier material
-
-+++
-title = "Keeping a Personal Dictionary with Org-mode"
-author = ["emsenn"]
-tags = ["OrgMode"]
-draft = false
-+++
 
 ```org
 Here's what I think about /Galavant/:

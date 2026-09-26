@@ -36,6 +36,4 @@ A 2022– wave: train a neural network to produce design candidates, optionally 
 
 The gap between commercial TO output and a printable STL has narrowed dramatically since 2018; the gap between printable STL and a *certified* part remains the bottleneck. See [qualification-and-certification](./predication-qualification-and-certification.md).
 
-## Earlier material
-
 Naive TO ignores AM-specific constraints; the potential research integrates them:

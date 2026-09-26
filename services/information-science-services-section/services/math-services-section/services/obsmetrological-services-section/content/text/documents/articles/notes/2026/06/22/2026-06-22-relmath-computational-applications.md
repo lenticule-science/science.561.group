@@ -2023,8 +2023,6 @@ The bold but precise version is:
 
 RelMath turns contradiction and failure from expensive exceptional cases into first-class finite transitions with canonical settlement, obstruction, and causal-projection computations.
 
-## Earlier material
-
 ⊥  / absurd  / no evidence
 t  / potential     / positive evidence
 f  / active     / negative evidence

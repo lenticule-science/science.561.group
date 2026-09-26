@@ -115,6 +115,4 @@ Plants are vigorous and prolific: a single mature plant produces 50+ fruits over
 - [Physalis philadelphica](../../../../../../../../natural-science-services-section/services/biological-science-services-section/services/botany-services-section/content/text/glossary/terms/physalis-philadelphica.md)
 - [Pepper](./pepper.md) (Capsicum—warm-season Solanaceae)
 
-## Earlier material
-
 **Cooked salsas**: Simmer tomatillos with spices, vinegar, and other ingredients for a shelf-stable hot sauce.

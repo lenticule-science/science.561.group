@@ -44,6 +44,4 @@ term/concept level.
 - [concept](./concept.md) — develops an idea; the building blocks that texts compose
 - [topic](./topic.md) — the area of inquiry a text belongs to
 
-## Earlier material
-
 A ***text*** is the result of [writing](../../../../services/communication-science-services-section/services/writing-services-section/content/text/glossary/terms/writing.md) that is bound and [structurated](../../../../../philosophy-services-section/content/text/glossary/terms/structurated.md).

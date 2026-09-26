@@ -21,7 +21,3 @@ The standard graduate textbook on AM, organized around the seven ASTM/ISO 52900 
 **Limitations.** Light on machine-learning-driven process control (a frontier active 2022–2026), and the metal AM cost models in Ch. 17 already lag behind 2024 LPBF productivity gains.
 
 **Cited from.** [predication-additive-manufacturing](./predication-additive-manufacturing.md), several theorems.
-
-## Earlier material
-
-**Cited from.** [`_index.md`](../../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/technology/fabrication/material-science/additive-manufacturing/archive/_index.md), several theorems, AM theory _index.

@@ -7,6 +7,3 @@ visibility: public
 type: set
 ---
 
-## Earlier material
-
-- catalog of babbles

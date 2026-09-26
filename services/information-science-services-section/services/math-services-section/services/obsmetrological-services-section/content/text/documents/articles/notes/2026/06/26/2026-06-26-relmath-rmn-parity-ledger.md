@@ -1731,8 +1731,3 @@ cd lib/animating && npm run build
 cd lib/animating && node --test test/animating.test.mjs
 cd lib/animating && npm test
 ```
-
-## Earlier material
-
-`lake build RelMath` succeeds for the full import spine.
-Current warnings include existing lint warnings and two known `sorry` declarations, honest frontier markers rather than proved statements:

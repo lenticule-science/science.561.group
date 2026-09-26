@@ -545,7 +545,5 @@ Kaplan, and Chaim Goodman-Strauss.
 [Vereshchagin 2026] Nikolay Vereshchagin.
 "Matching Rules for Substitution and Hierarchical Tilings for any Substitution with Finite Local Complexity." arXiv:2606.25005, 2026. https://arxiv.org/abs/2606.25005
 
-## Earlier material
-
 Labbé and Selinger's Markov-partition construction makes the Hat particularly amenable to finite-state coding @labbeselinger2026.
 It suggests a program:

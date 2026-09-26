@@ -12,7 +12,3 @@ visibility: public
 ### binary
 #### [social media platform](../../../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/social-media-platform.md)
 ##### Fediverse
-
-## Earlier material
-
-1.  Fediverse

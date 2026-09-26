@@ -22,6 +22,4 @@ Contemporary zinefests vary considerably in scale and character. Some remain sma
 
 The tension between zinefests as community spaces and zinefests as commercial events reflects a broader dynamic in how subcultural forms are absorbed into institutional and market logics. When zine-making becomes a livelihood sustained by festival circuits, grant funding, and online sales, the economic structure of the practice begins to resemble the publishing apparatus that zines originally bypassed. The question of whether this constitutes maturation or recuperation depends on what one takes the zine's essential character to be: its material form, its independence from institutional mediation, or its function within a particular community's self-organization.
 
-## Earlier material
-
 A ***zinefest*** is a form of [marketplace](../../../../../../../../../knowledge-services-section/content/text/glossary/terms/marketplace.md) specializing in [distributing](../../../../../../../../../knowledge-services-section/content/text/glossary/terms/distributing.md) or [selling](../../../../../../../../../../../philosophy-services-section/content/text/glossary/terms/selling.md) [zines](zine.org.md).

@@ -15,6 +15,4 @@ task
 where project = [[Binding Generations]]
 ```
 
-## Earlier material
-
 ***Binding Generations*** is (leader:: [[Es]])' (method:: [[content brand]]), focused on (function:: [[zeds/Relationality/triage/00-probably-redundant/modules/relating]] [[total liberation]] and [[reading]]).

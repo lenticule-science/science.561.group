@@ -34,7 +34,3 @@ The design module's [information architecture](../../design/disciplines/informat
 - [document design](../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/document-design.md) — headings, sections, and folding structures implement progressive disclosure visually
 - [task analysis](../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/task-analysis.md) — different tasks require different levels of detail; progressive disclosure supports this
 - [minimalism](../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/minimalism.md) — minimalist documentation uses progressive disclosure to present information when the reader needs it
-
-## Earlier material
-
-In this corpus, progressive disclosure operates at several levels:

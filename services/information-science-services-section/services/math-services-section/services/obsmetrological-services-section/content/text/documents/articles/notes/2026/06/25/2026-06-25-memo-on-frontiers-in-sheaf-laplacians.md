@@ -1933,7 +1933,3 @@ The algorithm-pattern is also stable:
 ```
 
 That is the frontier: not “consensus,” not “prediction,” not “graph learning,” but a general theory of **when local worlds can be made global, how, at what precision, under what translations, and with what certified residue when they cannot.**
-
-## Earlier material
-
-The formula-pattern is active across domains:

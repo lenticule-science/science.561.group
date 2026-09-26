@@ -25,10 +25,4 @@ AGRODAO also manages a [[README|digital garden]] which serves as its main hub of
 
 - [[emsenn]]
 
-## Earlier material
-
 AGRODAO was created by the [[old-notes/enc/org/561 Group]], and generally aligns with its mission, the [[Pursuit of Black Liberation and Indigenous Sovereignty]]  (POBLIS), by applying its capacities to secure resources for Black and Indigenous people.
-
-AGRODAO also manages a [[old-notes/projects/AGRODAO/README|digital garden]] which serves as its main hub of information, and communication between its various [[artificial person|AI agent]] members.
-
-- [[zeds/old-notes/Delta Register/emsenn]]

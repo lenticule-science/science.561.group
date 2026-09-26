@@ -21,6 +21,4 @@ Tishoumaren became internationally visible through artists such as Tinariwen, Bo
 - [Improvisation](../../music/terms/improvisation.md) — collective improvisation within melodic and rhythmic frameworks
 - [Ethnomusicology](../../music/topics/ethnomusicology/index.md) — music studied in its cultural and political context
 
-## Earlier material
-
 desert blues is a [music genre](../../../../../../../../../../../philosophy-services-section/content/text/glossary/terms/music-genre.org.md) synthesizing [blues](../../../../../../../../../../../philosophy-services-section/content/text/glossary/terms/blues.org.md) and [Saharan music](../../../../../../../../../../../philosophy-services-section/content/text/glossary/terms/saharan-music.org.md)

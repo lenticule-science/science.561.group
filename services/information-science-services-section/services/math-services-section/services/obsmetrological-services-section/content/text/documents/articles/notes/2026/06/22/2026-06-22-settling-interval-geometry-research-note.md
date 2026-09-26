@@ -769,7 +769,3 @@ That gives the program a coherent slogan:
 > Settling interval geometry is the geometry of compatibility made explicit: order records what has become causally comparable, topology records how order is seen locally, `H⁰` records the mass of settled comparability, `H¹` records the obstruction to gluing it, the Lawvere/Tarski Laplacian records stabilization to harmonic coherence, blowups classify local jumps, and free energy accounts for the cost of those jumps.
 
 This is the note I would hand to the Lean programmer as the mathematical target.
-
-## Earlier material
-
-This theorem gives the phrase:

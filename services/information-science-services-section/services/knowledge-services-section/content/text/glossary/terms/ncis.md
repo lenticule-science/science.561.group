@@ -13,6 +13,4 @@ visibility: public
 
 ### NCIS, S05E02: "Family" {#4047df1e-cfec-47b0-b48b-aa2de8827962}
 
-## Earlier material
-
 ***NCIS*** is a [police-procedural television show](police-procedural-television-show.md).

@@ -25,7 +25,3 @@ Inherits from fabrication. See [predication-additive-manufacturing](../../../ser
 ## Scope
 
 This theory does *not* aim to subsume polymer science, metallurgy, or ceramic science. It carries enough material physics for fabrication processes to cite and no more. When a fabrication theorem needs deeper material physics than this theory carries, the right move is to add the missing concept here, then cite it — not to inline the physics in the fabrication theorem.
-
-## Earlier material
-
-Inherits from [fabrication](../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/technology/fabrication). See [additive-manufacturing/_index.md](../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/applied-sciences/technology/fabrication/material-science/additive-manufacturing/_index.md) for the frontmatter convention.

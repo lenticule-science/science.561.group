@@ -45,6 +45,4 @@ In the context of [relationality](../../research/2026/relationality/index.md), g
 - Confusing graphs with their visual drawings. The same graph can be drawn many different ways.
 - Forgetting that a tree requires *both* connectivity and acyclicity.
 
-## Earlier material
-
 The **degree** of a vertex is the number of edges incident to it. The **handshaking lemma** states that the sum of all degrees equals twice the number of edges: ∑v∈Vdeg⁡(v)=2∣E∣\sum_{v \in V} \deg(v) = 2|E|.

@@ -45,8 +45,6 @@ duplicated across multiple directories.
 - [topic](./topic.md) — an area of inquiry; broader than a concept
 - [discipline](./discipline.md) — a structured domain of knowledge that contains concepts
 
-## Earlier material
-
 ``` {.elisp tangle="./src/gpe/org-roam-capture-templates/c.el"}
 ("c" "concept")
 ```

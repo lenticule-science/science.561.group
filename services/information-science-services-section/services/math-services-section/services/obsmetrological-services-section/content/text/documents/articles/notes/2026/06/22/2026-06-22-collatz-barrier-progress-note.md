@@ -492,7 +492,3 @@ first descent appears governed by first coefficient crossing
 ```
 
 but this is known-adjacent terrain, close to Terras-style coefficient stopping time ideas. The value of this scratchpad is that it identifies exactly what should be stated, tested, and eventually formalized.
-
-## Earlier material
-
-The potential barrier-prefix tree grows quickly. Counts by depth through `24`:

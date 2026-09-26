@@ -28,13 +28,4 @@ Species are the basic units of biological classification (taxonomy). Linnaeus's 
 - [Gene](../../../../../genetics-services-section/content/text/glossary/terms/gene.md) — the molecular basis of the heritable variation on which speciation depends
 - [Symbiosis](../../../../../ecology-services-section/content/text/glossary/terms/symbiosis.md) — cross-species relationships that can shape speciation
 
-## Earlier material
-
-- [Organism](../../../../../../content/text/glossary/terms/organism.md) — the individual members of a species
-- [Natural selection](natural-selection.md) — the primary mechanism driving species divergence
-- [Gene](../../../../../genetics-services-section/content/text/glossary/terms/gene.md) — the molecular basis of the heritable variation on which speciation depends
-- [Symbiosis](../../../../../ecology-services-section/content/text/glossary/terms/symbiosis.md) — cross-species relationships that can shape speciation
-
-## Earlier material
-
 A ***species*** is a mode of [genus](../../../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/genus.md).

@@ -12,6 +12,4 @@ visibility: public
 
 A reference from one markdown file to another, often encoded as a path.
 
-## Earlier material
-
 A ***link*** is a [structure](../../../../../../../../../philosophy-services-section/content/text/glossary/terms/structure.org.md) for [linking](../../../../../../../../../information-science-services-section/services/knowledge-services-section/content/text/glossary/terms/linking.md) a [thing](../../../../../../../../../philosophy-services-section/content/text/glossary/terms/thing.org.md) to one or more other things.

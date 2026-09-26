@@ -13,6 +13,4 @@ Factorization reveals hidden structure. If every instance of a process passes th
 
 When this library uses `factors-through` as a predicate, the subject is a process and the object is an intermediate it must pass through on the way to its result.
 
-## Earlier material
-
 Factorization reveals hidden structure. If every instance of a process passes through the same intermediate, that intermediate is doing real work — it is a necessary waypoint, not an accident. Click-through rate factors through impression and conversion rate because every click requires first being seen (impression) and then acting (conversion).

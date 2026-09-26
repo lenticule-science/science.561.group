@@ -126,11 +126,3 @@ None of this is inert archival trivia. Leader-speech records from **2026-07-19, 
 ## agent's closing note
 
 What's settled: OpenClaw is genuinely, substantially researched in this repo — a real product with a full decommissioned integration architecture, a directly-inherited character-file convention still live today, and independent real-world news confirmation. Cline, Aider, OpenHands, and SWE-agent each have comparably deep (if narrower) dedicated analyses in the same legacy archive. What's thin: Codex, Cursor, and Devin have no comparable deep-dive, only incidental mentions; MetaGPT and Manus don't appear at all. What's live and unresolved right now: the Leader is actively using "Honcho+Paperclip+Hermes+OpenClaw" as this week's competitive yardstick, two of those four names (Honcho, Paperclip) have no research file at all, and today's work-order dossiers are the first concrete, dated response — this is not settled history, it's an open, currently-worked front.
-
-## Earlier material
-
-> Verbatim output of a research subagent run 2026-07-24 (Agent tool, general-purpose, agentId a23a6c9c013b41616).
-> NOT summarized — this is the agent's actual structured deliverable.
-> Citations are the agent's; verify against the cited files before relying on them.
-> The cited `agent-harnesses`, FeltOS, Red Cup, and PyFARS paths are historical
-> provenance names from before the monorepo consolidation, not live locations.

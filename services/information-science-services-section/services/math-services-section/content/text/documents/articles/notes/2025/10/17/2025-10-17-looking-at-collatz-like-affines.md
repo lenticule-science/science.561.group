@@ -193,6 +193,4 @@ for RITM systems.
 6.  Draft short paper: **Parity Commutation and Minimal Cohesion in
     Collatz-Type Systems**.
 
-## Earlier material
-
 I then look at residue classes modulo small integers $m$, partitioning the domain and comparing stabilization behavior per class. This residue-class analysis reveals hidden symmetries and rate differences that could be used to probe the arithmetic structure of Collatz-like affines via RITM’s operators.
