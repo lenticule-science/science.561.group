@@ -43,6 +43,8 @@ relationship. [2]
 simpler with overlooked customers and improves until it takes the
 mainstream. [6]
 
+**Division of labor.** Splitting work into specialized jobs. [4]
+
 **Double-entry bookkeeping.** Recording every transaction as an equal debit
 and credit. [1]
 
@@ -64,6 +66,9 @@ income over revenue. [1]
 **Human, social and structural capital.** Skills; relationships and trust;
 knowledge built into processes. [5]
 
+**Ideation; screening.** Generating many ideas without judging; then
+evaluating them by fit, demand, cost and risk. [6]
+
 **Income statement.** Revenue, costs and profit over a period. [1]
 
 **Interests and positions.** Why someone wants something; what they say they
@@ -80,8 +85,17 @@ organizing to carry out a strategy. [2, 4, 7]
 
 **Marketing mix (4 Ps).** Product, price, place, promotion. [2]
 
+**Matrix structure.** Grouping jobs two ways at once, such as by function
+and by product. [4]
+
 **Motivators and hygiene factors.** Herzberg's sources of satisfaction and
 of dissatisfaction. [5]
+
+**Networking strategy.** Deciding a goal, mapping ties, finding where people
+gather, offering help first and keeping in touch. [6]
+
+**Plain language; tone; channel.** Short sentences and common words; a
+register that fits the relationship; the medium chosen for a message. [6]
 
 **Positioning statement.** How an offer should be seen by its target,
 relative to alternatives. [2]
@@ -93,6 +107,10 @@ informational. [4]
 
 **Psychological safety.** A team's shared belief that it's safe to speak up.
 [5]
+
+**Real team; mutual accountability.** A small group with complementary
+skills committed to a common purpose, goals and approach; members holding
+each other, not only the leader, to account. [5]
 
 **Return on assets (ROA); return on equity (ROE).** Net income over total
 assets; over equity. [1]
@@ -109,6 +127,9 @@ agents; a sales subsidiary; production abroad. [6]
 
 **Stuck in the middle.** Pursuing both low cost and differentiation without
 achieving either. [3]
+
+**Sustaining innovation.** An improvement for a business's existing
+customers on the measures they already value. [6]
 
 **SWOT.** Strengths, weaknesses, opportunities, threats. [3]
 

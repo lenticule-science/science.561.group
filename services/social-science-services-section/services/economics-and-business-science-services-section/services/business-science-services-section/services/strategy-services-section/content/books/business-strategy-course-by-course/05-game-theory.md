@@ -174,6 +174,9 @@ to Continental (PARTS: players and rules), not by threatening a price war.
 5. In FieldTable's sequential game, why isn't its threat to fight credible?
 6. How did the exclusive farm agreements change the outcome?
 7. Name the five PARTS elements.
+8. A national grocery-delivery app is considering selling to restaurants in
+   FieldTable's region. Answer the three questions this chapter asks about
+   any player.
 
 ## Answers
 
@@ -192,5 +195,9 @@ to Continental (PARTS: players and rules), not by threatening a price war.
 6. They made entry unprofitable for Continental (−5 against 0 for staying
    out), so it stays out; FieldTable earns 90 instead of 50.
 7. Players, added values, rules, tactics, scope.
+8. For example: what it wants (growth in a new customer segment, using its
+   existing drivers); what it can do (large marketing budget, a delivery
+   fleet, but no farm relationships); what it believes about FieldTable (that
+   it's small and easy to outspend).
 
 *Next: Chapter 6 treats FieldTable as a platform.*

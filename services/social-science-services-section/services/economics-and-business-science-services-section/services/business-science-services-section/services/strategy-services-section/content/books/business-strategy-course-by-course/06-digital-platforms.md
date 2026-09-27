@@ -173,4 +173,4 @@ local delivery and planning with each farm.
    selling on more than one channel or building a direct relationship with
    players, such as a mailing list.
 
-*Next: the study plan.*
+*Next: Chapter 7 is a guide to the course projects.*

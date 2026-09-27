@@ -39,7 +39,7 @@ references:
       date-parts:
         - [1996]
   porter1979:
-    type: article-magazine
+    type: article-journal
     title: How Competitive Forces Shape Strategy
     author:
       - family: Porter
@@ -52,7 +52,7 @@ references:
       date-parts:
         - [1979]
   porter2008:
-    type: article-magazine
+    type: article-journal
     title: The Five Competitive Forces That Shape Strategy
     author:
       - family: Porter
@@ -78,7 +78,7 @@ references:
       date-parts:
         - [1991]
   brandenburger-nalebuff1995:
-    type: article-magazine
+    type: article-journal
     title: "The Right Game: Use Game Theory to Shape Strategy"
     author:
       - family: Brandenburger
@@ -115,7 +115,7 @@ references:
       date-parts:
         - [1997]
   christensen2015:
-    type: article-magazine
+    type: article-journal
     title: What Is Disruptive Innovation?
     author:
       - family: Christensen
@@ -170,7 +170,7 @@ references:
       date-parts:
         - [1947]
   kotter1995:
-    type: article-magazine
+    type: article-journal
     title: "Leading Change: Why Transformation Efforts Fail"
     author:
       - family: Kotter
@@ -225,7 +225,7 @@ references:
       date-parts:
         - [1997]
   christensen2011:
-    type: article-magazine
+    type: article-journal
     title: "The Big Idea: The New M&A Playbook"
     author:
       - family: Christensen
@@ -244,7 +244,7 @@ references:
       date-parts:
         - [2011]
   dyer-kale-singh2004:
-    type: article-magazine
+    type: article-journal
     title: When to Ally and When to Acquire
     author:
       - family: Dyer
@@ -388,7 +388,7 @@ references:
       date-parts:
         - [2003]
   eisenmann2006:
-    type: article-magazine
+    type: article-journal
     title: Strategies for Two-Sided Markets
     author:
       - family: Eisenmann

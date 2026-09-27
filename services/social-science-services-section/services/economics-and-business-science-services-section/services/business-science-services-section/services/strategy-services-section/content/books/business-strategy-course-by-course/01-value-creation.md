@@ -157,6 +157,9 @@ restaurants'.
 6. Name one way to weaken the threat of substitutes.
 7. In the worked example, what share of the value created does FieldTable
    keep after delivery costs?
+8. A bakery says its target market is "people who like bread." Restate it as
+   a diagnosed target, and name one thing that would raise that group's
+   willingness to pay.
 
 ## Answers
 
@@ -172,5 +175,8 @@ restaurants'.
 6. Raise the value of your offer relative to the substitute, for example by
    adding convenience or reliability the substitute lacks.
 7. $10 − $4 = $6 of the $28, about 21 percent.
+8. For example: "office workers within a block who buy lunch on weekdays and
+   want something fresh and quick." Raising their willingness to pay: ready
+   to collect at a set time, with no queue.
 
 *Next: Chapter 2 looks at how industries change.*

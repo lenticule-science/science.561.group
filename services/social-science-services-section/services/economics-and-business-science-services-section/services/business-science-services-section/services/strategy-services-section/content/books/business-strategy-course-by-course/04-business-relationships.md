@@ -82,11 +82,14 @@ of volume); the restaurant association (a complementor).
 
 **Health scorecard (1 = poor, 5 = strong):**
 
-| Relationship | Benefit | Trust | Clarity | Communication | Balance | Adaptability |
-|---|---|---|---|---|---|---|
-| Top farms | 4 | 4 | 3 | 3 | 3 | 4 |
-| Courier co-op | 4 | 5 | 4 | 4 | 3 | 3 |
-| Restaurant groups | 3 | 3 | 2 | 3 | 2 | 3 |
+| Dimension | Top farms | Courier co-op | Restaurant groups |
+|---|---|---|---|
+| Mutual benefit | 4 | 4 | 3 |
+| Trust | 4 | 5 | 3 |
+| Clarity | 3 | 4 | 2 |
+| Communication | 3 | 4 | 3 |
+| Balance | 3 | 3 | 2 |
+| Adaptability | 4 | 3 | 3 |
 
 **Reading it.** The restaurant groups score lowest on clarity and balance:
 they expect first pick of scarce items, which FieldTable has never agreed to,
@@ -135,12 +138,14 @@ can't buy.
    price. What's the risk of doing so?
 7. How does a written allocation rule help FieldTable's relationship with the
    restaurant groups?
+8. FieldTable buys packaging from a supplier it could replace within a week at
+   the same price. Is that a key relationship? Why?
 
 ## Answers
 
 1. Relation-specific assets, knowledge-sharing routines, complementary
    resources and effective governance.
-2. A shared, largely unwritten understanding of how each party will behave,
+2. A shared understanding, much of it unwritten, of how each party will behave,
    sustained because both value the relationship's future. It needs
    credibility and clarity.
 3. Because it's slow and hard to build, and rivals can't copy it by signing a
@@ -153,5 +158,8 @@ can't buy.
    partner may leave as soon as it can, taking future value with it.
 7. It turns an unclear, disputed expectation into a clear one both can rely
    on.
+8. No: losing it wouldn't seriously hurt the business, and a better
+   relationship wouldn't add much value. Key relationships are those where one
+   of those is true.
 
 *Next: Chapter 5 models how rivals respond, with game theory.*

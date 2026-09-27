@@ -24,7 +24,7 @@ references:
       date-parts:
         - [1996]
   porter1979:
-    type: article-magazine
+    type: article-journal
     title: How Competitive Forces Shape Strategy
     author:
       - family: Porter
@@ -37,7 +37,7 @@ references:
       date-parts:
         - [1979]
   porter2008:
-    type: article-magazine
+    type: article-journal
     title: The Five Competitive Forces That Shape Strategy
     author:
       - family: Porter
@@ -63,7 +63,7 @@ references:
       date-parts:
         - [1991]
   brandenburger-nalebuff1995:
-    type: article-magazine
+    type: article-journal
     title: "The Right Game: Use Game Theory to Shape Strategy"
     author:
       - family: Brandenburger
@@ -100,7 +100,7 @@ references:
       date-parts:
         - [1997]
   christensen2015:
-    type: article-magazine
+    type: article-journal
     title: What Is Disruptive Innovation?
     author:
       - family: Christensen
@@ -155,7 +155,7 @@ references:
       date-parts:
         - [1947]
   kotter1995:
-    type: article-magazine
+    type: article-journal
     title: "Leading Change: Why Transformation Efforts Fail"
     author:
       - family: Kotter
@@ -210,7 +210,7 @@ references:
       date-parts:
         - [1997]
   christensen2011:
-    type: article-magazine
+    type: article-journal
     title: "The Big Idea: The New M&A Playbook"
     author:
       - family: Christensen
@@ -229,7 +229,7 @@ references:
       date-parts:
         - [2011]
   dyer-kale-singh2004:
-    type: article-magazine
+    type: article-journal
     title: When to Ally and When to Acquire
     author:
       - family: Dyer
@@ -373,7 +373,7 @@ references:
       date-parts:
         - [2003]
   eisenmann2006:
-    type: article-magazine
+    type: article-journal
     title: Strategies for Two-Sided Markets
     author:
       - family: Eisenmann
@@ -489,7 +489,8 @@ and strategy research the field is built on, and asks its own questions.
 ## The certificate at a glance
 
 Cornell's Johnson Graduate School of Management offers the certificate
-online. Read from eCornell on 27 September 2026 [@ecornell-bs-2026]: about
+online; its courses are authored by Justin P. Johnson, professor of economics
+at the Cornell SC Johnson College of Business. Read from eCornell on 27 September 2026 [@ecornell-bs-2026]: about
 three months at three to five hours a week; six two-week courses; 60
 professional development hours (6 CEUs), also counted toward SHRM and HRCI
 recertification; and a list price of $3,900, with payment plans. It includes
@@ -504,6 +505,8 @@ workshops, which this book doesn't cover.
 | LSM314 | Getting the Most Out of Your Business Relationships | 4 |
 | LSM315 | Game Theory and Business Strategy | 5 |
 | LSM316 | Digital Platform Strategy | 6 |
+
+Chapter 7 is a guide to the work each course asks you to produce.
 
 ## The running example
 

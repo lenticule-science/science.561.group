@@ -30,7 +30,9 @@ costs.
 
 ## Disruption and its conditions
 
-Clayton Christensen's theory of **disruptive innovation** explains how
+Clayton Christensen distinguished **sustaining innovation**, improvement for
+existing customers on the measures they already value, which incumbents are
+good at, from **disruptive innovation**, which explains how
 successful incumbents lose to entrants [@christensen1997;
 @christensen2015]. An entrant starts either at the **low end**, with a
 cheaper, simpler product for customers the incumbent overserves, or in a
@@ -55,7 +57,8 @@ prophecy. Before calling a rival disruptive, check:
 
 When the future can go more than one way, a single forecast misleads.
 **Scenario planning** builds a few plausible futures and tests strategies
-against them [@schoemaker1995]:
+against them. Paul Schoemaker sets out a longer process; its core steps are
+these [@schoemaker1995]:
 
 1. Identify the forces that matter most to your business.
 2. Separate what's predictable from what's uncertain.
@@ -140,8 +143,8 @@ written into the routine once it works (refreeze).
 ## Key terms
 
 - **Gradual change; shock; disruption; uncertainty.**
-- **Disruptive innovation; low-end and new-market footholds; sustaining
-  innovation.**
+- **Sustaining innovation; disruptive innovation; low-end and new-market
+  footholds.**
 - **Scenario planning; signposts.**
 - **Unfreeze, change, refreeze; Kotter's eight steps.**
 - **Resistance to change.**
@@ -159,6 +162,12 @@ written into the routine once it works (refreeze).
 6. Give three of Kotter's eight steps.
 7. Operations staff resist a new schedule. Name two likely reasons and one
    response to each.
+8. Classify each change: (a) a port strike halts imports for three weeks; (b)
+   diners' taste for plant-based food grows a little each year; (c) no one
+   knows whether a proposed tax on delivery vehicles will pass.
+9. A newspaper sees free online news taking younger readers, who never
+   subscribed. Which response fits best: defend the core, adapt it, build a
+   separate unit, or exit? Why?
 
 ## Answers
 
@@ -177,5 +186,9 @@ written into the routine once it works (refreeze).
 7. For example: longer days (response: pay a shift bonus and ask for
    volunteers); doubt it will work (response: a short trial with results
    shared).
+8. (a) A shock; (b) gradual change; (c) uncertainty.
+9. Build a separate unit: the threat starts with non-customers and a
+   different business model, which the core's processes and priorities would
+   reject, as Christensen advised for incumbents facing disruption.
 
 *Next: Chapter 3 weighs growth through mergers and alliances.*
