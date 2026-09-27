@@ -63,14 +63,14 @@ organization:
 
 1. **Workforce planning:** how many people with which skills, when.
 2. **Recruiting:** attracting candidates.
-3. **Selecting:** choosing among them fairly, against the person
+3. **Selecting:** choosing among them against the person
    specification, with structured interviews and work samples.
 4. **Onboarding:** welcoming and preparing new people.
 5. **Training and development.**
 6. **Performance management:** setting goals, giving feedback, appraising.
 7. **Compensation and benefits.**
 8. **Motivation and retention:** keeping good people engaged (Chapter 5).
-9. **Separation:** handling departures fairly.
+9. **Separation:** handling departures with respect and due process.
 
 ## Organizational culture
 
@@ -117,7 +117,7 @@ a head baker (bakers), a front-of-house manager (three shop leads), and a
 bookkeeper. Wholesale adds a **wholesale coordinator** reporting to the
 owner, who works across baking (orders) and delivery (van driver). The head
 baker's span grows from 9 to 11 with the early-shift bakers; the owner's
-span stays at 4.
+span grows from 3 to 4.
 
 **Coordination.** Wholesale orders are standardized (a fixed order form due
 at 2 p.m.), baking is standardized by recipe, and the coordinator and head
@@ -139,6 +139,16 @@ are shared at the weekly all-staff meeting.
 **Power.** The head baker holds legitimate power over bakers and expert power
 everyone respects; if she opposes the early bake, it fails. So the owner
 involves her in designing it.
+
+## Apply it to your organization
+
+1. Draw your part of the organization: reporting lines and spans of
+   control.
+2. For one job, write a one-paragraph job description and a person
+   specification.
+3. Name one artifact, one espoused value and one underlying assumption of
+   your organization's culture. Do they agree?
+4. Who has expert or informational power beyond their title?
 
 ## Key terms
 
@@ -167,6 +177,7 @@ involves her in designing it.
 6. The bookkeeper is the only one who knows the bank's lending terms. What
    kind of power does that give her?
 7. Why does the owner involve the head baker in designing the early bake?
+8. Name four things an organizational brief covers.
 
 ## Answers
 
@@ -182,6 +193,9 @@ involves her in designing it.
 6. Informational power (and expert power).
 7. Because she holds legitimate power over the bakers and expert power they
    respect; without her support the change would fail.
+8. Any four of: structure and reporting lines; key roles with job
+   descriptions; HR processes for staffing them; the culture to build; power
+   and decision rights (and the strategy it serves).
 
 *Next: Chapter 5 turns to motivation, teams and leading without formal
 authority.*

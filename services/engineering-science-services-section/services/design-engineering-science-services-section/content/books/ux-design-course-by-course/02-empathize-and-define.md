@@ -198,6 +198,6 @@ then wasted trips will drop and more members will borrow on weekends."
    the steps depend on limited phone hours.
 9. For example: "As a busy member, I want a text the day before a tool is
    due so that I return it on time." Value proposition: "Reminders mean no
-   late returns and no fines, without having to remember due dates."
+   late returns, without having to remember due dates."
 
 *Next: Chapter 3 generates solutions.*

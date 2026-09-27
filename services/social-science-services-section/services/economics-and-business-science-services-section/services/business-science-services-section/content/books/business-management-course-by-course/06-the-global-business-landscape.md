@@ -94,18 +94,18 @@ risk together.
 
 Ethical decisions in business are rarely between an obvious right and wrong;
 they're between competing goods and duties. Manuel Velasquez sets out
-frameworks that ask different questions [@velasquez2012]:
+frameworks that ask different questions [@velasquez2011]:
 
 - **Utilitarian:** which option produces the greatest balance of benefit
   over harm for everyone affected?
 - **Rights:** which option best respects the rights of those involved, such
   as the right to truthful information or to safety?
-- **Justice:** which option distributes benefits and burdens fairly?
+- **Justice:** which option distributes benefits and burdens justly?
 - **Caring:** which option honors the relationships and responsibilities
   involved?
 - **Virtue:** what would a person of good character do?
 
-Using several frameworks together shows where they agree (a strong signal)
+Using more than one framework together shows where they agree (a strong signal)
 and where they conflict (the real dilemma). Then decide, and be able to
 explain why.
 
@@ -144,6 +144,15 @@ relationship with its customers depends on trust. Virtue: an honest baker
 wouldn't. All five agree: decline, and offer a "baked yesterday, half price"
 label instead.
 
+## Apply it to your organization
+
+1. Rewrite the opening of a recent email you sent so it leads with the point.
+2. Map your network: five close ties, five weak ties, and one gap.
+3. Name a technology that could disrupt your industry, and test it against
+   Christensen's conditions.
+4. Take a recent decision with an ethical side and apply two frameworks to
+   it.
+
 ## Key terms
 
 - **Lead with the point; plain language; tone; channel.**
@@ -166,6 +175,8 @@ label instead.
 6. A supplier offers a large discount if you drop a smaller supplier you've
    worked with for years. Apply two ethical frameworks.
 7. Why separate generating ideas from judging them?
+8. You want to move into health-care consulting. Outline a networking
+   strategy in five steps.
 
 ## Answers
 
@@ -188,5 +199,10 @@ label instead.
    is correct.
 7. Because judging ideas as they appear stops people from offering unusual
    ones and ends the search too early.
+8. For example: decide the goal (learn the field and meet people who hire);
+   map your ties (who you know in health care, however slightly); find where
+   consultants and clients gather (associations, conferences, online groups);
+   offer help first (share an analysis, volunteer on a committee); keep in
+   touch lightly and regularly.
 
 *Next: Chapter 7 is a guide to the courses' two briefs.*

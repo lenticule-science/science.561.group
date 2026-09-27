@@ -143,6 +143,15 @@ though with little to spare once inventory is set aside. Recommendation:
 before expanding wholesale, price it so its gross margin covers the extra
 delivery and credit costs, and set payment terms of no more than 14 days.
 
+## Apply it to your organization
+
+1. Get your organization's latest income statement and balance sheet, or a
+   public company's.
+2. Calculate the current ratio, gross and net margins, ROE and
+   debt-to-equity.
+3. Compare each with the year before. Which moved most, and why?
+4. Write one recommendation the numbers support.
+
 ## Key terms
 
 - **Accounting; finance; double-entry bookkeeping.**
@@ -169,6 +178,13 @@ delivery and credit costs, and set payment terms of no more than 14 days.
    0.5, the other 3.0. Which is riskier, and why?
 7. Harbor Street's revenue grew but its net margin fell. Name two likely
    causes from the worked example.
+8. In one sentence each, what does accounting do in a business, and what does
+   finance do?
+9. A business has COGS of $600,000 and inventory of $80,000. What's its
+   inventory turnover, and about how many days of stock does it hold?
+10. A café's revenue grew 15 percent while its gross margin fell 4 points
+    and its days sales outstanding doubled. What would you recommend before it
+    expands further?
 
 ## Answers
 
@@ -185,5 +201,12 @@ delivery and credit costs, and set payment terms of no more than 14 days.
    fall in profit could leave it unable to meet its debts.
 7. Lower-priced wholesale sales and higher flour costs (together lowering
    gross margin), plus higher interest.
+8. Accounting records what has happened to the business's money and reports
+   it in standard forms; finance uses those numbers to decide what to do next,
+   such as where to invest and how to pay for it.
+9. 600,000 / 80,000 = 7.5 turns a year, about 365 / 7.5 ≈ 49 days of stock.
+10. For example: find out why margin fell and fix pricing or costs first, and
+    tighten payment terms to bring cash in sooner, before adding volume that
+    would deepen both problems.
 
 *Next: Chapter 2 turns to customers and marketing.*

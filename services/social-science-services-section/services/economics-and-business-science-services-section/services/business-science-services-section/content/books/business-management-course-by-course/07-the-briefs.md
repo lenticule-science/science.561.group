@@ -15,7 +15,7 @@ and 4.*
 eCornell's course pages describe two written projects
 [@ecornell-bme-2026]: in Marketing Fundamentals, a strategic marketing brief
 built in three parts, and in Managing Organizations, an organizational brief
-that addresses each step of structuring a firm. This chapter doesn't describe
+that addresses each step of structuring a firm, in five parts. This chapter doesn't describe
 the courses' templates or grading. It gives a checklist for each kind of
 document, drawn from the chapters that teach its parts, so you can judge your
 own draft. Use your own organization, as the courses ask, or a business you

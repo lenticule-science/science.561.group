@@ -70,7 +70,7 @@ references:
       date-parts:
         - [1956]
   reichheld-sasser1990:
-    type: article-magazine
+    type: article-journal
     title: "Zero Defections: Quality Comes to Services"
     author:
       - family: Reichheld
@@ -163,6 +163,25 @@ references:
     issued:
       date-parts:
         - [2019, 8, 19]
+  booms-bitner1981:
+    type: chapter
+    title: Marketing Strategies and Organization Structures for Service Firms
+    author:
+      - family: Booms
+        given: Bernard H.
+      - family: Bitner
+        given: Mary Jo
+    container-title: Marketing of Services
+    editor:
+      - family: Donnelly
+        given: James H.
+      - family: George
+        given: William R.
+    publisher: American Marketing Association
+    page: 47-51
+    issued:
+      date-parts:
+        - [1981]
   mintzberg1979:
     type: book
     title: The Structuring of Organizations
@@ -292,7 +311,7 @@ references:
       date-parts:
         - [1988]
   katzenbach-smith1993:
-    type: article-magazine
+    type: article-journal
     title: The Discipline of Teams
     author:
       - family: Katzenbach
@@ -381,7 +400,7 @@ references:
     issued:
       date-parts:
         - [1977]
-  velasquez2012:
+  velasquez2011:
     type: book
     title: "Business Ethics: Concepts and Cases"
     edition: "7"
@@ -391,7 +410,7 @@ references:
     publisher: Pearson
     issued:
       date-parts:
-        - [2012]
+        - [2011]
 ---
 
 # The eCornell Business Management Essentials Certificate as of September 2026
@@ -434,7 +453,7 @@ refused automated reading.
 |---|---|
 | Financial statements and ratios | Subramanyam [@subramanyam2014]; the accounting section's glossary |
 | Segmentation | Smith [@smith1956]; Kotler and Keller [@kotler-keller2016] |
-| The marketing mix (4 Ps) | McCarthy [@mccarthy1960] |
+| The marketing mix (4 Ps); the three service Ps | McCarthy [@mccarthy1960]; Booms and Bitner [@booms-bitner1981] |
 | Retention economics | Reichheld and Sasser [@reichheld-sasser1990] |
 | Generic strategies | Porter [@porter1980]; the critique in Miller and Dess [@miller-dess1993] |
 | Value chain | Porter [@porter1985] |
@@ -451,7 +470,7 @@ refused automated reading.
 | Networking | Granovetter [@granovetter1973] |
 | Disruptive technologies | Christensen [@christensen1997] |
 | Stages of internationalization | Johanson and Vahlne [@johanson-vahlne1977] |
-| Ethics frameworks | Velasquez [@velasquez2012] |
+| Ethics frameworks | Velasquez [@velasquez2011] |
 
 ## Where sources disagree
 

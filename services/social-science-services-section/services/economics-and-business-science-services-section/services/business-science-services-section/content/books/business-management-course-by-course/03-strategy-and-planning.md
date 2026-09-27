@@ -81,14 +81,14 @@ a business's social responsibility is to increase its profits, within the
 rules of the game [@friedman1970]. In 1984 R. Edward Freeman argued that
 managers must account for all **stakeholders**, the groups who affect or are
 affected by the firm: employees, customers, suppliers, communities and
-owners [@freeman1984]. In 2019 the Business Roundtable, a group of large-
-company chief executives, committed to deliver value to all stakeholders, not
+owners [@freeman1984]. In 2019 the Business Roundtable, a group of
+large-company chief executives, committed to deliver value to all stakeholders, not
 only shareholders [@brt2019].
 
 These are positions, not findings, and a manager needs a way to decide in
 practice. One approach: list the stakeholders; state what each expects;
 judge how much each can affect the business and how much the decision
-affects them; look for options that serve several at once; and when interests
+affects them; look for options that serve more than one at once; and when interests
 conflict, decide openly and say why. Sustained profit usually depends on
 treating employees, customers and suppliers well, so the two views often
 agree in the long run and disagree in the short run.
@@ -148,6 +148,16 @@ cooperation it depends on.
 **Forecast.** Wholesale revenue in the first year: pessimistic 8 accounts,
 expected 15, optimistic 25, each at $20,000 a year: $160,000, $300,000 or
 $500,000, with the assumption that an account averages $400 a week.
+
+## Apply it to your organization
+
+1. Name your organization's generic strategy, with evidence from what it
+   actually does.
+2. Sketch its value chain and mark the activity where it creates the most
+   value and the one where it loses the most money.
+3. Write a SWOT with two items in each quadrant, then one option from
+   crossing a pair.
+4. List five stakeholders and what each expects from your next big decision.
 
 ## Key terms
 

@@ -132,6 +132,15 @@ after the ovens peak, and pack them last. Task conflict improved the process;
 the coordinator kept it from turning personal by asking each for their
 reason.
 
+## Apply it to your organization
+
+1. Think of a job you know well. Score it from 1 to 5 on skill variety, task
+   identity, task significance, autonomy and feedback.
+2. For the lowest score, name one change that would raise it.
+3. For a team you're in, name its human, social and structural capital.
+4. Recall a recent disagreement. What were the positions, and what were the
+   interests behind them?
+
 ## Key terms
 
 - **Motivators and hygiene factors; the two-factor theory and its
@@ -158,6 +167,9 @@ reason.
    more harmful?
 7. In a dispute, one manager insists on "a second van." What question helps
    move from position to interest?
+8. You're asked to lead a group of five colleagues from different teams on a
+   project. Name three things you can do to help them become a
+   high-performing team.
 
 ## Answers
 
@@ -178,6 +190,10 @@ reason.
    moderate task conflict can improve decisions.
 7. "What would a second van let you do?" (asking why, to find the interest,
    such as faster deliveries or a backup when one van breaks down).
+8. Any three of: agree on a purpose and specific performance goals; agree on
+   how the team will work (roles, meetings, decisions); build psychological
+   safety by inviting disagreement and admitting your own mistakes; make
+   members accountable to each other, not only to you.
 
 *Next: Chapter 6 widens the view to communication, networks, innovation,
 globalization and ethics.*

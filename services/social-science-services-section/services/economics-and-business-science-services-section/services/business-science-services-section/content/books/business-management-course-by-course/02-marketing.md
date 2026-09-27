@@ -55,8 +55,9 @@ deliver the positioning. E. Jerome McCarthy grouped them as the **4 Ps**
 - **Promotion:** how customers learn about it: advertising, social media,
   events, word of mouth, sales.
 
-Services often add three more: **people**, **process** and **physical
-evidence** (the setting where the service happens). Each P must fit the
+Services often add three more, which Bernard Booms and Mary Jo Bitner
+proposed: **people**, **process** and **physical evidence** (the setting
+where the service happens) [@booms-bitner1981]. Each P must fit the
 target and fit the others. A premium product sold at a discount in a
 cluttered shop sends mixed signals.
 
@@ -124,6 +125,14 @@ weeks a year: $20,000 of revenue, $10,000 of gross profit at a 50 percent
 margin. If an account stays two years on average, CLV is about $20,000
 against a CAC of $150. Retention plan: a standing weekly order, a named
 contact, and a replace-it-free promise for any damaged delivery.
+
+## Apply it to your organization
+
+1. Name two segments your organization serves and what distinguishes their
+   needs.
+2. Write a positioning statement for one of them.
+3. Estimate its customer acquisition cost and lifetime value, even roughly.
+4. Name one change to your retention plan the numbers suggest.
 
 ## Key terms
 

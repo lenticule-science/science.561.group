@@ -4,10 +4,25 @@ The chapter in brackets is where each term is taught.
 
 **Accounting equation.** Assets = liabilities + equity. [1]
 
+**Accounting; finance.** Recording and reporting what has happened to a
+business's money; deciding what to do next with it. [1]
+
 **Accrual accounting.** Recording revenue when earned and expenses when
 incurred, whether or not cash has moved. [1]
 
 **Balance sheet.** Assets, liabilities and equity at one moment. [1]
+
+**Centralization; formalization.** How far decisions are made at the top;
+how far work follows written rules. [4]
+
+**Chain of command; departmentalization.** Who reports to whom; how jobs are
+grouped (by function, product, customer, place or matrix). [4]
+
+**Common-size and trend analysis.** Each line as a share of revenue;
+comparing the same measures across years. [1]
+
+**Coordination mechanisms.** Mutual adjustment, direct supervision and
+standardization of processes, outputs or skills. [4]
 
 **Cost leadership; differentiation; focus.** Porter's generic strategies.
 [3]
@@ -31,8 +46,14 @@ mainstream. [6]
 **Double-entry bookkeeping.** Recording every transaction as an equal debit
 and credit. [1]
 
+**Ethics frameworks.** Utilitarian (greatest net benefit), rights (respect
+for rights), justice (fair distribution), caring (honoring relationships)
+and virtue (what a good person would do). [6]
+
 **Expectancy theory.** Effort depends on expectancy, instrumentality and
 valence. [5]
+
+**Generic strategies.** See cost leadership; differentiation; focus. [3]
 
 **Goal setting.** Specific, difficult, accepted goals with feedback raise
 performance. [5]
@@ -50,6 +71,12 @@ want. [5]
 
 **Job analysis; job description; person specification.** Studying a job;
 describing it; describing the person it needs. [4]
+
+**Lead with the point.** Putting the request or conclusion first in business
+writing. [6]
+
+**Marketing brief; organizational brief.** Plans for marketing, and for
+organizing to carry out a strategy. [2, 4, 7]
 
 **Marketing mix (4 Ps).** Product, price, place, promotion. [2]
 
@@ -75,7 +102,13 @@ segments, and placing the offer in their minds. [2]
 
 **Span of control.** The number of people reporting to one manager. [4]
 
+**Stages of internationalization.** No regular exports; exporting through
+agents; a sales subsidiary; production abroad. [6]
+
 **Stakeholder.** A group that affects or is affected by the firm. [3]
+
+**Stuck in the middle.** Pursuing both low cost and differentiation without
+achieving either. [3]
 
 **SWOT.** Strengths, weaknesses, opportunities, threats. [3]
 
