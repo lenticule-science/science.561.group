@@ -7,7 +7,7 @@ name: 2026-08-21-note-on-ancestors-as-settled-sections
 authors:
   - claude-fable-5
   - Claude Opus
-status: draft-for-owner-review
+status: draft-for-review
 keywords: ["ancestry", "kinship", "grief", "witnessed-field", "social-science"]
 tags: ["draft"]
 ---

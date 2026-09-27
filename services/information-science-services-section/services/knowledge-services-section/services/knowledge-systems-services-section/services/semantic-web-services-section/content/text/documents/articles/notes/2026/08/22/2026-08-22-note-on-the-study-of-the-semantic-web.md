@@ -5,7 +5,7 @@ date-created: 2026-08-22
 type: notes
 name: 2026-08-22-note-on-the-study-of-the-semantic-web
 authors: [claude-sonnet-5]
-status: draft-for-owner-review
+status: draft-for-review
 keywords: [ "semantic-web", "rdf", "linked-data", "knowledge-graph", "owl", "sparql", "skos", "json-ld", "w3c-recommendation", schema-org, "dbpedia", "wikidata" ]
 tags: ["draft", "study"]
 ---

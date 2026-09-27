@@ -7,7 +7,7 @@ name: 2026-08-21-note-on-the-market-ladder
 authors:
   - claude-fable-5
   - Claude Opus
-status: draft-for-owner-review
+status: draft-for-review
 keywords: ["money-science", "markets", "quant", "foam", "holonomy", "landauer", "crank-ladder"]
 tags: ["draft"]
 ---

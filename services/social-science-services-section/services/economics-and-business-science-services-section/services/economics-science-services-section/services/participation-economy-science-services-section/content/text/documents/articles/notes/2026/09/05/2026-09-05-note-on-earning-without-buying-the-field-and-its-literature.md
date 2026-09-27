@@ -1,6 +1,6 @@
 ---
 title: "Earning without buying: the field and its literature"
-description: "The founding research note of participation-economy-science-services-section: whether a studied field exists that 'participation economy' names (it does not, in the literature), the eight literatures that actually cover earning-without-spending, the two economics literatures the phrase could be mistaken for and are not it, the house's own founder-ruled definition of the participation economy as one of five economies (participation, gig, wage, salary, contract) the American economy holds side by side, and the anti-bot economics distinguishing human-labor-gated surfaces from ones a machine may lawfully operate on a person's behalf — every claim cited to a first-party or peer-reviewed source, unverified facts labeled unverified, the house's own coinage stated as coinage, never as a literature's finding."
+description: "The founding research note of participation-economy-science-services-section: whether a studied field exists that 'participation economy' names (it does not, in the literature), the eight literatures that actually cover earning-without-spending, the two economics literatures the phrase could be mistaken for and are not it, the house's own specified definition of the participation economy as one of five economies (participation, gig, wage, salary, contract) the American economy holds side by side, and the anti-bot economics distinguishing human-labor-gated surfaces from ones a machine may lawfully operate on a person's behalf — every claim cited to a first-party or peer-reviewed source, unverified facts labeled unverified, the house's own coinage stated as coinage, never as a literature's finding."
 date-created: 2026-09-05
 type: notes
 authors:
@@ -130,21 +130,19 @@ references:
 
 ## 1. The question this note answers
 
-The founder's own bootstrapped run — a custodial Lightning wallet (ZBD),
-daily polls and capped ads paying a few sats, a bridge (v4v.app) into Hive,
-framed explicitly as "less about immediate value and more about learning
-how to interact with Bitcoin and Lightning" — is the seed for the No Buy
+A bootstrapped run with a custodial Lightning wallet (ZBD), daily polls
+and capped ads paying a few sats, and a bridge (v4v.app) into Hive was used
+to learn how to interact with Bitcoin and Lightning. It seeded the No Buy
 program (source: [No-Buy Sat Stacking: Starting with ZBD](https://lumensocial.net/hive-167922/@michael561/nobuy-sat-stacking-starting-with-zbd-cw),
-observed 2026-09-05). The founder's phrase for what this names is
-"participation economy." This note asks the literal question the phrase
-raises: **is there a studied field that name actually belongs to, and if
+observed 2026-09-05). The term used for this model is
+"participation economy." This note asks: **is there a studied field that name actually belongs to, and if
 so, what does it call itself?**
 
 The short answer, stated first per house method (state the finding, then
 the evidence): **no single field is named "participation economy" in the
 literature.** Nothing under that exact phrase is an established academic
 literature — what exists is a scatter of adjacent, better-established
-literatures, each covering one facet of what the founder's post describes,
+literatures, each covering one facet of what the described earning model involves,
 plus two literatures that share vocabulary with the phrase but are a
 different thing entirely (§8, §12). The rest of this note names each
 literature by the term it actually uses for itself, states what it
@@ -153,13 +151,7 @@ them.
 
 That finding settles only whether an existing literature already uses the
 phrase; it does not settle whether the house may found the term itself.
-The founder ruled on 2026-09-05 that it does: "participation economy, gig
-economy, wage economy, contract economy, salary economy, are five
-different economies I believe the American economy to have... so we can
-have participation economy and American economy next to each other, and
-then an American participation economy." §13 states the house's own
-definition as house coinage, not a literature's finding, and §14 places it
-beside the other four economies the founder names.
+The house defines participation economy as one of five distinct economies in the United States: participation, gig, wage, contract, and salary. Section 13 states this as a house coinage, not a literature finding; §14 compares it with the other four economies.
 
 ## 2. Method
 
@@ -390,8 +382,7 @@ name collision is closed rather than left to recur.
 
 Sections 3 through 12 establish that no existing literature is named
 "participation economy." What follows is not a literature's finding but
-the house's own founded term, ruled by the founder on 2026-09-05 and
-stated here as coinage, never dressed as an external field's result.
+a term coined within the house on 2026-09-05, not an established external field.
 
 **The participation economy is the economy in which a person earns by
 participating** — through attention, engagement, play, movement, learning,
@@ -427,12 +418,12 @@ of charity, it is being paid in a different currency.
 
 ## 14. The five economies of earning
 
-The founder's own framing, verbatim: "participation economy, gig economy,
-wage economy, contract economy, salary economy, are five different
-economies I believe the American economy to have... so we can have
-participation economy and American economy next to each other, and then
-an American participation economy." Placed beside each other, with each
-one's own studied literature named or its absence stated plainly:
+The five categories considered here are participation, gig, wage, contract,
+and salary economies. They may coexist within the American economy, so
+"American participation economy" is a scoped claim that participation is one
+of several economic forms, not the only form or a replacement for the other
+four. Each category is paired below with its literature, or with the absence
+of an established literature:
 
 | Economy | What earns the payout | Studied literature | Status here |
 |---|---|---|---|
@@ -445,7 +436,7 @@ one's own studied literature named or its absence stated plainly:
 The table's point is structural, not competitive: these are five distinct
 mechanisms by which the American economy pays a person, observed to
 coexist rather than to have replaced one another, and "American
-participation economy" (the founder's own compound) names the specific,
+participation economy" (this compound) names the specific,
 scoped claim that the participation economy is one of several the
 American economy holds — not a claim that it is the only one, or that it
 supersedes the other four.
@@ -513,6 +504,4 @@ house's `gig-work-science-services-section` already carries in depth. The
 glossary terms this note admits (no-buy, crypto faucet, custodial wallet,
 know-your-customer, free tier, learn-to-earn, attention economy,
 zero-price effect, microwork, and now participation economy) are the ones
-the literature, the first-party surfaces, and the founder's own ruling
-actually use — no term here is coined without either an external
-first-use event or an explicit founder ruling behind it.
+the literature and first-party surfaces use — a house term is identified as a coinage; other terms have an external first-use event.

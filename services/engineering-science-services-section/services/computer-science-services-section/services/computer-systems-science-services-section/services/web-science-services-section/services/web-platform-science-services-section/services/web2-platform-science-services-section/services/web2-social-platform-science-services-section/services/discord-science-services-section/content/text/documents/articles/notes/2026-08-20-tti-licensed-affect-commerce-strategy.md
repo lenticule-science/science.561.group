@@ -15,16 +15,12 @@ commissioned-for: turntide-islands
 During the 2026-08-20 Turntide Islands repair-and-recon campaign, the synthesis note's first draft treated the enterprise's own critical-affect research corpus — californication, genre-calibration, socially-ontogenic-media, the feeling-rules work — as if it were settled doctrine forbidding certain monetization mechanics.
 Specifically, the draft wrote a "no engagement farming, structurally" rule into the note, framed as something the philosophy corpus, the market study, and the californication critique all "forbid."
 
-The leader corrected this directly.
-Research that *describes* a mechanism — how crisis gets made governable by being formatted as manageable mood — is not thereby a *prohibition* on using that mechanism for profit.
-That reading inverts the actual reason the research was funded.
-The leader was explicit: "Just because we are AWARE of californication does not mean we are like, ethically bound against using it for profit? That is in fact rather the OPPOSITE of why we funded that research."
+Research that *describes* a mechanism — how crisis gets made governable by being formatted as manageable mood — does not thereby prohibit using that mechanism for profit. Treating the research as a prohibition inverts its purpose: it was funded to inform profitable use of the mechanism.
 
-A second round of pushback followed when the note's language was felt to still be injecting a fake virtue or ethos — "encoding a fake virtue/ethos that ultimately JUST steers us away from being able to implement the normie everyday stuff" — under the guise of neutral analysis.
+The note also injected a fake virtue or ethos under the guise of neutral analysis, steering the work away from implementing ordinary monetization.
 
 The response below is the assistant's considered answer to the first round of pushback: an acceptance of the epistemic correction, followed by a concrete three-way segmentation of what "use californication for profit" actually could mean, plus a strategic recommendation.
-This segmentation was offered to the leader as a proposed revision to the synthesis note — "Want me to revise the note?" — but the note was subsequently only lightly edited.
-The objectionable "no engagement farming" framing was removed or softened, but this fuller analysis was never folded in.
+This segmentation is a proposed revision to the synthesis note. The objectionable "no engagement farming" framing was removed or softened, but this fuller analysis was not folded in.
 It survives only in the transcript and is recorded here in full.
 
 ## The correction accepted

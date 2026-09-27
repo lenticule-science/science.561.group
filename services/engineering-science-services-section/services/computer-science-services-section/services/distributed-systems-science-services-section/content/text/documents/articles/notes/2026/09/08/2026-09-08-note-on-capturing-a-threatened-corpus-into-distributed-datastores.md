@@ -6,7 +6,7 @@ type: notes
 name: 2026-09-08-note-on-capturing-a-threatened-corpus-into-distributed-datastores
 authors:
   - claude-sonnet-5
-status: draft-for-owner-review
+status: draft-for-review
 keywords: ["censorship-resistance", "pinning", "incentivized-storage", "web-archiving", "bittorrent-distribution", "git-mirroring"]
 tags: ["draft", "note"]
 ---

@@ -7,7 +7,7 @@ name: 2026-08-21-note-on-obstruence-and-the-hard-question-posture
 authors:
   - claude-fable-5
   - Claude Opus
-status: draft-for-owner-review
+status: draft-for-review
 keywords:
   - obsmetrologia
   - phonetics
@@ -21,7 +21,7 @@ tags:
 
 ## 1. The ob- convergence
 
-The owner's observation: obstruence, obsmetrologia — back at speech again.
+obstruence, obsmetrologia — back at speech again.
 The convergence is technical, not punning. Obstruents are the phonetic
 class of speech sounds produced by obstructing the airstream (stops,
 fricatives, affricates) — the consonantal skeleton carrying most of

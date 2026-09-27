@@ -30,7 +30,7 @@ stays `unknown` here, never guessed into a number.
 ## 1. The economy as an economic object
 
 The [participation economy](../../../../../../glossary/terms/participation-economy.md) is the house's
-own founded term (ruled by the founder 2026-09-05) for the economy in which a
+house term for the economy in which a
 person earns by participating — attention, engagement, play, movement,
 learning, curation, resource-sharing, quests, or supplying training data —
 rather than by wage, salary, contract, or gig, paid in sats, tokens, credits,

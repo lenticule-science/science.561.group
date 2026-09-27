@@ -6,7 +6,7 @@ type: notes
 name: 2026-08-22-note-on-the-study-of-research-synthesis-and-scientometrics
 authors:
   - claude-sonnet-5
-status: draft-for-owner-review
+status: draft-for-review
 keywords: ["systematic-review", "meta-analysis", "scientometrics", "prisma", "cochrane", "grade", "h-index", "impact-factor", "dora", "leiden-manifesto", "goodharts-law", "fair-data-principles", "orcid", "openalex", "living-systematic-review"]
 tags: ["draft", "study"]
 ---

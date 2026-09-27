@@ -1,6 +1,6 @@
 ---
 title: "Note on Lakota Weiqi Strategy"
-description: "Owner-stated 2026-09-03 (Theory Thursday) hypothesis, verbatim: traditional Lakota spatial logic and tactical tradition, mapped onto the 19x19 grid, would produce an expansive, center-dominant, whole-board-coordinating style. Turns each paragraph into a measurable feature of a player's move stream in the readout Chu space's own vocabulary, names the nearest known styles (Shin Fuseki, Takemiya's cosmic style), and states what would settle the question empirically once Lakota players' own games exist as data."
+description: "Hypothesis recorded on 2026-09-03 (Theory Thursday): traditional Lakota spatial logic and tactical tradition, mapped onto the 19x19 grid, would produce an expansive, center-dominant, whole-board-coordinating style. Turns each paragraph into a measurable feature of a player's move stream in the readout Chu space's own vocabulary, names the nearest known styles (Shin Fuseki, Takemiya's cosmic style), and states what would settle the question empirically once Lakota players' own games exist as data."
 date-created: 2026-09-04
 date-updated: 2026-09-04
 type: text
@@ -236,7 +236,7 @@ apart.
 
 ## 4. What settles it
 
-The owner's own stated program settles this, not further theory: teach
+The program settles this through practice, not further theory: teach
 Lakota players weiqi; the platform records their games; the signature
 of §2 is computed from those games, not asserted from §1's cosmology
 alone.
@@ -258,7 +258,7 @@ the communal buffalo hunt, counting coup, tiyóšpaye, and Mitákuye
 Oyásʼiŋ — are the owner's own, stated as a Lakota nation leader. This
 section holds no outside citation for any of them and invents none here.
 Outside citations for each are to be supplied or verified by the owner;
-until then, each is marked as owner-stated only, per the placeholder
+until then, each is marked as asserted only, per the placeholder
 list below.
 
 ## Citations to verify

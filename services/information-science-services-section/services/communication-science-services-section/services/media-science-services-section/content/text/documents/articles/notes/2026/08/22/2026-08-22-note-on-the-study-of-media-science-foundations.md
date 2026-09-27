@@ -6,7 +6,7 @@ type: notes
 name: 2026-08-22-note-on-the-study-of-media-science-foundations
 authors:
   - claude-sonnet-5
-status: draft-for-owner-review
+status: draft-for-review
 keywords: [ media-science, communication-theory, "agenda-setting", "framing", "gatekeeping", cultivation-theory, two-step-flow, "encoding-decoding", uses-and-gratifications, medium-theory, spiral-of-silence, propaganda-model, echo-chambers ]
 tags: ["draft", "study"]
 ---

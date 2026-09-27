@@ -6,7 +6,7 @@ type: notes
 name: 2026-08-22-note-on-the-study-of-transparency-logs-and-verifiable-data-structures
 authors:
   - claude-sonnet-5
-status: draft-for-owner-review
+status: draft-for-review
 keywords: ["transparency-logs", "merkle-trees", "certificate-transparency", "verifiable-data-structures", "content-addressing", "key-transparency", "signing-formats", "claim-infrastructure"]
 tags: ["draft", "study"]
 ---

@@ -31,10 +31,10 @@ Predication, and Manifold](./2026-09-03-note-on-weiqi-as-arena-chu-space-predica
 
 ## 1. Whole-board reading as a gluing problem
 
-This section links an owner-stated empirical claim to a
+This section links an asserted empirical claim to a
 proved combinatorial identity; the empirical claim is not verified
 against this section's own bibliography, stated plainly below. The
-owner reported, 2026-09-03 (owner-stated; no further carrier verifies
+owner reported, 2026-09-03 (asserted; no further carrier verifies
 this specific finding), a neuroimaging finding: a player can hold a
 whole board in view but cannot strategize over it as a whole, and
 strategizes in regions instead.
@@ -66,7 +66,7 @@ measurable sense — its own "Why this is central" section states this
 gives "an independent empirical frame for treating strategic reading...
 as cognitively demanding in a measurable, domain-general sense, not
 merely a house metaphor." The owner's regional-strategizing claim itself
-remains owner-stated and unverified against a specific primary study by
+remains asserted and unverified against a specific primary study by
 this section.
 
 Read as a mathematical shape regardless of the empirical claim's
@@ -133,7 +133,7 @@ across two regions a purely regional reading treats as independent.
 
 ## 2. Society as coordination that fails to glue globally
 
-The owner remarked, 2026-09-03 (owner-stated,
+The owner remarked, 2026-09-03 (asserted,
 Discord), that Go may be a generalized aptitude test for sociality. Read
 against §1's mathematics, as this article's own conjecture: a society is
 also local coordination — individuals' and groups' regional
@@ -210,8 +210,8 @@ remain correct, purely as social- and difficulty-design specifications.
 **Lakota weiqi strategy**, on this same proposal, is the empirical
 signature that would emerge from Lakota players' games with each other —
 a cluster this section does not yet have the data, or the readout-space
-instrument of §1–2 above, to compute. The owner's stated interest in
-this (owner-stated, Discord, 2026-09-03: "I wanna know what lakota weiqi
+instrument of §1–2 above, to compute. The relevant interest in
+this (asserted, Discord, 2026-09-03: "I wanna know what lakota weiqi
 strategy is") names the general capability this proposal describes — a
 signature-space clustering over real games — rather than a specific,
 already-computed answer; no carrier in this or any other section states
@@ -242,7 +242,7 @@ players is therefore not something an SGF archive can carry, however
 large. [Readouts as a Chu Space, Coordination as Cohomology](./readouts-as-a-chu-space-coordination-as-cohomology.md)
 §3 already establishes, per
 [Reframe and Standards](../notes/2026-08-29-note-on-reframe-and-standards.md)'s
-owner ruling, that RMN — not SGF, GTP, or the KataGo JSON analysis
+RMN — not SGF, GTP, or the KataGo JSON analysis
 protocol — is the house's one canonical carrier for a position, a move,
 or an analysis result; §3 of that article proposes the readout envelope
 itself, `(position, readout, charge)` with a `ni:` identity, as the

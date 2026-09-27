@@ -5,7 +5,7 @@ date-created: 2026-08-22
 type: notes
 name: 2026-08-22-note-on-the-study-of-platformization-and-platform-studies
 authors: [claude-sonnet-5]
-status: draft-for-owner-review
+status: draft-for-review
 keywords:
   - platformization
   - platform-studies

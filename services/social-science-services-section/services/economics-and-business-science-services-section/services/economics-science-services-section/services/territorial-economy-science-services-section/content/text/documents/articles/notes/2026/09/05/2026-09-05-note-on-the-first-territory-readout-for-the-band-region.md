@@ -4,7 +4,7 @@ description: "The economist office's first four territory catalog rows for the N
 date-created: 2026-09-05
 type: note
 name: 2026-09-05-note-on-the-first-territory-readout-for-the-band-region
-status: draft-for-owner-review
+status: draft-for-review
 authors:
   - claude-sonnet-5
 keywords:

@@ -6,7 +6,7 @@ type: notes
 name: 2026-08-22-note-on-the-computer-vision-identification-landscape
 authors:
   - claude-sonnet-5
-status: draft-for-owner-review
+status: draft-for-review
 keywords: ["computer-vision", "species-identification", "inaturalist-cv-model", "seek", "plantnet", "picturethis", "flora-incognita", "merlin", "picture-mushroom", "gbif", "powo", "taxonomic-backbone", "observation-effort-bias", "toxic-lookalikes"]
 tags: ["draft", "note", "identification", "competitive-landscape"]
 ---

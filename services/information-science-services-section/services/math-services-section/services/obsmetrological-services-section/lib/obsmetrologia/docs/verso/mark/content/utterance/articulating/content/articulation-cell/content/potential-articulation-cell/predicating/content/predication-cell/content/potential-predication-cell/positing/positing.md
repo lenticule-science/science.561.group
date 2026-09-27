@@ -20,7 +20,7 @@ articulating has yet reached** — the reading a cell gets by default, before
 any evidence has been measured at it. Value enters the whole descent here, as
 what the accumulated evidence supports; assertion raises it later.
 
-## Measured, not seeded — owner ruling 2026-09-21
+## Measured, not seeded
 
 **"The admission boundary, restored."** What enters is not one bit but
 **standing**, and standing is admitted *by evidence*, never stamped by fiat.

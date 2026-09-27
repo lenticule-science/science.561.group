@@ -6,7 +6,7 @@ type: notes
 name: 2026-08-22-note-on-the-claim-infrastructure-reference-architecture
 authors:
   - claude-fable-5
-status: draft-for-owner-review
+status: draft-for-review
 keywords: ["reference-architecture", "claim-infrastructure", "bitemporal", "nanopublication", "transparency-log", "correction-propagation", "editorial-gates", "synthesis", "dag"]
 tags: ["draft", "synthesis", "architecture"]
 ---

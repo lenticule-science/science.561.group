@@ -229,7 +229,7 @@ most useful thing this survey found.
 
 Two consequences for this corpus follow. First, no claim in the sections
 below should be read as explaining a switch; each explains a state, or a
-circuit, or a rate. Second, the founder-authored house note on
+circuit, or a rate. Second, the house note on
 [stability dynamics in cognitive systems](../../../../../../../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/glossary/terms/stability-dynamics-in-cognitive-systems-revision-02.md),
 which defines affect as the time derivative of a stability reward with
 precision modulating the update rate, is a house theory of exactly the

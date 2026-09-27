@@ -1,6 +1,6 @@
 ---
 title: "Note on the One Identification and the Site Census"
-description: "Owner ruling of 2026-09-03 on how Quot.sound is meant to be spent in Obsmetrologia (once, at the articulating root, inherited downstream; the count of independent identifications a theorem inherits is the settled/postulated measure), the two whole-library measurements taken the same evening against that law, and the structural discharge they point at."
+description: "Quot.sound is the single identification used in Obsmetrologia (once, at the articulating root, inherited downstream; the count of independent identifications a theorem inherits is the settled/postulated measure), the two whole-library measurements taken the same evening against that law, and the structural discharge they point at."
 date-created: 2026-09-03
 type: notes
 name: 2026-09-03-note-on-the-one-identification-and-the-site-census
@@ -12,15 +12,13 @@ keywords: ["axiom-discipline", "quot-sound", "landauer", "identification-site", 
 tags: []
 ---
 
-## The ruling
+## The axiom policy
 
-Owner, 2026-09-03 evening session, intent verbatim: `Quot.sound` is meant to be
-used one time, in the articulating spiral, initially, and everything downstream
-uses that. In Lean, how many `Quot.sound` a thing has is then the difference
-between its being settled and postulated. Everything is supposed to descend from
-`Mark`, and `Quot.sound` is the corpus's Landauer bit. The owner states plainly
-that this is not a reading found in the public literature; it builds on it and
-goes past it.
+`Quot.sound` is used once at the root of the articulating spiral and inherited
+downstream. In Lean, the number of `Quot.sound` axioms distinguishes a settled
+claim from a postulated one. Everything descends from `Mark`, and `Quot.sound`
+is the corpus's Landauer bit. This account is not a reading found in public
+literature; it builds on and extends that literature.
 
 This refines the axiom policy already carried in
 `2026-08-17-note-on-antisymmetry-thinness-and-the-axiom-discipline.md` (same
@@ -102,8 +100,8 @@ collapse a distinction) or postulated through the internal reals. The
 module-level axiom counts do not concentrate where `H¹` drains (Thermodynamics
 and KineticTheory both spend `Quot.sound` in about forty percent of their
 theorems), because the spending is inherited from the number stack, not made
-at the physics statement. That is the thin-but-honest state the owner named:
-the theory is coherent, the formalization is rougher than the theory.
+at the physics statement. The theory is coherent, while the formalization remains rougher than the
+theory.
 
 ## The discharge
 

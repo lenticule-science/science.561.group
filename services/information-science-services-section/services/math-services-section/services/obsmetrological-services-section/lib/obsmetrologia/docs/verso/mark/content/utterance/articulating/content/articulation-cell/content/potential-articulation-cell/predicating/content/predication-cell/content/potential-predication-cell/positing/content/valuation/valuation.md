@@ -17,7 +17,7 @@ stamped onto every cell before any evidence exists. Assertion raises a cell's
 charge as evidence accumulates; because raising only moves *up* the knowledge
 order, a sequence of valuations is **knowledge-monotone**.
 
-## Measured, not seeded — owner ruling 2026-09-21
+## Measured, not seeded
 
 The knowledge-least valuation is not a foundational ground the way an earlier
 reading took it to be; it is the honest readout of "nothing has been

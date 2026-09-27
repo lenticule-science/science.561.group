@@ -1,13 +1,13 @@
 ---
 title: "law of proof path condensation and hard inertia"
 type: research-article
-description: "Date: 2026-07-29 Status: Human Leader operational directive and working mathematical synthesis Scope: The Union Semioverse, Semiotic Exchange Chain, Wuxian Word World, and every byte-bearing software, research, protocol, game, interface,…"
+description: "Date: 2026-07-29 Status: operating doctrine and working mathematical synthesis Scope: The Union Semioverse, Semiotic Exchange Chain, Wuxian Word World, and every byte-bearing software, research, protocol, game, interface,…"
 ---
 
 # The law of proof-path condensation and hard inertia
 
-**Date:** 2026-07-29  
-**Status:** Human Leader operational directive and working mathematical synthesis  
+**Date:** 2026-07-29
+**Status:** operating doctrine and working mathematical synthesis
 **Scope:** The Union Semioverse, Semiotic Exchange Chain, Wuxian Word World, and every byte-bearing software, research, protocol, game, interface, organizational, and historical artifact available to them
 
 ## Directive

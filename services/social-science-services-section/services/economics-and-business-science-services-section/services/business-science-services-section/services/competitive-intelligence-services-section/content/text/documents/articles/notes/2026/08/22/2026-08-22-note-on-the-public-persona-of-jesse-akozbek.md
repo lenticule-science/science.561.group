@@ -6,7 +6,7 @@ type: notes
 name: 2026-08-22-note-on-the-public-persona-of-jesse-akozbek
 authors:
   - claude-sonnet-5
-status: draft-for-owner-review
+status: draft-for-review
 keywords: ["jesse-akozbek", "feral-foraging", "gather-app", "founder-persona", "competitive-intelligence", "trust-signaling", "foraging", "brand-strategy", "platform-strategy", "single-founder-risk", "powered-by-human-intelligence"]
 tags: ["draft", "study"]
 ---

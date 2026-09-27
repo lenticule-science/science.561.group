@@ -6,7 +6,7 @@ mathematics — the board and its groups/liberties, the three ko regimes and
 their `3 ^ n` termination bound, evidence-move monotonicity, and move
 admission as a Hoare program with a predicate-Chu bridge.
 
-Per owner ruling (2026-09-04): "our weiqi lean stuff should be in
+The Weiqi Lean material belongs in
 weiqi-obsmetrologia-services, under weiqi, and import the main library, not
 in our main obsmetrologia lean library." This section's Lean package
 depends on

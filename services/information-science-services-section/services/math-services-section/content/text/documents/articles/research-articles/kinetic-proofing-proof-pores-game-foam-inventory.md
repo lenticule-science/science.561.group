@@ -39,9 +39,9 @@ The entire `planned-transition-admission-service` is new and untracked. Its cont
 
 In the executive-office sub-repo, `sovereign-improvement-board-service` carries uncommitted `+` edits requiring `kineticProofRequired: true` and a receipt of type `ImprovementGameKineticProofReceipt` (`game-board.mjs`, `board.mjs`, `service.mjs`).
 
-## 4. First appearance, from leader-speech records
+## 4. First appearance
 
-The literal phrase "kinetic proofreading" first appears in the leader-speech log 2026-07-24. The literal phrase "kinetic proofing" (as opposed to "-reading") first appears 2026-07-25, recurring through 2026-07-26, including one entry framing it as a planned next monograph: "our next level up from that is kinetic proofing, and we wanna develop THAT monograph."
+"Kinetic proofreading" is the earlier phrase. "Kinetic proofing" is the later formulation for a planned monograph.
 
 ## 5. Bibliography links found
 

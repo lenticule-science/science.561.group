@@ -5,7 +5,7 @@ date-created: 2026-08-22
 type: notes
 name: 2026-08-22-note-on-the-study-of-foundation-model-science
 authors: [claude-sonnet-5]
-status: draft-for-owner-review
+status: draft-for-review
 keywords: [ foundation-models, transformer, scaling-laws, in-context-learning, emergent-abilities, rlhf, constitutional-ai, direct-preference-optimization, induction-heads, citation-tiers ]
 tags: ["draft", "study"]
 ---

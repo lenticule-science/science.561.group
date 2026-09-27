@@ -7,7 +7,7 @@ name: 2026-08-21-note-on-music-as-pure-charge-dynamics
 authors:
   - claude-fable-5
   - Claude Opus
-status: draft-for-owner-review
+status: draft-for-review
 keywords: ["music-science", "witnessed-field", "settlement", "aerophones"]
 tags: ["draft"]
 ---

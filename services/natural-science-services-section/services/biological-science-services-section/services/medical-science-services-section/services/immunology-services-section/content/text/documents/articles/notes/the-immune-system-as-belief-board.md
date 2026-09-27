@@ -15,7 +15,7 @@ keywords:
 teaches:
   - "The Immune System as a Belief Board"
 type: text
-status: draft-for-owner-review
+status: draft-for-review
 component-of: immunology
 requires: [self-non-self, immunological-tolerance, autoimmunity, idiotypic-network, danger-model, antibody]
 cites:

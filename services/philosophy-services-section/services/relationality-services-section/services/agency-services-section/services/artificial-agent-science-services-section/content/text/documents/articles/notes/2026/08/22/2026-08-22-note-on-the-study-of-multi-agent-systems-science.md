@@ -6,7 +6,7 @@ type: notes
 name: 2026-08-22-note-on-the-study-of-multi-agent-systems-science
 authors:
   - claude-sonnet-5
-status: draft-for-owner-review
+status: draft-for-review
 keywords:
   - multi-agent-systems
   - contract-net-protocol

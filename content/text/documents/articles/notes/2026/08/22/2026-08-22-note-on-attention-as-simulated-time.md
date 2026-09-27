@@ -7,7 +7,7 @@ name: 2026-08-22-note-on-attention-as-simulated-time
 authors:
   - emsenn
   - claude-fable-5
-status: draft-for-owner-review
+status: draft-for-review
 keywords: ["money-science", "attention", "compute", "light-cone", "landauer", "forecasting", "algorithmic-trading", "web3", "alpaca"]
 tags: ["draft"]
 ---

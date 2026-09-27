@@ -1,5 +1,5 @@
 ---
-description: An executable process boundary whose pre/post-condition Hoare-triple shape is a proved consequence of computing-is-cgs (stdin/argv/env as precondition, the process as morphism, stdout/exit/effects as postcondition), not a naming analogy; the founder's own register for the org's atomic microservices (2026-08-11).
+description: An executable process boundary whose pre/post-condition Hoare-triple shape is a proved consequence of computing-is-cgs (stdin/argv/env as precondition, the process as morphism, stdout/exit/effects as postcondition), not a naming analogy; the register for the org's atomic microservices.
 identity: hoare-program
 name: Hoare Program
 date-created: 2026-09-04
@@ -21,4 +21,4 @@ A hoare program is an executable process boundary whose stdin, argv, and environ
 
 This distinguishes a hoare program from a bare lexical or historical reference to C. A. R. Hoare's program-logic tradition, which organizes house vocabulary by analogy without asserting that any implementation has the named mathematical structure; a hoare program is the case where the pre/post-condition structure is a proved consequence of a term's type, checkable by a retrieve function between states, not a naming convention. It is also distinct from an ordinary shell filter, since only a total endomorphism — defined on every valid carrier value, never rejecting one — composes into the monoid a pipeline requires.
 
-The founder states the target register directly (2026-08-11): the org is building atomic microservices, each a hoare program that lives in a gyrobifastidial tessellation inside a chu space. The engineering consequence: a script must read a complete carrier value and emit a complete carrier value of the same type, never a diff or a summary, because the next hoare program in a pipe is typed to receive a whole value.
+The org is building atomic microservices, each a Hoare program that lives in a gyrobifastidial tessellation inside a Chu space. The engineering consequence: a script must read a complete carrier value and emit a complete carrier value of the same type, never a diff or a summary, because the next Hoare program in a pipe is typed to receive a whole value.

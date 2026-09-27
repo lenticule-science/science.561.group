@@ -6,7 +6,7 @@ type: notes
 name: 2026-08-22-note-on-the-study-of-claim-extraction-and-grounded-generation-engineering
 authors:
   - claude-sonnet-5
-status: draft-for-owner-review
+status: draft-for-review
 keywords: ["claim-detection", "check-worthiness", "natural-language-inference", "fact-verification", "retrieval-augmented-generation", "citation-grounded-generation", "faithfulness-metrics", "hallucination", "claim-infrastructure", "editorial-gates"]
 tags: ["draft", "study"]
 ---

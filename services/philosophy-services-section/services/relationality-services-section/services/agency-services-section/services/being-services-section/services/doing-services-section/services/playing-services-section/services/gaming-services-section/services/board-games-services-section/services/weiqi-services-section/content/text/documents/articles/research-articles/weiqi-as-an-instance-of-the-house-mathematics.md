@@ -116,7 +116,7 @@ that forbids immediate recapture, none exists.
 
 ## 4. Arrows carry a gauge, and the house already has one
 
-The owner ruled that relations are directed arrows with orientation, angle,
+Relations are directed arrows with orientation, angle,
 and magnitude. Section 3 of the honeycomb article read angle as the
 rotation order of the transport. The house has a more exact object:
 `@red-cup-engineering/metrologic/verdier/gauge` carries the d-frame

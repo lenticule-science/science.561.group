@@ -6,7 +6,7 @@ type: notes
 name: 2026-08-22-note-on-the-study-of-brand-and-marketing-science
 authors:
   - claude-sonnet-5
-status: draft-for-owner-review
+status: draft-for-review
 keywords: ["brand-equity", "customer-based-brand-equity", "brand-personality", "double-jeopardy", "dirichlet-model", "mental-and-physical-availability", "positioning", "personal-branding", "self-branding", "corporate-marketing", "influencer-marketing", "endorsement-disclosure"]
 tags: ["draft", "study"]
 ---

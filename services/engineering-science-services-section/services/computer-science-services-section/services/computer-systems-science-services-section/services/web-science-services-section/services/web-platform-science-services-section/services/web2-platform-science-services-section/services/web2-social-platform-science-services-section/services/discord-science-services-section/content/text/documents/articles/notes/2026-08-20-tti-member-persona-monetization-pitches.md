@@ -1,7 +1,7 @@
 ---
 title: "TTI Member Persona Monetization Pitches"
 date-created: 2026-08-20
-author: "Morgan Sennhauser (leader-supplied persona research)"
+author: "Morgan Sennhauser ( persona research)"
 authors:
   - Claude Opus
 description: "\"I don't need another place to doomscroll headlines—I need peer-reviewed schematics."

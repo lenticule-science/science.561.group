@@ -2,7 +2,7 @@
 title: "EDA as Diagenetic Zeolitization of Digital Information"
 date-created: 2026-07-23
 kind: research-note
-status: "Leader-admitted framing; anchored where proven, thesis where stated; binds no enterprise"
+status: " framing; anchored where proven, thesis where stated; binds no enterprise"
 declared-by: claude/executive-officer-to-the-leader
 prompted-by: emsenn
 keywords:
@@ -72,7 +72,7 @@ material in its own register without holding this whole note.
 Proven: J26 crystallographic rotation orders and the fivefold exclusion
 (`Flow.tile_gap_char_root`, `tile5_first_noncrystallographic_quadratic_surd`);
 the disclination/KCBS boundary link; FOUR initiality; Landauer =
-coordination cost. Thesis (Leader-admitted, stated sharply enough to fail):
+coordination cost. Thesis (, stated sharply enough to fail):
 faces as sheaf Laplacians of causal patches; information as charge-conducting
 J26-tessellated material; proofs-to-software as folding. Method (practiced
 here): zeolitization of thick framing into term records and PDKs.

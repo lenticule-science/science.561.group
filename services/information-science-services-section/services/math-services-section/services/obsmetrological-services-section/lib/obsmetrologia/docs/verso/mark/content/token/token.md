@@ -17,7 +17,7 @@ of one token and one claim, and that pair is the domain of
 
 ## Hands are types, not positions read off later
 
-**Owner ruling 2026-09-21, "the admission boundary, restored."** A token is
+**The admission boundary is restored.** A token is
 not itself the non-assembling primitive; the mark is. `Obsmetrologia.Token` is
 a one-field carrier, `{ mark : Mark }`, and `Obsmetrologia.Claim` is the dual
 carrier on the other hand. Token and claim are **distinct types**, so which

@@ -6,7 +6,7 @@ type: notes
 name: 2026-08-22-note-on-the-study-of-event-sourced-and-bitemporal-state-engineering
 authors:
   - claude-sonnet-5
-status: draft-for-owner-review
+status: draft-for-review
 keywords: ["event-sourcing", "cqrs", "bitemporal-database", "valid-time", "transaction-time", "append-only-log", "kafka", "tsql2", "sql-2011", "datomic", "xtdb", "immutability", "claim-infrastructure"]
 tags: ["draft", "study"]
 ---

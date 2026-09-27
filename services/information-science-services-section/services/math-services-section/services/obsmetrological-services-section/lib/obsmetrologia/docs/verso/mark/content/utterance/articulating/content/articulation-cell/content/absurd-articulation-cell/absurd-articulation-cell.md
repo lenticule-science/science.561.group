@@ -15,7 +15,7 @@ is the **un-articulated position**: where a cell *would* sit before any
 articulation reaches it — not a cell
 [articulating](../../../../articulating.md) itself ever produces.
 
-## Owner ruling 2026-09-21: reached, never presented
+## reached, never presented
 
 Earlier material read absurd as the *initial presentation* of articulating's
 codomain — the cell the act carries the instant it has an

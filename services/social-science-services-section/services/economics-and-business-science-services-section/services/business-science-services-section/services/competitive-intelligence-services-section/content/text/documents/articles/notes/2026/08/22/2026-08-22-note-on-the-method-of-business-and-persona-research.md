@@ -6,7 +6,7 @@ type: notes
 name: 2026-08-22-note-on-the-method-of-business-and-persona-research
 authors:
   - claude-sonnet-5
-status: draft-for-owner-review
+status: draft-for-review
 keywords: ["competitive-intelligence", "market-teardown", "founder-persona", "app-store-intelligence", "evidence-grading", "verification", "privacy-posture", "feral-foraging"]
 tags: ["draft", "notes", "method"]
 ---

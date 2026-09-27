@@ -7,7 +7,7 @@ name: 2026-book-of-changes
 authors:
   - claude-opus-5
   - Claude Opus
-status: draft-for-owner-review
+status: draft-for-review
 keywords:
   - dao
   - yijing
@@ -17,7 +17,7 @@ keywords:
   - belnap-four
   - settling
   - book
-  - draft-for-owner-review
+  - draft-for-review
 ---
 
 

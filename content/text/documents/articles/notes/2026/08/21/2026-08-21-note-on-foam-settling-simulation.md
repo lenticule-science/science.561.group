@@ -7,7 +7,7 @@ name: 2026-08-21-note-on-foam-settling-simulation
 authors:
   - claude-fable-5
   - Claude Opus
-status: draft-for-owner-review
+status: draft-for-review
 keywords: ["foam", "bubbles", "von-neumann", "settling", "obsmetrologia", "pymetrologic", "simulation"]
 tags: ["draft"]
 ---

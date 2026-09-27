@@ -6,7 +6,7 @@ type: notes
 name: 2026-08-22-note-on-the-study-of-foraging-science
 authors:
   - claude-sonnet-5
-status: draft-for-owner-review
+status: draft-for-review
 keywords: ["foraging", "ethnobotany", "wild-food-plants", "phenology", "sustainable-harvest", "ramps", "american-ginseng", "honorable-harvest", "foraging-law", "poisonous-lookalike", "wild-food-nutrition"]
 tags: ["draft", "study"]
 ---

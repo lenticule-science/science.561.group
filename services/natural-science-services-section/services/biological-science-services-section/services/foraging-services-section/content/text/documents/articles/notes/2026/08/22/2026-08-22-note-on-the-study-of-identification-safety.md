@@ -6,7 +6,7 @@ type: notes
 name: 2026-08-22-note-on-the-study-of-identification-safety
 authors:
   - claude-sonnet-5
-status: draft-for-owner-review
+status: draft-for-review
 keywords: ["poisonous-lookalike", "identification-safety", "amanita", "poison-hemlock", "death-camas", "pokeweed", "moonseed", "mushroom-poisoning", "computer-vision-identification", "plant-identification-apps", "mycology"]
 tags: ["draft", "study"]
 ---

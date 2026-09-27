@@ -20,11 +20,9 @@ status: pursuit-ratified-not-submitted
 
 ## What this document is
 
-The living strategy carrier for the NLnet NGI application and the wider
+This note describes the NLnet NGI application and the wider
 `@lenticule-science/communicating` language-fiber enterprise it is drawn
-from. It exists because the founder ratified pursuing this live, in
-session, on 2026-09-01 — a decision made in conversation, not yet
-anywhere on disk before this note. It is meant to be read next by
+from. The pursuit began on 2026-09-01. It is meant to be read next by
 whichever session continues the pursuit: the thesis, the ratification,
 where the thesis is grounded in real code and real math already in this
 repository, this week's plan, the identity/community discipline that
@@ -55,27 +53,21 @@ the technical comparison against LakotaBERT and the other named peers,
 and the drafted answers to NLnet's own application questions are in the
 sibling carrier
 [2026-08-31 NLnet NGI grant application draft](../../08/31/2026-08-31-note-on-nlnet-ngi-grant-application-draft-for-lakota-language-algebra.md);
-this note does not restate that content, only the facts the founder
-added live on top of it.
+this note does not restate that content; it states the additional scope and
+implementation facts.
 
-## Founder ratification
+## Pursuit
 
-The founder ratified pursuing this as framed — family-first (the engine
-plus all five fibers), Lakota flagship — live in this Claude session on
-`bare-cedar-fog`, 2026-09-01 (session `72294c81-5506-4ee1-b7cc-8abdc7e8894f`),
-in the founder's own words:
-
-> "I'm sold on pursuing this."
-
-The founder also stated the theory's actual scope, in their own words:
+The pursuit is family-first (the engine plus all five fibers), with Lakota as
+the flagship. Its theoretical scope is broader than one language:
 
 > "we love the idea of language topologies, curry howard lambek language
 > lorentzian light cones — this isn't just a lakota thing, ideally."
 
 ## Theory-to-code map
 
-The founder's framing is not a metaphor reached for in conversation; it
-names structure that is already live in this repository, in two
+This framing is not a metaphor; it names structure that is already live in
+this repository, in two
 different layers.
 
 **The engine, as code.** `@lenticule-science/communicating` is
@@ -93,7 +85,7 @@ packages sit under `linguistics-services-section/services/`:
 `latin-language-algebra`, `mandarin-language-algebra` (consumed by
 `@emsenn/language-learning-frontier`), and `tokipona-language-algebra`.
 
-**The theory, as math already in the corpus.** The founder's own phrase
+**The theory, as math already in the corpus.**
 — "curry howard lambek language lorentzian light cones" — names a real,
 live line of work in `obsmetrological-services-section`'s Lean proof
 root, not a coinage from this conversation. `Obsmetrologia/Language/Predicating/CurryHowardLambek.lean`
@@ -104,7 +96,7 @@ proof as Curry-Howard. `Obsmetrologia/CausalSets/Curvature/Lambek.lean`
 (228 lines) is the light-cone leg: it reads spacetime curvature through
 Lambek bi-residuation over causal sets, proving
 `residuals_coincide_iff_commutative` and a discrete Bianchi identity —
-the literal Lorentzian-light-cone connection the founder named. The
+the literal Lorentzian-light-cone connection. The
 full asset census for this whole line — live Lean sources, the
 repo-coined "Language Cone" term's two lineages, and what is proven
 versus still an open obligation (the language-cone coincidence theorem,
@@ -117,7 +109,7 @@ application.
 
 ## The week's founder-attention plan
 
-The founder stated they will personally work the language app and
+The language app will be worked on directly by its creator and
 related parts through the week of 2026-09-01 — this enterprise has
 active founder attention, not only agent momentum. Sessions continuing
 this pursuit should expect founder-driven changes to the language
@@ -127,15 +119,14 @@ is still current without checking.
 
 ## Identity and community — decision context, not elaboration
 
-Stated here minimally and exactly as the founder gave it, as
-decision-context only:
+This decision context is limited to the following facts:
 
-The founder states they are Lakota, with a complicated enrollment
+The creator is Lakota, with a complicated enrollment
 situation and no tribal membership themselves. They have cousins who
 hold membership — Lakota, and Anishinaabe relations as well. Any
 community or family involvement in this work, including a possible
 Anishinaabemowin fiber, is those relatives' choice to make, initiated by
-the founder personally, never by agents or by the application itself.
+the creator personally, never by agents or by the application itself.
 
 This is unrelated to, and does not revise, the corpus's separate
 Pheží Ocháǧe / tiyóšpaye account

@@ -2,7 +2,7 @@
 title: "The Math Is the Product; Lean Is a Service"
 date-created: 2026-07-24
 kind: research-note
-status: "crystallized from leader speech of 2026-07-24 (session 9f0d386d) so no session ever needs it screamed again"
+status: "canonical compact statement of the settled doctrine on Obsmetrologia and Lean"
 declared-by: claude/executive-officer-to-the-leader
 prompted-by: emsenn
 keywords:
@@ -11,17 +11,15 @@ keywords:
   - die
   - lean
   - doctrine
-description: Canonical compact statement of the settled doctrine on Obsmetrologia and Lean, crystallized so it costs one small read instead of another session of the Leader screaming it.
+description: Canonical compact statement of the settled doctrine on Obsmetrologia and Lean, so it costs one small read instead of another session rediscovering it.
 ---
 
 
 Canonical compact statement of the settled doctrine on Obsmetrologia and
-Lean, crystallized so it costs one small read instead of another session of
-the Leader screaming it. The rulings below are verbatim leader speech
-(leader-speech record 2026-07-24, session `9f0d386d`); everything else is the
-settled reading that session converged on before it ended without executing.
+Lean, so it costs one small read instead of another session rediscovering it.
+The statements below give the doctrine directly.
 
-## The rulings, verbatim
+## The doctrine
 
 > "Agents keep trying to make our Lean stuff, like, be arbitrary 'herp derp
 > Certified by Lean!' But that isn't what we care about. The Lean proofs are
@@ -92,7 +90,4 @@ orders `wo-terms-obsmetrologia-lean-thing-*` and
 
 ## Sources
 
-- Leader speech: `lib/emsenn/services/561-group/services/board-of-directors/services/executive-office/services/leader-movement-team/data/records/leader-speech/2026/07/24/2026-07-24-leader-movement-team-leader-speech.jsonl` (session `9f0d386d-6ebc-4b4e-966c-cd2f5cf2ac13`).
-- Session transcript: `~/.claude/projects/-home-emsenn-info/9f0d386d-6ebc-4b4e-966c-cd2f5cf2ac13.jsonl`.
-- Operator correction on badge cruft: character-emsenn note of 2026-07-11 (metroplat architecture model research).
-- Precursor complaint arc: leader-speech records 2026-07-16, -18, -19, -23 (same demand, six sessions running).
+The doctrine is stated here directly, without relying on personal attribution.

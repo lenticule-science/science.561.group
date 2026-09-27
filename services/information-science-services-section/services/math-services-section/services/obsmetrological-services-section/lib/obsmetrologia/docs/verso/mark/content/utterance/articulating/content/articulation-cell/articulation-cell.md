@@ -20,9 +20,9 @@ in a slot — the slot being non-empty — is that hand's status. The cell is th
 inhabitant of articulating's codomain, and the objects under this node are the
 cells the four-cell partition is made of.
 
-## Slots, not bits: owner ruling 2026-09-21
+## Slots, not bits
 
-**"The admission boundary, restored."** A cell's two hands each carry a slot
+A cell's two hands each carry a slot
 of witnesses (`tokenSlot`, `claimSlot`), not a bare Boolean. A slot only
 grows — nothing is ever removed from it — so a cell's evidence is
 **lossless**: two tokens on the token side are not the same as one, even

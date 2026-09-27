@@ -7,7 +7,7 @@ name: reconciliation-as-a-two-witness-reading
 authors:
   - emsenn
   - claude-fable-5-1
-status: draft-for-owner-review
+status: draft-for-review
 keywords: [ "reconciliation", "balance-assertion", four, "bilattice", "paraconsistent-accounting", "two-eyes", "benson", "wit", "tally", "beancount", "hledger", "farolfi" ]
 tags: ["synthesis", "fintech"]
 ---

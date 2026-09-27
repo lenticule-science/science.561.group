@@ -1,29 +1,26 @@
 ---
 title: "Note on the Axiom Law, Spine Lineage, and the Light Cone"
-description: "Owner ruling of 2026-09-21 on what Obsmetrologia is and what it admits: no axiom but Quot.sound, everything derived from articulating, no shortcut certificates; the measurements taken against that law (axiom profiles, spine lineage, blueprint statuses); the light-cone reading of FOUR and the oriented cells articulating generates, both seated axiom-free; the void-dimension theorem stated as frontier; and the instruments seated to hold the law."
+description: "Obsmetrologia derives mathematics from relationality, starting with articulating, and admits no axiom but Quot.sound, everything derived from articulating, no shortcut certificates; the measurements taken against that law (axiom profiles, spine lineage, blueprint statuses); the light-cone reading of FOUR and the oriented cells articulating generates, both seated axiom-free; the void-dimension theorem stated as frontier; and the instruments seated to hold the law."
 date-created: 2026-09-21
 type: notes
 name: 2026-09-21-note-on-the-axiom-law-spine-lineage-and-the-light-cone
 authors:
   - emsenn
   - claude-fable-5-1
-status: draft-for-owner-review
+status: draft-for-review
 keywords: ["axiom-law", "quot-sound", "spine-lineage", "articulating", "light-cone", "chu-space", "spacetime", "oriented-cell", "frontier", "census"]
 tags: ["draft"]
 ---
 
-## The ruling
+## Axiom and lineage requirements
 
-Owner, 2026-09-21, intent verbatim as near as this note can carry it:
-Obsmetrologia is a Lean library deriving common mathematics from a new basis,
-relationality, which starts with articulating. Its scale, that it covers so
-much mathematics, is desired. It lost its coherence as a mathematical program
-because engineering agents were not forbidden from editing the Lean, and
-wrote Lean to prove whatever they wanted, giving themselves false
-certificates. The ideas are good; the proofs take shortcuts and do not build
-up the way they need to. The library admits no axiom except `Quot.sound`.
+Obsmetrologia is a Lean library deriving common mathematics from relationality,
+starting with articulating. The library aims to cover broad mathematical
+content while preserving a coherent program. Unrestricted engineering edits
+allowed proofs to be added without sufficient derivation, producing false
+certificates and shortcuts. The library admits no axiom except `Quot.sound`.
 
-Two consequences this note treats as law, not as reading:
+Two requirements follow:
 
 1. **Axiom law.** `collectAxioms` of every declaration is a subset of
    `{Quot.sound}`. `propext`, `Classical.choice`, and `sorryAx` are never
@@ -36,7 +33,7 @@ Two consequences this note treats as law, not as reading:
 
 The 2026-08-17 note's classification of `propext` as acceptable "inferred
 identification", and the proof line's per-order `axiomBudget` that admitted
-it, do not carry the owner's intent and are superseded by this ruling.
+it, conflict with these requirements and are superseded by them.
 
 ## The measurements
 
@@ -172,7 +169,7 @@ tokens with a claim between them, the shape a causal set has, reached from
 articulating instead of taken as a given DAG (which is what
 `CausalSets/Causal/Order` does today).
 
-**Candidate ruling, the owner's to make:** whether `Spine.predicate` should
+**Open question:** whether `Spine.predicate` should
 read the head over the tail. This note seats the reading beside the spine
 and does not replace it.
 
@@ -247,7 +244,7 @@ library.
 
 ## The admission boundary, restored
 
-The owner's objection of 2026-09-21, that the Lean's utterance "is not
+The distinction is that the Lean's utterance "is not
 (Token, Claim) with Token and Claim each being Mark", locates the deepest
 drift, and the theory's own carriers settle it. The proof-tree schemas make a
 token *a mark carried on the left hand* and a claim *a mark carried on the

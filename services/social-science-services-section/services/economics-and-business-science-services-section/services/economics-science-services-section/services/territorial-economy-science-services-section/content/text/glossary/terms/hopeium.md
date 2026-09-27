@@ -1,5 +1,5 @@
 ---
-description: "The founder's word (2026-09-05) for the house's product in the downstream direction of a territorial economy: hope kept in witnessed form, the continuation sold with its evidence attached, the popular grade of the ⊤-commodity; distinguished from hopium, the same claim with its witness deleted."
+description: "The house's product in the downstream direction of a territorial economy: hope kept in witnessed form, the continuation sold with its evidence attached, the popular grade of the ⊤-commodity; distinguished from hopium, the same claim with its witness deleted."
 identity: hopeium
 name: Hopeium
 date-created: 2026-09-05
@@ -8,9 +8,9 @@ provenance:
     - ../../documents/articles/notes/2026/09/05/2026-09-05-note-on-territorial-economy-product-hypotheses.md
     - lib/emsenn/services/561-group/services/science-services-section/services/social-science-services-section/services/economics-and-business-science-services-section/services/economics-science-services-section/services/territorial-economy-science-services-section/content/text/documents/articles/notes/2026/09/06/2026-09-06-note-on-hope-as-resource-commodity-and-currency.md
 ---
-Hopeium is the founder's word (2026-09-05) for the house's product in the downstream direction of a territorial economy: hope manufactured only where a resolving continuation exists with evidence, the popular grade of the ⊤-commodity. The founder's own framing names the movement: "the manufacture of hopeium into a population" (561 Group Territorial Economy Services Section README, "The movement, in the founder's words").
+Hopeium is hope manufactured only where a resolving continuation exists with evidence: the popular grade of the ⊤-commodity. The product manufactures hope by carrying an evidenced continuation to a population.
 
-The carrier states the mechanism through the house's own reading of hope as a held cell: "Hopeium, the house's product, is hope manufactured only where the program itself makes the continuation exist, which is why the upstream direction is not optional: the territory's yield is the resolving continuation the downstream media carries" (same README, "The theory the program stands on").
+The program creates the continuation upstream; downstream media carries the territory's yield and evidence.
 
 Hopeium is distinguished from [californication](../../../../../../../../../sociology-science-services-section/services/cybernetic-postliberalism-services-section/content/text/glossary/terms/californication.md), "the recursive liberal worlding system that operationalizes structural contradiction as affectively manageable content," whose subject is the [savior-slave subject](../../../../../../../../../sociology-science-services-section/services/cybernetic-postliberalism-services-section/content/text/glossary/terms/savior-slave-subject.md): manufactured hope in a genre with no resolving play, cruel optimism at platform scale (carrier, same section). It is realized as [socially ontogenic media](../../../../../../../../../sociology-science-services-section/services/cybernetic-postliberalism-services-section/content/text/glossary/terms/socially-ontogenic-media.md), backed here by an actual continuation rather than none. And it is never demanded: the anarcho-nihilist [hope](../../../../../../../../../sociology-science-services-section/content/text/glossary/terms/hope.md) term's critique, that a demand for hope "compels a psychological state as the price of political participation," binds the fence that hopeium never gates anything on optimism.
 

@@ -1,6 +1,6 @@
 ---
 title: "Index of Prior Money Thought"
-description: "Index of the owner's prior money/economics thinking, collected while standing up the money-science section, with provenance for each entry and copy-vs-index noted."
+description: "Index of prior money and economics material collected while establishing the money-science section, with each entry identified as a copy or index."
 date-created: 2026-08-21
 type: index
 keywords: ["money-science", "collection", "index"]
@@ -10,8 +10,7 @@ authors:
 
 # Index of prior money thought
 
-This section opened by collecting the owner's prior money thinking rather
-than starting from nothing. Two collection modes are used, per house
+This section began by collecting prior money and economics material. Two collection modes are used, per house
 convention: **copy** (frozen legacy dumps, so the collected copy is the
 only living instance) and **index** (a pointer to live material in a
 sibling section, left in place rather than duplicated).
@@ -65,13 +64,11 @@ that makes it available to integrate.
   enough to function as bearer money.
 - **The Union as an economy: a consolidated record** (2026-07-23) — copied
   to `2026-08-21-collected-the-union-as-an-economy-a-consolidated-record.md`.
-  The narrative spine: session-transcript-sourced timeline from the
-  owner's diagnosis ("there's no commodities, no trade, no economics
-  happening between our enterprises") through the wit/tally naming
+  The narrative spine: a timeline from the
+  Group's lack of commodities, trade, and economics through the wit/tally naming
   session. Contains the clearest direct hit for the "Landauer entropy as
-  currency" search: the owner's own idea record states **fuel should be
-  reserved exclusively for the entropy/Landauer-cost currency** (glossary
-  of secondary terms, "fuel" entry) — named confirmation that this line of
+  currency" search: **fuel is reserved exclusively for the entropy/Landauer-cost currency** (glossary
+  of secondary terms, "fuel" entry) — this line of
   thought was explicitly conceived as a currency design, not just a
   physics analogy.
 

@@ -1,13 +1,13 @@
 ---
 title: "Dreaming Science — Seed Topic"
-description: "Seed topic standing up the dreaming-science section under intelligence-science: dreams as belief-fusion with the witness-requirement relaxed, sleep as the nightly settlement pass, trauma nightmares as sections re-presenting for re-witnessing — plus the owner's explicit directive that agent dreaming is in scope, framed as open Research-grade questions pointing to the founding note."
+description: "Seed topic standing up the dreaming-science section under intelligence-science: dreams as belief-fusion with the witness-requirement relaxed, sleep as the nightly settlement pass, trauma nightmares as sections re-presenting for re-witnessing — plus agent dreaming as an explicit research topic, framed as open Research-grade questions pointing to the founding note."
 date-created: 2026-08-21
 type: seed-topic
 name: 2026-08-21-seed-topic-dreaming-science
 authors:
   - claude
   - Claude Opus
-status: draft-for-owner-review
+status: draft-for-review
 keywords: ["dreaming-science", "intelligence", "seed-topic", "settlement", "agents", "research-grade"]
 science-owner: dreaming-science-services-section
 founding-note: "./2026-08-21-note-on-dreaming-as-unwitnessed-settlement.md"
@@ -18,7 +18,7 @@ founding-note: "./2026-08-21-note-on-dreaming-as-unwitnessed-settlement.md"
 ## Why this section exists here
 
 Dreaming is placed under intelligence-science, not under a biology or
-medical section, on the owner's explicit direction: dreaming is being
+medical section, and dreaming is being
 treated first as something intelligence *does* — an offline mode of a
 cognitive system — rather than first as a physiological process. That
 makes it a sibling of `ai-science-services-section` inside
@@ -27,7 +27,7 @@ parent's own convention (content-only; no README/package.json — see
 below).
 
 This document is the section's seed topic. It does not restate the
-founding thesis; it scopes the section, states the owner's directive
+founding thesis; it scopes the section, states that agent dreaming
 on agent dreaming as open research questions, and indexes prior
 material collected into this section on stand-up.
 
@@ -37,7 +37,7 @@ The founding theory note for dreaming-science is:
 
 **[Dreaming as Unwitnessed Settlement](./2026-08-21-note-on-dreaming-as-unwitnessed-settlement.md)**
 — written 2026-08-21 by claude-fable-5. Relocated into this section
-2026-09-04 (per the founder's dreaming/imagining revival order) from its
+2026-09-04  from its
 prior location,
 `lib/emsenn/services/561-group/services/science-services-section/content/text/documents/articles/notes/2026/08/21/2026-08-21-note-on-dreaming-as-unwitnessed-settlement.md`.
 
@@ -62,9 +62,9 @@ and the adjacent framings (insomnia as settlement failure attempted
 with the witness-requirement wrongly held on; neidan and dream-yoga as
 trained practice at the witnessed/unwitnessed boundary).
 
-## Owner directive: agent dreaming is in scope
+## Agent dreaming is in scope
 
-The owner has explicitly directed that this section is not only about
+This section covers both
 biological dreaming. **What dreaming means for agents** is in scope
 from the section's founding, not as a later extension. The founding
 note treats this directly (its section 4); this seed topic restates it
@@ -136,7 +136,7 @@ record):
   happens when a constraint is lifted, but they name different
   constraints (provenance/witness vs. closure/generator-boundedness)
   and this note already has an explicit agent-dreaming/LLM-boundary
-  claim of its own, predating the owner's directive.
+  claim of its own, predating this scope statement.
 - **[Dream convergence and dream emergence functions](./2026-08-21-collected-dream-convergence-and-emergence-functions.md)**
   (undated, relationality corpus collapse-dynamics triage). The two
   small formal primitives (Ξᵣ convergence, Dᵣ emergence) that the
@@ -163,7 +163,7 @@ record):
 - **[Imagining, collected as dreaming's unformalized companion](./2026-09-04-collected-imagining-as-unformalized-companion.md)**
   (2026-06-18, ops.561.group cognitive-layer plan +
   `operations-manifold` prototype — collected 2026-09-04, per the
-  founder's order naming dreaming AND imagining together). Records that,
+  decision to include dreaming AND imagining together). Records that,
   unlike dreaming, imagining never received a formal treatment: one
   descriptive sentence in a legacy plan, one superseded readiness-gap
   heuristic, no current package, no successor. Kept as an open gap.

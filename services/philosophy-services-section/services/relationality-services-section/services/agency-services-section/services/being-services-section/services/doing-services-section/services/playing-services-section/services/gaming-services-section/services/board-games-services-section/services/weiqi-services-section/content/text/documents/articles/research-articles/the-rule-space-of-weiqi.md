@@ -18,7 +18,7 @@ description: Swept 2026-09-04, one reader per lineage, one refuter per claim, 35
 ## 0. What was in the corpus, what was only thought
 
 Swept 2026-09-04, one reader per lineage, one refuter per claim, 35
-claims verified. The owner asked which of this is in the tree, which is
+claims verified. The investigation asks which of this is in the tree, which is
 in legacy, and which was only ever thought. The answer by lineage:
 
 - **Ruliology.** The word, in either spelling, is nowhere in the corpus:

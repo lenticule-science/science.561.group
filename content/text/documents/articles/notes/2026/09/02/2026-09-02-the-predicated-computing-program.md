@@ -14,9 +14,9 @@ keywords:
   - roadmap
 ---
 
-Owner-directed 2026-09-01/02 across one ringleading session: build the
-post-transformer, energy-efficient inferential compute — a new class of
-technology, not a system scaffolded around the old class — of which
+Build post-transformer, energy-efficient inferential compute as a new class of
+technology, not a system scaffolded around the old class. Kinetic proofing and
+language modeling are forms of this compute. The
 kinetic proofing and language modeling are just forms. This carrier is
 the program's unifying statement. The engineering class specification
 lives at the semiotic-computer-system section (the predicated inference
@@ -142,12 +142,12 @@ Stringing Glass §8.2.
 
 ## 7. Internationalization: the forms over every fiber
 
-Owner-directed 2026-09-02: this program is also how the 561 Group
-bootstraps itself as a small transnational corporation, and its nearest
+This program also bootstraps the 561 Group as a small transnational
+corporation, with its nearest
 outward face is producing media in other languages. Here that is not a
 translation department. It is the one machine parameterized over
 language fibers, under two standing laws: a public property is a
-parameterization over shared services (org-layering, owner-ruled
+parameterization over shared services (org-layering, specified
 2026-08-30), and a carrier in another language is a language
 presentation over an addressed artifact with a typed translation
 judgment, declared validation scope, and loss profile, never a second
@@ -208,7 +208,6 @@ can PRODUCE surface text; fibers judge. Measured on the real title claim
 preposition — the fiber refused it); Toki Pona "ijo mute li kama sama
 ijo wan" grammatical. The fiber's judgment covers surface form only,
 never meaning preservation — the receipt says so. Receipts land as rows
-through the semantic record journal in engineering custody. Dimensions the owner named that this carrier
-holds open, unsettled: the transnational corporate structure (which
+through the semantic record journal in engineering custody. This carrier leaves these dimensions open and unsettled: the transnational corporate structure (which
 entities and markets), resource internationalization (fibers, corpora,
 and contributors per language), and media production per language.

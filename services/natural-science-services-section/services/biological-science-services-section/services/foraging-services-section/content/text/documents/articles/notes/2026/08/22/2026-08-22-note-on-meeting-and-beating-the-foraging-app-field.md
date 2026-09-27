@@ -6,7 +6,7 @@ type: notes
 name: 2026-08-22-note-on-meeting-and-beating-the-foraging-app-field
 authors:
   - claude-sonnet-5
-status: draft-for-owner-review
+status: draft-for-review
 keywords: ["foraging-app", "gather-app", "feral-foraging", "inaturalist", "competitive-analysis", "computer-vision", "plant-identification", "mushroom-identification", "toxic-lookalikes", "citizen-science", "biodiversity-data", "trait-based-identification"]
 tags: ["draft", "study"]
 ---

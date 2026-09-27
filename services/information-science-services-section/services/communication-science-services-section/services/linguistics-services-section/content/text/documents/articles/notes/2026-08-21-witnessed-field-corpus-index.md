@@ -74,7 +74,7 @@ you need:
   built as bamboo stewardship on the witnessed field.
 - [`2026-08-21-frontier-scan-and-verdicts.md`](../../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/services/emsenn-languages-services-section/services/emsenn-language-learning-services-section/content/text/documents/articles/notes/2026-08-21-frontier-scan-and-verdicts.md) —
   eight speculative `???.561.group` applications on the witnessed-field
-  substrate, with the owner's verdicts recorded as a seed bank.
+  substrate, with the verdicts recorded as a seed bank.
 
 All five dialogue-tree documents carry `status: draft`; check each one's own
 provenance field for its specific grading and obligations rather than

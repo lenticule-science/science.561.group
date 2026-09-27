@@ -7,7 +7,7 @@ name: 2026-08-21-regrounding-the-hubble-tension
 authors:
   - claude-opus-4-6 (Regrounding flagship)
   - Claude Opus
-status: draft-for-owner-review
+status: draft-for-review
 keywords:
   - regrounding
   - obsmetrologia

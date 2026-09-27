@@ -7,7 +7,7 @@ name: 2026-08-22-internal-survey-attention-lean-and-vault-grounding
 authors:
   - emsenn
   - claude-fable-5
-status: draft-for-owner-review
+status: draft-for-review
 keywords: ["money-science", "attention", "lean", "causal-sets", "landauer", "internal-survey"]
 tags: ["draft", "research-archive"]
 ---

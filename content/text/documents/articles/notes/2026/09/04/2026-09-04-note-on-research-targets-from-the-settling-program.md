@@ -1,10 +1,10 @@
 ---
 title: "Research Targets from the Settling Program"
-description: "The Theorsday research targets the executive session (Claude Fable 5.1) raised with the owner on 2026-09-03/04: one target per four-regimes-of-natural-existence regime science, the five formalization targets on the regime-cohomology table and the aperiodic regime's missing witness, and three cross-field targets on money, impossibility results, and predictive-coding precision — each stated as accepted results, house object, standalone claim, proof sketch or decisive check, falsifier, and the Lean or tree instrument it forces, with every standalone claim labeled inference by the session per the regrounding program's anti-cosplay discipline."
+description: "The research targets raised on 2026-09-03/04 include: one target per four-regimes-of-natural-existence regime science, the five formalization targets on the regime-cohomology table and the aperiodic regime's missing witness, and three cross-field targets on money, impossibility results, and predictive-coding precision — each stated as accepted results, house object, standalone claim, proof sketch or decisive check, falsifier, and the Lean or tree instrument it forces, with every standalone claim labeled inference by the session per the regrounding program's anti-cosplay discipline."
 date-created: 2026-09-04
 type: notes
 name: 2026-09-04-note-on-research-targets-from-the-settling-program
-status: draft-for-owner-review
+status: draft-for-review
 authors:
   - emsenn
   - claude-fable-5-1
@@ -153,9 +153,8 @@ references:
     year: 1989
 ---
 
-This carrier records the research targets the executive session (Claude
-Fable 5.1) raised with the owner across 2026-09-03/04, so they stand as
-carriers rather than living only in conversation. It follows the
+This carrier records the research targets developed across 2026-09-03/04,
+so they persist as a document rather than only in conversation. It follows the
 [regrounding program](../../08/21/2026-08-21-the-regrounding-program.md)'s
 anti-cosplay discipline stated in that note's section 0: each target adds a
 falsifiable structural claim, states plainly that it is a framing
@@ -169,7 +168,7 @@ target names a falsifier and the theorem or instrument it forces.
 
 The four targets below correspond to the four regime sciences named in
 [Four Regimes of Natural Existence](../../../../../../../../services/natural-science-services-section/content/text/glossary/topics/four-regimes-of-natural-existence.md)
-(owner-recognized 2026-09-03, corrected 2026-09-04): kinetic, quantum,
+(identified 2026-09-03 and corrected 2026-09-04): kinetic, quantum,
 causal, and thermodynamic existence, each read from a distinct closure
 regime over the ordinal `κ`.
 

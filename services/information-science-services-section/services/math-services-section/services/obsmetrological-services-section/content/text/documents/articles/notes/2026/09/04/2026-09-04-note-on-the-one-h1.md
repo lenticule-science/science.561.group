@@ -16,7 +16,7 @@ keywords:
   - refactor-plan
 tags:
   - draft
-status: draft-for-owner-review
+status: draft-for-review
 authors:
   - emsenn
   - claude-fable-5-1

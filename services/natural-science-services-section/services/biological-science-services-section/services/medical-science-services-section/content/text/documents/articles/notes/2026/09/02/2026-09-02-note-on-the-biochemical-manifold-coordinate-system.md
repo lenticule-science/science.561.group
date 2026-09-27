@@ -762,8 +762,7 @@ the level of Western biomedicine or Traditional Chinese Medicine — a
 standing answer to what a body is, what illness is, what counts as
 evidence, and what treatment is for — and it is derived from
 Relationality, the house's own metaphysics, rather than assembled from
-clinical convenience. The founder named it three ways on 2026-09-02, and
-those three names are one thing seen from three sides: **holocellular**
+clinical convenience. It has three names for one thing seen from three sides: **holocellular**
 (the whole organism at the cell's scale), **somatic biochemical** (the
 body read through its chemistry), and the **biochemical manifold
 coordinate system** (the geometry that chemistry is read in). This note
@@ -1238,7 +1237,7 @@ build it. Records go through the health section's
 which already carries per-observation consent scope and missingness.
 
 **The practice line's loop is PACE-S, and it is MAPE-K positionally**
-(founder-stated 2026-09-02: "PACE::MAPE-K: PACE-S / Somatic"). Pause is
+(specified 2026-09-02: "PACE::MAPE-K: PACE-S / Somatic"). Pause is
 Monitor, Attune is Analyze, Care is Plan, Engage is Execute, and the
 Somatic is the Knowledge base — the person's own records. That last
 identification is what ties the founder's phrase *somatic biochemical* to a

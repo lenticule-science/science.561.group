@@ -52,7 +52,7 @@ acceptance case among others and MUST NOT copy as the operation.
 
 The input and output schemas are the operation's argument places. The
 operation is one unsaturated function of one schematized JSON object to
-another (owner-ruled in the layering law), so the schemas are what the
+another (specified in the layering law), so the schemas are what the
 fabricator saturates and the assays check; a work order whose schemas are
 absent or open is not meaning-closed and MUST be refused at admission.
 

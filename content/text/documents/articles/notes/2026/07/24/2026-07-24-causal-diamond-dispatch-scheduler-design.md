@@ -12,11 +12,11 @@ declared-by: leader-movement-team/realize-fulfilled-work-products
 
 ## Demand
 
-Compose a draft design note for replacing the leader-movement-team dispatcher's v0 class-priority ordering with a scheduler grounded in the Union's own causality mathematics: using the kinematic causal diamond reading in the repository root AGENTS.md, the tensor-vs-par distinction and typed-circuit residue concepts in lib/emsenn/services/561-group/services/board-of-directors/services/executive-office/services/leader-movement-team/content/text/documents/articles/notes/2026/07/19/2026-07-19-a-prospective-constitution.md, and the current implementation in lib/emsenn/services/561-group/services/board-of-directors/services/executive-office/services/leader-movement-team/src/dispatch-work-orders.mjs, propose how open work orders should be partitioned into concurrent antichains of tensor-independent work (distinct targets, no shared settlement plate) and how dependency or conflict between orders (same target, producer-consumer evidence chains such as repair diagnoses feeding capability repairs) should be detected and serialized. State what is derivable from proven Obsmetrologia results versus what is engineering judgment. Mark DRAFT-FOR-LEADER-REVIEW.
+Compose a draft design note for replacing the leader-movement-team dispatcher's v0 class-priority ordering with a scheduler grounded in the Union's own causality mathematics: using the kinematic causal diamond reading in the repository root AGENTS.md, the tensor-vs-par distinction and typed-circuit residue concepts in lib/emsenn/services/561-group/services/board-of-directors/services/executive-office/services/leader-movement-team/content/text/documents/articles/notes/2026/07/19/2026-07-19-a-prospective-constitution.md, and the current implementation in lib/emsenn/services/561-group/services/board-of-directors/services/executive-office/services/leader-movement-team/src/dispatch-work-orders.mjs, propose how open work orders should be partitioned into concurrent antichains of tensor-independent work (distinct targets, no shared settlement plate) and how dependency or conflict between orders (same target, producer-consumer evidence chains such as repair diagnoses feeding capability repairs) should be detected and serialized. State what is derivable from proven Obsmetrologia results versus what is engineering judgment. Mark DRAFT-FOR-REVIEW.
 
 ## Fulfillment
 
-MARK DRAFT-FOR-LEADER-REVIEW
+MARK DRAFT-FOR-REVIEW
 
 Draft Design Note: Replacing the Leader-Movement-Team Dispatcher's v0 Class-Priority Ordering with a Scheduler Grounded in the Union's Causality Mathematics
 
@@ -50,7 +50,7 @@ The proposed scheduler design provides a more robust and efficient way of managi
 
 We recommend implementing the proposed scheduler design in the leader-movement-team dispatcher's v0 class-priority ordering. This will provide a more robust and efficient way of managing work orders and taking into account the complex dependencies and causal relationships between work orders.
 
-MARK DRAFT-FOR-LEADER-REVIEW
+MARK DRAFT-FOR-REVIEW
 
 ---
 

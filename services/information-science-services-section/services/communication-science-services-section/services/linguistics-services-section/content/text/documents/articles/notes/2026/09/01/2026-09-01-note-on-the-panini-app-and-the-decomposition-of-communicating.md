@@ -1,6 +1,6 @@
 ---
 title: "Panini: App and Decomposition of the Communicating Engine"
-description: "Program design note persisting owner ruling (2026-09-01) on distributing the communicating engine into topic sections and composing them as the panini app, with section map, app spec, 12-lot migration sequence, and design-comparison scores."
+description: "Program design note for (2026-09-01) on distributing the communicating engine into topic sections and composing them as the panini app, with section map, app spec, 12-lot migration sequence, and design-comparison scores."
 date-created: 2026-09-01
 type: notes
 name: 2026-09-01-note-on-the-panini-app-and-the-decomposition-of-communicating
@@ -16,13 +16,13 @@ keywords:
 status: synthesis-ready
 ---
 
-## The Owner's Ruling (2026-09-01, verbatim intent)
+## Program requirements
 
-> what communicating has is meant to be distributed into many services sections scripts, while panini should be an app somewhere that brings them together into like, a coherent app that meets or beats a familiar face from the real world of relevant computer stuff.
+Communicating capabilities are distributed across services sections and scripts. Panini is the app that composes them into a coherent product that meets or exceeds familiar tools in the relevant field.
 
-This ruling applies two house laws directly: **org-layering law #3** (topic sections carry src/<topic> + scripts/<verb>-<noun>, apps compose scripts and src) and **import stratification** (scripts import scripts+src, never apps; apps import apps+scripts+src). The precedent is **Metrologic**, the app over obsmetrological-proof-tree sections (`obsmetrological-services-section/apps/metrologic`).
+This design applies two house laws directly: **org-layering law #3** (topic sections carry src/<topic> + scripts/<verb>-<noun>, apps compose scripts and src) and **import stratification** (scripts import scripts+src, never apps; apps import apps+scripts+src). The precedent is **Metrologic**, the app over obsmetrological-proof-tree sections (`obsmetrological-services-section/apps/metrologic`).
 
-The ruling has two halves: (1) distribution of communicating's capabilities into topic sections, and (2) panini as the composing app. Both are mandatory; neither is optional or deferred.
+The design has two requirements: (1) distribution of communicating's capabilities into topic sections, and (2) panini as the composing app. Both are mandatory; neither is optional or deferred.
 
 ## Incumbent Portfolio and MEET/BEAT Findings
 
@@ -146,7 +146,7 @@ Depends on: Lots 2-3.
 
 Produces: Dated meet-then-beat receipt in panini/data/records/, running same falsification method the census used on incumbents against panini's actual shipped Reading object.
 
-Receiver: Campaign and founder's go/no-go read.
+Receiver: Campaign go/no-go review.
 
 Gate: BEAT is reported achieved only if assay confirms it — designed field is not proven claim until this lot closes.
 
@@ -278,7 +278,7 @@ channel A supplies the three constraints below, which bind every lot.
 
 ## Material Uncertainties
 
-1. **Design-3's deferral under-executes the ruling.** Design 3 (the selected path) pushes full distribution into Lot 5 and beyond as demand-gated, not scheduled. This is an intentional trade against faster receiver-visible wedge (Lot 4). The owner's explicit ruling requires distribution; this plan schedules it (Lots 5-12), rejecting the indefinite deferral.
+1. **Design-3's deferral under-executes the ruling.** Design 3 (the selected path) pushes full distribution into Lot 5 and beyond as demand-gated, not scheduled. This is an intentional trade against faster receiver-visible wedge (Lot 4). The program requires distribution; this plan schedules it (Lots 5-12), rejecting the indefinite deferral.
 
 2. **Concurrent-edit risk has been independently verified resolved this session** (git commit de75d1bba18, published as 0.0.5, 0 regressions in 70 prior tests). Lot 1 should re-confirm no further concurrent edits have landed since before pinning.
 
@@ -320,12 +320,12 @@ channel A supplies the three constraints below, which bind every lot.
 
 **Design 3: Wedge-first (panini at Lot 1 wrapping unmoved engine, BEAT Lots 2-4, full decomposition deferred indefinitely as demand-gated)**
 
-- Lawfulness: 4/10. Weak point — barely executes owner's explicit ruling that communicating contents be distributed into many sections; pushes entirely into not-scheduled Lot 5 with no committed sequencing. Only small new consent-gate script created.
+- Lawfulness: 4/10. Weak point — barely executes the requirement to distribute communicating contents across many sections; pushes entirely into not-scheduled Lot 5 with no committed sequencing. Only small new consent-gate script created.
 - Migration safety: 9/10. Trivially high since nothing moves in v0 (zero consumers touched); low relevance since so little actually migrates.
 - Time-to-receiver-visible-wedge: 9/10. Standout — panini runnable and BEAT-bearing by Lot 4, directly satisfying meet-then-beat step 6's demand for fast receiver-visible wedge. This is the whole point of the discipline.
 - Honesty of risk register: 8.5/10. Self-aware — flags consent-gate unverified against corpus, explicitly requires real falsification assay before claiming BEAT, correctly excludes consent-gating from incumbent-measured BEAT claim.
 
-**Selected path:** This synthesis adopts Design 3's wedge-speed (Lots 1-4 before any decomposition begins, panini visible by Lot 4) and its honest risk register, but rejects its deferral of the second half of the ruling. The synthesized plan sequences distribution (Lots 5-12) immediately after the wedge closes and BEAT ships, not as indefinite future work. This respects both halves of the owner's ruling while keeping the receiver-visible wedge as compact as Design 3 intended.
+**Selected path:** This synthesis adopts Design 3's wedge-speed (Lots 1-4 before any decomposition begins, panini visible by Lot 4) and its honest risk register, but rejects its deferral of the second half of the ruling. The synthesized plan sequences distribution (Lots 5-12) immediately after the wedge closes and BEAT ships, not as indefinite future work. This respects both requirements while keeping the receiver-visible wedge as compact as Design 3 intended.
 
 ## See Also
 

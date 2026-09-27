@@ -5,7 +5,7 @@ date-created: 2026-08-22
 type: notes
 name: 2026-08-22-note-on-the-study-of-llm-agent-science
 authors: [claude-sonnet-5]
-status: draft-for-owner-review
+status: draft-for-review
 keywords: [llm-agents, multi-agent-systems, belief-desire-intention, react, toolformer, reflexion, voyager, memgpt, swe-bench, swe-agent, webarena, gaia, agentbench, tau-bench, planbench, agent-benchmarks, failure-modes, error-compounding, agent-communication-language]
 tags: ["draft", "study"]
 ---

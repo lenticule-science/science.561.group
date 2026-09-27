@@ -1,10 +1,10 @@
 ---
 title: "The pool as a priced rotating credit association"
-description: "The theory behind Tidepool, read from the literature the house admitted on 2026-09-05: the rotating credit association and its descendants (savings groups, joint-liability lending, crowdstaking) as one lineage; what each contributes and what each leaves unpriced; the house's additions (a draw priced on the record of matched crossings, a barrier that is a time series, two-witness books, a default held rather than punished); the distribution problem a pool of directed yield faces and the four lawful answers to it; and the register the founder chose for how all of it is said."
+description: "The theory behind Tidepool, read from the literature the house admitted on 2026-09-05: the rotating credit association and its descendants (savings groups, joint-liability lending, crowdstaking) as one lineage; what each contributes and what each leaves unpriced; the house's additions (a draw priced on the record of matched crossings, a barrier that is a time series, two-witness books, a default held rather than punished); the distribution problem a pool of directed yield faces and the four lawful answers to it; and the register used throughout."
 date-created: 2026-09-05
 type: notes
 name: 2026-09-05-note-on-the-pool-as-a-priced-rotating-credit-association
-status: draft-for-owner-review
+status: draft-for-review
 authors:
   - emsenn
   - claude-fable-5-1
@@ -82,8 +82,8 @@ references:
 
 # The pool as a priced rotating credit association
 
-Written on Settlerday, 2026-09-05, when the founder ordered the house to meet
-and then beat what Breadchain Cooperative does and offers, as a product for
+Written on Settlerday, 2026-09-05, for a product intended to meet and then
+beat what Breadchain Cooperative does and offers, for
 the United States named Tidepool, and to make the science sections richer than
 any session's context. This note is the theory that order rests on. Every
 outside claim is cited to a bibliography carrier the house admitted the same
@@ -178,7 +178,7 @@ the membership rule answers before the distribution rule can be lawful.
 
 ## 4. The register
 
-The founder's order on how this is said (2026-09-05): the register is
+The register is
 [emergent strategy](../../../../../../../../../../../sociology-science-services-section/content/text/glossary/terms/emergent-strategy.md)
 and post-2020 [mutual aid](../../../../../../../../../../../../content/text/glossary/terms/mutual-aid.md),
 not any labeled program, readable by people in both worlds and mostly the

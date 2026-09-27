@@ -1,6 +1,6 @@
 ---
 title: "The Lenticule Research Substrate Program"
-description: "Program carrier for the founder movement of 2026-09-01: Lenticule Science operated as an autonomous, agentic, autonomic research lab on the house's own settling substrate — purpose, doctrine, thread-mates, open conjectures, and the current program edge. Durable purpose and evolving program state; not an architecture document and not a receipt."
+description: "Program carrier for the 2026-09-01 Lenticule Science initiative: Lenticule Science operated as an autonomous, agentic, autonomic research lab on the house's own settling substrate — purpose, doctrine, thread-mates, open conjectures, and the current program edge. Durable purpose and evolving program state; not an architecture document and not a receipt."
 date-created: 2026-09-01
 type: notes
 name: 2026-09-01-the-lenticule-research-substrate-program
@@ -12,18 +12,16 @@ keywords: ["research-substrate", "relationality", "settling", "eavt", "proof-pat
 tags: []
 ---
 
-## The movement
+## The program
 
-Founder movement (owner, this session, 2026-09-01, verbatim fragments):
-make Lenticule Science "into a wild ass agentic digital research lab like
-the world has never seen"; "meet then beat" the software classes this
-touches; the knowledge substrate treats `[file: [key: value]]` as
-`[subject: [predicate: object]]`; "everything is supposed to flow from
-Mark, Utterance, all this math, get built into more complex shit," and the
-published form of that flow — real OWL on the web — is itself a corporate
-asset. The owner further ordered the theory studied to depth before
-architecture (proof-path addressing foremost) and ruled that agent
-sessions never author the founder's identity in either direction.
+Lenticule Science is an agentic digital research lab intended to meet and
+beat the software classes it touches. The knowledge substrate treats
+`[file: [key: value]]` as `[subject: [predicate: object]]`; Mark, Utterance,
+and the mathematics compose into more complex artifacts, and the published
+form of that flow — real OWL on the web — is a corporate asset. Study the
+theory, especially proof-path addressing, before choosing an architecture.
+Agent sessions must not invent biographical claims about the human in either
+direction.
 
 Nearest usable outcome: an agent (or web visitor) traverses the science
 corpus as a typed, stratified, provenance-carrying graph — one real note
@@ -56,7 +54,7 @@ disk this session:
   its mathematical spine is live in Obsmetrologia. This program is that
   discipline's revival on the proved spine, not an invention.
 
-## Doctrine (ruled in-session by the executive under the decision law)
+## Doctrine
 
 D1. The admission codec is constitutional and two-legged: forward,
 carriers to utterances/rows; backward, the settled substrate computes
@@ -146,8 +144,9 @@ guide, authorize the predicates the corpus already uses, make the index
 account refusals as data, and run the admission census over all 4,493
 science terms; then repin GEODE and l-space so the admitted terms are served
 at `/ns/`. The provenance census (ks-03) landed the same night: 10,453
-science carriers; 8,804 agent-written with no citation; 1,479 agent-cited;
-151 owner-authored; 10 owner-attributed with a locator; 9 without.
+science carriers; 8,804 with no citation, 1,479 with citations, and 170
+with attribution labels. Attribution labels do not establish authorship or
+support a claim.
 
 Ten pieces the house math has that no lab's knowledge system has, each
 landing as an admission codec or a query verb with a deterministic gate,
@@ -173,13 +172,11 @@ was metroplat's, repaired in 0.4.3 and 0.4.4):
    (102,618 files) for eight capability rows on each call; metroplat
    0.4.10 memoizes that read and the trace question answers in 0.5 s
    through the gateway.
-3. **Provenance census** (ks-03): every science carrier graded
-   owner-authored, owner-attributed-located, owner-attributed-unlocated,
-   agent-cited, agent-uncited. Shipped: provenance-engineering's
-   `relate-set-of-carrier-provenance-rows` turns the census (10,453
-   carriers) into a 162,870-row trace, entities constituted by eavt from
-   the carrier path; the trace sits in the production data root as
-   `science-carrier-provenance` and answers by grade through the gateway.
+3. **Citation census** (ks-03): science carriers are classified by whether
+   they contain citations or no citation. Shipped: the citation-engineering
+   service turns the census (10,453 carriers) into a 162,870-row trace,
+   entities constituted by eavt from the carrier path; the trace sits in the
+   production data root and answers citation counts through the gateway.
 4. **Priced predicate algebra** (ks-04): predicates generated from the four
    generators; MLD by default, equality as a paid identification;
    `Equality.lean` and `LocalMldClassification.lean` are the proofs;
@@ -354,12 +351,11 @@ First vertical-slice target unchanged: one real science note admitted →
 settled → served → term IRI dereferences → receipt written and priced.
 Lot 10 is that proof; it depends on Lots 1–8 landing, at minimum.
 
-Open questions the architecture synthesis left, ruled this session under
-the decision law (executive rulings, not founder rulings): `/ns/*` stays
+Open questions: `/ns/*` stays
 on l-space.561.group, graduation to a standalone zone waiting on real
 external dereference signal; `consent-status`'s value vocabulary is not
 invented — Lot 2's executor greps the corpus first and, if empty, leaves
-the value set open pending a founder ruling on consent semantics; Lot 7's
+the value set open pending a decision on consent semantics; Lot 7's
 paper-predicate authority list is checked against CiTO before any
 predicate is coined; retiring Lot 3's interim windowed-strata reading in
 favor of Lot 9's doctrine-precise extraction is deferred until Lot 9's

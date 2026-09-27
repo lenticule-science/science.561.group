@@ -1,6 +1,6 @@
 ---
 title: "Atari as One Local Future"
-description: "Owner-stated 2026-09-03: atari is one local future left, forced only when necessary. Read in the house's own objects: the stalk of the board sheaf, the Heyting algebra of its truth values, the residuated fiber algebras of the predication paper, and the order Laplacian whose harmonic kernel is the settled global section. States what forces a move, why territory is harmonic, why aji is Laplacian energy, and what would refute it."
+description: "Atari is one local future left, forced only when necessary. Read in the house's own objects: the stalk of the board sheaf, the Heyting algebra of its truth values, the residuated fiber algebras of the predication paper, and the order Laplacian whose harmonic kernel is the settled global section. States what forces a move, why territory is harmonic, why aji is Laplacian energy, and what would refute it."
 date-created: 2026-09-03
 date-updated: 2026-09-03
 type: text
@@ -15,12 +15,9 @@ what-is-proved:
 
 ## 1. The statement
 
-Owner, 2026-09-03, correcting a session that had read atari as "one
-neighbour left": atari is "one *local* future left, that is forced only
-when necessary. This is why it relates to heyting algebras, fiber algebras,
-and sheaf laplacians, weirdly."
-
-Three words carry the whole thing: *local*, *future*, *necessary*. Each is
+Atari is one *local* future left, forced only when necessary. The
+connection to Heyting algebras, fiber algebras, and sheaf Laplacians follows
+from three terms: *local*, *future*, and *necessary*. Each is
 already a named object in Obsmetrologia and metrologic. This note reads
 them off, then explores what follows.
 

@@ -1,7 +1,7 @@
 ---
 aliases:
   - PACE::MAPE-K
-description: "The general Pause, Attune, Care, Engage loop over Somatic knowledge: founder-named as MAPE-K's human/agent-facing counterpart, positionally matching Monitor, Analyze, Plan, Execute, and Knowledge."
+description: "The general Pause, Attune, Care, Engage loop over Somatic knowledge: as MAPE-K's human/agent-facing counterpart, positionally matching Monitor, Analyze, Plan, Execute, and Knowledge."
 identity: pace-s
 name: PACE-S
 date-created: 2026-09-03
@@ -12,7 +12,7 @@ provenance:
     - /home/emsenn/info/lib/emsenn/services/561-group/services/public-services-section/services/public-health-services-section/content/text/documents/articles/notes/2026/09/02/2026-09-02-note-on-pace-yourself.md
 title: PACE-S
 ---
-**PACE-S** names the general loop of Pause, Attune, Care, and Engage over Somatic knowledge. The founder named the four verbs Pause/Attune/Care/Engage on 2026-09-02 for [PACE Yourself](../../../../../public-services-section/services/public-health-services-section/content/text/glossary/terms/pace-yourself.md), the house pacing brand for infection-associated chronic illness. The next day, noticing a session's own drawn parallel to MAPE-K (Monitor, Analyze, Plan, Execute, Knowledge -- see the [MAPE-K research note](../../documents/articles/notes/2026/07/11/2026-07-11-research-on-mape-k.md)), the founder named the fifth term directly, verbatim: "omg your PACE::MAPE-K: PACE-S / Somatic."
+**PACE-S** names the general loop of Pause, Attune, Care, and Engage over Somatic knowledge. The four verbs Pause/Attune/Care/Engage form [PACE Yourself](../../../../../public-services-section/services/public-health-services-section/content/text/glossary/terms/pace-yourself.md), the house pacing brand for infection-associated chronic illness. The next day, the fifth term linked the loop to MAPE-K (Monitor, Analyze, Plan, Execute, Knowledge -- see the [MAPE-K research note](../../documents/articles/notes/2026/07/11/2026-07-11-research-on-mape-k.md)): PACE-S / Somatic.
 
 ## Correspondence to MAPE-K
 

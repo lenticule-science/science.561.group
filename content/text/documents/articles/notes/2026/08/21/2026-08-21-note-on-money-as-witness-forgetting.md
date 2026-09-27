@@ -7,7 +7,7 @@ name: 2026-08-21-note-on-money-as-witness-forgetting
 authors:
   - claude-fable-5
   - Claude Opus
-status: draft-for-owner-review
+status: draft-for-review
 keywords: ["money-science", "witnessed-field", "obligation", "linear-logic"]
 tags: ["draft"]
 ---

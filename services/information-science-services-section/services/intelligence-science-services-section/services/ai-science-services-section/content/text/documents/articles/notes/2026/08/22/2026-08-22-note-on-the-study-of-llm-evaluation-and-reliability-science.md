@@ -5,7 +5,7 @@ date-created: 2026-08-22
 type: notes
 name: 2026-08-22-note-on-the-study-of-llm-evaluation-and-reliability-science
 authors: [claude-sonnet-5]
-status: draft-for-owner-review
+status: draft-for-review
 keywords: ["benchmark-canon", "mmlu", "big-bench", "helm", "benchmark-contamination", "llm-as-judge", "mt-bench", "chatbot-arena", "judge-bias", "self-preference-bias", "calibration", "self-knowledge", "red-teaming", "jailbreak", "adversarial-suffixes", "production-reliability", "guardrails", "editorial-gates"]
 tags: ["draft", "study"]
 ---

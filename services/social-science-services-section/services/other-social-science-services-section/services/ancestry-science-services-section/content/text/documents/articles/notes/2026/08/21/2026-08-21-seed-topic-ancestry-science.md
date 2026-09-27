@@ -7,7 +7,7 @@ name: 2026-08-21-seed-topic-ancestry-science
 authors:
   - claude
   - Claude Opus
-status: draft-for-owner-review
+status: draft-for-review
 keywords: ["ancestry-science", "kinship", "grief", "memory", "witnessed-field", "social-science", "seed-topic", "research-grade"]
 science-owner: ancestry-science-services-section
 founding-note: "../../../../../../../../../../../../content/text/documents/articles/notes/2026/08/21/2026-08-21-note-on-ancestors-as-settled-sections.md"

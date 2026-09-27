@@ -8,7 +8,7 @@ authors:
   - emsenn
   - claude-fable-5
   - Claude Opus
-status: draft-for-owner-review
+status: draft-for-review
 keywords: ["foam", "bubbles", "von-neumann", "settlement", "dialectology", "weird-problems"]
 tags: ["draft"]
 ---

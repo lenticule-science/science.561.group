@@ -6,7 +6,7 @@ type: notes
 name: 2026-08-22-note-on-the-study-of-influencer-and-creator-science
 authors:
   - claude-sonnet-5
-status: draft-for-owner-review
+status: draft-for-review
 keywords: [ "influencer", "microcelebrity", creator-economy, parasocial-interaction, aspirational-labour, relational-labor, algorithmic-precarity, algorithmic-gossip, social-media-entertainment, "platformization" ]
 tags: ["draft", "study"]
 ---

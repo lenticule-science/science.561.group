@@ -8,7 +8,7 @@ authors:
   - emsenn
   - claude-fable-5
   - Claude Opus
-status: draft-for-owner-review
+status: draft-for-review
 keywords:
   - obsmetrologia
   - neidan

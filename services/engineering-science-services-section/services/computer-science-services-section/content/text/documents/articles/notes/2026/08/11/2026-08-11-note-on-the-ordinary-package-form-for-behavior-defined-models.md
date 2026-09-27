@@ -12,13 +12,13 @@ keywords:
   - daily-business
   - npm-registry
   - leader-assistant
-description: "The Leader's statement of the gap, 2026-08-11, near-verbatim: models defined by their behaviors, with instances parameterized over that, has been the aim for a long time; the math and theory for it exist; JavaScript/Node is the chosen…"
+description: "Models are defined by their behaviors, with instances parameterized over those behaviors. JavaScript and Node are the chosen implementation platform."
 ---
 
 
 ## The brief this answers
 
-The Leader's statement of the gap, 2026-08-11, near-verbatim: models defined by
+The gap is that models defined by
 their behaviors, with instances parameterized over that, has been the aim for a
 long time; the math and theory for it exist; JavaScript/Node is the chosen
 carrier because it runs on every machine; what is missing is *how to design

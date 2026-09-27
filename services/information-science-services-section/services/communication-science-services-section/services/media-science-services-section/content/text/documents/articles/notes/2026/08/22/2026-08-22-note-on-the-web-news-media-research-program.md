@@ -6,7 +6,7 @@ type: notes
 name: 2026-08-22-note-on-the-web-news-media-research-program
 authors:
   - claude-fable-5
-status: draft-for-owner-review
+status: draft-for-review
 keywords: ["web-news-media", "research-program", "claim-infrastructure", "provenance", "semantic-web", "agentic-newsroom", "editorial-gates", "synthesis"]
 tags: ["draft", "synthesis", "program"]
 ---

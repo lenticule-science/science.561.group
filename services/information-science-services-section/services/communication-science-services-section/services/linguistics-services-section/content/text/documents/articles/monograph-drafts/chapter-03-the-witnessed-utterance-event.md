@@ -17,7 +17,7 @@ keywords:
   - consent
 tags:
   - draft
-status: draft-for-owner-review
+status: draft-for-review
 authors:
   - Claude Opus
 ---

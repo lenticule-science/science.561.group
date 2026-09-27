@@ -23,7 +23,7 @@ applications of semiotic and relational theory across our corpus."
 
 This note is the durable carrier for that program. It records, per lineage,
 what the corpus already holds and where, with each claim labelled by what it
-is (owner-stated, agent-authored correspondence, Lean-checked, or code), then
+is (asserted, agent-authored correspondence, Lean-checked, or code), then
 the applications, then what was made executable, then the edge. It replaces
 nothing; it points. Owner statements on weiqi that precede it: the
 2026-08-19 board question ("Is there anything the Obsmetrologia mathematics
@@ -36,7 +36,7 @@ statement persisted in `.claude/skills/build-the-semiotic-language-model/SKILL.m
 that the spine runs "Fregean predication → Belnap FOUR → Chu space →
 tessellated gyrobifastigium → spatiotemporal knowledge manifolds that
 correspond with real quantum, causal, and thermal physics". That spine is
-owner-stated; its application to weiqi is stated for the first time in the
+asserted; its application to weiqi is stated for the first time in the
 message above. No carrier before it says weiqi as Chu space, weiqi as Fregean
 predication, or weiqi as the foundation of quantum foam (whole-tree search,
 2026-09-03, current and legacy generations). That is a search miss recorded
@@ -50,11 +50,9 @@ use)" — applied in [Reframe and Standards](../notes/2026-08-29-note-on-reframe
 ### 1.1 The semantic arena (densest carrier)
 
 `engineering-services-section/content/text/documents/articles/notes/2026/08/01/2026-08-01-note-on-the-content-addressed-glass-sponge-semantic-compute-complex.md`
-§17, "The monotone, stacked, and twisted Weiqi arena" (declared by its own
-frontmatter as "leader-interactive-direction-observed-and-synthesized-by-bare-cedar-fog-codex":
-owner-directed, agent-synthesized; self-labelled as correspondence: "The
-correspondence is not 'the software is a Go board'"). It extends the arena
-paper's five-tuple `(E, ≤, #, pol, Sym)` (Definition 6.1, author emsenn) with
+§17, "The monotone, stacked, and twisted Weiqi arena." The conceptual
+correspondence is not a claim that the software is a Go board. The note extends
+the arena paper's five-tuple `(E, ≤, #, pol, Sym)` (Definition 6.1, author emsenn) with
 site, valuation, and closure. Its content:
 
 - The arena `A = (E, <=, #, polarity, symmetry, site, valuation, closure)`

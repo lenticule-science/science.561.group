@@ -26,7 +26,7 @@ status: proposal
 
 ## 0. What this carries, and where it stands
 
-Owner-ruled 2026-09-03, persisted in
+This model, recorded on 2026-09-03, is preserved in
 [the semiotic language model skill's Theory Thursday section](../../../../../../../../../../../../../../../../../../../../.claude/skills/build-the-semiotic-language-model/SKILL.md)
 (verbatim): "each EXCHANGE is its own gyrobifastigial cell; an enterprise is
 the genet of its exchange-cells over time, never one fixed solid with eight
@@ -456,7 +456,7 @@ damage/border test, applied locally, does.
 
 ## 7. The two-eyes theorem
 
-**Statement (owner-ruled reading, made exact; proved on the grid, open on
+**Statement (specified reading, made exact; proved on the grid, open on
 the honeycomb).** On a gyrobifastigial honeycomb of exchange-cells with
 keratinous Hoare programs and the kernel's legality laws at admission: a
 genet survives every single refusal iff it holds two independent

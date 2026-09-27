@@ -6,7 +6,7 @@ type: notes
 name: 2026-08-22-note-on-the-study-of-web-news-media
 authors:
   - claude-sonnet-5
-status: draft-for-owner-review
+status: draft-for-review
 keywords: ["web-news-media", "digital-journalism", "platform-publisher-relations", "newsroom-analytics", "web-syndication", "rss", "atom", "schema-org", "paywall", "pink-slime-journalism", "news-desert", "misinformation"]
 tags: ["draft", "study"]
 ---

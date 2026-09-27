@@ -4,7 +4,7 @@ description: "The 2026-09-05 read of the collapse and energy-descent literature 
 date-created: 2026-09-05
 type: notes
 name: 2026-09-05-note-on-collapse-science-for-economics-business-and-finance
-status: draft-for-owner-review
+status: draft-for-review
 authors:
   - claude-fable-5-1
 keywords:
@@ -220,8 +220,8 @@ each is read as support consistent with them, never as the claim's own
 evidence. Stated plainly, with a falsifier for each:
 
 - **Energy is the substrate of geopolitics, not one input among many.** The
-  house holds this as the founder's own authored position (the 2025-12-25
-  oil-sanctions log), not as a finding any source above establishes; Hall and
+  house holds this as a proposition, not as a finding any source above
+  establishes; Hall and
   Morgan describe declining energy surplus, they do not themselves argue that
   geopolitical events are best explained by it. Falsifier: a major
   geopolitical realignment (a war, a sanctions regime, an alliance shift) that

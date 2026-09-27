@@ -6,7 +6,7 @@ type: notes
 name: 2026-08-22-note-on-the-study-of-news-media-science
 authors:
   - claude-sonnet-5
-status: draft-for-owner-review
+status: draft-for-review
 keywords: ["news-values", "objectivity", "strategic-ritual", "journalism-epistemology", "fact-checking", "backfire-effect", "computational-journalism", "automated-journalism", "wire-service", "churnalism", "indexing-hypothesis", "trust-in-news"]
 tags: ["draft", "study"]
 ---

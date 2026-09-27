@@ -17,7 +17,7 @@ keywords:
   - provenance-grading
 tags:
   - draft
-status: draft-for-owner-review
+status: draft-for-review
 authors:
   - emsenn
   - claude-fable-5-1
@@ -88,11 +88,9 @@ a claimed resolution. Per that program's own discipline (§3), the claim
 below is graded, not asserted: the deterministic skeleton the house Lean
 proves today is read against the model's actual glassy-dynamics literature,
 and the boundary between what the skeleton can and cannot see is stated
-honestly rather than talked past. Per an owner correction received while
-this note was being written (below, §3 of this note — not to be confused
-with the regrounding program's own §3 just cited): the placement of glass on
-any house regime is itself a hypothesis this note's measurement
-tests, never a premise it assumes.
+honestly rather than talked past. The placement of glass on any house regime
+is itself a hypothesis tested by the measurements below, never a premise
+assumed in advance.
 
 ## 1. The problem, as the field states it
 
@@ -227,101 +225,28 @@ it tells you what a seed of active sites eventually activates, not how long
 that takes or with what probability, and it is silent on whether any
 residual stays forever frozen once the rate is restored.
 
-## 3. Provenance of the framing
+## 3. Status of the framing and evidence
 
-Before reading numbers against a house theoretical frame, the frame itself
-needs its provenance stated. An owner correction received while this note
-was in progress states the concern plainly: glass sitting on the kinetic
-rung might be wrong, and a good deal of how Obsmetrologia frames physical
-phenomena is thin extrapolation from conversations that are not themselves
-recoverable as transcripts. This section grades every carrier §2's reading
-and §5's hypothesis lean on — checked directly against the carrier text, not
-assumed from its reputation in the corpus.
+The placement of glass on a house regime is a hypothesis, not an established
+result. The available theoretical framing of physical phenomena includes
+extrapolations that are not recoverable to specific source records. This
+section grades every carrier used in §2 and every hypothesis in §5 by direct
+inspection of the carrier text rather than by reputation.
 
-**Machine-checked, and certain in exactly that narrow sense.**
-`Obsmetrologia.Closure.Regime.classify`, `four_regime_dichotomy`, and
-`cohomologyVanishes_iff` (`Obsmetrologia/Closure/Regime.lean`) are Lean
-theorems about an abstract closure-ordinal structure: given three decidable
-flags (Scott-continuity, a finite base, countable cofinality), the ordinal
-sorts into exactly one of four regimes, and settling cohomology `H¹`
-vanishes in exactly two of them. This compiles; it is certain as
-mathematics about that abstract structure. `KCM.lean`'s `activateStep_infl`,
-`activateStep_mono`, `activateStep_fixed`, and
-`activation_is_facilitation_closure` (§2 above) are equally certain in the
-same narrow sense: proved facts about the `activateStep` closure operator.
+The older `source-snapshot: 2026-08-17-windows-561-group` material, with its
+triage-site source path, is salvaged draft content rather than a reviewed
+carrier. It presents four regimes as spacetime fields, forced inflation rates
+as n-bonacci Perron–Frobenius eigenvalues, three-dimensional space as a
+golden-ratio icosahedral quasicrystal, and the Hubble tension as stages of one
+spiral. The mathematical prose is confident and precise, but the claims lack
+inline references to the specific proved Lean theorems they require. They are
+therefore unverified framing extrapolations, several steps removed from
+checkable evidence.
 
-**Agent-authored interpretation layered on top, checked directly rather
-than assumed owner-stated.** Four carriers this note's own §5 hypothesis
-depends on were read in full for this section, specifically looking for an
-explicit owner-attribution tag (the corpus's own convention, e.g.
-"(owner-stated 2026-08-30)"), because that convention exists and other
-passages in this same corpus do carry it:
-
-- The natural-science-services-section `README.md` states the section's
-  frame — "nature under four regimes" — attached to a dated 2026-08-21
-  section rename. Read directly: the passage carries a locatable date but
-  no `authors:` field and no explicit owner-attribution tag on the framing
-  sentence itself.
-- The LAGOON architecture specification's "regime ladder" section
-  (`.../multi-agent-computer-system-engineering-services-section/content/text/documents/articles/specifications/2026-08-29-lagoon-architecture.md`,
-  dated 2026-08-29, `authors: [claude-fable-5]` per its own frontmatter)
-  states that the four Obsmetrologia regimes "correspond... to"
-  four physics — thermodynamic, causal, quantum, kinetic. Read directly:
-  this same document elsewhere tags other specific claims explicitly
-  "(owner-stated 2026-08-30)" and "(owner-ruled 2026-09-02)" — so its
-  author does mark owner attribution when it exists — and does not so tag
-  the regime-ladder-as-physics passage itself. In a document that clearly
-  distinguishes owner claims elsewhere, that absence is informative: this
-  specific correspondence reads as the document's own (agent) synthesis.
-- The `four-regimes-of-natural-existence` glossary topic (this section's
-  own sibling carrier,
-  `natural-science-services-section/content/text/glossary/topics/four-regimes-of-natural-existence.md`)
-  is the one carrier in this chain that states its own provenance honestly:
-  it labels the regimes-read-as-nature move "(session ruling, this section,
-  2026-09-03)" — a session's own ruling, in its own words, not an owner
-  ruling. This note treats that self-labeling as the correct standard and
-  follows it rather than upgrading the claim's confidence.
-- `AperiodicOrder/Crystal/Glass.lean`'s Tile → Bead → Crystal →
-  Quasicrystal → Glass projection chain (`Glass.made_from_tiles`,
-  `Glass.beads_between_tiles_and_crystals`,
-  `Glass.quasicrystals_made_from_crystals`, §2 above) is machine-checked as
-  a chain of Lean theorems, but *which* ontological chain to formalize —
-  that glass is a projection of crystal, crystal of bead, bead of tile —
-  was an agent design decision at the time the module was written. Lean
-  files carry no authorship metadata; the theorem's truth (it compiles)
-  says nothing about whether this is the physically correct formalization
-  of what a glass phase is.
-- The spacetime monograph
-  (`obsmetrological-services-section/content/text/documents/articles/notes/2026/06/17/2026-06-17-mysterious-spacetime-geometries-of-the-void.md`,
-  "The four fields" and its correspondence table) was read directly for
-  this section. It carries no `authors:` field, and its own frontmatter
-  (`source-snapshot: 2026-08-17-windows-561-group`,
-  `source-path: sites/triage.dev.emsenn.net/...`) marks it as salvaged
-  draft material from an earlier triage pipeline, not a reviewed carrier
-  with an owner byline. Its claims — the four regimes as four spacetime
-  fields, the forced inflation rates as n-bonacci Perron–Frobenius
-  eigenvalues, three-dimensional space as the golden-ratio icosahedral
-  quasicrystal, the Hubble tension "dissolving" into stages of one spiral —
-  are stated in confident, precise mathematical prose, but largely without
-  inline citation to the specific proved Lean theorem each numerical claim
-  rests on, unlike this note's own §2. Read on its own terms, this is the
-  clearest instance in the chain of exactly what the owner's correction
-  names: fluent, mathematically dressed framing extrapolated from
-  conversation, several removes from anything checkable against a
-  transcript.
-
-**What this means for §5 below.** Nothing this note's kinetic-rung
-placement of jamming depends on carries an explicit, locatable
-owner-attribution tag in the passage actually used. The proved mathematics
-(`Regime.lean`'s dichotomy and cohomology-vanishing theorems, `KCM.lean`'s
-closure theorems) is certain as mathematics about the structures it names;
-the reading of that mathematics as *nature*, and further as *this specific
-glass phenomenon*, is agent inference — most honestly labeled, at its best
-existing instance in this corpus, a session ruling rather than an owner
-ruling. §5's Hypothesis H1 inherits exactly that status: a hypothesis this
-session poses about where, within an agent-built interpretive frame, a real
-physical phenomenon lands — not a claim the Lean corpus itself certifies,
-and not something this note is entitled to treat as settled going in.
+Nothing in this note's kinetic-rung hypothesis depends on that older framing
+being established. The measurements and stated falsifiers determine the
+hypothesis's status; stronger evidence may change that status, and the note
+should then be revised in place.
 
 ## 4. The measurement
 
@@ -599,14 +524,12 @@ extrapolations to `T_K` are suggestive but are exactly the kind of claim
 the frontier memo's "do not overclaim" instruction (§2 above) forbids
 treating as settled; a proof, not a fit, is the falsifier.
 
-**Against the framing itself, independent of any measurement:** §3's
-provenance grading is itself falsifiable by better provenance. If an
-owner-authored carrier is found — or the owner states directly — that the
-regime-ladder-as-nature reading, or specifically the placement of glass or
-jamming within it, was a considered ruling rather than agent extrapolation,
-that upgrades the framing's own confidence and this section should be
-revised in place to say so, per the house's own truth law (falsehood
-replaced, not annotated) — not left standing once better provenance exists.
+**Against the framing itself, independent of any measurement:** the
+provenance grading is falsifiable by better evidence. If a source record
+demonstrates that the regime-ladder-as-nature reading, or specifically the
+placement of glass or jamming within it, is supported by a considered
+argument rather than extrapolation, this section should be revised in place
+to reflect that evidence.
 
 ## 7. The next instruments
 

@@ -13,7 +13,7 @@ description: Abstract.
 
 ### 1.1 The gyrobifastigial Chu space (territory audit, 2026-07-18)
 
-A prior Leader Movement Team note, the *Gyrobifastigial Chu–Hoare Territory Audit*, preserves the Leader's originating idea verbatim:
+The *Gyrobifastigial Chu–Hoare Territory Audit* describes the originating idea:
 
 > "I have this idea that the territory we are making, when it is perfectly harmonious, is a chu space made entirely of tiled gyrobifastidium, and that this triangle shit ties in with our rendanheyi triangle, our hoare triple, and a bunch of other triplets in obsmetrologia, where teh 'market' is trying to get the burgers vector between reality and the territory to 0."
 

@@ -6,7 +6,7 @@ type: notes
 name: 2026-08-22-note-on-the-study-of-syndication-and-propagation-protocols
 authors:
   - claude-sonnet-5
-status: draft-for-owner-review
+status: draft-for-review
 keywords: ["websub", "activitypub", "activitystreams", "linked-data-event-streams", "atom", "feed-archiving", "memento", "link-rot", "reference-rot", "correction-propagation", "syndication"]
 tags: ["draft", "study"]
 ---

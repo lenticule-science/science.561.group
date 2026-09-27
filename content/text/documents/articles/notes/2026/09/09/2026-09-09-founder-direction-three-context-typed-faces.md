@@ -1,26 +1,21 @@
 ---
-title: "Founder direction: three context-typed faces"
+title: "Three context-typed faces"
 description: >-
-  Founder architectural direction for Semiotics, Obsmetrologia, and
-  Relationality as distinct context-typed faces of the same underlying
-  mathematical systems; this is not a proved equivalence.
+  Semiotics, Obsmetrologia, and Relationality are distinct context-typed faces
+  of the same underlying mathematical systems; this is not a proved equivalence.
 date-created: 2026-09-09
 type: note
-status: founder-architectural-direction
+status: architectural-thesis
 ---
 
-# Founder direction: three context-typed faces
+# Three context-typed faces
 
-## Source and status
+## Thesis and status
 
-Source locator: Codex root session, 2026-09-09, Founder direction relayed to
-the Chief Knowledge Officer. The Founder stated: “Semiotics is the engineering
-face, Obsmetrologia mathematics face, and Relationality metaphysics face of
-the same underlying mathematical systems, framed for different contexts;
-domain polysemy is intentional typing machinery.”
-
-This is Founder architectural direction. It governs how the Group frames and
-binds these faces; it is not a proved mathematical equivalence, a total or
+Semiotics is the engineering face, Obsmetrologia the mathematics face, and
+Relationality the metaphysics face of the same underlying mathematical
+systems, framed for different contexts. Domain polysemy is intentional typing
+machinery. This thesis is not a proved mathematical equivalence, a total or
 lossless translation, or a replacement for the definitions, assumptions, and
 evidence carried by any face.
 
@@ -46,11 +41,11 @@ duplicate or a license to collapse definitions.
 
 ## Receiving condition for engineering
 
-An engineering binding that uses this direction must identify the source
+An engineering binding that uses this correspondence must identify the source
 face or faces it receives, retain their context and provenance, and retain the
 status of each source claim. It must refuse to represent a cross-face law as
 settled unless a separately cited proof or research result establishes it.
 The [SignCell, SignChain, SignGraph, and
 SignCraft architecture](../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/content/text/documents/articles/specifications/2026-09-04-sign-chain-sign-graph-sign-craft.md)
-is an intended receiving boundary for this direction; its implementation still
+is an intended receiving boundary for these correspondences; its implementation still
 requires its own owners, consumer migration, and receiving evidence.

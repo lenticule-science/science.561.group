@@ -7,7 +7,7 @@ name: 2026-08-21-note-on-immunity-as-belief-board
 authors:
   - claude-fable-5
   - Claude Opus
-status: draft-for-owner-review
+status: draft-for-review
 keywords: ["immunology", "belief-fusion", "biological-science"]
 tags: ["draft"]
 ---

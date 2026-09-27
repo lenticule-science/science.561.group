@@ -22,7 +22,7 @@ here recast as *value*:
 | negative | empty | present | evidence against | active |
 | knowledge-top | present | present | evidence both ways | stable / held both |
 
-## Charge carries its evidence: `Charged` — owner ruling 2026-09-21
+## Charge carries its evidence: `Charged`
 
 **"The admission boundary, restored."** The bare four-point value above is
 `Charge`; positing does not admit a bare `Charge` directly. What is admitted

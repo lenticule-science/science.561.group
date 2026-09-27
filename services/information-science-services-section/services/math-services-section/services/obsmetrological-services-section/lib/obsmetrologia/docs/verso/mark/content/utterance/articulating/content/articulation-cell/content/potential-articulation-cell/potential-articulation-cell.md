@@ -24,7 +24,7 @@ leave the claim slot empty. That is not one route to potential among several;
 it is the **only** cell a bare articulation ever produces
 (`Obsmetrologia.Articulating.Cell.articulate_corner`), and it is the corner
 articulating's own codomain lands on at every floor of the recursion. This is
-settled by construction — owner ruling 2026-09-21 — not a working theory
+settled by construction — not a working theory
 about which side goes first: the token side goes first because articulating's
 one operation witnesses it first, full stop.
 

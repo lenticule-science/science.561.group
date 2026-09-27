@@ -12,11 +12,11 @@ declared-by: leader-movement-team/realize-fulfilled-work-products
 
 ## Demand
 
-Compose a draft design note for re-canonizing rich legacy personas as lawful character records without flattening: compare the legacy prose records at lib/emsenn/services/561-group/services/rsc-quiescent/lib/characters/cassia-lorne/persona/cassia-lorne.md and lib/emsenn/services/561-group/services/engineering-services-section/src/content/assets/legacy/2026-07-05-561-group/working/performing/library/sigmund-vexler/sigmund-vexler.md against the canonized instance lib/emsenn/services/561-group/services/rsc-quiescent/services/agrodao/lib/agency/characters/sigmund-vexler/sigmund-vexler.json, list exactly which fields the prior canonization dropped (voice principles, may/must/must-not deontic prose, publishing cadence, relationships), and propose the structured fields a character schema would need to preserve them. State which settlement owns each proposed change. Mark DRAFT-FOR-LEADER-REVIEW.
+Compose a draft design note for re-canonizing rich legacy personas as lawful character records without flattening: compare the legacy prose records at lib/emsenn/services/561-group/services/rsc-quiescent/lib/characters/cassia-lorne/persona/cassia-lorne.md and lib/emsenn/services/561-group/services/engineering-services-section/src/content/assets/legacy/2026-07-05-561-group/working/performing/library/sigmund-vexler/sigmund-vexler.md against the canonized instance lib/emsenn/services/561-group/services/rsc-quiescent/services/agrodao/lib/agency/characters/sigmund-vexler/sigmund-vexler.json, list exactly which fields the prior canonization dropped (voice principles, may/must/must-not deontic prose, publishing cadence, relationships), and propose the structured fields a character schema would need to preserve them. State which settlement owns each proposed change. Mark DRAFT-FOR-REVIEW.
 
 ## Fulfillment
 
-DRAFT-FOR-LEADER-REVIEW
+DRAFT-FOR-REVIEW
 
 ---
 
@@ -24,7 +24,7 @@ DRAFT-FOR-LEADER-REVIEW
 
 **Date:** 2026-07-24
 **Target path:** `lib/emsenn/services/561-group/services/board-of-directors/services/executive-office/services/leader-movement-team/content/text/documents/articles/notes/2026/07/24/2026-07-24-character-recanonization-design.md`
-**Status:** DRAFT-FOR-LEADER-REVIEW
+**Status:** DRAFT-FOR-REVIEW
 **Work order:** `wo-24-2026-07-24-character-recanonization-design-md-c4411876dcad`
 
 ---
@@ -168,7 +168,7 @@ values belong in the instance records.
 
 ---
 
-*Discharged against work order `wo-24-2026-07-24-character-recanonization-design-md-c4411876dcad`. Incomplete pending file-content verification by the leader. Must not be promoted from DRAFT-FOR-LEADER-REVIEW until the leader has confirmed the field inventory against the actual source files named in Section 2.*
+*Discharged against work order `wo-24-2026-07-24-character-recanonization-design-md-c4411876dcad`. Incomplete pending file-content verification by the leader. Must not be promoted from DRAFT-FOR-REVIEW until the leader has confirmed the field inventory against the actual source files named in Section 2.*
 
 ---
 

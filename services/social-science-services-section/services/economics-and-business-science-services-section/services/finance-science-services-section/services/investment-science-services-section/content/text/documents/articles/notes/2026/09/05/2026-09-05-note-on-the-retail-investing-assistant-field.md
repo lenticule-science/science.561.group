@@ -4,7 +4,7 @@ description: "The research-analyst's field read for Alpaca Assist: what the meas
 date-created: 2026-09-05
 type: notes
 name: 2026-09-05-note-on-the-retail-investing-assistant-field
-status: draft-for-owner-review
+status: draft-for-review
 authors:
   - claude-sonnet-5
 keywords:

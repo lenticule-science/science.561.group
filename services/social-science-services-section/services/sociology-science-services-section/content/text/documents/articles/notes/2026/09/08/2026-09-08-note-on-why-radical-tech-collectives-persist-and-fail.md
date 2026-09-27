@@ -131,8 +131,8 @@ failure of volunteer-run, horizontally organized
 that build
 communication infrastructure for political movements outside state and
 market provision — and asks what the literature says about why such
-collectives fail, including the founder's stated diagnosis that they fail
-partly through "dogmatic avoidance of technologies." The claim is evaluated
+collectives fail, including the hypothesis that they fail partly through
+"dogmatic avoidance of technologies." The hypothesis is evaluated
 against five cases: A/I, Riseup, Indymedia, Nadir, and Espiv.
 
 ## 1. Five cases
@@ -245,12 +245,11 @@ ethico-political care labor rather than neutral technical upkeep is what
 makes its systematic under-support visible as a structural, not personal,
 failure [@puigdelabellacasa2017].
 
-## 4. Technological refusal: where the founder's diagnosis holds and where it does not
+## 4. Technological refusal: what the literature supports
 
-The founder's diagnosis is that radical tech collectives fail partly
-through "dogmatic avoidance of technologies." The literature gives a mixed
-verdict, supporting a narrower claim than the founder's and contradicting a
-broader one.
+One hypothesis is that radical tech collectives fail partly through
+"dogmatic avoidance of technologies." The literature gives a mixed verdict,
+supporting a narrower claim and contradicting a broader one.
 
 **Where it is supported.** Morozov's critique of "technological
 solutionism" is not itself a study of radical tech collectives, but it
@@ -266,7 +265,7 @@ inherently compromised rather than evaluating it against the collective's
 actual adversary and actual maintenance capacity. Where a collective's
 technology choices are driven by symbolic purity rather than a stated
 threat model or maintenance-capacity argument, refusal functions exactly
-as the founder describes: a dogma that narrows the collective's tool
+as this hypothesis describes: a dogma that narrows the collective's tool
 options without improving its security or reducing its labor burden, and
 that can compound the burnout mechanism of §3 by forcing volunteers to
 maintain more custom infrastructure than their capacity supports.
@@ -307,7 +306,7 @@ documented failure mode when refusal is driven by symbolic purity
 untethered from a stated threat model, but the strongest documented
 failures in this case set were caused by external legal/financial attack
 (§2) and, more slowly, by under-resourced maintenance labor (§3) — not by
-technological refusal. A program built to avoid this founder-named failure
+technological refusal. A program built to avoid this failure
 mode should therefore prioritize stated threat models over blanket tool
 policies in either direction (neither "always adopt the mainstream tool"
 nor "always refuse it"), and should treat funding/legal diversification and
@@ -347,6 +346,6 @@ have saved A/I or Indymedia, because both were attacked through commercial
 and legal infrastructure no tool choice removes dependency on. It also does
 not show that refusal itself is safe: refusal without a stated threat model
 compounds the maintenance-labor failure mode documented in §3 for no
-compensating security gain. The founder's diagnosis is best read as a
+compensating security gain. This hypothesis is best read as a
 caution against unreflective refusal, not as a general license to adopt
 mainstream tools without a threat-model argument for each adoption.

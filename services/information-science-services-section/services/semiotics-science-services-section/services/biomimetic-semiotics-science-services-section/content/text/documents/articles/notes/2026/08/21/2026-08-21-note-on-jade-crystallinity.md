@@ -18,7 +18,7 @@ keywords:
 
 # Jade as Polycrystalline Settling
 
-The owner asked whether jade had been explored as glass or as
+This note investigates whether jade has been explored as glass or as
 tessellation. The answer to the first question is the finding: jade is
 not glass, and the way it is not glass is the most formally suggestive
 fact about it. The mineralogy inquiry note filed today in

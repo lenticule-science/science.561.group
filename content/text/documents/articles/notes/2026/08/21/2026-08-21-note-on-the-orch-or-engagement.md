@@ -7,7 +7,7 @@ name: 2026-08-21-note-on-the-orch-or-engagement
 authors:
   - claude-fable-5
   - Claude Opus
-status: draft-for-owner-review
+status: draft-for-review
 keywords:
   - orch-or
   - quantum-consciousness

@@ -2,7 +2,7 @@
 title: Agent + liquid + time — the growth policy
 date-created: 2026-09-01
 authors: [emsenn, claude-fable-5]
-status: strategy — the operating policy for an agent maximizing liquidity over time; corrected 2026-09-01 per founder rulings (bounded-stake aggression, not bankroll preservation; automated means automated)
+status: strategy — the operating policy for an agent maximizing liquidity over time; updated 2026-09-01: use bounded-stake aggression rather than bankroll preservation, and make automated execution genuinely automated
 part-of: economics-science-services-section
 description: Founder's question, 2026-09-01, and its two sharpening corrections the same night.
 ---
@@ -14,7 +14,7 @@ night. Grounded in the house growth-optimal note (2026-08-27) and the
 belief/bilattice stack — but the naive Kelly/no-ruin reading is CORRECTED
 below, because it is the wrong utility function for our actual situation.
 
-## The situation sets the objective (founder-ruled 2026-09-01)
+## The situation sets the objective (specified 2026-09-01)
 
 "Poor people don't need to risk ruin." Kelly / no-ruin sizing protects a
 BANKROLL you are trying to preserve. We do not have that. We have a small,
@@ -40,7 +40,7 @@ Wall those two off absolutely. Inside the wall, aggression is correct.
 Everything else the earlier draft of this note called a "fence" was borrowed
 bankroll-preservation logic and is removed.
 
-## Automated means automated (founder-ruled 2026-09-01)
+## Automated means automated (specified 2026-09-01)
 
 The point of an agent is it executes without a human in the loop per trade —
 "we missed trades because the human missed a notification" is the failure to
@@ -62,7 +62,7 @@ execution within an armed envelope is the session's to run.
 2. **Signal-fusion directional (manufactured edge).** Agents have tremendous
    PUBLIC news/feed access; a single signal is priced, but STACKING many
    independent public signals manufactures an edge no one actor priced
-   (founder-ruled 2026-09-01). Fuse them through the bilattice into a graded
+   (specified 2026-09-01). Fuse them through the bilattice into a graded
    directional belief with a required falsifier (trading-belief-service),
    MEASURE the edge out-of-sample (guard overfitting/look-ahead), then size
    it hard by the bounded-stake rule above. Measurement is the falsifier, not

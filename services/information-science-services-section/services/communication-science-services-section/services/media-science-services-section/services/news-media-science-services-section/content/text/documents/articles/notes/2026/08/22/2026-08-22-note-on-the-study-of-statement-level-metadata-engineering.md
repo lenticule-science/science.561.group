@@ -6,7 +6,7 @@ type: notes
 name: 2026-08-22-note-on-the-study-of-statement-level-metadata-engineering
 authors:
   - claude-sonnet-5
-status: draft-for-owner-review
+status: draft-for-review
 keywords: [ "statement-level-metadata", "rdf-reification", "named-graphs", "rdf-star", rdf-1-2, "nanopublications", "trusty-uris", "json-ld", "shacl", "vocabulary-versioning", "claim-infrastructure" ]
 tags: ["draft", "study"]
 ---

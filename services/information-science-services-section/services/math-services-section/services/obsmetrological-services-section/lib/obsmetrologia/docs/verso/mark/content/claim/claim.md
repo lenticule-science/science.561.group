@@ -17,7 +17,7 @@ holds *which one*, the claim holds *what is said*.
 
 ## Hands are types, not positions read off later
 
-**Owner ruling 2026-09-21, "the admission boundary, restored."** A claim is
+**The admission boundary is restored.** A claim is
 not itself the non-assembling primitive; the mark is. `Obsmetrologia.Claim` is
 a one-field carrier, `{ mark : Mark }`, dual to `Obsmetrologia.Token` on the
 other hand. Token and claim are **distinct types**, so which hand a mark sits

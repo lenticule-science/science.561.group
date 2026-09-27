@@ -406,7 +406,7 @@ Stated together, in one place, without smoothing the disagreements:
 
 ## A house-theory correspondence, stated as a hypothesis to test
 
-The founder-authored carrier [Stability Dynamics in Cognitive
+The carrier [Stability Dynamics in Cognitive
 Systems](../../../../../../../../../../../../../human-science-services-section/services/human-cognition-services-section/content/text/documents/articles/notes/2025/10/11/2025-10-11-note-on-stability-dynamics-in-cognitive-systems.md)
 develops, independently of the clinical literature surveyed above, a
 formal definition of affect for a cognitive system adapting to a fixed

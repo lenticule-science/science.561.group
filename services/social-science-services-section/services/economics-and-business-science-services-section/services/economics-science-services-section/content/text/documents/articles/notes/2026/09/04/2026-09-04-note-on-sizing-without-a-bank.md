@@ -4,7 +4,7 @@ description: "The Fintech Friday theory pass of 2026-09-04, read against the cor
 date-created: 2026-09-04
 type: notes
 name: 2026-09-04-note-on-sizing-without-a-bank
-status: draft-for-owner-review
+status: draft-for-review
 authors:
   - emsenn
   - claude-fable-5-1

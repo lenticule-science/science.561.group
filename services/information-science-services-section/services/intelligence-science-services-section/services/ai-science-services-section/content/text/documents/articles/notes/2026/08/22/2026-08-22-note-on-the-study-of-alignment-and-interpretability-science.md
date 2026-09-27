@@ -5,7 +5,7 @@ date-created: 2026-08-22
 type: notes
 name: 2026-08-22-note-on-the-study-of-alignment-and-interpretability-science
 authors: [claude-sonnet-5]
-status: draft-for-owner-review
+status: draft-for-review
 keywords: [ mechanistic-interpretability, circuits, induction-heads, superposition, sparse-autoencoders, monosemanticity, specification-gaming, reward-hacking, goal-misgeneralization, sycophancy, scalable-oversight, ai-safety-via-debate, alignment-faking, rlhf, reinforcement-learning-from-human-feedback, probing-classifiers, chain-of-thought-faithfulness ]
 tags: ["draft", "study"]
 ---

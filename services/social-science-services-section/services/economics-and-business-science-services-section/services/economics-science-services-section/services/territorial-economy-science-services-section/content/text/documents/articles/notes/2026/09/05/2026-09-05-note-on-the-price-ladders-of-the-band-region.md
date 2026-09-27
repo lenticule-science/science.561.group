@@ -4,7 +4,7 @@ description: "Producer-to-retail price ladders for the three materials the first
 date-created: 2026-09-05
 type: note
 name: 2026-09-05-note-on-the-price-ladders-of-the-band-region
-status: draft-for-owner-review
+status: draft-for-review
 authors:
   - claude-sonnet-5
 keywords:

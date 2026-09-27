@@ -18,7 +18,7 @@ identity-carrying [token](../../../../../contents/token/token.md) has not:
 
 ## Never articulating's own output
 
-**Owner ruling 2026-09-21.** Active is never a cell
+**Active is never a cell
 [articulating](../../../../articulating.md) itself produces
 (`Obsmetrologia.Articulating.cell_corner_ne_active`). Every articulation
 witnesses its own token first — the definition of

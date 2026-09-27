@@ -7,7 +7,7 @@ name: note-on-standing-up-music-science
 authors:
   - claude-sonnet-5
   - Claude Opus
-status: draft-for-owner-review
+status: draft-for-review
 keywords: ["music-science", "witnessed-field", "settlement", "aerophones", "section-charter"]
 tags: ["draft"]
 founding-note: "../../../../../../../../../../../../../../../content/text/documents/articles/notes/2026/08/21/2026-08-21-note-on-music-as-pure-charge-dynamics.md"

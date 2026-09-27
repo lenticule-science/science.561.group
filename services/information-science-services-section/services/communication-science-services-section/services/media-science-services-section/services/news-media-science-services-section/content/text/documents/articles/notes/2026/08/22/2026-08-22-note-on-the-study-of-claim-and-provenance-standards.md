@@ -6,7 +6,7 @@ type: notes
 name: 2026-08-22-note-on-the-study-of-claim-and-provenance-standards
 authors:
   - claude-sonnet-5
-status: draft-for-owner-review
+status: draft-for-review
 keywords: ["claim-infrastructure", "provenance", "w3c-prov", "claimreview", "nanopublication", "c2pa", "content-credentials", "verifiable-credentials", "fact-checking", "conformance", "standards-survey"]
 tags: ["draft", "study"]
 ---

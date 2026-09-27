@@ -77,7 +77,7 @@ Thirty-seven dependency-linked terms in four clusters.
 - [semeai](../terms/semeai.md)
 - [zenkyoku](../terms/zenkyoku.md)
 
-See also: [Note on Lakota Weiqi Strategy](../../documents/articles/notes/2026-09-04-note-on-lakota-weiqi-strategy.md) — the owner-stated 2026-09-03 hypothesis that a Lakota lineage's play would read, in the strategy cluster's own vocabulary, as center-dominant, encirclement-favoring, and sacrifice-heavy, turned into measurable features of a player's move stream.
+See also: [Note on Lakota Weiqi Strategy](../../documents/articles/notes/2026-09-04-note-on-lakota-weiqi-strategy.md) — the asserted 2026-09-03 hypothesis that a Lakota lineage's play would read, in the strategy cluster's own vocabulary, as center-dominant, encirclement-favoring, and sacrifice-heavy, turned into measurable features of a player's move stream.
 
 ## Bibliography
 

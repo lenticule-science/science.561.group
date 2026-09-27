@@ -12,8 +12,7 @@ An **utterance** is the ordered pair of one [token](../token/token.md) and one
 [claim](../claim/claim.md) — the two **typed hands**, each carrying one
 [mark](../../mark.md). It is the **domain** of
 [articulating](articulating/articulating.md): the structured carrier the
-articulating act is applied to, and — owner ruling 2026-09-21, "the admission
-boundary, restored" — the **sole admission boundary of the theory**: the one
+articulating act is applied to, and is the **sole admission boundary of the theory**: the one
 place a mark is let in, and it is let in on a hand. Token first, claim
 second; the ordering is load-bearing.
 

@@ -5,7 +5,7 @@ date-created: 2026-08-22
 type: notes
 name: 2026-08-22-note-on-the-study-of-metascience-and-replication
 authors: [claude-sonnet-5]
-status: draft-for-owner-review
+status: draft-for-review
 keywords:
   - metascience
   - replication-crisis

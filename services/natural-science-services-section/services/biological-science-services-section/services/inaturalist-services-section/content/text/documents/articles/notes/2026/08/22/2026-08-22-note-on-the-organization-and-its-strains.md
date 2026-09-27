@@ -6,7 +6,7 @@ type: notes
 name: 2026-08-22-note-on-the-organization-and-its-strains
 authors:
   - claude-sonnet-5
-status: draft-for-owner-review
+status: draft-for-review
 keywords: ["inaturalist", "nonprofit-spinoff", "google-ai-grant", "generative-ai-controversy", "ken-ichi-ueda", "staff-turnover", "moderation-culture", "terms-of-service", "ai-training-data", "organizational-strain"]
 tags: ["draft", "note", "organization", "competitive-landscape"]
 ---

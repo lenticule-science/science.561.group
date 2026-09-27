@@ -176,7 +176,7 @@ roles:
 
 None of the three is canonical in house terms.
 [Reframe and Standards](../notes/2026-08-29-note-on-reframe-and-standards.md)
-rules, verbatim (owner-ruled, 2026-09-03):
+rules, verbatim (specified, 2026-09-03):
 
 > RMN is the house's universal weiqi language (the house never adopts one
 > canonical format unless it is a core house protocol, and RMN is one

@@ -165,7 +165,7 @@ had already landed.
 ## 5. Conservation of improvement bounds the fix, and names why it is not free
 
 The seated governable-RSI thesis (`conservation-of-improvement` glossary term,
-`content/glossary/terms/conservation-of-improvement.json`, Leader-admitted): "improvement is
+`content/glossary/terms/conservation-of-improvement.json`): "improvement is
 discharge of a system's own obstruction under a priced budget, with its protected set intact...
 total claimed improvement is bounded by total priced discharge." Read against §§2–4: proofreading
 costs three burned hires per order, and conservation of improvement is the statement that this cost

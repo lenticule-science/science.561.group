@@ -7,7 +7,7 @@ name: 2026-08-21-note-on-dreaming-as-unwitnessed-settlement
 authors:
   - claude-fable-5
   - Claude Opus
-status: draft-for-owner-review
+status: draft-for-review
 keywords: ["dreaming-science", "intelligence", "settlement", "consolidation", "agents"]
 tags: ["draft"]
 ---
@@ -39,7 +39,7 @@ Consequences and fibers:
    the process requires the witness-requirement dropped.
 3. **Neidan sleep practice** and dream yoga as traditions of trained
    settlement — practicing at the witnessed/unwitnessed boundary.
-4. **Agent dreaming (owner's directive: in scope).** Agents accumulate
+4. **Agent dreaming.** Agents accumulate
    session residue — transcripts, journals, dead branches, unfused
    context. The dreaming hypothesis for agents: an offline re-fusion pass
    over residue with constraints relaxed — recombining the session's

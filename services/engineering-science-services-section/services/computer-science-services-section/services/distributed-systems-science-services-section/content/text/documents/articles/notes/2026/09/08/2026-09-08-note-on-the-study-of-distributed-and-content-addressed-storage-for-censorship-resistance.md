@@ -6,7 +6,7 @@ type: notes
 name: 2026-09-08-note-on-the-study-of-distributed-and-content-addressed-storage-for-censorship-resistance
 authors:
   - claude-sonnet-5
-status: draft-for-owner-review
+status: draft-for-review
 keywords: ["content-addressing", "distributed-hash-table", "erasure-coding", "data-availability", "data-durability", "pinning", "incentivized-storage", "censorship-resistance", "sybil-attack", "eclipse-attack", "web-archiving", "bittorrent-distribution", "git-mirroring"]
 tags: ["draft", "study"]
 ---

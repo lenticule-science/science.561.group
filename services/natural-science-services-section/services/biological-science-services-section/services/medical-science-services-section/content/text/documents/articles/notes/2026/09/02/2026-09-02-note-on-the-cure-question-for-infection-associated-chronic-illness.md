@@ -48,11 +48,7 @@ cites:
 
 ## What this asks, and the one move that makes it answerable
 
-The founder's order, verbatim: "raise the question, formally, is there a
-cure for iaci, with various ranges of cure, like living with, symptom
-free, HPA-balanced, or whatever it looks like we ultimately need to like,
-do as a real treatment program that no one but us investing this attention
-into the field from our perspective can see."
+The research question is: Is there a cure for IACI, and what are its meaningful levels, such as living with the illness, being symptom-free, or having a balanced HPA axis? The work should develop a real treatment program from the field's neglected perspective.
 
 The field cannot answer this question, and the reason is definitional
 before it is empirical. "Recovery" in the PACE trial was a threshold the
@@ -609,7 +605,7 @@ answerable.
 | H¹ and its bigraded refinement are computable over settlings given as data | implemented — `@red-cup-engineering/metrologic/obstruction`, `@red-cup-engineering/metrologic/dframe` |
 | Single-channel deviation from a person's own baseline | implemented — `@red-cup-engineering/pacing-intelligence-services-section` 0.1.1 |
 | Damage/border classification; certify borders; price erasure | documented — the distal bypass note |
-| PACE-S is MAPE-K positionally | documented — the paradigm note, founder-stated 2026-09-02 |
+| PACE-S is MAPE-K positionally | documented — the paradigm note, specified 2026-09-02 |
 | Cure is a property of a section over a cover | proved for the Lean objects; open as a physiological reading |
 | The cure ladder's ordering by cover inclusion | documented here; open as measurement |
 | Envelope expansion gated by coupling robustness beats symptom gating | open — section 4 is its test |

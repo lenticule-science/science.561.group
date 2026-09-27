@@ -1,6 +1,6 @@
 ---
 title: "Imagining, collected as dreaming's unformalized companion"
-description: "The founder's 2026-09-04 revival order names dreaming AND imagining. This collects what legacy actually says about imagining as a cognitive verb — a description in an early ops.561.group cognitive-layer plan and a thin readiness-gap heuristic in the operations-manifold prototype — and records that, unlike dreaming, imagining never received a formal treatment: no aperiodic-knowing-style note, no current published package, no successor capability. It is named here as an open gap, not fabricated theory."
+description: "Dreaming and imagining are both in scope. This collects what legacy actually says about imagining as a cognitive verb — a description in an early ops.561.group cognitive-layer plan and a thin readiness-gap heuristic in the operations-manifold prototype — and records that, unlike dreaming, imagining never received a formal treatment: no aperiodic-knowing-style note, no current published package, no successor capability. It is named here as an open gap, not fabricated theory."
 date-created: 2026-06-18
 type: collected-prior-theory
 collection-date: 2026-09-04

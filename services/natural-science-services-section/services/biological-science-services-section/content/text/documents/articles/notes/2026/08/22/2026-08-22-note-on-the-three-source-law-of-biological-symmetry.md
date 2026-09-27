@@ -24,7 +24,7 @@ keywords:
 
 ## 0. Status and provenance
 
-The owner directed the 561 Group's axiality program from molecular chirality up to body symmetry — bilateral and radial — and a ten-agent fleet (six researchers, three adversarial verifiers, one frame critic) ran the working hypothesis to destruction.
+The 561 Group's axiality program examined symmetry from molecular chirality up to body symmetry — bilateral and radial — and a ten-agent fleet (six researchers, three adversarial verifiers, one frame critic) tested the working hypothesis until it failed.
 The hypothesis as posed: *an organism's symmetry group records the environmental anisotropies it has internalized* (Curie's principle applied to bodies).
 The verdict: **it does not survive in that form**, and the three-source law below is what does.
 The full sweep material — per-claim citations with access statuses, verification verdicts, and the critic's complete reasoning — is preserved in [the session records](../../../../../../../../../../../../data/records/2026-08-22-natural-computing-world-session/workflow-3-symmetry-bi-radial-research.json); this note is the synthesis, and cites (author, year) with the record as its access ledger.

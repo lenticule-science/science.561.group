@@ -6,7 +6,7 @@ type: notes
 name: 2026-08-22-note-on-the-feral-foraging-business-and-the-gather-app
 authors:
   - claude-sonnet-5
-status: draft-for-owner-review
+status: draft-for-review
 keywords: ["feral-foraging", "gather-app", "foraging", "creator-economy", "competitive-intelligence", "content-to-app-funnel", "plant-identification", "app-store-teardown", "no-ai-positioning", "falling-fruit"]
 tags: ["draft", "notes", "teardown"]
 ---

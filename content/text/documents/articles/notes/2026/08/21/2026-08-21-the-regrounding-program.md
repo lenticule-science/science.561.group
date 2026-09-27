@@ -7,7 +7,7 @@ name: 2026-08-21-the-regrounding-program
 authors:
   - claude-opus-4-6 (via the Regrounding design workflow)
   - Claude Opus
-status: draft-for-owner-review
+status: draft-for-review
 keywords:
   - regrounding
   - obsmetrologia

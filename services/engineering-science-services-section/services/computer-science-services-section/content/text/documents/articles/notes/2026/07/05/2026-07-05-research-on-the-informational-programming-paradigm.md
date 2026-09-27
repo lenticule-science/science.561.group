@@ -42,7 +42,7 @@ So this is a first attempt, not a recovery of settled doctrine, and it is scoped
   `@emsenn/metroplat`'s ~119K lines are ordinary imperative/OOP-flavored TypeScript with
   FP idioms layered on, and the paradigm below currently holds only on specific islands
   (`lib/language`, the CHL evaluators, `lib/persistence`, `src/stores/path-term.mts`).
-- **Citation correction (Leader-ruled rewrite, 2026-07-31).** Every citation below rooted at
+- **Citation correction (2026-07-31).** Every citation below rooted at
   `lib/emsenn/src/apps/metroplat/...` (`lib/language`, `src/evaluators`, `lib/persistence`,
   `src/articulation`, `src/stores/path-term.mts`, package `CLAUDE.md`/`AGENTS.md`) could not
   be confirmed at that path anywhere in the current tree. A differently-organized,
@@ -367,7 +367,7 @@ unconnected object, not a prior statement of this note).
 
 No claim above rests on a source that was not itself opened and read this session.
 
-**Provenance correction (Leader-ruled rewrite, 2026-07-31):** every `lib/emsenn/src/apps/metroplat/...`-rooted
+**Provenance correction (2026-07-31):** every `lib/emsenn/src/apps/metroplat/...`-rooted
 path listed above could not be confirmed anywhere in the current tree by this rewrite (see §0).
 This flags the citations as unconfirmed against the current checkout; it does not assert the
 2026-07-05 session's own read was fabricated.
