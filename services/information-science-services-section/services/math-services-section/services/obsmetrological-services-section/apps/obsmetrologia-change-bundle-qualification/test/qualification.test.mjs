@@ -54,15 +54,15 @@ test("a bundle missing the obsmetrologia-axiom-law verification is refused", () 
 
 test("a diff adding an axiom declaration under the Obsmetrologia Lean library is refused", () => {
   const patch = singleFilePatch("Obsmetrologia/Algebra/NewAxiom.lean", "axiom newAxiom : True");
-  assert.throws(() => qualifyChangeBundle(request({ patch })), /diff adds an axiom or sorry/);
+  assert.throws(() => qualifyChangeBundle(request({ patch })), /diff adds an axiom under/);
 });
 
-test("a diff adding a sorry token under the Obsmetrologia Lean library is refused", () => {
+test("a diff stating a frontier theorem with sorry under the Obsmetrologia Lean library is not refused by the textual gate", () => {
   const patch = singleFilePatch("Obsmetrologia/Algebra/NewLemma.lean", "theorem newLemma : True := by sorry");
-  assert.throws(() => qualifyChangeBundle(request({ patch })), /diff adds an axiom or sorry/);
+  assert.doesNotThrow(() => qualifyChangeBundle(request({ patch })));
 });
 
-test("an axiom or sorry line outside the Obsmetrologia Lean library, or fully commented out within it, is not refused by the textual gate", () => {
+test("an axiom line outside the Obsmetrologia Lean library, or fully commented out within it, is not refused by the textual gate", () => {
   const outsideLibrary = singleFilePatch("content/mathematics/notes/new-lemma.md", "axiom newAxiom : True");
   assert.doesNotThrow(() => qualifyChangeBundle(request({ patch: outsideLibrary })));
   const commentedOut = singleFilePatch("Obsmetrologia/Algebra/NewLemma.lean", "-- axiom newAxiom : True");

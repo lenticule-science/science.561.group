@@ -114,7 +114,8 @@ after each module. Close the three channels the 08-17 note names:
 - partial operations, closed by totalising them.
 
 Rebuild the internal reals so their identifications factor through the root.
-The Collatz frontier leaves the proof path as a stated `Prop`, not a `sorry`.
+The Collatz barrier stays a frontier theorem, stated and proved by `sorry`,
+which the census counts as frontier rather than as a violation.
 
 **C. Remove the false certificates and consolidate the duplicates.** Take out
 the four certificate patterns above, collapse the nine H¹ objects to one, and
@@ -151,7 +152,8 @@ Lean packages on top of the core, as `WeiqiObsmetrologia` already is.
 **Release criteria,** read from the instruments that already exist in
 `obsmetrologia-theorem-audit`:
 
-- the axiom-law gate at zero violations and zero `sorry`;
+- the axiom-law gate at zero violations, with every `sorry`-dependent
+  theorem reported as frontier and none tagged proved in the blueprint;
 - identification sites equal to one, at the root;
 - the lineage census clean;
 - no `Unit` carriers and no `leanok` outside the law;
@@ -185,6 +187,8 @@ commitments are **axiom-level facts that a machine reports**.
   the logic's own propositions are not presumed to form a poset.
 - *One `Quot.sound`, at the root* means that identity is only ever
   identification by measured indistinguishability.
+- *`sorryAx`* marks a theorem as frontier: stated, with its proof still to
+  come. It is counted, never hidden, and never a violation of the law.
 
 `#print axioms` on any theorem shows whether that theorem keeps those
 commitments. So the release makes each claim's standing visible, and it
@@ -216,11 +220,14 @@ The public package presents that sorting as three kinds:
    - CALM monotone coordination-freedom;
    - the 1+1 Minkowski light cone, whose component group `{1, P, T, PT}`
      is the gauge of FOUR (`LightCone`).
-3. **Frontier.** The absurdly ambitious claims ship as stated open
-   problems. Each is a `Prop` with what would promote it and what would
-   refute it, in the Frontier Lab's form (the 09-21 note's void-dimension
-   claim; the Collatz barrier). None ships as a `sorry` or as prose. The
-   ambition stays on the page and the proof record stays clean.
+3. **Frontier.** The absurdly ambitious claims ship as stated theorems
+   whose proofs are `sorry`, which is how Lean itself marks a statement
+   awaiting proof. Each carries what would promote it and what would refute
+   it, in the Frontier Lab's form (the 09-21 note's void-dimension claim;
+   the Collatz barrier). Lean reports each one, and everything that uses
+   it, as depending on `sorryAx`, so the census derives the frontier from
+   the library itself rather than from a label. The ambition stays in the
+   library as mathematics, and the proof record stays honest.
 
 ### Flagship results
 

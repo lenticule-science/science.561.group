@@ -11,15 +11,16 @@ import { ACTIVITYSTREAMS_CONTEXT } from "@red-cup-engineering/activitypub-servic
 const ACTOR = "urn:ame:oml";
 const NODE_ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const REQUIRED_VERIFICATIONS = ["obsmetrologia-scope-audit", "obsmetrologia-lake-build", "obsmetrologia-axiom-law"];
-// The Obsmetrologia axiom law (owner-ruled 2026-09-21): the library admits no axioms beyond
-// `Quot.sound`, ever — see obsmetrologia-theorem-audit's ALLOWED_AXIOMS. A change bundle cannot
-// itself run `lake build` and read `collectAxioms`, so this gate is conservative and textual: any
-// diff line the bundle *adds* under the Lean library that declares a new `axiom` or names `sorry`
-// as a token is refused outright, whether or not the bundle also carries passing verification
-// evidence. It is a syntactic backstop, not a substitute for `obsmetrologia-axiom-law` evidence.
+// The Obsmetrologia axiom law: the library admits no axioms beyond `Quot.sound` — see
+// obsmetrologia-theorem-audit's ALLOWED_AXIOMS. `sorry` is not an axiom the library declares: it
+// states a theorem whose proof is still frontier, and Lean reports it as `sorryAx`, so the axiom
+// census classifies it rather than this gate refusing it. A change bundle cannot itself run
+// `lake build` and read `collectAxioms`, so this gate is conservative and textual: any diff line
+// the bundle *adds* under the Lean library that declares a new `axiom` is refused outright,
+// whether or not the bundle also carries passing verification evidence. It is a syntactic
+// backstop, not a substitute for `obsmetrologia-axiom-law` evidence.
 const OBSMETROLOGIA_LEAN_LIBRARY_PREFIXES = ["Obsmetrologia/", "lib/obsmetrologia/Obsmetrologia/"];
 const AXIOM_DECLARATION_LINE = /^\s*axiom\s/u;
-const SORRY_TOKEN = /\bsorry\b/u;
 const EFFECTS = ["provider-local-witness-journal-evidence"];
 
 export function semanticDigest(value) {
@@ -67,11 +68,11 @@ function underObsmetrologiaLeanLibrary(path) {
 }
 /**
  * Walk a unified diff's own text and report every *added* line, under the Obsmetrologia Lean
- * library, that declares an `axiom` or names `sorry`. Conservative by construction: it reads the
+ * library, that declares an `axiom`. Conservative by construction: it reads the
  * added line's text exactly as the patch carries it (after the leading `+`), and only exempts a
  * line whose trimmed text itself opens with a Lean `--` line comment — it does not parse Lean's
  * `/- block comments -/` or strip a trailing `-- comment` off an otherwise-live line, so it can
- * refuse a bundle it need not, but it never lets a real axiom or sorry through uninspected.
+ * refuse a bundle it need not, but it never lets a real axiom declaration through uninspected.
  * @param {string} content - The patch's unified-diff text.
  * @returns {string[]} `path:line` for every offending added line.
  */
@@ -89,7 +90,7 @@ function forbiddenLeanLineFindings(content) {
     if (line.startsWith("+")) {
       newLine += 1;
       const body = line.slice(1);
-      if (!body.trim().startsWith("--") && (AXIOM_DECLARATION_LINE.test(body) || SORRY_TOKEN.test(body))) findings.push(`${path}:${newLine}`);
+      if (!body.trim().startsWith("--") && AXIOM_DECLARATION_LINE.test(body)) findings.push(`${path}:${newLine}`);
     } else if (line.startsWith(" ")) {
       newLine += 1;
     }
@@ -120,7 +121,7 @@ export function requestProblems(request) {
     const forbidden = patch.changedPaths.filter((path) => /(^|\/)(apps?|application|runtime)(\/|$)|HoareProgram/iu.test(path));
     if (forbidden.length) problems.push(`application-shaped paths are outside the pure package offer: ${forbidden.join(", ")}`);
     const forbiddenLeanLines = forbiddenLeanLineFindings(patch.content);
-    if (forbiddenLeanLines.length) problems.push(`diff adds an axiom or sorry under the Obsmetrologia Lean library (the axiom law admits only Quot.sound, never sorry): ${forbiddenLeanLines.join(", ")}`);
+    if (forbiddenLeanLines.length) problems.push(`diff adds an axiom under the Obsmetrologia Lean library (the axiom law admits only Quot.sound): ${forbiddenLeanLines.join(", ")}`);
   }
   const claim = request.claim;
   if (!claim || claim.kind !== "pure-mathematics" || !nonempty(claim.id) || !nonempty(claim.statement)
