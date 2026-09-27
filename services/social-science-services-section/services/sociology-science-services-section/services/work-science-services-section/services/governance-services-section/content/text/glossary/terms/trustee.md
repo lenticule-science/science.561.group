@@ -49,7 +49,7 @@ The title split distinguishes the trustee from all adjacent roles:
 | **Trustee** | Yes — legal title vested | Yes — for beneficiaries | Absolute |
 | [Fiduciary](../../../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/glossary/terms/fiduciary.md) | Not necessarily | Yes — for principal | Yes (non-benefiting) |
 | [Steward](../../../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/terms/steward.md) | No — manages on behalf | Yes — for owner | Yes |
-| [Agent](../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/services/agent-computer-platform-system-engineering-services-section/services/flatfile-agent-resource-system-engineering-services-section/content/text/glossary/terms/flatfile-agent-resource-system-agent.md) | No | Yes — for principal | No (default) |
+| [Agent](../../../../../../../../../../../../../engineering-services-section/content/text/glossary/terms/agent.md) | No | Yes — for principal | No (default) |
 | **Bailee** | No — possesses only | For bailor | Yes (for duration) |
 
 The bailee (person who holds another's property temporarily) is the closest adjacent role: like the trustee, the bailee holds another's property. But the bailee holds possession only, not title; and the bailee's relationship is temporary and specific (returning the exact property), while the trustee manages, transforms, and distributes the trust property.

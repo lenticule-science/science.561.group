@@ -1,4 +1,5 @@
 ---
+date-modified: 2026-09-27
 name: "Runbook"
 description: "A runbook is a workflow definition. The engine executes it. Workflow logic lives in runbooks; execution logic lives in the engine."
 params:
@@ -16,8 +17,8 @@ ast:
     - goal: goal
 where:
 - $\mathcal{N} = (\psi, \mathrm{Obl}, \mathcal{I})$ is the **trigger norm** — the norm whose activation initiates the runbook; $\psi$ is the propositional content; when $\psi \in H^*_t$, the runbook is activated
-- $R$ is the **executor role** — the role whose [incumbent](../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/glossary/terms/incumbent.md) is obligated to execute $\Pi$ when $\mathcal{N}$ fires; the incumbent need not have designed $\Pi$, only be qualified to execute it
-- $\Pi = [a_1, \ldots, a_n]$ is the **step sequence** — an ordered list of [acts](../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/philosophy/terms/act.md); $\Pi \in \mathrm{Fix}(\Delta_t)$ at all $t$ for which $\mathcal{R}$ is valid; the sequence is execution-settled before any trigger fires; the executor exercises no substantive judgment about what the steps are
+- $R$ is the **executor role** — the role whose [incumbent](./incumbent.md) is obligated to execute $\Pi$ when $\mathcal{N}$ fires; the incumbent need not have designed $\Pi$, only be qualified to execute it
+- $\Pi = [a_1, \ldots, a_n]$ is the **step sequence** — an ordered list of [acts](../../../../../../../../../philosophy-services-section/content/text/glossary/terms/act.md); $\Pi \in \mathrm{Fix}(\Delta_t)$ at all $t$ for which $\mathcal{R}$ is valid; the sequence is execution-settled before any trigger fires; the executor exercises no substantive judgment about what the steps are
 - $\mathcal{G} = (g, \tau, \kappa)$ is the **goal** — the target element $g \in H_t \setminus H^*_t$ that $\Pi$ drives to $H^*_\tau$; execution terminates when $g \in H^*_\tau$
 ---
 
@@ -103,7 +104,7 @@ If a step requires an act beyond $R$, the runbook must include an explicit escal
 
 ## Runbook and mandate
 
-A Runbook is a specialization of [Mandate](../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/glossary/theories/governance/terms/mandate.md).
+A Runbook is a specialization of [Mandate](../../../../../../../../content/text/glossary/terms/mandate.md).
 A Mandate $\mathcal{M} = (A, \varphi, C)$ prescribes a single act $\varphi$ with a compulsion trigger $C$.
 A Runbook $\mathcal{R} = (\mathcal{N}, R, \Pi, \mathcal{G})$ prescribes a sequence $\Pi$ with a norm-derived trigger $\mathcal{N}$ and an explicit goal $\mathcal{G}$ stating when execution terminates.
 
@@ -192,7 +193,7 @@ Institutional ratification and successful execution, once achieved, propagate ba
 
 ## Zeno settling: the shadow-type tower of unresolved triggers
 
-**Source:** [Zeno Settling K1 Cohomology](../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/humanities/theories/math/zeno-settling-k1-cohomology.md), [Zeno Settling Small K Verification](../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/humanities/theories/math/zeno-settling-small-k-verification.md).
+**Source:** Zeno Settling K1 Cohomology, Zeno Settling Small K Verification.
 
 The shadow-type partition already built into the runbook's nuclear derivation is not static — it has a tower structure. An unresolved trigger does not simply stay in one failure mode; it propagates forward through tower levels via the NuclearShadowSubstitution rule, generating new gaps at higher levels until the whole chain settles. The Zeno settling computation at level 1 gives the first step of this propagation.
 
@@ -216,6 +217,161 @@ The level-1 transfer nucleus at the witness is no longer trivial: the restrictio
 **Proposition (Runbook shadow propagation).** Let a runbook trigger fire at history t (the trigger proposition RelationalHistoryFiberDoctrineLanguageModal(trigger) enters RelationalHistoryFiberTransferringNucleusFixedFiber). If the runbook is not executed — the primary runbook proposition RelationalHistoryFiberDoctrineLanguageModal(runbook) remains a t-type shadow at level k — then at level k+1 a new s-shadow appears at the resolution witness: the institutional recognition that execution did not follow the trigger. This s-shadow is not a duplicate of the original gap; it is a new, genuinely distinct cohomological class. The chain of unresolved runbook triggers generates a Fibonacci-type shadow sequence: t → s → st → sts → stst... , with each new level adding one more unresolved class. The runbook is fully settled only when the entire witness tower collapses — when every shadow-type element at every tower level reaches RelationalHistoryFixedFiber.
 
 *Source.* Shadow propagation rule from [Zeno Settling K1 Cohomology §The s-Type Shadow at Level 1](../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/humanities/theories/math/zeno-settling-k1-cohomology.md#zeno-settling-k1-cohomology-shadow) and [§Fibonacci Substitution Check](../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/humanities/theories/math/zeno-settling-k1-cohomology.md#zeno-settling-k1-cohomology-fibonacci). Cohomological non-triviality conditional from [§Cohomology at k=1](../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/humanities/theories/math/zeno-settling-k1-cohomology.md#zeno-settling-k1-cohomology-h1). Status: the shadow-type substitution is established; the cohomological non-triviality is conditional on WitnessNonExtendability. $\square$
+
+## In the corpus
+
+A runbook in the corpus is a YAML file that an agent reads and executes step by
+step; it is itself an entity with an `id` and a `description`, takes entities as
+inputs and produces entities as outputs, and is scoped by where its file lives.
+
+### Atomicity
+
+A runbook MUST do one thing.
+A runbook that does two separable things is two runbooks composed by a third.
+The smallest meaningful workflow is the right granularity for a runbook file.
+Atomic runbooks MUST NOT call other runbooks — use primitive step types only.
+
+**Atomic runbook:** a runbook whose steps are all primitive operations (query, write, update, script, llm-call) — no `call` steps to other runbooks.
+
+**Composite runbook:** a runbook that composes atomic runbooks via `call` steps.
+A composite runbook is a workflow; an atomic runbook is a work unit.
+
+Both are valid runbooks.
+The distinction is structural, not hierarchical: a composite runbook does not "own" the runbooks it calls.
+
+### Composition
+
+Runbooks compose by calling other runbooks as steps.
+The composition mechanism is the `call` step type:
+
+```yaml
+steps:
+  - id: do-extraction
+    type: call
+    runbook: runbooks/extract-anchor.yaml
+    inputs:
+      file_path: "{{inputs.file_path}}"
+      anchor_id: "{{inputs.anchor_id}}"
+```
+
+### Runbooks as parameters
+
+A runbook input MAY have type `runbook`.
+This allows the caller to pass a runbook reference that the callee will execute:
+
+```yaml
+inputs:
+  - name: extraction_runbook
+    type: runbook
+    description: "The runbook to call for each extraction target"
+
+steps:
+  - id: extract-each
+    type: for-each
+    over: "{{find-targets.result}}"
+    do:
+      - id: run-extractor
+        type: call
+        runbook: "{{inputs.extraction_runbook}}"
+        inputs:
+          file_path: "{{item.file}}"
+```
+
+The sweep runbook does not know which extraction runbook to use; the caller decides.
+This is how generic workflows compose with specific operations.
+
+### Input/output matching
+
+When a composite runbook calls a sub-runbook, the caller MUST supply all required inputs of the callee.
+The callee's outputs are available to subsequent steps via `{{step-id.result}}`.
+Composite runbooks MUST declare which sub-runbooks they call, either as literal paths or as `runbook`-typed inputs.
+
+Two runbooks compose cleanly when the first runbook's output type matches the second runbook's input type.
+This is not enforced mechanically yet — it is a convention that skill-object-types will formalize (see Open questions).
+
+### Foata normal form
+
+A YAML file is a morphism $u \in \mathbb{M}(\Sigma, I)$ expressed in Foata normal form:
+$u = B_1 \cdot B_2 \cdots B_k$
+where each $B_i$ is a **concurrent tier** — an unordered set of steps that are pairwise commuting under the independence relation $I$.
+
+- Steps within the same tier commute: any ordering yields the same history.
+- Tiers are causally ordered: every step in $B_{i+1}$ depends on at least one step in $B_i$.
+- Wiring between tiers is explicit: each step in $B_{i+1}$ declares which output from a prior step feeds which of its inputs.
+
+Steps within a tier that share no wiring dependency are concurrent — they may execute in any order or in parallel. The YAML does not declare concurrency explicitly; it is derived from the absence of wiring dependencies between steps in the same tier.
+
+`closure-kind` lives on the YAML, not on individual Python files, because the nuclear quartet classifies **compositions**, not generators. A single step $s \in \Sigma$ is a generator — it has no closure kind. The quartet position emerges from how generators compose:
+
+| `closure-kind` | Wiring structure |
+|---|---|
+| `process` | every step wired deterministically; no branching |
+| `procedure` | wiring includes conditional routing |
+| `derivation` | wiring includes a step whose output type is declared but produced at runtime |
+| `inquiry` | wiring is open — the composition discovers its structure during execution |
+
+### YAML format
+
+A runbook is encoded as a `.yaml` file in `runbooks/`.
+The top-level keys are:
+
+```yaml
+id: kebab-case-id
+description: "one sentence"
+closure-kind: process | procedure | derivation | inquiry
+
+inputs:
+  - name: param_name
+    type: str | int | list | runbook | ...
+    description: "what this input is"
+
+outputs:
+  - name: result_name
+    from: "{{step-id.result}}"
+
+steps:
+  # Tier 1 — steps that commute with each other
+  - id: step-a
+    run: step_a.py
+    inputs:
+      x: "{{inputs.x}}"
+  - id: step-b
+    run: step_b.py
+    inputs:
+      y: "{{inputs.y}}"
+
+  # Tier 2 — depends on tier 1 via wiring
+  - id: step-c
+    run: step_c.py
+    inputs:
+      from_a: "{{step-a.output}}"
+      from_b: "{{step-b.output}}"
+```
+
+Each `run:` value names a Python file. The Python file's function signature is the single source of truth for that step's input and output types — the YAML does not duplicate them.
+
+### Step types
+
+| Type | What it does | Atomic? |
+|------|-------------|---------|
+| `query` | Read data from the repository | yes |
+| `write` | Create a file | yes |
+| `update` | Modify an existing file | yes |
+| `script` | Run a shell command | yes |
+| `llm-call` | Ask the LLM a question | yes |
+| `collect` | Gather results from prior steps | yes |
+| `call` | Execute another runbook | no (composition) |
+| `for-each` | Iterate over a collection | container (wraps other steps) |
+| `condition` | Branch on a predicate | container (wraps other steps) |
+
+Step ids MUST be unique within the runbook.
+Template expressions use `{{...}}` syntax.
+Input values are accessed as `{{inputs.param_name}}`.
+Step outputs are accessed as `{{step-id.result}}`.
+The context variable `{{today}}` is always available.
+
+A runbook MAY have a colocated `.py` script implementing one or more of its steps.
+See [flatfile-agent-resource-system-script](../../../../../../../../../../../engineering-services-section/content/text/glossary/terms/script.md) for the colocated script spec.
 
 ## Open questions
 

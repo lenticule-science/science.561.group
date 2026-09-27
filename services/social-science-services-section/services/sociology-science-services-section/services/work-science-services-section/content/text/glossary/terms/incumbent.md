@@ -4,7 +4,7 @@ description: "An Incumbent is a quadruple (O, t_now, a, ι) — an Office, a des
 extends: [entity, office]
 restricts: [entity, office]
 date-created: 2026-03-19
-date-modified: 2026-04-28
+date-modified: 2026-09-27
 minimum-math: relational-history-fiber-saturating-nucleus
 component-of: relational-universe
 fiber-of: relational-universe
@@ -28,9 +28,9 @@ ast:
 id: incumbent
 defines: Incumbent
 where:
-- $O = (T, J, H, \sigma, \Delta)$ is the [Office](office.md) — the normative presheaf with nuclei defined over all histories in $T$
+- $O = (T, J, H, \sigma, \Delta)$ is the [Office](../../../../../../../economics-and-business-science-services-section/services/business-science-services-section/content/text/glossary/terms/office.md) — the normative presheaf with nuclei defined over all histories in $T$
 - $t_{\mathrm{now}} \in T$ is the **current history** — the designated base point for "now"; incumbency is a relation at a specific history, not a global structure
-- $a$ is the **occupant** — an [Entity](entity.md) whose id is a doubly-stable proposition in $H^*$; the natural person currently wearing the body politic
+- $a$ is the **occupant** — an [Entity](../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/entity.md) whose id is a doubly-stable proposition in $H^*$; the natural person currently wearing the body politic
 - $\iota \in H_{t_{\mathrm{now}}}$ is the **incumbency proposition** — the element of the fiber Heyting algebra asserting "$a$ holds $O$ at $t_{\mathrm{now}}$"
 ---
 
@@ -48,10 +48,10 @@ $$\mathrm{Inc} = (O,\; t_{\mathrm{now}} \in T,\; a : \text{Entity},\; \iota)$$
 
 where:
 
-- $O$ is the [Office](./office.md) — the normative structure defined over all histories in $T$
+- $O$ is the [Office](../../../../../../../economics-and-business-science-services-section/services/business-science-services-section/content/text/glossary/terms/office.md) — the normative structure defined over all histories in $T$
 - $t_{\mathrm{now}} \in T$ is the **current history** — the designated base point for *now*; incumbency is a relation at a specific history, not a global structure
 - $a$ is the **occupant** — an Entity whose id is settled in the framework; the natural person currently wearing the body politic
-- $\iota$ is the **incumbency proposition** — asserting *$a$ holds $O$ at $t_{\mathrm{now}}$* — a claim whose [settlement](../../../../math/domains/voidmath/terms/settlement.md) is what the rest of the structure tracks
+- $\iota$ is the **incumbency proposition** — asserting *$a$ holds $O$ at $t_{\mathrm{now}}$* — a claim whose [settlement](../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/settlement.md) is what the rest of the structure tracks
 
 **Type note.** The occupant $a$ is an Entity (a named individual), not itself a value in the framework's settlement space. The settlement space carries claims about $a$, not $a$ itself (Lambek–Scott 1986, *Introduction to Higher Order Categorical Logic*; Johnstone 2002, *Sketches of an Elephant*, Part D). The incumbency proposition $\iota$ is the proposition about $a$; $a$ is the individual the proposition names. What earlier formulations conflated — occupant individual and occupancy claim — are distinct.
 
@@ -73,8 +73,8 @@ Nine external doctrines, each with a precise internal rendering:
 | ***Dignitas non moritur*** ("the dignity does not die") | Kantorowicz (1957) §§IV–VI, citing Baldus, Johannes Andreae | The nuclear structure $(\sigma_t, \Delta_t)$ is defined for all $t \in T$; it does not depend on any element $a \in H_t$ being present |
 | ***Salva rerum substantia*** (usufruct limit) | Digest 7.1.1 (Paul): *jus utendi fruendi salva rerum substantia* | The nuclei $(\sigma_t, \Delta_t)$ are not in the image of any stepping map $\gamma_{t_{\mathrm{now}}}$ the incumbent controls; the substance of the office — its normative structure — is outside the incumbency's write scope |
 | **Corporation sole** | Blackstone Bk. I Ch. 18; *Sutton's Hospital* 10 Co. Rep. 23a (1613); Maitland, "The Crown as Corporation," *LQR* 17 (1901) | The Office $O$ is a structure over all of $T$; its legal personality (juristic continuity) is the presheaf, not any particular element at any particular $t$ |
-| **Institution** (*institutio*, spiritual authorization) | Phillimore, *Ecclesiastical Law* Vol. 1 Bk. III Ch. VI; Blackstone Bk. II Ch. 3 | $\sigma_{t_{\mathrm{now}}}(\iota) = \iota$ — the incumbency proposition is [saturation-nucleus](../math/relational-history-fiber-saturating-nucleus.md)-fixed: meaning/recognition settled; the past has nothing more to add |
-| **Induction** (*inductio*, corporeal possession) | Phillimore ibid.; Blackstone: "not complete incumbent till induction" | $\Delta_{t_{\mathrm{now}}}(\iota) = \iota$ — the incumbency proposition is [transfer-nucleus](../math/relational-history-fiber-transferring-nucleus.md)-fixed: forward-stable; every extension of $t_{\mathrm{now}}$ already contains the occupancy |
+| **Institution** (*institutio*, spiritual authorization) | Phillimore, *Ecclesiastical Law* Vol. 1 Bk. III Ch. VI; Blackstone Bk. II Ch. 3 | $\sigma_{t_{\mathrm{now}}}(\iota) = \iota$ — the incumbency proposition is saturation-nucleus-fixed: meaning/recognition settled; the past has nothing more to add |
+| **Induction** (*inductio*, corporeal possession) | Phillimore ibid.; Blackstone: "not complete incumbent till induction" | $\Delta_{t_{\mathrm{now}}}(\iota) = \iota$ — the incumbency proposition is transfer-nucleus-fixed: forward-stable; every extension of $t_{\mathrm{now}}$ already contains the occupancy |
 | **Full incumbency** (institution + induction both complete) | Blackstone Bk. II Ch. 3: "no complete freehold in the church" without induction | $\iota \in H^*_{t_{\mathrm{now}}}$: doubly stable — both nucleus conditions hold simultaneously |
 | **Rule of recognition** | Hart, *The Concept of Law* (1961), Ch. IV–VI: the secondary rule specifying criteria of legal validity; persists through succession | The Grothendieck topology $J$ on $T$: the covering condition that determines which families of facts count as valid in the system; not modified by any change of occupant |
 
@@ -85,7 +85,7 @@ Nine external doctrines, each with a precise internal rendering:
 | ***Dignitas non moritur*** ("the dignity does not die") | Kantorowicz (1957) §§IV–VI, citing Baldus, Johannes Andreae | The Office's normative structure is defined for all $t \in T$; it does not depend on any incumbent being present |
 | ***Salva rerum substantia*** (usufruct limit) | Digest 7.1.1 (Paul): *jus utendi fruendi salva rerum substantia* | The Office's normative structure is not in the image of any act the incumbent controls; the substance of the office — its required predicates and laws — is outside the incumbency's write scope |
 | **Corporation sole** | Blackstone Bk. I Ch. 18; *Sutton's Hospital* 10 Co. Rep. 23a (1613); Maitland, "The Crown as Corporation," *LQR* 17 (1901) | The Office is a structure over all of $T$; its legal personality (juristic continuity) is the structural form, not any particular element at any particular $t$ |
-| **Institution** (*institutio*, spiritual authorization) | Phillimore, *Ecclesiastical Law* Vol. 1 Bk. III Ch. VI; Blackstone Bk. II Ch. 3 | The institution predicate over $\iota$ has reached affirming [settlement](../../../../math/domains/voidmath/terms/settlement.md) at $t_{\mathrm{now}}$: the past has settled the meaning of the appointment |
+| **Institution** (*institutio*, spiritual authorization) | Phillimore, *Ecclesiastical Law* Vol. 1 Bk. III Ch. VI; Blackstone Bk. II Ch. 3 | The institution predicate over $\iota$ has reached affirming [settlement](../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/settlement.md) at $t_{\mathrm{now}}$: the past has settled the meaning of the appointment |
 | **Induction** (*inductio*, corporeal possession) | Phillimore ibid.; Blackstone: "not complete incumbent till induction" | The induction predicate over $\iota$ has reached affirming settlement: the occupancy is forward-active, present in every continuation of $t_{\mathrm{now}}$ |
 | **Full incumbency** (institution + induction both complete) | Blackstone Bk. II Ch. 3: "no complete freehold in the church" without induction | Both institution and induction predicates have reached affirming settlement simultaneously |
 | **Rule of recognition** | Hart, *The Concept of Law* (1961), Ch. IV–VI: the secondary rule specifying criteria of legal validity; persists through succession | The covering structure on $T$ — what families of facts count as valid in the system; not modified by any change of occupant |
@@ -188,6 +188,20 @@ Four levels of incumbency stability, from least to most complete:
 | **Induction only** | Induction predicate settled affirmingly | Forward-active possession; meaning not yet settled — anomalous, normally impossible in canonical law |
 | **Full incumbency** | Both predicates settled affirmingly | Both stages complete; the complete freehold |
 
+## An office's deontic profile
+
+An office binds its incumbent to a deontic profile, in Hohfeld's four incidents:
+**powers**, acts that change other agents' normative positions (granting a
+permission, installing a subordinate); **duties**, acts the incumbent must
+perform or omit; **privileges**, acts it may perform without being under a duty
+not to (reading records, sending messages, invoking skills); and **immunities**,
+changes others cannot make to its position. An agent is defined by what it does;
+an incumbent is defined by the profile it is bound to, so every incumbent is an
+agent but not every agent is an incumbent. An office differs from a role: a role
+is a set of required capabilities, matched; an office specifies obligation as
+well as capability and binds by installation, an admitted act recorded under a
+recognized authority, not by a capability match.
+
 ## Open questions
 
 - **Institution = σ-fixed, induction = Δ-fixed**: This mapping from the two ecclesiastical stages to the two nucleus operators is motivated by the functional roles — σ_t is the saturation nucleus (meaning-closure, settling what the accumulated past demands) and Δ_t is the transfer nucleus (forward-stability, settling what all extensions must share). Institution confers recognized meaning; induction confers forward-stable possession. But this hypothesis is not yet a derived theorem: deriving it requires specifying what "spiritual authorization" and "corporeal possession" mean formally as propositions in $H_{t_{\mathrm{now}}}$, and showing that the σ/Δ operators act on those propositions as claimed. This derivation is the primary open technical task of this spec.
@@ -198,6 +212,6 @@ Four levels of incumbency stability, from least to most complete:
 
 - **The institution/induction predicate decomposition**: This mapping from the two ecclesiastical stages to two predicates whose joint settlement defines full incumbency is motivated by the functional roles. Institution confers recognized meaning; induction confers forward-active possession. Deriving this formally requires specifying what *spiritual authorization* and *corporeal possession* mean as predicates in the framework's predication structure, and showing that the institution and induction acts settle those predicates as claimed. This derivation is the primary open technical task of this spec.
 
-- **The agent-sheaf**: The occupant $a$ is an Entity with a settled id. The proper type for agents in the framework is a section of an agent-sheaf $\mathcal{A}$ (Lambek–Scott 1986; Abramsky–Brandenburger 2011, *New Journal of Physics* 13), and the incumbency proposition $\iota$ is a [predication cell](../../../../math/domains/voidmath/terms/predication-cell.md) over $a$. Whether $\mathcal{A}$ is the same sheaf as the Entity-sheaf — whether every Entity is a potential agent — or whether there is a distinct Agent type with a separate sheaf, is not yet derived.
+- **The agent-sheaf**: The occupant $a$ is an Entity with a settled id. The proper type for agents in the framework is a section of an agent-sheaf $\mathcal{A}$ (Lambek–Scott 1986; Abramsky–Brandenburger 2011, *New Journal of Physics* 13), and the incumbency proposition $\iota$ is a [predication cell](../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/predication-cell.md) over $a$. Whether $\mathcal{A}$ is the same sheaf as the Entity-sheaf — whether every Entity is a potential agent — or whether there is a distinct Agent type with a separate sheaf, is not yet derived.
 
 - **The rule of recognition as covering structure**: Hart's rule of recognition specifies which acts count as law. Whether the framework's covering structure on $T$ — what families of facts cover a history — is the formal counterpart to the rule of recognition, and whether the institution and induction predicates arise from this covering structure as derived settling conditions, is an open question. If the derivation goes through, Hart's *internal point of view* (officials treat the rule as binding from the inside) corresponds to the framework's commitment that settlement is achieved through the witnessings the inquiry has actually performed, not from a view from nowhere.
