@@ -1,0 +1,141 @@
+{
+  "type": "EbookEditionProof",
+  "version": 1,
+  "editionInputDigest": "ni:///sha-256;pBgMfWVWKKzKzoWHJv8IOHdZqs5bjhyBoqJzpFp6w2k",
+  "artifacts": {
+    "epub": "ni:///sha-256;lQzsZdvnbzUTPHmv2_aV2G3dS4KYOCgFDO1ng1Tm8n8",
+    "screenPdf": "ni:///sha-256;rMa9lD8K1p17BLUTAseaQNvE6rcNH-hH4SIayg-yafE"
+  },
+  "proofer": "independent proofreading agent (claude-opus-5-5 subagent)",
+  "writer": "claude-opus-5-5 (bare-cedar-fog-claude session d6271b1b)",
+  "provedAt": "2026-09-27T22:00:33Z",
+  "method": "First verification pass: diffed the edition text against the prior one line by line (31 hunks, 171 changed lines), re-read the evidence packet directly, re-ran pd.cut with include_lowest=True, recomputed the finite-population-correction arithmetic, and re-swept the style guide's banned lists. Second verification pass (this one): diffed this new edition text against the previous edition text (30 hunks, 417 diff lines) and confirmed every hunk besides the g1 rewrite is pure pagination reflow from the new keep-with-table.lua filter -- identical wording relocated relative to page breaks, no content changed. Recomputed g1's rewritten arithmetic in Python with math.ceil to check the now-explicit round-up convention. Spot-checked two tables (the Chapter 2 hours sheet, the Chapter 3 wide/long tables) to confirm their introducing paragraphs now land on the same page as the table, and confirmed the paragraph movement is reflow only (no wording changed).",
+  "findings": [
+    {
+      "id": "f1",
+      "file": "04-process.md",
+      "severity": "error",
+      "claim": "\"A four-valued logic of this kind, which Nuel Belnap proposed for computers that combine information from sources that may be silent or disagree [@belnap1977], fits data cleaning well\" -- while 00-about-this-book.md's \"Who wrote it\" section states \"Every source it cites is in the Group's research notes, with the date it was read.\"",
+      "source": "Re-read the evidence packet directly: it now has a belnap1977 reference entry (family: Belnap), a sources-table row (\"Missing and conflicting values | Belnap's four-valued logic [@belnap1977]; the section's concept-lattice article\"), and a paragraph stating \"That bilattice is Belnap's four-valued logic, which he proposed for a computer combining reports from sources that may be silent or contradict one another [@belnap1977].\" The evidence packet now owns and correctly states the citation itself, rather than relying on an unstated link through the concept-lattice article (which still cites Ganter & Wille, Belohlavek and Wurm, not Belnap, for the bilattice construction) -- the evidence packet's new sentence supplies its own grounding for the Belnap attribution instead of imputing it to the article. The book's citation and the packet's citation now match.",
+      "fix": "Verified as written in the fix field of the prior finding.",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f2",
+      "file": "07-python.md",
+      "severity": "error",
+      "claim": "`pd.cut(saturdays[\"visitors\"], bins=[0, 150, 300, 1000], labels=[\"quiet\",\"steady\",\"busy\"])` with no `include_lowest`, and the text explaining only right-edge inclusion.",
+      "source": "The snippet now reads `pd.cut(..., bins=[0, 150, 300, 1000], labels=[...], include_lowest=True)`, and the prose adds: \"It excludes the first bin's left edge unless you pass include_lowest=True; without it, a day with 0 visitors would get no label at all.\" Re-ran in pandas 2.1.4: `pd.cut(pd.Series([0,150,151,300,301,1000]), bins=[0,150,300,1000], labels=[\"quiet\",\"steady\",\"busy\"], include_lowest=True)` now gives 0->'quiet', 150->'quiet', 151->'steady', 300->'steady', 301->'busy', 1000->'busy' -- matches the text exactly, including the right-edge behavior stated earlier in the same paragraph.",
+      "fix": "Verified as written in the fix field of the prior finding.",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f3",
+      "file": "01-foundations.md",
+      "severity": "correction",
+      "claim": "\"how it'll be managed\"",
+      "source": "Now reads \"how it will be managed.\" Confirmed by a full ambiguous-contraction sweep of the new edition text (grep for it'll/there'd/they'd): no genuine instance remains anywhere in the book.",
+      "fix": "Verified as written in the fix field of the prior finding.",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f4",
+      "file": "06-share.md",
+      "severity": "correction",
+      "claim": "\"the questions it'll raise\"",
+      "source": "Now reads \"the questions it will raise.\" Confirmed by the same sweep as f3.",
+      "fix": "Verified as written in the fix field of the prior finding.",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f5",
+      "file": "01-foundations.md",
+      "severity": "correction",
+      "claim": "\"a data analyst mostly answers questions with data that exists\" and the other three \"mostly\" instances (01-foundations.md worked example, 02-ask.md, 03-prepare.md).",
+      "source": "All four now read \"usually\" (twice), \"chiefly\" (the 02-ask.md problem-type paragraph), and \"usually\" (03-prepare.md); the two \"Mostly at two branches\" quotations in the five-whys dialogue (01-foundations.md, twice) were separately reworded to \"Concentrated at two branches\"/\"concentrated at two branches.\" Re-ran a case-insensitive whole-word grep for \"mostly\" across the full new edition text: zero matches.",
+      "fix": "Verified as written in the fix field of the prior finding.",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f6",
+      "file": "01-foundations.md",
+      "severity": "correction",
+      "claim": "\"Seeing it: picturing the data, often literally, in a chart or table.\"",
+      "source": "Now reads \"picturing the data, often as a chart or table.\" Grep for \"literally\" across the new edition text: zero matches.",
+      "fix": "Verified as written in the fix field of the prior finding.",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f7",
+      "file": "04-process.md",
+      "severity": "correction",
+      "claim": "\"Split one column into several with 'split text to columns'\", \"A dashboard combines several views on one screen\", \"a portfolio is a collection of work that can include several case studies.\"",
+      "source": "Now read \"more than one\" (04-process.md, and 08-the-case-study.md's answer), and \"multiple views\" (06-share.md). Also caught \"one model among several\" in 01-foundations.md (not separately flagged before) -> now \"one model among others.\" Grep for whole-word \"several\" across the new edition text: zero matches.",
+      "fix": "Verified as written in the fix field of the prior finding.",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f8",
+      "file": "01-foundations.md",
+      "severity": "correction",
+      "claim": "\"Data analysis is collecting, transforming and organizing data in order to draw conclusions, make predictions and support decisions.\"",
+      "source": "Now reads \"...organizing data to draw conclusions, make predictions and support decisions.\" Grep for \"in order to\" across the new edition text: zero matches.",
+      "fix": "Verified as written in the fix field of the prior finding.",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f9",
+      "file": "00-about-this-book.md",
+      "severity": "correction",
+      "claim": "\"Chapman and et al. 2000\" / \"Harris and et al. 2020\" in text and References.",
+      "source": "In-text now reads \"(Chapman et al. 2000)\" and \"(Harris et al. 2020)\" (grep for \"and et al\" across the new edition: zero matches). The References list now gives Chapman, Pete, Julian Clinton, Randy Kerber, Thomas Khabaza, Thomas Reinartz, Colin Shearer, and Rudiger Wirth -- the seven real authors of CRISP-DM 1.0, correctly named and ordered -- and Harris, Charles R., K. Jarrod Millman, Stefan J. van der Walt, Ralf Gommers, Pauli Virtanen, David Cournapeau, Eric Wieser, et al. -- the first seven of the real 26 authors of the NumPy paper, in the paper's actual published order, followed by a properly punctuated \"et al.\" (comma, no \"and\") for the rest. Both entries are bibliographically correct.",
+      "fix": "Verified as written in the fix field of the prior finding.",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f10",
+      "file": "04-process.md",
+      "severity": "correction",
+      "claim": "EXTRACT and CAST(...AS DATE) used with no named SQL dialect anywhere in the book.",
+      "source": "Chapter 3 (\"Databases and SQL\") now states: \"The core of SQL is standard, but databases differ in their functions; this book's queries follow BigQuery, the database the course uses, and say so where another database would differ\" -- and I re-confirmed via web search that Google's course does teach SQL in BigQuery. Chapter 5 (\"Converting and formatting\") now adds: \"Date functions are where SQL dialects differ most: EXTRACT works in BigQuery, PostgreSQL and MySQL, while SQLite uses strftime('%Y', visit_date) and has no date type to cast to\" -- this matches what I tested earlier (EXTRACT raises a syntax error in sqlite3 3.45.1; CAST(x AS DATE) silently truncates to the year rather than erroring). Chapter 4's CAST(visit_date AS DATE) cleaning example is read after chapter 3's disclosure, so a reader now knows the dialect before reaching it.",
+      "fix": "Verified as written in the fix field of the prior finding.",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f11",
+      "file": "04-process.md",
+      "severity": "correction",
+      "claim": "Cochran's formula given with no finite-population correction, though the evidence packet names one.",
+      "source": "The chapter now adds: \"For a small population of size N, a finite-population correction lowers the number needed: n_adj = n/(1+(n-1)/N). Surveying 384 of a library's 2,000 card holders needs only about 323.\" The gap this finding named -- FPC never mentioned -- is closed: the concept, the formula and a worked instance are all present. However, re-computing the worked instance surfaced a new, distinct arithmetic problem in the number chosen to illustrate it; see new finding g1.",
+      "fix": "The omission itself (no FPC at all) is fixed. The specific number used to illustrate it is not self-consistent; tracked separately as g1 rather than reopening this finding, since the fix does add the correction this finding asked for.",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f12",
+      "file": "02-ask.md",
+      "severity": "note",
+      "claim": "Six \"problem types\" and \"data-driven\"/\"data-inspired\" presented with no citation to Google's course as their source.",
+      "source": "\"Problems that data can help with fall into a handful of types\" now reads \"The course sorts the problems data can help with into six types\" -- explicitly attributed to the course, and \"six\" is accurate (the list has exactly six bullets: predictions, categorizing, spotting the unusual, themes, connections, patterns).",
+      "fix": "Verified as written in the fix field of the prior finding.",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f13",
+      "file": "05-analyze.md",
+      "severity": "note",
+      "claim": "Illustrative JOIN example joins hours by calendar year, which misaligns with the Sept-March seasons used in the actual worked example, with no explanation.",
+      "source": "The paragraph after the join now reads: \"This join matches hours by calendar year; the worked example below labels September-to-March seasons first, because that's how the question is framed.\" This states the difference plainly rather than leaving it implicit, and doesn't misrepresent the two approaches as equivalent.",
+      "fix": "Verified as written in the fix field of the prior finding.",
+      "resolution": "fixed"
+    },
+    {
+      "id": "g1",
+      "file": "04-process.md",
+      "severity": "error",
+      "claim": "Now reads: \"For ±5 points: n = 3.8416 × 0.25/0.0025 ≈ 384.2, which rounds up to 385: sample sizes always round up, since a fraction of a person can't be surveyed and rounding down would miss the target margin... For a small population of size N, a finite-population correction lowers the number needed: n_adj = n/(1 + (n-1)/N). For a library's 2,000 card holders, the 385 becomes 385/(1 + 384/2,000) ≈ 323.0, so 323.\" Check-yourself #2's answer now reads \"3.8416 × 0.25/0.0016 = 600.25, rounded up to 601.\"",
+      "source": "Recomputed in Python with math.ceil: 3.8416*0.25/0.0025 = 384.16, matching the stated \"≈ 384.2\"; math.ceil(384.16) = 385, matching \"rounds up to 385.\" 385/(1 + 384/2000) = 322.9866, which rounds to 323 under nearest OR ceiling rounding -- no longer ambiguous, since the one stated convention (always round up) is now applied consistently to both the base n and the FPC-adjusted n, and the value lands on 323 either way. Separately, math.ceil(3.8416*0.25/0.0016) = math.ceil(600.25) = 601, matching the updated Check-yourself #2 answer, which was also updated (from the earlier edition's \"≈ 600\") to apply the same round-up convention consistently across the chapter, not just in the paragraph g1 named.",
+      "fix": "Fix verified as written; no further change needed.",
+      "resolution": "fixed"
+    }
+  ]
+}

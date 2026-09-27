@@ -1,0 +1,35 @@
+{
+  "type": "EbookEditionAcceptance",
+  "version": 1,
+  "status": "accepted",
+  "editionInputDigest": "ni:///sha-256;pBgMfWVWKKzKzoWHJv8IOHdZqs5bjhyBoqJzpFp6w2k",
+  "artifacts": {
+    "epub": {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/561-group-services-section/data/state/editions/data-analytics-course-by-course/data-analytics-course-by-course.epub",
+      "bytes": 146745,
+      "sha256": "ni:///sha-256;lQzsZdvnbzUTPHmv2_aV2G3dS4KYOCgFDO1ng1Tm8n8"
+    },
+    "screenPdf": {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/561-group-services-section/data/state/editions/data-analytics-course-by-course/data-analytics-course-by-course.pdf",
+      "bytes": 244219,
+      "sha256": "ni:///sha-256;rMa9lD8K1p17BLUTAseaQNvE6rcNH-hH4SIayg-yafE"
+    },
+    "buildRecordDigest": "ni:///sha-256;LP_O1hb1I2mGJFf7faP0oaeam0VMjTr0R9mRsrXih_Y"
+  },
+  "closedObligationIds": [
+    "editorial-proof"
+  ],
+  "pendingAcceptanceObligationIds": [],
+  "proof": {
+    "digest": "ni:///sha-256;NiV9vc89dXtK9ycP169KIe6ztvUPXiV0VAr6eEw1VVY",
+    "proofer": "independent proofreading agent (claude-opus-5-5 subagent)",
+    "provedAt": "2026-09-27T22:00:33Z",
+    "method": "First verification pass: diffed the edition text against the prior one line by line (31 hunks, 171 changed lines), re-read the evidence packet directly, re-ran pd.cut with include_lowest=True, recomputed the finite-population-correction arithmetic, and re-swept the style guide's banned lists. Second verification pass (this one): diffed this new edition text against the previous edition text (30 hunks, 417 diff lines) and confirmed every hunk besides the g1 rewrite is pure pagination reflow from the new keep-with-table.lua filter -- identical wording relocated relative to page breaks, no content changed. Recomputed g1's rewritten arithmetic in Python with math.ceil to check the now-explicit round-up convention. Spot-checked two tables (the Chapter 2 hours sheet, the Chapter 3 wide/long tables) to confirm their introducing paragraphs now land on the same page as the table, and confirmed the paragraph movement is reflow only (no wording changed).",
+    "findings": {
+      "errors": 3,
+      "corrections": 9,
+      "notes": 2
+    }
+  },
+  "acceptedAt": "2026-09-27T22:01:33.218Z"
+}
