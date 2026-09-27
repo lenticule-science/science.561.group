@@ -166,7 +166,10 @@ export const LSPACE_PROJECTION = Object.freeze({
 /** The section a garden reads: LSPACE_ROOT, else the Lenticule Science forest. Another instance of
  *  L-Space (Binding Generations') reads its own section under its own wing, title and realm. */
 export const lSpaceRoot = (environment = process.env) => setting('LSPACE_ROOT', environment) ?? SCIENCE_ROOT;
-const lSpaceCatalog = (environment) => ({ ...LSPACE_CATALOG, wing: setting('LSPACE_WING', environment) ?? LSPACE_CATALOG.wing });
+/** The path segments a garden leaves out: LSPACE_EXCLUDE (comma-separated), else EXCLUDED_SEGMENTS.
+ *  An instance whose site is part of its garden (Binding Generations') drops 'sites'. */
+export const lSpaceExcludes = (environment = process.env) => setting('LSPACE_EXCLUDE', environment)?.split(',').map((segment) => segment.trim()).filter(Boolean) ?? [...EXCLUDED_SEGMENTS];
+const lSpaceCatalog = (environment) => ({ ...LSPACE_CATALOG, wing: setting('LSPACE_WING', environment) ?? LSPACE_CATALOG.wing, exclude: lSpaceExcludes(environment) });
 const lSpaceProjection = (environment) => ({
   ...LSPACE_PROJECTION,
   ...(setting('LSPACE_TITLE', environment) === undefined ? {} : { title: setting('LSPACE_TITLE', environment) }),
@@ -210,12 +213,12 @@ export async function lSpaceApplication(environment = process.env) {
     const workspace = await createGeodeAuthoring({
       root: authoringRoot,
       region: setting('GEODE_AUTHORING_REGION', environment) ?? '',
-      excludes: [...EXCLUDED_SEGMENTS],
+      excludes: lSpaceExcludes(environment),
     });
     composed.push(geodeApplication({ workspace }));
     archive = workspace.archive;
   }
-  const openedArchive = () => (archive ??= openArchive({ root, excludes: [...EXCLUDED_SEGMENTS] }));
+  const openedArchive = () => (archive ??= openArchive({ root, excludes: lSpaceExcludes(environment) }));
   composed.push(...mcpApplications({ admission, environment, archive: openedArchive }));
   return mergeApps(...composed);
 }
