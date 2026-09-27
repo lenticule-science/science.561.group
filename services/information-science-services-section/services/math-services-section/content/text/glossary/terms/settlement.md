@@ -1,52 +1,54 @@
 ---
 name: "Settlement"
-description: "The four-cornered joint structure of values in the voidmath bilattice — composed of two independent axes (truth and knowledge) whose extremal positions give the four corners a predication value can occupy. The relationality framework reads the same structure in its own vocabulary."
+description: "What settling reaches: the least fixed point of the modal closure over a posited valuation, where further closure changes nothing. A settlement can sit at any of the four readings the evidence supports; on the four readings it is reached by step three."
+aliases: [settled valuation, settled reading]
 date-created: 2026-04-28
-
+date-modified: 2026-09-27
 ---
 
-In voidmath, **settlement** names the four-cornered joint structure within which every [predication](predication.md) value sits. It is not a single position but a *position in a two-dimensional space* — the space whose two axes are the [truth order](../../../../services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/pre-bilattice/content/truth-order/truth-order.md) ($\leq_t$, running from $\mathbf{f}$ to $\mathbf{t}$) and the [knowledge order](../../../../services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/pre-bilattice/content/knowledge-order/knowledge-order.md) ($\leq_k$, running from $\bot$ to $\top$). The four corners of this space are the extremal positions a value can occupy in the [bilattice](bilattice.md); the interior is the mass of partial settlements that constitute most actual valuations.
+A **settlement** is what [settling](settling.md) reaches: the least fixed
+point of the modal closure $\Diamond \circ \Box$ over a posited valuation,
+the valuation that further closure no longer changes
+([`Language/Settling.lean`](../../../../services/obsmetrological-services-section/lib/obsmetrologia/Obsmetrologia/Language/Settling.lean),
+`settle_fixed`, `settle_least`). Settling is the operation; a settlement is
+its result, one per posited valuation.
 
-The relationality framework reads this same structure in its own vocabulary, not as a second concept: where the philosophical voice speaks of absurd, [determination](./determination.md), true, and false as positions, the math voice speaks of $\bot$, $\top$, $\mathbf{t}$, and $\mathbf{f}$ as the corresponding bilattice extremes.
+## Where a settlement sits
 
-## The two axes
+Every value of a settlement is one of the four readings of the
+[bilattice](bilattice.md): absurd, potential, active or stable in the
+knowledge order. A settlement does not have to reach stable. It sits at
+whatever reading the evidence supports, and a claim no evidence has reached
+settles at absurd. Settling is not truth evaluation: a settled potential
+reading says the claim was told for and nothing more closed over it, not that
+the claim is true.
 
-| Axis | Math notation | Pole bottom | Pole top | Philosophical pair |
-|---|---|---|---|---|
-| Truth | $\leq_t$ | $\mathbf{f}$ | $\mathbf{t}$ | false ↔ true |
-| Knowledge | $\leq_k$ | $\bot$ | $\top$ | absurd ↔ [determination](./determination.md) |
+## How it is reached
 
-The two orders are independent. A value can be high in one and low in the other; combinations of axis-position give the joint settlement.
+Closure only raises values in the knowledge order, never lowers them, so a
+valuation's orbit climbs toward its settlement monotonically. On the four
+readings no ascending chain has four distinct elements, so every settlement
+is reached by step three (`strict_finite`, `settled_fixed`): settling's
+[regime](regime.md) is strict-finite, and an evaluator that has not settled
+by then has a bug, not a slow input.
 
-## The four corners
+When evidence keeps arriving, each increment is joined in and the valuation
+is closed again. The driven orbit stays monotone and fixes where the
+increments stop (`drive_at_settle_fixed`), so a settlement under driven
+settling is the settlement of all the evidence received. Evidence is
+joined, never withdrawn (`measure_cons_le`).
 
-The bilattice has four extremal elements, each occupying a corner of the joint space:
+## Other readings of the word
 
-| Corner | Math | Truth-axis | Knowledge-axis | Reading |
-|---|---|---|---|---|
-| true-only | $\mathbf{t}$ | top | mid | "Affirmed and structurally witnessed" |
-| false-only | $\mathbf{f}$ | bottom | mid | "Denied and structurally witnessed" |
-| both | $\top$ | mid | top | "Witnessed in both directions; paraconsistent determination" |
-| neither | $\bot$ | mid | bottom | "Un-witnessed; absurd" |
-
-Classical bivalent logic recognizes only $\mathbf{t}$ and $\mathbf{f}$. Three-valued logics (Kleene, intuitionistic) admit $\bot$ as a third value. Bilattice logic admits all four corners as positive structural data — none of them is a defective version of another, and every value in the bilattice is a position in this joint space.
-
-## Beyond bivalence
-
-Classical bivalent logic admits only the told-true and told-false corners; three-valued logics such as Kleene's add the no-evidence corner as a special non-classical value. Here all four corners are positive structural data, the extremal positions of one joint structure rather than a longer list of truth values.
-
-## Settlement as accumulation
-
-In a temporal setting — where [predication valuations](#) evolve as evidence accumulates — settlement is the dynamic at the joint level: each step adds witnessing, raising the knowledge-axis position and possibly tilting the truth-axis position. The *settling monotonicity* condition formalizes this: knowledge values rise monotonically in $\leq_k$ over time, never retracting.
-
-A value is *settled* (locally) when it has reached a fixed point: further evidence does not change its position. This is the math-side counterpart of [determination](./determination.md) in the relationality framework. Settlement does not require reaching the $\top$ corner; a value can settle at any position the available evidence supports.
-
-## Settlement and the predication fiber algebra
-
-Settlement is not a separate construction added to the bilattice; it is the joint-axis structure already present in the [predication fiber algebra](predication-fiber-algebra.md) $A_p$. Each value $v(s, o) \in \mathbf{L}^\bowtie$ at a [predication cell](predication-cell.md) sits somewhere in the four-corner space; the fiber algebra holds an entire field of such positions over $E \times E$. Operations on the fiber algebra (the bilattice operations $\wedge_t, \vee_t, \wedge_k, \vee_k, \sim$ and the residuated operations $\odot, \Rightarrow$) are the structural moves that combine and transform settlements.
+Linguistics reads a speech community's settled acceptance of a form as a
+settlement of this kind, with the community's closure in place of the modal
+closure: see [settlement in obsmetrological linguistics](../../../../../communication-science-services-section/services/linguistics-services-section/services/obsmetrological-linguistics-services-section/content/text/glossary/terms/settlement.md).
+In operations, a settlement is a territory that runs its own law, ledgers and
+contracts: see [settlement (operations)](../../../../../../../../../561-group-services-section/content/text/glossary/terms/settlement.md).
 
 ## See also
 
-- [Bilattice](bilattice.md) — the algebraic structure within which settlement lives.
-- [Knowledge order](../../../../services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/pre-bilattice/content/knowledge-order/knowledge-order.md), [Truth order](../../../../services/obsmetrological-services-section/lib/obsmetrologia/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/pre-bilattice/content/truth-order/truth-order.md) — the two axes of the joint structure.
-- [Predication fiber algebra](predication-fiber-algebra.md) — the structure that holds settlements across all predication cells with predicate fixed.
+- [Settling](settling.md): the stage that produces a settlement
+- [Bilattice](bilattice.md): the four readings a settled value takes
+- [Determination](determination.md)
+- [Regime](regime.md)
