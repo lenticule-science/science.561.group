@@ -86,7 +86,7 @@
         "target": "epub",
         "configuration": {
           "profile": "epub-screen-pdf-v1",
-          "editionInputDigest": "ni:///sha-256;pBgMfWVWKKzKzoWHJv8IOHdZqs5bjhyBoqJzpFp6w2k"
+          "editionInputDigest": "ni:///sha-256;yfvbwY1d2lRZFHi5U_UuY-JHuM56DFWrPU18YaOL7MM"
         },
         "sourceSpan": {
           "type": "ArtifactFabricationSourceSpan",
@@ -101,7 +101,7 @@
         "target": "screen-pdf",
         "configuration": {
           "profile": "epub-screen-pdf-v1",
-          "editionInputDigest": "ni:///sha-256;pBgMfWVWKKzKzoWHJv8IOHdZqs5bjhyBoqJzpFp6w2k"
+          "editionInputDigest": "ni:///sha-256;yfvbwY1d2lRZFHi5U_UuY-JHuM56DFWrPU18YaOL7MM"
         },
         "sourceSpan": {
           "type": "ArtifactFabricationSourceSpan",
@@ -142,13 +142,13 @@
         ]
       }
     ],
-    "specificationDigest": "ni:///sha-256;KtlHfAS3slr3xq1ydoroEJd5FfrFfFzwEXIk7bxpxPM"
+    "specificationDigest": "ni:///sha-256;q8mA5Gluv0x28HLDIDL7sqLDEftHivSwAUoyFB6BevA"
   },
   "plan": {
     "type": "ArtifactFabricationRealizationPlan",
     "version": 1,
     "artifactId": "data-analytics-course-by-course-edition",
-    "specificationDigest": "ni:///sha-256;KtlHfAS3slr3xq1ydoroEJd5FfrFfFzwEXIk7bxpxPM",
+    "specificationDigest": "ni:///sha-256;q8mA5Gluv0x28HLDIDL7sqLDEftHivSwAUoyFB6BevA",
     "projectionIds": [
       "epub",
       "screen-pdf"
@@ -178,15 +178,15 @@
   "artifacts": {
     "epub": {
       "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/561-group-services-section/data/state/editions/data-analytics-course-by-course/data-analytics-course-by-course.epub",
-      "bytes": 146745,
-      "sha256": "ni:///sha-256;lQzsZdvnbzUTPHmv2_aV2G3dS4KYOCgFDO1ng1Tm8n8"
+      "bytes": 146742,
+      "sha256": "ni:///sha-256;LGyMPlaGurIwCtRmUw7HLXx0dnwC5LxL4qylTIgSxkQ"
     },
     "screenPdf": {
       "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/561-group-services-section/data/state/editions/data-analytics-course-by-course/data-analytics-course-by-course.pdf",
-      "bytes": 244219,
-      "sha256": "ni:///sha-256;rMa9lD8K1p17BLUTAseaQNvE6rcNH-hH4SIayg-yafE"
+      "bytes": 243595,
+      "sha256": "ni:///sha-256;2b6GXnCXI-orUoo5DTkSL-m3srxM2eMpiB7UuixW8MY"
     },
-    "buildRecordDigest": "ni:///sha-256;LP_O1hb1I2mGJFf7faP0oaeam0VMjTr0R9mRsrXih_Y"
+    "buildRecordDigest": "ni:///sha-256;Tvzd1bVsw8FCOPLJM7HyDrQBCcitUR3-yXs3DDMXeFE"
   },
   "formatEvidence": {
     "renderer": {

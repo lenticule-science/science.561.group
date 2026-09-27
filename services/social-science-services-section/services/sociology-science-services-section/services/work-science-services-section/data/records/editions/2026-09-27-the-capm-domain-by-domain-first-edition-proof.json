@@ -1,15 +1,15 @@
 {
   "type": "EbookEditionProof",
   "version": 1,
-  "editionInputDigest": "ni:///sha-256;qVOwaaZRhqUKrRrpyAPxn3mV717ys_w7w_JuswR2H-w",
+  "editionInputDigest": "ni:///sha-256;byIIfmiYJYZEGCWewhvN2RHKPEP8u2jOZAU0CobSKsU",
   "artifacts": {
-    "epub": "ni:///sha-256;m1ENkVwoEUtVm64zaZCl-EPfXsSwD9quWxtLhbpfifA",
-    "screenPdf": "ni:///sha-256;XkxcSDcD3ZEcOd2sMSsROmpEMUxWsk8-Mgs7nShR30g"
+    "epub": "ni:///sha-256;X0Pp-6VH9GKYITmj_lCZxZ6V05Bwkge8eSF3gBFaRtg",
+    "screenPdf": "ni:///sha-256;1LkaNY6dsEcpcokRIqPfVZzbNXYV8CensNJUqA-rpc0"
   },
   "proofer": "independent proofreading agent (claude-opus-5-5 subagent)",
   "writer": "claude-opus-5-5 (bare-cedar-fog-claude session d6271b1b)",
-  "provedAt": "2026-09-28T05:00:00Z",
-  "method": "Diffed the-capm-domain-by-domain-edition-layout.txt against edition-next.txt after stripping page numbers and running heads, then confirmed via a sorted bag-of-words comparison that the only differences are three de-duplicated table-header rows (each previously printed twice because its table split across a page break, now printed once) and a net increase in running-head/page-number furniture consistent with more total pages — net word-count delta zero, no vocabulary added or removed, and spot-checked the load-bearing content (72 seconds, 13 to 21, escalate/avoid, the Beck/Jacobson author lists, the Kanban six-practice list, the Domain 4 Task 4 answer key line) all present unchanged. Rendered the actual PDF at the given house path with pdftoppm (150dpi) for the page containing §6.6's \"Roadmap.\" label (page 60) and its preceding page (59), and two further label-plus-table spots (§2.9's \"A stakeholder register entry.\", page 26; §5.7's \"Requirements, classified.\", page 53) to visually confirm each label now renders on the same page as its table.",
+  "provedAt": "2026-09-28T06:00:00Z",
+  "method": "Diffed the-capm-domain-by-domain-edition-layout.txt against edition-next.txt after stripping page numbers and running heads, then confirmed via a sorted bag-of-words comparison that the only differences are three de-duplicated table-header rows (each previously printed twice because its table split across a page break, now printed once) and a net increase in running-head/page-number furniture consistent with more total pages — net word-count delta zero, no vocabulary added or removed, and spot-checked the load-bearing content (72 seconds, 13 to 21, escalate/avoid, the Beck/Jacobson author lists, the Kanban six-practice list, the Domain 4 Task 4 answer key line) all present unchanged. Rendered the actual PDF at the given house path with pdftoppm (150dpi) for the page containing §6.6's \"Roadmap.\" label (page 60) and its preceding page (59), and two further label-plus-table spots (§2.9's \"A stakeholder register entry.\", page 26; §5.7's \"Requirements, classified.\", page 53) to visually confirm each label now renders on the same page as its table. Diffed edition-num.txt against edition-layout.txt, then re-ran the diff after additionally stripping each line's leading section-number prefix (e.g. \"0.1 \", \"7.6 \"): the word-bag comparison came back empty, confirming zero content differences beyond section numbers, page flow and the build hash. Confirmed by direct grep that all eight About-this-book headings, \"Formulas\", \"Lists\" and the four study-plan headings now print with no leading number anywhere in the text, while chapters 1–7's own numbered sections (spot-checked 1.1–1.12, 2.1–2.12, 7.1–7.5) are unaffected and still numbered.",
   "findings": [
     {
       "id": "f1",
@@ -180,6 +180,15 @@
       "claim": "In the PDF build, a bold label paragraph that introduces a table (e.g. \"Roadmap.\", \"A stakeholder register entry.\", \"Requirements, classified.\") could be stranded at the bottom of one page while its table started the next, most visibly in Chapter 6 where \"Roadmap.\" previously ended a page with its table pushed to the following one.",
       "source": "Coordinator's report of the previous PDF layout; house PDF build (LaTeX via pandoc).",
       "fix": "Verified fixed: confirmed by diff that edition-layout's text differs from edition-next's only in page-break position and running-head/page-number furniture (a sorted bag-of-words comparison shows the sole content-level difference is three table-header rows that no longer print twice because their tables no longer split across a page — net word-count delta zero). Rendered the built PDF at /home/emsenn/info/lib/emsenn/services/561-group/services/561-group-services-section/data/state/editions/the-capm-domain-by-domain/the-capm-domain-by-domain.pdf with pdftoppm: page 60 now shows §6.6's \"Roadmap.\" label immediately followed by its full three-row table (page 59 ends with only the §6.6 heading and blank space, pushed clear by the needspace filter rather than splitting the label from its table); page 26 shows §2.9's \"A stakeholder register entry.\" label with its table intact on one page; page 53 shows §5.7's \"Requirements, classified.\" label with its table intact on one page. The keep-with-table.lua filter with \\usepackage{needspace} resolves the class of issue, not only the one cited example.",
+      "resolution": "fixed"
+    },
+    {
+      "id": "n6",
+      "file": "templates/book-layout.lua",
+      "severity": "correction",
+      "claim": "In PDF editions, sections belonging to an unnumbered chapter were numbered as though they continued the previous numbered chapter: the front matter printed its sections as \"0.1 An independent companion\" through \"0.8 Who wrote it\" (continuing backward from Chapter 1), and the study plan printed its sections as \"7.8 The rule\" through \"7.11 On the day\" (continuing forward from Chapter 7's \"7.5 Answers\"), with the formula sheet's \"Formulas\" and \"Lists\" likewise printed as \"7.6\" and \"7.7\".",
+      "source": "Another edition's proof, per the coordinator; confirmed independently in this book's own PDF/text output (the same defect pattern: 0.1–0.8, 7.6–7.11).",
+      "fix": "Verified fixed: diffed the-capm-domain-by-domain-edition-num.txt against edition-layout.txt directly, then re-diffed a version of each with every line's leading section-number prefix stripped — the resulting word-bag comparison is empty, so nothing besides section numbers, page flow and the build hash changed. Grepped the new text directly: all eight About-this-book headings (\"An independent companion\" through \"Who wrote it\"), \"Formulas\", \"Lists\", and all four study-plan headings (\"The rule\", \"Six weeks to the exam\", \"With less time\", \"On the day\") now print with no leading number anywhere in the file, and no stray \"0.1\"–\"0.8\" or \"7.6\"–\"7.11\" prefix remains. Spot-checked that chapters 1–7's own numbered sections are untouched: 1.1–1.12, 2.1–2.12 and 7.1–7.5 all still print with their correct numbers.",
       "resolution": "fixed"
     }
   ]

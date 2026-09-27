@@ -1,15 +1,15 @@
 {
   "type": "EbookEditionProof",
   "version": 1,
-  "editionInputDigest": "ni:///sha-256;pBgMfWVWKKzKzoWHJv8IOHdZqs5bjhyBoqJzpFp6w2k",
+  "editionInputDigest": "ni:///sha-256;yfvbwY1d2lRZFHi5U_UuY-JHuM56DFWrPU18YaOL7MM",
   "artifacts": {
-    "epub": "ni:///sha-256;lQzsZdvnbzUTPHmv2_aV2G3dS4KYOCgFDO1ng1Tm8n8",
-    "screenPdf": "ni:///sha-256;rMa9lD8K1p17BLUTAseaQNvE6rcNH-hH4SIayg-yafE"
+    "epub": "ni:///sha-256;LGyMPlaGurIwCtRmUw7HLXx0dnwC5LxL4qylTIgSxkQ",
+    "screenPdf": "ni:///sha-256;2b6GXnCXI-orUoo5DTkSL-m3srxM2eMpiB7UuixW8MY"
   },
   "proofer": "independent proofreading agent (claude-opus-5-5 subagent)",
   "writer": "claude-opus-5-5 (bare-cedar-fog-claude session d6271b1b)",
-  "provedAt": "2026-09-27T22:00:33Z",
-  "method": "First verification pass: diffed the edition text against the prior one line by line (31 hunks, 171 changed lines), re-read the evidence packet directly, re-ran pd.cut with include_lowest=True, recomputed the finite-population-correction arithmetic, and re-swept the style guide's banned lists. Second verification pass (this one): diffed this new edition text against the previous edition text (30 hunks, 417 diff lines) and confirmed every hunk besides the g1 rewrite is pure pagination reflow from the new keep-with-table.lua filter -- identical wording relocated relative to page breaks, no content changed. Recomputed g1's rewritten arithmetic in Python with math.ceil to check the now-explicit round-up convention. Spot-checked two tables (the Chapter 2 hours sheet, the Chapter 3 wide/long tables) to confirm their introducing paragraphs now land on the same page as the table, and confirmed the paragraph movement is reflow only (no wording changed).",
+  "provedAt": "2026-09-27T22:07:56Z",
+  "method": "First verification pass: diffed the edition text against the prior one line by line (31 hunks, 171 changed lines), re-read the evidence packet directly, re-ran pd.cut with include_lowest=True, recomputed the finite-population-correction arithmetic, and re-swept the style guide's banned lists. Second verification pass: diffed the layout edition against the previous one (30 hunks, 417 diff lines), confirmed every hunk besides the g1 rewrite was pure pagination reflow, recomputed g1's rewritten arithmetic with math.ceil, and spot-checked two tables for the keep-with-table fix. Third verification pass (this one): diffed this edition's text against the layout edition (11 hunks, 169 diff lines) -- confirmed every changed line is a TOC or in-body section-number prefix being removed (\"0.1\"-\"0.6\" from About this book, \"8.10\"-\"8.13\" from A study plan), one running-header falling back to \"CONTENTS\" once its section lost its number, and cosmetic dot-leader/indent realignment cascading from the shorter headings, plus the expected build-hash change; no wording changed anywhere, and chapters 1-8's own internal numbering (1.1, 2.1, etc.) is untouched.",
   "findings": [
     {
       "id": "f1",
@@ -135,6 +135,15 @@
       "claim": "Now reads: \"For ±5 points: n = 3.8416 × 0.25/0.0025 ≈ 384.2, which rounds up to 385: sample sizes always round up, since a fraction of a person can't be surveyed and rounding down would miss the target margin... For a small population of size N, a finite-population correction lowers the number needed: n_adj = n/(1 + (n-1)/N). For a library's 2,000 card holders, the 385 becomes 385/(1 + 384/2,000) ≈ 323.0, so 323.\" Check-yourself #2's answer now reads \"3.8416 × 0.25/0.0016 = 600.25, rounded up to 601.\"",
       "source": "Recomputed in Python with math.ceil: 3.8416*0.25/0.0025 = 384.16, matching the stated \"≈ 384.2\"; math.ceil(384.16) = 385, matching \"rounds up to 385.\" 385/(1 + 384/2000) = 322.9866, which rounds to 323 under nearest OR ceiling rounding -- no longer ambiguous, since the one stated convention (always round up) is now applied consistently to both the base n and the FPC-adjusted n, and the value lands on 323 either way. Separately, math.ceil(3.8416*0.25/0.0016) = math.ceil(600.25) = 601, matching the updated Check-yourself #2 answer, which was also updated (from the earlier edition's \"≈ 600\") to apply the same round-up convention consistently across the chapter, not just in the paragraph g1 named.",
       "fix": "Fix verified as written; no further change needed.",
+      "resolution": "fixed"
+    },
+    {
+      "id": "g2",
+      "file": "00-about-this-book.md",
+      "severity": "correction",
+      "claim": "In the prior PDF editions, sections belonging to an unnumbered chapter were numbered as if they continued the previous chapter: the front matter's TOC and running heads read \"0.1 An independent companion\" through \"0.6 Who wrote it\" (About this book has no chapter number of its own, so these rendered as chapter '0'), and the study plan's sections read \"8.10 The rule\" through \"8.13 Before interviews\" (continuing Chapter 8's numbering, though the study plan is its own unnumbered part after Chapter 8, same as the Glossary and References that follow it).",
+      "source": "Diffed this edition's text against the prior (layout) edition: every one of the 11 diff hunks is a section-number prefix being stripped from the TOC and the matching in-body heading -- \"0.1 An independent companion\" -> \"An independent companion\" (and identically for 0.2-0.6), \"8.10 The rule\" -> \"The rule\" (and identically for 8.11-8.13) -- plus the page-8 running head falling back from \"0.5. WHAT THIS BOOK DOESN'T DO\" to \"CONTENTS\" now that the section it would have named has no number, and small dot-leader/indent realignment that follows from the shorter headings. No wording changed anywhere, and Chapters 1-8's own section numbers (1.1, 2.1, ... 8.9) are untouched, confirming the fix (templates/book-layout.lua marking these sections unnumbered) is scoped to exactly the two places this affected.",
+      "fix": "Verified fixed: About this book's and the study plan's subsections no longer carry numbers in either the table of contents or their in-body headings.",
       "resolution": "fixed"
     }
   ]

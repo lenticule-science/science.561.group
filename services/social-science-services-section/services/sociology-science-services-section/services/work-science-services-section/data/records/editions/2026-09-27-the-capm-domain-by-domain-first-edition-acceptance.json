@@ -2,34 +2,34 @@
   "type": "EbookEditionAcceptance",
   "version": 1,
   "status": "accepted",
-  "editionInputDigest": "ni:///sha-256;qVOwaaZRhqUKrRrpyAPxn3mV717ys_w7w_JuswR2H-w",
+  "editionInputDigest": "ni:///sha-256;byIIfmiYJYZEGCWewhvN2RHKPEP8u2jOZAU0CobSKsU",
   "artifacts": {
     "epub": {
       "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/561-group-services-section/data/state/editions/the-capm-domain-by-domain/the-capm-domain-by-domain.epub",
-      "bytes": 155944,
-      "sha256": "ni:///sha-256;m1ENkVwoEUtVm64zaZCl-EPfXsSwD9quWxtLhbpfifA"
+      "bytes": 155946,
+      "sha256": "ni:///sha-256;X0Pp-6VH9GKYITmj_lCZxZ6V05Bwkge8eSF3gBFaRtg"
     },
     "screenPdf": {
       "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/561-group-services-section/data/state/editions/the-capm-domain-by-domain/the-capm-domain-by-domain.pdf",
-      "bytes": 242180,
-      "sha256": "ni:///sha-256;XkxcSDcD3ZEcOd2sMSsROmpEMUxWsk8-Mgs7nShR30g"
+      "bytes": 241007,
+      "sha256": "ni:///sha-256;1LkaNY6dsEcpcokRIqPfVZzbNXYV8CensNJUqA-rpc0"
     },
-    "buildRecordDigest": "ni:///sha-256;RPjNrIfT_JoPFe9X8pSCWPESBMHi2i--Fd-PG-mi60I"
+    "buildRecordDigest": "ni:///sha-256;jyWs04D-d2vzVrsv5i2BBAXAnLTA_eqvwdqXEXuIdkg"
   },
   "closedObligationIds": [
     "editorial-proof"
   ],
   "pendingAcceptanceObligationIds": [],
   "proof": {
-    "digest": "ni:///sha-256;Buo4KKAVibg2goaFZoe2LynrL-s6YE0qUArWvfZDk2A",
+    "digest": "ni:///sha-256;pDQOCSewvpcYQoyfbSx9L0lVOGrdFwVysOuKjV8WP5o",
     "proofer": "independent proofreading agent (claude-opus-5-5 subagent)",
-    "provedAt": "2026-09-28T05:00:00Z",
-    "method": "Diffed the-capm-domain-by-domain-edition-layout.txt against edition-next.txt after stripping page numbers and running heads, then confirmed via a sorted bag-of-words comparison that the only differences are three de-duplicated table-header rows (each previously printed twice because its table split across a page break, now printed once) and a net increase in running-head/page-number furniture consistent with more total pages — net word-count delta zero, no vocabulary added or removed, and spot-checked the load-bearing content (72 seconds, 13 to 21, escalate/avoid, the Beck/Jacobson author lists, the Kanban six-practice list, the Domain 4 Task 4 answer key line) all present unchanged. Rendered the actual PDF at the given house path with pdftoppm (150dpi) for the page containing §6.6's \"Roadmap.\" label (page 60) and its preceding page (59), and two further label-plus-table spots (§2.9's \"A stakeholder register entry.\", page 26; §5.7's \"Requirements, classified.\", page 53) to visually confirm each label now renders on the same page as its table.",
+    "provedAt": "2026-09-28T06:00:00Z",
+    "method": "Diffed the-capm-domain-by-domain-edition-layout.txt against edition-next.txt after stripping page numbers and running heads, then confirmed via a sorted bag-of-words comparison that the only differences are three de-duplicated table-header rows (each previously printed twice because its table split across a page break, now printed once) and a net increase in running-head/page-number furniture consistent with more total pages — net word-count delta zero, no vocabulary added or removed, and spot-checked the load-bearing content (72 seconds, 13 to 21, escalate/avoid, the Beck/Jacobson author lists, the Kanban six-practice list, the Domain 4 Task 4 answer key line) all present unchanged. Rendered the actual PDF at the given house path with pdftoppm (150dpi) for the page containing §6.6's \"Roadmap.\" label (page 60) and its preceding page (59), and two further label-plus-table spots (§2.9's \"A stakeholder register entry.\", page 26; §5.7's \"Requirements, classified.\", page 53) to visually confirm each label now renders on the same page as its table. Diffed edition-num.txt against edition-layout.txt, then re-ran the diff after additionally stripping each line's leading section-number prefix (e.g. \"0.1 \", \"7.6 \"): the word-bag comparison came back empty, confirming zero content differences beyond section numbers, page flow and the build hash. Confirmed by direct grep that all eight About-this-book headings, \"Formulas\", \"Lists\" and the four study-plan headings now print with no leading number anywhere in the text, while chapters 1–7's own numbered sections (spot-checked 1.1–1.12, 2.1–2.12, 7.1–7.5) are unaffected and still numbered.",
     "findings": {
       "errors": 5,
-      "corrections": 12,
+      "corrections": 13,
       "notes": 2
     }
   },
-  "acceptedAt": "2026-09-27T22:00:14.308Z"
+  "acceptedAt": "2026-09-27T22:10:34.451Z"
 }
