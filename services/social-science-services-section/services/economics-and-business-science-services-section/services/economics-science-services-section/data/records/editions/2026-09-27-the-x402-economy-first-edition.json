@@ -86,7 +86,7 @@
         "target": "epub",
         "configuration": {
           "profile": "epub-screen-pdf-v1",
-          "editionInputDigest": "ni:///sha-256;f9ouyxX7SfoFJ9ioNlbMbz63T7vO7V1vYI8Dq6EmqmI"
+          "editionInputDigest": "ni:///sha-256;5d8G3o0sviJtvCVTJViZAEhRVHnrU8-G5RE_QhUy3bM"
         },
         "sourceSpan": {
           "type": "ArtifactFabricationSourceSpan",
@@ -101,7 +101,7 @@
         "target": "screen-pdf",
         "configuration": {
           "profile": "epub-screen-pdf-v1",
-          "editionInputDigest": "ni:///sha-256;f9ouyxX7SfoFJ9ioNlbMbz63T7vO7V1vYI8Dq6EmqmI"
+          "editionInputDigest": "ni:///sha-256;5d8G3o0sviJtvCVTJViZAEhRVHnrU8-G5RE_QhUy3bM"
         },
         "sourceSpan": {
           "type": "ArtifactFabricationSourceSpan",
@@ -116,7 +116,7 @@
         "version": 1,
         "id": "editorial-proof",
         "kind": "review",
-        "statement": "A reader other than the writer proofs the edition against its sources before it is sold.",
+        "statement": "an independent proofreading agent, not the writer",
         "sourceSpan": {
           "type": "ArtifactFabricationSourceSpan",
           "startLine": 1,
@@ -142,13 +142,13 @@
         ]
       }
     ],
-    "specificationDigest": "ni:///sha-256;A07S4ZMht4F7fPSGyZ9v0ZaotEHeIp_txnXvZRrMmiY"
+    "specificationDigest": "ni:///sha-256;XU2CbvFWvliKUmxWPL3deHSuo2OdOUyysGHH5bW1LFc"
   },
   "plan": {
     "type": "ArtifactFabricationRealizationPlan",
     "version": 1,
     "artifactId": "the-x402-economy-edition",
-    "specificationDigest": "ni:///sha-256;A07S4ZMht4F7fPSGyZ9v0ZaotEHeIp_txnXvZRrMmiY",
+    "specificationDigest": "ni:///sha-256;XU2CbvFWvliKUmxWPL3deHSuo2OdOUyysGHH5bW1LFc",
     "projectionIds": [
       "epub",
       "screen-pdf"
@@ -178,15 +178,15 @@
   "artifacts": {
     "epub": {
       "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/561-group-services-section/data/state/editions/the-x402-economy/the-x402-economy.epub",
-      "bytes": 126759,
-      "sha256": "ni:///sha-256;5CQZJgtgZ1NVMlZ5JCc5t0MLCifLueqkDNmfX4skn9Q"
+      "bytes": 126737,
+      "sha256": "ni:///sha-256;RO6SyDDHgXc142OgyxR5p0JJvPxSeNAkbNZXsESLDXs"
     },
     "screenPdf": {
       "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/561-group-services-section/data/state/editions/the-x402-economy/the-x402-economy.pdf",
-      "bytes": 193856,
-      "sha256": "ni:///sha-256;k6SoVIRxJ_VgMh7Dn0sUMJ6-K-bSg2F6ZriDbyg-yWc"
+      "bytes": 193614,
+      "sha256": "ni:///sha-256;100Gd_zH97sRwikjadHpBbQ8-ffQreVgFdgKDgIyBqw"
     },
-    "buildRecordDigest": "ni:///sha-256;jqwGdgdgopguWBgHF4WVz_lPzVwxEEZo7rMjfVcfgrU"
+    "buildRecordDigest": "ni:///sha-256;xS8DlGLKtICrOkBjS5TYQeYfYanpe5-9X8J-2ZIlYyY"
   },
   "formatEvidence": {
     "renderer": {

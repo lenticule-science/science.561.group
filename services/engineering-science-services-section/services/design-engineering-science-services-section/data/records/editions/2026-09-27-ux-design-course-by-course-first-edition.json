@@ -86,7 +86,7 @@
         "target": "epub",
         "configuration": {
           "profile": "epub-screen-pdf-v1",
-          "editionInputDigest": "ni:///sha-256;djnqt3N-4mD5QPa7WHo4vNxDUnLS6gaenQ1XAe7rDP4"
+          "editionInputDigest": "ni:///sha-256;RU3OCi7r3tktb_zDjY_1FG0tlfxS_W5htr6vjD5kxv4"
         },
         "sourceSpan": {
           "type": "ArtifactFabricationSourceSpan",
@@ -101,7 +101,7 @@
         "target": "screen-pdf",
         "configuration": {
           "profile": "epub-screen-pdf-v1",
-          "editionInputDigest": "ni:///sha-256;djnqt3N-4mD5QPa7WHo4vNxDUnLS6gaenQ1XAe7rDP4"
+          "editionInputDigest": "ni:///sha-256;RU3OCi7r3tktb_zDjY_1FG0tlfxS_W5htr6vjD5kxv4"
         },
         "sourceSpan": {
           "type": "ArtifactFabricationSourceSpan",
@@ -142,13 +142,13 @@
         ]
       }
     ],
-    "specificationDigest": "ni:///sha-256;zO4YRz5pI4zJdmLloiYKCRIfpr4P1sbZGDp0tEDlrq8"
+    "specificationDigest": "ni:///sha-256;ULWD-3J1JvkwAzCVspMn_DqZOUlpgPlFrO0foho1cQE"
   },
   "plan": {
     "type": "ArtifactFabricationRealizationPlan",
     "version": 1,
     "artifactId": "ux-design-course-by-course-edition",
-    "specificationDigest": "ni:///sha-256;zO4YRz5pI4zJdmLloiYKCRIfpr4P1sbZGDp0tEDlrq8",
+    "specificationDigest": "ni:///sha-256;ULWD-3J1JvkwAzCVspMn_DqZOUlpgPlFrO0foho1cQE",
     "projectionIds": [
       "epub",
       "screen-pdf"
@@ -178,15 +178,15 @@
   "artifacts": {
     "epub": {
       "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/561-group-services-section/data/state/editions/ux-design-course-by-course/ux-design-course-by-course.epub",
-      "bytes": 137991,
-      "sha256": "ni:///sha-256;RT5CXaL4dPyP9BvyleztiBu8U-TpySwfaBuX2gc4McY"
+      "bytes": 137992,
+      "sha256": "ni:///sha-256;Ymnj4qjbrAMDqq7S86wz1jDe95NFygEH2S04M_0TZB8"
     },
     "screenPdf": {
       "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/561-group-services-section/data/state/editions/ux-design-course-by-course/ux-design-course-by-course.pdf",
-      "bytes": 201934,
-      "sha256": "ni:///sha-256;Nlvi6A7NAay2KrYMeF_GrS1hlYYOCIXWRdQz3O16l4M"
+      "bytes": 201925,
+      "sha256": "ni:///sha-256;HWbJBq68A_99ruod0Blq0GN3ztputJxgRot8Vv9xrFE"
     },
-    "buildRecordDigest": "ni:///sha-256;VKQmYVgEizU3IVNBy2vqE-FgwxcuHBMA18M-yEgNS08"
+    "buildRecordDigest": "ni:///sha-256;dRGpsrQY1PTEPGghc3dN4C4FN0G1Znsi66qwYov0sjo"
   },
   "formatEvidence": {
     "renderer": {

@@ -14,10 +14,19 @@ other. [4]
 **Build, borrow, buy.** Organic growth; contracts and alliances; mergers and
 acquisitions. [3]
 
+**Chicken-and-egg problem.** Neither side of a platform joins without the
+other. [6]
+
 **Commitment.** A move that limits your own options to make a threat or
 promise credible. [5]
 
 **Complementor.** A player whose product makes yours more valuable. [1]
+
+**Co-opetition.** Competing and cooperating with the same player: creating
+value together, competing to divide it. [5]
+
+**Course project; published takeaway.** The work a course asks you to
+produce; what the course page says you'll be able to do. [7]
 
 **Credibility; clarity.** Believing a partner will keep its word;
 understanding what it expects. [4]
@@ -27,6 +36,9 @@ the time comes. [5]
 
 **Customer and supplier surplus.** Willingness to pay minus price; payment
 minus opportunity cost. [1]
+
+**Disintermediation.** A platform or intermediary cutting out the business
+that sold through it, or being cut out itself. [6]
 
 **Disruptive innovation.** An entrant's product that starts worse on the
 market's key measures but cheaper or simpler, with overlooked customers, and
@@ -38,6 +50,9 @@ improves until it takes the mainstream. [2]
 
 **Envelopment.** A larger platform bundling another platform's function into
 its own. [6]
+
+**Evidence; recommendation.** The facts behind each judgment in an analysis;
+the choice it leads to. [7]
 
 **Five forces.** Rivalry, new entrants, buyer power, supplier power,
 substitutes. [1]
@@ -73,6 +88,12 @@ record. [3]
 
 **PARTS.** Players, added values, rules, tactics, scope. [5]
 
+**Platform.** A business that creates value by enabling interactions between
+groups rather than by making a product itself. [6]
+
+**Platform dependence.** Relying on a platform whose fees and rules you
+don't control. [6]
+
 **Prisoner's dilemma.** A game in which each player's dominant strategy
 leaves both worse off than cooperating. [5]
 
@@ -84,6 +105,9 @@ sustained by the value of the relationship's future. [4]
 **Repeated game; tit for tat.** A game played many times; cooperating first,
 then copying the other's last move. [5]
 
+**Reputation.** What other players believe about how you'll behave, carried
+from one round of a repeated game to the next. [5]
+
 **Resistance to change.** Opposition with reasons: lost status or skill,
 doubt, or being left out. [2]
 
@@ -94,6 +118,9 @@ inimitable and non-substitutable. [1]
 [2]
 
 **Signpost.** An early sign of which scenario is unfolding. [2]
+
+**Single-side value.** A reason for one side to join a platform before the
+other side is there. [6]
 
 **Supplier opportunity cost.** The least a supplier would accept, what it
 could earn elsewhere. [1]
@@ -122,3 +149,5 @@ network effects. [6]
 complementors. [1]
 
 **Willingness to pay.** The most a customer would pay. [1]
+
+**Winner-take-all.** A market that tips to one dominant platform. [6]
