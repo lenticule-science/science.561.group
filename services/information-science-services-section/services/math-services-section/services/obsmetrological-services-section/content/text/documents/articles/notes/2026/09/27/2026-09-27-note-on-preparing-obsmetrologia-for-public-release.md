@@ -94,11 +94,15 @@ construction costs `Quot.sound` and nothing more (08-17 note, §5.1).
    `9e486934204`); and the modules that read an articulation cell as a value
    (`ArticulationMeasure`, `Valued.ofCell`) are gone, since value enters at
    positing.
-2. **Regimes are paired with corners.** `Closure/Regime.lean` still has
-   `regimeCornerBij`. Pairing each regime with a spine stage (aperiodic with
-   articulating, transfinite with predicating, Scott-continuous with positing,
-   finite with settling; math term `regime.md`) was built in `13bb572267d`
-   and reverted in `62cc23f874e` only because that session excluded Lean.
+2. **Regimes were paired with corners.** *Settled 2026-09-27.*
+   `Closure/Regime.lean` pairs each regime with a spine stage instead
+   (`Stage.regime`, `regimeStageBij`: aperiodic with articulating, transfinite
+   with predicating, Scott-continuous with positing, finite with settling),
+   and `spine_settles_in_settling_regime` and `spine_is_strict` hold by `rfl`
+   with no axioms (`3a78ce8c741`). `regimeCornerBij` and the percolation spin
+   transported across it are gone, as are the blueprint nodes resting on them.
+   The change had been built in `13bb572267d` and reverted in `62cc23f874e`
+   only because that session excluded Lean.
 3. **The four generators were listed, not derived.** Specialization,
    converse and the two projections were definitions, and `Orbital`'s
    exhaustiveness proof was used by nothing. *Fixed:*
@@ -122,7 +126,7 @@ construction costs `Quot.sound` and nothing more (08-17 note, §5.1).
    predicate or a telling against the same cell), and make measurement read
    utterances through the codec that turns a domain's evidence into them,
    keeping every witness.
-2. Re-land the stage and regime pairing.
+2. Re-land the stage and regime pairing. *Done 2026-09-27 (`3a78ce8c741`).*
 3. Make the oriented cell the spine's predicate.
 4. Make the measured composite the spine.
 5. Seat the root identification as the biextensional collapse of the measured
