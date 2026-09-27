@@ -237,7 +237,9 @@ Equate period-3 recurrence with categorical idempotence, laying ground for its a
   (let ((ok (period-3? d)))
     (list (cons 'assumes-period-3 ok)
           (cons 'yields-adjoint-idempotence
-                (and ok 'phase-ii-functor-T)))))
+                (and ok 'phase-ii-functor-T))
+          (cons 'explanation
+                "Period-3 recurrence encodes an endofunctor T with T³≈Id; Phase II formalizes it."))))
 ```
 
 # 11 Exports for Phase I {#exports-for-phase-i}

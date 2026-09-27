@@ -824,4 +824,6 @@ $$ **Proof.** By Beck–Chevalley for $\Pi^{→}_*\dashv\Diamond_*$. ∎
 
 We began with a plain statement: **to claim that something exists is not trivial**. Tracing its consequences through the logic of relation has shown that existence, once cohered, necessarily stabilizes into a modal geometry that contains and measures itself. This terminal stability—meta-reflexive idempotence—is the categorical meaning of quantum discreteness: a universe that can only reflect itself finitely.
 
+$$\boxed{\text{Existence is sustained relation;} \quad \text{Quantization is its self-reflection closed.}}$$
+
 \\
