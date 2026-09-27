@@ -11,6 +11,8 @@ aliases:
 
 # Institution
 
+The predicated-governance reading of the general [institution](../../../../../../../../../../../content/text/glossary/terms/institution.md) term: its data, when it is operative, and how its constitutive rules fire.
+
 The mathematical realization of an [institution](../../../../../../governance-services-section/content/glossary/terms/institution.md) per the library's quintuple definition: a system of *constitutive rules* of the form "X counts as Y in context C" maintained by collective recognition. Per Searle's [status-function-declaration](../../../../../../governance-services-section/content/text/glossary/terms/status-function-declaration.md), institutions create institutional facts by collective acceptance.
 
 The aggregated recognition cell $\mathrm{Rec}_\tau(I)$ is $\leq_k$-monotone: once it reaches $\mathbf{t}$ (enough members are providing recognition), settling-monotonicity ensures it stays there until potential retraction.
