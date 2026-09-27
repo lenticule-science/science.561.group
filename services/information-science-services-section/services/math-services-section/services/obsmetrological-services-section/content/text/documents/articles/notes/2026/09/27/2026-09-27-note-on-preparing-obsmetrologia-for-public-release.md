@@ -156,3 +156,174 @@ Lean packages on top of the core, as `WeiqiObsmetrologia` already is.
 - the lineage census clean;
 - no `Unit` carriers and no `leanok` outside the law;
 - the manual building against the library.
+
+## Packaging and presentation
+
+The library is licensed Apache-2.0, the license of Lean and Mathlib. The
+license text is at `lib/obsmetrologia/LICENSE`, and `lakefile.toml` and
+`package.json` carry the identifier.
+
+### What is strange, and why it can be believed
+
+The program is ambitious far beyond what a new library usually claims. It
+says one relational foundation generates:
+
+- logic and order;
+- category theory;
+- sheaf cohomology;
+- aperiodic order;
+- causal sets;
+- quantum contextuality;
+- kinetic theory.
+
+Ambition like that is usually unbelievable because it arrives as prose.
+This library can be believed for a different reason: its foundational
+commitments are **axiom-level facts that a machine reports**.
+
+- *No `propext`* means that nowhere is it assumed that mutually entailing
+  propositions are equal. By the 08-17 note, §2, that is the statement that
+  the logic's own propositions are not presumed to form a poset.
+- *One `Quot.sound`, at the root* means that identity is only ever
+  identification by measured indistinguishability.
+
+`#print axioms` on any theorem shows whether that theorem keeps those
+commitments. So the release makes each claim's standing visible, and it
+does not ask for trust.
+
+That standing is derived, not declared. The census instruments in
+`obsmetrologia-theorem-audit` compute three measures per theorem:
+
+- its axiom profile;
+- the number of identifications it inherits;
+- its lineage to the spine.
+
+The README and the manual print those measures, generated at build time.
+No page carries a hand-written grade.
+
+### Three kinds of claim
+
+The manual's Page Law (`BookI/PageLaw`, and the root of
+`ObsmetrologiaManual.lean`) already sorts claims by phase and frontier.
+The public package presents that sorting as three kinds:
+
+1. **Proved.** Lean theorems under the axiom law, each shown with its
+   measured profile.
+2. **Recovered.** Familiar mathematics reached as a *comparison* rather
+   than assumed. This is where a working mathematician enters. Examples:
+   - Belnap–Dunn FOUR and the Klein-four gauge;
+   - the Knaster–Tarski least fixed point;
+   - the Lawvere fixed-point theorem, as `no_boolean_self_quotation`;
+   - CALM monotone coordination-freedom;
+   - the 1+1 Minkowski light cone, whose component group `{1, P, T, PT}`
+     is the gauge of FOUR (`LightCone`).
+3. **Frontier.** The absurdly ambitious claims ship as stated open
+   problems. Each is a `Prop` with what would promote it and what would
+   refute it, in the Frontier Lab's form (the 09-21 note's void-dimension
+   claim; the Collatz barrier). None ships as a `sorry` or as prose. The
+   ambition stays on the page and the proof record stays clean.
+
+### Flagship results
+
+Each of these is present in the library, is checkable in an afternoon, and
+shows the program's character. The first public README leads with them,
+each with its `#print axioms` line:
+
+- `Orbital.orbital_exhaustive`: from four entities on, every naturally
+  defined reindexing of an oriented pair is one of four generators.
+  `thirdMap_not_orbital` shows that at exactly three entities there are
+  nine, because a pair can then name its complement. Predication forces
+  FOUR because the utterance has two hands. This is the cleanest standalone
+  paper in the library.
+- `LightCone.kle_iff_lightcone` and `k4_is_PT`: the knowledge order is the
+  causal order of a 1+1 diamond. Negation is parity and conflation is time
+  reversal.
+- `Record.bottom_reflecting_hom_eq_reading` and
+  `record_escapes_strict_finite`: the four-valued reading is the forced
+  collapse of evidence counts, and the finite settling regime is an
+  artefact of boundedness.
+- `Settling.asserted_liar_settles_kTop`: the liar, once asserted, settles
+  at told-both instead of exploding.
+- `measure_cons_le`: evidence has an arrow of time.
+- The root identification, once seated (ordered work, A.5).
+
+### The non-western grounding, stated so it holds
+
+**The claim.** The corpus describes this as mathematics derived from
+relational rather than substantival principles. The claim is that the
+foundation begins where the relational derivation begins:
+
+- Articulating relationlessness produces relation, and entities are
+  constituted by their relations
+  ([On Relationality](../../../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/documents/articles/notes/on-relationality.md)).
+- A mark has no identity but its role.
+- Contradiction is held as told-both, not exploded.
+- Knowledge is witnessed, never declared, and only grows.
+
+Standard mathematics then appears as what that foundation recovers. That
+is the precise sense in which it is a reformation. It is a different
+starting point whose consequences are checked, not a restyling of familiar
+results.
+
+**Precedents.** The package cites independent precedent openly instead of
+claiming novelty for the four-cornered structure. Nāgārjuna's catuṣkoṭi
+(affirmation, denial, both, neither;
+[Buddhist logic](../../../../../../../../../../../../../philosophy-services-section/services/buddhist-services-section/content/text/documents/articles/notes/buddhist-logic.md))
+is the same four-point space. Priest ("The Logic of the Catuṣkoṭi",
+*Comparative Philosophy* 1(2), 2010) reads it as First Degree Entailment,
+the Belnap–Dunn logic whose algebra is FOUR.
+
+**Where the tradition stays.** The library carries *principles and
+mathematics*, never a tradition's substance. The Lakota section's rule
+([README](../../../../../../../../../../../../../philosophy-services-section/services/lakota-services-section/README.md))
+states it: the substantive tradition is held by its knowledge holders in
+living tradition, and the formal apparatus is a tool, never the tradition.
+The [Book of Changes](../../../../../../../../../../../../../philosophy-services-section/services/dao-services-section/content/text/documents/articles/books/2026-book-of-changes.md)
+states the same stance for the Yijing: "offered to the tradition and not
+in its place".
+
+**Cultural formalizations are not library modules.** This covers Lakota
+governance, the Yijing and beadwork. They stay out of the public library,
+as the section README already requires for applications. They follow the
+protocols the
+[ethnomathematics survey](../../06/26/2026-06-26-survey-of-ethnomathematics.md)
+sets out:
+
+- consent and community review;
+- CARE and Local Contexts labelling;
+- respect for refusal.
+
+The survey's warning applies with full force to a formal library: formal
+correctness does not prevent extraction, and publishing a pattern archive
+as data can repeat colonial collection under a technical name.
+
+### Artefacts and channels
+
+**Repository.** Split `lib/obsmetrologia` with its history (`git subtree
+split`) into a public GitHub repository whose root is the Lake package.
+Lean Reservoir indexes public GitHub repositories that have a root Lake
+package and an OSI license; `homepage` in `lakefile.toml` is set once the
+repository exists.
+
+**Packages.** The core `Obsmetrologia` is one package. The domain books
+that ordered-work step C moves out become sibling packages that require
+it.
+
+**The book.** Publish the Verso manual as the primary reading surface and
+the blueprint's dependency graph beside it. Add a `CITATION.cff`.
+
+**Papers**, in order of readiness:
+
+1. The orbital theorem with its three-entity counterexample.
+2. The axiom discipline as foundations: `propext` as antisymmetry of
+   `Prop`, one-quotient foundations, and identification sites as a
+   per-theorem measure.
+3. FOUR as the 1+1 light cone.
+4. Colour as a finite observable of aperiodic order, from the existing
+   [paper seed](../../06/26/2026-06-26-public-paper-seed-color-as-finite-observable-of-aperiodic-order.md).
+
+The venues are arXiv (math.LO / cs.LO) and the Lean community's Zulip.
+
+**When to go public.** A research preview can open once ordered-work step A
+lands and the README prints generated status. The preview shows the
+axiom-law ratchet falling in public, which is itself the most persuasive
+evidence the project has. 1.0 is the release criteria above.

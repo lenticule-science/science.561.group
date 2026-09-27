@@ -1,5 +1,8 @@
 name = "Obsmetrologia"
 defaultTargets = ["Obsmetrologia"]
+description = "A dependency-free Lean 4 library deriving mathematics from marks uttered as token and claim, under an axiom law that admits only Quot.sound."
+keywords = ["math", "paraconsistent-logic", "bilattice", "category-theory", "sheaf-cohomology", "foundations"]
+license = "Apache-2.0"
 
 [leanOptions]
 autoImplicit = false

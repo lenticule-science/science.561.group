@@ -3,10 +3,12 @@
   "version": "0.1.1",
   "type": "module",
   "description": "Obsmetrologia's dependency-free Lean 4 library of pure mathematics generated from its mathematical corpus.",
+  "license": "Apache-2.0",
   "engines": {
     "node": ">=24.0.0"
   },
   "files": [
+    "LICENSE",
     "Obsmetrologia.lean",
     "Obsmetrologia/",
     "docs/blueprint/README.md",
