@@ -1,0 +1,168 @@
+{
+  "type": "EbookEditionProof",
+  "version": 1,
+  "editionInputDigest": "ni:///sha-256;Ex0nOKRFcqmIWpD6Dx6K0EC9BtUeCnlM8bDW2f0r5OY",
+  "artifacts": {
+    "epub": "ni:///sha-256;_sGFN9c7mMjeitu2zAjWKqqxNzSUUxRpEi8j_oEv1BI",
+    "screenPdf": "ni:///sha-256;wlWiOdp9hvDfrXw8G9mZD_oKLlvGuVks0bw8h9x01j0"
+  },
+  "proofer": "independent proofreading agent (claude-opus-5-5 subagent)",
+  "writer": "claude-opus-5-5 (bare-cedar-fog-claude session d6271b1b)",
+  "provedAt": "2026-09-28T00:05:00Z",
+  "method": "Diffed this edition's full text byte-for-byte against the prior verified edition to confirm the only changes were the build record hash and the glossary's Escalation entry, then read the updated line in both the rendered text and 11-glossary.md to confirm it matches the coordinator's description and correctly distinguishes the dependency-blocker sense [5] from the risk-response sense [4]. This pass supersedes the prior one only for f17; findings f1-f16 were re-confirmed unaffected since no other text changed.",
+  "findings": [
+    {
+      "id": "f1",
+      "file": "02-initiation.md",
+      "severity": "error",
+      "claim": "Then analyze them. A common tool, which Aubrey Mendelow described for strategic planning in 1981, places each stakeholder on two axes...",
+      "source": "Mendelow's actual 1981 paper used power/dynamism axes; the power/interest grid is Johnson and Scholes' 1993 adaptation.",
+      "fix": "Verified fixed. 02-initiation.md now reads: 'A common tool is the power-interest grid, which Gerry Johnson and Kevan Scholes adapted from a matrix Aubrey Mendelow described for strategic scanning (Mendelow 1981; Johnson and Scholes 1993).' 09-the-capstone.md's citation now reads '(Johnson and Scholes 1993)'. A johnson-scholes1993 entry (Exploring Corporate Strategy, Prentice Hall, 1993) was added to 00-about-this-book.md's frontmatter and appears correctly in the rendered References list; the mendelow1981 entry is correctly retained since Mendelow is still credited as the model Johnson and Scholes adapted.",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f2",
+      "file": "05-execution-tracking-and-quality.md",
+      "severity": "error",
+      "claim": "EAC = 11,500 / 0.91 ≈ $12,650, beyond even the $12,000 total budget.",
+      "source": "11,500 / 0.91 = 12,637.36, not 12,650; the displayed rounded divisor didn't reproduce the displayed result.",
+      "fix": "Verified fixed. The line now reads 'EAC = 11,500 / (5,000 / 5,500) = 11,500 × 1.1 = $12,650', which is exact (11,500 × 1.1 = 12,650 precisely) and no longer relies on the rounded 0.91.",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f3",
+      "file": "05-execution-tracking-and-quality.md",
+      "severity": "correction",
+      "claim": "ask \"How likely are you to recommend us to a friend?\" — presented as a verbatim quote but actually a paraphrase.",
+      "source": "Reichheld's real question is 'How likely is it that you would recommend [company/product/service] to a friend or colleague?'",
+      "fix": "Verified fixed. The line now reads 'ask how likely the respondent is to recommend the organization to a friend or colleague, on a scale of 0 to 10' — no quotation marks, and 'or colleague' restored. The evidence packet's new source-table row for Net Promoter Score also carries the accurate quoted question, matching what was verified against Reichheld 2003.",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f4",
+      "file": "02-initiation.md",
+      "severity": "correction",
+      "claim": "Chapter 2's cost-benefit/worth-starting objective was untested in Check yourself.",
+      "source": "House pedagogy note's constructive-alignment rule.",
+      "fix": "Verified fixed. New question 8 and answer 8 added: 'A second pantry site would cost $8,000 and 300 volunteer hours and would let 40 more families get food each week. How should the sponsor decide whether it's worth doing?' The answer correctly applies the chapter's own teaching (comparing cost against a non-monetary benefit, no ROI to compute, sponsor judgment) with no new arithmetic to verify.",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f5",
+      "file": "05-execution-tracking-and-quality.md",
+      "severity": "correction",
+      "claim": "Chapter 5's dependency-types/escalation objective was untested in Check yourself.",
+      "source": "House pedagogy note's constructive-alignment rule.",
+      "fix": "Verified fixed. New question 8 and answer 8 added: 'Shelving delivery can't start until the order is placed. What kind of dependency is that? ... What should the project manager do?' Answer: 'Finish-to-start. Escalate early...' Correctly identifies the dependency type (order must finish before delivery starts = finish-to-start) and correctly applies the chapter's escalation guidance from section 5.4.",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f6",
+      "file": "06-execution-people-and-closing.md",
+      "severity": "correction",
+      "claim": "Chapter 6's inclusion/ethics objective was untested in Check yourself.",
+      "source": "House pedagogy note's constructive-alignment rule.",
+      "fix": "Verified fixed. New question 8 and answer 8 added, testing both halves of the objective at once: crediting a quiet volunteer's idea to someone else raises fairness, honesty and respect under the PMI code, and the fix (correct the record, make room for quieter people) matches section 6.4's own guidance.",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f7",
+      "file": "07-agile-and-scrum.md",
+      "severity": "correction",
+      "claim": "Chapter 7's Agile-vs-Waterfall/hybrid objective was untested in Check yourself.",
+      "source": "House pedagogy note's constructive-alignment rule.",
+      "fix": "Verified fixed. New question 8 and answer 8 added (clinic renovation vs. check-in app); the answer correctly assigns predictive to the fixed-plan renovation, adaptive to the reviewable app, and names the combination a hybrid, matching section 7.3.",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f8",
+      "file": "04-planning-budget-risk-communication.md",
+      "severity": "correction",
+      "claim": "\"...asks vendors to propose how they'd meet a need.\" — banned ambiguous contraction.",
+      "source": "House style guide bans 'there'd, it'll, they'd'.",
+      "fix": "Verified fixed. Now reads 'asks vendors to propose how they would meet a need.' A full-text scan of the new edition found zero instances of there'd/it'll/they'd/who'd anywhere.",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f9",
+      "file": "01-foundations.md",
+      "severity": "correction",
+      "claim": "\"communicating clearly\" — banned weak adverb.",
+      "source": "House style guide's adverbs-to-avoid list.",
+      "fix": "Verified fixed. Now reads 'communicating well'. A full-text scan of the new edition against the entire banned-adverb list (clearly, completely, exceedingly, extremely, fairly, huge, interestingly, largely, literally, mostly, quite, relatively, remarkably, several, significantly, substantially, surprisingly, tiny, various, vast, very) returned zero hits.",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f10",
+      "file": "08-agile-in-practice.md",
+      "severity": "correction",
+      "claim": "\"Over several sprints\" — banned weak adverb/quantifier.",
+      "source": "House style guide's adverbs-to-avoid list includes 'several'.",
+      "fix": "Verified fixed. Now reads 'Over its last few sprints', which still fits the chapter's own three-sprint velocity example (4, 3, 5 points).",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f11",
+      "file": "07-agile-and-scrum.md",
+      "severity": "note",
+      "claim": "\"seventeen people who'd developed those methods\" — same would/had ambiguity class as the explicitly banned contractions.",
+      "source": "House style guide's ambiguous-contraction examples.",
+      "fix": "Verified fixed. Now reads 'seventeen people who had developed those methods'.",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f12",
+      "file": "00-about-this-book.md",
+      "severity": "note",
+      "claim": "roediger2006 reference entry was missing its issue number.",
+      "source": "Roediger and Karpicke 2006 is Psychological Science 17(3), not just volume 17.",
+      "fix": "Verified fixed. The frontmatter's roediger2006 entry now carries \"issue: \\\"3\\\"\", and the rendered References list shows 'Psychological Science 17 (3): 249–55.'",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f13",
+      "file": "00-about-this-book.md",
+      "severity": "note",
+      "claim": "\"Over 100 hours\" vs. the certificate's 142 total hours was never bridged for the reader.",
+      "source": "The evidence packet's own reading: the job-search course and other material need not count toward PMI's hours.",
+      "fix": "Verified fixed. Section 0.2 now adds: 'Not every course hour counts (the job-search course, for one, isn't project management education), but the certificate clears PMI's requirement with room to spare.'",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f14",
+      "file": "00-about-this-book.md",
+      "severity": "note",
+      "claim": "The evidence packet didn't source Mendelow, Edmondson, Deming, Reichheld, Tufte, Clegg and Barker, or Ries, though the book cites all of them.",
+      "source": "The evidence packet's own 'independent sources' table and reference list.",
+      "fix": "Verified fixed. The evidence packet's source table now has rows for the power-interest grid (correctly crediting Johnson and Scholes 1993 adapting Mendelow's power-dynamism matrix, and noting the common misattribution), psychological safety (Edmondson 1999), PDCA/PDSA (Deming 1986), Net Promoter Score (Reichheld 2003, with the accurate quoted question matching what this proof verified against the real source), presenting data (Tufte 2001), MVP/MoSCoW (Ries 2011; Clegg and Barker 1994), emotional intelligence components (Goleman 1995, with a separate correctly-dated 1998 HBR citation for a five-component list the book itself does not use), and risk responses (PMI's five threat and five opportunity responses, matching real PMBOK guidance). No contradictions found between the packet's new rows and the book's actual text.",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f15",
+      "file": "03-planning-the-schedule.md",
+      "severity": "note",
+      "claim": "Chapter 3's \"four ways\" of estimating objective was tested only by the three-point method.",
+      "source": "House pedagogy note's constructive-alignment rule.",
+      "fix": "Verified fixed. New question 8 and answer 8 added: 'One volunteer sorts 40 boxes an hour, and 600 boxes arrive... 600 / 40 = 15 volunteer-hours', correctly exercising parametric estimating (recomputed: 600/40=15, correct).",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f16",
+      "file": "09-the-capstone.md",
+      "severity": "note",
+      "claim": "Chapter 9's portfolio-for-job-search objective was untested in Check yourself.",
+      "source": "House pedagogy note's constructive-alignment rule.",
+      "fix": "Verified fixed. New question 8 and answer 8 added: 'What goes in a portfolio's one-page index?' Answer matches section 9.7's own guidance exactly.",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f17",
+      "file": "11-glossary.md",
+      "severity": "note",
+      "claim": "Escalation. Asking someone with more authority to resolve a blocker. [5]",
+      "source": "11-glossary.md was not updated when 04-planning-budget-risk-communication.md added PMI's fifth risk response, 'escalate' (an unfixed side effect of the f5/f14 fixes). The glossary's only 'Escalation' entry still cited just chapter 5 (the dependency-blocker sense from section 5.4) and defined it only in blocker terms, not in the risk-response sense chapter 4 teaches (passing a risk outside the project's authority to whoever owns it).",
+      "fix": "Verified fixed. Byte-for-byte diff against the prior edition shows exactly two changes: the build record hash and this entry, now reading (both in the rendered text and in 11-glossary.md line 56-57): 'Escalation. Asking someone with more authority to resolve a blocker [5]; as a risk response, passing a risk outside the project's authority to whoever owns it [4].' This correctly distinguishes and tags both senses. No other content changed in this edition.",
+      "resolution": "fixed"
+    }
+  ]
+}

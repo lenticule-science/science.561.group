@@ -1,0 +1,35 @@
+{
+  "type": "EbookEditionAcceptance",
+  "version": 1,
+  "status": "accepted",
+  "editionInputDigest": "ni:///sha-256;Ex0nOKRFcqmIWpD6Dx6K0EC9BtUeCnlM8bDW2f0r5OY",
+  "artifacts": {
+    "epub": {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/561-group-services-section/data/state/editions/project-management-course-by-course/project-management-course-by-course.epub",
+      "bytes": 162795,
+      "sha256": "ni:///sha-256;_sGFN9c7mMjeitu2zAjWKqqxNzSUUxRpEi8j_oEv1BI"
+    },
+    "screenPdf": {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/561-group-services-section/data/state/editions/project-management-course-by-course/project-management-course-by-course.pdf",
+      "bytes": 256507,
+      "sha256": "ni:///sha-256;wlWiOdp9hvDfrXw8G9mZD_oKLlvGuVks0bw8h9x01j0"
+    },
+    "buildRecordDigest": "ni:///sha-256;tRs97MktzwkGptPh2gacoAgfEkB6UgLo0tbO1D4q-BM"
+  },
+  "closedObligationIds": [
+    "editorial-proof"
+  ],
+  "pendingAcceptanceObligationIds": [],
+  "proof": {
+    "digest": "ni:///sha-256;iKINVMQXy9g-Kzo1mt1fBTtQad-DnsCswCfTP3463UE",
+    "proofer": "independent proofreading agent (claude-opus-5-5 subagent)",
+    "provedAt": "2026-09-28T00:05:00Z",
+    "method": "Diffed this edition's full text byte-for-byte against the prior verified edition to confirm the only changes were the build record hash and the glossary's Escalation entry, then read the updated line in both the rendered text and 11-glossary.md to confirm it matches the coordinator's description and correctly distinguishes the dependency-blocker sense [5] from the risk-response sense [4]. This pass supersedes the prior one only for f17; findings f1-f16 were re-confirmed unaffected since no other text changed.",
+    "findings": {
+      "errors": 2,
+      "corrections": 8,
+      "notes": 7
+    }
+  },
+  "acceptedAt": "2026-09-27T21:41:06.235Z"
+}

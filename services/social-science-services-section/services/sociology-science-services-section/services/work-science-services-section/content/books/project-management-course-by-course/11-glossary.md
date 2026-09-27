@@ -53,8 +53,9 @@ sets the project's duration. [3]
 
 **Epic.** A backlog item too large for one sprint, split into stories. [8]
 
-**Escalation.** Asking someone with more authority to resolve a blocker.
-[5]
+**Escalation.** Asking someone with more authority to resolve a blocker
+[5]; as a risk response, passing a risk outside the project's authority to
+whoever owns it [4].
 
 **Estimate at completion (EAC).** A forecast of total cost: BAC / CPI if
 current performance continues, or AC + (BAC − EV) if the variance was a
