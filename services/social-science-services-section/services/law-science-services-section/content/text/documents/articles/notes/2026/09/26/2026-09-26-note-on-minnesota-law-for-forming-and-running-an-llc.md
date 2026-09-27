@@ -243,7 +243,14 @@ state they accept non-US owners with a passport (search synthesis;
   gambling, cannabis retail and others), not businesses generally
   ([City of Duluth business licensing](https://duluthmn.gov/city-clerk/licenses-permits/business-licensing/)).
 
-## 13. Free help
+## 13. An office outside Minnesota
+
+The registered office must be in Minnesota (5.36); the principal executive
+office may be anywhere (322C.0102, subd. 21). A company whose office is in
+another state registers there too; the Superior case is worked in
+[a Minnesota LLC with an office in Wisconsin](2026-09-26-note-on-a-minnesota-llc-with-an-office-in-wisconsin.md).
+
+## 14. Free help
 
 - Northland Small Business Development Center, 202 W Superior St, Suite 800,
   Duluth; 218-740-7307; free, confidential consulting for St. Louis and six
