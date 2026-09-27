@@ -26,7 +26,6 @@ ast:
         - data-flow
 defines: Workflow
 related: Plan, Procedure, Process, Orchestration, PetriNet, BPELProcess
-date-modified: 2026-03-20
 ---
 
 A workflow is a composition of [work](./work.md) units with one algebraic constraint: the initial input type equals the final output type. The workflow takes something of type X and produces something of type X, regardless of what happens internally. The internal structure is unconstrained — flat sequence, branching web, parallel paths, nested sub-workflows. What matters is the boundary: same type in, same type out.

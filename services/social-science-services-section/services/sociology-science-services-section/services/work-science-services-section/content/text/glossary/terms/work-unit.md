@@ -3,7 +3,7 @@
 name: "Work Unit"
 description: "A concrete, fully specified instance of work — all parameters bound, one operation, one output. The most atomic executable thing in the work hierarchy."
 date-created: 2026-03-18
-date-modified: 2026-04-03
+date-modified: 2026-09-27
 extends: Work
 component-of: OperationItem
 id: work-unit
@@ -22,6 +22,33 @@ The defining property is **complete specification**. A work unit names:
 - **What parameters govern execution** — the concrete values that distinguish this instance from any other
 
 A task like "review the dispatch survey" is a work unit: the input (dispatch survey), the operation (review), and the expected output (review findings) are all specified. A task like "improve the documentation" is not a work unit — it leaves the operation and scope open.
+
+## Structure
+
+A work unit is characterized by four things:
+
+- **domain**: the type of object the work acts on, what goes in;
+- **affected**: the aspect or attribute of the domain that changes, since
+  the work does not change everything;
+- **operation**: how the change is produced, a skill of one of the four
+  kinds or a named operation;
+- **parameters**: the values that make this instance distinct. Two work units
+  with the same domain, affected aspect and operation but different
+  parameters are different work units.
+
+Without parameters it is a template, and a template is a skill definition, not
+a work unit. A work unit instantiates a skill:
+
+```
+skill:       write-unit        (the operation)
+domain:      math/             (what it acts on)
+affected:    corpus            (what changes)
+parameters:  {id: "fiber-algebra", description: "..."}
+```
+
+that is, apply write-unit to math/, producing a new unit with these
+parameters. "Fix something in math/" names no domain type and is not a work
+unit; "reform the frontmatter of math/fiber-algebra.md" is.
 
 ## Relationship to tasks
 
@@ -59,7 +86,7 @@ The mathematical invariant comes from universal algebra and the theory of free a
 
 The hierarchy:
 
-- **[Operation](operation.md)** is an operation symbol ω ∈ Σ with arity n — the abstract type.
+- **[Operation](../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/operation.md)** is an operation symbol ω ∈ Σ with arity n — the abstract type.
 - **[Work](./work.md)** is an application ω(a₁,...,aₙ) where the aᵢ may be variables — the operation being enacted.
 - **WorkUnit** is a ground application ω(c₁,...,cₙ) where every cᵢ is a closed, concrete value — T(Σ, ∅). No variables remain.
 
