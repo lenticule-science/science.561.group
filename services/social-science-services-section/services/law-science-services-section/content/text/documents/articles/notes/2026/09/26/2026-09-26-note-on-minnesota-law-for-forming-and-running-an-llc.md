@@ -230,6 +230,54 @@ state they accept non-US owners with a passport (search synthesis;
 [Mercury eligibility](https://support.mercury.com/hc/en-us/articles/28770467511060-Eligibility);
 [Bluevine](https://www.bluevine.com/blog/introducing-bluevine-for-international-business-owners)).
 
+### Without a photo ID
+
+The rule lets a bank verify identity by documents, by non-documentary methods
+(checking the information given against a consumer reporting agency, public
+database or references from other financial institutions), or both, and
+requires it to say what it does when a person cannot present an unexpired
+government-issued photo ID (31 CFR 1020.220(a)(2)(ii)) **(primary:
+[31 CFR 1020.220](https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1020/subpart-B/section-1020.220))**.
+A person who already holds an account at the institution, which the
+institution reasonably believes it has identified, is not a new "customer"
+for the identification program (31 CFR 1020.100(b)(2)(iii)). A company's
+account is a new customer, but an existing account holder who owns and runs
+it is someone the institution has already identified. Whether a given
+institution opens the company's account on that basis is its own policy.
+Fidelity's business brokerage account (the Fidelity Account for Businesses)
+is opened on a paper application, mailed or taken to a branch, with the
+filed articles, and existing customers are processed faster
+([Fidelity](https://www.fidelity.com/open-account/fidelity-account-for-businesses);
+[application](https://www.fidelity.com/bin-public/060_www_fidelity_com/documents/new-fidelity-account-business-application.pdf)).
+
+### Getting a Minnesota ID
+
+Minnesota issues a standard driver's license or ID card (not REAL ID) without
+proof of immigration status since 2023, on **two primary documents, or one
+primary and one secondary** **(primary:
+[Driver's License for All document list, 2025-02-21](https://assets.dps.mn.gov/files/dvs/dvs-standard-required-docs.pdf))**:
+
+- **Primary** (name and date of birth): an unexpired passport from any
+  country; an unexpired consular ID with photo; a certified birth record from
+  any jurisdiction (a state birth certificate, a foreign birth certificate, a
+  consular report of birth abroad); a certified adoption certificate; an
+  unexpired tribal identification card with security features; USCIS
+  documents (naturalization or citizenship certificate, permanent resident
+  card, employment authorization, American Indian card I-872 and others); a
+  US Defense Department ID; a Canadian naturalization certificate.
+- **Secondary**: a Social Security card; an IRS document showing an ITIN; an
+  expired government photo ID (five years or less); a certified school
+  transcript with full name and date of birth; a certified marriage
+  certificate or court order; a Minnesota property tax statement or a deed or
+  mortgage for the applicant's residence; a health benefits or assistance
+  program card; a Minnesota vehicle title; a Selective Service card; and
+  others on the list.
+
+So a Social Security card and a certified birth certificate, ordered from the
+vital records office of the state or country of birth, are enough. A
+standard ID serves for banking; REAL ID matters only for federal purposes such
+as boarding domestic flights.
+
 ## 12. After formation: Minnesota taxes and local licenses
 
 - **Sales tax.** Minnesota taxes specified digital products, including
