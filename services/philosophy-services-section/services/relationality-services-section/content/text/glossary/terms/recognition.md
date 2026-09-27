@@ -2,9 +2,10 @@
 name: "Recognition"
 description: "The act by which a system registers an act as fitting a category — the form-side counterpart to witnessing's evidence-side. Where witnessing records what evidence has been gathered for or against a particular claim, recognition records that the claim has been recognized as the kind of claim it is, within the system's vocabulary of categories."
 date-created: 2026-04-29
+date-modified: 2026-09-27
 ---
 
-**Recognition** in the [relationality](../_index.md) framework is the act by which a system registers an act as fitting a category. Where [witnessing](../../../../services/agency-services-section/content/text/documents/articles/notes/undated/witnessing.md) is the evidence-side act — recording that a claim has been affirmed or denied — recognition is the form-side act: registering that the claim has been recognized *as the kind of claim it is*.
+**Recognition** in the [relationality](../../../../README.md) framework is the act by which a system registers an act as fitting a category. Where [witnessing](../../../../services/agency-services-section/content/text/documents/articles/notes/undated/witnessing.md) is the evidence-side act — recording that a claim has been affirmed or denied — recognition is the form-side act: registering that the claim has been recognized *as the kind of claim it is*.
 
 The two are distinct and both required for full settlement. A witnessing without recognition is uncategorized evidence: data that has been recorded but not classified into the system's normative or institutional vocabulary. A recognition without witnessing is the type-claim without the token-evidence: the system has acknowledged that this *kind* of claim is in scope, but has not yet recorded any evidence about whether *this particular* claim is true or false.
 
@@ -24,18 +25,19 @@ But recognition is not exclusively institutional. The framework treats any act o
 
 Recognition in this framework should not be conflated with acknowledgment in the everyday sense. Acknowledging something is, ordinarily, asserting one's awareness of it. Recognition in the framework's sense is more specific: it is the structural act of registering the claim as an instance of a known kind. Two parties may both acknowledge a claim without either recognizing it in the framework's sense; recognition requires the system's category vocabulary to be applied, not just an assertion of awareness.
 
-This distinguishes the framework's *recognition* from the recognition-as-acknowledgment that figures in some social-theoretic literature (Hegel, Honneth, Taylor). Those traditions analyze recognition as inter-subjective acknowledgment — one subject affirming another. The framework's recognition is a structural act on the side of category-registration; it can coincide with inter-subjective acknowledgment but does not reduce to it.
+This distinguishes the framework's *recognition* from the recognition-as-acknowledgment that figures in some social-theoretic literature (Hegel, Honneth, Taylor), and from the [politics of recognition](../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/recognition.md) that Coulthard and Simpson critique. Those traditions analyze recognition as inter-subjective acknowledgment — one subject affirming another. The framework's recognition is a structural act on the side of category-registration; it can coincide with inter-subjective acknowledgment but does not reduce to it.
 
 ## Recognition and settlement
 
-A claim's [settlement](settlement.md) position — its joint coordinate on the truth and knowledge axes — is built up through both witnessing and recognition. Recognition contributes the form: that the claim is the kind of claim that admits this kind of evidence, this kind of denial, this kind of further inquiry. Witnessing contributes the substance: that the evidence has been recorded, in this direction, at this amount.
+A claim's [settlement](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/settlement.md) position — its joint coordinate on the truth and knowledge axes — is built up through both witnessing and recognition. Recognition contributes the form: that the claim is the kind of claim that admits this kind of evidence, this kind of denial, this kind of further inquiry. Witnessing contributes the substance: that the evidence has been recorded, in this direction, at this amount.
 
 A claim's full settlement requires both: the form must be recognized for the evidence to count, and the evidence must be witnessed for the recognized form to receive a determinate truth-axis position. The framework's mathematical layer encodes recognition as one of the two predicates whose joint settlement constitutes determination — the *recognition predicate*, alongside the *execution* (or *performance*) predicate that witnessing settles.
 
 ## See also
 
 - [Witnessing](../../../../services/agency-services-section/content/text/documents/articles/notes/undated/witnessing.md) — the evidence-side act paired with recognition.
-- [Settlement](settlement.md) — the joint structure that recognition and witnessing together produce.
+- [Settlement](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/settlement.md) — the joint structure that recognition and witnessing together produce.
 - [Relating](relating.md) — the activity within which both acts occur.
-- [Inquiry](inquiry.md) — the broader process that drives both forward.
+- [Inquiry](../../../../../../content/text/glossary/terms/inquiry.md) — the broader process that drives both forward.
 - [Relational state](relational-state.md) — the configuration shaped by accumulated recognitions.
+- [Recognition (politics of)](../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/recognition.md) — the political sense, a different term.
