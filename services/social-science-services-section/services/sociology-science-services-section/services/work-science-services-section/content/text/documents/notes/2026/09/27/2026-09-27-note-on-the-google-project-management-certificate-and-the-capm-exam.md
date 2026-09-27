@@ -364,6 +364,15 @@ write their own questions.
 | User stories, INVEST | Cohn [@cohn2004]; Wake [@wake2003] |
 | Retrospectives | Kerth [@kerth2001]; this section's review survey |
 | Ethics | PMI's Code of Ethics and Professional Conduct [@pmi-code-of-ethics]: responsibility, respect, fairness, honesty |
+| Process groups, knowledge areas | *Process Groups: A Practice Guide* (PMI, 2022), on the CAPM reference list |
+| Principles, performance domains, EEFs and OPAs, push/pull/interactive communication | *PMBOK Guide*, 7th edition (PMI, 2021) |
+| Requirement types, elicitation, traceability | *The PMI Guide to Business Analysis* (PMI, 2017) |
+| Life cycle types, servant leadership | *Agile Practice Guide* (PMI and Agile Alliance, 2017) |
+| Extreme Programming | Beck and Andres, *Extreme Programming Explained*, 2nd edition (2004) |
+| SAFe | Scaled Agile, Inc., framework.scaledagile.com, read 2026-09-27 |
+| Use cases | Jacobson et al., *Object-Oriented Software Engineering* (1992) |
+| Conflict modes | Thomas and Kilmann, *Conflict Mode Instrument* (1974) |
+| MVP; MoSCoW | Ries, *The Lean Startup* (2011); Clegg and Barker, *Case Method Fast-Track* (1994) |
 
 ## Where sources disagree, each reading kept
 
