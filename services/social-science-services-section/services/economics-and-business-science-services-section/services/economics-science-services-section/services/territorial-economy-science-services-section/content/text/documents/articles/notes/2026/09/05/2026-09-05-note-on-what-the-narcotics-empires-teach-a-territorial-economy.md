@@ -4,7 +4,7 @@ description: "The executive's reading of the 89 measured rows on six narcotics e
 date-created: 2026-09-05
 type: note
 name: 2026-09-05-note-on-what-the-narcotics-empires-teach-a-territorial-economy
-status: draft-for-owner-review
+status: draft-for-review
 authors:
   - claude-fable-5.1
 keywords:
@@ -49,12 +49,12 @@ Fentanyl is the natural experiment: one regulatory change in 2019 moved the indu
 A territory can hold the refinement step on purpose.
 
 **Logistics.** Sinaloa's plaza system is "franchised territories under jefes de plaza who pay a percentage to central leadership," compared by analysts to Walmart and McDonald's (*Journal of Strategic Security*): franchise over shared upstream is a general scaling technology.
-The house already has it under another name: public properties are parameterizations of shared upstream services (owner-ruled 2026-08-30), each site a plaza over the same engineering, paying the witness fee.
+The house already has it under another name: public properties are parameterizations of shared upstream services (specified 2026-08-30), each site a plaza over the same engineering, paying the witness fee.
 The Company's country traders are the other logistics lesson, the arm's-length layer that kept the monopoly "formally clean of the illegal import itself" (*Opium trade*, Britannica).
 That is the extraction move, insulation from provenance, and the house's inverse is provenance on every hop, the thing the empires spend the most to avoid.
 
 **Financial.** Laundering is the technology of bringing value home across a border that refuses it: $5 to $15 billion a year returned to Colombia through the Black Market Peso Exchange (Colombia Reports), and the settler economy's own banks were the launderers, BCCI's record fine and HSBC's $1.9 billion settlement with no individual indicted (Market Histories; NPR).
-The honest version of the same technology is the fintech note's fourth section, "turning the settler state's own ledger into capital": a ledger that reconciles on farolfi, benefit-sharing records, and rails the band holds.
+The honest version of the same technology is the fintech note's third section, "turning the settler state's own ledger into capital": a ledger that reconciles on farolfi, benefit-sharing records, and rails the band holds.
 The indemnity is the other financial technology: the Treaty of Nanking made the poisoned population pay 21 million taels (*Treaty of Nanking*), and Purdue's $7.4 billion settlement is the same instrument with the sign reversed, the empire paying (Tennessee Attorney General).
 The register of what was taken is the war chest; the collapse-aware enterprises note's claims-decay register is this instrument's continuation.
 

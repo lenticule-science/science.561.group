@@ -1,6 +1,6 @@
 ---
 title: "Minnesota law for acquiring and holding land"
-description: "The Minnesota and federal law that governs getting land cheaply and keeping it, read 2026-09-26/27: how counties sell tax-forfeited land (auction, over-the-counter, and on ten-year terms) and convey it below market to cities for affordable housing; what a city's free-lot contract requires (start and finish deadlines, a certificate of occupancy, reversion); who may build a house without a contractor's license; the property-tax classes and the forest incentive that decide what rural land costs to hold; reselling vacant land on a contract for deed; and how Supplemental Security Income counts land held directly, as business property, or through an LLC."
+description: "The Minnesota and federal law that governs getting land cheaply and keeping it, read 2026-09-26/27: how counties sell tax-forfeited land (auction, over-the-counter, and on ten-year terms) and convey it below market to cities for affordable housing; what a city's free-lot contract requires (start and finish deadlines, a certificate of occupancy, reversion); who may build a house without a contractor's license; the property-tax classes and the forest incentive that decide what rural land costs to hold; reselling vacant land on a contract for deed; and who keeps first-time-homebuyer standing while holding land."
 date-created: 2026-09-26
 type: notes
 name: 2026-09-26-note-on-minnesota-law-for-acquiring-and-holding-land
@@ -15,7 +15,6 @@ keywords:
   - managed-forest-land
   - sustainable-forest-incentive-act
   - contract-for-deed
-  - property-essential-to-self-support
   - minnesota
   - duluth
 ---
@@ -196,45 +195,17 @@ over time and receives the deed at the end.
   principal place of residence" by the buyer (559A.01, subd. 9). A contract for
   deed on vacant rural land is outside chapter 559A.
 
-## 6. Holding land when someone receives SSI or Medical Assistance — primary
+## 6. Land and first-time-homebuyer standing — secondary
 
-A household member on Supplemental Security Income faces a resource limit, so
-who holds title to land decides whether it costs them their benefit (the
-[fintech-for-the-tiyóšpaye note](../../../../../../../../../../../../../561-group-services-section/content/text/documents/articles/notes/2026/09/04/2026-09-04-note-on-fintech-for-the-tiyospaye.md)
-calls the asset test an absorbing barrier).
-
-- **The home is excluded "regardless of its value"** while it is the
-  principal place of residence (20 CFR 416.1212). Minnesota Medical Assistance
-  likewise excludes the homestead, without a cap outside long-term care
-  (Minnesota Eligibility Policy Manual).
-- **Property used in a trade or business is excluded whatever it is worth.**
-  "Property essential to self-support used in a trade or business is excluded
-  from resources regardless of value or rate of return effective May 1, 1990"
-  (SSA POMS SI 01130.501). This is
-  [property essential to self-support](../../../../../../glossary/terms/property-essential-to-self-support.md);
-  the $6,000-equity, 6%-return limit in 20 CFR 416.1222 and 416.1224 applies to
-  *nonbusiness* income-producing property and to property producing goods for
-  one's own use, not to business property.
-- **An LLC interest is not business property; it is a countable resource.**
-  SSA's regional counsel concluded that an SSI recipient's "100% interest in a
-  limited liability company ... should be considered a countable resource"
-  (POMS PS 01810.011, Florida, 2018-04-18). Land that is excluded when a
-  recipient holds it directly as a sole proprietor's business property is
-  counted through the value of the LLC when an LLC the recipient owns holds
-  it.
-- **First-time homebuyer status survives land ownership.** Minnesota Housing's
-  first-time homebuyer has not had "an ownership interest in a principal
-  residence in the last three years" (Minnesota Housing, Start Up, secondary
-  summaries of the program manual). Owning vacant or rural land that is
-  nobody's residence does not end it.
-
-Three ways to hold land follow from these rules. Title can sit with a
-household member who receives no means-tested benefit, directly or through an
-LLC they own. A recipient can hold it directly, as property of a business they
-actually run. Or the recipient can hold a home only. The 561 Group's own
+Minnesota Housing's first-time homebuyer has not had "an ownership interest in
+a principal residence in the last three years" (Minnesota Housing, Start Up,
+secondary summaries of the program manual). Owning vacant or rural land that
+is nobody's residence does not end that standing, so one household member can
+hold land while another keeps the standing that down-payment programs require.
+The 561 Group's
 [2024 planning statement](../../../../../../../../../../../../../561-group-services-section/content/text/documents/articles/notes/2024/12/27/2024-12-27-planning-statement.md)
-already reasons about title this way ("Keep land owned by 1 person — meets
-first-time home-buyer qualification").
+already reasons this way ("Keep land owned by 1 person — meets first-time
+home-buyer qualification").
 
 ## Open
 
@@ -258,6 +229,4 @@ first-time home-buyer qualification").
 - [Minn. Stat. 326B.805](https://www.revisor.mn.gov/statutes/cite/326B.805)
 - [Minn. Stat. 273.13](https://www.revisor.mn.gov/statutes/cite/273.13); [Class 2c Managed Forest Land](https://www.revenue.state.mn.us/class-2c-managed-forest-land); [Sustainable Forest Incentive Act](https://www.revenue.state.mn.us/sustainable-forest-incentive-act)
 - [Minn. Stat. 507.235](https://www.revisor.mn.gov/statutes/cite/507.235); [559.21](https://www.revisor.mn.gov/statutes/cite/559.21); [559A.01](https://www.revisor.mn.gov/statutes/cite/559A.01)
-- [20 CFR 416.1212](https://www.law.cornell.edu/cfr/text/20/416.1212); [20 CFR 416.1222](https://www.law.cornell.edu/cfr/text/20/416.1222); [20 CFR 416.1224](https://www.law.cornell.edu/cfr/text/20/416.1224)
-- [SSA POMS SI 01130.501, trade or business property](https://secure.ssa.gov/poms.nsf/lnx/0501130501); [POMS PS 01810.011, Florida (LLC interest)](https://secure.ssa.gov/apps10/poms.nsf/lnx/1601810011)
 - [Minnesota Housing, buy a home](https://www.mnhousing.gov/home/homeownership/buy-home-refinance)

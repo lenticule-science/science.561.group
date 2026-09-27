@@ -524,13 +524,10 @@ implementation detail even where the federal floor is uniform.
 **SSI's asset test.** The Social Security Administration's own POMS
 manual (SI 01110.003, last updated 2024-12-17) states the countable
 resource limit for SSI eligibility is $2,000 for an individual and
-$3,000 for a couple, unchanged since 1989 [@ssa2024ssiresources]. This
-is the fintech note's "absorbing barrier": a dollar of gig earnings that
-a disabled member cannot spend down before the end of the month it was
-counted, held in the member's own name, can push them over a
-three-decade-frozen line — the fintech note's own hedge that this
-recollection was "unverified" is resolved by this citation to the
-current SSA text.
+$3,000 for a couple, unchanged since 1989 [@ssa2024ssiresources]. A
+dollar of gig earnings an SSI recipient has not spent by the end of the
+month it was counted can push them over a line frozen for more than three
+decades.
 
 ## 6. State and city pay-floor law
 
