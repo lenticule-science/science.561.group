@@ -137,13 +137,14 @@ reached" (void) and "a cell whose evidence has reconciled to a cancellation"
 ## Measuring A Trace
 
 There is no operation asserting a reading directly. `measure` reads a `Valued`
-value at a predication cell from a trace of articulatings and a codec
-contrariety: for-witnesses are the head tokens of the articulatings whose
-oriented cell matches, against-witnesses those whose oriented cell is the
-contrary claim:
+value at a predication cell from a trace of articulatings and the codec's
+contradiction, which pairs each claim with the mark of its denial: for-witnesses
+are the head tokens of the articulatings whose oriented cell matches,
+against-witnesses those whose oriented cell is the contradictory claim, the same
+subject and object told against, as in Belnap's four-valued logic:
 
 ```lean
-example (k : Contrary) (trace : List Articulating) (φ : PredicationCell) :
+example (k : Contradictory) (trace : List Articulating) (φ : PredicationCell) :
     Valued.Measured (measure k trace φ) :=
   measure_measured k trace φ
 ```
@@ -151,19 +152,29 @@ example (k : Contrary) (trace : List Articulating) (φ : PredicationCell) :
 An articulating is always a for-witness of the cell it itself generates:
 
 ```lean
-example (k : Contrary) (a : Articulating) :
+example (k : Contradictory) (a : Articulating) :
     (measure k [a] (Articulating.orientedCell a)).value.pos = true :=
   measure_self_pos k a
 ```
 
-There is no denial. If measuring a trace at a claim reads negative evidence,
-the contrary predicate was itself articulated somewhere in the trace:
+There is no denial primitive. If measuring a trace at a claim reads negative
+evidence, the contradictory claim was itself articulated somewhere in the trace:
 
 ```lean
-example (k : Contrary) (trace : List Articulating) (φ : PredicationCell)
+example (k : Contradictory) (trace : List Articulating) (φ : PredicationCell)
     (h : (measure k trace φ).value.neg = true) :
-    ∃ a ∈ trace, a.orientedCell = PredicationCell.contrary k φ :=
+    ∃ a ∈ trace, a.orientedCell = PredicationCell.contradictory k φ :=
   no_denial k trace φ h
+```
+
+Negation is measured, not assumed. Measuring the contradictory claim exchanges
+the two evidence sides of measuring the claim, which is Belnap negation:
+
+```lean
+example (k : Contradictory) (trace : List Articulating) (φ : PredicationCell) :
+    (measure k trace (PredicationCell.contradictory k φ)).value
+      = Reading.negate (measure k trace φ).value :=
+  measure_contradictory_negate k trace φ
 ```
 
 ## The Measured Composite Of The Spine
@@ -173,7 +184,7 @@ itself constituting admission, `Spine.runTrace` is the composite that
 actually measures: articulate, predicate, *measure*, settle.
 
 ```lean
-example (closure : Reading.Closure) (k : Contrary) (trace : List Articulating)
+example (closure : Reading.Closure) (k : Contradictory) (trace : List Articulating)
     (φ : PredicationCell) : Meme :=
   Spine.runTrace closure k trace φ
 ```

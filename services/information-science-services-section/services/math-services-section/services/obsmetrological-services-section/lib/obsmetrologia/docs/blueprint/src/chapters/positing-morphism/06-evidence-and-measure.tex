@@ -4,7 +4,7 @@ A bare reading (\cref{thm:charge}) is the presence pattern alone; positing
 does not admit one directly. What is admitted carries its witnesses:
 \texttt{Valued} pairs a value with the lossless evidence it was read off,
 and the trace-level \texttt{measure} builds that evidence from an
-articulating trace against a codec's contrariety, never by denial.
+articulating trace against a codec's contradiction, never by a denial primitive.
 
 \begin{proposition}[Charged: value with lossless evidence]\label{thm:charged}\lean{Obsmetrologia.Valued}\leanok\uses{thm:charge}
 A \emph{charged} value pairs a \texttt{value : Charge} with
@@ -64,12 +64,17 @@ counit cone (\cref{thm:cvaluation-brim}) generalizes to every cell of a
 valuation.
 \end{theorem}
 
-\begin{definition}[Contrariety]\label{thm:contrary}\lean{Obsmetrologia.Contrary}\leanok\uses{def:claim}
-A \emph{contrariety} is an involution \(c : \texttt{Claim} \to
+\begin{definition}[Contradiction]\label{thm:contrary}\lean{Obsmetrologia.Contradictory}\leanok\uses{def:claim}
+A \emph{contradiction} is an involution \(c : \texttt{Claim} \to
 \texttt{Claim}\) on claims, together with the proof \(c\,(c\,p) = p\) for
-every \(p\). It names the codec's own reading of ``the opposite claim,'' so
-that a contrary fact can be defined as the articulation of the contrary
-predicate rather than by any denial operation the theory does not have.
+every \(p\). It pairs each claim with the mark of its denial, told as a mark
+in its own right, so that evidence against \(\varphi\) is evidence for its
+contradictory at the same subject and object: denial is a telling against the
+same atom, as in Belnap's four-valued logic (Belnap 1977; Dunn 1976), and no
+denial operation is assumed. Being an involution, it is contradiction rather
+than contrariety: contraries such as \emph{likes} and \emph{dislikes} can both
+be false (Horn 1989), so a contrary is a separate predicate related to its
+partner by a rule settling applies, not by this pairing.
 \end{definition}
 
 \begin{definition}[Witnesses of a claim in a trace]\label{thm:witnesses}\lean{Obsmetrologia.witnesses}\leanok\uses{thm:oriented-cell, thm:predication}
@@ -83,12 +88,12 @@ so that every lemma about it is a structural induction.
 \begin{definition}[Measuring a trace]\label{thm:trace-measure}\lean{Obsmetrologia.measure}\leanok\uses{thm:witnesses, thm:contrary, thm:charged}
 \(\texttt{measure}\,k\,\texttt{trace}\,\varphi\) reads a \texttt{Charged}
 value at the predication cell \(\varphi\) from a trace of articulatings and a
-contrariety \(k\): for-witnesses are \(\texttt{witnesses}\,\varphi\,
+contradiction \(k\): for-witnesses are \(\texttt{witnesses}\,\varphi\,
 \texttt{trace}\), against-witnesses are
-\(\texttt{witnesses}\,(\texttt{contrary}\,k\,\varphi)\,\texttt{trace}\), and
+\(\texttt{witnesses}\,(\texttt{contradictory}\,k\,\varphi)\,\texttt{trace}\), and
 the value is the presence pattern of that evidence pair. There is no
-operation asserting a charge directly; a claim is denied only by the
-contrary predicate itself having been articulated somewhere in the trace.
+operation asserting a charge directly; a claim is denied only by its
+contradictory having been articulated somewhere in the trace.
 \end{definition}
 
 \begin{theorem}[Measuring a trace is always measured]\label{thm:measure-measured}\lean{Obsmetrologia.measure_measured}\leanok\uses{thm:trace-measure, thm:charged-measured}
@@ -118,10 +123,16 @@ itself generates.
 \end{theorem}
 
 \begin{theorem}[No denial]\label{thm:no-denial}\lean{Obsmetrologia.no_denial}\leanok\uses{thm:trace-measure, thm:contrary}
-If measuring a trace at \(\varphi\) reads negative evidence, the contrary
-predicate was itself articulated somewhere in the trace: negative evidence
-exists only where the codec's contrary claim was actually told, never as a
-bare denial of \(\varphi\).
+If measuring a trace at \(\varphi\) reads negative evidence, the
+contradictory claim was itself articulated somewhere in the trace: negative
+evidence exists only where the codec's contradictory claim was actually told,
+never as a bare denial of \(\varphi\).
+\end{theorem}
+
+\begin{theorem}[Negation is measured]\label{thm:measure-contradictory-negate}\lean{Obsmetrologia.measure_contradictory_negate}\leanok\uses{thm:trace-measure, thm:contrary}
+Measuring a trace at the contradictory of \(\varphi\) is the Belnap negation
+of measuring it at \(\varphi\): the two evidence sides exchange. Negation on
+readings is therefore derived from contradiction on marks, not assumed.
 \end{theorem}
 
 \begin{definition}[The measured composite of the spine]\label{thm:spine-runtrace}\lean{Obsmetrologia.Spine.runTrace}\leanok\uses{thm:trace-measure, thm:settling}

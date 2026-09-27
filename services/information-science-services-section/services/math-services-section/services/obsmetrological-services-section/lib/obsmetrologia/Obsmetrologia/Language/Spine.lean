@@ -116,37 +116,37 @@ not accepted as an opaque input. -/
 
 /-- The measured valuation read off a trace: bare readings only, forgetting
 the evidence `Obsmetrologia.measure` carries alongside it. -/
-def measure (k : Contrary) (trace : List Articulating) : Valuation :=
+def measure (k : Contradictory) (trace : List Articulating) : Valuation :=
   CValuation.value (Obsmetrologia.measured k trace)
 
 /-- **Knowledge-least = un-articulated.** An empty trace measures exactly
 the knowledge-least valuation: the value at cells no articulating has
 reached. Nothing is seeded onto an articulated cell — it is measured, and an
 empty trace has measured nothing. -/
-theorem measure_nil_knowledgeLeast (k : Contrary) :
+theorem measure_nil_knowledgeLeast (k : Contradictory) :
     ∀ φ, measure k [] φ = Valuation.knowledgeLeast φ :=
   fun φ => Obsmetrologia.measure_nil k φ
 
 /-- The re-based composite: articulate a trace, predicate its cells, measure
 the reading from the trace itself, then settle. Where `run` accepts a
 caller-supplied reading, `runTrace` derives it. -/
-def runTrace (closure : Reading.Closure) (k : Contrary) (trace : List Articulating)
+def runTrace (closure : Reading.Closure) (k : Contradictory) (trace : List Articulating)
     (φ : PredicationCell) : Meme :=
   settle closure ⟨φ, (Obsmetrologia.measure k trace φ).value⟩
 
-@[simp] theorem runTrace_cell (closure : Reading.Closure) (k : Contrary)
+@[simp] theorem runTrace_cell (closure : Reading.Closure) (k : Contradictory)
     (trace : List Articulating) (φ : PredicationCell) :
     (runTrace closure k trace φ).cell = φ := rfl
 
 /-- The measured composite's output reading is fixed by its supplied closure. -/
-theorem runTrace_reading_fixed (closure : Reading.Closure) (k : Contrary)
+theorem runTrace_reading_fixed (closure : Reading.Closure) (k : Contradictory)
     (trace : List Articulating) (φ : PredicationCell) :
     closure.op (runTrace closure k trace φ).reading = (runTrace closure k trace φ).reading :=
   Reading.settle_fixed closure (Obsmetrologia.measure k trace φ).value
 
 /-- On an empty trace the measured composite settles exactly the closed
 knowledge-least seed: nothing measured, closed. -/
-theorem runTrace_nil (closure : Reading.Closure) (k : Contrary) (φ : PredicationCell) :
+theorem runTrace_nil (closure : Reading.Closure) (k : Contradictory) (φ : PredicationCell) :
     (runTrace closure k [] φ).reading = Reading.settle closure Reading.kBot := by
   show Reading.settle closure (Obsmetrologia.measure k [] φ).value
       = Reading.settle closure Reading.kBot
@@ -155,7 +155,7 @@ theorem runTrace_nil (closure : Reading.Closure) (k : Contrary) (φ : Predicatio
 /-- The measured composite settles above precisely what was measured — the
 closure's inflation, applied to actual evidence rather than a caller-opaque
 admission. -/
-theorem runTrace_measured_le_settled (closure : Reading.Closure) (k : Contrary)
+theorem runTrace_measured_le_settled (closure : Reading.Closure) (k : Contradictory)
     (trace : List Articulating) (φ : PredicationCell) :
     Reading.KLE (Obsmetrologia.measure k trace φ).value (runTrace closure k trace φ).reading :=
   closure.infl (Obsmetrologia.measure k trace φ).value

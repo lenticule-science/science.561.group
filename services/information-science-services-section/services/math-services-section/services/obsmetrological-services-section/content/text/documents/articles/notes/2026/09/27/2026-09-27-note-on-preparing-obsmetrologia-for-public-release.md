@@ -68,17 +68,25 @@ construction costs `Quot.sound` and nothing more (08-17 note, §5.1).
 
 ## Where the Lean diverges from the theory
 
-1. **How evidence against enters is not settled.** Evidence for and against
-   is Belnap's reading of a value's two coordinates; it belongs to the truth
-   order that positing introduces and is not a relational or articulation-stage
-   notion. Two witnesses place denial differently, both at positing. The
-   2026-06-17 monograph makes it a codec move: "a contrary fact is the
-   articulation of a contrary predicate", which `Language/Positing/Measure.lean`
-   implements as `Contrary`. The predication-categories formulation instead
-   tells the same cell against ("Alice does not like Bob" is told P(a, b) = f).
-   Negation is not assumed to be the evidence swap either: the swap is the
-   bilattice's truth-order negation, and how negation arises in the theory is
-   still to be derived.
+1. **How evidence against enters.** *Settled 2026-09-27.* Two witnesses
+   seemed to place denial differently, both at positing: the 2026-06-17
+   monograph made it "the articulation of a contrary predicate" (`Contrary` in
+   `Language/Positing/Measure.lean`), and the predication-categories
+   formulation tells the same cell against ("Alice does not like Bob" is told
+   P(a, b) = f). They are one construction. The codec's pairing was already an
+   involution on predicate marks, and an involution pairing each claim with
+   the mark of its denial is contradiction, not contrariety: contraries such as
+   *likes* and *dislikes* can both be false (Horn 1989), contradictories
+   cannot. So evidence against a cell is evidence for its contradictory at the
+   same subject and object, which is exactly Belnap's telling against the same
+   atom (Belnap 1977; Dunn 1976). The Lean now names it by what it is
+   (`Contradictory`, `PredicationCell.contradictory`); a genuine contrary is
+   a separate predicate whose bearing on its partner is a rule settling
+   applies (`dislikes ⊢ not-likes`), not measurement's pairing. Negation is
+   derived, not assumed: `measure_contradictory_negate` proves that measuring
+   the contradictory cell is Belnap negation (`Reading.negate`, the exchange
+   of the evidence sides) of measuring the cell. It depends on no axioms;
+   library and manual check clean through `lean-check`.
    *Fixed alongside:* an articulation cell's two slots are the subject and
    object positions of the predication articulating opens, not evidence sides
    and not the utterance's hands (`subjectSlot`, `objectSlot`); articulation

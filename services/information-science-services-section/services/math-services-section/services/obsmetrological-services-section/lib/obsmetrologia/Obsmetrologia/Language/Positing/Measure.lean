@@ -6,20 +6,28 @@ import Obsmetrologia.Language.Settling.Cones
 /-!
 # Measuring a trace
 
-**Owner ruling 2026-09-21.** Where `Evidence.lean` gave the *carrier* for a
-value plus its witnesses, this module gives the actual **measurement**: read
-a cell's reading off a trace of articulatings, by collecting which
-articulatings' oriented cell (`Articulating.orientedCell`, ruled the reading
-`measure` uses — see `Predicating/Oriented.lean`) landed on the cell asked
-about, and which landed on its **contrary**.
+Where `Evidence.lean` gave the *carrier* for a value plus its witnesses, this
+module gives the actual **measurement**: read a cell's reading off a trace of
+articulatings, by collecting which articulatings' oriented cell
+(`Articulating.orientedCell`, see `Predicating/Oriented.lean`) landed on the
+cell asked about, and which landed on its **contradictory**.
 
-**Contrariety** (`Contrary`) is the codec's involution on predicate marks —
-"not-p" as a *different* predicate `k.c p`, not a negation operator on
-readings. A contrary *fact* is the articulation of the contrary predicate: an
-against-witness for `φ` is a for-witness of `contrary k φ`. There is **no
-denial** primitive: `no_denial` shows the only way a cell's reading ever
-carries a negative pole is that some articulating in the trace actually
-landed on the contrary cell.
+**Contradiction** (`Contradictory`) is the codec's involution on predicate
+marks: each claim `p` is paired with the mark of its denial, "not-p", told as
+a mark in its own right, never as a negation operator on readings. Evidence
+against `φ` is then evidence for `contradictory k φ` at the same subject and
+object, which is Belnap's four-valued reading (Belnap 1977; Dunn 1976): a
+source tells an atomic claim true or false, and denial is a telling against
+the same atom. Because the pairing is an involution it is contradiction, not
+Aristotelian contrariety: a genuine contrary (`dislikes` beside `likes`) can
+be false together with its partner (Horn 1989), so it is a separate predicate
+whose bearing on `likes` is a rule settling applies (`dislikes ⊢ not-likes`),
+never measurement's pairing. There is **no denial primitive**: `no_denial`
+shows the only way a cell's reading carries a negative pole is that some
+articulating in the trace landed on the contradictory cell. And negation is
+derived, not assumed: `measure_contradictory_negate` proves that measuring
+the contradictory cell is Belnap negation (`Reading.negate`, the exchange of
+the two evidence sides) of measuring the cell.
 
 `witnesses` is built by explicit structural recursion on the trace (never
 `List.filter`/`List.map`), so every lemma about it is a structural
@@ -33,23 +41,24 @@ never remove them, so the measured value only ever climbs `≤ₖ`.
 
 namespace Obsmetrologia
 
-/-- Contrariety: the codec's involution on predicate marks. A contrary fact is
-the articulation of the contrary predicate; there is no denial primitive. -/
-structure Contrary where
-  /-- The involution on claims: "not-p", as a different predicate. -/
+/-- Contradiction: the codec's involution on predicate marks, pairing each claim
+with the mark of its denial. There is no denial primitive: a denial is the
+articulation of the contradictory mark. -/
+structure Contradictory where
+  /-- The involution on claims: "not-p", told as a mark of its own. -/
   c : Claim → Claim
-  /-- Contrariety is its own inverse. -/
+  /-- Contradiction is its own inverse. -/
   invol : ∀ p, c (c p) = p
 
 namespace PredicationCell
 
-/-- The contrary cell: same subject and object, the contrary predicate. -/
-def contrary (k : Contrary) (φ : PredicationCell) : PredicationCell :=
+/-- The contradictory cell: same subject and object, the contradictory predicate. -/
+def contradictory (k : Contradictory) (φ : PredicationCell) : PredicationCell :=
   ⟨φ.subject, k.c φ.predicate, φ.object⟩
 
-/-- Contrariety on cells is its own inverse, inherited from `Contrary.invol`. -/
-theorem contrary_contrary (k : Contrary) (φ : PredicationCell) :
-    contrary k (contrary k φ) = φ := by
+/-- Contradiction on cells is its own inverse, inherited from `Contradictory.invol`. -/
+theorem contradictory_contradictory (k : Contradictory) (φ : PredicationCell) :
+    contradictory k (contradictory k φ) = φ := by
   show (⟨φ.subject, k.c (k.c φ.predicate), φ.object⟩ : PredicationCell) = φ
   rw [k.invol φ.predicate]
 
@@ -104,19 +113,19 @@ theorem witnesses_cons_isEmpty_le (ψ : PredicationCell) (a : Articulating)
 
 /-- Measure a cell from a trace of articulatings: for-witnesses are the head
 tokens of the articulatings whose oriented cell is `φ`; against-witnesses
-those whose oriented cell is the contrary of `φ`. Always `Measured`, by
+those whose oriented cell is the contradictory of `φ`. Always `Measured`, by
 construction. -/
-def measure (k : Contrary) (trace : List Articulating) (φ : PredicationCell) : Valued :=
-  ⟨Reading.ofSlots (!(witnesses φ trace).isEmpty) (!(witnesses (φ.contrary k) trace).isEmpty),
-    (witnesses φ trace, witnesses (φ.contrary k) trace)⟩
+def measure (k : Contradictory) (trace : List Articulating) (φ : PredicationCell) : Valued :=
+  ⟨Reading.ofSlots (!(witnesses φ trace).isEmpty) (!(witnesses (φ.contradictory k) trace).isEmpty),
+    (witnesses φ trace, witnesses (φ.contradictory k) trace)⟩
 
 /-- Measuring is always `Measured`: the value is built from exactly the
 witness lists it carries as evidence, by definition. -/
-theorem measure_measured (k : Contrary) (trace : List Articulating) (φ : PredicationCell) :
+theorem measure_measured (k : Contradictory) (trace : List Articulating) (φ : PredicationCell) :
     Valued.Measured (measure k trace φ) := rfl
 
 /-- **Told nothing.** An empty trace measures ⊥ₖ everywhere. -/
-@[simp] theorem measure_nil (k : Contrary) (φ : PredicationCell) :
+@[simp] theorem measure_nil (k : Contradictory) (φ : PredicationCell) :
     (measure k [] φ).value = Reading.kBot := rfl
 
 /-- The value-component of `ofSlots` built from two witness-presence Bools
@@ -136,45 +145,59 @@ private theorem leK_ofSlots_of_impl {p1 n1 p2 n2 : Bool}
   rfl
 
 /-- **Evidence's arrow of time.** Extending the trace by one more articulating
-can only add witnesses — for `φ` or for its contrary — never remove them, so
+can only add witnesses — for `φ` or for its contradictory — never remove them, so
 the measured value only ever climbs the knowledge order. -/
-theorem measure_cons_le (k : Contrary) (a : Articulating) (trace : List Articulating)
+theorem measure_cons_le (k : Contradictory) (a : Articulating) (trace : List Articulating)
     (φ : PredicationCell) :
     Reading.KLE (measure k trace φ).value (measure k (a :: trace) φ).value :=
   leK_ofSlots_of_impl (witnesses_cons_isEmpty_le φ a trace)
-    (witnesses_cons_isEmpty_le (φ.contrary k) a trace)
+    (witnesses_cons_isEmpty_le (φ.contradictory k) a trace)
 
 /-- **Articulating tells its own cell true.** A one-step trace `[a]` measures
 `a`'s own oriented cell as positive: `a` is its own for-witness. -/
-theorem measure_self_pos (k : Contrary) (a : Articulating) :
+theorem measure_self_pos (k : Contradictory) (a : Articulating) :
     ((measure k [a] a.orientedCell).value).pos = true := by
   have hw : witnesses a.orientedCell [a] = a.head.token :: witnesses a.orientedCell [] := by
     show (if a.orientedCell = a.orientedCell then a.head.token :: witnesses a.orientedCell []
         else witnesses a.orientedCell []) = a.head.token :: witnesses a.orientedCell []
     rw [if_pos rfl]
   show (Reading.ofSlots (!(witnesses a.orientedCell [a]).isEmpty)
-      (!(witnesses (a.orientedCell.contrary k) [a]).isEmpty)).pos = true
+      (!(witnesses (a.orientedCell.contradictory k) [a]).isEmpty)).pos = true
   rw [hw, Reading.pos_ofSlots]
   rfl
 
 /-- **No denial.** The only way a measured reading ever carries a negative
 pole at `φ` is that some articulating in the trace actually landed on `φ`'s
-contrary — negation is never seeded, only measured. -/
-theorem no_denial (k : Contrary) (trace : List Articulating) (φ : PredicationCell)
+contradictory — denial is never seeded, only measured. -/
+theorem no_denial (k : Contradictory) (trace : List Articulating) (φ : PredicationCell)
     (h : (measure k trace φ).value.neg = true) :
-    ∃ a ∈ trace, a.orientedCell = φ.contrary k := by
+    ∃ a ∈ trace, a.orientedCell = φ.contradictory k := by
   have h0 : (Reading.ofSlots (!(witnesses φ trace).isEmpty)
-      (!(witnesses (φ.contrary k) trace).isEmpty)).neg = true := h
+      (!(witnesses (φ.contradictory k) trace).isEmpty)).neg = true := h
   rw [Reading.neg_ofSlots] at h0
-  cases hm : witnesses (φ.contrary k) trace with
+  cases hm : witnesses (φ.contradictory k) trace with
   | nil => rw [hm] at h0; exact absurd h0 (by decide)
   | cons t ts =>
-    have hmem : t ∈ witnesses (φ.contrary k) trace := by rw [hm]; exact List.Mem.head _
-    obtain ⟨a, ha, hao, _⟩ := mem_witnesses (φ.contrary k) trace t hmem
+    have hmem : t ∈ witnesses (φ.contradictory k) trace := by rw [hm]; exact List.Mem.head _
+    obtain ⟨a, ha, hao, _⟩ := mem_witnesses (φ.contradictory k) trace t hmem
     exact ⟨a, ha, hao⟩
+
+/-- **Negation is measured, not assumed.** Measuring the contradictory cell is
+Belnap negation of measuring the cell: the two evidence sides exchange,
+because the contradictory of the contradictory is the cell itself. -/
+theorem measure_contradictory_negate (k : Contradictory) (trace : List Articulating)
+    (φ : PredicationCell) :
+    (measure k trace (φ.contradictory k)).value = Reading.negate (measure k trace φ).value := by
+  show Reading.ofSlots (!(witnesses (φ.contradictory k) trace).isEmpty)
+      (!(witnesses ((φ.contradictory k).contradictory k) trace).isEmpty)
+    = Reading.negate (Reading.ofSlots (!(witnesses φ trace).isEmpty)
+      (!(witnesses (φ.contradictory k) trace).isEmpty))
+  rw [PredicationCell.contradictory_contradictory]
+  show _ = Reading.ofSlots (Reading.ofSlots _ _).neg (Reading.ofSlots _ _).pos
+  rw [Reading.neg_ofSlots, Reading.pos_ofSlots]
 
 /-- The measured valued valuation: the whole trace, read pointwise as a
 `CValuation` (value plus evidence at every cell). -/
-def measured (k : Contrary) (trace : List Articulating) : CValuation := measure k trace
+def measured (k : Contradictory) (trace : List Articulating) : CValuation := measure k trace
 
 end Obsmetrologia
