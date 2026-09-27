@@ -204,7 +204,7 @@ code fabrication; over existing code it is inquiry → derivation → procedure
 ([nuclear quartet](../../../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/nuclear-quartet.md)): a
 commutative square of two nuclei on one Heyting algebra yields exactly four
 sub-algebras, the raw algebra, Fix(σ), Fix(Δ), and their intersection. The
-[skillful-work](../../../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/glossary/terms/skillful-work.md) specification reads them as Inquiry,
+[skillful-work](../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/skill.md) specification reads them as Inquiry,
 Procedure (meaning-closed), Derivation (execution-closed), and Process (both),
 and the fabricated operation [classify-work-demand](../../../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/services/agent-work-computer-system-engineering-services-section/content/text/documents/specifications/classify-work-demand.md) already
 reads the two closures off a work item.

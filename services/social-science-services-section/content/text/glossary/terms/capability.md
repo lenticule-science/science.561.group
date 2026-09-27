@@ -42,7 +42,7 @@ A task declares `requires-capabilities: [...]
 
 ## What capability is not
 
-A capability is not a [skill](./skills.md).
+A capability is not a [skill](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/skill.md).
 A skill is a named operational primitive — a specific procedure with a name, runtime, inputs, outputs (e.g., `process-triage-note`, `validate-frontmatter`).
 A capability is the abstraction over a cluster of related skills: many writing skills (`write-term-or-concept`, `write-directory-agent-instructions`, `fix-frontmatter`) all enable the *writing* capability.
 
@@ -72,7 +72,7 @@ Separating capability from work-type fixed both: a `procedure` task with `requir
 
 ## See also
 
-- [skill](./skills.md) — named operational primitive that enables one or more capabilities
+- [skill](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/skill.md) — named operational primitive that enables one or more capabilities
 - [role](./role.md) — organizational position grouping capabilities
 - [work-type](./work.md) — settlement classification of work
 - [duty](../../../../services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/duty.md) — Hohfeldian obligation; capabilities are what makes discharging duties feasible

@@ -68,7 +68,7 @@ $$\sigma_t(W) = W \quad\text{and}\quad \Delta_t(W) \neq W$$
 
 Meaning-closed ($\sigma_t$-fixed): the output type is settled; the procedure knows what it is trying to produce. Execution-open ($\Delta_t$-unfixed): the execution path is determined at runtime by branching on conditions.
 
-As a [Skill](../../../../../../../../content/text/glossary/terms/skills.md) type, a Procedure is a morphism $f : A \to B$ where $f$ contains decision points — $f(a) \in \mathrm{Fix}(\sigma_t) \setminus H^*_t$ — the output type $B$ is known but which branch produces it depends on $a$.
+As a [Skill](./skill.md) type, a Procedure is a morphism $f : A \to B$ where $f$ contains decision points — $f(a) \in \mathrm{Fix}(\sigma_t) \setminus H^*_t$ — the output type $B$ is known but which branch produces it depends on $a$.
 
 Applying $\Delta_t$ to $W$ closes the remaining execution-openness: $\Delta_t(W) \in H^*_t$, converting the Procedure into a [Process](./process.md). See [process.md](./process.md) for the full quartet table.
 
@@ -111,4 +111,4 @@ procedure's deterministic contract.
 ## Related
 
 - [Derivation](./derivation.md) — execution-closed, meaning-open: applies fixed inference rules; a Procedure applies conditional routing.
-- [FlatfileAgentResourceSystemSkillfulWork](../../../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/services/agent-computer-platform-system-engineering-services-section/services/flatfile-agent-resource-system-engineering-services-section/content/text/glossary/terms/flatfile-agent-resource-system-skillful-work.md) — all four positions partition the nuclear quartet.
+- [FlatfileAgentResourceSystemSkillfulWork](./skill.md) — all four positions partition the nuclear quartet.
