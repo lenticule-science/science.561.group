@@ -111,7 +111,7 @@ cells: each of `c`'s two statuses implies the like status of `d`. Stated on
 the status pairs themselves — no shared utterance is required, since this
 compares evidence tellings, not cells over one claim. -/
 def statusLe (c d : Articulating.Cell) : Bool :=
-  (!c.tokenArticulated || d.tokenArticulated) && (!c.claimArticulated || d.claimArticulated)
+  (!c.subjectArticulated || d.subjectArticulated) && (!c.objectArticulated || d.objectArticulated)
 
 /-- The Bool-only content of `measure_mono`, isolated so the four-bool case
 exhaustion below never has to carry an `Utterance` (which `decide` cannot
@@ -129,7 +129,7 @@ Proved by exhausting the four `(token, claim)` bools of each cell — the same
 finite-check idiom `Reading.lean` uses throughout. -/
 theorem measure_mono (c d : Articulating.Cell) (h : statusLe c d = true) :
     Reading.leK (measure c) (measure d) = true :=
-  leK_ofStatus c.tokenArticulated c.claimArticulated d.tokenArticulated d.claimArticulated h
+  leK_ofStatus c.subjectArticulated c.objectArticulated d.subjectArticulated d.objectArticulated h
 
 /-! ## The measured bridge to valuations -/
 

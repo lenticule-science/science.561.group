@@ -232,14 +232,14 @@ example (u : Utterance) :
 The token witness articulating supplies is always among the cell's own
 witnesses — nothing is merely asserted, everything is carried:
 
-{docstring Obsmetrologia.Articulating.head_token_mem_tokenSlot}
+{docstring Obsmetrologia.Articulating.head_token_mem_subjectSlot}
 
 Checked:
 
 ```lean
 example (a : Articulating) :
-    a.head.token ∈ (Articulating.cell a).tokenSlot :=
-  Articulating.head_token_mem_tokenSlot a
+    a.head.token ∈ (Articulating.cell a).subjectSlot :=
+  Articulating.head_token_mem_subjectSlot a
 ```
 
 The generated cell never sits at the un-articulated position: absurd (like

@@ -1,6 +1,6 @@
 ---
 title: Potential Articulation Cell
-description: The corner of articulating's codomain where the token hand is articulated and the claim hand is not. Every articulation produces it first: Obsmetrologia.Articulating.Cell.articulate_corner.
+description: The corner of articulating's codomain where the subject is filled and the object is not. Every articulation produces it first: Obsmetrologia.Articulating.Cell.articulate_corner.
 date-created: 2026-06-19
 date-modified: 2026-09-27
 keywords: ["potential-articulation-cell", "articulation-cell", "articulating", "token", "claim", "slot", "witness", "four-cell-partition", "potential"]
@@ -9,27 +9,26 @@ keywords: ["potential-articulation-cell", "articulation-cell", "articulating", "
 ## What this node is
 
 The **potential** articulation cell is the corner of the
-[articulation-cell](../../articulation-cell.md) partition where the **token
-slot holds a witness and the claim slot does not**: `(token: articulated, claim:
-not articulated)`. The [token](../../../../../contents/token/token.md) has been
-witnessed; the [claim](../../../../../contents/claim/claim.md) remains free.
+[articulation-cell](../../articulation-cell.md) partition where the **subject is
+filled and the object is not**: the utterance's own
+[token](../../../../../contents/token/token.md) stands as subject, and its
+[claim](../../../../../contents/claim/claim.md) has nothing yet to relate it to.
 
 ## What articulating always produces
 
 To **articulate** an utterance (`Obsmetrologia.Articulating.Cell.articulate`) is
-to place the utterance's own token in the token slot and leave the claim slot
+to put the utterance's own token in the subject slot and leave the object slot
 empty. That is the only cell a bare articulation ever produces
 (`Obsmetrologia.Articulating.Cell.articulate_corner`), at every floor of the
-recursion. The token hand goes first because articulating's one operation
-witnesses it first.
+recursion.
 
-With a witnessed token in hand the cell has something to say something *of*:
-it is the corner from which [predicating](predicating/predicating.md) proceeds,
-seeding the predication cell from the token it carries.
+With a subject in hand the cell has something to say something *of*: it is the
+corner from which [predicating](predicating/predicating.md) proceeds, seeding the
+reflexive predication cell ⟨token, claim, token⟩ from the token it carries.
 
 ## Position in the progression
 
-**Engaging** a potential cell with a witness on the claim hand
+**Engaging** a potential cell with a token in the object slot
 (`Obsmetrologia.Articulating.Cell.engage`) reaches
 [stable](../stable-articulation-cell/stable-articulation-cell.md)
 (`Obsmetrologia.Articulating.Cell.engage_articulate_corner`). Potential → stable
@@ -37,7 +36,7 @@ is the whole of articulating's own progression; neither
 [absurd](../absurd-articulation-cell/absurd-articulation-cell.md) nor
 [active](../active-articulation-cell/active-articulation-cell.md) lies on it.
 
-Articulation reads nothing as true, false or both; polarity and evidence enter only at positing, where the four corners are read as values.
+Articulation reads nothing as true, false or both; value enters only at positing, where the four corners are read as values.
 
 ## Orientation
 

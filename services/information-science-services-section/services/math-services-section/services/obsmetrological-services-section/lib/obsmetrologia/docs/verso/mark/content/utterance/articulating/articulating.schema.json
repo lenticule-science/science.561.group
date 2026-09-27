@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "mark/content/utterance/articulating",
   "title": "articulating",
-  "description": "Brings a relation into being by asserting it with positive evidence. One-way and inverse-less: to articulate a cell and for that cell to exist are the same act. The base morphism of the whole library.",
+  "description": "Brings a relation into being. One-way and inverse-less: to articulate a cell and for that cell to exist are the same act. The base morphism of the whole library.",
   "type": "object",
   "required": [
     "morphism",
@@ -20,7 +20,7 @@
     },
     "codomain": {
       "$ref": "mark/content/utterance/articulating/content/articulation-cell",
-      "description": "an articulation cell asserted with evidence above the knowledge-bottom"
+      "description": "an articulation cell whose subject is filled"
     }
   }
 }

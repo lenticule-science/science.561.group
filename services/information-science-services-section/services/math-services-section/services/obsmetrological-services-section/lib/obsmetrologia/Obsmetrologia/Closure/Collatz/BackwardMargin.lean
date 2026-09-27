@@ -305,9 +305,9 @@ directly-supplied cell), not an output of articulating. -/
 def firstPassageBackwardSeedCell (u : Utterance) (p : List Branch) (n : Nat)
     (_hseed : FirstPassageBackwardSeed p n) : Articulating.Cell where
   utterance := u
-  tokenSlot :=
+  subjectSlot :=
     if 0 < (parentD p * n - parentC p) / parentM p then [u.token] else []
-  claimSlot := [u.token]
+  objectSlot := [u.token]
 
 /-- For an actual first-passage backward seed, the bad seed is exactly the
 claim-without-token corner. -/
@@ -317,7 +317,7 @@ theorem firstPassageBackwardSeedCell_active_iff_bad
     (hseed : FirstPassageBackwardSeed p n) :
     (firstPassageBackwardSeedCell u p n hseed).corner =
       Articulating.Corner.active ↔ BadFirstPassageBackwardSeed p n := by
-  unfold firstPassageBackwardSeedCell Articulating.Cell.corner Articulating.Cell.tokenArticulated Articulating.Cell.claimArticulated
+  unfold firstPassageBackwardSeedCell Articulating.Cell.corner Articulating.Cell.subjectArticulated Articulating.Cell.objectArticulated
   by_cases hposNat : 0 < (parentD p * n - parentC p) / parentM p
   · rw [if_pos hposNat]
     have hpos : Ord.Le (Ord.succ Ord.zero) (firstPassageBackwardCarryQuotient p n) := by
@@ -361,7 +361,7 @@ theorem firstPassageBackwardSeedCell_stable_iff_not_bad
     (hseed : FirstPassageBackwardSeed p n) :
     (firstPassageBackwardSeedCell u p n hseed).corner =
       Articulating.Corner.stable ↔ ¬ BadFirstPassageBackwardSeed p n := by
-  unfold firstPassageBackwardSeedCell Articulating.Cell.corner Articulating.Cell.tokenArticulated Articulating.Cell.claimArticulated
+  unfold firstPassageBackwardSeedCell Articulating.Cell.corner Articulating.Cell.subjectArticulated Articulating.Cell.objectArticulated
   by_cases hposNat : 0 < (parentD p * n - parentC p) / parentM p
   · rw [if_pos hposNat]
     have hpos : Ord.Le (Ord.succ Ord.zero) (firstPassageBackwardCarryQuotient p n) := by
@@ -396,7 +396,7 @@ theorem firstPassageBackwardSeedCell_ne_absurd
     (hseed : FirstPassageBackwardSeed p n) :
     (firstPassageBackwardSeedCell u p n hseed).corner ≠
       Articulating.Corner.absurd := by
-  unfold firstPassageBackwardSeedCell Articulating.Cell.corner Articulating.Cell.tokenArticulated Articulating.Cell.claimArticulated
+  unfold firstPassageBackwardSeedCell Articulating.Cell.corner Articulating.Cell.subjectArticulated Articulating.Cell.objectArticulated
   by_cases hposNat : 0 < (parentD p * n - parentC p) / parentM p
   · rw [if_pos hposNat]
     intro h
@@ -412,7 +412,7 @@ theorem firstPassageBackwardSeedCell_ne_potential
     (hseed : FirstPassageBackwardSeed p n) :
     (firstPassageBackwardSeedCell u p n hseed).corner ≠
       Articulating.Corner.potential := by
-  unfold firstPassageBackwardSeedCell Articulating.Cell.corner Articulating.Cell.tokenArticulated Articulating.Cell.claimArticulated
+  unfold firstPassageBackwardSeedCell Articulating.Cell.corner Articulating.Cell.subjectArticulated Articulating.Cell.objectArticulated
   by_cases hposNat : 0 < (parentD p * n - parentC p) / parentM p
   · rw [if_pos hposNat]
     intro h

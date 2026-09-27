@@ -18,8 +18,8 @@ one `Token` and one `Claim` — the two hands, typed. It is the **domain** of
 Token first, claim second; the ordering is load-bearing.
 
 An utterance is *not* an act — it articulates nothing. It is the pair that
-articulating takes as input. Its two-sidedness is exactly what gives articulating's
-codomain its four-cell partition.
+articulating takes as input. Articulating places its token as the subject of a
+predication; the object comes from the utterance an articulating is paired over.
 
 No free data is introduced here: a token and a claim are each built entirely
 from one `Mark`, and an utterance is built entirely from one token and one

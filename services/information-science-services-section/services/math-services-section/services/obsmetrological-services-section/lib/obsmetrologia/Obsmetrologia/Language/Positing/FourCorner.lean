@@ -4,9 +4,9 @@ import Obsmetrologia.Language.Positing.Four
 /-!
 # FourCorner — the articulation corners read as positing's values
 
-Articulating partitions a cell by which hands of its utterance are articulated: the
+Articulating opens predications, each with two positions, subject and object; the
 four corners `absurd`, `potential`, `active`, `stable` are the four patterns of
-`(token articulated, claim articulated)`, the canonical object
+`(subject filled, object filled)`, the canonical object
 `Articulating.FourCorner := Bool × Bool`. Articulation names them and nothing more.
 
 Positing admits value, and its value object is that same four-point object
@@ -20,8 +20,8 @@ positing introduces. They are not readings articulating makes.
 
 namespace Obsmetrologia
 
-/-- The canonical four-corner object: which of the utterance's two hands are
-articulated. -/
+/-- The canonical four-corner object: which of a predication's two positions,
+subject and object, are filled. -/
 abbrev Articulating.FourCorner := Bool × Bool
 
 namespace Articulating.FourCorner
@@ -36,7 +36,7 @@ def ofCorner (c : Articulating.Corner) : Articulating.FourCorner := Articulating
 @[simp] theorem ofCorner_toCorner (s : Articulating.FourCorner) : ofCorner (toCorner s) = s := by
   obtain ⟨a, b⟩ := s; cases a <;> cases b <;> rfl
 
-/-- `Articulating.FourCorner ≃ Articulating.Corner`: the four hand-patterns are the four
+/-- `Articulating.FourCorner ≃ Articulating.Corner`: the four position patterns are the four
 corners. Since positing's `Reading := Articulating.Corner`, positing's value object is
 this same four-point object. -/
 def cornerBij : Bij Articulating.FourCorner Articulating.Corner where
@@ -47,10 +47,9 @@ def cornerBij : Bij Articulating.FourCorner Articulating.Corner where
 
 end Articulating.FourCorner
 
-/-- A cell's articulation pattern: whether its token hand and its claim hand are
-articulated. -/
+/-- A cell's articulation pattern: whether its subject and its object are filled. -/
 def Articulating.Cell.fourCorner (c : Articulating.Cell) : Articulating.FourCorner :=
-  (c.tokenArticulated, c.claimArticulated)
+  (c.subjectArticulated, c.objectArticulated)
 
 /-- **The articulation pattern is the corner.** A cell's `(token, claim)` articulation
 pattern, read as a four-corner, is its corner; and since positing's value object is the
@@ -63,16 +62,16 @@ pattern, as a four-corner, is a `Reading`. -/
 theorem articulation_phase_reading (c : Articulating.Cell) :
     (Articulating.FourCorner.toCorner c.fourCorner : Reading) = c.corner := rfl
 
-/-- The absurd corner, where neither hand is articulated, is read at positing as the
+/-- The absurd corner, where neither position is filled, is read at positing as the
 knowledge-bottom `⊥ₖ`, the value positing seeds before anything is admitted. Articulating
 never produces this corner. -/
 theorem absurd_is_kBot (u : Utterance) :
     Articulating.FourCorner.toCorner (Articulating.Cell.unarticulated u).fourCorner = Reading.kBot := rfl
 
-/-- A freshly articulated cell is at the potential corner (token hand articulated,
-claim hand not). Read at positing in the truth order, that point is the Belnap
-value `t`. The truth-order reading is positing's; articulating itself only places
-the token. -/
+/-- A freshly articulated cell is at the potential corner (subject filled,
+object not). Read at positing in the truth order, that point is the Belnap
+value `t`. The truth-order reading is positing's; articulating itself only fills
+the subject. -/
 theorem articulate_is_tTop (u : Utterance) :
     Articulating.FourCorner.toCorner (Articulating.Cell.articulate u).fourCorner = Reading.tTop := rfl
 

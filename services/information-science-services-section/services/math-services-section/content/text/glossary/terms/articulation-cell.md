@@ -1,22 +1,22 @@
 ---
 name: Articulation Cell
-description: "Articulating's codomain: an utterance together with, on each of its two hands, the witnesses that hand has been articulated by. Which hands are articulated gives exactly four corners: absurd, potential, active, stable."
+description: "Articulating's codomain: an utterance with a slot for each position of the predication it opens, subject and object. Which positions are filled gives exactly four corners: absurd, potential, active, stable."
 aliases: [articulation cells, corner, corners, four corners, absurd, potential, active, stable]
 ---
-An **articulation cell** is an [utterance](utterance.md) together with, on each of its two hands, the [witnesses](witness.md) that hand has been articulated by: a token slot and a claim slot ([`Articulation/Articulating/Cell.lean`](../../../../services/obsmetrological-services-section/lib/obsmetrologia/Obsmetrologia/Articulation/Articulating/Cell.lean)). A hand is articulated when its slot holds a witness. Slots only grow and nothing is removed, so a cell keeps every witness it was given.
+An **articulation cell** is an [utterance](utterance.md) together with a slot for each position of the predication articulating opens: a **subject** slot and an **object** slot, each holding the token [witnesses](witness.md) that fill it ([`Articulation/Articulating/Cell.lean`](../../../../services/obsmetrological-services-section/lib/obsmetrologia/Obsmetrologia/Articulation/Articulating/Cell.lean)). The claim is the relation between subject and object, not a third position. A position is filled when its slot holds a witness. Slots only grow and nothing is removed, so a cell keeps every witness it was given.
 
-The two statuses give exactly four **corners** (`Articulating.Corner.card_eq_four`, proved, not postulated):
+Two positions, each filled or empty, give exactly four **corners** (`Articulating.Corner.card_eq_four`, proved, not postulated):
 
-| Corner | token hand | claim hand |
+| Corner | subject | object |
 |---|---|---|
-| absurd | not articulated | not articulated |
-| potential | articulated | not articulated |
-| active | not articulated | articulated |
-| stable | articulated | articulated |
+| absurd | empty | empty |
+| potential | filled | empty |
+| active | empty | filled |
+| stable | filled | filled |
 
-These are articulation's names for its corners. Articulation reads nothing as true or false. At [positing](positing.md), which introduces value and its two orders, the same four points become values, and there the truth order reads them with Belnap's names ([`Positing/FourCorner.lean`](../../../../services/obsmetrological-services-section/lib/obsmetrologia/Obsmetrologia/Language/Positing/FourCorner.lean)).
+These are articulation's names for its corners. Articulation reads nothing as true or false. Value enters at [positing](positing.md), which introduces value and its two orders; there the same four points become values, and the truth order reads them with Belnap's names ([`Positing/FourCorner.lean`](../../../../services/obsmetrological-services-section/lib/obsmetrologia/Obsmetrologia/Language/Positing/FourCorner.lean)).
 
-**How cells move.** Articulating puts the utterance's own token in the token slot, so a freshly articulated cell is potential. Engaging adds a witness to the claim slot, reaching stable. Merging two cells joins their slots. *Absurd* and *active* are never articulating's output: absurd is the position a cell would hold before any articulation reaches it, and active, the claim hand articulated without the token hand, is reached only downstream.
+**How cells move.** Articulating puts the utterance's own token in the subject slot, so a freshly articulated cell is potential. Engaging puts a token in the object slot, reaching stable: an utterance articulated over another takes the token of the utterance beneath it as its object, so a relation between two different tokens is stable by construction, a complete predication. Merging two cells joins their slots. *Absurd* and *active* are never articulating's output: absurd is the position a cell would hold before any articulation reaches it, and active, an object with no subject, is reached only downstream.
 
 ## Related
 

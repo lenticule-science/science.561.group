@@ -100,19 +100,19 @@ token slot already is that singleton — the "measured" shape `PotentialCell.toC
 = articulate` produces. Without that hypothesis the claim is false in general
 (a second token witness alongside `c.val.utterance.token` is silently forgotten). -/
 theorem toSubtype_ofSubtype (c : Potential)
-    (h : c.val.tokenSlot = [c.val.utterance.token]) : toSubtype (ofSubtype c) = c := by
+    (h : c.val.subjectSlot = [c.val.utterance.token]) : toSubtype (ofSubtype c) = c := by
   apply Subtype.ext
   show Articulating.Cell.articulate c.val.utterance = c.val
-  have hpair : (c.val.tokenArticulated, c.val.claimArticulated) = (true, false) := by
-    rw [← Articulating.Corner.toStatus_ofStatus c.val.tokenArticulated c.val.claimArticulated]
+  have hpair : (c.val.subjectArticulated, c.val.objectArticulated) = (true, false) := by
+    rw [← Articulating.Corner.toStatus_ofStatus c.val.subjectArticulated c.val.objectArticulated]
     exact congrArg Articulating.Corner.toStatus c.property
-  have hk : c.val.claimArticulated = false := congrArg Prod.snd hpair
-  have hclaim : c.val.claimSlot = [] := by
-    cases hcs : c.val.claimSlot with
+  have hk : c.val.objectArticulated = false := congrArg Prod.snd hpair
+  have hclaim : c.val.objectSlot = [] := by
+    cases hcs : c.val.objectSlot with
     | nil => rfl
     | cons x xs =>
         exfalso
-        rw [Articulating.Cell.claimArticulated, hcs] at hk
+        rw [Articulating.Cell.objectArticulated, hcs] at hk
         cases hk
   show Articulating.Cell.mk c.val.utterance [c.val.utterance.token] [] = c.val
   rw [← h, ← hclaim]

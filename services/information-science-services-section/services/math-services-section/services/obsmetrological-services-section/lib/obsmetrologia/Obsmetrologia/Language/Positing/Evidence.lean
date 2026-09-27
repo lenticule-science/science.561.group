@@ -63,7 +63,7 @@ def Measured (x : Valued) : Prop := x.value = x.presence
 
 /-- Read a cell as a valued value: the corner is the value, the two slots are
 the evidence. -/
-def ofCell (c : Articulating.Cell) : Valued := ⟨c.corner, (c.tokenSlot, c.claimSlot)⟩
+def ofCell (c : Articulating.Cell) : Valued := ⟨c.corner, (c.subjectSlot, c.objectSlot)⟩
 
 /-- **Articulating measures.** A cell's own corner is exactly its own
 presence: `ofCell` is always `Measured`. -/

@@ -2,25 +2,25 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "mark/content/utterance/articulating/content/articulation-cell",
   "title": "articulation-cell",
-  "description": "The object of articulating's codomain - an utterance together with a record, for each side, of whether that side has been articulated. Its two independent statuses give the four-cell partition.",
+  "description": "The object of articulating's codomain - an utterance together with a slot for each position of the predication it opens, subject and object. Which positions are filled gives the four-cell partition.",
   "type": "object",
   "required": [
     "utterance",
-    "token-articulated",
-    "claim-articulated"
+    "subject-filled",
+    "object-filled"
   ],
   "properties": {
     "utterance": {
       "$ref": "mark/content/utterance",
       "description": "the pair the cell is built on"
     },
-    "token-articulated": {
+    "subject-filled": {
       "type": "boolean",
-      "description": "whether the token side has been articulated"
+      "description": "whether the subject position holds a token witness"
     },
-    "claim-articulated": {
+    "object-filled": {
       "type": "boolean",
-      "description": "whether the claim side has been articulated"
+      "description": "whether the object position holds a token witness"
     }
   }
 }

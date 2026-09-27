@@ -1,6 +1,6 @@
 ---
 title: Articulating
-description: "The base morphism of the whole library. Articulating takes an utterance — an ordered pair of a token and a claim, the two kinds of mark — and brings a relation into being by asserting it with positive evidence. It is one-way and inverse-less: to articulate a cell and for that cell to exist are the same act. Every later morphism (predicating, positing, settling) is generated downstream of what articulating first makes relate."
+description: "The base morphism of the whole library. Articulating takes an utterance — an ordered pair of a token and a claim, the two kinds of mark — and brings a relation into being. It is one-way and inverse-less: to articulate a cell and for that cell to exist are the same act. Every later morphism (predicating, positing, settling) is generated downstream of what articulating first makes relate."
 date-created: 2026-06-19
 date-modified: 2026-06-19
 keywords: ["articulating", "morphism", "utterance", "mark", "token", "claim", "relation", "generative-base", "curry-howard", "proof-path", "predication-cell"]
@@ -13,15 +13,13 @@ generative unfolding, the one every other morphism is reached *from*. Its domain
 is the [utterance](../utterance.md): an ordered pair of a
 [token](../../token/token.md) and a [claim](../../claim/claim.md),
 the two kinds of [mark](../../../mark.md). Articulating takes that
-carrier and **brings a relation into being** — it asserts the related, with
-positive evidence, where before there was only the unrelated.
+carrier and **brings a relation into being** where before there was only relationlessness.
 
 Read as a typed arrow it is
 
 $$\alpha : \text{utterance} \rightsquigarrow \varphi$$
 
-carrying an utterance to an articulated cell $\varphi$ asserted with evidence
-strictly above the knowledge-bottom $\bot$. The cell **exists in the category by
+carrying an utterance to an articulated cell $\varphi$ whose subject is filled. The cell **exists in the category by
 being articulated**: existence and articulation are one act, not two. There is
 nothing said *of* the cell yet — predication is the next morphism — there is
 only the related, brought to stand.
@@ -52,10 +50,11 @@ premise every later conclusion descends from:
 
 ## What it generates
 
-Articulating's codomain is a charged, articulated cell. Its **four-cell
-partition** — by which side of the utterance got articulated (token, claim,
-both, neither) — is forced by the two-sidedness of the utterance, and is the
-seed structure the next morphism, **predicating**, composes over. The objects
+Articulating's codomain is an articulated cell. Its **four-cell partition**,
+by which positions of the predication are filled (subject, object, both,
+neither), is forced by the predication's two positions, and is the seed
+structure the next morphism, **predicating**, composes over. Value enters later,
+at positing. The objects
 articulating presupposes live above articulating under [`mark`](../../../mark.md): the
 [mark](../../../mark.md), the two kinds of mark
 [token](../../token/token.md) and [claim](../../claim/claim.md), and

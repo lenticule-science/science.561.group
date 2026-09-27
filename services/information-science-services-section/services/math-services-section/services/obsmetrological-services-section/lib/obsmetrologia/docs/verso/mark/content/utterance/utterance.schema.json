@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "mark/content/utterance",
   "title": "utterance",
-  "description": "The ordered pair of one token and one claim - articulating's domain. Not an act of articulation but the structured carrier the act is applied to; its two-sidedness gives articulating's codomain its four-cell partition.",
+  "description": "The ordered pair of one token and one claim - articulating's domain. Not an act of articulation but the structured carrier the act is applied to; articulating places its token as the subject of a predication.",
   "type": "object",
   "required": [
     "token",

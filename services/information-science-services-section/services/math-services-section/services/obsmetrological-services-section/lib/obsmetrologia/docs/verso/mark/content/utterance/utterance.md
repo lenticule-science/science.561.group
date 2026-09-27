@@ -1,6 +1,6 @@
 ---
 title: Utterance
-description: The pair of a token and a claim, each a typed hand carrying one mark — Obsmetrologia.Utterance, articulating's domain and the theory's sole admission boundary. Not itself an act of articulation but the structured pair the act is applied to. Its two-sidedness gives articulating's codomain its four-cell partition; primitive utterances bottom out the articulating recursion in finite leaves.
+description: The pair of a token and a claim, each a typed hand carrying one mark — Obsmetrologia.Utterance, articulating's domain and the theory's sole admission boundary. Not itself an act of articulation but the structured pair the act is applied to. Articulating places its token as the subject of a predication; primitive utterances bottom out the articulating recursion in finite leaves.
 date-created: 2026-06-19
 date-modified: 2026-09-21
 keywords: ["utterance", "token", "claim", "mark", "articulating", "carrier", "pair", "domain", "admission-boundary", "four-cell-partition", "inductive-base"]
@@ -33,12 +33,11 @@ correcting.
 ## A carrier, not an act
 
 An utterance **does not articulate anything**; it is the structured pair that
-articulating takes as input. The two-sidedness — token on one hand, claim on
-the other — is precisely what gives articulating's codomain its **four-cell
-partition**: for each hand, a **slot** of witnesses that hand's articulating
-has deposited — present or empty. Without the pair structure articulating
-would have only one witness slot to track, and the four cells the system
-relies on downstream would collapse to two.
+articulating takes as input. Articulating places the utterance's token as the
+**subject** of a predication, and the claim is the relation it asserts; the
+**object** is filled by the token of the utterance an articulating is paired
+over. The four cells of articulating's codomain are the four patterns of which
+of those two positions, subject and object, are filled.
 
 ## Position in the chain
 
@@ -96,15 +95,13 @@ An **utterance** is the ordered pair of one [token](../token/token.md) and one
 carrier the articulating act is applied to. Token first, claim second.
 
 An utterance **does not articulate anything**; it is the structured pair that
-articulating takes as input. The two-sidedness — token on one side, claim on the
-other — is precisely what gives articulating's codomain its **four-cell
-partition**: token articulated, claim articulated, both, or neither. Without the
-pair structure articulating would have only two articulation-statuses to track,
-and the four cells the system relies on downstream would collapse to two.
+articulating takes as input. Its token becomes the subject of the predication
+articulating opens and its claim the relation; the four cells of articulating's
+codomain are the patterns of which positions, subject and object, are filled.
 
 The chain runs: **utterance**, then **articulating** which takes an utterance and
-produces a charged, articulated form, then the four cells that partition
-articulating's outputs by which side of the input got articulated. The utterance
+produces an articulated form, then the four cells that partition articulating's
+outputs by which positions of the predication are filled. The utterance
 sits at the **bottom** of this chain — it is the structure articulating
 presupposes, not one articulating constructs.
 
