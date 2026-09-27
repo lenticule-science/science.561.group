@@ -86,7 +86,7 @@
         "target": "epub",
         "configuration": {
           "profile": "epub-screen-pdf-v1",
-          "editionInputDigest": "ni:///sha-256;CcAaX3zXL3eUVEDVzTr1n7z6thp0s06nuwKgm-9h0j8"
+          "editionInputDigest": "ni:///sha-256;Td3DAK-PiviZhYNpGIUM7huDjdxrftV7kc5xvEICvgU"
         },
         "sourceSpan": {
           "type": "ArtifactFabricationSourceSpan",
@@ -101,7 +101,7 @@
         "target": "screen-pdf",
         "configuration": {
           "profile": "epub-screen-pdf-v1",
-          "editionInputDigest": "ni:///sha-256;CcAaX3zXL3eUVEDVzTr1n7z6thp0s06nuwKgm-9h0j8"
+          "editionInputDigest": "ni:///sha-256;Td3DAK-PiviZhYNpGIUM7huDjdxrftV7kc5xvEICvgU"
         },
         "sourceSpan": {
           "type": "ArtifactFabricationSourceSpan",
@@ -142,13 +142,13 @@
         ]
       }
     ],
-    "specificationDigest": "ni:///sha-256;2xsxc0Is89fiW-l_8zm4YD3eXoBiTljR_50ELIFa_dw"
+    "specificationDigest": "ni:///sha-256;j4LEBwcZ5ZR2ZE72S6WoQD_kBrVrAfQWuZc_efC9LRc"
   },
   "plan": {
     "type": "ArtifactFabricationRealizationPlan",
     "version": 1,
     "artifactId": "project-management-course-by-course-edition",
-    "specificationDigest": "ni:///sha-256;2xsxc0Is89fiW-l_8zm4YD3eXoBiTljR_50ELIFa_dw",
+    "specificationDigest": "ni:///sha-256;j4LEBwcZ5ZR2ZE72S6WoQD_kBrVrAfQWuZc_efC9LRc",
     "projectionIds": [
       "epub",
       "screen-pdf"
@@ -179,14 +179,14 @@
     "epub": {
       "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/561-group-services-section/data/state/editions/project-management-course-by-course/project-management-course-by-course.epub",
       "bytes": 162843,
-      "sha256": "ni:///sha-256;v8QqvsUGDIaK4x4Ijx264wQuzI4CnBmOc_7QMNeRvlA"
+      "sha256": "ni:///sha-256;fsst7jYF4U4Blw-mgokhrcjRsw305sWj9Qt1rCRsL30"
     },
     "screenPdf": {
       "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/561-group-services-section/data/state/editions/project-management-course-by-course/project-management-course-by-course.pdf",
-      "bytes": 256125,
-      "sha256": "ni:///sha-256;j1OQx9xx2EzDTg7I0sRXS3wiBYep46yCpEEjit8mU90"
+      "bytes": 256098,
+      "sha256": "ni:///sha-256;0JAXm70zNXghS2J0n6MZDgiQ1A95WdH30epkYWsZHKY"
     },
-    "buildRecordDigest": "ni:///sha-256;-N-tnM1LZkJ7GPQW0kvUJefFazezX_DbF9xxvVUeNa4"
+    "buildRecordDigest": "ni:///sha-256;XBClwzvSU94qsAxuOl9YHIQQQV8nvqDDURhKd3TWvAs"
   },
   "formatEvidence": {
     "renderer": {

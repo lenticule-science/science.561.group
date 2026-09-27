@@ -86,7 +86,7 @@
         "target": "epub",
         "configuration": {
           "profile": "epub-screen-pdf-v1",
-          "editionInputDigest": "ni:///sha-256;imEBnRSPEDKanE2UP5gyCVSom3K9wD9xtAgGv76w8VU"
+          "editionInputDigest": "ni:///sha-256;tbD5fGTZJNAP9IWeAq46-iDXIpRkS7O8duCVfM14DIc"
         },
         "sourceSpan": {
           "type": "ArtifactFabricationSourceSpan",
@@ -101,7 +101,7 @@
         "target": "screen-pdf",
         "configuration": {
           "profile": "epub-screen-pdf-v1",
-          "editionInputDigest": "ni:///sha-256;imEBnRSPEDKanE2UP5gyCVSom3K9wD9xtAgGv76w8VU"
+          "editionInputDigest": "ni:///sha-256;tbD5fGTZJNAP9IWeAq46-iDXIpRkS7O8duCVfM14DIc"
         },
         "sourceSpan": {
           "type": "ArtifactFabricationSourceSpan",
@@ -142,13 +142,13 @@
         ]
       }
     ],
-    "specificationDigest": "ni:///sha-256;31hcvhTmE3Jg4YMpL1b7hbvF83JOeuB9TM3DvLBLnDo"
+    "specificationDigest": "ni:///sha-256;Y3JIc_DrMdH0EKq2UnT5OlDmtSzVV0rtKZCKvSHebQE"
   },
   "plan": {
     "type": "ArtifactFabricationRealizationPlan",
     "version": 1,
     "artifactId": "business-management-course-by-course-edition",
-    "specificationDigest": "ni:///sha-256;31hcvhTmE3Jg4YMpL1b7hbvF83JOeuB9TM3DvLBLnDo",
+    "specificationDigest": "ni:///sha-256;Y3JIc_DrMdH0EKq2UnT5OlDmtSzVV0rtKZCKvSHebQE",
     "projectionIds": [
       "epub",
       "screen-pdf"
@@ -178,15 +178,15 @@
   "artifacts": {
     "epub": {
       "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/561-group-services-section/data/state/editions/business-management-course-by-course/business-management-course-by-course.epub",
-      "bytes": 137353,
-      "sha256": "ni:///sha-256;xzPO2hyfPP0VzQZFJat9kFXP1cuXXTYN0ON80lQS2ZU"
+      "bytes": 140157,
+      "sha256": "ni:///sha-256;isYqnK3NassmeFXyzuugbypPlJhxKYWzEkxX0ejtgcI"
     },
     "screenPdf": {
       "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/561-group-services-section/data/state/editions/business-management-course-by-course/business-management-course-by-course.pdf",
-      "bytes": 175635,
-      "sha256": "ni:///sha-256;mB-NHQNHVnw4okDzG_yoOfMTk-UO0ABdJlEEJPgevaM"
+      "bytes": 186522,
+      "sha256": "ni:///sha-256;YS_YqfFYRcjS6O5c9hW5GsImmgXCGg8pWlTaZ4pqT7g"
     },
-    "buildRecordDigest": "ni:///sha-256;hKgNzjYx1OWgLtouh84CLxGQun3aoS1l44hmPJ8z1lA"
+    "buildRecordDigest": "ni:///sha-256;JtKiB2_qlz7pCjrlSelbBeJZBL5lo6pOKK2BgcMNTGc"
   },
   "formatEvidence": {
     "renderer": {

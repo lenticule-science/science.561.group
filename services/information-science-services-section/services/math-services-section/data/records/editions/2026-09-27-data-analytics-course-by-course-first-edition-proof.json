@@ -1,15 +1,15 @@
 {
   "type": "EbookEditionProof",
   "version": 1,
-  "editionInputDigest": "ni:///sha-256;yfvbwY1d2lRZFHi5U_UuY-JHuM56DFWrPU18YaOL7MM",
+  "editionInputDigest": "ni:///sha-256;qb4KhaJp2qoowwpOHzKZkFGg-a6RP98fR5GKedAOaPM",
   "artifacts": {
-    "epub": "ni:///sha-256;LGyMPlaGurIwCtRmUw7HLXx0dnwC5LxL4qylTIgSxkQ",
-    "screenPdf": "ni:///sha-256;2b6GXnCXI-orUoo5DTkSL-m3srxM2eMpiB7UuixW8MY"
+    "epub": "ni:///sha-256;cgVOVku5aQZ4UEvpzTanFPZM2Ho76wPzKi346Zf9MUU",
+    "screenPdf": "ni:///sha-256;uex_ed-XpP_hD_YMVopelRjRm0AElGza3QDQM-rDy1s"
   },
   "proofer": "independent proofreading agent (claude-opus-5-5 subagent)",
   "writer": "claude-opus-5-5 (bare-cedar-fog-claude session d6271b1b)",
-  "provedAt": "2026-09-27T22:07:56Z",
-  "method": "First verification pass: diffed the edition text against the prior one line by line (31 hunks, 171 changed lines), re-read the evidence packet directly, re-ran pd.cut with include_lowest=True, recomputed the finite-population-correction arithmetic, and re-swept the style guide's banned lists. Second verification pass: diffed the layout edition against the previous one (30 hunks, 417 diff lines), confirmed every hunk besides the g1 rewrite was pure pagination reflow, recomputed g1's rewritten arithmetic with math.ceil, and spot-checked two tables for the keep-with-table fix. Third verification pass (this one): diffed this edition's text against the layout edition (11 hunks, 169 diff lines) -- confirmed every changed line is a TOC or in-body section-number prefix being removed (\"0.1\"-\"0.6\" from About this book, \"8.10\"-\"8.13\" from A study plan), one running-header falling back to \"CONTENTS\" once its section lost its number, and cosmetic dot-leader/indent realignment cascading from the shorter headings, plus the expected build-hash change; no wording changed anywhere, and chapters 1-8's own internal numbering (1.1, 2.1, etc.) is untouched.",
+  "provedAt": "2026-09-27T22:30:23Z",
+  "method": "First verification pass: diffed the edition text against the prior one line by line (31 hunks, 171 changed lines), re-read the evidence packet directly, re-ran pd.cut with include_lowest=True, recomputed the finite-population-correction arithmetic, and re-swept the style guide's banned lists. Second verification pass: diffed the layout edition against the previous one (30 hunks, 417 diff lines), confirmed every hunk besides the g1 rewrite was pure pagination reflow, recomputed g1's rewritten arithmetic with math.ceil, and spot-checked two tables for the keep-with-table fix. Third verification pass: diffed the section-numbering edition against the layout edition (11 hunks, 169 diff lines) and confirmed every changed line was a section-number prefix being stripped from an unnumbered chapter's TOC/heading entries, plus cosmetic realignment. Fourth verification pass (this one): diffed this edition's text against the section-numbering edition -- exactly one line changed anywhere in the 2477-line file, the page-8 running head (\"CONTENTS\" -> \"About this book\"); the embedded colophon build-record hash is unchanged (evidently a content-only digest, insensitive to a header-only edit), and no wording changed. Spot-checked the back matter's odd pages (57 in the study plan, 59 in the glossary): both already correctly show the generic book-title running head \"Data Analytics, Course by Course\" used throughout the book's odd pages, unaffected by the even-page section-header defect; confirmed no other unnumbered part (study plan, glossary, references) has an interior even page carrying a distinct running head, so page 8 was the only place this defect was visible in the rendered book.",
   "findings": [
     {
       "id": "f1",
@@ -144,6 +144,15 @@
       "claim": "In the prior PDF editions, sections belonging to an unnumbered chapter were numbered as if they continued the previous chapter: the front matter's TOC and running heads read \"0.1 An independent companion\" through \"0.6 Who wrote it\" (About this book has no chapter number of its own, so these rendered as chapter '0'), and the study plan's sections read \"8.10 The rule\" through \"8.13 Before interviews\" (continuing Chapter 8's numbering, though the study plan is its own unnumbered part after Chapter 8, same as the Glossary and References that follow it).",
       "source": "Diffed this edition's text against the prior (layout) edition: every one of the 11 diff hunks is a section-number prefix being stripped from the TOC and the matching in-body heading -- \"0.1 An independent companion\" -> \"An independent companion\" (and identically for 0.2-0.6), \"8.10 The rule\" -> \"The rule\" (and identically for 8.11-8.13) -- plus the page-8 running head falling back from \"0.5. WHAT THIS BOOK DOESN'T DO\" to \"CONTENTS\" now that the section it would have named has no number, and small dot-leader/indent realignment that follows from the shorter headings. No wording changed anywhere, and Chapters 1-8's own section numbers (1.1, 2.1, ... 8.9) are untouched, confirming the fix (templates/book-layout.lua marking these sections unnumbered) is scoped to exactly the two places this affected.",
       "fix": "Verified fixed: About this book's and the study plan's subsections no longer carry numbers in either the table of contents or their in-body headings.",
+      "resolution": "fixed"
+    },
+    {
+      "id": "g3",
+      "file": "00-about-this-book.md",
+      "severity": "correction",
+      "claim": "Pages inside an unnumbered chapter (About this book, the study plan, the glossary, references) carried the running head of whatever numbered section came before them, rather than their own chapter's name: page 8, inside \"About this book,\" read \"0.5. WHAT THIS BOOK DOESN'T DO\" before g2's fix and then the generic fallback \"CONTENTS\" after g2's fix -- neither names the chapter the reader is actually in.",
+      "source": "Diffed this edition's text against the section-numbering edition: exactly one line differs in the whole 2477-line file -- page 8's running head changes from \"CONTENTS\" to \"About this book.\" Spot-checked the other unnumbered parts' odd pages (57, 59) and confirmed they already show the correct, unaffected generic book-title running head; none of the study plan, glossary or references has an interior even page that would have carried a distinct (and therefore possibly stale) running head, so \\markboth-ing the chapter title right after the heading, as book-layout.lua now does, was only visibly needed on this one page -- but it is the correct general fix, since it sets the running head from the unnumbered chapter's own title rather than falling back to a neighboring section's name or a generic label, for any unnumbered chapter that does span an interior even page.",
+      "fix": "Verified fixed: page 8's running head now reads \"About this book,\" matching the chapter it is actually on.",
       "resolution": "fixed"
     }
   ]
