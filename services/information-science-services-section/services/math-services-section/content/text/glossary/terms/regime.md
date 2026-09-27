@@ -4,6 +4,7 @@ description: "The character of a closure, read off its closure ordinal κ: stric
 identity: regime
 aliases: [regimes, closure regime, closure regimes]
 date-created: 2026-09-04
+date-modified: 2026-09-27
 provenance:
   authors:
     - emsenn
@@ -29,7 +30,7 @@ The four regimes are not four kinds of settling. Each is the regime of one stage
 
 Read along the spine, articulate → predicate → posit → settle, the regime descends. The classifier therefore tells which stage's work a closure is doing: a rule system run as settling whose premises carry ∀-blocks is doing predicating work, and one whose rules are step-n recurrences is articulating.
 
-Obsmetrologia does not yet state this pairing. `Closure/Regime.lean` instead maps each regime to a corner of the four-valued reading (`regimeCornerBij`: strict to absurd, Scott to potential, transfinite-bounded to active, aperiodic to stable); that assignment identifies the four regimes with the four readings inside a stage and is not the pairing given here.
+Obsmetrologia states this pairing as `Stage.regime` and its inverse `ClosureRegime.stage` (`regimeStageBij`), and proves the spine settles in the settling stage's regime (`spine_settles_in_settling_regime`). Until 2026-09-27 it instead mapped each regime to a corner of the four-valued reading (strict to absurd, aperiodic to stable). That map identified the four regimes with the four readings inside one stage. Any two four-element sets are in bijection, so the map carried no content, and it was removed. A regime is the character of a stage's closure; a corner is a value inside a stage. In code, metrologic's `stageOfRegime` reads the stage off a regime, and knowing's `gauge` and the multi-chain finality assay report both.
 
 ## Engineering consequence
 

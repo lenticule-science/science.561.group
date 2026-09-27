@@ -30,10 +30,12 @@ the corpus's two implications
 
 as structure fields. On this `ClosureRegimeData` we prove the **four-regime dichotomy**:
 the four characterizations are mutually exclusive and jointly exhaustive, and
-`classify` selects the unique one. The four regimes **are** the recurring FOUR — a
-bijection `ClosureRegime ≃ Articulating.Corner` (`regimeCornerBij`, with the conflation `regime_is_four_corner`). The spine's ClosureRegimeData has
-`finiteBase = true`, so `classify` puts it in `strict` (`spine_is_strict`),
-re-expressing `ClosureOrdinal.strict_finite`'s `κ ≤ 3`. Finally we record the
+`classify` selects the unique one. Each regime is the regime of one stage of the language
+spine (`Stage.regime`): articulating aperiodic, predicating transfinite-bounded, positing
+Scott-continuous, settling strict-finite. The spine's ClosureRegimeData has
+`finiteBase = true`, so `classify` puts it in `strict` (`spine_is_strict`), the settling
+stage's regime (`spine_settles_in_settling_regime`), re-expressing
+`ClosureOrdinal.strict_finite`'s `κ ≤ 3`. Finally we record the
 dichotomy's **regime-dependent cohomology** table: `H¹ = 0` exactly in the strict and
 Scott regimes; the KZ diamond is fully alive only aperiodically.
 -/
@@ -158,47 +160,52 @@ theorem four_regime_dichotomy (d : ClosureRegimeData) :
   ⟨classify_exhaustive d, classify_strict d, classify_scott d,
     classify_transfiniteBounded d, classify_aperiodic d⟩
 
-/-! ## (D) The four regimes ARE the recurring FOUR
+/-! ## (D) Each regime is the regime of one stage
 
-A bijection `ClosureRegime ≃ Articulating.Corner`, matching each regime to its articulation phase:
-strict ↦ absurd, Scott ↦ potential, transfinite-bounded ↦ active, aperiodic ↦ stable.
-The strict regime sits at the descent's seed (`absurd`); the aperiodic regime — the
-only one where the KZ diamond is fully alive — sits at the told-both `stable`
-corner. Reuses the `Bij` record of `Four.lean`. -/
+The four regimes pair with the four stages of the language spine, in order: articulating is
+aperiodic, predicating is transfinite-bounded, positing is Scott-continuous, and settling is
+strict-finite. Read along the spine the regime descends, each stage's characteristic closure
+tamer than the one before it; section (E) proves the last pairing for the spine itself
+(`spine_settles_in_settling_regime`).
 
-/-- A regime as its articulation-phase corner. -/
-def ClosureRegime.toCorner : ClosureRegime → Articulating.Corner
-  | strict => Articulating.Corner.absurd
-  | scott => Articulating.Corner.potential
-  | transfiniteBounded => Articulating.Corner.active
-  | aperiodic => Articulating.Corner.stable
+A regime is the character of one stage's closure; a corner (`Articulating.Corner`) is a value
+inside a stage. The two fours are different objects and are not identified here. -/
 
-/-- A corner as its regime. -/
-def ClosureRegime.ofCorner : Articulating.Corner → ClosureRegime
-  | Articulating.Corner.absurd => ClosureRegime.strict
-  | Articulating.Corner.potential => ClosureRegime.scott
-  | Articulating.Corner.active => ClosureRegime.transfiniteBounded
-  | Articulating.Corner.stable => ClosureRegime.aperiodic
+/-- The four stages of the language spine, in the order the spine composes them. -/
+inductive Stage where
+  /-- Articulating: an utterance brings a relation into being; its closure is aperiodic. -/
+  | articulating
+  /-- Predicating: an articulated relation read as a claim of a subject toward an object;
+its closure is transfinite-bounded. -/
+  | predicating
+  /-- Positing: evidence admitted at predicated cells, measured off a trace; its closure is
+Scott-continuous. -/
+  | positing
+  /-- Settling: the modal closure iterated until nothing changes; its closure is strict-finite. -/
+  | settling
+  deriving DecidableEq, Repr
 
-/-- The bijection **data** `ClosureRegime ≃ Articulating.Corner`, matching each regime to its articulation
-phase: strict ↦ absurd, Scott ↦ potential, transfinite-bounded ↦ active, aperiodic ↦ stable. -/
-def regimeCornerBij : Bij ClosureRegime Articulating.Corner where
-  to := ClosureRegime.toCorner
-  inv := ClosureRegime.ofCorner
+/-- A stage's regime: articulating is aperiodic, predicating transfinite-bounded, positing
+Scott-continuous, settling strict-finite. -/
+def Stage.regime : Stage → ClosureRegime
+  | Stage.articulating => ClosureRegime.aperiodic
+  | Stage.predicating => ClosureRegime.transfiniteBounded
+  | Stage.positing => ClosureRegime.scott
+  | Stage.settling => ClosureRegime.strict
+
+/-- The stage whose regime this is. -/
+def ClosureRegime.stage : ClosureRegime → Stage
+  | ClosureRegime.aperiodic => Stage.articulating
+  | ClosureRegime.transfiniteBounded => Stage.predicating
+  | ClosureRegime.scott => Stage.positing
+  | ClosureRegime.strict => Stage.settling
+
+/-- Each regime belongs to exactly one stage and each stage has exactly one regime. -/
+def regimeStageBij : Bij ClosureRegime Stage where
+  to := ClosureRegime.stage
+  inv := Stage.regime
   left r := by cases r <;> rfl
-  right c := by cases c <;> rfl
-
-/-- **The four regimes ARE the recurring FOUR.** Not merely equinumerous: the `toCorner`/`ofCorner`
-assignment (`regimeCornerBij`) pins each regime to a *specific* reading — strict ↦ absurd (the
-descent's seed `⊥`), aperiodic ↦ stable (`⊤`, where the KZ diamond is fully alive) — and round-trips
-on both sides, so the κ-stratification is the FOUR met again, element for element. The deeper,
-*structured* conflation — folding the regime into the master `quartet_recurrence` beside
-Articulating.FourCorner/Reading/Modal/NuclearQuartet, and asking what bilattice structure the bijection transports
-(the κ-chain is **not** the ≤ₖ diamond, so it is the gauge, not the order) — is the open frontier. -/
-theorem regime_is_four_corner :
-    (∀ r : ClosureRegime, ClosureRegime.ofCorner (ClosureRegime.toCorner r) = r)
-    ∧ (∀ c : Articulating.Corner, ClosureRegime.toCorner (ClosureRegime.ofCorner c) = c) :=
-  ⟨regimeCornerBij.left, regimeCornerBij.right⟩
+  right s := by cases s <;> rfl
 
 /-! ## (E) The spine sits in the strict regime
 
@@ -223,7 +230,12 @@ def spineData : ClosureRegimeData where
 `ClosureOrdinal.strict_finite` / `Reading.settles_by_three`. The decidable dichotomy
 recovers the spine's regime. -/
 theorem spine_is_strict : classify spineData = ClosureRegime.strict :=
-  (classify_strict spineData).mpr rfl
+  rfl
+
+/-- **The spine settles in the settling stage's regime.** The finite reading lattice's regime
+is the regime the settling stage pairs with. -/
+theorem spine_settles_in_settling_regime : classify spineData = Stage.regime Stage.settling :=
+  rfl
 
 /-- The spine's strictness, witnessed concretely: `Reading.strict_finite` exhibits the
 `κ ≤ 3` settling bound (`SettlesBy f x 3`) for every inflationary endomap on the

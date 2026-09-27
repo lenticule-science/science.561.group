@@ -45,10 +45,11 @@ $\texttt{SettlesBy}\,f\,x\,3$ --- a uniform finite settling bound with no
 transfinite tail. This is the strict-finite regime named in the module
 docstring.
 \end{theorem}
-\begin{proposition}[The four closure-ordinal regimes]\label{thm:closure-regime-carrier}\lean{Obsmetrologia.ClosureRegime}\leanok\uses{thm:strict-finite, thm:corner}
-The closure ordinal does not produce an arbitrary taxonomy.  It lands in the
-recurring FOUR as the regime carrier: strict, Scott, transfinite-bounded, and
-aperiodic.
+\begin{proposition}[The four closure-ordinal regimes]\label{thm:closure-regime-carrier}\lean{Obsmetrologia.ClosureRegime}\leanok\uses{thm:strict-finite}
+The height of the closure ordinal $\kappa$ partitions closures into four
+regimes: strict-finite ($\kappa < \omega$), Scott-continuous
+($\kappa = \omega$), transfinite-bounded ($\omega < \kappa < \omega_1$), and
+aperiodic ($\kappa \ge \omega_1$).
 \end{proposition}
 \begin{proposition}[Regime data are the decidable regime coordinates]\label{thm:closure-regime-data}\lean{Obsmetrologia.ClosureRegimeData}\leanok\uses{thm:closure-regime-carrier}
 A settling problem is projected to three decidable coordinates: Scott
@@ -59,14 +60,20 @@ constraints carried as fields.
 Every regime datum selects exactly the strict, Scott, transfinite-bounded, or
 aperiodic case, with the intended Boolean characterization for each case.
 \end{theorem}
-\begin{theorem}[The regime carrier is the FOUR again]\label{thm:regime-is-four-corner}\lean{Obsmetrologia.regime_is_four_corner}\leanok\uses{thm:four-regime-dichotomy, thm:corner}
-The regime carrier round-trips with the articulation corners.  This is a
-specific incidence weld, not a claim that the regime chain is already the same
-ordered object as the knowledge diamond.
-\end{theorem}
+\begin{definition}[Each regime is the regime of one stage]\label{thm:regime-stage}\lean{Obsmetrologia.Stage, Obsmetrologia.Stage.regime, Obsmetrologia.ClosureRegime.stage, Obsmetrologia.regimeStageBij}\leanok\uses{thm:closure-regime-carrier}
+The four stages of the language spine pair with the four regimes, in order:
+articulating is aperiodic, predicating transfinite-bounded, positing
+Scott-continuous, and settling strict-finite. Read along the spine the regime
+descends. A regime is the character of one stage's closure, while a corner of
+the four-valued reading is a value inside a stage; the two fours are different
+objects and are not identified.
+\end{definition}
 \begin{theorem}[The spine classifies as strict]\label{thm:spine-is-strict-regime}\lean{Obsmetrologia.spine_is_strict}\leanok\uses{thm:strict-finite, thm:four-regime-dichotomy}
 The finite charge-lattice spine has finite-base regime data, so its regime is
 strict.  The strict-finite theorem is the operational witness.
+\end{theorem}
+\begin{theorem}[The spine settles in the settling stage's regime]\label{thm:spine-settles-in-settling-regime}\lean{Obsmetrologia.spine_settles_in_settling_regime}\leanok\uses{thm:spine-is-strict-regime, thm:regime-stage}
+The spine's regime is the regime the settling stage pairs with.
 \end{theorem}
 \begin{theorem}[Regime cohomology vanishes exactly on strict/Scott]\label{thm:regime-cohomology-vanishes-iff}\lean{Obsmetrologia.cohomologyVanishes_iff}\leanok\uses{thm:four-regime-dichotomy, thm:spine-is-strict-regime}
 The regime table marks the flat side: cohomology vanishes exactly for strict
