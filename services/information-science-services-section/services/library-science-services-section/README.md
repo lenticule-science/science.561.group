@@ -11,6 +11,12 @@ proves, over time, that what it holds remains readable and intact; how
 a collection describes its own holdings so other systems can find them;
 and how one holding gets copied to another host for resilience.
 
+It also holds the librarianship of people rather than of formats: youth
+services (collections, readers' advisory, and programs for children and
+teens), collection policies, and the market for that expertise outside a
+library job. The Minnesota law governing library materials policies is
+held in law science and linked from here.
+
 This section's material sits beside, and does not replace, the
 [knowledge-organization services section](../knowledge-services-section/services/knowledge-organization-services-section/README.md),
 which owns classification, ontology, and vocabulary theory generally
