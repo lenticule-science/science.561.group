@@ -79,7 +79,7 @@ There is no tension.
 
 ## In the the corpus
 
-In a [FlatfileAgentResourceSystem](../../../../../../../../../engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/services/agent-computer-platform-system-engineering-services-section/services/flatfile-agent-resource-system-engineering-services-section/content/text/glossary/terms/flatfile-agent-resource-system.md):
+In a [FlatfileAgentResourceSystem](./flatfile-agent-resource-system.md):
 
 - `related:` in frontmatter asserts a connection without specifying the specific predicate
 - `related:` in the multi-entity file pattern (see [frontmatter](../../../../services/markdown-services-section/content/text/glossary/terms/frontmatter.md)) is the default relation between a section entity and the file-level entity
