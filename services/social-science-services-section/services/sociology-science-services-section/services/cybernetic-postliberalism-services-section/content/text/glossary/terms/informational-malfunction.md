@@ -16,6 +16,6 @@ The result is that the system accumulates more mutual information within its own
 
 This produces [epistemic overclosure](./epistemic-overclosure.md): the system reaches a locally stable equilibrium that is globally misaligned. It feels coherent from the inside — beliefs are consistent, predictions are stable — but external surprise steadily increases.
 
-Informational malfunction provides a formal account of how [ideological](../../../../../critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/ideology.md) self-maintenance operates as an information-processing pathology rather than a failure of rationality or intelligence. The malfunction is structural: the reward architecture is wrong, not the inferential capacity.
+Informational malfunction provides a formal account of how [ideological](../../../../../../content/text/glossary/terms/ideology.md) self-maintenance operates as an information-processing pathology rather than a failure of rationality or intelligence. The malfunction is structural: the reward architecture is wrong, not the inferential capacity.
 
 See [Describing Liberal Subjectivity as Informational Malfunction](../../documents/articles/notes/describing-liberal-subjectivity-as-informational-malfunction.md).

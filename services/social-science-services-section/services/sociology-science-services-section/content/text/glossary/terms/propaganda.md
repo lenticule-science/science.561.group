@@ -47,5 +47,5 @@ The anarchist critique of propaganda is not that propaganda is inherently wrong 
 
 ## Related
 
-- [ideology](../../../../services/critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/ideology.md) — the system of naturalized meanings propaganda produces
+- [ideology](ideology.md) — the system of naturalized meanings propaganda produces
 - [spectacle](../../../../services/critical-theory-science-services-section/services/situationist-services-section/content/text/glossary/terms/spectacle.md) — the society-wide propaganda system Debord identified

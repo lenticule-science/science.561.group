@@ -45,5 +45,5 @@ The question anarchist communication analysis poses is not "how do we get our me
 ## Related
 
 - [narrative](../../../../services/critical-theory-science-services-section/services/anarchism-services-section/services/anarchist-communication-services-section/content/text/glossary/terms/narrative.md) — the form through which media organizes experience
-- [ideology](../../../../services/critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/ideology.md) — operates through the meanings media circulate
+- [ideology](ideology.md) — operates through the meanings media circulate
 - [propaganda of the deed](../../../../services/critical-theory-science-services-section/services/anarchism-services-section/services/strategy-services-section/content/text/glossary/terms/propaganda-of-the-deed.md) — action that communicates without relying on media infrastructure

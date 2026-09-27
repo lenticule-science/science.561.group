@@ -47,5 +47,5 @@ Who gets to narrate? Whose story becomes the official account? These are politic
 
 - [communication](../../../../../../../../../../content/text/glossary/terms/communication.md) — the broader process within which narrative operates
 - [spectacle](../../../../../../../situationist-services-section/content/text/glossary/terms/spectacle.md) — narrative displaced into image
-- [ideology](../../../../../../content/text/glossary/terms/ideology.md) — operates through the narratives that make domination seem natural
+- [ideology](../../../../../../../../../../content/text/glossary/terms/ideology.md) — operates through the narratives that make domination seem natural
 - [genre calibration](../../../../../../../../../cybernetic-postliberalism-services-section/content/text/glossary/terms/genre-calibration.md) — the mechanism that tunes narrative expectations

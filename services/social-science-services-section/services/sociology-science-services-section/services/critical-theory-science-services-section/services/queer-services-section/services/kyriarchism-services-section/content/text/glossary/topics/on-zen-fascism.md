@@ -33,7 +33,7 @@ Zen Fascism can be seen as a mode of "californication" within the field of gover
   - i.e. universalism and individualism
   - stress (i.e. crisis, Collapse) exposes them
 - this creates the Liberalism Legitimacy Crisis:
-  - as these contradictions intensify, liberalism loses credibility\|validity as an [ideological](../../../../../../../anarchism-services-section/content/text/glossary/terms/ideology.md) system.
+  - as these contradictions intensify, liberalism loses credibility\|validity as an [ideological](../../../../../../../../../../content/text/glossary/terms/ideology.md) system.
     - it can't produce the resolutions it promises
     - so it shifts to promising regulation
     - see Foucault

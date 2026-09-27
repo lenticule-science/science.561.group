@@ -17,5 +17,5 @@ From the standpoint of [relationality](/relationality/), reification is the inve
 
 ## Related
 
-- [ideology](../../../../../anarchism-services-section/content/text/glossary/terms/ideology.md) — the systems of belief that reification supports
+- [ideology](../../../../../../../../content/text/glossary/terms/ideology.md) — the systems of belief that reification supports
 - [spectacle](../../../../../situationist-services-section/content/text/glossary/terms/spectacle.md) — reification extended into image and performance

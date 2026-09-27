@@ -38,7 +38,7 @@ This is how structural contradictions are sustained rather than resolved. The sy
 
 ## Structural contradiction and anarchism
 
-Anarchist analysis identifies structural contradictions as evidence that domination cannot sustain itself on its own terms. The contradictions are not reasons for optimism (they will not automatically produce collapse or revolution), but they are vulnerabilities. Every structural contradiction is a point where the system's claims about itself fail — where its [ideology](../../../../../critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/ideology.md) cannot conceal what its operations produce.
+Anarchist analysis identifies structural contradictions as evidence that domination cannot sustain itself on its own terms. The contradictions are not reasons for optimism (they will not automatically produce collapse or revolution), but they are vulnerabilities. Every structural contradiction is a point where the system's claims about itself fail — where its [ideology](../../../../../../content/text/glossary/terms/ideology.md) cannot conceal what its operations produce.
 
 [Recuperation](../../../../../../content/text/glossary/terms/recuperation.md) is one way the system manages its contradictions: absorbing the opposition they generate and converting it into system-compatible forms. Californication is another: converting the felt experience of contradiction into individually manageable affect. Understanding both mechanisms is necessary for resistance that does not get absorbed.
 
@@ -49,5 +49,5 @@ Anarchist analysis identifies structural contradictions as evidence that dominat
 - [crisis ordinariness](../../../../../../../../../philosophy-services-section/services/western-services-section/services/political-philosophy-services-section/services/liberalism-services-section/services/late-liberalism-services-section/content/text/glossary/terms/crisis-ordinariness.md) — contradictions experienced as the ongoing texture of life
 - [capitalism](../../../../../critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/capitalism.md) — a system constituted by structural contradictions
 - [legitimacy](../schools/anarchism/terms/legitimacy.md) — the state's management of its contradictions
-- [ideology](../../../../../critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/ideology.md) — the system of meanings that conceals contradictions
+- [ideology](../../../../../../content/text/glossary/terms/ideology.md) — the system of meanings that conceals contradictions
 - [harm governance](./harm-governance.md) — managing contradictions through risk frameworks

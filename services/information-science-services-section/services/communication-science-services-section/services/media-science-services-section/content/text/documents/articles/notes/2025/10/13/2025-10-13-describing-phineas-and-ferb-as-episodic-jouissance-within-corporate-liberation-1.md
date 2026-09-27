@@ -31,9 +31,9 @@ Our task is to show how this process stabilizes—how corporate systems learn to
 We borrow the minimal machinery of [category theory](../../../../research/2026/07/31/lenticule-import/library/arts/mathematics/objects/categories/index.md) to describe cultural circulation.
 
 - ****Objects****: media forms, institutions, discourses.
-- ****Morphisms****: transformations between them (narrative, [ideological](../../../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/ideology.md), affective).
+- ****Morphisms****: transformations between them (narrative, [ideological](../../../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/ideology.md), affective).
 - ****Comonad****: the context-machine that wraps every form in its conditions of production.
-- ****Coalgebra****: a form that reproduces itself under that context—a [fixed point](../../../../research/2026/07/31/lenticule-import/library/arts/mathematics/concepts/fixed-point/index.md) of [ideology](../../../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/ideology.md).
+- ****Coalgebra****: a form that reproduces itself under that context—a [fixed point](../../../../research/2026/07/31/lenticule-import/library/arts/mathematics/concepts/fixed-point/index.md) of [ideology](../../../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/content/text/glossary/terms/ideology.md).
 
 A cultural work is **certified** when its internal process matches the structure of the larger system that contains it.
 The moment of equivalence $C r \simeq r$ marks not freedom, but perfect capture.

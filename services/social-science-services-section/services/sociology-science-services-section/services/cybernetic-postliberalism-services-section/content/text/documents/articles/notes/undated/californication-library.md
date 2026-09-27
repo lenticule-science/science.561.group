@@ -37,7 +37,7 @@ The state does not merely tell you what you cannot do; it shapes who you are, wh
 Foucault's concept of confession is central to the mechanism.
 Modern power incites people to speak about themselves -- their desires, traumas, beliefs.
 This speech is not free expression.
-It is an act of subjection that binds the speaker to the [ideological](../../../../../../../critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/ideology.md) system they confess within.
+It is an act of subjection that binds the speaker to the [ideological](../../../../../../../../content/text/glossary/terms/ideology.md) system they confess within.
 
 Social media industrializes this confessional logic at scale.
 But confession alone does not explain how people stay attached to a system that visibly fails to deliver what it promises.

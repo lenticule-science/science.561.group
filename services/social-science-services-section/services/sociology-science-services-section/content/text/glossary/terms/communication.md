@@ -45,6 +45,6 @@ Against this, anarchist practice has consistently developed forms of communicati
 
 ## Related
 
-- [ideology](../../../../services/critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/ideology.md) — the system of meanings communication reproduces
+- [ideology](ideology.md) — the system of meanings communication reproduces
 - [spectacle](../../../../services/critical-theory-science-services-section/services/situationist-services-section/content/text/glossary/terms/spectacle.md) — communication displaced into image
 - [the symbolic order](../../../../services/critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/the-symbolic-order.md) — the structure of meaning within which communication operates

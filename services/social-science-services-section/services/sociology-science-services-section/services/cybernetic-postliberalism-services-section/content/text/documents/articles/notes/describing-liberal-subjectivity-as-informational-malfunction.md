@@ -18,7 +18,7 @@ Liberal subjectivity interpreted as a malfunctioning information-processing arch
 
 This paper interprets liberal subjectivity as a malfunctioning information-processing architecture. Extending the principle of information-theoretic stability, we show that the liberal subject functions as an over-stabilized adaptive system: one that maximizes internal coherence at the cost of correspondence with external informational reality.
 
-By analyzing the feedback structure of liberal sociotechnical systems, we demonstrate how alignment mechanisms designed to preserve epistemic stability become sources of divergence amplification. This provides a [cybernetic](../../information/disciplines/cybernetics/index.md) account of [ideological](../../../../../../critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/ideology.md) self-maintenance as an entropic anomaly within the broader ecology of informational systems.
+By analyzing the feedback structure of liberal sociotechnical systems, we demonstrate how alignment mechanisms designed to preserve epistemic stability become sources of divergence amplification. This provides a [cybernetic](../../information/disciplines/cybernetics/index.md) account of [ideological](../../../../../../../content/text/glossary/terms/ideology.md) self-maintenance as an entropic anomaly within the broader ecology of informational systems.
 
 ## 1. Introduction
 
@@ -62,7 +62,7 @@ When coherence is rewarded independently of correspondence, positive feedback ac
 
 $$\partial_t I(b; b') > \partial_t I(b; E),$$
 
-where $I(b; b')$ is mutual information among beliefs over time and $I(b; E)$ is mutual information with environment. Such internal coupling produces neural reinforcement of preexisting models, a biological analogue to [ideological](../../../../../../critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/ideology.md) self-confirmation.
+where $I(b; b')$ is mutual information among beliefs over time and $I(b; E)$ is mutual information with environment. Such internal coupling produces neural reinforcement of preexisting models, a biological analogue to [ideological](../../../../../../../content/text/glossary/terms/ideology.md) self-confirmation.
 
 ## 4. Systemic consequences
 
@@ -94,7 +94,7 @@ Persistent misalignment yields *[ontological](../../../../../../../../../../phil
 
 $$\frac{d}{dt} D_{\mathrm{KL}}(E_t||b_t) > 0$$
 
-despite $\partial_t D_{\mathrm{KL}}(b_{t+\delta}||b_t) \approx 0$. This drift represents the informational signature of [ideological](../../../../../../critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/ideology.md) decay: an increase in environmental surprise unaccompanied by corresponding update.
+despite $\partial_t D_{\mathrm{KL}}(b_{t+\delta}||b_t) \approx 0$. This drift represents the informational signature of [ideological](../../../../../../../content/text/glossary/terms/ideology.md) decay: an increase in environmental surprise unaccompanied by corresponding update.
 
 ## 6. Discussion
 
@@ -104,7 +104,7 @@ despite $\partial_t D_{\mathrm{KL}}(b_{t+\delta}||b_t) \approx 0$. This drift re
 
 ## 7. Conclusion
 
-Liberal subjectivity can be formalized as an information-theoretic malfunction: a system that maximizes internal stability while decoupling from external informational flows. By grounding this diagnosis in divergence dynamics, mutual-information geometry, and feedback theory, we describe [ideology](../../../../../../critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/ideology.md) not as belief content but as a mode of thermodynamic misregulation. Restoring adaptivity requires reintroducing entropy: designing feedback architectures that reward correspondence rather than mere coherence.
+Liberal subjectivity can be formalized as an information-theoretic malfunction: a system that maximizes internal stability while decoupling from external informational flows. By grounding this diagnosis in divergence dynamics, mutual-information geometry, and feedback theory, we describe [ideology](../../../../../../../content/text/glossary/terms/ideology.md) not as belief content but as a mode of thermodynamic misregulation. Restoring adaptivity requires reintroducing entropy: designing feedback architectures that reward correspondence rather than mere coherence.
 
 ## References
 
@@ -132,7 +132,7 @@ The divergence between belief and environment remains unpenalized.
 This structural omission yields chronic informational isolation.
 
 When coherence is rewarded independently of correspondence, positive feedback accumulates: the coupling of beliefs to one another grows faster than the coupling of beliefs to the environment.
-Such internal coupling produces neural reinforcement of preexisting models, a biological analogue to [ideological](../../../../../../critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/ideology.md) self-confirmation.
+Such internal coupling produces neural reinforcement of preexisting models, a biological analogue to [ideological](../../../../../../../content/text/glossary/terms/ideology.md) self-confirmation.
 
 Under malfunction, entropy reduction within the belief manifold occurs alongside entropy increase in the environment.
 This is a *local entropic inversion*: the entropy of the subject's beliefs falls while the entropy of its environment rises.
@@ -148,4 +148,4 @@ In the liberal subject, this adjustment halts prematurely due to internal satura
 The subject thus becomes trapped in a false equilibrium: locally stable, globally misaligned.
 
 Persistent misalignment yields *[ontological](../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/content/individual/content/agent/actuating/content/actuator/embodying/content/body/integrating/content/drone/swarming/content/swarm/content/social/content/relating/content/relational-entity/content/social-being/content/social-relation/content/power/subjectifying/content/subject/content/possessive-individual/ontologizing/content/liberalism/analyzing/content/cybernetic-postliberalism/teaching/content/philosophy/terms/ontology.md) drift*, a slow divergence between the system's generative model and the causal structure of its environment: the gap between the environment and the subject's beliefs widens over time even though the subject's beliefs have all but stopped changing.
-This drift represents the informational signature of [ideological](../../../../../../critical-theory-science-services-section/services/anarchism-services-section/content/text/glossary/terms/ideology.md) decay: an increase in environmental surprise unaccompanied by corresponding update.
+This drift represents the informational signature of [ideological](../../../../../../../content/text/glossary/terms/ideology.md) decay: an increase in environmental surprise unaccompanied by corresponding update.
