@@ -73,7 +73,7 @@ In military practice: a commanding officer restricts a subordinate's authority o
 
 ### Conditional revocation
 
-The retraction act $\rho$ is triggered by a predicate — typically a [Breach](../../../../../../../../../../../../content/text/glossary/terms/breach.md) by $B$ or a change in circumstances that makes the grant inappropriate.
+The retraction act $\rho$ is triggered by a predicate — typically a [Breach](../../../../../../content/text/glossary/terms/breach.md) by $B$ or a change in circumstances that makes the grant inappropriate.
 The revocation is not effective until the trigger condition is satisfied.
 Before trigger: $G$ remains potential.
 After trigger: $\rho$ fires automatically.

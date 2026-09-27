@@ -49,7 +49,7 @@ Partial revocation is common in commercial practice: a principal limits an agent
 
 ### Conditional revocation
 
-The retraction act $\rho$ is triggered by a predicate — typically a [Breach](../../../../../../../../../../content/text/glossary/terms/breach.md) by $B$ or a change in circumstances that makes the grant inappropriate. The revocation is not effective until the trigger condition is satisfied. Before trigger: $G$ remains potential. After trigger: $\rho$ fires automatically.
+The retraction act $\rho$ is triggered by a predicate — typically a [Breach](../../../../../../../../../sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/breach.md) by $B$ or a change in circumstances that makes the grant inappropriate. The revocation is not effective until the trigger condition is satisfied. Before trigger: $G$ remains potential. After trigger: $\rho$ fires automatically.
 
 Conditional revocation is common in agency law and contract: "This authority is revocable on breach" is a conditional revocation clause. In the formal framework: the retraction act $\rho$ is a morphism from the breach-conditioned section of $H_G$ to $\bot_{H_Q}$ — a morphism with a guard condition on $B$'s breach status.
 

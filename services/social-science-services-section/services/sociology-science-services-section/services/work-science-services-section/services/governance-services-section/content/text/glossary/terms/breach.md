@@ -27,7 +27,7 @@ where: - $D$ is the **duty** (or commitment) — the normative requirement whose
 
 A **Breach** is a triple $(D, t^*, p)$:
 
-**Breach condition.** $(D, t^*, p)$ is a breach iff the joint condition required by [discharge](../../../../services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/discharge.md) — that both the *performance* predicate and the *recognition* predicate over $p$ have reached affirming [settlement](settlement.md) at $t^*$ — fails.
+**Breach condition.** $(D, t^*, p)$ is a breach iff the joint condition required by [discharge](discharge.md) — that both the *performance* predicate and the *recognition* predicate over $p$ have reached affirming [settlement](../../../../../../../../../../content/text/glossary/terms/settlement.md) at $t^*$ — fails.
 That is, at least one of the two predication cells $(p, p_{\mathrm{perform}}, D)$ and $(p, p_{\mathrm{recognize}}, D)$ has not reached the truth-only corner $\mathbf{t}$ by the deadline.
 
 $$(D : \mathrm{Duty},\; t^* \in T,\; p \in H_{t^*})$$
@@ -44,7 +44,7 @@ The performance has not reached the nuclear fixed point at the assessment deadli
 **Two breach species:**
 
 1. **Non-performance** ($p = \varnothing$): no act of the required type was produced by $t^*$.
-  Both predicates remain in the absurd corner — no [witnessing](../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/witnessing.md) of either has occurred.
+  Both predicates remain in the absurd corner — no [witnessing](../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/undated/witnessing.md) of either has occurred.
 
 2. **Defective performance** ($p$ exists but settlement is incomplete): a performance was produced but at least one of the two predicates has not reached affirming settlement.
   The duty-bearer attempted satisfaction but fell short.
@@ -83,12 +83,12 @@ Formally: a repudiatory breach removes the other party's obligations from the po
 
 ## The four-corner classification of breach
 
-The [settlement](settlement.md) position of the performance $p$ across the two predicates (performance and recognition) at deadline $t^*$ classifies every breach instance into one of four structurally distinct types.
+The [settlement](../../../../../../../../../../content/text/glossary/terms/settlement.md) position of the performance $p$ across the two predicates (performance and recognition) at deadline $t^*$ classifies every breach instance into one of four structurally distinct types.
 The classification corresponds to the four corners of joint settlement on the two predicates:
 
 | Joint settlement of $(p_{\mathrm{perform}}, p_{\mathrm{recognize}})$ | Breach type | Normative content |
 |---|---|---|
-| Both affirmingly settled | **No breach** | Complete [discharge](../../../../services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/discharge.md) — both predicates at $\mathbf{t}$ |
+| Both affirmingly settled | **No breach** | Complete [discharge](discharge.md) — both predicates at $\mathbf{t}$ |
 | Recognition settled, performance not | **Paper-compliance breach** | Acknowledged but not actually performed — the act has been recognized as falling within the duty's scope but the performance itself has not reached affirming settlement |
 | Performance settled, recognition not | **Completed-but-unrecognized breach** | The act has been performed (and its performance carries forward) but the normative system has not yet acknowledged it as satisfying the duty |
 | Neither settled | **Double breach** | Both predicates remain in the absurd corner — entirely unsettled, the maximal breach |
@@ -140,12 +140,12 @@ This is the formal analog of the legal principle that approaching compliance is 
 
 ## Breach and accountability
 
-[Accountability](../../../../services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/accountability.md) determines who bears the normative consequences of breach.
+[Accountability](accountability.md) determines who bears the normative consequences of breach.
 When a subordinate $B'$ breaches a duty within scope $S$, the breach record $(D, t^*, p)$ is a fact about $B'$'s performance.
 But the accountability function makes the commanding officer $B$ answerable for the breach even if $B$ did not cause it. $B$ is accountable; $B'$ may be responsible.
 Both normative positions can exist simultaneously.
 
-[Accountability](../../../../services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/accountability.md) determines who bears the normative consequences of breach.
+[Accountability](accountability.md) determines who bears the normative consequences of breach.
 When a subordinate $B'$ breaches a duty within scope $S$, the breach record $(D, t^*, p)$ is a fact about $B'$'s performance.
 But the accountability function $A : \mathrm{Outcomes}(S) \to \{B\}$ makes the commanding officer $B$ answerable for the breach even if $B$ did not cause it. $B$ is accountable; $B'$ may be responsible.
 Both normative positions can exist simultaneously.
@@ -173,7 +173,7 @@ The moral: gap is everywhere; breach is the assignment of normative significance
 
 ## Shadow type classification of breach
 
-**Sources:** [Shadow Class Type](../math/relational-history-fiber-shadow-class-type.md), [Saturation Gap](../math/relational-history-fiber-saturation-gap.md), [Transfer Gap](../math/relational-history-fiber-transfer-gap.md).
+**Sources:** [Shadow Class Type](../../../../../../../../../../content/text/glossary/math/relational-history-fiber-shadow-class-type.md), [Saturation Gap](../../../../../../../../../../content/text/glossary/math/relational-history-fiber-saturation-gap.md), [Transfer Gap](../../../../../../../../../../content/text/glossary/math/relational-history-fiber-transfer-gap.md).
 
 The RelationalHistoryFiberShadowClassType of the performance element $p$ at deadline $t^*$ classifies every breach instance into one of four structurally distinct types:
 
@@ -207,12 +207,12 @@ The appropriate remedy corresponds to the missing component:
 - TrShadowType breach → remedy = Saturation acceptance: the normative system must recognize the already-durable performance as satisfying the duty
 - FreeShadowType breach → remedy = Double recovery: both stabilization and recognition are required; this is the maximal remedy, corresponding to the full projection gap $[p, \pi_{t^*}(p)]$
 
-*Source.* The four types are the partition of $H_t$ by $\mathrm{RelationalHistoryFiberShadowClassType}(t^*, p)$ per [Shadow Class Type](../math/relational-history-fiber-shadow-class-type.md) §The Four Nuclear Types.
-The saturation gap formula $\pi_{t^*}(p) = \sigma_{t^*}(p)$ for TrShadowType is from [Saturation Gap](../math/relational-history-fiber-saturation-gap.md) §Relation to DefectConstruction. $\square$
+*Source.* The four types are the partition of $H_t$ by $\mathrm{RelationalHistoryFiberShadowClassType}(t^*, p)$ per [Shadow Class Type](../../../../../../../../../../content/text/glossary/math/relational-history-fiber-shadow-class-type.md) §The Four Nuclear Types.
+The saturation gap formula $\pi_{t^*}(p) = \sigma_{t^*}(p)$ for TrShadowType is from [Saturation Gap](../../../../../../../../../../content/text/glossary/math/relational-history-fiber-saturation-gap.md) §Relation to DefectConstruction. $\square$
 
 ## Hurwitz breach quantum for Zeno-approaching performances
 
-**Sources:** [Nuclear Eigenvalue Hurwitz Identity](../math/relational-hyperverse-tower-nuclear-eigenvalue-hurwitz-identity.md), [Nuclear Quartet Extremally Slow Growth Sequence](../math/relational-history-fiber-nuclear-quartet-extremally-slow-growth-sequence.md).
+**Sources:** [Nuclear Eigenvalue Hurwitz Identity](../../../../../../../../../../content/text/glossary/math/relational-hyperverse-tower-nuclear-eigenvalue-hurwitz-identity.md), [Nuclear Quartet Extremally Slow Growth Sequence](../../../../../../../../../../content/text/glossary/math/relational-history-fiber-nuclear-quartet-extremally-slow-growth-sequence.md).
 
 A **Zeno-approaching performance** is one that settles toward $H^*_{t^*}$ at the rate of the RelationalHistoryFiberNuclearQuartetExtremallySlowGrowthSequence across tower levels — making progress at every level but never completing discharge in finite time.
 At tower level $k$, the remaining breach quantum is:
@@ -228,7 +228,7 @@ This is the minimum achievable breach quantum at level $k$: no performance settl
 The total long-run breach — the limit of $F_k \cdot \mathrm{RelationalHyperverseGoldenRatio}^{-k}$ as $k \to \infty$ — is exactly the Hurwitz constant, the irreducible residual of Zeno breach.
 A deadline set at any finite tower level catches a positive breach quantum; no finite deadline is late enough to catch a Zeno performance with zero breach.
 
-*Source.* Exact identity $F_k \cdot |\mathrm{RelationalHyperverseGoldenRatio} - F_{k+1}/F_k| = \mathrm{RelationalHyperverseGoldenRatio}^{-k}$ proved via Binet formula in [Nuclear Eigenvalue Hurwitz Identity](../math/relational-hyperverse-tower-nuclear-eigenvalue-hurwitz-identity.md) §The Exact Identity.
+*Source.* Exact identity $F_k \cdot |\mathrm{RelationalHyperverseGoldenRatio} - F_{k+1}/F_k| = \mathrm{RelationalHyperverseGoldenRatio}^{-k}$ proved via Binet formula in [Nuclear Eigenvalue Hurwitz Identity](../../../../../../../../../../content/text/glossary/math/relational-hyperverse-tower-nuclear-eigenvalue-hurwitz-identity.md) §The Exact Identity.
 Hurwitz limit from §The Hurwitz Limit. $\square$
 
 **Normative consequence.** A duty whose required performance is Zeno-approaching under the RelationalHyperverseGoldenRatio nuclear dynamics is not dischargeable by any finite deadline.

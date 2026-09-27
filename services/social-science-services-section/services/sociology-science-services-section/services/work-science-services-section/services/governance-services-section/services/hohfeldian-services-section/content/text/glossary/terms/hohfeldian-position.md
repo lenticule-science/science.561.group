@@ -124,7 +124,7 @@ The second quartet is the formal apparatus of **authority** in the normative sen
 Authority, in its core normative sense, is a collection of powers: the capacity to create, modify, and extinguish first-quartet positions in others.
 An [Office](../../../../../../../../../../../../../services/economics-and-business-science-services-section/services/business-science-services-section/content/text/glossary/terms/office.md) is a second-quartet structure — a specification of what powers, liabilities, immunities, and disabilities the officeholder has.
 
-The [Principal](../../../../../../../../../../../../content/text/glossary/terms/principal.md) holds **original powers**: the capacity to create agency relations, delegate scope, and constitute normative facts — powers not derived from any other party within the system.
+The [Principal](../../../../../../content/text/glossary/terms/principal.md) holds **original powers**: the capacity to create agency relations, delegate scope, and constitute normative facts — powers not derived from any other party within the system.
 The [Delegation](../../../../../../../../../../../../content/text/glossary/terms/delegation.md) from principal to agent is the exercise of a Hohfeldian power: the principal alters the agent's normative position by granting new powers within the delegated scope.
 
 [Contract](../../../../../../content/text/glossary/terms/contract.md) formation is also a second-quartet phenomenon: when $P_1$ makes an offer to $P_2$, $P_1$ exercises a power (the power to propose), and $P_2$ thereby gains a power (the power to accept) plus a liability (the normative position is alterable — $P_1$ can revoke the offer).

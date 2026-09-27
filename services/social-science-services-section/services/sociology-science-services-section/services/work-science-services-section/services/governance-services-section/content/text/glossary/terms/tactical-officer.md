@@ -16,7 +16,7 @@ The tactical officer performs four functions:
 
 2. **Defensive posture management.** Maintaining the set of potential defenses — access controls, validation rules, boundary enforcement, monitoring — and ensuring they remain adequate to the assessed threat level. Posture is not a fixed configuration; it is a dynamic response to threat assessment. When the threat level rises, posture tightens. When a new vulnerability is discovered, the relevant defense is strengthened or installed.
 
-3. **Incident response.** When a [breach](../../../../../../../../../../content/text/glossary/terms/breach.md) occurs — when a boundary is crossed, a control is bypassed, or integrity is compromised — the tactical officer coordinates the immediate response. Incident response has a temporal structure: contain (stop the damage from spreading), assess (determine what was compromised), remediate (restore integrity), and debrief (update the threat model).
+3. **Incident response.** When a [breach](breach.md) occurs — when a boundary is crossed, a control is bypassed, or integrity is compromised — the tactical officer coordinates the immediate response. Incident response has a temporal structure: contain (stop the damage from spreading), assess (determine what was compromised), remediate (restore integrity), and debrief (update the threat model).
 
 4. **Boundary definition.** Advising on where organizational boundaries should be drawn and how they should be enforced. Not all boundaries are security boundaries, but every boundary has security implications. The tactical officer's expertise is in understanding which boundaries are load-bearing — which, if breached, cause cascading compromise — and ensuring those boundaries are adequately defended.
 
@@ -50,6 +50,6 @@ Barry Buzan's *People, States and Fear* (1983) broadened security theory beyond 
 
 - [office](../../../terms/office.md) — the normative position the tactical officer holds
 - [officer](../../../../../../../../../../../philosophy-services-section/services/relationality-services-section/content/text/documents/articles/notes/2026/03/18/2026-03-18-officer.md) — the person holding the office
-- [breach](../../../../../../../../../../content/text/glossary/terms/breach.md) — the event the tactical officer works to prevent and respond to
+- [breach](breach.md) — the event the tactical officer works to prevent and respond to
 - [authority](./authority.md) — the power structure within which override authority operates
 - [norm-conflict](./norm-conflict.md) — the structural tension when security overrides operational norms

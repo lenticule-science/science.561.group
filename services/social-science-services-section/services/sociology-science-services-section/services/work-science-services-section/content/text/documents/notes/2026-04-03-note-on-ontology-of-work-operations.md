@@ -52,7 +52,7 @@ A [task](../terms/task.md) is a [thing](../../../../philosophy/terms/thing.md) �
 
 A [work unit](../../glossary/terms/work-unit.md) is the more general concept. Tasks, operations, requests, incidents, tickets â€” all work units. What makes something a work unit is that it enters the operations loop at one stage and flows through subsequent stages until resolved. A work unit is a thing that the operational system acts on.
 
-An agent is a thing that acts. In a modern operational system, agents are both human and computational. A [principal](../../../../../../../../content/text/glossary/terms/principal.md) authorizes work. An [officer](../terms/office.md) is bound to a deontic profile â€” powers, duties, privileges, immunities â€” that determines what work they may accept and what they must do. An agent is not just "someone who does tasks." An agent is a thing with capabilities (qualities), authority bounds (conditions), current capacity (state), and a history of acts.
+An agent is a thing that acts. In a modern operational system, agents are both human and computational. A [principal](../../../../services/governance-services-section/content/text/glossary/terms/principal.md) authorizes work. An [officer](../terms/office.md) is bound to a deontic profile â€” powers, duties, privileges, immunities â€” that determines what work they may accept and what they must do. An agent is not just "someone who does tasks." An agent is a thing with capabilities (qualities), authority bounds (conditions), current capacity (state), and a history of acts.
 
 ### Containers that hold work
 

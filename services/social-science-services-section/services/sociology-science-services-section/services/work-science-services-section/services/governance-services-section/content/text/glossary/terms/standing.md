@@ -52,7 +52,7 @@ Example: a member of the public in a courtroom has participatory standing (they 
 This is the primary tier for epistemic purposes.
 An expert witness has assertive standing (their testimony is processed by the court's nucleus of evidentiary weight); a bystander does not.
 
-**Tier 3 — Remedial standing**: the right to invoke $F$'s enforcement mechanisms — to trigger a [Sanction](../../../../../../../../../../content/text/glossary/terms/sanction.md) or request a [Remedy](../../../../../../../../../../content/text/glossary/terms/breach.md).
+**Tier 3 — Remedial standing**: the right to invoke $F$'s enforcement mechanisms — to trigger a [Sanction](../../../../../../../../../../content/text/glossary/terms/sanction.md) or request a [Remedy](breach.md).
 In law, this is "standing to sue."
 Only parties with a cognizable interest in the outcome — defined by a duty owed to them or a right they hold — have remedial standing.
 The Hohfeldian structure: remedial standing requires holding a claim-right, not merely a privilege.

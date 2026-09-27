@@ -50,7 +50,7 @@ Nuclear form: $\sigma^{N_1}_t$ requires $a \in H^*_t$ and $\sigma^{N_2}_t$ requi
 A primary norm $O(p)$ and a secondary norm $O(\neg p \Rightarrow q)$ where $q$ is incompatible with $p$'s consequence.
 The paradox: if $p$ is obligatory but violated ($\neg p$ occurs), then $q$ becomes obligatory — but satisfying $q$ may be incompatible with satisfying $p$, creating a new conflict.
 Nuclear form: the conditional norm $O(\neg p \Rightarrow q)$ is only active when $\neg p \in H_t \setminus H^*_t$; once $\neg p$ occurs, a new nucleus $\sigma^{N_2}_t$ activates and conflicts with $\sigma^{N_1}_t$.
-Contrary-to-duty conflicts are the formal structure of remedial obligations after breach: "[Breach](breach.md) of D creates a new duty D' to remedy, which may conflict with other standing duties."
+Contrary-to-duty conflicts are the formal structure of remedial obligations after breach: "[Breach](../../../../services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/breach.md) of D creates a new duty D' to remedy, which may conflict with other standing duties."
 
 **Type III — Dilemma** (moral dilemma, Antigone): both norms have equal weight by any priority ordering; the conflict is genuine and cannot be resolved without residue.
 Neither norm can be defeated without normative cost.

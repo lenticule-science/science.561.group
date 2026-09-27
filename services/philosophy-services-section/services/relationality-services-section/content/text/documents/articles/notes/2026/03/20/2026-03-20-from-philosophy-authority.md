@@ -89,7 +89,7 @@ Features: explicit scope ($S$ defined by statute or charter); formal procedures 
 The bureaucratic organization is the purest form.
 
 Instances: constitutional law (legislative authority derives from formal democratic process); corporate governance (the board's authority derives from the articles of incorporation); military command (the officer's authority derives from commission and chain of command).
-The [Principal](../../../../../../../../../../../social-science-services-section/content/text/glossary/terms/principal.md) in the relational system holds rational-legal authority: its source is formal recognition within the institutional framework, its scope is chartered, and its legitimacy derives from the charter.
+The [Principal](../../../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/principal.md) in the relational system holds rational-legal authority: its source is formal recognition within the institutional framework, its scope is chartered, and its legitimacy derives from the charter.
 
 ### Traditional authority
 

@@ -1,21 +1,86 @@
 ---
-
 name: "Runbook"
-description: "A Runbook is a four-tuple (N, R, Π, G) — a trigger norm N whose activation selects this runbook, an executor role R whose incumbent is obligated to run it, a step sequence Π of acts that is execution-settled before the trigger fires, and a goal G that the sequence drives to the fixed fiber. The defining structure: a runbook is a specialized mandate whose prescribed act is a sequence, selected by a triggering norm, owned by an institution, terminating when the goal reaches H*_t."
-date-created: 2026-03-20
+description: "A runbook is a workflow definition. The engine executes it. Workflow logic lives in runbooks; execution logic lives in the engine."
+params:
+  trigger: norm
+  executor-role: role
+  steps: relational-universe
+  goal: goal
+output: relational-history-morphism
+ast:
+  relational-universe-morphism:
+    - trigger: norm
+    - executor-role: role
+    - steps:
+        - relational-universe
+    - goal: goal
+where:
+- $\mathcal{N} = (\psi, \mathrm{Obl}, \mathcal{I})$ is the **trigger norm** — the norm whose activation initiates the runbook; $\psi$ is the propositional content; when $\psi \in H^*_t$, the runbook is activated
+- $R$ is the **executor role** — the role whose [incumbent](../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/glossary/terms/incumbent.md) is obligated to execute $\Pi$ when $\mathcal{N}$ fires; the incumbent need not have designed $\Pi$, only be qualified to execute it
+- $\Pi = [a_1, \ldots, a_n]$ is the **step sequence** — an ordered list of [acts](../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/philosophy/terms/act.md); $\Pi \in \mathrm{Fix}(\Delta_t)$ at all $t$ for which $\mathcal{R}$ is valid; the sequence is execution-settled before any trigger fires; the executor exercises no substantive judgment about what the steps are
+- $\mathcal{G} = (g, \tau, \kappa)$ is the **goal** — the target element $g \in H_t \setminus H^*_t$ that $\Pi$ drives to $H^*_\tau$; execution terminates when $g \in H^*_\tau$
 ---
+
+
+## What it is
+
+A **runbook** is a workflow definition — a named, structured sequence of steps. The
+engine loads and executes runbooks without per-runbook engine code. Workflow logic
+lives in runbooks; execution logic lives in the engine once.
+
+This is the key property: **adding a new workflow means adding a runbook file, not
+writing engine code.**
+
+## MUST
+
+- Have an `id` and `description`
+- Declare all inputs and outputs
+- Each step must have a unique id within the runbook
+
+## CAN
+
+- Call other runbooks as sub-steps
+- Invoke LLM-backed judgment steps
+
+## CANNOT
+
+- Contain execution logic — that belongs in the engine
+- Embed environment-specific values — use named inputs instead
+
+## Encodings
+
+### YAML encoding
+
+A runbook is encoded as a `.yaml` file in `runbooks/`. The top-level keys are:
+
+```yaml
+id: kebab-case-id
+description: "one sentence"
+skill-closure-kind: process | procedure | derivation | inquiry
+
+inputs:
+  - name: param_name
+    type: str | int | list | ...
+
+outputs:
+  - name: result_name
+    from: "{{step-id.result}}"
+
+steps:
+  - id: step-name
+    type: query | write | update | for-each | call | script | llm-call | collect
+    # ... step-type-specific fields
+```
+
+Step ids MUST be unique within the runbook. Template expressions use `{{...}}` syntax.
+Input values are accessed as `{{inputs.param_name}}`. Step outputs are accessed as
+`{{step-id.result}}`. The context variable `{{today}}` is always available.
 
 ## Formal definition
 
 A **Runbook** is a four-tuple $\mathcal{R} = (\mathcal{N}, R, \Pi, \mathcal{G})$:
 
 $$\mathcal{R} = (\mathcal{N} : \mathrm{Norm},\; R : \mathrm{Role},\; \Pi = [a_1, \ldots, a_n] : \mathrm{Act}^*,\; \mathcal{G} : \mathrm{Goal})$$
-
-where:
-- $\mathcal{N} = (\psi, \mathrm{Obl}, \mathcal{I})$ is the **trigger norm** — the norm whose activation initiates the runbook; $\psi$ is the propositional content; when $\psi \in H^*_t$, the runbook is activated
-- $R$ is the **executor role** — the role whose [incumbent](./incumbent.md) is obligated to execute $\Pi$ when $\mathcal{N}$ fires; the incumbent need not have designed $\Pi$, only be qualified to execute it
-- $\Pi = [a_1, \ldots, a_n]$ is the **step sequence** — an ordered list of [acts](../../../../philosophy/terms/act.md); $\Pi \in \mathrm{Fix}(\Delta_t)$ at all $t$ for which $\mathcal{R}$ is valid; the sequence is execution-settled before any trigger fires; the executor exercises no substantive judgment about what the steps are
-- $\mathcal{G} = (g, \tau, \kappa)$ is the **goal** — the target element $g \in H_t \setminus H^*_t$ that $\Pi$ drives to $H^*_\tau$; execution terminates when $g \in H^*_\tau$
 
 The **output** of executing $\mathcal{R}$ from history $t_0$ is the morphism $f : t_0 \to \tau$ in $T$ tracing the path $t_0 \star \varphi_1 \star \cdots \star \varphi_n = \tau$, where each $\varphi_i \in H_{t_i}$ is the fiber element produced by act $a_i$.
 
@@ -38,7 +103,7 @@ If a step requires an act beyond $R$, the runbook must include an explicit escal
 
 ## Runbook and mandate
 
-A Runbook is a specialization of [Mandate](../../../../../../../../content/text/glossary/terms/mandate.md).
+A Runbook is a specialization of [Mandate](../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/text/glossary/theories/governance/terms/mandate.md).
 A Mandate $\mathcal{M} = (A, \varphi, C)$ prescribes a single act $\varphi$ with a compulsion trigger $C$.
 A Runbook $\mathcal{R} = (\mathcal{N}, R, \Pi, \mathcal{G})$ prescribes a sequence $\Pi$ with a norm-derived trigger $\mathcal{N}$ and an explicit goal $\mathcal{G}$ stating when execution terminates.
 
@@ -127,7 +192,7 @@ Institutional ratification and successful execution, once achieved, propagate ba
 
 ## Zeno settling: the shadow-type tower of unresolved triggers
 
-**Source:** [Zeno Settling K1 Cohomology](../../../humanities/domains/math/zeno-settling-k1-cohomology.md), [Zeno Settling Small K Verification](../../../humanities/domains/math/zeno-settling-small-k-verification.md).
+**Source:** [Zeno Settling K1 Cohomology](../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/humanities/theories/math/zeno-settling-k1-cohomology.md), [Zeno Settling Small K Verification](../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/humanities/theories/math/zeno-settling-small-k-verification.md).
 
 The shadow-type partition already built into the runbook's nuclear derivation is not static — it has a tower structure. An unresolved trigger does not simply stay in one failure mode; it propagates forward through tower levels via the NuclearShadowSubstitution rule, generating new gaps at higher levels until the whole chain settles. The Zeno settling computation at level 1 gives the first step of this propagation.
 
@@ -150,7 +215,7 @@ The level-1 transfer nucleus at the witness is no longer trivial: the restrictio
 
 **Proposition (Runbook shadow propagation).** Let a runbook trigger fire at history t (the trigger proposition RelationalHistoryFiberDoctrineLanguageModal(trigger) enters RelationalHistoryFiberTransferringNucleusFixedFiber). If the runbook is not executed — the primary runbook proposition RelationalHistoryFiberDoctrineLanguageModal(runbook) remains a t-type shadow at level k — then at level k+1 a new s-shadow appears at the resolution witness: the institutional recognition that execution did not follow the trigger. This s-shadow is not a duplicate of the original gap; it is a new, genuinely distinct cohomological class. The chain of unresolved runbook triggers generates a Fibonacci-type shadow sequence: t → s → st → sts → stst... , with each new level adding one more unresolved class. The runbook is fully settled only when the entire witness tower collapses — when every shadow-type element at every tower level reaches RelationalHistoryFixedFiber.
 
-*Source.* Shadow propagation rule from [Zeno Settling K1 Cohomology §The s-Type Shadow at Level 1](../../../humanities/domains/math/zeno-settling-k1-cohomology.md#zeno-settling-k1-cohomology-shadow) and [§Fibonacci Substitution Check](../../../humanities/domains/math/zeno-settling-k1-cohomology.md#zeno-settling-k1-cohomology-fibonacci). Cohomological non-triviality conditional from [§Cohomology at k=1](../../../humanities/domains/math/zeno-settling-k1-cohomology.md#zeno-settling-k1-cohomology-h1). Status: the shadow-type substitution is established; the cohomological non-triviality is conditional on WitnessNonExtendability. $\square$
+*Source.* Shadow propagation rule from [Zeno Settling K1 Cohomology §The s-Type Shadow at Level 1](../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/humanities/theories/math/zeno-settling-k1-cohomology.md#zeno-settling-k1-cohomology-shadow) and [§Fibonacci Substitution Check](../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/humanities/theories/math/zeno-settling-k1-cohomology.md#zeno-settling-k1-cohomology-fibonacci). Cohomological non-triviality conditional from [§Cohomology at k=1](../../../../../../../../../../../public-services-section/services/personal-services-section/services/emsenn-services-section/content/humanities/theories/math/zeno-settling-k1-cohomology.md#zeno-settling-k1-cohomology-h1). Status: the shadow-type substitution is established; the cohomological non-triviality is conditional on WitnessNonExtendability. $\square$
 
 ## Open questions
 

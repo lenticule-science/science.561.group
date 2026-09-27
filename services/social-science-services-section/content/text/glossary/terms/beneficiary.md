@@ -21,7 +21,7 @@ What makes someone a beneficiary is not their role in the structure but the stru
 
 ## What distinguishes a beneficiary
 
-**From a principal.** A [principal](principal.md) delegates authority and can revoke it.
+**From a principal.** A [principal](../../../../services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/principal.md) delegates authority and can revoke it.
 A beneficiary has no authority to delegate — they hold no power over the structure except the right to its benefits.
 A principal creates the relationship; a beneficiary is named by it.
 In a trust: the settlor (who creates the trust) is the principal; the beneficiaries are the parties the trust serves.

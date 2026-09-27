@@ -14,7 +14,7 @@ related:
   - relating
 ---
 
-In the [relationality](../../../../../../content/text/glossary/_index.md) framework, **necessary** names the mode in which a claim has been witnessed tightly enough that the relations *force* its shape. Where [possible](../../../../../../content/text/glossary/terms/possible.md) is the opening mode (relations have begun to apply, but loosely), necessary is the *binding* mode: the witnessings have accumulated to the point where the claim is no longer optional within the structure of accepted relations.
+In the [relationality](../../../../../../content/text/glossary/_index.md) framework, **necessary** names the mode in which a claim has been witnessed tightly enough that the relations *force* its shape. Where [possible](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/possible.md) is the opening mode (relations have begun to apply, but loosely), necessary is the *binding* mode: the witnessings have accumulated to the point where the claim is no longer optional within the structure of accepted relations.
 
 Necessity is the third mode in the four-mode trajectory of [inquiry](../../../../../../content/text/glossary/terms/inquiry.md): [absurd](absurd.md) → possible → necessary → [determination](determination.md). It is the trajectory's penultimate stage — the structural-pressure mode, where a claim is bound by the relations but the binding has not yet been finalized into a settled determination.
 
@@ -43,7 +43,7 @@ Most of what gets reported as *certain* in ordinary inquiry is necessary in the 
 ## See also
 
 - [Absurd](absurd.md) — the trajectory's start.
-- [Possible](../../../../../../content/text/glossary/terms/possible.md) — the previous mode; what necessity tightens out of.
+- [Possible](../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/possible.md) — the previous mode; what necessity tightens out of.
 - [Determination](determination.md) — the next mode; the trajectory's terminus.
 - [Inquiry](../../../../../../content/text/glossary/terms/inquiry.md) — the broader process.
 - [Reflexivity](reflexivity.md) — the structural feature that produces necessity from possibility.

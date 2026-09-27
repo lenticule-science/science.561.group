@@ -112,7 +112,7 @@ The one exception: [Captain](./captain.md) assumption of command, where accounta
 
 ## Delegation produces the staff officer and duty officer
 
-The delegation operator is what creates [StaffOfficer](../../../../../../../political-science-services-section/services/military-science-services-section/content/text/glossary/terms/staff-officer.md) and [DutyOfficer](../../../../../../../political-science-services-section/services/military-science-services-section/content/text/glossary/terms/duty-officer.md) from a [Principal](../../../../../../../../content/text/glossary/terms/principal.md):
+The delegation operator is what creates [StaffOfficer](../../../../../../../political-science-services-section/services/military-science-services-section/content/text/glossary/terms/staff-officer.md) and [DutyOfficer](../../../../../../../political-science-services-section/services/military-science-services-section/content/text/glossary/terms/duty-officer.md) from a [Principal](../../../../services/governance-services-section/content/text/glossary/terms/principal.md):
 
 $$\mathrm{delegate}(Q, G_{\mathrm{domain}}, B) = \mathrm{StaffOfficer}(Q, G_{\mathrm{domain}}, \mathrm{Advisory})$$
 $$\mathrm{delegate}(Q, G_{\mathrm{positional}}, B) + \mathrm{investiture} = \mathrm{DutyOfficer}(W, Q, \ldots)$$
