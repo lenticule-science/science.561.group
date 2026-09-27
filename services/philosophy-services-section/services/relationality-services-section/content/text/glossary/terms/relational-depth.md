@@ -17,6 +17,14 @@ The aligned pair can then be held in [tension](tension.md) at depth $n_T$, and a
 
 Because any two structures can be aligned, any two structures can be related, whatever their depths: the relational field is closed across depth.
 
+## Alignment is itself a structure
+
+Alignment is not a procedure outside the relational field. An alignment is a relational structure in its own right: the structure aligned, its starting depth, the target depth, and the aligned result. So it can be related and deepened like any other structure, and the drafts call this meta-reflexivity. Deepening a structure changes the alignments that involve it, and changing an alignment changes the tensions built from it. Coherence requires every tension to be built from the latest state of both, at the greatest depth among them.
+
+## Equivalence up to alignment
+
+Two structures at different depths are equivalent when aligning both to some common depth gives the same structure. Equivalence is therefore depth-independent: a structure and its reflexes are recognized as the same form at different depths, and identity is settled by agreement once both are brought to one depth rather than by the depth each was found at.
+
 ## Related
 
 - [Reflexive sequencing](reflexive-sequencing.md)

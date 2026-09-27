@@ -15,6 +15,17 @@ Reflexive equilibrium is the field-level version of what [closure](../../../../.
 
 Reflexive equilibrium extends this to the entire relational field. The field itself — including all the layered acts of relating, differentiating, field-integrating, and reflexive deepening — reaches a fixed point. No further internal [differentiation](../concepts/differentiation.md) is induced. The closure criteria of the integrated field are satisfied: all participating units are coherently engaged, and the system's structural form has settled.
 
+## Form, not depth
+
+Deepening never stops raising depth: every reflex of a structure sits one depth deeper than the structure ([reflexive sequencing](reflexive-sequencing.md)). What reaches equilibrium is the form, not the depth. Reflexes and alignment preserve:
+
+- the order of components within every composite and chain;
+- which nodes a network's edges connect;
+- the kind of structure: a tension stays a tension, a chain a chain, a network a network;
+- the one ontological type of everything involved.
+
+So equilibrium is a fixed point of form reached while depth keeps increasing, and it is unique for a given starting configuration up to the depth index. A particular use can declare a depth past which further deepening carries no meaning for it; that is a boundary the use chooses, not one relating imposes.
+
 ## Why it matters
 
 Without reflexive equilibrium, the derivation would face an infinite regress of a destructive kind. Each act of reflexive deepening would produce genuinely new structure, which would require further reflexive deepening, which would produce still more new structure, with no convergence. The system would never stabilize, and no structural properties could be relied upon.
@@ -22,6 +33,8 @@ Without reflexive equilibrium, the derivation would face an infinite regress of 
 Reflexive equilibrium does not stop the derivation from continuing. It stops the structural form from changing within a given level. The derivation continues past reflexive equilibrium through a different mechanism: the meta-boundary excluding of [Phase 8](../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-04/the-derivation.md) and [recursive domain unfolding](../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-04/recursive-domain-unfolding.md) of Phase 9. These open new domains beyond the equilibrium, but the equilibrium within each domain is genuine and stable.
 
 ## Related
+
+- [Reflexive sequencing](reflexive-sequencing.md), [Network](network.md)
 
 - [The Derivation](../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/relationality-slop-2026-03-04/the-derivation.md) — where reflexive equilibrium arises (Phase 7)
 - [Closure](../../../../../../content/text/documents/articles/research/2026/07/31/lenticule-import/library/philosophy/relationality/archive/triage/relationality-2/domains/ai-generated-relationality/domains/phenomena/closure.md) — the analogous phenomenon at the recognition level
