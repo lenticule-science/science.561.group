@@ -86,7 +86,7 @@
         "target": "epub",
         "configuration": {
           "profile": "epub-screen-pdf-v1",
-          "editionInputDigest": "ni:///sha-256;Ex0nOKRFcqmIWpD6Dx6K0EC9BtUeCnlM8bDW2f0r5OY"
+          "editionInputDigest": "ni:///sha-256;IyED-x_eDVIB7tSqQfV0P41SB-KmFb6-b1Ty-Hf52IE"
         },
         "sourceSpan": {
           "type": "ArtifactFabricationSourceSpan",
@@ -101,7 +101,7 @@
         "target": "screen-pdf",
         "configuration": {
           "profile": "epub-screen-pdf-v1",
-          "editionInputDigest": "ni:///sha-256;Ex0nOKRFcqmIWpD6Dx6K0EC9BtUeCnlM8bDW2f0r5OY"
+          "editionInputDigest": "ni:///sha-256;IyED-x_eDVIB7tSqQfV0P41SB-KmFb6-b1Ty-Hf52IE"
         },
         "sourceSpan": {
           "type": "ArtifactFabricationSourceSpan",
@@ -142,13 +142,13 @@
         ]
       }
     ],
-    "specificationDigest": "ni:///sha-256;ZiRuXF_AYcM6YkDBclQmGEzPbh0Yhd9VM7trnEBP8jo"
+    "specificationDigest": "ni:///sha-256;Nrfmsy-5eEEhY-BrfTZO4yh59L_4cbvDBjkzTh7F4wg"
   },
   "plan": {
     "type": "ArtifactFabricationRealizationPlan",
     "version": 1,
     "artifactId": "project-management-course-by-course-edition",
-    "specificationDigest": "ni:///sha-256;ZiRuXF_AYcM6YkDBclQmGEzPbh0Yhd9VM7trnEBP8jo",
+    "specificationDigest": "ni:///sha-256;Nrfmsy-5eEEhY-BrfTZO4yh59L_4cbvDBjkzTh7F4wg",
     "projectionIds": [
       "epub",
       "screen-pdf"
@@ -178,15 +178,15 @@
   "artifacts": {
     "epub": {
       "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/561-group-services-section/data/state/editions/project-management-course-by-course/project-management-course-by-course.epub",
-      "bytes": 162795,
-      "sha256": "ni:///sha-256;_sGFN9c7mMjeitu2zAjWKqqxNzSUUxRpEi8j_oEv1BI"
+      "bytes": 162844,
+      "sha256": "ni:///sha-256;edxiTBbe8dKLUWovM_c6LIfTdPZ_CgxGg2EGoLrK7tM"
     },
     "screenPdf": {
       "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/561-group-services-section/data/state/editions/project-management-course-by-course/project-management-course-by-course.pdf",
-      "bytes": 256507,
-      "sha256": "ni:///sha-256;wlWiOdp9hvDfrXw8G9mZD_oKLlvGuVks0bw8h9x01j0"
+      "bytes": 256030,
+      "sha256": "ni:///sha-256;2uGWlmBGc7AT5EsXs1dPq8_LJ-5_8ZKP3TRMcL94aKU"
     },
-    "buildRecordDigest": "ni:///sha-256;tRs97MktzwkGptPh2gacoAgfEkB6UgLo0tbO1D4q-BM"
+    "buildRecordDigest": "ni:///sha-256;b4sTulvSQrNn5AEtN0Kdbyp2XHdI5xIJlKbPvJC_He0"
   },
   "formatEvidence": {
     "renderer": {

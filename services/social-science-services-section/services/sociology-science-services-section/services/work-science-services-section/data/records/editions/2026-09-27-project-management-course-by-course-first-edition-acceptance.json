@@ -2,34 +2,34 @@
   "type": "EbookEditionAcceptance",
   "version": 1,
   "status": "accepted",
-  "editionInputDigest": "ni:///sha-256;Ex0nOKRFcqmIWpD6Dx6K0EC9BtUeCnlM8bDW2f0r5OY",
+  "editionInputDigest": "ni:///sha-256;IyED-x_eDVIB7tSqQfV0P41SB-KmFb6-b1Ty-Hf52IE",
   "artifacts": {
     "epub": {
       "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/561-group-services-section/data/state/editions/project-management-course-by-course/project-management-course-by-course.epub",
-      "bytes": 162795,
-      "sha256": "ni:///sha-256;_sGFN9c7mMjeitu2zAjWKqqxNzSUUxRpEi8j_oEv1BI"
+      "bytes": 162844,
+      "sha256": "ni:///sha-256;edxiTBbe8dKLUWovM_c6LIfTdPZ_CgxGg2EGoLrK7tM"
     },
     "screenPdf": {
       "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/561-group-services-section/data/state/editions/project-management-course-by-course/project-management-course-by-course.pdf",
-      "bytes": 256507,
-      "sha256": "ni:///sha-256;wlWiOdp9hvDfrXw8G9mZD_oKLlvGuVks0bw8h9x01j0"
+      "bytes": 256030,
+      "sha256": "ni:///sha-256;2uGWlmBGc7AT5EsXs1dPq8_LJ-5_8ZKP3TRMcL94aKU"
     },
-    "buildRecordDigest": "ni:///sha-256;tRs97MktzwkGptPh2gacoAgfEkB6UgLo0tbO1D4q-BM"
+    "buildRecordDigest": "ni:///sha-256;b4sTulvSQrNn5AEtN0Kdbyp2XHdI5xIJlKbPvJC_He0"
   },
   "closedObligationIds": [
     "editorial-proof"
   ],
   "pendingAcceptanceObligationIds": [],
   "proof": {
-    "digest": "ni:///sha-256;iKINVMQXy9g-Kzo1mt1fBTtQad-DnsCswCfTP3463UE",
+    "digest": "ni:///sha-256;Gc5yvYb269CozRTvQ2WicI2c9ojI5mHbcIYKQwS3RbM",
     "proofer": "independent proofreading agent (claude-opus-5-5 subagent)",
-    "provedAt": "2026-09-28T00:05:00Z",
-    "method": "Diffed this edition's full text byte-for-byte against the prior verified edition to confirm the only changes were the build record hash and the glossary's Escalation entry, then read the updated line in both the rendered text and 11-glossary.md to confirm it matches the coordinator's description and correctly distinguishes the dependency-blocker sense [5] from the risk-response sense [4]. This pass supersedes the prior one only for f17; findings f1-f16 were re-confirmed unaffected since no other text changed.",
+    "provedAt": "2026-09-28T00:35:00Z",
+    "method": "Diffed this edition's full text byte-for-byte against the prior verified edition to confirm the only substantive changes were to the Agile Manifesto citation (build record hash aside; one reference-list entry's page position shifted purely from the added lines pushing pagination, not from reordering). Read 00-about-this-book.md's agile-manifesto-2001 frontmatter entry directly, checked all 17 listed names and spellings against agilemanifesto.org's and other sources' signatory lists, and checked the rendered in-text citation and bibliography entry against the Chicago author-date rule for many-author works (in-text: first author + et al.; bibliography: for more than ten authors, the first seven followed by et al.) via WebSearch. This pass supersedes the prior one only for the new finding f18; findings f1-f17 were re-confirmed unaffected since no other text changed.",
     "findings": {
       "errors": 2,
-      "corrections": 8,
+      "corrections": 9,
       "notes": 7
     }
   },
-  "acceptedAt": "2026-09-27T21:41:06.235Z"
+  "acceptedAt": "2026-09-27T21:48:57.346Z"
 }

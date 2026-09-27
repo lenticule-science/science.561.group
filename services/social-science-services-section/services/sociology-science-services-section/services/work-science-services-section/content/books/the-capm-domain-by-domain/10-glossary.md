@@ -5,14 +5,14 @@ The chapter in brackets is where each term is taught.
 **Acceptance criteria.** Conditions a specific deliverable or backlog item
 must meet to be accepted. [4, 6]
 
+**Activity.** A scheduled piece of work that produces part of a work
+package. [3]
+
 **Adaptive life cycle.** Refines requirements and delivers usable increments
 each cycle; Agile. [1, 4]
 
 **Agile Release Train.** In SAFe, a team of Agile teams that plans and
 delivers together. [4]
-
-**Activity.** A scheduled piece of work that produces part of a work
-package. [3]
 
 **Assumption.** Something believed true for planning, without proof. [1]
 
@@ -131,17 +131,17 @@ source and to design, build and test. [5, 6]
 **Servant leadership.** Leading by serving the team and removing obstacles.
 [4]
 
-**Subsidiary plan.** A plan for managing one area of the project, such as
-scope, schedule, cost or risk. [2, 3]
-
 **Stakeholder register.** Records stakeholders' identification, assessment
 and classification. [2]
 
-**Tuckman's stages.** Forming, storming, norming, performing and
-adjourning: how teams tend to develop. [2]
+**Subsidiary plan.** A plan for managing one area of the project, such as
+scope, schedule, cost or risk. [2, 3]
 
 **Transition requirements.** Temporary needs for moving to the future state.
 [5]
+
+**Tuckman's stages.** Forming, storming, norming, performing and
+adjourning: how teams tend to develop. [2]
 
 **Use case.** A step-by-step description of an actor's interaction with a
 system, with alternate paths. [5]
