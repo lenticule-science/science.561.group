@@ -86,7 +86,7 @@
         "target": "epub",
         "configuration": {
           "profile": "epub-screen-pdf-v1",
-          "editionInputDigest": "ni:///sha-256;ZibfBLEVM7rqvkPgaI-CEDB2nWHN4ukAcnrqNUHYjzw"
+          "editionInputDigest": "ni:///sha-256;qVOwaaZRhqUKrRrpyAPxn3mV717ys_w7w_JuswR2H-w"
         },
         "sourceSpan": {
           "type": "ArtifactFabricationSourceSpan",
@@ -101,7 +101,7 @@
         "target": "screen-pdf",
         "configuration": {
           "profile": "epub-screen-pdf-v1",
-          "editionInputDigest": "ni:///sha-256;ZibfBLEVM7rqvkPgaI-CEDB2nWHN4ukAcnrqNUHYjzw"
+          "editionInputDigest": "ni:///sha-256;qVOwaaZRhqUKrRrpyAPxn3mV717ys_w7w_JuswR2H-w"
         },
         "sourceSpan": {
           "type": "ArtifactFabricationSourceSpan",
@@ -142,13 +142,13 @@
         ]
       }
     ],
-    "specificationDigest": "ni:///sha-256;1Y10yr0HKZ-1QW8opIFpUsCZV6t5T8O1NsJ_kFbGFUQ"
+    "specificationDigest": "ni:///sha-256;XqE3STTQKXhCgIY_rZUTxXCB1LLNgGuDIaYKm7cLbaw"
   },
   "plan": {
     "type": "ArtifactFabricationRealizationPlan",
     "version": 1,
     "artifactId": "the-capm-domain-by-domain-edition",
-    "specificationDigest": "ni:///sha-256;1Y10yr0HKZ-1QW8opIFpUsCZV6t5T8O1NsJ_kFbGFUQ",
+    "specificationDigest": "ni:///sha-256;XqE3STTQKXhCgIY_rZUTxXCB1LLNgGuDIaYKm7cLbaw",
     "projectionIds": [
       "epub",
       "screen-pdf"
@@ -178,15 +178,15 @@
   "artifacts": {
     "epub": {
       "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/561-group-services-section/data/state/editions/the-capm-domain-by-domain/the-capm-domain-by-domain.epub",
-      "bytes": 155940,
-      "sha256": "ni:///sha-256;0qWkTRwevIL4_EAOMcf2W633_djd_akKLSoq3VI4YyU"
+      "bytes": 155944,
+      "sha256": "ni:///sha-256;m1ENkVwoEUtVm64zaZCl-EPfXsSwD9quWxtLhbpfifA"
     },
     "screenPdf": {
       "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/561-group-services-section/data/state/editions/the-capm-domain-by-domain/the-capm-domain-by-domain.pdf",
-      "bytes": 240440,
-      "sha256": "ni:///sha-256;AyYE-O5b_MriFilCIdD6poeYvph8-Q2Nr_nzO7HmIJ8"
+      "bytes": 242180,
+      "sha256": "ni:///sha-256;XkxcSDcD3ZEcOd2sMSsROmpEMUxWsk8-Mgs7nShR30g"
     },
-    "buildRecordDigest": "ni:///sha-256;2-h9NKcWof0ny_jkq8I14C5q2FLINjsdRLyO_3GAiNI"
+    "buildRecordDigest": "ni:///sha-256;RPjNrIfT_JoPFe9X8pSCWPESBMHi2i--Fd-PG-mi60I"
   },
   "formatEvidence": {
     "renderer": {

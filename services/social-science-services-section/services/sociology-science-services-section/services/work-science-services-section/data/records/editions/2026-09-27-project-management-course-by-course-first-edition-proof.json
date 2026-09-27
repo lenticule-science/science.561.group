@@ -1,15 +1,15 @@
 {
   "type": "EbookEditionProof",
   "version": 1,
-  "editionInputDigest": "ni:///sha-256;IyED-x_eDVIB7tSqQfV0P41SB-KmFb6-b1Ty-Hf52IE",
+  "editionInputDigest": "ni:///sha-256;iD23sD4imko2goQxonDRbWfI6dODSPoOlSzwx3xa_T4",
   "artifacts": {
-    "epub": "ni:///sha-256;edxiTBbe8dKLUWovM_c6LIfTdPZ_CgxGg2EGoLrK7tM",
-    "screenPdf": "ni:///sha-256;2uGWlmBGc7AT5EsXs1dPq8_LJ-5_8ZKP3TRMcL94aKU"
+    "epub": "ni:///sha-256;TCZgnJQNjztyl30iCuPU0q8fcTFyzygyZUgSc8OmrVQ",
+    "screenPdf": "ni:///sha-256;DNwFqFOj-c1Fcdh2bdM6u48prxKfn1H0UpxlXnZS01M"
   },
   "proofer": "independent proofreading agent (claude-opus-5-5 subagent)",
   "writer": "claude-opus-5-5 (bare-cedar-fog-claude session d6271b1b)",
-  "provedAt": "2026-09-28T00:35:00Z",
-  "method": "Diffed this edition's full text byte-for-byte against the prior verified edition to confirm the only substantive changes were to the Agile Manifesto citation (build record hash aside; one reference-list entry's page position shifted purely from the added lines pushing pagination, not from reordering). Read 00-about-this-book.md's agile-manifesto-2001 frontmatter entry directly, checked all 17 listed names and spellings against agilemanifesto.org's and other sources' signatory lists, and checked the rendered in-text citation and bibliography entry against the Chicago author-date rule for many-author works (in-text: first author + et al.; bibliography: for more than ten authors, the first seven followed by et al.) via WebSearch. This pass supersedes the prior one only for the new finding f18; findings f1-f17 were re-confirmed unaffected since no other text changed.",
+  "provedAt": "2026-09-28T01:00:00Z",
+  "method": "Diffed this edition's full text byte-for-byte against the prior verified edition to confirm the only substantive changes were to the Agile Manifesto citation (build record hash aside; one reference-list entry's page position shifted purely from the added lines pushing pagination, not from reordering). Read 00-about-this-book.md's agile-manifesto-2001 frontmatter entry directly, checked all 17 listed names and spellings against agilemanifesto.org's and other sources' signatory lists, and checked the rendered in-text citation and bibliography entry against the Chicago author-date rule for many-author works (in-text: first author + et al.; bibliography: for more than ten authors, the first seven followed by et al.) via WebSearch. For this pass, diffed the new text against the prior edition's text as a stream of alphabetic word tokens (stripping digits, page numbers and the build-record hash) and confirmed the token streams matched except for running headers, running footers and repeated table-header rows moving position — no prose wording changed. Rendered pages 35-38 of the built PDF at /home/emsenn/info/lib/emsenn/services/561-group/services/561-group-services-section/data/state/editions/project-management-course-by-course/project-management-course-by-course.pdf with pdftoppm and visually confirmed three previously-stranded labels ('Budget.', 'Risk register.', 'Communication plan.') now sit on the same page as their full tables. This pass supersedes the prior one only for the new finding f19; findings f1-f18 were re-confirmed unaffected since no wording changed.",
   "findings": [
     {
       "id": "f1",
@@ -171,6 +171,15 @@
       "claim": "The agile-manifesto-2001 reference used a literal 'et al.' as a stand-in author, so the edition printed '(Beck and et al. 2001)' in chapter 7 and 'Beck, Kent, and et al. 2001' in the bibliography, discarding the other sixteen signatories' names.",
       "source": "agilemanifesto.org and independent corroborating sources list all 17 real signatories: Kent Beck, Mike Beedle, Arie van Bennekum, Alistair Cockburn, Ward Cunningham, Martin Fowler, James Grenning, Jim Highsmith, Andrew Hunt, Ron Jeffries, Jon Kern, Brian Marick, Robert C. Martin, Steve Mellor, Ken Schwaber, Jeff Sutherland, and Dave Thomas.",
       "fix": "Verified fixed. 00-about-this-book.md's agile-manifesto-2001 frontmatter now lists all 17 signatories by name, and every name and spelling matches the real signatory list exactly (order, given names, and the lowercase 'van' in 'van Bennekum' all correct). The rendered edition now reads '(Beck et al. 2001)' in chapter 7 — the ordinary Chicago author-date in-text form for a many-author work — and the bibliography reads 'Beck, Kent, Mike Beedle, Arie van Bennekum, Alistair Cockburn, Ward Cunningham, Martin Fowler, James Grenning, et al. 2001.' This is not a truncation bug: Chicago author-date style lists only the first seven authors followed by 'et al.' in the bibliography once a work has more than ten authors (confirmed against citation-style guidance), and the Agile Manifesto's 17 real, correctly-spelled authors now sit behind that ellipsis instead of a bare placeholder. A full-text diff against the prior edition confirmed no other content changed (only the build record hash and this citation; one reference-list entry's apparent position shift was pagination reflow from the added lines, not reordering).",
+      "resolution": "fixed"
+    },
+    {
+      "id": "f19",
+      "file": "layout: templates/keep-with-table.lua (PDF build; no manuscript file)",
+      "severity": "note",
+      "claim": "A bold label introducing a table (e.g. 'Risk register.', 'Communication plan.', 'Budget.') could be stranded alone at the bottom of a page, with its table starting on the next page.",
+      "source": "Directly observed in the prior edition's PDF text extraction: 'Risk register.' sat alone at the foot of the page ending '...decision.' before the page-36 break, and 'Communication plan.' sat alone at the foot of the page ending '...pickups' before the page-37 break, in both cases with the table itself starting only after the page turn.",
+      "fix": "Verified fixed. A word-token diff (stripping digits, page numbers and the build hash) of the new edition's text against the prior edition's showed identical wording throughout; every difference was a running header, running footer or repeated table-header row moving position because of the new page breaks, never a change to prose. Rendered pages 35-38 of /home/emsenn/info/lib/emsenn/services/561-group/services/561-group-services-section/data/state/editions/project-management-course-by-course/project-management-course-by-course.pdf with pdftoppm at 100 dpi and visually confirmed 'Budget.' (page 36), 'Risk register.' (page 37) and 'Communication plan.' (page 38) each now open a fresh page together with their full table, none stranded at a page foot.",
       "resolution": "fixed"
     }
   ]

@@ -2,34 +2,34 @@
   "type": "EbookEditionAcceptance",
   "version": 1,
   "status": "accepted",
-  "editionInputDigest": "ni:///sha-256;ZibfBLEVM7rqvkPgaI-CEDB2nWHN4ukAcnrqNUHYjzw",
+  "editionInputDigest": "ni:///sha-256;qVOwaaZRhqUKrRrpyAPxn3mV717ys_w7w_JuswR2H-w",
   "artifacts": {
     "epub": {
       "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/561-group-services-section/data/state/editions/the-capm-domain-by-domain/the-capm-domain-by-domain.epub",
-      "bytes": 155940,
-      "sha256": "ni:///sha-256;0qWkTRwevIL4_EAOMcf2W633_djd_akKLSoq3VI4YyU"
+      "bytes": 155944,
+      "sha256": "ni:///sha-256;m1ENkVwoEUtVm64zaZCl-EPfXsSwD9quWxtLhbpfifA"
     },
     "screenPdf": {
       "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/561-group-services-section/data/state/editions/the-capm-domain-by-domain/the-capm-domain-by-domain.pdf",
-      "bytes": 240440,
-      "sha256": "ni:///sha-256;AyYE-O5b_MriFilCIdD6poeYvph8-Q2Nr_nzO7HmIJ8"
+      "bytes": 242180,
+      "sha256": "ni:///sha-256;XkxcSDcD3ZEcOd2sMSsROmpEMUxWsk8-Mgs7nShR30g"
     },
-    "buildRecordDigest": "ni:///sha-256;2-h9NKcWof0ny_jkq8I14C5q2FLINjsdRLyO_3GAiNI"
+    "buildRecordDigest": "ni:///sha-256;RPjNrIfT_JoPFe9X8pSCWPESBMHi2i--Fd-PG-mi60I"
   },
   "closedObligationIds": [
     "editorial-proof"
   ],
   "pendingAcceptanceObligationIds": [],
   "proof": {
-    "digest": "ni:///sha-256;pMwxJ5clw28PFgzrnsOgeaouj7JLJkAQJiyWO8hHcIE",
+    "digest": "ni:///sha-256;Buo4KKAVibg2goaFZoe2LynrL-s6YE0qUArWvfZDk2A",
     "proofer": "independent proofreading agent (claude-opus-5-5 subagent)",
-    "provedAt": "2026-09-28T04:00:00Z",
-    "method": "Diffed the-capm-domain-by-domain-edition-next.txt against edition3.txt to isolate every change. Re-read the full glossary in document order end to end and confirmed all 58 entries now sort correctly (Activity after Acceptance criteria, Subsidiary plan after Stakeholder register, Tuckman's stages after Transition requirements). Fetched agilemanifesto.org directly (its front page and authors.html) to get the seventeen signatories in their own listed order, and cross-checked the new Agile Manifesto bibliography entry against it and against the Chicago Manual of Style rule for sources with more than ten authors (list the first seven in source order, then \"et al.\"). Verified the new Jacobson et al. 1992 author list (Jacobson, Christerson, Jonsson, Övergaard) against independent catalog records (Amazon, Biblio, ADS/Harvard) for the book's actual four co-authors. Grepped the whole text for every remaining \"et al.\" to confirm none are the literal-second-author bug and all are either correct in-text shorthand or the one correct bibliography truncation.",
+    "provedAt": "2026-09-28T05:00:00Z",
+    "method": "Diffed the-capm-domain-by-domain-edition-layout.txt against edition-next.txt after stripping page numbers and running heads, then confirmed via a sorted bag-of-words comparison that the only differences are three de-duplicated table-header rows (each previously printed twice because its table split across a page break, now printed once) and a net increase in running-head/page-number furniture consistent with more total pages — net word-count delta zero, no vocabulary added or removed, and spot-checked the load-bearing content (72 seconds, 13 to 21, escalate/avoid, the Beck/Jacobson author lists, the Kanban six-practice list, the Domain 4 Task 4 answer key line) all present unchanged. Rendered the actual PDF at the given house path with pdftoppm (150dpi) for the page containing §6.6's \"Roadmap.\" label (page 60) and its preceding page (59), and two further label-plus-table spots (§2.9's \"A stakeholder register entry.\", page 26; §5.7's \"Requirements, classified.\", page 53) to visually confirm each label now renders on the same page as its table.",
     "findings": {
       "errors": 5,
       "corrections": 12,
-      "notes": 1
+      "notes": 2
     }
   },
-  "acceptedAt": "2026-09-27T21:51:43.663Z"
+  "acceptedAt": "2026-09-27T22:00:14.308Z"
 }

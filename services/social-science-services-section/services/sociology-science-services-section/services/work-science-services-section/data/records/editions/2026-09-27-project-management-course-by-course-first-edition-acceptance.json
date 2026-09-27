@@ -2,34 +2,34 @@
   "type": "EbookEditionAcceptance",
   "version": 1,
   "status": "accepted",
-  "editionInputDigest": "ni:///sha-256;IyED-x_eDVIB7tSqQfV0P41SB-KmFb6-b1Ty-Hf52IE",
+  "editionInputDigest": "ni:///sha-256;iD23sD4imko2goQxonDRbWfI6dODSPoOlSzwx3xa_T4",
   "artifacts": {
     "epub": {
       "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/561-group-services-section/data/state/editions/project-management-course-by-course/project-management-course-by-course.epub",
-      "bytes": 162844,
-      "sha256": "ni:///sha-256;edxiTBbe8dKLUWovM_c6LIfTdPZ_CgxGg2EGoLrK7tM"
+      "bytes": 162848,
+      "sha256": "ni:///sha-256;TCZgnJQNjztyl30iCuPU0q8fcTFyzygyZUgSc8OmrVQ"
     },
     "screenPdf": {
       "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/561-group-services-section/data/state/editions/project-management-course-by-course/project-management-course-by-course.pdf",
-      "bytes": 256030,
-      "sha256": "ni:///sha-256;2uGWlmBGc7AT5EsXs1dPq8_LJ-5_8ZKP3TRMcL94aKU"
+      "bytes": 256953,
+      "sha256": "ni:///sha-256;DNwFqFOj-c1Fcdh2bdM6u48prxKfn1H0UpxlXnZS01M"
     },
-    "buildRecordDigest": "ni:///sha-256;b4sTulvSQrNn5AEtN0Kdbyp2XHdI5xIJlKbPvJC_He0"
+    "buildRecordDigest": "ni:///sha-256;5LnX9YWx0O1pPlalw4cDQ-jdqOSoFV2nnhvPEnxjTfk"
   },
   "closedObligationIds": [
     "editorial-proof"
   ],
   "pendingAcceptanceObligationIds": [],
   "proof": {
-    "digest": "ni:///sha-256;Gc5yvYb269CozRTvQ2WicI2c9ojI5mHbcIYKQwS3RbM",
+    "digest": "ni:///sha-256;EpIEE4KtDivdoXcoTWcuyCY6-glX4QBWVaWiCypLPT0",
     "proofer": "independent proofreading agent (claude-opus-5-5 subagent)",
-    "provedAt": "2026-09-28T00:35:00Z",
-    "method": "Diffed this edition's full text byte-for-byte against the prior verified edition to confirm the only substantive changes were to the Agile Manifesto citation (build record hash aside; one reference-list entry's page position shifted purely from the added lines pushing pagination, not from reordering). Read 00-about-this-book.md's agile-manifesto-2001 frontmatter entry directly, checked all 17 listed names and spellings against agilemanifesto.org's and other sources' signatory lists, and checked the rendered in-text citation and bibliography entry against the Chicago author-date rule for many-author works (in-text: first author + et al.; bibliography: for more than ten authors, the first seven followed by et al.) via WebSearch. This pass supersedes the prior one only for the new finding f18; findings f1-f17 were re-confirmed unaffected since no other text changed.",
+    "provedAt": "2026-09-28T01:00:00Z",
+    "method": "Diffed this edition's full text byte-for-byte against the prior verified edition to confirm the only substantive changes were to the Agile Manifesto citation (build record hash aside; one reference-list entry's page position shifted purely from the added lines pushing pagination, not from reordering). Read 00-about-this-book.md's agile-manifesto-2001 frontmatter entry directly, checked all 17 listed names and spellings against agilemanifesto.org's and other sources' signatory lists, and checked the rendered in-text citation and bibliography entry against the Chicago author-date rule for many-author works (in-text: first author + et al.; bibliography: for more than ten authors, the first seven followed by et al.) via WebSearch. For this pass, diffed the new text against the prior edition's text as a stream of alphabetic word tokens (stripping digits, page numbers and the build-record hash) and confirmed the token streams matched except for running headers, running footers and repeated table-header rows moving position — no prose wording changed. Rendered pages 35-38 of the built PDF at /home/emsenn/info/lib/emsenn/services/561-group/services/561-group-services-section/data/state/editions/project-management-course-by-course/project-management-course-by-course.pdf with pdftoppm and visually confirmed three previously-stranded labels ('Budget.', 'Risk register.', 'Communication plan.') now sit on the same page as their full tables. This pass supersedes the prior one only for the new finding f19; findings f1-f18 were re-confirmed unaffected since no wording changed.",
     "findings": {
       "errors": 2,
       "corrections": 9,
-      "notes": 7
+      "notes": 8
     }
   },
-  "acceptedAt": "2026-09-27T21:48:57.346Z"
+  "acceptedAt": "2026-09-27T21:58:34.844Z"
 }

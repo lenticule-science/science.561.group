@@ -1,15 +1,15 @@
 {
   "type": "EbookEditionProof",
   "version": 1,
-  "editionInputDigest": "ni:///sha-256;ZibfBLEVM7rqvkPgaI-CEDB2nWHN4ukAcnrqNUHYjzw",
+  "editionInputDigest": "ni:///sha-256;qVOwaaZRhqUKrRrpyAPxn3mV717ys_w7w_JuswR2H-w",
   "artifacts": {
-    "epub": "ni:///sha-256;0qWkTRwevIL4_EAOMcf2W633_djd_akKLSoq3VI4YyU",
-    "screenPdf": "ni:///sha-256;AyYE-O5b_MriFilCIdD6poeYvph8-Q2Nr_nzO7HmIJ8"
+    "epub": "ni:///sha-256;m1ENkVwoEUtVm64zaZCl-EPfXsSwD9quWxtLhbpfifA",
+    "screenPdf": "ni:///sha-256;XkxcSDcD3ZEcOd2sMSsROmpEMUxWsk8-Mgs7nShR30g"
   },
   "proofer": "independent proofreading agent (claude-opus-5-5 subagent)",
   "writer": "claude-opus-5-5 (bare-cedar-fog-claude session d6271b1b)",
-  "provedAt": "2026-09-28T04:00:00Z",
-  "method": "Diffed the-capm-domain-by-domain-edition-next.txt against edition3.txt to isolate every change. Re-read the full glossary in document order end to end and confirmed all 58 entries now sort correctly (Activity after Acceptance criteria, Subsidiary plan after Stakeholder register, Tuckman's stages after Transition requirements). Fetched agilemanifesto.org directly (its front page and authors.html) to get the seventeen signatories in their own listed order, and cross-checked the new Agile Manifesto bibliography entry against it and against the Chicago Manual of Style rule for sources with more than ten authors (list the first seven in source order, then \"et al.\"). Verified the new Jacobson et al. 1992 author list (Jacobson, Christerson, Jonsson, Övergaard) against independent catalog records (Amazon, Biblio, ADS/Harvard) for the book's actual four co-authors. Grepped the whole text for every remaining \"et al.\" to confirm none are the literal-second-author bug and all are either correct in-text shorthand or the one correct bibliography truncation.",
+  "provedAt": "2026-09-28T05:00:00Z",
+  "method": "Diffed the-capm-domain-by-domain-edition-layout.txt against edition-next.txt after stripping page numbers and running heads, then confirmed via a sorted bag-of-words comparison that the only differences are three de-duplicated table-header rows (each previously printed twice because its table split across a page break, now printed once) and a net increase in running-head/page-number furniture consistent with more total pages — net word-count delta zero, no vocabulary added or removed, and spot-checked the load-bearing content (72 seconds, 13 to 21, escalate/avoid, the Beck/Jacobson author lists, the Kanban six-practice list, the Domain 4 Task 4 answer key line) all present unchanged. Rendered the actual PDF at the given house path with pdftoppm (150dpi) for the page containing §6.6's \"Roadmap.\" label (page 60) and its preceding page (59), and two further label-plus-table spots (§2.9's \"A stakeholder register entry.\", page 26; §5.7's \"Requirements, classified.\", page 53) to visually confirm each label now renders on the same page as its table.",
   "findings": [
     {
       "id": "f1",
@@ -171,6 +171,15 @@
       "claim": "Two bibliography entries printed \"et al.\" as though it were a literal second author's name, rather than a proper truncation of a real author list: \"Beck, Kent, and et al. 2001.\" for the Agile Manifesto, and \"Jacobson, Ivar, and et al. 1992.\" for the use-case book, both flagged by a sibling edition's proof and found to apply here too.",
       "source": "agilemanifesto.org (fetched directly, front page and authors.html): the manifesto's seventeen signatories, in the site's own listed order, are Kent Beck, Mike Beedle, Arie van Bennekum, Alistair Cockburn, Ward Cunningham, Martin Fowler, James Grenning, Jim Highsmith, Andrew Hunt, Ron Jeffries, Jon Kern, Brian Marick, Robert C. Martin, Steve Mellor, Ken Schwaber, Jeff Sutherland and Dave Thomas. Independent catalog records (Amazon, Biblio, the ADS/Harvard abstract service) for Object-Oriented Software Engineering: A Use Case Driven Approach (1992) give its four authors as Ivar Jacobson, Magnus Christerson, Patrik Jonsson and Gunnar Övergaard. The Chicago Manual of Style's author-date rule for a source with more than ten authors is to list the first seven in the source's own order in the bibliography, followed by \"et al.\"",
       "fix": "Verified fixed: the References now read \"Beck, Kent, Mike Beedle, Arie van Bennekum, Alistair Cockburn, Ward Cunningham, Martin Fowler, James Grenning, et al. 2001.\" — the first seven of the seventeen signatories, in agilemanifesto.org's own order, correctly truncated per the more-than-ten-authors rule (not \"all seventeen\" spelled out, but the standard, correct bibliographic form) — and \"Jacobson, Ivar, Magnus Christerson, Patrik Jonsson, and Gunnar Övergaard. 1992.\", all four real co-authors spelled out since there are fewer than ten. The in-text citations were also corrected, to \"(Beck et al. 2001)\" and \"(Jacobson et al. 1992)\". Grepped every remaining \"et al.\" in the book (Cepeda et al. 2006, Dunlosky et al. 2013, Malcolm et al. 1959, plus these two): all are either ordinary in-text shorthand for a fully-spelled-out bibliography entry, or this one correct truncation. None is a literal \"and et al.\" author-name bug.",
+      "resolution": "fixed"
+    },
+    {
+      "id": "n5",
+      "file": "templates/keep-with-table.lua",
+      "severity": "note",
+      "claim": "In the PDF build, a bold label paragraph that introduces a table (e.g. \"Roadmap.\", \"A stakeholder register entry.\", \"Requirements, classified.\") could be stranded at the bottom of one page while its table started the next, most visibly in Chapter 6 where \"Roadmap.\" previously ended a page with its table pushed to the following one.",
+      "source": "Coordinator's report of the previous PDF layout; house PDF build (LaTeX via pandoc).",
+      "fix": "Verified fixed: confirmed by diff that edition-layout's text differs from edition-next's only in page-break position and running-head/page-number furniture (a sorted bag-of-words comparison shows the sole content-level difference is three table-header rows that no longer print twice because their tables no longer split across a page — net word-count delta zero). Rendered the built PDF at /home/emsenn/info/lib/emsenn/services/561-group/services/561-group-services-section/data/state/editions/the-capm-domain-by-domain/the-capm-domain-by-domain.pdf with pdftoppm: page 60 now shows §6.6's \"Roadmap.\" label immediately followed by its full three-row table (page 59 ends with only the §6.6 heading and blank space, pushed clear by the needspace filter rather than splitting the label from its table); page 26 shows §2.9's \"A stakeholder register entry.\" label with its table intact on one page; page 53 shows §5.7's \"Requirements, classified.\" label with its table intact on one page. The keep-with-table.lua filter with \\usepackage{needspace} resolves the class of issue, not only the one cited example.",
       "resolution": "fixed"
     }
   ]
