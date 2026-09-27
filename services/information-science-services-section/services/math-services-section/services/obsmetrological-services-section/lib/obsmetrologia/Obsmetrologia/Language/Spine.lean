@@ -13,22 +13,17 @@ The smallest typed composition of the language stages.
 
 `articulate` makes an `Articulating` from a typed token and claim;
 `predicate` reads its oriented cell (`Articulating.orientedCell`: the head's
-token, the head's claim, the tail's head token) as the predicating locus; `posit` admits a
-caller-supplied `Reading` at that locus; and `settle` applies an explicit
-`Reading.Closure`.  Nothing in `run`'s own composite derives either
-coordinate of a reading — `admitted` is a caller-supplied value, the value
-algebra's raw material, not a construction of admission.  In particular,
-any reading of a supplied `Reading` or `Record` as refutational evidence
-remains a caller-side requirement, not a construction provided here.
+token, the head's claim, the tail's head token) as the predicating locus;
+measuring reads the value at that locus off a trace of articulatings; and
+`settle` applies an explicit `Reading.Closure`.
 
-**The measured composite** (`runTrace`, below `run`) is the re-based spine:
-articulate a trace, predicate its cells (the same `predicate`),
-*measure* the reading from the trace itself (`Obsmetrologia.measure`, ruled
-2026-09-21 in `Positing/Measure.lean`) rather than accept it from the
-caller, then settle. `run` is kept exactly as it was — the value-algebra
-composite, useful whenever a reading is legitimately supplied rather than
-measured — and `runTrace` sits beside it as the composite that actually
-derives its reading from evidence.
+**The spine is the measured composite.** `run` articulates into a trace,
+predicates the new articulating's cell, *measures* the reading there from the
+trace (`Obsmetrologia.measure`, `Positing/Measure.lean`) and settles it: no
+reading enters from the caller. `runTrace` is the same composite at any cell of
+a trace. `runSupplied` is the value-algebra composite, which admits a
+caller-supplied `Reading` (`posit`); it constructs no admission, and reading a
+supplied `Reading` or `Record` as evidence stays the caller's requirement.
 -/
 
 namespace Obsmetrologia
@@ -73,8 +68,9 @@ supplied closure to the admitted reading. -/
 def settle (closure : Reading.Closure) (m : Meme) : Meme :=
   ⟨m.cell, Reading.settle closure m.reading⟩
 
-/-- The literal Mark → Articulating → Predicating → Positing → Settling composite. -/
-def run (closure : Reading.Closure) (token claim : Mark) (admitted : Reading) : Meme :=
+/-- The value-algebra composite: Mark → Articulating → Predicating, then a caller-supplied
+reading posited and settled. It constructs no admission; `run` is the spine. -/
+def runSupplied (closure : Reading.Closure) (token claim : Mark) (admitted : Reading) : Meme :=
   settle closure (posit (predicate (articulate ⟨token⟩ ⟨claim⟩)) admitted)
 
 @[simp] theorem predicate_articulate (token claim : Mark) :
@@ -109,28 +105,25 @@ theorem admitted_le_settled (closure : Reading.Closure) (m : Meme) :
     Reading.KLE m.reading (settle closure m).reading :=
   closure.infl m.reading
 
-@[simp] theorem run_cell (closure : Reading.Closure) (token claim : Mark) (admitted : Reading) :
-    (run closure token claim admitted).cell = predicate (articulate ⟨token⟩ ⟨claim⟩) := rfl
+@[simp] theorem runSupplied_cell (closure : Reading.Closure) (token claim : Mark) (admitted : Reading) :
+    (runSupplied closure token claim admitted).cell = predicate (articulate ⟨token⟩ ⟨claim⟩) := rfl
 
-/-- The composite's output reading is fixed by its supplied closure. -/
-theorem run_reading_fixed (closure : Reading.Closure) (token claim : Mark) (admitted : Reading) :
-    closure.op (run closure token claim admitted).reading =
-      (run closure token claim admitted).reading :=
+/-- The supplied composite's output reading is fixed by its closure. -/
+theorem runSupplied_reading_fixed (closure : Reading.Closure) (token claim : Mark) (admitted : Reading) :
+    closure.op (runSupplied closure token claim admitted).reading =
+      (runSupplied closure token claim admitted).reading :=
   settle_reading_fixed closure (posit (predicate (articulate ⟨token⟩ ⟨claim⟩)) admitted)
 
-/-- The composite settles above its supplied admission; no evidence source is introduced. -/
-theorem run_admitted_le_settled (closure : Reading.Closure) (token claim : Mark)
+/-- The supplied composite settles above its supplied admission; no evidence source is introduced. -/
+theorem runSupplied_admitted_le_settled (closure : Reading.Closure) (token claim : Mark)
     (admitted : Reading) :
-    Reading.KLE admitted (run closure token claim admitted).reading :=
+    Reading.KLE admitted (runSupplied closure token claim admitted).reading :=
   admitted_le_settled closure (posit (predicate (articulate ⟨token⟩ ⟨claim⟩)) admitted)
 
-/-! ## Spine re-base: the measured composite
+/-! ## The measured composite
 
-`run` above stays exactly as it was — `admitted` is caller-supplied, the
-value algebra's raw material, not a construction of admission. `measure`
-and `runTrace` are the *measured* composite: the reading is derived from a
-trace of articulatings (`Obsmetrologia.measure`, `Positing/Measure.lean`),
-not accepted as an opaque input. -/
+`measure`, `runTrace` and `run` derive the reading from a trace of articulatings
+(`Obsmetrologia.measure`, `Positing/Measure.lean`) rather than accept it as an opaque input. -/
 
 /-- The measured valuation read off a trace: bare readings only, forgetting
 the evidence `Obsmetrologia.measure` carries alongside it. -/
@@ -145,9 +138,8 @@ theorem measure_nil_knowledgeLeast (k : Contradictory) :
     ∀ φ, measure k [] φ = Valuation.knowledgeLeast φ :=
   fun φ => Obsmetrologia.measure_nil k φ
 
-/-- The re-based composite: articulate a trace, predicate its cells, measure
-the reading from the trace itself, then settle. Where `run` accepts a
-caller-supplied reading, `runTrace` derives it. -/
+/-- The measured composite at a cell of a trace: measure the reading there from the trace
+itself, then settle. Where `runSupplied` accepts a caller-supplied reading, `runTrace` derives it. -/
 def runTrace (closure : Reading.Closure) (k : Contradictory) (trace : List Articulating)
     (φ : PredicationCell) : Meme :=
   settle closure ⟨φ, (Obsmetrologia.measure k trace φ).value⟩
@@ -177,6 +169,40 @@ theorem runTrace_measured_le_settled (closure : Reading.Closure) (k : Contradict
     (trace : List Articulating) (φ : PredicationCell) :
     Reading.KLE (Obsmetrologia.measure k trace φ).value (runTrace closure k trace φ).reading :=
   closure.infl (Obsmetrologia.measure k trace φ).value
+
+/-- Settling never withdraws told-for evidence: a knowledge-order step keeps a present
+positive side. -/
+theorem KLE_pos {a b : Reading} (h : Reading.KLE a b) (hp : a.pos = true) : b.pos = true := by
+  revert h hp; cases a <;> cases b <;> decide
+
+/-- **The spine.** Articulate `a` into the trace, predicate its oriented cell, measure the
+reading there from the trace, and settle. No reading enters from the caller. -/
+def run (closure : Reading.Closure) (k : Contradictory) (trace : List Articulating)
+    (a : Articulating) : Meme :=
+  runTrace closure k (a :: trace) (predicate a)
+
+/-- The spine is the measured composite at the new articulating's own cell. -/
+theorem run_eq_runTrace (closure : Reading.Closure) (k : Contradictory)
+    (trace : List Articulating) (a : Articulating) :
+    run closure k trace a = runTrace closure k (a :: trace) (predicate a) := rfl
+
+@[simp] theorem run_cell (closure : Reading.Closure) (k : Contradictory)
+    (trace : List Articulating) (a : Articulating) :
+    (run closure k trace a).cell = predicate a := rfl
+
+/-- The spine's reading is fixed by its closure. -/
+theorem run_reading_fixed (closure : Reading.Closure) (k : Contradictory)
+    (trace : List Articulating) (a : Articulating) :
+    closure.op (run closure k trace a).reading = (run closure k trace a).reading :=
+  runTrace_reading_fixed closure k (a :: trace) (predicate a)
+
+/-- **What is articulated is told for.** The spine's settled reading at the articulated claim
+has its positive side present: the articulating is its own for-witness, and settling keeps it. -/
+theorem run_pos (closure : Reading.Closure) (k : Contradictory)
+    (trace : List Articulating) (a : Articulating) :
+    (run closure k trace a).reading.pos = true :=
+  KLE_pos (closure.infl (Obsmetrologia.measure k (a :: trace) (predicate a)).value)
+    (Obsmetrologia.measure_cons_self_pos k a trace)
 
 end Spine
 end Obsmetrologia

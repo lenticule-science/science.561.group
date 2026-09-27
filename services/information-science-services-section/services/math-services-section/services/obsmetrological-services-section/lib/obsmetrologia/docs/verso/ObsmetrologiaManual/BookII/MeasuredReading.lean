@@ -179,9 +179,20 @@ example (k : Contradictory) (trace : List Articulating) (φ : PredicationCell) :
 
 ## The Measured Composite Of The Spine
 
-Where `Spine.run` admits a caller-supplied reading and documents that as not
-itself constituting admission, `Spine.runTrace` is the composite that
-actually measures: articulate, predicate, *measure*, settle.
+`Spine.runTrace` is the composite that actually measures: articulate,
+predicate, *measure*, settle, at any cell of a trace. The spine itself,
+`Spine.run`, is that composite at a newly articulated claim, and what is
+articulated is told for: its settled reading has a positive side.
+
+```lean
+example (closure : Reading.Closure) (k : Contradictory) (trace : List Articulating)
+    (a : Articulating) :
+    (Spine.run closure k trace a).reading.pos = true :=
+  Spine.run_pos closure k trace a
+```
+
+`Spine.runSupplied` keeps the value-algebra composite, which admits a
+caller-supplied reading and constructs no admission.
 
 ```lean
 example (closure : Reading.Closure) (k : Contradictory) (trace : List Articulating)

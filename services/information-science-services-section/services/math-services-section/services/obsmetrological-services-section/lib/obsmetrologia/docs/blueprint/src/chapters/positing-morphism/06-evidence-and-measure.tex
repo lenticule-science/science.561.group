@@ -139,11 +139,23 @@ readings is therefore derived from contradiction on marks, not assumed.
 \(\texttt{runTrace}\,\texttt{closure}\,k\,\texttt{trace}\,\varphi\) is
 articulate, predicate, \emph{measure}, settle: it settles the closure applied
 to the value of \(\texttt{measure}\,k\,\texttt{trace}\,\varphi\) at the locus
-\(\varphi\). Where \texttt{Spine.run} (\cref{thm:predicating-proper}'s
-chapter) admits a caller-supplied charge and documents that admission as not
-itself constituting admission of evidence, \texttt{runTrace} is the composite
-that actually measures.
+\(\varphi\). Where \texttt{Spine.runSupplied} admits a caller-supplied
+reading and constructs no admission of evidence, \texttt{runTrace} is the
+composite that actually measures.
 \end{definition}
+\begin{definition}[The spine]\label{thm:spine-run}\lean{Obsmetrologia.Spine.run, Obsmetrologia.Spine.run_eq_runTrace, Obsmetrologia.Spine.run_reading_fixed}\leanok\uses{thm:spine-runtrace, thm:spine-predicate-oriented}
+\(\texttt{run}\,\texttt{closure}\,k\,\texttt{trace}\,a\) is the spine:
+articulate \(a\) into the trace, predicate its oriented cell, measure the
+reading there from \(a :: \texttt{trace}\), and settle; that is,
+\(\texttt{runTrace}\,\texttt{closure}\,k\,(a :: \texttt{trace})\,(\texttt{predicate}\,a)\).
+No reading enters from the caller.
+\end{definition}
+\begin{theorem}[What is articulated is told for]\label{thm:spine-run-pos}\lean{Obsmetrologia.Spine.run_pos, Obsmetrologia.measure_cons_self_pos, Obsmetrologia.Spine.KLE_pos}\leanok\uses{thm:spine-run, thm:measure-self-pos}
+The spine's settled reading at the articulated claim has its positive side
+present, for every closure, contradiction and trace: the articulating is its
+own for-witness in any trace it heads, and settling, being knowledge-inflationary,
+never withdraws told-for evidence.
+\end{theorem}
 
 \begin{theorem}[The empty trace's spine is the knowledge-least valuation]\label{thm:spine-measure-nil-knowledgeleast}\lean{Obsmetrologia.Spine.measure_nil_knowledgeLeast}\leanok\uses{thm:measure-nil, thm:knowledge-least}
 For every claim \(\varphi\), measuring the empty trace and reading it as a

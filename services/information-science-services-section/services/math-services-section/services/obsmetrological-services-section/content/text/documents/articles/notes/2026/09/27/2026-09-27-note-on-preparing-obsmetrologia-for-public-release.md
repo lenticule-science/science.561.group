@@ -113,9 +113,10 @@ construction costs `Quot.sound` and nothing more (08-17 note, §5.1).
    seeds. `Articulating.orientedCell` (`Predicating/Oriented.lean`) is the
    one composition the recursion determines without a choice. The 09-21 note
    seated it beside the spine rather than in it.
-5. **The caller supplies the reading.** `Spine.run` still accepts a
-   caller-supplied reading. `runTrace` measures it and is the composite the
-   theory describes.
+5. **The caller supplied the reading.** *Settled 2026-09-27:* `Spine.run` is the
+   measured composite at a newly articulated claim (`run_eq_runTrace`), and what is
+   articulated is told for (`run_pos`, axiom-free). The caller-supplied composite is
+   `Spine.runSupplied`.
 6. **There is no root identification.** Nothing yet quotients the utterance
    space.
 
@@ -129,7 +130,7 @@ construction costs `Quot.sound` and nothing more (08-17 note, §5.1).
    keeping every witness.
 2. Re-land the stage and regime pairing. *Done 2026-09-27 (`3a78ce8c741`).*
 3. Make the oriented cell the spine's predicate. *Done 2026-09-27.*
-4. Make the measured composite the spine.
+4. Make the measured composite the spine. *Done 2026-09-27.*
 5. Seat the root identification as the biextensional collapse of the measured
    utterance space. Prove that measurement factors through it and that Chu
    transforms descend.

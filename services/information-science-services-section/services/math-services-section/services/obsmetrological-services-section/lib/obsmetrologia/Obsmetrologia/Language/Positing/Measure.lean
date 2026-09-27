@@ -153,18 +153,23 @@ theorem measure_cons_le (k : Contradictory) (a : Articulating) (trace : List Art
   leK_ofSlots_of_impl (witnesses_cons_isEmpty_le φ a trace)
     (witnesses_cons_isEmpty_le (φ.contradictory k) a trace)
 
+/-- An articulating is a for-witness of its own cell in any trace it heads. -/
+theorem measure_cons_self_pos (k : Contradictory) (a : Articulating) (trace : List Articulating) :
+    ((measure k (a :: trace) a.orientedCell).value).pos = true := by
+  have hw : witnesses a.orientedCell (a :: trace) = a.head.token :: witnesses a.orientedCell trace := by
+    show (if a.orientedCell = a.orientedCell then a.head.token :: witnesses a.orientedCell trace
+        else witnesses a.orientedCell trace) = a.head.token :: witnesses a.orientedCell trace
+    rw [if_pos rfl]
+  show (Reading.ofSlots (!(witnesses a.orientedCell (a :: trace)).isEmpty)
+      (!(witnesses (a.orientedCell.contradictory k) (a :: trace)).isEmpty)).pos = true
+  rw [hw, Reading.pos_ofSlots]
+  rfl
+
 /-- **Articulating tells its own cell true.** A one-step trace `[a]` measures
 `a`'s own oriented cell as positive: `a` is its own for-witness. -/
 theorem measure_self_pos (k : Contradictory) (a : Articulating) :
-    ((measure k [a] a.orientedCell).value).pos = true := by
-  have hw : witnesses a.orientedCell [a] = a.head.token :: witnesses a.orientedCell [] := by
-    show (if a.orientedCell = a.orientedCell then a.head.token :: witnesses a.orientedCell []
-        else witnesses a.orientedCell []) = a.head.token :: witnesses a.orientedCell []
-    rw [if_pos rfl]
-  show (Reading.ofSlots (!(witnesses a.orientedCell [a]).isEmpty)
-      (!(witnesses (a.orientedCell.contradictory k) [a]).isEmpty)).pos = true
-  rw [hw, Reading.pos_ofSlots]
-  rfl
+    ((measure k [a] a.orientedCell).value).pos = true :=
+  measure_cons_self_pos k a []
 
 /-- **No denial.** The only way a measured reading ever carries a negative
 pole at `φ` is that some articulating in the trace actually landed on `φ`'s
