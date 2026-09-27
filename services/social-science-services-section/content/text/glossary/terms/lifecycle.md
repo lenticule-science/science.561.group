@@ -23,7 +23,7 @@ A lifecycle is the ordered sequence of phases an entity passes through from crea
 It is the temporal shape of an entity's existence — the path it must follow from beginning to end.
 
 A lifecycle names the states an entity occupies and specifies which transitions between states are valid.
-A [task](./task.md) has a lifecycle: open → active → completed (or failed, or abandoned).
+A [task](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/task.md) has a lifecycle: open → active → completed (or failed, or abandoned).
 A [plan](./plan.md) has a lifecycle: draft → active → completed → archived.
 A norm has a lifecycle: proposed → enacted → in force → amended → repealed.
 A role has a lifecycle: vacant → invested → occupied → relieved → vacant.
@@ -80,7 +80,7 @@ But all follow the pattern: creation → phases → terminus.
 
 - [State](../../../../philosophy/terms/state.md) — a phase within a lifecycle
 - [Event](../../../../philosophy/terms/event.md) — a transition between phases
-- [Task](./task.md) — work with a specific lifecycle (open → active → completed)
+- [Task](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/task.md) — work with a specific lifecycle (open → active → completed)
 - [Plan](./plan.md) — governance with a specific lifecycle (draft → active → completed)
 - [Endeavor](endeavor.md) — temporal structure relating lifecycles to purposes
 - [Enterprise](../../../../services/economics-and-business-science-services-section/services/business-science-services-section/content/text/glossary/terms/enterprise.md) — indefinite-duration lifecycle with aim-generation

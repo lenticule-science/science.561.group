@@ -14,7 +14,7 @@ date-created: 2026-04-06
 ---
 
 Failed is the terminal state of unsuccessful [work](work.md).
-The [task](task.md)'s goal became impossible or was not achieved.
+The [task](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/task.md)'s goal became impossible or was not achieved.
 Unlike [blocked](blocked.md), failed is terminal — the work will not resume.
 
 A failed part contributes `incomplete` to its container.

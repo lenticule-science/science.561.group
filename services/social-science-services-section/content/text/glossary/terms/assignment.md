@@ -22,7 +22,7 @@ references:
 ---
 
 An assignment is the [act](../../../../philosophy/terms/act.md) of creating a relation between a [work unit](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/work-unit.md) and an agent.
-When a [task](task.md) is assigned, it gains an assignee — an agent who is now responsible for advancing it.
+When a [task](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/task.md) is assigned, it gains an assignee — an agent who is now responsible for advancing it.
 The assignment is the central act of the dispatch stage.
 
 An assignment is not just "telling someone to do something."

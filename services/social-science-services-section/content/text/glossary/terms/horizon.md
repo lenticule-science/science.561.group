@@ -47,7 +47,7 @@ These are not separate concepts but instances of the same pattern at different s
 
 Different work containers have different natural horizons.
 Bratman (1987) introduced the concept of a temporal limit on practical reasoning — agents can deliberate about the near future, but not infinitely far ahead without losing actionability.
-A [task](task.md) bounded to a morning or afternoon needs a horizon measured in hours.
+A [task](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/task.md) bounded to a morning or afternoon needs a horizon measured in hours.
 A [plan](plan.md) binding multiple tasks needs a horizon measured in weeks.
 A [project](project.md) grouping related plans needs a horizon measured in months or quarters.
 Once you move beyond the natural horizon of a container, the planning degrades: the future becomes too uncertain to constrain present action, or the present decisions become too divorced from their consequences to be responsibly made.

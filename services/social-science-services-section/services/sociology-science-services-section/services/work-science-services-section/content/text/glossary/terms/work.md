@@ -45,7 +45,7 @@ This is the base concept. All organized activity is work when it has a defined o
 
 A work unit is a concrete instance of work: it names what it acts on (domain), which aspect changes (affected), how the change is produced (operation), and the specific values that make this instance distinct from other instances of the same operation (parameters). A work unit without parameters is a template, not an instance.
 
-Work composes. A [workflow](./workflow.md) is a set of work units with the constraint that the initial input type equals the final output type — the workflow takes something of type X and produces something of type X. A [task](../../../../../../../../content/text/glossary/terms/task.md) is a named planning container for work units with a completion condition. Workflows are algebraic (they compose); tasks are organizational (they group work for planning and tracking).
+Work composes. A [workflow](./workflow.md) is a set of work units with the constraint that the initial input type equals the final output type — the workflow takes something of type X and produces something of type X. A [task](./task.md) is a named planning container for work units with a completion condition. Workflows are algebraic (they compose); tasks are organizational (they group work for planning and tracking).
 
 Work is the thing that [practice](../../../../../../../../content/text/glossary/terms/practice.md) does and [method](../../../../../../../../content/text/glossary/terms/method.md) governs. Practice without work is idle; method without work is shelfware; work without method is improvisation; work without practice is a plan that never executes.
 

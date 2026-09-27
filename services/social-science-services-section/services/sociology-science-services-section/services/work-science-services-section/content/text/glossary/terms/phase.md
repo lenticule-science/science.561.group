@@ -43,7 +43,7 @@ The phase is not just the configuration but the duration of that configuration.
 Three conditions define a phase: entry conditions (what must be true to enter), the character of the phase itself (what the entity is like while in this phase), and exit conditions (what must be true to leave).
 
 Phases compose into [lifecycles](../../../../../../../../content/text/glossary/terms/lifecycle.md).
-A [task](../../../../../../../../content/text/glossary/terms/task.md) lifecycle has phases: open → active → completed (or failed).
+A [task](./task.md) lifecycle has phases: open → active → completed (or failed).
 A [plan](../../../../../../../../content/text/glossary/terms/plan.md) lifecycle has phases: draft → active → completed → archived.
 A [project](../../../../../../../../content/text/glossary/terms/project.md) lifecycle has phases: initiation → planning → execution → monitoring and control → closing.
 The ordering of phases may be strictly linear (waterfall: requirements → design → implementation → testing, each follows the previous without deviation) or flexible (agile: phases can overlap, loop, or branch based on conditions).
@@ -83,7 +83,7 @@ The phase is the unit of time that makes all temporal coordination possible.
 - [State](../../../../../../../../philosophy/terms/state.md) — a configuration at a moment (phase is state extended in time)
 - [Event](../../../../../../../../philosophy/terms/event.md) — the transition between phases
 - [Milestone](../../../../../../../../content/text/glossary/terms/milestone.md) — a recognizable state marking a phase boundary
-- [Task](../../../../../../../../content/text/glossary/terms/task.md) — has a simple lifecycle with defined phases
+- [Task](./task.md) — has a simple lifecycle with defined phases
 - [Plan](../../../../../../../../content/text/glossary/terms/plan.md) — has a governance lifecycle with phases
 - [Process](./process.md) — has a fully determined sequence of phases
 - [Duration](../../../../../../../../content/text/glossary/terms/duration.md) — the temporal extent of a phase

@@ -68,7 +68,7 @@ Enriching these propagates upward: every entity that references `thing` inherits
 A small investment at the bottom yields large returns across the entire vocabulary.
 
 **From above: operational context.** The top-level entities — the [ship](./ship.md), the [charter](../../../../services/sociology-science-services-section/services/work-science-services-section/services/governance-services-section/content/text/glossary/terms/charter.md), the [goals](../../../../../../information-science-services-section/services/knowledge-services-section/services/research-services-section/content/text/glossary/terms/goal.md) — provide the CONTEXT that makes lower-level entities meaningful.
-A [task](./task.md)'s `part-of: some-plan` only computes if the [plan](./plan.md)'s fiber is rich enough to say something about the task.
+A [task](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/task.md)'s `part-of: some-plan` only computes if the [plan](./plan.md)'s fiber is rich enough to say something about the task.
 Enriching the top provides the frame within which middle-level entities become informative.
 
 **They converge in the middle.** The bottom provides VOCABULARY (what predicates mean).

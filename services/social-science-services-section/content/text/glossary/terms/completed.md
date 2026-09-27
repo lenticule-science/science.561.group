@@ -14,7 +14,7 @@ date-created: 2026-04-06
 ---
 
 Completed is the terminal state of successful [work](work.md).
-The [task](task.md)'s goal has been achieved.
+The [task](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/task.md)'s goal has been achieved.
 No further action is needed or possible on this unit of work.
 
 When a task reaches completed, the [part-of](relation.md) relation entails consequences for the whole: a completed part contributes `complete` to its container.

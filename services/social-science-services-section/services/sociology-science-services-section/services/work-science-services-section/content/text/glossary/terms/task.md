@@ -2,7 +2,7 @@
 id: task
 description: "A Task is a triple (G, S, P) — a goal G specifying the desired outcome, a set S of subtasks or atomic operations required to achieve G, and a plan P ordering the elements of S under the conditions in which each must execute — constituting a recognizable, purposive unit of activity that decomposes until atomic operations are reached. The defining structure: a task is organized around a goal that defines what counts as its completion; the task's structure is the hierarchical decomposition of the goal into sub-goals, each with its own sub-tasks, terminating in atomic operations. A task is not a procedure (a procedure has an a priori specification; a task's plan is conditional on context) and not a plan (a plan is a set of partially ordered operations; a task is the goal-structured unit of activity that the plan serves)."
 date-created: 2026-03-20
-date-modified: 2026-03-20
+date-modified: 2026-09-27
 params:
   goal: relational-universe
   operation-set: relational-universe
@@ -18,7 +18,6 @@ ast:
         - subtask-decomposition
         - goal
 aliases:
-  - achievement-system.md (parent)
   - tasks
   - task
 extends:
@@ -71,6 +70,77 @@ visibility: public
 ---
 
 # Task
+
+A task is a unit of work organized around a goal.
+It has three parts: a goal (what counts as done), a set of subtasks or operations (what must happen to get there), and a plan (the order and conditions under which subtasks execute).
+
+The goal defines the task.
+The task succeeds when the goal is achieved.
+The task fails when the goal becomes impossible.
+The task is abandoned when the agent releases the goal.
+Without a goal, there is activity but not a task — the goal is what gives the work its boundary.
+
+Tasks decompose hierarchically.
+A task breaks into subtasks, which break into smaller subtasks, down to atomic operations that cannot be decomposed further.
+This hierarchy is the basic structure of all organized work — from military mission planning (mission → phases → tasks → subtasks) to software development (epic → story → task → subtask) to project management (project → work packages → activities).
+
+The plan specifies how subtasks relate.
+Subtasks may be sequential (do A then B), conditional (if X then do A, else do B), concurrent (do A and B simultaneously), or cyclic (do A until condition Y).
+The plan is not always fully specified in advance — it may be elaborated as earlier subtasks complete and more information becomes available.
+
+A task can contain any of the four work types.
+A task whose every subtask is a [process](./process.md) is itself a process.
+A task with conditional subtasks is a [procedure](./procedure.md).
+A task that includes open-ended investigation is an [inquiry](./inquiry.md).
+The task is the container; the work type characterizes what kind of work fills it.
+
+Tasks compose into [workflows](./workflow.md).
+A workflow is a directed graph of tasks, where edges represent dependencies (task B cannot start until task A completes) or information flow (task B uses task A's output).
+A workflow is itself a task at a higher level of description — it has a goal, subtasks (the individual tasks), and a plan (the graph structure).
+
+The stopping criterion for decomposition is practical, not formal.
+Annett and Duncan's $p \times c$ rule: stop decomposing when the probability of failure times the cost of failure falls below a threshold.
+High-risk operations get decomposed further.
+Low-risk operations are treated as atomic.
+The grain of decomposition matches the stakes, not any abstract standard of atomicity.
+
+An older house definition reads a task as one or more acts associated with a goal, done by a procedure, implicit or explicit, that says how; a task whose procedure encodes the task's meaning may be a ritual.
+
+## As a record
+
+A task kept as a record carries, beyond its goal and status, the predicates
+that place it in the work: who it is assigned to (an office), the plan it
+belongs to, the tasks it depends on, what it produces, the milestone it
+contributes to, and the concepts, capabilities and skills it requires. Every
+task belongs to exactly one plan; a task without one has no place in the work
+and cannot be prioritized or known to be done. Its status (open, in
+progress, blocked, completed, abandoned) is its state; the date it was done
+is recorded separately, so a completed task with no recorded date is a gap in
+the history, not a contradiction. A task is completed when its completion
+condition holds and its named output exists; blocked is a valid state, and a
+task is abandoned with a stated reason.
+
+## The `subtasks:` field
+
+When a task is composite — when its work-type is procedure or it requires multiple capabilities that no single agent provides — its subtasks become first-class entities.
+The parent task's frontmatter declares `subtasks: [<subtask-id>, ...]
+` and each subtask is its own file with its own atomic work-type, requires-capabilities, and assigned-to.
+
+Dispatch of a composite parent is *dispatch-to-coordinator*: the coordinator agent (planner or first-officer, depending on the parent's domain) receives the parent and emits the subtask graph for ordinary dispatch.
+Dispatch of a leaf subtask proceeds normally.
+
+For example, "build an achievement system" is a procedure-type task that needs both writing and review, which no single agent provides, so it becomes a parent with a writing subtask and a review subtask.
+
+Each subtask file is independently dispatchable.
+The parent's status derives from the subtasks: in-progress while any subtask is open, completed when all are completed.
+
+## Task vs plan
+
+A task with subtasks blurs the boundary toward [plan](plan.md).
+The distinguishing heuristic: a task has a single completion (the goal is met or it isn't); a plan is a container that gains and loses tasks over time without ending.
+A composite procedure task with a fixed subtask list is still a task.
+A plan with an evolving task list is a plan.
+When in doubt, model as a plan and let the tasks come and go.
 
 ## Formal definition
 
@@ -188,8 +258,8 @@ Subtasks may be sequential (do A then B), conditional (if X then do A, else do B
 The plan is not always fully specified in advance — it may be elaborated as earlier subtasks complete and more information becomes available.
 
 A task can contain any of the four work types.
-A task whose every subtask is a [process](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/process.md) is itself a process.
-A task with conditional subtasks is a [procedure](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/procedure.md).
+A task whose every subtask is a [process](./process.md) is itself a process.
+A task with conditional subtasks is a [procedure](./procedure.md).
 A task that includes open-ended investigation is an [inquiry](inquiry.md).
 The task is the container; the work type characterizes what kind of work fills it.
 
@@ -211,4 +281,4 @@ Example. The task "build an achievement system" is procedure-type and requires b
 
 Each subtask file is independently dispatchable. The parent's status derives from the subtasks: in-progress while any subtask is open, completed when all are completed.
 
-A task with subtasks blurs the boundary toward [plan](../../../../services/sociology-science-services-section/content/text/triage/plan.md). The distinguishing heuristic: a task has a single completion (the goal is met or it isn't); a plan is a container that gains and loses tasks over time without ending. A composite procedure task with a fixed subtask list is still a task. A plan with an evolving task list is a plan. When in doubt, model as a plan and let the tasks come and go.
+A task with subtasks blurs the boundary toward [plan](./plan.md). The distinguishing heuristic: a task has a single completion (the goal is met or it isn't); a plan is a container that gains and loses tasks over time without ending. A composite procedure task with a fixed subtask list is still a task. A plan with an evolving task list is a plan. When in doubt, model as a plan and let the tasks come and go.
