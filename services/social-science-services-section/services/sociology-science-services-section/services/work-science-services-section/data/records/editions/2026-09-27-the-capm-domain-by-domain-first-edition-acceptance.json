@@ -1,0 +1,35 @@
+{
+  "type": "EbookEditionAcceptance",
+  "version": 1,
+  "status": "accepted",
+  "editionInputDigest": "ni:///sha-256;ZibfBLEVM7rqvkPgaI-CEDB2nWHN4ukAcnrqNUHYjzw",
+  "artifacts": {
+    "epub": {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/561-group-services-section/data/state/editions/the-capm-domain-by-domain/the-capm-domain-by-domain.epub",
+      "bytes": 155940,
+      "sha256": "ni:///sha-256;0qWkTRwevIL4_EAOMcf2W633_djd_akKLSoq3VI4YyU"
+    },
+    "screenPdf": {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/561-group-services-section/data/state/editions/the-capm-domain-by-domain/the-capm-domain-by-domain.pdf",
+      "bytes": 240440,
+      "sha256": "ni:///sha-256;AyYE-O5b_MriFilCIdD6poeYvph8-Q2Nr_nzO7HmIJ8"
+    },
+    "buildRecordDigest": "ni:///sha-256;2-h9NKcWof0ny_jkq8I14C5q2FLINjsdRLyO_3GAiNI"
+  },
+  "closedObligationIds": [
+    "editorial-proof"
+  ],
+  "pendingAcceptanceObligationIds": [],
+  "proof": {
+    "digest": "ni:///sha-256;pMwxJ5clw28PFgzrnsOgeaouj7JLJkAQJiyWO8hHcIE",
+    "proofer": "independent proofreading agent (claude-opus-5-5 subagent)",
+    "provedAt": "2026-09-28T04:00:00Z",
+    "method": "Diffed the-capm-domain-by-domain-edition-next.txt against edition3.txt to isolate every change. Re-read the full glossary in document order end to end and confirmed all 58 entries now sort correctly (Activity after Acceptance criteria, Subsidiary plan after Stakeholder register, Tuckman's stages after Transition requirements). Fetched agilemanifesto.org directly (its front page and authors.html) to get the seventeen signatories in their own listed order, and cross-checked the new Agile Manifesto bibliography entry against it and against the Chicago Manual of Style rule for sources with more than ten authors (list the first seven in source order, then \"et al.\"). Verified the new Jacobson et al. 1992 author list (Jacobson, Christerson, Jonsson, Övergaard) against independent catalog records (Amazon, Biblio, ADS/Harvard) for the book's actual four co-authors. Grepped the whole text for every remaining \"et al.\" to confirm none are the literal-second-author bug and all are either correct in-text shorthand or the one correct bibliography truncation.",
+    "findings": {
+      "errors": 5,
+      "corrections": 12,
+      "notes": 1
+    }
+  },
+  "acceptedAt": "2026-09-27T21:51:43.663Z"
+}
