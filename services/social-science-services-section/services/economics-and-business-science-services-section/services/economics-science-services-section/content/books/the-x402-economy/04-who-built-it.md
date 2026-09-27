@@ -29,8 +29,8 @@ settlements through Coinbase's facilitator.
 
 Coinbase has been open about the problem it set out to solve. At the
 Foundation's launch, Lincoln Murr of Coinbase said: "x402 was started at
-Coinbase to solve a real problem – AI agents had no native way to pay"
-[@lf2026].
+Coinbase to solve a real problem – AI agents had no native, interoperable way
+to pay for the things they needed to do" [@lf2026].
 
 A protocol that serves one company's interests is hard to adopt for that
 company's competitors. Stripe, Google, Visa and Mastercard have little reason
@@ -53,9 +53,9 @@ July 2026 [@lf2026]. It had 17 premier members:
   Foundation, MoonPay, Ripple, the Solana Foundation and the Stellar
   Development Foundation.
 
-Seventeen general members joined as well, from crypto infrastructure firms
-and blockchain foundations to KakaoPay and World Liberty Financial, plus
-several associate members.
+Eighteen general members joined as well, from crypto infrastructure firms
+and blockchain foundations to KakaoPay and World Liberty Financial, and five
+associate members, forty in all [@lf2026].
 
 Jim Zemlin, the Linux Foundation's chief executive, framed the purpose this
 way: "AI agents and automated systems are becoming active participants in the

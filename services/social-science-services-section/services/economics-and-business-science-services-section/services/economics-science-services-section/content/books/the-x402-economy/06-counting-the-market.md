@@ -42,11 +42,11 @@ actually measures.
 
 | figure | what it counts | source |
 |---|---|---|
-| "over 100M payments" since May 2025 | every settlement, unfiltered | the x402 project [@x402v2launch] |
+| "over 100M payments" since May 2025, reported in December 2025 | every settlement, unfiltered | the x402 project [@x402v2launch] |
 | more than 100 million cumulative transactions on Base through early 2026 | Base only, unfiltered | Chainalysis [@chainalysis2026] |
 | $135.7 million across 178.3 million transactions, to 21 April 2026 | every settlement, unfiltered | Visa and Artemis [@visaartemis2026] |
 | $15.0 million across 109.6 million transactions, same period | settlement after removing activity that resembles wash trading or testing | Visa and Artemis [@visaartemis2026] |
-| $52.7 million across 198.9 million settlements on Base, Solana and Polygon, May 2025 to September 2026 | every settlement on three chains | TRM Labs [@pymnts2026trm] |
+| $52.7 million across 198.9 million settlements on Base, Solana and Polygon, May 2025 to mid-September 2026 | every settlement on three chains | TRM Labs [@pymnts2026trm] |
 | $25.6 million of that | after removing self-dealing and other anomalous flows | TRM Labs [@pymnts2026trm] |
 | 0.6% to 7.5% of that value | the share TRM judged plausibly paid by AI agents | TRM Labs [@pymnts2026trm] |
 | about $28,000 a day, about 131,000 transactions a day, average about $0.20, roughly half "gamed" | daily activity in March 2026 | CoinDesk, using Artemis data [@reynolds2026] |

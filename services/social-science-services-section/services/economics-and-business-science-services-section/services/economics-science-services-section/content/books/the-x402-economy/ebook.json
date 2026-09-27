@@ -5,5 +5,6 @@
   "author": "561 Group",
   "bookDir": ".",
   "distDir": "../../../dist/the-x402-economy",
-  "tokens": "../../../../../../../../../../561-group-services-section/services/561-group-content-design-services-section/data/records/design-tokens/561-group.tokens.json"
+  "tokens": "../../../../../../../../../../561-group-services-section/services/561-group-content-design-services-section/data/records/design-tokens/561-group.tokens.json",
+  "cover": "typographic"
 }

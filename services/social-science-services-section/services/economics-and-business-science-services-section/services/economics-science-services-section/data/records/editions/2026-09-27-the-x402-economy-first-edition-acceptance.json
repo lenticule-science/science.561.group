@@ -1,0 +1,35 @@
+{
+  "type": "EbookEditionAcceptance",
+  "version": 1,
+  "status": "accepted",
+  "editionInputDigest": "ni:///sha-256;f9ouyxX7SfoFJ9ioNlbMbz63T7vO7V1vYI8Dq6EmqmI",
+  "artifacts": {
+    "epub": {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/561-group-services-section/data/state/editions/the-x402-economy/the-x402-economy.epub",
+      "bytes": 126759,
+      "sha256": "ni:///sha-256;5CQZJgtgZ1NVMlZ5JCc5t0MLCifLueqkDNmfX4skn9Q"
+    },
+    "screenPdf": {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/561-group-services-section/data/state/editions/the-x402-economy/the-x402-economy.pdf",
+      "bytes": 193856,
+      "sha256": "ni:///sha-256;k6SoVIRxJ_VgMh7Dn0sUMJ6-K-bSg2F6ZriDbyg-yWc"
+    },
+    "buildRecordDigest": "ni:///sha-256;jqwGdgdgopguWBgHF4WVz_lPzVwxEEZo7rMjfVcfgrU"
+  },
+  "closedObligationIds": [
+    "editorial-proof"
+  ],
+  "pendingAcceptanceObligationIds": [],
+  "proof": {
+    "digest": "ni:///sha-256;-Rlxqz4VAfSLE1vIeLn_43OO2GWZFOW0DXTMlbRZosc",
+    "proofer": "independent proofreading agent (claude-opus-5-5, separate context from the writer)",
+    "provedAt": "2026-09-27",
+    "method": "Re-read the five edited manuscript files in full and diffed each fix against its primary source: the Linux Foundation x402 Foundation press release (linuxfoundation.org, 2026-07-14, fetched directly and via raw HTML to count members and quote verbatim), the house's own 402index-listing.json record for the paid-ephemeris-gateway, and the PYMNTS/TRM article (2026-09-15); re-scanned for defects the edits introduced, then re-read 06-counting-the-market.md line-by-line against the prior version to confirm only the TRM table row changed.",
+    "findings": {
+      "errors": 3,
+      "corrections": 3,
+      "notes": 1
+    }
+  },
+  "acceptedAt": "2026-09-27T20:03:24.416Z"
+}

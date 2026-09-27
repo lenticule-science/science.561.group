@@ -106,7 +106,7 @@ The flow leaves out several things a card payment includes.
   number. It learns a blockchain address, which is a pseudonym.
 - **There is no chargeback.** A blockchain transfer cannot be reversed by a
   bank. If the server takes the money and sends nothing, the client's remedy
-  is outside the protocol. Chapter 9 returns to this.
+  is outside the protocol. Chapter 8 returns to this.
 - **There is no subscription.** Each request pays for itself. Version 2 adds
   optional sessions, so a client that has paid can skip the full exchange for
   a while, but the basic unit is still one request [@x402v2launch].

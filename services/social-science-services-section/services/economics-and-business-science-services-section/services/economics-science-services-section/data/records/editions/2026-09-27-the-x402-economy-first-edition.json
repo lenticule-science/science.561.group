@@ -86,7 +86,7 @@
         "target": "epub",
         "configuration": {
           "profile": "epub-screen-pdf-v1",
-          "editionInputDigest": "ni:///sha-256;QdcjFJmdTwSgT7MfWCAK63vj9liNEJiZ08UAG4EEP3c"
+          "editionInputDigest": "ni:///sha-256;f9ouyxX7SfoFJ9ioNlbMbz63T7vO7V1vYI8Dq6EmqmI"
         },
         "sourceSpan": {
           "type": "ArtifactFabricationSourceSpan",
@@ -101,7 +101,7 @@
         "target": "screen-pdf",
         "configuration": {
           "profile": "epub-screen-pdf-v1",
-          "editionInputDigest": "ni:///sha-256;QdcjFJmdTwSgT7MfWCAK63vj9liNEJiZ08UAG4EEP3c"
+          "editionInputDigest": "ni:///sha-256;f9ouyxX7SfoFJ9ioNlbMbz63T7vO7V1vYI8Dq6EmqmI"
         },
         "sourceSpan": {
           "type": "ArtifactFabricationSourceSpan",
@@ -142,13 +142,13 @@
         ]
       }
     ],
-    "specificationDigest": "ni:///sha-256;DV5GQ1LHUFq9qUxbuyreKBMXhcXEYxEwsfbCjZ7-Iyg"
+    "specificationDigest": "ni:///sha-256;A07S4ZMht4F7fPSGyZ9v0ZaotEHeIp_txnXvZRrMmiY"
   },
   "plan": {
     "type": "ArtifactFabricationRealizationPlan",
     "version": 1,
     "artifactId": "the-x402-economy-edition",
-    "specificationDigest": "ni:///sha-256;DV5GQ1LHUFq9qUxbuyreKBMXhcXEYxEwsfbCjZ7-Iyg",
+    "specificationDigest": "ni:///sha-256;A07S4ZMht4F7fPSGyZ9v0ZaotEHeIp_txnXvZRrMmiY",
     "projectionIds": [
       "epub",
       "screen-pdf"
@@ -178,15 +178,15 @@
   "artifacts": {
     "epub": {
       "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/561-group-services-section/data/state/editions/the-x402-economy/the-x402-economy.epub",
-      "bytes": 58149,
-      "sha256": "ni:///sha-256;oh4uWLodZasS0MU35fzfdzmquHczTYPBueDFXrey1kc"
+      "bytes": 126759,
+      "sha256": "ni:///sha-256;5CQZJgtgZ1NVMlZ5JCc5t0MLCifLueqkDNmfX4skn9Q"
     },
     "screenPdf": {
       "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/561-group-services-section/data/state/editions/the-x402-economy/the-x402-economy.pdf",
-      "bytes": 193384,
-      "sha256": "ni:///sha-256;DPIi2nH8gkLByQhOebPg3yz31JTgYOwfiC5_fi0h6rg"
+      "bytes": 193856,
+      "sha256": "ni:///sha-256;k6SoVIRxJ_VgMh7Dn0sUMJ6-K-bSg2F6ZriDbyg-yWc"
     },
-    "buildRecordDigest": "ni:///sha-256;DNuQH2OAwO3XIjbX6FsSc5SpFN3GxglKCw1JLyL1tOs"
+    "buildRecordDigest": "ni:///sha-256;jqwGdgdgopguWBgHF4WVz_lPzVwxEEZo7rMjfVcfgrU"
   },
   "formatEvidence": {
     "renderer": {

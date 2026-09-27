@@ -122,7 +122,7 @@ the seller, its friends and curious developers. Count them separately.
 
 **Distribution is necessary, not sufficient.** Listing in catalogs and
 directories helps buyers find a service. The 561 Group's gateway was accepted
-by an independent directory, 402index, in August 2026, but a listing cannot
+by an independent directory, 402index, in September 2026, but a listing cannot
 create demand where none exists.
 
 **Expect concentration.** In the Bazaar, a few sellers earned nearly

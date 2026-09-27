@@ -77,7 +77,7 @@ The form follows the Living Web evidence packet
 | 2026-03-18 | Stripe and Tempo publish the Machine Payments Protocol (MPP); Stripe says it supports both MPP and x402 | <https://stripe.com/blog/machine-payments-protocol> |
 | 2026-04-02 | The Linux Foundation announces it will host the x402 Foundation | CoinDesk 2026-04-02 |
 | 2026-07-01 | Cloudflare announces the Monetization Gateway, charging for pages, APIs, datasets and MCP tools over x402 with stablecoin settlement | <https://blog.cloudflare.com/monetization-gateway/> |
-| 2026-07-14 | Operational launch of the x402 Foundation at the Linux Foundation: 17 premier members (Adyen, AWS, American Express, Circle, Cloudflare, Coinbase, Fiserv, Google, Mastercard, Monad Foundation, MoonPay, Ripple, Shopify, Solana Foundation, Stellar Development Foundation, Stripe, Visa), 17 general and several associate members | <https://www.linuxfoundation.org/press/linux-foundation-announces-operational-launch-of-x402-foundation-to-standardize-internet-native-payments-for-ai-agents-and-applications> |
+| 2026-07-14 | Operational launch of the x402 Foundation at the Linux Foundation: 17 premier members (Adyen, AWS, American Express, Circle, Cloudflare, Coinbase, Fiserv, Google, Mastercard, Monad Foundation, MoonPay, Ripple, Shopify, Solana Foundation, Stellar Development Foundation, Stripe, Visa), 18 general members and 5 associate members, 40 in all (corrected in the book's proof, 2026-09-27) | <https://www.linuxfoundation.org/press/linux-foundation-announces-operational-launch-of-x402-foundation-to-standardize-internet-native-payments-for-ai-agents-and-applications> |
 
 **What V2 changed.** Sources: the V2 specification,
 <https://github.com/coinbase/x402/blob/main/specs/x402-specification-v2.md>,

@@ -15,7 +15,7 @@ asking a bank.
 
 x402 settles almost entirely in one stablecoin, USDC, issued by the US
 company Circle. When the blockchain analysis firm TRM Labs examined about 199
-million x402 settlements made between May 2025 and September 2026, 99.6% of
+million x402 settlements made from May 2025 to mid-September 2026, 99.6% of
 the value was in USDC [@pymnts2026trm].
 
 Three features of USDC matter to x402.
