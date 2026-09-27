@@ -1,0 +1,35 @@
+{
+  "type": "EbookEditionAcceptance",
+  "version": 1,
+  "status": "accepted",
+  "editionInputDigest": "ni:///sha-256;djnqt3N-4mD5QPa7WHo4vNxDUnLS6gaenQ1XAe7rDP4",
+  "artifacts": {
+    "epub": {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/561-group-services-section/data/state/editions/ux-design-course-by-course/ux-design-course-by-course.epub",
+      "bytes": 137991,
+      "sha256": "ni:///sha-256;RT5CXaL4dPyP9BvyleztiBu8U-TpySwfaBuX2gc4McY"
+    },
+    "screenPdf": {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/561-group-services-section/data/state/editions/ux-design-course-by-course/ux-design-course-by-course.pdf",
+      "bytes": 201934,
+      "sha256": "ni:///sha-256;Nlvi6A7NAay2KrYMeF_GrS1hlYYOCIXWRdQz3O16l4M"
+    },
+    "buildRecordDigest": "ni:///sha-256;VKQmYVgEizU3IVNBy2vqE-FgwxcuHBMA18M-yEgNS08"
+  },
+  "closedObligationIds": [
+    "editorial-proof"
+  ],
+  "pendingAcceptanceObligationIds": [],
+  "proof": {
+    "digest": "ni:///sha-256;qm5JAA25dgUoJOAFGioCnJcppWFIlLTl6TxRxQVocKg",
+    "proofer": "independent proofreading agent (claude-opus-5-5 subagent)",
+    "provedAt": "2026-09-27T22:13:07Z",
+    "method": "Re-read the new edition text in full against the ten prior findings' fixes, re-read every manuscript file the fixes touched (00-about-this-book.md, 01-, 02-, 03-, 05-, 06-, 08-, 09-, 10-glossary.md) and the evidence packet's Figma/Adobe XD passage, re-verified the three-project list and the course-6 Figma/Adobe XD claim against coursera.org (WebFetch/WebSearch), re-checked the Gray et al. and Nielsen-heuristic wording against the manuscript's own bibliography and Nielsen (1994), and re-ran the style-guide adverb/contraction scan across the whole new text to confirm no fix introduced a new violation; also traced the two new value-proposition/user-story answers (Ch1 Q9, Ch2 Q9) against the rest of the running example for invented facts. For the f16 re-fix, ran a full-text diff between the prior edition text and the new one to confirm only the targeted sentence changed.",
+    "findings": {
+      "errors": 2,
+      "corrections": 13,
+      "notes": 1
+    }
+  },
+  "acceptedAt": "2026-09-27T22:14:52.229Z"
+}
