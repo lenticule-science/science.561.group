@@ -345,9 +345,10 @@ the course pages' estimates:
 
 The page states a professional portfolio with three end-to-end projects, an
 ACE recommendation of up to 10 college credits, and $49 a month in the United
-States and Canada after a seven-day trial. Figma is the design tool
-throughout; the sixth course's Coursera address still contains "adobe-xd,"
-from an earlier version that used Adobe XD.
+States and Canada after a seven-day trial. Figma is the main design tool;
+the sixth course's Coursera address still contains "adobe-xd," and its
+materials may still reference Adobe XD, from an earlier version that used it
+(the book's proof, 2026-09-27).
 
 ## Independent sources, by topic
 

@@ -56,7 +56,7 @@ Common page layouts:
 
 - **Single column:** content stacked top to bottom; natural on phones.
 - **Card grid:** items as cards in a grid that reflows from one column to
-  several; good for browsing collections.
+  two or three; good for browsing collections.
 - **Split screen or sidebar:** main content with a secondary column on wide
   screens, stacking below it on narrow ones.
 

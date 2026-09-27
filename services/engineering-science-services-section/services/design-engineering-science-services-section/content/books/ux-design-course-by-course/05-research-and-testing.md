@@ -182,6 +182,10 @@ clear*; *screen reader skips the hold button's label*.
    interpretation?
 6. A participant answers all ten SUS items with 3. What's their score?
 7. What's the difference between a theme and an insight?
+8. What must a participant be told before a study begins?
+9. Which bias does "we're testing the design, not you" counter, and why
+   recruit people with disabilities?
+10. How should insights be ordered when presented to leaders?
 
 ## Answers
 
@@ -199,5 +203,11 @@ clear*; *screen reader skips the hold button's label*.
    50.
 7. A theme names a group of related observations; an insight says what it
    means for the design and why.
+8. What the study involves, how recordings and notes will be used and stored,
+   that taking part is voluntary, and that they can stop at any time.
+9. Social desirability bias. People with disabilities meet barriers others
+   don't, so including them surfaces problems a study would otherwise miss.
+10. Most important first, with evidence and the recommended change, kept
+    short.
 
 *Next: Chapter 6 turns the design into high-fidelity mockups.*

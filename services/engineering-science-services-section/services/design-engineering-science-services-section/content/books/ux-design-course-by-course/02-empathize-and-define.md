@@ -175,6 +175,10 @@ then wasted trips will drop and more members will borrow on weekends."
 6. Write a hypothesis statement for adding return reminders.
 7. By Fitts's law, why should "Reserve" be a large button near the tool's
    name?
+8. Classify this pain point: members can't reach the library by phone during
+   their working hours.
+9. Write a user story and a one-sentence value proposition for the tool
+   library's text reminders.
 
 ## Answers
 
@@ -190,5 +194,10 @@ then wasted trips will drop and more members will borrow on weekends."
    due, then more tools will come back on time."
 7. Because time to reach a target falls as the target gets bigger and closer
    to where the user's attention and pointer already are.
+8. A process pain point (it could also be read as a support pain point):
+   the steps depend on limited phone hours.
+9. For example: "As a busy member, I want a text the day before a tool is
+   due so that I return it on time." Value proposition: "Reminders mean no
+   late returns and no fines, without having to remember due dates."
 
 *Next: Chapter 3 generates solutions.*

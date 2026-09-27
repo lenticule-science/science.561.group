@@ -429,7 +429,9 @@ estimates, read from the course pages on 27 September 2026 [@google-ux-2026]:
 | 7 | Design a User Experience for Social Good & Prepare for Jobs | 13 | 8 |
 | 8 | Accelerate Your Job Search with AI | 6 | not covered |
 
-Along the way you build a portfolio of three end-to-end projects. Coursera
+Along the way you build a portfolio of three end-to-end projects. The
+American Council on Education recommends the certificate for up to 10
+college credits; check with your institution. Coursera
 lists the price as $49 a month in the United States and Canada after a
 seven-day trial [@google-ux-2026]; check the current price before you enroll.
 
@@ -466,8 +468,9 @@ your own portfolio project.
 ## What this book doesn't do
 
 - It doesn't grant, or count toward, the Google certificate.
-- It doesn't teach Figma step by step; the course does that, and Figma
-  changes often. It tells you what each Figma technique is for.
+- It doesn't teach the design tools step by step; the courses do that
+  (in Figma, though older course materials refer to Adobe XD), and the
+  tools change often. It tells you what each technique is for.
 - It doesn't give you the course's portfolio prompts or templates.
 - It reflects the courses as described on 27 September 2026. If a course has
   changed, trust the course.

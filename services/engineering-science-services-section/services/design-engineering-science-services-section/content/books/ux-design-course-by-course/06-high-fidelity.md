@@ -170,6 +170,8 @@ and its condition.
    more useful?
 6. List four things a handoff should include.
 7. Why move to high fidelity only after testing the structure?
+8. A screen uses five typefaces and four button styles. Which principles
+   does it break, and what's the fix?
 
 ## Answers
 
@@ -187,5 +189,8 @@ and its condition.
    accessibility annotations, the flow.
 7. Because polishing an untested structure wastes work, and polished designs
    make people reluctant to change what testing shows is wrong.
+8. Consistency (and hierarchy, since everything competes). Use one or two
+   typefaces with a type scale, and one button component with defined
+   variants.
 
 *Next: Chapter 7 designs a responsive website.*

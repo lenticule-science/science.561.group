@@ -74,16 +74,24 @@ Show your thinking, not only final screens: sketches, rejected ideas and the
 reasons, before-and-after comparisons from testing. Keep each case study
 skimmable: headings, short paragraphs, captioned images.
 
-The certificate's three projects give you a range: a mobile app, a
-responsive website, and a design that spans devices for a social-good
-purpose. Put your strongest first. Host the portfolio on a site you control
+The certificate builds three end-to-end projects [@google-ux-2026], each a
+case study:
+
+- **A mobile app,** taken from research to a high-fidelity prototype and
+  tested; Chapters 1 to 6 prepare you for it.
+- **A responsive website,** designed across breakpoints and tested;
+  Chapter 7.
+- **A cross-device design for social good,** a dedicated mobile app and a
+  responsive website for the same service; Chapter 8.
+
+Put your strongest first. Host the portfolio on a site you control
 or a portfolio platform, and check that the portfolio itself meets the
 accessibility standards you claim.
 
 ## Getting ready for work
 
-Job preparation is mostly outside this book's scope, but three habits follow
-from the design process itself: explain your work in terms of users and
+Job preparation is outside this book's scope, except for three habits that
+follow from the design process itself: explain your work in terms of users and
 outcomes; show how you handle critique by describing a design that changed
 after testing; and keep learning in public, through a portfolio that grows.
 
@@ -132,6 +140,8 @@ contrast), and next steps (measure wasted trips after launch).
 6. Why show rejected ideas in a case study?
 7. Why is progressive enhancement often the safer default for a public
    service?
+8. You have four finished projects. How do you choose and order three for
+   an entry-level portfolio?
 
 ## Answers
 
@@ -151,5 +161,8 @@ contrast), and next steps (measure wasted trips after launch).
    not only the final result.
 7. Because it guarantees the core service works for everyone, including
    people with old devices or slow connections, before adding anything.
+8. Choose the three that best show the whole process and a range of
+   platforms (such as an app, a website and a cross-device design), and put
+   the strongest first.
 
 *Next: the study plan.*

@@ -31,10 +31,10 @@ Run one in steps:
 5. Summarize strengths to learn from and gaps to fill.
 
 Jakob Nielsen's ten **usability heuristics** are a standard set of criteria
-[@nielsen1994]. They include: visibility of system status; match between the
+[@nielsen1994]. They include: visibility of system status; match between
 system and the real world; user control and freedom; consistency and
 standards; error prevention; recognition rather than recall; flexibility and
-efficiency; aesthetic and minimalist design; helping users recognize,
+efficiency of use; aesthetic and minimalist design; helping users recognize,
 diagnose and recover from errors; and help and documentation. A competitive
 audit that scores each product on them is a **heuristic evaluation**.
 
@@ -48,10 +48,10 @@ odd ones, without judging. Then **converge**: compare, combine and choose.
 Mixing the two, judging each idea as it appears, kills ideas before they
 develop.
 
-The order matters because of **design fixation**: in an experiment by David
-Jansson and Steven Smith, engineering students shown an example design before
-designing reproduced its features, including its flaws, more than students
-shown nothing [@jansson-smith1991]. The first idea in the room anchors
+The order matters because of **design fixation**: in experiments by David
+Jansson and Steven Smith, senior engineering students and practicing
+mechanical engineers shown an example design before designing reproduced its
+features, including its flaws, more than those shown nothing [@jansson-smith1991]. The first idea in the room anchors
 everything after it. The remedies are procedural: generate alone before
 sharing, generate a quantity before choosing, and look at competitors after
 your own sketches, not before.

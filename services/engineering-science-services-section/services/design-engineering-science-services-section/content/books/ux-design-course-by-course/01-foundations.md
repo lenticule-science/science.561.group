@@ -209,6 +209,8 @@ watched five members try a clickable prototype.
 5. Under the social model of disability, where does a barrier come from?
 6. What happens on each day of a design sprint?
 7. Give two examples of assistive technology.
+8. Name three UX roles besides UX designer and what each does.
+9. What does a retrospective ask, and when does a team hold one?
 
 ## Answers
 
@@ -224,5 +226,11 @@ watched five members try a clickable prototype.
    test.
 7. Any two of: screen readers, screen magnifiers, voice control, switch
    devices, captions.
+8. Any three of: UX researcher (studies users and tests designs); UX writer
+   (writes the interface's words); visual or UI designer (type, color,
+   layout); interaction designer (how elements respond); UX engineer (builds
+   interfaces in code).
+9. What went well, what didn't, and what the team will change; after a
+   sprint or project, or at regular points during one.
 
 *Next: Chapter 2 begins the design process with empathy and definition.*
