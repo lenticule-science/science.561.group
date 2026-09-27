@@ -26,7 +26,7 @@ This decouples judgment (skill) from structure (runbook).
 
 ## The four kinds of skill
 
-Every skill occupies one position in the work-type classification (see [process](process.md), [procedure](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/procedure.md), [derivation](derivation.md), [inquiry](inquiry.md)).
+Every skill occupies one position in the work-type classification (see [process](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/process.md), [procedure](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/procedure.md), [derivation](derivation.md), [inquiry](inquiry.md)).
 The classification is a 2×2 based on what is settled before the skill runs:
 
 | | Execution settled | Execution open |
@@ -114,7 +114,7 @@ A Skill is one step of judgment.
 Everything else — sequencing, I/O, looping, orchestration — belongs in a [Runbook](runbook.md).
 
 Every Skill occupies exactly one position in the nuclear quartet, declared by [closure-kind](../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/predicated-agentic-orchestration-platform/flatfile-agentic-resource-system/library/flatfile-agential-resource-system/library/vocabulary/library/flatfile-agential-resource-system-closure-kind/flatfile-agential-resource-system-closure-kind.md).
-The four positions are [Process](process.md), [Procedure](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/procedure.md), [Derivation](derivation.md), [Inquiry](inquiry.md).
+The four positions are [Process](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/process.md), [Procedure](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/procedure.md), [Derivation](derivation.md), [Inquiry](inquiry.md).
 
 ## Relationship to Runbooks
 

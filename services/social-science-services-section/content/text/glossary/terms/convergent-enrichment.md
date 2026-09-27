@@ -95,7 +95,7 @@ Prioritize by which enrichment unblocks the most value soonest — which means a
 
 ## The settlement connection
 
-In [settlement path](settlement-path.md) terms: the bottom-up front is settling vocabulary from [inquiry](./inquiry.md) toward [process](./process.md).
+In [settlement path](settlement-path.md) terms: the bottom-up front is settling vocabulary from [inquiry](./inquiry.md) toward [process](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/process.md).
 The top-down front is settling operational structure from inquiry toward procedure.
 They converge when the vocabulary is settled enough to express the operational structure, and the operational structure is settled enough to use the vocabulary.
 At convergence, the system can plan its own enrichment — the cold-start problem is resolved.

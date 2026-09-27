@@ -21,7 +21,7 @@ It is a [duty](../../../../services/sociology-science-services-section/services/
 
 ## Grounding in the settlement path
 
-The [settlement path](settlement-path.md) describes how work moves from open [inquiry](inquiry.md) to deterministic [process](process.md).
+The [settlement path](settlement-path.md) describes how work moves from open [inquiry](inquiry.md) to deterministic [process](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/process.md).
 Each step along the path reduces the judgment required:
 
 | Work completed at... | Encoding produces... | Work settles to... |

@@ -7,6 +7,7 @@ description: Work where neither meaning nor execution is settled — open explor
 identity: inquiry
 name: Inquiry
 date-created: 2026-03-29
+date-modified: 2026-09-27
 relations:
   instance-of: work
   contrasts-with:
@@ -50,3 +51,38 @@ The four types of work:
 | **Meaning open** | Derivation | **Inquiry** |
 
 Inquiry sits at the bottom of the lattice — nothing settled. All paths out of inquiry go through settling either meaning or execution, moving the work toward one of the other three types.
+
+## Formal definition
+
+An inquiry is a work element fixed by neither closure,
+$W \in H \setminus (\mathrm{Fix}(\sigma) \cup \mathrm{Fix}(\Delta))$: $\sigma(W) \neq W$ and
+$\Delta(W) \neq W$ ([process](process.md) sets out all four positions;
+[nuclear quartet subalgebra](../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/research/predicated-agentic-orchestration-platform/library/relational-hyperverse-repository/math/nuclear-quartet-subalgebra.md)). Every element still has a canonical image
+in each settled part, through $\sigma$, $\Delta$ or the joint projection, so
+an inquiry always produces something, even if what it produces is another
+inquiry at a deeper level.
+
+## As a skill
+
+A skill declared `closure-kind: inquiry` explores. Nothing is fixed going in
+and nothing is guaranteed stable coming out, so it is non-deterministic by
+design. It is the one kind that both needs a model and cannot be bounded by a
+fixed result shape, so the one discipline available is external: a hard fuel
+cap of turns, tokens or seconds, past which it stops and reports. The house
+skill schema requires an inquiry skill to carry models and a fuel cap. An
+inquiry skill:
+
+- names the question or territory it explores;
+- produces some output, which may be the report that the territory is empty
+  or not yet reachable, or a further inquiry;
+- admits that its output type is unknown in advance; fixing it beforehand
+  makes the skill a process;
+- may loop, backtrack, change direction and call skills of any kind;
+- is used only where no more settled kind will do.
+
+Scheduling an inquiry as if it were a process hides real variability behind a
+false promise of reproducibility. Declare it an inquiry and bound it by fuel.
+
+## Related
+
+- [Inquiry in philosophy](../../../../../../../../../philosophy-services-section/content/text/glossary/terms/inquiry.md): the directed motion of a claim toward determination, the epistemic sense of which inquiry as work is one kind

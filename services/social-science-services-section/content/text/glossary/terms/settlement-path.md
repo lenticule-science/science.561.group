@@ -9,7 +9,7 @@ traditions: [dewey, peirce, lean-manufacturing]
 date-created: 2026-04-05
 ---
 
-A **settlement path** is the trajectory by which a piece of work moves from open [inquiry](./inquiry.md) to deterministic [process](./process.md).
+A **settlement path** is the trajectory by which a piece of work moves from open [inquiry](./inquiry.md) to deterministic [process](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/process.md).
 As questions get answered and methods get encoded, two dimensions settle independently: what the work produces (its meaning) and how it produces it (its execution).
 The path through these two dimensions defines the settlement.
 
@@ -17,7 +17,7 @@ The four work types mark positions on this path:
 
 | | Execution settled | Execution open |
 |---|---|---|
-| **Meaning settled** | [Process](./process.md) | [Procedure](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/procedure.md) |
+| **Meaning settled** | [Process](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/process.md) | [Procedure](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/procedure.md) |
 | **Meaning open** | [Derivation](./derivation.md) | [Inquiry](./inquiry.md) |
 
 Settlement is not a single step but a series of transitions.
@@ -45,7 +45,7 @@ What makes it a useful concept is that it identifies where infrastructure invest
 
 ## See also
 
-- [Process](./process.md), [Procedure](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/procedure.md), [Derivation](./derivation.md), [Inquiry](./inquiry.md) — the four work types that mark positions on the path
+- [Process](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/process.md), [Procedure](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/procedure.md), [Derivation](./derivation.md), [Inquiry](./inquiry.md) — the four work types that mark positions on the path
 - [Progressive automation](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/progressive-automation.md) — the policy of moving work along the settlement path
 - [Formality level](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/formality-level.md) — the scale measuring how far a specification has settled
 - [The Settlement of Work Management](../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/documents/articles/notes/2026/04/03/2026-04-03-settlement-of-work-management.md) — the settlement path applied to work management infrastructure itself

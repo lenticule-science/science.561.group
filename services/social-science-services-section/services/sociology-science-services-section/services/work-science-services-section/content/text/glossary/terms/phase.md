@@ -66,7 +66,7 @@ Phases are not unique to project management or work systems — they are fundame
 
 The phase concept is distinct from related ideas in the work taxonomy.
 A [milestone](../../../../../../../../content/text/glossary/terms/milestone.md) marks the boundary between phases — it is a recognizable state achieved at the transition point.
-A [process](../../../../../../../../content/text/glossary/terms/process.md) is work with a fully determined sequence of phases — the input determines the exact phases that will follow.
+A [process](./process.md) is work with a fully determined sequence of phases — the input determines the exact phases that will follow.
 A [procedure](procedure.md) is work with branching phases — which phase comes next depends on a decision made during execution.
 An [inquiry](../../../../../../../../content/text/glossary/terms/inquiry.md) is work with emergent phases — the phases themselves are discovered during execution.
 But all four types have phases; what differs is whether the phases are predetermined, branching, or emergent.
@@ -85,5 +85,5 @@ The phase is the unit of time that makes all temporal coordination possible.
 - [Milestone](../../../../../../../../content/text/glossary/terms/milestone.md) — a recognizable state marking a phase boundary
 - [Task](../../../../../../../../content/text/glossary/terms/task.md) — has a simple lifecycle with defined phases
 - [Plan](../../../../../../../../content/text/glossary/terms/plan.md) — has a governance lifecycle with phases
-- [Process](../../../../../../../../content/text/glossary/terms/process.md) — has a fully determined sequence of phases
+- [Process](./process.md) — has a fully determined sequence of phases
 - [Duration](../../../../../../../../content/text/glossary/terms/duration.md) — the temporal extent of a phase

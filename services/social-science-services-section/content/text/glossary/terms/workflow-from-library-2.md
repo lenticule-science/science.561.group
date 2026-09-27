@@ -52,7 +52,7 @@ This relation is reflexive (every task depends on itself trivially), antisymmetr
 A workflow without cycles is a directed acyclic graph — a DAG — and the dependency relation is a [partial order](../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/partial-order.md).
 
 Tasks in a workflow may be any of the four work types.
-A workflow of pure [processes](process.md) is deterministic — run it and the outcome is fixed.
+A workflow of pure [processes](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/process.md) is deterministic — run it and the outcome is fixed.
 A workflow containing [procedures](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/procedure.md) branches on conditions.
 A workflow containing [inquiry](inquiry.md) is adaptive — the graph may be modified during execution as inquiry reveals new information.
 The most rigid workflows are pure process chains.

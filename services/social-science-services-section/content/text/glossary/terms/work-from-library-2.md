@@ -20,7 +20,7 @@ Work inherits from act the structure of capacity realization: something has the 
 
 This is the base concept.
 All organized activity is work when it has a defined output.
-The four types of work — [process](process.md), [procedure](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/procedure.md), derivation, and [inquiry](inquiry.md) — are specializations based on which [qualities](../../../../philosophy/terms/quality.md) of the action are settled.
+The four types of work — [process](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/process.md), [procedure](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/procedure.md), derivation, and [inquiry](inquiry.md) — are specializations based on which [qualities](../../../../philosophy/terms/quality.md) of the action are settled.
 Two qualities matter: whether the *meaning* of the output is known (meaning-settled) and whether the *execution path* to produce it is known (execution-settled).
 Process has both settled.
 Inquiry has neither.

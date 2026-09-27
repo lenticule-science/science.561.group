@@ -48,7 +48,7 @@ An entity enters a state by an event, persists in that state until another event
 The lifecycle is the legal set of state-to-state paths — what transitions are allowed, what states terminate the path, and whether the path is one-directional or allows reversal.
 
 Lifecycles vary in how settled they are.
-A [process](./process.md) has a fully determined lifecycle — the same input produces the same sequence of phases every time.
+A [process](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/process.md) has a fully determined lifecycle — the same input produces the same sequence of phases every time.
 A [procedure](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/procedure.md) has a branching lifecycle — which phase comes next depends on a decision made during execution.
 An [inquiry](./inquiry.md) has an open lifecycle — the phases emerge during the work itself.
 But all four types of work have lifecycles: they all have temporal shapes, paths from beginning to end, valid transitions and terminal states.
@@ -84,7 +84,7 @@ But all follow the pattern: creation → phases → terminus.
 - [Plan](./plan.md) — governance with a specific lifecycle (draft → active → completed)
 - [Endeavor](endeavor.md) — temporal structure relating lifecycles to purposes
 - [Enterprise](../../../../services/economics-and-business-science-services-section/services/business-science-services-section/content/text/glossary/terms/enterprise.md) — indefinite-duration lifecycle with aim-generation
-- [Process](./process.md) — fully determined lifecycle with no branches
+- [Process](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/process.md) — fully determined lifecycle with no branches
 - [Procedure](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/procedure.md) — branching lifecycle with conditional transitions
 - [Inquiry](./inquiry.md) — open lifecycle emerging during execution
 - [Statecharts](../../../../../../humanities/theories/philosophy/terms/state-machine.md) — formal model of hierarchical state lifecycles

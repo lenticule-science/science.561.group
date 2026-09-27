@@ -188,7 +188,7 @@ Subtasks may be sequential (do A then B), conditional (if X then do A, else do B
 The plan is not always fully specified in advance — it may be elaborated as earlier subtasks complete and more information becomes available.
 
 A task can contain any of the four work types.
-A task whose every subtask is a [process](process.md) is itself a process.
+A task whose every subtask is a [process](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/process.md) is itself a process.
 A task with conditional subtasks is a [procedure](../../../../services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/procedure.md).
 A task that includes open-ended investigation is an [inquiry](inquiry.md).
 The task is the container; the work type characterizes what kind of work fills it.
