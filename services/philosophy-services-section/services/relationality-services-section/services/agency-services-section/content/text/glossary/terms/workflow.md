@@ -11,7 +11,7 @@ description: "The mathematical realization of a workflow: a directed-graph compo
 
 # Workflow
 
-The mathematical realization of a [workflow](../../documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/content/individual/content/agent/actuating/content/actuator/embodying/content/body/integrating/content/drone/swarming/content/swarm/content/humanities/theories/sociology/theories/work/terms/workflow.md): a directed-graph composition of work units with a single algebraic constraint — *the input cell-pattern type equals the output cell-pattern type*.
+The mathematical realization of a [workflow](../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/workflow.md): a directed-graph composition of work units with a single algebraic constraint — *the input cell-pattern type equals the output cell-pattern type*.
 A workflow is a quadruple
 
 $$W \;=\; (T_W,\; E_W,\; \tau_{\mathrm{in}},\; \tau_{\mathrm{out}}) \quad\text{with}\quad \tau_{\mathrm{in}} = \tau_{\mathrm{out}} = \tau$$
@@ -28,7 +28,7 @@ The algebraic constraint $\tau_{\mathrm{in}} = \tau_{\mathrm{out}}$ — the work
 
 ## The three composition patterns
 
-Per the [workflow term](../../documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/content/individual/content/agent/actuating/content/actuator/embodying/content/body/integrating/content/drone/swarming/content/swarm/content/humanities/theories/sociology/theories/work/terms/workflow.md), all workflows are combinations of three patterns:
+Per the [workflow term](../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/workflow.md), all workflows are combinations of three patterns:
 
 - **Sequence.** Workflow $W_1$ then $W_2$: $W_2$'s closure rules begin firing only after $W_1$'s output cells settle.
   Realized as an edge from each $W_1$-terminal-task to each $W_2$-initial-task.
@@ -90,14 +90,14 @@ In the predicated-work setting, these properties translate:
 - **Reachability** of a task $T_i$ in $W$ from input $\tau_{\mathrm{in}}$: there exists a settling trajectory of the operations settling that drives $T_i$'s antecedent-cells into the firing-admissible state.
   Reachability is a settling-quiescence property restricted to $T_i$'s antecedent cells.
 - **Boundedness** of intermediate cells: no intermediate cell-pattern accumulates unbounded $\bot \to \mathbf{t}$ assertions.
-  By [settling-monotonicity](../../documents/articles/research/2026/07/31/lenticule-import/animating/content/becoming/doing/working/governing/content/individual/content/agent/actuating/content/actuator/embodying/content/body/integrating/content/drone/swarming/content/swarm/content/humanities/theories/math/theories/categories/theories/predication-categories/concepts/settling-monotonicity.md), this is automatic in the bilattice setting (cells don't unbounded-accumulate; they settle into $\mathbf{FOUR}$).
+  By [settling-monotonicity](../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/settling-monotonicity.md), this is automatic in the bilattice setting (cells don't unbounded-accumulate; they settle into $\mathbf{FOUR}$).
 - **Liveness** — every task can eventually fire: every $T_i \in T_W$'s antecedent-cells are reachable.
   This is a structural property of $E_W$ (the dependency graph has no orphan dead-ends).
 
 ## CALM and coordination-free workflow-boundary admissibility
 
 The dependency-gate cells in $E_W$ — the cells that gate a downstream task's admissibility once an upstream task completes — are $\leq_k$-monotone.
-By the [predication-settling CALM corollary](../../../../../../../../../information-science-services-section/services/math-services-section/services/obsmetrological-services-section/lib/formalization/infomaterial/lib/infomaterial/docs/verso/mark/content/utterance/articulating/content/articulation-cell/content/potential-articulation-cell/predicating/content/predication-cell/content/potential-predication-cell/positing/content/valuation/content/knowledge-least-valuation/settling/content/sheaf/content/settling-cohomology/references/settling-calm-corollary.md):
+By the [predication-settling CALM corollary](../../../../../../../../../information-science-services-section/services/math-services-section/content/text/documents/articles/research-articles/2026-06-20-predication-categorical-archive-predication-settling-calm-corollary.md):
 
 - Confirming "is the gate from $T_i$ to $T_j$ open?" is coordination-free: any replica with a local snapshot of $T_i$'s completion cells can confirm that $T_j$ is admissible.
 - Confirming "is $T_j$ still blocked at this gate?" requires coordination.
@@ -130,6 +130,6 @@ The work vocabulary's distinction (workflow = algebraic, plan = planning) render
 - Plans contain workflows as their internal task-graph; workflows are content within plans.
 
 - $T_W$ — a finite set of work units (each a [task cell system](../../../../../../../../../social-science-services-section/services/social-theory-science-services-section/content/text/glossary/terms/task-cell-system.md) or a sub-workflow).
-- $E_W$ — directed edges between elements of $T_W$. Two edge kinds: *dependency edges* (forcing ordering, as in [plan](../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/services/predicated-work-services-section/content/glossary/terms/plan.md)) and *information-flow edges* (an output cell of $T_i$ is referenced by an antecedent in $\mathcal{S}_{T_j}$).
+- $E_W$ — directed edges between elements of $T_W$. Two edge kinds: *dependency edges* (forcing ordering, as in [plan](../../../../../../../../../social-science-services-section/services/sociology-science-services-section/services/work-science-services-section/content/text/glossary/terms/plan.md)) and *information-flow edges* (an output cell of $T_i$ is referenced by an antecedent in $\mathcal{S}_{T_j}$).
 - $\tau_{\mathrm{in}}$ — the *input cell-pattern type*: the cells the workflow consumes, characterized by their predicate-fiber slots and required initial bilattice values.
 - $\tau_{\mathrm{out}}$ — the *output cell-pattern type*: the cells the workflow produces.

@@ -8,6 +8,7 @@ properties: reachability, boundedness, liveness
 models: petri-net, directed-graph, partial-order
 executable-by: process, procedure, agent
 date-created: 2026-03-29
+date-modified: 2026-09-27
 id: workflow
 params:
   activity-set: relational-universe
@@ -34,7 +35,7 @@ This constraint is what makes workflows composable. Two workflows on the same ty
 
 The simplest workflow is a sequence: A then B then C. The simplest branching workflow adds a condition: after A, do B if X, else do C. The simplest parallel workflow runs B and C simultaneously after A, then joins at D. All workflows are combinations of these three patterns — sequence, branch, and parallel — composed into a directed graph.
 
-A workflow is not the same thing as a [task](./task.md), though they overlap. A workflow is an algebraic concept — it specifies a composition of work with a type boundary. A task is a planning concept — it specifies a named container with a completion condition. A task may contain a workflow. A workflow may serve as a task when given a name and completion condition. But a workflow without a name or completion condition is still a valid composition of work; it just has no place in a plan. And a task containing a single work unit is a valid planning container but not a workflow in the algebraic sense.
+A workflow is not the same thing as a [task](../../../../../../../../content/text/glossary/terms/task.md), though they overlap. A workflow is an algebraic concept — it specifies a composition of work with a type boundary. A task is a planning concept — it specifies a named container with a completion condition. A task may contain a workflow. A workflow may serve as a task when given a name and completion condition. But a workflow without a name or completion condition is still a valid composition of work; it just has no place in a plan. And a task containing a single work unit is a valid planning container but not a workflow in the algebraic sense.
 
 A workflow is a directed graph, and directed graphs have computable properties. Reachability: can every task be reached from the start? Boundedness: can any intermediate queue grow without limit? Liveness: can every task eventually execute, or are there deadlocks? These properties are checkable before execution — you can analyze a workflow's structure to find problems without running it.
 
@@ -43,6 +44,26 @@ Petri nets formalize workflow analysis. A Petri net is a bipartite graph of plac
 A workflow is a partial order on its tasks. The dependency edges define a precedence relation: A must complete before B starts. This relation is reflexive (every task depends on itself trivially), antisymmetric (if A depends on B and B depends on A, they are the same task or there is a cycle, which is a design error), and transitive (if A before B before C, then A before C). A workflow without cycles is a directed acyclic graph — a DAG — and the dependency relation is a [partial order](../../../../../../../../../information-science-services-section/services/math-services-section/content/text/glossary/terms/partial-order.md).
 
 Tasks in a workflow may be any of the four work types. A workflow of pure [processes](./process.md) is deterministic — run it and the outcome is fixed. A workflow containing [procedures](./procedure.md) branches on conditions. A workflow containing [inquiry](./inquiry.md) is adaptive — the graph may be modified during execution as inquiry reveals new information. The most rigid workflows are pure process chains. The most flexible are inquiry-containing workflows that rewrite their own structure.
+
+## In practice
+
+A workflow that is planned and tracked, rather than only composed, carries
+what makes it finishable:
+
+- a named output, what exists when it is complete: "every spec file has its
+  required frontmatter", not "do things in spec/";
+- a completion condition; "ongoing improvement" is a standing state, not a
+  condition, and a workflow without one is an open-ended session;
+- a state: active, complete, blocked or abandoned. Blocked, with every
+  current step waiting on an unmet dependency, is a valid state rather than a
+  failure, and a workflow is abandoned with a stated reason rather than left
+  to stall;
+- only steps that advance its named output. Steps may be skillful or ad hoc,
+  and gaps found while running add steps.
+
+Work that crosses owners is split into one workflow per owner, joined by a
+named artifact handed from one to the next. A step that belongs to no named
+workflow cannot be prioritized, coordinated or known to be done.
 
 ## Formal definition
 
@@ -123,3 +144,8 @@ BPEL's formal semantics have been given in terms of both process algebras (Lanes
 - Whether the workflow net structure has a natural expression as a coalgebra — whether a workflow can be modeled as a coalgebra $(X, \alpha: X \to F(X))$ where $X$ is the marking space and $F$ encodes the firing rule, and whether soundness corresponds to a property of the final coalgebra.
 - Whether the Petri net composition operations (sequential, parallel, choice composition) form a monoidal category and whether workflow soundness is preserved under all monoidal operations — making soundness a property that can be verified compositionally from the soundness of components.
 - Whether BPEL's compensation mechanism — reversing previously committed work when a fault occurs — has a formal semantics in terms of history fibers: whether compensation corresponds to retracting elements from the execution-settled fiber $\mathrm{Fix}(\Delta_t)$ back to the history $H_t$.
+
+## Related
+
+- [Workflow in predicated work](../../../../../../../../../philosophy-services-section/services/relationality-services-section/services/agency-services-section/content/text/glossary/terms/workflow.md): the house formalization, a workflow as a composition of task cell systems with a cell-pattern boundary type, normative-handoff edges and a regime
+- [Work](./work.md), [Process](./process.md), [Procedure](./procedure.md), [Inquiry](./inquiry.md)
