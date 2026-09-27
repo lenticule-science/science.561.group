@@ -1,0 +1,12 @@
+{
+  "slug": "project-management-course-by-course",
+  "title": "Project Management, Course by Course",
+  "subtitle": "An Independent Study Companion to the Google Project Management Professional Certificate",
+  "author": "561 Group",
+  "bookDir": ".",
+  "distDir": "../../../dist/project-management-course-by-course",
+  "tokens": "../../../../../../../../../../561-group-services-section/services/561-group-content-design-services-section/data/records/design-tokens/561-group.tokens.json",
+  "cover": "typographic",
+  "profile": "study-guide",
+  "series": { "name": "561 Group Study Companions", "number": 1 }
+}
