@@ -54,18 +54,18 @@ agree there pointwise (\cref{thm:charged-presumefree-ge}'s companion fact,
 that presumption changes nothing once every side is already witnessed).
 \end{theorem}
 
-\begin{theorem}[A bare articulated cell is void]\label{thm:cvaluation-articulate-void}\lean{Obsmetrologia.CValuation.articulate_void}\leanok\uses{thm:cvaluation-void, thm:cell-articulate-corner, thm:charged-presumefree-articulate}
-Reading the constant valuation of a freshly articulated cell under the
-identity-seeded join closure, the claim side is void: \texttt{settle} leaves
+\begin{theorem}[A one-sided value is void]\label{thm:cvaluation-articulate-void}\lean{Obsmetrologia.CValuation.oneSided_void}\leanok\uses{thm:cvaluation-void, thm:charged-presumefree-articulate}
+Reading the constant valuation of a value witnessed on one coordinate only,
+under the identity-seeded join closure, its free coordinate is void: \texttt{settle} leaves
 the cell at potential while \texttt{brim} presumes it to stable
 (\cref{thm:charged-presumefree-articulate}), and the two disagree. This is
 the pointwise witness of the slack \cref{thm:knowledge-least} always carries
-at an un-engaged claim.
+at an unwitnessed coordinate.
 \end{theorem}
 
 \begin{theorem}[A cancelled conflict is not void]\label{thm:cvaluation-cancelled-not-void}\lean{Obsmetrologia.CValuation.cancelled_not_void}\leanok\uses{thm:cvaluation-void, thm:charged-meetk-not-measured}
-Reading the constant valuation of the knowledge meet of an articulated cell
-and an active cell built by fiat, the resulting cell is \textbf{not} void:
+Reading the constant valuation of the knowledge meet of a one-sided value and
+a value witnessed on the other coordinate, the resulting cell is \textbf{not} void:
 both sides are witnessed (\cref{thm:charged-meetk-not-measured}'s meet, value
 driven to \(\bot_k\) with both witnesses kept), so there is nothing left free
 for \texttt{brim} to raise, and the two cones agree. This is the formal

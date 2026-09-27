@@ -56,14 +56,15 @@ example (x : Valued) : Prop :=
   Valued.Measured x
 ```
 
-Reading a `Valued` straight off an articulation cell's own two slots is
-always measured, because a cell's corner is definitionally the presence
-pattern of its own slots:
+Evidence belongs to value, which enters at positing: an articulation cell's
+subject and object slots are positions of a predication, not evidence, and are
+not read as a value. A value witnessed on one coordinate only, by one token, is
+measured:
 
 ```lean
-example (c : Articulating.Cell) :
-    Valued.Measured (Valued.ofCell c) :=
-  Valued.ofCell_measured c
+example (t : Token) :
+    Valued.Measured (Valued.oneSided t) :=
+  Valued.oneSided_measured t
 ```
 
 ## Absurd Reached, Witnesses Kept
@@ -84,14 +85,13 @@ example :
 ## Presumption: The One Sanctioned Breach
 
 `presumeFree` raises every evidence-free side to present while leaving the
-evidence itself untouched. A bare articulated cell — token witnessed, claim
-free — presumes all the way from potential up to stable:
+evidence itself untouched. A one-sided value, its second coordinate free,
+presumes all the way from potential up to stable:
 
 ```lean
-example (u : Utterance) :
-    (Valued.presumeFree (Valued.ofCell (Articulating.Cell.articulate u))).value
-      = Reading.kTop :=
-  Valued.presumeFree_articulate u
+example (t : Token) :
+    (Valued.presumeFree (Valued.oneSided t)).value = Reading.kTop :=
+  Valued.presumeFree_oneSided t
 ```
 
 ## The Two Cones And The Void
@@ -107,15 +107,15 @@ example (c : Reading.Closure) (v : CValuation) (φ : PredicationCell) :
   CValuation.settle_le_brim c v φ
 ```
 
-The void is the cells where the two cones disagree. A bare articulated cell
-is void on its claim side under the identity-seeded join closure — `settle`
-leaves it at potential, `brim` presumes it to stable:
+The void is the cells where the two cones disagree. A one-sided value is void
+on its free coordinate under the identity-seeded join closure — `settle` leaves
+it at potential, `brim` presumes it to stable:
 
 ```lean
-example (u : Utterance) (φ : PredicationCell) :
+example (t : Token) (φ : PredicationCell) :
     CValuation.Void (Reading.joinClosure Reading.kBot)
-      (fun _ => Valued.ofCell (Articulating.Cell.articulate u)) φ :=
-  CValuation.articulate_void u φ
+      (fun _ => Valued.oneSided t) φ :=
+  CValuation.oneSided_void t φ
 ```
 
 A reconciled conflict — both sides witnessed, value driven to knowledge-bottom
@@ -123,12 +123,11 @@ by the meet — is **not** void: there is nothing left free for `brim` to
 raise, so the two cones already agree:
 
 ```lean
-example (u : Utterance) (w : Token) (φ : PredicationCell) :
+example (t w : Token) (φ : PredicationCell) :
     ¬ CValuation.Void (Reading.joinClosure Reading.kBot)
-        (fun _ => Valued.meetK
-          (Valued.ofCell (Articulating.Cell.articulate u))
+        (fun _ => Valued.meetK (Valued.oneSided t)
           (⟨Articulating.Corner.active, ([], [w])⟩ : Valued)) φ :=
-  CValuation.cancelled_not_void u w φ
+  CValuation.cancelled_not_void t w φ
 ```
 
 This is the formal separation the theory needs between "a cell no evidence has

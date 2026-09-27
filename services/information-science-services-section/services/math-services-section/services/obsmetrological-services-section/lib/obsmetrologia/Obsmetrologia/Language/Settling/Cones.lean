@@ -5,7 +5,7 @@ import Obsmetrologia.Language.Positing.Valuation
 /-!
 # The two cones and the void
 
-**Owner ruling 2026-09-21.** A valued valuation (`CValuation`) assigns each
+A valued valuation (`CValuation`) assigns each
 predication cell a `Valued`, not a bare `Reading`: value plus evidence.
 Settling a valued valuation under a closure can be read two ways, and they
 are genuinely different cones:
@@ -24,10 +24,10 @@ counit cone — presumption only climbs (`presumeFree_ge`), and closing is
 monotone (`c.mono`).
 
 **The void** (`Void`) is where the two cones disagree — the cells whose
-reading is still under-determined by what has actually been measured. A bare
-articulated cell is void on its claim side under the identity-ish closure
-`joinClosure kBot` (`articulate_void`): measured, it is only `potential`;
-presumed, it climbs to `stable`. A *cancelled* conflict — both sides
+reading is still under-determined by what has actually been measured. A value
+witnessed on one coordinate only is void on its free coordinate under the
+identity-ish closure `joinClosure kBot` (`oneSided_void`): measured, it is only
+`potential`; presumed, it climbs to `stable`. A *cancelled* conflict — both sides
 witnessed, meeting to ⊥ₖ in value — is not void (`cancelled_not_void`):
 there is no free side left for presumption to raise, so the two cones agree
 on the spot. The monograph's reading (2026-06-17): **the void is space**
@@ -91,28 +91,26 @@ theorem not_void_of_full (c : Reading.Closure) (v : CValuation) (φ : Predicatio
   show Reading.settle c (v φ).value = Reading.settle c (Valued.presumeFree (v φ)).value
   rw [Valued.presumeFree_of_full (v φ) h1 h2]
 
-/-- **A bare articulated cell is void on its claim side.** Measured, it is
-only `potential` (token witnessed, claim free); presumed, the free claim side
-climbs to `stable`. The constant valuation, under `joinClosure kBot`
+/-- **A one-sided value is void on its free coordinate.** Measured, it is only
+`potential` (first coordinate witnessed, second free); presumed, the free
+coordinate climbs to `stable`. The constant valuation, under `joinClosure kBot`
 (closing changes nothing further once already climbed): unit = potential,
 counit = stable. -/
-theorem articulate_void (u : Utterance) (φ : PredicationCell) :
+theorem oneSided_void (t : Token) (φ : PredicationCell) :
     Void (Reading.joinClosure Reading.kBot)
-      (fun _ => Valued.ofCell (Articulating.Cell.articulate u)) φ := by
+      (fun _ => Valued.oneSided t) φ := by
   show Reading.tTop ≠ Reading.kTop
   intro h
   cases h
 
-/-- **A cancelled conflict is not void.** Both sides witnessed (the token
-side by the articulation, the claim side by the supplied counter-witness),
-meeting to ⊥ₖ in value — but there is no *free* side left for presumption to
-raise, so the two cones already agree. -/
-theorem cancelled_not_void (u : Utterance) (w : Token) (φ : PredicationCell) :
+/-- **A cancelled conflict is not void.** Both coordinates witnessed, meeting to
+⊥ₖ in value — but there is no *free* coordinate left for presumption to raise, so
+the two cones already agree. -/
+theorem cancelled_not_void (t w : Token) (φ : PredicationCell) :
     ¬ Void (Reading.joinClosure Reading.kBot)
-      (fun _ => Valued.meetK (Valued.ofCell (Articulating.Cell.articulate u))
-        ⟨.active, ([], [w])⟩) φ := by
+      (fun _ => Valued.meetK (Valued.oneSided t) ⟨.active, ([], [w])⟩) φ := by
   apply not_void_of_full
-  · show u.token :: ([] : Slot) ≠ []
+  · show t :: ([] : Slot) ≠ []
     exact List.cons_ne_nil _ _
   · show w :: ([] : Slot) ≠ []
     exact List.cons_ne_nil _ _

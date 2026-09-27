@@ -345,12 +345,14 @@ natural reindexings is the square of that number:
 | 3        | its two ends and the excluded third | 9     |
 | ≥ 4      | its two ends only    | **4**               |
 
-The four is `2²`: each output hand chooses one of the two input hands, and
-the four generators are exactly the four functions from the two-hand set to
-itself, identity, swap, constant-left, constant-right. That is the same `2²`
-as the four corners of the articulation cell, and for the same reason: the
-utterance has two hands. Predication forces FOUR because the pair has two
-sides and, from four entities on, can name nothing but its own two sides.
+The four is `2²`: each output position chooses one of the two input
+positions, and the four generators are exactly the four functions from the
+two-position set to itself, identity, swap, constant-subject,
+constant-object. That is the same `2²` as the four corners of the
+articulation cell, and for the same reason: a predication has two positions,
+subject and object, and the corners are the four patterns of which are
+filled. Predication forces FOUR because the pair has two sides and, from four
+entities on, can name nothing but its own two sides.
 
 At three entities the pair names a third thing, "the other one", and there
 are nine natural reindexings. The module records this rather than hiding it:

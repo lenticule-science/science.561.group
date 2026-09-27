@@ -5,25 +5,24 @@ import Obsmetrologia.Articulation.Articulating.Cell
 /-!
 # Evidence — the lossless reading carrier
 
-**Owner ruling 2026-09-21.** A reading alone (`Reading`, `Articulating.Corner`) is
-value with no memory of how it got there. `Valued` restores that memory: it
-bundles a `value : Reading` with `evidence : Slot × Slot`, the witnesses actually
-carried on each side — the same two slots a `Articulating.Cell` carries.
-**Articulating measures**: `Valued.ofCell` reads a cell's own corner as its
-value and its own slots as its evidence, and the two agree by construction
-(`ofCell_measured`). `Valued.Measured` names that agreement as a `Prop`: the
-value is *exactly* what the evidence shows, no more, no less.
+A reading alone (`Reading`) is value with no memory of how it got there. `Valued`
+restores that memory: it bundles a `value : Reading` with `evidence : Slot × Slot`,
+the witnesses actually carried for the value's two coordinates. Value, and with it
+this evidence, enters at positing: an articulation cell's subject and object slots
+are positions of a predication, not evidence, and are not read as a value here.
+`Valued.Measured` says the value is *exactly* what the evidence shows, no more,
+no less.
 
 Evidence is **lossless** by the same discipline as `Slot`: the value ops here
 (`joinK`, `meetK`, `joinT`, `meetT`) all union the evidence on both sides,
 whatever they do to the value. `joinK` keeps `Measured` — presence-union is
 exactly what knowledge-join computes (`joinK_measured`). `meetK` does **not**:
-two measured chargeds can meet to a value strictly below what their combined
-evidence would show. This is the ruling's central case —
+two measured values can meet to a value strictly below what their combined
+evidence would show. This is the central case,
 **absurd reached, witnesses kept** (`meetK_not_measured`): a potential told
 by one witness, met with an active told by another, collapses in *value* to
 ⊥ₖ while both witnesses remain on record. That is how "absurd, told nothing"
-(the un-articulated position) differs from "absurd, two tellings cancelled" —
+differs from "absurd, two tellings cancelled":
 the same value, a different history, and the history is the evidence that
 never gets thrown away (`evidence_accumulates_joinK` and its mates).
 
@@ -31,9 +30,9 @@ never gets thrown away (`evidence_accumulates_joinK` and its mates).
 so it stays `Measured` (`negate_measured`): a witness for is a witness against
 its negation. `presumeFree` is the **one sanctioned breach of `Measured`**: it
 raises a free side (no witness at all) to present without manufacturing a
-witness for it, the mechanism this ruling names *presumption* — the reading you
-get by assuming the unwitnessed side rather than by measuring it
-(`presumeFree_ge`, `presumeFree_of_full`, `presumeFree_articulate`). `conflate`
+witness for it: *presumption*, the reading you get by assuming the unwitnessed
+side rather than by measuring it (`presumeFree_ge`, `presumeFree_of_full`,
+`presumeFree_oneSided`). `conflate`
 lifts `Reading.conflate` pointwise; it may raise a value above what its own
 evidence would measure, and is not claimed to preserve `Measured`.
 -/
@@ -61,13 +60,11 @@ def presence (x : Valued) : Reading :=
 asserted beyond the evidence on record. -/
 def Measured (x : Valued) : Prop := x.value = x.presence
 
-/-- Read a cell as a valued value: the corner is the value, the two slots are
-the evidence. -/
-def ofCell (c : Articulating.Cell) : Valued := ⟨c.corner, (c.subjectSlot, c.objectSlot)⟩
+/-- A value witnessed on its first coordinate only, by one token. -/
+def oneSided (t : Token) : Valued := ⟨.potential, ([t], [])⟩
 
-/-- **Articulating measures.** A cell's own corner is exactly its own
-presence: `ofCell` is always `Measured`. -/
-theorem ofCell_measured (c : Articulating.Cell) : Measured (ofCell c) := rfl
+/-- A one-sided value is measured: its value is what its single witness shows. -/
+theorem oneSided_measured (t : Token) : Measured (oneSided t) := rfl
 
 /-! ## The four value operations, evidence-accumulating -/
 
@@ -115,8 +112,8 @@ would show ⊤ₖ. This is how "absurd, told nothing" (the un-articulated
 position) differs from "absurd, two tellings cancelled". -/
 theorem meetK_not_measured :
     ∃ x y : Valued, Measured x ∧ Measured y ∧ ¬ Measured (meetK x y) := by
-  refine ⟨ofCell (Articulating.Cell.articulate ⟨⟨⟨"a"⟩⟩, ⟨⟨"p"⟩⟩⟩), ⟨.active, ([], [⟨⟨"b"⟩⟩])⟩,
-    ofCell_measured _, rfl, ?_⟩
+  refine ⟨oneSided ⟨⟨"a"⟩⟩, ⟨.active, ([], [⟨⟨"b"⟩⟩])⟩,
+    oneSided_measured _, rfl, ?_⟩
   intro h
   have h' : Reading.kBot = Reading.kTop := h
   exact absurd h' (by decide)
@@ -218,11 +215,10 @@ theorem presumeFree_of_full (x : Valued) (h1 : x.evidence.1 ≠ []) (h2 : x.evid
       x.evidence⟩ : Valued) = x
   rw [he1, he2, Bool.or_false, Bool.or_false, Reading.ofSlots_pos_neg]
 
-/-- A bare articulated cell presumes to stable: potential ↑ stable. Told true
-on the token side, silent (not witnessed) on the claim side — presumption
-raises the free claim side to present. -/
-theorem presumeFree_articulate (u : Utterance) :
-    (presumeFree (ofCell (Articulating.Cell.articulate u))).value = Reading.kTop := rfl
+/-- A value witnessed on one coordinate only presumes to `kTop`: presumption
+raises its free coordinate to present. -/
+theorem presumeFree_oneSided (t : Token) :
+    (presumeFree (oneSided t)).value = Reading.kTop := rfl
 
 /-! ## Conflation: lifted pointwise, may raise above evidence -/
 
