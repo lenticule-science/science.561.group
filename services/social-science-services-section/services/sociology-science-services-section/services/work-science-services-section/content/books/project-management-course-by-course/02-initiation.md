@@ -72,10 +72,11 @@ Missing one during initiation is how projects meet surprises at the end.
 Identify them by asking who pays, who decides, who does the work, who uses
 the result, who has to live with it, and who could block it.
 
-Then analyze them. A common tool, which Aubrey Mendelow described for
-strategic planning in 1981, places each stakeholder on two axes: how much
-**power** they have over the project and how much **interest** they have in
-it [@mendelow1981]:
+Then analyze them. A common tool is the power-interest grid, which Gerry
+Johnson and Kevan Scholes adapted from a matrix Aubrey Mendelow described
+for strategic scanning [@mendelow1981; @johnson-scholes1993]. It places each
+stakeholder on two axes: how much **power** they have over the project and
+how much **interest** they have in it:
 
 | | Low interest | High interest |
 |---|---|---|
@@ -205,6 +206,9 @@ The charter collects all of this onto two pages, and the director signs it.
 5. Name five things a project charter usually contains.
 6. What's the difference between a deliverable and a success criterion?
 7. In Doran's original 1981 version, what did the A in SMART stand for?
+8. A second pantry site would cost $8,000 and 300 volunteer hours and would
+   let 40 more families get food each week. How should the sponsor decide
+   whether it's worth doing?
 
 ## Answers
 
@@ -227,5 +231,9 @@ The charter collects all of this onto two pages, and the director signs it.
    roster. A success criterion is a standard for judging the project, like
    "60 households served each Saturday."
 7. Assignable: the objective names who will do it.
+8. By comparing the costs (money, volunteer time, and what else those
+   volunteers could do) with the benefit (40 more families fed weekly). With
+   no money return, there's no ROI to compute; the sponsor judges whether
+   the benefit justifies the cost, with the numbers in front of them.
 
 *Next: Chapter 3 turns the charter into a schedule.*

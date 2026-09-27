@@ -28,12 +28,15 @@ right-hand column and test yourself.
   controlling, closing.
 - **Knowledge areas:** integration, scope, schedule, cost, quality, resources,
   communications, risk, procurement, stakeholders.
+- **PMBOK 7 principles:** stewardship, team, stakeholders, value, systems
+  thinking, leadership, tailoring, quality, complexity, risk, adaptability and
+  resiliency, change.
 - **PMBOK 7 performance domains:** stakeholders, team, development approach
   and life cycle, planning, project work, delivery, measurement, uncertainty.
 - **Code of ethics values:** responsibility, respect, fairness, honesty.
 - **Life cycles:** predictive, iterative, incremental, adaptive, hybrid.
-- **Threat responses:** avoid, mitigate, transfer, accept. **Opportunity
-  responses:** exploit, enhance, share, accept.
+- **Threat responses:** escalate, avoid, transfer, mitigate, accept.
+  **Opportunity responses:** escalate, exploit, share, enhance, accept.
 - **Dependencies:** finish-to-start, start-to-start, finish-to-finish,
   start-to-finish; mandatory, discretionary, external, internal.
 - **Schedule compression:** crashing (adds cost), fast tracking (adds risk).
@@ -50,7 +53,7 @@ right-hand column and test yourself.
   transparency, inspection, adaptation.
 - **XP values:** communication, simplicity, feedback, courage, respect.
 - **Kanban practices:** visualize, limit WIP, manage flow, make policies
-  explicit, improve.
+  explicit, implement feedback loops, improve collaboratively.
 - **Requirement types:** business, stakeholder, solution (functional,
   nonfunctional), transition.
 - **MoSCoW:** must, should, could, won't have this time.

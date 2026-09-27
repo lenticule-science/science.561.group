@@ -36,14 +36,14 @@ how it got there.
 People sometimes use **data analytics** for the whole field and **data
 analysis** for the act of analyzing; this book follows that usage. **Data
 science** overlaps with both but usually emphasizes building models and new
-methods; a data analyst mostly answers questions with data that exists.
+methods; a data analyst usually answers questions with data that exists.
 
 ## Analytical thinking
 
 **Analytical thinking** is identifying and defining a problem, then solving
 it with data in an organized, step-by-step way. It has recognizable habits:
 
-- **Seeing it:** picturing the data, often literally, in a chart or table.
+- **Seeing it:** picturing the data, often as a chart or table.
 - **Strategizing:** deciding what to do first, what data to use, and how to
   stay focused on the question.
 - **Keeping the problem in view:** returning to what the board asked, not
@@ -55,14 +55,14 @@ it with data in an organized, step-by-step way. It has recognizable habits:
 
 A useful single technique is the **five whys**: ask why, and keep asking of
 each answer, until you reach something you can act on. "Weekend visits fell."
-Why? "Saturday visits fell; Sundays were flat." Why? "Mostly at two
+Why? "Saturday visits fell; Sundays were flat." Why? "Concentrated at two
 branches." Why? That's where data comes in.
 
 ## The data life cycle and the analysis process
 
 Data has a **life cycle** of its own, whatever anyone does with it:
 
-1. **Plan:** decide what data is needed and how it'll be managed.
+1. **Plan:** decide what data is needed and how it will be managed.
 2. **Capture:** collect or bring it in.
 3. **Manage:** store, maintain and protect it.
 4. **Analyze:** use it to answer questions.
@@ -79,7 +79,7 @@ into six phases, and so do courses 2 to 6:
 5. **Share:** present the findings so people can act.
 6. **Act:** the decision-makers use the findings.
 
-It's one model among several. The Cross-Industry Standard Process for Data
+It's one model among others. The Cross-Industry Standard Process for Data
 Mining (CRISP-DM), published in 2000 by a consortium of companies, also has
 six phases: business understanding, data understanding, data preparation,
 modeling, evaluation and deployment [@chapman2000]. The two line up closely.
@@ -134,7 +134,7 @@ spreadsheet the operations manager keeps; the patron survey in a survey
 tool's export. Four sources, four owners.
 
 **Analytical thinking.** The five whys so far: visits fell → on Saturdays →
-mostly at two branches → ? The next why needs the hours spreadsheet.
+concentrated at two branches → ? The next why needs the hours spreadsheet.
 
 **Tools.** A spreadsheet to look at the hours list (five rows). SQL to pull a
 year of daily counts (about 1,800 rows) and join them to the hours. Tableau

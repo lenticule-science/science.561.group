@@ -144,8 +144,8 @@ average lead time equals work in progress divided by throughput
 
 **SAFe (Scaled Agile Framework)** [@safe]. A framework for coordinating many
 Agile teams on one large product. Teams are grouped into an **Agile Release
-Train** that plans together in a regular, multi-week planning event and
-delivers on a shared cadence. SAFe adds roles and structures for portfolio
+Train** that plans together in a two-day planning event held every 8 to 12
+weeks and delivers on a shared cadence. SAFe adds roles and structures for portfolio
 and program levels that single-team frameworks lack.
 
 Other names that may appear: **Lean** (eliminate waste, optimize flow),
@@ -189,7 +189,7 @@ within 5 seconds."
 
 The team runs two-week sprints. Its velocity over three sprints is 9, 11 and
 10 points. The first three stories (10 points) fit one sprint. A burnup chart
-shows total scope rising from 21 to 29 points when the language story is
+shows total scope rising from 13 to 21 points when the language story is
 added, and completed work climbing toward it.
 
 Meanwhile, the vendor's support requests are run on a Kanban board with a WIP

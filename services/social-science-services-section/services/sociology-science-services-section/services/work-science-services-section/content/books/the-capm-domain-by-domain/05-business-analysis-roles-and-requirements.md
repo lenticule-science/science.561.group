@@ -103,7 +103,7 @@ the technique to the situation:
 | Technique | Use when |
 |---|---|
 | **Interviews** | You need depth from individuals, or the topic is sensitive |
-| **Workshops** (facilitated sessions) | Several groups must agree quickly |
+| **Workshops** (facilitated sessions) | Different groups must agree quickly |
 | **Focus groups** | You want reactions and attitudes from a representative group of users |
 | **Surveys** | You need input from many people, far apart |
 | **Observation** | People can't easily describe what they do; you watch them work |
@@ -134,7 +134,7 @@ does this requirement exist, and has it been delivered and tested? It also
 shows the impact of a change: follow the links from the changed requirement.
 
 In adaptive work the **product backlog** does the same job in a lighter form.
-Each item carries its value (why) and acceptance criteria (how it'll be
+Each item carries its value (why) and acceptance criteria (how it will be
 proved), and the Definition of Done ensures each is tested. Many teams also
 link backlog items to epics and objectives, which gives the same traceability.
 

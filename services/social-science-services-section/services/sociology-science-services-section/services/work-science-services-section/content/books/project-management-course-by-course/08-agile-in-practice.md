@@ -105,7 +105,7 @@ days left; the line should fall toward zero by the sprint's end. A flat line
 means work isn't finishing.
 
 **Velocity** is the number of story points a team completes per sprint. Over
-several sprints it gives a range for forecasting: a team averaging 20 points
+its last few sprints it gives a range for forecasting: a team averaging 20 points
 can expect to finish about 20 next sprint. Velocity is for the team's own
 planning. Comparing velocities between teams is meaningless, because each
 team sizes points differently.

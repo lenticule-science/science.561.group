@@ -122,7 +122,7 @@ does both.
 **Emotional intelligence** (EQ) is the ability to recognize and manage your
 own emotions and to recognize and influence others'. Daniel Goleman described
 it in components such as self-awareness, self-regulation, motivation, empathy
-and social skill [@goleman1995]. On projects, EQ is what lets a project
+and social skill [@goleman1995; @goleman1998]. On projects, EQ is what lets a project
 manager stay calm in a crisis, read a stakeholder's worry behind their
 objection, and build the trust that influence depends on.
 
@@ -164,7 +164,7 @@ then authorizes the project and names the project manager.
 
 ## Problem-solving tools and meetings
 
-The outline names several techniques:
+The outline names these techniques:
 
 - **Brainstorming** generates many ideas quickly, without criticism, then
   sorts them.
@@ -185,7 +185,7 @@ for.
 
 **The plan.** The project manager assembles the project management plan from
 the subsidiary plans above, with a scope baseline (scope statement, a WBS
-of 34 work packages, and a WBS dictionary), a 20-week schedule baseline, and a
+of 34 work packages, and a WBS dictionary), a 15-week schedule baseline, and a
 cost baseline of $72,000 inside the $80,000 budget.
 
 **A stakeholder register entry.**

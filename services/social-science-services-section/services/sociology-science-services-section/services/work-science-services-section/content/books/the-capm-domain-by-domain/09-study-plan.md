@@ -38,6 +38,6 @@ after reading it.
 
 The real exam has 150 questions in 3 hours, with an optional 10-minute break
 after question 75; after the break you can't return to the first half
-[@pmi-capm-eco-2023]. Pace yourself at about 70 seconds a question, flag
+[@pmi-capm-eco-2023]. Pace yourself at about 72 seconds a question, flag
 questions to revisit before the break, and answer every question: unanswered
 questions can't score.

@@ -31,6 +31,7 @@ references:
         given: Jeffrey D.
     container-title: Psychological Science
     volume: "17"
+    issue: "3"
     page: 249-255
     issued:
       date-parts:
@@ -232,6 +233,8 @@ references:
     URL: https://www.pmi.org/-/media/pmi/documents/public/pdf/certifications/capm-exam-content-outline-english.pdf
   pmbok7:
     type: book
+    author:
+      - literal: Project Management Institute
     title: A Guide to the Project Management Body of Knowledge (PMBOK Guide) and The Standard for Project Management
     edition: "7"
     publisher: Project Management Institute
@@ -240,6 +243,8 @@ references:
         - [2021]
   pmi-process-groups2022:
     type: book
+    author:
+      - literal: Project Management Institute
     title: "Process Groups: A Practice Guide"
     publisher: Project Management Institute
     issued:
@@ -247,6 +252,8 @@ references:
         - [2022]
   pmi-ba-guide2017:
     type: book
+    author:
+      - literal: Project Management Institute
     title: The PMI Guide to Business Analysis
     publisher: Project Management Institute
     issued:
@@ -254,11 +261,68 @@ references:
         - [2017]
   agile-practice-guide2017:
     type: book
+    author:
+      - literal: Project Management Institute and Agile Alliance
     title: Agile Practice Guide
     publisher: Project Management Institute and Agile Alliance
     issued:
       date-parts:
         - [2017]
+  pmi-ba-practitioners2024:
+    type: book
+    title: "Business Analysis for Practitioners: A Practice Guide"
+    edition: "2"
+    author:
+      - literal: Project Management Institute
+    publisher: Project Management Institute
+    issued:
+      date-parts:
+        - [2024]
+  furman2015:
+    type: book
+    title: "The Project Management Answer Book"
+    edition: "2"
+    author:
+      - family: Furman
+        given: Jeff
+    publisher: Management Concepts Press
+    issued:
+      date-parts:
+        - [2015]
+  wysocki2019:
+    type: book
+    title: "Effective Project Management: Traditional, Agile, Extreme, Hybrid"
+    edition: "8"
+    author:
+      - family: Wysocki
+        given: Robert K.
+    publisher: Wiley
+    issued:
+      date-parts:
+        - [2019]
+  goleman1998:
+    type: article-magazine
+    title: What Makes a Leader?
+    author:
+      - family: Goleman
+        given: Daniel
+    container-title: Harvard Business Review
+    volume: "76"
+    issue: "6"
+    page: 93-102
+    issued:
+      date-parts:
+        - [1998]
+  ries2011:
+    type: book
+    title: "The Lean Startup"
+    author:
+      - family: Ries
+        given: Eric
+    publisher: Crown Business
+    issued:
+      date-parts:
+        - [2011]
   beck2004:
     type: book
     title: "Extreme Programming Explained: Embrace Change"
@@ -381,7 +445,9 @@ The format, from the same outline:
 - multiple choice, drag-and-drop matching, "hot spot" questions where you
   click part of an image, and short animations or comic strips that set up a
   scenario (online exams use only comic strips);
-- up to three attempts within a one-year eligibility period.
+- up to three attempts within a one-year eligibility period; after three
+  attempts without passing, you must wait a year from your last exam before
+  reapplying.
 
 To be eligible you need a secondary diploma or equivalent and 23 hours of
 project management education completed before the exam [@pmi-capm-eco-2023]. PMI sets the fees;
@@ -395,9 +461,10 @@ The outline says every question is sourced in at least two of seven
 references, and names them: the *PMBOK Guide*, seventh edition
 [@pmbok7]; *Process Groups: A Practice Guide* [@pmi-process-groups2022];
 *The PMI Guide to Business Analysis* [@pmi-ba-guide2017]; *Business Analysis
-for Practitioners: A Practice Guide*, second edition; the *Agile Practice
-Guide* [@agile-practice-guide2017]; *The Project Management Answer Book*,
-second edition; and *Effective Project Management*, eighth edition.
+for Practitioners: A Practice Guide*, second edition [@pmi-ba-practitioners2024];
+the *Agile Practice Guide* [@agile-practice-guide2017]; *The Project Management
+Answer Book*, second edition [@furman2015]; and *Effective Project Management*,
+eighth edition [@wysocki2019].
 
 You don't need to read all of them. This book teaches what they share and
 names the source when one of them uses a term in a particular way.

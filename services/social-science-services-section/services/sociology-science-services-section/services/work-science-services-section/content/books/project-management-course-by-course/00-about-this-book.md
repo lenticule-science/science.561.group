@@ -47,6 +47,7 @@ references:
         given: Jeffrey D.
     container-title: Psychological Science
     volume: "17"
+    issue: "3"
     page: 249-255
     issued:
       date-parts:
@@ -157,6 +158,18 @@ references:
     title: PMI Code of Ethics and Professional Conduct
     publisher: Project Management Institute
     URL: https://www.pmi.org/about/ethics/code
+  johnson-scholes1993:
+    type: book
+    title: Exploring Corporate Strategy
+    author:
+      - family: Johnson
+        given: Gerry
+      - family: Scholes
+        given: Kevan
+    publisher: Prentice Hall
+    issued:
+      date-parts:
+        - [1993]
   tuckman1965:
     type: article-journal
     title: Developmental Sequence in Small Groups
@@ -402,7 +415,9 @@ estimates, read from the course pages on 27 September 2026 [@google-pm-2026]:
 
 Google states that people who finish the certificate have more than 100 hours
 of project management education, which counts toward the 23 hours PMI requires
-before its CAPM exam [@google-pm-2026]. Coursera charges a monthly
+before its CAPM exam [@google-pm-2026]. Not every course hour counts (the
+job-search course, for one, isn't project management education), but the
+certificate clears PMI's requirement with room to spare. Coursera charges a monthly
 subscription; check the current price on the certificate's page before you
 enroll.
 

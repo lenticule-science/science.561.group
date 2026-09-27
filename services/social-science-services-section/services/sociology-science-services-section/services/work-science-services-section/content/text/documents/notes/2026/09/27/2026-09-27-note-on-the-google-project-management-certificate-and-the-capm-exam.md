@@ -373,6 +373,14 @@ write their own questions.
 | Use cases | Jacobson et al., *Object-Oriented Software Engineering* (1992) |
 | Conflict modes | Thomas and Kilmann, *Conflict Mode Instrument* (1974) |
 | MVP; MoSCoW | Ries, *The Lean Startup* (2011); Clegg and Barker, *Case Method Fast-Track* (1994) |
+| Power-interest grid | Johnson and Scholes, *Exploring Corporate Strategy* (1993), adapting Mendelow's power-dynamism matrix (ICIS 1981); the grid is often misattributed to Mendelow himself |
+| Psychological safety | Edmondson, *Administrative Science Quarterly* 44(2), 1999 |
+| PDCA and PDSA | Deming, *Out of the Crisis* (1986), crediting Shewhart |
+| Net Promoter Score | Reichheld, *Harvard Business Review* 81(12), 2003: "How likely is it that you would recommend [company X] to a friend or colleague?" |
+| Presenting data | Tufte, *The Visual Display of Quantitative Information*, 2nd edition (2001) |
+| Emotional intelligence components | Goleman, *Emotional Intelligence* (1995); the five-component list is from "What Makes a Leader?", *Harvard Business Review* 76(6), 1998 |
+| The CAPM reference list's remaining titles | *Business Analysis for Practitioners*, 2nd edition (PMI, 2024); Furman, *The Project Management Answer Book*, 2nd edition (2015); Wysocki, *Effective Project Management*, 8th edition (2019) |
+| Risk responses | PMI lists five for threats (escalate, avoid, transfer, mitigate, accept) and five for opportunities (escalate, exploit, share, enhance, accept) |
 
 ## Where sources disagree, each reading kept
 

@@ -28,8 +28,9 @@ pretending to be a roadmap.
 **Deciding what goes in which release** weighs:
 
 - **Value:** what delivers the most benefit soonest? The first release is
-  often a **minimum viable product**, the smallest version that delivers
-  value and teaches the team what users want.
+  often a **minimum viable product**, Eric Ries's term for the smallest
+  version that delivers value and teaches the team what users want
+  [@ries2011].
 - **Dependencies:** what must exist before something else can work? Booking
   must exist before cancelling does.
 - **Risk:** what's uncertain enough that early feedback is worth it?

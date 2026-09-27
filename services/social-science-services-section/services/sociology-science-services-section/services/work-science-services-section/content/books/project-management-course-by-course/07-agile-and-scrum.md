@@ -16,7 +16,7 @@ start: Chapter 1's comparison of predictive and adaptive approaches.*
 By the 1990s, many software teams had found that planning a whole product up
 front didn't work when customers couldn't know what they wanted until they
 saw something working. Teams tried lighter methods with names like Extreme
-Programming, Scrum and Crystal. In February 2001, seventeen people who'd
+Programming, Scrum and Crystal. In February 2001, seventeen people who had
 developed those methods met in Snowbird, Utah, and wrote the **Manifesto for
 Agile Software Development** [@agile-manifesto-2001]. It states four values:
 
@@ -165,6 +165,9 @@ Chapter 8 follows this team through its backlog, sprints and events.
    What's wrong with that, according to the 2020 guide?
 7. Your course video mentions the "Development Team." What does the 2020
    Scrum Guide call the same people?
+8. A clinic is renovating a room (fixed plans, costly to change) and building
+   a check-in app whose users can review it every two weeks. Which approach
+   fits each part, and what's the whole project called?
 
 ## Answers
 
@@ -181,6 +184,8 @@ Chapter 8 follows this team through its backlog, sprints and events.
 6. The Scrum Team is self-managing: the Developers decide who does what. The
    Scrum Master coaches and removes impediments; they don't assign work.
 7. Developers.
+8. Predictive (Waterfall) for the renovation; Agile for the app. Together, a
+   hybrid project.
 
 *Next: Chapter 8 puts Scrum to work: backlog, events, and Agile across an
 organization.*

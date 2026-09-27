@@ -69,7 +69,7 @@ but they're seen earlier, while they're cheaper to fix, and decisions get made
 by the people who should make them. The role often carries responsibility
 without much formal authority: the volunteers don't report to the project
 manager. So the skills that matter most are interpersonal ones: communicating
-clearly, negotiating, building trust, and influencing people whose managers
+well, negotiating, building trust, and influencing people whose managers
 are someone else. Chapter 6 comes back to influence.
 
 Many people come to project management from other work. A teacher plans a

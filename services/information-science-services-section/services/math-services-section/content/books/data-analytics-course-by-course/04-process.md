@@ -93,7 +93,7 @@ common kinds:
   case.
 - Remove duplicates with the built-in tool, after checking with
   `=COUNTIF($A$2:$A$500,A2)>1`.
-- Split one column into several with "split text to columns" (by a
+- Split one column into more than one with "split text to columns" (by a
   delimiter such as a comma).
 - **Conditional formatting** highlights values outside a range; **data
   validation** stops bad values being entered.

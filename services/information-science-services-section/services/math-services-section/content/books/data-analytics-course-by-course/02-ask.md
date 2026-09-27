@@ -33,7 +33,7 @@ Problems that data can help with fall into a handful of types:
   visits.)
 - **Finding patterns:** what changes over time? (Visits by month.)
 
-The board's problem is mostly *discovering connections* (what's linked to the
+The board's problem is chiefly *discovering connections* (what's linked to the
 fall?) with some *finding patterns* (when did it start?).
 
 ## Asking good questions

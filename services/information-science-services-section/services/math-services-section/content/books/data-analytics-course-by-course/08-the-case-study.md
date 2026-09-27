@@ -16,7 +16,7 @@ Study. Before you start: Chapters 2 to 7.*
 
 A **capstone** is a final project that draws on everything a program taught.
 A **case study** is a written account of one analysis: the question, the
-data, what you did and why, what you found, and what you'd recommend. A
+data, what you did and why, what you found, and what you recommend. A
 **portfolio** is a collection of your work that employers can look at, with a
 case study as its centerpiece.
 
@@ -130,13 +130,13 @@ revision lists the four steps and the row counts, with the changelog attached.
    each data source.
 3. A draft says "I removed the bad rows." What should replace it?
 4. Why lead a case study with the answer rather than the method?
-5. Name three things you'd link so an employer can check your work.
+5. Name three things you would link so an employer can check your work.
 6. Why include limitations in a portfolio piece meant to impress?
 
 ## Answers
 
 1. A case study is one written account of an analysis; a portfolio is a
-   collection of work that can include several case studies.
+   collection of work that can include more than one case study.
 2. Any two of: where it came from; its license; its credibility; its
    structure and types; its limitations and bias; how personal data is
    protected.

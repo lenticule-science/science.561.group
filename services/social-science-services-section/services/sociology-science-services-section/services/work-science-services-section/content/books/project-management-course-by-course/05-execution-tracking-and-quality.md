@@ -106,8 +106,8 @@ expected, and act: adopt the change, abandon it, or run the loop again.
 Quality is judged in the end by the customer. **Customer satisfaction** is
 measured by asking: a short survey, interviews, or a single score. One widely
 used score is the **Net Promoter Score (NPS)**, which Frederick Reichheld
-introduced in 2003: ask "How likely are you to recommend us to a friend?" on
-a scale of 0 to 10; count 9s and 10s as promoters and 0 to 6 as detractors;
+introduced in 2003: ask how likely the respondent is to recommend the
+organization to a friend or colleague, on a scale of 0 to 10; count 9s and 10s as promoters and 0 to 6 as detractors;
 NPS is the percentage of promoters minus the percentage of detractors
 [@reichheld2003]. Treat a single score as a prompt to ask why, not an answer.
 
@@ -154,8 +154,8 @@ planned cost (EV), and it cost $5,500 (AC). The baseline (BAC) is $11,500.
 - SV = 5,000 − 6,000 = −$1,000: behind schedule.
 - CV = 5,000 − 5,500 = −$500: over budget.
 - SPI = 5,000 / 6,000 ≈ 0.83; CPI = 5,000 / 5,500 ≈ 0.91.
-- If this cost performance continues, EAC = 11,500 / 0.91 ≈ $12,650, beyond
-  even the $12,000 total budget.
+- If this cost performance continues, EAC = 11,500 / (5,000 / 5,500) =
+  11,500 × 1.1 = $12,650, beyond even the $12,000 total budget.
 
 The project manager asks why before reporting. The overrun was a $500 rush
 fee paid once to move the shelving delivery forward. That won't recur, so
@@ -211,6 +211,9 @@ zero and no one misses a turn. Act: adopt it.
    households a Saturday: families who signed up this week, or households
    served last Saturday?
 7. What's the purpose of Kerth's Prime Directive?
+8. Shelving delivery can't start until the order is placed. What kind of
+   dependency is that? Two weeks before opening, the vendor stops answering.
+   What should the project manager do?
 
 ## Answers
 
@@ -226,5 +229,9 @@ zero and no one misses a turn. Act: adopt it.
    there's time to act.
 7. To make it safe to speak honestly by agreeing at the start that the review
    is about improving the process, not blaming people.
+8. Finish-to-start. Escalate early: tell the person with authority over the
+   vendor relationship (the director, who signed the contract) what's
+   blocked, what it will delay, and what's needed from them, such as a call
+   to the vendor's manager.
 
 *Next: Chapter 6 covers the people side of execution, and closing.*

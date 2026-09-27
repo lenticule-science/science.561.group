@@ -77,6 +77,9 @@ integration to stakeholders. [1]
 
 **Milestone.** A significant point with zero duration. [2]
 
+**Minimum viable product (MVP).** The smallest version of a product that
+delivers value and teaches the team what users want. [6]
+
 **Operations.** Ongoing work that sustains the organization. [1]
 
 **Organizational process assets (OPAs).** The organization's own plans,

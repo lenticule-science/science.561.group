@@ -108,18 +108,21 @@ The seventh edition of the *PMBOK Guide* reorganized PMI's standard around
 **principles** rather than processes, so that it applies to predictive and
 adaptive work alike [@pmbok7]. Its twelve principles:
 
-1. Be a diligent, respectful and caring steward.
-2. Create a collaborative project team environment.
-3. Effectively engage with stakeholders.
-4. Focus on value.
-5. Recognize, evaluate and respond to system interactions.
-6. Demonstrate leadership behaviors.
-7. Tailor based on context.
-8. Build quality into processes and deliverables.
-9. Navigate complexity.
-10. Optimize risk responses.
-11. Embrace adaptability and resiliency.
-12. Enable change to achieve the envisioned future state.
+1. **Stewardship:** care responsibly for the resources, people and trust
+   placed in the project.
+2. **Team:** build a collaborative team environment.
+3. **Stakeholders:** engage stakeholders actively throughout.
+4. **Value:** keep the focus on the value the project delivers.
+5. **Systems thinking:** see how the project's parts, and its surroundings,
+   affect one another.
+6. **Leadership:** show leadership behaviors, whatever your role.
+7. **Tailoring:** fit the approach to the context.
+8. **Quality:** build quality into processes and deliverables.
+9. **Complexity:** navigate complexity rather than ignore it.
+10. **Risk:** make risk responses proportionate and effective.
+11. **Adaptability and resiliency:** adjust to change and recover from
+    setbacks.
+12. **Change:** enable the change that reaches the envisioned future state.
 
 And eight **performance domains**, groups of related activities that matter
 to delivering outcomes: stakeholders, team, development approach and life
@@ -215,7 +218,9 @@ the offer to the director, and keeps the evaluation as scored.
   controlling, closing.
 - **Knowledge areas:** integration, scope, schedule, cost, quality,
   resources, communications, risk, procurement, stakeholders.
-- **PMBOK 7 principles; performance domains.**
+- **PMBOK 7 principles:** stewardship, team, stakeholders, value, systems
+  thinking, leadership, tailoring, quality, complexity, risk, adaptability and
+  resiliency, change; **performance domains.**
 - **Risk, issue, assumption, constraint; risk register, issue log,
   assumption log.**
 - **Product scope; project scope; scope statement.**

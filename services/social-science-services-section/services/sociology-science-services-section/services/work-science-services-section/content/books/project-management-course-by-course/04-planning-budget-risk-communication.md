@@ -56,7 +56,7 @@ A procurement then follows a sequence:
 2. **Solicit:** ask vendors to respond. A **request for information (RFI)**
    gathers options; a **request for quote (RFQ)** asks for prices on a
    defined item; a **request for proposal (RFP)** asks vendors to propose how
-   they'd meet a need.
+   they would meet a need.
 3. **Select** a vendor against criteria written before the responses arrive.
 4. **Contract.** A **fixed-price** contract sets one price and puts cost risk
    on the vendor. A **cost-reimbursable** contract pays the vendor's actual
@@ -94,9 +94,12 @@ Risk management runs in five steps:
      warranty.
    - **Accept:** do nothing now, and perhaps set aside contingency.
 
+   PMI adds a fifth response, **escalate**, for a risk outside the
+   project's authority: pass it to the person or group who owns it.
+
    Risks can also be good. For an **opportunity**, the responses are exploit
    (make sure it happens), enhance (raise its chance), share (partner with
-   someone better placed to capture it) and accept.
+   someone better placed to capture it), accept, and, again, escalate.
 4. **Assign an owner.** Each risk gets one person who watches it and acts on
    its response. Record a **trigger**, the early sign that the risk is
    happening.
@@ -186,7 +189,7 @@ shared folder with a naming rule: `eastside-<document>-<date>`.
 - **Risk; issue; probability and impact; risk register; trigger; risk
   owner.**
 - **Avoid, mitigate, transfer, accept** (threats); **exploit, enhance,
-  share, accept** (opportunities).
+  share, accept** (opportunities); **escalate** (either).
 - **Communication plan.**
 
 ## Check yourself

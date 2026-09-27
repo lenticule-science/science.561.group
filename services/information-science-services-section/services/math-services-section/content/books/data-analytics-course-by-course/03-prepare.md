@@ -53,7 +53,7 @@ stored as text won't add up, which is one of the commonest cleaning chores.
 ## Organizing a table
 
 Data can be **structured** (in rows and columns with a fixed schema) or
-**unstructured** (text, images, audio). Analysts mostly work with
+**unstructured** (text, images, audio). Analysts usually work with
 structured data.
 
 Hadley Wickham set out three rules for **tidy data**: each variable forms a

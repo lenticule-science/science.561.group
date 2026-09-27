@@ -206,7 +206,7 @@ adds patrons' own reasons.
 4. Why might `COUNT(*)` and `COUNT(visitors)` return different numbers?
 5. Saturday visits rose from 3,050 to 3,660. What's the percent change?
 6. Visits fell at the two branches that cut hours. Name one alternative
-   explanation you'd check before saying the cut caused it.
+   explanation you would check before saying the cut caused it.
 7. What does a pivot table need you to choose?
 
 ## Answers

@@ -193,6 +193,9 @@ were served and what they said. The team eats pizza in the gym.
 5. List five items a status report should contain.
 6. Name six of the eight closing steps.
 7. What's the difference between a closeout report and an impact report?
+8. In a meeting, a quiet volunteer's idea is credited to someone else. Which
+   of the PMI code's values does this touch, and what should the project
+   manager do?
 
 ## Answers
 
@@ -213,5 +216,8 @@ were served and what they said. The team eats pizza in the gym.
 7. A closeout report measures the project against its own criteria (scope,
    schedule, budget, success criteria) and records lessons. An impact report
    shows what the result achieved for the people it was meant to serve.
+8. Fairness and honesty (giving credit accurately), and respect. Correct the
+   record in the meeting or its notes, credit the volunteer, and make room
+   for quieter people to speak first next time.
 
 *Next: Chapter 7 turns to Agile project management.*

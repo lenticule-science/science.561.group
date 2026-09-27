@@ -211,6 +211,8 @@ manager.
 6. Two people each work four days on a task, side by side. What are the
    task's duration and its effort?
 7. What does capacity planning check that the critical path doesn't?
+8. One volunteer sorts 40 boxes an hour, and 600 boxes arrive. Which
+   estimating technique gives the effort, and what is it?
 
 ## Answers
 
@@ -226,6 +228,7 @@ manager.
 6. Duration is four days. Effort is eight person-days.
 7. Whether the people assigned have enough available hours in each period to
    do what the schedule asks of them.
+8. Parametric: a rate times a quantity. 600 / 40 = 15 volunteer-hours.
 
 *Next: Chapter 4 finishes the plan with budget, procurement, risk and
 communication.*

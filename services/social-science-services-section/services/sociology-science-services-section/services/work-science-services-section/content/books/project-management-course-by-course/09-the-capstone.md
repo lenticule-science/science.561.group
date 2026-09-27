@@ -50,7 +50,7 @@ understand the project from it alone. Check that it has:
 goals; no out-of-scope list; a charter that's many pages long. Aim for two.
 
 A stakeholder analysis is good when it changes what you'll do. Place every
-stakeholder on the power-interest grid [@mendelow1981], and give each a
+stakeholder on the power-interest grid [@johnson-scholes1993], and give each a
 strategy (manage closely, keep satisfied, keep informed, monitor) and a note
 on what they care about. **Common mistake:** a list of names with no strategy.
 
@@ -165,6 +165,7 @@ register.
 6. A closeout report says, "The team held six planning meetings and trained
    twenty volunteers." What's missing?
 7. What three things should a retrospective record?
+8. What goes in a portfolio's one-page index?
 
 ## Answers
 
@@ -188,5 +189,7 @@ register.
    activities, not results.
 7. What went well, what didn't, and what will change, with an owner for each
    change.
+8. The project in two sentences, then each artifact with a line on what it
+   shows about your skills.
 
 *Next: the study plan.*

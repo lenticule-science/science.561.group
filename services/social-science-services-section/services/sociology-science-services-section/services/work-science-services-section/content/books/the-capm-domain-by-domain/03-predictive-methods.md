@@ -6,6 +6,9 @@
 
 - Say when a predictive approach fits, including how organizational structure
   affects it.
+- Distinguish a predictive project's components: the charter, the project
+  management plan and its subsidiary plans, the baselines, phases,
+  deliverables, work packages and milestones.
 - Describe typical activities in each process group.
 - Build a work breakdown structure down to work packages, with a WBS
   dictionary.
@@ -41,6 +44,23 @@ Predictive methods suit hierarchical organizations, whose clear lines of
 authority match a plan that flows top-down. They also work for **virtual**
 (distributed) teams, because a documented plan gives everyone the same
 reference; **colocated** teams can rely more on conversation.
+
+## The components of a predictive project
+
+A predictive project is assembled from parts that the exam expects you to
+tell apart:
+
+| Component | What it is |
+|---|---|
+| Charter | Authorizes the project and names the project manager |
+| Project management plan | Says how the project will be run; holds the subsidiary plans and baselines |
+| Subsidiary plans | How each area (scope, schedule, cost, quality, risk and so on) is managed |
+| Baselines | The approved scope, schedule and cost that performance is measured against |
+| Phase | A stretch of the life cycle ending in a major deliverable or decision |
+| Deliverable | A product, result or capability the project must produce |
+| Work package | The lowest level of the WBS, estimated and assigned as a unit |
+| Activity | A scheduled piece of work that produces part of a work package |
+| Milestone | A significant point with zero duration |
 
 ## Activities in each process group
 
@@ -195,7 +215,10 @@ B 3–7; C must finish by E's late start, 9, so starts by 7; A 0–3.
 | G | 14 | 14 | 0 |
 
 The critical path is A, B, D, F, G: 3 + 4 + 5 + 2 + 1 = 15 weeks. The hardware
-chain has 4 weeks of float. If the sponsor wants go-live two weeks sooner,
+chain has 4 weeks of total float, but it sits in different places. C's free
+float is E's early start minus C's early finish, 5 − 5 = 0: any slip in C
+delays E's early start, even though it doesn't yet delay the project. E's free
+float is F's early start minus E's early finish, 12 − 8 = 4. If the sponsor wants go-live two weeks sooner,
 crashing D (paying the vendor for a second configurer) or fast-tracking B and
 D (starting configuration on the leading vendor's platform before the
 contract is signed, at a risk) are the options; speeding up E does nothing.
@@ -216,6 +239,8 @@ manager reports it to the sponsor with a recovery plan.
 
 ## Key terms
 
+- **Charter, project management plan, subsidiary plans, baselines, phase,
+  deliverable, work package, activity, milestone.**
 - **Functional, weak matrix, balanced matrix, strong matrix, projectized;
   virtual and colocated teams.**
 - **WBS; work package; WBS dictionary; scope baseline; 100 percent rule.**
@@ -262,7 +287,9 @@ manager reports it to the sponsor with a recovery plan.
    - B. Warranty repairs
    - C. Training staff on the new procedure
    - D. Lost customers
-8. The customer formally accepts a completed deliverable. Which process is
+8. In the Riverside network, what are C's total float and free float, and why
+   do they differ?
+9. The customer formally accepts a completed deliverable. Which process is
    this?
    - A. Control quality
    - B. Validate scope
@@ -282,7 +309,10 @@ manager reports it to the sponsor with a recovery plan.
 6. EAC = 200,000 / 0.8 = $250,000. VAC = 200,000 − 250,000 = −$50,000.
 7. **C.** Training is prevention, a cost of conformance. A is an internal
    failure; B and D are external failures.
-8. **B.** Validating scope is the customer's formal acceptance. Control
+8. Total float 4 weeks; free float 0. C can slip 4 weeks without delaying the
+   project, but any slip at all delays E's early start, because E follows C
+   directly and E's own float absorbs the delay.
+9. **B.** Validating scope is the customer's formal acceptance. Control
    quality (A) is the team's check for correctness, usually done first.
 
 *Next: Chapter 4 covers Domain 3, Agile frameworks.*

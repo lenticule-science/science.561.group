@@ -11,7 +11,7 @@ you start: Chapter 5's finding.*
 - Describe how Tableau builds a view from dimensions and measures, and how it
   combines views into dashboards and stories.
 - Structure a data story and a presentation around one message, including
-  its limitations and the questions it'll raise.
+  its limitations and the questions it will raise.
 
 ## Why show data
 
@@ -83,7 +83,7 @@ Tableau builds charts by dragging fields onto a view:
 - **Rows and Columns** shelves set the chart's axes; the **Marks** card sets
   color, size, label, detail and tooltip; **Filters** limit the data.
 - **Calculated fields** create new measures, such as percent change.
-- A **dashboard** combines several views on one screen, with filters that act
+- A **dashboard** combines multiple views on one screen, with filters that act
   on all of them; a **story** sequences views or dashboards into a narrative.
 
 Tableau Public, the free version, publishes work openly on the web, so never
