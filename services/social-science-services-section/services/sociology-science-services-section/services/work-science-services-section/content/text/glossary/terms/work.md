@@ -27,18 +27,29 @@ ast:
         - situation
 defines: Work
 related: Process, Application, Procedure, Inquiry, Derivation, Activity, Operation
-date-modified: 2026-03-20
+date-modified: 2026-09-27
 ---
 
-Work is an episode of doing with a defined output. Work is characterized entirely by what it produces, not by what happens inside it. The output may be an artifact, a judgment, a transformed state, or a report that nothing was found — but it must be something nameable. An episode of doing that produces nothing nameable is not work; it is time spent.
+Work is an episode of doing with a defined output: an [act](../../../../../../../../../philosophy-services-section/content/text/glossary/terms/act.md) restricted to episodes with a nameable result. Work is characterized entirely by what it produces, not by what happens inside it. The output may be an artifact, a judgment, a transformed state, or a report that nothing was found — but it must be something nameable. An episode of doing that produces nothing nameable is not work; it is time spent.
 
-This is the base concept. All organized activity is work when it has a defined output. The four types of work — [process](./process.md), [procedure](./procedure.md), derivation, and [inquiry](./inquiry.md) — are specializations based on what is known going in. Work that has a documented, repeatable [method](./method.md) is skillful work. Work that does not yet have a method is ad-hoc — it may become skillful when someone writes down how to do it.
+This is the base concept. All organized activity is work when it has a defined output. The four types of work — process, procedure, derivation and inquiry — are specializations based on what is known going in: whether the *meaning* of the output is settled and whether the *execution path* to it is settled.
+
+| Work type | Meaning settled | Execution settled |
+|-----------|----------------|-------------------|
+| [Process](./process.md) | yes | yes |
+| [Procedure](./procedure.md) | yes | no |
+| [Derivation](./derivation.md) | no | yes |
+| [Inquiry](./inquiry.md) | no | no |
+
+ Work that has a documented, repeatable [method](../../../../../../../../content/text/glossary/terms/method.md) is skillful work. Work that does not yet have a method is ad-hoc — it may become skillful when someone writes down how to do it.
 
 A work unit is a concrete instance of work: it names what it acts on (domain), which aspect changes (affected), how the change is produced (operation), and the specific values that make this instance distinct from other instances of the same operation (parameters). A work unit without parameters is a template, not an instance.
 
-Work composes. A [workflow](./workflow.md) is a set of work units with the constraint that the initial input type equals the final output type — the workflow takes something of type X and produces something of type X. A [task](./task.md) is a named planning container for work units with a completion condition. Workflows are algebraic (they compose); tasks are organizational (they group work for planning and tracking).
+Work composes. A [workflow](./workflow.md) is a set of work units with the constraint that the initial input type equals the final output type — the workflow takes something of type X and produces something of type X. A [task](../../../../../../../../content/text/glossary/terms/task.md) is a named planning container for work units with a completion condition. Workflows are algebraic (they compose); tasks are organizational (they group work for planning and tracking).
 
-Work is the thing that [practice](./practice.md) does and [method](./method.md) governs. Practice without work is idle; method without work is shelfware; work without method is improvisation; work without practice is a plan that never executes.
+Work is the thing that [practice](../../../../../../../../content/text/glossary/terms/practice.md) does and [method](../../../../../../../../content/text/glossary/terms/method.md) governs. Practice without work is idle; method without work is shelfware; work without method is improvisation; work without practice is a plan that never executes.
+
+An earlier house definition, from 2020, reads work more broadly: an action that is some sort of craft or study, taken to result in one's survival or growth. The definition here narrows it to episodes with a nameable output, which is what lets work be typed, composed and assessed.
 
 ## Formal definition
 
@@ -104,14 +115,3 @@ Physical work formalizes the intuition that effort applied in a direction produc
 - Whether Davidson's causal requirement (the right causal history from intention to action) is formalizable in the nuclear framework — whether "caused in the right way by the agent's intention" corresponds to the work's proposition being meaning-settled ($\sigma_t$-fixed) as well as execution-settled ($\Delta_t$-fixed), so that accidental results are those in $\mathrm{Fix}(\Delta_t) \setminus \mathrm{Fix}(\sigma_t)$.
 - Whether there is a category of works — with works as morphisms (an agent applying a capacity to a situation) and situations as objects — and whether composition of works (sequential work, then work on the output) forms a proper category (with associativity and identity).
 - Whether physical work ($W = \vec{F} \cdot \vec{d}$) and computational work (Kleisli morphism execution) can be unified under the formal definition — whether both are instances of the same abstract structure and whether the work-energy theorem has an analogue in the category of Kleisli morphisms.
-
-Work is an [act](../../../../../../../../../philosophy/terms/act.md) with a defined output. It restricts the general concept of action — what a [thing](../../../../../../../../../philosophy/terms/thing.md) does that produces change — to episodes with nameable results. An act that produces nothing nameable is not work; it is time spent. Work inherits from act the structure of capacity realization: something has the potential to produce an output, and work is the episode where that potential is realized.
-
-This is the base concept. All organized activity is work when it has a defined output. The four types of work — [process](../../../../../../../../content/text/triage/process.md), [procedure](procedure.md), derivation, and [inquiry](../../../../../../../../content/text/triage/inquiry.md) — are specializations based on which [qualities](../../../../../../../../../philosophy/terms/quality.md) of the action are settled. Two qualities matter: whether the *meaning* of the output is known (meaning-settled) and whether the *execution path* to produce it is known (execution-settled). Process has both settled. Inquiry has neither. Procedure and derivation each have one.
-
-| Work type | Meaning settled | Execution settled |
-|-----------|----------------|-------------------|
-| Process | yes | yes |
-| Procedure | yes | no |
-| Derivation | no | yes |
-| Inquiry | no | no |
